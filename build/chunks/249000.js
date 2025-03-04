@@ -91,7 +91,7 @@ function h(e) {
   }
 }
 
-function m(e) {
+function g(e) {
   let {
     top: t,
     left: n,
@@ -106,7 +106,7 @@ function m(e) {
   }
 }
 
-function g(e) {
+function m(e) {
   return null != e ? "".concat(e, "px") : "auto"
 }
 class E extends(r = o.PureComponent) {
@@ -148,7 +148,7 @@ class E extends(r = o.PureComponent) {
       left: n,
       bottom: r,
       right: i
-    }, null != o && (o.style.top = g(t), o.style.bottom = g(r), o.style.left = g(n), o.style.right = g(i))
+    }, null != o && (o.style.top = m(t), o.style.bottom = m(r), o.style.left = m(n), o.style.right = m(i))
   }
   render() {
     let {
@@ -235,7 +235,7 @@ class E extends(r = o.PureComponent) {
         onDragStart: u,
         onDrag: f,
         onFlip: h,
-        snapOrientation: g
+        snapOrientation: m
       } = this.props, {
         dragging: E,
         dragging: v,
@@ -250,11 +250,11 @@ class E extends(r = o.PureComponent) {
       let {
         clientWidth: S,
         clientHeight: I
-      } = r, T = m(d({
+      } = r, T = g(d({
         top: n - this._offsetY,
         left: t - this._offsetX
       }, i, o, S, I));
-      if (g) {
+      if (m) {
         let e = _(T = p(T));
         b = e[0], y = e[1]
       } else T = {
@@ -303,7 +303,7 @@ class E extends(r = o.PureComponent) {
         clientHeight: u,
         clientWidth: f
       } = r, h = d(t, i, o, f, u);
-      if (h = m(h), s) {
+      if (h = g(h), s) {
         let t = _(e = p(h));
         l = t[0], c = t[1]
       } else e = {
@@ -314,11 +314,11 @@ class E extends(r = o.PureComponent) {
       };
       if (t.left === e.left && t.right === e.right && t.top === e.top && t.bottom === e.bottom) return;
       null == a || a(e, r), this.setDOMPositions(e);
-      let g = 0 === e.top;
-      (l !== n.verticalOrientation || c !== n.horizontalOrientation || g !== n.atTopEdge) && this.setState({
+      let m = 0 === e.top;
+      (l !== n.verticalOrientation || c !== n.horizontalOrientation || m !== n.atTopEdge) && this.setState({
         verticalOrientation: l,
         horizontalOrientation: c,
-        atTopEdge: g
+        atTopEdge: m
       })
     });
     let [t, n] = _(e.initialPosition);

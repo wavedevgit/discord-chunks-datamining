@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(235400),
   p = n(204418),
   h = n(583434),
-  m = n(530618),
-  g = n(70097),
+  g = n(530618),
+  m = n(70097),
   E = n(454585),
   v = n(164946),
   b = n(369111),
@@ -32,8 +32,8 @@ var r = n(200651),
   C = n(475595),
   R = n(566078),
   P = n(114732),
-  w = n(46140),
-  D = n(675654),
+  D = n(46140),
+  w = n(675654),
   L = n(388032),
   x = n(592885);
 
@@ -106,18 +106,18 @@ function V(e) {
     reward: _,
     decoration: p,
     onUseNow: h,
-    preview: g
-  } = e, E = i.useRef(null), [v, b] = i.useState(null), y = i.useRef(new s.qA), S = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), T = (0, c.e7)([O.default], () => O.default.getCurrentUser()), A = i.useMemo(() => (0, C.fh)(l, C.eC.HERO), [l]), R = (null === (t = l.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, [w, L] = i.useState(!0 === g || R ? "claimed" : "loading");
+    preview: m
+  } = e, E = i.useRef(null), [v, b] = i.useState(null), y = i.useRef(new s.qA), S = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), T = (0, c.e7)([O.default], () => O.default.getCurrentUser()), A = i.useMemo(() => (0, C.fh)(l, C.eC.HERO), [l]), R = (null === (t = l.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, [D, L] = i.useState(!0 === m || R ? "claimed" : "loading");
   i.useEffect(() => {
-    R || !0 === g || (0, I.QB)(l.id, N.y$.CROSS_PLATFORM, d).then(() => L("claimed")).catch(() => L("error"))
-  }, [l, d, R, g]);
+    R || !0 === m || (0, I.QB)(l.id, N.y$.CROSS_PLATFORM, d).then(() => L("claimed")).catch(() => L("error"))
+  }, [l, d, R, m]);
   let M = () => {
       L("applying"), h().finally(o)
     },
-    k = !0 === g && null === p && (null == _ ? void 0 : _.skuId) !== "",
-    j = null == p && !0 !== g,
-    U = null == T || j || k || "loading" === w,
-    G = !S && !R && "claimed" === w;
+    k = !0 === m && null === p && (null == _ ? void 0 : _.skuId) !== "",
+    j = null == p && !0 !== m,
+    U = null == T || j || k || "loading" === D,
+    G = !S && !R && "claimed" === D;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.O_, {
       ref: b,
@@ -132,7 +132,7 @@ function V(e) {
           [x.rootContainerLoading]: U
         }),
         hideShadow: !0,
-        children: "error" === w ? (0, r.jsx)(P.Z, {
+        children: "error" === D ? (0, r.jsx)(P.Z, {
           onClose: o
         }) : U ? (0, r.jsx)("div", {
           className: x.loadingIndicatorWrapper,
@@ -144,16 +144,16 @@ function V(e) {
           user: T,
           decoration: p,
           backgroundUrl: A.url,
-          isSaving: "applying" === w,
+          isSaving: "applying" === D,
           onClose: o,
           onConfirm: M
         })
       })
-    }), G && (0, r.jsx)(m.Z, {
+    }), G && (0, r.jsx)(g.Z, {
       confettiTarget: E.current,
       confettiCanvas: v,
-      sprites: D.CA,
-      colors: D.Br
+      sprites: w.CA,
+      colors: w.Br
     })]
   })
 }
@@ -192,7 +192,7 @@ function Z(e) {
     className: x.claimedRootContainer,
     children: [(0, r.jsxs)("div", {
       className: x.headerContainer,
-      children: [(0, r.jsx)(g.Z, {
+      children: [(0, r.jsx)(m.Z, {
         className: x.headerBackground,
         autoPlay: !1,
         loop: !1,
@@ -235,7 +235,7 @@ function Z(e) {
           submitting: a,
           onClick: l,
           children: L.NW.string(L.t.MAS7uL)
-        }), (0, A.zK)(t, w.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, r.jsx)(F, {
+        }), (0, A.zK)(t, D.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, r.jsx)(F, {
           quest: t
         })]
       })

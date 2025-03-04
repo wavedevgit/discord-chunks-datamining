@@ -18,8 +18,8 @@ var r, i = n(192379),
   _ = n(944486),
   p = n(102172),
   h = n(74299),
-  m = n(299570),
-  g = n(65154);
+  g = n(299570),
+  m = n(65154);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -39,7 +39,7 @@ let b = !1,
   I = {};
 
 function T() {
-  return d.Z.supports(g.AN.NATIVE_SCREENSHARE_PICKER)
+  return d.Z.supports(m.AN.NATIVE_SCREENSHARE_PICKER)
 }
 
 function N() {
@@ -70,7 +70,7 @@ function P() {
   let e = c.Z.getChannel(_.Z.getVoiceChannelId());
   return b = null != e && (0, h.Z)(d.Z) && (0, p.JL)(e, u.Z, f.Z, !1), A(), !1
 }
-class w extends(r = o.ZP.Store) {
+class D extends(r = o.ZP.Store) {
   initialize() {
     this.syncWith([d.Z, _.Z, c.Z, u.Z, f.Z], P), l.Z.subscribe({
       location: "NativeScreenSharePickerStore_initialize"
@@ -83,14 +83,14 @@ class w extends(r = o.ZP.Store) {
     return N()
   }
   releasePickerStream() {
-    (0, m.t)()
+    (0, g.t)()
   }
   getPickerState() {
     return I
   }
 }
 
-function D(e) {
+function w(e) {
   let {
     existing: t
   } = e;
@@ -134,9 +134,9 @@ function M(e) {
 function k() {
   I = {}
 }
-E(w, "displayName", "NativeScreenSharePickerStore");
-let j = new w(a.Z, {
-  NATIVE_SCREEN_SHARE_PICKER_UPDATE: D,
+E(D, "displayName", "NativeScreenSharePickerStore");
+let j = new D(a.Z, {
+  NATIVE_SCREEN_SHARE_PICKER_UPDATE: w,
   NATIVE_SCREEN_SHARE_PICKER_CANCEL: L,
   NATIVE_SCREEN_SHARE_PICKER_ERROR: x,
   NATIVE_SCREEN_SHARE_PICKER_PRESENT: M,

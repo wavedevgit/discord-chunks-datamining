@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(789020);
 var r = n(928801),
   i = n(924557),
@@ -17,7 +17,7 @@ var r = n(928801),
   p = n(630388),
   h = n(981631);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,7 +25,7 @@ function m(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class g extends r.Z {
+class m extends r.Z {
   get guildId() {
     return this.getState().guildId
   }
@@ -38,10 +38,10 @@ class g extends r.Z {
       d = c.tU.getSetting();
     r = (0, p.mB)(r, h.BVn.ALLOW_VOICE_RECORDING, d);
     let _ = (0, a.Z)(f.Z),
-      m = (0, i.ln)() && o.Z.getSettings().clipsEnabled && ((null === (e = u.Z.getCurrentUserActiveStream()) || void 0 === e ? void 0 : e.state) === h.jm8.ACTIVE || (null === (t = u.Z.getCurrentUserActiveStream()) || void 0 === t ? void 0 : t.state) === h.jm8.PAUSED),
-      g = o.Z.isDecoupledGameClippingEnabled(),
-      E = _ && o.Z.getSettings().decoupledClipsEnabled && (null === (n = s.ZP.getVisibleGame()) || void 0 === n ? void 0 : n.windowHandle) != null && g;
-    r = (0, p.mB)(r, h.BVn.CLIPS_ENABLED, m || E);
+      g = (0, i.ln)() && o.Z.getSettings().clipsEnabled && ((null === (e = u.Z.getCurrentUserActiveStream()) || void 0 === e ? void 0 : e.state) === h.jm8.ACTIVE || (null === (t = u.Z.getCurrentUserActiveStream()) || void 0 === t ? void 0 : t.state) === h.jm8.PAUSED),
+      m = o.Z.isDecoupledGameClippingEnabled(),
+      E = _ && o.Z.getSettings().decoupledClipsEnabled && (null === (n = s.ZP.getVisibleGame()) || void 0 === n ? void 0 : n.windowHandle) != null && m;
+    r = (0, p.mB)(r, h.BVn.CLIPS_ENABLED, g || E);
     let {
       enableViewerClipping: v
     } = l.Z.getCurrentConfig({
@@ -119,6 +119,6 @@ class g extends r.Z {
     })
   }
   constructor(e) {
-    super(), m(this, "socket", void 0), this.socket = e
+    super(), g(this, "socket", void 0), this.socket = e
   }
 }

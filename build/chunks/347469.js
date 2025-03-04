@@ -27,9 +27,9 @@ let l = e => {
     orientation: _,
     usePointerEvents: p = !1,
     getClampedValue: h = i.clamp
-  } = e, [m, g] = r.useState(!1), E = r.useRef(0), v = r.useRef(!1), b = r.useRef(null == t ? 0 : t);
+  } = e, [g, m] = r.useState(!1), E = r.useRef(0), v = r.useRef(!1), b = r.useRef(null == t ? 0 : t);
   return r.useLayoutEffect(() => {
-    if (!m || null == n.current) return;
+    if (!g || null == n.current) return;
 
     function e(e) {
       let t = 1 === s(_) ? e.screenX : e.screenY,
@@ -50,7 +50,7 @@ let l = e => {
         n.current.style[l] = "".concat(a, "px"), v.current || (v.current = !0, null == u || u(a)), r(a, o)
       },
       y = n => {
-        g(!1);
+        m(!1);
         let r = e(n),
           i = t(r);
         c(i, r), null == d || d(i), v.current = !1
@@ -61,8 +61,8 @@ let l = e => {
     return I.addEventListener(O, y), I.addEventListener(S, o), () => {
       I.removeEventListener(O, y), I.removeEventListener(S, o), r.cancel()
     }
-  }, [m, c, l, a, _, n, f, d, p, h, u]), r.useCallback(e => {
+  }, [g, c, l, a, _, n, f, d, p, h, u]), r.useCallback(e => {
     let t = 1 === s(_);
-    null != n.current && (b.current = t ? n.current.offsetWidth : n.current.offsetHeight), E.current = t ? e.screenX : e.screenY, g(!0)
+    null != n.current && (b.current = t ? n.current.offsetWidth : n.current.offsetHeight), E.current = t ? e.screenX : e.screenY, m(!0)
   }, [_, n])
 }

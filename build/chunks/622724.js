@@ -25,8 +25,8 @@ function p(e) {
     onAction: d,
     location: p = a.Z.CONTEXT_MENU,
     appContext: h
-  } = e, m = (0, c.oV)(p), g = (0, i.e7)([u.default], () => u.default.getId() === t.id);
-  return !m || g || t.isNonUserBot() ? null : (0, r.jsx)(o.sNh, {
+  } = e, g = (0, c.oV)(p), m = (0, i.e7)([u.default], () => u.default.getId() === t.id);
+  return !g || m || t.isNonUserBot() ? null : (0, r.jsx)(o.sNh, {
     id: "report-user",
     color: s,
     label: _.NW.string(_.t.A1MM3N),

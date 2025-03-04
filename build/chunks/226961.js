@@ -38,8 +38,8 @@ function _(e) {
 }
 let p = N(d.Yn.DEFAULT, u._s_.TRANSPORT, 0),
   h = p,
-  m = {},
-  g = new Map,
+  g = {},
+  m = new Map,
   E = {
     availableOutgoingBitrate: !0,
     bitrate: !0,
@@ -112,7 +112,7 @@ function A(e) {
 
 function C() {
   Object.values(d.Yn).forEach(e => {
-    m[e] = {}
+    g[e] = {}
   })
 }
 
@@ -140,23 +140,23 @@ function P() {
   null != T && (T.destroy(), T = null)
 }
 
-function w(e) {
+function D(e) {
   var t;
   h = null !== (t = e.section) && void 0 !== t ? t : p
 }
 
-function D() {
+function w() {
   P()
 }
 
 function L(e) {
-  null != e.channelId && (C(), g.clear())
+  null != e.channelId && (C(), m.clear())
 }
 
 function x(e) {
   if (null === e.streamId) {
     let t = y(e.userId, e.context);
-    g.set(t, d.Z.NO_OVERRIDE)
+    m.set(t, d.Z.NO_OVERRIDE)
   }
 }
 
@@ -199,7 +199,7 @@ function j(e) {
     context: t,
     stats: n,
     index: r
-  } = e, i = m[t];
+  } = e, i = g[t];
   if (null != n) {
     let [e, o, a] = h.split(":");
     if (e === t && parseInt(a) === r && null != c.default.getUser(o)) {
@@ -252,7 +252,7 @@ function F(e) {
     context: n,
     quality: r
   } = e;
-  g.set(y(t, n), r)
+  m.set(y(t, n), r)
 }
 C();
 class Z extends(r = i.ZP.Store) {
@@ -261,7 +261,7 @@ class Z extends(r = i.ZP.Store) {
   }
   getStats() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : d.Yn.DEFAULT;
-    return m[e][0]
+    return g[e][0]
   }
   getInboundStats(e, t) {
     var n, r;
@@ -288,7 +288,7 @@ class Z extends(r = i.ZP.Store) {
   }
   getAllStats() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : d.Yn.DEFAULT;
-    return Object.values(m[e])
+    return Object.values(g[e])
   }
   getVideoStreams() {
     return S
@@ -298,13 +298,13 @@ class Z extends(r = i.ZP.Store) {
   }
   getSimulcastDebugOverride(e, t) {
     let n = y(e, t);
-    return g.has(n) ? g.get(n) : d.Z.NO_OVERRIDE
+    return m.has(n) ? m.get(n) : d.Z.NO_OVERRIDE
   }
 }
 f(Z, "displayName", "RTCDebugStore");
 let H = new Z(a.Z, {
-  RTC_DEBUG_MODAL_OPEN: w,
-  RTC_DEBUG_MODAL_CLOSE: D,
+  RTC_DEBUG_MODAL_OPEN: D,
+  RTC_DEBUG_MODAL_CLOSE: w,
   RTC_DEBUG_MODAL_SET_SECTION: M,
   RTC_DEBUG_MODAL_UPDATE: j,
   RTC_DEBUG_MODAL_OPEN_REPLAY: U,

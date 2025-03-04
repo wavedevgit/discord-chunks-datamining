@@ -13,8 +13,8 @@ var r = n(197187),
   _ = n(714050),
   p = n(676125),
   h = n(344597),
-  m = n(995739),
-  g = n(115726),
+  g = n(995739),
+  m = n(115726),
   E = n(651673),
   v = n(641236)("replace"),
   b = Math.max,
@@ -36,7 +36,7 @@ a("replace", function(e, t, n) {
   var o = C ? "$" : "$0";
   return [function(e, n) {
     var r = p(this),
-      o = u(e) ? void 0 : m(e, v);
+      o = u(e) ? void 0 : g(e, v);
     return o ? i(o, e, r, n) : i(t, _(r), e, n)
   }, function(e, i) {
     var a = l(this),
@@ -47,19 +47,19 @@ a("replace", function(e, t, n) {
     }
     var p = c(i);
     p || (i = _(i));
-    var m = a.global;
-    m && (P = a.unicode, a.lastIndex = 0);
-    for (var v = []; null !== (w = E(a, s)) && (S(v, w), m);) {
-      "" === _(w[0]) && (a.lastIndex = h(s, f(a.lastIndex), P))
+    var g = a.global;
+    g && (P = a.unicode, a.lastIndex = 0);
+    for (var v = []; null !== (D = E(a, s)) && (S(v, D), g);) {
+      "" === _(D[0]) && (a.lastIndex = h(s, f(a.lastIndex), P))
     }
     for (var A = "", C = 0, R = 0; R < v.length; R++) {
-      for (var P, w, D, L = _((w = v[R])[0]), x = b(y(d(w.index), s.length), 0), M = [], k = 1; k < w.length; k++) S(M, N(w[k]));
-      var j = w.groups;
+      for (var P, D, w, L = _((D = v[R])[0]), x = b(y(d(D.index), s.length), 0), M = [], k = 1; k < D.length; k++) S(M, N(D[k]));
+      var j = D.groups;
       if (p) {
         var U = O([L], M, x, s);
-        void 0 !== j && S(U, j), D = _(r(i, void 0, U))
-      } else D = g(L, s, x, M, j, i);
-      x >= C && (A += T(s, C, x) + D, C = x + L.length)
+        void 0 !== j && S(U, j), w = _(r(i, void 0, U))
+      } else w = m(L, s, x, M, j, i);
+      x >= C && (A += T(s, C, x) + w, C = x + L.length)
     }
     return A + T(s, C)
   }]

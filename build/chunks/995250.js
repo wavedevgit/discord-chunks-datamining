@@ -38,7 +38,7 @@ function h(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -79,7 +79,7 @@ function b(e) {
     profileType: n,
     animateOnHover: i,
     onOpenProfile: p
-  } = e, m = E(e, ["user", "profileType", "animateOnHover", "onOpenProfile"]);
+  } = e, g = E(e, ["user", "profileType", "animateOnHover", "onOpenProfile"]);
   let v = f.n_.AVATAR,
     {
       trackUserProfileAction: b
@@ -96,13 +96,13 @@ function b(e) {
   return (0, r.jsx)(d.Z, {
     sourceType: f.n_.AVATAR,
     user: t,
-    children: (0, r.jsx)(c.Z, g(h({
+    children: (0, r.jsx)(c.Z, m(h({
       user: t,
       className: O,
       profileType: n,
       sourceType: v,
       onAction: b
-    }, m), {
+    }, g), {
       children: () => (0, r.jsx)(u.Z, {
         className: O,
         user: t,
@@ -114,7 +114,7 @@ function b(e) {
           onOpenProfile: p,
           profileType: n,
           className: _.withReactReply
-        }, m))
+        }, g))
       })
     }))
   })

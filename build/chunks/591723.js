@@ -26,7 +26,7 @@ function d(e, t, n) {
 }
 
 function f(e, t) {
-  return g(e) || m(e, t) || p(e, t) || _()
+  return m(e) || g(e, t) || p(e, t) || _()
 }
 
 function _() {
@@ -48,7 +48,7 @@ function h(e, t) {
   return r
 }
 
-function m(e, t) {
+function g(e, t) {
   if ("undefined" != typeof Symbol && Symbol.iterator in Object(e)) {
     var n = [],
       r = !0,
@@ -69,7 +69,7 @@ function m(e, t) {
   }
 }
 
-function g(e) {
+function m(e) {
   if (Array.isArray(e)) return e
 }
 

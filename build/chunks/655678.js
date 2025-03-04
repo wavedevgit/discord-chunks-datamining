@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -20,7 +20,7 @@ function h(e, t) {
   let {
     disabled: n,
     channel: o
-  } = e, h = (0, l.Q3)("ChannelMessageConfettiButton"), m = (0, c.LN)(o.id), g = i.useCallback(() => {
+  } = e, h = (0, l.Q3)("ChannelMessageConfettiButton"), g = (0, c.LN)(o.id), m = i.useCallback(() => {
     (0, c.Rg)(o.id, u.MG.MessageComposerButtons)
   }, [o.id]);
   return n ? null : (0, r.jsx)("div", {
@@ -29,10 +29,10 @@ function h(e, t) {
     children: (0, r.jsx)(d.Z, {
       innerClassName: a()(p.button, p.messageConfettiButton),
       childClassName: a()(p.messageConfettiIcon, {
-        [p.active]: m
+        [p.active]: g
       }),
-      onClick: g,
-      isActive: m,
+      onClick: m,
+      isActive: g,
       "aria-label": _.NW.string(_.t.yvN8bG),
       "aria-haspopup": "false",
       children: (0, r.jsx)(s.l22, {
@@ -42,4 +42,4 @@ function h(e, t) {
     })
   })
 }
-let m = i.memo(i.forwardRef(h))
+let g = i.memo(i.forwardRef(h))

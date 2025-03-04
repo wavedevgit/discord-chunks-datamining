@@ -89,14 +89,14 @@ class p extends(r = o.PureComponent) {
       })
     });
     if (t) return h;
-    let m = c.QS.AVATAR_DEFAULT;
-    return null != _ ? m = f === l.EFr.SIZE_32 ? c.QS.AVATAR_CALL_ICON_32 : c.QS.AVATAR_CALL_ICON : (a || d) && (m = c.QS.AVATAR_VOICE_CALL_80), (0, i.jsxs)("div", {
+    let g = c.QS.AVATAR_DEFAULT;
+    return null != _ ? g = f === l.EFr.SIZE_32 ? c.QS.AVATAR_CALL_ICON_32 : c.QS.AVATAR_CALL_ICON : (a || d) && (g = c.QS.AVATAR_VOICE_CALL_80), (0, i.jsxs)("div", {
       className: u.callAvatarMaskContainer,
       children: [(0, i.jsxs)(c.ZP, {
         className: u.callAvatarMask,
         width: p,
         height: p,
-        mask: m,
+        mask: g,
         children: [null == _ ? void 0 : _(), h]
       }), this.renderMask()]
     })

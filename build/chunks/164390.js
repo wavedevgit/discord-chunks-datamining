@@ -98,8 +98,8 @@ function d(e, i, o, a, l, u, f) {
       var _, p = {},
         h = Object.keys(e).sort(c);
       for (_ = 0; _ < h.length; _++) {
-        var m = h[_];
-        d(e[m], m, _, a, e, u, f), p[m] = e[m]
+        var g = h[_];
+        d(e[g], g, _, a, e, u, f), p[g] = e[g]
       }
       if (void 0 === l) return p;
       r.push([l, i, e]), l[i] = p

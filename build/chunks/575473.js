@@ -12,8 +12,8 @@ var r = n(466293),
   _ = "[object Error]",
   p = "[object Map]",
   h = "[object Number]",
-  m = "[object RegExp]",
-  g = "[object Set]",
+  g = "[object RegExp]",
+  m = "[object Set]",
   E = "[object String]",
   v = "[object Symbol]",
   b = "[object ArrayBuffer]",
@@ -35,12 +35,12 @@ function I(e, t, n, r, O, I, T) {
       return o(+e, +t);
     case _:
       return e.name == t.name && e.message == t.message;
-    case m:
+    case g:
     case E:
       return e == t + "";
     case p:
       var N = s;
-    case g:
+    case m:
       var A = r & c;
       if (N || (N = l), e.size != t.size && !A) break;
       var C = T.get(e);

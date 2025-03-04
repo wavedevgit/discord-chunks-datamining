@@ -36,7 +36,7 @@ function _(e) {
 let p = {},
   h = {};
 
-function m() {
+function g() {
   var e;
   let t = null !== (e = s.Z.getGuildsProto()) && void 0 !== e ? e : {},
     n = l.Z.getGuilds(),
@@ -47,7 +47,7 @@ function m() {
   }, t[e])
 }
 
-function g(e) {
+function m(e) {
   return null != e && Object.keys(e).length > 0 ? {
     raidDetectedAt: e.raid_detected_at,
     dmSpamDetectedAt: e.dm_spam_detected_at,
@@ -59,7 +59,7 @@ function g(e) {
 function E(e) {
   for (let n of (p = {}, e.guilds)) {
     var t;
-    let e = g(null === (t = n.properties) || void 0 === t ? void 0 : t.incidents_data);
+    let e = m(null === (t = n.properties) || void 0 === t ? void 0 : t.incidents_data);
     null != e && ((0, d.i9)(e) || (0, d.ur)(e)) && (p[n.id] = e)
   }
 }
@@ -68,14 +68,14 @@ function v(e) {
   var t;
   let {
     guild: n
-  } = e, r = g(null === (t = n.properties) || void 0 === t ? void 0 : t.incidents_data);
+  } = e, r = m(null === (t = n.properties) || void 0 === t ? void 0 : t.incidents_data);
   null != r && ((0, d.i9)(r) || (0, d.ur)(r)) && (p[n.id] = r)
 }
 
 function b(e) {
   let {
     guild: t
-  } = e, n = g(t.incidents_data);
+  } = e, n = m(t.incidents_data);
   null != n && ((0, d.i9)(n) || (0, d.ur)(n)) ? p[t.id] = n : delete p[t.id]
 }
 
@@ -91,7 +91,7 @@ function O(e) {
 }
 class S extends(r = i.ZP.Store) {
   initialize() {
-    this.waitFor(s.Z, l.Z, c.Z, a.Z), this.syncWith([s.Z, l.Z, c.Z, a.Z], m)
+    this.waitFor(s.Z, l.Z, c.Z, a.Z), this.syncWith([s.Z, l.Z, c.Z, a.Z], g)
   }
   getGuildIncident(e) {
     return p[e]

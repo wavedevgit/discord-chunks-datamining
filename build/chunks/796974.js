@@ -75,7 +75,7 @@ function h(e) {
   return t === n - r
 }
 
-function m(e) {
+function g(e) {
   let {
     guildId: t,
     scrollTop: n,
@@ -85,7 +85,7 @@ function m(e) {
   let i = !1;
   return void 0 !== r && (i = c[t].scrollTo !== r, c[t].scrollTo = r), null != r || i
 }
-class g extends(r = i.ZP.Store) {
+class m extends(r = i.ZP.Store) {
   percentageScrolled(e) {
     if (null != l[e]) {
       let {
@@ -110,10 +110,10 @@ class g extends(r = i.ZP.Store) {
     return h(e)
   }
 }
-s(g, "displayName", "DimensionStore");
-let E = new g(a.Z, {
+s(m, "displayName", "DimensionStore");
+let E = new m(a.Z, {
   UPDATE_CHANNEL_DIMENSIONS: f,
-  UPDATE_CHANNEL_LIST_DIMENSIONS: m,
+  UPDATE_CHANNEL_LIST_DIMENSIONS: g,
   UPDATE_GUILD_LIST_DIMENSIONS: _,
   CALL_CREATE: p
 })

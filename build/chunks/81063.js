@@ -20,8 +20,8 @@ let d = "mp",
   _ = "https://i.scdn.co/image/",
   p = (e, t, n) => "https://static-cdn.jtvnw.net/previews-ttv/live_user_".concat(e, "-").concat(t, "x").concat(n, ".jpg"),
   h = /https:\/\/static-cdn\.jtvnw\.net\/previews-ttv\/live_user_(.+)-\{width\}x\{height\}.jpg/,
-  m = e => "https://i.ytimg.com/vi/".concat(e, "/hqdefault_live.jpg"),
-  g = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/hqdefault_live\.jpg/,
+  g = e => "https://i.ytimg.com/vi/".concat(e, "/hqdefault_live.jpg"),
+  m = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/hqdefault_live\.jpg/,
   E = {
     [u.ABu.SPOTIFY]: {
       deserialize: e => "".concat(_).concat(encodeURIComponent(e)),
@@ -35,9 +35,9 @@ let d = "mp",
       }
     },
     [u.ABu.YOUTUBE]: {
-      deserialize: e => m(encodeURIComponent(e)),
+      deserialize: e => g(encodeURIComponent(e)),
       serialize: e => {
-        let t = e.match(g);
+        let t = e.match(m);
         return null != t ? t[1] : null
       }
     },

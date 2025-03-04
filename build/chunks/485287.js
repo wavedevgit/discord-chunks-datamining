@@ -26,35 +26,35 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let m = e => e / 400,
-  g = !1,
-  E = (0, o.tu)("stage_waiting", "stage_waiting", m(s.Z.getOutputVolume()));
+let g = e => e / 400,
+  m = !1,
+  E = (0, o.tu)("stage_waiting", "stage_waiting", g(s.Z.getOutputVolume()));
 
 function v() {
   let e = l.Z.getVoiceChannelId();
   if (null == e) {
-    E.stop(), g = !1;
+    E.stop(), m = !1;
     return
   }
   let t = a.Z.getChannel(e);
   if (!(null == t ? void 0 : t.isGuildStageVoice()) || s.Z.isSelfDeaf()) {
-    E.stop(), g = !1;
+    E.stop(), m = !1;
     return
   }
   if (p.Z.shouldPlay()) {
-    E.volume = m(s.Z.getOutputVolume()), E.loop(), g = !0;
+    E.volume = g(s.Z.getOutputVolume()), E.loop(), m = !0;
     return
   }
   if (_.Z.isLive(e)) {
-    E.stop(), g = !1;
+    E.stop(), m = !1;
     return
   }
   if (p.Z.isMuted()) {
-    E.pause(), g = !1;
+    E.pause(), m = !1;
     return
   }
   let n = null != Object.values(c.Z.getVoiceStatesForChannel(e)).find(e => !e.suppress && !e.isVoiceMuted());
-  n || g ? n && (E.pause(), g = !1) : (E.volume = m(s.Z.getOutputVolume()), E.loop(), g = !0)
+  n || m ? n && (E.pause(), m = !1) : (E.volume = g(s.Z.getOutputVolume()), E.loop(), m = !0)
 }
 
 function b(e) {
@@ -77,23 +77,23 @@ class O extends i.Z {
     } = e;
     if (null != t) {
       let e = a.Z.getChannel(t);
-      (null == e ? void 0 : e.isGuildStageVoice()) ? v(): (E.stop(), g = !1)
-    } else E.stop(), g = !1
+      (null == e ? void 0 : e.isGuildStageVoice()) ? v(): (E.stop(), m = !1)
+    } else E.stop(), m = !1
   }
   handleLogout() {
-    E.stop(), g = !1
+    E.stop(), m = !1
   }
   handlePlay(e) {
     let {
       play: t
     } = e;
-    t ? v() : (E.pause(), g = !1)
+    t ? v() : (E.pause(), m = !1)
   }
   handleMute(e) {
     let {
       muted: t
     } = e;
-    t ? (E.pause(), g = !1) : v()
+    t ? (E.pause(), m = !1) : v()
   }
   handleVoiceStateUpdates() {
     v()
@@ -102,7 +102,7 @@ class O extends i.Z {
     let {
       volume: t
     } = e;
-    E.volume = m(t)
+    E.volume = g(t)
   }
   handleToggleSelfDeaf() {
     v()

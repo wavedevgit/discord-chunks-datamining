@@ -77,11 +77,11 @@ function h() {
   return null !== (t = null === (e = o.default.getCurrentUser()) || void 0 === e ? void 0 : e.mfaEnabled) && void 0 !== t && t
 }
 
-function m(e, t) {
+function g(e, t) {
   return e.body && e.body.code === p || t && 429 === e.status
 }
 
-function g(e) {
+function m(e) {
   let {
     promiseFn: t,
     resolve: n,
@@ -117,12 +117,12 @@ function g(e) {
       resolve: f,
       reject: p,
       code: e,
-      mfaCodeHandler: m,
+      mfaCodeHandler: g,
       isModalOpen: !0
     })
   }
 
-  function m(e) {
+  function g(e) {
     let {
       res: t
     } = e;
@@ -138,13 +138,13 @@ function E(e) {
     resolve: n,
     reject: r,
     code: i,
-    mfaCodeHandler: o = g,
+    mfaCodeHandler: o = m,
     isModalOpen: a = !1
   } = e, s = d(e, ["promiseFn", "resolve", "reject", "code", "mfaCodeHandler", "isModalOpen"]);
   return t(null != i ? {
     code: i
   } : {}).then(n, e => {
-    if (m(e, a)) return o(l({
+    if (g(e, a)) return o(l({
       promiseFn: t,
       resolve: n,
       reject: r,
@@ -161,7 +161,7 @@ function v(e, t) {
     } = n,
     i = d(n, ["checkEnabled"]);
   return new Promise((t, n) => {
-    ((0, a.d)(r) ? g : E)(l({
+    ((0, a.d)(r) ? m : E)(l({
       promiseFn: e,
       resolve: t,
       reject: n

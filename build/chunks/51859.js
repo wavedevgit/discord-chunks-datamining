@@ -7,14 +7,14 @@ var r = t(200651),
   o = t(120356),
   a = t.n(o),
   s = t(793030),
-  l = t(481060),
-  c = t(413335),
+  c = t(481060),
+  l = t(413335),
   d = t(157353),
   u = t(838968),
   x = t(969867),
   p = t(279604),
-  b = t(730621),
-  v = t(388032),
+  v = t(730621),
+  b = t(388032),
   j = t(709435);
 
 function m(e) {
@@ -45,7 +45,7 @@ function m(e) {
             [j.active]: m
           }),
           variant: "text-xs/semibold",
-          children: v.NW.string(b.Z.j2jUjY)
+          children: b.NW.string(v.Z.j2jUjY)
         })]
       }), (0, r.jsx)(s.xv, {
         className: j.description,
@@ -55,20 +55,20 @@ function m(e) {
         className: j.labelContainer,
         children: [(0, r.jsxs)("div", {
           className: j.inline,
-          children: [(0, r.jsx)(c.Z, {}), (0, r.jsx)(s.xv, {
+          children: [(0, r.jsx)(l.Z, {}), (0, r.jsx)(s.xv, {
             tag: "div",
             variant: "heading-md/bold",
             children: t.cost
           })]
         }), m && (0, r.jsxs)("div", {
           className: j.inline,
-          children: [(0, r.jsx)(l.owK, {
+          children: [(0, r.jsx)(c.owK, {
             size: "xs",
-            color: l.TVs.colors.TEXT_POSITIVE
+            color: c.TVs.colors.TEXT_POSITIVE
           }), (0, r.jsx)(s.xv, {
             color: "text-positive",
             variant: "text-sm/bold",
-            children: v.NW.string(b.Z.FFLkm5)
+            children: b.NW.string(v.Z.FFLkm5)
           })]
         })]
       })]

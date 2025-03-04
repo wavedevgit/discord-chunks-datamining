@@ -16,9 +16,9 @@ var r = n(570140),
   _ = n(557457),
   p = n(981631),
   h = n(509571),
-  m = n(65154);
+  g = n(65154);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,7 +34,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -59,8 +59,8 @@ function y(e, t, n, r) {
     s = null != a ? c.Z.getChannel(a) : null,
     _ = e[t],
     h = e[n],
-    m = u.Z.getMediaEngine().getAudioSubsystem(),
-    g = u.Z.getMediaEngine().getAudioLayer();
+    g = u.Z.getMediaEngine().getAudioSubsystem(),
+    m = u.Z.getMediaEngine().getAudioLayer();
   f.default.track(p.rMx.MEDIA_DEVICE_CHANGED, {
     device_from_name: l.Z.getCertifiedDeviceName(t, null != _ ? _.name : ""),
     device_to_name: l.Z.getCertifiedDeviceName(n, null != h ? h.name : ""),
@@ -69,8 +69,8 @@ function y(e, t, n, r) {
     location: i,
     location_stack: o,
     voice_channel_type: null == s ? void 0 : s.type,
-    audio_subsystem: m,
-    audio_layer: g
+    audio_subsystem: g,
+    audio_layer: m
   })
 }
 let O = {
@@ -89,7 +89,7 @@ let O = {
     enable: S,
     toggleSelfMute() {
       let {
-        context: e = m.Yn.DEFAULT,
+        context: e = g.Yn.DEFAULT,
         syncRemote: t = !0,
         usedKeybind: n = !1,
         playSoundEffect: i = !0,
@@ -120,7 +120,7 @@ let O = {
     },
     toggleSelfDeaf() {
       let {
-        context: e = m.Yn.DEFAULT,
+        context: e = g.Yn.DEFAULT,
         syncRemote: t = !0,
         usedKeybind: n = !1,
         location: i
@@ -135,7 +135,7 @@ let O = {
       }))
     },
     toggleLocalMute(e) {
-      let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : m.Yn.DEFAULT;
+      let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : g.Yn.DEFAULT;
       I() || r.Z.dispatch({
         type: "AUDIO_TOGGLE_LOCAL_MUTE",
         context: t,
@@ -143,7 +143,7 @@ let O = {
       })
     },
     toggleLocalSoundboardMute(e) {
-      let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : m.Yn.DEFAULT;
+      let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : g.Yn.DEFAULT;
       r.Z.dispatch({
         type: "AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE",
         context: t,
@@ -151,7 +151,7 @@ let O = {
       })
     },
     setDisableLocalVideo(e, t) {
-      let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : m.Yn.DEFAULT,
+      let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : g.Yn.DEFAULT,
         i = !(arguments.length > 3) || void 0 === arguments[3] || arguments[3],
         o = arguments.length > 4 && void 0 !== arguments[4] && arguments[4];
       I() || r.Z.dispatch({
@@ -164,7 +164,7 @@ let O = {
       })
     },
     setLocalVolume(e, t) {
-      let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : m.Yn.DEFAULT;
+      let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : g.Yn.DEFAULT;
       r.Z.dispatch({
         type: "AUDIO_SET_LOCAL_VOLUME",
         context: n,
@@ -173,7 +173,7 @@ let O = {
       })
     },
     setLocalPan(e, t, n) {
-      let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : m.Yn.DEFAULT;
+      let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : g.Yn.DEFAULT;
       r.Z.dispatch({
         type: "AUDIO_SET_LOCAL_PAN",
         context: i,
@@ -184,7 +184,7 @@ let O = {
     },
     setMode(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : m.Yn.DEFAULT,
+        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : g.Yn.DEFAULT,
         {
           analyticsLocations: i
         } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};

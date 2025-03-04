@@ -62,8 +62,8 @@ let p = e => {
     primaryType: _,
     primaryText: p,
     primaryTooltip: h,
-    primaryDisabled: m,
-    primarySubmitting: g,
+    primaryDisabled: g,
+    primarySubmitting: m,
     onPrimary: E,
     secondaryText: v,
     onSecondary: b
@@ -73,8 +73,8 @@ let p = e => {
       t = {
         innerClassName: l.button,
         type: _,
-        disabled: m,
-        submitting: g,
+        disabled: g,
+        submitting: m,
         color: 0 === d ? i.zxk.Colors.BRAND : i.zxk.Colors.GREEN,
         onClick: E
       };

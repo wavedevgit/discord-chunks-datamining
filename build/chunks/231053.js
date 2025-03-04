@@ -66,7 +66,7 @@ let p = async e => {
       guild: h.createFromServer(n.guild),
       type: n.type
     }: (null == n ? void 0 : n.type) === "APPLICATION" && (t = {
-      application: m.createFromServer(n.application),
+      application: g.createFromServer(n.application),
       type: n.type
     })
   } catch (e) {}
@@ -148,9 +148,9 @@ class h extends i.Z {
     super(), c(this, "id", void 0), c(this, "name", void 0), c(this, "icon", void 0), c(this, "description", void 0), c(this, "features", void 0), c(this, "premiumTier", void 0), c(this, "premiumSubscriberCount", void 0), c(this, "presenceCount", void 0), c(this, "memberCount", void 0), c(this, "emojis", void 0), this.id = e.id, this.name = e.name, this.icon = e.icon, this.description = e.description, this.features = e.features, this.premiumTier = e.premiumTier, this.premiumSubscriberCount = e.premiumSubscriberCount, this.presenceCount = e.presenceCount, this.memberCount = e.memberCount, this.emojis = e.emojis
   }
 }
-class m extends i.Z {
+class g extends i.Z {
   static createFromServer(e) {
-    return new m({
+    return new g({
       id: e.id,
       name: e.name
     })

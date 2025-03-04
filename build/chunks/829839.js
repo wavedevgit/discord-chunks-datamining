@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  AQ: () => g,
+  AQ: () => m,
   DY: () => p,
   yQ: () => h
 }), n(653041), n(733860);
@@ -54,20 +54,20 @@ function p(e) {
 
 function h(e, t) {
   return "string" == typeof e ? _(JSON.parse(e).map(e => ({
-    codec: m(e.codec),
+    codec: g(e.codec),
     encode: e.encode,
     decode: e.decode
   })), t) : _(e.map(e => ({
-    codec: m(e),
+    codec: g(e),
     encode: !0,
     decode: !0
   })), t)
 }
 
-function m(e) {
+function g(e) {
   return "AV1X" === e ? "AV1" : e
 }
 
-function g(e) {
+function m(e) {
   return "AV1" === e ? "AV1X" : e
 }

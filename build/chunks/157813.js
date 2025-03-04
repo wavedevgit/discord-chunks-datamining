@@ -63,7 +63,7 @@ function p(e) {
   function h() {
     l.Z.toggleParticipants(t, !o)
   }
-  let m = i.useCallback(e => {
+  let g = i.useCallback(e => {
     let {
       className: t
     } = e;
@@ -79,7 +79,7 @@ function p(e) {
     label: o ? u.NW.string(u.t.QJMRUF) : u.NW.string(u.t.vZiwmJ),
     className: a()(d.participantsButton, n),
     onClick: h,
-    iconComponent: m,
+    iconComponent: g,
     shouldShowTooltip: !p
   })
 }

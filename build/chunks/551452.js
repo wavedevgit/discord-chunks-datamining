@@ -17,8 +17,8 @@ var i = n(481060),
   _ = n(592125),
   p = n(430824),
   h = n(900849),
-  m = n(746878),
-  g = n(981631);
+  g = n(746878),
+  m = n(981631);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -77,7 +77,7 @@ async function O(e, t, n) {
   if (null != r && null == n && (0, f.bw)(r.type) && (0, l.YO)(r)) {
     a.default.selectVoiceChannel(r.id);
     return
-  }(0, c.Z)(g.Z5c.CHANNEL(e, t, n))
+  }(0, c.Z)(m.Z5c.CHANNEL(e, t, n))
 }
 
 function S(e) {
@@ -87,7 +87,7 @@ function S(e) {
         c = s.noStyleAndInteraction ? void 0 : n => {
           e.shouldStopPropagation && (null == n || n.stopPropagation()), O(t.guildId, t.channelId, t.messageId), e.shouldCloseDefaultModals && (0, i.pTH)()
         },
-        f = s.noStyleAndInteraction || null == t.channelId || null == l && null == t.originalLink ? g.dG4 : e => {
+        f = s.noStyleAndInteraction || null == t.channelId || null == l && null == t.originalLink ? m.dG4 : e => {
           (0, o.jW)(e, async () => {
             let {
               default: e
@@ -108,7 +108,7 @@ function S(e) {
         onClick: c,
         onContextMenu: f,
         className: "channelMention",
-        children: [null != t.inContent ? a(t.inContent, s) : null, null != t.inContent ? (0, r.jsx)(d.Z, {}) : null, (0, m.S)(t, a, s)]
+        children: [null != t.inContent ? a(t.inContent, s) : null, null != t.inContent ? (0, r.jsx)(d.Z, {}) : null, (0, g.S)(t, a, s)]
       }, s.key)
     }
   }

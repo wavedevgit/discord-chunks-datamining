@@ -31,8 +31,8 @@ async function p(e, t, n) {
     [_, p] = (0, c.d9)(e, f);
   if (!f.includes(t)) return !0;
   let h = n.removingView && p.length - 1 < u.md,
-    m = (n.removingChat || n.removingView) && _.length - 1 < u.X;
-  return !h && !m
+    g = (n.removingChat || n.removingView) && _.length - 1 < u.X;
+  return !h && !g
 }
 async function h(e, t, n) {
   let a = e.getGuildId();

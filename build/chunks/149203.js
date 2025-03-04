@@ -3,7 +3,7 @@
 n.d(t, {
   En: () => r,
   Hr: () => f,
-  N6: () => m,
+  N6: () => g,
   Su: () => l,
   UX: () => o,
   Vr: () => i,
@@ -42,4 +42,4 @@ let c = "emoji-picker-tab-panel",
     default: 44,
     jumbo: 96
   },
-  m = 9
+  g = 9

@@ -43,8 +43,8 @@ function p(e) {
   c.bogoPromotion = t, d = Date.now(), u = !1
 }
 let h = !1,
-  m = null,
-  g = [],
+  g = null,
+  m = [],
   E = null;
 
 function v(e) {
@@ -52,7 +52,7 @@ function v(e) {
     activeOutboundPromotions: t,
     consumedInboundPromotionId: n
   } = e;
-  g = t, m = Date.now(), h = !1, c.hasFetchedConsumedInboundPromotionId || (c.hasFetchedConsumedInboundPromotionId = !0, c.consumedInboundPromotionId = n)
+  m = t, g = Date.now(), h = !1, c.hasFetchedConsumedInboundPromotionId || (c.hasFetchedConsumedInboundPromotionId = !0, c.consumedInboundPromotionId = n)
 }
 
 function b() {
@@ -60,29 +60,29 @@ function b() {
 }
 
 function y() {
-  g = [], h = !1
+  m = [], h = !1
 }
 
 function O() {
   let e = null;
-  for (let t of g)(null == e || new Date(t.startDate) > new Date(e)) && (e = t.startDate);
+  for (let t of m)(null == e || new Date(t.startDate) > new Date(e)) && (e = t.startDate);
   return e
 }
 
 function S() {
-  if (0 === g.length) return !1;
+  if (0 === m.length) return !1;
   let e = O();
   null != e && (E = e)
 }
 
 function I() {
-  if (0 === g.length) return !1;
+  if (0 === m.length) return !1;
   let e = O();
   null != e && (E = e, c.lastSeenOutboundPromotionStartDate = e)
 }
 
 function T() {
-  c = l(), h = !1, m = null, u = !1, d = null, g = []
+  c = l(), h = !1, g = null, u = !1, d = null, m = []
 }
 
 function N() {
@@ -94,7 +94,7 @@ class A extends(r = i.ZP.PersistedStore) {
     null != e && (c = e), this.waitFor(a.Z), this.syncWith([a.Z], N)
   }
   get outboundPromotions() {
-    return g
+    return m
   }
   get lastSeenOutboundPromotionStartDate() {
     return c.lastSeenOutboundPromotionStartDate
@@ -103,7 +103,7 @@ class A extends(r = i.ZP.PersistedStore) {
     return E
   }
   get lastFetchedActivePromotions() {
-    return m
+    return g
   }
   get isFetchingActiveOutboundPromotions() {
     return h

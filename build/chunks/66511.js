@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -56,16 +56,16 @@ let h = () => {
       type: c.N4
     })
   },
-  m = e => {
+  g = e => {
     o.default.track(u.rMx.OPEN_MODAL, {
       type: c.N4,
       guild_id: e
     })
   },
-  g = {
+  m = {
     openMemberVerificationModal(e, t, o) {
       if (__OVERLAY__) return;
-      m(e);
+      g(e);
       let u = async t => {
         await a.ZP.submitVerificationForm(e, t)
       }, d = (0, s.K2)(e, "MemberVerificationModalActionCreators");

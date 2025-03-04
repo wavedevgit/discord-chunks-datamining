@@ -56,9 +56,9 @@ function h(e, t) {
   }), e
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
-  var n, r, i = g(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -66,7 +66,7 @@ function m(e, t) {
   return i
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -83,12 +83,12 @@ async function E(e) {
     currency: u,
     renewal: f,
     metadata: p
-  } = e, g = {
+  } = e, m = {
     items: (t = (0, c.gB)(t)).map(e => {
       var {
         planId: t
       } = e;
-      return h(_({}, m(e, ["planId"])), {
+      return h(_({}, g(e, ["planId"])), {
         plan_id: t
       })
     }),
@@ -103,7 +103,7 @@ async function E(e) {
   try {
     let e = await a.tn.post({
       url: d.ANM.BILLING_SUBSCRIPTIONS_PREVIEW,
-      body: g,
+      body: m,
       oldFormErrors: !0,
       rejectWithError: !1
     });
@@ -122,7 +122,7 @@ async function v(e) {
     applyEntitlements: u = !1,
     analyticsLocations: f,
     analyticsLocation: p,
-    userDiscountOfferId: g
+    userDiscountOfferId: m
   } = e;
   null != n && (n = (0, c.gB)(n));
   let E = {
@@ -130,7 +130,7 @@ async function v(e) {
       var {
         planId: t
       } = e;
-      return h(_({}, m(e, ["planId"])), {
+      return h(_({}, g(e, ["planId"])), {
         plan_id: t
       })
     }),
@@ -138,7 +138,7 @@ async function v(e) {
     renewal: i,
     apply_entitlements: u,
     currency: o,
-    user_discount_offer_id: g
+    user_discount_offer_id: m
   };
   try {
     let e = await a.tn.patch({
@@ -233,7 +233,7 @@ function I(e) {
     let {
       subscriptionId: t
     } = e;
-    e = m(e, ["subscriptionId"])
+    e = g(e, ["subscriptionId"])
   }
   let t = (0, r.useRef)(e);
   (0, r.useEffect)(() => {

@@ -2,15 +2,15 @@
 "use strict";
 n.d(t, {
   Z: () => a
-}), n(230036), n(653041);
+}), n(47120), n(653041);
 var r = n(192379),
   i = n(442837),
   o = n(905128);
 
 function a(e) {
   let t = (0, i.e7)([o.Z], () => {
-    var t, n;
-    return Object.values(null !== (n = null === (t = o.Z.getStateForGuild(e)) || void 0 === t ? void 0 : t.powerups) && void 0 !== n ? n : {}).sort((e, t) => e.skuId >= t.skuId ? 1 : -1)
+    var t;
+    return null === (t = o.Z.getStateForGuild(e)) || void 0 === t ? void 0 : t.powerups
   });
-  return r.useMemo(() => t.reduce((e, t) => (null == e[t.type] && (e[t.type] = []), e[t.type].push(t), e), {}), [t])
+  return r.useMemo(() => (null != t ? t : new Map).values().reduce((e, t) => (e.has(t.type) || e.set(t.type, []), e.get(t.type).push(t), e), new Map), [t])
 }

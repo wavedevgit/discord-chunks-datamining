@@ -17,8 +17,8 @@ var i = n(120356),
   _ = n(584973),
   p = n(303524),
   h = n(170187),
-  m = n(981631),
-  g = n(389034);
+  g = n(981631),
+  m = n(389034);
 
 function E(e) {
   var t;
@@ -41,30 +41,30 @@ function E(e) {
   if (A && C) return null;
   let R = (0, l.Z)(n, i, void 0, N),
     P = null == R ? void 0 : R.activityText,
-    w = null != P && "" !== P,
-    D = null !== (t = null == n ? void 0 : n.find(e => {
+    D = null != P && "" !== P,
+    w = null !== (t = null == n ? void 0 : n.find(e => {
       let {
         type: t
       } = e;
-      return t === m.IIU.CUSTOM_STATUS
+      return t === g.IIU.CUSTOM_STATUS
     })) && void 0 !== t ? t : null,
-    L = (null == D ? void 0 : D.emoji) == null || O ? null : (0, r.jsx)(_.Z, {
-      emoji: D.emoji,
+    L = (null == w ? void 0 : w.emoji) == null || O ? null : (0, r.jsx)(_.Z, {
+      emoji: w.emoji,
       animate: b,
       hideTooltip: y,
-      className: o()(g.emoji, v)
+      className: o()(m.emoji, v)
     });
-  return w || null != L ? (0, r.jsxs)("div", {
-    className: g.container,
+  return D || null != L ? (0, r.jsxs)("div", {
+    className: m.container,
     children: [L, (0, r.jsx)(h.Z, {
       className: E,
       children: P
     }), I && (0, r.jsx)(p.Z, {
-      className: g.questsIcon
+      className: m.questsIcon
     }), (null == n ? void 0 : n.some(s.Z)) && (0, r.jsx)(f.Z, {
       width: 16,
       height: 16,
-      className: g.icon
+      className: m.icon
     })]
   }) : null
 }

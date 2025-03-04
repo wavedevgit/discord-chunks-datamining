@@ -17,8 +17,8 @@ var i = n(442837),
   _ = n(483424),
   p = n(681837),
   h = n(678738),
-  m = n(530),
-  g = n(871604),
+  g = n(530),
+  m = n(871604),
   E = n(53558),
   v = n(827313),
   b = n(420654),
@@ -37,16 +37,16 @@ function A(e) {
     guild: C,
     isHovering: R,
     onOpenProfile: P,
-    channelId: w,
-    onClose: D
-  } = e, L = c.ZP.getName(null == C ? void 0 : C.id, w, t), x = (0, i.e7)([u.Z], () => {
+    channelId: D,
+    onClose: w
+  } = e, L = c.ZP.getName(null == C ? void 0 : C.id, D, t), x = (0, i.e7)([u.Z], () => {
     var e;
     return null === (e = u.Z.getUserProfile(t.id)) || void 0 === e ? void 0 : e.application
   }), M = (0, i.e7)([a.Z, s.Z], () => a.Z.getChannel(s.Z.getChannelId())), k = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation);
   return (0, r.jsxs)(o.Ttm, {
     fade: !0,
     className: N.body,
-    children: [(0, r.jsx)(m.Z, {
+    children: [(0, r.jsx)(g.Z, {
       user: t,
       profileType: S.y0.BITE_SIZE,
       onOpenProfile: P,
@@ -55,7 +55,7 @@ function A(e) {
       tags: (0, r.jsx)(f.Z, {
         displayProfile: A,
         profileType: S.y0.BITE_SIZE,
-        onClose: D
+        onClose: w
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(p.Z, {
@@ -73,10 +73,10 @@ function A(e) {
       })
     }), (0, r.jsxs)("div", {
       className: T.buttons,
-      children: [(0, r.jsx)(g.Z, {
+      children: [(0, r.jsx)(m.Z, {
         user: t,
         className: T.button,
-        closePopout: D
+        closePopout: w
       }), (0, r.jsx)(E.Z, {
         user: t,
         guildId: null == C ? void 0 : C.id,
@@ -86,20 +86,20 @@ function A(e) {
       user: t,
       bio: null == A ? void 0 : A.bio,
       hidePersonalInformation: k,
-      onClose: D
+      onClose: w
     }), (0, r.jsx)(_.Z, {
       user: t,
       currentUser: n,
       displayProfile: A,
       guildId: null == C ? void 0 : C.id,
-      onClose: D,
+      onClose: w,
       className: N.activity
     }), (null == x ? void 0 : x.popularApplicationCommandIds) != null && null != M && (0, r.jsx)(d.Z, {
       applicationId: x.id,
       commandIds: x.popularApplicationCommandIds,
       channel: M,
       guildId: null == C ? void 0 : C.id,
-      onClick: D
+      onClick: w
     }), null != C && (0, r.jsx)(h.Z, {
       heading: I.NW.string(I.t.LPJmLy),
       children: (0, r.jsx)(y.Z, {

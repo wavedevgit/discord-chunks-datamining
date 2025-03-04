@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   V1: () => p,
-  ZI: () => g,
+  ZI: () => m,
   ZP: () => E
 });
 var r = n(524437),
@@ -49,7 +49,7 @@ function h(e) {
   }
 }
 
-function m(e) {
+function g(e) {
   return {
     backgroundGradientPresetId: null != e.backgroundGradientPresetId ? i.yC.create({
       value: e.backgroundGradientPresetId
@@ -57,7 +57,7 @@ function m(e) {
   }
 }
 
-function g(e) {
+function m(e) {
   let {
     backgroundGradientPresetId: t,
     theme: n,
@@ -81,7 +81,7 @@ function g(e) {
         }
       }
     }), s.Z.shouldSync("appearance")) return d.hW.updateAsync("appearance", e => {
-    e.theme = h(n), e.clientThemeSettings = m({
+    e.theme = h(n), e.clientThemeSettings = g({
       backgroundGradientPresetId: t
     })
   }, i)

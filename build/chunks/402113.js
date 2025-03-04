@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -54,7 +54,7 @@ function p(e, t) {
 
 function h(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -70,25 +70,25 @@ function m(e, t) {
   return i
 }
 
-function g(e) {
+function m(e) {
   var {
     location: t,
     applicationId: n,
     centerButton: d = !1
   } = e, _ = h(e, ["location", "applicationId", "centerButton"]);
   let {
-    parentAnalyticsLocation: m
-  } = (0, a.ZP)(), g = (0, l.Z)({
+    parentAnalyticsLocation: g
+  } = (0, a.ZP)(), m = (0, l.Z)({
     location: "LeaveActivityButton"
   }), E = d ? c.d : c.Z, v = () => {
-    (0, s.v)(m, s.d.LEAVE_ACTIVITY), o.Z.leaveActivity({
+    (0, s.v)(g, s.d.LEAVE_ACTIVITY), o.Z.leaveActivity({
       location: t,
       applicationId: n,
       showFeedback: !0
     })
   };
   return (0, r.jsx)(E, p(f({}, _), {
-    fullRegionButton: g,
+    fullRegionButton: m,
     onClick: v,
     iconComponent: i.PBZ,
     label: u.NW.string(u.t["R/FK4O"])

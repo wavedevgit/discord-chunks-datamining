@@ -35,8 +35,8 @@ function _(e) {
     _ = e.variation,
     p = e.offsets,
     h = e.position,
-    m = e.gpuAcceleration,
-    g = e.adaptive,
+    g = e.gpuAcceleration,
+    m = e.adaptive,
     E = e.roundOffsets,
     v = e.isFixed,
     b = p.x,
@@ -56,15 +56,15 @@ function _(e) {
     A = r.t$,
     C = r.we,
     R = window;
-  if (g) {
+  if (m) {
     var P = (0, i.Z)(l),
-      w = "clientHeight",
-      D = "clientWidth";
-    P === (0, o.Z)(l) && (P = (0, a.Z)(l), "static" !== (0, s.Z)(P).position && "absolute" === h && (w = "scrollHeight", D = "scrollWidth")), (u === r.we || (u === r.t$ || u === r.F2) && _ === r.ut) && (C = r.I, S -= (v && P === R && R.visualViewport ? R.visualViewport.height : P[w]) - c.height, S *= m ? 1 : -1), (u === r.t$ || (u === r.we || u === r.I) && _ === r.ut) && (A = r.F2, y -= (v && P === R && R.visualViewport ? R.visualViewport.width : P[D]) - c.width, y *= m ? 1 : -1)
+      D = "clientHeight",
+      w = "clientWidth";
+    P === (0, o.Z)(l) && (P = (0, a.Z)(l), "static" !== (0, s.Z)(P).position && "absolute" === h && (D = "scrollHeight", w = "scrollWidth")), (u === r.we || (u === r.t$ || u === r.F2) && _ === r.ut) && (C = r.I, S -= (v && P === R && R.visualViewport ? R.visualViewport.height : P[D]) - c.height, S *= g ? 1 : -1), (u === r.t$ || (u === r.we || u === r.I) && _ === r.ut) && (A = r.F2, y -= (v && P === R && R.visualViewport ? R.visualViewport.width : P[w]) - c.width, y *= g ? 1 : -1)
   }
   var L = Object.assign({
       position: h
-    }, g && d),
+    }, m && d),
     x = !0 === E ? f({
       x: y,
       y: S
@@ -72,7 +72,7 @@ function _(e) {
       x: y,
       y: S
     };
-  return (y = x.x, S = x.y, m) ? Object.assign({}, L, ((n = {})[C] = N ? "0" : "", n[A] = T ? "0" : "", n.transform = 1 >= (R.devicePixelRatio || 1) ? "translate(" + y + "px, " + S + "px)" : "translate3d(" + y + "px, " + S + "px, 0)", n)) : Object.assign({}, L, ((t = {})[C] = N ? S + "px" : "", t[A] = T ? y + "px" : "", t.transform = "", t))
+  return (y = x.x, S = x.y, g) ? Object.assign({}, L, ((n = {})[C] = N ? "0" : "", n[A] = T ? "0" : "", n.transform = 1 >= (R.devicePixelRatio || 1) ? "translate(" + y + "px, " + S + "px)" : "translate3d(" + y + "px, " + S + "px, 0)", n)) : Object.assign({}, L, ((t = {})[C] = N ? S + "px" : "", t[A] = T ? y + "px" : "", t.transform = "", t))
 }
 let p = {
   name: "computeStyles",

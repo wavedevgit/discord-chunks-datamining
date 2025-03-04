@@ -3,7 +3,7 @@
 n.d(t, {
   Qi: () => E,
   R9: () => b,
-  l_: () => g,
+  l_: () => m,
   t: () => v
 });
 var r = n(200651);
@@ -57,7 +57,7 @@ function p(e, t) {
 
 function h(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -65,14 +65,14 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let g = "premium_new_tier_2_gradient",
+let m = "premium_new_tier_2_gradient",
   E = "premium_old_tier_2_gradient";
 
 function v(e) {
@@ -117,7 +117,7 @@ function b(e) {
     xmlns: "http://www.w3.org/2000/svg",
     children: [(0, r.jsxs)("defs", {
       children: [(0, r.jsxs)("linearGradient", {
-        id: g,
+        id: m,
         x1: "0%",
         y1: "0%",
         x2: "100%",

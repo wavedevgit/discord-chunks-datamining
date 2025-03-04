@@ -16,8 +16,8 @@ var r = n(477660),
   _ = n(594174),
   p = n(768581),
   h = n(934415),
-  m = n(624138),
-  g = n(699450),
+  g = n(624138),
+  m = n(699450),
   E = n(594199),
   v = n(981631),
   b = n(388032);
@@ -69,7 +69,7 @@ function N(e) {
   return {
     type: "guild",
     guildId: e.id,
-    content: (0, m.aF)(e.name, 32),
+    content: (0, g.aF)(e.name, 32),
     icon: p.ZP.getGuildIconURL({
       id: e.id,
       icon: e.icon,
@@ -80,7 +80,7 @@ function N(e) {
 
 function A(e, t) {
   let n;
-  let r = D((0, m.aF)(e.name, 32));
+  let r = w((0, g.aF)(e.name, 32));
   return {
     type: "channel",
     content: [n = "italics" === t ? {
@@ -95,7 +95,7 @@ function A(e, t) {
 function C(e, t) {
   let n = {
     type: "channel",
-    content: [D(e.roleSubscriptionGated ? e.name : b.NW.string(b.t["/YzI6+"]))],
+    content: [w(e.roleSubscriptionGated ? e.name : b.NW.string(b.t["/YzI6+"]))],
     channelType: e.roleSubscriptionGated ? e.type : v.d4z.UNKNOWN,
     iconType: "locked"
   };
@@ -112,7 +112,7 @@ function C(e, t) {
 function R(e) {
   return {
     type: "channel",
-    content: [D("")],
+    content: [w("")],
     iconType: e ? "post" : "message"
   }
 }
@@ -145,7 +145,7 @@ function P(e, t) {
     name: (0, a.F6)(r, _.default, f.Z),
     isDm: r.isPrivate(),
     isForumPost: r.isForumPost(),
-    isMentionable: (0, g.B)(r.type),
+    isMentionable: (0, m.B)(r.type),
     canViewChannel: (0, l.YO)(r),
     roleSubscriptionGated: i,
     iconType: u,
@@ -153,7 +153,7 @@ function P(e, t) {
   } : null
 }
 
-function w(e) {
+function D(e) {
   return {
     type: "link",
     content: [{
@@ -165,7 +165,7 @@ function w(e) {
   }
 }
 
-function D(e) {
+function w(e) {
   return {
     type: "text",
     content: e
@@ -173,7 +173,7 @@ function D(e) {
 }
 
 function L(e) {
-  return null != e ? w(e) : D("#".concat(b.NW.string(b.t.J90oLS)))
+  return null != e ? D(e) : w("#".concat(b.NW.string(b.t.J90oLS)))
 }
 
 function x() {
@@ -236,7 +236,7 @@ function k(e, t, n, r) {
 
 function j(e, t, n, r) {
   if (!e.canViewChannel) return C(e, t);
-  if (!e.isMentionable) return D("#".concat(e.name));
+  if (!e.isMentionable) return w("#".concat(e.name));
   let i = {
       type: "channelMention",
       channelId: e.id,
@@ -281,7 +281,7 @@ let U = {
           i = e[1],
           o = e[2],
           a = e[3];
-        if (null == o) return w(r);
+        if (null == o) return D(r);
         let s = P(o, null);
         return null == s ? M(i, o, a, T(n.channelId), r) : j(s, a, T(n.channelId), r)
       }
@@ -296,7 +296,7 @@ let U = {
           o = e[2],
           a = e[3],
           s = e[4];
-        if (null == o || null == a) return w(r);
+        if (null == o || null == a) return D(r);
         let l = P(a, null);
         if (null != l) return j(l, s, T(n.channelId), r);
         let c = P(o, null);

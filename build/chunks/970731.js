@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  BD: () => m,
+  BD: () => g,
   DF: () => p,
   ZP: () => b,
   _F: () => h
@@ -59,10 +59,10 @@ var p = function(e) {
   h = function(e) {
     return e[e.ADJACENT = 0] = "ADJACENT", e[e.STACKED = 1] = "STACKED", e
   }({}),
-  m = function(e) {
+  g = function(e) {
     return e.BRAND = "brand", e.PRIMARY = "primary", e
   }({});
-let g = Object.freeze({
+let m = Object.freeze({
     brand: c.colorBrand,
     primary: c.colorPrimary
   }),
@@ -84,7 +84,7 @@ function b(e) {
     content: f,
     contentClassName: p,
     buttonCTA: h,
-    secondaryButtonCTA: m,
+    secondaryButtonCTA: g,
     onClick: b,
     onSecondaryClick: y,
     buttonProps: O = {
@@ -103,15 +103,15 @@ function b(e) {
   (0, s.ZP)(() => {
     null == I || I()
   });
-  let R = null != m,
+  let R = null != g,
     P = e => {
       b(e), null == N || N(l.L.PRIMARY)
     },
-    w = () => {
+    D = () => {
       null == y || y(), null == N || N(l.L.SECONDARY)
     };
   return (0, r.jsxs)("div", {
-    className: o()(n, g[t], c.upsellTooltipWrapper, c[A]),
+    className: o()(n, m[t], c.upsellTooltipWrapper, c[A]),
     children: [T, null == i ? null : (0, r.jsx)(a.X6q, {
       color: E[t],
       className: o()(u, c.upsellTooltipHeader),
@@ -129,8 +129,8 @@ function b(e) {
       }),
       children: [R ? (0, r.jsx)(a.zxk, _(d({}, S), {
         fullWidth: 1 === C,
-        onClick: w,
-        children: m
+        onClick: D,
+        children: g
       })) : null, null == h ? null : (0, r.jsx)(a.zxk, _(d({}, O), {
         fullWidth: !R || 1 === C,
         onClick: P,

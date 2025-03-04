@@ -3,7 +3,7 @@
 n.d(t, {
   ZP: () => _,
   jA: () => h,
-  sU: () => m
+  sU: () => g
 }), n(789020);
 var r = n(442837),
   i = n(812206),
@@ -52,7 +52,7 @@ function h(e) {
   })
 }
 
-function m(e) {
+function g(e) {
   let {
     channelId: t
   } = e;

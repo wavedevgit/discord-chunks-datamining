@@ -30,13 +30,13 @@ function c(e) {
     _ = i()(e),
     p = f.luminance(),
     h = _,
-    m = u,
-    g = u + d,
+    g = u,
+    m = u + d,
     E = i().contrast(f, _),
     v = a;
   for (; v-- > 0;) {
-    let e = E < m,
-      t = E > g;
+    let e = E < g,
+      t = E > m;
     if (!e && !t) break;
     let n = h.luminance() > p;
     h = t && n || e && !n ? h.darken() : h.brighten(), E = i().contrast(f, h)

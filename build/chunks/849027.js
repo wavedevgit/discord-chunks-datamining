@@ -16,33 +16,33 @@ var r = n(430198),
   _ = n(430824),
   p = n(823379),
   h = n(754688),
-  m = n(981631),
-  g = n(176505);
+  g = n(981631),
+  m = n(176505);
 async function E(e) {
   let {
     guildId: t,
     channelId: n
   } = e, E = _.Z.getGuild(t), v = _.Z.getRoles(t);
-  if (null == E && t !== m.ME) return !1;
+  if (null == E && t !== g.ME) return !1;
   if (null == n) return !0;
-  if ((0, g.AB)(n)) switch (n) {
-    case g.oC.ROLE_SUBSCRIPTIONS:
+  if ((0, m.AB)(n)) switch (n) {
+    case m.oC.ROLE_SUBSCRIPTIONS:
       return (0, c.on)(t, v);
-    case g.oC.GUILD_SHOP:
+    case m.oC.GUILD_SHOP:
       return (0, i.r)(E, v);
-    case g.oC.MEMBER_APPLICATIONS:
+    case m.oC.MEMBER_APPLICATIONS:
       return (0, o.v)(t);
-    case g.oC.GUILD_HOME:
+    case m.oC.GUILD_HOME:
       return (0, l.s)(t);
-    case g.oC.CHANNEL_BROWSER:
-      return null != E && E.hasFeature(m.oNc.COMMUNITY);
-    case g.oC.GUILD_ONBOARDING:
+    case m.oC.CHANNEL_BROWSER:
+      return null != E && E.hasFeature(g.oNc.COMMUNITY);
+    case m.oC.GUILD_ONBOARDING:
       return s.ZP.shouldShowOnboarding(t);
-    case g.oC.CUSTOMIZE_COMMUNITY:
-      return null != E && E.hasFeature(m.oNc.COMMUNITY);
-    case g.oC.MEMBER_SAFETY:
+    case m.oC.CUSTOMIZE_COMMUNITY:
+      return null != E && E.hasFeature(g.oNc.COMMUNITY);
+    case m.oC.MEMBER_SAFETY:
       return (0, a.lv)(t);
-    case g.oC.GUILD_BOOSTS:
+    case m.oC.GUILD_BOOSTS:
       return (0, u.gV)(E, "isAccessibleChannelOrThread");
     default:
       (0, p.vE)(n)

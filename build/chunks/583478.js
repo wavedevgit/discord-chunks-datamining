@@ -36,29 +36,29 @@ function _(e) {
 }
 let p = new l.Z("BalanceCounter"),
   h = (0, c.dU)(void 0) === u.C.PRODUCTION,
-  m = {
+  g = {
     jump: 1,
     duration: 1
   },
-  g = 3e3,
+  m = 3e3,
   E = {
     POSITIVE: [{
       delta: 200,
       duration: 1e3,
-      tickConfig: _({}, m)
+      tickConfig: _({}, g)
     }, {
       delta: 500,
       duration: 2e3,
-      tickConfig: _({}, m)
+      tickConfig: _({}, g)
     }].sort((e, t) => e.delta - t.delta),
     NEGATIVE: [{
       delta: 1e3,
       duration: 1e3,
-      tickConfig: _({}, m)
+      tickConfig: _({}, g)
     }, {
       delta: 4e3,
       duration: 2e3,
-      tickConfig: _({}, m)
+      tickConfig: _({}, g)
     }].sort((e, t) => e.delta - t.delta)
   },
   v = {
@@ -85,14 +85,14 @@ function b(e, t) {
     }
   }
 })(), h || p.log("Initializing data structures for BalanceCounter speed and tick configurations: ", {
-  MAX_ANIMATION_DURATION_MS: g,
+  MAX_ANIMATION_DURATION_MS: m,
   ANIMATION_THRESHOLDS: E
 });
 let y = (e, t, n, r) => {
     let i = Math.abs(r - n),
       o = E[t],
       a = v[t];
-    if (i > a.delta) return b(i, g - a.duration);
+    if (i > a.delta) return b(i, m - a.duration);
     for (let e of o)
       if (i <= e.delta) return e.tickConfig;
     return {
@@ -151,13 +151,13 @@ let y = (e, t, n, r) => {
       }, a)
     }, [o, t, l]);
     let _ = null === t,
-      m = null === o ? O(t) : O(o),
-      g = _ ? 0 : m;
+      g = null === o ? O(t) : O(o),
+      m = _ ? 0 : g;
     return (0, r.jsx)(s.Text, {
       variant: "text-md/semibold",
       className: a()([d.balanceCounterText, n]),
       style: {
-        width: "calc(".concat(g, "ch + ").concat(_ ? "0px" : "8px", ")"),
+        width: "calc(".concat(m, "ch + ").concat(_ ? "0px" : "8px", ")"),
         opacity: +!_
       },
       children: o

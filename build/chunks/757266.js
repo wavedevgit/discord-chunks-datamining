@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120);
 var r, i = n(392711),
   o = n.n(i),
@@ -82,7 +82,7 @@ class h extends(r = a.ZP.Store) {
   }
 }
 l(h, "displayName", "ConnectedAppsStore");
-let m = new h(s.Z, {
+let g = new h(s.Z, {
   OVERLAY_INITIALIZE: p,
   RPC_APP_CONNECTED: d,
   RPC_APP_AUTHENTICATED: f,

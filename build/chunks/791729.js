@@ -44,12 +44,12 @@ function t(e) {
       }
     };
 
-  function m(e) {
+  function g(e) {
     return t.concat(/\b/, t.either(...e.map(e => e.replace(/\s+/, "\\s+"))), /\b/)
   }
-  let g = {
+  let m = {
     scope: "keyword",
-    match: m(u),
+    match: g(u),
     relevance: 0
   };
   return {
@@ -73,8 +73,8 @@ function t(e) {
     },
     contains: [{
       scope: "type",
-      match: m(a)
-    }, g, h, _, r, i, e.C_NUMBER_MODE, e.C_BLOCK_COMMENT_MODE, n, p]
+      match: g(a)
+    }, m, h, _, r, i, e.C_NUMBER_MODE, e.C_BLOCK_COMMENT_MODE, n, p]
   }
 }
 e.exports = t

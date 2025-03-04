@@ -7,7 +7,7 @@ n.d(t, {
   Nl: () => C,
   Ns: () => v,
   Rx: () => N,
-  nX: () => w,
+  nX: () => D,
   sc: () => R
 }), n(47120), n(86693), n(536091), n(411104), n(653041), n(26686), n(474991), n(398202), n(301563), n(852437), n(566702);
 var r = n(403644),
@@ -32,7 +32,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function m(e) {
   }
   return e
 }
-let g = 4,
+let m = 4,
   E = new f.Yd("SDP");
 var v = function(e) {
   return e.SENDRECV = "sendrecv", e.SENDONLY = "sendonly", e.RECVONLY = "recvonly", e.INACTIVE = "inactive", e
@@ -150,14 +150,14 @@ function I(e) {
   let {
     media: [y]
   } = d.parse(a);
-  if (y.type = n, y.protocol = b, y.payloads = l, y.setup = r, y.mid = t, y.rtcpMux = "rtcp-mux", y.direction = o, y.ssrcs = f, f.length > 0 && (null != E && (y.ssrcGroups = i()(f, g).map(e => {
+  if (y.type = n, y.protocol = b, y.payloads = l, y.setup = r, y.mid = t, y.rtcpMux = "rtcp-mux", y.direction = o, y.ssrcs = f, f.length > 0 && (null != E && (y.ssrcGroups = i()(f, m).map(e => {
       let t = e[0].id;
       return {
         semantics: "FID",
         ssrcs: "".concat(t, " ").concat(t + 1)
       }
-    }), y.ssrcs = i()(f, g).map(e => {
-      let t = e.map(e => (e = m({}, e), e.id += 1, e));
+    }), y.ssrcs = i()(f, m).map(e => {
+      let t = e.map(e => (e = g({}, e), e.id += 1, e));
       return [...e, ...t]
     }).flat()), p.WS || "Firefox" === u().name)) {
     let e = f.find(e => "msid" === e.attribute);
@@ -236,18 +236,18 @@ function T(e) {
   if (E.info("generateSessionDescription: ".concat(JSON.stringify(f))), "Firefox" === u().name) {
     let e = "answer" === t ? "passive" : "active";
     f.forEach(t => {
-      let [r, u, f, h, m] = t;
+      let [r, u, f, h, g] = t;
       if ("video" === f && (0 === l || 0 === d)) return;
-      let g = "audio" === f ? i : s,
+      let m = "audio" === f ? i : s,
         E = "audio" === f ? o : l,
         v = "audio" === f ? a : c;
       p.push(I({
-        mid: m,
+        mid: g,
         type: f,
         setup: e,
         direction: h,
         baseSDP: n,
-        codec: g,
+        codec: m,
         payload: E,
         bitrate: v,
         ssrcs: O(u, r, "audio" === f ? "a" : "v"),
@@ -322,20 +322,20 @@ function N(e) {
     let t, {
       ssrc: d,
       cname: h,
-      type: m,
-      direction: g,
+      type: g,
+      direction: m,
       mid: E
     } = e;
-    "" !== h ? t = O(h, d, "audio" === m ? "a" : "v") : (t = [], "sendonly" === g ? g = "inactive" : "sendrecv" === g && (g = "recvonly"));
-    let v = "audio" === m ? r : a,
-      b = "audio" === m ? i : s,
-      y = "audio" === m ? null : u,
-      S = "audio" === m ? o : l;
+    "" !== h ? t = O(h, d, "audio" === g ? "a" : "v") : (t = [], "sendonly" === m ? m = "inactive" : "sendrecv" === m && (m = "recvonly"));
+    let v = "audio" === g ? r : a,
+      b = "audio" === g ? i : s,
+      y = "audio" === g ? null : u,
+      S = "audio" === g ? o : l;
     _.push(I({
       mid: E,
-      type: m,
+      type: g,
       setup: p,
-      direction: g,
+      direction: m,
       baseSDP: n,
       codec: v,
       payload: b,
@@ -428,7 +428,7 @@ function P(e) {
   return !(t.split(" ").length < 3) || (E.error("Incorrect c-line: ".concat(t)), !1)
 }
 
-function w(e) {
+function D(e) {
   return [...new Set(e.split(/\r\n/).filter(e => e.startsWith("a=extmap:")))].map(e => {
     let t = e.split(" ");
     return {

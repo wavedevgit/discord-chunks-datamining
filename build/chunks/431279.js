@@ -24,7 +24,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function m(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,7 +49,7 @@ function g(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -79,7 +79,7 @@ class y extends(r = o.PureComponent) {
         isWindowFocused: n
       } = e,
       r = v(e, ["appContext", "isWindowFocused"]);
-    return (0, i.jsx)(c.ZP, E(m({}, r), {
+    return (0, i.jsx)(c.ZP, E(g({}, r), {
       onZoom: this.onZoom,
       onMouseEnter: this.onMouseEnter,
       shouldAnimate: n
@@ -121,8 +121,8 @@ class y extends(r = o.PureComponent) {
         srcIsAnimated: f,
         children: _,
         shouldHideMediaOptions: h = !1,
-        sourceMetadata: m,
-        analyticsSource: g
+        sourceMetadata: g,
+        analyticsSource: m
       } = this.props, E = {
         url: o,
         width: l,
@@ -134,7 +134,7 @@ class y extends(r = o.PureComponent) {
         srcIsAnimated: f,
         children: _,
         trigger: r,
-        sourceMetadata: m,
+        sourceMetadata: g,
         original: null != s ? s : o
       };
       (0, a.k)(e.currentTarget) && e.currentTarget.blur(), (0, d.K)({
@@ -142,7 +142,7 @@ class y extends(r = o.PureComponent) {
         onClose: this.onCloseImage,
         items: [E],
         shouldHideMediaOptions: h,
-        location: null != g ? g : "LazyImageZoomable",
+        location: null != m ? m : "LazyImageZoomable",
         contextKey: this.modalContext
       })
     })
@@ -152,7 +152,7 @@ class y extends(r = o.PureComponent) {
 function O(e) {
   let t = (0, l.bp)(),
     n = (0, f.n)();
-  return (0, i.jsx)(y, E(m({}, e), {
+  return (0, i.jsx)(y, E(g({}, e), {
     isWindowFocused: n,
     appContext: t
   }))

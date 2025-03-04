@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(47120), n(301563), n(757143);
 var r = n(192379),
   i = n(270445),
@@ -84,7 +84,7 @@ let p = (e, t, n) => ({
     l.T.withSingleEntry(e, () => {
       let o = s.HZ(e),
         a = null != o && h(t, o[0]);
-      if (null != r && a && (c.Q.removeInlineChildren(e, o), i = !1), m(e, n, r, i), null != r && a) {
+      if (null != r && a && (c.Q.removeInlineChildren(e, o), i = !1), g(e, n, r, i), null != r && a) {
         let n = s.cr(e);
         if (o = u.q.updateElement(e, o), null != n) {
           let r = u.q.markdown(n[0], t.guild_id);
@@ -111,7 +111,7 @@ let p = (e, t, n) => ({
           reverse: !0
         })
       }
-      m(e, n, r, i), a && c.Q.selectNextCommandOption(e)
+      g(e, n, r, i), a && c.Q.selectNextCommandOption(e)
     })
   },
   insertEmoji(t) {
@@ -120,7 +120,7 @@ let p = (e, t, n) => ({
       var r, i;
       let o = t.animated ? "a" : "",
         a = null !== (i = null !== (r = t.originalName) && void 0 !== r ? r : t.name) && void 0 !== i ? i : "";
-      m(e, ":".concat(t.name, ":"), null != t.id ? "<".concat(o, ":").concat(a.replace(/:/g, ""), ":").concat(t.id, ">") : null, n)
+      g(e, ":".concat(t.name, ":"), null != t.id ? "<".concat(o, ":").concat(a.replace(/:/g, ""), ":").concat(t.id, ">") : null, n)
     })
   }
 });
@@ -132,13 +132,13 @@ function h(e, t) {
   return null != i && (i.type !== o.jw.STRING || (null == i ? void 0 : i.choices) != null || (null == i ? void 0 : i.autocomplete))
 }
 
-function m(e, t, n, r) {
+function g(e, t, n, r) {
   let i = u.bN.areStylesDisabled(e) || null == n ? t : n;
   l.T.withSingleEntry(e, () => {
     c.Q.insertText(e, r ? i + " " : i)
   })
 }
 
-function g(e, t, n, i) {
+function m(e, t, n, i) {
   r.useImperativeHandle(e, () => p(t, n, i), [t, n, i])
 }

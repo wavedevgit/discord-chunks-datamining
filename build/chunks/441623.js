@@ -15,8 +15,8 @@ var r, i = n(392711),
   _ = n(699516),
   p = n(709054),
   h = n(522558),
-  m = n(581025),
-  g = n(981631);
+  g = n(581025),
+  m = n(981631);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -58,7 +58,7 @@ let N = T(),
   R = {},
   P = null;
 
-function w(e, t) {
+function D(e, t) {
   let n = new Date,
     r = new Date(e.getTime());
   r.setFullYear(t);
@@ -68,8 +68,8 @@ function w(e, t) {
   return o.setDate(r.getDate() + O), n > i && n < o
 }
 
-function D(e) {
-  return !w(e, e.getFullYear()) && w(e, new Date().getFullYear())
+function w(e) {
+  return !D(e, e.getFullYear()) && D(e, new Date().getFullYear())
 }
 
 function L() {
@@ -77,10 +77,10 @@ function L() {
     q(P);
     return
   }
-  if (k(), !f.Z.hasConsented(g.pjP.PERSONALIZATION)) return;
+  if (k(), !f.Z.hasConsented(m.pjP.PERSONALIZATION)) return;
   let {
     enabled: e
-  } = m.G.getCurrentConfig({
+  } = g.G.getCurrentConfig({
     location: "PremiumGiftingIntentStore updateFriendAnniversaries"
   }, {
     autoTrackExposure: !1
@@ -96,9 +96,9 @@ function L() {
       if (A.length >= y) break;
       let t = _.Z.getSince(e),
         n = d.Z.getUserAffinity(e);
-      if (_.Z.getRelationshipType(e) === g.OGo.FRIEND && !_.Z.isIgnored(e) && null != n && n.affinity > 0 && null != t) {
+      if (_.Z.getRelationshipType(e) === m.OGo.FRIEND && !_.Z.isIgnored(e) && null != n && n.affinity > 0 && null != t) {
         let n = new Date(t);
-        D(n) && (A.push(e), R[e] = {
+        w(n) && (A.push(e), R[e] = {
           friendsSince: n
         })
       }

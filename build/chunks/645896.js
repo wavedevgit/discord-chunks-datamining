@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Cc: () => g,
+  Cc: () => m,
   E8: () => E,
   L_: () => v
 });
@@ -57,7 +57,7 @@ function h(e) {
   var t;
   return Date.now() - (null !== (t = _[e]) && void 0 !== t ? t : 0) > p
 }
-let m = (0, o.F)((e, t) => ({
+let g = (0, o.F)((e, t) => ({
   clans: {},
   isFetchingGuild: e => null != t().fetchPromises[e],
   error: null,
@@ -108,16 +108,16 @@ let m = (0, o.F)((e, t) => ({
   }
 }));
 
-function g(e) {
-  return m(t => null != e ? t.clans[e] : null)
+function m(e) {
+  return g(t => null != e ? t.clans[e] : null)
 }
 
 function E(e) {
-  return m(t => null != e && t.isFetchingGuild(e))
+  return g(t => null != e && t.isFetchingGuild(e))
 }
 
 function v(e) {
-  let t = m(e => e.fetchClanInfo, i.X);
+  let t = g(e => e.fetchClanInfo, i.X);
   return [E(e), r.useCallback(async () => {
     if (null == e) return null;
     try {

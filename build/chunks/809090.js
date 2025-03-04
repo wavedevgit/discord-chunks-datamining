@@ -52,9 +52,9 @@ function h(e, t) {
   }), e
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
-  var n, r, i = g(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function m(e, t) {
   return i
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -77,13 +77,13 @@ function E(e) {
     width: o,
     height: f,
     className: p,
-    selectable: g = !1,
+    selectable: m = !1,
     isSquircle: E,
     onFocus: v,
     onBlur: b,
     onMouseOver: y,
     onMouseLeave: O
-  } = e, S = m(e, ["section", "isSelected", "width", "height", "className", "selectable", "isSquircle", "onFocus", "onBlur", "onMouseOver", "onMouseLeave"]);
+  } = e, S = g(e, ["section", "isSelected", "width", "height", "className", "selectable", "isSquircle", "onFocus", "onBlur", "onMouseOver", "onMouseLeave"]);
   let [I, T] = i.useState(!1), N = i.useCallback(() => {
     T(!0), null == v || v()
   }, [v]), A = i.useCallback(() => {
@@ -107,8 +107,8 @@ function E(e) {
   }, [t, o]);
   return (0, r.jsx)("div", h(_({}, S), {
     className: a()(u.wrapper, p, {
-      [u.selectable]: g,
-      [u.selected]: g && n
+      [u.selectable]: m,
+      [u.selected]: m && n
     }),
     onFocus: N,
     onBlur: A,
@@ -116,7 +116,7 @@ function E(e) {
     onMouseLeave: R,
     children: (0, r.jsx)(s.ZP, {
       className: u.mask,
-      mask: E || g && (n || I) ? s.QS.SQUIRCLE : s.QS.AVATAR_DEFAULT,
+      mask: E || m && (n || I) ? s.QS.SQUIRCLE : s.QS.AVATAR_DEFAULT,
       width: o,
       height: f,
       children: (0, r.jsx)("img", {

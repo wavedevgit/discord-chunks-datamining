@@ -78,7 +78,7 @@ function t(e) {
       built_in: "std string wstring cin cout cerr clog stdin stdout stderr stringstream istringstream ostringstream auto_ptr deque list queue stack vector map set pair bitset multiset multimap unordered_set unordered_map unordered_multiset unordered_multimap priority_queue make_pair array shared_ptr abort terminate abs acos asin atan2 atan calloc ceil cosh cos exit exp fabs floor fmod fprintf fputs free frexp fscanf future isalnum isalpha iscntrl isdigit isgraph islower isprint ispunct isspace isupper isxdigit tolower toupper labs ldexp log10 log malloc realloc memchr memcmp memcpy memset modf pow printf putchar puts scanf sinh sin snprintf sprintf sqrt sscanf strcat strchr strcmp strcpy strcspn strlen strncat strncmp strncpy strpbrk strrchr strspn strstr tanh tan vfprintf vprintf vsprintf endl initializer_list unique_ptr"
     },
     h = [d, s, n, e.C_BLOCK_COMMENT_MODE, u, c],
-    m = {
+    g = {
       variants: [{
         begin: /=/,
         end: /;/
@@ -99,7 +99,7 @@ function t(e) {
       }]),
       relevance: 0
     },
-    g = {
+    m = {
       begin: "(" + a + "[\\*&\\s]+)+" + _,
       returnBegin: !0,
       end: /[{;=]/,
@@ -141,7 +141,7 @@ function t(e) {
     keywords: p,
     disableAutodetect: !0,
     illegal: "</",
-    contains: [].concat(m, g, h, [d, {
+    contains: [].concat(g, m, h, [d, {
       begin: e.IDENT_RE + "::",
       keywords: p
     }, {

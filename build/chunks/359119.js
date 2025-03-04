@@ -58,24 +58,24 @@ let _ = [],
   p = {},
   h = new Set;
 
-function m(e) {
+function g(e) {
   return 2 === e.type || 3 === e.type
 }
 
-function g(e) {
+function m(e) {
   let {
     safetyWarnings: t
   } = e;
-  null != t && (p[e.id] = t, t.some(e => m(e) && null != e.dismiss_timestamp && !N(e.dismiss_timestamp)) ? h.add(e.id) : h.delete(e.id)), null == t && (null != p[e.id] && delete p[e.id], h.delete(e.id))
+  null != t && (p[e.id] = t, t.some(e => g(e) && null != e.dismiss_timestamp && !N(e.dismiss_timestamp)) ? h.add(e.id) : h.delete(e.id)), null == t && (null != p[e.id] && delete p[e.id], h.delete(e.id))
 }
 
 function E(e) {
-  g(e.channel)
+  m(e.channel)
 }
 
 function v(e) {
   e.channels.forEach(e => {
-    g(e)
+    m(e)
   })
 }
 
@@ -127,7 +127,7 @@ function I(e) {
 
 function T() {
   p = {}, Object.values(o.Z.getMutablePrivateChannels()).forEach(e => {
-    g(e)
+    m(e)
   })
 }
 

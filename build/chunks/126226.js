@@ -18,8 +18,8 @@ var i = n(693789),
   _ = n(895924),
   p = n(581364),
   h = n(826298),
-  m = n(588468),
-  g = n(496675),
+  g = n(588468),
+  m = n(496675),
   E = n(226951),
   v = n(877565),
   b = n(590921),
@@ -69,7 +69,7 @@ function R(e) {
 }
 let P = {
   sentinel: y.GI,
-  stores: [f.Z, c.ZP, g.Z],
+  stores: [f.Z, c.ZP, m.Z],
   matches: (e, t, n, r, i) => i.commands !== b.L8.DISABLED && null == f.Z.getActiveCommand(e.id) && (r || i.commands !== b.L8.OLD_BUILT_INS),
   queryResults(e, t, n, r, i) {
     if (0 === n.length && r.commands !== b.L8.OLD_BUILT_INS) return A;
@@ -143,7 +143,7 @@ let P = {
       titleWithQuery: S.t.HFRoZW,
       titleWithoutQuery: S.NW.string(S.t["0hKkS0"]),
       getQuery: e => "".concat(y.GI).concat(e),
-      Component: d ? m.ZP.Command : m.ZP.NewCommand,
+      Component: d ? g.ZP.Command : g.ZP.NewCommand,
       getProps: e => {
         let {
           command: t,

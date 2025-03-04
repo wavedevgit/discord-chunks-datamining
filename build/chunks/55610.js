@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  U: () => m,
+  U: () => g,
   Z: () => E
 });
 var r = n(200651);
@@ -19,7 +19,7 @@ var i = n(120356),
   p = n(388032),
   h = n(864803);
 
-function m() {
+function g() {
   let e = (0, f.Z)(),
     {
       enabled: t
@@ -38,7 +38,7 @@ function m() {
   return null != e && ("PL" === e ? t : "TR" === e && n)
 }
 
-function g(e, t) {
+function m(e, t) {
   return "PL" === e ? t ? p.t.hCpziY : p.t.mTFLPD : "TR" === e ? t ? p.t["9rb4W1"] : p.t.SQ4Lyc : t ? p.t.M4FYRE : p.t.MIY5dn
 }
 let E = e => {
@@ -46,7 +46,7 @@ let E = e => {
     fromBoostCancelModal: t,
     className: n
   } = e, i = (0, f.Z)();
-  return m() ? (s()(null != i, "Subscription billing country should not be null"), (0, r.jsxs)("div", {
+  return g() ? (s()(null != i, "Subscription billing country should not be null"), (0, r.jsxs)("div", {
     className: o()(h.noticeRoot, n),
     children: [(0, r.jsx)("div", {
       className: h.iconContainer,
@@ -59,7 +59,7 @@ let E = e => {
       })
     }), (0, r.jsx)("div", {
       className: h.text,
-      children: p.NW.format(g(i, t), {
+      children: p.NW.format(m(i, t), {
         helpCenterLink: c.Z.getArticleURL(_.BhN.LOCALIZED_PRICING)
       })
     })]

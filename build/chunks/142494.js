@@ -2,7 +2,7 @@
 "use strict";
 let r, i;
 n.d(t, {
-  FC: () => m,
+  FC: () => g,
   _H: () => f,
   yR: () => h
 }), n(47120), n(301563), n(757143);
@@ -75,7 +75,7 @@ function h(e) {
   r = _(c.j, e), i = p(c.j)
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return "";
   null == r && h(n(281071).Z), e = e.replace(/^\n+|\n+$/g, "");
   let i = u.aT.test(e),

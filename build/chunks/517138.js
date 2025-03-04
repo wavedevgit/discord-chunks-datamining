@@ -126,7 +126,7 @@ function t(e) {
       },
       keywords: o
     },
-    m = [u, {
+    g = [u, {
       variants: [{
         match: [/class\s+/, i, /\s+<\s+/, i]
       }, {
@@ -208,12 +208,12 @@ function t(e) {
       }].concat(s, l),
       relevance: 0
     }].concat(s, l);
-  c.contains = m, p.contains = m;
-  let g = [{
+  c.contains = g, p.contains = g;
+  let m = [{
     begin: /^\s*=>/,
     starts: {
       end: "$",
-      contains: m
+      contains: g
     }
   }, {
     className: "meta.prompt",
@@ -221,7 +221,7 @@ function t(e) {
     starts: {
       end: "$",
       keywords: o,
-      contains: m
+      contains: g
     }
   }];
   return l.unshift(s), {
@@ -231,7 +231,7 @@ function t(e) {
     illegal: /\/\*/,
     contains: [e.SHEBANG({
       binary: "ruby"
-    })].concat(g).concat(l).concat(m)
+    })].concat(m).concat(l).concat(g)
   }
 }
 e.exports = t

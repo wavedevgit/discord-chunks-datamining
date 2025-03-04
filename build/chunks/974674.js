@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Vq: () => D,
+  Vq: () => w,
   Xo: () => F,
   qE: () => U
 }), n(411104), n(47120);
@@ -18,8 +18,8 @@ var r = n(200651),
   _ = n(686546),
   p = n(51144),
   h = n(182294),
-  m = n(981631),
-  g = n(419061),
+  g = n(981631),
+  m = n(419061),
   E = n(388032),
   v = n(732416);
 
@@ -189,7 +189,7 @@ function P(e, t, n, r) {
   return null
 }
 
-function w(e, t, n, r) {
+function D(e, t, n, r) {
   if (null == e) return _.QS.AVATAR_DEFAULT;
   if (r) switch (t) {
     case h.EF.SIZE_16:
@@ -213,7 +213,7 @@ function w(e, t, n, r) {
     case h.EF.SIZE_120:
       return _.QS.AVATAR_STATUS_TYPING_120
   }
-  if (e === m.Skl.ONLINE && n) switch (t) {
+  if (e === g.Skl.ONLINE && n) switch (t) {
     case h.EF.SIZE_16:
       return _.QS.AVATAR_STATUS_MOBILE_16;
     case h.EF.SIZE_20:
@@ -260,7 +260,7 @@ function w(e, t, n, r) {
   throw Error("getMaskId(): Unsupported type, size: ".concat(t, ", status: ").concat(e, ", isMobile: ").concat(n ? "true" : "false"))
 }
 
-function D(e, t, n) {
+function w(e, t, n) {
   let r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
     i = (0, u.W5)(e.status, t, n, r),
     o = (r ? e.size - (i.width / 2 + e.status / 2) : e.size - i.width) - e.offset;
@@ -287,7 +287,7 @@ function L(e, t, n) {
 }
 
 function x(e, t, n, i) {
-  let o = D(n, i, t, !1),
+  let o = w(n, i, t, !1),
     a = (0, u.lm)(i, e);
   if (!t) {
     let t = o.height / 2 + n.stroke,
@@ -325,7 +325,7 @@ function M(e) {
     isMobile: n,
     isTyping: r,
     size: i
-  } = e, o = n && !r && t === m.Skl.ONLINE, a = (0, h.UC)(i);
+  } = e, o = n && !r && t === g.Skl.ONLINE, a = (0, h.UC)(i);
   return y({}, L(a, o, r), (0, u.Dk)({
     status: t,
     size: a.status,
@@ -349,7 +349,7 @@ function k(e) {
     className: f,
     tabIndex: _,
     ariaLabel: p,
-    ariaHidden: m,
+    ariaHidden: g,
     status: E,
     isMobile: b = !1,
     isTyping: y = !1,
@@ -359,7 +359,7 @@ function k(e) {
   } = e, T = {
     width: (0, h.px)(n),
     height: (0, h.px)(n)
-  }, N = null == p || m ? void 0 : R(p, E, b), A = I.size * g.hs, C = P(E, n, b, y), w = null != O && (0, r.jsx)("svg", {
+  }, N = null == p || g ? void 0 : R(p, E, b), A = I.size * m.hs, C = P(E, n, b, y), D = null != O && (0, r.jsx)("svg", {
     width: A + S,
     height: A,
     viewBox: "0 0 ".concat(A + S, " ").concat(A),
@@ -393,8 +393,8 @@ function k(e) {
     onMouseEnter: null != u ? u : void 0,
     onMouseLeave: null != d ? d : void 0,
     "aria-label": N,
-    "aria-hidden": m,
-    children: [t, w]
+    "aria-hidden": g,
+    children: [t, D]
   }) : (0, r.jsxs)("div", {
     className: a()(v.wrapper, f),
     style: T,
@@ -403,8 +403,8 @@ function k(e) {
     onMouseLeave: null != d ? d : void 0,
     role: "img",
     "aria-label": N,
-    "aria-hidden": m,
-    children: [t, w]
+    "aria-hidden": g,
+    children: [t, D]
   })
 }
 
@@ -437,13 +437,13 @@ function U(e) {
     isTyping: l = !1,
     typingIndicatorRef: f,
     isSpeaking: _ = !1,
-    statusTooltip: g = !1,
+    statusTooltip: m = !1,
     statusTooltipDelay: E,
     statusBackdropColor: b,
     "aria-hidden": O = !1,
     "aria-label": I,
     imageClassName: T
-  } = e, N = n !== m.Skl.UNKNOWN ? n : null, A = (0, h.UC)(i), C = null != N ? Math.ceil((A.status * h.D6 - A.status) / 2) : 0, R = A.size + C, P = (0, u.vj)(N, o);
+  } = e, N = n !== g.Skl.UNKNOWN ? n : null, A = (0, h.UC)(i), C = null != N ? Math.ceil((A.status * h.D6 - A.status) / 2) : 0, R = A.size + C, P = (0, u.vj)(N, o);
   return (0, r.jsx)(k, S(y({}, e), {
     ariaLabel: I,
     ariaHidden: O,
@@ -461,20 +461,20 @@ function U(e) {
         y: 0,
         width: A.size,
         height: A.size,
-        mask: "url(#".concat(w(N, i, s, l), ")"),
+        mask: "url(#".concat(D(N, i, s, l), ")"),
         children: (0, r.jsx)(j, {
           src: t,
           isSpeaking: _,
           className: T
         })
       }), null != N && null != b ? x(b, s, A, N) : null, null != N ? (0, r.jsx)(d.u, {
-        text: g ? (0, p.u5)(N) : null,
+        text: m ? (0, p.u5)(N) : null,
         "aria-label": !1,
         position: "top",
         spacing: 5 + 1.5 * A.stroke,
         delay: E,
         children: e => (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)("rect", S(y({}, e, D(A, N, s, l)), {
+          children: [(0, r.jsx)("rect", S(y({}, e, w(A, N, s, l)), {
             fill: P,
             mask: "url(#".concat((0, u.rs)(N, s, l), ")"),
             className: v.pointerEvents
@@ -502,16 +502,16 @@ function B(e) {
     fromColor: o,
     isMobile: l = !1,
     isTyping: _ = !1,
-    typingIndicatorRef: m,
-    isSpeaking: g = !1,
+    typingIndicatorRef: g,
+    isSpeaking: m = !1,
     size: E,
     src: b,
     status: O,
     statusColor: T,
     statusTooltip: R = !1,
     statusTooltipDelay: P,
-    statusBackdropColor: w,
-    "aria-hidden": D = !1,
+    statusBackdropColor: D,
+    "aria-hidden": w = !1,
     "aria-label": L,
     imageClassName: U
   } = e, B = (0, u.vj)(O, T), V = i.useId(), F = i.useId(), [Z] = i.useState(() => y({
@@ -542,7 +542,7 @@ function B(e) {
   } = W, J = I(W, ["avatarCutoutX", "avatarCutoutY", "avatarCutoutWidth", "avatarCutoutHeight", "avatarCutoutRadius", "fill"]), $ = (0, h.px)(E), ee = (0, h.UC)(E), et = ee.status * h.D6, en = ee.status * h.EW, er = null != O ? (ee.status * h.D6 - ee.status) / 2 : 0, ei = ee.size - ee.status - er - ee.offset, eo = ee.size - en - ee.offset, ea = ee.size + Math.ceil(er);
   return (0, r.jsx)(k, S(y({}, e), {
     ariaLabel: L,
-    ariaHidden: D,
+    ariaHidden: w,
     typingOffset: er,
     specs: ee,
     children: (0, r.jsxs)("svg", {
@@ -578,10 +578,10 @@ function B(e) {
         mask: "url(#".concat(V, ")"),
         children: (0, r.jsx)(j, {
           src: b,
-          isSpeaking: g,
+          isSpeaking: m,
           className: U
         })
-      }), null != w && x(w, l, ee, O), (0, r.jsx)(d.u, {
+      }), null != D && x(D, l, ee, O), (0, r.jsx)(d.u, {
         text: R ? (0, p.u5)(O) : null,
         "aria-label": !1,
         position: "top",
@@ -601,7 +601,7 @@ function B(e) {
               height: en,
               mask: "url(#".concat(F, ")")
             }), (0, r.jsx)(c.b, {
-              ref: m,
+              ref: g,
               dotRadius: ee.status / 4,
               x: .15 * et,
               y: .5 * en,
@@ -620,7 +620,7 @@ function B(e) {
 }
 
 function V(e, t, n, r, i) {
-  return null != n && null != t && (!!e || t !== n || t === m.Skl.ONLINE && r !== i)
+  return null != n && null != t && (!!e || t !== n || t === g.Skl.ONLINE && r !== i)
 }
 let F = i.memo(function(e) {
   var {

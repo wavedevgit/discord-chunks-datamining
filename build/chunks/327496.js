@@ -53,7 +53,7 @@ function p(e, t) {
 
 function h(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,18 +61,18 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let g = [18, 18, 16, 16, 14, 12, 10];
+let m = [18, 18, 16, 16, 14, 12, 10];
 
 function E(e) {
   var t;
-  return null !== (t = g[e.length - 1]) && void 0 !== t ? t : g[g.length - 1]
+  return null !== (t = m[e.length - 1]) && void 0 !== t ? t : m[m.length - 1]
 }
 
 function v(e, t) {
@@ -88,8 +88,8 @@ let b = e => {
     backgroundStyle: o = "always",
     children: d,
     icon: _,
-    name: m,
-    ariaLabel: g,
+    name: g,
+    ariaLabel: m,
     className: b,
     style: y,
     to: O,
@@ -97,7 +97,7 @@ let b = e => {
     selected: I = !1
   } = e, T = h(e, ["backgroundStyle", "children", "icon", "name", "ariaLabel", "className", "style", "to", "onClick", "selected"]);
   let N = (0, s.k6)();
-  null == _ && null != m && (n = E(t = (0, c.Zg)(m)));
+  null == _ && null != g && (n = E(t = (0, c.Zg)(g)));
   let A = i.useCallback(e => {
       if (null == O);
       else if ("string" == typeof O) N.push(O);
@@ -116,7 +116,7 @@ let b = e => {
     className: a()(b, u.wrapper, {
       [u.selected]: I
     }),
-    "aria-label": null != g && "" !== g ? g : null != m ? m : "",
+    "aria-label": null != m && "" !== m ? m : null != g ? g : "",
     style: p(f({}, y), {
       fontSize: n
     }),

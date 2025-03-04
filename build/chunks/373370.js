@@ -57,7 +57,7 @@ function h(e, t, n) {
   return n ? c.NW.formatToParts(e, t) : c.NW.formatToPlainString(e, t)
 }
 
-function m(e) {
+function g(e) {
   let {
     quest: t,
     taskDetails: n,
@@ -78,7 +78,7 @@ function m(e) {
   }, r)
 }
 
-function g(e) {
+function m(e) {
   let {
     quest: t,
     taskDetails: n,
@@ -178,12 +178,12 @@ function O(e) {
       targetMinutes: f
     } = n,
     _ = (0, o.Kr)(t.config);
-  if ((0, o.$J)(t) && (0, o.$H)(t)) return m({
+  if ((0, o.$J)(t) && (0, o.$H)(t)) return g({
     quest: t,
     taskDetails: n,
     withoutMarkdown: i
   });
-  if ((0, o.$J)(t)) return g({
+  if ((0, o.$J)(t)) return m({
     quest: t,
     taskDetails: n,
     withoutMarkdown: i

@@ -6,7 +6,7 @@ n.d(t, {
   _2: () => S,
   bE: () => v,
   gq: () => E,
-  nf: () => g
+  nf: () => m
 }), n(301563), n(653041);
 var r = n(544891),
   i = n(780384),
@@ -39,12 +39,12 @@ function h(e, t) {
   })
 }
 
-function m(e, t, n) {
+function g(e, t, n) {
   u[d(e, t)] = n
 }
 
-function g(e, t) {
-  t.forEach(t => m(e, t, 3))
+function m(e, t) {
+  t.forEach(t => g(e, t, 3))
 }
 var E = function(e) {
   return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.BOT = 1] = "BOT", e[e.INTEGRATION = 2] = "INTEGRATION", e[e.DISCOVERY = 3] = "DISCOVERY", e[e.HUB = 4] = "HUB", e[e.INVITE = 5] = "INVITE", e[e.VANITY_URL = 6] = "VANITY_URL", e[e.MANUAL_MEMBER_VERIFICATION = 7] = "MANUAL_MEMBER_VERIFICATION", e

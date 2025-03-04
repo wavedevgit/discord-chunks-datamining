@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  G0: () => m,
-  u$: () => g
+  G0: () => g,
+  u$: () => m
 }), n(47120);
 var r, i = n(200651),
   o = n(192379),
@@ -111,7 +111,7 @@ class h extends(r = o.Component) {
 d(h, "defaultProps", {
   direction: -1
 });
-let m = e => {
+let g = e => {
   let {
     columns: t
   } = e;
@@ -125,7 +125,7 @@ let m = e => {
     }, t))
   })
 };
-class g extends o.PureComponent {
+class m extends o.PureComponent {
   render() {
     let {
       columns: e,

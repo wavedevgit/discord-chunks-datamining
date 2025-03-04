@@ -28,13 +28,13 @@ function c(e) {
   }
   let h = d || _;
   if (__OVERLAY__ || !h || !l.wS || null == t) return null;
-  let m = "devmode-copy-id-".concat(t);
+  let g = "devmode-copy-id-".concat(t);
   return (0, r.jsx)(a.sNh, {
-    id: m,
+    id: g,
     label: n,
     action: p,
     icon: u ? void 0 : a.VuL,
     iconLeft: u ? a.VuL : void 0,
     focusedClassName: f
-  }, m)
+  }, g)
 }

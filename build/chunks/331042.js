@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(37234),
   p = n(607070),
   h = n(100527),
-  m = n(906732),
-  g = n(1585),
+  g = n(906732),
+  m = n(1585),
   E = n(333867),
   v = n(286961),
   b = n(300284),
@@ -32,8 +32,8 @@ var r = n(200651),
   C = n(587792),
   R = n(228624),
   P = n(318028),
-  w = n(635552),
-  D = n(905357),
+  D = n(635552),
+  w = n(905357),
   L = n(328456),
   x = n(624377),
   M = n(530618),
@@ -226,7 +226,7 @@ let X = 880,
       hideConfetti: l = !1,
       analyticsLocations: c,
       overrideTitle: _,
-      overrideDescription: g,
+      overrideDescription: m,
       selectedVariantIndex: E,
       shouldShowPromotionalExperience: v
     } = e, b = (0, C.o)("CollectiblesCollectedModal"), y = (0, V.W)(n, E), O = (0, d.e7)([S.default], () => {
@@ -239,13 +239,13 @@ let X = 880,
     }, [b, y.skuId, y.type, O]), {
       confettiColors: N
     } = (0, x.Z)(y.styles), A = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), R = i.useRef(null), {
-      analyticsLocations: w
-    } = (0, m.ZP)([...c, h.Z.COLLECTIBLES_COLLECTED_MODAL]), {
-      category: D,
+      analyticsLocations: D
+    } = (0, g.ZP)([...c, h.Z.COLLECTIBLES_COLLECTED_MODAL]), {
+      category: w,
       isFetching: L
-    } = (0, P.l)(y.skuId), U = null !== (t = null == D ? void 0 : D.successModalBg) && void 0 !== t ? t : y.banner, G = L ? void 0 : U;
-    return (0, r.jsxs)(m.Gt, {
-      value: w,
+    } = (0, P.l)(y.skuId), U = null !== (t = null == w ? void 0 : w.successModalBg) && void 0 !== t ? t : y.banner, G = L ? void 0 : U;
+    return (0, r.jsxs)(g.Gt, {
+      value: D,
       children: [(0, r.jsxs)("div", {
         className: Y.modalInner,
         ref: R,
@@ -267,9 +267,9 @@ let X = 880,
           product: y,
           pairedProduct: T,
           onClose: o,
-          analyticsLocations: w,
+          analyticsLocations: D,
           overrideTitle: _,
-          overrideDescription: g,
+          overrideDescription: m,
           selectedVariantIndex: E,
           shouldShowPromotionalExperience: v
         }), (0, r.jsx)(f.olH, {
@@ -295,25 +295,25 @@ let X = 880,
       overrideTitle: l,
       overrideDescription: d,
       shouldShowPromotionalExperience: _
-    } = e, p = (0, R.ed)("CollectiblesCollectedModal"), h = (0, D.k)(n), m = (0, D.k)(o), g = null != o, E = (0, v.Z)(), b = null == E ? void 0 : null === (t = E.giftPurchaseConfirmation) || void 0 === t ? void 0 : t.rewardCollectedText(), {
+    } = e, p = (0, R.ed)("CollectiblesCollectedModal"), h = (0, w.k)(n), g = (0, w.k)(o), m = null != o, E = (0, v.Z)(), b = null == E ? void 0 : null === (t = E.giftPurchaseConfirmation) || void 0 === t ? void 0 : t.rewardCollectedText(), {
       handleUseNow: y,
       isApplying: O
-    } = (0, w.W)({
+    } = (0, D.W)({
       product: n,
       onSuccess: a,
       onError: a
     }), {
       firstAvatarDecoration: S,
       firstProfileEffect: I
-    } = (0, L.R)(n), T = (0, A.x6)(n) ? null != S && null != I : null != S || null != I, N = i.useMemo(() => null != l ? l : g ? W.NW.format(new Date < Z.a$ ? W.t.BhGU09 : W.t.Jfv5Qk, {
+    } = (0, L.R)(n), T = (0, A.x6)(n) ? null != S && null != I : null != S || null != I, N = i.useMemo(() => null != l ? l : m ? W.NW.format(new Date < Z.a$ ? W.t.BhGU09 : W.t.Jfv5Qk, {
       purchased_item: h,
-      suggested_item: m
+      suggested_item: g
     }) : p && !_ ? W.NW.string(W.t["1xr2SU"]) : W.NW.format(W.t.YNaxMj, {
       itemName: h
-    }), [l, p, _, h, m, g]), C = i.useMemo(() => null != d ? d : g ? W.NW.format(new Date < Z.a$ ? W.t["1jBC0t"] : W.t.qSrp39, {
+    }), [l, p, _, h, g, m]), C = i.useMemo(() => null != d ? d : m ? W.NW.format(new Date < Z.a$ ? W.t["1jBC0t"] : W.t.qSrp39, {
       purchased_item: h,
-      suggested_item: m
-    }) : (0, c.EQ)(null == n ? void 0 : n.type).with(u.Z.BUNDLE, () => W.NW.string(W.t.zJPoLy)).with(u.Z.PROFILE_EFFECT, () => W.NW.string(W.t.f9M1YG)).otherwise(() => _ && null != b ? b : W.NW.string(W.t["44b50t"])), [d, null == n ? void 0 : n.type, b, _, h, m, g]);
+      suggested_item: g
+    }) : (0, c.EQ)(null == n ? void 0 : n.type).with(u.Z.BUNDLE, () => W.NW.string(W.t.zJPoLy)).with(u.Z.PROFILE_EFFECT, () => W.NW.string(W.t.f9M1YG)).otherwise(() => _ && null != b ? b : W.NW.string(W.t["44b50t"])), [d, null == n ? void 0 : n.type, b, _, h, g, m]);
     return (0, r.jsxs)("div", {
       className: Y.collectedInfoContainer,
       children: [(0, r.jsxs)("div", {
@@ -327,7 +327,7 @@ let X = 880,
         })]
       }), (0, r.jsxs)("div", {
         className: Y.buttons,
-        children: [g ? (0, r.jsx)(er, {
+        children: [m ? (0, r.jsx)(er, {
           onClose: a,
           product: o,
           analyticsLocations: s
@@ -381,7 +381,7 @@ let X = 880,
       analyticsLocations: a
     }), [c] = t.items, d = i.useCallback(() => {
       if (n(), (0, _.xf)(), l(), t.type === u.Z.AVATAR_DECORATION) {
-        s()(c.type === u.Z.AVATAR_DECORATION, "product type and item type are the same"), (0, g.ps)({
+        s()(c.type === u.Z.AVATAR_DECORATION, "product type and item type are the same"), (0, m.ps)({
           initialSelectedDecoration: c,
           analyticsLocations: a
         });
@@ -407,12 +407,12 @@ let X = 880,
       overrideTitle: l,
       overrideDescription: c,
       shouldShowPromotionalExperience: u
-    } = e, _ = (0, d.e7)([T.Z], () => T.Z.purchases), p = (0, N.o)(n, _), h = (0, V.W)(n, p), m = i.useRef(new o.qA), [g, E] = i.useState(null), v = (0, F.UY)(h.skuId);
+    } = e, _ = (0, d.e7)([T.Z], () => T.Z.purchases), p = (0, N.o)(n, _), h = (0, V.W)(n, p), g = i.useRef(new o.qA), [m, E] = i.useState(null), v = (0, F.UY)(h.skuId);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.O_, {
         ref: E,
         className: Y.confettiCanvas,
-        environment: m.current
+        environment: g.current
       }), (0, r.jsxs)(f.Y0X, {
         hideShadow: !0,
         transitionState: t,
@@ -430,7 +430,7 @@ let X = 880,
           children: (0, r.jsx)(et, {
             product: h,
             onClose: a,
-            confettiCanvas: g,
+            confettiCanvas: m,
             hideConfetti: null != v,
             analyticsLocations: s,
             overrideTitle: l,

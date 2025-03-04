@@ -72,8 +72,8 @@ let p = i.forwardRef(function(e, t) {
       className: _,
       titleClassName: p,
       tag: h = "h5",
-      required: m = !1,
-      style: g,
+      required: g = !1,
+      style: m,
       title: E,
       error: v,
       titleId: b
@@ -89,7 +89,7 @@ let p = i.forwardRef(function(e, t) {
   return (0, r.jsx)("div", {
     ref: t,
     className: null != _ ? _ : void 0,
-    style: null != g ? g : void 0,
+    style: null != m ? m : void 0,
     children: (0, r.jsx)(o.ol, {
       titleId: I,
       errorId: T,
@@ -103,7 +103,7 @@ let p = i.forwardRef(function(e, t) {
         children: [null != E || null != v ? (0, r.jsx)(a.v, d(c({
           tag: h,
           disabled: u,
-          required: m,
+          required: g,
           error: v,
           className: p,
           id: I,

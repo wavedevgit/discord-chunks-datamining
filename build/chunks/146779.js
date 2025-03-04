@@ -26,8 +26,8 @@ function f(e, t, n) {
 let _ = "default",
   p = .6,
   h = /^( Device)?( \([^()]+\))+$/,
-  m = _,
-  g = new Map;
+  g = _,
+  m = new Map;
 async function E(e) {
   let t = await fetch(n(451343)("./".concat(e, ".mp3"))),
     r = await t.arrayBuffer();
@@ -35,8 +35,8 @@ async function E(e) {
 }
 
 function v(e) {
-  let t = g.get(e);
-  return null == t && (t = E(e), g.set(e, t)), t
+  let t = m.get(e);
+  return null == t && (t = E(e), m.set(e, t)), t
 }
 
 function b(e, t) {
@@ -55,22 +55,22 @@ async function O() {
       r = i()(n).sortBy(e => e.index).findIndex(e => e.id === c.Z.getOutputDeviceId()),
       a = n[c.Z.getOutputDeviceId()];
     if (null == a) {
-      m = _;
+      g = _;
       return
     }
     let s = t.filter(e => "audiooutput" === e.kind && "communications" !== e.deviceId),
       l = s[r];
     if (b(a.name, null !== (e = null == l ? void 0 : l.label) && void 0 !== e ? e : "")) {
-      m = l.deviceId;
+      g = l.deviceId;
       return
     }
     if (l = i()(s).maxBy(e => (0, o.stringSimilarity)(e.label, a.name)), null == l || (0, o.stringSimilarity)(l.label, a.name) < p) {
-      m = _;
+      g = _;
       return
     }
-    m = l.deviceId
+    g = l.deviceId
   } catch (e) {
-    m = _
+    g = _
   }
 }
 u.isPlatformEmbedded && (c.Z.addChangeListener(O), O());
@@ -117,7 +117,7 @@ let S = class {
       return this._audio = null !== (e = this._audio) && void 0 !== e ? e : new Promise((e, t) => {
         let r = new Audio;
         r.src = n(451343)("./".concat(this.name, ".mp3")), r.onloadeddata = () => {
-          r.volume = Math.min(c.Z.getOutputVolume() / 100 * this._volume, 1), u.isPlatformEmbedded && r.setSinkId(this.outputChannel === d.w.DEFAULT ? _ : m), e(r)
+          r.volume = Math.min(c.Z.getOutputVolume() / 100 * this._volume, 1), u.isPlatformEmbedded && r.setSinkId(this.outputChannel === d.w.DEFAULT ? _ : g), e(r)
         }, r.onerror = () => t(Error("could not play audio")), r.onended = () => this.destroyAudio(), r.load()
       }), this._audio
     }
@@ -194,7 +194,7 @@ let S = class {
           if (null == t) return Promise.reject(Error("Failed to load audio: ".concat(this.name)));
           if (this._audioContext = (0, a.N)(), this._gain = new GainNode(this._audioContext), this._gain.gain.value = e, u.isPlatformEmbedded) {
             var n, r;
-            null === (n = (r = this._audioContext).setSinkId) || void 0 === n || n.call(r, this.outputChannel === d.w.DEFAULT ? _ : m)
+            null === (n = (r = this._audioContext).setSinkId) || void 0 === n || n.call(r, this.outputChannel === d.w.DEFAULT ? _ : g)
           }
           return this._buffer = t, this._source = this._audioContext.createBufferSource(), this._source.buffer = t, this._source.connect(this._gain).connect(this._audioContext.destination), this._source.loop = !1, this._source.onended = () => this.destroyAudio(), Promise.resolve({
             context: this._audioContext,

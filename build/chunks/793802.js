@@ -14,8 +14,8 @@ var n = "function" == typeof Symbol && Symbol.for,
   _ = n ? Symbol.for("react.suspense") : 60113,
   p = n ? Symbol.for("react.suspense_list") : 60120,
   h = n ? Symbol.for("react.memo") : 60115,
-  m = n ? Symbol.for("react.lazy") : 60116,
-  g = n ? Symbol.for("react.block") : 60121,
+  g = n ? Symbol.for("react.lazy") : 60116,
+  m = n ? Symbol.for("react.block") : 60121,
   E = n ? Symbol.for("react.fundamental") : 60117,
   v = n ? Symbol.for("react.responder") : 60118,
   b = n ? Symbol.for("react.scope") : 60119;
@@ -37,7 +37,7 @@ function y(e) {
             switch (e = e && e.$$typeof) {
               case c:
               case f:
-              case m:
+              case g:
               case h:
               case l:
                 return e;
@@ -54,7 +54,7 @@ function y(e) {
 function O(e) {
   return y(e) === d
 }
-t.AsyncMode = u, t.ConcurrentMode = d, t.ContextConsumer = c, t.ContextProvider = l, t.Element = r, t.ForwardRef = f, t.Fragment = o, t.Lazy = m, t.Memo = h, t.Portal = i, t.Profiler = s, t.StrictMode = a, t.Suspense = _, t.isAsyncMode = function(e) {
+t.AsyncMode = u, t.ConcurrentMode = d, t.ContextConsumer = c, t.ContextProvider = l, t.Element = r, t.ForwardRef = f, t.Fragment = o, t.Lazy = g, t.Memo = h, t.Portal = i, t.Profiler = s, t.StrictMode = a, t.Suspense = _, t.isAsyncMode = function(e) {
   return O(e) || y(e) === u
 }, t.isConcurrentMode = O, t.isContextConsumer = function(e) {
   return y(e) === c
@@ -67,7 +67,7 @@ t.AsyncMode = u, t.ConcurrentMode = d, t.ContextConsumer = c, t.ContextProvider 
 }, t.isFragment = function(e) {
   return y(e) === o
 }, t.isLazy = function(e) {
-  return y(e) === m
+  return y(e) === g
 }, t.isMemo = function(e) {
   return y(e) === h
 }, t.isPortal = function(e) {
@@ -79,5 +79,5 @@ t.AsyncMode = u, t.ConcurrentMode = d, t.ContextConsumer = c, t.ContextProvider 
 }, t.isSuspense = function(e) {
   return y(e) === _
 }, t.isValidElementType = function(e) {
-  return "string" == typeof e || "function" == typeof e || e === o || e === d || e === s || e === a || e === _ || e === p || "object" == typeof e && null !== e && (e.$$typeof === m || e.$$typeof === h || e.$$typeof === l || e.$$typeof === c || e.$$typeof === f || e.$$typeof === E || e.$$typeof === v || e.$$typeof === b || e.$$typeof === g)
+  return "string" == typeof e || "function" == typeof e || e === o || e === d || e === s || e === a || e === _ || e === p || "object" == typeof e && null !== e && (e.$$typeof === g || e.$$typeof === h || e.$$typeof === l || e.$$typeof === c || e.$$typeof === f || e.$$typeof === E || e.$$typeof === v || e.$$typeof === b || e.$$typeof === m)
 }, t.typeOf = y

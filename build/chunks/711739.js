@@ -19,9 +19,9 @@ let t = 0x7fffffff,
   },
   p = 35,
   h = Math.floor,
-  m = String.fromCharCode;
+  g = String.fromCharCode;
 
-function g(e) {
+function m(e) {
   throw RangeError(_[e])
 }
 
@@ -70,20 +70,20 @@ let y = function(e) {
       f = s,
       _ = e.lastIndexOf(c);
     _ < 0 && (_ = 0);
-    for (let t = 0; t < _; ++t) e.charCodeAt(t) >= 128 && g("not-basic"), o.push(e.charCodeAt(t));
+    for (let t = 0; t < _; ++t) e.charCodeAt(t) >= 128 && m("not-basic"), o.push(e.charCodeAt(t));
     for (let s = _ > 0 ? _ + 1 : 0; s < a;) {
       let l = u;
       for (let o = 1, l = n;; l += n) {
-        s >= a && g("invalid-input");
+        s >= a && m("invalid-input");
         let c = y(e.charCodeAt(s++));
-        (c >= n || c > h((t - u) / o)) && g("overflow"), u += c * o;
+        (c >= n || c > h((t - u) / o)) && m("overflow"), u += c * o;
         let d = l <= f ? r : l >= f + i ? i : l - f;
         if (c < d) break;
         let _ = n - d;
-        o > h(t / _) && g("overflow"), o *= _
+        o > h(t / _) && m("overflow"), o *= _
       }
       let c = o.length + 1;
-      f = S(u - l, c, 0 == l), h(u / c) > t - d && g("overflow"), d += h(u / c), u %= c, o.splice(u++, 0, d)
+      f = S(u - l, c, 0 == l), h(u / c) > t - d && m("overflow"), d += h(u / c), u %= c, o.splice(u++, 0, d)
     }
     return String.fromCodePoint(...o)
   },
@@ -93,24 +93,24 @@ let y = function(e) {
       u = l,
       d = 0,
       f = s;
-    for (let t of e) t < 128 && o.push(m(t));
+    for (let t of e) t < 128 && o.push(g(t));
     let _ = o.length,
       p = _;
     for (_ && o.push(c); p < a;) {
       let a = t;
       for (let t of e) t >= u && t < a && (a = t);
       let s = p + 1;
-      for (let l of (a - u > h((t - d) / s) && g("overflow"), d += (a - u) * s, u = a, e))
-        if (l < u && ++d > t && g("overflow"), l == u) {
+      for (let l of (a - u > h((t - d) / s) && m("overflow"), d += (a - u) * s, u = a, e))
+        if (l < u && ++d > t && m("overflow"), l == u) {
           let e = d;
           for (let t = n;; t += n) {
             let a = t <= f ? r : t >= f + i ? i : t - f;
             if (e < a) break;
             let s = e - a,
               l = n - a;
-            o.push(m(O(a + s % l, 0))), e = h(s / l)
+            o.push(g(O(a + s % l, 0))), e = h(s / l)
           }
-          o.push(m(O(e, 0))), f = S(d, s, p == _), d = 0, ++p
+          o.push(g(O(e, 0))), f = S(d, s, p == _), d = 0, ++p
         }++ d, ++u
     }
     return o.join("")

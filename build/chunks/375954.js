@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => em
+  Z: () => eg
 }), n(47120), n(789020), n(653041), n(978209), n(177593);
 var r, i = n(392711),
   o = n.n(i),
@@ -15,8 +15,8 @@ var r, i = n(392711),
   _ = n(723352),
   p = n(160404),
   h = n(786761),
-  m = n(418476),
-  g = (n(739566), n(995774)),
+  g = n(418476),
+  m = (n(739566), n(995774)),
   E = n(706454),
   v = n(630388),
   b = n(709054),
@@ -30,8 +30,8 @@ var r, i = n(392711),
   C = n(699516),
   R = n(944486),
   P = n(914010),
-  w = n(594174),
-  D = n(981631);
+  D = n(594174),
+  w = n(981631);
 
 function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -170,7 +170,7 @@ function K(e) {
     return
   }
   if (!i.ready) return !1;
-  null != n.nonce && n.state !== D.yb.SENDING && x.has(n.nonce) && (i = i.remove(n.nonce), x.delete(n.nonce)), i = i.receiveMessage(n, !0 === S.Z.isAtBottom(t)), c.Z.commit(i)
+  null != n.nonce && n.state !== w.yb.SENDING && x.has(n.nonce) && (i = i.remove(n.nonce), x.delete(n.nonce)), i = i.receiveMessage(n, !0 === S.Z.isAtBottom(t)), c.Z.commit(i)
 }
 
 function z(e) {
@@ -181,7 +181,7 @@ function z(e) {
   } = e, i = c.Z.getOrCreate(t);
   if (null == i || !i.has(n)) return !1;
   let o = i.get(n, !0);
-  i = (null == o ? void 0 : o.isPoll()) === !0 ? i.remove(n) : i.update(n, e => ((e = e.set("state", D.yb.SEND_FAILED)).isCommandType() ? e = (e = e.set("interactionError", null != r ? r : "")).set("flags", (0, v.pj)(e.flags, D.iLy.EPHEMERAL)) : null != r && (e = e.set("interactionError", null != r ? r : "")), e)), c.Z.commit(i)
+  i = (null == o ? void 0 : o.isPoll()) === !0 ? i.remove(n) : i.update(n, e => ((e = e.set("state", w.yb.SEND_FAILED)).isCommandType() ? e = (e = e.set("interactionError", null != r ? r : "")).set("flags", (0, v.pj)(e.flags, w.iLy.EPHEMERAL)) : null != r && (e = e.set("interactionError", null != r ? r : "")), e)), c.Z.commit(i)
 }
 
 function q(e) {
@@ -296,7 +296,7 @@ function ea(e) {
     emoji: o,
     reactionType: a
   } = e, s = c.Z.get(n);
-  if (null == s || !(0, g.sm)(e)) return !1;
+  if (null == s || !(0, m.sm)(e)) return !1;
   let l = y.default.getId() === i;
   s = s.update(r, n => "MESSAGE_REACTION_ADD" === t ? n.addReaction(o, l, e.colors, a) : n.removeReaction(o, l, a)), c.Z.commit(s)
 }
@@ -310,7 +310,7 @@ function es(e) {
   if (null == i) return !1;
   i = i.update(n, e => {
     var t;
-    return e.addReactionBatch(r, null === (t = w.default.getCurrentUser()) || void 0 === t ? void 0 : t.id)
+    return e.addReactionBatch(r, null === (t = D.default.getCurrentUser()) || void 0 === t ? void 0 : t.id)
   }), c.Z.commit(i)
 }
 
@@ -324,7 +324,7 @@ function el(e) {
   if (!a.has(i)) return !1;
   a = a.update(i, e => {
     var n;
-    return (null === (n = e.embeds) || void 0 === n ? void 0 : n.filter(_.K).length) > 0 && (e = e.set("embeds", [])), "MESSAGE_SEND_FAILED_AUTOMOD" === t && (e = e.set("flags", (0, v.pj)(e.flags, D.iLy.EPHEMERAL))), e
+    return (null === (n = e.embeds) || void 0 === n ? void 0 : n.filter(_.K).length) > 0 && (e = e.set("embeds", [])), "MESSAGE_SEND_FAILED_AUTOMOD" === t && (e = e.set("flags", (0, v.pj)(e.flags, w.iLy.EPHEMERAL))), e
   }), c.Z.commit(a)
 }
 
@@ -368,18 +368,18 @@ function e_(e) {
 function ep(e) {
   let {
     message: t
-  } = e, n = w.default.getCurrentUser();
+  } = e, n = D.default.getCurrentUser();
   null != t && null != t.author && null != n && t.author.id === n.id && (k = !0)
 }
 class eh extends(r = a.ZP.Store) {
   initialize() {
-    this.waitFor(w.default, O.Z, S.Z, T.ZP, E.default, R.Z, P.Z, N.Z, C.Z, I.ZP), this.syncWith([p.Z], () => {})
+    this.waitFor(D.default, O.Z, S.Z, T.ZP, E.default, R.Z, P.Z, N.Z, C.Z, I.ZP), this.syncWith([p.Z], () => {})
   }
   getMessages(e) {
     if (p.Z.hasViewingRoles()) {
       let t = O.Z.getChannel(e),
         n = null == t ? void 0 : t.getGuildId();
-      if (p.Z.isViewingRoles(n) && !A.Z.can(D.Plq.VIEW_CHANNEL, t)) return new c.Z(e)
+      if (p.Z.isViewingRoles(n) && !A.Z.can(w.Plq.VIEW_CHANNEL, t)) return new c.Z(e)
     }
     return c.Z.getOrCreate(e)
   }
@@ -387,11 +387,11 @@ class eh extends(r = a.ZP.Store) {
     return c.Z.getOrCreate(e).get(t)
   }
   getLastEditableMessage(e) {
-    let t = w.default.getCurrentUser();
-    return o()(this.getMessages(e).toArray()).reverse().find(e => (0, m.Z)(e, null == t ? void 0 : t.id))
+    let t = D.default.getCurrentUser();
+    return o()(this.getMessages(e).toArray()).reverse().find(e => (0, g.Z)(e, null == t ? void 0 : t.id))
   }
   getLastChatCommandMessage(e) {
-    let t = w.default.getCurrentUser();
+    let t = D.default.getCurrentUser();
     return this.getMessages(e).toArray().reverse().find(e => {
       var n, r;
       return (null === (n = e.interaction) || void 0 === n ? void 0 : n.type) === l.B8.APPLICATION_COMMAND && (null === (r = e.interactionData) || void 0 === r ? void 0 : r.type) === l.yU.CHAT && e.interaction.user.id === (null == t ? void 0 : t.id)
@@ -401,7 +401,7 @@ class eh extends(r = a.ZP.Store) {
     return o()(this.getMessages(e).toArray()).reverse().get(0)
   }
   getLastNonCurrentUserMessage(e) {
-    let t = w.default.getCurrentUser();
+    let t = D.default.getCurrentUser();
     return o()(this.getMessages(e).toArray()).reverse().find(e => e.author.id !== (null == t ? void 0 : t.id))
   }
   jumpedMessageId(e) {
@@ -428,7 +428,7 @@ class eh extends(r = a.ZP.Store) {
     return c.Z.getOrCreate(e).loadingMore
   }
   hasCurrentUserSentMessage(e) {
-    let t = w.default.getCurrentUser();
+    let t = D.default.getCurrentUser();
     return null != this.getMessages(e).findNewest(e => e.author.id === (null == t ? void 0 : t.id))
   }
   hasCurrentUserSentMessageSinceAppStart() {
@@ -436,7 +436,7 @@ class eh extends(r = a.ZP.Store) {
   }
 }
 L(eh, "displayName", "MessageStore");
-let em = new eh(s.Z, {
+let eg = new eh(s.Z, {
   BACKGROUND_SYNC_CHANNEL_MESSAGES: U,
   CONNECTION_OPEN: j,
   OVERLAY_INITIALIZE: j,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  K: () => m
+  K: () => g
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -67,7 +67,7 @@ function h(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = i.forwardRef(function(e, t) {
+let g = i.forwardRef(function(e, t) {
     var {
       as: n = "div",
       gap: i = 8,
@@ -77,7 +77,7 @@ let m = i.forwardRef(function(e, t) {
       padding: u = 0,
       style: f,
       className: h,
-      children: m
+      children: g
     } = e, v = p(e, ["as", "gap", "direction", "align", "justify", "padding", "style", "className", "children"]);
     return (0, r.jsx)(n, _(d({
       ref: t,
@@ -86,16 +86,16 @@ let m = i.forwardRef(function(e, t) {
       "data-direction": o,
       className: a()(c.stack, h),
       style: d(_(d({}, f), {
-        gap: g(i)
+        gap: m(i)
       }), E(u))
     }, v), {
-      children: m
+      children: g
     }))
   }),
-  g = e => "var(--space-".concat(e, ")"),
+  m = e => "var(--space-".concat(e, ")"),
   E = e => "number" == typeof e || "string" == typeof e ? {
-    padding: g(e)
+    padding: m(e)
   } : Object.entries(e).reduce((e, t) => {
     let [n, r] = t;
-    return e["padding".concat(l()(n))] = g(r), e
+    return e["padding".concat(l()(n))] = m(r), e
   }, {})

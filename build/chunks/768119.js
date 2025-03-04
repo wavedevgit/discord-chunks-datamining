@@ -23,10 +23,10 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let h = .05,
-  m = {};
+  g = {};
 
-function g(e) {
-  return null == m[e] && (m[e] = {
+function m(e) {
+  return null == g[e] && (g[e] = {
     searchId: e,
     searchType: E(e),
     isIndexing: !1,
@@ -44,7 +44,7 @@ function g(e) {
     resultsBlocked: 0,
     showBlockedResults: !1,
     showNoResultsAlt: !1
-  }), m[e]
+  }), g[e]
 }
 
 function E(e) {
@@ -54,7 +54,7 @@ function E(e) {
 function v(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null;
   if (null == e) return n;
-  let r = m[e];
+  let r = g[e];
   return null == r ? n : t(r)
 }
 let b = "SearchStore",
@@ -68,14 +68,14 @@ function T(e) {
     searchId: t,
     editorState: n
   } = e;
-  g(t).editorState = n
+  m(t).editorState = n
 }
 
 function N(e) {
   let {
     searchId: t
   } = e;
-  null != t && g(t)
+  null != t && m(t)
 }
 
 function A(e) {
@@ -84,7 +84,7 @@ function A(e) {
     queryString: r,
     searchId: i,
     query: a
-  } = e, s = g(i);
+  } = e, s = m(i);
   null != s.searchFetcher && (s.searchFetcher.cancel(), s.searchFetcher = null);
   let f = i,
     p = s.searchType,
@@ -94,13 +94,13 @@ function A(e) {
     searchId: i,
     query: r
   });
-  let m = i === _.I_8 ? null === (t = d.Z.getChannel(f)) || void 0 === t ? void 0 : t.guild_id : p === _.aib.GUILD ? i : null;
+  let g = i === _.I_8 ? null === (t = d.Z.getChannel(f)) || void 0 === t ? void 0 : t.guild_id : p === _.aib.GUILD ? i : null;
   h.fetch(e => {
     var t, n;
     l.Z.dispatch({
       type: "SEARCH_FINISH",
       searchId: i,
-      guildId: m,
+      guildId: g,
       analyticsId: e.body.analytics_id,
       totalResults: e.body.total_results,
       messages: e.body.messages,
@@ -119,7 +119,7 @@ function A(e) {
     l.Z.dispatch({
       type: "SEARCH_FINISH",
       searchId: i,
-      guildId: m,
+      guildId: g,
       messages: [],
       threads: [],
       members: [],
@@ -148,28 +148,28 @@ function C(e) {
 function R(e) {
   let {
     searchId: t
-  } = e, n = g(t);
+  } = e, n = m(t);
   n.isIndexing = !0, n.isHistoricalIndexing = !0, n.isSearching = !1
 }
 
 function P(e) {
   let {
     searchId: t
-  } = e, n = g(t);
+  } = e, n = m(t);
   n.isSearching = !1, n.isIndexing = !1, n.isHistoricalIndexing = e.doingHistoricalIndex || !1, n.searchFetcher = null, n.totalResults = e.totalResults, n.hasError = e.hasError, n.analyticsId = e.analyticsId, n.documentsIndexed = null != e.documentsIndexed ? e.documentsIndexed : 0, n.showNoResultsAlt = Math.random() < h, n.rawResults = e.messages, null == n.query && (n.hasError = !0)
 }
 
-function w(e) {
+function D(e) {
   let {
     searchId: t
-  } = e, n = m[t];
+  } = e, n = g[t];
   if (null == n) return !1;
-  null != n.searchFetcher && n.searchFetcher.cancel(), delete m[t]
+  null != n.searchFetcher && n.searchFetcher.cancel(), delete g[t]
 }
 
-function D(e) {
+function w(e) {
   if (e === I) return !1;
-  null != e && null == m[e] && g(e), I = e
+  null != e && null == g[e] && m(e), I = e
 }
 
 function L(e) {
@@ -177,14 +177,14 @@ function L(e) {
     guildId: t,
     channelId: n
   } = e;
-  D(null != t ? t : n)
+  w(null != t ? t : n)
 }
 
 function x(e) {
   let {
     searchId: t
   } = e;
-  D(t)
+  w(t)
 }
 
 function M(e) {
@@ -217,12 +217,12 @@ function U(e) {
     searchId: t,
     showBlocked: n
   } = e;
-  g(t).showBlockedResults = n
+  m(t).showBlockedResults = n
 }
 
 function G() {
-  Object.keys(m).forEach(e => {
-    null != m[e] && (m[e].searchType = E(e))
+  Object.keys(g).forEach(e => {
+    null != g[e] && (g[e].searchType = E(e))
   })
 }
 
@@ -231,7 +231,7 @@ function B() {
 }
 
 function V() {
-  return null != I && w({
+  return null != I && D({
     searchId: I
   })
 }
@@ -329,7 +329,7 @@ let Z = new F(l.Z, {
   SEARCH_START: A,
   SEARCH_INDEXING: R,
   SEARCH_FINISH: P,
-  SEARCH_EDITOR_STATE_CLEAR: w,
+  SEARCH_EDITOR_STATE_CLEAR: D,
   SEARCH_ENSURE_SEARCH_STATE: N,
   SEARCH_EDITOR_STATE_CHANGE: T,
   SEARCH_SET_SHOW_BLOCKED_RESULTS: U,

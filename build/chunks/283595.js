@@ -36,7 +36,7 @@ function h(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,8 +47,8 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -67,13 +67,13 @@ let b = !1,
   N = !1;
 
 function A() {
-  s.K.set(E, g(h({}, v()), {
+  s.K.set(E, m(h({}, v()), {
     activeLaunchOptionIds: T
   }))
 }
 
 function C() {
-  s.K.set(E, g(h({}, v()), {
+  s.K.set(E, m(h({}, v()), {
     activeLibraryApplicationBranchIds: I
   }))
 }
@@ -89,14 +89,14 @@ function P() {
   b = !1
 }
 
-function w(e) {
+function D(e) {
   let {
     libraryApplications: t
   } = e;
   y = {}, R(t), b = !0
 }
 
-function D(e) {
+function w(e) {
   let {
     libraryApplications: t
   } = e;
@@ -229,8 +229,8 @@ class F extends(r = a.ZP.Store) {
 p(F, "displayName", "LibraryApplicationStore");
 let Z = new F(l.Z, {
   LOGOUT: P,
-  LIBRARY_FETCH_SUCCESS: w,
-  SKU_PURCHASE_SUCCESS: D,
+  LIBRARY_FETCH_SUCCESS: D,
+  SKU_PURCHASE_SUCCESS: w,
   LIBRARY_APPLICATION_FLAGS_UPDATE_START: L,
   LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: x,
   LIBRARY_APPLICATION_UPDATE: x,

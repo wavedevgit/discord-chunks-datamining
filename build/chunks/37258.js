@@ -62,8 +62,8 @@ function h(e) {
   let {
     analyticsLocations: h
   } = (0, a.ZP)(), {
-    context: m
-  } = (0, s.KZ)(), g = (0, o.Aq)(), E = (0, o.bp)();
+    context: g
+  } = (0, s.KZ)(), m = (0, o.Aq)(), E = (0, o.bp)();
   return (0, r.jsx)(i.sNh, {
     id: "user-profile",
     label: null != t ? t : u.NW.string(u.t.LYju5O),
@@ -71,7 +71,7 @@ function h(e) {
       null == n || n(), (0, l.openUserProfileModal)(f({
         sourceAnalyticsLocations: h,
         appContext: E
-      }, m, p)), g.dispatch(c.CkL.POPOUT_CLOSE)
+      }, g, p)), m.dispatch(c.CkL.POPOUT_CLOSE)
     },
     icon: d
   })

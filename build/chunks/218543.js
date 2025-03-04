@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(47120), n(230036), n(978209);
 var r = n(956067),
   i = n(586444);
@@ -152,7 +152,7 @@ class h {
     })
   }
 }
-class m extends h {
+class g extends h {
   setTTICallback(e) {
     c = () => {
       !0 === e() && (c = () => !1)
@@ -437,4 +437,4 @@ class m extends h {
     super(...e), o(this, "readyProperties", {}), o(this, "didBackgroundApp", !1), o(this, "wasEverActive", !1), o(this, "wasAuthenticated", !1), o(this, "interstitial", null), o(this, "cachedChannelCounts", new Map), o(this, "cachedChannelId", null), o(this, "cachedMessageIds", null), o(this, "messageCacheMissingReason", "never-loaded"), o(this, "messageCacheAgeSeconds", null), o(this, "messageCacheCount", null), o(this, "messageCacheHavingCount", null), o(this, "messageCacheMissingCount", null), o(this, "messageRenderFullCount", null), o(this, "messageRenderCachedCount", null), o(this, "messageRenderHasMoreAfter", null), o(this, "firstAppActiveTime", null), o(this, "cacheInfo", null), o(this, "extraProperties", {})
   }
 }
-let g = new m
+let m = new g

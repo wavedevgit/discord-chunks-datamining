@@ -23,8 +23,8 @@ var r = n(442837),
   _ = n(68985),
   p = n(211644),
   h = n(57207),
-  m = n(644916),
-  g = n(921944),
+  g = n(644916),
+  m = n(921944),
   E = n(981631);
 
 function v(e) {
@@ -46,7 +46,7 @@ function y(e) {
     lastDismissedVersion: null
   };
   let r = null === (n = s.Z.settings.userContent) || void 0 === n ? void 0 : null === (t = n.recurringDismissibleContentStates[e]) || void 0 === t ? void 0 : t.lastDismissedVersion,
-    i = (0, m.t)(e);
+    i = (0, g.t)(e);
   return {
     isDismissed: null != r && r >= i,
     lastDismissedVersion: r
@@ -133,7 +133,7 @@ function R(e, t) {
   let [r] = (0, p.Aq)(), o = _.Z.getRenderedAtTimestamp(e), a = new Date, s = null == o ? null : a.getTime() - o;
   l.default.track(E.rMx.DISMISSIBLE_CONTENT_DISMISSED, {
     type: i.z[e],
-    action: null !== (n = null == t ? void 0 : t.dismissAction) && void 0 !== n ? n : g.L.UNKNOWN,
+    action: null !== (n = null == t ? void 0 : t.dismissAction) && void 0 !== n ? n : m.L.UNKNOWN,
     content_count: r,
     group_name: null == t ? void 0 : t.groupName,
     bypass_fatigue: d.O.has(e),

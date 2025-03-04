@@ -52,9 +52,9 @@ function h(e, t) {
   }), e
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
-  var n, r, i = g(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function m(e, t) {
   return i
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -78,18 +78,18 @@ let E = Object.fromEntries(Object.keys(c.Z.colors).map(e => [l()(e), e])),
         selectable: l = !1,
         className: f,
         lineClamp: p,
-        color: g,
+        color: m,
         tabularNumbers: v = !1,
         scaleFontToUserSetting: b = !1
       } = e,
-      y = m(e, ["variant", "tag", "selectable", "className", "lineClamp", "color", "tabularNumbers", "scaleFontToUserSetting"]);
+      y = g(e, ["variant", "tag", "selectable", "className", "lineClamp", "color", "tabularNumbers", "scaleFontToUserSetting"]);
     let O = s,
       S = "",
       I = {};
     if (null != p && (1 === p ? S = u.lineClamp1 : (S = u.lineClamp2Plus, I = {
         lineClamp: p,
         WebkitLineClamp: p
-      })), void 0 !== g) switch (g) {
+      })), void 0 !== m) switch (m) {
       case "currentColor":
         n = "currentColor";
         break;
@@ -100,7 +100,7 @@ let E = Object.fromEntries(Object.keys(c.Z.colors).map(e => [l()(e), e])),
         n = "white";
         break;
       default:
-        n = null === (i = c.Z.colors[E[g]]) || void 0 === i ? void 0 : i.css
+        n = null === (i = c.Z.colors[E[m]]) || void 0 === i ? void 0 : i.css
     }
     let T = _({
       color: n
@@ -108,7 +108,7 @@ let E = Object.fromEntries(Object.keys(c.Z.colors).map(e => [l()(e), e])),
     return (0, r.jsx)(O, h(_({
       ref: t,
       className: a()({
-        [u.defaultColor]: void 0 === g,
+        [u.defaultColor]: void 0 === m,
         [u.selectable]: l,
         [u.tabularNumbers]: v,
         [d.fontScaling]: b

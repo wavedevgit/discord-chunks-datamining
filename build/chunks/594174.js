@@ -20,9 +20,9 @@ var r = n(392711),
   _ = n(412788),
   p = n(981631),
   h = n(308083),
-  m = n(474936);
+  g = n(474936);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -116,7 +116,7 @@ function C(e, t) {
   if (!e) return t;
   let n = s.Z.getPremiumTypeOverride(),
     r = s.Z.getPremiumTypeActual();
-  return n === m.F_ ? r : n
+  return n === g.F_ ? r : n
 }
 
 function R(e, t) {
@@ -156,7 +156,7 @@ function P(e) {
   }))
 }
 
-function w(e) {
+function D(e) {
   let {
     guilds: t,
     lazyPrivateChannels: n
@@ -173,13 +173,13 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   return !("incomplete" in e)
 }
 
 function L(e) {
   if (null != e.users)
-    for (let t of e.users) !(t.id in E && D(t)) && (E[t.id] = new c.Z(t))
+    for (let t of e.users) !(t.id in E && w(t)) && (E[t.id] = new c.Z(t))
 }
 
 function x(e) {
@@ -492,7 +492,7 @@ function eh(e) {
   return null != t.user && N(t.user)
 }
 
-function em(e) {
+function eg(e) {
   let {
     appliedBoosts: t
   } = e;
@@ -504,7 +504,7 @@ function em(e) {
   })
 }
 
-function eg(e) {
+function em(e) {
   let {
     request: t
   } = e, {
@@ -598,7 +598,7 @@ class eN extends _.Z {
     if (null != t)
       for (let e of t.users) E[e.id] = new c.Z(e);
     if (null != e.users)
-      for (let t of e.users) !(t.id in E && D(t)) && (E[t.id] = new c.Z(t));
+      for (let t of e.users) !(t.id in E && w(t)) && (E[t.id] = new c.Z(t));
     for (let t of [e.privateChannels, e.initialGuildChannels])
       for (let e of t) {
         var n;
@@ -639,7 +639,7 @@ class eN extends _.Z {
   constructor() {
     super({
       CONNECTION_OPEN: P,
-      CONNECTION_OPEN_SUPPLEMENTAL: w,
+      CONNECTION_OPEN_SUPPLEMENTAL: D,
       UPDATE_CLIENT_PREMIUM_TYPE: k,
       OVERLAY_INITIALIZE: L,
       CACHE_LOADED: e => this.handleLoadCache(e),
@@ -662,8 +662,8 @@ class eN extends _.Z {
       GUILD_BAN_REMOVE: $,
       CHANNEL_RECIPIENT_ADD: ee,
       CHANNEL_RECIPIENT_REMOVE: ee,
-      GUILD_JOIN_REQUEST_CREATE: eg,
-      GUILD_JOIN_REQUEST_UPDATE: eg,
+      GUILD_JOIN_REQUEST_CREATE: em,
+      GUILD_JOIN_REQUEST_UPDATE: em,
       GUILD_MEMBER_ADD: et,
       GUILD_MEMBER_UPDATE: et,
       GUILD_MEMBERS_CHUNK_BATCH: er,
@@ -680,7 +680,7 @@ class eN extends _.Z {
       AUDIT_LOG_FETCH_SUCCESS: ep,
       AUDIT_LOG_FETCH_NEXT_PAGE_SUCCESS: ep,
       GIFT_CODE_RESOLVE_SUCCESS: eh,
-      GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: em,
+      GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: eg,
       LOAD_THREADS_SUCCESS: B,
       LOAD_ARCHIVED_THREADS_SUCCESS: B,
       LOAD_FORUM_POSTS: V,
@@ -701,5 +701,5 @@ class eN extends _.Z {
     })
   }
 }
-g(eN, "displayName", "UserStore"), g(eN, "LATEST_SNAPSHOT_VERSION", 1);
+m(eN, "displayName", "UserStore"), m(eN, "LATEST_SNAPSHOT_VERSION", 1);
 let eA = new eN

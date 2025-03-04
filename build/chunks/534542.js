@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  R: () => m,
+  R: () => g,
   g: () => p
 });
 var r = n(200651);
@@ -83,7 +83,7 @@ let p = {
     SELECTABLE: "modeSelectable"
   };
 
-function m(e) {
+function g(e) {
   var {
     type: t = p.DEFAULT,
     className: n,
@@ -91,13 +91,13 @@ function m(e) {
     selectable: l,
     children: u,
     style: _
-  } = e, m = f(e, ["type", "className", "disabled", "selectable", "children", "style"]);
-  let g = h.DEFAULT;
-  return i ? g = h.DISABLED : l && (g = h.SELECTABLE), (0, r.jsx)(a.Z, d(c({
-    className: o()(s[t], n, s[g]),
+  } = e, g = f(e, ["type", "className", "disabled", "selectable", "children", "style"]);
+  let m = h.DEFAULT;
+  return i ? m = h.DISABLED : l && (m = h.SELECTABLE), (0, r.jsx)(a.Z, d(c({
+    className: o()(s[t], n, s[m]),
     style: _
-  }, m), {
+  }, g), {
     children: u
   }))
 }
-m.Types = p
+g.Types = p

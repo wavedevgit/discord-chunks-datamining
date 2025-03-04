@@ -59,8 +59,8 @@ function h(e) {
     disabled: d,
     isFocused: _,
     showDefaultFocus: h = !1,
-    menuItemProps: m,
-    onClose: g
+    menuItemProps: g,
+    onClose: m
   } = e, {
     onInteraction: E
   } = i.useContext(s.p), v = i.useRef(null), b = i.useRef(null);
@@ -70,10 +70,10 @@ function h(e) {
   }, [_]);
   let y = i.useCallback(() => {
       var e, t;
-      (null === (t = b.current) || void 0 === t ? void 0 : null === (e = t.activate) || void 0 === e ? void 0 : e.call(t)) && g()
-    }, [g]),
+      (null === (t = b.current) || void 0 === t ? void 0 : null === (e = t.activate) || void 0 === e ? void 0 : e.call(t)) && m()
+    }, [m]),
     O = o({
-      onClose: g,
+      onClose: m,
       disabled: d,
       isFocused: _,
       onInteraction: i.useCallback(e => {
@@ -90,7 +90,7 @@ function h(e) {
       [u.hideInteraction]: !h
     }),
     "aria-disabled": d
-  }, m), {
+  }, g), {
     children: [null != n ? (0, r.jsx)("div", {
       className: u.labelContainer,
       children: (0, r.jsx)("div", {

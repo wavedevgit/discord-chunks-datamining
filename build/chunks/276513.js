@@ -47,13 +47,13 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -82,7 +82,7 @@ function v(e) {
     iconPosition: v = "end",
     external: b,
     focusProps: y
-  } = e, O = g(e, ["role", "variant", "textVariant", "lineClamp", "text", "icon", "iconPosition", "external", "focusProps"]);
+  } = e, O = m(e, ["role", "variant", "textVariant", "lineClamp", "text", "icon", "iconPosition", "external", "focusProps"]);
 
   function S() {
     if (null == E) return;
@@ -92,8 +92,8 @@ function v(e) {
       size: e
     })
   }
-  return b && (E = a.G), (0, r.jsx)(s.t, m(p({}, y), {
-    children: (0, r.jsxs)("button", m(p({
+  return b && (E = a.G), (0, r.jsx)(s.t, g(p({}, y), {
+    children: (0, r.jsxs)("button", g(p({
       role: t,
       className: o()(f.linkButton, f[n])
     }, O), {

@@ -22,14 +22,14 @@ function p(e) {
     className: n,
     purchaseState: p,
     premiumType: h,
-    useWinterTheme: m = !1,
-    onClose: g,
+    useWinterTheme: g = !1,
+    onClose: m,
     hideCloseButton: E,
     showTrialBadge: v,
     showDiscountBadge: b,
     isGift: y,
     giftRecipient: O
-  } = e, S = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), I = m ? d.nL.WINTER : d.nL.DEFAULT, T = () => {
+  } = e, S = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), I = g ? d.nL.WINTER : d.nL.DEFAULT, T = () => {
     switch (t) {
       case s.h8.PLAN_SELECT:
         return h === d.p9.TIER_0 ? f.NW.string(f.t.rk4Uu7) : f.NW.string(f.t["7YWj6+"]);
@@ -48,7 +48,7 @@ function p(e) {
       variant: "heading-lg/semibold",
       children: T()
     }), (0, r.jsx)(o.olH, {
-      onClick: g,
+      onClick: m,
       className: _.closeButton,
       innerClassName: _.closeButtonInner
     })]
@@ -78,7 +78,7 @@ function p(e) {
       plan: null,
       isGift: !1,
       className: _.header,
-      onClose: g,
+      onClose: m,
       headerTheme: I,
       showTrialBadge: v,
       showDiscountBadge: b

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   g: () => h,
-  s: () => m
+  s: () => g
 });
 var r = n(399606),
   i = n(637853),
@@ -39,7 +39,7 @@ function h(e) {
   }, [e, t])
 }
 
-function m(e) {
+function g(e) {
   let t = s.Z.getGuild(e),
     n = o.Z.isFullServerPreview(e);
   if (null == t || __OVERLAY__ || e === d.ME || e === d.I_8) return !1;

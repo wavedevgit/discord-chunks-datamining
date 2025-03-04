@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -53,7 +53,7 @@ function p(e, t) {
 
 function h(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,40 +61,40 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let g = e => {
+let m = e => {
   var {
     children: t,
     className: n,
     color: o,
     iconType: d,
     onMouseEnter: _,
-    onMouseLeave: m
-  } = e, g = h(e, ["children", "className", "color", "iconType", "onMouseEnter", "onMouseLeave"]);
+    onMouseLeave: g
+  } = e, m = h(e, ["children", "className", "color", "iconType", "onMouseEnter", "onMouseLeave"]);
   let [E, v] = i.useState(!1), b = i.useCallback(e => {
     v(!0), null == _ || _(e)
   }, [v, _]), y = i.useCallback(e => {
-    v(!1), null == m || m(e)
-  }, [v, m]), O = {};
+    v(!1), null == g || g(e)
+  }, [v, g]), O = {};
   return null != o && (O = {
     color: (0, s.Rf)(o),
     backgroundColor: E ? (0, s.br)(o, .3) : (0, s.br)(o, .1)
-  }), (0, r.jsx)(l.P3F, p(f({}, g), {
+  }), (0, r.jsx)(l.P3F, p(f({}, m), {
     tag: "span",
     className: a()(n, {
       [u.wrapper]: !0,
-      interactive: g.onClick
+      interactive: m.onClick
     }),
     onMouseEnter: b,
     onMouseLeave: y,
     style: O,
-    tabIndex: null != g.onClick ? 0 : -1,
+    tabIndex: null != m.onClick ? 0 : -1,
     children: null != d ? (0, r.jsx)(c.Z, {
       iconType: d,
       children: t

@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(530618),
   p = n(331042),
   h = n(372654),
-  m = n(987209),
-  g = n(563132),
+  g = n(987209),
+  m = n(563132),
   E = n(179118),
   v = n(614277),
   b = n(698708);
@@ -54,12 +54,12 @@ function S(e) {
     skusById: f,
     selectedSkuId: _,
     application: h
-  } = (0, g.JL)(), m = (0, s.e7)([c.Z], () => c.Z.getProduct(_)), E = (0, d.o)(m, l);
+  } = (0, m.JL)(), g = (0, s.e7)([c.Z], () => c.Z.getProduct(_)), E = (0, d.o)(g, l);
   a()(null != _, "Expected selectedSkuId"), a()(null != h, "Expected application");
   let y = f[_];
-  return (a()(null != y, "Expected sku"), null == m) ? null : (0, r.jsxs)(v.C3, {
+  return (a()(null != y, "Expected sku"), null == g) ? null : (0, r.jsxs)(v.C3, {
     children: [(0, r.jsx)(b.Z, {}), (0, r.jsx)(p.e, {
-      product: m,
+      product: g,
       onClose: t,
       confettiCanvas: n,
       analyticsLocations: o,
@@ -78,9 +78,9 @@ function I(e) {
     giftRecipient: u,
     giftMessageError: d,
     isSendingMessage: p
-  } = (0, m.wD)(), v = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), b = i.useRef(null), {
+  } = (0, g.wD)(), v = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), b = i.useRef(null), {
     selectedSkuId: y
-  } = (0, g.JL)(), I = (0, s.e7)([c.Z], () => c.Z.getProduct(y)), {
+  } = (0, m.JL)(), I = (0, s.e7)([c.Z], () => c.Z.getProduct(y)), {
     confettiColors: T
   } = (0, f.Z)(null == I ? void 0 : I.styles);
   return t ? (0, r.jsxs)("div", {

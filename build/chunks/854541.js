@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  AG: () => D,
+  AG: () => w,
   Z$: () => M,
   jH: () => L,
   zH: () => k
@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(463208),
   p = n(481060),
   h = n(408886),
-  m = n(44315),
-  g = n(665149),
+  g = n(44315),
+  m = n(665149),
   E = n(981631),
   v = n(388032),
   b = n(506299);
@@ -89,7 +89,7 @@ function P(e) {
   return null == e ? null : "string" == typeof e ? (0, c.FX)(e) ? (0, c._i)(e) : null : e
 }
 
-function w(e) {
+function D(e) {
   let {
     color: t,
     isDefault: n = !1,
@@ -99,7 +99,7 @@ function w(e) {
     style: u = {},
     onClick: d,
     "aria-label": _
-  } = e, h = (0, s.JA)("color-".concat(t)), g = null != t ? (0, c.Rf)(t) : u.backgroundColor, v = !1;
+  } = e, h = (0, s.JA)("color-".concat(t)), m = null != t ? (0, c.Rf)(t) : u.backgroundColor, v = !1;
 
   function y() {
     let e = 16,
@@ -108,7 +108,7 @@ function w(e) {
       size: "custom",
       width: e,
       height: t,
-      color: (0, m.Lq)(v ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
+      color: (0, g.Lq)(v ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
     })
   }
   return i && !o ? v = !0 : (i || o) && (v = (0, c.Bd)(t) > .1), (0, r.jsx)(f.t, {
@@ -124,9 +124,9 @@ function w(e) {
       disabled: l,
       onClick: () => null == d ? void 0 : d(t),
       style: I(O({}, u), {
-        backgroundColor: g
+        backgroundColor: m
       }),
-      "aria-label": null != _ ? _ : g
+      "aria-label": null != _ ? _ : m
     }, h), {
       children: [i ? (0, r.jsx)(p.vdY, {
         size: "custom",
@@ -134,12 +134,12 @@ function w(e) {
         colorClass: b.colorPickerDropperFg,
         width: 14,
         height: 14,
-        color: (0, m.Lq)(v ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
+        color: (0, g.Lq)(v ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
       }) : null, y()]
     }))
   })
 }
-class D extends i.PureComponent {
+class w extends i.PureComponent {
   render() {
     let {
       color: e,
@@ -147,7 +147,7 @@ class D extends i.PureComponent {
       value: n,
       disabled: i
     } = this.props;
-    return (0, r.jsx)(w, {
+    return (0, r.jsx)(D, {
       isDefault: !0,
       color: e,
       isSelected: e === n || 0 === n,
@@ -164,7 +164,7 @@ class L extends i.PureComponent {
       disabled: n,
       "aria-label": i
     } = this.props;
-    return (0, r.jsx)(w, {
+    return (0, r.jsx)(D, {
       isCustom: !0,
       color: e,
       isSelected: t === e,
@@ -182,17 +182,17 @@ function x(e) {
     onClose: s,
     suggestedColors: l,
     middle: f,
-    footer: m,
+    footer: g,
     showEyeDropper: E,
     wrapperComponentType: y,
     className: S
-  } = e, T = (0, h.Z)(), N = P(t), R = null != N ? N : 0, w = (0, c.Rf)(R), D = (0, c.O)(R), [L, x] = i.useState({
+  } = e, T = (0, h.Z)(), N = P(t), R = null != N ? N : 0, D = (0, c.Rf)(R), w = (0, c.O)(R), [L, x] = i.useState({
     current: R,
     pending: {
-      hex: w,
-      hsl: D
+      hex: D,
+      hsl: w
     },
-    input: w
+    input: D
   });
   i.useEffect(() => {
     if (null == N || N === L.current) return;
@@ -255,7 +255,7 @@ function x(e) {
         })
       }), f, (0, r.jsxs)("div", {
         className: b.customColorPickerInputContainer,
-        children: [E && null != T && (0, r.jsx)(g.JO, {
+        children: [E && null != T && (0, r.jsx)(m.JO, {
           onClick: k,
           tooltip: v.NW.string(v.t["0dU9Nz"]),
           tooltipPosition: "top",
@@ -277,7 +277,7 @@ function x(e) {
           className: b.suggestedColor,
           onClick: () => M(e)
         }, "".concat(e, "-").concat(t)))
-      }), m]
+      }), g]
     }), B = null != y ? y : d.V;
   return (0, r.jsx)(B, {
     "aria-label": v.NW.string(v.t.WTqQ5e),
@@ -301,13 +301,13 @@ function k(e) {
     colorContainerClassName: p
   } = e, h = e => (0, r.jsx)("div", {
     className: b.colorPickerRow,
-    children: e.map(e => (0, r.jsx)(w, {
+    children: e.map(e => (0, r.jsx)(D, {
       color: e,
       isSelected: e === c,
       onClick: d,
       disabled: u
     }, e))
-  }), m = o.slice(0, o.length / 2), g = o.slice(o.length / 2, o.length), E = (0, l.ZP)({
+  }), g = o.slice(0, o.length / 2), m = o.slice(o.length / 2, o.length), E = (0, l.ZP)({
     id: "color-picker",
     isEnabled: !0,
     scrollToStart: R,
@@ -340,7 +340,7 @@ function k(e) {
               disabled: u
             })
           }), (0, r.jsxs)("div", {
-            children: [h(m), h(g)]
+            children: [h(g), h(m)]
           })]
         }))
       }

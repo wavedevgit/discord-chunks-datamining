@@ -20,8 +20,8 @@ async function p(e) {
     analyticsLocations: t,
     analyticsLocation: p,
     analyticsSourceLocation: h,
-    guildId: m,
-    closeLayer: g,
+    guildId: g,
+    closeLayer: m,
     onCloseModal: E,
     totalNumberOfSlotsToAssign: v = 1,
     disablePremiumUpsell: b,
@@ -30,7 +30,7 @@ async function p(e) {
     applicationId: S
   } = e, I = O ? i.u1M : i.z1l, T = l.ZP.getPremiumTypeSubscription();
   if (null != T && T.isPurchasedExternally && null != T.paymentGateway) {
-    null != g && g(), o.Z.show({
+    null != m && m(), o.Z.show({
       title: f.NW.formatToPlainString(f.t.rTk9v7, {
         paymentGatewayName: d.Vzj[T.paymentGateway]
       }),
@@ -65,9 +65,9 @@ async function p(e) {
         analyticsLocations: t,
         analyticsLocation: p,
         analyticsSourceLocation: null != h ? h : p,
-        guildId: m,
+        guildId: g,
         totalNumberOfSlotsToAssign: v,
-        closeGuildPerksModal: g,
+        closeGuildPerksModal: m,
         disablePremiumUpsell: b,
         onSubscriptionConfirmation: y,
         applicationId: S

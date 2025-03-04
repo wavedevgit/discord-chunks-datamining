@@ -3,13 +3,13 @@
 n.d(t, {
   B4: () => eO,
   B6: () => Q,
-  Bd: () => eg,
+  Bd: () => em,
   DU: () => el,
   Fr: () => es,
   GI: () => ed,
   GU: () => ey,
   Gd: () => eA,
-  I: () => em,
+  I: () => eg,
   J2: () => B,
   Jf: () => er,
   KX: () => e_,
@@ -50,8 +50,8 @@ var r = n(192379),
   _ = n(583434),
   p = n(706454),
   h = n(553795),
-  m = n(594174),
-  g = n(78839),
+  g = n(594174),
+  m = n(78839),
   E = n(70956),
   v = n(63063),
   b = n(930153),
@@ -65,8 +65,8 @@ var r = n(192379),
   C = n(918701),
   R = n(977156),
   P = n(569743),
-  w = n(373370),
-  D = n(475595),
+  D = n(373370),
+  w = n(475595),
   L = n(566078),
   x = n(46140),
   M = n(981631),
@@ -479,7 +479,7 @@ function eh(e) {
   return a ? 4 : o ? 3 : s ? 2 : +!!i
 }
 
-function em(e) {
+function eg(e) {
   let t = (0, d.e7)([p.default], () => p.default.locale),
     {
       percentComplete: n
@@ -497,11 +497,11 @@ function em(e) {
   }
 }
 
-function eg(e) {
+function em(e) {
   var t, n;
   let r = en(e),
     i = (0, C.b7)(e),
-    o = (0, w.DD)({
+    o = (0, D.DD)({
       quest: e,
       taskDetails: r,
       location: x.dr.QUEST_HOME_DESKTOP,
@@ -579,14 +579,14 @@ function eb(e) {
     _ = l && !c && !a && u && (d || f && o === A.LI.DESKTOP),
     p = (0, y.isWeb)() && _ && !(0, C.Gd)(e),
     h = (0, y.isMac)() && i.taskType === s.X.STREAM_ON_DESKTOP && _,
-    m = ey(e),
-    g = [];
-  for (let e of (h && g.push(j.NW.string(j.t.MFGxFB)), p && g.push(j.NW.string(j.t.BV6xDg)), m)) g.push(e);
-  return g
+    g = ey(e),
+    m = [];
+  for (let e of (h && m.push(j.NW.string(j.t.MFGxFB)), p && m.push(j.NW.string(j.t.BV6xDg)), g)) m.push(e);
+  return m
 }
 
 function ey(e) {
-  let t = (0, d.e7)([g.ZP], () => g.ZP.getPremiumSubscription()),
+  let t = (0, d.e7)([m.ZP], () => m.ZP.getPremiumSubscription()),
     n = (0, C.Bg)(e.config) && (null == t ? void 0 : t.isPurchasedExternally) === !0,
     r = [];
   return n && r.push(j.NW.string(j.t.nnfWPD)), r
@@ -650,7 +650,7 @@ function eN(e, t, n) {
     a = en(e),
     s = (null === (i = e.userStatus) || void 0 === i ? void 0 : i.completedAt) != null,
     l = ee(e),
-    c = (0, w.DD)({
+    c = (0, D.DD)({
       quest: e,
       location: x.dr.QUESTS_BAR,
       questContent: A.jn.QUEST_BAR_V2,
@@ -668,7 +668,7 @@ function eA(e, t) {
   let n = (0, d.e7)([N.Z], () => N.Z.getQuest(e), [e]),
     i = (0, f.ZP)(),
     o = r.useMemo(() => (null == n ? void 0 : n.config.features.includes(x.S7.QUESTS_CDN)) === !0, [n]);
-  return r.useMemo(() => (null == n ? void 0 : n.config.cosponsorMetadata) == null ? null : (0, D.Rt)(e, n.config.cosponsorMetadata.logotype, {
+  return r.useMemo(() => (null == n ? void 0 : n.config.cosponsorMetadata) == null ? null : (0, w.Rt)(e, n.config.cosponsorMetadata.logotype, {
     theme: null != t ? t : (0, u.wj)(i) ? M.BRd.DARK : M.BRd.LIGHT,
     newCdn: o
   }), [i, t, e, null == n ? void 0 : n.config.cosponsorMetadata, o])
@@ -678,7 +678,7 @@ function eC(e) {
   let t = L.r.build(e).defaultReward.messages.name,
     n = (0, C.Kr)(e),
     r = (0, C.f$)(e),
-    i = (0, d.e7)([m.default], () => m.default.getCurrentUser()),
+    i = (0, d.e7)([g.default], () => g.default.getCurrentUser()),
     o = null != i && O.ZP.isPremium(i, k.p9.TIER_2);
   if (null == n) return j.NW.formatToPlainString(j.t.l9uXLy, {
     decorationName: t

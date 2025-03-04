@@ -29,20 +29,20 @@ let _ = {
       _ = n.modifiersData.popperOffsets,
       p = (0, r.Z)(n.placement),
       h = (0, s.Z)(p),
-      m = [d.t$, d.F2].indexOf(p) >= 0 ? "height" : "width";
+      g = [d.t$, d.F2].indexOf(p) >= 0 ? "height" : "width";
     if (u && _) {
-      var g = f(c.padding, n),
+      var m = f(c.padding, n),
         E = (0, i.Z)(u),
         v = "y" === h ? d.we : d.t$,
         b = "y" === h ? d.I : d.F2,
-        y = n.rects.reference[m] + n.rects.reference[h] - _[h] - n.rects.popper[m],
+        y = n.rects.reference[g] + n.rects.reference[h] - _[h] - n.rects.popper[g],
         O = _[h] - n.rects.reference[h],
         S = (0, a.Z)(u),
         I = S ? "y" === h ? S.clientHeight || 0 : S.clientWidth || 0 : 0,
         T = y / 2 - O / 2,
-        N = g[v],
-        A = I - E[m] - g[b],
-        C = I / 2 - E[m] / 2 + T,
+        N = m[v],
+        A = I - E[g] - m[b],
+        C = I / 2 - E[g] / 2 + T,
         R = (0, l.u)(N, C, A),
         P = h;
       n.modifiersData[o] = ((t = {})[P] = R, t.centerOffset = R - C, t)

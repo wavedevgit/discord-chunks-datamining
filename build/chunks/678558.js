@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(695349),
   p = n(314884),
   h = n(78839),
-  m = n(267642),
-  g = n(879892),
+  g = n(267642),
+  m = n(879892),
   E = n(981631),
   v = n(474936),
   b = n(388032),
@@ -90,8 +90,8 @@ let C = e => {
     closeLayer: C = () => {},
     pauseAnimation: R = !1,
     applicationId: P,
-    handleSubscribeModalClose: w,
-    withHighlight: D = !1,
+    handleSubscribeModalClose: D,
+    withHighlight: w = !1,
     icon: L
   } = e, x = N(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon"]), {
     analyticsLocations: M
@@ -99,13 +99,13 @@ let C = e => {
     fractionalState: G
   } = (0, d.Z)(), B = (0, _.W)();
   p.Z.hasFetched || (0, l.X8)();
-  let V = (0, m.vx)(p.Z.boostSlots),
-    F = null != I ? Math.max((0, m.KK)(o, I), 1) : 1,
-    Z = (0, m.aq)({
+  let V = (0, g.vx)(p.Z.boostSlots),
+    F = null != I ? Math.max((0, g.KK)(o, I), 1) : 1,
+    Z = (0, g.aq)({
       fractionalState: G
     }),
     H = async () => {
-      U(!0), await (0, g.u)({
+      U(!0), await (0, m.u)({
         analyticsLocations: M,
         analyticsLocation: t,
         analyticsSourceLocation: n,
@@ -115,7 +115,7 @@ let C = e => {
         closeLayer: C,
         inPopout: k,
         applicationId: P,
-        handleSubscribeModalClose: w
+        handleSubscribeModalClose: D
       }), U(!1)
     }, W = h.ZP.getPremiumTypeSubscription(), Y = (0, r.jsxs)("div", {
       className: y.button,
@@ -141,7 +141,7 @@ let C = e => {
     size: s.zxk.Sizes.SMALL
   }, x), {
     className: a()(x.className, {
-      [y.buttonHighlighted]: D
+      [y.buttonHighlighted]: w
     }),
     submitting: j,
     onClick: H,

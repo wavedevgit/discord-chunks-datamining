@@ -15,8 +15,8 @@ var r, i = n(200651),
   _ = n(372769),
   p = n(451478),
   h = n(956664),
-  m = n(153066),
-  g = n(783700);
+  g = n(153066),
+  m = n(783700);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -111,7 +111,7 @@ class A extends o.PureComponent {
       iconSrc: t
     } = this.props;
     return null != e.icon || null != t ? null : (0, i.jsx)("div", {
-      className: g.acronym,
+      className: m.acronym,
       children: e.acronym
     })
   }
@@ -124,7 +124,7 @@ class A extends o.PureComponent {
       badgeTooltipDelay: o
     } = this.props;
     return e && null != t.hasFeature ? (0, i.jsx)(_.Z, {
-      className: g.guildIconBadge,
+      className: m.guildIconBadge,
       guild: t,
       badgeStrokeColor: n,
       tooltipColor: r,
@@ -156,10 +156,10 @@ class A extends o.PureComponent {
       R = N[c],
       P = null != h ? d.P3F : "div";
     return (0, i.jsxs)(P, y(v({
-      className: s()(g.icon, o, (0, m.l)(g, "iconSize", c), {
-        [null !== (e = (0, m.l)(g, "iconActive", c)) && void 0 !== e ? e : ""]: l,
-        [g.iconInactive]: !l,
-        [g.noIcon]: null == r.icon
+      className: s()(m.icon, o, (0, g.l)(m, "iconSize", c), {
+        [null !== (e = (0, g.l)(m, "iconActive", c)) && void 0 !== e ? e : ""]: l,
+        [m.iconInactive]: !l,
+        [m.noIcon]: null == r.icon
       }),
       "aria-hidden": A,
       style: null == r.icon ? v({

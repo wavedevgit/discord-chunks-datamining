@@ -49,7 +49,7 @@ function h(e) {
   } else delete a.users[r]
 }
 
-function m(e) {
+function g(e) {
   let {
     messageId: t,
     users: n,
@@ -58,7 +58,7 @@ function m(e) {
   } = e, o = _.ensure(t, r, i);
   n.forEach(e => o.users[e.id] = new l.Z(e))
 }
-class g extends(r = i.ZP.Store) {
+class m extends(r = i.ZP.Store) {
   getReactions(e, t, n, r, i) {
     let o = _.ensure(t, n, i);
     if (!o.fetched) {
@@ -76,10 +76,10 @@ class g extends(r = i.ZP.Store) {
     return o.users
   }
 }
-d(g, "displayName", "MessageReactionsStore");
-let E = new g(o.Z, {
+d(m, "displayName", "MessageReactionsStore");
+let E = new m(o.Z, {
   CONNECTION_OPEN: p,
   MESSAGE_REACTION_ADD: h,
   MESSAGE_REACTION_REMOVE: h,
-  MESSAGE_REACTION_ADD_USERS: m
+  MESSAGE_REACTION_ADD_USERS: g
 })

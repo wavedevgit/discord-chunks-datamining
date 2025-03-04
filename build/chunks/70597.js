@@ -27,8 +27,8 @@ function c(e, t) {
     _ = t.minutes ? (0, s.Z)(t.minutes) : 0,
     p = t.seconds ? (0, s.Z)(t.seconds) : 0,
     h = (0, o.default)(e),
-    m = c || n ? (0, i.default)(h, c + 12 * n) : h,
-    g = d || u ? (0, r.default)(m, d + 7 * u) : m,
+    g = c || n ? (0, i.default)(h, c + 12 * n) : h,
+    m = d || u ? (0, r.default)(g, d + 7 * u) : g,
     E = 1e3 * (p + 60 * (_ + 60 * f));
-  return new Date(g.getTime() + E)
+  return new Date(m.getTime() + E)
 }

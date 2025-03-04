@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  O: () => g,
-  Z: () => m
+  O: () => m,
+  Z: () => g
 }), n(978209);
 var r = n(200651),
   i = n(192379),
@@ -38,23 +38,23 @@ function h(e) {
   return e
 }
 
-function m(e) {
+function g(e) {
   let {
     smallerText: t,
     className: n,
     textColor: o,
     isMarketingPageV2Enabled: c
-  } = e, p = (0, s.e7)([u.Z], () => u.Z.affinities.slice(0, 3).reverse()), h = p.map((e, t) => (0, r.jsx)(g, {
+  } = e, p = (0, s.e7)([u.Z], () => u.Z.affinities.slice(0, 3).reverse()), h = p.map((e, t) => (0, r.jsx)(m, {
     affinity: e,
     applyMask: t !== p.length - 1,
     size: d.EF.SIZE_32
-  }, e.id)), m = e => null != e.globalName ? e.globalName : e.username, E = i.useMemo(() => 3 === p.length ? f.NW.formatToPlainString(f.t.c7ETJC, {
-    username: m(p[2])
+  }, e.id)), g = e => null != e.globalName ? e.globalName : e.username, E = i.useMemo(() => 3 === p.length ? f.NW.formatToPlainString(f.t.c7ETJC, {
+    username: g(p[2])
   }) : 2 === p.length ? f.NW.formatToPlainString(f.t.st8Rh4, {
-    username: m(p[1]),
-    otherUsername: m(p[0])
+    username: g(p[1]),
+    otherUsername: g(p[0])
   }) : 1 === p.length ? f.NW.formatToPlainString(f.t.dpjXPD, {
-    username: m(p[0])
+    username: g(p[0])
   }) : "", [p]);
   if (0 === p.length) return null;
 
@@ -83,7 +83,7 @@ function m(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     affinity: t,
     applyMask: n,

@@ -39,7 +39,7 @@ function t(e) {
         }
       }
     },
-    m = {
+    g = {
       begin: /as\s+\|/,
       keywords: {
         keyword: "as"
@@ -49,14 +49,14 @@ function t(e) {
         begin: /\w+/
       }]
     },
-    g = {
-      contains: [e.NUMBER_MODE, e.QUOTE_STRING_MODE, e.APOS_STRING_MODE, m, h, _, p],
+    m = {
+      contains: [e.NUMBER_MODE, e.QUOTE_STRING_MODE, e.APOS_STRING_MODE, g, h, _, p],
       returnEnd: !0
     },
     E = e.inherit(f, {
       className: "name",
       keywords: n,
-      starts: e.inherit(g, {
+      starts: e.inherit(m, {
         end: /\)/
       })
     });
@@ -64,7 +64,7 @@ function t(e) {
   let v = e.inherit(f, {
       keywords: n,
       className: "name",
-      starts: e.inherit(g, {
+      starts: e.inherit(m, {
         end: /\}\}/
       })
     }),
@@ -75,7 +75,7 @@ function t(e) {
     y = e.inherit(f, {
       className: "name",
       keywords: n,
-      starts: e.inherit(g, {
+      starts: e.inherit(m, {
         end: /\}\}/
       })
     });

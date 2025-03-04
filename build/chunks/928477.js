@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  JA: () => D,
+  JA: () => w,
   Jw: () => A,
-  Od: () => w,
+  Od: () => D,
   Wj: () => x,
   gK: () => L,
   oD: () => R,
@@ -22,8 +22,8 @@ var r = n(192379),
   _ = n(467798),
   p = n(592125),
   h = n(703558),
-  m = n(375954),
-  g = n(300429),
+  g = n(375954),
+  m = n(300429),
   E = n(70956),
   v = n(630388),
   b = n(709054),
@@ -51,9 +51,9 @@ function P(e, t) {
   return e.length > t ? e.substring(0, t) + "..." : e
 }
 
-function w(e, t) {
+function D(e, t) {
   var n, r, i, o, a, s, l;
-  let c = null == t ? null : m.Z.getMessage(e.id, t),
+  let c = null == t ? null : g.Z.getMessage(e.id, t),
     u = null !== (a = null == c ? void 0 : null === (r = c.embeds) || void 0 === r ? void 0 : null === (n = r[0]) || void 0 === n ? void 0 : n.rawTitle) && void 0 !== a ? a : "",
     d = null !== (s = null == c ? void 0 : null === (o = c.poll) || void 0 === o ? void 0 : null === (i = o.question) || void 0 === i ? void 0 : i.text) && void 0 !== s ? s : "";
   if ("" !== u) return P(u, 40);
@@ -81,7 +81,7 @@ function w(e, t) {
   }
 }
 
-function D(e) {
+function w(e) {
   let {
     parentChannel: t,
     parentMessageId: n,
@@ -93,12 +93,12 @@ function D(e) {
     uploadHandler: f
   } = e;
   return r.useCallback(async (e, r, _) => {
-    var m;
-    let g = null == n,
+    var g;
+    let m = null == n,
       E = R(o, a),
-      v = null !== (m = o.name) && void 0 !== m ? m : "";
+      v = null !== (g = o.name) && void 0 !== g ? g : "";
     if ("" === v && d) {
-      let e = w(t, n);
+      let e = D(t, n);
       v = "" !== e ? e : N.NW.string(N.t["7Xm5QE"])
     }
     let O = (0, y.WD)(t),
@@ -116,7 +116,7 @@ function D(e) {
           rejectWithError: !1
         })
       });
-    I !== S && (s.Z.clearDraft(t.id, h.d.ThreadSettings), s.Z.clearDraft(t.id, h.d.FirstThreadMessage), null == u || u(I), (g || e.length > 0 || null != r && r.length > 0 || null != _ && _.length > 0) && M(I, e, r, _, f)), c.Z.clearAll(t.id, h.d.FirstThreadMessage)
+    I !== S && (s.Z.clearDraft(t.id, h.d.ThreadSettings), s.Z.clearDraft(t.id, h.d.FirstThreadMessage), null == u || u(I), (m || e.length > 0 || null != r && r.length > 0 || null != _ && _.length > 0) && M(I, e, r, _, f)), c.Z.clearAll(t.id, h.d.FirstThreadMessage)
   }, [t, n, o, u, a, l, d, f])
 }
 
@@ -143,13 +143,13 @@ function x(e) {
   } = e;
   return r.useCallback(async (e, r, u) => {
     let f = 0,
-      [p, m] = (0, _.Z)(e);
-    p && (e = m, f = (0, v.pj)(f, T.iLy.SUPPRESS_NOTIFICATIONS));
-    let g = (0, y.WD)(t, null),
+      [p, g] = (0, _.Z)(e);
+    p && (e = g, f = (0, v.pj)(f, T.iLy.SUPPRESS_NOTIFICATIONS));
+    let m = (0, y.WD)(t, null),
       E = T.ANM.CHANNEL_THREADS(t.id) + "?use_nested_fields=true",
       b = {
         name: n,
-        auto_archive_duration: g,
+        auto_archive_duration: m,
         applied_tags: o,
         message: {
           content: e,
@@ -184,7 +184,7 @@ async function k(e, t) {
       body: N.NW.string(N.t.fEptJC)
     }) : (o.Z.dispatch({
       type: "SLOWMODE_RESET_COOLDOWN",
-      slowmodeType: g.S.CreateThread,
+      slowmodeType: m.S.CreateThread,
       channelId: e.id
     }), o.Z.dispatch({
       type: "THREAD_CREATE_LOCAL",
@@ -205,7 +205,7 @@ async function k(e, t) {
       n > 0 && o.Z.dispatch({
         type: "SLOWMODE_SET_COOLDOWN",
         channelId: e.id,
-        slowmodeType: g.S.CreateThread,
+        slowmodeType: m.S.CreateThread,
         cooldownMs: n * E.Z.Millis.SECOND
       })
     } else if (429 === t.status) a.Z.show({

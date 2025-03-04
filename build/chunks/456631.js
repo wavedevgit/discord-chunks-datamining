@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  H: () => m,
+  H: () => g,
   Z: () => A
 }), n(47120), n(733860);
 var i, o = n(392711),
@@ -24,19 +24,19 @@ function f(e, t, n) {
 let _ = [],
   p = {},
   h = [],
-  m = e => {
+  g = e => {
     null != e && l.Z.dispatch({
       type: "VOICE_CHANNEL_EFFECT_CLEAR",
       userId: e
     })
   },
-  g = [],
+  m = [],
   E = 20,
   v = 10 * c.Z.Millis.SECOND,
   b = () => {
     let e = new Date;
-    if ((g = [e, ...g].slice(0, E)).length >= E) {
-      let t = g[g.length - 1],
+    if ((m = [e, ...m].slice(0, E)).length >= E) {
+      let t = m[m.length - 1],
         n = e.getTime() - t.getTime();
       n < v && (r = new Date(e.getTime() + v - n))
     }

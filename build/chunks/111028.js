@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -68,18 +68,18 @@ function p(e, t) {
 }
 let h = 500;
 
-function m(e) {
+function g(e) {
   let {
     children: t,
     "aria-label": n,
     className: o,
     position: c
-  } = e, d = _(e, ["children", "aria-label", "className", "position"]), p = i.useRef(null), m = null != n ? n : "string" == typeof t && t;
+  } = e, d = _(e, ["children", "aria-label", "className", "position"]), p = i.useRef(null), g = null != n ? n : "string" == typeof t && t;
   return (0, r.jsx)(s.ua7, f(u({}, d), {
     position: null != c ? c : "top",
     delay: h,
     text: t,
-    "aria-label": m,
+    "aria-label": g,
     children: n => {
       let {
         onMouseEnter: i,

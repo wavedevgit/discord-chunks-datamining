@@ -56,9 +56,9 @@ function p(e, t) {
   }), e
 }
 let h = (0, c.isLinux)() ? u.HsE : (0, c.isMac)() ? u.REU : (0, c.isWindows)() ? u.iC$ : void 0,
-  m = a().invert(u.HsE);
-m["223"] = "`", Object.freeze(m);
-let g = Object.freeze(a().invert(u.REU)),
+  g = a().invert(u.HsE);
+g["223"] = "`", Object.freeze(g);
+let m = Object.freeze(a().invert(u.REU)),
   E = a().invert(u.iC$);
 E["223"] = "`", Object.freeze(E);
 let v = a().invert(null != h ? h : {});
@@ -71,9 +71,9 @@ function y(e) {
   let [, t, n] = e;
   switch (n) {
     case u.CgE.LINUX:
-      return m["" + t];
-    case u.CgE.MACOS:
       return g["" + t];
+    case u.CgE.MACOS:
+      return m["" + t];
     case u.CgE.WINDOWS:
       return E["" + t];
     case u.CgE.BROWSER:

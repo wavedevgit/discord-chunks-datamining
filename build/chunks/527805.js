@@ -31,23 +31,23 @@ function p(e) {
     ChannelStore: _,
     VoiceStateStore: p,
     PermissionStore: h,
-    GuildStore: m
+    GuildStore: g
   } = e;
   if (null == i) return 8;
   if ((null == l ? void 0 : l.nsfwAllowed) === !1 && (null == a ? void 0 : null === (t = a.embeddedActivityConfig) || void 0 === t ? void 0 : t.requires_age_gate) === !0) return 7;
   if (!u) return 5;
   if (!(0, d.Z)(null == a ? void 0 : null === (n = a.embeddedActivityConfig) || void 0 === n ? void 0 : n.supported_platforms)) return 6;
-  let g = null != s ? s : null === (r = p.getVoiceStateForSession(i, null == o ? void 0 : o.session_id)) || void 0 === r ? void 0 : r.channelId;
-  if (null == g) return 4;
+  let m = null != s ? s : null === (r = p.getVoiceStateForSession(i, null == o ? void 0 : o.session_id)) || void 0 === r ? void 0 : r.channelId;
+  if (null == m) return 4;
   let E = _.getChannel(s);
   if (null == E) return 4;
   if (!E.isPrivate()) {
     let e = E.getGuildId();
     if (null == e) return 10;
-    let t = m.getGuild(e);
+    let t = g.getGuild(e);
     if ((null == t ? void 0 : t.afkChannelId) === E.id) return 9;
-    let n = p.getCurrentClientVoiceChannelId(E.getGuildId()) === g,
-      r = (0, c.rY)(E, p, m),
+    let n = p.getCurrentClientVoiceChannelId(E.getGuildId()) === m,
+      r = (0, c.rY)(E, p, g),
       i = h.can(f.Plq.CONNECT, E);
     if (!h.can(f.Plq.USE_EMBEDDED_ACTIVITIES, E)) return 1;
     if (E.isVocal() && !n) {

@@ -16,8 +16,8 @@ var i = n(348327),
   _ = n(823379),
   p = n(664915),
   h = n(486472),
-  m = n(271383),
-  g = n(430824),
+  g = n(271383),
+  m = n(430824),
   E = n(412788),
   v = n(9156),
   b = n(594174);
@@ -51,7 +51,7 @@ function S(e, t) {
 let I = new c.g8;
 
 function T(e, t) {
-  for (let n in g.Z.getGuilds()) !e(n) || u.Z.isLurking(n) || m.ZP.isCurrentUserGuest(n) || t(n)
+  for (let n in m.Z.getGuilds()) !e(n) || u.Z.isLurking(n) || g.ZP.isCurrentUserGuest(n) || t(n)
 }
 
 function N(e) {
@@ -81,7 +81,7 @@ function A(e, t) {
           let e = (0, c.qQ)(t, void 0, p.Z.isFolderExpanded(t.folderId));
           for (let n of (I.addNode(e), t.guildIds)) I.addNode((0, c.Mg)(n), e)
         }
-      } for (let e of I.allNodes()) e.type === c.eD.GUILD && (u.Z.isLurking(e.id) || m.ZP.isCurrentUserGuest(e.id) || null == g.Z.getGuild(e.id) && !h.Z.isUnavailable(e.id)) && I.removeNode(e);
+      } for (let e of I.allNodes()) e.type === c.eD.GUILD && (u.Z.isLurking(e.id) || g.ZP.isCurrentUserGuest(e.id) || null == m.Z.getGuild(e.id) && !h.Z.isUnavailable(e.id)) && I.removeNode(e);
   for (let e of Object.values(I.nodes)) e.type === c.eD.FOLDER && 0 === e.children.length && I.removeNode(e);
   T(e => null == I.nodes[e], e => I.addNode((0, c.Mg)(e), I.root, !1)), I.version = n.version;
   let r = o()(n, I);
@@ -113,7 +113,7 @@ function P(e) {
   } else I.moveNextTo(o, a, r)
 }
 
-function w(e) {
+function D(e) {
   let {
     sourceIds: t,
     name: n
@@ -128,7 +128,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   var {
     targetId: t,
     sourceIds: n
@@ -171,7 +171,7 @@ function x(e) {
     guildId: t,
     joinedAt: n,
     user: r
-  } = e, i = b.default.getCurrentUser(), o = g.Z.getGuild(t);
+  } = e, i = b.default.getCurrentUser(), o = m.Z.getGuild(t);
   if ((null == i ? void 0 : i.id) !== r.id || null == o) return !1;
   let a = "string" == typeof n ? new Date(n) : n;
   return a !== o.joinedAt && null != a && C()
@@ -220,7 +220,7 @@ let G = (0, f.oH)((e, t) => e.sortedGuildNodes().map(e => e.id)),
   F = (0, f.oH)((e, t) => e.root.children.map(N));
 class Z extends E.Z {
   initialize() {
-    this.waitFor(g.Z, v.ZP, d.Z, h.Z, u.Z, p.Z, l.Z)
+    this.waitFor(m.Z, v.ZP, d.Z, h.Z, u.Z, p.Z, l.Z)
   }
   getGuildsTree() {
     return I
@@ -261,8 +261,8 @@ class Z extends E.Z {
       GUILD_MEMBER_ADD: x,
       USER_SETTINGS_PROTO_UPDATE: R,
       GUILD_MOVE_BY_ID: P,
-      GUILD_FOLDER_CREATE_LOCAL: w,
-      GUILD_FOLDER_EDIT_LOCAL: D,
+      GUILD_FOLDER_CREATE_LOCAL: D,
+      GUILD_FOLDER_EDIT_LOCAL: w,
       GUILD_FOLDER_DELETE_LOCAL: L,
       TOGGLE_GUILD_FOLDER_EXPAND: M,
       SET_GUILD_FOLDER_EXPANDED: k,

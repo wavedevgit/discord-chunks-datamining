@@ -84,10 +84,10 @@ function p(e, t, n) {
 }
 n.d(t, {
   GT: () => E,
-  gr: () => g
+  gr: () => m
 });
 var h = 10,
-  m = function() {
+  g = function() {
     function e() {
       d(this, e), p(this, "subPriority", 0)
     }
@@ -98,7 +98,7 @@ var h = 10,
       }
     }]), e
   }(),
-  g = function(e) {
+  m = function(e) {
     i(n, e);
     var t = a(n);
 
@@ -117,7 +117,7 @@ var h = 10,
         return this.setValue(e, t, this.value, n)
       }
     }]), n
-  }(m),
+  }(g),
   E = function(e) {
     i(n, e);
     var t = a(n);
@@ -136,4 +136,4 @@ var h = 10,
         return n.setFullYear(e.getUTCFullYear(), e.getUTCMonth(), e.getUTCDate()), n.setHours(e.getUTCHours(), e.getUTCMinutes(), e.getUTCSeconds(), e.getUTCMilliseconds()), n
       }
     }]), n
-  }(m)
+  }(g)

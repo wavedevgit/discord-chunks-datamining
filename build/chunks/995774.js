@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Lh: () => u,
-  MR: () => m,
+  MR: () => g,
   g1: () => f,
   iD: () => d,
   ir: () => _,
@@ -59,7 +59,7 @@ function h(e) {
   return !n || !!r
 }
 
-function m(e, t) {
+function g(e, t) {
   i.fz.updateSetting(e), a.default.track(s.rMx.NOTIFICATION_SETTINGS_UPDATED, {
     update_type: l.I.ACCOUNT,
     reaction_notifications: e,

@@ -16,8 +16,8 @@ var r = n(570140),
   _ = n(131951),
   p = n(19780),
   h = n(944486),
-  m = n(959457),
-  g = n(979651),
+  g = n(959457),
+  m = n(979651),
   E = n(557457),
   v = n(785141),
   b = n(272395),
@@ -60,7 +60,7 @@ let C = new Map([
         voiceChannelId: t,
         voiceState: n
       } = e, r = d.Z.getChannel(t), i = (null == r ? void 0 : r.isGuildStageVoice()) && (null == n ? void 0 : n.suppress), o = p.Z.getMediaSessionId();
-      if (null != r && null != o && !1 === _.Z.getInputDetected() && !i) return [D()]
+      if (null != r && null != o && !1 === _.Z.getInputDetected() && !i) return [w()]
     }
   }],
   [v.u.NO_INPUT_DEVICES, {
@@ -69,7 +69,7 @@ let C = new Map([
         voiceChannelId: t,
         voiceState: n
       } = e, r = d.Z.getChannel(t), i = (null == r ? void 0 : r.isGuildStageVoice()) && (null == n ? void 0 : n.suppress), o = 0 === Object.keys(_.Z.getInputDevices()).length, a = p.Z.getMediaSessionId();
-      if (o && null != r && null != a && !i) return [D()]
+      if (o && null != r && null != a && !i) return [w()]
     }
   }],
   [v.u.STREAM_VIEW_LOW_FPS, {
@@ -187,7 +187,7 @@ function P(e, t) {
   return "".concat(e, ":").concat(R(e, t))
 }
 
-function w(e) {
+function D(e) {
   if (null == e) return null;
   let t = [];
   for (let n of o.Z.getStreamParticipants(e)) {
@@ -197,9 +197,9 @@ function w(e) {
       o = i === u.default.getId();
     if (!o && null == c.Z.getActiveStreamForUser(i, r)) continue;
     let a = o && null != f.Z.getHookError(O.K3D.SOUND),
-      s = (0, l.Z)(m.Z.getQuality(), m.Z.getStatsHistory(r, i, o), a, e),
+      s = (0, l.Z)(g.Z.getQuality(), g.Z.getStatsHistory(r, i, o), a, e),
       d = n.id,
-      _ = m.Z.getMediaSessionId(d);
+      _ = g.Z.getMediaSessionId(d);
     null != s && null != _ && t.push(T({
       streamError: s
     }, L(d)))
@@ -207,7 +207,7 @@ function w(e) {
   return t
 }
 
-function D() {
+function w() {
   return T({
     channelId: h.Z.getVoiceChannelId(),
     mediaSessionId: p.Z.getMediaSessionId(),
@@ -219,7 +219,7 @@ function D() {
 function L(e) {
   let {
     channelId: t
-  } = (0, s.my)(e), n = m.Z.getRTCConnection(e);
+  } = (0, s.my)(e), n = g.Z.getRTCConnection(e);
   return T({
     channelId: t,
     mediaSessionId: null == n ? void 0 : n.getMediaSessionId(),
@@ -246,8 +246,8 @@ class M extends i.Z {
     var e, t;
     if (__OVERLAY__) return;
     let n = null !== (e = h.Z.getVoiceChannelId()) && void 0 !== e ? e : null,
-      i = null != n && null !== (t = g.Z.getVoiceStateForChannel(n)) && void 0 !== t ? t : null,
-      o = w(n),
+      i = null != n && null !== (t = m.Z.getVoiceStateForChannel(n)) && void 0 !== t ? t : null,
+      o = D(n),
       a = new Map;
     for (let [e, t] of C) {
       let r = t.getActiveErrors({

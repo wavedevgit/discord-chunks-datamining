@@ -17,7 +17,7 @@ var r = n(108131),
   p = n(709054),
   h = n(38618);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,7 +25,7 @@ function m(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let g = 2e3,
+let m = 2e3,
   E = new c.Z("EntityVersionsManager");
 class v extends s.Z {
   _initialize() {
@@ -35,7 +35,7 @@ class v extends s.Z {
     a.Z.unsubscribe("CONNECTION_OPEN", y)
   }
   constructor(...e) {
-    super(...e), m(this, "actions", {
+    super(...e), g(this, "actions", {
       GUILD_CREATE: O,
       DELETED_ENTITY_IDS: b
     })
@@ -64,7 +64,7 @@ function O(e) {
 }
 
 function S(e) {
-  setTimeout(() => I(e), Math.ceil(Math.random() * g))
+  setTimeout(() => I(e), Math.ceil(Math.random() * m))
 }
 
 function I(e) {

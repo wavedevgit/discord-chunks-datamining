@@ -27,8 +27,8 @@ let f = function(e) {
     type: s.$jN.Type.PULSING_ELLIPSIS,
     className: d.priceSpinner
   });
-  let m = l.Z.getForSkuAndInterval((0, c.Wz)(t), n),
-    g = null != m ? (0, c.gy)(m, p, !1, f) : null;
+  let g = l.Z.getForSkuAndInterval((0, c.Wz)(t), n),
+    m = null != g ? (0, c.gy)(g, p, !1, f) : null;
   return (0, r.jsx)(s.X6q, {
     color: h ? "none" : "always-white",
     variant: null != _ ? _ : "heading-md/medium",
@@ -36,7 +36,7 @@ let f = function(e) {
     children: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("span", {
         className: h ? void 0 : d.price,
-        children: g
+        children: m
       }), " / ", (0, c.eP)(n)]
     })
   })

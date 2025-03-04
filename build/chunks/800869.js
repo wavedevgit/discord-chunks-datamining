@@ -7,8 +7,8 @@ var r = t(200651),
   o = t(704215),
   a = t(481060),
   s = t(243778),
-  l = t(921944),
-  c = t(730621),
+  c = t(921944),
+  l = t(730621),
   d = t(388032),
   u = t(951652),
   x = t(719119);
@@ -24,16 +24,16 @@ function p() {
     }), (0, r.jsx)(i.xv, {
       color: "always-white",
       variant: "text-md/semibold",
-      children: d.NW.string(c.Z.diMhWV)
+      children: d.NW.string(l.Z.diMhWV)
     }), (0, r.jsx)(i.xv, {
       color: "always-white",
       variant: "text-sm/medium",
-      children: d.NW.string(c.Z.pycxTk)
+      children: d.NW.string(l.Z.pycxTk)
     }), (0, r.jsx)(a.olH, {
       className: u.close,
       innerClassName: u.innerClose,
       onClick: () => {
-        n(l.L.USER_DISMISS)
+        n(c.L.USER_DISMISS)
       }
     })]
   })

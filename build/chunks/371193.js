@@ -20,8 +20,8 @@ var r = Object.assign || function(e) {
 n(328794);
 var p = n(549639),
   h = n(466657),
-  m = n(173821),
-  g = function(e, t, n) {
+  g = n(173821),
+  m = function(e, t, n) {
     if (e instanceof s) {
       var i = r({}, t),
         o = r({}, t);
@@ -38,11 +38,11 @@ var p = n(549639),
     return null
   },
   E = function e(t, n) {
-    return g(t, n, e) || {
+    return m(t, n, e) || {
       start: function(e) {
         var r = t,
           i = n;
-        r.stopTracking(), n.toValue instanceof o ? r.track(new f(r, n.toValue, m, i, e)) : r.animate(new m(i), e)
+        r.stopTracking(), n.toValue instanceof o ? r.track(new f(r, n.toValue, g, i, e)) : r.animate(new g(i), e)
       },
       stop: function() {
         t.stopAnimation()
@@ -50,7 +50,7 @@ var p = n(549639),
     }
   },
   v = function e(t, n) {
-    return g(t, n, e) || {
+    return m(t, n, e) || {
       start: function(e) {
         var r = t,
           i = n;
@@ -62,7 +62,7 @@ var p = n(549639),
     }
   },
   b = function e(t, n) {
-    return g(t, n, e) || {
+    return m(t, n, e) || {
       start: function(e) {
         var r = t,
           i = n;

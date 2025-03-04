@@ -36,9 +36,9 @@ function p(e) {
   return e
 }
 let h = new l.Z("ChannelMessages"),
-  m = !0;
+  g = !0;
 
-function g(e, t) {
+function m(e, t) {
   var n, r;
   let i = null != e.editedTimestamp ? +e.editedTimestamp : 0;
   return (null != t.edited_timestamp ? +new Date(t.edited_timestamp) : 0) > i || e.embeds.length < (null !== (r = null === (n = t.embeds) || void 0 === n ? void 0 : n.length) && void 0 !== r ? r : 0) || e.content !== t.content
@@ -46,7 +46,7 @@ function g(e, t) {
 
 function E(e, t) {
   let n = e.get(t.id);
-  return null == n || g(n, t) || e.cached ? (0, c.e5)(t) : n
+  return null == n || m(n, t) || e.cached ? (0, c.e5)(t) : n
 }
 class v {
   clone() {
@@ -329,7 +329,7 @@ class b {
   }
   truncateBottom(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-    return !m || this._array.length <= e ? this : this.mutate(t => {
+    return !g || this._array.length <= e ? this : this.mutate(t => {
       for (let n = e; n < this._array.length; n++) delete t._map[t._array[n].id];
       t._after.cache(t._array.slice(e, this._array.length), !t.hasMoreAfter), t._array = t._array.slice(0, e), t.hasMoreAfter = !0
     }, t)
@@ -413,7 +413,7 @@ class b {
     })
   }
   loadComplete(e) {
-    var t, n, r, s, l, u, d, _, p, m, g;
+    var t, n, r, s, l, u, d, _, p, g, m;
     let v = [...e.newMessages],
       b = null !== (t = e.isBefore) && void 0 !== t && t,
       y = null !== (n = e.isAfter) && void 0 !== n && n,
@@ -441,10 +441,10 @@ class b {
       jumpFlash: null !== (_ = null == O ? void 0 : O.flash) && void 0 !== _ && _,
       jumped: null != O,
       jumpedToPresent: null !== (p = null == O ? void 0 : O.present) && void 0 !== p && p,
-      jumpTargetId: null !== (m = null == O ? void 0 : O.messageId) && void 0 !== m ? m : null,
+      jumpTargetId: null !== (g = null == O ? void 0 : O.messageId) && void 0 !== g ? g : null,
       jumpTargetOffset: null != O && null != O.messageId && null != O.offset ? O.offset : 0,
       jumpSequenceId: null != O ? A.jumpSequenceId + 1 : A.jumpSequenceId,
-      jumpReturnTargetId: null !== (g = null == O ? void 0 : O.returnMessageId) && void 0 !== g ? g : null,
+      jumpReturnTargetId: null !== (m = null == O ? void 0 : O.returnMessageId) && void 0 !== m ? m : null,
       hasMoreBefore: null == O && y ? A.hasMoreBefore : S,
       hasMoreAfter: null == O && b ? A.hasMoreAfter : I,
       cached: T,

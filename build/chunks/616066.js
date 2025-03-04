@@ -48,12 +48,12 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = u.ZP.getEnableHardwareAcceleration() ? s.Xo$ : s.qEK,
+let m = u.ZP.getEnableHardwareAcceleration() ? s.Xo$ : s.qEK,
   E = e => {
     let {
       item: t,
@@ -72,7 +72,7 @@ let g = u.ZP.getEnableHardwareAcceleration() ? s.Xo$ : s.qEK,
       size: E,
       onlyAnimateOnHover: !i
     });
-    return (0, r.jsx)(g, m(p({}, b), {
+    return (0, r.jsx)(m, g(p({}, b), {
       avatarDecoration: v,
       src: i ? null == n ? void 0 : n.getAvatarURL(void 0, 152, !0) : null != h ? h : y,
       imageClassName: i ? f.fadeInAvatarImg : void 0,

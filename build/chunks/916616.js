@@ -15,8 +15,8 @@ var r, i = n(200651),
   _ = n(921948),
   p = n(823023),
   h = n(981631),
-  m = n(217702),
-  g = n(388032),
+  g = n(217702),
+  m = n(388032),
   E = n(213283),
   v = n(167969),
   b = n(557256);
@@ -89,15 +89,15 @@ class A extends(r = o.PureComponent) {
         placeholder: l,
         placeholderVersion: u,
         alt: _,
-        width: m,
+        width: g,
         height: v,
-        maxWidth: b = m,
+        maxWidth: b = g,
         maxHeight: y = v,
         minWidth: S,
         minHeight: N,
         mediaLayoutType: A,
-        limitResponsiveWidth: w = !0,
-        accessory: D,
+        limitResponsiveWidth: D = !0,
+        accessory: w,
         zoomable: L,
         original: x,
         children: M,
@@ -108,9 +108,9 @@ class A extends(r = o.PureComponent) {
         useFullWidth: B = !1
       } = t,
       V = T(t, ["className", "imageClassName", "readyState", "src", "placeholder", "placeholderVersion", "alt", "width", "height", "maxWidth", "maxHeight", "minWidth", "minHeight", "mediaLayoutType", "limitResponsiveWidth", "accessory", "zoomable", "original", "children", "renderAccessory", "onClick", "tabIndex", "dataSafeSrc", "useFullWidth"]);
-    if (1 === m && 1 === v) return null;
+    if (1 === g && 1 === v) return null;
     let F = (0, f.Tj)({
-        width: m,
+        width: g,
         height: v,
         maxWidth: b,
         maxHeight: y,
@@ -137,7 +137,7 @@ class A extends(r = o.PureComponent) {
       children: e
     });
     let H = null != k ? k() : null;
-    return H = null != H ? H : D, (0, i.jsx)(c.tEY, {
+    return H = null != H ? H : w, (0, i.jsx)(c.tEY, {
       ringTarget: this._containerRef,
       focusTarget: this._clickableRef,
       children: (0, i.jsxs)("div", I(O({
@@ -146,7 +146,7 @@ class A extends(r = o.PureComponent) {
           [E.imageWrapperBackground]: o !== h.zo9.READY,
           [E.clickable]: null != j
         }, n),
-        style: R(F, w, B, A)
+        style: R(F, D, B, A)
       }, V), {
         children: [null != x && (0, i.jsx)("a", {
           tabIndex: -1,
@@ -161,7 +161,7 @@ class A extends(r = o.PureComponent) {
           className: E.clickableWrapper,
           tabIndex: null != U ? U : 0,
           onClick: j,
-          "aria-label": null != _ ? _ : g.NW.string(g.t.X4IxWF),
+          "aria-label": null != _ ? _ : m.NW.string(m.t.X4IxWF),
           "aria-describedby": d.r5,
           innerRef: this._clickableRef,
           focusProps: {
@@ -188,23 +188,23 @@ function C(e) {
   } = e, o = (0, u.ZP)();
   return (0, i.jsx)("div", {
     className: E.imageErrorWrapper,
-    style: w(t, n),
+    style: D(t, n),
     children: (0, i.jsx)("img", {
       src: (0, l.ap)(o) ? b : v,
       className: E.imageError,
-      alt: null != r ? r : g.NW.string(g.t.X4IxWF)
+      alt: null != r ? r : m.NW.string(m.t.X4IxWF)
     })
   })
 }
 
 function R(e, t, n, r) {
-  return r === m.hV.MOSAIC ? {
+  return r === g.hV.MOSAIC ? {
     display: "block",
     maxHeight: "inherit",
     margin: "auto",
-    width: !n && e.width <= m.mT ? e.width : "100%",
+    width: !n && e.width <= g.mT ? e.width : "100%",
     height: "100%"
-  } : r === m.hV.RESPONSIVE ? {
+  } : r === g.hV.RESPONSIVE ? {
     maxWidth: t ? e.width : void 0,
     width: "100%",
     aspectRatio: "".concat(e.width, " / ").concat(e.height)
@@ -213,25 +213,25 @@ function R(e, t, n, r) {
 
 function P(e, t) {
   switch (t) {
-    case m.hV.MOSAIC:
+    case g.hV.MOSAIC:
       return {
         display: "block", objectFit: "cover", minWidth: "100%", minHeight: "100%", maxWidth: 1 === (0, _.Z)() ? "calc(100% + 1px)" : "100%"
       };
-    case m.hV.RESPONSIVE:
-      return D(e);
+    case g.hV.RESPONSIVE:
+      return w(e);
     default:
       return e
   }
 }
 
-function w(e, t) {
+function D(e, t) {
   switch (t) {
-    case m.hV.MOSAIC:
+    case g.hV.MOSAIC:
       return {
         width: "100%", height: "100%", aspectRatio: "".concat(e.width, " / ").concat(e.height), display: "flex", maxHeight: "inherit"
       };
-    case m.hV.RESPONSIVE:
-      return I(O({}, D(e)), {
+    case g.hV.RESPONSIVE:
+      return I(O({}, w(e)), {
         display: "flex"
       });
     default:
@@ -239,7 +239,7 @@ function w(e, t) {
   }
 }
 
-function D(e) {
+function w(e) {
   let {
     width: t,
     height: n
@@ -265,7 +265,7 @@ y(A, "defaultProps", {
     } = e;
     return (0, i.jsx)("img", {
       className: null != o ? o : void 0,
-      alt: null != r ? r : g.NW.string(g.t.X4IxWF),
+      alt: null != r ? r : m.NW.string(m.t.X4IxWF),
       src: t,
       style: P(n, a)
     })

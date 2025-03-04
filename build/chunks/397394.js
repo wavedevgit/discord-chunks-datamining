@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(252618),
   p = n(258971),
   h = n(703656),
-  m = n(769654),
-  g = n(592125),
+  g = n(769654),
+  m = n(592125),
   E = n(496675),
   v = n(944486),
   b = n(626135),
@@ -73,9 +73,9 @@ function P(e, t) {
   }), e
 }
 
-function w(e, t) {
+function D(e, t) {
   if (null == e) return {};
-  var n, r, i = D(e, t);
+  var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -83,7 +83,7 @@ function w(e, t) {
   return i
 }
 
-function D(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -128,7 +128,7 @@ function M(e) {
   var {
     guild: t,
     application: n
-  } = e, o = w(e, ["guild", "application"]);
+  } = e, o = D(e, ["guild", "application"]);
   let a = T.NW.string(T.t.se5gLi);
   i.useEffect(() => {
     b.default.track(I.rMx.OAUTH2_AUTHORIZE_SUCCESS_VIEWED, {
@@ -162,8 +162,8 @@ function k(e) {
   } = e;
   let {
     onClose: o
-  } = w(e, ["guild", "application"]), a = i.useCallback(() => {
-    (null == t ? void 0 : t.id) != null && ((0, m.X)(null == t ? void 0 : t.id), null == o || o(), b.default.track(I.rMx.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED, {
+  } = D(e, ["guild", "application"]), a = i.useCallback(() => {
+    (null == t ? void 0 : t.id) != null && ((0, g.X)(null == t ? void 0 : t.id), null == o || o(), b.default.track(I.rMx.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED, {
       application_id: null == n ? void 0 : n.id,
       guild_id: null == t ? void 0 : t.id
     }))
@@ -179,7 +179,7 @@ function k(e) {
         application_id: n.id
       })
     }))
-  }, [null == n ? void 0 : n.id, o, s]), _ = (0, c.e7)([v.Z, g.Z], () => g.Z.getChannel(v.Z.getChannelId())), O = (0, c.e7)([E.Z], () => E.Z.can(I.Plq.SEND_MESSAGES, _)), S = null != t, A = null == t && O && (!u || null != s);
+  }, [null == n ? void 0 : n.id, o, s]), _ = (0, c.e7)([v.Z, m.Z], () => m.Z.getChannel(v.Z.getChannelId())), O = (0, c.e7)([E.Z], () => E.Z.can(I.Plq.SEND_MESSAGES, _)), S = null != t, A = null == t && O && (!u || null != s);
   return null != t || null != o ? (0, r.jsxs)("div", {
     className: N.buttonsContainer,
     children: [null != o ? S || A ? (0, r.jsx)(f.zxk, {

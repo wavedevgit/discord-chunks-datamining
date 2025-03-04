@@ -74,9 +74,9 @@ let s = n(606419),
   _ = d.mixin,
   p = d.hasOwn,
   h = n(509337),
-  m = n(675246);
+  g = n(675246);
 
-function g() {}
+function m() {}
 e.exports = function(e, n) {
   return "function" == typeof n ? new t.Request("GET", e).end(n) : 1 == arguments.length ? new t.Request("GET", e) : new t.Request(e, n)
 };
@@ -222,7 +222,7 @@ E.serializeObject = b, E.parseString = O, E.types = {
 }, N.prototype.pipe = N.prototype.write, N.prototype._isHost = function(e) {
   return e && "object" == typeof e && !Array.isArray(e) && "[object Object]" !== Object.prototype.toString.call(e)
 }, N.prototype.end = function(e) {
-  this._endCalled && console.warn("Warning: .end() was called twice. This is not supported in superagent"), this._endCalled = !0, this._callback = e || g, this._finalizeQueryString(), this._end()
+  this._endCalled && console.warn("Warning: .end() was called twice. This is not supported in superagent"), this._endCalled = !0, this._callback = e || m, this._finalizeQueryString(), this._end()
 }, N.prototype._setUploadTimeout = function() {
   let e = this;
   this._uploadTimeout && !this._uploadTimeoutTimer && (this._uploadTimeoutTimer = setTimeout(() => {
@@ -269,10 +269,10 @@ E.serializeObject = b, E.parseString = O, E.types = {
   }
   for (let e in this.header) null !== this.header[e] && p(this.header, e) && t.setRequestHeader(e, this.header[e]);
   this._responseType && (t.responseType = this._responseType), this.emit("request", this), t.send(void 0 === n ? null : n)
-}, E.agent = () => new m;
+}, E.agent = () => new g;
 for (var A = 0, C = ["GET", "POST", "OPTIONS", "PATCH", "PUT", "DELETE"]; A < C.length; A++) {
   let e = C[A];
-  m.prototype[e.toLowerCase()] = function(t, n) {
+  g.prototype[e.toLowerCase()] = function(t, n) {
     let r = new E.Request(e, t);
     return this._setDefaults(r), n && r.end(n), r
   }
@@ -282,7 +282,7 @@ function R(e, t, n) {
   let r = E("DELETE", e);
   return "function" == typeof t && (n = t, t = null), t && r.send(t), n && r.end(n), r
 }
-m.prototype.del = m.prototype.delete, E.get = (e, t, n) => {
+g.prototype.del = g.prototype.delete, E.get = (e, t, n) => {
   let r = E("GET", e);
   return "function" == typeof t && (n = t, t = null), t && r.query(t), n && r.end(n), r
 }, E.head = (e, t, n) => {

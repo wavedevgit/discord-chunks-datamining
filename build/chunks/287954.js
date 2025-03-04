@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -69,7 +69,7 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   return e === c.P.REACT ? {
     position: "left",
     align: "top",
@@ -83,14 +83,14 @@ function m(e, t) {
   }
 }
 
-function g(e) {
+function m(e) {
   var {
     user: t,
     guildId: n,
     channelId: u,
     profileType: f,
     onClose: h,
-    children: g
+    children: m
   } = e, E = p(e, ["user", "guildId", "channelId", "profileType", "onClose", "children"]);
   let {
     interactionType: v,
@@ -117,7 +117,7 @@ function g(e) {
       y(), null == h || h()
     },
     shouldShow: N
-  }, m(v, f)), {
-    children: g
+  }, g(v, f)), {
+    children: m
   }))
 }

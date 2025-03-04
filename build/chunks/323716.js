@@ -16,13 +16,13 @@ var c = n(960048),
 let p = ["https://cdn.discordapp.com/bad-domains/updated_hashes.json", "https://cdn.discordapp.com/bad-domains/hashes.json"],
   h = new d.R;
 
-function m(e) {
+function g(e) {
   let t = new URLSearchParams;
   t.append("query", '@http.x_client_trace_id:"'.concat(e, '"')), t.append("showAllSpans", "true");
   let n = u.Z.toURLSafe("traces?".concat(t.toString()), "https://datadog.discord.tools/apm/");
   return null == n ? null : n.toString()
 }
-let g = /\/api(\/v\d+)?\/science/;
+let m = /\/api(\/v\d+)?\/science/;
 
 function E(e) {
   let t = 10;
@@ -64,8 +64,8 @@ function E(e) {
         e.set("x-client-trace-id", n);
         try {
           let t = new URL(e.url).pathname;
-          if (!g.test(t)) {
-            let r = m(n);
+          if (!m.test(t)) {
+            let r = g(n);
             null !== r && console.debug("%c[tracing]%c %s %s\n%s", "font-weight: bold", "", e.method, t, r)
           }
         } catch (e) {

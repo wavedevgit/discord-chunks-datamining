@@ -25,10 +25,10 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   return e.split("-")[0]
 }
-class g extends s.Z {
+class m extends s.Z {
   destroy() {
     super.destroy(), this.pc.close()
   }
@@ -71,7 +71,7 @@ class g extends s.Z {
       this.pc.setRemoteDescription(e).then(() => this.pc.createAnswer()).then(e => this.fpc.setRemoteDescription(e)).catch(e => this.logger.error("Failed to set remote description (offer): ".concat(e)))
     }), i.direction = null != this.input.stream ? d.Ns.SENDRECV : d.Ns.SENDONLY, this.fpc = i;
     let s = new u.Z(this.voiceBitrate);
-    s.on("addtrack", (e, t) => this.createOutput(m(e), t)), s.on("removetrack", (e, t) => this.destroyOutput(m(e), t)), s.once("connected", () => {
+    s.on("addtrack", (e, t) => this.createOutput(g(e), t)), s.on("removetrack", (e, t) => this.destroyOutput(g(e), t)), s.once("connected", () => {
       this.input.reset(), this.setConnectionState(_.$j.CONNECTED), this.on(a.Sh.Stats, this.handleStats), this.input.on(c.G.VoiceActivity, this.handleVoiceActivity)
     }), s.on("connecting", () => this.setConnectionState(_.$j.DTLS_CONNECTING)), s.on("checking", () => this.setConnectionState(_.$j.ICE_CHECKING)), s.on("failed", () => this.setConnectionState(_.$j.NO_ROUTE)), s.on("disconnected", () => this.setConnectionState(_.$j.DISCONNECTED)), s.on("closed", () => this.setConnectionState(_.$j.DISCONNECTED)), s.on("offer", e => {
       let {
@@ -98,5 +98,5 @@ class g extends s.Z {
 function E(e, t, n, r) {
   let a = "".concat(null != i().name && "" !== i().name ? i().name : "unknown", " ").concat(null != i().version && "" !== i().version ? i().version : "unknown"),
     s = new o.Yd("Connection(".concat(e, ")"));
-  return p.WS ? (s.info("Using Unified Plan (".concat(a, ")")), new f.Z(e, t, n, r)) : (s.info("Using Plan B (".concat(a, ")")), new g(e, t, n, r))
+  return p.WS ? (s.info("Using Unified Plan (".concat(a, ")")), new f.Z(e, t, n, r)) : (s.info("Using Plan B (".concat(a, ")")), new m(e, t, n, r))
 }

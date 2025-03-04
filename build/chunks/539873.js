@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(98278),
   p = n(311476),
   h = n(587446),
-  m = n(996073),
-  g = n(327943),
+  g = n(996073),
+  m = n(327943),
   E = n(997945),
   v = n(401460),
   b = n(441319),
@@ -72,15 +72,15 @@ function P(e) {
     disabled: o,
     isEditor: N,
     renderCTAButtons: C
-  } = e, [P, w] = (0, s.Wu)([g.Z], () => [g.Z.getCurrentDesktopIcon(), g.Z.isUpsellPreview]), {
-    enabled: D
+  } = e, [P, D] = (0, s.Wu)([m.Z], () => [m.Z.getCurrentDesktopIcon(), m.Z.isUpsellPreview]), {
+    enabled: w
   } = p.Z.getCurrentConfig({
     location: "UserSettingsAppearanceInAppIcon"
   }, {
-    autoTrackExposure: w,
-    disable: !w
+    autoTrackExposure: D,
+    disable: !D
   }), L = i.useRef(null);
-  (0, m.Z)(L, O.h1.CUSTOM_APP_ICONS);
+  (0, g.Z)(L, O.h1.CUSTOM_APP_ICONS);
   let x = (0, d.Dt)(),
     M = (0, l.arW)({
       orientation: "horizontal",
@@ -88,7 +88,7 @@ function P(e) {
     }),
     k = (0, f.Q3)("AppIconSelectionGroup"),
     j = e => {
-      if (D && !N && e !== E.aH.DEFAULT) {
+      if (w && !N && e !== E.aH.DEFAULT) {
         (0, l.ZDy)(async () => {
           let {
             default: e
@@ -124,10 +124,10 @@ function P(e) {
                 className: I.titleText,
                 variant: k ? "text-lg/medium" : "text-md/medium",
                 children: S.NW.string(S.t.NThqT0)
-              }), !D && (0, r.jsx)(h.Z, {
+              }), !w && (0, r.jsx)(h.Z, {
                 className: I.premiumIcon
               })]
-            }), D ? N ? null : (0, r.jsxs)("div", {
+            }), w ? N ? null : (0, r.jsxs)("div", {
               className: I.description,
               children: [(0, r.jsx)(l.SrA, {
                 size: "md",
@@ -151,7 +151,7 @@ function P(e) {
           }), null == C ? void 0 : C()]
         }), (0, r.jsx)("div", {
           className: a()(I.presets, {
-            [I.presetsJustified]: D && N
+            [I.presetsJustified]: w && N
           }),
           children: (0, b.wu)().filter(e => {
             let {
@@ -164,7 +164,7 @@ function P(e) {
             onSelect: e => j(e),
             disabled: o,
             tabIndex: 0 !== t || o ? void 0 : 0,
-            locked: D && !N && e.id !== E.aH.DEFAULT
+            locked: w && !N && e.id !== E.aH.DEFAULT
           }, e.id))
         })]
       })

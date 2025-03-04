@@ -36,8 +36,8 @@ let h = {
     applicationId: null,
     originURL: null
   },
-  m = h,
-  g = new Set,
+  g = h,
+  m = new Set,
   E = !1;
 
 function v() {
@@ -45,14 +45,14 @@ function v() {
 }
 
 function b() {
-  r = null, i = null, g = new Set, m.applicationId = null, m.originURL = null, v()
+  r = null, i = null, m = new Set, g.applicationId = null, g.originURL = null, v()
 }
 
 function y(e) {
   let {
     applicationId: t
   } = e;
-  g.add(t), o = null
+  m.add(t), o = null
 }
 
 function O(e) {
@@ -60,7 +60,7 @@ function O(e) {
     applicationId: t,
     originURL: n
   } = e;
-  r = t, i = n, g.delete(t), o = null, m.applicationId = t, m.originURL = n
+  r = t, i = n, m.delete(t), o = null, g.applicationId = t, g.originURL = n
 }
 
 function S(e) {
@@ -68,7 +68,7 @@ function S(e) {
     applicationId: t,
     error: n
   } = e;
-  g.delete(t), o = n
+  m.delete(t), o = n
 }
 
 function I(e) {
@@ -79,7 +79,7 @@ function I(e) {
 }
 class T extends(a = s.ZP.PersistedStore) {
   initialize(e) {
-    r = (m = p({}, null != e ? e : h)).applicationId, i = m.originURL, this.waitFor(d.Z, c.Z), this.syncWith([d.Z, c.Z], () => !0), f.Z.whenInitialized(() => {
+    r = (g = p({}, null != e ? e : h)).applicationId, i = g.originURL, this.waitFor(d.Z, c.Z), this.syncWith([d.Z, c.Z], () => !0), f.Z.whenInitialized(() => {
       E = !0
     })
   }
@@ -93,13 +93,13 @@ class T extends(a = s.ZP.PersistedStore) {
     return u.Sb.getSetting() && this.inTestModeForApplication(e)
   }
   getState() {
-    return m
+    return g
   }
   get isTestMode() {
     return null != r
   }
   get isFetchingAuthorization() {
-    return g.size > 0
+    return m.size > 0
   }
   get testModeEmbeddedApplicationId() {
     return null != i ? r : null

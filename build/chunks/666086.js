@@ -16,8 +16,8 @@ var r = n(392711),
   _ = n(375954),
   p = n(944486),
   h = n(626135),
-  m = n(522558),
-  g = n(581025),
+  g = n(522558),
+  m = n(581025),
   E = n(795448),
   v = n(441623),
   b = n(474936),
@@ -73,13 +73,13 @@ class N extends a.Z {
   handleChannelSelect(e, t) {
     let {
       enabled: n
-    } = g.G.getCurrentConfig({
+    } = m.G.getCurrentConfig({
       location: "PremiumGiftingIntentManager handleChannelSelect"
     }, {
       autoTrackExposure: !1
     }), {
       enabled: r
-    } = m.w.getCurrentConfig({
+    } = g.w.getCurrentConfig({
       location: "PremiumGiftingIntentManager handleChannelSelect"
     }, {
       autoTrackExposure: !1

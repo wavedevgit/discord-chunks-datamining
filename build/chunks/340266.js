@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -52,7 +52,7 @@ function f(e, t) {
 let _ = 4,
   p = 1,
   h = 3,
-  m = [
+  g = [
     [{
       top: 15,
       left: 15,
@@ -109,19 +109,19 @@ let _ = 4,
     }]
   ];
 
-function g(e) {
+function m(e) {
   let {
     users: t,
     channel: n
-  } = e, c = t.length > _, d = t.length - _ + 1, g = d >= 10 ? h : p;
+  } = e, c = t.length > _, d = t.length - _ + 1, m = d >= 10 ? h : p;
   return (0, r.jsx)("div", {
     className: l.container,
-    children: m[(0, i.clamp)(t.length - 1, 0, m.length - 1)].map((e, i) => {
+    children: g[(0, i.clamp)(t.length - 1, 0, g.length - 1)].map((e, i) => {
       let _ = t[i];
       return null == _ ? null : (0, r.jsx)("div", {
         className: l.circle,
         style: e,
-        children: c && i === g ? (0, r.jsx)("div", {
+        children: c && i === m ? (0, r.jsx)("div", {
           className: l.overflowCount,
           children: (0, r.jsx)(o.Text, {
             variant: "text-xxs/semibold",

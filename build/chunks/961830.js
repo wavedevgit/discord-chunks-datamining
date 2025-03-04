@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   F7: () => O,
-  WA: () => g,
+  WA: () => m,
   s2: () => E,
   wo: () => y,
   yp: () => S
@@ -52,18 +52,18 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = {
+let m = {
     key: null,
     renderStep: e => (0, r.jsx)(d.v, p({}, e))
   },
   E = {
     key: o.h8.ADD_PAYMENT_STEPS,
-    renderStep: e => (0, r.jsx)(a.J, m(p({}, e), {
+    renderStep: e => (0, r.jsx)(a.J, g(p({}, e), {
       breadcrumbSteps: [o.h8.ADD_PAYMENT_STEPS, o.h8.REVIEW, o.h8.CONFIRM],
       onReturn: () => {
         0 === Object.keys(i.Z.paymentSources).length ? e.handleClose() : e.handleStepChange(o.h8.REVIEW, {

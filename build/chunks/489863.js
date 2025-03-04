@@ -4,11 +4,11 @@ n.d(t, {
   Iq: () => _,
   UR: () => h,
   Ww: () => p,
-  c$: () => m,
+  c$: () => g,
   g: () => f,
   i2: () => v,
   tR: () => E,
-  tV: () => g
+  tV: () => m
 }), n(301563);
 var r = n(860911),
   i = n(544891),
@@ -54,7 +54,7 @@ async function _(e) {
     guildId: _,
     channelId: p,
     integrationType: h,
-    nonce: m
+    nonce: g
   } = e;
   return (await i.tn.post({
     url: l.ANM.OAUTH2_AUTHORIZE,
@@ -66,7 +66,7 @@ async function _(e) {
       code_challenge_method: c,
       scope: r.join(" "),
       state: u,
-      nonce: m
+      nonce: g
     },
     body: {
       guild_id: _,
@@ -127,10 +127,10 @@ async function h(e) {
   return t
 }
 
-function m(e) {
+function g(e) {
   o.Z.logout((0, r.Ui)(e.pathname + e.search, !1))
 }
-async function g(e) {
+async function m(e) {
   return await i.tn.post({
     url: l.ANM.OAUTH2_DEVICE_VERIFY,
     body: {

@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Bk: () => em,
+  Bk: () => eg,
   CB: () => eE,
   ZP: () => ev,
-  r$: () => eg
+  r$: () => em
 }), n(789020), n(411104);
 var r = n(525654),
   i = n.n(r),
@@ -19,8 +19,8 @@ var r = n(525654),
   _ = n(34756),
   p = n(595519),
   h = n(839426),
-  m = n(895924),
-  g = n(625128),
+  g = n(895924),
+  m = n(625128),
   E = n(972830),
   v = n(305325),
   b = n(63568),
@@ -34,8 +34,8 @@ var r = n(525654),
   C = n(652898),
   R = n(895886),
   P = n(143816),
-  w = n(703656),
-  D = n(922482),
+  D = n(703656),
+  w = n(922482),
   L = n(131704),
   x = n(314897),
   M = n(592125),
@@ -142,7 +142,7 @@ function ed(e, t) {
     source: P.Z.INVITE_ACCEPT,
     navigationReplace: !0
   };
-  return null != i && (s.welcomeModalChannelId = i), a && (s.state = et.Df), null != o && (s.guildScheduledEventId = o.id), e => null != r ? r(e, s) : (0, w.uL)(e, s)
+  return null != i && (s.welcomeModalChannelId = i), a && (s.state = et.Df), null != o && (s.guildScheduledEventId = o.id), e => null != r ? r(e, s) : (0, D.uL)(e, s)
 }
 
 function ef(e) {
@@ -161,14 +161,14 @@ function ef(e) {
   if (!d && !f && !(null == i ? void 0 : i.forceTransition) && s && F.Z.getGuildId() !== t) return;
   let {
     type: _
-  } = r, g = M.Z.getChannel(r.id), O = eu(t, r, i), S = _ === X.d4z.GUILD_STAGE_VOICE, I = X.Z5c.CHANNEL(t, O);
+  } = r, m = M.Z.getChannel(r.id), O = eu(t, r, i), S = _ === X.d4z.GUILD_STAGE_VOICE, I = X.Z5c.CHANNEL(t, O);
   L.tx.has(_) ? (0, E.h)(() => {
     Promise.resolve().then(n.bind(n, 287734)).then(e => {
       let {
         default: n
       } = e, a = () => {
         if (S) {
-          (0, D.Cq)(r instanceof L.Sf ? r : (0, L.kt)(r)), (0, w.uL)(I);
+          (0, w.Cq)(r instanceof L.Sf ? r : (0, L.kt)(r)), (0, D.uL)(I);
           return
         }
         n.selectVoiceChannel(O), c === ee.Iq.STREAM && null != l && Q.iV({
@@ -176,24 +176,24 @@ function ef(e) {
           ownerId: l,
           guildId: t,
           channelId: O
-        }), c === ee.Iq.EMBEDDED_APPLICATION && null != u && ((0, w.uL)(X.Z5c.CHANNEL(null != t ? t : X.ME, O)), (0, h.Z)({
+        }), c === ee.Iq.EMBEDDED_APPLICATION && null != u && ((0, D.uL)(X.Z5c.CHANNEL(null != t ? t : X.ME, O)), (0, h.Z)({
           channelId: O,
           applicationId: u,
           intent: null == i ? void 0 : i.intent,
           inviterUserId: null == i ? void 0 : i.inviterUserId,
           analyticsLocations: o,
-          commandOrigin: m.bB.CHAT
+          commandOrigin: g.bB.CHAT
         }))
       };
       !d && (0, y.n)(t, [U.Z, G.Z, Z.default, j.ZP]) ? (0, v.hk)(t, a) : a()
     })
-  }) : (0, p.l5)(g) && c === ee.Iq.EMBEDDED_APPLICATION && null != u && ((0, w.uL)(X.Z5c.CHANNEL(null != t ? t : X.ME, O)), (0, h.Z)({
+  }) : (0, p.l5)(m) && c === ee.Iq.EMBEDDED_APPLICATION && null != u && ((0, D.uL)(X.Z5c.CHANNEL(null != t ? t : X.ME, O)), (0, h.Z)({
     channelId: O,
     applicationId: u,
     intent: null == i ? void 0 : i.intent,
     inviterUserId: null == i ? void 0 : i.inviterUserId,
     analyticsLocations: o,
-    commandOrigin: m.bB.CHAT
+    commandOrigin: g.bB.CHAT
   })), ed(r, i)(I)
 }
 
@@ -248,7 +248,7 @@ let eh = function(e, t) {
       }), !1)
     })
   },
-  em = async e => {
+  eg = async e => {
     let {
       guild_id: t,
       channel_id: n
@@ -256,7 +256,7 @@ let eh = function(e, t) {
     (0, I.xt)(e) && null != n ? eh(n) : await q.Z.transitionToGuildSync(t)
   };
 
-function eg(e, t, n) {
+function em(e, t, n) {
   var r;
   H.default.track(X.rMx.INVITE_EMBED_ACTIONED, {
     action: t,
@@ -522,7 +522,7 @@ let ev = {
     }
   },
   openNativeAppModal(e) {
-    g.Z.openNativeAppModal(e, X.Etm.INVITE_BROWSER)
+    m.Z.openNativeAppModal(e, X.Etm.INVITE_BROWSER)
   },
   openApp(e, t, n, r, o) {
     var a, u;

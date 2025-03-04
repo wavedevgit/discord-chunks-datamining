@@ -16,7 +16,7 @@ var r, i = n(512722),
   p = n(48481),
   h = n(526761);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,14 +25,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -124,17 +124,17 @@ function R(e) {
   } = e;
   o()(!__OVERLAY__, "this cannot run in the overlay");
   let r = b[t];
-  return r.editInfo = g({}, r.editInfo, n), !1
+  return r.editInfo = m({}, r.editInfo, n), !1
 }
 
 function P(e) {
   let {
     userSettings: t
   } = e;
-  w(t)
+  D(t)
 }
 
-function w(e) {
+function D(e) {
   null != e && s().forEach(b, (t, n) => {
     var r, i;
     let a = e[Number(n)];
@@ -149,9 +149,9 @@ function w(e) {
     null != u && (t.editInfo.protoToSave = u, t.editInfo.offlineEditDataVersion = a.offlineEditDataVersion)
   })
 }
-class D extends(r = l.ZP.PersistedStore) {
+class w extends(r = l.ZP.PersistedStore) {
   initialize(e) {
-    w(e)
+    D(e)
   }
   getState() {
     return this.computeState()
@@ -209,8 +209,8 @@ class D extends(r = l.ZP.PersistedStore) {
     return null !== (t = null === (e = this.settings.guilds) || void 0 === e ? void 0 : e.guilds) && void 0 !== t ? t : null
   }
 }
-m(D, "displayName", "UserSettingsProtoStore"), m(D, "persistKey", "UserSettingsProtoStore-Cache");
-let L = new D(f.Z, {
+g(w, "displayName", "UserSettingsProtoStore"), g(w, "persistKey", "UserSettingsProtoStore-Cache");
+let L = new w(f.Z, {
   CACHE_LOADED: P,
   USER_SETTINGS_PROTO_UPDATE: C,
   USER_SETTINGS_PROTO_ENQUEUE_UPDATE: C,

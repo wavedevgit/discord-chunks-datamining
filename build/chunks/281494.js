@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  C$: () => g,
+  C$: () => m,
   Fe: () => d,
   Fz: () => f,
   IB: () => b,
   Ve: () => E,
   bq: () => h,
-  iF: () => m,
+  iF: () => g,
   jy: () => v
 }), n(47120), n(26686), n(653041);
 var r = n(544891),
@@ -68,7 +68,7 @@ let p = new _,
       type: "BILLING_GET_REFERRAL_INCENTIVE_STATUS_FAIL"
     })
   }));
-async function m(e, t, n) {
+async function g(e, t, n) {
   let i = JSON.stringify({
     index: e,
     searchQuery: t
@@ -92,7 +92,7 @@ async function m(e, t, n) {
   };
   return p.set(i, u), u
 }
-let g = () => (i.Z.dispatch({
+let m = () => (i.Z.dispatch({
     type: "BILLING_REFERRALS_REMAINING_FETCH_START"
   }), r.tn.get({
     url: s.ANM.GET_REFERRALS_REMAINING,

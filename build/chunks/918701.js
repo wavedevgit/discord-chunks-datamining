@@ -31,7 +31,7 @@ n.d(t, {
   V$: () => e4,
   WP: () => J,
   Xh: () => eo,
-  Xv: () => eg,
+  Xv: () => em,
   ZZ: () => F,
   Zp: () => ts,
   _D: () => V,
@@ -47,7 +47,7 @@ n.d(t, {
   iQ: () => K,
   il: () => eH,
   lQ: () => H,
-  o9: () => eD,
+  o9: () => ew,
   oo: () => eI,
   pO: () => eC,
   q6: () => z,
@@ -56,13 +56,13 @@ n.d(t, {
   u7: () => ti,
   vQ: () => eE,
   vR: () => ey,
-  xN: () => em,
+  xN: () => eg,
   xn: () => e_,
   yH: () => te,
   yI: () => en,
   ys: () => eO,
   zE: () => ef,
-  zK: () => ew,
+  zK: () => eD,
   zi: () => Y
 }), n(47120), n(627341), n(266796), n(411104), n(230036), n(571269), n(298267), n(653041);
 var r = n(991998),
@@ -80,8 +80,8 @@ n(597688);
 var p = n(231757);
 n(706454);
 var h = n(572004),
-  m = n(70956),
-  g = n(630388),
+  g = n(70956),
+  m = n(630388),
   E = n(823379),
   v = n(49012),
   b = n(960048),
@@ -95,9 +95,9 @@ var h = n(572004),
   C = n(46140),
   R = n(981631),
   P = n(701488),
-  w = n(388032);
+  D = n(388032);
 
-function D(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -113,7 +113,7 @@ function L(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -370,15 +370,15 @@ function el(e, t, n) {
 let ec = e => {
   switch (e) {
     case I.y$.XBOX:
-      return w.NW.string(w.t.G84UWV);
+      return D.NW.string(D.t.G84UWV);
     case I.y$.PLAYSTATION:
-      return w.NW.string(w.t["6IeKx8"]);
+      return D.NW.string(D.t["6IeKx8"]);
     case I.y$.SWITCH:
-      return w.NW.string(w.t["1pp0sr"]);
+      return D.NW.string(D.t["1pp0sr"]);
     case I.y$.PC:
-      return w.NW.string(w.t["YK+wUl"]);
+      return D.NW.string(D.t["YK+wUl"]);
     case I.y$.CROSS_PLATFORM:
-      return w.NW.string(w.t.UWVbzc)
+      return D.NW.string(D.t.UWVbzc)
   }
 };
 
@@ -389,14 +389,14 @@ function eu(e) {
     taskDetails: i,
     thirdPartyTaskDetails: o
   } = e;
-  if ((null === (t = r.userStatus) || void 0 === t ? void 0 : t.completedAt) != null) return w.NW.string(w.t.BzFeTE);
+  if ((null === (t = r.userStatus) || void 0 === t ? void 0 : t.completedAt) != null) return D.NW.string(D.t.BzFeTE);
   if ((null === (n = r.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null) {
     let {
       percentComplete: e
     } = i, t = null != o ? o.completedRatio : e;
-    return t >= .75 ? w.NW.string(w.t.gvCR4O) : t >= .45 && t <= .55 ? w.NW.string(w.t.JNx8sL) : t > 0 ? w.NW.string(w.t.JMbfnZ) : w.NW.string(w.t["7e5k7O"])
+    return t >= .75 ? D.NW.string(D.t.gvCR4O) : t >= .45 && t <= .55 ? D.NW.string(D.t.JNx8sL) : t > 0 ? D.NW.string(D.t.JMbfnZ) : D.NW.string(D.t["7e5k7O"])
   }
-  return w.NW.formatToPlainString(w.t.EQa7oq, {
+  return D.NW.formatToPlainString(D.t.EQa7oq, {
     questName: r.config.messages.questName
   })
 }
@@ -408,7 +408,7 @@ function ed(e) {
 function ef(e, t) {
   if (!ed(t)) return !1;
   let n = I.jn[t];
-  return (0, g.yE)(e.dismissedQuestContent, C.a_[n])
+  return (0, m.yE)(e.dismissedQuestContent, C.a_[n])
 }
 
 function e_(e) {
@@ -425,21 +425,21 @@ function ep(e) {
     a = Math.floor(o / 30) + +(o % 30 >= 25);
   if (a >= 12) {
     let e = Math.floor(a / 12);
-    return w.NW.formatToPlainString(w.t.PClsr6, {
+    return D.NW.formatToPlainString(D.t.PClsr6, {
       years: e
     })
   }
-  if (a > 0) return w.NW.formatToPlainString(w.t.kridzM, {
+  if (a > 0) return D.NW.formatToPlainString(D.t.kridzM, {
     months: a
   });
   {
     let e = (0, r.Z)(i, n);
-    if (!(e >= 7)) return w.NW.formatToPlainString(w.t.k2UNz8, {
+    if (!(e >= 7)) return D.NW.formatToPlainString(D.t.k2UNz8, {
       days: e
     });
     {
       let t = Math.ceil(e / 7);
-      return w.NW.formatToPlainString(w.t.EmoBDw, {
+      return D.NW.formatToPlainString(D.t.EmoBDw, {
         weeks: t
       })
     }
@@ -450,11 +450,11 @@ function eh(e) {
   return e.rewardsConfig.rewards.some(e => e.type === c.w.FRACTIONAL_PREMIUM)
 }
 
-function em(e) {
+function eg(e) {
   return e.rewardsConfig.rewards.some(e => e.type === c.w.VIRTUAL_CURRENCY)
 }
 
-function eg(e) {
+function em(e) {
   return null != e_(e)
 }
 
@@ -535,11 +535,11 @@ function eP(e) {
   return eC(e) && t === C.Ts
 }
 
-function ew(e, t) {
+function eD(e, t) {
   return N.r.build(e.config).features.has(t)
 }
 
-function eD(e) {
+function ew(e) {
   let {
     quest: t,
     idx: n
@@ -580,7 +580,7 @@ let ex = (e, t) => {
     let s = null === (a = e.userStatus) || void 0 === a ? void 0 : null === (o = a.progress) || void 0 === o ? void 0 : null === (r = o[t.eventName]) || void 0 === r ? void 0 : null === (n = r.heartbeat) || void 0 === n ? void 0 : n.lastBeatAt;
     if (null == s || !ek(e)) return 0;
     let l = Date.now() - new Date(s).valueOf();
-    return (0, i.floor)(l / m.Z.Millis.SECOND, 2)
+    return (0, i.floor)(l / g.Z.Millis.SECOND, 2)
   },
   eU = (e, t) => {
     var n, r, i, o, a;
@@ -616,7 +616,7 @@ let ex = (e, t) => {
     return {
       progressSeconds: f,
       targetSeconds: d,
-      targetMinutes: Math.ceil(d / m.Z.Seconds.MINUTE),
+      targetMinutes: Math.ceil(d / g.Z.Seconds.MINUTE),
       percentComplete: eM(d, f),
       taskType: l
     }
@@ -787,7 +787,7 @@ function e5(e) {
 }
 
 function e7(e) {
-  return e5(e) === R.ABu.XBOX ? w.t.mytEv7 : w.t.iDiwb2
+  return e5(e) === R.ABu.XBOX ? D.t.mytEv7 : D.t.iDiwb2
 }
 
 function e8(e) {
@@ -799,7 +799,7 @@ function e8(e) {
     sharedQuestFields: l
   } = e, c = eI({
     quest: o
-  }), u = null != s ? s : null == a ? void 0 : a.platform, d = c ? eD({
+  }), u = null != s ? s : null == a ? void 0 : a.platform, d = c ? ew({
     quest: o,
     idx: null !== (r = null == a ? void 0 : a.tier) && void 0 !== r ? r : null === (t = o.userStatus) || void 0 === t ? void 0 : t.claimedTier
   }) : null, f = null !== (i = null == d ? void 0 : null === (n = d.messages) || void 0 === n ? void 0 : n.redemptionInstructionsByPlatform) && void 0 !== i ? i : l.defaultRewardRedemptionInstructionsByPlatform;
@@ -813,12 +813,12 @@ function e9(e) {
     gameTitle: r,
     cosponsorName: i
   } = e;
-  return t ? null == i ? w.NW.formatToPlainString(w.t.Piihy8, {
+  return t ? null == i ? D.NW.formatToPlainString(D.t.Piihy8, {
     gamePublisher: n
-  }) : w.NW.formatToPlainString(w.t.DV47Gx, {
+  }) : D.NW.formatToPlainString(D.t.DV47Gx, {
     gamePublisher: n,
     cosponsorName: i
-  }) : w.NW.formatToPlainString(w.t.tOWwxM, {
+  }) : D.NW.formatToPlainString(D.t.tOWwxM, {
     gamePublisher: n,
     gameTitle: r
   })

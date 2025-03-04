@@ -38,7 +38,7 @@ function p(e) {
   return e
 }
 let h = f.layerContainer;
-class m extends i.Component {
+class g extends i.Component {
   componentWillUnmount() {
     this.state.layerContainerElement = null
   }
@@ -64,7 +64,7 @@ class m extends i.Component {
     }), _(this, "getContextValue", (0, u.oH)(e => [e, this.setLayerContainerElement]))
   }
 }
-let g = e => {
+let m = e => {
   let {
     layerContext: t,
     className: n
@@ -97,10 +97,10 @@ let b = e => {
 function y(e) {
   let t = i.createContext([null, () => {}]),
     n = {
-      LayerProvider: e => (0, r.jsx)(m, p({
+      LayerProvider: e => (0, r.jsx)(g, p({
         layerContext: t
       }, e)),
-      LayerContainer: e => (0, r.jsx)(g, p({
+      LayerContainer: e => (0, r.jsx)(m, p({
         layerContext: t
       }, e)),
       Layer: e => (0, r.jsx)(b, p({

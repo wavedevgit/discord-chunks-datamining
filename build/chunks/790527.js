@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(626135),
   p = n(74538),
   h = n(357355),
-  m = n(104494),
-  g = n(639119),
+  g = n(104494),
+  m = n(639119),
   E = n(165583),
   v = n(197115),
   b = n(302945),
@@ -51,8 +51,8 @@ function R(e) {
       title: C,
       type: R,
       guildBoostProps: P,
-      analyticsSource: w,
-      analyticsLocation: D,
+      analyticsSource: D,
+      analyticsLocation: w,
       body: L,
       context: x,
       glowUp: M,
@@ -86,22 +86,22 @@ function R(e) {
     } = e,
     ec = A(e, ["title", "type", "guildBoostProps", "analyticsSource", "analyticsLocation", "body", "context", "glowUp", "modalClassName", "modalContentClassName", "artContainerClassName", "headerClassName", "bodyClassName", "transitionState", "onClose", "onSubscribeClick", "onSubscribeFinish", "onSecondaryClick", "secondaryCTA", "subscribeButtonText", "showNewBadge", "enableArtBoxShadow", "subscriptionTier", "isLoading", "hideBackButton", "backButtonText", "showEnhancedUpsell", "useSubscribeButtonGradient", "subscribeButtonClassname", "hidePremiumOfferUpsell", "children", "LeadingComponent", "backgroundElements", "smallText", "footerClassName"]);
   let eu = null != P,
-    ed = (0, g.N)(),
-    ef = (0, m.Ng)(),
-    e_ = !er && ((null == ed ? void 0 : null === (t = ed.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === Q || (0, m.Wp)(ef, Q)) && !eu,
+    ed = (0, m.N)(),
+    ef = (0, g.Ng)(),
+    e_ = !er && ((null == ed ? void 0 : null === (t = ed.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === Q || (0, g.Wp)(ef, Q)) && !eu,
     {
       analyticsLocations: ep
     } = (0, d.ZP)(u.Z.PREMIUM_UPSELL_MODAL),
     eh = {
-      analyticsLocation: D,
+      analyticsLocation: w,
       analyticsLocations: ep,
-      analyticsSource: w,
+      analyticsSource: D,
       guildBoostProps: P,
       type: R
     },
-    em = i.useRef(eh);
+    eg = i.useRef(eh);
   i.useEffect(() => {
-    em.current = eh
+    eg.current = eh
   }), i.useEffect(() => {
     if (X) return;
     let {
@@ -110,7 +110,7 @@ function R(e) {
       analyticsSource: n,
       guildBoostProps: r,
       type: i
-    } = em.current;
+    } = eg.current;
     eu ? _.default.track(S.rMx.PREMIUM_GUILD_UPSELL_VIEWED, {
       type: "".concat(i, " - Tier ").concat(null == r ? void 0 : r.boostedGuildTier),
       guild_id: null == r ? void 0 : r.guild.id,
@@ -125,15 +125,15 @@ function R(e) {
       sku_id: (0, p.Wz)(Q)
     })
   }, [eu, Q, X]);
-  let eg = (0, s.e7)([h.Z], () => h.Z.affinities),
-    eE = eg.length > 1 && (0, y.Y)(R),
+  let em = (0, s.e7)([h.Z], () => h.Z.affinities),
+    eE = em.length > 1 && (0, y.Y)(R),
     ev = (0, s.e7)([h.Z], () => h.Z.hasFetched);
   i.useEffect(() => {
     ev || c.MH()
   }, [ev]);
   let eb = () => {
       if (eu) return (0, r.jsx)(f.Z, {
-        analyticsLocation: D,
+        analyticsLocation: w,
         guild: P.guild,
         onClose: F
       });
@@ -152,7 +152,7 @@ function R(e) {
       return (0, r.jsx)(v.Z, {
         className: en,
         showGradient: ee || et,
-        premiumModalAnalyticsLocation: D,
+        premiumModalAnalyticsLocation: w,
         subscriptionTier: Q,
         size: l.zxk.Sizes.SMALL,
         color: ee || et ? l.zxk.Colors.CUSTOM : l.zxk.Colors.GREEN,
@@ -189,7 +189,7 @@ function R(e) {
         subscriptionTier: null !== (o = null == ed ? void 0 : null === (n = ed.subscription_trial) || void 0 === n ? void 0 : n.sku_id) && void 0 !== o ? o : O.Si.TIER_2,
         headingText: C,
         context: x,
-        analyticsLocationObject: D,
+        analyticsLocationObject: w,
         discountOffer: ef,
         trialOffer: ed,
         children: M
@@ -204,7 +204,7 @@ function R(e) {
             variant: "heading-xl/bold",
             children: C
           }), eE ? (0, r.jsx)(b.Z, {
-            affinities: eg
+            affinities: em
           }) : void 0, ei, (0, r.jsx)(l.Text, {
             variant: es ? "text-sm/normal" : "text-md/normal",
             className: a()(B, T.subHeader),

@@ -42,7 +42,7 @@ let p = e => {
     nonce: p,
     demoMode: h
   } = e, {
-    current: m
+    current: g
   } = r.useRef(_({
     guild_id: n,
     emoji_id: t
@@ -52,6 +52,6 @@ let p = e => {
     (0, c.x)(u.qR.TrackOpenPopoutUsed), h || l.default.track(d.rMx.OPEN_POPOUT, _({
       type: null !== (e = null == f ? void 0 : f.analyticsType) && void 0 !== e ? e : "Standard Emoji Popout",
       nonce: p
-    }, m))
-  }), m
+    }, g))
+  }), g
 }

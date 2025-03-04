@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(592125),
   p = n(703558),
   h = n(496675),
-  m = n(944486),
-  g = n(585483),
+  g = n(944486),
+  m = n(585483),
   E = n(981631),
   v = n(689079),
   b = n(665692),
@@ -78,7 +78,7 @@ function A(e, t, n, i, o) {
     }, n, o);
     if (null != a && a.untranslatedName === t) {
       var d, f;
-      g.S.dispatch(E.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+      m.S.dispatch(E.CkL.FOCUS_CHANNEL_TEXT_AREA, {
         channelId: e
       });
       let t = null != u ? {
@@ -107,7 +107,7 @@ function A(e, t, n, i, o) {
     onConfirm: () => u(),
     confirmButtonColor: a.zxk.Colors.BRAND,
     onCloseCallback: () => {
-      g.S.dispatch(E.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+      m.S.dispatch(E.CkL.FOCUS_CHANNEL_TEXT_AREA, {
         channelId: e
       })
     }
@@ -125,31 +125,31 @@ function C(e) {
     node: n,
     output: s,
     state: p
-  } = e, g = (0, o.e7)([_.Z, m.Z], () => {
+  } = e, m = (0, o.e7)([_.Z, g.Z], () => {
     var e;
-    return _.Z.getChannel(null !== (e = n.channelId) && void 0 !== e ? e : m.Z.getChannelId())
+    return _.Z.getChannel(null !== (e = n.channelId) && void 0 !== e ? e : g.Z.getChannelId())
   }, [n.channelId]), {
     hasSendMessagePerm: y,
     hasUseAppCommandsPerm: O
   } = (0, o.cj)([h.Z], () => ({
-    hasSendMessagePerm: h.Z.can(E.Plq.SEND_MESSAGES, g),
-    hasUseAppCommandsPerm: h.Z.can(E.Plq.USE_APPLICATION_COMMANDS, g)
-  })), S = void 0 !== g ? {
+    hasSendMessagePerm: h.Z.can(E.Plq.SEND_MESSAGES, m),
+    hasUseAppCommandsPerm: h.Z.can(E.Plq.USE_APPLICATION_COMMANDS, m)
+  })), S = void 0 !== m ? {
     type: "channel",
-    channel: g
+    channel: m
   } : {
     type: "contextless"
   }, {
     command: I
   } = l.YZ(S, null !== (t = n.commandKey) && void 0 !== t ? t : ""), T = f.dN.useSetting(), N = i.useMemo(() => {
-    if (null == I || null == g || I.untranslatedName !== n.commandName || T) return !1;
-    let e = g.isPrivate();
-    if ((0, d.xl)(g) || !e && !y) return !1;
+    if (null == I || null == m || I.untranslatedName !== n.commandName || T) return !1;
+    let e = m.isPrivate();
+    if ((0, d.xl)(m) || !e && !y) return !1;
     let t = (null == I ? void 0 : I.applicationId) === v.bi.BUILT_IN;
     return !!e || !!t || !!O
-  }, [g, I, y, O, n.commandName, T]), C = i.useCallback(e => {
-    null == e || e.stopPropagation(), null != g && null != n.commandName && null != n.commandKey && A(g.id, n.commandName, n.commandKey, c.Vh.MENTION)
-  }, [g, n.commandKey, n.commandName]);
+  }, [m, I, y, O, n.commandName, T]), C = i.useCallback(e => {
+    null == e || e.stopPropagation(), null != m && null != n.commandName && null != n.commandKey && A(m.id, n.commandName, n.commandKey, c.Vh.MENTION)
+  }, [m, n.commandKey, n.commandName]);
   return N ? (0, r.jsx)(a.ua7, {
     text: n.output,
     position: "top",
@@ -178,7 +178,7 @@ function R(e) {
     commandDescription: i,
     applicationId: s,
     onClick: l
-  } = e, u = (0, o.e7)([m.Z], () => m.Z.getChannelId()), d = e => {
+  } = e, u = (0, o.e7)([g.Z], () => g.Z.getChannelId()), d = e => {
     null == e || e.stopPropagation(), A(u, n, t, c.Vh.POPULAR_COMMANDS, s), null == l || l(t)
   };
   return (0, r.jsx)(a.ua7, {

@@ -15,9 +15,9 @@ var r, i = n(442837),
   _ = n(709054),
   p = n(497089),
   h = n(178480),
-  m = n(981631);
+  g = n(981631);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -33,7 +33,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -132,7 +132,7 @@ function C(e) {
       user_ignored: l,
       origin_application_id: c
     } = e;
-    if (null == o || (l && r.add(o.id), i !== m.OGo.PENDING_INCOMING || s || l || null == a)) return null;
+    if (null == o || (l && r.add(o.id), i !== g.OGo.PENDING_INCOMING || s || l || null == a)) return null;
     let u = f.default.getUser(o.id);
     if (null == u) return null;
     let d = n ? c : void 0;
@@ -144,7 +144,7 @@ function C(e) {
       application_id: o,
       since: a
     } = e;
-    if (n !== m.OGo.PENDING_INCOMING || r.has(i)) return;
+    if (n !== g.OGo.PENDING_INCOMING || r.has(i)) return;
     let s = f.default.getUser(i);
     null != s && t.push((0, h.LF)(s, a, o))
   }), e.guilds.forEach(e => {
@@ -169,7 +169,7 @@ function P(e) {
   y.notifCenterIds.add(t.id), y.notifCenterItems = [t, ...y.notifCenterItems], y.notifCenterItems.sort((e, t) => _.default.compare(t.id, e.id))
 }
 
-function w(e) {
+function D(e) {
   let {
     id: t
   } = e;
@@ -177,7 +177,7 @@ function w(e) {
   y.notifCenterIds.delete(t), y.notifCenterItems = y.notifCenterItems.filter(e => e.id !== t)
 }
 
-function D(e, t) {
+function w(e, t) {
   y.notifCenterItems = y.notifCenterItems.map(n => e.includes(n.id) ? b(E({}, n), {
     acked: t
   }) : n).filter(O)
@@ -187,14 +187,14 @@ function L(e) {
   let {
     ids: t
   } = e;
-  D(t, !0)
+  w(t, !0)
 }
 
 function x(e) {
   let {
     ids: t
   } = e;
-  D(t, !1)
+  w(t, !1)
 }
 
 function M(e) {
@@ -232,7 +232,7 @@ function G(e) {
     since: l,
     originApplicationId: c
   } = t;
-  if (r === m.OGo.PENDING_INCOMING && !i && !o) {
+  if (r === g.OGo.PENDING_INCOMING && !i && !o) {
     if (null == l) return null;
     if (null != a) {
       let e = (0, s.r8)({
@@ -242,12 +242,12 @@ function G(e) {
       null != t && (y.notifCenterLocalItems = [...y.notifCenterLocalItems, (0, h.mH)(t, l, e)])
     }
   }
-  r !== m.OGo.FRIEND || null == t.user || o || (y.notifCenterLocalItems = y.notifCenterLocalItems.map(e => j(e, p.O7.INCOMING_FRIEND_REQUESTS, t.user.id) ? b(E({}, e), {
+  r !== g.OGo.FRIEND || null == t.user || o || (y.notifCenterLocalItems = y.notifCenterLocalItems.map(e => j(e, p.O7.INCOMING_FRIEND_REQUESTS, t.user.id) ? b(E({}, e), {
     acked: !0,
     forceUnacked: !1,
     local_id: "incoming_friend_requests_accepted_".concat(a.id, "_").concat(e.id),
     type: p.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED
-  }) : e)), (r === m.OGo.BLOCKED || o) && (y.notifCenterLocalItems = y.notifCenterLocalItems.filter(e => !j(e, p.O7.INCOMING_FRIEND_REQUESTS, n) && !j(e, p.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED, n) && !j(e, p.O7.INCOMING_GAME_FRIEND_REQUESTS, n) && !j(e, p.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, n)))
+  }) : e)), (r === g.OGo.BLOCKED || o) && (y.notifCenterLocalItems = y.notifCenterLocalItems.filter(e => !j(e, p.O7.INCOMING_FRIEND_REQUESTS, n) && !j(e, p.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED, n) && !j(e, p.O7.INCOMING_GAME_FRIEND_REQUESTS, n) && !j(e, p.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, n)))
 }
 
 function B(e) {
@@ -268,11 +268,11 @@ function V(e) {
     applicationId: o
   } = t;
   if (d.Z.isBlockedOrIgnored(n)) return !1;
-  if (r === m.OGo.PENDING_INCOMING) {
+  if (r === g.OGo.PENDING_INCOMING) {
     let e = f.default.getUser(n);
     null != i && null != e && (y.notifCenterLocalItems = [...y.notifCenterLocalItems, (0, h.LF)(e, i, o)])
   } else {
-    if (r !== m.OGo.FRIEND) return !1;
+    if (r !== g.OGo.FRIEND) return !1;
     y.notifCenterLocalItems = y.notifCenterLocalItems.map(e => U(e, p.O7.INCOMING_GAME_FRIEND_REQUESTS, n, o) ? b(E({}, e), {
       acked: !0,
       forceUnacked: !1,
@@ -377,7 +377,7 @@ class K extends(r = i.ZP.PersistedStore) {
     return y.notifCenterTabFocused
   }
 }
-g(K, "displayName", "NotificationCenterItemsStore"), g(K, "persistKey", "NotificationCenterItemsStore_v2");
+m(K, "displayName", "NotificationCenterItemsStore"), m(K, "persistKey", "NotificationCenterItemsStore_v2");
 let z = new K(o.Z, {
   CONNECTION_OPEN: C,
   LOGOUT: () => S(),
@@ -385,7 +385,7 @@ let z = new K(o.Z, {
   NOTIFICATION_CENTER_ITEMS_ACK_FAILURE: x,
   GUILD_SCHEDULED_EVENT_UPDATE: H,
   NOTIFICATION_CENTER_ITEM_CREATE: P,
-  NOTIFICATION_CENTER_ITEM_DELETE: w,
+  NOTIFICATION_CENTER_ITEM_DELETE: D,
   NOTIFICATION_CENTER_ITEM_DELETE_FAILURE: P,
   LOAD_NOTIFICATION_CENTER_ITEMS: T,
   LOAD_NOTIFICATION_CENTER_ITEMS_FAILURE: N,

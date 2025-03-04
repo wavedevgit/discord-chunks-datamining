@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -53,16 +53,16 @@ function h(e, t) {
   }), e
 }
 
-function m(e, t) {
+function g(e, t) {
   let f = (0, o.vRw)(),
     {
       videoEnabled: p,
-      hasVideoDevice: m
+      hasVideoDevice: g
     } = (0, i.cj)([c.Z], () => ({
       videoEnabled: c.Z.isVideoEnabled(),
       hasVideoDevice: c.Z.isVideoAvailable()
     })),
-    g = (0, i.e7)([l.default], () => l.default.getId() === e),
+    m = (0, i.e7)([l.default], () => l.default.getId() === e),
     E = (0, a.Z)(),
     {
       simplifiedSettingsEnabled: v
@@ -83,7 +83,7 @@ function m(e, t) {
       contextKey: null != t ? (0, o.VnL)(t) : f
     })
   }
-  return (!p || E) && g && m ? (0, r.jsx)(o.sNh, {
+  return (!p || E) && m && g ? (0, r.jsx)(o.sNh, {
     id: "change-video-background",
     label: (0, r.jsx)("div", {
       className: d.item,

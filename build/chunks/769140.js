@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(579630),
   p = n(100527),
   h = n(906732),
-  m = n(750881),
-  g = n(194082),
+  g = n(750881),
+  m = n(194082),
   E = n(318374),
   v = n(449605),
   b = n(102172),
@@ -31,8 +31,8 @@ var r = n(200651),
   C = n(699516),
   R = n(938475),
   P = n(626135),
-  w = n(960870),
-  D = n(139793),
+  D = n(960870),
+  w = n(139793),
   L = n(652853),
   x = n(336383),
   M = n(194811),
@@ -65,20 +65,20 @@ function z(e) {
   }, {
     enabled: $,
     analyticsEligible: ee
-  } = (0, m.R4)("user-profile-stream-activity-card-web"), et = (0, s.e7)([T.Z], () => T.Z.getGuild(null == o ? void 0 : o.guildId)), en = (0, s.e7)([I.Z], () => I.Z.getChannel(null == o ? void 0 : o.channelId)), er = (0, s.Wu)([R.ZP], () => null != en ? R.ZP.getVoiceStatesForChannel(en).map(e => {
+  } = (0, g.R4)("user-profile-stream-activity-card-web"), et = (0, s.e7)([T.Z], () => T.Z.getGuild(null == o ? void 0 : o.guildId)), en = (0, s.e7)([I.Z], () => I.Z.getChannel(null == o ? void 0 : o.channelId)), er = (0, s.Wu)([R.ZP], () => null != en ? R.ZP.getVoiceStatesForChannel(en).map(e => {
     let {
       user: t
     } = e;
     return t
   }) : []), ei = (0, s.e7)([A.Z], () => A.Z.findActivity(t.id, e => (0, f.Z)(e) && !(0, _.Z)(e))), {
     analyticsLocations: eo
-  } = (0, h.ZP)(p.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), ea = (0, w.Z)({
+  } = (0, h.ZP)(p.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), ea = (0, D.Z)({
     display: "live",
     voiceChannelId: null == en ? void 0 : en.id,
     user: t,
     stream: o,
     analyticsLocations: eo
-  }), es = (0, D.Z)({
+  }), es = (0, w.Z)({
     userId: t.id,
     onAction: ea
   }), {
@@ -93,14 +93,14 @@ function z(e) {
         discoverable: null === (e = o.discoverable) || void 0 === e || e,
         surface: "user-profile-stream-activity-card",
         relationship_type: e_,
-        treatment: $ && !1 === o.discoverable ? m.h9.HIDE : m.h9.SHOW
+        treatment: $ && !1 === o.discoverable ? g.h9.HIDE : g.h9.SHOW
       })
     }
   }, [t, e_, $, ee, o]);
   let ep = (0, d.Z)(ec ? null : el),
     eh = ec || null == el ? ep : el;
   if (null == et || null == en || $ && !1 === o.discoverable) return null;
-  let em = () => {
+  let eg = () => {
       let e = a()(W.preview, J),
         t = e => {
           e.stopPropagation(), ea({
@@ -152,7 +152,7 @@ function z(e) {
         })]
       })
     },
-    eg = () => {
+    em = () => {
       if (Q !== V.y0.FULL_SIZE) return null;
       let e = e => {
           e.stopPropagation(), null == ea || ea({
@@ -232,8 +232,8 @@ function z(e) {
         text: null != ei ? Z.NW.formatToPlainString(Z.t["4CQq9f"], {
           name: ei.name
         }) : Z.NW.string(Z.t["Jpkr/v"]),
-        tags: (0, r.jsx)(g.ZP, {
-          size: g.OH.SMALL
+        tags: (0, r.jsx)(m.ZP, {
+          size: m.OH.SMALL
         }),
         contextMenu: (0, r.jsx)(B.Z, {
           display: "live",
@@ -244,7 +244,7 @@ function z(e) {
         className: H.body,
         children: [(0, r.jsxs)("div", {
           className: a()(H.content, J),
-          children: [em(), eg(), Q === V.y0.FULL_SIZE && ev()]
+          children: [eg(), em(), Q === V.y0.FULL_SIZE && ev()]
         }), eE()]
       }), Q !== V.y0.FULL_SIZE && ev()]
     })

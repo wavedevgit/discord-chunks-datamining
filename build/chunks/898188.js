@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(592125),
   p = n(271383),
   h = n(526120),
-  m = n(734893),
-  g = n(655359),
+  g = n(734893),
+  m = n(655359),
   E = n(931261),
   v = n(216701),
   b = n(388032),
@@ -71,27 +71,27 @@ function T(e) {
   } = e, {
     channelAction: E,
     completed: v
-  } = (0, g.P3)(f, _), T = (0, g.K_)(f, null == E ? void 0 : E.channelId), N = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), A = (null == E ? void 0 : E.actionType) === m.oi.VIEW, C = (0, c.dQu)(c.TVs.colors.WHITE), [R, P] = i.useState(!1), [w] = i.useState(new s.Z.Value(0)), [D] = i.useState(new s.Z.Value(0));
+  } = (0, m.P3)(f, _), T = (0, m.K_)(f, null == E ? void 0 : E.channelId), N = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), A = (null == E ? void 0 : E.actionType) === g.oi.VIEW, C = (0, c.dQu)(c.TVs.colors.WHITE), [R, P] = i.useState(!1), [D] = i.useState(new s.Z.Value(0)), [w] = i.useState(new s.Z.Value(0));
   i.useEffect(() => {
-    v ? s.Z.timing(w, {
+    v ? s.Z.timing(D, {
       toValue: 0,
       duration: N ? 1 : 350,
       easing: s.Z.Easing.quad,
       delay: 500 * !A
-    }).start(() => P(!0)) : s.Z.timing(w, {
+    }).start(() => P(!0)) : s.Z.timing(D, {
       toValue: 1,
       duration: N ? 1 : 350,
       easing: s.Z.Easing.quad,
       delay: 400
     }).start()
-  }, [v, w, A, N]), i.useEffect(() => {
-    v && R && s.Z.timing(D, {
+  }, [v, D, A, N]), i.useEffect(() => {
+    v && R && s.Z.timing(w, {
       toValue: 1,
       duration: 350 * !N,
       easing: s.Z.Easing.quad,
       delay: 400
     }).start()
-  }, [v, D, R, N]);
+  }, [v, w, R, N]);
   let L = i.useCallback(() => {
     null != T && (0, h.gp)(f, T.channelId)
   }, [f, T]);
@@ -99,7 +99,7 @@ function T(e) {
     className: a()(y.container, p),
     children: R && null != T ? (0, r.jsx)(s.Z.div, {
       style: {
-        marginBottom: D.interpolate({
+        marginBottom: w.interpolate({
           inputRange: [0, 1],
           outputRange: [-O, 0]
         })
@@ -134,7 +134,7 @@ function T(e) {
     }) : (0, r.jsxs)(s.Z.div, {
       className: y.banner,
       style: {
-        marginBottom: w.interpolate({
+        marginBottom: D.interpolate({
           inputRange: [0, 1],
           outputRange: [-O, 0]
         })
@@ -175,7 +175,7 @@ function N(e) {
     var e;
     return (null === (e = p.ZP.getSelfMember(t)) || void 0 === e ? void 0 : e.isPending) === !0
   });
-  return (0, g.PE)(t) || a || !o ? null : (0, r.jsx)(T, {
+  return (0, m.PE)(t) || a || !o ? null : (0, r.jsx)(T, {
     guildId: t,
     channel: n,
     className: i

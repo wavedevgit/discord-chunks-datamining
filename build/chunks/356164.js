@@ -64,7 +64,7 @@ function h() {
   c.clear(), u.clear()
 }
 
-function m(e) {
+function g(e) {
   let {
     query: t,
     categoryId: n,
@@ -82,7 +82,7 @@ function m(e) {
   }).handleSearchStart()
 }
 
-function g(e) {
+function m(e) {
   let {
     query: t,
     categoryId: n,
@@ -159,8 +159,8 @@ class b extends(r = i.ZP.Store) {
 l(b, "displayName", "GlobalDiscoveryServersSearchResultsStore");
 let y = new b(o.Z, {
   CONNECTION_OPEN: h,
-  GLOBAL_DISCOVERY_SERVERS_SEARCH_START: m,
-  GLOBAL_DISCOVERY_SERVERS_SEARCH_SUCCESS: g,
+  GLOBAL_DISCOVERY_SERVERS_SEARCH_START: g,
+  GLOBAL_DISCOVERY_SERVERS_SEARCH_SUCCESS: m,
   GLOBAL_DISCOVERY_SERVERS_SEARCH_FAILURE: E,
   GLOBAL_DISCOVERY_SERVERS_SEARCH_CLEAR: v
 })

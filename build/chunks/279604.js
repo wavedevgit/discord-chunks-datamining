@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  K: () => c,
+  K: () => l,
   Z: () => d
 }), t(47120), t(773603);
 var r = t(200651),
@@ -9,7 +9,7 @@ var r = t(200651),
   a = t(713081),
   s = t(535396);
 
-function l(e) {
+function c(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       r = Object.keys(t);
@@ -28,14 +28,14 @@ function l(e) {
   return e
 }
 
-function c(e) {
+function l(e) {
   i.useEffect(() => {
     null != e && (0, o.showToast)((0, o.createToast)(e, o.ToastType.FAILURE))
   }, [e])
 }
 
 function d(e, n) {
-  let [c, d] = i.useState(!1), [u, x] = i.useState(void 0), p = i.useCallback(t => {
+  let [l, d] = i.useState(!1), [u, x] = i.useState(void 0), p = i.useCallback(t => {
     let r = t ? a.H6 : a.Th;
     return d(!0), x(void 0), r(e, n.skuId).catch(e => {
       var n;
@@ -43,27 +43,27 @@ function d(e, n) {
     }).finally(() => {
       d(!1)
     })
-  }, [e, n.skuId]), b = i.useCallback(e => (e.stopPropagation(), p(!0).then(() => {
+  }, [e, n.skuId]), v = i.useCallback(e => (e.stopPropagation(), p(!0).then(() => {
     (0, o.ZDy)(async () => {
       let {
         default: e
       } = await t.e("13965").then(t.bind(t, 666083));
-      return t => (0, r.jsx)(e, l({
+      return t => (0, r.jsx)(e, c({
         powerup: n
       }, t))
     })
-  })), [p, n]), v = i.useCallback(e => (e.stopPropagation(), p(!1)), [p]);
+  })), [p, n]), b = i.useCallback(e => (e.stopPropagation(), p(!1)), [p]);
   return {
-    isLoading: c,
+    isLoading: l,
     error: u,
-    onActivate: b,
-    onDeactivate: v,
+    onActivate: v,
+    onDeactivate: b,
     onShowDeactivate: i.useCallback(i => {
       i.stopPropagation(), (0, o.ZDy)(async () => {
         let {
           default: i
         } = await t.e("31924").then(t.bind(t, 625651));
-        return t => (0, r.jsx)(i, l({
+        return t => (0, r.jsx)(i, c({
           guildId: e,
           powerup: n
         }, t))
@@ -76,7 +76,7 @@ function d(e, n) {
             let {
               default: i
             } = await t.e("99014").then(t.bind(t, 271224));
-            return t => (0, r.jsx)(i, l({
+            return t => (0, r.jsx)(i, c({
               guildId: e,
               powerup: n
             }, t));
@@ -84,7 +84,7 @@ function d(e, n) {
             let {
               default: i
             } = await t.e("78718").then(t.bind(t, 640139));
-            return t => (0, r.jsx)(i, l({
+            return t => (0, r.jsx)(i, c({
               guildId: e,
               powerup: n
             }, t))

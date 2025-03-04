@@ -10,8 +10,8 @@ var u, d = n(392711),
   _ = n(442837),
   p = n(433517),
   h = n(570140),
-  m = n(703656),
-  g = n(131704),
+  g = n(703656),
+  m = n(131704),
   E = n(823379),
   v = n(314897),
   b = n(592125),
@@ -60,8 +60,8 @@ function P(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = "SelectedChannelStore",
-  D = 3e5,
+let D = "SelectedChannelStore",
+  w = 3e5,
   L = 6e4,
   x = {},
   M = {},
@@ -73,7 +73,7 @@ function U(e) {
 }
 
 function G() {
-  __OVERLAY__ || p.K.set(w, {
+  __OVERLAY__ || p.K.set(D, {
     selectedChannelId: o,
     selectedVoiceChannelId: s,
     lastChannelFollowingDestination: a,
@@ -82,7 +82,7 @@ function G() {
     mostRecentSelectedTextChannelIds: k,
     knownThreadIds: f()(x).values().concat(f().values(k)).filter(E.lm).uniq().filter(e => {
       let t = b.Z.getBasicChannel(e);
-      return j.has(e) || null != t && g.Ec.has(t.type)
+      return j.has(e) || null != t && m.Ec.has(t.type)
     }).value()
   })
 }
@@ -97,7 +97,7 @@ function B(e) {
 function V(e, t) {
   if (null == e || null == t || k[e] === t) return !1;
   let n = b.Z.getChannel(t),
-    r = null != n && (0, g.zi)(n.type),
+    r = null != n && (0, m.zi)(n.type),
     i = (null == n ? void 0 : n.getGuildId()) === e;
   return !!r && !!i && (k[e] = t, !0)
 }
@@ -118,7 +118,7 @@ function Z() {
   }), f().each(t, e => {
     let t = x[e.id];
     null == k[e.id] && V(e.id, t)
-  }), null != l && Date.now() - l >= D && (s = null, e = !0), e
+  }), null != l && Date.now() - l >= w && (s = null, e = !0), e
 }
 
 function H(e) {
@@ -161,7 +161,7 @@ function q(e, t) {
   }
   let n = null != O.Z.getGuild(t) ? t : null,
     r = !1;
-  s === e && (s = null, r = !0), x[U(n)] === e && (x[U(n)] = B(U(n)), I.Z.getGuildId() === n && (0, m.dL)(T.Z5c.CHANNEL(t, x[U(n)])), r = !0), null != n && k[n] === e && (delete k[n], r = !0), r && G()
+  s === e && (s = null, r = !0), x[U(n)] === e && (x[U(n)] = B(U(n)), I.Z.getGuildId() === n && (0, g.dL)(T.Z5c.CHANNEL(t, x[U(n)])), r = !0), null != n && k[n] === e && (delete k[n], r = !0), r && G()
 }
 
 function Q(e) {
@@ -237,7 +237,7 @@ function et(e) {
 }
 
 function en() {
-  x = {}, o = null, i = void 0, k = {}, a = {}, s = null, p.K.remove(w)
+  x = {}, o = null, i = void 0, k = {}, a = {}, s = null, p.K.remove(D)
 }
 
 function er(e) {
@@ -256,7 +256,7 @@ class ei extends(u = _.ZP.Store) {
   initialize() {
     if (!__OVERLAY__) {
       var e, t;
-      let n = null !== (e = p.K.get(w)) && void 0 !== e ? e : {
+      let n = null !== (e = p.K.get(D)) && void 0 !== e ? e : {
         selectedChannelId: o,
         selectedVoiceChannelId: s,
         lastChannelFollowingDestination: a,

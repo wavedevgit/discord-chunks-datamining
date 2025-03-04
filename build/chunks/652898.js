@@ -47,13 +47,13 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function g(e) {
+function m(e) {
   let t = null;
   if (null != e && null != e.channel) {
     let n = e.channel;
@@ -68,7 +68,7 @@ function v(e, t, n) {
       invite_code: e
     }), E.has(e)) return E.get(e);
   let a = (0, u.fU)(e),
-    d = m(p({}, n), {
+    d = g(p({}, n), {
       with_counts: !0,
       with_expiration: !0,
       guild_scheduled_event_id: a.guildScheduledEventId,
@@ -99,7 +99,7 @@ function v(e, t, n) {
             size_total: null == _ ? void 0 : _.approximate_member_count,
             size_online: null == _ ? void 0 : _.approximate_presence_count,
             destination_user_id: null == _ ? void 0 : null === (d = _.target_user) || void 0 === d ? void 0 : d.id,
-            invite_type: g(_),
+            invite_type: m(_),
             user_banned: p
           })
         }
@@ -120,7 +120,7 @@ function v(e, t, n) {
         size_total: i.approximate_member_count,
         size_online: i.approximate_presence_count,
         destination_user_id: null != i.target_user ? i.target_user.id : null,
-        invite_type: g(i)
+        invite_type: m(i)
       }, {
         flush: !0
       }), {

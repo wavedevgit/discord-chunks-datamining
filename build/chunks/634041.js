@@ -50,8 +50,8 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = !1,
-  g = null,
+let g = !1,
+  m = null,
   E = !1,
   v = {};
 
@@ -99,11 +99,11 @@ function T(e) {
   let {
     settings: t
   } = e;
-  o.TO.CAMERA_BACKGROUND_LIVE in t && (m = !0)
+  o.TO.CAMERA_BACKGROUND_LIVE in t && (g = !0)
 }
 
 function N() {
-  g !== c.Z.getVoiceChannelId() && (E = !1), S() && (E = !0), g = c.Z.getVoiceChannelId()
+  m !== c.Z.getVoiceChannelId() && (E = !1), S() && (E = !0), m = c.Z.getVoiceChannelId()
 }
 class A extends(r = i.ZP.Store) {
   initialize() {
@@ -113,7 +113,7 @@ class A extends(r = i.ZP.Store) {
     return v
   }
   get hasBeenApplied() {
-    return m
+    return g
   }
   get hasUsedBackgroundInCall() {
     return E

@@ -2,11 +2,11 @@
 "use strict";
 n.d(t, {
   $w: () => E,
-  Bh: () => m,
+  Bh: () => g,
   Gx: () => b,
   TA: () => _,
   V$: () => h,
-  g5: () => g,
+  g5: () => m,
   i7: () => v,
   rD: () => u,
   sd: () => d
@@ -60,7 +60,7 @@ function h(e) {
   return null == e ? "None" : u(e) ? "Custom" : "blur" === e ? "Blur" : "Preset - ".concat(p(e))
 }
 
-function m(e, t, n) {
+function g(e, t, n) {
   let s = o.Z.getGuildId(),
     l = o.Z.getChannelId(),
     u = i.Z.getChannel(l),
@@ -81,7 +81,7 @@ function m(e, t, n) {
   })
 }
 
-function g(e, t, n) {
+function m(e, t, n) {
   a.default.track(c.rMx.VIDEO_BACKGROUND_ADDED, {
     is_animated: f(e),
     is_video: t,

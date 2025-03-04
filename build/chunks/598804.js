@@ -16,15 +16,15 @@ var r = n(200651),
   _ = n(430824),
   p = n(496675),
   h = n(594174),
-  m = n(74538),
-  g = n(710111),
+  g = n(74538),
+  m = n(710111),
   E = n(231338),
   v = n(414291);
 let b = 4;
 
 function y(e) {
-  let t = (0, s.e7)([h.default], () => m.ZP.canUseSoundboardEverywhere(h.default.getCurrentUser())),
-    n = (0, s.e7)([u.Z], () => u.Z.getSoundsForGuild(g.X8)),
+  let t = (0, s.e7)([h.default], () => g.ZP.canUseSoundboardEverywhere(h.default.getCurrentUser())),
+    n = (0, s.e7)([u.Z], () => u.Z.getSoundsForGuild(m.X8)),
     r = (0, s.Wu)([_.Z], () => _.Z.getGuildIds()),
     o = i.useMemo(() => p.Z.can(E.Pl.USE_EXTERNAL_SOUNDS, e), [e]);
   return i.useMemo(() => {

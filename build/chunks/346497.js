@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   Vi: () => C,
-  W1: () => D,
-  k: () => w,
+  W1: () => w,
+  k: () => D,
   l2: () => P
 });
 var r = n(913527),
@@ -19,8 +19,8 @@ var r = n(913527),
   _ = n(937579),
   p = n(436783),
   h = n(617799),
-  m = n(61196),
-  g = n(104494),
+  g = n(61196),
+  m = n(104494),
   E = n(639119),
   v = n(921022),
   b = n(748770),
@@ -66,13 +66,13 @@ function C() {
     promotion: n
   } = (0, y.mq)(), {
     enabled: r
-  } = (0, m.ZP)(), {
+  } = (0, g.ZP)(), {
     mostRecentSubscription: i,
     premiumSubscription: a
   } = (0, o.cj)([u.ZP], () => ({
     mostRecentSubscription: u.ZP.getMostRecentPremiumTypeSubscription(),
     premiumSubscription: u.ZP.getPremiumTypeSubscription()
-  })), l = (0, E.N)(), c = (0, g.Ng)(), d = new Date(null !== (e = null == n ? void 0 : n.endDate) && void 0 !== e ? e : 0).valueOf(), f = Date.now(), _ = f > d, {
+  })), l = (0, E.N)(), c = (0, m.Ng)(), d = new Date(null !== (e = null == n ? void 0 : n.endDate) && void 0 !== e ? e : 0).valueOf(), f = Date.now(), _ = f > d, {
     enabled: b
   } = (0, p.Z)();
   (0, v.Z)({
@@ -107,7 +107,7 @@ async function R() {
     }),
     {
       enabled: i
-    } = (0, m.aW)(),
+    } = (0, g.aW)(),
     {
       enabled: o
     } = h.Z.getCurrentConfig({
@@ -129,13 +129,13 @@ async function P() {
   let e = O.Z.bogoPromotion;
   !(null != e && new Date(e.endDate).valueOf() >= Date.now()) && await (0, b.L9)()
 }
-async function w() {
+async function D() {
   let e = O.Z.bogoPromotion,
     t = null != e && new Date(e.endDate).valueOf() >= Date.now() && new Date(e.startDate).valueOf() <= Date.now(),
     n = await R(),
     {
       enabled: r
-    } = m.Am.getCurrentConfig({
+    } = g.Am.getCurrentConfig({
       location: "153d31_6"
     }, {
       autoTrackExposure: !1
@@ -150,7 +150,7 @@ async function w() {
   return t && i && r && n
 }
 
-function D() {
+function w() {
   switch (l.default.locale) {
     case "de":
     case "es-ES":

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -52,13 +52,13 @@ function h(e, t) {
   }), e
 }
 
-function m(e) {
+function g(e) {
   let {
     user: t,
     location: f = "ContextMenu",
     onFriendRequestSent: p,
-    onFriendRemove: m,
-    appContext: g
+    onFriendRemove: g,
+    appContext: m
   } = e, {
     id: E,
     username: v,
@@ -83,7 +83,7 @@ function m(e) {
         onConfirm: () => {
           s.Z.removeFriend(E, {
             location: f
-          }), N(!1), null == m || m()
+          }), N(!1), null == g || g()
         }
       }, t), {
         children: (0, r.jsx)(a.Text, {
@@ -94,7 +94,7 @@ function m(e) {
         })
       }))
     }, {
-      contextKey: null != g ? (0, a.VnL)(g) : void 0
+      contextKey: null != m ? (0, a.VnL)(m) : void 0
     })
   }
   if (S) return (0, r.jsx)(a.sNh, {

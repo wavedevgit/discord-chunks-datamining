@@ -17,8 +17,8 @@ var i = n(496532),
   _ = n(533122),
   p = n(874706),
   h = n(137411),
-  m = n(775101),
-  g = n(933632),
+  g = n(775101),
+  m = n(933632),
   E = n(158188),
   v = n(66334),
   b = n(215635),
@@ -84,7 +84,7 @@ let P = e => {
         primaryTintColor: n
       }, R));
     case T.ZD.SKULL:
-      return (0, r.jsx)(m.F, A({
+      return (0, r.jsx)(g.F, A({
         primaryTintColor: n
       }, R));
     case T.ZD.TOADSTOOL:
@@ -148,7 +148,7 @@ let P = e => {
         secondaryTintColor: N
       }, R));
     case T.ZD.SMOKE:
-      return (0, r.jsx)(g.l, A({
+      return (0, r.jsx)(m.l, A({
         primaryTintColor: n,
         secondaryTintColor: N
       }, R));

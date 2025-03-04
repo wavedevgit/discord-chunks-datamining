@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => w
+  Z: () => D
 });
 var i, o = n(442837),
   a = n(544891),
@@ -35,8 +35,8 @@ function p(e) {
   return e
 }
 let h = 10 * c.Z.Millis.SECOND,
-  m = 1.5 * c.Z.Millis.SECOND,
-  g = 5,
+  g = 1.5 * c.Z.Millis.SECOND,
+  m = 5,
   E = {},
   v = Object.freeze({});
 
@@ -55,7 +55,7 @@ function y(e) {
     o = .8 * h;
   if (null != r && (null != r.timeout || r.prevSend + o > i)) return !1;
   let c = setTimeout(() => {
-    if (null != r && r.channelId === t && n === u.default.getId() && null != r.timeout) r.timeout = null, !(R(t) > g) && a.tn.post({
+    if (null != r && r.channelId === t && n === u.default.getId() && null != r.timeout) r.timeout = null, !(R(t) > m) && a.tn.post({
       url: f.ANM.TYPING(t),
       oldFormErrors: !0,
       rejectWithError: !0
@@ -77,7 +77,7 @@ function y(e) {
         })
       }
     })
-  }, null == r || r.prevSend > i - 2 * o ? m : 0);
+  }, null == r || r.prevSend > i - 2 * o ? g : 0);
   return r = {
     channelId: t,
     timeout: c,
@@ -162,7 +162,7 @@ class P extends(i = o.ZP.Store) {
   }
 }
 _(P, "displayName", "TypingStore");
-let w = new P(s.Z, {
+let D = new P(s.Z, {
   TYPING_START: T,
   TYPING_STOP: N,
   TYPING_START_LOCAL: y,

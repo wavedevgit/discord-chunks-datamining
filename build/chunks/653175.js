@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(570140),
   i = n(367907),
@@ -43,7 +43,7 @@ let h = (e, t) => p({
     duration: u.Z.getDuration(),
     media_session_id: u.Z.getMediaSessionId()
   }, (0, i.kO)(u.Z.getGuildId(), u.Z.getChannelId(), t)),
-  m = () => {
+  g = () => {
     var e;
     let t = (0, o.P)(f.default.getCurrentUser());
     return {
@@ -54,13 +54,13 @@ let h = (e, t) => p({
     }
   };
 
-function g(e, t, n, i) {
+function m(e, t, n, i) {
   let o = d.Z.getVoiceChannelId(),
     s = l.Z.getChannel(o);
   if (null == t && null != o && null != s) {
     let t = h(s, i);
     if (e(), a.Z.hasUsedBackgroundInCall) {
-      let e = p({}, t, m());
+      let e = p({}, t, g());
       r.Z.dispatch({
         type: "VIDEO_BACKGROUND_SHOW_FEEDBACK",
         analyticsData: e

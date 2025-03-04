@@ -34,8 +34,8 @@ var r = n(200651),
   _ = n(481060),
   p = n(70956),
   h = n(823379),
-  m = n(709054),
-  g = n(719247),
+  g = n(709054),
+  m = n(719247),
   E = n(26033),
   v = n(22211),
   b = n(561308),
@@ -86,7 +86,7 @@ function R(e, t) {
 
 function P(e, t) {
   if (null == e) return {};
-  var n, r, i = w(e, t);
+  var n, r, i = D(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -94,14 +94,14 @@ function P(e, t) {
   return i
 }
 
-function w(e, t) {
+function D(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let D = {
+let w = {
   [c.s.TOP_ARTIST]: [K],
   [c.s.PLAYED_GAME]: [G, B, U, q, F, W, z, H, Z],
   [c.s.TOP_GAME]: [Y],
@@ -229,7 +229,7 @@ function V(e) {
     defaultTextColor: o,
     defaultIconColor: a,
     location: s
-  } = M(), l = (0, b.Jg)(n) && (0, h.Hi)(s, [0, 4]), c = l ? _.TVs.colors.TEXT_POSITIVE : a, u = l ? "text-positive" : o, d = (0, f.e7)([g.Z], () => g.Z.getMatchingActivity(n)), p = null == d ? void 0 : null === (t = d.timestamps) || void 0 === t ? void 0 : t.start;
+  } = M(), l = (0, b.Jg)(n) && (0, h.Hi)(s, [0, 4]), c = l ? _.TVs.colors.TEXT_POSITIVE : a, u = l ? "text-positive" : o, d = (0, f.e7)([m.Z], () => m.Z.getMatchingActivity(n)), p = null == d ? void 0 : null === (t = d.timestamps) || void 0 === t ? void 0 : t.start;
   return null != p ? (0, r.jsxs)("div", {
     className: T.badgeContainer,
     children: [(0, r.jsx)(_.aXf, {
@@ -384,7 +384,7 @@ function q(e) {
     location: n
   } = M();
   if (3 === n) return null;
-  let i = m.default.extractTimestamp(t.extra.application_id);
+  let i = g.default.extractTimestamp(t.extra.application_id);
   return l()().diff(l()(i), "days") > S.G ? null : (0, r.jsx)(j, {
     Icon: _.rIT,
     text: I.NW.string(I.t.vYuyWV)
@@ -457,23 +457,23 @@ function J(e) {
 function $(e) {
   switch (e.content_type) {
     case c.s.TOP_ARTIST:
-      return D[e.content_type].map((t, n) => (0, r.jsx)(t, {
+      return w[e.content_type].map((t, n) => (0, r.jsx)(t, {
         entry: e
       }, n));
     case c.s.PLAYED_GAME:
-      return D[e.content_type].map((t, n) => (0, r.jsx)(t, {
+      return w[e.content_type].map((t, n) => (0, r.jsx)(t, {
         entry: e
       }, n));
     case c.s.TOP_GAME:
-      return D[e.content_type].map((t, n) => (0, r.jsx)(t, {
+      return w[e.content_type].map((t, n) => (0, r.jsx)(t, {
         entry: e
       }, n));
     case c.s.WATCHED_MEDIA:
-      return D[e.content_type].map((t, n) => (0, r.jsx)(t, {
+      return w[e.content_type].map((t, n) => (0, r.jsx)(t, {
         entry: e
       }, n));
     case c.s.LAUNCHED_ACTIVITY:
-      return D[e.content_type].map((t, n) => (0, r.jsx)(t, {
+      return w[e.content_type].map((t, n) => (0, r.jsx)(t, {
         entry: e
       }, n));
     default:

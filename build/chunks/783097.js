@@ -10,14 +10,14 @@ n.d(t, {
   Wx: () => I,
   X: () => V,
   XZ: () => j,
-  Y$: () => D,
+  Y$: () => w,
   Yn: () => k,
   jD: () => A,
   lf: () => P,
   pF: () => U,
   sl: () => L,
   vJ: () => R,
-  yJ: () => w,
+  yJ: () => D,
   ye: () => C
 }), n(266796), n(789020), n(627494), n(757143), n(301563), n(653041), n(47120);
 var r = n(912370),
@@ -33,8 +33,8 @@ var r = n(912370),
   _ = n(541099),
   p = n(827498),
   h = n(981631),
-  m = n(689079),
-  g = n(388032);
+  g = n(689079),
+  m = n(388032);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -93,19 +93,19 @@ function S(e, t) {
   return i
 }
 let I = {
-  id: m.bi.BUILT_IN
+  id: g.bi.BUILT_IN
 };
 
 function T(e) {
-  return e.id !== m.bi.BUILT_IN
+  return e.id !== g.bi.BUILT_IN
 }
 
 function N(e) {
-  return T(e) ? e.name : g.NW.string(g.t.UB2gGx)
+  return T(e) ? e.name : m.NW.string(m.t.UB2gGx)
 }
 
 function A(e) {
-  return T(e) ? e.description : g.NW.string(g.t.X9fusr)
+  return T(e) ? e.description : m.NW.string(m.t.X9fusr)
 }
 
 function C(e) {
@@ -123,11 +123,11 @@ function P(e) {
   return T(e) && (0, f.yE)(null !== (t = e.flags) && void 0 !== t ? t : 0, h.udG.PROMOTED)
 }
 
-function w(e) {
+function D(e) {
   return T(e) && C(e) ? e instanceof c.ZP ? e.embeddedActivityConfig : e.embedded_activity_config : null
 }
 
-function D(e) {
+function w(e) {
   let {
     command: t,
     optionValues: n,
@@ -157,9 +157,9 @@ function D(e) {
       }
     } catch (e) {
       throw i.Z.show({
-        title: g.NW.string(g.t["aHO//v"]),
-        body: g.NW.string(g.t.kuzKHB),
-        confirmText: g.NW.string(g.t["5911LS"]),
+        title: m.NW.string(m.t["aHO//v"]),
+        body: m.NW.string(m.t.kuzKHB),
+        confirmText: m.NW.string(m.t["5911LS"]),
         onConfirm: () => h()
       }), e
     }
@@ -182,8 +182,8 @@ function L(e) {
     description: e.description
   } : {
     iconURL: null != n ? n : null,
-    name: g.NW.string(g.t.UB2gGx),
-    description: g.NW.string(g.t.X9fusr)
+    name: m.NW.string(m.t.UB2gGx),
+    description: m.NW.string(m.t.X9fusr)
   }
 }
 
@@ -192,7 +192,7 @@ function x(e) {
 }
 
 function M(e) {
-  let t = w(e);
+  let t = D(e);
   return null != t && t.displays_advertisements
 }
 

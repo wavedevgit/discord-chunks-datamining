@@ -15,7 +15,7 @@ var o, a = n(442837),
   p = n(981631),
   h = n(65154);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,14 +24,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -54,7 +54,7 @@ function T(e, t) {
       channelId: t
     });
   return o.on(l.z.State, (e, t, n) => {
-    s.Z.wait(() => s.Z.dispatch(g({
+    s.Z.wait(() => s.Z.dispatch(m({
       type: "RTC_CONNECTION_STATE",
       state: e
     }, t, n)))
@@ -171,11 +171,11 @@ function P(e) {
   r.connect(e.endpoint, e.token)
 }
 
-function w() {
+function D() {
   v = null
 }
 
-function D() {
+function w() {
   b = null
 }
 
@@ -329,7 +329,7 @@ class Z extends(o = a.ZP.Store) {
     return null == t ? void 0 : t.get(e)
   }
 }
-m(Z, "displayName", "RTCConnectionStore");
+g(Z, "displayName", "RTCConnectionStore");
 let H = new Z(s.Z, __OVERLAY__ ? {} : {
   CONNECTION_OPEN: A,
   CONNECTION_CLOSED: C,
@@ -344,9 +344,9 @@ let H = new Z(s.Z, __OVERLAY__ ? {} : {
   VOICE_STATE_UPDATES: R,
   VOICE_CHANNEL_SELECT: k,
   VOICE_SERVER_UPDATE: P,
-  CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: w,
-  REMOTE_SESSION_CONNECT: w,
-  CLEAR_LAST_SESSION_VOICE_CHANNEL_ID: D,
+  CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: D,
+  REMOTE_SESSION_CONNECT: D,
+  CLEAR_LAST_SESSION_VOICE_CHANNEL_ID: w,
   GUILD_DELETE: L,
   CHANNEL_DELETE: M,
   THREAD_DELETE: M,

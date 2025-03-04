@@ -51,7 +51,7 @@ function p(e, t) {
 
 function h(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -59,14 +59,14 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let g = {
+let m = {
     VERTICAL: c.flexVertical,
     HORIZONTAL: c.flexHorizontal,
     HORIZONTAL_REVERSE: c.flexHorizontalReverse
@@ -106,7 +106,7 @@ class O extends(r = a.PureComponent) {
         wrap: d
       } = e,
       _ = h(e, ["children", "className", "shrink", "grow", "basis", "style", "wrap"]),
-      m = f({
+      g = f({
         style: f({
           flexGrow: i,
           flexShrink: r,
@@ -116,9 +116,9 @@ class O extends(r = a.PureComponent) {
       }, _);
     if (!d && "string" != typeof t && 1 === a.Children.count(t)) {
       let e = a.Children.only(t);
-      return m.style = f({}, m.style, e.props.style), m.className = l()(e.props.className, n), a.cloneElement(e, m)
+      return g.style = f({}, g.style, e.props.style), g.className = l()(e.props.className, n), a.cloneElement(e, g)
     }
-    return (0, o.jsx)("div", p(f({}, m), {
+    return (0, o.jsx)("div", p(f({}, g), {
       children: t
     }))
   }
@@ -141,25 +141,25 @@ class S extends(i = a.PureComponent) {
         shrink: c,
         grow: d,
         basis: _,
-        style: m,
-        gutter: g
+        style: g,
+        gutter: m
       } = e,
       E = h(e, ["children", "className", "direction", "justify", "align", "wrap", "shrink", "grow", "basis", "style", "gutter"]),
       v = f({
         flexShrink: c,
         flexGrow: d,
         flexBasis: _
-      }, m);
+      }, g);
     return (0, o.jsx)("div", p(f({
       style: v,
-      className: l()(u.flex, r, i, a, s, g, n)
+      className: l()(u.flex, r, i, a, s, m, n)
     }, E), {
       children: t
     }))
   }
 }
-d(S, "Child", O), d(S, "Direction", g), d(S, "Align", b), d(S, "Justify", E), d(S, "Wrap", v), d(S, "Gutter", y), d(S, "defaultProps", {
-  direction: g.HORIZONTAL,
+d(S, "Child", O), d(S, "Direction", m), d(S, "Align", b), d(S, "Justify", E), d(S, "Wrap", v), d(S, "Gutter", y), d(S, "defaultProps", {
+  direction: m.HORIZONTAL,
   justify: E.START,
   align: b.STRETCH,
   wrap: v.WRAP,

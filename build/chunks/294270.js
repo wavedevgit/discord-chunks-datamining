@@ -24,9 +24,9 @@ function _(e, t, n) {
 }
 let p = 15 * c.Z.Millis.SECOND,
   h = 15 * c.Z.Millis.SECOND,
-  m = 550,
-  g = ["\uD83C\uDDE9", "\uD83C\uDDF4", "\uD83C\uDDF9", "\uD83C\uDDE6"],
-  E = g.length,
+  g = 550,
+  m = ["\uD83C\uDDE9", "\uD83C\uDDF4", "\uD83C\uDDF9", "\uD83C\uDDE6"],
+  E = m.length,
   v = function(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
     return "".concat(e, ":").concat(t, ":").concat(n)
@@ -45,7 +45,7 @@ function T(e) {
   } = e, o = l.default.getId(), a = d.Z.getEnabled();
   if (null != t) {
     if (a && (0, f.Z)(t.name)) return A(t.name, r, n);
-    r === o && (y = [...y, t.name].slice(-1 * E), i().isEqual(y, g) ? (S.play(), b.stop(), y = [], (0, u.ME)(!a)) : b.start(p, () => y = []))
+    r === o && (y = [...y, t.name].slice(-1 * E), i().isEqual(y, m) ? (S.play(), b.stop(), y = [], (0, u.ME)(!a)) : b.start(p, () => y = []))
   }
 }
 
@@ -55,7 +55,7 @@ function N(e) {
     waitingUserId: n,
     channelId: r
   } = e, i = v("".concat(t).concat(n), r, !0);
-  O[i] = new o.sW(m, () => {
+  O[i] = new o.sW(g, () => {
     delete O[i], (0, u.hu)(t, n, r)
   }), O[i].delay()
 }

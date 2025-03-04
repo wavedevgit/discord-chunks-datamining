@@ -38,7 +38,7 @@ function h(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -90,7 +90,7 @@ function O(e) {
     innerClassName: i,
     childClassName: o,
     iconClassName: p,
-    icon: m,
+    icon: g,
     children: E,
     onClick: O,
     isActive: S,
@@ -101,11 +101,11 @@ function O(e) {
     pulse: C,
     sparkle: R,
     notification: P,
-    "aria-label": w,
-    "aria-expanded": D,
+    "aria-label": D,
+    "aria-expanded": w,
     "aria-haspopup": L,
     "aria-controls": x
-  } = e, M = (0, u.Q3)("ChannelTextAreaButton"), k = (0, l.Yzy)(null != E, g(h({}, y), {
+  } = e, M = (0, u.Q3)("ChannelTextAreaButton"), k = (0, l.Yzy)(null != E, m(h({}, y), {
     keys: e => e ? "children" : "icon"
   })), j = e => {
     let {
@@ -127,8 +127,8 @@ function O(e) {
   return (0, r.jsxs)(l.zxk, {
     look: l.zxk.Looks.BLANK,
     size: l.zxk.Sizes.NONE,
-    "aria-label": w,
-    "aria-expanded": D,
+    "aria-label": D,
+    "aria-expanded": w,
     "aria-haspopup": L,
     "aria-controls": x,
     disabled: n,
@@ -159,11 +159,11 @@ function O(e) {
         children: j({
           component: E
         })
-      }, i) : null != m ? (0, r.jsx)(s.animated.div, {
+      }, i) : null != g ? (0, r.jsx)(s.animated.div, {
         style: e,
         className: a()(_.buttonWrapper, o),
         children: j({
-          component: (0, r.jsx)(m, {
+          component: (0, r.jsx)(g, {
             className: a()(_.icon, p, {
               [_.pulseIcon]: C
             }),

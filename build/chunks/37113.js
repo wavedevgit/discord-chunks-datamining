@@ -8,9 +8,9 @@ n.d(t, {
   aW: () => s,
   af: () => v,
   k0: () => E,
-  km: () => g,
+  km: () => m,
   no: () => d,
-  o6: () => m,
+  o6: () => g,
   tI: () => c,
   ws: () => l,
   z8: () => h
@@ -168,10 +168,10 @@ function _(e, t) {
 }
 let p = [_(720), _(1080), _(1440), _(0, () => o.NW.string(o.t.XjXqzs))],
   h = [_(720), _(1080), _(1440)],
-  m = e => 0 === e ? o.NW.string(o.t.XjXqzs) : o.NW.formatToPlainString(o.t.TEOC0N, {
+  g = e => 0 === e ? o.NW.string(o.t.XjXqzs) : o.NW.formatToPlainString(o.t.TEOC0N, {
     resolution: e
   }),
-  g = [_(480, () => m(480)), _(720, () => m(720)), _(1080, () => m(1080)), _(1440, () => m(1440)), _(0, () => m(0))],
+  m = [_(480, () => g(480)), _(720, () => g(720)), _(1080, () => g(1080)), _(1440, () => g(1440)), _(0, () => g(0))],
   E = [_(15), _(30), _(60)],
   v = [_(15, () => o.NW.formatToPlainString(o.t["bW+JCQ"], {
     value: 15

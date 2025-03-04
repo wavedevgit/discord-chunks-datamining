@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => w
+  Z: () => D
 }), n(47120);
 var i, o = n(442837),
   a = n(570140),
@@ -23,8 +23,8 @@ let u = new Map,
   _ = new Set,
   p = new Map,
   h = new Map,
-  m = null,
-  g = !1,
+  g = null,
+  m = !1,
   E = e => {
     d.add(e.skuId)
   },
@@ -52,7 +52,7 @@ let u = new Map,
     f.add(e.skuId)
   },
   N = e => {
-    m = e.previousGoLiveSettings
+    g = e.previousGoLiveSettings
   },
   A = e => {
     p.delete(e.skuId)
@@ -69,14 +69,14 @@ let u = new Map,
     }
   },
   R = e => {
-    g = e.enabled
+    m = e.enabled
   };
 class P extends(i = o.ZP.Store) {
   get lastConfetti() {
     return r
   }
   get confettiMode() {
-    return g
+    return m
   }
   getPrice(e) {
     return u.get(e)
@@ -100,11 +100,11 @@ class P extends(i = o.ZP.Store) {
     return f.has(e)
   }
   getPreviousGoLiveSettings() {
-    return m
+    return g
   }
 }
 c(P, "displayName", "ConsumablesStore");
-let w = new P(a.Z, {
+let D = new P(a.Z, {
   CONSUMABLES_PRICE_FETCH_STARTED: E,
   CONSUMABLES_PRICE_FETCH_SUCCEEDED: v,
   CONSUMABLES_PRICE_FETCH_FAILED: b,

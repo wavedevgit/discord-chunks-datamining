@@ -66,7 +66,7 @@ function h(e) {
   }), (t.isDefault || 1 === Object.keys(d).length) && (f = t.id)
 }
 
-function m(e) {
+function g(e) {
   let {
     id: t
   } = e;
@@ -76,7 +76,7 @@ function m(e) {
   }
 }
 
-function g() {
+function m() {
   d = {}, f = null, _ = !1
 }
 class E extends(r = i.ZP.Store) {
@@ -109,6 +109,6 @@ let v = new E(o.Z, {
   BILLING_PAYMENT_SOURCE_UPDATE_SUCCESS: h,
   BILLING_PAYMENT_SOURCE_FETCH_SUCCESS: h,
   BILLING_PAYMENT_SOURCES_FETCH_SUCCESS: p,
-  BILLING_PAYMENT_SOURCE_REMOVE_SUCCESS: m,
-  LOGOUT: g
+  BILLING_PAYMENT_SOURCE_REMOVE_SUCCESS: g,
+  LOGOUT: m
 })

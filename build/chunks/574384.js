@@ -20,18 +20,18 @@ function f(e) {
     selectedChannelId: f,
     onChannelChange: _,
     error: p
-  } = e, [h, m] = i.useState(null), g = i.useRef(!1);
+  } = e, [h, g] = i.useState(null), m = i.useRef(!1);
   if (i.useEffect(() => {
       async function e(e) {
         let t = await (0, l.UR)(e);
-        n === e && (t.sort((e, t) => e.name.localeCompare(t.name)), m({
+        n === e && (t.sort((e, t) => e.name.localeCompare(t.name)), g({
           guildId: e,
           channels: t
-        }), g.current = !0)
+        }), m.current = !0)
       }
-      m(null), null == n ? _(null) : e(n)
+      g(null), null == n ? _(null) : e(n)
     }, [_, n]), i.useEffect(() => {
-      g.current && (null == h ? null != f && _(null) : h.channels.some(e => e.id === f) || _(null))
+      m.current && (null == h ? null != f && _(null) : h.channels.some(e => e.id === f) || _(null))
     }, [h, _, f, n]), null == n) return null;
   let E = null == h || h.guildId !== n ? [] : (null !== (t = null == h ? void 0 : h.channels) && void 0 !== t ? t : []).map(e => ({
     value: e.id,

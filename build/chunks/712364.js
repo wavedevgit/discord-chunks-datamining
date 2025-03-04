@@ -32,9 +32,9 @@ class f extends(r = o.PureComponent) {
       transitionState: _,
       helpMessage: p,
       retryPrompt: h,
-      retrySuccessMessage: m
+      retrySuccessMessage: g
     } = this.props, {
-      code: g,
+      code: m,
       errorMessage: E,
       retrySuccess: v
     } = this.state, b = o.Children.count(r) > 0 ? (0, i.jsx)(l.Zbd, {
@@ -59,7 +59,7 @@ class f extends(r = o.PureComponent) {
       className: u.card,
       children: (0, i.jsx)(l.Text, {
         variant: "text-md/normal",
-        children: m
+        children: g
       })
     }) : null;
     return (0, i.jsx)(l.Y0X, {
@@ -86,7 +86,7 @@ class f extends(r = o.PureComponent) {
               onChange: this.handleCodeChange,
               placeholder: null !== (e = this.getPlaceholder()) && void 0 !== e ? e : void 0,
               maxLength: null != f ? f : 10,
-              value: g,
+              value: m,
               autoComplete: "one-time-code",
               autoFocus: !0
             }), this.errorPresent() ? (0, i.jsx)(l.Text, {
@@ -99,7 +99,7 @@ class f extends(r = o.PureComponent) {
         }), (0, i.jsxs)(l.mzw, {
           children: [(0, i.jsx)(l.zxk, {
             type: "submit",
-            disabled: d || 0 === g.length,
+            disabled: d || 0 === m.length,
             children: null != n ? n : c.NW.string(c.t["cY+Ooa"])
           }), (0, i.jsx)(l.zxk, {
             onClick: this.handleCancel,

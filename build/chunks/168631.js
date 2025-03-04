@@ -7,7 +7,7 @@ n.d(t, {
   e4: () => v,
   fq: () => _,
   lM: () => b,
-  wu: () => g
+  wu: () => m
 }), n(47120);
 var r = n(192379),
   i = n(392711),
@@ -53,7 +53,7 @@ function h(e, t, n) {
   return [Math.round(e[0] * i + t[0] * r), Math.round(e[1] * i + t[1] * r), Math.round(e[2] * i + t[2] * r)]
 }
 
-function m(e, t) {
+function g(e, t) {
   let n = (0, o.px)(e);
   if (null == t) return 0;
   let r = d.Z.parseString(t);
@@ -65,9 +65,9 @@ function m(e, t) {
   return (0, o.QT)("rgba(".concat(l, ", ").concat(c, ", ").concat(u, ")"))
 }
 
-function g(e, t, n) {
+function m(e, t, n) {
   let r = _(e);
-  return null == r || null == t ? null : m(t, n ? r.overlaySyncedWithUserTheme : r.overlay)
+  return null == r || null == t ? null : g(t, n ? r.overlaySyncedWithUserTheme : r.overlay)
 }
 let E = (0, i.memoize)(e => {
   let t = (0, l.Qg)(e, {
@@ -79,7 +79,7 @@ let E = (0, i.memoize)(e => {
 
 function v(e, t) {
   let n = _(e);
-  return null != n && null != t ? m(t, null == n ? void 0 : n.messageInputBorder) : null
+  return null != n && null != t ? g(t, null == n ? void 0 : n.messageInputBorder) : null
 }
 
 function b(e, t) {

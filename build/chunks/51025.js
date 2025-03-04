@@ -5,7 +5,7 @@ n.d(t, {
   LO: () => b,
   S1: () => E,
   Wx: () => P,
-  XT: () => w,
+  XT: () => D,
   al: () => C,
   cG: () => y,
   li: () => S,
@@ -28,8 +28,8 @@ var r = n(544891),
   _ = n(830168),
   p = n(57513),
   h = n(981631),
-  m = n(388032);
-let g = 64;
+  g = n(388032);
+let m = 64;
 
 function E(e, t) {
   _.Z.init({
@@ -177,7 +177,7 @@ function P(e, t) {
   null != n && f.Z.createShortcuts(l.Xc.getSetting(), l.Pe.getSetting(), n.name, n.id, t.installPath)
 }
 
-function w(e, t) {
+function D(e, t) {
   let i = o.Z.getApplication(e);
   r.tn.post({
     url: h.ANM.LIBRARY_APPLICATION_INSTALLED(e, e),
@@ -187,7 +187,7 @@ function w(e, t) {
     let {
       default: t
     } = e;
-    t.showNotification(i.getIconURL(g), m.NW.string(m.t["1wR7yM"]), m.NW.formatToPlainString(m.t["89VAgY"], {
+    t.showNotification(i.getIconURL(m), g.NW.string(g.t["1wR7yM"]), g.NW.formatToPlainString(g.t["89VAgY"], {
       name: i.name
     }), {
       notif_type: "Game Library Game Installed"

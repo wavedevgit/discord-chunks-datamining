@@ -25,7 +25,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function m(e) {
   }
   return e
 }
-let g = +f.Z.Millis.MINUTE;
+let m = +f.Z.Millis.MINUTE;
 class E extends i.Z {
   _initialize() {
     __OVERLAY__ ? this.stores = new Map : (this.stores = new Map().set(u.Z, () => this._handleSpeakingStoreChanged()).set(l.Z, () => this._handleRTCConnectionStoreChanged()), this._reset())
@@ -49,7 +49,7 @@ class E extends i.Z {
     if (this._currentUserSpeaking) {
       let e = l.Z.getChannelId(),
         t = l.Z.getGuildId();
-      (0, _.yw)(p.rMx.START_SPEAKING, m({
+      (0, _.yw)(p.rMx.START_SPEAKING, g({
         mode: s.Z.getMode(),
         priority: u.Z.isCurrentUserPrioritySpeaking(),
         channel: e,
@@ -66,7 +66,7 @@ class E extends i.Z {
     if (s.Z.isDeaf() || !this._anyoneElseSpeaking) return;
     let e = l.Z.getChannelId(),
       t = l.Z.getGuildId();
-    (0, _.yw)(p.rMx.START_LISTENING, m({
+    (0, _.yw)(p.rMx.START_LISTENING, g({
       mute: s.Z.isMute(),
       anyone_priority: u.Z.isAnyonePrioritySpeaking(),
       channel: e,
@@ -99,7 +99,7 @@ class E extends i.Z {
           this._reset();
           return
         }
-        null == this._reportInterval && (this._reportInterval = new r.Xp, this._reportInterval.start(g, () => {
+        null == this._reportInterval && (this._reportInterval = new r.Xp, this._reportInterval.start(m, () => {
           this._trackStartSpeaking(), this._trackStartListening()
         }))
       }

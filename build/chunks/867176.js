@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(313201),
   p = n(279745),
   h = n(695346),
-  m = n(451478),
-  g = n(768581),
+  g = n(451478),
+  m = n(768581),
   E = n(28660),
   v = n(462997),
   b = n(43498);
@@ -102,15 +102,15 @@ function C(e) {
     bannerWidth: C,
     bannerHeight: R,
     themePadding: P,
-    animateOnHover: w = !1
-  } = e, D = (0, _.Dt)(), [L, x] = i.useState(!1), M = (0, l.e7)([m.Z], () => m.Z.isFocused()), k = h.QK.getSetting(), {
+    animateOnHover: D = !1
+  } = e, w = (0, _.Dt)(), [L, x] = i.useState(!1), M = (0, l.e7)([g.Z], () => g.Z.isFocused()), k = h.QK.getSetting(), {
     bannerSrc: j,
     status: U
   } = (0, E.Z)({
     displayProfile: o,
     pendingBanner: y,
     size: C,
-    canAnimate: w || !k ? L : M
+    canAnimate: D || !k ? L : M
   }), G = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), B = n.getAvatarURL(v, (0, u.pxk)(I)), V = (0, s._i)((0, d.ZP)(B, G, !1)), F = (0, f.Z)(null !== (t = null == o ? void 0 : o.primaryColor) && void 0 !== t ? t : V).hex, Z = A(I), H = Z + T - P, W = R - N - P;
   return (0, r.jsxs)("svg", {
     className: b.mask,
@@ -120,7 +120,7 @@ function C(e) {
       minHeight: R
     },
     children: [(0, r.jsxs)("mask", {
-      id: D,
+      id: w,
       children: [(0, r.jsx)("rect", {
         fill: "white",
         x: "0",
@@ -139,7 +139,7 @@ function C(e) {
       width: "100%",
       height: "100%",
       overflow: "visible",
-      mask: "url(#".concat(D, ")"),
+      mask: "url(#".concat(w, ")"),
       children: [O, (0, r.jsxs)("div", {
         className: a()(b.banner, S),
         onMouseMove: () => x(!0),
@@ -150,7 +150,7 @@ function C(e) {
           backgroundImage: null != j ? "url(".concat(j, ")") : void 0,
           backgroundColor: "COMPLETE" !== U ? c.Z.unsafe_rawColors.PRIMARY_800.css : F
         },
-        children: [!k && (0, g.F8)(j) && (0, r.jsx)(p.Z, {
+        children: [!k && (0, m.F8)(j) && (0, r.jsx)(p.Z, {
           className: b.gifTag
         }), O]
       })]

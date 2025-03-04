@@ -16,9 +16,9 @@ var r = n(512722),
   _ = n(364458),
   p = n(70956),
   h = n(40786),
-  m = n(362092);
+  g = n(362092);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,7 +34,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -254,7 +254,7 @@ let N = {
     codeBlockSyntax: {
       order: s.defaultRules.inlineCode.order - .1,
       match: e => /^(```)([a-z0-9_+\-.#]+$)?/.exec(e),
-      parse: e => null != e[2] && "" !== e[2] && m.i6(e[2]) ? [{
+      parse: e => null != e[2] && "" !== e[2] && g.i6(e[2]) ? [{
         type: "codeBlockSyntax",
         content: e[1],
         originalMatch: e
@@ -273,14 +273,14 @@ let N = {
   C = (0, _.Z)([S, N]),
   R = (0, _.Z)([I, N]),
   P = l._p(C),
-  w = l._p(R),
-  D = {
+  D = l._p(R),
+  w = {
     max: 1 / 0,
     maxAge: +p.Z.Millis.MINUTE,
     updateAgeOnGet: !0
   },
-  L = new(a())(D),
-  x = new(a())(D);
+  L = new(a())(w),
+  x = new(a())(w);
 
 function M(e, t, n) {
   let r = [],
@@ -290,7 +290,7 @@ function M(e, t, n) {
       guildId: t,
       isSlate: !0
     },
-    o = n ? w : P,
+    o = n ? D : P,
     a = n ? x : L,
     s = a.get(e);
   if (null != s) return s;
@@ -311,7 +311,7 @@ function M(e, t, n) {
 function k(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-    i = m.rN(e);
+    i = g.rN(e);
   if (i.push(e.length), 1 === i.length && n) return [];
   let o = 0,
     a = n,
@@ -325,7 +325,7 @@ function k(e, t) {
     });
     else {
       let a = n === i[i.length - 2] ? e.substring(n + 3) : "";
-      n += 3 + (null != a.match(m.Q2) ? a : "").length;
+      n += 3 + (null != a.match(g.Q2) ? a : "").length;
       let l = e.substring(o, n);
       "" !== l && M(l, t, r).forEach(e => {
         s.push(b(E({}, e), {

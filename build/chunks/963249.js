@@ -17,8 +17,8 @@ var i = n(97613),
   _ = n(619067),
   p = n(594174),
   h = n(626135),
-  m = n(585483),
-  g = n(74538),
+  g = n(585483),
+  m = n(74538),
   E = n(981631),
   v = n(474936);
 
@@ -91,8 +91,8 @@ function N(e) {
     analyticsLocation: C,
     analyticsSourceLocation: R,
     confirmationFooter: P,
-    planSelectBanner: w,
-    isGift: D = !1,
+    planSelectBanner: D,
+    isGift: w = !1,
     giftMessage: L,
     giftStyle: x,
     giftingOrigin: M,
@@ -107,7 +107,7 @@ function N(e) {
     subscription: H,
     skipConfirm: W,
     repeatPurchase: Y
-  } = null != e ? e : {}, K = !1, z = (0, a.Z)(), q = p.default.getCurrentUser(), Q = (0, g.M5)(q, v.p9.TIER_2), X = o()("payment-modal"), J = (0, g.Wz)(k);
+  } = null != e ? e : {}, K = !1, z = (0, a.Z)(), q = p.default.getCurrentUser(), Q = (0, m.M5)(q, v.p9.TIER_2), X = o()("payment-modal"), J = (0, m.Wz)(k);
   return (0, s.ZDy)(async () => {
     let {
       default: e
@@ -120,7 +120,7 @@ function N(e) {
         loadId: z,
         subscriptionTier: k,
         skuId: J,
-        isGift: D,
+        isGift: w,
         giftMessage: L,
         giftStyle: x,
         giftingOrigin: M,
@@ -128,13 +128,13 @@ function N(e) {
         initialPlanId: t,
         followupSKUInfo: i,
         onClose: (e, t) => {
-          o(), null == b || b(e), e && (null == T || T(), (0, _.I)(D, Q, t) && m.S.dispatch(E.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
+          o(), null == b || b(e), e && (null == T || T(), (0, _.I)(w, Q, t) && g.S.dispatch(E.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
             type: "PREMIUM_PAYMENT_MODAL_CLOSE",
             didSucceed: e
           })
         },
         onComplete: e => {
-          K = !0, null == O || O(), (0, _.I)(D, Q, (0, g.k5)(null == e ? void 0 : e.subscription)) && (0, f.H)(!0)
+          K = !0, null == O || O(), (0, _.I)(w, Q, (0, m.k5)(null == e ? void 0 : e.subscription)) && (0, f.H)(!0)
         },
         onSubscriptionConfirmation: T,
         analyticsLocations: N,
@@ -142,7 +142,7 @@ function N(e) {
         analyticsLocation: C,
         analyticsSourceLocation: R,
         confirmationFooter: P,
-        planSelectBanner: w,
+        planSelectBanner: D,
         trialId: j,
         postSuccessGuild: U,
         planGroup: v.Y1,
@@ -164,7 +164,7 @@ function N(e) {
         location: null != C ? C : A,
         source: R,
         subscription_type: E.NYc.PREMIUM,
-        is_gift: D,
+        is_gift: w,
         sku_id: J,
         eligible_for_trial: null != j,
         application_id: B,

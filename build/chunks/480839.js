@@ -13,13 +13,13 @@ var r = n(161581),
   _ = l.aTypedArray,
   p = l.exportTypedArrayMethod,
   h = r.Uint16Array,
-  m = h && i(h.prototype.sort),
-  g = !!m && !(o(function() {
-    m(new h(2), null)
+  g = h && i(h.prototype.sort),
+  m = !!g && !(o(function() {
+    g(new h(2), null)
   }) && o(function() {
-    m(new h(2), {})
+    g(new h(2), {})
   })),
-  E = !!m && !o(function() {
+  E = !!g && !o(function() {
     if (d) return d < 74;
     if (c) return c < 67;
     if (u) return !0;
@@ -27,7 +27,7 @@ var r = n(161581),
     var e, t, n = new h(516),
       r = Array(516);
     for (e = 0; e < 516; e++) t = e % 4, n[e] = 515 - e, r[e] = e - 2 * t + 3;
-    for (m(n, function(e, t) {
+    for (g(n, function(e, t) {
         return (e / 4 | 0) - (t / 4 | 0)
       }), e = 0; e < 516; e++)
       if (n[e] !== r[e]) return !0
@@ -38,5 +38,5 @@ var r = n(161581),
     }
   };
 p("sort", function(e) {
-  return (void 0 !== e && a(e), E) ? m(this, e) : s(_(this), v(e))
-}, !E || g)
+  return (void 0 !== e && a(e), E) ? g(this, e) : s(_(this), v(e))
+}, !E || m)

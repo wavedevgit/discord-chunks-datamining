@@ -18,8 +18,8 @@ var r = n(392711),
   _ = n(70956),
   p = n(709054),
   h = n(798681),
-  m = n(981631),
-  g = n(65154);
+  g = n(981631),
+  m = n(65154);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,7 +59,7 @@ class C extends o.Z {
   }
   shouldReceiveFromUser(e) {
     var t, n;
-    let r = !((null === (t = this.connection) || void 0 === t ? void 0 : t.getLocalVideoDisabled(e)) || this.userVideoDisabled(e) && (null === (n = this.videoHealthManager) || void 0 === n ? void 0 : n.getCurrentVideoToggleState(e)) !== m.ZUi.AUTO_PROBING);
+    let r = !((null === (t = this.connection) || void 0 === t ? void 0 : t.getLocalVideoDisabled(e)) || this.userVideoDisabled(e) && (null === (n = this.videoHealthManager) || void 0 === n ? void 0 : n.getCurrentVideoToggleState(e)) !== g.ZUi.AUTO_PROBING);
     return h.w.isIncomingVideoEnabled() && r
   }
   getAudioSSRCs() {
@@ -146,7 +146,7 @@ class C extends o.Z {
     return this.isStageChannel ? T : I
   }
   getSimulcastOverrideQuality(e) {
-    return this.simulcastDebugOverrides.has(e) ? this.simulcastDebugOverrides.get(e) : g.Z.NO_OVERRIDE
+    return this.simulcastDebugOverrides.has(e) ? this.simulcastDebugOverrides.get(e) : m.Z.NO_OVERRIDE
   }
   constructor(e, t, n, r = new s.x) {
     var o;
@@ -208,7 +208,7 @@ class C extends o.Z {
         } else
           for (let e of i) a[e.ssrc] = b;
         let p = o.getSimulcastOverrideQuality(t);
-        for (let e of (p === g.Z.HIGH ? a[_] = v : p === g.Z.LOW && (a[_] = 50), o.supportsSeamless && u || (s = [_]), i)) s.includes(e.ssrc) || delete o.framesReceived[e.ssrc];
+        for (let e of (p === m.Z.HIGH ? a[_] = v : p === m.Z.LOW && (a[_] = 50), o.supportsSeamless && u || (s = [_]), i)) s.includes(e.ssrc) || delete o.framesReceived[e.ssrc];
         (n.includes(t) || void 0 !== o.remoteVideoSsrcs[t] && !(0, l.Z)(o.remoteVideoSsrcs[t], s)) && (o.remoteVideoSsrcs[t] = [...s], o.emit("user-ssrc-update", t, o.audioSsrcs[t], s))
       }
       for (let [e, n] of Object.entries(o.audioSsrcs))(null === (t = o.connection) || void 0 === t ? void 0 : t.getLocalMute(e)) && (a[n] = 0);

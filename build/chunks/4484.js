@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => D
+  Z: () => w
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(541716),
   p = n(91313),
   h = n(53529),
-  m = n(288897),
-  g = n(925994),
+  g = n(288897),
+  m = n(925994),
   E = n(436660),
   v = n(887490),
   b = n(194625),
@@ -31,12 +31,12 @@ var r = n(200651),
   C = n(657198),
   R = n(321127),
   P = n(981631),
-  w = n(140660);
-let D = i.forwardRef(function(e, t) {
+  D = n(140660);
+let w = i.forwardRef(function(e, t) {
   let {
     value: n,
     type: o,
-    channel: D,
+    channel: w,
     className: L,
     id: x,
     disabled: M,
@@ -72,7 +72,7 @@ let D = i.forwardRef(function(e, t) {
     "aria-describedby": ed,
     "aria-labelledby": ef,
     "aria-autocomplete": e_
-  } = e, ep = i.useRef(null), eh = i.useRef(null), em = i.useRef(!0), eg = i.useRef(!0), eE = M || k, ev = i.useCallback((e, t, n) => {
+  } = e, ep = i.useRef(null), eh = i.useRef(null), eg = i.useRef(!0), em = i.useRef(!0), eE = M || k, ev = i.useCallback((e, t, n) => {
     var r;
     let {
       value: i,
@@ -81,10 +81,10 @@ let D = i.forwardRef(function(e, t) {
     if (void 0 !== i && i !== a) {
       if (e.children = i, "parent" === t && !e.previewMarkdown && e.chatInputType === _.Ie.EDIT) {
         try {
-          e.previewMarkdown = !0, (0, A.KH)(e, D.guild_id, D.id)
+          e.previewMarkdown = !0, (0, A.KH)(e, w.guild_id, w.id)
         } finally {
           e.previewMarkdown = !1
-        }(0, A.KH)(e, D.guild_id, D.id), o = void 0
+        }(0, A.KH)(e, w.guild_id, w.id), o = void 0
       }
       "undo" !== t && void 0 !== i && i !== a && h.T.insertEntry(e, "other", !1, a, s), l = !0
     }
@@ -102,21 +102,21 @@ let D = i.forwardRef(function(e, t) {
       null != t && (t.selection = o), l = !0
     }
     let d = p.cr(e);
-    if (null != d && d[0].command.id !== (null === (r = c.Z.getActiveCommand(D.id)) || void 0 === r ? void 0 : r.id) && h.T.withMergedEntry(e, () => {
-        (0, N.L)(e, D.id, null, !0)
+    if (null != d && d[0].command.id !== (null === (r = c.Z.getActiveCommand(w.id)) || void 0 === r ? void 0 : r.id) && h.T.withMergedEntry(e, () => {
+        (0, N.L)(e, w.id, null, !0)
       }), l) {
       if ("parent" === t) try {
-        eg.current = !1, e.onChange()
+        em.current = !1, e.onChange()
       } finally {
-        eg.current = !0
+        em.current = !0
       } else e.onChange()
     }
-  }, [D.id, D.guild_id, en]), eb = i.useCallback(() => {
-    em.current = !1
+  }, [w.id, w.guild_id, en]), eb = i.useCallback(() => {
+    eg.current = !1
   }, []), ey = i.useCallback(() => {
-    em.current = !0
+    eg.current = !0
   }, []), eO = (0, y.Z)({
-    channel: D,
+    channel: w,
     chatInputType: o,
     canUseCommands: ee,
     canOnlyUseTextCommands: et,
@@ -124,15 +124,15 @@ let D = i.forwardRef(function(e, t) {
     onChangeEnd: ey,
     updateState: ev
   }), eS = i.useCallback((e, t) => {
-    let n = p.tM(eO, e, D.id),
-      r = p.lk(e, D.guild_id, D.id, n, t);
+    let n = p.tM(eO, e, w.id),
+      r = p.lk(e, w.guild_id, w.id, n, t);
     return {
       values: n,
       results: r
     }
-  }, [D.guild_id, D.id, eO]), eI = i.useCallback(() => {
+  }, [w.guild_id, w.id, eO]), eI = i.useCallback(() => {
     let e;
-    let t = ee ? c.Z.getActiveCommand(D.id) : null;
+    let t = ee ? c.Z.getActiveCommand(w.id) : null;
     if (null != t && null != t.options) {
       let i = eS(t, !1);
       e = i.values;
@@ -156,18 +156,18 @@ let D = i.forwardRef(function(e, t) {
         return
       }
     }
-    null == q || q((0, g.sk)(v.bN.richValue(eO), {
+    null == q || q((0, m.sk)(v.bN.richValue(eO), {
       mode: "raw",
       ignoreTrailingEmptyNodes: !0
     }), t, e)
-  }, [D.id, eO, q, eS, ee]);
-  (0, O.Z)(t, eO, D, eI), (0, T.Z)(eO, ep, F);
+  }, [w.id, eO, q, eS, ee]);
+  (0, O.Z)(t, eO, w, eI), (0, T.Z)(eO, ep, F);
   let {
     handleKeyDown: eT,
     handleKeyUp: eN
   } = (0, S.Z)({
     editor: eO,
-    channel: D,
+    channel: w,
     disableEnterToSubmit: er,
     onKeyDown: W,
     onKeyUp: Y,
@@ -183,24 +183,24 @@ let D = i.forwardRef(function(e, t) {
   } = (0, I.Z)(eO, eE, V), eR = i.useCallback(e => {
     null == Q || Q()
   }, [Q]), eP = i.useCallback(e => {
-    e !== eh.current ? eg.current && (null == B || B(null, (0, g.sk)(e, {
+    e !== eh.current ? em.current && (null == B || B(null, (0, m.sk)(e, {
       mode: "raw"
-    }), e)) : eg.current && Q()
+    }), e)) : em.current && Q()
   }, [Q, B]);
   i.useLayoutEffect(() => {
-    em.current && (eh.current = n, ev(eO, "parent", {
+    eg.current && (eh.current = n, ev(eO, "parent", {
       value: n
     }))
   }, [eO, n, ev]), i.useEffect(() => {
     let e = () => {
       var e;
-      let t = null !== (e = c.Z.getActiveCommand(D.id)) && void 0 !== e ? e : null;
+      let t = null !== (e = c.Z.getActiveCommand(w.id)) && void 0 !== e ? e : null;
       null !== t && null != t.options && eS(t, !0)
     };
     return u.Z.addChangeListener(e), () => u.Z.removeChangeListener(e)
-  }, [D, eO, eS]);
-  let ew = i.useCallback((e, t) => (0, b.Z)(e, t), []),
-    eD = i.useCallback(e => (0, C.Z)(eO, e, D.id), [D.id, eO]),
+  }, [w, eO, eS]);
+  let eD = i.useCallback((e, t) => (0, b.Z)(e, t), []),
+    ew = i.useCallback(e => (0, C.Z)(eO, e, w.id), [w.id, eO]),
     eL = i.useCallback(e => (0, R.Z)(e), []);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.d9, {
@@ -208,13 +208,13 @@ let D = i.forwardRef(function(e, t) {
       handler: eC
     }), (0, r.jsx)("div", {
       ref: ep,
-      className: a()(L, w.slateContainer),
-      children: (0, r.jsx)(m.Z, {
+      className: a()(L, D.slateContainer),
+      children: (0, r.jsx)(g.Z, {
         id: x,
         editor: eO,
-        channelId: D.id,
-        guildId: D.guild_id,
-        className: a()(w.slateTextArea, G),
+        channelId: w.id,
+        guildId: w.guild_id,
+        className: a()(D.slateTextArea, G),
         placeholder: j,
         readOnly: eE,
         spellCheck: $,
@@ -227,8 +227,8 @@ let D = i.forwardRef(function(e, t) {
         onPaste: eA,
         onKeyDown: eT,
         onKeyUp: eN,
-        decorateExtra: ew,
-        renderExtraElement: eD,
+        decorateExtra: eD,
+        renderExtraElement: ew,
         renderExtraLeaf: eL,
         "aria-owns": eo,
         "aria-haspopup": es,

@@ -23,13 +23,13 @@ function _(e) {
     iconSize: o,
     className: _,
     animate: p
-  } = e, h = (0, s.e7)([c.Z], () => c.Z.isFocused()), m = (0, u.pU)(i) ? i : u.ZP.getGuildIconURL({
+  } = e, h = (0, s.e7)([c.Z], () => c.Z.isFocused()), g = (0, u.pU)(i) ? i : u.ZP.getGuildIconURL({
     id: t,
     icon: i,
     size: o,
     canAnimate: p && h
   });
-  if (null == m) {
+  if (null == g) {
     let e = (0, d.Zg)(n);
     return (0, r.jsx)(l.ZP, {
       mask: l.ZP.Masks.CLAN_ICON,
@@ -48,7 +48,7 @@ function _(e) {
     height: o,
     className: _,
     children: (0, r.jsx)("img", {
-      src: m,
+      src: g,
       alt: n,
       className: f.guildIconImage
     })

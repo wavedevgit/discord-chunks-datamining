@@ -86,13 +86,13 @@ var _ = function(e) {
           p = this._tension * (this._toValue - n) - this._friction * r;
         n = e + _ * u / 2;
         var h = r = t + p * u / 2,
-          m = this._tension * (this._toValue - n) - this._friction * r;
+          g = this._tension * (this._toValue - n) - this._friction * r;
         n = e + h * u / 2;
-        var g = r = t + m * u / 2,
+        var m = r = t + g * u / 2,
           E = this._tension * (this._toValue - n) - this._friction * r;
-        n = e + h * u / 2, r = t + m * u / 2;
-        var v = (f + 2 * (p + m) + E) / 6;
-        e += (d + 2 * (_ + h) + g) / 6 * u, t += v * u
+        n = e + h * u / 2, r = t + g * u / 2;
+        var v = (f + 2 * (p + g) + E) / 6;
+        e += (d + 2 * (_ + h) + m) / 6 * u, t += v * u
       }
       if (this._lastTime = o, this._lastPosition = e, this._lastVelocity = t, this._onUpdate(e), this.__active) {
         var b = !1;

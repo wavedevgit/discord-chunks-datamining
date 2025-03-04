@@ -22,11 +22,11 @@ function s(e, t) {
     h = p ? d ? i.bw : i.bw.filter(function(e) {
       return (0, r.Z)(e) === p
     }) : i.mv,
-    m = h.filter(function(e) {
+    g = h.filter(function(e) {
       return _.indexOf(e) >= 0
     });
-  0 === m.length && (m = h);
-  var g = m.reduce(function(t, n) {
+  0 === g.length && (g = h);
+  var m = g.reduce(function(t, n) {
     return t[n] = (0, o.Z)(e, {
       placement: n,
       boundary: l,
@@ -34,7 +34,7 @@ function s(e, t) {
       padding: u
     })[(0, a.Z)(n)], t
   }, {});
-  return Object.keys(g).sort(function(e, t) {
-    return g[e] - g[t]
+  return Object.keys(m).sort(function(e, t) {
+    return m[e] - m[t]
   })
 }

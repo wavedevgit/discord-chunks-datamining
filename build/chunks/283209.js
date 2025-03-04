@@ -68,22 +68,22 @@ var r = n(192379),
         };
         return s()(a.current, e) ? a.current || e : (a.current = e, e)
       }, [u.onFirstUpdate, u.placement, u.strategy, u.modifiers, p]),
-      m = r.useRef();
+      g = r.useRef();
     return (0, l.LI)(function() {
-      m.current && m.current.setOptions(h)
+      g.current && g.current.setOptions(h)
     }, [h]), (0, l.LI)(function() {
       if (null != e && null != t) {
         var r = (n.createPopper || o.fi)(e, t, h);
-        return m.current = r,
+        return g.current = r,
           function() {
-            r.destroy(), m.current = null
+            r.destroy(), g.current = null
           }
       }
     }, [e, t, n.createPopper]), {
-      state: m.current ? m.current.state : null,
+      state: g.current ? g.current.state : null,
       styles: f.styles,
       attributes: f.attributes,
-      update: m.current ? m.current.update : null,
-      forceUpdate: m.current ? m.current.forceUpdate : null
+      update: g.current ? g.current.update : null,
+      forceUpdate: g.current ? g.current.forceUpdate : null
     }
   }

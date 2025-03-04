@@ -338,7 +338,7 @@ let s = {
       disableEnterToSubmit: !0
     }
   },
-  m = {
+  g = {
     analyticsName: "user_profile",
     drafts: {
       type: i.d.ChannelMessage
@@ -363,7 +363,7 @@ let s = {
     toolbarType: 2,
     layout: 1
   },
-  g = {
+  m = {
     analyticsName: "overlay_inline_reply",
     drafts: {
       type: i.d.ChannelMessage
@@ -482,13 +482,13 @@ let s = {
   S = {
     NORMAL: s,
     OVERLAY: l,
-    OVERLAY_INLINE_REPLY: g,
+    OVERLAY_INLINE_REPLY: m,
     SIDEBAR: c,
     EDIT: u,
     FORM: d,
     VOICE_CHANNEL_STATUS: f,
     THREAD_CREATION: _,
-    USER_PROFILE: m,
+    USER_PROFILE: g,
     USER_PROFILE_REPLY: E,
     PROFILE_BIO_INPUT: v,
     CUSTOM_GIFT: b,

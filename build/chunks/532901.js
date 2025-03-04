@@ -24,7 +24,7 @@ function f(e) {
       let _ = n(t.content, f),
         p = "string" == typeof t.title && 0 !== t.title.length ? t.title : (0, o.Rp)(t.content),
         h = () => (0, u.r)(t),
-        m = (null == e ? void 0 : e.mustConfirmExternalLink) ? e => (null == e || e.stopPropagation(), null == e || e.preventDefault(), (0, c.q)({
+        g = (null == e ? void 0 : e.mustConfirmExternalLink) ? e => (null == e || e.stopPropagation(), null == e || e.preventDefault(), (0, c.q)({
           href: t.target,
           shouldConfirm: !0,
           messageId: f.messageId,
@@ -41,7 +41,7 @@ function f(e) {
         title: p,
         href: t.target,
         trusted: h,
-        onClick: m,
+        onClick: g,
         messageId: f.messageId,
         channelId: f.channelId,
         children: _

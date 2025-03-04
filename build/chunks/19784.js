@@ -27,7 +27,7 @@ var i = function(e) {
         },
         _ = function() {
           if (!t) try {
-            m(), e(_)
+            g(), e(_)
           } catch (e) {
             console.error(e)
           }
@@ -54,7 +54,7 @@ var i = function(e) {
           };
         return h.splice(o, 0, s), p(), s
       };
-      var m = this.advance = function() {
+      var g = this.advance = function() {
         var e = r.now();
         if (c.size && (c.forEach(f), c.clear()), h.length && r.batchedUpdates(function() {
             var t = a(h, function(t) {

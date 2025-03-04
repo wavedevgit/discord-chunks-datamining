@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -17,13 +17,13 @@ var r = n(200651),
   p = n(388032),
   h = n(585432);
 
-function m(e) {
+function g(e) {
   let {
     user: t,
     guildId: n,
     channelId: o,
-    applicationId: m,
-    friendToken: g,
+    applicationId: g,
+    friendToken: m,
     isGameRelationship: E = !1,
     className: v
   } = e, b = f.ZP.getName(n, o, t), {
@@ -35,10 +35,10 @@ function m(e) {
     cancelFriendRequest: I
   } = (0, d.u)({
     userId: t.id,
-    applicationId: m,
+    applicationId: g,
     isGameRelationship: E,
     location: O,
-    friendToken: g
+    friendToken: m
   }), T = i.useCallback(() => {
     S(), y({
       action: E ? "ACCEPT_GAME_FRIEND_REQUEST" : "ACCEPT_FRIEND_REQUEST"
@@ -47,7 +47,7 @@ function m(e) {
     I(), y({
       action: E ? "IGNORE_GAME_FRIEND_REQUEST" : "IGNORE_FRIEND_REQUEST"
     })
-  }, [I, E, y]), A = null != m, C = (0, c.q)(m);
+  }, [I, E, y]), A = null != g, C = (0, c.q)(g);
   return A && null == C ? null : (0, r.jsxs)("div", {
     className: a()(h.container, v),
     children: [A ? (0, r.jsx)(s.Text, {

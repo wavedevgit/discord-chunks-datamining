@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  P: () => g
+  P: () => m
 }), n(47120), n(653041);
 var r = n(392711),
   i = n(271383),
@@ -51,8 +51,8 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = 3 * a.Z.Millis.SECOND;
-class g {
+let g = 3 * a.Z.Millis.SECOND;
+class m {
   getSearchIndex() {
     return null == this._search || this._search.hasDefaultQuery ? l.R_.CURRENT_GUILD_MEMBER : l.R_.INCLUDED_IN_SEARCH_RESULTS
   }
@@ -221,7 +221,7 @@ class g {
   _scheduleRefresh(e) {
     this.lastRefreshTimestamp = e, this.lastCursorTimestamp = Date.now(), null != this._lastRefreshTimer && clearTimeout(this._lastRefreshTimer), this._lastRefreshTimer = setTimeout(() => {
       this._lastRefreshTimer = null, this.lastRefreshTimestamp = 0
-    }, m)
+    }, g)
   }
   refreshNewMembersAndSearchResults() {
     if (null == this._search || null == this._members || !this._initialized) return !1;

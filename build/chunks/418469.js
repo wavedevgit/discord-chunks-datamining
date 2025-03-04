@@ -42,7 +42,7 @@ function p(e, t, f) {
     simplifiedSettingsEnabled: h
   } = (0, l.Z)({
     location: "ReportProblemItem"
-  }), m = (0, s.Cf)(e), g = (0, i.e7)([c.default], () => c.default.getId()), E = null != e ? (0, a.V9)(e) : u.Z.getActiveStreamKey(), v = null !== (p = u.Z.getVideoStats(E)) && void 0 !== p ? p : {}, b = _({
+  }), g = (0, s.Cf)(e), m = (0, i.e7)([c.default], () => c.default.getId()), E = null != e ? (0, a.V9)(e) : u.Z.getActiveStreamKey(), v = null !== (p = u.Z.getVideoStats(E)) && void 0 !== p ? p : {}, b = _({
     media_session_id: u.Z.getMediaSessionId(E),
     rtc_connection_id: u.Z.getRtcConnectionId(E),
     stream_region: u.Z.getRegion(E),
@@ -54,8 +54,8 @@ function p(e, t, f) {
       } = await n.e("18912").then(n.bind(n, 340140));
       return n => (0, r.jsx)(t, _({
         stream: e,
-        streamApplication: m,
-        isStreamer: g === (null == e ? void 0 : e.ownerId),
+        streamApplication: g,
+        isStreamer: m === (null == e ? void 0 : e.ownerId),
         analyticsData: b
       }, n))
     })

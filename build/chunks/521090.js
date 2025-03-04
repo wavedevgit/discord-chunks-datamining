@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(733860), n(47120);
 var r = n(106351),
   i = n(212819),
@@ -31,10 +31,10 @@ function h(e) {
   }
 }
 
-function m(e) {
+function g(e) {
   return _.EC.has(e.id) ? "<id:".concat(e.id, ">") : "<#".concat(e.id, ">")
 }
-let g = {
+let m = {
   sentinel: f.zy,
   matches: (e, t, n, r, i) => i.mentions.channel !== d.nS.DENY && !e.isPrivate(),
   queryResults(e, t, n, r, o) {
@@ -93,7 +93,7 @@ let g = {
       index: n,
       options: r
     } = e, i = t[n];
-    return r.insertText(h(i), m(i)), {
+    return r.insertText(h(i), g(i)), {
       type: d.z2.CHANNEL
     }
   }

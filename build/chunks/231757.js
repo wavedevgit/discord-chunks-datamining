@@ -42,7 +42,7 @@ function p(e) {
     platformType: f,
     location: p,
     overrideUrl: h,
-    successRedirect: m
+    successRedirect: g
   } = e;
   if (f === d.ABu.LEAGUE_OF_LEGENDS && (f = d.ABu.RIOT_GAMES), f === d.ABu.CRUNCHYROLL) {
     a.K([null != p ? p : "unknown"]);
@@ -75,7 +75,7 @@ function p(e) {
       return t => (0, r.jsx)(e, _({
         platformType: f,
         location: p,
-        successRedirect: m
+        successRedirect: g
       }, t))
     });
     return
@@ -87,13 +87,13 @@ function p(e) {
       onConfirm: () => {
         (0, u.H)(f, {
           location: p,
-          successRedirect: m
+          successRedirect: g
         }, h)
       }
     });
     return
   }(0, u.H)(f, {
     location: p,
-    successRedirect: m
+    successRedirect: g
   })
 }

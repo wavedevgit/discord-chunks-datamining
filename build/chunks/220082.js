@@ -3,7 +3,7 @@
 n.d(t, {
   Cf: () => O,
   Dq: () => b,
-  SR: () => m,
+  SR: () => g,
   ZP: () => y,
   vM: () => E
 }), n(47120);
@@ -55,20 +55,20 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = (0, a.U)(() => ({
+let g = (0, a.U)(() => ({
   palette: {},
   fetching: {}
 }));
 
-function g(e) {
-  return null != m.getState().palette[e]
+function m(e) {
+  return null != g.getState().palette[e]
 }
 async function E(e) {
-  g(e) || await v(e)
+  m(e) || await v(e)
 }
 async function v(e) {
-  if (!m.getState().fetching[e]) {
-    (0, s.j)(() => m.setState(t => ({
+  if (!g.getState().fetching[e]) {
+    (0, s.j)(() => g.setState(t => ({
       fetching: h(_({}, t.fetching), {
         [e]: !0
       })
@@ -77,7 +77,7 @@ async function v(e) {
       let t = await (0, d.OF)(e),
         n = (0, u.WY)(t[0]);
       (0, s.j)(() => {
-        m.setState(r => ({
+        g.setState(r => ({
           fetching: h(_({}, r.fetching), {
             [e]: !1
           }),
@@ -87,7 +87,7 @@ async function v(e) {
         }))
       })
     } catch (t) {
-      (0, s.j)(() => m.setState(t => ({
+      (0, s.j)(() => g.setState(t => ({
         fetching: h(_({}, t.fetching), {
           [e]: !1
         })
@@ -97,7 +97,7 @@ async function v(e) {
 }
 
 function b(e) {
-  return !m(t => null != e && t.fetching[e])
+  return !g(t => null != e && t.fetching[e])
 }
 
 function y(e, t) {
@@ -108,7 +108,7 @@ function y(e, t) {
 
 function O(e, t) {
   let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
-    i = m(t => null == e ? void 0 : t.palette[e]),
+    i = g(t => null == e ? void 0 : t.palette[e]),
     a = (0, l.e7)([c.Z], () => n && c.Z.desaturateUserColors ? c.Z.saturation : 1);
   r.useEffect(() => {
     null != e && null == i && v(e)

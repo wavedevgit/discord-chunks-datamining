@@ -87,7 +87,7 @@ function i(e) {
         contains: ["self"].concat(f)
       }]
     },
-    m = {
+    g = {
       variants: [{
         match: [/class\s+/, u, /\s+extends\s+/, u]
       }, {
@@ -120,7 +120,7 @@ function i(e) {
         returnBegin: !0,
         contains: [h]
       }]
-    }, m, {
+    }, g, {
       begin: u + ":",
       end: ":",
       returnBegin: !0,

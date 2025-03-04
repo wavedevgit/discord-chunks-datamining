@@ -51,9 +51,9 @@ function h(e, t) {
   }), e
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
-  var n, r, i = g(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,7 +61,7 @@ function m(e, t) {
   return i
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -160,7 +160,7 @@ let v = e => {
   var {
     componentRef: t,
     ignoreReducedMotion: n = !1
-  } = e, r = m(e, ["componentRef", "ignoreReducedMotion"]);
+  } = e, r = g(e, ["componentRef", "ignoreReducedMotion"]);
   let o = (0, l.e7)([u.Z], () => u.Z.isFocused()),
     a = (0, l.e7)([c.Z], () => c.Z.useReducedMotion);
   return (0, i.jsx)(E, h(_({}, r), {

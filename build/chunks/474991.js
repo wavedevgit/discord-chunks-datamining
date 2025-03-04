@@ -13,8 +13,8 @@ var r = n(325008),
   _ = n(87046),
   p = n(489412),
   h = n(504559),
-  m = n(859209),
-  g = n(936940),
+  g = n(859209),
+  m = n(936940),
   E = n(740362),
   v = n(644659).enforce,
   b = n(930990),
@@ -28,15 +28,15 @@ var r = n(325008),
   C = o(N.exec),
   R = o("".charAt),
   P = o("".replace),
-  w = o("".indexOf),
-  D = o("".slice),
+  D = o("".indexOf),
+  w = o("".slice),
   L = /^\?<[^\s\d!#%&*+<=>@^][^\s!#%&*+<=>@^]*>/,
   x = /a/g,
   M = /a/g,
   k = new T(x) !== x,
   j = p.MISSED_STICKY,
   U = p.UNSUPPORTED_Y,
-  G = r && (!k || j || O || S || g(function() {
+  G = r && (!k || j || O || S || m(function() {
     return M[I] = !1, T(x) !== x || T(M) === M || "/a/i" !== String(T(x, "i"))
   })),
   B = function(e) {
@@ -58,7 +58,7 @@ var r = n(325008),
           s = !0;
           break;
         case "(" === t:
-          C(L, D(e, r + 1)) && (r += 2, l = !0), i += t, c++;
+          C(L, w(e, r + 1)) && (r += 2, l = !0), i += t, c++;
           continue;
         case ">" === t && l:
           if ("" === u || E(a, u)) throw new A("Invalid capture group name");
@@ -73,16 +73,16 @@ if (a("RegExp", G)) {
   for (var F = function(e, t) {
       var n, r, i, o, a, c, p = u(N, this),
         h = d(e),
-        m = void 0 === t,
-        g = [],
+        g = void 0 === t,
+        m = [],
         E = e;
-      if (!p && h && m && e.constructor === F) return e;
-      if ((h || u(N, e)) && (e = e.source, m && (t = _(E))), e = void 0 === e ? "" : f(e), t = void 0 === t ? "" : f(t), E = e, O && "dotAll" in x && (r = !!t && w(t, "s") > -1) && (t = P(t, /s/g, "")), n = t, j && "sticky" in x && (i = !!t && w(t, "y") > -1) && U && (t = P(t, /y/g, "")), S && (e = (o = V(e))[0], g = o[1]), a = s(T(e, t), p ? this : N, F), (r || i || g.length) && (c = v(a), r && (c.dotAll = !0, c.raw = F(B(e), n)), i && (c.sticky = !0), g.length && (c.groups = g)), e !== E) try {
+      if (!p && h && g && e.constructor === F) return e;
+      if ((h || u(N, e)) && (e = e.source, g && (t = _(E))), e = void 0 === e ? "" : f(e), t = void 0 === t ? "" : f(t), E = e, O && "dotAll" in x && (r = !!t && D(t, "s") > -1) && (t = P(t, /s/g, "")), n = t, j && "sticky" in x && (i = !!t && D(t, "y") > -1) && U && (t = P(t, /y/g, "")), S && (e = (o = V(e))[0], m = o[1]), a = s(T(e, t), p ? this : N, F), (r || i || m.length) && (c = v(a), r && (c.dotAll = !0, c.raw = F(B(e), n)), i && (c.sticky = !0), m.length && (c.groups = m)), e !== E) try {
         l(a, "source", "" === E ? "(?:)" : E)
       } catch (e) {}
       return a
     }, Z = c(T), H = 0; Z.length > H;) h(F, T, Z[H++]);
-  N.constructor = F, F.prototype = N, m(i, "RegExp", F, {
+  N.constructor = F, F.prototype = N, g(i, "RegExp", F, {
     constructor: !0
   })
 }

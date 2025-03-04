@@ -23,7 +23,7 @@ function h(e, t) {
   return t.get ? t.get.call(e) : t.value
 }
 
-function m(e, t, n) {
+function g(e, t, n) {
   if (t.set) t.set.call(e, n);
   else {
     if (!t.writable) throw TypeError("attempted to set read only private field");
@@ -31,13 +31,13 @@ function m(e, t, n) {
   }
 }
 
-function g(e, t, n) {
+function m(e, t, n) {
   if (!t.has(e)) throw TypeError("attempted to " + n + " private field on non-instance");
   return t.get(e)
 }
 
 function E(e, t) {
-  var n = g(e, t, "get");
+  var n = m(e, t, "get");
   return h(e, n)
 }
 
@@ -46,8 +46,8 @@ function v(e, t, n) {
 }
 
 function b(e, t, n) {
-  var r = g(e, t, "set");
-  return m(e, r, n), n
+  var r = m(e, t, "set");
+  return g(e, r, n), n
 }
 
 function y(e, t, n) {

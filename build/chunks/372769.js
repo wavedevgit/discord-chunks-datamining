@@ -37,7 +37,7 @@ function h(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -84,7 +84,7 @@ class v extends i.PureComponent {
       tooltipDelay: d,
       size: f = 16,
       badgeColor: p,
-      iconClassName: m,
+      iconClassName: g,
       flowerStarClassName: v
     } = this.props, b = E(e);
     return (0, r.jsx)(s.ua7, {
@@ -93,7 +93,7 @@ class v extends i.PureComponent {
       delay: d,
       text: b,
       children: s => {
-        if (5 !== e && 4 !== e) return (0, r.jsx)(l.Z, g(h({}, s), {
+        if (5 !== e && 4 !== e) return (0, r.jsx)(l.Z, m(h({}, s), {
           className: a()(n, i),
           flowerStarClassName: v,
           color: p,
@@ -101,7 +101,7 @@ class v extends i.PureComponent {
           size: f,
           children: (0, r.jsx)(t, {
             size: "xxs",
-            className: a()(_.icon, m),
+            className: a()(_.icon, g),
             color: "currentColor"
           })
         }));
@@ -110,11 +110,11 @@ class v extends i.PureComponent {
             width: f,
             height: f
           };
-          return (0, r.jsx)("div", g(h({}, s), {
+          return (0, r.jsx)("div", m(h({}, s), {
             className: a()(n, i),
             style: e,
             children: (0, r.jsx)(t, {
-              className: a()(_.icon, m),
+              className: a()(_.icon, g),
               color: "currentColor"
             })
           }))

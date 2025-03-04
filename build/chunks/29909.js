@@ -37,7 +37,7 @@ function h(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -59,7 +59,7 @@ let E = i.memo(function(e) {
     height: n,
     src: o,
     url: p,
-    format: m,
+    format: g,
     className: E
   } = e, [v, b] = i.useState(!1), y = (0, c.hb)((0, l.iy)(p)), O = y ? f.NW.string(f.t["5/NS7+"]) : f.NW.string(f.t.nIH0v7), S = y ? s.r7p : s.vxU;
   i.useEffect(() => {
@@ -75,12 +75,12 @@ let E = i.memo(function(e) {
       src: o,
       width: t,
       height: n,
-      format: m
+      format: g
     }), u.S.dispatch(d.CkL.FAVORITE_GIF))
   };
   return (0, r.jsx)(s.ua7, {
     text: O,
-    children: e => (0, r.jsx)(s.P3F, g(h({}, e), {
+    children: e => (0, r.jsx)(s.P3F, m(h({}, e), {
       className: a()(E, _.gifFavoriteButton, {
         [_.selected]: y,
         [_.showPulse]: v

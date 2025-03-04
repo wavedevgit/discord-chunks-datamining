@@ -29,7 +29,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function m(e) {
   }
   return e
 }
-let g = 60,
+let m = 60,
   E = 1,
   v = .5;
 class b {
@@ -66,7 +66,7 @@ class b {
         }), (0, c.dA)({
           questId: e.id,
           event: p.rMx.QUEST_CONTENT_VIEWED,
-          properties: m({
+          properties: g({
             min_view_time_seconds: this.minViewTimeSeconds,
             min_viewport_percentage: this.minViewportPercentage,
             triggered_by_status_change: this.triggeredByStatusChange
@@ -84,7 +84,7 @@ class b {
           }), (0, c.dA)({
             questId: t.id,
             event: p.rMx.QUEST_CONTENT_VIEW_TIME,
-            properties: m({
+            properties: g({
               is_termination_beat: e,
               viewed_time_ms: n,
               triggered_by_status_change: y.triggeredByStatusChange
@@ -93,7 +93,7 @@ class b {
           })
         }
       }), y.lastBeatTime = Date.now()
-    }), h(this, "commonProperties", e => m({
+    }), h(this, "commonProperties", e => g({
       impression_id: this.id,
       decision_id: this.questDecisionId,
       quest_status: (0, c.uk)(e)
@@ -111,13 +111,13 @@ class b {
         triggeredByStatusChange: t
       })
     }), h(this, "start", () => {
-      this.stop(!1), this.lastBeatTime = Date.now(), this.heartbeatTimeoutId = window.setInterval(() => this.beat(), 1e3 * g), this.minViewTimeReachedTimeoutId = window.setTimeout(this.onMinViewTimeReached, 1e3 * this.minViewTimeSeconds), this.quests.forEach(e => {
+      this.stop(!1), this.lastBeatTime = Date.now(), this.heartbeatTimeoutId = window.setInterval(() => this.beat(), 1e3 * m), this.minViewTimeReachedTimeoutId = window.setTimeout(this.onMinViewTimeReached, 1e3 * this.minViewTimeSeconds), this.quests.forEach(e => {
         (0, _.T)().info("".concat(e.config.messages.questName, " Quest became visible at ").concat((0, c._b)(this.questContent)), {
           impressionId: this.id
         }), (0, c.dA)({
           questId: e.id,
           event: p.rMx.QUEST_CONTENT_LOADED,
-          properties: m({
+          properties: g({
             triggered_by_status_change: this.triggeredByStatusChange
           }, this.commonProperties(e)),
           trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata

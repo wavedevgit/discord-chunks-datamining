@@ -15,9 +15,9 @@ var r, i = n(392711),
   _ = n(709054),
   p = n(710111),
   h = n(981631),
-  m = n(526761);
+  g = n(526761);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -66,14 +66,14 @@ function P(e) {
   E.delete(t.id)
 }
 
-function w(e) {
+function D(e) {
   let {
     sound: t
   } = e, n = E.get(t.guildId), r = null == n ? void 0 : n.findIndex(e => e.soundId === t.soundId);
   null != n && null != r && -1 !== r ? (n[r] = t, E.set(t.guildId, [...n])) : null != n && (null == n || n.push(t), E.set(t.guildId, [...n]))
 }
 
-function D(e) {
+function w(e) {
   let {
     guildId: t,
     soundboardSounds: n
@@ -146,10 +146,10 @@ function V(e) {
     type: n,
     proto: r
   } = t;
-  if (n === m.yP.FRECENCY_AND_FAVORITES_SETTINGS) {
+  if (n === g.yP.FRECENCY_AND_FAVORITES_SETTINGS) {
     var i, o;
     S = new Set(null !== (o = null == r ? void 0 : null === (i = r.favoriteSoundboardSounds) || void 0 === i ? void 0 : i.soundIds) && void 0 !== o ? o : [])
-  } else n === m.yP.PRELOADED_USER_SETTINGS && B(r)
+  } else n === g.yP.PRELOADED_USER_SETTINGS && B(r)
 }
 
 function F(e) {
@@ -227,12 +227,12 @@ class H extends(r = a.ZP.Store) {
     return 2 === O && 2 === y
   }
 }
-g(H, "displayName", "SoundboardStore");
+m(H, "displayName", "SoundboardStore");
 let W = new H(s.Z, {
   LOGOUT: N,
   GUILD_SOUNDBOARD_FETCH: C,
-  GUILD_SOUNDBOARD_SOUND_CREATE: w,
-  GUILD_SOUNDBOARD_SOUND_UPDATE: w,
+  GUILD_SOUNDBOARD_SOUND_CREATE: D,
+  GUILD_SOUNDBOARD_SOUND_UPDATE: D,
   GUILD_SOUNDBOARD_SOUND_DELETE: L,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: k,
   GUILD_SOUNDBOARD_SOUND_PLAY_END: j,
@@ -245,5 +245,5 @@ let W = new H(s.Z, {
   GUILD_DELETE: P,
   AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: F,
   OVERLAY_INITIALIZE: Z,
-  GUILD_SOUNDBOARD_SOUNDS_UPDATE: D
+  GUILD_SOUNDBOARD_SOUNDS_UPDATE: w
 })

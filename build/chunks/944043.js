@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m,
+  Z: () => g,
   t: () => h
 });
 var r = n(200651);
@@ -21,20 +21,20 @@ var i = n(120356),
     return e[e.PANEL = 0] = "PANEL", e[e.MODAL = 1] = "MODAL", e[e.POPOUT = 2] = "POPOUT", e
   }({});
 
-function m(e) {
+function g(e) {
   let {
     user: t,
     source: n
   } = e, {
     isPendingIncoming: i,
     isBlocked: h,
-    isIgnored: m
+    isIgnored: g
   } = (0, s.cj)([u.Z], () => ({
     isPendingIncoming: u.Z.getRelationshipType(t.id) === f.OGo.PENDING_INCOMING,
     isBlocked: u.Z.isBlocked(t.id),
     isIgnored: u.Z.isIgnored(t.id)
   }));
-  return h || m && !i ? (0, r.jsxs)(d.Z.Overlay, {
+  return h || g && !i ? (0, r.jsxs)(d.Z.Overlay, {
     className: o()(p.container, {
       [p.panel]: 0 === n
     }),
@@ -42,7 +42,7 @@ function m(e) {
       variant: "text-sm/semibold",
       color: "header-secondary",
       children: _.NW.string(_.t["oC/fU1"])
-    }), m && (0, r.jsxs)(r.Fragment, {
+    }), g && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(a.xv, {
         variant: "text-sm/semibold",
         color: "header-secondary",

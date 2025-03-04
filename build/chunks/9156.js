@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   U2: () => X,
-  ZP: () => em,
+  ZP: () => eg,
   wL: () => Q
 }), n(47120), n(789020);
 var r, i = n(392711),
@@ -17,8 +17,8 @@ var r, i = n(392711),
   _ = n(630388),
   p = n(709054),
   h = n(592125),
-  m = n(430824),
-  g = n(594174),
+  g = n(430824),
+  m = n(594174),
   E = n(981631),
   v = n(468788),
   b = n(490897),
@@ -69,8 +69,8 @@ let N = {},
   P = {
     flags: 0
   },
-  w = new l.ZP,
   D = new l.ZP,
+  w = new l.ZP,
   L = {
     suppress_everyone: !1,
     suppress_roles: !1,
@@ -109,8 +109,8 @@ function F(e, t) {
     s = T(S({}, Q(e), r, t), {
       channel_overrides: a
     });
-  w.clearTimer(e), o().forEach(i, e => {
-    D.clearTimer(e.channel_id)
+  D.clearTimer(e), o().forEach(i, e => {
+    w.clearTimer(e.channel_id)
   }), Z(e, s), N[e] = s, M[e] = ef(N[e]);
   let l = o().filter(s.channel_overrides, e => {
     var t;
@@ -120,7 +120,7 @@ function F(e, t) {
 }
 
 function Z(e, t) {
-  !0 === t.muted && w.setTimer(e, t.mute_config, () => {
+  !0 === t.muted && D.setTimer(e, t.mute_config, () => {
     W(e, {
       muted: !1
     }), s.Z.dispatch({
@@ -128,7 +128,7 @@ function Z(e, t) {
       guildId: e
     })
   }) && (t.muted = !1), o().forEach(t.channel_overrides, t => {
-    !0 === t.muted && D.setTimer(t.channel_id, t.mute_config, () => {
+    !0 === t.muted && w.setTimer(t.channel_id, t.mute_config, () => {
       Y(e, t.channel_id, {
         muted: !1
       }), s.Z.dispatch({
@@ -199,7 +199,7 @@ function q(e, t, n) {
 }
 
 function Q(e) {
-  let t = m.Z.getGuild(e);
+  let t = g.Z.getGuild(e);
   return x[null != t ? t.defaultMessageNotifications : E.bL.ALL_MESSAGES]
 }
 
@@ -229,7 +229,7 @@ function $(e) {
 }
 
 function ee(e) {
-  er(e.notificationSettings), w.reset(), D.reset(), e.userGuildSettings.partial || (N = {}, M = {}, k = {});
+  er(e.notificationSettings), D.reset(), w.reset(), e.userGuildSettings.partial || (N = {}, M = {}, k = {});
   let t = new Set;
   for (let n in e.userGuildSettings.entries.forEach(e => {
       let n = e;
@@ -357,7 +357,7 @@ function ep() {
 }
 class eh extends(r = a.ZP.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(g.default, m.Z, c.Z, d.Z), null != e) {
+    if (this.waitFor(m.default, g.Z, c.Z, d.Z), null != e) {
       var t, n;
       C = null !== (t = e.useNewNotifications) && void 0 !== t && t, "userGuildSettings" in e && (N = e.userGuildSettings, k = o().mapValues(null !== (n = e.optedInChannelsByGuild) && void 0 !== n ? n : {}, e => new Set(e)), o().forEach(N, (e, t) => {
         M[t] = ef(e)
@@ -568,7 +568,7 @@ class eh extends(r = a.ZP.PersistedStore) {
   }
 }
 O(eh, "displayName", "UserGuildSettingsStore"), O(eh, "persistKey", "collapsedGuilds");
-let em = new eh(s.Z, {
+let eg = new eh(s.Z, {
   USER_GUILD_SETTINGS_FULL_UPDATE: ei,
   USER_GUILD_SETTINGS_GUILD_UPDATE: eo,
   USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE: ea,

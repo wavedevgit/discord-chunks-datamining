@@ -17,8 +17,8 @@ var a = n(788983),
   _ = n(914010),
   p = n(594174),
   h = n(934415),
-  m = n(604151),
-  g = n(981631);
+  g = n(604151),
+  m = n(981631);
 let E = {
   selectChannel(e) {
     let {
@@ -31,7 +31,7 @@ let E = {
     } = e;
     r.Z.dispatch({
       type: "CHANNEL_SELECT",
-      guildId: t === g.ME ? null : t,
+      guildId: t === m.ME ? null : t,
       channelId: n,
       messageId: i,
       jumpType: o,
@@ -40,7 +40,7 @@ let E = {
     })
   },
   selectPrivateChannel(e) {
-    (0, s.uL)(g.Z5c.CHANNEL(g.ME, e))
+    (0, s.uL)(m.Z5c.CHANNEL(m.ME, e))
   },
   selectVoiceChannel(e) {
     var t;
@@ -49,10 +49,10 @@ let E = {
       i = c.Z.getChannel(e),
       o = null == i ? void 0 : i.getGuildId();
     if ((null == i ? void 0 : i.isGuildVocal()) && (null == i ? void 0 : i.isNSFW()) && (!(null === (t = p.default.getCurrentUser()) || void 0 === t ? void 0 : t.nsfwAllowed) || !u.Z.didAgree(o))) {
-      (0, s.uL)(g.Z5c.CHANNEL(o, e));
+      (0, s.uL)(m.Z5c.CHANNEL(o, e));
       return
     }
-    d.Z.isSupported() && (null != e && d.Z.getMediaEngine().interact(), (0, m.h)(e, o, n, r))
+    d.Z.isSupported() && (null != e && d.Z.getMediaEngine().interact(), (0, g.h)(e, o, n, r))
   },
   disconnect() {
     let e = o.Z.getRemoteSessionId();
@@ -60,7 +60,7 @@ let E = {
     else {
       let e = c.Z.getChannel(f.Z.getChannelId()),
         t = f.Z.getChannelId() === f.Z.getVoiceChannelId() && (null == e ? void 0 : e.isThread()) === !0;
-      if (this.selectVoiceChannel(null), a.xv(g.KJ3.CHANNEL_CALL_POPOUT), t) {
+      if (this.selectVoiceChannel(null), a.xv(m.KJ3.CHANNEL_CALL_POPOUT), t) {
         let e = _.Z.getGuildId();
         null != e && (0, s.uL)((0, h.LY)(e))
       }

@@ -10,8 +10,8 @@ var r, i, o, a = n(197047),
   _ = n(624906),
   p = "Object already initialized",
   h = s.TypeError,
-  m = s.WeakMap,
-  g = function(e) {
+  g = s.WeakMap,
+  m = function(e) {
     return o(e) ? i(e) : r(e, {})
   },
   E = function(e) {
@@ -22,7 +22,7 @@ var r, i, o, a = n(197047),
     }
   };
 if (a || d.state) {
-  var v = d.state || (d.state = new m);
+  var v = d.state || (d.state = new g);
   v.get = v.get, v.has = v.has, v.set = v.set, r = function(e, t) {
     if (v.has(e)) throw h(p);
     return t.facade = e, v.set(e, t), t
@@ -46,6 +46,6 @@ e.exports = {
   set: r,
   get: i,
   has: o,
-  enforce: g,
+  enforce: m,
   getterFor: E
 }

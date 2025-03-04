@@ -51,13 +51,13 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -146,8 +146,8 @@ function I(e) {
     innerClassName: C,
     onClick: R,
     onDoubleClick: P,
-    onMouseDown: w,
-    onMouseUp: D,
+    onMouseDown: D,
+    onMouseUp: w,
     onMouseEnter: L,
     onMouseLeave: x,
     onKeyDown: M,
@@ -158,7 +158,7 @@ function I(e) {
     "aria-label": B,
     submittingStartedLabel: V,
     submittingFinishedLabel: F
-  } = e, Z = g(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
+  } = e, Z = m(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
   let H = h || E,
     W = H && (null != L || null != x),
     Y = W ? null : N,
@@ -167,16 +167,16 @@ function I(e) {
   i.useEffect(() => {
     !0 === E && (z.current = !0, l.u.announce(null != V ? V : d.NW.string(d.t.pfChQk))), !1 === E && !0 === z.current && l.u.announce(null != F ? F : d.NW.string(d.t.SVPara))
   }, [E, V, F]);
-  let q = (0, r.jsx)(c.t, m(p({}, G), {
+  let q = (0, r.jsx)(c.t, g(p({}, G), {
     offset: K,
-    children: (0, r.jsxs)("button", m(p({}, H ? null : Z), {
+    children: (0, r.jsxs)("button", g(p({}, H ? null : Z), {
       "aria-label": B,
       "aria-busy": !!E || void 0,
       ref: U,
       onClick: H ? e => e.preventDefault() : R,
       onDoubleClick: H ? e => e.preventDefault() : P,
-      onMouseUp: h ? void 0 : D,
-      onMouseDown: h ? void 0 : w,
+      onMouseUp: h ? void 0 : w,
+      onMouseDown: h ? void 0 : D,
       onMouseEnter: L,
       onMouseLeave: x,
       onKeyDown: h ? void 0 : M,
@@ -232,8 +232,8 @@ function T(e) {
     onMouseUp: O,
     children: S,
     rel: I
-  } = e, T = g(e, ["look", "color", "size", "fullWidth", "grow", "style", "className", "innerClassName", "to", "onClick", "onMouseDown", "onMouseUp", "children", "rel"]);
-  return (0, r.jsx)(s.rU, m(p({}, T), {
+  } = e, T = m(e, ["look", "color", "size", "fullWidth", "grow", "style", "className", "innerClassName", "to", "onClick", "onMouseDown", "onMouseUp", "children", "rel"]);
+  return (0, r.jsx)(s.rU, g(p({}, T), {
     to: _,
     onClick: h,
     onMouseUp: O,

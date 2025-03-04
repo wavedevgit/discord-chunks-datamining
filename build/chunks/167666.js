@@ -63,12 +63,12 @@ function h(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = {
+let g = {
   SMALL: c.sizeSmall,
   MEDIUM: c.sizeMedium,
   LARGE: c.sizeLarge
 };
-class g extends(r = o.PureComponent) {
+class m extends(r = o.PureComponent) {
   calculateScroll() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : this._scroller;
     if (null == e) return;
@@ -130,8 +130,8 @@ class g extends(r = o.PureComponent) {
     }
   }
 }
-u(g, "Header", l.xBx), u(g, "Footer", l.mzw), u(g, "Content", l.hzk), u(g, "ListContent", l.YAO), u(g, "CloseButton", l.olH), u(g, "Sizes", m), u(g, "defaultProps", {
+u(m, "Header", l.xBx), u(m, "Footer", l.mzw), u(m, "Content", l.hzk), u(m, "ListContent", l.YAO), u(m, "CloseButton", l.olH), u(m, "Sizes", g), u(m, "defaultProps", {
   fullscreenOnMobile: !0,
-  size: m.SMALL,
+  size: g.SMALL,
   tag: "div"
 })

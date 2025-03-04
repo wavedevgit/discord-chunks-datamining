@@ -15,8 +15,8 @@ var r, i = n(392711),
   _ = n(195663),
   p = n(131704),
   h = n(601964),
-  m = n(598077),
-  g = n(386438),
+  g = n(598077),
+  m = n(386438),
   E = n(700785),
   v = n(592125),
   b = n(271383),
@@ -52,7 +52,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   var t;
   let n = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     r = O.default.getCurrentUser();
@@ -68,10 +68,10 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     n = A[e];
-  return null != n ? n : A[e] = w(e, t)
+  return null != n ? n : A[e] = D(e, t)
 }
 
 function L(e) {
@@ -221,7 +221,7 @@ function Q(e, t, n, r) {
       let i = v.Z.getChannel(e.parent_id);
       return null == i ? E.Hn : E.Og(e, Q(i, t, n, r), f.Z.hasJoined(e.id))
     }
-    i = D(e.id)
+    i = w(e.id)
   } else e instanceof h.ZP && (i = P(e.id));
   return void 0 !== t || void 0 !== n || void 0 !== r ? E.uB({
     user: O.default.getCurrentUser(),
@@ -237,7 +237,7 @@ class X extends(r = s.ZP.Store) {
     this.waitFor(O.default, y.Z, v.Z, b.ZP, f.Z, d.Z, c.Z)
   }
   getChannelPermissions(e) {
-    return p.Ec.has(e.type) ? w(e.id) : D(e.id)
+    return p.Ec.has(e.type) ? D(e.id) : w(e.id)
   }
   getGuildPermissions(e) {
     return P(e.id)
@@ -276,16 +276,16 @@ class X extends(r = s.ZP.Store) {
     return a.e$(o, e)
   }
   canBasicChannel(e, t, n, r, i) {
-    return "basicPermissions" in t ? g.Z.has(t.basicPermissions, e) : a.e$(Q(t, n, r, i), g.Z.asBigFlag(e))
+    return "basicPermissions" in t ? m.Z.has(t.basicPermissions, e) : a.e$(Q(t, n, r, i), m.Z.asBigFlag(e))
   }
   computePermissions(e, t, n, r) {
     return Q(e, t, n, r)
   }
   computeBasicPermissions(e) {
-    return "basicPermissions" in e ? e.basicPermissions : g.Z.asBasicFlag(Q(e))
+    return "basicPermissions" in e ? e.basicPermissions : m.Z.asBasicFlag(Q(e))
   }
   canManageUser(e, t, n) {
-    let r = t instanceof m.Z ? t.id : t;
+    let r = t instanceof g.Z ? t.id : t;
     if (n.isOwner(r)) return !1;
     let i = O.default.getCurrentUser();
     if (!this.can(e, n)) return !1;

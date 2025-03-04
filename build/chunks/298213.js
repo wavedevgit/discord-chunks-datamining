@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(570140),
   i = n(194359),
@@ -113,7 +113,7 @@ function h(e) {
       location: r,
       friendToken: i
     }).then(e => {
-      m(e, {
+      g(e, {
         userId: t,
         applicationId: n,
         location: r,
@@ -122,7 +122,7 @@ function h(e) {
         onCancel: c
       }) || null == o || o()
     }).catch(e => {
-      m(e, {
+      g(e, {
         userId: t,
         applicationId: n,
         location: r,
@@ -135,7 +135,7 @@ function h(e) {
   }
 }
 
-function m(e, t) {
+function g(e, t) {
   var n;
   return (null === (n = e.body) || void 0 === n ? void 0 : n.code) === c.evJ.RELATIONSHIP_INVALID_NO_CONFIRMATION ? (r.Z.dispatch({
     type: "UPDATE_STRANGER_STATUS",
@@ -158,7 +158,7 @@ function m(e, t) {
     isStranger: !1
   }), !1)
 }
-let g = {
+let m = {
   removeFriend: function(e) {
     let {
       userId: t,

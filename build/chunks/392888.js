@@ -49,12 +49,12 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class g extends s.Z {
+class m extends s.Z {
   handlePostConnectionOpen() {
     if (!o.K.get("turnedOffNewNotifications") && l.Z.hasConsented(f.pjP.PERSONALIZATION)) {
       if (u.xT.getCurrentConfig({
@@ -87,7 +87,7 @@ class g extends s.Z {
     } = await n.e("53512").then(n.bind(n, 753521));
     if (!(0, a.$sL)()) u.fs.trackExposure({
       location: "NotificationMigrationManager"
-    }), t && ((0, d.cG)(o, l) ? (0, a.h7j)(e => (0, r.jsx)(c, m(p({}, e), {
+    }), t && ((0, d.cG)(o, l) ? (0, a.h7j)(e => (0, r.jsx)(c, g(p({}, e), {
       dismissable: !1,
       guildPain: o,
       myUsage: l
@@ -128,11 +128,11 @@ async function E(e) {
     let {
       default: i
     } = await n.e("53512").then(n.bind(n, 753521));
-    return n => (0, r.jsx)(i, m(p({}, n), {
+    return n => (0, r.jsx)(i, g(p({}, n), {
       dismissable: e,
       guildPain: t,
       myUsage: s
     }))
   })
 }
-let v = new g
+let v = new m

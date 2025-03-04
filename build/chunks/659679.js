@@ -7,8 +7,8 @@ var r = t(200651),
   o = t(793030),
   a = t(442837),
   s = t(481060),
-  l = t(834129),
-  c = t(271383),
+  c = t(834129),
+  l = t(271383),
   d = t(709586),
   u = t(388032),
   x = t(652754);
@@ -19,18 +19,18 @@ function p(e) {
     boost: t
   } = e, {
     username: p,
-    roleColor: b
-  } = (0, a.cj)([c.ZP], () => {
+    roleColor: v
+  } = (0, a.cj)([l.ZP], () => {
     var e, n, r;
     return {
-      username: null !== (r = c.ZP.getNick(t.guildId, t.userId)) && void 0 !== r ? r : null === (e = t.user) || void 0 === e ? void 0 : e.username,
-      roleColor: null === (n = c.ZP.getMember(t.guildId, t.userId)) || void 0 === n ? void 0 : n.colorString
+      username: null !== (r = l.ZP.getNick(t.guildId, t.userId)) && void 0 !== r ? r : null === (e = t.user) || void 0 === e ? void 0 : e.username,
+      roleColor: null === (n = l.ZP.getMember(t.guildId, t.userId)) || void 0 === n ? void 0 : n.colorString
     }
-  }, [t]), v = i.useCallback(() => (0, r.jsx)(s.PUh, {
+  }, [t]), b = i.useCallback(() => (0, r.jsx)(s.PUh, {
     name: p,
-    color: null != b ? b : void 0
-  }), [p, b]);
-  return (0, r.jsx)(l.Z, {
+    color: null != v ? v : void 0
+  }), [p, v]);
+  return (0, r.jsx)(c.Z, {
     className: x.textContainer,
     iconNode: (0, r.jsx)(d.Z, {
       className: x.icon,
@@ -44,7 +44,7 @@ function p(e) {
       variant: "text-md/semibold",
       children: u.NW.format(u.t["57St//"], {
         username: p,
-        usernameHook: v
+        usernameHook: b
       })
     })
   })

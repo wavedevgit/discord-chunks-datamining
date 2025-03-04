@@ -16,12 +16,12 @@ var r = n(200651),
   _ = n(185923),
   p = n(81086);
 let h = l().memoize(e => "".concat(e * _.DC.NonDiversityPerRow, "px ").concat(e * Math.ceil(u.ZP.numNonDiversitySprites / _.DC.NonDiversityPerRow), "px")),
-  m = l().memoize(e => "".concat(e * _.DC.DiversityPerRow, "px ").concat(e * Math.ceil(u.ZP.numDiversitySprites / _.DC.DiversityPerRow), "px")),
-  g = (e, t, r) => {
+  g = l().memoize(e => "".concat(e * _.DC.DiversityPerRow, "px ").concat(e * Math.ceil(u.ZP.numDiversitySprites / _.DC.DiversityPerRow), "px")),
+  m = (e, t, r) => {
     let i, o, a;
     if (!e.useSpriteSheet) return;
     let s = null != e.index ? e.index : 0;
-    e.hasDiversity ? (i = n(735800)("./spritesheet-".concat(t, "-").concat(r, ".png")), o = m(r), a = _.DC.DiversityPerRow) : (i = n(604901)("./spritesheet-emoji-".concat(r, ".png")), o = h(r), a = _.DC.NonDiversityPerRow);
+    e.hasDiversity ? (i = n(735800)("./spritesheet-".concat(t, "-").concat(r, ".png")), o = g(r), a = _.DC.DiversityPerRow) : (i = n(604901)("./spritesheet-emoji-".concat(r, ".png")), o = h(r), a = _.DC.NonDiversityPerRow);
     let l = -s % a * r,
       c = -Math.floor(s / a) * r;
     return {
@@ -60,7 +60,7 @@ let h = l().memoize(e => "".concat(e * _.DC.NonDiversityPerRow, "px ").concat(e 
         className: a()(p.emojiSpriteImage, {
           [p.lockedEmoji]: u
         }),
-        style: g(t, o, n),
+        style: m(t, o, n),
         children: (0, r.jsx)(c.nn4, {
           children: l
         })

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   I: () => c,
-  Z: () => g
+  Z: () => m
 });
 var r, i = n(442837),
   o = n(570140),
@@ -38,7 +38,7 @@ function p(e) {
 function h() {
   u = 0, d = null, f = null
 }
-class m extends(r = i.ZP.Store) {
+class g extends(r = i.ZP.Store) {
   get purchaseTokenAuthState() {
     return u
   }
@@ -49,8 +49,8 @@ class m extends(r = i.ZP.Store) {
     return f
   }
 }
-l(m, "displayName", "PurchaseTokenAuthStore");
-let g = new m(o.Z, {
+l(g, "displayName", "PurchaseTokenAuthStore");
+let m = new g(o.Z, {
   SKU_PURCHASE_FAIL: _,
   PREMIUM_PAYMENT_SUBSCRIBE_FAIL: _,
   USER_PAYMENT_CLIENT_ADD: p,

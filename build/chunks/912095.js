@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => E,
-  p: () => g
+  p: () => m
 }), n(47120), n(411104), n(177593);
 var r = n(874141),
   i = n.n(r),
@@ -26,7 +26,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function m(e) {
   }
   return e
 }
-var g = function(e) {
+var m = function(e) {
   return e[e.AUDIO_BITRATE = 0] = "AUDIO_BITRATE", e[e.VIDEO_RESOLUTION_SCALE = 1] = "VIDEO_RESOLUTION_SCALE", e[e.VIDEO_BITRATE = 2] = "VIDEO_BITRATE", e[e.VIDEO_FRAMERATE = 3] = "VIDEO_FRAMERATE", e
 }({});
 class E extends s.Z {
@@ -146,7 +146,7 @@ class E extends s.Z {
           n(Error("Invalid rid"));
           return
         }
-        a()(this.videoStreamParameters[r], e[r]) || (this.videoStreamParameters[r] = m({}, e[r]))
+        a()(this.videoStreamParameters[r], e[r]) || (this.videoStreamParameters[r] = g({}, e[r]))
       }
       t()
     })

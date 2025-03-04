@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(275850),
   p = n(672971),
   h = n(115130),
-  m = n(228624),
-  g = n(925329),
+  g = n(228624),
+  m = n(925329),
   E = n(215148),
   v = n(653798),
   b = n(314182),
@@ -31,8 +31,8 @@ var r = n(200651),
   C = n(630388),
   R = n(669079),
   P = n(937615),
-  w = n(987209),
-  D = n(563132),
+  D = n(987209),
+  w = n(563132),
   L = n(45572),
   x = n(119226),
   M = n(981631),
@@ -46,7 +46,7 @@ function U(e) {
   } = e;
   a()(null != n.amount, "SKU must have a price set.");
   let i = n.amount - n.tax,
-    o = (0, m.ed)("SKUInvoice"),
+    o = (0, g.ed)("SKUInvoice"),
     s = t.productLine === M.POd.COLLECTIBLES && o;
   return !n.tax_inclusive && n.tax > 0 ? (0, r.jsxs)(v.PO, {
     className: j.invoice,
@@ -89,7 +89,7 @@ function G(e) {
   } = e;
   return !0 !== i ? null : (0, r.jsxs)("div", {
     className: j.skuHeading,
-    children: [(0, r.jsx)(g.Z, {
+    children: [(0, r.jsx)(m.Z, {
       game: t
     }), (0, r.jsx)(c.X6q, {
       variant: "heading-lg/bold",
@@ -104,7 +104,7 @@ function B(e) {
     hasLegalTermsFlash: t,
     legalTermsNodeRef: n,
     onPaymentSourceChange: o,
-    handlePaymentSourceAdd: g
+    handlePaymentSourceAdd: m
   } = e, {
     application: P,
     purchaseState: B,
@@ -119,10 +119,10 @@ function B(e) {
     purchasePreviewError: q,
     devShelfFetchState: Q,
     setPurchasePreviewError: X
-  } = (0, D.JL)(), {
+  } = (0, w.JL)(), {
     isGift: J,
     giftRecipient: $
-  } = (0, w.wD)(), ee = J && (0, R.pO)($), {
+  } = (0, D.wD)(), ee = J && (0, R.pO)($), {
     defaultPaymentSourceId: et,
     hasFetchedPaymentSources: en
   } = (0, l.cj)([I.Z], () => ({
@@ -140,7 +140,7 @@ function B(e) {
     ec = s.M.EEA_COUNTRIES.has(S.Z.ipCountryCodeWithFallback),
     eu = B === L.A.PURCHASING || B === L.A.COMPLETED,
     ed = null != F ? V[F].type : null,
-    ef = (0, m.ed)("SKUInvoice"),
+    ef = (0, g.ed)("SKUInvoice"),
     e_ = er.productLine === M.POd.COLLECTIBLES && ef;
   return i.useEffect(() => {
     en && F === et && et !== T.c && null == ea && (0, u.x2)(er.applicationId, er.id, et, {
@@ -201,7 +201,7 @@ function B(e) {
         paymentSources: Object.values(V),
         selectedPaymentSourceId: F,
         onChange: o,
-        onPaymentSourceAdd: g,
+        onPaymentSourceAdd: m,
         hidePersonalInformation: el
       })]
     }), (0, r.jsx)(b.Z, {

@@ -16,8 +16,8 @@ var i, o = n(348327),
   _ = n(280049),
   p = n(658785),
   h = n(131951),
-  m = n(626135),
-  g = n(358085),
+  g = n(626135),
+  m = n(358085),
   E = n(998502),
   v = n(13140),
   b = n(808506),
@@ -73,7 +73,7 @@ let R = new f.Z("KeybindsStore"),
     managed: !0,
     params: {}
   },
-  w = {
+  D = {
     id: "1001",
     action: y.kg4.TOGGLE_OVERLAY_INPUT_LOCK,
     shortcut: (0, v.Kd)("shift+`"),
@@ -81,7 +81,7 @@ let R = new f.Z("KeybindsStore"),
     managed: !0,
     params: {}
   },
-  D = {},
+  w = {},
   L = {},
   x = 0,
   M = !0,
@@ -93,8 +93,8 @@ function G(e) {
   switch (e) {
     case P.id:
       return P;
-    case w.id:
-      return w;
+    case D.id:
+      return D;
     default:
       return L[e]
   }
@@ -127,22 +127,22 @@ function Z(e) {
 }
 
 function H(e, t, n, r) {
-  if (g.isPlatformEmbedded) E.ZP.inputEventRegister(parseInt(e), t, n, r);
+  if (m.isPlatformEmbedded) E.ZP.inputEventRegister(parseInt(e), t, n, r);
   else {
     W(e);
     let i = (0, _.r)(document);
-    r.keyup && i.bindGlobal((0, v.BB)(t), () => n(!1), "keyup"), r.keydown && i.bindGlobal((0, v.BB)(t), () => n(!0), "keydown"), D[e] = i
+    r.keyup && i.bindGlobal((0, v.BB)(t), () => n(!1), "keyup"), r.keydown && i.bindGlobal((0, v.BB)(t), () => n(!0), "keydown"), w[e] = i
   }
 }
 
 function W(e) {
-  if (g.isPlatformEmbedded) E.ZP.inputEventUnregister(parseInt(e, 10));
+  if (m.isPlatformEmbedded) E.ZP.inputEventUnregister(parseInt(e, 10));
   else {
-    let t = D[e];
+    let t = w[e];
     if (null != t) {
       let n = L[e],
         r = k[n.action];
-      (null == r ? void 0 : r.isPressed) === !0 && I.nextTick(() => r.onTrigger(!1, n)), t.reset(), D[e] = null
+      (null == r ? void 0 : r.isPressed) === !0 && I.nextTick(() => r.onTrigger(!1, n)), t.reset(), w[e] = null
     }
   }
 }
@@ -198,7 +198,7 @@ function Q(e) {
   let {
     id: t
   } = e, n = L[t];
-  __OVERLAY__ || m.default.track(y.rMx.USER_SETTINGS_KEYBIND_UPDATED, {
+  __OVERLAY__ || g.default.track(y.rMx.USER_SETTINGS_KEYBIND_UPDATED, {
     keybind_action: n.action,
     keybind_is_bound: !1,
     keybind_has_shortcut: !1
@@ -211,13 +211,13 @@ function X(e) {
   } = e;
   L = C(N({}, L), {
     [t.id]: t
-  }), __OVERLAY__ || (m.default.track(y.rMx.USER_SETTINGS_KEYBIND_UPDATED, {
+  }), __OVERLAY__ || (g.default.track(y.rMx.USER_SETTINGS_KEYBIND_UPDATED, {
     keybind_action: t.action,
     keybind_is_bound: !0,
     keybind_has_shortcut: t.shortcut.length > 0
-  }), t.action === y.kg4.TOGGLE_OVERLAY_INPUT_LOCK ? m.default.track(y.rMx.OVERLAY_SETTINGS_UPDATED, {
+  }), t.action === y.kg4.TOGGLE_OVERLAY_INPUT_LOCK ? g.default.track(y.rMx.OVERLAY_SETTINGS_UPDATED, {
     hotkey: t.action === y.kg4.TOGGLE_OVERLAY_INPUT_LOCK ? (0, v.BB)(t.shortcut) : null
-  }) : t.action === y.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET && m.default.track(y.rMx.OVERLAY_SETTINGS_UPDATED, {
+  }) : t.action === y.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET && g.default.track(y.rMx.OVERLAY_SETTINGS_UPDATED, {
     text_activation_hotkey: t.action === y.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET ? (0, v.BB)(t.shortcut) : null
   })), Y(t)
 }
@@ -233,7 +233,7 @@ function $(e) {
   let {
     keybinds: t
   } = e;
-  k = t, D = {}, x = 0, Object.values(L).filter(e => U.includes(e.action) && e.managed).length !== U.length && en(), l().forEach(L, e => {
+  k = t, w = {}, x = 0, Object.values(L).filter(e => U.includes(e.action) && e.managed).length !== U.length && en(), l().forEach(L, e => {
     x = Math.max(parseInt(e.id, 10), x) + 1;
     try {
       Y(e)
@@ -336,7 +336,7 @@ class er extends(i = c.ZP.DeviceSettingsStore) {
   }
   getOverlayKeybind() {
     let e = this.getKeybindForAction(y.kg4.TOGGLE_OVERLAY_INPUT_LOCK, !0);
-    return null != e ? e : w
+    return null != e ? e : D
   }
   getOverlayChatKeybind() {
     return this.getKeybindForAction(y.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, !0)
@@ -354,7 +354,7 @@ T(er, "displayName", "KeybindsStore"), T(er, "persistKey", "keybinds"), T(er, "m
     keybinds: t = e
   } = e;
   return l().reduce(t, (e, t, n) => {
-    if ((0, g.isLinux)() && t.action === y.kg4.SOUNDBOARD_HOLD) {
+    if ((0, m.isLinux)() && t.action === y.kg4.SOUNDBOARD_HOLD) {
       let n = t.shortcut.map(e => e[1]),
         r = (0, v.Kd)("`").map(e => e[1]);
       if (a()(n, r)) return e

@@ -171,12 +171,12 @@ function* _(e) {
     {
       at: p = e.selection,
       unit: h = "offset",
-      reverse: m = !1,
-      voids: g = !1
+      reverse: g = !1,
+      voids: m = !1
     } = null != _ ? _ : {};
   if ("word" !== h) {
     for (let t of f(e, c(s({}, _), {
-        voids: g || "block" === h
+        voids: m || "block" === h
       }))) yield t;
     return
   }
@@ -184,24 +184,24 @@ function* _(e) {
   let E = o.bN.range(e, p),
     [v, b] = o.M8.edges(E),
     y = o.bN.richValue(e),
-    O = m ? -1 : 1,
+    O = g ? -1 : 1,
     S = null !== (r = null === (t = v.path) || void 0 === t ? void 0 : t[0]) && void 0 !== r ? r : 0,
     I = null !== (i = null === (n = b.path) || void 0 === n ? void 0 : n[0]) && void 0 !== i ? i : y.length - 1,
-    T = m ? I : S,
-    N = m ? S : I,
+    T = g ? I : S,
+    N = g ? S : I,
     A = T;
   for (;;) {
     let t = y[A],
       n = null !== (u = A === S ? null === (a = v.path) || void 0 === a ? void 0 : a[1] : null) && void 0 !== u ? u : 0,
       r = null !== (d = A === I ? null === (l = b.path) || void 0 === l ? void 0 : l[1] : null) && void 0 !== d ? d : t.children.length - 1,
-      i = m ? r : n,
-      p = m ? n : r,
+      i = g ? r : n,
+      p = g ? n : r,
       h = i;
     for (;;) {
       let n, r;
       let i = t.children[h],
         a = [A, h];
-      if (n = o.C0.equals(a, v.path) || o.C0.isAncestor(a, v.path) ? !m && o.bN.isEnd(e, v, a) ? null : v : o.bN.start(e, a), r = o.C0.equals(a, b.path) || o.C0.isAncestor(a, b.path) ? m && o.bN.isStart(e, b, a) ? null : b : o.bN.end(e, a), null != n && null != r) {
+      if (n = o.C0.equals(a, v.path) || o.C0.isAncestor(a, v.path) ? !g && o.bN.isEnd(e, v, a) ? null : v : o.bN.start(e, a), r = o.C0.equals(a, b.path) || o.C0.isAncestor(a, b.path) ? g && o.bN.isStart(e, b, a) ? null : b : o.bN.end(e, a), null != n && null != r) {
         if (o.LC.isText(i) && 0 === i.text.length) {
           let e = {
             path: a,

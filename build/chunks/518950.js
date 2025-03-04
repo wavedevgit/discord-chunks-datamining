@@ -22,7 +22,7 @@ function l(e) {
   } = e, {
     avatarSrc: p,
     isAvatarAnimating: h,
-    eventHandlers: m
+    eventHandlers: g
   } = (0, s.Z)({
     user: t,
     guildId: n,
@@ -31,7 +31,7 @@ function l(e) {
     animateOnHover: d,
     avatarOverride: _
   }), {
-    avatarPlaceholderSrc: g,
+    avatarPlaceholderSrc: m,
     avatarDecorationSrc: E,
     eventHandlers: v
   } = (0, a.Z)({
@@ -44,17 +44,17 @@ function l(e) {
     showTryItOut: u
   });
   return {
-    avatarPlaceholderSrc: g,
+    avatarPlaceholderSrc: m,
     avatarDecorationSrc: E,
     avatarSrc: p,
     isAnimating: h,
     eventHandlers: {
       onMouseEnter: r.useCallback(() => {
-        m.onMouseEnter(), v.onMouseEnter()
-      }, [m, v]),
+        g.onMouseEnter(), v.onMouseEnter()
+      }, [g, v]),
       onMouseLeave: r.useCallback(() => {
-        m.onMouseLeave(), v.onMouseLeave()
-      }, [m, v])
+        g.onMouseLeave(), v.onMouseLeave()
+      }, [g, v])
     }
   }
 }

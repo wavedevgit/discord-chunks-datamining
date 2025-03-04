@@ -58,9 +58,9 @@ function h(e, t) {
   }), e
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
-  var n, r, i = g(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -68,7 +68,7 @@ function m(e, t) {
   return i
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -96,7 +96,7 @@ function v(e) {
     children: t,
     className: n,
     minor: i = !1
-  } = e, a = m(e, ["children", "className", "minor"]);
+  } = e, a = g(e, ["children", "className", "minor"]);
   return (0, r.jsx)(s.tEY, {
     children: (0, r.jsx)("button", h(_({
       className: o()(d.button, n, {
@@ -125,7 +125,7 @@ function O(e) {
     children: t,
     noticeType: n,
     additionalTrackingProps: i
-  } = e, o = m(e, ["children", "noticeType", "additionalTrackingProps"]);
+  } = e, o = g(e, ["children", "noticeType", "additionalTrackingProps"]);
   return (0, r.jsx)(v, h(_({}, o), {
     onClick: e => {
       null != o.onClick && o.onClick(e), b(n, i)
@@ -138,7 +138,7 @@ function S(e) {
   var {
     children: t,
     href: n
-  } = e, i = m(e, ["children", "href"]);
+  } = e, i = g(e, ["children", "href"]);
   return (0, r.jsx)(s.eee, h(_({}, i), {
     className: d.button,
     href: n,

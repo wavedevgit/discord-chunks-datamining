@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(695349),
   p = n(199778),
   h = n(594174),
-  m = n(314884),
-  g = n(709586),
+  g = n(314884),
+  m = n(709586),
   E = n(267642),
   v = n(74538),
   b = n(678558),
@@ -30,14 +30,14 @@ let T = function(e) {
     closeLayer: t,
     guild: n,
     onCtaVisibilityChange: o
-  } = e, T = (0, s.e7)([h.default], () => h.default.getCurrentUser()), N = (0, s.e7)([m.Z], () => m.Z.boostSlots), {
+  } = e, T = (0, s.e7)([h.default], () => h.default.getCurrentUser()), N = (0, s.e7)([g.Z], () => g.Z.boostSlots), {
     analyticsLocations: A
   } = (0, u.ZP)(), C = (0, _.W)(), R = i.useMemo(() => Object.keys(N).filter(e => {
     let t = N[e];
     return null != t.premiumGuildSubscription && t.premiumGuildSubscription.guildId === n.id
   }), [N, n.id]), P = i.useMemo(() => (0, E.vx)(N).length > 0, [N]);
 
-  function w() {
+  function D() {
     (0, f.Z)({
       initialPlanId: null,
       subscriptionTier: O.Si.TIER_2,
@@ -52,7 +52,7 @@ let T = function(e) {
     })
   }
 
-  function D() {
+  function w() {
     (0, f.Z)({
       initialPlanId: null,
       subscriptionTier: O.Si.TIER_2,
@@ -82,7 +82,7 @@ let T = function(e) {
       className: I.guildBoostCountWrapper,
       children: [(0, r.jsxs)("div", {
         className: I.guildBoostCount,
-        children: [(0, r.jsx)(g.Z, {
+        children: [(0, r.jsx)(m.Z, {
           className: a()(I.guildBoostBadge, {
             [I.guildBoostBadgeWithBoosts]: n.premiumSubscriberCount > 0
           })
@@ -133,7 +133,7 @@ let T = function(e) {
         innerClassName: a()(I.__invalid_guildBoostCtaContent, I.guildBoostCtaGiftContent),
         look: c.zxk.Looks.OUTLINED,
         color: c.zxk.Colors.WHITE,
-        onClick: D,
+        onClick: w,
         size: c.zxk.Sizes.LARGE,
         children: [(0, r.jsx)(c.OgN, {
           size: "md",
@@ -145,7 +145,7 @@ let T = function(e) {
         innerClassName: a()(I.__invalid_guildBoostCtaContent, I.__invalid_guildBoostCtaSubscribeContent),
         look: c.zxk.Looks.OUTLINED,
         color: c.zxk.Colors.WHITE,
-        onClick: w,
+        onClick: D,
         size: c.zxk.Sizes.LARGE,
         children: S.NW.string(S.t.Q43TvL)
       })]

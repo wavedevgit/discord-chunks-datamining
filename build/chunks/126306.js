@@ -35,7 +35,7 @@ function p(e) {
     children: o
   } = e, {
     reducedMotion: d
-  } = i.useContext(l.S), p = d.enabled ? 3 : n, [h, m] = i.useState(null != t), [g] = i.useState(() => new s.V7), [E, v] = i.useState(!0), b = i.useRef(null);
+  } = i.useContext(l.S), p = d.enabled ? 3 : n, [h, g] = i.useState(null != t), [m] = i.useState(() => new s.V7), [E, v] = i.useState(!0), b = i.useRef(null);
   return i.useLayoutEffect(() => {
     var e;
     null === (e = b.current) || void 0 === e || e.addEventListener("transitionend", () => {
@@ -43,9 +43,9 @@ function p(e) {
     }), setTimeout(() => {
       v(!1)
     }, u)
-  }, []), i.useEffect(() => () => g.stop(), [g]), i.useEffect(() => {
-    null != t && g.start(10, () => m(!0))
-  }, [t, g]), (0, r.jsx)("div", {
+  }, []), i.useEffect(() => () => m.stop(), [m]), i.useEffect(() => {
+    null != t && m.start(10, () => g(!0))
+  }, [t, m]), (0, r.jsx)("div", {
     "data-popout-animating": E,
     className: a()(null != t ? _[t] : null, {
       [f[p]]: null != t,

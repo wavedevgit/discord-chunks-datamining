@@ -8,7 +8,7 @@ n.d(t, {
   f3: () => b,
   iL: () => C,
   nA: () => I,
-  qF: () => g,
+  qF: () => m,
   uV: () => y,
   vY: () => N
 }), n(301563), n(47120), n(757143);
@@ -25,9 +25,9 @@ var r = n(200651),
   _ = n(474936),
   p = n(388032);
 let h = 524288e3,
-  m = 524288e3;
+  g = 524288e3;
 
-function g(e, t) {
+function m(e, t) {
   return e instanceof File ? e : E(e.data.buffer, e.filename, null != t ? t : "text/plain")
 }
 
@@ -120,7 +120,7 @@ function N(e) {
 
 function A() {
   let e = c.default.getCurrentUser();
-  return null != e && e.isStaff() ? m : h
+  return null != e && e.isStaff() ? g : h
 }
 
 function C(e) {

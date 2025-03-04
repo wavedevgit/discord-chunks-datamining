@@ -50,14 +50,14 @@ function _(e, t) {
 }
 let p = new Set([n(981631).ABu.CONTACTS]),
   h = !0,
-  m = [],
   g = [],
+  m = [],
   E = {},
   v = new Set,
   b = {},
   y = {},
   O = e => {
-    m = e.filter(e => !p.has(e.type) && s.Z.isSupported(e.type)), g = e.filter(e => p.has(e.type)), h = !1
+    g = e.filter(e => !p.has(e.type) && s.Z.isSupported(e.type)), m = e.filter(e => p.has(e.type)), h = !1
   };
 
 function S(e) {
@@ -86,7 +86,7 @@ function A(e) {
     id: n,
     revoked: r,
     accessToken: i
-  } = e, o = m.find(e => e.id === n && e.type === t);
+  } = e, o = g.find(e => e.id === n && e.type === t);
   if (null == o) return !1;
   null != r && (o.revoked = r), null != i && (o.accessToken = i)
 }
@@ -115,16 +115,16 @@ class R extends(r = i.ZP.Store) {
     return h
   }
   getAccounts() {
-    return m
-  }
-  getLocalAccounts() {
     return g
   }
+  getLocalAccounts() {
+    return m
+  }
   getAccount(e, t) {
-    return m.find(n => (null == e || n.id === e) && n.type === t)
+    return g.find(n => (null == e || n.id === e) && n.type === t)
   }
   getLocalAccount(e) {
-    return g.find(t => t.type === e)
+    return m.find(t => t.type === e)
   }
   isSuggestedAccountType(e) {
     return b[e] || !1

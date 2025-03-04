@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(339085),
   p = n(779699),
   h = n(359875),
-  m = n(124072),
-  g = n(692629),
+  g = n(124072),
+  m = n(692629),
   E = n(695503),
   v = n(628692),
   b = n(590956),
@@ -31,8 +31,8 @@ var r = n(200651),
   C = n(551452),
   R = n(69626),
   P = n(142990),
-  w = n(532901),
-  D = n(311739),
+  D = n(532901),
+  w = n(311739),
   L = n(981631),
   x = n(176505),
   M = n(509045),
@@ -292,12 +292,12 @@ let W = {
       let i = () => {
         Z(e.guildId, e.id, e.itemId)
       };
-      return (0, T.k)(e.id) ? (0, r.jsxs)(m.Z, {
+      return (0, T.k)(e.id) ? (0, r.jsxs)(g.Z, {
         role: "link",
         onClick: i,
         className: "channelMention",
         iconType: e.id,
-        children: [t(e.mainContent, n), null != e.itemContent ? (0, r.jsx)(g.Z, {}) : null, null != e.itemContent ? t(e.itemContent, n) : null]
+        children: [t(e.mainContent, n), null != e.itemContent ? (0, r.jsx)(m.Z, {}) : null, null != e.itemContent ? t(e.itemContent, n) : null]
       }, n.key) : null
     }
   },
@@ -378,13 +378,13 @@ let W = {
 
 function Y(e) {
   return B(U({}, W), {
-    link: (0, w.Z)(e),
+    link: (0, D.Z)(e),
     devLink: (0, P.Z)(e),
     emoji: V(e),
     customEmoji: F(e),
     channelMention: (0, C.Z)(e),
     commandMention: (0, R.ZP)(e),
     attachmentLink: (0, A.Z)(e),
-    shopLink: (0, D.Z)(e)
+    shopLink: (0, w.Z)(e)
   })
 }

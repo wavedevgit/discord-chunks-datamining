@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r, i = n(442837),
   o = n(570140),
@@ -57,7 +57,7 @@ class h extends(r = i.ZP.PersistedStore) {
   }
 }
 l(h, "displayName", "ApplicationStreamingSettingsStore"), l(h, "persistKey", "ApplicationStreamingSettingStore");
-let m = new h(o.Z, {
+let g = new h(o.Z, {
   MEDIA_ENGINE_SET_GO_LIVE_SOURCE: _,
   STREAM_UPDATE_SETTINGS: p
 })

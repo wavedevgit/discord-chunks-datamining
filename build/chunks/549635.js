@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(589530),
   p = n(591759),
   h = n(254109),
-  m = n(212459),
-  g = n(654577);
+  g = n(212459),
+  m = n(654577);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -102,10 +102,10 @@ function T(e) {
     } = n,
     P = O(n, ["width", "height", "url", "proxyUrl", "alt", "type", "maxWidth", "maxHeight"]),
     {
-      zoomed: w,
-      setZoomed: D
-    } = (0, m.Y)(),
-    L = A(w, b, S),
+      zoomed: D,
+      setZoomed: w
+    } = (0, g.Y)(),
+    L = A(D, b, S),
     x = null != p && 0 !== p && null != E && 0 !== E;
   if ("VIDEO" === N && x && null != S) {
     var M;
@@ -139,7 +139,7 @@ function T(e) {
     maxHeight: s,
     useFullWidth: !0,
     shouldLink: !1,
-    className: g.media,
+    className: m.media,
     animated: !i && n.animated,
     autoPlay: !i,
     alt: T,
@@ -148,7 +148,7 @@ function T(e) {
     src: L,
     alt: T,
     onContextMenu: f,
-    className: g.dimensionlessImage,
+    className: m.dimensionlessImage,
     style: {
       maxWidth: o,
       maxHeight: s
@@ -158,12 +158,12 @@ function T(e) {
     height: E,
     maxWidth: o,
     maxHeight: s,
-    active: w,
-    className: a()(g.wrapper, {
-      [g.zoomed]: w
+    active: D,
+    className: a()(m.wrapper, {
+      [m.zoomed]: D
     }),
     onClick: () => {
-      D(!w), (0, h.yg)(w ? h.uG.ZOOM_OUT_IMAGE_PRESSED : h.uG.ZOOM_IN_IMAGE_PRESSED)
+      w(!D), (0, h.yg)(D ? h.uG.ZOOM_OUT_IMAGE_PRESSED : h.uG.ZOOM_IN_IMAGE_PRESSED)
     },
     children: t
   }) : null

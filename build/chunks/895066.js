@@ -183,30 +183,30 @@ class f {
   }
   getPeriodicStats() {
     let e = [];
-    for (let [h, m] of Object.entries(this.periodicInboundStats)) {
+    for (let [h, g] of Object.entries(this.periodicInboundStats)) {
       let {
-        previous: g,
+        previous: m,
         current: E,
         currentTimestampMs: v,
         previousTimestampMs: b,
         numRateSamples: y
-      } = m;
+      } = g;
       if (void 0 !== b && v > b) {
         var t, n, r, i, o, a, s, l, c, u, d, f, _, p;
         let O = v - b,
           S = {
             userId: h,
-            silent: null !== (n = E.silent) && void 0 !== n ? n : 0 - (null !== (t = g.silent) && void 0 !== t ? t : 0),
-            normal: null !== (i = E.normal) && void 0 !== i ? i : 0 - (null !== (r = g.normal) && void 0 !== r ? r : 0),
-            merged: null !== (a = E.merged) && void 0 !== a ? a : 0 - (null !== (o = g.merged) && void 0 !== o ? o : 0),
-            expanded: null !== (l = E.expanded) && void 0 !== l ? l : 0 - (null !== (s = g.expanded) && void 0 !== s ? s : 0),
-            accelerated: null !== (u = E.accelerated) && void 0 !== u ? u : 0 - (null !== (c = g.accelerated) && void 0 !== c ? c : 0),
-            preemptiveExpanded: null !== (f = E.preemptiveExpanded) && void 0 !== f ? f : 0 - (null !== (d = g.preemptiveExpanded) && void 0 !== d ? d : 0),
-            cng: null !== (p = E.cng) && void 0 !== p ? p : 0 - (null !== (_ = g.cng) && void 0 !== _ ? _ : 0),
-            accelerateRate: m.accelerateRateSum / y,
-            expandRate: m.expandRateSum / y,
-            preemptiveExpandRate: m.preemptiveExpandRateSum / y,
-            speechExpandRate: m.speechExpandRateSum / y,
+            silent: null !== (n = E.silent) && void 0 !== n ? n : 0 - (null !== (t = m.silent) && void 0 !== t ? t : 0),
+            normal: null !== (i = E.normal) && void 0 !== i ? i : 0 - (null !== (r = m.normal) && void 0 !== r ? r : 0),
+            merged: null !== (a = E.merged) && void 0 !== a ? a : 0 - (null !== (o = m.merged) && void 0 !== o ? o : 0),
+            expanded: null !== (l = E.expanded) && void 0 !== l ? l : 0 - (null !== (s = m.expanded) && void 0 !== s ? s : 0),
+            accelerated: null !== (u = E.accelerated) && void 0 !== u ? u : 0 - (null !== (c = m.accelerated) && void 0 !== c ? c : 0),
+            preemptiveExpanded: null !== (f = E.preemptiveExpanded) && void 0 !== f ? f : 0 - (null !== (d = m.preemptiveExpanded) && void 0 !== d ? d : 0),
+            cng: null !== (p = E.cng) && void 0 !== p ? p : 0 - (null !== (_ = m.cng) && void 0 !== _ ? _ : 0),
+            accelerateRate: g.accelerateRateSum / y,
+            expandRate: g.expandRateSum / y,
+            preemptiveExpandRate: g.preemptiveExpandRateSum / y,
+            speechExpandRate: g.speechExpandRateSum / y,
             durationMs: O
           };
         S.normal + S.merged + S.expanded + S.accelerated + S.preemptiveExpanded > 0 && e.push(S)
@@ -252,7 +252,7 @@ class f {
       }), i().forEach(e.rtp.inbound, (t, n) => {
         i().forEach(t, t => {
           if ("audio" === t.type) {
-            var r, o, a, s, l, c, d, f, _, p, h, m, g, E, v, b, y, O, S;
+            var r, o, a, s, l, c, d, f, _, p, h, g, m, E, v, b, y, O, S;
             let I = null !== (r = e.transport.ping) && void 0 !== r ? r : 0,
               T = t.packetsReceived,
               N = t.packetsLost,
@@ -260,8 +260,8 @@ class f {
               C = t.nackCount,
               R = null !== (o = t.fecPacketsReceived) && void 0 !== o ? o : 0,
               P = null !== (a = t.fecPacketsDiscarded) && void 0 !== a ? a : 0,
-              w = null !== (s = t.jitterBuffer) && void 0 !== s ? s : 0,
-              D = {
+              D = null !== (s = t.jitterBuffer) && void 0 !== s ? s : 0,
+              w = {
                 audioJitterBuffer: t.audioJitterBuffer,
                 audioJitterTarget: t.audioJitterTarget,
                 audioJitterDelay: t.audioJitterDelay,
@@ -291,7 +291,7 @@ class f {
                 r = N - this.inboundStats[n].packetsLost,
                 o = 0,
                 a = this.inboundStats[n].mosBuckets;
-              e > 0 && r >= 0 && (o = this.calculateMos(I + w, i().clamp(r / (e + r), 0, 1)), a[Math.floor(o)]++), this.inboundStats[n] = u({
+              e > 0 && r >= 0 && (o = this.calculateMos(I + D, i().clamp(r / (e + r), 0, 1)), a[Math.floor(o)]++), this.inboundStats[n] = u({
                 packetsReceived: T,
                 bytesReceived: A,
                 packetsLost: N,
@@ -302,15 +302,15 @@ class f {
                 mosSum: this.inboundStats[n].mosSum + o,
                 mosCount: this.inboundStats[n].mosCount + +(o > 0),
                 mosBuckets: a,
-                bufferStats: D,
+                bufferStats: w,
                 frameOpStats: L
               }, x), this.periodicInboundStats[n] = {
                 previousTimestampMs: this.periodicInboundStats[n].previousTimestampMs,
                 previous: this.periodicInboundStats[n].previous,
                 currentTimestampMs: Date.now(),
                 current: L,
-                accelerateRateSum: this.periodicInboundStats[n].accelerateRateSum + (null !== (m = t.accelerateRate) && void 0 !== m ? m : 0),
-                expandRateSum: this.periodicInboundStats[n].expandRateSum + (null !== (g = t.expandRate) && void 0 !== g ? g : 0),
+                accelerateRateSum: this.periodicInboundStats[n].accelerateRateSum + (null !== (g = t.accelerateRate) && void 0 !== g ? g : 0),
+                expandRateSum: this.periodicInboundStats[n].expandRateSum + (null !== (m = t.expandRate) && void 0 !== m ? m : 0),
                 preemptiveExpandRateSum: this.periodicInboundStats[n].preemptiveExpandRateSum + (null !== (E = t.preemptiveExpandRate) && void 0 !== E ? E : 0),
                 speechExpandRateSum: this.periodicInboundStats[n].speechExpandRateSum + (null !== (v = t.speechExpandRate) && void 0 !== v ? v : 0),
                 numRateSamples: this.periodicInboundStats[n].numRateSamples + 1
@@ -326,7 +326,7 @@ class f {
               mosSum: 0,
               mosCount: 0,
               mosBuckets: [0, 0, 0, 0, 0],
-              bufferStats: D,
+              bufferStats: w,
               frameOpStats: L
             }, x), this.periodicInboundStats[n] = {
               previousTimestampMs: Date.now(),

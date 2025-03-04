@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(768865),
   p = n(617136),
   h = n(497505),
-  m = n(703656),
-  g = n(317257),
+  g = n(703656),
+  m = n(317257),
   E = n(594174),
   v = n(626135),
   b = n(111361),
@@ -31,8 +31,8 @@ var r = n(200651),
   C = n(474936),
   R = n(681642),
   P = n(388032),
-  w = n(219041),
-  D = n(223640);
+  D = n(219041),
+  w = n(223640);
 
 function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -58,21 +58,21 @@ function x(e) {
 let M = e => {
     if (null != e) switch (e) {
       case C.JN.PREMIUM_TENURE_1_MONTH:
-        return w.tieredTenureBadgeBronzeGlow;
+        return D.tieredTenureBadgeBronzeGlow;
       case C.JN.PREMIUM_TENURE_3_MONTH:
-        return w.tieredTenureBadgeSilverGlow;
+        return D.tieredTenureBadgeSilverGlow;
       case C.JN.PREMIUM_TENURE_6_MONTH:
-        return w.tieredTenureBadgeGoldGlow;
+        return D.tieredTenureBadgeGoldGlow;
       case C.JN.PREMIUM_TENURE_12_MONTH:
-        return w.tieredTenureBadgePlatinumGlow;
+        return D.tieredTenureBadgePlatinumGlow;
       case C.JN.PREMIUM_TENURE_24_MONTH:
-        return w.tieredTenureBadgeDiamondGlow;
+        return D.tieredTenureBadgeDiamondGlow;
       case C.JN.PREMIUM_TENURE_36_MONTH:
-        return w.tieredTenureBadgeEmeraldGlow;
+        return D.tieredTenureBadgeEmeraldGlow;
       case C.JN.PREMIUM_TENURE_60_MONTH:
-        return w.tieredTenureBadgeRubyGlow;
+        return D.tieredTenureBadgeRubyGlow;
       case C.JN.PREMIUM_TENURE_72_MONTH:
-        return w.tieredTenureBadgeFireGlow;
+        return D.tieredTenureBadgeFireGlow;
       default:
         return
     }
@@ -82,7 +82,7 @@ let M = e => {
       badge: t,
       tieredTenureBadge: n
     } = e;
-    return t.id === g.l.ORB_PROFILE_BADGE ? (0, r.jsx)(f.r4, {
+    return t.id === m.l.ORB_PROFILE_BADGE ? (0, r.jsx)(f.r4, {
       profileBadge: t
     }) : void 0 !== n && t.id !== R.a ? (0, r.jsx)(f.L7, {
       profileBadge: t,
@@ -107,11 +107,11 @@ function j(e) {
     isBadgeVersion2: W
   } = (0, d.D)();
   return (0, r.jsx)("div", {
-    className: a()(w.container, n),
+    className: a()(D.container, n),
     "aria-label": P.NW.string(P.t.VWV0y8),
     role: "group",
     children: t.map(e => {
-      let t = e.id === g.l.ORB_PROFILE_BADGE,
+      let t = e.id === m.l.ORB_PROFILE_BADGE,
         n = (0, y.fv)(e.id),
         i = W && (null != n || e.id === R.a),
         c = t => {
@@ -126,7 +126,7 @@ function j(e) {
                 premium_type: H,
                 viewed_user_id: null == f ? void 0 : f.userId
               }), H) {
-              (null == f ? void 0 : f.userId) === (null == Z ? void 0 : Z.id) ? (0, m.uL)(A.Z5c.NITRO_HOME) : (0, _.k)({
+              (null == f ? void 0 : f.userId) === (null == Z ? void 0 : Z.id) ? (0, g.uL)(A.Z5c.NITRO_HOME) : (0, _.k)({
                 analyticsLocations: U,
                 displayProfile: f
               }), null == L || L();
@@ -178,16 +178,16 @@ function j(e) {
           children: [(0, r.jsx)("img", {
             alt: " ",
             "aria-hidden": !0,
-            src: t ? D : (0, N.jC)(e.icon),
-            className: a()(w.badge, o, {
-              [w.orbBadge]: t
+            src: t ? w : (0, N.jC)(e.icon),
+            className: a()(D.badge, o, {
+              [D.orbBadge]: t
             })
           }), E && (0, r.jsxs)("div", {
-            className: w.starContainer,
+            className: D.starContainer,
             children: [(0, r.jsx)(T.Z, {
-              className: w.topLeftStar
+              className: D.topLeftStar
             }), (0, r.jsx)(T.Z, {
-              className: w.bottomRightStar
+              className: D.bottomRightStar
             })]
           })]
         })

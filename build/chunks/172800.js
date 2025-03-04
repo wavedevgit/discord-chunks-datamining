@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(438332),
   p = n(806966),
   h = n(434404),
-  m = n(598804),
-  g = n(675478),
+  g = n(598804),
+  m = n(675478),
   E = n(819758),
   v = n(626135),
   b = n(392552),
@@ -67,9 +67,9 @@ function P(e, t) {
   }), e
 }
 
-function w(e, t) {
+function D(e, t) {
   if (null == e) return {};
-  var n, r, i = D(e, t);
+  var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -77,7 +77,7 @@ function w(e, t) {
   return i
 }
 
-function D(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -90,7 +90,7 @@ let L = e => {
     emojiSize: o,
     onSelect: A,
     onSelectSoundmoji: R,
-    onInspect: D,
+    onInspect: w,
     surrogateCodePoint: L,
     getEmojiItemProps: x,
     getEmojiRowProps: M,
@@ -115,7 +115,7 @@ let L = e => {
     autoTrackExposure: !1
   }), Q = n(187119), X = n(39874), J = n(853871), $ = n(63149), ee = n(263112), et = n(490567), en = n(292795), er = n(7940), ei = (0, u.ZP)(), eo = p.kJ.getState(), [ea, es] = i.useState(eo.inspectedExpressionPosition), [el, ec] = (0, c.Z)(null, 300), eu = i.useRef(null);
   i.useEffect(() => p.kJ.subscribe(e => e.inspectedExpressionPosition, e => es(e)), []), i.useEffect(() => {
-    g.DZ.loadIfNecessary()
+    m.DZ.loadIfNecessary()
   }, []);
   let ed = o === S.Su.LARGE,
     ef = o === S.Su.MEDIUM,
@@ -134,18 +134,18 @@ let L = e => {
             visibleRowIndex: _,
             columnIndex: p
           } = e, h = null !== (n = x(p, U)) && void 0 !== n ? n : {}, {
-            ref: m,
-            tabIndex: g,
+            ref: g,
+            tabIndex: m,
             onFocus: E
-          } = h, v = w(h, ["ref", "tabIndex", "onFocus"]), b = ea.rowIndex === _ && ea.columnIndex === p, y = () => {
-            k.current || j.current || D(e)
+          } = h, v = D(h, ["ref", "tabIndex", "onFocus"]), b = ea.rowIndex === _ && ea.columnIndex === p, y = () => {
+            k.current || j.current || w(e)
           };
           return (0, i.createElement)("li", P(C({}, v), {
             key: t
           }), (0, r.jsx)(l.tEY, {
             children: (0, r.jsx)("button", {
               "aria-label": d,
-              ref: m,
+              ref: g,
               className: a()(N.emojiItem, {
                 [N.emojiItemLarge]: ed,
                 [N.emojiItemMedium]: ef,
@@ -158,7 +158,7 @@ let L = e => {
               onMouseEnter: o,
               onMouseLeave: s,
               onClick: c,
-              tabIndex: g,
+              tabIndex: m,
               children: u
             })
           }))
@@ -224,7 +224,7 @@ let L = e => {
             allowAnimatedEmoji: G,
             selectedItemClassName: Z,
             onSelect: A,
-            onInspect: D,
+            onInspect: w,
             channelGuildId: V,
             getEmojiItemProps: x,
             isMediumSize: ef,
@@ -253,7 +253,7 @@ let L = e => {
   if (F === S.UX.SOUNDMOJI) return (0, r.jsx)("ul", {
     className: N.emojiListRow,
     ref: eu,
-    children: (0, r.jsx)(m.Z, {
+    children: (0, r.jsx)(g.Z, {
       channelId: H,
       onSelectSoundmoji: R
     })
@@ -264,11 +264,11 @@ let L = e => {
       let t = e;
       return t.subCategory === S.t0.TOP_GUILD_EMOJI || t.subCategory === S.t0.NEWLY_ADDED_EMOJI && t.emoji.type === f.B.GUILD && !_.Z.isNewerThanLastSeen(t.emoji.guildId, t.emoji.id)
     }),
-    em = t.filter(e => {
+    eg = t.filter(e => {
       let t = e;
       return t.subCategory === S.t0.NEWLY_ADDED_EMOJI && t.emoji.type === f.B.GUILD && _.Z.isNewerThanLastSeen(t.emoji.guildId, t.emoji.id)
     });
-  return 0 === em.length ? ep(t) : (0, r.jsxs)("div", {
+  return 0 === eg.length ? ep(t) : (0, r.jsxs)("div", {
     className: N.topEmojiSectionContainer,
     children: [(0, r.jsx)("div", {
       className: a()(N.topEmojiContainer, {
@@ -279,10 +279,10 @@ let L = e => {
       className: N.newlyAddedHighlightContainer,
       children: [(0, r.jsx)("div", {
         className: a()(N.newlyAddedHighlight, {
-          [N.oneItem]: 1 === em.length,
+          [N.oneItem]: 1 === eg.length,
           [N.alignRight]: eh.length > 0
         }),
-        children: ep(em)
+        children: ep(eg)
       }), (0, r.jsxs)("div", {
         className: a()(N.newlyAddedBadge, {
           [N.newlyAddedBadgeLarge]: ed,

@@ -22,12 +22,12 @@ function _(e, t) {
       audioRef: _
     } = i.useContext(s.Z),
     [p, h] = i.useState(!1),
-    m = (0, o.e7)([c.Z], () => c.Z.isPlayingSound(e.soundId), [e]);
+    g = (0, o.e7)([c.Z], () => c.Z.isPlayingSound(e.soundId), [e]);
   return {
     playSoundboardSound: i.useCallback(n => {
       null != _.current && _.current.pause(), null != t && (0, u.GN)(e, t, n)
     }, [e, _, t]),
-    isPlayingSound: m,
+    isPlayingSound: g,
     previewSound: i.useCallback(async () => {
       let t = (0, d.Z)(e.soundId),
         r = new(await (0, a.Z)(t));

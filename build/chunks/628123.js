@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(386506),
   p = n(304761),
   h = n(865427),
-  m = n(406128),
-  g = n(797614),
+  g = n(406128),
+  m = n(797614),
   E = n(703656),
   v = n(626135),
   b = n(960048),
@@ -57,7 +57,7 @@ function N() {
   })
 }
 let A = a().throttle(e => {
-  g.Z.increment({
+  m.Z.increment({
     name: c.V.APP_CRASHED,
     tags: ["reason:".concat(s.v.UNHANDLED_JS_ERROR), "level:".concat(l.c.FATAL), "modded_client:".concat(e)]
   }, !0)
@@ -122,7 +122,7 @@ class C extends i.PureComponent {
             children: S.NW.string(S.t["+hivLS"])
           }), (0, r.jsx)(N, {})]
         });
-      return (0, r.jsx)(m.Z, {
+      return (0, r.jsx)(g.Z, {
         title: S.NW.string(S.t["3h+n+/"]),
         note: null != t ? t() : e,
         action: n,

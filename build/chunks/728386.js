@@ -17,7 +17,7 @@ var r = n(200651),
   p = n(388032),
   h = n(25675);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,14 +26,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -60,7 +60,7 @@ function b(e, t) {
   let {
     disabled: n,
     type: o
-  } = e, [m, E] = (0, d.Iu)(e => [e.activeView, e.pickerId], s.X), b = i.useContext(c.ZP), y = !1, [O, S] = i.useState(!1), I = m === _.X1.STICKER, T = !1, N = i.useCallback(() => {
+  } = e, [g, E] = (0, d.Iu)(e => [e.activeView, e.pickerId], s.X), b = i.useContext(c.ZP), y = !1, [O, S] = i.useState(!1), I = g === _.X1.STICKER, T = !1, N = i.useCallback(() => {
     (0, d.RO)(_.X1.STICKER, o)
   }, [o]);
   i.useEffect(() => {
@@ -84,13 +84,13 @@ function b(e, t) {
     play: R
   } = (0, l.z)(), P = (0, u.Q3)("ChannelStickerPickerButton");
   if (n) return null;
-  let w = O;
+  let D = O;
   return (0, r.jsx)("div", {
     className: a()(_.CT, h.buttonContainer),
     ref: t,
-    children: (0, r.jsx)(f.Z, v(g({
+    children: (0, r.jsx)(f.Z, v(m({
       innerClassName: a()(h.button, h.stickerButton, {
-        [h.stickerButtonTilted]: w && !I
+        [h.stickerButtonTilted]: D && !I
       })
     }, C), {
       onClick: () => {

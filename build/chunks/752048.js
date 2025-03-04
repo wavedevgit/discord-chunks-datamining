@@ -45,14 +45,14 @@ function h() {
   d = !0
 }
 
-function m(e) {
+function g(e) {
   let {
     affineUsers: t
   } = e;
   _.lastFetched = Date.now(), d = !1, _.userAffinities = t, p()
 }
 
-function g() {
+function m() {
   d = !1
 }
 
@@ -89,7 +89,7 @@ class v extends(r = i.ZP.PersistedStore) {
 l(v, "displayName", "UserAffinitiesV2Store"), l(v, "persistKey", "UserAffinitiesStoreV2");
 let b = new v(o.Z, {
   LOAD_USER_AFFINITIES_V2: h,
-  LOAD_USER_AFFINITIES_V2_SUCCESS: m,
-  LOAD_USER_AFFINITIES_V2_FAILURE: g,
+  LOAD_USER_AFFINITIES_V2_SUCCESS: g,
+  LOAD_USER_AFFINITIES_V2_FAILURE: m,
   LOGOUT: E
 })

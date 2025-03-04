@@ -7,7 +7,7 @@ n.d(t, {
   Cb: () => T,
   Cr: () => M,
   Ec: () => v,
-  Es: () => w,
+  Es: () => D,
   Ev: () => s,
   Fu: () => P,
   GM: () => q,
@@ -20,10 +20,10 @@ n.d(t, {
   MO: () => f,
   OF: () => z,
   P9: () => x,
-  PD: () => m,
+  PD: () => g,
   Pc: () => F,
   S4: () => U,
-  Si: () => D,
+  Si: () => w,
   Ws: () => j,
   Zc: () => S,
   ag: () => B,
@@ -33,7 +33,7 @@ n.d(t, {
   d: () => a,
   eB: () => L,
   fE: () => y,
-  jT: () => g,
+  jT: () => m,
   js: () => _,
   l4: () => b,
   mI: () => p,
@@ -57,8 +57,8 @@ let o = 160,
   _ = "1007373802981822582",
   p = "1039835161136746497",
   h = "852509694341283871",
-  m = "903769130790969345",
-  g = "880218394199220334",
+  g = "903769130790969345",
+  m = "880218394199220334",
   E = "1078728822972764312",
   v = "947957217959759964",
   b = "832013003968348200",
@@ -72,8 +72,8 @@ let o = 160,
   C = "1011683823555199066",
   R = "1234546995360694434",
   P = "1214629548377768066",
-  w = "https://discord.sjc1.qualtrics.com/jfe/form/SV_6SvWAOxlcSRWiEu",
-  D = {
+  D = "https://discord.sjc1.qualtrics.com/jfe/form/SV_6SvWAOxlcSRWiEu",
+  w = {
     SMALL: 64,
     LARGE: 160
   },
@@ -96,8 +96,8 @@ var k = function(e) {
     return e[e.DIRECTORY = 0] = "DIRECTORY", e[e.SELECT_CHANNEL = 1] = "SELECT_CHANNEL", e[e.DETAIL_PAGE = 2] = "DETAIL_PAGE", e
   }({});
 let V = "activity-shelf",
-  F = new Set([c, u, d, g]),
-  Z = new Set([u, d, g]);
+  F = new Set([c, u, d, m]),
+  Z = new Set([u, d, m]);
 var H = function(e) {
   return e[e.FOCUSED = 0] = "FOCUSED", e[e.PIP = 1] = "PIP", e[e.GRID = 2] = "GRID", e
 }({});

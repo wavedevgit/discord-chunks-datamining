@@ -13,8 +13,8 @@ var r = n(147018),
   _ = n(907533),
   p = n(552028),
   h = n(646328),
-  m = n(18316),
-  g = n(712560),
+  g = n(18316),
+  m = n(712560),
   E = n(966606),
   v = n(740362),
   b = n(974971),
@@ -28,15 +28,15 @@ var r = n(147018),
   C = n(335225).forEach,
   R = n(930990),
   P = n(4340),
-  w = n(97131),
-  D = n(347722),
+  D = n(97131),
+  w = n(347722),
   L = n(644659),
   x = n(95948),
   M = L.get,
   k = L.set,
   j = L.enforce,
-  U = w.f,
-  G = D.f,
+  U = D.f,
+  G = w.f,
   B = i.RangeError,
   V = c.ArrayBuffer,
   F = V.prototype,
@@ -75,7 +75,7 @@ var r = n(147018),
   er = function(e, t, n) {
     return et(e, t = E(t)) && y(n) && v(n, "value") && !v(n, "get") && !v(n, "set") && !n.configurable && (!v(n, "writable") || n.writable) && (!v(n, "enumerable") || n.enumerable) ? (e[t] = n.value, e) : U(e, t, n)
   };
-a ? (H || (D.f = en, w.f = er, $(K, "buffer"), $(K, "byteOffset"), $(K, "byteLength"), $(K, "length")), r({
+a ? (H || (w.f = en, D.f = er, $(K, "buffer"), $(K, "byteOffset"), $(K, "byteLength"), $(K, "length")), r({
   target: "Object",
   stat: !0,
   forced: !H
@@ -97,7 +97,7 @@ a ? (H || (D.f = en, w.f = er, $(K, "buffer"), $(K, "byteOffset"), $(K, "byteLen
     },
     I = function(e, t, r) {
       var i = M(e);
-      i.view[d](t * a + i.byteOffset, n ? g(r) : r, !0)
+      i.view[d](t * a + i.byteOffset, n ? m(r) : r, !0)
     },
     P = function(e, t) {
       U(e, t, {
@@ -112,7 +112,7 @@ a ? (H || (D.f = en, w.f = er, $(K, "buffer"), $(K, "byteOffset"), $(K, "byteLen
     };
   H ? s && (E = t(function(e, t, n, r) {
     return u(e, v), x(function() {
-      return y(t) ? ee(t) ? void 0 !== r ? new _(t, m(n, a), r) : void 0 !== n ? new _(t, m(n, a)) : new _(t) : q(t) ? J(E, t) : o(A, E, t) : new _(h(t))
+      return y(t) ? ee(t) ? void 0 !== r ? new _(t, g(n, a), r) : void 0 !== n ? new _(t, g(n, a)) : new _(t) : q(t) ? J(E, t) : o(A, E, t) : new _(h(t))
     }(), e, E)
   }), T && T(E, Y), C(N(_), function(e) {
     e in E || f(E, e, _[e])
@@ -122,7 +122,7 @@ a ? (H || (D.f = en, w.f = er, $(K, "buffer"), $(K, "byteOffset"), $(K, "byteLen
       d = 0;
     if (y(t)) {
       if (ee(t)) {
-        i = t, d = m(n, a);
+        i = t, d = g(n, a);
         var f = t.byteLength;
         if (void 0 === r) {
           if (f % a || (s = f - d) < 0) throw B(X)
@@ -139,11 +139,11 @@ a ? (H || (D.f = en, w.f = er, $(K, "buffer"), $(K, "byteOffset"), $(K, "byteLen
         view: new Z(i)
       }); c < l;) P(e, c++)
   }), T && T(E, Y), v = E.prototype = S(K)), v.constructor !== E && f(v, "constructor", E), j(v).TypedArrayConstructor = E, W && f(v, W, l);
-  var w = E !== _;
+  var D = E !== _;
   b[l] = E, r({
     global: !0,
     constructor: !0,
-    forced: w,
+    forced: D,
     sham: !H
   }, b), Q in E || f(E, Q, a), Q in v || f(v, Q, a), R(l)
 }) : e.exports = function() {}

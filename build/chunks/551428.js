@@ -24,7 +24,7 @@ let d = {},
   p = {},
   h = new Set;
 
-function m(e) {
+function g(e) {
   let t = e.id,
     n = e.sku.id,
     r = d[t],
@@ -32,7 +32,7 @@ function m(e) {
   !(null != r && !r.isSlimDirectoryVersion() && i.isSlimDirectoryVersion()) && (!1 === e.published ? (null == _[n] && (_[n] = new Set), _[n].add(t)) : p[n] = t, d[t] = i, h.delete(e.sku.id))
 }
 
-function g(e, t) {
+function m(e, t) {
   return "".concat(e, ":").concat(t)
 }
 
@@ -40,7 +40,7 @@ function E(e) {
   let {
     storeListings: t
   } = e;
-  for (let e of t) m(e)
+  for (let e of t) g(e)
 }
 
 function v(e) {
@@ -50,8 +50,8 @@ function v(e) {
   } = e;
   if (null != n) {
     let e = l.Z.createFromServer(t);
-    f[g(n, e.skuId)] = e, p[e.skuId] = e.id
-  } else m(t)
+    f[m(n, e.skuId)] = e, p[e.skuId] = e.id
+  } else g(t)
 }
 
 function b(e) {
@@ -59,7 +59,7 @@ function b(e) {
     giftCode: t
   } = e;
   if (null == t.store_listing) return !1;
-  m(t.store_listing)
+  g(t.store_listing)
 }
 
 function y(e) {
@@ -93,14 +93,14 @@ class T extends(i = o.ZP.Store) {
   }
   getForSKU(e, t) {
     let n = p[e];
-    return null != t ? f[g(t, e)] : null != n ? d[n] : null
+    return null != t ? f[m(t, e)] : null != n ? d[n] : null
   }
   getUnpublishedForSKU(e) {
     let t = _[e];
     return null == t ? [] : Array.from(t).map(e => d[e]).filter(c.lm)
   }
   getForChannel(e, t) {
-    return f[g(e, t)]
+    return f[m(e, t)]
   }
   isFetchingForSKU(e) {
     return h.has(e)

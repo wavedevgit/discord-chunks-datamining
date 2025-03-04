@@ -22,8 +22,8 @@ _.delete("a", 1), _.delete("b", void 0), _ + "" != "a=2" && r(l, "delete", funct
       value: e
     })
   }), a(n, 1);
-  for (var s = o(e), l = o(r), _ = 0, p = 0, h = !1, m = i.length; _ < m;) t = i[_++], h || t.key === s ? (h = !0, u(this, t.key)) : p++;
-  for (; p < m;)((t = i[p++]).key !== s || t.value !== l) && c(this, t.key, t.value)
+  for (var s = o(e), l = o(r), _ = 0, p = 0, h = !1, g = i.length; _ < g;) t = i[_++], h || t.key === s ? (h = !0, u(this, t.key)) : p++;
+  for (; p < g;)((t = i[p++]).key !== s || t.value !== l) && c(this, t.key, t.value)
 }, {
   enumerable: !0,
   unsafe: !0

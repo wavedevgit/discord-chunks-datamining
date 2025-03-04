@@ -28,7 +28,7 @@ async function h(e, t) {
     })
   }
 }
-async function m(e) {
+async function g(e) {
   let {
     currentEmbeddedApplication: t
   } = e;
@@ -47,7 +47,7 @@ async function m(e) {
     }, () => e(!1))
   }))
 }
-async function g(e) {
+async function m(e) {
   let {
     application: t,
     applicationId: n,
@@ -83,7 +83,7 @@ async function E(e) {
   }))
 }
 async function v(e) {
-  return !!(await m({
+  return !!(await g({
     currentEmbeddedApplication: e.currentEmbeddedApplication
-  }) && await g(e) && await E(e))
+  }) && await m(e) && await E(e))
 }

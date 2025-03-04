@@ -71,14 +71,14 @@ let h = {
     HORIZONTAL: s.horizontal,
     HORIZONTAL_REVERSE: s.horizontalReverse
   },
-  m = {
+  g = {
     START: l.justifyStart,
     END: l.justifyEnd,
     CENTER: l.justifyCenter,
     BETWEEN: l.justifyBetween,
     AROUND: l.justifyAround
   },
-  g = {
+  m = {
     START: l.alignStart,
     END: l.alignEnd,
     CENTER: l.alignCenter,
@@ -100,7 +100,7 @@ let h = {
       style: d,
       wrap: p = !1
     } = e, h = _(e, ["children", "className", "shrink", "grow", "basis", "style", "wrap"]);
-    let m = u({
+    let g = u({
       className: n = null != n ? n : s.flexChild,
       style: u({
         flexGrow: l,
@@ -110,9 +110,9 @@ let h = {
     }, h);
     if (!p && "string" != typeof t && 1 === i.Children.count(t)) {
       let e = i.Children.only(t);
-      return m.style = u({}, m.style, e.props.style), m.className = a()(e.props.className, n), i.cloneElement(e, m)
+      return g.style = u({}, g.style, e.props.style), g.className = a()(e.props.className, n), i.cloneElement(e, g)
     }
-    return (0, r.jsx)("div", f(u({}, m), {
+    return (0, r.jsx)("div", f(u({}, g), {
       children: t
     }))
   },
@@ -121,8 +121,8 @@ let h = {
       children: t,
       className: n,
       direction: i = h.HORIZONTAL,
-      justify: o = m.START,
-      align: l = g.STRETCH,
+      justify: o = g.START,
+      align: l = m.STRETCH,
       wrap: c = E.NO_WRAP,
       shrink: d = 1,
       grow: p = 1,
@@ -140,5 +140,5 @@ let h = {
       children: t
     }))
   };
-b.Child = v, b.Direction = h, b.Align = g, b.Justify = m, b.Wrap = E;
+b.Child = v, b.Direction = h, b.Align = m, b.Justify = g, b.Wrap = E;
 let y = b

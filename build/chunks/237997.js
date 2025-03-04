@@ -15,8 +15,8 @@ var i, o = n(442837),
   _ = n(314897),
   p = n(592125),
   h = n(984933),
-  m = n(355863),
-  g = n(914010),
+  g = n(355863),
+  m = n(914010),
   E = n(358085),
   v = n(145597),
   b = n(372679),
@@ -96,8 +96,8 @@ let P = Object.freeze({
     showGameInviteNotification: !0,
     customInviteMessage: void 0
   }),
-  w = null,
-  D = {},
+  D = null,
+  w = {},
   L = null,
   x = new Set,
   M = !1,
@@ -108,8 +108,8 @@ let P = Object.freeze({
   B = new u.Z("OverlayStore");
 
 function V(e) {
-  let t = D[e];
-  return null == t && (t = D[e] = T({}, P)), t
+  let t = w[e];
+  return null == t && (t = w[e] = T({}, P)), t
 }
 let F = T({}, P),
   Z = new Set(["AUDIO_SET_INPUT_DEVICE", "AUDIO_SET_INPUT_VOLUME", "AUDIO_SET_LOCAL_VIDEO_DISABLED", "AUDIO_SET_LOCAL_VOLUME", "AUDIO_SET_MODE", "AUDIO_SET_NOISE_CANCELLATION", "AUDIO_SET_NOISE_SUPPRESSION", "AUDIO_SET_OUTPUT_DEVICE", "AUDIO_SET_OUTPUT_VOLUME", "AUDIO_TOGGLE_LOCAL_MUTE", "AUDIO_TOGGLE_SELF_DEAF", "AUDIO_TOGGLE_SELF_MUTE", "BILLING_SUBSCRIPTION_UPDATE_SUCCESS", "CATEGORY_COLLAPSE", "CATEGORY_EXPAND", "CHANNEL_ACK", "CHANNEL_PRELOAD", "GIFT_CODE_REDEEM", "GIFT_CODE_REDEEM_FAILURE", "GIFT_CODE_REDEEM_SUCCESS", "HOTSPOT_HIDE", "INVITE_MODAL_CLOSE", "LAYOUT_CREATE", "LAYOUT_CREATE_WIDGETS", "LAYOUT_DELETE_ALL_WIDGETS", "LAYOUT_DELETE_WIDGET", "LAYOUT_SET_PINNED", "LAYOUT_SET_TOP_WIDGET", "LAYOUT_UPDATE_WIDGET", "LOAD_MESSAGES", "LOAD_MESSAGES_FAILURE", "LOAD_MESSAGES_SUCCESS", "MEDIA_ENGINE_SET_GO_LIVE_SOURCE", "OVERLAY_ACTIVATE_REGION", "OVERLAY_DEACTIVATE_ALL_REGIONS", "OVERLAY_MESSAGE_EVENT_ACTION", "OVERLAY_SET_AVATAR_SIZE_MODE", "OVERLAY_SET_CLICK_ZONES", "OVERLAY_SET_DISPLAY_NAME_MODE", "OVERLAY_SET_DISPLAY_USER_MODE", "OVERLAY_SET_INPUT_LOCKED", "OVERLAY_SET_NOTIFICATION_POSITION_MODE", "OVERLAY_SET_TEXT_CHAT_NOTIFICATION_MODE", "OVERLAY_SET_DISABLE_CLICKABLE_REGIONS", "OVERLAY_SET_SHOW_KEYBIND_INDICATORS", "OVERLAY_SET_GAME_INVITE_NOTIFICATION", "OVERLAY_SET_INVITE_MESSAGE", "OVERLAY_SET_TEXT_WIDGET_OPACITY", "OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", "OVERLAY_OAUTH2_AUTHORIZE_MODAL_CLOSE", "PREMIUM_PAYMENT_ERROR_CLEAR", "PREMIUM_PAYMENT_MODAL_CLOSE", "PREMIUM_PAYMENT_MODAL_OPEN", "PREMIUM_PAYMENT_SUBSCRIBE_FAIL", "PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS", "PREMIUM_PAYMENT_UPDATE_FAIL", "PREMIUM_PAYMENT_UPDATE_SUCCESS", "PREMIUM_REQUIRED_MODAL_CLOSE", "PREMIUM_REQUIRED_MODAL_OPEN", "PURCHASE_CONFIRMATION_MODAL_CLOSE", "PURCHASE_CONFIRMATION_MODAL_OPEN", "SKU_PURCHASE_CLEAR_ERROR", "SKU_PURCHASE_FAIL", "SKU_PURCHASE_MODAL_CLOSE", "SKU_PURCHASE_MODAL_OPEN", "SKU_PURCHASE_PREVIEW_FETCH_SUCCESS", "SKU_PURCHASE_SHOW_CONFIRMATION_STEP", "SKU_PURCHASE_START", "SKU_PURCHASE_SUCCESS", "STREAM_CLOSE", "STREAM_START", "VOICE_CHANNEL_SELECT", "USER_SETTINGS_PROTO_ENQUEUE_UPDATE", "USER_SETTINGS_PROTO_LOAD_IF_NECESSARY"]),
@@ -174,11 +174,11 @@ function Y(e) {
 }
 
 function K(e) {
-  e.isSwitchingAccount || (D = {})
+  e.isSwitchingAccount || (w = {})
 }
 
 function z(e) {
-  e.userId in D && delete D[e.userId]
+  e.userId in w && delete w[e.userId]
 }
 
 function q() {
@@ -189,13 +189,13 @@ function Q(e) {
   let {
     focusedPID: t
   } = e;
-  w = t
+  D = t
 }
 
 function X() {
   let e = F.selectedGuildId,
     t = F.selectedChannelId;
-  if (null == e || h.ZP.hasChannels(e) && (null == t || h.ZP.hasSelectableChannel(e, t)) || (e = null, t = null), null != t && null == p.Z.getChannel(t) && (e = null, t = null), null == e && null == t && (e = g.Z.getGuildId()), null != e && null == t) {
+  if (null == e || h.ZP.hasChannels(e) && (null == t || h.ZP.hasSelectableChannel(e, t)) || (e = null, t = null), null != t && null == p.Z.getChannel(t) && (e = null, t = null), null == e && null == t && (e = m.Z.getGuildId()), null != e && null == t) {
     let n = h.ZP.getDefaultChannel(e);
     null != n && (t = n.id)
   }
@@ -204,7 +204,7 @@ function X() {
 
 function J() {
   if (!__OVERLAY__) return !1;
-  let e = w === (0, v.getPID)(),
+  let e = D === (0, v.getPID)(),
     t = x.has((0, v.getPID)()) || U.size > 0;
   e && t ? (0, l.T_)(window, !0) : (0, l.T_)(window, !1)
 }
@@ -223,12 +223,12 @@ function et(e) {
   let {
     region: t
   } = e;
-  if (w !== (0, v.getPID)() || U.has(t)) return !1;
+  if (D !== (0, v.getPID)() || U.has(t)) return !1;
   U.add(t)
 }
 
 function en() {
-  if (w !== (0, v.getPID)()) return !1;
+  if (D !== (0, v.getPID)()) return !1;
   U.clear()
 }
 
@@ -236,7 +236,7 @@ function er(e) {
   let {
     pid: t
   } = e;
-  w = t, J()
+  D = t, J()
 }
 
 function ei(e) {
@@ -318,14 +318,14 @@ function eh(e) {
   F.showKeybindIndicators = t
 }
 
-function em(e) {
+function eg(e) {
   let {
     message: t
   } = e, n = F.customInviteMessage !== t;
   return F.customInviteMessage = t, n
 }
 
-function eg(e) {
+function em(e) {
   let {
     opacity: t
   } = e, n = F.textWidgetOpacity !== t;
@@ -415,13 +415,13 @@ class eT extends(i = o.ZP.PersistedStore) {
       x.delete((0, v.getPID)())
     }
     if (null != e) {
-      D = e;
+      w = e;
       let t = _.default.getId();
       null != t && (null == (F = V(t)).textChatNotifications && (F.textChatNotifications = P.textChatNotifications), null == F.textWidgetOpacity && (F.textWidgetOpacity = P.textWidgetOpacity), null == F.disableClickableRegions && (F.disableClickableRegions = P.disableClickableRegions))
     }
   }
   getState() {
-    return D
+    return w
   }
   isLocked(e) {
     return !x.has(e)
@@ -430,15 +430,15 @@ class eT extends(i = o.ZP.PersistedStore) {
     return !x.has((0, v.getPID)())
   }
   isInstanceFocused() {
-    return w === (0, v.getPID)()
+    return D === (0, v.getPID)()
   }
   isFocused(e) {
-    return w === e
+    return D === e
   }
   isPinned(e) {
-    let t = m.Z.getLayout(v.OVERLAY_LAYOUT_ID);
+    let t = g.Z.getLayout(v.OVERLAY_LAYOUT_ID);
     return null != t && null != t.widgets.find(t => {
-      let n = m.Z.getWidget(t);
+      let n = g.Z.getWidget(t);
       return null != n && n.type === e && !!n.pinned
     })
   }
@@ -482,7 +482,7 @@ class eT extends(i = o.ZP.PersistedStore) {
     return F.disableExternalLinkAlert
   }
   getFocusedPID() {
-    return w
+    return D
   }
   get initialized() {
     return j
@@ -535,9 +535,9 @@ let eN = new eT(s.Z, {
   OVERLAY_SET_TEXT_CHAT_NOTIFICATION_MODE: e_,
   OVERLAY_SET_DISABLE_CLICKABLE_REGIONS: ep,
   OVERLAY_SET_SHOW_KEYBIND_INDICATORS: eh,
-  OVERLAY_SET_INVITE_MESSAGE: em,
+  OVERLAY_SET_INVITE_MESSAGE: eg,
   OVERLAY_SET_GAME_INVITE_NOTIFICATION: eE,
-  OVERLAY_SET_TEXT_WIDGET_OPACITY: eg,
+  OVERLAY_SET_TEXT_WIDGET_OPACITY: em,
   OVERLAY_DISABLE_EXTERNAL_LINK_ALERT: ev,
   OVERLAY_INCOMPATIBLE_APP: eb,
   OVERLAY_SET_INPUT_LOCKED: ee,

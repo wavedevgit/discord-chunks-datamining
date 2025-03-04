@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -68,24 +68,24 @@ function h(e, t) {
   return i
 }
 
-function m(e) {
+function g(e) {
   let {
     children: t,
     size: n = 16,
     className: o,
     flowerStarClassName: u
-  } = e, f = p(e, ["children", "size", "className", "flowerStarClassName"]), h = i.Children.only(t), m = {
+  } = e, f = p(e, ["children", "size", "className", "flowerStarClassName"]), h = i.Children.only(t), g = {
     width: n,
     height: n
-  }, g = (0, s.bWb)().enabled && !e.allowFullSizedIcon;
+  }, m = (0, s.bWb)().enabled && !e.allowFullSizedIcon;
   return (0, r.jsxs)("div", {
     className: a()(c.flowerStarContainer, o),
-    style: m,
+    style: g,
     children: [(0, r.jsx)(l.Z, _(d({}, f), {
       className: a()(u, c.flowerStar)
     })), (0, r.jsx)("div", {
       className: a()(c.childContainer, {
-        [c.redesignIconChildContainer]: g
+        [c.redesignIconChildContainer]: m
       }),
       children: h
     })]

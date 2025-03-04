@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -17,25 +17,25 @@ var i = n(120356),
   _ = n(594174),
   p = n(823379),
   h = n(388032),
-  m = n(838486);
-let g = function(e) {
+  g = n(838486);
+let m = function(e) {
   let {
     createdAt: t,
     participantIds: n,
     applicationId: i,
     title: a,
-    guildId: g,
+    guildId: m,
     className: E
   } = e, v = (0, u.q)(i), b = (0, l.Wu)([_.default], () => {
     var e;
     return null !== (e = n.map(e => _.default.getUser(e)).filter(p.lm)) && void 0 !== e ? e : []
   }), y = null == v ? void 0 : v.name, O = s()(t).fromNow();
   return null == t ? null : (0, r.jsxs)("div", {
-    className: o()(E, m.container),
+    className: o()(E, g.container),
     children: [(0, r.jsx)(f.Z, {
       game: v
     }), (0, r.jsxs)("div", {
-      className: m.textSection,
+      className: g.textSection,
       children: [null != a && "" !== a ? (0, r.jsx)(c.Text, {
         variant: "text-md/semibold",
         color: "interactive-active",
@@ -47,18 +47,18 @@ let g = function(e) {
       }), (0, r.jsxs)(c.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
-        className: m.__invalid_subtitle,
+        className: g.__invalid_subtitle,
         children: [null != y ? "".concat(y, " • ") : null, O]
       }), (0, r.jsx)(c.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
-        className: m.__invalid_subtitle
+        className: g.__invalid_subtitle
       })]
     }), null != b && b.length > 0 && (0, r.jsx)(d.Z, {
       maxUsers: 4,
       users: b,
-      className: m.__invalid_facePile,
-      guildId: g
+      className: g.__invalid_facePile,
+      guildId: m
     })]
   })
 }

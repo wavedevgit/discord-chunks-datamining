@@ -13,8 +13,8 @@ var r = n(581031),
   _ = String,
   p = Object.defineProperty,
   h = r("".slice),
-  m = r("".replace),
-  g = r([].join),
+  g = r("".replace),
+  m = r([].join),
   E = s && !i(function() {
     return 8 !== p(function() {}, "length", {
       value: 8
@@ -22,7 +22,7 @@ var r = n(581031),
   }),
   v = String(String).split("String"),
   b = e.exports = function(e, t, n) {
-    "Symbol(" === h(_(t), 0, 7) && (t = "[" + m(_(t), /^Symbol\(([^)]*)\)/, "$1") + "]"), n && n.getter && (t = "get " + t), n && n.setter && (t = "set " + t), (!a(e, "name") || l && e.name !== t) && (s ? p(e, "name", {
+    "Symbol(" === h(_(t), 0, 7) && (t = "[" + g(_(t), /^Symbol\(([^)]*)\)/, "$1") + "]"), n && n.getter && (t = "get " + t), n && n.setter && (t = "set " + t), (!a(e, "name") || l && e.name !== t) && (s ? p(e, "name", {
       value: t,
       configurable: !0
     }) : e.name = t), E && n && a(n, "arity") && e.length !== n.arity && p(e, "length", {
@@ -34,7 +34,7 @@ var r = n(581031),
       }) : e.prototype && (e.prototype = void 0)
     } catch (e) {}
     var r = d(e);
-    return a(r, "source") || (r.source = g(v, "string" == typeof t ? t : "")), e
+    return a(r, "source") || (r.source = m(v, "string" == typeof t ? t : "")), e
   };
 Function.prototype.toString = b(function() {
   return o(this) && f(this).source || c(this)

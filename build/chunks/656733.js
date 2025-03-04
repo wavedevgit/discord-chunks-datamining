@@ -64,8 +64,8 @@ let _ = {
     ORIGINAL_MP4: "original.mp4"
   },
   h = _.MP4,
-  m = null,
-  g = "",
+  g = null,
+  m = "",
   E = "",
   v = [],
   b = [],
@@ -74,11 +74,11 @@ let _ = {
   S = [];
 
 function I(e) {
-  m = e.analyticsID
+  g = e.analyticsID
 }
 
 function T(e) {
-  "" === (g = e.query) && (E = "", v = [], O = [])
+  "" === (m = e.query) && (E = "", v = [], O = [])
 }
 
 function N(e) {
@@ -106,7 +106,7 @@ function A(e) {
 }
 
 function C(e) {
-  if (null != e.query && g === E) return !1;
+  if (null != e.query && m === E) return !1;
   null != e.query && (E = e.query), v = e.items.map(e => {
     let {
       width: t,
@@ -150,14 +150,14 @@ function P(e) {
   }))]
 }
 
-function w(e) {
+function D(e) {
   let {
     items: t
   } = e;
   O = t
 }
 
-function D(e) {
+function w(e) {
   let {
     items: t
   } = e;
@@ -165,10 +165,10 @@ function D(e) {
 }
 class L extends(r = i.ZP.Store) {
   getAnalyticsID() {
-    return m
+    return g
   }
   getQuery() {
-    return g
+    return m
   }
   getResultQuery() {
     return E
@@ -196,6 +196,6 @@ let x = new L(a.Z, {
   GIF_PICKER_QUERY_SUCCESS: C,
   GIF_PICKER_QUERY_FAILURE: R,
   GIF_PICKER_TRENDING_FETCH_SUCCESS: P,
-  GIF_PICKER_SUGGESTIONS_SUCCESS: w,
-  GIF_PICKER_TRENDING_SEARCH_TERMS_SUCCESS: D
+  GIF_PICKER_SUGGESTIONS_SUCCESS: D,
+  GIF_PICKER_TRENDING_SEARCH_TERMS_SUCCESS: w
 })

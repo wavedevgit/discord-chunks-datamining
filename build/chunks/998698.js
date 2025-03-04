@@ -63,18 +63,18 @@ function p(e) {
     searchResultsPosition: f,
     source: p,
     commandOrigin: h
-  } = e, m = _(n);
-  if ((null == r ? void 0 : r.id) === (null === (t = m.activeCommand) || void 0 === t ? void 0 : t.id)) return !1;
-  m.activeCommand = r, m.activeCommandSection = i, m.activeOptionName = null, m.preferredCommandId = null, m.initialValues = null != o ? o : {}, m.commandOrigin = null != h ? h : null, m.source = p;
-  let g = {};
+  } = e, g = _(n);
+  if ((null == r ? void 0 : r.id) === (null === (t = g.activeCommand) || void 0 === t ? void 0 : t.id)) return !1;
+  g.activeCommand = r, g.activeCommandSection = i, g.activeOptionName = null, g.preferredCommandId = null, g.initialValues = null != o ? o : {}, g.commandOrigin = null != h ? h : null, g.source = p;
+  let m = {};
   return (null == r ? void 0 : r.options) != null && r.options.forEach(e => {
-    g[e.name] = {
+    m[e.name] = {
       isActive: !1,
       hasValue: !1,
       lastValidationResult: null,
       optionValue: null
     }
-  }), m.optionStates = g, null != r && (0, l.qJ)({
+  }), g.optionStates = m, null != r && (0, l.qJ)({
     command: r,
     location: a,
     triggerSection: s,
@@ -95,7 +95,7 @@ function h(e) {
   return i !== o.preferredCommandId && (null !== o.preferredCommandId || i !== (null !== (n = null === (t = o.activeCommand) || void 0 === t ? void 0 : t.id) && void 0 !== n ? n : null)) && (o.activeCommand = null, o.activeOptionName = null, o.preferredCommandId = i, o.optionStates = {}, !0)
 }
 
-function m(e) {
+function g(e) {
   let {
     channelId: t,
     changedOptionStates: n
@@ -127,7 +127,7 @@ function m(e) {
   return r.optionStates = i, !0
 }
 
-function g(e) {
+function m(e) {
   let {
     channelId: t,
     preferredCommandId: n,
@@ -145,7 +145,7 @@ function g(e) {
     type: "APPLICATION_COMMAND_SET_PREFERRED_COMMAND",
     channelId: t,
     commandId: n
-  }), c = m({
+  }), c = g({
     type: "APPLICATION_COMMAND_UPDATE_OPTIONS",
     channelId: t,
     changedOptionStates: a
@@ -208,6 +208,6 @@ let v = new E(o.Z, {
   LOGOUT: f,
   APPLICATION_COMMAND_SET_ACTIVE_COMMAND: p,
   APPLICATION_COMMAND_SET_PREFERRED_COMMAND: h,
-  APPLICATION_COMMAND_UPDATE_OPTIONS: m,
-  APPLICATION_COMMAND_UPDATE_CHANNEL_STATE: g
+  APPLICATION_COMMAND_UPDATE_OPTIONS: g,
+  APPLICATION_COMMAND_UPDATE_CHANNEL_STATE: m
 })

@@ -49,8 +49,8 @@ function _(e, t) {
 }
 let p = new Map,
   h = {},
-  m = l.VD2.BOTTOM_RIGHT,
-  g = {
+  g = l.VD2.BOTTOM_RIGHT,
+  m = {
     [c.cL.VIDEO]: c.l8[c.cL.VIDEO],
     [c.cL.CAMERA_PREVIEW]: c.l8[c.cL.CAMERA_PREVIEW]
   };
@@ -66,7 +66,7 @@ function E(e) {
   let c = {
     id: o,
     component: a,
-    position: null !== (t = s.position) && void 0 !== t ? t : m,
+    position: null !== (t = s.position) && void 0 !== t ? t : g,
     props: s,
     docked: null !== (n = s.docked) && void 0 !== n && n
   };
@@ -103,7 +103,7 @@ function b(e) {
       e.set(r, _(d({}, t), {
         position: n
       }))
-    }), p = e, m = n
+    }), p = e, g = n
   }
 }
 
@@ -112,7 +112,7 @@ function y(e) {
     width: t,
     pipType: n
   } = e;
-  g[n] = t
+  m[n] = t
 }
 
 function O(e) {
@@ -164,13 +164,13 @@ function N() {
 class A extends(o = a.ZP.PersistedStore) {
   initialize(e) {
     if (null == e) {
-      m = l.VD2.BOTTOM_RIGHT, g = {
+      g = l.VD2.BOTTOM_RIGHT, m = {
         [c.cL.VIDEO]: c.l8[c.cL.VIDEO],
         [c.cL.CAMERA_PREVIEW]: c.l8[c.cL.CAMERA_PREVIEW]
       };
       return
     }
-    m = e.openPosition, g = e.pipWidths
+    g = e.openPosition, m = e.pipWidths
   }
   get pipWindow() {
     var e;
@@ -186,7 +186,7 @@ class A extends(o = a.ZP.PersistedStore) {
     return p
   }
   pipWidth(e) {
-    return g[e]
+    return m[e]
   }
   isEmbeddedActivityHidden() {
     return null == i
@@ -199,8 +199,8 @@ class A extends(o = a.ZP.PersistedStore) {
   }
   getState() {
     return {
-      openPosition: m,
-      pipWidths: g
+      openPosition: g,
+      pipWidths: m
     }
   }
 }

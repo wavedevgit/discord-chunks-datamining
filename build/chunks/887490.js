@@ -4,12 +4,12 @@ n.d(t, {
   C0: () => E,
   Ew: () => y,
   Jz: () => v,
-  LC: () => g,
+  LC: () => m,
   M8: () => b,
   aj: () => h,
   bN: () => p,
   lP: () => T,
-  q: () => m
+  q: () => g
 }), n(47120);
 var r = n(512722),
   i = n.n(r),
@@ -68,16 +68,16 @@ let _ = !1;
 let p = f(u({}, o.ML, a.F3), {
     richValue: e => e.children,
     blocks: e => p.richValue(e).map((e, t) => [e, [t]]),
-    isBlock: (e, t) => m.isElement(t) && o.ML.isBlock(e, t),
-    isInline: (e, t) => m.isElement(t) && o.ML.isInline(e, t),
-    isVoid: (e, t) => m.isElement(t) && o.ML.isVoid(e, t),
+    isBlock: (e, t) => g.isElement(t) && o.ML.isBlock(e, t),
+    isInline: (e, t) => g.isElement(t) && o.ML.isInline(e, t),
+    isVoid: (e, t) => g.isElement(t) && o.ML.isVoid(e, t),
     isEditorEmpty(e) {
       let t = p.richValue(e);
-      return !(t.length > 1) && (0 === t.length || "line" === t[0].type && m.isEmpty(t[0]))
+      return !(t.length > 1) && (0 === t.length || "line" === t[0].type && g.isEmpty(t[0]))
     },
     getFirstText(e) {
       let t = p.node(e, l.u9);
-      return g.isText(t[0]) ? t[0] : null
+      return m.isText(t[0]) ? t[0] : null
     },
     getCurrentBlock(e) {
       return null == e.selection ? null : this.getParentBlock(e, e.selection)
@@ -99,7 +99,7 @@ let p = f(u({}, o.ML, a.F3), {
       var n;
       return null !== (n = p.above(e, {
         at: t,
-        match: t => m.isElement(t) && p.isBlock(e, t),
+        match: t => g.isElement(t) && p.isBlock(e, t),
         mode: "lowest"
       })) && void 0 !== n ? n : null
     },
@@ -107,7 +107,7 @@ let p = f(u({}, o.ML, a.F3), {
       var n;
       return null !== (n = p.above(e, {
         at: t,
-        match: e => m.isElement(e),
+        match: e => g.isElement(e),
         mode: "lowest"
       })) && void 0 !== n ? n : null
     },
@@ -159,7 +159,7 @@ let p = f(u({}, o.ML, a.F3), {
       let [n, r] = b.edges(t), i = p.nodes(e, {
         at: t,
         mode: "lowest",
-        match: e => g.isText(e)
+        match: e => m.isText(e)
       }), o = "";
       for (let [e, t] of i) {
         let i = E.equals(t, n.path) ? n.offset : 0,
@@ -183,7 +183,7 @@ let p = f(u({}, o.ML, a.F3), {
       let n = p.richValue(e),
         r = n[0],
         i = (null == r ? void 0 : r.type) === "line" ? r.children[0] : null;
-      if (null == i || !g.isText(i)) return !1;
+      if (null == i || !m.isText(i)) return !1;
       let o = e.chatInputType,
         a = i.text;
       return 1 === n.length && 1 === r.children.length && (!0 === o.sedReplace && a.startsWith("s/") || (null === (t = o.autocomplete) || void 0 === t ? void 0 : t.reactions) === !0 && a.startsWith("+"))
@@ -199,7 +199,7 @@ let p = f(u({}, o.ML, a.F3), {
       if (E.isPath(t)) {
         let n = p.range(e, t),
           [r] = p.node(e, t);
-        if (m.isElement(r)) {
+        if (g.isElement(r)) {
           let r = p.before(e, t),
             i = p.after(e, t);
           t = {
@@ -219,15 +219,15 @@ let p = f(u({}, o.ML, a.F3), {
     isType: (e, t) => o.W_.isElement(e) && e.type === t,
     isInTypes: (e, t) => o.W_.isElement(e) && t.has(e.type)
   }),
-  m = f(u({}, o.W_), {
+  g = f(u({}, o.W_), {
     updateElement(e, t) {
       let n = p.node(e, t[1]);
-      return i()(!p.isEditor(t[0]), "Element is the root node"), i()(null != n, "Failed to find element"), i()(m.isElement(n[0]), "Node at this path is no longer an element"), i()(n[0].type === t[0].type, "Node at this path is a different type"), n
+      return i()(!p.isEditor(t[0]), "Element is the root node"), i()(null != n, "Failed to find element"), i()(g.isElement(n[0]), "Node at this path is no longer an element"), i()(n[0].type === t[0].type, "Node at this path is a different type"), n
     },
     markdown(e, t, n) {
       var r;
       let i = "line" === e.type && (null === (r = e.codeBlockState) || void 0 === r ? void 0 : r.wasInCodeBlock) === !0,
-        o = e.children.map(e => g.isText(e) ? e.text : "?"),
+        o = e.children.map(e => m.isText(e) ? e.text : "?"),
         a = o.join("");
       return {
         entries: s.Q(a, null != t ? t : null, i, n),
@@ -238,10 +238,10 @@ let p = f(u({}, o.ML, a.F3), {
       if (e.children.length > 1) return !1;
       if (0 === e.children.length) return !0;
       let t = e.children[0];
-      return g.isText(t) && 0 === t.text.length
+      return m.isText(t) && 0 === t.text.length
     }
   }),
-  g = u({}, o.xv),
+  m = u({}, o.xv),
   E = f(u({}, o.y$), {
     isFirstEditorBlock: e => E.equals(e, l.YD),
     isFirstEditorText: e => E.equals(e, l.u9),
@@ -260,7 +260,7 @@ let p = f(u({}, o.ML, a.F3), {
       let [t, n] = e, r = t.children[t.children.length - 1];
       return {
         path: E.child(n, t.children.length - 1),
-        offset: g.isText(r) ? r.text.length : 0
+        offset: m.isText(r) ? r.text.length : 0
       }
     },
     isAtStart(e, t) {
@@ -285,7 +285,7 @@ let p = f(u({}, o.ML, a.F3), {
         },
         focus: {
           path: E.child(n, t.children.length - 1),
-          offset: g.isText(r) ? r.text.length : 0
+          offset: m.isText(r) ? r.text.length : 0
         }
       }
     },
@@ -310,7 +310,7 @@ let p = f(u({}, o.ML, a.F3), {
       } = t;
       if (!p.hasPath(e, n.path) || !p.hasPath(e, r.path)) return !1;
       let [i] = p.node(e, n.path), [o] = p.node(e, r.path);
-      return g.isText(i) && g.isText(o) && n.offset <= i.text.length && r.offset <= o.text.length
+      return m.isText(i) && m.isText(o) && n.offset <= i.text.length && r.offset <= o.text.length
     }
   },
   O = (e, t) => {

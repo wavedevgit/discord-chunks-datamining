@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => D
+  Z: () => w
 }), n(301563);
 var r = n(200651),
   i = n(192379),
@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(649700),
   p = n(952164),
   h = n(960870),
-  m = n(139793),
-  g = n(994746),
+  g = n(139793),
+  m = n(994746),
   E = n(652853),
   v = n(448980),
   b = n(336383),
@@ -62,13 +62,13 @@ function P(e, t) {
   return n
 }
 
-function w(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function D(e) {
+function w(e) {
   let {
     user: t,
     currentUser: n,
@@ -76,13 +76,13 @@ function D(e) {
     className: C,
     onClose: P
   } = e, {
-    profileType: D
+    profileType: w
   } = (0, E.z)(), L = {
-    [A.fullSize]: D === N.y0.FULL_SIZE
+    [A.fullSize]: w === N.y0.FULL_SIZE
   }, x = (0, _.Z)({
     activity: o,
     user: t
-  }), M = (0, g.Z)(o), {
+  }), M = (0, m.Z)(o), {
     largeImage: k
   } = (0, d.FO)(o), {
     analyticsLocations: j
@@ -92,7 +92,7 @@ function D(e) {
     activity: o,
     entry: x,
     analyticsLocations: j
-  }), G = (0, m.Z)({
+  }), G = (0, g.Z)({
     userId: t.id,
     onAction: U
   });
@@ -147,7 +147,7 @@ function D(e) {
       className: a()(A.card, C),
       onAction: U,
       onClose: P,
-      children: [(0, r.jsx)(y.Z, w(R({}, M), {
+      children: [(0, r.jsx)(y.Z, D(R({}, M), {
         contextMenu: (0, r.jsx)(T.Z, {
           display: "live",
           user: t,
@@ -185,9 +185,9 @@ function D(e) {
               activity: o,
               className: A.badges
             }), V()]
-          }), D === N.y0.FULL_SIZE && F()]
+          }), w === N.y0.FULL_SIZE && F()]
         })
-      }), D !== N.y0.FULL_SIZE && F()]
+      }), w !== N.y0.FULL_SIZE && F()]
     })
   })
 }

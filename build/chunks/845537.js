@@ -4,12 +4,12 @@ n.d(t, {
   EK: () => U,
   Io: () => M,
   NY: () => k,
-  Ox: () => D,
+  Ox: () => w,
   Vq: () => x,
   Wf: () => j,
   cB: () => L,
   dy: () => P,
-  wP: () => w
+  wP: () => D
 });
 var r = n(200651);
 n(192379);
@@ -26,8 +26,8 @@ var i = n(442837),
   p = n(692629);
 n(763296);
 var h = n(592125),
-  m = n(430824),
-  g = n(246946),
+  g = n(430824),
+  m = n(246946),
   E = n(594174),
   v = n(934415),
   b = n(5192),
@@ -92,7 +92,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     emoji: t
   } = e;
@@ -108,12 +108,12 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     text: t,
     channelId: n,
     guildId: i
-  } = e, o = m.Z.getGuild(i), a = h.Z.getChannel(n), s = (0, c.Ib)(o, a) && "@Clyde" === t ? O.jM : null;
+  } = e, o = g.Z.getGuild(i), a = h.Z.getChannel(n), s = (0, c.Ib)(o, a) && "@Clyde" === t ? O.jM : null;
   return (0, r.jsx)(_.Z, {
     color: s,
     children: t
@@ -125,7 +125,7 @@ function L(e) {
     id: t,
     guildId: n,
     channelId: a
-  } = e, l = (0, i.e7)([E.default], () => E.default.getUser(t)), c = (0, i.e7)([g.Z], () => g.Z.hidePersonalInformation), u = b.ZP.useName(n, a, l), d = (0, r.jsx)(_.Z, {
+  } = e, l = (0, i.e7)([E.default], () => E.default.getUser(t)), c = (0, i.e7)([m.Z], () => m.Z.hidePersonalInformation), u = b.ZP.useName(n, a, l), d = (0, r.jsx)(_.Z, {
     children: null == u ? "<@".concat(t, ">") : "@".concat(u)
   });
   if (null != l) {
@@ -165,7 +165,7 @@ function x(e) {
   let {
     id: t,
     guildId: n
-  } = e, a = (0, i.e7)([m.Z], () => null != n ? m.Z.getRole(n, t) : void 0), s = (0, i.e7)([l.Z], () => l.Z.roleStyle);
+  } = e, a = (0, i.e7)([g.Z], () => null != n ? g.Z.getRole(n, t) : void 0), s = (0, i.e7)([l.Z], () => l.Z.roleStyle);
   if (null == a) return (0, r.jsxs)("span", {
     children: ["@", S.NW.string(S.t["YV4F/v"])]
   });

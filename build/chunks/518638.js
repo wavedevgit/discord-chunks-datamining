@@ -7,7 +7,7 @@ n.d(t, {
   Qf: () => I,
   X_: () => h,
   ZC: () => O,
-  kr: () => m,
+  kr: () => g,
   t8: () => E,
   tq: () => y
 }), n(789020), n(757143), n(301563);
@@ -45,7 +45,7 @@ function h(e) {
   }
 }
 
-function m(e) {
+function g(e) {
   return {
     id: e.id,
     startDate: e.start_date,
@@ -53,7 +53,7 @@ function m(e) {
   }
 }
 
-function g(e) {
+function m(e) {
   return {
     code: e.code,
     userId: e.user_id,
@@ -69,10 +69,10 @@ async function E() {
     },
     oldFormErrors: !0,
     rejectWithError: !1
-  })).body.map(g)
+  })).body.map(m)
 }
 async function v(e) {
-  return g((await r.tn.post({
+  return m((await r.tn.post({
     url: f.ANM.CLAIM_OUTBOUND_PROMOTION_CODE(e),
     rejectWithError: !1
   })).body)

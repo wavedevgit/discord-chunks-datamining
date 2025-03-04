@@ -74,9 +74,9 @@ if (!Object.keys) {
     if (r && e.length > 0)
       for (var h = 0; h < e.length; ++h) d.push(String(h));
     else
-      for (var m in e) !(f && "prototype" === m) && i.call(e, m) && d.push(String(m));
+      for (var g in e) !(f && "prototype" === g) && i.call(e, g) && d.push(String(g));
     if (l)
-      for (var g = p(e), E = 0; E < u.length; ++E) !(g && "constructor" === u[E]) && i.call(e, u[E]) && d.push(u[E]);
+      for (var m = p(e), E = 0; E < u.length; ++E) !(m && "constructor" === u[E]) && i.call(e, u[E]) && d.push(u[E]);
     return d
   }
 }

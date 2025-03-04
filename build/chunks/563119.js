@@ -18,7 +18,7 @@ var i = n(704215),
   p = n(388032),
   h = n(128929);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,14 +27,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -70,7 +70,7 @@ let b = "game_console_alert_modal",
         let n = () => {
             (0, l.EW)(i.z.CONSOLE_PTT_DISABLE_ALERT), e()
           },
-          s = e => (0, r.jsx)(a.default, v(g({}, e), {
+          s = e => (0, r.jsx)(a.default, v(m({}, e), {
             title: t,
             body: p.NW.string(p.t.bL21zs),
             onConfirm: n,
@@ -102,7 +102,7 @@ let b = "game_console_alert_modal",
           platform_type: l
         }))
       }
-      let h = e => (0, r.jsx)(a.default, v(g({}, e), {
+      let h = e => (0, r.jsx)(a.default, v(m({}, e), {
         title: t,
         body: c,
         onConfirm: p

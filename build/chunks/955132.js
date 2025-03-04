@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  GC: () => m,
+  GC: () => g,
   RR: () => h,
   Wb: () => p
 });
@@ -18,7 +18,7 @@ var r = n(570140),
 let _ = new o.Z("ConnectionStore"),
   p = new u.Z,
   h = new d.Z(p),
-  m = new f.Z(p);
+  g = new f.Z(p);
 p.handleIdentify = () => {
   let e = a.default.getToken();
   return (_.verbose("handleIdentify called", {

@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  M0: () => g,
+  M0: () => m,
   YX: () => h,
-  tT: () => m
+  tT: () => g
 });
 var r = n(200651);
 n(192379);
@@ -74,36 +74,36 @@ let h = {
     SECONDARY: l.secondary,
     PRIMARY: l.primary
   },
-  m = {
+  g = {
     SIZE_24: l.size24,
     SIZE_32: l.size32,
     SIZE_36: l.size36
   };
 
-function g(e) {
+function m(e) {
   let {
     className: t,
     tooltip: n,
     color: i,
-    size: c = m.SIZE_32,
+    size: c = g.SIZE_32,
     icon: d,
     onMouseDown: p,
     onClick: h,
-    disabled: g,
+    disabled: m,
     focusProps: E
   } = e;
   return (0, r.jsx)(s.u, {
     text: n,
-    shouldShow: !g,
+    shouldShow: !m,
     children: e => {
       var {
         onClick: s
-      } = e, m = _(e, ["onClick"]);
-      return (0, r.jsx)(a.P, f(u({}, m), {
+      } = e, g = _(e, ["onClick"]);
+      return (0, r.jsx)(a.P, f(u({}, g), {
         "aria-label": n,
-        "aria-disabled": g,
+        "aria-disabled": m,
         className: o()(t, l.button, i, c, {
-          [l.disabled]: g
+          [l.disabled]: m
         }),
         onMouseDown: p,
         onClick: e => {

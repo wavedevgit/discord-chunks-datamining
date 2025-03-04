@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(47120);
 var r = n(442837),
   i = n(570140),
@@ -55,7 +55,7 @@ function h(e, t) {
     d = o.Z.isIgnored(t);
   return d && !u.has(t) ? (u.add(t), r = !0, n = !0) : d || (n = u.delete(t)), 0 === u.size && n ? delete c[e] : n && (c[e] = u), r && s.Z.handleBlockedOrIgnoredUserVoiceChannelJoin(e, t), n
 }
-class m extends r.ZP.Store {
+class g extends r.ZP.Store {
   initialize() {
     this.waitFor(o.Z, a.Z)
   }
@@ -68,7 +68,7 @@ class m extends r.ZP.Store {
     return null !== (t = c[e]) && void 0 !== t ? t : u
   }
 }
-let g = new m(i.Z, {
+let m = new g(i.Z, {
   CONNECTION_OPEN: d,
   LOGOUT: d,
   OVERLAY_INITIALIZE: f,

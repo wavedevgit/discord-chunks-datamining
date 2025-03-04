@@ -54,8 +54,8 @@ function t(e) {
       begin: n,
       starts: p
     },
-    m = [_, a, u, d, s, f, c, o, l, i];
-  return _.contains = [e.COMMENT("comment", ""), h, p], p.contains = m, c.contains = m, {
+    g = [_, a, u, d, s, f, c, o, l, i];
+  return _.contains = [e.COMMENT("comment", ""), h, p], p.contains = g, c.contains = g, {
     name: "Hy",
     aliases: ["hylang"],
     illegal: /\S/,

@@ -17,8 +17,8 @@ var i = n(442837),
   _ = n(103450),
   p = n(592125),
   h = n(944486),
-  m = n(475413),
-  g = n(981631),
+  g = n(475413),
+  m = n(981631),
   E = n(388032);
 
 function v(e, t, n) {
@@ -68,13 +68,13 @@ function S(e) {
     onClose: y
   } = e, {
     newestAnalyticsLocation: S
-  } = (0, l.ZP)(), I = (0, a.bp)() === g.IlC.POPOUT, T = (0, i.e7)([p.Z, h.Z], () => p.Z.getChannel(h.Z.getChannelId())), N = (0, _.e)({
+  } = (0, l.ZP)(), I = (0, a.bp)() === m.IlC.POPOUT, T = (0, i.e7)([p.Z, h.Z], () => p.Z.getChannel(h.Z.getChannelId())), N = (0, _.e)({
     activity: null != n ? n : void 0,
     embeddedActivity: void 0,
     user: t,
     onClose: y
   });
-  if (null == N && null != n && (0, s.Z)(n)) return (0, r.jsx)(m.tG, {
+  if (null == N && null != n && (0, s.Z)(n)) return (0, r.jsx)(g.tG, {
     icon: o.jje,
     text: E.NW.string(E.t.RscU7O),
     color: o.Ttl.BRAND,
@@ -101,15 +101,15 @@ function S(e) {
     handleJoinRequest: C,
     buttonCTA: R,
     tooltip: P,
-    isEnabled: w,
-    isEmbedded: D
+    isEnabled: D,
+    isEmbedded: w
   } = N;
-  return D ? (0, r.jsx)(o.ua7, {
+  return w ? (0, r.jsx)(o.ua7, {
     text: P,
-    children: e => (0, r.jsx)(m.tG, O(b({}, e), {
+    children: e => (0, r.jsx)(g.tG, O(b({}, e), {
       icon: o.YVR,
       text: R,
-      disabled: !w,
+      disabled: !D,
       submitting: A,
       fullWidth: !0,
       onClick: e => {
@@ -120,10 +120,10 @@ function S(e) {
     }))
   }) : (0, r.jsx)(o.ua7, {
     text: P,
-    children: e => (0, r.jsx)(m.tG, O(b({}, e), {
+    children: e => (0, r.jsx)(g.tG, O(b({}, e), {
       icon: o.iWm,
       text: R,
-      disabled: !w,
+      disabled: !D,
       submitting: A,
       fullWidth: !0,
       onClick: e => {

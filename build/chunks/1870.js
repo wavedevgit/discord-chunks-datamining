@@ -23,13 +23,13 @@ let d = new Map,
   h = e => {
     _ = !0, i = void 0
   },
-  m = e => {
+  g = e => {
     let {
       error: t
     } = e;
     f = d, _ = !1, i = t, p = !0
   },
-  g = e => {
+  m = e => {
     0 === e.purchases.length ? f = d : (0, s.isEqual)([...f.values()], e.purchases) || (f = new Map(e.purchases.map(e => [e.skuId, e]))), p = !0, _ = !1, i = void 0
   },
   E = e => {
@@ -74,8 +74,8 @@ class O extends(a = l.ZP.Store) {
 u(O, "displayName", "CollectiblesPurchaseStore");
 let S = new O(c.Z, {
   COLLECTIBLES_PURCHASES_FETCH: h,
-  COLLECTIBLES_PURCHASES_FETCH_SUCCESS: g,
-  COLLECTIBLES_PURCHASES_FETCH_FAILURE: m,
+  COLLECTIBLES_PURCHASES_FETCH_SUCCESS: m,
+  COLLECTIBLES_PURCHASES_FETCH_FAILURE: g,
   COLLECTIBLES_CLAIM: E,
   COLLECTIBLES_CLAIM_SUCCESS: v,
   COLLECTIBLES_CLAIM_FAILURE: b,

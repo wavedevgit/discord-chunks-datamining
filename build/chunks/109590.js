@@ -26,7 +26,7 @@ function _(e, t, n) {
 }
 let p = 10,
   h = 5;
-class m {
+class g {
   get(e) {
     return this._set.hasOwnProperty(e) || (this._set[e] = this._defaultValueFunc()), this._set[e]
   }
@@ -43,7 +43,7 @@ class m {
     _(this, "_set", void 0), _(this, "_defaultValueFunc", void 0), this._set = {}, this._defaultValueFunc = e
   }
 }
-class g {
+class m {
   request(e, t) {
     this.requested.get(e).add(t)
   }
@@ -70,10 +70,10 @@ class g {
     0 === this.requested.get(e).size && this.requested.delete(e)
   }
   constructor() {
-    _(this, "requested", void 0), this.requested = new m(() => new Set)
+    _(this, "requested", void 0), this.requested = new g(() => new Set)
   }
 }
-let E = new g,
+let E = new m,
   v = null;
 
 function b(e, t) {

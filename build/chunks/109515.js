@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(475637),
   i = n(925300),
@@ -46,7 +46,7 @@ var r = n(475637),
     narrow: /^(a|p|mi|n|(in the|at) (morning|afternoon|evening|night))/i,
     any: /^([ap]\.?\s?m\.?|midnight|noon|(in the|at) (morning|afternoon|evening|night))/i
   },
-  m = {
+  g = {
     any: {
       am: /^a/i,
       pm: /^p/i,
@@ -58,7 +58,7 @@ var r = n(475637),
       night: /night/i
     }
   };
-let g = {
+let m = {
   ordinalNumber: (0, i.Z)({
     matchPattern: o,
     parsePattern: a,
@@ -96,7 +96,7 @@ let g = {
   dayPeriod: (0, r.Z)({
     matchPatterns: h,
     defaultMatchWidth: "any",
-    parsePatterns: m,
+    parsePatterns: g,
     defaultParseWidth: "any"
   })
 }

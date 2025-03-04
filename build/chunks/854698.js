@@ -16,7 +16,7 @@ n.d(t, {
   ib: () => R,
   lh: () => J,
   mF: () => q,
-  ub: () => D,
+  ub: () => w,
   v1: () => j,
   x6: () => k,
   zi: () => Q
@@ -34,8 +34,8 @@ var r = n(392711),
   _ = n(388032);
 let p = 365,
   h = 366,
-  m = "ddd MMM Do \xb7 LT",
-  g = "ddd MMM Do, YYYY \xb7 LT",
+  g = "ddd MMM Do \xb7 LT",
+  m = "ddd MMM Do, YYYY \xb7 LT",
   E = "LT",
   v = 4,
   b = [a.Ci.MO.weekday, a.Ci.TU.weekday, a.Ci.WE.weekday, a.Ci.TH.weekday, a.Ci.FR.weekday],
@@ -93,19 +93,19 @@ let R = () => {
       t = e.hour();
     return e.minutes() >= 30 && (t += 1), e.hour(t).minutes(0).seconds(0)
   },
-  P = (e, t) => (0, l.vc)(e, e.get("years") === t.get("years") ? m : g),
-  w = (e, t) => {
+  P = (e, t) => (0, l.vc)(e, e.get("years") === t.get("years") ? g : m),
+  D = (e, t) => {
     let n = (0, l.wY)(e.toDate(), t.toDate());
     return n > 1 || n < 0 ? P(e, t) : (0, l.vc)(e, e.localeData().calendar(n < 1 ? "sameDay" : "nextDay", e, t))
   };
 
-function D(e, t, n) {
+function w(e, t, n) {
   null == n && (n = o()());
   let r = o()(e),
     i = null != t && "" !== t ? o()(t) : void 0,
     a = null != t && r.isSame(i, "day");
   return {
-    startDateTimeString: w(r, n),
+    startDateTimeString: D(r, n),
     endDateTimeString: null != i ? a ? i.format(E) : P(i, n) : void 0,
     currentOrPastEvent: r <= n,
     upcomingEvent: r <= o()().add(1, "hour"),

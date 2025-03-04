@@ -20,7 +20,7 @@ function _(e) {
     type: n
   } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
     fetch: !1
-  }, [_, p, h] = (0, o.Wu)([d.Z], () => [d.Z.getMutualFriends(e.id), d.Z.getMutualGuilds(e.id), d.Z.isFetchingProfile(e.id)]), m = (0, l.Z)(), [g, E] = (0, r.useState)(null), v = t && null == g && !h, b = !e.bot && null == _, y = null == p, O = v && (b || y);
+  }, [_, p, h] = (0, o.Wu)([d.Z], () => [d.Z.getMutualFriends(e.id), d.Z.getMutualGuilds(e.id), d.Z.isFetchingProfile(e.id)]), g = (0, l.Z)(), [m, E] = (0, r.useState)(null), v = t && null == m && !h, b = !e.bot && null == _, y = null == p, O = v && (b || y);
   (0, r.useEffect)(() => {
     O && (async () => {
       try {
@@ -28,13 +28,13 @@ function _(e) {
           withMutualFriends: !e.bot,
           withMutualGuilds: !0,
           type: n,
-          abortSignal: m
+          abortSignal: g
         })
       } catch (e) {
         E(new a.Hx(e))
       }
     })()
-  }, [O, e.id, e.bot, n, m]);
+  }, [O, e.id, e.bot, n, g]);
   let S = (0, o.e7)([c.Z], () => c.Z.getUserAffinitiesMap()),
     I = (0, o.e7)([u.ZP], () => u.ZP.getFlattenedGuildIds()),
     T = (0, r.useMemo)(() => null == _ || _.length < 2 ? _ : (0, i.sortBy)(_, e => {

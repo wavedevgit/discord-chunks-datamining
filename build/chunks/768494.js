@@ -99,17 +99,17 @@ function h(e) {
   }
 }
 
-function m(e) {
+function g(e) {
   return (0, i.tw)(e.contentType) ? "IMAGE" : (0, i.X2)(e.contentType) && null != e.proxyUrl && null != a.Z.toURLSafe(e.proxyUrl) ? "VIDEO" : "INVALID"
 }
 
-function g(e) {
+function m(e) {
   return (0, i.CO)(e.filename) ? "IMAGE" : (0, i.NU)(e.filename) ? "VIDEO" : "INVALID"
 }
 
 function E(e, t) {
   return d(c({}, h(e)), {
-    type: g(e),
+    type: m(e),
     alt: e.description,
     sourceMetadata: {
       message: t,
@@ -126,7 +126,7 @@ function E(e, t) {
 
 function v(e) {
   return d(c({}, e), {
-    type: m(e)
+    type: g(e)
   })
 }
 

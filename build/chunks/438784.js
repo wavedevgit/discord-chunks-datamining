@@ -58,8 +58,8 @@ function p() {
 function h() {
   return document.hasFocus()
 }
-let m = .25,
-  g = 4,
+let g = .25,
+  m = 4,
   E = 1,
   v = 2.8,
   b = {
@@ -107,7 +107,7 @@ let S = i.memo(function(e) {
     let [f] = (0, l.q_F)(() => _(d({}, y), {
       to: async e => {
         let t = v;
-        for (; u.current;) c.current = h(), c.current ? (t += E * g, await e({
+        for (; u.current;) c.current = h(), c.current ? (t += E * m, await e({
           dotCycle: t,
           immediate: !1
         })) : t !== v ? (t = v, await e({
@@ -118,7 +118,7 @@ let S = i.memo(function(e) {
     }), "animate-always"), b = (6 * t + t / 4 * 2) / 2;
     return (0, r.jsx)(r.Fragment, {
       children: [0, 1, 2].map(e => {
-        let i = m * e,
+        let i = g * e,
           l = t + t * a * e;
         return (0, r.jsx)(s.animated.circle, {
           cx: n ? n.to([0, 1], [b, l]) : l,

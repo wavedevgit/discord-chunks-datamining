@@ -54,14 +54,14 @@ function h() {
   u = {}
 }
 
-function m(e) {
+function g(e) {
   let {
     settings: t
   } = e;
   u = c({}, u, t)
 }
 
-function g(e) {
+function m(e) {
   let {
     settings: t
   } = e;
@@ -99,8 +99,8 @@ l(v, "displayName", "UserSettingsOverridesStore"), l(v, "persistKey", "UserSetti
 }]);
 let b = new v(a.Z, {
   USER_SETTINGS_PROTO_UPDATE: E,
-  USER_SETTINGS_OVERRIDE_APPLY: m,
-  USER_SETTINGS_OVERRIDE_CLEAR: g,
+  USER_SETTINGS_OVERRIDE_APPLY: g,
+  USER_SETTINGS_OVERRIDE_CLEAR: m,
   LOGOUT: p,
   LOGIN_SUCCESS: h
 })

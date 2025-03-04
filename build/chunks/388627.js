@@ -55,13 +55,13 @@ function p() {
     altId: void 0,
     name: h.name
   };
-  let m = (0, u.getPID)(),
-    g = n.getGameForPID(m),
-    E = r.getActivityForPID(m);
-  return (null == g || null == g.id || null == g.name) && (null == E || null == E.application_id) ? void 0 : {
-    id: null !== (e = null == g ? void 0 : g.id) && void 0 !== e ? e : null == E ? void 0 : E.application_id,
+  let g = (0, u.getPID)(),
+    m = n.getGameForPID(g),
+    E = r.getActivityForPID(g);
+  return (null == m || null == m.id || null == m.name) && (null == E || null == E.application_id) ? void 0 : {
+    id: null !== (e = null == m ? void 0 : m.id) && void 0 !== e ? e : null == E ? void 0 : E.application_id,
     altId: null == E ? void 0 : E.application_id,
-    name: null !== (t = null == g ? void 0 : g.name) && void 0 !== t ? t : null == E ? void 0 : E.name
+    name: null !== (t = null == m ? void 0 : m.name) && void 0 !== t ? t : null == E ? void 0 : E.name
   }
 }
 

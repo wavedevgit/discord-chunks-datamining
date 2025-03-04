@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A: () => m,
-  openUploadError: () => g
+  A: () => g,
+  openUploadError: () => m
 });
 var r = n(200651);
 n(192379);
@@ -47,23 +47,23 @@ function h(e) {
     icons: _,
     fileSize: p,
     onClose: h
-  } = e, m = (0, l.Dt)(), g = null != _ ? _ : d.J6;
+  } = e, g = (0, l.Dt)(), m = null != _ ? _ : d.J6;
   return i ? (0, r.jsx)(c.Z, {
     transitionState: a,
     onClose: h,
     fileSize: p
   }) : (0, r.jsx)(s.Y0, {
     size: s.Cg.DYNAMIC,
-    "aria-labelledby": m,
+    "aria-labelledby": g,
     transitionState: a,
     children: (0, r.jsx)("div", {
       className: o()(f.uploadDropModal, f.error),
       children: (0, r.jsxs)("div", {
         className: f.inner,
         children: [(0, r.jsx)(u.Z, {
-          icons: g
+          icons: m
         }), (0, r.jsx)("div", {
-          id: m,
+          id: g,
           className: f.title,
           children: t
         }), (0, r.jsx)("div", {
@@ -74,10 +74,10 @@ function h(e) {
     })
   })
 }
-let m = "UPLOAD_ERROR_MODAL_KEY";
+let g = "UPLOAD_ERROR_MODAL_KEY";
 
-function g(e) {
+function m(e) {
   (0, a.h7)(t => (0, r.jsx)(h, p({}, t, e)), {
-    modalKey: m
+    modalKey: g
   })
 }

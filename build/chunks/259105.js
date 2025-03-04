@@ -54,7 +54,7 @@ function h(e, t) {
     }
   }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
 }
-var m = function(e) {
+var g = function(e) {
   function t() {
     _(this, t);
     var e = p(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
@@ -108,6 +108,6 @@ var m = function(e) {
     }
   }]), t
 }(a.Component);
-m.propTypes = {
+g.propTypes = {
   children: l.default.oneOfType([l.default.element, l.default.func]).isRequired
-}, t.default = m
+}, t.default = g

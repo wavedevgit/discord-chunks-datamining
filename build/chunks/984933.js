@@ -17,8 +17,8 @@ var r, i = n(392711),
   _ = n(131704),
   p = n(700785),
   h = n(314897),
-  m = n(592125),
-  g = n(271383),
+  g = n(592125),
+  m = n(271383),
   E = n(430824),
   v = n(496675),
   b = n(699516),
@@ -40,8 +40,8 @@ let I = "SELECTABLE",
   C = {},
   R = {},
   P = null,
-  w = {},
-  D = {
+  D = {},
+  w = {
     comparator: -1,
     channel: (0, _.kt)({
       id: O.Sc2,
@@ -58,7 +58,7 @@ function k(e) {
     id: e,
     [I]: [],
     [T]: [],
-    [O.d4z.GUILD_CATEGORY]: [D],
+    [O.d4z.GUILD_CATEGORY]: [w],
     count: 0
   }
 }
@@ -89,7 +89,7 @@ function V() {
   let e = {},
     t = d.Z.getFavoriteChannels();
   for (let n in t) {
-    let r = m.Z.getChannel(n);
+    let r = g.Z.getChannel(n);
     if (null == r) continue;
     let i = t[n],
       o = (0, f.r)(t, i, r);
@@ -104,7 +104,7 @@ function V() {
 function F(e) {
   if (e === O.I_8) return V();
   let t = {},
-    n = m.Z.getMutableGuildChannelsForGuild(e);
+    n = g.Z.getMutableGuildChannelsForGuild(e);
   for (let e in n) t[e] = {
     channel: n[e],
     comparator: n[e].position
@@ -120,17 +120,17 @@ function Z(e) {
     let r = n.channel;
     if (e.count += 1, _.zS.has(r.type) && !v.Z.can(O.Plq.VIEW_CHANNEL, r) && !c.Z.isChannelGated(r.guild_id, r.id) && r.id !== P) return;
     let i = B(r.type);
-    r.type === O.d4z.GUILD_DIRECTORY && (null == w[t] && (w[t] = []), w[t].push(n)), null != e[i] && e[i].push(n)
+    r.type === O.d4z.GUILD_DIRECTORY && (null == D[t] && (D[t] = []), D[t].push(n)), null != e[i] && e[i].push(n)
   }), e
 }
 
 function H() {
-  A = {}, w = {}, C = {}, R = {}, null != N && W(N)
+  A = {}, D = {}, C = {}, R = {}, null != N && W(N)
 }
 
 function W(e) {
   let t = k(e);
-  return A[e] = t, w[e] = [], Z(t), G(t), Y(t), en(e), t
+  return A[e] = t, D[e] = [], Z(t), G(t), Y(t), en(e), t
 }
 
 function Y(e) {
@@ -163,7 +163,7 @@ function z(e) {
       id: t
     }
   } = e;
-  return delete A[t], delete C[t], delete R[t], delete w[t], !0
+  return delete A[t], delete C[t], delete R[t], delete D[t], !0
 }
 
 function q(e) {
@@ -176,7 +176,7 @@ function q(e) {
 }
 
 function Q(e) {
-  let t = m.Z.getBasicChannel(e.id);
+  let t = g.Z.getBasicChannel(e.id);
   null != t && null != t.guild_id && W(t.guild_id)
 }
 
@@ -255,7 +255,7 @@ function ei(e) {
   let {
     channelId: t
   } = e;
-  return null == t && null != P ? er(m.Z.getChannel(P), null) : er(m.Z.getChannel(t), t)
+  return null == t && null != P ? er(g.Z.getChannel(P), null) : er(g.Z.getChannel(t), t)
 }
 
 function eo(e) {
@@ -267,7 +267,7 @@ function eo(e) {
       channelId: n,
       sessionId: r
     } = t;
-    return h.default.getSessionId() !== r ? e : er(m.Z.getChannel(n), n) || e
+    return h.default.getSessionId() !== r ? e : er(g.Z.getChannel(n), n) || e
   }, !1)
 }
 
@@ -284,7 +284,7 @@ function es() {
 }
 class el extends(r = s.ZP.Store) {
   initialize() {
-    this.waitFor(E.Z, g.ZP, m.Z, v.Z, h.default, c.Z, d.Z), this.syncWith([d.Z], es)
+    this.waitFor(E.Z, m.ZP, g.Z, v.Z, h.default, c.Z, d.Z), this.syncWith([d.Z], es)
   }
   getAllGuilds() {
     return A
@@ -332,7 +332,7 @@ class el extends(r = s.ZP.Store) {
   }
   getDirectoryChannelIds(e) {
     var t, n;
-    return null !== (n = null === (t = w[e]) || void 0 === t ? void 0 : t.map(e => {
+    return null !== (n = null === (t = D[e]) || void 0 === t ? void 0 : t.map(e => {
       let {
         channel: t
       } = e;

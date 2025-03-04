@@ -13,9 +13,9 @@ var a, s = n(772848),
   _ = n(598077),
   p = n(12647),
   h = n(358085),
-  m = n(374023);
+  g = n(374023);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -66,7 +66,7 @@ class C extends(a = l.ZP.Store) {
     !1 !== c.K.get(E) && (v = h.isPlatformEmbedded && "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL)
   }
   isHandoffAvailable() {
-    return !m.s.isDisallowPopupsSet() && v
+    return !g.s.isDisallowPopupsSet() && v
   }
   get user() {
     return o
@@ -75,7 +75,7 @@ class C extends(a = l.ZP.Store) {
     return i
   }
 }
-g(C, "displayName", "BrowserHandoffStore");
+m(C, "displayName", "BrowserHandoffStore");
 let R = new C(d.Z, {
   RPC_SERVER_READY: S,
   BROWSER_HANDOFF_BEGIN: I,

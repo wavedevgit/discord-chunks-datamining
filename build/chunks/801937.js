@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(710845),
   p = n(219929),
   h = n(985754),
-  m = n(351402),
-  g = n(358085),
+  g = n(351402),
+  m = n(358085),
   E = n(981631),
   v = n(388032),
   b = n(834890),
@@ -98,10 +98,10 @@ let N = new _.Z("ChoosePaymentSourceType"),
     [E.HeQ.IDEAL, new Set(["ALL", "NL"])],
     [E.HeQ.CASH_APP, new Set(["ALL", "US"])]
   ]),
-  w = new Map([
+  D = new Map([
     [E.HeQ.PAYSAFE_CARD, new Set(["DE"])]
   ]),
-  D = "40c266_1",
+  w = "40c266_1",
   L = 1e3;
 
 function x(e) {
@@ -110,7 +110,7 @@ function x(e) {
     forceCountryCode: n,
     validCountryCodes: r
   } = d.ZP.getCurrentConfig({
-    location: D
+    location: w
   }, {
     autoTrackExposure: !1
   }), i = null != e ? e : "ALL";
@@ -119,7 +119,7 @@ function x(e) {
     a = [];
   return P.forEach((e, n) => {
     t.includes(n) && (e.has(i) ? o.add(n) : a.push(n))
-  }), w.forEach((e, t) => {
+  }), D.forEach((e, t) => {
     e.has(i) && o.add(t)
   }), {
     countryPaymentMethods: [...C, ...Array.from(o)],
@@ -145,7 +145,7 @@ class M extends i.PureComponent {
   }
   arePaymentRequestWalletsLoading() {
     var e;
-    if ((0, g.isDesktop)()) return !1;
+    if ((0, m.isDesktop)()) return !1;
     let t = null !== (e = this.props.paymentRequestWallets) && void 0 !== e ? e : [];
     if (0 === t.length) return !1;
     for (let e of t)
@@ -200,7 +200,7 @@ class M extends i.PureComponent {
       onStripePaymentMethodReceived: o,
       onChooseType: n,
       paymentRequestPaymentContext: d
-    }, m = p.map((e, t) => {
+    }, g = p.map((e, t) => {
       let n = () => this.setState({
           ["".concat(e, "Loaded")]: !0
         }),
@@ -210,19 +210,19 @@ class M extends i.PureComponent {
         },
         o = "".concat(e, "-").concat(t);
       return "applePay" === e ? (0, r.jsx)(f.Ch, S({}, h, i), o) : (0, r.jsx)(f.Tr, S({}, h, i), o)
-    }), g = [], E = [], O = void 0 === s || this.arePaymentRequestWalletsLoading();
-    if (c) g.push(...this.createPaymentButtons(x("ALL").countryPaymentMethods));
+    }), m = [], E = [], O = void 0 === s || this.arePaymentRequestWalletsLoading();
+    if (c) m.push(...this.createPaymentButtons(x("ALL").countryPaymentMethods));
     else {
       let {
         countryPaymentMethods: e,
         remainingPaymentMethods: t
       } = x(s);
-      g.push(...this.createPaymentButtons(e)), E.push(...this.createPaymentButtons(t))
+      m.push(...this.createPaymentButtons(e)), E.push(...this.createPaymentButtons(t))
     }
     let I = (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         className: a()(y.wrap, y.horizontal, b.container),
-        children: [g, m]
+        children: [m, g]
       }), (0, r.jsx)("div", {
         className: E.length > 0 ? y.flex : b.hidden,
         children: (0, r.jsxs)(l.P3F, {
@@ -242,7 +242,7 @@ class M extends i.PureComponent {
     return O && !c && (I = (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
         className: b.hidden,
-        children: m
+        children: g
       }), (0, r.jsx)(l.$jN, {
         type: l.$jN.Type.SPINNING_CIRCLE
       })]
@@ -266,8 +266,8 @@ class M extends i.PureComponent {
     }
   }
 }
-let k = s.ZP.connectStores([m.Z], () => ({
-  ipCountryCode: m.Z.ipCountryCode,
-  ipCountryCodeHasError: m.Z.ipCountryCodeHasError,
-  localizedPromo: m.Z.localizedPricingPromo
+let k = s.ZP.connectStores([g.Z], () => ({
+  ipCountryCode: g.Z.ipCountryCode,
+  ipCountryCodeHasError: g.Z.ipCountryCodeHasError,
+  localizedPromo: g.Z.localizedPricingPromo
 }))(M)

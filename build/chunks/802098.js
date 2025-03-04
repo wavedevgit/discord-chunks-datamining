@@ -23,8 +23,8 @@ let f = {},
   _ = {},
   p = null,
   h = null,
-  m = null,
-  g = "lastChangeLogDate",
+  g = null,
+  m = "lastChangeLogDate",
   E = null,
   v = null,
   b = new Set;
@@ -50,7 +50,7 @@ function S(e) {
     config: t,
     latestChangelogId: n
   } = e;
-  p = n, m = t
+  p = n, g = t
 }
 
 function I(e) {
@@ -88,7 +88,7 @@ function A(e) {
   let {
     changelogDate: t
   } = e;
-  v = new Date(t), o.K.set(g, t)
+  v = new Date(t), o.K.set(m, t)
 }
 
 function C() {
@@ -97,11 +97,11 @@ function C() {
 class R extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(s.default, c.Z), this.syncWith([s.default], () => !0), this.syncWith([c.Z], C);
-    let e = o.K.get(g);
+    let e = o.K.get(m);
     if (null != e) try {
       v = new Date(e)
     } catch (e) {
-      o.K.remove(g)
+      o.K.remove(m)
     }
   }
   getChangelog(e, t) {
@@ -116,10 +116,10 @@ class R extends(r = i.ZP.Store) {
     return null !== (r = null === (n = _[e]) || void 0 === n ? void 0 : n[t]) && void 0 !== r ? r : u.LU.NOT_LOADED
   }
   hasLoadedConfig() {
-    return null != m
+    return null != g
   }
   getConfig() {
-    return m
+    return g
   }
   overrideId() {
     return h
@@ -132,7 +132,7 @@ class R extends(r = i.ZP.Store) {
   }
   getStateForDebugging() {
     return {
-      changelogConfig: m,
+      changelogConfig: g,
       loadedChangelogs: _,
       lastSeenChangelogId: E,
       lastSeenChangelogDate: v

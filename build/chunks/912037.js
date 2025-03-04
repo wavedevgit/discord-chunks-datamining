@@ -36,9 +36,9 @@ var a = n(161796),
       value: function(e) {
         if (e.outputRange && "string" == typeof e.outputRange[0]) return _(e);
         var t = e.outputRange;
-        g("outputRange", t);
+        m("outputRange", t);
         var n = e.inputRange;
-        g("inputRange", n), m(n), s(n.length === t.length, "inputRange (" + n.length + ") and outputRange (" + t.length + ") must have the same length");
+        m("inputRange", n), g(n), s(n.length === t.length, "inputRange (" + n.length + ") and outputRange (" + t.length + ") must have the same length");
         var r = e.easing || l,
           i = "extend";
         void 0 !== e.extrapolateLeft ? i = e.extrapolateLeft : void 0 !== e.extrapolate && (i = e.extrapolate);
@@ -107,12 +107,12 @@ function h(e, t) {
   return n - 1
 }
 
-function m(e) {
+function g(e) {
   s(e.length >= 2, "inputRange must have at least 2 elements");
   for (var t = 1; t < e.length; ++t) s(e[t] >= e[t - 1], "inputRange must be monotonically increasing " + e)
 }
 
-function g(e, t) {
+function m(e, t) {
   s(t.length >= 2, e + " must have at least 2 elements"), s(2 !== t.length || t[0] !== -1 / 0 || t[1] !== 1 / 0, e + "cannot be ]-infinity;+infinity[ " + t)
 }
 e.exports = c

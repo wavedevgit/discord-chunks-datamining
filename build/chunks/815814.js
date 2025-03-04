@@ -13,19 +13,19 @@ var r = n(640767),
   _ = n(163494),
   p = Object("a"),
   h = "a" !== p[0] || !(0 in p),
-  m = f("String.prototype.split");
+  g = f("String.prototype.split");
 e.exports = function(e) {
   var t, n = u(this),
-    f = c((h && _(n) ? m(n, "") : n).length);
+    f = c((h && _(n) ? g(n, "") : n).length);
   if (!l(e)) throw TypeError("Array.prototype.map callback must be a function");
   arguments.length > 1 && (t = arguments[1]);
-  for (var p = r(n, f), g = 0; g < f;) {
-    var E = d(g);
+  for (var p = r(n, f), m = 0; m < f;) {
+    var E = d(m);
     if (s(n, E)) {
-      var v = i(e, t, [a(n, E), g, n]);
+      var v = i(e, t, [a(n, E), m, n]);
       o(p, E, v)
     }
-    g += 1
+    m += 1
   }
   return p
 }

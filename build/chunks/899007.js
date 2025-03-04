@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(158776),
   p = n(74538),
   h = n(998502),
-  m = n(785717),
-  g = n(369566),
+  g = n(785717),
+  m = n(369566),
   E = n(518950),
   v = n(652853),
   b = n(228168),
@@ -75,22 +75,22 @@ function R(e) {
     animateOnHover: N,
     onOpenProfile: R,
     className: P,
-    previewStatus: w
+    previewStatus: D
   } = e, {
-    theme: D
+    theme: w
   } = (0, v.z)(), {
     analyticsLocations: L
   } = (0, d.ZP)(u.Z.AVATAR), {
     trackUserProfileAction: x
-  } = (0, m.KZ)(), M = p.ZP.isPremiumAtLeast(null == n ? void 0 : n.premiumType, O.p9.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
+  } = (0, g.KZ)(), M = p.ZP.isPremiumAtLeast(null == n ? void 0 : n.premiumType, O.p9.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
     live: j
-  } = (0, g.Z)(t.id), [U] = j, {
+  } = (0, m.Z)(t.id), [U] = j, {
     status: G,
     isMobileOnline: B
   } = (0, s.cj)([_.Z], () => ({
     status: (0, c.Z)(U) ? y.Skl.STREAMING : _.Z.getStatus(t.id),
     isMobileOnline: _.Z.isMobileOnline(t.id)
-  })), V = void 0 !== w ? w : G, F = I === b.y0.FULL_SIZE ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = a()(S.avatar, {
+  })), V = void 0 !== D ? D : G, F = I === b.y0.FULL_SIZE ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = a()(S.avatar, {
     [S.biteSize]: I === b.y0.BITE_SIZE,
     [S.fullSize]: I === b.y0.FULL_SIZE,
     [S.panel]: I === b.y0.PANEL
@@ -110,7 +110,7 @@ function R(e) {
     "aria-label": t.username,
     imageClassName: null != R ? S.overlay : void 0,
     status: k ? y.Skl.UNKNOWN : V,
-    statusBackdropColor: M && !k ? (0, l.QFD)(D) : void 0,
+    statusBackdropColor: M && !k ? (0, l.QFD)(w) : void 0,
     isMobile: B,
     statusTooltip: !0,
     statusTooltipDelay: b.vB

@@ -67,8 +67,8 @@ i.prototype.get_child = function(e) {
           if (a(p.get_child(!d)) || a(p.get_child(d))) {
             var h = o.right === r;
             a(p.get_child(d)) ? o.set_child(h, l(r, d)) : a(p.get_child(!d)) && o.set_child(h, s(r, d));
-            var m = o.get_child(h);
-            m.red = !0, n.red = !0, m.left.red = !1, m.right.red = !1
+            var g = o.get_child(h);
+            g.red = !0, n.red = !0, g.left.red = !1, g.right.red = !1
           } else r.red = !1, p.red = !0, n.red = !0
         }
       }

@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(430824),
   p = n(496675),
   h = n(259580),
-  m = n(700785),
-  g = n(785717),
+  g = n(700785),
+  m = n(785717),
   E = n(256226),
   v = n(314172),
   b = n(981631),
@@ -82,8 +82,8 @@ function C(e, t) {
 }
 let R = 4,
   P = 268,
-  w = 2,
-  D = e => {
+  D = 2,
+  w = e => {
     if (null == e) return 0;
     let {
       width: t
@@ -109,12 +109,12 @@ function L(e) {
     V.current = 0
   }, [d]), i.useLayoutEffect(() => {
     if (j) return;
-    let e = D(G.current),
-      t = D(B.current),
+    let e = w(G.current),
+      t = w(B.current),
       n = [],
       r = P - e - t;
-    for (let e = 0; e < w; e++) {
-      let t = e === w - 1 ? r : P;
+    for (let e = 0; e < D; e++) {
+      let t = e === D - 1 ? r : P;
       for (let e = 0, r = n.length; r < d.length; r++) {
         let i = d[r],
           o = T.current[i.id];
@@ -152,12 +152,12 @@ function L(e) {
         disableBorderColor: !0,
         ref: t => C(e.id, t),
         onRemove: () => S(e),
-        canRemove: _ ? m.r6(l, n.id, f, e) : (null === (o = e.tags) || void 0 === o ? void 0 : o.guild_connections) === null && t.id === n.id
+        canRemove: _ ? g.r6(l, n.id, f, e) : (null === (o = e.tags) || void 0 === o ? void 0 : o.guild_connections) === null && t.id === n.id
       }, e.id)
     }),
     {
       trackUserProfileAction: K
-    } = (0, g.KZ)(),
+    } = (0, m.KZ)(),
     z = i.useCallback(() => {
       U(!0), K({
         action: "EXPAND_ROLES"
@@ -223,12 +223,12 @@ function x(e) {
     guild: o
   } = e, {
     trackUserProfileAction: a
-  } = (0, g.KZ)(), s = (0, l.e7)([f.ZP], () => f.ZP.getMember(o.id, t.id)), c = (0, l.e7)([_.Z], () => _.Z.getRoles(o.id)), h = null == s ? void 0 : s.roles, E = i.useMemo(() => null == h || 0 === h.length ? [] : Object.values(c).filter(e => h.includes(e.id)).sort((e, t) => {
+  } = (0, m.KZ)(), s = (0, l.e7)([f.ZP], () => f.ZP.getMember(o.id, t.id)), c = (0, l.e7)([_.Z], () => _.Z.getRoles(o.id)), h = null == s ? void 0 : s.roles, E = i.useMemo(() => null == h || 0 === h.length ? [] : Object.values(c).filter(e => h.includes(e.id)).sort((e, t) => {
     var n, r;
     let i = (null === (n = e.tags) || void 0 === n ? void 0 : n.guild_connections) !== null,
       o = (null === (r = t.tags) || void 0 === r ? void 0 : r.guild_connections) !== null;
     return i && !o ? 1 : !i && o ? -1 : 0
-  }), [c, h]), v = m.e9(o, n.id), [y] = (0, l.Wu)([p.Z], () => [p.Z.can(b.Plq.MANAGE_ROLES, o), null != o ? p.Z.getGuildVersion(o.id) : null]), O = i.useCallback(e => {
+  }), [c, h]), v = g.e9(o, n.id), [y] = (0, l.Wu)([p.Z], () => [p.Z.can(b.Plq.MANAGE_ROLES, o), null != o ? p.Z.getGuildVersion(o.id) : null]), O = i.useCallback(e => {
     var n, r;
     a({
       action: "REMOVE_ROLE"

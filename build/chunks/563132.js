@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(211242),
   p = n(695346),
   h = n(882712),
-  m = n(855775),
-  g = n(551428),
+  g = n(855775),
+  m = n(551428),
   E = n(975104),
   v = n(630388),
   b = n(74538),
@@ -32,8 +32,8 @@ var r = n(200651),
   C = n(994427),
   R = n(814076),
   P = n(712297),
-  w = n(585686),
-  D = n(771206),
+  D = n(585686),
+  w = n(771206),
   L = n(362755),
   x = n(981631),
   M = n(474936);
@@ -93,7 +93,7 @@ function Z(e) {
     applicationId: z,
     referralCode: q,
     repeatPurchase: Q = !1
-  } = e, X = (0, D.Z)(), J = (0, _.Q)(), $ = (0, I.Z)(), {
+  } = e, X = (0, w.Z)(), J = (0, _.Q)(), $ = (0, I.Z)(), {
     paymentSources: ee,
     hasPaymentSources: et,
     paymentSourceId: en,
@@ -116,10 +116,10 @@ function Z(e) {
   }), ed = (0, R.Z)(), [ef, e_] = i.useState(!1), {
     step: ep,
     setStep: eh,
-    steps: em,
-    breadcrumbsData: eg,
+    steps: eg,
+    breadcrumbsData: em,
     previousStepRef: eE
-  } = (0, w.Z)({
+  } = (0, D.Z)({
     stepConfigs: V,
     breadcrumbs: F
   }), [ev, eb] = (0, C.Z)(ep), {
@@ -142,8 +142,8 @@ function Z(e) {
     selectedPlan: eC,
     selectedPlanNotification: eR,
     setSelectedSkuId: eP,
-    setSelectedPlanId: ew,
-    setSelectedPlanNotification: eD
+    setSelectedPlanId: eD,
+    setSelectedPlanNotification: ew
   } = (0, O.Z)(), [eL, ex] = (0, s.Wu)([h.Z], () => [h.Z.purchaseTokenAuthState, h.Z.purchaseTokenHash]), [eM, ek, ej, eU] = (0, s.Wu)([L.Z], () => [L.Z.browserCheckoutState, L.Z.loadId, L.Z.skuId, L.Z.planId]), [eG, eB] = i.useState(null), [eV, eF] = i.useState(null), [eZ, eH] = i.useState(null), [eW, eY] = i.useState(null), [eK, ez] = i.useState(null), [eq, eQ] = i.useState(void 0), [eX, eJ] = i.useState([]), e$ = i.useMemo(() => null == eC || (0, b.PV)(eC.id), [eC]), e0 = i.useRef(null != U ? U.planId : null);
   i.useEffect(() => {
     null == e0.current && null != U && (e0.current = U.planId)
@@ -161,7 +161,7 @@ function Z(e) {
   }), e6 = null != eA ? e4[eA] : null, [e5, e7] = i.useState(e6), e8 = i.useMemo(() => {
     if (null == eA) return null;
     let e = e3[eA];
-    return null == e ? null : e[null != en ? en : m.c]
+    return null == e ? null : e[null != en ? en : g.c]
   }, [eA, e3, en]), {
     data: e9
   } = (0, f.IX)(z), te = p.Sb.useSetting(), tt = (0, s.e7)([c.Z], () => c.Z.getFetchState());
@@ -176,7 +176,7 @@ function Z(e) {
       return t === z
     })),
     ti = null == tr ? void 0 : tr.compositeInstanceId,
-    to = (0, s.e7)([g.Z], () => null != eA ? g.Z.getForSKU(eA) : null, [eA]),
+    to = (0, s.e7)([m.Z], () => null != eA ? m.Z.getForSKU(eA) : null, [eA]),
     ta = e1[null != eA ? eA : ""],
     [ts, tl] = i.useState(null),
     tc = null !== (E = null == U ? void 0 : U.inReverseTrial) && void 0 !== E && E && !H;
@@ -206,9 +206,9 @@ function Z(e) {
       setHasAcceptedTerms: e_,
       step: ep,
       setStep: eh,
-      steps: em,
+      steps: eg,
       stepConfigs: V,
-      breadcrumbs: eg,
+      breadcrumbs: em,
       previousStepRef: eE,
       purchaseState: ev,
       setPurchaseState: eb,
@@ -236,9 +236,9 @@ function Z(e) {
       selectedStoreListing: to,
       selectedPlan: eC,
       setSelectedSkuId: eP,
-      setSelectedPlanId: ew,
+      setSelectedPlanId: eD,
       selectedPlanNotification: eR,
-      setSelectedPlanNotification: eD,
+      setSelectedPlanNotification: ew,
       readySlideId: eq,
       setReadySlideId: eQ,
       defaultPlanId: Y,

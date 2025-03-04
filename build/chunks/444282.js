@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(859235),
   p = n(898463),
   h = n(981631),
-  m = n(733973),
-  g = n(451328);
+  g = n(733973),
+  m = n(451328);
 
 function E(e) {
   let {
@@ -93,30 +93,30 @@ function E(e) {
     channelId: t,
     keyboardModeEnabled: o,
     onKeyDown: S,
-    className: a()(m.emptyOption, {
-      [m.emptyOptionActive]: v
+    className: a()(g.emptyOption, {
+      [g.emptyOptionActive]: v
     }),
     draftType: d.d.SlashCommand,
     ref: O,
     children: [(0, r.jsx)("span", {
-      className: a()(m.optionName, {
-        [m.optionNameActive]: v
+      className: a()(g.optionName, {
+        [g.optionNameActive]: v
       }),
       children: n.name
     }), (0, r.jsx)(s.P3F, {
-      className: m.clickContainer,
+      className: g.clickContainer,
       onClick: () => {
         var e;
         return null === (e = E.current) || void 0 === e ? void 0 : e.activateUploadDialogue()
       },
       children: (0, r.jsxs)("div", {
-        className: m.commandOptionContainer,
+        className: g.commandOptionContainer,
         children: [(0, r.jsx)("img", {
-          src: g,
-          className: m.optionIcon,
+          src: m,
+          className: g.optionIcon,
           alt: ""
         }), (0, r.jsx)(s.Text, {
-          className: m.optionHelp,
+          className: g.optionHelp,
           variant: "text-sm/normal",
           children: "Drag and drop or click to upload file"
         }), (0, r.jsx)(c.Z, {
@@ -125,7 +125,7 @@ function E(e) {
           multiple: !1,
           tabIndex: -1,
           "aria-hidden": !0,
-          className: m.fileInput
+          className: g.fileInput
         })]
       })
     })]

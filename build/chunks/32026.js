@@ -13,14 +13,14 @@ var r = n(161581),
   _ = f && f.set,
   p = o.aTypedArray,
   h = o.exportTypedArrayMethod,
-  m = !c(function() {
+  g = !c(function() {
     var e = new Uint8ClampedArray(2);
     return i(_, e, {
       length: 1,
       0: 3
     }, 1), 3 !== e[1]
   }),
-  g = m && o.NATIVE_ARRAY_BUFFER_VIEWS && c(function() {
+  m = g && o.NATIVE_ARRAY_BUFFER_VIEWS && c(function() {
     var e = new d(2);
     return e.set(1), e.set("2", 1), 0 !== e[0] || 2 !== e[1]
   });
@@ -28,10 +28,10 @@ h("set", function(e) {
   p(this);
   var t = s(arguments.length > 1 ? arguments[1] : void 0, 1),
     n = l(e);
-  if (m) return i(_, this, n, t);
+  if (g) return i(_, this, n, t);
   var r = this.length,
     o = a(n),
     c = 0;
   if (o + t > r) throw u("Wrong length");
   for (; c < o;) this[t + c] = n[c++]
-}, !m || g)
+}, !g || m)

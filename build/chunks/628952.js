@@ -17,8 +17,8 @@ var i = n(120356),
   _ = n(583434),
   p = n(905357),
   h = n(473608),
-  m = n(388032),
-  g = n(305026);
+  g = n(388032),
+  m = n(305026);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -73,16 +73,16 @@ let O = e => {
     giftRecipientError: T
   } = (0, c.wD)(), N = (0, s.e7)([f.default], () => f.default.getCurrentUser()), A = (0, p.k)(S);
   if (null == S) return null;
-  let [C] = S.items, R = () => C.type === a.Z.AVATAR_DECORATION ? m.NW.string(m.t["7v0T9P"]) : C.type === a.Z.PROFILE_EFFECT ? m.NW.string(m.t.wR5wOj) : null, P = null != I && I.id !== (null == N ? void 0 : N.id), w = () => {
+  let [C] = S.items, R = () => C.type === a.Z.AVATAR_DECORATION ? g.NW.string(g.t["7v0T9P"]) : C.type === a.Z.PROFILE_EFFECT ? g.NW.string(g.t.wR5wOj) : null, P = null != I && I.id !== (null == N ? void 0 : N.id), D = () => {
     null != t && null != E && E(t)
   };
   return (0, r.jsxs)("div", {
     className: O,
     children: [b && (0, r.jsxs)("div", {
-      className: g.previewTitleContainer,
+      className: m.previewTitleContainer,
       children: [(0, r.jsx)(l.vwX, {
-        className: g.previewTitle,
-        children: m.NW.string(m.t.PpoJzs)
+        className: m.previewTitle,
+        children: g.NW.string(g.t.PpoJzs)
       }), P && (0, r.jsx)(l.yRy, {
         preload: () => (0, d.Z)(I.id, I.getAvatarURL(null, 80)),
         renderPopout: e => (0, r.jsx)(u.Z, y(v({}, e), {
@@ -96,28 +96,28 @@ let O = e => {
         align: "center",
         position: "right",
         children: e => (0, r.jsx)(l.P3F, y(v({}, e), {
-          className: g.previewLink,
+          className: m.previewLink,
           children: (0, r.jsx)(l.Text, {
             variant: "text-xs/medium",
             color: "text-link",
-            children: m.NW.string(m.t["2GnJQE"])
+            children: g.NW.string(g.t["2GnJQE"])
           })
         }))
       }, I.id)]
     }), (0, r.jsxs)(l.P3F, {
       tag: "div",
-      onClick: w,
-      className: o()(g.previewContainer, {
-        [g.previewContainerSelected]: n && null == T,
-        [g.previewContainerError]: n && null != T
+      onClick: D,
+      className: o()(m.previewContainer, {
+        [m.previewContainerSelected]: n && null == T,
+        [m.previewContainerError]: n && null != T
       }),
       children: [(0, r.jsxs)("div", {
-        className: g.giftInfoContainer,
+        className: m.giftInfoContainer,
         children: [(0, r.jsx)(h.O, {
           product: S,
           fallbackLabel: null
         }), (0, r.jsxs)("div", {
-          className: g.previewTextContainer,
+          className: m.previewTextContainer,
           children: [(0, r.jsx)(l.Text, {
             variant: "text-md/semibold",
             children: A
@@ -131,7 +131,7 @@ let O = e => {
           children: i
         })]
       }), n && null != T && (0, r.jsx)("div", {
-        className: g.recipientError,
+        className: m.recipientError,
         children: (0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "status-danger-background",

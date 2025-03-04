@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => D,
-  r: () => w
+  Z: () => w,
+  r: () => D
 }), n(47120), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(377171),
   p = n(95398),
   h = n(70097),
-  m = n(592125),
-  g = n(956664),
+  g = n(592125),
+  m = n(956664),
   E = n(709054),
   v = n(273031),
   b = n(859235),
@@ -120,7 +120,7 @@ function R(e) {
       let {
         width: e,
         height: t
-      } = (0, g.zp)(n.width, n.height);
+      } = (0, m.zp)(n.width, n.height);
       _({
         width: e,
         height: t
@@ -145,7 +145,7 @@ function R(e) {
         style: t ? f : {}
       })
     }, [u, p, n, f]),
-    m = i.useCallback(() => {
+    g = i.useCallback(() => {
       null != u && (0, l.h7j)(e => (0, r.jsx)(l.Y0X, N(I({
         className: O.__invalid_modal
       }, e), {
@@ -160,7 +160,7 @@ function R(e) {
       [O.imageSmall]: p
     }),
     children: (0, r.jsx)(l.P3F, {
-      onClick: m,
+      onClick: g,
       className: O.clickableMedia,
       children: (0, r.jsx)(C, {
         size: s,
@@ -209,7 +209,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   var t;
   let {
     upload: n,
@@ -245,7 +245,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     channelId: t,
     draftType: n,
@@ -253,12 +253,12 @@ function D(e) {
     keyboardModeEnabled: d,
     label: p,
     size: h = b.q.MEDIUM,
-    canEdit: g = !0,
+    canEdit: m = !0,
     hideFileName: S = !1,
     clip: T
-  } = e, A = null != T, C = (h = A ? b.q.CLIP : h) === b.q.SMALL, R = (0, s.e7)([m.Z], () => {
+  } = e, A = null != T, C = (h = A ? b.q.CLIP : h) === b.q.SMALL, R = (0, s.e7)([g.Z], () => {
     var e;
-    return null === (e = m.Z.getChannel(t)) || void 0 === e ? void 0 : e.guild_id
+    return null === (e = g.Z.getChannel(t)) || void 0 === e ? void 0 : e.guild_id
   }), P = e => {
     e.stopPropagation(), (0, l.h7j)(e => (0, r.jsx)(u.default, N(I({}, e), {
       draftType: n,
@@ -280,7 +280,7 @@ function D(e) {
   };
   return (0, r.jsxs)(b.Z, {
     actions: (0, r.jsxs)(i.Fragment, {
-      children: [g ? (0, r.jsx)(v.Z, {
+      children: [m ? (0, r.jsx)(v.Z, {
         className: a()({
           [O.action]: C
         }),
@@ -301,7 +301,7 @@ function D(e) {
             [O.actionBarIcon]: C
           })
         })
-      }) : null, g && !A ? (0, r.jsx)(v.Z, {
+      }) : null, m && !A ? (0, r.jsx)(v.Z, {
         className: a()({
           [O.action]: C
         }),
@@ -339,7 +339,7 @@ function D(e) {
     className: a()({
       [O.attachmentItemSmall]: C
     }),
-    children: [(0, r.jsx)(w, {
+    children: [(0, r.jsx)(D, {
       upload: o,
       size: h
     }), !S && !A && (0, r.jsx)("div", {

@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(731896),
   p = n(594174),
   h = n(597688),
-  m = n(579407),
-  g = n(231103),
+  g = n(579407),
+  m = n(231103),
   E = n(223223);
 
 function v(e, t, n) {
@@ -57,7 +57,7 @@ let y = e => {
     return null == t ? n : (0, r.jsx)("img", b({
       src: o,
       alt: t.label,
-      className: g.avatarDecoration
+      className: m.avatarDecoration
     }, a))
   },
   O = e => {
@@ -73,13 +73,13 @@ let y = e => {
       title: l
     } = null !== (t = null == o ? void 0 : o.config) && void 0 !== t ? t : {};
     return (0, r.jsxs)("div", {
-      className: g.profileEffectContainer,
+      className: m.profileEffectContainer,
       children: [(0, r.jsx)("img", {
         src: E,
         alt: a,
-        className: g.profileEffectBackground
+        className: m.profileEffectBackground
       }), (0, r.jsx)("img", {
-        className: g.profileEffect,
+        className: m.profileEffect,
         src: s,
         alt: l
       })]
@@ -91,9 +91,9 @@ let y = e => {
       fallbackLabel: n
     } = e;
     return null == t ? n : (0, r.jsx)("div", {
-      className: g.nameplateContainer,
+      className: m.nameplateContainer,
       children: (0, r.jsx)(f.Z, {
-        nameplate: (0, m.EU)(t),
+        nameplate: (0, g.EU)(t),
         selected: !0
       })
     })

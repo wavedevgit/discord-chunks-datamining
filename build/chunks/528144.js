@@ -68,15 +68,15 @@ let _ = Object.freeze({
       children: d,
       color: p,
       onClick: h,
-      onContextMenu: m,
-      style: g,
+      onContextMenu: g,
+      style: m,
       title: E,
       uppercase: v
     } = e;
     return (0, r.jsx)(a.H, {
       role: null != h ? "button" : void 0,
       onClick: h,
-      onContextMenu: m,
+      onContextMenu: g,
       id: t,
       className: o()(i, {
         [s.base]: !0,
@@ -86,9 +86,9 @@ let _ = Object.freeze({
         [s.uppercase]: v
       }),
       title: E,
-      style: null != p ? f(u({}, g), {
+      style: null != p ? f(u({}, m), {
         color: p
-      }) : g,
+      }) : m,
       children: d
     })
   };

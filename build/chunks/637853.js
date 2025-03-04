@@ -2,10 +2,10 @@
 "use strict";
 n.d(t, {
   Ee: () => y,
-  L6: () => D,
+  L6: () => w,
   V7: () => S,
-  VF: () => w,
-  b$: () => g,
+  VF: () => D,
+  b$: () => m,
   d9: () => R,
   dF: () => O,
   dX: () => L,
@@ -28,9 +28,9 @@ var r = n(442837),
   _ = n(977258),
   p = n(981631),
   h = n(372897);
-let m = new Date(16824888e5);
+let g = new Date(16824888e5);
 
-function g(e) {
+function m(e) {
   return (0, r.e7)([l.Z, c.Z], () => {
     let t = l.Z.getGuild(e),
       n = !!(null == t ? void 0 : t.hasFeature(p.oNc.COMMUNITY)),
@@ -50,7 +50,7 @@ function E(e) {
 
 function v(e, t) {
   var n;
-  if (null == e || !e.hasFeature(p.oNc.GUILD_ONBOARDING) || null == t || null == t.joinedAt || new Date(t.joinedAt) < m) return !1;
+  if (null == e || !e.hasFeature(p.oNc.GUILD_ONBOARDING) || null == t || null == t.joinedAt || new Date(t.joinedAt) < g) return !1;
   let r = null !== (n = t.flags) && void 0 !== n ? n : 0;
   return u.yE(r, h.q.STARTED_ONBOARDING) && !u.yE(r, h.q.COMPLETED_ONBOARDING)
 }
@@ -157,7 +157,7 @@ function P(e, t) {
   return e[0].length === t[0].length && e[1].length === t[1].length && (0, i.Z)(e[0], t[0]) && (0, i.Z)(e[1], t[1])
 }
 
-function w(e, t) {
+function D(e, t) {
   return (0, r.e7)([s.ZP], () => {
     let n = s.ZP.getChannels(e),
       r = [],
@@ -168,7 +168,7 @@ function w(e, t) {
   }, [e, t], P)
 }
 
-function D(e) {
+function w(e) {
   return new Set(e.map(e => e.roleIds).flat().filter(d.lm))
 }
 

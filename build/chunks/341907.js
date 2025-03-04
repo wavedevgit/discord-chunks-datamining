@@ -27,8 +27,8 @@ var i = n(772848),
   _ = n(866960),
   p = n(626135),
   h = n(954824),
-  m = n(617136),
-  g = n(569984),
+  g = n(617136),
+  m = n(569984),
   E = n(497505),
   v = n(918701),
   b = n(184299),
@@ -63,7 +63,7 @@ function P(e) {
   return e
 }
 
-function w(e, t) {
+function D(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -74,8 +74,8 @@ function w(e, t) {
   return n
 }
 
-function D(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+function w(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -94,7 +94,7 @@ function M(e) {
     let {
       default: e
     } = await Promise.all([n.e("99393"), n.e("48923"), n.e("59644")]).then(n.bind(n, 985866));
-    return n => (0, r.jsx)(e, D(P({}, n), {
+    return n => (0, r.jsx)(e, w(P({}, n), {
       questId: t,
       questContentPosition: o,
       location: i,
@@ -109,7 +109,7 @@ function k(e, t) {
     let {
       default: i
     } = await Promise.all([n.e("8016"), n.e("86620")]).then(n.bind(n, 824393));
-    return n => (0, r.jsx)(i, D(P({}, n), {
+    return n => (0, r.jsx)(i, w(P({}, n), {
       quest: e,
       location: t
     }))
@@ -121,7 +121,7 @@ function j(e, t) {
     let {
       default: i
     } = await n.e("88938").then(n.bind(n, 390238));
-    return n => (0, r.jsx)(i, D(P({}, n), {
+    return n => (0, r.jsx)(i, w(P({}, n), {
       quest: e,
       location: t
     }))
@@ -133,7 +133,7 @@ function U(e, t) {
     let {
       default: i
     } = await n.e("20565").then(n.bind(n, 383294));
-    return n => (0, r.jsx)(i, D(P({}, n), {
+    return n => (0, r.jsx)(i, w(P({}, n), {
       quest: e,
       location: t
     }))
@@ -145,7 +145,7 @@ function U(e, t) {
 }
 
 function G(e, t) {
-  (0, m._3)({
+  (0, g._3)({
     questId: e.id,
     questContent: t.content,
     questContentPosition: t.position,
@@ -155,7 +155,7 @@ function G(e, t) {
     let {
       default: i
     } = await n.e("4266").then(n.bind(n, 316210));
-    return n => (0, r.jsx)(i, D(P({}, n), {
+    return n => (0, r.jsx)(i, w(P({}, n), {
       questContent: t.content,
       quest: e
     }))
@@ -211,7 +211,7 @@ function H(e) {
     let {
       default: i
     } = await Z();
-    return o => (0, r.jsx)(i, D(P({}, o), {
+    return o => (0, r.jsx)(i, w(P({}, o), {
       openStartClockTime: performance.now(),
       questId: e.id,
       autoplay: t,
@@ -224,10 +224,10 @@ function H(e) {
       var t, r;
       let i = b.ZP.getState().getVideoProgress(e.id);
       if (null == i) return;
-      let o = g.Z.getQuest(e.id);
+      let o = m.Z.getQuest(e.id);
       null != o && (null === (t = o.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null && (null === (r = o.userStatus) || void 0 === r ? void 0 : r.completedAt) == null && (0, v.FI)(o, i.maxTimestampSec);
       let a = F(i.maxTimestampSec, i.duration);
-      (0, m.dA)({
+      (0, g.dA)({
         questId: e.id,
         event: A.rMx.QUEST_VIDEO_PROGRESSED,
         properties: {
@@ -235,7 +235,7 @@ function H(e) {
           video_timestamp_seconds: i.maxTimestampSec,
           video_session_id: n
         }
-      }), (0, m.dA)({
+      }), (0, g.dA)({
         questId: e.id,
         event: A.rMx.QUEST_VIDEO_MODAL_CLOSED,
         properties: {

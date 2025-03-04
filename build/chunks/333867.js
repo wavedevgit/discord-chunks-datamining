@@ -48,13 +48,13 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -95,8 +95,8 @@ function O(e) {
     var {
       onClose: t,
       returnRef: i
-    } = e, o = g(e, ["onClose", "returnRef"]);
-    return (0, r.jsx)(d.Z, m(p({}, o), {
+    } = e, o = m(e, ["onClose", "returnRef"]);
+    return (0, r.jsx)(d.Z, g(p({}, o), {
       loadId: C,
       skuId: n,
       isGift: u,

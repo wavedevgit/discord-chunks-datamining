@@ -16,8 +16,8 @@ var r = n(392711),
   _ = n(630388),
   p = n(823379),
   h = n(960048),
-  m = n(709054),
-  g = n(51144),
+  g = n(709054),
+  m = n(51144),
   E = n(981631);
 
 function v(e, t, n) {
@@ -36,7 +36,7 @@ function y(e) {
     id: e.id,
     username: "0" !== e.discriminator ? "".concat(e.username, "#").concat(e.discriminator) : e.username
   };
-  if (null != g.ZP.getGlobalName(e) && (t.globalName = e.globalName), e.bot && (t.isBot = !0), e instanceof l.Z) t.isProvisional = e.isProvisional;
+  if (null != m.ZP.getGlobalName(e) && (t.globalName = e.globalName), e.bot && (t.isBot = !0), e instanceof l.Z) t.isProvisional = e.isProvisional;
   else if ("flags" in e) {
     var n;
     t.isProvisional = _.yE(null !== (n = e.flags) && void 0 !== n ? n : 0, E.xW$.PROVISIONAL_ACCOUNT)
@@ -192,7 +192,7 @@ class N extends a.Z {
           for (let t in r[e]) {
             var i, o;
             let a = n[t],
-              s = null !== (o = null === (i = r[e][t]) || void 0 === i ? void 0 : i.nick) && void 0 !== o ? o : g.ZP.getGlobalName(a);
+              s = null !== (o = null === (i = r[e][t]) || void 0 === i ? void 0 : i.nick) && void 0 !== o ? o : m.ZP.getGlobalName(a);
             null != a && (a[e] = null != s && "" !== s ? s : null)
           }
         this.updateUsers(Object.values(n), "connection_open")
@@ -224,10 +224,10 @@ class N extends a.Z {
         guildMembers: n
       } = e, r = new Map;
       for (let e of t) r.set(e.id, y(e));
-      for (let e of m.default.keys(n)) {
+      for (let e of g.default.keys(n)) {
         let t = n[e];
         if (null != t)
-          for (let n of m.default.keys(t)) {
+          for (let n of g.default.keys(t)) {
             let i = r.get(n),
               o = t[n];
             null != i && null != o && null != o.nick && (O(i, e, o.nick), r.set(n, i))

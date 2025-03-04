@@ -30,7 +30,7 @@ let p = {
 };
 
 function h(e, t, n) {
-  if (m(e, t), E(e, t) || n <= 0) return;
+  if (g(e, t), E(e, t) || n <= 0) return;
   let r = n + Date.now();
   p[t][e.id] = {
     rateLimitPerUser: e.rateLimitPerUser,
@@ -47,11 +47,11 @@ function h(e, t, n) {
   }, !0)
 }
 
-function m(e, t) {
+function g(e, t) {
   null != p[t][e.id] && (p[t][e.id].timer.stop(), delete p[t][e.id])
 }
 
-function g(e, t) {
+function m(e, t) {
   let n = l.Z.getChannel(e);
   if (null == n) return !1;
   h(n, t, 0 === n.rateLimitPerUser ? 0 : n.rateLimitPerUser * s.Z.Millis.SECOND + f)
@@ -65,7 +65,7 @@ function v(e) {
   let {
     channelId: t
   } = e;
-  return g(t, 0)
+  return m(t, 0)
 }
 
 function b(e) {
@@ -80,7 +80,7 @@ function y(e) {
     channelId: t,
     slowmodeType: n
   } = e;
-  return g(t, n)
+  return m(t, n)
 }
 
 function O(e) {

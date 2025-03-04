@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -75,7 +75,7 @@ function h(e) {
     e.load()
   } catch (e) {}
 }
-let m = e => {
+let g = e => {
     var {
       externalRef: t,
       autoPlay: n,
@@ -84,16 +84,16 @@ let m = e => {
       mediaLayoutType: d
     } = e, f = _(e, ["externalRef", "autoPlay", "playOnHover", "responsive", "mediaLayoutType"]);
     let p = !(0, a.e7)([s.Z], () => s.Z.useReducedMotion) && !o && n,
-      m = i.useRef(null);
+      g = i.useRef(null);
 
-    function g() {
+    function m() {
       var e;
-      o && (null == m || null === (e = m.current) || void 0 === e || e.play())
+      o && (null == g || null === (e = g.current) || void 0 === e || e.play())
     }
 
     function E() {
       var e;
-      o && (null == m || null === (e = m.current) || void 0 === e || e.pause())
+      o && (null == g || null === (e = g.current) || void 0 === e || e.pause())
     }
 
     function v() {
@@ -116,20 +116,20 @@ let m = e => {
     return i.useLayoutEffect(() => () => {
       let {
         current: e
-      } = m;
+      } = g;
       null != e && h(e)
-    }, []), i.useLayoutEffect(() => ("function" == typeof t ? (t(null), t(m.current)) : null != t && (t.current = m.current), () => {
+    }, []), i.useLayoutEffect(() => ("function" == typeof t ? (t(null), t(g.current)) : null != t && (t.current = g.current), () => {
       "function" == typeof t ? t(null) : null != t && (t.current = null)
-    }), [t, m]), (0, r.jsx)("video", u({
-      ref: m,
+    }), [t, g]), (0, r.jsx)("video", u({
+      ref: g,
       autoPlay: p,
-      onMouseEnter: g,
+      onMouseEnter: m,
       onMouseLeave: E,
-      onFocus: g,
+      onFocus: m,
       onBlur: E,
       style: v()
     }, f))
   },
-  g = i.forwardRef((e, t) => (0, r.jsx)(m, f(u({}, e), {
+  m = i.forwardRef((e, t) => (0, r.jsx)(g, f(u({}, e), {
     externalRef: t
   })))

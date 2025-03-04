@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ao: () => g,
+  Ao: () => m,
   Jv: () => p,
   M0: () => h,
-  Qj: () => m,
+  Qj: () => g,
   VO: () => v,
   YO: () => E
 }), n(474991), n(398202), n(301563);
@@ -22,7 +22,7 @@ let l = Array.from(n(176505).Vg).map(e => a.Z.escape(e)).join("|"),
   p = new RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+|".concat(s.ME, ")(?:/(\\d+|[a-zA-Z-]+))?(?:/(\\d+|[a-zA-Z-]+))?")),
   h = RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)");
 
-function m(e) {
+function g(e) {
   if (null == e) return null;
   let t = e.match(u);
   if (null != t && t.length > 3) return {
@@ -51,7 +51,7 @@ function m(e) {
   } : null
 }
 
-function g(e) {
+function m(e) {
   if (null == e) return null;
   let t = e.match(_);
   return null != t && t.length > 1 ? {

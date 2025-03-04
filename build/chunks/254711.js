@@ -17,8 +17,8 @@ var r = n(512722),
   _ = n(386696),
   p = n(957730),
   h = n(968437),
-  m = n(928477),
-  g = n(665906),
+  g = n(928477),
+  m = n(665906),
   E = n(695346),
   v = n(592125),
   b = n(496675),
@@ -53,7 +53,7 @@ function P(e) {
   return e
 }
 
-function w(e, t) {
+function D(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,8 +64,8 @@ function w(e, t) {
   return n
 }
 
-function D(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+function w(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -365,13 +365,13 @@ let L = n(227419).Z,
       let {
         channel: t
       } = e;
-      return null != t && (0, g.ki)(t)
+      return null != t && (0, m.ki)(t)
     },
     execute: async (e, t) => {
       var n, r;
       let {
         channel: i
-      } = t, o = null !== (n = x(e, "name")) && void 0 !== n ? n : "", a = null !== (r = x(e, "message")) && void 0 !== r ? r : "", l = await (0, m.gK)(i, o, s.d.PUBLIC_THREAD, (0, h.WD)(i, null), "Slash Command");
+      } = t, o = null !== (n = x(e, "name")) && void 0 !== n ? n : "", a = null !== (r = x(e, "message")) && void 0 !== r ? r : "", l = await (0, g.gK)(i, o, s.d.PUBLIC_THREAD, (0, h.WD)(i, null), "Slash Command");
       d.Z.sendMessage(l.id, p.ZP.parse(l, a))
     }
   }, {
@@ -582,7 +582,7 @@ let L = n(227419).Z,
       },
       required: !0,
       get choices() {
-        return (0, A.tr)().map(e => D(P({}, e), {
+        return (0, A.tr)().map(e => w(P({}, e), {
           name: e.label,
           displayName: e.label
         }))

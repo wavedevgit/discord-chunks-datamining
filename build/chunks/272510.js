@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -26,7 +26,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,12 +39,12 @@ function m(e) {
   return e
 }
 
-function g(e) {
+function m(e) {
   let {
     user: t,
     guildId: n,
     viewProfileItem: h,
-    appContext: g
+    appContext: m
   } = e, {
     trackUserProfileAction: E
   } = (0, f.KZ)(), {
@@ -62,7 +62,7 @@ function g(e) {
     guildId: n,
     location: b,
     color: "danger",
-    appContext: g,
+    appContext: m,
     onBlock: () => E({
       action: "BLOCK",
       analyticsLocations: v
@@ -79,7 +79,7 @@ function g(e) {
     user: t,
     guildId: n,
     location: b,
-    appContext: g,
+    appContext: m,
     onBlock: () => E({
       action: "BLOCK",
       analyticsLocations: v
@@ -96,7 +96,7 @@ function g(e) {
     user: t,
     guildId: n,
     location: b,
-    appContext: g,
+    appContext: m,
     color: "danger",
     onAction: () => E({
       action: "REPORT",
@@ -108,7 +108,7 @@ function g(e) {
       user: t,
       guildId: n,
       location: b,
-      appContext: g,
+      appContext: m,
       color: "danger",
       onAction: () => E({
         action: "REPORT",
@@ -141,7 +141,7 @@ function g(e) {
           }, t))
         })
       },
-      children: e => (0, r.jsx)(_.oY, m({
+      children: e => (0, r.jsx)(_.oY, g({
         action: "PRESS_OPTIONS",
         icon: i.xhG,
         tooltipText: p.NW.string(p.t.UKOtz8)

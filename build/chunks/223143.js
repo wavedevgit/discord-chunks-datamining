@@ -45,15 +45,15 @@ function f() {
   });
   let c = (0, l.hv)("useFetchPurchases"),
     [u, d, f, _, p, h] = (0, i.Wu)([s.Z], () => [s.Z.isFetching, s.Z.isClaiming, s.Z.fetchError, s.Z.claimError, s.Z.purchases, s.Z.hasPreviouslyFetched]),
-    m = (0, r.useRef)(s.Z.hasPreviouslyFetched);
+    g = (0, r.useRef)(s.Z.hasPreviouslyFetched);
   (0, r.useEffect)(() => {
-    m.current = h
+    g.current = h
   }, [h]);
-  let g = (0, r.useRef)(s.Z.fetchError);
+  let m = (0, r.useRef)(s.Z.fetchError);
   return (0, r.useEffect)(() => {
-    g.current = f
+    m.current = f
   }, [f]), (0, r.useEffect)(() => {
-    (!0 !== e || !m.current || null != g.current) && (0, a.qg)({
+    (!0 !== e || !g.current || null != m.current) && (0, a.qg)({
       variantsReturnStyle: c,
       location: t
     })

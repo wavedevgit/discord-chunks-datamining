@@ -22,8 +22,8 @@ let _ = e => {
     emojiListRef: _,
     onKeyDown: p,
     onFocus: h,
-    autoFocus: m,
-    searchBarRef: g,
+    autoFocus: g,
+    searchBarRef: m,
     hasTabWrapper: E,
     diversitySurrogate: v,
     isBurstReaction: b,
@@ -35,10 +35,10 @@ let _ = e => {
       gridNavigatorId: u.Vr,
       onKeyDown: p,
       className: f.searchBar,
-      ref: g,
+      ref: m,
       isFullRow: !1,
       onFocus: h,
-      autoFocus: m,
+      autoFocus: g,
       defaultSearchPlaceholder: (0, s.nV)(n, b)
     }), n === d.Hz.REACTION ? (0, r.jsx)("div", {
       className: f.burstToggle,
@@ -47,7 +47,7 @@ let _ = e => {
         onClick: y
       })
     }) : null, null != t ? t : (0, r.jsx)(l.Z, {
-      searchBarRef: g,
+      searchBarRef: m,
       className: f.diversitySelector,
       hasTabWrapper: E,
       selectedSurrogate: v

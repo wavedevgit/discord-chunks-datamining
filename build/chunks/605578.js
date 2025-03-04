@@ -56,8 +56,8 @@ let d = i.forwardRef(function(e, t) {
     onClick: _,
     onDoubleClick: p,
     onContextMenu: h,
-    onKeyDown: m,
-    onFocus: g,
+    onKeyDown: g,
+    onFocus: m,
     onBlur: E,
     onMouseOver: v,
     onMouseDown: b,
@@ -83,8 +83,8 @@ let d = i.forwardRef(function(e, t) {
       onClick: e => {
         e.stopPropagation(), null == _ || _(e)
       },
-      onKeyDown: m,
-      onFocus: g,
+      onKeyDown: g,
+      onFocus: m,
       onBlur: E,
       onMouseDown: b
     })), s]

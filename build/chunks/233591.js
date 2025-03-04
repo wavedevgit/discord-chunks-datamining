@@ -13,8 +13,8 @@ var r = n(581031),
   _ = /[^\0-\u007E]/,
   p = /[.\u3002\uFF0E\uFF61]/g,
   h = "Overflow: input needs wider integers to process",
-  m = 35,
-  g = RangeError,
+  g = 35,
+  m = RangeError,
   E = r(p.exec),
   v = Math.floor,
   b = String.fromCharCode,
@@ -39,8 +39,8 @@ var r = n(581031),
   },
   R = function(e, t, n) {
     var r = 0;
-    for (e = n ? v(e / c) : e >> 1, e += v(e / t); e > m * s >> 1;) e = v(e / m), r += o;
-    return v(r + (m + 1) * e / (e + l))
+    for (e = n ? v(e / c) : e >> 1, e += v(e / t); e > g * s >> 1;) e = v(e / g), r += o;
+    return v(r + (g + 1) * e / (e + l))
   },
   P = function(e) {
     var t, n, r = [],
@@ -49,24 +49,24 @@ var r = n(581031),
       _ = 0,
       p = u;
     for (t = 0; t < e.length; t++)(n = e[t]) < 128 && S(r, b(n));
-    var m = r.length,
-      E = m;
-    for (m && S(r, f); E < l;) {
+    var g = r.length,
+      E = g;
+    for (g && S(r, f); E < l;) {
       var y = i;
       for (t = 0; t < e.length; t++)(n = e[t]) >= c && n < y && (y = n);
       var I = E + 1;
-      if (y - c > v((i - _) / I)) throw g(h);
+      if (y - c > v((i - _) / I)) throw m(h);
       for (_ += (y - c) * I, c = y, t = 0; t < e.length; t++) {
-        if ((n = e[t]) < c && ++_ > i) throw g(h);
+        if ((n = e[t]) < c && ++_ > i) throw m(h);
         if (n === c) {
           for (var T = _, N = o;;) {
             var P = N <= p ? a : N >= p + s ? s : N - p;
             if (T < P) break;
-            var w = T - P,
-              D = o - P;
-            S(r, b(C(P + w % D))), T = v(w / D), N += o
+            var D = T - P,
+              w = o - P;
+            S(r, b(C(P + D % w))), T = v(D / w), N += o
           }
-          S(r, b(C(T))), p = R(_, I, E === m), _ = 0, E++
+          S(r, b(C(T))), p = R(_, I, E === g), _ = 0, E++
         }
       }
       _++, c++

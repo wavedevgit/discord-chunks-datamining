@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(799656),
   p = n(765717),
   h = n(663993),
-  m = n(329816),
-  g = n(554608),
+  g = n(329816),
+  m = n(554608),
   E = n(83949),
   v = n(137412),
   b = n(893607),
@@ -41,7 +41,7 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,7 +54,7 @@ function w(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,7 +66,7 @@ function D(e, t) {
 }
 
 function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -193,7 +193,7 @@ class er extends i.Component {
       migrationStatus: n,
       skipsSettingDefaultPageTitle: i
     } = this.props;
-    return e = n === g.P.IN_PROGRESS ? null : R.KO ? T.isPlatformEmbedded ? (0, r.jsxs)(a.rs, {
+    return e = n === m.P.IN_PROGRESS ? null : R.KO ? T.isPlatformEmbedded ? (0, r.jsxs)(a.rs, {
       children: [t ? null : (0, r.jsx)(a.AW, {
         path: A.Z5c.ACCOUNT_STANDING,
         component: q
@@ -325,7 +325,7 @@ class er extends i.Component {
         }
       }), (0, r.jsx)(a.l_, {
         from: A.Z5c.CONNECT_AUTHORIZE,
-        to: L(w({}, location), {
+        to: L(D({}, location), {
           pathname: A.Z5c.OAUTH2_AUTHORIZE
         })
       }), (0, r.jsx)(a.AW, {
@@ -350,9 +350,9 @@ class er extends i.Component {
       children: (0, r.jsx)(p.Z, {
         component: x
       })
-    }), (0, r.jsxs)(m.Z, {
+    }), (0, r.jsxs)(g.Z, {
       skipsSettingDefaultPageTitle: i,
-      children: [e, T.isPlatformEmbedded && (n === g.P.NOT_STARTED || n === g.P.IN_PROGRESS) && !0 !== f.K.get(l.SV) ? (0, r.jsx)(E.Z, {}) : null]
+      children: [e, T.isPlatformEmbedded && (n === m.P.NOT_STARTED || n === m.P.IN_PROGRESS) && !0 !== f.K.get(l.SV) ? (0, r.jsx)(E.Z, {}) : null]
     })
   }
 }
@@ -368,13 +368,13 @@ function ei() {
 
 function eo(e) {
   let t = ei();
-  return (0, r.jsx)(er, L(w({}, e), {
+  return (0, r.jsx)(er, L(D({}, e), {
     skipsSettingDefaultPageTitle: t
   }))
 }
-let ea = d.ZP.connectStores([y.default, g.Z], () => ({
+let ea = d.ZP.connectStores([y.default, m.Z], () => ({
   isAuthenticated: y.default.isAuthenticated(),
-  migrationStatus: g.Z.getMigrationStatus()
+  migrationStatus: m.Z.getMigrationStatus()
 }), {
   forwardRef: !0
 })(eo)

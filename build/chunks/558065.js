@@ -63,12 +63,12 @@ class p {
 }
 let h = new Map;
 
-function m(e) {
+function g(e) {
   let t = h.get(e);
   return null == t ? (t = new p(e), (0, l.zS)().addDirectVideoOutputSink(e), h.set(e, t)) : t.addref(), t.stream
 }
 
-function g(e) {
+function m(e) {
   let t = h.get(e);
   null != t && t.release() && ((0, l.zS)().removeDirectVideoOutputSink(e), h.delete(e))
 }
@@ -143,10 +143,10 @@ function E(e, t) {
   }), i.useEffect(() => {
     let e = h.current;
     if (null != e) {
-      if (!o) return _.info("attaching srcObject for ".concat(n)), e.srcObject = m(n), () => {
-        g(n), e.srcObject = null
+      if (!o) return _.info("attaching srcObject for ".concat(n)), e.srcObject = g(n), () => {
+        m(n), e.srcObject = null
       };
-      null != e.srcObject && (e.srcObject = null, g(n))
+      null != e.srcObject && (e.srcObject = null, m(n))
     }
   }, [o, n]), (0, r.jsx)("div", u({
     className: a()("media-engine-video", c),

@@ -37,16 +37,16 @@ async function f(e) {
         }),
         p = null !== (n = _.body.user_trial_offer) && void 0 !== n ? n : null,
         h = null !== (c = _.body.user_discount) && void 0 !== c ? c : null,
-        m = null !== (f = _.body.user_discount_offer) && void 0 !== f ? f : null;
+        g = null !== (f = _.body.user_discount_offer) && void 0 !== f ? f : null;
       return null == p && (0, a.un)(i.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) && (0, s.w9)(i.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING), o.Z.dispatch({
         type: "BILLING_USER_OFFER_FETCH_SUCCESS",
         userTrialOffer: p,
         userDiscount: h,
-        userDiscountOffer: m
+        userDiscountOffer: g
       }), {
         userTrialOffer: p,
         userDiscount: h,
-        userDiscountOffer: m
+        userDiscountOffer: g
       }
     } catch (e) {
       o.Z.dispatch({

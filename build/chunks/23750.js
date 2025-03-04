@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Hx: () => g,
+  Hx: () => m,
   ZP: () => v,
-  pi: () => m
+  pi: () => g
 }), n(789020), n(653041);
 var r = n(373793),
   i = n(81825),
@@ -53,7 +53,7 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class m extends i.Z {
+class g extends i.Z {
   hasFlag(e) {
     return (0, c.yE)(this.flags, e)
   }
@@ -62,12 +62,12 @@ class m extends i.Z {
     super(), f(this, "type", void 0), f(this, "content", void 0), f(this, "attachments", void 0), f(this, "embeds", void 0), f(this, "timestamp", void 0), f(this, "editedTimestamp", void 0), f(this, "flags", void 0), f(this, "components", void 0), f(this, "codedLinks", void 0), f(this, "stickers", void 0), f(this, "stickerItems", void 0), f(this, "soundboardSounds", void 0), this.type = null !== (t = e.type) && void 0 !== t ? t : d.uaV.DEFAULT, this.content = null !== (n = e.content) && void 0 !== n ? n : "", this.attachments = null !== (r = e.attachments) && void 0 !== r ? r : [], this.embeds = null !== (i = e.embeds) && void 0 !== i ? i : [], this.timestamp = null !== (o = e.timestamp) && void 0 !== o ? o : new Date, this.editedTimestamp = null !== (a = e.editedTimestamp) && void 0 !== a ? a : null, this.flags = null !== (s = e.flags) && void 0 !== s ? s : 0, this.components = null !== (l = e.components) && void 0 !== l ? l : [], this.codedLinks = null !== (c = e.codedLinks) && void 0 !== c ? c : [], this.stickers = null !== (u = e.stickers) && void 0 !== u ? u : [], this.stickerItems = null !== (p = null !== (_ = e.sticker_items) && void 0 !== _ ? _ : e.stickerItems) && void 0 !== p ? p : [], this.soundboardSounds = null !== (h = e.soundboard_sounds) && void 0 !== h ? h : e.soundboardSounds
   }
 }
-class g extends i.Z {
+class m extends i.Z {
   constructor(e) {
-    super(), f(this, "message", void 0), this.message = new m(e.message)
+    super(), f(this, "message", void 0), this.message = new g(e.message)
   }
 }
-class E extends m {
+class E extends g {
   isEdited() {
     return null != this.editedTimestamp
   }
@@ -231,10 +231,10 @@ class E extends m {
         burst_count: f,
         count_details: p
       } = null !== (t = u[c]) && void 0 !== t ? t : {},
-      m = null !== (n = null == p ? void 0 : p.normal) && void 0 !== n ? n : 0,
-      g = null !== (r = null == p ? void 0 : p.burst) && void 0 !== r ? r : 0,
+      g = null !== (n = null == p ? void 0 : p.normal) && void 0 !== n ? n : 0,
+      m = null !== (r = null == p ? void 0 : p.burst) && void 0 !== r ? r : 0,
       E = null !== (i = null == p ? void 0 : p.vote) && void 0 !== i ? i : 0;
-    return -1 !== c && d <= 0 && f <= 0 && m <= 0 && g <= 0 && E <= 0 && u.splice(c, 1), this.set("reactions", u)
+    return -1 !== c && d <= 0 && f <= 0 && g <= 0 && m <= 0 && E <= 0 && u.splice(c, 1), this.set("reactions", u)
   }
   removeReactionsForEmoji(e) {
     return this.set("reactions", this.reactions.filter(t => !(0, l.ir)(t.emoji, e)))

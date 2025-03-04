@@ -17,8 +17,8 @@ var i = n(442837),
   _ = n(366050),
   p = n(594174),
   h = n(981631),
-  m = n(354459),
-  g = n(388032),
+  g = n(354459),
+  m = n(388032),
   E = n(54329);
 
 function v(e, t, n) {
@@ -77,18 +77,18 @@ function S(e) {
   function S(e) {
     (null == b ? void 0 : b.id) !== e.pipWindow.id && (0, l.k3)(e.pipWindow.id);
     let t = e.participant;
-    null != t && t.type !== m.fO.ACTIVITY && s.Z.selectParticipant(p, t.id)
+    null != t && t.type !== g.fO.ACTIVITY && s.Z.selectParticipant(p, t.id)
   }
 
   function I(e) {
     if (e.pipWindow.component === h.NYg.EMBED_IFRAME && null != v) {
       var t;
       let e = null === (t = u.Z.getApplication(v.applicationId)) || void 0 === t ? void 0 : t.name;
-      return null == e ? g.NW.string(g.t["8raC1N"]) : g.NW.formatToPlainString(g.t["a9+V+f"], {
+      return null == e ? m.NW.string(m.t["8raC1N"]) : m.NW.formatToPlainString(m.t["a9+V+f"], {
         activityName: e
       })
     }
-    return null == e.participant || e.participant.type !== m.fO.STREAM ? g.NW.string(g.t["ng/Kws"]) : g.NW.formatToPlainString(g.t.sqmFRk, {
+    return null == e.participant || e.participant.type !== g.fO.STREAM ? m.NW.string(m.t["ng/Kws"]) : m.NW.formatToPlainString(m.t.sqmFRk, {
       username: e.participant.userNick
     })
   }

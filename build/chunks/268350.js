@@ -11,7 +11,7 @@ n.d(t, {
   hW: () => x,
   lY: () => C,
   pk: () => N,
-  qB: () => w
+  qB: () => D
 }), n(653041);
 var r = n(392711),
   i = n.n(r),
@@ -26,8 +26,8 @@ var r = n(392711),
   _ = n(594174),
   p = n(73346),
   h = n(926491),
-  m = n(981631),
-  g = n(526761),
+  g = n(981631),
+  m = n(526761),
   E = n(388032);
 
 function v(e, t, n) {
@@ -72,7 +72,7 @@ let S = async (e, t) => {
   let {
     body: n
   } = await (0, p.Kb)({
-    url: m.ANM.STICKER_PACK(e),
+    url: g.ANM.STICKER_PACK(e),
     rejectWithError: !1
   });
   return a.Z.dispatch({
@@ -96,7 +96,7 @@ let S = async (e, t) => {
       sticker_packs: t
     }
   } = await o.tn.get({
-    url: m.ANM.STICKER_PACKS,
+    url: g.ANM.STICKER_PACKS,
     query: {
       locale: e
     },
@@ -110,7 +110,7 @@ let S = async (e, t) => {
   let {
     body: t
   } = await o.tn.get({
-    url: m.ANM.STICKER(e),
+    url: g.ANM.STICKER(e),
     rejectWithError: !1
   });
   a.Z.dispatch({
@@ -121,7 +121,7 @@ let S = async (e, t) => {
   let {
     body: t
   } = await o.tn.get({
-    url: m.ANM.GUILD_STICKER_PACKS(e),
+    url: g.ANM.GUILD_STICKER_PACKS(e),
     rejectWithError: !1
   });
   a.Z.dispatch({
@@ -133,12 +133,12 @@ let S = async (e, t) => {
   })
 }, A = async e => {
   await o.tn.del({
-    url: m.ANM.GUILD_STICKER(e.guild_id, e.id),
+    url: g.ANM.GUILD_STICKER(e.guild_id, e.id),
     rejectWithError: !1
   })
 }, C = async (e, t) => {
   let n = await o.tn.post({
-    url: m.ANM.GUILD_STICKER_PACKS(e),
+    url: g.ANM.GUILD_STICKER_PACKS(e),
     body: t,
     rejectWithError: !1
   });
@@ -150,7 +150,7 @@ let S = async (e, t) => {
     })
   }), n.body
 }, R = async (e, t, n) => (await o.tn.patch({
-  url: m.ANM.GUILD_STICKER(e, t),
+  url: g.ANM.GUILD_STICKER(e, t),
   body: n,
   rejectWithError: !1
 })).body;
@@ -164,7 +164,7 @@ function P(e, t, n) {
   })
 }
 
-function w(e, t) {
+function D(e, t) {
   a.Z.dispatch({
     type: "CLEAR_STICKER_PREVIEW",
     channelId: e,
@@ -172,21 +172,21 @@ function w(e, t) {
   })
 }
 
-function D(e) {
+function w(e) {
   return f.Z.totalUnavailableGuilds > 0 || !l.Z.isConnected() ? e : e.filter(e => null != h.Z.getStickerById(e))
 }
 
 function L(e) {
-  u.DZ.updateAsync("favoriteStickers", t => (t.stickerIds = D(t.stickerIds), i().size(t.stickerIds) >= g.oX) ? (s.Z.show({
+  u.DZ.updateAsync("favoriteStickers", t => (t.stickerIds = w(t.stickerIds), i().size(t.stickerIds) >= m.oX) ? (s.Z.show({
     title: E.NW.string(E.t["+XYXtb"]),
     body: E.NW.formatToPlainString(E.t.JaIyFh, {
-      count: g.oX
+      count: m.oX
     })
-  }), !1) : !t.stickerIds.includes(e) && void t.stickerIds.push(e), g.fy.INFREQUENT_USER_ACTION)
+  }), !1) : !t.stickerIds.includes(e) && void t.stickerIds.push(e), m.fy.INFREQUENT_USER_ACTION)
 }
 
 function x(e) {
   u.DZ.updateAsync("favoriteStickers", t => {
-    t.stickerIds = t.stickerIds.filter(t => t !== e), t.stickerIds = D(t.stickerIds)
-  }, g.fy.INFREQUENT_USER_ACTION)
+    t.stickerIds = t.stickerIds.filter(t => t !== e), t.stickerIds = w(t.stickerIds)
+  }, m.fy.INFREQUENT_USER_ACTION)
 }

@@ -43,10 +43,10 @@
           var i = [];
           for (n = r = r || n; t;) {
             for (var l = null, c = null, u = null, f = -1e5, _ = 1e5, p = [a.get(t.charCodeAt(0)), s], h = 0; h < p.length; h++) {
-              var m = p[h];
-              if (null != m)
-                for (var g = 0; g < m.length; g++) {
-                  var E = m[g],
+              var g = p[h];
+              if (null != g)
+                for (var m = 0; m < g.length; m++) {
+                  var E = g[m],
                     v = e[E],
                     b = v.order;
                   if (b > _) break;
@@ -104,7 +104,7 @@
       var i = "";
       for (var o in n = n || {}) {
         var a = n[o];
-        Object.prototype.hasOwnProperty.call(n, o) && a && (i += " " + m(o) + '="' + m(a) + '"')
+        Object.prototype.hasOwnProperty.call(n, o) && a && (i += " " + g(o) + '="' + g(a) + '"')
       }
       var s = "<" + e + i + ">";
       return r ? s + t + "</" + e + ">" : s
@@ -130,14 +130,14 @@
       "/": "&#x2F;",
       "`": "&#96;"
     },
-    m = function(e) {
+    g = function(e) {
       return String(e).replace(p, function(e) {
         return h[e]
       })
     },
-    g = /\\([^0-9A-Za-z\s])/g,
+    m = /\\([^0-9A-Za-z\s])/g,
     E = function(e) {
-      return e.replace(g, "$1")
+      return e.replace(m, "$1")
     },
     v = function(e, t, n) {
       var r = n.inline || !1;
@@ -167,8 +167,8 @@
     C = /^ (?= *`)|(` *) $/g,
     R = A,
     P = / *\n+$/,
-    w = RegExp("^( *)(" + S + ") [\\s\\S]+?(?:\n{2,}(?! )(?!\\1" + S + " )\\n*|\\s*\n*$)"),
-    D = /(?:^|\n)( *)$/,
+    D = RegExp("^( *)(" + S + ") [\\s\\S]+?(?:\n{2,}(?! )(?!\\1" + S + " )\\n*|\\s*\n*$)"),
+    w = /(?:^|\n)( *)$/,
     L = function() {
       var e = /^ *\| *| *\| *$/g,
         t = / *$/,
@@ -332,7 +332,7 @@
         },
         html: function(e, t, n) {
           var r = e.lang ? "markdown-code-" + e.lang : void 0,
-            i = d("code", m(e.content), {
+            i = d("code", g(e.content), {
               class: r
             });
           return d("pre", i)
@@ -372,9 +372,9 @@
         order: G++,
         match: function(e, t) {
           var n = null == t.prevCapture ? "" : t.prevCapture[0],
-            r = D.exec(n),
+            r = w.exec(n),
             i = t._list || !t.inline;
-          return r && i ? (e = r[1] + e, w.exec(e)) : null
+          return r && i ? (e = r[1] + e, D.exec(e)) : null
         },
         parse: function(e, t, n) {
           var r = e[2],
@@ -774,7 +774,7 @@
           })
         },
         html: function(e, t, n) {
-          return d("code", m(e.content))
+          return d("code", g(e.content))
         }
       },
       br: {
@@ -801,7 +801,7 @@
           return e.content
         },
         html: function(e, t, n) {
-          return m(e.content)
+          return g(e.content)
         }
       }
     },
@@ -884,7 +884,7 @@
     defaultReactOutput: q,
     defaultHtmlOutput: Q,
     preprocess: r,
-    sanitizeText: m,
+    sanitizeText: g,
     sanitizeUrl: _,
     unescapeUrl: E,
     htmlTag: d,

@@ -26,7 +26,7 @@ function f(e) {
     onClickOutside: p
   } = e, h = i.useCallback((e, t) => {
     null == s || s(a()(e), t)
-  }, [s]), m = i.useMemo(() => t.toDate(), [t]), g = i.useMemo(() => null == o ? void 0 : o.toDate(), [o]), E = i.useMemo(() => null == n ? void 0 : n.toDate(), [n]), v = (0, c.e7)([u.default], () => u.default.locale), b = i.useRef(null), y = i.useCallback(e => {
+  }, [s]), g = i.useMemo(() => t.toDate(), [t]), m = i.useMemo(() => null == o ? void 0 : o.toDate(), [o]), E = i.useMemo(() => null == n ? void 0 : n.toDate(), [n]), v = (0, c.e7)([u.default], () => u.default.locale), b = i.useRef(null), y = i.useCallback(e => {
     let t = e.currentTarget;
     t.classList.contains("react-datepicker__day") && setTimeout(() => {
       var e, n;
@@ -40,13 +40,13 @@ function f(e) {
     className: d.calendarPicker,
     children: (0, r.jsx)(l(), {
       calendarClassName: f,
-      selected: m,
+      selected: g,
       onChange: h,
       autoFocus: _,
       fixedHeight: !0,
       inline: !0,
       locale: v,
-      maxDate: g,
+      maxDate: m,
       minDate: E,
       onKeyDown: y,
       onClickOutside: p

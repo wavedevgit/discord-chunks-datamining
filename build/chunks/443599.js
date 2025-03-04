@@ -20,10 +20,10 @@ async function a(e, t, a) {
     let a;
     let p = u ? await (0, o.Nt)(e, t) : await (0, o.B0)(e, t),
       h = [],
-      m = e => {
+      g = e => {
         h.push(e)
       },
-      g = e => {
+      m = e => {
         a = e, null == s || s()
       };
     (0, i.ZDy)(async () => {
@@ -34,8 +34,8 @@ async function a(e, t, a) {
         menu: p,
         reportType: e,
         modalProps: n,
-        onNavigate: m,
-        onSubmit: g,
+        onNavigate: g,
+        onSubmit: m,
         isAuthenticated: u,
         emailToken: d
       })

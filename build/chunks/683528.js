@@ -17,11 +17,11 @@ var r = n(200651),
   p = n(503471);
 let h = 40;
 
-function m(e) {
+function g(e) {
   return "media-view-scroll-thumbnail-".concat(e)
 }
 
-function g(e) {
+function m(e) {
   return "IMAGE" === e.type ? (0, u.q)({
     proxyURL: e.proxyUrl,
     url: e.url
@@ -32,7 +32,7 @@ function E(e) {
   var t, n;
   let {
     item: i
-  } = e, o = g(i);
+  } = e, o = m(i);
   return null == o ? null : (0, r.jsx)(c.ZP, {
     width: null !== (t = i.width) && void 0 !== t ? t : h,
     height: null !== (n = i.height) && void 0 !== n ? n : h,
@@ -57,7 +57,7 @@ function b(e) {
     className: c
   } = e, u = i.useRef(null);
   return i.useLayoutEffect(() => {
-    let e = document.getElementById(m(n));
+    let e = document.getElementById(g(n));
     null != u.current && null != e && u.current.scrollIntoViewNode({
       node: e,
       animate: !l.Z.useReducedMotion,
@@ -74,7 +74,7 @@ function b(e) {
         let l = i === n,
           c = l ? _.t["qv/U5e"] : _.t.zviMAA;
         return (0, r.jsx)(s.P3F, {
-          id: m(i),
+          id: g(i),
           className: a()(p.galleryItem, {
             [p.inactive]: !l,
             [p.first]: 0 === i,

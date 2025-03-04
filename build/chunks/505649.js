@@ -23,10 +23,10 @@ function _(e, t, n) {
 }
 let p = !1,
   h = null,
-  m = null;
+  g = null;
 
-function g() {
-  p = !1, m = null, h = null
+function m() {
+  p = !1, g = null, h = null
 }
 
 function E(e) {
@@ -58,7 +58,7 @@ function b(e) {
   let {
     error: t
   } = e;
-  m = t, p = !1
+  g = t, p = !1
 }
 
 function y(e) {
@@ -69,15 +69,15 @@ function y(e) {
   if (p = !1, h = null, t.status === d.PyE.FAILED) {
     var r;
     let e = null;
-    (null === (r = t.metadata) || void 0 === r ? void 0 : r.billing_error_code) === l.SM.BILLING_INSUFFICIENT_FUNDS && (e = l.SM.BILLING_INSUFFICIENT_FUNDS), m = new l.ZP(f.NW.string(f.t.khEaRE), e)
-  } else m = null, o.Z.wait(a.fw), o.Z.wait(s.pB)
+    (null === (r = t.metadata) || void 0 === r ? void 0 : r.billing_error_code) === l.SM.BILLING_INSUFFICIENT_FUNDS && (e = l.SM.BILLING_INSUFFICIENT_FUNDS), g = new l.ZP(f.NW.string(f.t.khEaRE), e)
+  } else g = null, o.Z.wait(a.fw), o.Z.wait(s.pB)
 }
 class O extends(r = i.ZP.Store) {
   get isAwaitingAuthentication() {
     return p
   }
   get error() {
-    return m
+    return g
   }
   get awaitingPaymentId() {
     return h
@@ -85,18 +85,18 @@ class O extends(r = i.ZP.Store) {
 }
 _(O, "displayName", "PaymentAuthenticationStore");
 let S = new O(o.Z, {
-  BILLING_SUBSCRIPTION_UPDATE_START: g,
-  PAYMENT_AUTHENTICATION_CLEAR_ERROR: g,
-  PREMIUM_PAYMENT_ERROR_CLEAR: g,
-  PREMIUM_PAYMENT_MODAL_CLOSE: g,
-  PREMIUM_PAYMENT_MODAL_OPEN: g,
-  PREMIUM_PAYMENT_SUBSCRIBE_START: g,
-  PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS: g,
-  PREMIUM_PAYMENT_UPDATE_SUCCESS: g,
-  SKU_PURCHASE_MODAL_CLOSE: g,
-  SKU_PURCHASE_MODAL_OPEN: g,
-  SKU_PURCHASE_START: g,
-  SKU_PURCHASE_SUCCESS: g,
+  BILLING_SUBSCRIPTION_UPDATE_START: m,
+  PAYMENT_AUTHENTICATION_CLEAR_ERROR: m,
+  PREMIUM_PAYMENT_ERROR_CLEAR: m,
+  PREMIUM_PAYMENT_MODAL_CLOSE: m,
+  PREMIUM_PAYMENT_MODAL_OPEN: m,
+  PREMIUM_PAYMENT_SUBSCRIBE_START: m,
+  PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS: m,
+  PREMIUM_PAYMENT_UPDATE_SUCCESS: m,
+  SKU_PURCHASE_MODAL_CLOSE: m,
+  SKU_PURCHASE_MODAL_OPEN: m,
+  SKU_PURCHASE_START: m,
+  SKU_PURCHASE_SUCCESS: m,
   BILLING_SUBSCRIPTION_UPDATE_FAIL: E,
   PREMIUM_PAYMENT_SUBSCRIBE_FAIL: E,
   PREMIUM_PAYMENT_UPDATE_FAIL: E,

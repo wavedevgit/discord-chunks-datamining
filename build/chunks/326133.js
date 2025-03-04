@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(588468),
   p = n(30465),
   h = n(313201),
-  m = n(314910),
-  g = n(549006),
+  g = n(314910),
+  m = n(549006),
   E = n(430824),
   v = n(436896),
   b = n(590921),
@@ -82,8 +82,8 @@ function P(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let w = 490,
-  D = 490,
+let D = 490,
+  w = 490,
   L = 245,
   x = 200,
   M = 175,
@@ -99,7 +99,7 @@ let w = 490,
       return null !== (e = E.Z.getGuild(k.guild_id)) && void 0 !== e ? e : null
     }, [k.guild_id]), F = i.useRef(), [Z, H, W] = (0, O.Z)(C(N({}, e), {
       guild: V
-    }), t, F), Y = (null === (n = j.autocomplete) || void 0 === n ? void 0 : n.forceChatLayer) ? g.ZP : m.ZP, K = (0, _.DJ)(Z.selectedIndex);
+    }), t, F), Y = (null === (n = j.autocomplete) || void 0 === n ? void 0 : n.forceChatLayer) ? m.ZP : g.ZP, K = (0, _.DJ)(Z.selectedIndex);
     (0, p.KR)(B, Z.isVisible, K), v.Z.trackExposure({
       location: "6e9811_1"
     });
@@ -139,8 +139,8 @@ let w = 490,
         [I.bottom]: null == q && "bottom" === e.position,
         [I.autocompleteTop]: Q
       },
-      ee = w;
-    null != q && (ee = (null === (T = j.autocomplete) || void 0 === T ? void 0 : T.small) ? x : (null === (A = Z.query) || void 0 === A ? void 0 : A.type) === b.eq.EMOJIS_AND_STICKERS ? D : L), ee = Math.min(window.innerHeight - M, ee);
+      ee = D;
+    null != q && (ee = (null === (T = j.autocomplete) || void 0 === T ? void 0 : T.small) ? x : (null === (A = Z.query) || void 0 === A ? void 0 : A.type) === b.eq.EMOJIS_AND_STICKERS ? w : L), ee = Math.min(window.innerHeight - M, ee);
     let et = (0, r.jsx)(_.ZP, {
       id: B,
       className: a()(I.autocomplete, $),

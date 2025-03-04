@@ -19,8 +19,8 @@ var r = n(512722),
   _ = n(866960),
   p = n(70956),
   h = n(403182),
-  m = n(651655),
-  g = n(861990),
+  g = n(651655),
+  m = n(861990),
   E = n(141795),
   v = n(981631),
   b = n(959517);
@@ -87,8 +87,8 @@ var A = function(e) {
 let C = e => 0 === e.type,
   R = e => 1 === e.type,
   P = e => C(e) ? e.message.nonce : R(e) ? e.message.messageId : e.message.data.id,
-  w = [+p.Z.Millis.MINUTE, 5 * p.Z.Millis.MINUTE];
-class D extends m.Z {
+  D = [+p.Z.Millis.MINUTE, 5 * p.Z.Millis.MINUTE];
+class w extends g.Z {
   isFull() {
     return this.queue.length >= this.maxSize
   }
@@ -121,7 +121,7 @@ class D extends m.Z {
     return this.queue.push(...n), this.logger.log("Cancel pending send requests", t.length), t
   }
   startQueueMetricTimers(e) {
-    let t = w.map(e => setTimeout(() => {
+    let t = D.map(e => setTimeout(() => {
       (0, s.yw)(v.rMx.SEND_MESSAGE_QUEUED, {
         queued_duration_ms: e
       })
@@ -211,7 +211,7 @@ class D extends m.Z {
         attachments: d,
         maxSizeCallback: _,
         analytics_location: p,
-        sectionName: m,
+        sectionName: g,
         source: b
       } = e,
       y = {
@@ -223,13 +223,13 @@ class D extends m.Z {
         data: c,
         nonce: u,
         analytics_location: p,
-        section_name: m,
+        section_name: g,
         source: b
       };
     if (null != d) {
       y.data.attachments = [], n = [];
       let e = d;
-      y.data.attachments = e.map((e, t) => (i()(e.status === E.m.COMPLETED, "Uploads must be staged before trying to send a message"), (0, g.B)(e, t)))
+      y.data.attachments = e.map((e, t) => (i()(e.status === E.m.COMPLETED, "Uploads must be staged before trying to send a message"), (0, m.B)(e, t)))
     }
     let O = new AbortController;
     o.tn.post({
@@ -255,4 +255,4 @@ class D extends m.Z {
     super(new l.Z("MessageQueue")), y(this, "maxSize", void 0), y(this, "requests", void 0), y(this, "analyticsTimeouts", void 0), this.maxSize = e, this.requests = new Map, this.analyticsTimeouts = new Map
   }
 }
-let L = new D
+let L = new w

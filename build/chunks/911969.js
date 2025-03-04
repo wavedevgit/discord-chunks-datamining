@@ -7,9 +7,9 @@ n.d(t, {
   D: () => l,
   Eh: () => v,
   F$: () => i,
-  PT: () => m,
+  PT: () => g,
   Pi: () => b,
-  US: () => g,
+  US: () => m,
   VC: () => c,
   ZJ: () => h,
   eW: () => E,
@@ -59,10 +59,10 @@ var r = function(e) {
   h = function(e) {
     return e[e.PRIMARY = 1] = "PRIMARY", e[e.SECONDARY = 2] = "SECONDARY", e[e.SUCCESS = 3] = "SUCCESS", e[e.DESTRUCTIVE = 4] = "DESTRUCTIVE", e[e.LINK = 5] = "LINK", e[e.PREMIUM = 6] = "PREMIUM", e
   }({}),
-  m = function(e) {
+  g = function(e) {
     return e[e.SMALL = 1] = "SMALL", e[e.PARAGRAPH = 2] = "PARAGRAPH", e
   }({}),
-  g = function(e) {
+  m = function(e) {
     return e[e.SMALL = 1] = "SMALL", e[e.LARGE = 2] = "LARGE", e
   }({}),
   E = function(e) {

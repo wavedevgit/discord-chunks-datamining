@@ -22,23 +22,23 @@ function _(e) {
   } = e, {
     enabled: p,
     analyticsEligible: h
-  } = (0, o.R4)(_), m = (0, i.e7)([c.Z], () => null != n && null != t && p ? c.Z.getDiscoverableVoiceState(n, t) : null != n && null != t ? c.Z.getVoiceState(n, t) : null != t && p ? c.Z.getDiscoverableVoiceStateForUser(t) : null != t ? c.Z.getVoiceStateForUser(t) : void 0), g = (0, i.e7)([c.Z], () => null != n && null != t ? c.Z.getVoiceState(n, t) : null != t ? c.Z.getVoiceStateForUser(t) : void 0), E = (0, i.e7)([l.Z], () => null != t ? l.Z.getRelationshipType(t) : d.OGo.NONE);
+  } = (0, o.R4)(_), g = (0, i.e7)([c.Z], () => null != n && null != t && p ? c.Z.getDiscoverableVoiceState(n, t) : null != n && null != t ? c.Z.getVoiceState(n, t) : null != t && p ? c.Z.getDiscoverableVoiceStateForUser(t) : null != t ? c.Z.getVoiceStateForUser(t) : void 0), m = (0, i.e7)([c.Z], () => null != n && null != t ? c.Z.getVoiceState(n, t) : null != t ? c.Z.getVoiceStateForUser(t) : void 0), E = (0, i.e7)([l.Z], () => null != t ? l.Z.getRelationshipType(t) : d.OGo.NONE);
   (0, r.useEffect)(() => {
     var e;
-    h && null != g && u.default.track(d.rMx.USER_VOICE_ACTIVITY_VIEWED, {
+    h && null != m && u.default.track(d.rMx.USER_VOICE_ACTIVITY_VIEWED, {
       surface: _,
       activity_user_id: t,
-      discoverable: null === (e = g.discoverable) || void 0 === e || e,
+      discoverable: null === (e = m.discoverable) || void 0 === e || e,
       relationship_type: E,
-      treatment: p && !1 === g.discoverable ? o.h9.HIDE : o.h9.SHOW
+      treatment: p && !1 === m.discoverable ? o.h9.HIDE : o.h9.SHOW
     })
-  }, [g, h, p, E, _, t]);
-  let v = null == m ? void 0 : m.channelId,
+  }, [m, h, p, E, _, t]);
+  let v = null == g ? void 0 : g.channelId,
     b = (0, i.e7)([a.Z], () => {
       if (null != v) return a.Z.getChannel(v)
     });
   return (0, i.e7)([s.Z], () => (null == b ? void 0 : b.isPrivate()) || s.Z.can(f.Pl.VIEW_CHANNEL, b)) ? {
-    voiceState: m,
+    voiceState: g,
     voiceChannel: b
   } : {}
 }

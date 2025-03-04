@@ -37,7 +37,7 @@ function h(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -127,19 +127,19 @@ let E = {
       email: a,
       emailToken: u,
       password: p,
-      avatar: m,
+      avatar: g,
       newPassword: E,
       discriminator: v
     } = e, {
       close: b
     } = t;
     return (0, c.Z)(e => {
-      let t = g(h({
+      let t = m(h({
           username: n,
           email: a,
           email_token: u,
           password: p,
-          avatar: m,
+          avatar: g,
           new_password: E
         }, e), {
           discriminator: null != v && "" !== v ? v : void 0

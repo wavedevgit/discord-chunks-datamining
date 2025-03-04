@@ -74,8 +74,8 @@ function h(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-var m = 0,
-  g = Symbol.for("__REACT_DND_CONTEXT_INSTANCE__"),
+var g = 0,
+  m = Symbol.for("__REACT_DND_CONTEXT_INSTANCE__"),
   E = (0, i.memo)(function(e) {
     var t = e.children,
       n = l(v(p(e, s)), 2),
@@ -84,9 +84,9 @@ var m = 0,
     return (0, i.useEffect)(function() {
       if (c) {
         var e = y();
-        return ++m,
+        return ++g,
           function() {
-            0 == --m && (e[g] = null)
+            0 == --g && (e[m] = null)
           }
       }
     }, []), (0, r.jsx)(a.L.Provider, Object.assign({
@@ -107,9 +107,9 @@ function b(e) {
     n = arguments.length > 2 ? arguments[2] : void 0,
     r = arguments.length > 3 ? arguments[3] : void 0,
     i = t;
-  return i[g] || (i[g] = {
+  return i[m] || (i[m] = {
     dragDropManager: (0, o.i)(e, t, n, r)
-  }), i[g]
+  }), i[m]
 }
 
 function y() {

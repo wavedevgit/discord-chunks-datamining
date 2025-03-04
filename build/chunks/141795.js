@@ -17,8 +17,8 @@ var r = n(392711),
   _ = n(510990),
   p = n(70956),
   h = n(960048),
-  m = n(861990),
-  g = n(476326),
+  g = n(861990),
+  m = n(476326),
   E = n(983544),
   v = n(981631);
 
@@ -70,7 +70,7 @@ class A {
     b(this, "numChunks", void 0), b(this, "totalRequestCount", void 0), b(this, "timing", {}), b(this, "compressAndExtractDisabled", void 0), b(this, "fileAlreadyPrepped", void 0), b(this, "imageCompressionQuality", void 0), b(this, "videoCompressionQuality", void 0), b(this, "convertedMimeType", void 0), b(this, "sourceMediaWidth", void 0), b(this, "sourceMediaHeight", void 0), b(this, "sourceMediaFormat", void 0), b(this, "sourceVideoBitrate", void 0), b(this, "sourceVideoFramerate", void 0), b(this, "videoDurationMs", void 0), b(this, "sourceVideoProfile", void 0), b(this, "sourceVideoLevel", void 0), b(this, "targetVideoWidth", void 0), b(this, "targetVideoHeight", void 0), b(this, "targetVideoBitrate", void 0), b(this, "targetVideoCodec", void 0), b(this, "targetVideoFramerate", void 0), b(this, "targetVideoIsHdr", void 0), b(this, "hevcIsSupported", void 0), b(this, "progressUpdateGranularity", void 0)
   }
 }
-class C extends g.ZP {
+class C extends m.ZP {
   static fromJson(e) {
     let {
       item: t,
@@ -84,7 +84,7 @@ class C extends g.ZP {
     }), o
   }
   retryOpts() {
-    return this.item.platform === g.ow.REACT_NATIVE ? {
+    return this.item.platform === m.ow.REACT_NATIVE ? {
       timeout: +p.Z.Millis.HOUR,
       backoff: new o.Z(.5 * p.Z.Millis.SECOND, 30 * p.Z.Millis.MINUTE),
       retries: 12
@@ -95,7 +95,7 @@ class C extends g.ZP {
     }
   }
   createAttachmentUrlRetryOpts() {
-    return this.item.platform === g.ow.REACT_NATIVE ? {
+    return this.item.platform === m.ow.REACT_NATIVE ? {
       timeout: {
         response: 30 * p.Z.Millis.SECOND,
         deadline: 30 * p.Z.Millis.MINUTE
@@ -134,12 +134,12 @@ class C extends g.ZP {
   }
   async prepareChunkUploadItem() {
     let e, t, n;
-    if (this.item.platform === g.ow.REACT_NATIVE) {
+    if (this.item.platform === m.ow.REACT_NATIVE) {
       let r = this.item;
       if (e = null != r.mimeType && "" !== r.mimeType ? r.mimeType : "application/octet-stream", null == r.size || 0 === r.size || isNaN(r.size)) try {
-        t = await (0, m.Fm)(r.uri)
+        t = await (0, g.Fm)(r.uri)
       } catch (e) {
-        I.warn("Failed to peek content length for file id ".concat(this.id, ", reading whole file instead: ").concat(e)), t = (n = await (0, m.Lc)(r.uri)).size
+        I.warn("Failed to peek content length for file id ".concat(this.id, ", reading whole file instead: ").concat(e)), t = (n = await (0, g.Lc)(r.uri)).size
       } else t = r.size
     } else e = "application/octet-stream", t = this.item.file.size;
     return {
@@ -149,7 +149,7 @@ class C extends g.ZP {
     }
   }
   async getChunk(e, t, n) {
-    return this.item.platform !== g.ow.REACT_NATIVE ? this.item.file.slice(e, t) : null != n ? n.slice(e, t) : await (0, m.U4)(this.item.uri, e, t)
+    return this.item.platform !== m.ow.REACT_NATIVE ? this.item.file.slice(e, t) : null != n ? n.slice(e, t) : await (0, g.U4)(this.item.uri, e, t)
   }
   async uploadChunk(e) {
     let t = {
@@ -193,7 +193,7 @@ class C extends g.ZP {
   uploadFileToCloud() {
     let e, t;
     if (null == this.responseUrl) throw Error("_uploadFileToCloud - responseUrl is not set");
-    I.log("Uploading ".concat(this.id)), this.item.platform === g.ow.REACT_NATIVE ? t = null != (e = {
+    I.log("Uploading ".concat(this.id)), this.item.platform === m.ow.REACT_NATIVE ? t = null != (e = {
       type: this.item.mimeType,
       uri: this.item.uri,
       name: this.item.filename
@@ -290,7 +290,7 @@ class C extends g.ZP {
     let n = t.uri,
       r = t.file.name,
       i = t.file.type;
-    if ((0, g.rG)(t.file) && (this.uploadAnalytics.imageCompressionQuality = t.file.imageCompressionQuality, this.uploadAnalytics.videoCompressionQuality = t.file.videoCompressionQuality, this.uploadAnalytics.convertedMimeType = t.file.type, void 0 !== t.file.videoMetadata && (this.uploadAnalytics.sourceMediaWidth = t.file.videoMetadata.width, this.uploadAnalytics.sourceMediaHeight = t.file.videoMetadata.height, this.uploadAnalytics.sourceMediaFormat = t.file.videoMetadata.format, this.uploadAnalytics.sourceVideoBitrate = t.file.videoMetadata.bitRate, this.uploadAnalytics.sourceVideoFramerate = t.file.videoMetadata.frameRate, this.uploadAnalytics.videoDurationMs = t.file.videoMetadata.durationMs, this.uploadAnalytics.sourceVideoProfile = t.file.videoMetadata.sourceProfile, this.uploadAnalytics.sourceVideoLevel = t.file.videoMetadata.sourceLevel), void 0 !== t.file.encodingConfig && (this.uploadAnalytics.targetVideoWidth = t.file.encodingConfig.targetWidth, this.uploadAnalytics.targetVideoHeight = t.file.encodingConfig.targetHeight, this.uploadAnalytics.targetVideoBitrate = t.file.encodingConfig.targetBitrate, this.uploadAnalytics.targetVideoCodec = t.file.encodingConfig.useHEVC ? "hvc1" : "avc1", this.uploadAnalytics.targetVideoFramerate = t.file.encodingConfig.frameRate, this.uploadAnalytics.targetVideoIsHdr = t.file.encodingConfig.createHDR, this.uploadAnalytics.hevcIsSupported = t.file.encodingConfig.hevcIsSupported, this.uploadAnalytics.progressUpdateGranularity = t.file.encodingConfig.progressUpdateGranularity)), this.filename = r, null == r || null == n || null == i) throw I.error("Insufficient file data: ".concat({
+    if ((0, m.rG)(t.file) && (this.uploadAnalytics.imageCompressionQuality = t.file.imageCompressionQuality, this.uploadAnalytics.videoCompressionQuality = t.file.videoCompressionQuality, this.uploadAnalytics.convertedMimeType = t.file.type, void 0 !== t.file.videoMetadata && (this.uploadAnalytics.sourceMediaWidth = t.file.videoMetadata.width, this.uploadAnalytics.sourceMediaHeight = t.file.videoMetadata.height, this.uploadAnalytics.sourceMediaFormat = t.file.videoMetadata.format, this.uploadAnalytics.sourceVideoBitrate = t.file.videoMetadata.bitRate, this.uploadAnalytics.sourceVideoFramerate = t.file.videoMetadata.frameRate, this.uploadAnalytics.videoDurationMs = t.file.videoMetadata.durationMs, this.uploadAnalytics.sourceVideoProfile = t.file.videoMetadata.sourceProfile, this.uploadAnalytics.sourceVideoLevel = t.file.videoMetadata.sourceLevel), void 0 !== t.file.encodingConfig && (this.uploadAnalytics.targetVideoWidth = t.file.encodingConfig.targetWidth, this.uploadAnalytics.targetVideoHeight = t.file.encodingConfig.targetHeight, this.uploadAnalytics.targetVideoBitrate = t.file.encodingConfig.targetBitrate, this.uploadAnalytics.targetVideoCodec = t.file.encodingConfig.useHEVC ? "hvc1" : "avc1", this.uploadAnalytics.targetVideoFramerate = t.file.encodingConfig.frameRate, this.uploadAnalytics.targetVideoIsHdr = t.file.encodingConfig.createHDR, this.uploadAnalytics.hevcIsSupported = t.file.encodingConfig.hevcIsSupported, this.uploadAnalytics.progressUpdateGranularity = t.file.encodingConfig.progressUpdateGranularity)), this.filename = r, null == r || null == n || null == i) throw I.error("Insufficient file data: ".concat({
       filename: r,
       uri: n,
       mimeType: i
@@ -299,7 +299,7 @@ class C extends g.ZP {
       uri: n,
       mimeType: i
     }));
-    let o = null !== (e = t.fileSize) && void 0 !== e ? e : (await (0, m.Lc)(n)).size;
+    let o = null !== (e = t.fileSize) && void 0 !== e ? e : (await (0, g.Lc)(n)).size;
     if (this.postCompressionSize = o, this.currentSize = o, null == o) throw I.error("Size missing from file data for ".concat(this.id)), Error("Size missing from file data");
     I.log("Completed compression and conversion. Output size=".concat(o, " bytes; filename=").concat(r, " for ").concat(this.id));
     let a = {

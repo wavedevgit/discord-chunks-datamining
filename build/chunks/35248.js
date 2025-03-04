@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(987209),
   p = n(563132),
   h = n(409813),
-  m = n(620824),
-  g = n(737143),
+  g = n(620824),
+  m = n(737143),
   E = n(926841),
   v = n(362755),
   b = n(981631),
@@ -58,10 +58,10 @@ let N = e => {
         browserCheckoutStateLoadId: C,
         browserCheckoutStateSkuId: R,
         browserCheckoutStatePlanId: P,
-        contextMetadata: w
+        contextMetadata: D
       } = (0, p.JL)(),
       {
-        isGift: D
+        isGift: w
       } = (0, _.wD)(),
       [L, x] = i.useState(!1);
     switch (o) {
@@ -69,20 +69,20 @@ let N = e => {
         t = b.i$l.GOOGLE_PAY, n = (0, E.a)();
         break;
       case h.h8.AWAITING_BROWSER_CHECKOUT_APPLE_PAY:
-        t = b.i$l.APPLE_PAY, n = (0, m.b)();
+        t = b.i$l.APPLE_PAY, n = (0, g.b)();
         break;
       default:
-        n = (0, g.q1)()
+        n = (0, m.q1)()
     }
     return i.useEffect(() => {
       let e = setTimeout(() => {
         var e;
-        !L && (x(!0), (0, l.r5)(w.loadId), T(null !== (e = null == d ? void 0 : d.id) && void 0 !== e ? e : y.Xh.PREMIUM_MONTH_TIER_2, D, w.loadId, u, t))
+        !L && (x(!0), (0, l.r5)(D.loadId), T(null !== (e = null == d ? void 0 : d.id) && void 0 !== e ? e : y.Xh.PREMIUM_MONTH_TIER_2, w, D.loadId, u, t))
       }, n.delay ? I : 0);
       return () => clearTimeout(e)
-    }, [d, D, w, u, x, L, t, n.delay]), i.useEffect(() => {
-      null !== R && (y.YQ.includes(R) && ((0, c.GZ)(R), (0, l.jg)()), N(R)), null !== P && f(P), C === w.loadId && A === v.Y.DONE && a()
-    }, [N, f, A, C, R, P, w, a]), (0, r.jsxs)("div", {
+    }, [d, w, D, u, x, L, t, n.delay]), i.useEffect(() => {
+      null !== R && (y.YQ.includes(R) && ((0, c.GZ)(R), (0, l.jg)()), N(R)), null !== P && f(P), C === D.loadId && A === v.Y.DONE && a()
+    }, [N, f, A, C, R, P, D, a]), (0, r.jsxs)("div", {
       className: S.body,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-xl/bold",

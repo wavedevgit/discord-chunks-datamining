@@ -22,21 +22,21 @@ function u(e) {
   } = e, {
     onMouseEnter: p,
     onMouseLeave: h,
-    shouldAnimate: m
+    shouldAnimate: g
   } = (0, c.Z)(f), {
-    pendingAvatarV2: g
+    pendingAvatarV2: m
   } = (0, l.Z)({}), E = d && null != t ? (0, a.SD)({
     userId: t.id,
-    image: g,
-    canAnimate: m,
+    image: m,
+    canAnimate: g,
     size: u
   }) : void 0, v = void 0 !== _ ? _ : E, b = (0, i.e7)([s.ZP], () => null != n && null != t ? s.ZP.getMember(n, t.id) : null);
   return {
     avatarSrc: r.useMemo(() => null != t ? (0, o.SG)(v, b, t, {
-      canAnimate: m,
+      canAnimate: g,
       size: u
-    }) : void 0, [v, b, t, m, u]),
-    isAvatarAnimating: m,
+    }) : void 0, [v, b, t, g, u]),
+    isAvatarAnimating: g,
     eventHandlers: {
       onMouseEnter: p,
       onMouseLeave: h

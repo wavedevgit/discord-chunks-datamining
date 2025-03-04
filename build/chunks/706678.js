@@ -31,21 +31,21 @@ function _() {
 }(function e() {
   let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
   return e
-})() && (r = setInterval(g, a));
+})() && (r = setInterval(m, a));
 let p = new Map;
 
 function h(e) {
   return "anonymous" !== e.name && ("" === f || e.name === f) && (e.execCount > u || e.execTime > l)
 }
 
-function m() {
+function g() {
   for (let [e, t] of p)
     if (h(t)) return !0;
   return !1
 }
 
-function g() {
-  for (let [e, t] of(m() || "" !== f ? E() : o.log("No violators found"), p)) t.warned = !1, t.execTime = 0, t.execCount = 0
+function m() {
+  for (let [e, t] of(g() || "" !== f ? E() : o.log("No violators found"), p)) t.warned = !1, t.execTime = 0, t.execCount = 0
 }
 let E = function() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 34,

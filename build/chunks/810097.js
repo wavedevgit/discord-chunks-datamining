@@ -18,8 +18,8 @@ var r = n(200651),
   _ = n(605236),
   p = n(314897),
   h = n(837411),
-  m = n(369566),
-  g = n(510659),
+  g = n(369566),
+  m = n(510659),
   E = n(652853),
   v = n(228168),
   b = n(388032),
@@ -98,13 +98,13 @@ function R(e) {
     onAction: N,
     renderMoreButtonPopout: A
   } = e, R = (0, c.e7)([p.default], () => p.default.getId() === t.id), P = (0, h.Z)(t.id), {
-    profileType: w
+    profileType: D
   } = (0, E.z)(), {
-    onInteraction: D
-  } = (0, g.Xo)(), {
+    onInteraction: w
+  } = (0, m.Xo)(), {
     live: L,
     stream: x
-  } = (0, m.Z)(t.id), M = !o && w !== v.y0.FULL_SIZE && (0, l.EQ)(n).with(v.n_.STATUS, () => 0 === L.length && null == x).with(v.n_.ACTIVITY, () => !0).with(v.n_.AVATAR, () => !1).exhaustive(), [k, j] = i.useState(M);
+  } = (0, g.Z)(t.id), M = !o && D !== v.y0.FULL_SIZE && (0, l.EQ)(n).with(v.n_.STATUS, () => 0 === L.length && null == x).with(v.n_.ACTIVITY, () => !0).with(v.n_.AVATAR, () => !1).exhaustive(), [k, j] = i.useState(M);
   if (i.useEffect(() => {
       k && !M && j(!1)
     }, [k, M]), t.bot || R || !P) return null;
@@ -115,11 +115,11 @@ function R(e) {
         action: "PRESS_REACT_CUSTOM_STATUS"
       }) : N({
         action: "PRESS_REACT_ACTIVITY"
-      }), null == D || D({
+      }), null == w || w({
         interactionType: v.P.REACT,
         interactionSource: n,
         interactionSourceId: I
-      }), w === v.y0.BITE_SIZE && (0, _.EW)(u.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
+      }), D === v.y0.BITE_SIZE && (0, _.EW)(u.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
     },
     G = () => {
       n === v.n_.AVATAR ? N({
@@ -128,11 +128,11 @@ function R(e) {
         action: "PRESS_REPLY_CUSTOM_STATUS"
       }) : N({
         action: "PRESS_REPLY_ACTIVITY"
-      }), null == D || D({
+      }), null == w || w({
         interactionType: v.P.REPLY,
         interactionSource: n,
         interactionSourceId: I
-      }), w === v.y0.BITE_SIZE && (0, _.EW)(u.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
+      }), D === v.y0.BITE_SIZE && (0, _.EW)(u.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
     },
     B = e => {
       e.animationName === (0, s.get)(y, "fadeInAndOut") && j(!1)

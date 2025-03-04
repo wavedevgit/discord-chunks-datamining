@@ -51,9 +51,9 @@ function h(e, t) {
   }), e
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
-  var n, r, i = g(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,7 +61,7 @@ function m(e, t) {
   return i
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -160,7 +160,7 @@ class b extends(i = a.PureComponent) {
         className: n,
         onResize: r
       } = e,
-      i = m(e, ["style", "className", "onResize"]);
+      i = g(e, ["style", "className", "onResize"]);
     delete i.fontWidthEstimate;
     let a = _({}, this.state, t);
     return (0, o.jsx)(u.t, {

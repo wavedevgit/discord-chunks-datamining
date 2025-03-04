@@ -23,10 +23,10 @@ function h(e) {
     onOpenProfile: n
   } = e, {
     mutualFriends: h,
-    mutualGuilds: m
-  } = (0, l.Z)(t), g = null != h && h.length > 0, E = null != m && m.length > 0, v = g && E ? "text-xs/normal" : "text-sm/normal";
-  if (!g && !E) return null;
-  let b = () => g ? (0, r.jsxs)(i.P3F, {
+    mutualGuilds: g
+  } = (0, l.Z)(t), m = null != h && h.length > 0, E = null != g && g.length > 0, v = m && E ? "text-xs/normal" : "text-sm/normal";
+  if (!m && !E) return null;
+  let b = () => m ? (0, r.jsxs)(i.P3F, {
       className: _.section,
       onClick: () => null == n ? void 0 : n(d.oh.MUTUAL_FRIENDS),
       children: [(0, r.jsx)(o.Z, {
@@ -47,16 +47,16 @@ function h(e) {
         children: (0, c.Z)(h.length)
       })]
     }) : null,
-    y = () => g && E ? (0, r.jsx)("div", {
+    y = () => m && E ? (0, r.jsx)("div", {
       "aria-hidden": "true",
       className: _.spacer
     }) : null,
     O = () => E ? (0, r.jsxs)(i.P3F, {
       className: _.section,
       onClick: () => null == n ? void 0 : n(d.oh.MUTUAL_GUILDS),
-      children: [!g && (0, r.jsx)(a.Z, {
+      children: [!m && (0, r.jsx)(a.Z, {
         maxGuilds: p,
-        guilds: m.map(e => {
+        guilds: g.map(e => {
           let {
             guild: t
           } = e;
@@ -69,7 +69,7 @@ function h(e) {
         className: _.text,
         variant: v,
         color: "interactive-normal",
-        children: (0, u.Z)(m.length)
+        children: (0, u.Z)(g.length)
       })]
     }) : null;
   return (0, r.jsxs)("div", {

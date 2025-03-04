@@ -17,7 +17,7 @@ var r = n(952265),
   p = n(979651),
   h = n(934415);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,20 +26,20 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
 }
 let E = function(e, t) {
-  let m = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
+  let g = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     E = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
     v = u.Z.getChannel(e),
     b = p.Z.getCurrentClientVoiceChannelId(null != t ? t : null) === e,
@@ -52,7 +52,7 @@ let E = function(e, t) {
           let {
             default: e
           } = await n.e("46398").then(n.bind(n, 523794));
-          return t => e(g({
+          return t => e(m({
             channel: v
           }, t))
         });
@@ -68,7 +68,7 @@ let E = function(e, t) {
         return
       }
     }
-    m && (0, l.eH)(), (0, c.Z)(O, e, E, m)
+    g && (0, l.eH)(), (0, c.Z)(O, e, E, g)
   }
 
   function O() {
@@ -77,7 +77,7 @@ let E = function(e, t) {
       guildId: t,
       channelId: e,
       currentVoiceChannelId: _.Z.getVoiceChannelId(),
-      video: m,
+      video: g,
       stream: E
     })
   }

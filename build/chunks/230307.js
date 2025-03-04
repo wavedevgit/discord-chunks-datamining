@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r, i = n(442837),
   o = n(570140),
@@ -83,7 +83,7 @@ class h extends(r = i.ZP.Store) {
   }
 }
 s(h, "displayName", "LibraryApplicationStatisticsStore");
-let m = new h(o.Z, {
+let g = new h(o.Z, {
   USER_ACTIVITY_STATISTICS_FETCH_SUCCESS: _,
   ACTIVITY_UPDATE_START: p,
   LOGOUT: f

@@ -32,8 +32,8 @@ let s = /^[0]+/,
     }
   },
   h = i()("2021-04-12T00:00:00"),
-  m = 15,
-  g = "LT",
+  g = 15,
+  m = "LT",
   E = (e, t) => e.clone().hours(t.hour()).minutes(t.minutes()).seconds(0),
   v = (e, t) => e.value.unix() - t.value.unix();
 class b {
@@ -101,8 +101,8 @@ class b {
     return null == t ? this._addNewOption(e) : t
   }
   constructor({
-    intervalInMinutes: e = m,
-    labelFormat: t = g
+    intervalInMinutes: e = g,
+    labelFormat: t = m
   } = {}) {
     if (a(this, "intervalInMinutes", void 0), a(this, "labelFormat", void 0), a(this, "options", []), a(this, "_index", {}), e <= 0) throw Error("intervalInMinutes should be positive number, got ".concat(e));
     this.intervalInMinutes = e, this.labelFormat = t, this._generateTimeOptions()

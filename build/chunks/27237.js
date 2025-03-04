@@ -8,14 +8,14 @@ var r = t(200651),
   o = t(120356),
   a = t.n(o),
   s = t(793030),
-  l = t(481060),
-  c = t(808189),
+  c = t(481060),
+  l = t(808189),
   d = t(413335),
   u = t(762762),
   x = t(157353),
   p = t(838968),
-  b = t(279604),
-  v = t(730621),
+  v = t(279604),
+  b = t(730621),
   j = t(388032),
   m = t(610881),
   h = t(709435);
@@ -51,10 +51,10 @@ function f(e) {
   } = e;
   return (0, r.jsx)("div", {
     className: m.perkRowContainer,
-    children: null === (t = c.C[i]) || void 0 === t ? void 0 : null === (n = t.perks) || void 0 === n ? void 0 : n.map((e, n) => (0, r.jsxs)("div", {
+    children: null === (t = l.C[i]) || void 0 === t ? void 0 : null === (n = t.perks) || void 0 === n ? void 0 : n.map((e, n) => (0, r.jsxs)("div", {
       className: m.perkRow,
       children: [(0, r.jsx)(e.icon, {
-        color: l.TVs.colors.TEXT_MUTED,
+        color: c.TVs.colors.TEXT_MUTED,
         size: "sm"
       }), (0, r.jsx)(s.xv, {
         className: m.perkText,
@@ -73,22 +73,22 @@ function g(e) {
     powerup: o,
     onError: s
   } = e, {
-    onActivate: c,
+    onActivate: l,
     isLoading: p,
     error: h,
-    onDeactivate: _
-  } = (0, b.Z)(t, o), f = (0, x.Z)(t, o), {
+    onShowDeactivate: _
+  } = (0, v.Z)(t, o), f = (0, x.Z)(t, o), {
     disabled: g,
     reason: Z
   } = (0, u.Z)(t, o, f);
   return i.useEffect(() => {
     null == s || s(h)
-  }, [h, s]), (0, r.jsx)(l.ua7, {
+  }, [h, s]), (0, r.jsx)(c.ua7, {
     text: Z,
     shouldShow: null != Z,
     children: e => {
       var t, i;
-      return (0, r.jsxs)(l.zxk, (t = function(e) {
+      return (0, r.jsxs)(c.zxk, (t = function(e) {
         for (var n = 1; n < arguments.length; n++) {
           var t = null != arguments[n] ? arguments[n] : {},
             r = Object.keys(t);
@@ -106,14 +106,14 @@ function g(e) {
         }
         return e
       }({}, e), i = i = {
-        onClick: f ? _ : c,
+        onClick: f ? _ : l,
         fullWidth: !0,
         wrapperClassName: a()(m.button, n),
         innerClassName: m.buttonInner,
-        color: f ? l.Ttl.PRIMARY : l.Ttl.BRAND,
+        color: f ? c.Ttl.PRIMARY : c.Ttl.BRAND,
         submitting: p,
         disabled: g,
-        children: [j.NW.string(f ? v.Z.PYPdl5 : v.Z.AOQgkp), !f && (0, r.jsxs)(r.Fragment, {
+        children: [j.NW.string(f ? b.Z.PYPdl5 : b.Z.AOQgkp), !f && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("span", {
             className: m.dot,
             children: "•"
@@ -146,17 +146,17 @@ function Z(e) {
       guildId: t,
       index: o,
       powerup: a,
-      nextPowerup: l
+      nextPowerup: c
     } = e,
     {
-      onShowMore: c
-    } = (0, b.Z)(t, a),
+      onShowMore: l
+    } = (0, v.Z)(t, a),
     d = (0, x.Z)(t, a),
-    u = (0, x.Z)(t, l),
-    [v, j] = i.useState(void 0);
-  return (0, b.K)(v), n = 0 === o ? "start" : null == l ? "end" : "middle", (0, r.jsxs)(p.Z, {
+    u = (0, x.Z)(t, c),
+    [b, j] = i.useState(void 0);
+  return (0, v.K)(b), n = 0 === o ? "start" : null == c ? "end" : "middle", (0, r.jsxs)(p.Z, {
     label: a.title,
-    onClick: c,
+    onClick: l,
     active: d,
     className: m.card,
     children: [(0, r.jsx)(_, {

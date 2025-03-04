@@ -26,7 +26,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function m(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,7 +51,7 @@ function g(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -60,7 +60,7 @@ let v = 300,
     let {
       default: t
     } = await n.e("31649").then(n.bind(n, 475613));
-    return n => (0, r.jsx)(t, E(m({}, n), {
+    return n => (0, r.jsx)(t, E(g({}, n), {
       sourceAnalyticsLocations: e,
       location: "UserProfileCustomStatusBubbleEditBar"
     }))
@@ -74,13 +74,13 @@ function y(e) {
   } = e, {
     analyticsLocations: h
   } = (0, c.ZP)(), {
-    trackUserProfileAction: m
-  } = (0, f.KZ)(), [g, E] = (0, a.Wu)([l.Z], () => [l.Z.useReducedMotion, l.Z.keyboardModeEnabled]), y = !n || g || E ? 0 : v, O = () => {
-    m({
+    trackUserProfileAction: g
+  } = (0, f.KZ)(), [m, E] = (0, a.Wu)([l.Z], () => [l.Z.useReducedMotion, l.Z.keyboardModeEnabled]), y = !n || m || E ? 0 : v, O = () => {
+    g({
       action: "PRESS_EDIT_CUSTOM_STATUS"
     }), b(h), null == i || i()
   }, S = () => {
-    m({
+    g({
       action: "PRESS_CLEAR_CUSTOM_STATUS"
     }), d.Ok.updateSetting(void 0)
   };

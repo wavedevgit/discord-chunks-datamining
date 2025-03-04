@@ -70,7 +70,7 @@ function h(e) {
   }))
 }
 
-function m(e) {
+function g(e) {
   let {
     guildId: t,
     profile: n
@@ -86,7 +86,7 @@ function m(e) {
   }))
 }
 
-function g(e) {
+function m(e) {
   let {
     guildId: t,
     error: n
@@ -232,8 +232,8 @@ class N extends(r = i.ZP.Store) {
 l(N, "displayName", "GuildProfileStore");
 let A = new N(o.Z, {
   GUILD_PROFILE_FETCH: h,
-  GUILD_PROFILE_FETCH_SUCCESS: m,
-  GUILD_PROFILE_FETCH_FAILURE: g,
+  GUILD_PROFILE_FETCH_SUCCESS: g,
+  GUILD_PROFILE_FETCH_FAILURE: m,
   GUILD_PROFILE_UPDATE: E,
   GUILD_PROFILE_UPDATE_SUCCESS: v,
   GUILD_PROFILE_UPDATE_FAILURE: b,

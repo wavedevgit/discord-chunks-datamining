@@ -23,8 +23,8 @@ function _(e, t, n) {
 }
 let p = new Map,
   h = null,
-  m = null,
-  g = null;
+  g = null,
+  m = null;
 
 function E() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : f.Yn.DEFAULT,
@@ -79,7 +79,7 @@ function S(e) {
     user: t,
     sessionId: n
   } = e;
-  h = t.id, m = n, g = null
+  h = t.id, g = n, m = null
 }
 
 function I(e) {
@@ -108,8 +108,8 @@ function T(e) {
       userId: n,
       channelId: r,
       sessionId: i
-    } = t, o = !1, a = g;
-    return n === h && i === m && (g = null != r ? r : null), a !== g && (o = p.delete(f.Yn.DEFAULT) || o), null == r ? o = n === h && i === m ? p.delete(f.Yn.DEFAULT) || o : v(f.Yn.DEFAULT, n) || o : n === h && i !== m ? o = p.delete(f.Yn.DEFAULT) || o : n !== h && r !== c.Z.getChannelId() && (o = v(f.Yn.DEFAULT, n) || o), o || e
+    } = t, o = !1, a = m;
+    return n === h && i === g && (m = null != r ? r : null), a !== m && (o = p.delete(f.Yn.DEFAULT) || o), null == r ? o = n === h && i === g ? p.delete(f.Yn.DEFAULT) || o : v(f.Yn.DEFAULT, n) || o : n === h && i !== g ? o = p.delete(f.Yn.DEFAULT) || o : n !== h && r !== c.Z.getChannelId() && (o = v(f.Yn.DEFAULT, n) || o), o || e
   }, !1)
 }
 class N extends(r = i.ZP.Store) {

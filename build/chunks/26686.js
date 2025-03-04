@@ -13,8 +13,8 @@ var r = n(147018),
   _ = n(400957),
   p = String,
   h = i("JSON", "stringify"),
-  m = s(/./.exec),
-  g = s("".charAt),
+  g = s(/./.exec),
+  m = s("".charAt),
   E = s("".charCodeAt),
   v = s("".replace),
   b = s(1..toString),
@@ -38,9 +38,9 @@ var r = n(147018),
     }, o(h, null, n)
   },
   A = function(e, t, n) {
-    var r = g(n, t - 1),
-      i = g(n, t + 1);
-    return m(O, e) && !m(S, i) || m(S, e) && !m(O, r) ? "\\u" + b(E(e, 0), 16) : e
+    var r = m(n, t - 1),
+      i = m(n, t + 1);
+    return g(O, e) && !g(S, i) || g(S, e) && !g(O, r) ? "\\u" + b(E(e, 0), 16) : e
   };
 h && r({
   target: "JSON",

@@ -52,8 +52,8 @@ var f = new WeakMap,
   _ = new WeakMap,
   p = new WeakMap,
   h = new WeakMap,
-  m = new WeakMap,
   g = new WeakMap,
+  m = new WeakMap,
   E = new WeakMap,
   v = new WeakMap,
   b = new WeakMap,
@@ -73,10 +73,10 @@ class S {
       }), i(this, h, {
         writable: !0,
         value: void 0
-      }), i(this, m, {
+      }), i(this, g, {
         writable: !0,
         value: void 0
-      }), i(this, g, {
+      }), i(this, m, {
         writable: !0,
         value: (e, t, n) => {
           var r, i;
@@ -122,8 +122,8 @@ class S {
           let t = s(this, f);
           if (s(this, h).some(t => !!(t.id !== s(this, f) && t.transition && t.transition.check(e)) && (c(this, f, t.id), !0)), s(this, f) !== t) {
             var n;
-            s(this, p)[t].instance.teardown(), Object.keys(s(this, m)).forEach(e => {
-              let t = s(this, m)[e];
+            s(this, p)[t].instance.teardown(), Object.keys(s(this, g)).forEach(e => {
+              let t = s(this, g)[e];
               t.unsubscribe(), t.unsubscribe = s(this, y).call(this, t.func, ...t.args)
             }), s(this, _).backendChanged(this);
             let r = s(this, p)[s(this, f)];
@@ -140,19 +140,19 @@ class S {
         value: (e, t, n, r) => {
           let i = "".concat(e, "_").concat(t),
             o = s(this, y).call(this, e, t, n, r);
-          return s(this, m)[i] = {
+          return s(this, g)[i] = {
             func: e,
             args: [t, n, r],
             unsubscribe: o
           }, () => {
-            s(this, m)[i].unsubscribe(), delete s(this, m)[i]
+            s(this, g)[i].unsubscribe(), delete s(this, g)[i]
           }
         }
       }), !n || !n.backends || n.backends.length < 1) throw Error("You must specify at least one Backend, if you are coming from 2.x.x (or don't understand this error)\n        see this guide: https://github.com/louisbrunner/dnd-multi-backend/tree/master/packages/react-dnd-multi-backend#migrating-from-2xx");
     c(this, _, new r.J), c(this, p, {}), c(this, h, []), n.backends.forEach(n => {
-      let r = s(this, g).call(this, e, t, n);
+      let r = s(this, m).call(this, e, t, n);
       s(this, p)[r.id] = r, s(this, h).push(r)
-    }), c(this, f, s(this, h)[0].id), c(this, m, {})
+    }), c(this, f, s(this, h)[0].id), c(this, g, {})
   }
 }
 a(S, "isSetUp", !1)

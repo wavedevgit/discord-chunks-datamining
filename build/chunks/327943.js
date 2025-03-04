@@ -28,13 +28,13 @@ let p = 2,
       coachmarkImpressions: 0
     }
   },
-  m = !1,
-  g = !0,
+  g = !1,
+  m = !0,
   E = () => {
-    g = !l.ZP.canUsePremiumAppIcons(a.default.getCurrentUser())
+    m = !l.ZP.canUsePremiumAppIcons(a.default.getCurrentUser())
   },
   v = e => {
-    if (h.client.desktop = e, !g) {
+    if (h.client.desktop = e, !m) {
       var t;
       s.default.track(u.rMx.APP_ICON_UPDATED, {
         icon_id: e,
@@ -52,15 +52,15 @@ function b(e) {
 }
 
 function y() {
-  m = !0
+  g = !0
 }
 
 function O() {
-  S(), m = !1
+  S(), g = !1
 }
 
 function S() {
-  g && (h.client = {
+  m && (h.client = {
     desktop: c.aH.DEFAULT,
     coachmarkImpressions: p
   })
@@ -77,10 +77,10 @@ class T extends(r = i.ZP.PersistedStore) {
     null != e && (h = e), this.waitFor(a.default), this.syncWith([a.default], E)
   }
   get isEditorOpen() {
-    return m
+    return g
   }
   get isUpsellPreview() {
-    return g
+    return m
   }
   getState() {
     return h

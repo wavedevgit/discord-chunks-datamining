@@ -18,8 +18,8 @@ var r, i = n(392711),
   _ = n(199902),
   p = n(314897),
   h = n(592125),
-  m = n(650774),
-  g = n(271383),
+  g = n(650774),
+  m = n(271383),
   E = n(430824),
   v = n(158776),
   b = n(885110),
@@ -71,7 +71,7 @@ var P = function(e) {
   return e.GROUP = "GROUP", e.MEMBER = "MEMBER", e.CONTENT_INVENTORY = "CONTENT_INVENTORY", e.CONTENT_INVENTORY_GROUP = "CONTENT_INVENTORY_GROUP", e.HIDDEN_CONTENT_INVENTORY = "HIDDEN_CONTENT_INVENTORY", e.CONTENT_INVENTORY_LEADERBOARD = "CONTENT_INVENTORY_LEADERBOARD", e
 }({});
 
-function w(e, t, n, r) {
+function D(e, t, n, r) {
   switch (t) {
     case O.Skl.ONLINE:
     case O.Skl.OFFLINE:
@@ -97,7 +97,7 @@ function w(e, t, n, r) {
   }
 }
 
-function D(e, t, n) {
+function w(e, t, n) {
   let r = n === p.default.getId(),
     i = v.Z.isMobileOnline(n),
     o = r ? b.Z.getStatus() : v.Z.getStatus(n, e),
@@ -106,7 +106,7 @@ function D(e, t, n) {
     l = y.default.getUser(n);
   return null == l ? null : A(T({
     type: "MEMBER"
-  }, g.ZP.getMember(e, n)), {
+  }, m.ZP.getMember(e, n)), {
     user: l,
     status: o,
     activities: a,
@@ -144,7 +144,7 @@ class M {
       var n;
       let r = t,
         i = Math.max(0, null !== (n = e.count) && void 0 !== n ? n : 0);
-      return t += i + 1, w(this.guildId, e.id, i, r)
+      return t += i + 1, D(this.guildId, e.id, i, r)
     }), this.rows.length = t
   }
   sync(e, t) {
@@ -165,9 +165,9 @@ class M {
       group: n,
       member: r
     } = t;
-    if (null != n) this.rows.splice(e, 0, w(this.guildId, n.id, n.count));
+    if (null != n) this.rows.splice(e, 0, D(this.guildId, n.id, n.count));
     else if (null != r) {
-      let t = D(this.guildId, this.ownerId, r.user.id);
+      let t = w(this.guildId, this.ownerId, r.user.id);
       if (null == t) return;
       this.rows.splice(e, 0, t), this.members[r.user.id] = t
     }
@@ -178,9 +178,9 @@ class M {
       group: n,
       member: r
     } = t, i = this.rows[e];
-    if (null != i && "MEMBER" === i.type && delete this.members[i.user.id], null != n) this.rows[e] = w(this.guildId, n.id, n.count);
+    if (null != i && "MEMBER" === i.type && delete this.members[i.user.id], null != n) this.rows[e] = D(this.guildId, n.id, n.count);
     else if (null != r) {
-      let t = D(this.guildId, this.ownerId, r.user.id);
+      let t = w(this.guildId, this.ownerId, r.user.id);
       if (null == t) return;
       this.rows[e] = t, this.members[r.user.id] = t
     }
@@ -192,7 +192,7 @@ class M {
   }
   rebuildMember(e) {
     let t = this.members[e];
-    null != t && (Object.assign(t, D(this.guildId, this.ownerId, e)), this.version++)
+    null != t && (Object.assign(t, w(this.guildId, this.ownerId, e)), this.version++)
   }
   rebuildMembers() {
     let e = Object.keys(this.members);
@@ -312,7 +312,7 @@ function K() {
 }
 class z extends(r = c.ZP.Store) {
   initialize() {
-    this.waitFor(y.default, E.Z, h.Z, g.ZP, v.Z, b.Z, p.default, m.Z, _.Z, d.Z), this.syncWith([b.Z], Y), this.syncWith([_.Z], W)
+    this.waitFor(y.default, E.Z, h.Z, m.ZP, v.Z, b.Z, p.default, g.Z, _.Z, d.Z), this.syncWith([b.Z], Y), this.syncWith([_.Z], W)
   }
   getProps(e, t) {
     let n = j.get(e, L(t));

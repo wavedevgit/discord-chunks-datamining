@@ -25,33 +25,33 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let m = new Set;
-class g extends(r = o.ZP.PersistedStore) {
+let g = new Set;
+class m extends(r = o.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (m = new Set(e))
+    null != e && (g = new Set(e))
   }
   hasId(e) {
-    return m.has(e)
+    return g.has(e)
   }
   getState() {
-    return [...m]
+    return [...g]
   }
 }
-h(g, "displayName", "PTOStore"), h(g, "persistKey", "PTOStore");
-let E = new g(s.Z, {}),
+h(m, "displayName", "PTOStore"), h(m, "persistKey", "PTOStore");
+let E = new m(s.Z, {}),
   v = e => (0, o.e7)([u.ZP, f.default, E], () => {
     let t = f.default.getCurrentUser();
     if (null == t || !t.isStaff() || !e.isDM()) return !1;
     let n = f.default.getUser(e.getRecipientId());
     if (!(null == n ? void 0 : n.isStaff())) return !1;
     let r = u.ZP.getNicknames(n.id).some(e => e.endsWith("[PTO]") || e.endsWith("[OOO]"));
-    return r ? !E.hasId(n.id) && r : (m.delete(n.id) && E.emitChange(), !1)
+    return r ? !E.hasId(n.id) && r : (g.delete(n.id) && E.emitChange(), !1)
   }),
   b = () => {
     let e = d.Z.getChannelId();
     if (null == e) return;
     let t = c.Z.getChannel(e);
-    null != t && t.isPrivate() && !m.has(t.getRecipientId()) && (m.add(t.getRecipientId()), E.emitChange())
+    null != t && t.isPrivate() && !g.has(t.getRecipientId()) && (g.add(t.getRecipientId()), E.emitChange())
   },
   y = () => (0, i.jsxs)("div", {
     className: p.bar,

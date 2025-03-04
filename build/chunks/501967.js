@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B: () => g
+  B: () => m
 });
 var r, i = n(200651),
   o = n(192379),
@@ -23,13 +23,13 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let h = 3e3,
-  m = {
+  g = {
     [f.AEg.NORMAL]: _.normal,
     [f.AEg.MINIMUM]: _.minimum,
     [f.AEg.NO_CHAT]: _.noChat,
     [f.AEg.FULL_SCREEN]: _.fullScreen
   };
-class g extends o.PureComponent {
+class m extends o.PureComponent {
   componentDidAppear() {
     this.state.animation.setValue(1)
   }
@@ -90,7 +90,7 @@ class E extends(r = o.PureComponent) {
     return (0, i.jsx)(u.W, {
       className: _.videoBackground,
       component: "div",
-      children: (0, i.jsx)(g, {
+      children: (0, i.jsx)(m, {
         children: e
       }, r)
     })
@@ -106,7 +106,7 @@ class E extends(r = o.PureComponent) {
       idle: a
     } = this.state;
     return (0, i.jsx)(d.Z, {
-      className: s()(_.video, m[r], {
+      className: s()(_.video, g[r], {
         [_.idle]: a
       }),
       direction: d.Z.Direction.VERTICAL,
@@ -143,7 +143,7 @@ class E extends(r = o.PureComponent) {
       animated: n
     } = this.props;
     return (0, i.jsx)("div", {
-      className: s()(_.videoHeight, m[e], t, {
+      className: s()(_.videoHeight, g[e], t, {
         [_.animated]: n
       }),
       children: this.renderContents()

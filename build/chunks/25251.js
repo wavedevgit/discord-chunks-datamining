@@ -22,8 +22,8 @@ let u = [],
   _ = u,
   p = {},
   h = null,
-  m = 0,
-  g = 3e5,
+  g = 0,
+  m = 3e5,
   E = 6e4,
   v = 36e5,
   b = e => {
@@ -43,13 +43,13 @@ let u = [],
     let {
       profileEffects: t
     } = e;
-    r = void 0, i = Date.now() + g, m = 0, b(0 === t.length ? u : t), f = !1
+    r = void 0, i = Date.now() + m, g = 0, b(0 === t.length ? u : t), f = !1
   },
   S = e => {
     let {
       error: t
     } = e;
-    r = t, i = Date.now() + Math.min(E * 2 ** m, v), ++m, b(u), f = !1
+    r = t, i = Date.now() + Math.min(E * 2 ** g, v), ++g, b(u), f = !1
   },
   I = e => {
     let {

@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(78839),
   p = n(74538),
   h = n(543241),
-  m = n(981631),
-  g = n(474936),
+  g = n(981631),
+  m = n(474936),
   E = n(388032),
   v = n(619629);
 let b = "premiumRetentionEmojiPickerNotice",
@@ -36,10 +36,10 @@ let b = "premiumRetentionEmojiPickerNotice",
     if (i.useEffect(() => {
         I || (0, u.jg)()
       }, [I]), null == S || !(0, p.zV)(S.status) || o) return null;
-    let T = S.status === m.O0b.PAST_DUE ? (0, p.lY)(S).expiresDate : a()(S.currentPeriodStart).add(g.gh),
+    let T = S.status === g.O0b.PAST_DUE ? (0, p.lY)(S).expiresDate : a()(S.currentPeriodStart).add(m.gh),
       N = "".concat(S.id, ":").concat(T.toISOString());
     if (y === N) return null;
-    let A = p.ZP.getPremiumType(S.planId) === g.p9.TIER_0 ? f.JX.PREMIUM_TIER_0 : p.ZP.getPremiumType(S.planId) === g.p9.TIER_1 ? f.JX.PREMIUM_TIER_1 : f.JX.PREMIUM_TIER_2;
+    let A = p.ZP.getPremiumType(S.planId) === m.p9.TIER_0 ? f.JX.PREMIUM_TIER_0 : p.ZP.getPremiumType(S.planId) === m.p9.TIER_1 ? f.JX.PREMIUM_TIER_1 : f.JX.PREMIUM_TIER_2;
     return (0, r.jsxs)("div", {
       className: v.premiumRetentionNotice,
       children: [(0, r.jsx)(c.SrA, {
@@ -57,7 +57,7 @@ let b = "premiumRetentionEmojiPickerNotice",
         }), (0, r.jsx)("div", {
           children: (0, r.jsx)(c.eee, {
             onClick: () => {
-              (0, h.A3)(n), t(), d.Z.open(m.oAB.PREMIUM)
+              (0, h.A3)(n), t(), d.Z.open(g.oAB.PREMIUM)
             },
             children: E.NW.string(E.t.W3aavr)
           })

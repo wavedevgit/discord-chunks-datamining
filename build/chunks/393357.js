@@ -7,19 +7,19 @@ var r = t(200651),
   o = t(443002),
   a = t(430824),
   s = t(639777),
-  l = t(504392),
-  c = t(981631);
+  c = t(504392),
+  l = t(981631);
 
 function d(e) {
   let {
     guildId: n
   } = e, t = (0, i.e7)([a.Z], () => a.Z.getGuild(n)), d = (0, s.Z)(t);
-  return null == d || null == t ? null : d ? (0, r.jsx)(l.Z, {
+  return null == d || null == t ? null : d ? (0, r.jsx)(c.Z, {
     guildId: n
   }) : (0, r.jsx)(o.Z, {
     analyticsLocation: {
-      section: c.jXE.CHANNEL_LIST,
-      object: c.qAy.GUILD_POWERUPS_CHANNEL_LIST_ITEM
+      section: l.jXE.CHANNEL_LIST,
+      object: l.qAy.GUILD_POWERUPS_CHANNEL_LIST_ITEM
     },
     onClose: () => {},
     guild: t

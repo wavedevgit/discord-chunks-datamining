@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -53,16 +53,16 @@ function h(e, t) {
   }), e
 }
 
-function m(e) {
+function g(e) {
   let {
     channel: t,
     textVariant: n,
     textClassName: f,
     hideText: p = !1,
-    hideTooltip: m = !1
-  } = e, g = (0, o.vjg)(o.Skl.ONLINE), E = (0, s.ZP)(t), v = t.isDM() || t.isGroupDM(), b = () => m || v ? (0, r.jsx)(l.Z, {
+    hideTooltip: g = !1
+  } = e, m = (0, o.vjg)(o.Skl.ONLINE), E = (0, s.ZP)(t), v = t.isDM() || t.isGroupDM(), b = () => g || v ? (0, r.jsx)(l.Z, {
     size: "custom",
-    color: g,
+    color: m,
     channel: t,
     className: d.icon
   }) : (0, r.jsx)(o.ua7, {

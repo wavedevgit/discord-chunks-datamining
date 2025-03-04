@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(351773),
   p = n(607070),
   h = n(100527),
-  m = n(906732),
-  g = n(639119),
+  g = n(906732),
+  m = n(639119),
   E = n(197115),
   v = n(587446),
   b = n(594174),
@@ -31,13 +31,13 @@ var r = n(200651),
   C = n(921944),
   R = n(474936),
   P = n(388032),
-  w = n(17343);
-let D = () => (0, r.jsx)("div", {
-    className: w.editorHeader,
+  D = n(17343);
+let w = () => (0, r.jsx)("div", {
+    className: D.editorHeader,
     children: (0, r.jsxs)("div", {
-      className: w.bannerUpsell,
+      className: D.bannerUpsell,
       children: [(0, r.jsx)(v.Z, {
-        className: w.premiumIcon
+        className: D.premiumIcon
       }), (0, r.jsx)(u.X6q, {
         variant: "heading-md/bold",
         color: "always-white",
@@ -52,14 +52,14 @@ let D = () => (0, r.jsx)("div", {
       null != t && t(C.L.DISMISS), n(A.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, S.Mo)()
     };
     return (0, r.jsxs)("div", {
-      className: w.editorHeader,
+      className: D.editorHeader,
       children: [(0, r.jsx)(u.P3F, {
-        className: w.closeCircleButton,
+        className: D.closeCircleButton,
         onClick: i,
         children: (0, r.jsx)(u.k$p, {
           size: "md",
           color: "currentColor",
-          className: w.closeCircle
+          className: D.closeCircle
         })
       }), (0, r.jsx)(u.X6q, {
         variant: "heading-lg/extrabold",
@@ -74,7 +74,7 @@ let D = () => (0, r.jsx)("div", {
       markAsDismissed: a
     } = e, {
       analyticsLocations: s
-    } = (0, m.ZP)(h.Z.CLIENT_THEMES_EDITOR), [f, _] = (0, l.Wu)([b.default, I.Z], () => [I.Z.gradientPreset, O.ZP.isPremium(b.default.getCurrentUser())]), p = (0, g.N)(), v = (0, O.Rt)({
+    } = (0, g.ZP)(h.Z.CLIENT_THEMES_EDITOR), [f, _] = (0, l.Wu)([b.default, I.Z], () => [I.Z.gradientPreset, O.ZP.isPremium(b.default.getCurrentUser())]), p = (0, m.N)(), v = (0, O.Rt)({
       intervalType: null == p ? void 0 : null === (t = p.subscription_trial) || void 0 === t ? void 0 : t.interval,
       intervalCount: null == p ? void 0 : null === (n = p.subscription_trial) || void 0 === n ? void 0 : n.interval_count
     }), y = e => {
@@ -116,14 +116,14 @@ let D = () => (0, r.jsx)("div", {
       isPreview: !0
     }, () => P.NW.string(P.t["dqH+qq"])).otherwise(() => P.NW.string(P.t.Olc2Ky));
     return (0, r.jsxs)("div", {
-      className: w.editorFooter,
+      className: D.editorFooter,
       children: [o && (0, r.jsx)(x, {
         onSubscribeSuccess: () => {
           c(!0)
         },
         markAsDismissed: t
       }), (0, r.jsx)(u.zxk, {
-        className: w.footerButton,
+        className: D.footerButton,
         onClick: _,
         color: u.zxk.Colors.PRIMARY,
         size: u.zxk.Sizes.MEDIUM,
@@ -138,7 +138,7 @@ function k(e) {
     showClientThemesCoachmark: n
   } = e, {
     analyticsLocations: o
-  } = (0, m.ZP)(h.Z.CLIENT_THEMES_EDITOR), {
+  } = (0, g.ZP)(h.Z.CLIENT_THEMES_EDITOR), {
     isPreview: s,
     isEditorOpen: c,
     shouldEditorAnimate: d
@@ -153,27 +153,27 @@ function k(e) {
       location_stack: o
     })
   }, [s, o]);
-  let g = (0, T.J)(),
-    E = (0, _.Z)(null, s ? g : A.dG4);
+  let m = (0, T.J)(),
+    E = (0, _.Z)(null, s ? m : A.dG4);
   return i.useEffect(() => {
-    if (s && !c) return g
-  }, [s, c, g]), (0, r.jsx)(m.Gt, {
+    if (s && !c) return m
+  }, [s, c, m]), (0, r.jsx)(g.Gt, {
     value: o,
     children: (0, r.jsx)("div", {
       ref: E,
       "data-app-right-panel": !0,
-      className: a()(w.themeEditor, d ? w.editorAnimate : null),
+      className: a()(D.themeEditor, d ? D.editorAnimate : null),
       children: (0, r.jsxs)(u.y5t, {
-        children: [n ? (0, r.jsx)(D, {}) : (0, r.jsx)(L, {
+        children: [n ? (0, r.jsx)(w, {}) : (0, r.jsx)(L, {
           markAsDismissed: t
         }), (0, r.jsx)(u.Ttm, {
-          className: w.editorBody,
+          className: D.editorBody,
           children: (0, r.jsxs)(N.ZP, {
             type: N.yH.EDITOR,
             children: [!s && (0, r.jsx)(N.ZP.Basic, {
-              className: w.selectionGroup
+              className: D.selectionGroup
             }), (0, r.jsx)(N.ZP.Gradient, {
-              className: w.selectionGroup,
+              className: D.selectionGroup,
               isCoachmark: n
             })]
           })

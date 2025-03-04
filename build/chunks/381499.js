@@ -4,7 +4,7 @@ n.d(t, {
   A8: () => u,
   D5: () => b,
   Gm: () => O,
-  T4: () => m,
+  T4: () => g,
   r1: () => f,
   wA: () => p,
   yC: () => E
@@ -243,8 +243,8 @@ class h extends s.C {
     }])
   }
 }
-let m = new h;
-class g extends s.C {
+let g = new h;
+class m extends s.C {
   internalJsonWrite(e, t) {
     return this.refJsonWriter.scalar(13, e.value, "value", !1, !0)
   }
@@ -289,7 +289,7 @@ class g extends s.C {
     }])
   }
 }
-let E = new g;
+let E = new m;
 class v extends s.C {
   internalJsonWrite(e, t) {
     return e.value

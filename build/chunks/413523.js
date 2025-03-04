@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Yr: () => R,
-  ZP: () => w,
+  ZP: () => D,
   gN: () => C,
   sI: () => P
 }), n(301563), n(47120), n(653041);
@@ -19,8 +19,8 @@ var r = n(392711),
   _ = n(131951),
   p = n(606304),
   h = n(594174),
-  m = n(33039),
-  g = n(979651),
+  g = n(33039),
+  m = n(979651),
   E = n(5192),
   v = n(933546),
   b = n(354459),
@@ -93,7 +93,7 @@ function R(e) {
 var P = function(e) {
   return e.VIDEO = "VIDEO", e.STREAM = "STREAM", e.FILTERED = "FILTERED", e.SPEAKING = "SPEAKING", e.ACTIVITY = "ACTIVITY", e
 }({});
-class w {
+class D {
   get version() {
     return this.participantByIndex.version
   }
@@ -106,7 +106,7 @@ class w {
   rebuild() {
     let e = f.Z.getChannel(this.channelId);
     if (null == e || e.type === y.d4z.GUILD_TEXT || (this.call = d.Z.getCall(this.channelId), e.isPrivate() && (null == this.call || this.call.unavailable))) return !1;
-    let t = new Set(e.isGuildVocalOrThread() ? Object.keys(g.Z.getVoiceStatesForChannel(e.id)) : e.recipients);
+    let t = new Set(e.isGuildVocalOrThread() ? Object.keys(m.Z.getVoiceStatesForChannel(e.id)) : e.recipients);
     return t.add(u.default.getId()), this.guildRingingUsers.size > 0 && (t = new Set([...t, ...this.guildRingingUsers])), c.Z.getAllActiveStreamsForChannel(this.channelId).forEach(e => {
       let {
         ownerId: n
@@ -196,13 +196,13 @@ class w {
     let y = [],
       S = h.default.getUser(e);
     if (null == S) return y;
-    let T = g.Z.getVoiceStateForChannel(this.channelId, e),
-      A = g.Z.getVoicePlatformForChannel(this.channelId, e),
+    let T = m.Z.getVoiceStateForChannel(this.channelId, e),
+      A = m.Z.getVoicePlatformForChannel(this.channelId, e),
       C = f.Z.getChannel(this.channelId),
       R = null !== (r = (null === (n = this.call) || void 0 === n ? void 0 : null === (t = n.ringing) || void 0 === t ? void 0 : t.includes(e)) || this.guildRingingUsers.has(e)) && void 0 !== r && r;
     (null != T || R) && (d = N(I({
       type: b.fO.USER
-    }, m.Z.getUserStreamData(e, null == C ? void 0 : C.getGuildId())), {
+    }, g.Z.getUserStreamData(e, null == C ? void 0 : C.getGuildId())), {
       user: S,
       id: S.id,
       voiceState: T,
@@ -226,7 +226,7 @@ class w {
           maxResolution: null != n.maxResolution ? I({}, n.maxResolution) : void 0,
           maxFrameRate: n.maxFrameRate
         } : null;
-      v = N(I({}, m.Z.getUserStreamData(e, null == C ? void 0 : C.getGuildId(), O.Yn.STREAM), i), {
+      v = N(I({}, g.Z.getUserStreamData(e, null == C ? void 0 : C.getGuildId(), O.Yn.STREAM), i), {
         type: r ? b.fO.HIDDEN_STREAM : b.fO.STREAM,
         id: t,
         userVideo: null !== (s = null == T ? void 0 : T.selfVideo) && void 0 !== s && s,

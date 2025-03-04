@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Y: () => h,
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -34,13 +34,13 @@ function h(e) {
     })
   }), h = (0, l.Z)({
     user: t
-  }), m = (0, c.Z)({
+  }), g = (0, c.Z)({
     user: t
   });
-  return i.useMemo(() => [r ? null : p, h, m].filter(d.lm), [h, p, r, m])
+  return i.useMemo(() => [r ? null : p, h, g].filter(d.lm), [h, p, r, g])
 }
 
-function m(e) {
+function g(e) {
   let {
     menuItems: t,
     children: n

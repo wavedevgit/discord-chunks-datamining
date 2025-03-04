@@ -49,9 +49,9 @@ function p(e) {
     onClose: p
   } = e, h = (0, c.Z)({
     onClose: p
-  }), m = (0, o.e7)([l.default], () => l.default.getCurrentUser());
-  if (t.id !== (null == m ? void 0 : m.id) || "recent" !== u || !(0, s.Rh)(i)) return null;
-  let g = () => {
+  }), g = (0, o.e7)([l.default], () => l.default.getCurrentUser());
+  if (t.id !== (null == g ? void 0 : g.id) || "recent" !== u || !(0, s.Rh)(i)) return null;
+  let m = () => {
     (0, a.ZDy)(async () => {
       let {
         default: e
@@ -70,7 +70,7 @@ function p(e) {
     action: () => {
       null == d || d({
         action: "PRESS_DELETE_HISTORY_MENU_ITEM"
-      }), g()
+      }), m()
     },
     color: "danger"
   })

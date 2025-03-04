@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(26323),
   p = n(434404),
   h = n(357156),
-  m = n(430824),
-  g = n(267642),
+  g = n(430824),
+  m = n(267642),
   E = n(981631),
   v = n(30513),
   b = n(388032),
@@ -33,9 +33,9 @@ let O = e => {
     location: I
   } = (0, c.O)(), {
     analyticsLocations: T
-  } = (0, d.ZP)(), N = (0, s.e7)([m.Z], () => m.Z.getGuild(n)), {
+  } = (0, d.ZP)(), N = (0, s.e7)([g.Z], () => g.Z.getGuild(n)), {
     canManageAllExpressions: A
-  } = (0, h.XJ)(N), C = null != N && 0 === (0, g.A3)(N.premiumTier) && !N.hasFeature(E.oNc.MORE_STICKERS);
+  } = (0, h.XJ)(N), C = null != N && 0 === (0, m.A3)(N.premiumTier) && !N.hasFeature(E.oNc.MORE_STICKERS);
   if (i.useEffect(() => {
       A && C && O && ((0, u.yw)(E.rMx.PREMIUM_GUILD_UPSELL_VIEWED, {
         location: I,
@@ -65,7 +65,7 @@ let O = e => {
         className: y.body,
         variant: "text-sm/normal",
         children: b.NW.format(b.t.AXWla2, {
-          count: (0, g.A3)(E.Eu4.TIER_1)
+          count: (0, m.A3)(E.Eu4.TIER_1)
         })
       }), (0, r.jsx)(l.zxk, {
         look: l.zxk.Looks.LINK,

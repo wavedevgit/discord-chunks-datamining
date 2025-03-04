@@ -23,8 +23,8 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let m = {},
-  g = {},
+let g = {},
+  m = {},
   E = {},
   v = {},
   b = !1,
@@ -35,19 +35,19 @@ let m = {},
   T = {};
 
 function N() {
-  m = {}, E = {}, v = {}, b = !1, y = !1, O = !1, S = new Set, I = new Set
+  g = {}, E = {}, v = {}, b = !1, y = !1, O = !1, S = new Set, I = new Set
 }
 
 function A(e) {
-  m[e.id] = c.Z.createFromServer(e), null == E[e.sku_id] && (E[e.sku_id] = new Set), null == v[e.application_id] && (v[e.application_id] = new Set), null != e.subscription_id && (null == T[e.subscription_id] && (T[e.subscription_id] = new Set), T[e.subscription_id].add(e.id)), v[e.application_id].add(e.id), E[e.sku_id].add(e.id)
+  g[e.id] = c.Z.createFromServer(e), null == E[e.sku_id] && (E[e.sku_id] = new Set), null == v[e.application_id] && (v[e.application_id] = new Set), null != e.subscription_id && (null == T[e.subscription_id] && (T[e.subscription_id] = new Set), T[e.subscription_id].add(e.id)), v[e.application_id].add(e.id), E[e.sku_id].add(e.id)
 }
 
 function C(e) {
-  g[e.id] = c.Z.createFromServer(e)
+  m[e.id] = c.Z.createFromServer(e)
 }
 
 function R(e) {
-  delete m[e.id];
+  delete g[e.id];
   let t = v[e.application_id];
   null != t && t.delete(e.id);
   let n = E[e.sku_id];
@@ -64,7 +64,7 @@ function P(e) {
   S.add(t)
 }
 
-function w(e) {
+function D(e) {
   let {
     applicationId: t,
     entitlements: n
@@ -72,11 +72,11 @@ function w(e) {
   for (let e of (S.delete(t), I.add(t), n)) !0 !== e.consumed && A(e)
 }
 
-function D(e) {
+function w(e) {
   let {
     entitlements: t
   } = e;
-  g = {}, t.forEach(C)
+  m = {}, t.forEach(C)
 }
 
 function L() {}
@@ -125,23 +125,23 @@ class V extends(r = s.yh) {
     this.syncWith([u.Z], () => !0)
   }
   get(e) {
-    return m[e]
+    return g[e]
   }
   getGiftable() {
-    return o().values(g)
+    return o().values(m)
   }
   getForApplication(e) {
     let t = v[e];
     if (null == t) return null;
     let n = new Set;
-    for (let e of t) n.add(m[e]);
+    for (let e of t) n.add(g[e]);
     return n
   }
   getForSku(e) {
     let t = E[e];
     if (null == t) return null;
     let n = new Set;
-    for (let e of t) n.add(m[e]);
+    for (let e of t) n.add(g[e]);
     return n
   }
   get fetchingAllEntitlements() {
@@ -169,7 +169,7 @@ class V extends(r = s.yh) {
     let t = T[e];
     if (null == t) return null;
     let n = new Set;
-    for (let e of t) n.add(m[e]);
+    for (let e of t) n.add(g[e]);
     return n
   }
   isEntitledToSku(e, t, n) {
@@ -177,7 +177,7 @@ class V extends(r = s.yh) {
       i = E[t];
     if (null != i)
       for (let t of i) {
-        let n = m[t];
+        let n = g[t];
         if (null != n && n.isValid(e, f.Z, r)) return !0
       }
     if (I.has(n)) return !1;
@@ -218,9 +218,9 @@ class V extends(r = s.yh) {
 h(V, "displayName", "EntitlementStore");
 let F = new V(l.Z, {
   ENTITLEMENT_FETCH_APPLICATION_START: P,
-  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: w,
+  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: D,
   ENTITLEMENT_FETCH_APPLICATION_FAIL: L,
-  ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: D,
+  ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: w,
   SKU_PURCHASE_SUCCESS: j,
   VIRTUAL_CURRENCY_REDEEM_SUCCESS: j,
   LIBRARY_FETCH_SUCCESS: U,

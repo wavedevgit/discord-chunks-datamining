@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(481060),
   p = n(80932),
   h = n(351773),
-  m = n(209613),
-  g = n(313201),
+  g = n(209613),
+  m = n(313201),
   E = n(633302),
   v = n(176354),
   b = n(624138),
@@ -82,8 +82,8 @@ function R(e, t) {
   return i
 }
 let P = 20,
-  w = 125,
-  D = (0, g.hQ)(),
+  D = 125,
+  w = (0, m.hQ)(),
   L = d.Z.convert.fromCodePoint("1f44f"),
   x = (0, b.Mg)(f.Z.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL),
   M = (0, b.Mg)(f.Z.EMOJI_PICKER_CONSTANTS_DIVERSITY_EMOJI_SIZE);
@@ -138,13 +138,13 @@ let j = e => {
       selectedSurrogate: n,
       onClick: o,
       hasTabWrapper: s
-    } = e, d = (0, m.Z)("diversity"), f = (0, _.q_F)({
+    } = e, d = (0, g.Z)("diversity"), f = (0, _.q_F)({
       height: (M + 2 * x) * (E.gw.length + 1),
       from: {
         height: M
       },
       config: {
-        duration: w
+        duration: D
       }
     });
     i.useEffect(() => {
@@ -186,9 +186,9 @@ let j = e => {
       hasTabWrapper: a
     } = e, s = v.ZP.getURL(L + n), [l, c] = i.useState(!1), u = (0, h.Z)(null, () => c(!1)), d = i.useRef(null), f = () => {
       c(!0)
-    }, m = e => {
-      e.keyCode === y.yXg.ESCAPE && (e.stopPropagation(), c(!1), null != d.current && d.current.focus())
     }, g = e => {
+      e.keyCode === y.yXg.ESCAPE && (e.stopPropagation(), c(!1), null != d.current && d.current.focus())
+    }, m = e => {
       var n;
       (0, p.t0)(e), c(!1), null === (n = t.current) || void 0 === n || n.focus()
     };
@@ -202,7 +202,7 @@ let j = e => {
         "aria-label": O.NW.string(O.t.pAVHxc),
         "aria-haspopup": !0,
         "aria-expanded": l,
-        "aria-controls": D,
+        "aria-controls": w,
         tabIndex: l ? -1 : 0,
         children: (0, r.jsx)("div", {
           className: S.diversityEmojiItemImage,
@@ -211,12 +211,12 @@ let j = e => {
           }
         })
       }), l ? (0, r.jsx)("div", {
-        onKeyDown: m,
+        onKeyDown: g,
         children: (0, r.jsx)(U, {
-          id: D,
+          id: w,
           hasTabWrapper: a,
           selectedSurrogate: n,
-          onClick: g
+          onClick: m
         })
       }) : null]
     })

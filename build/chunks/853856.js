@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r, i = n(442837),
   o = n(524437),
@@ -74,4 +74,4 @@ class h extends(r = i.ZP.Store) {
   }
 }
 u(h, "displayName", "FavoriteStore");
-let m = new h(a.Z, {})
+let g = new h(a.Z, {})

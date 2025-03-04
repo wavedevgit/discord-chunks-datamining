@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => D
+  Z: () => w
 });
 var r, i = n(442837),
   o = n(570140),
@@ -23,8 +23,8 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let h = Date.now(),
-  m = !1,
   g = !1,
+  m = !1,
   E = !1,
   v = !1,
   b = !1;
@@ -34,21 +34,21 @@ function y() {
 }
 
 function O() {
-  Date.now() - h > Math.min(l.CM.getSetting() * c.Z.Millis.SECOND, f.OSm) || y() ? g || o.Z.dispatch({
+  Date.now() - h > Math.min(l.CM.getSetting() * c.Z.Millis.SECOND, f.OSm) || y() ? m || o.Z.dispatch({
     type: "AFK",
     afk: !0
-  }) : g && o.Z.dispatch({
+  }) : m && o.Z.dispatch({
     type: "AFK",
     afk: !1
   })
 }
 
 function S() {
-  Date.now() - h > f.OSm || y() ? m || o.Z.dispatch({
+  Date.now() - h > f.OSm || y() ? g || o.Z.dispatch({
     type: "IDLE",
     idle: !0,
     idleSince: h
-  }) : m && o.Z.dispatch({
+  }) : g && o.Z.dispatch({
     type: "IDLE",
     idle: !1
   })
@@ -70,11 +70,11 @@ function T() {
 }
 
 function N(e) {
-  m = e.idle
+  g = e.idle
 }
 
 function A(e) {
-  g = e.afk
+  m = e.afk
 }
 
 function C(e) {
@@ -111,19 +111,19 @@ __OVERLAY__ || (u.isPlatformEmbedded && (null === s.Z || void 0 === s.Z ? void 0
 }), s.Z.remotePowerMonitor.on("unlock-screen", () => {
   v = !1, P({})
 })) : setInterval(I, .25 * f.OSm));
-class w extends(r = i.ZP.Store) {
+class D extends(r = i.ZP.Store) {
   isIdle() {
-    return m
-  }
-  isAFK() {
     return g
   }
+  isAFK() {
+    return m
+  }
   getIdleSince() {
-    return m ? h : null
+    return g ? h : null
   }
 }
-p(w, "displayName", "IdleStore");
-let D = new w(o.Z, {
+p(D, "displayName", "IdleStore");
+let w = new D(o.Z, {
   IDLE: N,
   AFK: A,
   SPEAKING: C,

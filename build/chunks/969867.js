@@ -1,34 +1,34 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => b
+  Z: () => v
 });
 var r = t(200651),
   i = t(192379),
   o = t(120356),
   a = t.n(o),
   s = t(481060),
-  l = t(413335),
-  c = t(157353),
+  c = t(413335),
+  l = t(157353),
   d = t(279604),
   u = t(730621),
   x = t(388032),
   p = t(423839);
 
-function b(e) {
+function v(e) {
   let {
     className: n,
     guildId: t,
     powerup: o,
-    onError: b
+    onError: v
   } = e, {
-    onActivate: v,
+    onActivate: b,
     isLoading: j,
     error: m,
     onDeactivate: h
-  } = (0, d.Z)(t, o), _ = (0, c.Z)(t, o);
+  } = (0, d.Z)(t, o), _ = (0, l.Z)(t, o);
   return i.useEffect(() => {
-    null == b || b(m)
-  }, [m, b]), (0, r.jsxs)("div", {
+    null == v || v(m)
+  }, [m, v]), (0, r.jsxs)("div", {
     className: a()(p.container, n),
     children: [_ && (0, r.jsx)(s.ua7, {
       text: x.NW.string(u.Z.TZsu1d),
@@ -57,7 +57,7 @@ function b(e) {
           "aria-label": x.NW.string(u.Z.TZsu1d),
           grow: !1,
           onClick: h,
-          children: (0, r.jsx)(l.Z, {})
+          children: (0, r.jsx)(c.Z, {})
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(t)) : (function(e, n) {
           var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -72,7 +72,7 @@ function b(e) {
     }), (0, r.jsx)(s.zxk, {
       className: p.primaryButton,
       grow: !0,
-      onClick: _ ? () => {} : v,
+      onClick: _ ? () => {} : b,
       submitting: !_ && j,
       children: _ ? x.NW.string(u.Z["g5Ds6+"]) : x.NW.string(u.Z.gSxlHR)
     })]

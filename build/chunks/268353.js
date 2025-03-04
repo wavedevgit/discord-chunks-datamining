@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -64,7 +64,7 @@ function h(e) {
     iconComponent: a
   }, n))
 }
-let m = i.ZP.connectStores([s.Z, a.Z], e => {
+let g = i.ZP.connectStores([s.Z, a.Z], e => {
   let {
     node: t,
     guestWindow: n

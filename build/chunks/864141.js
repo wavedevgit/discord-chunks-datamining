@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => w
+  Z: () => D
 });
 var r = n(200651);
 n(192379);
@@ -17,8 +17,8 @@ var i = n(120356),
   _ = n(359110),
   p = n(769654),
   h = n(922482),
-  m = n(430824),
-  g = n(323038),
+  g = n(430824),
+  m = n(323038),
   E = n(960870),
   v = n(139793),
   b = n(652853),
@@ -33,16 +33,16 @@ var i = n(120356),
   R = n(388032),
   P = n(203396);
 
-function w(e) {
+function D(e) {
   let {
     user: t,
     voiceChannel: n,
     className: i,
-    onClose: w
+    onClose: D
   } = e, {
-    profileType: D
+    profileType: w
   } = (0, b.z)(), L = {
-    [P.fullSize]: D === C.y0.FULL_SIZE
+    [P.fullSize]: w === C.y0.FULL_SIZE
   }, {
     analyticsLocations: x
   } = (0, d.ZP)(u.Z.USER_PROFILE_VOICE_ACTIVITY_CARD), M = (0, E.Z)({
@@ -56,16 +56,16 @@ function w(e) {
   }), k = (0, v.Z)({
     userId: t.id,
     onAction: M
-  }), j = (0, s.e7)([m.Z], () => m.Z.getGuild(n.guild_id)), U = (0, g.Z)(n), G = (0, f.ZP)(n), B = () => n.isDM() || n.isGroupDM() ? R.NW.string(R.t["9FaEzs"]) : n.isGuildStageVoice() ? R.NW.string(R.t.QygGCA) : R.NW.string(R.t.msxteH), V = () => {
+  }), j = (0, s.e7)([g.Z], () => g.Z.getGuild(n.guild_id)), U = (0, m.Z)(n), G = (0, f.ZP)(n), B = () => n.isDM() || n.isGroupDM() ? R.NW.string(R.t["9FaEzs"]) : n.isGuildStageVoice() ? R.NW.string(R.t.QygGCA) : R.NW.string(R.t.msxteH), V = () => {
     let e = e => {
         e.stopPropagation(), null == M || M({
           action: "OPEN_VOICE_CHANNEL"
-        }), n.isGuildStageVoice() ? (0, h.Cq)(n) : (c.default.selectVoiceChannel(n.id), (0, _.Kh)(n.id)), null == w || w()
+        }), n.isGuildStageVoice() ? (0, h.Cq)(n) : (c.default.selectVoiceChannel(n.id), (0, _.Kh)(n.id)), null == D || D()
       },
       t = e => {
         e.stopPropagation(), M({
           action: "OPEN_VOICE_GUILD"
-        }), (0, p.X)(n.guild_id), null == w || w()
+        }), (0, p.X)(n.guild_id), null == D || D()
       };
     return (0, r.jsx)("div", {
       className: P.details,
@@ -98,7 +98,7 @@ function w(e) {
     children: (0, r.jsx)(N.Z, {
       channel: n,
       onAction: M,
-      onClose: w
+      onClose: D
     })
   });
   return (0, r.jsx)(d.Gt, {
@@ -107,13 +107,13 @@ function w(e) {
       ref: k,
       className: o()(P.card, i),
       onAction: M,
-      onClose: w,
+      onClose: D,
       children: [(0, r.jsx)(O.Z, {
         text: B(),
         contextMenu: (0, r.jsx)(A.Z, {
           display: "voice",
           user: t,
-          onClose: w
+          onClose: D
         })
       }), (0, r.jsx)("div", {
         className: P.body,
@@ -122,9 +122,9 @@ function w(e) {
           children: [(0, r.jsx)(I.Z, {
             users: U,
             channel: n
-          }), V(), D === C.y0.FULL_SIZE && F()]
+          }), V(), w === C.y0.FULL_SIZE && F()]
         })
-      }), D !== C.y0.FULL_SIZE && F()]
+      }), w !== C.y0.FULL_SIZE && F()]
     })
   })
 }

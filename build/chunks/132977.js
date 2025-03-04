@@ -48,13 +48,13 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -90,8 +90,8 @@ class O extends(r = o.PureComponent) {
         shineSize: n,
         shinePaused: r
       } = e,
-      o = g(e, ["className", "shineSize", "shinePaused"]);
-    return (0, i.jsx)(l.Z.div, m(p({}, o), {
+      o = m(e, ["className", "shineSize", "shinePaused"]);
+    return (0, i.jsx)(l.Z.div, g(p({}, o), {
       className: s()(f.shineContainer, t, {
         [f.shinePaused]: r
       }),
@@ -120,11 +120,11 @@ let S = e => {
     shinePaused: _,
     buttonShineClassName: h,
     onlyShineOnHover: E
-  } = e, v = g(e, ["children", "className", "disabled", "submitting", "pauseAnimation", "shineSize", "shinePaused", "buttonShineClassName", "onlyShineOnHover"]);
+  } = e, v = m(e, ["children", "className", "disabled", "submitting", "pauseAnimation", "shineSize", "shinePaused", "buttonShineClassName", "onlyShineOnHover"]);
   let b = o.createRef(),
     y = (0, u.Z)(b),
     S = !r && !a && !0 !== l && (!E || y);
-  return (0, i.jsxs)(c.zxk, m(p({
+  return (0, i.jsxs)(c.zxk, g(p({
     buttonRef: b
   }, v), {
     className: s()(f.shinyButton, n),

@@ -25,11 +25,11 @@ let f = "League of Legends",
   p = !1,
   h = !1;
 
-function m(e) {
+function g(e) {
   return e.some(e => e.name === f)
 }
 
-function g() {
+function m() {
   let e = o.Z.getAccount(null, u.ABu.RIOT_GAMES),
     t = o.Z.getAccount(null, u.ABu.LEAGUE_OF_LEGENDS);
   return null == e && null == t ? "missing_connections" : null == e ? "missing_riot_connection" : null == t ? "missing_league_of_legends_connection" : {
@@ -86,8 +86,8 @@ class y extends i.Z {
     let {
       removed: t
     } = e;
-    if (v() && m(t)) {
-      let e = g();
+    if (v() && g(t)) {
+      let e = m();
       if ("string" == typeof e) {
         b(e);
         return
@@ -99,7 +99,7 @@ class y extends i.Z {
     }
   }
   handleDependantStoreChanges() {
-    let e = g(),
+    let e = m(),
       t = "string" != typeof e,
       n = v() && t;
     _.isStarted() && !n ? _.stop() : !_.isStarted() && n && E({

@@ -39,6 +39,6 @@ function l(e) {
       type: "text",
       text: f
     } : n[0],
-    m = o.Z[t.type](h, t, c, l, d);
-  return m.success || null != m.error || (m.error = (0, a.al)(t)), m
+    g = o.Z[t.type](h, t, c, l, d);
+  return g.success || null != g.error || (g.error = (0, a.al)(t)), g
 }

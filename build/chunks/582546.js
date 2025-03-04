@@ -22,21 +22,21 @@ function h(e) {
   let {
     user: n,
     entry: h,
-    display: m,
-    onAction: g,
+    display: g,
+    onAction: m,
     onClose: E
   } = e, v = (0, i.e7)([d.default], () => {
     var e;
     return (null === (e = d.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === n.id
   }), b = (0, i.e7)([u.Z], () => u.Z.hasConnectedAccount());
-  if ("recent" !== m || !(0, c.AZ)(h)) return null;
+  if ("recent" !== g || !(0, c.AZ)(h)) return null;
   if (!b) return (0, r.jsx)(o.sNh, {
     id: "connect-spotify",
     label: p.NW.formatToPlainString(p.t.XWSHTU, {
       platform: _.ai
     }),
     action: () => {
-      null == g || g({
+      null == m || m({
         action: "PRESS_CONNECT_SPOTIFY_MENU_ITEM"
       }), a.Z.open(f.oAB.CONNECTIONS), null == E || E()
     }
@@ -47,7 +47,7 @@ function h(e) {
     id: "play-on-spotify",
     label: p.NW.string(p.t.rRffNz),
     action: () => {
-      null == g || g({
+      null == m || m({
         action: "PRESS_PLAY_ON_SPOTIFY_MENU_ITEM"
       }), (0, l.o)(_.Hw.TRACK, y.external_id)
     }

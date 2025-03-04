@@ -5,9 +5,9 @@ n.d(t, {
   SN: () => E,
   Zu: () => h,
   gA: () => p,
-  qc: () => m,
+  qc: () => g,
   x8: () => v,
-  zI: () => g
+  zI: () => m
 }), n(411104);
 var r = n(544891),
   i = n(343817),
@@ -94,14 +94,14 @@ let f = {
     } catch (e) {
       throw new i.Hx(e)
     }
-  }, m = async (e, t, n) => {
+  }, g = async (e, t, n) => {
     try {
       await r.tn.post({
         url: d.ANM.CONSUME_MESSAGE_CONFETTI_POTION,
         body: {
           channel_id: e,
           message_id: t,
-          emoji_name: g(n)
+          emoji_name: m(n)
         },
         rejectWithError: !1
       }), o.Z.dispatch({
@@ -113,7 +113,7 @@ let f = {
     }
     let a = (0, u.NV)(n);
     (0, c.I)(a, void 0, !0, s.LL.MessageSent)
-  }, g = e => null != e.id ? "".concat(e.name, ":").concat(e.id) : e.optionallyDiverseSequence, E = e => {
+  }, m = e => null != e.id ? "".concat(e.name, ":").concat(e.id) : e.optionallyDiverseSequence, E = e => {
     o.Z.dispatch({
       type: "CONSUMABLES_CLEAR_ERROR",
       skuId: e

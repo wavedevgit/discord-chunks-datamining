@@ -47,7 +47,7 @@ function h(e) {
   s.concat(i).forEach(e => l[e.id] = e), delete f[_(t, n)]
 }
 
-function m(e) {
+function g(e) {
   let {
     guildId: t,
     channelId: n
@@ -55,7 +55,7 @@ function m(e) {
   f[_(t, n)] = !0
 }
 
-function g(e) {
+function m(e) {
   let {
     guildId: t,
     webhook: n
@@ -87,8 +87,8 @@ class v extends(i = s.ZP.Store) {
 u(v, "displayName", "WebhooksStore");
 let b = new v(l.Z, {
   WEBHOOKS_UPDATE: h,
-  WEBHOOKS_FETCHING: m,
-  WEBHOOK_CREATE: g,
-  WEBHOOK_UPDATE: g,
+  WEBHOOKS_FETCHING: g,
+  WEBHOOK_CREATE: m,
+  WEBHOOK_UPDATE: m,
   WEBHOOK_DELETE: E
 })

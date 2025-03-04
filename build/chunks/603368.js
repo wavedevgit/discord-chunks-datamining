@@ -40,9 +40,9 @@ function h(e) {
   }
   return e
 }
-let m = 15;
+let g = 15;
 
-function g(e) {
+function m(e) {
   var t;
   let n = o()(e);
   return null === (t = s()(_.ym).map(e => {
@@ -57,7 +57,7 @@ function g(e) {
     let {
       distance: t
     } = e;
-    return t < m
+    return t < g
   }).minBy(e => {
     let {
       distance: t
@@ -86,7 +86,7 @@ function b(e, t) {
   var n;
   let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : l.S3.Text;
   if (null == e) return;
-  let i = null !== (n = g(e)) && void 0 !== n ? n : e,
+  let i = null !== (n = m(e)) && void 0 !== n ? n : e,
     a = o()(i),
     s = o()(t),
     c = (0, f.k8)({

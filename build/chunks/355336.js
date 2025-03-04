@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $: () => m
+  $: () => g
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -68,7 +68,7 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   let n = new Map,
     o = new t(e => {
       e.forEach(e => {
@@ -83,8 +83,8 @@ function m(e, t) {
     var {
       children: f,
       className: h,
-      onResize: m,
-      contentClassName: g,
+      onResize: g,
+      contentClassName: m,
       onScroll: E,
       dir: v = "ltr",
       fade: b = !1,
@@ -104,7 +104,7 @@ function m(e, t) {
       isScrolling: () => null != I.current,
       getScrollerState: R
     }, (0, l.Ue)(C, R, P)), [C, R, P]);
-    let w = i.useCallback(e => {
+    let D = i.useCallback(e => {
       null == I.current ? A(!0) : clearTimeout(I.current), I.current = setTimeout(() => {
         I.current = null, A(!1)
       }, 200), null != E && E(e)
@@ -112,13 +112,13 @@ function m(e, t) {
     return i.useEffect(() => () => clearTimeout(I.current), []), (0, l.zn)({
       ref: C,
       key: "container",
-      onUpdate: m,
+      onUpdate: g,
       resizeObserver: o,
       listenerMap: n
     }), (0, l.zn)({
       ref: T,
       key: "content",
-      onUpdate: m,
+      onUpdate: g,
       resizeObserver: o,
       listenerMap: n
     }), (0, r.jsx)("div", _(d({
@@ -132,13 +132,13 @@ function m(e, t) {
       }),
       style: O,
       dir: v,
-      onScroll: w
+      onScroll: D
     }, S), {
       children: (0, r.jsx)(s.J, {
         containerRef: T,
         children: (0, r.jsxs)("div", {
           ref: T,
-          className: a()(g, c.content),
+          className: a()(m, c.content),
           children: [f, N && (0, r.jsx)("div", {
             className: c.pointerCover
           })]

@@ -17,8 +17,8 @@ var i = n(120356),
   _ = n(27693),
   p = n(74538),
   h = n(937615),
-  m = n(104494),
-  g = n(639119),
+  g = n(104494),
+  m = n(639119),
   E = n(108989),
   v = n(474936),
   b = n(388032),
@@ -46,7 +46,7 @@ let S = e => {
     let {
       isTier0: t,
       discountAmount: n
-    } = e, i = (0, g.N)(), a = null != i && i.trial_id === v.a7, l = b.NW.string(b.t.IBYG5e);
+    } = e, i = (0, m.N)(), a = null != i && i.trial_id === v.a7, l = b.NW.string(b.t.IBYG5e);
     return void 0 !== n ? l = b.NW.formatToPlainString(b.t.iiLbvr, {
       percent: n
     }) : a && (l = b.NW.string(b.t.gtNqJS)), (0, r.jsx)("div", {
@@ -67,7 +67,7 @@ let S = e => {
       hideCloseButton: i = !1,
       hideCloseOnFullScreen: p,
       shouldShowPrice: h,
-      plan: g,
+      plan: m,
       renderAnimation: b,
       onClose: I,
       isGift: T,
@@ -76,18 +76,18 @@ let S = e => {
       className: C,
       showTrialBadge: R = !1,
       showDiscountBadge: P = !1
-    } = e, w = N === v.p9.TIER_2;
+    } = e, D = N === v.p9.TIER_2;
     n = N === v.p9.TIER_0 ? d.Z : N === v.p9.TIER_1 ? f.Z : u.Z;
-    let D = (0, a.e7)([l.Z], () => l.Z.useReducedMotion),
-      L = (0, m.Ng)(),
+    let w = (0, a.e7)([l.Z], () => l.Z.useReducedMotion),
+      L = (0, g.Ng)(),
       x = null == L ? void 0 : null === (t = L.discount) || void 0 === t ? void 0 : t.amount;
     return (0, r.jsxs)("div", {
       "aria-hidden": !0,
       className: o()({
-        [y.headerBackground]: !w,
-        [y.tier2HeaderBackground]: w
+        [y.headerBackground]: !D,
+        [y.tier2HeaderBackground]: D
       }, C),
-      children: [D || A !== v.nL.WINTER ? null : (0, r.jsx)(E.Z, {
+      children: [w || A !== v.nL.WINTER ? null : (0, r.jsx)(E.Z, {
         className: y.snow,
         wind: 5
       }), (R || P) && (0, r.jsx)(_.Z, {
@@ -99,7 +99,7 @@ let S = e => {
         children: [(0, r.jsxs)("div", {
           children: [(0, r.jsx)(n, {
             className: o()(y.headerIcon, {
-              [y.nonTier2]: !w
+              [y.nonTier2]: !D
             })
           }), (R || P) && (0, r.jsx)(S, {
             isTier0: N === v.p9.TIER_0,
@@ -110,9 +110,9 @@ let S = e => {
           onClick: I,
           className: y.closeButton
         })]
-      }), h && null != g ? (0, r.jsx)("div", {
+      }), h && null != m ? (0, r.jsx)("div", {
         className: y.price,
-        children: O(g, T)
+        children: O(m, T)
       }) : null]
     })
   }

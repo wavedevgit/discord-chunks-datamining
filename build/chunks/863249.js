@@ -18,8 +18,8 @@ var r = n(544891),
   _ = n(701190),
   p = n(594174),
   h = n(626135),
-  m = n(246364),
-  g = n(981631),
+  g = n(246364),
+  m = n(981631),
   E = n(388032);
 
 function v(e, t, n) {
@@ -75,7 +75,7 @@ let T = {
       a = !f.ZP.isMember(e, null == o ? void 0 : o.id);
     try {
       let t = await r.tn.get({
-        url: g.ANM.GUILD_MEMBER_VERIFICATION(e),
+        url: m.ANM.GUILD_MEMBER_VERIFICATION(e),
         query: {
           with_guild: a,
           invite_code: null != n ? (0, d.jX)(n) : void 0
@@ -109,7 +109,7 @@ let T = {
     let {
       body: o
     } = await r.tn.patch({
-      url: g.ANM.GUILD_MEMBER_VERIFICATION(e),
+      url: m.ANM.GUILD_MEMBER_VERIFICATION(e),
       body: {
         form_fields: t,
         enabled: n
@@ -141,7 +141,7 @@ let T = {
     let {
       body: n
     } = await r.tn.patch({
-      url: g.ANM.GUILD_MEMBER_VERIFICATION(e),
+      url: m.ANM.GUILD_MEMBER_VERIFICATION(e),
       body: {
         description: t
       },
@@ -170,7 +170,7 @@ let T = {
   },
   enableVerificationForm: async (e, t) => {
     await r.tn.patch({
-      url: g.ANM.GUILD_MEMBER_VERIFICATION(e),
+      url: m.ANM.GUILD_MEMBER_VERIFICATION(e),
       body: {
         enabled: t
       },
@@ -192,7 +192,7 @@ let T = {
       let {
         body: o
       } = await r.tn.put({
-        url: g.ANM.GUILD_MEMBER_REQUEST_TO_JOIN(e),
+        url: m.ANM.GUILD_MEMBER_REQUEST_TO_JOIN(e),
         body: {
           version: t.version,
           form_fields: t.formFields
@@ -203,7 +203,7 @@ let T = {
         type: "USER_GUILD_JOIN_REQUEST_UPDATE",
         guildId: e,
         request: o
-      }), (0, m.YG)(t.formFields) && n !== S && setTimeout(() => I(e), n), o
+      }), (0, g.YG)(t.formFields) && n !== S && setTimeout(() => I(e), n), o
     } catch (t) {
       let {
         status: e
@@ -243,7 +243,7 @@ let T = {
       reasonOther: o,
       responses: a
     } = e;
-    h.default.track(g.rMx.GUILD_MEMBER_APPLICATION_REPORTED, {
+    h.default.track(m.rMx.GUILD_MEMBER_APPLICATION_REPORTED, {
       application_id: n.joinRequestId,
       applicant_id: r.id,
       guild_id: t.id,

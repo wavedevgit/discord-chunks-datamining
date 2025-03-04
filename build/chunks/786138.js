@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(358085),
   p = n(418469),
   h = n(776031),
-  m = n(981631),
-  g = n(231338),
+  g = n(981631),
+  m = n(231338),
   E = n(65154),
   v = n(388032);
 
@@ -28,7 +28,7 @@ function b(e) {
     showReportOption: b = !1,
     disableChangeWindows: y = !1,
     simplified: O = !1,
-    appContext: S = m.IlC.APP
+    appContext: S = g.IlC.APP
   } = e, {
     desktopSourceId: I
   } = (0, o.cj)([f.Z], () => {
@@ -39,10 +39,10 @@ function b(e) {
     return {
       desktopSourceId: null == t ? void 0 : t.id
     }
-  }), T = (0, o.e7)([d.Z], () => d.Z.getState().soundshareEnabled), N = f.Z.supports(E.AN.DESKTOP_CAPTURE_APPLICATIONS), A = (0, o.e7)([f.Z], () => f.Z.supports(E.AN.SOUNDSHARE)), C = (0, o.e7)([f.Z], () => f.Z.supportsScreenSoundshare()), R = (0, h.Z)(t, S), P = (0, p.Z)(t, S, g.Vq), w = null != I && A && (!I.startsWith("screen") || C), D = u.Z.useExperiment({
+  }), T = (0, o.e7)([d.Z], () => d.Z.getState().soundshareEnabled), N = f.Z.supports(E.AN.DESKTOP_CAPTURE_APPLICATIONS), A = (0, o.e7)([f.Z], () => f.Z.supports(E.AN.SOUNDSHARE)), C = (0, o.e7)([f.Z], () => f.Z.supportsScreenSoundshare()), R = (0, h.Z)(t, S), P = (0, p.Z)(t, S, m.Vq), D = null != I && A && (!I.startsWith("screen") || C), w = u.Z.useExperiment({
     location: "ManageStreamsMenu"
   }, {
-    disable: !w,
+    disable: !D,
     autoTrackExposure: !0
   }).enabled, L = i.useCallback(() => {
     (null == I ? void 0 : I.startsWith("prepicked:")) ? f.Z.getMediaEngine().eachConnection(e => {
@@ -82,7 +82,7 @@ function b(e) {
       label: v.NW.string(v.t.ytAD9f),
       children: R
     }) : null,
-    k = D ? (0, r.jsx)(a.S89, {
+    k = w ? (0, r.jsx)(a.S89, {
       id: "stream-settings-audio-enable",
       label: O ? v.NW.string(v.t.af2Tw8) : v.NW.string(v.t.ZJEHt7),
       checked: T,

@@ -17,7 +17,7 @@ var r = n(147913),
   p = n(176505),
   h = n(372897);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,31 +25,31 @@ function m(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let g = null,
+let m = null,
   E = null;
 class v extends r.Z {
   constructor(...e) {
-    super(...e), m(this, "actions", {
+    super(...e), g(this, "actions", {
       GUILD_DELETE: e => this.handleGuildDelete(e),
       CHANNEL_SELECT: e => this.handleChannelSelect(e),
       POST_CONNECTION_OPEN: e => this.handleConnectionOpen(e)
-    }), m(this, "handleConnectionOpen", e => {
+    }), g(this, "handleConnectionOpen", e => {
       var t;
-      null != (g = null !== (t = null != g ? g : s.Z.getGuildId()) && void 0 !== t ? t : null) && this._openOnboardingIfIncomplete(g)
-    }), m(this, "handleChannelSelect", e => {
+      null != (m = null !== (t = null != m ? m : s.Z.getGuildId()) && void 0 !== t ? t : null) && this._openOnboardingIfIncomplete(m)
+    }), g(this, "handleChannelSelect", e => {
       let {
         guildId: t,
         channelId: n
       } = e;
-      if (g === t && E === n || (g = null != t ? t : null, E = null != n ? n : null, null == g || null == E)) return;
+      if (m === t && E === n || (m = null != t ? t : null, E = null != n ? n : null, null == m || null == E)) return;
       let r = a.Z.getGuild(t);
-      null != r && r.hasFeature(_.oNc.COMMUNITY) && d.Z.shouldFetchPrompts(g, 8 * l.Z.Millis.HOUR) && (0, u.rj)(g), this._openOnboardingIfIncomplete(g, n)
-    }), m(this, "handleGuildDelete", e => {
+      null != r && r.hasFeature(_.oNc.COMMUNITY) && d.Z.shouldFetchPrompts(m, 8 * l.Z.Millis.HOUR) && (0, u.rj)(m), this._openOnboardingIfIncomplete(m, n)
+    }), g(this, "handleGuildDelete", e => {
       let {
         guild: t
       } = e;
       (0, f.EI)(t.id)
-    }), m(this, "_openOnboardingIfIncomplete", async (e, t) => {
+    }), g(this, "_openOnboardingIfIncomplete", async (e, t) => {
       var n, r;
       if ((0, f.hz)(e)) {
         (0, i.uL)(_.Z5c.CHANNEL(e, p.oC.GUILD_ONBOARDING));

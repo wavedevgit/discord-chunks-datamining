@@ -2,11 +2,11 @@
 "use strict";
 n.d(t, {
   Aq: () => v,
-  GB: () => m,
+  GB: () => g,
   J5: () => _,
   Su: () => p,
   UI: () => c,
-  Wu: () => g,
+  Wu: () => m,
   ZP: () => b,
   bp: () => E,
   g0: () => h
@@ -57,12 +57,12 @@ function h(e) {
   return d.get(e)
 }
 
-function m() {
+function g() {
   let e = p();
   return null != e ? e.appContext : null
 }
 
-function g(e) {
+function m(e) {
   let {
     appContext: t,
     renderWindow: n,

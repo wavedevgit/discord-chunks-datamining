@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -73,7 +73,7 @@ let h = {
     DOWN: l.directionDown,
     LEFT: l.directionLeft
   },
-  m = e => {
+  g = e => {
     var {
       direction: t = h.DOWN,
       width: n = 24,
@@ -81,13 +81,13 @@ let h = {
       color: c = "currentColor",
       transition: d = l.transition,
       className: p,
-      foreground: m,
-      expanded: g
+      foreground: g,
+      expanded: m
     } = e, E = _(e, ["direction", "width", "height", "color", "transition", "className", "foreground", "expanded"]);
     let {
       enabled: v
     } = (0, a.bWb)(), b = t;
-    if (!0 === g ? b = h.DOWN : !1 === g && (b = h.RIGHT), v) {
+    if (!0 === m ? b = h.DOWN : !1 === m && (b = h.RIGHT), v) {
       let e = {
         [h.UP]: a.u04,
         [h.DOWN]: a.CJ0,
@@ -100,7 +100,7 @@ let h = {
         width: n,
         height: i,
         color: null != c ? c : "currentColor",
-        colorClass: m
+        colorClass: g
       }))
     }
     return (0, r.jsx)("svg", f(u({
@@ -110,7 +110,7 @@ let h = {
       viewBox: "0 0 24 24"
     }, (0, s.Z)(E)), {
       children: (0, r.jsx)("path", {
-        className: m,
+        className: g,
         fill: "none",
         stroke: c,
         strokeWidth: "2",
@@ -121,5 +121,5 @@ let h = {
       })
     }))
   };
-m.Directions = h;
-let g = m
+g.Directions = h;
+let m = g

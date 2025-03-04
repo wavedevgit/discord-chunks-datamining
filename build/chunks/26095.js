@@ -51,24 +51,24 @@ var u = Object.defineProperty,
   p = Object.getPrototypeOf,
   h = Object.prototype;
 
-function m(e, t, n) {
+function g(e, t, n) {
   if ("string" != typeof t) {
     if (h) {
       var r = p(t);
-      r && r !== h && m(e, r, n)
+      r && r !== h && g(e, r, n)
     }
     var i = d(t);
     f && (i = i.concat(f(t)));
     for (var a = c(e), s = c(t), l = 0; l < i.length; ++l) {
-      var g = i[l];
-      if (!o[g] && !(n && n[g]) && !(s && s[g]) && !(a && a[g])) {
-        var E = _(t, g);
+      var m = i[l];
+      if (!o[m] && !(n && n[m]) && !(s && s[m]) && !(a && a[m])) {
+        var E = _(t, m);
         try {
-          u(e, g, E)
+          u(e, m, E)
         } catch (e) {}
       }
     }
   }
   return e
 }
-e.exports = m
+e.exports = g

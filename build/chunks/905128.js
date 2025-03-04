@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
-});
+  Z: () => m
+}), n(47120);
 var r = n(442837),
   i = n(570140);
 
@@ -44,50 +44,81 @@ function l(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let c = {};
+let c = new Map;
 
 function u(e) {
-  var t;
-  return null !== (t = c[e]) && void 0 !== t ? t : {
-    powerups: {},
-    unlocked: {},
-    appliedBoosts: 0
-  }
+  return e.values().reduce((e, t) => {
+    var n, r, i;
+    return e + (null !== (i = null === (r = t.sku) || void 0 === r ? void 0 : null === (n = r.powerup_metadata) || void 0 === n ? void 0 : n.boost_price) && void 0 !== i ? i : 0)
+  }, 0)
 }
 
 function d(e) {
-  let {
-    guildId: t,
-    powerups: n
-  } = e, r = u(t);
-  c = l(a({}, c), {
-    [t]: l(a({}, r), {
-      powerups: n
-    })
-  })
+  return c.has(e) || c.set(e, {
+    powerups: new Map,
+    unlocked: new Map,
+    appliedBoosts: 0
+  }), c.get(e)
 }
 
 function f(e) {
   let {
     guildId: t,
-    unlocked: n
-  } = e, r = u(t), i = Object.values(n).reduce((e, t) => {
-    var n, r, i;
-    return e + (null !== (i = null === (r = t.sku) || void 0 === r ? void 0 : null === (n = r.powerup_metadata) || void 0 === n ? void 0 : n.boost_price) && void 0 !== i ? i : 0)
-  }, 0);
-  c = l(a({}, c), {
-    [t]: l(a({}, r), {
-      unlocked: n,
-      appliedBoosts: i
-    })
-  })
+    powerups: n
+  } = e, r = d(t), i = new Map(c);
+  i.set(t, l(a({}, r), {
+    powerups: n
+  })), c = i
 }
-class _ extends r.ZP.Store {
+
+function _(e) {
+  let {
+    guildId: t,
+    unlocked: n
+  } = e, r = d(t), i = u(n), o = new Map(c);
+  o.set(t, l(a({}, r), {
+    unlocked: n,
+    appliedBoosts: i
+  })), c = o
+}
+
+function p(e) {
+  let {
+    guildId: t,
+    entitlements: n
+  } = e, r = d(t);
+  n.forEach(e => {
+    r.unlocked.set(e.sku_id, e)
+  });
+  let i = u(r.unlocked),
+    o = new Map(c);
+  o.set(t, l(a({}, r), {
+    appliedBoosts: i
+  })), c = o
+}
+
+function h(e) {
+  let {
+    guildId: t,
+    entitlements: n
+  } = e, r = d(t);
+  n.forEach(e => {
+    r.unlocked.delete(e.sku_id)
+  });
+  let i = u(r.unlocked),
+    o = new Map(c);
+  o.set(t, l(a({}, r), {
+    appliedBoosts: i
+  })), c = o
+}
+class g extends r.ZP.Store {
   getStateForGuild(e) {
-    return c[e]
+    return c.get(e)
   }
 }
-let p = new _(i.Z, {
-  GUILD_POWERUP_CATALOG_FETCH_SUCCESS: d,
-  GUILD_UNLOCKED_POWERUPS_FETCH_SUCCESS: f
+let m = new g(i.Z, {
+  GUILD_POWERUP_CATALOG_FETCH_SUCCESS: f,
+  GUILD_UNLOCKED_POWERUPS_FETCH_SUCCESS: _,
+  GUILD_POWERUP_ENTITLEMENTS_CREATE: p,
+  GUILD_POWERUP_ENTITLEMENTS_DELETE: h
 })

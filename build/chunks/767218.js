@@ -8,8 +8,8 @@ t(192379);
 var o = t(793030),
   a = t(692547),
   s = t(413335),
-  l = t(730621),
-  c = t(388032),
+  c = t(730621),
+  l = t(388032),
   d = t(255976),
   u = ((r = {})[r.AVAILABLE = 0] = "AVAILABLE", r[r.SPENT = 1] = "SPENT", r[r.TOTAL = 2] = "TOTAL", r);
 
@@ -35,11 +35,11 @@ function x(e) {
       children: (() => {
         switch (t) {
           case 0:
-            return c.NW.string(l.Z.BdRXZG);
+            return l.NW.string(c.Z.BdRXZG);
           case 1:
-            return c.NW.string(l.Z.xvgIVF);
+            return l.NW.string(c.Z.xvgIVF);
           case 2:
-            return c.NW.string(l.Z["/F7Z29"])
+            return l.NW.string(c.Z["/F7Z29"])
         }
       })()
     })]

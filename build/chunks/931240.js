@@ -5,7 +5,7 @@ n.d(t, {
   LX: () => h,
   WJ: () => _,
   aH: () => E,
-  mf: () => m,
+  mf: () => g,
   nE: () => p,
   nr: () => b
 }), n(266796), n(47120);
@@ -76,14 +76,14 @@ function h() {
   })
 }
 
-function m(e, t) {
+function g(e, t) {
   i.Z.dispatch({
     type: "CLAN_SETTINGS_UPDATE",
     guildId: e,
     updates: t
   })
 }
-let g = e => {
+let m = e => {
   var t, n, r, i, o, a;
   return {
     tag: e.tag,
@@ -116,7 +116,7 @@ async function E(e) {
   i.Z.dispatch({
     type: "CLAN_SETTINGS_FETCH_SUCCESS",
     guildId: e,
-    settings: g(t.body)
+    settings: m(t.body)
   })
 }
 async function v(e, t) {

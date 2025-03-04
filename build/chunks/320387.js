@@ -38,14 +38,14 @@ var o = /^\s*class\b/,
   _ = "[object HTML document.all class]",
   p = "[object HTMLCollection]",
   h = "function" == typeof Symbol && !!Symbol.toStringTag,
-  m = !(0 in [, ]),
-  g = function() {
+  g = !(0 in [, ]),
+  m = function() {
     return !1
   };
 if ("object" == typeof document) {
   var E = document.all;
-  l.call(E) === l.call(document.all) && (g = function(e) {
-    if ((m || !e) && (void 0 === e || "object" == typeof e)) try {
+  l.call(E) === l.call(document.all) && (m = function(e) {
+    if ((g || !e) && (void 0 === e || "object" == typeof e)) try {
       var t = l.call(e);
       return (t === f || t === _ || t === p || t === c) && null == e("")
     } catch (e) {}
@@ -53,7 +53,7 @@ if ("object" == typeof document) {
   })
 }
 e.exports = i ? function(e) {
-  if (g(e)) return !0;
+  if (m(e)) return !0;
   if (!e || "function" != typeof e && "object" != typeof e) return !1;
   try {
     i(e, null, t)
@@ -62,7 +62,7 @@ e.exports = i ? function(e) {
   }
   return !a(e) && s(e)
 } : function(e) {
-  if (g(e)) return !0;
+  if (m(e)) return !0;
   if (!e || "function" != typeof e && "object" != typeof e) return !1;
   if (h) return s(e);
   if (a(e)) return !1;

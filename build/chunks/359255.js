@@ -20,23 +20,23 @@ let u = e => {
     className: o,
     minValue: u,
     maxValue: d
-  } = e, [f, _] = i.useState(t), p = c(f) || null != u && f <= u, h = c(f) || null != d && f >= d, m = e => {
+  } = e, [f, _] = i.useState(t), p = c(f) || null != u && f <= u, h = c(f) || null != d && f >= d, g = e => {
     n(c(e) ? null != u ? u : 0 : e), _(e)
-  }, g = e => {
-    e.stopPropagation(), !p && m(f - 1)
+  }, m = e => {
+    e.stopPropagation(), !p && g(f - 1)
   }, E = e => {
-    e.stopPropagation(), !h && m(f + 1)
+    e.stopPropagation(), !h && g(f + 1)
   }, v = e => {
-    if (c(e)) return m(e);
+    if (c(e)) return g(e);
     let t = parseInt(e);
-    return isNaN(t) ? void 0 : null != d && t >= d ? m(d) : null != u && t <= u ? m(u) : m(t)
+    return isNaN(t) ? void 0 : null != d && t >= d ? g(d) : null != u && t <= u ? g(u) : g(t)
   };
   return (0, r.jsx)(s.tEY, {
     within: !0,
     children: (0, r.jsxs)("div", {
       className: a()(l.actions, o),
       children: [(0, r.jsx)(s.P3F, {
-        onClick: g,
+        onClick: m,
         tabIndex: -1,
         className: a()(l.iconWrapper, l.__invalid_subtract, {
           [l.disabled]: p

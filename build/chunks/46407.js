@@ -110,14 +110,14 @@ function t(e) {
   h.contains = [i, a, e.inherit(e.APOS_STRING_MODE, {
     className: ""
   }), h, s, p, _, e.QUOTE_STRING_MODE, o, l, c, u, d, f];
-  let m = [i, a, h, s, p, _, e.QUOTE_STRING_MODE, o, l, c, u, d, f];
-  s.contains[1].contains = m, l.contains = m, d.contains[1].contains = m;
-  let g = ["-module", "-record", "-undef", "-export", "-ifdef", "-ifndef", "-author", "-copyright", "-doc", "-moduledoc", "-vsn", "-import", "-include", "-include_lib", "-compile", "-define", "-else", "-endif", "-file", "-behaviour", "-behavior", "-spec", "-on_load", "-nifs"],
+  let g = [i, a, h, s, p, _, e.QUOTE_STRING_MODE, o, l, c, u, d, f];
+  s.contains[1].contains = g, l.contains = g, d.contains[1].contains = g;
+  let m = ["-module", "-record", "-undef", "-export", "-ifdef", "-ifndef", "-author", "-copyright", "-doc", "-moduledoc", "-vsn", "-import", "-include", "-include_lib", "-compile", "-define", "-else", "-endif", "-file", "-behaviour", "-behavior", "-spec", "-on_load", "-nifs"],
     E = {
       className: "params",
       begin: "\\(",
       end: "\\)",
-      contains: m
+      contains: g
     };
   return {
     name: "Erlang",
@@ -136,7 +136,7 @@ function t(e) {
       starts: {
         end: ";|\\.",
         keywords: r,
-        contains: m
+        contains: g
       }
     }, i, {
       begin: "^-",
@@ -146,7 +146,7 @@ function t(e) {
       returnBegin: !0,
       keywords: {
         $pattern: "-" + e.IDENT_RE,
-        keyword: g.map(e => `${e}|1.5`).join(" ")
+        keyword: m.map(e => `${e}|1.5`).join(" ")
       },
       contains: [E, p, _, e.QUOTE_STRING_MODE]
     }, o, p, _, e.QUOTE_STRING_MODE, d, c, u, l, f, {

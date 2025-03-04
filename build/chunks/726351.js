@@ -24,11 +24,11 @@ function h(e) {
   }), t
 }
 
-function m(e) {
+function g(e) {
   return e && 1 === e.nodeType
 }
 
-function g(e, t, n) {
+function m(e, t, n) {
   var r = e[t];
   return null == r && void 0 !== n ? n : r
 }
@@ -48,17 +48,17 @@ e.exports = function(e) {
   }
   var E = e.reporter;
   E || (E = l(!1 === E));
-  var v = g(e, "batchProcessor", u({
+  var v = m(e, "batchProcessor", u({
       reporter: E
     })),
     b = {};
-  b.callOnAdd = !!g(e, "callOnAdd", !0), b.debug = !!g(e, "debug", !1);
+  b.callOnAdd = !!m(e, "callOnAdd", !0), b.debug = !!m(e, "debug", !1);
   var y = o(t),
     O = i({
       stateHandler: d
     }),
-    S = g(e, "strategy", "object"),
-    I = g(e, "important", !1),
+    S = m(e, "strategy", "object"),
+    I = m(e, "important", !1),
     T = {
       reporter: E,
       batchProcessor: v,
@@ -73,7 +73,7 @@ e.exports = function(e) {
 
   function A(e) {
     if (!e) return E.error("At least one element is required.");
-    if (m(e)) e = [e];
+    if (g(e)) e = [e];
     else {
       if (!p(e)) return E.error("Invalid arguments. Must be a DOM element or a collection of DOM elements.");
       e = h(e)
@@ -99,15 +99,15 @@ e.exports = function(e) {
       }
       if (o || (o = i, i = e, e = {}), !i) throw Error("At least one element required.");
       if (!o) throw Error("Listener required.");
-      if (m(i)) i = [i];
+      if (g(i)) i = [i];
       else {
         if (!p(i)) return E.error("Invalid arguments. Must be a DOM element or a collection of DOM elements.");
         i = h(i)
       }
       var l = 0,
-        c = g(e, "callOnAdd", b.callOnAdd),
-        u = g(e, "onReady", function() {}),
-        f = g(e, "debug", b.debug);
+        c = m(e, "callOnAdd", b.callOnAdd),
+        u = m(e, "onReady", function() {}),
+        f = m(e, "debug", b.debug);
       r(i, function(e) {
         d.getState(e) || (d.initState(e), t.set(e));
         var _ = t.get(e);

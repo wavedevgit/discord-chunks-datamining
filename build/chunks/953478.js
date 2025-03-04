@@ -8,14 +8,14 @@ var i = t(793030),
   o = t(442837),
   a = t(481060),
   s = t(678558),
-  l = t(413335),
-  c = t(690221),
+  c = t(413335),
+  l = t(690221),
   d = t(430824),
   u = t(763792),
   x = t(800869),
   p = t(767218),
-  b = t(309945),
-  v = t(981631),
+  v = t(309945),
+  b = t(981631),
   j = t(730621),
   m = t(388032),
   h = t(785947);
@@ -31,7 +31,7 @@ function _(e) {
       children: [(0, r.jsx)(i.xv, {
         variant: "eyebrow",
         children: m.NW.string(j.Z.hjvcLC)
-      }), (0, r.jsx)(c.Z, {
+      }), (0, r.jsx)(l.Z, {
         onClick: () => {},
         children: (0, r.jsx)(i.xv, {
           variant: "text-xs/semibold",
@@ -51,18 +51,18 @@ function _(e) {
         count: 5,
         type: p.b.TOTAL
       })]
-    }), (0, r.jsx)(x.Z, {}), (0, r.jsx)(b.Z, {
+    }), (0, r.jsx)(x.Z, {}), (0, r.jsx)(v.Z, {
       powerup: u.W["0"]
     }), (0, r.jsx)(s.Z, {
       className: h.boostButton,
       guild: t,
       analyticsLocation: {
-        page: v.ZY5.POWERUPS_OVERVIEW,
-        section: v.jXE.POWERUPS_OVERVIEW_SIDEABAR
+        page: b.ZY5.POWERUPS_OVERVIEW,
+        section: b.jXE.POWERUPS_OVERVIEW_SIDEABAR
       },
       color: a.Ttl.CUSTOM,
       size: a.PhG.LARGE,
-      icon: (0, r.jsx)(l.Z, {
+      icon: (0, r.jsx)(c.Z, {
         className: h.boostButtonIcon
       })
     })]

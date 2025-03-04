@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(944486),
   p = n(626135),
   h = n(981631),
-  m = n(388032),
-  g = n(256945);
+  g = n(388032),
+  m = n(256945);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -73,29 +73,29 @@ function y(e) {
     })
   }, [o, E]);
   let y = () => (0, r.jsxs)("div", {
-      className: a()(g.root, t),
+      className: a()(m.root, t),
       children: [(0, r.jsx)(l.SrA, {
         size: "md",
-        className: g.premium,
+        className: m.premium,
         color: d.JX.PREMIUM_TIER_2
       }), (0, r.jsx)(l.Text, {
-        className: g.text,
+        className: m.text,
         variant: "text-sm/normal",
-        children: m.NW.format(m.t.BNAIBQ, {
+        children: g.NW.format(g.t.BNAIBQ, {
           onLearnMore: b
         })
       })]
     }),
     O = () => (0, r.jsx)(l.P3F, {
-      className: g.iconOnly,
+      className: m.iconOnly,
       onClick: () => b(),
       children: (0, r.jsx)(l.ua7, {
-        text: m.NW.string(m.t["+eFIjY"]),
+        text: g.NW.string(g.t["+eFIjY"]),
         position: "top",
         children: e => (0, r.jsx)(l.SrA, v({
           size: "md",
           color: "currentColor",
-          className: g.premium
+          className: m.premium
         }, e))
       })
     });

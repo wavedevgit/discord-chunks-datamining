@@ -31,7 +31,7 @@ function h(e) {
   delete f[e]
 }
 
-function m(e) {
+function g(e) {
   let {
     id: t
   } = e;
@@ -39,7 +39,7 @@ function m(e) {
   f[t] = !0
 }
 
-function g(e) {
+function m(e) {
   let {
     id: t
   } = e;
@@ -117,8 +117,8 @@ d(S, "displayName", "CategoryCollapseStore"), d(S, "persistKey", "collapsedCateg
 let I = new S(o.Z, {
   CONNECTION_OPEN: E,
   USER_GUILD_SETTINGS_FULL_UPDATE: v,
-  CATEGORY_COLLAPSE: m,
-  CATEGORY_EXPAND: g,
+  CATEGORY_COLLAPSE: g,
+  CATEGORY_EXPAND: m,
   CATEGORY_COLLAPSE_ALL: y,
   CATEGORY_EXPAND_ALL: O,
   CHANNEL_DELETE: b

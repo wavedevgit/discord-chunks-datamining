@@ -51,7 +51,7 @@ let _ = new Map,
   p = new Map,
   h = new Map;
 
-function m(e) {
+function g(e) {
   if (!p.has(e)) {
     var t;
     p.set(e, {
@@ -68,7 +68,7 @@ function m(e) {
   return p.get(e)
 }
 
-function g() {
+function m() {
   return _.clear(), p.clear(), !0
 }
 
@@ -79,7 +79,7 @@ function E(e) {
     channelId: r,
     query: i,
     name: o
-  } = e, a = m(r);
+  } = e, a = g(r);
   if (a.optionNameToLastQuery.get(o) === i) return !1;
   a.optionNameToLastQuery.set(o, i);
   let s = null === (t = a.optionNameToAutocompleteQueries.get(o)) || void 0 === t ? void 0 : t.get(i);
@@ -113,7 +113,7 @@ function v(e) {
     error: !1,
     num_options: s.length
   }), h.delete(i);
-  let p = m(o.channelId);
+  let p = g(o.channelId);
   return null == p.optionNameToAutocompleteQueries.get(o.name) && p.optionNameToAutocompleteQueries.set(o.name, new Map), null === (t = p.optionNameToAutocompleteQueries.get(o.name)) || void 0 === t || t.set(o.query, s), p.optionNameToLastQuery.get(o.name) === o.query && (p.lastErrored = !1, p.optionNameToLastResults.set(o.name, s)), p.lastResponseNonce = i, !0
 }
 
@@ -130,7 +130,7 @@ function b(e) {
   return (0, a.yw)(l.rMx.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, {
     duration_ms: i,
     error: !0
-  }), h.delete(t), m(n.channelId).lastErrored = !0, !0
+  }), h.delete(t), g(n.channelId).lastErrored = !0, !0
 }
 
 function y(e) {
@@ -159,24 +159,24 @@ class I extends(r = i.ZP.Store) {
     this.waitFor(s.Z)
   }
   getLastErrored(e) {
-    return m(e).lastErrored
+    return g(e).lastErrored
   }
   getAutocompleteChoices(e, t, n) {
     var r;
-    return null === (r = m(e).optionNameToAutocompleteQueries.get(t)) || void 0 === r ? void 0 : r.get(n)
+    return null === (r = g(e).optionNameToAutocompleteQueries.get(t)) || void 0 === r ? void 0 : r.get(n)
   }
   getAutocompleteLastChoices(e, t) {
-    return m(e).optionNameToLastResults.get(t)
+    return g(e).optionNameToLastResults.get(t)
   }
   getLastResponseNonce(e) {
-    return m(e).lastResponseNonce
+    return g(e).lastResponseNonce
   }
 }
 c(I, "displayName", "ApplicationCommandAutocompleteStore");
 let T = new I(o.Z, {
-  CONNECTION_OPEN: g,
-  LOGOUT: g,
-  CHANNEL_SELECT: g,
+  CONNECTION_OPEN: m,
+  LOGOUT: m,
+  CHANNEL_SELECT: m,
   APPLICATION_COMMAND_AUTOCOMPLETE_REQUEST: E,
   APPLICATION_COMMAND_AUTOCOMPLETE_RESPONSE: v,
   INTERACTION_FAILURE: b,

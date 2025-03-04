@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(626135),
   p = n(74538),
   h = n(357355),
-  m = n(639119),
-  g = n(197115),
+  g = n(639119),
+  m = n(197115),
   E = n(302945),
   v = n(474936),
   b = n(981631),
@@ -40,13 +40,13 @@ function I(e) {
     onClose: A,
     onDisplay: C,
     onLearnMore: R
-  } = e, P = (0, s.e7)([h.Z], () => h.Z.affinities), w = (0, s.e7)([h.Z], () => h.Z.hasFetched);
+  } = e, P = (0, s.e7)([h.Z], () => h.Z.affinities), D = (0, s.e7)([h.Z], () => h.Z.hasFetched);
   i.useEffect(() => {
-    !w && I && c.MH()
-  }, [w, I]), i.useEffect(() => {
+    !D && I && c.MH()
+  }, [D, I]), i.useEffect(() => {
     _.default.track(b.rMx.PREMIUM_UPSELL_VIEWED, N), null == C || C()
   }, [C, N]);
-  let D = P.length > 1 && I,
+  let w = P.length > 1 && I,
     L = () => 2 === t ? O.hasTabParentContainer : 1 === t ? O.hasParentContainer : O.noParentContainer,
     x = () => {
       _.default.track(b.rMx.PREMIUM_PROMOTION_OPENED, {
@@ -54,7 +54,7 @@ function I(e) {
         location_object: b.qAy.NAVIGATION_LINK
       }), null == R || R(), (0, d.Z)(), A(), (0, u.xf)(), (0, f.uL)(b.Z5c.APPLICATION_STORE)
     },
-    M = (0, m.N)(),
+    M = (0, g.N)(),
     k = i.useCallback(() => {
       var e;
       return null !== (e = (0, p.fr)(M)) && void 0 !== e ? e : y.NW.string(y.t.pj0XBA)
@@ -80,11 +80,11 @@ function I(e) {
           alt: "Nitro Perk"
         }), (0, r.jsx)(l.X6q, {
           className: a()(O.title, {
-            [O.titleNoSocialProof]: !D
+            [O.titleNoSocialProof]: !w
           }),
           variant: "heading-xl/bold",
           children: o
-        }), D && (0, r.jsx)(E.Z, {
+        }), w && (0, r.jsx)(E.Z, {
           affinities: P
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
@@ -100,7 +100,7 @@ function I(e) {
           look: l.zxk.Looks.LINK,
           onClick: x,
           children: y.NW.string(y.t.ZnqyZ2)
-        }), (0, r.jsx)(g.Z, {
+        }), (0, r.jsx)(m.Z, {
           showGradient: !0,
           premiumModalAnalyticsLocation: {
             section: T,

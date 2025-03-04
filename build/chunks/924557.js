@@ -6,7 +6,7 @@ n.d(t, {
   Zq: () => p,
   ln: () => f,
   nM: () => h,
-  xt: () => m
+  xt: () => g
 });
 var r = n(818083),
   i = n(441167),
@@ -153,6 +153,6 @@ let p = e => {
     return !!n && r
   };
 
-function m(e) {
+function g(e) {
   return a.ZP.isPremiumAtLeast(e.premiumType, c.p9.TIER_2)
 }

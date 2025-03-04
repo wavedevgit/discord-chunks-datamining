@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  C: () => m,
-  Z: () => g
+  C: () => g,
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -18,7 +18,7 @@ var i = n(120356),
   _ = n(474936),
   p = n(388032),
   h = n(784068);
-let m = [{
+let g = [{
     tier: f.Eu4.TIER_1,
     perks: [{
       icon: s.EO4,
@@ -78,13 +78,13 @@ let m = [{
       })
     }]
   }],
-  g = function(e) {
+  m = function(e) {
     let {
       guild: t
     } = e;
     return (0, r.jsx)("div", {
       className: h.tierCards,
-      children: m.map(e => (0, r.jsxs)("div", {
+      children: g.map(e => (0, r.jsxs)("div", {
         className: h.tierCard,
         children: [e.tier === f.Eu4.TIER_3 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("div", {

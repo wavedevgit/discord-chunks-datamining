@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -68,7 +68,7 @@ function h(e) {
   }, i))
 }
 
-function m(e) {
+function g(e) {
   var t, {
       user: s,
       guildId: c
@@ -80,7 +80,7 @@ function m(e) {
     }),
     p = (0, a.R)(null !== (t = null == d ? void 0 : d.id) && void 0 !== t ? t : "");
   if (null == d || !p) return null;
-  let m = () => {
+  let g = () => {
     (0, o.ZDy)(async () => {
       let {
         default: e
@@ -94,6 +94,6 @@ function m(e) {
   return (0, r.jsx)(h, f({
     user: s,
     guildId: c,
-    onClick: m
+    onClick: g
   }, u))
 }

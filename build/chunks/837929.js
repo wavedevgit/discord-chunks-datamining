@@ -78,8 +78,8 @@ function t(e) {
       },
       begin: t.concat(/\b/, /(?!decltype)/, /(?!if)/, /(?!for)/, /(?!switch)/, /(?!while)/, e.IDENT_RE, t.lookahead(/(<[^<>]+>|)\s*\(/))
     },
-    m = [h, d, s, n, e.C_BLOCK_COMMENT_MODE, u, c],
-    g = {
+    g = [h, d, s, n, e.C_BLOCK_COMMENT_MODE, u, c],
+    m = {
       variants: [{
         begin: /=/,
         end: /;/
@@ -91,11 +91,11 @@ function t(e) {
         end: /;/
       }],
       keywords: p,
-      contains: m.concat([{
+      contains: g.concat([{
         begin: /\(/,
         end: /\)/,
         keywords: p,
-        contains: m.concat(["self"]),
+        contains: g.concat(["self"]),
         relevance: 0
       }]),
       relevance: 0
@@ -150,7 +150,7 @@ function t(e) {
     classNameAliases: {
       "function.dispatch": "built_in"
     },
-    contains: [].concat(g, E, h, m, [d, {
+    contains: [].concat(m, E, h, g, [d, {
       begin: "\\b(deque|list|queue|priority_queue|pair|stack|vector|map|set|bitset|multiset|multimap|unordered_map|unordered_set|unordered_multiset|unordered_multimap|array|tuple|optional|variant|function|flat_map|flat_set)\\s*<(?!<)",
       end: ">",
       keywords: p,

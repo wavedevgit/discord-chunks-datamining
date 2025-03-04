@@ -19,8 +19,8 @@ var r = n(392711),
   _ = n(176354),
   p = n(696900),
   h = n(456631),
-  m = n(963838),
-  g = n(353368),
+  g = n(963838),
+  m = n(353368),
   E = n(981631),
   v = n(710111),
   b = function(e) {
@@ -43,9 +43,9 @@ function O(e, t, n) {
   let {
     abortController: o,
     onRequestProgress: s
-  } = y(e), l = null !== (r = p.Z.getState().animationType) && void 0 !== r ? r : g.q.BASIC, d = {
+  } = y(e), l = null !== (r = p.Z.getState().animationType) && void 0 !== r ? r : m.q.BASIC, d = {
     animation_type: l,
-    animation_id: (0, m.Iu)(l, m.v)
+    animation_id: (0, g.Iu)(l, g.v)
   };
   i.tn.post({
     url: E.ANM.CUSTOM_CALL_SOUNDS(e),
@@ -90,7 +90,7 @@ let I = async e => {
     isPremium: l
   } = e;
   if (null == n || h.Z.isOnCooldown) return;
-  let c = l && null != a ? a : g.q.BASIC;
+  let c = l && null != a ? a : m.q.BASIC;
   try {
     let e = null != n.id ? {
       emoji_id: n.id,
@@ -120,8 +120,8 @@ let I = async e => {
     }
   }
 }, T = {
-  [g.q.BASIC]: "Basic",
-  [g.q.PREMIUM]: "Premium"
+  [m.q.BASIC]: "Basic",
+  [m.q.PREMIUM]: "Premium"
 }, N = (e, t, n, r) => {
   let {
     unicode: i,

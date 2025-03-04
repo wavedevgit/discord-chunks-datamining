@@ -33,13 +33,13 @@ let c = null,
   _ = {},
   p = {},
   h = {},
-  m = {};
+  g = {};
 
-function g() {
+function m() {
   let e = e => null != e && Date.now() - e < 6e4;
   for (let t in e(c) || (c = null), e(u) || (u = null), e(d) || (d = null), e(f) || (f = null), _) e(_[t]) || delete _[t];
   for (let t in p) e(p[t]) || delete p[t];
-  for (let t in m) e(m[t]) || delete m[t];
+  for (let t in g) e(g[t]) || delete g[t];
   for (let t in h) e(h[t]) || delete h[t]
 }
 
@@ -50,7 +50,7 @@ function E(e) {
     roleMentioned: r,
     everyoneMentioned: i
   } = e, o = Date.now();
-  c = o, null != t && (_[t] = o), n && (u = o, null != t && (p[t] = o)), r && (d = o, null != t && (m[t] = o)), i && (f = o, null != t && (h[t] = o))
+  c = o, null != t && (_[t] = o), n && (u = o, null != t && (p[t] = o)), r && (d = o, null != t && (g[t] = o)), i && (f = o, null != t && (h[t] = o))
 }
 class v extends r.ZP.Store {
   getGlobalStats() {
@@ -71,12 +71,12 @@ class v extends r.ZP.Store {
       approx_seconds_since_last_everyone_mention: t(f),
       approx_seconds_since_last_guild_notification: null == e ? null : t(_[e]),
       approx_seconds_since_last_guild_mention: null == e ? null : t(p[e]),
-      approx_seconds_since_last_guild_role_mention: null == e ? null : t(m[e]),
+      approx_seconds_since_last_guild_role_mention: null == e ? null : t(g[e]),
       approx_seconds_since_last_guild_everyone_mention: null == e ? null : t(h[e])
     }
   }
 }
 let b = new v(i.Z, {
-  CONNECTION_OPEN: g,
+  CONNECTION_OPEN: m,
   MESSAGE_NOTIFICATION_SHOWN: E
 })

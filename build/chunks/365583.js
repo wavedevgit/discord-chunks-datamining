@@ -18,9 +18,9 @@ var i = n(442837),
   _ = n(26033),
   p = n(594174),
   h = n(324745),
-  m = n(981631),
-  g = n(388032);
-let E = () => a.Z.open(m.oAB.CONNECTIONS, null);
+  g = n(981631),
+  m = n(388032);
+let E = () => a.Z.open(g.oAB.CONNECTIONS, null);
 
 function v(e) {
   let {
@@ -75,7 +75,7 @@ function O(e) {
   });
   return null == f ? null : (0, r.jsx)(o.sNh, {
     id: "manage-privacy",
-    label: g.NW.string(g.t.anfNPT),
+    label: m.NW.string(m.t.anfNPT),
     action: () => {
       null == l || l({
         action: "PRESS_MANAGE_PRIVACY_MENU_ITEM"

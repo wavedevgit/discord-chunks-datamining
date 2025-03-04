@@ -26,7 +26,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,8 +39,8 @@ function m(e) {
   return e
 }
 
-function g(e, t) {
-  (0, i.h7j)(n => (0, r.jsx)(a.default, m({
+function m(e, t) {
+  (0, i.h7j)(n => (0, r.jsx)(a.default, g({
     title: p.NW.string(p.t.l8rYLi),
     body: p.NW.formatToPlainString(p.t.FfjF19, {
       currentLength: e,
@@ -81,7 +81,7 @@ function E(e) {
       type: "MESSAGE_LENGTH_UPSELL",
       channel: E,
       content: u
-    }) : g(u.length, S), O({
+    }) : m(u.length, S), O({
       valid: !1,
       failureReason: _.zYc.MESSAGE_TOO_LONG
     });
@@ -122,7 +122,7 @@ function E(e) {
       }
   }
   if (s.ZP.isFull()) {
-    (0, i.h7j)(e => (0, r.jsx)(a.default, m({
+    (0, i.h7j)(e => (0, r.jsx)(a.default, g({
       title: p.NW.string(p.t["7Q4eo6"]),
       body: p.NW.string(p.t.gi6XHh),
       confirmText: p.NW.string(p.t.Z4U1g4)

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  C: () => m
+  C: () => g
 });
 var r = n(36056),
   i = n(950697),
@@ -16,7 +16,7 @@ var r = n(36056),
   _ = n(284267),
   p = n(973408),
   h = n(647943);
-class m {
+class g {
   constructor(e, t, n) {
     this.defaultCheckDepth = 16, this.typeName = e, this.fields = t.map(r.nb), this.options = null != n ? n : {}, this.refTypeCheck = new i.Z(this), this.refJsonReader = new o.C(this), this.refJsonWriter = new a.k(this), this.refBinReader = new s.I(this), this.refBinWriter = new l.R(this)
   }

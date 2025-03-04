@@ -24,14 +24,14 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let h = "RPC_STORE_WAIT",
-  m = [];
+  g = [];
 
-function g(e, t) {
+function m(e, t) {
   return a().isEqual(e, a().pick(t, Object.keys(e)))
 }
 
 function E(e) {
-  return !!m.includes(e) || (m.unshift(e), m.splice(50), !1)
+  return !!g.includes(e) || (g.unshift(e), g.splice(50), !1)
 }
 class v {
   registerTransport(e) {
@@ -177,7 +177,7 @@ class v {
   dispatchToSubscriptions(e, t, n, r) {
     null != r && "" !== r && E(r) || this.subscriptions.forEach(r => {
       var i;
-      r.evt === e && ("function" != typeof t || t(r)) && ("object" != typeof t || g(t, null !== (i = r.args) && void 0 !== i ? i : {})) && ("function" == typeof n && (n = n(r)), this.dispatch(r.socket, null, _.Etm.DISPATCH, r.evt, n))
+      r.evt === e && ("function" != typeof t || t(r)) && ("object" != typeof t || m(t, null !== (i = r.args) && void 0 !== i ? i : {})) && ("function" == typeof n && (n = n(r)), this.dispatch(r.socket, null, _.Etm.DISPATCH, r.evt, n))
     })
   }
   updateSubscriptions() {

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  VF: () => w,
+  VF: () => D,
   WW: () => C,
   XO: () => N,
   Yp: () => T,
@@ -53,7 +53,7 @@ let u = () => ({
       description: c.NW.string(c.t.ZwOSdn)
     }
   },
-  m = function(e) {
+  g = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.Z.unsafe_rawColors.PREMIUM_PERK_PURPLE.css,
       n = 0,
       o = 0;
@@ -76,7 +76,7 @@ let u = () => ({
       })
     }
   },
-  g = () => ({
+  m = () => ({
     color: r.Z.unsafe_rawColors.PREMIUM_PERK_GOLD.css,
     icon: i.r7p,
     description: c.NW.string(c.t["ThRK/v"])
@@ -127,15 +127,15 @@ function T() {
 }
 
 function N() {
-  return [p(), m(l.Eu4.TIER_2), I(), O()]
+  return [p(), g(l.Eu4.TIER_2), I(), O()]
 }
 
 function A() {
-  return [m(l.Eu4.TIER_3, r.Z.unsafe_rawColors.PREMIUM_PERK_GREEN.css), S(), g(), O()]
+  return [g(l.Eu4.TIER_3, r.Z.unsafe_rawColors.PREMIUM_PERK_GREEN.css), S(), m(), O()]
 }
 
 function C() {
-  return [g(), _(), m(l.Eu4.TIER_3), O()]
+  return [m(), _(), g(l.Eu4.TIER_3), O()]
 }
 
 function R() {
@@ -146,6 +146,6 @@ function P() {
   return [h(), O()]
 }
 
-function w() {
+function D() {
   return [v(), b(), E(), y()]
 }

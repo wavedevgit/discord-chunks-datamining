@@ -25,8 +25,8 @@ function f(e, t, n) {
 let _ = new Set(["APP_STATE_UPDATE", "CLEAR_CACHES", "CONNECTION_CLOSED", "CONNECTION_OPEN", "CONNECTION_RESUMED", "LOGIN_SUCCESS", "LOGIN", "LOGOUT", "MESSAGE_SEND_FAILED", "PUSH_NOTIFICATION_CLICK", "RESET_SOCKET", "SESSION_START", "UPLOAD_FAIL", "WRITE_CACHES"]),
   p = new s.Yd("Flux"),
   h = 100,
-  m = 10,
-  g = "__subscriptions";
+  g = 10,
+  m = "__subscriptions";
 class E {
   isDispatching() {
     return null != this._currentDispatchActionType
@@ -94,7 +94,7 @@ class E {
       !1 !== t(i, () => o(e)) && a(e)
     }
     let r = this._subscriptions[e.type];
-    null != r && t(g, () => {
+    null != r && t(m, () => {
       r.forEach(t => t(e))
     })
   }
@@ -123,7 +123,7 @@ class E {
   }
   constructor(e = 0, t, n) {
     (f(this, "_defaultBand", void 0), f(this, "_interceptors", []), f(this, "_subscriptions", {}), f(this, "_waitQueue", []), f(this, "_processingWaitQueue", !1), f(this, "_currentDispatchActionType", null), f(this, "_actionHandlers", new v), f(this, "_sentryUtils", void 0), f(this, "actionLogger", void 0), f(this, "functionCache", {}), this._defaultBand = e, this._sentryUtils = n, null != t) ? this.actionLogger = t: this.actionLogger = new d.Z, this.actionLogger.on("trace", (e, t, n) => {
-      a.Z.isTracing && n >= m && a.Z.mark("\uD83E\uDDA5", t, n)
+      a.Z.isTracing && n >= g && a.Z.mark("\uD83E\uDDA5", t, n)
     })
   }
 }

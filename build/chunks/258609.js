@@ -30,11 +30,11 @@ function h(e) {
   c = t, u = null
 }
 
-function m() {
+function g() {
   c = null, u = null
 }
 
-function g(e) {
+function m(e) {
   let {
     sessionType: t,
     nonce: n,
@@ -122,8 +122,8 @@ class S extends(r = i.ZP.DeviceSettingsStore) {
 l(S, "displayName", "GameConsoleStore"), l(S, "persistKey", "GameConsoleStore");
 let I = new S(o.Z, {
   REMOTE_SESSION_CONNECT: h,
-  REMOTE_SESSION_DISCONNECT: m,
-  WAIT_FOR_REMOTE_SESSION: g,
+  REMOTE_SESSION_DISCONNECT: g,
+  WAIT_FOR_REMOTE_SESSION: m,
   GAME_CONSOLE_FETCH_DEVICES_START: E,
   GAME_CONSOLE_FETCH_DEVICES_SUCCESS: v,
   GAME_CONSOLE_FETCH_DEVICES_FAIL: b,

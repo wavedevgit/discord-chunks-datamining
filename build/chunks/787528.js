@@ -16,8 +16,8 @@ var r = n(474936),
   _ = n(783308),
   p = n(253141),
   h = n(79914),
-  m = n(2563),
-  g = n(634071),
+  g = n(2563),
+  m = n(634071),
   E = n(175185),
   v = n(557821);
 let b = {
@@ -27,7 +27,7 @@ let b = {
     [r.JN.PREMIUM_TENURE_12_MONTH]: h,
     [r.JN.PREMIUM_TENURE_24_MONTH]: s,
     [r.JN.PREMIUM_TENURE_36_MONTH]: c,
-    [r.JN.PREMIUM_TENURE_60_MONTH]: g,
+    [r.JN.PREMIUM_TENURE_60_MONTH]: m,
     [r.JN.PREMIUM_TENURE_72_MONTH]: u,
     [r.w7.PREMIUM_TENURE_1_MONTH]: i,
     [r.w7.PREMIUM_TENURE_3_MONTH]: E,
@@ -35,7 +35,7 @@ let b = {
     [r.w7.PREMIUM_TENURE_12_MONTH]: p,
     [r.w7.PREMIUM_TENURE_24_MONTH]: a,
     [r.w7.PREMIUM_TENURE_36_MONTH]: l,
-    [r.w7.PREMIUM_TENURE_60_MONTH]: m,
+    [r.w7.PREMIUM_TENURE_60_MONTH]: g,
     [r.w7.PREMIUM_TENURE_72_MONTH]: _
   },
   y = e => b[e]

@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(648052),
   p = n(537006),
   h = n(483424),
-  m = n(681837),
-  g = n(91433),
+  g = n(681837),
+  m = n(91433),
   E = n(944043),
   v = n(502762),
   b = n(530),
@@ -36,8 +36,8 @@ function R(e) {
     currentUser: n,
     displayProfile: R,
     guild: P,
-    isHovering: w,
-    onOpenProfile: D,
+    isHovering: D,
+    onOpenProfile: w,
     channelId: L,
     onClose: x
   } = e, M = d.ZP.useName(null == P ? void 0 : P.id, L, t), {
@@ -55,7 +55,7 @@ function R(e) {
     children: [(0, r.jsx)(b.Z, {
       user: t,
       profileType: N.y0.BITE_SIZE,
-      onOpenProfile: D,
+      onOpenProfile: w,
       usernameIcon: t.hasAvatarForGuild(null == P ? void 0 : P.id) && (0, r.jsx)(S.Z, {
         user: t,
         nickname: M
@@ -68,23 +68,23 @@ function R(e) {
         onClose: x
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(m.Z, {
+        children: [(0, r.jsx)(g.Z, {
           userId: t.id
         }), !B && (0, r.jsx)(y.Z, {
           userId: t.id,
-          isHovering: w,
-          onOpenProfile: D
+          isHovering: D,
+          onOpenProfile: w
         })]
       })
     }), k === A.OGo.PENDING_INCOMING && (0, r.jsx)(v.Z.Overlay, {
-      children: (0, r.jsx)(g.Z, {
+      children: (0, r.jsx)(m.Z, {
         user: t,
         guildId: null == P ? void 0 : P.id,
         channelId: L,
         applicationId: G ? j : void 0
       })
     }), G && U.map(e => (0, r.jsx)(v.Z.Overlay, {
-      children: (0, r.jsx)(g.Z, {
+      children: (0, r.jsx)(m.Z, {
         user: t,
         isGameRelationship: !0,
         applicationId: e.applicationId,
@@ -95,7 +95,7 @@ function R(e) {
       source: E.t.POPOUT
     }), !V && (0, r.jsx)(T.Z, {
       user: t,
-      onOpenProfile: e => null == D ? void 0 : D({
+      onOpenProfile: e => null == w ? void 0 : w({
         section: e
       })
     }), t.isProvisional ? (0, r.jsx)(l.wQ, {

@@ -7,11 +7,11 @@ n.d(t, {
   Om: () => T,
   Sf: () => h,
   U4: () => A,
-  Vg: () => g,
+  Vg: () => m,
   Xc: () => I,
   ZP: () => f,
   dm: () => _,
-  fv: () => m,
+  fv: () => g,
   jc: () => v,
   kX: () => O,
   o_: () => y,
@@ -108,9 +108,9 @@ class f extends r.Z {
           email: e.email
         }));
       case s.HeQ.GIROPAY:
-        return new m(c({}, r));
+        return new g(c({}, r));
       case s.HeQ.PRZELEWY24:
-        return new g(d(c({}, r), {
+        return new m(d(c({}, r), {
           email: e.email,
           bank: e.bank
         }));
@@ -155,9 +155,9 @@ class f extends r.Z {
       case s.HeQ.SEPA_DEBIT:
         return new h(e);
       case s.HeQ.GIROPAY:
-        return new m(e);
-      case s.HeQ.PRZELEWY24:
         return new g(e);
+      case s.HeQ.PRZELEWY24:
+        return new m(e);
       case s.HeQ.PAYSAFE_CARD:
         return new b(e);
       case s.HeQ.GCASH:
@@ -223,12 +223,12 @@ class h extends f {
     this.email = e.email || ""
   }
 }
-class m extends f {
+class g extends f {
   constructor(e) {
     if (super(e), e.type !== s.HeQ.GIROPAY) throw Error("Cannot instantiate GiropaySourceRecord with type: ".concat(e.type, ", must be ").concat(s.HeQ.GIROPAY))
   }
 }
-class g extends f {
+class m extends f {
   constructor(e) {
     if (super(e), e.type !== s.HeQ.PRZELEWY24) throw Error("Cannot instantiate Przelewy24SourceRecord with type: ".concat(e.type, ", must be ").concat(s.HeQ.PRZELEWY24));
     this.email = e.email || "", this.bank = e.bank

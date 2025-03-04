@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(100527),
   p = n(94795),
   h = n(327943),
-  m = n(539873),
-  g = n(207164),
+  g = n(539873),
+  m = n(207164),
   E = n(238302),
   v = n(514361),
   b = n(572397),
@@ -32,9 +32,9 @@ var r = n(200651),
   C = n(921944),
   R = n(474936),
   P = n(388032),
-  w = n(445754);
+  D = n(445754);
 
-function D(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -50,7 +50,7 @@ function L(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -73,10 +73,10 @@ function M(e) {
 }
 
 function k() {
-  let e = (0, g.Z)();
+  let e = (0, m.Z)();
   return i.useEffect(() => {
     (0, p.nJ)(), e()
-  }, [e]), (0, r.jsx)(m.Z, {
+  }, [e]), (0, r.jsx)(g.Z, {
     isEditor: !0
   })
 }
@@ -127,25 +127,25 @@ function j(e) {
     }
   }, [t]);
   return (0, r.jsxs)("div", {
-    className: w.footerContainer,
+    className: D.footerContainer,
     children: [o && (0, r.jsxs)("div", {
-      className: w.footerLabelContainer,
+      className: D.footerLabelContainer,
       children: [(0, r.jsx)(c.SrA, {
-        className: w.footerNitro,
+        className: D.footerNitro,
         size: "xs",
         color: O.JX.PREMIUM_TIER_2
       }), (0, r.jsx)(c.Text, {
-        className: w.footerText,
+        className: D.footerText,
         variant: "text-sm/medium",
         children: P.NW.format(P.t.x2dQxM, {
           onClick: h
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: w.footerButtonContainer,
+      className: D.footerButtonContainer,
       children: [(0, r.jsx)("div", {
         children: (0, r.jsx)(c.zxk, {
-          className: a()(w.footerButton, w.footerButtonBack),
+          className: a()(D.footerButton, D.footerButtonBack),
           color: c.Ttl.PRIMARY,
           size: c.zxk.Sizes.NONE,
           onClick: f,
@@ -155,7 +155,7 @@ function j(e) {
           })
         })
       }), o && (0, r.jsx)(I.Z, {
-        className: w.footerButton,
+        className: D.footerButton,
         subscriptionTier: R.Si.TIER_2,
         showGradient: !0,
         fullWidth: !0,
@@ -176,28 +176,28 @@ function U(e) {
   }, {
     name: P.NW.string(P.t.RPh2oq),
     value: 1
-  }], []), _ = (0, l.e7)([v.Z], () => v.Z.isPreview), m = (0, l.e7)([h.Z], () => h.Z.isUpsellPreview), g = _ || m, y = i.useMemo(() => T.Z.theme, []), O = (0, b.J)(), S = i.useCallback(() => {
-    _ && O(), m && (0, p.O7)()
-  }, [_, m, O]), I = (0, f.Z)(null, g ? S : A.dG4), R = i.useCallback(() => {
-    g && (0, u.ZI)({
+  }], []), _ = (0, l.e7)([v.Z], () => v.Z.isPreview), g = (0, l.e7)([h.Z], () => h.Z.isUpsellPreview), m = _ || g, y = i.useMemo(() => T.Z.theme, []), O = (0, b.J)(), S = i.useCallback(() => {
+    _ && O(), g && (0, p.O7)()
+  }, [_, g, O]), I = (0, f.Z)(null, m ? S : A.dG4), R = i.useCallback(() => {
+    m && (0, u.ZI)({
       theme: y
     }), (0, p.G8)(), (0, E.Mo)(), S(), null == n || n(C.L.DISMISS)
-  }, [S, n, g, y]);
+  }, [S, n, m, y]);
   return (0, r.jsx)(N.Z, {
-    className: w.draggableContainer,
+    className: D.draggableContainer,
     children: (0, r.jsxs)("div", {
       ref: I,
-      className: w.container,
+      className: D.container,
       children: [(0, r.jsxs)("div", {
-        className: w.headerParentContainer,
+        className: D.headerParentContainer,
         children: [(0, r.jsxs)("div", {
-          className: w.headerContainer,
+          className: D.headerContainer,
           children: [(0, r.jsx)(c.X6q, {
             variant: "heading-lg/extrabold",
             children: P.NW.string(P.t.viGN6e)
           }), (0, r.jsx)(c.olH, {
-            className: w.closeContainer,
-            innerClassName: w.closeInner,
+            className: D.closeContainer,
+            innerClassName: D.closeInner,
             withCircleBackground: !0,
             onClick: R
           })]
@@ -213,13 +213,13 @@ function U(e) {
           look: "pill"
         })]
       }), (0, r.jsxs)(c.Ttm, {
-        className: w.scrollContainer,
+        className: D.scrollContainer,
         children: [0 === a && (0, r.jsx)(M, {
           isCoachmark: o
         }), 1 === a && (0, r.jsx)(k, {})]
       }), (0, r.jsx)(j, {
         tab: a,
-        isPreview: g,
+        isPreview: m,
         onClose: R,
         isCoachmark: !1
       })]

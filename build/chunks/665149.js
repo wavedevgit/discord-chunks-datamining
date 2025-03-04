@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  JO: () => g,
+  JO: () => m,
   ZP: () => y,
   iz: () => E
 });
@@ -18,7 +18,7 @@ var r = n(200651),
   _ = n(79712),
   p = n(414273);
 let h = 24,
-  m = e => {
+  g = e => {
     let {
       className: t,
       wrapperClassName: n,
@@ -49,7 +49,7 @@ let h = 24,
       children: h
     })
   },
-  g = e => {
+  m = e => {
     let {
       className: t,
       iconClassName: n,
@@ -59,8 +59,8 @@ let h = 24,
       showBadge: l = !1,
       badgePosition: u = "bottom",
       color: _,
-      foreground: m,
-      background: g,
+      foreground: g,
+      background: m,
       icon: E,
       iconSize: v = h,
       onClick: b,
@@ -74,8 +74,8 @@ let h = 24,
       "aria-label": C,
       "aria-hidden": R,
       "aria-checked": P,
-      "aria-expanded": w,
-      "aria-haspopup": D
+      "aria-expanded": D,
+      "aria-haspopup": w
     } = e, L = (0, f.Q3)("BaseHeaderBar"), x = (0, r.jsx)(E, {
       x: 0,
       y: 0,
@@ -83,8 +83,8 @@ let h = 24,
       height: v,
       size: "custom",
       className: a()(n, p.icon),
-      colorClass: null != m ? m : void 0,
-      secondaryColorClass: null != g ? g : void 0,
+      colorClass: null != g ? g : void 0,
+      secondaryColorClass: null != m ? m : void 0,
       color: null != _ ? _ : "currentColor"
     }), M = C;
     return null == M && "string" == typeof O && (M = O), (0, r.jsx)(c.ua7, {
@@ -111,8 +111,8 @@ let h = 24,
             height: v,
             size: "custom",
             className: a()(n, p.icon),
-            colorClass: null != m ? m : void 0,
-            secondaryColorClass: null != g ? g : void 0,
+            colorClass: null != g ? g : void 0,
+            secondaryColorClass: null != m ? m : void 0,
             color: null != _ ? _ : "currentColor",
             "aria-hidden": R,
             onMouseEnter: f,
@@ -138,8 +138,8 @@ let h = 24,
           "aria-label": M,
           "aria-hidden": R,
           "aria-checked": P,
-          "aria-haspopup": D,
-          "aria-expanded": w,
+          "aria-haspopup": w,
+          "aria-expanded": D,
           tabIndex: s || null == b ? -1 : 0,
           children: [l ? (0, r.jsx)(d.ZP, {
             mask: "top" === u ? d.ZP.Masks.HEADER_BAR_BADGE_TOP : d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
@@ -187,8 +187,8 @@ let b = e => {
     toolbar: f,
     onDoubleClick: _,
     "aria-label": h,
-    "aria-labelledby": m,
-    role: g,
+    "aria-labelledby": g,
+    role: m,
     scrollable: E,
     transparent: v = !1
   } = e, b = i.useRef(null), y = i.useContext(u.Z);
@@ -199,8 +199,8 @@ let b = e => {
       [p.themedMobile]: l.tq
     }),
     "aria-label": h,
-    "aria-labelledby": m,
-    role: g,
+    "aria-labelledby": g,
+    role: m,
     ref: b,
     children: (0, r.jsxs)(c.JcV, {
       containerRef: b,
@@ -223,5 +223,5 @@ let b = e => {
     })
   })
 };
-b.Icon = g, b.Title = m, b.Divider = E, b.Caret = v;
+b.Icon = m, b.Title = g, b.Divider = E, b.Caret = v;
 let y = b

@@ -79,15 +79,15 @@ function f(e) {
     Component: _,
     getProps: p,
     getQuery: h,
-    key: m,
-    indexOffset: g = 0,
+    key: g,
+    indexOffset: m = 0,
     headerClassName: E,
     headerTrailingContent: v,
     footer: b
   } = e;
   if (null == b && (null == o || 0 === o.length)) return null;
   let y = null == o ? void 0 : o.map((e, t) => {
-    let r = t + g,
+    let r = t + m,
       o = p(e, r);
     return (0, i.createElement)(_, u(l({
       onClick: s,
@@ -107,5 +107,5 @@ function f(e) {
       headerClassName: E,
       headerTrailingContent: v
     }) : null, y, b]
-  }, m)
+  }, g)
 }

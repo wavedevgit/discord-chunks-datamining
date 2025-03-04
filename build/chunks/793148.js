@@ -47,20 +47,20 @@ class p extends(r = o.PureComponent) {
       muted: f,
       minValue: p,
       maxValue: h,
-      value: m,
-      onVolumeShow: g,
+      value: g,
+      onVolumeShow: m,
       onVolumeHide: E
     } = this.props, {
       hovered: v,
       focused: b,
       dragging: y
     } = this.state, O = l.gj8;
-    return f || m === p ? O = l.OyP : m < h / 2 && (O = l.X2j), (0, i.jsxs)("div", {
+    return f || g === p ? O = l.OyP : g < h / 2 && (O = l.X2j), (0, i.jsxs)("div", {
       className: s()(n, d.container),
       onMouseEnter: () => {
         clearTimeout(this._hoverTimeout), this.setState({
           hovered: !0
-        }), null == g || g()
+        }), null == m || m()
       },
       onMouseLeave: () => {
         clearTimeout(this._hoverTimeout), this._hoverTimeout = setTimeout(() => {
@@ -93,7 +93,7 @@ class p extends(r = o.PureComponent) {
         children: (0, i.jsx)(c.Z, {
           sliderClassName: o,
           type: c.Z.Types.VOLUME,
-          value: m / h,
+          value: g / h,
           onDrag: this.handleValueChange,
           onDragStart: this.handleDragStart,
           onDragEnd: this.handleDragEnd,

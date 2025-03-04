@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(2052),
   p = n(607070),
   h = n(806966),
-  m = n(254494),
-  g = n(593618),
+  g = n(254494),
+  m = n(593618),
   E = n(451478),
   v = n(626135),
   b = n(624138),
@@ -40,7 +40,7 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +53,7 @@ function w(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,7 +65,7 @@ function D(e, t) {
 }
 
 function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -93,12 +93,12 @@ function K(e) {
     handleCategorySelect: u,
     isWindowFocused: d,
     useReducedMotion: _
-  } = e, p = (0, c.JA)("expression-guild-".concat(n)), h = l.type === T.En.GUILD ? null : l.id, m = t === n, E = l.type === T.En.GUILD ? l.guild : null, b = (0, r.jsxs)(f.P3F, L(w({}, p), {
+  } = e, p = (0, c.JA)("expression-guild-".concat(n)), h = l.type === T.En.GUILD ? null : l.id, g = t === n, E = l.type === T.En.GUILD ? l.guild : null, b = (0, r.jsxs)(f.P3F, L(D({}, p), {
     "aria-label": (0, y.Nf)(l, E),
     className: a()({
       [R.categoryItemGuildCategory]: null != E,
       [R.categoryItemDefaultCategory]: null == E,
-      [R.categoryItemDefaultCategorySelected]: null == E && m,
+      [R.categoryItemDefaultCategorySelected]: null == E && g,
       [R.categoryItemRecentEmoji]: l.type === T.En.RECENT
     }),
     onClick: () => {
@@ -110,7 +110,7 @@ function K(e) {
     },
     children: [null != E ? (0, r.jsx)(S.Z, {
       guild: E,
-      isSelected: m,
+      isSelected: g,
       shouldAnimate: !_ && d,
       isLocked: l.isNitroLocked
     }) : null, null == E && null != h ? (0, r.jsx)(O.Z, {
@@ -122,7 +122,7 @@ function K(e) {
     }) : null]
   })), I = s[n + 1], C = null != I && l.type === T.En.GUILD && I.type !== T.En.GUILD;
   return null != E ? (0, r.jsxs)(i.Fragment, {
-    children: [(0, r.jsx)(g.Z, {
+    children: [(0, r.jsx)(m.Z, {
       guild: E,
       includeActivity: !1,
       children: (0, r.jsx)("div", {
@@ -141,13 +141,13 @@ let z = e => {
     intention: s,
     channel: c,
     shouldShowSoundmojiInEmojiPicker: d = !1
-  } = e, g = h.kJ.useStore(e => e.activeCategoryIndex), v = (0, I.Ni)({
+  } = e, m = h.kJ.useStore(e => e.activeCategoryIndex), v = (0, I.Ni)({
     sectionDescriptors: o,
     emojiListRef: n
   }), b = (0, _.O)(), O = (0, y.kI)(s, c, null == c ? void 0 : c.guild_id, d), S = i.useRef(null), N = (0, u.e7)([E.Z], () => E.Z.isFocused()), A = (0, u.e7)([p.Z], () => p.Z.useReducedMotion, []), P = i.useMemo(() => l().memoize((e, t) => {
     let n = O[t];
     if (null != n) return (0, r.jsx)(K, {
-      activeIndex: g,
+      activeIndex: m,
       analyticsContext: b,
       categories: O,
       category: n,
@@ -156,7 +156,7 @@ let z = e => {
       isWindowFocused: N,
       useReducedMotion: A
     }, t)
-  }), [g, b, O, v, N, A]), w = i.useMemo(() => [8, 8, 0, 8], []), D = i.useCallback((e, t) => {
+  }), [m, b, O, v, N, A]), D = i.useMemo(() => [8, 8, 0, 8], []), w = i.useCallback((e, t) => {
     let n = O[t];
     if (n.type === T.En.RECENT) return F;
     if (n.type === T.En.GUILD) {
@@ -214,18 +214,18 @@ let z = e => {
       }, e)
     }, []),
     et = q ? "shortcut" : "hiddenshortcut";
-  return (0, r.jsx)(m.Z, {
+  return (0, r.jsx)(g.Z, {
     categoryListRef: S,
     expressionsListRef: n,
     className: t,
     store: h.kJ,
     categories: O,
-    listPadding: w,
+    listPadding: D,
     onScroll: X,
     renderCategoryListItem: P,
     renderSection: ee,
     rowCount: O.length,
-    categoryHeight: D,
+    categoryHeight: w,
     getScrollOffsetForIndex: $,
     rowCountBySection: z,
     children: e => L >= Y && (0, r.jsx)(f.P3F, {

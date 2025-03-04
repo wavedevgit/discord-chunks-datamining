@@ -52,11 +52,11 @@ let _ = {},
   p = 0,
   h = 15 * s.Z.Millis.SECOND;
 
-function m() {
+function g() {
   _ = u({}, o.Z.getCollapsedCategories())
 }
 
-function g() {
+function m() {
   __OVERLAY__ || (clearTimeout(p), p = setTimeout(() => v({}), h))
 }
 async function E(e, t) {
@@ -102,11 +102,11 @@ function y() {
 class O extends i.Z {
   constructor(...e) {
     super(...e), c(this, "actions", {
-      CATEGORY_COLLAPSE: g,
-      CATEGORY_EXPAND: g,
-      CATEGORY_COLLAPSE_ALL: g,
-      CATEGORY_EXPAND_ALL: g,
-      POST_CONNECTION_OPEN: m,
+      CATEGORY_COLLAPSE: m,
+      CATEGORY_EXPAND: m,
+      CATEGORY_COLLAPSE_ALL: m,
+      CATEGORY_EXPAND_ALL: m,
+      POST_CONNECTION_OPEN: g,
       USER_GUILD_SETTINGS_FULL_UPDATE: y
     }), c(this, "saveUserGuildSettings", E), c(this, "saveUserGuildSettingsBulk", v)
   }

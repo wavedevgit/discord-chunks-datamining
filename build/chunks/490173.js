@@ -17,7 +17,7 @@ var r = n(200651),
   p = n(585483),
   h = n(981631);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,14 +26,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -68,8 +68,8 @@ let y = e => {
     rect: f,
     position: _,
     align: p,
-    impressionName: m,
-    impressionProperties: g,
+    impressionName: g,
+    impressionProperties: m,
     disableClickTrap: E = !1
   } = e, v = i.useRef(null), y = i.useMemo(() => ({
     current: l
@@ -102,8 +102,8 @@ let y = e => {
     null === (e = v.current) || void 0 === e || e.updatePosition()
   }), (0, u.Z)({
     type: o.ImpressionTypes.MENU,
-    name: m,
-    properties: g
+    name: g,
+    properties: m
   });
   let I = (0, c.Aq)(),
     T = i.useCallback(() => {
@@ -196,14 +196,14 @@ class O extends i.PureComponent {
     }) : null
   }
   constructor(...e) {
-    super(...e), m(this, "state", {
+    super(...e), g(this, "state", {
       render: void 0
-    }), m(this, "closeResize", e => {
+    }), g(this, "closeResize", e => {
       let {
         renderWindow: t
       } = this.props;
       e.target === t && this.close()
-    }), m(this, "close", () => {
+    }), g(this, "close", () => {
       let {
         isOpen: e,
         closeContextMenu: t
@@ -226,7 +226,7 @@ function S() {
     appContext: s,
     renderWindow: u
   } = i.useContext(c.ZP);
-  return (0, r.jsx)(O, v(g({
+  return (0, r.jsx)(O, v(m({
     appContext: s,
     renderWindow: u
   }, e), {

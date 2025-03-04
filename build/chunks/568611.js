@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   VK: () => u,
-  rU: () => g
+  rU: () => m
 });
 var r = n(512969),
   i = n(190031),
@@ -40,7 +40,7 @@ function h(e) {
   return !!(e.metaKey || e.altKey || e.ctrlKey || e.shiftKey)
 }
 void 0 === p && (p = _);
-var m = p(function(e, t) {
+var g = p(function(e, t) {
     var n = e.innerRef,
       r = e.navigate,
       i = e.onClick,
@@ -58,26 +58,26 @@ var m = p(function(e, t) {
       });
     return _ !== p ? u.ref = t || n : u.ref = n, o.createElement("a", u)
   }),
-  g = p(function(e, t) {
+  m = p(function(e, t) {
     var n = e.component,
-      i = void 0 === n ? m : n,
+      i = void 0 === n ? g : n,
       a = e.replace,
       u = e.to,
       h = e.innerRef,
-      g = (0, l.Z)(e, ["component", "replace", "to", "innerRef"]);
+      m = (0, l.Z)(e, ["component", "replace", "to", "innerRef"]);
     return o.createElement(r.s6.Consumer, null, function(e) {
       e || (0, c.Z)(!1);
       var n = e.history,
         r = f(d(u, e.location), e.location),
         l = r ? n.createHref(r) : "",
-        m = (0, s.Z)({}, g, {
+        g = (0, s.Z)({}, m, {
           href: l,
           navigate: function() {
             var t = d(u, e.location);
             (a ? n.replace : n.push)(t)
           }
         });
-      return _ !== p ? m.ref = t || h : m.innerRef = h, o.createElement(i, m)
+      return _ !== p ? g.ref = t || h : g.innerRef = h, o.createElement(i, g)
     })
   }),
   E = function(e) {
@@ -99,7 +99,7 @@ void 0 === v && (v = E), v(function(e, t) {
     _ = e.activeStyle,
     p = e.className,
     h = e.exact,
-    m = e.isActive,
+    g = e.isActive,
     y = e.location,
     O = e.sensitive,
     S = e.strict,
@@ -119,15 +119,15 @@ void 0 === v && (v = E), v(function(e, t) {
         sensitive: O,
         strict: S
       }) : null,
-      P = !!(m ? m(R, n) : R),
-      w = P ? b(p, u) : p,
-      D = P ? (0, s.Z)({}, I, {}, _) : I,
+      P = !!(g ? g(R, n) : R),
+      D = P ? b(p, u) : p,
+      w = P ? (0, s.Z)({}, I, {}, _) : I,
       L = (0, s.Z)({
         "aria-current": P && i || null,
-        className: w,
-        style: D,
+        className: D,
+        style: w,
         to: a
       }, A);
-    return E !== v ? L.ref = t || N : L.innerRef = N, o.createElement(g, L)
+    return E !== v ? L.ref = t || N : L.innerRef = N, o.createElement(m, L)
   })
 })

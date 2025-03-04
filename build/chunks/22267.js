@@ -17,8 +17,8 @@ var i = n(120356),
   _ = n(158776),
   p = n(5192),
   h = n(579407),
-  m = n(388032),
-  g = n(862078),
+  g = n(388032),
+  m = n(862078),
   E = n(660097);
 let v = e => {
   let {
@@ -30,7 +30,7 @@ let v = e => {
     showWumpus: y
   } = e, O = (0, a.e7)([f.Z], () => (0, s.wj)(f.Z.theme)), S = (0, a.e7)([_.Z], () => _.Z.getStatus(t.id));
   return (0, r.jsxs)("div", {
-    className: o()(i, g.nameplatePreview),
+    className: o()(i, m.nameplatePreview),
     style: {
       color: O ? "white" : "black"
     },
@@ -41,11 +41,11 @@ let v = e => {
       avatar: (0, r.jsx)(l.qEK, {
         src: E,
         size: l.EFr.SIZE_32,
-        "aria-label": m.NW.string(m.t.cqpybG)
+        "aria-label": g.NW.string(g.t.cqpybG)
       }),
-      name: m.NW.string(m.t.cqpybG),
+      name: g.NW.string(g.t.cqpybG),
       selected: !1,
-      innerClassName: g.avatarWithTextInner
+      innerClassName: m.avatarWithTextInner
     }) : (0, r.jsx)(c.Z, {
       avatar: (0, r.jsx)(u.Z, {
         user: t,
@@ -56,7 +56,7 @@ let v = e => {
       }),
       name: p.ZP.getName(null, null, t),
       selected: !1,
-      innerClassName: g.avatarWithTextInner
+      innerClassName: m.avatarWithTextInner
     })]
   })
 }

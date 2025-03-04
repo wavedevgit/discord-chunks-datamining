@@ -22,8 +22,8 @@ function u(e) {
     _ = void 0 === f ? c : f,
     p = e.referenceElement,
     h = e.onFirstUpdate,
-    m = e.innerRef,
-    g = e.children,
+    g = e.innerRef,
+    m = e.children,
     E = r.useContext(i.C8),
     v = r.useState(null),
     b = v[0],
@@ -32,8 +32,8 @@ function u(e) {
     S = O[0],
     I = O[1];
   r.useEffect(function() {
-    (0, o.k$)(m, b)
-  }, [m, b]);
+    (0, o.k$)(g, b)
+  }, [g, b]);
   var T = r.useMemo(function() {
       return {
         placement: n,
@@ -53,7 +53,7 @@ function u(e) {
     C = N.styles,
     R = N.forceUpdate,
     P = N.update,
-    w = r.useMemo(function() {
+    D = r.useMemo(function() {
       return {
         ref: y,
         style: C.popper,
@@ -68,5 +68,5 @@ function u(e) {
         update: P || l
       }
     }, [y, I, n, A, C, P, R]);
-  return (0, o.$p)(g)(w)
+  return (0, o.$p)(m)(D)
 }

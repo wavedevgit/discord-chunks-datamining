@@ -22,8 +22,8 @@ let l = e => {
   }, [f, _]), h = r.useCallback((e, t) => {
     d(e, t, a.u.GRID_NAVIGATOR_EVENT)
   }, [d]), {
-    gridDispatch: m,
-    getItemProps: g,
+    gridDispatch: g,
+    getItemProps: m,
     getRowProps: E,
     gridContainerProps: v,
     handleGridContainerKeyDown: b,
@@ -43,13 +43,13 @@ let l = e => {
       rowIndex: n,
       source: r
     } = e;
-    r !== a.u.GRID_NAVIGATOR_EVENT && m({
+    r !== a.u.GRID_NAVIGATOR_EVENT && g({
       type: i.s.SET_FOCUSED_POSITION,
       x: t,
       y: n
     })
-  }), [m, c]), {
-    getItemProps: g,
+  }), [g, c]), {
+    getItemProps: m,
     getRowProps: E,
     gridContainerProps: v,
     handleGridContainerKeyDown: b,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => w
+  Z: () => D
 });
 var r = n(200651),
   i = n(192379),
@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(906732),
   p = n(639119),
   h = n(197115),
-  m = n(587446),
-  g = n(594174),
+  g = n(587446),
+  m = n(594174),
   E = n(626135),
   v = n(74538),
   b = n(94795),
@@ -30,7 +30,7 @@ var r = n(200651),
   A = n(641126);
 let C = () => {
     var e, t, n;
-    let i = (0, s.e7)([g.default], () => v.ZP.isPremium(g.default.getCurrentUser())),
+    let i = (0, s.e7)([m.default], () => v.ZP.isPremium(m.default.getCurrentUser())),
       o = (0, p.N)(),
       a = (null == o ? void 0 : null === (e = o.subscription_trial) || void 0 === e ? void 0 : e.sku_id) === T.Si.TIER_2;
     return (0, r.jsx)(h.Z, {
@@ -63,7 +63,7 @@ let C = () => {
         children: [(0, r.jsx)(l.X6q, {
           variant: "heading-lg/extrabold",
           children: N.NW.string(N.t["hb/wEx"])
-        }), (0, r.jsx)(m.Z, {
+        }), (0, r.jsx)(g.Z, {
           className: A.premiumIcon
         })]
       })]
@@ -88,16 +88,16 @@ let C = () => {
     })
   };
 
-function w(e) {
+function D(e) {
   let {
     isCoachmark: t,
     markAsDismissed: n
   } = e, {
     analyticsLocations: o
-  } = (0, _.ZP)(f.Z.APP_ICON_EDITOR), c = (0, s.e7)([g.default], () => g.default.getCurrentUser()), {
+  } = (0, _.ZP)(f.Z.APP_ICON_EDITOR), c = (0, s.e7)([m.default], () => m.default.getCurrentUser()), {
     isUpsellPreview: p,
     isEditorOpen: h,
-    shouldEditorAnimate: m
+    shouldEditorAnimate: g
   } = (0, s.cj)([y.Z, d.Z], () => ({
     isUpsellPreview: y.Z.isUpsellPreview,
     isEditorOpen: y.Z.isEditorOpen,
@@ -116,7 +116,7 @@ function w(e) {
     value: o,
     children: (0, r.jsx)("div", {
       ref: v,
-      className: a()(A.editor, m ? A.editorAnimate : null),
+      className: a()(A.editor, g ? A.editorAnimate : null),
       "data-app-right-panel": !0,
       children: (0, r.jsxs)(l.y5t, {
         children: [(0, r.jsx)(R, {

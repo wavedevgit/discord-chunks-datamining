@@ -37,7 +37,7 @@ function h(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -61,7 +61,7 @@ let E = e => null != e && /^http/i.test(e),
       size: n = f.yV,
       className: o,
       style: p,
-      children: m,
+      children: g,
       categoryBannerOverride: b
     } = e, y = (0, s.e7)([c.Z], () => c.Z.saturation), O = i.useMemo(() => {
       if (null == t) return p;
@@ -73,14 +73,14 @@ let E = e => null != e && /^http/i.test(e),
           filter: "blur(2px)",
           transform: "scale(1.02)"
         } : {};
-      if (1 === y) return h(g(h({}, p), {
+      if (1 === y) return h(m(h({}, p), {
         backgroundImage: (null == b ? void 0 : b.addGradient) ? "url(".concat(e, "), linear-gradient(180deg, rgba(0, 71, 94, 0.6) 5%, rgba(9, 33, 65, 0.6) 95%)") : "url(".concat(e, ")"),
         backgroundBlendMode: "multiply",
         backgroundSize: "cover",
         backgroundPosition: "center"
       }), r);
       let i = (0, u.aD)(l.Z.unsafe_rawColors.BLACK_500.resolve().hex(), 1 - y);
-      return h(g(h({}, p), {
+      return h(m(h({}, p), {
         backgroundImage: "linear-gradient(".concat(i, ", ").concat(i, "), url(").concat(e, ")"),
         backgroundBlendMode: "saturation",
         backgroundSize: "cover",
@@ -90,6 +90,6 @@ let E = e => null != e && /^http/i.test(e),
     return (0, r.jsx)("div", {
       className: a()(_.banner, o),
       style: O,
-      children: m
+      children: g
     })
   }

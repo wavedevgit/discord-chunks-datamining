@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   hp: () => E,
-  kr: () => g,
+  kr: () => m,
   u: () => _
 }), n(47120), n(411104), n(26686);
 var r = n(570140),
@@ -74,21 +74,21 @@ var h = function(e) {
   return e.Unknown = "Unknown", e.UploadErrorGeneral = "UploadErrorCodes.GENERAL", e.UploadErrorNoFile = "UploadErrorCodes.NO_FILE", e.UploadErrorProgress = "UploadErrorCodes.PROGRESS", e.UploadErrorUpload = "UploadErrorCodes.UPLOAD", e.UploadErrorRead = "UploadErrorCodes.READ", e
 }({});
 
-function m(e, t) {
-  var n, r, i, f, _, h, m, g, E, v, b, y, O, S, I, T, N, A, C, R, P;
-  let w = null !== (h = t.channelId) && void 0 !== h ? h : c.Z.getVoiceChannelId(),
-    D = a.Z.getChannel(w),
+function g(e, t) {
+  var n, r, i, f, _, h, g, m, E, v, b, y, O, S, I, T, N, A, C, R, P;
+  let D = null !== (h = t.channelId) && void 0 !== h ? h : c.Z.getVoiceChannelId(),
+    w = a.Z.getChannel(D),
     L = null != t.streamKey ? (0, o.my)(t.streamKey) : null,
     x = {
       error_name: e.valueOf(),
       error_code: p[e].errorCode,
       error_severity: p[e].severity,
       error_category: p[e].category,
-      underlying_error: null !== (m = t.underlyingError) && void 0 !== m ? m : null,
-      error_message: null !== (g = t.errorMessage) && void 0 !== g ? g : null,
-      guild_id: null !== (E = null == D ? void 0 : D.guild_id) && void 0 !== E ? E : null,
-      channel_id: null != w ? w : null,
-      channel_type: null !== (v = null == D ? void 0 : D.type) && void 0 !== v ? v : null,
+      underlying_error: null !== (g = t.underlyingError) && void 0 !== g ? g : null,
+      error_message: null !== (m = t.errorMessage) && void 0 !== m ? m : null,
+      guild_id: null !== (E = null == w ? void 0 : w.guild_id) && void 0 !== E ? E : null,
+      channel_id: null != D ? D : null,
+      channel_type: null !== (v = null == w ? void 0 : w.type) && void 0 !== v ? v : null,
       rtc_connection_id: null !== (b = t.rtcConnectionId) && void 0 !== b ? b : null,
       media_session_id: null !== (O = null !== (y = t.mediaSessionId) && void 0 !== y ? y : l.Z.getMediaSessionId()) && void 0 !== O ? O : null,
       parent_media_session_id: null !== (S = t.parentMediaSessionId) && void 0 !== S ? S : null,
@@ -116,7 +116,7 @@ function m(e, t) {
   u.default.track(d.rMx.AV_ERROR_REPORTED, x)
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null != t.underlyingError && !Object.values(h).includes(t.underlyingError)) {
     f.error("Invalid underlying error string '".concat(t.underlyingError, "', must be member of AVUnderlyingError"));
     return
@@ -130,7 +130,7 @@ function g(e, t) {
     severity: n.severity,
     category: n.category,
     context: t
-  }), m(e, t)
+  }), g(e, t)
 }
 
 function E(e) {

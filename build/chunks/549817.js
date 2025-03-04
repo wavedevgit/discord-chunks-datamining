@@ -16,8 +16,8 @@ var r = n(392711),
   _ = n(592125),
   p = n(271383),
   h = n(594174),
-  m = n(626135),
-  g = n(630388),
+  g = n(626135),
+  m = n(630388),
   E = n(823379),
   v = n(960048),
   b = n(709054),
@@ -67,7 +67,7 @@ function P(e, t) {
   }), e
 }
 
-function w(e) {
+function D(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
   if (d.Z.isFullServerPreview(e)) return;
   let n = t ? y.Z.getOnboardingPromptsForOnboarding(e) : y.Z.getOnboardingPrompts(e),
@@ -116,7 +116,7 @@ function w(e) {
   })
 }
 
-function D(e, t, n) {
+function w(e, t, n) {
   var r, o;
   let s = null !== (o = null === (r = p.ZP.getSelfMember(e)) || void 0 === r ? void 0 : r.roles) && void 0 !== o ? o : [];
   if (d.Z.isViewingRoles(e)) {
@@ -144,8 +144,8 @@ let L = {
       removedOptionIds: s
     })
   },
-  updateOnboardingResponses: i().debounce(w, 1e3),
-  updateRolesLocal: D,
+  updateOnboardingResponses: i().debounce(D, 1e3),
+  updateRolesLocal: w,
   completeOnboarding(e, t) {
     let n = t.length > 0 ? t[t.length - 1] : null,
       r = y.Z.getSelectedOptions(e),
@@ -156,11 +156,11 @@ let L = {
       v = [...o, ...a],
       A = v.map(e => _.Z.getChannel(e)).filter(E.lm),
       R = (0, S.v)(e, new Set(v), A, !0).length,
-      D = null == n ? [] : n.options.map(e => e.id);
-    if (m.default.track(I.rMx.GUILD_ONBOARDING_STEP_COMPLETED, P(C({}, (0, l.hH)(e)), {
+      w = null == n ? [] : n.options.map(e => e.id);
+    if (g.default.track(I.rMx.GUILD_ONBOARDING_STEP_COMPLETED, P(C({}, (0, l.hH)(e)), {
         step: t.length - 1,
-        options_selected: null == n ? 0 : r.filter(e => D.includes(e.id)).length,
-        skipped: D.length > 0,
+        options_selected: null == n ? 0 : r.filter(e => w.includes(e.id)).length,
+        skipped: w.length > 0,
         back: !1,
         in_onboarding: !0,
         is_final_step: !0,
@@ -168,7 +168,7 @@ let L = {
         channels_granted: R,
         guild_onboarding_covered_channel_ids: c.map(e => e.id),
         guild_onboarding_uncovered_channel_ids: f.map(e => e.id)
-      })), (0, s.Ju)(e, N.W.GUILD_ONBOARDING_QUESTION, b.default.fromTimestamp(Date.now())), w(e, !0), d.Z.isFullServerPreview(e)) {
+      })), (0, s.Ju)(e, N.W.GUILD_ONBOARDING_QUESTION, b.default.fromTimestamp(Date.now())), D(e, !0), d.Z.isFullServerPreview(e)) {
       (0, u.zS)(e, v, []), (0, u.aq)(e, {
         optInEnabled: !0
       }), (0, u.og)(e, Array.from(i));
@@ -178,7 +178,7 @@ let L = {
         let n = null !== (x = null === (L = p.ZP.getMember(e, t.id)) || void 0 === L ? void 0 : L.flags) && void 0 !== x ? x : 0;
         (0, u.aq)(e, {
           memberOptions: {
-            flags: (0, g.mB)(n, T.q.COMPLETED_ONBOARDING, !0)
+            flags: (0, m.mB)(n, T.q.COMPLETED_ONBOARDING, !0)
           }
         })
       }
@@ -209,7 +209,7 @@ let L = {
       var n, r;
       let i = null !== (r = null === (n = p.ZP.getMember(e, t.id)) || void 0 === n ? void 0 : n.flags) && void 0 !== r ? r : 0;
       await (0, c.e)(e, {
-        flags: (0, g.mB)(i, T.q.COMPLETED_ONBOARDING, !1)
+        flags: (0, m.mB)(i, T.q.COMPLETED_ONBOARDING, !1)
       })
     }
   }

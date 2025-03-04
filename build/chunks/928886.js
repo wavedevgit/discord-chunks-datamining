@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(798769),
   p = n(689011),
   h = n(669079),
-  m = n(987209),
-  g = n(563132),
+  g = n(987209),
+  m = n(563132),
   E = n(409813),
   v = n(981631),
   b = n(474936),
@@ -41,11 +41,11 @@ function I(e) {
     purchaseState: C,
     purchaseType: R,
     selectedSku: P
-  } = (0, g.JL)(), {
-    isGift: w,
-    selectedGiftStyle: D,
+  } = (0, m.JL)(), {
+    isGift: D,
+    selectedGiftStyle: w,
     giftRecipient: L
-  } = (0, m.wD)(), x = w && (0, h.pO)(L) && N === E.h8.CONFIRM && null != D && (null == P ? void 0 : P.productLine) !== v.POd.COLLECTIBLES, M = null != n && null != N, k = [E.h8.SKU_SELECT, E.h8.SELECT_FREE_SKU], j = null != N && !k.includes(N) && null != T, U = (0, d.N)(o), G = !w && null != U && null != T && b.nG[U.trial_id].skus.includes(T), B = (0, u.Ng)(), V = null == B ? void 0 : null === (t = B.discount) || void 0 === t ? void 0 : t.plan_ids.some(e => b.GP[e].skuId === T), F = !w && null != B && null != T && V, {
+  } = (0, g.wD)(), x = D && (0, h.pO)(L) && N === E.h8.CONFIRM && null != w && (null == P ? void 0 : P.productLine) !== v.POd.COLLECTIBLES, M = null != n && null != N, k = [E.h8.SKU_SELECT, E.h8.SELECT_FREE_SKU], j = null != N && !k.includes(N) && null != T, U = (0, d.N)(o), G = !D && null != U && null != T && b.nG[U.trial_id].skus.includes(T), B = (0, u.Ng)(), V = null == B ? void 0 : null === (t = B.discount) || void 0 === t ? void 0 : t.plan_ids.some(e => b.GP[e].skuId === T), F = !D && null != B && null != T && V, {
     enabled: Z
   } = c.ZP.useExperiment({
     location: "PaymentModalHeader"
@@ -59,7 +59,7 @@ function I(e) {
       className: O.container,
       children: [(0, r.jsx)(f.Z, {
         defaultAnimationState: l.SR.LOOP,
-        giftStyle: D,
+        giftStyle: w,
         className: O.seasonalGiftBoxHeaderIcon
       }), (0, r.jsx)(s.olH, {
         onClick: I,
@@ -75,9 +75,9 @@ function I(e) {
       onClose: I,
       showTrialBadge: G,
       showDiscountBadge: F,
-      isGift: w,
+      isGift: D,
       giftRecipient: L,
       useWinterTheme: W
     })), e
-  }, [D, I, C, n, A, T, N, G, F, x, j, M, R, w, L, W])
+  }, [w, I, C, n, A, T, N, G, F, x, j, M, R, D, L, W])
 }

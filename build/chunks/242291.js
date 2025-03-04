@@ -3,12 +3,12 @@
 n.d(t, {
   C0: () => A,
   GN: () => C,
-  M2: () => w,
+  M2: () => D,
   Nq: () => N,
   SZ: () => x,
   aC: () => L,
   pI: () => I,
-  sR: () => D,
+  sR: () => w,
   tt: () => k
 }), n(653041);
 var r = n(399606),
@@ -24,8 +24,8 @@ var r = n(399606),
   _ = n(594174),
   p = n(626135),
   h = n(74538),
-  m = n(51144),
-  g = n(208049),
+  g = n(51144),
+  m = n(208049),
   E = n(763296),
   v = n(697426),
   b = n(641015),
@@ -59,23 +59,23 @@ function A(e) {
 }
 
 function C(e, t, n) {
-  (0, g.XE)(t, e, v.YQ.SOUNDBOARD), (0, u.kq)(t, e, __OVERLAY__, n)
+  (0, m.XE)(t, e, v.YQ.SOUNDBOARD), (0, u.kq)(t, e, __OVERLAY__, n)
 }
 
 function R(e, t) {
-  (0, g.XE)(t, e, v.YQ.JOINED_VOICE_CHANNEL), (0, u.vy)(t, e, __OVERLAY__)
+  (0, m.XE)(t, e, v.YQ.JOINED_VOICE_CHANNEL), (0, u.vy)(t, e, __OVERLAY__)
 }
 
 function P() {
   var e, t;
   return Object.values(null !== (t = null === (e = l.Z.settings.guilds) || void 0 === e ? void 0 : e.guilds) && void 0 !== t ? t : {}).some(e => null != e.joinSound)
 }
-async function w(e) {
+async function D(e) {
   let t = _.default.getCurrentUser(),
     n = (0, o.Z)(),
     r = (0, y.k9)(e);
   if (null == n || d.Lr.has(n.type) || null == r || !h.ZP.canUseCustomCallSounds(t) || !(0, b.D)()) return;
-  await (0, g.w)();
+  await (0, m.w)();
   let i = r.guildId === O.hY ? O.X8 : r.guildId,
     a = E.Z.getSound(i, r.soundId);
   if (null != a) {
@@ -84,13 +84,13 @@ async function w(e) {
   }
 }
 
-function D(e) {
+function w(e) {
   let {
     isSoundboardButtonDisabled: t = !1
   } = e, n = (0, r.e7)([_.default], () => _.default.getCurrentUser()), o = [];
   if (!t && !P()) {
     o.push(i.z.CUSTOM_CALL_SOUNDS_SPARKLES);
-    let e = (0, m.Fc)(n);
+    let e = (0, g.Fc)(n);
     (h.ZP.canUseCustomCallSounds(n) || e) && o.push(i.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL)
   }
   return o

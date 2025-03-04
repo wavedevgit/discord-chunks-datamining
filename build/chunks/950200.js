@@ -118,10 +118,10 @@ var n = function() {
             }
       return p.forEach(function(e, t) {
         h[t] = _ - e
-      }), m(s == r ? "r" : s == i ? "g" : "b")
+      }), g(s == r ? "r" : s == i ? "g" : "b")
     }
 
-    function m(e) {
+    function g(e) {
       var t, r, i, o, a, s = e + "1",
         c = e + "2",
         u = 0;
@@ -240,8 +240,8 @@ var n = function() {
           return t.naturalOrder(e.count() * e.volume(), n.count() * n.volume())
         }); _.size();) h.push(_.pop());
       p(h, n - h.size());
-      for (var m = new l; h.size();) m.push(h.pop());
-      return m
+      for (var g = new l; h.size();) g.push(h.pop());
+      return g
     }
   }
 }();

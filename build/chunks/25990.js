@@ -1,6 +1,6 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, o, a, s, l, c, u, d, f, _, p, h, m, g, E;
+let r, i, o, a, s, l, c, u, d, f, _, p, h, g, m, E;
 n.d(t, {
   Z: () => eo
 });
@@ -38,14 +38,14 @@ function P(e) {
   T = S.QZA.OPEN, N = null !== (t = e.errors) && void 0 !== t ? t : {}
 }
 
-function w(e) {
+function D(e) {
   let {
     section: t
   } = e;
   return t === S.oAB.ACCOUNT && A()
 }
 
-function D(e) {
+function w(e) {
   let {
     avatar: t
   } = e;
@@ -84,7 +84,7 @@ function j(e) {
   let {
     item: t
   } = e;
-  (null == t ? void 0 : t.type) === b.Z.PROFILE_EFFECT ? (m = null, g = null == t ? void 0 : t.id) : (null == t ? void 0 : t.type) === b.Z.AVATAR_DECORATION && (g = null, m = t)
+  (null == t ? void 0 : t.type) === b.Z.PROFILE_EFFECT ? (g = null, m = null == t ? void 0 : t.id) : (null == t ? void 0 : t.type) === b.Z.AVATAR_DECORATION && (m = null, g = t)
 }
 
 function U(e) {
@@ -147,14 +147,14 @@ function Y(e) {
   let {
     avatarDecoration: t
   } = e;
-  m = t
+  g = t
 }
 
 function K(e) {
   let {
     profileEffectId: t
   } = e;
-  g = t
+  m = t
 }
 
 function z(e) {
@@ -172,7 +172,7 @@ function q(e) {
       avatarDecoration: r
     }
   } = e;
-  _ = t, E = n, m = r
+  _ = t, E = n, g = r
 }
 
 function Q() {
@@ -196,7 +196,7 @@ function ee() {
 }
 
 function et() {
-  p = void 0, h = void 0, m = void 0, g = void 0, E = void 0, _ = void 0
+  p = void 0, h = void 0, g = void 0, m = void 0, E = void 0, _ = void 0
 }
 
 function en() {
@@ -273,10 +273,10 @@ class ei extends(v = y.ZP.Store) {
     return h
   }
   getTryItOutAvatarDecoration() {
-    return m
+    return g
   }
   getTryItOutProfileEffectId() {
-    return g
+    return m
   }
   getTryItOutBanner() {
     return E
@@ -286,8 +286,8 @@ class ei extends(v = y.ZP.Store) {
       tryItOutThemeColors: _,
       tryItOutAvatar: p,
       tryItOutAvatarV2: h,
-      tryItOutAvatarDecoration: m,
-      tryItOutProfileEffectId: g,
+      tryItOutAvatarDecoration: g,
+      tryItOutProfileEffectId: m,
       tryItOutBanner: E
     }
   }
@@ -297,12 +297,12 @@ let eo = new ei(O.Z, {
   USER_SETTINGS_ACCOUNT_INIT: A,
   USER_SETTINGS_MODAL_INIT: A,
   USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: A,
-  USER_SETTINGS_MODAL_SET_SECTION: w,
+  USER_SETTINGS_MODAL_SET_SECTION: D,
   USER_SETTINGS_ACCOUNT_CLOSE: C,
   USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM: er,
   USER_SETTINGS_ACCOUNT_SUBMIT: R,
   USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE: P,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR: D,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR: w,
   USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_V2: L,
   USER_SETTINGS_ACCOUNT_SET_PENDING_GLOBAL_NAME: x,
   USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_DECORATION: M,

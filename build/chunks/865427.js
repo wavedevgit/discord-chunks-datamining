@@ -5,7 +5,7 @@ n.d(t, {
   Ji: () => d,
   _G: () => E,
   _I: () => p,
-  _S: () => m,
+  _S: () => g,
   fD: () => h,
   mG: () => b,
   pU: () => f,
@@ -49,7 +49,7 @@ function h() {
   return -1 !== window.document.cookie.indexOf("".concat(l.ZF, "="))
 }
 
-function m() {
+function g() {
   try {
     var e;
     let t = r.parse(window.document.cookie)[l.ZF];
@@ -60,10 +60,10 @@ function m() {
     return {}
   }
 }
-let g = RegExp("^https://(?:ptb\\.|canary\\.)?(discordapp|discord)\\.com/__development/link?[\\S]+$", "i");
+let m = RegExp("^https://(?:ptb\\.|canary\\.)?(discordapp|discord)\\.com/__development/link?[\\S]+$", "i");
 
 function E(e) {
-  return null != e && g.test(e)
+  return null != e && m.test(e)
 }
 let v = RegExp("^dev://branch/([\\w-./]+)$", "i");
 

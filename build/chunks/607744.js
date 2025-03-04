@@ -30,9 +30,9 @@ let p = {
     canChat: !0
   },
   h = new Set,
-  m = {};
+  g = {};
 
-function g(e) {
+function m(e) {
   let t;
   E(e), h.add(e);
   let n = c.Z.getGuild(e),
@@ -53,7 +53,7 @@ function g(e) {
   }
   let _ = +r.createdAt + 6e4 * d.YeM.ACCOUNT_AGE - Date.now(),
     p = +n.joinedAt + 6e4 * d.YeM.MEMBER_AGE - Date.now(),
-    g = n.verificationLevel >= d.sFg.LOW && !r.isClaimed(),
+    m = n.verificationLevel >= d.sFg.LOW && !r.isClaimed(),
     v = !1,
     b = !1,
     y = !1,
@@ -63,13 +63,13 @@ function g(e) {
   O && S.push(p), y && S.push(_), S.length > 0 && (t = setTimeout(() => o.Z.dispatch({
     type: "GUILD_VERIFICATION_CHECK",
     guildId: e
-  }), Math.max(...S))), m[e] = {
-    notClaimed: g,
+  }), Math.max(...S))), g[e] = {
+    notClaimed: m,
     notEmailVerified: v,
     notPhoneVerified: b,
     newAccount: y,
     newMember: O,
-    canChat: !(g || v || b || y || O),
+    canChat: !(m || v || b || y || O),
     accountDeadline: new Date(Date.now() + _),
     memberDeadline: new Date(Date.now() + p),
     timeoutRef: t
@@ -77,20 +77,20 @@ function g(e) {
 }
 
 function E(e) {
-  let t = m[e];
-  null != t && clearTimeout(t.timeoutRef), delete m[e]
+  let t = g[e];
+  null != t && clearTimeout(t.timeoutRef), delete g[e]
 }
 
 function v() {
-  for (let e in h.clear(), m) E(e)
+  for (let e in h.clear(), g) E(e)
 }
 
 function b() {
-  s.default.keys(m).forEach(E)
+  s.default.keys(g).forEach(E)
 }
 
 function y(e) {
-  h.delete(e.guild.id), g(e.guild.id)
+  h.delete(e.guild.id), m(e.guild.id)
 }
 
 function O(e) {
@@ -118,7 +118,7 @@ function T(e) {
   let {
     guildId: t
   } = e;
-  g(t)
+  m(t)
 }
 class N extends(r = i.ZP.Store) {
   initialize() {
@@ -126,7 +126,7 @@ class N extends(r = i.ZP.Store) {
   }
   getCheck(e) {
     var t;
-    return null == e ? p : (h.has(e) || g(e), null !== (t = m[e]) && void 0 !== t ? t : p)
+    return null == e ? p : (h.has(e) || m(e), null !== (t = g[e]) && void 0 !== t ? t : p)
   }
   canChatInGuild(e) {
     return this.getCheck(e).canChat

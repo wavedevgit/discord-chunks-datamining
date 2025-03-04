@@ -54,11 +54,11 @@ function h(e) {
   return null == t && (t = _[e] = u({}, f)), t
 }
 
-function m(e) {
+function g(e) {
   e.isSwitchingAccount || (_ = {})
 }
 
-function g(e) {
+function m(e) {
   e.userId in _ && delete _[e.userId]
 }
 
@@ -131,8 +131,8 @@ c(b, "displayName", "StreamerModeStore"), c(b, "persistKey", "StreamerModeStore"
   }
 }]);
 let y = new b(o.Z, {
-  LOGOUT: m,
-  MULTI_ACCOUNT_REMOVE_ACCOUNT: g,
+  LOGOUT: g,
+  MULTI_ACCOUNT_REMOVE_ACCOUNT: m,
   STREAMER_MODE_UPDATE: E,
   RUNNING_STREAMER_TOOLS_CHANGE: v
 })

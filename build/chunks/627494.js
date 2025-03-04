@@ -13,8 +13,8 @@ var r = n(147018),
   _ = n(115726),
   p = n(641236),
   h = n(992051),
-  m = p("replace"),
-  g = TypeError,
+  g = p("replace"),
+  m = TypeError,
   E = o("".indexOf),
   v = o("".replace),
   b = o("".slice),
@@ -32,8 +32,8 @@ r({
       R = 0,
       P = "";
     if (!l(e)) {
-      if ((n = c(e)) && !~E(u(a(f(e))), "g")) throw g("`.replaceAll` does not allow non-global regexes");
-      if (r = d(e, m)) return i(r, e, A, t);
+      if ((n = c(e)) && !~E(u(a(f(e))), "g")) throw m("`.replaceAll` does not allow non-global regexes");
+      if (r = d(e, g)) return i(r, e, A, t);
       if (h && n) return v(u(A), e, t)
     }
     for (o = u(A), p = u(e), (S = s(t)) || (t = u(t)), T = y(1, I = p.length), C = O(o, p, 0); - 1 !== C;) N = S ? u(t(p, C, o)) : _(p, o, C, [], void 0, t), P += b(o, R, C) + N, R = C + I, C = O(o, p, C + T);

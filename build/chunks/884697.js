@@ -3,7 +3,7 @@
 n.d(t, {
   BH: () => I,
   Cs: () => A,
-  G1: () => m,
+  G1: () => g,
   IC: () => G,
   OT: () => V,
   Vw: () => E,
@@ -15,9 +15,9 @@ n.d(t, {
   bl: () => k,
   eu: () => W,
   f_: () => S,
-  iC: () => D,
+  iC: () => w,
   mO: () => j,
-  qS: () => g,
+  qS: () => m,
   ql: () => O,
   rN: () => T,
   uV: () => L,
@@ -72,8 +72,8 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = e => (null == e ? void 0 : e.premiumType) != null,
-  g = e => (null == e ? void 0 : e.purchaseType) === d.qc2.PREMIUM_PURCHASE,
+let g = e => (null == e ? void 0 : e.premiumType) != null,
+  m = e => (null == e ? void 0 : e.purchaseType) === d.qc2.PREMIUM_PURCHASE,
   E = (e, t, n) => {
     let r;
     return O(e, r = n ? t ? d.tuJ.MOBILE_PREMIUM_TIER_2 : d.tuJ.MOBILE : t ? d.tuJ.PREMIUM_TIER_2 : d.tuJ.DEFAULT)
@@ -144,8 +144,8 @@ let m = e => (null == e ? void 0 : e.premiumType) != null,
     }
   },
   P = e => C(e, i.Z.AVATAR_DECORATION),
-  w = e => R(e, i.Z.AVATAR_DECORATION),
-  D = (e, t) => (0, r.uniqBy)([...P(e), ...w(t)], "id"),
+  D = e => R(e, i.Z.AVATAR_DECORATION),
+  w = (e, t) => (0, r.uniqBy)([...P(e), ...D(t)], "id"),
   L = (e, t) => {
     var n;
     let {

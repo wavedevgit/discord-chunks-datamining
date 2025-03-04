@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   M: () => h,
-  V: () => m
+  V: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -68,16 +68,16 @@ function p(e, t) {
   return i
 }
 let h = i.createContext(void 0),
-  m = i.forwardRef(function(e, t) {
+  g = i.forwardRef(function(e, t) {
     let {
       children: n,
       impressionType: c,
       impression: d,
       disableTrack: p,
-      returnRef: m
-    } = e, g = _(e, ["children", "impressionType", "impression", "disableTrack", "returnRef"]), E = i.useRef(null);
+      returnRef: g
+    } = e, m = _(e, ["children", "impressionType", "impression", "disableTrack", "returnRef"]), E = i.useRef(null);
     return (0, o.T)(E, {
-      returnRef: m
+      returnRef: g
     }), i.useContext(l.Z)({
       type: c,
       name: null == d ? void 0 : d.impressionName,
@@ -86,7 +86,7 @@ let h = i.createContext(void 0),
       disableTrack: p
     }), i.useImperativeHandle(t, () => E.current), (0, r.jsx)(h.Provider, {
       value: !0,
-      children: (0, r.jsx)("div", f(u({}, g), {
+      children: (0, r.jsx)("div", f(u({}, m), {
         ref: E,
         role: "dialog",
         tabIndex: -1,

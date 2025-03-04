@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -67,26 +67,26 @@ function h(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = e => {
+let g = e => {
   var {
     href: t,
     className: n,
     iconClassName: u,
     rel: f,
     target: h,
-    mimeType: m,
-    fileName: g,
+    mimeType: g,
+    fileName: m,
     focusProps: E,
     onClick: v
   } = e, b = p(e, ["href", "className", "iconClassName", "rel", "target", "mimeType", "fileName", "focusProps", "onClick"]);
   let y = i.useMemo(() => o.X.getDefaultLinkInterceptor(t), [t]),
     O = i.useCallback(e => {
       s.default.track(l.rMx.MEDIA_DOWNLOAD_BUTTON_TAPPED, {
-        attachment_type: null == m ? void 0 : m[0],
-        attachment_subtype: null == m ? void 0 : m[1]
+        attachment_type: null == g ? void 0 : g[0],
+        attachment_subtype: null == g ? void 0 : g[1]
       }), null == v || v(), null == y || y(e)
-    }, [y, m, v]);
-  return null != g ? (0, r.jsx)(a.eee, _(d({
+    }, [y, g, v]);
+  return null != m ? (0, r.jsx)(a.eee, _(d({
     href: t,
     onClick: O,
     target: h,
@@ -95,7 +95,7 @@ let m = e => {
     "aria-label": c.NW.string(c.t["1WjMbG"]),
     focusProps: E
   }, b), {
-    children: g
+    children: m
   })) : (0, r.jsx)(a.eee, _(d({
     href: t,
     onClick: O,

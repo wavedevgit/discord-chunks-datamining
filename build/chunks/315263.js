@@ -16,8 +16,8 @@ var r = n(873546),
   _ = n(960904),
   p = n(830121),
   h = n(15274),
-  m = n(924301),
-  g = n(543842),
+  g = n(924301),
+  m = n(543842),
   E = n(754688),
   v = n(336197),
   b = n(977156),
@@ -31,14 +31,14 @@ var r = n(873546),
   C = n(626135),
   R = n(591759),
   P = n(782568),
-  w = n(981631),
-  D = n(46140);
+  D = n(981631),
+  w = n(46140);
 async function L(e, t) {
   await o.Z.dispatch({
     type: "INVITE_MODAL_OPEN",
     invite: e,
     code: t,
-    context: w.IlC.APP
+    context: D.IlC.APP
   })
 }
 async function x(e) {
@@ -51,7 +51,7 @@ async function x(e) {
     n = t
   }
   if (null == n) return;
-  if (n.state === w.r2o.EXPIRED || n.state === w.r2o.BANNED || n.state === w.r2o.ERROR) {
+  if (n.state === D.r2o.EXPIRED || n.state === D.r2o.BANNED || n.state === D.r2o.ERROR) {
     await L(n, e.code);
     return
   }
@@ -86,7 +86,7 @@ function k(e) {
       applicationId: void 0,
       skuId: void 0
     }, c = null !== (o = N.Z.getGuildId()) && void 0 !== o ? o : void 0;
-    return null == s ? (0, P.Z)(e) : (C.default.track(w.rMx.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED, {
+    return null == s ? (0, P.Z)(e) : (C.default.track(D.rMx.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED, {
       application_id: s,
       device_platform: r.tq ? "mobile_web" : "desktop_web",
       guild_id: c,
@@ -102,7 +102,7 @@ function k(e) {
       t({
         tab: r.APPS,
         applicationId: s,
-        section: (0, g.Z)(i, I.type === _.g.APP_DIRECTORY_PROFILE ? i.ABOUT : i.STORE),
+        section: (0, m.Z)(i, I.type === _.g.APP_DIRECTORY_PROFILE ? i.ABOUT : i.STORE),
         skuId: l
       })
     })), !0
@@ -137,7 +137,7 @@ function k(e) {
     }), !0
   };
   if (null != I && I.type === _.g.QUESTS_EMBED && (0, b.cB)({
-      location: D.dr.EMBED_MOBILE
+      location: w.dr.EMBED_MOBILE
     })) return e => (null == e || e.preventDefault(), Promise.resolve().then(n.bind(n, 341907)).then(e => {
     let {
       navigateToQuestHome: t
@@ -194,7 +194,7 @@ function k(e) {
       getOAuth2AuthorizeProps: t,
       openOAuth2ModalWithCreateGuildModal: r
     } = n(69580), i = t(e);
-    if (null != i) return e => (null == e || e.preventDefault(), null != I && I.type === _.g.APP_OAUTH2_LINK && u.ZP.trackWithMetadata(w.rMx.APP_OAUTH2_LINK_EMBED_URL_CLICKED, {
+    if (null != i) return e => (null == e || e.preventDefault(), null != I && I.type === _.g.APP_OAUTH2_LINK && u.ZP.trackWithMetadata(D.rMx.APP_OAUTH2_LINK_EMBED_URL_CLICKED, {
       application_id: i.clientId
     }), r(i), !0)
   }
@@ -202,8 +202,8 @@ function k(e) {
   if (null != k && G && null != B) return e => {
     null == e || e.preventDefault();
     let t = N.Z.getGuildId();
-    null != B.guildId && "" !== B.guildId && B.guildId !== t && (0, v.Z)(w.Z5c.CHANNEL(B.guildId));
-    let n = m.ZP.getGuildScheduledEvent(B.guildEventId);
+    null != B.guildId && "" !== B.guildId && B.guildId !== t && (0, v.Z)(D.Z5c.CHANNEL(B.guildId));
+    let n = g.ZP.getGuildScheduledEvent(B.guildEventId);
     return null != n && (0, h.bO)({
       eventId: n.id
     }), !0

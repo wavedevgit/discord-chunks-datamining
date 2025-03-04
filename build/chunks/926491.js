@@ -15,9 +15,9 @@ var r, i = n(956067),
   _ = n(430824),
   p = n(70956),
   h = n(373228),
-  m = n(378233);
+  g = n(378233);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -33,7 +33,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -67,7 +67,7 @@ let y = 2,
     C = new Map(C.set(e, t))
   },
   P = p.Z.Millis.HOUR,
-  w = async () => {
+  D = async () => {
     if (0 !== y) return;
     let e = s.Z.database();
     if (null == e) return;
@@ -79,7 +79,7 @@ let y = 2,
     })
   };
 
-function D(e) {
+function w(e) {
   let {
     stickers: t
   } = e;
@@ -104,7 +104,7 @@ let L = function(e) {
       type: h.MO.STICKER_NAME,
       value: e.name.trim().toLocaleLowerCase()
     };
-    if ((0, m.jl)(e)) {
+    if ((0, g.jl)(e)) {
       let t = T.find(t => t.id === e.pack_id),
         i = [r, ...(null != n ? n : "").split(",").map(e => ({
           type: h.MO.TAG,
@@ -114,7 +114,7 @@ let L = function(e) {
         type: h.MO.PACK_NAME,
         value: t.name
       }), I.set(e.id, i)
-    } else if ((0, m.J8)(e) && null != n) {
+    } else if ((0, g.J8)(e) && null != n) {
       let i = u.ZP.getByName(n),
         o = [r, {
           type: h.MO.TAG,
@@ -234,7 +234,7 @@ let F = () => {
     } = e, i = e => {
       let t;
       let n = S.get(e.id);
-      return null != n && (0, m.J8)(n) && (t = null != n.user ? n.user : void 0), b(E({}, e), {
+      return null != n && (0, g.J8)(n) && (t = null != n.user ? n.user : void 0), b(E({}, e), {
         user: t
       })
     };
@@ -255,7 +255,7 @@ class Q extends(r = o.ZP.Store) {
     return y
   }
   get stickerMetadata() {
-    return w(), null == I && (I = new Map, k()), I
+    return D(), null == I && (I = new Map, k()), I
   }
   get hasLoadedStickerPacks() {
     return null != N && N + P > Date.now()
@@ -264,7 +264,7 @@ class Q extends(r = o.ZP.Store) {
     return A
   }
   getStickerById(e) {
-    return S.has(e) || w(), S.get(e)
+    return S.has(e) || D(), S.get(e)
   }
   getStickerPack(e) {
     return O.get(e)
@@ -279,16 +279,16 @@ class Q extends(r = o.ZP.Store) {
     return C
   }
   getAllStickersIterator() {
-    return w(), S.values()
+    return D(), S.values()
   }
   getAllGuildStickers() {
-    return w(), C
+    return D(), C
   }
   getStickersByGuildId(e) {
-    return w(), C.get(e)
+    return D(), C.get(e)
   }
 }
-g(Q, "displayName", "StickersStore");
+m(Q, "displayName", "StickersStore");
 let X = new Q(a.Z, {
   BACKGROUND_SYNC: U,
   CONNECTION_OPEN: j,
@@ -302,5 +302,5 @@ let X = new Q(a.Z, {
   GUILD_STICKERS_CREATE_SUCCESS: K,
   STICKER_FETCH_SUCCESS: z,
   GUILD_STICKERS_UPDATE: q,
-  CACHED_STICKERS_LOADED: D
+  CACHED_STICKERS_LOADED: w
 })

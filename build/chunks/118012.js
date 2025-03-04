@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -91,7 +91,7 @@ let p = Object.freeze({
     SIZE_24: s.size24,
     SIZE_32: s.size32
   }),
-  m = e => {
+  g = e => {
     let {
       className: t,
       color: n = p.STANDARD,
@@ -100,19 +100,19 @@ let p = Object.freeze({
       selectable: l = !1,
       strong: u = !1,
       children: _,
-      style: m,
-      "aria-label": g
+      style: g,
+      "aria-label": m
     } = e, E = f(e, ["className", "color", "size", "tag", "selectable", "strong", "children", "style", "aria-label"]);
     return (0, r.jsx)(s, d(c({
-      "aria-label": g,
+      "aria-label": m,
       className: o()(n, i, t, {
         [a.selectable]: l,
         [a.strong]: u
       }),
-      style: m
+      style: g
     }, E), {
       children: _
     }))
   };
-m.Colors = p, m.Sizes = h;
-let g = m
+g.Colors = p, g.Sizes = h;
+let m = g

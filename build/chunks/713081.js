@@ -5,9 +5,9 @@ n.d(t, {
   H6: () => h,
   Qh: () => f,
   Sn: () => _,
-  Th: () => m,
+  Th: () => g,
   jd: () => d
-});
+}), n(230036), n(47120);
 var r = n(544891),
   i = n(570140),
   o = n(823379),
@@ -36,7 +36,7 @@ function _(e, t) {
     i.Z.dispatch({
       type: "GUILD_POWERUP_CATALOG_FETCH_SUCCESS",
       guildId: e,
-      powerups: t.filter(o.lm).reduce((e, t) => (e[t.skuId] = t, e), {})
+      powerups: t.sort((e, t) => e.skuId >= t.skuId ? 1 : -1).reduce((e, t) => (e.set(t.skuId, t), e), new Map)
     });
     return
   }
@@ -49,7 +49,7 @@ function _(e, t) {
     oldFormErrors: !0,
     rejectWithError: !1
   }).then(t => {
-    let n = t.body.map(e => (0, l.Z)(e)).filter(o.lm).reduce((e, t) => (e[t.skuId] = t, e), {});
+    let n = t.body.map(e => (0, l.Z)(e)).filter(o.lm).sort((e, t) => e.skuId >= t.skuId ? 1 : -1).reduce((e, t) => (e.set(t.skuId, t), e), new Map);
     return i.Z.dispatch({
       type: "GUILD_POWERUP_CATALOG_FETCH_SUCCESS",
       guildId: e,
@@ -68,7 +68,7 @@ function p(e) {
     oldFormErrors: !0,
     rejectWithError: !1
   }).then(t => {
-    let n = t.body.reduce((e, t) => (e[t.sku_id] = t, e), {});
+    let n = t.body.reduce((e, t) => (e.set(t.sku_id, t), e), new Map);
     return i.Z.dispatch({
       type: "GUILD_UNLOCKED_POWERUPS_FETCH_SUCCESS",
       guildId: e,
@@ -84,7 +84,7 @@ function h(e, t) {
   })
 }
 
-function m(e, t) {
+function g(e, t) {
   return r.tn.del({
     url: u.ANM.GUILD_POWERUP_TOGGLE(e, t),
     rejectWithError: !0

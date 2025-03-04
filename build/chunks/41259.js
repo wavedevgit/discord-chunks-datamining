@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(489863),
   p = n(981631),
   h = n(182294),
-  m = n(388032),
-  g = n(260070);
+  g = n(388032),
+  m = n(260070);
 
 function E(e) {
   let {
@@ -36,7 +36,7 @@ function E(e) {
     children: [(0, r.jsx)(c.x, {
       variant: "text-lg/normal",
       color: "header-secondary",
-      children: m.NW.string(m.t.uT1CPT)
+      children: g.NW.string(g.t.uT1CPT)
     }), (0, r.jsx)(a.X6, {
       variant: "heading-xxl/bold",
       color: "header-primary",
@@ -47,64 +47,64 @@ function E(e) {
       variant: "text-lg/bold",
       color: "header-primary",
       children: [E.name, null != v ? (0, r.jsx)(u.Z, {
-        className: g.botTag,
+        className: m.botTag,
         verified: null != v.public_flags && (0, f.yE)(v.public_flags, p.xW$.VERIFIED_BOT)
       }) : null]
     }), b.length > 0 ? (0, r.jsx)(c.x, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: m.NW.string(m.t.jFbDnJ)
+      children: g.NW.string(g.t.jFbDnJ)
     }) : (0, r.jsx)(c.x, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: m.NW.string(m.t["X+Fdpq"])
+      children: g.NW.string(g.t["X+Fdpq"])
     })]
   }), [b.length, E, v, S]);
   return (0, r.jsxs)("header", {
     id: t,
-    className: g.header,
+    className: m.header,
     children: [(0, r.jsxs)("div", {
-      className: g.headerIcons,
+      className: m.headerIcons,
       children: [(0, r.jsx)(s.qE, {
-        className: g.avatar,
+        className: m.avatar,
         src: I,
         size: h.EF.SIZE_80,
         "aria-label": E.name
       }), (0, r.jsxs)("div", {
-        className: g.ellipseGroup,
+        className: m.ellipseGroup,
         children: [(0, r.jsx)("div", {
-          className: g.ellipse
+          className: m.ellipse
         }), (0, r.jsx)("div", {
-          className: g.ellipse
+          className: m.ellipse
         }), (0, r.jsx)("div", {
-          className: g.ellipse
+          className: m.ellipse
         })]
       }), (0, r.jsx)(s.qE, {
-        className: g.avatar,
+        className: m.avatar,
         src: T,
         size: h.EF.SIZE_80,
         "aria-label": n.username
       })]
     }), N, y ? (0, r.jsx)("div", {
-      className: g.currentUser,
+      className: m.currentUser,
       children: (0, r.jsxs)(c.x, {
         variant: "text-sm/normal",
         color: "text-muted",
-        children: [m.NW.format(m.t.qRvpYW, {
+        children: [g.NW.format(g.t.qRvpYW, {
           userHook: () => (0, r.jsxs)(c.x, {
-            className: g.currentUserTag,
+            className: m.currentUserTag,
             variant: "text-sm/normal",
             children: [n.username, !n.isPomelo() && (0, r.jsx)(c.x, {
-              className: g.currentUserDiscriminator,
+              className: m.currentUserDiscriminator,
               variant: "text-sm/normal",
               children: "#".concat(n.discriminator)
             })]
           }, n.id)
         }), (0, r.jsx)(l.P, {
           tag: "a",
-          className: g.logoutLink,
+          className: m.logoutLink,
           onClick: () => (0, _.c$)(O),
-          children: m.NW.string(m.t["yV/hjI"])
+          children: g.NW.string(g.t["yV/hjI"])
         })]
       })
     }) : null]

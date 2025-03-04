@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(82965),
   p = n(67844),
   h = n(871499),
-  m = n(981631),
-  g = n(457410);
+  g = n(981631),
+  m = n(457410);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -87,7 +87,7 @@ function I(e) {
       hasPermission: f,
       children: _,
       channelLimitReached: h = !1,
-      join: g
+      join: m
     } = e,
     E = (0, u.bp)(),
     v = o ? () => d() : () => a(!e.enabled, E),
@@ -95,9 +95,9 @@ function I(e) {
       Component: b,
       play: y,
       events: O
-    } = (0, c.o)(g || n ? "disable" : "enable");
+    } = (0, c.o)(m || n ? "disable" : "enable");
   i.useEffect(() => () => y(), [n, y]);
-  let S = E === m.IlC.POPOUT ? n ? s.O : l.A : b;
+  let S = E === g.IlC.POPOUT ? n ? s.O : l.A : b;
   return (0, r.jsx)(r.Fragment, {
     children: _({
       onClick: v,
@@ -107,8 +107,8 @@ function I(e) {
       iconColor: "currentColor",
       label: t,
       unavailable: o,
-      onMouseEnter: g ? void 0 : O.onMouseEnter,
-      onMouseLeave: g ? void 0 : O.onMouseLeave
+      onMouseEnter: m ? void 0 : O.onMouseEnter,
+      onMouseLeave: m ? void 0 : O.onMouseLeave
     })
   })
 }
@@ -124,7 +124,7 @@ function T(e) {
     hasPermission: c,
     className: u,
     channelLimitReached: p,
-    channelLimit: m,
+    channelLimit: g,
     centerButton: E = !1,
     onPopoutClick: b
   } = e, S = O(e, ["enabled", "join", "channel", "onChange", "onCameraUnavailable", "cameraUnavailable", "hasPermission", "className", "channelLimitReached", "channelLimit", "centerButton", "onPopoutClick"]);
@@ -144,7 +144,7 @@ function T(e) {
       location: "VideoButton"
     }),
     P = () => n ? "join" : C && t ? "green" : R || N === d.BK.GroupedButtonsRedMic ? "primaryDark" : "green",
-    w = e => n ? "join" : (A || N === d.BK.GroupedButtonsRedMic) && e ? "green" : S.color;
+    D = e => n ? "join" : (A || N === d.BK.GroupedButtonsRedMic) && e ? "green" : S.color;
   return (0, r.jsx)(I, {
     enabled: t,
     join: n,
@@ -154,7 +154,7 @@ function T(e) {
     cameraUnavailable: l,
     hasPermission: c,
     channelLimitReached: p,
-    channelLimit: m,
+    channelLimit: g,
     children: e => {
       var {
         unavailable: t,
@@ -163,7 +163,7 @@ function T(e) {
         isActive: s
       } = e, l = O(e, ["unavailable", "onMouseEnter", "onMouseLeave", "isActive"]);
       return (0, r.jsx)(T, y(v({}, l, S), {
-        color: w(s),
+        color: D(s),
         caretColor: P(),
         isActive: s,
         onMouseEnter: e => {
@@ -175,7 +175,7 @@ function T(e) {
           null === (t = S.onMouseLeave) || void 0 === t || t.call(S, e), null == o || o()
         },
         className: a()(u, {
-          [g.fauxDisabled]: t
+          [m.fauxDisabled]: t
         }),
         onPopoutClick: b,
         fullRegionButton: n

@@ -47,12 +47,12 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = null,
+let m = null,
   E = null,
   v = null,
   b = null,
@@ -82,7 +82,7 @@ function R(e) {
     }
     let t = l.Q.createFromServer(e);
     n[t.id] = t, U(t) && (r[t.id] = t, t.type === d.NYc.GUILD && t.status !== d.O0b.ENDED && i.push(t), t.type === d.NYc.APPLICATION && t.status !== d.O0b.ENDED && o.push(t))
-  }), g = n, E = r, b = i, y = o
+  }), m = n, E = r, b = i, y = o
 }
 
 function P(e) {
@@ -97,13 +97,13 @@ function P(e) {
   }
 }
 
-function w(e) {
+function D(e) {
   let {
     subscription: t
   } = e, n = l.Q.createFromServer(t);
-  g = m(p({}, g), {
+  m = g(p({}, m), {
     [n.id]: n
-  }), U(n) && (E = m(p({}, E), {
+  }), U(n) && (E = g(p({}, E), {
     [n.id]: n
   })), null != b && n.type === d.NYc.GUILD && (b = P({
     activeSubscriptions: b,
@@ -114,7 +114,7 @@ function w(e) {
   }))
 }
 
-function D(e) {
+function w(e) {
   let {
     subscription: t
   } = e;
@@ -171,7 +171,7 @@ function k(e) {
 }
 
 function j() {
-  g = null, E = null, v = null, b = null, y = null, O = !1, S = !1, I = null, T = !1, N = !1
+  m = null, E = null, v = null, b = null, y = null, O = !1, S = !1, I = null, T = !1, N = !1
 }
 
 function U(e) {
@@ -185,7 +185,7 @@ function G(e) {
 
 function B(e, t) {
   let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
-    r = n ? E : g;
+    r = n ? E : m;
   if (null == r) return null;
   for (let n in r) {
     let i = r[n];
@@ -208,7 +208,7 @@ function B(e, t) {
 }
 class V extends(r = i.ZP.Store) {
   hasFetchedSubscriptions() {
-    return null != g
+    return null != m
   }
   hasFetchedMostRecentPremiumTypeSubscription() {
     return O
@@ -230,11 +230,11 @@ class V extends(r = i.ZP.Store) {
   }
   getSubscriptions() {
     let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-    return e ? E : g
+    return e ? E : m
   }
   getSubscriptionById(e) {
     var t;
-    return null !== (t = null == g ? void 0 : g[e]) && void 0 !== t ? t : void 0
+    return null !== (t = null == m ? void 0 : m[e]) && void 0 !== t ? t : void 0
   }
   getActiveGuildSubscriptions() {
     return b
@@ -246,7 +246,7 @@ class V extends(r = i.ZP.Store) {
     var t;
     let n = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
       r = new Set(e),
-      i = n ? E : g;
+      i = n ? E : m;
     return null == i ? null : null !== (t = Object.values(i).find(e => e.items.some(e => r.has(e.planId)))) && void 0 !== t ? t : null
   }
   getMostRecentPremiumTypeSubscription() {
@@ -265,8 +265,8 @@ class V extends(r = i.ZP.Store) {
 _(V, "displayName", "SubscriptionStore");
 let F = new V(o.Z, {
   BILLING_SUBSCRIPTION_FETCH_SUCCESS: R,
-  BILLING_SUBSCRIPTION_UPDATE_SUCCESS: w,
-  BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_SUCCESS: D,
+  BILLING_SUBSCRIPTION_UPDATE_SUCCESS: D,
+  BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_SUCCESS: w,
   BILLING_PREVIOUS_PREMIUM_SUBSCRIPTION_FETCH_SUCCESS: L,
   BILLING_SUBSCRIPTION_RESET: j,
   BILLING_SUBSCRIPTION_REWARD_ELIGIBILITY_FETCH_START: x,

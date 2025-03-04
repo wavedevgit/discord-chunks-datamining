@@ -16,8 +16,8 @@ var r = n(192379),
   _ = n(594174),
   p = n(106824),
   h = n(691841),
-  m = n(981631),
-  g = n(377668),
+  g = n(981631),
+  m = n(377668),
   E = n(185923);
 
 function v(e, t, n) {
@@ -64,10 +64,10 @@ function S(e, t, n) {
   let {
     channel: C,
     type: R
-  } = e, [P, w] = r.useState(() => (0, p.P)()), D = (0, i.Z)(), L = (0, o.e7)([u.ZP], () => {
+  } = e, [P, D] = r.useState(() => (0, p.P)()), w = (0, i.Z)(), L = (0, o.e7)([u.ZP], () => {
     if (null != e.guild) {
       var t;
-      return null != u.ZP.getMember(null === (t = e.guild) || void 0 === t ? void 0 : t.id, g.fL)
+      return null != u.ZP.getMember(null === (t = e.guild) || void 0 === t ? void 0 : t.id, m.fL)
     }
     return !1
   }), x = (0, c.Ib)(e.guild, e.channel) && !L && !(0, c.g0)(e.guild), M = (0, o.e7)([u.ZP, _.default], () => {
@@ -78,7 +78,7 @@ function S(e, t, n) {
     canMentionEveryone: k,
     hidePersonalInformation: j
   } = (0, o.cj)([d.Z, f.Z], () => ({
-    canMentionEveryone: C.isPrivate() || M || R === l.Ie.RULES_INPUT || d.Z.can(m.Plq.MENTION_EVERYONE, C),
+    canMentionEveryone: C.isPrivate() || M || R === l.Ie.RULES_INPUT || d.Z.can(g.Plq.MENTION_EVERYONE, C),
     hidePersonalInformation: f.Z.hidePersonalInformation
   }), [C, R, M]), {
     activeCommand: U,
@@ -110,11 +110,11 @@ function S(e, t, n) {
   return r.useEffect(() => {
     Z.updateProps(F)
   }), r.useImperativeHandle(t, () => Z, [Z]), r.useEffect(() => {
-    let e = e => w(e);
-    return Z.on("change", e), Z.on("update", D), () => {
-      Z.off("change", e), Z.off("update", D)
+    let e = e => D(e);
+    return Z.on("change", e), Z.on("update", w), () => {
+      Z.off("change", e), Z.off("update", w)
     }
-  }, [D, Z]), r.useEffect(() => {
+  }, [w, Z]), r.useEffect(() => {
     var e;
     let t = null === (e = P.query) || void 0 === e ? void 0 : e.typeInfo.stores;
     if (null != t) {

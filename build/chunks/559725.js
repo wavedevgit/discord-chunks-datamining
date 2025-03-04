@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  cp: () => g,
+  cp: () => m,
   eI: () => _
 }), n(411104);
 var r = n(544891),
@@ -55,7 +55,7 @@ async function _() {
 
 function p(e) {
   if (null != c.Z.cashAppPayComponent) {
-    m(), h();
+    g(), h();
     return
   }
   let t = e.create("cashapp", {
@@ -100,12 +100,12 @@ function h() {
   null === (e = c.Z.cashAppPayComponent) || void 0 === e || e.mount("#".concat(s.F))
 }
 
-function m() {
+function g() {
   var e;
   null === (e = c.Z.cashAppPayComponent) || void 0 === e || e.unmount()
 }
 
-function g() {
+function m() {
   let e = c.Z.cashAppPayComponent;
   if (null == e) throw Error("Adyen CashAppPay component must be created before submitting.");
   e.submit()

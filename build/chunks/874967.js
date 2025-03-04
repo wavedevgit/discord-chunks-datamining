@@ -16,9 +16,9 @@ var r = n(200651),
   _ = n(600164),
   p = n(981631),
   h = n(831077),
-  m = n(802138);
+  g = n(802138);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,7 +34,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -100,7 +100,7 @@ class O extends i.PureComponent {
           children: o
         }), t && (0, r.jsx)(_.Z, {
           wrap: _.Z.Wrap.WRAP,
-          className: m.marginReset,
+          className: g.marginReset,
           grow: 0,
           shrink: 0,
           children: (0, r.jsx)(f.dz2, {
@@ -112,9 +112,9 @@ class O extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), g(this, "state", {
+    super(...e), m(this, "state", {
       color: y(this.props.color)
-    }), g(this, "handleKeyUp", e => {
+    }), m(this, "handleKeyUp", e => {
       if (e.which === p.yXg.ENTER || e.which === p.yXg.SPACE) {
         let e = this.props,
           {
@@ -122,7 +122,7 @@ class O extends i.PureComponent {
           } = e;
         t(v(e, ["onClick"]))
       }
-    }), g(this, "handleClick", () => {
+    }), m(this, "handleClick", () => {
       let e = this.props,
         {
           onClick: t

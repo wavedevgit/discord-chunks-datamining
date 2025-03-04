@@ -18,7 +18,7 @@ var i = n(120356),
   p = n(388032),
   h = n(532594);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,14 +27,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -62,13 +62,13 @@ function b(e) {
     hide: t,
     pillClassName: n,
     containerClassName: i,
-    isInReverseTrial: m
+    isInReverseTrial: g
   } = e, {
     fractionalState: E,
     endsAt: b
   } = (0, l.Z)(), y = (0, s.Z)(b, s.a.LONG_TIME_LEFT);
   if (!0 === t || E === _.a$.NONE) return null;
-  let O = m ? void 0 : p.NW.format(p.t["4RgA6O"], {
+  let O = g ? void 0 : p.NW.format(p.t["4RgA6O"], {
     helpCenterLink: d.Z.getArticleURL(f.BhN.FRACTIONAL_PREMIUM_ABOUT)
   });
   return (0, r.jsx)(c.Z, {
@@ -76,13 +76,13 @@ function b(e) {
     "aria-label": null == O ? void 0 : O.toString(),
     tooltipClassName: h.tooltip,
     className: o()(h.unavailableCounterContainer, i),
-    children: e => (0, r.jsxs)("div", v(g({}, e), {
+    children: e => (0, r.jsxs)("div", v(m({}, e), {
       className: o()(h.unavailableCounterPill, n),
       children: [(0, r.jsx)(a.Text, {
         variant: "text-sm/bold",
         className: h.unavailableCounterPillText,
         children: p.NW.string(p.t["5nrJDA"]).toUpperCase()
-      }), !m && (0, r.jsx)(u.Z, {
+      }), !g && (0, r.jsx)(u.Z, {
         countdownText: y,
         className: h.countDownText
       })]

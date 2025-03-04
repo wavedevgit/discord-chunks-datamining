@@ -54,9 +54,9 @@ function h(e, t) {
   }), e
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
-  var n, r, i = g(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -64,7 +64,7 @@ function m(e, t) {
   return i
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -100,7 +100,7 @@ function v(e) {
   var {
     user: t,
     analyticsLocation: n
-  } = e, i = m(e, ["user", "analyticsLocation"]);
+  } = e, i = g(e, ["user", "analyticsLocation"]);
   let o = (0, l.Y)({
     user: t,
     analyticsLocation: n

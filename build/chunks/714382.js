@@ -49,7 +49,7 @@ function l(e, t, n) {
     return u
   }
 
-  function m(e) {
+  function g(e) {
     if ("function" != typeof e) throw Error(r(4));
     if (_) throw Error(r(5));
     var t = !0;
@@ -64,7 +64,7 @@ function l(e, t, n) {
       }
   }
 
-  function g(e) {
+  function m(e) {
     if (!s(e)) throw Error(r(7));
     if (void 0 === e.type) throw Error(r(8));
     if (_) throw Error(r(9));
@@ -79,13 +79,13 @@ function l(e, t, n) {
 
   function E(e) {
     if ("function" != typeof e) throw Error(r(10));
-    c = e, g({
+    c = e, m({
       type: a.REPLACE
     })
   }
 
   function v() {
-    var e, t = m;
+    var e, t = g;
     return (e = {
       subscribe: function(e) {
         if ("object" != typeof e || null === e) throw Error(r(11));
@@ -101,11 +101,11 @@ function l(e, t, n) {
       return this
     }, e
   }
-  return g({
+  return m({
     type: a.INIT
   }), (o = {
-    dispatch: g,
-    subscribe: m,
+    dispatch: m,
+    subscribe: g,
     getState: h,
     replaceReducer: E
   })[i] = v, o

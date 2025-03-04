@@ -31,7 +31,7 @@ function h(e, t) {
   n > 0 && o >= r || n < 0 && o <= r ? (clearInterval(p), 0 === r && null != t && t()) : (o += n, f = o / 100, d.volume = i()(f, 0, c))
 }
 
-function m(e) {
+function g(e) {
   null != p && clearInterval(p), _ = 0;
   let t = b();
   p = setInterval(() => {
@@ -39,18 +39,18 @@ function m(e) {
   }, l)
 }
 
-function g() {
+function m() {
   null != p && clearInterval(p), d.loop(), _ = c;
   let e = b();
   p = setInterval(() => h(e), l)
 }
 
 function E() {
-  m(d.pause.bind(d))
+  g(d.pause.bind(d))
 }
 
 function v() {
-  m(d.stop.bind(d))
+  g(d.stop.bind(d))
 }
 
 function b() {
@@ -59,7 +59,7 @@ function b() {
 class y extends o.Z {
   constructor(...e) {
     super(...e), s(this, "actions", {
-      VIBING_WUMPUS_PLAY_MUSIC: g,
+      VIBING_WUMPUS_PLAY_MUSIC: m,
       VIBING_WUMPUS_STOP_MUSIC: v,
       VIBING_WUMPUS_PAUSE_MUSIC: E
     })

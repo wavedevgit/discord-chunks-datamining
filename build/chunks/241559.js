@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  hB: () => g,
+  hB: () => m,
   lv: () => f,
   n2: () => p,
-  nX: () => m,
+  nX: () => g,
   rX: () => E,
   xC: () => h
 }), n(47120);
@@ -50,14 +50,14 @@ function h(e) {
   return t && n
 }
 
-function m(e) {
+function g(e) {
   return (0, i.e7)([o.Z, a.Z], () => {
     let t = o.Z.getGuild(e);
     return null != t && a.Z.can(u.Plq.MANAGE_GUILD, t)
   }, [e])
 }
 
-function g(e, t, n) {
+function m(e, t, n) {
   return (0, i.e7)([a.Z, o.Z], () => {
     let r = o.Z.getGuild(e);
     return null != r && t && a.Z.canManageUser(u.Plq.BAN_MEMBERS, n, r)

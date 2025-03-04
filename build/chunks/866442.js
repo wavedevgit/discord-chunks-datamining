@@ -10,7 +10,7 @@ n.d(t, {
   br: () => f,
   ho: () => u,
   mj: () => E,
-  px: () => m,
+  px: () => g,
   wK: () => d
 }), n(301563);
 var r = n(688619),
@@ -105,19 +105,19 @@ function h(e) {
   return i().valid(e)
 }
 
-function m(e) {
+function g(e) {
   return [e >> 16 & 255, e >> 8 & 255, 255 & e]
 }
 
-function g(e, t, n) {
+function m(e, t, n) {
   var r = [e, t, n].map(e => (e /= 255) <= .03928 ? e / 12.92 : Math.pow((e + .055) / 1.055, 2.4));
   return .2126 * r[0] + .7152 * r[1] + .0722 * r[2]
 }
 
 function E(e, t) {
-  let n = m(e),
-    r = m(t);
-  var i = g(n[0], n[1], n[2]),
-    o = g(r[0], r[1], r[2]);
+  let n = g(e),
+    r = g(t);
+  var i = m(n[0], n[1], n[2]),
+    o = m(r[0], r[1], r[2]);
   return (Math.max(i, o) + .05) / (Math.min(i, o) + .05)
 }

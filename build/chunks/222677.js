@@ -2,12 +2,12 @@
 "use strict";
 n.d(t, {
   $E: () => L,
-  T6: () => w,
+  T6: () => D,
   TW: () => I,
   U0: () => R,
   WO: () => x,
   rU: () => P,
-  wX: () => D
+  wX: () => w
 });
 var r = n(544891),
   i = n(780384),
@@ -22,8 +22,8 @@ var r = n(544891),
   _ = n(626135),
   p = n(585483),
   h = n(70956),
-  m = n(176354),
-  g = n(563114),
+  g = n(176354),
+  m = n(563114),
   E = n(981631),
   v = n(388032);
 
@@ -202,7 +202,7 @@ async function P(e, t, n) {
     }
     f ? (i.uv.announce(v.NW.formatToPlainString(v.t["RJlG+f"], {
       name: n.name
-    })), g.Z.triggerFullscreenAnimation({
+    })), m.Z.triggerFullscreenAnimation({
       channelId: e,
       messageId: t,
       emoji: S(y({}, n), {
@@ -227,7 +227,7 @@ async function P(e, t, n) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     channelId: t,
     messageId: n,
@@ -242,14 +242,14 @@ function w(e) {
     key: i
   })
 }
-async function D(e, t, n) {
+async function w(e, t, n) {
   let i = null != n && !!n.isRetry;
   await c.Z.unarchiveThreadIfNecessary(e), r.tn.del({
     url: E.ANM.REMOVE_REACTIONS(e, t),
     oldFormErrors: !0,
     rejectWithError: !1
   }).catch(n => {
-    T(n, () => D(e, t, {
+    T(n, () => w(e, t, {
       isRetry: !0
     }), {
       isRetry: i
@@ -335,7 +335,7 @@ async function x(e) {
 async function M(e, t) {
   let n = [];
   if (t) try {
-    n = await (0, m.B6)(e)
+    n = await (0, g.B6)(e)
   } catch (e) {}
   return n
 }

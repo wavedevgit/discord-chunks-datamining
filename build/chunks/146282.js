@@ -41,11 +41,11 @@ function h(e) {
   u.set(t, n)
 }
 
-function m() {
+function g() {
   c = new Map
 }
 
-function g(e) {
+function m(e) {
   let {
     feedId: t
   } = e;
@@ -99,10 +99,10 @@ class b extends(i = o.ZP.Store) {
 }
 l(b, "displayName", "ContentInventoryStore");
 let y = new b(a.Z, {
-  CONNECTION_OPEN: m,
+  CONNECTION_OPEN: g,
   CONTENT_INVENTORY_SET_FEED: p,
   CONTENT_INVENTORY_SET_FEED_STATE: h,
   CONTENT_INVENTORY_SET_FILTERS: E,
-  CONTENT_INVENTORY_CLEAR_FEED: g,
+  CONTENT_INVENTORY_CLEAR_FEED: m,
   CONTENT_INVENTORY_DEBUG_TOGGLE_IMPRESSION_CAPPING: v
 })

@@ -16,8 +16,8 @@ var r, i = n(200651),
   _ = n(540059),
   p = n(585483),
   h = n(872801),
-  m = n(302901),
-  g = n(981631),
+  g = n(302901),
+  m = n(981631),
   E = n(761069);
 
 function v(e, t, n) {
@@ -143,7 +143,7 @@ function P(e, t, n) {
   return n
 }
 
-function w(e) {
+function D(e) {
   let {
     targetRef: t,
     overrideTargetRect: n
@@ -151,9 +151,9 @@ function w(e) {
   return null != n ? n : (c()(null != t.current, "Invalid ref"), t.current.getBoundingClientRect())
 }
 
-function D(e, t) {
-  let n = w(e),
-    r = w(t);
+function w(e, t) {
+  let n = D(e),
+    r = D(t);
   return n.top === r.top && n.left === r.left
 }
 class L extends(r = o.Component) {
@@ -269,7 +269,7 @@ class L extends(r = o.Component) {
   calculatePositionStyle(e, t, n) {
     let {
       spacing: r = 0
-    } = this.props, i = w(this.props), o = n.getBoundingClientRect(), a = C(i, o.left, o.top);
+    } = this.props, i = D(this.props), o = n.getBoundingClientRect(), a = C(i, o.left, o.top);
     switch (e) {
       case "top":
         return this.getHorizontalAlignmentStyle(a, t, n, {
@@ -305,7 +305,7 @@ class L extends(r = o.Component) {
       autoInvert: t
     } = this.props, n = this.elementRef.current;
     c()(null != n, "Unexpected null element");
-    let r = (0, m.wL)(n),
+    let r = (0, g.wL)(n),
       {
         style: i,
         nudge: o
@@ -340,10 +340,10 @@ class L extends(r = o.Component) {
       isPositioned: !0
     }, this.calculateState()));
     let i = this.elementRef.current;
-    c()(null != i, "Missing elementRef"), null != n.current && S.set(i, n.current), p.S.subscribe(g.CkL.LAYER_POP_START, this.handleLayerPopStart), p.S.subscribe(g.CkL.LAYER_POP_COMPLETE, this.handleLayerPopComplete), null == i || null === (t = i.ownerDocument) || void 0 === t || null === (e = t.defaultView) || void 0 === e || e.addEventListener("resize", this.handleLayerPopComplete), this.unsubscribeDesktopVisualRefreshExperiment = (0, _.yl)("ReferencePositionLayer", this.handleDesktopVisualRefreshExperimentChange), null == r || r()
+    c()(null != i, "Missing elementRef"), null != n.current && S.set(i, n.current), p.S.subscribe(m.CkL.LAYER_POP_START, this.handleLayerPopStart), p.S.subscribe(m.CkL.LAYER_POP_COMPLETE, this.handleLayerPopComplete), null == i || null === (t = i.ownerDocument) || void 0 === t || null === (e = t.defaultView) || void 0 === e || e.addEventListener("resize", this.handleLayerPopComplete), this.unsubscribeDesktopVisualRefreshExperiment = (0, _.yl)("ReferencePositionLayer", this.handleDesktopVisualRefreshExperimentChange), null == r || r()
   }
   componentDidUpdate(e, t) {
-    if (N(e) === N(this.props) && D(e, this.props) || this.updatePosition(), t.position !== this.state.position) {
+    if (N(e) === N(this.props) && w(e, this.props) || this.updatePosition(), t.position !== this.state.position) {
       var n, r;
       null === (n = (r = this.props).onPositionChange) || void 0 === n || n.call(r, this.state.position)
     }
@@ -351,7 +351,7 @@ class L extends(r = o.Component) {
   componentWillUnmount() {
     var e, t, n, r, i, o;
     let a = this.elementRef.current;
-    c()(null != a, "Missing elementRef"), S.delete(a), p.S.unsubscribe(g.CkL.LAYER_POP_START, this.handleLayerPopStart), p.S.unsubscribe(g.CkL.LAYER_POP_COMPLETE, this.handleLayerPopComplete), null == a || null === (t = a.ownerDocument) || void 0 === t || null === (e = t.defaultView) || void 0 === e || e.removeEventListener("resize", this.handleLayerPopComplete), null === (n = (r = this).unsubscribeDesktopVisualRefreshExperiment) || void 0 === n || n.call(r), null === (i = (o = this.props).onUnmount) || void 0 === i || i.call(o)
+    c()(null != a, "Missing elementRef"), S.delete(a), p.S.unsubscribe(m.CkL.LAYER_POP_START, this.handleLayerPopStart), p.S.unsubscribe(m.CkL.LAYER_POP_COMPLETE, this.handleLayerPopComplete), null == a || null === (t = a.ownerDocument) || void 0 === t || null === (e = t.defaultView) || void 0 === e || e.removeEventListener("resize", this.handleLayerPopComplete), null === (n = (r = this).unsubscribeDesktopVisualRefreshExperiment) || void 0 === n || n.call(r), null === (i = (o = this.props).onUnmount) || void 0 === i || i.call(o)
   }
   render() {
     let {

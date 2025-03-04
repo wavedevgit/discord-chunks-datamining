@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(703558),
   p = n(626135),
   h = n(358085),
-  m = n(998502),
-  g = n(981631),
+  g = n(998502),
+  m = n(981631),
   E = n(388032),
   v = n(720513),
   b = n(802138);
@@ -90,8 +90,8 @@ function A(e) {
       }), f(!0)
     })
   }, []);
-  let m = (0, c.Z)(h),
-    g = Math.max(16, (N + T - (null !== (t = null == m ? void 0 : m.width) && void 0 !== t ? t : 0)) / 2);
+  let g = (0, c.Z)(h),
+    m = Math.max(16, (N + T - (null !== (t = null == g ? void 0 : g.width) && void 0 !== t ? t : 0)) / 2);
   return (0, r.jsx)("img", {
     ref: h,
     src: l,
@@ -103,8 +103,8 @@ function A(e) {
     style: {
       width: null !== (n = _.width) && void 0 !== n ? n : "initial",
       height: null !== (o = _.height) && void 0 !== o ? o : T,
-      marginLeft: g,
-      marginRight: g,
+      marginLeft: m,
+      marginRight: m,
       marginTop: null != _.height ? T - _.height - 33 : -33
     }
   })
@@ -124,10 +124,10 @@ class C extends i.Component {
 class R extends i.Component {
   componentDidMount() {
     var e;
-    (null === (e = this.props.upload) || void 0 === e ? void 0 : e.showLargeMessageDialog) && this.props.upload.item.platform === u.ow.WEB && p.default.track(g.rMx.OPEN_MODAL, {
+    (null === (e = this.props.upload) || void 0 === e ? void 0 : e.showLargeMessageDialog) && this.props.upload.item.platform === u.ow.WEB && p.default.track(m.rMx.OPEN_MODAL, {
       type: "Upload Large Message",
       message_content_length: this.props.upload.item.file.size
-    }), h.isPlatformEmbedded && m.ZP.focus()
+    }), h.isPlatformEmbedded && g.ZP.focus()
   }
   shouldComponentUpdate(e) {
     return null != e.upload
@@ -186,7 +186,7 @@ class R extends i.Component {
               filename: e
             }),
             onKeyDown: e => {
-              if (e.which === g.yXg.ENTER) return this.handleSubmit()
+              if (e.which === m.yXg.ENTER) return this.handleSubmit()
             }
           }), e.isImage ? (0, r.jsxs)(i.Fragment, {
             children: [(0, r.jsx)("div", {
@@ -202,7 +202,7 @@ class R extends i.Component {
                 description: e
               }),
               onKeyDown: e => {
-                if (e.which === g.yXg.ENTER) return this.handleSubmit()
+                if (e.which === m.yXg.ENTER) return this.handleSubmit()
               }
             })]
           }) : null, !0 !== o && (0, r.jsx)(s.XZJ, {

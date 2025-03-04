@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  FD: () => g,
+  FD: () => m,
   I5: () => S,
   Mn: () => y,
-  P6: () => w,
+  P6: () => D,
   Re: () => I,
   S2: () => b,
   UZ: () => T,
@@ -39,7 +39,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function m(e) {
   return e
 }
 
-function g() {
+function m() {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_INIT"
   })
@@ -69,7 +69,7 @@ function v(e, t) {
     i = t ? f.ANM.DELETE_ACCOUNT : f.ANM.DISABLE_ACCOUNT,
     o = t => r.tn.post({
       url: i,
-      body: m({
+      body: g({
         password: e
       }, t),
       oldFormErrors: !0,
@@ -118,7 +118,7 @@ function y(e) {
     password: s,
     avatar: d,
     avatarDescription: h,
-    avatarId: g,
+    avatarId: m,
     avatarDecoration: E,
     newPassword: v,
     globalName: y
@@ -126,14 +126,14 @@ function y(e) {
   return a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SUBMIT"
   }), (0, u.Z)(e => {
-    let a = m({
+    let a = g({
       username: t,
       email: r,
       email_token: o,
       password: s,
       avatar: d,
       avatar_description: h,
-      avatar_id: g,
+      avatar_id: m,
       discriminator: n,
       global_name: y,
       new_password: v
@@ -160,11 +160,11 @@ function y(e) {
     return l.default.track(f.rMx.USER_AVATAR_UPDATED, {
       animated: (0, c.xR)(t.avatar),
       is_guild_profile: !1,
-      recent_avatar_id: null != g ? Number(g) : void 0,
-      is_edited_recent_avatar: null != d && null != g
+      recent_avatar_id: null != m ? Number(m) : void 0,
+      is_edited_recent_avatar: null != d && null != m
     }), a.Z.dispatch({
       type: "USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS"
-    }), (null != d || null != g) && a.Z.dispatch({
+    }), (null != d || null != m) && a.Z.dispatch({
       type: "RECENT_AVATARS_UPDATE"
     }), e
   }, e => (a.Z.dispatch({
@@ -237,7 +237,7 @@ function P() {
   })
 }
 
-function w() {
+function D() {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM"
   })

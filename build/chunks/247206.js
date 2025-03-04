@@ -15,7 +15,7 @@ n.d(t, {
   Yy: () => V,
   aP: () => Z,
   bR: () => J,
-  l4: () => D,
+  l4: () => w,
   lJ: () => k,
   m8: () => ee,
   oh: () => B,
@@ -37,8 +37,8 @@ var r = n(286379),
   _ = n(594174),
   p = n(626135),
   h = n(630388),
-  m = n(948561),
-  g = n(704454),
+  g = n(948561),
+  m = n(704454),
   E = n(719548),
   v = n(981631),
   b = n(973005);
@@ -94,10 +94,10 @@ let S = {
     } = e;
     if (null != t && t !== i.Q4.UNSET_EXPLICIT_CONTENT_REDACTION) return t;
     let o = _.default.getCurrentUser();
-    return (0, g.bc)("resolveSettingWithDefaults") ? w({
+    return (0, m.bc)("resolveSettingWithDefaults") ? D({
       isDm: n,
       isFriend: r
-    }) : (0, g.g2)("resolveSettingWithDefaults") ? i.Q4.BLUR : (null == o ? void 0 : o.nsfwAllowed) === !1 ? P({
+    }) : (0, m.g2)("resolveSettingWithDefaults") ? i.Q4.BLUR : (null == o ? void 0 : o.nsfwAllowed) === !1 ? P({
       isDm: n,
       isFriend: r
     }) : R({
@@ -123,14 +123,14 @@ let S = {
     let r = u.UP.getSetting();
     return n ? T[r] : N[r]
   },
-  w = e => {
+  D = e => {
     let {
       isDm: t = !1,
       isFriend: n = !1
     } = e;
     return t && !n ? i.Q4.BLOCK : i.Q4.BLUR
   },
-  D = () => {
+  w = () => {
     let e = u.Sh.getSetting();
     return {
       explicitContentGuilds: C({
@@ -160,11 +160,11 @@ function x(e) {
     explicitContentGuilds: r,
     explicitContentFriendDm: i,
     explicitContentNonFriendDm: o
-  } = D(), a = d.Z.getChannel(e.channel_id);
+  } = w(), a = d.Z.getChannel(e.channel_id);
   return null != a && (a.isDM() || a.isGroupDM() ? null != e.author && f.Z.getFriendIDs().includes(e.author.id) ? L(i) : L(o) : L(r))
 }
 let M = e => {
-  let t = D();
+  let t = w();
   u.Sh.updateSetting(O({}, t, e))
 };
 var k = function(e) {
@@ -263,7 +263,7 @@ function Y(e) {
     message_id: s,
     embed_ids: f,
     user_is_underage: (0, c.U)(),
-    scan_timeout_duration: m.b2,
+    scan_timeout_duration: g.b2,
     attachment_ids_v2: u
   }), l.Z.increment({
     name: r.V.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT,
@@ -361,13 +361,13 @@ function X(e) {
 let J = (e, t) => null != e && null != t && (e <= E.LN || t <= E.iE);
 
 function $() {
-  let e = (0, g.G7)("explicit_media_redaction_utils"),
+  let e = (0, m.G7)("explicit_media_redaction_utils"),
     t = (0, o.sf)();
   return e && t
 }
 
 function ee() {
-  let e = (0, g.UQ)("explicit_media_redaction_utils"),
+  let e = (0, m.UQ)("explicit_media_redaction_utils"),
     t = (0, o.L5)();
   return e && t
 }

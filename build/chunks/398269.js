@@ -24,14 +24,14 @@ async function f() {
   if (!(f || _) && e === a.R5.UNSET) return;
   let p = e === a.R5.OUT_OF_PROCESS_V3 || e === a.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
     h = e === a.R5.OUT_OF_PROCESS_V2,
-    m = e => null;
+    g = e => null;
   if (f && !h || p) {
     let e = (0, i.Un)({
       createPromise: () => Promise.all([n.e("50506"), n.e("35535"), n.e("25292"), n.e("90508"), n.e("13351"), n.e("88936"), n.e("88712"), n.e("70205"), n.e("12416"), n.e("7755"), n.e("92922"), n.e("50751"), n.e("1093"), n.e("13368")]).then(n.bind(n, 989373)),
       webpackId: 989373,
       name: "AppOverlay"
     });
-    m = t => (0, r.jsx)(e, {
+    g = t => (0, r.jsx)(e, {
       withTitleBar: !1,
       windowKey: t
     }), (0, o.te)(d.OVERLAY_V3_LAYOUT_ID, l.Z.getDefaultLayout(d.OVERLAY_V3_LAYOUT_ID, d.OVERLAY_V3_LAYOUT_VERSION), d.OVERLAY_V3_LAYOUT_VERSION)
@@ -41,10 +41,10 @@ async function f() {
       webpackId: 969383,
       name: "AppOverlayV2Tech"
     });
-    m = t => (0, r.jsx)(e, {
+    g = t => (0, r.jsx)(e, {
       withTitleBar: !1,
       windowKey: t
     }), (0, o.te)(c.OVERLAY_LAYOUT_ID, l.Z.getDefaultLayout(c.OVERLAY_LAYOUT_ID, 0), 0)
   } else throw Error("OverlayV3Utils: No overlay rendering mode found");
-  await s.bA(d.$J, m, t)
+  await s.bA(d.$J, g, t)
 }

@@ -85,7 +85,7 @@ function h() {
     {
       applicationId: p,
       section: h,
-      skuId: m
+      skuId: g
     } = null !== (t = null == _ ? void 0 : _.params) && void 0 !== t ? t : {};
   if (null != _ && null != p) {
     let e = null === (n = a.Z.getApplication(p)) || void 0 === n ? void 0 : n.name;
@@ -93,7 +93,7 @@ function h() {
       type: "application",
       applicationId: p,
       applicationName: e,
-      section: null != h ? h : null != m ? l.GlobalDiscoveryAppsSections.STORE : l.GlobalDiscoveryAppsSections.ABOUT
+      section: null != h ? h : null != g ? l.GlobalDiscoveryAppsSections.STORE : l.GlobalDiscoveryAppsSections.ABOUT
     }
   }
 }

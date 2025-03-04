@@ -24,18 +24,18 @@ function _(e, t, n) {
 let p = !0,
   h = !0;
 
-function m(e) {
+function g(e) {
   return null == e || !!e.suppress || null != e.requestToSpeakTimestamp
 }
 
-function g() {
+function m() {
   let e;
   let t = u.Z.getChannelId();
   if (null == t) e = !0;
   else {
     let n = s.Z.getChannel(t),
       r = d.Z.getVoiceState(null == n ? void 0 : n.getGuildId(), a.default.getId());
-    e = l.Z.getMode() !== f.pM4.VOICE_ACTIVITY || null == n || n.isPrivate() || n.isGuildStageVoice() || c.Z.can(f.Plq.USE_VAD, n) || m(r)
+    e = l.Z.getMode() !== f.pM4.VOICE_ACTIVITY || null == n || n.isPrivate() || n.isGuildStageVoice() || c.Z.can(f.Plq.USE_VAD, n) || g(r)
   }
   if (p === e) return !1;
   h = e, p = e, o.Z.dispatch({
@@ -52,7 +52,7 @@ function E(e) {
     let {
       userId: t
     } = e;
-    return t === a.default.getId() && g()
+    return t === a.default.getId() && m()
   })
 }
 
@@ -76,15 +76,15 @@ class y extends(r = i.ZP.Store) {
 }
 _(y, "displayName", "PermissionVADStore");
 let O = new y(o.Z, {
-  RTC_CONNECTION_STATE: g,
-  MEDIA_ENGINE_SET_AUDIO_ENABLED: g,
-  AUDIO_SET_MODE: g,
-  CHANNEL_UPDATES: g,
-  THREAD_UPDATE: g,
-  GUILD_ROLE_UPDATE: g,
-  GUILD_MEMBER_UPDATE: g,
-  IMPERSONATE_UPDATE: g,
-  IMPERSONATE_STOP: g,
+  RTC_CONNECTION_STATE: m,
+  MEDIA_ENGINE_SET_AUDIO_ENABLED: m,
+  AUDIO_SET_MODE: m,
+  CHANNEL_UPDATES: m,
+  THREAD_UPDATE: m,
+  GUILD_ROLE_UPDATE: m,
+  GUILD_MEMBER_UPDATE: m,
+  IMPERSONATE_UPDATE: m,
+  IMPERSONATE_STOP: m,
   VOICE_STATE_UPDATES: E,
   AUDIO_TOGGLE_SELF_MUTE: b,
   PERMISSION_CLEAR_VAD_WARNING: v

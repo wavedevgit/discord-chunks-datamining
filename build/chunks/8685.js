@@ -51,10 +51,10 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = () => {
+let g = () => {
     s.Z.clearSuppressWarning()
   },
-  g = () => {
+  m = () => {
     s.Z.clearSuppressWarning(!0)
   },
   E = () => {
@@ -68,10 +68,10 @@ let m = () => {
       f ? (t = d.NW.string(d.t.Y40JkZ), n = d.NW.string(d.t["5J4yGR"])) : (t = d.NW.string(d.t.FJSZVF), n = d.NW.string(d.t.etJjgY)), e.current = (0, a.h7j)(e => (0, r.jsx)(l.default, _({
         title: t,
         body: n,
-        onConfirm: m,
+        onConfirm: g,
         confirmText: d.NW.string(d.t.BddRzc),
         secondaryConfirmText: d.NW.string(d.t["5E9SBw"]),
-        onConfirmSecondary: g
+        onConfirmSecondary: m
       }, e)))
     }, [f]), E = i.useCallback(() => {
       (0, a.ZDy)(async () => {

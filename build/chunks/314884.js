@@ -70,14 +70,14 @@ function h() {
   f = {}, d = !1
 }
 
-function m() {
+function g() {
   let e = {};
   for (let t of Object.values(f)) e[t.id] = t, t.subscription = a.ZP.getSubscriptionById(t.subscriptionId);
   f = e
 }
-class g extends(r = i.ZP.Store) {
+class m extends(r = i.ZP.Store) {
   initialize() {
-    this.syncWith([a.ZP], m)
+    this.syncWith([a.ZP], g)
   }
   get hasFetched() {
     return d
@@ -89,8 +89,8 @@ class g extends(r = i.ZP.Store) {
     return f[e]
   }
 }
-s(g, "displayName", "GuildBoostSlotStore");
-let E = new g(o.Z, {
+s(m, "displayName", "GuildBoostSlotStore");
+let E = new m(o.Z, {
   GUILD_BOOST_SLOTS_FETCH_SUCCESS: _,
   GUILD_BOOST_SLOT_UPDATE_SUCCESS: p,
   GUILD_BOOST_SLOT_CREATE: p,

@@ -52,8 +52,8 @@ let u = 99,
       empty: !0,
       guildId: s
     }, "empty-member-".concat(e)));
-    let m = Math.max(Math.min(d - p.length, u), 0);
-    if (1 === m) {
+    let g = Math.max(Math.min(d - p.length, u), 0);
+    if (1 === g) {
       let e = n[a];
       p.push((0, r.jsx)(f, {
         member: e,
@@ -64,9 +64,9 @@ let u = 99,
       className: c.wrapper,
       children: (0, r.jsxs)("div", {
         className: c.partyMembers,
-        children: [p, m > 1 ? (0, r.jsxs)("div", {
+        children: [p, g > 1 ? (0, r.jsxs)("div", {
           className: c.partyMemberOverflow,
-          children: ["+", m]
+          children: ["+", g]
         }) : null]
       })
     })

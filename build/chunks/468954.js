@@ -58,8 +58,8 @@ function p(e) {
     store: f,
     onSelectItem: p,
     onSearchExpressions: h,
-    hasSearchResults: m,
-    defaultSearchPlaceholder: g,
+    hasSearchResults: g,
+    defaultSearchPlaceholder: m,
     emptySearchPlaceholder: E,
     renderEmptyState: v,
     renderRow: b,
@@ -73,8 +73,8 @@ function p(e) {
     rowHeight: C,
     sectionHeaderHeight: R,
     sectionFooterHeight: P,
-    itemNodeWidth: w,
-    listPaddingRight: D,
+    itemNodeWidth: D,
+    listPaddingRight: w,
     itemNodeMargin: L,
     listPadding: x,
     gridNavigatorId: M,
@@ -96,8 +96,8 @@ function p(e) {
     categories: t,
     collapsedCategories: n,
     gridWidth: Y,
-    listPaddingRight: D,
-    itemNodeWidth: w,
+    listPaddingRight: w,
+    itemNodeWidth: D,
     itemNodeMargin: L
   }), {
     getItemProps: J,
@@ -139,7 +139,7 @@ function p(e) {
       onKeyDown: et,
       expressionsListRef: V,
       gridNavigatorId: M,
-      defaultSearchPlaceholder: g,
+      defaultSearchPlaceholder: m,
       emptySearchPlaceholder: E
     }), null == A ? void 0 : A()]
   });
@@ -160,7 +160,7 @@ function p(e) {
           categories: t,
           ref: V,
           store: f,
-          hasSearchResults: m,
+          hasSearchResults: g,
           listPadding: x,
           renderRow: er,
           renderSection: null != y ? ei : void 0,

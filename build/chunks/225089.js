@@ -22,11 +22,11 @@ function f(e) {
     canUsePremiumCustomization: _,
     pendingBanner: p,
     isTryItOutFlow: h,
-    disabledInputs: m,
-    onUpsellClick: g
+    disabledInputs: g,
+    onUpsellClick: m
   } = e, E = _ || (null == n ? void 0 : n.canUsePremiumProfileCustomization) || !1, v = E ? i.vdY : i.SrA, b = (0, o.M)(E), y = () => {
     if (!E && !b) {
-      null == g || g();
+      null == m || m();
       return
     }(0, s.$r)(l.pC.BANNER, f, h)
   };
@@ -37,7 +37,7 @@ function f(e) {
     profileType: c.y0.BITE_SIZE,
     pendingBanner: p,
     canUsePremiumProfileCustomization: _,
-    children: !m && (0, r.jsxs)(i.P3F, {
+    children: !g && (0, r.jsxs)(i.P3F, {
       onClick: y,
       className: d.clickable,
       children: [(0, r.jsx)(v, {

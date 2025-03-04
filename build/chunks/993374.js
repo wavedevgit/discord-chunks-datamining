@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   I: () => d,
-  j: () => m
+  j: () => g
 }), n(47120), n(566702);
 var r = n(498607),
   i = n.n(r),
@@ -84,7 +84,7 @@ function p(e, t) {
 function h(e, t) {
   return 0 !== t.size && Array.from(t).every(t => e.roles.includes(t))
 }
-class m {
+class g {
   get requiresUsernameMatch() {
     return this._searchState.query.trim().length > 0
   }

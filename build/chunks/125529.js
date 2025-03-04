@@ -77,13 +77,13 @@ function f(e) {
     clearTimeout(f.current), p(!0)
   }
 
-  function m() {
+  function g() {
     clearTimeout(f.current), f.current = setTimeout(() => p(!1), t)
   }
   return (0, r.jsx)("div", {
     className: l,
     onMouseEnter: 0 !== t ? h : () => {},
-    onMouseLeave: 0 !== t ? m : () => {},
+    onMouseLeave: 0 !== t ? g : () => {},
     children: (0, r.jsx)(o.u, c(s({
       forceOpen: _,
       disableTooltipPointerEvents: !1

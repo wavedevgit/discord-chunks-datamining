@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -67,7 +67,7 @@ function h(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class m extends i.Component {
+class g extends i.Component {
   render() {
     let e = this.props,
       {
@@ -77,8 +77,8 @@ class m extends i.Component {
         mediaPlayerClassName: u,
         poster: f,
         fileName: h,
-        naturalWidth: m,
-        naturalHeight: g,
+        naturalWidth: g,
+        naturalHeight: m,
         playable: E,
         downloadable: v = !0,
         volume: b,
@@ -92,8 +92,8 @@ class m extends i.Component {
         onClick: C,
         onPlay: R,
         onPause: P,
-        onEnded: w,
-        onControlsShow: D,
+        onEnded: D,
+        onControlsShow: w,
         onControlsHide: L,
         onVolumeChange: x,
         onMute: M,
@@ -118,7 +118,7 @@ class m extends i.Component {
             width: a,
             height: c
           }
-        } = e, d = !(m <= l.N_j && g <= l.XKF || m <= l.XKF && g <= l.N_j);
+        } = e, d = !(g <= l.N_j && m <= l.XKF || g <= l.XKF && m <= l.N_j);
         return (0, r.jsx)(s.ZP, {
           className: u,
           forceExternal: d,
@@ -141,10 +141,10 @@ class m extends i.Component {
           onClick: C,
           onPlay: R,
           onPause: P,
-          onEnded: w,
+          onEnded: D,
           onVolumeChange: x,
           onMute: M,
-          onControlsShow: D,
+          onControlsShow: w,
           onControlsHide: L,
           mimeType: T,
           downloadable: v

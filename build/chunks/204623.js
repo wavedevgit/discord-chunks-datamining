@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(451478),
   p = n(176354),
   h = n(63063),
-  m = n(358085),
-  g = n(998502),
+  g = n(358085),
+  m = n(998502),
   E = n(151851),
   v = n(981631),
   b = n(388032);
@@ -33,9 +33,9 @@ function y(e, t, n) {
 
 function O() {
   let e = window.require("electron").remote.getCurrentWindow();
-  g.ZP.minimize = () => e.minimize(), g.ZP.maximize = () => {
+  m.ZP.minimize = () => e.minimize(), m.ZP.maximize = () => {
     e.isMaximized() ? e.unmaximize() : e.maximize()
-  }, g.ZP.close = () => e.close()
+  }, m.ZP.close = () => e.close()
 }
 let S = l.ZP.connectStores([_.Z], () => ({
   focused: _.Z.isFocused()
@@ -44,7 +44,7 @@ class I extends i.PureComponent {
   getPlatform() {
     var e;
     let t = null === (e = a().os) || void 0 === e ? void 0 : e.family;
-    return null != t && /^win/i.test(t) ? m.PlatformTypes.WINDOWS : null != t && /darwin|os x/i.test(t) ? m.PlatformTypes.OSX : m.PlatformTypes.LINUX
+    return null != t && /^win/i.test(t) ? g.PlatformTypes.WINDOWS : null != t && /darwin|os x/i.test(t) ? g.PlatformTypes.OSX : g.PlatformTypes.LINUX
   }
   componentDidMount() {
     O()
@@ -80,7 +80,7 @@ class I extends i.PureComponent {
   }
   constructor(...e) {
     super(...e), y(this, "handleDownload", () => {
-      window.open(this.getPlatform() === m.PlatformTypes.WINDOWS ? h.Z.getArticleURL(v.BhN.CORRUPT_INSTALLATION) : v.EYA.DOWNLOAD)
+      window.open(this.getPlatform() === g.PlatformTypes.WINDOWS ? h.Z.getArticleURL(v.BhN.CORRUPT_INSTALLATION) : v.EYA.DOWNLOAD)
     })
   }
 }

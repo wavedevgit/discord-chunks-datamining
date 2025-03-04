@@ -55,11 +55,11 @@ function h(e) {
     requestedScopes: o,
     integrationType: l,
     errors: h,
-    isTrustedName: m = !1
-  } = e, g = (0, u.Z)(() => d.ZW[Math.floor(Math.random() * d.ZW.length)]);
+    isTrustedName: g = !1
+  } = e, m = (0, u.Z)(() => d.ZW[Math.floor(Math.random() * d.ZW.length)]);
   if (0 === i.length) return null;
-  let E = g(),
-    v = m ? f.t.PZpY9f : f.t["1Hz+Sk"],
+  let E = m(),
+    v = g ? f.t.PZpY9f : f.t["1Hz+Sk"],
     b = l === a.Y.USER_INSTALL && o.includes(s.x.APPLICATIONS_COMMANDS);
   return (0, r.jsxs)("div", {
     className: _.scopes,

@@ -17,8 +17,8 @@ var i = n(442837),
   _ = n(158508),
   p = n(622724),
   h = n(785717),
-  m = n(621853),
-  g = n(475413),
+  g = n(621853),
+  m = n(475413),
   E = n(388032);
 
 function v(e, t, n) {
@@ -58,7 +58,7 @@ function y(e) {
     location: "UserSettingsAuthedApps"
   }, {
     autoTrackExposure: !0
-  }).enabled, N = (0, i.e7)([m.Z], () => m.Z.getUserProfile(t.id)), A = null == N ? void 0 : N.application, C = (0, d.Z)({
+  }).enabled, N = (0, i.e7)([g.Z], () => g.Z.getUserProfile(t.id)), A = null == N ? void 0 : N.application, C = (0, d.Z)({
     user: t,
     application: null != A ? A : void 0,
     guildId: n,
@@ -93,7 +93,7 @@ function y(e) {
       action: "UNIGNORE",
       analyticsLocations: S
     })
-  }), w = (0, p.Z)({
+  }), D = (0, p.Z)({
     user: t,
     guildId: n,
     location: I,
@@ -102,7 +102,7 @@ function y(e) {
       action: "REPORT",
       analyticsLocations: S
     })
-  }), D = (0, u.Z)({
+  }), w = (0, u.Z)({
     id: null == A ? void 0 : A.id,
     label: E.NW.string(E.t["+NP/b2"]),
     onSuccess: () => O({
@@ -111,7 +111,7 @@ function y(e) {
     })
   }), L = [
     [v], T ? [C] : [],
-    [P, R, w],
+    [P, R, D],
     [(0, c.Z)({
       application: A,
       label: E.NW.string(E.t.WqhZsr),
@@ -119,7 +119,7 @@ function y(e) {
         action: "COPY_APP_LINK",
         analyticsLocations: S
       })
-    }), D]
+    }), w]
   ];
   return L.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.yRy, {
     renderPopout: e => {
@@ -136,7 +136,7 @@ function y(e) {
         }, t))
       })
     },
-    children: e => (0, r.jsx)(g.oY, b({
+    children: e => (0, r.jsx)(m.oY, b({
       action: "PRESS_OPTIONS",
       icon: o.xhG,
       tooltipText: E.NW.string(E.t.UKOtz8)

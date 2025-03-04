@@ -42,13 +42,13 @@ function l(e) {
         }
         _ && t.push([d, _])
       }
-    } var m = t.map(function(e) {
+    } var g = t.map(function(e) {
       var t = e[0],
         n = e[1];
       return "".concat(t, "=").concat(n.toString())
     }).join(";"),
-    g = "";
-  return "" !== m && (g = "RRULE:".concat(m)), [n, g].filter(function(e) {
+    m = "";
+  return "" !== g && (m = "RRULE:".concat(g)), [n, m].filter(function(e) {
     return !!e
   }).join("\n")
 }

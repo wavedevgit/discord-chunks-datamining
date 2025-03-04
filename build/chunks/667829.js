@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(430742),
   p = n(166459),
   h = n(911969),
-  m = n(476326),
-  g = n(998698),
+  g = n(476326),
+  m = n(998698),
   E = n(710845),
   v = n(117530),
   b = n(459273),
@@ -32,7 +32,7 @@ var r = n(200651),
   R = n(388032),
   P = n(25675);
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -41,14 +41,14 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
@@ -204,15 +204,15 @@ class j extends i.Component {
       onKeyDown: _,
       onResize: p,
       onSubmit: h,
-      channel: m,
-      type: g,
+      channel: g,
+      type: m,
       fontSize: E,
       useSlate: v,
       spellcheckEnabled: y,
       useNewSlashCommands: I,
       canOnlyUseTextCommands: A,
       className: R,
-      id: w,
+      id: D,
       required: L,
       maxCharacterCount: M,
       allowNewLines: j,
@@ -223,18 +223,18 @@ class j extends i.Component {
       submitting: V,
       popup: F
     } = this.state, Z = {
-      channel: m,
+      channel: g,
       className: a()(R, P.textArea, {
         [P.textAreaSlate]: v,
         [P.textAreaDisabled]: u || V
       }),
-      id: w,
+      id: D,
       placeholder: this.getPlaceholder(),
       required: L,
       accessibilityLabel: B,
       disabled: u || !1,
       submitting: V,
-      isEdit: g === O.Ie.EDIT,
+      isEdit: m === O.Ie.EDIT,
       onFocus: this.handleFocus,
       onBlur: this.handleBlur,
       onPaste: this.handlePaste,
@@ -249,16 +249,16 @@ class j extends i.Component {
       onKeyDown: _,
       onSubmit: h,
       textAreaPaddingClassName: a()(k[E], {
-        [P.textAreaWithoutAttachmentButton]: g !== O.Ie.NORMAL && g !== O.Ie.OVERLAY && g !== O.Ie.THREAD_CREATION && g !== O.Ie.SIDEBAR,
-        [P.textAreaForPostCreation]: g === O.Ie.CREATE_FORUM_POST,
-        [P.textAreaCustomGift]: g === O.Ie.CUSTOM_GIFT,
-        [P.textAreaForUserProfile]: g === O.Ie.USER_PROFILE,
-        [P.textAreaForOverlayInlineReply]: g === O.Ie.OVERLAY_INLINE_REPLY
+        [P.textAreaWithoutAttachmentButton]: m !== O.Ie.NORMAL && m !== O.Ie.OVERLAY && m !== O.Ie.THREAD_CREATION && m !== O.Ie.SIDEBAR,
+        [P.textAreaForPostCreation]: m === O.Ie.CREATE_FORUM_POST,
+        [P.textAreaCustomGift]: m === O.Ie.CUSTOM_GIFT,
+        [P.textAreaForUserProfile]: m === O.Ie.USER_PROFILE,
+        [P.textAreaForOverlayInlineReply]: m === O.Ie.OVERLAY_INLINE_REPLY
       }),
       spellcheckEnabled: y,
       useNewSlashCommands: I,
-      disableAutoFocus: f.tq || null !== (n = g.disableAutoFocus) && void 0 !== n && n,
-      disableEnterToSubmit: null !== (i = null === (e = g.submit) || void 0 === e ? void 0 : e.disableEnterToSubmit) && void 0 !== i && i,
+      disableAutoFocus: f.tq || null !== (n = m.disableAutoFocus) && void 0 !== n && n,
+      disableEnterToSubmit: null !== (i = null === (e = m.submit) || void 0 === e ? void 0 : e.disableEnterToSubmit) && void 0 !== i && i,
       "aria-controls": null !== (o = F.id) && void 0 !== o ? o : void 0,
       "aria-haspopup": "listbox",
       "aria-expanded": null !== F.id || void 0,
@@ -267,14 +267,14 @@ class j extends i.Component {
       "aria-describedby": U,
       "aria-labelledby": G,
       "aria-autocomplete": "list"
-    }, H = v ? (0, r.jsx)(N.Z, x(D({
+    }, H = v ? (0, r.jsx)(N.Z, x(w({
       ref: this.ref
     }, Z), {
-      type: g,
+      type: m,
       value: u ? (0, S.JM)("") : c,
-      canUseCommands: null === (t = g.commands) || void 0 === t ? void 0 : t.enabled,
+      canUseCommands: null === (t = m.commands) || void 0 === t ? void 0 : t.enabled,
       canOnlyUseTextCommands: A
-    })) : (0, r.jsx)(T.Z, x(D({
+    })) : (0, r.jsx)(T.Z, x(w({
       ref: this.ref
     }, Z), {
       value: u ? "" : l
@@ -291,12 +291,12 @@ class j extends i.Component {
   }
   constructor(e) {
     var t;
-    super(e), t = this, w(this, "ref", i.createRef()), w(this, "_focusBlurQueue", Promise.resolve()), w(this, "_unsubscribe", void 0), w(this, "handleSelectionChange", () => {
+    super(e), t = this, D(this, "ref", i.createRef()), D(this, "_focusBlurQueue", Promise.resolve()), D(this, "_unsubscribe", void 0), D(this, "handleSelectionChange", () => {
       if (this.props.focused) {
         var e, t, n;
         this.props.onSelectionChanged(null === (t = (n = document).getSelection) || void 0 === t ? void 0 : null === (e = t.call(n)) || void 0 === e ? void 0 : e.toString())
       }
-    }), w(this, "focus", () => {
+    }), D(this, "focus", () => {
       var e;
       null === (e = this._focusBlurQueue) || void 0 === e || e.then(() => {
         this.setState({
@@ -306,41 +306,41 @@ class j extends i.Component {
           null != e && e.focus()
         })
       })
-    }), w(this, "saveCurrentText", function() {
+    }), D(this, "saveCurrentText", function() {
       let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
         {
           type: n,
           channel: r
         } = t.props;
       n.drafts.autoSave && (e && t.saveCurrentTextThrottled.cancel(), t.handleSaveCurrentText(r.id))
-    }), w(this, "handleBeforeUnload", () => this.saveCurrentText()), w(this, "saveCurrentTextThrottled", l().throttle(this.saveCurrentText.bind(this, !1), 500)), w(this, "handleEnter", e => {
+    }), D(this, "handleBeforeUnload", () => this.saveCurrentText()), D(this, "saveCurrentTextThrottled", l().throttle(this.saveCurrentText.bind(this, !1), 500)), D(this, "handleEnter", e => {
       var t, n;
       return null === (t = (n = this.props).onEnter) || void 0 === t ? void 0 : t.call(n, e)
-    }), w(this, "handleTab", () => {
+    }), D(this, "handleTab", () => {
       var e, t;
       return null === (e = (t = this.props).onTab) || void 0 === e ? void 0 : e.call(t)
-    }), w(this, "handleMoveSelection", e => {
+    }), D(this, "handleMoveSelection", e => {
       var t, n;
       return null === (t = (n = this.props).onMoveSelection) || void 0 === t ? void 0 : t.call(n, e)
-    }), w(this, "maybeShowAutocomplete", () => {
+    }), D(this, "maybeShowAutocomplete", () => {
       var e, t;
       return null === (e = (t = this.props).onMaybeShowAutocomplete) || void 0 === e ? void 0 : e.call(t)
-    }), w(this, "hideAutocomplete", () => {
+    }), D(this, "hideAutocomplete", () => {
       var e, t;
       return null === (e = (t = this.props).onHideAutocomplete) || void 0 === e ? void 0 : e.call(t)
-    }), w(this, "handleSaveCurrentText", e => {
+    }), D(this, "handleSaveCurrentText", e => {
       _.Z.saveDraft(e, this.props.textValue, this.props.type.drafts.type)
-    }), w(this, "handleClearText", () => {
+    }), D(this, "handleClearText", () => {
       var e, t;
       null === (e = (t = this.props).onChange) || void 0 === e || e.call(t, null, "", (0, S.JM)(""))
-    }), w(this, "handleInsertText", e => {
+    }), D(this, "handleInsertText", e => {
       let {
         plainText: t,
         rawText: n,
         addSpace: r = !1
       } = e;
       this.props.disabled || (this.appendText(t, n, r), this.focus())
-    }), w(this, "handleFocus", e => {
+    }), D(this, "handleFocus", e => {
       let {
         onFocus: t
       } = this.props, {
@@ -349,7 +349,7 @@ class j extends i.Component {
       null == t || t(e), n || this.setState({
         focused: !0
       })
-    }), w(this, "handleBlur", e => {
+    }), D(this, "handleBlur", e => {
       let {
         onBlur: t
       } = this.props, {
@@ -358,7 +358,7 @@ class j extends i.Component {
       null == t || t(e), n && this.setState({
         focused: !1
       })
-    }), w(this, "handlePaste", e => {
+    }), D(this, "handlePaste", e => {
       let {
         channel: t,
         canPasteFiles: n,
@@ -370,14 +370,14 @@ class j extends i.Component {
       if (null == i || !t.isPrivate() && !n || t.isPrivate() && t.isManaged()) return !1;
       let s = (e, n) => {
           var r, o;
-          let s = g.Z.getActiveCommand(t.id);
+          let s = m.Z.getActiveCommand(t.id);
           if (null == s) return i(e, t, a.drafts.type, {
             requireConfirm: !0,
             showLargeMessageDialog: n
           });
           let l = null !== (r = a.drafts.commandType) && void 0 !== r ? r : a.drafts.type,
             c = null,
-            u = g.Z.getActiveOption(t.id);
+            u = m.Z.getActiveOption(t.id);
           null != (c = (null == u ? void 0 : u.type) === h.jw.ATTACHMENT ? u : null === (o = s.options) || void 0 === o ? void 0 : o.find(e => {
             if (e.type === h.jw.ATTACHMENT) return null == v.Z.getUpload(t.id, e.name, l)
           })) && p.Z.setFile({
@@ -386,7 +386,7 @@ class j extends i.Component {
             draftType: l,
             file: {
               id: c.name,
-              platform: m.ow.WEB,
+              platform: g.ow.WEB,
               file: e[0]
             }
           })

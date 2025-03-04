@@ -55,8 +55,8 @@ let h = {
     friction: 5,
     overshootClamping: !0
   },
-  m = 100,
-  g = "center",
+  g = 100,
+  m = "center",
   E = "right";
 
 function v(e, t) {
@@ -86,7 +86,7 @@ class b extends(r = o.Component) {
       gutter: i,
       items: o
     } = this.props, a = i * v(r, o.length) * 2;
-    return e === g ? (t - n.width) / 2 + a : e === E ? t - n.width - i + a : i + a
+    return e === m ? (t - n.width) / 2 + a : e === E ? t - n.width - i + a : i + a
   }
   getCarouselTranslate() {
     let {
@@ -116,12 +116,12 @@ class b extends(r = o.Component) {
     i ? this.animateToIndex(e, t) : l.Z.timing(r, {
       fromValue: 1,
       toValue: 0,
-      duration: m
+      duration: g
     }).start(() => {
       n.setValue(e), l.Z.timing(r, {
         fromValue: 0,
         toValue: 1,
-        duration: m
+        duration: g
       }).start()
     })
   }
@@ -159,7 +159,7 @@ class b extends(r = o.Component) {
     } = this.props, {
       margin: f,
       width: _
-    } = s, p = this.getCarouselTranslate(), h = this.getItemStyle(), m = (e = c > 0 ? [...a.slice(-c), ...a, ...a.slice(0, c)] : a).map((e, t) => (0, i.jsx)("div", {
+    } = s, p = this.getCarouselTranslate(), h = this.getItemStyle(), g = (e = c > 0 ? [...a.slice(-c), ...a, ...a.slice(0, c)] : a).map((e, t) => (0, i.jsx)("div", {
       style: h,
       className: u.item,
       children: o(e, t - c, this.interpolateValueForItem(t - c))
@@ -173,7 +173,7 @@ class b extends(r = o.Component) {
           outputRange: [-p, -f - _ - p - d * (a.length - 1)]
         }), n)
       },
-      children: m
+      children: g
     })
   }
   render() {
@@ -216,7 +216,7 @@ class b extends(r = o.Component) {
 d(b, "defaultProps", {
   animate: !0,
   edgeItems: 2,
-  align: g,
+  align: m,
   gutter: 0,
   hideOverflow: !0
 });

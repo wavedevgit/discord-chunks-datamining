@@ -50,13 +50,13 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -131,7 +131,7 @@ function A(e) {
     onClick: n,
     onClose: i
   } = e;
-  g(e, ["backgroundElementRef", "onClick", "onClose"]);
+  m(e, ["backgroundElementRef", "onClick", "onClose"]);
   let {
     balance: a
   } = (0, l.A)(), _ = async () => {
@@ -141,7 +141,7 @@ function A(e) {
   } = (0, o.cj)([c.Z], () => ({
     hideImmediately: c.Z.hidePillOverlayImmediately
   }));
-  return (0, r.jsx)(d.E, m(p({
+  return (0, r.jsx)(d.E, g(p({
     backgroundElementRef: t,
     onGetBoundingRect: f.dG4
   }, N), {

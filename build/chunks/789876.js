@@ -13,8 +13,8 @@
     _ = 125,
     p = 0,
     h = 0,
-    m = 0,
-    g = {
+    g = 0,
+    m = {
       get didTimeout() {
         return !1
       },
@@ -61,7 +61,7 @@
   function T() {
     var n, i, o, a = d > 9 ? 9 : 1;
     if (h = Date.now(), u = !1, r = null, c > 2 || h - t - 50 < e)
-      for (i = 0, o = l.length; i < o && g.timeRemaining() > a; i++) n = l.shift(), m++, n && n(g);
+      for (i = 0, o = l.length; i < o && m.timeRemaining() > a; i++) n = l.shift(), g++, n && n(m);
     l.length ? I() : c = 0
   }
 
@@ -70,7 +70,7 @@
   }
 
   function A(e) {
-    var t = e - 1 - m;
+    var t = e - 1 - g;
     l[t] && (l[t] = null)
   }
   if (o.requestIdleCallback && o.cancelIdleCallback) try {

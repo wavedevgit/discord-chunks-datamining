@@ -44,8 +44,8 @@ let u = a.ZP.getEnableHardwareAcceleration() ? i.Xo$ : i.qEK,
       animateOnHover: p = !1,
       questPreviewRewardAssetUrl: h = null
     } = e, {
-      avatarDecorationSrc: m,
-      avatarSrc: g,
+      avatarDecorationSrc: g,
+      avatarSrc: m,
       eventHandlers: E
     } = (0, o.Z)({
       user: t,
@@ -56,8 +56,8 @@ let u = a.ZP.getEnableHardwareAcceleration() ? i.Xo$ : i.qEK,
       animateOnHover: p
     });
     return (0, r.jsx)(u, c({
-      avatarDecoration: null != m ? m : h,
-      src: g,
+      avatarDecoration: null != g ? g : h,
+      src: m,
       size: d,
       status: l,
       "aria-label": f ? void 0 : s.NW.string(s.t.lqaIxM),

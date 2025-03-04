@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651),
   i = n(481060),
@@ -101,7 +101,7 @@ let p = e => {
       })
     })
   },
-  m = e => {
+  g = e => {
     let {
       appRecord: t,
       showAppReportingOption: n,

@@ -78,8 +78,8 @@ function h(e, t) {
     children: c,
     leaf: u,
     text: f
-  } = t, h = !1, [m] = a.bN.node(e, a.C0.parent(a.bN.findPath(e, f)));
-  switch (a.bN.isEditor(m) ? "editor" : m.type) {
+  } = t, h = !1, [g] = a.bN.node(e, a.C0.parent(a.bN.findPath(e, f)));
+  switch (a.bN.isEditor(g) ? "editor" : g.type) {
     case "line":
     case "blockQuote": {
       h = void 0;

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(47120);
 var r, i = n(442837),
   o = n(570140),
@@ -87,14 +87,14 @@ function h(e) {
   d.add(t)
 }
 
-function m(e) {
+function g(e) {
   let {
     channelId: t
   } = e;
   d.delete(t)
 }
 s(f, "displayName", "AppLauncherStore");
-let g = new f(o.Z, {
+let m = new f(o.Z, {
   APP_LAUNCHER_SHOW: c,
   APP_LAUNCHER_DISMISS: u,
   CONNECTION_OPEN: _,
@@ -103,5 +103,5 @@ let g = new f(o.Z, {
   APPLICATION_COMMAND_SET_ACTIVE_COMMAND: p,
   APP_LAUNCHER_SET_ACTIVE_COMMAND: p,
   APP_LAUNCHER_ADD_FAILED_APP_DM_LOAD: h,
-  APP_LAUNCHER_REMOVE_FAILED_APP_DM_LOAD: m
+  APP_LAUNCHER_REMOVE_FAILED_APP_DM_LOAD: g
 })

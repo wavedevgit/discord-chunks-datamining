@@ -28,7 +28,7 @@ function h() {
   r.K.set(_, Date.now())
 }
 
-function m() {
+function g() {
   if (!a.w8.getCurrentConfig({
       location: "b9eb97_1"
     }, {
@@ -40,12 +40,12 @@ function m() {
     n = r.K.get(t);
   return !(null != n && Date.now() - n < f)
 }
-class g extends i.Z {
+class m extends i.Z {
   constructor(...e) {
     super(...e), d(this, "actions", {
       POST_CONNECTION_OPEN: () => this.onPostConnectionOpen()
     }), d(this, "onPostConnectionOpen", () => {
-      if (m()) {
+      if (g()) {
         let e = c.Z.getCurrentConfig({
           location: "uu_one_click"
         }, {
@@ -56,4 +56,4 @@ class g extends i.Z {
     })
   }
 }
-let E = new g
+let E = new m

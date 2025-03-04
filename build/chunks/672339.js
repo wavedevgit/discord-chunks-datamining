@@ -19,7 +19,7 @@ var r = n(512722),
   p = n(678916),
   h = n(981631);
 
-function m(e) {
+function g(e) {
   return new Promise((t, n) => {
     let r = new Image;
     r.crossOrigin = "anonymous", r.onload = () => {
@@ -43,7 +43,7 @@ function m(e) {
     }, r.onerror = e => n(e), r.src = e
   })
 }
-async function g(e) {
+async function m(e) {
   let t = await fetch(e),
     n = await t.blob();
   return new Uint8ClampedArray(await n.arrayBuffer())
@@ -77,8 +77,8 @@ async function v(e, t, n) {
     })
   }
   if (null != r) try {
-    let n = i ? void 0 : await m(r),
-      a = i ? await g(r) : void 0;
+    let n = i ? void 0 : await g(r),
+      a = i ? await m(r) : void 0;
     E(e, t, o.zZ.BACKGROUND_REPLACEMENT, n, a)
   } catch (e) {
     (0, c.Nm)()

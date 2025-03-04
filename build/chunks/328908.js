@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  GA: () => m,
+  GA: () => g,
   Hb: () => p,
   Hi: () => E,
-  LN: () => g,
+  LN: () => m,
   OG: () => T,
   Qj: () => I,
   Qy: () => O,
@@ -96,12 +96,12 @@ let d = Object.freeze({
   h = (e, t) => {
     null != f.getState().messageSendConfetti[e] ? p(e) : _(e, t)
   },
-  m = e => {
+  g = e => {
     let t = f.getState();
     null != t.messageSendConfetti[e] && 0 === t.messageSendConfetti[e].state && (t.messageSendConfetti[e].hasAutoPopped = !0)
   };
 
-function g(e) {
+function m(e) {
   return f(t => null != t.messageSendConfetti[e])
 }
 

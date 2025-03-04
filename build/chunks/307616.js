@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(429142),
   p = n(585483),
   h = n(952265),
-  m = n(602091),
-  g = n(981631),
+  g = n(602091),
+  m = n(981631),
   E = n(697750);
 
 function v(e, t, n) {
@@ -37,7 +37,7 @@ class y extends i.PureComponent {
       LayerComponent: t,
       isTopModal: n,
       instant: i
-    } = this.props, o = i ? m.Dv.ENTERED : this.state.transitionState;
+    } = this.props, o = i ? g.Dv.ENTERED : this.state.transitionState;
     return (0, r.jsx)(t, {
       children: (0, r.jsx)("div", {
         className: a()(E.layer, !n && E.hidden),
@@ -58,34 +58,34 @@ class y extends i.PureComponent {
         instant: t
       } = this.props;
       this.setState({
-        transitionState: m.Dv.ENTERING
+        transitionState: g.Dv.ENTERING
       }), setTimeout(() => {
         this.setState({
-          transitionState: m.Dv.ENTERED
+          transitionState: g.Dv.ENTERED
         }), null == e || e()
-      }, t ? 0 : m.CT)
+      }, t ? 0 : g.CT)
     }), v(this, "componentWillLeave", e => {
       let {
         instant: t
       } = this.props;
       this.setState({
-        transitionState: m.Dv.EXITING
+        transitionState: g.Dv.EXITING
       }), setTimeout(() => {
         this.setState({
-          transitionState: m.Dv.EXITED
+          transitionState: g.Dv.EXITED
         }), e()
-      }, t ? 0 : m.CT)
+      }, t ? 0 : g.CT)
     }), v(this, "componentDidUpdate", e => {
       if (e.isTopModal !== this.props.isTopModal) {
         let {
           transitionState: e
         } = this.state;
-        e === m.Dv.HIDDEN && this.props.isTopModal && this.componentWillEnter(), this.props.isTopModal || e !== m.Dv.ENTERING && e !== m.Dv.ENTERED || this.setState({
-          transitionState: m.Dv.HIDDEN
+        e === g.Dv.HIDDEN && this.props.isTopModal && this.componentWillEnter(), this.props.isTopModal || e !== g.Dv.ENTERING && e !== g.Dv.ENTERED || this.setState({
+          transitionState: g.Dv.HIDDEN
         })
       }
     }), v(this, "close", () => new Promise(e => {
-      this.props.closeModal(this.props.modalKey), setTimeout(() => e(), m.CT)
+      this.props.closeModal(this.props.modalKey), setTimeout(() => e(), g.CT)
     }))
   }
 }
@@ -109,8 +109,8 @@ function I() {
       let e = n.current;
       null != e && null != e.onCloseRequest && e.onCloseRequest()
     };
-    return p.S.subscribe(g.CkL.MODAL_CLOSE, e), () => {
-      p.S.unsubscribe(g.CkL.MODAL_CLOSE, e)
+    return p.S.subscribe(m.CkL.MODAL_CLOSE, e), () => {
+      p.S.unsubscribe(m.CkL.MODAL_CLOSE, e)
     }
   }, [o]);
   let a = i.useCallback(() => {

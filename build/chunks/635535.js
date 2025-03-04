@@ -73,15 +73,15 @@ function u(e) {
     p = [],
     h = [];
 
-  function m(e, t) {
+  function g(e, t) {
     var n = Array((e.match(/M/g) || []).length + 1),
       r = Array((e.match(/E/g) || []).length + 1);
     return n.length > 2 && (t = t.replace(/(M|L)+/, n.join("$1"))), r.length > 2 && (t = t.replace(/([Eec])+/, r.join("$1"))), t
   }
-  for (t in a) a.hasOwnProperty(t) && (r = c(n = m(t, a[t]))) && (_.push(r), s(r) ? h.push(n) : l(r) && p.push(n));
+  for (t in a) a.hasOwnProperty(t) && (r = c(n = g(t, a[t]))) && (_.push(r), s(r) ? h.push(n) : l(r) && p.push(n));
   for (i = 0; i < p.length; i += 1)
     for (o = 0; o < h.length; o += 1)(r = c(n = f.replace("{0}", p[i]).replace("{1}", h[o]).replace(/^[,\s]+|[,\s]+$/gi, ""))) && _.push(r);
-  for (t in u) u.hasOwnProperty(t) && (r = c(n = m(t, u[t]))) && _.push(r);
-  for (t in d) d.hasOwnProperty(t) && (r = c(n = m(t, d[t]))) && _.push(r);
+  for (t in u) u.hasOwnProperty(t) && (r = c(n = g(t, u[t]))) && _.push(r);
+  for (t in d) d.hasOwnProperty(t) && (r = c(n = g(t, d[t]))) && _.push(r);
   return _
 }

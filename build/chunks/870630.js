@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(724641),
   p = n(811974),
   h = n(212545),
-  m = n(184229),
-  g = n(504309);
+  g = n(184229),
+  m = n(504309);
 let E = function(e) {
   let t = (0, l.ZP)(),
     n = i.useRef(null),
@@ -47,7 +47,7 @@ let E = function(e) {
       })
     }, [n]), e.type) {
     case c.He.PRZELEWY24: {
-      let i = (0, a.wj)(t) ? m : g,
+      let i = (0, a.wj)(t) ? g : m,
         {
           onNameChange: l,
           onEmailChange: c,

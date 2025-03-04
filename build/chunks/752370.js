@@ -16,8 +16,8 @@ var r = n(904245),
   _ = n(70956),
   p = n(358085),
   h = n(743498),
-  m = n(875527),
-  g = n(709706),
+  g = n(875527),
+  m = n(709706),
   E = n(981631),
   v = n(231338),
   b = n(388032);
@@ -35,7 +35,7 @@ let O = 30 * _.Z.Millis.MINUTE,
   I = new o.Z("VoiceFilterFeedbackManager");
 
 function T() {
-  return (0, m.wt)({
+  return (0, g.wt)({
     location: "VoiceFilterFeedbackManager",
     autoTrackExposure: !1
   })
@@ -48,10 +48,10 @@ class N extends i.Z {
     let {
       guildId: t
     } = e;
-    T() && (0, m.m3)({
+    T() && (0, g.m3)({
       location: "VoiceFilterFeedbackManager",
       guildId: t
-    }) && g.Z.isNativeModuleLoaded() ? (0, h.v6)(null) : this.maybeQueueFeedbackMessage()
+    }) && m.Z.isNativeModuleLoaded() ? (0, h.v6)(null) : this.maybeQueueFeedbackMessage()
   }
   maybeQueueFeedbackMessage() {
     if (!T()) return;
@@ -83,8 +83,8 @@ class N extends i.Z {
         return
       }
     }
-    let m = g.Z.getVoiceFilter(n),
-      y = null != m ? b.NW.string(m.name) : "Don't Know",
+    let g = m.Z.getVoiceFilter(n),
+      y = null != g ? b.NW.string(g.name) : "Don't Know",
       S = c.Z.getInputDeviceId(),
       T = null === (e = c.Z.getInputDevices()[S]) || void 0 === e ? void 0 : e.name,
       N = c.Z.getOutputDeviceId(),

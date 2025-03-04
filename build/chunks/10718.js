@@ -44,7 +44,7 @@ function h(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,8 +55,8 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -148,10 +148,10 @@ function S(e) {
     allowFetch: c
   } = e, u = "channel" === t.type ? t.channel.guild_id : null, d = (0, i.e7)([o.Z], () => o.Z.getGuild(u), [u]), {
     descriptors: p,
-    commands: m,
+    commands: g,
     sectionedCommands: E,
     loading: v
-  } = (0, l.JK)(t, d, n, g(h({}, a), {
+  } = (0, l.JK)(t, d, n, m(h({}, a), {
     allowFetch: c
   })), [b, y] = r.useState(null), O = r.useMemo(() => {
     var e;
@@ -160,7 +160,7 @@ function S(e) {
   return r.useMemo(() => {
     let e = {
       loading: v,
-      commands: m,
+      commands: g,
       activeSections: p,
       commandsByActiveSection: E,
       filteredSectionId: b,
@@ -189,10 +189,10 @@ function S(e) {
           data: O
         }]
       }
-      e.commands = [...m, ...O]
+      e.commands = [...g, ...O]
     }
     return e
-  }, [m, p, b, E, v, O])
+  }, [g, p, b, E, v, O])
 }
 
 function I(e, t, n) {

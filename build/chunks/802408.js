@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -53,7 +53,7 @@ function h(e, t) {
   }), e
 }
 
-function m(e) {
+function g(e) {
   let {
     onComplete: t,
     onCheckItOutClick: n,
@@ -96,7 +96,7 @@ function m(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     onComplete: t,
     onCheckItOutClick: n,
@@ -109,7 +109,7 @@ function g(e) {
     shouldShow: !0,
     position: "top",
     align: "center",
-    renderPopout: e => (0, r.jsx)(m, h(_({}, e), {
+    renderPopout: e => (0, r.jsx)(g, h(_({}, e), {
       onComplete: () => {
         t(), i(c.L.USER_DISMISS)
       },

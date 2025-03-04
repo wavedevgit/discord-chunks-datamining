@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  P: () => m
+  P: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -37,16 +37,16 @@ function h(e) {
   }
   return e
 }
-let m = e => {
+let g = e => {
   let t, {
       billingAddressInfo: n,
       billingError: p,
-      onBillingAddressChange: m,
-      paymentSourceType: g
+      onBillingAddressChange: g,
+      paymentSourceType: m
     } = e,
     E = null != p && (null == p.code || (0, u.ly)(p) === u.Rg.ADDRESS),
     v = (0, o.e7)([l.default], () => l.default.locale);
-  switch (g) {
+  switch (m) {
     case d.HeQ.GIROPAY:
     case d.HeQ.PAYSAFE_CARD:
     case d.HeQ.GCASH:
@@ -71,7 +71,7 @@ let m = e => {
       children: f.NW.string(f.t.vZ8y7u)
     }) : null, (0, r.jsx)(s.ZP, h({
       className: _.__invalid_formItem,
-      onBillingAddressChange: m,
+      onBillingAddressChange: g,
       error: p,
       layout: t
     }, n))]

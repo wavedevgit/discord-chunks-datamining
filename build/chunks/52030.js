@@ -27,10 +27,10 @@ let s = [],
   h = e => {
     _.set(e.tab, e.shopHome.shopBlocks), l.set(e.tab, Date.now()), f.set(e.tab, !1), d.set(e.tab, void 0), c.set(e.tab, void 0)
   },
-  m = e => {
+  g = e => {
     _.set(e.tab, s), f.set(e.tab, !1), d.set(e.tab, e.error), c.set(e.tab, Date.now())
   },
-  g = () => {
+  m = () => {
     _.clear(), u.clear(), d.clear(), f.clear(), l.clear(), c.clear()
   };
 class E extends(r = i.ZP.Store) {
@@ -58,6 +58,6 @@ a(E, "displayName", "CollectiblesShopHomesStore");
 let v = new E(o.Z, {
   COLLECTIBLES_SHOP_HOME_FETCH: p,
   COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: h,
-  COLLECTIBLES_SHOP_HOME_FETCH_FAILURE: m,
-  LOGOUT: g
+  COLLECTIBLES_SHOP_HOME_FETCH_FAILURE: g,
+  LOGOUT: m
 })

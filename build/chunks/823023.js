@@ -64,12 +64,12 @@ let p = 200,
       duration: 200
     }
   },
-  m = _(d({}, h), {
+  g = _(d({}, h), {
     config: {
       duration: 50
     }
   }),
-  g = _(d({}, h), {
+  m = _(d({}, h), {
     config: (e, t) => t ? {
       duration: 800
     } : {
@@ -82,9 +82,9 @@ function E(e) {
     readyState: t,
     placeholderImg: n,
     placeholderStyle: s
-  } = e, u = t === l.zo9.LOADING, [f] = i.useState(() => Date.now()), _ = t === l.zo9.READY && Date.now() - f < p, g = (0, a.Yzy)(u && null != n, _ ? m : h);
+  } = e, u = t === l.zo9.LOADING, [f] = i.useState(() => Date.now()), _ = t === l.zo9.READY && Date.now() - f < p, m = (0, a.Yzy)(u && null != n, _ ? g : h);
   return (0, r.jsx)(r.Fragment, {
-    children: g((e, t) => t && (0, r.jsx)(o.animated.img, {
+    children: m((e, t) => t && (0, r.jsx)(o.animated.img, {
       style: d({}, s, e),
       className: c.imagePlaceholder,
       src: n,
@@ -101,7 +101,7 @@ function v(e) {
     placeholderVersion: d,
     placeholderStyle: f,
     children: _
-  } = e, p = t === l.zo9.LOADING, [h] = i.useState(p), [m, v] = i.useState(!1), b = (0, s.L)(u, d, h);
+  } = e, p = t === l.zo9.LOADING, [h] = i.useState(p), [g, v] = i.useState(!1), b = (0, s.L)(u, d, h);
   i.useEffect(() => {
     let e = setTimeout(() => {
       v(!0)
@@ -110,7 +110,7 @@ function v(e) {
       clearTimeout(e)
     }
   }, [h]);
-  let y = (0, a.Yzy)(p && m, g);
+  let y = (0, a.Yzy)(p && g, m);
   return (0, r.jsxs)("div", {
     className: c.loadingOverlay,
     style: {

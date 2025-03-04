@@ -16,8 +16,8 @@ var r, i = n(200651),
   _ = n(347475),
   p = n(598077),
   h = n(594174),
-  m = n(426563),
-  g = n(99427);
+  g = n(426563),
+  m = n(99427);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,7 +71,7 @@ function S(e, t) {
 
 function I(e) {
   return (0, i.jsx)("div", {
-    className: g.moreUsers,
+    className: m.moreUsers,
     children: e
   })
 }
@@ -80,15 +80,15 @@ function T() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : O.SIZE_24;
   switch (e) {
     case O.SIZE_16:
-      return g.size16;
+      return m.size16;
     case O.SIZE_24:
-      return g.size24;
+      return m.size24;
     case O.SIZE_32:
-      return g.size32;
+      return m.size32;
     case O.SIZE_56:
-      return g.size56;
+      return m.size56;
     default:
-      return g.size24
+      return m.size24
   }
 }
 class N extends(r = o.PureComponent) {
@@ -105,10 +105,10 @@ class N extends(r = o.PureComponent) {
       let t = null == l && null == o && c === e.length - 1,
         s = n(e[c], t, c);
       a.push(t ? (0, i.jsx)("div", {
-        className: g.avatarContainer,
+        className: m.avatarContainer,
         children: s
       }, S(null !== (u = e[c]) && void 0 !== u ? u : null, c)) : (0, i.jsx)(d.ZP, {
-        className: g.avatarContainerMasked,
+        className: m.avatarContainerMasked,
         height: r,
         width: r,
         mask: d.ZP.Masks.VOICE_USER_SUMMARY_ITEM,
@@ -148,8 +148,8 @@ class N extends(r = o.PureComponent) {
     return this.props.renderIcon ? (0, i.jsx)(u.gj8, {
       size: "md",
       color: "currentColor",
-      colorClass: g.__invalid_foreground,
-      className: g.icon
+      colorClass: m.__invalid_foreground,
+      className: m.icon
     }) : null
   }
   render() {
@@ -180,7 +180,7 @@ class N extends(r = o.PureComponent) {
         popoutUserId: null
       }),
       children: n => (0, i.jsxs)("div", y(v({
-        className: s()(e, g.container, T(t)),
+        className: s()(e, m.container, T(t)),
         ref: this._ref
       }, n), {
         children: [this.renderIcon(), this.renderUsers()]
@@ -198,25 +198,25 @@ class N extends(r = o.PureComponent) {
       } = this.props;
       if (null == e) {
         if (!this.props.showDefaultAvatarsForNullUsers) return (0, i.jsx)("div", {
-          className: g.emptyUser
+          className: m.emptyUser
         });
         {
-          let e = (null != n ? n : 0) % m.Z.DEFAULT_AVATARS.length,
-            t = m.Z.DEFAULT_AVATARS[e];
+          let e = (null != n ? n : 0) % g.Z.DEFAULT_AVATARS.length,
+            t = g.Z.DEFAULT_AVATARS[e];
           return (0, i.jsx)("img", {
             src: t,
             alt: "",
-            className: g.avatar
+            className: m.avatar
           })
         }
       }
       let s = (0, i.jsx)("img", {
         src: e.getAvatarURL(o, a),
         alt: e.username,
-        className: g.avatar
+        className: m.avatar
       }, e.id);
       return r ? (0, i.jsx)(u.P3F, {
-        className: g.clickableAvatar,
+        className: m.clickableAvatar,
         onClick: () => {
           null != this._ref.current && null != e && this.setState({
             popoutUserId: e.id

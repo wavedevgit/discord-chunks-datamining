@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(963249),
   p = n(286961),
   h = n(802408),
-  m = n(819640),
-  g = n(594174),
+  g = n(819640),
+  m = n(594174),
   E = n(70956),
   v = n(709054),
   b = n(51144),
@@ -67,7 +67,7 @@ function P(e, t) {
   }), e
 }
 
-function w(e) {
+function D(e) {
   return (0, r.jsx)(y.Z, {
     innerClassName: N.button,
     "aria-label": I.NW.string(I.t.Z1RnTk),
@@ -83,7 +83,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     Component: t,
     events: n,
@@ -127,7 +127,7 @@ function x(e) {
     channel: E
   } = e, {
     analyticsLocations: y
-  } = (0, u.ZP)(c.Z.GIFT_BUTTON), [I, N] = i.useState(!1), A = (0, o.e7)([m.Z], () => !(null === m.Z || void 0 === m.Z ? void 0 : m.Z.hasLayers())), C = (0, o.e7)([g.default], () => g.default.getCurrentUser()), R = null != C ? v.default.age(C.id) : 0, {
+  } = (0, u.ZP)(c.Z.GIFT_BUTTON), [I, N] = i.useState(!1), A = (0, o.e7)([g.Z], () => !(null === g.Z || void 0 === g.Z ? void 0 : g.Z.hasLayers())), C = (0, o.e7)([m.default], () => m.default.getCurrentUser()), R = null != C ? v.default.age(C.id) : 0, {
     giftBoxAnimation: P,
     trinketsAnimation: x
   } = null !== (t = null == n ? void 0 : n.chatGiftIcon) && void 0 !== t ? t : {}, M = (0, p.u)(), k = void 0 !== M && !s && A && R >= L, [j, U] = (0, f.XR)(k ? a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), G = null != j, B = I || G, V = (0, b.Ft)(E);
@@ -149,11 +149,11 @@ function x(e) {
     Z = () => {
       N(!1), U(S.L.TAKE_ACTION), F()
     },
-    H = void 0 !== P ? (0, r.jsx)(w, {
+    H = void 0 !== P ? (0, r.jsx)(D, {
       config: P,
       hovered: B,
       onClick: Z
-    }) : void 0 !== x ? (0, r.jsx)(D, {
+    }) : void 0 !== x ? (0, r.jsx)(w, {
       config: x,
       hovered: B,
       onClick: Z

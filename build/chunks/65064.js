@@ -12,8 +12,8 @@ var r = n(135839),
   _ = "[object Set]",
   p = "[object WeakMap]",
   h = "[object DataView]",
-  m = c(r),
-  g = c(i),
+  g = c(r),
+  m = c(i),
   E = c(o),
   v = c(a),
   b = c(s),
@@ -23,9 +23,9 @@ var r = n(135839),
     n = t == d ? e.constructor : void 0,
     r = n ? c(n) : "";
   if (r) switch (r) {
-    case m:
-      return h;
     case g:
+      return h;
+    case m:
       return u;
     case E:
       return f;

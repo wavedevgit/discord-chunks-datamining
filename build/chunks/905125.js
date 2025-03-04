@@ -12,7 +12,7 @@ var r = n(690244)("%TypeError%"),
   f = n(148309),
   _ = n(632384);
 e.exports = function(e, t, n, p, h) {
-  var m, g, E = _(e);
+  var g, m, E = _(e);
   if ("Undefined" !== E && "Object" !== E) throw new r("Assertion failed: O must be undefined or an Object");
   if (!d(t)) throw new r("Assertion failed: P must be a Property Key");
   if ("Boolean" !== _(n)) throw new r("Assertion failed: extensible must be a Boolean");
@@ -43,13 +43,13 @@ e.exports = function(e, t, n, p, h) {
     } else if (!h["[[Writable]]"] && ("[[Writable]]" in p && p["[[Writable]]"] || "[[Value]]" in p && !f(p["[[Value]]"], h["[[Value]]"]))) return !1
   }
   return "Undefined" === E || (c(h) && l(p) ? i(c, f, s, e, t, {
-    "[[Configurable]]": !!(m = ("[[Configurable]]" in p ? p : h)["[[Configurable]]"]),
-    "[[Enumerable]]": !!(g = ("[[Enumerable]]" in p ? p : h)["[[Enumerable]]"]),
+    "[[Configurable]]": !!(g = ("[[Configurable]]" in p ? p : h)["[[Configurable]]"]),
+    "[[Enumerable]]": !!(m = ("[[Enumerable]]" in p ? p : h)["[[Enumerable]]"]),
     "[[Get]]": ("[[Get]]" in p ? p : h)["[[Get]]"],
     "[[Set]]": ("[[Set]]" in p ? p : h)["[[Set]]"]
   }) : l(h) && c(p) ? i(c, f, s, e, t, {
-    "[[Configurable]]": !!(m = ("[[Configurable]]" in p ? p : h)["[[Configurable]]"]),
-    "[[Enumerable]]": !!(g = ("[[Enumerable]]" in p ? p : h)["[[Enumerable]]"]),
+    "[[Configurable]]": !!(g = ("[[Configurable]]" in p ? p : h)["[[Configurable]]"]),
+    "[[Enumerable]]": !!(m = ("[[Enumerable]]" in p ? p : h)["[[Enumerable]]"]),
     "[[Value]]": ("[[Value]]" in p ? p : h)["[[Value]]"],
     "[[Writable]]": !!("[[Writable]]" in p ? p : h)["[[Writable]]"]
   }) : i(c, f, s, e, t, p))

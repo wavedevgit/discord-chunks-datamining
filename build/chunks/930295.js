@@ -16,8 +16,8 @@ var r, i = n(200651),
   _ = n(952265),
   p = n(481060),
   h = n(40851),
-  m = n(314910),
-  g = n(920676),
+  g = n(314910),
+  m = n(920676),
   E = n(981631);
 
 function v(e, t, n) {
@@ -135,11 +135,11 @@ class T extends(r = o.Component) {
       clickTrap: p = !1
     } = this.props, {
       resizeKey: h,
-      isLoading: g,
+      isLoading: m,
       shouldShowLoadingState: E
     } = this.state;
-    return g && !E ? null : (0, i.jsx)(d.mh, {
-      layerContext: null != _ ? _ : m.nz,
+    return m && !E ? null : (0, i.jsx)(d.mh, {
+      layerContext: null != _ ? _ : g.nz,
       children: (0, i.jsx)(f.j, {
         ref: this.layerRef,
         onMount: this.handlePopoutShow,
@@ -272,5 +272,5 @@ v(T, "defaultProps", {
   autoInvert: !1,
   nudgeAlignIntoViewport: !1,
   spacing: 0,
-  loadingComponent: (0, i.jsx)(g.x, {})
+  loadingComponent: (0, i.jsx)(m.x, {})
 }), v(T, "contextType", h.ZP)

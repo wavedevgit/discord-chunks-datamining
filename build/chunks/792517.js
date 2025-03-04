@@ -17,8 +17,8 @@ var i = n(120356),
   _ = n(388032),
   p = n(714481);
 let h = 175,
-  m = 195,
-  g = n(978538);
+  g = 195,
+  m = n(978538);
 
 function E(e) {
   let {
@@ -26,7 +26,7 @@ function E(e) {
     width: n,
     noArt: i = !1,
     selected: E = !1
-  } = e, v = n < m, b = (0, a.e7)([c.Z, u.default], () => c.Z.getAllActiveStreams().some(e => {
+  } = e, v = n < g, b = (0, a.e7)([c.Z, u.default], () => c.Z.getAllActiveStreams().some(e => {
     let {
       ownerId: t
     } = e;
@@ -38,7 +38,7 @@ function E(e) {
     }),
     children: (0, r.jsx)(f.Z, {
       className: p.streamHiddenEmptyState,
-      artURL: g,
+      artURL: m,
       noArt: i,
       selected: E,
       size: (0, f.L)(n),

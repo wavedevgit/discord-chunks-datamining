@@ -38,7 +38,7 @@ function h(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -86,7 +86,7 @@ let y = e => {
       className: u,
       usernameClass: d,
       color: p,
-      botClass: m,
+      botClass: g,
       showStreamerModeTooltip: E
     } = e;
     return (0, r.jsxs)("div", {
@@ -95,7 +95,7 @@ let y = e => {
         text: f.NW.string(f.t.Br1ls7),
         shouldShow: E,
         "aria-label": !!E && void 0,
-        children: e => (0, r.jsx)("span", g(h({}, e), {
+        children: e => (0, r.jsx)("span", m(h({}, e), {
           className: o()(_.__invalid_username, d),
           style: null != p ? {
             color: p
@@ -107,7 +107,7 @@ let y = e => {
         children: n
       }) : void 0, null != i && (0, r.jsx)(l.Z, {
         type: i,
-        className: o()(_.infoSpacing, m),
+        className: o()(_.infoSpacing, g),
         verified: a
       })]
     })
@@ -123,8 +123,8 @@ let y = e => {
       hideBotTag: f = !1,
       hideDiscriminator: _ = !1
     } = e, p = E(e, ["user", "nick", "forceUsername", "showAccountIdentifier", "overrideDiscriminator", "forcePomelo", "hideBotTag", "hideDiscriminator"]);
-    let m = (0, a.e7)([u.Z], () => u.Z.hidePersonalInformation),
-      g = m || _ || t.isNonUserBot(),
+    let g = (0, a.e7)([u.Z], () => u.Z.hidePersonalInformation),
+      m = g || _ || t.isNonUserBot(),
       v = t.toString(),
       O = f ? null : b(t),
       S = t.isVerifiedBot(),
@@ -141,13 +141,13 @@ let y = e => {
         secondary: n,
         botType: O,
         botVerified: S,
-        showStreamerModeTooltip: m && d.ZP.isNameConcealed(e)
+        showStreamerModeTooltip: g && d.ZP.isNameConcealed(e)
       }, p))
     }
     return (0, r.jsx)(c.Z, h({
       name: T,
       botType: O,
       botVerified: S,
-      discriminator: g || T !== v ? null : null != s ? s : t.discriminator
+      discriminator: m || T !== v ? null : null != s ? s : t.discriminator
     }, p))
   }

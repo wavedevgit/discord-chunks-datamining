@@ -17,8 +17,8 @@ var i = n(481060),
   _ = n(944486),
   p = n(979651),
   h = n(626135),
-  m = n(366297),
-  g = n(981631),
+  g = n(366297),
+  m = n(981631),
   E = n(110223);
 
 function v(e, t, n) {
@@ -47,7 +47,7 @@ function y(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     n = e.getGuildId();
   if (null == n && !t) throw Error("VoiceChannel, transitionTo: Channel does not have a guildId");
-  (0, s.uL)(g.Z5c.CHANNEL(n, e.id))
+  (0, s.uL)(m.Z5c.CHANNEL(n, e.id))
 }
 let O = {
   async handleVoiceConnect(e) {
@@ -66,8 +66,8 @@ let O = {
       C = p.Z.getVoiceStateForSession(f.default.getId(), A),
       R = (null == C ? void 0 : C.channelId) === t.id || _.Z.getChannelId() === p.Z.getCurrentClientVoiceChannelId(t.guild_id),
       P = c.Z.getBlockedUsersForVoiceChannel(t.id),
-      w = c.Z.getIgnoredUsersForVoiceChannel(t.id);
-    return ((0, l.B)(t.id) && (T = !0), T || O || s || !(P.size > 0) && !(w.size > 0)) ? !I && !O && (0, m._)(t) ? new Promise(e => {
+      D = c.Z.getIgnoredUsersForVoiceChannel(t.id);
+    return ((0, l.B)(t.id) && (T = !0), T || O || s || !(P.size > 0) && !(D.size > 0)) ? !I && !O && (0, g._)(t) ? new Promise(e => {
       (0, i.ZDy)(async () => {
         let {
           default: i
@@ -97,7 +97,7 @@ let O = {
           return (0, r.jsx)(i, {
             channelId: t.id,
             blockedUserIds: P,
-            ignoredUserIds: w,
+            ignoredUserIds: D,
             transitionState: a,
             onClose: o,
             onJoin: () => e(this.handleVoiceConnect({
@@ -113,11 +113,11 @@ let O = {
         }
       }, {
         onCloseCallback: () => {
-          h.default.track(g.rMx.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
+          h.default.track(m.rMx.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
             action: E.q.DISMISS,
             channel_id: t.id,
             blocked_user_ids: Array.from(P),
-            ignored_user_ids: Array.from(w),
+            ignored_user_ids: Array.from(D),
             warning_surface: E.fz.PRE_JOIN_MODAL
           })
         }
