@@ -212,10 +212,10 @@ let eP = {
         };
       case e_.pNK.ACCESS:
         return {
-          section: e_.pNK.ACCESS, impressionName: i.ImpressionNames.GUILD_SETTINGS_ACCESS, label: eI.NW.string(eI.t["+hFV+P"]), element: ef.O, notice: {
+          section: e_.pNK.ACCESS, impressionName: i.ImpressionNames.GUILD_SETTINGS_ACCESS, label: eI.NW.string(eI.t.YJlvBA), element: ef.O, notice: {
             stores: [ex.Z],
             element: eb.w
-          }, predicate: () => t.memberVerificationRolloutEnabled && t.canManageGuild, ariaLabel: eI.NW.string(eI.t["+hFV+P"])
+          }, predicate: () => t.memberVerificationRolloutEnabled && t.canManageGuild, ariaLabel: eI.NW.string(eI.t.YJlvBA)
         };
       case e_.pNK.INTEGRATIONS:
         return {

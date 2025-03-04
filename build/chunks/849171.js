@@ -9,8 +9,8 @@ n.d(t, {
   bn: () => M,
   nR: () => k
 }), n(47120);
-var r, i = n(200651),
-  l = n(192379),
+var r, l = n(200651),
+  i = n(192379),
   o = n(120356),
   a = n.n(o),
   s = n(115911),
@@ -58,20 +58,20 @@ function U(e) {
     avatarSize: t,
     guildId: n,
     channelId: r,
-    users: l
+    users: i
   } = e, o = null != t ? t : u.EFr.SIZE_32, a = (0, u.pxk)(o);
-  return (0, i.jsx)(O.Z, {
+  return (0, l.jsx)(O.Z, {
     size: a,
     guildId: n,
-    users: l,
+    users: i,
     max: 4,
     renderUser: e => {
       if (null == e) return null;
       let t = T.ZP.getName(n, r, e);
-      return (0, i.jsx)(u.DY3, {
+      return (0, l.jsx)(u.DY3, {
         text: t,
         color: u.FGA.GREY,
-        children: (0, i.jsx)("img", {
+        children: (0, l.jsx)("img", {
           src: e.getAvatarURL(n, a),
           alt: t,
           className: D.avatar
@@ -108,7 +108,7 @@ function V(e) {
     userId: null === (t = _.default.getCurrentUser()) || void 0 === t ? void 0 : t.id,
     channelId: h.id,
     application: o
-  }) === v.Fw.CAN_JOIN, P = null !== (n = h.getGuildId()) && void 0 !== n ? n : void 0, I = l.useId(), k = o.id, M = l.useMemo(() => ({
+  }) === v.Fw.CAN_JOIN, P = null !== (n = h.getGuildId()) && void 0 !== n ? n : void 0, I = i.useId(), k = o.id, M = i.useMemo(() => ({
     channel: h,
     type: "channel"
   }), [h]), {
@@ -118,14 +118,14 @@ function V(e) {
     context: M,
     launchingComponentId: I
   });
-  return (0, i.jsxs)("div", {
+  return (0, l.jsxs)("div", {
     className: D.splash,
-    children: [(0, i.jsx)(U, {
+    children: [(0, l.jsx)(U, {
       avatarSize: y,
       guildId: P,
       channelId: h.id,
       users: E
-    }), (0, i.jsx)(u.Text, {
+    }), (0, l.jsx)(u.Text, {
       className: a()(D.subheader, {
         [D.small]: 0 === g,
         [D.medium]: 1 === g
@@ -137,16 +137,16 @@ function V(e) {
       }) : A.NW.formatToPlainString(A.t["7Uuia2"], {
         username: j
       })
-    }), (0, i.jsx)(u.Text, {
+    }), (0, l.jsx)(u.Text, {
       className: a()(D.header, {
         [D.small]: 0 === g,
         [D.medium]: 1 === g
       }),
       variant: "text-sm/normal",
       children: o.name
-    }), (0, i.jsx)("div", {
+    }), (0, l.jsx)("div", {
       className: D.buttons,
-      children: w ? (0, i.jsx)(u.zxk, {
+      children: w ? (0, l.jsx)(u.zxk, {
         onClick: function(e) {
           e.stopPropagation(), null != O && (0, m.Z)({
             applicationId: O.applicationId,
@@ -190,28 +190,28 @@ function Y(e) {
     LayerStore: I.Z,
     PopoutWindowStore: P.Z
   }));
-  return l.useEffect(() => {
+  return i.useEffect(() => {
     if (v && null != d && !N) {
       let e = (0, S.Z)(d.location.id, d.applicationId);
       (0, E.jy)(e)
     }
-  }, [v, d, N]), (0, i.jsx)(Z.Gt, {
+  }, [v, d, N]), (0, l.jsx)(Z.Gt, {
     value: s,
-    children: (0, i.jsxs)("div", {
+    children: (0, l.jsxs)("div", {
       className: D.container,
-      children: [v && null != d && (0, i.jsx)(y.Z, {
+      children: [v && null != d && (0, l.jsx)(y.Z, {
         className: D.iframe,
         embedId: (0, S.Z)(d.location.id, u)
-      }), O && null != m && null != p && "" !== p ? (0, i.jsx)("img", {
+      }), O && null != m && null != p && "" !== p ? (0, l.jsx)("img", {
         className: D.splashImage,
         alt: m.name,
         src: p
-      }) : null, C && null != m && (0, i.jsx)(V, {
+      }) : null, C && null != m && (0, l.jsx)(V, {
         width: n,
         channel: a,
         participants: t.participants,
         application: m
-      }), o || O ? null : (0, i.jsx)("div", {
+      }), o || O ? null : (0, l.jsx)("div", {
         className: D.clickShield
       })]
     })

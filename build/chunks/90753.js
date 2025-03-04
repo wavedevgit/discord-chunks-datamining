@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => b
 }), n(653041);
 var r = n(192379),
-  i = n(846519),
-  l = n(692547),
+  l = n(846519),
+  i = n(692547),
   o = n(481060),
   a = n(220082),
   s = n(979651),
@@ -18,11 +18,11 @@ var r = n(192379),
 let v = 1e3 / 60;
 
 function b(e, t, n, b) {
-  let g = (0, o.dQu)(l.Z.unsafe_rawColors.BRAND_500).hex(),
-    y = (0, o.dQu)(l.Z.unsafe_rawColors.BLACK_500).hex(),
-    E = (0, o.dQu)(l.Z.unsafe_rawColors.WHITE_500).hex(),
+  let g = (0, o.dQu)(i.Z.unsafe_rawColors.BRAND_500).hex(),
+    y = (0, o.dQu)(i.Z.unsafe_rawColors.BLACK_500).hex(),
+    E = (0, o.dQu)(i.Z.unsafe_rawColors.WHITE_500).hex(),
     O = r.useRef({}),
-    S = r.useRef(new i.Xp),
+    S = r.useRef(new l.Xp),
     x = r.useCallback(t => {
       let n = u.Z.getDrawables(t);
       (0, f.UN)(e),
@@ -31,8 +31,8 @@ function b(e, t, n, b) {
           canvasRef: t,
           drawables: n,
           fallbackColor: r,
-          linesDrawnAt: i,
-          streamerId: l,
+          linesDrawnAt: l,
+          streamerId: i,
           channelId: o,
           outlineColorDark: a,
           outlineColorLight: u
@@ -55,8 +55,8 @@ function b(e, t, n, b) {
               drawable: t,
               context: n,
               canvasWidth: r,
-              canvasHeight: i,
-              fallbackColor: l,
+              canvasHeight: l,
+              fallbackColor: i,
               outlineColorDark: o,
               outlineColorLight: a,
               linesDrawnAt: s,
@@ -69,8 +69,8 @@ function b(e, t, n, b) {
                   line: t,
                   context: n,
                   canvasWidth: r,
-                  canvasHeight: i,
-                  fallbackColor: l,
+                  canvasHeight: l,
+                  fallbackColor: i,
                   outlineColorDark: o,
                   outlineColorLight: a,
                   linesDrawnAt: s,
@@ -81,8 +81,8 @@ function b(e, t, n, b) {
                   emojiHose: t,
                   context: n,
                   canvasWidth: r,
-                  canvasHeight: i,
-                  fallbackColor: l,
+                  canvasHeight: l,
+                  fallbackColor: i,
                   outlineColorDark: o,
                   outlineColorLight: a,
                   streamerId: c,
@@ -97,11 +97,11 @@ function b(e, t, n, b) {
             fallbackColor: r,
             outlineColorDark: a,
             outlineColorLight: u,
-            linesDrawnAt: i,
+            linesDrawnAt: l,
             deadDrawables: g,
-            streamerId: l
+            streamerId: i
           })
-        }), g.length > 0 && (0, c.fW)(g, l)
+        }), g.length > 0 && (0, c.fW)(g, i)
       }({
         canvasRef: e,
         drawables: n,
@@ -119,17 +119,17 @@ function b(e, t, n, b) {
       if (null == t) return;
       let {
         width: r,
-        height: i
+        height: l
       } = t.getBoundingClientRect();
-      t.width = r * window.devicePixelRatio, t.height = i * window.devicePixelRatio, x(n)
+      t.width = r * window.devicePixelRatio, t.height = l * window.devicePixelRatio, x(n)
     });
     return null != e.current && t.observe(e.current), () => t.disconnect()
   }, [e, x, n]);
   let j = r.useCallback(() => {
     let t = u.Z.getDrawables(n),
       r = m.U.getState().particles,
-      i = t.length > 0 || Object.keys(r).length > 0;
-    i && null == S.current._ref && (null == S.current._ref ? (x(n), S.current.start(v, () => x(n))) : i || null == S.current._ref || (S.current.stop(), (0, f.UN)(e)))
+      l = t.length > 0 || Object.keys(r).length > 0;
+    l && null == S.current._ref && (null == S.current._ref ? (x(n), S.current.start(v, () => x(n))) : l || null == S.current._ref || (S.current.stop(), (0, f.UN)(e)))
   }, [e, x, n]);
   r.useEffect(() => {
     let e = S.current;

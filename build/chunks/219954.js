@@ -1,4 +1,4 @@
-/** Chunk was on 61566 **/
+/** Chunk was on 72593 **/
 e.exports = {
   rowIcon: "rowIcon_cb32c7",
   appDetailsRowContainer: "appDetailsRowContainer_cb32c7",

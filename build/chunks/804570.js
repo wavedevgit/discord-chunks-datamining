@@ -1,4 +1,4 @@
-/** Chunk was on 99839 **/
+/** Chunk was on 88712 **/
 r.d(t, {
   E: () => u
 });
@@ -6,8 +6,8 @@ var n = r(200651),
   i = r(192379),
   l = r(120356),
   o = r.n(l),
-  a = r(481060),
-  c = r(964981);
+  c = r(481060),
+  a = r(964981);
 let u = i.memo(function(e) {
   let {
     emptyText: t,
@@ -15,8 +15,8 @@ let u = i.memo(function(e) {
     absolute: i = !1
   } = e;
   return (0, n.jsx)("div", {
-    className: o()(c.emptyWidgetContainer, i && c.absolute),
-    children: (0, n.jsx)(a.ua7, {
+    className: o()(a.emptyWidgetContainer, i && a.absolute),
+    children: (0, n.jsx)(c.ua7, {
       text: t,
       children: e => {
         var t, i;
@@ -40,8 +40,8 @@ let u = i.memo(function(e) {
         }({}, e), i = i = {
           children: (0, n.jsx)(r, {
             size: "md",
-            color: a.TVs.colors.WHITE,
-            className: c.emptyWidgetIcon
+            color: c.TVs.colors.WHITE,
+            className: a.emptyWidgetIcon
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var r = Object.keys(e);

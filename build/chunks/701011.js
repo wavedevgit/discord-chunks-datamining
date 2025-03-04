@@ -19,8 +19,8 @@ var o = n(200651),
   v = n(781780),
   h = n(325749),
   g = n(981631),
-  C = n(921944),
-  x = n(832969);
+  x = n(921944),
+  C = n(832969);
 
 function y(e) {
   let {
@@ -59,7 +59,7 @@ function y(e) {
               return e
             }({}, t), r = r = {
               onClickButton: () => {
-                a(C.L.USER_DISMISS), t.onClose()
+                a(x.L.USER_DISMISS), t.onClose()
               }
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
               var n = Object.keys(e);
@@ -83,7 +83,7 @@ function y(e) {
   return (r.useEffect(() => {
     a && c()
   }, [c, a]), a) ? (0, o.jsx)("div", {
-    className: x.nuxBackground,
+    className: C.nuxBackground,
     children: (0, o.jsx)(p.Z, {})
   }) : t
 }
@@ -112,23 +112,23 @@ function I() {
       let t = null == e ? void 0 : e.applicationId;
       return null == t ? void 0 : u.Z.getApplication(t)
     }),
-    C = (0, b.PR)();
+    x = (0, b.PR)();
   return (0, o.jsx)("div", {
-    className: x.container,
+    className: C.container,
     children: null == e || null == p ? (0, o.jsx)(l.$jN, {
-      className: x.iframe
+      className: C.iframe
     }) : (0, o.jsx)("div", {
-      className: x.loadedContentContainer,
+      className: C.loadedContentContainer,
       children: (0, o.jsxs)("div", {
-        className: x.iframeAndHeaderContainer,
+        className: C.iframeAndHeaderContainer,
         children: [(0, o.jsx)("div", {
-          className: x.headerContainer,
+          className: C.headerContainer,
           children: (0, o.jsx)(h.Z, {
             applicationId: p.id,
             channelId: t
           })
         }), (0, o.jsx)("div", {
-          className: x.iframeContainer,
+          className: C.iframeContainer,
           children: (0, o.jsx)(y, {
             children: (0, o.jsx)(v.Z, {
               channelId: t,
@@ -137,7 +137,7 @@ function I() {
               application: p
             })
           })
-        }), C ? (0, o.jsx)(d.Z, {
+        }), x ? (0, o.jsx)(d.Z, {
           isEmbeddedActivity: !0
         }) : null]
       })

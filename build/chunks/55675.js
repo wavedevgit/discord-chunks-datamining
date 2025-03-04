@@ -1,4 +1,4 @@
-/** Chunk was on 4566 **/
+/** Chunk was on 72593 **/
 e.exports = {
   gradientBackground: "gradientBackground__41626",
   leftDarkEllipse: "leftDarkEllipse__41626",

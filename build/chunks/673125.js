@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => O
 }), n(653041), n(47120);
-var r, i = n(442837),
-  l = n(570140),
+var r, l = n(442837),
+  i = n(570140),
   o = n(633302),
   a = n(594174),
   s = n(176354),
@@ -47,7 +47,7 @@ function y(e) {
     r.src = n, h[e] = r
   }
 }
-class E extends(r = i.ZP.Store) {
+class E extends(r = l.ZP.Store) {
   get visibleOverlayCanvas() {
     return b
   }
@@ -65,23 +65,23 @@ class E extends(r = i.ZP.Store) {
   }
 }
 f(E, "displayName", "SharedCanvasStore");
-let O = new E(l.Z, {
+let O = new E(i.Z, {
   SHARED_CANVAS_UPDATE_LINE_POINTS: function(e) {
     let {
       lineId: t,
       newPoints: n,
       userId: r,
-      streamerId: i
-    } = e, l = p[i];
-    if (null == l) p[i] = [{
+      streamerId: l
+    } = e, i = p[l];
+    if (null == i) p[l] = [{
       type: c.W.LINE,
       id: t,
       userId: r,
       points: n
     }];
     else {
-      let e = l.find(e => e.id === t);
-      null == e ? l.push({
+      let e = i.find(e => e.id === t);
+      null == e ? i.push({
         type: c.W.LINE,
         id: t,
         userId: r,
@@ -91,23 +91,23 @@ let O = new E(l.Z, {
     y(r)
   },
   SHARED_CANVAS_UPDATE_EMOJI_HOSE: function(e) {
-    var t, n, r, i, l;
+    var t, n, r, l, i;
     let {
       emojiHose: a,
       streamerId: u,
       userId: f
-    } = e, h = (i = m({}, a), l = l = {
+    } = e, h = (l = m({}, a), i = i = {
       type: c.W.EMOJI_HOSE
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(l)).forEach(function(e) {
-      Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-    }), i);
+    })(Object(i)).forEach(function(e) {
+      Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
+    }), l);
     if (null == p[u]) p[u] = [h];
     else {
       let e = p[u].findIndex(e => e.id === a.id);

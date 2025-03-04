@@ -1,4 +1,4 @@
-/** Chunk was on 70045 **/
+/** Chunk was on 88936 **/
 n.d(t, {
   default: () => P
 });
@@ -30,8 +30,8 @@ function P(e) {
     renderOutputDevices: n = !1,
     renderInputDevices: P = !1,
     renderInputModes: N = !1,
-    renderInputVolume: I = !1,
-    renderOutputVolume: E = !1,
+    renderInputVolume: E = !1,
+    renderOutputVolume: I = !1,
     renderDeafen: x = !1,
     simplified: A = !1,
     onSelect: Z,
@@ -70,7 +70,7 @@ function P(e) {
         label: j.NW.string(j.t["pS+K2N"]),
         children: k
       }) : null, (0, r.jsxs)(a.kSQ, {
-        children: [I ? W : null, E ? M : null, A ? (0, r.jsx)(a.Clw, {}) : null, A && x ? (0, r.jsx)(a.S89, {
+        children: [E ? W : null, I ? M : null, A ? (0, r.jsx)(a.Clw, {}) : null, A && x ? (0, r.jsx)(a.S89, {
           id: "deafen",
           label: j.NW.string(j.t.wjcRFR),
           action: () => s.Z.toggleSelfDeaf({

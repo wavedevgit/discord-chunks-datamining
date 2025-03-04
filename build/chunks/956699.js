@@ -29,7 +29,7 @@ var r = n(200651),
   T = n(38618),
   I = n(32300),
   y = n(371651),
-  A = n(388627),
+  A = n(398269),
   P = n(921801),
   R = n(857192),
   D = n(558724),
@@ -878,7 +878,7 @@ function en() {
       children: [(0, r.jsx)(P.F, {
         setting: L.s6.DEVELOPER_OPTIONS_OVERRIDE_OPEN_OVERLAY,
         children: o ? (0, r.jsx)(m.zxk, {
-          onClick: () => (0, A.fK)(),
+          onClick: () => (0, A.f)(t),
           children: "Open Overlay"
         }) : (0, r.jsx)(m.zxk, {
           onClick: () => window.open(a, "_blank"),

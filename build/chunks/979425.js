@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651);
 n(192379);
-var i = n(120356),
-  l = n.n(i),
+var l = n(120356),
+  i = n.n(l),
   o = n(481060),
   a = n(871118),
   s = n(388032),
@@ -15,16 +15,16 @@ function u(e) {
   let {
     stream: t,
     isSmall: n,
-    selected: i,
+    selected: l,
     isSelfStream: u
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.Z, {
-      className: l()(c.absoluteFill, c.streamPreviewOpacity),
+      className: i()(c.absoluteFill, c.streamPreviewOpacity),
       stream: t,
       noText: !0
-    }), !i && (0, r.jsxs)("div", {
-      className: l()(c.content, c.streamUnavailable, {
+    }), !l && (0, r.jsxs)("div", {
+      className: i()(c.content, c.streamUnavailable, {
         [c.small]: n
       }),
       children: [(0, r.jsx)(o.Text, {

@@ -87,22 +87,22 @@ let S = r.memo(function(e) {
   }, []), D = r.useCallback(e => {
     (0, s.Os)(e)
   }, []), {
-    id: A,
-    pinned: k,
+    id: k,
+    pinned: A,
     zIndex: L,
     size: R,
     anchor: M
   } = t, W = (0, h.w_)(R, _), V = (0, h.KR)(M, _), {
     minSize: z,
     resizeX: U,
-    resizeY: F,
-    dragAnywhere: G
-  } = null != Z ? Z : {}, Y = k || !w, B = r.useMemo(() => ({
+    resizeY: G,
+    dragAnywhere: F
+  } = null != Z ? Z : {}, Y = A || !w, H = r.useMemo(() => ({
     minX: 0,
     minY: 0,
     maxX: _.width,
     maxY: _.height
-  }), [_]), H = r.useCallback(e => n(x(j({}, e), {
+  }), [_]), B = r.useCallback(e => n(x(j({}, e), {
     widget: t,
     dragging: null != e.dragOperation,
     className: C
@@ -117,13 +117,13 @@ let S = r.memo(function(e) {
   return (0, i.jsx)(g.Z, {
     className: l()({
       [b.debug]: K,
-      [b.debugUnpinned]: K && !k,
-      [b.debugPinned]: K && k
+      [b.debugUnpinned]: K && !A,
+      [b.debugPinned]: K && A
     }, N),
-    id: A,
+    id: k,
     size: W,
     anchor: V,
-    container: B,
+    container: H,
     minSize: null != z ? z : {
       width: 0,
       height: 0
@@ -131,17 +131,17 @@ let S = r.memo(function(e) {
     hidden: !Y,
     locked: w,
     resizeX: null != U && U,
-    resizeY: null != F && F,
+    resizeY: null != G && G,
     style: {
       zIndex: L
     },
-    dragAnywhere: null != G && G,
+    dragAnywhere: null != F && F,
     active: !w,
     onUpdate: T,
     onClick: D,
     targetWindow: P,
     renderExtras: Q,
     resizeValidation: X,
-    children: H
+    children: B
   })
 })

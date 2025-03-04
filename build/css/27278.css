@@ -1,6 +1,6 @@
 /**
   Module ID: 27278
-  Original File Name: faa58cd4b9d328c2
+  Original File Name: 3530c0f96335c9e9
 **/
 .buttonContainer__7e329 {
     display: flex;
@@ -1073,6 +1073,28 @@
 
 .hidden__95c18 {
     display: none
+}
+
+.key__98feb {
+    display: inline-block;
+    color: var(--text-muted);
+    margin-left: var(--spacing-4);
+    margin-right: var(--spacing-4);
+    text-transform: uppercase;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 14px;
+    height: 16px;
+    box-sizing: border-box;
+    padding: 0 var(--spacing-4);
+    border-radius: var(--radius-xs);
+    border: 1px solid var(--border-subtle);
+    background: var(--bg-base-primary)
+}
+
+.key__98feb+.key__98feb {
+    margin-left: 0
 }
 
 .textArea_ab8e5c {

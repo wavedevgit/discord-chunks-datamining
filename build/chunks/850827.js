@@ -1,4 +1,4 @@
-/** Chunk was on 70045 **/
+/** Chunk was on 88936 **/
 n.d(t, {
   Z: () => w
 });
@@ -25,8 +25,8 @@ var l = n(120356),
   S = n(429589),
   P = n(636245),
   N = n(697761),
-  I = n(611459),
-  E = n(544671),
+  E = n(611459),
+  I = n(544671),
   x = n(757182),
   A = n(910424),
   Z = n(981631),
@@ -71,7 +71,7 @@ let w = (0, u.Z)(e => {
         Icon: g.Z
       }, "ConnectPlatformActivityButton");
       if (R) {
-        let e = (0, r.jsx)(E.Z, {
+        let e = (0, r.jsx)(I.Z, {
             activity: t,
             user: l,
             guildId: w,
@@ -81,7 +81,7 @@ let w = (0, u.Z)(e => {
             color: D,
             onAction: W
           }, "spotify-activity-sync-button"),
-          n = (0, r.jsx)(I.Z, {
+          n = (0, r.jsx)(E.Z, {
             activity: t,
             user: l,
             source: _,

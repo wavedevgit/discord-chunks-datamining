@@ -19,15 +19,15 @@ var o = n(200651),
   v = n(390322),
   h = n(961048),
   g = n(871499),
-  C = n(268353),
-  x = n(786915),
+  x = n(268353),
+  C = n(786915),
   y = n(107169),
   I = n(592125),
   O = n(271383),
   P = n(594174),
   j = n(358085),
-  w = n(51144),
-  k = n(998502),
+  k = n(51144),
+  w = n(998502),
   N = n(228488),
   S = n(145597),
   Z = n(214629),
@@ -56,7 +56,7 @@ function L(e) {
     var n;
     if (null == e) return null;
     let r = Y.get(e.id),
-      a = null !== (n = null == r ? void 0 : r.nick) && void 0 !== n ? n : w.ZP.getName(e);
+      a = null !== (n = null == r ? void 0 : r.nick) && void 0 !== n ? n : k.ZP.getName(e);
     return (0, o.jsx)(c.DY3, {
       text: a,
       position: "bottom",
@@ -83,7 +83,7 @@ function L(e) {
         f.hY(W.KJ3.ACTIVITY_POPOUT, e)
       }, []);
     return {
-      canStayOnTop: j.isPlatformEmbedded && k.ZP.supportsFeature(W.eRX.POPOUT_WINDOWS),
+      canStayOnTop: j.isPlatformEmbedded && w.ZP.supportsFeature(W.eRX.POPOUT_WINDOWS),
       popoutWindowAlwaysOnTop: e,
       handleStayOnTop: t
     }
@@ -150,7 +150,7 @@ function L(e) {
         className: i()(U.headerSection, U.headerSectionRight),
         children: (0, o.jsxs)("div", {
           className: U.actionButtonsContainer,
-          children: [(0, o.jsx)(x.Z, {
+          children: [(0, o.jsx)(C.Z, {
             appContext: W.IlC.POPOUT,
             applicationId: t,
             channel: R,
@@ -163,7 +163,7 @@ function L(e) {
           }) : null, q ? (0, o.jsx)(y.Z, {
             popoutWindowAlwaysOnTop: $,
             onToggleStayOnTop: Q
-          }) : null, (0, o.jsx)(C.Z, {
+          }) : null, (0, o.jsx)(x.Z, {
             node: ee,
             guestWindow: et,
             onClick: en

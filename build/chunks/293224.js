@@ -39,8 +39,8 @@ var i = n(200651),
   _ = n(603074),
   T = n(879815),
   D = n(189771),
-  A = n(294629),
-  k = n(67844),
+  k = n(294629),
+  A = n(67844),
   L = n(544384),
   R = n(892807),
   M = n(560688),
@@ -48,11 +48,11 @@ var i = n(200651),
   V = n(199902),
   z = n(314897),
   U = n(430824),
-  F = n(131951),
-  G = n(19780),
+  G = n(131951),
+  F = n(19780),
   Y = n(944486),
-  B = n(594174),
-  H = n(979651),
+  H = n(594174),
+  B = n(979651),
   Q = n(145597),
   K = n(444295),
   X = n(388627),
@@ -156,7 +156,7 @@ function er(e) {
     suppress: l,
     selfMute: a,
     mute: s
-  } = (0, A.Z)(t), c = a || s || l, d = (0, y.Z)(a, s, l, !1), {
+  } = (0, k.Z)(t), c = a || s || l, d = (0, y.Z)(a, s, l, !1), {
     Component: p,
     play: f,
     events: m
@@ -286,7 +286,7 @@ function el(e) {
   let {
     voiceChannel: n,
     locked: o
-  } = e, a = (0, l.e7)([F.Z], () => F.Z.isVideoEnabled()), s = (0, l.e7)([F.Z], () => Object.values(F.Z.getVideoDevices())[0]), u = null === (t = null == s ? void 0 : s.disabled) || void 0 === t || t, c = !1 === u, d = (0, D.Z)(n), m = e => {
+  } = e, a = (0, l.e7)([G.Z], () => G.Z.isVideoEnabled()), s = (0, l.e7)([G.Z], () => Object.values(G.Z.getVideoDevices())[0]), u = null === (t = null == s ? void 0 : s.disabled) || void 0 === t || t, c = !1 === u, d = (0, D.Z)(n), m = e => {
     f.Z.setVideoEnabled(e)
   }, g = () => {
     c ? m(!0) : (0, M.Z)()
@@ -308,7 +308,7 @@ function el(e) {
       onMouseEnter: j,
       onMouseLeave: x
     }
-  } = (0, p.o)(a ? "disable" : "enable"), S = null != n ? (0, k.X)({
+  } = (0, p.o)(a ? "disable" : "enable"), S = null != n ? (0, A.X)({
     enabled: a,
     cameraUnavailable: u,
     hasPermission: d,
@@ -359,9 +359,9 @@ function ea(e) {
       voiceChannel: n,
       locked: o
     } = e,
-    a = (0, l.e7)([B.default], () => B.default.getCurrentUser()),
+    a = (0, l.e7)([H.default], () => H.default.getCurrentUser()),
     s = (0, D.Z)(n),
-    u = (0, l.cj)([F.Z], () => (0, C.Z)(F.Z)),
+    u = (0, l.cj)([G.Z], () => (0, C.Z)(G.Z)),
     d = (0, l.e7)([V.Z], () => V.Z.getCurrentUserActiveStream()),
     p = (0, J.g)((0, Q.getPID)()),
     f = () => {
@@ -455,7 +455,7 @@ function es(e) {
   } = e, a = null !== (t = null == r ? void 0 : r.getGuildId()) && void 0 !== t ? t : null, {
     mute: s,
     suppress: u
-  } = (0, A.Z)(r), c = (0, l.e7)([F.Z], () => F.Z.isDeaf()), p = null == r || s || u || c;
+  } = (0, k.Z)(r), c = (0, l.e7)([G.Z], () => G.Z.isDeaf()), p = null == r || s || u || c;
 
   function f(e) {
     null != a && ((0, K.Ws)(q.Odu.QUICK_ACTIONS, {
@@ -646,12 +646,12 @@ function ep(e) {
   var t, n;
   let {
     voiceChannel: r
-  } = e, o = null == r ? void 0 : r.id, a = (0, l.cj)([G.Z], () => ({
-    channelId: G.Z.getChannelId(),
-    quality: G.Z.getQuality(),
-    state: G.Z.getState(),
-    lastPing: G.Z.getLastPing()
-  })), s = null != o, u = (0, l.e7)([H.Z], () => null != o && H.Z.hasVideo(o), [o]);
+  } = e, o = null == r ? void 0 : r.id, a = (0, l.cj)([F.Z], () => ({
+    channelId: F.Z.getChannelId(),
+    quality: F.Z.getQuality(),
+    state: F.Z.getState(),
+    lastPing: F.Z.getLastPing()
+  })), s = null != o, u = (0, l.e7)([B.Z], () => null != o && B.Z.hasVideo(o), [o]);
   return s && null != r && (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(w.Z, (t = et({}, a), n = n = {
       hasVideo: u,

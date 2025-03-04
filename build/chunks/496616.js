@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651);
 n(192379);
-var i = n(481060),
-  l = n(153867),
+var l = n(481060),
+  i = n(153867),
   o = n(468026),
   a = n(740492),
   s = n(388032);
@@ -13,11 +13,11 @@ var i = n(481060),
 function c(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : () => {},
     n = t => {
-      l.ZP.updatedUnsyncedSettings({
+      i.ZP.updatedUnsyncedSettings({
         disableEmbeddedActivityPopOutAlert: !0
       }), t(), e()
     };
-  a.ZP.disableEmbeddedActivityPopOutAlert ? e() : (0, i.h7j)(i => (0, r.jsx)(o.default, function(e) {
+  a.ZP.disableEmbeddedActivityPopOutAlert ? e() : (0, l.h7j)(l => (0, r.jsx)(o.default, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -40,10 +40,10 @@ function c(e) {
     title: s.NW.string(s.t.pVr7Cg),
     cancelText: s.NW.string(s.t.EwoEOT),
     onConfirm: () => {
-      i.onClose(), e()
+      l.onClose(), e()
     },
     onCancel: t,
-    onConfirmSecondary: () => n(i.onClose),
+    onConfirmSecondary: () => n(l.onClose),
     body: s.NW.string(s.t.ugSbNT)
-  }, i)), {}, i.u1M)
+  }, l)), {}, l.u1M)
 }

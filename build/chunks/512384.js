@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651);
 n(192379);
-var i = n(399606),
-  l = n(481060),
+var l = n(399606),
+  i = n(481060),
   o = n(351780),
   a = n(170248);
 
@@ -16,9 +16,9 @@ function s(e) {
     children: s,
     className: c
   } = e, u = (0, a.Z)(n);
-  return (0, i.e7)([o.Z], () => o.Z.isEnabled({
+  return (0, l.e7)([o.Z], () => o.Z.isEnabled({
     shakeLocation: n
-  })) ? (0, r.jsx)(l.UkV, {
+  })) ? (0, r.jsx)(i.UkV, {
     isShaking: t,
     intensity: u,
     className: c,

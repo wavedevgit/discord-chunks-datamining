@@ -1,4 +1,4 @@
-/** Chunk was on 70045 **/
+/** Chunk was on 88936 **/
 n.d(t, {
   Y: () => F,
   Z: () => Q
@@ -23,8 +23,8 @@ var r, l, i = n(200651),
   S = n(565138),
   P = n(707409),
   N = n(424678),
-  I = n(750154),
-  E = n(768581),
+  E = n(750154),
+  I = n(768581),
   x = n(630388),
   A = n(153066),
   Z = n(740265),
@@ -205,15 +205,15 @@ class H extends(r = o.PureComponent) {
       onClick: this.handleOpenSpotifyAlbum,
       children: m
     });
-    else if ((0, I.dS)(e)) {
-      let t = (0, I.rq)(e);
+    else if ((0, E.dS)(e)) {
+      let t = (0, E.rq)(e);
       if (null == t) return null;
       m = (0, i.jsx)(b.ZP, {
         mask: b.ZP.Masks.SQUIRCLE,
         width: k.Si.SMALL,
         height: k.Si.SMALL,
         children: (0, i.jsx)("img", {
-          src: null !== (r = E.ZP.getGuildIconURL({
+          src: null !== (r = I.ZP.getGuildIconURL({
             id: t.guildId,
             icon: u.small_image,
             size: k.Si.SMALL
@@ -241,7 +241,7 @@ class H extends(r = o.PureComponent) {
         href: e.url,
         children: m
       })]
-    })), (0, I.dS)(e) || null == u.small_image || (a = (0, i.jsx)(f.ua7, {
+    })), (0, E.dS)(e) || null == u.small_image || (a = (0, i.jsx)(f.ua7, {
       text: "" !== u.small_text ? u.small_text : null,
       position: "top",
       children: e => {
@@ -309,7 +309,7 @@ class H extends(r = o.PureComponent) {
       className: U.bodyLink,
       onClick: this.handleOpenSpotifyTrack,
       children: l
-    }) : (0, I.dS)(e) && (u = e.name)), null == u) ? null : (0, i.jsx)(f.Text, {
+    }) : (0, E.dS)(e) && (u = e.name)), null == u) ? null : (0, i.jsx)(f.Text, {
       title: c,
       variant: "text-sm/semibold",
       className: s()((0, A.l)(U, "name", t.bot ? "wrap" : "normal")),
@@ -333,7 +333,7 @@ class H extends(r = o.PureComponent) {
           onOpenSpotifyArtist: this.handleOpenSpotifyArtist
         }, n)
       });
-      else if ((0, I.dS)(e)) {
+      else if ((0, E.dS)(e)) {
         var a;
         l = null === (a = e.assets) || void 0 === a ? void 0 : a.small_text
       }
@@ -432,10 +432,10 @@ class H extends(r = o.PureComponent) {
         onClick: this.handleOpenSpotifyAlbum,
         children: u
       }, n) : u
-    }))), null != c && "" !== c && e.type !== W.IIU.CUSTOM_STATUS || (0, I.dS)(e)) ? ((null == a ? void 0 : a.size) == null && [k.Zc].includes(null !== (n = e.application_id) && void 0 !== n ? n : "") ? l = M.NW.formatToPlainString(M.t["u//9Bw"], {
+    }))), null != c && "" !== c && e.type !== W.IIU.CUSTOM_STATUS || (0, E.dS)(e)) ? ((null == a ? void 0 : a.size) == null && [k.Zc].includes(null !== (n = e.application_id) && void 0 !== n ? n : "") ? l = M.NW.formatToPlainString(M.t["u//9Bw"], {
       count: "0",
       max: null !== (r = null == t ? void 0 : t.getMaxParticipants()) && void 0 !== r ? r : 0
-    }) : (0, I.dS)(e) && (null == a ? void 0 : a.size) != null ? l = M.NW.formatToPlainString(M.t["JC/3x8"], {
+    }) : (0, E.dS)(e) && (null == a ? void 0 : a.size) != null ? l = M.NW.formatToPlainString(M.t["JC/3x8"], {
       numSpeakers: a.size[0],
       numListeners: a.size[1] - a.size[0]
     }) : (null == a ? void 0 : a.size) != null && a.size.length >= 2 && (l = 0 === a.size[1] ? M.NW.formatToPlainString(M.t.IM4J4e, {

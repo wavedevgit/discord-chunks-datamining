@@ -1,4 +1,4 @@
-/** Chunk was on 70045 **/
+/** Chunk was on 88936 **/
 n.d(t, {
   ZP: () => D,
   eJ: () => C,
@@ -26,8 +26,8 @@ var r = n(200651),
   S = n(374129),
   P = n(639351),
   N = n(630388),
-  I = n(51144),
-  E = n(981631),
+  E = n(51144),
+  I = n(981631),
   x = n(354459),
   A = n(927923),
   Z = n(388032),
@@ -82,7 +82,7 @@ function _(e) {
     embeddedApplication: h,
     otherClientSessionType: v,
     voicePlatform: j,
-    application: I,
+    application: E,
     guildId: w,
     channelId: C,
     user: _,
@@ -154,7 +154,7 @@ function _(e) {
       size: g.ZP.Sizes.SMALL
     })
   }, "stream"));
-  let U = null != I && !(0, N.yE)(I.flags, E.udG.EMBEDDED);
+  let U = null != E && !(0, N.yE)(E.flags, I.udG.EMBEDDED);
   return 0 !== W.length || null != M || U ? (0, r.jsxs)("div", {
     className: o()(T.icons, t),
     children: [(0, r.jsxs)("div", {
@@ -163,7 +163,7 @@ function _(e) {
     }), U && (0, r.jsx)("div", {
       className: T.iconGroup,
       children: (0, r.jsx)(L, {
-        application: I,
+        application: E,
         iconClassName: O,
         guildId: w,
         channelId: C,
@@ -176,7 +176,7 @@ let D = function(e) {
   var t, {
       avatarContainerClass: n = T.avatarContainer,
       userNameClassName: i = T.usernameFont,
-      size: s = E.ipw.SMALL,
+      size: s = I.ipw.SMALL,
       selected: u = !1,
       disabled: d = !1,
       isOverlay: g = !1
@@ -237,8 +237,8 @@ let D = function(e) {
       [T.overlap]: B,
       [T.selected]: u,
       [T.clickable]: null != S,
-      [T.userSmall]: s === E.ipw.SMALL,
-      [T.userLarge]: s === E.ipw.LARGE,
+      [T.userSmall]: s === I.ipw.SMALL,
+      [T.userLarge]: s === I.ipw.LARGE,
       [T.disabled]: !u && d,
       [T.ringing]: H
     }),
@@ -272,12 +272,12 @@ let D = function(e) {
         }, e))
       }) : null, (0, r.jsx)("div", {
         className: o()(n, T.avatar, {
-          [T.avatarLarge]: s === E.ipw.LARGE,
-          [T.avatarSmall]: s === E.ipw.SMALL,
+          [T.avatarLarge]: s === I.ipw.LARGE,
+          [T.avatarSmall]: s === I.ipw.SMALL,
           [T.avatarSpeaking]: k
         }),
         style: {
-          backgroundImage: "url(".concat(J.getAvatarURL(R, s === E.ipw.LARGE ? 38 : 24), ")")
+          backgroundImage: "url(".concat(J.getAvatarURL(R, s === I.ipw.LARGE ? 38 : 24), ")")
         }
       }), function() {
         var e, t;
@@ -286,7 +286,7 @@ let D = function(e) {
               [T.username]: !0,
               [T.usernameSpeaking]: !M && !U && k
             }),
-            children: [null != G ? G : I.ZP.getName(J), F ? (0, r.jsxs)("span", {
+            children: [null != G ? G : E.ZP.getName(J), F ? (0, r.jsxs)("span", {
               className: T.guestSuffix,
               children: ["\xa0", Z.NW.string(Z.t["pFO/Pj"])]
             }) : ""]
@@ -299,7 +299,7 @@ let D = function(e) {
             disableTooltip: !0,
             className: o()(T.clanTag, g && T.isOverlay),
             profileViewedAnalytics: {
-              source: g ? E.jXE.OVERLAY : E.Sbl.VOICE_PANEL
+              source: g ? I.jXE.OVERLAY : I.Sbl.VOICE_PANEL
             }
           };
         return !W || g ? (0, r.jsx)(y.Z, (e = w({}, l), t = t = {
@@ -354,7 +354,7 @@ function L(e) {
     userId: u
   } = e, [f, p] = l.useState(!1), m = (0, s.O)(e => p(e));
   return l.useEffect(() => {
-    f && d.ZP.trackWithMetadata(E.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_VIEWED, {
+    f && d.ZP.trackWithMetadata(I.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_VIEWED, {
       channel_id: c,
       guild_id: i,
       user_id: u
@@ -374,7 +374,7 @@ function L(e) {
         game: t,
         size: b.Z.Sizes.XSMALL,
         onMouseEnter: () => {
-          d.ZP.trackWithMetadata(E.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_HOVERED, {
+          d.ZP.trackWithMetadata(I.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_HOVERED, {
             channel_id: c,
             guild_id: i,
             game_name: t.name,

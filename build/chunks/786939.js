@@ -1,4 +1,4 @@
-/** Chunk was on 4566 **/
+/** Chunk was on 72593 **/
 e.exports = {
   buttonColor: "buttonColor__7b3e8",
   textButton: "textButton__7b3e8",

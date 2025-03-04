@@ -1,4 +1,4 @@
-/** Chunk was on 99839 **/
+/** Chunk was on 88712 **/
 r.d(t, {
   GY: () => O,
   PI: () => f,
@@ -10,8 +10,8 @@ r(192379);
 var i = r(120356),
   l = r.n(i),
   o = r(692547),
-  a = r(481060),
-  c = r(765250),
+  c = r(481060),
+  a = r(765250),
   u = r(388032),
   s = r(849149);
 
@@ -53,7 +53,7 @@ function f(e) {
   } = e;
   return (0, n.jsx)("div", {
     className: s.titleWrapper,
-    children: (0, n.jsx)(a.Text, {
+    children: (0, n.jsx)(c.Text, {
       variant: "text-xs/semibold",
       color: "header-primary",
       children: t
@@ -65,13 +65,13 @@ function b(e) {
   let {
     onClick: t
   } = e, r = u.NW.string(u.t["3D5yo6"]);
-  return (0, n.jsx)(a.ua7, {
+  return (0, n.jsx)(c.ua7, {
     text: r,
     "aria-label": r,
-    children: e => (0, n.jsx)(a.P3F, p(d({}, e), {
+    children: e => (0, n.jsx)(c.P3F, p(d({}, e), {
       className: s.button,
       onClick: t,
-      children: (0, n.jsx)(a.ewm, {
+      children: (0, n.jsx)(c.ewm, {
         size: "xxs",
         color: o.Z.colors.INTERACTIVE_ACTIVE
       })
@@ -84,17 +84,17 @@ function O(e) {
     widgetId: t,
     showAllStreams: r
   } = e, i = r ? u.NW.string(u.t.q2B3rq) : u.NW.string(u.t.JKGi6u), f = () => {
-    (0, c.zG)(t, {
+    (0, a.zG)(t, {
       showAllStreams: !r
     })
   };
-  return (0, n.jsx)(a.ua7, {
+  return (0, n.jsx)(c.ua7, {
     text: i,
     "aria-label": i,
-    children: e => (0, n.jsx)(a.P3F, p(d({}, e), {
+    children: e => (0, n.jsx)(c.P3F, p(d({}, e), {
       className: l()(s.button, r && s.active),
       onClick: f,
-      children: (0, n.jsx)(a.pzj, {
+      children: (0, n.jsx)(c.pzj, {
         size: "xxs",
         color: r ? o.Z.colors.BG_BRAND : o.Z.colors.INTERACTIVE_ACTIVE
       })
@@ -107,13 +107,13 @@ function g(e) {
     id: t,
     pinned: r
   } = e, i = r ? u.NW.string(u.t.cSu80t) : u.NW.string(u.t.cM8Vnp);
-  return (0, n.jsx)(a.ua7, {
+  return (0, n.jsx)(c.ua7, {
     text: i,
     "aria-label": i,
-    children: e => (0, n.jsx)(a.P3F, p(d({}, e), {
+    children: e => (0, n.jsx)(c.P3F, p(d({}, e), {
       className: l()(s.button, r && s.active),
-      onClick: () => (0, c.xh)(t),
-      children: (0, n.jsx)(a.k5M, {
+      onClick: () => (0, a.xh)(t),
+      children: (0, n.jsx)(c.k5M, {
         size: "xxs",
         color: r ? o.Z.colors.BG_BRAND : o.Z.colors.INTERACTIVE_ACTIVE
       })

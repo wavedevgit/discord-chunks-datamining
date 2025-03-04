@@ -78,6 +78,7 @@ function S(e, t, n) {
     default:
       if (o === m.evJ.USER_QUARANTINED) O();
       else if ((0, u.b)(r, o)) break;
+      else if (o === m.evJ.RELATIONSHIP_INVALID_NO_CONFIRMATION) break;
       else if (0 === t) {
         let e = null != n ? (0, f.NF)(o || 0, n) : E.NW.string(E.t.paDJBA);
         y({
@@ -117,22 +118,24 @@ let I = {
         type: o,
         friendToken: a,
         fromFriendSuggestion: s,
-        captchaPayload: l
-      } = e, c = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0, u = d.default.getUser(n);
+        confirmStrangerRequest: l,
+        captchaPayload: c
+      } = e, u = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0, f = d.default.getUser(n);
       return r.tn.put({
         url: m.ANM.USER_RELATIONSHIP(n),
         body: b({
           type: o,
           friend_token: a,
-          from_friend_suggestion: s
-        }, l),
+          from_friend_suggestion: s,
+          confirm_stranger_request: l
+        }, c),
         context: i,
         oldFormErrors: !0,
         rejectWithError: !1
       }).then(() => {
         null == t || t()
       }).catch(e => {
-        S(e, c, _.ZP.getUserTag(u))
+        S(e, u, _.ZP.getUserTag(f))
       })
     },
     acceptFriendRequest(e) {

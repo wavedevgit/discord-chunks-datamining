@@ -68,20 +68,20 @@ function v(e) {
       bufferFramecountRef: P,
       frameCheckerEffect: _
     } = (0, c.d6)(!0, j, !0),
-    [T, D, A] = (0, c.ZF)(v),
-    [k, L] = (0, c.Y5)(T, _, b),
+    [T, D, k] = (0, c.ZF)(v),
+    [A, L] = (0, c.Y5)(T, _, b),
     R = performance.now() - x.current < c.MC,
     M = D(I, P.current);
-  (0, u.ZP)(() => (k(), () => {
+  (0, u.ZP)(() => (A(), () => {
     L()
   }));
   let W = r.useCallback(() => {
-      N(), A(), k()
-    }, [N, A, k]),
+      N(), k(), A()
+    }, [N, k, A]),
     [V, z] = r.useState(!0),
-    [U, F] = r.useState(!0),
-    [G, Y] = r.useState(!0),
-    [B, H] = r.useState(!0),
+    [U, G] = r.useState(!0),
+    [F, Y] = r.useState(!0),
+    [H, B] = r.useState(!0),
     [Q, K] = r.useState(!0);
   return t && !n ? null : (0, i.jsxs)("div", {
     className: l()(g.panelGroup, !o && g.rightAligned),
@@ -112,7 +112,7 @@ function v(e) {
         children: (0, i.jsx)(s.XZJ, {
           size: 16,
           value: U,
-          onChange: (e, t) => F(t)
+          onChange: (e, t) => G(t)
         })
       }), (0, i.jsxs)(s.Text, {
         variant: "text-md/normal",
@@ -125,13 +125,13 @@ function v(e) {
           children: [I.toFixed(2), "ms"]
         })]
       })]
-    }), (G || !t) && (0, i.jsxs)("div", {
+    }), (F || !t) && (0, i.jsxs)("div", {
       className: g.measurement,
       children: [!t && (0, i.jsx)("div", {
         className: g.measurementCheckbox,
         children: (0, i.jsx)(s.XZJ, {
           size: 16,
-          value: G,
+          value: F,
           onChange: (e, t) => Y(t)
         })
       }), (0, i.jsxs)(s.Text, {
@@ -151,14 +151,14 @@ function v(e) {
           children: ["(", (Z.current / w.current * 100).toFixed(3), "%)"]
         })]
       })]
-    }), (B || !t) && (0, i.jsxs)("div", {
+    }), (H || !t) && (0, i.jsxs)("div", {
       className: g.measurement,
       children: [!t && (0, i.jsx)("div", {
         className: g.measurementCheckbox,
         children: (0, i.jsx)(s.XZJ, {
           size: 16,
-          value: B,
-          onChange: (e, t) => H(t)
+          value: H,
+          onChange: (e, t) => B(t)
         })
       }), (0, i.jsxs)(s.Text, {
         variant: "text-md/normal",

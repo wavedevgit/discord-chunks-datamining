@@ -1,4 +1,4 @@
-/** Chunk was on 70045 **/
+/** Chunk was on 88936 **/
 n.d(t, {
   Z: () => x
 }), n(47120);
@@ -66,10 +66,10 @@ function N() {
   }), r
 }
 
-function I() {
+function E() {
   h.clear(), v.clear(), j.clear()
 }
-class E extends(r = o.ZP.Store) {
+class I extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(g.Z, m.default, f.Z, p.Z), this.syncWith([m.default], N)
   }
@@ -86,24 +86,24 @@ class E extends(r = o.ZP.Store) {
     return v.values()
   }
 }
-i = "RTCConnectionDesyncStore", (l = "displayName") in E ? Object.defineProperty(E, l, {
+i = "RTCConnectionDesyncStore", (l = "displayName") in I ? Object.defineProperty(I, l, {
   value: i,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : E[l] = i;
-let x = new E(s.Z, {
+}) : I[l] = i;
+let x = new I(s.Z, {
   CONNECTION_OPEN: function() {
-    I()
+    E()
   },
-  VOICE_CHANNEL_SELECT: I,
+  VOICE_CHANNEL_SELECT: E,
   RTC_CONNECTION_STATE: function(e) {
     let {
       state: t,
       context: n
     } = e;
     if (n !== a.Yn.DEFAULT || t !== b.hes.DISCONNECTED) return !1;
-    I()
+    E()
   },
   VOICE_STATE_UPDATES: function(e) {
     let {

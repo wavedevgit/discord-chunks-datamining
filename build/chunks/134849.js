@@ -28,7 +28,7 @@ function v(e, t, n, r) {
     notification: l,
     locked: a
   } = t;
-  return (0, i.jsx)(d.ZP, {
+  return (0, i.jsx)(d.Z, {
     index: o,
     notification: l,
     locked: a,

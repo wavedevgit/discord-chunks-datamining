@@ -42,8 +42,8 @@ function C(e) {
     pinned: _,
     anchorTop: T,
     anchorLeft: D,
-    showEmpty: A = !0
-  } = e, k = 2 * N + 2 * Z, {
+    showEmpty: k = !0
+  } = e, A = 2 * N + 2 * Z, {
     width: L,
     height: R
   } = {
@@ -57,7 +57,7 @@ function C(e) {
     var e;
     let n = g.Z.getWidget(t);
     return !!(0, b.ZL)(n) && (null === (e = n.meta.showAllStreams) || void 0 === e || e)
-  }, [t]), F = !P, G = (0, o.e7)([m.Z], () => m.Z.getChannel(M)), Y = (0, o.e7)([f.default], () => f.default.getId()), B = T && F || D && P, H = !T && F || !D && P, {
+  }, [t]), G = !P, F = (0, o.e7)([m.Z], () => m.Z.getChannel(M)), Y = (0, o.e7)([f.default], () => f.default.getId()), H = T && G || D && P, B = !T && G || !D && P, {
     participantsVersion: Q,
     activeStreams: K,
     streamParticipants: X
@@ -71,10 +71,10 @@ function C(e) {
       t = t => e.has((0, p.V9)(t.stream)),
       n = d.Z.getStreamParticipants(M).filter(e => e.user.id !== Y && (!!U || t(e)));
     return n.sort((e, n) => {
-      if (B) {
+      if (H) {
         if (t(e) && !t(n)) return -1;
         if (!t(e) && t(n)) return 1
-      } else if (H) {
+      } else if (B) {
         if (t(e) && !t(n)) return 1;
         if (!t(e) && t(n)) return -1
       }
@@ -84,7 +84,7 @@ function C(e) {
       activeStreams: e,
       participantsVersion: d.Z.getParticipantsVersion(M)
     }
-  }, [M, Y, U, B, H]), J = X.length, q = null == G || 0 === K.size && C || 0 === J && !C, $ = P ? b.C5.HORIZONTAL : b.C5.VERTICAL, {
+  }, [M, Y, U, H, B]), J = X.length, q = null == F || 0 === K.size && C || 0 === J && !C, $ = P ? b.C5.HORIZONTAL : b.C5.VERTICAL, {
     tileWidth: ee,
     layout: et
   } = function(e, t, n, i, o) {
@@ -109,11 +109,11 @@ function C(e) {
       layout: s,
       tileWidth: u
     }
-  }(!1, X.length, null != W ? W : L - k, null != V ? V : R - k, $), en = {
+  }(!1, X.length, null != W ? W : L - A, null != V ? V : R - A, $), en = {
     id: t,
     width: L,
     height: R,
-    sizeOffset: k,
+    sizeOffset: A,
     layout: et,
     padding: N,
     participants: X.length
@@ -220,7 +220,7 @@ function C(e) {
     s.Z.setGpuBoostRequested(E.zS.OVERLAY_VIDEO_STREAM_RENDERING, !q)
   }, [q]), (0, c.ZP)(() => () => {
     s.Z.setGpuBoostRequested(E.zS.OVERLAY_VIDEO_STREAM_RENDERING, !1)
-  }), q && C) ? null : q && !C ? A ? C ? null : (0, i.jsx)(y.E, {
+  }), q && C) ? null : q && !C ? k ? C ? null : (0, i.jsx)(y.E, {
     emptyText: j.NW.string(j.t["T6+rX1"]),
     icon: l.hGI,
     absolute: !0

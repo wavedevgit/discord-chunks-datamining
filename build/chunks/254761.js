@@ -1,32 +1,32 @@
 /** Chunk was on 12416 **/
 n.d(t, {
-  Z: () => l
+  Z: () => i
 });
 var r = n(200651);
 n(192379);
-var i = n(325767);
+var l = n(325767);
 
-function l(e) {
+function i(e) {
   var t, n, {
-      width: l = 16,
+      width: i = 16,
       height: o = 16,
       color: a = "currentColor",
       foreground: s
     } = e,
     c = function(e, t) {
       if (null == e) return {};
-      var n, r, i = function(e, t) {
+      var n, r, l = function(e, t) {
         if (null == e) return {};
-        var n, r, i = {},
-          l = Object.keys(e);
-        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-        return i
+        var n, r, l = {},
+          i = Object.keys(e);
+        for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+        return l
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var l = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var i = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
       }
-      return i
+      return l
     }(e, ["width", "height", "color", "foreground"]);
   return (0, r.jsx)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -45,8 +45,8 @@ function l(e) {
       })
     }
     return e
-  }({}, (0, i.Z)(c)), n = n = {
-    width: l,
+  }({}, (0, l.Z)(c)), n = n = {
+    width: i,
     height: o,
     viewBox: "0 0 430 430",
     children: (0, r.jsx)("path", {

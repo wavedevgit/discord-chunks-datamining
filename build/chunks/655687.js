@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => o
 });
 var r = n(933557),
-  i = n(981631),
-  l = n(388032);
+  l = n(981631),
+  i = n(388032);
 
 function o(e) {
   let {
@@ -13,40 +13,40 @@ function o(e) {
     isCreatingThread: o = !1
   } = e, a = (0, r.ZP)(t, !0), s = (0, r.ZP)(t, !1);
   return null == t || null == a ? {
-    placeholder: l.NW.string(l.t.MKDeyM),
-    accessibilityLabel: l.NW.string(l.t.MKDeyM)
+    placeholder: i.NW.string(i.t.MKDeyM),
+    accessibilityLabel: i.NW.string(i.t.MKDeyM)
   } : o ? {
-    placeholder: l.NW.string(l.t.YzpScX),
-    accessibilityLabel: l.NW.string(l.t.YzpScX)
+    placeholder: i.NW.string(i.t.YzpScX),
+    accessibilityLabel: i.NW.string(i.t.YzpScX)
   } : n ? {
-    placeholder: l.NW.string(l.t.RRvRp6),
-    accessibilityLabel: l.NW.string(l.t.RRvRp6)
+    placeholder: i.NW.string(i.t.RRvRp6),
+    accessibilityLabel: i.NW.string(i.t.RRvRp6)
   } : t.isForumPost() ? {
-    placeholder: l.NW.formatToPlainString(l.t.Y6qWLS, {
+    placeholder: i.NW.formatToPlainString(i.t.Y6qWLS, {
       channel: a
     }),
-    accessibilityLabel: l.NW.formatToPlainString(l.t.KffKoa, {
+    accessibilityLabel: i.NW.formatToPlainString(i.t.KffKoa, {
       channel: s
     })
-  } : i.TPd.THREADS.has(t.type) ? {
-    placeholder: l.NW.formatToPlainString(l.t["8lzR/f"], {
+  } : l.TPd.THREADS.has(t.type) ? {
+    placeholder: i.NW.formatToPlainString(i.t["8lzR/f"], {
       channel: a
     }),
-    accessibilityLabel: l.NW.formatToPlainString(l.t.UZIMWV, {
+    accessibilityLabel: i.NW.formatToPlainString(i.t.UZIMWV, {
       channel: s
     })
-  } : t.type === i.d4z.DM ? {
-    placeholder: l.NW.formatToPlainString(l.t["4c+CAw"], {
+  } : t.type === l.d4z.DM ? {
+    placeholder: i.NW.formatToPlainString(i.t["4c+CAw"], {
       channel: a
     }),
-    accessibilityLabel: l.NW.formatToPlainString(l.t.fqOxbW, {
+    accessibilityLabel: i.NW.formatToPlainString(i.t.fqOxbW, {
       channel: s
     })
   } : {
-    placeholder: l.NW.formatToPlainString(l.t["8lzR/f"], {
+    placeholder: i.NW.formatToPlainString(i.t["8lzR/f"], {
       channel: a
     }),
-    accessibilityLabel: l.NW.formatToPlainString(l.t.ih7ZSE, {
+    accessibilityLabel: i.NW.formatToPlainString(i.t.ih7ZSE, {
       channel: s
     })
   }

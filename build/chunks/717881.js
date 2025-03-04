@@ -1,4 +1,4 @@
-/** Chunk was on 70045 **/
+/** Chunk was on 88936 **/
 n.d(t, {
   P: () => j,
   Z: () => S
@@ -111,14 +111,14 @@ let j = a.Z.Types,
         var e, r;
         return (0, o.Z)(t, y.xjy.EMBEDDED) ? p.Z.getGuild(null === (e = f.Z.getChannel(null === (r = m.Z.getVoiceStateForSession(n.id, null == t ? void 0 : t.session_id)) || void 0 === r ? void 0 : r.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null
       }),
-      I = (0, l.e7)([p.Z], () => null != P ? p.Z.getGuild(P.guildId) : null),
-      E = (0, l.e7)([c.Z], () => null != t ? null != t.application_id ? c.Z.getApplication(t.application_id) : c.Z.getApplicationByName(t.name) : null);
+      E = (0, l.e7)([p.Z], () => null != P ? p.Z.getGuild(P.guildId) : null),
+      I = (0, l.e7)([c.Z], () => null != t ? null != t.application_id ? c.Z.getApplication(t.application_id) : c.Z.getApplicationByName(t.name) : null);
     return (null == t ? void 0 : t.type) === y.IIU.HANG_STATUS ? null : (0, r.jsx)(a.Z, h(O({}, j), {
       activity: t,
       user: n,
-      application: E,
+      application: I,
       hideHeader: g,
-      activityGuild: null != N ? N : I,
+      activityGuild: null != N ? N : E,
       showChannelDetails: b,
       channel: b ? S : void 0,
       renderActions: s ? () => (0, r.jsx)(v, h(O({}, j), {

@@ -1,4 +1,4 @@
-/** Chunk was on 4566 **/
+/** Chunk was on 72593 **/
 e.exports = {
   arrow: "arrow__6c50b",
   up: "up__6c50b"

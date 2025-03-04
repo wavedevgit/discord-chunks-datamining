@@ -1,21 +1,21 @@
-/** Chunk was on 12416 **/
+/** Chunk was on 50751 **/
 n.d(t, {
   Z: () => a
 });
-var r = n(200651);
+var i = n(200651);
 n(192379);
-var i = n(120356),
-  l = n.n(i),
-  o = n(464606);
+var r = n(120356),
+  o = n.n(r),
+  l = n(464606);
 
 function a(e) {
   let {
     keybind: t,
     className: n
   } = e;
-  return (0, r.jsx)(r.Fragment, {
-    children: t.map((e, t) => (0, r.jsx)("span", {
-      className: l()(o.key, n),
+  return (0, i.jsx)(i.Fragment, {
+    children: t.map((e, t) => (0, i.jsx)("span", {
+      className: o()(l.key, n),
       children: e
     }, t))
   })

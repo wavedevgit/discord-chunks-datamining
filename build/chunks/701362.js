@@ -1,4 +1,4 @@
-/** Chunk was on 70045 **/
+/** Chunk was on 88936 **/
 n.d(t, {
   Z: () => Z
 }), n(47120);
@@ -24,8 +24,8 @@ var r = n(200651),
   S = n(687516),
   P = n(718805),
   N = n(871118),
-  I = n(981631),
-  E = n(388032),
+  E = n(981631),
+  I = n(388032),
   x = n(669846);
 class A extends l.PureComponent {
   componentDidMount() {
@@ -33,7 +33,7 @@ class A extends l.PureComponent {
       user: e,
       streamApplication: t
     } = this.props;
-    v.default.track(I.rMx.OPEN_POPOUT, {
+    v.default.track(E.rMx.OPEN_POPOUT, {
       type: "Stream Preview",
       other_user_id: e.id,
       application_id: null != t ? t.id : null,
@@ -93,8 +93,8 @@ class A extends l.PureComponent {
             channelId: n.channelId,
             analyticsParams: {
               location: {
-                page: I.ZY5.GO_LIVE_MODAL,
-                section: I.jXE.STREAM_VIEWER_POPOUT
+                page: E.ZY5.GO_LIVE_MODAL,
+                section: E.jXE.STREAM_VIEWER_POPOUT
               }
             },
             onAction: i
@@ -110,7 +110,7 @@ class A extends l.PureComponent {
           }), !a && (0, r.jsx)(f.Z, {
             type: f.Z.Types.INLINE,
             className: x.protip,
-            children: __OVERLAY__ ? E.NW.string(E.t["YRdw7+"]) : E.NW.string(E.t.CCTgbG)
+            children: __OVERLAY__ ? I.NW.string(I.t["YRdw7+"]) : I.NW.string(I.t.CCTgbG)
           })]
         })]
       })
@@ -138,10 +138,10 @@ function Z(e) {
       }
       return l
     }(e, ["user", "channel"]);
-  let [c, d] = (0, a.Wu)([h.Z, y.Z, b.Z, p.Z], () => (0, j.p9)(o, h.Z, y.Z, b.Z, p.Z)), f = (0, a.e7)([m.Z], () => m.Z.getStreamForUser(i.id, o.getGuildId())), v = (0, a.e7)([m.Z], () => m.Z.getActiveStreamForApplicationStream(f)), P = (0, a.e7)([g.default], () => g.default.getId()), N = (0, S.Cf)(f), I = (0, a.e7)([O.Z], () => (0, S.Um)(f, O.Z)), E = l.useMemo(() => ({
+  let [c, d] = (0, a.Wu)([h.Z, y.Z, b.Z, p.Z], () => (0, j.p9)(o, h.Z, y.Z, b.Z, p.Z)), f = (0, a.e7)([m.Z], () => m.Z.getStreamForUser(i.id, o.getGuildId())), v = (0, a.e7)([m.Z], () => m.Z.getActiveStreamForApplicationStream(f)), P = (0, a.e7)([g.default], () => g.default.getId()), N = (0, S.Cf)(f), E = (0, a.e7)([O.Z], () => (0, S.Um)(f, O.Z)), I = l.useMemo(() => ({
     [o.guild_id]: [i.id]
   }), [o.guild_id, i.id]);
-  return (0, u.$)(E), (0, r.jsx)(A, (t = function(e) {
+  return (0, u.$)(I), (0, r.jsx)(A, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -166,7 +166,7 @@ function Z(e) {
     stream: f,
     activeStream: v,
     currentUserId: P,
-    activity: I
+    activity: E
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => o
 }), n(653041);
 var r = n(88315),
-  i = n(199766),
-  l = n(813900);
+  l = n(199766),
+  i = n(813900);
 
 function o(e) {
   let {
@@ -42,7 +42,7 @@ function o(e) {
       fillColor: E,
       outlineColor: O
     } = (0, r.bg)(t.userId, c, u, s),
-    S = y(O, 6 + l.q2),
+    S = y(O, 6 + i.q2),
     x = null != S && b(S);
-  x && (0, i.I)(n, S.x, S.y, O, l.q2), y(E, 6), x && (0, i.T)(n, S.x, S.y, t.userId)
+  x && (0, l.I)(n, S.x, S.y, O, i.q2), y(E, 6), x && (0, l.T)(n, S.x, S.y, t.userId)
 }

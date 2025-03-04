@@ -70,7 +70,7 @@ function _() {
     children: [(0, r.jsx)(a.X6q, {
       color: "header-primary",
       variant: "heading-lg/semibold",
-      children: j.NW.string(j.t["+hFV+P"])
+      children: j.NW.string(j.t.YJlvBA)
     }), (0, r.jsx)(b.h, {
       onTypePicked: n,
       activeType: l,

@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => b
 }), n(47120);
 var r = n(200651),
-  i = n(192379),
-  l = n(642128),
+  l = n(192379),
+  i = n(642128),
   o = n(442837),
   a = n(481060),
   s = n(596454),
@@ -25,7 +25,7 @@ function b(e) {
   } = e, {
     emoji: b,
     sentAt: g
-  } = n, y = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), [E, O] = i.useState(!0), S = !y, x = (0, a.Yzy)(E, {
+  } = n, y = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), [E, O] = l.useState(!0), S = !y, x = (0, a.Yzy)(E, {
     from: {
       rotate: -120
     },
@@ -35,7 +35,7 @@ function b(e) {
     leave: {
       rotate: -120
     },
-    config: l.config.default,
+    config: i.config.default,
     onRest: (e, t) => {
       let {
         phase: n
@@ -43,7 +43,7 @@ function b(e) {
       "leave" === n && u()
     }
   });
-  return (i.useEffect(() => {
+  return (l.useEffect(() => {
     let e;
     return Date.now() - g >= h ? (0, d.H)(t) : e = setTimeout(() => {
       O(!1), S && (0, d.H)(t)
@@ -53,12 +53,12 @@ function b(e) {
   }, [g, t, S]), S) ? null : x((e, t) => {
     var n;
     let {
-      rotate: i
+      rotate: l
     } = e;
-    return t && (0, r.jsx)(l.animated.div, {
+    return t && (0, r.jsx)(i.animated.div, {
       className: f.voiceChannelEffectEmojiContainer,
       style: {
-        transform: i.to(v)
+        transform: l.to(v)
       },
       children: (0, r.jsx)(s.Z, {
         className: f.voiceChannelEffectEmoji,

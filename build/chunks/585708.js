@@ -15,7 +15,7 @@ var r = n(13245),
   p = n(145597),
   h = n(610394),
   f = n(516542),
-  m = n(380736),
+  m = n(618373),
   g = n(620954),
   O = n(987650),
   y = n(981631),
@@ -47,7 +47,7 @@ function E(e, t, n, E) {
       formatInline: !0,
       hideSimpleEmbedContent: !1
     }).content : S,
-    hint: (e, t) => e && !t ? null : (0, m.QR)((0, g.P)(), v.t.ykjOAA, v.NW.string(v.t.jZkzVF)),
+    hint: (e, t) => e && !t ? null : (0, m.Q)((0, g.P)(), v.t.ykjOAA, v.NW.string(v.t.jZkzVF)),
     maxBodyLines: 2,
     renderFooter: (t, n, r) => t && !r ? (0, i.jsx)(f.Z, {
       id: n,

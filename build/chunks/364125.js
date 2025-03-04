@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => d
 });
 var r = n(192379),
-  i = n(399606),
-  l = n(673125),
+  l = n(399606),
+  i = n(673125),
   o = n(984063),
   a = n(88315),
   s = n(179295),
@@ -19,17 +19,17 @@ function d(e) {
     stream: f,
     focused: m,
     canvas: p
-  } = e, h = r.useRef(!1), v = (0, i.e7)([l.Z], () => l.Z.getDrawMode()), b = (0, s.Z)((0, c.Z)(t.id, n, d), f), g = (0, s.Z)((0, u.Z)(t.id, n, d), f), y = r.useCallback((e, t, n) => {
+  } = e, h = r.useRef(!1), v = (0, l.e7)([i.Z], () => i.Z.getDrawMode()), b = (0, s.Z)((0, c.Z)(t.id, n, d), f), g = (0, s.Z)((0, u.Z)(t.id, n, d), f), y = r.useCallback((e, t, n) => {
     if (null == p) return;
     let {
       x: r,
-      y: i
+      y: l
     } = (0, a.hn)(p, n);
     switch (t.type) {
       case o.W.LINE:
-        return b[e](t, r, i);
+        return b[e](t, r, l);
       case o.W.EMOJI_HOSE:
-        return g[e](t, r, i)
+        return g[e](t, r, l)
     }
   }, [p, b, g]), E = r.useCallback(e => {
     m && null != v && (e.stopPropagation(), h.current = !0, y("handleMouseDown", v, e))

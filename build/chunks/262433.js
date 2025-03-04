@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => b
 }), n(653041);
 var r = n(392711),
-  i = n.n(r),
-  l = n(772848),
+  l = n.n(r),
+  i = n(772848),
   o = n(15729),
   a = n(731965),
   s = n(125268),
@@ -33,7 +33,7 @@ let p = {
 
 function v(e, t) {
   var n;
-  i()(null !== (n = h.getState().particles[e.id]) && void 0 !== n ? n : {}).forEach(t)
+  l()(null !== (n = h.getState().particles[e.id]) && void 0 !== n ? n : {}).forEach(t)
 }
 
 function b(e) {
@@ -68,17 +68,17 @@ function b(e) {
       h.setState(r => {
         var o;
         let a = null !== (o = r.particles[e.id]) && void 0 !== o ? o : {},
-          s = i().random(1, 2);
+          s = l().random(1, 2);
         for (let e = 0; e < s; e++) {
           let e = {
-            id: (0, l.Z)(),
-            x: t + i().random(-p.X_OFFSET, p.X_OFFSET),
-            y: n + i().random(-p.Y_OFFSET, p.Y_OFFSET),
-            xSpeed: i().random(-p.X_SPEED, p.X_SPEED),
-            ySpeed: i().random(p.Y_SPEED_MIN, p.Y_SPEED_MAX),
+            id: (0, i.Z)(),
+            x: t + l().random(-p.X_OFFSET, p.X_OFFSET),
+            y: n + l().random(-p.Y_OFFSET, p.Y_OFFSET),
+            xSpeed: l().random(-p.X_SPEED, p.X_SPEED),
+            ySpeed: l().random(p.Y_SPEED_MIN, p.Y_SPEED_MAX),
             opacity: p.OPACITY,
-            opacitySpeed: i().random(p.OPACITY_SPEED_MIN, p.OPACITY_SPEED_MAX),
-            size: i().random(p.SIZE_MIN, p.SIZE_MAX)
+            opacitySpeed: l().random(p.OPACITY_SPEED_MIN, p.OPACITY_SPEED_MAX),
+            size: l().random(p.SIZE_MIN, p.SIZE_MAX)
           };
           a[e.id] = e
         }
@@ -88,8 +88,8 @@ function b(e) {
   }(o, C, w), (0, f.I)(b, C, w, P, m.q2), (0, f.T)(b, C, w, o.userId), v(o, e => (function(e, t, n) {
     if (null == t) return;
     let r = n.size * window.devicePixelRatio,
-      i = n.x - r / 2 * window.devicePixelRatio,
-      l = n.y - 1.2 * r * window.devicePixelRatio;
-    e.globalAlpha = n.opacity, e.drawImage(t, r / 2 + i, r / 2 + l, r, r)
+      l = n.x - r / 2 * window.devicePixelRatio,
+      i = n.y - 1.2 * r * window.devicePixelRatio;
+    e.globalAlpha = n.opacity, e.drawImage(t, r / 2 + l, r / 2 + i, r, r)
   })(b, Z, e)), o.lastUpdatedAt + m.FO < Date.now() && (0, s.ZZ)(x, o), o.state === u.f.STOP && !(Object.keys(null !== (r = h.getState().particles[o.id]) && void 0 !== r ? r : {}).length > 0) && j.push(o), b.restore()
 }

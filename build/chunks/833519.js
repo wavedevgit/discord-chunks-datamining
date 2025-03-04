@@ -4,9 +4,9 @@ n.d(t, {
   _: () => V
 }), n(47120);
 var r = n(200651),
-  i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  l = n(192379),
+  i = n(120356),
+  o = n.n(i),
   a = n(442837),
   s = n(481060),
   c = n(475179),
@@ -48,11 +48,11 @@ function V(e) {
   let {
     participant: t,
     selected: n,
-    focused: l,
+    focused: i,
     idle: o,
     width: s,
     premiumIndicator: c
-  } = e, u = (0, a.e7)([x.Z], () => x.Z.getActiveStreamForUser(t.user.id, t.stream.guildId)), d = (0, k.K)(s), [f, p] = i.useState(!1), h = (0, a.e7)([Z.Z], () => Z.Z.getChannel(null == u ? void 0 : u.channelId));
+  } = e, u = (0, a.e7)([x.Z], () => x.Z.getActiveStreamForUser(t.user.id, t.stream.guildId)), d = (0, k.K)(s), [f, p] = l.useState(!1), h = (0, a.e7)([Z.Z], () => Z.Z.getChannel(null == u ? void 0 : u.channelId));
   return (0, E.J)(h, () => {
     let e = setTimeout(() => {
         p(!0)
@@ -64,9 +64,9 @@ function V(e) {
       p(!1), clearTimeout(e), clearTimeout(t)
     }
   }), (0, r.jsxs)(r.Fragment, {
-    children: [n || l ? null : (0, r.jsx)(D.Z, {
+    children: [n || i ? null : (0, r.jsx)(D.Z, {
       participant: t
-    }), l || null == u || u.state === M.jm8.ENDED || u.state === M.jm8.FAILED ? null : (0, r.jsx)(g.Z, {
+    }), i || null == u || u.state === M.jm8.ENDED || u.state === M.jm8.FAILED ? null : (0, r.jsx)(g.Z, {
       size: m.ZP.Sizes.SMALL,
       className: U.liveIndicator,
       participant: t,
@@ -81,7 +81,7 @@ function Y(e) {
   let {
     participant: t,
     selected: n,
-    onVideoResize: l,
+    onVideoResize: i,
     paused: m,
     fit: p,
     inPopout: g,
@@ -96,7 +96,7 @@ function Y(e) {
   } = t, J = (0, a.e7)([Z.Z], () => Z.Z.getChannel(G.channelId)), X = (0, a.e7)([x.Z], () => x.Z.getActiveStreamForUser(B.id, G.guildId), [B.id, G.guildId]), Q = (0, a.e7)([x.Z], () => x.Z.getAllActiveStreams().length > 0), $ = (0, a.e7)([w.Z], () => w.Z.isFocused()), ee = (null == X ? void 0 : X.ownerId) === H, et = ee && !$ && !g, en = null != X ? (0, v.Z)(X, B, B.id === H, et) : null, er = D < 195;
   if ((0, d.ZP)(() => {
       !Q && (null == J ? void 0 : J.isGuildStageVoice()) && !ee && ((0, u.rn)(G), c.Z.updateStageStreamSize(G.channelId, !1))
-    }), i.useEffect(() => {
+    }), l.useEffect(() => {
       z.info("Stream Tile State - activeStream: ".concat(null != X, " | selected: ").concat(n, " | Video: ").concat(null != Y, " | MediaEngine: ").concat(C.Z.supports(W.AN.VIDEO)))
     }, [Y, X, n]), K) return (0, r.jsx)(A.Z, {
     stream: t.stream,
@@ -164,7 +164,7 @@ function Y(e) {
       hasScreenMessage: null != en,
       stream: G
     }) : null, (0, r.jsx)(y.Z, {
-      onResize: l,
+      onResize: i,
       wrapperClassName: o()(U.videoWrapper, V),
       className: U.content,
       streamId: q,

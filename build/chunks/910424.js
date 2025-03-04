@@ -1,4 +1,4 @@
-/** Chunk was on 70045 **/
+/** Chunk was on 88936 **/
 n.d(t, {
   Z: () => v
 }), n(47120);
@@ -69,7 +69,7 @@ function v(e) {
       } = e;
       return t !== j.ownerId
     }).length > 0
-  })), I = (0, l.e7)([f.Z], () => f.Z.getChannel(null == j ? void 0 : j.channelId)), [E, x] = (0, u.wq)(I), A = (0, c.Aq)(), Z = null != P && null != j && P.state !== g.jm8.ENDED && P.ownerId === j.ownerId, T = e => {
+  })), E = (0, l.e7)([f.Z], () => f.Z.getChannel(null == j ? void 0 : j.channelId)), [I, x] = (0, u.wq)(E), A = (0, c.Aq)(), Z = null != P && null != j && P.state !== g.jm8.ENDED && P.ownerId === j.ownerId, T = e => {
     null != j && (null == S || S(), a.default.selectVoiceChannel(j.channelId), Z || (0, s.iV)(j, {
       forceMultiple: e
     }), A.dispatch(g.CkL.POPOUT_CLOSE), p.S.dispatch(g.CkL.MODAL_CLOSE), o.Z.popAll())
@@ -83,7 +83,7 @@ function v(e) {
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(m.Z, h(O({
-      disabled: t || Z || !E,
+      disabled: t || Z || !I,
       onClick: () => T(!1)
     }, C), {
       fullWidth: !0,

@@ -16,7 +16,7 @@ var r = n(704215),
   h = n(145597),
   f = n(32300),
   m = n(603618),
-  g = n(380736),
+  g = n(618373),
   O = n(620954),
   y = n(987650),
   v = n(981631),
@@ -125,7 +125,7 @@ function Z(e, t) {
     _ = Z ? w : j.NW.string(j.t["prl+ra"]),
     T = null != e && Z ? e.name : _,
     D = Z ? P : j.NW.string(j.t.R3CpPT),
-    A = null != e ? (0, i.jsx)(N, {
+    k = null != e ? (0, i.jsx)(N, {
       game: e
     }) : (0, i.jsx)("img", {
       src: n(328756),
@@ -133,10 +133,10 @@ function Z(e, t) {
       alt: ""
     });
   return C(I({
-    icon: A,
+    icon: k,
     title: T,
     body: D,
-    hint: () => (0, g.QR)((0, O.P)(), j.t.e6giBQ, j.NW.string(j.t.jZkzVF)),
+    hint: () => (0, g.Q)((0, O.P)(), j.t.e6giBQ, j.NW.string(j.t.jZkzVF)),
     confirmText: Z ? void 0 : j.NW.string(j.t.TxyTbm),
     onConfirmClick: Z ? void 0 : () => {
       c("unlock"), a.Z.setInputLocked(!1, (0, h.getPID)()), Z || (0, d.EW)(r.z.OVERLAY_OOP_WELCOME_NUX)

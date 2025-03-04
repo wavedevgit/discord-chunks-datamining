@@ -5,9 +5,9 @@ n.d(t, {
   X4: () => u
 }), n(47120);
 var r = n(192379),
-  i = n(481060);
+  l = n(481060);
 
-function l(e, t, n) {
+function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -45,12 +45,12 @@ class o {
     let t = 0,
       n = 0;
     for (let r of this.items) {
-      let i = this.listeners.get(r.notification.id);
-      if (null == i) continue;
+      let l = this.listeners.get(r.notification.id);
+      if (null == l) continue;
       let {
-        offsetHeight: l
-      } = i.element;
-      (i.top !== t || i.height !== l || i.index !== n) && (e = !0), i.top = t, i.height = l, i.index = n, 0 === t && (this.matchHeight !== l && (e = !0), this.matchHeight = l), t += l + 8, n++
+        offsetHeight: i
+      } = l.element;
+      (l.top !== t || l.height !== i || l.index !== n) && (e = !0), l.top = t, l.height = i, l.index = n, 0 === t && (this.matchHeight !== i && (e = !0), this.matchHeight = i), t += i + 8, n++
     }
     e && this.broadcastLayoutUpdates()
   }
@@ -86,7 +86,7 @@ class o {
     return this.listeners.get(e)
   }
   constructor(e) {
-    l(this, "resizeObserver", void 0), l(this, "listeners", new Map), l(this, "queuedCompute", !1), l(this, "items", []), l(this, "matchHeight", 0), l(this, "locked", !0), l(this, "handleResize", e => {
+    i(this, "resizeObserver", void 0), i(this, "listeners", new Map), i(this, "queuedCompute", !1), i(this, "items", []), i(this, "matchHeight", 0), i(this, "locked", !0), i(this, "handleResize", e => {
       this.computeLayout()
     }), this.locked = e
   }
@@ -103,7 +103,7 @@ let c = {
 };
 
 function u(e, t, n) {
-  let [l, o] = (0, i.q_F)(() => ({
+  let [i, o] = (0, l.q_F)(() => ({
     from: {
       opacity: 0,
       scale: 1,
@@ -118,25 +118,25 @@ function u(e, t, n) {
         let {
           locked: n,
           matchHeight: r,
-          height: i,
-          top: l,
+          height: l,
+          top: i,
           index: o
         } = e, {
           current: a
         } = u, d = {
           opacity: n && o > 4 ? 0 : n ? Math.min(1 - o / 4, 1) : 1,
           scale: n ? Math.min(1 - o / 4, 1) : 1,
-          transform: s(o, n, l),
+          transform: s(o, n, i),
           contentOpacity: n && o > 0 ? 0 : 1,
-          height: n ? r : i
+          height: n ? r : l
         };
         a({
           from: t ? void 0 : {
             opacity: 0,
             scale: 1.1,
-            transform: -((n ? r : i) * 1),
+            transform: -((n ? r : l) * 1),
             contentOpacity: 1,
-            height: n ? r : i
+            height: n ? r : l
           },
           to: d,
           config: c
@@ -145,7 +145,7 @@ function u(e, t, n) {
     }
   }, [e, d]);
   return r.useLayoutEffect(() => {
-    if (t === i.pJH.YEETED) {
+    if (t === l.pJH.YEETED) {
       let t = d.getLayoutSpecs(e);
       if (null == t) {
         n();
@@ -162,6 +162,6 @@ function u(e, t, n) {
     }
   }, [t, n, e, d]), {
     ref: f,
-    springs: l
+    springs: i
   }
 }

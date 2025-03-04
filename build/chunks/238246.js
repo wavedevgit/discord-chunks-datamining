@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => en
 }), n(47120);
-var r, i = n(200651),
-  l = n(192379),
+var r, l = n(200651),
+  i = n(192379),
   o = n(120356),
   a = n.n(o),
   s = n(512722),
@@ -85,7 +85,7 @@ function ee(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class et extends(r = l.Component) {
+class et extends(r = i.Component) {
   componentDidMount() {
     let {
       guestWindow: e
@@ -97,9 +97,9 @@ class et extends(r = l.Component) {
       title: t,
       fontScale: n,
       locale: r,
-      clientThemesCSS: i
+      clientThemesCSS: l
     } = this.props;
-    e.title !== t && this.updateTitle(), e.fontScale !== n && this.updateFontScale(), e.locale !== r && this.updateLocale(), e.clientThemesCSS !== i && this.updateClientTheme(), e.saturation !== this.props.saturation && this.updateSaturationFactor(), (e.forcedColors !== this.props.forcedColors || e.systemForcedColors !== this.props.systemForcedColors) && this.updateForcedColors()
+    e.title !== t && this.updateTitle(), e.fontScale !== n && this.updateFontScale(), e.locale !== r && this.updateLocale(), e.clientThemesCSS !== l && this.updateClientTheme(), e.saturation !== this.props.saturation && this.updateSaturationFactor(), (e.forcedColors !== this.props.forcedColors || e.systemForcedColors !== this.props.systemForcedColors) && this.updateForcedColors()
   }
   componentWillUnmount() {
     let {
@@ -143,13 +143,13 @@ class et extends(r = l.Component) {
       guestWindow: t
     } = this.props, n = t.document, r = n.head;
     c()(null != r, "Window document ".concat("head", " was null"));
-    let i = r.querySelector("style[".concat(j.PQ, "]"));
-    if (null != i) {
-      i.textContent = e;
+    let l = r.querySelector("style[".concat(j.PQ, "]"));
+    if (null != l) {
+      l.textContent = e;
       return
     }
-    let l = n.createElement("style");
-    l.setAttribute(j.PQ, "true"), l.textContent = e, r.appendChild(l)
+    let i = n.createElement("style");
+    i.setAttribute(j.PQ, "true"), i.textContent = e, r.appendChild(i)
   }
   updateForcedColors() {
     let {
@@ -176,7 +176,7 @@ class et extends(r = l.Component) {
       forcedColors: t,
       focused: n,
       appFocused: r,
-      children: l,
+      children: i,
       windowKey: o,
       isRefreshEnabled: s,
       isRefreshChatInputEnabled: c,
@@ -196,39 +196,39 @@ class et extends(r = l.Component) {
       "visual-refresh": s,
       "visual-refresh-chat-input": c
     }), I = o === q.$J ? M.Z : w.Z;
-    return (0, i.jsx)(u.VK, {
-      children: (0, i.jsx)(L.w, {
-        children: (0, i.jsx)(m.f6W, {
+    return (0, l.jsx)(u.VK, {
+      children: (0, l.jsx)(L.w, {
+        children: (0, l.jsx)(m.f6W, {
           theme: e,
-          children: e => (0, i.jsx)(m.vWI, {
-            children: (0, i.jsx)("div", {
+          children: e => (0, l.jsx)(m.vWI, {
+            children: (0, l.jsx)("div", {
               "data-popout-root": !0,
               ref: this.rootRef,
               className: a()(e, (0, C.Z)(), j, E, S),
-              children: (0, i.jsx)(m.JcV, {
+              children: (0, l.jsx)(m.JcV, {
                 containerRef: this.rootRef,
-                children: (0, i.jsx)(g.Z, {
-                  children: (0, i.jsxs)(I, {
-                    children: [(0, i.jsx)(P.Co, {}), (0, i.jsx)(v.Wu, {
+                children: (0, l.jsx)(g.Z, {
+                  children: (0, l.jsxs)(I, {
+                    children: [(0, l.jsx)(P.Co, {}), (0, l.jsx)(v.Wu, {
                       appContext: B.IlC.POPOUT,
                       renderWindow: y,
-                      children: (0, i.jsx)(Z.m, {
-                        children: (0, i.jsxs)(k.yP, {
-                          children: [(0, i.jsxs)("div", {
+                      children: (0, l.jsx)(Z.m, {
+                        children: (0, l.jsxs)(k.yP, {
+                          children: [(0, l.jsxs)("div", {
                             className: X.popout,
-                            children: [s && b && (0, i.jsx)(N.T, {
+                            children: [s && b && (0, l.jsx)(N.T, {
                               windowKey: o,
                               short: !0
-                            }), !s && b && null != x ? (0, i.jsx)(_.Z, {
+                            }), !s && b && null != x ? (0, l.jsx)(_.Z, {
                               focused: n,
                               type: x,
                               windowKey: o,
                               macOSFrame: !0
-                            }) : null, (0, i.jsx)("div", {
+                            }) : null, (0, l.jsx)("div", {
                               className: a()(X.content, O),
-                              children: l
+                              children: i
                             })]
-                          }), (0, i.jsx)(m.nKe, {}), (0, i.jsx)(p.Z, {}), (0, i.jsx)(k.Un, {})]
+                          }), (0, l.jsx)(m.nKe, {}), (0, l.jsx)(p.Z, {}), (0, l.jsx)(k.Un, {})]
                         })
                       })
                     })]
@@ -242,7 +242,7 @@ class et extends(r = l.Component) {
     })
   }
   constructor(...e) {
-    super(...e), Q(this, "rootRef", l.createRef()), Q(this, "_cleanupWindowActionCreators", void 0), Q(this, "_combokeys", null), Q(this, "beforeUnload", e => {
+    super(...e), Q(this, "rootRef", i.createRef()), Q(this, "_cleanupWindowActionCreators", void 0), Q(this, "_combokeys", null), Q(this, "beforeUnload", e => {
       let t = () => {
         G.Z.unmountWindow(this.props.windowKey), V.isPlatformEmbedded && H.ZP.close(this.props.windowKey)
       };
@@ -261,7 +261,7 @@ class et extends(r = l.Component) {
 Q(et, "defaultProps", {
   withTitleBar: !0
 });
-let en = l.forwardRef(function(e, t) {
+let en = i.forwardRef(function(e, t) {
   let {
     guestWindow: n,
     focused: r
@@ -270,7 +270,7 @@ let en = l.forwardRef(function(e, t) {
     focused: G.Z.getWindowFocused(e.windowKey)
   }));
   c()(null != n, "Missing guestWindow reference");
-  let l = (0, A.Q3)("PopoutWindow"),
+  let i = (0, A.Q3)("PopoutWindow"),
     o = (0, A.R6)("PopoutWindow"),
     a = (0, f.e7)([z.Z], () => z.Z.isFocused()),
     {
@@ -295,10 +295,10 @@ let en = l.forwardRef(function(e, t) {
       clientThemesClassName: O,
       clientThemesCSS: Z
     } = (0, j.ZP)();
-  return null == n ? null : (0, i.jsx)(m.Sle, {
-    children: (0, i.jsx)(x.Gt, {
+  return null == n ? null : (0, l.jsx)(m.Sle, {
+    children: (0, l.jsx)(x.Gt, {
       value: y,
-      children: (0, i.jsx)(et, ee($({
+      children: (0, l.jsx)(et, ee($({
         ref: t
       }, e), {
         guestWindow: n,
@@ -320,7 +320,7 @@ let en = l.forwardRef(function(e, t) {
         clientThemesClassName: O,
         clientThemesCSS: Z,
         appWrapperClassName: h,
-        isRefreshEnabled: l,
+        isRefreshEnabled: i,
         isRefreshChatInputEnabled: o
       }))
     })

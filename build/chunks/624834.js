@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => j
 }), n(47120);
 var r = n(200651),
-  i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  l = n(192379),
+  i = n(120356),
+  o = n.n(i),
   a = n(442837),
   s = n(481060),
   c = n(2052),
@@ -28,7 +28,7 @@ function j(e) {
   let {
     participant: t,
     width: n,
-    channelId: l
+    channelId: i
   } = e, {
     analyticsLocations: o
   } = (0, h.ZP)(p.Z.PRESENCE_ACTIVITY_TILE), {
@@ -39,7 +39,7 @@ function j(e) {
     applicationId: s,
     names: E.Ix,
     size: E.bn
-  }), d = i.useMemo(() => ({
+  }), d = l.useMemo(() => ({
     userId: t.user.id,
     activity: t.activity
   }), [t]);
@@ -53,7 +53,7 @@ function j(e) {
         src: u
       }) : null, null != c && null != s ? (0, r.jsx)(Z, {
         width: n,
-        channelId: l,
+        channelId: i,
         participant: d,
         applicationId: s
       }) : null]
@@ -65,11 +65,11 @@ function Z(e) {
   let {
     width: t,
     channelId: n,
-    participant: l,
+    participant: i,
     applicationId: m
-  } = e, p = (0, E.V_)(t), [j] = (0, E.Ym)(t), Z = (0, a.e7)([g.Z], () => g.Z.getChannel(n)), C = (0, a.e7)([y.default, b.default], () => (0, d.J)(l, b.default) ? null : y.default.getUser(l.userId)), w = i.useMemo(() => null != C ? [C] : [], [C]), P = (0, v.q)(m), {
+  } = e, p = (0, E.V_)(t), [j] = (0, E.Ym)(t), Z = (0, a.e7)([g.Z], () => g.Z.getChannel(n)), C = (0, a.e7)([y.default, b.default], () => (0, d.J)(i, b.default) ? null : y.default.getUser(i.userId)), w = l.useMemo(() => null != C ? [C] : [], [C]), P = (0, v.q)(m), {
     analyticsLocations: N
-  } = (0, h.ZP)(), I = (0, c.O)(), _ = l.activity.session_id, R = (0, f.Z)(l.activity, O.xjy.EMBEDDED) && (0, f.Z)(l.activity, O.xjy.CONTEXTLESS), [T, A] = i.useState(!1), D = null == C ? void 0 : C.id, k = i.useCallback(async e => {
+  } = (0, h.ZP)(), I = (0, c.O)(), _ = i.activity.session_id, R = (0, f.Z)(i.activity, O.xjy.EMBEDDED) && (0, f.Z)(i.activity, O.xjy.CONTEXTLESS), [T, A] = l.useState(!1), D = null == C ? void 0 : C.id, k = l.useCallback(async e => {
     e.stopPropagation(), null != m && null != D && (A(!0), await (0, u.Z)({
       applicationId: m,
       activityChannelId: n,

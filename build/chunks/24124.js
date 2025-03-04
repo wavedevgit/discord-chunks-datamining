@@ -2,26 +2,26 @@
 n.d(t, {
   GG: () => o,
   R2: () => a,
-  h7: () => i,
-  rh: () => l
+  h7: () => l,
+  rh: () => i
 });
 var r = n(570140);
 
-function i(e, t, n) {
-  return new Promise(i => {
+function l(e, t, n) {
+  return new Promise(l => {
     setTimeout(() => {
       r.Z.dispatch({
         type: "ACTIVITY_INVITE_MODAL_OPEN",
         activity: e,
         isPrivate: t,
         context: n,
-        resolve: i
+        resolve: l
       })
     }, 0)
   })
 }
 
-function l(e) {
+function i(e) {
   r.Z.dispatch({
     type: "ACTIVITY_INVITE_MODAL_QUERY",
     query: e

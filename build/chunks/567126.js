@@ -36,8 +36,8 @@ var r = n(200651),
   E = n(958707),
   R = n(152165),
   W = n(133179),
-  k = n(70722),
-  A = n(761274),
+  A = n(70722),
+  k = n(761274),
   M = n(46140),
   L = n(65154),
   D = n(388032),
@@ -76,7 +76,7 @@ function z(e) {
     enableGoLiveCaptureCard: i
   } = y.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), o = C.Z.supports(L.AN.GO_LIVE_HARDWARE), [a, h] = l.useState(null), [S, N] = l.useState(null), [w, O] = l.useState(null), P = null != w && w.length > 0, [T, R] = l.useState(c.vA.WINDOW), [k, B] = l.useState(!1), z = l.useRef(null), F = l.useRef(new u.Xp), H = (0, d.e7)([x.ZP], () => x.ZP.getRunningGames()), V = function(e, t, n) {
+  }), o = C.Z.supports(L.AN.GO_LIVE_HARDWARE), [a, h] = l.useState(null), [S, N] = l.useState(null), [w, O] = l.useState(null), P = null != w && w.length > 0, [T, R] = l.useState(c.vA.WINDOW), [A, B] = l.useState(!1), z = l.useRef(null), F = l.useRef(new u.Xp), H = (0, d.e7)([x.ZP], () => x.ZP.getRunningGames()), V = function(e, t, n) {
     let r = (0, j.Zy)({
       location: M.dr.STREAM_SOURCE_SELECT
     });
@@ -126,7 +126,7 @@ function z(e) {
     }, []),
     [Y, K] = l.useState(void 0);
   l.useEffect(() => {
-    g.Z.hasPermission(A.Eu.SCREEN_RECORDING, {
+    g.Z.hasPermission(k.Eu.SCREEN_RECORDING, {
       showAuthorizationError: !1
     }).then(K)
   }, []);
@@ -170,7 +170,7 @@ function z(e) {
     children: [(0, r.jsxs)("div", {
       className: G.segmentContainer,
       children: [(0, r.jsx)(E.Z, {
-        separator: k
+        separator: A
       }), (0, r.jsx)(f.sY7, {
         options: function() {
           let e = [{
@@ -319,7 +319,7 @@ function V(e) {
         url: ""
       })
     }, [t, o]),
-    p = (0, N.isMac)() && a().satisfies(null === h.Z || void 0 === h.Z ? void 0 : h.Z.os.release, k.jR),
+    p = (0, N.isMac)() && a().satisfies(null === h.Z || void 0 === h.Z ? void 0 : h.Z.os.release, A.jR),
     x = (0, N.isMac)(),
     [g, _] = l.useState(!1),
     v = l.useCallback(() => {
@@ -399,7 +399,7 @@ function J(e) {
     lastPickerError: o
   } = (0, T.Z)(t, n);
   return l.useEffect(() => {
-    (0, N.isLinux)() || (0, N.isMac)() && a().satisfies(null === h.Z || void 0 === h.Z ? void 0 : h.Z.os.release, k.jR) ? (0, w.T)(i) : (0, w.t)()
+    (0, N.isLinux)() || (0, N.isMac)() && a().satisfies(null === h.Z || void 0 === h.Z ? void 0 : h.Z.os.release, A.jR) ? (0, w.T)(i) : (0, w.t)()
   }, [i]), s === O.Uc.Error ? (0, r.jsx)(f.Text, {
     className: G.errorMessage,
     variant: "text-md/normal",

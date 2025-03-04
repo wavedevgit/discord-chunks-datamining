@@ -34,8 +34,8 @@ var r = n(200651),
   E = n(430824),
   R = n(131951),
   W = n(944486),
-  k = n(594174),
-  A = n(449224),
+  A = n(594174),
+  k = n(449224),
   M = n(626135),
   L = n(63063),
   D = n(358085),
@@ -122,15 +122,15 @@ function ea(e) {
     resolution: em,
     fps: ep,
     soundshareEnabled: ex
-  } = (0, d.cj)([P.Z], () => P.Z.getState()), eg = l.useRef(Date.now()), e_ = (0, d.e7)([W.Z, T.Z], () => T.Z.getChannel(W.Z.getVoiceChannelId())), ev = (0, d.e7)([y.ZP, A.Z], () => (0, D.isWindows)() ? (0, V.Z)(y.ZP, A.Z) : null), ej = (0, d.e7)([_.ZP], () => _.ZP.getCurrentEmbeddedActivity()), eb = (0, b.q)(null == ej ? void 0 : ej.applicationId), [eC, eS] = l.useState(null);
+  } = (0, d.cj)([P.Z], () => P.Z.getState()), eg = l.useRef(Date.now()), e_ = (0, d.e7)([W.Z, T.Z], () => T.Z.getChannel(W.Z.getVoiceChannelId())), ev = (0, d.e7)([y.ZP, k.Z], () => (0, D.isWindows)() ? (0, V.Z)(y.ZP, k.Z) : null), ej = (0, d.e7)([_.ZP], () => _.ZP.getCurrentEmbeddedActivity()), eb = (0, b.q)(null == ej ? void 0 : ej.applicationId), [eC, eS] = l.useState(null);
   l.useEffect(() => {
     (0, g.R)() && (async () => {
       var e;
       eS(await (null === x.Z || void 0 === x.Z ? void 0 : null === (e = x.Z.window) || void 0 === e ? void 0 : e.getMediaSourceId("DISCORD_ACTIVITY_POPOUT")))
     })()
   }, []);
-  let eN = (0, d.e7)([k.default], () => {
-      let e = k.default.getCurrentUser();
+  let eN = (0, d.e7)([A.default], () => {
+      let e = A.default.getCurrentUser();
       return s()(null != e, "GoLiveModal: user cannot be undefined"), e
     }),
     ey = null !== (t = null == e_ ? void 0 : e_.getGuildId()) && void 0 !== t ? t : ec,
@@ -149,8 +149,8 @@ function ea(e) {
   ef === f.Dvm.ENTERED && eP && (0, D.isMac)() && eE.push(u.z.GO_LIVE_SYSTEM_PICKER_COACHMARK);
   let [eR, eW] = (0, N.US)(eE, void 0, !0);
   eh !== $.tI.PRESET_CUSTOM && (em = ew, ep = eO), (0, U.Z)(eh, em, ep, eN, eZ) || (em = ew, ep = eO);
-  let ek = (0, S.Dt)(),
-    [eA, eM] = l.useState((B = ea && !eT, q ? 0 : B ? 2 : 3)),
+  let eA = (0, S.Dt)(),
+    [ek, eM] = l.useState((B = ea && !eT, q ? 0 : B ? 2 : 3)),
     [eL, eD] = l.useState(eT),
     [eG, eB] = l.useState(null),
     [eU, ez] = l.useState(eT ? {
@@ -213,7 +213,7 @@ function ea(e) {
     e9(), eu()
   }
   l.useEffect(() => {
-    let e = (0, D.isWindows)() ? (0, V.Z)(y.ZP, A.Z) : null,
+    let e = (0, D.isWindows)() ? (0, V.Z)(y.ZP, k.Z) : null,
       t = (null == e ? void 0 : e.id) != null ? j.Z.getApplication(e.id) : null;
     M.default.track(ee.rMx.OPEN_MODAL, {
       type: "Go Live Modal",
@@ -244,8 +244,8 @@ function ea(e) {
     }, [e4]);
 
   function tt(e) {
-    if (e.preventDefault(), 1 === eA) return te();
-    if (2 === eA) return eM(3);
+    if (e.preventDefault(), 1 === ek) return te();
+    if (2 === ek) return eM(3);
     if (null != e4) return eM(1);
     let t = (0, K.Z)(ev, eU, y.ZP.getRunningGames());
     G.ZP.supportsFeature(ee.eRX.ELEVATED_HOOK) && (null == t ? void 0 : t.elevated) ? function() {
@@ -270,7 +270,7 @@ function ea(e) {
       var t = 3;
       eM(ea ? 2 : 3)
     }, [ea]),
-    tl = !(1 === eA && eP && eI === H.Uc.Error),
+    tl = !(1 === ek && eP && eI === H.Uc.Error),
     ti = function(e) {
       switch (e) {
         case 2:
@@ -284,7 +284,7 @@ function ea(e) {
         default:
           return er.NW.string(er.t["1hKIam"])
       }
-    }(eA),
+    }(ek),
     ts = (0, r.jsx)(f.xBx, {
       className: el.modalHeader,
       separator: !1,
@@ -294,7 +294,7 @@ function ea(e) {
         className: el.header,
         children: [(0, r.jsx)(f.X6q, {
           variant: "heading-xl/semibold",
-          id: ek,
+          id: eA,
           className: el.headerText,
           children: er.NW.string(er.t.RDkJQ0)
         }), tl && null != ti ? (0, r.jsx)(f.Text, {
@@ -321,8 +321,8 @@ function ea(e) {
         default:
           return null
       }
-    }(eA, q, ea, eL),
-    tc = 1 !== eA && (3 !== eA || null == eU && null == ev && null == eC || null == e3),
+    }(ek, q, ea, eL),
+    tc = 1 !== ek && (3 !== ek || null == eU && null == ev && null == eC || null == e3),
     td = l.useCallback(() => {
       null != ta && eM(ta)
     }, [ta]),
@@ -330,7 +330,7 @@ function ea(e) {
       springConfig: es(ei({}, o.config.stiff), {
         clamp: !0
       }),
-      activeSlide: eA,
+      activeSlide: ek,
       width: 480,
       children: [(0, r.jsx)(f.Mi4, {
         id: 0,
@@ -393,7 +393,7 @@ function ea(e) {
         })
       })]
     }),
-    tf = 1 === eA || eT && 3 === eA ? er.NW.string(er.t.FiBjwc) : eP && (3 !== eA || null != e4) ? er.NW.string(er.t.PDTjLC) : er.NW.string(er.t["UE/rPz"]),
+    tf = 1 === ek || eT && 3 === ek ? er.NW.string(er.t.FiBjwc) : eP && (3 !== ek || null != e4) ? er.NW.string(er.t.PDTjLC) : er.NW.string(er.t["UE/rPz"]),
     th = (0, r.jsxs)(f.mzw, {
       justify: null == ta ? C.Z.Justify.START : C.Z.Justify.BETWEEN,
       children: [(0, r.jsx)(f.zxk, {
@@ -419,7 +419,7 @@ function ea(e) {
   return (0, r.jsx)(p.Z, {
     page: ee.ZY5.GO_LIVE_MODAL,
     children: (0, r.jsxs)(f.Y0X, {
-      "aria-labelledby": ek,
+      "aria-labelledby": eA,
       transitionState: ef,
       size: f.CgR.DYNAMIC,
       className: el.modalSize,

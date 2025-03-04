@@ -3,12 +3,12 @@ n.d(t, {
   Z: () => o
 });
 var r = n(442837),
-  i = n(451478),
-  l = n(351780);
+  l = n(451478),
+  i = n(351780);
 
 function o(e) {
-  let t = (0, r.e7)([i.Z], () => i.Z.isFocused());
-  return (0, r.e7)([l.Z], () => l.Z.isEnabled({
+  let t = (0, r.e7)([l.Z], () => l.Z.isFocused());
+  return (0, r.e7)([i.Z], () => i.Z.isEnabled({
     shakeLocation: e
-  }) && t ? l.Z.shakeIntensity : 0)
+  }) && t ? i.Z.shakeIntensity : 0)
 }
