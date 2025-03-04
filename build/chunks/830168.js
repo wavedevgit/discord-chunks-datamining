@@ -66,7 +66,7 @@ let y = {
       var c;
       let u = {
           environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-          build_number: "374259"
+          build_number: "374265"
         },
         d = l.default.getCurrentUser();
       null != d && (u.user_id = d.id, u.user_name = d.tag, null != d.email && (u.email = d.email));
@@ -79,7 +79,7 @@ let y = {
           } = e;
           return t
         }),
-        api_endpoint: "".concat((c = void 0, location.protocol)).concat(window.GLOBAL_ENV.API_ENDPOINT),
+        api_endpoint: "".concat((c = "https:", "https:")).concat(window.GLOBAL_ENV.API_ENDPOINT),
         environment: window.GLOBAL_ENV.PROJECT_ENV,
         sentry: u,
         platform: o

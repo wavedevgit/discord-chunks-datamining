@@ -249,7 +249,7 @@ if (n.g.isServerRendering) {
 
 function P() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-  return location.protocol + window.GLOBAL_ENV.API_ENDPOINT + (e ? "/v".concat(window.GLOBAL_ENV.API_VERSION) : "")
+  return "https:" + window.GLOBAL_ENV.API_ENDPOINT + (e ? "/v".concat(window.GLOBAL_ENV.API_VERSION) : "")
 }
 let w = null;
 
