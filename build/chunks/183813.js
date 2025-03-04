@@ -3,9 +3,9 @@ n.d(t, {
   S: () => E
 });
 var l = n(200651),
-  i = n(192379),
-  s = n(512722),
-  r = n.n(s),
+  s = n(192379),
+  i = n(512722),
+  r = n.n(i),
   a = n(442837),
   o = n(481060),
   C = n(204418),
@@ -27,7 +27,7 @@ function E(e) {
     handleStepChange: t,
     handleClose: n
   } = e, {
-    selectedPlan: s,
+    selectedPlan: i,
     selectedSkuId: E,
     step: S
   } = (0, h.JL)(), {
@@ -35,7 +35,7 @@ function E(e) {
     selectedGiftingPromotionReward: y,
     claimableRewards: I
   } = (0, f.wD)(), O = (0, a.e7)([p.default], () => p.default.getCurrentUser());
-  i.useEffect(() => {
+  s.useEffect(() => {
     let e = null != I && I.length > 0;
     null == y && e && N(I[0])
   }, [I, y, N]);
@@ -50,7 +50,7 @@ function E(e) {
       }, t)
     },
     b = (0, c.Q3)("PremiumPaymentFreeSKUSelectStep");
-  r()(null != s, "Expected plan to selected"), r()(null != E, "Expected selectedSkuId"), r()(null != S, "Step should be set");
+  r()(null != i, "Expected plan to selected"), r()(null != E, "Expected selectedSkuId"), r()(null != S, "Step should be set");
   let P = null == I ? void 0 : I.map(e => v(e)),
     T = null != y && null != O ? (0, l.jsx)(C.Z, {
       avatarDecorationOverride: {
@@ -73,8 +73,8 @@ function E(e) {
           onBackClick: () => t(_.h8.PLAN_SELECT),
           shouldRenderUpdatedPaymentModal: !0,
           showBackButton: !0,
-          planOptions: [s.id],
-          selectedPlanId: s.id
+          planOptions: [i.id],
+          selectedPlanId: i.id
         })
       })
     }),

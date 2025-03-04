@@ -1,20 +1,20 @@
 /** Chunk was on 54433 **/
 n.d(t, {
-  Z: () => s
+  Z: () => i
 });
 var l = n(200651);
 n(192379);
-var i = n(481060);
-let s = e => {
+var s = n(481060);
+let i = e => {
   let {
     product: t,
-    analyticsLocations: s,
+    analyticsLocations: i,
     overrideTitle: r,
     overrideDescription: a,
     shouldShowPromotionalExperience: o,
     onCloseCallback: C
   } = e;
-  (0, i.ZDy)(async () => {
+  (0, s.ZDy)(async () => {
     let {
       default: e
     } = await Promise.resolve().then(n.bind(n, 331042));
@@ -37,7 +37,7 @@ let s = e => {
       return e
     }({
       product: t,
-      analyticsLocations: s,
+      analyticsLocations: i,
       overrideTitle: r,
       overrideDescription: a,
       shouldShowPromotionalExperience: o

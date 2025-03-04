@@ -4,8 +4,8 @@ n.d(t, {
 });
 var l = n(200651);
 n(192379);
-var i = n(780384),
-  s = n(481060),
+var s = n(780384),
+  i = n(481060),
   r = n(410030),
   a = n(518950),
   o = n(51144),
@@ -26,14 +26,14 @@ let f = () => {
       animateOnHover: !0
     }),
     f = (0, r.Fg)(),
-    h = (0, i.ap)(f),
+    h = (0, s.ap)(f),
     _ = o.ZP.getName(e),
     j = h ? d.Z : c.Z;
   return null == e ? null : (0, l.jsxs)("div", {
     className: x.attributionBannerContainer,
     children: [(0, l.jsx)("div", {
       className: x.avatarContainer,
-      children: (0, l.jsx)(s.qEK, function(e) {
+      children: (0, l.jsx)(i.qEK, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             l = Object.keys(n);
@@ -55,7 +55,7 @@ let f = () => {
         "aria-label": e.username,
         size: u.EF.SIZE_32
       }, n))
-    }), (0, l.jsx)(s.Text, {
+    }), (0, l.jsx)(i.Text, {
       variant: "text-xs/bold",
       className: x.bannerHeader,
       children: p.NW.format(p.t.oxhCOj, {

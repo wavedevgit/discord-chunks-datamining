@@ -3,9 +3,9 @@ n.d(t, {
   b: () => E
 });
 var l = n(200651),
-  i = n(192379),
-  s = n(512722),
-  r = n.n(s),
+  s = n(192379),
+  i = n(512722),
+  r = n.n(i),
   a = n(704215),
   o = n(605236),
   C = n(881602),
@@ -24,7 +24,7 @@ var l = n(200651),
 
 function E(e) {
   var t, n;
-  let s, {
+  let i, {
       handleClose: E,
       planGroup: S,
       onSubscriptionConfirmation: N,
@@ -63,20 +63,20 @@ function E(e) {
     Q = (0, d.tK)(null == D ? void 0 : D.skuId),
     q = A && null != D && V;
   r()(null != M, "Expected plan to selected"), r()(null != Z, "Expected selectedSkuId"), r()(null != w, "Step should be set");
-  let J = i.useCallback(() => {
+  let J = s.useCallback(() => {
     E(), null == N || N()
   }, [E, N]);
-  return i.useEffect(() => {
+  return s.useEffect(() => {
     !(!A || null == R || null == H || W || B || (0, p.pO)(R)) && C.F.getCurrentConfig({
       location: "36b986_1"
     }).enabled && F({
       onSubscriptionConfirmation: N
     })
-  }, [F, A, R, H, W, B, N]), i.useEffect(() => {
+  }, [F, A, R, H, W, B, N]), s.useEffect(() => {
     null != z && null != z.reminderNotice && X && (0, o.wH)(a.z.GIFTING_PROMOTION_REMINDER, z.dismissibleContentVersion, {
       dismissAction: g.L.INDIRECT_ACTION
     })
-  }, [z, X]), s = null != y ? y(M, J, k) : null != v ? (0, l.jsx)(u.VY, {}) : A ? (0, l.jsx)(u.TB, {
+  }, [z, X]), i = null != y ? y(M, J, k) : null != v ? (0, l.jsx)(u.VY, {}) : A ? (0, l.jsx)(u.TB, {
     planId: M.id,
     onClose: J
   }) : U.current === M.id ? (0, l.jsx)(u.ZP, {
@@ -95,7 +95,7 @@ function E(e) {
     hideClose: K
   }), (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsxs)(j.C3, {
-      children: [(0, l.jsx)(L.Z, {}), s]
+      children: [(0, l.jsx)(L.Z, {}), i]
     }), null != Y && Y, q && null != Q && (0, l.jsx)(m.Z, {
       onClose: J,
       selectedPromotionalDecoPurchaseRecord: Q,

@@ -3,8 +3,8 @@
 r.d(t, {
   A7: () => T,
   CI: () => R,
-  Du: () => A,
-  lH: () => L,
+  Du: () => L,
+  lH: () => A,
   s: () => I
 }), r(266796);
 var n = r(200651),
@@ -160,7 +160,7 @@ let S = "url(#dark-purple-gradient)",
       }))
     })
   },
-  L = e => {
+  A = e => {
     let {
       isSelected: t,
       onSelect: r
@@ -171,7 +171,7 @@ let S = "url(#dark-purple-gradient)",
       copy: j.NW.string(j.t.y2b7CA)
     })
   },
-  A = () => {
+  L = () => {
     let e = (0, n.jsx)(l.Text, {
       variant: "text-sm/bold",
       children: (0, n.jsx)(p.Z, {

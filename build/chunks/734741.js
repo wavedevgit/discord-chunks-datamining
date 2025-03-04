@@ -1,30 +1,23 @@
 /** Chunk was on 45489 **/
 n.d(t, {
-  V: () => l
+  V: () => a
 });
 var r = n(331119),
-  i = n(575595),
-  s = n(650032);
-let a = "getWhatsNewBadgeCount",
-  l = () => {
+  i = n(575595);
+let s = "getWhatsNewBadgeCount",
+  a = () => {
     let {
       enabled: e
-    } = s._.getCurrentConfig({
-      location: a
+    } = i.r.getCurrentConfig({
+      location: s
     }, {
       autoTrackExposure: !1
     }), {
       enabled: t
-    } = i.r.getCurrentConfig({
-      location: a
-    }, {
-      autoTrackExposure: !1
-    }), {
-      enabled: n
     } = r.C.getCurrentConfig({
-      location: a
+      location: s
     }, {
       autoTrackExposure: !1
     });
-    return e && !t && !n
+    return !e && !t
   }

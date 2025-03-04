@@ -4,9 +4,9 @@ n.d(t, {
   T: () => f
 }), n(47120);
 var l = n(200651),
-  i = n(192379),
-  s = n(120356),
-  r = n.n(s),
+  s = n(192379),
+  i = n(120356),
+  r = n.n(i),
   a = n(481060),
   o = n(626135),
   C = n(981631),
@@ -18,10 +18,10 @@ var l = n(200651),
 let f = {
     NITRO_BASIC: c.nitroBasic
   },
-  h = i.memo(function(e) {
+  h = s.memo(function(e) {
     var t, n;
     let {
-      message: s,
+      message: i,
       handleClick: h,
       handleClose: _,
       buttonText: j,
@@ -32,12 +32,12 @@ let f = {
       analyticsLocations: S,
       upsellType: N,
       themeOverride: y = f.NITRO_BASIC
-    } = e, [I, O] = i.useState(m), [v, b] = i.useState(p);
-    return i.useEffect(() => {
+    } = e, [I, O] = s.useState(m), [v, b] = s.useState(p);
+    return s.useEffect(() => {
       b(u)
-    }, [y]), i.useEffect(() => {
+    }, [y]), s.useEffect(() => {
       setTimeout(() => O(!1), 3e3)
-    }, []), i.useEffect(() => {
+    }, []), s.useEffect(() => {
       o.default.track(C.rMx.POST_ACTION_UPSELL_SHOWN, {
         type: N,
         location: S
@@ -93,7 +93,7 @@ let f = {
             className: c.heading,
             children: (0, l.jsx)(a.X6q, {
               variant: "heading-sm/medium",
-              children: s
+              children: i
             })
           })]
         }), (0, l.jsx)("div", {

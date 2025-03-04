@@ -3,8 +3,8 @@ n.d(t, {
   c: () => p
 });
 var l = n(200651),
-  i = n(442837),
-  s = n(780384),
+  s = n(442837),
+  i = n(780384),
   r = n(481060),
   a = n(410030),
   o = n(607070),
@@ -15,9 +15,9 @@ var l = n(200651),
 
 function p() {
   var e;
-  let t = (0, i.e7)([o.Z], () => o.Z.useReducedMotion),
+  let t = (0, s.e7)([o.Z], () => o.Z.useReducedMotion),
     n = (0, a.ZP)(),
-    p = (0, s.wj)(n),
+    p = (0, i.wj)(n),
     x = null === (e = (0, d.Z)()) || void 0 === e ? void 0 : e.planSelectionBanner,
     {
       claimableRewards: f

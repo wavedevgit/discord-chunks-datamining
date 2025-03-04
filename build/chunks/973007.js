@@ -4,8 +4,8 @@ n.d(t, {
 });
 var l = n(200651);
 n(192379);
-var i = n(481060),
-  s = n(823188),
+var s = n(481060),
+  i = n(823188),
   r = n(474936),
   a = n(47466);
 
@@ -16,12 +16,12 @@ function o(e) {
     priceOptions: r,
     showPromotionalGiftBanner: o
   } = e;
-  return (0, l.jsx)(i.P3F, {
+  return (0, l.jsx)(s.P3F, {
     onClick: t,
     style: {
       cursor: "pointer"
     },
-    children: (0, l.jsx)(s.wp, {
+    children: (0, l.jsx)(i.wp, {
       className: a.tier2MarketingCard,
       ctaButton: null,
       showWumpus: !o,
@@ -40,12 +40,12 @@ function C(e) {
     isGift: n,
     priceOptions: r
   } = e;
-  return (0, l.jsx)(i.P3F, {
+  return (0, l.jsx)(s.P3F, {
     onClick: t,
     style: {
       cursor: "pointer"
     },
-    children: (0, l.jsx)(s.Gq, {
+    children: (0, l.jsx)(i.Gq, {
       className: a.tier0MarketingCard,
       ctaButton: null,
       showWumpus: !0,
@@ -59,19 +59,19 @@ let d = function(e) {
   let {
     onSelectSku: t,
     isGift: n,
-    priceOptions: i,
-    showPromotionalGiftBanner: s
+    priceOptions: s,
+    showPromotionalGiftBanner: i
   } = e;
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(o, {
       onClick: () => t(r.Si.TIER_2),
       isGift: n,
-      priceOptions: i,
-      showPromotionalGiftBanner: s
+      priceOptions: s,
+      showPromotionalGiftBanner: i
     }), (0, l.jsx)(C, {
       onClick: () => t(r.Si.TIER_0),
       isGift: n,
-      priceOptions: i
+      priceOptions: s
     })]
   })
 }
