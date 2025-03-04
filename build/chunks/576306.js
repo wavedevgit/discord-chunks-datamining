@@ -1,8 +1,8 @@
 /** Chunk was on 94805 **/
-r.d(t, {
+n.d(t, {
   h: () => a
 });
-let n = (0, r(818083).B)({
+let r = (0, n(818083).B)({
   kind: "user",
   id: "2024-12_new_guild_profile",
   label: "Enables new guild profile",
@@ -21,7 +21,7 @@ let n = (0, r(818083).B)({
 function a() {
   let {
     enabled: e
-  } = n.useExperiment({
+  } = r.useExperiment({
     location: "GuildProfileExperiment"
   }, {
     autoTrackExposure: !1

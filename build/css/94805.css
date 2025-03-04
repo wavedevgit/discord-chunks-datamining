@@ -1,6 +1,6 @@
 /**
   Module ID: 94805
-  Original File Name: 429f922637f1cc26
+  Original File Name: fb9fc4c51bd4d070
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -1062,7 +1062,11 @@ div:has(>div>.container_f792fa) {
     z-index: 2
 }
 
-.applicationIconContainer_f792fa {
+.closeButtonInner_f792fa {
+    align-items: center
+}
+
+.applicationIconContainer_f792fa,.closeButtonInner_f792fa {
     display: flex;
     justify-content: center
 }
