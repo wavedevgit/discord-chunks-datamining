@@ -1,6 +1,6 @@
 /**
   Module ID: 11725
-  Original File Name: 777842b56684ed33
+  Original File Name: 02ca5c03cd8764e9
 **/
 .availabilityIndicator__40463 {
     display: flex;
@@ -93,7 +93,24 @@
 }
 
 .recentAvatarButton__1df30 {
+    position: relative;
+    overflow: hidden;
     cursor: pointer
+}
+
+.recentAvatarButton__1df30:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: background-color var(--custom-button-transition-duration) ease-in-out
+}
+
+.recentAvatarButton__1df30:hover:after {
+    background-color: var(--opacity-black-20)
 }
 
 .recentAvatar__1df30 {

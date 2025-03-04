@@ -12,7 +12,7 @@ let s = e => {
   let {
     product: t,
     className: r
-  } = e, l = t.skuId, s = o.K[l];
+  } = e, l = t.skuId, s = o.KO[l];
   return null != s ? (0, n.jsx)("div", {
     className: i()(a.externalProductWrapper, r),
     children: (0, n.jsx)("img", {

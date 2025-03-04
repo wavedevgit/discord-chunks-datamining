@@ -45,10 +45,12 @@ function y(e) {
     hideCustomStatus: M = !1,
     hideBioSection: k = !1,
     hideMessageInput: j = !0,
-    hideExampleButton: U = !1
-  } = e, G = (0, l.ZP)(t.id, null == n ? void 0 : n.id), {
-    avatarSrc: B,
-    avatarDecorationSrc: V
+    hideExampleButton: U = !1,
+    pendingBadges: G,
+    shouldOpenBadgeTooltip: B
+  } = e, V = (0, l.ZP)(t.id, null == n ? void 0 : n.id), {
+    avatarSrc: F,
+    avatarDecorationSrc: Z
   } = (0, u.Z)({
     user: t,
     guildId: null == n ? void 0 : n.id,
@@ -56,21 +58,21 @@ function y(e) {
     avatarOverride: T,
     size: a.EFr.SIZE_80,
     showPending: !0
-  }), F = (0, _.ZT)({
+  }), H = (0, _.ZT)({
     pendingProfileEffectId: P,
-    displayProfile: G
+    displayProfile: V
   }), {
-    theme: Z,
-    primaryColor: H
+    theme: W,
+    primaryColor: Y
   } = (0, c.Z)({
     user: t,
-    displayProfile: G,
+    displayProfile: V,
     pendingThemeColors: R,
     isPreview: i
   });
   return (0, r.jsxs)(d.Z, {
     user: t,
-    displayProfile: G,
+    displayProfile: V,
     profileType: v.y0.BITE_SIZE,
     pendingThemeColors: R,
     className: o()(b.container, w),
@@ -79,7 +81,7 @@ function y(e) {
       className: b.header,
       children: [(0, r.jsx)(h.Z, {
         user: t,
-        displayProfile: G,
+        displayProfile: V,
         guildId: null == n ? void 0 : n.id,
         canUsePremiumCustomization: i,
         pendingBanner: O,
@@ -91,12 +93,12 @@ function y(e) {
       }), (0, r.jsx)(p.Z, {
         user: t,
         guild: n,
-        displayProfile: G,
+        displayProfile: V,
         canUsePremiumCustomization: i,
-        previewAvatar: B,
-        previewAvatarDecoration: V,
-        previewTheme: Z,
-        previewPrimaryColor: H,
+        previewAvatar: F,
+        previewAvatarDecoration: Z,
+        previewTheme: W,
+        previewPrimaryColor: Y,
         className: D,
         disabledInputs: x,
         isTryItOutFlow: L,
@@ -110,21 +112,23 @@ function y(e) {
       })]
     }), (0, r.jsx)(g.Z, {
       user: t,
-      displayProfile: G,
+      displayProfile: V,
       guild: n,
       pendingAvatar: T,
       pendingNickname: A,
       pendingGlobalName: C,
       pendingBio: S,
       pendingPronouns: I,
+      pendingBadges: G,
       isTryItOutFlow: L,
-      hideBioSection: k
+      hideBioSection: k,
+      shouldOpenBadgeTooltip: B
     }), (0, r.jsx)(m.Z, {
       user: t,
       hideMessageInput: j,
       hideExampleButton: U
-    }), null != F && (0, r.jsx)(s.Z, {
-      profileEffectId: F
+    }), null != H && (0, r.jsx)(s.Z, {
+      profileEffectId: H
     })]
   })
 }

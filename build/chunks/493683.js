@@ -196,19 +196,19 @@ let O = {
       o = null == n ? void 0 : n.getGuildId();
     return null == o || (null == n ? void 0 : n.isThread()) || l.Z.checkGuildTemplateDirty(o), i
   },
-  setIcon(e, t) {
-    let n = p.Z.getChannel(e);
-    r.tn.patch({
-      url: b.ANM.CHANNEL(e),
-      body: {
-        icon: t
-      },
-      oldFormErrors: !0,
-      rejectWithError: !0
-    }).then(() => {
-      let e = null == n ? void 0 : n.getGuildId();
-      null == e || (null == n ? void 0 : n.isThread()) || l.Z.checkGuildTemplateDirty(e)
-    })
+  async setIcon(e, t) {
+    let n = p.Z.getChannel(e),
+      i = await r.tn.patch({
+        url: b.ANM.CHANNEL(e),
+        body: {
+          icon: t
+        },
+        oldFormErrors: !0,
+        rejectWithError: !0,
+        failImmediatelyWhenRateLimited: !0
+      }),
+      o = null == n ? void 0 : n.getGuildId();
+    return null == o || (null == n ? void 0 : n.isThread()) || l.Z.checkGuildTemplateDirty(o), i
   },
   convertToGuild: e => r.tn.post({
     url: b.ANM.CHANNEL_CONVERT(e),

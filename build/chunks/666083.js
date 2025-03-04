@@ -1,44 +1,69 @@
 /** Chunk was on 13965 **/
 n.d(t, {
-  default: () => m
+  default: () => O
 }), n(47120), n(266796);
 var r = n(200651),
-  o = n(192379),
-  c = n(119617),
-  a = n(442837),
-  s = n(481060),
+  c = n(192379),
+  o = n(119617),
+  s = n(442837),
+  a = n(481060),
   i = n(607070),
   l = n(530618),
   u = n(372654),
-  f = n(730621),
-  d = n(388032),
-  p = n(841174);
+  f = n(535396),
+  p = n(730621),
+  b = n(388032),
+  d = n(841174),
+  m = n(942570);
 
-function b() {
-  return (b = Object.assign || function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var n = arguments[t];
-      for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
-    }
-    return e
-  }).apply(this, arguments)
+function j(e) {
+  let {
+    powerup: t
+  } = e;
+  switch (t.type) {
+    case f.U.LEVEL:
+      return (0, r.jsx)("img", {
+        alt: "",
+        src: m
+      });
+    case f.U.PERK:
+      return (0, r.jsx)("img", {
+        alt: "",
+        src: "",
+        className: d.exampleImage
+      })
+  }
 }
 
-function m(e) {
-  var t, n, m = b({}, function(e) {
-    if (null == e) throw TypeError("Cannot destructure " + e);
-    return e
-  }(e));
-  let j = (0, a.e7)([i.Z], () => i.Z.useReducedMotion),
-    O = o.useRef(null),
-    g = o.useRef(new c.qA),
-    [y, h] = o.useState(null);
+function O(e) {
+  var t, n, {
+      powerup: f
+    } = e,
+    m = function(e, t) {
+      if (null == e) return {};
+      var n, r, c = function(e, t) {
+        if (null == e) return {};
+        var n, r, c = {},
+          o = Object.keys(e);
+        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (c[n] = e[n]);
+        return c
+      }(e, t);
+      if (Object.getOwnPropertySymbols) {
+        var o = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (c[n] = e[n])
+      }
+      return c
+    }(e, ["powerup"]);
+  let O = (0, s.e7)([i.Z], () => i.Z.useReducedMotion),
+    g = c.useRef(null),
+    y = c.useRef(new o.qA),
+    [x, h] = c.useState(null);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c.O_, {
+    children: [(0, r.jsx)(o.O_, {
       ref: h,
-      className: p.confettiCanvas,
-      environment: g.current
-    }), (0, r.jsxs)(s.Y0X, (t = function(e) {
+      className: d.confettiCanvas,
+      environment: y.current
+    }), (0, r.jsxs)(a.Y0X, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -56,41 +81,39 @@ function m(e) {
       }
       return e
     }({
-      className: p.modal,
-      size: s.CgR.DYNAMIC
+      className: d.modal,
+      size: a.CgR.DYNAMIC
     }, m), n = n = {
-      children: [(0, r.jsx)(s.hzk, {
-        className: p.modalContentContainer,
+      children: [(0, r.jsx)(a.hzk, {
+        className: d.modalContentContainer,
         scrollbarType: "none",
         children: (0, r.jsxs)("div", {
-          className: p.container,
-          ref: O,
-          children: [(0, r.jsx)("img", {
-            alt: "",
-            src: "",
-            className: p.exampleImage
+          className: d.container,
+          ref: g,
+          children: [(0, r.jsx)(j, {
+            powerup: f
           }), (0, r.jsxs)("div", {
-            className: p.contentContainer,
-            children: [(0, r.jsx)(s.X6q, {
+            className: d.contentContainer,
+            children: [(0, r.jsx)(a.X6q, {
               variant: "heading-xl/extrabold",
-              children: d.NW.string(f.Z.lFuOFB)
-            }), (0, r.jsx)(s.Text, {
-              className: p.description,
+              children: b.NW.string(p.Z.lFuOFB)
+            }), (0, r.jsx)(a.Text, {
+              className: d.description,
               variant: "text-sm/normal",
-              children: d.NW.string(f.Z.y3wHoq)
-            }), (0, r.jsx)(s.zxk, {
-              className: p.button,
+              children: b.NW.string(p.Z.y3wHoq)
+            }), (0, r.jsx)(a.zxk, {
+              className: d.button,
               onClick: m.onClose,
-              children: d.NW.string(f.Z["g5Ds6+"])
+              children: b.NW.string(p.Z["g5Ds6+"])
             })]
           })]
         })
-      }), (0, r.jsx)(s.olH, {
-        className: p.close,
+      }), (0, r.jsx)(a.olH, {
+        className: d.close,
         onClick: m.onClose
-      }), !j && (0, r.jsx)(l.Z, {
-        confettiTarget: O.current,
-        confettiCanvas: y,
+      }), !O && (0, r.jsx)(l.Z, {
+        confettiTarget: g.current,
+        confettiCanvas: x,
         sprites: (0, u.vK)()
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

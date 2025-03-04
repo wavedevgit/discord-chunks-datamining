@@ -28,16 +28,18 @@ function p(e) {
     pendingBio: v,
     pendingPronouns: b,
     isTryItOutFlow: y,
-    hideBioSection: O
-  } = e, S = (0, i.e7)([c.ZP], () => null == h ? null : c.ZP.getMember(h.id, n.id)), I = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), T = null == p ? void 0 : null === (t = p.getPreviewBio(v)) || void 0 === t ? void 0 : t.value, N = null != b ? b : null == p ? void 0 : p.pronouns, A = (0, d.Ly)({
+    hideBioSection: O,
+    pendingBadges: S,
+    shouldOpenBadgeTooltip: I
+  } = e, T = (0, i.e7)([c.ZP], () => null == h ? null : c.ZP.getMember(h.id, n.id)), N = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), A = null == p ? void 0 : null === (t = p.getPreviewBio(v)) || void 0 === t ? void 0 : t.value, C = null != b ? b : null == p ? void 0 : p.pronouns, R = (0, d.Ly)({
     pendingNickname: m,
     pendingGlobalName: E,
     user: n,
-    guildMember: S
-  }), C = () => {
-    if (null != S && null !== g && (null != S.avatar || null != g)) return (0, r.jsx)(l.Z, {
+    guildMember: T
+  }), P = () => {
+    if (null != T && null !== g && (null != T.avatar || null != g)) return (0, r.jsx)(l.Z, {
       user: n,
-      nickname: A
+      nickname: R
     })
   };
   return (0, r.jsxs)("div", {
@@ -46,18 +48,20 @@ function p(e) {
     children: [(0, r.jsx)(a.Z, {
       user: n,
       profileType: f.y0.BITE_SIZE,
-      usernameIcon: C(),
-      nickname: A,
-      pronouns: N,
+      usernameIcon: P(),
+      nickname: R,
+      pronouns: C,
       isTryItOut: y,
       tags: (0, r.jsx)(o.Z, {
         displayProfile: p,
-        profileType: f.y0.BITE_SIZE
+        profileType: f.y0.BITE_SIZE,
+        pendingBadges: S,
+        shouldOpenBadgeTooltip: I
       })
-    }), !O && null != T && "" !== T && (0, r.jsx)(s.Z, {
+    }), !O && null != A && "" !== A && (0, r.jsx)(s.Z, {
       user: n,
-      bio: T,
-      hidePersonalInformation: I,
+      bio: A,
+      hidePersonalInformation: N,
       viewFullBioDisabled: !0
     })]
   })

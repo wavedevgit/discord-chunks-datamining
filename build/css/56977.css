@@ -1,6 +1,6 @@
 /**
   Module ID: 56977
-  Original File Name: 96cad32cbaa3ea60
+  Original File Name: 914da8449373d669
 **/
 .modal__038c3 {
     width: 650px
@@ -83,7 +83,24 @@
 }
 
 .recentAvatarButton__1df30 {
+    position: relative;
+    overflow: hidden;
     cursor: pointer
+}
+
+.recentAvatarButton__1df30:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: background-color var(--custom-button-transition-duration) ease-in-out
+}
+
+.recentAvatarButton__1df30:hover:after {
+    background-color: var(--opacity-black-20)
 }
 
 .recentAvatar__1df30 {

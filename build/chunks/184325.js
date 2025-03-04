@@ -96,14 +96,15 @@ function j(e) {
     className: n,
     badgeClassName: o,
     displayProfile: f,
-    onClose: L
+    onClose: L,
+    shouldOpenBadgeTooltip: j
   } = e, {
-    analyticsLocations: j
+    analyticsLocations: U
   } = (0, u.ZP)(c.Z.BADGE), {
-    context: U,
-    trackUserProfileAction: G
-  } = (0, O.KZ)(), [B, V] = i.useState(!1), F = E.default.getCurrentUser(), Z = (0, b.yd)(null == F ? void 0 : F.premiumType, C.p9.TIER_2), {
-    isBadgeVersion2: H
+    context: G,
+    trackUserProfileAction: B
+  } = (0, O.KZ)(), [V, F] = i.useState(!1), Z = E.default.getCurrentUser(), H = (0, b.yd)(null == Z ? void 0 : Z.premiumType, C.p9.TIER_2), {
+    isBadgeVersion2: W
   } = (0, d.D)();
   return (0, r.jsx)("div", {
     className: a()(D.container, n),
@@ -112,52 +113,52 @@ function j(e) {
     children: t.map(e => {
       let t = e.id === m.l.ORB_PROFILE_BADGE,
         n = (0, y.fv)(e.id),
-        i = H && (null != n || e.id === R.a),
+        i = W && (null != n || e.id === R.a),
         c = t => {
-          if (G({
+          if (B({
               action: "PRESS_BADGE"
             }), (0, S.NE)(x({
               badge: e.id,
-              analyticsLocations: j
-            }, U)), i) {
+              analyticsLocations: U
+            }, G)), i) {
             if (t.preventDefault(), v.default.track(A.rMx.TIERED_TENURE_BADGE_CLICKED, {
                 badge: e.id,
-                premium_type: Z,
+                premium_type: H,
                 viewed_user_id: null == f ? void 0 : f.userId
-              }), Z) {
-              (null == f ? void 0 : f.userId) === (null == F ? void 0 : F.id) ? (0, g.uL)(A.Z5c.NITRO_HOME) : (0, _.k)({
-                analyticsLocations: j,
+              }), H) {
+              (null == f ? void 0 : f.userId) === (null == Z ? void 0 : Z.id) ? (0, g.uL)(A.Z5c.NITRO_HOME) : (0, _.k)({
+                analyticsLocations: U,
                 displayProfile: f
               }), null == L || L();
               return
             }
-            if ((null == f ? void 0 : f.userId) === (null == F ? void 0 : F.id)) {
+            if ((null == f ? void 0 : f.userId) === (null == Z ? void 0 : Z.id)) {
               let n = null != e.link ? (0, l.default)(e.link, {
-                analyticsLocations: j
+                analyticsLocations: U
               }) : null;
               if (null == n) return;
               return null == L || L(), n(t)
             }
             return (0, _.k)({
-              analyticsLocations: j,
+              analyticsLocations: U,
               displayProfile: f
             }), void(null == L || L())
           }
           let n = null != e.link ? (0, l.default)(e.link, {
-            analyticsLocations: j
+            analyticsLocations: U
           }) : null;
           if (null != n) return null == L || L(), n(t)
         },
         u = () => {
-          e.id === I.i && v.default.track(A.rMx.QUEST_CONTENT_VIEWED, x({}, (0, p.mH)(h.jn.QUEST_BADGE))), G({
+          e.id === I.i && v.default.track(A.rMx.QUEST_CONTENT_VIEWED, x({}, (0, p.mH)(h.jn.QUEST_BADGE))), B({
             action: "HOVER_BADGE"
           }), (0, S.Qf)(x({
             badge: e.id,
-            analyticsLocations: j
-          }, U))
+            analyticsLocations: U
+          }, G))
         },
         d = M(null == n ? void 0 : n.id),
-        E = null != n && B,
+        E = null != n && V,
         b = k({
           badge: e,
           tieredTenureBadge: i && e.id !== R.a ? n : void 0
@@ -165,10 +166,11 @@ function j(e) {
       return (0, r.jsx)(s.DY3, {
         text: b,
         "aria-label": e.description,
+        forceOpen: null != j && j(e.id),
         delay: N.vB,
         tooltipClassName: d,
-        onTooltipShow: () => V(null != n && 1 === n.badgeVersion),
-        onTooltipHide: () => V(!1),
+        onTooltipShow: () => F(null != n && 1 === n.badgeVersion),
+        onTooltipHide: () => F(!1),
         children: (0, r.jsxs)(s.eee, {
           onClick: c,
           onMouseEnter: u,
