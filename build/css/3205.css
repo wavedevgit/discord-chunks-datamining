@@ -1,6 +1,6 @@
 /**
   Module ID: 3205
-  Original File Name: 41a7704a4d46186b
+  Original File Name: c9d19b77c935048a
 **/
 .popoutContainer_a6cedd {
     display: flex;
@@ -13368,8 +13368,7 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 
 .selectedGame_a3ec8a {
     display: flex;
-    flex-direction: column;
-    width: 126px
+    flex-direction: column
 }
 
 .selectedGame_a3ec8a:not(.dimmed_a3ec8a).disabled_a3ec8a {
@@ -13417,7 +13416,7 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 
 .gameImageBackground_a3ec8a {
     position: relative;
-    height: 168px;
+    height: 100%;
     background-color: var(--background-secondary);
     border-radius: 4px;
     margin-bottom: 8px;
@@ -13437,6 +13436,8 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     gap: 4px
 }
 
+@value minCardWidth 120px;
+
 .separator__2dc49 {
     background-color: var(--border-subtle);
     height: 1px;
@@ -13444,10 +13445,14 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 }
 
 .gamesList__2dc49 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 12px 8px
+    display: grid;
+    grid-column-gap: 8px;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    grid-row-gap: 12px;
+    row-gap: 12px;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fill,minmax(120px,1fr))
 }
 
 .gamesContainer__2dc49 {
@@ -13455,6 +13460,8 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     flex-direction: column;
     gap: 8px
 }
+
+@value minCardWidth 120px;
 
 .sectionBody_eb5373 {
     display: flex;
@@ -13471,10 +13478,14 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 }
 
 .selectedGames_eb5373 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 12px 8px
+    display: grid;
+    grid-column-gap: 8px;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    grid-row-gap: 12px;
+    row-gap: 12px;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fill,minmax(120px,1fr))
 }
 
 .clickableGame_eb5373 {

@@ -39,8 +39,7 @@ function g(e) {
   }, [t, g]), l.useEffect(() => {
     null == s || s(null == y ? void 0 : y.current)
   }, [y, s]);
-  let w = null;
-  return w = v === m.a.NOT_FETCHED || v === m.a.FETCHING ? (0, r.jsx)("div", {
+  let w = l.useMemo(() => v === m.a.NOT_FETCHED || v === m.a.FETCHING ? (0, r.jsx)("div", {
     className: a()(b.container, b.spinnerContainer),
     children: (0, r.jsx)(c.$jN, {})
   }) : null == x && 50001 === P ? (0, r.jsx)("div", {
@@ -60,7 +59,8 @@ function g(e) {
     children: (0, r.jsx)(f.Z, {
       profile: x
     })
-  }), (0, r.jsx)(c.VqE, {
+  }), [v, x, P, t, n, N]);
+  return (0, r.jsx)(c.VqE, {
     ref: y,
     "aria-label": null == x ? void 0 : x.name,
     children: w
