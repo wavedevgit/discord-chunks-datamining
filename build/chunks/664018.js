@@ -2,7 +2,7 @@
 "use strict";
 r.d(t, {
   D: () => i,
-  E: () => a
+  E: () => s
 });
 var n, l = r(818083),
   i = ((n = {})[n.CONTROL = 0] = "CONTROL", n[n.TRANSFORMATION = 1] = "TRANSFORMATION", n[n.NO_MOVEMENT = 2] = "NO_MOVEMENT", n);
@@ -27,6 +27,6 @@ let o = (0, l.B)({
       }
     }]
   }),
-  a = e => o.useExperiment({
+  s = e => o.useExperiment({
     location: e
   })

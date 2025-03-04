@@ -8,8 +8,8 @@ var n = r(200651),
   l = r(192379),
   i = r(120356),
   o = r.n(i),
-  a = r(180650),
-  s = r(399606),
+  s = r(180650),
+  a = r(399606),
   c = r(481060),
   u = r(607070),
   d = r(906732),
@@ -35,7 +35,7 @@ let E = (0, g.IC)(90),
       category: t
     } = e, {
       analyticsLocations: r
-    } = (0, d.ZP)(), i = l.useRef(null), o = (0, s.e7)([b.default], () => b.default.getCurrentUser());
+    } = (0, d.ZP)(), i = l.useRef(null), o = (0, a.e7)([b.default], () => b.default.getCurrentUser());
     return C.ZP.canUseCollectibles(o) ? t.summary : P.NW.format(P.t["9hafRk"], {
       getPremium: e => (0, n.jsx)(c.P3F, {
         innerRef: i,
@@ -81,7 +81,7 @@ function I(e) {
     hideLimitedTimeBadge: p = !1
   } = e, {
     backgroundColors: f
-  } = (0, v.Z)(i.styles), b = (0, O.ZS)(i.skuId), C = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), k = (0, s.e7)([h.Z], () => h.Z.isFocused()), {
+  } = (0, v.Z)(i.styles), b = (0, O.ZS)(i.skuId), C = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), k = (0, a.e7)([h.Z], () => h.Z.isFocused()), {
     categoryBannerStatic: P,
     categoryBannerAnimated: I
   } = (0, y.tK)(i), N = !!(null == b ? void 0 : b.showDarkBannerText);
@@ -123,7 +123,7 @@ function I(e) {
         [S.blackSummary]: N
       }),
       variant: "text-md/normal",
-      children: i.skuId === a.T.DISXCORE ? (0, n.jsx)(w, {
+      children: i.skuId === s.T.DISXCORE ? (0, n.jsx)(w, {
         category: i
       }) : i.summary
     }), !p && (0, n.jsx)(j.Z, {

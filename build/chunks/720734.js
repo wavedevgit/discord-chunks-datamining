@@ -796,7 +796,7 @@ function e1(e) {
     [H, z] = i.useState(!1);
   return i.useEffect(() => {
     let e;
-    return I && S && !E && (e = setTimeout(() => {
+    return I && S && (e = setTimeout(() => {
       z(!0), e = setTimeout(() => z(!1), eK)
     }, 300)), () => {
       z(!1), clearTimeout(e)

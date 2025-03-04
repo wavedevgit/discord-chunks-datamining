@@ -8,8 +8,8 @@ r(192379);
 var l = r(120356),
   i = r.n(l),
   o = r(481060),
-  a = r(884697),
-  s = r(409116),
+  s = r(884697),
+  a = r(409116),
   c = r(200615),
   u = r(981631),
   d = r(388032),
@@ -64,32 +64,32 @@ function m(e) {
     discount: l,
     className: m,
     nitroUpsell: C = !1
-  } = e, g = (0, a.ql)(t, u.tuJ.DEFAULT);
+  } = e, g = (0, s.ql)(t, u.tuJ.DEFAULT);
   if (null == g) return null;
   if (g.amount <= 0) return (0, n.jsx)("div", {
     className: i()(p.priceTagsContainer, m),
-    children: (0, n.jsx)(s.F, {
+    children: (0, n.jsx)(a.F, {
       price: g
     })
   });
-  let v = (0, a.ql)(t, u.tuJ.PREMIUM_TIER_2),
-    x = !r && !(0, a.x6)(t),
-    j = (0, a.x6)(t) && r ? h(b({}, g), {
+  let v = (0, s.ql)(t, u.tuJ.PREMIUM_TIER_2),
+    x = !r && !(0, s.x6)(t),
+    j = (0, s.x6)(t) && r ? h(b({}, g), {
       amount: l.original
     }) : g;
   return (0, n.jsxs)("div", {
     className: i()(p.priceTagsContainer, m),
-    children: [(0, n.jsx)(s.F, {
+    children: [(0, n.jsx)(a.F, {
       price: j,
-      discount: r ? a.f_ : l,
+      discount: r ? s.f_ : l,
       className: i()(p.price, {
         [p.striked]: r,
         [p.dimmed]: r,
         [p.fullPrice]: x
       })
-    }), null != v && (0, n.jsx)(s.F, {
+    }), null != v && (0, n.jsx)(a.F, {
       price: v,
-      discount: r ? l : a.f_,
+      discount: r ? l : s.f_,
       renderPrice: C ? e => (0, n.jsx)(o.Text, {
         variant: "text-xs/medium",
         children: d.NW.format(d.t.Sv8iiY, {

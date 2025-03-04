@@ -7,8 +7,8 @@ var n = r(200651),
   l = r(192379),
   i = r(120356),
   o = r.n(i),
-  a = r(685816),
-  s = r(442837),
+  s = r(685816),
+  a = r(442837),
   c = r(481060),
   u = r(594174),
   d = r(960048),
@@ -31,7 +31,7 @@ let O = e => {
       isFetchingCategories: i,
       tab: o
     } = e, {
-      noCache: s,
+      noCache: a,
       includeUnpublished: c
     } = (0, m.Z)(), {
       isFetchingShopHome: u,
@@ -39,7 +39,7 @@ let O = e => {
       shopBlocks: p,
       refreshShopHome: f
     } = (0, b.E)(o, {
-      noCache: s,
+      noCache: a,
       includeUnpublished: c,
       includeBundles: !0
     }), j = l.useCallback(() => {
@@ -69,20 +69,20 @@ let O = e => {
       children: p.map((e, l) => {
         if (null == e) return null;
         switch (e.type) {
-          case a.z.HERO:
+          case s.z.HERO:
             return (0, n.jsx)(v.Z, {
               isLoading: u,
               handleTransition: t,
               heroBlock: e,
               tab: o
             }, l);
-          case a.z.FEATURED:
+          case s.z.FEATURED:
             return (0, n.jsx)(C.Z, {
               isLoading: u,
               handleTransition: t,
               featuredBlockRecord: e
             }, l);
-          case a.z.FEED:
+          case s.z.FEED:
             return (0, n.jsx)(g.Z, {
               isLoading: u || i,
               handleTransition: t,
@@ -90,7 +90,7 @@ let O = e => {
               rankedSkuIds: e.rankedSkuIds,
               tab: o
             }, l);
-          case a.z.WIDE_BANNER:
+          case s.z.WIDE_BANNER:
             return (0, n.jsx)(x.Z, {
               handleTransition: t,
               wideBannerBlock: e,
@@ -107,7 +107,7 @@ let O = e => {
     let {
       isFullScreen: r,
       handleTransition: i,
-      numVisibleItems: a,
+      numVisibleItems: s,
       tab: b
     } = e, {
       isFetchingCategories: C,
@@ -117,7 +117,7 @@ let O = e => {
       refreshCategories: k
     } = (0, f.ZP)({
       location: "CollectiblesFeedShop"
-    }), P = null !== (t = null != g ? g : v) && void 0 !== t ? t : x, S = (0, s.e7)([u.default], () => u.default.getCurrentUser()), E = (0, p.b)("Collectibles Shop Button"), {
+    }), P = null !== (t = null != g ? g : v) && void 0 !== t ? t : x, S = (0, a.e7)([u.default], () => u.default.getCurrentUser()), E = (0, p.b)("Collectibles Shop Button"), {
       noCache: w,
       includeUnpublished: L
     } = (0, m.Z)(), I = l.useCallback(() => {
@@ -147,10 +147,10 @@ let O = e => {
         className: o()(y.content, y.mainContent),
         children: [(0, n.jsx)(O, {
           handleTransition: i,
-          numVisibleItems: a,
+          numVisibleItems: s,
           isFetchingCategories: C,
           tab: b
-        }), b === j.AW.HOME && a >= j.iA && (0, n.jsxs)("div", {
+        }), b === j.AW.HOME && s >= j.iA && (0, n.jsxs)("div", {
           className: y.endOfFeed,
           children: [(0, n.jsx)(c.X6q, {
             variant: "heading-md/semibold",

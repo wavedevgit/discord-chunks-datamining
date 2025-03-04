@@ -8,15 +8,15 @@ var n = r(932563),
   l = r(594174),
   i = r(74538),
   o = r(215023),
-  a = r(981631);
-let s = e => {
+  s = r(981631);
+let a = e => {
     var t, r, n, l;
     let {
       product: i,
-      isPremiumUser: s,
+      isPremiumUser: a,
       tab: c,
       orbBalance: u
-    } = e, d = null !== (l = null === (n = i.prices[s ? a.tuJ.PREMIUM_TIER_2 : a.tuJ.DEFAULT]) || void 0 === n ? void 0 : null === (r = n.countryPrices) || void 0 === r ? void 0 : null === (t = r.prices) || void 0 === t ? void 0 : t.slice(0, 2)) && void 0 !== l ? l : [], p = d.find(e => e.currency === a.pKx.DISCORD_ORB), f = 1 === d.length && null != p;
+    } = e, d = null !== (l = null === (n = i.prices[a ? s.tuJ.PREMIUM_TIER_2 : s.tuJ.DEFAULT]) || void 0 === n ? void 0 : null === (r = n.countryPrices) || void 0 === r ? void 0 : null === (t = r.prices) || void 0 === t ? void 0 : t.slice(0, 2)) && void 0 !== l ? l : [], p = d.find(e => e.currency === s.pKx.DISCORD_ORB), f = 1 === d.length && null != p;
     return c === o.AW.ORBS ? null != p ? {
       displayPrices: [p],
       checkoutEligiblePrices: [p],
@@ -43,11 +43,11 @@ let s = e => {
     let {
       tab: t,
       product: r
-    } = e, o = (0, n.z)(), a = l.default.getCurrentUser(), {
+    } = e, o = (0, n.z)(), s = l.default.getCurrentUser(), {
       shouldCheckoutWithOrbs: c
-    } = s({
+    } = a({
       product: r,
-      isPremiumUser: i.ZP.canUseCollectibles(a),
+      isPremiumUser: i.ZP.canUseCollectibles(s),
       orbBalance: o,
       tab: t
     });
@@ -60,7 +60,7 @@ function u(e) {
     isPremiumUser: r,
     tab: l
   } = e;
-  return s({
+  return a({
     product: t,
     isPremiumUser: r,
     tab: l,

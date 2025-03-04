@@ -8,8 +8,8 @@ r(192379);
 var l = r(120356),
   i = r.n(l),
   o = r(278074),
-  a = r(780384),
-  s = r(481060),
+  s = r(780384),
+  a = r(481060),
   c = r(410030),
   u = r(884697),
   d = r(388032),
@@ -24,10 +24,10 @@ let f = e => {
   let b = (0, u.OT)(t.unpublishedAt);
 
   function h(e) {
-    return (0, n.jsx)(s.IGR, {
+    return (0, n.jsx)(a.IGR, {
       disableColor: !0,
       text: e,
-      className: i()((0, a.wj)(f) ? p.badgeDark : p.badgeLight, l)
+      className: i()((0, s.wj)(f) ? p.badgeDark : p.badgeLight, l)
     })
   }
   return (0, o.EQ)([r, b > 1]).with(["card", !0], () => null).with(["banner", !0], () => h(d.NW.formatToPlainString(d.t["8gsP5O"], {

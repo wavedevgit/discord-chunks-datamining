@@ -8,18 +8,18 @@ r(192379);
 var l = r(120356),
   i = r.n(l),
   o = r(481060),
-  a = r(388032),
-  s = r(295102);
+  s = r(388032),
+  a = r(295102);
 let c = e => {
   let {
     className: t,
     isPartiallyPurchased: r
   } = e;
   return r ? (0, n.jsx)(o.ua7, {
-    tooltipClassName: s.partiallyOwnedDisclaimer,
+    tooltipClassName: a.partiallyOwnedDisclaimer,
     position: "top",
     align: "left",
-    text: a.NW.string(a.t["2MCxfX"]),
+    text: s.NW.string(s.t["2MCxfX"]),
     children: e => {
       var r, l;
       return (0, n.jsxs)("div", (r = function(e) {
@@ -40,18 +40,18 @@ let c = e => {
         }
         return e
       }({
-        className: i()(s.partialOwnStateContainer, t)
+        className: i()(a.partialOwnStateContainer, t)
       }, e), l = l = {
         children: [(0, n.jsx)("span", {
-          className: s.iconWrapper,
+          className: a.iconWrapper,
           children: (0, n.jsx)(o.d3s, {
             size: "md",
             color: "currentColor",
-            className: s.infoIcon
+            className: a.infoIcon
           })
         }), (0, n.jsx)(o.Text, {
           variant: "text-md/semibold",
-          children: a.NW.string(a.t["5b+JhY"])
+          children: s.NW.string(s.t["5b+JhY"])
         })]
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var r = Object.keys(e);
@@ -67,6 +67,6 @@ let c = e => {
   }) : (0, n.jsx)(o.Text, {
     variant: "text-md/semibold",
     className: t,
-    children: a.NW.string(a.t["/bUsx8"])
+    children: s.NW.string(s.t["/bUsx8"])
   })
 }

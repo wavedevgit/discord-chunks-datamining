@@ -7,8 +7,8 @@ var n = r(200651),
   l = r(192379),
   i = r(481060),
   o = r(906732),
-  a = r(963249),
-  s = r(474936),
+  s = r(963249),
+  a = r(474936),
   c = r(504589);
 let u = e => {
   let {
@@ -20,8 +20,8 @@ let u = e => {
     className: c.subscribeNow,
     innerRef: u,
     onClick: () => {
-      (0, a.Z)({
-        subscriptionTier: s.Si.TIER_2,
+      (0, s.Z)({
+        subscriptionTier: a.Si.TIER_2,
         analyticsLocations: r,
         returnRef: u
       })

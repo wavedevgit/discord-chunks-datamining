@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  T: () => s,
+  T: () => a,
   v: () => c
 });
 var n = r(200651);
@@ -27,11 +27,11 @@ function o(e) {
   }
   return e
 }
-let a = "collectibles shop product details modal",
-  s = e => {
+let s = "collectibles shop product details modal",
+  a = e => {
     let {
       product: t,
-      category: s,
+      category: a,
       shouldCheckoutWithOrbs: u,
       analyticsSource: d,
       analyticsLocations: p,
@@ -46,7 +46,7 @@ let a = "collectibles shop product details modal",
         var l, i;
         return (0, n.jsx)(e, (l = o({}, r), i = i = {
           product: t,
-          category: s,
+          category: a,
           shouldCheckoutWithOrbs: u,
           analyticsSource: d,
           analyticsLocations: p,
@@ -64,7 +64,7 @@ let a = "collectibles shop product details modal",
         }), l))
       }
     }, o({
-      modalKey: a
+      modalKey: s
     }, u ? {
       onCloseRequest() {
         c(), (0, i.vp)()
@@ -72,5 +72,5 @@ let a = "collectibles shop product details modal",
     } : {}))
   },
   c = () => {
-    (0, l.Mr3)(a)
+    (0, l.Mr3)(s)
   }

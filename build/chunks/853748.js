@@ -7,8 +7,8 @@ var n = r(200651),
   l = r(192379),
   i = r(120356),
   o = r.n(i),
-  a = r(642128),
-  s = r(873546),
+  s = r(642128),
+  a = r(873546),
   c = r(481060),
   u = r(774078),
   d = r(388032),
@@ -24,7 +24,7 @@ function h(e) {
     hours: l,
     minutes: i,
     seconds: o
-  } = (0, u.Z)(t), a = function(e, t, r, n) {
+  } = (0, u.Z)(t), s = function(e, t, r, n) {
     let l = (e, t) => "".concat(e.toString().padStart(2, "0")).concat(t),
       i = [];
     return e > 0 && i.push(l(e, d.NW.string(d.t.QJyuxc))), (t > 0 || i.length > 0) && i.push(l(t, d.NW.string(d.t["1LyF1t"]))), (r > 0 || i.length > 0) && i.push(l(r, d.NW.string(d.t.n7dksL))), i.push(l(n, d.NW.string(d.t["6m/6nJ"]))), i.join(":")
@@ -36,7 +36,7 @@ function h(e) {
     children: (0, n.jsx)("div", {
       role: "timer",
       "aria-relevant": "all",
-      children: a
+      children: s
     })
   })
 }
@@ -54,8 +54,8 @@ let m = l.memo(function(e) {
       friction: 12
     }
   });
-  return (0, n.jsxs)(a.animated.div, {
-    className: o()([p.countDownWrapper, i && p.fullScreenWrapper, s.tq && p.mobileWrapper]),
+  return (0, n.jsxs)(s.animated.div, {
+    className: o()([p.countDownWrapper, i && p.fullScreenWrapper, a.tq && p.mobileWrapper]),
     role: "status",
     style: function(e) {
       for (var t = 1; t < arguments.length; t++) {

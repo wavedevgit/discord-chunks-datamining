@@ -8,8 +8,8 @@ r(192379);
 var l = r(120356),
   i = r.n(l),
   o = r(481060),
-  a = r(932563),
-  s = r(960919),
+  s = r(932563),
+  a = r(960919),
   c = r(388032),
   u = r(116264);
 
@@ -17,7 +17,7 @@ function d(e) {
   let {
     orbAmount: t,
     showInsufficientOrbBalanceTooltip: r
-  } = e, l = (0, a.c)(), d = null != l && l >= t;
+  } = e, l = (0, s.c)(), d = null != l && l >= t;
   return (0, n.jsx)(o.ua7, {
     position: "top",
     text: c.NW.string(c.t.zqh7ZG),
@@ -47,7 +47,7 @@ function d(e) {
           [u.insufficientBalance]: !d
         })
       }, e), l = l = {
-        children: [(0, n.jsx)(s.Z, {}), t]
+        children: [(0, n.jsx)(a.Z, {}), t]
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

@@ -7,8 +7,8 @@ var n = r(200651),
   l = r(192379),
   i = r(481060),
   o = r(727637),
-  a = r(906732),
-  s = r(333867),
+  s = r(906732),
+  a = r(333867),
   c = r(677232),
   u = r(884697),
   d = r(228624),
@@ -74,7 +74,7 @@ let C = {
       disableCustomColor: _ = !1
     } = e, {
       analyticsLocations: y
-    } = (0, a.ZP)(), O = l.useRef(null), k = (0, o.Z)(O), P = _ ? b.BR.DARK : b.BR.LIGHT, S = (0, d.hv)("CollectiblesShopGiftButton");
+    } = (0, s.ZP)(), O = l.useRef(null), k = (0, o.Z)(O), P = _ ? b.BR.DARK : b.BR.LIGHT, S = (0, d.hv)("CollectiblesShopGiftButton");
     return (0, u.x6)(t) ? null : (0, n.jsx)(i.ua7, {
       text: h.NW.string(h.t["JCFN//"]),
       delay: x,
@@ -106,7 +106,7 @@ let C = {
           innerClassName: m.giftButtonInner,
           "aria-label": h.NW.string(h.t.PEjaCw),
           onClick: e => {
-            e.stopPropagation(), (0, s.Z)({
+            e.stopPropagation(), (0, a.Z)({
               skuId: (0, p.S)({
                 product: t,
                 selectedVariantIndex: r

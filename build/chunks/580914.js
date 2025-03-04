@@ -7,8 +7,8 @@ var n = r(200651),
   l = r(192379),
   i = r(120356),
   o = r.n(i),
-  a = r(685816),
-  s = r(442837),
+  s = r(685816),
+  a = r(442837),
   c = r(481060),
   u = r(782568),
   d = r(607070),
@@ -36,7 +36,7 @@ let S = {
     bannerAsset: void 0,
     fallbackBannerUrl: "",
     summary: "",
-    type: a.z.HERO,
+    type: s.z.HERO,
     categoryStoreListingId: ""
   },
   E = e => {
@@ -55,7 +55,7 @@ let S = {
         format: "jpg"
       }),
       summary: e.summary,
-      type: a.z.HERO,
+      type: s.z.HERO,
       categoryStoreListingId: e.storeListingId
     }
   },
@@ -64,9 +64,9 @@ let S = {
       isLoading: t,
       handleTransition: r,
       category: i,
-      heroBlock: a,
+      heroBlock: s,
       tab: C
-    } = e, v = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), w = (0, s.e7)([b.Z], () => b.Z.isFocused()), L = (0, s.e7)([f.default], () => f.default.getCurrentUser()), I = (0, y.u)(), N = l.useMemo(() => null != a ? a : E(i), [a, i]), {
+    } = e, v = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), w = (0, a.e7)([b.Z], () => b.Z.isFocused()), L = (0, a.e7)([f.default], () => f.default.getCurrentUser()), I = (0, y.u)(), N = l.useMemo(() => null != s ? s : E(i), [s, i]), {
       bannerOverride: T,
       heroLogo: B,
       heroBannerStatic: Z,

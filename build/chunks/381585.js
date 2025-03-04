@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 r.d(t, {
-  k0: () => a,
+  k0: () => s,
   sp: () => o
 });
 var n = r(200651),
@@ -12,11 +12,11 @@ function o() {
   return l.useContext(i)
 }
 
-function a(e) {
+function s(e) {
   let {
     newValue: t,
     children: r
-  } = e, a = o(), s = l.useMemo(() => (function(e) {
+  } = e, s = o(), a = l.useMemo(() => (function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -33,9 +33,9 @@ function a(e) {
       })
     }
     return e
-  })({}, a, t), [a, t]);
+  })({}, s, t), [s, t]);
   return (0, n.jsx)(i.Provider, {
-    value: s,
+    value: a,
     children: r
   })
 }

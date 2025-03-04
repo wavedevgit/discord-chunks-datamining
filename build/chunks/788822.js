@@ -8,8 +8,8 @@ r(192379);
 var l = r(622535),
   i = r(481060),
   o = r(597688),
-  a = r(297651),
-  s = r(794324),
+  s = r(297651),
+  a = r(794324),
   c = r(388032),
   u = r(39532);
 let d = e => {
@@ -24,10 +24,10 @@ let d = e => {
   let C = null !== (r = null != p ? p : null == f ? void 0 : f.skuId) && void 0 !== r ? r : "",
     {
       handleCardVisibilityChange: g
-    } = (0, a.E)(C, "home", "marketing featured block"),
+    } = (0, s.E)(C, "home", "marketing featured block"),
     {
       featuredBlockBanner: v
-    } = (0, s.YG)(f, b);
+    } = (0, a.YG)(f, b);
   return (0, n.jsx)(l.$, {
     onChange: g,
     threshold: 0,

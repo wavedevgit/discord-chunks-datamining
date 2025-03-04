@@ -7,8 +7,8 @@ var n = r(200651),
   l = r(192379),
   i = r(120356),
   o = r.n(i),
-  a = r(442837),
-  s = r(481060),
+  s = r(442837),
+  a = r(481060),
   c = r(594174),
   u = r(381585),
   d = r(597688),
@@ -26,18 +26,18 @@ let v = e => {
     handleTransition: i,
     numVisibleItems: v,
     tab: x
-  } = e, j = (0, a.e7)([c.default], () => c.default.getCurrentUser()), _ = l.createRef(), y = (0, h.u)(), O = l.useMemo(() => y(r), [t, y, r]), k = (0, p.l)(O);
+  } = e, j = (0, s.e7)([c.default], () => c.default.getCurrentUser()), _ = l.createRef(), y = (0, h.u)(), O = l.useMemo(() => y(r), [t, y, r]), k = (0, p.l)(O);
   return null == j ? null : (0, n.jsxs)("div", {
     className: o()(g.row, g.between, g.section, g.popularPicksSection),
     children: [(0, n.jsxs)("div", {
       className: g.popularPicksHeader,
-      children: [(0, n.jsx)(s.X6q, {
+      children: [(0, n.jsx)(a.X6q, {
         variant: "heading-lg/semibold",
         children: C.NW.string(C.t.ivaAAw)
-      }), x === m.AW.HOME && (0, n.jsxs)(s.P3F, {
+      }), x === m.AW.HOME && (0, n.jsxs)(a.P3F, {
         className: g.shopAll,
         onClick: () => i("shop all top"),
-        children: [(0, n.jsx)(s.dRF, {}), (0, n.jsx)(s.Text, {
+        children: [(0, n.jsx)(a.dRF, {}), (0, n.jsx)(a.Text, {
           variant: "text-sm/medium",
           children: C.NW.string(C.t.xFcotb)
         })]

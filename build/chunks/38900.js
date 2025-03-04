@@ -9,23 +9,23 @@ r(192379);
 var l = r(120356),
   i = r.n(l),
   o = r(577852),
-  a = r(134442),
-  s = r(219574),
+  s = r(134442),
+  a = r(219574),
   c = r(661252);
 let u = () => 4 * Math.random() + 8,
   d = [u(), u(), u()],
   p = () => (0, n.jsx)("div", {
-    className: i()(s.skeleton, c.shopCard),
+    className: i()(a.skeleton, c.shopCard),
     children: (0, n.jsxs)("div", {
-      className: s.cardBody,
+      className: a.cardBody,
       children: [(0, n.jsx)("div", {
-        className: s.cardAvatar
+        className: a.cardAvatar
       }), (0, n.jsx)("div", {
-        className: s.cardTitle
+        className: a.cardTitle
       }), (0, n.jsx)("div", {
-        className: s.cardDescription
+        className: a.cardDescription
       }), (0, n.jsx)("div", {
-        className: s.cardSummary
+        className: a.cardSummary
       })]
     })
   }),
@@ -34,9 +34,9 @@ let u = () => 4 * Math.random() + 8,
     children: d.map(e => (0, n.jsxs)("div", {
       className: o.cardsContainer,
       children: [(0, n.jsx)("div", {
-        className: i()(s.skeleton, a.shopBanner),
+        className: i()(a.skeleton, s.shopBanner),
         children: (0, n.jsx)("div", {
-          className: s.bannerBody
+          className: a.bannerBody
         })
       }), Array.from({
         length: e

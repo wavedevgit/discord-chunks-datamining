@@ -7,8 +7,8 @@ var n = r(200651),
   l = r(192379),
   i = r(120356),
   o = r.n(i),
-  a = r(442837),
-  s = r(481060),
+  s = r(442837),
+  a = r(481060),
   c = r(425493),
   u = r(410030),
   d = r(984370),
@@ -46,7 +46,7 @@ function _(e) {
     onClose: i,
     selectedTab: _,
     handleTransition: y
-  } = e, O = (0, u.ZP)(), k = (0, a.e7)([h.default], () => h.default.getCurrentUser()), P = (null == k ? void 0 : k.isStaff()) || (null == k ? void 0 : k.isStaffPersonal()) || !1, {
+  } = e, O = (0, u.ZP)(), k = (0, s.e7)([h.default], () => h.default.getCurrentUser()), P = (null == k ? void 0 : k.isStaff()) || (null == k ? void 0 : k.isStaffPersonal()) || !1, {
     enabled: S
   } = (0, f.W)({
     location: "collectibles_shop_header_bar"
@@ -60,7 +60,7 @@ function _(e) {
   return S && E.push({
     tab: g.AW.ORBS,
     displayText: v.NW.string(v.t.q6uIys)
-  }), (0, n.jsx)(s.f6W, {
+  }), (0, n.jsx)(a.f6W, {
     theme: O,
     children: e => (0, n.jsxs)(d.Z, {
       className: o()(e, x.headerBar, {

@@ -7,8 +7,8 @@ var n = r(200651),
   l = r(192379),
   i = r(120356),
   o = r.n(i),
-  a = r(979554),
-  s = r(876917),
+  s = r(979554),
+  a = r(876917),
   c = r(597688),
   u = r(616066),
   d = r(215023),
@@ -119,7 +119,7 @@ let f = {
           rotation: b,
           size: h,
           skuId: m
-        } = e, g = null === (l = C[t]) || void 0 === l ? void 0 : l.items[0], v = null === (i = C[t]) || void 0 === i ? void 0 : i.type, x = v === a.Z.AVATAR_DECORATION ? 384 : 512;
+        } = e, g = null === (l = C[t]) || void 0 === l ? void 0 : l.items[0], v = null === (i = C[t]) || void 0 === i ? void 0 : i.type, x = v === s.Z.AVATAR_DECORATION ? 384 : 512;
         return (0, n.jsxs)("div", {
           className: p.asset,
           style: {
@@ -131,9 +131,9 @@ let f = {
             transitionDelay: "".concat(Math.random() / 3, "s"),
             transitionDuration: "".concat(d.lb - 200 * Math.random(), "ms")
           },
-          children: [null != g && v === a.Z.AVATAR_DECORATION && (0, n.jsx)(u.R, {
+          children: [null != g && v === s.Z.AVATAR_DECORATION && (0, n.jsx)(u.R, {
             item: g
-          }), null != g && v === a.Z.PROFILE_EFFECT && (0, n.jsx)(s.Z, {
+          }), null != g && v === s.Z.PROFILE_EFFECT && (0, n.jsx)(a.Z, {
             profileEffectId: g.id,
             isPurchased: !1,
             isHovering: !0

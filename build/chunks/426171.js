@@ -9,8 +9,8 @@ var n = r(192379),
   l = r(512969),
   i = r(442837),
   o = r(493773),
-  a = r(607070),
-  s = r(100527),
+  s = r(607070),
+  a = r(100527),
   c = r(906732),
   u = r(597688),
   d = r(328347),
@@ -25,7 +25,7 @@ let C = "".concat("#").concat("itemSkuId", "="),
   x = e => {
     let t = (0, l.TH)();
     n.useEffect(() => {
-      if (null != e && v.includes(t.pathname)) return window.location.replace("".concat(C).concat(e)), () => {
+      if (null != e && v.includes(t.pathname)) return () => {
         window.location.hash.startsWith(C) && window.location.replace("#")
       }
     }, [e, t.pathname])
@@ -38,23 +38,23 @@ let C = "".concat("#").concat("itemSkuId", "="),
       initialItemCardRef: l,
       reducedMotion: i = !1,
       tab: o
-    } = e, a = u.Z.getProduct(t), s = u.Z.getCategoryForProduct(t);
-    if (null != a && null != s) {
+    } = e, s = u.Z.getProduct(t), a = u.Z.getCategoryForProduct(t);
+    if (null != s && null != a) {
       var c;
       null === (c = l.current) || void 0 === c || c.scrollIntoView({
         behavior: i ? "instant" : "smooth",
         block: "center",
         inline: "center"
       });
-      let e = a,
+      let e = s,
         d = (0, h.oQ)({
-          product: a,
+          product: s,
           tab: o
         }),
         f = setTimeout(() => {
           let i = document.getElementById("shop-item-".concat(e.skuId));
-          if (i !== document.activeElement && (null == i || i.focus()), null != a.variantGroupStoreListingId) {
-            let r = u.Z.getProductByStoreListingId(a.variantGroupStoreListingId);
+          if (i !== document.activeElement && (null == i || i.focus()), null != s.variantGroupStoreListingId) {
+            let r = u.Z.getProductByStoreListingId(s.variantGroupStoreListingId);
             if (null != r) {
               var c;
               e = r;
@@ -63,7 +63,7 @@ let C = "".concat("#").concat("itemSkuId", "="),
             }
           }(0, b.T)({
             product: e,
-            category: s,
+            category: a,
             analyticsSource: n,
             analyticsLocations: r,
             returnRef: l,
@@ -80,7 +80,7 @@ let C = "".concat("#").concat("itemSkuId", "="),
       isFetchingCategories: t,
       isLayer: r,
       initialItemCardRef: u
-    } = e, p = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), b = n.useRef(null), h = (0, l.TH)(), C = h.pathname === m.Z5c.COLLECTIBLES_SHOP ? s.Z.HOME_PAGE_SHOP_TAB : h.pathname === m.Z5c.COLLECTIBLES_SHOP_FULLSCREEN ? s.Z.COLLECTIBLES_SHOP_FULLSCREEN : s.Z.COLLECTIBLES_SHOP, {
+    } = e, p = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), b = n.useRef(null), h = (0, l.TH)(), C = h.pathname === m.Z5c.COLLECTIBLES_SHOP ? a.Z.HOME_PAGE_SHOP_TAB : h.pathname === m.Z5c.COLLECTIBLES_SHOP_FULLSCREEN ? a.Z.COLLECTIBLES_SHOP_FULLSCREEN : a.Z.COLLECTIBLES_SHOP, {
       analyticsLocations: v
     } = (0, c.ZP)(C), x = (0, f.Z)();
     (0, o.ZP)(() => {
@@ -116,14 +116,14 @@ let C = "".concat("#").concat("itemSkuId", "="),
   },
   y = e => {
     let t = n.useRef({}),
-      r = (0, i.e7)([a.Z], () => a.Z.useReducedMotion),
+      r = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
       l = (0, i.e7)([u.Z], () => u.Z.isFetchingCategories),
-      [o, s] = n.useState(null),
+      [o, a] = n.useState(null),
       c = n.useCallback((e, r) => {
         t.current[e] = r
       }, []),
       d = n.useCallback(n => {
-        if (l) s(n);
+        if (l) a(n);
         else {
           let l = t.current[n];
           null != l && (null == e || e.scrollIntoViewNode({
@@ -133,10 +133,10 @@ let C = "".concat("#").concat("itemSkuId", "="),
             shouldScrollToStart: !0
           }))
         }
-      }, [e, r, l, s]);
+      }, [e, r, l, a]);
     return n.useEffect(() => {
-      l || null == o || (d(o), s(null))
-    }, [l, d, o, s]), {
+      l || null == o || (d(o), a(null))
+    }, [l, d, o, a]), {
       setCategoryRef: c,
       handleScrollToCategory: d
     }

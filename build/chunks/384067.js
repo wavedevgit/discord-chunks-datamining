@@ -7,8 +7,8 @@ var n = r(200651),
   l = r(192379),
   i = r(120356),
   o = r.n(i),
-  a = r(622535),
-  s = r(481060),
+  s = r(622535),
+  a = r(481060),
   c = r(597688),
   u = r(297651),
   d = r(215023),
@@ -36,7 +36,7 @@ let b = e => {
       handleCardVisibilityChange: x
     } = (0, u.E)(v, "home", "marketing wide banner"),
     j = r.bannerUrl;
-  return null == j ? null : (0, n.jsx)(a.$, {
+  return null == j ? null : (0, n.jsx)(s.$, {
     onChange: x,
     threshold: 0,
     children: (0, n.jsxs)("div", {
@@ -62,13 +62,13 @@ let b = e => {
         },
         children: (0, n.jsxs)("div", {
           className: f.wideBannerTextContainer,
-          children: [(0, n.jsx)(s.X6q, {
+          children: [(0, n.jsx)(a.X6q, {
             style: {
               color: r.bannerTextColor
             },
             variant: b === d.AW.ORBS ? "heading-xl/bold" : "heading-lg/semibold",
             children: r.title
-          }), (0, n.jsx)(s.Text, {
+          }), (0, n.jsx)(a.Text, {
             style: {
               color: b === d.AW.ORBS ? "rgba(255, 255, 255, 0.65)" : r.bannerTextColor
             },
@@ -77,9 +77,9 @@ let b = e => {
             children: r.body
           })]
         })
-      }), !0 !== r.disableCta && (0, n.jsx)(s.zxk, {
+      }), !0 !== r.disableCta && (0, n.jsx)(a.zxk, {
         className: f.wideBannerBlockButton,
-        color: s.Ttl.WHITE,
+        color: a.Ttl.WHITE,
         onClick: () => i("shop wide banner", v),
         children: p.NW.string(p.t.jVcuVV)
       })]

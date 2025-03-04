@@ -639,9 +639,9 @@ let ey = {
         }), O.items.map(F.oK)
       }, [u, _, null == I ? void 0 : I.type, O.skuId, O.items]), null == b) return null;
     let y = (0, eC.ZS)(o.skuId),
-      S = async function() {
+      S = function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-        await a(), e || (0, L.vp)()
+        a(), e || (0, L.vp)()
       };
     return (0, r.jsx)(P.Gt, {
       value: _,
