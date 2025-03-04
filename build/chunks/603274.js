@@ -1,13 +1,13 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => Z
 }), n(47120), n(13667), n(390547), n(653041);
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  l = n.n(i),
-  o = n(392711),
-  a = n.n(o),
+  o = n.n(i),
+  l = n(392711),
+  a = n.n(l),
   s = n(442837),
   c = n(481060),
   u = n(317381),
@@ -25,9 +25,9 @@ var i = n(120356),
   j = n(981631),
   C = n(388032),
   x = n(42189),
-  P = n(820500);
+  S = n(820500);
 
-function S(e, t) {
+function P(e, t) {
   return 0 === t.length ? null : (0, r.jsxs)("div", {
     className: x.row,
     children: [(0, r.jsx)(e, {
@@ -46,13 +46,13 @@ function I() {
     t = e.map(e => e.id),
     n = e.filter(e => e.type === j.d4z.GUILD_VOICE),
     i = e.filter(e => e.type === j.d4z.GUILD_STAGE_VOICE).map(e => e.id),
-    l = (0, s.Wu)([v.ZP], () => a().flatMap(n, e => v.ZP.getVoiceStatesForChannel(e).map(e => {
+    o = (0, s.Wu)([v.ZP], () => a().flatMap(n, e => v.ZP.getVoiceStatesForChannel(e).map(e => {
       let {
         user: t
       } = e;
       return t
     })), [n]),
-    o = (0, s.Wu)([h.Z], () => a().flatMap(i, e => h.Z.getMutableParticipants(e, f.pV.SPEAKER).filter(e => e.type === f.Ui.VOICE).map(e => {
+    l = (0, s.Wu)([h.Z], () => a().flatMap(i, e => h.Z.getMutableParticipants(e, f.pV.SPEAKER).filter(e => e.type === f.Ui.VOICE).map(e => {
       let {
         user: t
       } = e;
@@ -64,19 +64,19 @@ function I() {
       return e
     }),
     C = (0, s.Wu)([g.Z], () => g.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
-    P = (0, s.Wu)([u.ZP], () => {
+    S = (0, s.Wu)([u.ZP], () => {
       let e = u.ZP.getEmbeddedActivitiesByChannel(),
         n = [];
-      for (let l of t) {
+      for (let o of t) {
         var r, i;
-        n.push(...null !== (i = null === (r = e.get(l)) || void 0 === r ? void 0 : r.flatMap(e => Array.from(e.userIds))) && void 0 !== i ? i : [])
+        n.push(...null !== (i = null === (r = e.get(o)) || void 0 === r ? void 0 : r.flatMap(e => Array.from(e.userIds))) && void 0 !== i ? i : [])
       }
       return n
     }, [t]),
-    I = (0, s.Wu)([b.default], () => P.map(e => b.default.getUser(e)), [P]),
+    I = (0, s.Wu)([b.default], () => S.map(e => b.default.getUser(e)), [S]),
     N = (0, s.Wu)([b.default], () => C.map(e => b.default.getUser(e)), [C]),
-    Z = S(c.gj8, l.filter(e => !C.includes(e.id) && !P.includes(e.id))),
-    w = 0 === o.length ? null : (0, r.jsxs)("div", {
+    Z = P(c.gj8, o.filter(e => !C.includes(e.id) && !S.includes(e.id))),
+    w = 0 === l.length ? null : (0, r.jsxs)("div", {
       className: x.row,
       children: [(0, r.jsx)(c.ewx, {
         size: "lg",
@@ -84,7 +84,7 @@ function I() {
         className: x.activityIcon
       }), (0, r.jsx)(d.Z, {
         guildId: void 0,
-        users: o,
+        users: l,
         max: 3
       }), (0, r.jsxs)("div", {
         className: x.stageListenerPill,
@@ -99,8 +99,8 @@ function I() {
         })]
       })]
     }),
-    E = S(c.hGI, N.filter(e => null != e && !P.includes(e.id))),
-    T = S(c.nG3, I);
+    E = P(c.hGI, N.filter(e => null != e && !S.includes(e.id))),
+    T = P(c.nG3, I);
   return (0, r.jsxs)(r.Fragment, {
     children: [w, Z, E, T]
   })
@@ -109,9 +109,9 @@ function I() {
 function N() {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: l()(x.row, x.rowGuildName),
+      className: o()(x.row, x.rowGuildName),
       children: (0, r.jsx)("span", {
-        className: l()(x.guildNameText, x.guildNameTextLimitedSize),
+        className: o()(x.guildNameText, x.guildNameTextLimitedSize),
         children: C.NW.string(C.t.wMWycn)
       })
     }), (0, r.jsx)(I, {})]
@@ -123,14 +123,14 @@ function Z(e) {
     "aria-label": t = !1,
     onShow: n,
     children: i
-  } = e, l = (0, p.Q3)("FavoritesTooltip");
+  } = e, o = (0, p.Q3)("FavoritesTooltip");
   return (0, r.jsx)(c.ua7, {
     hideOnClick: !0,
-    spacing: l ? 12 : 20,
+    spacing: o ? 12 : 20,
     position: "right",
     text: (0, r.jsx)(N, {}),
     "aria-label": t,
-    tooltipClassName: P.listItemTooltip,
+    tooltipClassName: S.listItemTooltip,
     onTooltipShow: n,
     children: e => {
       var t, n;

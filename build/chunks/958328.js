@@ -15,8 +15,8 @@ var a = n(120356),
   m = n(496675),
   h = n(944486),
   x = n(914010),
-  f = n(233608),
-  p = n(71080),
+  p = n(233608),
+  f = n(71080),
   b = n(747996),
   _ = n(710662);
 
@@ -50,9 +50,9 @@ function v() {
     v = (0, o.e7)([m.Z], () => m.Z.computePermissions(n)),
     j = (0, o.e7)([m.Z], () => m.Z.computePermissions(a)),
     y = (0, c.ZP)(n, !0),
-    C = null != n ? (0, p.IG)(n, !1, !0) : null,
-    N = null != a ? f.Z.getGuildPermissionSpecMap(a) : null,
-    O = Object.values(null != C ? C : {}).map(e => {
+    C = null != n ? (0, f.IG)(n, !1, !0) : null,
+    O = null != a ? p.Z.getGuildPermissionSpecMap(a) : null,
+    N = Object.values(null != C ? C : {}).map(e => {
       let {
         title: t,
         flag: n
@@ -62,7 +62,7 @@ function v() {
         can: a
       }, t)
     }),
-    T = Object.values(null != N ? N : {}).map(e => {
+    T = Object.values(null != O ? O : {}).map(e => {
       let {
         title: t,
         flag: n
@@ -81,7 +81,7 @@ function v() {
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-md/semibold",
           children: null != y ? "Permissions in ".concat(y) : "No channel selected"
-        }), O]
+        }), N]
       }), (0, r.jsxs)("section", {
         className: b.section,
         children: [(0, r.jsx)(s.X6q, {

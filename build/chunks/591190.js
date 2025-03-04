@@ -1,28 +1,28 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => u
 });
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  l = n.n(i),
-  o = n(979790);
+  o = n.n(i),
+  l = n(979790);
 let a = () => (0, r.jsx)("div", {
-    className: o.spacer
+    className: l.spacer
   }),
   s = () => (0, r.jsx)("div", {
-    className: o.category
+    className: l.category
   }),
   c = e => {
     let {
       width: t
     } = e;
     return (0, r.jsxs)("div", {
-      className: o.channel,
+      className: l.channel,
       children: [(0, r.jsx)("div", {
-        className: o.channelIcon
+        className: l.channelIcon
       }), (0, r.jsx)("div", {
-        className: o.channelName,
+        className: l.channelName,
         style: {
           width: "".concat(t, "px")
         }
@@ -34,8 +34,8 @@ let a = () => (0, r.jsx)("div", {
       withBannerPadding: t
     } = e;
     return (0, r.jsxs)("div", {
-      className: l()(o.container, {
-        [o.bannerPadding]: t
+      className: o()(l.container, {
+        [l.bannerPadding]: t
       }),
       children: [(0, r.jsx)(s, {}), (0, r.jsx)(c, {
         width: 100

@@ -1,24 +1,24 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => d
 }), n(733860);
 var r = n(200651),
   i = n(192379),
-  l = n(442837),
-  o = n(215569),
+  o = n(442837),
+  l = n(215569),
   a = n(592125),
   s = n(358652),
   c = n(19780),
   u = n(919436);
 
 function d() {
-  (0, l.e7)([a.Z], () => a.Z.getPrivateChannelsVersion());
+  (0, o.e7)([a.Z], () => a.Z.getPrivateChannelsVersion());
   let e = a.Z.getMutablePrivateChannels(),
-    t = (0, l.Wu)([s.Z], () => s.Z.getUnreadPrivateChannelIds()),
+    t = (0, o.Wu)([s.Z], () => s.Z.getUnreadPrivateChannelIds()),
     {
       selectedVoiceGuildId: n,
       selectedVoiceChannelId: d
-    } = (0, l.cj)([c.Z], () => ({
+    } = (0, o.cj)([c.Z], () => ({
       selectedVoiceGuildId: c.Z.getGuildId(),
       selectedVoiceChannelId: c.Z.getChannelId()
     })),
@@ -31,7 +31,7 @@ function d() {
     h = null == n && null != d ? e[d] : null;
   return null != h && p.unshift((0, r.jsx)(u.Z, {
     channel: h
-  }, h.id)), (0, r.jsx)(o.W, {
+  }, h.id)), (0, r.jsx)(l.W, {
     component: i.Fragment,
     children: p
   })

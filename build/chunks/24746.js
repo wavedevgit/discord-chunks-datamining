@@ -1,6 +1,6 @@
 /** Chunk was on 37697 **/
 n.d(t, {
-  Z: () => v
+  Z: () => b
 }), n(266796), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -9,14 +9,14 @@ var r = n(200651),
   o = n(477660),
   s = n.n(o),
   c = n(481060),
-  d = n(939893),
-  u = n(241209),
+  d = n(241209),
+  u = n(547563),
   p = n(388032),
   m = n(242847);
-let h = s().parserFor(d.Z),
-  g = s().reactFor(s().ruleOutput(d.Z, "react"));
+let h = s().parserFor(u.Z),
+  g = s().reactFor(s().ruleOutput(u.Z, "react"));
 
-function f(e) {
+function _(e) {
   let {
     description: t,
     supportsMarkdown: n
@@ -29,17 +29,17 @@ function f(e) {
     });
     return e.observe(s.current), () => e.disconnect()
   }, []);
-  let [d, p] = i.useState(!1), f = i.useCallback(() => {
+  let [u, p] = i.useState(!1), _ = i.useCallback(() => {
     p(e => !e)
   }, []);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       ref: s,
       className: l()({
-        [m.descriptionClamp]: !d,
-        [m.descriptionClampSafari]: !d && "Safari" === platform.name
+        [m.descriptionClamp]: !u,
+        [m.descriptionClampSafari]: !u && "Safari" === platform.name
       }),
-      children: n ? (0, r.jsx)(u.Z, {
+      children: n ? (0, r.jsx)(d.Z, {
         className: m.detailedDescription,
         parser: h,
         output: g,
@@ -52,14 +52,14 @@ function f(e) {
         color: "text-normal",
         children: t
       })
-    }), a || d ? (0, r.jsx)(_, {
-      isShowingMore: d,
-      onToggle: f
+    }), a || u ? (0, r.jsx)(f, {
+      isShowingMore: u,
+      onToggle: _
     }) : null]
   })
 }
 
-function _(e) {
+function f(e) {
   let {
     onToggle: t,
     isShowingMore: n
@@ -89,14 +89,14 @@ function _(e) {
     })]
   })
 }
-let v = function(e) {
+let b = function(e) {
   var t, n;
   let {
     application: a
-  } = e, l = null === (t = a.directory_entry) || void 0 === t ? void 0 : t.detailed_description, o = null === (n = a.directory_entry) || void 0 === n ? void 0 : n.short_description, s = i.useMemo(() => null != l && l.length > 0 ? (0, r.jsx)(f, {
+  } = e, l = null === (t = a.directory_entry) || void 0 === t ? void 0 : t.detailed_description, o = null === (n = a.directory_entry) || void 0 === n ? void 0 : n.short_description, s = i.useMemo(() => null != l && l.length > 0 ? (0, r.jsx)(_, {
     description: l,
     supportsMarkdown: !0
-  }) : null != o && o.length > 0 ? (0, r.jsx)(f, {
+  }) : null != o && o.length > 0 ? (0, r.jsx)(_, {
     description: o,
     supportsMarkdown: !1
   }) : null, [l, o]);

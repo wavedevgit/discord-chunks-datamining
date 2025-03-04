@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => R
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  o = n(120356),
+  l = n.n(o),
   a = n(91192),
   s = n(442837),
   c = n(481060),
@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(944486),
   C = n(979651),
   x = n(709054),
-  P = n(853856),
-  S = n(593214),
+  S = n(853856),
+  P = n(593214),
   I = n(919755),
   N = n(110977),
   Z = n(603274),
@@ -61,18 +61,18 @@ let D = {
 
 function R() {
   var e, t;
-  let l = (0, a.Ie)("favorites"),
+  let o = (0, a.Ie)("favorites"),
     {
       favoriteAdded: R,
       clearFavoriteAdded: L
-    } = (0, S.up)(),
+    } = (0, P.up)(),
     [k, M] = i.useState(!1),
     {
       favoriteServerMuted: G,
       favoriteChannels: B
-    } = (0, s.cj)([P.Z], () => ({
-      favoriteChannels: P.Z.getFavoriteChannels(),
-      favoriteServerMuted: P.Z.favoriteServerMuted
+    } = (0, s.cj)([S.Z], () => ({
+      favoriteChannels: S.Z.getFavoriteChannels(),
+      favoriteServerMuted: S.Z.favoriteServerMuted
     })),
     U = (0, s.e7)([j.Z], () => j.Z.getChannelId(w.I_8)),
     W = (0, s.e7)([O.Z], () => O.Z.getChannel(U)),
@@ -90,20 +90,20 @@ function R() {
           return null != t && null != e[t.channelId]
         }),
         i = (0, s.e7)([_.Z], () => _.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
-        l = (0, s.e7)([C.Z], () => n && null != t && C.Z.hasVideo(t), [n, t]),
-        o = (0, s.Wu)([p.ZP], () => x.default.keys(e).reduce((e, t) => (e.push(...p.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
+        o = (0, s.e7)([C.Z], () => n && null != t && C.Z.hasVideo(t), [n, t]),
+        l = (0, s.Wu)([p.ZP], () => x.default.keys(e).reduce((e, t) => (e.push(...p.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
         a = (0, s.e7)([p.ZP], () => Array.from(p.ZP.getSelfEmbeddedActivities().values()).some(t => {
           let {
             location: n
           } = t, r = (0, h.pY)(n);
           return null != r && null != e[r]
         })),
-        c = o.length > 0,
+        c = l.length > 0,
         u = !1,
         d = !1,
         f = !1,
         g = !1;
-      return n ? (u = !l, d = l, f = r, g = a) : (f = i, g = c), (0, b.Or)({
+      return n ? (u = !o, d = o, f = r, g = a) : (f = i, g = c), (0, b.Or)({
         audio: u,
         video: d,
         screenshare: f,
@@ -130,7 +130,7 @@ function R() {
           selected: q || V || k,
           upperBadge: z,
           lowerBadge: Y,
-          children: (0, r.jsx)(c.LYs, (e = A({}, l), t = t = {
+          children: (0, r.jsx)(c.LYs, (e = A({}, o), t = t = {
             ariaLabel: E.NW.formatToPlainString(E.t["/uzRsr"], {
               guildName: E.NW.string(E.t.wMWycn),
               mentions: F
@@ -154,7 +154,7 @@ function R() {
               })
             },
             children: (0, r.jsx)("div", {
-              className: o()(T.ring, {
+              className: l()(T.ring, {
                 [T.ringActive]: R
               }),
               children: (0, r.jsx)(c.r7p, {

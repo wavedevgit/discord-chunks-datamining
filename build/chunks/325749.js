@@ -18,16 +18,16 @@ var r = n(200651),
   m = n(695346),
   v = n(390322),
   h = n(961048),
-  C = n(871499),
-  g = n(268353),
+  g = n(871499),
+  C = n(268353),
   x = n(786915),
   y = n(107169),
   I = n(592125),
   O = n(271383),
   j = n(594174),
   P = n(358085),
-  k = n(51144),
-  w = n(998502),
+  w = n(51144),
+  k = n(998502),
   N = n(228488),
   S = n(145597),
   Z = n(214629),
@@ -56,7 +56,7 @@ function L(e) {
     var n;
     if (null == e) return null;
     let o = Y.get(e.id),
-      a = null !== (n = null == o ? void 0 : o.nick) && void 0 !== n ? n : k.ZP.getName(e);
+      a = null !== (n = null == o ? void 0 : o.nick) && void 0 !== n ? n : w.ZP.getName(e);
     return (0, r.jsx)(c.DY3, {
       text: a,
       position: "bottom",
@@ -83,7 +83,7 @@ function L(e) {
         f.hY(W.KJ3.ACTIVITY_POPOUT, e)
       }, []);
     return {
-      canStayOnTop: P.isPlatformEmbedded && w.ZP.supportsFeature(W.eRX.POPOUT_WINDOWS),
+      canStayOnTop: P.isPlatformEmbedded && k.ZP.supportsFeature(W.eRX.POPOUT_WINDOWS),
       popoutWindowAlwaysOnTop: e,
       handleStayOnTop: t
     }
@@ -156,14 +156,14 @@ function L(e) {
             channel: R,
             shouldPrioritizeGroupPlusIcon: !0,
             embeddedActivity: L
-          }), X ? (0, r.jsx)(C.Z, {
+          }), X ? (0, r.jsx)(g.Z, {
             onClick: J,
             iconComponent: c.epB,
             label: z.NW.string(z.t.mseZsL)
           }) : null, q ? (0, r.jsx)(y.Z, {
             popoutWindowAlwaysOnTop: $,
             onToggleStayOnTop: Q
-          }) : null, (0, r.jsx)(g.Z, {
+          }) : null, (0, r.jsx)(C.Z, {
             node: ee,
             guestWindow: et,
             onClick: en

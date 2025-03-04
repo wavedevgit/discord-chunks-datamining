@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(731290),
   y = n(944486),
   x = n(455199),
-  O = n(655354),
-  E = n(999671),
+  E = n(655354),
+  O = n(999671),
   j = n(324081),
   N = n(240126),
   C = n(791914),
@@ -53,7 +53,7 @@ function w(e) {
   } = e, h = (0, l.e7)([b.Z, y.Z], () => b.Z.getChannel(y.Z.getChannelId())), {
     messages: _,
     hasMore: v,
-    loading: O,
+    loading: E,
     guildFilter: j,
     roleFilter: N,
     everyoneFilter: P
@@ -66,13 +66,13 @@ function w(e) {
     everyoneFilter: x.Z.everyoneFilter
   })), w = (0, g.Us)({
     location: "RecentMentions"
-  }), k = (0, m.Z)(j), L = (0, m.Z)(N), D = (0, m.Z)(P);
+  }), k = (0, m.Z)(j), D = (0, m.Z)(N), L = (0, m.Z)(P);
   i.useEffect(() => {
     if (!x.Z.hasLoadedEver) {
       A(h, !0);
       return
-    }(null != k && j !== k || null != L && N !== L || null != D && P !== D) && A(h, !0)
-  }, [k, j, L, N, D, P, h, !0]), (0, p.ZP)(() => {
+    }(null != k && j !== k || null != D && N !== D || null != L && P !== L) && A(h, !0)
+  }, [k, j, D, N, L, P, h, !0]), (0, p.ZP)(() => {
     (null == _ ? void 0 : _.some(f.k5)) && (d.Z.clearMentions(), A(h, !0))
   }), i.useEffect(() => () => {
     d.Z.truncateMentions(I.DJj)
@@ -82,7 +82,7 @@ function w(e) {
     setTab: t,
     badgeState: a,
     closePopout: c,
-    children: (0, r.jsx)(E.Z, {})
+    children: (0, r.jsx)(O.Z, {})
   }), [!0, t, a, c]);
   return (0, r.jsx)(u.ZP, {
     className: o()(T.recentMentionsPopout, {
@@ -96,7 +96,7 @@ function w(e) {
     },
     channel: h,
     messages: _,
-    loading: O,
+    loading: E,
     hasMore: v,
     analyticsName: "Recent Mentions",
     loadMore: function() {
@@ -147,7 +147,7 @@ function k(e) {
       }) : null
     }), (0, r.jsxs)("div", {
       className: T.messageContainer,
-      children: [(0, r.jsx)(O.Z, {
+      children: [(0, r.jsx)(E.Z, {
         className: T.jumpMessageButton,
         onJump: n
       }), (0, r.jsx)(h.Z, {

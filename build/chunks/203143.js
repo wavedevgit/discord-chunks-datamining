@@ -1,7 +1,7 @@
 /** Chunk was on 76030 **/
 n.d(t, {
   Z: () => H,
-  n: () => D
+  n: () => L
 }), n(411104), n(47120), n(13667), n(390547), n(566702);
 var r = n(512722),
   i = n.n(r),
@@ -22,8 +22,8 @@ var r = n(512722),
   v = n(869765),
   y = n(314897),
   x = n(592125),
-  O = n(703558),
-  E = n(607744),
+  E = n(703558),
+  O = n(607744),
   j = n(375954),
   N = n(117530),
   C = n(553803),
@@ -82,7 +82,7 @@ function R(e, t) {
   }
 }
 
-function L(e) {
+function D(e) {
   let {
     guildId: t,
     title: n,
@@ -101,7 +101,7 @@ function L(e) {
   })
 }
 
-function D(e) {
+function L(e) {
   let {
     channelId: t,
     messageId: n,
@@ -109,7 +109,7 @@ function D(e) {
   } = e, i = x.Z.getChannel(t);
   if (null == i) return;
   if (g.Z.isLurking(i.guild_id)) {
-    L({
+    D({
       guildId: i.guild_id,
       title: w.NW.string(w.t["7LpysL"]),
       body: w.NW.string(w.t["5sHHo6"])
@@ -193,14 +193,14 @@ async function U(e) {
   } = e, r = x.Z.getChannel(t);
   if (null == r) return;
   if (g.Z.isLurking(r.guild_id)) {
-    L({
+    D({
       guildId: r.guild_id,
       title: w.NW.string(w.t.Qic1FB),
       body: w.NW.string(w.t["5sHHo6"])
     });
     return
   }
-  if (!E.Z.canChatInGuild(r.guild_id)) {
+  if (!O.Z.canChatInGuild(r.guild_id)) {
     u.Z.show({
       title: w.NW.string(w.t.p245ws),
       body: w.NW.string(w.t["U/uodn"])
@@ -251,7 +251,7 @@ async function B(e) {
   } = e, r = x.Z.getChannel(t);
   if (null != r) {
     if (g.Z.isLurking(r.guild_id)) {
-      L({
+      D({
         guildId: r.guild_id,
         title: w.NW.string(w.t.B9QnBg),
         body: w.NW.string(w.t.BVZCTk)
@@ -332,7 +332,7 @@ async function G(e) {
       });
       break;
     case "showVoterDetails":
-      D({
+      L({
         channelId: t,
         messageId: n
       });
@@ -385,7 +385,7 @@ let H = {
       tapShouldOpenVotersModal: s
     } = null !== (n = (0, P.Tk)(l)) && void 0 !== n ? n : {};
     if (!0 === s) {
-      D({
+      L({
         channelId: a,
         messageId: o,
         answerId: r
@@ -450,7 +450,7 @@ let H = {
       duration: a,
       layout: o,
       onClose: s
-    } = e, c = N.Z.getUploads(t.id, O.d.Poll), d = r.map(e => {
+    } = e, c = N.Z.getUploads(t.id, E.d.Poll), d = r.map(e => {
       var t, n;
       let r = null == c ? void 0 : c.findIndex(t => t.id === e.localCreationAnswerId),
         i = {

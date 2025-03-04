@@ -30,7 +30,7 @@ function p(e) {
     button: a,
     className: p,
     children: m
-  } = e, h = (0, c.ZP)(), g = (0, o.wj)(h), f = i.useMemo(() => Array.isArray(t) ? t.map((e, t) => (0, r.jsx)(u, {
+  } = e, h = (0, c.ZP)(), g = (0, o.wj)(h), _ = i.useMemo(() => Array.isArray(t) ? t.map((e, t) => (0, r.jsx)(u, {
     title: e
   }, t)) : (0, r.jsx)(u, {
     title: t
@@ -41,7 +41,7 @@ function p(e) {
       className: d.content,
       children: (0, r.jsxs)("div", {
         className: d.textContainer,
-        children: [f, null != n && (0, r.jsx)(s.Text, {
+        children: [_, null != n && (0, r.jsx)(s.Text, {
           className: d.description,
           variant: "text-md/medium",
           color: g ? "text-muted" : "header-primary",

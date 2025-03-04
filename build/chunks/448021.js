@@ -1,6 +1,6 @@
 /** Chunk was on 37697 **/
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -14,13 +14,13 @@ var r = n(200651),
   p = n(981631),
   m = n(388032),
   h = n(346903),
-  g = n(902294);
+  g = n(516450);
 
-function f(e) {
+function _(e) {
   let {
     application: t,
     carouselItems: n
-  } = e, f = (0, l.e7)([u.Z], () => u.Z.isFocused()), _ = (0, r.jsxs)(r.Fragment, {
+  } = e, _ = (0, l.e7)([u.Z], () => u.Z.isFocused()), f = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
       className: h.errorImage,
       src: g,
@@ -38,7 +38,7 @@ function f(e) {
       name: t.name
     })
   });
-  let v = i.useCallback((e, t) => {
+  let b = i.useCallback((e, t) => {
     if (e.type === p.s9s.IMG) {
       let t = n.filter(e => e.type === p.s9s.IMG),
         r = t.findIndex(t => t === e);
@@ -65,9 +65,9 @@ function f(e) {
     themedPagination: !0,
     items: n,
     autoplayInterval: 8e3,
-    paused: !f,
+    paused: !_,
     videoAutoPlay: !0,
-    onCurrentItemClick: v,
-    errorComponent: _
+    onCurrentItemClick: b,
+    errorComponent: f
   })
 }

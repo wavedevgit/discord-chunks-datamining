@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
-  Z: () => S
+  Z: () => P
 }), n(411104), n(47120);
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  o = n(120356),
+  l = n.n(o),
   a = n(442837),
   s = n(493683),
   c = n(239091),
@@ -55,10 +55,10 @@ class x extends m.ZP {
       selected: t,
       connectChannelDropTarget: n,
       connectChannelDragSource: i,
-      connectDragPreview: l,
+      connectDragPreview: o,
       canReorderChannel: a
     } = this.props, s = (0, r.jsx)("li", {
-      className: o()(this.getClassName(), {
+      className: l()(this.getClassName(), {
         [_.disabled]: this.isDisabled()
       }),
       "data-dnd-name": e.name,
@@ -69,7 +69,7 @@ class x extends m.ZP {
         onClick: this.handleClick,
         onMouseDown: C,
         onContextMenu: this.handleContextMenu,
-        connectDragPreview: a ? l : null,
+        connectDragPreview: a ? o : null,
         "aria-label": (0, d.ZP)({
           channel: e
         }),
@@ -89,20 +89,20 @@ class x extends m.ZP {
           default: e
         } = await n.e("99905").then(n.bind(n, 649400));
         return n => {
-          var l, o;
-          return (0, r.jsx)(e, (l = j({}, n), o = o = {
+          var o, l;
+          return (0, r.jsx)(e, (o = j({}, n), l = l = {
             channel: t,
             guild: i
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(o)).forEach(function(e) {
-            Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
-          }), l))
+          })(Object(l)).forEach(function(e) {
+            Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(l, e))
+          }), o))
         }
       })
     }), O(this, "handleClick", e => {
@@ -122,18 +122,18 @@ class x extends m.ZP {
     })
   }
 }
-let P = (0, u.B)(x),
-  S = i.memo(function(e) {
+let S = (0, u.B)(x),
+  P = i.memo(function(e) {
     let {
       channel: t,
       guild: n,
       disableSorting: i
-    } = e, l = (0, a.cj)([h.Z, g.Z], () => {
+    } = e, o = (0, a.cj)([h.Z, g.Z], () => {
       let e = h.Z.getChannel(t.parent_id);
       return {
         canManageChannel: g.Z.can(v.Plq.MANAGE_CHANNELS, t),
         canReorderChannel: !0 !== i && null != e ? g.Z.can(v.Plq.MANAGE_CHANNELS, e) : g.Z.can(v.Plq.MANAGE_CHANNELS, n)
       }
     });
-    return (0, r.jsx)(P, j({}, l, e))
+    return (0, r.jsx)(S, j({}, o, e))
   })

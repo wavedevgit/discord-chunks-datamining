@@ -5,7 +5,7 @@ n.d(t, {
   Cs: () => h,
   EY: () => x,
   I5: () => I,
-  JQ: () => O,
+  JQ: () => R,
   RY: () => L,
   Sv: () => p,
   TX: () => k,
@@ -14,12 +14,12 @@ n.d(t, {
   n0: () => A,
   o6: () => f,
   oE: () => b,
-  qS: () => R,
+  qS: () => O,
   s: () => S,
   sQ: () => N,
   wo: () => u
 });
-var i, r, o, s, l, a, c, _ = n(990547),
+var i, o, r, s, l, c, a, _ = n(990547),
   d = n(981631);
 
 function E(e, t, n) {
@@ -37,8 +37,8 @@ E(m, "CLASSIFICATION_ID", "classification_id"), E(m, "INCIDENT_TIMESTAMP", "inci
 var u = ((i = {}).POLICY_VIOLATION_DETAIL = "policy_violation_detail", i.LEARN_MORE_LINK = "learn_more_link", i);
 class I {}
 E(I, "ICON_TYPE", "icon_type"), E(I, "HEADER", "header"), E(I, "BODY", "body"), E(I, "CTAS", "ctas"), E(I, "TIMESTAMP", "timestamp"), E(I, "THEME", "theme"), E(I, "CLIENT_VERSION_MESSAGE", "client_version_message"), E(I, "LEARN_MORE_LINK", "learn_more_link"), E(I, "CLASSIFICATION_ID", "classification_id");
-var A = ((r = {})[r.ViewViolationDetail = 0] = "ViewViolationDetail", r[r.ViewViolationsDropdown = 1] = "ViewViolationsDropdown", r[r.ClickLetUsKnow = 2] = "ClickLetUsKnow", r[r.ClickAgeVerificationLink = 3] = "ClickAgeVerificationLink", r[r.ClickSpamWebformLink = 4] = "ClickSpamWebformLink", r[r.ClickLearnMoreLink = 5] = "ClickLearnMoreLink", r[r.ClickCommunityGuidelinesLink = 6] = "ClickCommunityGuidelinesLink", r[r.ClickWarningSystemHelpcenterLink = 7] = "ClickWarningSystemHelpcenterLink", r),
-  S = ((o = {})[o.SystemDM = 0] = "SystemDM", o[o.StandingTab = 1] = "StandingTab", o[o.AppealIngestion = 2] = "AppealIngestion", o);
+var A = ((o = {})[o.ViewViolationDetail = 0] = "ViewViolationDetail", o[o.ViewViolationsDropdown = 1] = "ViewViolationsDropdown", o[o.ClickLetUsKnow = 2] = "ClickLetUsKnow", o[o.ClickAgeVerificationLink = 3] = "ClickAgeVerificationLink", o[o.ClickSpamWebformLink = 4] = "ClickSpamWebformLink", o[o.ClickLearnMoreLink = 5] = "ClickLearnMoreLink", o[o.ClickCommunityGuidelinesLink = 6] = "ClickCommunityGuidelinesLink", o[o.ClickWarningSystemHelpcenterLink = 7] = "ClickWarningSystemHelpcenterLink", o),
+  S = ((r = {})[r.SystemDM = 0] = "SystemDM", r[r.StandingTab = 1] = "StandingTab", r[r.AppealIngestion = 2] = "AppealIngestion", r);
 Object.freeze({
   SPEED_BUMP: d.jXE.APPEAL_INGESTION_SPEED_BUMP,
   COLLECT_SIGNAL: d.jXE.APPEAL_INGESTION_COLLECT_SIGNAL,
@@ -55,7 +55,7 @@ let L = [0, 1, 2, 3],
     impression_group: _.ImpressionGroups.APPEAL_INGESTION
   };
 var h = ((l = {}).SPEED_BUMP = "speed-bump", l.COLLECT_SIGNAL = "collect-signal", l.CONFIRM_SUBMISSION = "confirm-submission", l.REQUEST_SENT = "request-sent", l.THANKS = "thanks", l);
-let O = {
+let R = {
   "speed-bump": {
     next: "collect-signal",
     prev: null
@@ -73,8 +73,8 @@ let O = {
     prev: null
   }
 };
-var R = ((a = {})[a.USER = 1] = "USER", a[a.GUILD_OWNER = 2] = "GUILD_OWNER", a[a.GUILD_MEMBER = 3] = "GUILD_MEMBER", a),
-  b = ((c = {}).LOADING = "loading", c.ERROR = "error", c.SUCCESS = "success", c.FAILURE = "failure", c.NONE = "none", c);
+var O = ((c = {})[c.USER = 1] = "USER", c[c.GUILD_OWNER = 2] = "GUILD_OWNER", c[c.GUILD_MEMBER = 3] = "GUILD_MEMBER", c),
+  b = ((a = {}).LOADING = "loading", a.ERROR = "error", a.SUCCESS = "success", a.FAILURE = "failure", a.NONE = "none", a);
 let k = 2e3,
   P = 15e3,
   f = 5

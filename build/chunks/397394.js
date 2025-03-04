@@ -19,8 +19,8 @@ var r = n(200651),
   u = n(922770),
   d = n(993365),
   f = n(481060),
-  _ = n(132871),
-  p = n(252618),
+  _ = n(252618),
+  p = n(258971),
   h = n(703656),
   g = n(769654),
   m = n(592125),
@@ -99,7 +99,7 @@ function L(e) {
     showsCloseWindowText: o,
     spinner: s
   } = e;
-  return (0, p.Tt)({
+  return (0, _.Tt)({
     location: T.NW.string(T.t["3S249/"])
   }), (0, r.jsxs)("div", {
     className: N.wrapper,
@@ -167,20 +167,19 @@ function k(e) {
       application_id: null == n ? void 0 : n.id,
       guild_id: null == t ? void 0 : t.id
     }))
-  }, [o, null == n ? void 0 : n.id, null == t ? void 0 : t.id]), s = (0, _.g8)(e => e.entrypoint), l = i.useCallback(() => {
+  }, [o, null == n ? void 0 : n.id, null == t ? void 0 : t.id]), s = p.z8.getField("entrypoint"), l = i.useCallback(() => {
     null == o || o(), b.default.track(I.rMx.OAUTH2_AUTHORIZE_SUCCESS_CLOSE_CLICKED, {
       application_id: null == n ? void 0 : n.id
     })
   }, [o, null == n ? void 0 : n.id]), u = window.location.pathname.startsWith(I.Z5c.APPLICATION_DIRECTORY), d = i.useCallback(() => {
-    var e;
-    (null == n ? void 0 : n.id) != null && (null == o || o(), null != s && (0, h.uL)(null !== (e = s.pathname) && void 0 !== e ? e : ""), setImmediate(() => {
+    (null == n ? void 0 : n.id) != null && (null == o || o(), null != s && (0, h.uL)(""), setImmediate(() => {
       y.S.dispatchToLastSubscribed(I.CkL.OPEN_APP_LAUNCHER, {
         applicationId: n.id
       }), b.default.track(I.rMx.OAUTH2_AUTHORIZE_SUCCESS_OPEN_APP_CLICKED, {
         application_id: n.id
       })
     }))
-  }, [null == n ? void 0 : n.id, o, s]), p = (0, c.e7)([v.Z, m.Z], () => m.Z.getChannel(v.Z.getChannelId())), O = (0, c.e7)([E.Z], () => E.Z.can(I.Plq.SEND_MESSAGES, p)), S = null != t, A = null == t && O && (!u || null != s);
+  }, [null == n ? void 0 : n.id, o, s]), _ = (0, c.e7)([v.Z, m.Z], () => m.Z.getChannel(v.Z.getChannelId())), O = (0, c.e7)([E.Z], () => E.Z.can(I.Plq.SEND_MESSAGES, _)), S = null != t, A = null == t && O && (!u || null != s);
   return null != t || null != o ? (0, r.jsxs)("div", {
     className: N.buttonsContainer,
     children: [null != o ? S || A ? (0, r.jsx)(f.zxk, {

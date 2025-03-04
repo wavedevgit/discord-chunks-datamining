@@ -1,4 +1,4 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 e.exports = {
   pill: "pill_c9fddf",
   favoriteIcon: "favoriteIcon_c9fddf",

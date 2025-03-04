@@ -91,7 +91,7 @@ function A(e, t, n, r) {
   }
   "webp" !== r || I || (r = "png");
   let s = "string" == typeof t ? t : t.id,
-    l = (i = "https:", "https:");
+    l = (i = void 0, location.protocol);
   return o = null != a ? "".concat(l, "//").concat(a, "/app-assets/").concat(e, "/store/").concat(s, ".").concat(r) : "".concat(l).concat(window.GLOBAL_ENV.API_ENDPOINT).concat(y.ANM.STORE_ASSET(e, s, r)), null != n && (o += "?size=".concat((0, f.oO)(n * (0, f.x_)()))), o
 }
 

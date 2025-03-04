@@ -3,9 +3,9 @@ n.d(t, {
   FZ: () => A,
   Hl: () => M,
   NJ: () => k,
-  R8: () => L,
+  R8: () => D,
   Sq: () => S,
-  Wg: () => D,
+  Wg: () => L,
   Zn: () => I,
   c2: () => w,
   eE: () => R,
@@ -37,8 +37,8 @@ var r = n(5148),
   v = n.n(b),
   y = n(634523),
   x = n.n(y),
-  O = n(302648),
-  E = n.n(O);
+  E = n(302648),
+  O = n.n(E);
 
 function j(e, t, n, i) {
   let a = i.getCurrentContent(),
@@ -92,7 +92,7 @@ function C(e, t) {
 function I(e, t) {
   switch (e) {
     case "transpose-characters":
-      return E()(t);
+      return O()(t);
     case "move-selection-to-start-of-block":
       return _()(t);
     case "move-selection-to-end-of-block":
@@ -169,12 +169,12 @@ function R(e) {
   return Z(0, e)
 }
 
-function L(e) {
+function D(e) {
   let t = e.getSelection();
   return t = (t = t.set("focusOffset", 0)).set("isBackward", !0), r.EditorState.forceSelection(e, t)
 }
 
-function D(e) {
+function L(e) {
   let t = S(e),
     n = e.getSelection();
   return n = (n = n.set("focusOffset", t.length)).set("isBackward", !1), r.EditorState.forceSelection(e, n)

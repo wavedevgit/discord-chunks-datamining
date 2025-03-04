@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => d
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  l = n(481060),
-  o = n(460562),
+  o = n(481060),
+  l = n(460562),
   a = n(768581),
   s = n(682662),
   c = n(662146),
@@ -16,15 +16,15 @@ function d(e) {
   return (0, r.jsx)(s.H, {
     children: (0, r.jsx)(c.Z, {
       text: e.name,
-      children: (0, r.jsx)(l.aRk, {
+      children: (0, r.jsx)(o.aRk, {
         className: u.circleIconButton,
         selected: t,
-        lowerBadge: (0, r.jsx)(l.G2e, {
-          icon: (0, l.GSL)(o.Z),
+        lowerBadge: (0, r.jsx)(o.G2e, {
+          icon: (0, o.GSL)(l.Z),
           disableColor: !0,
           className: u.geoRestrictedBadge
         }),
-        children: (0, r.jsx)(l.LYs, {
+        children: (0, r.jsx)(o.LYs, {
           name: e.name,
           onMouseEnter: () => {
             d(!0)
@@ -33,7 +33,7 @@ function d(e) {
             d(!1)
           },
           onClick: () => {
-            (0, l.ZDy)(async () => {
+            (0, o.ZDy)(async () => {
               let {
                 default: t
               } = await n.e("42358").then(n.bind(n, 210995));

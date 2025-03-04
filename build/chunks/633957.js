@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(895924),
   y = n(311819),
   x = n(321231),
-  O = n(758199),
-  E = n(943762),
+  E = n(758199),
+  O = n(943762),
   j = n(429551),
   N = n(973616),
   C = n(314897),
@@ -35,8 +35,8 @@ var r = n(200651),
   Z = n(823379),
   k = n(506071),
   R = n(226378),
-  L = n(981631),
-  D = n(701488),
+  D = n(981631),
+  L = n(701488),
   M = n(388032),
   W = n(332463);
 let F = i.memo(e => {
@@ -76,7 +76,7 @@ let U = i.memo(function(e) {
     return null
   }, [j.id, X]), J = null == Q ? void 0 : Q.details, $ = i.useMemo(() => {
     let e = new N.ZP(j);
-    return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = D.wT), e
+    return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = L.wT), e
   }, [j]), ee = (0, f.s5)({
     userId: V,
     channelId: w,
@@ -87,7 +87,7 @@ let U = i.memo(function(e) {
     currentEmbeddedActivity: K,
     channel: G
   }), er = i.useId(), ei = null != Y && Y.isLaunching && Y.componentId === er, ea = async () => {
-    P.default.track(L.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
+    P.default.track(D.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
       application_id: j.id,
       channel_id: w,
       channel_type: null == G ? void 0 : G.type,
@@ -126,8 +126,8 @@ let U = i.memo(function(e) {
       a = q.length,
       o = null !== (d = null == Q ? void 0 : null === (n = Q.timestamps) || void 0 === n ? void 0 : n.start) && void 0 !== d ? d : null == Q ? void 0 : Q.created_at,
       c = et ? eo : null != J ? J : M.NW.string(M.t.oQn0h4),
-      u = (0, E.r)(Q);
-    return (0, r.jsx)(O.W, {
+      u = (0, O.r)(Q);
+    return (0, r.jsx)(E.W, {
       header: j.name,
       title: c,
       iconSrc: t,
@@ -149,7 +149,7 @@ let U = i.memo(function(e) {
               start: o
             })]
           })
-        }), a > 0 && (0, r.jsx)(E.K, {
+        }), a > 0 && (0, r.jsx)(O.K, {
           activityUsers: q,
           guildId: k,
           activityText: u.text
@@ -163,7 +163,7 @@ let U = i.memo(function(e) {
       }, {
         label: "View",
         onClick() {
-          P.default.track(L.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
+          P.default.track(D.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
             application_id: j.id,
             channel_id: w,
             channel_type: null == G ? void 0 : G.type,

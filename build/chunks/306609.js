@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(594174),
   y = n(626135),
   x = n(111361),
-  O = n(74538),
-  E = n(709706),
+  E = n(74538),
+  O = n(709706),
   j = n(378441),
   N = n(799143),
   C = n(358820),
@@ -36,7 +36,7 @@ var r = n(200651),
   k = n(388032),
   R = n(422111);
 
-function L(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,7 +55,7 @@ function L(e) {
   return e
 }
 
-function D(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -83,7 +83,7 @@ function M(e) {
     onElementResize: (e, t) => {},
     onElementResizeEnd: e => {},
     orientation: u.y.VERTICAL_TOP
-  }), H = (0, s.e7)([v.default], () => (0, x.I5)(v.default.getCurrentUser())), V = (0, s.e7)([E.Z], () => E.Z.getCatalogUpdateTime()), [z, K] = i.useState(!1), [Y, X] = i.useState(!1), {
+  }), H = (0, s.e7)([v.default], () => (0, x.I5)(v.default.getCurrentUser())), V = (0, s.e7)([O.Z], () => O.Z.getCatalogUpdateTime()), [z, K] = i.useState(!1), [Y, X] = i.useState(!1), {
     activeVoice: q
   } = (0, j.o)(), Q = (0, c.q_F)({
     transform: z ? "translateY(-$8px) scale(".concat(.96, ")") : "translateY(0px) scale(1)",
@@ -160,7 +160,7 @@ function M(e) {
         },
         voiceListRef: ee
       }), !H && (0, r.jsxs)(l.animated.div, {
-        style: D(L({}, $), {
+        style: L(D({}, $), {
           display: $.opacity.to(e => 0 === e ? "none" : "block")
         }),
         className: R.upsellCountdownContainer,
@@ -177,7 +177,7 @@ function M(e) {
             children: (0, r.jsx)(g.p, {
               showUpsell: !0,
               text: k.NW.format(k.t["XMDm8/"], {
-                nitroTierName: (0, O.Px)(Z.p9.TIER_2),
+                nitroTierName: (0, E.Px)(Z.p9.TIER_2),
                 onClick: () => (0, _.i)()
               }),
               button: k.NW.string(k.t.cRCCJy),
@@ -211,7 +211,7 @@ function M(e) {
             }),
             simplified: et
           }),
-          children: e => (0, r.jsx)(c.zxk, D(L({}, e), {
+          children: e => (0, r.jsx)(c.zxk, L(D({}, e), {
             size: c.zxk.Sizes.MIN,
             look: c.zxk.Looks.BLANK,
             grow: !1,

@@ -104,9 +104,9 @@ let g = e => {
     let {
       topic: y,
       speaker_count: x,
-      participant_count: O
-    } = n, E = null !== (t = n.members) && void 0 !== t ? t : [], j = _ ? E.slice(0, 3) : E, N = x - j.length;
-    return _ && (N += E.length - j.length), (0, r.jsxs)("div", {
+      participant_count: E
+    } = n, O = null !== (t = n.members) && void 0 !== t ? t : [], j = _ ? O.slice(0, 3) : O, N = x - j.length;
+    return _ && (N += O.length - j.length), (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         className: h.flex,
         children: [(0, r.jsxs)("div", {
@@ -133,7 +133,7 @@ let g = e => {
           }), (0, r.jsx)(l.X6q, {
             className: o()(h.__invalid_label, h.listeners),
             variant: "heading-sm/semibold",
-            children: O
+            children: E
           })]
         })]
       }), _ && (0, r.jsxs)("div", {

@@ -1,12 +1,12 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => v
 });
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  l = n(704215),
-  o = n(481060),
+  o = n(704215),
+  l = n(481060),
   a = n(239091),
   s = n(605236),
   c = n(554747),
@@ -61,14 +61,14 @@ function v(e) {
     mentionCount: u.ZP.getMentionCount(t.id, h.W.GUILD_EVENT)
   }), [t.id]), O = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
   async function j() {
-    await (0, o.ZDy)(async () => {
+    await (0, l.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("22347"), n.e("56236"), n.e("78111")]).then(n.bind(n, 17671));
       return n => (0, r.jsx)(e, b(m({}, n), {
         guildId: t.id
       }))
-    }), (0, s.EW)(l.z.GUILD_HEADER_EVENT_UPSELL)
+    }), (0, s.EW)(o.z.GUILD_HEADER_EVENT_UPSELL)
   }
   let C = (0, c.ZP)(t.id),
     x = C.length > 0 ? f.NW.formatToPlainString(f.t.IBdqSk, {
@@ -76,7 +76,7 @@ function v(e) {
     }) : f.NW.string(f.t.tlopTE);
   return (0, r.jsx)(p.m, {
     id: "upcoming-events-".concat(t.id),
-    renderIcon: e => (0, r.jsx)(o.Que, {
+    renderIcon: e => (0, r.jsx)(l.Que, {
       size: "md",
       color: "currentColor",
       className: e
@@ -95,7 +95,7 @@ function v(e) {
       })
     },
     showUnread: y && !O,
-    trailing: !O && _ > 0 ? (0, r.jsx)(o.mAB, {
+    trailing: !O && _ > 0 ? (0, r.jsx)(l.mAB, {
       className: g.numberBadge,
       disableColor: !0,
       count: _

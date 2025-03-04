@@ -1,12 +1,12 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   m: () => f
 });
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  l = n.n(i),
-  o = n(91192),
+  o = n.n(i),
+  l = n(91192),
   a = n(589440),
   s = n(481060),
   c = n(777152),
@@ -61,17 +61,17 @@ function f(e) {
       var n, r, i = function(e, t) {
         if (null == e) return {};
         var n, r, i = {},
-          l = Object.keys(e);
-        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          o = Object.keys(e);
+        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var l = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var o = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "showUnread"]);
-  let O = (0, o.JA)(n),
+  let O = (0, l.JA)(n),
     j = null !== (t = (0, a.qg)(m)) && void 0 !== t ? t : "";
   return (0, r.jsx)("li", {
     children: (0, r.jsxs)(s.kL8, h(p({}, _), {
@@ -91,13 +91,13 @@ function f(e) {
       onContextMenu: null != _.onContextMenu ? _.onContextMenu : e => {
         e.stopPropagation()
       },
-      className: l()(u.containerDefault, d.wrapper, {
+      className: o()(u.containerDefault, d.wrapper, {
         [d.modeSelected]: b
       }, i),
       children: [y ? (0, r.jsx)("div", {
-        className: l()(d.unread, d.unreadImportant)
+        className: o()(d.unread, d.unreadImportant)
       }) : null, (0, r.jsx)("div", {
-        className: l()([d.link, d.basicChannelRowLink, f]),
+        className: o()([d.link, d.basicChannelRowLink, f]),
         children: (0, r.jsxs)("div", {
           className: c.content,
           children: [(0, r.jsx)("div", {

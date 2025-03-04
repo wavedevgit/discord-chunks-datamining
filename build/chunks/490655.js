@@ -26,9 +26,9 @@ var r = n(200651),
   _ = n(108053),
   C = n(981631),
   I = n(388032),
-  E = n(627328);
+  S = n(627328);
 
-function S(e, t) {
+function E(e, t) {
   switch (e) {
     case C.b4C.APPLICATION:
       var n;
@@ -56,8 +56,8 @@ let P = i.memo(function(e) {
     guild: l,
     channel: P,
     integrations: w,
-    editedIntegration: Z,
-    webhooks: T,
+    editedIntegration: T,
+    webhooks: Z,
     editedWebhook: W,
     isFetchingWebhooks: k,
     refToScroller: A,
@@ -90,7 +90,7 @@ let P = i.memo(function(e) {
             }, (null === (l = r.application.bot) || void 0 === l ? void 0 : l.id) !== void 0 && (t[r.application.bot.id] = r.application.id)
           }
         } else r.type in n || (n[r.type] = []), n[r.type].push(r);
-    for (let t of T)(t.channel_id in B || t.channel_id in U) && (null != t.application_id && t.application_id in e ? e[t.application_id].webhooks.push(t) : t.type === C.ylB.CHANNEL_FOLLOWER ? i.push(t) : r.push(t));
+    for (let t of Z)(t.channel_id in B || t.channel_id in U) && (null != t.application_id && t.application_id in e ? e[t.application_id].webhooks.push(t) : t.type === C.ylB.CHANNEL_FOLLOWER ? i.push(t) : r.push(t));
     return {
       applicationIntegrations: e,
       applicationBotIds: t,
@@ -98,7 +98,7 @@ let P = i.memo(function(e) {
       customWebhooks: r,
       followedChannelWebhooks: i
     }
-  }, [w, B, U, T]);
+  }, [w, B, U, Z]);
   i.useEffect(() => {
     if (!k) switch (t) {
       case C.b4C.TWITCH:
@@ -121,7 +121,7 @@ let P = i.memo(function(e) {
       null != X[C.ABu.TWITCH] && (Q = (0, r.jsx)(v.Z, {
         guild: l,
         integrations: X[C.ABu.TWITCH],
-        editedIntegration: Z,
+        editedIntegration: T,
         labelText: I.NW.string(I.t.q4pBGx),
         platformType: C.ABu.TWITCH,
         descriptionText: I.NW.string(I.t.V9kNqq),
@@ -139,7 +139,7 @@ let P = i.memo(function(e) {
       null != X[C.ABu.YOUTUBE] && (Q = (0, r.jsx)(v.Z, {
         guild: l,
         integrations: X[C.ABu.YOUTUBE],
-        editedIntegration: Z,
+        editedIntegration: T,
         labelText: I.NW.string(I.t.aS6cKy),
         platformType: C.ABu.YOUTUBE,
         descriptionText: I.NW.string(I.t["7Tv7JC"]),
@@ -243,22 +243,22 @@ let P = i.memo(function(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(p.Z, {
       align: p.Z.Align.CENTER,
-      className: E.breadcrumbs,
+      className: S.breadcrumbs,
       children: t === C.b4C.OVERVIEW ? (0, r.jsx)(s.vwX, {
         tag: "h1",
-        children: S(C.b4C.OVERVIEW)
+        children: E(C.b4C.OVERVIEW)
       }) : (0, r.jsx)(s.OoM, {
         activeId: t.toString(),
         breadcrumbs: [C.b4C.OVERVIEW, t].map(e => ({
           id: e.toString(),
-          label: S(e, q[H])
+          label: E(e, q[H])
         })),
         onBreadcrumbClick: e => {
           t !== parseInt(e.id) && K(parseInt(e.id))
         },
         renderCustomBreadcrumb: (e, t) => (0, r.jsx)(s.vwX, {
           tag: "h1",
-          className: t ? E.breadcrumbActive : E.breadcrumbInactive,
+          className: t ? S.breadcrumbActive : S.breadcrumbInactive,
           children: e.label
         })
       })

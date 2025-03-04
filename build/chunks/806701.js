@@ -13,9 +13,9 @@ var i = n(120356),
   u = n(981631),
   d = n(388032),
   h = n(762056),
-  p = n(802138);
+  g = n(802138);
 
-function g(e) {
+function p(e) {
   let {
     children: t
   } = e;
@@ -37,28 +37,28 @@ function f(e) {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.Ee, {
       src: n(26230),
-      className: o()(p.marginBottom20, p.marginTop8)
+      className: o()(g.marginBottom20, g.marginTop8)
     }), (0, r.jsx)(l.Dx, {
-      className: p.marginBottom8,
+      className: g.marginBottom8,
       children: d.NW.string(d.t["8UcxIy"])
     }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       children: d.NW.string(d.t.O37hMj)
     }), (0, r.jsxs)(l.gO, {
-      className: o()(p.marginBottom20, p.marginTop20),
+      className: o()(g.marginBottom20, g.marginTop20),
       children: [(0, r.jsx)(a.Text, {
         variant: "text-sm/normal"
       }), (0, r.jsxs)("ul", {
         className: h.listContainer,
-        children: [(0, r.jsx)(g, {
+        children: [(0, r.jsx)(p, {
           children: d.NW.string(d.t.Gj1Zr6)
-        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(g, {
+        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(p, {
           children: d.NW.string(d.t["8C6t3N"])
-        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(g, {
+        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(p, {
           children: d.NW.string(d.t.mToZMD)
-        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(g, {
+        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(p, {
           children: d.NW.string(d.t.TPEvkZ)
-        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(g, {
+        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(p, {
           children: d.NW.string(d.t.H8Y1Li)
         })]
       })]

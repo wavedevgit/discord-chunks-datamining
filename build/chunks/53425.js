@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => m
 });
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  o = n(120356),
+  l = n.n(o),
   a = n(442837),
   s = n(481060),
   c = n(540059),
@@ -20,11 +20,11 @@ let m = i.memo(function(e) {
     channel: t,
     selectedChannel: n,
     selectedVoiceChannelId: i,
-    sortedThreadIds: l,
+    sortedThreadIds: o,
     withGuildIcon: m
   } = e, {
     density: b
-  } = (0, s.TCT)(), v = (0, c.Q3)("GuildSidebarThreadList"), y = (0, a.Wu)([u.Z], () => l.map(e => u.Z.getChannel(e)).filter(p.lm), [l]), _ = (0, a.e7)([d.ZP], () => {
+  } = (0, s.TCT)(), v = (0, c.Q3)("GuildSidebarThreadList"), y = (0, a.Wu)([u.Z], () => o.map(e => u.Z.getChannel(e)).filter(p.lm), [o]), _ = (0, a.e7)([d.ZP], () => {
     let e = y[y.length - 1];
     if (null == e) return 0;
     let t = d.ZP.getVoiceStates(e.guild_id)[e.id];
@@ -38,7 +38,7 @@ let m = i.memo(function(e) {
         channelName: t.name
       }),
       children: [(0, r.jsx)("div", {
-        className: o()(g.spineBorder, {
+        className: l()(g.spineBorder, {
           [g.spineBorderWithGuildIcon]: m
         }),
         style: {

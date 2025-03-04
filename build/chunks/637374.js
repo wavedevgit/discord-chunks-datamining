@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(930114),
   y = n(981632),
   x = n(108989),
-  O = n(703656),
-  E = n(314897),
+  E = n(703656),
+  O = n(314897),
   j = n(82142),
   N = n(283595),
   C = n(594174),
@@ -35,8 +35,8 @@ var r = n(200651),
   Z = n(296848),
   k = n(51144),
   R = n(626799),
-  L = n(981631),
-  D = n(474936),
+  D = n(981631),
+  L = n(474936),
   M = n(388032),
   W = n(646886);
 
@@ -100,7 +100,7 @@ class H extends i.PureComponent {
     return e >= p.aL
   }
   handleViewInventory() {
-    u.Z.open(L.oAB.INVENTORY)
+    u.Z.open(D.oAB.INVENTORY)
   }
   render() {
     return (0, r.jsx)(p.$G, {
@@ -135,7 +135,7 @@ class V extends i.Component {
       }
     } = this.props;
     return B(U({}, e), {
-      section: L.jXE.GIFT_CODE_EMBED
+      section: D.jXE.GIFT_CODE_EMBED
     })
   }
   renderActions(e) {
@@ -190,7 +190,7 @@ class V extends i.Component {
     let {
       type: e
     } = this.props;
-    return e === L.uaV.CUSTOM_GIFT
+    return e === D.uaV.CUSTOM_GIFT
   }
   renderTitle(e) {
     let {
@@ -250,14 +250,14 @@ class V extends i.Component {
     if (e.isSubscription) {
       if (null == a) return M.NW.string(M.t.ZTNur6);
       if (null != i) {
-        let e = a.interval === D.rV.MONTH ? M.t["/RDIEB"] : M.t["3CX6Eh"];
+        let e = a.interval === L.rV.MONTH ? M.t["/RDIEB"] : M.t["3CX6Eh"];
         return M.NW.format(e, {
           username: k.ZP.getUserTag(i),
           skuName: l,
           intervalCount: a.intervalCount
         })
       }
-      let e = a.interval === D.rV.MONTH ? M.t["2O4lo6"] : M.t["+Xjmsb"];
+      let e = a.interval === L.rV.MONTH ? M.t["2O4lo6"] : M.t["+Xjmsb"];
       return M.NW.format(e, {
         skuName: l,
         intervalCount: a.intervalCount
@@ -282,7 +282,7 @@ class V extends i.Component {
     return null == e ? null : (0, r.jsx)(R.$, {
       skuId: e.skuId,
       onEmbedClick: this.handleEmbedClick,
-      analyticsSection: L.jXE.GIFT_CODE_EMBED,
+      analyticsSection: D.jXE.GIFT_CODE_EMBED,
       renderCustomActions: () => this.renderActions(e),
       renderCustomTitle: () => this.renderTitle(e),
       renderCustomTagline: () => this.renderBody(e),
@@ -300,7 +300,7 @@ class V extends i.Component {
     return null != e && null != e.promotion ? (0, r.jsx)(R.$, {
       skuId: e.skuId,
       onEmbedClick: this.handleClaimPromotion,
-      analyticsSection: L.jXE.GIFT_CODE_EMBED,
+      analyticsSection: D.jXE.GIFT_CODE_EMBED,
       renderCustomActions: () => this.renderPromotionActions(),
       renderCustomTitle: () => M.NW.string(M.t.X4p5uL),
       renderCustomTagline: () => M.NW.string(M.t.VIuwDw),
@@ -320,13 +320,13 @@ class V extends i.Component {
       let {
         libraryApplication: t
       } = this.props;
-      e.preventDefault(), null != t && t.isHidden() ? (0, O.uL)(L.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, O.uL)(L.Z5c.APPLICATION_LIBRARY, {
+      e.preventDefault(), null != t && t.isHidden() ? (0, E.uL)(D.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, E.uL)(D.Z5c.APPLICATION_LIBRARY, {
         state: {
           applicationId: null != t ? t.id : void 0
         }
       })
     }), F(this, "handleVerificationClick", e => {
-      e.stopPropagation(), e.preventDefault(), u.Z.open(L.oAB.ACCOUNT)
+      e.stopPropagation(), e.preventDefault(), u.Z.open(D.oAB.ACCOUNT)
     }), F(this, "handleAccept", e => {
       let {
         channelId: t,
@@ -335,13 +335,13 @@ class V extends i.Component {
         type: i,
         giftInfo: a
       } = this.props;
-      e.preventDefault(), e.stopPropagation(), P.default.track(L.rMx.OPEN_MODAL, {
+      e.preventDefault(), e.stopPropagation(), P.default.track(D.rMx.OPEN_MODAL, {
         type: "gift_accept",
         location: B(U({}, this.analyticsLocation), {
-          object: L.qAy.BUTTON_CTA
+          object: D.qAy.BUTTON_CTA
         })
       });
-      let o = i !== L.uaV.CUSTOM_GIFT ? void 0 : r;
+      let o = i !== D.uaV.CUSTOM_GIFT ? void 0 : r;
       (0, v.V)({
         processedCode: n,
         channelContext: t,
@@ -352,19 +352,19 @@ class V extends i.Component {
       let {
         giftCode: t
       } = this.props;
-      null != t && t.isSubscription && (e.preventDefault(), u.Z.open(L.oAB.PREMIUM))
+      null != t && t.isSubscription && (e.preventDefault(), u.Z.open(D.oAB.PREMIUM))
     }), F(this, "handleClaimPromotion", e => {
       var t;
       e.stopPropagation(), e.preventDefault();
       let n = null === (t = this.props.giftCode) || void 0 === t ? void 0 : t.code;
-      null != n && window.open(L.Z5c.BILLING_PROMOTION_REDEMPTION(n))
+      null != n && window.open(D.Z5c.BILLING_PROMOTION_REDEMPTION(n))
     }), F(this, "renderCustomGiftBox", e => {
       let {
         useReducedMotion: t,
         width: n
       } = this.props;
       if (null == e || null == e.giftStyle) return null;
-      let i = D.jy.includes(e.giftStyle),
+      let i = L.jy.includes(e.giftStyle),
         a = o()(W.customGiftEmbedWrapper, {
           [W.legacySeasonalGiftEmbedWrapper]: i,
           [W.giftEmbedWrapperHorizontal]: n >= p.aL
@@ -377,7 +377,7 @@ class V extends i.Component {
         });
       return (0, r.jsxs)("div", {
         className: a,
-        children: [!t && D.eZ.includes(e.giftStyle) && (0, r.jsx)(x.Z, {
+        children: [!t && L.eZ.includes(e.giftStyle) && (0, r.jsx)(x.Z, {
           className: W.snow,
           wind: 5
         }), i && (0, r.jsx)(T.Z, {
@@ -392,7 +392,7 @@ class V extends i.Component {
   }
 }
 let z = (0, f.Z)((0, m.Z)(V)),
-  K = c.ZP.connectStores([j.Z, S.Z, C.default, N.Z, I.Z, E.default, h.Z], e => {
+  K = c.ZP.connectStores([j.Z, S.Z, C.default, N.Z, I.Z, O.default, h.Z], e => {
     let {
       code: t,
       author: n,
@@ -404,7 +404,7 @@ let z = (0, f.Z)((0, m.Z)(V)),
       gifter: o,
       currentUser: r,
       subscriptionPlan: null != i && null != i.subscriptionPlanId ? (0, Z.oE)(i.subscriptionPlanId) : null,
-      isSelfGift: null != i ? E.default.getId() === i.userId : E.default.getId() === n.id,
+      isSelfGift: null != i ? O.default.getId() === i.userId : O.default.getId() === n.id,
       resolved: j.Z.getIsResolved(t),
       libraryApplication: null != a && (null == i ? void 0 : i.entitlementBranches) != null ? A.z2(i.entitlementBranches, a, N.Z) : null,
       useReducedMotion: l

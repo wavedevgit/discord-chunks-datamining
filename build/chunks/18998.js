@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => y
 }), n(978209), n(47120), n(653041);
 var r, i = n(200651),
-  l = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  o = n(192379),
+  l = n(120356),
+  a = n.n(l),
   s = n(954955),
   c = n.n(s),
   u = n(748780),
@@ -38,7 +38,7 @@ let m = {
   friction: 10,
   tension: 300
 };
-class b extends l.Component {
+class b extends o.Component {
   shouldComponentUpdate(e, t) {
     return !(0, d.Z)(this.props, e, ["animate"]) || !(0, d.Z)(this.state, t)
   }
@@ -127,7 +127,7 @@ class b extends l.Component {
     }
   }
 }
-class v extends(r = l.PureComponent) {
+class v extends(r = o.PureComponent) {
   componentDidMount() {
     this.calculateState()
   }
@@ -144,8 +144,8 @@ class v extends(r = l.PureComponent) {
     } = this.state, {
       textMention: n,
       textUnread: r,
-      reverse: l,
-      className: o,
+      reverse: o,
+      className: l,
       barClassName: s,
       hide: c,
       animate: u
@@ -153,12 +153,12 @@ class v extends(r = l.PureComponent) {
       reducedMotion: d
     } = this.context;
     return (0, i.jsx)("div", {
-      className: null != o ? o : void 0,
+      className: null != l ? l : void 0,
       children: (0, i.jsx)(b, {
         hide: !0 === c || null == e && null == t,
         className: a()(s, null != t ? h.mention : h.unread),
         text: null != t ? n : r,
-        reverse: l,
+        reverse: o,
         animate: u && !d.enabled,
         onClick: this.handleClick
       })
@@ -175,25 +175,25 @@ class v extends(r = l.PureComponent) {
         isVisible: n,
         isUnread: r,
         isMentioned: i,
-        reverse: l,
-        onCalculate: o
+        reverse: o,
+        onCalculate: l
       } = this.props, a = null, s = null, c = [];
       e.forEach(e => {
         "string" == typeof e ? c.push(e) : "object" == typeof e && null != e.folderId ? null != t && t.has(e.folderId) ? (c.push("folder:".concat(e.folderId)), e.guildIds.forEach(e => c.push(e))) : c.push(e.guildIds) : c.push(e.guildIds[0])
       });
       let u = e => {
-          null == a && i(e, l, c) && (a = e), null == s && r(e, l, c) && (s = e)
+          null == a && i(e, o, c) && (a = e), null == s && r(e, o, c) && (s = e)
         },
-        d = l ? c.length - 1 : 0,
+        d = o ? c.length - 1 : 0,
         p = c[d];
       for (; null != p;) {
         if ("string" == typeof p) {
-          if (n(p, l, c)) break;
+          if (n(p, o, c)) break;
           u(p)
         } else {
           let e = !1;
           for (let t of p) {
-            if (n(t, l, c)) {
+            if (n(t, o, c)) {
               e = !0;
               break
             }
@@ -201,9 +201,9 @@ class v extends(r = l.PureComponent) {
           }
           if (e) break
         }
-        d += l ? -1 : 1, p = c[d]
+        d += o ? -1 : 1, p = c[d]
       }
-      null != o && o(a, s, l), this.setState({
+      null != l && l(a, s, o), this.setState({
         mention: a,
         unread: s
       })

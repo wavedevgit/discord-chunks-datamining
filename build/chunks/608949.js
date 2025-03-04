@@ -1,10 +1,10 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => u
 });
 var r, i = n(442837),
-  l = n(570140),
-  o = n(430824);
+  o = n(570140),
+  l = n(430824);
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -27,12 +27,12 @@ class c extends(r = i.ZP.PersistedStore) {
   }
 }
 a(c, "displayName", "GuildPowerupsNotificationStore"), a(c, "persistKey", "GuildPowerupsNotificationStore");
-let u = new c(l.Z, {
+let u = new c(o.Z, {
   GUILD_POWERUPS_ACK_NOTIFICATION: function(e) {
     var t, n, r, i;
     let {
-      guildId: l
-    } = e, c = null !== (n = null === (t = o.Z.getGuild(l)) || void 0 === t ? void 0 : t.premiumSubscriberCount) && void 0 !== n ? n : 0;
+      guildId: o
+    } = e, c = null !== (n = null === (t = l.Z.getGuild(o)) || void 0 === t ? void 0 : t.premiumSubscriberCount) && void 0 !== n ? n : 0;
     r = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -45,7 +45,7 @@ let u = new c(l.Z, {
       }
       return e
     }({}, s), i = i = {
-      [l]: {
+      [o]: {
         lastSeenNotification: Date.now(),
         lastBoostCount: c
       }

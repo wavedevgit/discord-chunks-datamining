@@ -21,9 +21,9 @@ var r = n(200651),
   v = n(225675),
   y = n(981631),
   x = n(388032),
-  O = n(548969);
+  E = n(548969);
 
-function E(e) {
+function O(e) {
   var t;
   return (0, r.jsx)("span", {
     style: {
@@ -70,7 +70,7 @@ function j(e) {
     forceRoles: Z,
     context: a
   }), c.$e(y.Plq.MANAGE_GUILD, y.Plq.MANAGE_ROLES)) || a.isOwner(n.id)) ? (0, r.jsx)("div", {
-    className: O.container,
+    className: E.container,
     children: (0, r.jsx)(u.hQY, {
       placeholder: x.NW.string(x.t.Sojqsr),
       value: S,
@@ -80,7 +80,7 @@ function j(e) {
         let t = w.reduce((t, n) => (o()(e.toLowerCase(), n.name.toLowerCase()) && t.push((0, r.jsxs)(u.lo1, {
             value: n.id,
             children: [(0, r.jsx)(u.lo1.Label, {
-              children: E(n)
+              children: O(n)
             }), (0, r.jsx)(u.lo1.Checkbox, {})]
           }, n.id)), t), []),
           n = l[a.getEveryoneRoleId()];
@@ -88,7 +88,7 @@ function j(e) {
           value: n.id,
           disabled: !0,
           children: [(0, r.jsx)(u.lo1.Label, {
-            children: E(n)
+            children: O(n)
           }), (0, r.jsx)(u.lo1.Checkbox, {
             checked: !0
           })]

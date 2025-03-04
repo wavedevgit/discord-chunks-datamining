@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => O
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  l = n(442837),
-  o = n(18998),
+  o = n(442837),
+  l = n(18998),
   a = n(664915),
   s = n(888369),
   c = n(358652),
@@ -30,10 +30,10 @@ function y(e) {
 let _ = (0, h.oH)((e, t, n) => ["null", ...t, ...e, b, f.x8Z.E3_SERVER_DISCOVERY_BADGE, m]),
   O = i.forwardRef(function(e, t) {
     var n, i;
-    let d = (0, l.Wu)([u.ZP, c.Z, s.default], () => _(u.ZP.getGuildFolders(), c.Z.getUnreadPrivateChannelIds(), s.default.getStoreChangeSentinel())),
-      h = (0, l.e7)([p.Z], () => p.Z.isFocused()),
-      f = (0, l.e7)([a.Z], () => a.Z.getExpandedFolders());
-    return (0, r.jsx)(o.Z, (n = function(e) {
+    let d = (0, o.Wu)([u.ZP, c.Z, s.default], () => _(u.ZP.getGuildFolders(), c.Z.getUnreadPrivateChannelIds(), s.default.getStoreChangeSentinel())),
+      h = (0, o.e7)([p.Z], () => p.Z.isFocused()),
+      f = (0, o.e7)([a.Z], () => a.Z.getExpandedFolders());
+    return (0, r.jsx)(l.Z, (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

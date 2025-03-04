@@ -86,7 +86,11 @@ function b(e) {
     }))
   }, [b, y, C, S, Z, I, P, T]), (0, r.jsxs)("div", {
     className: v.root,
-    children: [(0, r.jsx)(o.PhF, {
+    children: [(0, r.jsx)(o.Text, {
+      variant: "text-md/medium",
+      color: "text-muted",
+      children: _.NW.string(_.t["7eHfrq"])
+    }), (0, r.jsx)(o.PhF, {
       popoutPosition: "top",
       className: v.presetSelect,
       select: e => y({
@@ -96,12 +100,11 @@ function b(e) {
       isSelected: e => e === b,
       serialize: String,
       options: E
-    }), b !== g.tI.PRESET_CUSTOM && (0, r.jsxs)(o.Text, {
-      variant: "text-sm/medium",
-      color: "text-muted",
-      children: [P === g.LY.RESOLUTION_SOURCE ? _.NW.string(_.t.XjXqzs) : "".concat(P, "p"), ", ", T, "fps"]
     }), b === g.tI.PRESET_CUSTOM && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.PhF, {
+      children: [(0, r.jsx)(o.Fbu, {
+        size: "xs",
+        color: o.TVs.colors.BG_MOD_STRONG
+      }), (0, r.jsx)(o.PhF, {
         popoutWidth: "auto",
         popoutPosition: "top",
         className: v.select,

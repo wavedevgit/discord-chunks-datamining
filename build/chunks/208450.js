@@ -1,6 +1,6 @@
 /** Chunk was on 76030 **/
 n.d(t, {
-  Z: () => D
+  Z: () => L
 }), n(301563), n(757143);
 var r = n(200651),
   i = n(192379),
@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(313201),
   y = n(592125),
   x = n(984933),
-  O = n(768119),
-  E = n(944486),
+  E = n(768119),
+  O = n(944486),
   j = n(585483),
   N = n(72006),
   C = n(405656),
@@ -44,7 +44,7 @@ function Z(e, t, n) {
 n(573403);
 let k = (0, v.hQ)(),
   R = c()(p.yC, 500);
-class L extends i.PureComponent {
+class D extends i.PureComponent {
   componentDidMount() {
     var e, t;
     j.S.subscribe(P.CkL.PERFORM_SEARCH, this.search), j.S.subscribe(P.CkL.SET_SEARCH_QUERY, this.handleSetSearchQuery), j.S.subscribe(P.CkL.FOCUS_SEARCH, this.handleFocusSearch), null === (t = this._editorRef) || void 0 === t || null === (e = t.editor) || void 0 === e || e.setAttribute("aria-haspopup", "listbox")
@@ -225,7 +225,7 @@ class L extends i.PureComponent {
         this.focusEditor();
         return
       }
-      let n = E.Z.getChannelId(),
+      let n = O.Z.getChannelId(),
         r = y.Z.getChannel(n);
       if ((null == r ? void 0 : r.isThread()) && (r = y.Z.getChannel(null == r ? void 0 : r.parent_id)), null == r || r.isPrivate()) {
         this.focusEditor();
@@ -376,19 +376,19 @@ class L extends i.PureComponent {
     }), C.WU()
   }
 }
-let D = d.ZP.connectStores([_.Z, O.Z], () => {
+let L = d.ZP.connectStores([_.Z, E.Z], () => {
   var e;
-  let t = O.Z.getCurrentSearchId(),
-    n = O.Z.getSearchType(),
-    r = null != t && O.Z.isSearching(t),
-    i = null != t && null !== (e = O.Z.getEditorState(t)) && void 0 !== e ? e : N.nR(I.Jl(h.ZP)),
+  let t = E.Z.getCurrentSearchId(),
+    n = E.Z.getSearchType(),
+    r = null != t && E.Z.isSearching(t),
+    i = null != t && null !== (e = E.Z.getEditorState(t)) && void 0 !== e ? e : N.nR(I.Jl(h.ZP)),
     a = _.Z.keyboardModeEnabled;
   return {
     searchId: t,
     searchType: n,
     isSearching: r,
     editorState: i,
-    hasResults: O.Z.hasResults(t),
+    hasResults: E.Z.hasResults(t),
     keyboardModeEnabled: a
   }
-})(L)
+})(D)

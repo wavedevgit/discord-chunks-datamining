@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   m: () => x
 });
 var r = n(200651),
   i = n(192379),
-  l = n(399606),
-  o = n(704215),
+  o = n(399606),
+  l = n(704215),
   a = n(692547),
   s = n(481060),
   c = n(239091),
@@ -28,21 +28,21 @@ function x(e) {
   let {
     guild: t,
     selected: x
-  } = e, P = (0, p.Z)(t), S = (0, u.wE)(o.z.CHANNEL_BROWSER_NEW_BADGE_NUX), I = (0, l.Wu)([h.Z], () => Array.from(h.Z.getNewChannelIds(t.id)).filter(e => h.Z.shouldIndicateNewChannel(t.id, e))), N = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, O.W.GUILD_ONBOARDING_QUESTION)), Z = I.length > b.Cb, w = (0, l.e7)([d.Z, g.ZP], () => {
+  } = e, S = (0, p.Z)(t), P = (0, u.wE)(l.z.CHANNEL_BROWSER_NEW_BADGE_NUX), I = (0, o.Wu)([h.Z], () => Array.from(h.Z.getNewChannelIds(t.id)).filter(e => h.Z.shouldIndicateNewChannel(t.id, e))), N = (0, o.e7)([g.ZP], () => g.ZP.hasUnread(t.id, O.W.GUILD_ONBOARDING_QUESTION)), Z = I.length > b.Cb, w = (0, o.e7)([d.Z, g.ZP], () => {
     let e = d.Z.lastFetchedAt(t.id),
       n = g.ZP.lastMessageId(t.id, O.W.GUILD_ONBOARDING_QUESTION);
     if (null == n) return !1;
     let r = m.default.extractTimestamp(n);
     return null != e && e > r
   }), E = i.useCallback(() => {
-    (0, f.uL)(y.Z5c.CHANNEL(t.id, P ? _.oC.CUSTOMIZE_COMMUNITY : _.oC.CHANNEL_BROWSER))
-  }, [t.id, P]), T = i.useCallback(e => {
+    (0, f.uL)(y.Z5c.CHANNEL(t.id, S ? _.oC.CUSTOMIZE_COMMUNITY : _.oC.CHANNEL_BROWSER))
+  }, [t.id, S]), T = i.useCallback(e => {
     (0, c.jW)(e, async () => {
       let {
         default: e
       } = await n.e("8926").then(n.bind(n, 156673));
       return n => {
-        var i, l;
+        var i, o;
         return (0, r.jsx)(e, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -60,22 +60,22 @@ function x(e) {
             })
           }
           return e
-        }({}, n), l = l = {
+        }({}, n), o = o = {
           guild: t
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(l)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+        })(Object(o)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
         }), i))
       }
     })
   }, [t]), A = null;
-  return S && !N && !Z || x || w || (A = (0, r.jsx)(s.IGR, {
+  return P && !N && !Z || x || w || (A = (0, r.jsx)(s.IGR, {
     color: a.Z.colors.BADGE_BRAND_BG.css,
     text: j.NW.string(j.t.y2b7CA),
     className: C.newChannel
@@ -86,7 +86,7 @@ function x(e) {
       color: "currentColor",
       className: e
     }),
-    text: P ? j.NW.string(j.t.h9mGOD) : j.NW.string(j.t.et6wam),
+    text: S ? j.NW.string(j.t.h9mGOD) : j.NW.string(j.t.et6wam),
     selected: x,
     onClick: E,
     onContextMenu: T,

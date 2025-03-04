@@ -28,8 +28,8 @@ function b(e, t) {
     y = (0, i.e7)([a.Z], () => null != b && (null == b ? void 0 : b.channelId) != null && a.Z.isChannelGated(b.guildId, b.channelId), [b]),
     x = t.hasFlag(_.iLy.IS_CROSSPOST),
     {
-      rawMediaPostEmbedData: O,
-      guild: E,
+      rawMediaPostEmbedData: E,
+      guild: O,
       parentChannel: j,
       user: N,
       selectedGuildId: C,
@@ -54,8 +54,8 @@ function b(e, t) {
     S = r.useMemo(() => {
       var e, t;
       let n = (0, g.ku)({
-        mediaPostEmbedData: O,
-        guild: E,
+        mediaPostEmbedData: E,
+        guild: O,
         parentChannel: j,
         user: N,
         selectedGuildId: C,
@@ -90,7 +90,7 @@ function b(e, t) {
       })(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e)
-    }, [O, E, j, N, C, I]);
+    }, [E, O, j, N, C, I]);
   return r.useEffect(() => {
     if ((null == b ? void 0 : b.threadId) != null) {
       let e = h.Z.getEmbedFetchState(b.threadId);

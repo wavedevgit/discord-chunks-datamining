@@ -32,7 +32,7 @@ function N(e) {
   i.useEffect(() => {
     null != I && s.Z.requestMembersById(n.id, I)
   }, [n.id, I]);
-  let E = i.useMemo(() => {
+  let S = i.useMemo(() => {
     var e, t, r;
     let i = O[n.getEveryoneRoleId()],
       o = null !== (t = null == C ? void 0 : null === (e = C.roles) || void 0 === e ? void 0 : e.map(e => O[e]).filter(h.lm)) && void 0 !== t ? t : [],
@@ -89,7 +89,7 @@ function N(e) {
             disabledPermissionsHeader: j.NW.string(j.t["/rEZ2t"])
           }) : null]
         })
-      }(_, n, null !== (t = null == C ? void 0 : C.roles) && void 0 !== t ? t : [], E)]
+      }(_, n, null !== (t = null == C ? void 0 : C.roles) && void 0 !== t ? t : [], S)]
     })
   })
 }

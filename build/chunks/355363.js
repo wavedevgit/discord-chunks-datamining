@@ -1,28 +1,28 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
-  ZP: () => l
+  ZP: () => o
 });
 var r = n(829750),
   i = n(981631);
 
-function l(e) {
+function o(e) {
   let {
     channel: t,
     locked: n,
-    video: l,
-    selected: o
+    video: o,
+    selected: l
   } = e;
   return function(e) {
     let {
       channel: t,
       video: n,
-      considerMaxStageVoiceUserLimit: l = !0
+      considerMaxStageVoiceUserLimit: o = !0
     } = e, {
-      limit: o
+      limit: l
     } = (0, r.Z)(t), a = -1;
-    return (t.userLimit > 0 && (a = t.userLimit), n && o > 0 && (a = a > 0 ? Math.min(a, o) : o), l && a === i.xGv) ? 0 : a
+    return (t.userLimit > 0 && (a = t.userLimit), n && l > 0 && (a = a > 0 ? Math.min(a, l) : l), o && a === i.xGv) ? 0 : a
   }({
     channel: t,
-    video: l
-  }) > 0 && !n && !o
+    video: o
+  }) > 0 && !n && !l
 }

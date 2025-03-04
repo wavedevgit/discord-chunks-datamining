@@ -3,7 +3,7 @@ n.d(t, {
   $3: () => V,
   Go: () => B,
   JC: () => Z,
-  NU: () => D,
+  NU: () => L,
   Nk: () => w,
   R9: () => R,
   RN: () => F,
@@ -12,7 +12,7 @@ n.d(t, {
   Xn: () => z,
   bb: () => H,
   qo: () => M,
-  rY: () => L,
+  rY: () => D,
   sR: () => U,
   tn: () => G,
   wq: () => W
@@ -36,8 +36,8 @@ var r = n(200651),
   v = n(585483),
   y = n(5967),
   x = n(630388),
-  O = n(358085),
-  E = n(51144),
+  E = n(358085),
+  O = n(51144),
   j = n(91047),
   N = n(50284),
   C = n(981631),
@@ -59,7 +59,7 @@ function T(e, t, n) {
       n();
       return
     }
-    let a = "@".concat(E.ZP.getUserTag(i, {
+    let a = "@".concat(O.ZP.getUserTag(i, {
         decoration: "never"
       })),
       o = "<@".concat(e, ">");
@@ -100,11 +100,11 @@ function R(e, t) {
   return k(S("avatarProfile", e, t))
 }
 
-function L(e, t) {
+function D(e, t) {
   return k(S("referencedAvatarProfile", e, t))
 }
 
-function D(e, t) {
+function L(e, t) {
   return k(S("interactionAvatarProfile", e, t))
 }
 
@@ -117,7 +117,7 @@ function M(e, t, a, l) {
   } = e, p = (0, x.yE)(u, C.iLy.EPHEMERAL), m = (0, c.bp)();
   return i.useCallback((e, t) => {
     if (p) return;
-    if (!O.isPlatformEmbedded) {
+    if (!E.isPlatformEmbedded) {
       let t = e.target;
       if ("A" === t.tagName && "" !== t.textContent || null == window.getSelection) return;
       let n = window.getSelection();
@@ -250,14 +250,14 @@ function G(e) {
   let x = i.useCallback(e => {
       s && (0, f.T6)(), b || (v.S.dispatchKeyed(C.LPv.ANIMATE_CHAT_AVATAR, h, !0), _(e), y(!0))
     }, [b, h, s, _]),
-    O = i.useCallback(() => {
+    E = i.useCallback(() => {
       v.S.dispatchKeyed(C.LPv.ANIMATE_CHAT_AVATAR, h, !1), y(!1)
     }, [h]);
   return {
     hasHovered: g.current,
     isHovered: b,
     handleMouseEnter: x,
-    handleMouseLeave: O
+    handleMouseLeave: E
   }
 }
 

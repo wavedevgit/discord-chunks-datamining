@@ -1,13 +1,13 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
-  RI: () => l,
+  RI: () => o,
   k5: () => a,
-  kR: () => o
+  kR: () => l
 });
 var r = n(626135),
   i = n(981631);
 
-function l(e) {
+function o(e) {
   let {
     selectedTab: t
   } = e;
@@ -16,7 +16,7 @@ function l(e) {
   })
 }
 
-function o(e) {
+function l(e) {
   let {
     selectedCategoryId: t
   } = e;

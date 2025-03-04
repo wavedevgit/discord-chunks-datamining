@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.r(t), n.d(t, {
-  default: () => eS
+  default: () => eC
 }), n(301563), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -12,8 +12,8 @@ var r = n(200651),
   u = n(893776),
   d = n(533307),
   h = n(447543),
-  p = n(126399),
-  g = n(521379),
+  g = n(126399),
+  p = n(521379),
   f = n(765717),
   m = n(267394),
   _ = n(761305),
@@ -23,10 +23,10 @@ var r = n(200651),
   v = n(962220),
   I = n(637776),
   E = n(264229),
-  O = n(677760),
-  j = n(893607),
-  S = n(314897),
-  C = n(82142),
+  j = n(677760),
+  O = n(893607),
+  C = n(314897),
+  S = n(82142),
   y = n(701190),
   T = n(626135),
   A = n(81063),
@@ -45,8 +45,8 @@ var r = n(200651),
   F = n(9325),
   z = n(344295),
   V = n(781428),
-  H = n(209411),
-  K = n(649156),
+  K = n(209411),
+  H = n(649156),
   q = n(423527),
   Y = n(424044),
   J = n(479495),
@@ -92,26 +92,26 @@ function ei(e, t) {
 }
 n(179645), s.ZP.initialize();
 let eo = (0, L.Z)(V.Z),
-  ea = (0, L.Z)(H.Z),
+  ea = (0, L.Z)(K.Z),
   el = (0, L.Z)(z.Z),
   es = (0, L.Z)(U.Z),
   ec = (0, L.Z)(G.Z),
-  eu = (0, L.Z)(O.Z),
+  eu = (0, L.Z)(j.Z),
   ed = (0, L.Z)(q.Z),
   eh = (0, L.Z)(k.Z),
-  ep = (0, L.Z)(W.Z),
-  eg = (0, L.Z)(X.Z),
+  eg = (0, L.Z)(W.Z),
+  ep = (0, L.Z)(X.Z),
   ef = (0, L.Z)(b.Z),
   em = (0, L.Z)(J.Z),
   e_ = (0, L.Z)(M.Z),
   eb = (0, L.Z)(_.Z),
   eN = (0, L.Z)(I.Z),
   ex = (0, L.Z)(B.Z),
-  ev = (0, L.Z)(K.Z),
+  ev = (0, L.Z)(H.Z),
   eI = (0, L.Z)(Q.Z),
   eE = (0, L.Z)(Y.Z),
-  eO = (0, L.Z)(g.Z);
-class ej extends i.PureComponent {
+  ej = (0, L.Z)(p.Z);
+class eO extends i.PureComponent {
   static getDerivedStateFromProps(e, t) {
     var n;
     let {
@@ -149,14 +149,14 @@ class ej extends i.PureComponent {
       load_time: R.Z.getTimeSinceNavigationStart()
     }, {
       flush: !0
-    })), (t || ee.a) && this.resolveInvite(), this.resolveGiftCode(), this.resolveGuildTemplate(), p.Z.initialize()
+    })), (t || ee.a) && this.resolveInvite(), this.resolveGiftCode(), this.resolveGuildTemplate(), g.Z.initialize()
   }
   componentDidUpdate(e) {
     var t, n;
     e.hasLoadedExperiments || !this.props.hasLoadedExperiments || ee.a || this.resolveInvite(), (null === (t = e.invite) || void 0 === t ? void 0 : t.state) !== (null === (n = this.props.invite) || void 0 === n ? void 0 : n.state) && this.maybeFetchApplicationSplash()
   }
   componentWillUnmount() {
-    p.Z.terminate()
+    g.Z.terminate()
   }
   maybeFetchApplicationSplash() {
     let {
@@ -287,7 +287,7 @@ class ej extends i.PureComponent {
         }
       }), (0, r.jsx)(f.Z, {
         path: $.Z5c.VERIFY,
-        render: e => (0, r.jsx)(eg, er({}, e))
+        render: e => (0, r.jsx)(ep, er({}, e))
       }), (0, r.jsx)(f.Z, {
         path: $.Z5c.VERIFY_HUB_EMAIL,
         render: e => (0, r.jsx)(eN, er({}, e))
@@ -315,7 +315,7 @@ class ej extends i.PureComponent {
         }, e))
       }), (0, r.jsx)(f.Z, {
         path: $.Z5c.AUTHORIZE_PAYMENT,
-        render: e => (0, r.jsx)(ep, er({}, e))
+        render: e => (0, r.jsx)(eg, er({}, e))
       }), (0, r.jsx)(f.Z, {
         path: $.Z5c.RESET,
         render: e => (0, r.jsx)(em, er({
@@ -325,7 +325,7 @@ class ej extends i.PureComponent {
         path: $.Z5c.PICK_GUILD_SETTINGS(":section?", ":subsection?"),
         render: e => (0, r.jsx)(ev, er({}, e))
       }), (0, r.jsx)(f.Z, {
-        path: $.Z5c.CHANNEL(j.Hw.guildId(), j.Hw.channelId({
+        path: $.Z5c.CHANNEL(O.Hw.guildId(), O.Hw.channelId({
           optional: !0
         }), ":messageId?"),
         render: e => (0, r.jsx)(ex, er({}, e))
@@ -337,7 +337,7 @@ class ej extends i.PureComponent {
         render: e => (0, r.jsx)(eE, er({}, e))
       }), (0, r.jsx)(f.Z, {
         path: $.Z5c.ACCOUNT_REVERT(":token"),
-        render: e => (0, r.jsx)(eO, er({}, e))
+        render: e => (0, r.jsx)(ej, er({}, e))
       })]
     })
   }
@@ -349,7 +349,7 @@ class ej extends i.PureComponent {
     })
   }
 }
-let eS = s.ZP.connectStores([S.default, y.Z, C.Z, N.Z, x.Z], e => {
+let eC = s.ZP.connectStores([C.default, y.Z, S.Z, N.Z, x.Z], e => {
   var t, n, r;
   let {
     match: i,
@@ -357,12 +357,12 @@ let eS = s.ZP.connectStores([S.default, y.Z, C.Z, N.Z, x.Z], e => {
   } = e, a = null == i ? void 0 : null === (t = i.params) || void 0 === t ? void 0 : t.inviteCode, l = ee.a ? ee.Y : void 0, s = null != a ? (0, E.mb)(a, o.search) : l, c = null == i ? void 0 : null === (n = i.params) || void 0 === n ? void 0 : n.giftCode, u = null == i ? void 0 : null === (r = i.params) || void 0 === r ? void 0 : r.guildTemplateCode;
   return {
     inviteKey: s,
-    isAuthenticated: S.default.isAuthenticated(),
+    isAuthenticated: C.default.isAuthenticated(),
     giftCode: c,
     guildTemplateCode: u,
-    gift: null != c ? C.Z.get(c) : null,
+    gift: null != c ? S.Z.get(c) : null,
     invite: null != s ? y.Z.getInvite(s) : null,
     guildTemplate: null != u ? x.Z.getGuildTemplate(u) : null,
     hasLoadedExperiments: N.Z.hasLoadedExperiments
   }
-})(ej)
+})(eO)

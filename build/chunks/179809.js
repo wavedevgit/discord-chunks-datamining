@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => N
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  o = n(120356),
+  l = n.n(o),
   a = n(999153),
   s = n(642128),
   c = n(91192),
@@ -24,14 +24,14 @@ var r = n(200651),
   j = n(662146),
   C = n(388032),
   x = n(457528),
-  P = n(625704);
-let S = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
+  S = n(625704);
+let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
   I = (0, s.animated)(d.Kqy),
   N = i.memo(function(e) {
     let {
       folderNode: t,
       setNodeRef: n,
-      selected: l,
+      selected: o,
       expanded: s,
       mediaState: u,
       mentionCount: g = 0,
@@ -94,24 +94,24 @@ let S = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
         height: 0
       },
       config: {
-        duration: S
+        duration: P
       }
-    }), el = i.useCallback(e => null == n ? void 0 : n(U, e), [n, U]), eo = (0, r.jsxs)(O.H, {
+    }), eo = i.useCallback(e => null == n ? void 0 : n(U, e), [n, U]), el = (0, r.jsxs)(O.H, {
       children: [(0, r.jsx)(b.Z, {
         disabled: K || s,
         hovered: H,
-        selected: l,
+        selected: o,
         unread: Z,
-        className: P.pill
+        className: S.pill
       }), (0, r.jsx)(j.Z, {
         text: ee,
         disabled: A,
-        selected: l,
+        selected: o,
         disableWrapper: !0,
         children: (0, r.jsx)("div", {
           ref: T ? J : void 0,
-          className: o()(x.folderIcon, {
-            [P.wobble]: !K && Y && !s
+          className: l()(x.folderIcon, {
+            [S.wobble]: !K && Y && !s
           }),
           "data-dnd-name": ee,
           children: K ? (0, r.jsx)(_.Z, {}) : (0, r.jsx)(v.Z, {
@@ -140,15 +140,15 @@ let S = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       }) : null]
     });
     return (0, r.jsxs)("div", {
-      ref: el,
-      className: o()(x.wrapper, s && x.isExpanded),
+      ref: eo,
+      className: l()(x.wrapper, s && x.isExpanded),
       "data-drop-hovering": Y,
       children: [!K && s && (0, r.jsx)("span", {
-        className: o()(x.expandedFolderBackground, {
+        className: l()(x.expandedFolderBackground, {
           [x.collapsed]: !s,
           [x.hover]: Q
         })
-      }), eo, ei((e, t, n) => {
+      }), el, ei((e, t, n) => {
         let {
           key: i
         } = n;

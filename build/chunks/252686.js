@@ -1,22 +1,22 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => c
 });
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  l = n.n(i),
-  o = n(481060),
+  o = n.n(i),
+  l = n(481060),
   a = n(686546),
   s = n(297618);
 
 function c(e) {
   let {
     className: t
-  } = e, n = (0, o.dQu)(o.TVs.modules.guildbar.AVATAR_SIZE);
+  } = e, n = (0, l.dQu)(l.TVs.modules.guildbar.AVATAR_SIZE);
   return (0, r.jsx)(a.ZP, {
     mask: a.ZP.Masks.SQUIRCLE,
-    className: l()(t, s.placeholderMask),
+    className: o()(t, s.placeholderMask),
     width: n,
     height: n,
     style: {

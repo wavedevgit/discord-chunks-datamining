@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => y
 }), n(653041);
 var r = n(399606),
   i = n(897345),
-  l = n(63568),
-  o = n(697379),
+  o = n(63568),
+  l = n(697379),
   a = n(241559),
   s = n(563534),
   c = n(655359),
@@ -21,20 +21,20 @@ var r = n(399606),
 
 function y(e) {
   let t = (0, h.Z)(e.id),
-    n = (0, o.W)(e.id),
+    n = (0, l.W)(e.id),
     y = (0, p.j0)(e.id),
     _ = (0, i.u)(e),
     O = (0, u.g)(e.id),
     j = (0, r.e7)([s.Z], () => s.Z.getNewMemberActions(e.id), [e.id]),
     C = (0, d.Z)(e.id),
     x = (0, c.PE)(e.id),
-    P = (0, a.n2)(e.id),
-    S = [],
+    S = (0, a.n2)(e.id),
+    P = [],
     I = e.hasFeature(v.oNc.HUB),
     N = e.hasFeature(v.oNc.COMMUNITY),
     Z = (0, m.lN)(!(0, f.r1)(e.id)),
     w = e.hasFeature(v.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY),
-    E = (0, l.jS)(e.id, "Guild Sidebar"),
+    E = (0, o.jS)(e.id, "Guild Sidebar"),
     T = (0, g.Ek)(e, "useGuildActionRow");
-  return I && S.push(b.z.GUILD_HUB_HEADER_OPTIONS), !x && O && C && null != j && j.length > 0 ? S.push(b.z.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && S.push(b.z.GUILD_PREMIUM_PROGRESS_BAR), !I && O && S.push(b.z.GUILD_HOME), t && S.push(b.z.GUILD_SCHEDULED_EVENTS), !I && N && Z && S.push(b.z.CHANNELS_AND_ROLES), y && S.push(b.z.GUILD_ROLE_SUBSCRIPTIONS), _ && S.push(b.z.GUILD_SHOP), !E && n && S.push(b.z.GUILD_MEMBER_APPLICATIONS), P && (N || w || E && e.hasFeature(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && S.push(b.z.GUILD_MOD_DASH_MEMBER_SAFETY), T && S.push(b.z.GUILD_BOOSTS), S
+  return I && P.push(b.z.GUILD_HUB_HEADER_OPTIONS), !x && O && C && null != j && j.length > 0 ? P.push(b.z.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && P.push(b.z.GUILD_PREMIUM_PROGRESS_BAR), !I && O && P.push(b.z.GUILD_HOME), t && P.push(b.z.GUILD_SCHEDULED_EVENTS), !I && N && Z && P.push(b.z.CHANNELS_AND_ROLES), y && P.push(b.z.GUILD_ROLE_SUBSCRIPTIONS), _ && P.push(b.z.GUILD_SHOP), !E && n && P.push(b.z.GUILD_MEMBER_APPLICATIONS), S && (N || w || E && e.hasFeature(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && P.push(b.z.GUILD_MOD_DASH_MEMBER_SAFETY), T && P.push(b.z.GUILD_BOOSTS), P
 }

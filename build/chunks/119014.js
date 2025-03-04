@@ -4,16 +4,16 @@ n.d(t, {
 }), n(47120);
 var r = n(192379),
   i = n(442837),
-  a = n(894653),
-  l = n(493646),
+  a = n(493646),
+  l = n(678694),
   o = n(881294),
   s = n(258971),
   c = n(133743),
   d = n(981631);
 
 function u(e) {
-  let t = (0, i.e7)([a.Z], () => a.Z.getCategories()),
-    n = (0, l.K)(),
+  let t = (0, i.e7)([l.Z], () => l.Z.getCategories()),
+    n = (0, a.K)(),
     u = r.useMemo(() => [{
       id: n.id.toString(),
       label: n.name

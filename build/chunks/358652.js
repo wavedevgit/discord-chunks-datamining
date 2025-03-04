@@ -1,8 +1,8 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => _
 }), n(47120);
-var r, i, l, o = n(442837),
+var r, i, o, l = n(442837),
   a = n(570140),
   s = n(131704),
   c = n(251625),
@@ -28,7 +28,7 @@ function v(e) {
   } = e, n = u.Z.getChannel(t);
   return !!(null != n && (0, s.hv)(n.type)) && m()
 }
-class y extends(r = o.ZP.Store) {
+class y extends(r = l.ZP.Store) {
   initialize() {
     this.waitFor(h.Z, u.Z, p.Z, d.ZP)
   }
@@ -36,12 +36,12 @@ class y extends(r = o.ZP.Store) {
     return f
   }
 }
-l = "PrivateChannelReadStateStore", (i = "displayName") in y ? Object.defineProperty(y, i, {
-  value: l,
+o = "PrivateChannelReadStateStore", (i = "displayName") in y ? Object.defineProperty(y, i, {
+  value: o,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : y[i] = l;
+}) : y[i] = o;
 let _ = new y(a.Z, {
   CONNECTION_OPEN: b,
   OVERLAY_INITIALIZE: b,

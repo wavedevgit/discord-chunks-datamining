@@ -30,23 +30,23 @@ function O(e) {
     imageSrc: _,
     iconBackgroundColor: C,
     iconClassName: I,
-    iconWrapperClassName: E,
-    details: S,
+    iconWrapperClassName: S,
+    details: E,
     integration: P,
     buttonText: w,
-    buttonDisabled: Z,
-    hasNextSection: T,
+    buttonDisabled: T,
+    hasNextSection: Z,
     onButtonClick: W,
     guildId: k,
     isScrolling: A,
     canShowMigrationTooltip: D,
     trailing: R
-  } = e, [L, M] = i.useState(!1), [B, U] = i.useState(!1), z = null == w || null == W ? null : T ? (0, r.jsxs)(p.Z, {
+  } = e, [L, M] = i.useState(!1), [B, U] = i.useState(!1), z = null == w || null == W ? null : Z ? (0, r.jsxs)(p.Z, {
     align: p.Z.Align.CENTER,
     children: [(0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
       children: w
-    }), T ? (0, r.jsx)(c.Fbu, {
+    }), Z ? (0, r.jsx)(c.Fbu, {
       size: "custom",
       color: "currentColor",
       width: 10,
@@ -55,9 +55,9 @@ function O(e) {
     }) : null]
   }) : (0, r.jsx)(c.zxk, {
     size: c.zxk.Sizes.SMALL,
-    look: T ? c.zxk.Looks.LINK : c.zxk.Looks.FILLED,
-    color: T ? c.zxk.Colors.PRIMARY : c.zxk.Colors.BRAND,
-    disabled: Z,
+    look: Z ? c.zxk.Looks.LINK : c.zxk.Looks.FILLED,
+    color: Z ? c.zxk.Colors.PRIMARY : c.zxk.Colors.BRAND,
+    disabled: T,
     onClick: W,
     children: w
   }), H = D && !A && !B && void 0 !== k && null != P;
@@ -125,8 +125,8 @@ function O(e) {
         imageSrc: _,
         iconBackgroundColor: C,
         iconClassName: I,
-        iconWrapperClassName: E,
-        details: S,
+        iconWrapperClassName: S,
+        details: E,
         isPremium: F.length > 0
       }), (0, r.jsx)(p.Z.Child, {
         shrink: 0,
@@ -175,7 +175,7 @@ function O(e) {
         })
       })]
     });
-  return T ? (0, r.jsx)(c.P3F, {
+  return Z ? (0, r.jsx)(c.P3F, {
     onClick: () => {
       D && null != k && null != P && x.Z.dismissOverviewTooltip(k, P.integration), null == W || W()
     },

@@ -6,8 +6,8 @@ var n = t(200651);
 t(192379);
 var l = t(442837),
   s = t(481060),
-  o = t(264043),
-  a = t(812206),
+  o = t(812206),
+  a = t(370210),
   i = t(757746),
   c = t(572004),
   d = t(601911),
@@ -27,9 +27,9 @@ function O(e) {
     onHeaderTitleClick: b,
     children: v,
     footer: y
-  } = e, g = (0, l.e7)([a.Z, o.Z], () => {
+  } = e, g = (0, l.e7)([o.Z, a.Z], () => {
     var e;
-    return null !== (e = a.Z.getApplication(r)) && void 0 !== e ? e : o.Z.getApplicationRecord(r)
+    return null !== (e = o.Z.getApplication(r)) && void 0 !== e ? e : a.Z.getApplicationRecord(r)
   }, [r]), {
     data: N
   } = (0, i.Z)(t);

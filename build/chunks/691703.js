@@ -6,11 +6,11 @@ var r = n(200651),
   i = n(192379),
   a = n(442837),
   l = n(481060),
-  o = n(214912),
-  s = n(703656),
-  c = n(314897),
-  d = n(900849),
-  u = n(881294),
+  o = n(703656),
+  s = n(314897),
+  c = n(900849),
+  d = n(881294),
+  u = n(949507),
   p = n(981631),
   m = n(388032);
 let h = "redirect_to_support_server";
@@ -22,21 +22,21 @@ function g(e) {
   } = e, {
     onGoToSupportServer: g
   } = function(e) {
-    let t = (0, u.nu)(),
-      n = (0, a.e7)([c.default], () => c.default.getSessionId()),
+    let t = (0, d.nu)(),
+      n = (0, a.e7)([s.default], () => s.default.getSessionId()),
       r = i.useCallback(async () => {
         try {
           var t;
           let n = null == e ? void 0 : null === (t = e.guild) || void 0 === t ? void 0 : t.id;
           if (null != n) {
-            (0, u.zZ)(p.rMx.APP_DIRECTORY_SUPPORT_SERVER_JOINED, {
+            (0, d.zZ)(p.rMx.APP_DIRECTORY_SUPPORT_SERVER_JOINED, {
               application_id: e.id,
               support_guild_id: n
             });
             let t = {
               page: p.ZY5.APPLICATION_DIRECTORY
             };
-            await (0, d.Ub)(n, t, {
+            await (0, c.Ub)(n, t, {
               setsHistorySnapshot: !1
             })
           }
@@ -47,12 +47,12 @@ function g(e) {
       if (null != e && t && null != n && "true" === i.searchParams.get(h)) {
         i.searchParams.delete(h);
         let e = i.pathname + i.search;
-        (0, s.dL)(e), r()
+        (0, o.dL)(e), r()
       }
     }, [t, r, n, e]), {
       onGoToSupportServer: i.useCallback(() => {
         var n;
-        null != (null == e ? void 0 : null === (n = e.guild) || void 0 === n ? void 0 : n.id) && (t ? r() : (0, u.rf)({
+        null != (null == e ? void 0 : null === (n = e.guild) || void 0 === n ? void 0 : n.id) && (t ? r() : (0, d.rf)({
           [h]: "true"
         }))
       }, [e, r, t])
@@ -64,7 +64,7 @@ function g(e) {
       variant: "heading-sm/semibold",
       color: "header-primary",
       children: m.NW.string(m.t.KJEO29)
-    }), (0, r.jsx)(o.Z, {
+    }), (0, r.jsx)(u.Z, {
       guild: t.guild,
       onClick: g
     })]

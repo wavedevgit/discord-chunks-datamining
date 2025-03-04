@@ -20,8 +20,8 @@ var r, i = n(200651),
   v = n(952164),
   y = n(768419),
   x = n(456432),
-  O = n(347475),
-  E = n(789407),
+  E = n(347475),
+  O = n(789407),
   j = n(598077),
   N = n(757266),
   C = n(831506),
@@ -34,8 +34,8 @@ var r, i = n(200651),
   Z = n(417363),
   k = n(768581),
   R = n(358085),
-  L = n(804739),
-  D = n(410575),
+  D = n(804739),
+  L = n(410575),
   M = n(981631),
   W = n(701488);
 
@@ -89,7 +89,7 @@ class H extends(r = a.PureComponent) {
       let t = (0, p.Z)(e, n.id);
       if (null != t) return t
     }
-    return null == n || n instanceof E.ZP ? null : k.ZP.getApplicationIconURL({
+    return null == n || n instanceof O.ZP ? null : k.ZP.getApplicationIconURL({
       id: n.id,
       icon: null != t ? t.coverImage : n.coverImage,
       size: W.cc
@@ -112,8 +112,8 @@ class H extends(r = a.PureComponent) {
     return null != t && null != t.primarySkuId && !e && R.isPlatformEmbedded
   }
   render() {
-    return (0, i.jsx)(D.Z, {
-      section: D.Z.Sections.APPLICATION_EMBED,
+    return (0, i.jsx)(L.Z, {
+      section: L.Z.Sections.APPLICATION_EMBED,
       children: this.renderEmbed()
     })
   }
@@ -190,7 +190,7 @@ class H extends(r = a.PureComponent) {
         message: a,
         analyticsLocations: o
       } = this.props;
-      return null == n ? null : (0, i.jsx)(O.Z, B(U({}, t), {
+      return null == n ? null : (0, i.jsx)(E.Z, B(U({}, t), {
         userId: e.id,
         guildId: null != r ? r : void 0,
         channelId: n,
@@ -313,7 +313,7 @@ let V = o.ZP.connectStores([y.Z, C.Z, T.Z, P.Z, N.Z, w.Z, S.Z, b.Z, Z.Z, A.defau
     myPartyId: null != d && null != d.party ? d.party.id : null,
     isLaunching: u,
     isSyncable: m && !h,
-    isLaunchable: null != s && (0, L.t)({
+    isLaunchable: null != s && (0, D.t)({
       LibraryApplicationStore: S.Z,
       LaunchableGameStore: b.Z,
       DispatchApplicationStore: Z.Z,

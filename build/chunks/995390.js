@@ -70,10 +70,10 @@ function N(e, t, n) {
     _ = null != n ? N : o,
     C = r.useMemo(() => null != O ? O : v({}, null != _ ? _ : {}), [O, _]),
     I = r.useMemo(() => Object.keys(C).length, [C]),
-    E = r.useMemo(() => null == _ || null == C ? null : !a().isEqual(_, C), [_, C]);
+    S = r.useMemo(() => null == _ || null == C ? null : !a().isEqual(_, C), [_, C]);
   return r.useEffect(() => {
-    y === t && (E ? c.Z.startEditingCommandPermissions(y) : c.Z.stopEditingCommandPermissions(y))
-  }, [t, E, y]), {
+    y === t && (S ? c.Z.startEditingCommandPermissions(y) : c.Z.stopEditingCommandPermissions(y))
+  }, [t, S, y]), {
     originalApplicationPermissions: o,
     originalCommandPermissions: N,
     editedTargetPermissions: function(e, t) {
@@ -142,7 +142,7 @@ function N(e, t, n) {
         return l
       }, [N, n, i, a, t, O, y])
     }(e, C),
-    hasChanges: E,
+    hasChanges: S,
     selectedPermissionCount: I
   }
 }

@@ -1,9 +1,9 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => B,
   x: () => x
 }), n(47120);
-var r, i, l, o, a = n(392711),
+var r, i, o, l, a = n(392711),
   s = n.n(a),
   c = n(442837),
   u = n(570140),
@@ -21,14 +21,14 @@ var r, i, l, o, a = n(392711),
   j = n(734307),
   C = n(981631),
   x = ((i = {}).HIDDEN = "hidden", i.UNREAD = "unread", i.MENTIONS = "mentions", i.VOICE_CHANNELS = "voice-channels", i);
-let P = {
+let S = {
     mode: "hidden",
     mentionCount: 0,
     targetChannelId: null
   },
-  S = {
-    topBar: P,
-    bottomBar: P
+  P = {
+    topBar: S,
+    bottomBar: S
   },
   I = {},
   N = {};
@@ -56,9 +56,9 @@ function T(e) {
   var t, n, r;
   let {
     guildChannels: i
-  } = j.Z.getGuildWithoutChangingGuildActionRows(e), l = i.getChannels(null !== (t = N[e]) && void 0 !== t ? t : []);
-  if (null == l || 0 === l.length) return !1;
-  let o = null,
+  } = j.Z.getGuildWithoutChangingGuildActionRows(e), o = i.getChannels(null !== (t = N[e]) && void 0 !== t ? t : []);
+  if (null == o || 0 === o.length) return !1;
+  let l = null,
     a = null,
     c = null,
     u = null,
@@ -67,7 +67,7 @@ function T(e) {
     h = !1,
     f = i.getCategoryFromSection(i.voiceChannelsSectionNumber),
     g = null !== (n = null == f ? void 0 : f.getShownChannelIds()) && void 0 !== n ? n : [],
-    [m, v, y] = i.getSlicedChannels(l);
+    [m, v, y] = i.getSlicedChannels(o);
   for (let e = 0; e < v.length; e++) {
     let t = v[e];
     if ((Z(t.id) || s().some(t.threadIds, Z)) && (p = !1), (w(t.id) || s().some(t.threadIds, w)) && (d = !1), g.includes(t.id) && (h = !0), !p && !d && h) break
@@ -79,7 +79,7 @@ function T(e) {
   if (p || d)
     for (let e = m.length - 1; e >= 0; e--) {
       let t = m[e];
-      (Z(t.id) || s().some(t.threadIds, Z)) && (null == a && (a = t.id), O = !0), (w(t.id) || s().some(t.threadIds, w)) && (null == o && (o = t.id), _ += b.ZP.getMentionCount(t.id), _ += s().sumBy(t.threadIds, b.ZP.getMentionCount))
+      (Z(t.id) || s().some(t.threadIds, Z)) && (null == a && (a = t.id), O = !0), (w(t.id) || s().some(t.threadIds, w)) && (null == l && (l = t.id), _ += b.ZP.getMentionCount(t.id), _ += s().sumBy(t.threadIds, b.ZP.getMentionCount))
     }
   if (p || d)
     for (let e = 0; e < y.length; e++) {
@@ -87,35 +87,35 @@ function T(e) {
       if (!p && !d) break;
       (Z(t.id) || s().some(t.threadIds, Z)) && (null == u && (u = t.id), x = !0), (w(t.id) || s().some(t.threadIds, w)) && (null == c && (c = t.id), C += b.ZP.getMentionCount(t.id), C += s().sumBy(t.threadIds, b.ZP.getMentionCount))
     }
-  let S = null,
+  let P = null,
     T = null,
     A = null !== (r = null == f ? void 0 : f.getChannelRecords()) && void 0 !== r ? r : [];
-  d && C > 0 ? S = {
+  d && C > 0 ? P = {
     mode: "mentions",
     mentionCount: C,
     targetChannelId: c
-  } : !h && s().some(A, E) ? S = {
+  } : !h && s().some(A, E) ? P = {
     mode: "voice-channels",
     mentionCount: 0,
     targetChannelId: null
-  } : p && x && (S = {
+  } : p && x && (P = {
     mode: "unread",
     mentionCount: 0,
     targetChannelId: u
   }), d && _ > 0 ? T = {
     mode: "mentions",
     mentionCount: _,
-    targetChannelId: o
+    targetChannelId: l
   } : p && O && (T = {
     mode: "unread",
     mentionCount: 0,
     targetChannelId: a
   });
-  let D = null != T && (null == S || "mentions" !== S.mode && "mentions" === T.mode),
-    R = null != S && ("mentions" === S.mode || !D);
+  let D = null != T && (null == P || "mentions" !== P.mode && "mentions" === T.mode),
+    R = null != P && ("mentions" === P.mode || !D);
   return I[e] = {
-    topBar: D && null != T ? T : P,
-    bottomBar: R && null != S ? S : P
+    topBar: D && null != T ? T : S,
+    bottomBar: R && null != P ? P : S
   }, !0
 }
 let A = s().throttle(T, 200);
@@ -166,15 +166,15 @@ class G extends(r = c.ZP.Store) {
   }
   getUnreadStateForGuildId(e) {
     var t;
-    return null !== (t = I[e]) && void 0 !== t ? t : S
+    return null !== (t = I[e]) && void 0 !== t ? t : P
   }
 }
-o = "ChannelListUnreadsStore", (l = "displayName") in G ? Object.defineProperty(G, l, {
-  value: o,
+l = "ChannelListUnreadsStore", (o = "displayName") in G ? Object.defineProperty(G, o, {
+  value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : G[l] = o;
+}) : G[o] = l;
 let B = new G(u.Z, {
   UPDATE_CHANNEL_LIST_DIMENSIONS: function(e) {
     let {

@@ -1,12 +1,12 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
-  N: () => l
+  N: () => o
 });
 var r = n(200651);
 n(192379);
 var i = n(481060);
 
-function l(e) {
+function o(e) {
   return (0, r.jsx)(i.mAB, {
     count: e
   })

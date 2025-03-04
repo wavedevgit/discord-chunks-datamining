@@ -1,4 +1,4 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 e.exports = {
   container: "container__5b40b",
   spine: "spine__5b40b",

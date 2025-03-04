@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => N
+  Z: () => O
 }), n(47120), n(301563);
 var r = n(200651),
   a = n(192379),
@@ -14,8 +14,8 @@ var r = n(200651),
   m = n(258732),
   h = n(592125),
   x = n(699516),
-  f = n(594174),
-  p = n(55589),
+  p = n(594174),
+  f = n(55589),
   b = n(630388),
   _ = n(98357),
   g = n(432877),
@@ -25,18 +25,18 @@ var r = n(200651),
 
 function C() {
   var e;
-  let t = (0, s.Wu)([p.Z], () => p.Z.getSortedChannels()[1]),
+  let t = (0, s.Wu)([f.Z], () => f.Z.getSortedChannels()[1]),
     [n, l] = a.useState(t.length > 0 ? t[0].channelId : void 0),
     {
       selectedChannel: i,
       options: _
-    } = (0, s.cj)([h.Z, f.default, x.Z], () => ({
+    } = (0, s.cj)([h.Z, p.default, x.Z], () => ({
       selectedChannel: h.Z.getChannel(n),
       options: t.map(e => {
         let t = h.Z.getChannel(e.channelId);
         return {
           value: e.channelId,
-          label: null != t ? (0, u.F6)(t, f.default, x.Z) : e.channelId
+          label: null != t ? (0, u.F6)(t, p.default, x.Z) : e.channelId
         }
       })
     })),
@@ -79,7 +79,7 @@ function C() {
   })
 }
 
-function N() {
+function O() {
   let e = g.ZP.allByCategory(g.zU.MESSAGING).map(e => {
     let [t, n, {
       label: a

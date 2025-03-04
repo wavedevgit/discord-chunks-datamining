@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   u: () => L
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  l = n(91192),
-  o = n(442837),
+  o = n(91192),
+  l = n(442837),
   a = n(433517),
   s = n(481060),
   c = n(339149),
@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(941128),
   C = n(780570),
   x = n(278464),
-  P = n(276952),
-  S = n(682662),
+  S = n(276952),
+  P = n(682662),
   I = n(662146),
   N = n(674552),
   Z = n(981631),
@@ -54,7 +54,7 @@ function R(e) {
     badge: b,
     link: v,
     showProgressBadge: y
-  } = e, _ = (0, o.e7)([u.Z], () => u.Z.isEditorOpen), [O, j] = i.useState(!1), [C, x] = i.useState(!1), [w, R] = i.useState(null), [L, k] = i.useState(0), M = (0, l.Ie)("home"), G = (0, p.Q3)("DefaultHomeButton"), B = () => {
+  } = e, _ = (0, l.e7)([u.Z], () => u.Z.isEditorOpen), [O, j] = i.useState(!1), [C, x] = i.useState(!1), [w, R] = i.useState(null), [L, k] = i.useState(0), M = (0, o.Ie)("home"), G = (0, p.Q3)("DefaultHomeButton"), B = () => {
     R(null), k(0), clearTimeout(w)
   };
   if (null == f) return null;
@@ -133,8 +133,8 @@ function R(e) {
       inlineSpecs: D,
       tutorialId: "friends-list",
       position: "right",
-      children: (0, r.jsxs)(S.H, {
-        children: [(0, r.jsx)(P.Z, {
+      children: (0, r.jsxs)(P.H, {
+        children: [(0, r.jsx)(S.Z, {
           selected: h,
           hovered: O,
           className: A.pill
@@ -152,7 +152,7 @@ function R(e) {
 
 function L() {
   let e = (0, x.n)(),
-    t = (0, o.e7)([j.Z, O.Z], () => {
+    t = (0, l.e7)([j.Z, O.Z], () => {
       let e = (0, c.E)(j.Z.activeItems, O.Z),
         {
           total: t,
@@ -164,14 +164,14 @@ function L() {
     n = (0, f.If)(),
     i = Object.keys(w.nG),
     {
-      unviewedTrialCount: l,
+      unviewedTrialCount: o,
       unviewedDiscountCount: a
-    } = (0, o.cj)([y.Z], () => ({
+    } = (0, l.cj)([y.Z], () => ({
       unviewedTrialCount: y.Z.getUnacknowledgedOffers(i).length,
       unviewedDiscountCount: y.Z.getUnacknowledgedDiscountOffers().length
     })),
-    s = l + a,
-    u = (0, o.e7)([v.default], () => v.default.getCurrentUser()),
+    s = o + a,
+    u = (0, l.e7)([v.default], () => v.default.getCurrentUser()),
     d = (0, h.q)(),
     p = n + s + d,
     g = p === s && s > 0 && n + d === 0,

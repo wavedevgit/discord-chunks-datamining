@@ -1,12 +1,12 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => c
 }), n(47120);
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  l = n(619915),
-  o = n(449932),
+  o = n(619915),
+  l = n(449932),
   a = n(561788),
   s = n(248657);
 
@@ -14,7 +14,7 @@ function c(e) {
   let {
     channel: t,
     onAction: n
-  } = e, c = (0, l.ZP)(t), u = Array.from((0, l.uF)(c).values());
+  } = e, c = (0, o.ZP)(t), u = Array.from((0, o.uF)(c).values());
   return 0 === u.length ? null : (0, r.jsxs)(i.Ttm, {
     className: s.container,
     children: [(0, r.jsx)("div", {
@@ -25,10 +25,10 @@ function c(e) {
     }), (0, r.jsx)("div", {
       className: s.headerDivider
     }), u.map((e, i) => {
-      var l;
-      return (0, r.jsx)(o.Z, {
+      var o;
+      return (0, r.jsx)(l.Z, {
         embeddedApp: e,
-        presenceActivity: null !== (l = e.presenceActivity) && void 0 !== l ? l : void 0,
+        presenceActivity: null !== (o = e.presenceActivity) && void 0 !== o ? o : void 0,
         channel: t,
         onAction: n
       }, i)

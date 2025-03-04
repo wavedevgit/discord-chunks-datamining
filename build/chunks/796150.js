@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   a = n.n(i),
   l = n(793030),
-  o = n(924489),
-  s = n(824606),
+  o = n(194594),
+  s = n(359993),
   c = n(424472),
   d = n(682807),
   u = n(691703),
@@ -21,7 +21,7 @@ function g(e) {
     className: t,
     view: n,
     application: i
-  } = e, g = "embedded" === n, f = (0, s.Z)({
+  } = e, g = "embedded" === n, _ = (0, s.Z)({
     application: i
   });
   return (0, r.jsxs)("div", {
@@ -41,7 +41,7 @@ function g(e) {
           children: m.NW.string(m.t["3NxHCw"])
         }), (0, r.jsx)(o.Z, {
           application: i,
-          mutualGuilds: f,
+          mutualGuilds: _,
           mutualGuildShownMax: 3,
           className: h.guildCountContainer,
           guildIconSize: o.x.SMALL,

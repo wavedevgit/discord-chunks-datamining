@@ -12,8 +12,8 @@ var r = n(200651),
   u = n(129293),
   d = n(388905),
   h = n(108427),
-  p = n(981631),
-  g = n(388032),
+  g = n(981631),
+  p = n(388032),
   f = n(802138);
 
 function m(e) {
@@ -28,8 +28,8 @@ function _(e) {
 
   function b() {
     return "Android" === a().os.family || "iOS" === a().os.family ? null : (0, r.jsx)(d.zx, {
-      onClick: () => o(p.Z5c.LOGIN),
-      children: g.NW.string(g.t.dKhVQE)
+      onClick: () => o(g.Z5c.LOGIN),
+      children: p.NW.string(p.t.dKhVQE)
     })
   }
   return ((0, c.ZP)(() => {
@@ -52,10 +52,10 @@ function _(e) {
       className: f.marginBottom20
     }), (0, r.jsx)(d.Dx, {
       className: f.marginBottom8,
-      children: g.NW.string(g.t["f/54a2"])
+      children: p.NW.string(p.t["f/54a2"])
     }), (0, r.jsx)(d.DK, {
       className: f.marginBottom40,
-      children: g.NW.string(g.t.i3ehMj)
+      children: p.NW.string(p.t.i3ehMj)
     }), b()]
   }) : "succeeded" === l ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)("img", {
@@ -64,14 +64,14 @@ function _(e) {
       className: f.marginBottom20
     }), (0, r.jsx)(d.Dx, {
       className: f.marginBottom8,
-      children: g.NW.string(g.t.iG0SlJ)
+      children: p.NW.string(p.t.iG0SlJ)
     }), (0, r.jsx)(d.DK, {
       className: f.marginBottom40,
-      children: g.NW.string(g.t["Elv+qq"])
+      children: p.NW.string(p.t["Elv+qq"])
     }), b()]
   }) : (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Hh, {}), (0, r.jsx)(d.Dx, {
-      children: g.NW.string(g.t["9exy+f"])
+      children: p.NW.string(p.t["9exy+f"])
     })]
   })
 }

@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => y
 });
 var r = n(200651),
   i = n(192379),
-  l = n(442837),
-  o = n(704215),
+  o = n(442837),
+  l = n(704215),
   a = n(481060),
   s = n(566840),
   c = n(693546),
@@ -23,7 +23,7 @@ function y(e) {
   let {
     guild: t,
     selected: n
-  } = e, y = (0, d.jS)(t.id, "Guild Sidebar"), _ = (0, l.e7)([g.Z], () => g.Z.can(b.Plq.KICK_MEMBERS, t)), O = (0, l.e7)([u.Z], () => u.Z.getSubmittedGuildJoinRequestTotal(t.id)), j = y && _ && null != O ? O : 0;
+  } = e, y = (0, d.jS)(t.id, "Guild Sidebar"), _ = (0, o.e7)([g.Z], () => g.Z.can(b.Plq.KICK_MEMBERS, t)), O = (0, o.e7)([u.Z], () => u.Z.getSubmittedGuildJoinRequestTotal(t.id)), j = y && _ && null != O ? O : 0;
   i.useEffect(() => {
     _ && y && t.hasFeature(b.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && t.hasFeature(b.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.Z.fetchGuildJoinRequests({
       guildId: t.id,
@@ -34,7 +34,7 @@ function y(e) {
   let C = i.useCallback(() => {
       (0, m._X)(t.id)
     }, [t.id]),
-    x = (0, s.XL)(t.id, o.z.MEMBERS_LAUNCH_UPSELL);
+    x = (0, s.XL)(t.id, l.z.MEMBERS_LAUNCH_UPSELL);
   return (0, r.jsx)("div", {
     ref: x,
     children: (0, r.jsx)(f.m, {

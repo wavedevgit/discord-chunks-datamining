@@ -83,8 +83,8 @@ function h(e) {
     productType: v,
     onTapCard: y,
     actionMenu: x,
-    showOpaqueBackground: O = !1,
-    hideRoleTag: E = !1,
+    showOpaqueBackground: E = !1,
+    hideRoleTag: O = !1,
     lineClamp: j = 1,
     cardWidth: N = 332,
     cardHeight: C,
@@ -123,7 +123,7 @@ function h(e) {
         }), _ && (0, r.jsx)(f, {
           onShowFullDescription: b,
           variant: S
-        }), E || null == h || "" === h.name ? null : (0, r.jsxs)(r.Fragment, {
+        }), O || null == h || "" === h.name ? null : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(o.LZC, {
             size: 16
           }), (0, r.jsx)(d.Z, {
@@ -153,7 +153,7 @@ function h(e) {
     })]
   });
   return null == y ? (0, r.jsx)("article", {
-    className: a()(p.productCard, O ? p.opaqueBackground : p.solidBackground),
+    className: a()(p.productCard, E ? p.opaqueBackground : p.solidBackground),
     "aria-labelledby": P,
     children: A
   }) : (0, r.jsx)("div", {
@@ -166,7 +166,7 @@ function h(e) {
       "aria-label": u.NW.formatToPlainString(u.t["e+TmJS"], {
         productName: n
       }),
-      className: a()(p.productCard, O ? p.opaqueBackground : p.solidBackground, p.cardClickableContainer),
+      className: a()(p.productCard, E ? p.opaqueBackground : p.solidBackground, p.cardClickableContainer),
       onClick: y,
       children: A
     })

@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   T: () => v
 });
 var r = n(200651),
   i = n(192379),
-  l = n(91192),
-  o = n(442837),
+  o = n(91192),
+  l = n(442837),
   a = n(481060),
   s = n(44315),
   c = n(563534),
@@ -28,13 +28,13 @@ let v = i.memo(function(e) {
   var t, n;
   let {
     guild: v
-  } = e, y = (0, o.e7)([c.Z], () => c.Z.getNewMemberActions(v.id), [v.id]), _ = (0, o.e7)([u.Z], () => u.Z.getCompletedActions(v.id)), O = i.useMemo(() => {
+  } = e, y = (0, l.e7)([c.Z], () => c.Z.getNewMemberActions(v.id), [v.id]), _ = (0, l.e7)([u.Z], () => u.Z.getCompletedActions(v.id)), O = i.useMemo(() => {
     if (null == y || null == _) return 0;
     let e = 0;
     return y.forEach(t => {
       null != _[t.channelId] && e++
     }), e
-  }, [_, y]), j = null == y ? 0 : y.length, C = (0, l.JA)("progress-bar-".concat(v.id));
+  }, [_, y]), j = null == y ? 0 : y.length, C = (0, o.JA)("progress-bar-".concat(v.id));
   return (0, r.jsxs)("li", {
     children: [(0, r.jsxs)(a.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {

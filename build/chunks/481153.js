@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => O
+  Z: () => j
 });
 var r = n(200651),
   i = n(192379),
@@ -12,8 +12,8 @@ var r = n(200651),
   u = n(388905),
   d = n(925329),
   h = n(479446),
-  p = n(981632),
-  g = n(594174),
+  g = n(981632),
+  p = n(594174),
   f = n(509545),
   m = n(55563),
   _ = n(296848),
@@ -23,7 +23,7 @@ var r = n(200651),
   v = n(722515),
   I = n(612064),
   E = n(802138);
-let O = l.ZP.connectStores([m.Z, c.Z, f.Z, g.default], e => {
+let j = l.ZP.connectStores([m.Z, c.Z, f.Z, p.default], e => {
   let {
     giftCode: t
   } = e, n = m.Z.get(t.skuId), {
@@ -33,7 +33,7 @@ let O = l.ZP.connectStores([m.Z, c.Z, f.Z, g.default], e => {
     sku: n,
     subscriptionPlan: null != r ? (0, _.oE)(r) : null,
     application: c.Z.getApplication(n.applicationId),
-    gifter: g.default.getUser(t.userId)
+    gifter: p.default.getUser(t.userId)
   }
 })(e => {
   let {
@@ -42,15 +42,15 @@ let O = l.ZP.connectStores([m.Z, c.Z, f.Z, g.default], e => {
     gifter: o,
     sku: l,
     application: c,
-    subscriptionPlan: g
+    subscriptionPlan: p
   } = e, f = null == o ? x.NW.string(x.t.lTGZAg) : x.NW.formatToPlainString(x.t.TjWdPT, {
     username: o.username
   }), m = l.name;
-  return null != g && (m = x.NW.formatToPlainString(g.interval === N.rV.MONTH ? x.t.CTpcCQ : x.t.rgPWGx, {
+  return null != p && (m = x.NW.formatToPlainString(p.interval === N.rV.MONTH ? x.t.CTpcCQ : x.t.rgPWGx, {
     skuName: l.name,
-    intervalCount: g.intervalCount
+    intervalCount: p.intervalCount
   })), (0, r.jsxs)(i.Fragment, {
-    children: [null != n.giftStyle ? (0, r.jsx)(p.Z, {
+    children: [null != n.giftStyle ? (0, r.jsx)(g.Z, {
       defaultAnimationState: h.SR.LOOP,
       giftStyle: n.giftStyle,
       className: v.seasonalIcon

@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => N
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  o = n(120356),
+  l = n.n(o),
   a = n(442837),
   s = n(481060),
   c = n(616780),
@@ -24,14 +24,14 @@ var r = n(200651),
   j = n(876548),
   C = n(543432),
   x = n(981631),
-  P = n(388032),
-  S = n(248657),
+  S = n(388032),
+  P = n(248657),
   I = n(270779);
 
 function N(e) {
-  var t, l;
+  var t, o;
   let {
-    channel: o,
+    channel: l,
     guild: h,
     onAction: f,
     voiceStates: g,
@@ -51,8 +51,8 @@ function N(e) {
       }
     }, [e, t]);
     (0, c.$)(n)
-  }(o, g);
-  let O = (0, u.ZP)(o),
+  }(l, g);
+  let O = (0, u.ZP)(l),
     j = Array.from((0, u.uF)(O).values()),
     C = null !== (t = null == g ? void 0 : g.filter(v.lm)) && void 0 !== t ? t : [],
     I = e => t => [x.IIU.PLAYING, x.IIU.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId) || t.type === x.IIU.LISTENING,
@@ -61,9 +61,9 @@ function N(e) {
       return C.forEach(t => {
         let n = m.Z.findActivity(t.user.id, I(t));
         if (null != n && !(0, p.Z)(n)) {
-          var r, i, l, o;
-          let a = "".concat(null !== (i = n.application_id) && void 0 !== i ? i : "", ":").concat(null !== (l = null === (r = n.party) || void 0 === r ? void 0 : r.id) && void 0 !== l ? l : t.user.id),
-            s = null !== (o = e[a]) && void 0 !== o ? o : {
+          var r, i, o, l;
+          let a = "".concat(null !== (i = n.application_id) && void 0 !== i ? i : "", ":").concat(null !== (o = null === (r = n.party) || void 0 === r ? void 0 : r.id) && void 0 !== o ? o : t.user.id),
+            s = null !== (l = e[a]) && void 0 !== l ? l : {
               members: [],
               activity: n
             };
@@ -72,19 +72,19 @@ function N(e) {
       }), Object.values(e)
     }, [C], a.pF);
   return N.length + j.length === 0 ? null : (0, r.jsxs)(s.Ttm, {
-    className: S.container,
+    className: P.container,
     children: [(0, r.jsx)(Z, {
-      channel: o,
+      channel: l,
       isChannelSelected: b,
-      voiceStatesCount: null !== (l = null == g ? void 0 : g.length) && void 0 !== l ? l : 0
+      voiceStatesCount: null !== (o = null == g ? void 0 : g.length) && void 0 !== o ? o : 0
     }), (0, r.jsx)("div", {
-      className: S.headerDivider
+      className: P.headerDivider
     }), j.map((e, t) => {
       var n;
       return (0, r.jsx)(_.Z, {
         embeddedApp: e,
         presenceActivity: null !== (n = e.presenceActivity) && void 0 !== n ? n : void 0,
-        channel: o,
+        channel: l,
         onAction: f
       }, t)
     }), N.map((e, t) => {
@@ -94,19 +94,19 @@ function N(e) {
       } = e;
       return (0, r.jsx)(_.Z, {
         presenceActivity: i,
-        channel: o,
+        channel: l,
         members: n,
         onAction: f
       }, t)
     }), y && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: S.headerDivider
+        className: P.headerDivider
       }), (0, r.jsx)("div", {
-        className: S.settingNudgeText,
+        className: P.settingNudgeText,
         children: (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           tag: "span",
-          children: P.NW.format(P.t.ePyoY2, {
+          children: S.NW.format(S.t.ePyoY2, {
             onClick: () => {
               (0, s.ZDy)(async () => {
                 let {
@@ -158,14 +158,14 @@ function Z(e) {
     channel: t,
     isChannelSelected: n,
     voiceStatesCount: i
-  } = e, l = (0, a.e7)([g.Z], () => !g.Z.can(x.Plq.CONNECT, t)), s = (0, a.e7)([b.Z], () => b.Z.hasVideo(t.id)), c = (0, y.ZP)({
+  } = e, o = (0, a.e7)([g.Z], () => !g.Z.can(x.Plq.CONNECT, t)), s = (0, a.e7)([b.Z], () => b.Z.hasVideo(t.id)), c = (0, y.ZP)({
     channel: t,
-    locked: l,
+    locked: o,
     video: s,
     selected: n
   }), u = (0, a.e7)([f.Z], () => f.Z.getGuild(t.guild_id));
   return null == (0, h.KS)(t, u) ? null : (0, r.jsxs)("div", {
-    className: o()(S.popoutHeaderContainer, I.popoutHeaderContainer),
+    className: l()(P.popoutHeaderContainer, I.popoutHeaderContainer),
     children: [(0, r.jsx)(O.Z, {
       channel: t
     }), c ? (0, r.jsx)(j.Z, {

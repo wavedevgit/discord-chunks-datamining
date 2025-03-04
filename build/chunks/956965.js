@@ -15,10 +15,10 @@ var r = n(200651),
   m = n(768581),
   h = n(829409),
   g = n(360486);
-let f = 16 / 9,
-  _ = 325 / 72;
+let _ = 16 / 9,
+  f = 325 / 72;
 
-function v(e) {
+function b(e) {
   let {
     application: t,
     isHovered: n,
@@ -33,18 +33,18 @@ function v(e) {
     let e = (0, u.yJ)(t);
     return null != e && null != e.activity_preview_video_asset_id ? (0, c.Z)(t.id, e.activity_preview_video_asset_id) : null
   }, [t]), {
-    imageUrl: f,
-    imageUrlAnimated: _
+    imageUrl: _,
+    imageUrlAnimated: f
   } = i.useMemo(() => "fetched" === m.state && null != m.url ? {
     imageUrl: m.url
   } : {
     imageUrl: a,
     imageUrlAnimated: o
-  }, [m.state, m.url, a, o]), v = null != f, j = null != h;
+  }, [m.state, m.url, a, o]), b = null != _, j = null != h;
   return "loading" === m.state ? null : j ? (0, r.jsxs)(r.Fragment, {
-    children: [v ? (0, r.jsx)(b, {
+    children: [b ? (0, r.jsx)(v, {
       isHovered: n,
-      url: f,
+      url: _,
       animatedUrl: void 0
     }) : (0, r.jsx)(p.Z, {
       src: h,
@@ -55,16 +55,16 @@ function v(e) {
       url: h,
       isVideo: !0
     })]
-  }) : v ? (0, r.jsx)(b, {
+  }) : b ? (0, r.jsx)(v, {
     isHovered: n,
-    url: f,
-    animatedUrl: _
+    url: _,
+    animatedUrl: f
   }) : (0, r.jsx)(C, {
     iconURL: s
   })
 }
 
-function b(e) {
+function v(e) {
   let {
     isHovered: t,
     url: n,
@@ -159,18 +159,18 @@ let j = function(e) {
   return (0, r.jsx)("div", {
     className: g.bannerContainer,
     style: {
-      aspectRatio: "card" === n ? f : _
+      aspectRatio: "card" === n ? _ : f
     },
     onMouseEnter: p,
     onFocus: p,
     onMouseLeave: h,
     onBlur: h,
-    children: "card" === n && x ? (0, r.jsx)(v, {
+    children: "card" === n && x ? (0, r.jsx)(b, {
       application: t,
       isHovered: c,
       botBannerUrl: null == y ? void 0 : y,
       botBannerUrlAnimated: null == I ? void 0 : I
-    }) : null != y ? (0, r.jsx)(b, {
+    }) : null != y ? (0, r.jsx)(v, {
       isHovered: c,
       url: y,
       animatedUrl: I

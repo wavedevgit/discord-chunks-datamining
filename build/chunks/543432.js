@@ -1,26 +1,26 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
-  Z: () => o
+  Z: () => l
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  l = n(354683);
+  o = n(354683);
 
-function o(e) {
+function l(e) {
   let {
     userCount: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: l.container,
+    className: o.container,
     children: [(0, r.jsx)(i.BFJ, {
       size: "xxs",
       color: "currentColor",
-      className: l.peopleIcon
+      className: o.peopleIcon
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",
-      className: l.userCountText,
+      className: o.userCountText,
       children: t
     })]
   })

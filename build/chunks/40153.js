@@ -1,4 +1,4 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   OG: () => C,
   ZP: () => O,
@@ -6,8 +6,8 @@ n.d(t, {
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  o = n(120356),
+  l = n.n(o),
   a = n(512722),
   s = n.n(a),
   c = n(584922),
@@ -55,9 +55,9 @@ function y(e) {
   let {
     name: t,
     targetNode: n,
-    combine: l,
-    below: o
-  } = e, a = i.useMemo(() => v([p.eD.GUILD, p.eD.FOLDER], n, o, l), [n, o, l]), [{
+    combine: o,
+    below: l
+  } = e, a = i.useMemo(() => v([p.eD.GUILD, p.eD.FOLDER], n, l, o), [n, l, o]), [{
     canDrop: s,
     isOver: u
   }, d] = (0, c.L)(a), h = b([
@@ -79,14 +79,14 @@ function _(e) {
   let {
     name: t,
     targetNode: n,
-    onDragOverChanged: l
+    onDragOverChanged: o
   } = e, [{
     canDrop: a,
     isOver: s
   }, u] = (0, c.L)(() => v([p.eD.GUILD], n, !0, !0));
   i.useEffect(() => {
-    null == l || l(s)
-  }, [l, s]);
+    null == o || o(s)
+  }, [o, s]);
   let d = b([
     [a, m.autoPointerEvents],
     [s, m.dragOver]
@@ -104,7 +104,7 @@ function _(e) {
       "data-dnd-name": g.NW.formatToPlainString(g.t.qiQ0QE, {
         itemName: t
       }),
-      className: o()(m.centerTarget, {})
+      className: l()(m.centerTarget, {})
     })
   })
 }
@@ -113,8 +113,8 @@ let O = i.memo(function(e) {
     name: t,
     targetNode: n,
     noCombine: i = !1,
-    below: l = !1,
-    onDragOverChanged: o
+    below: o = !1,
+    onDragOverChanged: l
   } = e, a = !i && null == n.parentId;
   return (0, r.jsxs)("div", {
     className: m.wrapper,
@@ -122,11 +122,11 @@ let O = i.memo(function(e) {
     children: [(0, r.jsx)(y, {
       name: t,
       targetNode: n,
-      below: l
+      below: o
     }), a ? (0, r.jsx)(_, {
       name: t,
       targetNode: n,
-      onDragOverChanged: o
+      onDragOverChanged: l
     }) : null]
   })
 });
@@ -137,11 +137,11 @@ function j(e) {
     targetNode: n
   } = e, [{
     canDrop: i,
-    isOver: l
-  }, o] = (0, c.L)(() => v([p.eD.GUILD], n, !0, !0)), a = b([
-    [l, m.wrapperOver]
+    isOver: o
+  }, l] = (0, c.L)(() => v([p.eD.GUILD], n, !0, !0)), a = b([
+    [o, m.wrapperOver]
   ]), s = b([
-    [l, m.dragOver],
+    [o, m.dragOver],
     [i, m.autoPointerEvents]
   ]);
   return (0, r.jsx)("div", {
@@ -152,7 +152,7 @@ function j(e) {
       className: m.folderTarget,
       children: (0, r.jsx)("div", {
         ref: e => {
-          s.current = e, o(e)
+          s.current = e, l(e)
         },
         "aria-label": "At end of ".concat(t),
         className: m.target

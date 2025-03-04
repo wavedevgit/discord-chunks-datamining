@@ -1,17 +1,17 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
-  X: () => o
+  X: () => l
 }), n(442837);
 var r = n(868854),
   i = n(801077),
-  l = n(674563);
+  o = n(674563);
 
-function o() {
+function l() {
   let e = (0, r.a)();
   return function(e, t) {
     let n = e.reduce((e, t) => {
       var n;
-      let r = null !== (n = t.party.currentActivities.filter(e => null != e.game.name && e.game.type === l.wW.GAME).map(e => e.game.name)) && void 0 !== n ? n : [];
+      let r = null !== (n = t.party.currentActivities.filter(e => null != e.game.name && e.game.type === o.wW.GAME).map(e => e.game.name)) && void 0 !== n ? n : [];
       return e.concat(r)
     }, []);
     return {

@@ -1,4 +1,4 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   O: () => u,
   Z: () => d
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  l = n.n(i),
-  o = n(377171),
+  o = n.n(i),
+  l = n(377171),
   a = n(549631),
   s = n(192493),
   c = n(691878);
@@ -21,10 +21,10 @@ function d(e) {
     locked: t
   } = e;
   return (0, r.jsx)("div", {
-    className: l()(c.iconItem, s.premiumChannelIcon),
+    className: o()(c.iconItem, s.premiumChannelIcon),
     children: (0, r.jsx)(a.Z, {
       className: c.actionIcon,
-      color: t ? o.Z.CREATOR_REVENUE_LOCKED_CHANNEL_ICON : void 0
+      color: t ? l.Z.CREATOR_REVENUE_LOCKED_CHANNEL_ICON : void 0
     })
   })
 }

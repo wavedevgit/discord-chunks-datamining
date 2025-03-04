@@ -1,6 +1,6 @@
 /**
   Module ID: 37697
-  Original File Name: 3e98ca4744ef431c
+  Original File Name: 3fe888a432b5db67
 **/
 @value headerBarHeight 60px;
 
@@ -413,13 +413,13 @@
     }
 }
 
-.container_a07a02 {
+.container__00b64 {
     position: relative;
     min-height: 150px;
     min-width: 150px
 }
 
-.spinnerContainer_a07a02 {
+.spinnerContainer__00b64 {
     position: absolute;
     top: 0;
     left: 0;
@@ -428,12 +428,12 @@
     display: flex
 }
 
-.spinner_a07a02 {
+.spinner__00b64 {
     justify-self: center;
     align-self: center
 }
 
-.loading_a07a02 {
+.loading__00b64 {
     opacity: .2
 }
 
@@ -1243,39 +1243,39 @@
     gap: 4px
 }
 
-.wrapper__52091 {
+.wrapper_bb856d {
     align-items: flex-start
 }
 
-.icons__52091,.wrapper__52091 {
+.icons_bb856d,.wrapper_bb856d {
     display: flex;
     flex-direction: row
 }
 
-.icons__52091 {
+.icons_bb856d {
     align-items: center;
     margin-right: 4px
 }
 
-.iconMask__52091 {
+.iconMask_bb856d {
     margin-right: -4px
 }
 
-.icon__52091 {
+.icon_bb856d {
     border-radius: 50%
 }
 
-.iconSmall__52091 {
+.iconSmall_bb856d {
     height: var(--custom-guild-count-small-icon-size);
     width: var(--custom-guild-count-small-icon-size)
 }
 
-.iconLarge__52091 {
+.iconLarge_bb856d {
     height: var(--custom-guild-count-large-icon-size);
     width: var(--custom-guild-count-large-icon-size)
 }
 
-.moreGuilds__52091 {
+.moreGuilds_bb856d {
     box-sizing: border-box;
     background-color: var(--background-tertiary);
     font-weight: 500;
@@ -1284,7 +1284,7 @@
     padding: 0 4px
 }
 
-.moreGuildsSmall__52091 {
+.moreGuildsSmall_bb856d {
     height: var(--custom-guild-count-small-icon-size);
     min-width: var(--custom-guild-count-small-icon-size);
     border-radius: var(--custom-guild-count-small-icon-size);
@@ -1292,7 +1292,7 @@
     line-height: var(--custom-guild-count-small-icon-size)
 }
 
-.moreGuildsLarge__52091 {
+.moreGuildsLarge_bb856d {
     height: var(--custom-guild-count-large-icon-size);
     min-width: var(--custom-guild-count-large-icon-size);
     border-radius: var(--custom-guild-count-large-icon-size);
@@ -1300,7 +1300,7 @@
     line-height: var(--custom-guild-count-large-icon-size)
 }
 
-.defaultIcon__52091 {
+.defaultIcon_bb856d {
     color: var(--interactive-normal)
 }
 
@@ -1365,7 +1365,7 @@
 
 @use postcss-pxtorem;
 
-.card__6faf3 {
+.card_c59071 {
     display: flex;
     flex-direction: column;
     min-height: 248px;
@@ -1373,11 +1373,11 @@
     border-radius: 8px
 }
 
-.card__6faf3:hover {
+.card_c59071:hover {
     cursor: pointer
 }
 
-.cardHeader__6faf3 {
+.cardHeader_c59071 {
     height: 108px;
     position: relative;
     display: block;
@@ -1385,7 +1385,7 @@
     margin-bottom: 33px
 }
 
-.splashImage__6faf3 {
+.splashImage_c59071 {
     position: absolute;
     top: 0;
     left: 0;
@@ -1397,18 +1397,18 @@
     border-top-right-radius: 8px
 }
 
-.guildIcon__6faf3 {
+.guildIcon_c59071 {
     position: absolute;
     bottom: -32px;
     left: 12px
 }
 
-.iconMask__6faf3 {
+.iconMask_c59071 {
     padding: 4px;
     background-color: var(--background-secondary-alt)
 }
 
-.cardDetails__6faf3 {
+.cardDetails_c59071 {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -1417,14 +1417,14 @@
     overflow: hidden
 }
 
-.guildNameWrapper__6faf3 {
+.guildNameWrapper_c59071 {
     display: flex;
     align-items: center;
     font-weight: 600;
     margin-bottom: 4px
 }
 
-.guildBadge__6faf3 {
+.guildBadge_c59071 {
     flex: 0 0 16px;
     width: 16px;
     height: 16px;
@@ -1432,30 +1432,30 @@
     margin-left: -2px
 }
 
-.guildName__6faf3 {
+.guildName_c59071 {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis
 }
 
-.guildDescription__6faf3 {
+.guildDescription_c59071 {
     flex: 1 1 auto;
     margin-bottom: 16px
 }
 
-.memberInfo__6faf3 {
+.memberInfo_c59071 {
     flex: 0;
     display: flex;
     align-items: center
 }
 
-.memberCountWrapper__6faf3 {
+.memberCountWrapper_c59071 {
     display: flex;
     flex-direction: row;
     align-items: center
 }
 
-.memberCountIcon__6faf3 {
+.memberCountIcon_c59071 {
     color: var(--header-secondary);
     margin-right: 4px
 }

@@ -24,11 +24,11 @@ var i = n(200651),
   j = n(367907),
   C = n(10718),
   g = n(895924),
-  P = n(151517),
-  A = n(674588),
-  I = n(368862),
-  _ = n(34674),
-  O = n(835473),
+  P = n(835473),
+  A = n(568100),
+  I = n(471518),
+  _ = n(425986),
+  O = n(216780),
   S = n(857192),
   T = n(630388),
   L = n(823379),
@@ -240,7 +240,7 @@ function er(e) {
       } = e;
       return t.id
     }) : [], [t, n]);
-    (0, O.Z)(i)
+    (0, P.Z)(i)
   }({
     apps: p,
     onlyActivityApps: o
@@ -401,7 +401,7 @@ function es(e) {
       location: n
     } = e, i = function() {
       let e = (0, h.e7)([S.default], () => S.default.onlyShowPreviewAppCollections),
-        t = P.Z.getCurrentConfig({
+        t = A.Z.getCurrentConfig({
           location: "App Launcher Home (Web)"
         }, {
           autoTrackExposure: !1
@@ -409,7 +409,7 @@ function es(e) {
       return e ? s.E.PREVIEW : t ? s.E.NON_STAFF_PREVIEW : s.E.ACTIVE
     }();
     l.useEffect(() => {
-      (0, A.XK)({
+      (0, I.XK)({
         surface: et,
         activeState: i
       })
@@ -427,10 +427,10 @@ function es(e) {
         includeFrecency: !0
       },
       allowFetch: !0
-    }), o = l.useCallback(e => null == r.find(t => t.id === e.id), [r]), c = (0, h.e7)([I.Z], () => I.Z.getFetchState({
+    }), o = l.useCallback(e => null == r.find(t => t.id === e.id), [r]), c = (0, h.e7)([_.Z], () => _.Z.getFetchState({
       surface: et,
       activeState: i
-    })), u = (0, h.e7)([I.Z], () => I.Z.getCollections({
+    })), u = (0, h.e7)([_.Z], () => _.Z.getCollections({
       surface: et,
       activeState: i
     })), d = n === a.I.APP_LAUNCHER_VOICE;
@@ -464,7 +464,7 @@ function es(e) {
   }({
     context: t,
     recommendationsSections: u
-  }), f = o === I.M.FETCHING, N = !f && 0 === u.length;
+  }), f = o === _.M.FETCHING, N = !f && 0 === u.length;
   return (l.useEffect(() => {
     r(N)
   }, [N, r]), N) ? null : f ? ee.map((e, t) => {
@@ -576,7 +576,7 @@ function ec(e) {
           installOnDemand: c,
           showsPromoted: u
         } = e;
-        return null != r && null != o && (l = (0, _.$_)({
+        return null != r && null != o && (l = (0, O.$_)({
           itemId: r,
           hash: o,
           containerWidth: Y.Gy

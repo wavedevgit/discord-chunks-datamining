@@ -24,11 +24,11 @@ var r = n(278074),
   v = n(839963),
   y = n(897325),
   x = n(57101),
-  O = n(562293),
-  E = n(981631),
+  E = n(562293),
+  O = n(981631),
   j = n(388032);
 let N = {
-  channelId: E.lds,
+  channelId: O.lds,
   selectedAnswerIds: new Set,
   submitting: !1,
   editing: !1,
@@ -77,8 +77,8 @@ function T(e, t) {
     poll: l
   } = e;
   if (null == l) return;
-  let m = e.state === E.yb.SENT,
-    f = m ? null != o ? o : (0, O.H)(l.expiry) : "",
+  let m = e.state === O.yb.SENT,
+    f = m ? null != o ? o : (0, E.H)(l.expiry) : "",
     h = null == f && m,
     {
       selectedAnswerIds: g,
@@ -101,13 +101,13 @@ function T(e, t) {
     Z = null != w ? u.ZP.getSelfMember(w) : null,
     k = (0, s.EY)(Z),
     R = (0, c.b)(Z),
-    L = !b && C && !T && m && !k && !R;
+    D = !b && C && !T && m && !k && !R;
   return {
     poll: l,
     canTapAnswers: A,
     canRemoveVote: T && m && !h,
     canShowVoteCounts: P,
-    canSubmitVote: L,
+    canSubmitVote: D,
     expirationLabel: f,
     hasSelectedAnswer: C,
     hasVoted: T,
@@ -134,11 +134,11 @@ function P(e, t) {
     poll: _
   } = e;
   if (null == _) return;
-  let O = m.default.getCurrentUser();
-  if (null == O) return;
-  let E = a.Z.useReducedMotion,
+  let E = m.default.getCurrentUser();
+  if (null == E) return;
+  let O = a.Z.useReducedMotion,
     N = null === (s = d.Z.getChannel(e.getChannelId())) || void 0 === s ? void 0 : null === (n = s.getGuildId) || void 0 === n ? void 0 : n.call(s),
-    S = (0, y.E)(O, N),
+    S = (0, y.E)(E, N),
     P = _.answers,
     A = _.layout_type,
     w = T(e, t, {
@@ -149,8 +149,8 @@ function P(e, t) {
     canTapAnswers: Z,
     canRemoveVote: k,
     canShowVoteCounts: R,
-    canSubmitVote: L,
-    expirationLabel: D = j.NW.string(j.t["e+J3JS"]),
+    canSubmitVote: D,
+    expirationLabel: L = j.NW.string(j.t["e+J3JS"]),
     hasSelectedAnswer: M,
     hasVoted: W,
     isEditingVote: F,
@@ -221,7 +221,7 @@ function P(e, t) {
       isVictor: U && g,
       didSelfVote: _,
       style: b,
-      shouldAnimateTransition: V && !E,
+      shouldAnimateTransition: V && !O,
       votesPercentage: Math.round(100 * p),
       votes: (0, r.EQ)(A).with(i.C.IMAGE_ONLY_ANSWERS, () => "(".concat(u.toLocaleString(), ")")).otherwise(() => j.NW.formatToPlainString(j.t.XRkuoa, {
         count: u.toLocaleString()
@@ -229,7 +229,7 @@ function P(e, t) {
     }
   }), J = (0, r.EQ)({
     isExpired: U,
-    canSubmitVote: L,
+    canSubmitVote: D,
     hasVoted: W,
     isEditingVote: F,
     canRemoveVote: k,
@@ -264,7 +264,7 @@ function P(e, t) {
   })).otherwise(() => ({
     label: j.NW.string(j.t.JwkNU1),
     presentation: "button",
-    enabled: L,
+    enabled: D,
     type: "submit"
   })), $ = (0, g.isIOS)() ? j.NW.string(j.t.PVATMz) : j.NW.string(j.t.cHfFqq), ee = (0, r.EQ)({
     isExpired: U,
@@ -286,7 +286,7 @@ function P(e, t) {
     type: "cancel"
   })).otherwise(() => ({
     label: X,
-    secondaryLabel: D,
+    secondaryLabel: L,
     accessibilityHint: $,
     presentation: "text",
     enabled: !0,

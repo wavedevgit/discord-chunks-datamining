@@ -1,12 +1,12 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   r: () => v,
   z: () => y
 });
 var r = n(200651),
   i = n(192379),
-  l = n(793030),
-  o = n(780384),
+  o = n(793030),
+  l = n(780384),
   a = n(481060),
   s = n(230711),
   c = n(410030),
@@ -36,7 +36,7 @@ let b = {
       children: [(0, r.jsx)("div", {
         className: g.gradient,
         style: {
-          background: "radial-gradient(75% 75% at 0% 0%, ".concat((0, o.wj)(y) ? b.topLeftDark : b.topLeftLight, " 0%, transparent 100%),\n    radial-gradient(70% 50% at 100% 0%, ").concat((0, o.wj)(y) ? b.topRightDark : b.topRightLight, " 0%, transparent 100%)")
+          background: "radial-gradient(75% 75% at 0% 0%, ".concat((0, l.wj)(y) ? b.topLeftDark : b.topLeftLight, " 0%, transparent 100%),\n    radial-gradient(70% 50% at 100% 0%, ").concat((0, l.wj)(y) ? b.topRightDark : b.topRightLight, " 0%, transparent 100%)")
         }
       }), (0, r.jsxs)("div", {
         className: g.content,
@@ -54,7 +54,7 @@ let b = {
           alt: "",
           src: m.Z,
           className: g.controllerImage
-        }), (0, r.jsx)(l.X6, {
+        }), (0, r.jsx)(o.X6, {
           variant: "heading-md/bold",
           color: "header-primary",
           className: g.nuxTitle,
@@ -91,14 +91,14 @@ let b = {
       closePopout: t,
       setToggleDefaultState: n
     } = e, {
-      analyticsLocations: o
+      analyticsLocations: l
     } = (0, d.ZP)(u.Z.SHARING_CONTROLS_COACHMARK), c = p.G6.useSetting(), m = (0, i.useRef)(null);
     return (0, a.Tbt)(m), (0, r.jsx)("div", {
       className: g.wrapper,
       ref: m,
       children: (0, r.jsxs)("div", {
         className: g.content,
-        children: [(0, r.jsx)(l.X6, {
+        children: [(0, r.jsx)(o.X6, {
           variant: "heading-sm/semibold",
           color: "header-primary",
           className: g.controlTitle,
@@ -109,7 +109,7 @@ let b = {
           children: f.NW.format(f.t.nEgjjo, {
             onClickSettings: () => {
               t(), s.Z.open(h.oAB.ACTIVITY_PRIVACY, null, {
-                analyticsLocations: o
+                analyticsLocations: l
               })
             }
           })

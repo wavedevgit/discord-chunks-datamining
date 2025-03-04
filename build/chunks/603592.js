@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => f
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  o = n(120356),
+  l = n.n(o),
   a = n(91192),
   s = n(481060),
   c = n(540059),
@@ -14,7 +14,7 @@ var r = n(200651),
   p = n(662146),
   h = n(638625);
 let f = i.forwardRef(function(e, t) {
-  var n, l;
+  var n, o;
   let {
     id: f,
     onClick: g,
@@ -27,8 +27,8 @@ let f = i.forwardRef(function(e, t) {
     lowerBadgeSize: j,
     showPill: C = !0,
     className: x,
-    "aria-label": P,
-    children: S,
+    "aria-label": S,
+    children: P,
     onMouseEnter: I,
     onMouseLeave: N,
     onMouseDown: Z
@@ -74,31 +74,31 @@ let f = i.forwardRef(function(e, t) {
             null == N || N(), A(!1)
           },
           onMouseDown: Z,
-          className: o()(h.circleIconButton, x, {
+          className: l()(h.circleIconButton, x, {
             [h.selected]: v || T
           }),
           onClick: g,
-          "aria-label": "string" == typeof y && null == P ? y : P,
+          "aria-label": "string" == typeof y && null == S ? y : S,
           onContextMenu: m,
           focusProps: {
             enabled: !1
           }
-        }, E), l = l = {
+        }, E), o = o = {
           children: null != b && (0, r.jsx)(b, {
             className: h.circleIcon,
             color: "currentColor"
           })
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(l)).forEach(function(e) {
-          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
+        })(Object(o)).forEach(function(e) {
+          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(o, e))
         }), n))
       })
-    }), S]
+    }), P]
   })
 })

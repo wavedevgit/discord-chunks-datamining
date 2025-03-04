@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   S: () => m
 });
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  o = n(120356),
+  l = n.n(o),
   a = n(481060),
   s = n(540059),
   c = n(593214),
@@ -17,9 +17,9 @@ var r = n(200651),
 
 function g() {
   return (0, r.jsx)("div", {
-    className: o()(h.row, h.rowGuildName),
+    className: l()(h.row, h.rowGuildName),
     children: (0, r.jsx)("span", {
-      className: o()(h.guildNameText, h.guildNameTextLimitedSize, p.tooltipText),
+      className: l()(h.guildNameText, h.guildNameTextLimitedSize, p.tooltipText),
       children: d.NW.string(d.t["4tSWQk"])
     })
   })
@@ -28,7 +28,7 @@ let m = i.memo(function(e) {
   let {
     "aria-label": t = !1,
     children: n
-  } = e, l = (0, s.Q3)("FavoritesAddedTooltip"), o = function() {
+  } = e, o = (0, s.Q3)("FavoritesAddedTooltip"), l = function() {
     let {
       favoriteAdded: e,
       clearFavoriteAdded: t
@@ -45,10 +45,10 @@ let m = i.memo(function(e) {
     }, [e, t]), e
   }();
   return (0, r.jsx)(a.ua7, {
-    forceOpen: o,
+    forceOpen: l,
     color: a.FGA.GREEN,
     hideOnClick: !0,
-    spacing: l ? 12 : 20,
+    spacing: o ? 12 : 20,
     position: "right",
     align: "center",
     text: (0, r.jsx)(g, {}),

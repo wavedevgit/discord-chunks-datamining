@@ -14,14 +14,14 @@ var r = n(200651),
   m = n(897674),
   h = n(561308),
   x = n(206583),
-  f = n(719461);
+  p = n(719461);
 
-function p(e) {
+function f(e) {
   let {
     id: t
   } = e, n = (0, a.e7)([s.default], () => s.default.getUser(t));
   return null == n ? null : (0, r.jsx)(l.P3F, {
-    className: f.entryAuthor,
+    className: p.entryAuthor,
     onClick: function() {
       (0, o.openUserProfileModal)({
         sourceAnalyticsLocations: [i.Z.DEV_TOOLS],
@@ -54,8 +54,8 @@ function b() {
     if (!(0, m.g)(n, t)) return [];
     let a = i[(0, c.T)(t)];
     return (0, r.jsxs)("li", {
-      className: f.locatorEntry,
-      children: [(0, r.jsx)(p, {
+      className: p.locatorEntry,
+      children: [(0, r.jsx)(f, {
         type: t.author_type,
         id: t.author_id
       }), !a && (0, r.jsx)(l.Text, {

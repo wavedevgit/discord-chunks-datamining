@@ -31,14 +31,14 @@ function j(e) {
       canNavigate: C
     } = e,
     I = (0, d.ZP)(),
-    [E, S] = i.useState(null),
+    [S, E] = i.useState(null),
     [P, w] = i.useState(null);
   if (null != j) t = j;
   else {
     let e = Object.values(O);
     t = e.length > 0 ? e[0] : null
   }
-  let Z = i.useCallback(async () => {
+  let T = i.useCallback(async () => {
     if (C() && null !== t) {
       let e = await s.Z.create(n.id, t.id).catch(e => {
         let {
@@ -56,13 +56,13 @@ function j(e) {
           body: g.NW.string(g.t["/4TwKS"])
         }), null
       });
-      null != e && (w(e.id), S(e))
+      null != e && (w(e.id), E(e))
     }
   }, [C, t, n]);
   (0, c.ZP)(() => {
-    0 === v.length && Z()
+    0 === v.length && T()
   });
-  let T = null !== t;
+  let Z = null !== t;
   return (0, r.jsxs)(o.hjN, {
     children: [(0, r.jsx)(o.R94, {
       type: o.geA.DESCRIPTION,
@@ -76,14 +76,14 @@ function j(e) {
       children: [(0, r.jsx)(o.zxk, {
         className: f.createButton,
         size: o.zxk.Sizes.SMALL,
-        disabled: !T,
-        onClick: Z,
+        disabled: !Z,
+        onClick: T,
         children: g.NW.string(g.t["nrO/HB"])
       }), (0, r.jsx)(m.Z, {
         webhooks: v,
         editedWebhook: N,
         selectableWebhookChannels: O,
-        lastCreatedWebhookId: null == E ? void 0 : E.id,
+        lastCreatedWebhookId: null == S ? void 0 : S.id,
         errors: _,
         canNavigate: C
       })]
@@ -106,6 +106,6 @@ function j(e) {
           children: g.NW.string(g.t.lOQqJC)
         })]
       })
-    }(I, T, Z)]
+    }(I, Z, T)]
   })
 }

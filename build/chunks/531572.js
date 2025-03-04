@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => c
 });
 var r, i = n(442837),
-  l = n(570140);
+  o = n(570140);
 
-function o(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,8 +25,8 @@ class s extends(r = i.ZP.PersistedStore) {
     return a[e]
   }
 }
-o(s, "displayName", "GuildBoostingProgressBarPersistedStore"), o(s, "persistKey", "PremiumGuildProgressBarPersistedStore");
-let c = new s(l.Z, {
+l(s, "displayName", "GuildBoostingProgressBarPersistedStore"), l(s, "persistKey", "PremiumGuildProgressBarPersistedStore");
+let c = new s(o.Z, {
   APPLIED_GUILD_BOOST_COUNT_UPDATE: e => {
     var t, n;
     let {
@@ -40,7 +40,7 @@ let c = new s(l.Z, {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          o(e, t, n[t])
+          l(e, t, n[t])
         })
       }
       return e

@@ -14,8 +14,8 @@ var r = n(200651),
   m = n(481060),
   h = n(570140),
   x = n(665149),
-  f = n(55935),
-  p = n(120816),
+  p = n(55935),
+  f = n(120816),
   b = n(31336),
   _ = n(257785),
   g = n(484036),
@@ -23,8 +23,8 @@ var r = n(200651),
   j = n(621060),
   y = n(388032),
   C = n(871133),
-  N = n(710662);
-let O = [{
+  O = n(710662);
+let N = [{
     key: "id",
     cellClassName: C.eventColumn,
     render(e) {
@@ -69,7 +69,7 @@ let O = [{
       } = e, u = d()(o);
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)(x.ZP, {
-          className: i()(N.headerBar, C.subPanelHeaderBar),
+          className: i()(O.headerBar, C.subPanelHeaderBar),
           children: [(0, r.jsx)(x.ZP.Icon, {
             icon: m.IeX,
             tooltip: t
@@ -82,8 +82,8 @@ let O = [{
             name: "Timestamp (local)",
             children: (0, r.jsx)("time", {
               dateTime: o.toISOString(),
-              title: (0, f.vc)(u, "LLLL"),
-              children: (0, f.Y4)(u)
+              title: (0, p.vc)(u, "LLLL"),
+              children: (0, p.Y4)(u)
             })
           }), "guild" === n.type && (0, r.jsx)(_.Z9, {
             name: "Guild ID",
@@ -132,12 +132,12 @@ let O = [{
   }];
 
 function S() {
-  let [e, t] = a.useState(""), n = a.useRef(null), l = (0, u.Wu)([p.Z], () => p.Z.loggedTriggers), o = a.useMemo(() => l.filter(t => 0 === e.length || s()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [l, e]), [c, d] = a.useState(void 0), x = o.find(e => e.key === c), {
-    TabBar: f,
+  let [e, t] = a.useState(""), n = a.useRef(null), l = (0, u.Wu)([f.Z], () => f.Z.loggedTriggers), o = a.useMemo(() => l.filter(t => 0 === e.length || s()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [l, e]), [c, d] = a.useState(void 0), x = o.find(e => e.key === c), {
+    TabBar: p,
     renderSelectedTab: _
   } = (0, j.Z)({
     tabs: T
-  }, []), S = (0, u.e7)([p.Z], () => p.Z.trackTriggers), E = a.useCallback(e => {
+  }, []), S = (0, u.e7)([f.Z], () => f.Z.trackTriggers), E = a.useCallback(e => {
     h.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
       enabled: e
@@ -145,7 +145,7 @@ function S() {
   }, []);
   return (0, r.jsxs)("div", {
     ref: n,
-    className: i()(N.panel, C.panel),
+    className: i()(O.panel, C.panel),
     children: [(0, r.jsxs)("div", {
       className: C.toolbar,
       children: [(0, r.jsx)("div", {
@@ -177,7 +177,7 @@ function S() {
         placeholder: "Search by experiment id"
       })]
     }), (0, r.jsx)(v.Z, {
-      columns: O,
+      columns: N,
       data: o,
       selectedRowKey: c,
       onClickRow: e => d(e.key)
@@ -185,7 +185,7 @@ function S() {
       className: C.subPanel,
       minHeight: 100,
       initialHeight: null != n.current ? n.current.clientHeight / 2 : 300,
-      children: [(0, r.jsx)(f, {}), _({
+      children: [(0, r.jsx)(p, {}), _({
         loggedTrigger: x
       })]
     })]

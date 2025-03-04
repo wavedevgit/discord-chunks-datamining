@@ -1,12 +1,12 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => I
 });
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  l = n(692547),
-  o = n(481060),
+  o = n(692547),
+  l = n(481060),
   a = n(619915),
   s = n(456269),
   c = n(921711),
@@ -25,8 +25,8 @@ var i = n(442837),
   j = n(25601),
   C = n(981631),
   x = n(490897),
-  P = n(388032),
-  S = n(462479);
+  S = n(388032),
+  P = n(462479);
 
 function I(e) {
   var t;
@@ -58,31 +58,31 @@ function I(e) {
   if ((0, c.O)(T)) return (0, r.jsx)(c.Z, {
     locked: A
   });
-  if (D) return (0, r.jsx)(o.IGR, {
-    text: P.NW.string(P.t.y2b7CA),
-    color: l.Z.unsafe_rawColors.BRAND_260.css,
-    className: S.newChannel
+  if (D) return (0, r.jsx)(l.IGR, {
+    text: S.NW.string(S.t.y2b7CA),
+    color: o.Z.unsafe_rawColors.BRAND_260.css,
+    className: P.newChannel
   });
-  if (!R && L === x.i.ALL_MESSAGES && n.isForumLikeChannel() && null != F && F > 0) return (0, r.jsx)(o.Text, {
+  if (!R && L === x.i.ALL_MESSAGES && n.isForumLikeChannel() && null != F && F > 0) return (0, r.jsx)(l.Text, {
     variant: "text-xs/semibold",
     color: "text-brand",
-    children: P.NW.format(P.t.GkAbqa, {
-      count: (0, o.NGo)(F)
+    children: S.NW.format(S.t.GkAbqa, {
+      count: (0, l.NGo)(F)
     })
   });
-  if (!R && n.isForumLikeChannel() && null != H && H > 0) return (0, r.jsx)(o.Text, {
+  if (!R && n.isForumLikeChannel() && null != H && H > 0) return (0, r.jsx)(l.Text, {
     variant: "text-xs/semibold",
     color: "text-muted",
-    children: (0, o.NGo)(H)
+    children: (0, l.NGo)(H)
   });
   let Y = null !== (t = null == Z ? void 0 : Z.length) && void 0 !== t ? t : 0;
   return null != w && w && V ? (0, r.jsx)(O.Z, {
     userCount: Y,
     video: U || W,
     channel: n
-  }) : N && (0, m.a)(Z) && z ? (0, r.jsx)(o.IGR, {
-    text: P.NW.string(P.t.dI3q4u),
-    color: l.Z.unsafe_rawColors.RED_400.css
+  }) : N && (0, m.a)(Z) && z ? (0, r.jsx)(l.IGR, {
+    text: S.NW.string(S.t.dI3q4u),
+    color: o.Z.unsafe_rawColors.RED_400.css
   }) : null != E && E && (0, b.u)(G) ? (0, r.jsx)(_.Z, {
     embeddedApps: G,
     muted: R

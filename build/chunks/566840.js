@@ -1,12 +1,12 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Eg: () => u,
   XL: () => p
 });
 var r = n(192379);
 if (12633 == n.j) var i = n(232713);
-var l = n(65400),
-  o = n(731965);
+var o = n(65400),
+  l = n(731965);
 
 function a(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -39,7 +39,7 @@ function s(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let c = (0, l.F)(e => ({
+let c = (0, o.F)(e => ({
   upsellsByGuildId: {}
 }));
 
@@ -65,16 +65,16 @@ function p(e, t) {
     i = r.useRef(null);
   return r.useLayoutEffect(() => {
     let r = i.current,
-      l = () => {
+      o = () => {
         requestAnimationFrame(() => {
-          var r, l, u;
-          let d = null !== (l = null === (r = i.current) || void 0 === r ? void 0 : r.getBoundingClientRect()) && void 0 !== l ? l : null;
+          var r, o, u;
+          let d = null !== (o = null === (r = i.current) || void 0 === r ? void 0 : r.getBoundingClientRect()) && void 0 !== o ? o : null;
           u = {
             name: t,
             guildId: e,
             disabled: n,
             boundingRect: null != d ? d : null
-          }, (0, o.j)(() => {
+          }, (0, l.j)(() => {
             c.setState(e => {
               var t, n;
               return {
@@ -88,16 +88,16 @@ function p(e, t) {
           })
         })
       };
-    if (null == r) return l(), () => {};
+    if (null == r) return o(), () => {};
     let u = function(e) {
       let t = e.parentNode;
       for (; null != t && t !== document.body && !d(t);) t = t.parentNode;
       return d(t) ? t : null
     }(r);
-    return l(), null == u || u.addEventListener("scroll", l, {
+    return o(), null == u || u.addEventListener("scroll", o, {
       passive: !0
     }), () => {
-      null == u || u.removeEventListener("scroll", l)
+      null == u || u.removeEventListener("scroll", o)
     }
   }, [e, t, n]), i
 }

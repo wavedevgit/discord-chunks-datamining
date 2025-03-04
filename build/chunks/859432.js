@@ -11,8 +11,8 @@ var i = n(200651),
   s = n(481060),
   d = n(5036),
   u = n(553385),
-  g = n(52011),
-  b = n(890477),
+  b = n(52011),
+  g = n(890477),
   f = n(458034),
   p = n(706140),
   y = n(362658),
@@ -25,16 +25,16 @@ var i = n(200651),
   D = n(466330),
   P = n(191471),
   v = n(162157),
-  E = n(623624),
-  x = n(894059),
-  S = n(434404),
+  S = n(623624),
+  E = n(894059),
+  x = n(434404),
   w = n(978946),
   m = n(41776),
   Z = n(837949),
   A = n(11352),
   G = n(703656),
-  C = n(271383),
-  T = n(496675),
+  T = n(271383),
+  C = n(496675),
   k = n(9156),
   U = n(594174),
   L = n(709586),
@@ -97,16 +97,16 @@ let V = r.memo(function(e) {
       canAccessSettings: J,
       canManageChannels: z,
       showGuildAnalytics: K
-    } = (0, o.cj)([T.Z], () => ({
-      canAccessSettings: T.Z.canAccessGuildSettings(t),
-      canManageChannels: T.Z.can(W.Plq.MANAGE_CHANNELS, t),
-      showGuildAnalytics: T.Z.can(W.Plq.VIEW_GUILD_ANALYTICS, t) && t.hasFeature(W.oNc.COMMUNITY)
+    } = (0, o.cj)([C.Z], () => ({
+      canAccessSettings: C.Z.canAccessGuildSettings(t),
+      canManageChannels: C.Z.can(W.Plq.MANAGE_CHANNELS, t),
+      showGuildAnalytics: C.Z.can(W.Plq.VIEW_GUILD_ANALYTICS, t) && t.hasFeature(W.oNc.COMMUNITY)
     }), [t]),
     X = (0, v.N8)(t),
     $ = t.isOwner(V),
     ee = (0, o.e7)([m.Z], () => m.Z.isLurking(t.id), [t.id]),
-    et = (0, o.e7)([C.ZP], () => C.ZP.isCurrentUserGuest(t.id)),
-    en = (0, x.Z)(t.id, !0),
+    et = (0, o.e7)([T.ZP], () => T.ZP.isCurrentUserGuest(t.id)),
+    en = (0, E.Z)(t.id, !0),
     ei = (0, f.ZP)(t),
     er = (0, D.Z)({
       source: W.t4x.GUILD_HEADER,
@@ -127,13 +127,13 @@ let V = r.memo(function(e) {
     es = (0, j.Z)(t),
     ed = (0, h.Z)(t),
     eu = (0, I.Z)(t, !0),
-    eg = (0, _.Z)(t),
+    eb = (0, _.Z)(t),
     {
-      isFavoritesPerk: eb
+      isFavoritesPerk: eg
     } = (0, y.z)("GuildHeaderPopout"),
     {
       triggerDeadchat: ef
-    } = b.Z.useExperiment({
+    } = g.Z.useExperiment({
       guildId: t.id,
       location: "guild header"
     }, {
@@ -141,7 +141,7 @@ let V = r.memo(function(e) {
     }),
     {
       triggerGamingStats: ep
-    } = g.F.useExperiment({
+    } = b.F.useExperiment({
       guildId: t.id,
       location: "guild header"
     }, {
@@ -165,7 +165,7 @@ let V = r.memo(function(e) {
       label: B.NW.string(B.t.J2TBi4),
       icon: s.PBZ,
       action: () => {
-        S.Z.leaveGuild(t.id), et || (0, G.uL)(W.Z5c.GUILD_DISCOVERY)
+        x.Z.leaveGuild(t.id), et || (0, G.uL)(W.Z5c.GUILD_DISCOVERY)
       }
     })
   }) : eo ? (0, i.jsxs)(s.v2r, {
@@ -175,7 +175,7 @@ let V = r.memo(function(e) {
     onClose: a,
     "aria-label": B.NW.string(B.t.HpQykZ),
     children: [(0, i.jsxs)(s.kSQ, {
-      children: [eb && (0, i.jsx)(s.sNh, {
+      children: [eg && (0, i.jsx)(s.sNh, {
         id: "add-channel",
         label: B.NW.string(B.t["6uDHk5"]),
         color: "brand",
@@ -217,7 +217,7 @@ let V = r.memo(function(e) {
         label: B.NW.string(B.t["154/bG"]),
         icon: s.ewm,
         action: () => {
-          S.Z.open(t.id, (0, w.r)(t.id))
+          x.Z.open(t.id, (0, w.r)(t.id))
         }
       }) : null, er, (0, i.jsx)(s.sNh, {
         id: "privacy",
@@ -253,7 +253,7 @@ let V = r.memo(function(e) {
         label: B.NW.string(B.t.VJEVbm),
         icon: (0, s.GSL)(L.Z),
         action: () => {
-          (0, E.f)({
+          (0, S.f)({
             guildId: t.id,
             location: {
               section: W.jXE.GUILD_HEADER_POPOUT
@@ -281,13 +281,13 @@ let V = r.memo(function(e) {
         label: B.NW.string(B.t["154/bG"]),
         icon: s.ewm,
         action: () => {
-          S.Z.open(t.id, (0, w.r)(t.id))
+          x.Z.open(t.id, (0, w.r)(t.id))
         }
       }) : null, K ? (0, i.jsx)(s.sNh, {
         id: "insights",
         label: B.NW.string(B.t["0wWfUF"]),
         icon: s.IeX,
-        action: () => S.Z.open(t.id, W.pNK.ANALYTICS)
+        action: () => x.Z.open(t.id, W.pNK.ANALYTICS)
       }) : null, z ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(s.sNh, {
           id: "create-channel",
@@ -316,7 +316,7 @@ let V = r.memo(function(e) {
             }))
           })
         })]
-      }) : null, en, es, ed, ei, eg]
+      }) : null, en, es, ed, ei, eb]
     }), (0, i.jsxs)(s.kSQ, {
       children: [ec, (0, i.jsx)(s.sNh, {
         id: "notifications",

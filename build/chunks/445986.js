@@ -1,7 +1,7 @@
 /** Chunk was on 37697 **/
 n.d(t, {
-  Q: () => f,
-  Z: () => b
+  Q: () => _,
+  Z: () => v
 }), n(301563), n(653041), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -64,10 +64,10 @@ function g(e, t) {
   return i
 }
 
-function f(e) {
+function _(e) {
   return "".concat(e.split("?")[0], "?size=").concat(2048)
 }
-let _ = e => {
+let f = e => {
   var {
     index: t,
     items: n
@@ -83,7 +83,7 @@ let _ = e => {
         src: r
       } = e;
       e === a && (l = s.length), s.push({
-        src: f(r),
+        src: _(r),
         width: t,
         height: n
       })
@@ -92,7 +92,7 @@ let _ = e => {
     startWith: l
   }))
 };
-class v extends i.Component {
+class b extends i.Component {
   render() {
     let e = this.props,
       {
@@ -110,7 +110,7 @@ class v extends i.Component {
         size: a.CgR.DYNAMIC,
         "aria-label": u.NW.string(u.t.X4IxWF)
       }, e), {
-        children: (0, r.jsx)(_, h(m({}, e), {
+        children: (0, r.jsx)(f, h(m({}, e), {
           index: t,
           items: this.props.items
         }))
@@ -118,4 +118,4 @@ class v extends i.Component {
     })
   }
 }
-let b = v
+let v = b

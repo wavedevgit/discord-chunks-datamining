@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => M
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  o = n(120356),
+  l = n.n(o),
   a = n(999153),
   s = n(642128),
   c = n(91192),
@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(771845),
   C = n(727258),
   x = n(276952),
-  P = n(249792),
-  S = n(40153),
+  S = n(249792),
+  P = n(40153),
   I = n(593618),
   N = n(252686),
   Z = n(682662),
@@ -84,7 +84,7 @@ function k(e, t) {
   })
 }
 let M = i.memo(function(e) {
-  var t, n, l, f, M;
+  var t, n, o, f, M;
   let {
     guildNode: G,
     setRef: B,
@@ -107,9 +107,9 @@ let M = i.memo(function(e) {
     height: er
   } = e, {
     id: ei,
-    parentId: el
-  } = G, eo = (0, b.Q3)("GuildItem"), ea = null !== (t = e.upperBadge) && void 0 !== t ? t : Q ? (0, w.Ny)() : null != q ? (0, w.Or)(q) : void 0, es = null !== (n = e.lowerBadge) && void 0 !== n ? n : void 0;
-  null == es && K > 0 ? es = null !== (l = (0, w.Ne)(K, J ? m.Z.BACKGROUND_ACCENT : m.Z.STATUS_DANGER)) && void 0 !== l ? l : void 0 : null == es && null != en && (es = null !== (f = (0, w.jt)({
+    parentId: eo
+  } = G, el = (0, b.Q3)("GuildItem"), ea = null !== (t = e.upperBadge) && void 0 !== t ? t : Q ? (0, w.Ny)() : null != q ? (0, w.Or)(q) : void 0, es = null !== (n = e.lowerBadge) && void 0 !== n ? n : void 0;
+  null == es && K > 0 ? es = null !== (o = (0, w.Ne)(K, J ? m.Z.BACKGROUND_ACCENT : m.Z.STATUS_DANGER)) && void 0 !== o ? o : void 0 : null == es && null != en && (es = null !== (f = (0, w.jt)({
     guildJoinRequestStatus: en
   })) && void 0 !== f ? f : void 0);
   let ec = null !== (M = e.lowerBadgeSize) && void 0 !== M ? M : {
@@ -158,13 +158,13 @@ let M = i.memo(function(e) {
     ex = i.useCallback(e => {
       null == F || eC || X(e, F)
     }, [F, X, eC]),
-    eP = i.useCallback(e => {
-      if ("ArrowLeft" === e.key && null != el) {
-        var t;
-        null === (t = document.querySelector("[aria-owns=folder-items-".concat(el, "]"))) || void 0 === t || t.focus()
-      }
-    }, [el]),
     eS = i.useCallback(e => {
+      if ("ArrowLeft" === e.key && null != eo) {
+        var t;
+        null === (t = document.querySelector("[aria-owns=folder-items-".concat(eo, "]"))) || void 0 === t || t.focus()
+      }
+    }, [eo]),
+    eP = i.useCallback(e => {
       if (e) {
         e_.delay();
         return
@@ -176,7 +176,7 @@ let M = i.memo(function(e) {
     }, [ei, B]),
     eN = (0, p.dQu)(p.TVs.modules.guildbar.AVATAR_SIZE);
   if (null == F) return null;
-  let eZ = ev || em ? (0, r.jsx)(P.Z, {
+  let eZ = ev || em ? (0, r.jsx)(S.Z, {
       guild: F,
       show: ev,
       active: z,
@@ -201,13 +201,13 @@ let M = i.memo(function(e) {
       },
       onMouseDown: ej,
       onContextMenu: ex,
-      onKeyDown: eP,
-      icon: F.getIconURL(2 * eN, eg && H, eo),
+      onKeyDown: eS,
+      icon: F.getIconURL(2 * eN, eg && H, el),
       selected: z || eg
     }, ep), {
       role: "treeitem"
     })),
-    ew = eu ? (0, r.jsx)(S.OG, {
+    ew = eu ? (0, r.jsx)(P.OG, {
       children: (0, r.jsx)(N.Z, {})
     }) : (0, r.jsx)(s.animated.div, {
       ref: $ ? ed : void 0,
@@ -216,13 +216,13 @@ let M = i.memo(function(e) {
         scale: null == er ? 1 : er
       },
       "data-drop-hovering": ev,
-      className: o()(A.blobContainer, {
+      className: l()(A.blobContainer, {
         [A.sorting]: ee,
         [A.wobble]: ev,
         [A.selected]: ev || z
       }),
       children: (0, r.jsx)(p.aRk, {
-        selected: !!eo || ev || z || eg,
+        selected: !!el || ev || z || eg,
         upperBadge: ea,
         lowerBadge: es,
         lowerBadgeSize: ec,
@@ -241,10 +241,10 @@ let M = i.memo(function(e) {
       disabled: ee,
       isDragging: eu,
       children: ew
-    }), $ ? (0, r.jsx)(S.ZP, {
+    }), $ ? (0, r.jsx)(P.ZP, {
       name: F.name,
       targetNode: G,
-      onDragOverChanged: eS
+      onDragOverChanged: eP
     }) : null]
   })
 })

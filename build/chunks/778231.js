@@ -7,9 +7,9 @@ var r = n(200651),
   i = n(442837),
   a = n(481060),
   o = n(384275),
-  s = n(824606),
-  c = n(686546),
-  d = n(522289),
+  s = n(686546),
+  c = n(522289),
+  d = n(359993),
   u = n(146078),
   m = n(881998),
   x = n(709054),
@@ -25,7 +25,7 @@ let h = e => {
   } = h, g = (0, i.e7)([m.Z], () => {
     let e = m.Z.getApps();
     return null != e ? e.find(e => e.application.id === h.id) : null
-  }), v = null !== (n = h.getIconURL(40)) && void 0 !== n ? n : b, j = (0, s.Z)({
+  }), v = null !== (n = h.getIconURL(40)) && void 0 !== n ? n : b, j = (0, d.Z)({
     application: h
   }), N = l.useRef(!1);
   l.useEffect(() => {
@@ -42,8 +42,8 @@ let h = e => {
       className: f.appContainer,
       children: (0, r.jsxs)("div", {
         className: f.appInfo,
-        children: [(0, r.jsx)(c.ZP, {
-          mask: c.ZP.Masks.AVATAR_DEFAULT,
+        children: [(0, r.jsx)(s.ZP, {
+          mask: s.ZP.Masks.AVATAR_DEFAULT,
           width: 40,
           height: 40,
           className: f.appIconMask,
@@ -63,7 +63,7 @@ let h = e => {
               color: "text-normal",
               variant: "text-md/normal",
               children: (0, u.Z)(j.length)
-            }), (0, r.jsx)(d.Z, {
+            }), (0, r.jsx)(c.Z, {
               className: f.guildStack,
               guilds: j,
               maxGuilds: 6

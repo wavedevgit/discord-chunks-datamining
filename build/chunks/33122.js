@@ -15,10 +15,10 @@ var r, i = n(200651),
   m = n(679056),
   h = n(44488),
   g = n(519160),
-  f = n(124347),
-  _ = n(283756),
-  v = n(524444),
-  b = n(585483),
+  _ = n(124347),
+  f = n(283756),
+  b = n(524444),
+  v = n(585483),
   x = n(981631),
   C = n(906983);
 
@@ -77,7 +77,7 @@ let O = {
   },
   S = e => {
     var t, n;
-    return (0, v.lV)((t = y({}, e), n = n = {
+    return (0, b.lV)((t = y({}, e), n = n = {
       className: C.videoWrapper,
       mediaPlayerClassName: C.mediaPlayer
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -91,7 +91,7 @@ let O = {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   },
-  E = e => (0, i.jsx)(f.ZP, y({}, e)),
+  E = e => (0, i.jsx)(_.ZP, y({}, e)),
   A = e => {
     let t, n, r, {
       item: a,
@@ -102,8 +102,8 @@ let O = {
       playable: m,
       volume: h,
       isMuted: g,
-      onVolumeChange: f,
-      onMute: _
+      onVolumeChange: _,
+      onMute: f
     } = e;
     if (a.type === x.s9s.YOUTUBE_VIDEO) t = y({
       url: (0, x.n8r)(a.youtubeVideoId)
@@ -124,7 +124,7 @@ let O = {
         height: r
       }
     }
-    let b = (0, i.jsx)(u.BC, {
+    let v = (0, i.jsx)(u.BC, {
       href: null,
       thumbnail: t,
       video: n,
@@ -137,34 +137,34 @@ let O = {
       playable: m,
       className: C.video,
       volume: h,
-      onVolumeChange: f,
+      onVolumeChange: _,
       autoMute: g,
-      onMute: _,
+      onMute: f,
       autoPlay: m,
       renderVideoComponent: S,
       renderImageComponent: E,
-      renderLinkComponent: v.iT
+      renderLinkComponent: b.iT
     });
-    return m ? b : (0, i.jsx)(c.P3F, {
+    return m ? v : (0, i.jsx)(c.P3F, {
       className: C.itemImageWrapper,
       onClick: d,
-      children: b
+      children: v
     })
   },
   L = () => (0, i.jsx)("div", {
     className: C.paginationVideoOverlay,
-    children: (0, i.jsx)(_.Z, {
+    children: (0, i.jsx)(f.Z, {
       inactive: !0,
       className: C.paginationVideoPlayPill,
-      renderLinkComponent: v.iT
+      renderLinkComponent: b.iT
     })
   });
 class T extends(r = a.PureComponent) {
   componentDidMount() {
-    b.S.subscribe(x.CkL.CAROUSEL_PREV, this.manualPrevious), b.S.subscribe(x.CkL.CAROUSEL_NEXT, this.manualNext)
+    v.S.subscribe(x.CkL.CAROUSEL_PREV, this.manualPrevious), v.S.subscribe(x.CkL.CAROUSEL_NEXT, this.manualNext)
   }
   componentWillUnmount() {
-    b.S.unsubscribe(x.CkL.CAROUSEL_PREV, this.manualPrevious), b.S.unsubscribe(x.CkL.CAROUSEL_NEXT, this.manualNext)
+    v.S.unsubscribe(x.CkL.CAROUSEL_PREV, this.manualPrevious), v.S.unsubscribe(x.CkL.CAROUSEL_NEXT, this.manualNext)
   }
   getStyle(e, t) {
     let n = t.interpolate({

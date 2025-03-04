@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => y
 });
 var r = n(200651),
   i = n(192379),
-  l = n(442837),
-  o = n(481060),
+  o = n(442837),
+  l = n(481060),
   a = n(554747),
   s = n(434479),
   c = n(593364),
@@ -49,7 +49,7 @@ function b(e, t) {
 }
 let v = [{
     key: "EVENTS",
-    renderIcon: e => (0, r.jsx)(o.Que, {
+    renderIcon: e => (0, r.jsx)(l.Que, {
       size: "md",
       color: "currentColor",
       className: e
@@ -62,7 +62,7 @@ let v = [{
         number: t
       }) : g.NW.string(g.t.tlopTE)
     },
-    handler: e => (0, o.ZDy)(async () => {
+    handler: e => (0, l.ZDy)(async () => {
       let {
         default: t
       } = await Promise.all([n.e("22347"), n.e("56236"), n.e("78111")]).then(n.bind(n, 17671));
@@ -72,7 +72,7 @@ let v = [{
     })
   }, {
     key: "JOIN_SERVERS",
-    renderIcon: e => (0, r.jsx)(o.Jmo, {
+    renderIcon: e => (0, r.jsx)(l.Jmo, {
       size: "md",
       color: "currentColor",
       className: e
@@ -81,13 +81,13 @@ let v = [{
     handler: (e, t) => (0, u.XU)(e.id, t.id)
   }, {
     key: "ADD_SERVERS",
-    renderIcon: e => (0, r.jsx)(o.qJs, {
+    renderIcon: e => (0, r.jsx)(l.qJs, {
       size: "md",
       color: "currentColor",
       className: e
     }),
     getName: () => g.NW.string(g.t.emRpdX),
-    handler: (e, t) => (0, o.ZDy)(async () => {
+    handler: (e, t) => (0, l.ZDy)(async () => {
       let {
         default: i
       } = await n.e("79764").then(n.bind(n, 533202));
@@ -99,11 +99,11 @@ let v = [{
     })
   }, {
     key: "INVITE_MEMBERS",
-    renderIcon: e => (0, r.jsx)(o.ejJ, {
+    renderIcon: e => (0, r.jsx)(l.ejJ, {
       className: e
     }),
     getName: () => g.NW.string(g.t.MJQOuL),
-    handler: (e, t) => (0, o.ZDy)(async () => {
+    handler: (e, t) => (0, l.ZDy)(async () => {
       let {
         default: i
       } = await Promise.all([n.e("7654"), n.e("6680")]).then(n.bind(n, 560114));
@@ -118,7 +118,7 @@ let v = [{
     let {
       guild: t,
       channel: n
-    } = e, o = (0, a.ZP)(t.id);
+    } = e, l = (0, a.ZP)(t.id);
     i.useEffect(() => {
       p.Z.trackExposure({
         guildId: t.id,
@@ -132,15 +132,15 @@ let v = [{
       location: "543af8_2"
     }, {
       autoTrackExposure: !1
-    }), f = (0, l.e7)([d.Z], () => null != n && d.Z.getChannelId() === n.id), g = i.useMemo(() => ({
-      numEvents: o.length
-    }), [o.length]), m = (0, h.t)(n);
+    }), f = (0, o.e7)([d.Z], () => null != n && d.Z.getChannelId() === n.id), g = i.useMemo(() => ({
+      numEvents: l.length
+    }), [l.length]), m = (0, h.t)(n);
     return (0, r.jsx)(r.Fragment, {
       children: v.map(e => {
         let {
           key: i,
-          getName: l,
-          handler: o,
+          getName: o,
+          handler: l,
           renderIcon: a
         } = e;
         if (!u && "EVENTS" === i) return null;
@@ -148,9 +148,9 @@ let v = [{
         return (0, r.jsx)(s.m, {
           id: d,
           renderIcon: a,
-          text: l(g),
+          text: o(g),
           selected: f && "JOIN_SERVERS" === i,
-          onClick: null != n ? () => o(t, n) : void 0,
+          onClick: null != n ? () => l(t, n) : void 0,
           trailing: "JOIN_SERVERS" === i && m > 0 ? (0, c.N)(m) : null
         }, d)
       })

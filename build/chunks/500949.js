@@ -33,8 +33,8 @@ var r, a, l = n(192379),
   m = n(385787),
   h = n(566162),
   x = n(567027),
-  f = n(461195),
-  p = n(857702),
+  p = n(461195),
+  f = n(857702),
   b = n(20450),
   _ = n(312976),
   g = n(147591),
@@ -42,16 +42,16 @@ var r, a, l = n(192379),
   j = n(940172),
   y = n(81011),
   C = n(981613),
-  N = n(762399),
-  O = n(232112),
+  O = n(762399),
+  N = n(232112),
   T = n(53796),
   S = n(723757),
   E = n(375924),
-  k = n(596136),
-  w = n(341901),
-  I = n(856308),
-  Z = n(665352),
-  P = n(394900),
+  I = n(596136),
+  k = n(341901),
+  w = n(856308),
+  P = n(665352),
+  Z = n(394900),
   R = n(661105),
   L = n(525169),
   A = n(433517),
@@ -99,8 +99,8 @@ let F = {
     HSLuv: m.Z,
     HSV: h.Z,
     HWB: x.Z,
-    ICTCP: f.Z,
-    JzCzHz: p.Z,
+    ICTCP: p.Z,
+    JzCzHz: f.Z,
     Jzazbz: b.Z,
     LCH: _.Z,
     LCHuv: g.Z,
@@ -108,17 +108,17 @@ let F = {
     Lab_D65: j.Z,
     Luv: y.Z,
     OKLCH: C.Z,
-    OKLab: N.Z,
-    P3: O.Z,
+    OKLab: O.Z,
+    P3: N.Z,
     ProPhoto: T.Z,
     REC_2020: S.Z,
     REC_2100_HLG: E.Z,
-    REC_2100_PQ: k.Z,
-    XYZ_D50: w.Z,
-    XYZ_D65: I.Z
+    REC_2100_PQ: I.Z,
+    XYZ_D50: k.Z,
+    XYZ_D65: w.Z
   },
   G = Object.fromEntries(Object.keys(F).map(e => [e, e]));
-Object.values(F).forEach(e => Z.Z.register(e));
+Object.values(F).forEach(e => P.Z.register(e));
 let {
   SemanticColors: W
 } = D.V, U = W, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
@@ -165,7 +165,7 @@ function K(e) {
 }
 
 function J(e) {
-  return (0, P.Z)((0, R.Z)(e, i.Z), {
+  return (0, Z.Z)((0, R.Z)(e, i.Z), {
     format: "hex"
   })
 }
@@ -227,22 +227,22 @@ function ea(e) {
     outputSpace: s,
     space: s,
     progression: e => e ** o
-  }), f = (0, L.w6)(u, c, {
+  }), p = (0, L.w6)(u, c, {
     steps: h,
     outputSpace: s,
     space: s,
     progression: e => e ** o
-  }), p = [];
+  }), f = [];
   for (let e = 0; e < m; e++) {
     let t = x(e / m);
-    p.push(t)
+    f.push(t)
   }
-  p.push(c);
+  f.push(c);
   for (let e = 1; e < h; e++) {
-    let t = f(1 - e / h);
-    p.push(t)
+    let t = p(1 - e / h);
+    f.push(t)
   }
-  return Object.fromEntries(p.map((e, n) => ["".concat(t, "-").concat(n), e]))
+  return Object.fromEntries(f.map((e, n) => ["".concat(t, "-").concat(n), e]))
 }
 
 function el(e, t, n) {

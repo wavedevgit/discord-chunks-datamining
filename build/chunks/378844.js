@@ -1,12 +1,12 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   R: () => v,
   Z: () => y
 });
 var r, i = n(200651);
 n(192379);
-var l = n(442837),
-  o = n(481060),
+var o = n(442837),
+  l = n(481060),
   a = n(893776),
   s = n(391650),
   c = n(313201),
@@ -48,12 +48,12 @@ let y = e => {
     notPhoneVerified: j,
     newAccount: C,
     newMember: x
-  } = (0, l.e7)([d.Z], () => d.Z.getCheck(r), [r]), P = 0 === t ? g.NW.string(g.t["6zY8BA"]) : null, S = null, I = null;
-  return (0 === t && (_ ? (S = g.NW.string(g.t.IRxUlJ), I = g.NW.string(g.t.fiNVio)) : j ? (S = g.NW.string(g.t.vW8iUF), I = g.NW.string(g.t["50gfOj"])) : O ? (S = g.NW.string(g.t.vdSOp6), I = g.NW.string(g.t.lm1UKi)) : x ? (S = g.NW.formatToPlainString(g.t.v1ktYW, {
+  } = (0, o.e7)([d.Z], () => d.Z.getCheck(r), [r]), S = 0 === t ? g.NW.string(g.t["6zY8BA"]) : null, P = null, I = null;
+  return (0 === t && (_ ? (P = g.NW.string(g.t.IRxUlJ), I = g.NW.string(g.t.fiNVio)) : j ? (P = g.NW.string(g.t.vW8iUF), I = g.NW.string(g.t["50gfOj"])) : O ? (P = g.NW.string(g.t.vdSOp6), I = g.NW.string(g.t.lm1UKi)) : x ? (P = g.NW.formatToPlainString(g.t.v1ktYW, {
     min: h.YeM.MEMBER_AGE
-  }), I = g.NW.string(g.t.BddRzc)) : C && (S = g.NW.formatToPlainString(g.t["sncw4+"], {
+  }), I = g.NW.string(g.t.BddRzc)) : C && (P = g.NW.formatToPlainString(g.t["sncw4+"], {
     min: h.YeM.ACCOUNT_AGE
-  }), I = g.NW.string(g.t.BddRzc))), null == P || null == S) ? null : (0, i.jsxs)(o.VqE, {
+  }), I = g.NW.string(g.t.BddRzc))), null == S || null == P) ? null : (0, i.jsxs)(l.VqE, {
     className: m.container,
     "aria-labelledby": y,
     children: [(0, i.jsx)("img", {
@@ -62,19 +62,19 @@ let y = e => {
       src: n(64395)
     }), (0, i.jsxs)("div", {
       className: m.content,
-      children: [(0, i.jsx)(o.X6q, {
+      children: [(0, i.jsx)(l.X6q, {
         variant: "heading-md/semibold",
         id: y,
-        children: P
-      }), (0, i.jsx)(o.Text, {
+        children: S
+      }), (0, i.jsx)(l.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: S
+        children: P
       }), (0, i.jsxs)("div", {
         className: m.buttonContainer,
-        children: [null != I ? (0, i.jsx)(o.zxk, {
+        children: [null != I ? (0, i.jsx)(l.zxk, {
           onClick: () => {
-            _ ? s.j() : j ? (0, o.ZDy)(async () => {
+            _ ? s.j() : j ? (0, l.ZDy)(async () => {
               let {
                 default: e
               } = await Promise.all([n.e("76540"), n.e("46767")]).then(n.bind(n, 607018));
@@ -83,14 +83,14 @@ let y = e => {
               }, t))
             }, {
               modalKey: f.M
-            }) : O && (a.Z.verifyResend(), (0, o.h7j)(e => {
+            }) : O && (a.Z.verifyResend(), (0, l.h7j)(e => {
               var t, n, r;
-              return (0, i.jsx)(o.ConfirmModal, (n = b({
+              return (0, i.jsx)(l.ConfirmModal, (n = b({
                 header: g.NW.string(g.t.LykQYm),
                 confirmText: g.NW.string(g.t.BddRzc),
-                confirmButtonColor: o.zxk.Colors.BRAND
+                confirmButtonColor: l.zxk.Colors.BRAND
               }, e), r = r = {
-                children: (0, i.jsx)(o.Text, {
+                children: (0, i.jsx)(l.Text, {
                   variant: "text-md/normal",
                   children: g.NW.format(g.t.azKEPz, {
                     email: null === (t = p.default.getCurrentUser()) || void 0 === t ? void 0 : t.email
@@ -110,9 +110,9 @@ let y = e => {
           },
           className: m.primaryButton,
           children: I
-        }) : null, _ || j || O ? (0, i.jsx)(o.zxk, {
+        }) : null, _ || j || O ? (0, i.jsx)(l.zxk, {
           onClick: v,
-          look: o.zxk.Looks.BLANK,
+          look: l.zxk.Looks.BLANK,
           className: m.cancel,
           children: g.NW.string(g.t.oEAioK)
         }) : null]

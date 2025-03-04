@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => C
 }), n(47120), n(230036), n(978209);
 var r = n(200651),
   i = n(192379),
-  l = n(392711),
-  o = n.n(l),
+  o = n(392711),
+  l = n.n(o),
   a = n(442837),
   s = n(481060),
   c = n(99690),
@@ -26,9 +26,9 @@ var r = n(200651),
 function C(e) {
   let {
     channel: t
-  } = e, l = (0, a.Wu)([d.Z, g.ZP, f.Z], () => {
+  } = e, o = (0, a.Wu)([d.Z, g.ZP, f.Z], () => {
     let e = d.Z.getActiveJoinedRelevantThreadsForParent(t.guild_id, t.id);
-    return o()(d.Z.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(d.Z.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && f.Z.can(y.Plq.VIEW_CHANNEL, t)).sort((e, t) => {
+    return l()(d.Z.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(l().values(d.Z.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && f.Z.can(y.Plq.VIEW_CHANNEL, t)).sort((e, t) => {
       let n = g.ZP.lastMessageId(e.id),
         r = g.ZP.lastMessageId(t.id);
       return v.default.compare(n, r)
@@ -43,7 +43,7 @@ function C(e) {
       variant: "text-xs/bold",
       color: "header-secondary",
       children: t.isForumLikeChannel() ? O.NW.string(O.t.ioVdOz) : O.NW.string(O.t.VNYs2t)
-    }), l.slice(0, t.isForumLikeChannel() ? l.length : c).map(e => (0, r.jsx)(x, {
+    }), o.slice(0, t.isForumLikeChannel() ? o.length : c).map(e => (0, r.jsx)(x, {
       thread: e
     }, e.id)).filter(e => i.isValidElement(e)).slice(0, c), (0, r.jsx)(s.P3F, {
       className: j.more,

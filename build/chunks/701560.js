@@ -29,7 +29,7 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function O(e) {
   return e
 }
 
-function E(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,7 +56,7 @@ function E(e, t) {
 }
 class j extends(r = a.PureComponent) {
   get analyticsLocation() {
-    return E(O({}, this.props.analyticsContext.location), {
+    return O(E({}, this.props.analyticsContext.location), {
       object: b.qAy.BUTTON_CTA
     })
   }
@@ -97,7 +97,7 @@ class j extends(r = a.PureComponent) {
       }), (0, i.jsx)(c.ua7, {
         text: t,
         position: l,
-        children: e => (0, i.jsx)("div", O({
+        children: e => (0, i.jsx)("div", E({
           className: y.disabledButtonOverlay
         }, e))
       })]
@@ -145,7 +145,7 @@ class j extends(r = a.PureComponent) {
         let {
           default: e
         } = await n.e("53195").then(n.bind(n, 918306));
-        return n => (0, i.jsx)(e, E(O({}, n), {
+        return n => (0, i.jsx)(e, O(E({}, n), {
           libraryApplication: t,
           onPlay: this.handleClick
         }))
@@ -175,7 +175,7 @@ function N(e) {
     applicationId: t,
     libraryApplication: n
   } = e, r = (0, u.O)(), [a, o] = (0, s.Wu)([f.Z, m.Z, h.Z], () => [f.Z.isConnected(t) || m.Z.isLaunchable(t) || null != n && h.Z.isLaunchable(n.id, n.branchId), m.Z.launchingGames.has(t)], [t, n]), l = (0, s.e7)([p.ZP], () => new Set(p.ZP.getRunningVerifiedApplicationIds()).has(t), [t]), c = (0, s.e7)([h.Z], () => null != n ? h.Z.getState(n.id, n.branchId) : null, [n]);
-  return (0, i.jsx)(j, E(O({}, e), {
+  return (0, i.jsx)(j, O(E({}, e), {
     analyticsContext: r,
     isLaunchable: a,
     isLaunching: o,

@@ -24,12 +24,12 @@ var r = n(200651),
 function x(e) {
   let t, n, a, {
       invite: x,
-      currentUserId: O,
-      guild: E,
+      currentUserId: E,
+      guild: O,
       onTransitionToInviteChannel: j,
       onAcceptInstantInvite: N
     } = e,
-    C = null == E ? void 0 : E.id,
+    C = null == O ? void 0 : O.id,
     I = (0, l.e7)([h.Z], () => h.Z.getGuildId()),
     S = (0, l.e7)([f.Z], () => null != x && null != x.target_user ? f.Z.getActiveStreamForUser(x.target_user.id, C) : null, [x, C]),
     T = (0, l.e7)([f.Z], () => null != x && null != x.target_user ? f.Z.getStreamForUser(x.target_user.id, C) : null, [x, C]),
@@ -44,16 +44,16 @@ function x(e) {
     target_user: k
   } = x;
   o()(Z === b.Iq.STREAM && null != k, "invalid streaming invite");
-  let R = O === k.id,
-    L = x.state === _.r2o.ACCEPTING,
-    D = i.useCallback(() => {
+  let R = E === k.id,
+    D = x.state === _.r2o.ACCEPTING,
+    L = i.useCallback(() => {
       let e = "noop";
       A ? (j(), e = "transition") : (N(), e = "accept"), (0, s.r$)(x, e, P)
     }, [x, P, A, j, N]),
-    M = null != E;
-  if (null == E) {
+    M = null != O;
+  if (null == O) {
     if (null == x.guild) return (0, r.jsx)(g.Z, {});
-    E = new m.ZP(x.guild)
+    O = new m.ZP(x.guild)
   }
   let W = null != x.channel ? (0, p.jD)(x.channel) : null;
   M && !w ? a = R ? v.NW.string(v.t.oBLoZG) : v.NW.formatToPlainString(v.t["0QJmAw"], {
@@ -61,10 +61,10 @@ function x(e) {
   }) : (t = v.NW.string(v.t["I6JG4+"]), n = u.Z.Button.Colors.GREEN, A && (t = v.NW.string(v.t["Q1W99/"]), n = u.Z.Button.Colors.PRIMARY), a = R ? v.NW.string(v.t["4hyaHh"]) : v.NW.formatToPlainString(v.t.QmlLEh, {
     name: k.username
   }));
-  let F = I === E.id && null != W ? (0, r.jsx)(u.Z.Channel, {
+  let F = I === O.id && null != W ? (0, r.jsx)(u.Z.Channel, {
     channel: W
   }) : v.NW.formatToPlainString(v.t.u0vaDA, {
-    guildName: E.name
+    guildName: O.name
   });
   return (0, r.jsxs)(u.Z, {
     children: [(0, r.jsx)(u.Z.Header, {
@@ -73,17 +73,17 @@ function x(e) {
       children: [(0, r.jsxs)("div", {
         className: y.headerLine,
         children: [(0, r.jsx)(u.Z.Icon, {
-          guild: E,
-          onClick: M && w ? D : void 0
+          guild: O,
+          onClick: M && w ? L : void 0
         }), (0, r.jsx)(u.Z.Info, {
           title: a,
-          onClick: M && w ? D : void 0,
+          onClick: M && w ? L : void 0,
           children: F
         })]
       }), w ? (0, r.jsx)(u.Z.Button, {
         disabled: M && !w,
-        onClick: D,
-        submitting: L,
+        onClick: L,
+        submitting: D,
         isDisabled: A && w,
         color: n,
         children: t

@@ -1,10 +1,10 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => R
 }), n(411104), n(47120);
 var r, i = n(200651),
-  l = n(192379),
-  o = n(642128),
+  o = n(192379),
+  l = n(642128),
   a = n(91192),
   s = n(442837),
   c = n(481060),
@@ -23,8 +23,8 @@ var r, i = n(200651),
   j = n(451478),
   C = n(276952),
   x = n(682662),
-  P = n(662146),
-  S = n(674552),
+  S = n(662146),
+  P = n(674552),
   I = n(981631),
   N = n(462598);
 
@@ -80,7 +80,7 @@ function A(e) {
       throw Error("DirectMessage: getSpringConfigs() - Invalid spring ".concat(String(e)))
   }
 }
-class D extends(r = l.PureComponent) {
+class D extends(r = o.PureComponent) {
   componentWillEnter(e) {
     let {
       controller: t
@@ -152,7 +152,7 @@ class D extends(r = l.PureComponent) {
       channelName: t,
       selected: n,
       badge: r,
-      audio: l,
+      audio: o,
       video: s,
       stream: u,
       isCurrentUserInThisDMCall: d,
@@ -163,7 +163,7 @@ class D extends(r = l.PureComponent) {
       hovered: g,
       animating: b
     } = this.state, v = e.isMultiUserDM() && null == e.icon && h;
-    return (0, i.jsx)(o.animated.div, {
+    return (0, i.jsx)(l.animated.div, {
       style: this.getAnimatedStyle(),
       children: (0, i.jsxs)(x.H, {
         children: [(0, i.jsx)(C.Z, {
@@ -171,15 +171,15 @@ class D extends(r = l.PureComponent) {
           selected: !b && n,
           unread: !b && p,
           className: N.pill
-        }), (0, i.jsx)(P.Z, {
+        }), (0, i.jsx)(S.Z, {
           text: null != t ? t : "",
           selected: n,
           children: (0, i.jsx)(c.aRk, {
             rounded: f,
             selected: !f && (n || g),
-            lowerBadge: r > 0 ? (0, S.Ne)(r) : null,
-            upperBadge: (0, S.Or)({
-              audio: l,
+            lowerBadge: r > 0 ? (0, P.Ne)(r) : null,
+            upperBadge: (0, P.Or)({
+              audio: o,
               video: s,
               screenshare: u,
               isCurrentUserConnected: d
@@ -220,7 +220,7 @@ class D extends(r = l.PureComponent) {
     super(...e), Z(this, "state", {
       hovered: !1,
       animating: !0,
-      controller: new o.Controller({
+      controller: new l.Controller({
         scale: 0,
         height: 0,
         opacity: 0,
@@ -256,11 +256,11 @@ Z(D, "defaultProps", {
   video: !1,
   isCurrentUserInThisDMCall: !1
 });
-let R = l.forwardRef(function(e, t) {
+let R = o.forwardRef(function(e, t) {
   let n = e.channel.id,
     r = (0, h.ZP)(e.channel),
-    l = (0, s.e7)([v.Z], () => v.Z.getChannelId(), []),
-    o = (0, s.e7)([d.Z], () => null != l ? d.Z.getMode(l) : I.WtW.VOICE, [l]),
+    o = (0, s.e7)([v.Z], () => v.Z.getChannelId(), []),
+    l = (0, s.e7)([d.Z], () => null != o ? d.Z.getMode(o) : I.WtW.VOICE, [o]),
     a = (0, s.e7)([b.Z], () => b.Z.getAllApplicationStreamsForChannel(n).length > 0),
     u = (0, s.e7)([_.Z], () => _.Z.getChannelId(), []),
     p = (0, s.e7)([y.ZP], () => y.ZP.getMentionCount(n), [n]),
@@ -271,12 +271,12 @@ let R = l.forwardRef(function(e, t) {
     }, {
       autoTrackExposure: !1
     }),
-    O = l === n,
+    O = o === n,
     j = !1,
     C = !1;
-  O && (j = o === I.WtW.VOICE, C = o === I.WtW.VIDEO);
+  O && (j = l === I.WtW.VOICE, C = l === I.WtW.VIDEO);
   let x = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE),
-    P = (0, f.Q3)("DirectMessage");
+    S = (0, f.Q3)("DirectMessage");
   return (0, i.jsx)(D, E(w({}, e), {
     ref: t,
     channelName: r,
@@ -288,7 +288,7 @@ let R = l.forwardRef(function(e, t) {
     stream: a,
     isCurrentUserInThisDMCall: O,
     isGDMFacepileEnabled: m,
-    size: P ? x : 56,
-    isVisualRefreshEnabled: P
+    size: S ? x : 56,
+    isVisualRefreshEnabled: S
   }))
 })

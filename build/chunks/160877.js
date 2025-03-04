@@ -1,6 +1,6 @@
 /** Chunk was on 76030 **/
 n.d(t, {
-  $: () => O,
+  $: () => E,
   s: () => x
 }), n(266796);
 var r = n(200651),
@@ -67,7 +67,7 @@ function x(e) {
   }), e()
 }
 
-function O(e) {
+function E(e) {
   let {
     channelId: t,
     messageId: n,

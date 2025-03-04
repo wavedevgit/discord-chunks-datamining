@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(655354),
   y = n(324081),
   x = n(791914),
-  O = n(981631),
-  E = n(388032),
+  E = n(981631),
+  O = n(388032),
   j = n(841097),
   N = n(26593);
 let C = {
@@ -47,15 +47,15 @@ function I(e) {
       className: j.headerText,
       children: [(0, r.jsx)(u.X6q, {
         variant: "heading-lg/bold",
-        children: o ? E.NW.string(E.t["0KeMAw"]) : E.NW.string(E.t.j5ZHEB)
+        children: o ? O.NW.string(O.t["0KeMAw"]) : O.NW.string(O.t.j5ZHEB)
       }), (0, r.jsx)(u.eee, {
         onClick: () => l(!o),
         children: (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
           color: "text-link",
-          children: o ? E.NW.formatToPlainString(E.t["/VlKx8"], {
+          children: o ? O.NW.formatToPlainString(O.t["/VlKx8"], {
             count: s.length
-          }) : E.NW.formatToPlainString(E.t.QEO4Ii, {
+          }) : O.NW.formatToPlainString(O.t.QEO4Ii, {
             count: a.length
           })
         })
@@ -76,12 +76,12 @@ function S(e) {
     l = i.message,
     d = (0, c.e7)([b.Z], () => b.Z.getChannel(a.channelId)),
     g = () => {
-      (0, f.uL)(O.Z5c.CHANNEL(null == d ? void 0 : d.getGuildId(), a.channelId, a.messageId))
+      (0, f.uL)(E.Z5c.CHANNEL(null == d ? void 0 : d.getGuildId(), a.channelId, a.messageId))
     },
     x = null;
-  return (null != a.dueAt && (a.dueAt > new Date ? (t = "text-muted", x = E.NW.formatToPlainString(E.t.H4gnX1, {
+  return (null != a.dueAt && (a.dueAt > new Date ? (t = "text-muted", x = O.NW.formatToPlainString(O.t.H4gnX1, {
     duration: s().duration(a.dueAt.getTime() - Date.now(), "millisecond").humanize()
-  })) : (t = "text-danger", x = E.NW.formatToPlainString(E.t["Uq7Y+/"], {
+  })) : (t = "text-danger", x = O.NW.formatToPlainString(O.t["Uq7Y+/"], {
     duration: s().duration(Date.now() - a.dueAt.getTime(), "millisecond").humanize()
   }))), null == l || null == d) ? null : (0, r.jsxs)("div", {
     className: N.container,
@@ -104,7 +104,7 @@ function S(e) {
           color: t,
           children: x
         }) : null, (0, r.jsx)(u.DY3, {
-          text: E.NW.string(E.t.GtBCn5),
+          text: O.NW.string(O.t.GtBCn5),
           children: (0, r.jsx)(u.P3F, {
             onClick: e => (0, p.jW)(e, async () => {
               let {
@@ -152,7 +152,7 @@ function S(e) {
             })
           })
         }), (0, r.jsx)(u.DY3, {
-          text: E.NW.string(E.t["1GzslZ"]),
+          text: O.NW.string(O.t["1GzslZ"]),
           children: (0, r.jsx)(u.P3F, {
             onClick: () => (0, h.x)(a),
             className: j.delete,

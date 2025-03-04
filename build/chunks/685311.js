@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 }), n(301563), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -12,32 +12,32 @@ var r = n(200651),
   u = n(703656),
   d = n(388032),
   h = n(802138);
-let p = function(e) {
+let g = function(e) {
   let {
     match: t,
     location: n,
     attemptDeepLink: o
-  } = e, [p, g] = i.useState(0);
+  } = e, [g, p] = i.useState(0);
   i.useEffect(() => {
     l.default.once("connected", () => {
-      g(1)
+      p(1)
     }), l.default.once("disconnected", () => {
       (0, u.uL)((0, s.M)())
     }), l.default.connect()
   }, []), i.useEffect(() => {
-    if (0 !== p) return;
+    if (0 !== g) return;
     let e = setTimeout(() => (0, u.uL)((0, s.M)()), 3e3);
     return () => clearTimeout(e)
-  }, [p]);
+  }, [g]);
   let f = i.useCallback(async (e, t) => {
     try {
-      g(2), await o(e, t), g(3)
+      p(2), await o(e, t), p(3)
     } catch (e) {
       console.error("Error opening deeplink", e)
     }
   }, [o]);
   if ((0, u.DB)()) return null;
-  switch (p) {
+  switch (g) {
     case 1:
       return (0, r.jsxs)(c.ZP, {
         children: [(0, r.jsx)(c.Dx, {

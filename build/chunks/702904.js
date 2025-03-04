@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => f
+  Z: () => p
 }), n(47120), n(301563);
 var r = n(200651),
   a = n(192379),
@@ -45,7 +45,7 @@ let x = [{
   value: "pm_card_pl"
 }];
 
-function f() {
+function p() {
   let [e, t] = a.useState("pm_card_us"), n = Object.values((0, l.e7)([d.Z], () => d.Z.paymentSources)), c = async () => {
     let t = e;
     "" === t && (t = "pm_card_us"), await i.tn.post({
@@ -55,7 +55,7 @@ function f() {
       },
       rejectWithError: !1
     }), await (0, s.tZ)()
-  }, f = async () => {
+  }, p = async () => {
     await i.tn.del({
       url: "/debug/payment-source",
       rejectWithError: !1
@@ -95,7 +95,7 @@ function f() {
           children: "Create Stripe Credit Card"
         }), n.length > 0 && (0, r.jsx)(o.zxk, {
           size: o.zxk.Sizes.SMALL,
-          onClick: f,
+          onClick: p,
           children: "Delete All Payment Sources"
         }), (0, r.jsx)(o.zxk, {
           size: o.zxk.Sizes.SMALL,
@@ -109,14 +109,14 @@ function f() {
         },
         variant: "text-md/normal",
         children: "Existing Payment Sources"
-      }), n.map(e => (0, r.jsx)(p, {
+      }), n.map(e => (0, r.jsx)(f, {
         paymentSource: e
       }, e.id))]
     })
   })
 }
 
-function p(e) {
+function f(e) {
   let {
     paymentSource: t
   } = e;

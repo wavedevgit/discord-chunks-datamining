@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(825829),
   y = n(226192),
   x = n(36459),
-  O = n(434404),
-  E = n(518950),
+  E = n(434404),
+  O = n(518950),
   j = n(347475),
   N = n(592125),
   C = n(271383),
@@ -36,7 +36,7 @@ var r = n(200651),
   k = n(388032),
   R = n(572339);
 
-function L(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,7 +55,7 @@ function L(e) {
   return e
 }
 
-function D(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -166,7 +166,7 @@ function B(e) {
     avatarSrc: d,
     avatarDecorationSrc: u,
     eventHandlers: p
-  } = (0, E.Z)({
+  } = (0, O.Z)({
     user: o,
     guildId: l,
     size: 12
@@ -194,7 +194,7 @@ function B(e) {
             children: k.NW.string(k.t.qlFrXV)
           }), (0, r.jsx)(f.yRy, {
             renderPopout: function(e) {
-              return null == o ? (0, r.jsx)(r.Fragment, {}) : (0, r.jsx)(j.Z, D(L({}, e), {
+              return null == o ? (0, r.jsx)(r.Fragment, {}) : (0, r.jsx)(j.Z, L(D({}, e), {
                 userId: o.id,
                 user: o,
                 guildId: l,
@@ -202,10 +202,10 @@ function B(e) {
                 messageId: n.id
               }))
             },
-            children: e => (0, r.jsxs)(f.P3F, D(L({
+            children: e => (0, r.jsxs)(f.P3F, L(D({
               className: R.alertsEnabledSubHeaderAvatarUsername
             }, e), {
-              children: [(0, r.jsx)("div", D(L({}, p), {
+              children: [(0, r.jsx)("div", L(D({}, p), {
                 children: (0, r.jsx)(f.qEK, {
                   src: d,
                   avatarDecoration: u,
@@ -247,9 +247,9 @@ function G(e) {
     dmsSent: d,
     raidType: h,
     resolvedReason: g
-  } = (0, v.FL)(n), x = (0, p.e7)([N.Z], () => N.Z.getChannel(n.channel_id), [n.channel_id]), O = null !== (t = null == x ? void 0 : x.guild_id) && void 0 !== t ? t : null, {
-    shouldShowIncidentActions: E
-  } = (0, _.mI)(O), j = (0, T.sR)(n.author.id, n.channel_id), C = i.useCallback(() => {
+  } = (0, v.FL)(n), x = (0, p.e7)([N.Z], () => N.Z.getChannel(n.channel_id), [n.channel_id]), E = null !== (t = null == x ? void 0 : x.guild_id) && void 0 !== t ? t : null, {
+    shouldShowIncidentActions: O
+  } = (0, _.mI)(E), j = (0, T.sR)(n.author.id, n.channel_id), C = i.useCallback(() => {
     let e = null == x ? void 0 : x.guild_id;
     null != e && (0, y.kW)(n.id, e)
   }, [n.id, x]), I = h === u.$.DM_RAID, S = I ? f.P4T : f.b6m;
@@ -294,7 +294,7 @@ function G(e) {
         dateTime: l.toLocaleString(k.NW.currentLocale, b.pQ)
       })
     }) : null,
-    footerButtons: E ? (0, r.jsxs)("div", {
+    footerButtons: O ? (0, r.jsxs)("div", {
       className: R.dotSeparatedRow,
       children: [(0, r.jsx)(f.zxk, {
         onClick: e => {
@@ -392,7 +392,7 @@ function H(e) {
         })
       }), (0, r.jsx)(M, {}), (0, r.jsx)(f.zxk, {
         onClick: function() {
-          null != o && O.Z.open(o, w.pNK.GUILD_AUTOMOD, void 0, w.KsC.AUTOMOD_MENTION_SPAM)
+          null != o && E.Z.open(o, w.pNK.GUILD_AUTOMOD, void 0, w.KsC.AUTOMOD_MENTION_SPAM)
         },
         color: f.zxk.Colors.LINK,
         look: f.zxk.Looks.LINK,

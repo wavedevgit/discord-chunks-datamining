@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => _
 });
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  o = n(120356),
+  l = n.n(o),
   a = n(481060),
   s = n(377171),
   c = n(413335),
@@ -24,7 +24,7 @@ function _(e) {
   let {
     guild: t,
     selected: n
-  } = e, l = i.useCallback(() => {
+  } = e, o = i.useCallback(() => {
     (0, p.jd)(t.id), (0, d.uL)(g.Z5c.CHANNEL(t.id, m.oC.GUILD_BOOSTS))
   }, [t.id]), _ = (0, f.Z)(t), O = (null == _ ? void 0 : _.type) === h.o.UNREAD;
   return (0, r.jsx)(u.m, {
@@ -33,13 +33,13 @@ function _(e) {
       className: e
     }),
     text: (0, r.jsx)("span", {
-      className: o()({
+      className: l()({
         [y.textImportant]: O
       }),
       children: v.NW.string(b.Z.yv3DJC)
     }),
     selected: n,
-    onClick: l,
+    onClick: o,
     showUnread: O,
     trailing: (() => {
       switch (null == _ ? void 0 : _.type) {

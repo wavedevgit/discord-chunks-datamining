@@ -13,14 +13,14 @@ var r = n(278074),
   u = n(287328),
   d = n(86670),
   f = n(685736),
-  _ = n(849521),
-  p = n(421474),
-  h = n(333023),
-  g = n(960904),
-  m = n(830121),
-  E = n(710845),
-  v = n(247206),
-  b = n(38618),
+  _ = n(421474),
+  p = n(333023),
+  h = n(960904),
+  g = n(830121),
+  m = n(710845),
+  E = n(247206),
+  v = n(38618),
+  b = n(859487),
   y = n(687516),
   O = n(539573),
   S = n(926526),
@@ -114,8 +114,8 @@ function ey(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let eO = new E.Z("MessageActionCreators"),
-  eS = new E.Z("MessageQueue"),
+let eO = new m.Z("MessageActionCreators"),
+  eS = new m.Z("MessageQueue"),
   eI = !1;
 class eT {
   markComplete() {
@@ -135,12 +135,12 @@ function eN(e) {
     suggested: o = null,
     overrideProperties: a = {}
   } = e;
-  (0, m.ZP)(t).forEach(e => {
+  (0, g.ZP)(t).forEach(e => {
     let {
       type: t,
       code: s
     } = e;
-    if (t === g.g.INVITE) eA({
+    if (t === h.g.INVITE) eA({
       inviteKey: s,
       channelId: n,
       messageId: r,
@@ -148,7 +148,7 @@ function eN(e) {
       suggested: o,
       overrideProperties: a
     });
-    else if (t === g.g.TEMPLATE) {
+    else if (t === h.g.TEMPLATE) {
       let e = T.Z.getGuildTemplate(s);
       if (null == e || e.state === eg.Rj.RESOLVING) return;
       c.ZP.trackWithMetadata(eh.rMx.GUILD_TEMPLATE_LINK_SENT, {
@@ -157,28 +157,28 @@ function eN(e) {
         guild_template_description: e.description,
         guild_template_guild_id: e.sourceGuildId
       })
-    } else if (t === g.g.BUILD_OVERRIDE);
-    else if (t === g.g.MANUAL_BUILD_OVERRIDE);
-    else if (t === g.g.EVENT);
-    else if (t === g.g.CHANNEL_LINK);
-    else if (t === g.g.APP_DIRECTORY_PROFILE)(0, _.y)(s);
-    else if (t === g.g.APP_DIRECTORY_STOREFRONT)(0, _.y)(s, "storefront");
-    else if (t === g.g.APP_DIRECTORY_STOREFRONT_SKU) {
-      let e = (0, p.Q)(s);
-      null != e && (0, _.y)(e.applicationId, "storefront_sku")
-    } else if (t === g.g.ACTIVITY_BOOKMARK);
-    else if (t === g.g.EMBEDDED_ACTIVITY_INVITE);
-    else if (t === g.g.GUILD_PRODUCT);
-    else if (t === g.g.SERVER_SHOP);
-    else if (t === g.g.QUESTS_EMBED)(0, Y.dA)({
+    } else if (t === h.g.BUILD_OVERRIDE);
+    else if (t === h.g.MANUAL_BUILD_OVERRIDE);
+    else if (t === h.g.EVENT);
+    else if (t === h.g.CHANNEL_LINK);
+    else if (t === h.g.APP_DIRECTORY_PROFILE)(0, b.y)(s);
+    else if (t === h.g.APP_DIRECTORY_STOREFRONT)(0, b.y)(s, "storefront");
+    else if (t === h.g.APP_DIRECTORY_STOREFRONT_SKU) {
+      let e = (0, _.Q)(s);
+      null != e && (0, b.y)(e.applicationId, "storefront_sku")
+    } else if (t === h.g.ACTIVITY_BOOKMARK);
+    else if (t === h.g.EMBEDDED_ACTIVITY_INVITE);
+    else if (t === h.g.GUILD_PRODUCT);
+    else if (t === h.g.SERVER_SHOP);
+    else if (t === h.g.QUESTS_EMBED)(0, Y.dA)({
       questId: s,
       event: eh.rMx.QUEST_LINK_SHARED,
       trackGuildAndChannelMetadata: !0
     });
-    else if (t === g.g.APP_OAUTH2_LINK) c.ZP.trackWithMetadata(eh.rMx.APP_OAUTH2_LINK_EMBED_URL_SENT, {
+    else if (t === h.g.APP_OAUTH2_LINK) c.ZP.trackWithMetadata(eh.rMx.APP_OAUTH2_LINK_EMBED_URL_SENT, {
       application_id: s
     });
-    else if (t === g.g.COLLECTIBLES_SHOP);
+    else if (t === h.g.COLLECTIBLES_SHOP);
     else throw Error("Unknown coded link type: ".concat(t))
   })
 }
@@ -388,8 +388,8 @@ let eP = {
         message: em.NW.string(em.t.bNMQVF),
         messageName: "BOT_GUILD_EXPLICIT_CONTENT"
       })), l = (0, L.r)();
-      eD.sendBotMessage(e, o, s, l), (0, v.aP)({
-        action: v.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT,
+      eD.sendBotMessage(e, o, s, l), (0, E.aP)({
+        action: E.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT,
         messageId: l,
         channelId: e,
         context: n
@@ -507,9 +507,9 @@ let eP = {
         skipLocalFetch: d,
         truncate: f,
         forICYMI: _
-      } = e, p = ee.Z.getChannel(t), g = b.Z.isConnectedOrOverlay(), m = Date.now();
-      if (null != p && p.type === eh.d4z.GUILD_STORE) return !1;
-      if (t === h.V || (eO.log("Fetching messages for ".concat(t, " between ").concat(n, " and ").concat(r, ". jump=").concat(JSON.stringify(l))), eD._tryFetchMessagesCached({
+      } = e, h = ee.Z.getChannel(t), g = v.Z.isConnectedOrOverlay(), m = Date.now();
+      if (null != h && h.type === eh.d4z.GUILD_STORE) return !1;
+      if (t === p.V || (eO.log("Fetching messages for ".concat(t, " between ").concat(n, " and ").concat(r, ". jump=").concat(JSON.stringify(l))), eD._tryFetchMessagesCached({
           channelId: t,
           before: n,
           after: r,
@@ -521,8 +521,8 @@ let eP = {
       X.Z.fetchMessages.recordStart();
       let E = null != l ? l : void 0;
       null == E && null != c && (E = ev({}, c));
-      let v = s.Z.getOrCreate(t).loadStart(E);
-      s.Z.commit(v), a.Z.dispatch({
+      let b = s.Z.getOrCreate(t).loadStart(E);
+      s.Z.commit(b), a.Z.dispatch({
         type: "LOAD_MESSAGES"
       });
       let y = null == E ? void 0 : E.messageId,
@@ -571,7 +571,7 @@ let eP = {
           limit: o,
           jump: l,
           forICYMI: _,
-          isStale: !g || b.Z.lastTimeConnectedChanged() >= m,
+          isStale: !g || v.Z.lastTimeConnectedChanged() >= m,
           truncate: f
         })
       }), !0), () => (eO.log("Failed to fetch messages for ".concat(t)), a.Z.dispatch({
@@ -597,7 +597,7 @@ let eP = {
         return
       }
       if (eO.log("fetched ".concat(_.messages.length, " messages from local database (channel_id: ").concat(e, ", remote_fetch_completed: ").concat(i.completed, ")")), X.Z.addLocalMessages(e, _.messages.length), !i.completed && _.messages.length > 0) {
-        let t = _.messages.length >= r && _.connectionId === b.Z.lastTimeConnectedChanged();
+        let t = _.messages.length >= r && _.connectionId === v.Z.lastTimeConnectedChanged();
         a.Z.dispatch({
           type: "LOCAL_MESSAGES_LOADED",
           guildId: o.guild_id,
@@ -696,7 +696,7 @@ let eP = {
         l = null !== (n = i.nonce) && void 0 !== n ? n : (0, L.r)();
       return (i = ey(ev({}, i), {
         nonce: l
-      }), P.Z.recordMessageSendAttempt(e, l), en.Z.isReady(e)) ? s() : r && e !== h.V ? (eS.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
+      }), P.Z.recordMessageSendAttempt(e, l), en.Z.isReady(e)) ? s() : r && e !== p.V ? (eS.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
         en.Z.whenReady(e, () => {
           eS.info("Channel ".concat(e, " is ready for sending now.")), s().then(t, n)
         })

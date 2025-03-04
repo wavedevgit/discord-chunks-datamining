@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
-  bb: () => l,
-  lN: () => o
+  bb: () => o,
+  lN: () => l
 });
 var r = n(818083),
   i = n(987338);
-let l = (0, r.B)({
+let o = (0, r.B)({
   kind: "user",
   id: "2024-09_browsechannelbuttonoptin",
   label: "Don't show guild Browse Channels when all channels are already visible",
@@ -22,10 +22,10 @@ let l = (0, r.B)({
   }]
 });
 
-function o(e) {
+function l(e) {
   let {
     alwaysShowDirectory: t
-  } = l.useExperiment({
+  } = o.useExperiment({
     location: "useShowBrowseChannelsExperiment"
   });
   return t || !e

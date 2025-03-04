@@ -1,12 +1,12 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   k: () => g
 });
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  l = n.n(i),
-  o = n(481060),
+  o = n.n(i),
+  l = n(481060),
   a = n(40614),
   s = n(925329),
   c = n(810568),
@@ -25,9 +25,9 @@ function f(e) {
     source: c.m1.RtcPanel,
     trackEntryPointImpression: !0
   });
-  return (0, r.jsx)(o.P3F, {
+  return (0, r.jsx)(l.P3F, {
     onClick: i,
-    className: l()(null != i && h.clickableGameName),
+    className: o()(null != i && h.clickableGameName),
     children: (0, r.jsx)(d.Z, {
       className: h.gameName,
       children: t
@@ -40,7 +40,7 @@ function g(e) {
     isStreaming: t,
     application: n,
     game: i,
-    onClickNotSharing: l
+    onClickNotSharing: o
   } = e, c = null != n ? n.name : null != i ? i.name : p.NW.string(p.t["UQMV/P"]);
   return (0, r.jsxs)("div", {
     className: h.gameWrapper,
@@ -50,7 +50,7 @@ function g(e) {
         className: h.gameIcon,
         game: n,
         pid: null == i ? void 0 : i.pid
-      }), t ? (0, r.jsx)(o.Odl, {
+      }), t ? (0, r.jsx)(l.Odl, {
         size: "md",
         color: "currentColor",
         className: h.liveBadge
@@ -61,7 +61,7 @@ function g(e) {
         name: c,
         applicationId: null == n ? void 0 : n.id
       }) : null, (0, r.jsx)(a.V, {
-        onClick: l
+        onClick: o
       })]
     })]
   })

@@ -12,8 +12,8 @@ var r = n(200651),
   u = n(893776),
   d = n(99690),
   h = n(937154),
-  p = n(448986),
-  g = n(388905),
+  g = n(448986),
+  p = n(388905),
   f = n(198993),
   m = n(710845),
   _ = n(314897),
@@ -23,10 +23,10 @@ var r = n(200651),
   v = n(51144),
   I = n(998502),
   E = n(981631),
-  O = n(231338),
-  j = n(388032),
-  S = n(280069),
-  C = n(802138);
+  j = n(231338),
+  O = n(388032),
+  C = n(280069),
+  S = n(802138);
 let y = n(515695),
   T = new m.Z("LoginQRSocket");
 
@@ -38,27 +38,27 @@ function A(e) {
     let e = new Image;
     e.src = y, e.onload = () => o(!0), e.onerror = () => o(!0)
   }, [y]), i.useEffect(() => {
-    n && c.uvj.announce(j.NW.string(j.t.j2p129))
+    n && c.uvj.announce(O.NW.string(O.t.j2p129))
   }, [n]), (0, r.jsx)("div", {
-    className: S.qrCodeContainer,
+    className: C.qrCodeContainer,
     children: "" !== t && n ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(f.ZP, {
-        className: S.qrCode,
+        className: C.qrCode,
         size: 160,
         text: t
       }), (0, r.jsx)("div", {
-        className: S.qrCodeOverlay,
+        className: C.qrCodeOverlay,
         children: (0, r.jsx)("img", {
           src: y,
           alt: ""
         })
       })]
     }) : (0, r.jsx)("div", {
-      className: S.qrCodeOverlay,
-      "aria-label": j.NW.string(j.t.BUGkVF),
+      className: C.qrCodeOverlay,
+      "aria-label": O.NW.string(O.t.BUGkVF),
       "aria-busy": !0,
       children: (0, r.jsx)(c.$jN, {
-        className: S.qrCode,
+        className: C.qrCode,
         type: c.$jN.Type.WANDERING_CUBES,
         "aria-hidden": !0
       })
@@ -92,13 +92,13 @@ function Z(e) {
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(A, {
           text: 1 === t.step ? "https://discord.com/ra/".concat(t.fingerprint) : ""
-        }), (0, r.jsx)(g.Dx, {
-          className: C.marginBottom8,
-          children: j.NW.string(j.t.UPiHaG)
+        }), (0, r.jsx)(p.Dx, {
+          className: S.marginBottom8,
+          children: O.NW.string(O.t.UPiHaG)
         }), null != i ? (0, r.jsx)(P, {
           children: i
-        }) : (0, r.jsx)(g.DK, {
-          children: j.NW.format(j.t["Qq+A6u"], {})
+        }) : (0, r.jsx)(p.DK, {
+          children: O.NW.format(O.t["Qq+A6u"], {})
         }), (0, r.jsx)(c.zxk, {
           size: c.PhG.LARGE,
           look: c.iLD.LINK,
@@ -114,7 +114,7 @@ function Z(e) {
               conditionalMediationAbortController: e
             }).catch(() => {})
           })(a),
-          children: j.NW.string(j.t["/kpMDg"])
+          children: O.NW.string(O.t["/kpMDg"])
         })]
       });
     case 3:
@@ -124,16 +124,16 @@ function Z(e) {
       } = t;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.Z, {
-          className: S.qrAvatar,
+          className: C.qrAvatar,
           user: e,
           size: c.EFr.SIZE_120,
           isMobile: !0,
-          status: O.Sk.ONLINE
-        }), (0, r.jsx)(g.Dx, {
-          className: C.marginBottom8,
-          children: j.NW.string(j.t.apGCUV)
-        }), (0, r.jsx)(g.DK, {
-          children: j.NW.format(j.t.Cbl5JC, {
+          status: j.Sk.ONLINE
+        }), (0, r.jsx)(p.Dx, {
+          className: S.marginBottom8,
+          children: O.NW.string(O.t.apGCUV)
+        }), (0, r.jsx)(p.DK, {
+          children: O.NW.format(O.t.Cbl5JC, {
             username: "".concat(v.ZP.getUserTag(e))
           })
         }), (0, r.jsx)(c.zxk, {
@@ -141,8 +141,8 @@ function Z(e) {
           color: c.zxk.Colors.LINK,
           size: c.zxk.Sizes.MIN,
           onClick: n,
-          className: S.startOverButton,
-          children: j.NW.string(j.t.nOOhws)
+          className: C.startOverButton,
+          children: O.NW.string(O.t.nOOhws)
         })]
       })
     }
@@ -161,20 +161,20 @@ function R(e) {
   } = e, o = (0, l.e7)([_.default], () => _.default.getIsPasswordlessActive()), {
     state: u,
     rsaKeyPair: d,
-    cancel: g,
+    cancel: p,
     handleFailure: f
   } = function(e) {
     let [t, n] = i.useState(0), [r, o] = i.useState(!1), [l, s] = i.useState({
       step: 0
-    }), [c, u] = i.useState(null), d = (0, h.Z)(), g = i.useMemo(() => new a.Z(1500, 3e4), []), f = (0, p.Z)(() => {
+    }), [c, u] = i.useState(null), d = (0, h.Z)(), p = i.useMemo(() => new a.Z(1500, 3e4), []), f = (0, g.Z)(() => {
       s({
         step: 0
       }), d ? n(e => e + 1) : (T.info("document is not visible, will defer reconnection when document becomes visible."), o(!0))
     }), m = i.useCallback(() => {
       T.error("Could not complete QR code login, trying to restart with a new QR code."), s({
         step: 0
-      }), g.pending || g.fail(f)
-    }, [f, g]);
+      }), p.pending || p.fail(f)
+    }, [f, p]);
     return i.useEffect(() => {
       d && r && 0 === l.step && (T.info("reconnecting, now that document is visible"), o(!1), n(e => e + 1))
     }, [l, d, r, o]), i.useEffect(() => {
@@ -190,7 +190,7 @@ function R(e) {
         d = null,
         h = !0;
 
-      function p() {
+      function g() {
         if (null != a) return a;
         throw Error("No key pair set")
       }
@@ -206,7 +206,7 @@ function R(e) {
         switch (r.op) {
           case "nonce_proof": {
             let e = r.encrypted_nonce,
-              t = await (0, x.qd)(p(), e);
+              t = await (0, x.qd)(g(), e);
             o("computed nonce proof"), i.send(JSON.stringify({
               op: "nonce_proof",
               nonce: t
@@ -214,8 +214,8 @@ function R(e) {
             return
           }
           case "pending_remote_init": {
-            g.succeed(), b.S.dispatch(E.CkL.WAVE_EMPHASIZE);
-            let e = await (0, x.Pk)(p());
+            p.succeed(), b.S.dispatch(E.CkL.WAVE_EMPHASIZE);
+            let e = await (0, x.Pk)(g());
             if (e !== r.fingerprint) throw Error("bad fingerprint ".concat(e, " !== ").concat(r.fingerprint));
             o("handshake complete awaiting remote auth."), s({
               step: 1,
@@ -236,7 +236,7 @@ function R(e) {
             let e = r.encrypted_user_payload;
             s({
               step: 3,
-              user: await (0, x.Rq)(p(), e)
+              user: await (0, x.Rq)(g(), e)
             });
             return
           }
@@ -245,7 +245,7 @@ function R(e) {
             let e = r.encrypted_user_payload;
             s({
               step: 2,
-              user: await (0, x.Rq)(p(), e)
+              user: await (0, x.Rq)(g(), e)
             });
             return
           }
@@ -254,7 +254,7 @@ function R(e) {
             let t = r.encrypted_token;
             s({
               step: 5
-            }), e(await (0, x.FW)(p(), t));
+            }), e(await (0, x.FW)(g(), t));
             return
           }
           case "cancel":
@@ -283,9 +283,9 @@ function R(e) {
       }, i.onerror = e => {
         o("disconnected, error: ".concat(JSON.stringify(e))), m()
       }, () => {
-        o("cleaning up"), i.onopen = () => null, i.onmessage = () => null, i.onclose = () => null, i.onerror = () => null, i.close(1e3), g.cancel(), null != d && clearTimeout(d), null != c && clearInterval(c)
+        o("cleaning up"), i.onopen = () => null, i.onmessage = () => null, i.onclose = () => null, i.onerror = () => null, i.close(1e3), p.cancel(), null != d && clearTimeout(d), null != c && clearInterval(c)
       }
-    }, [f, e, t, g, m]), {
+    }, [f, e, t, p, m]), {
       state: l,
       rsaKeyPair: c,
       cancel: f,
@@ -323,17 +323,17 @@ function R(e) {
     })
   }, [u, t, d, f]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: S.verticalSeparator
+      className: C.verticalSeparator
     }), (0, r.jsx)(c.qBt, {
       fillParent: !0,
-      className: S.qrLogin,
+      className: C.qrLogin,
       step: m,
       steps: [0, 1],
       children: (0, r.jsx)("div", {
-        className: S.qrLoginInner,
+        className: C.qrLoginInner,
         children: (0, r.jsx)(Z, {
           state: u,
-          cancel: g,
+          cancel: p,
           conditionalMediationAbortController: n,
           isPasswordlessActive: o
         })

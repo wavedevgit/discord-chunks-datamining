@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => s
 }), n(653041), n(978209), n(47120);
 var r, i = n(192379),
-  l = n(846519);
+  o = n(846519);
 
-function o(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,17 +25,17 @@ class a extends(r = i.Component) {
       numUpdatesToShow: t,
       updateInterval: n,
       pointsToSmooth: r
-    } = this.props, i = Date.now(), l = 0, o = 0, a = [], s = null != e[0] ? e[0].bytes : 0;
-    for (; l < t + r; l++) {
+    } = this.props, i = Date.now(), o = 0, l = 0, a = [], s = null != e[0] ? e[0].bytes : 0;
+    for (; o < t + r; o++) {
       let t;
-      let r = i - (l + 1) * n;
-      for (; o < e.length;)
-        if ((t = e[o]).timestamp > r) o++;
+      let r = i - (o + 1) * n;
+      for (; l < e.length;)
+        if ((t = e[l]).timestamp > r) l++;
         else break;
-      if (o === e.length) break;
+      if (l === e.length) break;
       null != t && (a.push(s - t.bytes), s = t.bytes)
     }
-    for (; l < t + r; l++) a.push(0);
+    for (; o < t + r; o++) a.push(0);
     return a.reverse(), a
   }
   smoothDeltaBytes(e) {
@@ -58,17 +58,17 @@ class a extends(r = i.Component) {
     return n(this.state.smoothedDeltaBytes, t, e)
   }
   constructor(e) {
-    super(e), o(this, "_interval", new l.Xp), o(this, "update", () => {
+    super(e), l(this, "_interval", new o.Xp), l(this, "update", () => {
       let {
         onUpdate: e,
         numUpdatesToShow: t,
         pointsToSmooth: n,
         updateInterval: r
-      } = this.props, i = this.props.getHistoricalTotalBytes(), l = null != i[0] ? i[0].bytes : 0, o = [...this.state.deltaBytes.slice(1, t + n), l - this.state.lastTotalBytes];
+      } = this.props, i = this.props.getHistoricalTotalBytes(), o = null != i[0] ? i[0].bytes : 0, l = [...this.state.deltaBytes.slice(1, t + n), o - this.state.lastTotalBytes];
       this.setState({
-        deltaBytes: o,
-        smoothedDeltaBytes: this.smoothDeltaBytes(o),
-        lastTotalBytes: l
+        deltaBytes: l,
+        smoothedDeltaBytes: this.smoothDeltaBytes(l),
+        lastTotalBytes: o
       }, () => null != e && e(r))
     });
     let t = this.props.getHistoricalTotalBytes(),
@@ -80,7 +80,7 @@ class a extends(r = i.Component) {
     }
   }
 }
-o(a, "defaultProps", {
+l(a, "defaultProps", {
   numUpdatesToShow: 30,
   updateInterval: 500,
   pointsToSmooth: 10

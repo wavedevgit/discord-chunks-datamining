@@ -14,8 +14,8 @@ var i = n(120356),
   u = n(981631),
   d = n(388032),
   h = n(12542),
-  p = n(612064),
-  g = n(802138);
+  g = n(612064),
+  p = n(802138);
 
 function f(e) {
   let {
@@ -27,10 +27,10 @@ function f(e) {
     children: [(0, r.jsx)(s.Ee, {
       src: n(689411)
     }), (0, r.jsx)(s.Dx, {
-      className: o()(g.marginTop20, g.marginBottom8, p.flexCenter),
+      className: o()(p.marginTop20, p.marginBottom8, g.flexCenter),
       children: d.NW.string(d.t.eL5z0t)
     }), (0, r.jsx)(s.DK, {
-      className: g.marginBottom40,
+      className: p.marginBottom40,
       children: d.NW.string(d.t["poAv6+"])
     }), (0, r.jsxs)(l.Zbd, {
       className: h.card,

@@ -25,20 +25,20 @@ function _(e) {
     customLink: v,
     embedUrl: y,
     referrerId: x
-  } = e, O = null == _ ? void 0 : null === (t = _.bot) || void 0 === t ? void 0 : t.id, E = (0, c.ms)({
+  } = e, E = null == _ ? void 0 : null === (t = _.bot) || void 0 === t ? void 0 : t.id, O = (0, c.ms)({
     context: {
       type: "contextless"
     },
     applicationId: _.id,
     botUserId: null == _ ? void 0 : null === (n = _.bot) || void 0 === n ? void 0 : n.id
-  }), j = null != _ && (0, l.ye)(_), N = null != O && j && E, {
+  }), j = null != _ && (0, l.ye)(_), N = null != E && j && O, {
     analyticsLocations: C
   } = (0, o.ZP)(a.Z.ACTIVITY_BOOKMARK), I = null != b ? b : v.custom_id, S = null != x ? x : v.referrer_id, T = N ? [{
     label: null != v.primary_cta ? v.primary_cta : g.NW.string(g.t.RscU7O),
     onClick() {
       (0, s.W)({
         appId: _.id,
-        botId: O,
+        botId: E,
         analyticsLocations: C,
         customId: I,
         referrerId: S

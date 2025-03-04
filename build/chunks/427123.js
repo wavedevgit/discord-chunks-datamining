@@ -18,8 +18,8 @@ var r, i, a, o = n(392711),
   v = n(981631);
 let y = "DetectedOffPlatformPremiumPerksStore",
   x = {},
-  O = {},
-  E = [];
+  E = {},
+  O = [];
 
 function j() {
   let e = !1;
@@ -27,8 +27,8 @@ function j() {
       skuId: t,
       applicationId: n
     }
-    of l().values(O)) {
-    if (E.includes(t)) continue;
+    of l().values(E)) {
+    if (O.includes(t)) continue;
     let r = f.Z.getApplication(n);
     if (null == r) {
       f.Z.isFetchingApplication(n) || f.Z.didFetchingApplicationFail(n) || m.ZP.fetchApplication(n);
@@ -49,7 +49,7 @@ function j() {
 class N extends(r = s.ZP.Store) {
   initialize() {
     var e;
-    this.waitFor(h.ZP, b.Z, _.Z), E = null !== (e = c.K.get(y)) && void 0 !== e ? e : E
+    this.waitFor(h.ZP, b.Z, _.Z), O = null !== (e = c.K.get(y)) && void 0 !== e ? e : O
   }
   getDetectedOffPlatformPremiumPerks() {
     return l().values(x)
@@ -63,7 +63,7 @@ a = "DetectedOffPlatformPremiumPerksStore", (i = "displayName") in N ? Object.de
 }) : N[i] = a;
 let C = new N(d.Z, {
   LOGOUT: function() {
-    x = {}, O = {}
+    x = {}, E = {}
   },
   SKU_FETCH_SUCCESS: j,
   ENTITLEMENT_FETCH_APPLICATION_SUCCESS: j,
@@ -73,8 +73,8 @@ let C = new N(d.Z, {
     let {
       skuId: t
     } = e;
-    if (delete x[t], E.includes(t)) return !1;
-    E.push(t), c.K.set(y, E)
+    if (delete x[t], O.includes(t)) return !1;
+    O.push(t), c.K.set(y, O)
   },
   RUNNING_GAMES_CHANGE: function() {
     let e = !1;
@@ -88,7 +88,7 @@ let C = new N(d.Z, {
             skuId: n,
             applicationId: r
           }
-          of v.Lg6) !(r !== t || E.includes(n)) && null == O[n] && (_.Z.applicationIdsFetched.has(r) || _.Z.applicationIdsFetching.has(r) || null != _.Z.getForSku(n) || u.yD(r), O[n] = {
+          of v.Lg6) !(r !== t || O.includes(n)) && null == E[n] && (_.Z.applicationIdsFetched.has(r) || _.Z.applicationIdsFetching.has(r) || null != _.Z.getForSku(n) || u.yD(r), E[n] = {
           skuId: n,
           applicationId: r
         }, e = !0);

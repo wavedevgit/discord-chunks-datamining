@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => f
 }), n(47120);
 var r = n(442837),
   i = n(853856),
-  l = n(592125),
-  o = n(938475),
+  o = n(592125),
+  l = n(938475),
   a = n(823379),
   s = n(136015),
   c = n(709054),
@@ -18,7 +18,7 @@ function h(e) {
     voiceState: t,
     userNick: n,
     user: r
-  } = e, i = (0, o.sQ)(t, n);
+  } = e, i = (0, l.sQ)(t, n);
   return {
     user: r,
     voiceState: t,
@@ -28,9 +28,9 @@ function h(e) {
 }
 
 function f(e) {
-  let [t] = (0, r.e7)([u.Z, l.Z, i.Z], () => {
+  let [t] = (0, r.e7)([u.Z, o.Z, i.Z], () => {
     let t;
-    return [(t = e === p.I_8 ? c.default.keys(i.Z.getFavoriteChannels()).map(e => l.Z.getChannel(e)).filter(a.lm).filter(e => e.isGuildStageVoice()) : u.Z.getChannels(e)).reduce((e, t) => {
+    return [(t = e === p.I_8 ? c.default.keys(i.Z.getFavoriteChannels()).map(e => o.Z.getChannel(e)).filter(a.lm).filter(e => e.isGuildStageVoice()) : u.Z.getChannels(e)).reduce((e, t) => {
       let n = u.Z.getMutableParticipants(t.id, d.pV.SPEAKER);
       return e[t.id] = n.filter(e => e.type === d.Ui.VOICE).map(h), e
     }, {}), t.reduce((e, t) => {

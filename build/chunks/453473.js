@@ -22,8 +22,8 @@ var r = n(200651),
   v = n(294218),
   y = n(373662),
   x = n(695346),
-  O = n(496675),
-  E = n(626135),
+  E = n(496675),
+  O = n(626135),
   j = n(585483),
   N = n(70956),
   C = n(324701),
@@ -36,9 +36,9 @@ var r = n(200651),
   Z = n(74551),
   k = n(981631),
   R = n(388032),
-  L = n(524137);
+  D = n(524137);
 
-function D(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -83,7 +83,7 @@ function F(e) {
   return (0, r.jsx)(f.VqE, {
     "aria-label": R.NW.string(R.t["2pAkDA"]),
     children: (0, r.jsxs)("div", {
-      className: L.popoutContainer,
+      className: D.popoutContainer,
       children: [(0, r.jsx)(g.h4, {
         icon: f.plf,
         title: R.NW.string(R.t["2pAkDA"])
@@ -178,12 +178,12 @@ function G(e) {
           }
           return i
         }(e, ["ref"]);
-        return (0, r.jsx)(f.h21, M(D({
+        return (0, r.jsx)(f.h21, M(L({
           ref: e => {
             var t;
             a.current = e, i.current = null !== (t = null == e ? void 0 : e.getScrollerNode()) && void 0 !== t ? t : null
           },
-          className: L.messagesScroller
+          className: D.messagesScroller
         }, o), {
           children: t.map(e => (0, r.jsx)(V, {
             savedMessageKey: e,
@@ -203,18 +203,18 @@ function H(e) {
     throttledNow: a
   } = e, l = (0, I.gr)(t), s = i.useCallback(async e => {
     var r;
-    await (0, I.fC)(t, l), e.shiftKey || n(), E.default.track(k.rMx.FOR_LATER_SAVED_MESSAGE_JUMP, {
+    await (0, I.fC)(t, l), e.shiftKey || n(), O.default.track(k.rMx.FOR_LATER_SAVED_MESSAGE_JUMP, {
       channel_id: t.saveData.channelId,
       message_id: t.saveData.messageId,
       message_author_id: null === (r = t.message) || void 0 === r ? void 0 : r.author.id,
       type: null != t.saveData.dueAt ? T._l.REMINDER : T._l.BOOKMARK,
       due_duration: null != t.saveData.dueAt ? d()().diff(t.saveData.dueAt) : void 0
     })
-  }, [n, t, l]), c = (0, m.e7)([O.Z], () => !!((null == l ? void 0 : l.type) === k.d4z.UNKNOWN || (null == l ? void 0 : l.isPrivate())) || O.Z.can(k.Plq.VIEW_CHANNEL, l));
+  }, [n, t, l]), c = (0, m.e7)([E.Z], () => !!((null == l ? void 0 : l.type) === k.d4z.UNKNOWN || (null == l ? void 0 : l.isPrivate())) || E.Z.can(k.Plq.VIEW_CHANNEL, l));
   return null != l && null != t.message && c ? (0, r.jsxs)("div", {
-    className: L.messageContainer,
+    className: D.messageContainer,
     children: [(0, r.jsx)(f.P3F, {
-      className: L.clickableMessageBackground,
+      className: D.clickableMessageBackground,
       onClick: s,
       "aria-label": R.NW.string(R.t["+TSRGB"])
     }), null != t.saveData.dueAt ? (0, r.jsx)(Z.Z, {
@@ -225,22 +225,22 @@ function H(e) {
     }), (0, r.jsx)(v.Z, {
       message: t.message,
       channel: l,
-      className: L.message,
+      className: D.message,
       compact: x.jU.getSetting(),
       animateAvatar: !1,
       focusProps: W,
       trackAnnouncementViews: !0
     }, t.message.id), (0, r.jsx)(y.ZP, {
-      className: L.hoverBar,
+      className: D.hoverBar,
       children: (0, r.jsx)(z, {
         savedMessage: t,
         jumpToMessage: s
       })
     })]
   }) : (0, r.jsxs)("div", {
-    className: o()(L.messageContainer, L.deletedMessage),
+    className: o()(D.messageContainer, D.deletedMessage),
     children: [(0, r.jsx)("div", {
-      className: L.deleteIcon,
+      className: D.deleteIcon,
       children: (0, r.jsx)(f.P4T, {
         size: "xxs",
         color: f.TVs.colors.INTERACTIVE_ACTIVE
@@ -250,7 +250,7 @@ function H(e) {
       color: "header-secondary",
       children: null != t.saveData.dueAt ? R.NW.string(R.t["wuQm+v"]) : R.NW.string(R.t.o572FR)
     }), (0, r.jsx)(y.ZP, {
-      className: L.hoverBar,
+      className: D.hoverBar,
       children: (0, r.jsx)(y.sF, {
         label: R.NW.string(R.t.SvXS1d),
         icon: f.XHJ,
@@ -295,7 +295,7 @@ function z(e) {
         let {
           MessageReminderEditMenu: e
         } = await n.e("69818").then(n.bind(n, 898150));
-        return n => (0, r.jsx)(e, M(D({}, n), {
+        return n => (0, r.jsx)(e, M(L({}, n), {
           label: R.NW.string(R.t.roMu1N),
           message: t.message
         }))
@@ -317,7 +317,7 @@ function z(e) {
         let {
           MessageReminderEditMenu: e
         } = await n.e("69818").then(n.bind(n, 898150));
-        return n => (0, r.jsx)(e, M(D({}, n), {
+        return n => (0, r.jsx)(e, M(L({}, n), {
           label: R.NW.string(R.t.mJ3P0N),
           message: t.message
         }))

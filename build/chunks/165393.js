@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => h
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  o = n(120356),
+  l = n.n(o),
   a = n(866442),
   s = n(481060),
   c = n(686546),
@@ -25,13 +25,13 @@ function h(e) {
   var t;
   let {
     title: n,
-    className: l,
+    className: o,
     icon: a
   } = e, [d, h] = i.useState(p(n));
   return i.useEffect(() => {
     h(p(n))
   }, [n]), (0, r.jsxs)("div", {
-    className: o()(u.wrapper, l),
+    className: l()(u.wrapper, o),
     children: [(0, r.jsx)(c.ZP, {
       mask: c.ZP.Masks.STATUS_SCREENSHARE,
       width: 32,

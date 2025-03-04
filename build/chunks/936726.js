@@ -56,13 +56,13 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = e => {
+let S = e => {
   if (null == e) return null;
   let t = new g.Z(e);
   return v.ZP.getUserTag(t)
 };
 
-function S(e, t) {
+function E(e, t) {
   return null != t && /^data:/.test(t) ? t : (0, h.ov)({
     id: e.id,
     avatar: t,
@@ -80,9 +80,9 @@ function P(e) {
     isNew: v,
     errors: P,
     onToggleExpand: w
-  } = e, [Z, T] = i.useState(!1), [W] = i.useState(new s.V7);
+  } = e, [T, Z] = i.useState(!1), [W] = i.useState(new s.V7);
   i.useEffect(() => () => W.stop(), [W]);
-  let k = i.useMemo(() => S(n, n.avatar), [n]),
+  let k = i.useMemo(() => E(n, n.avatar), [n]),
     A = i.useCallback(() => {
       let e = "".concat((0, a.K0)(!1)).concat(O.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
       (0, x.JG)(e)
@@ -120,7 +120,7 @@ function P(e) {
   null != n.user ? R.push({
     icon: c.T39,
     text: y.NW.formatToPlainString(y.t["7EcUbm"], {
-      user: E(n.user),
+      user: S(n.user),
       timestamp: j.default.extractTimestamp(n.id)
     })
   }) : R.push({
@@ -148,7 +148,7 @@ function P(e) {
                 avatar: e
               })
             },
-            makeURL: e => S(n, e),
+            makeURL: e => E(n, e),
             imageClassName: _.avatarUploaderInner,
             showIcon: !0
           }), null != P.avatar && "" !== P.avatar ? (0, r.jsx)(c.Text, {
@@ -196,7 +196,7 @@ function P(e) {
         }), (0, r.jsxs)(m.Z, {
           children: [(0, r.jsx)(c.ua7, {
             text: y.NW.string(y.t.wwdb3t),
-            forceOpen: Z,
+            forceOpen: T,
             color: c.FGA.GREEN,
             disableTooltipPointerEvents: !0,
             children: e => {
@@ -224,7 +224,7 @@ function P(e) {
               return (0, r.jsx)(c.zxk, I(C({}, s), {
                 "aria-label": "",
                 onClick: () => {
-                  null == t || t(), T(!0), c.uvj.announce(y.NW.string(y.t.wwdb3t)), W.start(1e3, () => T(!1)), A()
+                  null == t || t(), Z(!0), c.uvj.announce(y.NW.string(y.t.wwdb3t)), W.start(1e3, () => Z(!1)), A()
                 },
                 size: c.zxk.Sizes.SMALL,
                 color: c.zxk.Colors.PRIMARY,

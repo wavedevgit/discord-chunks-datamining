@@ -1,4 +1,4 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Ne: () => p,
   Ny: () => h,
@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  l = n.n(i),
-  o = n(481060),
+  o = n.n(i),
+  l = n(481060),
   a = n(44315),
   s = n(246364),
   c = n(460562),
@@ -17,15 +17,15 @@ var i = n(120356),
   d = n(384185);
 
 function p(e, t) {
-  return (0, r.jsx)(o.mAB, {
+  return (0, r.jsx)(l.mAB, {
     count: e,
     color: t
   })
 }
 
 function h() {
-  return (0, r.jsx)(o.G2e, {
-    icon: (0, o.GSL)(c.Z),
+  return (0, r.jsx)(l.G2e, {
+    icon: (0, l.GSL)(c.Z),
     disableColor: !0,
     className: d.unavailableBadge
   })
@@ -36,23 +36,23 @@ function f(e) {
     audio: n,
     video: r,
     screenshare: i,
-    isCurrentUserConnected: l,
+    isCurrentUserConnected: o,
     liveStage: a,
     activeEvent: s,
     activity: c
   } = e;
-  if (s) t = o.Que;
-  else if (a) t = o.ewx;
-  else if (c) t = o.nG3;
-  else if (i) t = o.pzj;
-  else if (r) t = o.Odl;
+  if (s) t = l.Que;
+  else if (a) t = l.ewx;
+  else if (c) t = l.nG3;
+  else if (i) t = l.pzj;
+  else if (r) t = l.Odl;
   else {
     if (!n) return null;
-    t = o.gj8
+    t = l.gj8
   }
   return m({
     icon: t,
-    isCurrentUserConnected: l
+    isCurrentUserConnected: o
   })
 }
 
@@ -62,13 +62,13 @@ function g(e) {
   } = e, [n, r] = function(e) {
     switch (e) {
       case s.wB.SUBMITTED:
-        return [void 0, o.T39];
+        return [void 0, l.T39];
       case s.wB.REJECTED:
-        return [u.Ilk.RED_400, o.Dio];
+        return [u.Ilk.RED_400, l.Dio];
       case s.wB.APPROVED:
-        return [u.Ilk.GREEN_360, o.dz2];
+        return [u.Ilk.GREEN_360, l.dz2];
       default:
-        return [void 0, o.vdY]
+        return [void 0, l.vdY]
     }
   }(t);
   return m({
@@ -87,7 +87,7 @@ function m(e) {
   } : {
     color: (0, a.Lq)(n)
   };
-  return (0, r.jsx)(o.G2e, function(e) {
+  return (0, r.jsx)(l.G2e, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -106,7 +106,7 @@ function m(e) {
     return e
   }({
     icon: t,
-    className: l()(d.iconBadge, {
+    className: o()(d.iconBadge, {
       [d.isCurrentUserConnected]: i
     })
   }, s))

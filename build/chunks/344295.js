@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => H
+  Z: () => K
 }), n(789020), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -12,8 +12,8 @@ var r = n(200651),
   u = n(298444),
   d = n(447543),
   h = n(881052),
-  p = n(899370),
-  g = n(267394),
+  g = n(899370),
+  p = n(267394),
   f = n(388905),
   m = n(639946),
   _ = n(792766),
@@ -23,10 +23,10 @@ var r = n(200651),
   v = n(929809),
   I = n(703656),
   E = n(108427),
-  O = n(314897),
-  j = n(896797),
-  S = n(701190),
-  C = n(626135),
+  j = n(314897),
+  O = n(896797),
+  C = n(701190),
+  S = n(626135),
   y = n(630388),
   T = n(63063),
   A = n(782605),
@@ -59,7 +59,7 @@ async function z(e) {
   let {
     invite: t
   } = await d.ZP.resolveInvite(e, U);
-  null != t && (0, g.A)(t)
+  null != t && (0, p.A)(t)
 }
 class V extends i.PureComponent {
   componentDidMount() {
@@ -68,7 +68,7 @@ class V extends i.PureComponent {
       login: t,
       inviteKey: n
     } = this.props;
-    if (C.default.track(L.rMx.INVITE_VIEWED, {
+    if (S.default.track(L.rMx.INVITE_VIEWED, {
         invite_code: n
       }, {
         flush: !0
@@ -94,7 +94,7 @@ class V extends i.PureComponent {
     if (o !== this.getInviteKey(e)) z(o);
     else if (t.state === L.r2o.APP_NOT_OPENED) this.handleContinue();
     else if (this.getMode() === F.LOGIN && r !== e.authenticated && r) {
-      let e = O.default.getFingerprint();
+      let e = j.default.getFingerprint();
       if (null != e) {
         let t = (0, s.s)(e);
         this.track(L.rMx.INVITE_LOGIN_SUCCESSFUL, !0, {
@@ -138,7 +138,7 @@ class V extends i.PureComponent {
       } : {
         invite_code: o
       };
-    C.default.track(e, function(e) {
+    S.default.track(e, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -316,7 +316,7 @@ class V extends i.PureComponent {
         context: this.getAcceptInviteContext(U),
         skipOnboarding: !0,
         callback: t => {
-          (0, g.A)(t), null != t.channel && d.ZP.openApp(e, t.channel.id)
+          (0, p.A)(t), null != t.channel && d.ZP.openApp(e, t.channel.id)
         }
       }).catch(e => {
         if (e instanceof h.yZ || e instanceof h.Hx) {
@@ -357,16 +357,16 @@ class V extends i.PureComponent {
     })
   }
 }
-let H = c.ZP.connectStores([S.Z, j.Z, O.default, b.Z, p.Z], e => {
+let K = c.ZP.connectStores([C.Z, O.Z, j.default, b.Z, g.Z], e => {
   var t;
   let {
     inviteKey: n
   } = e;
   return {
-    invite: null !== (t = S.Z.getInvite(n)) && void 0 !== t ? t : {},
+    invite: null !== (t = C.Z.getInvite(n)) && void 0 !== t ? t : {},
     nativeAppState: b.Z.getState(n),
-    authenticated: O.default.isAuthenticated(),
-    defaultRoute: j.Z.defaultRoute,
-    isUnderage: p.Z.isUnderageAnonymous()
+    authenticated: j.default.isAuthenticated(),
+    defaultRoute: O.Z.defaultRoute,
+    isUnderage: g.Z.isUnderageAnonymous()
   }
 })(V)

@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => O
+  Z: () => j
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -12,8 +12,8 @@ var r = n(200651),
   u = n(388905),
   d = n(353926),
   h = n(82554),
-  p = n(726521),
-  g = n(185625),
+  g = n(726521),
+  p = n(185625),
   f = n(314897),
   m = n(63063),
   _ = n(981631),
@@ -72,10 +72,10 @@ let E = e => {
       })
     }, s = e => {
       let t = async () => {
-        await (0, g.yL)(i, e)
-      }, a = async t => await (0, g.RV)(i, e, t), s = e => {
+        await (0, p.yL)(i, e)
+      }, a = async t => await (0, p.RV)(i, e, t), s = e => {
         let t = null == e ? void 0 : e.token;
-        i === h.BM.MESSAGE ? (0, p.eE)(t) : i === h.BM.USER && (0, p.JM)(t)
+        i === h.BM.MESSAGE ? (0, g.eE)(t) : i === h.BM.USER && (0, g.JM)(t)
       };
       t(), (0, l.ZDy)(async () => {
         let {
@@ -103,19 +103,19 @@ let E = e => {
       })
     })
   },
-  O = () => {
-    let [e, t] = i.useState(!0), [n, o] = i.useState(!1), p = (0, a.e7)([f.default], () => f.default.isAuthenticated()), v = (0, a.e7)([d.Z], () => d.Z.hasLoadedExperiments), I = () => {
-      (0, g.qJ)().then(() => {
+  j = () => {
+    let [e, t] = i.useState(!0), [n, o] = i.useState(!1), g = (0, a.e7)([f.default], () => f.default.isAuthenticated()), v = (0, a.e7)([d.Z], () => d.Z.hasLoadedExperiments), I = () => {
+      (0, p.qJ)().then(() => {
         t(!1), o(!0)
       }).catch(() => {
         t(!1), o(!1)
       })
     };
     return i.useEffect(() => {
-      p ? (t(!0), c.k({
+      g ? (t(!0), c.k({
         withAnalyticsToken: !0
       }).then(() => I()).catch(() => t(!1))) : I()
-    }, [p]), i.useEffect(() => {
+    }, [g]), i.useEffect(() => {
       (async () => {
         v || (await s.Z.getLocationMetadata(), s.Z.getExperiments())
       })()

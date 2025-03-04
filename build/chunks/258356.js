@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  X: () => g,
+  X: () => p,
   Z: () => f
 }), n(266796);
 var r = n(200651);
@@ -15,7 +15,7 @@ var i = n(481060),
   d = n(388032),
   h = n(632106);
 
-function p(e) {
+function g(e) {
   var t;
   let {
     guildScheduledEvent: n,
@@ -49,7 +49,7 @@ function p(e) {
   })
 }
 
-function g(e) {
+function p(e) {
   var t;
   let {
     invite: n
@@ -106,7 +106,7 @@ function f(e) {
   } = e, {
     guild_scheduled_event: a
   } = t;
-  return null != a ? (0, r.jsx)(p, {
+  return null != a ? (0, r.jsx)(g, {
     guildScheduledEvent: a,
     channel: n,
     isSubmitting: i,

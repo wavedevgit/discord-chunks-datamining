@@ -11,8 +11,8 @@ var i = n(200651),
   c = n(367907),
   u = n(555573),
   d = n(895924),
-  p = n(809547),
-  m = n(583027),
+  p = n(583027),
+  m = n(177653),
   h = n(585483),
   f = n(499254),
   v = n(541099),
@@ -65,7 +65,7 @@ function M(e) {
     isScrollCloseToBottom: s
   } = e, c = r === N._b.TEXT, u = r === N._b.TEXT, {
     loading: d,
-    isEmptyState: m,
+    isEmptyState: p,
     commandResults: h,
     hasCommandResults: f,
     applicationResults: v
@@ -87,9 +87,9 @@ function M(e) {
     entrypoint: r
   });
   l.useEffect(() => {
-    s && y === p.M.FETCHED && E()
+    s && y === m.M.FETCHED && E()
   }, [E, y, s]);
-  let j = null == y || y === p.M.FETCHING,
+  let j = null == y || y === m.M.FETCHING,
     g = l.useMemo(() => {
       let e = v.map(e => ({
           application: e,
@@ -107,7 +107,7 @@ function M(e) {
       }))]
     }, [b, v]),
     P = g.length > 0,
-    A = m && !P && !j;
+    A = p && !P && !j;
   return d ? (0, i.jsx)(H, {}) : A ? (0, i.jsx)(C.A, {
     type: N.LG.SEARCH_EMPTY,
     searchQuery: n,
@@ -133,7 +133,7 @@ function w(e) {
     context: r,
     commandResults: o,
     query: a
-  } = e, p = o.length > 4, x = l.useMemo(() => p ? o.slice(0, 4) : o, [o, p]), [y, b] = l.useState(!1), j = null !== (t = (0, s.Z)(y)) && void 0 !== t ? t : y, C = l.useCallback(() => b(e => !e), []), A = (null !== (n = (0, s.Z)(a)) && void 0 !== n ? n : a)[0] !== a[0], T = y && !A;
+  } = e, m = o.length > 4, x = l.useMemo(() => m ? o.slice(0, 4) : o, [o, m]), [y, b] = l.useState(!1), j = null !== (t = (0, s.Z)(y)) && void 0 !== t ? t : y, C = l.useCallback(() => b(e => !e), []), A = (null !== (n = (0, s.Z)(a)) && void 0 !== n ? n : a)[0] !== a[0], T = y && !A;
   l.useLayoutEffect(() => b(!1), [A]);
   let {
     ref: L,
@@ -159,7 +159,7 @@ function w(e) {
     children: [(0, i.jsx)(g.Z, {
       title: O.NW.string(O.t["0hKkS0"]),
       buttonType: M,
-      onClickViewButton: p ? C : void 0
+      onClickViewButton: m ? C : void 0
     }), (0, i.jsx)("div", {
       className: S.sectionContentContainer,
       ref: L,
@@ -177,7 +177,7 @@ function w(e) {
           searchResultsPosition: t,
           onClick: () => {
             let e = v.Z.entrypoint();
-            f.yT(N.ti.DISMISSED), (0, m.Mo)({
+            f.yT(N.ti.DISMISSED), (0, p.Mo)({
               command: n,
               location: d.Vh.APP_LAUNCHER_HOME_SEARCH,
               sectionName: N.L3.SEARCH

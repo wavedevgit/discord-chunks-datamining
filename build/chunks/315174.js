@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   ZP: () => j
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  o = n(120356),
+  l = n.n(o),
   a = n(642128),
   s = n(873546),
   c = n(481060),
@@ -24,7 +24,7 @@ function y(e) {
   let {
     guild: n,
     controller: i,
-    guildBanner: l,
+    guildBanner: o,
     animate: c
   } = e, {
     value: d
@@ -36,19 +36,19 @@ function y(e) {
       transform: d.to(e => "translateY(-".concat((1 - e) * g, "px)"))
     },
     children: (0, r.jsx)(a.animated.div, {
-      className: o()(v.bannerImage, {
+      className: l()(v.bannerImage, {
         [v.bannerImgFullWidth]: s.tq
       }),
       style: {
         transform: d.to(e => f ? "translateY(".concat((1 - e) * g * (2 / 3), "px) scale(").concat(1 + (1 - e) * .2, ")") : "translateY(".concat((1 - e) * g, "px)"))
       },
       children: (0, r.jsx)("img", {
-        className: o()(v.bannerImg, {
+        className: l()(v.bannerImg, {
           [v.bannerImgFullWidth]: s.tq
         }),
         src: null !== (t = h.ZP.getGuildBannerURL({
           id: n.id,
-          banner: l
+          banner: o
         }, c)) && void 0 !== t ? t : "",
         alt: "",
         "aria-hidden": !0
@@ -62,7 +62,7 @@ function _(e) {
     guild: t,
     controller: n,
     hasBanner: i,
-    hasSubheader: l
+    hasSubheader: o
   } = e, {
     value: s
   } = n.springs, u = t.hasFeature(g.oNc.DISCOVERABLE), d = (0, r.jsx)("div", {
@@ -116,8 +116,8 @@ function _(e) {
       }
     })
   });
-  return l ? (0, r.jsx)("div", {
-    className: o()(v.communityInfoContainer, v.hasSubheader),
+  return o ? (0, r.jsx)("div", {
+    className: l()(v.communityInfoContainer, v.hasSubheader),
     children: d
   }) : (0, r.jsx)(a.animated.div, {
     className: v.communityInfoContainer,
@@ -143,13 +143,13 @@ let j = i.memo(function(e) {
   let {
     bannerVisible: t,
     controller: n,
-    className: l,
+    className: o,
     onClick: a,
     onContextMenu: j,
     onMouseDown: C,
     disableBannerAnimation: x,
-    "aria-expanded": P,
-    "aria-controls": S,
+    "aria-expanded": S,
+    "aria-controls": P,
     guild: I,
     guildBanner: N,
     animationOverlayHeight: Z,
@@ -182,10 +182,10 @@ let j = i.memo(function(e) {
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
           ref: W,
-          className: o()(l, {
+          className: l()(o, {
             [v.container]: !0,
             [v.clickable]: null != a,
-            [v.selected]: null != a && P,
+            [v.selected]: null != a && S,
             [v.hasBanner]: H(),
             [v.bannerVisible]: t,
             [e]: !z && t,
@@ -195,11 +195,11 @@ let j = i.memo(function(e) {
           onContextMenu: j,
           onClick: a,
           children: [(0, r.jsxs)("header", {
-            className: o()(v.header, E, {
+            className: l()(v.header, E, {
               [v.themedHeaderMobile]: s.tq
             }),
             children: [(0, r.jsxs)("div", {
-              className: o()(v.headerContent, v.primaryInfo),
+              className: l()(v.headerContent, v.primaryInfo),
               children: [(0, r.jsx)(f.Z, {
                 guild: I,
                 isBannerVisible: t
@@ -210,8 +210,8 @@ let j = i.memo(function(e) {
                 children: I.toString()
               }), null != a && (0, r.jsx)(c.P3F, {
                 className: v.headerButton,
-                "aria-controls": S,
-                "aria-expanded": P,
+                "aria-controls": P,
+                "aria-expanded": S,
                 focusProps: {
                   ringTarget: W,
                   offset: 4

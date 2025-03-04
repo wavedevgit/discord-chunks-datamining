@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(197115),
   y = n(430824),
   x = n(594174),
-  O = n(626135),
-  E = n(74538),
+  E = n(626135),
+  O = n(74538),
   j = n(453070),
   N = n(926491),
   C = n(378233),
@@ -65,12 +65,12 @@ function R(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = (e, t) => t ? A.NW.format(A.t.auckX1, {
+let D = (e, t) => t ? A.NW.format(A.t.auckX1, {
     stickerPackName: e.name
   }) : A.NW.format(A.t.OzB6e3, {
     stickerPackName: e.name
   }),
-  D = e => {
+  L = e => {
     let {
       sticker: t,
       stickerPack: n
@@ -79,7 +79,7 @@ let L = (e, t) => t ? A.NW.format(A.t.auckX1, {
   };
 
 function M(e) {
-  O.default.track(T.rMx.PREMIUM_PROMOTION_OPENED, {
+  E.default.track(T.rMx.PREMIUM_PROMOTION_OPENED, {
     location_page: null != e.guild_id ? T.ZY5.GUILD_CHANNEL : T.ZY5.DM_CHANNEL,
     location_section: T.jXE.STICKER_POPOUT
   }), (0, b.z)()
@@ -118,7 +118,7 @@ let F = e => {
       sticker: n,
       channel: a,
       refreshPositionKey: o
-    } = e, [c, d, p] = (0, l.Wu)([N.Z], () => [N.Z.getStickerPack(n.pack_id), !N.Z.hasLoadedStickerPacks, N.Z.isPremiumPack(n.pack_id)], [n]), m = D({
+    } = e, [c, d, p] = (0, l.Wu)([N.Z], () => [N.Z.getStickerPack(n.pack_id), !N.Z.hasLoadedStickerPacks, N.Z.isPremiumPack(n.pack_id)], [n]), m = L({
       sticker: n,
       stickerPack: c
     });
@@ -140,7 +140,7 @@ let F = e => {
       let {
         channel: e
       } = g.current;
-      O.default.track(T.rMx.OPEN_POPOUT, k({
+      E.default.track(T.rMx.OPEN_POPOUT, k({
         type: T.jXE.STICKER_POPOUT,
         guild_id: e.getGuildId(),
         sticker_pack_id: n.pack_id
@@ -154,7 +154,7 @@ let F = e => {
         children: n.name
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
-        children: L(c, p)
+        children: D(c, p)
       }), (0, r.jsx)("ul", {
         className: w.stickersList,
         children: m.map(e => (0, r.jsx)(I.ZP, {
@@ -187,8 +187,8 @@ let F = e => {
       } = e,
       [j, N] = i.useState(null),
       [C, S] = i.useState(!1),
-      L = x.default.getCurrentUser(),
-      D = E.ZP.canUseCustomStickersEverywhere(L),
+      D = x.default.getCurrentUser(),
+      L = O.ZP.canUseCustomStickersEverywhere(D),
       F = (0, l.e7)([y.Z], () => y.Z.getGuild(n.guild_id)),
       U = null != F,
       [B, G] = i.useState(!1),
@@ -221,19 +221,19 @@ let F = e => {
       Q = null != j,
       J = !1,
       $ = "Custom Sticker Popout";
-    D ? t = U ? q ? A.NW.string(A.t.fZ0DiI) : A.NW.string(A.t["1f6D9v"]) : Q ? A.NW.string(A.t.yHmoR0) : A.NW.string(A.t.vZaScH) : U ? (t = q ? A.NW.string(A.t.jNphpq) : A.NW.string(A.t.lyD5ZW), J = !0, $ = "Custom Sticker Popout (Upsell)") : Q ? (t = A.NW.string(A.t.IuXYcn), J = !0, $ = "Custom Sticker Popout (Upsell)") : (t = A.NW.format(A.t.hGWuxc, {
+    L ? t = U ? q ? A.NW.string(A.t.fZ0DiI) : A.NW.string(A.t["1f6D9v"]) : Q ? A.NW.string(A.t.yHmoR0) : A.NW.string(A.t.vZaScH) : U ? (t = q ? A.NW.string(A.t.jNphpq) : A.NW.string(A.t.lyD5ZW), J = !0, $ = "Custom Sticker Popout (Upsell)") : Q ? (t = A.NW.string(A.t.IuXYcn), J = !0, $ = "Custom Sticker Popout (Upsell)") : (t = A.NW.format(A.t.hGWuxc, {
       openPremiumSettings: () => {
         M(a), m()
       }
     }), $ = "Custom Sticker Popout (Soft Upsell)");
-    let ee = !J && !U && Q && D;
+    let ee = !J && !U && Q && L;
     return (i.useEffect(() => {
       let {
         refreshPositionKey: e
       } = X.current;
       e()
     }, [C, j]), (0, d.ZP)(() => {
-      O.default.track(T.rMx.OPEN_POPOUT, k({
+      E.default.track(T.rMx.OPEN_POPOUT, k({
         type: $
       }, K))
     }), C) ? (0, r.jsxs)(_.W_, {

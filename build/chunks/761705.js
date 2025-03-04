@@ -14,11 +14,11 @@ var r, i = n(200651),
   m = n(714338),
   h = n(134432),
   g = n(44488),
-  f = n(585483),
-  _ = n(981631),
-  v = n(758255);
+  _ = n(585483),
+  f = n(981631),
+  b = n(758255);
 
-function b(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,7 +34,7 @@ function x(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -98,12 +98,12 @@ class j extends a.Component {
     return (0, i.jsx)(d.Z.img, {
       src: e.src,
       alt: "",
-      className: o()(v.slide, t),
+      className: o()(b.slide, t),
       style: this.getStyle()
     })
   }
   constructor(...e) {
-    super(...e), b(this, "state", {
+    super(...e), v(this, "state", {
       translate: new d.Z.Value(0),
       opacity: new d.Z.Value(1)
     })
@@ -111,10 +111,10 @@ class j extends a.Component {
 }
 class y extends(r = a.Component) {
   componentDidMount() {
-    this.preloadNextImages(), m.Z.disable(), m.Z.enableTemp(p.P), f.S.subscribe(_.CkL.MODAL_CAROUSEL_NEXT, this.gotoNextThrottled), f.S.subscribe(_.CkL.MODAL_CAROUSEL_PREV, this.gotoPrevThrottled)
+    this.preloadNextImages(), m.Z.disable(), m.Z.enableTemp(p.P), _.S.subscribe(f.CkL.MODAL_CAROUSEL_NEXT, this.gotoNextThrottled), _.S.subscribe(f.CkL.MODAL_CAROUSEL_PREV, this.gotoPrevThrottled)
   }
   componentWillUnmount() {
-    m.Z.disableTemp(), f.S.unsubscribe(_.CkL.MODAL_CAROUSEL_NEXT, this.gotoNextThrottled), f.S.unsubscribe(_.CkL.MODAL_CAROUSEL_PREV, this.gotoPrevThrottled)
+    m.Z.disableTemp(), _.S.unsubscribe(f.CkL.MODAL_CAROUSEL_NEXT, this.gotoNextThrottled), _.S.unsubscribe(f.CkL.MODAL_CAROUSEL_PREV, this.gotoPrevThrottled)
   }
   preloadNextImages() {
     var e, t;
@@ -157,37 +157,37 @@ class y extends(r = a.Component) {
     } = this.props, l = this.props.items[n], s = this.props.items;
     return (0, i.jsxs)(u.W, {
       component: "div",
-      className: o()(v.wrapper, t),
+      className: o()(b.wrapper, t),
       children: [s.length > 1 ? (0, i.jsx)(g.am, {
-        className: v.navPrev,
+        className: b.navPrev,
         onClick: this.gotoPrev
       }) : null, null !== (e = l.component) && void 0 !== e ? e : (0, i.jsx)(j, {
         item: l,
         directionHistory: r,
         className: a
       }, l.src), s.length > 1 ? (0, i.jsx)(g.Pz, {
-        className: v.navNext,
+        className: b.navNext,
         onClick: this.gotoNext
       }) : null]
     })
   }
   constructor(e) {
-    super(e), b(this, "gotoNext", () => {
+    super(e), v(this, "gotoNext", () => {
       let {
         currentIndex: e
       } = this.state;
       this.navigateTo(e + 1)
-    }), b(this, "gotoPrev", () => {
+    }), v(this, "gotoPrev", () => {
       let {
         currentIndex: e
       } = this.state;
       this.navigateTo(e - 1)
-    }), b(this, "gotoNextThrottled", c()(this.gotoNext, 300)), b(this, "gotoPrevThrottled", c()(this.gotoPrev, 300)), this.state = {
+    }), v(this, "gotoNextThrottled", c()(this.gotoNext, 300)), v(this, "gotoPrevThrottled", c()(this.gotoPrev, 300)), this.state = {
       currentIndex: e.startWith,
       directionHistory: []
     }
   }
 }
-b(y, "defaultProps", {
+v(y, "defaultProps", {
   startWith: 0
 })

@@ -27,7 +27,7 @@ var r = n(200651),
   C = n(388032),
   I = n(706402);
 
-function E(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function E(e) {
   return e
 }
 
-function S(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -73,7 +73,7 @@ function P(e) {
       let {
         default: e
       } = await n.e("5396").then(n.bind(n, 731646));
-      return t => (0, r.jsx)(e, S(E({}, t), {
+      return t => (0, r.jsx)(e, E(S({}, t), {
         id: l,
         label: C.NW.string(C.t.oJ1Mu7)
       }))
@@ -89,7 +89,7 @@ function P(e) {
         openEntryContextMenu: u
       });
     case m.Kw.ROLE:
-      return (0, r.jsx)(Z, {
+      return (0, r.jsx)(T, {
         guild: t,
         id: l,
         isLocked: a,
@@ -97,7 +97,7 @@ function P(e) {
         openEntryContextMenu: u
       });
     case m.Kw.USER:
-      return (0, r.jsx)(T, {
+      return (0, r.jsx)(Z, {
         guild: t,
         id: l,
         isLocked: a,
@@ -157,7 +157,7 @@ function w(e) {
   })
 }
 
-function Z(e) {
+function T(e) {
   var t;
   let {
     guild: l,
@@ -173,7 +173,7 @@ function Z(e) {
       let {
         default: e
       } = await n.e("14486").then(n.bind(n, 786746));
-      return t => (0, r.jsx)(e, S(E({}, t), {
+      return t => (0, r.jsx)(e, E(S({}, t), {
         guild: l,
         role: b
       }))
@@ -182,7 +182,7 @@ function Z(e) {
   return (null == b ? void 0 : b.name) == null ? null : (0, r.jsxs)("div", {
     onContextMenu: x,
     className: I.identifier,
-    children: [null != g ? (0, r.jsx)(f.Z, E({
+    children: [null != g ? (0, r.jsx)(f.Z, S({
       className: o()(I.__invalid_icon, I.image)
     }, g)) : (0, r.jsx)(u.lZ8, {
       size: "custom",
@@ -201,7 +201,7 @@ function Z(e) {
   })
 }
 
-function T(e) {
+function Z(e) {
   let {
     guild: t,
     id: n,
@@ -241,7 +241,7 @@ function W(e) {
   } = e;
   return (0, r.jsx)(u.ua7, {
     text: t,
-    children: e => (0, r.jsx)("div", S(E({
+    children: e => (0, r.jsx)("div", E(S({
       className: I.lockIcon
     }, e), {
       children: (0, r.jsx)(u.mBM, {

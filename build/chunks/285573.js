@@ -1,11 +1,11 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   Z: () => v
 });
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  o = n(120356),
+  l = n.n(o),
   a = n(442837),
   s = n(239091),
   c = n(146773),
@@ -20,7 +20,7 @@ var r = n(200651),
 let v = (0, c.B)(function(e) {
   let {
     guild: t,
-    selectedChannelId: l,
+    selectedChannelId: o,
     position: c,
     disableManageChannels: v,
     sorting: y,
@@ -29,11 +29,11 @@ let v = (0, c.B)(function(e) {
     connectChannelDragSource: j,
     connectChannelDropTarget: C,
     tabIndex: x
-  } = e, P = (0, a.e7)([u.Z, d.ZP], () => {
+  } = e, S = (0, a.e7)([u.Z, d.ZP], () => {
     let e = d.ZP.getDirectoryChannelIds(t.id);
     return 0 === e.length ? null : u.Z.getChannel(e[0])
-  }), S = (0, a.e7)([u.Z], () => u.Z.getChannel(null == P ? void 0 : P.parent_id)), I = l === (null == P ? void 0 : P.id), N = (0, a.e7)([p.Z], () => null != S ? p.Z.can(g.Plq.MANAGE_CHANNELS, S) : null != t && p.Z.can(g.Plq.MANAGE_CHANNELS, t)), Z = i.useCallback(e => {
-    null != P && (0, s.jW)(e, async () => {
+  }), P = (0, a.e7)([u.Z], () => u.Z.getChannel(null == S ? void 0 : S.parent_id)), I = o === (null == S ? void 0 : S.id), N = (0, a.e7)([p.Z], () => null != P ? p.Z.can(g.Plq.MANAGE_CHANNELS, P) : null != t && p.Z.can(g.Plq.MANAGE_CHANNELS, t)), Z = i.useCallback(e => {
+    null != S && (0, s.jW)(e, async () => {
       let {
         default: e
       } = await n.e("70623").then(n.bind(n, 99334));
@@ -57,7 +57,7 @@ let v = (0, c.B)(function(e) {
           }
           return e
         }({}, t), i = i = {
-          channel: P
+          channel: S
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -70,29 +70,29 @@ let v = (0, c.B)(function(e) {
         }), n))
       }
     })
-  }, [P]);
-  if (null == P) return null;
+  }, [S]);
+  if (null == S) return null;
   let w = (0, h.jo)(c, O),
-    E = (0, h.CN)(P, y, _),
+    E = (0, h.CN)(S, y, _),
     T = (0, r.jsx)("div", {
-      className: o()(w, {
+      className: l()(w, {
         [b.disabled]: E,
         [b.selected]: I
       }),
-      "data-dnd-name": P.name,
+      "data-dnd-name": S.name,
       children: (0, r.jsxs)(f.Z, {
         className: b.iconVisibility,
-        channel: P,
+        channel: S,
         guild: t,
         selected: I,
         onContextMenu: Z,
         forceInteractable: !0,
         resolvedUnreadSetting: m.i.ONLY_MENTIONS,
         children: [(0, r.jsx)(h.eP, {
-          channel: P,
+          channel: S,
           tabIndex: x
         }), (0, r.jsx)(h.hR, {
-          channel: P,
+          channel: S,
           disableManageChannels: v,
           tabIndex: x
         })]

@@ -22,8 +22,8 @@ var r = n(200651),
   v = n(358085),
   y = n(143316),
   x = n(240126),
-  O = n(791914),
-  E = n(147522),
+  E = n(791914),
+  O = n(147522),
   j = n(809780),
   N = n(981631),
   C = n(388032),
@@ -36,8 +36,8 @@ function S(e) {
     onJump: Z,
     showTutorial: k,
     setSeenTutorial: R,
-    closePopout: L,
-    badgeState: D
+    closePopout: D,
+    badgeState: L
   } = e, M = i.useRef(null), [W, F] = (0, j.ZP)(M), {
     loadState: U,
     channels: B
@@ -85,9 +85,9 @@ function S(e) {
     _.default.track(N.rMx.OPEN_POPOUT, {
       type: "Inbox"
     })
-  }, []), i.useEffect(() => (m.Z.subscribe("CONNECTION_OPEN", L), () => {
-    m.Z.unsubscribe("CONNECTION_OPEN", L)
-  }), [L]);
+  }, []), i.useEffect(() => (m.Z.subscribe("CONNECTION_OPEN", D), () => {
+    m.Z.unsubscribe("CONNECTION_OPEN", D)
+  }), [D]);
   let V = (0, d.e7)([f.Z], () => f.Z.messageGroupSpacing),
     z = (0, g.Us)({
       location: "Unreads"
@@ -98,11 +98,11 @@ function S(e) {
       className: o()(I.container, {
         [I.widerInbox]: z
       }),
-      children: [(0, r.jsx)(O.Z, {
+      children: [(0, r.jsx)(E.Z, {
         tab: u.X.UNREADS,
         setTab: w,
-        badgeState: D,
-        closePopout: L
+        badgeState: L,
+        closePopout: D
       }), (0, r.jsx)(x.Z, {
         Icon: p.xx7,
         header: C.NW.string(C.t["6XMM+P"]),
@@ -115,11 +115,11 @@ function S(e) {
       [I.widerInbox]: z
     }),
     "aria-label": C.NW.string(C.t.sRUdBw),
-    children: [(0, r.jsx)(O.Z, {
+    children: [(0, r.jsx)(E.Z, {
       tab: u.X.UNREADS,
       setTab: w,
-      badgeState: D,
-      closePopout: L,
+      badgeState: L,
+      closePopout: D,
       children: (0, r.jsx)(y.Z, {
         type: "top-header",
         onClick: H
@@ -173,7 +173,7 @@ function S(e) {
             className: I.scroller,
             children: [k ? (0, r.jsx)(T, {
               setSeenTutorial: R
-            }) : null, (0, E.Z)(B, F, Z), U === j.jd.Done ? null : (0, r.jsx)(p.$jN, {
+            }) : null, (0, O.Z)(B, F, Z), U === j.jd.Done ? null : (0, r.jsx)(p.$jN, {
               className: I.spinner
             })]
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -231,7 +231,7 @@ function P(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: I.container,
-    children: [(0, r.jsx)(O.Z, {
+    children: [(0, r.jsx)(E.Z, {
       tab: u.X.UNREADS,
       setTab: t,
       badgeState: n,

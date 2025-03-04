@@ -14,9 +14,9 @@ var r = n(200651),
   u = n(314852),
   m = n(65361),
   g = n(246946),
-  p = n(434404),
-  h = n(330010),
-  f = n(999382),
+  p = n(330010),
+  h = n(999382),
+  f = n(800223),
   b = n(24318),
   x = n(822693),
   j = n(388032),
@@ -33,12 +33,12 @@ function v(e) {
     fetchedEmbed: O,
     embedEnabled: y,
     embedChannelId: C
-  } = (0, l.cj)([f.Z], () => {
+  } = (0, l.cj)([h.Z], () => {
     let {
       fetchedEmbed: e,
       embedEnabled: t,
       embedChannelId: n
-    } = f.Z.getProps();
+    } = h.Z.getProps();
     return {
       fetchedEmbed: e,
       embedEnabled: t,
@@ -46,17 +46,12 @@ function v(e) {
     }
   }), I = i.useMemo(() => (0, b.S)(t), [t]), E = i.useMemo(() => (0, b.a)(t), [t]), [S, T] = i.useState(!1), P = !_ && (null == c ? void 0 : c.visibility) !== s.k.PUBLIC && !y;
   i.useEffect(() => {
-    O || (0, h.R)(t)
+    O || (0, p.R)(t)
   }, [O, t]), i.useEffect(() => {
     g()
   }, [t, g]);
   let w = i.useCallback(async e => {
-    T(!0);
-    try {
-      await p.Z.updateEmbed(t, e, C)
-    } finally {
-      T(!1)
-    }
+    T(!0), await (0, f.c)(t, e, C), T(!1)
   }, [C, t]);
   return O ? (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.j7V, {
@@ -78,7 +73,8 @@ function v(e) {
       }), (0, r.jsx)(x.m, {
         guildId: t,
         widgetEnabled: y,
-        widgetChannelId: C
+        widgetChannelId: C,
+        enableLocalUpdate: !0
       }), (0, r.jsx)(a.xv, {
         variant: "text-sm/medium",
         color: "text-secondary",

@@ -17,19 +17,19 @@ let m = function(e) {
   let {
     application: h,
     onSelectApplication: g,
-    showCategory: f = !1
-  } = e, _ = null === (t = h.categories) || void 0 === t ? void 0 : t[0], [v, b] = i.useState(!1), x = i.useCallback(e => {
-    e && b(!0)
+    showCategory: _ = !1
+  } = e, f = null === (t = h.categories) || void 0 === t ? void 0 : t[0], [b, v] = i.useState(!1), x = i.useCallback(e => {
+    e && v(!0)
   }, []), C = (0, o.lf)(h), j = i.useCallback(() => {
     g(h.id)
-  }, [g, h.id]), y = i.useMemo(() => v ? c.ZP.getApplicationIconURL({
+  }, [g, h.id]), y = i.useMemo(() => b ? c.ZP.getApplicationIconURL({
     id: h.id,
     icon: h.icon,
     size: 48
-  }) : void 0, [v, h]), I = f && null != _;
+  }) : void 0, [b, h]), I = _ && null != f;
   return (0, r.jsx)(a.$, {
     onChange: x,
-    active: !v,
+    active: !b,
     children: (0, r.jsx)("div", {
       className: p.container,
       children: (0, r.jsxs)(s.Z, {
@@ -44,7 +44,7 @@ let m = function(e) {
               display: "block",
               aspectRatio: 16 / 9
             },
-            children: v ? (0, r.jsx)(d.Z, {
+            children: b ? (0, r.jsx)(d.Z, {
               application: h,
               bannerType: "card",
               iconURL: y
@@ -54,7 +54,7 @@ let m = function(e) {
             style: {
               height: 28
             },
-            children: v ? (0, r.jsx)("img", {
+            children: b ? (0, r.jsx)("img", {
               src: y,
               alt: "",
               className: p.avatar,
@@ -85,7 +85,7 @@ let m = function(e) {
               className: p.appCategory,
               variant: "text-xs/medium",
               color: "text-normal",
-              children: _.name
+              children: f.name
             }) : null, I && C ? (0, r.jsx)(l.Text, {
               variant: "text-xs/medium",
               color: "text-secondary",

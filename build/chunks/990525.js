@@ -45,14 +45,14 @@ let y = e => {
   } = e, {
     activeVoice: y,
     mostRecentlyRequestedVoiceId: x
-  } = (0, h.o)(), O = (0, f.z)(t.id), E = t.id === y, j = !t.available && !t.temporarilyAvailable, N = t.temporarilyAvailable && !n && !E, C = !E && t.id === x, [I, S] = i.useState(!1);
+  } = (0, h.o)(), E = (0, f.z)(t.id), O = t.id === y, j = !t.available && !t.temporarilyAvailable, N = t.temporarilyAvailable && !n && !O, C = !O && t.id === x, [I, S] = i.useState(!1);
   i.useEffect(() => {
     let e = C ? setTimeout(() => S(C), 200) : void 0;
     return () => {
       clearTimeout(e), S(!1)
     }
   }, [C]);
-  let T = null == O ? void 0 : O.previewSoundURLs,
+  let T = null == E ? void 0 : E.previewSoundURLs,
     [P, A] = i.useState(0),
     {
       isPlaying: w,
@@ -62,8 +62,8 @@ let y = e => {
     } = (0, d.Z)(null != T ? T[P] : null, {
       soundId: t.id
     }),
-    L = b[t.styleKey],
-    D = i.useCallback(() => {
+    D = b[t.styleKey],
+    L = i.useCallback(() => {
       n || !j ? ((0, p.v6)(y === t.id ? null : t.id, a), N && u.default.track(g.rMx.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, v({
         voice_filter_id: t.id
       }, (0, m.w)(a)))) : (0, c.i)()
@@ -75,15 +75,15 @@ let y = e => {
         volume: .5
       }), (.25 > Math.random() || P > 0) && null != T && A(e => (e + 1) % T.length)
     }, [a, Z, P, T, t.id]),
-    W = null != O ? _.NW.string(O.name) : "";
+    W = null != E ? _.NW.string(E.name) : "";
   return (0, r.jsxs)("div", {
-    className: o()(b.filter, L, {
-      [b.selected]: E,
-      [b.locked]: j && !E
+    className: o()(b.filter, D, {
+      [b.selected]: O,
+      [b.locked]: j && !O
     }),
     children: [(0, r.jsxs)(s.P3F, {
       className: b.selector,
-      onClick: D,
+      onClick: L,
       onMouseEnter: R,
       children: [(0, r.jsxs)("div", {
         className: b.iconTreatmentsWrapper,
@@ -94,12 +94,12 @@ let y = e => {
           children: [(0, r.jsx)("img", {
             className: b.thumbnail,
             alt: "",
-            src: null == O ? void 0 : O.iconURL,
+            src: null == E ? void 0 : E.iconURL,
             draggable: !1
           }), (0, r.jsx)("div", {
             className: b.insetBorder
           })]
-        }), E && (0, r.jsx)("div", {
+        }), O && (0, r.jsx)("div", {
           className: b.iconCircle,
           children: (0, r.jsx)(s.owK, {
             size: "md",
@@ -107,7 +107,7 @@ let y = e => {
             colorClass: b.checkmark,
             secondaryColor: l.Z.unsafe_rawColors.WHITE_500.css
           })
-        }), j && !E && (0, r.jsx)("div", {
+        }), j && !O && (0, r.jsx)("div", {
           className: o()([b.iconCircle, b.lockedCircle]),
           children: (0, r.jsx)(s.mBM, {
             size: "custom",

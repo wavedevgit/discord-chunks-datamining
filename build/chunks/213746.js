@@ -15,10 +15,10 @@ var r = n(200651),
   m = n(171246),
   h = n(55563),
   g = n(881294),
-  f = n(133743),
-  _ = n(979007),
-  v = n(981631),
-  b = n(388032),
+  _ = n(133743),
+  f = n(979007),
+  b = n(981631),
+  v = n(388032),
   x = n(323300);
 
 function C(e) {
@@ -76,7 +76,7 @@ function y(e) {
             appId: t.id,
             listing: e,
             subscriptionType: n,
-            onDetails: () => (0, f.Gp)(v.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
+            onDetails: () => (0, _.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
           }, e.id)
         })
       })]
@@ -85,17 +85,17 @@ function y(e) {
       children: [(0, r.jsx)(a.X6, {
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: b.NW.string(b.t.yUGTs7)
+        children: v.NW.string(v.t.yUGTs7)
       }), (0, r.jsx)("div", {
         className: x.products,
         children: i.map(e => (0, r.jsx)(u.hd, {
           skuId: e.skuId,
           appId: t.id,
-          onDetails: () => (0, f.Gp)(v.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
+          onDetails: () => (0, _.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
         }, e.id))
       })]
     }), (0, r.jsx)(c.Z, {
-      path: v.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(":applicationId", ":skuId"),
+      path: b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(":applicationId", ":skuId"),
       exact: !0,
       render: e => (0, r.jsx)(I, C({}, e))
     })]
@@ -110,12 +110,12 @@ function I(e) {
         skuId: a
       }
     }
-  } = e, s = (0, l.e7)([h.Z], () => h.Z.get(a), [a]), c = (0, l.e7)([h.Z], () => null != a ? h.Z.getParentSKU(a) : void 0, [a]), d = i.useId(), u = i.useCallback(() => (0, f.Gp)(v.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, _.GlobalDiscoveryAppsSections.STORE)), [t]);
+  } = e, s = (0, l.e7)([h.Z], () => h.Z.get(a), [a]), c = (0, l.e7)([h.Z], () => null != a ? h.Z.getParentSKU(a) : void 0, [a]), d = i.useId(), u = i.useCallback(() => (0, _.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, f.GlobalDiscoveryAppsSections.STORE)), [t]);
   return i.useLayoutEffect(() => {
     var e;
     switch (null == s ? void 0 : s.type) {
-      case v.epS.CONSUMABLE:
-      case v.epS.DURABLE:
+      case b.epS.CONSUMABLE:
+      case b.epS.DURABLE:
         return void(0, o.ZDy)(async () => {
           let {
             ItemDetailsModal: e
@@ -127,10 +127,10 @@ function I(e) {
         }, {
           modalKey: d,
           onCloseCallback: () => {
-            N() || (0, f.Gp)(v.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, _.GlobalDiscoveryAppsSections.STORE))
+            N() || (0, _.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, f.GlobalDiscoveryAppsSections.STORE))
           }
         });
-      case v.epS.SUBSCRIPTION:
+      case b.epS.SUBSCRIPTION:
         if ((null == c ? void 0 : c.flags) == null) return;
         return e = (0, m.KW)(c.flags) ? "user" : "guild", void(0, o.ZDy)(async () => {
           let {
@@ -145,7 +145,7 @@ function I(e) {
         }, {
           modalKey: d,
           onCloseCallback: () => {
-            N() || (0, f.Gp)(v.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, _.GlobalDiscoveryAppsSections.STORE))
+            N() || (0, _.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, f.GlobalDiscoveryAppsSections.STORE))
           }
         })
     }
@@ -169,12 +169,12 @@ function O(e) {
     children: (0, r.jsx)(a.xv, {
       color: "header-primary",
       variant: "text-sm/normal",
-      children: null != i && null != l ? b.NW.format(b.t.nylPOT, {
+      children: null != i && null != l ? v.NW.format(v.t.nylPOT, {
         termsHook: e => o(e, i),
         privacyHook: e => o(e, l)
-      }) : null != i ? b.NW.format(b.t["0cPyDw"], {
+      }) : null != i ? v.NW.format(v.t["0cPyDw"], {
         termsHook: e => o(e, i)
-      }) : null != l ? b.NW.format(b.t.loYGCw, {
+      }) : null != l ? v.NW.format(v.t.loYGCw, {
         privacyHook: e => o(e, l)
       }) : null
     })

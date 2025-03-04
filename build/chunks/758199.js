@@ -56,29 +56,29 @@ function x(e) {
     staticBannerSrc: o,
     videoBannerSrc: y,
     bannerAspectRatio: x = 0,
-    iconSrc: O,
-    embedUrl: E,
+    iconSrc: E,
+    embedUrl: O,
     actions: j = [],
     onView: N,
     onLinkCopied: C
   } = e, {
     primaryColor: I,
     secondaryColor: S
-  } = (0, p.Z)(null != O ? O : o), T = "linear-gradient(45deg, ".concat(I, ", ").concat(S, ")"), P = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), A = a.useRef(!1), w = (0, d.O)(e => {
+  } = (0, p.Z)(null != E ? E : o), T = "linear-gradient(45deg, ".concat(I, ", ").concat(S, ")"), P = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), A = a.useRef(!1), w = (0, d.O)(e => {
     null != N && !1 === A.current && e && (N(), A.current = !0)
-  }, void 0, null != N), Z = f.wS && null != E ? (0, i.jsx)(c.zxk, {
+  }, void 0, null != N), Z = f.wS && null != O ? (0, i.jsx)(c.zxk, {
     look: c.zxk.Looks.BLANK,
     size: c.zxk.Sizes.ICON,
     "aria-label": g.NW.string(g.t.WqhZsr),
     className: _.linkIcon,
     onClick: () => {
-      (0, f.JG)(E), (0, c.showToast)((0, c.createToast)(g.NW.string(g.t["L/PwZW"]), c.ToastType.SUCCESS)), null == C || C()
+      (0, f.JG)(O), (0, c.showToast)((0, c.createToast)(g.NW.string(g.t["L/PwZW"]), c.ToastType.SUCCESS)), null == C || C()
     },
     children: (0, i.jsx)(c.xPt, {
       size: "xs",
       color: "currentColor"
     })
-  }) : null, k = null != o, R = null != y && !1 === P, L = k || R, D = 0 === x ? _.bannerAspectRatioBot : _.bannerAspectRatioActivity, M = a.useRef(null), W = a.useCallback(() => {
+  }) : null, k = null != o, R = null != y && !1 === P, D = k || R, L = 0 === x ? _.bannerAspectRatioBot : _.bannerAspectRatioActivity, M = a.useRef(null), W = a.useCallback(() => {
     let e = M.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
   }, []), F = a.useMemo(() => !!R && new URL(y).pathname.endsWith(".gif"), [R, y]);
@@ -87,8 +87,8 @@ function x(e) {
     className: l()(_.embed, {
       [_.showVideoOnFocus]: R
     }),
-    children: [L && (0, i.jsxs)("div", {
-      className: l()(_.bannerWrapper, D),
+    children: [D && (0, i.jsxs)("div", {
+      className: l()(_.bannerWrapper, L),
       children: [R && (F ? (0, i.jsx)("div", {
         className: _.videoBanner,
         style: {
@@ -122,10 +122,10 @@ function x(e) {
         }), Z]
       }), (0, i.jsxs)("div", {
         className: _.contentWrapper,
-        children: [null != O && (0, i.jsx)("div", {
+        children: [null != E && (0, i.jsx)("div", {
           className: _.img,
           style: {
-            backgroundImage: "url(".concat(O, ")")
+            backgroundImage: "url(".concat(E, ")")
           }
         }), (0, i.jsxs)("div", {
           className: _.content,

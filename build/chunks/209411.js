@@ -12,8 +12,8 @@ var r = n(200651),
   u = n(493773),
   d = n(743142),
   h = n(893607),
-  p = n(703656),
-  g = n(314897),
+  g = n(703656),
+  p = n(314897),
   f = n(781428),
   m = n(981631),
   _ = n(176505);
@@ -27,26 +27,26 @@ function b(e) {
             path: m.Z5c.CHANNEL(h.Hw.guildId(), h.Hw.channelId())
           });
           return (null == n ? void 0 : null === (t = n.params) || void 0 === t ? void 0 : t.channelId) === _.oC.ROLE_SUBSCRIPTIONS
-        }(t)) p.dL(t);
+        }(t)) g.dL(t);
       else {
         var n;
-        (null !== (n = e.transitionTo) && void 0 !== n ? n : p.uL)(t)
+        (null !== (n = e.transitionTo) && void 0 !== n ? n : g.uL)(t)
       }
     }, [e.transitionTo]),
     {
       isAuthenticated: N,
       loginStatus: x
-    } = (0, l.cj)([g.default], () => ({
-      isAuthenticated: g.default.isAuthenticated(),
-      loginStatus: g.default.getLoginStatus()
+    } = (0, l.cj)([p.default], () => ({
+      isAuthenticated: p.default.isAuthenticated(),
+      loginStatus: p.default.getLoginStatus()
     })),
     {
       location: v,
       redirectTo: I
     } = e,
-    [E, O] = i.useState(N);
+    [E, j] = i.useState(N);
 
-  function j(e) {
+  function O(e) {
     let {
       handoffKey: t,
       handoffToken: n,
@@ -56,7 +56,7 @@ function b(e) {
       handoffKey: t,
       handoffToken: n,
       handoffSource: r
-    }), O(!1)
+    }), j(!1)
   }
   return ((0, u.ZP)(() => {
     if (null != v) {
@@ -67,12 +67,12 @@ function b(e) {
       if (null != e && null != t) {
         let n = null != I ? (0, d.L)(I) : void 0;
         E ? s.Z.logout(null).finally(() => {
-          j({
+          O({
             handoffKey: e,
             handoffToken: t,
             handoffSource: n
           })
-        }) : j({
+        }) : O({
           handoffKey: e,
           handoffToken: t,
           handoffSource: n

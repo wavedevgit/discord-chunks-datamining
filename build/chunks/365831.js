@@ -22,7 +22,7 @@ var r = n(200651),
   y = n(388032),
   x = n(591128);
 
-function O(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function O(e) {
   return e
 }
 
-function E(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -97,10 +97,10 @@ function S(e) {
       isLoopbackEnabled: t,
       toggleLoopback: n
     }
-  }(), A = P ? c.Iy5 : c.X_q, w = i.useCallback(() => (0, g.v6)(null), []), Z = (0, c.dQu)(c.TVs.colors.BACKGROUND_SECONDARY).hex(), k = (0, c.dQu)(c.TVs.colors.WHITE).hex(), R = (0, s.e7)([h.Z], () => h.Z.isConnected()), L = i.useRef(0), D = n !== a ? L.current + 1 : L.current;
+  }(), A = P ? c.Iy5 : c.X_q, w = i.useCallback(() => (0, g.v6)(null), []), Z = (0, c.dQu)(c.TVs.colors.BACKGROUND_SECONDARY).hex(), k = (0, c.dQu)(c.TVs.colors.WHITE).hex(), R = (0, s.e7)([h.Z], () => h.Z.isConnected()), D = i.useRef(0), L = n !== a ? D.current + 1 : D.current;
   i.useEffect(() => {
-    L.current = D
-  }, [D]);
+    D.current = L
+  }, [L]);
   let M = null != n,
     W = !M,
     F = M && null != a,
@@ -114,7 +114,7 @@ function S(e) {
       delay: F ? 150 : 100 * !!U
     }, "respect-motion-settings"),
     G = (0, c.Yzy)(null == S ? void 0 : S.id, {
-      key: D,
+      key: L,
       from: {
         opacity: 0,
         background: null == S ? void 0 : S.splashGradient
@@ -145,7 +145,7 @@ function S(e) {
         opacity: 1
       } : [{
         translateY: -4,
-        config: E(O({}, I), {
+        config: O(E({}, I), {
           restVelocity: .5
         })
       }, {
@@ -156,7 +156,7 @@ function S(e) {
       delay: U ? 100 - 50 * e : 150 + 50 * e
     }), "respect-motion-settings", [n]),
     V = (0, c.Yzy)(null == S ? void 0 : S.iconURL, {
-      key: D,
+      key: L,
       from: {
         opacity: 0,
         scale: .5,
@@ -177,7 +177,7 @@ function S(e) {
       config: j
     }, "respect-motion-settings"),
     z = (0, c.Yzy)(null == S ? void 0 : S.name, {
-      key: D,
+      key: L,
       from: {
         opacity: 0,
         scale: null == a ? 1 : .5,
@@ -261,7 +261,7 @@ function S(e) {
           children: e => (0, r.jsx)(l.animated.div, {
             className: x.buttonWrapper,
             style: H[0],
-            children: (0, r.jsx)(c.P3F, E(O({
+            children: (0, r.jsx)(c.P3F, O(E({
               className: x.button,
               "aria-hidden": W,
               focusProps: {
@@ -287,7 +287,7 @@ function S(e) {
         children: e => (0, r.jsx)(l.animated.div, {
           className: x.buttonWrapper,
           style: H[1],
-          children: (0, r.jsx)(c.P3F, E(O({
+          children: (0, r.jsx)(c.P3F, O(E({
             className: x.button,
             "aria-hidden": W,
             focusProps: {

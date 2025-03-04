@@ -1,6 +1,6 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
-  M: () => l,
+  M: () => o,
   s: () => i
 });
 var r = n(570140);
@@ -13,7 +13,7 @@ function i(e) {
   })
 }
 
-function l(e) {
+function o(e) {
   r.Z.dispatch({
     type: "VOICE_CATEGORY_COLLAPSE",
     guildId: e,

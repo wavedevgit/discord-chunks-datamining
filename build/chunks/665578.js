@@ -27,7 +27,7 @@ var r = n(200651),
   C = n(388032),
   I = n(506228);
 
-function E(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function E(e) {
   return e
 }
 
-function S(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,7 +66,7 @@ function P(e) {
     guildId: x,
     inModal: j,
     editedTargetPermissions: P,
-    originalApplicationPermissions: T,
+    originalApplicationPermissions: Z,
     originalCommandPermissions: W,
     selectedPermissionCount: k
   } = e, A = (0, s.e7)([h.Z], () => null == l ? null : h.Z.getCommand(l), [l]), D = (null == A ? void 0 : A.defaultMemberPermissions) != null, R = (0, s.e7)([b.Z, m.ZP, g.Z], () => {
@@ -76,11 +76,11 @@ function P(e) {
       PermissionStore: g.Z,
       guild: e,
       selfMember: t,
-      applicationLevelPermissions: T,
+      applicationLevelPermissions: Z,
       commandLevelPermissions: W,
       defaultMemberPermissions: null == A ? void 0 : A.defaultMemberPermissions
     })
-  }, [x, A, T, W]), L = null != l ? l : t, [M, B] = i.useMemo(() => {
+  }, [x, A, Z, W]), L = null != l ? l : t, [M, B] = i.useMemo(() => {
     let e = {},
       t = {};
     for (let [n, r] of Object.entries(P)) r.type === d.Kw.CHANNEL ? e[n] = r : t[n] = r;
@@ -92,7 +92,7 @@ function P(e) {
       PermissionStore: g.Z,
       guild: t,
       selfMember: n,
-      applicationLevelPermissions: T,
+      applicationLevelPermissions: Z,
       commandLevelPermissions: e,
       defaultMemberPermissions: null == A ? void 0 : A.defaultMemberPermissions
     }) : (0, u.Ft)({
@@ -101,7 +101,7 @@ function P(e) {
       selfMember: n,
       applicationLevelPermissions: e
     }))
-  }, [x, A, l, T]), z = i.useCallback((e, t) => {
+  }, [x, A, l, Z]), z = i.useCallback((e, t) => {
     let n;
     let r = null;
     if (0 !== t.length) {
@@ -141,7 +141,7 @@ function P(e) {
       let {
         default: t
       } = await n.e("64908").then(n.bind(n, 557944));
-      return n => (0, r.jsx)(t, E({
+      return n => (0, r.jsx)(t, S({
         editPermissions: H,
         guildId: x,
         headerText: C.NW.string(C.t["i1c+kZ"]),
@@ -158,13 +158,13 @@ function P(e) {
       let {
         default: t
       } = await n.e("64908").then(n.bind(n, 557944));
-      return n => (0, r.jsx)(t, E({
+      return n => (0, r.jsx)(t, S({
         editPermissions: H,
         guildId: x,
         hasMemberSearch: !0,
         headerText: C.NW.string(C.t["56jRn5"]),
         overwrittenKeys: e,
-        search: Z,
+        search: T,
         searchPlaceholderText: C.NW.string(C.t.wAfO5e),
         selectedPermissionCount: k
       }, n))
@@ -173,7 +173,7 @@ function P(e) {
     let {
       default: e
     } = await n.e("21897").then(n.bind(n, 303313)), t = A.defaultMemberPermissions;
-    return a.fS(t, u.BO) && (t = y.Plq.ADMINISTRATOR), n => (0, r.jsx)(e, S(E({}, n), {
+    return a.fS(t, u.BO) && (t = y.Plq.ADMINISTRATOR), n => (0, r.jsx)(e, E(S({}, n), {
       defaultMemberPermissions: t
     }))
   }), [A]), K = k - _._n, q = K >= 0, Y = [{
@@ -212,7 +212,7 @@ function P(e) {
         children: C.NW.string(C.t["HO/oXl"])
       })]
     }) : null, Y.map((e, t) => {
-      let n = t => (0, r.jsx)(c.zxk, S(E({}, t), {
+      let n = t => (0, r.jsx)(c.zxk, E(S({}, t), {
           color: c.zxk.Colors.PRIMARY,
           disabled: q || !R,
           onClick: e.buttonClick,
@@ -248,19 +248,19 @@ function P(e) {
 
 function w(e) {
   let t = (0, x.w)(e);
-  return S(E({}, t), {
-    results: t.results.map(e => S(E({}, e), {
+  return E(S({}, t), {
+    results: t.results.map(e => E(S({}, e), {
       type: d.Kw.CHANNEL
     }))
   })
 }
 
-function Z(e) {
+function T(e) {
   let t = (0, j.U)(e);
-  return S(E({}, t), {
-    results: t.results.roles.map(e => S(E({}, e), {
+  return E(S({}, t), {
+    results: t.results.roles.map(e => E(S({}, e), {
       type: d.Kw.ROLE
-    })).concat(t.results.members.map(e => S(E({}, e), {
+    })).concat(t.results.members.map(e => E(S({}, e), {
       type: d.Kw.USER
     })))
   })

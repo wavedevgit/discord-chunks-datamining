@@ -1,7 +1,7 @@
 /** Chunk was on 37697 **/
 n.d(t, {
   Z: () => y,
-  i: () => b
+  i: () => v
 }), n(301563), n(47120), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -25,7 +25,7 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,9 +50,9 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = /^!\[([^\]]*)\]\(asset:\/\/(\d+)\)/,
-  b = _(f({}, u.Z.rules), {
-    heading: _(f({}, u.Z.rules.heading), {
+let b = /^!\[([^\]]*)\]\(asset:\/\/(\d+)\)/,
+  v = f(_({}, u.Z.rules), {
+    heading: f(_({}, u.Z.rules.heading), {
       react(e, t, n) {
         let i = "h".concat(Math.min(Math.max(2, e.level + 1), 4));
         return (0, r.jsx)(d.Z, {
@@ -64,7 +64,7 @@ let v = /^!\[([^\]]*)\]\(asset:\/\/(\d+)\)/,
     assetImage: {
       order: 5,
       match(e, t) {
-        let n = e.match(v);
+        let n = e.match(b);
         if (null != n) {
           let e = n[2],
             r = t.assets.find(t => t.id === e);
@@ -87,8 +87,8 @@ let v = /^!\[([^\]]*)\]\(asset:\/\/(\d+)\)/,
       }, n.key)
     }
   }),
-  x = s().parserFor(b),
-  C = s().reactFor(s().ruleOutput(b, "react"));
+  x = s().parserFor(v),
+  C = s().reactFor(s().ruleOutput(v, "react"));
 class j extends i.PureComponent {
   componentDidMount() {
     if (null != this._container) {

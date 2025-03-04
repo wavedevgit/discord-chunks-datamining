@@ -1,12 +1,12 @@
 /** Chunk was on 37697 **/
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(200651),
   i = n(192379),
   a = n(793030),
-  l = n(34674),
-  o = n(823379),
+  l = n(823379),
+  o = n(216780),
   s = n(448021),
   c = n(405411),
   d = n(215453),
@@ -16,12 +16,12 @@ var r = n(200651),
   h = n(388032),
   g = n(168549);
 
-function f(e) {
+function _(e) {
   let {
     application: t
   } = e, n = i.useMemo(() => {
     var e, n, r;
-    return null !== (r = (null !== (n = null === (e = t.directory_entry) || void 0 === e ? void 0 : e.carousel_items) && void 0 !== n ? n : []).map(l.RF).filter(o.lm)) && void 0 !== r ? r : []
+    return null !== (r = (null !== (n = null === (e = t.directory_entry) || void 0 === e ? void 0 : e.carousel_items) && void 0 !== n ? n : []).map(o.RF).filter(l.lm)) && void 0 !== r ? r : []
   }, [t]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {

@@ -13,10 +13,10 @@ var r, i, a = n(200651),
   m = n(570140),
   h = n(578361),
   g = n(768762),
-  f = n(259580),
-  _ = n(585483),
-  v = n(981631),
-  b = n(388032),
+  _ = n(259580),
+  f = n(585483),
+  b = n(981631),
+  v = n(388032),
   x = n(22314);
 
 function C(e, t, n) {
@@ -34,10 +34,10 @@ let j = {
 };
 class y extends(r = l.PureComponent) {
   componentDidMount() {
-    _.S.subscribe(v.CkL.CAROUSEL_PREV, this.handlePrevious), _.S.subscribe(v.CkL.CAROUSEL_NEXT, this.handleNext)
+    f.S.subscribe(b.CkL.CAROUSEL_PREV, this.handlePrevious), f.S.subscribe(b.CkL.CAROUSEL_NEXT, this.handleNext)
   }
   componentWillUnmount() {
-    _.S.unsubscribe(v.CkL.CAROUSEL_PREV, this.handlePrevious), _.S.unsubscribe(v.CkL.CAROUSEL_NEXT, this.handleNext)
+    f.S.unsubscribe(b.CkL.CAROUSEL_PREV, this.handlePrevious), f.S.unsubscribe(b.CkL.CAROUSEL_NEXT, this.handleNext)
   }
   render() {
     let {
@@ -57,10 +57,10 @@ class y extends(r = l.PureComponent) {
         look: p.zxk.Looks.BLANK,
         className: c,
         onClick: this.handlePrevious,
-        "aria-label": b.NW.string(b.t.vgfxaG),
-        children: "caret" === o ? (0, a.jsx)(f.Z, {
+        "aria-label": v.NW.string(v.t.vgfxaG),
+        children: "caret" === o ? (0, a.jsx)(_.Z, {
           className: x.arrow,
-          direction: f.Z.Directions.LEFT
+          direction: _.Z.Directions.LEFT
         }) : (0, a.jsx)(g.Z, {
           className: x.arrow,
           direction: g.Z.Directions.LEFT
@@ -72,7 +72,7 @@ class y extends(r = l.PureComponent) {
           size: p.zxk.Sizes.NONE,
           onClick: () => this.handleDotClick(t),
           className: t === e ? s()(x.dotSelected, l) : s()(x.dotNormal, i),
-          "aria-label": b.NW.formatToPlainString(b.t["2SXOrK"], {
+          "aria-label": v.NW.formatToPlainString(v.t["2SXOrK"], {
             pageNumber: t + 1
           })
         }, "dot-".concat(t)))
@@ -80,10 +80,10 @@ class y extends(r = l.PureComponent) {
         look: p.zxk.Looks.BLANK,
         className: c,
         onClick: this.handleNext,
-        "aria-label": b.NW.string(b.t.XiOHRU),
-        children: "caret" === o ? (0, a.jsx)(f.Z, {
+        "aria-label": v.NW.string(v.t.XiOHRU),
+        children: "caret" === o ? (0, a.jsx)(_.Z, {
           className: x.arrow,
-          direction: f.Z.Directions.RIGHT
+          direction: _.Z.Directions.RIGHT
         }) : (0, a.jsx)(g.Z, {
           className: x.arrow,
           direction: g.Z.Directions.RIGHT
@@ -172,36 +172,36 @@ class I extends(i = l.PureComponent) {
       paginationDotSelectedClassName: p,
       themedPagination: m,
       includeHitboxPadding: g,
-      style: f,
-      aspectRatio: _,
-      children: v
+      style: _,
+      aspectRatio: f,
+      children: b
     } = this.props, {
-      visibleIndex: b
+      visibleIndex: v
     } = this.state;
     return (0, a.jsxs)("div", {
       className: x.root,
       children: [(0, a.jsxs)("div", {
         className: s()(x.carouselContainer, n),
-        style: f,
+        style: _,
         onMouseEnter: this.handleMouseEnter,
         onMouseLeave: this.handleMouseLeave,
         children: [(0, a.jsx)("div", {
           style: {
-            aspectRatio: _
+            aspectRatio: f
           },
           children: (0, a.jsx)(h.Z, {
             className: s()(x.carousel, r),
-            step: b,
+            step: v,
             direction: this.getCurrentDirection(),
             springSettings: i,
             fadeInOut: l,
-            children: t(e[b], b)
+            children: t(e[v], v)
           })
         }), e.length > 1 && (0, a.jsx)(y, {
           className: s()(o, m ? x.themedPagination : x.pagination),
           arrowClassName: c,
           includeHitboxPadding: g,
-          current: b,
+          current: v,
           count: e.length,
           onChangePage: t => this.changeItem(e, t),
           onSetItem: this.handleSetItem,
@@ -210,8 +210,8 @@ class I extends(i = l.PureComponent) {
           paginationDotClassName: u,
           paginationDotSelectedClassName: p
         })]
-      }), null != v && v({
-        step: b,
+      }), null != b && b({
+        step: v,
         direction: this.getCurrentDirection()
       })]
     })

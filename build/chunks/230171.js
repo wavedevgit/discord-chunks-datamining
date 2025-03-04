@@ -1,6 +1,6 @@
 /** Chunk was on 76030 **/
 n.d(t, {
-  O: () => E,
+  O: () => O,
   U: () => _.Un
 }), n(653041), n(571269), n(298267), n(266796), n(47120);
 var r = n(200651),
@@ -22,9 +22,9 @@ var r = n(200651),
   v = n(880251),
   y = n(208444),
   x = n(388032),
-  O = n(390101);
+  E = n(390101);
 
-function E(e) {
+function O(e) {
   let {
     app: t,
     embedUrl: n,
@@ -34,7 +34,7 @@ function E(e) {
   } = e, {
     name: m,
     bot: h
-  } = t = (0, b.O)(t), O = null == h ? void 0 : h.id, E = (0, d.ye)(t), C = f.ZP.getApplicationIconURL({
+  } = t = (0, b.O)(t), E = null == h ? void 0 : h.id, O = (0, d.ye)(t), C = f.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     bot: h
@@ -56,21 +56,21 @@ function E(e) {
     },
     applicationId: t.id,
     botUserId: null == h ? void 0 : h.id
-  }), R = null != O && E && k, L = (0, y.z)(t, A), D = i.useMemo(() => {
+  }), R = null != E && O && k, D = (0, y.z)(t, A), L = i.useMemo(() => {
     let e = [];
     return R && e.push({
       label: x.NW.string(x.t.RscU7O),
       onClick() {
         (0, u.W)({
           appId: t.id,
-          botId: O,
+          botId: E,
           analyticsLocations: P,
           customId: o,
           referrerId: l
         }), A(_.j_.PLAY)
       }
-    }), null != L && e.push(L), e
-  }, [o, l, P, t.id, O, R, A, L]), M = E ? (0, r.jsx)(N, {
+    }), null != D && e.push(D), e
+  }, [o, l, P, t.id, E, R, A, D]), M = O ? (0, r.jsx)(N, {
     app: t
   }) : (0, r.jsx)(j, {
     app: t
@@ -83,7 +83,7 @@ function E(e) {
     iconSrc: C,
     embedUrl: n,
     info: M,
-    actions: D,
+    actions: L,
     onView: w,
     onLinkCopied: Z
   })
@@ -112,12 +112,12 @@ function j(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [null != f && (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",
-      className: O.description,
+      className: E.description,
       color: "none",
       children: f
     }), null != p && (0, r.jsxs)(l.Text, {
       variant: "text-xs/normal",
-      className: O.tagline,
+      className: E.tagline,
       color: "none",
       lineClamp: 1,
       children: [(0, r.jsx)(l.Jmo, {
@@ -136,11 +136,11 @@ function N(e) {
   }) : x.NW.string(x.t.RjceQU), ...t.tags];
   return n.length > 0 && (0, r.jsx)(l.Text, {
     variant: "text-xs/medium",
-    className: O.description,
+    className: E.description,
     color: "none",
     lineClamp: 1,
     children: n.map((e, t) => (0, r.jsx)("span", {
-      className: O.tag,
+      className: E.tag,
       children: e
     }, t))
   })

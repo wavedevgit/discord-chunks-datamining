@@ -33,11 +33,11 @@ function h(e) {
       children: [c.map((e, t) => (0, r.jsx)(g, {
         url: e.url,
         children: e.name
-      }, t)), null != i.terms_of_service_url ? (0, r.jsx)(f, {
+      }, t)), null != i.terms_of_service_url ? (0, r.jsx)(_, {
         icon: o.aAW,
         url: i.terms_of_service_url,
         children: p.NW.string(p.t.s7STcX)
-      }) : null, null != i.privacy_policy_url ? (0, r.jsx)(f, {
+      }) : null, null != i.privacy_policy_url ? (0, r.jsx)(_, {
         icon: o.mBM,
         url: i.privacy_policy_url,
         children: p.NW.string(p.t.kH3JR0)
@@ -52,7 +52,7 @@ function g(e) {
     url: i,
     children: a
   } = e, s = (0, c.ZP)(), u = d.Z.getByUrl(i), p = (0, l.wj)(s) ? null == u ? void 0 : null === (t = u.icon) || void 0 === t ? void 0 : t.darkSVG : null == u ? void 0 : null === (n = u.icon) || void 0 === n ? void 0 : n.lightSVG;
-  return (0, r.jsx)(f, {
+  return (0, r.jsx)(_, {
     icon: void 0 === p ? o.xPt : void 0,
     imageSrc: p,
     url: i,
@@ -60,7 +60,7 @@ function g(e) {
   })
 }
 
-function f(e) {
+function _(e) {
   let {
     icon: t,
     imageSrc: n,

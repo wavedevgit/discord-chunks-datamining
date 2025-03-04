@@ -15,9 +15,9 @@ var i = n(192379),
   p = n(213459),
   m = n(807169),
   h = n(104793),
-  f = n(674588),
-  v = n(809547),
-  N = n(822245),
+  f = n(822245),
+  v = n(471518),
+  N = n(177653),
   x = n(631827),
   y = n(827498),
   b = n(783097),
@@ -25,8 +25,8 @@ var i = n(192379),
   j = n(665692);
 
 function C(e, t) {
-  let n = N.Z.getScoreWithoutLoadingLatest(e.id);
-  return N.Z.getScoreWithoutLoadingLatest(t.id) - n
+  let n = f.Z.getScoreWithoutLoadingLatest(e.id);
+  return f.Z.getScoreWithoutLoadingLatest(t.id) - n
 }
 
 function g(e, t) {
@@ -309,12 +309,12 @@ function I(e) {
     h = i.useRef(p);
   h.current = p;
   let {
-    fetchState: N,
+    fetchState: f,
     totalPages: x
-  } = (0, s.cj)([v.Z], () => {
+  } = (0, s.cj)([N.Z], () => {
     var e, t;
     return {
-      fetchState: v.Z.getFetchState({
+      fetchState: N.Z.getFetchState({
         query: n,
         guildId: d,
         page: p,
@@ -325,7 +325,7 @@ function I(e) {
         excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: !0,
         source: a.F.APP_LAUNCHER
       }),
-      totalPages: null !== (t = null === (e = v.Z.getSearchResults({
+      totalPages: null !== (t = null === (e = N.Z.getSearchResults({
         query: n,
         guildId: d,
         page: p,
@@ -338,10 +338,10 @@ function I(e) {
       })) || void 0 === e ? void 0 : e.totalPages) && void 0 !== t ? t : 0
     }
   }, [n, d, p, u]), b = i.useMemo(() => Array.from({
-    length: N === v.M.FETCHED || N === v.M.ERROR ? p : p - 1
+    length: f === N.M.FETCHED || f === N.M.ERROR ? p : p - 1
   }, (e, t) => {
     var i, l;
-    return null !== (l = null === (i = v.Z.getSearchResults({
+    return null !== (l = null === (i = N.Z.getSearchResults({
       query: n,
       guildId: d,
       page: t + 1,
@@ -352,16 +352,16 @@ function I(e) {
       excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: !0,
       source: a.F.APP_LAUNCHER
     })) || void 0 === i ? void 0 : i.results) && void 0 !== l ? l : []
-  }), [N, d, n, p, u]), E = i.useCallback(() => {
+  }), [f, d, n, p, u]), E = i.useCallback(() => {
     let e = b.length;
-    N === v.M.FETCHED && e === h.current && e > 0 && e < x && e < r && b[e - 1].length > 0 && (h.current++, m(e => e + 1))
-  }, [N, r, b, x]), C = i.useCallback(e => {
+    f === N.M.FETCHED && e === h.current && e > 0 && e < x && e < r && b[e - 1].length > 0 && (h.current++, m(e => e + 1))
+  }, [f, r, b, x]), C = i.useCallback(e => {
     let {
       query: t,
       page: n,
       guildId: i
     } = e;
-    f.yC({
+    v.yC({
       query: t,
       guildId: i,
       options: {
@@ -384,7 +384,7 @@ function I(e) {
   }, [n, d, C, p, l]), i.useEffect(() => {
     m(1)
   }, [d, n]), {
-    fetchState: N,
+    fetchState: f,
     applicationResults: b.flat(),
     fetchNextPage: E
   }

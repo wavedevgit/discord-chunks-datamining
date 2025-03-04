@@ -14,8 +14,8 @@ var i = n(200651),
   g = n(271383),
   b = n(430824),
   p = n(496675),
-  N = n(594174),
-  S = n(981631),
+  S = n(594174),
+  N = n(981631),
   f = n(388032);
 
 function O(e) {
@@ -26,13 +26,13 @@ function O(e) {
     analyticsLocations: E,
     context: h,
     icon: y
-  } = e, j = (0, s.e7)([b.Z], () => b.Z.getGuild(t), [t]), _ = (0, s.e7)([d.default], () => d.default.getId()), P = (0, s.e7)([N.default], () => N.default.getUser(n)), v = (0, s.e7)([g.ZP], () => g.ZP.isGuestOrLurker(t, n), [t, n]), A = r.useMemo(() => ({
+  } = e, j = (0, s.e7)([b.Z], () => b.Z.getGuild(t), [t]), _ = (0, s.e7)([d.default], () => d.default.getId()), P = (0, s.e7)([S.default], () => S.default.getUser(n)), v = (0, s.e7)([g.ZP], () => g.ZP.isGuestOrLurker(t, n), [t, n]), A = r.useMemo(() => ({
     [t]: [n]
   }), [t, n]), m = (0, u.EJ)(j);
   (0, a.$)(A);
-  let x = h === S.IlC.POPOUT,
+  let x = h === N.IlC.POPOUT,
     L = _ === n,
-    [I, Z] = (0, s.Wu)([p.Z], () => null == j ? [!1, !1] : [_ === n && (p.Z.can(S.Plq.CHANGE_NICKNAME, j) || p.Z.can(S.Plq.MANAGE_NICKNAMES, j)), p.Z.canManageUser(S.Plq.MANAGE_NICKNAMES, n, j)], [_, n, j]),
+    [I, Z] = (0, s.Wu)([p.Z], () => null == j ? [!1, !1] : [_ === n && (p.Z.can(N.Plq.CHANGE_NICKNAME, j) || p.Z.can(N.Plq.MANAGE_NICKNAMES, j)), p.Z.canManageUser(N.Plq.MANAGE_NICKNAMES, n, j)], [_, n, j]),
     M = r.useCallback((e, t) => () => {
       (0, c.nE)(e, t, o.Z.CONTEXT_MENU)
     }, []);

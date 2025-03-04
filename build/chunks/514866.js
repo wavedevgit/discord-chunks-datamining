@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => b
+  Z: () => _
 });
 var r = n(200651);
 n(192379);
@@ -8,15 +8,16 @@ var a = n(120356),
   l = n.n(a),
   i = n(481060),
   o = n(168107),
-  s = n(963886),
-  c = n(110478),
-  d = n(423932),
-  u = n(695346),
-  m = n(601948),
-  h = n(594174),
-  x = n(267412),
+  s = n(480916),
+  c = n(963886),
+  d = n(110478),
+  u = n(423932),
+  m = n(695346),
+  h = n(601948),
+  x = n(594174),
+  p = n(267412),
   f = n(802138);
-let p = () => {
+let b = () => {
   Promise.all([n.e("52030"), n.e("28202")]).then(n.bind(n, 24031)).then(e => {
     let {
       openMFAModal: t
@@ -38,51 +39,51 @@ let p = () => {
   })
 };
 
-function b() {
-  let e = h.default.getCurrentUser(),
+function _() {
+  let e = x.default.getCurrentUser(),
     t = null == e ? void 0 : e.isStaff(),
-    n = u.Rt.useSetting();
+    n = m.Rt.useSetting();
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: l()(x.buttonsContainer, f.marginBottom20),
-      children: (0, r.jsx)(m.S, {
+      className: l()(p.buttonsContainer, f.marginBottom20),
+      children: (0, r.jsx)(h.S, {
         isDevTools: !0
       })
     }), (0, r.jsx)("div", {
-      className: l()(x.buttonsContainer, f.marginBottom20),
+      className: l()(p.buttonsContainer, f.marginBottom20),
       children: (0, r.jsx)(i.zxk, {
-        onClick: p,
+        onClick: b,
         children: "Launch MFA"
       })
     }), (0, r.jsx)("div", {
-      className: l()(x.buttonsContainer, f.marginBottom20),
+      className: l()(p.buttonsContainer, f.marginBottom20),
       children: (0, r.jsx)(i.zxk, {
-        onClick: () => (0, d.Z)(),
+        onClick: () => (0, u.Z)(),
         children: "Launch Vibing Wumpus"
       })
     }), t && (0, r.jsx)("div", {
-      className: l()(x.buttonsContainer, f.marginBottom20),
+      className: l()(p.buttonsContainer, f.marginBottom20),
       children: (0, r.jsx)(i.zxk, {
-        onClick: () => (0, c.N)(),
+        onClick: () => (0, d.N)(),
         children: "Launch Captcha Test Tool"
       })
     }), t && (0, r.jsx)("div", {
-      className: l()(x.buttonsContainer, f.marginBottom20),
+      className: l()(p.buttonsContainer, f.marginBottom20),
       children: (0, r.jsx)(i.zxk, {
-        onClick: () => (0, s.E)(),
+        onClick: () => (0, c.E)(),
         children: "Launch Age Verification Test Tool"
       })
     }), t && (0, r.jsx)("div", {
-      className: l()(x.buttonsContainer, f.marginBottom20),
+      className: l()(p.buttonsContainer, f.marginBottom20),
       children: (0, r.jsx)(i.zxk, {
-        onClick: () => o.Z.showAgeVerificationGetStartedModal(),
+        onClick: () => o.Z.showAgeVerificationGetStartedModal(s.cU.DEV_TOOLS_QUICK_ACTIONS),
         children: "Launch Age Verification Modal"
       })
     }), t && (0, r.jsx)("div", {
-      className: l()(x.buttonsContainer, f.marginBottom20),
+      className: l()(p.buttonsContainer, f.marginBottom20),
       children: (0, r.jsx)(i.j7V, {
         value: n,
-        onChange: e => u.Rt.updateSetting(e),
+        onChange: e => m.Rt.updateSetting(e),
         hideBorder: !0,
         children: "Ignore profile speedbump disabled"
       })

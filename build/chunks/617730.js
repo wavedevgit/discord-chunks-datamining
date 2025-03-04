@@ -13,9 +13,9 @@ var i = n(481060),
   u = n(258356),
   d = n(981631),
   h = n(388032),
-  p = n(291102);
+  g = n(291102);
 
-function g(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -72,7 +72,7 @@ function _(e) {
     v = _ || null == t.inviter ? null : new s.Z(t.inviter),
     I = !(null != t.approximate_member_count && t.approximate_member_count > c.mx || null != b && b.hasFeature(d.oNc.COMMUNITY)) && null != v && (0, c.WT)(t),
     E = m(t),
-    O = {
+    j = {
       invite: t,
       user: v,
       guild: b,
@@ -85,19 +85,19 @@ function _(e) {
     isSubmitting: E,
     onAcceptInvite: n
   }) : (0, r.jsxs)("div", {
-    className: p.container,
+    className: g.container,
     children: [(0, r.jsx)(c.GB, {
       application: x,
       guild: b,
       user: I || (0, c.X7)(t) ? v : null
-    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, f(g({}, O), {
+    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, f(p({}, j), {
       showBigUserIcon: I
-    })), (0, r.jsx)(c.UM, f(g({}, O), {
+    })), (0, r.jsx)(c.UM, f(p({}, j), {
       showBigUserIcon: I
-    })), (0, r.jsx)(c.V6, g({}, O)), (0, r.jsx)(i.zxk, {
+    })), (0, r.jsx)(c.V6, p({}, j)), (0, r.jsx)(i.zxk, {
       onClick: n,
       submitting: E,
-      className: p.acceptButton,
+      className: g.acceptButton,
       children: h.NW.string(h.t.ohMvm5)
     })]
   })

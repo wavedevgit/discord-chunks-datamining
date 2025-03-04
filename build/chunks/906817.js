@@ -1,4 +1,4 @@
-/** Chunk was on 94898 **/
+/** Chunk was on 53494 **/
 n.d(t, {
   EM: () => m,
   WW: () => b,
@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  l = n(997638),
-  o = n(362658),
+  o = n(997638),
+  l = n(362658),
   a = n(216306),
   s = n(155409),
   c = n(540126),
@@ -29,8 +29,8 @@ function m(e, t, n, r) {
     let t = n.getCategoryFromSection(e);
     if (null == t || t.isEmpty()) return 0;
     if (t.isCollapsed) return d.Pw + g(r);
-    let l = null === (i = n.getChannelFromSectionRow(e, 0)) || void 0 === i ? void 0 : i.channel;
-    return null == l || l.record.type === p.d4z.GUILD_CATEGORY ? g(r) : 16 + g(r)
+    let o = null === (i = n.getChannelFromSectionRow(e, 0)) || void 0 === i ? void 0 : i.channel;
+    return null == o || o.record.type === p.d4z.GUILD_CATEGORY ? g(r) : 16 + g(r)
   }
   return d.Pw
 }
@@ -64,7 +64,7 @@ let v = i.memo(function(e) {
     disableManageChannels: v
   } = e, {
     isFavoritesPerk: y
-  } = (0, o.z)("ChannelListSection"), _ = i.useCallback(() => {
+  } = (0, l.z)("ChannelListSection"), _ = i.useCallback(() => {
     let e = g.getCategoryFromSection(g.recentsSectionNumber);
     if (null == e) return;
     let t = null,
@@ -117,7 +117,7 @@ let v = i.memo(function(e) {
         disableManageChannels: v,
         children: (0, r.jsx)(s.Z, {
           inlineSpecs: d.MF,
-          arrowAlignment: l.cy.TOP,
+          arrowAlignment: o.cy.TOP,
           tutorialId: "organize-by-topic",
           position: "right"
         })

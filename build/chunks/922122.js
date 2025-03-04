@@ -1,6 +1,6 @@
 /** Chunk was on 37697 **/
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -16,17 +16,17 @@ var r = n(200651),
   h = n(388032),
   g = n(42449);
 
-function f(e) {
+function _(e) {
   let {
     onTabSelect: t,
     tabs: n,
     selectedTab: a
-  } = e, o = (0, d.ZP)(), p = (0, s.wj)(o), f = (0, u.Q3)("GlobalDiscoveryHeaderMoreTab"), _ = i.useMemo(() => null != n.find(e => {
+  } = e, o = (0, d.ZP)(), p = (0, s.wj)(o), _ = (0, u.Q3)("GlobalDiscoveryHeaderMoreTab"), f = i.useMemo(() => null != n.find(e => {
     let {
       id: t
     } = e;
     return t === a
-  }), [a, n]), [v, b] = i.useState(!1), x = function(e) {
+  }), [a, n]), [b, v] = i.useState(!1), x = function(e) {
     let {
       selected: t,
       isVisualRefreshEnabled: n,
@@ -35,10 +35,10 @@ function f(e) {
     } = e;
     return n ? i ? "text-primary" : t ? "text-brand" : "text-normal" : !t && i ? "interactive-hover" : t ? "header-primary" : r ? "interactive-normal" : "header-primary"
   }({
-    selected: _,
-    isVisualRefreshEnabled: f,
+    selected: f,
+    isVisualRefreshEnabled: _,
     isDarkTheme: p,
-    isHovered: v
+    isHovered: b
   }), C = function(e) {
     let {
       selected: t,
@@ -48,11 +48,11 @@ function f(e) {
     } = e;
     return n ? i ? c.TVs.colors.TEXT_PRIMARY : t ? c.TVs.colors.TEXT_BRAND : c.TVs.colors.INTERACTIVE_NORMAL : !t && i ? c.TVs.colors.INTERACTIVE_HOVER : t ? c.TVs.colors.HEADER_PRIMARY : r ? c.TVs.colors.TEXT_MUTED : c.TVs.colors.HEADER_PRIMARY
   }({
-    selected: _,
-    isVisualRefreshEnabled: f,
+    selected: f,
+    isVisualRefreshEnabled: _,
     isDarkTheme: p,
-    isHovered: v
-  }), j = i.useCallback(() => b(!0), []), y = i.useCallback(() => b(!1), []);
+    isHovered: b
+  }), j = i.useCallback(() => v(!0), []), y = i.useCallback(() => v(!1), []);
   return (0, r.jsx)(c.yRy, {
     renderPopout: e => {
       let {
@@ -92,9 +92,9 @@ function f(e) {
       }({}, e), i = i = {
         id: "more",
         look: "brand",
-        selectedItem: f && _ ? "more" : void 0,
+        selectedItem: _ && f ? "more" : void 0,
         className: l()(g.tab, {
-          [g.selected]: !f && _
+          [g.selected]: !_ && f
         }),
         "aria-label": h.NW.string(h.t.UKOtz8),
         children: (0, r.jsxs)("div", {
@@ -102,7 +102,7 @@ function f(e) {
           onMouseEnter: j,
           onMouseLeave: y,
           children: [(0, r.jsx)(c.Text, {
-            variant: f ? "text-sm/semibold" : "text-md/medium",
+            variant: _ ? "text-sm/semibold" : "text-md/medium",
             color: x,
             children: h.NW.string(h.t.UKOtz8)
           }), a ? (0, r.jsx)(c.u04, {
@@ -127,16 +127,16 @@ function f(e) {
   })
 }
 
-function _(e) {
+function f(e) {
   let {
     className: t,
     selectedTab: n,
     tabs: a,
     onTabSelect: s,
     onAvailableWidthChange: d
-  } = e, [m, h] = i.useState(0), _ = i.useRef(m), {
-    lastVisibleIndex: v,
-    onItemLayout: b,
+  } = e, [m, h] = i.useState(0), f = i.useRef(m), {
+    lastVisibleIndex: b,
+    onItemLayout: v,
     overflowItemsRef: x,
     itemWidthsRef: C
   } = (0, o.zP)({
@@ -144,11 +144,11 @@ function _(e) {
     itemGapPx: 20,
     maxLines: 1,
     containerWidth: m
-  }), j = i.useMemo(() => a.slice(0, v + 1), [v, a]), y = i.useMemo(() => a.slice(v + 1), [v, a]), I = i.useRef(null), O = i.useCallback(() => {
+  }), j = i.useMemo(() => a.slice(0, b + 1), [b, a]), y = i.useMemo(() => a.slice(b + 1), [b, a]), I = i.useRef(null), O = i.useCallback(() => {
     var e;
     let t = null === (e = I.current) || void 0 === e ? void 0 : e.getBoundingClientRect();
-    if (null == t || _.current === t.width) return;
-    h(t.width), _.current = t.width;
+    if (null == t || f.current === t.width) return;
+    h(t.width), f.current = t.width;
     let n = C.current.reduce((e, t, n) => e + t + 20 * (0 !== n)),
       r = t.width - n;
     null == d || d(r)
@@ -166,7 +166,7 @@ function _(e) {
       className: g.measurements,
       children: [a.map((e, t) => (0, r.jsx)(o.AJ, {
         index: t,
-        onItemLayout: b,
+        onItemLayout: v,
         children: (0, r.jsx)(c.njP.Item, {
           id: e.id,
           "aria-label": e.label,
@@ -178,7 +178,7 @@ function _(e) {
         })
       }, e.id)), (0, r.jsx)("div", {
         ref: x,
-        children: (0, r.jsx)(f, {
+        children: (0, r.jsx)(_, {
           tabs: y,
           onTabSelect: s,
           selectedTab: n
@@ -198,7 +198,7 @@ function _(e) {
           [g.selected]: !P && n === e.id
         }),
         children: e.label
-      }, e.id)), 0 !== y.length ? (0, r.jsx)(f, {
+      }, e.id)), 0 !== y.length ? (0, r.jsx)(_, {
         tabs: y,
         onTabSelect: s,
         selectedTab: n
