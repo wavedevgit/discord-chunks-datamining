@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => c
 });
-var r = n(200651),
-  o = n(963614),
+var o = n(200651),
+  r = n(963614),
   a = n(208156),
   i = n(701488),
   l = n(859118);
@@ -22,8 +22,8 @@ function c(e) {
     referrer_id: d.referrerId,
     custom_id: d.customId
   };
-  return null != s && "" !== s && (p.guild_id = s), null != u && "" !== u && (p.channel_id = u), (0, r.jsx)(a.J, {
-    allowPopups: (0, o.h)(_),
+  return null != s && "" !== s && (p.guild_id = s), null != u && "" !== u && (p.channel_id = u), (0, o.jsx)(a.J, {
+    allowPopups: (0, r.h)(_),
     referrerPolicy: i.um.has(d.applicationId) ? "no-referrer" : "origin",
     url: d.url,
     queryParams: p,

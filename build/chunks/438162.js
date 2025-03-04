@@ -18,19 +18,19 @@ var r = n(200651),
   m = n(70097),
   g = n(594190),
   v = n(567409),
-  h = n(74299),
-  y = n(989941),
+  y = n(74299),
+  h = n(989941),
   O = n(199902),
   I = n(314897),
-  C = n(592125),
-  P = n(430824),
+  P = n(592125),
+  C = n(430824),
   E = n(131951),
   x = n(944486),
   w = n(449224),
   L = n(574254),
   Z = n(556296),
-  T = n(237997),
-  N = n(451478),
+  N = n(237997),
+  T = n(451478),
   k = n(585483),
   S = n(358085),
   A = n(13140),
@@ -170,21 +170,21 @@ function es() {
       hasZeroSizeDimension: m,
       keybind: L,
       isPreviewingInGame: k
-    } = (0, l.cj)([F.ZP, T.default, N.Z, Z.ZP], () => {
-      let t = N.Z.windowSize((0, D.ZY)(e)),
+    } = (0, l.cj)([F.ZP, N.default, T.Z, Z.ZP], () => {
+      let t = T.Z.windowSize((0, D.ZY)(e)),
         n = Z.ZP.getOverlayKeybind(),
         r = (0, j.getPID)();
       return {
         locked: F.ZP.isInputLocked(r),
-        focused: r === j.DEV_PID ? T.default.isFocused(r) : F.ZP.isFocused(r),
-        incompatibleApp: T.default.incompatibleApp,
+        focused: r === j.DEV_PID ? N.default.isFocused(r) : F.ZP.isFocused(r),
+        incompatibleApp: N.default.incompatibleApp,
         hasValidResolution: (0, j.validResolution)(t),
-        isPreviewingInGame: T.default.isPreviewingInGame(),
+        isPreviewingInGame: N.default.isPreviewingInGame(),
         hasZeroSizeDimension: 0 === t.height || 0 === t.width,
         keybind: null != n ? (0, A.BB)(n.shortcut, !0) : "???"
       }
     }, [e]),
-    S = (0, l.e7)([T.default], () => T.default.getActiveRegions()),
+    S = (0, l.e7)([N.default], () => N.default.getActiveRegions()),
     {
       analyticsLocations: G
     } = (0, p.ZP)(f.Z.OVERLAY),
@@ -211,11 +211,11 @@ function es() {
     let e = o.useRef(!1),
       t = (0, Y.pL)(),
       n = x.Z.getVoiceChannelId(),
-      r = C.Z.getChannel(n),
-      i = null != r ? P.Z.getGuild(r.guild_id) : null,
+      r = P.Z.getChannel(n),
+      i = null != r ? C.Z.getGuild(r.guild_id) : null,
       a = null != O.Z.getCurrentUserActiveStream(),
       l = null != n,
-      c = (0, h.Z)(E.Z) && !a && null != t,
+      c = (0, y.Z)(E.Z) && !a && null != t,
       u = l && null != i && null != n,
       {
         showKeybindIndicators: s,
@@ -255,10 +255,10 @@ function es() {
     e.removeEventListener("contextmenu", en, !1), null == et && (et = Date.now(), _.Z.track(X.rMx.OVERLAY_UNLOCKED))
   }, [t, e]);
   let er = (0, l.e7)([x.Z], () => x.Z.getVoiceChannelId()),
-    es = (0, l.e7)([C.Z], () => C.Z.getChannel(er)),
-    e_ = (0, l.e7)([P.Z], () => null != es ? P.Z.getGuild(es.guild_id) : null),
+    es = (0, l.e7)([P.Z], () => P.Z.getChannel(er)),
+    e_ = (0, l.e7)([C.Z], () => null != es ? C.Z.getGuild(es.guild_id) : null),
     ed = (0, l.e7)([I.default], () => I.default.getId()),
-    ef = (0, l.e7)([g.ZP, w.Z], () => (0, y.Z)(g.ZP, w.Z)),
+    ef = (0, l.e7)([g.ZP, w.Z], () => (0, h.Z)(g.ZP, w.Z)),
     ep = (0, v.Ns)(null == ef ? void 0 : ef.id),
     eb = (0, l.e7)([b.Z], () => null != b.Z.getLastFeedFetchDate(q.YN.GAME_PROFILE_FEED)),
     em = (0, d.Z)(eb);

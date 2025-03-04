@@ -15,15 +15,15 @@ let u = () => {
   let [n, u] = a.useState(c.Fr.HERO_BANNER_STATIC), {
     assets: m,
     upsertAsset: h,
-    previewEnabled: x,
-    setPreviewEnabled: p,
+    previewEnabled: p,
+    setPreviewEnabled: x,
     deleteAsset: f
   } = (0, o.N)(), b = a.useCallback((e, t) => {
     let n = c.Kj[e.name];
     null != n && (e.type.startsWith("image/") || e.type.startsWith("video/")) && h(n, e)
   }, [h]), _ = a.useCallback(async e => {
-    (await (0, c.RF)(e)).forEach(e => (0, c.ZK)(e, b, c.Eo)), p(!0)
-  }, [b, p]), g = a.useCallback(e => {
+    (await (0, c.RF)(e)).forEach(e => (0, c.ZK)(e, b, c.Eo)), x(!0)
+  }, [b, x]), g = a.useCallback(e => {
     f(e)
   }, [f]), v = a.useMemo(() => Object.values(c.Fr).filter(e => null != m[e]).map(e => ({
     label: e,
@@ -39,8 +39,8 @@ let u = () => {
     }), (0, r.jsxs)("div", {
       className: d.previewToggleContainer,
       children: [(0, r.jsx)(l.rsf, {
-        checked: x,
-        onChange: e => p(e)
+        checked: p,
+        onChange: e => x(e)
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         children: "Enable Preview"

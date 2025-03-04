@@ -287,7 +287,9 @@ let j = {
     return S.fileManager.saveWithDialog(a, i)
   },
   async downloadVoiceFilterFile(e, t, n) {
-    l()(h.isPlatformEmbedded, "Download voice filter file method called outside native app"), null != m.Z.toURLSafe(e) && await S.fileManager.maybeDownloadVoiceFilterFile(e, t, n)
+    l()(h.isPlatformEmbedded, "Download voice filter file method called outside native app");
+    let r = m.Z.toURLSafe(e);
+    return l()(r, "Could not download voice filter, fileSrc was not a valid path"), await S.fileManager.maybeDownloadVoiceFilterFile(e, t, n)
   },
   stopVoiceFilterDownloads() {
     S.fileManager.stopVoiceFilterDownloads()

@@ -18,15 +18,15 @@ function u(e) {
       size: u,
       forcedIconColor: m,
       className: h,
-      iconClassName: x,
-      tooltipText: p
+      iconClassName: p,
+      tooltipText: x
     } = e,
     [f, b] = (0, l.Wu)([s.Z], () => [s.Z.desaturateUserColors, s.Z.saturation]),
     _ = (0, o.dQu)(i.Z.unsafe_rawColors.PRIMARY_300).hex(),
     g = (0, a._i)(null != n ? n : _),
     v = (0, a.ho)(g, !1, f ? b : null);
   return t = null != m ? m : .3 > (0, a.Bd)(g) ? i.Z.unsafe_rawColors.PRIMARY_630.css : i.Z.unsafe_rawColors.WHITE_500.css, (0, r.jsx)(o.ua7, {
-    text: null != p ? p : d.NW.string(d.t.T3PvV1),
+    text: null != x ? x : d.NW.string(d.t.T3PvV1),
     children: e => {
       var n, a;
       return (0, r.jsx)(c.Z, (n = function(e) {
@@ -55,7 +55,7 @@ function u(e) {
           color: t,
           height: u,
           width: u,
-          className: x
+          className: p
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
         var n = Object.keys(e);

@@ -13,14 +13,14 @@ var r = n(200651),
   u = n(665149),
   m = n(706454),
   h = n(428530),
-  x = n(257785),
-  p = n(388032);
+  p = n(257785),
+  x = n(388032);
 
 function f() {
   let e = (0, c.e7)([m.default], () => m.default.locale),
     [t, n] = a.useState(),
     i = (0, l.runtimeHashMessageKey)(null != t ? t : ""),
-    f = a.useMemo(() => p.t[i], [i]);
+    f = a.useMemo(() => x.t[i], [i]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsxs)(u.ZP, {
       children: [(0, r.jsx)(u.ZP.Icon, {
@@ -29,20 +29,20 @@ function f() {
       }), (0, r.jsx)(u.ZP.Title, {
         children: "Locale"
       })]
-    }), (0, r.jsxs)(x.E, {
-      children: [(0, r.jsx)(x.Z9, {
+    }), (0, r.jsxs)(p.E, {
+      children: [(0, r.jsx)(p.Z9, {
         name: "Active System",
         children: "@discord/intl"
-      }), (0, r.jsx)(x.Z9, {
+      }), (0, r.jsx)(p.Z9, {
         name: "App",
         children: e
-      }), (0, r.jsx)(x.Z9, {
+      }), (0, r.jsx)(p.Z9, {
         name: "@discord/intl",
-        children: p.NW.currentLocale
-      }), (0, r.jsx)(x.Z9, {
+        children: x.NW.currentLocale
+      }), (0, r.jsx)(p.Z9, {
         name: "common i18n",
         children: s.Z.getLocale()
-      }), (0, r.jsx)(x.Z9, {
+      }), (0, r.jsx)(p.Z9, {
         name: "Moment",
         children: o().locale()
       })]
@@ -53,10 +53,10 @@ function f() {
       }), (0, r.jsx)(u.ZP.Title, {
         children: "New System Messages"
       })]
-    }), (0, r.jsx)(x.E, {
-      children: (0, r.jsx)(x.Z9, {
+    }), (0, r.jsx)(p.E, {
+      children: (0, r.jsx)(p.Z9, {
         name: "Unique Rendered Main Messages",
-        children: Object.keys(p.t).length
+        children: Object.keys(x.t).length
       })
     }), (0, r.jsx)(d.oil, {
       onChange: function(e) {
@@ -67,11 +67,11 @@ function f() {
         margin: 16
       },
       placeholder: "Find a message"
-    }), (0, r.jsxs)(x.E, {
-      children: [(0, r.jsx)(x.Z9, {
+    }), (0, r.jsxs)(p.E, {
+      children: [(0, r.jsx)(p.Z9, {
         name: "Hashed key",
         children: i
-      }), (0, r.jsx)(x.Z9, {
+      }), (0, r.jsx)(p.Z9, {
         name: "Exists?",
         children: null != f ? "yes" : "no"
       })]

@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => p
+  Z: () => x
 }), n(47120), n(301563);
 var r = n(200651);
 n(192379);
@@ -28,14 +28,14 @@ function u(e) {
 let m = u(d),
   h = u(d);
 
-function x(e) {
+function p(e) {
   return s.Jn9.test(e) ? (0, r.jsx)(o.ZP, {
     type: o.ZP.Types.TEXT,
     children: () => e
   }) : e
 }
 
-function p(e) {
+function x(e) {
   let {
     data: t
   } = e, n = (0, i.ZP)();
@@ -45,7 +45,7 @@ function p(e) {
       data: t,
       theme: "light" === n ? h : m,
       invertTheme: !1,
-      valueRenderer: x,
+      valueRenderer: p,
       shouldExpandNode: () => !0
     })
   })

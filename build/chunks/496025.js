@@ -13,8 +13,8 @@ var r = n(200651),
   u = n(933557),
   m = n(258732),
   h = n(592125),
-  x = n(699516),
-  p = n(594174),
+  p = n(699516),
+  x = n(594174),
   f = n(55589),
   b = n(630388),
   _ = n(98357),
@@ -30,13 +30,13 @@ function C() {
     {
       selectedChannel: i,
       options: _
-    } = (0, s.cj)([h.Z, p.default, x.Z], () => ({
+    } = (0, s.cj)([h.Z, x.default, p.Z], () => ({
       selectedChannel: h.Z.getChannel(n),
       options: t.map(e => {
         let t = h.Z.getChannel(e.channelId);
         return {
           value: e.channelId,
-          label: null != t ? (0, u.F6)(t, p.default, x.Z) : e.channelId
+          label: null != t ? (0, u.F6)(t, x.default, p.Z) : e.channelId
         }
       })
     })),

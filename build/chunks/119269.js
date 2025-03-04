@@ -13,8 +13,8 @@ var r, a = n(200651),
   u = n(821982),
   m = n(967538),
   h = n(885302),
-  x = n(914677),
-  p = n(600314),
+  p = n(914677),
+  x = n(600314),
   f = ((r = {})[r.NITRO_GEM = 0] = "NITRO_GEM", r[r.NITRO_LOGO = 1] = "NITRO_LOGO", r[r.AVATAR_DECO = 2] = "AVATAR_DECO", r);
 let b = e => {
     let {
@@ -22,11 +22,11 @@ let b = e => {
       avatarDecoAssetDescription: n
     } = e, r = l.useMemo(() => (0, u.Z)(t, c.EFr.SIZE_120, !1), [t]);
     return (0, a.jsx)("div", {
-      className: p.avatarDecoContainer,
+      className: x.avatarDecoContainer,
       children: (0, a.jsx)("div", {
-        className: p.avatarDeco,
+        className: x.avatarDeco,
         children: (0, a.jsx)("img", {
-          className: p.avatarDecoImage,
+          className: x.avatarDecoImage,
           alt: n,
           src: r
         })
@@ -52,10 +52,10 @@ let b = e => {
       circleStroke: O
     } = e, N = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), T = t && !N;
     return (0, a.jsx)("div", {
-      className: o()(p.progressCircle, n),
-      children: (0, a.jsx)(x.Z, {
-        animationClassName: o()(p.activeProgressCircle, {
-          [p.activeProgressCircleAnimation]: T,
+      className: o()(x.progressCircle, n),
+      children: (0, a.jsx)(p.Z, {
+        animationClassName: o()(x.activeProgressCircle, {
+          [x.activeProgressCircleAnimation]: T,
           [null != y ? y : ""]: T
         }),
         progressCircleStroke: O,
@@ -67,8 +67,8 @@ let b = e => {
           switch (_) {
             case 0:
               return (0, a.jsx)(m.Z, {
-                className: T ? p.nitroGemAnimation : void 0,
-                backgroundColor: o()(p.gemBackgroundFill, l),
+                className: T ? x.nitroGemAnimation : void 0,
+                backgroundColor: o()(x.gemBackgroundFill, l),
                 backgroundCircleSize: c
               });
             case 1:

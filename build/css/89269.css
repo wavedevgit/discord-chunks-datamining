@@ -1,6 +1,6 @@
 /**
   Module ID: 89269
-  Original File Name: 480b2dd19bb35301
+  Original File Name: c6845a713c7cf332
 **/
 @value minColumnWidth: 460px;
 
@@ -2458,7 +2458,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding: 8px 0;
     display: flex;
     flex-direction: column;
-    gap: 2px
+    gap: 4px
 }
 
 .extraGameRow__80da8 {

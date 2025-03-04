@@ -13,8 +13,8 @@ var r = n(200651),
   u = n(484036),
   m = n(681619),
   h = n(621060),
-  x = n(710662),
-  p = n(579581);
+  p = n(710662),
+  x = n(579581);
 
 function f(e, t) {
   return e.store.getName().localeCompare(t.store.getName())
@@ -31,7 +31,7 @@ function b(e) {
       t.removeChangeListener(e)
     }
   }, [t, n]), (0, r.jsx)(s.zJl, {
-    className: p.inspectorContainer,
+    className: x.inspectorContainer,
     children: (0, r.jsx)(d.Z, {
       data: l
     })
@@ -39,7 +39,7 @@ function b(e) {
 }
 let _ = [{
     key: "name",
-    cellClassName: p.__invalid_eventColumn,
+    cellClassName: x.__invalid_eventColumn,
     render(e) {
       let {
         store: t
@@ -55,7 +55,7 @@ let _ = [{
         store: t
       } = e;
       return null == t.__getLocalVars ? (0, r.jsxs)("div", {
-        className: p.inspectorContainer,
+        className: x.inspectorContainer,
         children: ["Store is missing ", (0, r.jsx)("code", {
           children: "__getLocalVars"
         }), " method."]
@@ -89,11 +89,11 @@ function v(e) {
     tabs: g
   }, []);
   return (0, r.jsxs)(u.Z, {
-    className: p.subPanel,
+    className: x.subPanel,
     minHeight: 100,
     initialHeight: n,
     children: [(0, r.jsx)(a, {}), (0, r.jsxs)(c.ZP, {
-      className: i()(x.headerBar, p.subPanelHeaderBar),
+      className: i()(p.headerBar, x.subPanelHeaderBar),
       children: [(0, r.jsx)(c.ZP.Icon, {
         icon: s.lO_,
         tooltip: t.getName()
@@ -123,11 +123,11 @@ function j() {
     h = l.find(e => e._dispatchToken === d);
   return (0, r.jsxs)("div", {
     ref: e,
-    className: i()(x.panel, p.panel),
+    className: i()(p.panel, x.panel),
     children: [(0, r.jsx)("div", {
-      className: p.toolbar,
+      className: x.toolbar,
       children: (0, r.jsx)(s.E1j, {
-        className: p.searchBar,
+        className: x.searchBar,
         size: s.E1j.Sizes.SMALL,
         query: t,
         onChange: n,

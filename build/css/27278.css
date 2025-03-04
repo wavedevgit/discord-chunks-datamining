@@ -1,6 +1,6 @@
 /**
   Module ID: 27278
-  Original File Name: 961a717ea5790229
+  Original File Name: faa58cd4b9d328c2
 **/
 .buttonContainer__7e329 {
     display: flex;
@@ -787,6 +787,28 @@
     color: var(--header-secondary);
     font-weight: 600;
     flex: 0 0 auto
+}
+
+.propertyValue_fe7ab2 {
+    display: flex;
+    align-items: center
+}
+
+.propertyValue_fe7ab2:hover>.copyPropertyButton_fe7ab2 {
+    opacity: 1
+}
+
+.propertyValue_fe7ab2 .copyPropertyButton_fe7ab2 {
+    color: var(--interactive-normal);
+    height: 18px;
+    margin-left: 4px;
+    opacity: 0;
+    transition: opacity .1s ease-in-out
+}
+
+.propertyValue_fe7ab2 .copyPropertyButton_fe7ab2:hover {
+    color: var(--interactive-hover);
+    cursor: pointer
 }
 
 .toolbar_fe7ab2 {

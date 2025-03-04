@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => s
 });
-var r = n(200651),
-  o = n(442837),
+var o = n(200651),
+  r = n(442837),
   a = n(481060),
   i = n(726721),
   l = n(726521),
@@ -16,9 +16,9 @@ function s(e, t) {
     }, {
       autoTrackExposure: !0
     }).enabled,
-    s = (0, o.e7)([c.Z], () => c.Z.getChannel(t)),
+    s = (0, r.e7)([c.Z], () => c.Z.getChannel(t)),
     d = null == s ? void 0 : s.getGuildId();
-  return !1 === n ? null : (0, r.jsx)(a.sNh, {
+  return !1 === n ? null : (0, o.jsx)(a.sNh, {
     id: "report-app",
     color: "danger",
     label: u.NW.string(u.t.NgA5vr),

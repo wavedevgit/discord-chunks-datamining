@@ -1,6 +1,6 @@
 /**
   Module ID: 94805
-  Original File Name: 4ebd9c26c28e5af9
+  Original File Name: e21b09162671e9e5
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -158,7 +158,7 @@
     padding: 8px 0;
     display: flex;
     flex-direction: column;
-    gap: 2px
+    gap: 4px
 }
 
 .extraGameRow__80da8 {

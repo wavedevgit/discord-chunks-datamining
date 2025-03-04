@@ -189,16 +189,6 @@ function T(e) {
 
 function N(e) {
   let {
-    modelId: t
-  } = e;
-  m.modelState[t] = p(f({}, m.modelState[t]), {
-    status: c.L.DOWNLOADED,
-    downloadedBytes: void 0
-  })
-}
-
-function A(e) {
-  let {
     modelId: t,
     downloadedBytes: n,
     totalBytes: r
@@ -209,7 +199,7 @@ function A(e) {
   })
 }
 
-function C(e) {
+function A(e) {
   var t;
   let {
     modelId: n
@@ -217,6 +207,16 @@ function C(e) {
   (null === (t = m.modelState[n]) || void 0 === t ? void 0 : t.status) !== c.L.DOWNLOADED && (m.modelState[n] = p(f({}, m.modelState[n]), {
     status: c.L.MISSING
   }))
+}
+
+function C(e) {
+  let {
+    modelId: t
+  } = e;
+  m.modelState[t] = p(f({}, m.modelState[t]), {
+    status: c.L.DOWNLOADED,
+    downloadedBytes: void 0
+  })
 }
 
 function R(e) {
@@ -232,9 +232,9 @@ function P(e) {
 d(S, "displayName", "VoiceFilterStore");
 let w = new S(l.Z, {
   VOICE_FILTER_DOWNLOAD_STARTED: T,
-  VOICE_FILTER_DOWNLOAD_READY: N,
-  VOICE_FILTER_DOWNLOAD_PROGRESS: A,
-  VOICE_FILTER_DOWNLOAD_FAILED: C,
+  VOICE_FILTER_DOWNLOAD_PROGRESS: N,
+  VOICE_FILTER_DOWNLOAD_FAILED: A,
+  VOICE_FILTER_FILE_READY: C,
   VOICE_FILTER_CATALOG_FETCH_SUCCESS: y,
   VOICE_FILTER_CATALOG_FETCH_FAILED: O,
   VOICE_FILTER_UPDATE_LIMITED_TIME_VOICES: I,

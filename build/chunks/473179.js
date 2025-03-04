@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => l
 });
-var r = n(200651),
-  o = n(481060),
+var o = n(200651),
+  r = n(481060),
   a = n(870745),
   i = n(388032);
 
@@ -14,7 +14,7 @@ function l(e) {
     application: l,
     channelId: c
   } = e, u = (0, a.Z)(l, c);
-  return (0, r.jsx)(o.v2r, {
+  return (0, o.jsx)(r.v2r, {
     navId: "activity-popout-overflow-popout",
     onClose: t,
     onSelect: n,

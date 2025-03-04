@@ -13,8 +13,8 @@ var r = n(200651),
   u = n(41340),
   m = n(981631),
   h = n(474936),
-  x = n(710662),
-  p = n(536465);
+  p = n(710662),
+  x = n(536465);
 let f = async () => (await o.tn.get({
   url: m.ANM.BILLING_SUBSCRIPTIONS,
   query: {
@@ -78,11 +78,11 @@ function _() {
       }), await _()
     };
   return (0, r.jsx)(s.zJl, {
-    className: x.panel,
+    className: p.panel,
     children: (0, r.jsxs)("div", {
-      className: p.panelInner,
+      className: x.panelInner,
       children: [(0, r.jsxs)("div", {
-        className: p.headerWrapper,
+        className: x.headerWrapper,
         children: [(0, r.jsx)("div", {
           children: (0, r.jsx)(s.Text, {
             style: {
@@ -107,7 +107,7 @@ function _() {
           })
         })]
       }), (0, r.jsx)("section", {
-        className: i()([p.section, p.buttons]),
+        className: i()([x.section, x.buttons]),
         children: null == g && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
             variant: "text-md/normal",
@@ -131,7 +131,7 @@ function _() {
         variant: "text-lg/bold",
         children: "Bulk action"
       }), (0, r.jsx)("section", {
-        className: i()([p.section, p.buttons]),
+        className: i()([x.section, x.buttons]),
         children: (0, r.jsx)(s.zxk, {
           size: s.zxk.Sizes.SMALL,
           onClick: y,

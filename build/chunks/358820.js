@@ -83,10 +83,11 @@ function O(e) {
       downloadedBytes: n,
       totalBytes: r
     }))
-  }).then(() => {
+  }).then(n => {
     a.Z.dispatch(v(g({
-      type: "VOICE_FILTER_DOWNLOAD_READY"
+      type: "VOICE_FILTER_FILE_READY"
     }, e), {
+      fetchedFromNetwork: n.fetchedFromNetwork,
       analyticsContext: t
     }))
   }).catch(t => {

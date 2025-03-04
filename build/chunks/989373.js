@@ -1,7 +1,7 @@
 /** Chunk was on 54030 **/
 n.r(t), n.d(t, {
   default: () => O,
-  useOverlayInitialFocus: () => y
+  useOverlayInitialFocus: () => h
 }), n(47120);
 var r = n(200651),
   o = n(192379),
@@ -21,9 +21,9 @@ var b = n(554370),
   m = n(371651),
   g = n(610394),
   v = n(501787),
-  h = n(981631);
+  y = n(981631);
 
-function y(e, t) {
+function h(e, t) {
   let n = (0, i.e7)([g.ZP], () => {
       let e = g.ZP.getFocusedPID();
       return !d.isPlatformEmbedded || null != e && e !== p.UNSET_PID
@@ -59,9 +59,9 @@ function y(e, t) {
     r && b();
     let n = null !== (e = g.ZP.getFocusedPID()) && void 0 !== e ? e : (0, p.getPID)(),
       o = null != _.Z.getVoiceChannelId();
-    a.Z.track(h.rMx.OVERLAY_INITIALIZED, {
+    a.Z.track(y.rMx.OVERLAY_INITIALIZED, {
       voice_widget_connected: o,
-      text_widget_connected: g.ZP.isPinned(h.Odu.TEXT),
+      text_widget_connected: g.ZP.isPinned(y.Odu.TEXT),
       overlay_render_method: l.gl[m.default.getOverlayMethod(n)],
       unpinned_widget_types: s.Z.getAllUnpinnedPinnedWidgets(t)
     })
@@ -73,7 +73,7 @@ function O(e) {
     withTitleBar: t,
     windowKey: n
   } = e;
-  return y(n, v.OVERLAY_V3_LAYOUT_ID) ? (0, r.jsx)(u.Z, {
+  return h(n, v.OVERLAY_V3_LAYOUT_ID) ? (0, r.jsx)(u.Z, {
     withTitleBar: t,
     windowKey: n,
     title: "Discord Overlay",

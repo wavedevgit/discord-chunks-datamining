@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(731994),
   m = n(223692);
 let h = new c.Z("ShopAssetsPreviewUploadArea"),
-  x = e => {
+  p = e => {
     (0, o.ZDy)(async () => {
       let {
         default: t
@@ -40,8 +40,8 @@ let h = new c.Z("ShopAssetsPreviewUploadArea"),
       modalKey: d.A
     })
   },
-  p = () => {
-    x({
+  x = () => {
+    p({
       title: "Invalid file type!",
       help: "Please drop only image files or a directory containing image files."
     })
@@ -50,7 +50,7 @@ let h = new c.Z("ShopAssetsPreviewUploadArea"),
     let {
       className: t,
       onDrop: n
-    } = e, [l, c] = a.useState(!1), x = a.useRef(null), f = a.useCallback(e => {
+    } = e, [l, c] = a.useState(!1), p = a.useRef(null), f = a.useCallback(e => {
       for (let t of e) try {
         if (null == t || !t.isFile && !t.isDirectory) return h.warn("Dropped item is not a file or directory"), !1
       } catch (e) {
@@ -67,7 +67,7 @@ let h = new c.Z("ShopAssetsPreviewUploadArea"),
       e.preventDefault(), e.stopPropagation(), c(!1);
       let t = e.dataTransfer;
       if (null == t) {
-        p();
+        x();
         return
       }
       let r = await Promise.all(Array.from(t.items).map(e => {
@@ -75,17 +75,17 @@ let h = new c.Z("ShopAssetsPreviewUploadArea"),
         return null !== (t = e.webkitGetAsEntry()) && void 0 !== t ? t : e.getAsEntry()
       })).then(e => e.filter(e => null != e));
       if (0 === r.length || !f(r)) {
-        p();
+        x();
         return
       }
       h.info("[DEBUG] file system entries: ".concat(r.length)), n(r)
     }, [n, f]);
     return a.useEffect(() => {
       var e;
-      let t = null === (e = x.current) || void 0 === e ? void 0 : e.ownerDocument.body;
+      let t = null === (e = p.current) || void 0 === e ? void 0 : e.ownerDocument.body;
       if (null != t) return t.addEventListener("dragover", b, !1), () => t.removeEventListener("dragover", b, !1)
     }, [b]), (0, r.jsx)("div", {
-      ref: x,
+      ref: p,
       className: i()(t, m.uploadArea, {
         [m.droppable]: l
       }),

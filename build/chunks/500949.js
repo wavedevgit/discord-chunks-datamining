@@ -2,13 +2,13 @@
 n.d(t, {
   $R: () => X,
   A0: () => et,
-  GU: () => K,
+  GU: () => J,
   H8: () => q,
-  HI: () => J,
+  HI: () => K,
   HW: () => F,
   Ib: () => es,
   KB: () => eu,
-  S2: () => H,
+  S2: () => V,
   W6: () => er,
   XM: () => ea,
   YC: () => eh,
@@ -32,8 +32,8 @@ var r, a, l = n(192379),
   u = n(855930),
   m = n(385787),
   h = n(566162),
-  x = n(567027),
-  p = n(461195),
+  p = n(567027),
+  x = n(461195),
   f = n(857702),
   b = n(20450),
   _ = n(312976),
@@ -98,8 +98,8 @@ let F = {
     HSL: u.Z,
     HSLuv: m.Z,
     HSV: h.Z,
-    HWB: x.Z,
-    ICTCP: p.Z,
+    HWB: p.Z,
+    ICTCP: x.Z,
     JzCzHz: f.Z,
     Jzazbz: b.Z,
     LCH: _.Z,
@@ -121,9 +121,9 @@ let F = {
 Object.values(F).forEach(e => P.Z.register(e));
 let {
   SemanticColors: W
-} = D.V, U = W, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
+} = D.V, U = W, V = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
 
-function V(e, t) {
+function H(e, t) {
   let [n, r] = l.useState(() => {
     let n = A.K.get(e);
     return null != n ? n : t
@@ -158,13 +158,13 @@ function Y(e, t, n, r, a) {
   }
 }
 
-function K(e) {
+function J(e) {
   return z(M({}, e), {
     highlight: !e.highlight
   })
 }
 
-function J(e) {
+function K(e) {
   return (0, Z.Z)((0, R.Z)(e, i.Z), {
     format: "hex"
   })
@@ -173,7 +173,7 @@ var q = ((r = {}).TOKENS = "Tokens", r.PALETTES = "Palettes", r);
 
 function $() {
   return function(e, t) {
-    let [n, r] = V("".concat(e, "-states"), [t]), [a, i] = V("".concat(e, "-index"), 0), o = n[a], s = l.useCallback(e => {
+    let [n, r] = H("".concat(e, "-states"), [t]), [a, i] = H("".concat(e, "-index"), 0), o = n[a], s = l.useCallback(e => {
       r(["function" == typeof e ? e(o) : e, ...n].slice(0, 20)), i(0)
     }, [i, r, n, o]), c = l.useCallback(() => {
       i(Math.min(n.length - 1, a + 1))
@@ -222,24 +222,24 @@ function ea(e) {
   }), u = (0, L.CD)(c, "black", 1 - l, {
     space: s,
     outputSpace: i.Z
-  }), m = Math.floor(r / 2), h = r - m, x = (0, L.w6)(d, c, {
+  }), m = Math.floor(r / 2), h = r - m, p = (0, L.w6)(d, c, {
     steps: m,
     outputSpace: s,
     space: s,
     progression: e => e ** o
-  }), p = (0, L.w6)(u, c, {
+  }), x = (0, L.w6)(u, c, {
     steps: h,
     outputSpace: s,
     space: s,
     progression: e => e ** o
   }), f = [];
   for (let e = 0; e < m; e++) {
-    let t = x(e / m);
+    let t = p(e / m);
     f.push(t)
   }
   f.push(c);
   for (let e = 1; e < h; e++) {
-    let t = p(1 - e / h);
+    let t = x(1 - e / h);
     f.push(t)
   }
   return Object.fromEntries(f.map((e, n) => ["".concat(t, "-").concat(n), e]))

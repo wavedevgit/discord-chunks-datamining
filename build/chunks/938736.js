@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 n.d(t, {
   $s: () => O,
-  AV: () => x,
+  AV: () => p,
   Hg: () => N,
   Kn: () => C,
   Nq: () => h,
@@ -22,8 +22,8 @@ var r = n(442837),
   u = n(981631),
   m = n(388032);
 let h = "40%",
-  x = 8,
-  p = e => {
+  p = 8,
+  x = e => {
     let {
       hasSentAll: t,
       hasSentAtLeastOne: n,
@@ -134,7 +134,7 @@ let h = "40%",
     } = e;
     switch (n) {
       case u.g2L.NOT_ELIGIBLE:
-        return p({
+        return x({
           hasSentAll: r.sent >= d.Q,
           hasSentAtLeastOne: r.sent >= 1,
           numSentUsers: r.sent,

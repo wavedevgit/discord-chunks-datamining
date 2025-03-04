@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => x
+  Z: () => p
 });
 var r = n(200651),
   a = n(192379),
@@ -26,7 +26,7 @@ let h = [{
   value: o.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE
 }];
 
-function x() {
+function p() {
   let e = a.useRef(null),
     t = c.JG.useSetting();
   return (0, r.jsxs)("div", {

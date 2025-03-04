@@ -40,13 +40,13 @@ function c(e) {
       variant: "text-sm/semibold",
       children: e.key
     })
-  }, e)), [t]), x = [n.length];
+  }, e)), [t]), p = [n.length];
   return (0, r.jsx)("div", {
     className: s.tableContainer,
     children: (0, r.jsx)(o.Tvr, {
       className: l,
       innerClassName: s.table,
-      sections: x,
+      sections: p,
       sectionHeight: 40,
       renderSection: e => {
         let {
@@ -72,12 +72,12 @@ function c(e) {
       renderRow: e => {
         let {
           rowIndex: t
-        } = e, a = n[t], l = a.key, x = i()(s.tableRow, {
+        } = e, a = n[t], l = a.key, p = i()(s.tableRow, {
           [s.selectedTableRow]: l === u,
           rowClassName: c
         });
         return (0, r.jsx)(o.P3F, {
-          className: x,
+          className: p,
           onClick: () => null == d ? void 0 : d(a),
           children: h.map(e => {
             var n, l;

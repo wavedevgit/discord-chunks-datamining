@@ -79,32 +79,33 @@ class b extends i.Z {
       for (let e of (v.info("Ensuring we have dependencies for voice filter", r.id, t), t))(0, f.fz)(e, n)
     } else(0, f.rk)(t, n)
   }
-  handleVoiceFilterDownloadReady(e) {
+  handleVoiceFilterFileReady(e) {
     let {
       modelId: t,
       voiceFilterId: n,
-      analyticsContext: r
-    } = e, i = s.Z.getMostRecentlyRequestedVoiceFilter(), o = s.Z.getActiveVoiceFilter(), a = i !== o;
-    if (l.default.track(_.rMx.VOICE_FILTER_DOWNLOAD_ATTEMPTED, {
-        active_voice_filter_id: null != o ? o : null,
+      fetchedFromNetwork: r,
+      analyticsContext: i
+    } = e, o = s.Z.getMostRecentlyRequestedVoiceFilter(), a = s.Z.getActiveVoiceFilter(), c = o !== a;
+    if (r && l.default.track(_.rMx.VOICE_FILTER_DOWNLOAD_ATTEMPTED, {
+        active_voice_filter_id: null != a ? a : null,
         success: !0,
         voice_filter_id: n,
         model_id: t
-      }), a && null != i) {
-      let e = d.Z.getVoiceFilter(i);
+      }), c && null != o) {
+      let e = d.Z.getVoiceFilter(o);
       if (null == e) {
         v.error("the VF in mostRecentlyRequestedVoiceFilter is missing. Has the store been cleared?");
         return
       }
       let n = e.modelIds,
-        o = Object.values(null != n ? n : {}).filter(e => !d.Z.isModelDownloaded(e)).filter(e => e !== t);
-      if (o.length > 0) {
+        r = Object.values(null != n ? n : {}).filter(e => !d.Z.isModelDownloaded(e)).filter(e => e !== t);
+      if (r.length > 0) {
         v.info("waiting for more dependencies", {
-          mostRecentlyRequestedVoiceFilter: i,
-          missingDependencies: o
+          mostRecentlyRequestedVoiceFilter: o,
+          missingDependencies: r
         });
         return
-      }(0, f.rk)(i, r)
+      }(0, f.rk)(o, i)
     }
   }
   handleVoiceFilterDownloadFailed(e) {
@@ -157,9 +158,9 @@ class b extends i.Z {
   constructor(...e) {
     super(...e), h(this, "actions", {
       VOICE_FILTER_REQUEST_SWITCH: this.handleVoiceFilterRequestSwitch,
-      VOICE_FILTER_DOWNLOAD_READY: this.handleVoiceFilterDownloadReady,
       VOICE_FILTER_DOWNLOAD_FAILED: this.handleVoiceFilterDownloadFailed,
       VOICE_FILTER_DOWNLOAD_CANCELED: this.handleVoiceFilterDownloadCanceled,
+      VOICE_FILTER_FILE_READY: this.handleVoiceFilterFileReady,
       VOICE_FILTER_LOAD_MODULE: this.loadNativeModule,
       VOICE_FILTER_APPLIED: this.handleVoiceFilterApplied,
       VOICE_FILTER_APPLY_FAILED: this.handleVoiceFilterApplyFailed

@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 47feb9703b4c60f0
+  Original File Name: c7c9aefcb616fd38
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -126,6 +126,28 @@
     color: var(--header-secondary);
     font-weight: 600;
     flex: 0 0 auto
+}
+
+.propertyValue_fe7ab2 {
+    display: flex;
+    align-items: center
+}
+
+.propertyValue_fe7ab2:hover>.copyPropertyButton_fe7ab2 {
+    opacity: 1
+}
+
+.propertyValue_fe7ab2 .copyPropertyButton_fe7ab2 {
+    color: var(--interactive-normal);
+    height: 18px;
+    margin-left: 4px;
+    opacity: 0;
+    transition: opacity .1s ease-in-out
+}
+
+.propertyValue_fe7ab2 .copyPropertyButton_fe7ab2:hover {
+    color: var(--interactive-hover);
+    cursor: pointer
 }
 
 .toolbar_fe7ab2 {
@@ -374,16 +396,34 @@
     min-height: 0
 }
 
+.customProperty_fb48ea {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px
+}
+
+.customProperty_fb48ea:hover>.copyPropertyButton_fb48ea {
+    opacity: 1
+}
+
 .customPropertiesName_fb48ea {
     color: var(--text-brand);
     font-weight: 500;
     padding-right: 4px;
-    float: left;
-    margin-bottom: 8px
+    float: left
 }
 
-.customPropertiesValue_fb48ea {
-    margin-bottom: 8px
+.copyPropertyButton_fb48ea {
+    color: var(--interactive-normal);
+    height: 18px;
+    margin-left: 4px;
+    opacity: 0;
+    transition: opacity .1s ease-in-out
+}
+
+.copyPropertyButton_fb48ea:hover {
+    color: var(--interactive-hover);
+    cursor: pointer
 }
 
 .emptyProperty_fb48ea {
@@ -392,6 +432,27 @@
 
 .searchBar_fb48ea,.triggersEnable_fb48ea {
     margin: 0 8px
+}
+
+.headerTitle_fb48ea {
+    flex: 1
+}
+
+.headerTitle_fb48ea:hover .copyEventButton_fb48ea {
+    opacity: 1
+}
+
+.headerTitle_fb48ea .copyEventButton_fb48ea {
+    margin-left: 4px;
+    margin-bottom: -4px;
+    opacity: 0;
+    transition: opacity .1s ease-in-out;
+    color: var(--interactive-normal)
+}
+
+.headerTitle_fb48ea .copyEventButton_fb48ea:hover {
+    color: var(--interactive-hover);
+    cursor: pointer
 }
 
 .panelInner_b4dcd9 {
@@ -3593,7 +3654,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding: 8px 0;
     display: flex;
     flex-direction: column;
-    gap: 2px
+    gap: 4px
 }
 
 .extraGameRow__80da8 {

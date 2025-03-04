@@ -13,15 +13,15 @@ var r = n(200651),
   u = n(146282),
   m = n(897674),
   h = n(561308),
-  x = n(206583),
-  p = n(719461);
+  p = n(206583),
+  x = n(719461);
 
 function f(e) {
   let {
     id: t
   } = e, n = (0, a.e7)([s.default], () => s.default.getUser(t));
   return null == n ? null : (0, r.jsx)(l.P3F, {
-    className: p.entryAuthor,
+    className: x.entryAuthor,
     onClick: function() {
       (0, o.openUserProfileModal)({
         sourceAnalyticsLocations: [i.Z.DEV_TOOLS],
@@ -37,7 +37,7 @@ function f(e) {
 
 function b() {
   var e;
-  let t = (0, a.e7)([u.Z], () => u.Z.getFeed(x.YN.GLOBAL_FEED)),
+  let t = (0, a.e7)([u.Z], () => u.Z.getFeed(p.YN.GLOBAL_FEED)),
     n = (0, a.e7)([u.Z], () => u.Z.getFilters()),
     i = (0, a.cj)([c.Z], () => {
       var e;
@@ -54,7 +54,7 @@ function b() {
     if (!(0, m.g)(n, t)) return [];
     let a = i[(0, c.T)(t)];
     return (0, r.jsxs)("li", {
-      className: p.locatorEntry,
+      className: x.locatorEntry,
       children: [(0, r.jsx)(f, {
         type: t.author_type,
         id: t.author_id

@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => x
+  Z: () => p
 }), n(47120), n(653041);
 var r = n(200651),
   a = n(192379),
@@ -34,13 +34,13 @@ function h(e) {
     tabs: t,
     selectedTabId: n,
     onSelectTab: l
-  } = e, i = a.useRef(null), h = a.useRef(0), x = a.useRef(new Map), [p, f] = a.useState([]), b = a.useCallback(() => {
+  } = e, i = a.useRef(null), h = a.useRef(0), p = a.useRef(new Map), [x, f] = a.useState([]), b = a.useCallback(() => {
     var e, r, a, l;
     if (null == i.current) return;
     let o = [],
       s = i.current.getBoundingClientRect().width;
     if (s !== h.current) {
-      for (let i of (h.current = s, s -= null !== (r = null === (e = x.current.get(n)) || void 0 === e ? void 0 : e.width) && void 0 !== r ? r : 0, t)) i.id !== n && (s -= null !== (l = null === (a = x.current.get(i.id)) || void 0 === a ? void 0 : a.width) && void 0 !== l ? l : 0) < 0 && o.push(i.id);
+      for (let i of (h.current = s, s -= null !== (r = null === (e = p.current.get(n)) || void 0 === e ? void 0 : e.width) && void 0 !== r ? r : 0, t)) i.id !== n && (s -= null !== (l = null === (a = p.current.get(i.id)) || void 0 === a ? void 0 : a.width) && void 0 !== l ? l : 0) < 0 && o.push(i.id);
       f(o)
     }
   }, [t, n]), _ = a.useRef(null);
@@ -63,14 +63,14 @@ function h(e) {
           id: t,
           name: a
         } = e;
-        return p.includes(t) && n !== t ? (0, r.jsx)(o.sNh, {
+        return x.includes(t) && n !== t ? (0, r.jsx)(o.sNh, {
           id: t,
           label: a,
           action: () => l(t)
         }, t) : null
       }).filter(c.lm)
     })
-  }, [t, p, l, n]);
+  }, [t, x, l, n]);
   return (0, r.jsxs)("div", {
     className: u.tabBar,
     ref: i,
@@ -79,13 +79,13 @@ function h(e) {
         id: t,
         name: a
       } = e;
-      if (!p.includes(t)) return (0, r.jsx)(m, {
+      if (!x.includes(t)) return (0, r.jsx)(m, {
         id: t,
         selected: n === t,
         ref: e => {
           var n, r, a;
-          let l = null !== (r = null === (n = x.current.get(t)) || void 0 === n ? void 0 : n.width) && void 0 !== r ? r : 0;
-          x.current.set(t, {
+          let l = null !== (r = null === (n = p.current.get(t)) || void 0 === n ? void 0 : n.width) && void 0 !== r ? r : 0;
+          p.current.set(t, {
             node: e,
             width: null !== (a = null == e ? void 0 : e.getBoundingClientRect().width) && void 0 !== a ? a : l
           })
@@ -93,7 +93,7 @@ function h(e) {
         onClick: n !== t ? () => l(t) : void 0,
         children: a
       }, t)
-    }).filter(c.lm), p.length > 0 && (0, r.jsx)(o.yRy, {
+    }).filter(c.lm), x.length > 0 && (0, r.jsx)(o.yRy, {
       layerContext: d.O$,
       renderPopout: g,
       position: "bottom",
@@ -142,7 +142,7 @@ function h(e) {
   })
 }
 
-function x(e, t) {
+function p(e, t) {
   var n, l, i;
   let {
     tabs: o,

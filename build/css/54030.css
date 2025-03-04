@@ -1,6 +1,6 @@
 /**
   Module ID: 54030
-  Original File Name: 0984fbceb8456d93
+  Original File Name: 5272099fa5af64a6
 **/
 .textArea_ab8e5c {
     border-radius: 6px;
@@ -799,6 +799,28 @@
     color: var(--header-secondary);
     font-weight: 600;
     flex: 0 0 auto
+}
+
+.propertyValue_fe7ab2 {
+    display: flex;
+    align-items: center
+}
+
+.propertyValue_fe7ab2:hover>.copyPropertyButton_fe7ab2 {
+    opacity: 1
+}
+
+.propertyValue_fe7ab2 .copyPropertyButton_fe7ab2 {
+    color: var(--interactive-normal);
+    height: 18px;
+    margin-left: 4px;
+    opacity: 0;
+    transition: opacity .1s ease-in-out
+}
+
+.propertyValue_fe7ab2 .copyPropertyButton_fe7ab2:hover {
+    color: var(--interactive-hover);
+    cursor: pointer
 }
 
 .toolbar_fe7ab2 {

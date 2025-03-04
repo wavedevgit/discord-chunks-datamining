@@ -13,8 +13,8 @@ var r = n(200651),
   u = n(213609),
   m = n(213713),
   h = n(665149),
-  x = n(906467),
-  p = n(259580),
+  p = n(906467),
+  x = n(259580),
   f = n(31336),
   b = n(19759),
   _ = n(432877);
@@ -45,12 +45,12 @@ var g = n(392750),
   G = n(384207),
   W = n(264603),
   U = n(678639),
-  H = n(351930),
-  V = n(771751),
+  V = n(351930),
+  H = n(771751),
   X = n(596768),
   Y = n(56706),
-  K = n(621060),
-  J = n(388032),
+  J = n(621060),
+  K = n(388032),
   q = n(320316),
   $ = n(710662);
 
@@ -92,7 +92,7 @@ function ee() {
         name: "Dispatcher",
         render: () => (0, r.jsx)(T.Z, {})
       }];
-      return x.Z.isDeveloper && (e.push({
+      return p.Z.isDeveloper && (e.push({
         id: "shop",
         name: "Shop",
         render: () => (0, r.jsx)(G.C, {})
@@ -164,7 +164,7 @@ function ee() {
         id: "affinity",
         name: "Affinity",
         render: () => (0, r.jsx)(g.Z, {})
-      }), x.Z.isDeveloper && e.push({
+      }), p.Z.isDeveloper && e.push({
         id: "content_inventory",
         name: "Content Inventory",
         render: () => (0, r.jsx)(m.Z, {})
@@ -179,7 +179,7 @@ function ee() {
       }), window.GLOBAL_ENV.RELEASE_CHANNEL.startsWith("staging") && (e.push({
         id: "trials",
         name: "Trials",
-        render: () => (0, r.jsx)(V.Z, {})
+        render: () => (0, r.jsx)(H.Z, {})
       }), e.push({
         id: "payments",
         name: "Payments",
@@ -187,7 +187,7 @@ function ee() {
       }), e.push({
         id: "subscriptions",
         name: "Subscriptions",
-        render: () => (0, r.jsx)(H.Z, {})
+        render: () => (0, r.jsx)(V.Z, {})
       }), e.push({
         id: "billing",
         name: "Billing",
@@ -210,7 +210,7 @@ function ee() {
       TabBar: n,
       renderSelectedTab: l,
       selectedTabId: i
-    } = (0, K.Z)({
+    } = (0, J.Z)({
       tabs: t,
       initialSelectedTabId: null !== (e = b.Z.lastOpenTabId) && void 0 !== e ? e : void 0,
       onChangeTab: e => {
@@ -230,7 +230,7 @@ function ee() {
       className: $.headerBar,
       toolbar: (0, r.jsx)(h.ZP.Icon, {
         icon: c.Dio,
-        tooltip: J.NW.string(J.t.cpT0Cg),
+        tooltip: K.NW.string(K.t.cpT0Cg),
         onClick: f.SO
       }),
       children: [(0, r.jsx)(h.ZP.Icon, {
@@ -286,8 +286,8 @@ function en() {
       onClick: f.SO,
       children: (0, r.jsxs)(h.ZP, {
         className: i()($.headerBar, q.mobileHeaderCollapsed),
-        toolbar: (0, r.jsx)(p.Z, {
-          direction: p.Z.Directions.UP
+        toolbar: (0, r.jsx)(x.Z, {
+          direction: x.Z.Directions.UP
         }),
         children: [(0, r.jsx)(h.ZP.Icon, {
           icon: c.Ymb,

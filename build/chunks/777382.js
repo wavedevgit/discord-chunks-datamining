@@ -49,11 +49,11 @@ function v(e, t) {
   }), e
 }
 
-function h(e) {
+function y(e) {
   return e.widget.id
 }
 
-function y(e, t, n, o) {
+function h(e, t, n, o) {
   return n === a.pJH.YEETED ? null : (0, r.jsx)(p.Z, v(g({}, t), {
     transitionState: n,
     cleanUp: o,
@@ -84,15 +84,15 @@ let O = [],
         })
       }
       return t
-    }, [m], f.HP), C = o.useCallback(e => (0, r.jsx)("div", {
+    }, [m], f.HP), P = o.useCallback(e => (0, r.jsx)("div", {
       className: t,
       style: p,
       children: e
     }), [t, p]);
     return (0, r.jsx)(a.W3x, {
       items: I,
-      renderItem: y,
-      getItemKey: h,
-      wrapChildren: C
+      renderItem: h,
+      getItemKey: y,
+      wrapChildren: P
     })
   })

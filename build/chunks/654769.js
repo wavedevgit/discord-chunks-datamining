@@ -12,8 +12,8 @@ var a, l = n(392711),
   u = n(710845),
   m = n(812483),
   h = n(460181),
-  x = n(474873),
-  p = n(135906),
+  p = n(474873),
+  x = n(135906),
   f = n(592125),
   b = n(292959),
   _ = n(699516),
@@ -60,7 +60,7 @@ async function R() {
 
 function L(e, t) {
   var n;
-  return null !== (n = (0, p.Z)(null != t ? t : x.Z.getSoundpack())[e]) && void 0 !== n ? n : e
+  return null !== (n = (0, x.Z)(null != t ? t : p.Z.getSoundpack())[e]) && void 0 !== n ? n : e
 }
 async function A(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
@@ -165,13 +165,13 @@ let U = {
     }
     let u = null !== (i = null == a ? void 0 : a.tag) && void 0 !== i ? i : null,
       h = await Z(),
-      x = (null == h ? void 0 : h.authorizationStatus) === "authorized",
-      p = x && (null == h ? void 0 : h.sound) === !0,
+      p = (null == h ? void 0 : h.authorizationStatus) === "authorized",
+      x = p && (null == h ? void 0 : h.sound) === !0,
       g = e => {
         var t;
         null === (t = a.onShown) || void 0 === t || t.call(a), a.omitViewTracking || j.default.track(T.rMx.NOTIFICATION_VIEWED, r), P && setTimeout(() => e.close(), 5e3)
       };
-    if (null == a.sound || p || G(a.sound, null !== (o = a.volume) && void 0 !== o ? o : 1, a.soundpack), m.Z.getCurrentConfig({
+    if (null == a.sound || x || G(a.sound, null !== (o = a.volume) && void 0 !== o ? o : 1, a.soundpack), m.Z.getCurrentConfig({
         location: "showNotification"
       }).enabled && a.isUserAvatar && null != e && (e = await
         function(e) {
@@ -190,7 +190,7 @@ let U = {
               O.Z.captureMessage("Failed to load notification avatar to circle crop: ".concat(t)), r(e)
             }
           })
-        }(e)), x) {
+        }(e)), p) {
       let l = {
         title: t,
         body: n
@@ -225,7 +225,7 @@ let U = {
         w.warn("Native notification failed with error: ", e)
       }
     }
-    null != a.sound && x && G(a.sound, null !== (s = a.volume) && void 0 !== s ? s : 1, a.soundpack);
+    null != a.sound && p && G(a.sound, null !== (s = a.volume) && void 0 !== s ? s : 1, a.soundpack);
     let S = {
       icon: e,
       body: n,
