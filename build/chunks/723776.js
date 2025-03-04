@@ -81,7 +81,7 @@ function f(e) {
   }, "overflow") : (0, r.jsx)(v, {
     trait: e
   }, e.key), []);
-  return (0, r.jsx)(a.Epb, {
+  return 0 === n.length ? null : (0, r.jsx)(a.Epb, {
     className: d.container,
     items: n,
     renderItem: i,

@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 78bb9f4d8d5c5218
+  Original File Name: 47feb9703b4c60f0
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -3590,7 +3590,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .extraGamesContainer__80da8 {
-    padding: 8px 0
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px
 }
 
 .extraGameRow__80da8 {
@@ -3730,11 +3733,16 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     align-items: center;
     padding: 4px 8px;
     border-radius: 16px;
-    border: 1px solid var(--border-faint);
+    border: 1px solid var(--border-subtle);
     max-width: 268px;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap
+    white-space: nowrap;
+    transition: border-color .2s ease
+}
+
+.trait_d452e4:hover {
+    border-color: var(--border-strong)
 }
 
 .traitEmoji_d452e4 {

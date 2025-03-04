@@ -1,6 +1,6 @@
 /**
   Module ID: 3205
-  Original File Name: 990cad988a6c0cfa
+  Original File Name: 41a7704a4d46186b
 **/
 .popoutContainer_a6cedd {
     display: flex;
@@ -13009,6 +13009,10 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     display: block;
     top: 0;
     background: linear-gradient(180deg,var(--background-primary),transparent 70%)
+}
+
+.previewButton__864b0 {
+    pointer-events: none
 }
 
 .dragging_f7c056 {

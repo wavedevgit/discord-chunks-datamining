@@ -121,9 +121,9 @@ function v(e) {
               className: j.preview,
               profile: S,
               CTAOverride: (0, r.jsx)(o.zxk, {
+                className: j.previewButton,
                 size: o.zxk.Sizes.SMALL,
                 fullWidth: !0,
-                disabled: !0,
                 children: x.NW.string(x.t["7XdMW1"])
               })
             })]

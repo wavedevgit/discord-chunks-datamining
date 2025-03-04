@@ -1,6 +1,6 @@
 /**
   Module ID: 94805
-  Original File Name: fb9fc4c51bd4d070
+  Original File Name: 4ebd9c26c28e5af9
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -155,7 +155,10 @@
 }
 
 .extraGamesContainer__80da8 {
-    padding: 8px 0
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px
 }
 
 .extraGameRow__80da8 {
@@ -295,11 +298,16 @@
     align-items: center;
     padding: 4px 8px;
     border-radius: 16px;
-    border: 1px solid var(--border-faint);
+    border: 1px solid var(--border-subtle);
     max-width: 268px;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap
+    white-space: nowrap;
+    transition: border-color .2s ease
+}
+
+.trait_d452e4:hover {
+    border-color: var(--border-strong)
 }
 
 .traitEmoji_d452e4 {
