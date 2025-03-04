@@ -88,7 +88,7 @@ function $(e) {
         return e
       }({}, t), r = r = {
         layoutId: Y.OVERLAY_V3_LAYOUT_ID,
-        version: 1
+        version: Y.OVERLAY_V3_LAYOUT_VERSION
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

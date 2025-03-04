@@ -2,7 +2,7 @@
 "use strict";
 let r, i;
 n.d(t, {
-  Z: () => H
+  Z: () => W
 }), n(653041), n(47120), n(230036), n(411104);
 var o, a = n(392711),
   s = n.n(a),
@@ -53,10 +53,11 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = "migrated",
-  y = .02,
-  O = .01,
-  S = {
+let b = 1,
+  y = "migrated",
+  O = .02,
+  S = .01,
+  I = {
     [h.Odu.GUILDS]: {
       minSize: {
         width: 312,
@@ -160,7 +161,7 @@ let b = "migrated",
       layoutPolicy: "REQUIRED",
       defaultSettings: {
         anchor: {
-          left: O,
+          left: S,
           top: .35,
           bottom: void 0,
           right: void 0
@@ -171,7 +172,7 @@ let b = "migrated",
         },
         pinned: !0
       },
-      version: 2
+      version: b
     },
     [h.Odu.VIDEO]: {
       minSize: {
@@ -184,9 +185,9 @@ let b = "migrated",
       layoutPolicy: "OPTIONAL_DEFAULT",
       defaultSettings: {
         anchor: {
-          left: O,
+          left: S,
           top: void 0,
-          bottom: y,
+          bottom: O,
           right: void 0
         },
         size: {
@@ -196,7 +197,7 @@ let b = "migrated",
         },
         pinned: !0
       },
-      version: 2
+      version: b
     },
     [h.Odu.GO_LIVE]: {
       minSize: {
@@ -211,8 +212,8 @@ let b = "migrated",
         anchor: {
           left: void 0,
           top: void 0,
-          bottom: y,
-          right: O
+          bottom: O,
+          right: S
         },
         size: {
           fixed: !0,
@@ -221,7 +222,7 @@ let b = "migrated",
         },
         pinned: !1
       },
-      version: 2
+      version: b
     },
     [h.Odu.QUICK_ACTIONS]: {
       minSize: {
@@ -235,7 +236,7 @@ let b = "migrated",
       defaultSettings: {
         anchor: {
           left: .34,
-          top: y,
+          top: O,
           bottom: void 0,
           right: void 0
         },
@@ -245,7 +246,7 @@ let b = "migrated",
         },
         pinned: !1
       },
-      version: 2
+      version: b
     },
     [h.Odu.NOTIFICATIONS]: {
       minSize: {
@@ -258,8 +259,8 @@ let b = "migrated",
       layoutPolicy: "REQUIRED",
       defaultSettings: {
         anchor: {
-          left: O,
-          top: y,
+          left: S,
+          top: O,
           bottom: void 0,
           right: void 0
         },
@@ -269,7 +270,7 @@ let b = "migrated",
         },
         pinned: !0
       },
-      version: 2
+      version: b
     },
     [h.Odu.ACTIVITY]: {
       minSize: {
@@ -285,7 +286,7 @@ let b = "migrated",
           left: void 0,
           top: .35,
           bottom: void 0,
-          right: O
+          right: S
         },
         size: {
           height: "auto",
@@ -293,7 +294,7 @@ let b = "migrated",
         },
         pinned: !1
       },
-      version: 2
+      version: b
     },
     [h.Odu.CLICK_ZONE_DEBUG]: {
       minSize: {
@@ -317,7 +318,7 @@ let b = "migrated",
         },
         pinned: !0
       },
-      version: 2
+      version: b
     },
     [h.Odu.PERFORMANCE_DEBUG]: {
       minSize: {
@@ -341,11 +342,11 @@ let b = "migrated",
         },
         pinned: !0
       },
-      version: 2
+      version: b
     }
   };
 
-function I(e) {
+function T(e) {
   let {
     layoutId: t,
     widgets: n,
@@ -355,7 +356,7 @@ function I(e) {
   if (null != r[t] && r[t].version === o) return !1;
   let s = [];
   n.forEach((e, t) => {
-    let n = T(e.type),
+    let n = N(e.type),
       r = v(g({}, e), {
         zIndex: t
       });
@@ -371,8 +372,8 @@ function I(e) {
   })
 }
 
-function T(e) {
-  let t = r[b];
+function N(e) {
+  let t = r[y];
   if (null != t)
     for (let n of t.widgets) {
       let t = i[n];
@@ -381,51 +382,51 @@ function T(e) {
   return null
 }
 
-function N(e, t) {
+function A(e, t) {
   let n = i[e];
   if (null == n) return !1;
   let o = r[n.layoutId];
   return null != o && t(n, o)
 }
 
-function A(e) {
+function C(e) {
   let {
     widgetId: t,
     anchor: n,
     size: r,
     opacity: i
   } = e;
-  return N(t, (e, t) => L(e, n, r, i))
+  return A(t, (e, t) => x(e, n, r, i))
 }
 
-function C(e) {
+function R(e) {
   let {
     widgetId: t
   } = e;
-  return N(t, (e, t) => R(t, e.id))
+  return A(t, (e, t) => P(t, e.id))
 }
 
-function R(e, t) {
-  let n = G(e);
+function P(e, t) {
+  let n = B(e);
   n.sort((e, t) => e.zIndex - t.zIndex);
   let r = n.findIndex(e => e.id === t);
   if (r === n.length - 1) return !1;
   n.push(n.splice(r, 1)[0]);
-  for (let e = 0; e < n.length; e++) j(n[e], e);
+  for (let e = 0; e < n.length; e++) U(n[e], e);
   return !0
 }
 
-function P(e) {
+function w(e) {
   let {
     widgetId: t,
     meta: n
   } = e;
-  return N(t, (e, t) => {
-    w(e, n)
+  return A(t, (e, t) => {
+    D(e, n)
   })
 }
 
-function w(e, t) {
+function D(e, t) {
   var n;
   i = v(g({}, i), {
     [e.id]: e.merge({
@@ -434,16 +435,16 @@ function w(e, t) {
   })
 }
 
-function D(e) {
+function L(e) {
   let {
     widgetId: t
   } = e;
-  return N(t, (e, t) => {
-    U(e)
+  return A(t, (e, t) => {
+    G(e)
   })
 }
 
-function L(e, t, n, r) {
+function x(e, t, n, r) {
   i = v(g({}, i), {
     [e.id]: e.merge({
       anchor: null != t ? t : e.anchor,
@@ -453,12 +454,12 @@ function L(e, t, n, r) {
   })
 }
 
-function x(e) {
+function M(e) {
   let {
     widgetId: t
   } = e;
   i = g({}, i), delete i[t], s().forEach(r, (e, n) => {
-    if (n === b) return;
+    if (n === y) return;
     let i = e.widgets.indexOf(t);
     if (i >= 0) {
       let t = [...e.widgets];
@@ -469,7 +470,7 @@ function x(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     layoutId: t
   } = e, n = r[t];
@@ -481,7 +482,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     widgetConfigs: t
   } = e;
@@ -499,19 +500,19 @@ function k(e) {
   })
 }
 
-function j(e, t) {
+function U(e, t) {
   i = v(g({}, i), {
     [e.id]: e.set("zIndex", t)
   })
 }
 
-function U(e) {
+function G(e) {
   i = v(g({}, i), {
     [e.id]: e.set("pinned", !e.pinned)
   })
 }
 
-function G(e) {
+function B(e) {
   let t = [];
   return e.widgets.forEach(e => {
     let n = i[e];
@@ -519,37 +520,37 @@ function G(e) {
   }), t
 }
 
-function B(e) {
+function V(e) {
   let t = {};
   return s().forEach(e, (e, n) => {
     t[n] = new f.Z(e)
   }), t
 }
 
-function V(e) {
+function F(e) {
   let t = {};
   return s().forEach(e, (e, n) => {
     t[n] = new _.Z(e)
   }), t
 }
 
-function F(e) {
+function Z(e) {
   var t;
-  return null === (t = S[e]) || void 0 === t ? void 0 : t.defaultSettings
+  return null === (t = I[e]) || void 0 === t ? void 0 : t.defaultSettings
 }
-class Z extends(o = c.ZP.PersistedStore) {
+class H extends(o = c.ZP.PersistedStore) {
   initialize(e) {
-    null != e && null != e.layouts && null != e.widgets ? (r = B(e.layouts), i = V(e.widgets)) : (r = {}, i = {});
+    null != e && null != e.layouts && null != e.widgets ? (r = V(e.layouts), i = F(e.widgets)) : (r = {}, i = {});
     let t = !1,
       n = [];
-    s().forEach(S, (e, t) => {
+    s().forEach(I, (e, t) => {
       "REQUIRED" === e.layoutPolicy && n.push(t)
     }), s().forEach(r, (e, o) => {
       let a = this.getWidgetsForLayout(o),
         s = !1;
       for (let r of n) {
         let n = a.find(e => e.type === r);
-        if (null != n || S[r].version !== e.version) continue;
+        if (null != n || I[r].version !== e.version) continue;
         s = t = !0;
         let c = (0, l.Z)();
         n = new _.Z(v(g({}, this.getWidgetDefaultSettings(r)), {
@@ -612,17 +613,17 @@ class Z extends(o = c.ZP.PersistedStore) {
     }), n
   }
   getWidgetConfig(e) {
-    return S[e]
+    return I[e]
   }
   getWidgetDefaultSettings(e) {
-    return F(e)
+    return Z(e)
   }
   getWidgetType(e) {
     let t = i[e];
     return null != t ? t.type : ""
   }
   getRegisteredWidgets() {
-    return S
+    return I
   }
   getDefaultLayout(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
@@ -641,7 +642,7 @@ class Z extends(o = c.ZP.PersistedStore) {
     }), n
   }
 }
-m(Z, "displayName", "LayoutStore"), m(Z, "persistKey", "LayoutStore"), m(Z, "migrations", [() => {
+m(H, "displayName", "LayoutStore"), m(H, "persistKey", "LayoutStore"), m(H, "migrations", [() => {
   let {
     pinnedWidgets: e,
     positions: t,
@@ -649,7 +650,7 @@ m(Z, "displayName", "LayoutStore"), m(Z, "persistKey", "LayoutStore"), m(Z, "mig
     v: r
   } = g({}, u.K.get("OverlayStore"));
   if (5 === r && e) {
-    let r = b,
+    let r = y,
       i = [],
       o = e.map(e => {
         let o = null != t ? t[e] : null,
@@ -697,7 +698,7 @@ m(Z, "displayName", "LayoutStore"), m(Z, "persistKey", "LayoutStore"), m(Z, "mig
     return !r.has(t)
   }), o = Array.from(t).filter(e => {
     let [t] = e;
-    return t !== b
+    return t !== y
   });
   return o.forEach(e => {
     let [t, n] = e, r = null, o = null;
@@ -709,7 +710,7 @@ m(Z, "displayName", "LayoutStore"), m(Z, "persistKey", "LayoutStore"), m(Z, "mig
         return null != n && (null == o && n[1].type === h.Odu.VOICE && (o = n[0]), null == r && n[1].type === h.Odu.TEXT && (r = n[1].pinned), null != r && null != o || void 0)
       }), r || null == o) return;
     let a = (0, l.Z)();
-    n.widgets = [o, a], i.push([a, v(g({}, F(h.Odu.GUILDS_TEXT)), {
+    n.widgets = [o, a], i.push([a, v(g({}, Z(h.Odu.GUILDS_TEXT)), {
       type: h.Odu.GUILDS_TEXT,
       id: a,
       layoutId: t,
@@ -750,13 +751,13 @@ m(Z, "displayName", "LayoutStore"), m(Z, "persistKey", "LayoutStore"), m(Z, "mig
     widgets: n
   }
 }]);
-let H = new Z(d.Z, {
-  LAYOUT_CREATE: I,
-  LAYOUT_SET_PINNED: D,
-  LAYOUT_UPDATE_WIDGET: A,
-  LAYOUT_SET_TOP_WIDGET: C,
-  LAYOUT_DELETE_WIDGET: x,
-  LAYOUT_DELETE_ALL_WIDGETS: M,
-  LAYOUT_CREATE_WIDGETS: k,
-  LAYOUT_SET_WIDGET_META: P
+let W = new H(d.Z, {
+  LAYOUT_CREATE: T,
+  LAYOUT_SET_PINNED: L,
+  LAYOUT_UPDATE_WIDGET: C,
+  LAYOUT_SET_TOP_WIDGET: R,
+  LAYOUT_DELETE_WIDGET: M,
+  LAYOUT_DELETE_ALL_WIDGETS: k,
+  LAYOUT_CREATE_WIDGETS: j,
+  LAYOUT_SET_WIDGET_META: w
 })

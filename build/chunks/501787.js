@@ -10,7 +10,7 @@ n.d(t, {
 });
 let r = "DISCORD_OutOfProcessOverlay",
   i = "overlay_v3_default",
-  o = 2,
+  o = 1,
   a = 192,
   s = 120,
   l = 4
