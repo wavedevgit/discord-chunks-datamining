@@ -63,5 +63,8 @@ let c = {
         entryPoint: e
       }))
     })
+  },
+  openUrl: e => {
+    window.open(e, "_blank")
   }
 }
