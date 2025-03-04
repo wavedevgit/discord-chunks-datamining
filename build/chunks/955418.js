@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120), n(566702);
 var r = n(200651),
   i = n(192379),
@@ -16,19 +16,19 @@ var r = n(200651),
   _ = n(981631),
   p = n(388032),
   h = n(234034);
-let g = (0, c.kt)({
+let m = (0, c.kt)({
   id: "1",
   type: _.d4z.DM
 });
 
-function m(e) {
+function g(e) {
   let {
     user: t,
     guildId: n,
     channelId: c,
     onClose: _
   } = e, {
-    newestAnalyticsLocation: m
+    newestAnalyticsLocation: g
   } = (0, o.ZP)(), {
     trackUserProfileAction: E
   } = (0, d.KZ)(), [v, b] = i.useState(""), [y, O] = i.useState((0, s.JM)(v)), S = i.useRef(!1);
@@ -40,7 +40,7 @@ function m(e) {
     placeholder: p.NW.formatToPlainString(p.t["0ZQw/f"], {
       name: u.ZP.getName(n, c, t)
     }),
-    channel: g,
+    channel: m,
     textValue: v,
     richValue: y,
     onChange: (e, t, n) => {
@@ -63,7 +63,7 @@ function m(e) {
         }), await (0, f.Z)({
           userId: t.id,
           content: n.trim(),
-          location: m
+          location: g
         }), null == _ || _(), {
           shouldClear: !0,
           shouldRefocus: !1

@@ -16,7 +16,7 @@ var r, i = n(913527),
   p = n(937111),
   h = n(981631);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,14 +25,14 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -106,12 +106,12 @@ function R(e) {
 function P() {
   A = !1
 }
-let D = e => "guild-join-request=".concat(e),
-  w = (e, t) => "guild-".concat(e, "-").concat(t);
+let w = e => "guild-join-request=".concat(e),
+  D = (e, t) => "guild-".concat(e, "-").concat(t);
 
 function L(e) {
   let t = [];
-  return t.push(D(e.joinRequestId)), t.push(w(e.guildId, e.applicationStatus)), t
+  return t.push(w(e.joinRequestId)), t.push(D(e.guildId, e.applicationStatus)), t
 }
 let x = new s.h(L, e => "".concat(e.joinRequestId)),
   M = new s.h(L, e => "".concat(e.joinRequestId)),
@@ -153,8 +153,8 @@ function F(e) {
     guildId: t,
     action: n
   } = e;
-  x.values(w(t, _.wB.SUBMITTED)).forEach(e => {
-    G(v(m({}, e), {
+  x.values(D(t, _.wB.SUBMITTED)).forEach(e => {
+    G(v(g({}, e), {
       applicationStatus: n
     }))
   }), I(t, 0)
@@ -197,7 +197,7 @@ class X extends(r = a.ZP.Store) {
     return q[e]
   }
   getRequests(e, t) {
-    let n = w(e, t);
+    let n = D(e, t);
     return (0, f.bk)(t) ? k.values(n) : (0, f.Nd)(t) ? M.values(n) : x.values(n)
   }
   getSubmittedGuildJoinRequestTotal(e) {
@@ -227,7 +227,7 @@ class X extends(r = a.ZP.Store) {
     return null != t ? j(t.joinRequestId) : null
   }
 }
-g(X, "displayName", "GuildJoinRequestStoreV2");
+m(X, "displayName", "GuildJoinRequestStoreV2");
 let J = new X(l.Z, {
   GUILD_JOIN_REQUEST_BY_ID_FETCH_SUCCESS: N,
   GUILD_JOIN_REQUESTS_FETCH_SUCCESS: R,

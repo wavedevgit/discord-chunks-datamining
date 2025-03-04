@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   C3: () => E,
-  Fg: () => m,
+  Fg: () => g,
   Oh: () => b,
-  cP: () => g,
+  cP: () => m,
   gp: () => v
 }), n(47120);
 var r = n(544891),
@@ -20,7 +20,7 @@ var r = n(544891),
   _ = n(734893),
   p = n(846121),
   h = n(981631);
-let g = async e => {
+let m = async e => {
   i.Z.dispatch({
     type: "GUILD_HOME_SETTINGS_FETCH_START",
     guildId: e
@@ -43,7 +43,7 @@ let g = async e => {
       guildId: e
     })
   }
-}, m = async e => {
+}, g = async e => {
   if (!s.Z.isFullServerPreview(e)) {
     i.Z.dispatch({
       type: "GUILD_NEW_MEMBER_ACTIONS_FETCH_START",

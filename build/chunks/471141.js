@@ -22,8 +22,8 @@ function _(e) {
     tooltipNote: _,
     onChange: p,
     className: h,
-    style: g,
-    note: m,
+    style: m,
+    note: g,
     children: E,
     disabledText: v,
     containerRef: b
@@ -39,7 +39,7 @@ function _(e) {
   });
   return (0, r.jsxs)("div", {
     ref: b,
-    style: g,
+    style: m,
     className: a()(f.container, h, {
       [f.disabled]: n
     }),
@@ -63,12 +63,12 @@ function _(e) {
           }) : I
         })]
       })
-    }), null != m && (0, r.jsx)("div", {
+    }), null != g && (0, r.jsx)("div", {
       className: f.note,
       children: (0, r.jsx)(d.R, {
         disabled: n,
         type: d.g.DESCRIPTION,
-        children: m
+        children: g
       })
     }), n && null != v && (0, r.jsx)("div", {
       className: f.disabledText,

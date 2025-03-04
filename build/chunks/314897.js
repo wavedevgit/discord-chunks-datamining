@@ -15,8 +15,8 @@ var i, o = n(213919),
   _ = n(254942),
   p = n(670890),
   h = n(569611),
-  g = n(710845),
-  m = n(703656),
+  m = n(710845),
+  g = n(703656),
   E = n(786213),
   v = n(626135),
   b = n(449934),
@@ -34,12 +34,12 @@ function N(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let A = new g.Z("AuthenticationStore"),
+let A = new m.Z("AuthenticationStore"),
   C = "fingerprint",
   R = "user_id_cache",
   P = null,
-  D = null,
   w = null,
+  D = null,
   L = null,
   x = null,
   M = null,
@@ -70,7 +70,7 @@ function Q() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
   if (x = c.K.get(C), null != W) return W;
   let t = null != x ? x : o.getToken();
-  !(!(0, m.m1)() || !e && null != t || O.Z.isHandoffAvailable()) && X({
+  !(!(0, g.m1)() || !e && null != t || O.Z.isHandoffAvailable()) && X({
     withGuildExperiments: !0
   })
 }
@@ -86,7 +86,7 @@ function X(e) {
     },
     headers: n,
     context: {
-      location: (0, m.Wf)()
+      location: (0, g.Wf)()
     },
     retries: 3,
     oldFormErrors: !0,
@@ -217,7 +217,7 @@ function eh(e) {
   $(t), J()
 }
 
-function eg(e) {
+function em(e) {
   var t;
   let {
     user: n,
@@ -227,10 +227,10 @@ function eg(e) {
     auth: a,
     staticAuthSessionId: s
   } = e;
-  q("handleConnectionOpen called"), y.Z.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, E.Z)(n)), D = r, w = i, L = s, k = o, P = n.id, void 0 !== a && (G = a.authenticator_types), c.K.set(R, n.id)
+  q("handleConnectionOpen called"), y.Z.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, E.Z)(n)), w = r, D = i, L = s, k = o, P = n.id, void 0 !== a && (G = a.authenticator_types), c.K.set(R, n.id)
 }
 
-function em(e) {
+function eg(e) {
   var t;
   let {
     user: n,
@@ -238,7 +238,7 @@ function em(e) {
     analyticsToken: i,
     token: o
   } = e;
-  y.Z.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, E.Z)(n)), D = r, k = i, $(o), J(), P = n.id, c.K.set(R, n.id)
+  y.Z.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, E.Z)(n)), w = r, k = i, $(o), J(), P = n.id, c.K.set(R, n.id)
 }
 
 function eE(e) {
@@ -254,7 +254,7 @@ function eE(e) {
     }
     v.default.track(I.rMx.APP_USER_DEAUTHENTICATED, {
       user_id: c.K.get(R)
-    }), eO(), setImmediate(() => (0, m.uL)(I.Z5c.DEFAULT_LOGGED_OUT))
+    }), eO(), setImmediate(() => (0, g.uL)(I.Z5c.DEFAULT_LOGGED_OUT))
   }
 }
 
@@ -270,12 +270,12 @@ function eb(e) {
   let {
     authSessionIdHash: t
   } = e;
-  null != t && (w = t)
+  null != t && (D = t)
 }
 
 function ey() {
   U = !0, eO(), u.Z.wait(() => {
-    (0, m.uL)(I.Z5c.REGISTER)
+    (0, g.uL)(I.Z5c.REGISTER)
   })
 }
 
@@ -286,7 +286,7 @@ function eO(e) {
   null !== (t = null == e ? void 0 : e.isSwitchingAccount) && void 0 !== t && t || (n && J(), Q()), s.ZP.PersistedStore.clearAll({
     omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore"],
     type: (null == e ? void 0 : e.isSwitchingAccount) ? "user-data-only" : "all"
-  }), S.Z.clearAll(), h.ZH(), y.Z.clearUser(), c.K.remove(R), P = null, D = null, j = (null == e ? void 0 : e.isSwitchingAccount) ? I.u34.LOGGING_IN : I.u34.NONE, B = "", F = null, V = !1, K = !1, z = !1
+  }), S.Z.clearAll(), h.ZH(), y.Z.clearUser(), c.K.remove(R), P = null, w = null, j = (null == e ? void 0 : e.isSwitchingAccount) ? I.u34.LOGGING_IN : I.u34.NONE, B = "", F = null, V = !1, K = !1, z = !1
 }
 
 function eS() {
@@ -308,11 +308,11 @@ function eN(e) {
   let {
     suspendedUserToken: t
   } = e;
-  K = !1, Y = t, setImmediate(() => (0, m.uL)(I.Z5c.ACCOUNT_STANDING))
+  K = !1, Y = t, setImmediate(() => (0, g.uL)(I.Z5c.ACCOUNT_STANDING))
 }
 
 function eA() {
-  Y = null, j = I.u34.NONE, eO(), setImmediate(() => (0, m.uL)(I.Z5c.DEFAULT_LOGGED_OUT))
+  Y = null, j = I.u34.NONE, eO(), setImmediate(() => (0, g.uL)(I.Z5c.DEFAULT_LOGGED_OUT))
 }
 class eC extends(i = s.ZP.Store) {
   initialize() {
@@ -325,10 +325,10 @@ class eC extends(i = s.ZP.Store) {
     return P
   }
   getSessionId() {
-    return D
+    return w
   }
   getAuthSessionIdHash() {
-    return w
+    return D
   }
   getStaticAuthSessionId() {
     return L
@@ -384,8 +384,8 @@ class eC extends(i = s.ZP.Store) {
 }
 N(eC, "displayName", "AuthenticationStore");
 let eR = new eC(u.Z, {
-  CONNECTION_OPEN: eg,
-  OVERLAY_INITIALIZE: em,
+  CONNECTION_OPEN: em,
+  OVERLAY_INITIALIZE: eg,
   CONNECTION_CLOSED: eE,
   AUTH_SESSION_CHANGE: eb,
   LOGIN: et,

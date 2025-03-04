@@ -18,8 +18,8 @@ function f(e) {
     isTryItOut: t,
     analyticsLocations: n,
     guildId: f
-  } = e, _ = (0, i.e7)([u.default], () => u.default.getCurrentUser()), p = (0, i.e7)([l.ZP], () => null != f && null != _ ? l.ZP.getMember(f, _.id) : null), h = null != p ? p.avatarDecoration : null == _ ? void 0 : _.avatarDecoration, g = (0, o.Z)(n), {
-    pendingAvatar: m,
+  } = e, _ = (0, i.e7)([u.default], () => u.default.getCurrentUser()), p = (0, i.e7)([l.ZP], () => null != f && null != _ ? l.ZP.getMember(f, _.id) : null), h = null != p ? p.avatarDecoration : null == _ ? void 0 : _.avatarDecoration, m = (0, o.Z)(n), {
+    pendingAvatar: g,
     pendingAvatarV2: E,
     pendingAvatarDecoration: v,
     pendingErrors: b
@@ -29,10 +29,10 @@ function f(e) {
     pendingAvatarDecoration: t ? c.Z.getTryItOutAvatarDecoration() : null != f ? a.Z.getPendingAvatarDecoration() : c.Z.getPendingAvatarDecoration(),
     pendingErrors: null != f ? a.Z.getErrors().avatarDecoration : c.Z.getErrors().avatarDecoration
   })), y = (0, r.useCallback)(e => (0, s.Jw)(e, null == _ ? void 0 : _.avatar), [null == _ ? void 0 : _.avatar]), O = (0, r.useCallback)(e => (0, s.RZ)(e, null == _ ? void 0 : _.avatar), [null == _ ? void 0 : _.avatar]), S = (0, r.useCallback)(e => {
-    (0, s.PO)(f, e), null != e && g(e)
-  }, [g, f]);
+    (0, s.PO)(f, e), null != e && m(e)
+  }, [m, f]);
   return {
-    pendingAvatar: m,
+    pendingAvatar: g,
     pendingAvatarV2: E,
     pendingAvatarDecoration: v,
     setPendingAvatar: t ? d.c_ : y,

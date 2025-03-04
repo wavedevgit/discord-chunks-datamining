@@ -4,9 +4,9 @@ n.d(t, {
   Dz: () => h,
   Nj: () => v,
   RS: () => b,
-  by: () => m,
+  by: () => g,
   eI: () => _,
-  f6: () => g,
+  f6: () => m,
   i0: () => y,
   ib: () => p,
   og: () => O
@@ -98,7 +98,7 @@ function h() {
   })
 }
 
-function g() {
+function m() {
   let e = o.Z.getPayPalClient();
   if (null == e) throw Error("braintree paypal client must be initialized before calling this");
   i.Z.dispatch({
@@ -143,7 +143,7 @@ function g() {
   })
 }
 
-function m() {
+function g() {
   let e = o.Z.getVenmoClient();
   if (null == e) throw Error("Braintree Venmo client must be initialized before calling tokenize.");
   i.Z.dispatch({
@@ -196,11 +196,11 @@ function b() {
 
 function y() {
   let e = o.Z.getLastURL();
-  null == e ? g() : (i.Z.dispatch({
+  null == e ? m() : (i.Z.dispatch({
     type: "BRAINTREE_TOKENIZE_PAYPAL_START"
   }), window.open(e))
 }
 
 function O() {
-  m()
+  g()
 }

@@ -14,7 +14,7 @@ n.d(t, {
   MY: () => eY,
   N1: () => eb,
   PK: () => eP,
-  PV: () => eg,
+  PV: () => em,
   Px: () => en,
   Qo: () => eW,
   Rd: () => Q,
@@ -70,8 +70,8 @@ var s = n(782568),
   _ = n(351402),
   p = n(853872),
   h = n(509545),
-  g = n(78839),
-  m = n(122289),
+  m = n(78839),
+  g = n(122289),
   E = n(55935),
   v = n(70956),
   b = n(424218),
@@ -94,7 +94,7 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -107,7 +107,7 @@ function D(e) {
   return e
 }
 
-function w(e, t) {
+function D(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -119,7 +119,7 @@ function w(e, t) {
 }
 
 function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -159,7 +159,7 @@ function V(e) {
   let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     i = null !== (t = p.Z.defaultPaymentSourceId) && void 0 !== t ? t : void 0,
-    o = g.ZP.getPremiumTypeSubscription();
+    o = m.ZP.getPremiumTypeSubscription();
   return null != o && null != o.paymentSourceId && (i = o.paymentSourceId), F(e, n, r, {
     paymentSourceId: i
   })
@@ -183,7 +183,7 @@ function F(e) {
     });
     if (null == a) {
       let t = Error("Couldn't find price");
-      throw (0, m.q2)(t, {
+      throw (0, g.q2)(t, {
         extra: {
           paymentSourceId: i
         },
@@ -197,12 +197,12 @@ function F(e) {
     return a
   }
   let a = Error("Plan not found");
-  throw (0, m.q2)(a, {
+  throw (0, g.q2)(a, {
     tags: {
       planId: e,
       currency: null != o ? o : "unknown"
     },
-    extra: L(D({}, r), {
+    extra: L(w({}, r), {
       isGift: n
     })
   }), a
@@ -212,7 +212,7 @@ function Z(e, t) {
   let n = h.Z.get(e);
   if (null == n) {
     let n = Error("Plan not found");
-    throw (0, m.q2)(n, {
+    throw (0, g.q2)(n, {
       tags: {
         planId: e,
         purchaseType: t.toString()
@@ -237,7 +237,7 @@ function H(e) {
     if (null == i) {
       k.info("Payment sources IDs: ".concat(JSON.stringify(Object.keys(r.paymentSourcePrices)))), k.info("prices: ".concat(i));
       let o = Error("Missing prices for payment source on subscription plan");
-      (0, m.q2)(o, {
+      (0, g.q2)(o, {
         extra: {
           paymentSourceId: t
         },
@@ -251,7 +251,7 @@ function H(e) {
   if (null == r.countryPrices.prices) {
     k.info("countryPrices: ".concat(JSON.stringify(r.countryPrices)));
     let t = Error("Missing prices for country");
-    throw (0, m.q2)(t, {
+    throw (0, g.q2)(t, {
       tags: {
         countryCode: r.countryPrices.countryCode,
         planId: e
@@ -282,7 +282,7 @@ function Y(e) {
     intervalCount: t.intervalCount
   };
   let n = Error("Unsupported plan");
-  throw (0, m.q2)(n, {
+  throw (0, g.q2)(n, {
     tags: {
       planId: e
     }
@@ -348,7 +348,7 @@ function Q(e) {
   let t = A.GP[e];
   if (null != t) return t.premiumType;
   let n = Error("Unsupported plan");
-  throw (0, m.q2)(n, {
+  throw (0, g.q2)(n, {
     tags: {
       planId: e
     }
@@ -398,7 +398,7 @@ function X(e) {
       return R.NW.string(R.t.LtJgTE)
   }
   let i = Error("Unsupported plan");
-  throw (0, m.q2)(i, {
+  throw (0, g.q2)(i, {
     tags: {
       planId: e
     }
@@ -415,7 +415,7 @@ function J(e) {
       return R.NW.string(R.t["lG6a5+"])
   }
   let t = Error("Unsupported sku");
-  throw (0, m.q2)(t, {
+  throw (0, g.q2)(t, {
     tags: {
       skuId: e
     }
@@ -437,7 +437,7 @@ function $(e) {
       return R.NW.string(R.t["lG6a5+"])
   }
   let t = Error("Unsupported plan");
-  throw (0, m.q2)(t, {
+  throw (0, g.q2)(t, {
     tags: {
       planId: e
     }
@@ -466,7 +466,7 @@ function et(e) {
       return "Nitro"
   }
   let n = Error("Unsupported plan");
-  throw (0, m.q2)(n, {
+  throw (0, g.q2)(n, {
     tags: {
       planId: e
     }
@@ -490,25 +490,25 @@ function er(e) {
   let {
     subscription: p,
     planId: h,
-    price: g,
-    includePremiumGuilds: m,
+    price: m,
+    includePremiumGuilds: g,
     hasDiscountApplied: v,
     activeDiscountInfo: b,
     renewalInvoicePreview: y,
     hasFractionalPremiumWithSub: O
-  } = e, S = A.GP[h], I = tO(V(S.id), S.interval), N = eL(p) || null == p.paymentSourceId && !p.isPurchasedExternally && !(null === (t = f.default.getCurrentUser()) || void 0 === t ? void 0 : t.hasFreePremium()), C = null != g && null == p.paymentGateway, P = p.status === T.O0b.UNPAID && null !== p.latestInvoice && (null === (n = p.latestInvoice) || void 0 === n ? void 0 : n.status) === T.hUK.OPEN, D = N ? T.O0b.CANCELED : P ? T.O0b.UNPAID : p.status, w = null === (o = null !== (i = null == y ? void 0 : y.taxInclusive) && void 0 !== i ? i : null === (r = p.latestInvoice) || void 0 === r ? void 0 : r.taxInclusive) || void 0 === o || o, L = A.cb + (m ? ef(p.additionalPlans) : 0), x = C ? w ? R.NW.format(R.t["cd+hqK"], {
-    price: g
+  } = e, S = A.GP[h], I = tO(V(S.id), S.interval), N = eL(p) || null == p.paymentSourceId && !p.isPurchasedExternally && !(null === (t = f.default.getCurrentUser()) || void 0 === t ? void 0 : t.hasFreePremium()), C = null != m && null == p.paymentGateway, P = p.status === T.O0b.UNPAID && null !== p.latestInvoice && (null === (n = p.latestInvoice) || void 0 === n ? void 0 : n.status) === T.hUK.OPEN, w = N ? T.O0b.CANCELED : P ? T.O0b.UNPAID : p.status, D = null === (o = null !== (i = null == y ? void 0 : y.taxInclusive) && void 0 !== i ? i : null === (r = p.latestInvoice) || void 0 === r ? void 0 : r.taxInclusive) || void 0 === o || o, L = A.cb + (g ? ef(p.additionalPlans) : 0), x = C ? D ? R.NW.format(R.t["cd+hqK"], {
+    price: m
   }) : R.NW.format(R.t.NUkcpK, {
-    price: g
-  }) : R.NW.string(R.t.zYx3Y2), M = C ? w ? R.NW.format(R.t.VsKcFB, {
-    price: g
+    price: m
+  }) : R.NW.string(R.t.zYx3Y2), M = C ? D ? R.NW.format(R.t.VsKcFB, {
+    price: m
   }) : R.NW.format(R.t.hJ5xER, {
-    price: g
-  }) : R.NW.string(R.t["8rSipK"]), k = C ? w ? R.NW.format(R.t["jRy6/P"], {
-    price: g,
+    price: m
+  }) : R.NW.string(R.t["8rSipK"]), k = C ? D ? R.NW.format(R.t["jRy6/P"], {
+    price: m,
     num: L
   }) : R.NW.format(R.t.tTNE8P, {
-    price: g,
+    price: m,
     num: L
   }) : R.NW.format(R.t["U+z/HB"], {
     num: L
@@ -516,18 +516,18 @@ function er(e) {
   switch (h) {
     case A.Xh.PREMIUM_MONTH_TIER_0:
     case A.Xh.PREMIUM_YEAR_TIER_0:
-      switch (D) {
+      switch (w) {
         case T.O0b.CANCELED:
-          return C ? w ? R.NW.format(R.t["USi/nZ"], {
-            price: g
+          return C ? D ? R.NW.format(R.t["USi/nZ"], {
+            price: m
           }) : R.NW.format(R.t["FS//l5"], {
-            price: g
+            price: m
           }) : R.NW.string(R.t.JshLzs);
         case T.O0b.ACCOUNT_HOLD:
-          return C ? w ? R.NW.format(R.t["5mv+2t"], {
-            price: g
+          return C ? D ? R.NW.format(R.t["5mv+2t"], {
+            price: m
           }) : R.NW.format(R.t.nkAEfX, {
-            price: g
+            price: m
           }) : R.NW.format(R.t.SsLIXV, {});
         case T.O0b.UNPAID:
           return R.NW.format(R.t.cmkbFB, {});
@@ -556,18 +556,18 @@ function er(e) {
       }
     case A.Xh.PREMIUM_MONTH_TIER_1:
     case A.Xh.PREMIUM_YEAR_TIER_1:
-      switch (D) {
+      switch (w) {
         case T.O0b.CANCELED:
-          return C ? w ? R.NW.format(R.t.cXy8Bg, {
-            price: g
+          return C ? D ? R.NW.format(R.t.cXy8Bg, {
+            price: m
           }) : R.NW.format(R.t["C/XsHh"], {
-            price: g
+            price: m
           }) : R.NW.string(R.t.K6tYFR);
         case T.O0b.ACCOUNT_HOLD:
-          return C ? w ? R.NW.format(R.t.HBkIBg, {
-            price: g
+          return C ? D ? R.NW.format(R.t.HBkIBg, {
+            price: m
           }) : R.NW.format(R.t.ZsO1S0, {
-            price: g
+            price: m
           }) : R.NW.format(R.t["0+/WHx"], {});
         case T.O0b.UNPAID:
           return R.NW.format(R.t.McIzws, {});
@@ -598,23 +598,23 @@ function er(e) {
     case A.Xh.PREMIUM_YEAR_TIER_2:
     case A.Xh.PREMIUM_3_MONTH_TIER_2:
     case A.Xh.PREMIUM_6_MONTH_TIER_2:
-      switch (D) {
+      switch (w) {
         case T.O0b.CANCELED:
-          return C ? w ? R.NW.format(R.t.xoFgRk, {
-            price: g,
+          return C ? D ? R.NW.format(R.t.xoFgRk, {
+            price: m,
             num: L
           }) : R.NW.format(R.t.nXdbKi, {
-            price: g,
+            price: m,
             num: L
           }) : R.NW.format(R.t.EcSdRE, {
             num: L
           });
         case T.O0b.ACCOUNT_HOLD:
-          return C ? w ? R.NW.format(R.t["5C/0QE"], {
-            price: g,
+          return C ? D ? R.NW.format(R.t["5C/0QE"], {
+            price: m,
             num: L
           }) : R.NW.format(R.t.xfYkho, {
-            price: g,
+            price: m,
             num: L
           }) : R.NW.format(R.t.ivjxcn, {
             num: L
@@ -651,7 +651,7 @@ function er(e) {
           return v ? h === A.Xh.PREMIUM_YEAR_TIER_2 ? R.NW.format(R.t["+qqh6u"], {
             percent: null !== (l = null == b ? void 0 : b.percentage) && void 0 !== l ? l : A.Bo,
             regularPrice: I
-          }) : w ? R.NW.formatToPlainString(R.t["3Ziutb"], {
+          }) : D ? R.NW.formatToPlainString(R.t["3Ziutb"], {
             percent: null !== (c = null == b ? void 0 : b.percentage) && void 0 !== c ? c : A.M_,
             regularPrice: I,
             numMonths: null !== (u = null == b ? void 0 : b.duration) && void 0 !== u ? u : A.rt
@@ -765,7 +765,7 @@ function el(e) {
   let t = A.GP[e];
   if (null == t) {
     let t = Error("Unsupported plan");
-    throw (0, m.q2)(t, {
+    throw (0, g.q2)(t, {
       tags: {
         planId: e
       }
@@ -826,11 +826,11 @@ function eh(e) {
   return A.Z1.has(e)
 }
 
-function eg(e) {
+function em(e) {
   return ep(e) || eh(e)
 }
 
-function em(e) {
+function eg(e) {
   return Q(e) === A.p9.TIER_2 ? A.cb : 0
 }
 
@@ -1075,7 +1075,7 @@ function eP(e, t, n) {
   return (0, I.og)(r, e.interval, e.intervalCount)
 }
 
-function eD(e, t) {
+function ew(e, t) {
   let {
     planId: n
   } = e;
@@ -1090,7 +1090,7 @@ function eD(e, t) {
   return null == r || (0, d.Q0)(r.subscriptionPlanId) ? e.planId : null != e.renewalMutations && e.renewalMutations.planId !== e.planId ? e.planId : r.subscriptionPlanId
 }
 
-function ew(e, t) {
+function eD(e, t) {
   let {
     status: n
   } = e;
@@ -1142,7 +1142,7 @@ function ek(e, t, n, r) {
     o = h.Z.get(e);
   if (null == o) {
     let t = Error("Unsupported plan");
-    throw (0, m.q2)(t, {
+    throw (0, g.q2)(t, {
       tags: {
         planId: e
       }
@@ -1151,7 +1151,7 @@ function ek(e, t, n, r) {
   let a = h.Z.getForSkuAndInterval(tS(A.Si.GUILD), o.interval, o.intervalCount);
   if (null == a) {
     let t = Error("Unsupported plan");
-    throw (0, m.q2)(t, {
+    throw (0, g.q2)(t, {
       tags: {
         planId: e
       }
@@ -1216,7 +1216,7 @@ function eU(e, t, n) {
       return R.NW.string(R.t.eUEeCg)
   }
   let i = Error("User is purchasing an unsupported plan");
-  throw (0, m.q2)(i, {
+  throw (0, g.q2)(i, {
     tags: {
       planId: r
     }
@@ -1360,7 +1360,7 @@ function eY(e, t) {
     o = (null !== (r = null === (n = e.renewalMutations) || void 0 === n ? void 0 : n.items) && void 0 !== r ? r : e.items).find(e => A.dJ.has(e.planId));
   return null != o && i.push(o), i.push(...t), i.map(t => {
     for (let n of e.items)
-      if (t.planId === n.planId) return D({}, n, t);
+      if (t.planId === n.planId) return w({}, n, t);
     return t
   })
 }
@@ -1373,7 +1373,7 @@ function ez(e, t, n, r) {
   var o, a;
   i()(r.has(t), "Expected planId in group");
   let s = !1,
-    l = (null !== (a = null === (o = e.renewalMutations) || void 0 === o ? void 0 : o.items) && void 0 !== a ? a : e.items).map(e => r.has(e.planId) ? (s = !0, L(D({}, e), {
+    l = (null !== (a = null === (o = e.renewalMutations) || void 0 === o ? void 0 : o.items) && void 0 !== a ? a : e.items).map(e => r.has(e.planId) ? (s = !0, L(w({}, e), {
       quantity: n,
       planId: t
     })) : e);
@@ -1406,7 +1406,7 @@ function eX(e) {
       let r = h.Z.get(e.planId);
       i()(null != r, "Missing plan");
       let o = h.Z.getForSkuAndInterval(r.skuId, t.interval, t.intervalCount);
-      return i()(null != o, "Missing planForInterval"), L(D({}, e), {
+      return i()(null != o, "Missing planForInterval"), L(w({}, e), {
         planId: o.id
       })
     })
@@ -1547,11 +1547,11 @@ function th(e) {
   return (0, c.ks)(c.$0, e)
 }
 
-function tg(e) {
+function tm(e) {
   return (0, c.ks)(c.ME, e)
 }
 
-function tm(e) {
+function tg(e) {
   return (0, c.ks)(c.AN, e)
 }
 
@@ -1641,15 +1641,15 @@ let tP = Object.freeze({
   getUserMaxFileSize: O.h,
   getSkuIdForPlan: el,
   getSkuIdForPremiumType: ec,
-  getNumIncludedPremiumGuildSubscriptionSlots: em,
+  getNumIncludedPremiumGuildSubscriptionSlots: eg,
   getBillingInformationString: ev,
   extendDateWithUnconsumedFractionalPremium: eb,
   getUnactivatedFractionalPremiumHoursString: ey,
   isSwitchingPlansDisabled: eO,
   getSwitchingPlansDisabledMessage: eS,
   isNoneSubscription: d.Q0,
-  getPlanIdFromInvoice: eD,
-  getStatusFromInvoice: ew,
+  getPlanIdFromInvoice: ew,
+  getStatusFromInvoice: eD,
   isBaseSubscriptionCanceled: eL,
   getPremiumGuildIntervalPrice: ek,
   hasAccountCredit: ej,
@@ -1685,8 +1685,8 @@ let tP = Object.freeze({
   canUseClientThemes: t_,
   canStreamQuality: tp,
   hasFreeBoosts: th,
-  canUseCustomStickersEverywhere: tg,
-  canUseCustomBackgrounds: tm,
+  canUseCustomStickersEverywhere: tm,
+  canUseCustomBackgrounds: tg,
   canUseCollectibles: tE,
   canUseCustomNotificationSounds: tv,
   canUsePremiumVoiceFilters: tb,

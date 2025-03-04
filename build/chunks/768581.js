@@ -5,14 +5,14 @@ n.d(t, {
   $k: () => O,
   CA: () => L,
   F8: () => ee,
-  JM: () => w,
+  JM: () => D,
   NZ: () => k,
   ZP: () => en,
   aN: () => M,
   ay: () => J,
   ff: () => v,
   gT: () => C,
-  ov: () => D,
+  ov: () => w,
   pK: () => b,
   pU: () => er,
   rI: () => z,
@@ -40,7 +40,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +53,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,7 +65,7 @@ function m(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -141,7 +141,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   var t;
   let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : f.IXf,
@@ -149,7 +149,7 @@ function D(e) {
   return null !== (t = P(e, n, r, i)) && void 0 !== t ? t : R(e.id, e.discriminator, e.isProvisional)
 }
 
-function w(e) {
+function D(e) {
   let t, {
       guildId: n,
       userId: r,
@@ -172,7 +172,7 @@ function L(e) {
     avatar: n,
     guildId: r
   } = e, i = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-  return null == n ? null : w({
+  return null == n ? null : D({
     userId: t,
     avatar: n,
     guildId: r,
@@ -441,10 +441,10 @@ function et(e) {
   }
 }
 let en = {
-  getUserAvatarURL: D,
+  getUserAvatarURL: w,
   getDefaultAvatarURL: R,
   getGuildMemberAvatarURL: L,
-  getGuildMemberAvatarURLSimple: w,
+  getGuildMemberAvatarURLSimple: D,
   getGuildMemberAvatarSource: x,
   getGuildMemberBannerURL: j,
   getUserBannerURL: M,
@@ -453,7 +453,7 @@ let en = {
     return X(null == e ? void 0 : e.icon)
   },
   isAnimatedIconHash: X,
-  getUserAvatarSource: (e, t, n) => et(D(e, t, n)),
+  getUserAvatarSource: (e, t, n) => et(w(e, t, n)),
   getGuildIconURL: H,
   getGuildSplashURL: U,
   getGuildSplashSource: G,
@@ -511,7 +511,7 @@ let en = {
     if (!(0, u.isAndroid)() || !e || "number" == typeof n) return n;
     {
       let e = t(!1);
-      return "number" != typeof e && e.uri === n.uri ? e : [n, E(g({}, e), {
+      return "number" != typeof e && e.uri === n.uri ? e : [n, E(m({}, e), {
         isForceCached: !0
       })]
     }

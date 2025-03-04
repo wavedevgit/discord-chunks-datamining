@@ -35,7 +35,7 @@ var c = function() {
   } : null),
   p = {},
   h = "undefined" != typeof Uint8Array && _ ? _(Uint8Array) : r,
-  g = {
+  m = {
     "%AggregateError%": "undefined" == typeof AggregateError ? r : AggregateError,
     "%Array%": Array,
     "%ArrayBuffer%": "undefined" == typeof ArrayBuffer ? r : ArrayBuffer,
@@ -106,8 +106,8 @@ var c = function() {
 if (_) try {
   null.error
 } catch (e) {
-  var m = _(_(e));
-  g["%Error.prototype%"] = m
+  var g = _(_(e));
+  m["%Error.prototype%"] = g
 }
 var E = function e(t) {
     var n;
@@ -121,7 +121,7 @@ var E = function e(t) {
       var i = e("%AsyncGenerator%");
       i && _ && (n = _(i.prototype))
     }
-    return g[t] = n, n
+    return m[t] = n, n
   },
   v = {
     "%ArrayBufferPrototype%": ["ArrayBuffer", "prototype"],
@@ -197,8 +197,8 @@ var E = function e(t) {
   },
   P = function(e, t) {
     var n, r = e;
-    if (y(v, r) && (r = "%" + (n = v[r])[0] + "%"), y(g, r)) {
-      var o = g[r];
+    if (y(v, r) && (r = "%" + (n = v[r])[0] + "%"), y(m, r)) {
+      var o = m[r];
       if (o === p && (o = E(r)), void 0 === o && !t) throw new a("intrinsic " + e + " exists, but is not available. Please file an issue!");
       return {
         alias: n,
@@ -223,9 +223,9 @@ e.exports = function(e, t) {
   for (var f = 1, _ = !0; f < n.length; f += 1) {
     var p = n[f],
       h = T(p, 0, 1),
-      m = T(p, -1);
-    if (('"' === h || "'" === h || "`" === h || '"' === m || "'" === m || "`" === m) && h !== m) throw new i("property names with quotes must have matching quotes");
-    if ("constructor" !== p && _ || (u = !0), r += "." + p, y(g, s = "%" + r + "%")) c = g[s];
+      g = T(p, -1);
+    if (('"' === h || "'" === h || "`" === h || '"' === g || "'" === g || "`" === g) && h !== g) throw new i("property names with quotes must have matching quotes");
+    if ("constructor" !== p && _ || (u = !0), r += "." + p, y(m, s = "%" + r + "%")) c = m[s];
     else if (null != c) {
       if (!(p in c)) {
         if (!t) throw new a("base intrinsic for " + e + " exists, but the property is not available.");
@@ -235,7 +235,7 @@ e.exports = function(e, t) {
         var E = l(c, p);
         c = (_ = !!E) && "get" in E && !("originalValue" in E.get) ? E.get : c[p]
       } else _ = y(c, p), c = c[p];
-      _ && !u && (g[s] = c)
+      _ && !u && (m[s] = c)
     }
   }
   return c

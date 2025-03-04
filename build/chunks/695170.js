@@ -16,7 +16,7 @@ n.d(t, {
   qb: () => f,
   t2: () => i,
   wz: () => v,
-  zU: () => g
+  zU: () => m
 });
 var r = n(686942),
   i = function(e, t, n, r, i, o) {
@@ -45,10 +45,10 @@ var r = n(686942),
   h = function(e) {
     return p(e, l)
   },
-  g = function(e) {
+  m = function(e) {
     return new Date(l.getTime() + e * a)
   },
-  m = function(e) {
+  g = function(e) {
     var t = e.getUTCMonth();
     return 1 === t && u(e.getUTCFullYear()) ? 29 : o[t]
   },
@@ -57,7 +57,7 @@ var r = n(686942),
   },
   v = function(e, t) {
     var n = i(e, t + 1, 1);
-    return [E(n), m(n)]
+    return [E(n), g(n)]
   },
   b = function(e, t) {
     return t = t || e, new Date(Date.UTC(e.getUTCFullYear(), e.getUTCMonth(), e.getUTCDate(), t.getHours(), t.getMinutes(), t.getSeconds(), t.getMilliseconds()))

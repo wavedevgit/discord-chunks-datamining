@@ -17,7 +17,7 @@ var r = n(264344),
   p = n(65154),
   h = n(149396);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,14 +26,14 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -271,8 +271,8 @@ class O extends a.Z {
       useVideoHook: f,
       useGraphicsCapture: _,
       useQuartzCapturer: p,
-      allowScreenCaptureKit: g,
-      hdrCaptureMode: m
+      allowScreenCaptureKit: m,
+      hdrCaptureMode: g
     } = e.desktopDescription;
     n.setOnClipsRecordingEvent(t => {
       this.logger.info("Clips recording event: ".concat(h.Pf[t], " received for stream ").concat(l, " and sound ").concat(c, ".")), t === h.Pf.GoLiveEnded ? this.emit(s.aB.ClipsRecordingRestartNeeded) : t === h.Pf.Error ? this.emit(s.aB.ClipsInitFailure, "Failed to set clips source in media engine", e.applicationName) : (t === h.Pf.Ended || t === h.Pf.StoppedByGoLive) && this.emit(s.aB.ClipsRecordingEnded, l, c)
@@ -280,8 +280,8 @@ class O extends a.Z {
       useVideoHook: f,
       useGraphicsCapture: _,
       useQuartzCapturer: p,
-      allowScreenCaptureKit: g,
-      hdrCaptureMode: m,
+      allowScreenCaptureKit: m,
+      hdrCaptureMode: g,
       soundshareLoopback: u,
       frameRate: r,
       width: o,
@@ -308,7 +308,7 @@ class O extends a.Z {
   getScreenPreviews(e, t) {
     return new Promise(n => {
       null != (0, d.zS)().getScreenPreviews ? (0, d.zS)().getScreenPreviews(e, t, e => {
-        n(e.map((e, t) => v(m({}, e), {
+        n(e.map((e, t) => v(g({}, e), {
           name: "Screen " + (t + 1)
         })))
       }) : n([])
@@ -548,19 +548,19 @@ class O extends a.Z {
   }
   constructor() {
     var e, t, n, r, i, a;
-    super(), e = this, g(this, "Video", _.Z), g(this, "Camera", f.Z), g(this, "videoInputDeviceId", h.Av), g(this, "connections", new Set), g(this, "lastVoiceActivity", -1), g(this, "audioSubsystem", "standard"), g(this, "audioLayer", ""), g(this, "deviceChangeGeneration", 0), g(this, "consecutiveWatchdogFailures", 0), g(this, "codecSurvey", null), g(this, "logger", new o.Yd("MediaEngineNative")), g(this, "handleDeviceChange", function() {
+    super(), e = this, m(this, "Video", _.Z), m(this, "Camera", f.Z), m(this, "videoInputDeviceId", h.Av), m(this, "connections", new Set), m(this, "lastVoiceActivity", -1), m(this, "audioSubsystem", "standard"), m(this, "audioLayer", ""), m(this, "deviceChangeGeneration", 0), m(this, "consecutiveWatchdogFailures", 0), m(this, "codecSurvey", null), m(this, "logger", new o.Yd("MediaEngineNative")), m(this, "handleDeviceChange", function() {
       let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
         n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
         r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [];
       e.deviceChangeGeneration++, e.emit(s.aB.DeviceChange, (0, u.C1)(h.h7.AUDIO_INPUT, t), (0, u.C1)(h.h7.AUDIO_OUTPUT, n), (0, u.C1)(h.h7.VIDEO_INPUT, r))
-    }), g(this, "handleVolumeChange", (e, t) => {
+    }), m(this, "handleVolumeChange", (e, t) => {
       this.emit(s.aB.VolumeChange, e * h.Qx, t * h.Qx)
-    }), g(this, "handleVoiceActivity", (e, t) => {
+    }), m(this, "handleVoiceActivity", (e, t) => {
       let n = Date.now();
       this.listenerCount(s.aB.VoiceActivity) > 0 && (-1 === this.lastVoiceActivity || Date.now() - this.lastVoiceActivity > 20) && (this.lastVoiceActivity = n, this.emit(s.aB.VoiceActivity, e, t))
-    }), g(this, "handleActiveSinksChange", (e, t) => {
+    }), m(this, "handleActiveSinksChange", (e, t) => {
       this.connections.forEach(n => n.setHasActiveVideoOutputSink(e, t, "MediaEngineNative.handleActiveSinksChange"))
-    }), g(this, "handleNewListener", e => {
+    }), m(this, "handleNewListener", e => {
       switch (e) {
         case s.aB.VoiceActivity:
           null != (0, d.zS)().setEmitVADLevel2 ? (0, d.zS)().setEmitVADLevel2(!0) : (0, d.zS)().setEmitVADLevel(!0, !1, {});
@@ -572,19 +572,19 @@ class O extends a.Z {
             t === this.deviceChangeGeneration && this.emit(s.aB.DeviceChange, n, r, i)
           })
       }
-    }), g(this, "handleRemoveListener", e => {
+    }), m(this, "handleRemoveListener", e => {
       e === s.aB.VoiceActivity && (null != (0, d.zS)().setEmitVADLevel2 ? (0, d.zS)().setEmitVADLevel2(this.listenerCount(s.aB.VoiceActivity) > 0) : (0, d.zS)().setEmitVADLevel(this.listenerCount(s.aB.VoiceActivity) > 0, !1, {}))
-    }), g(this, "handleVideoInputInitialization", e => {
+    }), m(this, "handleVideoInputInitialization", e => {
       this.emit(s.aB.VideoInputInitialized, e)
-    }), g(this, "handleAudioInputInitialization", e => {
+    }), m(this, "handleAudioInputInitialization", e => {
       this.emit(s.aB.AudioInputInitialized, e)
-    }), g(this, "handleNativeScreenSharePickerUpdate", e => {
+    }), m(this, "handleNativeScreenSharePickerUpdate", e => {
       this.emit(s.aB.NativeScreenSharePickerUpdate, e)
-    }), g(this, "handleNativeScreenSharePickerCancel", e => {
+    }), m(this, "handleNativeScreenSharePickerCancel", e => {
       this.emit(s.aB.NativeScreenSharePickerCancel, e)
-    }), g(this, "handleNativeScreenSharePickerError", e => {
+    }), m(this, "handleNativeScreenSharePickerError", e => {
       this.emit(s.aB.NativeScreenSharePickerError, e)
-    }), g(this, "handleAudioDeviceModuleErrorCallback", (e, t) => {
+    }), m(this, "handleAudioDeviceModuleErrorCallback", (e, t) => {
       -100 !== e && this.emit(s.aB.AudioDeviceModuleError, "RustAudioDeviceModule", e, t)
     });
     let c = (0, d.zS)();

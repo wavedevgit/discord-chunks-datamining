@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(100527),
   p = n(906732),
   h = n(570220),
-  g = n(686546),
-  m = n(28546),
+  m = n(686546),
+  g = n(28546),
   E = n(285651),
   v = n(926491),
   b = n(373228),
@@ -31,9 +31,9 @@ var r = n(200651),
   C = n(278754),
   R = n(981631),
   P = n(388032),
-  D = n(879254);
+  w = n(879254);
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -49,7 +49,7 @@ function L(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
@@ -109,27 +109,27 @@ function Z(e) {
   } = d, p = k(d, ["tabIndex"]);
   return (0, r.jsxs)(f.P3F, M(L({}, p), {
     tabIndex: n ? -1 : _,
-    className: a()(D.suggestedExpression, {
-      [D.suggestedExpressionFocused]: t
+    className: a()(w.suggestedExpression, {
+      [w.suggestedExpressionFocused]: t
     }),
     focusProps: {
       enabled: !1
     },
     onClick: () => u(l, i),
     onMouseOver: c,
-    children: [(0, r.jsx)(g.ZP, {
-      mask: g.ZP.Masks.STICKER_ROUNDED_RECT,
+    children: [(0, r.jsx)(m.ZP, {
+      mask: m.ZP.Masks.STICKER_ROUNDED_RECT,
       width: B + U,
       height: B + U,
-      className: D.mask,
+      className: w.mask,
       children: (0, r.jsx)("div", {
-        className: D.maskBackground
+        className: w.maskBackground
       })
     }), (0, r.jsx)(O.ZP, {
       maskAsset: !0,
       size: B,
       sticker: l,
-      className: D.__invalid_sticker
+      className: w.__invalid_sticker
     }), i !== E.eb.SENDABLE && (0, r.jsx)(S.Z, {
       size: 14
     })]
@@ -192,7 +192,7 @@ let W = i.memo(function(e) {
     onSelectSticker: c,
     stickerIconVisible: u = !1,
     submitButtonVisible: d = !1
-  } = e, g = i.useContext(h.ZP), [O, S] = i.useState(null), [w, x] = i.useState(!1), [j, U] = i.useState(null), G = (0, m.Iu)(e => null != e.activeView), B = i.useRef(null), [F, W] = i.useState(""), [Y, K] = i.useState(""), [z, q] = i.useState(!1), [Q, X] = i.useState(!1), J = (0, N.Z)(F, w, o), {
+  } = e, m = i.useContext(h.ZP), [O, S] = i.useState(null), [D, x] = i.useState(!1), [j, U] = i.useState(null), G = (0, g.Iu)(e => null != e.activeView), B = i.useRef(null), [F, W] = i.useState(""), [Y, K] = i.useState(""), [z, q] = i.useState(!1), [Q, X] = i.useState(!1), J = (0, N.Z)(F, D, o), {
     analyticsLocations: $
   } = (0, p.ZP)(_.Z.EXPRESSION_SUGGESTIONS), {
     handleTextChange: ee,
@@ -214,10 +214,10 @@ let W = i.memo(function(e) {
           S(null), null === (r = n.current) || void 0 === r || r.focus()
         }
       };
-    return g.addListener("text-changed", ee), g.addListener("autocomplete-visibility-change", e), g.addListener("selection-changed", t), () => {
-      g.removeListener("text-changed", ee), g.removeListener("autocomplete-visibility-change", e), g.removeListener("selection-changed", t)
+    return m.addListener("text-changed", ee), m.addListener("autocomplete-visibility-change", e), m.addListener("selection-changed", t), () => {
+      m.removeListener("text-changed", ee), m.removeListener("autocomplete-visibility-change", e), m.removeListener("selection-changed", t)
     }
-  }, [ee, n, g]), i.useLayoutEffect(() => {
+  }, [ee, n, m]), i.useLayoutEffect(() => {
     null == O && U(null)
   }, [O]);
   let [en, er] = i.useState(!1);
@@ -228,7 +228,7 @@ let W = i.memo(function(e) {
     })
   }, [l]);
   let ei = J.length > 0,
-    eo = en && !G && !z && !w && !Q && ei,
+    eo = en && !G && !z && !D && !Q && ei,
     {
       stickersNavigator: ea
     } = H({
@@ -254,14 +254,14 @@ let W = i.memo(function(e) {
             analyticsLocations: $
           })
         }
-        g.emit("sticker-suggestions-hidden")
+        m.emit("sticker-suggestions-hidden")
       }
     },
     el = i.useRef([]),
     ec = i.useRef(!1);
   i.useEffect(() => {
-    eo && (el.current = J), eo !== ec.current && (g.emit(eo ? "sticker-suggestions-shown" : "sticker-suggestions-hidden"), eo && ((0, A.Tk)(F), K(F))), ec.current = eo
-  }, [g, eo, J, F]);
+    eo && (el.current = J), eo !== ec.current && (m.emit(eo ? "sticker-suggestions-shown" : "sticker-suggestions-hidden"), eo && ((0, A.Tk)(F), K(F))), ec.current = eo
+  }, [m, eo, J, F]);
   let eu = !eo,
     ed = eo ? J : el.current;
   return (0, r.jsx)(p.Gt, {
@@ -269,10 +269,10 @@ let W = i.memo(function(e) {
     children: (0, r.jsxs)(f.P3F, {
       tabIndex: eu ? -1 : 0,
       "aria-hidden": eu,
-      className: a()(D.container, {
-        [D.hidden]: eu,
-        [D.submitButtonOffset]: d,
-        [D.stickerIconOffset]: u
+      className: a()(w.container, {
+        [w.hidden]: eu,
+        [w.submitButtonOffset]: d,
+        [w.stickerIconOffset]: u
       }),
       innerRef: B,
       style: {
@@ -292,7 +292,7 @@ let W = i.memo(function(e) {
                 tabIndex: n
               } = e, i = k(e, ["ref", "tabIndex"]);
               return (0, r.jsx)("div", M(L({
-                className: D.stickerResults,
+                className: w.stickerResults,
                 ref: e => {
                   t.current = e
                 },
@@ -322,13 +322,13 @@ let W = i.memo(function(e) {
             }
           })
         }), (0, r.jsxs)("div", {
-          className: D.bottomInformationTextContainer,
+          className: w.bottomInformationTextContainer,
           children: [(0, r.jsx)("div", {
-            className: D.textDivider
+            className: w.textDivider
           }), (0, r.jsxs)("div", {
-            className: D.bottomInformationLayout,
+            className: w.bottomInformationLayout,
             children: [(0, r.jsx)(f.Text, {
-              className: D.descriptionText,
+              className: w.descriptionText,
               style: {
                 maxWidth: V
               },
@@ -338,7 +338,7 @@ let W = i.memo(function(e) {
               }) : P.NW.format(P.t["8DjNnJ"], {
                 upHook: (e, t) => (0, r.jsx)(f.M2$, {
                   shortcut: "up",
-                  className: D.keybind
+                  className: w.keybind
                 }, t)
               })
             }), (0, r.jsx)(f.P3F, {
@@ -356,14 +356,14 @@ let W = i.memo(function(e) {
                   size: "md",
                   color: "currentColor"
                 }, e), {
-                  className: D.closeIcon
+                  className: w.closeIcon
                 }))
               })
             })]
           })]
         })]
       }), (0, r.jsx)("div", {
-        className: D.containerBackground
+        className: w.containerBackground
       })]
     })
   })

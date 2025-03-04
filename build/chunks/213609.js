@@ -17,9 +17,9 @@ var r = n(192379),
   _ = n(914010),
   p = n(626135),
   h = n(367907),
-  g = n(565384);
+  m = n(565384);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -35,7 +35,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -71,22 +71,22 @@ function O(e) {
       type: o,
       properties: a
     } = e;
-  if (e.type === l.ImpressionTypes.MODAL && null == e.name && (0, g.Ez)().some(e => {
+  if (e.type === l.ImpressionTypes.MODAL && null == e.name && (0, m.Ez)().some(e => {
       var t;
       return null === (t = e._stackContext) || void 0 === t ? void 0 : t.isSlide
     })) return;
-  (0, g.Ps)(e);
+  (0, m.Ps)(e);
   let s = null !== (t = null == a ? void 0 : a.guild_id) && void 0 !== t ? t : _.Z.getGuildId(),
     c = null !== (n = null == a ? void 0 : a.channel_id) && void 0 !== n ? n : f.Z.getChannelId(s),
     u = (0, p.expandEventProperties)(E({
       impression_type: o,
-      location: (0, g.k$)()
+      location: (0, m.k$)()
     }, (0, h.hH)(s), (0, h.v_)(d.Z.getChannel(c)), a));
   if (r) {
-    (0, g.dT)(null, null);
+    (0, m.dT)(null, null);
     return
   }
-  null != i && null != o && ((0, p.debugLogEvent)(i, u), y(i, u)), (0, g.dT)(i, u)
+  null != i && null != o && ((0, p.debugLogEvent)(i, u), y(i, u)), (0, m.dT)(i, u)
 }
 
 function S(e) {
@@ -106,7 +106,7 @@ function S(e) {
         sequenceId: s()("impression_")
       });
       return O(c, t.disableTrack), () => {
-        null != c && (0, g.dw)(c)
+        null != c && (0, m.dw)(c)
       }
     };
   (0, u.ZP)(() => {

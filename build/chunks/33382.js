@@ -1,6 +1,6 @@
 /** Chunk was on web.js **/
 var r = n(660566);
-e.exports = E, e.exports.parse = o, e.exports.compile = a, e.exports.tokensToFunction = c, e.exports.tokensToRegExp = m;
+e.exports = E, e.exports.parse = o, e.exports.compile = a, e.exports.tokensToFunction = c, e.exports.tokensToRegExp = g;
 var i = RegExp("(\\\\.)|([\\/.])?(?:(?:\\:(\\w+)(?:\\(((?:\\\\.|[^\\\\()])+)\\))?|\\(((?:\\\\.|[^\\\\()])+)\\))([+*?])?|(\\*))", "g");
 
 function o(e, t) {
@@ -14,8 +14,8 @@ function o(e, t) {
     }
     var p = e[a],
       h = n[2],
-      g = n[3],
-      m = n[4],
+      m = n[3],
+      g = n[4],
       E = n[5],
       v = n[6],
       b = n[7];
@@ -24,9 +24,9 @@ function o(e, t) {
       O = "+" === v || "*" === v,
       S = "?" === v || "*" === v,
       I = n[2] || l,
-      T = m || E;
+      T = g || E;
     r.push({
-      name: g || o++,
+      name: m || o++,
       prefix: h || "",
       delimiter: I,
       optional: S,
@@ -128,11 +128,11 @@ function h(e, t, n) {
   return f(RegExp("(?:" + r.join("|") + ")", _(n)), t)
 }
 
-function g(e, t, n) {
-  return m(o(e, n), t, n)
+function m(e, t, n) {
+  return g(o(e, n), t, n)
 }
 
-function m(e, t, n) {
+function g(e, t, n) {
   r(t) || (n = t || n, t = []);
   for (var i = (n = n || {}).strict, o = !1 !== n.end, a = "", s = 0; s < e.length; s++) {
     var l = e[s];
@@ -149,5 +149,5 @@ function m(e, t, n) {
 }
 
 function E(e, t, n) {
-  return (r(t) || (n = t || n, t = []), n = n || {}, e instanceof RegExp) ? p(e, t) : r(e) ? h(e, t, n) : g(e, t, n)
+  return (r(t) || (n = t || n, t = []), n = n || {}, e instanceof RegExp) ? p(e, t) : r(e) ? h(e, t, n) : m(e, t, n)
 }

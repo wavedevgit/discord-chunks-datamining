@@ -47,12 +47,12 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = new r.Yd("MessageRoundtripTrackerStore");
+let g = new r.Yd("MessageRoundtripTrackerStore");
 
 function E(e) {
   return null != e.apiResponseTimestamp && null != e.gatewaySeenTimestamp
@@ -61,14 +61,14 @@ function E(e) {
 function v(e) {
   let t = l.Z.getBasicChannel(e.channelId);
   if (null == t) {
-    m.warn("Ignoring a messageData for channel ".concat(e.channelId, " because we can't find that channel."));
+    g.warn("Ignoring a messageData for channel ".concat(e.channelId, " because we can't find that channel."));
     return
   }
   if (Math.random() > .1) return;
   let n = null == e.apiResponseTimestamp ? null : e.apiResponseTimestamp - e.initialSendTimestamp,
     r = null == e.gatewaySeenTimestamp ? null : e.gatewaySeenTimestamp - e.initialSendTimestamp,
     i = (0, s.d)();
-  d.default.track(f.rMx.SEND_MESSAGE_ROUNDTRIP, p(g(p({}, (0, a.Z)()), {
+  d.default.track(f.rMx.SEND_MESSAGE_ROUNDTRIP, p(m(p({}, (0, a.Z)()), {
     api_latency_ms: n,
     gateway_latency_ms: r,
     channel_id: t.id,
@@ -104,7 +104,7 @@ class y extends i.ZP.Store {
   recordMessageSendApiResponse(e) {
     let t = this.pendingMessages.get(e);
     if (null != t) {
-      let n = g(p({}, t), {
+      let n = m(p({}, t), {
         apiResponseTimestamp: Date.now()
       });
       E(n) ? (v(n), this.pendingMessages.delete(e)) : this.pendingMessages.set(e, n)
@@ -113,7 +113,7 @@ class y extends i.ZP.Store {
   recordGatewayResponse(e) {
     let t = this.pendingMessages.get(e);
     if (null != t) {
-      let n = g(p({}, t), {
+      let n = m(p({}, t), {
         gatewaySeenTimestamp: Date.now()
       });
       E(n) ? (v(n), this.pendingMessages.delete(e)) : this.pendingMessages.set(e, n)

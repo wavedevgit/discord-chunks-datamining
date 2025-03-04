@@ -57,16 +57,16 @@ function l(e) {
         relevance: n
       }
     },
-    g = {
+    m = {
       $pattern: /[a-z-]+/,
       keyword: "and or not only",
       attribute: r.join(" ")
     },
-    m = {
+    g = {
       begin: "\\(",
       end: "\\)",
       contains: _,
-      keywords: g,
+      keywords: m,
       relevance: 0
     };
   _.push(e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, p("'"), p('"'), l.CSS_NUMBER_MODE, {
@@ -76,7 +76,7 @@ function l(e) {
       end: "[\\)\\n]",
       excludeEnd: !0
     }
-  }, l.HEXCOLOR, m, h("variable", "@@?" + u, 10), h("variable", "@\\{" + u + "\\}"), h("built_in", "~?`[^`]*?`"), {
+  }, l.HEXCOLOR, g, h("variable", "@@?" + u, 10), h("variable", "@\\{" + u + "\\}"), h("built_in", "~?`[^`]*?`"), {
     className: "attribute",
     begin: u + "\\s*:",
     end: ":",
@@ -121,7 +121,7 @@ function l(e) {
       begin: "@(import|media|charset|font-face|(-[a-z]+-)?keyframes|supports|document|namespace|page|viewport|host)\\b",
       starts: {
         end: "[;{}]",
-        keywords: g,
+        keywords: m,
         returnEnd: !0,
         contains: _,
         relevance: 0

@@ -16,8 +16,8 @@ var r = n(46973),
   _ = n(959457),
   p = n(704806),
   h = n(626135),
-  g = n(358085),
-  m = n(924557),
+  m = n(358085),
+  g = n(924557),
   E = n(435064),
   v = n(894694),
   b = n(779618),
@@ -40,7 +40,7 @@ class T extends o.Z {
       state: n,
       streamKey: i
     } = e;
-    if (!(0, m.ln)() || n !== O.hes.RTC_CONNECTED) return;
+    if (!(0, g.ln)() || n !== O.hes.RTC_CONNECTED) return;
     let o = u.default.getId();
     if (t === r.Yn.DEFAULT) return this.applyUserVoiceRecording(o);
     if (t === r.Yn.STREAM && null != i) {
@@ -98,7 +98,7 @@ class T extends o.Z {
   }
   handlePostConnectionOpen() {
     if ((0, b.Z)(d.Z)) {
-      if (this.applyNativeClipsSettings(), !(0, m.ln)()) {
+      if (this.applyNativeClipsSettings(), !(0, g.ln)()) {
         E.Z.getSettings().clipsEnabled && this.disableClips();
         return
       }(null == E.Z.getHardwareClassification() || null == E.Z.getHardwareClassificationForDecoupled() || E.Z.getHardwareClassificationVersion() !== y.WM) && this.classifyHardwareAndTrack().then(e => {
@@ -163,12 +163,12 @@ class T extends o.Z {
     }
   }
   classifyHardware(e) {
-    if ((0, g.isWindows)()) {
+    if ((0, m.isWindows)()) {
       let t = e.some(e => y.mg.test(e)),
         n = e.some(e => y.nU.test(e));
       return t ? v.x.MEETS_AUTO_ENABLE : n ? v.x.MEETS_MINIMUM : v.x.BELOW_MINIMUM
     }
-    return (0, g.isMac)() ? "arm64" === a.Z.remoteApp.getAppArch() ? v.x.MEETS_AUTO_ENABLE : v.x.MEETS_MINIMUM : v.x.UNKNOWN
+    return (0, m.isMac)() ? "arm64" === a.Z.remoteApp.getAppArch() ? v.x.MEETS_AUTO_ENABLE : v.x.MEETS_MINIMUM : v.x.UNKNOWN
   }
   applyUserVoiceRecording(e) {
     if (!(0, b.Z)(d.Z)) return;
@@ -186,7 +186,7 @@ class T extends o.Z {
     if (u.default.getId() === e) {
       let {
         clipsEnabled: n
-      } = E.Z.getSettings(), r = (0, m.ln)();
+      } = E.Z.getSettings(), r = (0, g.ln)();
       t.setClipRecordUser(e, "audio", r && n), t.setClipRecordUser(e, "video", r && n);
       return
     }

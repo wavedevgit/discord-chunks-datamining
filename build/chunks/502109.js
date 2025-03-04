@@ -17,9 +17,9 @@ var r = n(200651),
   _ = n(622999),
   p = n(981631),
   h = n(388032),
-  g = n(17310);
+  m = n(17310);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -35,7 +35,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -151,7 +151,7 @@ class T extends i.Component {
       i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s.zxk.Looks.FILLED;
     return null !== (t = this.props.loadingComponent) && void 0 !== t ? t : (0, r.jsx)(s.zxk, {
       color: n,
-      className: null !== (e = this.props.className) && void 0 !== e ? e : g.button,
+      className: null !== (e = this.props.className) && void 0 !== e ? e : m.button,
       submitting: !0,
       look: i
     })
@@ -164,13 +164,13 @@ class T extends i.Component {
       a = y(e, ["iconType", "buttonText"]);
     return (0, r.jsx)(s.zxk, b(E({
       onClick: this.attemptPaymentRequest,
-      className: null !== (t = this.props.className) && void 0 !== t ? t : g.button,
+      className: null !== (t = this.props.className) && void 0 !== t ? t : m.button,
       submitting: this.state.submitting
     }, a), {
       children: (0, r.jsxs)("div", {
-        className: g.centerContainer,
+        className: m.centerContainer,
         children: [(0, r.jsx)(c.ZP, {
-          className: null !== (n = this.props.iconClassName) && void 0 !== n ? n : g.buttonIcon,
+          className: null !== (n = this.props.iconClassName) && void 0 !== n ? n : m.buttonIcon,
           type: i
         }), o]
       })
@@ -182,10 +182,10 @@ class T extends i.Component {
       children: [(0, r.jsx)(c.ZP, {
         type: c.ZP.Types.PAYMENT_REQUEST,
         size: c.Uy.MEDIUM,
-        className: g.paymentRequestIcon
+        className: m.paymentRequestIcon
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/medium",
-        className: g.connectionInstructions,
+        className: m.connectionInstructions,
         children: h.NW.string(h.t.f19PPT)
       })]
     })
@@ -206,11 +206,11 @@ class T extends i.Component {
     return e ? this.renderMain() : null
   }
   constructor(...e) {
-    super(...e), m(this, "initialState", {
+    super(...e), g(this, "initialState", {
       submitting: !0,
       paymentRequest: null,
       canMakePaymentResult: null
-    }), m(this, "state", E({}, this.initialState)), m(this, "disableWallets", []), m(this, "initPaymentRequest", async e => {
+    }), g(this, "state", E({}, this.initialState)), g(this, "disableWallets", []), g(this, "initPaymentRequest", async e => {
       if (null == e) return;
       this.setState({
         submitting: !0,
@@ -249,7 +249,7 @@ class T extends i.Component {
       }, () => {
         this.initPaymentRequestCallback(r)
       }), r
-    }), m(this, "attemptPaymentRequest", () => {
+    }), g(this, "attemptPaymentRequest", () => {
       if ((0, f.isDesktop)()) {
         this.props.onChooseType(p.HeQ.PAYMENT_REQUEST, this.paymentRequestWallet);
         return
@@ -309,10 +309,10 @@ class N extends T {
       children: [(0, r.jsx)(c.ZP, {
         type: c.ZP.Types.G_PAY,
         size: c.Uy.MEDIUM,
-        className: g.paymentRequestIcon
+        className: m.paymentRequestIcon
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/medium",
-        className: g.connectionInstructions,
+        className: m.connectionInstructions,
         children: h.NW.string(h.t.ueoGeX)
       })]
     })
@@ -325,7 +325,7 @@ class N extends T {
     })
   }
   constructor(...e) {
-    super(...e), m(this, "state", E({}, this.initialState)), m(this, "paymentRequestWallet", "googlePay")
+    super(...e), g(this, "state", E({}, this.initialState)), g(this, "paymentRequestWallet", "googlePay")
   }
 }
 class A extends T {
@@ -369,10 +369,10 @@ class A extends T {
       children: [(0, r.jsx)(c.ZP, {
         type: c.ZP.Types.APPLE,
         size: c.Uy.MEDIUM,
-        className: a()(g.paymentRequestIcon, g.appleConnectorIcon)
+        className: a()(m.paymentRequestIcon, m.appleConnectorIcon)
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/medium",
-        className: g.connectionInstructions,
+        className: m.connectionInstructions,
         children: h.NW.string(h.t.iv8pQU)
       })]
     })
@@ -385,6 +385,6 @@ class A extends T {
     })
   }
   constructor(...e) {
-    super(...e), m(this, "state", E({}, this.initialState)), m(this, "paymentRequestWallet", "applePay")
+    super(...e), g(this, "state", E({}, this.initialState)), g(this, "paymentRequestWallet", "applePay")
   }
 }

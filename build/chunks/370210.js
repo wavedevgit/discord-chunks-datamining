@@ -54,7 +54,7 @@ let f = {},
   p = new Set,
   h = {};
 
-function g(e) {
+function m(e) {
   let {
     applicationId: t
   } = e;
@@ -63,7 +63,7 @@ function g(e) {
   })
 }
 
-function m(e) {
+function g(e) {
   let {
     application: t
   } = e;
@@ -120,7 +120,7 @@ class v extends(r = i.ZP.Store) {
 }
 s(v, "displayName", "ApplicationDirectoryApplicationsStore");
 let b = new v(o.Z, {
-  APPLICATION_DIRECTORY_FETCH_APPLICATION: g,
-  APPLICATION_DIRECTORY_FETCH_APPLICATION_SUCCESS: m,
+  APPLICATION_DIRECTORY_FETCH_APPLICATION: m,
+  APPLICATION_DIRECTORY_FETCH_APPLICATION_SUCCESS: g,
   APPLICATION_DIRECTORY_FETCH_APPLICATION_FAILURE: E
 })

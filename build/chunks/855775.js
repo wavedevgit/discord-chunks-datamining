@@ -50,8 +50,8 @@ function f(e, t) {
 let _ = "no_payment_source",
   p = null,
   h = null,
-  g = null,
   m = null,
+  g = null,
   E = null,
   v = {},
   b = null,
@@ -69,17 +69,17 @@ function R(e) {
 }
 
 function P(e) {
-  R(), p = e.skuId, g = e.applicationId, I = e.isIAP, m = e.analyticsLocation, A = e.context, N = e.isGift, T = !0, S = !1, r = e.resolve, i = e.reject, O = null, b = null, E = e.promotionId
+  R(), p = e.skuId, m = e.applicationId, I = e.isIAP, g = e.analyticsLocation, A = e.context, N = e.isGift, T = !0, S = !1, r = e.resolve, i = e.reject, O = null, b = null, E = e.promotionId
 }
 
-function D(e) {
+function w(e) {
   let {
     error: t
   } = e;
   T = !1, A = null, R(t)
 }
 
-function w(e) {
+function D(e) {
   let {
     skuId: t
   } = e;
@@ -173,10 +173,10 @@ class Z extends(o = a.ZP.Store) {
     return p
   }
   get applicationId() {
-    return g
+    return m
   }
   get analyticsLocation() {
-    return m
+    return g
   }
   get promotionId() {
     return E
@@ -197,8 +197,8 @@ class Z extends(o = a.ZP.Store) {
 c(Z, "displayName", "SKUPaymentModalStore");
 let H = new Z(s.Z, {
   SKU_PURCHASE_MODAL_OPEN: P,
-  SKU_PURCHASE_MODAL_CLOSE: D,
-  SKU_PURCHASE_PREVIEW_FETCH: w,
+  SKU_PURCHASE_MODAL_CLOSE: w,
+  SKU_PURCHASE_PREVIEW_FETCH: D,
   SKU_PURCHASE_PREVIEW_FETCH_SUCCESS: L,
   SKU_PURCHASE_PREVIEW_FETCH_FAILURE: x,
   SKU_PURCHASE_START: M,

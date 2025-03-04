@@ -5,13 +5,13 @@ n.d(t, {
   Dx: () => O,
   EJ: () => L,
   Ee: () => I,
-  Hh: () => w,
+  Hh: () => D,
   II: () => R,
   MC: () => C,
   Vj: () => A,
   ZP: () => k,
   gO: () => P,
-  i_: () => D,
+  i_: () => w,
   jQ: () => x,
   qE: () => N,
   v6: () => M,
@@ -31,9 +31,9 @@ var i = n(120356),
   _ = n(63063),
   p = n(981631),
   h = n(388032),
-  g = n(363005);
+  m = n(363005);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -49,7 +49,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -83,7 +83,7 @@ let O = e => {
     return (0, r.jsx)(a.X6q, {
       variant: "heading-xl/semibold",
       color: "header-primary",
-      className: o()(g.title, t),
+      className: o()(m.title, t),
       id: n,
       children: i
     })
@@ -108,7 +108,7 @@ let O = e => {
     return (0, r.jsx)("img", {
       alt: "",
       src: n,
-      className: o()(g.image, t)
+      className: o()(m.image, t)
     })
   },
   T = e => {
@@ -120,8 +120,8 @@ let O = e => {
       size: i ? a.zxk.Sizes.MIN : a.zxk.Sizes.LARGE,
       fullWidth: !i,
       className: o()(t, {
-        [g.button]: !i,
-        [g.linkButton]: i
+        [m.button]: !i,
+        [m.linkButton]: i
       })
     }, n))
   };
@@ -135,7 +135,7 @@ let N = e => {
     return (0, r.jsx)(y, {
       src: n,
       size: i,
-      className: o()(g.inviteLargeIcon, t),
+      className: o()(m.inviteLargeIcon, t),
       "aria-hidden": !0
     })
   },
@@ -164,7 +164,7 @@ let C = e => {
   return (0, r.jsx)(y, {
     src: (0, s.x)(n),
     size: i,
-    className: o()(g.inviteIcon, t),
+    className: o()(m.inviteIcon, t),
     "aria-hidden": !0
   })
 };
@@ -182,7 +182,7 @@ let R = e => {
       onChange: _,
       autoComplete: p,
       autoFocus: h,
-      maxLength: m,
+      maxLength: g,
       spellCheck: E,
       name: v,
       description: b,
@@ -204,20 +204,20 @@ let R = e => {
         inputRef: d,
         placeholder: i,
         inputClassName: o()(c, {
-          [g.inputError]: null != n
+          [m.inputError]: null != n
         }),
         "aria-label": t,
         onChange: _,
         autoComplete: p,
         autoFocus: h,
-        maxLength: m,
+        maxLength: g,
         spellCheck: E,
         id: I,
         onFocus: O,
         onBlur: S
       }), null != b ? (0, r.jsx)(a.R94, {
         type: a.R94.Types.DESCRIPTION,
-        className: g.description,
+        className: m.description,
         children: b
       }) : null]
     })
@@ -228,22 +228,22 @@ let R = e => {
       children: n
     } = e;
     return (0, r.jsx)("div", {
-      className: o()(g.block, t),
+      className: o()(m.block, t),
       children: n
     })
   },
-  D = e => {
+  w = e => {
     let {
       className: t,
       children: n
     } = e;
     return (0, r.jsx)(a.Text, {
       variant: "text-xs/normal",
-      className: o()(g.subText, t),
+      className: o()(m.subText, t),
       children: n
     })
   },
-  w = e => {
+  D = e => {
     let {
       className: t
     } = e;
@@ -252,7 +252,7 @@ let R = e => {
       align: c.Z.Align.CENTER,
       className: t,
       children: (0, r.jsx)(l.Z, {
-        className: g.spinnerVideo
+        className: m.spinnerVideo
       })
     })
   },
@@ -265,9 +265,9 @@ let R = e => {
       textClassName: u
     } = e;
     return null == i ? null : (null != n && n > 0 && (t = (0, r.jsxs)("div", {
-      className: o()(g.pill, g.pillOnline, l && g.pillFlat),
+      className: o()(m.pill, m.pillOnline, l && m.pillFlat),
       children: [(0, r.jsx)("i", {
-        className: g.pillIconOnline
+        className: m.pillIconOnline
       }), (0, r.jsx)(a.Text, {
         tag: "span",
         className: u,
@@ -281,9 +281,9 @@ let R = e => {
       justify: c.Z.Justify.CENTER,
       className: s,
       children: [t, (0, r.jsxs)("div", {
-        className: o()(g.pill, l && g.pillFlat),
+        className: o()(m.pill, l && m.pillFlat),
         children: [(0, r.jsx)("i", {
-          className: g.pillIconTotal
+          className: m.pillIconTotal
         }), (0, r.jsx)(a.Text, {
           tag: "span",
           className: u,
@@ -301,19 +301,19 @@ let R = e => {
       user: t
     } = e;
     return null == t ? null : (0, r.jsxs)("div", {
-      className: g.joiningAs,
+      className: m.joiningAs,
       children: [(0, r.jsx)(a.Text, {
         tag: "span",
         variant: "text-md/normal",
         color: "header-secondary",
         children: h.NW.string(h.t["/8WWvL"])
       }), (0, r.jsx)(N, {
-        className: g.joiningAsAvatar,
+        className: m.joiningAsAvatar,
         src: t.getAvatarURL(void 0, 24),
         size: a.EFr.SIZE_24,
         "aria-label": t.username
       }), (0, r.jsx)(a.Text, {
-        className: g.joiningAsUsername,
+        className: m.joiningAsUsername,
         tag: "span",
         variant: "text-md/semibold",
         color: "header-primary",
@@ -332,8 +332,8 @@ let R = e => {
         children: h.NW.format(h.t.JoS1i4, {
           platform: (0, f.DW)()
         })
-      }), (0, r.jsx)(D, {
-        className: g.downloadButtonSubtext,
+      }), (0, r.jsx)(w, {
+        className: m.downloadButtonSubtext,
         children: h.NW.format(h.t.wO1VBg, {
           supportedBrowserURL: _.Z.getArticleURL(p.BhN.SUPPORTED_BROWSERS)
         })
@@ -358,11 +358,11 @@ let R = e => {
         "data-disable-adaptive-theme": !0,
         onSubmit: s,
         style: d,
-        className: o()(c ? g.authBoxExpanded : g.authBox, e, t),
+        className: o()(c ? m.authBoxExpanded : m.authBox, e, t),
         children: [(0, r.jsx)("div", {
-          className: g.discordLogo
+          className: m.discordLogo
         }), (0, r.jsx)("div", {
-          className: o()(g.centeringWrapper, n),
+          className: o()(m.centeringWrapper, n),
           children: l
         })]
       })

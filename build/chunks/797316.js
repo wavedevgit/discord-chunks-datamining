@@ -15,8 +15,8 @@ var i, o = n(392711),
   _ = n(662594),
   p = n(433355),
   h = n(592125),
-  g = n(486472),
-  m = n(271383),
+  m = n(486472),
+  g = n(271383),
   E = n(430824),
   v = n(19780),
   b = n(699516),
@@ -33,7 +33,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 let T = new c.ZP(e => {
-  for (let t in e) null != E.Z.getGuild(t) || g.Z.isUnavailable(t) || delete e[t];
+  for (let t in e) null != E.Z.getGuild(t) || m.Z.isUnavailable(t) || delete e[t];
   l.Z.dispatch({
     type: "GUILD_SUBSCRIPTIONS_FLUSH",
     subscriptions: e
@@ -83,7 +83,7 @@ function P() {
   N(!1, !1)
 }
 
-function D(e) {
+function w(e) {
   let {
     idle: t
   } = e;
@@ -91,7 +91,7 @@ function D(e) {
   N(!1, !0)
 }
 
-function w() {
+function D() {
   T.reset()
 }
 
@@ -172,7 +172,7 @@ function F(e) {
     guildId: t,
     channelId: n
   } = e;
-  return !g.Z.isUnavailable(t) && A(t, n)
+  return !m.Z.isUnavailable(t) && A(t, n)
 }
 
 function Z() {
@@ -201,7 +201,7 @@ function Y() {
       userId: t
     } = e;
     if (null != r && r.userId === t || b.Z.isFriend(t)) return !1;
-    let n = m.ZP.memberOf(t);
+    let n = g.ZP.memberOf(t);
     if (0 === n.length) return !1;
     let [i] = n;
     r = {
@@ -245,8 +245,8 @@ let q = new z(l.Z, {
   CONNECTION_OPEN: R,
   CONNECTION_RESUMED: R,
   CONNECTION_CLOSED: P,
-  IDLE: D,
-  LOGOUT: w,
+  IDLE: w,
+  LOGOUT: D,
   VOICE_CHANNEL_SELECT: F,
   CHANNEL_SELECT: F,
   GUILD_CREATE: L,

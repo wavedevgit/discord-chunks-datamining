@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.r(t), n.d(t, {
-  default: () => m
+  default: () => g
 }), n(411104), n(301563), n(26686);
 var r = n(836560),
   i = n(525654),
@@ -20,7 +20,7 @@ function f(e, t) {
 let _ = a.parse(location.search.slice(1)),
   p = parseInt(null != _.rpc && "" !== _.rpc ? _.rpc : u.V6Z, 10),
   h = null;
-class g extends r.EventEmitter {
+class m extends r.EventEmitter {
   get port() {
     return p
   }
@@ -145,4 +145,4 @@ class g extends r.EventEmitter {
     return window.open("http://127.0.0.1:".concat(this.port, "/rpc?v=").concat(u.X6Q, "&payload=").concat(r, "&callback=").concat(i), "_self"), new Promise(() => null)
   }
 }
-let m = new g
+let g = new m

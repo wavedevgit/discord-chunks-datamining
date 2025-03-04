@@ -38,8 +38,8 @@ function p(e, t) {
   return n
 }
 let h = 5,
-  g = /\.webp($|\?|#)/i,
-  m = /\.avif($|\?|#)/i,
+  m = /\.webp($|\?|#)/i,
+  g = /\.avif($|\?|#)/i,
   E = [16, 20, 22, 24, 28, 32, 40, 44, 48, 56, 60, 64, 80, 96, 100, 128, 160, 240, 256, 300, 320, 480, 512, 600, 640, 1024, 1280, 1536, 2048, 3072, 4096],
   v = 4096,
   b = new(a())({
@@ -144,7 +144,7 @@ function C(e) {
   } = e;
   if (t.startsWith("data:image")) return t;
   let [_, p] = A(t);
-  null != l && (p.format = l), null != u && (p.quality = u), d && f && (g.test(t) || m.test(t)) && (p.animated = !0), m.test(t) && (p.format = "webp");
+  null != l && (p.format = l), null != u && (p.quality = u), d && f && (m.test(t) || g.test(t)) && (p.animated = !0), g.test(t) && (p.format = "webp");
   let h = (0, c.Tj)({
     width: o,
     height: a,

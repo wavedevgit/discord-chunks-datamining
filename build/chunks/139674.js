@@ -22,9 +22,9 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let h = "BlockedDomainStore",
-  g = "BlockedDomainRevision";
+  m = "BlockedDomainRevision";
 
-function m(e) {
+function g(e) {
   let {
     list: t,
     revision: n
@@ -35,13 +35,13 @@ function m(e) {
 }
 class E extends(o = a.ZP.Store) {
   initialize() {
-    i = null, s.K.get(h) && (s.K.remove(g), s.K.remove(h))
+    i = null, s.K.get(h) && (s.K.remove(m), s.K.remove(h))
   }
   getCurrentRevision() {
     if (!(0, d.isDesktop)()) return null;
     if (null == i) {
       var e;
-      i = null !== (e = s.K.get(g)) && void 0 !== e ? e : null
+      i = null !== (e = s.K.get(m)) && void 0 !== e ? e : null
     }
     return i
   }
@@ -70,5 +70,5 @@ class E extends(o = a.ZP.Store) {
 }
 p(E, "displayName", "BlockedDomainStore");
 let v = new E(l.Z, {
-  BLOCKED_DOMAIN_LIST_FETCHED: m
+  BLOCKED_DOMAIN_LIST_FETCHED: g
 })

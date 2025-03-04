@@ -15,13 +15,13 @@ n.d(t, {
   k3: () => N,
   kb: () => A,
   n: () => _,
-  oi: () => m,
+  oi: () => g,
   pw: () => S,
   rk: () => O,
   tB: () => b,
   uo: () => T,
   vD: () => v,
-  x3: () => g
+  x3: () => m
 }), n(266796);
 var r = n(592125),
   i = n(823379),
@@ -36,8 +36,8 @@ let s = 7,
   _ = 1,
   p = 30,
   h = 200,
-  g = 7;
-var m = function(e) {
+  m = 7;
+var g = function(e) {
   return e[e.VIEW = 0] = "VIEW", e[e.CHAT = 1] = "CHAT", e
 }({});
 

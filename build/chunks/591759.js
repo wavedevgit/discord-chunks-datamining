@@ -16,9 +16,9 @@ let u = /(?:^|\.)(?:discordapp|discord|discordmerch)\.com$/i,
   _ = i().v4().source,
   p = "(?:[a-z\\u00a1-\\uffff0-9-_]+\\.)+",
   h = "(?:(?:[a-z\\u00a1-\\uffff]{2,}))",
-  g = "(?::\\d{2,5})?",
-  m = '(?:[/?#][^\\s"]*)?',
-  E = RegExp("(?:".concat(d, "|www\\.)").concat(f, "(?:localhost|").concat(_, "|").concat(p).concat(h, ")").concat(g).concat(m), "ig"),
+  m = "(?::\\d{2,5})?",
+  g = '(?:[/?#][^\\s"]*)?',
+  E = RegExp("(?:".concat(d, "|www\\.)").concat(f, "(?:localhost|").concat(_, "|").concat(p).concat(h, ")").concat(m).concat(g), "ig"),
   v = new Set([window.GLOBAL_ENV.CDN_HOST, window.GLOBAL_ENV.INVITE_HOST, window.GLOBAL_ENV.GIFT_CODE_HOST, window.GLOBAL_ENV.GUILD_TEMPLATE_HOST]),
   b = !1;
 

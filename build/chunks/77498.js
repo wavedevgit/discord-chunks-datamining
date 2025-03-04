@@ -22,8 +22,8 @@ function _(e, t, n) {
 }
 let p = "GameStoreReportedGames",
   h = 0x80000000,
-  g = new c.Z,
-  m = {},
+  m = new c.Z,
+  g = {},
   E = {},
   v = null !== (i = s.K.get(p)) && void 0 !== i ? i : {},
   b = "",
@@ -62,7 +62,7 @@ function S(e) {
 
 function I(e) {
   let t = e instanceof d.ZP ? S(e) : e;
-  for (let n of (g.set(e.id, t), m[e.name.toLowerCase()] = t, e.aliases)) m[n.toLowerCase()] = t;
+  for (let n of (m.set(e.id, t), g[e.name.toLowerCase()] = t, e.aliases)) g[n.toLowerCase()] = t;
   if ((0, f.isDesktop)())
     for (let n of e.executables) E[n.name] = t
 }
@@ -98,22 +98,22 @@ class R extends(o = a.ZP.PersistedStore) {
   getState() {
     return (0, f.isDesktop)() ? {
       detectableGamesEtag: b,
-      detectableGames: g.values()
+      detectableGames: m.values()
     } : {
       detectableGamesEtag: "",
       detectableGames: []
     }
   }
   get games() {
-    return g.values()
+    return m.values()
   }
   getDetectableGame(e) {
-    return g.get(e)
+    return m.get(e)
   }
   getGameByName(e) {
     if (null == e) return null;
     let t = e.toLowerCase();
-    return Object.prototype.hasOwnProperty.call(m, t) ? m[t] : null
+    return Object.prototype.hasOwnProperty.call(g, t) ? g[t] : null
   }
   isGameInDatabase(e) {
     return null != this.getGameByName(e.name) || void 0 !== e.nativeProcessObserverId && (e.nativeProcessObserverId & h) == 0

@@ -4,12 +4,12 @@ n.d(t, {
   DH: () => N,
   HD: () => d,
   PD: () => A,
-  P_: () => m,
+  P_: () => g,
   X8: () => f,
   hj: () => S,
   qT: () => C,
   qc: () => I,
-  sS: () => g,
+  sS: () => m,
   tY: () => _
 }), n(47120);
 var r = n(615287),
@@ -44,7 +44,7 @@ function h(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   switch (e) {
     case i.Jx.BORDERLESS_FULLSCREEN:
       return "Borderless Fullscreen";
@@ -61,7 +61,7 @@ function g(e) {
   }
 }
 
-function m(e) {
+function g(e) {
   switch (e) {
     case r.gl.OutOfProcess:
       return "Out of Process";

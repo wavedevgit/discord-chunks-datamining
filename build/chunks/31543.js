@@ -19,7 +19,7 @@ let p = i.forwardRef(function(e, t) {
     onKeyDown: n,
     stickersListRef: p,
     channel: h
-  } = e, g = (0, u.fQ)(h), m = i.useRef(null), {
+  } = e, m = (0, u.fQ)(h), g = i.useRef(null), {
     searchQuery: E,
     isSearchSuggestion: v
   } = (0, c.Iu)(e => ({
@@ -34,22 +34,22 @@ let p = i.forwardRef(function(e, t) {
   return i.useImperativeHandle(t, () => ({
     focus: () => {
       var e;
-      return null === (e = m.current) || void 0 === e ? void 0 : e.focus()
+      return null === (e = g.current) || void 0 === e ? void 0 : e.focus()
     }
   })), i.useLayoutEffect(() => {
     if (v) {
       var e;
-      null === (e = m.current) || void 0 === e || e.focus()
+      null === (e = g.current) || void 0 === e || e.focus()
     }
   }, [v]), (0, r.jsx)("div", {
     className: _.wrapper,
     children: (0, r.jsx)(s.E1j, {
-      autoFocus: g,
-      disabled: !g,
+      autoFocus: m,
+      disabled: !m,
       query: E,
-      ref: m,
+      ref: g,
       size: s.E1j.Sizes.MEDIUM,
-      placeholder: null != b ? b : g ? f.NW.string(f.t.dt5h1N) : f.NW.string(f.t["Pck/4e"]),
+      placeholder: null != b ? b : m ? f.NW.string(f.t.dt5h1N) : f.NW.string(f.t["Pck/4e"]),
       onClear: S,
       onKeyDown: n,
       onChange: O,

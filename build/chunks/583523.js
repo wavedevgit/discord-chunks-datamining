@@ -57,7 +57,7 @@ function h(e) {
   for (let e of t) l.Z.getVoiceChannelId() === e.id && p()
 }
 
-function g(e) {
+function m(e) {
   let {
     voiceStates: t
   } = e;
@@ -65,12 +65,12 @@ function g(e) {
     o.default.getSessionId() === e.sessionId && p()
   })
 }
-class m extends i.Z {
+class g extends i.Z {
   constructor(...e) {
     super(...e), d(this, "actions", {
       CHANNEL_UPDATES: h,
-      VOICE_STATE_UPDATES: g
+      VOICE_STATE_UPDATES: m
     })
   }
 }
-let E = new m
+let E = new g

@@ -66,8 +66,8 @@ function f(e) {
     chunkSize: _ = 250,
     getScrollerState: p,
     maxBufferWidth: h,
-    itemGutter: g,
-    removeEdgeItemGutters: m,
+    itemGutter: m,
+    removeEdgeItemGutters: g,
     sectionGutter: E,
     padding: v,
     paddingVertical: b,
@@ -76,8 +76,8 @@ function f(e) {
   } = e, S = (0, o.Z)(), I = (0, r.useRef)(d), [T] = (0, r.useState)(() => new i.ZP), N = p(), A = Math.min(null != h ? h : 1 / 0, N.offsetWidth), C = null != h ? Math.max(0, N.offsetWidth - h) : 0, {
     dirty: R,
     chunkStart: P,
-    chunkEnd: D,
-    forceUpdateOnChunkChange: w
+    chunkEnd: w,
+    forceUpdateOnChunkChange: D
   } = (0, a.Z)({
     chunkSize: _,
     getScrollerState: p,
@@ -90,17 +90,17 @@ function f(e) {
     getItemHeight: c,
     getSectionHeight: f,
     bufferWidth: A,
-    itemGutter: g,
-    removeEdgeItemGutters: m,
+    itemGutter: m,
+    removeEdgeItemGutters: g,
     sectionGutter: E,
     padding: v,
     paddingVertical: b,
     paddingHorizontal: y,
     marginLeft: C / 2,
     dir: O
-  }), T.computeVisibleSections(Math.max(0, P * _), D * _), T.getState()), [R, T, t, n, s, c, f, P, D, _, g, m, E, v, b, y, A, O]), u(l({}, I.current), {
+  }), T.computeVisibleSections(Math.max(0, P * _), w * _), T.getState()), [R, T, t, n, s, c, f, P, w, _, m, g, E, v, b, y, A, O]), u(l({}, I.current), {
     masonryComputer: T,
-    forceUpdateOnChunkChange: w,
+    forceUpdateOnChunkChange: D,
     forceUpdate: S
   })
 }

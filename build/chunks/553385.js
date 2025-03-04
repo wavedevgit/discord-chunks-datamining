@@ -47,7 +47,7 @@ async function p(e, t, n) {
       }
     },
     rejectWithError: !1
-  }), g(t)
+  }), m(t)
 }
 async function h(e) {
   let t = await r.tn.patch({
@@ -61,10 +61,10 @@ async function h(e) {
       message: e,
       shouldMention: !1,
       showMentionToggle: !1
-    }), g(n.id)), i.Z.saveDraft(e.channel_id, t.text, l.d.ChannelMessage)
+    }), m(n.id)), i.Z.saveDraft(e.channel_id, t.text, l.d.ChannelMessage)
   }
 }
 
-function g(e) {
+function m(e) {
   c.Z.getMessages(e).hasMoreAfter ? o.Z.jumpToPresent(e, d.AQB) : u.S.dispatch(d.CkL.SCROLLTO_PRESENT)
 }

@@ -43,13 +43,13 @@ function h(e) {
   d.set(t, 3)
 }
 
-function g(e) {
+function m(e) {
   let {
     applicationId: t
   } = e;
   d.set(t, 1)
 }
-class m extends(r = i.ZP.Store) {
+class g extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(s.Z, l.Z)
   }
@@ -65,9 +65,9 @@ class m extends(r = i.ZP.Store) {
     return u.has(e) ? 2 : null !== (t = d.get(e)) && void 0 !== t ? t : 0
   }
 }
-c(m, "displayName", "ApplicationStoreDirectoryStore");
-let E = new m(o.Z, {
+c(g, "displayName", "ApplicationStoreDirectoryStore");
+let E = new g(o.Z, {
   APPLICATION_STORE_DIRECTORY_LAYOUT_FETCH_SUCCESS: p,
   APPLICATION_STORE_DIRECTORY_LAYOUT_FETCH_FAILED: h,
-  APPLICATION_STORE_DIRECTORY_LAYOUT_FETCHING: g
+  APPLICATION_STORE_DIRECTORY_LAYOUT_FETCHING: m
 })

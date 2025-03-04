@@ -23,8 +23,8 @@ let l = "",
   _ = null,
   p = "",
   h = "",
-  g = "",
   m = "",
+  g = "",
   E = "",
   v = "",
   b = "",
@@ -36,11 +36,11 @@ let l = "",
   N = null;
 
 function A() {
-  d = null, l = "", c = null, u = "", f = !1, _ = null, p = "US", h = "", g = "", m = "", E = "", v = "", b = "", y = "", O = !1, S = null, I = null, T = null, N = null
+  d = null, l = "", c = null, u = "", f = !1, _ = null, p = "US", h = "", m = "", g = "", E = "", v = "", b = "", y = "", O = !1, S = null, I = null, T = null, N = null
 }
 
 function C(e) {
-  h = e.name, p = e.country, m = e.line1, E = e.line2, v = e.city, b = e.postalCode, y = e.state, g = e.email
+  h = e.name, p = e.country, g = e.line1, E = e.line2, v = e.city, b = e.postalCode, y = e.state, m = e.email
 }
 
 function R(e) {
@@ -62,7 +62,7 @@ function P() {
   l = "", c = null
 }
 
-function D(e) {
+function w(e) {
   let {
     email: t,
     nonce: n,
@@ -71,7 +71,7 @@ function D(e) {
   l = t, c = n, C(r), O = p.length > 0
 }
 
-function w() {
+function D() {
   u = "", c = null
 }
 
@@ -96,7 +96,7 @@ function M(e) {
     info: t,
     isValid: n
   } = e;
-  null != t.name && "" !== t.name && (h = t.name), p = t.country, h = t.name, m = t.line1, E = t.line2, v = t.city, b = t.postalCode, y = t.state, g = t.email, O = n
+  null != t.name && "" !== t.name && (h = t.name), p = t.country, h = t.name, g = t.line1, E = t.line2, v = t.city, b = t.postalCode, y = t.state, m = t.email, O = n
 }
 
 function k(e) {
@@ -163,9 +163,9 @@ class V extends(r = i.ZP.Store) {
   getBillingAddressInfo() {
     return {
       name: h,
-      email: g,
+      email: m,
       country: p,
-      line1: m,
+      line1: g,
       line2: E,
       city: v,
       postalCode: b,
@@ -185,8 +185,8 @@ let F = new V(o.Z, {
   NEW_PAYMENT_SOURCE_CARD_INFO_UPDATE: x,
   NEW_PAYMENT_SOURCE_ADDRESS_INFO_UPDATE: M,
   BRAINTREE_TOKENIZE_PAYPAL_START: P,
-  BRAINTREE_TOKENIZE_PAYPAL_SUCCESS: D,
-  BRAINTREE_TOKENIZE_VENMO_START: w,
+  BRAINTREE_TOKENIZE_PAYPAL_SUCCESS: w,
+  BRAINTREE_TOKENIZE_VENMO_START: D,
   BRAINTREE_TOKENIZE_VENMO_SUCCESS: L,
   ADYEN_CASH_APP_PAY_SUBMIT_SUCCESS: k,
   BILLING_PAYMENT_SOURCE_CREATE_START: j,

@@ -14,8 +14,8 @@ var r = n(147018),
   _ = n(673743),
   p = n(644659),
   h = n(603528),
-  g = n(354848),
-  m = n(740362),
+  m = n(354848),
+  g = n(740362),
   E = n(566885),
   v = n(974971),
   b = n(24033),
@@ -29,11 +29,11 @@ var r = n(147018),
   C = n(641236),
   R = n(976418),
   P = C("iterator"),
-  D = "URLSearchParams",
-  w = D + "Iterator",
+  w = "URLSearchParams",
+  D = w + "Iterator",
   L = p.set,
-  x = p.getterFor(D),
-  M = p.getterFor(w),
+  x = p.getterFor(w),
+  M = p.getterFor(D),
   k = Object.getOwnPropertyDescriptor,
   j = function(e) {
     if (!s) return i[e];
@@ -96,7 +96,7 @@ var r = n(147018),
   },
   eu = _(function(e, t) {
     L(this, {
-      type: w,
+      type: D,
       iterator: T(x(e).entries),
       kind: t
     })
@@ -111,7 +111,7 @@ var r = n(147018),
     this.entries = [], this.url = null, void 0 !== e && (y(e) ? this.parseObject(e) : this.parseQuery("string" == typeof e ? "?" === K(e, 0) ? ee(e, 1) : e : O(e)))
   };
 ed.prototype = {
-  type: D,
+  type: w,
   bindURL: function(e) {
     this.url = e, this.update()
   },
@@ -125,7 +125,7 @@ ed.prototype = {
           value: O(l.value)
         })
       } else
-        for (var u in e) m(e, u) && q(this.entries, {
+        for (var u in e) g(e, u) && q(this.entries, {
           key: u,
           value: O(e[u])
         })
@@ -233,45 +233,45 @@ if (d(e_, {
     },
     configurable: !0,
     enumerable: !0
-  }), f(ef, D), r({
+  }), f(ef, w), r({
     global: !0,
     constructor: !0,
     forced: !l
   }, {
     URLSearchParams: ef
-  }), !l && g(B)) {
+  }), !l && m(B)) {
   var ep = a(F.has),
     eh = a(F.set),
-    eg = function(e) {
+    em = function(e) {
       if (y(e)) {
         var t, n = e.body;
-        if (v(n) === D) return ep(t = e.headers ? new B(e.headers) : new B, "content-type") || eh(t, "content-type", "application/x-www-form-urlencoded;charset=UTF-8"), S(e, {
+        if (v(n) === w) return ep(t = e.headers ? new B(e.headers) : new B, "content-type") || eh(t, "content-type", "application/x-www-form-urlencoded;charset=UTF-8"), S(e, {
           body: I(0, O(n)),
           headers: I(0, t)
         })
       }
       return e
     };
-  if (g(U) && r({
+  if (m(U) && r({
       global: !0,
       enumerable: !0,
       dontCallGetSet: !0,
       forced: !0
     }, {
       fetch: function(e) {
-        return U(e, arguments.length > 1 ? eg(arguments[1]) : {})
+        return U(e, arguments.length > 1 ? em(arguments[1]) : {})
       }
-    }), g(G)) {
-    var em = function(e) {
-      return h(this, V), new G(e, arguments.length > 1 ? eg(arguments[1]) : {})
+    }), m(G)) {
+    var eg = function(e) {
+      return h(this, V), new G(e, arguments.length > 1 ? em(arguments[1]) : {})
     };
-    V.constructor = em, em.prototype = V, r({
+    V.constructor = eg, eg.prototype = V, r({
       global: !0,
       constructor: !0,
       dontCallGetSet: !0,
       forced: !0
     }, {
-      Request: em
+      Request: eg
     })
   }
 }

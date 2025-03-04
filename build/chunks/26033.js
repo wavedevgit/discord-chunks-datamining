@@ -3,9 +3,9 @@
 n.d(t, {
   Cb: () => o,
   KF: () => u,
-  Mq: () => g,
+  Mq: () => m,
   Q0: () => a,
-  Rh: () => m,
+  Rh: () => g,
   aA: () => h,
   dU: () => c,
   dX: () => s,
@@ -60,10 +60,10 @@ function h(e) {
   return _(e) || p(e)
 }
 
-function g(e) {
+function m(e) {
   return (null == e ? void 0 : e.content_type) === r.s.LAUNCHED_ACTIVITY
 }
 
-function m(e) {
+function g(e) {
   return s(e) || c(e) || f(e) || l(e)
 }

@@ -18,12 +18,12 @@ function f(e) {
     gameFriends: t,
     hasIncomingPendingGameFriends: n,
     hasOutgoingPendingGameFriends: f
-  } = e, [_, p] = i.useState(!1), h = i.useCallback(() => p(!0), []), g = i.useMemo(() => _ ? t.map(e => {
+  } = e, [_, p] = i.useState(!1), h = i.useCallback(() => p(!0), []), m = i.useMemo(() => _ ? t.map(e => {
     let {
       applicationId: t
     } = e;
     return t
-  }) : d, [_, t]), m = (0, a.Z)(g, _), E = i.useMemo(() => m.filter(s.lm), [m]), v = i.useMemo(() => t.length > 0 ? (0, c.A)(E) : void 0, [E, t.length]);
+  }) : d, [_, t]), g = (0, a.Z)(m, _), E = i.useMemo(() => g.filter(s.lm), [g]), v = i.useMemo(() => t.length > 0 ? (0, c.A)(E) : void 0, [E, t.length]);
   return {
     onMouseEnter: h,
     ariaLabel: v,

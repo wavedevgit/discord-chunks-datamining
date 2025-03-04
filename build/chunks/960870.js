@@ -43,15 +43,15 @@ function d(e) {
     analyticsLocations: p
   } = e, {
     context: h,
-    trackUserProfileAction: g
+    trackUserProfileAction: m
   } = (0, s.KZ)(), {
-    analyticsLocations: m
-  } = (0, o.ZP)(), E = null != p ? p : m, v = (0, i.e7)([a.Z], () => a.Z.getUserOutbox(t.id));
+    analyticsLocations: g
+  } = (0, o.ZP)(), E = null != p ? p : g, v = (0, i.e7)([a.Z], () => a.Z.getUserOutbox(t.id));
   return (0, r.useCallback)(e => {
     let {
       action: t
     } = e;
-    g({
+    m({
       action: t,
       analyticsLocations: E
     }), (0, l.z7)(u({
@@ -64,5 +64,5 @@ function d(e) {
       voiceChannelId: _,
       analyticsLocations: E
     }, h))
-  }, [g, h, n, c, f, d, v, _, E])
+  }, [m, h, n, c, f, d, v, _, E])
 }

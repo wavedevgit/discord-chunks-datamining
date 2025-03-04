@@ -21,8 +21,8 @@ function l(e) {
     GuildStore: _,
     GuildMemberCountStore: p,
     RelationshipStore: h,
-    SelectedChannelStore: g,
-    VoiceStateStore: m,
+    SelectedChannelStore: m,
+    VoiceStateStore: g,
     PermissionStore: E
   } = e, v = f.getChannel(c), b = (0, i.a)(v);
   if (null == t) return !1;
@@ -34,15 +34,15 @@ function l(e) {
     application: l,
     isActivitiesEnabledForCurrentPlatform: b,
     ChannelStore: f,
-    VoiceStateStore: m,
+    VoiceStateStore: g,
     PermissionStore: E,
     GuildStore: _
   }) === o.Fw.CAN_JOIN;
   if (!(0, r.isDesktop)() && !d) return !1;
   if ((0, a.Z)(n, s.xjy.PARTY_PRIVACY_FRIENDS) && h.isFriend(t.id)) return !0;
   if ((0, a.Z)(n, s.xjy.PARTY_PRIVACY_VOICE_CHANNEL)) {
-    let e = f.getChannel(g.getVoiceChannelId());
-    if (null == e || !m.isInChannel(e.id, t.id)) return !1;
+    let e = f.getChannel(m.getVoiceChannelId());
+    if (null == e || !g.isInChannel(e.id, t.id)) return !1;
     switch (e.type) {
       case s.d4z.DM:
       case s.d4z.GROUP_DM:

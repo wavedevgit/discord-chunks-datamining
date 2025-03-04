@@ -23,8 +23,8 @@ function p(e) {
     usernameIcon: i,
     tags: p,
     nickname: h,
-    nicknameIcons: g,
-    pronouns: m,
+    nicknameIcons: m,
+    pronouns: g,
     className: E,
     isTryItOut: v,
     onOpenProfile: b,
@@ -38,7 +38,7 @@ function p(e) {
     onClick: b,
     className: _.clickableUsername,
     children: e
-  }), T = null != m && m.length > 0, N = (0, l.D)(t);
+  }), T = null != g && g.length > 0, N = (0, l.D)(t);
   return (0, r.jsxs)("div", {
     className: o()(_.container, {
       [_.bot]: null != N
@@ -52,9 +52,9 @@ function p(e) {
       })), null != N && (0, r.jsx)(c.Z, {
         type: N,
         verified: t.isVerifiedBot()
-      }), null != g && (0, r.jsx)("div", {
+      }), null != m && (0, r.jsx)("div", {
         className: o()(_.nicknameIcons, S),
-        children: g
+        children: m
       })]
     }), (0, r.jsxs)("div", {
       className: o()(_.tags, S, {
@@ -82,7 +82,7 @@ function p(e) {
             variant: O,
             className: _.pronounsText,
             color: "header-primary",
-            children: m
+            children: g
           })
         })]
       }), (0, r.jsx)(u.ZP, {

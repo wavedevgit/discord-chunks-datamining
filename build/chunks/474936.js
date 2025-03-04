@@ -30,7 +30,7 @@ n.d(t, {
   OT: () => es,
   Ph: () => e4,
   QI: () => eW,
-  QP: () => ew,
+  QP: () => eD,
   RQ: () => eY,
   RU: () => ec,
   Rg: () => H,
@@ -49,8 +49,8 @@ n.d(t, {
   Wt: () => eJ,
   X2: () => eX,
   Xh: () => E,
-  Y1: () => eD,
-  YQ: () => g,
+  Y1: () => ew,
+  YQ: () => m,
   Z1: () => y,
   Zh: () => d,
   _k: () => eR,
@@ -66,7 +66,7 @@ n.d(t, {
   dO: () => ee,
   dT: () => eu,
   eZ: () => ez,
-  ee: () => em,
+  ee: () => eg,
   ff: () => Z,
   gW: () => eh,
   gh: () => B,
@@ -82,7 +82,7 @@ n.d(t, {
   kJ: () => eK,
   m8: () => V,
   mn: () => T,
-  n5: () => eg,
+  n5: () => em,
   nG: () => eE,
   nH: () => ex,
   nL: () => eU,
@@ -100,7 +100,7 @@ n.d(t, {
   w7: () => e3,
   wh: () => K,
   xT: () => et,
-  y7: () => m,
+  y7: () => g,
   ys: () => eM,
   zp: () => U
 }), n(47120);
@@ -157,8 +157,8 @@ let u = void 0,
 var h = function(e) {
   return e.NONE = "628379670982688768", e.TIER_0 = "978380684370378762", e.TIER_1 = "521846918637420545", e.TIER_2 = "521847234246082599", e.GUILD = "590663762298667008", e.LEGACY = "521842865731534868", e
 }({});
-let g = ["628379670982688768", "978380684370378762", "521846918637420545", "521847234246082599", "590663762298667008"],
-  m = Object.freeze({
+let m = ["628379670982688768", "978380684370378762", "521846918637420545", "521847234246082599", "590663762298667008"],
+  g = Object.freeze({
     "978380684370378762": 3,
     "521846918637420545": 1,
     "521847234246082599": 2,
@@ -335,8 +335,8 @@ let C = Object.freeze({
   }),
   R = new Set(["511651880837840896"]),
   P = 16,
-  D = 8,
-  w = 5,
+  w = 8,
+  D = 5,
   L = 30,
   x = 2,
   M = 3,
@@ -374,8 +374,8 @@ let C = Object.freeze({
   e_ = "1215366184820539392",
   ep = "1223319122125783040",
   eh = "1223380890109870080",
-  eg = "1265748546523762828",
-  em = [ep, eh],
+  em = "1265748546523762828",
+  eg = [ep, eh],
   eE = Object.freeze({
     [W]: {
       id: W,
@@ -515,8 +515,8 @@ let ey = Object.freeze({
       }
     }
   }),
-  eD = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"];
-var ew = function(e) {
+  ew = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"];
+var eD = function(e) {
     return e.SOUNDBOARD_PLAY = "soundboard play", e.PROFILE_THEME_COLOR = "profile_theme_color", e.PROFILE_BANNER = "profile_banner", e.ANIMATED_AVATAR = "animated_avatar", e.AVATAR_DECORATION = "avatar_decoration", e.CLIENT_THEME = "client_theme", e.SHARED_CANVAS = "shared_canvas", e.PROFILE_EFFECT = "profile_effect", e.PRESET = "preset", e
   }({}),
   eL = function(e) {
@@ -526,8 +526,8 @@ let ex = {
   "1024422698568122368": P,
   "511651876987469824": P,
   "511651885459963904": P,
-  "944037208325619722": D,
-  "642251038925127690": w
+  "944037208325619722": w,
+  "642251038925127690": D
 };
 var eM = function(e) {
   return e.HIGH_STREAMING_QUALITY = "high_streaming_quality", e.MID_STREAMING_QUALITY = "mid_streaming_quality", e

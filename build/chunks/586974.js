@@ -127,12 +127,12 @@ function t(e) {
         endsParent: !0
       })]
     },
-    g = e.inherit(h, {
+    m = e.inherit(h, {
       className: "class",
       beginKeywords: "defimpl defmodule defprotocol defrecord",
       end: /\bdo\b|$|;/
     }),
-    m = [p, _, f, d, e.HASH_COMMENT_MODE, g, h, {
+    g = [p, _, f, d, e.HASH_COMMENT_MODE, m, h, {
       begin: "::"
     }, {
       className: "symbol",
@@ -153,11 +153,11 @@ function t(e) {
       className: "variable",
       begin: "(\\$\\W)|((\\$|@@?)(\\w+))"
     }];
-  return o.contains = m, {
+  return o.contains = g, {
     name: "Elixir",
     aliases: ["ex", "exs"],
     keywords: i,
-    contains: m
+    contains: g
   }
 }
 e.exports = t

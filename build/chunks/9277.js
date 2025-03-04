@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(581883),
   p = n(459273),
   h = n(443603),
-  g = n(981631),
-  m = n(957825),
+  m = n(981631),
+  g = n(957825),
   E = n(388032),
   v = n(25675);
 
@@ -73,31 +73,31 @@ function I(e, t) {
     }, 2e3)
   }, []);
   (0, p.yp)({
-    event: g.CkL.FAVORITE_GIF,
+    event: m.CkL.FAVORITE_GIF,
     handler: R
   });
   let P = i.useCallback(() => {
-      (0, f.RO)(m.X1.GIF, o)
+      (0, f.RO)(g.X1.GIF, o)
     }, [o]),
     {
-      Component: D,
-      events: w,
+      Component: w,
+      events: D,
       play: L
     } = (0, c.V)(),
     x = (0, d.Q3)("ChannelGIFPickerButton");
   if (n) return null;
-  let M = T === m.X1.GIF && N === o;
+  let M = T === g.X1.GIF && N === o;
   return (0, r.jsx)(u.ua7, {
     text: I ? E.NW.string(E.t.mE2e8P) : null,
     forceOpen: !0,
     children: e => (0, r.jsx)("div", S(y({
       ref: t,
-      className: a()(m.CT, v.buttonContainer)
+      className: a()(g.CT, v.buttonContainer)
     }, e), {
       children: (0, r.jsx)(h.Z, {
         innerClassName: v.button,
-        onMouseEnter: w.onMouseEnter,
-        onMouseLeave: w.onMouseLeave,
+        onMouseEnter: D.onMouseEnter,
+        onMouseLeave: D.onMouseLeave,
         onClick: () => {
           P(), L()
         },
@@ -107,7 +107,7 @@ function I(e, t) {
         "aria-expanded": M,
         "aria-haspopup": "dialog",
         "aria-controls": A,
-        children: (0, r.jsx)(D, {
+        children: (0, r.jsx)(w, {
           size: x ? "refresh_sm" : void 0,
           color: "currentColor"
         })

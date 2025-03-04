@@ -47,11 +47,11 @@ var _ = function(e) {
 let p = "INITIALIZED",
   h = [];
 
-function g() {
+function m() {
   f = d(), p = "INITIALIZED", h = []
 }
 
-function m() {
+function g() {
   f.useActivityUrlOverride = !f.useActivityUrlOverride
 }
 
@@ -125,8 +125,8 @@ class S extends(r = i.ZP.PersistedStore) {
 }
 c(S, "displayName", "DeveloperActivityShelfStore"), c(S, "persistKey", "DeveloperActivityShelfStore"), c(S, "migrations", [e => (delete e.isEnabled, u({}, e))]);
 let I = new S(o.Z, {
-  LOGOUT: g,
-  DEVELOPER_ACTIVITY_SHELF_TOGGLE_USE_ACTIVITY_URL_OVERRIDE: m,
+  LOGOUT: m,
+  DEVELOPER_ACTIVITY_SHELF_TOGGLE_USE_ACTIVITY_URL_OVERRIDE: g,
   DEVELOPER_ACTIVITY_SHELF_SET_ACTIVITY_URL_OVERRIDE: E,
   DEVELOPER_ACTIVITY_SHELF_MARK_ACTIVITY_USED: v,
   DEVELOPER_ACTIVITY_SHELF_FETCH_START() {

@@ -178,7 +178,7 @@ function p(e) {
       case d.yXg.BACKSPACE:
       case d.yXg.DELETE:
       case d.yXg.K:
-        let g = t.which === d.yXg.BACKSPACE;
+        let m = t.which === d.yXg.BACKSPACE;
         if ((!h && t.which !== d.yXg.K && _(t, {
             ctrl: !0,
             shift: !0
@@ -187,8 +187,8 @@ function p(e) {
           }) || h && t.which === d.yXg.K && _(t, {
             ctrl: !0
           })) && null != e.selection) {
-          let [t, n] = u.M8.edges(e.selection), [r, i] = u.bN.node(e, [g ? t.path[0] : n.path[0]]);
-          if (a()(u.q.isElement(r) && u.bN.isBlock(e, r), "Top-most node of selection is not a block"), g && !u.Jz.isAtStart(t, [r, i]) || !g && !u.Jz.isAtEnd(n, [r, i])) return g ? e.deleteBackward("line") : e.deleteForward("line"), !0
+          let [t, n] = u.M8.edges(e.selection), [r, i] = u.bN.node(e, [m ? t.path[0] : n.path[0]]);
+          if (a()(u.q.isElement(r) && u.bN.isBlock(e, r), "Top-most node of selection is not a block"), m && !u.Jz.isAtStart(t, [r, i]) || !m && !u.Jz.isAtEnd(n, [r, i])) return m ? e.deleteBackward("line") : e.deleteForward("line"), !0
         }
     }
     return !1

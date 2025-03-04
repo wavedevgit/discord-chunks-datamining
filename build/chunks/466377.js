@@ -4,7 +4,7 @@ n.d(t, {
   Cg: () => P,
   Y0: () => L,
   YA: () => G,
-  fM: () => w,
+  fM: () => D,
   hz: () => k,
   mz: () => j,
   ol: () => U,
@@ -23,8 +23,8 @@ var r = n(200651),
   _ = n(507274),
   p = n(84735),
   h = n(261833),
-  g = n(742746),
-  m = n(147479),
+  m = n(742746),
+  g = n(147479),
   E = n(481060),
   v = n(600164),
   b = n(602091),
@@ -91,13 +91,13 @@ function R(e, t) {
 var P = function(e) {
   return e.SMALL = "small", e.MEDIUM = "medium", e.LARGE = "large", e.DYNAMIC = "dynamic", e
 }({});
-let D = Object.freeze({
+let w = Object.freeze({
   small: S.small,
   medium: S.medium,
   large: S.large,
   dynamic: null
 });
-var w = function(e) {
+var D = function(e) {
   return e.DEFAULT = "default", e.SUBTLE = "subtle", e
 }({});
 
@@ -107,8 +107,8 @@ function L(e) {
       children: o,
       size: f = "small",
       role: h = "dialog",
-      className: g,
-      fullscreenOnMobile: m = !0,
+      className: m,
+      fullscreenOnMobile: g = !0,
       hideShadow: E = !1,
       onAnimationEnd: v = y.dG,
       returnRef: O,
@@ -119,7 +119,7 @@ function L(e) {
     {
       reducedMotion: P
     } = i.useContext(d.S),
-    w = (0, u.q)({
+    D = (0, u.q)({
       opacity: +!!R,
       transform: R || P.enabled || "subtle" === I ? "scale(1)" : "scale(0.7)",
       config: {
@@ -148,12 +148,12 @@ function L(e) {
       "aria-labelledby": x ? void 0 : U.headerId
     }, N), {
       children: (0, r.jsx)(s.animated.div, {
-        className: a()(g, S.root, D[f], {
-          [S.fullscreenOnMobile]: m,
+        className: a()(m, S.root, w[f], {
+          [S.fullscreenOnMobile]: g,
           [S.rootWithShadow]: !E
         }),
         ref: L,
-        style: w,
+        style: D,
         children: (0, r.jsx)(p.J, {
           containerRef: L,
           children: o
@@ -187,11 +187,11 @@ function x(e) {
 function M(e) {
   switch (null != e ? e : "thin") {
     case "auto":
-      return m.yW;
+      return g.yW;
     case "none":
-      return m.xV;
+      return g.xV;
     default:
-      return m.h2
+      return g.h2
   }
 }
 
@@ -257,7 +257,7 @@ function G(e) {
     className: t,
     scrollerRef: n
   } = e, i = C(e, ["className", "scrollerRef"]);
-  return (0, r.jsx)(g.Tv, T({
+  return (0, r.jsx)(m.Tv, T({
     className: t,
     ref: n
   }, i))

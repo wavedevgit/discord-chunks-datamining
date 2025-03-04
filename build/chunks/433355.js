@@ -17,8 +17,8 @@ var r, i = n(873546),
   _ = n(944486),
   p = n(914010),
   h = n(594174),
-  g = n(981631),
-  m = n(176505),
+  m = n(981631),
+  g = n(176505),
   E = n(231338);
 
 function v(e, t, n) {
@@ -39,9 +39,9 @@ let b = "message_requests",
 
 function A(e) {
   if (null == e) return null;
-  if ((0, m.AB)(e)) {
+  if ((0, g.AB)(e)) {
     let t = p.Z.getGuildId();
-    return null == t ? null : (0, m.Qk)(e, t)
+    return null == t ? null : (0, g.Qk)(e, t)
   }
   return e
 }
@@ -61,12 +61,12 @@ function P() {
   O && (O = R(O)), y = R(y)
 }
 
-function D() {
+function w() {
   y && (y = R(y)), O = R(O)
 }
 
-function w() {
-  S || l.S.dispatch(g.CkL.SEARCH_RESULTS_CLOSE), S = R(S)
+function D() {
+  S || l.S.dispatch(m.CkL.SEARCH_RESULTS_CLOSE), S = R(S)
 }
 
 function L(e) {
@@ -204,9 +204,9 @@ class H extends(r = o.ZP.PersistedStore) {
     }
   }
   getSection(e, t) {
-    if (I) return g.ULH.SEARCH;
+    if (I) return m.ULH.SEARCH;
     let n = A(e);
-    return null != n && null != T[n] ? g.ULH.SIDEBAR_CHAT : t && S ? g.ULH.PROFILE : O ? g.ULH.SUMMARIES : y ? g.ULH.MEMBERS : g.ULH.NONE
+    return null != n && null != T[n] ? m.ULH.SIDEBAR_CHAT : t && S ? m.ULH.PROFILE : O ? m.ULH.SUMMARIES : y ? m.ULH.MEMBERS : m.ULH.NONE
   }
   getSidebarState(e) {
     let t = A(e);
@@ -232,8 +232,8 @@ class H extends(r = o.ZP.PersistedStore) {
 v(H, "displayName", "ChannelSectionStore"), v(H, "persistKey", "ChannelSectionStore2");
 let W = new H(a.Z, {
   CHANNEL_TOGGLE_MEMBERS_SECTION: P,
-  PROFILE_PANEL_TOGGLE_SECTION: w,
-  CHANNEL_TOGGLE_SUMMARIES_SECTION: D,
+  PROFILE_PANEL_TOGGLE_SECTION: D,
+  CHANNEL_TOGGLE_SUMMARIES_SECTION: w,
   SIDEBAR_VIEW_CHANNEL: M,
   SIDEBAR_VIEW_GUILD: L,
   SIDEBAR_CREATE_THREAD: k,

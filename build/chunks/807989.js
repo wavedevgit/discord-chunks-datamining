@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(789020), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(47120);
 var r = n(200651);
 n(192379);
@@ -27,18 +27,18 @@ let h = e => {
   }
 };
 
-function g(e) {
+function m(e) {
   var t;
   let n, {
       application: o,
-      scopes: g,
+      scopes: m,
       redirectUri: E,
       approximateGuildCount: v,
       isEmbeddedFlow: b,
       disclosures: y
     } = e,
     O = new Date(c.default.extractTimestamp(o.id)),
-    S = (0, d.W3)(g),
+    S = (0, d.W3)(m),
     I = (0, l.yE)(null !== (t = o.flags) && void 0 !== t ? t : 0, f.udG.EMBEDDED);
   if (null != E && !I && !b) try {
     let e = new URL(E);
@@ -48,31 +48,31 @@ function g(e) {
   }
   return (0, r.jsxs)("div", {
     className: p.applicationDetails,
-    children: [null != n ? (0, r.jsx)(m, {
+    children: [null != n ? (0, r.jsx)(g, {
       icon: a.xPt,
       text: _.NW.format(_.t["5k5OKC"], {
         origin: n
       })
-    }) : null, (0, r.jsx)(m, {
+    }) : null, (0, r.jsx)(g, {
       icon: a.mBM,
       text: (0, u.i)(o)
-    }), (0, r.jsx)(m, {
+    }), (0, r.jsx)(g, {
       icon: a.T39,
       text: _.NW.formatToPlainString(_.t["+1bjc3"], {
         date: O
       })
-    }), g.includes(i.x.BOT) && null != v ? (0, r.jsx)(m, {
+    }), m.includes(i.x.BOT) && null != v ? (0, r.jsx)(g, {
       icon: a.wGt,
       text: _.NW.formatToPlainString(_.t.UHGHSE, {
         guildCount: v
       })
-    }) : null, (0, r.jsx)(m, {
+    }) : null, (0, r.jsx)(g, {
       icon: a.b7C,
       text: S
     }), null != y ? y.map(e => {
       let t = (0, s.PM)(e),
         n = h(e);
-      return null != n && null != t ? (0, r.jsx)(m, {
+      return null != n && null != t ? (0, r.jsx)(g, {
         icon: n,
         text: t
       }) : null
@@ -80,7 +80,7 @@ function g(e) {
   })
 }
 
-function m(e) {
+function g(e) {
   let {
     icon: t,
     text: n

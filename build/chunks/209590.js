@@ -23,11 +23,11 @@ let f = "hideSuppressWarning",
   p = !0,
   h = !1;
 
-function g(e) {
+function m(e) {
   r = e.sessionId, _ = !1
 }
 
-function m() {
+function g() {
   r = null, i = null, p = !0
 }
 
@@ -61,8 +61,8 @@ class b extends(o = a.ZP.Store) {
 }
 d(b, "displayName", "PermissionSpeakStore");
 let y = new b(l.Z, {
-  CONNECTION_OPEN: g,
-  CONNECTION_CLOSED: m,
+  CONNECTION_OPEN: m,
+  CONNECTION_CLOSED: g,
   VOICE_STATE_UPDATES: E,
   PERMISSION_CLEAR_SUPPRESS_WARNING: v
 })

@@ -16,8 +16,8 @@ var r = n(392711),
   _ = n(5192),
   p = n(51144),
   h = n(298552),
-  g = n(444758),
-  m = n(723454),
+  m = n(444758),
+  g = n(723454),
   E = n(772096),
   v = n(800927),
   b = n(143223),
@@ -32,7 +32,7 @@ var r = n(392711),
   R = n(377668),
   P = n(388032);
 
-function D(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -41,14 +41,14 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -104,10 +104,10 @@ let V = e => {
   Z = {
     newline: a().defaultRules.newline,
     paragraph: a().defaultRules.paragraph,
-    escape: x(w({}, a().defaultRules.escape), {
+    escape: x(D({}, a().defaultRules.escape), {
       match: (e, t, n) => !1 === t.allowEscape ? null : a().defaultRules.escape.match(e, t, n)
     }),
-    blockQuote: x(w({}, a().defaultRules.blockQuote), {
+    blockQuote: x(D({}, a().defaultRules.blockQuote), {
       requiredFirstCharacters: [" ", ">"],
       match(e, t) {
         let {
@@ -139,10 +139,10 @@ let V = e => {
       }
     }),
     link: E.ZP,
-    autolink: x(w({}, a().defaultRules.autolink), {
+    autolink: x(D({}, a().defaultRules.autolink), {
       parse: B
     }),
-    url: x(w({}, a().defaultRules.url), {
+    url: x(D({}, a().defaultRules.url), {
       requiredFirstCharacters: ["h", "s"],
       match(e, t) {
         if (!t.inline) return null;
@@ -169,10 +169,10 @@ let V = e => {
     u: a().defaultRules.u,
     br: a().defaultRules.br,
     text: O.ZP,
-    inlineCode: x(w({}, a().defaultRules.inlineCode), {
+    inlineCode: x(D({}, a().defaultRules.inlineCode), {
       parse(e, t, n) {
         let r = a().defaultRules.inlineCode.parse(e, t, n);
-        return !0 === n.parseInlineCodeChildContent ? x(w({}, r), {
+        return !0 === n.parseInlineCodeChildContent ? x(D({}, r), {
           validationChildContent: t(r.content, n)
         }) : r
       }
@@ -281,9 +281,9 @@ let V = e => {
         }
       }
     },
-    channelMention: g.Z.channelMention,
-    channelOrMessageUrl: g.Z.channelOrMessageUrl,
-    mediaPostLink: g.Z.mediaPostLink,
+    channelMention: m.Z.channelMention,
+    channelOrMessageUrl: m.Z.channelOrMessageUrl,
+    mediaPostLink: m.Z.mediaPostLink,
     attachmentLink: h.Z.attachmentLink,
     shopLink: b.Z.shopLink,
     commandMention: {
@@ -390,7 +390,7 @@ let V = e => {
         }
       }
     },
-    heading: m.Z,
+    heading: g.Z,
     list: v.Z,
     subtext: y.Z
   },
@@ -435,7 +435,7 @@ let ee = 10,
       parse(e, t, n) {
         var r;
         let i = null !== (r = n.parseDepth) && void 0 !== r ? r : 0,
-          o = x(w({}, n), {
+          o = x(D({}, n), {
             parseDepth: i + 1
           }),
           a = t(e[2], o),

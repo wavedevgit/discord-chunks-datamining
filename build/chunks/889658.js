@@ -12,7 +12,7 @@ class i {
     if (this.options = t, this.loose = !!t.loose, this.includePrerelease = !!t.includePrerelease, this.raw = e.trim().replace(r, " "), this.set = this.raw.split("||").map(e => this.parseRange(e.trim())).filter(e => e.length), !this.set.length) throw TypeError(`Invalid SemVer Range: ${this.raw}`);
     if (this.set.length > 1) {
       let e = this.set[0];
-      if (this.set = this.set.filter(e => !m(e[0])), 0 === this.set.length) this.set = [e];
+      if (this.set = this.set.filter(e => !g(e[0])), 0 === this.set.length) this.set = [e];
       else if (this.set.length > 1) {
         for (let e of this.set)
           if (1 === e.length && E(e[0])) {
@@ -41,7 +41,7 @@ class i {
     return this.range
   }
   parseRange(e) {
-    let t = ((this.options.includePrerelease && h) | (this.options.loose && g)) + ":" + e,
+    let t = ((this.options.includePrerelease && h) | (this.options.loose && m)) + ":" + e,
       n = o.get(t);
     if (n) return n;
     let r = this.options.loose,
@@ -51,7 +51,7 @@ class i {
     r && (a = a.filter(e => (l("loose invalid filter", e, this.options), !!e.match(u[d.COMPARATORLOOSE])))), l("range list", a);
     let c = new Map;
     for (let e of a.map(e => new s(e, this.options))) {
-      if (m(e)) return [e];
+      if (g(e)) return [e];
       c.set(e.value, e)
     }
     c.size > 1 && c.has("") && c.delete("");
@@ -70,7 +70,7 @@ class i {
       return !1
     }
     for (let t = 0; t < this.set.length; t++)
-      if (D(this.set[t], e, this.options)) return !0;
+      if (w(this.set[t], e, this.options)) return !0;
     return !1
   }
 }
@@ -89,9 +89,9 @@ let o = new(n(147567)),
   } = n(646664),
   {
     FLAG_INCLUDE_PRERELEASE: h,
-    FLAG_LOOSE: g
+    FLAG_LOOSE: m
   } = n(942177),
-  m = e => "<0.0.0-0" === e.value,
+  g = e => "<0.0.0-0" === e.value,
   E = e => "" === e.value,
   v = (e, t) => {
     let n = !0,
@@ -136,7 +136,7 @@ let o = new(n(147567)),
   C = (e, t) => (l("replaceStars", e, t), e.trim().replace(u[d.STAR], "")),
   R = (e, t) => (l("replaceGTE0", e, t), e.trim().replace(u[t.includePrerelease ? d.GTE0PRE : d.GTE0], "")),
   P = e => (t, n, r, i, o, a, s, l, c, u, d, f) => (n = y(r) ? "" : y(i) ? `>=${r}.0.0${e?"-0":""}` : y(o) ? `>=${r}.${i}.0${e?"-0":""}` : a ? `>=${n}` : `>=${n}${e?"-0":""}`, l = y(c) ? "" : y(u) ? `<${+c+1}.0.0-0` : y(d) ? `<${c}.${+u+1}.0-0` : f ? `<=${c}.${u}.${d}-${f}` : e ? `<${c}.${u}.${+d+1}-0` : `<=${l}`, `${n} ${l}`.trim()),
-  D = (e, t, n) => {
+  w = (e, t, n) => {
     for (let n = 0; n < e.length; n++)
       if (!e[n].test(t)) return !1;
     if (t.prerelease.length && !n.includePrerelease) {

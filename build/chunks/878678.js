@@ -43,8 +43,8 @@ function p(e) {
       confirmText: _,
       cancelText: p,
       className: h,
-      onConfirm: g,
-      onCancel: m,
+      onConfirm: m,
+      onCancel: g,
       onClose: E,
       onCloseCallback: v,
       bodyClassName: b,
@@ -69,7 +69,7 @@ function p(e) {
     size: s.zx.Sizes.MEDIUM,
     disabled: O,
     onClick: () => {
-      null == m || m(), E()
+      null == g || g(), E()
     },
     autoFocus: I,
     children: p
@@ -81,7 +81,7 @@ function p(e) {
     submitting: O,
     onClick: async () => {
       try {
-        await (null == g ? void 0 : g()), E()
+        await (null == m ? void 0 : m()), E()
       } catch (e) {
         throw e
       }

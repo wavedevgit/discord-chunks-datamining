@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(47120);
 var r = n(200651);
 n(192379);
@@ -53,14 +53,14 @@ function h(e, t) {
   }), e
 }
 
-function g(e, t, n) {
+function m(e, t, n) {
   var i, l;
   let {
     attributes: u,
     children: f,
     element: p,
-    decorations: g
-  } = e, v = E(null !== (i = null == g ? void 0 : g[0]) && void 0 !== i ? i : {});
+    decorations: m
+  } = e, v = E(null !== (i = null == m ? void 0 : m[0]) && void 0 !== i ? i : {});
   switch (p.type) {
     case "line":
       if (null === (l = p.codeBlockState) || void 0 === l ? void 0 : l.isInCodeBlock) return (0, r.jsx)("div", h(_({
@@ -85,7 +85,7 @@ function g(e, t, n) {
       }))
     }
     case "emoji":
-      return (0, r.jsxs)(m, {
+      return (0, r.jsxs)(g, {
         attributes: u,
         className: v,
         children: [(0, r.jsx)(s.dy, {
@@ -93,7 +93,7 @@ function g(e, t, n) {
         }), f]
       });
     case "customEmoji":
-      return (0, r.jsxs)(m, {
+      return (0, r.jsxs)(g, {
         attributes: u,
         className: v,
         children: [(0, r.jsx)(s.wP, {
@@ -101,7 +101,7 @@ function g(e, t, n) {
         }), f]
       });
     case "textMention":
-      return (0, r.jsxs)(m, {
+      return (0, r.jsxs)(g, {
         attributes: u,
         className: v,
         children: [(0, r.jsx)(s.Ox, {
@@ -111,7 +111,7 @@ function g(e, t, n) {
         }), f]
       });
     case "userMention":
-      return (0, r.jsxs)(m, {
+      return (0, r.jsxs)(g, {
         attributes: u,
         className: v,
         children: [(0, r.jsx)(s.cB, {
@@ -121,7 +121,7 @@ function g(e, t, n) {
         }), f]
       });
     case "roleMention":
-      return (0, r.jsxs)(m, {
+      return (0, r.jsxs)(g, {
         attributes: u,
         className: v,
         children: [(0, r.jsx)(s.Vq, {
@@ -130,7 +130,7 @@ function g(e, t, n) {
         }), f]
       });
     case "channelMention":
-      return (0, r.jsxs)(m, {
+      return (0, r.jsxs)(g, {
         attributes: u,
         className: v,
         children: [(0, r.jsx)(s.Io, {
@@ -138,7 +138,7 @@ function g(e, t, n) {
         }), f]
       });
     case "staticRouteLink":
-      return (0, r.jsxs)(m, {
+      return (0, r.jsxs)(g, {
         attributes: u,
         className: v,
         children: [(0, r.jsx)(s.NY, {
@@ -148,7 +148,7 @@ function g(e, t, n) {
         }), f]
       });
     case "soundboard":
-      return (0, r.jsxs)(m, {
+      return (0, r.jsxs)(g, {
         attributes: u,
         className: v,
         children: [(0, r.jsx)(a.ku, {
@@ -156,7 +156,7 @@ function g(e, t, n) {
         }), f]
       });
     case "commandMention":
-      return (0, r.jsxs)(m, {
+      return (0, r.jsxs)(g, {
         attributes: u,
         className: v,
         children: [(0, r.jsx)(s.Wf, {
@@ -165,7 +165,7 @@ function g(e, t, n) {
         }), f]
       });
     case "timestamp":
-      return (0, r.jsxs)(m, {
+      return (0, r.jsxs)(g, {
         attributes: u,
         className: v,
         children: [(0, r.jsx)(s.EK, {
@@ -176,7 +176,7 @@ function g(e, t, n) {
       return null
   }
 }
-let m = e => {
+let g = e => {
   let {
     className: t,
     attributes: n,

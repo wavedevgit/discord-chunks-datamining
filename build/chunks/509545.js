@@ -23,8 +23,8 @@ let f = {},
   _ = {},
   p = new Set,
   h = new Set,
-  g = {},
-  m = {};
+  m = {},
+  g = {};
 
 function E(e) {
   let t = e.skuId;
@@ -33,9 +33,9 @@ function E(e) {
   if (null != n) {
     var r;
     let t = new Set(Object.keys(n.paymentSourcePrices));
-    g[e.id] = t;
-    let i = Array.from(null !== (r = m[e.skuId]) && void 0 !== r ? r : new Set);
-    m[e.skuId] = new Set([...i, ...Array.from(t)])
+    m[e.id] = t;
+    let i = Array.from(null !== (r = g[e.skuId]) && void 0 !== r ? r : new Set);
+    g[e.skuId] = new Set([...i, ...Array.from(t)])
   }
   let i = _[t];
   null != i ? i.add(e.id) : _[t] = new Set([e.id])
@@ -72,7 +72,7 @@ function O(e) {
     skuId: t,
     subscriptionPlans: n
   } = e;
-  _[t] = new Set, m[t] = new Set, n.forEach(b), p.delete(t), h.delete(t)
+  _[t] = new Set, g[t] = new Set, n.forEach(b), p.delete(t), h.delete(t)
 }
 
 function S(e) {
@@ -97,7 +97,7 @@ function T(e) {
 }
 
 function N() {
-  (0, s.Ti)(f), (0, s.Ti)(_), p.clear(), h.clear(), (0, s.Ti)(g), (0, s.Ti)(m), v()
+  (0, s.Ti)(f), (0, s.Ti)(_), p.clear(), h.clear(), (0, s.Ti)(m), (0, s.Ti)(g), v()
 }
 v();
 let A = [u.rV.DAY, u.rV.MONTH, u.rV.YEAR];
@@ -151,14 +151,14 @@ class C extends(r = i.ZP.Store) {
     h.add(e)
   }
   getPaymentSourcesForPlanId(e) {
-    return g.hasOwnProperty(e) ? g[e] : null
+    return m.hasOwnProperty(e) ? m[e] : null
   }
   getPaymentSourceIds() {
     let e = new Set;
-    return Object.values(g).forEach(t => t.forEach(t => e.add(t))), e
+    return Object.values(m).forEach(t => t.forEach(t => e.add(t))), e
   }
   hasPaymentSourceForSKUId(e, t) {
-    return u.Si.NONE === t || null != m[t] && m[t].has(e)
+    return u.Si.NONE === t || null != g[t] && g[t].has(e)
   }
   hasPaymentSourceForSKUIds(e, t) {
     return t.every(t => this.hasPaymentSourceForSKUId(e, t))

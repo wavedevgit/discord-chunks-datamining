@@ -49,8 +49,8 @@ function p(e, t) {
   }), e
 }
 let h = 1500,
-  g = 1e4,
-  m = 1500,
+  m = 1e4,
+  g = 1500,
   E = null !== (a = window.requestIdleCallback) && void 0 !== a ? a : e => setImmediate(() => e()),
   v = new u.R,
   b = {
@@ -87,7 +87,7 @@ let h = 1500,
 
     function C() {
       null == o && A() && (o = E(R, {
-        timeout: m
+        timeout: g
       }))
     }
 
@@ -125,7 +125,7 @@ let h = 1500,
         rejectWithError: !1
       })
     }
-    m = null != I ? I : h, b.handleConnectionOpen = function(e) {
+    g = null != I ? I : h, b.handleConnectionOpen = function(e) {
       let {
         analyticsToken: t,
         user: n
@@ -155,10 +155,10 @@ let h = 1500,
           }, n),
           resolve: o
         }, l = N(s);
-        null != l && (s.properties.client_uuid = v.generate(l)), y.push(s), y.length > g && (y = y.slice(-g)), r ? R() : C()
+        null != l && (s.properties.client_uuid = v.generate(l)), y.push(s), y.length > m && (y = y.slice(-m)), r ? R() : C()
       }), !1
     };
-    class D extends(t = l.ZP.Store) {
+    class w extends(t = l.ZP.Store) {
       initialize() {
         null != T && this.waitFor(...T)
       }
@@ -166,5 +166,5 @@ let h = 1500,
         super(...e), d(this, "submitEventsImmediately", P)
       }
     }
-    return d(D, "displayName", "AnalyticsTrackingStore"), new D(n, a)
+    return d(w, "displayName", "AnalyticsTrackingStore"), new w(n, a)
   }

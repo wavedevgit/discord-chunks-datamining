@@ -24,8 +24,8 @@ function h(e) {
   i.useEffect(() => {
     h && ((0, s.Sn)(n.id), (0, s.Fm)(n.id))
   }, [h, n.id]);
-  let g = (0, c.Z)(n.id);
-  return h && null != g ? (0, r.jsxs)("div", {
+  let m = (0, c.Z)(n.id);
+  return h && null != m ? (0, r.jsxs)("div", {
     className: _.container,
     children: [(0, r.jsx)(o.X6, {
       variant: "heading-xxl/extrabold",
@@ -35,7 +35,7 @@ function h(e) {
       children: f.NW.string(d.Z.MYYPa2)
     }), (0, r.jsx)("div", {
       className: _.powerupsContainer,
-      children: null === (t = g[u.U.PERK]) || void 0 === t ? void 0 : t.map((e, t) => (0, r.jsx)(a.Q, {
+      children: null === (t = m[u.U.PERK]) || void 0 === t ? void 0 : t.map((e, t) => (0, r.jsx)(a.Q, {
         animatedCard: !0,
         heading: e.title,
         description: e.description,

@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Cf: () => g,
+  Cf: () => m,
   Fq: () => u,
   HP: () => c,
-  ID: () => m,
+  ID: () => g,
   IO: () => b,
   It: () => d,
   Re: () => f,
@@ -124,14 +124,14 @@ function h(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO",
     bio: e
   })
 }
 
-function m(e) {
+function g(e) {
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_PRONOUNS",
     pronouns: e

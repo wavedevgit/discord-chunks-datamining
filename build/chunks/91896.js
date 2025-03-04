@@ -36,8 +36,8 @@ function p(e) {
   return t.push(f(e.applicationId)), t.push(_(e.id)), t
 }
 let h = new o.h(p, e => "".concat(e.since)),
-  g = 0,
   m = 0,
+  g = 0,
   E = 0;
 
 function v() {
@@ -55,7 +55,7 @@ function v() {
       if (s.Z.isSpam(o) || s.Z.isIgnored(o)) return;
       e += 1
     }
-  }), g = e, m = t, E = n
+  }), m = e, g = t, E = n
 }
 
 function b(e) {
@@ -84,10 +84,10 @@ class T extends(r = i.ZP.Store) {
     this.waitFor(s.Z)
   }
   getPendingIncomingCount() {
-    return g
+    return m
   }
   getPendingOutgoingCount() {
-    return m
+    return g
   }
   getGameFriendCount() {
     return E

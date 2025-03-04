@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(168551),
   p = n(540059),
   h = n(19759),
-  g = n(823961),
-  m = n(706454),
+  m = n(823961),
+  g = n(706454),
   E = n(451478),
   v = n(597952),
   b = n(252618),
@@ -29,7 +29,7 @@ n(3692);
 let T = new Set([I.Z5c.LOGIN, I.Z5c.REGISTER]);
 
 function N(e) {
-  let t = (0, u.e7)([m.default], () => m.default.locale),
+  let t = (0, u.e7)([g.default], () => g.default.locale),
     n = (0, u.e7)([E.Z], () => E.Z.isFocused(), []),
     {
       theme: o,
@@ -50,9 +50,9 @@ function N(e) {
       useForcedColors: R,
       systemForcedColors: P
     } = _,
-    D = (0, u.e7)([g.Z], () => g.Z.confettiMode),
-    w = (0, l.TH)(),
-    L = i.useMemo(() => T.has(w.pathname), [w.pathname]);
+    w = (0, u.e7)([m.Z], () => m.Z.confettiMode),
+    D = (0, l.TH)(),
+    L = i.useMemo(() => T.has(D.pathname), [D.pathname]);
   (0, O.Z)(window, L);
   let x = (0, S.Z)(window, __OVERLAY__ || n),
     M = (0, u.e7)([h.Z], () => h.Z.sidebarWidth),
@@ -75,7 +75,7 @@ function N(e) {
       "show-redesigned-icons": k,
       "visual-refresh": j,
       "visual-refresh-chat-input": U,
-      "confetti-mode": D
+      "confetti-mode": w
     }, (0, f.QeD)(o), "density-".concat(s), (0, v.Z)(), N)
   })
 }

@@ -59,7 +59,7 @@ class h {
     }
   }
 }
-class g {
+class m {
   async startupLoad(e, t, n, r) {
     let i = s.Z.messages(e);
     return new h(await i.getLatest(t, n, r))
@@ -76,7 +76,7 @@ class g {
     !e.optimistic && !e.isPushNotification && null == e.sendMessageOptions && (0, u.$)(e.channelId) && this.upsertOne(e.guildId, e.channelId, e.message, t)
   }
   handleMessageUpdate(e, t) {
-    null != e.message.id && null != e.message.channel_id && (0, u.$)(e.message.channel_id) && (m(e.message) ? this.upsertOne(e.guildId, e.message.channel_id, e.message, t) : this.updateOne(e.guildId, e.message.channel_id, e.message, t))
+    null != e.message.id && null != e.message.channel_id && (0, u.$)(e.message.channel_id) && (g(e.message) ? this.upsertOne(e.guildId, e.message.channel_id, e.message, t) : this.updateOne(e.guildId, e.message.channel_id, e.message, t))
   }
   handleMessagePreviewsLoaded(e, t) {
     for (let n of e.messages)(0, u.$)(n.channel_id) && this.insertStale(e.guildId, n.channel_id, n, t)
@@ -154,7 +154,7 @@ class g {
   }
 }
 
-function m(e) {
+function g(e) {
   return null != e.author && null != e.content && null != e.mentions && null != e.timestamp
 }
-let E = new g
+let E = new m

@@ -21,8 +21,8 @@ function c(e) {
     _ = "</>",
     p = /<[A-Za-z0-9\\._:-]+\s*\/>/,
     h = /<[A-Za-z0-9\\._:-]+/,
-    g = /\/[A-Za-z0-9\\._:-]+>|\/>/,
-    m = (e, t) => {
+    m = /\/[A-Za-z0-9\\._:-]+>|\/>/,
+    g = (e, t) => {
       let n;
       let r = e[0].length + e.index,
         i = e.input[r];
@@ -150,20 +150,20 @@ function c(e) {
     contains: ["self"].concat(R)
   });
   let P = [].concat(C, S.contains),
-    D = P.concat([{
+    w = P.concat([{
       begin: /(\s*)\(/,
       end: /\)/,
       keywords: E,
       contains: ["self"].concat(P)
     }]),
-    w = {
+    D = {
       className: "params",
       begin: /(\s*)\(/,
       end: /\)/,
       excludeBegin: !0,
       excludeEnd: !0,
       keywords: E,
-      contains: D
+      contains: w
     },
     L = {
       variants: [{
@@ -207,7 +207,7 @@ function c(e) {
         3: "title.function"
       },
       label: "func.def",
-      contains: [w],
+      contains: [D],
       illegal: /%/
     },
     j = {
@@ -240,7 +240,7 @@ function c(e) {
       },
       contains: [{
         begin: /\(\)/
-      }, w]
+      }, D]
     },
     F = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
     Z = {
@@ -250,14 +250,14 @@ function c(e) {
         1: "keyword",
         3: "title.function"
       },
-      contains: [w]
+      contains: [D]
     };
   return {
     name: "JavaScript",
     aliases: ["js", "jsx", "mjs", "cjs"],
     keywords: E,
     exports: {
-      PARAMS_CONTAINS: D,
+      PARAMS_CONTAINS: w,
       CLASS_REFERENCE: x
     },
     illegal: /#(?![$_A-z])/,
@@ -295,7 +295,7 @@ function c(e) {
             excludeBegin: !0,
             excludeEnd: !0,
             keywords: E,
-            contains: D
+            contains: w
           }]
         }]
       }, {
@@ -312,13 +312,13 @@ function c(e) {
           match: p
         }, {
           begin: h,
-          "on:begin": m,
-          end: g
+          "on:begin": g,
+          end: m
         }],
         subLanguage: "xml",
         contains: [{
           begin: h,
-          end: g,
+          end: m,
           skip: !0,
           contains: ["self"]
         }]
@@ -329,7 +329,7 @@ function c(e) {
       begin: "\\b(?!function)" + e.UNDERSCORE_IDENT_RE + "\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)\\s*\\{",
       returnBegin: !0,
       label: "func.def",
-      contains: [w, e.inherit(e.TITLE_MODE, {
+      contains: [D, e.inherit(e.TITLE_MODE, {
         begin: d,
         className: "title.function"
       })]
@@ -344,7 +344,7 @@ function c(e) {
       className: {
         1: "title.function"
       },
-      contains: [w]
+      contains: [D]
     }, G, j, L, V, {
       match: /\$[(.]/
     }]

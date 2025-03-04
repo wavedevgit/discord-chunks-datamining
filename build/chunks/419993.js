@@ -15,8 +15,8 @@ var r, i = n(200651),
   _ = n(179240),
   p = n(388032),
   h = n(433398),
-  g = n(828854),
-  m = n(332952);
+  m = n(828854),
+  g = n(332952);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -132,9 +132,9 @@ class I extends(r = o.Component) {
       required: A,
       onInvalid: C,
       inputRef: R
-    } = this.props, P = N ? _.l : "textarea", D = this.hasError(), w = null !== (t = this.props["aria-labelledby"]) && void 0 !== t ? t : null === (e = this.context) || void 0 === e ? void 0 : e.titleId, L = this.getAriaDescribedBy();
+    } = this.props, P = N ? _.l : "textarea", w = this.hasError(), D = null !== (t = this.props["aria-labelledby"]) && void 0 !== t ? t : null === (e = this.context) || void 0 === e ? void 0 : e.titleId, L = this.getAriaDescribedBy();
     return (0, i.jsxs)("div", {
-      className: s()(g.inputWrapper, {
+      className: s()(m.inputWrapper, {
         [h.flex]: T
       }),
       children: [(0, i.jsxs)("div", {
@@ -144,14 +144,14 @@ class I extends(r = o.Component) {
         children: [(0, i.jsx)(c.t, {
           children: (0, i.jsx)(P, {
             type: "text",
-            className: s()(g.inputDefault, h.textArea, m.scrollbarDefault, O, {
-              [g.error]: D,
-              [g.disabled]: n,
+            className: s()(m.inputDefault, h.textArea, g.scrollbarDefault, O, {
+              [m.error]: w,
+              [m.disabled]: n,
               [h.resizeable]: v
             }),
-            "aria-labelledby": w,
+            "aria-labelledby": D,
             "aria-describedby": L,
-            "aria-invalid": D,
+            "aria-invalid": w,
             style: {
               paddingRight: this.getPaddingRight()
             },

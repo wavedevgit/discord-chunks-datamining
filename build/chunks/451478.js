@@ -63,7 +63,7 @@ function h(e) {
   }) : t
 }
 
-function g(e) {
+function m(e) {
   o()(!p.has(e.windowId), "Window initialized multiple times");
   let {
     width: t,
@@ -83,7 +83,7 @@ function g(e) {
   }), i && (_ = e.windowId), !0
 }
 
-function m(e) {
+function g(e) {
   let t = h(e.windowId);
   return t.isElementFullscreen !== e.isElementFullscreen && (p.set(e.windowId, f(u({}, t), {
     isElementFullscreen: e.isElementFullscreen
@@ -146,8 +146,8 @@ class O extends(r = a.ZP.Store) {
 }
 c(O, "displayName", "WindowStore");
 let S = new O(s.Z, {
-  WINDOW_INIT: g,
-  WINDOW_FULLSCREEN_CHANGE: m,
+  WINDOW_INIT: m,
+  WINDOW_FULLSCREEN_CHANGE: g,
   WINDOW_FOCUS: E,
   WINDOW_RESIZED: b,
   WINDOW_UNLOAD: y,

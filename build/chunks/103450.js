@@ -16,8 +16,8 @@ var r = n(192379),
   _ = n(255621),
   p = n(16609),
   h = n(452634),
-  g = n(527805),
-  m = n(620662),
+  m = n(527805),
+  g = n(620662),
   E = n(841784),
   v = n(275920),
   b = n(906732),
@@ -31,8 +31,8 @@ var r = n(192379),
   C = n(496675),
   R = n(699516),
   P = n(944486),
-  D = n(594174),
-  w = n(979651),
+  w = n(594174),
+  D = n(979651),
   L = n(181106),
   x = n(417363),
   M = n(358085),
@@ -52,7 +52,7 @@ function B(e) {
     onClose: W
   } = e, {
     analyticsLocations: Y
-  } = (0, b.ZP)(), [K, z] = r.useState(!1), q = null !== (t = null == F ? void 0 : F.applicationId) && void 0 !== t ? t : null == V ? void 0 : V.application_id, Q = null != F || (0, E.Z)(V), X = (0, o.e7)([D.default], () => D.default.getCurrentUser()), J = Z.id === (null == X ? void 0 : X.id), $ = (0, h.Z)({
+  } = (0, b.ZP)(), [K, z] = r.useState(!1), q = null !== (t = null == F ? void 0 : F.applicationId) && void 0 !== t ? t : null == V ? void 0 : V.application_id, Q = null != F || (0, E.Z)(V), X = (0, o.e7)([w.default], () => w.default.getCurrentUser()), J = Z.id === (null == X ? void 0 : X.id), $ = (0, h.Z)({
     channelId: (0, p.pY)(null == F ? void 0 : F.location),
     userId: Z.id,
     activity: V
@@ -68,12 +68,12 @@ function B(e) {
       location: n
     } = e;
     return (t === (null == V ? void 0 : V.application_id) || t === (null == F ? void 0 : F.applicationId)) && (0, p.pY)(n) === $
-  })), en = (0, o.e7)([L.Z], () => null != V && null != V.application_id && L.Z.getState(V.application_id, j.mFx.JOIN) === j.OcF.LOADING), er = (0, y.q)(q), ei = ((0, m.Z)(V, j.xjy.CONTEXTLESS) || (null == F ? void 0 : F.location.kind) === i.X.CONTEXTLESS) && Q, eo = (0, g.s5)({
+  })), en = (0, o.e7)([L.Z], () => null != V && null != V.application_id && L.Z.getState(V.application_id, j.mFx.JOIN) === j.OcF.LOADING), er = (0, y.q)(q), ei = ((0, g.Z)(V, j.xjy.CONTEXTLESS) || (null == F ? void 0 : F.location.kind) === i.X.CONTEXTLESS) && Q, eo = (0, m.s5)({
     userId: Z.id,
     activity: V,
     channelId: $,
     application: er
-  }), ea = (0, u.GK)(null != er ? er : void 0), es = (0, o.e7)([S.Z, N.Z, T.Z, R.Z, P.Z, w.Z, C.Z], () => null == F || ei ? (0, _.Z)({
+  }), ea = (0, u.GK)(null != er ? er : void 0), es = (0, o.e7)([S.Z, N.Z, T.Z, R.Z, P.Z, D.Z, C.Z], () => null == F || ei ? (0, _.Z)({
     user: Z,
     activity: V,
     application: er,
@@ -85,14 +85,14 @@ function B(e) {
     GuildMemberCountStore: T.Z,
     RelationshipStore: R.Z,
     SelectedChannelStore: P.Z,
-    VoiceStateStore: w.Z,
+    VoiceStateStore: D.Z,
     PermissionStore: C.Z
-  }) : eo === g.Fw.CAN_JOIN), el = (0, o.e7)([d.ZP], () => {
+  }) : eo === m.Fw.CAN_JOIN), el = (0, o.e7)([d.ZP], () => {
     if (Array.from(d.ZP.getSelfEmbeddedActivities().values()).some(e => e.applicationId === (null == F ? void 0 : F.applicationId) && e.location.id === (null == F ? void 0 : F.location.id))) return !0;
     let e = d.ZP.getCurrentEmbeddedActivity();
     return null != e && e.applicationId === (null == V ? void 0 : V.application_id) && e.location.kind === i.X.CONTEXTLESS
   }), ec = (0, c.O)(), eu = !M.isPlatformEmbedded;
-  if (!((0, m.Z)(V, j.xjy.JOIN) || Q) || null == q) return null;
+  if (!((0, g.Z)(V, j.xjy.JOIN) || Q) || null == q) return null;
   let ed = !J || Q && !el,
     ef = ed && (eu || ee) && !K && !et;
   ed ? eu || ee || null == V || (B = G.NW.formatToPlainString(G.t.SqJBnJ, {
@@ -102,7 +102,7 @@ function B(e) {
     ep = async (e, t) => {
       var n, r;
       if (null == e_ || null == q) return;
-      let i = (0, m.Z)(t, j.xjy.EMBEDDED),
+      let i = (0, g.Z)(t, j.xjy.EMBEDDED),
         o = P.Z.getVoiceChannelId(),
         a = S.Z.getChannel(o);
       await s.Z.join({
@@ -163,9 +163,9 @@ function B(e) {
         }
         await t()
       }
-    }, eg = es ? G.NW.string(G.t.VJlc0d) : G.NW.string(G.t.OKsSCQ);
-  return Q && !ea && (eg = G.NW.string(G.t["4i2vj4"])), el && (eg = G.NW.string(G.t.DPfdsr)), {
-    buttonCTA: eg,
+    }, em = es ? G.NW.string(G.t.VJlc0d) : G.NW.string(G.t.OKsSCQ);
+  return Q && !ea && (em = G.NW.string(G.t["4i2vj4"])), el && (em = G.NW.string(G.t.DPfdsr)), {
+    buttonCTA: em,
     tooltip: B,
     handleJoinRequest: eh,
     isEnabled: ef,

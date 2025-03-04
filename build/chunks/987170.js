@@ -82,7 +82,7 @@ function _(e) {
     }
   }
 
-  function g(n, r) {
+  function m(n, r) {
     let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
       o = null != i.disable && i.disable,
       a = d(e.kind, e.id, n),
@@ -100,7 +100,7 @@ function _(e) {
     }
   }
 
-  function m(t) {
+  function g(t) {
     let n = d(e.kind, e.id, t);
     return !!(null == n ? void 0 : n.aaMode)
   }
@@ -113,7 +113,7 @@ function _(e) {
         u = null !== (o = l.disable) && void 0 !== o && o,
         p = !1 !== l.autoTrackExposure,
         h = d(e.kind, e.id, n),
-        m = null == l.trackExposureOptions ? void 0 : (0, i.Z)(null !== (a = l.trackExposureOptions) && void 0 !== a ? a : {}),
+        g = null == l.trackExposureOptions ? void 0 : (0, i.Z)(null !== (a = l.trackExposureOptions) && void 0 !== a ? a : {}),
         E = null !== (s = null == h ? void 0 : h.triggerDebuggingEnabled) && void 0 !== s && s,
         [
           [v, b, y], O
@@ -123,14 +123,14 @@ function _(e) {
         }),
         S = (0, i.Z)(n);
       return (0, r.useEffect)(() => {
-        !u && (p || E) && null == e.commonTriggerPoint && _(S, m, !1 === p)
-      }, [u, p, S, m, b, y, E]), (0, r.useEffect)(() => g(S, (e, t, n) => {
+        !u && (p || E) && null == e.commonTriggerPoint && _(S, g, !1 === p)
+      }, [u, p, S, g, b, y, E]), (0, r.useEffect)(() => m(S, (e, t, n) => {
         O(r => r[0] === e && r[1] === t && r[2] === n ? r : [e, t, n])
       }, {
         disable: u
       }), [u, S]), v
     },
-    subscribe: g,
+    subscribe: m,
     trackExposure: p,
     getCurrentConfig: function(n) {
       let r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
@@ -145,6 +145,6 @@ function _(e) {
       return f(e, i.bucket, t, i)
     },
     definition: e,
-    isAAMode: m
+    isAAMode: g
   }
 }

@@ -16,13 +16,13 @@ var r = n(200651),
   _ = n(231338),
   p = n(388032),
   h = n(449383),
-  g = n(512668),
-  m = n(179998);
+  m = n(512668),
+  g = n(179998);
 
 function E(e) {
   let {
     markAsDismissed: t
-  } = e, n = (0, o.e7)([u.Z], () => u.Z.theme) === _.BR.LIGHT ? m.Z : g.Z, E = i.useCallback(() => {
+  } = e, n = (0, o.e7)([u.Z], () => u.Z.theme) === _.BR.LIGHT ? g.Z : m.Z, E = i.useCallback(() => {
     (0, l.RO)(f.X1.SOUNDBOARD, s.Ie.NORMAL)
   }, []);
   return (0, r.jsx)(c.ZP, {

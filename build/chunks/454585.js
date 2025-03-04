@@ -61,10 +61,10 @@ let h = {
     enableBuildOverrides: !1,
     enableEmojiClick: !0
   },
-  g = p(s.Z.RULES, [(0, a.Z)({
+  m = p(s.Z.RULES, [(0, a.Z)({
     enableBuildOverrides: !0
   })]),
-  m = i().omit(p(s.Z.RULES, [(0, a.Z)(h)]), "paragraph", "newline"),
+  g = i().omit(p(s.Z.RULES, [(0, a.Z)(h)]), "paragraph", "newline"),
   E = p(s.Z.CHANNEL_TOPIC_RULES, [(0, a.Z)(f(u({}, h), {
     emojiTooltipPosition: "bottom"
   })), {
@@ -88,13 +88,13 @@ let h = {
     combineAndInjectMentionRule: p,
     createReactRules: a.Z,
     defaultReactRuleOptions: h,
-    defaultRules: g,
+    defaultRules: m,
     guildEventRules: S,
     notifCenterV2MessagePreviewRules: T,
     lockscreenWidgetMessageRules: N,
     astParserFor: o._p,
     reactParserFor: o.w4,
-    parse: o.w4(g),
+    parse: o.w4(m),
     parseTopic: (e, t, n, r) => o.w4(E)(e, t, u({
       allowLinks: !0
     }, n), r),
@@ -104,8 +104,8 @@ let h = {
     parseGuildVerificationFormRule: o.w4(O),
     parseGuildEventDescription: o.w4(S),
     parseAutoModerationSystemMessage: o.w4(I),
-    parseForumPostGuidelines: o.w4(m),
-    parseToAST: o._p(g),
+    parseForumPostGuidelines: o.w4(g),
+    parseToAST: o._p(m),
     parseTopicToAST: o._p(E),
     parseEmbedTitleToAST: o._p(b),
     parseInlineReplyToAST: o._p(y),

@@ -25,7 +25,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function m(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -101,11 +101,11 @@ function y(e) {
       variant: "heading-deprecated-12/semibold",
       children: _.NW.string(_.t["5C107O"])
     }), l.map(e => b(e, null == n ? void 0 : n[e.name], o))]
-  }) : null, m = u.length > 0 ? (0, r.jsx)(s.ua7, {
+  }) : null, g = u.length > 0 ? (0, r.jsx)(s.ua7, {
     text: d,
     "aria-label": !1,
     delay: v,
-    children: e => (0, r.jsx)(c.Z, E(g({
+    children: e => (0, r.jsx)(c.Z, E(m({
       className: p.optionalCount,
       color: c.Z.Colors.MUTED
     }, e), {
@@ -117,9 +117,9 @@ function y(e) {
     }))
   }) : null;
   return (0, r.jsxs)(r.Fragment, {
-    children: [f, null != h || null != m ? (0, r.jsxs)("div", {
+    children: [f, null != h || null != g ? (0, r.jsxs)("div", {
       className: p.optionals,
-      children: [h, m]
+      children: [h, g]
     }) : null]
   })
 }
@@ -131,8 +131,8 @@ function O(e) {
       activeOptionName: u,
       channel: _,
       showOptions: h,
-      showImage: g,
-      optionStates: m,
+      showImage: m,
+      optionStates: g,
       onOptionClick: E,
       section: v,
       isSelectable: b = !0
@@ -141,9 +141,9 @@ function O(e) {
       var e;
       return null == c ? void 0 : null === (e = c.options) || void 0 === e ? void 0 : e.find(e => e.name === u)
     }, [u, c]),
-    S = null != u ? null == m ? void 0 : m[u] : null;
+    S = null != u ? null == g ? void 0 : g[u] : null;
   s = null != S && (null === (t = S.lastValidationResult) || void 0 === t ? void 0 : t.success) === !1 ? null !== (n = S.lastValidationResult.error) && void 0 !== n ? n : "" : null;
-  let I = g && null != v ? (0, d.ky)(v) : null;
+  let I = m && null != v ? (0, d.ky)(v) : null;
   return (0, r.jsxs)("div", {
     className: a()(p.wrapper, b ? null : p.disabled),
     children: [null != I ? (0, r.jsx)(I, {
@@ -161,7 +161,7 @@ function O(e) {
           children: f.GI + c.displayName
         }), h ? (0, r.jsx)(y, {
           command: c,
-          optionStates: m,
+          optionStates: g,
           onOptionClick: E
         }) : null]
       }), (0, r.jsx)(l.wL, {

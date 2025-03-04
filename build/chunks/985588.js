@@ -28,9 +28,9 @@ function f(e) {
       location: t
     }),
     h = null == a ? void 0 : a.type,
-    g = h === d.d4z.GUILD_VOICE,
-    m = null != h && d.TPd.CALLABLE.has(h),
-    E = g && p && _ || m;
+    m = h === d.d4z.GUILD_VOICE,
+    g = null != h && d.TPd.CALLABLE.has(h),
+    E = m && p && _ || g;
   return f && !u && !e.bot && !e.system && !e.isProvisional && E
 }
 

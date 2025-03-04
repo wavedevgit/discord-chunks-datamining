@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   G: () => p,
-  W: () => g
+  W: () => m
 });
 var r = n(442837),
   i = n(496929),
@@ -36,6 +36,6 @@ function h() {
   }), t
 }
 
-function g() {
+function m() {
   return null != h()
 }

@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(585483),
   p = n(70956),
   h = n(36703),
-  g = n(347312),
-  m = n(981631),
+  m = n(347312),
+  g = n(981631),
   E = n(388032),
   v = n(667259);
 let b = i.lazy(() => n.e("89792").then(n.bind(n, 711635)));
@@ -52,10 +52,10 @@ function O(e, t, n) {
 
 function S(e, t, n) {
   i.useEffect(() => {
-    if (t) return _.S.dispatch(m.CkL.VOICE_MESSAGE_PLAYBACK_STARTED, {
+    if (t) return _.S.dispatch(g.CkL.VOICE_MESSAGE_PLAYBACK_STARTED, {
       src: e
-    }), _.S.subscribe(m.CkL.VOICE_MESSAGE_PLAYBACK_STARTED, r), () => {
-      _.S.unsubscribe(m.CkL.VOICE_MESSAGE_PLAYBACK_STARTED, r)
+    }), _.S.subscribe(g.CkL.VOICE_MESSAGE_PLAYBACK_STARTED, r), () => {
+      _.S.unsubscribe(g.CkL.VOICE_MESSAGE_PLAYBACK_STARTED, r)
     };
 
     function r(t) {
@@ -72,7 +72,7 @@ let I = i.memo(function(e) {
       volume: o = 1,
       onVolumeChange: d,
       onMute: _,
-      waveform: m,
+      waveform: g,
       durationSecs: I,
       onVolumeShow: T,
       onVolumeHide: N,
@@ -81,7 +81,7 @@ let I = i.memo(function(e) {
       onError: R
     } = e,
     P = i.useRef(null),
-    [D, w] = i.useState(0),
+    [w, D] = i.useState(0),
     [L, x] = i.useState(I),
     [M, k] = i.useState(!1),
     [j, U] = i.useState(!1),
@@ -125,13 +125,13 @@ let I = i.memo(function(e) {
       B(!0)
     }, []),
     er = i.useCallback(() => {
-      B(!1), D === L && X()
-    }, [D, L, X]),
+      B(!1), w === L && X()
+    }, [w, L, X]),
     ei = i.useCallback(e => {
       let t = P.current;
       if (null == L || null == t) return;
       let n = e * L;
-      w(n), t.currentTime = n, F(!0), clearTimeout(K.current), K.current = void 0
+      D(n), t.currentTime = n, F(!0), clearTimeout(K.current), K.current = void 0
     }, [L]);
   i.useEffect(() => {
     !V && j && F(!0)
@@ -139,7 +139,7 @@ let I = i.memo(function(e) {
   let eo = i.useRef(null),
     ea = {
       played: V,
-      currentTime: D,
+      currentTime: w,
       onPause: C,
       onPlay: A
     },
@@ -164,7 +164,7 @@ let I = i.memo(function(e) {
         null == n || n(t, i), eo.current = null
       }
     }
-  }, [j]), O(P, j, w), S(n, j, U);
+  }, [j]), O(P, j, D), S(n, j, U);
   let el = j ? l.fpf : l.o1U,
     ec = j ? E.NW.string(E.t.ZcgDJS) : E.NW.string(E.t.RscU7O);
   "Safari" === platform.name ? t = (0, r.jsx)(i.Suspense, {
@@ -224,10 +224,10 @@ let I = i.memo(function(e) {
         width: 18,
         height: 18
       })
-    }), (0, r.jsx)(g.Z, {
+    }), (0, r.jsx)(m.Z, {
       className: v.waveform,
-      waveform: m,
-      currentTime: D,
+      waveform: g,
+      currentTime: w,
       duration: null != L ? L : 1,
       playing: j,
       played: V,
@@ -236,7 +236,7 @@ let I = i.memo(function(e) {
       onDragEnd: er
     }), (0, r.jsx)(y, {
       played: V,
-      currentTime: D,
+      currentTime: w,
       duration: L
     }), (0, r.jsx)(f.Z, {
       className: v.volumeButton,

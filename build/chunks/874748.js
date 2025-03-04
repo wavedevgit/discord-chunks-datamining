@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  BC: () => g,
+  BC: () => m,
   LR: () => p,
   ku: () => _
 }), n(266796), n(789020);
@@ -22,8 +22,8 @@ function _(e) {
     mediaPostEmbedData: c,
     guild: _,
     parentChannel: p,
-    postThread: g,
-    user: m,
+    postThread: m,
+    user: g,
     selectedGuildId: E,
     canAccess: v = !1
   } = e;
@@ -31,8 +31,8 @@ function _(e) {
   let b = (0, l.EY)(c.thumbnail),
     y = !v && c.has_media_attachment,
     O = v ? d.NW.string(d.t.UsZEBA) : d.NW.string(d.t.ReFzYW),
-    S = null != m ? s.ZP.getName(c.guild_id, c.channel_id, m) : void 0,
-    I = null == m ? void 0 : m.getAvatarURL(null == _ ? void 0 : _.id, f);
+    S = null != g ? s.ZP.getName(c.guild_id, c.channel_id, g) : void 0,
+    I = null == g ? void 0 : g.getAvatarURL(null == _ ? void 0 : _.id, f);
   (null == I || E !== c.guild_id) && (I = a.ZP.getGuildIconURL({
     id: c.guild_id,
     icon: c.guild_icon,
@@ -49,7 +49,7 @@ function _(e) {
     coverImageOverlayText: y ? d.NW.string(d.t.YonliY) : void 0,
     parentChannelId: c.parent_channel_id,
     threadId: c.channel_id,
-    postThread: g,
+    postThread: m,
     messageId: c.message_id,
     canAccess: v,
     guildId: c.guild_id,
@@ -84,7 +84,7 @@ function h(e) {
   return null != t && null != n && t >= n
 }
 
-function g(e, t) {
+function m(e, t) {
   let n = o.Z.getGuild(e);
   if (null == n || null == t) return !1;
   let r = n.hasFeature(c.oNc.CREATOR_MONETIZABLE) || n.hasFeature(c.oNc.CREATOR_MONETIZABLE_PROVISIONAL);

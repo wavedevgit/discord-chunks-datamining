@@ -39,7 +39,7 @@ function h(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,8 +50,8 @@ function g(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -103,12 +103,12 @@ function O(e, t) {
           }, t)), null != f && (clearTimeout(f), f = null), n ? s() : s(e = null != e ? e : "Unknown hook error")
         },
         p = a.ZP.getOverlayOptionsForPID(e),
-        g = m(h({}, o.r, p), {
+        m = g(h({}, o.r, p), {
           elevate: a.ZP.shouldElevateProcessForPID(e)
         });
-      null == g.allowHook || g.allowHook ? (f = setTimeout(() => {
+      null == m.allowHook || m.allowHook ? (f = setTimeout(() => {
         n.cancelAttachToProcess(e), l("Timed out waiting for hook response", !1)
-      }, 12e4), n.attachToProcess(e, g, l), r.Z.wait(() => i.Z.clearElevatedProcess())) : s("Hook is disabled for this game")
+      }, 12e4), n.attachToProcess(e, m, l), r.Z.wait(() => i.Z.clearElevatedProcess())) : s("Hook is disabled for this game")
     })
   })
 }

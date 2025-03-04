@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  V: () => D,
-  Z: () => w
+  V: () => w,
+  Z: () => D
 }), n(518263), n(970173), n(520712), n(268111), n(941497), n(32026), n(480839), n(744285), n(492257), n(873817), n(610885), n(126298), n(47120), n(26686), n(789020);
 var r = n(512722),
   i = n.n(r),
@@ -52,8 +52,8 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = 3,
-  m = 8;
+let m = 3,
+  g = 8;
 
 function E() {}
 let v = 20 * c.Z.Millis.SECOND,
@@ -117,16 +117,16 @@ function P(e) {
     } : void 0
   }))) && void 0 !== t ? t : []
 }
-var D = function(e) {
+var w = function(e) {
   return e.Connecting = "connecting", e.Connect = "connect", e.Disconnect = "disconnect", e.Resuming = "resuming", e.Ready = "ready", e.Speaking = "speaking", e.Video = "video", e.Ping = "ping", e.ClientConnect = "client-connect", e.ClientDisconnect = "client-disconnect", e.Codecs = "codecs", e.MediaSessionId = "media-session-id", e.MediaSinkWants = "media-sink-wants", e.VoiceBackendVersion = "voice-backend-version", e.KeyframeInterval = "keyframe-interval", e.ChannelOptionsUpdateSecureFramesProtocol = "update-secure-frames-protocol", e.Flags = "flags", e.Platform = "platform", e.SDP = "sdp", e.Encryption = "encryption", e.BandwidthEstimationExperiment = "bandwidth-estimation-experiment", e.SecureFramesInit = "secure-frames-init", e.SecureFramesPrepareTransition = "secure-frames-prepare-transition", e.SecureFramesExecuteTransition = "secure-frames-execute-transition", e.SecureFramesPrepareEpoch = "secure-frames-prepare-epoch", e.MLSExternalSenderPackage = "mls-external-sender-package", e.MLSProposals = "mls-proposals", e.MLSPrepareCommitTransition = "mls-prepare-commit-transition", e.MLSWelcome = "mls-welcome", e
 }({});
-class w extends a.Z {
+class D extends a.Z {
   createWebSocket() {
     this.logger.info("[CONNECT] ".concat(this.url)), null !== this.webSocket && (this.logger.error("Connect called with already existing websocket"), this.cleanupWebSocket(e => e.close(4e3))), this.connectionStartTime = Date.now(), this.helloTimeout = setTimeout(() => {
       let e = Date.now() - this.connectionStartTime;
       this.handleClose(!1, 0, "The connection timed out after ".concat(e, " ms - did not receive OP_HELLO in time."))
     }, v);
-    let e = this.webSocket = new WebSocket("".concat(this.url, "?v=").concat(m));
+    let e = this.webSocket = new WebSocket("".concat(this.url, "?v=").concat(g));
     e.binaryType = "arraybuffer", e.onopen = () => {
       1 === this.connectionState ? this.emit("connect") : 5 === this.connectionState && this.doResumeOrClose(), this.connectionState = 4;
       let e = Date.now() - this.connectionStartTime;
@@ -270,7 +270,7 @@ class w extends a.Z {
   }
   handleHello(e) {
     var t, n, r;
-    if (this.serverVersion = null !== (t = e.v) && void 0 !== t ? t : g, this.serverVersion <= 3) {
+    if (this.serverVersion = null !== (t = e.v) && void 0 !== t ? t : m, this.serverVersion <= 3) {
       let t = u.isPlatformEmbedded ? O : S;
       this.heartbeatInterval = e.heartbeat_interval * t
     } else this.heartbeatInterval = e.heartbeat_interval * this.heartbeatIntervalModifier, u.isPlatformEmbedded || (this.heartbeatInterval = Math.min(I, null !== (n = this.heartbeatInterval) && void 0 !== n ? n : NaN));

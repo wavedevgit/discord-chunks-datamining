@@ -63,23 +63,23 @@ function u(e) {
         null === (e = f.current) || void 0 === e || e.delay()
       }
     }, [d, f, u]),
-    g = i.useCallback(() => {
+    m = i.useCallback(() => {
       var e;
       !(d.current.size > 0) && (null === (e = f.current) || void 0 === e || e.cancel(), u(!0))
     }, [f, u]),
-    m = i.useMemo(() => ({
+    g = i.useMemo(() => ({
       onAllowIdle: p,
       onPreventIdle: _,
       onActive: h,
-      onForceIdle: g
-    }), [p, _, h, g]);
+      onForceIdle: m
+    }), [p, _, h, m]);
   return (0, r.jsx)(c.Provider, {
     value: a,
     children: (0, r.jsx)(l.Provider, {
-      value: m,
+      value: g,
       children: t(s({
         idle: a
-      }, m))
+      }, g))
     })
   })
 }

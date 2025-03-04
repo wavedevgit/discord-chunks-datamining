@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   ZP: () => E,
-  tS: () => g,
-  x3: () => m
+  tS: () => m,
+  x3: () => g
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -19,7 +19,7 @@ var r = n(200651),
   p = n(561308),
   h = n(32515);
 
-function g(e) {
+function m(e) {
   let [t, n] = i.useState(Date.now()), r = (0, _.n)(), o = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), a = !r || o && !e;
   return i.useEffect(() => {
     let e = new l.Xp;
@@ -31,7 +31,7 @@ function g(e) {
     slowTickMode: a
   }
 }
-let m = e => {
+let g = e => {
     let {
       entry: t,
       inline: n = !1,
@@ -41,11 +41,11 @@ let m = e => {
       scaleFontToUserSetting: u = !1
     } = e, {
       now: d
-    } = g(s), f = i.useMemo(() => (0, p.T_)(t, d), [t, d]), _ = i.useRef(f), m = i.useRef(f);
+    } = m(s), f = i.useMemo(() => (0, p.T_)(t, d), [t, d]), _ = i.useRef(f), g = i.useRef(f);
     return i.useEffect(() => {
-      m.current = f
+      g.current = f
     }), i.useEffect(() => {
-      _.current = m.current
+      _.current = g.current
     }, [t]), (0, r.jsx)(c.Text, {
       className: a()(h.timestamp, {
         [h.inlineTimestamp]: n,
@@ -67,7 +67,7 @@ let m = e => {
       bold: o = !1,
       scaleFontToUserSetting: a = !1
     } = e, l = (0, p.Jg)(t), u = (0, s.e7)([d.default], () => d.default.locale);
-    return l ? (0, r.jsx)(m, {
+    return l ? (0, r.jsx)(g, {
       entry: t,
       textColor: n,
       hovered: i,

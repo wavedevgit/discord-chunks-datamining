@@ -15,8 +15,8 @@ var r, i = n(392711),
   _ = n(709054),
   p = n(344185),
   h = n(569471),
-  g = n(819168),
-  m = n(176505);
+  m = n(819168),
+  g = n(176505);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -68,15 +68,15 @@ let O = {},
 function P() {
   for (let e in O = {}, N = {}, S = {}, I = {}, T = {}, C = f.Z.getChannelId(), R) clearTimeout(R[e]);
   R = {}, p.Z.forEachGuild(e => {
-    w(e)
+    D(e)
   }), L()
 }
 
-function D(e) {
-  for (let t in delete O[e], delete N[e], delete S[e], delete I[e], delete T[e], w(e), I[e]) M(e, t)
+function w(e) {
+  for (let t in delete O[e], delete N[e], delete S[e], delete I[e], delete T[e], D(e), I[e]) M(e, t)
 }
 
-function w(e) {
+function D(e) {
   let t = p.Z.getThreadsForGuild(e);
   for (let e in t)
     for (let n in t[e]) {
@@ -252,21 +252,21 @@ function Z() {
 }
 
 function H(e) {
-  if (e.channels.length > 0) return D(e.guildId)
+  if (e.channels.length > 0) return w(e.guildId)
 }
 
 function W(e) {
   let {
     guild: t
   } = e;
-  return D(t.id)
+  return w(t.id)
 }
 
 function Y(e) {
   let {
     guildId: t
   } = e;
-  return D(t)
+  return w(t)
 }
 
 function K(e) {
@@ -282,9 +282,9 @@ function z() {
 function q(e) {
   let t = d.ZP.getMentionCount(e.id) > 0,
     n = d.ZP.hasUnread(e.id) && !h.Z.isMuted(e.id),
-    r = e.hasFlag(m.zZ.PINNED),
+    r = e.hasFlag(g.zZ.PINNED),
     i = e.isActiveThread(),
-    o = i && (0, g.Z)(e) > Date.now();
+    o = i && (0, m.Z)(e) > Date.now();
   return {
     isUnread: (i || r) && n || t,
     isRelevant: o || r || n || t,
@@ -303,7 +303,7 @@ function X(e) {
       type: "THREAD_UPDATE",
       channel: t
     })
-  }, (0, g.Z)(e) - Date.now() + 1)
+  }, (0, m.Z)(e) - Date.now() + 1)
 }
 
 function J(e) {

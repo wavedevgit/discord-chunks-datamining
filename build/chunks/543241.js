@@ -10,10 +10,10 @@ n.d(t, {
   MZ: () => W,
   NJ: () => Z,
   Nf: () => U,
-  PC: () => D,
+  PC: () => w,
   Y1: () => G,
   fe: () => k,
-  jA: () => w,
+  jA: () => D,
   kI: () => R,
   nV: () => K,
   q5: () => F,
@@ -34,8 +34,8 @@ var r = n(192379),
   _ = n(675478),
   p = n(430824),
   h = n(771845),
-  g = n(594174),
-  m = n(626135),
+  m = n(594174),
+  g = n(626135),
   E = n(70956),
   v = n(176354),
   b = n(111361),
@@ -55,7 +55,7 @@ let R = function(e, t) {
       s = V(n),
       _ = F(n),
       {
-        canSplitFrecencyList: m
+        canSplitFrecencyList: g
       } = (0, c.S)({
         location: "useEmojiCategories",
         autoTrackExposure: !0
@@ -81,12 +81,12 @@ let R = function(e, t) {
         newlyAddedEmojis: A
       }),
       P = (0, a.e7)([l.ZP], () => l.ZP.getDisambiguatedEmojiContext(n), [n]),
-      D = (0, a.e7)([p.Z], () => {
+      w = (0, a.e7)([p.Z], () => {
         var e;
         return null === (e = p.Z.getGuild(n)) || void 0 === e ? void 0 : e.name
       }),
-      w = (0, a.e7)([g.default], () => g.default.getCurrentUser()),
-      L = (0, b.I5)(w),
+      D = (0, a.e7)([m.default], () => m.default.getCurrentUser()),
+      L = (0, b.I5)(D),
       x = (0, f.g2)({
         location: "useEmojiCategories"
       });
@@ -139,7 +139,7 @@ let R = function(e, t) {
             type: S.En.TOP_GUILD_EMOJI,
             id: r,
             name: C.NW.formatToPlainString(C.t.W6Wi1d, {
-              guildName: D
+              guildName: w
             }),
             isNitroLocked: !1,
             emojis: n,
@@ -149,7 +149,7 @@ let R = function(e, t) {
           let {
             emojisDisabled: n,
             emojisUnfiltered: i
-          } = d(e === T.Hz.REACTION && (m || E) ? _ : s);
+          } = d(e === T.Hz.REACTION && (g || E) ? _ : s);
           if (null == i || 0 === i.length) return t;
           t.push({
             type: S.En.RECENT,
@@ -184,22 +184,22 @@ let R = function(e, t) {
         });
         return t
       }, x && i ? [u] : [])
-    }, [P, t, n, e, L, R, D, m, E, _, s, I, o, x, i])
+    }, [P, t, n, e, L, R, w, g, E, _, s, I, o, x, i])
   },
   P = e => {
     let t = (null == e ? void 0 : e.getGuildId()) != null;
-    m.default.track(I.rMx.PREMIUM_PROMOTION_OPENED, {
+    g.default.track(I.rMx.PREMIUM_PROMOTION_OPENED, {
       location_page: t ? I.ZY5.GUILD_CHANNEL : I.ZY5.DM_CHANNEL,
       location_section: null != e ? I.jXE.EMOJI_PICKER_POPOUT : I.jXE.CUSTOM_STATUS_MODAL
     })
   },
-  D = (e, t) => {
+  w = (e, t) => {
     s.ZP.trackWithMetadata(I.rMx.SEARCH_STARTED, {
       search_type: null != t && t === T.Hz.REACTION ? I.aib.EMOJI_REACTION : I.aib.EMOJI,
       location: e
     })
   },
-  w = (e, t, n, r, i) => {
+  D = (e, t, n, r, i) => {
     s.ZP.trackWithMetadata(I.rMx.SEARCH_RESULT_VIEWED, {
       search_type: null != i && i === T.Hz.REACTION ? I.aib.EMOJI_REACTION : I.aib.EMOJI,
       total_results: e,

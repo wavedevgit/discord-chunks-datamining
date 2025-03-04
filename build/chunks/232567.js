@@ -4,7 +4,7 @@ n.d(t, {
   In: () => y,
   Lr: () => E,
   PR: () => b,
-  k: () => m,
+  k: () => g,
   mB: () => v
 }), n(789020);
 var r = n(512722),
@@ -40,9 +40,9 @@ function h(e) {
   }
   return e
 }
-let g = new a.Yd("UserProfileModalActionCreators");
+let m = new a.Yd("UserProfileModalActionCreators");
 
-function m() {
+function g() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
     {
       withAnalyticsToken: t = !1
@@ -147,7 +147,7 @@ async function y(e) {
       guildMember: c.body.guild_member
     }), c.body
   } catch (t) {
-    throw null != t && (null == t ? void 0 : t.body) != null && g.warn("fetchProfile error: ".concat(t.body.code, " - ").concat(t.body.message)), l.Z.dispatch({
+    throw null != t && (null == t ? void 0 : t.body) != null && m.warn("fetchProfile error: ".concat(t.body.code, " - ").concat(t.body.message)), l.Z.dispatch({
       type: "USER_PROFILE_FETCH_FAILURE",
       apiError: new c.Hx(t),
       userId: e,

@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(410575),
   p = n(350810),
   h = n(751688),
-  g = n(199902),
-  m = n(594174),
+  m = n(199902),
+  g = n(594174),
   E = n(823379),
   v = n(5192),
   b = n(354459),
@@ -116,7 +116,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     users: t,
     guildId: n,
@@ -144,7 +144,7 @@ function D(e) {
     })
   })
 }
-let w = [];
+let D = [];
 
 function L(e) {
   let {
@@ -155,12 +155,12 @@ function L(e) {
     compact: v = !1,
     disableInteraction: O = !1,
     maxVisibleUsers: I = 3
-  } = e, N = (0, p.Z)(), [R, L] = i.useState(!1), x = i.useRef(new u.sW(C, () => L(!1))), M = (0, c.Wu)([g.Z, m.default], () => {
+  } = e, N = (0, p.Z)(), [R, L] = i.useState(!1), x = i.useRef(new u.sW(C, () => L(!1))), M = (0, c.Wu)([m.Z, g.default], () => {
     if (s.type === b.fO.STREAM) {
-      let e = g.Z.getViewerIds(s.id);
-      return e.length > 0 ? e.map(e => m.default.getUser(e)).filter(E.lm) : w
+      let e = m.Z.getViewerIds(s.id);
+      return e.length > 0 ? e.map(e => g.default.getUser(e)).filter(E.lm) : D
     }
-    return s.type === b.fO.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => m.default.getUser(e.userId)).filter(E.lm) : w
+    return s.type === b.fO.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => g.default.getUser(e.userId)).filter(E.lm) : D
   }, [s]);
   i.useEffect(() => {
     N && (x.current.cancel(), L(!1))
@@ -184,7 +184,7 @@ function L(e) {
       })
     }, [j, k]);
   if (0 === M.length) return null;
-  if (v) return (0, r.jsx)(D, {
+  if (v) return (0, r.jsx)(w, {
     maxVisibleUsers: I,
     users: M,
     guildId: o,

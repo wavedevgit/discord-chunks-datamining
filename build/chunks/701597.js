@@ -173,18 +173,18 @@ class f {
     var e, t, n, r, o, a, s, l, c, d, f, _;
     let p = Math.min(i.ef, null !== (s = null === (e = this.goliveMaxQuality.encode) || void 0 === e ? void 0 : e.width) && void 0 !== s ? s : i.ef),
       h = Math.min(i.ru, null !== (l = null === (t = this.goliveMaxQuality.encode) || void 0 === t ? void 0 : t.height) && void 0 !== l ? l : i.ru),
-      g = Math.min(i.R$, null !== (c = null === (n = this.goliveMaxQuality.encode) || void 0 === n ? void 0 : n.framerate) && void 0 !== c ? c : i.R$),
-      m = Math.min(i.ef, null !== (d = null === (r = this.goliveMaxQuality.capture) || void 0 === r ? void 0 : r.width) && void 0 !== d ? d : i.ef);
+      m = Math.min(i.R$, null !== (c = null === (n = this.goliveMaxQuality.encode) || void 0 === n ? void 0 : n.framerate) && void 0 !== c ? c : i.R$),
+      g = Math.min(i.ef, null !== (d = null === (r = this.goliveMaxQuality.capture) || void 0 === r ? void 0 : r.width) && void 0 !== d ? d : i.ef);
     return new u({
       capture: {
-        width: m,
+        width: g,
         height: Math.min(i.ru, null !== (f = null === (o = this.goliveMaxQuality.capture) || void 0 === o ? void 0 : o.height) && void 0 !== f ? f : i.ru),
         framerate: Math.min(i.R$, null !== (_ = null === (a = this.goliveMaxQuality.capture) || void 0 === a ? void 0 : a.framerate) && void 0 !== _ ? _ : i.R$)
       },
       encode: {
         width: p,
         height: h,
-        framerate: g,
+        framerate: m,
         pixelCount: p * h
       },
       bitrateMin: i.UC,

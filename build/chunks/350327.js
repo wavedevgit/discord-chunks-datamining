@@ -6,12 +6,12 @@ n.d(t, {
   ID: () => y,
   US: () => T,
   Xz: () => N,
-  Z: () => g,
+  Z: () => m,
   c_: () => I,
   f4: () => A,
   g_: () => v,
   ho: () => E,
-  pG: () => m,
+  pG: () => g,
   rf: () => C,
   x3: () => R,
   z5: () => S
@@ -55,7 +55,7 @@ function h(e) {
     feature_tier: f.h1.PREMIUM_STANDARD
   })
 }
-async function g(e, t) {
+async function m(e, t) {
   var n, c, u;
   let f = null === (n = l.default.getCurrentUser()) || void 0 === n ? void 0 : n.id;
   if (null == f) return;
@@ -99,7 +99,7 @@ async function g(e, t) {
   }
 }
 
-function m() {
+function g() {
   i.Z.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_PROFILE_CHANGES"
   })

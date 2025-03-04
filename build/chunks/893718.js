@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(442837),
   p = n(481060),
   h = n(430742),
-  g = n(738619),
-  m = n(393238),
+  m = n(738619),
+  g = n(393238),
   E = n(607070),
   v = n(100527),
   b = n(906732),
@@ -31,8 +31,8 @@ var r = n(200651),
   C = n(540059),
   R = n(28546),
   P = n(805680),
-  D = n(278754),
-  w = n(151574),
+  w = n(278754),
+  D = n(151574),
   L = n(368844),
   x = n(41776),
   M = n(849522),
@@ -71,7 +71,7 @@ var r = n(200651),
   ep = n(957825),
   eh = n(25675);
 
-function eg(e, t, n) {
+function em(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -80,14 +80,14 @@ function eg(e, t, n) {
   }) : e[t] = n, e
 }
 
-function em(e) {
+function eg(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      eg(e, t, n[t])
+      em(e, t, n[t])
     })
   }
   return e
@@ -122,10 +122,10 @@ function eO(e, t) {
 
 function eS(e, t, o, a) {
   let [s, l] = i.useState(!1), c = i.useCallback((i, u, d, f, _) => {
-    var g, m, E;
+    var m, g, E;
     if (s) return;
     l(!0);
-    let v = null !== (m = null === (g = G.Z.getStickerPreview(a, t.drafts.type)) || void 0 === g ? void 0 : g.map(e => e.id)) && void 0 !== m ? m : [],
+    let v = null !== (g = null === (m = G.Z.getStickerPreview(a, t.drafts.type)) || void 0 === m ? void 0 : m.map(e => e.id)) && void 0 !== g ? g : [],
       b = null !== (E = z.Z.getUploads(a, t.drafts.type)) && void 0 !== E ? E : [],
       y = (0, j.q5)(a);
     if (null == u && !f && !_ && (0, L.CB)(b, a)) {
@@ -133,7 +133,7 @@ function eS(e, t, o, a) {
         let {
           default: e
         } = await Promise.all([n.e("25292"), n.e("90508"), n.e("95477"), n.e("28467"), n.e("18895"), n.e("78846")]).then(n.bind(n, 273602));
-        return t => (0, r.jsx)(e, ev(em({}, t), {
+        return t => (0, r.jsx)(e, ev(eg({}, t), {
           threadId: a,
           attachments: b,
           sendMessage: () => c(i, void 0, void 0, void 0, !0)
@@ -276,13 +276,13 @@ function eP() {
   }
 }
 
-function eD(e) {
+function ew(e) {
   let t = i.useRef(null);
   if (null != e && "function" == typeof e) throw Error("Only Ref objects are supported");
   return null == e ? t : e
 }
 
-function ew(e) {
+function eD(e) {
   let [t, n] = i.useState(0);
   return {
     editorHeight: t,
@@ -316,7 +316,7 @@ function eL(e, t, n, r) {
         canEveryoneSendMessages: J.Uu(ef.Plq.SEND_MESSAGES, e)
       }
     }, [e, t.permissions.requireCreateTherads, t.permissions.requireSendMessages, t.attachments, n, r, a]);
-  return em({
+  return eg({
     isLurking: o,
     isPendingMember: a
   }, s)
@@ -363,14 +363,14 @@ function eM(e, t, n) {
 
 function ek(e, t, n, r) {
   var i, o;
-  let a = (0, D.pR)(),
+  let a = (0, w.pR)(),
     s = (0, _.e7)([G.Z], () => G.Z.getStickerPreview(e.id, t.drafts.type)),
     l = null != s && s.length > 0;
   return a && (null === (i = t.stickers) || void 0 === i ? void 0 : i.autoSuggest) && !l && (null === (o = r.current) || void 0 === o ? void 0 : o.isVisible()) !== !0 && !__OVERLAY__ && null != n
 }
 
 function ej(e, t) {
-  var n, o, s, l, u, f, h, y, R, D, L, x, j, G, B;
+  var n, o, s, l, u, f, h, y, R, w, L, x, j, G, B;
   let {
     textValue: V,
     richValue: F,
@@ -384,8 +384,8 @@ function ej(e, t) {
     accessibilityLabel: J,
     channel: eo,
     type: ep,
-    focused: eg,
-    renderAttachButton: em,
+    focused: em,
+    renderAttachButton: eg,
     renderApplicationCommandIcon: eE,
     renderAppLauncherButton: ev,
     renderAppCommandButton: ey,
@@ -419,12 +419,12 @@ function ej(e, t) {
   c()(null != ep, "chat input type must be set");
   let {
     analyticsLocations: e8
-  } = (0, b.ZP)(v.Z.CHANNEL_TEXT_AREA), e9 = (0, C.R6)("ChannelTextAreaContainer"), te = (0, C.Q3)("ChannelTextAreaContainer"), tt = eD(t), tn = i.useRef(null), tr = i.useRef(null), ti = i.useRef(null), to = i.useRef(null);
+  } = (0, b.ZP)(v.Z.CHANNEL_TEXT_AREA), e9 = (0, C.R6)("ChannelTextAreaContainer"), te = (0, C.Q3)("ChannelTextAreaContainer"), tt = ew(t), tn = i.useRef(null), tr = i.useRef(null), ti = i.useRef(null), to = i.useRef(null);
   null == e0 || e0(tr.current);
   let ta = (0, U.Nt)(),
     ts = (0, I.h9)(eo.id),
     [tl, tc] = i.useState(!ts);
-  (0, m.P)(tt, e => {
+  (0, g.P)(tt, e => {
     let {
       width: t
     } = e;
@@ -444,9 +444,9 @@ function ej(e, t) {
     isPendingMember: t_,
     disabled: tp,
     canAttachFiles: th,
-    canCreateThreads: tg,
-    canEveryoneSendMessages: tm
-  } = eL(eo, ep, tu, Q), tE = ep.toolbarType === et.OW.STATIC, tv = !Z.dN.useSetting() && !(0, $.isAndroidWeb)() && null != window.ResizeObserver, tb = !tv || !(null === (n = ep.commands) || void 0 === n ? void 0 : n.enabled) || !eg || V !== e_.GI, ty = (0, M.Z)(), {
+    canCreateThreads: tm,
+    canEveryoneSendMessages: tg
+  } = eL(eo, ep, tu, Q), tE = ep.toolbarType === et.OW.STATIC, tv = !Z.dN.useSetting() && !(0, $.isAndroidWeb)() && null != window.ResizeObserver, tb = !tv || !(null === (n = ep.commands) || void 0 === n ? void 0 : n.enabled) || !em || V !== e_.GI, ty = (0, M.Z)(), {
     isSubmitButtonEnabled: tO,
     fontSize: tS
   } = (0, _.cj)([E.Z], () => ({
@@ -465,9 +465,9 @@ function ej(e, t) {
   } = eR(tr, V, F), {
     submitting: tR,
     submit: tP,
-    handleSubmit: tD
+    handleSubmit: tw
   } = eS(eZ, ep, tr, eo.id), {
-    autocompleteRef: tw,
+    autocompleteRef: tD,
     handleMaybeShowAutocomplete: tL,
     handleHideAutocomplete: tx
   } = eP(), tM = eI(tP, ep, tr), tk = eT(tr), tj = eN({
@@ -483,11 +483,11 @@ function ej(e, t) {
   }, []), {
     editorHeight: tB,
     handleResize: tV
-  } = ew(eG), {
+  } = eD(eG), {
     handleTab: tF,
     handleEnter: tZ,
     handleMoveSelection: tH
-  } = eM(tw, tn, tb), {
+  } = eM(tD, tn, tb), {
     expressionPickerView: tW,
     shouldHideExpressionPicker: tY,
     handleAutocompleteVisibilityChange: tK,
@@ -495,12 +495,12 @@ function ej(e, t) {
   } = ex(ep, tA, tr);
   (0, ee.S)(tA, eo.guild_id, eo.id);
   let tq = null != ej,
-    tQ = tp && !((tf || t_) && tm) || tR && (null === (s = ep.submit) || void 0 === s ? void 0 : s.useDisabledStylesOnSubmit),
+    tQ = tp && !((tf || t_) && tg) || tR && (null === (s = ep.submit) || void 0 === s ? void 0 : s.useDisabledStylesOnSubmit),
     tX = null;
-  null != tu ? tX = null == eE ? void 0 : eE(tu, td, eh.attachButton) : (!tp || tg) && (tX = null == em ? void 0 : em(tq, eh.attachButton));
+  null != tu ? tX = null == eE ? void 0 : eE(tu, td, eh.attachButton) : (!tp || tm) && (tX = null == eg ? void 0 : eg(tq, eh.attachButton));
   let tJ = tv && null != F && !tp && ep.showCharacterCount && null == tu,
     t$ = tv && !__OVERLAY__ && null != F && null == tu && ep.toolbarType !== et.OW.NONE,
-    t0 = ek(eo, ep, F, tw),
+    t0 = ek(eo, ep, F, tD),
     t1 = (0, ea.c)({
       channel: eo,
       type: ep,
@@ -525,7 +525,7 @@ function ej(e, t) {
       type: ep,
       disabled: tp,
       channel: eo,
-      handleSubmit: tD,
+      handleSubmit: tw,
       isEmpty: t2,
       showAllButtons: tl,
       children: te ? null == ev ? void 0 : ev() : null
@@ -543,7 +543,7 @@ function ej(e, t) {
       ref: t8,
       children: [(0, r.jsxs)("div", {
         className: eh.accessoryBarLeft,
-        children: [null == eO ? void 0 : eO(), tX, t6 ? (0, r.jsx)(g.Z, {
+        children: [null == eO ? void 0 : eO(), tX, t6 ? (0, r.jsx)(m.Z, {
           channel: eo,
           poggermodeEnabled: !1
         }) : null]
@@ -607,7 +607,7 @@ function ej(e, t) {
               children: (0, r.jsx)(en.Z, {
                 ref: tr,
                 id: z,
-                focused: eg,
+                focused: em,
                 useSlate: tv,
                 textValue: V,
                 richValue: F,
@@ -615,7 +615,7 @@ function ej(e, t) {
                 placeholder: X,
                 required: q,
                 accessibilityLabel: J,
-                isPreviewing: (tf || t_) && tm,
+                isPreviewing: (tf || t_) && tg,
                 channel: eo,
                 type: ep,
                 canPasteFiles: th,
@@ -651,7 +651,7 @@ function ej(e, t) {
               children: [t4 ? (0, r.jsx)(N.Z, {
                 channel: eo
               }) : null, null !== (x = null == ey ? void 0 : ey()) && void 0 !== x ? x : null, (null === (l = ep.submit) || void 0 === l ? void 0 : l.button) != null && ((null === (u = ep.submit) || void 0 === u ? void 0 : u.ignorePreference) || tO) ? (0, r.jsx)(er.Z, {
-                onClick: tD,
+                onClick: tw,
                 disabled: tp || t3
               }) : null]
             }) : ne]
@@ -661,7 +661,7 @@ function ej(e, t) {
           channel: eo,
           canOnlyUseTextCommands: tq
         }), (0, r.jsx)(T.Z, {
-          ref: tw,
+          ref: tD,
           channel: eo,
           canMentionRoles: eY,
           canMentionChannels: eK,
@@ -670,7 +670,7 @@ function ej(e, t) {
           canSendStickers: null === (f = ep.stickers) || void 0 === f ? void 0 : f.allowSending,
           canSendSoundmoji: null === (h = ep.soundmoji) || void 0 === h ? void 0 : h.allowSending,
           textValue: V,
-          focused: eg,
+          focused: em,
           expressionPickerView: tW,
           type: ep,
           targetRef: tt,
@@ -685,13 +685,13 @@ function ej(e, t) {
           textValue: V,
           editorHeight: tB,
           channelId: eo.id
-        }), e9 ? null : nt, t0 ? (0, r.jsx)(w.Z, {
+        }), e9 ? null : nt, t0 ? (0, r.jsx)(D.Z, {
           editorRef: tr,
           channel: eo,
-          isEditorFocused: eg,
+          isEditorFocused: em,
           onSelectSticker: tj,
           submitButtonVisible: (null === (y = ep.submit) || void 0 === y ? void 0 : y.button) && (null !== (j = null === (R = ep.submit) || void 0 === R ? void 0 : R.ignorePreference) && void 0 !== j ? j : tO),
-          stickerIconVisible: null !== (G = null === (D = ep.stickers) || void 0 === D ? void 0 : D.button) && void 0 !== G && G && !(ta && null !== (B = null === (L = ep.confetti) || void 0 === L ? void 0 : L.button) && void 0 !== B && B)
+          stickerIconVisible: null !== (G = null === (w = ep.stickers) || void 0 === w ? void 0 : w.button) && void 0 !== G && G && !(ta && null !== (B = null === (L = ep.confetti) || void 0 === L ? void 0 : L.button) && void 0 !== B && B)
         }) : null, e2]
       }), tY ? null : (0, r.jsx)(P.Z, {
         positionTargetRef: tt,

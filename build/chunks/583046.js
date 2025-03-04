@@ -62,8 +62,8 @@ function f(e) {
       return e.length > 0 ? i.Z.get(e[0]) : null
     }),
     h = null == p ? [] : (0, o.DE)(p.id, f, _),
-    g = null !== (n = null !== (t = h.find(e => e === (null == l ? void 0 : l.currency))) && void 0 !== t ? t : h[0]) && void 0 !== n ? n : s.pK.USD;
-  return d(c({}, (0, o.gr)(g, null == p ? void 0 : p.id, f, _, u)), {
+    m = null !== (n = null !== (t = h.find(e => e === (null == l ? void 0 : l.currency))) && void 0 !== t ? t : h[0]) && void 0 !== n ? n : s.pK.USD;
+  return d(c({}, (0, o.gr)(m, null == p ? void 0 : p.id, f, _, u)), {
     currencies: h
   })
 }

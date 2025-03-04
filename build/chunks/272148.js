@@ -55,8 +55,8 @@ function i() {
   }
   n.wrap = _;
   var h = "suspendedStart",
-    g = "suspendedYield",
-    m = "executing",
+    m = "suspendedYield",
+    g = "executing",
     E = "completed",
     v = {};
 
@@ -117,7 +117,7 @@ function i() {
   function R(e, n, r) {
     var i = h;
     return function(o, a) {
-      if (i === m) throw Error("Generator is already running");
+      if (i === g) throw Error("Generator is already running");
       if (i === E) {
         if ("throw" === o) throw a;
         return {
@@ -139,10 +139,10 @@ function i() {
           if (i === h) throw i = E, r.arg;
           r.dispatchException(r.arg)
         } else "return" === r.method && r.abrupt("return", r.arg);
-        i = m;
+        i = g;
         var c = p(e, n, r);
         if ("normal" === c.type) {
-          if (i = r.done ? E : g, c.arg === v) continue;
+          if (i = r.done ? E : m, c.arg === v) continue;
           return {
             value: c.arg,
             done: r.done
@@ -163,14 +163,14 @@ function i() {
     return a ? a.done ? (n[e.resultName] = a.value, n.next = e.nextLoc, "return" !== n.method && (n.method = "next", n.arg = t), n.delegate = null, v) : a : (n.method = "throw", n.arg = TypeError("iterator result is not an object"), n.delegate = null, v)
   }
 
-  function D(e) {
+  function w(e) {
     var t = {
       tryLoc: e[0]
     };
     1 in e && (t.catchLoc = e[1]), 2 in e && (t.finallyLoc = e[2], t.afterLoc = e[3]), this.tryEntries.push(t)
   }
 
-  function w(e) {
+  function D(e) {
     var t = e.completion || {};
     t.type = "normal", delete t.arg, e.completion = t
   }
@@ -178,7 +178,7 @@ function i() {
   function L(e) {
     this.tryEntries = [{
       tryLoc: "root"
-    }], e.forEach(D, this), this.reset(!0)
+    }], e.forEach(w, this), this.reset(!0)
   }
 
   function x(e) {
@@ -240,7 +240,7 @@ function i() {
   }, n.values = x, L.prototype = {
     constructor: L,
     reset: function(e) {
-      if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(w), !e)
+      if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(D), !e)
         for (var n in this) "t" === n.charAt(0) && a.call(this, n) && !isNaN(+n.slice(1)) && (this[n] = t)
     },
     stop: function() {
@@ -294,7 +294,7 @@ function i() {
     finish: function(e) {
       for (var t = this.tryEntries.length - 1; t >= 0; --t) {
         var n = this.tryEntries[t];
-        if (n.finallyLoc === e) return this.complete(n.completion, n.afterLoc), w(n), v
+        if (n.finallyLoc === e) return this.complete(n.completion, n.afterLoc), D(n), v
       }
     },
     catch: function(e) {
@@ -304,7 +304,7 @@ function i() {
           var r = n.completion;
           if ("throw" === r.type) {
             var i = r.arg;
-            w(n)
+            D(n)
           }
           return i
         }

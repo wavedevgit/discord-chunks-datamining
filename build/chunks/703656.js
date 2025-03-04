@@ -46,11 +46,11 @@ let _ = new s.Z("Routing/Utils"),
   p = [u.E07.DEVELOPER_PORTAL];
 r = __OVERLAY__ ? (0, a.PP)() : (0, a.lX)();
 let h = !1,
-  g = r.listen((e, t) => {
-    "REPLACE" !== t && (h = !0, g())
+  m = r.listen((e, t) => {
+    "REPLACE" !== t && (h = !0, m())
   });
 
-function m() {
+function g() {
   return !l.S.hasSubscribers(u.CkL.MODAL_CLOSE) && (n(574254).Z.close(), !0)
 }
 
@@ -132,9 +132,9 @@ function C() {
 }
 
 function R() {
-  m() && (i = null, r.goBack())
+  g() && (i = null, r.goBack())
 }
 
 function P() {
-  m() && (i = null, r.goForward())
+  g() && (i = null, r.goForward())
 }

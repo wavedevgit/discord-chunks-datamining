@@ -16,7 +16,7 @@ var o = n(570140),
   p = n(186901);
 let h = new s.Z("NativeDispatchUtils");
 
-function g() {
+function m() {
   return null != r ? Promise.resolve(r) : (0, d.isDesktop)() ? Promise.all([f.ZP.ensureModule("discord_dispatch"), f.ZP.ensureModule("discord_modules")]).then(() => {
     f.ZP.requireModule("discord_modules");
     let e = f.ZP.getDispatch();
@@ -24,7 +24,7 @@ function g() {
   }) : Promise.reject(Error("not desktop client"))
 }
 
-function m() {
+function g() {
   return null == i && h.warn("Tried getting Dispatch instance before instantiated"), i
 }
 
@@ -62,11 +62,11 @@ let y = {
       stateCallback: a,
       errorCallback: s
     } = e;
-    null == i && g().then(e => {
+    null == i && m().then(e => {
       var c;
       let u = {
           environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-          build_number: "374236"
+          build_number: "374241"
         },
         d = l.default.getCurrentUser();
       null != d && (u.user_id = d.id, u.user_name = d.tag, null != d.email && (u.email = d.email));
@@ -106,7 +106,7 @@ let y = {
     })
   },
   destroy() {
-    let e = m();
+    let e = g();
     null != e && void 0 !== e.destroy && (e.destroy(), i = null)
   },
   setTargetManifest(e) {
@@ -118,7 +118,7 @@ let y = {
       buildId: o,
       manifestIds: a,
       installationPath: s
-    } = e, l = m();
+    } = e, l = g();
     null != l && l.command(JSON.stringify({
       command: "SetTargetManifest",
       application_id: t,
@@ -131,7 +131,7 @@ let y = {
     }), v)
   },
   setCurrentTask(e, t, n, r, i) {
-    let o = m();
+    let o = g();
     return null != o && (o.command(JSON.stringify({
       command: "SetCurrentTask",
       application_id: e,
@@ -142,7 +142,7 @@ let y = {
     }), v), !0)
   },
   setCredentials(e, t) {
-    let n = m();
+    let n = g();
     null != n && n.command(JSON.stringify({
       command: "SetCredentials",
       user_id: e,
@@ -150,7 +150,7 @@ let y = {
     }), v)
   },
   cancel(e, t) {
-    let n = m();
+    let n = g();
     null != n && n.command(JSON.stringify({
       command: "Cancel",
       application_id: e,
@@ -158,7 +158,7 @@ let y = {
     }), v)
   },
   uninstall(e, t) {
-    let n = m();
+    let n = g();
     null != n && n.command(JSON.stringify({
       command: "Uninstall",
       application_id: e,
@@ -166,19 +166,19 @@ let y = {
     }), v)
   },
   pause() {
-    let e = m();
+    let e = g();
     null != e && e.command(JSON.stringify({
       command: "Pause"
     }), v)
   },
   resume() {
-    let e = m();
+    let e = g();
     null != e && e.command(JSON.stringify({
       command: "Resume"
     }), v)
   },
   queryDirectory(e, t) {
-    let n = m();
+    let n = g();
     null != n && n.command(JSON.stringify({
       command: "QueryDirectory",
       path: e
@@ -197,7 +197,7 @@ let y = {
   runLaunchSetup: (e, t) => c.Z.isRunning() ? Promise.reject(Error("Already running launch setup.")) : (o.Z.dispatch({
     type: "DISPATCH_APPLICATION_LAUNCH_SETUP_START"
   }), new Promise((n, r) => {
-    let i = m();
+    let i = g();
     if (null == i) {
       r(Error("native dispatch instance not found"));
       return
@@ -236,7 +236,7 @@ let y = {
     })
   })),
   launch: (e, t, n, r) => new Promise((i, o) => {
-    let a = m();
+    let a = g();
     if (null == a) {
       o(Error("native dispatch instance not found"));
       return

@@ -20,8 +20,8 @@ function f(e, t) {
     _ = void 0 === f ? e.placement : f,
     p = n.strategy,
     h = void 0 === p ? e.strategy : p,
-    g = n.boundary,
-    m = void 0 === g ? l.zV : g,
+    m = n.boundary,
+    g = void 0 === m ? l.zV : m,
     E = n.rootBoundary,
     v = void 0 === E ? l.Pj : E,
     b = n.elementContext,
@@ -34,16 +34,16 @@ function f(e, t) {
     A = y === l.k5 ? l.YP : l.k5,
     C = e.rects.popper,
     R = e.elements[S ? A : y],
-    P = (0, r.Z)((0, c.kK)(R) ? R : R.contextElement || (0, i.Z)(e.elements.popper), m, v, h),
-    D = (0, o.Z)(e.elements.reference),
-    w = (0, a.Z)({
-      reference: D,
+    P = (0, r.Z)((0, c.kK)(R) ? R : R.contextElement || (0, i.Z)(e.elements.popper), g, v, h),
+    w = (0, o.Z)(e.elements.reference),
+    D = (0, a.Z)({
+      reference: w,
       element: C,
       strategy: "absolute",
       placement: _
     }),
-    L = (0, s.Z)(Object.assign({}, C, w)),
-    x = y === l.k5 ? L : D,
+    L = (0, s.Z)(Object.assign({}, C, D)),
+    x = y === l.k5 ? L : w,
     M = {
       top: P.top - x.top + N.top,
       bottom: x.bottom - P.bottom + N.bottom,

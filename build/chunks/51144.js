@@ -7,7 +7,7 @@ n.d(t, {
   W5: () => N,
   ZP: () => C,
   _T: () => E,
-  oY: () => m,
+  oY: () => g,
   u5: () => y
 }), n(411104);
 var r = n(442837),
@@ -52,15 +52,15 @@ function h(e) {
   return !!(null != e && e.length > 0)
 }
 
-function g(e) {
+function m(e) {
   return h(e.global_name) ? e.global_name : h(e.globalName) ? e.globalName : h(e.username) ? e.username : d
 }
 
-function m(e) {
+function g(e) {
   var t;
   if (null == e) return;
   let n = i.Z.hidePersonalInformation,
-    r = g(e);
+    r = m(e);
   return n && r.toLocaleLowerCase() === (null === (t = e.username) || void 0 === t ? void 0 : t.toLocaleLowerCase()) && "0" === e.discriminator && (r = f(r)), r
 }
 
@@ -68,7 +68,7 @@ function E(e) {
   var t;
   let n = (0, r.e7)([i.Z], () => i.Z.hidePersonalInformation);
   if (null == e) return;
-  let o = g(e);
+  let o = m(e);
   return n && o.toLocaleLowerCase() === (null === (t = e.username) || void 0 === t ? void 0 : t.toLocaleLowerCase()) && "0" === e.discriminator && (o = f(o)), o
 }
 
@@ -153,7 +153,7 @@ function A(e) {
   })
 }
 let C = {
-  getName: m,
+  getName: g,
   useName: E,
   isNameConcealed: e => 4 === e.length && e.endsWith("..."),
   getUserTag: N,

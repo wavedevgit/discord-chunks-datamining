@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   G: () => P,
-  Z: () => D
+  Z: () => w
 }), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(599659),
   p = n(286961),
   h = n(913663),
-  g = n(117530),
-  m = n(594174),
+  m = n(117530),
+  g = n(594174),
   E = n(74538),
   v = n(94161),
   b = n(9277),
@@ -53,16 +53,16 @@ function C(e) {
 }
 
 function R(e) {
-  var t, n, i, _, p, h, g;
+  var t, n, i, _, p, h, m;
   let {
     type: y,
     disabled: S,
     channel: I,
     handleSubmit: R,
-    isEmpty: D,
-    showAllButtons: w,
+    isEmpty: w,
+    showAllButtons: D,
     children: L
-  } = e, x = (0, a.e7)([l.Z], () => l.Z.isSubmitButtonEnabled), M = P(I.id, y, D), {
+  } = e, x = (0, a.e7)([l.Z], () => l.Z.isSubmitButtonEnabled), M = P(I.id, y, w), {
     activeCommand: k,
     activeCommandOption: j
   } = (0, a.cj)([c.Z], () => ({
@@ -74,17 +74,17 @@ function R(e) {
     location: "dc120b_3"
   }, {
     autoTrackExposure: !1
-  }), G = [], B = !I.isDM() || void 0 === I.recipients || I.recipients.length > 1, V = (0, a.e7)([m.default], () => B ? null : m.default.getUser(I.recipients[0])), F = (0, d.R6)("ChannelTextAreaButtons"), Z = (0, f.Nt)() && (null === (t = y.confetti) || void 0 === t ? void 0 : t.button) != null;
+  }), G = [], B = !I.isDM() || void 0 === I.recipients || I.recipients.length > 1, V = (0, a.e7)([g.default], () => B ? null : g.default.getUser(I.recipients[0])), F = (0, d.R6)("ChannelTextAreaButtons"), Z = (0, f.Nt)() && (null === (t = y.confetti) || void 0 === t ? void 0 : t.button) != null;
   return (o.tq || ((null === (p = y.gifts) || void 0 === p ? void 0 : p.button) != null && null == k && !U && (null == V || E.ZP.isPremiumEligible(V)) && G.push((0, r.jsx)(C, {
     disabled: S,
     channel: I
-  }, "gift")), (null === (h = y.gifs) || void 0 === h ? void 0 : h.button) != null && null == k && w && G.push((0, r.jsx)(b.Z, {
+  }, "gift")), (null === (h = y.gifs) || void 0 === h ? void 0 : h.button) != null && null == k && D && G.push((0, r.jsx)(b.Z, {
     disabled: S,
     type: y
   }, "gif")), Z && null == k && G.push((0, r.jsx)(O.Z, {
     disabled: S,
     channel: I
-  }, "confetti")), !Z && (null === (g = y.stickers) || void 0 === g ? void 0 : g.button) != null && null == k && w && G.push((0, r.jsx)(N.Z, {
+  }, "confetti")), !Z && (null === (m = y.stickers) || void 0 === m ? void 0 : m.button) != null && null == k && D && G.push((0, r.jsx)(N.Z, {
     disabled: S,
     type: y
   }, "sticker"))), (null === (n = y.emojis) || void 0 === n ? void 0 : n.button) != null && (null == k || null != j && j.type !== s.jw.ATTACHMENT) && G.push((0, r.jsx)(v.Z, {
@@ -100,10 +100,10 @@ function R(e) {
 }
 
 function P(e, t, n) {
-  return (0, a.e7)([h.Z, g.Z], () => {
+  return (0, a.e7)([h.Z, m.Z], () => {
     let r = h.Z.getStickerPreview(e, t.drafts.type),
       i = null != r && r.length > 0;
-    return 0 === g.Z.getUploads(e, t.drafts.type).length && n && !i
+    return 0 === m.Z.getUploads(e, t.drafts.type).length && n && !i
   })
 }
-let D = i.memo(R)
+let w = i.memo(R)

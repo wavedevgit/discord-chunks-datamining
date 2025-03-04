@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   EM: () => v,
-  PR: () => m,
+  PR: () => g,
   Tt: () => O,
   ZD: () => N,
   yY: () => S
@@ -74,14 +74,14 @@ function h(e) {
   return [t, r, n]
 }
 
-function g(e) {
+function m(e) {
   let {
     notificationCount: t
   } = e;
   return null == t || 0 === t ? "" : t < 0 ? "• " : "(".concat(t, ") ")
 }
 
-function m(e) {
+function g(e) {
   (0, a.j)(() => p.setState({
     notificationCount: e
   }))
@@ -130,7 +130,7 @@ function I() {
   let [e, t] = p(e => {
     let {
       flashQueue: t
-    } = e, n = h(e).filter(e => null != e).join(" | "), r = g(e);
+    } = e, n = h(e).filter(e => null != e).join(" | "), r = m(e);
     return ["".concat(r).concat(n), t[0]]
   }, i.X), [n, o] = r.useState(!1), a = r.useRef(0), s = null == t ? void 0 : t.messages[a.current % t.messages.length];
   return r.useEffect(() => {

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -16,12 +16,12 @@ var r = n(200651),
   _ = n(981631),
   p = n(388032),
   h = n(927454);
-let g = i.forwardRef(function(e, t) {
+let m = i.forwardRef(function(e, t) {
     let {
       emojiListRef: n,
       gridNavigatorId: o,
-      isFullRow: g,
-      onKeyDown: m,
+      isFullRow: m,
+      onKeyDown: g,
       onFocus: E,
       autoFocus: v,
       className: b,
@@ -39,7 +39,7 @@ let g = i.forwardRef(function(e, t) {
         case _.yXg.ARROW_DOWN:
           document.activeElement !== e.target && e.preventDefault()
       }
-      m(e)
+      g(e)
     };
     return i.useImperativeHandle(t, () => ({
       focus: () => {
@@ -57,7 +57,7 @@ let g = i.forwardRef(function(e, t) {
       onFocus: E,
       onChange: N,
       className: a()(b, {
-        [h.searchBarFullRow]: g
+        [h.searchBarFullRow]: m
       }),
       inputProps: {
         "aria-label": p.NW.string(p.t.tCauZW),
@@ -68,4 +68,4 @@ let g = i.forwardRef(function(e, t) {
       }
     })
   }),
-  m = i.memo(g)
+  g = i.memo(m)

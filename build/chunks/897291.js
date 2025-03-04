@@ -16,9 +16,9 @@ var r = n(200651),
   _ = n(443603),
   p = n(981631),
   h = n(388032),
-  g = n(25675);
+  m = n(25675);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,7 +34,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -62,7 +62,7 @@ function y(e) {
     disabled: t,
     channel: i
   } = e, {
-    analyticsLocations: m
+    analyticsLocations: g
   } = (0, l.ZP)(s.Z.GIFT_BUTTON), v = (0, f.Ft)(i), {
     Component: y,
     events: O,
@@ -87,14 +87,14 @@ function y(e) {
           object: p.qAy.BUTTON_ICON,
           objectType: p.Qqv.GIFT
         },
-        analyticsLocations: m,
+        analyticsLocations: g,
         giftRecipient: v
       }, t))
     }) : (0, u.Z)({
       isGift: !0,
       giftRecipient: null === v ? void 0 : v,
       initialPlanId: null,
-      analyticsLocations: m,
+      analyticsLocations: g,
       analyticsObject: {
         page: i.isPrivate() ? p.ZY5.DM_CHANNEL : p.ZY5.GUILD_CHANNEL,
         section: p.jXE.CHANNEL_TEXT_AREA,
@@ -106,7 +106,7 @@ function y(e) {
   return (0, r.jsx)(a.ua7, {
     text: h.NW.string(h.t.sWtWDQ),
     children: e => (0, r.jsx)(_.Z, b(E(b(E({}, e), {
-      innerClassName: g.button,
+      innerClassName: m.button,
       isActive: !1,
       "aria-label": h.NW.string(h.t.Z1RnTk),
       "aria-haspopup": "dialog",

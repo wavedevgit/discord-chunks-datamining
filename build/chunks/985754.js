@@ -55,10 +55,10 @@ let u = new Set([l.pK.ARS, l.pK.CLP, l.pK.COP]),
       userLocale: p
     } = e, {
       countryCode: h,
-      amount: m,
+      amount: g,
       currency: E,
       paymentSourceTypes: v
-    } = t, b = 0 !== v.length, y = g(h), O = (0, a.T4)(m, E, {
+    } = t, b = 0 !== v.length, y = m(h), O = (0, a.T4)(g, E, {
       style: "currency",
       currency: E,
       currencyDisplay: "symbol",
@@ -111,7 +111,7 @@ let u = new Set([l.pK.ARS, l.pK.CLP, l.pK.COP]),
       localizedPricingBannerSubNotif: b ? void 0 : c.NW.string(c.t.YDdBe3)
     }
   },
-  g = e => {
+  m = e => {
     let t = r.Z.find(t => t.alpha2 === e);
     return null == t ? void 0 : t.localeForICU
   }

@@ -9,7 +9,7 @@ n.d(t, {
   Fg: () => z,
   G6: () => es,
   H1: () => R,
-  I0: () => w,
+  I0: () => D,
   JG: () => eL,
   L1: () => ey,
   NA: () => eh,
@@ -19,9 +19,9 @@ n.d(t, {
   Pe: () => j,
   QK: () => eO,
   QZ: () => S,
-  R$: () => g,
+  R$: () => m,
   RS: () => ep,
-  R_: () => eD,
+  R_: () => ew,
   Rt: () => eU,
   SE: () => eN,
   Sb: () => eb,
@@ -36,7 +36,7 @@ n.d(t, {
   YC: () => eG,
   Yk: () => eS,
   _O: () => A,
-  _j: () => ew,
+  _j: () => eD,
   bh: () => $,
   bm: () => er,
   cC: () => b,
@@ -62,12 +62,12 @@ n.d(t, {
   kU: () => X,
   l4: () => ej,
   mX: () => F,
-  nc: () => eg,
-  qF: () => D,
-  rN: () => em,
+  nc: () => em,
+  qF: () => w,
+  rN: () => eg,
   tU: () => ef,
   uL: () => x,
-  up: () => m,
+  up: () => g,
   vF: () => y,
   x4: () => e_,
   xM: () => en,
@@ -92,13 +92,13 @@ let h = (0, c.Zc)("textAndImages", "useLegacyChatInput", e => {
   }, e => o.D5.create({
     value: e
   })),
-  g = (0, c.Zc)("textAndImages", "useRichChatInput", e => {
+  m = (0, c.Zc)("textAndImages", "useRichChatInput", e => {
     var t;
     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
   }, e => o.D5.create({
     value: e
   })),
-  m = (0, c.Zc)("textAndImages", "expressionSuggestionsEnabled", e => {
+  g = (0, c.Zc)("textAndImages", "expressionSuggestionsEnabled", e => {
     var t;
     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
   }, e => o.D5.create({
@@ -158,13 +158,13 @@ let O = (0, c.Zc)("notifications", "reactionNotifications", e => null != e ? e :
   }, e => o.D5.create({
     value: e
   })),
-  D = (0, c.Zc)("voiceAndVideo", "alwaysPreviewVideo", e => {
+  w = (0, c.Zc)("voiceAndVideo", "alwaysPreviewVideo", e => {
     var t;
     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t && t
   }, e => o.D5.create({
     value: e
   })),
-  w = (0, c.Zc)("voiceAndVideo", "disableStreamPreviews", e => null == e ? void 0 : e.value, e => o.D5.create({
+  D = (0, c.Zc)("voiceAndVideo", "disableStreamPreviews", e => null == e ? void 0 : e.value, e => o.D5.create({
     value: e
   })),
   L = (0, c.Zc)("notifications", "notifyFriendsOnGoLive", e => null == e ? void 0 : e.value, e => o.D5.create({
@@ -364,13 +364,13 @@ let el = new Set(Object.values(f.Skl)),
   }, e => o.D5.create({
     value: e
   })), "text", "renderEmbeds"),
-  eg = (0, c.KM)((0, c.Zc)("textAndImages", "renderReactions", e => {
+  em = (0, c.KM)((0, c.Zc)("textAndImages", "renderReactions", e => {
     var t;
     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
   }, e => o.D5.create({
     value: e
   })), "text", "renderReactions"),
-  em = (0, c.Zc)("localization", "timezoneOffset", e => {
+  eg = (0, c.Zc)("localization", "timezoneOffset", e => {
     var t;
     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t ? t : null
   }, e => o.T4.create({
@@ -445,13 +445,13 @@ let eb = (0, c.KM)((0, c.Zc)("appearance", "developerMode", e => null != e && e,
   eP = (0, c.Zc)("privacy", "familyCenterEnabledV2", e => null == e ? void 0 : e.value, e => o.D5.create({
     value: e
   })),
-  eD = (0, c.Zc)("privacy", "hideLegacyUsername", e => {
+  ew = (0, c.Zc)("privacy", "hideLegacyUsername", e => {
     var t;
     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t && t
   }, e => o.D5.create({
     value: e
   })),
-  ew = (0, c.Zc)("privacy", "allowGameFriendDmsInDiscord", e => {
+  eD = (0, c.Zc)("privacy", "allowGameFriendDmsInDiscord", e => {
     var t;
     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
   }, e => o.D5.create({

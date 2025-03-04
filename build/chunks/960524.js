@@ -73,13 +73,13 @@ let _ = e => {
       secondaryColor: _ = "transparent",
       secondaryColorClass: p = "",
       color: h = i.Z.colors.INTERACTIVE_NORMAL,
-      colorClass: g = ""
+      colorClass: m = ""
     } = e,
-    m = d(e, ["size", "width", "height", "secondaryColor", "secondaryColorClass", "color", "colorClass"]);
+    g = d(e, ["size", "width", "height", "secondaryColor", "secondaryColorClass", "color", "colorClass"]);
   let E = (0, a.m)(s),
     v = null !== (t = null == E ? void 0 : E.width) && void 0 !== t ? t : c,
     b = null !== (n = null == E ? void 0 : E.height) && void 0 !== n ? n : f;
-  return (0, r.jsxs)("svg", u(l({}, (0, o.Z)(m)), {
+  return (0, r.jsxs)("svg", u(l({}, (0, o.Z)(g)), {
     xmlns: "http://www.w3.org/2000/svg",
     width: v,
     height: b,
@@ -96,7 +96,7 @@ let _ = e => {
       fillRule: "evenodd",
       d: "M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22ZM9 8.09c0-.88 1-1.4 1.73-.9l5.8 3.91c.63.44.63 1.36 0 1.8l-5.8 3.9C10 17.3 9 16.8 9 15.92V8.1Z",
       clipRule: "evenodd",
-      className: g
+      className: m
     })]
   }))
 }

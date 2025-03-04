@@ -26,9 +26,9 @@ function u(e, t) {
     a = (0, l.o)(e),
     s = a.dtstart,
     c = a.tzid;
-  return m(e, t.unfold).forEach(function(e) {
+  return g(e, t.unfold).forEach(function(e) {
     if (e) {
-      var t, a = g(e),
+      var t, a = m(e),
         s = a.name,
         u = a.parms,
         d = a.value;
@@ -123,7 +123,7 @@ function h(e) {
   }
 }
 
-function g(e) {
+function m(e) {
   var t = h(e),
     n = t.name,
     r = t.value,
@@ -136,7 +136,7 @@ function g(e) {
   }
 }
 
-function m(e, t) {
+function g(e, t) {
   if (void 0 === t && (t = !1), !(e = e && e.trim())) throw Error("Invalid empty string");
   if (!t) return e.split(/\s/);
   for (var n = e.split("\n"), r = 0; r < n.length;) {

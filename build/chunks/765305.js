@@ -7,7 +7,7 @@ n.d(t, {
   VF: () => y,
   WX: () => f,
   X_: () => S,
-  _U: () => g,
+  _U: () => m,
   fL: () => E,
   gG: () => s,
   gv: () => I,
@@ -15,7 +15,7 @@ n.d(t, {
   nz: () => h,
   p: () => o,
   p1: () => u,
-  pg: () => m,
+  pg: () => g,
   rC: () => v,
   sy: () => _,
   wm: () => a,
@@ -46,8 +46,8 @@ let h = {
     1: i.d4z.GUILD_STAGE_VOICE,
     2: i.d4z.GUILD_VOICE
   },
-  g = new Set([3]),
-  m = new Set([1, 2]);
+  m = new Set([3]),
+  g = new Set([1, 2]);
 var E = function(e) {
   return e[e.EVENT_INFO = 0] = "EVENT_INFO", e[e.RSVP_LIST = 1] = "RSVP_LIST", e
 }({});

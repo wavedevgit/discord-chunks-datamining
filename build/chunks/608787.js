@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  GI: () => g,
+  GI: () => m,
   Jt: () => f,
   Un: () => h,
   wE: () => p
@@ -81,7 +81,7 @@ function h(e) {
   return c && (d = i.memo(d)), d.displayName = "Suspense(".concat(l || "Unknown", ")"), d
 }
 
-function g(e) {
+function m(e) {
   let {
     createPromise: t,
     webpackId: n,

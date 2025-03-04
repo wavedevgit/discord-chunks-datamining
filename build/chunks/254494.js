@@ -42,8 +42,8 @@ let d = e => {
       className: _,
       listPadding: p,
       rowCount: h,
-      getScrollOffsetForIndex: g,
-      categoryHeight: m,
+      getScrollOffsetForIndex: m,
+      categoryHeight: g,
       onScroll: E,
       renderCategoryListItem: v,
       rowCountBySection: b,
@@ -52,7 +52,7 @@ let d = e => {
     d({
       activeIndex: O,
       categoryListRef: t,
-      getScrollOffsetForIndex: g
+      getScrollOffsetForIndex: m
     });
     let S = i.useCallback(e => {
         let {
@@ -65,7 +65,7 @@ let d = e => {
         }
       }, [n, c]),
       I = i.useCallback(e => v(o[e], e, () => S(e), O === e), [O, o, S, v]),
-      T = i.useMemo(() => "function" == typeof m ? e => m(o[e], e) : m, [o, m]);
+      T = i.useMemo(() => "function" == typeof g ? e => g(o[e], e) : g, [o, g]);
     return (0, r.jsxs)("div", {
       className: a()(u.wrapper, _),
       children: [(0, r.jsx)(s.Z, {

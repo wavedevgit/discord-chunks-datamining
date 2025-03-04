@@ -104,7 +104,7 @@ function h(e, t) {
   })
 }
 
-function g(e, t) {
+function m(e, t) {
   let n = 0 !== e.focusedY && 0 === e.focusedX,
     r = n ? e.focusedY - 1 : e.focusedY,
     i = n ? e.columnCounts[r] - 1 : c(0, e.focusedX - 1);
@@ -114,7 +114,7 @@ function g(e, t) {
   })
 }
 
-function m(e, t) {
+function g(e, t) {
   return s(o({}, e), {
     focusedX: 0
   })
@@ -150,9 +150,9 @@ function y(e, t) {
     case r.Us.NAVIGATE_RIGHT:
       return h(e, t);
     case r.Us.NAVIGATE_LEFT:
-      return g(e, t);
-    case r.Us.NAVIGATE_INLINE_START:
       return m(e, t);
+    case r.Us.NAVIGATE_INLINE_START:
+      return g(e, t);
     case r.Us.NAVIGATE_INLINE_END:
       return E(e, t);
     case r.Us.NAVIGATE_START:

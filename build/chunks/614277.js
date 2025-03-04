@@ -3,7 +3,7 @@
 n.d(t, {
   C3: () => E,
   O3: () => v,
-  ZP: () => m
+  ZP: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -35,7 +35,7 @@ function h(e, t) {
   return i
 }
 
-function g(e) {
+function m(e) {
   let {
     header: t,
     isLargeModal: n
@@ -47,13 +47,13 @@ function g(e) {
   }
 }
 
-function m(e) {
+function g(e) {
   var t, n, o, s, c, p;
   let {
     header: h,
-    isLargeModal: m,
+    isLargeModal: g,
     stepProps: E
-  } = g(e), {
+  } = m(e), {
     step: v,
     stepConfigs: b,
     setBodyNode: y,
@@ -67,7 +67,7 @@ function m(e) {
   let N = null !== (c = null == T ? void 0 : null === (t = T.options) || void 0 === t ? void 0 : t.hideSlider) && void 0 !== c && c,
     A = null == T ? void 0 : null === (n = T.options) || void 0 === n ? void 0 : n.bodyClassName,
     C = null == T ? void 0 : null === (o = T.options) || void 0 === o ? void 0 : o.sliderBodyClassName;
-  return void 0 !== m && m && (C = _.sliderBodyLarge), (0, r.jsxs)(r.Fragment, {
+  return void 0 !== g && g && (C = _.sliderBodyLarge), (0, r.jsxs)(r.Fragment, {
     children: [null === (p = null == T ? void 0 : null === (s = T.options) || void 0 === s ? void 0 : s.renderHeader) || void 0 === p || p ? h : null, T.renderStep(E), null == v || N ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.hzk, {
         className: a()(A, _.body, _.noRoundedCorners, {

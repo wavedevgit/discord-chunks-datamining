@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => D
+  Z: () => w
 });
 var r = n(200651),
   i = n(192379),
@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(927723),
   p = n(645727),
   h = n(124072),
-  g = n(184301),
-  m = n(347475),
+  m = n(184301),
+  g = n(347475),
   E = n(592125),
   v = n(271383),
   b = n(430824),
@@ -93,7 +93,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     className: t,
     userId: i,
@@ -101,16 +101,16 @@ function D(e) {
     parsedUserId: p,
     content: N,
     inlinePreview: C = !1,
-    viewingChannelId: D
+    viewingChannelId: w
   } = e, {
-    analyticsLocations: w
+    analyticsLocations: D
   } = (0, f.ZP)(d.Z.USER_MENTION), L = (0, l.e7)([O.default], () => O.default.getUser(i)), x = (0, l.e7)([E.Z], () => E.Z.getChannel(o)), M = null != x ? x.getGuildId() : null, k = C || null == L || null == M || null == o ? void 0 : e => {
     null != x && (0, u.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("50506"), n.e("79695"), n.e("13351"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("12612")]).then(n.bind(n, 757387));
       return t => (0, r.jsx)(e, R(A({}, t), {
-        viewingChannelId: D,
+        viewingChannelId: w,
         user: L,
         channel: x,
         guildId: M
@@ -130,16 +130,16 @@ function D(e) {
     children: "@".concat(null != U ? U : j)
   }));
   return C ? (0, r.jsx)(f.Gt, {
-    value: w,
+    value: D,
     children: V()
   }) : (0, r.jsx)(f.Gt, {
-    value: w,
+    value: D,
     children: (0, r.jsx)(c.yRy, {
-      preload: null == L ? void 0 : () => (0, g.Z)(L.id, L.getAvatarURL(M, 80), {
+      preload: null == L ? void 0 : () => (0, m.Z)(L.id, L.getAvatarURL(M, 80), {
         guildId: null != M ? M : void 0,
         channelId: null != o ? o : void 0
       }),
-      renderPopout: e => (a()(null != L, "Unexpected missing user"), (0, r.jsx)(m.Z, A({
+      renderPopout: e => (a()(null != L, "Unexpected missing user"), (0, r.jsx)(g.Z, A({
         userId: L.id,
         guildId: null != M ? M : void 0,
         channelId: o

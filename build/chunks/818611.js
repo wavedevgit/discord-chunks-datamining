@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(884697),
   p = n(74538),
   h = n(864106),
-  g = n(439959),
-  m = n(125988),
+  m = n(439959),
+  g = n(125988),
   E = n(388032),
   v = n(684441);
 
@@ -82,7 +82,7 @@ let N = 3,
   C = 12,
   R = 16,
   P = () => A,
-  D = e => {
+  w = e => {
     var {
       children: t,
       className: n,
@@ -96,7 +96,7 @@ let N = 3,
       children: t
     }))
   },
-  w = e => {
+  D = e => {
     var {
       user: t,
       avatarDecoration: n,
@@ -110,18 +110,18 @@ let N = 3,
       }),
       O = (0, _.Yq)(n.skuId),
       T = p.ZP.canUseCollectibles(t),
-      N = a === g.$0.PREMIUM_PURCHASE && !T,
+      N = a === m.$0.PREMIUM_PURCHASE && !T,
       C = i.useRef(null),
       R = (0, d.Z)(null != o ? o : C),
       {
         avatarDecorationSrc: P
-      } = (0, m.Z)({
+      } = (0, g.Z)({
         user: t,
         avatarDecorationOverride: n,
         size: A,
         onlyAnimateOnHover: !R
       }),
-      w = () => a === g.$0.PURCHASE || a === g.$0.PREMIUM_PURCHASE && T ? null : O ? (0, r.jsx)(u.lBU, {
+      D = () => a === m.$0.PURCHASE || a === m.$0.PREMIUM_PURCHASE && T ? null : O ? (0, r.jsx)(u.lBU, {
         className: v.newBadge,
         text: (0, r.jsxs)("div", {
           className: v.newBadgeText,
@@ -143,7 +143,7 @@ let N = 3,
         color: l.Z.BACKGROUND_ACCENT,
         className: v.iconBadge
       });
-    return (0, r.jsxs)(D, S(y({
+    return (0, r.jsxs)(w, S(y({
       className: N ? v.decorationGridItemChurned : void 0,
       innerRef: null != o ? o : C,
       isSelected: s
@@ -152,7 +152,7 @@ let N = 3,
         className: v.presetDecorationImg,
         src: P,
         alt: n.label
-      }), w()]
+      }), D()]
     }))
   },
   L = e => {
@@ -163,14 +163,14 @@ let N = 3,
       selectedAvatarDecorationRef: a,
       onSelect: l,
       onOpenShop: c
-    } = e, d = (0, g.ZP)(), f = i.useCallback(() => {
+    } = e, d = (0, m.ZP)(), f = i.useCallback(() => {
       c(void 0)
     }, [c]), _ = (e, i, c, _) => {
       let {
         section: p,
-        items: m
+        items: g
       } = d[e];
-      return (0, s.EQ)(m[i]).with(g.Tm, () => (0, r.jsxs)(D, {
+      return (0, s.EQ)(g[i]).with(m.Tm, () => (0, r.jsxs)(w, {
         style: y({}, c),
         isSelected: null === o,
         onSelect: () => l(null),
@@ -183,7 +183,7 @@ let N = 3,
           color: "header-primary",
           children: (0, h.ad)(t, n) ? E.NW.string(E.t["GsW4/v"]) : E.NW.string(E.t.PoWNfX)
         })]
-      }, _)).with(g.oT, () => (0, r.jsxs)(D, {
+      }, _)).with(m.oT, () => (0, r.jsxs)(w, {
         style: c,
         onSelect: f,
         children: [(0, r.jsx)(u.EOn, {
@@ -199,7 +199,7 @@ let N = 3,
         })]
       }, _)).otherwise(e => {
         let n = (null == o ? void 0 : o.id) === e.id;
-        return (0, r.jsx)(w, {
+        return (0, r.jsx)(D, {
           style: y({}, c),
           user: t,
           avatarDecoration: e,

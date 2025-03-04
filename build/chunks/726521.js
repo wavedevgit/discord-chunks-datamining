@@ -7,9 +7,9 @@ n.d(t, {
   Jw: () => h,
   WL: () => E,
   ak: () => p,
-  d$: () => m,
+  d$: () => g,
   eE: () => S,
-  ic: () => g,
+  ic: () => m,
   pX: () => b,
   sq: () => _,
   uu: () => N,
@@ -85,7 +85,7 @@ function h(e, t, n) {
   })
 }
 
-function g(e, t) {
+function m(e, t) {
   let n = i.Z.getStageInstanceByChannel(e.id);
   null != n && (A(s.b.STAGE_CHANNEL, {
     stage_instance_id: n.id,
@@ -99,7 +99,7 @@ function g(e, t) {
   }))
 }
 
-function m(e, t) {
+function g(e, t) {
   var n;
   A(s.b.GUILD_SCHEDULED_EVENT, {
     guild_scheduled_event_id: e.id,

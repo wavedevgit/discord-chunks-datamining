@@ -24,8 +24,8 @@ function _(e, t, n) {
 }
 let p = r.v.LEAGUE_OF_LEGENDS_WEEKLY,
   h = 3,
-  g = 5,
-  m = 9e5,
+  m = 5,
+  g = 9e5,
   E = new Map,
   v = new Set,
   b = new Map;
@@ -44,7 +44,7 @@ function O(e, t) {
       location: "GuildLeaderboardManager"
     }) || !c.Z.isFocused() || !a.Z.isConnected()) return !1;
   let i = s.Z.getIdleSince();
-  return !(null != i && Date.now() - i > m)
+  return !(null != i && Date.now() - i > g)
 }
 
 function S() {
@@ -103,7 +103,7 @@ async function T(e) {
     var a;
     let e = (null !== (a = b.get(o)) && void 0 !== a ? a : 0) + 1;
     if (b.set(o, e), !O(t, n)) return;
-    let r = 1e3 * Math.pow(g, e);
+    let r = 1e3 * Math.pow(m, e);
     E.set(o, setTimeout(() => T({
       guildId: t,
       leaderboardId: n,

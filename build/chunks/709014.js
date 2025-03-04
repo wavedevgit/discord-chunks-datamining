@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  L: () => m
+  L: () => g
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -37,24 +37,24 @@ function h(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   let {
     color: o,
     src: s,
     size: p = "md",
-    width: g,
-    height: m,
+    width: m,
+    height: g,
     className: E,
     initialAnimation: v,
     markers: b
   } = e, [y, O] = i.useState(null), S = i.useRef(null), I = i.useRef(null), T = i.useRef(null), N = "custom" === p ? {
-    width: g,
-    height: m
+    width: m,
+    height: g
   } : (0, u.m)(p), A = !(0, f.Z)("lottie_hover_multiple_loop"), C = i.useContext(c.S).reducedMotion.enabled, {
     enabled: R
   } = d.Z.useExperiment({
     location: "LottieIcon web entry point"
-  }), P = C || !R, D = i.useRef(v);
+  }), P = C || !R, w = i.useRef(v);
   return i.useImperativeHandle(t, () => ({
     play: e => {
       if (null != T.current) {
@@ -77,7 +77,7 @@ function g(e, t) {
     let n, {
         default: r
       } = e,
-      i = null !== (t = I.current) && void 0 !== t ? t : D.current;
+      i = null !== (t = I.current) && void 0 !== t ? t : w.current;
     if (null != i && null != b[i]) {
       let e = b[i];
       n = [e.start, e.start + e.duration]
@@ -102,4 +102,4 @@ function g(e, t) {
     ref: S
   })
 }
-let m = i.forwardRef(g)
+let g = i.forwardRef(m)

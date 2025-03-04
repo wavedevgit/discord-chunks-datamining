@@ -94,19 +94,19 @@ function t(e) {
         }, _, p]
       }]
     },
-    g = {
+    m = {
       scope: "params",
       match: RegExp(`${i}\\s*:(?=\\s)`)
     },
-    m = [u, e.HASH_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, e.COMMENT(/\/\*\*(?!\/)/, /\*\//, {
+    g = [u, e.HASH_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, e.COMMENT(/\/\*\*(?!\/)/, /\*\//, {
       subLanguage: "markdown",
       relevance: 0
-    }), r, h, o, s, g, f, d, c];
-  return _.contains = m, {
+    }), r, h, o, s, m, f, d, c];
+  return _.contains = g, {
     name: "Nix",
     aliases: ["nixos"],
     keywords: n,
-    contains: m.concat([{
+    contains: g.concat([{
       scope: "meta.prompt",
       match: /^nix-repl>(?=\s)/,
       relevance: 10

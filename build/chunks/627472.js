@@ -74,16 +74,16 @@ function h(e, t) {
       children: d,
       className: p,
       dir: h = "ltr",
-      orientation: g = "vertical",
-      paddingFix: m = !0,
+      orientation: m = "vertical",
+      paddingFix: g = !0,
       fade: E = !1,
       onScroll: v,
       style: b
     } = o, y = _(o, ["children", "className", "dir", "orientation", "paddingFix", "fade", "onScroll", "style"]);
     let O = i.useRef(null),
       S = (0, l.tT)({
-        paddingFix: m,
-        orientation: g,
+        paddingFix: g,
+        orientation: m,
         dir: h,
         className: p,
         scrollerRef: O,
@@ -97,7 +97,7 @@ function h(e, t) {
         [e]: !0,
         [t]: E
       }),
-      style: (0, l.uT)(b, g),
+      style: (0, l.uT)(b, m),
       dir: h
     }, y), {
       children: (0, r.jsxs)(s.Jc, {

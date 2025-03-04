@@ -86,7 +86,7 @@ function h(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     channelId: t,
     threadIds: n
@@ -99,7 +99,7 @@ function g(e) {
   })
 }
 
-function m(e) {
+function g(e) {
   let {
     channelId: t
   } = e;
@@ -167,7 +167,7 @@ let S = new O(o.Z, {
   CHANNEL_DELETE: b,
   FORUM_SEARCH_QUERY_UPDATED: p,
   FORUM_SEARCH_START: h,
-  FORUM_SEARCH_SUCCESS: g,
-  FORUM_SEARCH_FAILURE: m,
+  FORUM_SEARCH_SUCCESS: m,
+  FORUM_SEARCH_FAILURE: g,
   FORUM_SEARCH_CLEAR: E
 })

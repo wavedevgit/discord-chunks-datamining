@@ -22,8 +22,8 @@ function h(e) {
     user: t,
     currentUser: n,
     displayProfile: h,
-    guildId: g,
-    className: m,
+    guildId: m,
+    className: g,
     onClose: E
   } = e, {
     live: v,
@@ -33,10 +33,10 @@ function h(e) {
     voiceActivity: S
   } = (0, u.Z)({
     userId: t.id,
-    guildId: g,
+    guildId: m,
     surface: "user-profile-featured-activity"
   }), I = null != y && y === S, T = t.id === n.id, N = (0, i.e7)([s.Z, a.Z], () => {
-    let e = T ? s.Z.getStatus() : a.Z.getStatus(t.id, g);
+    let e = T ? s.Z.getStatus() : a.Z.getStatus(t.id, m);
     return e === p.Sk.OFFLINE || e === p.Sk.INVISIBLE
   }), {
     voiceActivityStatusEnabled: A
@@ -52,12 +52,12 @@ function h(e) {
     currentUser: n,
     activity: y,
     profileGuildId: null == h ? void 0 : h.guildId,
-    className: m,
+    className: g,
     onClose: E
   }) : (0, r.jsx)(_.Z, {
     user: t,
     voiceChannel: O,
-    className: m,
+    className: g,
     onClose: E
   }) : (0, r.jsx)(f.Z, {
     location: "UserProfileFeaturedActivity",
@@ -65,7 +65,7 @@ function h(e) {
     currentUser: n,
     stream: b,
     profileGuildId: null == h ? void 0 : h.guildId,
-    className: m,
+    className: g,
     onClose: E
   })
 }

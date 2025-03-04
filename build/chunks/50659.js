@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   U4: () => u,
-  hm: () => g,
+  hm: () => m,
   py: () => h
 }), n(47120);
 var r = n(512722),
@@ -160,7 +160,7 @@ function h(e, t) {
   }), s.bN.focus(e)
 }
 
-function g(e, t) {
+function m(e, t) {
   let n = e.selection;
   if (null == n) return;
   let r = !0;

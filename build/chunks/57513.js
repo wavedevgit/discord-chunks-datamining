@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  l: () => m
+  l: () => g
 });
 var r = n(544891),
   i = n(379649),
@@ -17,12 +17,12 @@ let f = 10 * u.Z.Millis.MINUTE,
   p = +u.Z.Millis.MINUTE,
   h = {};
 
-function g(e, t) {
+function m(e, t) {
   null == h[t] && (h[t] = new o.V7), h[t].start(f + Math.random() * _, () => {
-    null != l.Z.getLibraryApplication(e, t) && m(e, t)
+    null != l.Z.getLibraryApplication(e, t) && g(e, t)
   })
 }
-async function m(e, t) {
+async function g(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     o = s.default.locale;
   return a.Z.dispatch({
@@ -63,6 +63,6 @@ async function m(e, t) {
       type: "APPLICATION_BUILD_NOT_FOUND",
       applicationId: e,
       branchId: t
-    }) : g(e, t)
+    }) : m(e, t)
   })
 }

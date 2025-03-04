@@ -19,8 +19,8 @@ let u = 20,
       listPadding: _,
       renderRow: p,
       renderSection: h,
-      renderSectionHeader: g,
-      renderSectionFooter: m,
+      renderSectionHeader: m,
+      renderSectionFooter: g,
       renderInspector: E,
       renderEmptySearchState: v,
       rowCount: b,
@@ -30,14 +30,14 @@ let u = 20,
       sectionFooterHeight: I,
       renderUpsell: T,
       setShowUpsell: N
-    } = e, A = i.useRef(!1), C = i.useRef(null), R = (0, s.Iu)(e => e.searchQuery), P = d.useStore(e => e.activeCategoryIndex), D = n.map(e => (0, a._O)(e.categoryInfo) ? {
+    } = e, A = i.useRef(!1), C = i.useRef(null), R = (0, s.Iu)(e => e.searchQuery), P = d.useStore(e => e.activeCategoryIndex), w = n.map(e => (0, a._O)(e.categoryInfo) ? {
       isNitroLocked: e.categoryInfo.isNitroLocked
     } : {
       isNitroLocked: !1
-    }), w = (0, l.Uf)({
+    }), D = (0, l.Uf)({
       listRef: C,
       searchQuery: R,
-      nitroLockedSectionStates: D,
+      nitroLockedSectionStates: w,
       setShowUpsell: N
     }), L = (0, l.Qs)({
       activeCategoryIndex: P,
@@ -47,8 +47,8 @@ let u = 20,
       scrollOffset: u,
       searchQuery: R
     }), x = i.useCallback(e => {
-      w(e), L(e)
-    }, [w, L]);
+      D(e), L(e)
+    }, [D, L]);
     return (0, l.Xs)({
       searchQuery: R,
       activeCategoryIndex: P,
@@ -97,8 +97,8 @@ let u = 20,
         onScroll: x,
         renderRow: p,
         renderSection: h,
-        renderSectionHeader: g,
-        renderSectionFooter: m,
+        renderSectionHeader: m,
+        renderSectionFooter: g,
         rowCount: b,
         rowCountBySection: y,
         rowHeight: O,

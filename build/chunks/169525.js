@@ -7,7 +7,7 @@ n.d(t, {
   dn: () => E,
   hL: () => S,
   lK: () => b,
-  wk: () => m
+  wk: () => g
 }), n(789020), n(627341);
 var r = n(278074),
   i = n(399606),
@@ -22,8 +22,8 @@ var r = n(278074),
   _ = n(630388),
   p = n(255269),
   h = n(981631),
-  g = n(388032),
-  m = function(e) {
+  m = n(388032),
+  g = function(e) {
     return e.SPOILER = "spoiler", e.EXPLICIT_CONTENT = "explicit_content", e.POTENTIAL_EXPLICIT_CONTENT = "potential_explicit_content", e
   }({});
 let E = (e, t) => {
@@ -92,4 +92,4 @@ function S(e) {
   } = e, r = (0, i.e7)([f.Z], () => null != t && f.Z.can(h.Plq.MANAGE_MESSAGES, t)), o = u.cC.useSetting(), a = (0, s.m)();
   return O(n, !(0, p.Z)(o, r), a)
 }
-let I = e => (0, r.EQ)(e).with("explicit_content", () => g.NW.string(g.t.SEgHFh)).with("spoiler", () => g.NW.string(g.t.XpfDHx)).otherwise(() => void 0)
+let I = e => (0, r.EQ)(e).with("explicit_content", () => m.NW.string(m.t.SEgHFh)).with("spoiler", () => m.NW.string(m.t.XpfDHx)).otherwise(() => void 0)

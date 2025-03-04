@@ -25,8 +25,8 @@ let f = () => (0, r.jsx)("img", {
       balanceWidgetMode: o = l.b.DEFAULT,
       showNotificationBadge: p,
       onClick: h,
-      onMouseEnter: g,
-      onMouseLeave: m,
+      onMouseEnter: m,
+      onMouseLeave: g,
       onMouseDown: E,
       className: v
     } = e, b = d.default;
@@ -49,8 +49,8 @@ let f = () => (0, r.jsx)("img", {
       onClick: I ? void 0 : h,
       className: d.clickable,
       children: (0, r.jsxs)("span", {
-        onMouseEnter: g,
-        onMouseLeave: m,
+        onMouseEnter: m,
+        onMouseLeave: g,
         onMouseDown: E,
         id: _,
         ref: t,

@@ -55,19 +55,19 @@ function p(e, t) {
 function h(e) {
   var t, d, p, {
       location: h,
-      contextKey: g
+      contextKey: m
     } = e,
-    m = _(e, ["location", "contextKey"]);
+    g = _(e, ["location", "contextKey"]);
   let E = (0, o.Kc)(h),
-    v = null === (d = m.items[null !== (p = m.startingIndex) && void 0 !== p ? p : 0]) || void 0 === d ? void 0 : null === (t = d.sourceMetadata) || void 0 === t ? void 0 : t.message,
+    v = null === (d = g.items[null !== (p = g.startingIndex) && void 0 !== p ? p : 0]) || void 0 === d ? void 0 : null === (t = d.sourceMetadata) || void 0 === t ? void 0 : t.message,
     b = a.Z.getChannel(null == v ? void 0 : v.channel_id);
   (0, l.fS)({
     guildId: null == b ? void 0 : b.guild_id,
     channelId: null == b ? void 0 : b.id,
     channelType: null == b ? void 0 : b.type,
-    numMediaItems: m.items.length,
+    numMediaItems: g.items.length,
     source: h,
-    hasMediaOptions: !m.shouldHideMediaOptions
+    hasMediaOptions: !g.shouldHideMediaOptions
   }), s.default.track(c.rMx.OPEN_MODAL, {
     type: c.jXE.MEDIA_VIEWER,
     source: h,
@@ -78,10 +78,10 @@ function h(e) {
     let {
       default: e
     } = E ? await Promise.all([n.e("95477"), n.e("17397")]).then(n.bind(n, 97594)) : await n.e("87267").then(n.bind(n, 950120));
-    return t => (0, r.jsx)(e, f({}, t, m))
+    return t => (0, r.jsx)(e, f({}, t, g))
   }, {
     modalKey: u.U,
-    contextKey: g,
+    contextKey: m,
     onCloseCallback: l.VO,
     backdropStyle: i.fCB.LIGHTBOX
   })

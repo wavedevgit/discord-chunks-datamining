@@ -67,7 +67,7 @@ class h extends(r = o.PureComponent) {
       buttonLook: a,
       supportsCopy: _,
       disabled: h
-    } = this.props, g = null != r;
+    } = this.props, m = null != r;
     switch (n) {
       case p.SUCCESS:
         e = l.Ttl.GREEN;
@@ -88,7 +88,7 @@ class h extends(r = o.PureComponent) {
           className: f.layout,
           children: [(0, i.jsxs)(c.Z, {
             className: f.inputWrapper,
-            children: [this.renderInput(g), g ? (0, i.jsx)("div", {
+            children: [this.renderInput(m), m ? (0, i.jsx)("div", {
               className: f.hiddenMessage,
               children: r
             }) : null]

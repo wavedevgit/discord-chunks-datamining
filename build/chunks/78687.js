@@ -73,11 +73,11 @@ e.exports = function(e) {
     }
   }
 
-  function g(e) {
+  function m(e) {
     return i(e).container.childNodes[0].childNodes[0].childNodes[0]
   }
 
-  function m(e) {
+  function g(e) {
     return i(e).container.childNodes[0].childNodes[0].childNodes[1]
   }
   return c(window.document), {
@@ -136,7 +136,7 @@ e.exports = function(e) {
       }
 
       function S(e) {
-        return g(e).childNodes[0]
+        return m(e).childNodes[0]
       }
 
       function I() {
@@ -164,8 +164,8 @@ e.exports = function(e) {
       }
 
       function P(e, t, n) {
-        var r = g(e),
-          i = m(e),
+        var r = m(e),
+          i = g(e),
           o = N(t),
           a = A(n),
           s = C(t),
@@ -173,7 +173,7 @@ e.exports = function(e) {
         r.scrollLeft = o, r.scrollTop = a, i.scrollLeft = s, i.scrollTop = l
       }
 
-      function D() {
+      function w() {
         var e = i(s).container;
         if (!e) {
           (e = document.createElement("div")).className = l, e.style.cssText = u(["visibility: hidden", "display: inline", "width: 0px", "height: 0px", "z-index: -1", "overflow: hidden", "margin: 0", "padding: 0"]), i(s).container = e, _(e), s.appendChild(e);
@@ -185,7 +185,7 @@ e.exports = function(e) {
         return e
       }
 
-      function w() {
+      function D() {
         function n() {
           var n = i(s).style;
           if ("static" === n.position) {
@@ -210,13 +210,13 @@ e.exports = function(e) {
         }
         n();
         var o = i(s).container;
-        o || (o = D());
+        o || (o = w());
         var c = a.width,
           f = a.height,
           _ = u(["position: absolute", "flex: none", "overflow: hidden", "z-index: -1", "visibility: hidden", "width: 100%", "height: 100%", "left: 0px", "top: 0px"]),
           h = u(["position: absolute", "flex: none", "overflow: hidden", "z-index: -1", "visibility: hidden"].concat(r(-(1 + c), -(1 + f), -f, -c))),
-          g = u(["position: absolute", "flex: none", "overflow: scroll", "z-index: -1", "visibility: hidden", "width: 100%", "height: 100%"]),
           m = u(["position: absolute", "flex: none", "overflow: scroll", "z-index: -1", "visibility: hidden", "width: 100%", "height: 100%"]),
+          g = u(["position: absolute", "flex: none", "overflow: scroll", "z-index: -1", "visibility: hidden", "width: 100%", "height: 100%"]),
           E = u(["position: absolute", "left: 0", "top: 0"]),
           v = u(["position: absolute", "width: 200%", "height: 200%"]),
           b = document.createElement("div"),
@@ -235,7 +235,7 @@ e.exports = function(e) {
           var e = i(s);
           e && e.onShrink ? e.onShrink() : d("Aborting shrink scroll handler: element has been uninstalled")
         }
-        b.dir = "ltr", b.style.cssText = _, b.className = l, y.className = l, y.style.cssText = h, O.style.cssText = g, S.style.cssText = E, I.style.cssText = m, T.style.cssText = v, O.appendChild(S), I.appendChild(T), y.appendChild(O), y.appendChild(I), b.appendChild(y), o.appendChild(b), p(O, "scroll", N), p(I, "scroll", A), i(s).onExpandScroll = N, i(s).onShrinkScroll = A
+        b.dir = "ltr", b.style.cssText = _, b.className = l, y.className = l, y.style.cssText = h, O.style.cssText = m, S.style.cssText = E, I.style.cssText = g, T.style.cssText = v, O.appendChild(S), I.appendChild(T), y.appendChild(O), y.appendChild(I), b.appendChild(y), o.appendChild(b), p(O, "scroll", N), p(I, "scroll", A), i(s).onExpandScroll = N, i(s).onShrinkScroll = A
       }
 
       function L() {
@@ -311,8 +311,8 @@ e.exports = function(e) {
             return
           }
           d("Element rendered.");
-          var e = g(s),
-            t = m(s);
+          var e = m(s),
+            t = g(s);
           (0 === e.scrollLeft || 0 === e.scrollTop || 0 === t.scrollLeft || 0 === t.scrollTop) && (d("Scrollbars out of sync. Updating detector elements..."), l(u))
         }
 
@@ -346,9 +346,9 @@ e.exports = function(e) {
       }
 
       function k() {
-        d("Installing..."), b(), v(), n.add(0, y), n.add(1, w), n.add(2, L), n.add(3, x), n.add(4, M)
+        d("Installing..."), b(), v(), n.add(0, y), n.add(1, D), n.add(2, L), n.add(3, x), n.add(4, M)
       }
-      c || (c = s, s = e, e = null), e = e || {}, d("Making detectable..."), f(s) ? (d("Element is detached"), D(), d("Waiting until element is attached..."), i(s).onRendered = function() {
+      c || (c = s, s = e, e = null), e = e || {}, d("Making detectable..."), f(s) ? (d("Element is detached"), w(), d("Waiting until element is attached..."), i(s).onRendered = function() {
         d("Element is now attached"), k()
       }) : k()
     },
@@ -358,7 +358,7 @@ e.exports = function(e) {
     },
     uninstall: function(e) {
       var t = i(e);
-      t && (t.onExpandScroll && h(g(e), "scroll", t.onExpandScroll), t.onShrinkScroll && h(m(e), "scroll", t.onShrinkScroll), t.onAnimationStart && h(t.container, "animationstart", t.onAnimationStart), t.container && e.removeChild(t.container))
+      t && (t.onExpandScroll && h(m(e), "scroll", t.onExpandScroll), t.onShrinkScroll && h(g(e), "scroll", t.onShrinkScroll), t.onAnimationStart && h(t.container, "animationstart", t.onAnimationStart), t.container && e.removeChild(t.container))
     },
     initDocument: c
   }

@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(649700),
   p = n(952164),
   h = n(960870),
-  g = n(139793),
-  m = n(994746),
+  m = n(139793),
+  g = n(994746),
   E = n(273284),
   v = n(510659),
   b = n(287954),
@@ -31,8 +31,8 @@ var r = n(200651),
   C = n(262210),
   R = n(666984),
   P = n(386019),
-  D = n(228168),
-  w = n(203396);
+  w = n(228168),
+  D = n(203396);
 
 function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -68,14 +68,14 @@ function M(e) {
   } = e, {
     profileType: U
   } = (0, O.z)(), G = {
-    [w.fullSize]: U === D.y0.FULL_SIZE
+    [D.fullSize]: U === w.y0.FULL_SIZE
   }, {
     interactionSource: B,
     interactionSourceId: V
   } = (0, v.Xo)(), F = (0, _.Z)({
     activity: L,
     user: n
-  }), Z = (0, m.Z)(L), {
+  }), Z = (0, g.Z)(L), {
     largeImage: H
   } = (0, d.FO)(L), {
     analyticsLocations: W
@@ -85,7 +85,7 @@ function M(e) {
     activity: L,
     entry: F,
     analyticsLocations: W
-  }), K = (0, g.Z)({
+  }), K = (0, m.Z)({
     userId: n.id,
     onAction: Y
   });
@@ -100,7 +100,7 @@ function M(e) {
         variant: "text-xs/normal",
         text: o.map((e, t) => (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsx)(s.P3F, {
-            className: a()(w.clickableText, w.inline),
+            className: a()(D.clickableText, D.inline),
             onClick: e => {
               e.stopPropagation(), Y({
                 action: "OPEN_SPOTIFY_ARTIST"
@@ -126,7 +126,7 @@ function M(e) {
       })
     },
     Q = () => n.id === o.id ? null : (0, r.jsx)("div", {
-      className: a()(w.actions, G),
+      className: a()(D.actions, G),
       children: (0, r.jsx)(R.Z, {
         user: n,
         activity: L,
@@ -135,11 +135,11 @@ function M(e) {
     });
   if (null === U) return null;
   let X = null !== (t = L.application_id) && void 0 !== t ? t : L.name,
-    J = B === D.n_.ACTIVITY && V === X;
+    J = B === w.n_.ACTIVITY && V === X;
   return (0, r.jsx)(u.Gt, {
     value: W,
     children: (0, r.jsx)(S.Z, {
-      sourceType: D.n_.ACTIVITY,
+      sourceType: w.n_.ACTIVITY,
       user: n,
       children: (0, r.jsx)(b.Z, {
         user: n,
@@ -148,12 +148,12 @@ function M(e) {
         sourceId: X,
         sourceDetails: null == F ? (0, E.Z)(L) : null,
         entry: F,
-        sourceType: D.n_.ACTIVITY,
+        sourceType: w.n_.ACTIVITY,
         onAction: Y,
         children: () => (0, r.jsx)(y.Z, {
           user: n,
-          className: w.toolbarContainer,
-          sourceType: D.n_.ACTIVITY,
+          className: D.toolbarContainer,
+          sourceType: w.n_.ACTIVITY,
           interactionSourceId: X,
           onAction: Y,
           onShowToolbar: () => Y({
@@ -170,25 +170,25 @@ function M(e) {
           children: (0, r.jsxs)(T.Z, {
             ref: K,
             className: a()(k, {
-              [w.hoisted]: J
+              [D.hoisted]: J
             }),
             onAction: Y,
             onClose: j,
             children: [(0, r.jsx)(N.Z, x({}, Z)), (0, r.jsx)("div", {
-              className: w.body,
+              className: D.body,
               children: (0, r.jsxs)("div", {
-                className: a()(w.content, G),
+                className: a()(D.content, G),
                 children: [(0, r.jsx)(f.E, {
                   image: H,
                   size: f.J.SIZE_60,
-                  className: w.clickableImage,
+                  className: D.clickableImage,
                   onClick: e => {
                     e.stopPropagation(), Y({
                       action: "OPEN_SPOTIFY_ALBUM"
                     }), (0, p.Z5)(L, n.id)
                   }
                 }), (0, r.jsxs)("div", {
-                  className: w.details,
+                  className: D.details,
                   children: [(0, r.jsxs)("div", {
                     children: [(0, r.jsx)(A.Z, {
                       variant: "heading-sm/semibold",
@@ -202,11 +202,11 @@ function M(e) {
                   }), (0, r.jsx)(I.Z, {
                     user: n,
                     activity: L,
-                    className: w.badges
+                    className: D.badges
                   }), q()]
-                }), U === D.y0.FULL_SIZE && Q()]
+                }), U === w.y0.FULL_SIZE && Q()]
               })
-            }), U !== D.y0.FULL_SIZE && Q()]
+            }), U !== w.y0.FULL_SIZE && Q()]
           })
         })
       })

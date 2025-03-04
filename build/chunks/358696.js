@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   E: () => v,
-  J: () => g
+  J: () => m
 });
 var r = n(200651);
 n(192379);
@@ -57,10 +57,10 @@ let h = {
   default: u.aspectRatio,
   crunchyroll: o()(u.aspectRatio, u.crunchyroll)
 };
-var g = function(e) {
+var m = function(e) {
   return e.SIZE_60 = "size-60", e.SIZE_72 = "size-72", e
 }({});
-let m = {
+let g = {
   "size-60": {
     imageSize: 60,
     smallImageSize: 24,
@@ -91,14 +91,14 @@ function v(e) {
     image: i,
     smallImage: d,
     aspectRatio: _,
-    onClick: g,
+    onClick: m,
     size: v,
     className: b
   } = e, {
     imageSize: y,
     smallImageSize: O,
     mask: S
-  } = m[v];
+  } = g[v];
   if (null == i) return (0, r.jsx)(l.f, {
     src: void 0,
     alt: c.NW.string(c.t["2B/phI"]),
@@ -118,7 +118,7 @@ function v(e) {
     children: [(0, r.jsx)(a.ua7, {
       text: i.text,
       children: e => (0, r.jsx)(E, {
-        onClick: g,
+        onClick: m,
         children: null != d ? (0, r.jsx)(s.ZP, p(f({}, e), {
           className: u.imageContainer,
           mask: S,

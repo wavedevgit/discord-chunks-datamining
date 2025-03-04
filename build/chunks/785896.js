@@ -27,7 +27,7 @@ let u = (e, t, n) => {
     } = e, {
       joinedEmojiSourceGuildRecord: s,
       emoji: d
-    } = (0, i.cj)([a.ZP, o.Z], () => u(a.ZP, o.Z, t)), f = null != s, _ = null != s && s.hasFeature(c.oNc.DISCOVERABLE), p = (!f || _) && null != t, [h, g] = r.useState(p), [m, E] = r.useState(null), v = null != s ? l.JO.createFromGuildRecord(s) : null, [b, y] = r.useState(v), [O, S] = r.useState(null), I = r.useRef(n);
+    } = (0, i.cj)([a.ZP, o.Z], () => u(a.ZP, o.Z, t)), f = null != s, _ = null != s && s.hasFeature(c.oNc.DISCOVERABLE), p = (!f || _) && null != t, [h, m] = r.useState(p), [g, E] = r.useState(null), v = null != s ? l.JO.createFromGuildRecord(s) : null, [b, y] = r.useState(v), [O, S] = r.useState(null), I = r.useRef(n);
     return r.useEffect(() => {
       I.current = n
     }), r.useEffect(() => {
@@ -43,7 +43,7 @@ let u = (e, t, n) => {
           case l.w6.GUILD:
             y(n.guild)
         }
-        g(!1), null === (e = I.current) || void 0 === e || e.call(I)
+        m(!1), null === (e = I.current) || void 0 === e || e.call(I)
       };
       if (p) {
         r();
@@ -53,7 +53,7 @@ let u = (e, t, n) => {
     }, [t, p]), {
       expressionSourceGuild: b,
       expressionSourceApplication: O,
-      sourceType: m,
+      sourceType: g,
       joinedEmojiSourceGuildRecord: s,
       hasJoinedEmojiSourceGuild: f,
       emoji: d,

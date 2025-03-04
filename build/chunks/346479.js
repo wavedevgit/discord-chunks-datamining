@@ -16,8 +16,8 @@ var r = n(697988),
   _ = n(496675),
   p = n(823379),
   h = n(920303),
-  g = n(569471),
-  m = n(91159),
+  m = n(569471),
+  g = n(91159),
   E = n(952537),
   v = n(981631),
   b = n(176505),
@@ -266,7 +266,7 @@ let I = {
     })
   },
   async setNotificationSettings(e, t) {
-    return (0, m.ZJ)(e, t), g.Z.hasJoined(e.id) || await this.joinThread(e, "Change Notification Settings"), i.tn.patch({
+    return (0, g.ZJ)(e, t), m.Z.hasJoined(e.id) || await this.joinThread(e, "Change Notification Settings"), i.tn.patch({
       url: v.ANM.THREAD_MEMBER_SETTINGS(e.id),
       body: t,
       rejectWithError: !1

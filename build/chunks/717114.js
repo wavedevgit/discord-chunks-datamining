@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -25,7 +25,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,13 +37,13 @@ function g(e) {
   }
   return e
 }
-let m = () => {
-  let [e, t] = (0, o.Wu)([c.ZP], () => [c.ZP.canShowAdminWarning, c.ZP.getVisibleGame()], []), n = (0, o.e7)([d.Z], () => d.Z.isConnected(), []), h = (0, o.e7)([u.Z], () => u.Z.getMode() === _.pM4.PUSH_TO_TALK, []), m = null != t && t.elevated && n && h && e, E = i.useRef(null);
+let g = () => {
+  let [e, t] = (0, o.Wu)([c.ZP], () => [c.ZP.canShowAdminWarning, c.ZP.getVisibleGame()], []), n = (0, o.e7)([d.Z], () => d.Z.isConnected(), []), h = (0, o.e7)([u.Z], () => u.Z.getMode() === _.pM4.PUSH_TO_TALK, []), g = null != t && t.elevated && n && h && e, E = i.useRef(null);
 
   function v() {
     null !== E.current && ((0, a.Mr3)(E.current), E.current = null)
   }
-  return i.useEffect(() => (m ? E.current = (0, a.h7j)(e => (0, r.jsx)(l.default, g({
+  return i.useEffect(() => (g ? E.current = (0, a.h7j)(e => (0, r.jsx)(l.default, m({
     title: p.NW.string(p.t.eotlXF),
     body: p.NW.formatToPlainString(p.t.Lw6KXV, {
       game: null == t ? void 0 : t.name
@@ -54,5 +54,5 @@ let m = () => {
     confirmText: p.NW.string(p.t.psXQHB)
   }, e))) : v(), () => {
     v()
-  }), [t, m]), null
+  }), [t, g]), null
 }

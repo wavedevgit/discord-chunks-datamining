@@ -10,7 +10,7 @@ n.d(t, {
   iV: () => x,
   n9: () => j,
   pR: () => L,
-  rn: () => w,
+  rn: () => D,
   tK: () => P,
   xc: () => U
 });
@@ -27,8 +27,8 @@ var r = n(512722),
   _ = n(199902),
   p = n(314897),
   h = n(592125),
-  g = n(430824),
-  m = n(944486),
+  m = n(430824),
+  g = n(944486),
   E = n(979651),
   v = n(934415),
   b = n(70956),
@@ -82,18 +82,18 @@ function P(e, t) {
   })
 }
 
-function D(e, t) {
+function w(e, t) {
   let n = h.Z.getChannel(t);
-  return i()(null != n, "Cannot join a null voice channel"), !E.Z.isInChannel(t) && (0, v.rY)(n, E.Z, g.Z)
+  return i()(null != n, "Cannot join a null voice channel"), !E.Z.isInChannel(t) && (0, v.rY)(n, E.Z, m.Z)
 }
 
-function w(e, t) {
+function D(e, t) {
   if (null != l.Z.getRemoteSessionId()) return;
   let {
     guildId: n,
     channelId: r
   } = e;
-  if (null != n && D(n, r)) return;
+  if (null != n && w(n, r)) return;
   let i = (0, c.V9)(e),
     o = (null == t ? void 0 : t.forceMultiple) || _.Z.getAllActiveStreamsForChannel(r).filter(e => {
       let {
@@ -121,10 +121,10 @@ function x(e, t) {
     guildId: n,
     channelId: r
   } = e;
-  if (null != n && D(n, r)) return;
-  w(e, t);
+  if (null != n && w(n, r)) return;
+  D(e, t);
   let i = d.Z.getWindowOpen(I.KJ3.CHANNEL_CALL_POPOUT),
-    o = m.Z.getVoiceChannelId();
+    o = g.Z.getVoiceChannelId();
   (!i || o !== r) && (0, u.Z)(e)
 }
 

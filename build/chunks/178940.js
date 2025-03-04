@@ -16,9 +16,9 @@ var r, i = n(200651),
   _ = n(481060),
   p = n(540059),
   h = n(981631),
-  g = n(806078);
+  m = n(806078);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,7 +34,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -64,13 +64,13 @@ var y = function(e) {
     return e.TOP = "top", e.CENTER = "center", e
   }(O || {});
 let S = {
-    BOX: g.box,
-    ROUND: g.round,
-    SMALL_BOX: g.smallBox
+    BOX: m.box,
+    ROUND: m.round,
+    SMALL_BOX: m.smallBox
   },
   I = {
-    top: g.alignTop,
-    center: g.alignCenter
+    top: m.alignTop,
+    center: m.alignCenter
   };
 class T extends(r = o.PureComponent) {
   render() {
@@ -87,19 +87,19 @@ class T extends(r = o.PureComponent) {
       displayOnly: d,
       type: _,
       onClick: p
-    } = this.props, m = null != l ? (0, i.jsx)("div", {
-      className: s()(g.label, e ? g.labelDisabled : g.labelClickable, u ? g.labelReversed : g.labelForward),
+    } = this.props, g = null != l ? (0, i.jsx)("div", {
+      className: s()(m.label, e ? m.labelDisabled : m.labelClickable, u ? m.labelReversed : m.labelForward),
       style: {
         lineHeight: "".concat(c, "px")
       },
       children: l
-    }) : null, v = d ? "span" : "label", b = this.props.disabled ? g.inputDisabled : this.props.readOnly ? g.inputReadonly : g.inputDefault;
+    }) : null, v = d ? "span" : "label", b = this.props.disabled ? m.inputDisabled : this.props.readOnly ? m.inputReadonly : m.inputDefault;
     return (0, i.jsxs)(v, {
-      className: s()(e ? g.checkboxWrapperDisabled : g.checkboxWrapper, I[r], o, {
-        [g.row]: "row" === _,
-        [g.checked]: n
+      className: s()(e ? m.checkboxWrapperDisabled : m.checkboxWrapper, I[r], o, {
+        [m.row]: "row" === _,
+        [m.checked]: n
       }),
-      children: [u ? m : null, !d && (0, i.jsx)(f.t, {
+      children: [u ? g : null, !d && (0, i.jsx)(f.t, {
         children: (0, i.jsx)("input", {
           className: s()(a, b),
           type: "checkbox",
@@ -111,11 +111,11 @@ class T extends(r = o.PureComponent) {
             height: c
           }
         })
-      }), (0, i.jsx)(A, E({}, this.props)), u ? null : m]
+      }), (0, i.jsx)(A, E({}, this.props)), u ? null : g]
     })
   }
   constructor(...e) {
-    super(...e), m(this, "handleChange", e => {
+    super(...e), g(this, "handleChange", e => {
       let {
         onChange: t
       } = this.props;
@@ -174,11 +174,11 @@ function A(e) {
       disabled: _
     } = e,
     h = N(e, t),
-    m = o.useMemo(() => r ? t ? d.Z.colors.WHITE.css : "inverted" === u || "row" === u ? d.Z.colors.WHITE.css : null != f ? f : d.Z.unsafe_rawColors.BRAND_500.css : d.Z.unsafe_rawColors.TRANSPARENT.css, [r, u, f, t]);
+    g = o.useMemo(() => r ? t ? d.Z.colors.WHITE.css : "inverted" === u || "row" === u ? d.Z.colors.WHITE.css : null != f ? f : d.Z.unsafe_rawColors.BRAND_500.css : d.Z.unsafe_rawColors.TRANSPARENT.css, [r, u, f, t]);
   return (0, i.jsx)("div", {
-    className: s()(g.checkbox, l, n, {
-      [g.checked]: r,
-      [g.checkboxDisabled]: _
+    className: s()(m.checkbox, l, n, {
+      [m.checked]: r,
+      [m.checkboxDisabled]: _
     }),
     style: E({
       width: a,
@@ -188,7 +188,7 @@ function A(e) {
     children: (0, i.jsx)(C, {
       isVisualRefreshEnabled: t,
       size: "sm",
-      color: m,
+      color: g,
       "aria-hidden": !0
     })
   })
@@ -200,7 +200,7 @@ function C(e) {
   } = e, n = v(e, ["isVisualRefreshEnabled"]);
   return t ? (0, i.jsx)(_.kSu, E({}, n)) : (0, i.jsx)(_.dz2, E({}, n))
 }
-m(T, "Types", y), m(T, "Shapes", S), m(T, "Aligns", O), m(T, "defaultProps", {
+g(T, "Types", y), g(T, "Shapes", S), g(T, "Aligns", O), g(T, "defaultProps", {
   size: 24,
   disabled: !1,
   readOnly: !1,

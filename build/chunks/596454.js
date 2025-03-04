@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(695346),
   p = n(237997),
   h = n(768581),
-  g = n(176354),
-  m = n(506071),
+  m = n(176354),
+  g = n(506071),
   E = n(149203);
 
 function v(e, t, n) {
@@ -77,7 +77,7 @@ function I(e, t) {
   return i
 }
 n(624074);
-let T = __OVERLAY__ ? () => (0, s.e7)([p.default], () => p.default.isInstanceFocused()) : m.n;
+let T = __OVERLAY__ ? () => (0, s.e7)([p.default], () => p.default.isInstanceFocused()) : g.n;
 
 function N(e) {
   var t, n, {
@@ -86,7 +86,7 @@ function N(e) {
       className: c,
       emojiId: f,
       emojiName: p,
-      channelId: m,
+      channelId: g,
       messageId: v,
       animated: y,
       size: I = "default",
@@ -95,14 +95,14 @@ function N(e) {
       onMouseEnter: C,
       onMouseLeave: R,
       canSelect: P = !0,
-      autoplay: D,
-      registerAnimatedElementRef: w
+      autoplay: w,
+      registerAnimatedElementRef: D
     } = e,
     L = S(e, ["src", "alt", "className", "emojiId", "emojiName", "channelId", "messageId", "animated", "size", "isInteracting", "shouldAnimate", "onMouseEnter", "onMouseLeave", "canSelect", "autoplay", "registerAnimatedElementRef"]);
   let [x, M] = i.useState(!1), [k, j] = i.useState(void 0), U = i.useRef(), {
     triggerAnimation: G,
     untriggerAnimation: B
-  } = i.useContext(u.Rm), V = _.Yk.useSetting(), F = T(), Z = null == D ? V : D, H = E.kV[I], W = i.useRef(null), Y = i.useMemo(() => {
+  } = i.useContext(u.Rm), V = _.Yk.useSetting(), F = T(), Z = null == w ? V : w, H = E.kV[I], W = i.useRef(null), Y = i.useMemo(() => {
     if (null != o) return o;
     if (null != f) {
       let e = !0 === A && Z;
@@ -112,7 +112,7 @@ function N(e) {
         size: H
       })
     }
-    if (null != p) return g.ZP.getURL(p);
+    if (null != p) return m.ZP.getURL(p);
     throw Error("Unknown Src for Emoji")
   }, [y, Z, f, p, H, F, x, N, A, o]), K = i.useCallback(() => {
     null != Y && (U.current = (0, d.po)(Y, e => {
@@ -144,15 +144,15 @@ function N(e) {
     return null === (e = U.current) || void 0 === e ? void 0 : e.call(U)
   }, []);
   let X = i.useCallback(e => {
-      W.current = e, null == w || w(e)
-    }, [w]),
+      W.current = e, null == D || D(e)
+    }, [D]),
     J = (0, l.Z)(W);
   return null == Y || "" === Y ? (0, r.jsx)("span", {
     className: a()("emoji", "emoji-text"),
     children: p
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.aO, {
-      channelId: m,
+      channelId: g,
       messageId: v,
       emojiName: p,
       disable: !1 === Z || !1 === V,

@@ -18,8 +18,8 @@ var i = n(120356),
   _ = n(501967),
   p = n(19780),
   h = n(540028),
-  g = n(507675),
-  m = n(273716),
+  m = n(507675),
+  g = n(273716),
   E = n(388032),
   v = n(54329);
 
@@ -74,7 +74,7 @@ function I(e) {
     voiceChannelId: u,
     idle: o
   }) : null, {
-    enabled: g
+    enabled: m
   } = f.Z.useExperiment({
     location: "PictureInPicturePlayer"
   });
@@ -96,7 +96,7 @@ function I(e) {
         color: s.Z.unsafe_rawColors.WHITE_500.css,
         children: t
       })]
-    }), g && null != i ? (0, r.jsx)(m.Z, {
+    }), m && null != i ? (0, r.jsx)(g.Z, {
       onClick: i,
       label: E.NW.string(E.t.BEuDEh)
     }) : null, _]
@@ -115,7 +115,7 @@ function T(e) {
     renderBottomLeftControls: f,
     renderBottomRightControls: p,
     screenMessage: h,
-    hideControls: m = !1,
+    hideControls: g = !1,
     className: E,
     innerClassName: b
   } = e, S = O(e, ["children", "idle", "onJumpToChannel", "onHide", "backgroundKey", "onActive", "onForceIdle", "renderBottomLeftControls", "renderBottomRightControls", "screenMessage", "hideControls", "className", "innerClassName"]);
@@ -132,9 +132,9 @@ function T(e) {
         className: b,
         children: t
       }, s)
-    }), null != h ? (0, r.jsx)(g.Z, y({
+    }), null != h ? (0, r.jsx)(m.Z, y({
       size: "small"
-    }, h)) : null, !m && (0, r.jsxs)("div", {
+    }, h)) : null, !g && (0, r.jsxs)("div", {
       className: o()(v.videoControls, "theme-dark"),
       children: [(0, r.jsx)("div", {
         className: v.topControls,

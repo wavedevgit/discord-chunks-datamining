@@ -26,9 +26,9 @@ let p = e => {
   } = e, p = (0, s.ZP)(), h = (0, i.e7)([l.default], () => {
     let e = l.default.getCurrentUser();
     return (null == e ? void 0 : e.isStaff()) || (null == e ? void 0 : e.isStaffPersonal())
-  }), g = 1 === n ? u.giftModalContainer : u.shopPageContainer, m = 1 === n ? c.NW.string(c.t["+2QBZW"]) : c.NW.string(c.t.LuhKs7);
+  }), m = 1 === n ? u.giftModalContainer : u.shopPageContainer, g = 1 === n ? c.NW.string(c.t["+2QBZW"]) : c.NW.string(c.t.LuhKs7);
   return (0, r.jsxs)("div", {
-    className: g,
+    className: m,
     children: [(0, r.jsx)("img", {
       className: u.__invalid_loadIssueImg,
       src: (0, o.wj)(p) ? d : f,
@@ -40,7 +40,7 @@ let p = e => {
     }), (0, r.jsx)(a.Text, {
       className: u.description,
       variant: "text-md/normal",
-      children: m
+      children: g
     }), h && null != _ && (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       children: "staff-only debug: " + _

@@ -17,8 +17,8 @@ var r = n(658722),
 let _ = 100,
   p = 8,
   h = 7,
-  g = 6,
-  m = 5,
+  m = 6,
+  g = 5,
   E = 4,
   v = 3,
   b = 2,
@@ -54,7 +54,7 @@ function C(e, t, n, r) {
     f = null != t.emojiName ? l.ZP.convertSurrogateToName(t.emojiName, !1) : null,
     O = null != f ? l.ZP.getByName(f) : null,
     S = null != u ? [u.name] : null !== (o = null == O ? void 0 : O.names) && void 0 !== o ? o : [];
-  return e === c && (a += p), S.includes(e) && (a += h), c.startsWith(e) && (a += g), S.some(t => t.startsWith(e)) && (a += m), c.endsWith(e) && (a += E), S.some(t => t.endsWith(e)) && (a += v), i()(e, t.name.toLocaleLowerCase()) && (a += b), S.some(t => i()(e, t)) && (a += y), a > 0 && (0, d.Nq)(n, t, r) && (a += _), a
+  return e === c && (a += p), S.includes(e) && (a += h), c.startsWith(e) && (a += m), S.some(t => t.startsWith(e)) && (a += g), c.endsWith(e) && (a += E), S.some(t => t.endsWith(e)) && (a += v), i()(e, t.name.toLocaleLowerCase()) && (a += b), S.some(t => i()(e, t)) && (a += y), a > 0 && (0, d.Nq)(n, t, r) && (a += _), a
 }
 
 function R(e, t, n, r, i) {

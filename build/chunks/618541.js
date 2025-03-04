@@ -29,14 +29,14 @@ function h(e) {
   f = t
 }
 
-function g(e) {
+function m(e) {
   let {
     paypalClient: t
   } = e;
   _ = t
 }
 
-function m(e) {
+function g(e) {
   let {
     venmoClient: t
   } = e;
@@ -98,11 +98,11 @@ class O extends(o = a.ZP.Store) {
 d(O, "displayName", "BraintreeStore");
 let S = new O(l.Z, {
     BRAINTREE_CREATE_CLIENT_SUCCESS: h,
-    BRAINTREE_CREATE_PAYPAL_CLIENT_SUCCESS: g,
+    BRAINTREE_CREATE_PAYPAL_CLIENT_SUCCESS: m,
     BILLING_POPUP_BRIDGE_CALLBACK: E,
     BILLING_POPUP_BRIDGE_STATE_UPDATE: v,
     BRAINTREE_TEARDOWN_PAYPAL_CLIENT: b,
-    BRAINTREE_CREATE_VENMO_CLIENT_SUCCESS: m,
+    BRAINTREE_CREATE_VENMO_CLIENT_SUCCESS: g,
     BRAINTREE_TEARDOWN_VENMO_CLIENT: y
   }),
   I = S

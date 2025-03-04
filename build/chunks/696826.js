@@ -6,7 +6,7 @@ n.d(t, {
   Sk: () => d.Skl,
   W5: () => P,
   lm: () => O,
-  qb: () => D,
+  qb: () => w,
   rs: () => R,
   vP: () => C,
   vj: () => y
@@ -47,7 +47,7 @@ function h(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function g(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -212,8 +212,8 @@ function C(e, t, n) {
     cutoutHeight: _,
     cutoutRadius: p,
     polygonScale: h,
-    polygonOrigin: g,
-    dotY: m,
+    polygonOrigin: m,
+    dotY: g,
     dotX: E,
     dotRadius: v
   } = e;
@@ -240,12 +240,12 @@ function C(e, t, n) {
       fill: "black",
       transform: h,
       style: {
-        transformOrigin: g
+        transformOrigin: m
       }
     }), (0, r.jsx)(a.animated.circle, {
       fill: "black",
       cx: E,
-      cy: m,
+      cy: g,
       r: v
     })]
   })
@@ -283,7 +283,7 @@ function P(e, t, n) {
   }
 }
 
-function D(e) {
+function w(e) {
   let {
     status: t,
     isMobile: n = !1,
@@ -292,7 +292,7 @@ function D(e) {
     style: s,
     color: l
   } = e, u = t === d.Skl.ONLINE && n, f = y(t, l);
-  return (0, r.jsx)(c.ZP, m(h({
+  return (0, r.jsx)(c.ZP, g(h({
     mask: R(t, u),
     className: o()(_.mask, a),
     style: s

@@ -35,7 +35,7 @@ function h(e) {
   }
   return e
 }
-let g = (() => {
+let m = (() => {
     let e = "".concat(location.protocol, "//").concat(location.host, "/__development/source_maps"),
       t = null,
       n = new i.Z(5 * d.Z.Millis.SECOND, +d.Z.Millis.MINUTE, !0),
@@ -68,7 +68,7 @@ let g = (() => {
       }
     }
   })(),
-  m = "DeveloperOptionsStore",
+  g = "DeveloperOptionsStore",
   E = {
     trace: !1,
     canary: !1,
@@ -90,7 +90,7 @@ let g = (() => {
   v = h({}, E);
 
 function b(e) {
-  v = h({}, E, v, e), g.set(v.sourceMapsEnabled), l.K.set(m, v)
+  v = h({}, E, v, e), m.set(v.sourceMapsEnabled), l.K.set(g, v)
 }
 
 function y(e) {
@@ -108,13 +108,13 @@ function S(e) {
   var t;
   let n = ((null !== (t = e.user.flags) && void 0 !== t ? t : 0) & _.xW$.STAFF) === _.xW$.STAFF,
     r = n || null != e.user.personal_connection_id;
-  n && g.set(v.sourceMapsEnabled), f.Z.setTags({
+  n && m.set(v.sourceMapsEnabled), f.Z.setTags({
     isStaff: r.toString()
   })
 }
 class I extends(r = a.ZP.Store) {
   initialize() {
-    let e = l.K.get(m);
+    let e = l.K.get(g);
     null != e && (v = h({}, E, e))
   }
   get isTracingRequests() {

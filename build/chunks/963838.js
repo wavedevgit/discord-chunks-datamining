@@ -21,8 +21,8 @@ var r = n(392711),
   _ = n(912931),
   p = n(966552),
   h = n(561763),
-  g = n(529306),
-  m = n(90075),
+  m = n(529306),
+  g = n(90075),
   E = n(862666),
   v = n(252611),
   b = n(136144),
@@ -36,23 +36,23 @@ var r = n(392711),
   C = n(134432),
   R = n(594174),
   P = n(768581),
-  D = n(176354),
-  w = n(353368),
+  w = n(176354),
+  D = n(353368),
   L = n(388032);
 let x = {
     start: 10,
     end: 15
   },
   M = [o],
-  k = [a, s, l, c, u, d, f, _, p, h, g, m, E, v, b, y, O, S, I, T, N],
+  k = [a, s, l, c, u, d, f, _, p, h, m, g, E, v, b, y, O, S, I, T, N],
   j = {
-    [w.q.BASIC]: M,
-    [w.q.PREMIUM]: k
+    [D.q.BASIC]: M,
+    [D.q.PREMIUM]: k
   },
   U = i().memoize(e => new Promise(t => {
     let n = new Image;
     n.src = e, n.crossOrigin = "Anonymous", n.onload = () => {
-      let r = w.v * (0, C.x_)();
+      let r = D.v * (0, C.x_)();
       if (n.width === r && n.height === r) t(e);
       else {
         var i;
@@ -63,7 +63,7 @@ let x = {
   })),
   G = (e, t) => {
     let n = j[e];
-    if (null != t && e === w.q.PREMIUM) {
+    if (null != t && e === D.q.PREMIUM) {
       let e = t.end + 1;
       return Math.floor(Math.random() * (t.start - e) + e)
     }
@@ -71,7 +71,7 @@ let x = {
   };
 
 function B(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : w.v;
+  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : D.v;
   if (null != e.id) {
     var n;
     return P.ZP.getEmojiURL({
@@ -82,7 +82,7 @@ function B(e) {
   }
   let r = A.ZP.convertSurrogateToName(e.name, !1),
     i = A.ZP.getByName(r);
-  return null != i ? D.ZP.getURL(i.surrogates) : ""
+  return null != i ? w.ZP.getURL(i.surrogates) : ""
 }
 
 function V(e, t) {

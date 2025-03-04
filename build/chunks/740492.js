@@ -36,8 +36,8 @@ function h(e) {
   }
   return e
 }
-let g = (window.innerWidth - d.PrS) / 2,
-  m = "standard",
+let m = (window.innerWidth - d.PrS) / 2,
+  g = "standard",
   E = null;
 
 function v() {
@@ -89,7 +89,7 @@ class A extends(r = a.ZP.DeviceSettingsStore) {
   }
   get videoUploadQuality() {
     var e;
-    return null !== (e = b.videoUploadQuality) && void 0 !== e ? e : m
+    return null !== (e = b.videoUploadQuality) && void 0 !== e ? e : g
   }
   get dataSavingMode() {
     var e, t;
@@ -109,7 +109,7 @@ class A extends(r = a.ZP.DeviceSettingsStore) {
   }
   get postSidebarWidth() {
     var e;
-    return null !== (e = b.postSidebarWidth) && void 0 !== e ? e : g
+    return null !== (e = b.postSidebarWidth) && void 0 !== e ? e : m
   }
   get callChatSidebarWidth() {
     var e;

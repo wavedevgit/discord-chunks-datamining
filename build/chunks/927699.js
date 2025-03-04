@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(474936),
   p = n(981631),
   h = n(388032),
-  g = n(354458);
-let m = (0, f.kt)({
+  m = n(354458);
+let g = (0, f.kt)({
   id: "1",
   type: p.d4z.DM
 });
@@ -56,18 +56,18 @@ function E(e) {
       I(E), N(e)
     }
   }, [f, E]), (0, r.jsx)("div", {
-    className: a()(g.body, v),
+    className: a()(m.body, v),
     children: (0, r.jsxs)(d.Z, {
       title: t,
       errors: n,
       disabled: y,
       children: [(0, r.jsx)(u.Z, {
-        innerClassName: a()(g.textArea, b),
-        editorClassName: g.editorTextArea,
+        innerClassName: a()(m.textArea, b),
+        editorClassName: m.editorTextArea,
         maxCharacterCount: _.$n,
         onChange: C,
         placeholder: p,
-        channel: m,
+        channel: g,
         textValue: S,
         richValue: T,
         type: l.Ie.CUSTOM_GIFT,

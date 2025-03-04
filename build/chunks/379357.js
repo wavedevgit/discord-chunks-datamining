@@ -3,7 +3,7 @@
 n.d(t, {
   FO: () => E,
   YC: () => v,
-  rv: () => m
+  rv: () => g
 }), n(47120), n(566702);
 var r = n(726542),
   i = n(394821),
@@ -29,7 +29,7 @@ function h(e) {
   } : void 0
 }
 
-function g(e) {
+function m(e) {
   let t = null == e ? void 0 : e.getIconURL(_.Si.LARGE),
     n = null == e ? void 0 : e.name;
   if (null != t) return {
@@ -40,7 +40,7 @@ function g(e) {
   }
 }
 
-function m(e) {
+function g(e) {
   var t;
   let {
     entry: n,
@@ -97,7 +97,7 @@ function E(e, t) {
     },
     smallImage: void 0
   };
-  let s = g(t);
+  let s = m(t);
   return null != s ? {
     largeImage: s,
     smallImage: i
@@ -120,12 +120,12 @@ function v(e, t) {
       text: null === (o = e.assets) || void 0 === o ? void 0 : null === (r = o.large_text) || void 0 === r ? void 0 : r.trim()
     } : void 0,
     h = (0, i.Z)(e) ? void 0 : null == e ? void 0 : null === (a = e.assets) || void 0 === a ? void 0 : a.small_image,
-    m = null != h ? {
+    g = null != h ? {
       src: (0, c.getAssetImage)(e.application_id, h, [_.Si.LARGE, _.Si.LARGE]),
       text: null === (u = e.assets) || void 0 === u ? void 0 : null === (l = u.small_text) || void 0 === l ? void 0 : l.trim()
     } : void 0;
   return {
-    largeImage: null != p ? p : g(null != t ? t : d),
-    smallImage: m
+    largeImage: null != p ? p : m(null != t ? t : d),
+    smallImage: g
   }
 }

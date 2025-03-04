@@ -14,8 +14,8 @@ var r, i, o, a, s = n(512722),
   _ = n(593472),
   p = n(189451),
   h = n(358085),
-  g = n(591759),
-  m = n(981631),
+  m = n(591759),
+  g = n(981631),
   E = n(413135).Buffer;
 
 function v(e, t, n) {
@@ -65,8 +65,8 @@ let S = window.DiscordNative,
 null != S && (T = S.remoteApp.getVersion().split(".").map(e => parseInt(e)), A = null === (r = (i = S.remoteApp).getModuleVersions) || void 0 === r ? void 0 : r.call(i), N = null === (o = (a = S.remoteApp).getBuildNumber) || void 0 === o ? void 0 : o.call(a));
 let R = new Set(["discord_erlpack", "discord_game_utils", "discord_rpc", "discord_spellcheck", "discord_utils", "discord_voice"]),
   P = !1,
-  D = "lastImageSaveDirectory";
-async function w(e) {
+  w = "lastImageSaveDirectory";
+async function D(e) {
   let t = {
       method: "GET",
       mode: "cors"
@@ -78,7 +78,7 @@ async function w(e) {
 }
 
 function L(e) {
-  return w(e)
+  return D(e)
 }
 var x = function(e) {
     return e[e.Camera = 0] = "Camera", e[e.Microphone = 1] = "Microphone", e[e.Photo = 2] = "Photo", e[e.InputMonitoring = 3] = "InputMonitoring", e[e.ScreenRecording = 4] = "ScreenRecording", e
@@ -123,7 +123,7 @@ let j = {
     try {
       n = this.requireModule("discord_overlay2")
     } catch (e) {}
-    n && n.reset && n.reset(), n && n.disconnectAllProcesses && n.destroyHostProcess && (n.disconnectAllProcesses(), n.destroyHostProcess()), S.remotePowerMonitor.removeAllListeners(), window.location.origin === window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN && !0 !== f.K.get(u.SV) && this.supportsFeature(m.eRX.USER_DATA_CACHE) && S.userDataCache.cacheUserData(f.K.stringify()), null == S || null === (t = S.window) || void 0 === t || t.close(null == S ? void 0 : null === (e = S.globalOverlay) || void 0 === e ? void 0 : e.WINDOW_KEY)
+    n && n.reset && n.reset(), n && n.disconnectAllProcesses && n.destroyHostProcess && (n.disconnectAllProcesses(), n.destroyHostProcess()), S.remotePowerMonitor.removeAllListeners(), window.location.origin === window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN && !0 !== f.K.get(u.SV) && this.supportsFeature(g.eRX.USER_DATA_CACHE) && S.userDataCache.cacheUserData(f.K.stringify()), null == S || null === (t = S.window) || void 0 === t || t.close(null == S ? void 0 : null === (e = S.globalOverlay) || void 0 === e ? void 0 : e.WINDOW_KEY)
   },
   inputEventRegister(e, t, n, r) {
     Array.isArray(t) || (t = t.toJS()), this.getDiscordUtils().inputEventRegister(parseInt(e), t.map(e => {
@@ -267,27 +267,27 @@ let j = {
   async saveImage(e) {
     var t;
     l()(h.isPlatformEmbedded, "Save image method called outside native app");
-    let n = g.Z.toURLSafe(e);
+    let n = m.Z.toURLSafe(e);
     if (null == n) return;
     let r = null !== (t = n.pathname.split("/").pop()) && void 0 !== t ? t : "unknown",
-      i = f.K.get(D),
+      i = f.K.get(w),
       o = await L(e),
       a = E.from(o),
       s = await S.fileManager.saveWithDialog(a, r, null != i ? i : void 0);
-    null != s && f.K.set(D, s)
+    null != s && f.K.set(w, s)
   },
   async saveFile(e, t) {
     var n;
     l()(h.isPlatformEmbedded, "Save file method called outside native app");
-    let r = g.Z.toURLSafe(e);
+    let r = m.Z.toURLSafe(e);
     if (null == r) return null;
     let i = null !== (n = null != t ? t : r.pathname.split("/").pop()) && void 0 !== n ? n : "unknown",
-      o = await w(e),
+      o = await D(e),
       a = E.from(o);
     return S.fileManager.saveWithDialog(a, i)
   },
   async downloadVoiceFilterFile(e, t, n) {
-    l()(h.isPlatformEmbedded, "Download voice filter file method called outside native app"), null != g.Z.toURLSafe(e) && await S.fileManager.maybeDownloadVoiceFilterFile(e, t, n)
+    l()(h.isPlatformEmbedded, "Download voice filter file method called outside native app"), null != m.Z.toURLSafe(e) && await S.fileManager.maybeDownloadVoiceFilterFile(e, t, n)
   },
   stopVoiceFilterDownloads() {
     S.fileManager.stopVoiceFilterDownloads()
@@ -296,7 +296,7 @@ let j = {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : void 0;
     if (null != e) {
       var t, n;
-      let r = null === (t = g.Z.toURLSafe(e)) || void 0 === t ? void 0 : t.pathname;
+      let r = null === (t = m.Z.toURLSafe(e)) || void 0 === t ? void 0 : t.pathname;
       if (null == r) return !1;
       let i = null === (n = r.split(".").pop()) || void 0 === n ? void 0 : n.toLowerCase();
       if (null != i && !I.includes(i)) return !1

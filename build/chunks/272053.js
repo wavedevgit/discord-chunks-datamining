@@ -16,7 +16,7 @@ var r, i = n(348327),
   p = n(246946),
   h = n(981631);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,7 +24,7 @@ function g(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let m = "33kozedd0zs6fbauka98psnc7zwom2s",
+let g = "33kozedd0zs6fbauka98psnc7zwom2s",
   E = +f.Z.Millis.MINUTE,
   v = e => "https://youtube.com/watch?v=".concat(e),
   b = 5 * f.Z.Millis.MINUTE,
@@ -47,13 +47,13 @@ function P(e, t, n) {
     url: "".concat(y).concat(e),
     query: t,
     headers: {
-      "Client-ID": m,
+      "Client-ID": g,
       Authorization: "Bearer ".concat(n)
     },
     rejectWithError: !1
   })
 }
-async function D(e, t) {
+async function w(e, t) {
   var n;
   let r = C[e];
   if (null != r) return r;
@@ -66,7 +66,7 @@ async function D(e, t) {
   }, t), o = null === (n = i[0]) || void 0 === n ? void 0 : n.name;
   return C[e] = o, o
 }
-class w {
+class D {
   start() {
     this._started || (this._started = !0, _.Z.isFetching() ? c.Z.fetch() : this._check())
   }
@@ -96,15 +96,15 @@ class w {
         title: c
       } = a, f = {
         large_image: null != s && null !== (r = (0, d.getAssetFromImageURL)(h.ABu.TWITCH, s)) && void 0 !== r ? r : void 0
-      }, _ = await D(l, t), p = u.Z.get(h.ABu.TWITCH), g = null !== (i = R(s)) && void 0 !== i ? i : e.name, m = null != c && "" !== c ? c.slice(0, S) : void 0, E = null != _ && "" !== _ ? _.slice(0, S) : void 0;
+      }, _ = await w(l, t), p = u.Z.get(h.ABu.TWITCH), m = null !== (i = R(s)) && void 0 !== i ? i : e.name, g = null != c && "" !== c ? c.slice(0, S) : void 0, E = null != _ && "" !== _ ? _.slice(0, S) : void 0;
       return {
         url: null === (n = p.getPlatformUserUrl) || void 0 === n ? void 0 : n.call(p, {
           id: e.id,
-          name: g
+          name: m
         }),
         name: p.name,
         assets: f,
-        details: m,
+        details: g,
         state: E
       }
     } catch (n) {
@@ -178,10 +178,10 @@ class w {
     this._started && (this._nextCheck = setTimeout(() => this._check(), E))
   }
   constructor() {
-    g(this, "_nextCheck", void 0), g(this, "_started", void 0), this._started = !1
+    m(this, "_nextCheck", void 0), m(this, "_started", void 0), this._started = !1
   }
 }
-let L = new w;
+let L = new D;
 
 function x() {
   p.Z.enabled ? L.start() : L.stop()
@@ -200,7 +200,7 @@ class k extends(r = a.ZP.Store) {
     return I
   }
 }
-g(k, "displayName", "ExternalStreamingStore");
+m(k, "displayName", "ExternalStreamingStore");
 let j = new k(l.Z, {
   STREAMING_UPDATE: M,
   USER_CONNECTIONS_UPDATE: () => L._check()

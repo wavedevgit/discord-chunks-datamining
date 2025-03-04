@@ -26,7 +26,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,7 +51,7 @@ function m(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -78,7 +78,7 @@ async function O(e) {
   let {
     analyticsLocations: t,
     analyticsLocation: h,
-    analyticsSourceLocation: m,
+    analyticsSourceLocation: g,
     numberOfBoostsToAdd: b,
     onClose: O,
     closeLayer: S,
@@ -88,9 +88,9 @@ async function O(e) {
     disablePremiumUpsell: A,
     inPopout: C,
     applicationId: R
-  } = e, P = C ? i.u1M : i.z1l, D = l.default.getCurrentUser();
-  if (null == D) return;
-  if (!D.verified) {
+  } = e, P = C ? i.u1M : i.z1l, w = l.default.getCurrentUser();
+  if (null == w) return;
+  if (!w.verified) {
     (0, i.ZDy)(async () => {
       let {
         default: e
@@ -99,7 +99,7 @@ async function O(e) {
         var {
           onClose: n
         } = t, i = v(t, ["onClose"]);
-        return (0, r.jsx)(e, E(g({}, i), {
+        return (0, r.jsx)(e, E(m({}, i), {
           onClose: n
         }))
       }
@@ -108,8 +108,8 @@ async function O(e) {
     });
     return
   }
-  let w = [];
-  u.Z.isLoadedForPremiumSKUs() || w.push((0, s.Y2)()), c.Z.hasFetched || (w.push(o.jg()), w.push((0, a.X8)())), w.length > 0 && await Promise.allSettled(w);
+  let D = [];
+  u.Z.isLoadedForPremiumSKUs() || D.push((0, s.Y2)()), c.Z.hasFetched || (D.push(o.jg()), D.push((0, a.X8)())), D.length > 0 && await Promise.allSettled(D);
   let L = (0, f.vx)(c.Z.boostSlots),
     x = L.length,
     M = e => {
@@ -131,7 +131,7 @@ async function O(e) {
         var {
           onClose: i
         } = n, o = v(n, ["onClose"]);
-        return (0, r.jsx)(t, E(g({}, o), {
+        return (0, r.jsx)(t, E(m({}, o), {
           onClose: e => {
             i(), M(e)
           },
@@ -150,7 +150,7 @@ async function O(e) {
   } else(0, _.Z)({
     analyticsLocations: t,
     analyticsLocation: h,
-    analyticsSourceLocation: m,
+    analyticsSourceLocation: g,
     guildId: T.id,
     closeLayer: k,
     totalNumberOfSlotsToAssign: null != b ? b : 1,

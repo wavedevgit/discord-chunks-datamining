@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(208049),
   p = n(697426),
   h = n(409673),
-  g = n(430824),
-  m = n(197115),
+  m = n(430824),
+  g = n(197115),
   E = n(125900),
   v = n(767434),
   b = n(474936),
@@ -36,7 +36,7 @@ function T(e) {
       await c.Z.joinGuild(t), c.Z.transitionToGuildSync(t)
     } catch (e) {}
   }, [n, t]);
-  return o === v.y.GET_NITRO ? (0, r.jsx)(m.Z, {
+  return o === v.y.GET_NITRO ? (0, r.jsx)(g.Z, {
     fullWidth: !0,
     showGradient: !0,
     premiumModalAnalyticsLocation: {
@@ -60,21 +60,21 @@ function N(e) {
     sound: t,
     channel: n,
     closePopout: c,
-    refreshPosition: m
-  } = e, b = t.guildId === O.X8, y = (0, s.e7)([g.Z], () => g.Z.getGuild(t.guildId)), N = !b && null != y, [A, C] = i.useState(), R = (0, E.V2)({
+    refreshPosition: g
+  } = e, b = t.guildId === O.X8, y = (0, s.e7)([m.Z], () => m.Z.getGuild(t.guildId)), N = !b && null != y, [A, C] = i.useState(), R = (0, E.V2)({
     location: "SoundmojiGuildInfo"
-  }), P = b || N || null != A || !R, [D, w] = i.useState(!P);
+  }), P = b || N || null != A || !R, [w, D] = i.useState(!P);
   i.useEffect(() => {
-    !P && (w(!0), (0, _.xU)(t.soundId, t.guildId).then(e => {
+    !P && (D(!0), (0, _.xU)(t.soundId, t.guildId).then(e => {
       C(e)
     }).finally(() => {
-      w(!1), m()
+      D(!1), g()
     }))
-  }, [m, P, t.guildId, t.soundId]);
+  }, [g, P, t.guildId, t.soundId]);
   let {
     buttonType: L,
     description: x
-  } = (0, v.Z)(t, n, N, A), M = L === v.y.JOIN_GUILD, k = !b && D, j = i.useMemo(() => N ? u.JO.createFromGuildRecord(y) : null != A ? u.JO.createFromDiscoverableGuild(A) : void 0, [y, N, A]);
+  } = (0, v.Z)(t, n, N, A), M = L === v.y.JOIN_GUILD, k = !b && w, j = i.useMemo(() => N ? u.JO.createFromGuildRecord(y) : null != A ? u.JO.createFromDiscoverableGuild(A) : void 0, [y, N, A]);
   return k ? (0, r.jsx)(f.SE, {}) : (0, r.jsxs)("div", {
     className: I.infoContainer,
     children: [(0, r.jsxs)(f.W_, {

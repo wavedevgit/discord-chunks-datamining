@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  EI: () => g,
-  default: () => m,
+  EI: () => m,
+  default: () => g,
   hz: () => v
 });
 var r = n(512722),
@@ -23,10 +23,10 @@ function h(e) {
   null === (t = p[e]) || void 0 === t || t.call(p), p[e] = null
 }
 
-function g(e) {
+function m(e) {
   p[e] = null
 }
-async function m(e) {
+async function g(e) {
   let {
     guildId: t,
     returnChannelId: n,

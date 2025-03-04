@@ -4,8 +4,8 @@ n.d(t, {
   Af: () => _,
   GO: () => f,
   Gh: () => v,
-  Pq: () => g,
-  Q2: () => m,
+  Pq: () => m,
+  Q2: () => g,
   Qh: () => p,
   UE: () => l,
   Vr: () => u,
@@ -120,13 +120,13 @@ function h(e, t) {
   })
 }
 
-function g(e) {
+function m(e) {
   o.default.track(s.rMx.MEMBER_VERIFICATION_APPLICATION_VIEWED, {
     guild_id: e
   })
 }
 
-function m(e) {
+function g(e) {
   let {
     guildId: t,
     source: n,

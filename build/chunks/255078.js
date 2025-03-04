@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Q: () => h,
-  Z: () => g
+  Z: () => m
 });
 var r = n(512722),
   i = n.n(r),
@@ -150,4 +150,4 @@ class h extends o.Z {
     this.planId = n, this.additionalPlans = e.items.filter(e => e.planId !== n), null != t && null != r && (t.planId = r, t.additionalPlans = t.items.filter(e => e.planId !== r))
   }
 }
-let g = h
+let m = h

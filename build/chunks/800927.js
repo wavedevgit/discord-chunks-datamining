@@ -51,8 +51,8 @@ let d = /\n{2,}$/,
   _ = "(?:[*-]|\\d+\\.)",
   p = "(%INDENT_CAPTURE_PATTERN%)(" + _ + ") +",
   h = RegExp("^" + p.replace("%INDENT_CAPTURE_PATTERN%", " *")),
-  g = p + "[^\\n]*(?:\\n(?!%INDENT_CAPTURE_PATTERN%" + _ + " )[^\\n]*)*(\n|$)",
-  m = / *\n$/,
+  m = p + "[^\\n]*(?:\\n(?!%INDENT_CAPTURE_PATTERN%" + _ + " )[^\\n]*)*(\n|$)",
+  g = / *\n$/,
   E = RegExp("^( *)(" + _ + ") [\\s\\S]+?(?:\\n(?! )(?!\\1" + _ + " )|$)"),
   v = /^[ \t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]+$/,
   b = 10,
@@ -76,7 +76,7 @@ let d = /\n{2,}$/,
         f = null != c ? c[0].length : 0,
         _ = null != c ? c[1].length : 0,
         p = " {".concat(_, ",").concat(_ + 1, "}"),
-        E = RegExp(g.replaceAll("%INDENT_CAPTURE_PATTERN%", p), "gm"),
+        E = RegExp(m.replaceAll("%INDENT_CAPTURE_PATTERN%", p), "gm"),
         v = RegExp("^ {1," + f + "}", "gm"),
         b = s.match(E);
       i()(null != b, "markup list items can not be parsed.");
@@ -93,7 +93,7 @@ let d = /\n{2,}$/,
           let c = n.inline,
             d = n._list,
             f = n._listLevel;
-          n._list = !0, n._listLevel = (null != f ? f : 0) + 1, s ? (n.inline = !1, i = o.replace(m, "\n\n")) : (n.inline = !0, i = o.replace(m, ""));
+          n._list = !0, n._listLevel = (null != f ? f : 0) + 1, s ? (n.inline = !1, i = o.replace(g, "\n\n")) : (n.inline = !0, i = o.replace(g, ""));
           let _ = S(t(i, u(l({}, n), {
             allowHeading: !1
           })));

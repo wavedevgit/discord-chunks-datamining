@@ -37,7 +37,7 @@ function h(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,20 +48,20 @@ function g(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function E(e, t, n) {
-  var p, g, E;
+  var p, m, E;
   let v = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {
     modViewPanel: f.k.INFO
   };
   if (!(0, d.Y)(e)) return Promise.resolve();
   let b = null !== (p = v.modViewPanel) && void 0 !== p ? p : f.k.INFO,
-    y = null !== (g = v.sourceLocation) && void 0 !== g ? g : r.Z.MEMBER_SAFETY_PAGE,
+    y = null !== (m = v.sourceLocation) && void 0 !== m ? m : r.Z.MEMBER_SAFETY_PAGE,
     O = c.Z.getCurrentlySelectedChannelId(),
     S = null != O ? s.Z.getChannel(O) : null;
   if (null == S || S.getGuildId() !== e) {
@@ -72,7 +72,7 @@ function E(e, t, n) {
     guildId: e,
     baseChannelId: n,
     sidebarType: a.jL.GUILD_MEMBER_MOD_VIEW,
-    details: m(h({
+    details: g(h({
       type: a.Ff.GUILD_MEMBER_MOD_VIEW,
       userId: t,
       guildId: e

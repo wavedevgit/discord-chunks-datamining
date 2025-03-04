@@ -8,12 +8,12 @@ n.d(t, {
   Hk: () => d,
   KL: () => b,
   L3: () => S,
-  MU: () => g,
+  MU: () => m,
   Qq: () => h,
   dc: () => u,
   gU: () => f,
   o3: () => c,
-  q5: () => m,
+  q5: () => g,
   t0: () => v,
   vf: () => p
 }), n(47120);
@@ -69,8 +69,8 @@ var p = function(e) {
   h = function(e) {
     return e.UNKNOWN = "unknown", e.GUILDS_BAR = "guilds_bar", e.RTC_PANEL = "rtc_panel", e.PROFILE = "profile", e.GAME_LINK = "game_link", e.EMBED = "embed", e
   }({});
-let g = new Set(["hubs"]),
-  m = [],
+let m = new Set(["hubs"]),
+  g = [],
   E = "q",
   v = "c",
   b = "l",

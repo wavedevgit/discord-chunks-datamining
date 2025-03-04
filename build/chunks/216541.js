@@ -22,8 +22,8 @@ let h = e => {
     isPurchased: n,
     isHighlighted: i,
     user: h,
-    forCollectedModal: g,
-    profileEffectClassName: m
+    forCollectedModal: m,
+    profileEffectClassName: g
   } = e, {
     firstProfileEffect: E,
     firstAvatarDecoration: v
@@ -31,12 +31,12 @@ let h = e => {
   return (0, r.jsxs)("div", {
     className: f.container,
     children: [null != E ? (0, r.jsx)("div", {
-      className: o()(f.profileEffectShopPreview, m),
+      className: o()(f.profileEffectShopPreview, g),
       children: (0, r.jsx)(c.Z, {
         isHovering: i,
         profileEffectId: E.id,
         isPurchased: n,
-        forCollectedModal: g,
+        forCollectedModal: m,
         removeSetHeight: !0
       })
     }) : null, null != v ? (0, r.jsx)("div", {

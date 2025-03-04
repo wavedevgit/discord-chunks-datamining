@@ -73,10 +73,10 @@ function h(e) {
   }
 }
 
-function g() {
+function m() {
   p = {}
 }
-class m extends(r = a.ZP.PersistedStore) {
+class g extends(r = a.ZP.PersistedStore) {
   initialize(e) {
     p = null != e ? e : {}
   }
@@ -96,7 +96,7 @@ class m extends(r = a.ZP.PersistedStore) {
     return null === (e = p.appearance) || void 0 === e ? void 0 : e.settings
   }
 }
-u(m, "displayName", "SelectivelySyncedUserSettingsStore"), u(m, "persistKey", "SelectivelySyncedUserSettingsStore"), u(m, "migrations", [() => {
+u(g, "displayName", "SelectivelySyncedUserSettingsStore"), u(g, "persistKey", "SelectivelySyncedUserSettingsStore"), u(g, "migrations", [() => {
   var e, t;
   let n = null !== (e = s.K.get("UserSettingsSync")) && void 0 !== e ? e : {},
     r = null !== (t = s.K.get("UserSettingsStore")) && void 0 !== t ? t : {};
@@ -119,7 +119,7 @@ u(m, "displayName", "SelectivelySyncedUserSettingsStore"), u(m, "persistKey", "S
     })
   })
 }]);
-let E = new m(l.Z, {
+let E = new g(l.Z, {
   SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: h,
-  LOGOUT: g
+  LOGOUT: m
 })

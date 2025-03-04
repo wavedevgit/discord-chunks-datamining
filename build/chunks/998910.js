@@ -14,8 +14,8 @@ var t = "\ud800-\udfff",
   _ = "[\ud800-\udbff][\udc00-\udfff]",
   p = "[" + i + "]",
   h = "(?:" + u + "|" + d + ")",
-  g = "(?:" + p + "|" + d + ")",
-  m = "(?:" + a + "(?:d|ll|m|re|s|t|ve))?",
+  m = "(?:" + p + "|" + d + ")",
+  g = "(?:" + a + "(?:d|ll|m|re|s|t|ve))?",
   E = "(?:" + a + "(?:D|LL|M|RE|S|T|VE))?",
   v = "(?:[\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff]|\ud83c[\udffb-\udfff])?",
   b = "[\\ufe0e\\ufe0f]?",
@@ -24,7 +24,7 @@ var t = "\ud800-\udfff",
   S = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z_])",
   I = b + v + y,
   T = "(?:" + [c, f, _].join("|") + ")" + I,
-  N = RegExp([p + "?" + u + "+" + m + "(?=" + [s, p, "$"].join("|") + ")", g + "+" + E + "(?=" + [s, p + h, "$"].join("|") + ")", p + "?" + h + "+" + m, p + "+" + E, S, O, l, T].join("|"), "g");
+  N = RegExp([p + "?" + u + "+" + g + "(?=" + [s, p, "$"].join("|") + ")", m + "+" + E + "(?=" + [s, p + h, "$"].join("|") + ")", p + "?" + h + "+" + g, p + "+" + E, S, O, l, T].join("|"), "g");
 
 function A(e) {
   return e.match(N) || []

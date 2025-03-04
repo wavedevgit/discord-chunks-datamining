@@ -54,14 +54,14 @@ function h() {
   p = {}
 }
 
-function g(e) {
+function m(e) {
   let {
     threads: t
   } = e;
   for (let e in t) v(e, t[e].first_message)
 }
 
-function m(e) {
+function g(e) {
   let {
     threads: t,
     firstMessages: n
@@ -203,8 +203,8 @@ let R = new C(o.Z, {
   MESSAGE_REACTION_REMOVE_ALL: T,
   MESSAGE_REACTION_REMOVE_EMOJI: N,
   MESSAGE_REACTION_ADD_MANY: I,
-  LOAD_FORUM_POSTS: g,
-  LOAD_THREADS_SUCCESS: m,
-  LOAD_ARCHIVED_THREADS_SUCCESS: m,
+  LOAD_FORUM_POSTS: m,
+  LOAD_THREADS_SUCCESS: g,
+  LOAD_ARCHIVED_THREADS_SUCCESS: g,
   LOAD_MESSAGES_SUCCESS: A
 })

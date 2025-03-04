@@ -7,7 +7,7 @@ n.d(t, {
   MI: () => T,
   V_: () => S,
   X: () => v,
-  X2: () => m,
+  X2: () => g,
   aG: () => p,
   bg: () => _,
   ci: () => E,
@@ -16,7 +16,7 @@ n.d(t, {
   iW: () => y,
   j8: () => A,
   nU: () => h,
-  rD: () => g
+  rD: () => m
 });
 var r = n(544891),
   i = n(881052),
@@ -119,7 +119,7 @@ let _ = async (e, t) => {
   } catch (e) {
     throw new i.Hx(e)
   }
-}, g = async function(e) {
+}, m = async function(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
       includeSoftDeleted: !1
     },
@@ -136,7 +136,7 @@ let _ = async (e, t) => {
   } catch (e) {
     throw new i.Hx(e)
   }
-}, m = async e => (await r.tn.get({
+}, g = async e => (await r.tn.get({
   url: o.ANM.GUILD_ROLE_SUBSCRIPTIONS_SETTINGS(e),
   rejectWithError: !1
 })).body, E = async (e, t) => {

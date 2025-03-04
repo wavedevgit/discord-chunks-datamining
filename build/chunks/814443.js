@@ -46,11 +46,11 @@ function h() {
   _ = l({}, d), p = l({}, f)
 }
 
-function g() {
+function m() {
   u = !1
 }
 
-function m() {
+function g() {
   u = !0
 }
 
@@ -104,7 +104,7 @@ class b extends(r = i.ZP.PersistedStore) {
 s(b, "displayName", "UserAffinitiesStore"), s(b, "persistKey", "UserAffinitiesStore"), s(b, "migrations", [e => null]);
 let y = new b(o.Z, {
   LOAD_USER_AFFINITIES_SUCCESS: E,
-  LOAD_USER_AFFINITIES: m,
-  LOAD_USER_AFFINITIES_FAILURE: g,
+  LOAD_USER_AFFINITIES: g,
+  LOAD_USER_AFFINITIES_FAILURE: m,
   LOGOUT: h
 })

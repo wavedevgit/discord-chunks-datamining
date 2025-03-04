@@ -16,9 +16,9 @@ var r = n(200651),
   _ = n(424218),
   p = n(388032),
   h = n(361172),
-  g = n(332952);
+  m = n(332952);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,7 +34,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -104,7 +104,7 @@ function S(e) {
     language: i
   } = e, o = () => (0, r.jsx)("pre", {
     children: (0, r.jsx)("code", {
-      className: a()(g.scrollbarGhostHairline, h.codeView, "hljs"),
+      className: a()(m.scrollbarGhostHairline, h.codeView, "hljs"),
       children: t
     })
   });
@@ -116,7 +116,7 @@ function S(e) {
       let n = e.highlight(i, t, !0);
       return null == n ? o() : (0, r.jsx)("pre", {
         children: (0, r.jsx)("code", {
-          className: a()(g.scrollbarGhostHairline, h.codeView, "hljs", n.language),
+          className: a()(m.scrollbarGhostHairline, h.codeView, "hljs", n.language),
           dangerouslySetInnerHTML: {
             __html: n.value
           }
@@ -255,18 +255,18 @@ function C(e) {
     expanded: c,
     setExpanded: d,
     language: f,
-    setLanguage: g,
-    bytesLeft: m,
+    setLanguage: m,
+    bytesLeft: g,
     className: E
-  } = e, v = null == s ? void 0 : s.split("\n"), b = null !== (t = null == v ? void 0 : v.length) && void 0 !== t ? t : 0, y = c ? 100 : 6, O = 0 === m, C = "";
+  } = e, v = null == s ? void 0 : s.split("\n"), b = null !== (t = null == v ? void 0 : v.length) && void 0 !== t ? t : 0, y = c ? 100 : 6, O = 0 === g, C = "";
   O && c && b > y ? C = "\n..." : O || (C = "..."), "" !== C && (O ? C += " " + p.NW.formatToPlainString(p.t.DQnFp6, {
     lines: b - y
   }) : C += " " + p.NW.formatToPlainString(p.t["1+gGcH"], {
-    formattedBytes: (0, _.IC)(m)
+    formattedBytes: (0, _.IC)(g)
   }));
   let R = (null == v ? void 0 : v.slice(0, y).join("\n")) + C,
     P = (0, u.yx)(R),
-    D = c || y < b;
+    w = c || y < b;
   return (0, r.jsxs)("div", {
     className: a()(E, h.container),
     children: [(0, r.jsx)("div", {
@@ -283,7 +283,7 @@ function C(e) {
       color: "header-secondary",
       className: h.footer,
       variant: "text-sm/normal",
-      children: [D ? (0, r.jsxs)(r.Fragment, {
+      children: [w ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(I, {
           expanded: c,
           setExpanded: d,
@@ -295,7 +295,7 @@ function C(e) {
           fileSize: o,
           language: f,
           fileContents: s,
-          bytesLeft: m
+          bytesLeft: g
         })]
       }) : null, (0, r.jsx)("div", {
         className: h.footerGap
@@ -305,7 +305,7 @@ function C(e) {
         fileSize: o
       }), (0, r.jsx)(N, {
         language: f,
-        setLanguage: g
+        setLanguage: m
       })]
     })]
   })
@@ -320,8 +320,8 @@ function R(e) {
     language: s,
     fileContents: c,
     bytesLeft: u
-  } = e, [d, f] = i.useState(s), g = null != c ? c : "";
-  return 0 !== u && (g += "... ".concat(p.NW.formatToPlainString(p.t["1+gGcH"], {
+  } = e, [d, f] = i.useState(s), m = null != c ? c : "";
+  return 0 !== u && (m += "... ".concat(p.NW.formatToPlainString(p.t["1+gGcH"], {
     formattedBytes: (0, _.IC)(u)
   }))), (0, r.jsx)(l.Y0X, {
     transitionState: a,
@@ -335,7 +335,7 @@ function R(e) {
         children: null == c ? (0, r.jsx)(l.$jN, {
           className: h.spinner
         }) : (0, r.jsx)(S, {
-          text: g,
+          text: m,
           language: d
         })
       }), (0, r.jsxs)(l.Text, {
@@ -365,8 +365,8 @@ let P = i.memo(function(e) {
     className: l,
     onClick: u,
     onContextMenu: d
-  } = e, [f, _] = i.useState(!1), [p, g] = i.useState(n.split(".").slice(-1)[0]), {
-    fileContents: m,
+  } = e, [f, _] = i.useState(!1), [p, m] = i.useState(n.split(".").slice(-1)[0]), {
+    fileContents: g,
     bytesLeft: E,
     hadError: v
   } = O(t, s);
@@ -381,12 +381,12 @@ let P = i.memo(function(e) {
     url: t,
     fileName: n,
     fileSize: o,
-    fileContents: m,
+    fileContents: g,
     bytesLeft: E,
     expanded: f,
     setExpanded: _,
     language: p,
-    setLanguage: g,
+    setLanguage: m,
     className: a()(h.newMosaicStyle, l)
   })
 }, (e, t) => e.url === t.url && e.className === t.className)

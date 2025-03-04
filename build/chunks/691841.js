@@ -32,28 +32,28 @@ function l(e) {
     if (null === (n = u.current) || void 0 === n || n.scrollToTop(), e && null != d.query) {
       let e = d.query.typeInfo.focusMode,
         n = e !== s.QZ.MANUAL && (e !== s.QZ.AUTO_WHEN_FILTERED || 0 !== d.query.queryText.length);
-      d.isVisible && (!0 !== t || !1 !== n) ? (m.setFocus("0"), null == f || f(0)) : (m.setFocus(null), null == f || f(null))
+      d.isVisible && (!0 !== t || !1 !== n) ? (g.setFocus("0"), null == f || f(0)) : (g.setFocus(null), null == f || f(null))
     }
-  }, g = e => {
+  }, m = e => {
     var t;
     if (null === (t = u.current) || void 0 === t || t.scrollToBottom(), e && null != d.query && d.query.resultCount > 0) {
       let e = d.query.resultCount - 1;
-      m.setFocus(e.toString()), null == f || f(e)
+      g.setFocus(e.toString()), null == f || f(e)
     }
-  }, m = (0, i.ZP)({
+  }, g = (0, i.ZP)({
     id: c,
     isEnabled: d.isVisible,
     orientation: o.hy.VERTICAL,
     useVirtualFocus: !0,
     setFocus: p,
     onNavigateNextAtEnd: () => h(!0),
-    onNavigatePreviousAtStart: () => g(!0),
+    onNavigatePreviousAtStart: () => m(!0),
     scrollToStart: () => (h(!1, !1), Promise.resolve()),
-    scrollToEnd: () => (g(!1), Promise.resolve())
+    scrollToEnd: () => (m(!1), Promise.resolve())
   }), E = r.useRef(h);
   return r.useEffect(() => {
     E.current = h
   }), r.useEffect(() => {
     E.current(!0, !0)
-  }, [null === (t = d.query) || void 0 === t ? void 0 : t.type, null === (n = d.query) || void 0 === n ? void 0 : n.queryText, null === (l = d.query) || void 0 === l ? void 0 : l.isLoading, d.isVisible]), m
+  }, [null === (t = d.query) || void 0 === t ? void 0 : t.type, null === (n = d.query) || void 0 === n ? void 0 : n.queryText, null === (l = d.query) || void 0 === l ? void 0 : l.isLoading, d.isVisible]), g
 }

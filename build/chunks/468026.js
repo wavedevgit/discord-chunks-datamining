@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  default: () => g
+  default: () => m
 });
 var r = n(200651);
 n(192379);
@@ -17,10 +17,10 @@ var i = n(120356),
   _ = n(540059),
   p = n(388032),
   h = n(150834);
-let g = e => {
+let m = e => {
   let t, n, i, {
-      body: g,
-      cancelText: m,
+      body: m,
+      cancelText: g,
       className: E,
       confirmColor: v,
       confirmText: b = p.NW.string(p.t.BddRzc),
@@ -35,22 +35,22 @@ let g = e => {
     } = e,
     R = (0, _.Q3)("ConfirmModal"),
     P = R ? a.zx.Sizes.MEDIUM : a.zx.Sizes.LARGE,
-    D = () => {
+    w = () => {
       null == S || S(), null == O || O()
     },
-    w = e => {
+    D = e => {
       null != e && e.preventDefault(), null == S || S(), null == I || I()
     },
     L = () => {
       null == S || S(), null == T || T()
     };
-  return null != m && "" !== m && (t = (0, r.jsx)(a.zx, {
+  return null != g && "" !== g && (t = (0, r.jsx)(a.zx, {
     type: "button",
     size: P,
     color: a.zx.Colors.PRIMARY,
-    onClick: D,
+    onClick: w,
     className: h.secondaryButton,
-    children: m
+    children: g
   })), null != b && "" !== b && (n = (0, r.jsx)(a.zx, {
     type: "submit",
     color: v,
@@ -72,7 +72,7 @@ let g = e => {
     className: o()(E, h.container),
     "aria-label": N,
     children: (0, r.jsxs)("form", {
-      onSubmit: w,
+      onSubmit: D,
       className: h.form,
       children: [(0, r.jsx)(c.xB, {
         children: null != N && R ? (0, r.jsx)(d.X6q, {
@@ -90,11 +90,11 @@ let g = e => {
           direction: f.Z.Direction.VERTICAL,
           justify: R ? f.Z.Justify.START : f.Z.Justify.CENTER,
           className: h.content,
-          children: null != g && (0, r.jsx)(u.x, {
+          children: null != m && (0, r.jsx)(u.x, {
             variant: "text-md/normal",
             className: h.body,
             color: R ? "header-secondary" : "text-normal",
-            children: g
+            children: m
           })
         })
       }), (0, r.jsxs)(c.mz, {

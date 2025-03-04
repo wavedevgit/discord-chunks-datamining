@@ -17,8 +17,8 @@ var r = n(200651),
   p = n(409813);
 n(51499), n(614277);
 var h = n(122289),
-  g = n(70956),
-  m = n(981631),
+  m = n(70956),
+  g = n(981631),
   E = n(388032),
   v = n(137635);
 let b = new Set([p.h8.SKU_SELECT, p.h8.AWAITING_AUTHENTICATION, p.h8.AWAITING_PURCHASE_TOKEN_AUTH, p.h8.CONFIRM]);
@@ -38,13 +38,13 @@ function y(e) {
     purchaseError: C,
     purchaseErrorBlockRef: R,
     planError: P,
-    onScroll: D,
-    scrollerClassName: w,
+    onScroll: w,
+    scrollerClassName: D,
     hasCurrencies: L = !1
   } = e, x = null;
   null != y && null == (0, p.ly)(y) ? x = y : null != C ? x = C : null != P && (x = P);
   let M = null != x ? x.message : "";
-  null != x && x instanceof d.HF && (x.code === f.SM.CARD_DECLINED && L && (M += " ".concat(E.NW.string(E.t.iWvwQU))), x.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (M = E.NW.string(E.t.ypuSd3)), x.code === m.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (M = E.NW.string(E.t.mXMmWF)));
+  null != x && x instanceof d.HF && (x.code === f.SM.CARD_DECLINED && L && (M += " ".concat(E.NW.string(E.t.iWvwQU))), x.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (M = E.NW.string(E.t.ypuSd3)), x.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (M = E.NW.string(E.t.mXMmWF)));
   let {
     stripe: k
   } = (0, _.JL)();
@@ -52,7 +52,7 @@ function y(e) {
   let j = i.useRef(new l.V7);
   i.useEffect(() => {
     let e = j.current;
-    return null != k || e.isStarted() ? null != k && e.stop() : e.start(10 * g.Z.Millis.SECOND, () => {
+    return null != k || e.isStarted() ? null != k && e.stop() : e.start(10 * m.Z.Millis.SECOND, () => {
       let e = Error("Stripe took too long to load");
       (0, h.q2)(e)
     }), () => {
@@ -61,7 +61,7 @@ function y(e) {
   }, [k]);
   let U = t.includes(p.h8.PAYMENT_TYPE) ? p.h8.PAYMENT_TYPE : p.h8.ADD_PAYMENT_STEPS;
   return (0, r.jsxs)(o.Elements, {
-    options: m.OBo,
+    options: g.OBo,
     stripe: k,
     children: [O, (0, r.jsxs)("div", {
       className: s()("paymentModalContent", v.content),
@@ -99,8 +99,8 @@ function y(e) {
           steps: t,
           sideMargin: 20,
           children: (0, r.jsx)(c.h21, {
-            onScroll: D,
-            className: s()(v.scroller, w),
+            onScroll: w,
+            className: s()(v.scroller, D),
             children: a
           })
         })]

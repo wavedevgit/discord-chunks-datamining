@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  KX: () => g,
+  KX: () => m,
   M$: () => h,
   ZP: () => E
 }), n(653041), n(230036), n(47120);
@@ -66,12 +66,12 @@ let d = 10,
       return e <= 1 ? t = 100 : e <= 2 ? t = 70 : e <= 3 ? t = 50 : e <= 7 ? t = 20 : e <= 15 ? t = 15 : e <= 30 ? t = 10 : e <= 45 ? t = 5 : e <= 80 && (t = 2), t
     }
   },
-  g = {
+  m = {
     original: p,
     safe: (e, t, n) => null == n.maxTotalUse ? 0 : Math.trunc(1e3 * (e / n.maxTotalUse * .2 + t / f * .8)),
     day_recency: (e, t, n) => null == n.maxTotalUse ? 0 : Math.trunc(1e3 * (e / n.maxTotalUse * .05 + t / f * .95))
   };
-class m {
+class g {
   overwriteHistory(e, t) {
     this.usageHistory = i().mapValues(null != e ? e : {}, e => u(l({}, e), {
       frecency: -1
@@ -166,4 +166,4 @@ class m {
     s(this, "dirty", void 0), s(this, "_frequently", void 0), s(this, "numFrequentlyItems", void 0), s(this, "maxSamples", void 0), s(this, "computeBonus", void 0), s(this, "computeWeight", void 0), s(this, "computeFrecency", void 0), s(this, "lookupKey", void 0), s(this, "usageHistory", void 0), s(this, "afterCompute", void 0), s(this, "calculateMaxTotalUse", void 0), this.computeBonus = e, this.computeWeight = t, this.computeFrecency = n, this.afterCompute = i, this.lookupKey = r, this.usageHistory = {}, this.frequently = [], this.maxSamples = a, this.numFrequentlyItems = o, this.calculateMaxTotalUse = !1, this.dirty = !1
   }
 }
-let E = m
+let E = g

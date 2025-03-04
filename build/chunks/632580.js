@@ -17,7 +17,7 @@ var r = n(512722),
   p = n(981631),
   h = n(474936);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,14 +26,14 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -60,7 +60,7 @@ async function b(e) {
     setPurchaseState: t,
     setHasAcceptedTerms: n,
     setIsSubmitting: r,
-    setPurchaseError: g,
+    setPurchaseError: m,
     hasRedirectURL: E,
     setHasRedirectURL: b,
     isGift: y,
@@ -73,8 +73,8 @@ async function b(e) {
     trialId: C,
     priceOptions: R,
     paymentSource: P,
-    isPrepaidPaymentPastDue: D,
-    openInvoiceId: w,
+    isPrepaidPaymentPastDue: w,
+    openInvoiceId: D,
     premiumSubscription: L,
     onNext: x,
     metadata: M,
@@ -86,10 +86,10 @@ async function b(e) {
     giftInfoOptions: V,
     invoicePreview: F
   } = e;
-  t(_.A.PURCHASING), n(!0), r(!0), o.Z.wait(s.fw), g(null);
+  t(_.A.PURCHASING), n(!0), r(!0), o.Z.wait(s.fw), m(null);
   try {
     let e, n, r;
-    if (d.default.track(p.rMx.PAYMENT_FLOW_COMPLETED, v(m({}, O), {
+    if (d.default.track(p.rMx.PAYMENT_FLOW_COMPLETED, v(g({}, O), {
         subtotal: null == F ? void 0 : F.subtotal,
         tax: null == F ? void 0 : F.tax,
         expected_amount: null == F ? void 0 : F.total,
@@ -117,7 +117,7 @@ async function b(e) {
         loadId: B,
         giftInfoOptions: V
       })
-    } else if (D && null != w && null != P && null != L) e = p.Uk1.has(P.type) ? await (0, a.G)(L, w, P, R.currency) : await (0, a.Mg)(L, {
+    } else if (w && null != D && null != P && null != L) e = p.Uk1.has(P.type) ? await (0, a.G)(L, D, P, R.currency) : await (0, a.Mg)(L, {
       paymentSource: P,
       currency: R.currency
     }, I, S, B);
@@ -143,7 +143,7 @@ async function b(e) {
     }
     t(_.A.COMPLETED), "subscription" in e ? n = null != e.subscription ? u.Z.createFromServer(e.subscription) : null : "entitlements" in e && (r = null != e.entitlements ? e.entitlements : void 0), x(n, r)
   } catch (e) {
-    t(_.A.FAIL), g(e), d.default.track(p.rMx.PAYMENT_FLOW_FAILED, v(m({}, O), {
+    t(_.A.FAIL), m(e), d.default.track(p.rMx.PAYMENT_FLOW_FAILED, v(g({}, O), {
       payment_error_code: null == e ? void 0 : e.code,
       payment_source_id: null == P ? void 0 : P.id,
       payment_source_type: null == P ? void 0 : P.type,

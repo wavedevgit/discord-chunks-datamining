@@ -7,7 +7,7 @@ n.d(t, {
   Ps: () => c,
   SD: () => f,
   ai: () => l,
-  c8: () => g,
+  c8: () => m,
   kG: () => d,
   lS: () => s
 });
@@ -57,7 +57,7 @@ let f = ["open.spotify.com", "www.spotify.com"],
     IOS_APP_STORE: "https://itunes.apple.com/us/app/spotify-music/id324684580?mt=8"
   });
 
-function g(e) {
+function m(e) {
   if ("string" != typeof e) return null;
   switch (e) {
     case "track":

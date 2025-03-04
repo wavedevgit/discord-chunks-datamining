@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   Qs: () => E,
-  Uf: () => m,
+  Uf: () => g,
   VO: () => v,
-  Xs: () => g,
+  Xs: () => m,
   ep: () => h,
   t$: () => y,
   yi: () => b
@@ -39,7 +39,7 @@ let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
       return window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
     }, [u]), l
   },
-  g = e => {
+  m = e => {
     let {
       activeCategoryIndex: t,
       listRef: n,
@@ -60,7 +60,7 @@ let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
       o.current = i
     }, [i])
   },
-  m = e => {
+  g = e => {
     let {
       listRef: t,
       searchQuery: n,
@@ -181,8 +181,8 @@ let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
       null != r && l(r, n)
     }, [d, l]), {
       dispatch: h,
-      getItemProps: g,
-      getRowProps: m,
+      getItemProps: m,
+      getRowProps: g,
       getContainerProps: E
     } = (0, s.Z)({
       navId: n,
@@ -208,8 +208,8 @@ let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
       return window.addEventListener("mousemove", e), () => window.removeEventListener("mousemove", e)
     }, []), {
       gridDispatch: h,
-      getItemProps: g,
-      getRowProps: m,
+      getItemProps: m,
+      getRowProps: g,
       gridContainerProps: v,
       handleGridContainerKeyDown: b,
       isUsingKeyboardNavigation: u

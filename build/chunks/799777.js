@@ -23,9 +23,9 @@ let f = "GameLibraryViewStore",
   _ = 200,
   p = u.sHY.ASCENDING,
   h = u.iEv.LAST_PLAYED,
-  g = !1,
-  m = a().debounce(() => {
-    g = !1, y.emitChange()
+  m = !1,
+  g = a().debounce(() => {
+    m = !1, y.emitChange()
   }, _);
 
 function E(e) {
@@ -33,7 +33,7 @@ function E(e) {
     key: t,
     isKeyboardEvent: n
   } = e;
-  n && (g = !0, m()), r = t
+  n && (m = !0, g()), r = t
 }
 
 function v(e) {
@@ -62,7 +62,7 @@ class b extends(i = s.ZP.Store) {
     return r
   }
   get isNavigatingByKeyboard() {
-    return g
+    return m
   }
 }
 d(b, "displayName", "GameLibraryViewStore");

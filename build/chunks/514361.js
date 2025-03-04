@@ -14,8 +14,8 @@ var o, a = n(442837),
   _ = n(740492),
   p = n(695346),
   h = n(581883),
-  g = n(131704),
-  m = n(592125),
+  m = n(131704),
+  g = n(592125),
   E = n(594174),
   v = n(74538),
   b = n(51144),
@@ -57,10 +57,10 @@ let T = !1,
   P = e => {
     M()
   },
-  D = e => {
+  w = e => {
     k()
   },
-  w = e => {
+  D = e => {
     r = void 0
   },
   L = e => {
@@ -69,8 +69,8 @@ let T = !1,
       guildId: n
     } = e, r = E.default.getCurrentUser();
     if (null == t || null == n || (0, c.un)(s.z.CLIENT_THEMES_COACHMARK) || !(0, b.Fc)(r)) return;
-    let i = m.Z.getChannel(t);
-    null != i && (0, g.zi)(i.type) && (A = !0)
+    let i = g.Z.getChannel(t);
+    null != i && (0, m.zi)(i.type) && (A = !0)
   };
 
 function x() {
@@ -114,7 +114,7 @@ let j = () => {
   };
 class B extends(o = a.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (r = (null == e ? void 0 : e.gradientPresetId) != null ? O.qt[e.gradientPresetId] : void 0), this.waitFor(E.default, f.Z, m.Z, u.Z, h.Z), this.syncWith([E.default], j), this.syncWith([u.Z], U), this.syncWith([h.Z], G)
+    null != e && (r = (null == e ? void 0 : e.gradientPresetId) != null ? O.qt[e.gradientPresetId] : void 0), this.waitFor(E.default, f.Z, g.Z, u.Z, h.Z), this.syncWith([E.default], j), this.syncWith([u.Z], U), this.syncWith([h.Z], G)
   }
   getState() {
     return N ? {} : {
@@ -153,8 +153,8 @@ let V = new B(l.Z, {
   UPDATE_BACKGROUND_GRADIENT_PRESET: C,
   UPDATE_MOBILE_PENDING_THEME_INDEX: R,
   CLIENT_THEMES_EDITOR_OPEN: P,
-  CLIENT_THEMES_EDITOR_CLOSE: D,
-  RESET_PREVIEW_CLIENT_THEME: w,
+  CLIENT_THEMES_EDITOR_CLOSE: w,
+  RESET_PREVIEW_CLIENT_THEME: D,
   CHANNEL_SELECT: L,
   LOGOUT: x
 })

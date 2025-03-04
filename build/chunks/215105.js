@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(823379),
   p = n(5192),
   h = n(51144),
-  g = n(698305),
-  m = n(510659),
+  m = n(698305),
+  g = n(510659),
   E = n(810097),
   v = n(652853),
   b = n(228168),
@@ -84,13 +84,13 @@ function A(e) {
     onClose: R,
     entry: P
   } = e, {
-    resetInteraction: D,
-    setInteractionToast: w
-  } = (0, m.Xo)(), {
+    resetInteraction: w,
+    setInteractionToast: D
+  } = (0, g.Xo)(), {
     primaryColor: L
   } = (0, v.z)(), [x, M] = i.useState(""), [k, j] = i.useState((0, u.JM)(x)), U = i.useRef(!1), G = i.useRef(null), B = i.useCallback(e => {
-    e.key === y.vn.ESCAPE && (e.stopPropagation(), D())
-  }, [D]);
+    e.key === y.vn.ESCAPE && (e.stopPropagation(), w())
+  }, [w]);
   i.useEffect(() => {
     null == E || E(null == G ? void 0 : G.current)
   }, [G, E]);
@@ -109,9 +109,9 @@ function A(e) {
       sourceType: f,
       sourceDetails: _
     });
-    w(null);
+    D(null);
     try {
-      await (0, g.Z)({
+      await (0, m.Z)({
         userId: t.id,
         content: n,
         location: "UserProfileReplyPopout",
@@ -120,7 +120,7 @@ function A(e) {
         entry: P
       })
     } catch (e) {}
-    w(b.P.REPLY)
+    D(b.P.REPLY)
   }, F = {
     [S.biteSize]: s === b.y0.BITE_SIZE,
     [S.panel]: s === b.y0.PANEL,
@@ -166,7 +166,7 @@ function A(e) {
             shouldRefocus: !1
           };
           try {
-            return await V(n), D(), null == R || R(), {
+            return await V(n), w(), null == R || R(), {
               shouldClear: !0,
               shouldRefocus: !1
             }

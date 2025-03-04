@@ -75,10 +75,10 @@ function s(e) {
     h = p({
       includeEqual: !0
     }),
-    g = p({
+    m = p({
       includeEqual: !1
     }),
-    m = function(t, n) {
+    g = function(t, n) {
       return {
         begin: i(t, r(i(/\s*/, a(/\w/, /'/, /\^/, /#/, /``/, /\(/, /{\|/)))),
         beginScope: n,
@@ -89,11 +89,11 @@ function s(e) {
         }),
         contains: [c, _, e.inherit(d, {
           scope: null
-        }), g]
+        }), m]
       }
     },
-    E = m(/:/, "operator"),
-    v = m(/\bof\b/, "keyword"),
+    E = g(/:/, "operator"),
+    v = g(/\bof\b/, "keyword"),
     b = {
       begin: [/(^|\s+)/, /type/, /\s+/, u],
       beginScope: {
@@ -182,11 +182,11 @@ function s(e) {
       }, A],
       relevance: 2
     },
-    D = {
+    w = {
       scope: "string",
       match: i(/'/, a(/[^\\']/, /\\(?:.|\d{3}|x[a-fA-F\d]{2}|u[a-fA-F\d]{4}|U[a-fA-F\d]{8})/), /'/)
     };
-  return A.contains = [R, C, T, I, D, n, c, d, E, y, O, S, _, h], {
+  return A.contains = [R, C, T, I, w, n, c, d, E, y, O, S, _, h], {
     name: "F#",
     aliases: ["fs", "f#"],
     keywords: l,
@@ -195,13 +195,13 @@ function s(e) {
       "computation-expression": "keyword"
     },
     contains: [n, {
-      variants: [P, R, C, N, T, I, D]
+      variants: [P, R, C, N, T, I, w]
     }, c, d, b, {
       scope: "meta",
       begin: /\[</,
       end: />\]/,
       relevance: 2,
-      contains: [d, N, T, I, D, S]
+      contains: [d, N, T, I, w, S]
     }, v, E, y, O, S, _, h]
   }
 }

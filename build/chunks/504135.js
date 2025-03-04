@@ -25,7 +25,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function m(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -61,7 +61,7 @@ function v(e) {
     label: n,
     icon: o,
     iconLeft: h,
-    iconLeftSize: m = "md",
+    iconLeftSize: g = "md",
     hint: v,
     subtext: b,
     subtextLineClamp: y,
@@ -74,8 +74,8 @@ function v(e) {
     onFocus: C,
     className: R,
     focusedClassName: P,
-    subMenuIconClassName: D,
-    dontCloseOnActionIfHoldingShiftKey: w,
+    subMenuIconClassName: w,
+    dontCloseOnActionIfHoldingShiftKey: D,
     dontCloseOnAction: L,
     iconProps: x,
     sparkle: M
@@ -86,11 +86,11 @@ function v(e) {
     if (null == j || j({
         type: c.U.DEFAULT
       }), null == N) return !1;
-    e.shiftKey && w || L || A(), e.persist(), null == k || k(), requestAnimationFrame(() => N(e))
-  }, [N, A, k, w, L, j]);
+    e.shiftKey && D || L || A(), e.persist(), null == k || k(), requestAnimationFrame(() => N(e))
+  }, [N, A, k, D, L, j]);
   return i.useEffect(() => {
     I && ((0, u.F)(U), null == C || C())
-  }, [I, C]), (0, r.jsxs)(s.P, E(g({
+  }, [I, C]), (0, r.jsxs)(s.P, E(m({
     innerRef: U,
     className: a()(p.item, p.labelContainer, _._[t], R, {
       [p.disabled]: S,
@@ -103,9 +103,9 @@ function v(e) {
     "data-menu-item": "true",
     children: [null != h && (0, r.jsx)("div", {
       className: a()(p.iconContainerLeft, {
-        [p.iconContainerLarge]: "lg" === m
+        [p.iconContainerLarge]: "lg" === g
       }),
-      children: (0, r.jsx)(h, E(g({
+      children: (0, r.jsx)(h, E(m({
         color: "currentColor"
       }, x), {
         className: a()(p.icon, null == x ? void 0 : x.className),
@@ -126,7 +126,7 @@ function v(e) {
       children: (0, l.I)(v, e)
     }), (0, d.Y)(o) ? o : null != o && (0, r.jsx)("div", {
       className: p.iconContainer,
-      children: (0, r.jsx)(o, E(g({
+      children: (0, r.jsx)(o, E(m({
         color: "currentColor"
       }, x), {
         className: a()(p.icon, null == x ? void 0 : x.className),
@@ -137,7 +137,7 @@ function v(e) {
       children: [(0, r.jsx)(f.Fbu, {
         size: "md",
         color: "currentColor",
-        className: a()(p.caret, D)
+        className: a()(p.caret, w)
       }), M && (0, r.jsx)(f.K1N, {
         className: p.sparkles
       })]

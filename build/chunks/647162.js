@@ -5,7 +5,7 @@ n.d(t, {
   PY: () => _,
   Wo: () => h,
   iy: () => E,
-  yp: () => g
+  yp: () => m
 }), n(411104), n(177593), n(47120);
 var r = n(763472),
   i = n(726542),
@@ -66,7 +66,7 @@ function h() {
   return t.isPremium
 }
 
-function g() {
+function m() {
   let e = c.Z.getActiveSocketAndDevice();
   if (null == e) return Promise.reject(Error("no active profile"));
   let {
@@ -77,20 +77,20 @@ function g() {
   })
 }
 
-function m(e) {
+function g(e) {
   if ("string" == typeof e) return e;
   throw Error("value is not a string")
 }
 async function E(e, t) {
   var n;
   let i = await (0, r.sd)(e, t),
-    o = (0, u.c8)(m(null !== (n = i.type) && void 0 !== n ? n : u.Hw.TRACK));
+    o = (0, u.c8)(g(null !== (n = i.type) && void 0 !== n ? n : u.Hw.TRACK));
   if (null === o) throw Error("invalid type ".concat(i.type));
   return {
     context_uri: "string" == typeof i.context_uri ? i.context_uri : void 0,
-    album_id: m(i.album_id),
-    artist_ids: Array.isArray(i.artist_ids) ? i.artist_ids.map(m) : [],
+    album_id: g(i.album_id),
+    artist_ids: Array.isArray(i.artist_ids) ? i.artist_ids.map(g) : [],
     type: o,
-    button_urls: Array.isArray(i.button_urls) ? i.button_urls.map(m) : []
+    button_urls: Array.isArray(i.button_urls) ? i.button_urls.map(g) : []
   }
 }

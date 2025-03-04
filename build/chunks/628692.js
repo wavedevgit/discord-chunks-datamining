@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(409700),
   p = n(321889),
   h = n(763296),
-  g = n(697426),
-  m = n(409673),
+  m = n(697426),
+  g = n(409673),
   E = n(695346),
   v = n(592125),
   b = n(388032),
@@ -141,25 +141,25 @@ let R = function(e) {
     location: "SoundboardMention"
   }), R = i.useRef(null), {
     isPlaying: P,
-    playSound: D
-  } = (0, p.Z)(O, I), w = i.useCallback(async () => {
-    if (await D()) {
+    playSound: w
+  } = (0, p.Z)(O, I), D = i.useCallback(async () => {
+    if (await w()) {
       var e;
       null === (e = R.current) || void 0 === e || e.addAnimation()
     }
-  }, [D]);
+  }, [w]);
   return A ? null == O ? (0, r.jsx)(N, {
-    playSound: w
-  }) : c && !d ? (0, r.jsx)(m.ZP, {
+    playSound: D
+  }) : c && !d ? (0, r.jsx)(g.ZP, {
     containerClassName: y.jumboContainer,
     className: y.jumboButton,
     sound: O,
     channel: I,
     refreshEnabled: !0,
-    onSelectItem: w,
+    onSelectItem: D,
     isPlayingSoundOverride: P,
     isSoundmoji: !0,
-    buttonOverlay: g.Pb.SOUNDMOJI,
+    buttonOverlay: m.Pb.SOUNDMOJI,
     tooltipClassName: y.tooltip,
     tooltipContentClassName: y.tooltipContainer,
     tooltipOverride: (0, r.jsx)(_.Dp, {
@@ -178,7 +178,7 @@ let R = function(e) {
     children: e => (0, r.jsx)("span", T(S({}, e), {
       children: (0, r.jsx)(C, {
         sound: O,
-        playSound: w,
+        playSound: D,
         isPlaying: P
       })
     }))

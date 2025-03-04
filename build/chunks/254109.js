@@ -4,7 +4,7 @@ n.d(t, {
   VO: () => h,
   fS: () => p,
   uG: () => d,
-  yg: () => g
+  yg: () => m
 }), n(977457);
 var r = n(15729),
   i = n(731965),
@@ -79,7 +79,7 @@ function h() {
   }, e.incrementableActions)), (0, i.j)(() => _.setState(l({}, f)))
 }
 
-function g(e) {
+function m(e) {
   (0, i.j)(() => {
     _.setState(t => ({
       incrementableActions: u(l({}, t.incrementableActions), {

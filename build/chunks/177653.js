@@ -69,10 +69,10 @@ function h(e) {
   } = e;
   return "query:'".concat(t, "' guildId:").concat(n, " page:").concat(r, " pageSize:").concat(i, " categoryId:").concat(o, " integrationType:").concat(s, " minUserInstallCommandCount:").concat(l, " excludeAppsWithCustomInstallUrl:").concat(c, " excludeNonEmbeddedApps:").concat(u, " excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand:").concat(d, " source:").concat(f)
 }
-let g = new(o())({
+let m = new(o())({
     max: _
   }),
-  m = {};
+  g = {};
 
 function E(e) {
   let {
@@ -100,7 +100,7 @@ function E(e) {
     excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: d,
     source: _
   });
-  m = f(u({}, m), {
+  g = f(u({}, g), {
     [p]: 0
   })
 }
@@ -132,9 +132,9 @@ function v(e) {
     excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: _,
     source: p
   });
-  g.set(E, u({
+  m.set(E, u({
     lastFetchTimeMs: Date.now()
-  }, a)), m = f(u({}, m), {
+  }, a)), g = f(u({}, g), {
     [E]: 1
   })
 }
@@ -165,7 +165,7 @@ function b(e) {
     excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: d,
     source: _
   });
-  m = f(u({}, m), {
+  g = f(u({}, g), {
     [p]: 2
   })
 }
@@ -196,7 +196,7 @@ class y extends(r = s.ZP.Store) {
       excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: u,
       source: d
     });
-    return g.get(f)
+    return m.get(f)
   }
   getFetchState(e) {
     let {
@@ -212,7 +212,7 @@ class y extends(r = s.ZP.Store) {
       excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: u,
       source: d
     } = e;
-    return m[h({
+    return g[h({
       query: t,
       guildId: n,
       page: r,

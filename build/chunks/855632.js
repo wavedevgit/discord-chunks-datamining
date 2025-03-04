@@ -54,12 +54,12 @@ function t(e) {
       begin: 'x"[\\da-fA-F\\s\\n\\r]*"[cwd]?',
       relevance: 10
     },
-    g = {
+    m = {
       className: "string",
       begin: 'q"\\{',
       end: '\\}"'
     },
-    m = {
+    g = {
       className: "meta",
       begin: "^#!",
       end: "$",
@@ -82,7 +82,7 @@ function t(e) {
   return {
     name: "D",
     keywords: t,
-    contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, b, h, f, _, p, g, u, c, d, m, E, v]
+    contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, b, h, f, _, p, m, u, c, d, g, E, v]
   }
 }
 e.exports = t

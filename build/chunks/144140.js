@@ -15,9 +15,9 @@ var r, i = n(392711),
   _ = n(375954),
   p = n(709054),
   h = n(124368),
-  g = n(981631);
+  m = n(981631);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -33,7 +33,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -108,7 +108,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   if (null != e && !(e.id in O)) {
     let t = f.Z.getChannel(e.id);
     if (null != t) return P(t), !0
@@ -116,7 +116,7 @@ function D(e) {
   return !1
 }
 
-function w(e) {
+function D(e) {
   S = {}, y.clear(), e.guilds.forEach(C)
 }
 
@@ -160,7 +160,7 @@ function j(e) {
   } = e;
   t.forEach(P), null == n || n.forEach(e => {
     let t = f.Z.getChannel(e.channel_id);
-    null != t && e.type !== g.uaV.THREAD_STARTER_MESSAGE && N(t, t => {
+    null != t && e.type !== m.uaV.THREAD_STARTER_MESSAGE && N(t, t => {
       t.mostRecentRawMessage = e, t.mostRecentMessage = null
     })
   })
@@ -170,7 +170,7 @@ function U(e) {
   let {
     threads: t
   } = e;
-  t.forEach(D)
+  t.forEach(w)
 }
 
 function G(e) {
@@ -179,8 +179,8 @@ function G(e) {
     threads: n
   } = e;
   for (let e of t)
-    for (let t of e) D(t.thread);
-  n.forEach(D)
+    for (let t of e) w(t.thread);
+  n.forEach(w)
 }
 
 function B(e) {
@@ -213,7 +213,7 @@ function F(e) {
 }
 
 function Z(e, t) {
-  return !(t.type === g.uaV.THREAD_STARTER_MESSAGE || e.isForumPost() && t.id === p.default.castChannelIdAsMessageId(e.id))
+  return !(t.type === m.uaV.THREAD_STARTER_MESSAGE || e.isForumPost() && t.id === p.default.castChannelIdAsMessageId(e.id))
 }
 
 function H(e) {
@@ -262,7 +262,7 @@ function Y(e) {
 
 function K(e) {
   let t = !1;
-  for (let n of e.messages) t = D(n.thread) || t;
+  for (let n of e.messages) t = w(n.thread) || t;
   if (e.isAfter || e.isBefore || e.hasMoreAfter) return t;
   let n = f.Z.getChannel(e.channelId);
   if (null == n || !c.Ec.has(n.type)) return t;
@@ -271,7 +271,7 @@ function K(e) {
     else {
       var n;
       let r = null !== (n = e.messages[0]) && void 0 !== n ? n : null;
-      t.count = e.messages.length >= h.M3 ? h.M3 : t.count, (null == r ? void 0 : r.type) !== g.uaV.THREAD_STARTER_MESSAGE && (t.mostRecentRawMessage = r, t.mostRecentMessage = null)
+      t.count = e.messages.length >= h.M3 ? h.M3 : t.count, (null == r ? void 0 : r.type) !== m.uaV.THREAD_STARTER_MESSAGE && (t.mostRecentRawMessage = r, t.mostRecentMessage = null)
     }
   })
 }
@@ -306,9 +306,9 @@ class q extends(r = a.ZP.Store) {
     return O
   }
 }
-m(q, "displayName", "ThreadMessageStore");
+g(q, "displayName", "ThreadMessageStore");
 let Q = new q(s.Z, {
-  CONNECTION_OPEN: w,
+  CONNECTION_OPEN: D,
   OVERLAY_INITIALIZE: L,
   GUILD_CREATE: x,
   GUILD_DELETE: M,

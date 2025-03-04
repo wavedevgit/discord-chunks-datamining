@@ -45,12 +45,12 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class m extends(r = a.PureComponent) {
+class g extends(r = a.PureComponent) {
   componentDidMount() {
     if (null != this._measureRef.current) {
       let {
@@ -166,7 +166,7 @@ class m extends(r = a.PureComponent) {
       baseHeight: o,
       targetHeight: a
     } = this.state, s = null !== (e = this.props.sideMargin) && void 0 !== e ? e : 0, l = null !== (t = this.props.verticalMargin) && void 0 !== t ? t : 0, u = 1 === i, d = 0 === i;
-    return g(p({}, {
+    return m(p({}, {
       overflow: d || u ? "hidden" : "visible",
       position: u ? "absolute" : void 0,
       top: u ? l : void 0,
@@ -226,7 +226,7 @@ class m extends(r = a.PureComponent) {
     }), _(this, "direction", this.props.getDirection()), _(this, "_measureRef", a.createRef())
   }
 }
-_(m, "contextType", d.S), _(m, "defaultProps", {
+_(g, "contextType", d.S), _(g, "defaultProps", {
   duration: 300
 });
 class E extends(i = a.Component) {
@@ -259,7 +259,7 @@ class E extends(i = a.Component) {
     return (0, o.jsx)(u.W, {
       component: "div",
       className: l()(f.transitionGroup, t),
-      children: (0, o.jsx)(m, {
+      children: (0, o.jsx)(g, {
         fillParent: d,
         sideMargin: a,
         animationMotionType: null != _ ? _ : "slide",

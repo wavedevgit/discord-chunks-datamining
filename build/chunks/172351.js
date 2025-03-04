@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -37,19 +37,19 @@ function h(e) {
   return e
 }
 
-function g(e) {
+function m(e) {
   let {
     applicationId: t,
     commandIds: n,
     guildId: p,
-    channel: g,
-    onClick: m
+    channel: m,
+    onClick: g
   } = e, {
     trackUserProfileAction: E
   } = (0, c.KZ)(), v = i.useMemo(() => ({
-    channel: g,
+    channel: m,
     type: "channel"
-  }), [g]), {
+  }), [m]), {
     commands: b
   } = a.Qm(v, t, n), y = i.useMemo(() => null == b ? void 0 : b.filter(e => {
     let {
@@ -59,13 +59,13 @@ function g(e) {
   }), [b]);
   if (null == y || 0 === y.length) return null;
   let O = e => {
-    null == m || m(), E({
+    null == g || g(), E({
       action: "PRESS_APP_COMMAND"
     }), l.default.track(d.rMx.POPULAR_APPLICATION_COMMAND_CLICKED, h({
       application_id: t,
       command_id: e,
       guild_id: p
-    }, (0, o.JS)(g.id)))
+    }, (0, o.JS)(m.id)))
   };
   return (0, r.jsx)(u.Z, {
     heading: f.NW.string(f.t["0hKkS0"]),
@@ -78,7 +78,7 @@ function g(e) {
           commandDescription: e.displayDescription,
           onClick: O,
           guildId: p,
-          channelId: g.id,
+          channelId: m.id,
           applicationId: e.applicationId
         })
       }, e.id))

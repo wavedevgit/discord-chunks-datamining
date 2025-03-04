@@ -25,7 +25,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function m(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -58,14 +58,14 @@ let v = function(e) {
   let {
     onCardInfoChange: t,
     error: n
-  } = e, o = i.useRef(t), [h, m] = i.useState(!1), [v, b] = i.useState({}), [y, O] = i.useState({
+  } = e, o = i.useRef(t), [h, g] = i.useState(!1), [v, b] = i.useState({}), [y, O] = i.useState({
     name: "",
     country: "",
     postalCode: ""
   }), [S, I] = i.useState({}), [T, N] = i.useState({});
 
   function A(e, t) {
-    !!v[e] !== t && b(n => E(g({}, n), {
+    !!v[e] !== t && b(n => E(m({}, n), {
       [e]: t
     }))
   }
@@ -112,10 +112,10 @@ let v = function(e) {
         stripeType: "cardCvc",
         updateCompleted: e => A("cardCvc", e),
         onFocus: () => {
-          m(!0)
+          g(!0)
         },
         onBlur: () => {
-          m(!1)
+          g(!1)
         }
       })
     }]
@@ -127,21 +127,21 @@ let v = function(e) {
       autoComplete: "cc-name",
       placeholder: () => f.NW.string(f.t.yf7ms7),
       getClassNameForLayout: () => p.width100,
-      renderInput: e => (0, r.jsx)(s.oil, g({}, e))
+      renderInput: e => (0, r.jsx)(s.oil, m({}, e))
     }]
   }];
 
-  function D(e, t) {
+  function w(e, t) {
     if ("name" !== t && "country" !== t && "postalCode" !== t) return;
-    let n = g({}, y),
-      r = g({}, S),
+    let n = m({}, y),
+      r = m({}, S),
       i = {
         name: T.name
       };
     S[t] || "" === e || (r[t] = !0), n[t] = e, r[t] && "" === e ? "name" === t && (i.name = f.NW.string(f.t.lIkVsr)) : delete i[t], O(n), I(r), N(i)
   }
 
-  function w() {
+  function D() {
     var e;
     return (null === (e = c.default.getCurrentUser()) || void 0 === e ? void 0 : e.nsfwAllowed) ? (0, r.jsxs)("div", {
       className: _.cardBrands,
@@ -180,12 +180,12 @@ let v = function(e) {
     })
   }
   return (0, r.jsxs)("div", {
-    children: [w(), (0, r.jsx)(u.Z, {
+    children: [D(), (0, r.jsx)(u.Z, {
       form: P,
       errors: T,
       formError: n,
       values: y,
-      onFieldChange: D,
+      onFieldChange: w,
       onFieldBlur: R
     })]
   })

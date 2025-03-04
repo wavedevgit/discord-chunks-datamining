@@ -5,14 +5,14 @@ n.d(t, {
   AA: () => T,
   Db: () => L,
   Dx: () => S,
-  R: () => D,
+  R: () => w,
   TB: () => N,
   XE: () => R,
   hs: () => A,
   w: () => O,
   xR: () => P,
   xU: () => C,
-  xz: () => w
+  xz: () => D
 }), n(47120), n(653041);
 var r = n(392711),
   i = n.n(r),
@@ -27,8 +27,8 @@ var r = n(392711),
   _ = n(174470),
   p = n(710111),
   h = n(981631),
-  g = n(526761),
-  m = n(388032);
+  m = n(526761),
+  g = n(388032);
 let E = async e => {
   try {
     let t = (await o.tn.get({
@@ -122,18 +122,18 @@ async function T(e, t) {
 }
 
 function N(e) {
-  c.DZ.updateAsync("favoriteSoundboardSounds", t => i().size(t.soundIds) >= g.oX ? (s.Z.show({
-    title: m.NW.string(m.t["+XYXtb"]),
-    body: m.NW.formatToPlainString(m.t.JaIyFh, {
-      count: g.oX
+  c.DZ.updateAsync("favoriteSoundboardSounds", t => i().size(t.soundIds) >= m.oX ? (s.Z.show({
+    title: g.NW.string(g.t["+XYXtb"]),
+    body: g.NW.formatToPlainString(g.t.JaIyFh, {
+      count: m.oX
     })
-  }), !1) : !t.soundIds.includes(e) && void t.soundIds.push(e), g.fy.INFREQUENT_USER_ACTION)
+  }), !1) : !t.soundIds.includes(e) && void t.soundIds.push(e), m.fy.INFREQUENT_USER_ACTION)
 }
 
 function A(e) {
   c.DZ.updateAsync("favoriteSoundboardSounds", t => {
     t.soundIds = t.soundIds.filter(t => t !== e)
-  }, g.fy.INFREQUENT_USER_ACTION)
+  }, m.fy.INFREQUENT_USER_ACTION)
 }
 async function C(e, t) {
   try {
@@ -164,7 +164,7 @@ function P(e, t) {
   })
 }
 
-function D(e, t) {
+function w(e, t) {
   a.Z.dispatch({
     type: "GUILD_SOUNDBOARD_SOUND_PLAY_END",
     soundId: e,
@@ -172,7 +172,7 @@ function D(e, t) {
   })
 }
 
-function w(e) {
+function D(e) {
   a.Z.dispatch({
     type: "USER_SOUNDBOARD_SET_VOLUME",
     volume: e

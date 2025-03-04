@@ -25,7 +25,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function m(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -103,21 +103,21 @@ let O = function(e) {
     onChange: n,
     checked: o,
     disabled: h,
-    className: m,
+    className: g,
     focusProps: b,
     innerRef: O
   } = e, {
     reducedMotion: S
   } = i.useContext(c.S), I = i.useRef(null), [T, N] = i.useState(!1), A = (0, _.Q3)("Switch"), C = (0, d.d)(A ? l.Z.colors.INTERACTIVE_MUTED : l.Z.unsafe_rawColors.PRIMARY_400).spring(), R = (0, d.d)(A ? l.Z.colors.REDESIGN_INPUT_CONTROL_SELECTED : l.Z.unsafe_rawColors.GREEN_360).spring(), {
     state: P,
-    opacity: D
+    opacity: w
   } = (0, f.q_F)({
     config: v,
     opacity: h ? A ? .5 : .3 : 1,
     state: T ? o ? .7 : .3 : +!!o
   }, "animate-always");
 
-  function w(e) {
+  function D(e) {
     N(!1), null == n || n(e.currentTarget.checked, e)
   }
 
@@ -129,11 +129,11 @@ let O = function(e) {
     var t;
     !h && T && !e.repeat && (N(!1), "Enter" === e.key && (null === (t = I.current) || void 0 === t || t.click()))
   }
-  return (0, r.jsx)(u.t, E(g({}, b), {
+  return (0, r.jsx)(u.t, E(m({}, b), {
     within: !0,
     offset: -2,
     children: (0, r.jsxs)(s.animated.div, {
-      className: a()(p.container, m, {
+      className: a()(p.container, g, {
         [p.checked]: o,
         [p.disabled]: h
       }),
@@ -141,7 +141,7 @@ let O = function(e) {
       onMouseUp: () => N(!1),
       onMouseLeave: () => N(!1),
       style: {
-        opacity: D,
+        opacity: w,
         backgroundColor: P.to({
           output: [C, R]
         })
@@ -187,7 +187,7 @@ let O = function(e) {
         tabIndex: h ? -1 : 0,
         onKeyDown: L,
         onKeyUp: x,
-        onChange: w,
+        onChange: D,
         checked: o,
         disabled: h
       })]

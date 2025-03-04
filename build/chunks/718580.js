@@ -26,7 +26,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,7 +51,7 @@ function m(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -100,7 +100,7 @@ function I(e) {
 
 function T(e) {
   var t, n, h, {
-      contentDisplay: m,
+      contentDisplay: g,
       fadeInOut: b = !1
     } = e,
     I = v(e, ["contentDisplay", "fadeInOut"]);
@@ -122,14 +122,14 @@ function T(e) {
     {
       reducedMotion: P
     } = i.useContext(l.S),
-    D = i.useContext(f.Z),
-    w = T[A].impressionName,
-    L = E(g({}, T[A].impressionProperties), {
+    w = i.useContext(f.Z),
+    D = T[A].impressionName,
+    L = E(m({}, T[A].impressionProperties), {
       location_stack: N
     });
-  D({
+  w({
     type: a.ImpressionTypes.MODAL,
-    name: w,
+    name: D,
     properties: L,
     _stackContext: {
       isSlide: !0
@@ -139,7 +139,7 @@ function T(e) {
     ref: x,
     width: M = 0,
     height: k = 0
-  } = (0, u.Z)(A), j = g({}, y, I.springConfig, P.enabled ? {
+  } = (0, u.Z)(A), j = m({}, y, I.springConfig, P.enabled ? {
     clamp: !0
   } : null), U = (0, c.q_F)({
     width: null !== (n = I.width) && void 0 !== n ? n : M,
@@ -175,7 +175,7 @@ function T(e) {
     overflow: null !== (h = I.overflow) && void 0 !== h ? h : "hidden"
   };
   return (0, r.jsx)(o.animated.div, {
-    style: g({
+    style: m({
       position: "relative",
       minWidth: Z,
       minHeight: H
@@ -188,13 +188,13 @@ function T(e) {
       };
       return (0, r.jsx)(o.animated.div, {
         ref: t === A ? x : null,
-        style: g({
+        style: m({
           position: "absolute",
-          display: m,
+          display: g,
           flexDirection: "column",
           backfaceVisibility: "hidden",
           width: s.tq ? "100%" : V
-        }, W, P.enabled ? a : g({
+        }, W, P.enabled ? a : m({
           left: e.value.to(S("left", B)),
           right: e.value.to(S("right", B))
         }, b && a)),

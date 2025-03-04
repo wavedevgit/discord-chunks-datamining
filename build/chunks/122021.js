@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Xj: () => m,
+  Xj: () => g,
   fq: () => E,
   rR: () => v
 }), n(47120);
@@ -22,9 +22,9 @@ let p = {
   h = new Map([
     [f.ABu.INSTAGRAM, new Date(2023, 1, 18).getTime()]
   ]),
-  g = 30 * d.Z.Millis.DAY;
+  m = 30 * d.Z.Millis.DAY;
 
-function m(e) {
+function g(e) {
   let {
     forUserProfile: t
   } = e, n = (0, a.e7)([u.default], () => u.default.getCurrentUser()), r = l.c.useExperiment({
@@ -40,7 +40,7 @@ function m(e) {
 
 function E() {
   let e = (0, a.e7)([c.Z], () => c.Z.getAccounts()),
-    t = m({
+    t = g({
       forUserProfile: !1
     }),
     n = r.useMemo(() => {
@@ -49,7 +49,7 @@ function E() {
     }, [e]);
   return r.useMemo(() => o().sortBy(s.Z.filter(t), [e => {
     var t;
-    return !(h.has(e.type) && Date.now() < (null !== (t = h.get(e.type)) && void 0 !== t ? t : 0) + g)
+    return !(h.has(e.type) && Date.now() < (null !== (t = h.get(e.type)) && void 0 !== t ? t : 0) + m)
   }, e => n.has(e.type), e => e.hasMetadata, e => !f.vbS.has(e.type), e => e.name]), [n, t])
 }
 

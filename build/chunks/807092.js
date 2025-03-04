@@ -80,7 +80,7 @@ function h(e) {
   }
 }
 
-function g(e) {
+function m(e) {
   let {
     channelId: t,
     shouldMention: n
@@ -92,7 +92,7 @@ function g(e) {
   }))
 }
 
-function m(e) {
+function g(e) {
   let {
     channelId: t
   } = e;
@@ -158,8 +158,8 @@ s(S, "displayName", "PendingReplyStore");
 let I = new S(o.Z, {
   CREATE_PENDING_REPLY: p,
   CREATE_SHALLOW_PENDING_REPLY: h,
-  SET_PENDING_REPLY_SHOULD_MENTION: g,
-  DELETE_PENDING_REPLY: m,
+  SET_PENDING_REPLY_SHOULD_MENTION: m,
+  DELETE_PENDING_REPLY: g,
   CONNECTION_OPEN: O,
   LOGOUT: O,
   MESSAGE_DELETE: E,

@@ -13,22 +13,22 @@ var r = n(147018),
   _ = n(679622),
   p = n(310731),
   h = n(106295),
-  g = n(361270),
-  m = [],
-  E = i(m.sort),
-  v = i(m.push),
+  m = n(361270),
+  g = [],
+  E = i(g.sort),
+  v = i(g.push),
   b = u(function() {
-    m.sort(void 0)
+    g.sort(void 0)
   }),
   y = u(function() {
-    m.sort(null)
+    g.sort(null)
   }),
   O = f("sort"),
   S = !u(function() {
     if (h) return h < 70;
     if (!_ || !(_ > 3)) {
       if (p) return !0;
-      if (g) return g < 603;
+      if (m) return m < 603;
       var e, t, n, r, i = "";
       for (e = 65; e < 76; e++) {
         switch (t = String.fromCharCode(e), e) {
@@ -45,14 +45,14 @@ var r = n(147018),
           default:
             n = 2
         }
-        for (r = 0; r < 47; r++) m.push({
+        for (r = 0; r < 47; r++) g.push({
           k: t + r,
           v: n
         })
       }
-      for (m.sort(function(e, t) {
+      for (g.sort(function(e, t) {
           return t.v - e.v
-        }), r = 0; r < m.length; r++) t = m[r].k.charAt(0), i.charAt(i.length - 1) !== t && (i += t);
+        }), r = 0; r < g.length; r++) t = g[r].k.charAt(0), i.charAt(i.length - 1) !== t && (i += t);
       return "DGBEFHACIJK" !== i
     }
   }),

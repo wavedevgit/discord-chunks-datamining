@@ -106,14 +106,14 @@ function h(e) {
     wind: a = 2,
     sprites: l = u,
     spriteColors: h = d,
-    confettiConfig: g
-  } = e, [m, E] = i.useState(null), [v, b] = i.useState(null), y = (0, o.uR)(v, m), O = i.useMemo(() => new o.qA({
+    confettiConfig: m
+  } = e, [g, E] = i.useState(null), [v, b] = i.useState(null), y = (0, o.uR)(v, g), O = i.useMemo(() => new o.qA({
     wind: a
   }), [a]), S = i.useCallback(() => {
     let e = null == v ? void 0 : v.getCanvas();
     if (null == e) return;
     let t = e.getBoundingClientRect();
-    y.createConfetti(c(s({}, p, g), {
+    y.createConfetti(c(s({}, p, m), {
       position: {
         type: "static-random",
         minValue: {
@@ -126,7 +126,7 @@ function h(e) {
         }
       }
     }))
-  }, [y, v, g]);
+  }, [y, v, m]);
   return i.useEffect(() => {
     let e = n ? setInterval(S, _) : null;
     return () => clearInterval(e)

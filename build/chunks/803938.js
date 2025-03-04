@@ -12,19 +12,19 @@ var r, i = n(24033),
   _ = "prototype",
   p = "script",
   h = u("IE_PROTO"),
-  g = function() {},
-  m = function(e) {
+  m = function() {},
+  g = function(e) {
     return f + p + d + e + f + "/" + p + d
   },
   E = function(e) {
-    e.write(m("")), e.close();
+    e.write(g("")), e.close();
     var t = e.parentWindow.Object;
     return e = null, t
   },
   v = function() {
     var e, t = c("iframe"),
       n = "java" + p + ":";
-    return t.style.display = "none", l.appendChild(t), t.src = String(n), (e = t.contentWindow.document).open(), e.write(m("document.F=Object")), e.close(), e.F
+    return t.style.display = "none", l.appendChild(t), t.src = String(n), (e = t.contentWindow.document).open(), e.write(g("document.F=Object")), e.close(), e.F
   },
   b = function() {
     try {
@@ -36,5 +36,5 @@ var r, i = n(24033),
   };
 s[h] = !0, e.exports = Object.create || function(e, t) {
   var n;
-  return null !== e ? (g[_] = i(e), n = new g, g[_] = null, n[h] = e) : n = b(), void 0 === t ? n : o.f(n, t)
+  return null !== e ? (m[_] = i(e), n = new m, m[_] = null, n[h] = e) : n = b(), void 0 === t ? n : o.f(n, t)
 }

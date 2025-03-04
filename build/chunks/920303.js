@@ -16,8 +16,8 @@ var i, o = n(392711),
   _ = n(592125),
   p = n(306680),
   h = n(823379),
-  g = n(709054),
-  m = n(569471);
+  m = n(709054),
+  g = n(569471);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -49,7 +49,7 @@ function P(e) {
   e.channelId === I && e.sortOrder === T && (0, h.OL)(e.tagFilter, r) || C(), I = e.channelId, T = e.sortOrder, r = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), b = !0, y = !1
 }
 
-function D(e) {
+function w(e) {
   if (e.channelId !== I || e.sortOrder !== T || !(0, h.OL)(e.tagFilter, r)) return !1;
   let t = e.threads.filter(e => f.AW.has(e.type)).map(e => e.id);
   N = N.concat(t);
@@ -64,7 +64,7 @@ function D(e) {
   }), L(), O = e.hasMore, A = e.offset + v, b = !1, y = !1
 }
 
-function w(e) {
+function D(e) {
   return (null == I || null == e.channelId || I === e.channelId) && L()
 }
 
@@ -79,9 +79,9 @@ function L() {
     if (e || null == n) return !0;
     {
       let e = null == t ? null : R(t, T);
-      return null != e && g.default.compare(e, n) >= 0
+      return null != e && m.default.compare(e, n) >= 0
     }
-  }).sort((e, t) => g.default.compare(R(e, T), R(t, T))).map(e => e.id).reverse().value()
+  }).sort((e, t) => m.default.compare(R(e, T), R(t, T))).map(e => e.id).reverse().value()
 }
 
 function x(e) {
@@ -115,7 +115,7 @@ function U(e) {
 let G = [];
 class B extends(i = l.ZP.Store) {
   initialize() {
-    this.waitFor(_.Z, m.Z, p.ZP)
+    this.waitFor(_.Z, g.Z, p.ZP)
   }
   get canLoadMore() {
     return O && !b && !S
@@ -140,7 +140,7 @@ let V = new B(c.Z, {
   THREAD_UPDATE: U,
   CHANNEL_DELETE: M,
   LOAD_ARCHIVED_THREADS: P,
-  LOAD_ARCHIVED_THREADS_SUCCESS: D,
+  LOAD_ARCHIVED_THREADS_SUCCESS: w,
   LOAD_ARCHIVED_THREADS_FAIL: x,
-  RESORT_THREADS: w
+  RESORT_THREADS: D
 })

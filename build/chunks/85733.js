@@ -48,28 +48,28 @@ var r = n(478497),
     return "string" == typeof e || "number" == typeof e || "boolean" == typeof e || "symbol" == typeof e || "bigint" == typeof e
   },
   h = {},
-  g = function e(t, n, o, a, s, c, d, f, g, m, E, v, b, y, O, S, I, T) {
+  m = function e(t, n, o, a, s, c, d, f, m, g, E, v, b, y, O, S, I, T) {
     for (var N, A = t, C = T, R = 0, P = !1; void 0 !== (C = C.get(h)) && !P;) {
-      var D = C.get(t);
-      if (R += 1, void 0 !== D) {
-        if (D === R) throw RangeError("Cyclic object value");
+      var w = C.get(t);
+      if (R += 1, void 0 !== w) {
+        if (w === R) throw RangeError("Cyclic object value");
         P = !0
       }
       void 0 === C.get(h) && (R = 0)
     }
-    if ("function" == typeof m ? A = m(n, A) : A instanceof Date ? A = b(A) : "comma" === o && l(A) && (A = i.maybeMap(A, function(e) {
+    if ("function" == typeof g ? A = g(n, A) : A instanceof Date ? A = b(A) : "comma" === o && l(A) && (A = i.maybeMap(A, function(e) {
         return e instanceof Date ? b(e) : e
       })), null === A) {
-      if (c) return g && !S ? g(n, _.encoder, I, "key", y) : n;
+      if (c) return m && !S ? m(n, _.encoder, I, "key", y) : n;
       A = ""
     }
-    if (p(A) || i.isBuffer(A)) return g ? [O(S ? n : g(n, _.encoder, I, "key", y)) + "=" + O(g(A, _.encoder, I, "value", y))] : [O(n) + "=" + O(String(A))];
-    var w = [];
-    if (void 0 === A) return w;
-    if ("comma" === o && l(A)) S && g && (A = i.maybeMap(A, g)), N = [{
+    if (p(A) || i.isBuffer(A)) return m ? [O(S ? n : m(n, _.encoder, I, "key", y)) + "=" + O(m(A, _.encoder, I, "value", y))] : [O(n) + "=" + O(String(A))];
+    var D = [];
+    if (void 0 === A) return D;
+    if ("comma" === o && l(A)) S && m && (A = i.maybeMap(A, m)), N = [{
       value: A.length > 0 ? A.join(",") || null : void 0
     }];
-    else if (l(m)) N = m;
+    else if (l(g)) N = g;
     else {
       var L = Object.keys(A);
       N = E ? L.sort(E) : L
@@ -85,12 +85,12 @@ var r = n(478497),
           B = l(A) ? "function" == typeof o ? o(M, G) : M : M + (v ? "." + G : "[" + G + "]");
         T.set(t, R);
         var V = r();
-        V.set(h, T), u(w, e(U, B, o, a, s, c, d, f, "comma" === o && S && l(A) ? null : g, m, E, v, b, y, O, S, I, V))
+        V.set(h, T), u(D, e(U, B, o, a, s, c, d, f, "comma" === o && S && l(A) ? null : m, g, E, v, b, y, O, S, I, V))
       }
     }
-    return w
+    return D
   },
-  m = function(e) {
+  g = function(e) {
     if (!e) return _;
     if (void 0 !== e.allowEmptyArrays && "boolean" != typeof e.allowEmptyArrays) throw TypeError("`allowEmptyArrays` option can only be `true` or `false`, when provided");
     if (void 0 !== e.encodeDotInKeys && "boolean" != typeof e.encodeDotInKeys) throw TypeError("`encodeDotInKeys` option can only be `true` or `false`, when provided");
@@ -130,7 +130,7 @@ var r = n(478497),
   };
 e.exports = function(e, t) {
   var n, i, o = e,
-    a = m(t);
+    a = g(t);
   "function" == typeof a.filter ? o = (i = a.filter)("", o) : l(a.filter) && (n = i = a.filter);
   var c = [];
   if ("object" != typeof o || null === o) return "";
@@ -139,7 +139,7 @@ e.exports = function(e, t) {
   n || (n = Object.keys(o)), a.sort && n.sort(a.sort);
   for (var _ = r(), p = 0; p < n.length; ++p) {
     var h = n[p];
-    (!a.skipNulls || null !== o[h]) && u(c, g(o[h], h, d, f, a.allowEmptyArrays, a.strictNullHandling, a.skipNulls, a.encodeDotInKeys, a.encode ? a.encoder : null, a.filter, a.sort, a.allowDots, a.serializeDate, a.format, a.formatter, a.encodeValuesOnly, a.charset, _))
+    (!a.skipNulls || null !== o[h]) && u(c, m(o[h], h, d, f, a.allowEmptyArrays, a.strictNullHandling, a.skipNulls, a.encodeDotInKeys, a.encode ? a.encoder : null, a.filter, a.sort, a.allowDots, a.serializeDate, a.format, a.formatter, a.encodeValuesOnly, a.charset, _))
   }
   var E = c.join(a.delimiter),
     v = !0 === a.addQueryPrefix ? "?" : "";

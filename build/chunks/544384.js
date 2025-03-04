@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  E: () => m,
+  E: () => g,
   Z: () => E
 });
 var r = n(200651);
@@ -18,9 +18,9 @@ var i = n(442837),
   _ = n(5192),
   p = n(221241),
   h = n(981631),
-  g = n(388032);
+  m = n(388032);
 
-function m(e, t, n) {
+function g(e, t, n) {
   let r = (0, i.e7)([s.Z], () => null != e ? s.Z.getSelectedParticipantId(e.id) : null),
     o = (0, i.e7)([d.Z], () => null != r ? d.Z.getActiveStreamForStreamKey(r) : null, [r]);
   return (0, i.Wu)([f.default], () => {
@@ -47,7 +47,7 @@ function E(e) {
     appContext: b = h.IlC.APP,
     disableChangeWindows: y = !1,
     onInteraction: O
-  } = e, S = null !== (t = s.find(e => e.ownerId === (null == i ? void 0 : i.id))) && void 0 !== t ? t : null, I = m(n, i, s), T = (0, l.Z)(S, b), {
+  } = e, S = null !== (t = s.find(e => e.ownerId === (null == i ? void 0 : i.id))) && void 0 !== t ? t : null, I = g(n, i, s), T = (0, l.Z)(S, b), {
     simplifiedSettingsEnabled: N
   } = (0, p.Z)({
     location: "ManageStreamsMenu"
@@ -66,7 +66,7 @@ function E(e) {
       navId: "manage-streams",
       onClose: E,
       onInteraction: O,
-      "aria-label": null != S ? g.NW.string(g.t.S5anIS) : g.NW.string(g.t.fjBNo6),
+      "aria-label": null != S ? m.NW.string(m.t.S5anIS) : m.NW.string(m.t.fjBNo6),
       children: [(0, r.jsx)(o.kSQ, {
         children: I.map(e => {
           let {
@@ -75,7 +75,7 @@ function E(e) {
           } = e;
           return (0, r.jsx)(o.sNh, {
             id: t.ownerId,
-            label: g.NW.formatToPlainString(g.t["7rkg+/"], {
+            label: m.NW.formatToPlainString(m.t["7rkg+/"], {
               username: n
             }),
             icon: o.g5r,
@@ -85,7 +85,7 @@ function E(e) {
       }), d ? null : A, N && !d ? (0, r.jsx)(o.kSQ, {
         children: (0, r.jsx)(o.sNh, {
           id: "more-options",
-          label: g.NW.string(g.t.PdRCRk),
+          label: m.NW.string(m.t.PdRCRk),
           children: T
         })
       }) : null]

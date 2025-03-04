@@ -50,8 +50,8 @@ function p(e, t) {
   }), e
 }
 let h = {},
-  g = new l.ZP,
-  m = new Set;
+  m = new l.ZP,
+  g = new Set;
 
 function E(e) {
   h = o()(h).reject(t => t.guildId === e).keyBy("threadId").value()
@@ -75,13 +75,13 @@ function b(e) {
 
 function y(e) {
   let t = h[e];
-  g.clearTimer(e), !0 === t.muted ? ((m = new Set(m)).add(e), g.setTimer(e, t.muteConfig, () => {
-    h[e].muted = !1, (m = new Set(m)).delete(e), L.emitChange()
-  }) && (h[e].muted = !1, (m = new Set(m)).delete(e))) : (m = new Set(m)).delete(e)
+  m.clearTimer(e), !0 === t.muted ? ((g = new Set(g)).add(e), m.setTimer(e, t.muteConfig, () => {
+    h[e].muted = !1, (g = new Set(g)).delete(e), L.emitChange()
+  }) && (h[e].muted = !1, (g = new Set(g)).delete(e))) : (g = new Set(g)).delete(e)
 }
 
 function O(e) {
-  g.reset(), m = new Set, h = {}, e.guilds.forEach(e => {
+  m.reset(), g = new Set, h = {}, e.guilds.forEach(e => {
     v(e)
   })
 }
@@ -173,7 +173,7 @@ function P(e) {
   } : delete h[t]
 }
 
-function D(e) {
+function w(e) {
   var t, n;
   let r = !1;
   return (null === (t = e.removedMemberIds) || void 0 === t ? void 0 : t.includes(u.default.getId())) && e.id in h && (h = f({}, h), delete h[e.id], r = !0), null === (n = e.addedMembers) || void 0 === n || n.forEach(t => {
@@ -187,7 +187,7 @@ function D(e) {
     }, y(e.id), r = !0)
   }), r
 }
-class w extends(r = a.ZP.Store) {
+class D extends(r = a.ZP.Store) {
   hasJoined(e) {
     return e in h
   }
@@ -207,14 +207,14 @@ class w extends(r = a.ZP.Store) {
     return null === (t = h[e]) || void 0 === t ? void 0 : t.muteConfig
   }
   getMutedThreads() {
-    return m
+    return g
   }
   isMuted(e) {
-    return m.has(e)
+    return g.has(e)
   }
 }
-d(w, "displayName", "JoinedThreadsStore");
-let L = new w(s.Z, {
+d(D, "displayName", "JoinedThreadsStore");
+let L = new D(s.Z, {
     CONNECTION_OPEN: O,
     OVERLAY_INITIALIZE: S,
     GUILD_CREATE: I,
@@ -228,6 +228,6 @@ let L = new w(s.Z, {
     THREAD_DELETE: C,
     THREAD_MEMBER_UPDATE: R,
     THREAD_MEMBER_LOCAL_UPDATE: P,
-    THREAD_MEMBERS_UPDATE: D
+    THREAD_MEMBERS_UPDATE: w
   }),
   x = L

@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(5192),
   p = n(785717),
   h = n(221292),
-  g = n(687158),
-  m = n(471879),
+  m = n(687158),
+  g = n(471879),
   E = n(502762),
   v = n(848780),
   b = n(907179),
@@ -69,14 +69,14 @@ function C(e) {
     channelId: a,
     messageId: f,
     roleId: _
-  }), R = i.useRef(null), P = (0, g.ZP)(t.id, n), D = (0, s.e7)([d.ZP], () => null != n ? d.ZP.getMember(n, t.id) : null);
+  }), R = i.useRef(null), P = (0, m.ZP)(t.id, n), w = (0, s.e7)([d.ZP], () => null != n ? d.ZP.getMember(n, t.id) : null);
   return i.useEffect(() => {
     null == o || o(null == R ? void 0 : R.current)
   }, [R, o]), (0, r.jsx)(u.Gt, {
     value: N,
     children: (0, r.jsx)(p.Mt, {
       value: C,
-      shouldTrackViewOnMount: null == D || null != D.fullProfileLoadedTimestamp,
+      shouldTrackViewOnMount: null == w || null != w.fullProfileLoadedTimestamp,
       children: (0, r.jsx)(l.VqE, {
         ref: R,
         "aria-label": t.username,
@@ -93,7 +93,7 @@ function C(e) {
               "aria-hidden": !0
             }), (0, r.jsxs)("div", {
               className: I.body,
-              children: [(0, r.jsx)(m.Z, {
+              children: [(0, r.jsx)(g.Z, {
                 user: t,
                 guildId: n
               }), (0, r.jsx)(l.X6q, {
@@ -139,22 +139,22 @@ function R(e) {
     roleId: C,
     onViewBlockedProfileClick: R,
     newAnalyticsLocations: P = []
-  } = e, D = (0, s.e7)([f.Z], () => f.Z.isBlocked(t.id)), {
-    analyticsLocations: w
-  } = (0, u.ZP)([...P, D ? c.Z.BLOCKED_PROFILE_POPOUT : c.Z.IGNORED_PROFILE_POPOUT]), L = (0, p.ZB)({
-    layout: D ? "BLOCKED_PROFILE_POPOUT" : "IGNORED_PROFILE_POPOUT",
+  } = e, w = (0, s.e7)([f.Z], () => f.Z.isBlocked(t.id)), {
+    analyticsLocations: D
+  } = (0, u.ZP)([...P, w ? c.Z.BLOCKED_PROFILE_POPOUT : c.Z.IGNORED_PROFILE_POPOUT]), L = (0, p.ZB)({
+    layout: w ? "BLOCKED_PROFILE_POPOUT" : "IGNORED_PROFILE_POPOUT",
     userId: t.id,
     guildId: n,
     channelId: y,
     messageId: N,
     roleId: C
-  }), x = i.useRef(null), M = (0, g.ZP)(t.id, n), k = (0, s.e7)([d.ZP], () => null != n ? d.ZP.getMember(n, t.id) : null);
+  }), x = i.useRef(null), M = (0, m.ZP)(t.id, n), k = (0, s.e7)([d.ZP], () => null != n ? d.ZP.getMember(n, t.id) : null);
   i.useEffect(() => {
     null == o || o(null == x ? void 0 : x.current)
   }, [x, o]);
-  let j = D ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE";
+  let j = w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE";
   return (0, r.jsx)(u.Gt, {
-    value: w,
+    value: D,
     children: (0, r.jsx)(p.Mt, {
       value: L,
       shouldTrackViewOnMount: null == k || null != k.fullProfileLoadedTimestamp,
@@ -176,7 +176,7 @@ function R(e) {
               className: a()(I.body, I.bodySpacing),
               children: [(0, r.jsxs)("div", {
                 className: I.headerContainer,
-                children: [(0, r.jsx)(m.i, {
+                children: [(0, r.jsx)(g.i, {
                   user: t,
                   guildId: n
                 }), (0, r.jsx)(l.X6q, {
@@ -184,18 +184,18 @@ function R(e) {
                   children: S.NW.string(S.t.b33pLC)
                 }), (0, r.jsx)(l.Text, {
                   variant: "text-sm/medium",
-                  children: S.NW.format(D ? S.t["8F+WNz"] : S.t["/cZp5u"], {
+                  children: S.NW.format(w ? S.t["8F+WNz"] : S.t["/cZp5u"], {
                     username: _.ZP.getName(n, y, t)
                   })
                 })]
               }), (0, r.jsxs)(l.Kqy, {
                 align: "center",
                 children: [(0, r.jsx)(b.Z, {
-                  isBlocked: D,
+                  isBlocked: w,
                   onClick: () => {
                     null == R || R(), (0, h.pQ)(A({
                       action: j,
-                      analyticsLocations: w
+                      analyticsLocations: D
                     }, L))
                   }
                 }), (0, r.jsx)(v.Z, {
@@ -203,7 +203,7 @@ function R(e) {
                   onClick: () => {
                     null == R || R(), (0, h.pQ)(A({
                       action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
-                      analyticsLocations: w
+                      analyticsLocations: D
                     }, L))
                   }
                 })]

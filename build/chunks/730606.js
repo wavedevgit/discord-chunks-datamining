@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Qk: () => D,
+  Qk: () => w,
   WG: () => x,
   ZP: () => M
 }), n(47120);
@@ -18,8 +18,8 @@ var r = n(200651),
   _ = n(134432),
   p = n(982330),
   h = n(124347),
-  g = n(169525),
-  m = n(52824),
+  m = n(169525),
+  g = n(52824),
   E = n(585483),
   v = n(956664),
   b = n(254109),
@@ -34,7 +34,7 @@ var r = n(200651),
   R = n(806923);
 let P = 300;
 
-function D(e) {
+function w(e) {
   let {
     src: t,
     width: n,
@@ -60,7 +60,7 @@ function D(e) {
   })
 }
 
-function w(e, t) {
+function D(e, t) {
   return (e % t + t) % t
 }
 
@@ -76,7 +76,7 @@ function L(e) {
     value: s,
     children: (0, r.jsx)(d.ZP, {
       type: d.ZP.Types.ATTACHMENT,
-      reason: g.wk.EXPLICIT_CONTENT,
+      reason: m.wk.EXPLICIT_CONTENT,
       obscured: !0,
       isSingleMosaicItem: !0,
       onToggleObscurity: c,
@@ -98,8 +98,8 @@ function x(e, t) {
       (0, _.po)(e.url);
       return
     }
-    D({
-      src: (0, m.q)({
+    w({
+      src: (0, g.q)({
         proxyURL: e.proxyUrl,
         url: e.url
       }),
@@ -119,11 +119,11 @@ function M(e) {
     shouldRedactExplicitContent: s = !1,
     shouldHideMediaOptions: d = !1
   } = e, [_, p] = i.useState(o), h = i.useRef(o), {
-    zoomed: g,
-    setZoomed: m
+    zoomed: m,
+    setZoomed: g
   } = (0, y.Y)(), v = i.useCallback(e => {
-    p(e = w(e, t.length)), h.current = e, null == n || n(e), m(!1)
-  }, [n, t, m]);
+    p(e = D(e, t.length)), h.current = e, null == n || n(e), g(!1)
+  }, [n, t, g]);
   i.useEffect(() => {
     let e = l()(() => {
         v(h.current + 1)
@@ -134,11 +134,11 @@ function M(e) {
     return E.S.subscribe(A.CkL.MODAL_CAROUSEL_NEXT, e), E.S.subscribe(A.CkL.MODAL_CAROUSEL_PREV, t), () => {
       E.S.unsubscribe(A.CkL.MODAL_CAROUSEL_NEXT, e), E.S.unsubscribe(A.CkL.MODAL_CAROUSEL_PREV, t)
     }
-  }, [v, m]);
-  let D = t[_],
+  }, [v, g]);
+  let w = t[_],
     x = (0, f.KP)({
       type: f.lJ.GenericMedia,
-      media: D
+      media: w
     }, s),
     M = d ? e => {
       e.stopPropagation(), e.preventDefault()
@@ -167,10 +167,10 @@ function M(e) {
       items: t,
       currentIndex: _,
       children: (e, t) => (0, r.jsx)(L, {
-        isObscured: !g && x,
-        src: D.url,
+        isObscured: !m && x,
+        src: w.url,
         children: n => (0, r.jsx)(N.Z, {
-          media: D,
+          media: w,
           maxWidth: e,
           maxHeight: t,
           obscured: n,

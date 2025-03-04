@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(560768),
   p = n(812206),
   h = n(405701),
-  g = n(540059),
-  m = n(243778),
+  m = n(540059),
+  g = n(243778),
   E = n(843693),
   v = n(246642),
   b = n(921227),
@@ -31,8 +31,8 @@ var r = n(200651),
   C = n(626135),
   R = n(823379),
   P = n(5192),
-  D = n(981631),
-  w = n(388032),
+  w = n(981631),
+  D = n(388032),
   L = n(45364);
 
 function x(e, t, n) {
@@ -105,7 +105,7 @@ class V extends i.PureComponent {
   }
   logShownEventIfNeeded() {
     let e = this.props.activity.application_id;
-    null != e && -1 === B.indexOf(e) && (C.default.track(D.rMx.SHOW_TUTORIAL, {
+    null != e && -1 === B.indexOf(e) && (C.default.track(w.rMx.SHOW_TUTORIAL, {
       tutorial: "activity-invite-nux-inline",
       application_id: e
     }), B.push(e))
@@ -128,7 +128,7 @@ class V extends i.PureComponent {
       }) : (0, r.jsx)("div", {
         className: L.activityInviteEducationArrow
       }), (0, r.jsx)("span", {
-        children: w.NW.format(w.t["i/MoCg"], {
+        children: D.NW.format(D.t["i/MoCg"], {
           game: e.name,
           dismissOnClick: this.handleDismissInviteEducation
         })
@@ -152,7 +152,7 @@ function F(e) {
     channel: t,
     guild: n
   } = e, i = [];
-  return (0, r.jsx)(m.ZP, {
+  return (0, r.jsx)(g.ZP, {
     contentTypes: i,
     children: e => {
       let {
@@ -176,11 +176,11 @@ function Z(e) {
     isThreadCreation: f,
     renderDots: _,
     poggermodeEnabled: p,
-    isComboing: m
+    isComboing: g
   } = e, {
     rateLimitPerUser: E
-  } = u, b = N.default.getCurrentUser(), y = O.Z.getGuild(t), I = E > 0, T = f ? [] : l()(s).keys().filter(e => e !== (null == b ? void 0 : b.id)).reject(e => S.Z.isBlockedOrIgnored(e)).map(e => N.default.getUser(e)).filter(R.lm).map(e => P.ZP.getName(t, u.id, e)).value(), A = (0, g.R6)("TypingUsers");
-  if (0 === T.length && !I && !m) return i && null != n ? (0, r.jsx)(V, {
+  } = u, b = N.default.getCurrentUser(), y = O.Z.getGuild(t), I = E > 0, T = f ? [] : l()(s).keys().filter(e => e !== (null == b ? void 0 : b.id)).reject(e => S.Z.isBlockedOrIgnored(e)).map(e => N.default.getUser(e)).filter(R.lm).map(e => P.ZP.getName(t, u.id, e)).value(), A = (0, m.R6)("TypingUsers");
+  if (0 === T.length && !I && !g) return i && null != n ? (0, r.jsx)(V, {
     activity: n,
     isFocused: o,
     isRefreshChatInputEnabled: A
@@ -188,20 +188,20 @@ function Z(e) {
     channel: u,
     guild: y
   });
-  let [C, D, x] = T, M = "";
-  return 1 === T.length ? M = w.NW.format(w.t.lJ9sZW, {
+  let [C, w, x] = T, M = "";
+  return 1 === T.length ? M = D.NW.format(D.t.lJ9sZW, {
     a: C
-  }) : 2 === T.length ? M = w.NW.format(w.t.rB0CUV, {
+  }) : 2 === T.length ? M = D.NW.format(D.t.rB0CUV, {
     a: C,
-    b: D
-  }) : 3 === T.length ? M = w.NW.format(w.t.StKTho, {
+    b: w
+  }) : 3 === T.length ? M = D.NW.format(D.t.StKTho, {
     a: C,
-    b: D,
+    b: w,
     c: x
-  }) : T.length > 3 && (M = w.NW.string(w.t.uVDhqa)), (0, r.jsxs)("div", {
+  }) : T.length > 3 && (M = D.NW.string(D.t.uVDhqa)), (0, r.jsxs)("div", {
     className: a()(L.typing, {
       "stop-animation": !o,
-      [L.isComboing]: p && m
+      [L.isComboing]: p && g
     }, c),
     children: [(0, r.jsxs)("div", {
       className: L.typingDots,
@@ -218,7 +218,7 @@ function Z(e) {
     }), A ? null : (0, r.jsx)(h.Z, {
       channel: u,
       isThreadCreation: f
-    }), p && m && (0, r.jsx)(v.Z, {
+    }), p && g && (0, r.jsx)(v.Z, {
       channelId: u.id
     })]
   })

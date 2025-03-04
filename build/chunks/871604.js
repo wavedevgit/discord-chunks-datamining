@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(592125),
   p = n(944486),
   h = n(626135),
-  g = n(572004),
-  m = n(591759),
+  m = n(572004),
+  g = n(591759),
   E = n(135431),
   v = n(621853),
   b = n(429974),
@@ -80,19 +80,19 @@ function C(e) {
       var e;
       return null === (e = _.Z.getChannel(C)) || void 0 === e ? void 0 : e.guild_id
     }),
-    D = i.useMemo(() => null != R ? {
+    w = i.useMemo(() => null != R ? {
       channel: R,
       type: "channel"
     } : {
       type: "contextless"
     }, [R]),
-    w = (0, s.Z)({
-      context: D
+    D = (0, s.Z)({
+      context: w
     }),
     L = t.id,
     x = i.useCallback(() => {
       if (null != A) {
-        if (w) {
+        if (D) {
           let e = p.Z.getCurrentlySelectedChannelId(),
             t = _.Z.getChannel(e),
             r = null != f.ZP.getSidebarState(e) || (null == t ? void 0 : t.isGuildVocal()) ? d.Ie.SIDEBAR : d.Ie.NORMAL;
@@ -105,13 +105,13 @@ function C(e) {
           applicationId: A.id
         }, A))
       }
-    }, [w, A, L, P, n]),
-    M = w ? S.NW.string(S.t["Cia+Aw"]) : S.NW.string(S.t.NgXl3N);
+    }, [D, A, L, P, n]),
+    M = D ? S.NW.string(S.t["Cia+Aw"]) : S.NW.string(S.t.NgXl3N);
   if (null == A || !(0, E.Eb)(A)) return null;
   let {
     customInstallUrl: k
-  } = A, j = null == k || m.Z.isDiscordUrl(k) ? a.qJs : a.Gr1, U = w ? void 0 : j;
-  return g.wS ? (0, r.jsx)(a.yRy, {
+  } = A, j = null == k || g.Z.isDiscordUrl(k) ? a.qJs : a.Gr1, U = D ? void 0 : j;
+  return m.wS ? (0, r.jsx)(a.yRy, {
     renderPopout: e => {
       let {
         closePopout: t
@@ -125,7 +125,7 @@ function C(e) {
           children: (0, r.jsx)(a.sNh, {
             id: "copy",
             label: S.NW.string(S.t.XWDiho),
-            action: () => (0, g.JG)((0, u.J)(A))
+            action: () => (0, m.JG)((0, u.J)(A))
           })
         })
       })

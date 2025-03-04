@@ -17,7 +17,7 @@ var r = n(512722),
   p = n(981631),
   h = n(474936);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,14 +26,14 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -61,7 +61,7 @@ function b(e) {
     analyticsData: t,
     initialPlanId: n,
     breadcrumbSteps: r,
-    handleStepChange: g,
+    handleStepChange: m,
     referralTrialOfferId: E,
     onReturn: b,
     continueSessionToInitialStep: y
@@ -75,13 +75,13 @@ function b(e) {
     setPurchaseError: C,
     purchaseErrorBlockRef: R,
     paymentAuthenticationState: P,
-    selectedSkuId: D,
-    activeSubscription: w,
+    selectedSkuId: w,
+    activeSubscription: D,
     previousStepRef: L,
     setPurchaseState: x
   } = (0, u.JL)(), {
     isGift: M
-  } = (0, c.wD)(), k = v(m({}, (0, s.fL)()), {
+  } = (0, c.wD)(), k = v(g({}, (0, s.fL)()), {
     paymentSources: I,
     paymentSourceId: T,
     setPaymentSourceId: N,
@@ -89,10 +89,10 @@ function b(e) {
     setPurchaseError: C,
     purchaseErrorBlockRef: R,
     paymentAuthenticationState: P,
-    selectedSkuId: D,
+    selectedSkuId: w,
     isGift: M
-  }), j = (0, a.N)(E), U = !M && null != j && null != D && h.nG[j.trial_id].skus.includes(D), G = () => {
-    g(Object.values(I).length < 1 && null == n ? d.h8.PLAN_SELECT : d.h8.REVIEW, {
+  }), j = (0, a.N)(E), U = !M && null != j && null != w && h.nG[j.trial_id].skus.includes(w), G = () => {
+    m(Object.values(I).length < 1 && null == n ? d.h8.PLAN_SELECT : d.h8.REVIEW, {
       trackedFromStep: d.h8.PAYMENT_TYPE
     })
   }, B = null != b ? b : G;
@@ -109,9 +109,9 @@ function b(e) {
     usePaymentModalStep: !0,
     onReturn: B,
     onComplete: e => {
-      d.Nj.has(e) ? (x(f.A.COMPLETED), g(d.h8.CONFIRM, {
+      d.Nj.has(e) ? (x(f.A.COMPLETED), m(d.h8.CONFIRM, {
         trackedFromStep: e
-      })) : g(d.h8.REVIEW, {
+      })) : m(d.h8.REVIEW, {
         trackedFromStep: e
       })
     },
@@ -120,7 +120,7 @@ function b(e) {
         currentStep: n,
         toStep: r
       } = e, i = Date.now();
-      l.default.track(p.rMx.PAYMENT_FLOW_STEP, v(m({}, t), {
+      l.default.track(p.rMx.PAYMENT_FLOW_STEP, v(g({}, t), {
         from_step: n,
         to_step: r,
         step_duration_ms: i - V,
@@ -128,6 +128,6 @@ function b(e) {
       }))
     },
     isEligibleForTrial: U,
-    allowDesktopRedirectPurchase: (0, _.tr)(D, M, w)
+    allowDesktopRedirectPurchase: (0, _.tr)(w, M, D)
   })
 }

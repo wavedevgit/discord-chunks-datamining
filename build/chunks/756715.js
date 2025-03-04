@@ -47,13 +47,13 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -83,7 +83,7 @@ function v(e) {
     title: b,
     style: y,
     focusProps: O
-  } = e, S = m(e, ["href", "onClick", "className", "children", "rel", "target", "useDefaultUnderlineStyles", "title", "style", "focusProps"]);
+  } = e, S = g(e, ["href", "onClick", "className", "children", "rel", "target", "useDefaultUnderlineStyles", "title", "style", "focusProps"]);
   null != t && null == n && (n = u.X.getDefaultLinkInterceptor(t));
   let I = i.useContext(s.g),
     T = {
@@ -97,14 +97,14 @@ function v(e) {
       title: null != b ? b : void 0,
       style: null != y ? y : void 0
     };
-  return (null == t || (0, d.B)(t) || (T.rel = "noreferrer noopener", T.target = "_blank"), I && delete T.href, null != n) ? (0, r.jsx)(l.P, g(p({
+  return (null == t || (0, d.B)(t) || (T.rel = "noreferrer noopener", T.target = "_blank"), I && delete T.href, null != n) ? (0, r.jsx)(l.P, m(p({
     tag: "a"
   }, S, T), {
     onClick: n,
     focusProps: O,
     children: _
-  })) : (0, r.jsx)(c.t, g(p({}, O), {
-    children: (0, r.jsx)("a", g(p({}, S, T), {
+  })) : (0, r.jsx)(c.t, m(p({}, O), {
+    children: (0, r.jsx)("a", m(p({}, S, T), {
       children: _
     }))
   }))

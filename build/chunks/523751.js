@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(436774),
   p = n(623624),
   h = n(297700),
-  g = n(210887),
-  m = n(271383),
+  m = n(210887),
+  g = n(271383),
   E = n(594174),
   v = n(665786),
   b = n(697725),
@@ -62,12 +62,12 @@ function P(e, t) {
   return n
 }
 
-function D(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = {
+let D = {
   [O.Q.STAFF]: {
     IconComponent: u.Ymb,
     foregroundDarkColor: l.Z.unsafe_rawColors.WHITE_400.css,
@@ -195,11 +195,11 @@ function M(e) {
       disableBoostClick: P,
       "aria-label": L = !1
     } = e,
-    M = (0, s.e7)([E.default, m.ZP], () => {
+    M = (0, s.e7)([E.default, g.ZP], () => {
       let e = E.default.getCurrentUser();
-      return m.ZP.isMember(null == o ? void 0 : o.id, null == e ? void 0 : e.id)
+      return g.ZP.isMember(null == o ? void 0 : o.id, null == e ? void 0 : e.id)
     }),
-    k = (0, s.e7)([g.Z], () => g.Z.theme),
+    k = (0, s.e7)([m.Z], () => m.Z.theme),
     j = (0, S.XX)(o),
     U = (0, O.i)(j),
     G = i.useMemo(() => j.premium && M && !P, [P, j.premium, M]),
@@ -225,7 +225,7 @@ function M(e) {
         guildTraits: j
       }),
       tooltipContentClassName: A.tooltipRemovePadding,
-      children: t => (0, r.jsx)(u.P3F, D(R({}, t), {
+      children: t => (0, r.jsx)(u.P3F, w(R({}, t), {
         onClick: B,
         className: a()(A.clanBadgeContainer, v),
         children: (0, r.jsx)(f.KQ, {
@@ -244,7 +244,7 @@ function M(e) {
     premiumBackgroundColor: K,
     premiumForegroundColor: z,
     sizeAdjustment: q
-  } = w[U];
+  } = D[U];
   if (null == F) return null;
   j.premium && (t = z, n = K);
   let Q = (0, c.wj)(k) ? W : Y,
@@ -263,7 +263,7 @@ function M(e) {
     children: e => (0, r.jsx)(u.P3F, {
       onClick: B,
       tabIndex: G ? 0 : -1,
-      children: (0, r.jsx)(h.Z, D(R({}, e), {
+      children: (0, r.jsx)(h.Z, w(R({}, e), {
         className: v,
         flowerStarClassName: b,
         allowFullSizedIcon: !0,

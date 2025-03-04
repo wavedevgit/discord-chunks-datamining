@@ -51,12 +51,12 @@ function u(e, t, n, o, s) {
     _ = e.offsetWidth,
     p = e.offsetHeight,
     h = o.anchorX,
-    g = o.anchorY,
-    m = c(u, t, _, p),
-    E = m.dragPreviewWidth,
-    v = m.dragPreviewHeight,
+    m = o.anchorY,
+    g = c(u, t, _, p),
+    E = g.dragPreviewWidth,
+    v = g.dragPreviewHeight,
     b = function() {
-      var e = new i.I([0, .5, 1], [f.y, f.y / p * v, f.y + v - p]).interpolate(g);
+      var e = new i.I([0, .5, 1], [f.y, f.y / p * v, f.y + v - p]).interpolate(m);
       return (0, r.G)() && u && (e += (window.devicePixelRatio - 1) * v), e
     },
     y = function() {

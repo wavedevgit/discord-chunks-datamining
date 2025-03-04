@@ -10,7 +10,7 @@ n.d(t, {
   WU: () => N,
   cl: () => S,
   g9: () => v,
-  jW: () => m,
+  jW: () => g,
   kG: () => T,
   qc: () => b,
   zV: () => y
@@ -75,13 +75,13 @@ let h = {
   [u.dCx.FILTER_ON]: !0
 };
 
-function g(e) {
+function m(e) {
   let t = a.ZP[e],
     n = null != t ? t.queryKey : null;
   return null == n && (n = "content"), n
 }
 
-function m(e, t) {
+function g(e, t) {
   if (s.Z.didAgree(t)) {
     let t = l.default.getCurrentUser();
     null != t && (e.include_nsfw = null == t.nsfwAllowed || t.nsfwAllowed)
@@ -104,7 +104,7 @@ function E(e) {
           r && (t.min_id = c.default.fromTimestamp(r)), i && (t.max_id = c.default.fromTimestamp(i));
           return
       }
-      let o = g(n);
+      let o = m(n);
       null == t[o] && (t[o] = new Set);
       let a = t[o];
       switch (n) {

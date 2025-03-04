@@ -78,7 +78,7 @@ function h(e) {
   c[n.id] = r
 }
 
-function g(e) {
+function m(e) {
   let {
     guildId: t,
     count: n
@@ -86,7 +86,7 @@ function g(e) {
   if (null == t || null == n) return !1;
   c[t] = n
 }
-class m extends(r = i.ZP.Store) {
+class g extends(r = i.ZP.Store) {
   getMemberCounts() {
     return l
   }
@@ -97,8 +97,8 @@ class m extends(r = i.ZP.Store) {
     return null != e ? c[e] : null
   }
 }
-a(m, "displayName", "GuildMemberCountStore");
-let E = new m(o.Z, {
+a(g, "displayName", "GuildMemberCountStore");
+let E = new g(o.Z, {
   CONNECTION_OPEN: u,
   OVERLAY_INITIALIZE: d,
   GUILD_CREATE: f,
@@ -106,5 +106,5 @@ let E = new m(o.Z, {
   GUILD_MEMBER_LIST_UPDATE: p,
   INVITE_ACCEPT_SUCCESS: h,
   INVITE_RESOLVE_SUCCESS: h,
-  ONLINE_GUILD_MEMBER_COUNT_UPDATE: g
+  ONLINE_GUILD_MEMBER_COUNT_UPDATE: m
 })

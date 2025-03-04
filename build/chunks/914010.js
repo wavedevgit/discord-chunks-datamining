@@ -23,16 +23,16 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let h = -1,
-  g = null,
   m = null,
+  g = null,
   E = {};
 
 function v() {
-  null != g && null == f.Z.getGuild(g) && null == s.Z.getRequest(g) && (g = null), null != m && null == f.Z.getGuild(m) && null == s.Z.getRequest(m) && (m = null), y(g)
+  null != m && null == f.Z.getGuild(m) && null == s.Z.getRequest(m) && (m = null), null != g && null == f.Z.getGuild(g) && null == s.Z.getRequest(g) && (g = null), y(m)
 }
 
 function b(e) {
-  g = e.selectedGuildId, m = void 0, v()
+  m = e.selectedGuildId, g = void 0, v()
 }
 
 function y(e) {
@@ -43,13 +43,13 @@ function O(e) {
   let {
     guildId: t
   } = e;
-  if (g === t) return !1;
-  y(g), y(t), null != t && (m = t), g = t
+  if (m === t) return !1;
+  y(m), y(t), null != t && (g = t), m = t
 }
 
 function S(e) {
   let t = !1;
-  return delete E[e], m === e && (m = null, t = !0), g === e && (Object.values(f.Z.getGuilds()).find(t => t.id !== e), g = null, (0, c.dL)(_.Z5c.ME), t = !0), t
+  return delete E[e], g === e && (g = null, t = !0), m === e && (Object.values(f.Z.getGuilds()).find(t => t.id !== e), m = null, (0, c.dL)(_.Z5c.ME), t = !0), t
 }
 
 function I(e) {
@@ -71,12 +71,12 @@ function T(e) {
 }
 
 function N() {
-  g = null, m = null
+  m = null, g = null
 }
 class A extends(r = o.ZP.PersistedStore) {
   initialize(e) {
     var t, n, r, o;
-    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(f.Z, u.default, d.Z), E = null !== (n = null == e ? void 0 : e.selectedGuildTimestampMillis) && void 0 !== n ? n : {}, g = null !== (r = null == e ? void 0 : e.selectedGuildId) && void 0 !== r ? r : null, m = null !== (o = null == e ? void 0 : e.lastSelectedGuildId) && void 0 !== o ? o : null;
+    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(f.Z, u.default, d.Z), E = null !== (n = null == e ? void 0 : e.selectedGuildTimestampMillis) && void 0 !== n ? n : {}, m = null !== (r = null == e ? void 0 : e.selectedGuildId) && void 0 !== r ? r : null, g = null !== (o = null == e ? void 0 : e.lastSelectedGuildId) && void 0 !== o ? o : null;
     let a = d.Z.lastNonVoiceRoute,
       s = (0, i.LX)(a, {
         path: _.Z5c.CHANNEL(l.Hw.guildId())
@@ -86,18 +86,18 @@ class A extends(r = o.ZP.PersistedStore) {
   getState() {
     return {
       selectedGuildTimestampMillis: E,
-      selectedGuildId: g,
-      lastSelectedGuildId: m
+      selectedGuildId: m,
+      lastSelectedGuildId: g
     }
   }
   getGuildId() {
-    return g
-  }
-  getLastSelectedGuildId() {
     return m
   }
+  getLastSelectedGuildId() {
+    return g
+  }
   getLastSelectedTimestamp(e) {
-    return g === e ? h : E[e]
+    return m === e ? h : E[e]
   }
 }
 p(A, "displayName", "SelectedGuildStore"), p(A, "persistKey", "SelectedGuildStore");

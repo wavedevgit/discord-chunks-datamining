@@ -17,8 +17,8 @@ var i = n(442837),
   _ = n(109213),
   p = n(927699),
   h = n(987716),
-  g = n(311821),
-  m = n(251660),
+  m = n(311821),
+  g = n(251660),
   E = n(594174),
   v = n(855775),
   b = n(626135),
@@ -33,7 +33,7 @@ var i = n(442837),
   R = n(424091),
   P = n(220283);
 
-function D(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -42,21 +42,21 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
 }
 let L = {
   key: I.h8.GIFT_CUSTOMIZATION,
-  renderStep: e => (0, r.jsx)(M, w({}, e)),
+  renderStep: e => (0, r.jsx)(M, D({}, e)),
   options: {
     isLargeModal: !0,
     useBreadcrumbLabel: () => C.NW.string(C.t["W685+f"])
@@ -79,7 +79,7 @@ function x(e) {
       disabled: a,
       submitting: s,
       children: C.NW.string(C.t.XiOHRU)
-    }), i ? (0, r.jsx)(g.Z, {
+    }), i ? (0, r.jsx)(m.Z, {
       onClick: n
     }) : null]
   })
@@ -92,10 +92,10 @@ function M(e) {
   } = e, {
     customGiftMessage: s = "",
     setCustomGiftMessage: l,
-    giftRecipientError: g,
+    giftRecipientError: m,
     setGiftRecipientError: I,
-    validatingGiftRecipient: D,
-    giftRecipient: w,
+    validatingGiftRecipient: w,
+    giftRecipient: D,
     recommendedGiftSkuIds: L,
     giftingOrigin: M,
     setValidatingGiftRecipient: j
@@ -113,17 +113,17 @@ function M(e) {
   }, {
     autoTrackExposure: !1
   }), Y = H && M === A.Wt.DM_CHANNEL, K = W === _.u.POPULAR ? C.NW.string(C.t.Kwgrrq) : C.NW.string(C.t.r1huYW), z = async (e, t) => {
-    j(!0), null != g && I(), await (0, c.B1)(e.id, t) || I(C.NW.string(C.t["4kgVqa"])), j(!1)
+    j(!0), null != m && I(), await (0, c.B1)(e.id, t) || I(C.NW.string(C.t["4kgVqa"])), j(!1)
   };
   (0, a.ZP)(() => {
-    null != U && null != w && (b.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+    null != U && null != D && (b.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
       sku_id: U
-    }), z(w, U))
+    }), z(D, U))
   });
   let q = e => {
       b.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
         sku_id: e
-      }), null != w && z(w, e), G(e)
+      }), null != D && z(D, e), G(e)
     },
     Q = e => {
       let t = F[e],
@@ -170,8 +170,8 @@ function M(e) {
     $ = () => {
       if (Y) return (0, r.jsxs)("div", {
         className: R.bodyColumnRight,
-        children: [(0, r.jsx)(m.s, {
-          giftRecipient: w
+        children: [(0, r.jsx)(g.s, {
+          giftRecipient: D
         }), (0, r.jsx)(h.q, {
           isShopGift: !0,
           className: P.adjustedGiftMainAnimation,
@@ -207,8 +207,8 @@ function M(e) {
         children: (0, r.jsx)(x, {
           onStepChange: t,
           onBackClick: n,
-          disabled: null != g || null == w || w.id === (null == Z ? void 0 : Z.id) || s.length > A.$n,
-          loading: D
+          disabled: null != m || null == D || D.id === (null == Z ? void 0 : Z.id) || s.length > A.$n,
+          loading: w
         })
       })
     })]

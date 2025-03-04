@@ -17,8 +17,8 @@ var r = n(392711),
   _ = n(626135),
   p = n(510990),
   h = n(70956),
-  g = n(960048),
-  m = n(861990),
+  m = n(960048),
+  g = n(861990),
   E = n(476326),
   v = n(983544),
   b = n(981631);
@@ -140,9 +140,9 @@ class R extends E.ZP {
     if (this.item.platform === E.ow.REACT_NATIVE) {
       let r = this.item;
       if (e = null != r.mimeType && "" !== r.mimeType ? r.mimeType : "application/octet-stream", null == r.size || 0 === r.size || isNaN(r.size)) try {
-        t = await (0, m.Fm)(r.uri)
+        t = await (0, g.Fm)(r.uri)
       } catch (e) {
-        T.warn("Failed to peek content length for file id ".concat(this.id, ", reading whole file instead: ").concat(e)), t = (n = await (0, m.Lc)(r.uri)).size
+        T.warn("Failed to peek content length for file id ".concat(this.id, ", reading whole file instead: ").concat(e)), t = (n = await (0, g.Lc)(r.uri)).size
       } else t = r.size
     } else e = "application/octet-stream", t = this.item.file.size;
     return {
@@ -152,7 +152,7 @@ class R extends E.ZP {
     }
   }
   async getChunk(e, t, n) {
-    return this.item.platform !== E.ow.REACT_NATIVE ? this.item.file.slice(e, t) : null != n ? n.slice(e, t) : await (0, m.U4)(this.item.uri, e, t)
+    return this.item.platform !== E.ow.REACT_NATIVE ? this.item.file.slice(e, t) : null != n ? n.slice(e, t) : await (0, g.U4)(this.item.uri, e, t)
   }
   async uploadChunk(e) {
     let t = {
@@ -265,7 +265,7 @@ class R extends E.ZP {
       this.setResponseUrl(e.body.attachments[0].upload_url), this.setUploadedFilename(e.body.attachments[0].upload_filename)
     } catch (r) {
       let e = null !== (n = null == r ? void 0 : null === (t = r.body) || void 0 === t ? void 0 : t.code) && void 0 !== n ? n : r.status;
-      e !== b.evJ.ENTITY_TOO_LARGE && (T.error("Requesting upload url failed with code ".concat(null != e ? e : JSON.stringify(r.body), " for ").concat(this.id)), g.Z.captureException(r)), this.handleError(e);
+      e !== b.evJ.ENTITY_TOO_LARGE && (T.error("Requesting upload url failed with code ".concat(null != e ? e : JSON.stringify(r.body), " for ").concat(this.id)), m.Z.captureException(r)), this.handleError(e);
       return
     }
     try {
@@ -302,7 +302,7 @@ class R extends E.ZP {
       uri: n,
       mimeType: i
     }));
-    let o = null !== (e = t.fileSize) && void 0 !== e ? e : (await (0, m.Lc)(n)).size;
+    let o = null !== (e = t.fileSize) && void 0 !== e ? e : (await (0, g.Lc)(n)).size;
     if (this.postCompressionSize = o, this.currentSize = o, null == o) throw T.error("Size missing from file data for ".concat(this.id)), Error("Size missing from file data");
     T.log("Completed compression and conversion. Output size=".concat(o, " bytes; filename=").concat(r, " for ").concat(this.id));
     let a = {

@@ -24,14 +24,14 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let h = 750,
-  g = 15,
-  m = 500,
+  m = 15,
+  g = 500,
   E = 25,
   v = 25,
   b = 1,
   y = null,
-  O = new l.b(h, m),
-  S = new c.S(g),
+  O = new l.b(h, g),
+  S = new c.S(m),
   I = !1;
 class T extends a.Z {
   initialize() {
@@ -112,8 +112,8 @@ class T extends a.Z {
       CONNECTION_OPEN_SUPPLEMENTAL: A,
       GUILD_DELETE: L,
       LOGIN_SUCCESS: x,
-      THREAD_DELETE: w,
-      THREAD_UPDATE: D
+      THREAD_DELETE: D,
+      THREAD_UPDATE: w
     })
   }
 }
@@ -124,7 +124,7 @@ function N() {
 }
 
 function A() {
-  T.dropUnreachableChannels(), T.replaceLru((0, _.J)(O, h + m))
+  T.dropUnreachableChannels(), T.replaceLru((0, _.J)(O, h + g))
 }
 
 function C(e) {
@@ -142,11 +142,11 @@ function P(e) {
   T.deleteChannel(e.channel.id)
 }
 
-function D(e) {
+function w(e) {
   C(e.channel)
 }
 
-function w(e) {
+function D(e) {
   T.deleteChannel(e.channel.id)
 }
 

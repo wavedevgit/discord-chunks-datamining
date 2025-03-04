@@ -15,8 +15,8 @@ var i, o = n(392711),
   _ = n(601070),
   p = n(210887),
   h = n(314897),
-  g = n(592125),
-  m = n(703558),
+  m = n(592125),
+  g = n(703558),
   E = n(984933),
   v = n(271383),
   b = n(430824),
@@ -38,8 +38,8 @@ function P(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let D = "seenQSTutorial",
-  w = 5,
+let w = "seenQSTutorial",
+  D = 5,
   L = 100,
   x = [u.h8.USER, u.h8.GROUP_DM, u.h8.TEXT_CHANNEL, u.h8.GUILD, u.h8.APPLICATION, u.h8.LINK, u.h8.IN_APP_NAVIGATION],
   M = 0,
@@ -53,12 +53,12 @@ let D = "seenQSTutorial",
   Z = [];
 
 function H() {
-  j = b.Z.getGuildCount() >= 3 || a().size(g.Z.getMutablePrivateChannels()) >= 20, F = []
+  j = b.Z.getGuildCount() >= 3 || a().size(m.Z.getMutablePrivateChannels()) >= 20, F = []
 }
 
 function W(e) {
   let t = [];
-  return m.Z.getRecentlyEditedDrafts(m.d.ChannelMessage).forEach(n => {
+  return g.Z.getRecentlyEditedDrafts(g.d.ChannelMessage).forEach(n => {
     let {
       channelId: r
     } = n;
@@ -128,7 +128,7 @@ function K() {
   let l = O.ZP.getMentionChannelIds().filter(e => e !== r && !Z.includes(e)).map(e => Y(e)).filter(A.lm).reverse();
   if (l.length > 0 && (i.push((0, u.o6)(R.NW.string(R.t["61Df19"]))), i = i.concat(l)), null != n) {
     let e = E.ZP.getSelectableChannelIds(n).filter(e => {
-      let t = g.Z.getChannel(e);
+      let t = m.Z.getChannel(e);
       return !(null == t || e === r || Z.includes(e) || T.ZP.isChannelMuted(t.guild_id, e) || null != t.parent_id && T.ZP.isChannelMuted(t.guild_id, t.parent_id)) && (0, f.d)(t)
     }).map(e => Y(e)).filter(e => e);
     Object.values(_.Z.getActiveJoinedUnreadThreadsForGuild(n)).forEach(t => {
@@ -179,7 +179,7 @@ function q(e) {
     query: n,
     queryMode: i
   } = e, o = null !== (t = I.Z.getGuildId()) && void 0 !== t ? t : void 0, a = new Set(["user:".concat(h.default.getId())]);
-  null != o && a.add("guild:".concat(o)), r = null != r ? r : new u.ZP(J, x, null != i ? L : w, {
+  null != o && a.add("guild:".concat(o)), r = null != r ? r : new u.ZP(J, x, null != i ? L : D, {
     frecencyBoosters: !0,
     blacklist: a
   }), B = null, V = n.length, U = i, r.search(n)
@@ -220,7 +220,7 @@ function ee(e) {
   if (null == r) return !1;
   let a = null !== (t = I.Z.getGuildId()) && void 0 !== t ? t : null;
   if (U !== o) {
-    r.setResultTypes(null != o ? [o] : x), r.setLimit(null != o ? L : w);
+    r.setResultTypes(null != o ? [o] : x), r.setLimit(null != o ? L : D);
     let e = null !== (n = I.Z.getGuildId()) && void 0 !== n ? n : void 0;
     o === u.h8.USER && null != e ? r.setOptions({
       userFilters: {
@@ -243,12 +243,12 @@ function et(e) {
 
 function en() {
   if (k) return !1;
-  k = !0, l.K.set(D, !0)
+  k = !0, l.K.set(w, !0)
 }
 class er extends(i = s.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    this.waitFor(v.ZP, b.Z, g.Z), this.syncWith([p.Z], () => !0), k = l.K.get(D) || !1, Z = null !== (t = null == e ? void 0 : e.channelHistory) && void 0 !== t ? t : []
+    this.waitFor(v.ZP, b.Z, m.Z), this.syncWith([p.Z], () => !0), k = l.K.get(w) || !1, Z = null !== (t = null == e ? void 0 : e.channelHistory) && void 0 !== t ? t : []
   }
   getState() {
     return {

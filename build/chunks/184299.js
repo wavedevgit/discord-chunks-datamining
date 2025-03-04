@@ -3,7 +3,7 @@
 n.d(t, {
   ZP: () => b,
   iF: () => E,
-  iw: () => m,
+  iw: () => g,
   km: () => v
 });
 var r = n(877124),
@@ -87,15 +87,15 @@ function p(e) {
 function h(e) {
   return e && "undefined" != typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
-let g = .3;
-var m = function(e) {
+let m = .3;
+var g = function(e) {
     return e.UNKNOWN = "UNKNOWN", e.NOT_STARTED = "NOT_STARTED", e.IN_PROGRESS = "IN_PROGRESS", e.COMPLETED = "COMPLETED", e
   }({}),
   E = function(e) {
     return e.NONE = "NONE", e.FETCHING = "FETCHING", e.SUCCESS = "SUCCESS", e.FAILURE = "FAILURE", e
   }({});
 let v = (0, i.F)()((0, r.tJ)((e, t) => ({
-    volume: g,
+    volume: m,
     muted: !1,
     transcriptEnabled: !1,
     captionEnabled: !1,

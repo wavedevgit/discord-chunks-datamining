@@ -60,7 +60,7 @@ function t(e) {
         3: "title.function"
       }
     },
-    g = {
+    m = {
       match: [/Var/, /\s+/, /(?:\/GLOBAL\s+)?/, /[A-Za-z][\w.]*/],
       scope: {
         1: "keyword",
@@ -77,7 +77,7 @@ function t(e) {
     },
     contains: [e.HASH_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, e.COMMENT(";", "$", {
       relevance: 0
-    }), g, h, {
+    }), m, h, {
       beginKeywords: "Function PageEx Section SectionGroup FunctionEnd SectionEnd"
     }, f, u, a, s, l, c, d, e.NUMBER_MODE]
   }

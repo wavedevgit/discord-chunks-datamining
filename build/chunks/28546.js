@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Iu: () => m,
+  Iu: () => g,
   PG: () => d,
   RO: () => p,
   _Q: () => f,
   hr: () => h,
   j9: () => _,
-  ql: () => g
+  ql: () => m
 });
 var r = n(97613),
   i = n.n(r),
@@ -63,11 +63,11 @@ let c = Object.freeze({
       lastActiveView: u.getState().activeView
     }))
   },
-  g = function(e) {
+  m = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     (0, s.j)(() => u.setState({
       searchQuery: e,
       isSearchSuggestion: t
     }))
   },
-  m = u
+  g = u

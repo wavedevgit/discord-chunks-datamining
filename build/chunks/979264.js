@@ -18,9 +18,9 @@ var r = n(200651),
   _ = n(426964),
   p = n(308083),
   h = n(388032),
-  g = n(409435);
+  m = n(409435);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -36,7 +36,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -70,7 +70,7 @@ let y = i.memo(function(e) {
       alt: h.NW.formatToPlainString(h.t.PShNVV, {
         tag: n
       }),
-      className: a()(g.badge, i),
+      className: a()(m.badge, i),
       width: o,
       height: o
     })
@@ -87,7 +87,7 @@ let y = i.memo(function(e) {
       onMouseEnter: d,
       textVariant: _ = "text-xs/semibold",
       textColor: h = "text-normal",
-      badgeSize: m = p.NC.SIZE_12,
+      badgeSize: g = p.NC.SIZE_12,
       inline: E = !0
     } = e;
     return (0, r.jsx)(l.P3F, {
@@ -95,19 +95,19 @@ let y = i.memo(function(e) {
       tabIndex: null == u ? -1 : void 0,
       onClick: u,
       onMouseEnter: d,
-      className: a()(g.chipletContainerInner, E && g.chipletContainerInline, null != u && g.clickable, o),
+      className: a()(m.chipletContainerInner, E && m.chipletContainerInline, null != u && m.clickable, o),
       children: (0, r.jsxs)(l.Text, {
         variant: _,
         color: h,
         tag: "span",
-        className: a()(g.text, s),
+        className: a()(m.text, s),
         children: [null != i && "string" == typeof i ? (0, r.jsx)(y, {
-          src: (0, f.ky)(t, i, m),
+          src: (0, f.ky)(t, i, g),
           tag: null == n ? void 0 : n.toString(),
-          size: m,
+          size: g,
           className: c
         }) : i, (0, r.jsx)("span", {
-          className: g.unselectable,
+          className: m.unselectable,
           children: n
         })]
       })
@@ -120,7 +120,7 @@ let y = i.memo(function(e) {
       userId: f,
       className: p,
       children: h,
-      profileViewedAnalytics: m,
+      profileViewedAnalytics: g,
       onShowProfile: v
     } = e, y = (0, s.e7)([u.default], () => u.default.getUser(f), [f]), O = null !== (t = null == y ? void 0 : y.primaryGuild) && void 0 !== t ? t : o, [S, I] = (0, d.L_)(null !== (n = null == O ? void 0 : O.identityGuildId) && void 0 !== n ? n : null), T = i.useCallback(() => {
       I()
@@ -136,7 +136,7 @@ let y = i.memo(function(e) {
             isLoading: S,
             clan: O,
             onClose: t,
-            profileViewedAnalytics: m,
+            profileViewedAnalytics: g,
             userId: f
           })
         },
@@ -144,7 +144,7 @@ let y = i.memo(function(e) {
         animationPosition: "top",
         spacing: 16,
         children: e => (0, r.jsx)(l.P3F, b(E({
-          className: a()(g.clickable, p),
+          className: a()(m.clickable, p),
           tag: "span"
         }, e), {
           onClick: t => {
@@ -172,7 +172,7 @@ let y = i.memo(function(e) {
       textColor: _,
       badgeSize: p,
       disableGuildProfile: h = !1,
-      inline: m = !0,
+      inline: g = !0,
       profileViewedAnalytics: E,
       onShowProfile: v
     } = e, b = (0, s.e7)([u.default], () => u.default.getUser(i), [i]), y = null !== (t = null == b ? void 0 : b.primaryGuild) && void 0 !== t ? t : n, {
@@ -184,11 +184,11 @@ let y = i.memo(function(e) {
       guildId: N,
       clanTag: I,
       clanBadge: T,
-      className: a()(g.noTooltip, l),
+      className: a()(m.noTooltip, l),
       textVariant: d,
       textColor: _,
       badgeSize: p,
-      inline: m
+      inline: g
     }) : (0, r.jsx)(S, {
       primaryGuild: y,
       userId: i,
@@ -203,7 +203,7 @@ let y = i.memo(function(e) {
         textVariant: d,
         textColor: _,
         badgeSize: p,
-        inline: m
+        inline: g
       })
     }) : null
   })

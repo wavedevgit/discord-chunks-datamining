@@ -16,9 +16,9 @@ var r = n(200651),
   _ = n(614417),
   p = n(601665),
   h = n(103113),
-  g = n(738953);
+  m = n(738953);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,7 +34,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -80,8 +80,8 @@ function S(e) {
     userId: t,
     user: n
   } = e, o = y(e, ["userId", "user"]);
-  let m = (0, s.e7)([d.default], () => d.default.getUser(t), [t]),
-    v = null != n ? n : m;
+  let g = (0, s.e7)([d.default], () => d.default.getUser(t), [t]),
+    v = null != n ? n : g;
   a()(null != v, "UserProfilePopoutWrapper: user cannot be undefined");
   let O = (0, s.e7)([d.default], () => d.default.getCurrentUser());
   a()(null != O, "UserProfilePopoutWrapper: currentUser cannot be undefined");
@@ -110,7 +110,7 @@ function S(e) {
   })) : v.bot ? (0, r.jsx)(p.Z, b(E({}, o), {
     user: v,
     currentUser: O
-  })) : (0, r.jsx)(g.Z, b(E({}, o), {
+  })) : (0, r.jsx)(m.Z, b(E({}, o), {
     user: v,
     currentUser: O
   }))

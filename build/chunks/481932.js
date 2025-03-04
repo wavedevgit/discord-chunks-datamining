@@ -23,17 +23,17 @@ function _(e) {
     shouldShowTooltip: p = !1
   } = e, {
     newestAnalyticsLocation: h
-  } = (0, o.ZP)(), g = (0, a.wn)({
+  } = (0, o.ZP)(), m = (0, a.wn)({
     location: "useFriendRequestButtonTooltip"
-  }), m = (0, i.e7)([s.default], () => s.default.getId() === t.id), E = (0, i.e7)([l.Z], () => l.Z.getRelationshipType(t.id)), {
+  }), g = (0, i.e7)([s.default], () => s.default.getId() === t.id), E = (0, i.e7)([l.Z], () => l.Z.getRelationshipType(t.id)), {
     gameFriends: v,
     hasOutgoingPendingGameFriends: b,
     hasIncomingPendingGameFriends: y
   } = (0, u.H)({
     userId: t.id
   }), O = v.length > 0 || b || y;
-  if (null == t || t.bot || m || E === f.OGo.BLOCKED) return null;
-  if (E === f.OGo.NONE && g && O) return _ === d.y0.FULL_SIZE ? null : (0, r.jsx)(c.l, {
+  if (null == t || t.bot || g || E === f.OGo.BLOCKED) return null;
+  if (E === f.OGo.NONE && m && O) return _ === d.y0.FULL_SIZE ? null : (0, r.jsx)(c.l, {
     user: t,
     gameFriends: v,
     hasOutgoingPendingGameFriends: b,

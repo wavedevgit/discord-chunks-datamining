@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(30465),
   p = n(218867),
   h = n(313201),
-  g = n(806966),
-  m = n(98528),
+  m = n(806966),
+  g = n(98528),
   E = n(551058),
   v = n(555573),
   b = n(10718),
@@ -31,8 +31,8 @@ var r = n(200651),
   C = n(981631),
   R = n(388032),
   P = n(535712),
-  D = n(239840);
-let w = 512,
+  w = n(239840);
+let D = 512,
   L = 7,
   x = 56,
   M = 16,
@@ -47,7 +47,7 @@ let w = 512,
     let {
       channel: n,
       canOnlyUseTextCommands: o
-    } = e, s = i.useRef(!1), l = i.useRef(0), [V, Z] = i.useState(0), H = i.useRef(null), [W, Y] = i.useState(!1), K = g.Xn.useStore(e => e.activeCategoryIndex);
+    } = e, s = i.useRef(!1), l = i.useRef(0), [V, Z] = i.useState(0), H = i.useRef(null), [W, Y] = i.useState(!1), K = m.Xn.useStore(e => e.activeCategoryIndex);
     i.useEffect(() => {
       (0, d.yw)(C.rMx.APPLICATION_COMMAND_BROWSER_OPENED)
     }, []);
@@ -76,7 +76,7 @@ let w = 512,
         includeFrecency: !0
       },
       allowFetch: !0
-    }), en = (0, m.Qs)({
+    }), en = (0, g.Qs)({
       activeCategoryIndex: K,
       isScrolling: s,
       listRef: H,
@@ -84,13 +84,13 @@ let w = 512,
         let t = q[e];
         if (null != t) {
           let e = z.findIndex(e => e.id === t.id);
-          g.Xn.setActiveCategoryIndex(e)
+          m.Xn.setActiveCategoryIndex(e)
         }
       },
       scrollOffset: j,
       searchQuery: ""
     }), er = e => {
-      let t = q.length * (k + M) + (Q.reduce((e, t) => e + t.data.length, 0) - (X ? L : 0)) * x - w;
+      let t = q.length * (k + M) + (Q.reduce((e, t) => e + t.data.length, 0) - (X ? L : 0)) * x - D;
       X && e + U > t && ee(), en(e), B(), l.current = e
     }, ei = i.useRef(er);
     i.useEffect(() => {
@@ -178,7 +178,7 @@ let w = 512,
             message: R.NW.format(R.t.WoQXT0, {
               applicationName: i.name
             }),
-            noResultsImageURL: D,
+            noResultsImageURL: w,
             className: P.noSearchResults
           })]
         }, e)

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -54,7 +54,7 @@ function p(e, t) {
 
 function h(e, t) {
   if (null == e) return {};
-  var n, r, i = g(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function h(e, t) {
   return i
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -70,15 +70,15 @@ function g(e, t) {
   return i
 }
 
-function m(e) {
+function g(e) {
   let {
     user: t,
     guildId: n,
     channelId: i,
     nick: d,
     className: _,
-    textClassName: g,
-    disablePopout: m,
+    textClassName: m,
+    disablePopout: g,
     ignoreModalClicks: E,
     onClick: v,
     onContextMenu: b,
@@ -96,7 +96,7 @@ function m(e) {
       channelId: i
     })),
     position: "left",
-    shouldShow: !m && void 0,
+    shouldShow: !g && void 0,
     onRequestOpen: y,
     onRequestClose: O,
     ignoreModalClicks: E,
@@ -106,7 +106,7 @@ function m(e) {
       } = e, l = h(e, ["onClick"]);
       return (0, r.jsxs)(a.P3F, p(f({}, l), {
         className: o()(u.userListItem, _, {
-          [u.popoutDisabled]: m
+          [u.popoutDisabled]: g
         }),
         onContextMenu: b,
         onClick: e => {
@@ -118,7 +118,7 @@ function m(e) {
           "aria-label": t.username,
           size: a.EFr.SIZE_24
         }), (0, r.jsx)(a.Text, {
-          className: o()(u.userListItemTag, g),
+          className: o()(u.userListItemTag, m),
           variant: "text-sm/normal",
           children: (0, r.jsx)(s.Z, {
             user: t,

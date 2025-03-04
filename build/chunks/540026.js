@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(47120);
 var r, i = n(200651),
   o = n(192379),
@@ -244,4 +244,4 @@ class h extends(r = o.Component) {
 u(h, "Types", _), u(h, "defaultProps", {
   currentWindow: window
 });
-let g = h
+let m = h

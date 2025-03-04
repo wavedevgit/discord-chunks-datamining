@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(605236),
   p = n(243778),
   h = n(963249),
-  g = n(599659),
-  m = n(282925),
+  m = n(599659),
+  g = n(282925),
   E = n(819640),
   v = n(594174),
   b = n(70956),
@@ -52,7 +52,7 @@ function P(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -63,8 +63,8 @@ function D(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+function D(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -120,9 +120,9 @@ function M(e) {
     channel: n
   } = e, {
     analyticsLocations: o
-  } = (0, f.ZP)(d.Z.GIFT_BUTTON), [a, u] = i.useState(!1), b = (0, s.e7)([E.Z], () => !(null === E.Z || void 0 === E.Z ? void 0 : E.Z.hasLayers())), R = (0, s.e7)([v.default], () => v.default.getCurrentUser()), D = null != R ? y.default.age(R.id) : 0, M = !t && b && D >= L, {
+  } = (0, f.ZP)(d.Z.GIFT_BUTTON), [a, u] = i.useState(!1), b = (0, s.e7)([E.Z], () => !(null === E.Z || void 0 === E.Z ? void 0 : E.Z.hasLayers())), R = (0, s.e7)([v.default], () => v.default.getCurrentUser()), w = null != R ? y.default.age(R.id) : 0, M = !t && b && w >= L, {
     enabled: k
-  } = g.O.useExperiment({
+  } = m.O.useExperiment({
     location: "gift-button"
   }), j = [];
   k && M && j.push(l.z.NITROWEEN_COACHMARKS);
@@ -155,11 +155,11 @@ function M(e) {
     onMouseLeave: () => {
       u(!1)
     },
-    children: [B && (0, r.jsx)(m.Z, {
+    children: [B && (0, r.jsx)(g.Z, {
       onComplete: () => u(!1),
       onCheckItOutClick: W,
       markAsDismissed: G
-    }), (0, r.jsx)(S.Z, w(P({
+    }), (0, r.jsx)(S.Z, D(P({
       innerClassName: C.button,
       "aria-label": N.NW.string(N.t.Z1RnTk),
       isActive: !1,

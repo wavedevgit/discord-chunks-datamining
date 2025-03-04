@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(918701),
   p = n(475595),
   h = n(566078),
-  g = n(352084),
-  m = n(78826),
+  m = n(352084),
+  g = n(78826),
   E = n(341907),
   v = n(388032),
   b = n(624848);
@@ -48,13 +48,13 @@ let y = function(e) {
       }
       y && !C.current ? A.current.play() : !y && C.current && (A.current.currentTime = 0, A.current.pause()), C.current = y
     }
-  }, [y, T, I]), t = R ? (0, r.jsx)(m.Fl, {
+  }, [y, T, I]), t = R ? (0, r.jsx)(g.Fl, {
     id: "QuestRewardTile_rewardTileNitro",
-    children: e => (0, r.jsx)(g.Z, {
+    children: e => (0, r.jsx)(m.Z, {
       ref: e,
       className: b.questRewardTileAsset
     })
-  }) : T.isAnimated ? (0, r.jsx)(m.Fl, {
+  }) : T.isAnimated ? (0, r.jsx)(g.Fl, {
     id: "QuestRewardTile_rewardTileAnimated",
     children: e => {
       var t;
@@ -74,7 +74,7 @@ let y = function(e) {
         })
       })
     }
-  }) : (0, r.jsx)(m.Fl, {
+  }) : (0, r.jsx)(g.Fl, {
     id: "QuestRewardTile_rewardTileStatic",
     children: e => (0, r.jsx)("img", {
       ref: e,

@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(430824),
   p = n(496675),
   h = n(699516),
-  g = n(771845),
-  m = n(594174),
+  m = n(771845),
+  g = n(594174),
   E = n(981631),
   v = n(388032);
 
@@ -74,8 +74,8 @@ function C(e) {
     user: t,
     guildId: n,
     onAction: s
-  } = e, c = (0, o.e7)([m.default], () => m.default.getCurrentUser(), []), d = (0, o.Wu)([g.ZP, _.Z, p.Z], () => {
-    let e = g.ZP.getFlattenedGuildIds(),
+  } = e, c = (0, o.e7)([g.default], () => g.default.getCurrentUser(), []), d = (0, o.Wu)([m.ZP, _.Z, p.Z], () => {
+    let e = m.ZP.getFlattenedGuildIds(),
       t = [];
     return e.forEach(e => {
       let r = _.Z.getGuild(e);

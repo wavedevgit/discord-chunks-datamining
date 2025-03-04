@@ -3,7 +3,7 @@
 n.d(t, {
   Gg: () => y,
   KH: () => E,
-  ZP: () => m
+  ZP: () => g
 }), n(47120), n(978209), n(301563), n(653041);
 var r = n(512722),
   i = n.n(r),
@@ -18,9 +18,9 @@ var r = n(512722),
 let _ = /(@[^@#]+(?:#0|#\d{4}))|(@[^\s\t@#:]+)(?=[\s\t@:])|(:[a-zA-Z0-9_~]+:)|(#"(?:\ |\\\\|\\"|(?!")\w)+")|(#[^\s\t@#:]+(?=[\s\t@#:]))/g,
   p = new Set(["emoji", "customEmoji", "textMention", "userMention", "roleMention", "channelMention", "staticRouteLink", "soundboard", "timestamp"]),
   h = new Set(["line", "blockQuote"]),
-  g = new Set(["applicationCommandOption"]);
+  m = new Set(["applicationCommandOption"]);
 
-function m(e, t, n) {
+function g(e, t, n) {
   let {
     isInline: r,
     isVoid: i,
@@ -45,7 +45,7 @@ function E(e, t, n) {
       let [o, a] = i;
       for (let i = o.children.length - 1; i >= 0; i--) {
         let s = o.children[i];
-        if (g.has(s.type)) {
+        if (m.has(s.type)) {
           let o = [s, f.C0.child(a, i)];
           r ? b(e, o, !0, null) : v(e, o, t, n)
         }

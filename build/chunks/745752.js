@@ -28,7 +28,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,13 +53,13 @@ function m(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function v(e) {
-  c.default.track(_.rMx.GUILD_ONBOARDING_LOADED, E(g({}, (0, o.hH)(e)), {
+  c.default.track(_.rMx.GUILD_ONBOARDING_LOADED, E(m({}, (0, o.hH)(e)), {
     has_new_prompts: !1,
     number_of_prompts: 0
   }))
@@ -76,7 +76,7 @@ function b(e) {
     let {
       body: n
     } = t, r = (0, f.cf)(n);
-    return i.Z.dispatch(g({
+    return i.Z.dispatch(m({
       type: "GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS",
       guildId: e
     }, r)).then(() => r.prompts)
@@ -107,10 +107,10 @@ function O(e) {
 let S = -2;
 
 function I(e) {
-  c.default.track(_.rMx.GUILD_ONBOARDING_STEP_VIEWED, E(g({}, (0, o.hH)(e)), {
+  c.default.track(_.rMx.GUILD_ONBOARDING_STEP_VIEWED, E(m({}, (0, o.hH)(e)), {
     step: S,
     required: !0
-  })), c.default.track(_.rMx.GUILD_ONBOARDING_STEP_COMPLETED, E(g({}, (0, o.hH)(e)), {
+  })), c.default.track(_.rMx.GUILD_ONBOARDING_STEP_COMPLETED, E(m({}, (0, o.hH)(e)), {
     step: S,
     skipped: !1,
     is_final_step: !0,

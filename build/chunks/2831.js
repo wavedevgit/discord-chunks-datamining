@@ -8,7 +8,7 @@ var r = n(444675);
       a = !1,
       s = e.document,
       l = Object.getPrototypeOf && Object.getPrototypeOf(e);
-    l = l && l.setTimeout ? l : e, "[object process]" === ({}).toString.call(e.process) ? _() : p() ? h() : e.MessageChannel ? g() : s && "onreadystatechange" in s.createElement("script") ? m() : E(), l.setImmediate = c, l.clearImmediate = u
+    l = l && l.setTimeout ? l : e, "[object process]" === ({}).toString.call(e.process) ? _() : p() ? h() : e.MessageChannel ? m() : s && "onreadystatechange" in s.createElement("script") ? g() : E(), l.setImmediate = c, l.clearImmediate = u
   }
 
   function c(e) {
@@ -89,7 +89,7 @@ var r = n(444675);
     }
   }
 
-  function g() {
+  function m() {
     var e = new MessageChannel;
     e.port1.onmessage = function(e) {
       f(e.data)
@@ -98,7 +98,7 @@ var r = n(444675);
     }
   }
 
-  function m() {
+  function g() {
     var e = s.documentElement;
     n = function(t) {
       var n = s.createElement("script");

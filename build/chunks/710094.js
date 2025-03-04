@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  l: () => w
+  l: () => D
 }), n(47120), n(411104);
 var r = n(200651),
   i = n(192379),
@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(664891),
   p = n(911367),
   h = n(669079),
-  g = n(987209),
-  m = n(563132),
+  m = n(987209),
+  g = n(563132),
   E = n(409813),
   v = n(107998),
   b = n(809144),
@@ -31,12 +31,12 @@ var r = n(200651),
   C = n(474936),
   R = n(231338),
   P = n(388032);
-let D = 500;
+let w = 500;
 
-function w(e) {
+function D(e) {
   var t, n;
   let o, {
-      handleStepChange: w,
+      handleStepChange: D,
       trialId: L,
       trialFooterMessageOverride: x,
       reviewWarningMessage: M,
@@ -75,19 +75,19 @@ function w(e) {
       startedPaymentFlowWithPaymentSourcesRef: ef,
       invoicePreview: e_,
       inReverseTrial: ep
-    } = (0, m.JL)(),
+    } = (0, g.JL)(),
     {
       isGift: eh,
-      giftMessage: eg,
-      giftRecipient: em,
+      giftMessage: em,
+      giftRecipient: eg,
       claimableRewards: eE
-    } = (0, g.wD)(),
+    } = (0, m.wD)(),
     {
       planSelectBanner: ev
     } = (0, v.zb)();
   a()(null != ea, "Step should be set");
   let eb = i.useRef(null),
-    [ey, eO] = (0, s.Z)(!1, D);
+    [ey, eO] = (0, s.Z)(!1, w);
   (0, p.t)();
   let eS = null !== (n = null != L ? L : B) && void 0 !== n ? n : null,
     eI = null != eS && (!el || C.nG[eS].skus.includes(et)) ? eS : null,
@@ -102,21 +102,21 @@ function w(e) {
     })
   }, [X]);
   let eC = i.useCallback((e, t) => {
-      W(e), null != t && ed(t), w(E.h8.CONFIRM, {
+      W(e), null != t && ed(t), D(E.h8.CONFIRM, {
         fulfillment: {
           subscription: e,
           entitlements: t
         }
       })
-    }, [w, W, ed]),
+    }, [D, W, ed]),
     eR = null != z ? q[z] : null,
     eP = null != ee && C.o4.has(ee.id) && null != eR && !(0, l.aQ)(eR) ? Error(P.NW.string(P.t["2ik8io"])) : null,
-    eD = i.useRef(null),
-    [ew, eL] = i.useState(null),
+    ew = i.useRef(null),
+    [eD, eL] = i.useState(null),
     ex = !eh && null != eT && null != et && C.nG[eT.trial_id].skus.includes(et),
     eM = null == eN ? void 0 : null === (t = eN.discount) || void 0 === t ? void 0 : t.plan_ids,
     ek = !eh && null != eN && null != eM && null != ee && eM.includes(ee.id),
-    ej = eh && (0, h.pO)(em),
+    ej = eh && (0, h.pO)(eg),
     eU = null == V && null == F && eu === R.GZ.SUBSCRIPTION,
     eG = (0, S.Kp)({
       isTrial: ex,
@@ -129,21 +129,21 @@ function w(e) {
     eF = (0, c.id)(ee, eh, eE),
     eZ = i.useCallback(() => {
       if (eG) {
-        w(E.h8.SKU_SELECT);
+        D(E.h8.SKU_SELECT);
         return
       }
       if (eF) {
-        w(E.h8.SELECT_FREE_SKU);
+        D(E.h8.SELECT_FREE_SKU);
         return
       }
-      return eB ? w(E.h8.GIFT_CUSTOMIZATION) : w(E.h8.PLAN_SELECT)
-    }, [w, eG, eB, eF]),
+      return eB ? D(E.h8.GIFT_CUSTOMIZATION) : D(E.h8.PLAN_SELECT)
+    }, [D, eG, eB, eF]),
     eH = !1;
   return eu === R.GZ.ONE_TIME ? (eH = null != J, o = (0, r.jsx)(I.Z, {
     hasLegalTermsFlash: ey,
-    legalTermsNodeRef: eD,
+    legalTermsNodeRef: ew,
     onPaymentSourceChange: e => er(null != e ? e.id : null),
-    handlePaymentSourceAdd: () => w(E.h8.ADD_PAYMENT_STEPS)
+    handlePaymentSourceAdd: () => D(E.h8.ADD_PAYMENT_STEPS)
   })) : (eH = eh ? null == e_ : null != eR && eu === R.GZ.SUBSCRIPTION && ex && !eR.canRedeemTrial(), null == H || ep || eh ? (a()(null != ee, "Expected plan to be selected"), o = (0, r.jsx)(f.Z, {
     selectedPlanId: ee.id,
     paymentSources: q,
@@ -151,9 +151,9 @@ function w(e) {
     priceOptions: Q,
     currencies: K,
     onCurrencyChange: e => en(e),
-    handlePaymentSourceAdd: () => w(E.h8.ADD_PAYMENT_STEPS),
+    handlePaymentSourceAdd: () => D(E.h8.ADD_PAYMENT_STEPS),
     setHasAcceptedTerms: ec,
-    legalTermsNodeRef: eD,
+    legalTermsNodeRef: ew,
     hasLegalTermsFlash: ey,
     trialId: eI,
     trialFooterMessageOverride: x,
@@ -171,11 +171,11 @@ function w(e) {
       er(null != e ? e.id : null)
     },
     onPaymentSourceAdd: () => {
-      w(E.h8.ADD_PAYMENT_STEPS)
+      D(E.h8.ADD_PAYMENT_STEPS)
     },
     planId: ee.id,
     setHasAcceptedTerms: ec,
-    legalTermsNodeRef: eD,
+    legalTermsNodeRef: ew,
     hasLegalTermsFlash: ey,
     onInvoiceError: e => eL(e),
     planGroup: k,
@@ -186,7 +186,7 @@ function w(e) {
     handleClose: Z
   }))), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(b.P, {
-      giftMessage: eg
+      giftMessage: em
     }), !ej && (0, r.jsx)(T.Z, {
       isEligibleForTrial: ex
     }), (0, r.jsxs)(A.C3, {
@@ -198,9 +198,9 @@ function w(e) {
         onBack: eZ,
         onNext: eC,
         onPurchaseError: e => eo(e),
-        legalTermsNodeRef: eD,
+        legalTermsNodeRef: ew,
         flashLegalTerms: () => eO(!0),
-        invoiceError: ew,
+        invoiceError: eD,
         planError: eP,
         analyticsLocation: G,
         baseAnalyticsData: U,

@@ -13,11 +13,11 @@ n.d(t, {
   eN: () => N,
   f1: () => h,
   gs: () => I,
-  lq: () => g,
+  lq: () => m,
   o2: () => v,
   oL: () => u,
   qz: () => y,
-  r_: () => m,
+  r_: () => g,
   rf: () => p,
   u1: () => T
 });
@@ -73,13 +73,13 @@ function h() {
   })
 }
 
-function g() {
+function m() {
   r.Z.dispatch({
     type: "ACCESSIBILITY_DARK_SIDEBAR_TOGGLE"
   })
 }
 
-function m() {
+function g() {
   r.Z.dispatch({
     type: "KEYBOARD_NAVIGATION_EXPLAINER_MODAL_SEEN"
   })

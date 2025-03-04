@@ -19,8 +19,8 @@ function d(e, t, n) {
     p = (0, i.e7)([c.Z], () => c.Z.getVoiceChannelId() === t),
     {
       shouldFetchPreview: h,
-      previewUrl: g,
-      isLoading: m
+      previewUrl: m,
+      isLoading: g
     } = (0, i.cj)([a.Z], () => ({
       shouldFetchPreview: !d && a.Z.shouldFetchPreview(e, t, n),
       previewUrl: d ? null : a.Z.getPreviewURL(e, t, n),
@@ -33,7 +33,7 @@ function d(e, t, n) {
     previewUrl: void 0,
     isLoading: !1
   } : {
-    previewUrl: g,
-    isLoading: m
+    previewUrl: m,
+    isLoading: g
   }
 }

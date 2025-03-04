@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Aq: () => R,
-  ZP: () => D,
+  ZP: () => w,
   bn: () => C,
   cI: () => A,
   f0: () => T,
@@ -69,11 +69,11 @@ let u = new(n(499303)).I,
     currentlyShown: new Set(e.currentlyShown),
     currentlyShownGroup: new Set(e.currentlyShownGroup)
   }),
-  g = (e, t) => {
+  m = (e, t) => {
     var n;
     return null == t || (null != t.content && e.currentlyShown.delete(t.content), null != t.groupName && e.currentlyShownGroup.delete(t.groupName), (null === (n = e.shownFatigableCandidate) || void 0 === n ? void 0 : n.content) === t.content && (e.shownFatigableCandidate = null)), e
   },
-  m = (e, t) => {
+  g = (e, t) => {
     var n, r;
     if (null == t) return e;
     e.currentlyShown.add(t.content);
@@ -82,7 +82,7 @@ let u = new(n(499303)).I,
   },
   E = (e, t) => (e.candidates.set(t.content, t), e),
   v = (e, t) => (e.candidates.delete(t.content), e),
-  b = (e, t) => m(g(e, e.shownFatigableCandidate), t),
+  b = (e, t) => g(m(e, e.shownFatigableCandidate), t),
   y = e => null != e.prevFatigableCandidate ? e.candidates.get(e.prevFatigableCandidate.content) : void 0,
   O = e => {
     let t = [...e.candidates.keys()];
@@ -112,7 +112,7 @@ let u = new(n(499303)).I,
     (0, i.j)(() => {
       p.setState(n => {
         let r = h(n);
-        return t ? m(r, e) : I(E(r, e))
+        return t ? g(r, e) : I(E(r, e))
       })
     })
   },
@@ -120,7 +120,7 @@ let u = new(n(499303)).I,
     (0, i.j)(() => {
       p.setState(n => {
         let r = h(n);
-        return t ? I(g(v(r, e), e)) : g(v(r, e), e)
+        return t ? I(m(v(r, e), e)) : m(v(r, e), e)
       })
     })
   },
@@ -134,6 +134,6 @@ let u = new(n(499303)).I,
     (0, i.j)(() => p.setState(_)), u.unschedule()
   };
 
-function D(e, t) {
+function w(e, t) {
   return p(e, t)
 }

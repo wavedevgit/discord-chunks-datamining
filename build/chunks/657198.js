@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(91313),
   p = n(436660),
   h = n(887490),
-  g = n(388032),
-  m = n(738894);
+  m = n(388032),
+  g = n(738894);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -77,14 +77,14 @@ function O(e, t, n) {
       let f = {};
       if (l > 0) {
         let e;
-        e = c > 0 ? g.NW.formatToPlainString(g.t.BP8N0N, {
+        e = c > 0 ? m.NW.formatToPlainString(m.t.BP8N0N, {
           count: l
-        }) : g.NW.formatToPlainString(g.t.lziVCw, {
+        }) : m.NW.formatToPlainString(m.t.lziVCw, {
           count: l
         }), f["data-trailing-placeholder"] = e
       }
       return (0, r.jsx)("div", y(v({
-        className: m.applicationCommand
+        className: g.applicationCommand
       }, i, f), {
         children: o
       }));
@@ -122,31 +122,31 @@ let S = e => {
     N = (0, l.e7)([f.Z], () => f.Z.getUpload(n, o.optionName, d.d.SlashCommand), [n, o.optionName]),
     A = o.children[o.children.length - 1],
     C = null != A && h.LC.isText(A) && A.text.endsWith("\n"),
-    R = a()(m.inlineElement, m.optionPill, {
-      [m.selectedPill]: O && b,
-      [m.erroredPill]: (!O || !b) && T
+    R = a()(g.inlineElement, g.optionPill, {
+      [g.selectedPill]: O && b,
+      [g.erroredPill]: (!O || !b) && T
     }),
     P = i.useCallback(() => {
       h.bN.isVoid(S, o) || p.Q.selectCommandOption(S, o.optionName, !0)
     }, [S, o]);
   return t = I === c.jw.ATTACHMENT ? (null == N ? void 0 : N.filename) != null ? (0, r.jsxs)("span", {
-    className: a()(m.optionPillValue, m.attachmentFilename),
+    className: a()(g.optionPillValue, g.attachmentFilename),
     contentEditable: !1,
     children: [N.filename, E]
   }) : (0, r.jsxs)("span", {
-    className: a()(m.optionPillValue, m.readonlyPillValue),
+    className: a()(g.optionPillValue, g.readonlyPillValue),
     contentEditable: !1,
-    children: [g.NW.string(g.t.GRdFnp), E]
+    children: [m.NW.string(m.t.GRdFnp), E]
   }) : (0, r.jsxs)("span", {
-    className: m.optionPillValue,
+    className: g.optionPillValue,
     children: [E, C ? (0, r.jsx)("span", {
-      className: m.newLine,
+      className: g.newLine,
       contentEditable: !1
     }) : null]
   }), (0, r.jsxs)("span", y(v({}, _), {
     className: R,
     children: [(0, r.jsxs)("span", {
-      className: m.optionPillKey,
+      className: g.optionPillKey,
       contentEditable: !1,
       onClick: P,
       children: [o.optionDisplayName, "​"]

@@ -23,8 +23,8 @@ var r = n(200651),
   _ = n(78839),
   p = n(617136),
   h = n(915750),
-  g = n(272008),
-  m = n(113434),
+  m = n(272008),
+  g = n(113434),
   E = n(569984),
   v = n(497505),
   b = n(918701),
@@ -47,7 +47,7 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,7 +60,7 @@ function D(e) {
   return e
 }
 
-function w(e, t) {
+function D(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -72,7 +72,7 @@ function w(e, t) {
 }
 
 function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -145,7 +145,7 @@ let k = e => {
     let {
       message: n,
       xboxURL: i
-    } = (0, m.KX)(), o = (0, p.O5)(), a = n => {
+    } = (0, g.KX)(), o = (0, p.O5)(), a = n => {
       var r;
       let a = n.target;
       (null == a ? void 0 : null === (r = a.tagName) || void 0 === r ? void 0 : r.toLowerCase()) === "a" && o({
@@ -176,9 +176,9 @@ function U(e) {
     location: s,
     questContentPosition: u,
     questContentRowIndex: f
-  }), y = (0, m._s)({
+  }), y = (0, g._s)({
     quest: n
-  }), S = (0, m.Rf)(n), I = (0, m.GU)(n), P = I.length > 0 ? I[0] : null, w = i.useCallback(() => {
+  }), S = (0, g.Rf)(n), I = (0, g.GU)(n), P = I.length > 0 ? I[0] : null, D = i.useCallback(() => {
     (0, d.$)()
   }, []), M = i.useCallback(() => {
     (0, c.mK)({
@@ -195,13 +195,13 @@ function U(e) {
       onClick: null
     };
     switch (o) {
-      case m.OH.UNACCEPTED:
+      case g.OH.UNACCEPTED:
         let e = R.NW.string(R.t.kUQLMD);
         E && j ? e = R.NW.string(R.t.CwGuEx) : E && (e = R.NW.string(R.t.umdNio));
         let t = E ? p.jZ.START_QUEST : p.jZ.ACCEPT_QUEST;
         return {
           text: e, tooltipText: e, onClick: () => {
-            (0, g.AH)(n.id, {
+            (0, m.AH)(n.id, {
               questContent: s,
               questContentCTA: t,
               questContentPosition: u,
@@ -209,8 +209,8 @@ function U(e) {
             }), E && (0, T.openVideoQuestModal)(n)
           }
         };
-      case m.OH.ACCEPTED:
-      case m.OH.IN_PROGRESS:
+      case g.OH.ACCEPTED:
+      case g.OH.IN_PROGRESS:
         if (y && _) return {
           text: R.NW.string(R.t.Cfye4u),
           tooltipText: null,
@@ -232,7 +232,7 @@ function U(e) {
         return {
           text: R.NW.string(R.t.cfY4PD), tooltipText: R.NW.string(R.t.hsbwjo), onClick: null
         };
-      case m.OH.COMPLETED:
+      case g.OH.COMPLETED:
         if ((0, b.xN)(n.config)) {
           let e = (0, b.LM)(n.config);
           return {
@@ -246,20 +246,20 @@ function U(e) {
         return {
           text: R.NW.string(R.t.cfY4PD), tooltipText: null, onClick: v
         };
-      case m.OH.CLAIMED:
+      case g.OH.CLAIMED:
         let i = {
           tooltipText: null,
           onClick: v
         };
-        if (a) return L(D({}, i), {
+        if (a) return L(w({}, i), {
           text: R.NW.string(R.t.MAS7uL)
         });
-        if ((0, b.vQ)(n.config)) return L(D({}, i), {
+        if ((0, b.vQ)(n.config)) return L(w({}, i), {
           text: R.NW.string(R.t.vTgCW1)
         });
         if ((0, b.Bg)(n.config)) return {
           tooltipText: null,
-          onClick: w,
+          onClick: D,
           text: R.NW.string(R.t["eQX+go"])
         };
         else if ((0, b.xN)(n.config)) return {
@@ -267,11 +267,11 @@ function U(e) {
           text: R.NW.string(R.t.iEw2Nz),
           onClick: M
         };
-        return L(D({}, i), {
+        return L(w({}, i), {
           text: R.NW.string(R.t.bAGFz8)
         })
     }
-  }, [P, o, E, y, _, v, a, n, s, u, f, k, S, w, j, M])
+  }, [P, o, E, y, _, v, a, n, s, u, f, k, S, D, j, M])
 }
 
 function G() {
@@ -288,7 +288,7 @@ function B(e) {
     quest: r
   } = e, i = (0, y.Zy)({
     location: n
-  }), o = (0, m.tP)(r), {
+  }), o = (0, g.tP)(r), {
     premiumSubscription: s,
     hasFetchedSubscriptions: l
   } = (0, a.cj)([_.ZP], () => ({

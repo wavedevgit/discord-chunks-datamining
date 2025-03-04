@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $l: () => D,
+  $l: () => w,
   G1: () => y,
   JR: () => N,
   U$: () => A,
-  ZP: () => w,
+  ZP: () => D,
   e7: () => S,
   wv: () => I,
   yK: () => O
@@ -23,8 +23,8 @@ var r = n(192379),
   _ = n(70956),
   p = n(765104),
   h = n(981631);
-let g = 75,
-  m = 50,
+let m = 75,
+  g = 50,
   E = 30 * _.Z.Millis.SECOND,
   v = null;
 async function b(e, t) {
@@ -74,7 +74,7 @@ async function y(e) {
     r = new c.Hx(e)
   }
   let u = (null == i ? void 0 : null === (t = i.body) || void 0 === t ? void 0 : t.summaries) instanceof Array ? i.body.summaries : null !== (n = null == i ? void 0 : i.body) && void 0 !== n ? n : [];
-  u = o().takeRight(u, g), l.Z.dispatch({
+  u = o().takeRight(u, m), l.Z.dispatch({
     type: "RECEIVE_CHANNEL_SUMMARIES",
     channelId: e,
     summaries: u,
@@ -174,7 +174,7 @@ async function R(e) {
       if (null == n ? void 0 : n.fetching) return !1;
       let r = null == n ? void 0 : n.lastReceivedAt;
       return null == r || t - r > E
-    }).slice(0, m)).length) return Promise.resolve(null);
+    }).slice(0, g)).length) return Promise.resolve(null);
   l.Z.dispatch({
     type: "REQUEST_CHANNEL_SUMMARIES_BULK",
     channelIds: e,
@@ -218,7 +218,7 @@ function P() {
     }
   }, [n, t])
 }
-async function D(e) {
+async function w(e) {
   try {
     await s.tn.del({
       url: h.Z5c.CHANNEL_SUMMARY(e.channelId, e.id),
@@ -231,7 +231,7 @@ async function D(e) {
     throw new c.Hx(e)
   }
 }
-let w = {
+let D = {
   setSummaryFeedback: A,
   updateVisibleMessages: N,
   setSelectedSummary: I,
@@ -245,5 +245,5 @@ let w = {
     } = e;
     return P(t), (0, a.Wu)([p.Z], () => p.Z.topSummaries(), [])
   },
-  deleteSummary: D
+  deleteSummary: w
 }

@@ -21,9 +21,9 @@ var r = n(367907),
   _ = n(687158),
   p = n(228168),
   h = n(981631),
-  g = n(231338);
+  m = n(231338);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -39,7 +39,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -81,7 +81,7 @@ let y = e => {
   O = e => {
     let t = s.Z.getStatus(e),
       n = s.Z.isMobileOnline(e);
-    return t === g.Sk.ONLINE && n ? "".concat(t, "-mobile") : t === g.Sk.ONLINE ? "".concat(t, "-desktop") : t
+    return t === m.Sk.ONLINE && n ? "".concat(t, "-mobile") : t === m.Sk.ONLINE ? "".concat(t, "-desktop") : t
   },
   S = e => null == e ? e : "VOICE" === e ? "VOICE" : Object.keys(h.IIU)[Object.values(h.IIU).indexOf(e)],
   I = e => {

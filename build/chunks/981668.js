@@ -29,7 +29,7 @@ function p(e) {
 async function h(e) {
   await o.ZP.fetchApplications(e, !1)
 }
-async function g(e) {
+async function m(e) {
   if (null == e) return;
   let t = l.Z.getChannel(e);
   if (null == t || !(0, d.Ku)("running_games_change", !1)) return;
@@ -45,15 +45,15 @@ async function g(e) {
     user_id: s.default.getId()
   })
 }
-class m extends r.Z {
+class g extends r.Z {
   handleRunningGamesChange() {
-    g(c.Z.getVoiceChannelId())
+    m(c.Z.getVoiceChannelId())
   }
   handleVoiceChannelSelect(e) {
     let {
       channelId: t
     } = e;
-    g(t)
+    m(t)
   }
   constructor(...e) {
     super(...e), _(this, "actions", {
@@ -62,4 +62,4 @@ class m extends r.Z {
     })
   }
 }
-let E = new m
+let E = new g

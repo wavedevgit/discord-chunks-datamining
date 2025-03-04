@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -58,8 +58,8 @@ let h = e => {
       className: d,
       verified: _,
       hideIcon: h = !1,
-      useRemSizes: g = !1,
-      children: m = []
+      useRemSizes: m = !1,
+      children: g = []
     } = e,
     E = null,
     v = c.NW.string(c.t.g76OcH);
@@ -100,11 +100,11 @@ let h = e => {
     }))
   })), t = i === l.Hb.AI ? u.botTagAI : n ? u.botTagInvert : u.botTagRegular;
   let S = e => (0, r.jsxs)("span", p(f({}, e), {
-    className: o()(d, t, g ? u.rem : u.px, {
+    className: o()(d, t, m ? u.rem : u.px, {
       [u.botTagOP]: b,
       [u.botTagRemix]: y
     }),
-    children: [h ? null : O, m, (0, r.jsx)("span", {
+    children: [h ? null : O, g, (0, r.jsx)("span", {
       className: u.botText,
       children: E
     })]
@@ -127,4 +127,4 @@ let h = e => {
   }
 };
 h.Types = l.Hb;
-let g = h
+let m = h

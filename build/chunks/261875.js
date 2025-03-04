@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120);
 var r = n(442837),
   i = n(348326),
@@ -76,7 +76,7 @@ class f extends r.ZP.Store {
       return
     }
     if (null != e) {
-      let t = await g(e);
+      let t = await m(e);
       null == t || this.databases.has(e) ? (u.verbose("discarding speculative database (".concat(e, " → ").concat(t, ")")), null == t || t.close()) : (u.verbose("added speculative database (".concat(e, " → ").concat(t, ")")), this.databases.set(e, t), this.emitChange())
     }
   }
@@ -113,7 +113,7 @@ function h(e) {
   }
   return null
 }
-async function g(e) {
+async function m(e) {
   if (d) {
     let t = p(e);
     u.verbose("speculatively opening ".concat(t));
@@ -125,4 +125,4 @@ async function g(e) {
   }
   return null
 }
-let m = new f
+let g = new f

@@ -17,8 +17,8 @@ var i = n(120356),
   _ = n(150039),
   p = n(450734),
   h = n(225089),
-  g = n(853726),
-  m = n(165747),
+  m = n(853726),
+  g = n(165747),
   E = n(981631),
   v = n(228168),
   b = n(371831);
@@ -38,8 +38,8 @@ function y(e) {
     pendingGlobalName: C,
     pendingThemeColors: R,
     pendingProfileEffectId: P,
-    avatarClassName: D,
-    containerClassName: w,
+    avatarClassName: w,
+    containerClassName: D,
     isTryItOutFlow: L = !1,
     disabledInputs: x = !1,
     hideCustomStatus: M = !1,
@@ -75,7 +75,7 @@ function y(e) {
     displayProfile: V,
     profileType: v.y0.BITE_SIZE,
     pendingThemeColors: R,
-    className: o()(b.container, w),
+    className: o()(b.container, D),
     forceShowPremium: i,
     children: [(0, r.jsxs)("header", {
       className: b.header,
@@ -99,7 +99,7 @@ function y(e) {
         previewAvatarDecoration: Z,
         previewTheme: W,
         previewPrimaryColor: Y,
-        className: D,
+        className: w,
         disabledInputs: x,
         isTryItOutFlow: L,
         onUpsellClick: () => null == y ? void 0 : y({
@@ -110,7 +110,7 @@ function y(e) {
         user: t,
         profileType: v.y0.BITE_SIZE
       })]
-    }), (0, r.jsx)(g.Z, {
+    }), (0, r.jsx)(m.Z, {
       user: t,
       displayProfile: V,
       guild: n,
@@ -123,7 +123,7 @@ function y(e) {
       isTryItOutFlow: L,
       hideBioSection: k,
       shouldOpenBadgeTooltip: B
-    }), (0, r.jsx)(m.Z, {
+    }), (0, r.jsx)(g.Z, {
       user: t,
       hideMessageInput: j,
       hideExampleButton: U

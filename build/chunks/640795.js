@@ -19,9 +19,9 @@ let c = "https://cdn.discordapp.com/bad-domains/updated_hashes.json",
   p = new a.Z("FetchBlockedDomain");
 
 function h() {
-  return r.Z.timeAsync("\uD83D\uDCBE", "fetchBlockedDomainList", g)
+  return r.Z.timeAsync("\uD83D\uDCBE", "fetchBlockedDomainList", m)
 }
-async function g() {
+async function m() {
   p.verbose("Fetching blocked domain list");
   try {
     let e;

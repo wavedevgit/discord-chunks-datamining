@@ -97,7 +97,7 @@ let a = e => t => {
       n(...e), _()
     }, r, i);
     i.getInitialState = () => h;
-    let g = () => {
+    let m = () => {
       var e, t;
       if (!f) return;
       c = !1, u.forEach(e => {
@@ -133,7 +133,7 @@ let a = e => t => {
         null == f || f.removeItem(l.name)
       },
       getOptions: () => l,
-      rehydrate: () => g(),
+      rehydrate: () => m(),
       hasHydrated: () => c,
       onHydrate: e => (u.add(e), () => {
         u.delete(e)
@@ -141,5 +141,5 @@ let a = e => t => {
       onFinishHydration: e => (d.add(e), () => {
         d.delete(e)
       })
-    }, l.skipHydration || g(), s || h
+    }, l.skipHydration || m(), s || h
   }

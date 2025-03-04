@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(633302),
   p = n(691251),
   h = n(536442),
-  g = n(912893),
-  m = n(430824),
+  m = n(912893),
+  g = n(430824),
   E = n(358085),
   v = n(288406),
   b = n(388032),
@@ -90,15 +90,15 @@ let C = (e, t) => "".concat(e, ":").concat(t),
       isDisabled: d,
       showPulse: _,
       columnIndex: h,
-      rowIndex: g,
+      rowIndex: m,
       size: E,
       surrogateCodePoint: O,
       allowAnimatedEmoji: I,
       selectedItemClassName: A,
       inNitroLockedSection: C
     } = e, R = N(e, ["emoji", "isFavorite", "isLargeSize", "isMediumSize", "isInspected", "isDisabled", "showPulse", "columnIndex", "rowIndex", "size", "surrogateCodePoint", "allowAnimatedEmoji", "selectedItemClassName", "inNitroLockedSection"]);
-    let P = (0, s.e7)([m.Z], () => n.type === f.B.GUILD ? m.Z.getGuild(n.guildId) : void 0, [n]),
-      D = () => {
+    let P = (0, s.e7)([g.Z], () => n.type === f.B.GUILD ? g.Z.getGuild(n.guildId) : void 0, [n]),
+      w = () => {
         let e = n.allNamesString;
         return ((null == P ? void 0 : P.name) != null && (e = b.NW.formatToPlainString(b.t["nXv4/P"], {
           names: e,
@@ -107,7 +107,7 @@ let C = (e, t) => "".concat(e, ":").concat(t),
           names: e
         }) : e
       },
-      w = d && !C;
+      D = d && !C;
     return (0, r.jsx)(l.tEY, {
       children: (0, r.jsx)("button", T(S({}, R), {
         className: a()(y.emojiItem, {
@@ -124,14 +124,14 @@ let C = (e, t) => "".concat(e, ":").concat(t),
         "data-animated": n.animated ? "true" : null,
         ref: t,
         children: (0, r.jsx)(v.Z, {
-          "aria-label": D(),
+          "aria-label": w(),
           columnIndex: h,
-          rowIndex: g,
+          rowIndex: m,
           emoji: n,
           size: E,
           surrogateCodePoint: O,
           allowAnimatedEmoji: I,
-          isLocked: w
+          isLocked: D
         })
       }))
     })
@@ -144,15 +144,15 @@ function P(e) {
     isInspected: a,
     rowIndex: f,
     channelGuildId: p,
-    onInspect: m,
+    onInspect: g,
     onSelect: v,
     isScrolling: y,
     isUsingKeyboardNavigation: O,
     showEmojiFavoriteTooltip: I,
     surrogateCodePoint: A,
     selectedItemClassName: P,
-    getEmojiItemProps: D,
-    isMediumSize: w,
+    getEmojiItemProps: w,
+    isMediumSize: D,
     isLargeSize: L,
     pulseItemKey: x,
     allowAnimatedEmoji: M,
@@ -174,7 +174,7 @@ function P(e) {
       toggleFavorite: n
     })
   }, X = () => {
-    y.current || O.current || m(t)
+    y.current || O.current || g(t)
   }, J = e => {
     (0, c.jW)(e, async () => {
       let {
@@ -187,7 +187,7 @@ function P(e) {
     let {
       onMouseEnter: t,
       onMouseLeave: n
-    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, s = null !== (e = D(q, f)) && void 0 !== e ? e : {}, {
+    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, s = null !== (e = w(q, f)) && void 0 !== e ? e : {}, {
       ref: l,
       tabIndex: c,
       onFocus: u
@@ -200,7 +200,7 @@ function P(e) {
       emoji: Y,
       isFavorite: H.isFavoriteEmojiWithoutFetchingLatest(Y),
       isLargeSize: L,
-      isMediumSize: w,
+      isMediumSize: D,
       isInspected: a,
       isDisabled: z,
       showPulse: x === o,
@@ -213,7 +213,7 @@ function P(e) {
         if (null != W.current && null != G && null != j && !e.shiftKey && null != Y.name && U && !Z && M) {
           let e = null == Y.id ? _.ZP.convertNameToSurrogate(Y.name) : Y.name,
             t = W.current.getBoundingClientRect();
-          t.x = G.x + (q + 1) * K, F(C(q, f)), (0, g.U)(j, e, Y.id, t)
+          t.x = G.x + (q + 1) * K, F(C(q, f)), (0, m.U)(j, e, Y.id, t)
         }
         Q(e)
       },

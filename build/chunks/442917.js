@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(925549),
   p = n(37234),
   h = n(519938),
-  g = n(100527),
-  m = n(367907),
+  m = n(100527),
+  g = n(367907),
   E = n(358221),
   v = n(414910),
   b = n(221888),
@@ -31,8 +31,8 @@ var r = n(200651),
   C = n(788983),
   R = n(703656),
   P = n(937995),
-  D = n(618158),
-  w = n(922745),
+  w = n(618158),
+  D = n(922745),
   L = n(197016),
   x = n(800965),
   M = n(445062),
@@ -146,7 +146,7 @@ class eu extends i.PureComponent {
     } = this.props;
     W.default.track(en.rMx.VIDEO_LAYOUT_TOGGLED, es({
       video_layout: "pip"
-    }, (0, m.AB)(e.id)))
+    }, (0, g.AB)(e.id)))
   }
   componentWillUnmount() {
     let {
@@ -154,7 +154,7 @@ class eu extends i.PureComponent {
     } = this.props;
     W.default.track(en.rMx.VIDEO_LAYOUT_TOGGLED, es({
       video_layout: E.Z.getLayout(e.id)
-    }, (0, m.AB)(e.id)))
+    }, (0, g.AB)(e.id)))
   }
   renderStreamState() {
     let e = this.activeStreamForSelectedParticipant,
@@ -226,7 +226,7 @@ class eu extends i.PureComponent {
       timeout: 1800,
       children: e => {
         var t;
-        return (0, r.jsx)(w.Z, ec(es({
+        return (0, r.jsx)(D.Z, ec(es({
           title: a,
           backgroundKey: null !== (t = null == n ? void 0 : n.id) && void 0 !== t ? t : "",
           screenMessage: null == l ? this.getScreenMessage() : null,
@@ -234,7 +234,7 @@ class eu extends i.PureComponent {
           onHide: this.handleHidePIP,
           renderBottomLeftControls: this.renderBottomLeftControls,
           renderBottomRightControls: this.renderBottomRightControls,
-          preventIdleComponent: D.Z,
+          preventIdleComponent: w.Z,
           width: o,
           className: eo.elevationHigh
         }, e), {
@@ -268,13 +268,13 @@ class eu extends i.PureComponent {
         canGoLive: e,
         channel: t
       } = this.props, n = t.getGuildId();
-      if (a()(null != n, "Cannot go live in non guild channel"), (0, y.v)(g.Z.VIDEO_PIP, y.d.STREAM, !0), !e) return (0, ee.Z)();
+      if (a()(null != n, "Cannot go live in non guild channel"), (0, y.v)(m.Z.VIDEO_PIP, y.d.STREAM, !0), !e) return (0, ee.Z)();
       (0, et.Z)(n, t.id, en.ZY5.GUILD_CHANNEL)
     }), ea(this, "handleStopStream", () => {
       let {
         participantOnScreen: e
       } = this.props;
-      a()((0, er._5)(e), "cannot stop stream for non streamer"), (0, y.v)(g.Z.VIDEO_PIP, y.d.STREAM, !1), (0, N.Z)(e.stream)
+      a()((0, er._5)(e), "cannot stop stream for non streamer"), (0, y.v)(m.Z.VIDEO_PIP, y.d.STREAM, !1), (0, N.Z)(e.stream)
     }), ea(this, "handleHidePIP", () => {
       let {
         channel: e
@@ -284,7 +284,7 @@ class eu extends i.PureComponent {
       let {
         channel: e
       } = this.props;
-      (0, y.v)(g.Z.VIDEO_PIP, y.d.POPOUT, !0), C.hP(e)
+      (0, y.v)(m.Z.VIDEO_PIP, y.d.POPOUT, !0), C.hP(e)
     }), ea(this, "renderBottomLeftControls", () => {
       let {
         canSeeParticipantName: e
@@ -303,7 +303,7 @@ class eu extends i.PureComponent {
       })
     }), ea(this, "renderDisconnectButton", () => (0, r.jsx)(L.Z, {
       className: ei.rightTrayIcon,
-      onClick: () => (0, y.v)(g.Z.VIDEO_PIP, y.d.DISCONNECT)
+      onClick: () => (0, y.v)(m.Z.VIDEO_PIP, y.d.DISCONNECT)
     })), ea(this, "renderStopStreamButton", () => {
       let {
         isSelf: e
@@ -318,7 +318,7 @@ class eu extends i.PureComponent {
         participantOnScreen: e,
         channel: t
       } = this.props;
-      return a()((0, er._5)(e) || (null == e ? void 0 : e.type) === er.fO.ACTIVITY, "Cannot render participants for participant type ".concat(null == e ? void 0 : e.type)), (0, r.jsx)(D.Z, {
+      return a()((0, er._5)(e) || (null == e ? void 0 : e.type) === er.fO.ACTIVITY, "Cannot render participants for participant type ".concat(null == e ? void 0 : e.type)), (0, r.jsx)(w.Z, {
         children: (0, r.jsx)(b.Z, {
           channelId: t.id,
           guildId: t.getGuildId(),
@@ -343,7 +343,7 @@ class eu extends i.PureComponent {
         stream: n,
         className: ei.rightTrayIcon,
         appContext: en.IlC.APP,
-        location: g.Z.VIDEO_PIP
+        location: m.Z.VIDEO_PIP
       })
     })
   }

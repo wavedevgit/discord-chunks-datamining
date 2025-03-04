@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  k: () => D
+  k: () => w
 });
 var r = n(200651),
   i = n(192379),
@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(806966),
   p = n(65029),
   h = n(210887),
-  g = n(695346),
-  m = n(430824),
+  m = n(695346),
+  g = n(430824),
   E = n(451478),
   v = n(768581),
   b = n(392552),
@@ -42,8 +42,8 @@ let P = e => {
       guildName: n.name
     }) : null
   },
-  D = i.memo(function(e) {
-    let t, D, w, {
+  w = i.memo(function(e) {
+    let t, w, D, {
         className: L,
         emojiGrid: x,
         guildId: M,
@@ -88,10 +88,10 @@ let P = e => {
           allNamesString: null == B ? void 0 : B.name
         }
     }
-    let V = (0, o.e7)([m.Z], () => null !== t && t.type === u.B.GUILD ? m.Z.getGuild(t.guildId) : null, [t]),
+    let V = (0, o.e7)([g.Z], () => null !== t && t.type === u.B.GUILD ? g.Z.getGuild(t.guildId) : null, [t]),
       F = (0, o.e7)([E.Z], () => E.Z.isFocused()),
       Z = (0, o.e7)([l.Z], () => l.Z.useReducedMotion, []),
-      H = g.Yk.useSetting(),
+      H = m.Yk.useSetting(),
       W = (0, y.C1)(M, R(t) ? t : null),
       Y = (0, o.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds),
       {
@@ -117,7 +117,7 @@ let P = e => {
         animated: H && t.animated,
         size: 28
       }) : t.url;
-      D = "" === e ? (0, r.jsx)(s.Text, {
+      w = "" === e ? (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         className: A.glyphEmoji,
         children: "surrogates" in t ? t.surrogates : null
@@ -126,7 +126,7 @@ let P = e => {
         src: e,
         className: A.emoji
       })
-    } else if ("CREATE_EMOJI" === t.type) D = (0, r.jsx)(s.oFk, {
+    } else if ("CREATE_EMOJI" === t.type) w = (0, r.jsx)(s.oFk, {
       size: "md",
       color: "currentColor",
       className: A.icon,
@@ -137,7 +137,7 @@ let P = e => {
         i = n(39874),
         o = n(853871),
         s = n(63149);
-      D = Y.has(t.guildId) ? (0, r.jsx)("img", {
+      w = Y.has(t.guildId) ? (0, r.jsx)("img", {
         className: A.icon,
         src: (0, a.wj)(q) ? o : s,
         alt: ""
@@ -152,7 +152,7 @@ let P = e => {
       guild: V,
       shouldAnimate: !Z && F
     }) : null;
-    w = U && "CREATE_EMOJI" === t.type ? N.NW.string(N.t.XCmLfH) : "EXPAND_OR_COLLAPSE_EMOJI" === t.type ? Y.has(t.guildId) ? N.NW.string(N.t["/K2RDA"]) : N.NW.string(N.t.NZI2Zm) : t.allNamesString;
+    D = U && "CREATE_EMOJI" === t.type ? N.NW.string(N.t.XCmLfH) : "EXPAND_OR_COLLAPSE_EMOJI" === t.type ? Y.has(t.guildId) ? N.NW.string(N.t["/K2RDA"]) : N.NW.string(N.t.NZI2Zm) : t.allNamesString;
     let J = U && "CREATE_EMOJI" === t.type ? N.NW.string(N.t["Z/r7IS"]) : P({
       inspectedEmoji: t,
       channel: j,
@@ -162,9 +162,9 @@ let P = e => {
     });
     return (0, r.jsx)(p.Z, {
       className: L,
-      graphicPrimary: D,
+      graphicPrimary: w,
       graphicSecondary: X,
-      titlePrimary: w,
+      titlePrimary: D,
       titleSecondary: J,
       isFavorite: W,
       emojiSubCategory: z

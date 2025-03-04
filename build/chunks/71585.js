@@ -38,14 +38,14 @@ let c = 2592e6,
   _ = f(),
   p = new Set,
   h = new Set,
-  g = 0,
-  m = !1,
+  m = 0,
+  g = !1,
   E = !1,
   v = 1e3;
 
 function b() {
   let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-  if (!e && Date.now() < g) return;
+  if (!e && Date.now() < m) return;
   let t = 0,
     n = Date.now() - c;
   for (let e = 0; e < _.itemImpressions.length; e++) {
@@ -60,14 +60,14 @@ function b() {
     a = Date.now() - r,
     s = null;
   for (let [e, t] of _.itemImpressions) t < a ? i.add(e) : null == s && (s = t + r), o.add(e);
-  p = i, h = o, g = null != s ? s : 1 / 0, m = !0
+  p = i, h = o, m = null != s ? s : 1 / 0, g = !0
 }
 
 function y(e) {
   let {
     itemIds: t
   } = e;
-  m || b();
+  g || b();
   let n = Date.now(),
     r = !1;
   for (let e of t) h.has(e) || (_.itemImpressions.push([e, n]), r = !0);

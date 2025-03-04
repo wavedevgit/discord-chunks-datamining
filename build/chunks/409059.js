@@ -63,14 +63,14 @@ function h(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     guildTemplates: t
   } = e;
   t.forEach(e => h(e))
 }
 
-function m(e) {
+function g(e) {
   return f(e.code, e => {
     e.state = s.Rj.EXPIRED
   })
@@ -125,9 +125,9 @@ let I = new S(o.Z, {
   GUILD_TEMPLATE_CREATE_SUCCESS: p,
   GUILD_TEMPLATE_SYNC_SUCCESS: p,
   GUILD_TEMPLATE_RESOLVE_SUCCESS: p,
-  GUILD_TEMPLATE_LOAD_FOR_GUILD_SUCCESS: g,
-  GUILD_TEMPLATE_RESOLVE_FAILURE: m,
-  GUILD_TEMPLATE_DELETE_SUCCESS: m,
+  GUILD_TEMPLATE_LOAD_FOR_GUILD_SUCCESS: m,
+  GUILD_TEMPLATE_RESOLVE_FAILURE: g,
+  GUILD_TEMPLATE_DELETE_SUCCESS: g,
   GUILD_TEMPLATE_ACCEPT: E,
   GUILD_TEMPLATE_ACCEPT_SUCCESS: v,
   GUILD_TEMPLATE_ACCEPT_FAILURE: b,

@@ -16,8 +16,8 @@ var r = n(392711),
   _ = n(451478),
   p = n(70956),
   h = n(162461),
-  g = n(564990),
-  m = n(71585),
+  m = n(564990),
+  g = n(71585),
   E = n(146282),
   v = n(206583),
   b = n(981631);
@@ -38,16 +38,16 @@ let O = 4,
   A = new Set,
   C = new Map,
   R = null,
-  P = (0, r.debounce)(g.yK, 3e3, {
+  P = (0, r.debounce)(m.yK, 3e3, {
     trailing: !0
   });
 
-function D() {
+function w() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0;
   return Math.random() * (e + 1) * S
 }
 
-function w(e, t) {
+function D(e, t) {
   o.Z.dispatch({
     type: "CONTENT_INVENTORY_SET_FEED_STATE",
     feedId: e,
@@ -58,7 +58,7 @@ function w(e, t) {
 function L(e) {
   if (A.has(e) || e === v.YN.GAME_PROFILE_FEED && (!(0, s._J)("ContentInventoryManager") || void 0 !== E.Z.getFeed(e))) return !1;
   if (e === I) {
-    if (!(0, h.sA)("ContentInventoryManager") || m.Z.hidden && null != E.Z.getFeed(e) || !_.Z.isFocused() || !l.Z.isConnected()) return !1;
+    if (!(0, h.sA)("ContentInventoryManager") || g.Z.hidden && null != E.Z.getFeed(e) || !_.Z.isFocused() || !l.Z.isConnected()) return !1;
     let t = f.Z.getIdleSince();
     if (null != t && Date.now() - t > T) return !1
   }
@@ -66,7 +66,7 @@ function L(e) {
 }
 
 function x(e) {
-  w(e, {
+  D(e, {
     loading: !1
   });
   let t = N.get(e);
@@ -80,8 +80,8 @@ function M() {
   let n = E.Z.getFeed(I);
   if ((null == n ? void 0 : n.refresh_stale_inbox_after_ms) != null && null == R) return;
   let r = (null == n ? void 0 : n.expired_at) == null ? 0 : new Date(n.expired_at).getTime() - Date.now(),
-    o = Math.max(0, null == R ? 0 : new Date(R).getTime() - Date.now(), r) + (t > 0 ? D() : 0);
-  w(I, {
+    o = Math.max(0, null == R ? 0 : new Date(R).getTime() - Date.now(), r) + (t > 0 ? w() : 0);
+  D(I, {
     loading: !1,
     nextFetchDate: new Date(Date.now() + o)
   }), N.set(I, setTimeout(() => k({
@@ -97,10 +97,10 @@ async function k(e) {
   } = e;
   if (L(t) || r) try {
     let e = E.Z.getFeed(t);
-    A.add(t), w(t, {
+    A.add(t), D(t, {
       loading: !0
     });
-    let r = await (0, g.mt)({
+    let r = await (0, m.mt)({
       token: null == e ? void 0 : e.refresh_token,
       feedId: t,
       feature: n
@@ -109,14 +109,14 @@ async function k(e) {
       type: "CONTENT_INVENTORY_SET_FEED",
       feedId: t,
       feed: r
-    }), C.set(t, 0), A.delete(t), w(t, {
+    }), C.set(t, 0), A.delete(t), D(t, {
       loading: !1
     }), t === I && (R = null, M())
   } catch (a) {
     var i;
     let e = null !== (i = C.get(t)) && void 0 !== i ? i : 0;
     if (e < O) {
-      let i = p.Z.Millis.MINUTE * Math.pow(2, e) + D(e);
+      let i = p.Z.Millis.MINUTE * Math.pow(2, e) + w(e);
       N.set(t, setTimeout(() => k({
         feedId: t,
         feature: n,

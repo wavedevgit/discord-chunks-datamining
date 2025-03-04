@@ -17,8 +17,8 @@ var i = n(120356),
   _ = n(74538),
   p = n(694320),
   h = n(981631),
-  g = n(474936),
-  m = n(388032),
+  m = n(474936),
+  g = n(388032),
   E = n(553645);
 
 function v(e, t, n) {
@@ -68,12 +68,12 @@ function S(e) {
     maxCharacterCount: I,
     showRemainingCharsAfterCount: T,
     className: N
-  } = e, A = (0, a.e7)([f.default], () => _.ZP.canUseIncreasedMessageLength(f.default.getCurrentUser())), C = (0, u.Z)(), R = null != I ? I : C, P = null !== (v = null != T ? T : I) && void 0 !== v ? v : C / 10, D = S.length, w = null != y.upsellLongMessages && (null != D ? D : 0) > h.J6R && A, L = null != y.upsellLongMessages && !A, x = (null === (n = (0, d.N)()) || void 0 === n ? void 0 : null === (t = n.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === g.Si.TIER_2, M = R - D, k = M > P, j = M < 0 && x, U = 0 === M ? m.NW.string(m.t.tU6YQ0) : M > 0 ? m.NW.formatToPlainString(m.t.qH8uFR, {
+  } = e, A = (0, a.e7)([f.default], () => _.ZP.canUseIncreasedMessageLength(f.default.getCurrentUser())), C = (0, u.Z)(), R = null != I ? I : C, P = null !== (v = null != T ? T : I) && void 0 !== v ? v : C / 10, w = S.length, D = null != y.upsellLongMessages && (null != w ? w : 0) > h.J6R && A, L = null != y.upsellLongMessages && !A, x = (null === (n = (0, d.N)()) || void 0 === n ? void 0 : null === (t = n.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === m.Si.TIER_2, M = R - w, k = M > P, j = M < 0 && x, U = 0 === M ? g.NW.string(g.t.tU6YQ0) : M > 0 ? g.NW.formatToPlainString(g.t.qH8uFR, {
     count: M
-  }) : m.NW.string(m.t.YSRIqa), {
+  }) : g.NW.string(g.t.YSRIqa), {
     analyticsLocations: G
   } = (0, c.ZP)(l.Z.CHARACTER_COUNT);
-  if (!(w && M >= 0 || !k || L && !k)) return null;
+  if (!(D && M >= 0 || !k || L && !k)) return null;
   let B = M >= 0;
   return (0, r.jsx)(c.Gt, {
     value: G,
@@ -81,8 +81,8 @@ function S(e) {
       className: o()(N, E.characterCount),
       children: [(0, r.jsxs)("div", {
         className: E.flairContainer,
-        children: [w && B ? (0, r.jsx)(s.ua7, {
-          text: m.NW.formatToPlainString(m.t.vcvHa2, {
+        children: [D && B ? (0, r.jsx)(s.ua7, {
+          text: g.NW.formatToPlainString(g.t.vcvHa2, {
             maxLength: R
           }),
           position: "top",
@@ -104,7 +104,7 @@ function S(e) {
           }))
         })]
       }), (0, r.jsx)(s.nn4, {
-        children: m.NW.format(m.t.qH8uFR, {
+        children: g.NW.format(g.t.qH8uFR, {
           count: M
         })
       }), L && !k ? (0, r.jsx)(p.Z, {

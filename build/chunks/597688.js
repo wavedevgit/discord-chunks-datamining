@@ -21,13 +21,13 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let g = new Map,
-  m = new Map,
+let m = new Map,
+  g = new Map,
   E = new Map,
   v = new Map,
   b = [],
-  y = g,
-  O = m,
+  y = m,
+  O = g,
   S = E,
   I = v,
   T = b,
@@ -36,8 +36,8 @@ let g = new Map,
   C = new Set,
   R = new Map,
   P = new Map,
-  D = {},
-  w = e => {
+  w = {},
+  D = e => {
     let {
       skuId: t
     } = e;
@@ -58,16 +58,16 @@ let g = new Map,
     O.set(t, n), (C = new Set(C)).delete(t), (R = new Map(R)).delete(t), (P = new Map(P)).delete(t)
   },
   M = e => {
-    A = !0, r = void 0, o = void 0, D = e.options
+    A = !0, r = void 0, o = void 0, w = e.options
   },
   k = e => {
     let {
       error: t
     } = e;
-    y = g, O = m, T = b, A = !1, C = new Set, r = t, o = Date.now()
+    y = m, O = g, T = b, A = !1, C = new Set, r = t, o = Date.now()
   },
   j = e => {
-    if (0 === e.categories.length) y = g, O = m;
+    if (0 === e.categories.length) y = m, O = g;
     else if (!(0, s.isEqual)([...y.values()], e.categories) && !e.noOp) {
       let t = new Map(e.categories.map(e => [e.skuId, e])),
         n = new Date;
@@ -100,7 +100,7 @@ let g = new Map,
     }
   },
   B = () => {
-    y = g, O = m, T = b, i = void 0, A = !1, C = new Set, r = void 0, o = void 0, D = {}
+    y = m, O = g, T = b, i = void 0, A = !1, C = new Set, r = void 0, o = void 0, w = {}
   },
   V = () => {
     if (!u.Z.hasLoadedExperiments) return;
@@ -133,7 +133,7 @@ class F extends(a = l.ZP.Store) {
     return i
   }
   get lastFetchOptions() {
-    return D
+    return w
   }
   get categories() {
     return y
@@ -172,7 +172,7 @@ let Z = new F(c.Z, {
   COLLECTIBLES_CATEGORIES_FETCH: M,
   COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: j,
   COLLECTIBLES_CATEGORIES_FETCH_FAILURE: k,
-  COLLECTIBLES_PRODUCT_FETCH: w,
+  COLLECTIBLES_PRODUCT_FETCH: D,
   COLLECTIBLES_PRODUCT_FETCH_SUCCESS: x,
   COLLECTIBLES_PRODUCT_FETCH_FAILURE: L,
   COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: U,

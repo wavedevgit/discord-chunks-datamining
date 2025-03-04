@@ -13,8 +13,8 @@ var r = n(161581),
   _ = n(959318),
   p = n(552028),
   h = n(646328),
-  g = n(339399),
-  m = n(144748),
+  m = n(339399),
+  g = n(144748),
   E = n(276321),
   v = n(537443).f,
   b = n(692994),
@@ -28,8 +28,8 @@ var r = n(161581),
   C = "prototype",
   R = "Wrong length",
   P = "Wrong index",
-  D = S.getterFor(N),
-  w = S.getterFor(A),
+  w = S.getterFor(N),
+  D = S.getterFor(A),
   L = S.set,
   x = r[N],
   M = x,
@@ -41,8 +41,8 @@ var r = n(161581),
   V = r.RangeError,
   F = i(b),
   Z = i([].reverse),
-  H = g.pack,
-  W = g.unpack,
+  H = m.pack,
+  W = m.unpack,
   Y = function(e) {
     return [255 & e]
   },
@@ -70,7 +70,7 @@ var r = n(161581),
     })
   },
   $ = function(e, t, n, r) {
-    var i = w(e),
+    var i = D(e),
       o = h(n),
       a = !!r;
     if (o + t > i.byteLength) throw V(P);
@@ -80,7 +80,7 @@ var r = n(161581),
     return a ? c : Z(c)
   },
   ee = function(e, t, n, r, i, o) {
-    var a = w(e),
+    var a = D(e),
       s = h(n),
       l = r(+i),
       c = !!o;
@@ -102,7 +102,7 @@ if (a) {
     for (var en, er = v(x), ei = 0; er.length > ei;)(en = er[ei++]) in M || l(M, en, x[en]);
     k.constructor = M
   } else et && T && l(x, "name", N);
-  E && m(U) !== G && E(U, G);
+  E && g(U) !== G && E(U, G);
   var eo = new j(new M(2)),
     ea = i(U.setInt8);
   eo.setInt8(0, 0x80000000), eo.setInt8(1, 0x80000001), (eo.getInt8(0) || !eo.getInt8(1)) && u(U, {
@@ -125,7 +125,7 @@ if (a) {
   }), o || (this.byteLength = t, this.detached = !1)
 })[C], U = (j = function(e, t, n) {
   f(this, U), f(e, k);
-  var r = D(e),
+  var r = w(e),
     i = r.byteLength,
     a = _(t);
   if (a < 0 || a > i) throw V("Wrong offset");
@@ -137,7 +137,7 @@ if (a) {
     byteOffset: a,
     bytes: r.bytes
   }), o || (this.buffer = e, this.byteLength = n, this.byteOffset = a)
-})[C], o && (J(M, "byteLength", D), J(j, "buffer", w), J(j, "byteLength", w), J(j, "byteOffset", w)), u(U, {
+})[C], o && (J(M, "byteLength", w), J(j, "buffer", D), J(j, "byteLength", D), J(j, "byteOffset", D)), u(U, {
   getInt8: function(e) {
     return $(this, 1, e)[0] << 24 >> 24
   },

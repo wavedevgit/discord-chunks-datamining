@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   D: () => s,
-  Z: () => g
+  Z: () => m
 }), n(653041);
 var r, i = n(442837),
   o = n(570140);
@@ -67,7 +67,7 @@ class h extends(r = i.ZP.Store) {
   }
 }
 a(h, "displayName", "DCFEventStore");
-let g = new h(o.Z, {
+let m = new h(o.Z, {
   LOGOUT: u,
   DCF_EVENT_LOGGED: f,
   DCF_HANDLE_DC_DISMISSED: _,

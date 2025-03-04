@@ -44,8 +44,8 @@ function p(e) {
     button: f,
     buttonAnalyticsObject: p,
     className: h,
-    buttonStyles: g,
-    onSubscribeModalClose: m,
+    buttonStyles: m,
+    onSubscribeModalClose: g,
     showShadow: E = !0,
     position: v = "floating",
     buttonSize: b = "md",
@@ -82,12 +82,12 @@ function p(e) {
     }), "string" == typeof f ? (0, r.jsx)(c.Z, {
       size: b,
       className: d.upsellButton,
-      shinyButtonClassName: null != g ? g : d.upsellButton,
+      shinyButtonClassName: null != m ? m : d.upsellButton,
       subscriptionTier: u.Si.TIER_2,
       buttonText: f,
       premiumModalAnalyticsLocation: p,
       tabIndex: t ? 0 : -1,
-      onSubscribeModalClose: m
+      onSubscribeModalClose: g
     }) : f]
   })
 }

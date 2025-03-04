@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => em
+  Z: () => eg
 });
 var r, i = n(392711),
   o = n.n(i),
@@ -15,8 +15,8 @@ var r, i = n(392711),
   _ = n(523746),
   p = n(592125),
   h = n(131951),
-  g = n(19780),
-  m = n(936349),
+  m = n(19780),
+  g = n(936349),
   E = n(944486),
   v = n(885110),
   b = n(959457),
@@ -39,8 +39,8 @@ function C(e, t, n) {
 let R = window.DiscordNative;
 S.Wb.dispatcher.getDispatchHandler = T.Z;
 let P = new c.Z("ConnectionStore"),
-  D = 100,
-  w = 0,
+  w = 100,
+  D = 0,
   L = null,
   x = !0,
   M = null;
@@ -59,12 +59,12 @@ function U() {
   }), !!S.Wb.isSessionEstablished() && (S.Wb.close(), S.Wb.connect())
 }
 async function G(e) {
-  w = Date.now(), L = e.sessionId, S.RR.handleConnectionOpen();
+  D = Date.now(), L = e.sessionId, S.RR.handleConnectionOpen();
   let t = {},
     n = E.Z.getVoiceChannelId();
   if (null != n) {
     var r, i, o, a, s, c, u, d;
-    if ((null === (s = window) || void 0 === s ? void 0 : null === (a = s.performance) || void 0 === a ? void 0 : null === (o = a.getEntriesByType) || void 0 === o ? void 0 : null === (i = o.call(a, "navigation")) || void 0 === i ? void 0 : null === (r = i[0]) || void 0 === r ? void 0 : r.type) !== "reload" && (null === (c = await (null == R ? void 0 : null === (d = R.processUtils) || void 0 === d ? void 0 : null === (u = d.getLastCrash) || void 0 === u ? void 0 : u.call(d))) || void 0 === c ? void 0 : c.rendererCrashReason) == null && x) g.Z.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
+    if ((null === (s = window) || void 0 === s ? void 0 : null === (a = s.performance) || void 0 === a ? void 0 : null === (o = a.getEntriesByType) || void 0 === o ? void 0 : null === (i = o.call(a, "navigation")) || void 0 === i ? void 0 : null === (r = i[0]) || void 0 === r ? void 0 : r.type) !== "reload" && (null === (c = await (null == R ? void 0 : null === (d = R.processUtils) || void 0 === d ? void 0 : null === (u = d.getLastCrash) || void 0 === u ? void 0 : u.call(d))) || void 0 === c ? void 0 : c.rendererCrashReason) == null && x) m.Z.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
     else {
       let e = p.Z.getChannel(n);
       null != e && (t = {
@@ -77,7 +77,7 @@ async function G(e) {
 }
 
 function B() {
-  P.verbose("connection closed dispatched"), w = Date.now()
+  P.verbose("connection closed dispatched"), D = Date.now()
 }
 
 function V(e) {
@@ -166,7 +166,7 @@ function J() {
 }
 
 function $(e) {
-  return S.Wb.isSessionEstablished() && ("userIds" in e ? o()(e.userIds).chunk(D).forEach(t => {
+  return S.Wb.isSessionEstablished() && ("userIds" in e ? o()(e.userIds).chunk(w).forEach(t => {
     S.Wb.requestGuildMembers(e.guildIds, {
       userIds: t,
       presences: !!e.presences
@@ -243,7 +243,7 @@ function el(e) {
   if (S.Wb.isSessionEstablished()) {
     var i, o;
     let e = null != n ? null === (i = p.Z.getChannel(r)) || void 0 === i ? void 0 : i.rtcRegion : null === (o = _.Z.getCall(r)) || void 0 === o ? void 0 : o.region;
-    S.Wb.streamCreate(t, n, r, null != e ? e : m.Z.getPreferredRegion())
+    S.Wb.streamCreate(t, n, r, null != e ? e : g.Z.getPreferredRegion())
   }
   return !1
 }
@@ -294,7 +294,7 @@ function eh(e) {
   } = e;
   S.Wb.requestSoundboardSounds(t)
 }
-class eg extends(r = a.ZP.Store) {
+class em extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(f.default, E.Z, p.Z, _.Z, d.Z), this.syncWith([h.Z], X), this.syncWith([v.Z], J)
   }
@@ -311,11 +311,11 @@ class eg extends(r = a.ZP.Store) {
     return S.Wb.isSessionEstablished() || __OVERLAY__
   }
   lastTimeConnectedChanged() {
-    return w
+    return D
   }
 }
-C(eg, "displayName", "GatewayConnectionStore");
-let em = new eg(s.Z, {
+C(em, "displayName", "GatewayConnectionStore");
+let eg = new em(s.Z, {
   START_SESSION: k,
   LOGIN_SUCCESS: U,
   LOGOUT: j,

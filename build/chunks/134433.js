@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(47120);
 var r = n(200651);
 n(192379);
@@ -18,14 +18,14 @@ let _ = l.Z.unsafe_rawColors.PRIMARY_300,
   p = l.Z.unsafe_rawColors.WHITE_500,
   h = l.Z.unsafe_rawColors.PRIMARY_630;
 
-function g(e) {
+function m(e) {
   let {
     color: t,
     size: n,
     forcedIconColor: i,
     className: l,
-    iconClassName: g
-  } = e, [m, E] = (0, s.Wu)([u.Z], () => [u.Z.desaturateUserColors, u.Z.saturation]), v = (0, c.dQu)(_).hex(), b = null != t ? t : v, y = (0, a.ho)((0, a._i)(b), !1, m ? E : null), O = (0, c.dQu)(p).hex(), S = (0, c.dQu)(h).hex(), I = null != i ? i : (0, d.B)({
+    iconClassName: m
+  } = e, [g, E] = (0, s.Wu)([u.Z], () => [u.Z.desaturateUserColors, u.Z.saturation]), v = (0, c.dQu)(_).hex(), b = null != t ? t : v, y = (0, a.ho)((0, a._i)(b), !1, g ? E : null), O = (0, c.dQu)(p).hex(), S = (0, c.dQu)(h).hex(), I = null != i ? i : (0, d.B)({
     backgroundColor: b,
     colors: [O, S]
   }), T = n / 8;
@@ -41,7 +41,7 @@ function g(e) {
     children: (0, r.jsx)(c.xPt, {
       size: "custom",
       color: I,
-      className: o()(f.linkIcon, g),
+      className: o()(f.linkIcon, m),
       width: n - 2 * T,
       height: n - 2 * T,
       style: {

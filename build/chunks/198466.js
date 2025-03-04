@@ -23,7 +23,7 @@ function p(e) {
     setConfettiCount: c,
     setShouldFireConfetti: f,
     tooltipProps: p
-  } = e, [h, g] = i.useState(0), m = i.useRef(-1), E = i.useRef(!0), v = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), {
+  } = e, [h, m] = i.useState(0), g = i.useRef(-1), E = i.useRef(!0), v = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), {
     scaleFactor: b
   } = (0, s.q_F)({
     from: {
@@ -47,20 +47,20 @@ function p(e) {
     children: (0, r.jsx)(s.P3F, {
       className: u.confettiTrigger,
       onMouseDown: () => {
-        g(1), f(!0), c(e => Math.min(e + 2, _)), window.clearTimeout(m.current), m.current = window.setTimeout(() => {
+        m(1), f(!0), c(e => Math.min(e + 2, _)), window.clearTimeout(g.current), g.current = window.setTimeout(() => {
           E.current && c(0)
         }, d)
       },
       onMouseUp: () => {
-        g(0), f(!1)
+        m(0), f(!1)
       },
       onMouseEnter: () => {
         var e;
-        g(2), null == p || null === (e = p.onMouseEnter) || void 0 === e || e.call(p)
+        m(2), null == p || null === (e = p.onMouseEnter) || void 0 === e || e.call(p)
       },
       onMouseLeave: () => {
         var e;
-        g(0), null == p || null === (e = p.onMouseLeave) || void 0 === e || e.call(p)
+        m(0), null == p || null === (e = p.onMouseLeave) || void 0 === e || e.call(p)
       },
       innerRef: n,
       children: t

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  D: () => g
+  D: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -68,7 +68,7 @@ function h(e, t) {
   return i
 }
 
-function g(e) {
+function m(e) {
   var {
     children: t,
     placeholder: n,
@@ -76,20 +76,20 @@ function g(e) {
     onChange: u,
     onClose: f,
     showScrollbar: h,
-    className: g,
-    multiSelect: m
+    className: m,
+    multiSelect: g
   } = e, E = p(e, ["children", "placeholder", "value", "onChange", "onClose", "showScrollbar", "className", "multiSelect"]);
   let v = i.useCallback(e => {
-    u(e), m || null == f || f()
-  }, [u, f, m]);
+    u(e), g || null == f || f()
+  }, [u, f, g]);
   return (0, r.jsx)(s.V, {
-    className: a()(c.container, g, {
+    className: a()(c.container, m, {
       [c.scroller]: h
     }),
     children: (0, r.jsx)(l.hQ, _(d({}, E), {
       showScrollbar: h,
       value: o,
-      multiSelect: m,
+      multiSelect: g,
       onChange: v,
       placeholder: n,
       children: t,

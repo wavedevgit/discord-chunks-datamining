@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => w
+  Z: () => D
 });
 var r = n(200651),
   i = n(192379),
@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(592125),
   p = n(594174),
   h = n(834348),
-  g = n(74538),
-  m = n(618158),
+  m = n(74538),
+  g = n(618158),
   E = n(871499),
   v = n(981631),
   b = n(354459),
@@ -93,7 +93,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     className: t
   } = e;
@@ -108,7 +108,7 @@ function D(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   var {
     hideBadges: t = !1,
     stream: n,
@@ -116,25 +116,25 @@ function w(e) {
   } = e, h = C(e, ["hideBadges", "stream", "location"]);
   let {
     parentAnalyticsLocation: S
-  } = (0, s.ZP)(), I = (0, o.e7)([p.default], () => g.ZP.isPremium(p.default.getCurrentUser(), y.p9.TIER_1)), N = (0, o.e7)([_.Z], () => _.Z.getChannel(null == n ? void 0 : n.channelId)), R = i.useMemo(() => null != n ? [n] : [], [n]), w = i.useCallback(() => {
+  } = (0, s.ZP)(), I = (0, o.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), y.p9.TIER_1)), N = (0, o.e7)([_.Z], () => _.Z.getChannel(null == n ? void 0 : n.channelId)), R = i.useMemo(() => null != n ? [n] : [], [n]), D = i.useCallback(() => {
     null != N && (0, f.Z)(N.getGuildId(), N.id, v.jXE.STREAM_SETTINGS)
   }, [N]);
   if (null == n || null == N) return null;
   let L = P;
-  return t || I || (L = D), (0, r.jsx)(a.yRy, {
+  return t || I || (L = w), (0, r.jsx)(a.yRy, {
     position: "top",
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(m.Z, {
+      return (0, r.jsx)(g.Z, {
         children: (0, r.jsx)(d.Z, {
           channel: N,
           currentUser: p.default.getCurrentUser(),
           activeStreams: R,
           onClose: t,
           showReportOption: !0,
-          handleGoLive: w,
+          handleGoLive: D,
           onInteraction: (0, c.u)("ManageStreamsButton", null != S ? S : u, {
             entrypoint: b.A5.OTHER_BUTTON
           })

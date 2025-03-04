@@ -36,9 +36,9 @@ function p(e) {
   return e
 }
 let h = 16,
-  g = .05;
+  m = .05;
 
-function m(e) {
+function g(e) {
   var t, n;
   let {
     editorHeight: r,
@@ -46,17 +46,17 @@ function m(e) {
     channelId: d
   } = e, _ = i.useRef(c), p = (0, a.Z)({
     editorHeight: r
-  }), m = (0, u.Z)(), E = (0, o.e7)([l.ZP, s.default], () => l.ZP.isComboing(s.default.getId(), d)), v = null !== (t = null == p ? void 0 : p.left) && void 0 !== t ? t : 0, b = (null !== (n = null == p ? void 0 : p.top) && void 0 !== n ? n : 0) - h, y = 0 === c.length, O = i.useMemo(() => Math.random() < g, [y]);
+  }), g = (0, u.Z)(), E = (0, o.e7)([l.ZP, s.default], () => l.ZP.isComboing(s.default.getId(), d)), v = null !== (t = null == p ? void 0 : p.left) && void 0 !== t ? t : 0, b = (null !== (n = null == p ? void 0 : p.top) && void 0 !== n ? n : 0) - h, y = 0 === c.length, O = i.useMemo(() => Math.random() < m, [y]);
   return i.useEffect(() => {
-    0 !== c.length && c !== _.current && E && (m.fire(v, b, O ? {
+    0 !== c.length && c !== _.current && E && (g.fire(v, b, O ? {
       sprite: f.vv
     } : null), _.current = c)
-  }, [c, E, v, b, O, m]), null
+  }, [c, E, v, b, O, g]), null
 }
 
 function E(e) {
   return (0, r.jsx)(c.Z, {
     confettiLocation: d.Hn.CHAT_INPUT,
-    children: (0, r.jsx)(m, p({}, e))
+    children: (0, r.jsx)(g, p({}, e))
   })
 }

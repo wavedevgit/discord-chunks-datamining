@@ -23,7 +23,7 @@ let f = "MaskedLinkStore",
   p = new Set,
   h = null === (r = window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT) || void 0 === r ? void 0 : r.replace("//", "");
 
-function g(e) {
+function m(e) {
   let t = (0, c.F)(e);
   switch (t) {
     case window.GLOBAL_ENV.CDN_HOST:
@@ -38,7 +38,7 @@ function g(e) {
   }
 }
 
-function m(e) {
+function g(e) {
   let t = (0, c.E)(e);
   return p.has(t)
 }
@@ -47,7 +47,7 @@ function E(e) {
   let {
     url: t
   } = e;
-  if (g(t)) return !1;
+  if (m(t)) return !1;
   _.add((0, c.F)(t)), a.K.set(f, {
     trustedDomains: _,
     trustedProtocols: p
@@ -58,7 +58,7 @@ function v(e) {
   let {
     url: t
   } = e;
-  if (m(t)) return !1;
+  if (g(t)) return !1;
   p.add((0, c.E)(t)), a.K.set(f, {
     trustedDomains: _,
     trustedProtocols: p
@@ -78,10 +78,10 @@ class b extends(i = o.ZP.Store) {
     }
   }
   isTrustedDomain(e) {
-    return g(e)
+    return m(e)
   }
   isTrustedProtocol(e) {
-    return m(e)
+    return g(e)
   }
 }
 d(b, "displayName", "MaskedLinkStore");

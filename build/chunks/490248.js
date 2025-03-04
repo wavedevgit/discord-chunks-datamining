@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  L7: () => g,
-  r4: () => m
+  L7: () => m,
+  r4: () => g
 }), n(266796);
 var r = n(200651),
   i = n(120356),
@@ -42,7 +42,7 @@ let h = e => {
       })]
     })
   },
-  g = e => {
+  m = e => {
     let {
       profileBadge: t,
       tenureBadge: n
@@ -60,7 +60,7 @@ let h = e => {
       imageSrc: (0, c.J)(n.id)
     })
   },
-  m = e => {
+  g = e => {
     let {
       profileBadge: t,
       viewerOwnsBadge: n = !1

@@ -43,16 +43,16 @@ function p(e) {
     animate: i = !0,
     hideTooltip: f = !1,
     tooltipDelay: p = u.X
-  } = e, h = c.Yk.useSetting(), g = null != t.id ? ":".concat(t.name, ":") : l.ZP.translateSurrogatesToInlineEmoji(t.name), m = {
+  } = e, h = c.Yk.useSetting(), m = null != t.id ? ":".concat(t.name, ":") : l.ZP.translateSurrogatesToInlineEmoji(t.name), g = {
     className: o()(d.emoji, n),
     emojiId: t.id,
     emojiName: t.name,
     autoplay: !0,
     animated: !!(t.animated && h && i)
   };
-  return f ? (0, r.jsx)(s.Z, _({}, m)) : (0, r.jsx)(a.ua7, {
-    text: g,
+  return f ? (0, r.jsx)(s.Z, _({}, g)) : (0, r.jsx)(a.ua7, {
+    text: m,
     delay: p,
-    children: e => (0, r.jsx)(s.Z, _({}, e, m))
+    children: e => (0, r.jsx)(s.Z, _({}, e, g))
   })
 }

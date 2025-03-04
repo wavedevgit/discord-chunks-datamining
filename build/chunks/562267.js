@@ -19,11 +19,11 @@ function _(e) {
   let {
     channelId: n,
     chatInputType: _
-  } = e, [p, h] = i.useState(null), g = (0, o.e7)([l.Z], () => l.Z.getStickerPreview(n, _.drafts.type));
-  return (null === (t = _.stickers) || void 0 === t ? void 0 : t.allowSending) && null != g && 0 !== g.length ? (0, r.jsxs)(r.Fragment, {
+  } = e, [p, h] = i.useState(null), m = (0, o.e7)([l.Z], () => l.Z.getStickerPreview(n, _.drafts.type));
+  return (null === (t = _.stickers) || void 0 === t ? void 0 : t.allowSending) && null != m && 0 !== m.length ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: f.stickerPreviews,
-      children: g.map(e => (0, r.jsxs)("div", {
+      children: m.map(e => (0, r.jsxs)("div", {
         className: f.stickerPreviewContainer,
         children: [(0, r.jsx)(a.P3F, {
           onFocus: () => h(e.id),

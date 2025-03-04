@@ -87,15 +87,15 @@ let h = function(e) {
     confettiVelocityMultiplier: s,
     sprites: l,
     colors: c
-  } = e, [u, h] = i.useState(null), g = (0, o.uR)(n, u), [m, E] = i.useState(!1);
+  } = e, [u, h] = i.useState(null), m = (0, o.uR)(n, u), [g, E] = i.useState(!1);
   return i.useEffect(() => {
     let e = Array(f).fill(0);
-    return null != t && g.isReady && !m && (e = e.map((n, r) => setTimeout(() => {
-      r === e.length - 1 && E(!0), g.createMultipleConfetti(p(t.getBoundingClientRect(), s), d)
+    return null != t && m.isReady && !g && (e = e.map((n, r) => setTimeout(() => {
+      r === e.length - 1 && E(!0), m.createMultipleConfetti(p(t.getBoundingClientRect(), s), d)
     }, r * _))), () => {
       for (let t of e) clearTimeout(t)
     }
-  }, [g, t, m, s]), (0, r.jsx)(o.Ji, {
+  }, [m, t, g, s]), (0, r.jsx)(o.Ji, {
     ref: h,
     sprites: null != l ? l : a.CA,
     colors: null != c ? c : a.Br,

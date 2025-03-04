@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -38,13 +38,13 @@ function h(e) {
   return e
 }
 
-function g(e) {
+function m(e) {
   let {
     user: t,
     guildId: n,
     fullWidth: p,
-    appContext: g,
-    onClose: m
+    appContext: m,
+    onClose: g
   } = e, E = (0, i.e7)([l.default], () => l.default.getId() === t.id), v = (0, i.e7)([c.Z], () => null != n ? c.Z.getGuild(n) : null), b = (0, s.Z)({
     guild: v
   }), y = (0, s.Z)({}), {
@@ -57,7 +57,7 @@ function g(e) {
     autoFocus: !0,
     fullWidth: p,
     onClick: () => {
-      null == m || m(), y(), (0, a.i)(g)
+      null == g || g(), y(), (0, a.i)(m)
     }
   }) : (0, r.jsx)(o.yRy, {
     renderPopout: e => {
@@ -69,7 +69,7 @@ function g(e) {
         onSelect: void 0,
         navId: "edit-profile-popout",
         onClose: () => {
-          t(), null == m || m()
+          t(), null == g || g()
         },
         "aria-label": f.NW.string(f.t.AXIHpa),
         children: [(0, r.jsx)(o.sNh, {
@@ -79,7 +79,7 @@ function g(e) {
           action: () => {
             O({
               action: "EDIT_GUILD_PROFILE"
-            }), b(), (0, a.i)(g)
+            }), b(), (0, a.i)(m)
           }
         }), (0, r.jsx)(o.sNh, {
           id: "edit-main-profile",
@@ -88,7 +88,7 @@ function g(e) {
           action: () => {
             O({
               action: "EDIT_PROFILE"
-            }), y(), (0, a.i)(g)
+            }), y(), (0, a.i)(m)
           }
         })]
       })

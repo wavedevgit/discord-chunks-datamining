@@ -17,9 +17,9 @@ var r = n(688619),
   p = n(777910),
   h = n(897710);
 let {
-  Themes: g
+  Themes: m
 } = n(15202).V, {
-  SemanticColors: m,
+  SemanticColors: g,
   RawColors: E
 } = u.V, {
   SemanticColorExperiments: v
@@ -32,9 +32,9 @@ let {
 } = f.V, {
   Layout: S
 } = d.V, I = l()(E, e => i()(e)), T = {
-  themes: g,
+  themes: m,
   modules: O,
-  colors: l()(m, (e, t) => {
+  colors: l()(g, (e, t) => {
     let n = t;
     return {
       css: R(n),

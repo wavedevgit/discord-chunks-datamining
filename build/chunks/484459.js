@@ -16,8 +16,8 @@ let f = 6e4;
 async function _(e, t) {
   var n, _, p, h;
   let {
-    type: g,
-    withMutualGuilds: m = !1,
+    type: m,
+    withMutualGuilds: g = !1,
     withMutualFriendsCount: E = !1,
     withMutualFriends: v = !1,
     friendToken: b,
@@ -34,17 +34,17 @@ async function _(e, t) {
   if (((null == A ? void 0 : null === (n = A.fetchError) || void 0 === n ? void 0 : n.status) === 404 || (null == A ? void 0 : null === (_ = A.fetchError) || void 0 === _ ? void 0 : _.status) === 429) && !C) return;
   let R = u.Z.getGuildMemberProfile(e, S),
     P = u.Z.getMutualGuilds(e),
-    D = u.Z.getMutualFriends(e),
-    w = u.Z.getMutualFriendsCount(e);
-  m = m || null != S;
-  let L = null == D && v,
-    x = null == w && E,
+    w = u.Z.getMutualFriends(e),
+    D = u.Z.getMutualFriendsCount(e);
+  g = g || null != S;
+  let L = null == w && v,
+    x = null == D && E,
     M = null != S && null == R;
-  if (!(null == P && m) && !L && !x && !M && !C) return;
+  if (!(null == P && g) && !L && !x && !M && !C) return;
   (0, s.z)(), null != t && (0, o.vM)(t);
   let k = {
-      type: g,
-      withMutualGuilds: m,
+      type: m,
+      withMutualGuilds: g,
       withMutualFriends: v,
       withMutualFriendsCount: E,
       friendToken: b,

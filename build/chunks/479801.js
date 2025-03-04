@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  e: () => g
+  e: () => m
 }), n(47120);
 var r = n(192379),
   i = n(442837),
@@ -52,7 +52,7 @@ function _(e, t) {
 let p = 6e5,
   h = 6e5;
 
-function g(e, t) {
+function m(e, t) {
   let n = "useMaybeFetchCollectiblesCategories";
   (0, o.j)({
     location: n + " auto on",
@@ -63,24 +63,24 @@ function g(e, t) {
   });
   let u = (0, i.e7)([a.Z], () => a.Z.hasLoadedExperiments),
     f = null == e ? void 0 : e.includeBundles,
-    g = (0, c.hv)("useMaybeFetchCollectiblesCategoriesShared"),
-    [m, E, v, b, y, O] = (0, i.Wu)([l.Z], () => {
+    m = (0, c.hv)("useMaybeFetchCollectiblesCategoriesShared"),
+    [g, E, v, b, y, O] = (0, i.Wu)([l.Z], () => {
       var e, t;
       return [l.Z.isFetchingCategories, l.Z.lastFetchOptions, l.Z.error, null !== (e = l.Z.lastErrorTimestamp) && void 0 !== e ? e : 0, null !== (t = l.Z.lastSuccessfulFetch) && void 0 !== t ? t : 0, l.Z.categories]
     });
   return (0, r.useEffect)(() => {
-    if (!u || m) return;
+    if (!u || g) return;
     let n = Date.now() - b < h;
     if (v && n) return;
     let r = _(d({}, e), {
         includeBundles: f,
-        variantsReturnStyle: g
+        variantsReturnStyle: m
       }),
       i = !(0, s.oc)(E, r),
       o = Date.now() - y < p;
     (i || !o) && (0, s.F$)(r, t)
-  }, [u, m, E, y, e, v, f, b, g, t]), {
-    isFetching: m,
+  }, [u, g, E, y, e, v, f, b, m, t]), {
+    isFetching: g,
     categories: O,
     fetchCategoriesError: v,
     refreshCategories: (0, r.useCallback)(() => {

@@ -4,9 +4,9 @@ n.d(t, {
   J9: () => l.J,
   Jt: () => x,
   K0: () => P,
-  Pd: () => m,
+  Pd: () => g,
   f$: () => s.f$,
-  lg: () => w,
+  lg: () => D,
   sX: () => s.Hx,
   tn: () => R,
   yZ: () => c.H
@@ -61,8 +61,8 @@ function p(e, t) {
   }), e
 }
 let h = new a.Yd("HTTPUtils"),
-  g = new Set([502, 504, 507, 598, 599, 522, 523, 524]);
-class m extends Error {
+  m = new Set([502, 504, 507, 598, 599, 522, 523, 524]);
+class g extends Error {
   constructor({
     method: e,
     url: t,
@@ -104,9 +104,9 @@ function E(e, t, n, r, a) {
   let b = () => {
     t.backoff = null != t.backoff ? t.backoff : new o.Z, t.retried = (null != t.retried ? t.retried : 0) + 1, t.backoff.fail(() => L(t.url).then(() => E(e, t, n, r, a)))
   };
-  null == D || null === (d = D.prepareRequest) || void 0 === d || d.call(D, v), v.ok(e => null != e.status), v.then(i => {
+  null == w || null === (d = w.prepareRequest) || void 0 === d || d.call(w, v), v.ok(e => null != e.status), v.then(i => {
     var o, c, u;
-    if (null != t.retries && t.retries-- > 0 && g.has(i.status)) return b();
+    if (null != t.retries && t.retries-- > 0 && m.has(i.status)) return b();
     let d = {
       ok: i.ok,
       headers: i.headers,
@@ -130,7 +130,7 @@ function E(e, t, n, r, a) {
           err: e
         }))
       };
-    if ((null == t ? void 0 : null === (o = t.interceptResponse) || void 0 === o ? void 0 : o.call(t, i, h, v)) !== !0 && (null == D ? void 0 : null === (c = D.interceptResponse) || void 0 === c ? void 0 : c.call(D, i, h, v)) !== !0) {
+    if ((null == t ? void 0 : null === (o = t.interceptResponse) || void 0 === o ? void 0 : o.call(t, i, h, v)) !== !0 && (null == w ? void 0 : null === (c = w.interceptResponse) || void 0 === c ? void 0 : c.call(w, i, h, v)) !== !0) {
       if (i.ok) n(d);
       else {
         if (t.oldFormErrors && (null == d ? void 0 : null === (u = d.body) || void 0 === u ? void 0 : u.code) === s.f$) {
@@ -139,7 +139,7 @@ function E(e, t, n, r, a) {
           } = d.body;
           null != e && (d.body = (0, l.J)(e))
         }
-        t.rejectWithError ? r(new m({
+        t.rejectWithError ? r(new g({
           method: e,
           url: t.url,
           ok: d.ok,
@@ -251,10 +251,10 @@ function P() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
   return location.protocol + window.GLOBAL_ENV.API_ENDPOINT + (e ? "/v".concat(window.GLOBAL_ENV.API_VERSION) : "")
 }
-let D = null;
+let w = null;
 
-function w(e) {
-  D = e
+function D(e) {
+  w = e
 }
 let L = () => Promise.resolve();
 

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   J: () => h,
-  q: () => g
+  q: () => m
 }), n(47120);
 var r = n(192379),
   i = n(442837),
@@ -26,7 +26,7 @@ let h = () => {
       if (null != e)(0, u.kj)(), n && (0, a.hi)(p.K.ON)
     }, [e, n])
   },
-  g = () => {
+  m = () => {
     let {
       previewPaneVariant: e
     } = (0, i.cj)([d.Z], () => ({

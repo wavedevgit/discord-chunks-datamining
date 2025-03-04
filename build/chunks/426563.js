@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => D,
+  Z: () => w,
   j: () => P
 });
 var r = n(526167),
@@ -17,8 +17,8 @@ var r = n(526167),
   _ = n(534109),
   p = n(859500),
   h = n(484542),
-  g = n(881500),
-  m = n(910826),
+  m = n(881500),
+  g = n(910826),
   E = n(307244),
   v = n(669730),
   b = n(666828),
@@ -36,10 +36,10 @@ function P() {
   let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
   return e ? R : i
 }
-let D = {
+let w = {
   DEFAULT_AVATARS: [o, a, s, l, c, u],
   DEFAULT_PROVISIONAL_AVATARS: [O, S, I, T, N, A],
-  DEFAULT_GROUP_DM_AVATARS: [d, f, _, p, h, g, m, E],
+  DEFAULT_GROUP_DM_AVATARS: [d, f, _, p, h, m, g, E],
   BOT_AVATARS: {
     clyde: C,
     nitro: b,

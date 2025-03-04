@@ -57,14 +57,14 @@ function h(e) {
   d.add(t)
 }
 
-function g(e) {
+function m(e) {
   let {
     guildId: t
   } = e;
   d.delete(t)
 }
 
-function m(e) {
+function g(e) {
   let {
     guildId: t,
     enabled: n
@@ -153,9 +153,9 @@ a(y, "displayName", "GuildOnboardingHomeSettingsStore");
 let O = new y(o.Z, {
   GUILD_HOME_SETTINGS_FETCH_START: h,
   GUILD_HOME_SETTINGS_FETCH_SUCCESS: p,
-  GUILD_HOME_SETTINGS_FETCH_FAIL: g,
+  GUILD_HOME_SETTINGS_FETCH_FAIL: m,
   GUILD_HOME_SETTINGS_UPDATE_SUCCESS: p,
-  GUILD_HOME_SETTINGS_TOGGLE_ENABLED: m,
+  GUILD_HOME_SETTINGS_TOGGLE_ENABLED: g,
   GUILD_RESOURCE_CHANNEL_UPDATE_SUCCESS: v,
   GUILD_NEW_MEMBER_ACTION_UPDATE_SUCCESS: b,
   GUILD_DELETE: E

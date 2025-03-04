@@ -23,9 +23,9 @@ let d = 12e4,
   _ = 5,
   p = {},
   h = {},
-  g = new Set;
+  m = new Set;
 
-function m() {
+function g() {
   p = {}, h = {}
 }
 
@@ -37,7 +37,7 @@ function E(e) {
   p[t] = {
     url: n,
     expires: Date.now() + d
-  }, h[t] = 0, g.delete(t)
+  }, h[t] = 0, m.delete(t)
 }
 
 function v(e) {
@@ -48,7 +48,7 @@ function v(e) {
   p[t] = {
     url: null,
     expires: Date.now() + (null != n ? n : f * h[t])
-  }, g.delete(t)
+  }, m.delete(t)
 }
 
 function b(e) {
@@ -56,7 +56,7 @@ function b(e) {
   let {
     streamKey: n
   } = e;
-  h[n] = (null !== (t = h[n]) && void 0 !== t ? t : 0) + 1, g.add(n)
+  h[n] = (null !== (t = h[n]) && void 0 !== t ? t : 0) + 1, m.add(n)
 }
 
 function y(e) {
@@ -101,7 +101,7 @@ class O extends(r = a.ZP.Store) {
       o = p[i],
       a = null !== (r = h[i]) && void 0 !== r ? r : 0,
       s = null != o && Date.now() > o.expires;
-    return (null == o && a < _ || s) && !g.has(i)
+    return (null == o && a < _ || s) && !m.has(i)
   }
   getPreviewURLForStreamKey(e) {
     let {
@@ -118,13 +118,13 @@ class O extends(r = a.ZP.Store) {
       channelId: t,
       ownerId: n
     });
-    return g.has(r)
+    return m.has(r)
   }
 }
 u(O, "displayName", "ApplicationStreamPreviewStore");
 let S = new O(s.Z, {
-  CONNECTION_OPEN: m,
-  LOGOUT: m,
+  CONNECTION_OPEN: g,
+  LOGOUT: g,
   STREAM_PREVIEW_FETCH_START: b,
   STREAM_PREVIEW_FETCH_SUCCESS: E,
   STREAM_PREVIEW_FETCH_FAIL: v,

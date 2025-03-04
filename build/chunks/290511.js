@@ -8,13 +8,13 @@ n.d(t, {
   Oq: () => A,
   RF: () => y,
   Un: () => b,
-  X: () => g,
+  X: () => m,
   YW: () => d,
   ae: () => O,
   b3: () => p,
   cf: () => N,
   dr: () => I,
-  fY: () => m,
+  fY: () => g,
   iU: () => l,
   l7: () => E,
   md: () => h,
@@ -50,8 +50,8 @@ let l = 100,
   _ = 50,
   p = 4,
   h = 7,
-  g = 5,
-  m = 13;
+  m = 5,
+  g = 13;
 var E = function(e) {
     return e[e.CUSTOMIZE = 0] = "CUSTOMIZE", e[e.BROWSE = 1] = "BROWSE", e
   }({}),

@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(243778),
   p = n(255963),
   h = n(140465),
-  g = n(125900),
-  m = n(546424),
+  m = n(125900),
+  g = n(546424),
   E = n(626135),
   v = n(153066),
   b = n(981631),
@@ -67,8 +67,8 @@ function C(e, t) {
 }
 let R = 20,
   P = 24,
-  D = 18,
-  w = 77,
+  w = 18,
+  D = 77,
   L = {
     tension: 800,
     friction: 24
@@ -95,7 +95,7 @@ let R = 20,
 
 function M(e, t) {
   return {
-    "--custom-emoji-sprite-size": "".concat(t ? D : P, "px"),
+    "--custom-emoji-sprite-size": "".concat(t ? w : P, "px"),
     "--custom-emoji-sprite-row": Math.floor(e / R),
     "--custom-emoji-sprite-col": e % R
   }
@@ -109,20 +109,20 @@ let k = function(e) {
     onClick: A,
     "aria-controls": R,
     focusProps: P,
-    shouldShowSoundmojiCoachmark: D = !1
+    shouldShowSoundmojiCoachmark: w = !1
   } = e, [k, j] = i.useState(!1), [U, G] = i.useState(50), B = k || T, V = (0, v.l)(I, "emojiButton", B ? "Hovered" : "Normal"), F = M(U, (0, f.Q3)("EmojiButton")), Z = i.useCallback(() => {
     if (B) return;
-    let e = Math.floor(Math.random() * w);
+    let e = Math.floor(Math.random() * D);
     j(!0), G(e), (0, p.x)(O.qR.EmojiButtonMouseEntered)
   }, [B, j, G]), H = i.useCallback(() => {
     j(!1)
   }, [j]), W = i.useCallback(() => (0, p.x)(O.qR.EmojiButtonFocused), []), Y = (0, h.B4)({
     location: "EmojiButton"
-  }), [K, z] = (0, _.US)(Y ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], void 0, !0), q = K === c.z.TRIAL_NUX_EMOJI_BUTTON, Q = !T && q, X = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [J, $] = i.useState(!1), [ee, et] = i.useState(!1), en = (0, g.V2)({
+  }), [K, z] = (0, _.US)(Y ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], void 0, !0), q = K === c.z.TRIAL_NUX_EMOJI_BUTTON, Q = !T && q, X = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [J, $] = i.useState(!1), [ee, et] = i.useState(!1), en = (0, m.V2)({
     location: "EmojiButton"
-  }), [er, ei] = (0, _.US)(D && en ? [c.z.SOUNDMOJI_COACHMARK] : []), eo = !J && er === c.z.SOUNDMOJI_COACHMARK && !ee;
+  }), [er, ei] = (0, _.US)(w && en ? [c.z.SOUNDMOJI_COACHMARK] : []), eo = !J && er === c.z.SOUNDMOJI_COACHMARK && !ee;
   return (0, r.jsx)(u.yRy, {
-    renderPopout: () => (0, r.jsx)(m.Z, {
+    renderPopout: () => (0, r.jsx)(g.Z, {
       markAsDismissed: ei
     }),
     position: "top",

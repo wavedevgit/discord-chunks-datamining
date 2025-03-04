@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  I: () => g
+  I: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -68,13 +68,13 @@ function h(e, t) {
   return i
 }
 
-function g(e, t, n) {
+function m(e, t, n) {
   let o = (0, c.G6)(e);
   return i.forwardRef(function(u, f) {
     var {
       children: h,
-      className: g,
-      dir: m = "ltr",
+      className: m,
+      dir: g = "ltr",
       orientation: E = "vertical",
       fade: v = !1,
       customTheme: b = !1,
@@ -94,21 +94,21 @@ function g(e, t, n) {
     let R = (0, c.tT)({
       paddingFix: y,
       orientation: E,
-      dir: m,
-      className: g,
+      dir: g,
+      className: m,
       scrollerRef: N,
       specs: o
     });
     return I ? (0, r.jsx)(l.K, _(d({
       gap: S,
       ref: N,
-      className: a()(g, {
+      className: a()(m, {
         [e]: !0,
         [t]: v,
         [n]: b
       }),
       style: (0, c.uT)(O, E),
-      dir: m
+      dir: g
     }, T), {
       children: (0, r.jsxs)(s.Jc, {
         containerRef: N,
@@ -116,13 +116,13 @@ function g(e, t, n) {
       })
     })) : (0, r.jsx)("div", _(d({
       ref: N,
-      className: a()(g, {
+      className: a()(m, {
         [e]: !0,
         [t]: v,
         [n]: b
       }),
       style: (0, c.uT)(O, E),
-      dir: m
+      dir: g
     }, T), {
       children: (0, r.jsxs)(s.Jc, {
         containerRef: N,

@@ -53,11 +53,11 @@ let _ = {
   p = _,
   h = {};
 
-function g() {
+function m() {
   p = _, h = {}
 }
 
-function m(e) {
+function g(e) {
   var t;
   let {
     guildId: n,
@@ -128,8 +128,8 @@ c(y, "displayName", "NewlyAddedEmojiStore"), c(y, "persistKey", "NewlyAddedEmoji
   }
 }]);
 let O = new y(s.Z, {
-  LOGOUT: g,
-  NEWLY_ADDED_EMOJI_SEEN_ACKNOWLEDGED: m,
+  LOGOUT: m,
+  NEWLY_ADDED_EMOJI_SEEN_ACKNOWLEDGED: g,
   NEWLY_ADDED_EMOJI_SEEN_PENDING: E,
   NEWLY_ADDED_EMOJI_SEEN_UPDATED: v,
   CLEAR_CACHES: b,

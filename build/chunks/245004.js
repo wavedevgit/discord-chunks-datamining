@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(388032),
   p = n(730621),
   h = n(782763),
-  g = n(567949),
-  m = n(552781),
+  m = n(567949),
+  g = n(552781),
   E = n(952567),
   v = n(807159);
 
@@ -69,32 +69,32 @@ function I(e) {
     label: l,
     isNewPerk: u,
     animatedCard: f
-  } = e, [p, g] = i.useState(!1), m = f && p, E = {
+  } = e, [p, m] = i.useState(!1), g = f && p, E = {
     tension: 400,
     friction: 30
   }, v = (0, c.q_F)({
-    transform: m ? "translateX(-50%) translateY(0px) scale(2.25)" : "translateX(-50%) translateY(32px) scale(1)",
-    borderRadius: m ? "7px" : "0px",
-    opacity: m ? .6 : 1,
+    transform: g ? "translateX(-50%) translateY(0px) scale(2.25)" : "translateX(-50%) translateY(32px) scale(1)",
+    borderRadius: g ? "7px" : "0px",
+    opacity: g ? .6 : 1,
     transformOrigin: "center 0%",
     config: E
   }), b = (0, c.q_F)({
-    y: m ? -25 : 0,
+    y: g ? -25 : 0,
     config: E
   }), O = (0, c.q_F)({
-    opacity: +!!m,
-    transform: m ? "translateY(0)" : "translateY(20px)",
+    opacity: +!!g,
+    transform: g ? "translateY(0)" : "translateY(20px)",
     config: E
   }), I = (0, c.q_F)({
-    opacity: +!!m,
+    opacity: +!!g,
     config: E
   });
   return (0, r.jsxs)("div", {
     className: a()(h.topPerksCard, {
       [h.animatedTopPerksCard]: f
     }),
-    onMouseEnter: () => g(!0),
-    onMouseLeave: () => g(!1),
+    onMouseEnter: () => m(!0),
+    onMouseLeave: () => m(!1),
     children: [(0, r.jsxs)("div", {
       className: h.topPerksCardImageWrapper,
       children: [(0, r.jsx)(s.animated.img, {
@@ -106,7 +106,7 @@ function I(e) {
         className: h.imageGradientOverlay,
         style: I
       })]
-    }), m && (0, r.jsx)("div", {
+    }), g && (0, r.jsx)("div", {
       className: h.borderGlowOverlay
     }), (0, r.jsxs)(s.animated.div, {
       style: S(y({}, b), {
@@ -166,7 +166,7 @@ let T = function(e) {
       }), (0, r.jsx)(I, {
         description: _.NW.string(_.t.wOYbTk),
         heading: _.NW.string(_.t.G6jZo6),
-        imgSrc: n ? m : g,
+        imgSrc: n ? g : m,
         label: i ? _.NW.string(p.Z.dyNT9v) : void 0
       }), (0, r.jsx)(I, {
         description: _.NW.string(_.t.yCjoUF),

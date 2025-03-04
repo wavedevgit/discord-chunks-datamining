@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   C: () => O,
-  Z: () => D
+  Z: () => w
 }), n(301563), n(653041);
 var r, i = n(392711),
   o = n.n(i),
@@ -17,7 +17,7 @@ var r, i = n(392711),
   p = n(981631),
   h = n(526761);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,14 +26,14 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -103,7 +103,7 @@ function C() {
   var e;
   let t = null === (e = c.Z.frecencyWithoutFetchingLatest.guildAndChannelFrecency) || void 0 === e ? void 0 : e.guildAndChannels;
   if (null == t) return !1;
-  S.overwriteHistory(o().mapValues(t, e => v(m({}, e), {
+  S.overwriteHistory(o().mapValues(t, e => v(g({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), R.pendingUsages)
 }
@@ -141,8 +141,8 @@ class P extends(r = a.ZP.PersistedStore) {
     return y
   }
 }
-g(P, "displayName", "FrecencyStore"), g(P, "persistKey", "FrecencyStore");
-let D = new P(s.Z, {
+m(P, "displayName", "FrecencyStore"), m(P, "persistKey", "FrecencyStore");
+let w = new P(s.Z, {
   CHANNEL_SELECT: N,
   VOICE_CHANNEL_SELECT: N,
   USER_SETTINGS_PROTO_UPDATE: A

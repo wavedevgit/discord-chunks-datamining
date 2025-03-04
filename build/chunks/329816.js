@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(335854),
   p = n(481060),
   h = n(570140),
-  g = n(721037),
-  m = n(490173),
+  m = n(721037),
+  g = n(490173),
   E = n(114250),
   v = n(735246),
   b = n(315263),
@@ -31,8 +31,8 @@ var r = n(200651),
   C = n(327943),
   R = n(907459),
   P = n(559407),
-  D = n(556766),
-  w = n(514361),
+  w = n(556766),
+  D = n(514361),
   L = n(724145),
   x = n(195302),
   M = n(260035),
@@ -119,11 +119,11 @@ let eh = (0, et.Un)({
     createPromise: () => n.e("67110").then(n.bind(n, 177741)),
     webpackId: 177741
   }),
-  eg = (0, et.Un)({
+  em = (0, et.Un)({
     createPromise: () => Promise.all([n.e("78447"), n.e("13474")]).then(n.bind(n, 420541)),
     webpackId: 420541
   }),
-  em = i.memo(function(e) {
+  eg = i.memo(function(e) {
     let t = (0, u.e7)([J.Z], () => J.Z.isFocused()),
       n = (0, u.e7)([Q.Z], () => Q.Z.hasLayers()),
       i = (0, p.s9z)(p.$sL);
@@ -145,7 +145,7 @@ let eh = (0, et.Un)({
       f.K.set(j.k9, String(J))
     }, [J]);
     let et = (0, u.e7)([O.Z], () => O.Z.useForcedColors ? "yes" : "no"),
-      [ea, es, ed] = (0, u.Wu)([w.Z], () => [w.Z.isEditorOpen, w.Z.isCoachmark, w.Z.isPreview]),
+      [ea, es, ed] = (0, u.Wu)([D.Z], () => [D.Z.isEditorOpen, D.Z.isCoachmark, D.Z.isPreview]),
       [ef, e_] = (0, u.Wu)([C.Z], () => [C.Z.isEditorOpen, C.Z.isUpsellPreview]),
       ep = (0, u.e7)([Q.Z], () => Q.Z.getLayers().includes(el.S9g.USER_SETTINGS)),
       eE = (0, u.e7)([X.default], () => ee.ZP.canUseClientThemes(X.default.getCurrentUser())),
@@ -179,7 +179,7 @@ let eh = (0, et.Un)({
         autoTrackExposure: eR && (eA || eC),
         disable: !eR
       }),
-      eD = "".concat(J ? "enabled" : "disabled").concat(et);
+      ew = "".concat(J ? "enabled" : "disabled").concat(et);
     return (0, r.jsx)(Y.w, {
       children: (0, r.jsx)(S.Z, {
         children: (0, r.jsxs)(p.vWI, {
@@ -193,7 +193,7 @@ let eh = (0, et.Un)({
                   appContext: el.IlC.APP,
                   renderWindow: window,
                   children: (0, r.jsxs)(V.yP, {
-                    children: [null != _ ? (0, r.jsx)(em, {
+                    children: [null != _ ? (0, r.jsx)(eg, {
                       type: _,
                       themeOverride: q
                     }) : null, (0, r.jsxs)("div", {
@@ -209,12 +209,12 @@ let eh = (0, et.Un)({
                                 children: [(0, r.jsx)("div", {
                                   className: a()(b ? eu.mobileApp : eu.app),
                                   children: t
-                                }), (0, r.jsx)(P.Z, {}), (0, r.jsx)(m.Z, {}), (0, r.jsx)(p.nKe, {}), (0, r.jsx)(E.Z, {}), (0, r.jsx)(F.Ox, {}), (0, r.jsx)(V.Un, {}), (0, r.jsx)(Z.ot, {}), (0, r.jsx)(p.Ixi, {}), (0, r.jsx)(N.Z, {}), (0, r.jsx)(H.Z, {}), (0, r.jsx)(eh, {}), (0, r.jsx)(eg, {})]
+                                }), (0, r.jsx)(P.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(p.nKe, {}), (0, r.jsx)(E.Z, {}), (0, r.jsx)(F.Ox, {}), (0, r.jsx)(V.Un, {}), (0, r.jsx)(Z.ot, {}), (0, r.jsx)(p.Ixi, {}), (0, r.jsx)(N.Z, {}), (0, r.jsx)(H.Z, {}), (0, r.jsx)(eh, {}), (0, r.jsx)(em, {})]
                               })
                             })
                           })
                         })
-                      }), (0, r.jsx)(D.Z, {}), (0, r.jsx)(g.Z, {}), eA && !eP && (0, r.jsx)(L.Z, {
+                      }), (0, r.jsx)(w.Z, {}), (0, r.jsx)(m.Z, {}), eA && !eP && (0, r.jsx)(L.Z, {
                         markAsDismissed: eT ? eS : () => {
                           (0, G.EW)(d.z.CLIENT_THEMES_COACHMARK, {
                             dismissAction: ec.L.INDIRECT_ACTION,
@@ -240,5 +240,5 @@ let eh = (0, et.Un)({
           })]
         })
       })
-    }, eD)
+    }, ew)
   }

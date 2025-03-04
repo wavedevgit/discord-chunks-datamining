@@ -74,7 +74,7 @@ function _(e) {
       n && (0, s.rY)(t)
     }
   }, [n]);
-  let g = i.useCallback(() => {
+  let m = i.useCallback(() => {
     var e, t, n, r;
     let {
       width: i,
@@ -90,9 +90,9 @@ function _(e) {
   }, [c]);
   i.useLayoutEffect(() => {
     let e = p.current;
-    if (null != e) return e.addEventListener("resize", g), () => e.removeEventListener("resize", g)
-  }, [g]);
-  let m = i.useCallback(() => {
+    if (null != e) return e.addEventListener("resize", m), () => e.removeEventListener("resize", m)
+  }, [m]);
+  let g = i.useCallback(() => {
       null == o || o()
     }, [o]),
     E = i.useCallback(e => {
@@ -103,7 +103,7 @@ function _(e) {
     ref: p,
     autoPlay: !0,
     onPause: E,
-    onCanPlayThrough: m,
+    onCanPlayThrough: g,
     muted: !0
   }, _))
 }

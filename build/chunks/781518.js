@@ -59,8 +59,8 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = 5e3,
-  m = 5e3;
+let m = 5e3,
+  g = 5e3;
 
 function E(e, t, n, r) {
   let o = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 1;
@@ -70,7 +70,7 @@ function E(e, t, n, r) {
     }
   })).then(e => 202 === e.status ? Promise.reject(e) : e).catch(n => {
     let a = !0 !== r.onlyRetryOnAuthorizationErrors && 202 === n.status;
-    return (401 === n.status || a) && o > 0 ? (202 === n.status ? (0, i.GR)(g) : Promise.resolve()).then(() => b(t)).then(n => {
+    return (401 === n.status || a) && o > 0 ? (202 === n.status ? (0, i.GR)(m) : Promise.resolve()).then(() => b(t)).then(n => {
       let {
         body: {
           access_token: i
@@ -98,7 +98,7 @@ function b(e) {
     });
     else if (429 === t.status) {
       let n = t.headers["retry-after"] * a.Z.Millis.SECOND,
-        r = isNaN(n) || 0 === n ? m : n;
+        r = isNaN(n) || 0 === n ? g : n;
       return (0, i.GR)(r).then(() => b(e))
     }
     return Promise.reject(t)
@@ -121,7 +121,7 @@ function y(e, t, n) {
     query: {
       connection_id: n
     }
-  }).catch(o => r <= 0 ? Promise.reject(o) : (0, i.GR)(g).then(() => y(e, t, n, r - 1)))
+  }).catch(o => r <= 0 ? Promise.reject(o) : (0, i.GR)(m).then(() => y(e, t, n, r - 1)))
 }
 
 function O(e, t) {

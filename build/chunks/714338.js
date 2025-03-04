@@ -16,8 +16,8 @@ let d = {},
   _ = !1,
   p = (0, s.r)(window),
   h = (0, c.isMac)() || (0, c.isMacWeb)() ? "cmd" : "ctrl",
-  g = (0, c.isMac)() || (0, c.isMacWeb)() ? "opt" : "alt",
-  m = (0, c.isMac)() || (0, c.isMacWeb)() ? "return" : "enter",
+  m = (0, c.isMac)() || (0, c.isMacWeb)() ? "opt" : "alt",
+  g = (0, c.isMac)() || (0, c.isMacWeb)() ? "return" : "enter",
   E = [...o.u.binds, "mod+shift+[", "mod+shift+]", "mod+[", "mod+]", "alt+[", "alt+]", "ctrl+shift+tab", "ctrl+tab", "mod+n", "mod+t", "mod+shift+t", "mod+plus", "mod+minus", "mod+0"].map(e => e.replace("mod", h)),
   v = () => [],
   b = [];
@@ -56,8 +56,8 @@ function I(e) {
 let T = {
   combokeys: p,
   modKey: h,
-  altKey: g,
-  returnKey: m,
+  altKey: m,
+  returnKey: g,
   setGetKeybindList(e) {
     v = e
   },

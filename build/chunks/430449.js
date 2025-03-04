@@ -67,7 +67,7 @@ function h(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     applicationId: t,
     assets: n
@@ -81,7 +81,7 @@ function g(e) {
   } else delete _[t]
 }
 
-function m(e) {
+function g(e) {
   let {
     assets: t
   } = e, n = c({}, f);
@@ -117,7 +117,7 @@ l(E, "displayName", "ApplicationAssetsStore");
 let v = new E(s.Z, {
   APPLICATION_ASSETS_FETCH: p,
   APPLICATION_ASSETS_FETCH_SUCCESS: h,
-  APPLICATION_ASSETS_UPDATE: g,
-  EMBEDDED_ACTIVITY_FETCH_SHELF_SUCCESS: m,
-  DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: m
+  APPLICATION_ASSETS_UPDATE: m,
+  EMBEDDED_ACTIVITY_FETCH_SHELF_SUCCESS: g,
+  DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: g
 })

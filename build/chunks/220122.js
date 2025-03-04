@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(481060),
   i = n(570140),
@@ -16,7 +16,7 @@ var r = n(481060),
   _ = n(356659),
   p = n(388032);
 let h = "CLIPS_IN_CALL_WARNING";
-class g extends c.Z {
+class m extends c.Z {
   showClipsToast() {
     (0, r.showToast)({
       id: h,
@@ -82,4 +82,4 @@ class g extends c.Z {
     })
   }
 }
-let m = new g
+let g = new m

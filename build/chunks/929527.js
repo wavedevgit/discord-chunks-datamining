@@ -18,7 +18,7 @@ var i = r(n(532825)),
   f = /^--/;
 
 function _(e, t) {
-  return null == t || "boolean" == typeof t || "" === t ? "" : "number" != typeof t || 0 === t || f.test(e) || g.hasOwnProperty(e) && g[e] ? ("" + t).trim() : t + "px"
+  return null == t || "boolean" == typeof t || "" === t ? "" : "number" != typeof t || 0 === t || f.test(e) || m.hasOwnProperty(e) && m[e] ? ("" + t).trim() : t + "px"
 }
 var p = {};
 
@@ -47,7 +47,7 @@ function h(e, t) {
     }), void 0 !== s && (e.scrollTop = s), void 0 !== l && (e.scrollLeft = l)
   })
 }
-var g = {
+var m = {
     animationIterationCount: !0,
     borderImageOutset: !0,
     borderImageSlice: !0,
@@ -90,15 +90,15 @@ var g = {
     strokeOpacity: !0,
     strokeWidth: !0
   },
-  m = function(e, t) {
+  g = function(e, t) {
     return e + t.charAt(0).toUpperCase() + t.substring(1)
   },
   E = ["Webkit", "Ms", "Moz", "O"];
-g = Object.keys(g).reduce(function(e, t) {
+m = Object.keys(m).reduce(function(e, t) {
   return E.forEach(function(n) {
-    return e[m(n, t)] = e[t]
+    return e[g(n, t)] = e[t]
   }), e
-}, g);
+}, m);
 var v = /^(matrix|translate|scale|rotate|skew)/,
   b = /^(translate)/,
   y = /^(rotate|skew)/,

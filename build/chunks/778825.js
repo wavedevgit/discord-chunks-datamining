@@ -4,8 +4,8 @@ let r, i, o, a, s, l, c, u, d, f, _, p;
 n.d(t, {
   Z: () => Z
 });
-var h, g = n(442837),
-  m = n(570140),
+var h, m = n(442837),
+  g = n(570140),
   E = n(981631);
 
 function v(e, t, n) {
@@ -66,14 +66,14 @@ function P(e) {
   o = t
 }
 
-function D(e) {
+function w(e) {
   let {
     profileEffectId: t
   } = e;
   a = t
 }
 
-function w(e) {
+function D(e) {
   let {
     banner: t
   } = e;
@@ -127,7 +127,7 @@ function B() {
 function V() {
   j(), S()
 }
-class F extends(h = g.ZP.Store) {
+class F extends(h = m.ZP.Store) {
   getFormState() {
     return b
   }
@@ -194,7 +194,7 @@ class F extends(h = g.ZP.Store) {
   }
 }
 v(F, "displayName", "GuildIdentitySettingsStore");
-let Z = new F(m.Z, {
+let Z = new F(g.Z, {
   GUILD_IDENTITY_SETTINGS_INIT: O,
   GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: V,
   GUILD_IDENTITY_SETTINGS_SET_GUILD: T,
@@ -204,8 +204,8 @@ let Z = new F(m.Z, {
   GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR: C,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR_V2: R,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR_DECORATION: P,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_PROFILE_EFFECT_ID: D,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER: w,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_PROFILE_EFFECT_ID: w,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER: D,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO: L,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_PRONOUNS: x,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME: M,

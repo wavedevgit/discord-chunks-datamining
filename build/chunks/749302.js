@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -26,7 +26,7 @@ function h(e, t) {
   }, [n])
 }
 
-function g(e) {
+function m(e) {
   let {
     application: t
   } = e;
@@ -41,13 +41,13 @@ function g(e) {
   })
 }
 
-function m(e) {
+function g(e) {
   let {
     menuItemId: t,
     user: n,
     label: s,
     gameRelationships: _,
-    onClick: m,
+    onClick: g,
     color: E
   } = e, {
     id: v,
@@ -72,32 +72,32 @@ function m(e) {
       color: E,
       id: t,
       label: s,
-      subtext: (0, r.jsx)(g, {
+      subtext: (0, r.jsx)(m, {
         application: n
       }),
       onFocus: A,
-      action: () => m(n)
+      action: () => g(n)
     })
   }
-  let D = [];
+  let w = [];
   return (I.forEach(e => {
     let {
       applicationId: t
     } = e, n = P.get(t);
-    null != n && D.push((0, r.jsx)(a.sNh, {
+    null != n && w.push((0, r.jsx)(a.sNh, {
       id: t,
       label: n.name,
       icon: (0, r.jsx)(l.Z, {
         game: n,
         size: l.Z.Sizes.XXSMALL
       }),
-      action: () => m(n)
+      action: () => g(n)
     }, t))
-  }), 0 === D.length) ? null : (0, r.jsx)(a.sNh, {
+  }), 0 === w.length) ? null : (0, r.jsx)(a.sNh, {
     color: E,
     id: t,
     label: s,
     onFocus: A,
-    children: D
+    children: w
   })
 }

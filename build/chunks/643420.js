@@ -51,8 +51,8 @@ function p(e, t) {
   }), e
 }
 let h = 1e3 / 60,
-  g = 24,
-  m = {
+  m = 24,
+  g = {
     velocity: {
       type: "static-random",
       minValue: {
@@ -118,16 +118,16 @@ function b(e) {
     let e = null == y ? void 0 : y.getCanvas();
     if (null == e) return;
     let t = e.getBoundingClientRect();
-    O.createConfetti(p(f({}, m), {
+    O.createConfetti(p(f({}, g), {
       position: {
         type: "static-random",
         minValue: {
           x: -t.width / 2,
-          y: -g
+          y: -m
         },
         maxValue: {
           x: t.width,
-          y: -g
+          y: -m
         }
       }
     }))
@@ -141,8 +141,8 @@ function b(e) {
       ref: b,
       colors: E,
       sprites: v,
-      spriteWidth: g,
-      spriteHeight: g
+      spriteWidth: m,
+      spriteHeight: m
     })]
   })
 }

@@ -15,9 +15,9 @@ var i, o = n(442837),
   _ = n(592125),
   p = n(885110),
   h = n(451478),
-  g = n(981631);
+  m = n(981631);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -94,7 +94,7 @@ function P(e) {
   return A(t)
 }
 
-function D(e) {
+function w(e) {
   let {
     x: t,
     y: n
@@ -105,7 +105,7 @@ function D(e) {
   }, a.K.set(E, r), !1
 }
 
-function w(e) {
+function D(e) {
   let {
     channel: t
   } = e;
@@ -113,7 +113,7 @@ function w(e) {
 }
 
 function L() {
-  T = p.Z.getStatus() === g.Skl.DND || c.QZ.getSetting()
+  T = p.Z.getStatus() === m.Skl.DND || c.QZ.getSetting()
 }
 
 function x() {
@@ -141,7 +141,7 @@ class M extends(i = o.ZP.Store) {
     return !T && I.size > 0
   }
 }
-m(M, "displayName", "IncomingCallStore");
+g(M, "displayName", "IncomingCallStore");
 let k = new M(s.Z, {
   CALL_CREATE: C,
   CALL_UPDATE: C,
@@ -149,6 +149,6 @@ let k = new M(s.Z, {
   GUILD_RING_START: C,
   GUILD_RING_STOP: R,
   VOICE_CHANNEL_SELECT: P,
-  INCOMING_CALL_MOVE: D,
-  CHANNEL_DELETE: w
+  INCOMING_CALL_MOVE: w,
+  CHANNEL_DELETE: D
 })

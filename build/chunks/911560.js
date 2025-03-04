@@ -17,17 +17,17 @@ var r = n(512969),
 let p = {},
   h = !1;
 
-function g() {
+function m() {
   h || (h = !0, o.Z.subscribe("CONNECTION_OPEN", () => {
     p = {};
     let e = d.Z.getChannelId(),
       t = u.Z.getChannel(e);
-    null != e && null == t && m(e)
+    null != e && null == t && g(e)
   }))
 }
 
-function m(e) {
-  if (null == e || e === a.V || (0, _.AB)(e) || null != u.Z.getChannel(e) || (g(), !s.Z.isConnected())) return Promise.resolve();
+function g(e) {
+  if (null == e || e === a.V || (0, _.AB)(e) || null != u.Z.getChannel(e) || (m(), !s.Z.isConnected())) return Promise.resolve();
   let t = p[e];
   if (null != t) return "LOADING" === t.type ? t.promise : Promise.resolve();
   let n = (0, r.LX)(location.pathname, {
@@ -70,5 +70,5 @@ function m(e) {
   }, d
 }
 let E = {
-  loadThread: m
+  loadThread: g
 }

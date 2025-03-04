@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   A: () => h,
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -67,7 +67,7 @@ function h(e) {
   }))
 }
 
-function g(e) {
+function m(e) {
   let {
     className: t,
     forceUseColorForSparkles: n = !1,

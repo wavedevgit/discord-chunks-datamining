@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B: () => g,
+  B: () => m,
   Os: () => p,
   _L: () => _,
-  jU: () => m,
+  jU: () => g,
   nG: () => h
 });
 var r = n(149765),
@@ -46,10 +46,10 @@ function h(e) {
   }, [e])
 }
 
-function g(e) {
+function m(e) {
   return (0, i.e7)([a.Z, l.Z], () => null != e && l.Z.can(f.Plq.MUTE_MEMBERS, a.Z.getChannel(e)), [e])
 }
 
-function m(e) {
+function g(e) {
   return !!(null != e && e.isGuildStageVoice() && o.Z.isLurking(e.guild_id) && d.Z.isPublic(e.id)) && l.Z.can(u.gl, e)
 }

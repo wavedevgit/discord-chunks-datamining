@@ -26,8 +26,8 @@ function u(e) {
     canOnlyUseTextCommands: _,
     canSendStickers: p,
     canSendSoundmoji: h,
-    hideMentionDescription: g,
-    hidePersonalInformation: m,
+    hideMentionDescription: m,
+    hidePersonalInformation: g,
     type: E,
     emojiIntention: v,
     editorRef: b,
@@ -46,8 +46,8 @@ function u(e) {
     allowStickers: !0 === p,
     allowSoundmoji: !0 === h,
     forNonStringCommandOption: null != n && n.type !== r.jw.STRING,
-    hideMentionDescription: !0 === g,
-    hidePersonalInformation: !0 === m,
+    hideMentionDescription: !0 === m,
+    hidePersonalInformation: !0 === g,
     chatInputType: E,
     emojiIntention: v,
     sendMessage: y,
@@ -98,7 +98,7 @@ function f(e) {
     optionText: f
   } = e, _ = null;
   for (let e of s.R) {
-    var p, h, g, m, E, v;
+    var p, h, m, g, E, v;
     let b = s.W[e];
     if (e === l.eq.GIFS || e === l.eq.CHOICES) {
       if (r.commands === l.L8.OLD_BUILT_INS) {
@@ -186,7 +186,7 @@ function f(e) {
         _ = {
           type: e,
           typeInfo: b,
-          query: i.substring(null !== (m = null === (g = b.sentinel) || void 0 === g ? void 0 : g.length) && void 0 !== m ? m : 0)
+          query: i.substring(null !== (g = null === (m = b.sentinel) || void 0 === m ? void 0 : m.length) && void 0 !== g ? g : 0)
         };
         break
       }

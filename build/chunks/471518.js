@@ -3,7 +3,7 @@
 n.d(t, {
   CP: () => C,
   T4: () => R,
-  XK: () => w,
+  XK: () => D,
   g5: () => L,
   gZ: () => N,
   i6: () => A,
@@ -23,8 +23,8 @@ var u = n(706454),
   _ = n(370210),
   p = n(678694),
   h = n(425986),
-  g = n(177653),
-  m = n(255333),
+  m = n(177653),
+  g = n(255333),
   E = n(204298),
   v = n(981631);
 let b = 1e3,
@@ -127,16 +127,16 @@ async function R(e) {
     options: i
   } = e, {
     page: o
-  } = null != i ? i : {}, a = Date.now(), s = m.Z.getFetchState({
+  } = null != i ? i : {}, a = Date.now(), s = g.Z.getFetchState({
     applicationId: n,
     guildId: r
   }), {
     lastFetchTimeMs: d
-  } = null !== (t = m.Z.getSimilarApplications({
+  } = null !== (t = g.Z.getSimilarApplications({
     applicationId: n,
     guildId: r
   })) && void 0 !== t ? t : {};
-  if (s !== m.M.FETCHING && (null == d || !(d + I > a))) {
+  if (s !== g.M.FETCHING && (null == d || !(d + I > a))) {
     c.Z.dispatch({
       type: "APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS",
       applicationId: n,
@@ -186,10 +186,10 @@ async function P(e) {
     integrationType: _,
     minUserInstallCommandCount: p,
     excludeAppsWithCustomInstallUrl: h,
-    excludeNonEmbeddedApps: m,
+    excludeNonEmbeddedApps: g,
     excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: E,
     source: b = s.F.APP_DIRECTORY
-  } = null != i ? i : {}, y = Date.now(), O = g.Z.getFetchState({
+  } = null != i ? i : {}, y = Date.now(), O = m.Z.getFetchState({
     query: n,
     guildId: r,
     page: a,
@@ -198,7 +198,7 @@ async function P(e) {
     integrationType: _
   }), {
     lastFetchTimeMs: S
-  } = null !== (t = g.Z.getSearchResults({
+  } = null !== (t = m.Z.getSearchResults({
     query: n,
     guildId: r,
     page: a,
@@ -206,7 +206,7 @@ async function P(e) {
     categoryId: f,
     integrationType: _
   })) && void 0 !== t ? t : {};
-  if (O !== g.M.FETCHING && (null == S || !(S + I > y))) {
+  if (O !== m.M.FETCHING && (null == S || !(S + I > y))) {
     c.Z.dispatch({
       type: "APPLICATION_DIRECTORY_FETCH_SEARCH",
       query: n,
@@ -217,7 +217,7 @@ async function P(e) {
       integrationType: _,
       minUserInstallCommandCount: p,
       excludeAppsWithCustomInstallUrl: h,
-      excludeNonEmbeddedApps: m,
+      excludeNonEmbeddedApps: g,
       excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: E,
       source: b
     });
@@ -234,7 +234,7 @@ async function P(e) {
           integration_type: _,
           min_user_install_command_count: p,
           exclude_apps_with_custom_install_url: h,
-          exclude_non_embedded_apps: m,
+          exclude_non_embedded_apps: g,
           exclude_embedded_apps_without_primary_entry_point_app_command: E,
           source: b
         },
@@ -258,7 +258,7 @@ async function P(e) {
         },
         minUserInstallCommandCount: p,
         excludeAppsWithCustomInstallUrl: h,
-        excludeNonEmbeddedApps: m,
+        excludeNonEmbeddedApps: g,
         excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: E,
         source: b
       }), null == o || o(e.body.result_count)
@@ -273,7 +273,7 @@ async function P(e) {
         integrationType: _,
         minUserInstallCommandCount: p,
         excludeAppsWithCustomInstallUrl: h,
-        excludeNonEmbeddedApps: m,
+        excludeNonEmbeddedApps: g,
         excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: E,
         source: b
       })
@@ -281,10 +281,10 @@ async function P(e) {
   }
 }
 
-function D() {
+function w() {
   return (0, f.isAndroid)() ? o.R.ANDROID : (0, f.isIOS)() ? o.R.IOS : o.R.WEB
 }
-async function w() {
+async function D() {
   let {
     surface: e = a.Y.APPLICATION_DIRECTORY,
     activeState: t = i.E.ACTIVE
@@ -309,7 +309,7 @@ async function w() {
         query: {
           surface: e,
           active_state: t,
-          platform: D(),
+          platform: w(),
           locale: u.default.locale,
           cache: f
         },

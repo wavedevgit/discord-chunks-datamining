@@ -35,7 +35,7 @@ function h(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,8 +46,8 @@ function g(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -129,7 +129,7 @@ function R(e) {
   if (null == n) return !1;
   let s = b[n];
   if (null == s) return !1;
-  null === (t = s.onFailure) || void 0 === t || t.call(s, r, i, o, a), s.data.interactionType === c.B8.APPLICATION_COMMAND ? j(n) : b[n] = m(h({}, s), {
+  null === (t = s.onFailure) || void 0 === t || t.call(s, r, i, o, a), s.data.interactionType === c.B8.APPLICATION_COMMAND ? j(n) : b[n] = g(h({}, s), {
     state: _.F.FAILED,
     errorCode: r,
     errorMessage: i
@@ -144,14 +144,14 @@ function P(e) {
   for (let [e, t] of Object.entries(b)) t.state === _.F.FAILED && j(e)
 }
 
-function D(e) {
+function w(e) {
   let {
     nonce: t
   } = e;
   k(t)
 }
 
-function w(e) {
+function D(e) {
   let {
     application: t,
     nonce: n
@@ -238,9 +238,9 @@ let G = new U(s.Z, {
   INTERACTION_FAILURE: R,
   MESSAGE_CREATE: C,
   CHANNEL_SELECT: P,
-  INTERACTION_IFRAME_MODAL_CREATE: w,
+  INTERACTION_IFRAME_MODAL_CREATE: D,
   INTERACTION_IFRAME_MODAL_CLOSE: L,
   INTERACTION_IFRAME_MODAL_KEY_CREATE: x,
-  INTERACTION_MODAL_CREATE: D,
+  INTERACTION_MODAL_CREATE: w,
   EMBEDDED_ACTIVITY_UPDATE_V2: M
 })

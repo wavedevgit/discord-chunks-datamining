@@ -99,7 +99,7 @@ class _ {
 }
 let p = new _,
   h = 5;
-class g extends Error {
+class m extends Error {
   setStatus(e) {
     this.status = e
   }
@@ -108,14 +108,14 @@ class g extends Error {
   }
 }
 
-function m(e) {
+function g(e) {
   if (e instanceof Error) return e;
   if ("object" == typeof e) {
     if ("body" in e && null != e.body && "message" in e.body) {
-      let t = new g(String(e.body.message));
+      let t = new m(String(e.body.message));
       return t.setStatus(e.status), t
     }
-    let t = new g(Object.entries(e).map((e, t) => "".concat(e, ": [").concat(String(t), "]")).join(","));
+    let t = new m(Object.entries(e).map((e, t) => "".concat(e, ": [").concat(String(t), "]")).join(","));
     return t.setStatus(e.status), t
   }
   return Error(String(e))
@@ -150,8 +150,8 @@ function E(e, t) {
       let o = new AbortController;
       return a(o.signal, ...b.current).then(e => (p.loadingDone(f, !0), e)).catch(e => {
         if (p.loadingDone(f), o.signal.aborted) return;
-        let t = m(e);
-        (h.fetchFailCounter >= s || !(t instanceof g) || !(t.status >= 500) && 429 !== t.status) && p.setError(f, t)
+        let t = g(e);
+        (h.fetchFailCounter >= s || !(t instanceof m) || !(t.status >= 500) && 429 !== t.status) && p.setError(f, t)
       }), () => {
         n && o.abort()
       }

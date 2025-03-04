@@ -46,13 +46,13 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -148,11 +148,11 @@ function P(e) {
   b.syncForcedColors = e.syncForcedColors
 }
 
-function D(e) {
+function w(e) {
   (b = p({}, b)).saturation = e.saturation
 }
 
-function w() {
+function D() {
   (b = p({}, b)).desaturateUserColors = !b.desaturateUserColors
 }
 
@@ -170,41 +170,41 @@ function M() {
 
 function k(e) {
   if (b.systemPrefersReducedMotion === e.systemPrefersReducedMotion) return !1;
-  b = g(p({}, b), {
+  b = m(p({}, b), {
     systemPrefersReducedMotion: e.systemPrefersReducedMotion
   })
 }
 
 function j(e) {
   if (b.systemPrefersCrossfades === e.systemPrefersCrossfades) return !1;
-  b = g(p({}, b), {
+  b = m(p({}, b), {
     systemPrefersCrossfades: e.systemPrefersCrossfades
   })
 }
 
 function U(e) {
   if (b.prefersReducedMotion === e.prefersReducedMotion) return !1;
-  b = g(p({}, b), {
+  b = m(p({}, b), {
     prefersReducedMotion: e.prefersReducedMotion
   })
 }
 
 function G(e) {
   if (b.systemPrefersContrast === e.systemPrefersContrast) return !1;
-  b = g(p({}, b), {
+  b = m(p({}, b), {
     systemPrefersContrast: e.systemPrefersContrast
   })
 }
 
 function B(e) {
-  b = g(p({}, b), {
+  b = m(p({}, b), {
     alwaysShowLinkDecorations: e.alwaysShowLinkDecorations
   })
 }
 
 function V(e) {
   var t;
-  return b = g(p({}, b), {
+  return b = m(p({}, b), {
     systemForcedColors: null !== (t = e.systemForcedColors) && void 0 !== t ? t : "none"
   }), !0
 }
@@ -214,7 +214,7 @@ function F() {
 }
 
 function Z() {
-  b = g(p({}, b), {
+  b = m(p({}, b), {
     keyboardNavigationExplainerModalSeen: !0
   })
 }
@@ -223,7 +223,7 @@ function H(e) {
   let {
     messageGroupSpacing: t
   } = e;
-  b = g(p({}, b), {
+  b = m(p({}, b), {
     messageGroupSpacing: t
   })
 }
@@ -232,7 +232,7 @@ function W(e) {
   let {
     contrast: t
   } = e;
-  b = g(p({}, b), {
+  b = m(p({}, b), {
     contrast: t
   })
 }
@@ -241,7 +241,7 @@ function Y(e) {
   let {
     hideTags: t
   } = e;
-  b = g(p({}, b), {
+  b = m(p({}, b), {
     hideGuildTags: t
   })
 }
@@ -376,7 +376,7 @@ _(K, "displayName", "AccessibilityStore"), _(K, "persistKey", "AccessibilityStor
 }, e => {
   let {
     fontScale: t
-  } = e, n = m(e, ["fontScale"]), r = 16;
+  } = e, n = g(e, ["fontScale"]), r = 16;
   switch (t) {
     case 82:
       r = 12;
@@ -396,19 +396,19 @@ _(K, "displayName", "AccessibilityStore"), _(K, "persistKey", "AccessibilityStor
     case 150:
       r = 24
   }
-  return g(p({}, n), {
+  return m(p({}, n), {
     fontSize: r
   })
-}, e => g(p({}, e), {
+}, e => m(p({}, e), {
   darkSidebar: !1
-}), e => g(p({}, e), {
+}), e => m(p({}, e), {
   messageGroupSpacing: null
-}), e => g(p({}, e), {
+}), e => m(p({}, e), {
   systemPrefersReducedMotion: "no-preference",
   prefersReducedMotion: "auto"
-}), e => g(p({}, e), {
+}), e => m(p({}, e), {
   alwaysShowLinkDecorations: e.saturation <= a.AE
-}), e => g(p({}, e), {
+}), e => m(p({}, e), {
   disableVoiceBackgrounds: !1
 }), e => {
   try {
@@ -424,8 +424,8 @@ let z = new K(s.Z, {
   ACCESSIBILITY_KEYBOARD_MODE_DISABLE: A,
   ACCESSIBILITY_COLORBLIND_TOGGLE: C,
   ACCESSIBILITY_LOW_CONTRAST_TOGGLE: R,
-  ACCESSIBILITY_SET_SATURATION: D,
-  ACCESSIBILITY_DESATURATE_ROLES_TOGGLE: w,
+  ACCESSIBILITY_SET_SATURATION: w,
+  ACCESSIBILITY_DESATURATE_ROLES_TOGGLE: D,
   ACCESSIBILITY_SYSTEM_COLOR_PREFERENCES_CHANGED: V,
   ACCESSIBILITY_SYSTEM_PREFERS_CONTRAST_CHANGED: G,
   ACCESSIBILITY_SYSTEM_PREFERS_REDUCED_MOTION_CHANGED: k,

@@ -5,7 +5,7 @@ n.d(t, {
   Lm: () => c,
   Ol: () => u,
   P4: () => d,
-  Tk: () => g,
+  Tk: () => m,
   cO: () => f,
   cj: () => a,
   qi: () => h,
@@ -60,7 +60,7 @@ function h(e) {
     return !1
   }
 }
-class g {
+class m {
   next() {
     if (this.seq > s) throw Error("Snowflake sequence number overflow: ".concat(this.seq));
     return this.seq++

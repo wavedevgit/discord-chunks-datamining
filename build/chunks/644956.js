@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(607070),
   p = n(100527),
   h = n(906732),
-  g = n(82295),
-  m = n(818083),
+  m = n(82295),
+  g = n(818083),
   E = n(14263),
   v = n(480608),
   b = n(124072),
@@ -32,7 +32,7 @@ var r = n(200651),
   R = n(509045),
   P = n(340462);
 
-function D(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -41,14 +41,14 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -70,7 +70,7 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let M = (0, m.B)({
+let M = (0, g.B)({
   kind: "user",
   id: "2021-07_role_popout",
   label: "Role Popout",
@@ -101,7 +101,7 @@ function k(e) {
       guildId: i,
       channelId: o
     }),
-    renderPopout: e => (0, r.jsx)(O.Z, x(w({}, e), {
+    renderPopout: e => (0, r.jsx)(O.Z, x(D({}, e), {
       userId: t.userId,
       guildId: i,
       channelId: o,
@@ -112,7 +112,7 @@ function k(e) {
       let {
         isShown: l
       } = o;
-      return (0, r.jsx)(d.Z, w({
+      return (0, r.jsx)(d.Z, D({
         selected: l,
         colorString: t.colorString,
         colorRoleName: a.name,
@@ -127,7 +127,7 @@ function k(e) {
             let {
               default: e
             } = await Promise.all([n.e("50506"), n.e("79695"), n.e("13351"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("12612")]).then(n.bind(n, 757387));
-            return t => (0, r.jsx)(e, x(w({}, t), {
+            return t => (0, r.jsx)(e, x(D({}, t), {
               user: f,
               guildId: i,
               channel: _,
@@ -171,7 +171,7 @@ function j(e) {
       let e = null != n ? n : _;
       return null == e ? null : T.Z.getRole(o, e)
     }, [o, n, _]),
-    m = null == n ? null : null == d ? void 0 : d[n],
+    g = null == n ? null : null == d ? void 0 : d[n],
     v = i.useMemo(() => null != h ? p.map(e => (0, r.jsx)(k, {
       member: e,
       guildId: o,
@@ -179,17 +179,17 @@ function j(e) {
       role: h
     }, e.userId)) : [], [s, o, h, p]);
   if (null == h) return null;
-  let b = null == m ? h.name : C.NW.formatToPlainString(C.t.CuAQkJ, {
+  let b = null == g ? h.name : C.NW.formatToPlainString(C.t.CuAQkJ, {
     title: h.name,
-    count: m
+    count: g
   });
-  return (0, r.jsx)("div", x(w({
+  return (0, r.jsx)("div", x(D({
     className: R.rolePopout,
     ref: u
   }, t), {
     children: (0, r.jsxs)(c.Ttm, {
       className: R.roleScroller,
-      children: [(0, r.jsx)(g.Z, {
+      children: [(0, r.jsx)(m.Z, {
         className: R.roleHeader,
         "aria-label": C.NW.formatToPlainString(C.t.UaqbkZ, {
           title: h.name,
@@ -199,10 +199,10 @@ function j(e) {
           "aria-hidden": !0,
           children: b
         })
-      }), v, null == m || m <= v.length ? null : (0, r.jsx)(g.Z, {
+      }), v, null == g || g <= v.length ? null : (0, r.jsx)(m.Z, {
         className: R.roleHeader,
         children: C.NW.formatToPlainString(C.t["9oMmZG"], {
-          count: m - v.length
+          count: g - v.length
         })
       })]
     })
@@ -220,9 +220,9 @@ function U(e) {
     inlinePreview: d = !1
   } = e, {
     analyticsLocations: f
-  } = (0, h.ZP)(p.Z.ROLE_MENTION), g = (0, l.e7)([_.Z], () => _.Z.roleStyle), m = null != t && 0 !== t && !d, E = m && "dot" === g, y = e => (0, r.jsxs)(b.Z, x(w({
+  } = (0, h.ZP)(p.Z.ROLE_MENTION), m = (0, l.e7)([_.Z], () => _.Z.roleStyle), g = null != t && 0 !== t && !d, E = g && "dot" === m, y = e => (0, r.jsxs)(b.Z, x(D({
     className: R.roleMention,
-    color: "username" === g && m ? t : null
+    color: "username" === m && g ? t : null
   }, e), {
     children: [E && (0, r.jsx)(c.FhE, {
       color: (0, s.Rf)(t),

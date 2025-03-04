@@ -21,8 +21,8 @@ var r = n(392711),
   _ = n(314897),
   p = n(351402),
   h = n(853872),
-  g = n(78839),
-  m = n(526167),
+  m = n(78839),
+  g = n(526167),
   E = n(630388),
   v = n(823379);
 n(358085);
@@ -51,7 +51,7 @@ function S(e) {
   return e
 }
 n(388032), l().shim();
-let I = !c.tq && !c.Em && -1 !== (0, m.vu)(),
+let I = !c.tq && !c.Em && -1 !== (0, g.vu)(),
   T = 3;
 
 function N(e, t) {
@@ -97,7 +97,7 @@ function A(e, t, n, r) {
 
 function C() {
   return new Promise(async e => {
-    if (g.ZP.hasFetchedSubscriptions()) e();
+    if (m.ZP.hasFetchedSubscriptions()) e();
     else if (p.Z.isSubscriptionFetching) {
       let t = () => {
         p.Z.isSubscriptionFetching ? setTimeout(t, 50) : e()
@@ -116,7 +116,7 @@ async function R(e) {
   }
   let s = h.Z.getDefaultBillingCountryCode(),
     l = null !== (r = null === (t = h.Z.defaultPaymentSource) || void 0 === t ? void 0 : t.id) && void 0 !== r ? r : null,
-    c = g.ZP.getPremiumTypeSubscription();
+    c = m.ZP.getPremiumTypeSubscription();
   null != c && null != c.paymentSourceId && (l = c.paymentSourceId), null === s && (s = null !== (i = p.Z.ipCountryCode) && void 0 !== i ? i : null);
   let f = {};
   if (null != s && (f.country_code = s), null != l && (f.payment_source_id = l), null != s || null != l) {
@@ -135,7 +135,7 @@ function P(e, t, n) {
   return null == r || null == r.primarySkuId ? null : n.get(r.primarySkuId)
 }
 
-function D(e, t, n) {
+function w(e, t, n) {
   var r;
   let i = null !== (r = n.getNowPlaying(e)) && void 0 !== r ? r : {},
     o = b.default.keys(i).map(e => {
@@ -151,7 +151,7 @@ function D(e, t, n) {
   }
 }
 
-function w(e, t, n) {
+function D(e, t, n) {
   let r = n.getStatisticsForApplication(e);
   if (null == r) return null;
   let i = r.map(e => {
@@ -174,7 +174,7 @@ function x(e, t, n, r, o) {
   let s = a.applicationId,
     l = [],
     c = [],
-    u = D(s, n, r);
+    u = w(s, n, r);
   null != u && (l.push(u), c = u.userInfo.map(e => {
     let {
       user: t
@@ -185,7 +185,7 @@ function x(e, t, n, r, o) {
   if (null != d) {
     let e = d.map(e => e.user_id);
     if (i().difference(e, c).length > 0) {
-      let e = w(s, n, o);
+      let e = D(s, n, o);
       null != e && l.push(e)
     }
   }

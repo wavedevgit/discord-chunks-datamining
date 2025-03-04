@@ -4,8 +4,8 @@ n.d(t, {
   GV: () => E,
   Po: () => _,
   Sg: () => p,
-  VP: () => g,
-  dh: () => m,
+  VP: () => m,
+  dh: () => g,
   g7: () => h
 }), n(977457), n(47120);
 var r = n(512722),
@@ -67,7 +67,7 @@ function h(e, t) {
   })
 }
 
-function g(e, t) {
+function m(e, t) {
   h(e, Object.fromEntries(Object.entries(t).map(e => {
     let [t, n] = e;
     return [t, {
@@ -76,7 +76,7 @@ function g(e, t) {
   })))
 }
 
-function m(e, t, n, r) {
+function g(e, t, n, r) {
   return o.tn.put({
     body: {
       permissions: r

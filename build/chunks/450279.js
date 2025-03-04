@@ -74,9 +74,9 @@ function u(e, t, n, i, a) {
     case "outbound-rtp":
       h.push(t)
   }
-  let g = Object.values(f).find(e => "succeeded" === e.state);
-  if (void 0 === g) return null;
-  let m = [];
+  let m = Object.values(f).find(e => "succeeded" === e.state);
+  if (void 0 === m) return null;
+  let g = [];
   for (let e of h) {
     let t = _[e.codecId];
     if (null == t) continue;
@@ -90,7 +90,7 @@ function u(e, t, n, i, a) {
       bytesSent: e.bytesSent,
       packetsSent: e.packetsSent
     };
-    if ("audio" === e.kind) m.push(s(o({}, i), {
+    if ("audio" === e.kind) g.push(s(o({}, i), {
       type: "audio"
     }));
     else if ("video" === e.kind && a) {
@@ -98,7 +98,7 @@ function u(e, t, n, i, a) {
         width: e.frameWidth,
         height: e.frameHeight
       } : void 0;
-      m.push(s(o({}, i), {
+      g.push(s(o({}, i), {
         framesEncoded: e.framesEncoded,
         keyFramesEncoded: e.keyFramesEncoded,
         firCount: e.firCount,
@@ -166,17 +166,17 @@ function u(e, t, n, i, a) {
       }))
     }
   }
-  let v = (null !== (u = g.currentRoundTripTime) && void 0 !== u ? u : 0) * 1e3;
+  let v = (null !== (u = m.currentRoundTripTime) && void 0 !== u ? u : 0) * 1e3;
   return {
     transport: {
-      availableOutgoingBitrate: null !== (d = g.availableOutgoingBitrate) && void 0 !== d ? d : 0,
-      bytesReceived: g.bytesReceived,
-      bytesSent: g.bytesSent,
+      availableOutgoingBitrate: null !== (d = m.availableOutgoingBitrate) && void 0 !== d ? d : 0,
+      bytesReceived: m.bytesReceived,
+      bytesSent: m.bytesSent,
       ping: v
     },
     rtp: {
       inbound: E,
-      outbound: m
+      outbound: g
     }
   }
 }

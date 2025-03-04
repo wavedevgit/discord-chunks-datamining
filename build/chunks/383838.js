@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   Dd: () => h,
-  Sw: () => g,
-  To: () => m
+  Sw: () => m,
+  To: () => g
 });
 var r = n(200651);
 n(192379);
@@ -55,18 +55,18 @@ function p(e, t) {
   return i
 }
 let h = a.Z.Types,
-  g = {
+  m = {
     LEFT: "left",
     RIGHT: "right"
   };
 
-function m(e) {
+function g(e) {
   let t, n, {
       type: i = a.Z.Types.DANGER,
       imageData: d,
       button: p,
       className: h,
-      iconClassName: m,
+      iconClassName: g,
       title: E,
       body: v,
       style: b,
@@ -82,9 +82,9 @@ function m(e) {
       shrink: 0,
       children: (0, r.jsx)("img", f({
         alt: "",
-        className: o()(u.icon, m)
+        className: o()(u.icon, g)
       }, n))
-    }), e === g.RIGHT && (O = s.Z.Direction.HORIZONTAL_REVERSE)
+    }), e === m.RIGHT && (O = s.Z.Direction.HORIZONTAL_REVERSE)
   } else null != p && (n = p);
   let S = !0;
   return i === a.Z.Types.PRIMARY && (S = !1), (0, r.jsx)(a.Z, {
@@ -112,4 +112,4 @@ function m(e) {
     })
   })
 }
-m.Types = a.Z.Types
+g.Types = a.Z.Types

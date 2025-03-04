@@ -82,13 +82,13 @@ function h(e) {
   return Object.create(Object.getPrototypeOf(e), t)
 }
 
-function g(e, t) {
-  return void 0 === t && (t = !1), E(e) || i(e) || !o(e) || (s(e) > 1 && (e.set = e.add = e.clear = e.delete = m), Object.freeze(e), t && a(e, function(e, t) {
-    return g(t, !0)
+function m(e, t) {
+  return void 0 === t && (t = !1), E(e) || i(e) || !o(e) || (s(e) > 1 && (e.set = e.add = e.clear = e.delete = g), Object.freeze(e), t && a(e, function(e, t) {
+    return m(t, !0)
   }, !0)), e
 }
 
-function m() {
+function g() {
   r(2)
 }
 
@@ -176,15 +176,15 @@ function R(e, t, n, r, a, s, c) {
 }
 
 function P(e, t, n) {
-  void 0 === n && (n = !1), !e.l && e.h.D && e.m && g(t, n)
+  void 0 === n && (n = !1), !e.l && e.h.D && e.m && m(t, n)
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = e[Y];
   return (n ? p(n) : e)[t]
 }
 
-function w(e, t) {
+function D(e, t) {
   if (t in e)
     for (var n = Object.getPrototypeOf(e); n;) {
       var r = Object.getOwnPropertyDescriptor(n, t);
@@ -283,11 +283,11 @@ var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
       if (t === Y) return e;
       var n = p(e);
       if (!l(n, t)) return function(e, t, n) {
-        var r, i = w(t, n);
+        var r, i = D(t, n);
         return i ? "value" in i ? i.value : null === (r = i.get) || void 0 === r ? void 0 : r.call(e.k) : void 0
       }(e, n, t);
       var r = n[t];
-      return e.I || !o(r) ? r : r === D(e.t, t) ? (x(e), e.o[t] = M(e.A.h, r, e)) : r
+      return e.I || !o(r) ? r : r === w(e.t, t) ? (x(e), e.o[t] = M(e.A.h, r, e)) : r
     },
     has: function(e, t) {
       return t in p(e)
@@ -296,10 +296,10 @@ var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
       return Reflect.ownKeys(p(e))
     },
     set: function(e, t, n) {
-      var r = w(p(e), t);
+      var r = D(p(e), t);
       if (null == r ? void 0 : r.set) return r.set.call(e.k, n), !0;
       if (!e.P) {
-        var i = D(p(e), t),
+        var i = w(p(e), t),
           o = null == i ? void 0 : i[Y];
         if (o && o.t === n) return e.o[t] = n, e.R[t] = !1, !0;
         if (d(n, i) && (void 0 !== n || l(e.t, t))) return !0;
@@ -308,7 +308,7 @@ var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
       return e.o[t] === n && (void 0 !== n || t in e.o) || Number.isNaN(n) && Number.isNaN(e.o[t]) || (e.o[t] = n, e.R[t] = !0), !0
     },
     deleteProperty: function(e, t) {
-      return void 0 !== D(e.t, t) || t in e.t ? (e.R[t] = !1, x(e), L(e)) : delete e.R[t], e.o && delete e.o[t], !0
+      return void 0 !== w(e.t, t) || t in e.t ? (e.R[t] = !1, x(e), L(e)) : delete e.R[t], e.o && delete e.o[t], !0
     },
     getOwnPropertyDescriptor: function(e, t) {
       var n = p(e),
@@ -374,7 +374,7 @@ var ee = new(function() {
           }) : (O(c, i), A(a, c))
         }
         if (!e || "object" != typeof e) {
-          if (void 0 === (a = n(e)) && (a = e), a === H && (a = void 0), t.D && g(a, !0), i) {
+          if (void 0 === (a = n(e)) && (a = e), a === H && (a = void 0), t.D && m(a, !0), i) {
             var f = [],
               _ = [];
             v("Patches").M(e, a, f, _), i(f, _)

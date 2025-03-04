@@ -22,8 +22,8 @@ function p(e) {
     user: n,
     displayProfile: p,
     guild: h,
-    pendingAvatar: g,
-    pendingNickname: m,
+    pendingAvatar: m,
+    pendingNickname: g,
     pendingGlobalName: E,
     pendingBio: v,
     pendingPronouns: b,
@@ -32,12 +32,12 @@ function p(e) {
     pendingBadges: S,
     shouldOpenBadgeTooltip: I
   } = e, T = (0, i.e7)([c.ZP], () => null == h ? null : c.ZP.getMember(h.id, n.id)), N = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), A = null == p ? void 0 : null === (t = p.getPreviewBio(v)) || void 0 === t ? void 0 : t.value, C = null != b ? b : null == p ? void 0 : p.pronouns, R = (0, d.Ly)({
-    pendingNickname: m,
+    pendingNickname: g,
     pendingGlobalName: E,
     user: n,
     guildMember: T
   }), P = () => {
-    if (null != T && null !== g && (null != T.avatar || null != g)) return (0, r.jsx)(l.Z, {
+    if (null != T && null !== m && (null != T.avatar || null != m)) return (0, r.jsx)(l.Z, {
       user: n,
       nickname: R
     })

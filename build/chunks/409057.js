@@ -17,8 +17,8 @@ var i = n(120356),
   _ = n(906732),
   p = n(499254),
   h = n(827498),
-  g = n(541716),
-  m = n(379357),
+  m = n(541716),
+  g = n(379357),
   E = n(358696),
   v = n(649700),
   b = n(810568),
@@ -32,8 +32,8 @@ var i = n(120356),
   C = n(979038),
   R = n(448980),
   P = n(336383),
-  D = n(194811),
-  w = n(373826),
+  w = n(194811),
+  D = n(373826),
   L = n(315324),
   x = n(262210),
   M = n(103479),
@@ -122,13 +122,13 @@ function K(e) {
     userId: t.id,
     onAction: en
   }), ei = () => {
-    null != Z && (null == q || q(), p.__(h._b.TEXT, g.Ie.NORMAL, {
+    null != Z && (null == q || q(), p.__(h._b.TEXT, m.Ie.NORMAL, {
       applicationId: Z.id
     }))
   }, eo = (0, T.Z)(i), {
     largeImage: ea,
     smallImage: es
-  } = (0, m.FO)(i, Z), el = (0, a.EQ)(i).when(c.Z, () => null != Z ? ei : void 0).when(u.Z, () => et).when(l.Z, () => {
+  } = (0, g.FO)(i, Z), el = (0, a.EQ)(i).when(c.Z, () => null != Z ? ei : void 0).when(u.Z, () => et).when(l.Z, () => {
     if (t.id !== n.id) return () => (0, M.s)({
       activity: i,
       user: t,
@@ -161,18 +161,18 @@ function K(e) {
         size: "xxs",
         color: s.TVs.colors.TEXT_NORMAL,
         className: F.voiceIcon
-      }), (0, r.jsx)(w.Z, {
+      }), (0, r.jsx)(D.Z, {
         variant: "heading-sm/semibold",
         text: K.name
       })]
-    }) : (0, u.Z)(i) ? (0, r.jsx)(w.Z, {
+    }) : (0, u.Z)(i) ? (0, r.jsx)(D.Z, {
       variant: "heading-sm/semibold",
       text: i.name
-    }) : (0, r.jsx)(w.Z, {
+    }) : (0, r.jsx)(D.Z, {
       variant: "heading-sm/semibold",
       text: null !== (e = i.details) && void 0 !== e ? e : i.name
     })
-  }, ed = () => (0, d.Z)(i) && null != W ? (0, r.jsx)(w.Z, {
+  }, ed = () => (0, d.Z)(i) && null != W ? (0, r.jsx)(D.Z, {
     variant: "text-xs/normal",
     text: V.NW.formatToPlainString(V.t["hq/Qzc"], {
       guildName: W.name
@@ -182,15 +182,15 @@ function K(e) {
         action: "OPEN_VOICE_GUILD"
       }), null == q || q()
     }
-  }) : (0, u.Z)(i) ? (0, r.jsx)(w.Z, {
+  }) : (0, u.Z)(i) ? (0, r.jsx)(D.Z, {
     variant: "text-xs/normal",
     text: i.details
-  }) : (0, r.jsx)(w.Z, {
+  }) : (0, r.jsx)(D.Z, {
     text: i.state,
     variant: "text-xs/normal"
   }), ef = () => {
     var e;
-    return i.type === G.IIU.WATCHING ? null : (0, u.Z)(i) ? e_() : (0, r.jsx)(w.Z, {
+    return i.type === G.IIU.WATCHING ? null : (0, u.Z)(i) ? e_() : (0, r.jsx)(D.Z, {
       text: null === (e = i.assets) || void 0 === e ? void 0 : e.large_text,
       variant: "text-xs/normal"
     })
@@ -198,10 +198,10 @@ function K(e) {
     var e, t, n, o;
     return (null === (e = i.party) || void 0 === e ? void 0 : e.size) == null && i.application_id === B.Zc ? (0, r.jsxs)("div", {
       className: F.gameState,
-      children: [(0, r.jsx)(w.Z, {
+      children: [(0, r.jsx)(D.Z, {
         variant: "text-xs/normal",
         text: i.state
-      }), (0, r.jsx)(w.Z, {
+      }), (0, r.jsx)(D.Z, {
         variant: "text-xs/normal",
         text: V.NW.formatToPlainString(V.t["u//9Bw"], {
           count: "0",
@@ -210,10 +210,10 @@ function K(e) {
       })]
     }) : (0, c.Z)(i) && (null === (t = i.party) || void 0 === t ? void 0 : t.size) != null && (null === (n = i.party) || void 0 === n ? void 0 : n.size.length) >= 2 ? (0, r.jsxs)("div", {
       className: F.gameState,
-      children: [(0, r.jsx)(w.Z, {
+      children: [(0, r.jsx)(D.Z, {
         variant: "text-xs/normal",
         text: i.state
-      }), (0, r.jsx)(w.Z, {
+      }), (0, r.jsx)(D.Z, {
         variant: "text-xs/normal",
         text: 0 === i.party.size[1] ? V.NW.formatToPlainString(V.t.IM4J4e, {
           count: i.party.size[0]
@@ -222,7 +222,7 @@ function K(e) {
           max: i.party.size[1]
         })
       })]
-    }) : null == i.party ? (0, r.jsx)(w.Z, {
+    }) : null == i.party ? (0, r.jsx)(D.Z, {
       variant: "text-xs/normal",
       text: i.state
     }) : null
@@ -246,13 +246,13 @@ function K(e) {
       }), el(e)
     },
     children: [eu(), ed(), ef()]
-  }), eg = () => null == W || null == K ? null : (0, r.jsx)(L.Z, {
+  }), em = () => null == W || null == K ? null : (0, r.jsx)(L.Z, {
     user: t,
     guild: W,
     channel: K,
     onAction: en,
     onClose: q
-  }), em = () => t.id === n.id ? null : (0, r.jsx)("div", {
+  }), eg = () => t.id === n.id ? null : (0, r.jsx)("div", {
     className: o()(F.actions, $),
     children: (0, r.jsx)(C.Z, {
       activity: i,
@@ -268,7 +268,7 @@ function K(e) {
       className: o()(F.card, z),
       onAction: en,
       onClose: q,
-      children: [(0, r.jsx)(D.Z, Y(H({}, eo), {
+      children: [(0, r.jsx)(w.Z, Y(H({}, eo), {
         contextMenu: (0, r.jsx)(k.Z, {
           display: "live",
           user: t,
@@ -288,9 +288,9 @@ function K(e) {
               activity: i,
               className: F.badges
             }), ep()]
-          }), J === U.y0.FULL_SIZE && em()]
-        }), eg()]
-      }), J !== U.y0.FULL_SIZE && em()]
+          }), J === U.y0.FULL_SIZE && eg()]
+        }), em()]
+      }), J !== U.y0.FULL_SIZE && eg()]
     })
   })
 }

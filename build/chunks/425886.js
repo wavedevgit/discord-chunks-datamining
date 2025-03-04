@@ -23,7 +23,7 @@ class s extends i.PureComponent {
       autoMute: _,
       onMute: p,
       mimeType: h,
-      onPlay: g
+      onPlay: m
     } = this.props;
     return (0, r.jsx)(a.ZP, {
       src: e,
@@ -41,7 +41,7 @@ class s extends i.PureComponent {
       onVolumeHide: f,
       renderLinkComponent: c,
       mimeType: h,
-      onPlay: g
+      onPlay: m
     })
   }
 }

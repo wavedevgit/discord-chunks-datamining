@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   K: () => E,
-  i: () => m
+  i: () => g
 }), n(47120), n(301563);
 var r = n(933557),
   i = n(927723),
@@ -17,9 +17,9 @@ var r = n(933557),
   _ = n(483360),
   p = n(709054),
   h = n(752305),
-  g = n(377668);
+  m = n(377668);
 
-function m(e, t, n, r) {
+function g(e, t, n, r) {
   let {
     allowUsers: i = !0,
     allowRoles: o = !0
@@ -36,7 +36,7 @@ function m(e, t, n, r) {
 }
 
 function E(e, t, n, r) {
-  let i = m(e, t, n, r);
+  let i = g(e, t, n, r);
   return null == i ? null : (0, h.VI)(i)
 }
 
@@ -76,9 +76,9 @@ function v(e, t, n, r, o) {
               text: ""
             }]
           };
-        if (f && b(a, s, g.fL)) return {
+        if (f && b(a, s, m.fL)) return {
           type: "userMention",
-          userId: g.fL,
+          userId: m.fL,
           children: [{
             text: ""
           }]
@@ -91,7 +91,7 @@ function v(e, t, n, r, o) {
 
 function b(e, t, n) {
   let r = f.default.getUser(n);
-  return null != r && (n === g.fL && "clyde" === e.toLowerCase() || r.username === e && r.discriminator === (null != t ? t : "0"))
+  return null != r && (n === m.fL && "clyde" === e.toLowerCase() || r.username === e && r.discriminator === (null != t ? t : "0"))
 }
 
 function y(e, t) {

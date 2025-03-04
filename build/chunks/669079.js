@@ -33,8 +33,8 @@ var r = n(278074),
   _ = n(226951),
   p = n(73346),
   h = n(981631),
-  g = n(474936),
-  m = n(388032);
+  m = n(474936),
+  g = n(388032);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -68,9 +68,9 @@ let b = ["discordapp.com/gifts", "discord.com/gifts"],
   C = A(4, 4),
   R = A(4, 6),
   P = A(5, 3),
-  D = "WUMP-?",
-  w = [C, R, P, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
-  L = new RegExp("^(".concat(D, ")?(").concat(w, ")$")),
+  w = "WUMP-?",
+  D = [C, R, P, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
+  L = new RegExp("^(".concat(w, ")?(").concat(D, ")$")),
   x = "-";
 var M = function(e) {
   return e[e.DEFAULT = 0] = "DEFAULT", e[e.CUSTOM_STYLE = 1] = "CUSTOM_STYLE", e[e.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD = 2] = "CUSTOM_MESSAGE_EMOJI_SOUNDBOARD", e
@@ -154,59 +154,59 @@ function Y(e, t, n, r, i, o, a) {
 function K(e, t, n) {
   switch (e) {
     case h.wZ8.ERROR:
-      return m.NW.formatToMarkdownString(m.t.JUvC0t, {});
+      return g.NW.formatToMarkdownString(g.t.JUvC0t, {});
     case h.wZ8.SUCCESS:
-      return t.isSubscription ? m.NW.formatToPlainString(m.t["1C2BGx"], {
+      return t.isSubscription ? g.NW.formatToPlainString(g.t["1C2BGx"], {
         skuName: n.name
-      }) : m.NW.string(m.t["+BNMcH"]);
+      }) : g.NW.string(g.t["+BNMcH"]);
     case h.wZ8.CONFIRM:
     default:
-      return t.isSubscription ? m.NW.formatToPlainString(m.t["2VN4Nz"], {
+      return t.isSubscription ? g.NW.formatToPlainString(g.t["2VN4Nz"], {
         skuName: n.name
-      }) : m.NW.string(m.t.RmamAA)
+      }) : g.NW.string(g.t.RmamAA)
   }
 }
 
 function z(e, t, n) {
   switch (e) {
     case h.wZ8.ERROR:
-      return m.NW.string(m.t.w19zb2);
+      return g.NW.string(g.t.w19zb2);
     case h.wZ8.SUCCESS:
-      if (__OVERLAY__) return m.NW.string(m.t.zW87EB);
-      if (t.isSubscription) return m.NW.string(m.t.ex5TKi);
-      return m.NW.string(m.t.OOkjqq);
+      if (__OVERLAY__) return g.NW.string(g.t.zW87EB);
+      if (t.isSubscription) return g.NW.string(g.t.ex5TKi);
+      return g.NW.string(g.t.OOkjqq);
     case h.wZ8.OPEN:
-      return m.NW.string(m.t.F8ktcn);
+      return g.NW.string(g.t.F8ktcn);
     case h.wZ8.CONFIRM:
     default:
-      if (null != n && n) return m.NW.string(m.t.n6I6k5);
-      if (null != t.giftStyle) return t.isClaimed ? m.NW.string(m.t.OgpR0d) : m.NW.string(m.t["2BWscn"]);
-      return t.isSubscription ? m.NW.string(m.t.wQ1FHx) : m.NW.string(m.t.OgpR0d)
+      if (null != n && n) return g.NW.string(g.t.n6I6k5);
+      if (null != t.giftStyle) return t.isClaimed ? g.NW.string(g.t.OgpR0d) : g.NW.string(g.t["2BWscn"]);
+      return t.isSubscription ? g.NW.string(g.t.wQ1FHx) : g.NW.string(g.t.OgpR0d)
   }
 }
 
 function q(e) {
   return (0, r.EQ)(e).with({
-    interval: g.rV.MONTH,
-    premiumSubscriptionType: g.p9.TIER_2
-  }, () => m.NW.formatToPlainString(m.t["vFfV+P"], {
-    timeInterval: m.NW.string(m.t.FPybU1)
+    interval: m.rV.MONTH,
+    premiumSubscriptionType: m.p9.TIER_2
+  }, () => g.NW.formatToPlainString(g.t["vFfV+P"], {
+    timeInterval: g.NW.string(g.t.FPybU1)
   })).with({
-    interval: g.rV.YEAR,
-    premiumSubscriptionType: g.p9.TIER_2
-  }, () => m.NW.formatToPlainString(m.t["vFfV+P"], {
-    timeInterval: m.NW.string(m.t.tfqrho)
+    interval: m.rV.YEAR,
+    premiumSubscriptionType: m.p9.TIER_2
+  }, () => g.NW.formatToPlainString(g.t["vFfV+P"], {
+    timeInterval: g.NW.string(g.t.tfqrho)
   })).with({
-    interval: g.rV.MONTH,
-    premiumSubscriptionType: g.p9.TIER_1
-  }, () => m.NW.formatToPlainString(m.t.gjKbFx, {
+    interval: m.rV.MONTH,
+    premiumSubscriptionType: m.p9.TIER_1
+  }, () => g.NW.formatToPlainString(g.t.gjKbFx, {
     intervalCount: e.intervalCount
   })).with({
-    interval: g.rV.YEAR,
-    premiumSubscriptionType: g.p9.TIER_1
-  }, () => m.NW.formatToPlainString(m.t.GIe7Bw, {
+    interval: m.rV.YEAR,
+    premiumSubscriptionType: m.p9.TIER_1
+  }, () => g.NW.formatToPlainString(g.t.GIe7Bw, {
     intervalCount: e.intervalCount
-  })).otherwise(() => m.NW.string(m.t["5ayf7+"]))
+  })).otherwise(() => g.NW.string(g.t["5ayf7+"]))
 }
 
 function Q(e) {
@@ -225,19 +225,19 @@ function Q(e) {
       return X(r, i, o, a, s);
     case h.wZ8.SUCCESS:
       if (null != l) return q(l);
-      return m.NW.formatToPlainString(m.t["3CPsbm"], {
+      return g.NW.formatToPlainString(g.t["3CPsbm"], {
         skuName: n.name
       });
     case h.wZ8.CONFIRM:
     default:
       if (null != l) {
-        let e = l.interval === g.rV.MONTH ? m.t.P9eTKi : m.t.d8rUd3;
-        return m.NW.format(e, {
+        let e = l.interval === m.rV.MONTH ? g.t.P9eTKi : g.t.d8rUd3;
+        return g.NW.format(e, {
           skuName: n.name,
           intervalCount: l.intervalCount
         })
       }
-      return m.NW.formatToPlainString(m.t.l6Ea4e, {
+      return g.NW.formatToPlainString(g.t.l6Ea4e, {
         skuName: n.name
       })
   }
@@ -245,7 +245,7 @@ function Q(e) {
 
 function X(e, t, n, r, i) {
   let o = n || r ? void 0 : e,
-    a = m.NW.format(m.t["5zyz9/"], {
+    a = g.NW.format(g.t["5zyz9/"], {
       onGoToLibrary: i
     });
   return null != o ? a : null == t ? null : et(t, c.default.getCurrentUser())
@@ -273,26 +273,26 @@ let ee = (e, t) => (0, o.e7)([l.Z], () => {
 function et(e, t) {
   switch (e.code) {
     case h.evJ.INVALID_GIFT_SELF_REDEMPTION:
-      return m.NW.string(m.t.wa9h7O);
+      return g.NW.string(g.t.wa9h7O);
     case h.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED:
-      return m.NW.string(m.t.Iw2TUV);
+      return g.NW.string(g.t.Iw2TUV);
     case h.evJ.INVALID_GIFT_REDEMPTION_OWNED:
-      return m.NW.string(m.t.mdLtb2);
+      return g.NW.string(g.t.mdLtb2);
     case h.evJ.UNKNOWN_GIFT_CODE:
-      return m.NW.string(m.t.roztIi);
+      return g.NW.string(g.t.roztIi);
     case h.evJ.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_INCOMPATIBLE:
-      return m.NW.formatToPlainString(m.t["4YTHKy"], {
-        planName: (0, f.M5)(t, g.p9.TIER_2) ? m.NW.string(m.t["lG6a5+"]) : m.NW.string(m.t["FSOz7+"])
+      return g.NW.formatToPlainString(g.t["4YTHKy"], {
+        planName: (0, f.M5)(t, m.p9.TIER_2) ? g.NW.string(g.t["lG6a5+"]) : g.NW.string(g.t["FSOz7+"])
       });
     case h.evJ.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_MANAGED:
-      return m.NW.string(m.t["9i1J39"]);
+      return g.NW.string(g.t["9i1J39"]);
     case h.evJ.INVALID_GIFT_REDEMPTION_INVOICE_OPEN:
-      return m.NW.string(m.t.U26WX1);
+      return g.NW.string(g.t.U26WX1);
     case h.evJ.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED:
-      return m.NW.string(m.t.ypuSd3);
+      return g.NW.string(g.t.ypuSd3);
     case h.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE:
-      return m.NW.string(m.t.mXMmWF);
+      return g.NW.string(g.t.mXMmWF);
     default:
-      return m.NW.string(m.t["s9+XlJ"])
+      return g.NW.string(g.t["s9+XlJ"])
   }
 }

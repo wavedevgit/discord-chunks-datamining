@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(47120);
 var r, i = n(442837),
   o = n(570140),
@@ -75,7 +75,7 @@ l(h, "displayName", "HotspotStore"), l(h, "persistKey", "hotspots"), l(h, "migra
   hiddenHotspots: null != e ? e : [],
   hotspotOverrides: {}
 })]);
-let g = new h(o.Z, {
+let m = new h(o.Z, {
   OVERLAY_INITIALIZE: p,
   HOTSPOT_HIDE: d,
   HOTSPOT_OVERRIDE_SET: f,

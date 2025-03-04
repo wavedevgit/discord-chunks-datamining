@@ -45,8 +45,8 @@ function _(e) {
         attributes: {},
         styles: {}
       },
-      g = [],
-      m = !1,
+      m = [],
+      g = !1,
       E = {
         state: p,
         setOptions: function(n) {
@@ -61,7 +61,7 @@ function _(e) {
           }), v(), E.update()
         },
         forceUpdate: function() {
-          if (!m) {
+          if (!g) {
             var e = p.elements,
               t = e.reference,
               n = e.popper;
@@ -98,7 +98,7 @@ function _(e) {
           })
         }),
         destroy: function() {
-          b(), m = !0
+          b(), g = !0
         }
       };
     if (!f(e, t)) return E;
@@ -117,18 +117,18 @@ function _(e) {
               options: r
             }),
             a = function() {};
-          g.push(o || a)
+          m.push(o || a)
         }
       })
     }
 
     function b() {
-      g.forEach(function(e) {
+      m.forEach(function(e) {
         return e()
-      }), g = []
+      }), m = []
     }
     return E.setOptions(n).then(function(e) {
-      !m && n.onFirstUpdate && n.onFirstUpdate(e)
+      !g && n.onFirstUpdate && n.onFirstUpdate(e)
     }), E
   }
 }

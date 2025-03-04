@@ -16,8 +16,8 @@ var r = n(664751),
   _ = n(669764),
   p = n(706454),
   h = n(757266),
-  g = n(77498),
-  m = n(283595),
+  m = n(77498),
+  g = n(283595),
   E = n(417363),
   v = n(626135),
   b = n(630388),
@@ -31,9 +31,9 @@ var r = n(664751),
   C = n(701488),
   R = n(388032);
 let P = 3,
-  D = 20;
+  w = 20;
 
-function w(e) {
+function D(e) {
   let {
     applicationId: t,
     secret: n,
@@ -120,7 +120,7 @@ async function M(e) {
     locationObject: s = {},
     analyticsLocations: f = [],
     joinUserId: _,
-    joinSessionId: g,
+    joinSessionId: m,
     secret: v,
     activity: b
   } = e;
@@ -132,7 +132,7 @@ async function M(e) {
     locationObject: s,
     analyticsLocations: f,
     joinUserId: _,
-    joinSessionId: g,
+    joinSessionId: m,
     secret: v,
     instanceId: void 0,
     isContextlessActivity: (0, u.Z)(b, A.xjy.EMBEDDED) && (0, u.Z)(b, A.xjy.CONTEXTLESS)
@@ -140,14 +140,14 @@ async function M(e) {
   if (h.Z.isConnected(t)) return Promise.resolve();
   let O = null;
   if (null == n) {
-    let e = m.Z.getActiveLibraryApplication(t);
+    let e = g.Z.getActiveLibraryApplication(t);
     n = null != e ? e.branchId : t
   }
   if (E.Z.isLaunchable(t, n)) {
     let e = E.Z.getState(t, n),
-      r = m.Z.getActiveLaunchOptionId(t, n);
+      r = g.Z.getActiveLaunchOptionId(t, n);
     if (null == e) throw Error("Missing dispatch game when launching");
-    let i = m.Z.getLibraryApplication(t, n);
+    let i = g.Z.getLibraryApplication(t, n);
     if (null == i) throw Error("Missing library application when launching");
     O = x(t).then(t => y.Z.launchDispatchApplication(e, t, p.default.locale, i.getBranchName(), r))
   } else {
@@ -190,9 +190,9 @@ let k = {
     })
   },
   toggleOverlay(e, t, n) {
-    let r = g.Z.getGameByName(e.name);
+    let r = m.Z.getGameByName(e.name);
     if (null != r) {
-      let e = m.Z.getActiveLibraryApplication(r.id);
+      let e = g.Z.getActiveLibraryApplication(r.id);
       if (null != e) {
         let r = e.getFlags(),
           i = b.yE(r, A.eHb.OVERLAY_DISABLED);
@@ -275,11 +275,11 @@ let k = {
         })
       }
     };
-    for (; n.length > 0;) r(n.splice(0, D))
+    for (; n.length > 0;) r(n.splice(0, w))
   },
   getDetectableGames() {
-    if (g.Z.fetching || null != g.Z.lastFetched) return;
-    let e = g.Z.detectableGamesEtag;
+    if (m.Z.fetching || null != m.Z.lastFetched) return;
+    let e = m.Z.detectableGamesEtag;
     l.Z.wait(() => {
       l.Z.dispatch({
         type: "GAMES_DATABASE_FETCH"
@@ -320,7 +320,7 @@ let k = {
         304 === t ? l.Z.dispatch({
           type: "GAMES_DATABASE_UPDATE",
           games: [],
-          etag: g.Z.detectableGamesEtag
+          etag: m.Z.detectableGamesEtag
         }) : l.Z.dispatch({
           type: "GAMES_DATABASE_FETCH_FAIL"
         })
@@ -415,7 +415,7 @@ let k = {
     });
     try {
       let e = await I.Z.getJoinSecret(t, n, r, i, o);
-      return w({
+      return D({
         applicationId: r,
         secret: e,
         channelId: i,
@@ -436,5 +436,5 @@ let k = {
       }), !1
     }
   },
-  joinWithSecret: w
+  joinWithSecret: D
 }

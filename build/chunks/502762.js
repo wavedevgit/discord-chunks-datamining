@@ -21,8 +21,8 @@ let _ = Object.assign(i.forwardRef(function(e, t) {
     className: _,
     pendingThemeColors: p,
     themeOverride: h,
-    children: g,
-    forceShowPremium: m = !1
+    children: m,
+    forceShowPremium: g = !1
   } = e, {
     theme: E,
     primaryColor: v,
@@ -31,7 +31,7 @@ let _ = Object.assign(i.forwardRef(function(e, t) {
     user: n,
     displayProfile: i,
     pendingThemeColors: p,
-    isPreview: m
+    isPreview: g
   }), {
     profileThemeStyle: y,
     profileThemeClassName: O
@@ -57,7 +57,7 @@ let _ = Object.assign(i.forwardRef(function(e, t) {
           theme: null != h ? h : E,
           primaryColor: v,
           secondaryColor: b,
-          children: g
+          children: m
         })
       })
     })

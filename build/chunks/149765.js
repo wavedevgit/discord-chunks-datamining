@@ -12,7 +12,7 @@ n.d(t, {
   hX: () => v,
   r0: () => R,
   ug: () => P,
-  vB: () => m
+  vB: () => g
 }), n(309749);
 var r = n(654861),
   i = n.n(r);
@@ -135,13 +135,13 @@ let h = p ? function(e) {
   } : function(e) {
     return e instanceof _
   },
-  g = {},
-  m = p ? function(e) {
+  m = {},
+  g = p ? function(e) {
     return BigInt(e)
   } : function(e) {
-    return e instanceof _ ? e : ("number" == typeof e && (e = e.toString()), null != g[e] || (g[e] = _.fromString(e)), g[e])
+    return e instanceof _ ? e : ("number" == typeof e && (e = e.toString()), null != m[e] || (m[e] = _.fromString(e)), m[e])
   },
-  E = m(0),
+  E = g(0),
   v = p ? function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : E,
       t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : E;

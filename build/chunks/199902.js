@@ -12,8 +12,8 @@ var s, l = n(442837),
   _ = n(102172),
   p = n(139656),
   h = n(855403),
-  g = n(314897),
-  m = n(592125),
+  m = n(314897),
+  g = n(592125),
   E = n(430824),
   v = n(131951),
   b = n(496675),
@@ -62,8 +62,8 @@ function R(e, t) {
   }), e
 }
 let P = null,
-  D = {},
-  w = null;
+  w = {},
+  D = null;
 
 function L() {
   r = new Map, i = {}, o = {}, a = {}
@@ -121,8 +121,8 @@ function G(e) {
       discoverable: s
     }), !0;
     {
-      let t = g.default.getSessionId();
-      return n === g.default.getId() && o !== t && null != y.Z.getChannelId() ? e : M(n, r) || e
+      let t = m.default.getSessionId();
+      return n === m.default.getId() && o !== t && null != y.Z.getChannelId() ? e : M(n, r) || e
     }
   }, !1)
 }
@@ -133,7 +133,7 @@ function B(e) {
   } = e, n = (0, f.my)(t);
   r.delete(t), r.set(t, R(A({}, n), {
     state: I.jm8.CONNECTING
-  })), n.ownerId === g.default.getId() && (D[n.channelId] = !1)
+  })), n.ownerId === m.default.getId() && (w[n.channelId] = !1)
 }
 
 function V(e) {
@@ -151,10 +151,10 @@ function V(e) {
     streamType: n,
     guildId: i,
     channelId: o,
-    ownerId: g.default.getId()
-  }), m = null !== (t = null != s ? d.ZP.getGameForPID(s) : null != c ? d.ZP.getRunningGames().find(e => (0, h.Z)(c, e.windowHandle)) : null) && void 0 !== t ? t : null;
+    ownerId: m.default.getId()
+  }), g = null !== (t = null != s ? d.ZP.getGameForPID(s) : null != c ? d.ZP.getRunningGames().find(e => (0, h.Z)(c, e.windowHandle)) : null) && void 0 !== t ? t : null;
   a[p] = {
-    id: null == m ? void 0 : m.id,
+    id: null == g ? void 0 : g.id,
     pid: s,
     sourceName: l,
     previewDisabled: _,
@@ -163,7 +163,7 @@ function V(e) {
     streamType: n,
     guildId: i,
     channelId: o,
-    ownerId: g.default.getId(),
+    ownerId: m.default.getId(),
     state: I.jm8.CONNECTING
   })
 }
@@ -205,7 +205,7 @@ function W(e) {
   } = e;
   P = t, Array.from(r.values()).forEach(e => {
     (0, f.V9)(e) !== P && e.state === I.jm8.ENDED && k((0, f.V9)(e))
-  }), null != t && (0, f.DB)(t) && t.includes(g.default.getId()) && (D[n] = !1)
+  }), null != t && (0, f.DB)(t) && t.includes(m.default.getId()) && (w[n] = !1)
 }
 
 function Y(e) {
@@ -273,39 +273,39 @@ function q(e) {
     channelId: t,
     selfStreamHidden: n
   } = e;
-  (0, f.DB)(P) && (null == P ? void 0 : P.includes(g.default.getId())) && !1 === D[t] && !0 === n && (P = null), D[t] = n
+  (0, f.DB)(P) && (null == P ? void 0 : P.includes(m.default.getId())) && !1 === w[t] && !0 === n && (P = null), w[t] = n
 }
 
 function Q(e) {
   let {
     intent: t
   } = e;
-  w = t
+  D = t
 }
 
 function X(e, t) {
-  let n = m.Z.getBasicChannel(t);
+  let n = g.Z.getBasicChannel(t);
   return e === T.lo.CALL || null != n && b.Z.canBasicChannel(I.S7T.VIEW_CHANNEL, n)
 }
 
 function J(e) {
   if (X(e.streamType, e.channelId)) return !0;
-  let t = m.Z.getBasicChannel(e.channelId);
+  let t = g.Z.getBasicChannel(e.channelId);
   return null != t && (0, _.p9)(t, S.Z, E.Z, b.Z, u.Z)[0]
 }
 L();
 class $ extends(s = l.ZP.PersistedStore) {
   initialize(e) {
-    this.syncWith([b.Z], () => !0), this.waitFor(d.ZP, b.Z), (null == e ? void 0 : e.selfStreamParticipantsHidden) !== void 0 && Object.assign(D, null == e ? void 0 : e.selfStreamParticipantsHidden)
+    this.syncWith([b.Z], () => !0), this.waitFor(d.ZP, b.Z), (null == e ? void 0 : e.selfStreamParticipantsHidden) !== void 0 && Object.assign(w, null == e ? void 0 : e.selfStreamParticipantsHidden)
   }
   getState() {
     return {
-      selfStreamParticipantsHidden: D
+      selfStreamParticipantsHidden: w
     }
   }
   isSelfStreamHidden(e) {
     var t;
-    return null !== (t = D[e]) && void 0 !== t && t
+    return null !== (t = w[e]) && void 0 !== t && t
   }
   getLastActiveStream() {
     var e;
@@ -329,8 +329,8 @@ class $ extends(s = l.ZP.PersistedStore) {
   }
   getCurrentUserActiveStream() {
     let e = O.Z.getVoiceChannelId(),
-      t = m.Z.getChannel(e);
-    return null == t ? null : this.getActiveStreamForUser(g.default.getId(), t.getGuildId())
+      t = g.Z.getChannel(e);
+    return null == t ? null : this.getActiveStreamForUser(m.default.getId(), t.getGuildId())
   }
   getActiveStreamForUser(e, t) {
     var n;
@@ -340,9 +340,9 @@ class $ extends(s = l.ZP.PersistedStore) {
   getStreamerActiveStreamMetadata() {
     var e;
     let t = O.Z.getVoiceChannelId(),
-      n = m.Z.getChannel(t);
+      n = g.Z.getChannel(t);
     if (null == n) return null;
-    let r = this.getActiveStreamForUser(g.default.getId(), n.getGuildId());
+    let r = this.getActiveStreamForUser(m.default.getId(), n.getGuildId());
     return null == r ? null : null !== (e = a[(0, f.V9)(r)]) && void 0 !== e ? e : null
   }
   getStreamerActiveStreamMetadataForStream(e) {
@@ -389,7 +389,7 @@ class $ extends(s = l.ZP.PersistedStore) {
     return null != n ? n.viewerIds : []
   }
   getCurrentAppIntent() {
-    return w
+    return D
   }
   getStreamingState() {
     return (0, p.Z)(v.Z) ? {

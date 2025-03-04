@@ -4,8 +4,8 @@ n.d(t, {
   JL: () => p,
   P9: () => h,
   h_: () => E,
-  p9: () => g,
-  wq: () => m
+  p9: () => m,
+  wq: () => g
 }), n(653041), n(47120);
 var r = n(442837),
   i = n(387343),
@@ -41,7 +41,7 @@ function h(e) {
   }
 }
 
-function g(e, t, n, r, o) {
+function m(e, t, n, r, o) {
   let s;
   if (null == e) return [!1, 2];
   let l = t.isInChannel(e.id),
@@ -53,8 +53,8 @@ function g(e, t, n, r, o) {
   return [!__OVERLAY__ && !f && (l || _), s]
 }
 
-function m(e) {
-  return (0, r.Wu)([u.Z, l.Z, c.Z, o.Z], () => g(e, u.Z, l.Z, c.Z, o.Z))
+function g(e) {
+  return (0, r.Wu)([u.Z, l.Z, c.Z, o.Z], () => m(e, u.Z, l.Z, c.Z, o.Z))
 }
 
 function E(e, t, n) {

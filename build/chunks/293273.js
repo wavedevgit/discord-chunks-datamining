@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => D
+  Z: () => w
 }), n(653041), n(47120);
 var r, i = n(348327),
   o = n.n(i),
@@ -15,8 +15,8 @@ var r, i = n(348327),
   _ = n(406066),
   p = n(768419),
   h = n(695346),
-  g = n(581883),
-  m = n(199902),
+  m = n(581883),
+  g = n(199902),
   E = n(272053),
   v = n(77498),
   b = n(981631);
@@ -63,9 +63,9 @@ function T() {
   let a = f.ZP.getVisibleGame(),
     l = null != a && null != a.name && i.has(a.name),
     c = null != a && a.isLauncher,
-    u = null != m.Z.getCurrentUserActiveStream(),
-    g = l || c && !u;
-  if (null != a && null != a.name && !g) {
+    u = null != g.Z.getCurrentUserActiveStream(),
+    m = l || c && !u;
+  if (null != a && null != a.name && !m) {
     var y, T;
     e.push({
       type: b.IIU.PLAYING,
@@ -111,7 +111,7 @@ function R(e) {
 }
 class P extends(r = l.ZP.Store) {
   initialize() {
-    this.waitFor(f.ZP, u.ZP, E.Z, m.Z, p.Z, g.Z, v.Z), this.syncWith([_.Z], () => T())
+    this.waitFor(f.ZP, u.ZP, E.Z, g.Z, p.Z, m.Z, v.Z), this.syncWith([_.Z], () => T())
   }
   getActivities() {
     return S
@@ -138,7 +138,7 @@ class P extends(r = l.ZP.Store) {
   }
 }
 y(P, "displayName", "LocalActivityStore");
-let D = new P(c.Z, {
+let w = new P(c.Z, {
   OVERLAY_INITIALIZE: R,
   START_SESSION: N,
   LOCAL_ACTIVITY_UPDATE: A,

@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  SD: () => m,
-  cN: () => g,
+  SD: () => g,
+  cN: () => m,
   fD: () => d,
   mh: () => h,
   pC: () => f
@@ -95,7 +95,7 @@ function h(e, t) {
   }
 }
 
-function g(e) {
+function m(e) {
   let {
     assetOrigin: t = s.q.NEW_ASSET,
     imageUri: n,
@@ -120,7 +120,7 @@ function g(e) {
   }
 }
 
-function m(e) {
+function g(e) {
   let {
     userId: t,
     image: n,

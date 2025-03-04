@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(357355),
   p = n(98278),
   h = n(104494),
-  g = n(639119),
-  m = n(165583),
+  m = n(639119),
+  g = n(165583),
   E = n(197115),
   v = n(631771),
   b = n(609218),
@@ -31,9 +31,9 @@ var r = n(200651),
   C = n(185923),
   R = n(474936),
   P = n(388032),
-  D = n(79209);
+  w = n(79209);
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -49,7 +49,7 @@ function L(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
@@ -74,7 +74,7 @@ function M(e, t) {
 let k = e => {
   let t, {
       onLearnMore: o,
-      onClose: w,
+      onClose: D,
       channel: x,
       emojiDescriptor: k,
       pickerIntention: j,
@@ -88,7 +88,7 @@ let k = e => {
     },
     H = n(577391)("./img_premium_emoji_".concat(B, ".svg")),
     W = "https://cdn.discordapp.com/assets/premium/roadblocks/emoji_".concat(B, ".png"),
-    Y = (0, g.N)(),
+    Y = (0, m.N)(),
     K = (0, h.Ng)(),
     z = null != Y || null != K,
     q = (0, f.Iu)(e => e.searchQuery),
@@ -139,7 +139,7 @@ let k = e => {
       description: P.NW.string(P.t.dURIzc),
       enableSocialProof: es,
       analyticsLocationSection: A.jXE.EMOJI_UPSELL_POPOUT,
-      onClose: w,
+      onClose: D,
       upsellViewedTrackingData: {
         type: t,
         is_external: en,
@@ -153,17 +153,17 @@ let k = e => {
       }
     });
   return J ? el() : (0, r.jsxs)("div", {
-    className: a()(D.premiumPromo, {
-      [D.unifyTrialUpsell]: z
+    className: a()(w.premiumPromo, {
+      [w.unifyTrialUpsell]: z
     }),
     children: [(0, r.jsx)(l.P3F, {
-      className: D.premiumPromoClose,
-      onClick: w,
+      className: w.premiumPromoClose,
+      onClick: D,
       children: P.NW.string(P.t.cpT0Cg)
-    }), z ? (0, r.jsx)(m.ZP, {
+    }), z ? (0, r.jsx)(g.ZP, {
       type: R.cd.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI,
       subscriptionTier: R.Si.TIER_2,
-      onClose: w,
+      onClose: D,
       trialOffer: Y,
       discountOffer: K,
       children: P.NW.format(P.t.se13Fh, {
@@ -172,13 +172,13 @@ let k = e => {
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("img", {
         alt: "",
-        className: D.premiumPromoImage,
+        className: w.premiumPromoImage,
         src: H
       }), (0, r.jsx)("div", {
-        className: D.premiumPromoTitle,
+        className: w.premiumPromoTitle,
         children: P.NW.string(P.t["1SsvhY"])
       }), (0, r.jsx)("div", {
-        className: D.premiumPromoDescription,
+        className: w.premiumPromoDescription,
         children: P.NW.format(P.t.se13Fh, {
           onClick: Z
         })
@@ -196,7 +196,7 @@ let k = e => {
         F(!0)
       },
       onSubscribeModalClose: e => {
-        F(!1), e && w()
+        F(!1), e && D()
       },
       buttonText: ei()
     })]

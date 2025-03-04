@@ -16,34 +16,34 @@ var r = n(566885),
   },
   h = p.prototype;
 e.exports = function(e, t, n) {
-  var g, m, E, v, b, y, O, S = n && n.that,
+  var m, g, E, v, b, y, O, S = n && n.that,
     I = !!(n && n.AS_ENTRIES),
     T = !!(n && n.IS_RECORD),
     N = !!(n && n.IS_ITERATOR),
     A = !!(n && n.INTERRUPTED),
     C = r(t, S),
     R = function(e) {
-      return g && f(g, "normal", e), new p(!0, e)
+      return m && f(m, "normal", e), new p(!0, e)
     },
     P = function(e) {
       return I ? (o(e), A ? C(e[0], e[1], R) : C(e[0], e[1])) : A ? C(e, R) : C(e)
     };
-  if (T) g = e.iterator;
-  else if (N) g = e;
+  if (T) m = e.iterator;
+  else if (N) m = e;
   else {
-    if (!(m = d(e))) throw _(a(e) + " is not iterable");
-    if (s(m)) {
+    if (!(g = d(e))) throw _(a(e) + " is not iterable");
+    if (s(g)) {
       for (E = 0, v = l(e); v > E; E++)
         if ((b = P(e[E])) && c(h, b)) return b;
       return new p(!1)
     }
-    g = u(e, m)
+    m = u(e, g)
   }
-  for (y = T ? e.next : g.next; !(O = i(y, g)).done;) {
+  for (y = T ? e.next : m.next; !(O = i(y, m)).done;) {
     try {
       b = P(O.value)
     } catch (e) {
-      f(g, "throw", e)
+      f(m, "throw", e)
     }
     if ("object" == typeof b && b && c(h, b)) return b
   }

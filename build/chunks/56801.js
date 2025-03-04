@@ -47,13 +47,13 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -115,8 +115,8 @@ function S(e) {
         children: e => {
           var {
             onClick: t
-          } = e, n = m(e, ["onClick"]);
-          return (0, r.jsx)(s.P3F, g(p({
+          } = e, n = g(e, ["onClick"]);
+          return (0, r.jsx)(s.P3F, m(p({
             "aria-label": i.name,
             onClick: () => {
               E(i), null == t || t()

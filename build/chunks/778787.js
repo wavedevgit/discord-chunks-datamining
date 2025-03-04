@@ -53,9 +53,9 @@ function h(e, t) {
   }), e
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -63,7 +63,7 @@ function g(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -90,7 +90,7 @@ class b extends l.Z {
       prices: i,
       bundled_products: o,
       variants: l
-    } = e, c = g(e, ["type", "premium_type", "category_sku_id", "prices", "bundled_products", "variants"]);
+    } = e, c = m(e, ["type", "premium_type", "category_sku_id", "prices", "bundled_products", "variants"]);
     return new b(h(_({}, super.fromServer(c)), {
       type: t,
       premiumType: n === d.WND ? null : n,
@@ -113,7 +113,7 @@ class y extends b {
       base_variant_sku_id: n,
       variant_label: r,
       variant_value: i
-    } = e, o = g(e, ["base_variant_name", "base_variant_sku_id", "variant_label", "variant_value"]);
+    } = e, o = m(e, ["base_variant_name", "base_variant_sku_id", "variant_label", "variant_value"]);
     return new y(h(_({}, super.fromServer(o)), {
       baseVariantName: t,
       baseVariantSkuId: n,

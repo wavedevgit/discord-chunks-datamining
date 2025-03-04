@@ -150,14 +150,14 @@ class p extends r.EventEmitter {
       query: _
     } = c, p = r || n && ((null === (e = this.state.query) || void 0 === e ? void 0 : e.queryText) !== _ || (null === (t = this.state.query) || void 0 === t ? void 0 : t.typeInfo) !== f), h = a.fq.getSetting();
     i.allowStickers = i.allowStickers ? h : i.allowStickers;
-    let g = a.eR.getSetting();
-    i.allowSoundmoji = i.allowSoundmoji ? g : i.allowSoundmoji;
+    let m = a.eR.getSetting();
+    i.allowSoundmoji = i.allowSoundmoji ? m : i.allowSoundmoji;
     let {
-      results: m,
+      results: g,
       metadata: E
     } = f.queryResults(this.props.channel, this.props.guild, _, i, p), v = 0;
-    for (let e of Object.values(m)) Array.isArray(e) && (v += e.length);
-    let b = !0 === m.isLoading,
+    for (let e of Object.values(g)) Array.isArray(e) && (v += e.length);
+    let b = !0 === g.isLoading,
       y = this.shouldShow(v, b, f),
       O = this.state.selectedIndex;
     !y || b ? O = null : null != O && O >= v && (O = v - 1), y && !this.state.isVisible && (0, o.a7)(d, this.props.channel, E), this.setState({
@@ -165,7 +165,7 @@ class p extends r.EventEmitter {
         type: d,
         typeInfo: f,
         queryText: _,
-        results: m,
+        results: g,
         resultCount: v,
         options: i,
         isLoading: b

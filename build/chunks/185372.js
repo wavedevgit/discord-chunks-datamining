@@ -49,13 +49,13 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let {
-  Provider: m,
+  Provider: g,
   Consumer: E
 } = i.createContext(u.BRd.DARK);
 class v extends i.PureComponent {
@@ -73,7 +73,7 @@ class v extends i.PureComponent {
       children: _ => (0, r.jsx)(c.Z.Child, {
         grow: 0,
         className: a()(d.image, f.marginBottom40),
-        style: g(p({}, u), {
+        style: m(p({}, u), {
           width: n,
           height: i,
           marginLeft: o,
@@ -113,7 +113,7 @@ function y(e) {
     className: i,
     style: o
   } = e;
-  return (0, r.jsx)(m, {
+  return (0, r.jsx)(g, {
     value: n,
     children: (0, r.jsx)(c.Z, {
       direction: c.Z.Direction.VERTICAL,

@@ -17,8 +17,8 @@ var i = n(990547),
   _ = n(430824),
   p = n(687476),
   h = n(761966),
-  g = n(981631),
-  m = n(176505),
+  m = n(981631),
+  g = n(176505),
   E = n(388032),
   v = n(567818);
 let b = () => {
@@ -44,7 +44,7 @@ function y(e) {
     }
   });
   let O = () => {
-      (0, f.uL)(g.Z5c.CHANNEL(n, m.oC.ROLE_SUBSCRIPTIONS), {
+      (0, f.uL)(m.Z5c.CHANNEL(n, g.oC.ROLE_SUBSCRIPTIONS), {
         sourceLocationStack: y
       })
     },

@@ -22,10 +22,10 @@ function p(e) {
     entry: n,
     display: p,
     onAction: h,
-    onClose: g
-  } = e, m = (0, i.e7)([d.Z], () => null != d.Z.getAccount(null, f.ABu.CRUNCHYROLL));
+    onClose: m
+  } = e, g = (0, i.e7)([d.Z], () => null != d.Z.getAccount(null, f.ABu.CRUNCHYROLL));
   if (!(0, l.Z)(t) && !(0, u.gr)(n)) return null;
-  if (!m) return (0, r.jsx)(o.sNh, {
+  if (!g) return (0, r.jsx)(o.sNh, {
     id: "connect-crunchyroll",
     label: _.NW.formatToPlainString(_.t.XWSHTU, {
       platform: s.Z.get(f.ABu.CRUNCHYROLL).name
@@ -33,7 +33,7 @@ function p(e) {
     action: () => {
       null == h || h({
         action: "PRESS_CONNECT_CRUNCHYROLL_MENU_ITEM"
-      }), a.Z.open(f.oAB.CONNECTIONS), null == g || g()
+      }), a.Z.open(f.oAB.CONNECTIONS), null == m || m()
     }
   });
   if ("recent" !== p || !(0, u.gr)(n)) return null;

@@ -66,7 +66,7 @@ function h(e, t) {
   }))
 }
 
-function g(e) {
+function m(e) {
   let {
     code: t
   } = e, n = (0, a.fU)(t);
@@ -76,7 +76,7 @@ function g(e) {
   })
 }
 
-function m(e) {
+function g(e) {
   return h(e.code, t => {
     var n, r;
     t.state = s.r2o.RESOLVED, t.guild = e.invite.guild, t.channel = e.invite.channel, t.inviter = e.invite.inviter, t.approximate_member_count = null !== (n = e.invite.approximate_member_count) && void 0 !== n ? n : null, t.approximate_presence_count = null !== (r = e.invite.approximate_presence_count) && void 0 !== r ? r : null, t.target_type = e.invite.target_type, t.target_user = e.invite.target_user, t.target_application = e.invite.target_application, t.expires_at = e.invite.expires_at, t.stage_instance = e.invite.stage_instance, t.friends_count = e.invite.friends_count, t.is_contact = e.invite.is_contact, t.guild_scheduled_event = e.invite.guild_scheduled_event, t.type = e.invite.type, t.flags = e.invite.flags, t.is_nickname_changeable = e.invite.is_nickname_changeable
@@ -159,8 +159,8 @@ class C extends(r = i.ZP.Store) {
 }
 l(C, "displayName", "InviteStore");
 let R = new C(o.Z, {
-  INVITE_RESOLVE: g,
-  INVITE_RESOLVE_SUCCESS: m,
+  INVITE_RESOLVE: m,
+  INVITE_RESOLVE_SUCCESS: g,
   INVITE_RESOLVE_FAILURE: y,
   INSTANT_INVITE_REVOKE_SUCCESS: y,
   FRIEND_INVITE_CREATE_SUCCESS: v,

@@ -18,14 +18,14 @@ if (n(322499)() || n(882171)()) {
     _ = f("Array.prototype.push"),
     p = f("String.prototype.charCodeAt"),
     h = f("String.prototype.slice"),
-    g = function(e, t) {
+    m = function(e, t) {
       if (t + 1 >= e.length) return t + 1;
       var n = p(e, t);
       if (n < 55296 || n > 56319) return t + 1;
       var r = p(e, t + 1);
       return r < 56320 || r > 57343 ? t + 1 : t + 2
     },
-    m = function(e) {
+    g = function(e) {
       var t = 0;
       return {
         next: function() {
@@ -38,12 +38,12 @@ if (n(322499)() || n(882171)()) {
       }
     },
     E = function(e, t) {
-      if (s(e) || i(e)) return m(e);
+      if (s(e) || i(e)) return g(e);
       if (l(e)) {
         var n = 0;
         return {
           next: function() {
-            var t = g(e, n),
+            var t = m(e, n),
               r = h(e, n, t);
             return n = t, {
               done: t > e.length,
@@ -71,7 +71,7 @@ if (n(322499)() || n(882171)()) {
             var t = [];
             return y(e, function(e, n) {
               _(t, [n, e])
-            }), m(t)
+            }), g(t)
           }
         }
         if (b(e)) {
@@ -81,7 +81,7 @@ if (n(322499)() || n(882171)()) {
             var n = [];
             return O(e, function(e) {
               _(n, e)
-            }), m(n)
+            }), g(n)
           }
         }
       };

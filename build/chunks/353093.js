@@ -4,8 +4,8 @@ n.d(t, {
   EJ: () => h,
   Pb: () => p,
   XV: () => _,
-  Z4: () => m,
-  Zp: () => g,
+  Z4: () => g,
+  Zp: () => m,
   f6: () => E,
   ky: () => b,
   p0: () => O,
@@ -39,12 +39,12 @@ function h(e) {
   return null != e && e.hasFeature(d.oNc.CLAN)
 }
 
-function g(e, t) {
+function m(e, t) {
   var n, r;
   return null != t && t.identityGuildId === (null == e ? void 0 : e.id) && ((null == e ? void 0 : null === (n = e.profile) || void 0 === n ? void 0 : n.tag) != null && (null == e ? void 0 : null === (r = e.profile) || void 0 === r ? void 0 : r.tag) !== t.tag || null == t.identityEnabled)
 }
 
-function m(e, t) {
+function g(e, t) {
   return null != e && null != t && null != t.identityGuildId && t.identityGuildId === e && !!t.identityEnabled
 }
 let E = (e, t) => {

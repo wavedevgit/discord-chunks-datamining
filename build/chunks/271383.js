@@ -17,8 +17,8 @@ var r, i = n(392711),
   _ = n(69882),
   p = n(134049),
   h = n(160404),
-  g = n(630388),
-  m = n(823379),
+  m = n(630388),
+  g = n(823379),
   E = n(709054),
   v = n(314897),
   b = n(592125),
@@ -67,8 +67,8 @@ let A = new f.Z("GuildMemberStore"),
   C = {},
   R = {},
   P = {},
-  D = {},
   w = {},
+  D = {},
   L = !1,
   x = 0,
   M = 0,
@@ -82,15 +82,15 @@ let A = new f.Z("GuildMemberStore"),
 function G(e, t) {
   if (null == t.communicationDisabledUntil || !(0, _.b)(t)) return B(e, t.userId);
   let n = Z(e, t.userId);
-  w[n] !== t.communicationDisabledUntil && (0, _.b)(t) && (w[n] = t.communicationDisabledUntil, V(n))
+  D[n] !== t.communicationDisabledUntil && (0, _.b)(t) && (D[n] = t.communicationDisabledUntil, V(n))
 }
 
 function B(e, t) {
   if (null != t) {
     let n = Z(e, t);
-    null != w[n] && V(n), F(Z(e, t))
+    null != D[n] && V(n), F(Z(e, t))
   } else
-    for (let t in w) {
+    for (let t in D) {
       let n = t;
       W(n) === e && (V(t), F(n))
     }
@@ -101,7 +101,7 @@ function V(e) {
 }
 
 function F(e) {
-  H(e) === v.default.getId() && (0, p.l)(W(e)), delete w[e]
+  H(e) === v.default.getId() && (0, p.l)(W(e)), delete D[e]
 }
 
 function Z(e, t) {
@@ -158,7 +158,7 @@ function K(e) {
     joinedAt: f,
     communicationDisabledUntil: _,
     unusualDMActivityUntil: p,
-    fullProfileLoadedTimestamp: m,
+    fullProfileLoadedTimestamp: g,
     flags: b
   } = e, {
     colorString: y,
@@ -166,7 +166,7 @@ function K(e) {
     iconRoleId: T,
     hoistRoleId: A,
     highestRoleId: R
-  } = Y(l, c), D = {
+  } = Y(l, c), w = {
     userId: r,
     nick: i,
     guildId: o,
@@ -183,23 +183,23 @@ function K(e) {
     joinedAt: f,
     communicationDisabledUntil: _,
     unusualDMActivityUntil: p,
-    fullProfileLoadedTimestamp: m,
+    fullProfileLoadedTimestamp: g,
     flags: b
   };
-  if ((0, g.yE)(null !== (t = D.flags) && void 0 !== t ? t : 0, O.q.IS_GUEST) && (D.flags = (0, g.pj)(null !== (n = D.flags) && void 0 !== n ? n : 0, O.q.BYPASSES_VERIFICATION)), null == C[o]) return D;
+  if ((0, m.yE)(null !== (t = w.flags) && void 0 !== t ? t : 0, O.q.IS_GUEST) && (w.flags = (0, m.pj)(null !== (n = w.flags) && void 0 !== n ? n : 0, O.q.BYPASSES_VERIFICATION)), null == C[o]) return w;
   if (r === v.default.getId()) {
     if (h.Z.isViewingRoles(o) || h.Z.isFullServerPreview(o)) {
       let e = h.Z.getViewingRoles(o);
-      P[o] = N(I({}, D, h.Z.getMemberOptions(o)), {
+      P[o] = N(I({}, w, h.Z.getMemberOptions(o)), {
         roles: null != e ? E.default.keys(e) : []
       })
     } else null != P[o] && delete P[o]
   }
-  return D
+  return w
 }
 
 function z(e) {
-  L ? L = !1 : (C = {}, R = {}), w = {}, Q(e)
+  L ? L = !1 : (C = {}, R = {}), D = {}, Q(e)
 }
 
 function q(e) {
@@ -210,7 +210,7 @@ function q(e) {
       id: n,
       members: e.members
     }), null === (t = e.activity_instances) || void 0 === t || t.forEach(e => {
-      em(n, e.participants)
+      eg(n, e.participants)
     })
   })
 }
@@ -233,7 +233,7 @@ function J(e) {
     guildMembers: t,
     guilds: n
   } = e;
-  L = !0, C = I({}, t), R = {}, D = {}, ee(n)
+  L = !0, C = I({}, t), R = {}, w = {}, ee(n)
 }
 
 function $(e) {
@@ -245,7 +245,7 @@ function $(e) {
 
 function ee(e) {
   for (let t of e)
-    if (null != t.member && (null == D[t.id] ? D[t.id] = t.member : D[t.id] = N(I({}, t.member), {
+    if (null != t.member && (null == w[t.id] ? w[t.id] = t.member : w[t.id] = N(I({}, t.member), {
         roles: t.member.roles
       }), null != C[t.id])) {
       let e = C[t.id];
@@ -281,15 +281,15 @@ function en(e) {
     flags: p
   } = e, h = C[n];
   if (null == h) return !1;
-  let g = y.Z.getGuild(n);
-  if (null == g) return A.warn("Guild ".concat(n, " not found during GUILD_MEMBER_UPDATE.")), !1;
+  let m = y.Z.getGuild(n);
+  if (null == m) return A.warn("Guild ".concat(n, " not found during GUILD_MEMBER_UPDATE.")), !1;
   h[r.id] = K({
     userId: r.id,
     nick: i,
     guildId: n,
     avatar: o,
     avatarDecoration: (0, d.FG)(a),
-    guildRoles: y.Z.getRoles(g.id),
+    guildRoles: y.Z.getRoles(m.id),
     roles: s,
     premiumSince: l,
     isPending: c,
@@ -374,7 +374,7 @@ function el(e) {
     guildId: t,
     members: n
   } = e;
-  return ef(t, n.map(e => e.member).filter(m.lm))
+  return ef(t, n.map(e => e.member).filter(g.lm))
 }
 
 function ec(e) {
@@ -390,7 +390,7 @@ function eu(e) {
     guildId: t,
     threads: n
   } = e;
-  return ef(t, Object.values(n).map(e => e.owner).filter(m.lm))
+  return ef(t, Object.values(n).map(e => e.owner).filter(g.lm))
 }
 
 function ed(e) {
@@ -398,7 +398,7 @@ function ed(e) {
     guildId: t,
     addedMembers: n
   } = e;
-  return null != n && ef(t, n.map(e => e.member).filter(m.lm))
+  return null != n && ef(t, n.map(e => e.member).filter(g.lm))
 }
 
 function ef(e, t) {
@@ -453,14 +453,14 @@ function eh(e) {
   delete r[n.id], B(t, n.id), M++
 }
 
-function eg(e) {
+function em(e) {
   let {
     guild: t
   } = e;
   return eE(t)
 }
 
-function em(e, t) {
+function eg(e, t) {
   return eE({
     id: e,
     members: t.filter(c.Z).map(e => e.member)
@@ -654,7 +654,7 @@ function eC(e) {
     location: t,
     participants: n
   } = e, r = (0, u.jS)(t);
-  return null != r && em(r, n)
+  return null != r && eg(r, n)
 }
 class eR extends(r = s.ZP.Store) {
   initialize() {
@@ -701,7 +701,7 @@ class eR extends(r = s.ZP.Store) {
       n = C[e];
     if (null == n || null == n[t]) return !1;
     let r = n[t].flags;
-    return null != r && (0, g.yE)(r, O.q.IS_GUEST)
+    return null != r && (0, m.yE)(r, O.q.IS_GUEST)
   }
   getMemberIds(e) {
     if (null == e) return [];
@@ -738,7 +738,7 @@ class eR extends(r = s.ZP.Store) {
   }
   getCachedSelfMember(e) {
     var t;
-    return null !== (t = D[e]) && void 0 !== t ? t : null
+    return null !== (t = w[e]) && void 0 !== t ? t : null
   }
   getNick(e, t) {
     if (null == e || null == t) return null;
@@ -746,7 +746,7 @@ class eR extends(r = s.ZP.Store) {
     return null != n ? n.nick : null
   }
   getCommunicationDisabledUserMap() {
-    return w
+    return D
   }
   getCommunicationDisabledVersion() {
     return x
@@ -772,7 +772,7 @@ let eP = new eR(l.Z, {
   OVERLAY_INITIALIZE: X,
   CACHE_LOADED: J,
   CACHE_LOADED_LAZY: $,
-  GUILD_CREATE: eg,
+  GUILD_CREATE: em,
   GUILD_DELETE: ev,
   GUILD_MEMBER_ADD: en,
   GUILD_MEMBER_UPDATE: en,
