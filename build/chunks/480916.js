@@ -1,11 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
+  Z7: () => d,
   cU: () => o,
   d_: () => a,
-  lA: () => l,
+  io: () => l,
+  lA: () => c,
   sU: () => s,
-  x3: () => c
+  x3: () => u
 });
 var r = n(626135),
   i = n(981631),
@@ -17,9 +19,12 @@ var r = n(626135),
   }({}),
   s = function(e) {
     return e.MANUAL_REVIEW_REQUEST = "manual_review_request", e.LEARN_MORE = "learn_more", e.GET_STARTED = "get_started", e.SYSTEM_DMS_LEARN_MORE = "system_dms_learn_more", e
+  }({}),
+  l = function(e) {
+    return e.RETRY = "retry", e
   }({});
 
-function l(e, t, n) {
+function c(e, t, n) {
   r.default.track(i.rMx.AGE_VERIFICATION_MODAL_VIEWED, {
     modal_session_id: e,
     modal_version: t,
@@ -27,10 +32,17 @@ function l(e, t, n) {
   })
 }
 
-function c(e, t, n) {
+function u(e, t, n) {
   r.default.track(i.rMx.AGE_VERIFICATION_MODAL_CLICKED, {
     modal_session_id: e,
     modal_version: t,
     cta: n
+  })
+}
+
+function d(e, t) {
+  r.default.track(i.rMx.AGE_VERIFICATION_DM_CLICKED, {
+    cta: e,
+    channel_id: t
   })
 }

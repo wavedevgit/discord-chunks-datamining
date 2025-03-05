@@ -239,7 +239,9 @@ class e4 extends(r = a.Component) {
         });
         break;
       case eE.aD.AGE_VERIFICATION_RETRY:
-        r = (0, i.jsx)(_.Z, {});
+        r = (0, i.jsx)(_.Z, {
+          channelId: t.id
+        });
         break;
       default:
         return null

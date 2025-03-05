@@ -12,23 +12,24 @@ let i = function(a) {
     onClose: t,
     onComplete: e,
     transitionState: i,
-    webviewUrl: l
-  } = a, d = s.useCallback(() => {
+    webviewUrl: l,
+    showHeader: d = !0
+  } = a, u = s.useCallback(() => {
     t(), e()
-  }, [e, t]), u = s.useCallback(a => {
+  }, [e, t]), m = s.useCallback(a => {
     if ("" !== l && "string" == typeof a.data) try {
       var t = JSON.parse(a.data);
-      "AGE_CHECK_COMPLETE" === t.status && d()
+      "AGE_CHECK_COMPLETE" === t.status && u()
     } catch (a) {}
-  }, [l, d]);
-  return s.useEffect(() => (window.addEventListener("message", u), () => {
-    window.removeEventListener("message", u)
-  }), [u]), (0, n.jsx)(c.Y0X, {
+  }, [l, u]);
+  return s.useEffect(() => (window.addEventListener("message", m), () => {
+    window.removeEventListener("message", m)
+  }), [m]), (0, n.jsx)(c.Y0X, {
     transitionState: i,
     className: r.root,
     children: (0, n.jsxs)(c.hzk, {
       className: r.content,
-      children: [(0, n.jsx)(c.X6q, {
+      children: [d && (0, n.jsx)(c.X6q, {
         variant: "heading-xl/bold",
         children: o.NW.string(o.t.tYNaXF)
       }), (0, n.jsx)("iframe", {

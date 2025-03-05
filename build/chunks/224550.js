@@ -70,7 +70,7 @@ let g = function(e) {
         x = p.NW.format(p.t.y9gsX1, {});
         break;
       case void 0:
-        M = w, x = p.NW.format(p.t.UxGFHx, {});
+        x = p.NW.format(p.t.UxGFHx, {});
         break;
       default:
         throw Error("Unexpected interval: ".concat(t))
