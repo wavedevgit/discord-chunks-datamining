@@ -33,7 +33,7 @@ let T = function(e) {
   } = e, [N, A] = i.useState(!0), C = i.useRef(!1), R = (0, l.Z)(() => Date.now()), {
     analyticsLocations: P
   } = (0, c.ZP)(), D = i.useCallback(() => {
-    T(), f.default.track(O.rMx.MODAL_DISMISSED, {
+    null == T || T(), f.default.track(O.rMx.MODAL_DISMISSED, {
       type: O.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: P,
       location_section: t.section,
@@ -66,7 +66,7 @@ let T = function(e) {
       window.removeEventListener("keydown", e)
     }
   }, [D]), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)("div", {
+    children: [null != T && (0, r.jsx)("div", {
       className: I.closeIconWrapper,
       children: (0, r.jsx)(s.Z, {
         className: I.closeIcon,

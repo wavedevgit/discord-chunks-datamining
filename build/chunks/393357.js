@@ -21,7 +21,6 @@ function d(e) {
       section: l.jXE.CHANNEL_LIST,
       object: l.qAy.GUILD_POWERUPS_CHANNEL_LIST_ITEM
     },
-    onClose: () => {},
     guild: t
   })
 }

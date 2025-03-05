@@ -49,7 +49,7 @@ function u(e) {
 }
 
 function d(e) {
-  var t, n, r, i;
+  var t, n, r, i, o;
   return {
     id: e.id,
     name: e.name,
@@ -58,18 +58,18 @@ function d(e) {
     customBanner: e.custom_banner_hash,
     onlineCount: e.online_count,
     memberCount: e.member_count,
-    brandColorPrimary: e.brand_color_primary,
+    brandColorPrimary: null !== (n = e.brand_color_primary) && void 0 !== n ? n : null,
     visibility: e.visibility,
-    traits: c(e.id, null !== (n = e.traits) && void 0 !== n ? n : []),
-    gameApplicationIds: null !== (r = e.game_application_ids) && void 0 !== r ? r : [],
+    traits: c(e.id, null !== (r = e.traits) && void 0 !== r ? r : []),
+    gameApplicationIds: null !== (i = e.game_application_ids) && void 0 !== i ? i : [],
     gameActivity: u(e.game_activity),
-    features: null !== (i = e.features) && void 0 !== i ? i : []
+    features: null !== (o = e.features) && void 0 !== o ? o : []
   }
 }
 
 function f(e) {
   let t = {};
-  return null != e.name && (t.name = e.name), null != e.description && (t.description = e.description), void 0 !== e.icon && (t.icon = e.icon), void 0 !== e.customBanner && (t.custom_banner = e.customBanner), null != e.visibility && (t.visibility = e.visibility), null != e.brandColorPrimary && (t.brand_color_primary = e.brandColorPrimary), null != e.traits && (t.traits = e.traits.map((e, t) => {
+  return null != e.name && (t.name = e.name), null != e.description && (t.description = e.description), void 0 !== e.icon && (t.icon = e.icon), void 0 !== e.customBanner && (t.custom_banner = e.customBanner), null != e.visibility && (t.visibility = e.visibility), void 0 !== e.brandColorPrimary && (t.brand_color_primary = e.brandColorPrimary), null != e.traits && (t.traits = e.traits.map((e, t) => {
     var n, r, i;
     return (null == e ? void 0 : e.label) == null || e.label.length <= 0 ? null : {
       label: e.label,

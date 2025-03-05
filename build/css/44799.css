@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: 59822871c8a16088
+  Original File Name: 207f886de560410a
 **/
 .container__98cbd {
     width: 220px;
@@ -294,15 +294,16 @@
 }
 
 .boostButton__25ea7 {
-    background-color: var(--background-tertiary);
+    background-color: var(--bg-mod-faint);
     border-radius: var(--radius-sm);
     border-width: 1px;
     border-color: var(--border-faint);
-    box-shadow: var(--shadow-low)
+    box-shadow: var(--shadow-low);
+    color: var(--text-normal)
 }
 
 .boostButton__25ea7:hover {
-    background-color: var(--background-modifier-hover)
+    background-color: var(--bg-mod-strong)
 }
 
 .boostButtonIcon__25ea7 {

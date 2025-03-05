@@ -31,7 +31,8 @@ let N = {
   traits: [],
   gameApplicationIds: [],
   gameActivity: {},
-  visibility: s.k.RESTRICTED
+  visibility: s.k.RESTRICTED,
+  brandColorPrimary: null
 };
 
 function v(e) {
