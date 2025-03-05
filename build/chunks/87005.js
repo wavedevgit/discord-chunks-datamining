@@ -31,7 +31,7 @@ function m(e) {
     includeAuthorizedAppsAndFetch: m
   } = e, {
     sectionDescriptors: C,
-    loading: g
+    loading: v
   } = l.wi({
     context: n,
     filters: b,
@@ -39,7 +39,7 @@ function m(e) {
     allowFetch: c
   });
   return {
-    loading: g,
+    loading: v,
     frecentApps: function(e) {
       let {
         sectionDescriptors: n,

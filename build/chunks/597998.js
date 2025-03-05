@@ -209,8 +209,8 @@ let D = function(e) {
     mute: M,
     serverMute: U,
     guildId: R,
-    nick: G,
-    isGuest: F,
+    nick: F,
+    isGuest: G,
     flipped: V,
     className: Y,
     overlap: B,
@@ -258,7 +258,7 @@ let D = function(e) {
       null == D || D(e, J)
     },
     onKeyDown: P,
-    "aria-label": null !== (t = null != z ? z : G) && void 0 !== t ? t : J.username,
+    "aria-label": null !== (t = null != z ? z : F) && void 0 !== t ? t : J.username,
     children: (0, r.jsxs)("div", {
       className: o()(T.content, {
         [T.flipped]: V
@@ -286,7 +286,7 @@ let D = function(e) {
               [T.username]: !0,
               [T.usernameSpeaking]: !M && !U && k
             }),
-            children: [null != G ? G : E.ZP.getName(J), F ? (0, r.jsxs)("span", {
+            children: [null != F ? F : E.ZP.getName(J), G ? (0, r.jsxs)("span", {
               className: T.guestSuffix,
               children: ["\xa0", Z.NW.string(Z.t["pFO/Pj"])]
             }) : ""]

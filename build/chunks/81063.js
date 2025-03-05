@@ -1,11 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
-n.r(t), n.d(t, {
-  fetchAssetIds: () => R,
-  getAssetFromImageURL: () => S,
-  getAssetIds: () => P,
-  getAssetImage: () => I,
-  getAssets: () => T
+n.d(t, {
+  Vh: () => T,
+  f: () => S,
+  hR: () => R,
+  xF: () => I
 }), n(301563), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(47120);
 var r = n(512722),
   i = n.n(r),
@@ -167,12 +166,4 @@ async function R(e, t) {
     type: "APPLICATION_ASSETS_FETCH_SUCCESS",
     applicationId: e
   }), r)
-}
-
-function P(e, t) {
-  var n;
-  let r = [];
-  if (A(t, r)) return r;
-  let i = null === (n = s.Z.getApplicationAssets(e)) || void 0 === n ? void 0 : n.assets;
-  return null == i || C(t, r, i), r
 }

@@ -148,7 +148,7 @@ let O = ["349134787773988865"],
         if (null == w) y = Promise.resolve([]);
         else {
           if (null == I.application || null == I.application.id) throw Error();
-          y = (0, p.fetchAssetIds)(I.application.id, [w.large_image, w.small_image])
+          y = (0, p.hR)(I.application.id, [w.large_image, w.small_image])
         }
         return y.then(e => {
           var t, n;

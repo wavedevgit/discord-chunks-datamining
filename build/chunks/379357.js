@@ -22,7 +22,7 @@ function h(e) {
   return (0, u.dU)(e) && e.extra.entries.length > 0 ? {
     src: e.extra.entries[0].media.image_url
   } : (0, u.y0)(e) ? {
-    src: (0, c.getAssetImage)(e.extra.application_id, e.extra.media_assets_large_image, _.Si.LARGE),
+    src: (0, c.xF)(e.extra.application_id, e.extra.media_assets_large_image, _.Si.LARGE),
     alt: e.extra.media_title
   } : (0, u.KF)(e) ? {
     src: e.extra.media.image_url
@@ -116,12 +116,12 @@ function v(e, t) {
   };
   let f = null == e ? void 0 : null === (n = e.assets) || void 0 === n ? void 0 : n.large_image,
     p = null != f ? {
-      src: (0, c.getAssetImage)(e.application_id, f, [_.Si.LARGE, _.Si.LARGE]),
+      src: (0, c.xF)(e.application_id, f, [_.Si.LARGE, _.Si.LARGE]),
       text: null === (o = e.assets) || void 0 === o ? void 0 : null === (r = o.large_text) || void 0 === r ? void 0 : r.trim()
     } : void 0,
     h = (0, i.Z)(e) ? void 0 : null == e ? void 0 : null === (a = e.assets) || void 0 === a ? void 0 : a.small_image,
     m = null != h ? {
-      src: (0, c.getAssetImage)(e.application_id, h, [_.Si.LARGE, _.Si.LARGE]),
+      src: (0, c.xF)(e.application_id, h, [_.Si.LARGE, _.Si.LARGE]),
       text: null === (u = e.assets) || void 0 === u ? void 0 : null === (l = u.small_text) || void 0 === l ? void 0 : l.trim()
     } : void 0;
   return {

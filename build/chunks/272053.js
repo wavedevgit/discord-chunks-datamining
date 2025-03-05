@@ -95,7 +95,7 @@ class w {
         game_id: l,
         title: c
       } = a, f = {
-        large_image: null != s && null !== (r = (0, d.getAssetFromImageURL)(h.ABu.TWITCH, s)) && void 0 !== r ? r : void 0
+        large_image: null != s && null !== (r = (0, d.f)(h.ABu.TWITCH, s)) && void 0 !== r ? r : void 0
       }, _ = await D(l, t), p = u.Z.get(h.ABu.TWITCH), g = null !== (i = R(s)) && void 0 !== i ? i : e.name, m = null != c && "" !== c ? c.slice(0, S) : void 0, E = null != _ && "" !== _ ? _.slice(0, S) : void 0;
       return {
         url: null === (n = p.getPlatformUserUrl) || void 0 === n ? void 0 : n.call(p, {
@@ -142,7 +142,7 @@ class w {
           thumbnails: a
         }
       } = r[0], l = {
-        large_image: null !== (n = (0, d.getAssetFromImageURL)(h.ABu.YOUTUBE, a.high.url)) && void 0 !== n ? n : void 0
+        large_image: null !== (n = (0, d.f)(h.ABu.YOUTUBE, a.high.url)) && void 0 !== n ? n : void 0
       }, c = null != o && "" !== o ? o.slice(0, S) : void 0;
       return N = {
         url: v(i),

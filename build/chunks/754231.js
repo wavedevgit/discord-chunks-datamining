@@ -50,7 +50,7 @@ function O(e) {
     b = f ? y.spotifyLargeImage : y.applicationLargeImage,
     v = null != h ? (0, r.jsx)("img", {
       alt: null !== (n = d.large_text) && void 0 !== n ? n : "",
-      src: (0, g.getAssetImage)(p, h, [128, 128]),
+      src: (0, g.xF)(p, h, [128, 128]),
       className: b
     }) : null;
   return f && null != u ? (v = (0, r.jsx)(s.P3F, {

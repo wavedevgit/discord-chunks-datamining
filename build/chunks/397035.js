@@ -19,7 +19,7 @@ function d(e) {
     } = e,
     f = (0, l.q)(p.extra.application_id),
     O = null == f ? void 0 : f.getIconURL(128),
-    y = (0, i.getAssetImage)(p.extra.application_id, p.extra.media_assets_large_image, [s.Si.LARGE, s.Si.LARGE]),
+    y = (0, i.xF)(p.extra.application_id, p.extra.media_assets_large_image, [s.Si.LARGE, s.Si.LARGE]),
     m = p.extra.media_title,
     j = p.extra.media_subtitle,
     g = (0, a.Jg)(p) ? u.t["LH+Z39"] : u.t.YuKgmp,

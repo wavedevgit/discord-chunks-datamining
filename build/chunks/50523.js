@@ -59,7 +59,7 @@ function _(e) {
     info: (0, r.jsx)("div", {
       children: v.description
     }),
-    staticBannerSrc: (0, f.getAssetImage)(_.id, v.asset_id, 512),
+    staticBannerSrc: (0, f.xF)(_.id, v.asset_id, 512),
     title: v.title
   })
 }

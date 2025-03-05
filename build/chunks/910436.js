@@ -123,7 +123,7 @@ function E(e) {
       }, "embedded-activity-".concat(j.application_id)))
     } else if ((null != j.assets || (0, o.Z)(j)) && j.type === _.IIU.PLAYING) T((0, r.jsx)(g.Z.RichPresenceSection, {
       activity: j,
-      getAssetImage: h.getAssetImage
+      getAssetImage: h.xF
     }, "rich-presence-".concat(null !== (f = j.session_id) && void 0 !== f ? f : t, "-").concat(x.id)));
     else if ((0, u.Z)(j)) {
       let e = N.length > 0 && N[0].members.length > 1,
@@ -132,7 +132,7 @@ function E(e) {
         guildId: null == C ? void 0 : C.id,
         activity: j,
         user: e || n ? x : null,
-        getAssetImage: h.getAssetImage
+        getAssetImage: h.xF
       }, "streaming-".concat(null !== (m = j.session_id) && void 0 !== m ? m : t)))
     } else(0, s.Z)(j) ? T((0, r.jsx)(g.Z.SpotifySection, {
       activity: j,
@@ -142,11 +142,11 @@ function E(e) {
         unknownSize: 0,
         totalSize: Z.length
       },
-      getAssetImage: h.getAssetImage,
+      getAssetImage: h.xF,
       members: Z
     }, "spotify-".concat(null !== (O = j.session_id) && void 0 !== O ? O : t, "-").concat(x.id))) : (null != j.assets || (0, o.Z)(j)) && j.type === _.IIU.LISTENING ? T((0, r.jsx)(g.Z.RichPresenceSection, {
       activity: j,
-      getAssetImage: h.getAssetImage
+      getAssetImage: h.xF
     }, "rich-presence-".concat(null !== (I = j.session_id) && void 0 !== I ? I : t, "-").concat(x.id))) : (0, c.Z)(j) && T((0, r.jsx)(g.Z.XboxSection, {
       title: A.name
     }, "xbox-".concat(null !== (S = j.session_id) && void 0 !== S ? S : t)));

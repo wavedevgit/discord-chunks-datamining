@@ -665,7 +665,7 @@ class eU extends(a = u.ZP.Store) {
       return t.replace(/;/g, "")
     }).join("; "));
     let h = {},
-      g = null != a.image ? (0, N.getAssetFromImageURL)(D.ABu.SPOTIFY, a.image.url) : null;
+      g = null != a.image ? (0, N.f)(D.ABu.SPOTIFY, a.image.url) : null;
     null != a.image && null != g && (h.large_image = g), a.type !== X && (h.large_text = a.name), null != _ && (t = _.uri), n = null != i && null != i.partyId ? i.partyId : "".concat(P.lS).concat(v.default.getId());
     let m = s.length > q ? s.substring(0, q - 3) + "..." : s,
       E = {

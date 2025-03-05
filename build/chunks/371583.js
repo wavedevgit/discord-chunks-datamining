@@ -18,7 +18,7 @@ function n(t) {
     } catch (t) {
       return c(721191).Z
     }
-  }(t) : null != t.settings.splash_asset_id ? (0, a.getAssetImage)(t.settings.application_id, t.settings.splash_asset_id) : null
+  }(t) : null != t.settings.splash_asset_id ? (0, a.xF)(t.settings.application_id, t.settings.splash_asset_id) : null
 }
 
 function o(t) {
@@ -31,5 +31,5 @@ function o(t) {
     } catch (t) {
       return null
     }
-  }(t) : (0, a.getAssetImage)(t.settings.application_id, t.settings.winner_asset_id)
+  }(t) : (0, a.xF)(t.settings.application_id, t.settings.winner_asset_id)
 }

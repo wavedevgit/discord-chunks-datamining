@@ -542,7 +542,7 @@ ei.Header = er, ei.Body = e => {
     participants: o
   } = e, [a, c] = l.useState(null), d = t.application_id;
   l.useEffect(() => {
-    null != d && (0, W.fetchAssetIds)(d, ["embedded_background"]).then(e => {
+    null != d && (0, W.hR)(d, ["embedded_background"]).then(e => {
       let [t] = e;
       return c(t)
     })
@@ -558,7 +558,7 @@ ei.Header = er, ei.Body = e => {
   let E = null != t.created_at && t.created_at > 0 ? {
       start: t.created_at
     } : void 0,
-    O = (0, W.getAssetImage)(_.id, a, 300);
+    O = (0, W.xF)(_.id, a, 300);
   return (0, i.jsxs)($, {
     children: [(0, i.jsxs)("div", {
       className: Y.embeddedActivityTopRow,

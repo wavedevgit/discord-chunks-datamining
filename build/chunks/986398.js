@@ -11,7 +11,7 @@ function n(t) {
   let {
     leaderboard: e,
     className: c
-  } = t, n = (0, a.getAssetImage)(e.settings.application_id, e.settings.winner_asset_id);
+  } = t, n = (0, a.xF)(e.settings.application_id, e.settings.winner_asset_id);
   return null == n ? null : (0, d.jsx)("img", {
     className: c,
     src: n,
