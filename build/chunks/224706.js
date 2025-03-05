@@ -278,7 +278,7 @@ let k = {
     for (; n.length > 0;) r(n.splice(0, D))
   },
   getDetectableGames() {
-    if (g.Z.fetching || null != g.Z.lastFetched) return;
+    if (!g.Z.canFetchDetectableGames()) return;
     let e = g.Z.detectableGamesEtag;
     l.Z.wait(() => {
       l.Z.dispatch({

@@ -5,8 +5,8 @@ l.d(t, {
 var n = l(200651),
   i = l(192379),
   r = l(120356),
-  s = l.n(r),
-  a = l(772848),
+  a = l.n(r),
+  s = l(772848),
   o = l(36793),
   u = l(442837),
   c = l(780384),
@@ -15,8 +15,8 @@ var n = l(200651),
   f = l(339085),
   g = l(349709),
   p = l(763610),
-  v = l(210887),
-  j = l(430824),
+  j = l(210887),
+  v = l(430824),
   x = l(594174),
   N = l(626135),
   h = l(424218),
@@ -25,17 +25,17 @@ var n = l(200651),
   I = l(268350),
   O = l(373228),
   k = l(378233),
-  E = l(419922),
-  w = l(611480),
+  w = l(419922),
+  E = l(611480),
   S = l(981631),
   P = l(388032),
   C = l(825113),
   Z = l(434227),
   D = l(600126);
-let z = new Set(["application/json", "image/png", "image/apng", "image/gif"]),
+let z = new Set(["application/json", "image/png", "image/apng", "image/gif", "image/jpeg", "image/jpg"]),
   R = [{
     name: "Sticker file",
-    extensions: ["json", "png", "apng", "gif"]
+    extensions: ["json", "png", "apng", "gif", "jpeg", "jpg"]
   }];
 
 function W(e, t) {
@@ -71,26 +71,26 @@ let _ = e => {
       previewData: l,
       onStickerError: i
     } = e;
-    if (null != t) return (0, n.jsx)(E.ZP, {
+    if (null != t) return (0, n.jsx)(w.ZP, {
       size: 160,
       sticker: t
     });
     if (null == l) return null;
     let {
       id: r,
-      formatType: s,
-      content: a
+      formatType: a,
+      content: s
     } = l;
-    return (0, n.jsx)(E.ZP, {
-      assetData: a,
-      fileUri: a,
+    return (0, n.jsx)(w.ZP, {
+      assetData: s,
+      fileUri: s,
       size: 160,
       sticker: {
         name: r,
         description: "",
         id: r,
         pack_id: "",
-        format_type: s
+        format_type: a
       },
       onError: i
     }, r)
@@ -100,20 +100,20 @@ async function A(e) {
     l = new Image;
   l.src = t, await l.decode();
   let n = (0, o.Ae)(l, 320, 320);
-  return (0, y.Bo)(n, e.name, e.type)
+  return (0, y.Bo)(n, e.name, "image/png")
 }
 
 function B(e) {
-  var t, l, r, o, E, Z, D, B;
+  var t, l, r, o, w, Z, D, B;
   let {
     transitionState: L,
     onClose: U,
     guildId: K,
     sticker: M
-  } = e, F = (0, u.e7)([v.Z], () => v.Z.theme), H = (0, u.e7)([f.ZP], () => (null == M ? void 0 : M.tags) != null ? f.ZP.getCustomEmojiById(M.tags) : null), Y = null !== (l = null === (t = x.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff()) && void 0 !== l && l ? w.OC : w.Ht, [q, V] = i.useState(null), [X, J] = i.useState(null !== (r = null == M ? void 0 : M.name) && void 0 !== r ? r : ""), [G, Q] = i.useState({
+  } = e, F = (0, u.e7)([j.Z], () => j.Z.theme), H = (0, u.e7)([f.ZP], () => (null == M ? void 0 : M.tags) != null ? f.ZP.getCustomEmojiById(M.tags) : null), Y = null !== (l = null === (t = x.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff()) && void 0 !== l && l ? E.OC : E.Ht, [q, V] = i.useState(null), [X, J] = i.useState(null !== (r = null == M ? void 0 : M.name) && void 0 !== r ? r : ""), [G, Q] = i.useState({
     file: null,
     filename: null !== (o = (0, k._V)(M)) && void 0 !== o ? o : ""
-  }), [$, ee] = i.useState(null == H ? void 0 : H.id), [et, el] = i.useState(null !== (E = null == H ? void 0 : H.name) && void 0 !== E ? E : null == M ? void 0 : M.tags), [en, ei] = i.useState(null !== (Z = null == M ? void 0 : M.description) && void 0 !== Z ? Z : ""), [er, es] = i.useState(!1), [ea, eo] = i.useState(null), eu = (0, u.e7)([j.Z], () => j.Z.getGuild(K)), ec = (null == eu ? void 0 : eu.hasFeature(S.oNc.PARTNERED)) || (null == eu ? void 0 : eu.hasFeature(S.oNc.VERIFIED)), ed = null != M, em = ed || (null == G ? void 0 : G.file) != null, ef = 0 === en.length || en.length >= 2 && en.length <= 100, eg = !er && (null == ea ? void 0 : ea.isBlocking) !== !0 && X.length >= 2 && (null != $ || null != et || (null == M ? void 0 : M.tags) != null && (null == M ? void 0 : M.tags) !== "") && em && ef, ep = async e => {
+  }), [$, ee] = i.useState(null == H ? void 0 : H.id), [et, el] = i.useState(null !== (w = null == H ? void 0 : H.name) && void 0 !== w ? w : null == M ? void 0 : M.tags), [en, ei] = i.useState(null !== (Z = null == M ? void 0 : M.description) && void 0 !== Z ? Z : ""), [er, ea] = i.useState(!1), [es, eo] = i.useState(null), eu = (0, u.e7)([v.Z], () => v.Z.getGuild(K)), ec = (null == eu ? void 0 : eu.hasFeature(S.oNc.PARTNERED)) || (null == eu ? void 0 : eu.hasFeature(S.oNc.VERIFIED)), ed = null != M, em = ed || (null == G ? void 0 : G.file) != null, ef = 0 === en.length || en.length >= 2 && en.length <= 100, eg = !er && (null == es ? void 0 : es.isBlocking) !== !0 && X.length >= 2 && (null != $ || null != et || (null == M ? void 0 : M.tags) != null && (null == M ? void 0 : M.tags) !== "") && em && ef, ep = async e => {
     var t;
     if (null == e) return;
     let l = null === (t = e.type) || void 0 === t ? void 0 : t.split(";")[0];
@@ -125,7 +125,8 @@ function B(e) {
       return
     }
     let n = e;
-    if ("image/png" === l && e.size > Y && !await (0, y.c0)(e)) {
+    if ("image/jpeg" === l || "image/jpg" === l) n = await A(e);
+    else if ("image/png" === l && e.size > Y && !await (0, y.c0)(e)) {
       let t = (n = await A(e)).size > Y;
       N.default.track(S.rMx.STICKER_FILE_RESIZED, {
         original_file_size_bytes: e.size,
@@ -143,7 +144,7 @@ function B(e) {
         isBlocking: null == G.file
       }), N.default.track(S.rMx.STICKER_UPLOAD_FILE_SIZE_LIMIT_EXCEEDED, {
         size: n.size,
-        filetype: l
+        filetype: n.type
       });
       return
     }
@@ -161,7 +162,7 @@ function B(e) {
       let e = new FileReader;
       e.addEventListener("load", () => {
         V({
-          id: (0, a.Z)(),
+          id: (0, s.Z)(),
           formatType: i,
           content: e.result
         }), eo(null)
@@ -169,7 +170,7 @@ function B(e) {
     } else {
       let e = await (0, y.fD)(n);
       V({
-        id: (0, a.Z)(),
+        id: (0, s.Z)(),
         formatType: i,
         content: e
       }), eo(null)
@@ -178,20 +179,20 @@ function B(e) {
       file: n,
       filename: n.name
     })
-  }, ev = async e => {
-    var t, l, n, i, r, s;
+  }, ej = async e => {
+    var t, l, n, i, r, a;
     e.preventDefault();
-    let a = null !== (l = null !== (t = null != $ ? $ : et) && void 0 !== t ? t : null == M ? void 0 : M.tags) && void 0 !== l ? l : "";
+    let s = null !== (l = null !== (t = null != $ ? $ : et) && void 0 !== t ? t : null == M ? void 0 : M.tags) && void 0 !== l ? l : "";
     try {
-      if (es(!0), ed) await (0, I.Jf)(K, null !== (n = null == M ? void 0 : M.id) && void 0 !== n ? n : "", {
+      if (ea(!0), ed) await (0, I.Jf)(K, null !== (n = null == M ? void 0 : M.id) && void 0 !== n ? n : "", {
         name: X,
-        tags: a,
+        tags: s,
         description: en
       });
       else {
         let e = new FormData;
-        e.append("name", X), e.append("tags", a), e.append("description", en), (null == G ? void 0 : G.file) != null && e.append("file", G.file), s = null !== (r = null === (i = G.file) || void 0 === i ? void 0 : i.type) && void 0 !== r ? r : "", N.default.track(S.rMx.STICKER_UPLOAD_STARTED, {
-          filetype: s
+        e.append("name", X), e.append("tags", s), e.append("description", en), (null == G ? void 0 : G.file) != null && e.append("file", G.file), a = null !== (r = null === (i = G.file) || void 0 === i ? void 0 : i.type) && void 0 !== r ? r : "", N.default.track(S.rMx.STICKER_UPLOAD_STARTED, {
+          filetype: a
         }), await (0, I.lY)(K, e), W(!0)
       }
       U()
@@ -201,9 +202,9 @@ function B(e) {
         isBlocking: !1
       }), W(!1, e.body.message)
     } finally {
-      es(!1)
+      ea(!1)
     }
-  }, ej = T({
+  }, ev = T({
     sticker: M,
     previewData: q,
     onStickerError: i.useCallback(() => {
@@ -221,7 +222,7 @@ function B(e) {
       onClick: U,
       className: C.modalClose
     }), (0, n.jsxs)("form", {
-      onSubmit: ev,
+      onSubmit: ej,
       className: C.form,
       children: [(0, n.jsxs)(d.hzk, {
         className: C.modalContent,
@@ -236,7 +237,7 @@ function B(e) {
           }), (0, n.jsx)(d.Text, {
             variant: "text-md/normal",
             children: P.NW.format(ex, {
-              fileSize: (0, h.IC)(w.Ht, {
+              fileSize: (0, h.IC)(E.Ht, {
                 useKibibytes: !0
               })
             })
@@ -245,10 +246,10 @@ function B(e) {
           title: P.NW.string(P.t.gjdiKC),
           className: C.formItem,
           children: (0, n.jsx)(_, {
-            stickerPreview: ej
+            stickerPreview: ev
           })
         }), (0, n.jsxs)(d.hjN, {
-          className: s()(C.formItem, C.formItemRow),
+          className: a()(C.formItem, C.formItemRow),
           children: [(0, n.jsx)(d.xJW, {
             title: ed ? P.NW.string(P.t.wp36s7) : P.NW.string(P.t.AM3mzc),
             required: !0,
@@ -316,11 +317,11 @@ function B(e) {
             placeholder: P.NW.string(P.t.zwR0fX),
             maxLength: 100
           })]
-        }), null != ea && (0, n.jsx)(d.Text, {
+        }), null != es && (0, n.jsx)(d.Text, {
           className: C.formItem,
           variant: "text-sm/normal",
           color: "text-danger",
-          children: ea.message
+          children: es.message
         })]
       }), (0, n.jsxs)(d.mzw, {
         className: C.modalFooter,

@@ -75,7 +75,7 @@ class x {
     this.actionContext = e
   }
   trackViewerCount(e) {
-    this.maxViewers = Math.max(e, this.maxViewers)
+    this.maxViewers = Math.max(e, this.maxViewers), this.numViewers = e
   }
   setNativePickerStyleUsed(e) {
     this.nativePickerStyleUsed = e
@@ -100,7 +100,7 @@ class x {
     numViewers: i,
     goLiveModalDurationMs: o
   }) {
-    A(this, "streamRegion", void 0), A(this, "streamApplication", void 0), A(this, "streamSourceType", void 0), A(this, "actionContext", void 0), A(this, "maxViewers", void 0), A(this, "nativePickerStyleUsed", void 0), A(this, "startTime", void 0), A(this, "endTime", void 0), A(this, "goLiveModalDurationMs", void 0), this.streamRegion = e, this.streamApplication = t, this.streamSourceType = n, this.actionContext = r, this.maxViewers = i, this.goLiveModalDurationMs = o
+    A(this, "streamRegion", void 0), A(this, "streamApplication", void 0), A(this, "streamSourceType", void 0), A(this, "actionContext", void 0), A(this, "maxViewers", void 0), A(this, "nativePickerStyleUsed", void 0), A(this, "startTime", void 0), A(this, "endTime", void 0), A(this, "goLiveModalDurationMs", void 0), A(this, "numViewers", void 0), this.streamRegion = e, this.streamApplication = t, this.streamSourceType = n, this.actionContext = r, this.maxViewers = i, this.goLiveModalDurationMs = o, this.numViewers = i
   }
 }
 class M extends s.Z {

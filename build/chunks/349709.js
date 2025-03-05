@@ -5,8 +5,8 @@ l.d(t, {
 var n = l(200651),
   i = l(192379),
   r = l(120356),
-  s = l.n(r),
-  a = l(442837),
+  a = l.n(r),
+  s = l(442837),
   o = l(481060),
   u = l(596454),
   c = l(225433),
@@ -15,8 +15,8 @@ var n = l(200651),
   f = l(907040),
   g = l(984933),
   p = l(903749),
-  v = l(185923),
-  j = l(388032),
+  j = l(185923),
+  v = l(388032),
   x = l(185002);
 
 function N(e) {
@@ -61,22 +61,22 @@ function b(e) {
     isRequiredField: I = !0,
     shouldUpdateBothEmojiFields: O = !1,
     setEmojiId: k,
-    setEmojiName: E
-  } = e, w = (0, p.Z)({
+    setEmojiName: w
+  } = e, E = (0, p.Z)({
     emojiId: b,
     emojiName: y
-  }), S = (0, a.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l) : null), P = i.createRef(), C = (0, d.Z)(P), Z = () => {
-    E(void 0), k(void 0)
+  }), S = (0, s.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l) : null), P = i.createRef(), C = (0, d.Z)(P), Z = () => {
+    w(void 0), k(void 0)
   }, D = e => (t, l) => {
     let n = (null == t ? void 0 : t.id) == null;
-    Z(), n ? E(null == t ? void 0 : t.optionallyDiverseSequence) : (O && E(null == t ? void 0 : t.name), k(null == t ? void 0 : t.id)), l && e()
+    Z(), n ? w(null == t ? void 0 : t.optionallyDiverseSequence) : (O && w(null == t ? void 0 : t.name), k(null == t ? void 0 : t.id)), l && e()
   }, z = e => {
     e.stopPropagation(), Z()
   };
   return (0, n.jsx)(o.xJW, {
     required: I,
-    title: j.NW.string(j.t["3BQmiI"]),
-    className: s()(t, x.section),
+    title: v.NW.string(v.t["3BQmiI"]),
+    className: a()(t, x.section),
     error: r,
     children: (0, n.jsx)(o.yRy, {
       animation: o.yRy.Animation.NONE,
@@ -87,7 +87,7 @@ function b(e) {
         } = e;
         return (0, n.jsx)(f.Z, {
           closePopout: t,
-          pickerIntention: v.Hz.SOUNDBOARD,
+          pickerIntention: j.Hz.SOUNDBOARD,
           onNavigateAway: t,
           onSelectEmoji: D(t),
           guildId: l,
@@ -111,10 +111,10 @@ function b(e) {
             }) : null
           }), (0, n.jsx)(o.oil, {
             inputClassName: x.emojiText,
-            placeholder: j.NW.string(j.t.QTK0TE),
-            value: null != w ? ":".concat(w, ":") : "",
+            placeholder: v.NW.string(v.t.QTK0TE),
+            value: null != E ? ":".concat(E, ":") : "",
             readOnly: !0
-          }), C && null != w && (0, n.jsx)(c.Z, h(N({}, e), {
+          }), C && null != E && (0, n.jsx)(c.Z, h(N({}, e), {
             onClick: z,
             className: x.removeButton
           }))]
