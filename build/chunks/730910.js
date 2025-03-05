@@ -36,7 +36,7 @@ var r = n(200651),
   Z = n(388032),
   D = n(655044);
 
-function k(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,7 +55,7 @@ function k(e) {
   return e
 }
 
-function A(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -144,13 +144,13 @@ function L(e) {
       }
       return !0
     }, $ = async () => {
-      f.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, A(k({}, (0, p.hH)(s)), {
+      f.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, k(A({}, (0, p.hH)(s)), {
         step: I.PG[x],
         back: !1,
         skip: !L
       })), (0, N.Nb)((0, I.lg)(x)), await J() && (0, N.IG)(s, x)
     }, ee = async () => {
-      f.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, A(k({}, (0, p.hH)(s)), {
+      f.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, k(A({}, (0, p.hH)(s)), {
         step: I.PG[x],
         back: !0,
         skip: !1

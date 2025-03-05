@@ -10,8 +10,8 @@ var l = n(442837),
   s = n(366980),
   o = n(603236),
   c = n(939863),
-  d = n(984933),
-  u = n(430824),
+  u = n(984933),
+  d = n(430824),
   m = n(341165),
   x = n(626135),
   g = n(572004),
@@ -30,10 +30,10 @@ function y(e) {
   let {
     onClose: O,
     event: E
-  } = e, C = null == E ? void 0 : E.guild_id, I = (0, l.e7)([d.ZP], () => {
+  } = e, C = null == E ? void 0 : E.guild_id, I = (0, l.e7)([u.ZP], () => {
     var e;
-    return null != C ? null === (e = d.ZP.getDefaultChannel(C)) || void 0 === e ? void 0 : e.id : null
-  }, [C]), S = (0, l.e7)([u.Z], () => u.Z.getGuild(C), [C]), {
+    return null != C ? null === (e = u.ZP.getDefaultChannel(C)) || void 0 === e ? void 0 : e.id : null
+  }, [C]), S = (0, l.e7)([d.Z], () => d.Z.getGuild(C), [C]), {
     channel_id: T,
     id: P
   } = null != E ? E : {}, W = (0, l.e7)([m.Z], () => {

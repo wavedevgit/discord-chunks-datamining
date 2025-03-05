@@ -10,7 +10,7 @@ var r = n(200651),
   l = n(807582),
   o = n(26323),
   c = n(516129),
-  d = n(813197),
+  d = n(345861),
   u = n(709586),
   m = n(768581),
   g = n(434404),
@@ -115,13 +115,12 @@ let N = function(e) {
           variant: "text-sm/normal",
           color: "header-secondary",
           children: x.NW.string(x.t.Vwintr)
-        }), (0, r.jsxs)(s.zxk, {
+        }), (0, r.jsx)(d.Z, {
           color: s.Ttl.BRAND,
           className: j.uploadButton,
-          children: [x.NW.string(x.t.yG2pUl), (0, r.jsx)(d.ZP, {
-            onChange: v,
-            maxFileSizeBytes: b.B
-          })]
+          buttonCTA: x.NW.string(x.t.yG2pUl),
+          onChange: v,
+          maxFileSizeBytes: b.B
         })]
       }), (0, r.jsx)("div", {
         children: O

@@ -89,7 +89,7 @@ let x = function(e) {
         (0, m.mM)(t, e.channelId, n)
       }))
     }, [t, s]),
-    k = i.useCallback(() => (0, l.ZDy)(async () => {
+    A = i.useCallback(() => (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("84725").then(n.bind(n, 462499));
@@ -149,7 +149,7 @@ let x = function(e) {
           className: h.resourceChannelEditButton,
           innerClassName: h.resourceChannelEditButtonInner,
           size: l.zxk.Sizes.MIN,
-          onClick: k,
+          onClick: A,
           children: [(0, r.jsx)(l.vdY, {
             size: "md",
             color: "currentColor"

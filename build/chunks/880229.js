@@ -36,9 +36,9 @@ var r = n(200651),
   R = n(348227);
 let Z = (0, x.hQ)(),
   D = (0, x.hQ)(),
-  k = (0, C.Mg)(u.Z.IMPORT_BENEFITS_MODAL_ROLE_ICON_SIZE);
+  A = (0, C.Mg)(u.Z.IMPORT_BENEFITS_MODAL_ROLE_ICON_SIZE);
 
-function A(e) {
+function k(e) {
   var t;
   let {
     emojiId: n,
@@ -130,7 +130,7 @@ function L(e) {
     }), (0, r.jsx)("div", {
       className: R.list,
       children: i.map(e => (0, r.jsxs)(W, {
-        icon: (0, r.jsx)(A, {
+        icon: (0, r.jsx)(k, {
           emojiId: e.emoji_id,
           emojiName: e.emoji_name,
           className: R.rowIcon
@@ -230,7 +230,7 @@ function G(e) {
   } = e, l = (0, N.p9)({
     guildId: n,
     roleId: i.id,
-    size: k
+    size: A
   });
   return (0, r.jsxs)(m.P3F, {
     className: R.roleRow,

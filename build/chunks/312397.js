@@ -23,7 +23,7 @@ var r = n(200651),
   j = n(600164),
   N = n(536442),
   v = n(142497),
-  _ = n(813197),
+  _ = n(345861),
   O = n(208567),
   y = n(496675),
   C = n(594174),
@@ -36,8 +36,8 @@ var r = n(200651),
   R = n(375263),
   Z = n(586382),
   D = n(594980),
-  k = n(515025),
-  A = n(760632),
+  A = n(515025),
+  k = n(760632),
   W = n(578053),
   L = n(640175),
   M = n(715224),
@@ -188,17 +188,13 @@ class X extends i.PureComponent {
             type: m.geA.DESCRIPTION,
             className: z.marginBottom8,
             children: F.NW.string(F.t["R/9yQE"])
-          }), (0, r.jsxs)(m.zxk, {
+          }), (0, r.jsx)(_.Z, {
             look: m.iLD.OUTLINED,
             color: m.Ttl.PRIMARY,
             disabled: !n,
             className: z.marginTop8,
-            onClick: this.handleUploadImage,
-            children: [F.NW.string(F.t["MsUY/f"]), (0, r.jsx)(_.ZP, {
-              ref: this._imageInputRef,
-              onChange: this.handleOpenImageEditingModal,
-              disabled: !n
-            })]
+            buttonCTA: F.NW.string(F.t["MsUY/f"]),
+            onChange: this.handleOpenImageEditingModal
           })]
         })]
       }), (0, r.jsx)(j.Z.Child, {
@@ -240,7 +236,7 @@ class X extends i.PureComponent {
           basis: "50%",
           children: (0, r.jsx)(m.xJW, {
             title: F.NW.string(F.t.brhYaW),
-            children: (0, r.jsx)(A.M, {
+            children: (0, r.jsx)(k.M, {
               canManageGuild: t,
               afkTimeout: e.afkTimeout,
               afkChannelId: e.afkChannelId
@@ -397,7 +393,7 @@ class X extends i.PureComponent {
           }), (0, r.jsx)(j.Z.Child, {
             wrap: !0,
             basis: "50%",
-            children: (0, r.jsx)(k.h, {
+            children: (0, r.jsx)(A.h, {
               guild: e,
               canManageGuild: t
             })
@@ -508,7 +504,7 @@ class X extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), Y(this, "_imageInputRef", i.createRef()), Y(this, "_displaySectionRef", i.createRef()), Y(this, "_inviteSectionRef", i.createRef()), Y(this, "_notificationSectionRef", i.createRef()), Y(this, "handleIconChange", e => {
+    super(...e), Y(this, "_displaySectionRef", i.createRef()), Y(this, "_inviteSectionRef", i.createRef()), Y(this, "_notificationSectionRef", i.createRef()), Y(this, "handleIconChange", e => {
       T.Z.updateGuild({
         icon: e
       })
@@ -528,9 +524,6 @@ class X extends i.PureComponent {
           file: t
         }, n))
       })
-    }), Y(this, "handleUploadImage", e => {
-      var t;
-      e.target === e.currentTarget && (null === (t = this._imageInputRef.current) || void 0 === t || t.activateUploadDialogue())
     }), Y(this, "handleHomeHeaderChange", (e, t) => {
       if (null == e || void 0 === t) {
         T.Z.updateGuild({

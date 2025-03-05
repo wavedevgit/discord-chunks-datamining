@@ -61,7 +61,7 @@ function b(e) {
       (null == v || e) && !h ? (0, i.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("49049"), n.e("82758"), n.e("58023"), n.e("8472")]).then(n.bind(n, 779250));
+        } = await Promise.all([n.e("49049"), n.e("82758"), n.e("58023"), n.e("60858")]).then(n.bind(n, 779250));
         return n => (0, r.jsx)(e, f(g({}, n), {
           guildScheduledEventId: t,
           guildId: b.id

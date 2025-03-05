@@ -32,8 +32,8 @@ function v(e) {
       isSelected: v
     } = e,
     P = (0, d.N)(),
-    _ = (0, u.Ng)(),
-    S = (0, b.Vi)(),
+    S = (0, u.Ng)(),
+    _ = (0, b.Vi)(),
     N = (0, o.e7)([h.Z], () => h.Z.isLocalizedPromoEnabled) && null == P && null == r,
     E = (null == P ? void 0 : P.trial_id) === j.a7,
     w = (0, c.m)({
@@ -43,9 +43,9 @@ function v(e) {
   return t = !0 === w ? !0 === T ? (0, n.jsx)(O.Du, {}) : (0, n.jsx)(m.Z, {
     copy: y.NW.string(y.t.OS9KPj),
     showStars: !1
-  }) : S ? (0, n.jsx)(p.Z, {}) : null != _ ? (0, n.jsx)(g.GN, {
+  }) : _ ? (0, n.jsx)(p.Z, {}) : null != S ? (0, n.jsx)(g.GN, {
     isTabSelected: v,
-    userDiscount: _,
+    userDiscount: S,
     includesAmountOff: !1
   }) : null == P || E ? null != r ? r : N ? (0, n.jsx)(f.k, {
     entryPoint: f.U.SettingsMenu
@@ -57,14 +57,14 @@ function v(e) {
   }), (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)("div", {
       className: i()(C.premiumLabel, {
-        [C.selected]: (v || N) && !S
+        [C.selected]: (v || N) && !_
       }),
       children: [s, t]
     }), (0, n.jsx)("div", {
       className: i()(C.background, {
         [C.auPromo]: N && !v,
         [C.auPromoSelected]: N && v,
-        [C.selectedBackground]: !N && !S && v
+        [C.selectedBackground]: !N && !_ && v
       })
     })]
   })

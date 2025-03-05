@@ -1,7 +1,7 @@
 /** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => k
 }), n(47120), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -79,7 +79,7 @@ function D() {
   }]
 }
 
-function k(e) {
+function A(e) {
   let {
     value: t,
     "aria-labelledby": n,
@@ -126,7 +126,7 @@ function k(e) {
   })
 }
 
-function A(e) {
+function k(e) {
   var t;
   let {
     guild: n,
@@ -136,7 +136,7 @@ function A(e) {
   } = (0, C.Z)(n.id), l = (0, _.YB)(n.id), c = i.useCallback(() => {
     var e;
     return (null == l ? void 0 : null === (e = l.cover_image_asset) || void 0 === e ? void 0 : e.application_id) == null ? null : (0, N._W)(l.cover_image_asset.application_id, l.cover_image_asset, Z)
-  }, [l]), [m, h] = i.useState(a), [f, v] = i.useState(null !== (t = null == l ? void 0 : l.description) && void 0 !== t ? t : ""), [D, A] = i.useState(c), [W, L] = i.useState(null == l ? void 0 : l.store_page_guild_products_default_sort), [M, G] = i.useState(null == l ? void 0 : l.server_shop_tab_order), {
+  }, [l]), [m, h] = i.useState(a), [f, v] = i.useState(null !== (t = null == l ? void 0 : l.description) && void 0 !== t ? t : ""), [D, k] = i.useState(c), [W, L] = i.useState(null == l ? void 0 : l.store_page_guild_products_default_sort), [M, G] = i.useState(null == l ? void 0 : l.server_shop_tab_order), {
     loading: U,
     error: B,
     updateSubscriptionsSettings: F
@@ -147,7 +147,7 @@ function A(e) {
   } = (0, y.Z)(null == l ? void 0 : l.cover_image_asset), Y = (0, b.Dt)(), K = (0, b.Dt)(), q = (0, b.Dt)();
 
   function X(e, t) {
-    o()(null != e, "Null value not allowed"), null != t && V(t.name), A(e)
+    o()(null != e, "Null value not allowed"), null != t && V(t.name), k(e)
   }
   let Q = i.useMemo(() => {
       var e;
@@ -156,7 +156,7 @@ function A(e) {
     J = null != f && "" !== f && null != D;
   i.useEffect(() => {
     var e;
-    (null == l ? void 0 : null === (e = l.cover_image_asset) || void 0 === e ? void 0 : e.application_id) != null && A((0, N._W)(l.cover_image_asset.application_id, l.cover_image_asset, Z))
+    (null == l ? void 0 : null === (e = l.cover_image_asset) || void 0 === e ? void 0 : e.application_id) != null && k((0, N._W)(l.cover_image_asset.application_id, l.cover_image_asset, Z))
   }, [null == l ? void 0 : l.cover_image_asset]);
   let $ = (0, O.mY)(),
     ee = i.useMemo(() => S.kL.map(e => ({
@@ -188,7 +188,7 @@ function A(e) {
           className: P.formDescription,
           disabled: $,
           children: T.NW.string(T.t.x87YqK)
-        }), (0, r.jsx)(k, {
+        }), (0, r.jsx)(A, {
           value: m,
           onChange: e => {
             a !== e && e === E.e3.ALL_CHANNELS && (0, g.h7j)(e => (0, r.jsx)(g.ConfirmModal, R(w({}, e), {
@@ -301,7 +301,7 @@ function A(e) {
           disabled: !J,
           onReset: () => {
             var e;
-            h(a), v(null !== (e = null == l ? void 0 : l.description) && void 0 !== e ? e : ""), A(c), L(null == l ? void 0 : l.store_page_guild_products_default_sort), G(null == l ? void 0 : l.server_shop_tab_order)
+            h(a), v(null !== (e = null == l ? void 0 : l.description) && void 0 !== e ? e : ""), k(c), L(null == l ? void 0 : l.store_page_guild_products_default_sort), G(null == l ? void 0 : l.server_shop_tab_order)
           },
           onSave: () => {
             o()(null != l, "Settings must be defined");

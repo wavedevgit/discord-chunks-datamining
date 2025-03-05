@@ -64,12 +64,12 @@ let v = function(e) {
     onDragReset: w
   } = e, R = (0, l.e7)([p.Z], () => p.Z.getChannel(C.channelId)), Z = (0, l.e7)([h.Z], () => h.Z.getGuild(y)), {
     customEmoji: D,
-    unicodeEmoji: k
-  } = (0, u.Z)(null === (t = C.emoji) || void 0 === t ? void 0 : t.id, null === (s = C.emoji) || void 0 === s ? void 0 : s.name), A = null == C.emoji || null != D || null != k, W = f.ZP.getNewMemberActionIconURL({
+    unicodeEmoji: A
+  } = (0, u.Z)(null === (t = C.emoji) || void 0 === t ? void 0 : t.id, null === (s = C.emoji) || void 0 === s ? void 0 : s.name), k = null == C.emoji || null != D || null != A, W = f.ZP.getNewMemberActionIconURL({
     channelId: C.channelId,
     icon: C.icon
   }), L = null;
-  null != R && (0, m.kb)(R) ? A || (L = b.NW.string(b.t.wAkIZW)) : L = b.NW.string(b.t.CbTEKC);
+  null != R && (0, m.kb)(R) ? k || (L = b.NW.string(b.t.wAkIZW)) : L = b.NW.string(b.t.CbTEKC);
   let {
     drag: M,
     dragSourcePosition: G,

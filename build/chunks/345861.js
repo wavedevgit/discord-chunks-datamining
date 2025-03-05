@@ -1,85 +1,91 @@
-/** Chunk was on 40580 **/
-"use strict";
-r.d(t, {
-  Z: () => a
+/** Chunk was on 84699 **/
+n.d(t, {
+  Z: () => _
 });
-var n = r(200651);
-r(192379);
-var s = r(120356),
-  i = r.n(s),
-  o = r(481060),
-  l = r(813197);
+var o = n(200651);
+n(192379);
+var r = n(120356),
+  a = n.n(r),
+  i = n(481060),
+  c = n(813197);
 
-function a(e) {
-  var t, r, {
-      buttonCTA: s,
-      onChange: a,
-      "aria-label": c,
-      multiple: u = !1,
-      disabled: d = !1,
-      submitting: p = !1
+function _(e) {
+  var t, n, {
+      buttonCTA: r,
+      onChange: _,
+      onFileSizeError: d,
+      "aria-label": l,
+      multiple: s = !1,
+      disabled: b = !1,
+      submitting: p = !1,
+      maxFileSizeBytes: u,
+      filters: f,
+      className: m
     } = e,
-    f = function(e, t) {
+    h = function(e, t) {
       if (null == e) return {};
-      var r, n, s = function(e, t) {
+      var n, o, r = function(e, t) {
         if (null == e) return {};
-        var r, n, s = {},
-          i = Object.keys(e);
-        for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (s[r] = e[r]);
-        return s
+        var n, o, r = {},
+          a = Object.keys(e);
+        for (o = 0; o < a.length; o++) n = a[o], t.indexOf(n) >= 0 || (r[n] = e[n]);
+        return r
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (s[r] = e[r])
+        var a = Object.getOwnPropertySymbols(e);
+        for (o = 0; o < a.length; o++) n = a[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
       }
-      return s
-    }(e, ["buttonCTA", "onChange", "aria-label", "multiple", "disabled", "submitting"]);
-  return (0, n.jsx)(o.tEY, {
+      return r
+    }(e, ["buttonCTA", "onChange", "onFileSizeError", "aria-label", "multiple", "disabled", "submitting", "maxFileSizeBytes", "filters", "className"]);
+  return (0, o.jsx)(i.tEY, {
     within: !0,
-    children: (0, n.jsxs)("div", {
-      className: i()((0, o.nYM)((t = function(e) {
+    children: (0, o.jsxs)("div", {
+      className: a()((0, i.nYM)((t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(r);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-          }))), n.forEach(function(t) {
-            var n;
-            n = r[t], t in e ? Object.defineProperty(e, t, {
-              value: n,
+          var n = null != arguments[t] ? arguments[t] : {},
+            o = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), o.forEach(function(t) {
+            var o;
+            o = n[t], t in e ? Object.defineProperty(e, t, {
+              value: o,
               enumerable: !0,
               configurable: !0,
               writable: !0
-            }) : e[t] = n
+            }) : e[t] = o
           })
         }
         return e
-      }({}, f), r = r = {
+      }({}, h), n = n = {
         submitting: p,
-        disabled: d
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-        var r = Object.keys(e);
+        disabled: b
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+        var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e);
-          r.push.apply(r, n)
+          var o = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, o)
         }
-        return r
-      })(Object(r)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
-      }), t))),
+        return n
+      })(Object(n)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+      }), t)), m),
       style: {
         width: "max-content"
       },
-      "aria-disabled": d,
-      children: [(0, n.jsx)("span", {
+      "aria-disabled": b,
+      children: [(0, o.jsx)("span", {
         "aria-hidden": !0,
-        children: s
-      }), (0, n.jsx)(l.ZP, {
+        children: r
+      }), (0, o.jsx)(c.ZP, {
         tabIndex: 0,
-        onChange: a,
-        multiple: u,
-        "aria-label": null != c ? c : s,
-        disabled: d
+        onChange: _,
+        onFileSizeError: d,
+        multiple: s,
+        maxFileSizeBytes: u,
+        filters: f,
+        "aria-label": null != l ? l : r,
+        disabled: b
       })]
     })
   })

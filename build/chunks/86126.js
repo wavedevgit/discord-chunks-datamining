@@ -92,17 +92,17 @@ function N(e) {
       }))
     })
   }, {
-    allowSelfRemoveMonetization: k
+    allowSelfRemoveMonetization: A
   } = (0, c.gX)(v);
   return null == O ? null : (0, r.jsx)(p.Z, {
     title: h.NW.string(h.t["7Si8Ul"]),
     children: T ? (0, r.jsxs)(o.hjN, {
       title: h.NW.string(h.t["2D14T0"]),
-      disabled: !k,
+      disabled: !A,
       children: [(0, r.jsx)(o.R94, {
         type: o.R94.Types.DESCRIPTION,
         className: f.formDescription,
-        disabled: !k,
+        disabled: !A,
         children: h.NW.string(h.t.Y4KjUF)
       }), (0, r.jsx)(o.ua7, {
         shouldShow: !E,
@@ -114,17 +114,17 @@ function N(e) {
           color: o.zxk.Colors.RED,
           onClick: D,
           submitting: w,
-          disabled: !k || !E,
+          disabled: !A || !E,
           children: h.NW.string(h.t.GMtG6u)
         }))
       })]
     }) : (0, r.jsxs)(o.hjN, {
       title: h.NW.string(h.t["MS/4U1"]),
-      disabled: !k,
+      disabled: !A,
       children: [(0, r.jsx)(o.R94, {
         type: o.R94.Types.DESCRIPTION,
         className: f.formDescription,
-        disabled: !k,
+        disabled: !A,
         children: h.NW.string(h.t["5/Jeg4"])
       }), (0, r.jsx)(o.zxk, {
         wrapperClassName: b.deleteListingButton,
@@ -151,7 +151,7 @@ function N(e) {
           })
         },
         submitting: Z,
-        disabled: !k,
+        disabled: !A,
         children: h.NW.string(h.t.RL0wjo)
       })]
     })

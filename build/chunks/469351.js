@@ -39,7 +39,7 @@ function S(e) {
     loading: R
   } = (0, o.H)(t), [Z, D] = i.useState(n ? "manage_listings" : "payment");
   (0, u.P)(T);
-  let k = i.useCallback(() => {
+  let A = i.useCallback(() => {
     if (null == T) return;
     let e = b.Z.getRole(T.id, T.getEveryoneRoleId());
     if (null == e) return;
@@ -56,7 +56,7 @@ function S(e) {
   }, [T]);
   if (!S || R) return (0, r.jsx)(l.$jN, {});
   if (null == T) return null;
-  let A = (0, r.jsxs)(r.Fragment, {
+  let k = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.vwX, {
         tag: l.RB0.H1,
         children: I.NW.string(I.t.X6h2g4)
@@ -92,7 +92,7 @@ function S(e) {
       }) : null, n ? (0, r.jsx)("div", {
         className: E.previewButton,
         children: (0, r.jsx)(l.zxk, {
-          onClick: k,
+          onClick: A,
           color: l.zxk.Colors.PRIMARY,
           size: l.zxk.Sizes.SMALL,
           look: l.zxk.Looks.OUTLINED,
@@ -113,7 +113,7 @@ function S(e) {
     }) : (0, r.jsx)(l.$jN, {});
   return (0, r.jsxs)(c.AL, {
     guildId: t,
-    children: [A, (0, r.jsx)(m.Z, {
+    children: [k, (0, r.jsx)(m.Z, {
       guild: T
     }), (0, r.jsx)("div", {
       className: E.tabBarContainer,

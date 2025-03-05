@@ -547,7 +547,7 @@ class O extends a.Z {
     return 0 === this.connections.size
   }
   constructor() {
-    var e, t, n, r, i, a;
+    var e, t, n, r, i, a, c;
     super(), e = this, g(this, "Video", _.Z), g(this, "Camera", f.Z), g(this, "videoInputDeviceId", h.Av), g(this, "connections", new Set), g(this, "lastVoiceActivity", -1), g(this, "audioSubsystem", "standard"), g(this, "audioLayer", ""), g(this, "deviceChangeGeneration", 0), g(this, "consecutiveWatchdogFailures", 0), g(this, "codecSurvey", null), g(this, "logger", new o.Yd("MediaEngineNative")), g(this, "handleDeviceChange", function() {
       let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
         n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
@@ -587,12 +587,12 @@ class O extends a.Z {
     }), g(this, "handleAudioDeviceModuleErrorCallback", (e, t) => {
       -100 !== e && this.emit(s.aB.AudioDeviceModuleError, "RustAudioDeviceModule", e, t)
     });
-    let c = (0, d.zS)();
-    c.setDeviceChangeCallback(this.handleDeviceChange), c.setVolumeChangeCallback(this.handleVolumeChange), c.setOnVoiceCallback(this.handleVoiceActivity), null === (t = c.setVideoInputInitializationCallback) || void 0 === t || t.call(c, this.handleVideoInputInitialization), null === (n = c.setAudioInputInitializationCallback) || void 0 === n || n.call(c, this.handleAudioInputInitialization), c.setTransportOptions({
+    let p = (0, d.zS)();
+    p.setDeviceChangeCallback(this.handleDeviceChange), p.setVolumeChangeCallback(this.handleVolumeChange), p.setOnVoiceCallback(this.handleVoiceActivity), null === (t = p.setVideoInputInitializationCallback) || void 0 === t || t.call(p, this.handleVideoInputInitialization), null === (n = p.setAudioInputInitializationCallback) || void 0 === n || n.call(p, this.handleAudioInputInitialization), p.setTransportOptions({
       idleJitterBufferFlush: !0,
       ducking: !1
-    }), null === (r = c.setNativeScreenSharePickerCallbacks) || void 0 === r || r.call(c, this.handleNativeScreenSharePickerUpdate, this.handleNativeScreenSharePickerCancel, this.handleNativeScreenSharePickerError), null === (i = c.setAudioDeviceModuleErrorCallback) || void 0 === i || i.call(c, this.handleAudioDeviceModuleErrorCallback), this.on("removeListener", this.handleRemoveListener), this.on("newListener", this.handleNewListener), null != (0, d.zS)().getAudioSubsystem ? (0, d.zS)().getAudioSubsystem((e, t) => {
+    }), null === (r = p.setNativeScreenSharePickerCallbacks) || void 0 === r || r.call(p, this.handleNativeScreenSharePickerUpdate, this.handleNativeScreenSharePickerCancel, this.handleNativeScreenSharePickerError), null === (i = p.setAudioDeviceModuleErrorCallback) || void 0 === i || i.call(p, this.handleAudioDeviceModuleErrorCallback), this.on("removeListener", this.handleRemoveListener), this.on("newListener", this.handleNewListener), null != (0, d.zS)().getAudioSubsystem ? (0, d.zS)().getAudioSubsystem((e, t) => {
       this.audioSubsystem = e, this.audioLayer = t
-    }) : null != (0, d.zS)().getUseLegacyAudioDevice && (this.audioSubsystem = (0, d.zS)().getUseLegacyAudioDevice() ? h.iA.LEGACY : h.iA.STANDARD), null != c.pingVoiceThread && "undefined" != typeof window && "canary" === window.GLOBAL_ENV.RELEASE_CHANNEL && this.watchdogTick(), null != c.setActiveSinksChangeCallback && c.setActiveSinksChangeCallback(this.handleActiveSinksChange), null === (a = c.setLoopbackPlaybackGainMultiplier) || void 0 === a || a.call(c, h.Jk), (0, l.Z)(this)
+    }) : null != (0, d.zS)().getUseLegacyAudioDevice && (this.audioSubsystem = (0, d.zS)().getUseLegacyAudioDevice() ? h.iA.LEGACY : h.iA.STANDARD), null != p.pingVoiceThread && "undefined" != typeof window && "canary" === window.GLOBAL_ENV.RELEASE_CHANNEL && this.watchdogTick(), null != p.setActiveSinksChangeCallback && p.setActiveSinksChangeCallback(this.handleActiveSinksChange), null === (a = p.setLoopbackPlaybackGainMultiplier) || void 0 === a || a.call(p, h.Jk), null === (c = p.setVoiceFiltersFailedCallback) || void 0 === c || c.call(p, e => this.emit(s.aB.VoiceFiltersFailed, e)), (0, l.Z)(this)
   }
 }

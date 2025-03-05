@@ -38,7 +38,7 @@ function l(e) {
     PermissionStore: E,
     GuildStore: _
   }) === o.Fw.CAN_JOIN;
-  if (!(0, r.isDesktop)() && !d) return !1;
+  if (d && null != c && !(0, a.Z)(n, s.xjy.CONTEXTLESS) || !(0, r.isDesktop)() && !d) return !1;
   if ((0, a.Z)(n, s.xjy.PARTY_PRIVACY_FRIENDS) && h.isFriend(t.id)) return !0;
   if ((0, a.Z)(n, s.xjy.PARTY_PRIVACY_VOICE_CHANNEL)) {
     let e = f.getChannel(g.getVoiceChannelId());

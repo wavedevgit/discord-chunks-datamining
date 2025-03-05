@@ -4,7 +4,7 @@ r.d(t, {
   ID: () => x,
   NM: () => C,
   Xi: () => y,
-  ZP: () => S,
+  ZP: () => _,
   bT: () => v
 });
 var n, s, i = r(200651),
@@ -121,7 +121,7 @@ let P = Object.freeze({
   scrollableCustom: "contentColumnCustom"
 });
 
-function _(e) {
+function S(e) {
   let {
     isMobile: t,
     mobileSidebarOpen: r,
@@ -150,7 +150,7 @@ function _(e) {
     })
   })
 }
-let S = function(e) {
+let _ = function(e) {
   let {
     sidebar: t,
     content: r,
@@ -163,7 +163,7 @@ let S = function(e) {
     mobileSidebarOpen: x,
     toggleSidebar: y,
     hideSidebar: C = !1
-  } = e, v = o.useRef(null), S = o.useRef(null), N = (0, b.Z)(s), E = (0, f.Yzy)(C, {
+  } = e, v = o.useRef(null), _ = o.useRef(null), N = (0, b.Z)(s), E = (0, f.Yzy)(C, {
     from: {
       position: "absolute",
       opacity: 0
@@ -181,7 +181,7 @@ let S = function(e) {
       to: 0
     })
   }, [s, N, v]);
-  let T = (0, i.jsx)(_, {
+  let T = (0, i.jsx)(S, {
     isMobile: d.tq,
     mobileSidebarOpen: x,
     closeAction: l
@@ -244,10 +244,10 @@ let S = function(e) {
             children: [(0, i.jsx)(j.Provider, {
               value: v.current,
               children: (0, i.jsx)("div", {
-                ref: S,
+                ref: _,
                 className: m.contentColumnScrollable,
                 children: (0, i.jsx)(f.JcV, {
-                  containerRef: S,
+                  containerRef: _,
                   children: r
                 })
               })
@@ -272,12 +272,12 @@ let S = function(e) {
                   className: a()(m.contentColumn, m[n], {
                     [m.mobileContent]: d.tq
                   }),
-                  ref: S,
+                  ref: _,
                   style: d.tq ? {
                     maxWidth: window.innerWidth
                   } : void 0,
                   children: C ? r : (0, i.jsx)(f.JcV, {
-                    containerRef: S,
+                    containerRef: _,
                     children: r
                   })
                 })

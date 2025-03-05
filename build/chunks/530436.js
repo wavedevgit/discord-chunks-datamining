@@ -1,6 +1,6 @@
 /** Chunk was on 58023 **/
 n.d(t, {
-  W: () => u
+  W: () => d
 });
 var r = n(200651),
   l = n(192379),
@@ -9,17 +9,17 @@ var r = n(200651),
   s = n(496675),
   o = n(981631),
   c = n(388032),
-  d = n(724897);
+  u = n(724897);
 
-function u(e) {
+function d(e) {
   let {
     guild: t,
     error: n,
-    onClose: u
+    onClose: d
   } = e, m = t.id, x = l.useCallback(() => {
-    u(), a.Z.open(m, o.pNK.INSTANT_INVITES)
-  }, [m, u]), g = l.useCallback(e => (0, r.jsx)(i.P3F, {
-    className: d.errorLink,
+    d(), a.Z.open(m, o.pNK.INSTANT_INVITES)
+  }, [m, d]), g = l.useCallback(e => (0, r.jsx)(i.P3F, {
+    className: u.errorLink,
     onClick: x,
     children: (0, r.jsx)(i.Text, {
       variant: "text-xs/normal",
@@ -41,7 +41,7 @@ function u(e) {
     inviteHelpHook: h
   }) : c.NW.string(c.t["/FxH6O"]);
   return (0, r.jsx)(i.Text, {
-    className: d.errorMessage,
+    className: u.errorMessage,
     variant: "text-xs/normal",
     color: "text-danger",
     children: v

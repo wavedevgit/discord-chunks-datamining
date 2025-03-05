@@ -10,8 +10,8 @@ var r = n(200651),
   s = n(533800),
   o = n(442837),
   c = n(481060),
-  d = n(484614),
-  u = n(914010),
+  u = n(484614),
+  d = n(914010),
   m = n(246946),
   x = n(626135),
   g = n(630388),
@@ -32,7 +32,7 @@ let y = o.ZP.connectStores([m.Z], () => ({
       onCopy: i,
       disabled: a
     } = e;
-    return (0, r.jsx)(d.Z, {
+    return (0, r.jsx)(u.Z, {
       value: l ? j.NW.string(j.t["6HzNgY"]) : t,
       buttonColor: c.zxk.Colors.BRAND,
       onCopy: i,
@@ -46,7 +46,7 @@ let y = o.ZP.connectStores([m.Z], () => ({
       noInvitesAvailable: n,
       showFriends: i,
       onClose: o,
-      modalState: d,
+      modalState: u,
       isApplicationBypassToggleEnabled: m,
       setInviteFlags: O,
       copyValue: E,
@@ -63,9 +63,9 @@ let y = o.ZP.connectStores([m.Z], () => ({
       networkError: _,
       showVanityURL: D,
       flags: R
-    } = d, A = l.useCallback(() => {
+    } = u, A = l.useCallback(() => {
       x.default.track(p.rMx.COPY_INSTANT_INVITE, {
-        server: u.Z.getGuildId(),
+        server: d.Z.getGuildId(),
         channel: null == I ? void 0 : I.id,
         channel_type: null == I ? void 0 : I.type,
         location: S,

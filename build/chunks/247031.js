@@ -134,7 +134,7 @@ function D(e) {
     })]
   })
 }
-class k extends i.PureComponent {
+class A extends i.PureComponent {
   render() {
     let {
       user: e,
@@ -188,7 +188,7 @@ class k extends i.PureComponent {
     })
   }
 }
-class A extends i.PureComponent {
+class k extends i.PureComponent {
   makeFilter(e) {
     if (null == e || 0 === e.length) return e => null != e;
     {
@@ -260,7 +260,7 @@ class A extends i.PureComponent {
       }, "spinner");
       let d = this.getSortedBans(s, o)[i],
         u = null == s ? void 0 : s.get(null !== (t = null == d ? void 0 : d.id) && void 0 !== t ? t : "");
-      if (null != d && null != u) return (0, r.jsx)(k, {
+      if (null != d && null != u) return (0, r.jsx)(A, {
         user: d,
         ban: u,
         hideDiscriminator: a,
@@ -340,7 +340,7 @@ let W = o.ZP.connectStores([O.Z, h.Z, f.Z], () => {
     theme: h.Z.theme,
     streamerMode: f.Z.hidePersonalInformation
   }
-})(A);
+})(k);
 
 function L() {
   var e;

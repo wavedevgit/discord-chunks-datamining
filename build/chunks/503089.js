@@ -3,8 +3,8 @@
 r.d(t, {
   $x: () => P,
   ZP: () => w,
-  d7: () => S,
-  w6: () => _
+  d7: () => _,
+  w6: () => S
 }), r(653041), r(13667), r(390547), r(47120);
 var n = r(200651),
   s = r(192379),
@@ -64,8 +64,8 @@ let v = Object.freeze({
     sidebarOpen: !0
   }),
   P = 1.4,
-  _ = 15,
-  S = 2;
+  S = 15,
+  _ = 2;
 
 function N(e) {
   var t, r;
@@ -129,7 +129,7 @@ class E extends s.PureComponent {
     return null != r && r.stores.some(e => e.showNotice() && !(null != e.canCloseEarly && e.canCloseEarly())) ? (f.S.dispatch(m.CkL.SHAKE_APP, {
       duration: 300,
       intensity: this._intensity
-    }), this._intensity = Math.min(this._intensity + S, _), f.S.dispatch(m.CkL.EMPHASIZE_NOTICE), !1) : (this._intensity = P, !0)
+    }), this._intensity = Math.min(this._intensity + _, S), f.S.dispatch(m.CkL.EMPHASIZE_NOTICE), !1) : (this._intensity = P, !0)
   }
   renderSidebar(e) {
     let {

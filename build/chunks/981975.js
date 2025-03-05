@@ -99,10 +99,10 @@ function w(e) {
   } = (0, N.V)(), D = (0, c.e7)([h.Z], () => {
     var e;
     return null === (e = h.Z.getRoleMemberCount(t.id)) || void 0 === e ? void 0 : e[n.id]
-  }, [n.id, t.id]), k = (0, c.Wu)([b.Z], () => {
+  }, [n.id, t.id]), A = (0, c.Wu)([b.Z], () => {
     var e;
     return null !== (e = b.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) && void 0 !== e ? e : []
-  }), A = k.length > 1 ? m.O1.OR : m.O1.AND, W = i.useMemo(() => A === m.O1.OR ? k.flat() : null != k && k.length > 0 ? k[0] : [], [A, k]), L = i.useMemo(() => new Set(W.map(e => e.connectionType)), [W]);
+  }), k = A.length > 1 ? m.O1.OR : m.O1.AND, W = i.useMemo(() => k === m.O1.OR ? A.flat() : null != A && A.length > 0 ? A[0] : [], [k, A]), L = i.useMemo(() => new Set(W.map(e => e.connectionType)), [W]);
 
   function M(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : void 0,
@@ -113,7 +113,7 @@ function w(e) {
       applicationId: t,
       operator: void 0,
       value: void 0
-    }), (0, f.d_)(n.id, T(r, A))
+    }), (0, f.d_)(n.id, T(r, k))
   }
 
   function G() {
@@ -191,7 +191,7 @@ function w(e) {
             "aria-labelledby": S
           })
         })
-      }(s, n.id, A, W, (e, t) => (0, f.d_)(n.id, T(e, t))), function(e, t, n, i, s) {
+      }(s, n.id, k, W, (e, t) => (0, f.d_)(n.id, T(e, t))), function(e, t, n, i, s) {
         function a(n, r) {
           let i = [];
           for (let t of e) i.push(E({}, t));
@@ -252,7 +252,7 @@ function w(e) {
             integrations: s
           }, e[0].configuration.connectionType + ":" + e[0].index))
         })
-      }(W, e => (0, f.d_)(n.id, T(e, A)), s, n.id, o), e]
+      }(W, e => (0, f.d_)(n.id, T(e, k)), s, n.id, o), e]
     })
   }
   return (0, r.jsx)(d.yWw, {

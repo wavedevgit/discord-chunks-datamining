@@ -128,28 +128,28 @@ let I = [{
       brandSecondaryColor: P,
       badgePrimaryColor: w,
       badgeSecondaryColor: R
-    } = s, Z = (0, u.e7)([p.Z], () => p.Z.getGuild(l)), D = null !== (t = (0, u.e7)([g.Z], () => g.Z.getMemberCount(l))) && void 0 !== t ? t : 0, k = i.useMemo(() => ({
+    } = s, Z = (0, u.e7)([p.Z], () => p.Z.getGuild(l)), D = null !== (t = (0, u.e7)([g.Z], () => g.Z.getMemberCount(l))) && void 0 !== t ? t : 0, A = i.useMemo(() => ({
       primary: null != T ? T : N.OH,
       secondary: null != P ? P : N.K_
-    }), [T, P]), A = i.useMemo(() => {
+    }), [T, P]), k = i.useMemo(() => {
       if (T === w && P === R) return 1;
       for (let e = 0; e < N.ym.length; e++)
         if (N.ym[e].primary === s.brandPrimaryColor && N.ym[e].secondary === s.brandSecondaryColor) return 2 + e;
       return 0
-    }, [T, P, w, R, s.brandPrimaryColor, s.brandSecondaryColor]), [W, L] = i.useState(!1), M = 0 === A, G = 1 === A, U = i.useMemo(() => {
-      if (M) return k;
+    }, [T, P, w, R, s.brandPrimaryColor, s.brandSecondaryColor]), [W, L] = i.useState(!1), M = 0 === k, G = 1 === k, U = i.useMemo(() => {
+      if (M) return A;
       if (G) return {
         primary: null != w ? w : j.Nh,
         secondary: null != R ? R : j.vY
       };
       {
-        let e = N.ym[A - 2];
+        let e = N.ym[k - 2];
         return {
           primary: e.primary,
           secondary: e.secondary
         }
       }
-    }, [k, G, M, w, R, A]), B = i.useCallback(() => {
+    }, [A, G, M, w, R, k]), B = i.useCallback(() => {
       let e = I[Math.floor(Math.random() * I.length)].bannerKind;
       n({
         banner: e,
@@ -218,7 +218,7 @@ let I = [{
                 className: _.colorPickerGrid,
                 children: [(0, r.jsx)(b.Z, {
                   showSecondaryColor: !0,
-                  palette: k,
+                  palette: A,
                   onPrimaryColorChange: e => {
                     n({
                       brandPrimaryColor: (0, d.Rf)(e)
@@ -236,7 +236,7 @@ let I = [{
                       L(e => !e)
                     },
                     className: o()(_.brandItemContainer, {
-                      [_.brandItemContainerSelected]: 0 === A
+                      [_.brandItemContainerSelected]: 0 === k
                     }),
                     children: (0, r.jsx)(E, {
                       name: v.NW.string(v.t.AemVoa),
@@ -251,7 +251,7 @@ let I = [{
                     })
                   },
                   className: o()(_.brandItemContainer, {
-                    [_.brandItemContainerSelected]: 1 === A
+                    [_.brandItemContainerSelected]: 1 === k
                   }),
                   children: (0, r.jsx)(E, {
                     name: v.NW.string(v.t["1Pvr/v"]),
@@ -267,7 +267,7 @@ let I = [{
                     })
                   },
                   className: o()(_.brandItemContainer, {
-                    [_.brandItemContainerSelected]: A === t + 2
+                    [_.brandItemContainerSelected]: k === t + 2
                   }),
                   children: (0, r.jsx)(E, {
                     name: e.name,

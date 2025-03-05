@@ -62,7 +62,7 @@ let c = "url(#gradient)",
       C = (0, i.ap)(y),
       v = d(g),
       P = u(g, C),
-      _ = null != O ? O : p(C, g);
+      S = null != O ? O : p(C, g);
     return (0, n.jsxs)("div", {
       className: a.circleContainer,
       children: [(0, n.jsxs)("svg", {
@@ -78,7 +78,7 @@ let c = "url(#gradient)",
           stroke: v,
           strokeOpacity: P
         }), (0, n.jsx)("circle", {
-          stroke: _,
+          stroke: S,
           strokeWidth: b,
           strokeLinecap: "round",
           strokeDasharray: "".concat(h, " ").concat(h),

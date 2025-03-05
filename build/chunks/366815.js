@@ -10,8 +10,8 @@ var l = n(442837),
   s = n(142497),
   o = n(388032),
   c = n(548207),
-  d = n(137707);
-let u = () => (0, r.jsxs)(r.Fragment, {
+  u = n(137707);
+let d = () => (0, r.jsxs)(r.Fragment, {
   children: [(0, r.jsx)(i.Text, {
     color: "header-primary",
     variant: "text-xs/normal",
@@ -57,13 +57,13 @@ function m(e) {
           color: "header-secondary",
           variant: "text-xs/normal",
           children: o.NW.format(o.t.Vh7rPz, {
-            suggestionsHook: u
+            suggestionsHook: d
           })
         })]
       }), (0, r.jsx)("div", {
         className: c.image,
         children: (0, r.jsx)("img", {
-          src: d,
+          src: u,
           alt: o.NW.string(o.t["uIm/n5"])
         })
       })]

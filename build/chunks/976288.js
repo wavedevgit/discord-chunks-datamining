@@ -10,7 +10,7 @@ var r = n(200651),
   l = n(558324),
   o = n(456268),
   c = n(681460),
-  d = n(813197),
+  d = n(345861),
   u = n(650774),
   m = n(434404),
   g = n(999382),
@@ -87,13 +87,12 @@ function I(e) {
           children: O.NW.string(O.t.VJMq8f)
         }), (0, r.jsxs)("div", {
           className: y.buttonList,
-          children: [(0, r.jsxs)(a.zxk, {
+          children: [(0, r.jsx)(d.Z, {
             size: a.zxk.Sizes.SMALL,
             color: a.zxk.Colors.PRIMARY,
             className: y.editableSection,
-            children: [O.NW.string(O.t["3UB9aW"]), (0, r.jsx)(d.ZP, {
-              onChange: o
-            })]
+            buttonCTA: O.NW.string(O.t["3UB9aW"]),
+            onChange: o
           }), null != n.discoverySplash ? (0, r.jsx)(a.zxk, {
             size: a.zxk.Sizes.SMALL,
             color: a.zxk.Colors.RED,

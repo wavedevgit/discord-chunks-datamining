@@ -30,7 +30,7 @@ function c(e) {
       (0, l.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("22347"), n.e("82758"), n.e("58023"), n.e("35477")]).then(n.bind(n, 779250));
+        } = await Promise.all([n.e("22347"), n.e("82758"), n.e("58023"), n.e("11143")]).then(n.bind(n, 779250));
         return t => {
           var n, i;
           return (0, r.jsx)(e, (n = function(e) {

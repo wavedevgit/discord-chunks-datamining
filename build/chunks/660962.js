@@ -38,9 +38,9 @@ let D = (0, g.Un)({
     createPromise: () => n.e("4848").then(n.bind(n, 336231)),
     webpackId: 336231
   }),
-  k = o().debounce((e, t) => (0, v.Uv)(e, t), 200);
+  A = o().debounce((e, t) => (0, v.Uv)(e, t), 200);
 
-function A(e) {
+function k(e) {
   let {
     role: t,
     disabled: n
@@ -55,7 +55,7 @@ function A(e) {
       value: s,
       maxLength: S.VKK,
       onChange: function(e) {
-        a(e), k(t.id, e)
+        a(e), A(t.id, e)
       },
       disabled: n
     })
@@ -225,7 +225,7 @@ function G(e) {
           selectedSection: E.ZI.DISPLAY,
           setSelectedSection: s
         })
-      }), (0, r.jsx)(A, {
+      }), (0, r.jsx)(k, {
         role: n,
         disabled: o
       }), (0, r.jsx)("div", {

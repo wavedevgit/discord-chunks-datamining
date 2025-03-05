@@ -1,7 +1,6 @@
 /** Chunk was on 77032 **/
 e.exports = {
   container: "container__1df30",
-  text: "text__1df30",
   circular: "circular__1df30",
   spinner: "spinner__1df30",
   recentAvatarContainer: "recentAvatarContainer__1df30",

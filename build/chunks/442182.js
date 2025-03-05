@@ -207,7 +207,7 @@ function D(e) {
   })
 }
 
-function k(e) {
+function A(e) {
   let {
     guildId: t,
     roleId: n,
@@ -259,7 +259,7 @@ function k(e) {
   })
 }
 
-function A(e) {
+function k(e) {
   let {
     query: t,
     setQuery: n,
@@ -331,7 +331,7 @@ function W(e) {
             role: s,
             selectedSection: C.ZI.MEMBERS,
             setSelectedSection: d
-          }), (0, r.jsx)(A, {
+          }), (0, r.jsx)(k, {
             query: u,
             setQuery: m,
             locked: j,
@@ -343,7 +343,7 @@ function W(e) {
           }) : null]
         })
       })
-    }), (0, r.jsx)(k, {
+    }), (0, r.jsx)(A, {
       headerHeight: g + 8,
       query: u,
       guildId: t.id,

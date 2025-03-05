@@ -41,12 +41,12 @@ function y(e) {
   } = (0, g.pH)(P), D = {
     [p.vh.MEMBERS]: _.NW.string(_.t.sx4E5u),
     [p.vh.CONTENT]: _.NW.string(_.t.fphZb2)
-  }, k = i.useMemo(() => Object.values(null != Z ? Z : {}).flat().filter(d.lm), [Z]), A = {
+  }, A = i.useMemo(() => Object.values(null != Z ? Z : {}).flat().filter(d.lm), [Z]), k = {
     isInEditMode: w,
     setEditingRule: E
-  }, W = i.useRef(A);
+  }, W = i.useRef(k);
   i.useEffect(() => {
-    W.current = A
+    W.current = k
   }), i.useEffect(() => {
     let {
       isInEditMode: e,
@@ -57,7 +57,7 @@ function y(e) {
   let L = i.useCallback((e, t) => {
       if (null != e) {
         var n, r;
-        return null !== (r = null === (n = k.find(t => {
+        return null !== (r = null === (n = A.find(t => {
           let {
             id: n
           } = t;
@@ -65,7 +65,7 @@ function y(e) {
         })) || void 0 === n ? void 0 : n.name) && void 0 !== r ? r : null
       }
       return null != t ? p.I6[t].getDefaultRuleName() : null
-    }, [k]),
+    }, [A]),
     M = i.useMemo(() => {
       var e, t;
       return L(null !== (e = null == I ? void 0 : I.id) && void 0 !== e ? e : null, null !== (t = null == I ? void 0 : I.triggerType) && void 0 !== t ? t : null)
@@ -150,7 +150,7 @@ function y(e) {
       className: O.explicitContentFilterSection
     }), (0, r.jsx)(b.Z, {
       guildId: P,
-      existingRules: k
+      existingRules: A
     }), w && (0, r.jsx)("div", {
       className: O.endSpacer
     })]

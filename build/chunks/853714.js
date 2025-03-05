@@ -36,7 +36,7 @@ var r = n(200651),
   Z = n(599662),
   D = n(423308);
 
-function k(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -45,14 +45,14 @@ function k(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
@@ -95,7 +95,7 @@ class M extends i.PureComponent {
         guild: i
       } = e,
       s = L(e, ["onHeaderClick", "guildId", "guild"]);
-    return null == n ? null : (0, r.jsx)(T.Z, W(A({}, s), {
+    return null == n ? null : (0, r.jsx)(T.Z, W(k({}, s), {
       guildId: n,
       guild: i,
       onHeaderClick: this.handleHeaderClick,
@@ -105,13 +105,13 @@ class M extends i.PureComponent {
     }))
   }
   constructor(...e) {
-    super(...e), k(this, "handleHeaderClick", () => {
+    super(...e), A(this, "handleHeaderClick", () => {
       let {
         onHeaderClick: e,
         log: t
       } = this.props;
       null == e || e(t)
-    }), k(this, "handleUserContextMenu", e => {
+    }), A(this, "handleUserContextMenu", e => {
       let {
         log: t,
         guildId: i
@@ -122,12 +122,12 @@ class M extends i.PureComponent {
         let {
           default: e
         } = await n.e("50929").then(n.bind(n, 595011));
-        return t => (0, r.jsx)(e, W(A({}, t), {
+        return t => (0, r.jsx)(e, W(k({}, t), {
           guildId: i,
           user: s
         }))
       })
-    }), k(this, "handleChannelContextMenu", e => {
+    }), A(this, "handleChannelContextMenu", e => {
       let {
         log: t,
         guildId: i
@@ -136,11 +136,11 @@ class M extends i.PureComponent {
         let {
           default: e
         } = await Promise.all([n.e("38902"), n.e("51529")]).then(n.bind(n, 228620));
-        return n => null != t.options.channel ? (0, r.jsx)(e, W(A({}, n), {
+        return n => null != t.options.channel ? (0, r.jsx)(e, W(k({}, n), {
           channel: t.options.channel
         })) : null
       })
-    }), k(this, "handleTargetContextMenu", e => {
+    }), A(this, "handleTargetContextMenu", e => {
       let {
         log: t,
         guildId: i
@@ -154,7 +154,7 @@ class M extends i.PureComponent {
             let {
               default: e
             } = await Promise.all([n.e("38902"), n.e("51529")]).then(n.bind(n, 228620));
-            return t => (0, r.jsx)(e, W(A({}, t), {
+            return t => (0, r.jsx)(e, W(k({}, t), {
               channel: s
             }))
           });
@@ -162,7 +162,7 @@ class M extends i.PureComponent {
             let {
               default: e
             } = await n.e("5396").then(n.bind(n, 731646));
-            return n => (0, r.jsx)(e, W(A({}, n), {
+            return n => (0, r.jsx)(e, W(k({}, n), {
               id: t.targetId,
               label: w.NW.string(w.t.rCaznZ)
             }))
@@ -173,7 +173,7 @@ class M extends i.PureComponent {
             let {
               default: e
             } = await n.e("50929").then(n.bind(n, 595011));
-            return t => (0, r.jsx)(e, W(A({}, t), {
+            return t => (0, r.jsx)(e, W(k({}, t), {
               guildId: i,
               user: l
             }))
@@ -208,7 +208,7 @@ function G(e) {
         var {
           ref: i
         } = e, o = L(e, ["ref"]);
-        return (0, r.jsx)("div", W(A({
+        return (0, r.jsx)("div", W(k({
           ref: i
         }, o), {
           className: R.list,
@@ -375,11 +375,11 @@ class U extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), k(this, "_clickedInside", !1), k(this, "_scrollerRef", null), k(this, "_expandedRef", void 0), k(this, "_lastExpandedRef", void 0), k(this, "_prevRects", this.getRects()), k(this, "_contentRef", i.createRef()), k(this, "state", {
+    super(...e), A(this, "_clickedInside", !1), A(this, "_scrollerRef", null), A(this, "_expandedRef", void 0), A(this, "_lastExpandedRef", void 0), A(this, "_prevRects", this.getRects()), A(this, "_contentRef", i.createRef()), A(this, "state", {
       expandedId: null,
       lastExpandedId: null,
       actionFilterQuery: ""
-    }), k(this, "renderActionQuickSelectItem", (e, t) => {
+    }), A(this, "renderActionQuickSelectItem", (e, t) => {
       var n;
       let {
         actionFilter: i
@@ -398,7 +398,7 @@ class U extends i.PureComponent {
           children: e.label
         }), (0, r.jsx)(u.lo1.Checkmark, {})]
       }, null !== (n = e.key) && void 0 !== n ? n : t)
-    }), k(this, "renderUserQuickSelectItem", (e, t) => {
+    }), A(this, "renderUserQuickSelectItem", (e, t) => {
       var n;
       if (e.user instanceof x.Z) {
         let t = e.user;
@@ -440,7 +440,7 @@ class U extends i.PureComponent {
           children: e.label
         }), (0, r.jsx)(u.lo1.Checkmark, {})]
       }, null !== (n = e.key) && void 0 !== n ? n : t)
-    }), k(this, "renderHeaderDropdowns", () => {
+    }), A(this, "renderHeaderDropdowns", () => {
       var e, t;
       let {
         actionFilter: n,
@@ -502,7 +502,7 @@ class U extends i.PureComponent {
           }
         })]
       })
-    }), k(this, "renderLoadMore", () => {
+    }), A(this, "renderLoadMore", () => {
       let {
         showLoadMore: e,
         hasOlderLogs: t,
@@ -514,11 +514,11 @@ class U extends i.PureComponent {
         onClick: this.handleFetchNextPage,
         children: w.NW.string(w.t["Q/LSXl"])
       })
-    }), k(this, "handleFilterActionChange", e => {
+    }), A(this, "handleFilterActionChange", e => {
       (0, m.ZX)(e, this.props.guildId)
-    }), k(this, "handleFilterUserChange", e => {
+    }), A(this, "handleFilterUserChange", e => {
       (0, m.uo)(e, this.props.guildId)
-    }), k(this, "handleHeaderClick", e => {
+    }), A(this, "handleHeaderClick", e => {
       let {
         expandedId: t
       } = this.state;
@@ -529,30 +529,30 @@ class U extends i.PureComponent {
         expandedId: null,
         lastExpandedId: null
       }))
-    }), k(this, "handleOutsideClick", () => {
+    }), A(this, "handleOutsideClick", () => {
       null == this.state.expandedId || this._clickedInside ? null != this.state.expandedId && (this._clickedInside = !1) : (this._expandedRef = null, this._lastExpandedRef = null, this.setState({
         expandedId: null,
         lastExpandedId: null
       }), this._prevRects = this.getRects())
-    }), k(this, "handleContentClick", e => {
+    }), A(this, "handleContentClick", e => {
       this._clickedInside = !0, e.stopPropagation()
-    }), k(this, "handleSetScrollerRef", e => {
+    }), A(this, "handleSetScrollerRef", e => {
       this._scrollerRef = e
-    }), k(this, "handleOnScroll", () => {
+    }), A(this, "handleOnScroll", () => {
       this.isScrollerAtBottom() && this.handleFetchNextPage()
-    }), k(this, "handleFetchNextPage", () => {
+    }), A(this, "handleFetchNextPage", () => {
       (0, m.OY)(this.props.guildId)
-    }), k(this, "handleActionFilterQueryChange", e => {
+    }), A(this, "handleActionFilterQueryChange", e => {
       this.setState({
         actionFilterQuery: e
       })
-    }), k(this, "handleActionFilterQueryClear", () => {
+    }), A(this, "handleActionFilterQueryClear", () => {
       this.setState({
         actionFilterQuery: ""
       })
-    }), k(this, "handleSetExpandedRef", e => {
+    }), A(this, "handleSetExpandedRef", e => {
       this._expandedRef = e
-    }), k(this, "handleSetLastExpandedRef", e => {
+    }), A(this, "handleSetLastExpandedRef", e => {
       this._lastExpandedRef = e
     })
   }

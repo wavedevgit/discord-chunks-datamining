@@ -1,7 +1,7 @@
 /** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => A
 }), n(566702), n(595690), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -66,7 +66,7 @@ function Z(e, t) {
 }
 let D = "DRAGGABLE_ROLE";
 
-function k(e) {
+function A(e) {
   let {
     setEditRoleId: t,
     guild: n,
@@ -99,7 +99,7 @@ function k(e) {
       let {
         row: s
       } = e;
-      if (0 === b.length) return (0, r.jsx)(A, {}, "empty-role");
+      if (0 === b.length) return (0, r.jsx)(k, {}, "empty-role");
       let o = b[s];
       return (0, r.jsx)(W, {
         role: o,
@@ -125,7 +125,7 @@ function k(e) {
   })
 }
 
-function A() {
+function k() {
   return (0, r.jsxs)("div", {
     className: P.emptyRoles,
     children: [(0, r.jsx)("div", {
@@ -156,8 +156,8 @@ function W(e) {
     disableHover: y,
     disableDrag: I,
     setEditRoleId: S,
-    setSelectedSection: k
-  } = e, A = (0, C.T)(g, h, d), W = null != A, [M, G] = i.useState(!1), U = i.useMemo(() => ({
+    setSelectedSection: A
+  } = e, k = (0, C.T)(g, h, d), W = null != k, [M, G] = i.useState(!1), U = i.useMemo(() => ({
     type: D,
     item: () => (v(d.id), {
       id: d.id,
@@ -214,7 +214,7 @@ function W(e) {
   }
 
   function X() {
-    q(), k(E.ZI.MEMBERS)
+    q(), A(E.ZI.MEMBERS)
   }
   return (0, r.jsxs)(u.P3F, {
     className: a()(P.roleRow, {
@@ -252,9 +252,9 @@ function W(e) {
         size: 24,
         className: P.roleIcon,
         defaultIconClassName: P.shield
-      }), null != A ? (0, r.jsx)(C.Z, {
+      }), null != k ? (0, r.jsx)(C.Z, {
         className: P.lock,
-        tooltipText: A
+        tooltipText: k
       }) : null, (0, r.jsx)(u.Text, {
         className: P.roleName,
         color: "header-primary",

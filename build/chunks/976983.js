@@ -79,9 +79,9 @@ function N(e) {
     onDragReset: E
   }), {
     customEmoji: D,
-    unicodeEmoji: k
+    unicodeEmoji: A
   } = (0, m.Z)(null === (t = O.emoji) || void 0 === t ? void 0 : t.id, null === (i = O.emoji) || void 0 === i ? void 0 : i.name);
-  return (0, h.Oq)(O.emoji) || null != D || null != k || (S = f.NW.string(f.t["61wfmp"])), (0, r.jsxs)(o.P3F, {
+  return (0, h.Oq)(O.emoji) || null != D || null != A || (S = f.NW.string(f.t["61wfmp"])), (0, r.jsxs)(o.P3F, {
     className: s()(b.optionCard, {
       [b.hasError]: y || null != S,
       [b.dropIndicatorBefore]: null != w && T < w,

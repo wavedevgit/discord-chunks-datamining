@@ -142,7 +142,7 @@ function D(e) {
     })]
   })
 }
-class k extends i.PureComponent {
+class A extends i.PureComponent {
   render() {
     let {
       user: e,
@@ -199,7 +199,7 @@ class k extends i.PureComponent {
     })
   }
 }
-let A = i.forwardRef(function(e, t) {
+let k = i.forwardRef(function(e, t) {
   let {
     guild: n,
     sortedBans: s,
@@ -218,7 +218,7 @@ let A = i.forwardRef(function(e, t) {
     }, "spinner");
     let i = s[e],
       l = null == a ? void 0 : a.get(null !== (t = null == i ? void 0 : i.id) && void 0 !== t ? t : "");
-    if (null != i && null != l) return (0, r.jsx)(k, {
+    if (null != i && null != l) return (0, r.jsx)(A, {
       user: i,
       ban: l,
       hideDiscriminator: c,
@@ -316,7 +316,7 @@ function L() {
       null != e && I(t)(e) && r.push(e)
     }
     return r
-  }, [I]), w = i.useMemo(() => E(b, u, j), [b, E, u, j]), D = null != b, k = w.length % 1e3 == 0 && w.length > 0 && D, L = 0 === w.length, [M, G] = i.useState({
+  }, [I]), w = i.useMemo(() => E(b, u, j), [b, E, u, j]), D = null != b, A = w.length % 1e3 == 0 && w.length > 0 && D, L = 0 === w.length, [M, G] = i.useState({
     currentPage: 1,
     pageSize: 100
   });
@@ -331,10 +331,10 @@ function L() {
     B = i.useMemo(() => a().chunk(w, M.pageSize), [M.pageSize, w]),
     F = i.useCallback(e => {
       var t, n, r;
-      null === (t = y.current) || void 0 === t || t.scrollToSectionTop(0), (e + 1) * M.pageSize > w.length && k && !p && (z.current = null !== (r = null === (n = w[w.length - 1]) || void 0 === n ? void 0 : n.id) && void 0 !== r ? r : null, U(z.current)), (null != B[e - 1] || k) && G(t => Z(R({}, t), {
+      null === (t = y.current) || void 0 === t || t.scrollToSectionTop(0), (e + 1) * M.pageSize > w.length && A && !p && (z.current = null !== (r = null === (n = w[w.length - 1]) || void 0 === n ? void 0 : n.id) && void 0 !== r ? r : null, U(z.current)), (null != B[e - 1] || A) && G(t => Z(R({}, t), {
         currentPage: e
       }))
-    }, [M.pageSize, w, k, B, U, p]),
+    }, [M.pageSize, w, A, B, U, p]),
     z = i.useRef(null);
   i.useEffect(() => {
     U(z.current)
@@ -350,12 +350,12 @@ function L() {
       storedSearchQuery: u
     }), (0, r.jsxs)("div", {
       className: P.scrollerContainer,
-      children: [!L && (0, r.jsx)(A, {
+      children: [!L && (0, r.jsx)(k, {
         guild: c,
         bans: b,
         sortedBans: H,
         ref: y
-      }), !k && L && (0, r.jsxs)(o.ubH, {
+      }), !A && L && (0, r.jsxs)(o.ubH, {
         theme: v,
         className: P.emptyState,
         children: [(0, r.jsx)(o.oxh, {
@@ -375,7 +375,7 @@ function L() {
       className: P.__invalid_paginationContainer,
       children: (0, r.jsx)(o.DsT, {
         className: P.paginationInput,
-        totalCount: w.length + (k ? M.pageSize : 0),
+        totalCount: w.length + (A ? M.pageSize : 0),
         pageSize: M.pageSize,
         currentPage: M.currentPage,
         onPageChange: F,

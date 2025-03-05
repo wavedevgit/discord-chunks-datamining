@@ -222,7 +222,6 @@ function E(e) {
   return (0, r.jsxs)("div", {
     className: i()(O.container, t),
     children: [(0, r.jsxs)("div", {
-      className: O.text,
       children: [(0, r.jsx)(c.vwX, {
         className: O.recentAvatarsHeading,
         children: y.NW.string(y.t.Bnq9zM)

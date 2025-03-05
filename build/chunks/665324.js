@@ -35,9 +35,9 @@ var r = n(200651),
   R = n(981631),
   Z = n(710111),
   D = n(388032),
-  k = n(70235);
+  A = n(70235);
 
-function A(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -86,7 +86,7 @@ function G(e) {
     children: t
   } = e;
   return (0, r.jsx)(u.X6q, {
-    className: k.tableHeader,
+    className: A.tableHeader,
     variant: "heading-sm/semibold",
     color: "header-secondary",
     children: t
@@ -110,7 +110,7 @@ function U(e) {
         currentBoostLevel: t
       }),
       children: e => (0, r.jsx)(u.P3F, {
-        className: k.boostingIconWrapper,
+        className: A.boostingIconWrapper,
         onClick: () => {
           (0, h.f)({
             guildId: i,
@@ -121,7 +121,7 @@ function U(e) {
           })
         },
         tabIndex: -1,
-        children: (0, r.jsx)(C.Z, A({}, e))
+        children: (0, r.jsx)(C.Z, k({}, e))
       })
     }), D.NW.format(D.t.HHCdvb, {
       slots: n,
@@ -154,10 +154,10 @@ let B = e => {
     }, [o]), m = i.useCallback(() => {
       o.start(200, () => l(!1))
     }, [o]);
-    return (0, r.jsx)(u.yRy, W(A({
+    return (0, r.jsx)(u.yRy, W(k({
       shouldShow: a,
       renderPopout: e => (0, r.jsx)(u.VqE, {
-        className: k.browserUnsupportedDialog,
+        className: A.browserUnsupportedDialog,
         onMouseEnter: c,
         onMouseLeave: m,
         children: t(e)
@@ -172,7 +172,7 @@ let B = e => {
       color: "header-secondary",
       children: D.NW.format(D.t.bGXPVl, {})
     }),
-    renderPopoutChildren: e => (0, r.jsx)(u.zxk, W(A({}, e), {
+    renderPopoutChildren: e => (0, r.jsx)(u.zxk, W(k({}, e), {
       disabled: !0,
       children: D.NW.string(D.t["/uNYPD"])
     }))
@@ -209,7 +209,7 @@ function z(e) {
         let {
           default: e
         } = await Promise.all([n.e("56035"), n.e("54906")]).then(n.bind(n, 758961));
-        return n => (0, r.jsx)(e, W(A({}, n), {
+        return n => (0, r.jsx)(e, W(k({}, n), {
           guildId: t.id
         }))
       })
@@ -220,17 +220,17 @@ function z(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)(u.Text, {
-        className: k.helpText,
+        className: A.helpText,
         variant: "text-sm/normal",
         color: "header-secondary",
         children: D.NW.string(D.t.BohnsL)
       }), (0, r.jsx)("div", {
-        className: k.buttons,
+        className: A.buttons,
         children: !v && O
       })]
     }), v ? (0, r.jsxs)(u.ubH, {
       theme: d,
-      className: k.empty,
+      className: A.empty,
       children: [(0, r.jsx)(u.oxh, {
         darkSrc: n(458601),
         lightSrc: n(673557),
@@ -238,14 +238,14 @@ function z(e) {
         height: 212
       }), (0, r.jsx)(u.OZU, {
         note: D.NW.string(D.t.ZhoSBA),
-        noteClassName: k.emptyText,
+        noteClassName: A.emptyText,
         children: D.NW.string(D.t.I6P1p6)
       }), O]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.$i$, {
-        className: k.divider
+        className: A.divider
       }), (0, r.jsx)(u.X6q, {
-        className: k.tableTitle,
+        className: A.tableTitle,
         variant: "heading-md/bold",
         color: "header-primary",
         children: (0, r.jsx)(U, {
@@ -258,9 +258,9 @@ function z(e) {
         numSounds: s.length,
         isOutOfSlots: 0 === g
       }), (0, r.jsxs)("div", {
-        className: k.soundTable,
+        className: A.soundTable,
         children: [(0, r.jsxs)("div", {
-          className: k.tableHeaders,
+          className: A.tableHeaders,
           children: [(0, r.jsx)(G, {
             children: D.NW.string(D.t.sMOuub)
           }), (0, r.jsx)(G, {
@@ -322,39 +322,39 @@ function H(e) {
     }, [O, o.id]),
     G = T.ZP.useUserTag(O);
   return (0, r.jsxs)("div", {
-    className: a()(k.row, {
-      [k.active]: s
+    className: a()(A.row, {
+      [A.active]: s
     }),
     children: [S ? (0, r.jsx)(g.Z, {
       emojiId: j,
       emojiName: N,
-      className: k.emoji
+      className: A.emoji
     }) : (0, r.jsx)(u.XBm, {
       size: "md",
       color: "currentColor",
-      className: k.emoji
+      className: A.emoji
     }), (0, r.jsx)(u.P3F, {
       onClick: () => {
         P || l(t)
       },
       onContextMenu: Z,
-      className: k.soundName,
+      className: A.soundName,
       children: (0, r.jsxs)(u.Text, {
         variant: "text-sm/normal",
-        className: k.soundName,
+        className: A.soundName,
         children: [p, " ", (0, r.jsx)(u.gj8, {
           size: "md",
           color: "currentColor",
-          className: k.soundPreviewIcon
+          className: A.soundPreviewIcon
         })]
       })
     }), null != O && (0, r.jsxs)(u.P3F, {
-      className: k.uploader,
+      className: A.uploader,
       onClick: M,
       children: [(0, r.jsx)(u.qEK, {
         "aria-label": G,
         size: u.EFr.SIZE_24,
-        className: k.uploaderAvatar,
+        className: A.uploaderAvatar,
         src: (0, I.ov)(O, !1, 24)
       }), (0, r.jsx)(u.Text, {
         variant: "text-sm/normal",
@@ -362,15 +362,15 @@ function H(e) {
         children: G
       })]
     }), E ? (0, r.jsxs)("div", {
-      className: k.soundEditContainer,
+      className: A.soundEditContainer,
       children: [(0, r.jsx)(u.P3F, {
-        className: k.soundUpdate,
+        className: A.soundUpdate,
         onClick: function(e) {
           e.stopPropagation(), (0, u.ZDy)(async () => {
             let {
               default: e
             } = await Promise.all([n.e("56035"), n.e("54906")]).then(n.bind(n, 758961));
-            return n => (0, r.jsx)(e, W(A({}, n), {
+            return n => (0, r.jsx)(e, W(k({}, n), {
               guildId: o.id,
               existingSound: t
             }))
@@ -380,12 +380,12 @@ function H(e) {
         children: (0, r.jsx)(u.vdY, {
           size: "xs",
           color: "currentColor",
-          className: k.soundEditIcon
+          className: A.soundEditIcon
         })
       }), (0, r.jsx)(u.P3F, {
-        className: k.soundRemove,
+        className: A.soundRemove,
         onClick: function(e) {
-          e.stopPropagation(), (0, u.h7j)(e => (0, r.jsx)(u.ConfirmModal, W(A({
+          e.stopPropagation(), (0, u.h7j)(e => (0, r.jsx)(u.ConfirmModal, W(k({
             header: D.NW.formatToPlainString(D.t["PR/VbG"], {
               soundName: p
             }),
@@ -405,7 +405,7 @@ function H(e) {
         children: (0, r.jsx)(u.Dio, {
           size: "md",
           color: "currentColor",
-          className: k.soundEditIcon
+          className: A.soundEditIcon
         })
       })]
     }) : null]

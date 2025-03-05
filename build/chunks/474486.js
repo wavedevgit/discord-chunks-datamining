@@ -48,7 +48,7 @@ function P(e) {
   return e
 }
 
-function _(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,7 +60,7 @@ function _(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-let S = "url(#dark-purple-gradient)",
+let _ = "url(#dark-purple-gradient)",
   N = () => (0, n.jsxs)("div", {
     className: y.coachtipContent,
     children: [(0, n.jsx)(l.X6q, {
@@ -110,8 +110,8 @@ let S = "url(#dark-purple-gradient)",
           showAnimations: !1,
           progressCircleVariation: b.Qo.NITRO_LOGO,
           ellipseOpacity: 1,
-          circleColor: S,
-          circleStroke: S,
+          circleColor: _,
+          circleStroke: _,
           progressCircleStrokeSize: 4
         }),
         position: "right",
@@ -155,7 +155,7 @@ let S = "url(#dark-purple-gradient)",
       tooltipClassName: y.marketingBadgeTooltip,
       allowOverflow: !0,
       tooltipContentClassName: y.tooltipContent,
-      children: e => (0, n.jsx)("div", _(P({}, e), {
+      children: e => (0, n.jsx)("div", S(P({}, e), {
         children: t
       }))
     })
@@ -185,7 +185,7 @@ let S = "url(#dark-purple-gradient)",
       tooltipClassName: null,
       allowOverflow: !0,
       tooltipContentClassName: null,
-      children: e => (0, n.jsx)("div", _(P({}, e), {
+      children: e => (0, n.jsx)("div", S(P({}, e), {
         children: (0, n.jsx)(m.Z, {
           copy: j.NW.string(j.t.OS9KPj),
           className: y.greyedOut

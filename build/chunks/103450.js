@@ -91,7 +91,9 @@ function B(e) {
     if (Array.from(d.ZP.getSelfEmbeddedActivities().values()).some(e => e.applicationId === (null == F ? void 0 : F.applicationId) && e.location.id === (null == F ? void 0 : F.location.id))) return !0;
     let e = d.ZP.getCurrentEmbeddedActivity();
     return null != e && e.applicationId === (null == V ? void 0 : V.application_id) && e.location.kind === i.X.CONTEXTLESS
-  }), ec = (0, c.O)(), eu = !M.isPlatformEmbedded;
+  }), ec = (0, c.O)();
+  if (Q && null != F && (null != V || !(0, m.Z)(V, j.xjy.CONTEXTLESS))) return null;
+  let eu = !M.isPlatformEmbedded;
   if (!((0, m.Z)(V, j.xjy.JOIN) || Q) || null == q) return null;
   let ed = !J || Q && !el,
     ef = ed && (eu || ee) && !K && !et;
