@@ -3,8 +3,8 @@ n.d(t, {
   Tq: () => r,
   i3: () => a
 });
-var i = n(818083);
-let o = (0, i.B)({
+var o = n(818083);
+let i = (0, o.B)({
   kind: "user",
   id: "2025-01_recent_avatars",
   label: "Recent Avatars",
@@ -25,15 +25,15 @@ function r(e) {
     location: t,
     autoTrackExposure: n = !0
   } = e, {
-    enabled: i
-  } = o.useExperiment({
+    enabled: o
+  } = i.useExperiment({
     location: t
   }, {
     autoTrackExposure: n
   });
-  return i
+  return o
 }
-let a = (0, i.B)({
+let a = (0, o.B)({
   kind: "user",
   id: "2025-02_improved_image_upload_flow",
   label: "Improved Image Upload Flow",

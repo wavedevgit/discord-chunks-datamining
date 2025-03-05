@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => v
 });
-var i = n(200651),
-  o = n(192379),
+var o = n(200651),
+  i = n(192379),
   r = n(442837),
   a = n(481060),
   l = n(100527),
@@ -27,13 +27,13 @@ function v(e) {
   } = e, v = (0, r.e7)([_.default], () => _.default.getCurrentUser()), y = m.ZP.canUseAnimatedAvatar(v), C = m.ZP.canUsePremiumProfileCustomization(v), x = n === f.pC.BANNER && C || n === f.pC.AVATAR && y, {
     sourceAnalyticsLocations: T
   } = (0, c.ZP)(l.Z.PREMIUM_PREVIEW_UPSELL_HEADER);
-  if (o.useEffect(() => {
+  if (i.useEffect(() => {
       x || g.default.track(b.rMx.PREMIUM_UPSELL_VIEWED, {
         type: t,
         location_stack: T
       })
     }, [x, t, T]), x) return null;
-  let B = (0, i.jsx)(u.Z, {
+  let B = (0, o.jsx)(u.Z, {
     className: N.__invalid_getNitroLink,
     size: a.zxk.Sizes.SMALL,
     look: a.zxk.Looks.LINK,
@@ -47,7 +47,7 @@ function v(e) {
     },
     disableShine: !0
   });
-  return (0, i.jsx)(d.Z, {
+  return (0, o.jsx)(d.Z, {
     reducedRightPadding: !0,
     className: N.nitroPreviewUpsell,
     text: h.NW.format(h.t.Og8039, {}),

@@ -18,8 +18,8 @@ var o = n(200651),
   m = n(16609),
   v = n(781780),
   h = n(325749),
-  g = n(981631),
-  x = n(921944),
+  x = n(981631),
+  g = n(921944),
   C = n(832969);
 
 function y(e) {
@@ -59,7 +59,7 @@ function y(e) {
               return e
             }({}, t), r = r = {
               onClickButton: () => {
-                a(x.L.USER_DISMISS), t.onClose()
+                a(g.L.USER_DISMISS), t.onClose()
               }
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
               var n = Object.keys(e);
@@ -105,14 +105,14 @@ function I() {
   }), i = r.useRef(null), s = (0, c.Z)(e);
   r.useEffect(() => {
     null != e ? clearTimeout(i.current) : null != s && null == e && (i.current = window.setTimeout(() => {
-      (0, _.xv)(g.KJ3.ACTIVITY_POPOUT)
+      (0, _.xv)(x.KJ3.ACTIVITY_POPOUT)
     }, 5e3))
   }, [e, s]);
   let p = (0, a.e7)([u.Z], () => {
       let t = null == e ? void 0 : e.applicationId;
       return null == t ? void 0 : u.Z.getApplication(t)
     }),
-    x = (0, b.PR)();
+    g = (0, b.PR)();
   return (0, o.jsx)("div", {
     className: C.container,
     children: null == e || null == p ? (0, o.jsx)(l.$jN, {
@@ -137,7 +137,7 @@ function I() {
               application: p
             })
           })
-        }), x ? (0, o.jsx)(d.Z, {
+        }), g ? (0, o.jsx)(d.Z, {
           isEmbeddedActivity: !0
         }) : null]
       })

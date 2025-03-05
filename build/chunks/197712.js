@@ -1,18 +1,18 @@
 /** Chunk was on 59732 **/
-n.d(t, {
+r.d(t, {
   $p: () => o,
   AK: () => d,
   Es: () => c,
   U$: () => s,
   kH: () => u
-}), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(47120), n(411104), n(518263), n(970173), n(520712), n(268111), n(941497), n(32026), n(480839), n(744285), n(492257), n(873817), n(610885), n(126298);
-var i = n(392711),
-  r = n(36793),
-  a = n(486324);
+}), r(315314), r(309749), r(610138), r(216116), r(78328), r(815648), r(47120), r(411104), r(518263), r(970173), r(520712), r(268111), r(941497), r(32026), r(480839), r(744285), r(492257), r(873817), r(610885), r(126298);
+var n = r(392711),
+  i = r(36793),
+  a = r(486324);
 async function o(e) {
   let {
     file: t,
-    image: i,
+    image: n,
     cropDimensions: o,
     cropOriginCoordinates: s,
     maxDimensions: l,
@@ -22,28 +22,28 @@ async function o(e) {
     sourceY: d,
     sourceWidth: m,
     sourceHeight: g
-  } = (0, r.GS)({
-    image: i,
+  } = (0, i.GS)({
+    image: n,
     cropDimensions: o,
     cropOriginCoordinates: s,
     maxDimensions: l,
     imageRotation: c
-  }), h = await t.arrayBuffer(), p = new Worker(new URL("/assets/" + n.u("86047"), n.b)), E = new Promise((e, t) => {
-    p.onmessage = n => {
+  }), h = await t.arrayBuffer(), p = new Worker(new URL("/assets/" + r.u("86047"), r.b)), E = new Promise((e, t) => {
+    p.onmessage = r => {
       let {
-        data: i
-      } = n;
-      if (i.type === a.u.CROP_GIF_COMPLETE) {
-        var r;
-        e((r = new Blob([i.result]), new Promise(e => {
+        data: n
+      } = r;
+      if (n.type === a.u.CROP_GIF_COMPLETE) {
+        var i;
+        e((i = new Blob([n.result]), new Promise(e => {
           let t = new FileReader;
           t.onload = t => {
-            var n;
-            let i = null === (n = t.target) || void 0 === n ? void 0 : n.result;
-            "string" == typeof i ? e(i) : e("")
-          }, t.readAsDataURL(r)
+            var r;
+            let n = null === (r = t.target) || void 0 === r ? void 0 : r.result;
+            "string" == typeof n ? e(n) : e("")
+          }, t.readAsDataURL(i)
         }))), p.terminate()
-      } else i.type === a.u.CROP_GIF_ERROR && (t(Error("Error cropping GIF")), p.terminate())
+      } else n.type === a.u.CROP_GIF_ERROR && (t(Error("Error cropping GIF")), p.terminate())
     }
   });
   return p.postMessage({
@@ -60,18 +60,18 @@ async function o(e) {
   }
 }
 
-function s(e, t, n) {
+function s(e, t, r) {
   return {
-    x: (0, i.clamp)(e, n.left, n.right),
-    y: (0, i.clamp)(t, n.bottom, n.top)
+    x: (0, n.clamp)(e, r.left, r.right),
+    y: (0, n.clamp)(t, r.bottom, r.top)
   }
 }
 
-function l(e, t, n, i, r) {
-  let o = n,
-    s = i,
-    l = r ? a.US : a.vJ;
-  return (n > l && (o = l, s = l / n * i), n / i < e) ? {
+function l(e, t, r, n, i) {
+  let o = r,
+    s = n,
+    l = i ? a.US : a.vJ;
+  return (r > l && (o = l, s = l / r * n), r / n < e) ? {
     width: o,
     height: s
   } : {
@@ -80,48 +80,48 @@ function l(e, t, n, i, r) {
   }
 }
 
-function c(e, t, n, i) {
+function c(e, t, r, n) {
   switch (e) {
     case a.pC.AVATAR:
     case a.pC.AVATAR_DECORATION:
       return {
-        width: t, height: n
+        width: t, height: r
       };
     case a.pC.BANNER:
-      let r = i ? a.SP : a.qj;
-      return l(a.MY, r, t, n, i);
+      let i = n ? a.SP : a.qj;
+      return l(a.MY, i, t, r, n);
     case a.pC.GUILD_BANNER:
-      let o = i ? a.t2 : a.C5;
-      return l(a.Ij, o, t, n, i);
+      let o = n ? a.t2 : a.C5;
+      return l(a.Ij, o, t, r, n);
     case a.pC.VIDEO_BACKGROUND:
-      let s = i ? a.kP : a.PB;
-      return l(a.Ff, s, t, n, i);
+      let s = n ? a.kP : a.PB;
+      return l(a.Ff, s, t, r, n);
     case a.pC.SCHEDULED_EVENT_IMAGE:
-      let c = i ? a.tv : a.WV;
-      return l(a.ut, c, t, n, i);
+      let c = n ? a.tv : a.WV;
+      return l(a.ut, c, t, r, n);
     case a.pC.HOME_HEADER:
-      return l(a.sX, a.SW, t, n, i)
+      return l(a.sX, a.SW, t, r, n)
   }
 }
 
-function u(e, t, n) {
-  let i = {
+function u(e, t, r) {
+  let n = {
       top: 0,
       bottom: 0,
       left: 0,
       right: 0
     },
-    r = e - n.width,
-    a = t - n.height;
-  return 0 !== r && (i.left = -Math.abs(r / 2), i.right = r / 2), 0 !== a && (i.bottom = -Math.abs(a / 2), i.top = a / 2), i
+    i = e - r.width,
+    a = t - r.height;
+  return 0 !== i && (n.left = -Math.abs(i / 2), n.right = i / 2), 0 !== a && (n.bottom = -Math.abs(a / 2), n.top = a / 2), n
 }
 
-function d(e, t, n, i, r) {
-  let o = r ? a.US : a.vJ;
+function d(e, t, r, n, i) {
+  let o = i ? a.US : a.vJ;
   switch (e) {
     case a.pC.AVATAR:
     case a.pC.AVATAR_DECORATION:
-      let s = Math.min(t, n);
+      let s = Math.min(t, r);
       return {
         width: s, height: s
       };
@@ -133,7 +133,7 @@ function d(e, t, n, i, r) {
     case a.pC.GUILD_BANNER:
       let c = Math.min(t, o);
       return {
-        width: c, height: Math.min(9 / 16 * c, i)
+        width: c, height: Math.min(9 / 16 * c, n)
       };
     case a.pC.VIDEO_BACKGROUND:
       let u = Math.min(t, o);

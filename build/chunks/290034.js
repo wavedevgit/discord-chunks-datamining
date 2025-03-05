@@ -2,10 +2,10 @@
 n.d(t, {
   Z: () => _
 });
-var i = n(200651);
+var o = n(200651);
 n(192379);
-var o = n(120356),
-  r = n.n(o),
+var i = n(120356),
+  r = n.n(i),
   a = n(297700),
   l = n(471885),
   c = n(981631),
@@ -27,15 +27,15 @@ function _(e) {
   let {
     premiumTier: t,
     iconBackgroundClassName: n,
-    iconClassName: o,
+    iconClassName: i,
     size: c
   } = e;
-  return (0, i.jsx)(a.Z, {
+  return (0, o.jsx)(a.Z, {
     className: r()(n, d[t]),
     size: c,
-    children: (0, i.jsx)(l.Z, {
+    children: (0, o.jsx)(l.Z, {
       tier: t,
-      className: r()(o, s.boostedGuildIconGem, u[t])
+      className: r()(i, s.boostedGuildIconGem, u[t])
     })
   })
 }

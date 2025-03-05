@@ -18,8 +18,8 @@ var o = n(200651),
   m = n(695346),
   v = n(390322),
   h = n(961048),
-  g = n(871499),
-  x = n(268353),
+  x = n(871499),
+  g = n(268353),
   C = n(786915),
   y = n(107169),
   I = n(592125),
@@ -66,7 +66,7 @@ function L(e) {
         className: U.avatar
       }, e.id)
     }, e.id)
-  }, [Y]), K = null == L ? void 0 : L.userIds, F = (0, l.Wu)([P.default], () => Array.from(null != K ? K : []).map(e => P.default.getUser(e)).filter(e => null != e), [K]), H = _.Z.useExperiment({
+  }, [Y]), F = null == L ? void 0 : L.userIds, K = (0, l.Wu)([P.default], () => Array.from(null != F ? F : []).map(e => P.default.getUser(e)).filter(e => null != e), [F]), H = _.Z.useExperiment({
     location: "activity_popout_overflow_menu"
   }, {
     autoTrackExposure: !0
@@ -140,7 +140,7 @@ function L(e) {
           })
         }), (0, o.jsx)(B.Z, {
           renderIcon: !1,
-          users: F,
+          users: K,
           size: D,
           max: 6,
           className: U.userAvatars,
@@ -155,15 +155,18 @@ function L(e) {
             applicationId: t,
             channel: R,
             shouldPrioritizeGroupPlusIcon: !0,
-            embeddedActivity: L
-          }), X ? (0, o.jsx)(g.Z, {
+            embeddedActivity: L,
+            iconSize: "xs",
+            look: c.iLD.FILLED,
+            buttonText: z.NW.string(z.t["6F9ivr"])
+          }), X ? (0, o.jsx)(x.Z, {
             onClick: J,
             iconComponent: c.epB,
             label: z.NW.string(z.t.mseZsL)
           }) : null, q ? (0, o.jsx)(y.Z, {
             popoutWindowAlwaysOnTop: $,
             onToggleStayOnTop: Q
-          }) : null, (0, o.jsx)(x.Z, {
+          }) : null, (0, o.jsx)(g.Z, {
             node: ee,
             guestWindow: et,
             onClick: en

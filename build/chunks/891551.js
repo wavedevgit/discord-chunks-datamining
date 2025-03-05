@@ -35,7 +35,7 @@ function m(e) {
   return (0, r.jsx)(h.Z, {
     children: (0, r.jsx)(c.Z, {
       currentWindow: b,
-      iconClassName: l()(n, f.controlIcon),
+      iconClassName: l()(n, f.controlIconColor),
       sliderClassName: i,
       className: t,
       value: (0, d.P)(C),

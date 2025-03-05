@@ -1,6 +1,6 @@
 /**
   Module ID: 4395
-  Original File Name: eff754a94f09bb1f
+  Original File Name: 0fbac1593c171236
 **/
 .container_aea6af {
     background-color: var(--background-tertiary);
@@ -102,9 +102,6 @@
 }
 
 .editingContainer__57752 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
     overflow: hidden;
     background-color: var(--black-500);
@@ -112,6 +109,17 @@
     min-height: 300px;
     height: 400px;
     max-height: 500px
+}
+
+.editingContainer__57752,.errorContainer__57752 {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.errorContainer__57752 {
+    flex-direction: row;
+    gap: var(--spacing-8)
 }
 
 .image__57752 {
@@ -167,7 +175,8 @@
 }
 
 .toolsContainer__57752 {
-    padding: 18px 0 18px 30px
+    padding: 18px 0 18px 36px;
+    margin: 0 -6px
 }
 
 .zoomControls__57752 {
@@ -189,12 +198,12 @@
 }
 
 .rotateButton__57752 {
+    box-sizing: content-box;
     position: relative;
     width: 24px;
     height: 24px;
     cursor: pointer;
     padding: 6px;
-    right: -6px;
     color: var(--interactive-normal)
 }
 
