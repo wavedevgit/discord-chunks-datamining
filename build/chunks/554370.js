@@ -44,7 +44,7 @@ var i = n(200651),
   U = n(319414),
   G = n(561064),
   F = n(987650),
-  Y = n(501787),
+  Y = n(757744),
   H = n(981631),
   B = n(206583),
   Q = n(734811);
@@ -87,8 +87,8 @@ function $(e) {
         }
         return e
       }({}, t), r = r = {
-        layoutId: Y.OVERLAY_V3_LAYOUT_ID,
-        version: Y.OVERLAY_V3_LAYOUT_VERSION
+        layoutId: Y.$,
+        version: Y.H
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

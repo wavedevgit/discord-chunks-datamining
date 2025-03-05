@@ -87,7 +87,8 @@ function d(e, t) {
     nsfwLevel: null !== (E = e.properties.nsfw_level) && void 0 !== E ? E : l.V_K.DEFAULT,
     hubType: e.properties.hub_type,
     latestOnboardingQuestionId: e.properties.latest_onboarding_question_id,
-    profile: e.properties.profile
+    profile: e.properties.profile,
+    premiumFeatures: e.properties.premium_features
   };
   return null == t ? (0, o.gh)(y, a.ZP) : t.merge(y)
 }

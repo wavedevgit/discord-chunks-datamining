@@ -1,6 +1,6 @@
 /**
   Module ID: 46746
-  Original File Name: f272a3ba5061f799
+  Original File Name: f5e1b10e053eb0b7
 **/
 .card__4bb93 {
     display: flex;
@@ -2037,6 +2037,16 @@
     line-height: 0
 }
 
+.glowButton__388f8 {
+    border-color: hsl(var(--red-400-hsl)/.1);
+    background-color: hsl(var(--red-400-hsl)/.1);
+    color: var(--red-400)
+}
+
+.glowButton__388f8:hover {
+    background-color: hsl(var(--red-400-hsl)/.2)
+}
+
 .root__175e2 {
     padding: 12px 16px;
     background: var(--bg-surface-overlay);
@@ -2088,6 +2098,10 @@
     max-height: 720px
 }
 
+.root__7f727.nativePicker__7f727 {
+    height: 570px
+}
+
 .footer__7f727 {
     background-color: var(--bg-surface-raised);
     border: 1px solid var(--border-subtle);
@@ -2102,9 +2116,14 @@
     flex: 1 1 auto
 }
 
+.segmentedControlOption__7f727 {
+    flex-basis: 0
+}
+
 .content__7f727 {
     padding-left: var(--spacing-16);
-    padding-right: var(--spacing-16)
+    padding-right: var(--spacing-16);
+    padding-bottom: var(--spacing-8)
 }
 
 .rightButtonGroup__7f727 {

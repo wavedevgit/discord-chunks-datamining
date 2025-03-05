@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   a = n(442837),
   s = n(980591),
-  o = n(921813),
-  l = n(643879),
+  l = n(921813),
+  o = n(643879),
   c = n(317257),
   u = n(25990),
   d = n(74538),
@@ -32,13 +32,13 @@ let p = e => {
       for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(v, ["pendingAvatarV2"]), x = (0, l.SD)({
+  }(v, ["pendingAvatarV2"]), x = (0, o.SD)({
     userId: p.id,
     image: h
   }), [P, g] = (0, i.useState)(!1);
   return (0, s.Z)(() => {
     g(!0)
-  }, 250), (0, r.jsx)(o.Z, (t = function(e) {
+  }, 250), (0, r.jsx)(l.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

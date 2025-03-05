@@ -20,7 +20,7 @@ n(371467);
 var b = n(554370),
   m = n(371651),
   g = n(610394),
-  v = n(501787),
+  v = n(757744),
   y = n(981631);
 
 function h(e, t) {
@@ -73,7 +73,7 @@ function O(e) {
     withTitleBar: t,
     windowKey: n
   } = e;
-  return h(n, v.OVERLAY_V3_LAYOUT_ID) ? (0, r.jsx)(u.Z, {
+  return h(n, v.$) ? (0, r.jsx)(u.Z, {
     withTitleBar: t,
     windowKey: n,
     title: "Discord Overlay",

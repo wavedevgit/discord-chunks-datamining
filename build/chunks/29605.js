@@ -195,14 +195,14 @@ let G = d().throttle(h.OQ, 1e3),
     }) : (0, r.jsxs)("div", {
       children: [(0, r.jsx)(z, {
         title: k.NW.string(k.t.sMOuub),
-        maxSlots: l.getMaxEmojiSlots(),
+        maxSlots: (0, T.y4)(l),
         emojiCount: i.length
       }), (0, r.jsx)(H, {
         emojis: i,
         guild: l
       }), (0, r.jsx)(z, {
         title: k.NW.string(k.t.wWjQyc),
-        maxSlots: l.getMaxEmojiSlots(),
+        maxSlots: (0, T.y4)(l),
         emojiCount: s.length
       }), (0, r.jsx)(H, {
         emojis: s,
@@ -270,7 +270,7 @@ let G = d().throttle(h.OQ, 1e3),
         animatedEmojiCount: a,
         guild: l
       } = e,
-      o = l.getMaxEmojiSlots(),
+      o = (0, T.y4)(l),
       c = Math.min(o - s, o - a),
       d = l.premiumTier,
       u = (0, T.FZ)(d, l.id);
@@ -310,62 +310,62 @@ let G = d().throttle(h.OQ, 1e3),
       h = (0, x.Z)(c),
       [f, v] = i.useState(!1),
       [E, S] = i.useState(!1),
-      T = i.useRef(null);
+      P = i.useRef(null);
     i.useEffect(() => {
-      f && Y()
+      f && K()
     }, [f]), i.useEffect(() => {
       G(e.id)
     }, [e.id]), i.useEffect(() => {
       null != h && h < c && G(e.id)
     }, [c, h, e.id]);
-    let [P, L] = i.useMemo(() => {
+    let [L, U] = i.useMemo(() => {
       let t = null == p ? void 0 : p.filter(t => !(0, _.Kt)(t, e.id)),
         [n, r] = d().partition(t, e => !e.animated);
       return [n, r]
-    }, [p, e.id]), U = e.getMaxEmojiSlots(), B = Math.max(U - P.length, U - L.length), z = (n, r, i) => (0, N.G)({
+    }, [p, e.id]), B = (0, T.y4)(e), z = Math.max(B - L.length, B - U.length), H = (n, r, i) => (0, N.G)({
       data: n,
       file: r,
       image: i,
       guildId: e.id,
       uploadId: t,
       hideErrorModal: !0
-    }), H = async n => {
+    }), Y = async n => {
       s((0, u.Z)()), I.default.track(D.rMx.EMOJI_UPLOAD_STARTED, {
         guild_id: e.id,
         upload_id: t
-      }), await (0, O._)(n, z), v(!0)
-    }, Y = () => {
-      null !== T.current && ((0, g.Mr3)(T.current), T.current = null)
-    }, K = async e => {
-      T.current = await (0, g.ZDy)(async () => {
+      }), await (0, O._)(n, H), v(!0)
+    }, K = () => {
+      null !== P.current && ((0, g.Mr3)(P.current), P.current = null)
+    }, q = async e => {
+      P.current = await (0, g.ZDy)(async () => {
         let {
           default: t
         } = await n.e("16169").then(n.bind(n, 935333));
         return n => (0, r.jsx)(t, M({
-          processFiles: () => H(e)
+          processFiles: () => Y(e)
         }, n))
       })
-    }, q = (0, j.l)(e);
+    }, X = (0, j.l)(e);
     return (0, r.jsxs)("div", {
       className: W.emojiSettings,
-      children: [0 === B ? null : (0, r.jsx)(b.Z, {
+      children: [0 === z ? null : (0, r.jsx)(b.Z, {
         className: W.emojiUploadContainer,
-        onDrop: K
+        onDrop: q
       }), (0, r.jsxs)(g.hjN, {
         tag: g.RB0.H1,
         title: k.NW.string(k.t.sMOuub),
         children: [(0, r.jsx)(V, {
           guild: e,
-          staticEmojiCount: P.length,
-          animatedEmojiCount: L.length
+          staticEmojiCount: L.length,
+          animatedEmojiCount: U.length
         }), (0, r.jsxs)(g.hjN, {
           className: W.uploader,
           children: [(0, r.jsx)(g.R94, {
             type: g.geA.DESCRIPTION,
             children: k.NW.format(k.t.TA1BR0, {
-              count: U
+              count: B
             })
-          }), q && (0, r.jsx)(g.R94, {
+          }), X && (0, r.jsx)(g.R94, {
             type: g.geA.DESCRIPTION,
             children: k.NW.format(k.t.uMkfTk, {
               onClick: () => w.Z.open(e.id, D.pNK.ROLE_SUBSCRIPTIONS, void 0, D.KsC.ROLE_SUBSCRIPTION_EMOJI)
@@ -411,23 +411,23 @@ let G = d().throttle(h.OQ, 1e3),
                 upload_id: t
               })
             },
-            disabled: E || 0 === B || !l,
+            disabled: E || 0 === z || !l,
             submitting: E,
             focusProps: {
               within: !0
             },
-            children: [k.NW.string(k.t.DU0dy8), B > 0 ? (0, r.jsx)(O.Z, {
-              disabled: E || 0 === B || !l,
+            children: [k.NW.string(k.t.DU0dy8), z > 0 ? (0, r.jsx)(O.Z, {
+              disabled: E || 0 === z || !l,
               tabIndex: 0,
-              onChange: z,
+              onChange: H,
               setLoading: S,
               multiple: !0
             }) : null]
           })]
         }), (0, r.jsx)(F, {
           isLoading: null == p,
-          staticEmojis: P,
-          animatedEmojis: L,
+          staticEmojis: L,
+          animatedEmojis: U,
           guild: e,
           theme: a
         })]

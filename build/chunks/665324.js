@@ -98,7 +98,7 @@ function U(e) {
     currentTier: t,
     availableSounds: n,
     guildId: i
-  } = e, s = O.Z.getGuild(i), a = (0, E.U2)(t, s);
+  } = e, s = O.Z.getGuild(i), a = null != s ? (0, E.nL)(s) : 0;
   return 0 === t ? (0, r.jsx)(r.Fragment, {
     children: D.NW.format(D.t["7E9Hd3"], {
       slots: n,

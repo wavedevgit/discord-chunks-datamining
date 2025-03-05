@@ -8,7 +8,7 @@ n.d(t, {
   HW: () => F,
   Ib: () => es,
   KB: () => eu,
-  S2: () => V,
+  S2: () => H,
   W6: () => er,
   XM: () => ea,
   YC: () => eh,
@@ -121,9 +121,9 @@ let F = {
 Object.values(F).forEach(e => P.Z.register(e));
 let {
   SemanticColors: W
-} = D.V, U = W, V = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
+} = D.V, U = W, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
 
-function H(e, t) {
+function V(e, t) {
   let [n, r] = l.useState(() => {
     let n = A.K.get(e);
     return null != n ? n : t
@@ -173,7 +173,7 @@ var q = ((r = {}).TOKENS = "Tokens", r.PALETTES = "Palettes", r);
 
 function $() {
   return function(e, t) {
-    let [n, r] = H("".concat(e, "-states"), [t]), [a, i] = H("".concat(e, "-index"), 0), o = n[a], s = l.useCallback(e => {
+    let [n, r] = V("".concat(e, "-states"), [t]), [a, i] = V("".concat(e, "-index"), 0), o = n[a], s = l.useCallback(e => {
       r(["function" == typeof e ? e(o) : e, ...n].slice(0, 20)), i(0)
     }, [i, r, n, o]), c = l.useCallback(() => {
       i(Math.min(n.length - 1, a + 1))

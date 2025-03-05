@@ -25,7 +25,7 @@ var r = n(200651),
   C = n(145597),
   O = n(246992),
   N = n(981631),
-  T = n(501787),
+  T = n(757744),
   S = n(388032),
   E = n(637460),
   I = n(710662);
@@ -259,13 +259,13 @@ function A(e) {
 }
 
 function D(e) {
-  let t = Z(Object.values((0, s.Wu)([_.Z], () => _.Z.getWidgetsForLayout(T.OVERLAY_V3_LAYOUT_ID))), e);
+  let t = Z(Object.values((0, s.Wu)([_.Z], () => _.Z.getWidgetsForLayout(T.$))), e);
   return [t, () => {
     if (null != t)(0, d.E9)(t.id);
     else {
       let t = P[e];
       if (null == t) return;
-      let n = t(T.OVERLAY_V3_LAYOUT_ID);
+      let n = t(T.$);
       (0, d.A4)(n)
     }
   }]
@@ -292,7 +292,7 @@ function B() {
     value: m.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION
   }].map(e => w(k({}, e), {
     label: "".concat(e.label, " ").concat(S === e.value ? "(current)" : "")
-  })), F = (0, s.cj)([x.default], () => x.default.getTrackedGames()), G = (0, s.e7)([v.default], () => v.default.getFocusedPID()), W = (0, s.e7)([v.default], () => v.default.isFocusedPidOutOfProcess()), U = (0, C.getPID)(), V = (0, s.e7)([x.default], () => x.default.isOverlayOOPEnabledForPid(U), [U]), H = (0, s.e7)([h.ZP], () => h.ZP.getRunningGames());
+  })), F = (0, s.cj)([x.default], () => x.default.getTrackedGames()), G = (0, s.e7)([v.default], () => v.default.getFocusedPID()), W = (0, s.e7)([v.default], () => v.default.isFocusedPidOutOfProcess()), U = (0, C.getPID)(), H = (0, s.e7)([x.default], () => x.default.isOverlayOOPEnabledForPid(U), [U]), V = (0, s.e7)([h.ZP], () => h.ZP.getRunningGames());
   a.useEffect(() => {
     Z(e => {
       for (let t of Object.keys(F)) e[Number(t)] = F[Number(t)];
@@ -341,7 +341,7 @@ function B() {
       var t, n;
       return null !== (n = null === (t = P[e]) || void 0 === t ? void 0 : t.fullscreenType) && void 0 !== n ? n : "Unknown"
     },
-    er = H.filter(e => null == F[e.pid]);
+    er = V.filter(e => null == F[e.pid]);
   return (0, r.jsx)(c.w0Z, {
     children: (0, r.jsxs)("div", {
       className: i()(I.panel, E.panel),
@@ -526,7 +526,7 @@ function B() {
           }), (0, r.jsxs)(c.Text, {
             variant: "text-sm/normal",
             color: "text-secondary",
-            children: ["isOOPEnabledForPid: ", V ? "Yes" : "No"]
+            children: ["isOOPEnabledForPid: ", H ? "Yes" : "No"]
           })]
         })]
       }), (0, r.jsx)(c.ua7, {

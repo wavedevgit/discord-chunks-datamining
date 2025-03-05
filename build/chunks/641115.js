@@ -1,6 +1,6 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => A
+  Z: () => k
 }), n(47120);
 var r = n(200651),
   l = n(192379),
@@ -146,7 +146,7 @@ function W(e) {
   }
 }
 
-function A(e) {
+function k(e) {
   let {
     onClose: t,
     selectedPreset: n,
@@ -155,8 +155,8 @@ function A(e) {
     onResolutionChange: o,
     onFPSChange: p,
     onPresetChange: R,
-    targetGuildPremiumTier: A,
-    captureDeviceSelected: k
+    targetGuildPremiumTier: k,
+    captureDeviceSelected: A
   } = e, M = (0, c.e7)([j.default], () => {
     let e = j.default.getCurrentUser();
     return a()(null != e, "StreamSettings: user cannot be undefined"), e
@@ -166,13 +166,13 @@ function A(e) {
     autoTrackExposure: !1
   }), U = (0, x.B4)({
     location: "StreamSettings"
-  }), z = j.default.getUser(null == L ? void 0 : L.hdStreamingBuyerId), F = null != L && null != L.hdStreamingUntil && new Date(L.hdStreamingUntil) > new Date && null != z, H = !D && !B, [V, J] = l.useState(!1), X = k ? N.z8 : N.WC, Y = T(P({}, G), {
+  }), z = j.default.getUser(null == L ? void 0 : L.hdStreamingBuyerId), F = null != L && null != L.hdStreamingUntil && new Date(L.hdStreamingUntil) > new Date && null != z, H = !D && !B, [V, J] = l.useState(!1), X = A ? N.z8 : N.WC, Y = T(P({}, G), {
     section: y.jXE.STREAM_SETTINGS
   }), K = (0, r.jsx)(d.hE2, {
     buttons: X.map(e => W({
       type: e,
       selected: e.value === i,
-      needsPremium: !(0, C.Z)(n, e.value, s, M, A, L),
+      needsPremium: !(0, C.Z)(n, e.value, s, M, k, L),
       needsDemo: U && e.value !== N.LY.RESOLUTION_720,
       analyticsLocation: Y,
       onClick: () => o(e.value),
@@ -183,7 +183,7 @@ function A(e) {
     buttons: N.k0.map(e => W({
       type: e,
       selected: e.value === s,
-      needsPremium: !(0, C.Z)(n, i, e.value, M, A, L),
+      needsPremium: !(0, C.Z)(n, i, e.value, M, k, L),
       needsDemo: U && e.value === N.ws.FPS_60,
       analyticsLocation: Y,
       onClick: () => p(e.value),
@@ -193,7 +193,7 @@ function A(e) {
   }), Q = [{
     value: N.tI.PRESET_VIDEO,
     label: Z.NW.string(Z.t.HcwHc3)
-  }, ...k ? [] : [{
+  }, ...A ? [] : [{
     value: N.tI.PRESET_DOCUMENTS,
     label: Z.NW.string(Z.t["/RfohI"])
   }], {

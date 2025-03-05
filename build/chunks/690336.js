@@ -13,7 +13,7 @@ var i = n(200651),
   d = n(892127),
   p = n(444982),
   h = n(561064),
-  f = n(501787);
+  f = n(757744);
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -59,7 +59,7 @@ let y = [],
     let {
       className: t
     } = e, n = (0, h.Z)(), d = (0, o.e7)([s.Z], () => s.Z.windowSize((0, u.ZY)(n))), v = (0, o.e7)([a.Z], () => {
-      let e = a.Z.getLayout(f.OVERLAY_V3_LAYOUT_ID);
+      let e = a.Z.getLayout(f.$);
       if (null == e) return y;
       let t = [];
       for (let n of e.widgets) {

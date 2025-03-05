@@ -6,23 +6,24 @@ var r = n(200651),
   i = n(481060),
   a = n(688465),
   s = n(755007),
-  o = n(388032),
-  l = n(172110);
+  l = n(388032),
+  o = n(172110);
 
 function c(e) {
+  var t;
   let {
-    orbPrice: t
+    orbPrice: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: l.priceLine,
+    className: o.priceLine,
     children: [(0, r.jsxs)("div", {
-      className: l.orbText,
+      className: o.orbText,
       children: [(0, r.jsx)(i.Text, {
         variant: "text-xs/normal",
-        children: o.NW.string(o.t.eFNRzc)
+        children: l.NW.string(l.t.eFNRzc)
       }), (0, r.jsx)(a.Z, {})]
     }), (0, r.jsx)(s.Z, {
-      orbAmount: t.amount,
+      orbAmount: null !== (t = null == n ? void 0 : n.amount) && void 0 !== t ? t : 1 / 0,
       showInsufficientOrbBalanceTooltip: !0
     })]
   })

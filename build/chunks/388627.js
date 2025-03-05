@@ -22,7 +22,7 @@ function d() {
   let [e = PopoutWindowStore] = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [PopoutWindowStore];
   return e.getWindowVisible(OVERLAY_V3_KEY)
 }
-n(340101), n(501787);
+n(340101), n(757744), n(501787);
 
 function f(e, t) {
   if (e === t) return !0;

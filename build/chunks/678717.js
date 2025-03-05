@@ -45,8 +45,8 @@ var g = n(392750),
   G = n(384207),
   W = n(264603),
   U = n(678639),
-  V = n(351930),
-  H = n(771751),
+  H = n(351930),
+  V = n(771751),
   X = n(596768),
   Y = n(56706),
   J = n(621060),
@@ -179,7 +179,7 @@ function ee() {
       }), window.GLOBAL_ENV.RELEASE_CHANNEL.startsWith("staging") && (e.push({
         id: "trials",
         name: "Trials",
-        render: () => (0, r.jsx)(H.Z, {})
+        render: () => (0, r.jsx)(V.Z, {})
       }), e.push({
         id: "payments",
         name: "Payments",
@@ -187,7 +187,7 @@ function ee() {
       }), e.push({
         id: "subscriptions",
         name: "Subscriptions",
-        render: () => (0, r.jsx)(V.Z, {})
+        render: () => (0, r.jsx)(H.Z, {})
       }), e.push({
         id: "billing",
         name: "Billing",
