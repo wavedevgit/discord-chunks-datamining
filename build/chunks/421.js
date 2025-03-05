@@ -1,4 +1,4 @@
-/** Chunk was on 30088 **/
+/** Chunk was on 82520 **/
 n.d(t, {
   Z: () => j
 }), n(266796), n(47120);
@@ -13,8 +13,8 @@ var a = n(200651),
   u = n(592125),
   p = n(566620),
   f = n(122613),
-  g = n(678173),
-  m = n(636508),
+  m = n(678173),
+  g = n(636508),
   v = n(696068),
   h = n(361213),
   b = n(778569),
@@ -40,11 +40,11 @@ function j(e) {
       guildId: l
     })
   }, [l]);
-  let m = (0, b.Z)({
+  let g = (0, b.Z)({
       applicationId: null != n ? n : "",
       size: 2048
     }),
-    v = (0, g.T)(null != l ? l : null, n);
+    v = (0, m.T)(null != l ? l : null, n);
   if (null == v) return null;
   let x = null != v.activity.activity_preview_video_asset_id ? (0, h.Z)(n, v.activity.activity_preview_video_asset_id) : null,
     _ = I.o[n],
@@ -57,7 +57,7 @@ function j(e) {
         className: T.scroller,
         children: [(0, a.jsx)("div", {
           className: T.launcherOuterContainer,
-          children: (0, a.jsx)(N, {
+          children: (0, a.jsx)(Z, {
             activityItem: v,
             onLaunch: u,
             channelId: o
@@ -73,7 +73,7 @@ function j(e) {
                 muted: !0,
                 className: T.heroVideo,
                 src: x,
-                poster: m.url
+                poster: g.url
               })
             }) : null, (0, a.jsx)("div", {
               className: T.detailsTitle,
@@ -141,31 +141,31 @@ function j(e) {
   })
 }
 
-function N(e) {
+function Z(e) {
   var t, r;
   let {
     activityItem: d,
     onLaunch: p,
-    channelId: g
+    channelId: m
   } = e, h = (0, b.Z)({
     applicationId: d.application.id,
     size: 2048
   }), {
     analyticsLocations: I
-  } = (0, c.ZP)(), [j, N] = i.useState(null !== (t = (0, m.$)({
+  } = (0, c.ZP)(), [j, Z] = i.useState(null !== (t = (0, g.$)({
     allowGdmActivityChannelSuggestion: !0
-  })) && void 0 !== t ? t : void 0), [Z, S] = i.useState(null !== (r = (0, v.d)({
+  })) && void 0 !== t ? t : void 0), [S, N] = i.useState(null !== (r = (0, v.d)({
     guildId: j,
     allowGdmActivityChannelSuggestion: !0
-  })) && void 0 !== r ? r : void 0), O = (0, l.e7)([u.Z], () => u.Z.getChannel(Z), [Z]), E = (0, m.W)(), A = (0, v.F)(j), M = i.useCallback(async () => {
+  })) && void 0 !== r ? r : void 0), O = (0, l.e7)([u.Z], () => u.Z.getChannel(S), [S]), E = (0, g.W)(), A = (0, v.F)(j), M = i.useCallback(async () => {
     var e;
-    null != Z && await (0, f.Z)({
+    null != S && await (0, f.Z)({
       targetApplicationId: null == d ? void 0 : null === (e = d.application) || void 0 === e ? void 0 : e.id,
-      channelId: Z,
+      channelId: S,
       analyticsLocations: I,
       commandOrigin: o.bB.APPLICATION_LAUNCHER
     }).then(p)
-  }, [d, I, p, Z]), P = i.useCallback(() => {
+  }, [d, I, p, S]), P = i.useCallback(() => {
     (0, s.ZDy)(async () => {
       let {
         default: e
@@ -205,7 +205,7 @@ function N(e) {
         }), n))
       }
     })
-  }, [d, I]), w = null == O || null != O.guild_id && !(null != j && null != Z && E.some(e => e.value === j) && A.some(e => e.value.channel.id === Z));
+  }, [d, I]), w = null == O || null != O.guild_id && !(null != j && null != S && E.some(e => e.value === j) && A.some(e => e.value.channel.id === S));
   return (0, a.jsxs)("div", {
     className: T.launcherInnerContainer,
     children: [(0, a.jsx)(x.Z, {
@@ -216,7 +216,7 @@ function N(e) {
     }), (0, a.jsx)(s.Text, {
       variant: "text-md/medium",
       children: y.NW.string(y.t.lfSF4O)
-    }), null == g ? (0, a.jsxs)(a.Fragment, {
+    }), null == m ? (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(s.PhF, {
         placeholder: y.NW.string(y.t.etZ9tb),
         optionClassName: T.__invalid_option,
@@ -238,7 +238,7 @@ function N(e) {
         isSelected: e => e === j,
         select: e => {
           var t;
-          N(e), S(null !== (t = (0, v.d)({
+          Z(e), N(null !== (t = (0, v.d)({
             guildId: e
           })) && void 0 !== t ? t : void 0)
         },
@@ -251,13 +251,13 @@ function N(e) {
           let {
             channel: t
           } = e;
-          return t.id === Z
+          return t.id === S
         },
         select: e => {
           let {
             channel: t
           } = e;
-          return S(t.id)
+          return N(t.id)
         },
         serialize: e => {
           let {
@@ -266,7 +266,7 @@ function N(e) {
           return t.id
         },
         renderOptionValue: () => {
-          let e = A.find(e => e.value.channel.id === Z);
+          let e = A.find(e => e.value.channel.id === S);
           return null == e ? null : (0, a.jsx)(_.O, {
             channel: e.value.channel,
             users: e.value.users

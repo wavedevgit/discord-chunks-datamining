@@ -126,7 +126,7 @@ function k(e) {
     if (null != t && t.channelId === e.id) {
       let e = p.Z.getState().goLiveSource;
       (0, b.x8)(null == e ? void 0 : e.quality);
-      let t = (0, u.s)(A.LY.RESOLUTION_1440, A.ws.FPS_60, e);
+      let t = (0, u.s_)(A.LY.RESOLUTION_1440, A.ws.FPS_60, e);
       l.Z.setGoLiveSource(t)
     }
   })

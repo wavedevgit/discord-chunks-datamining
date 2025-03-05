@@ -1,46 +1,46 @@
-/** Chunk was on 69057 **/
+/** Chunk was on 75101 **/
 n.d(t, {
-  E: () => s
+  E: () => p
 }), n(47120);
 var i = n(192379),
   r = n(442837),
   l = n(835473),
   o = n(594174),
-  c = n(695103),
-  a = n(823379),
+  a = n(695103),
+  c = n(823379),
   u = n(358085),
   d = n(317381),
-  p = n(761122);
+  s = n(761122);
 
-function s(e) {
+function p(e) {
   let t = (0, r.e7)([o.default], o.default.getCurrentUser),
     n = (0, r.Wu)([d.ZP], () => d.ZP.getShelfActivities(e)),
-    s = (0, r.e7)([c.Z], () => c.Z.testModeEmbeddedApplicationId),
+    p = (0, r.e7)([a.Z], () => a.Z.testModeEmbeddedApplicationId),
     f = n.map(e => e.application_id),
-    v = null != s ? [s, ...f] : f,
-    b = (0, l.Z)(v),
-    y = i.useMemo(() => b.filter(a.lm), [b]),
-    g = i.useMemo(() => null != s && y.length > 0 && y[0].id === s && null != y[0].embeddedActivityConfig ? [{
-      activity: y[0].embeddedActivityConfig,
-      application: y[0]
-    }] : [], [y, s]),
-    O = i.useMemo(() => n.map(e => {
-      let t = y.find(t => t.id === e.application_id);
+    v = null != p ? [p, ...f] : f,
+    y = (0, l.Z)(v),
+    b = i.useMemo(() => y.filter(c.lm), [y]),
+    g = i.useMemo(() => null != p && b.length > 0 && b[0].id === p && null != b[0].embeddedActivityConfig ? [{
+      activity: b[0].embeddedActivityConfig,
+      application: b[0]
+    }] : [], [b, p]),
+    h = i.useMemo(() => n.map(e => {
+      let t = b.find(t => t.id === e.application_id);
       return null == t ? null : {
         activity: e,
         application: t
       }
-    }).filter(a.lm), [n, y]);
-  return i.useMemo(() => [...g, ...O].filter(e => {
+    }).filter(c.lm), [n, b]);
+  return i.useMemo(() => [...g, ...h].filter(e => {
     var t;
     let {
       activity: n
     } = e;
-    return (null !== (t = n.supported_platforms) && void 0 !== t ? t : []).includes((0, p.Z)((0, u.getOS)()))
+    return (null !== (t = n.supported_platforms) && void 0 !== t ? t : []).includes((0, s.Z)((0, u.getOS)()))
   }).filter(e => {
     let {
       activity: n
     } = e;
     return !n.requires_age_gate || (null == t ? void 0 : t.nsfwAllowed) === !0 || (null == t ? void 0 : t.nsfwAllowed) == null
-  }), [null == t ? void 0 : t.nsfwAllowed, O, g])
+  }), [null == t ? void 0 : t.nsfwAllowed, h, g])
 }

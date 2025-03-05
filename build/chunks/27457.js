@@ -180,7 +180,7 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
       if (e$ && !e0 && null != eg.hdStreamingUntil && new Date(eg.hdStreamingUntil) > new Date) {
         let e = setTimeout(() => {
           let e = Z.Z.getGoLiveSource(),
-            t = (0, h.s)(er.LY.RESOLUTION_720, er.ws.FPS_30, e);
+            t = (0, h.s_)(er.LY.RESOLUTION_720, er.ws.FPS_30, e);
           u.Z.setGoLiveSource(t)
         }, new Date(eg.hdStreamingUntil).getTime() - Date.now());
         return () => clearTimeout(e)

@@ -1,6 +1,6 @@
-/** Chunk was on 30088 **/
+/** Chunk was on 82520 **/
 n.d(t, {
-  default: () => F
+  default: () => W
 }), n(47120), n(653041);
 var a = n(200651),
   i = n(192379),
@@ -13,8 +13,8 @@ var a = n(200651),
   u = n(493773),
   p = n(110924),
   f = n(40851),
-  g = n(367907),
-  m = n(565384),
+  m = n(367907),
+  g = n(565384),
   v = n(906732),
   h = n(835473),
   b = n(600164),
@@ -25,9 +25,9 @@ var a = n(200651),
   y = n(624138),
   T = n(115130),
   j = n(566620),
-  N = n(421),
-  Z = n(895395),
-  S = n(49978),
+  Z = n(421),
+  S = n(895395),
+  N = n(49978),
   O = n(427996),
   E = n(701488),
   A = n(981631),
@@ -55,10 +55,10 @@ function k(e) {
   return e
 }
 let D = (0, y.Mg)(o.Z.ACTIVITY_SHELF_MODAL_MODAL_PADDING),
-  W = (0, y.Mg)(o.Z.ACTIVITY_SHELF_MODAL_MODAL_WIDTH),
-  R = (0, y.Mg)(o.Z.ACTIVITY_SHELF_MODAL_MODAL_MAX_HEIGHT) + D + (0, y.Mg)(o.Z.ACTIVITY_SHELF_MODAL_MODAL_ART_HEIGHT);
+  R = (0, y.Mg)(o.Z.ACTIVITY_SHELF_MODAL_MODAL_WIDTH),
+  F = (0, y.Mg)(o.Z.ACTIVITY_SHELF_MODAL_MODAL_MAX_HEIGHT) + D + (0, y.Mg)(o.Z.ACTIVITY_SHELF_MODAL_MODAL_ART_HEIGHT);
 
-function F(e) {
+function W(e) {
   var t, n, {
       channel: l,
       guildId: s,
@@ -67,9 +67,9 @@ function F(e) {
       initialSelectedApplicationId: _,
       initialSlide: y = E.ag.DIRECTORY,
       enableSelectedTextChannelInvite: D,
-      analyticsLocations: R
+      analyticsLocations: F
     } = e,
-    F = function(e, t) {
+    W = function(e, t) {
       if (null == e) return {};
       var n, a, i = function(e, t) {
         if (null == e) return {};
@@ -87,7 +87,7 @@ function F(e) {
   let V = (0, c.e7)([T.Z], () => T.Z.getIsEnabled(), []),
     {
       analyticsLocations: H
-    } = (0, v.ZP)(R),
+    } = (0, v.ZP)(F),
     [U, Y] = i.useState(y),
     G = (0, p.Z)(U),
     [z, q] = i.useState(null),
@@ -160,15 +160,15 @@ function F(e) {
       t = k({
         channel_id: null == l ? void 0 : l.id,
         guild_id: s,
-        location: (0, m.k$)()
-      }, (0, g.hH)(s), (0, g.v_)(x.Z.getChannel(null == l ? void 0 : l.id)), et, e);
+        location: (0, g.k$)()
+      }, (0, m.hH)(s), (0, m.v_)(x.Z.getChannel(null == l ? void 0 : l.id)), et, e);
     C.default.track(A.rMx.ACTIVITY_SHELF_CLOSE, t)
   }), (0, a.jsx)(v.Gt, {
     value: H,
     children: (0, a.jsxs)(d.Y0X, (t = k({
       className: P.root,
       "aria-label": M.NW.string(M.t.shUONj)
-    }, F), n = n = {
+    }, W), n = n = {
       children: [(0, a.jsx)("img", {
         alt: M.NW.string(M.t["3Y9xdH"]),
         src: w,
@@ -218,7 +218,7 @@ function F(e) {
       }), (0, a.jsxs)(d.MyZ, {
         activeSlide: U,
         centered: !1,
-        width: W,
+        width: R,
         children: [(0, a.jsx)(d.Mi4, {
           id: E.ag.DIRECTORY,
           impressionName: r.ImpressionNames.ACTIVITY_SHELF,
@@ -228,7 +228,7 @@ function F(e) {
           },
           children: (0, a.jsx)(B, {
             slide: U,
-            children: (0, a.jsx)(Z.Z, {
+            children: (0, a.jsx)(S.Z, {
               scrollerRef: ee,
               channel: l,
               guildId: s,
@@ -247,7 +247,7 @@ function F(e) {
           },
           children: (0, a.jsx)(B, {
             slide: U,
-            children: (0, a.jsx)(S.Z, {
+            children: (0, a.jsx)(N.Z, {
               applicationId: J,
               selectedChannelId: $,
               setSelectedChannelId: Q,
@@ -261,7 +261,7 @@ function F(e) {
           impressionProperties: et,
           children: (0, a.jsx)(B, {
             slide: U,
-            children: null == J ? null : (0, a.jsx)(N.Z, {
+            children: null == J ? null : (0, a.jsx)(Z.Z, {
               applicationId: J,
               channelId: null == l ? void 0 : l.id,
               guildId: s,
@@ -277,9 +277,9 @@ function F(e) {
         children: (() => {
           switch (U) {
             case E.ag.DIRECTORY:
-              return (0, a.jsx)(Z.d, {});
+              return (0, a.jsx)(S.d, {});
             case E.ag.SELECT_CHANNEL:
-              return (0, a.jsx)(S.q, {
+              return (0, a.jsx)(N.q, {
                 onBack: ei,
                 onClose: f,
                 guildId: s,
@@ -315,12 +315,12 @@ let B = e => {
   return (0, a.jsx)("div", {
     className: s()(P.slideContentOuterContainerSquished, {
       [P.slideContentOuterContainerSquishedWithDev]: n === E.ag.DIRECTORY && l,
-      [P.slideContentOuterContainerTall]: n === E.ag.DIRECTORY && o > R,
-      [P.slideContentOuterContainerTallWithDev]: n === E.ag.DIRECTORY && o > R && l,
+      [P.slideContentOuterContainerTall]: n === E.ag.DIRECTORY && o > F,
+      [P.slideContentOuterContainerTallWithDev]: n === E.ag.DIRECTORY && o > F && l,
       [P.slideContentOuterContainerNoMetaTextSquished]: n === E.ag.SELECT_CHANNEL,
-      [P.slideContentOuterContainerNoMetaTextTall]: n === E.ag.SELECT_CHANNEL && o > R,
+      [P.slideContentOuterContainerNoMetaTextTall]: n === E.ag.SELECT_CHANNEL && o > F,
       [P.slideContentOuterContainerNoMetaTextNoFooterSquished]: n === E.ag.DETAIL_PAGE,
-      [P.slideContentOuterContainerNoMetaTextNoFooterTall]: n === E.ag.DETAIL_PAGE && o > R
+      [P.slideContentOuterContainerNoMetaTextNoFooterTall]: n === E.ag.DETAIL_PAGE && o > F
     }),
     children: t
   })

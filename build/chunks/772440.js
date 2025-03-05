@@ -1,4 +1,4 @@
-/** Chunk was on 72593 **/
+/** Chunk was on 54082 **/
 e.exports = {
   chatHeaderBar: "chatHeaderBar_a5700d",
   narrow: "narrow_a5700d",

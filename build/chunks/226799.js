@@ -1,4 +1,4 @@
-/** Chunk was on 30088 **/
+/** Chunk was on 82520 **/
 n.d(t, {
   o: () => D
 });
@@ -13,8 +13,8 @@ var a = n(701488),
   u = n(241976),
   p = n(783466),
   f = n(128584),
-  g = n(469999),
-  m = n(607865),
+  m = n(469999),
+  g = n(607865),
   v = n(265661),
   h = n(121517),
   b = n(295597),
@@ -25,9 +25,9 @@ var a = n(701488),
   y = n(641322),
   T = n(829463),
   j = n(966310),
-  N = n(710227),
-  Z = n(820836),
-  S = n(179603),
+  Z = n(710227),
+  S = n(820836),
+  N = n(179603),
   O = n(838116),
   E = n(697333),
   A = n(168191),
@@ -47,7 +47,7 @@ let D = {
     playersSuggestionMin: 4,
     playersSuggestionMax: 12,
     timeSuggestionMinutes: 10,
-    gameplayImageUrls: [g.Z, m.Z]
+    gameplayImageUrls: [m.Z, g.Z]
   },
   [a.mI]: {
     playersSuggestionMin: 1,
@@ -107,13 +107,13 @@ let D = {
     playersSuggestionMin: 1,
     playersSuggestionMax: 7,
     timeSuggestionMinutes: 15,
-    gameplayImageUrls: [Z.Z, S.Z]
+    gameplayImageUrls: [S.Z, N.Z]
   },
   [a.Gv]: {
     playersSuggestionMin: 2,
     playersSuggestionMax: 8,
     timeSuggestionMinutes: 15,
-    gameplayImageUrls: [j.Z, N.Z]
+    gameplayImageUrls: [j.Z, Z.Z]
   },
   [a.Cb]: {
     playersSuggestionMin: 2,

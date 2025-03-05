@@ -1,4 +1,4 @@
-/** Chunk was on 69057 **/
+/** Chunk was on 75101 **/
 n.d(t, {
   Z: () => d
 }), n(653041), n(47120), n(230036);
@@ -6,15 +6,15 @@ var i = n(192379),
   r = n(911969),
   l = n(822245),
   o = n(675478),
-  c = n(358085),
-  a = n(194188),
+  a = n(358085),
+  c = n(194188),
   u = n(761122);
 
 function d(e) {
   o.DZ.loadIfNecessary();
   let {
     enabled: t
-  } = a.x.getCurrentConfig({
+  } = c.x.getCurrentConfig({
     location: "useActivityShelfItemsSorting"
   }, {
     autoTrackExposure: !1
@@ -30,10 +30,10 @@ function d(e) {
         if (t !== n) return n - t
       }
       return n.findIndex(t => t === e) < n.findIndex(e => e === i) ? -1 : 1
-    }), p(e, i)
+    }), s(e, i)
   }, [e, t])
 }
-let p = (e, t) => {
+let s = (e, t) => {
   let n = [...e],
     i = 0;
   return t.forEach(e => {
@@ -44,7 +44,7 @@ let p = (e, t) => {
     }
   }), n.map((e, t) => [e, t]).filter(e => {
     var t, n;
-    let [i] = e, l = null === (n = i.application.embeddedActivityConfig) || void 0 === n ? void 0 : null === (t = n.client_platform_config[(0, u.Z)((0, c.getOS)())]) || void 0 === t ? void 0 : t.label_type;
+    let [i] = e, l = null === (n = i.application.embeddedActivityConfig) || void 0 === n ? void 0 : null === (t = n.client_platform_config[(0, u.Z)((0, a.getOS)())]) || void 0 === t ? void 0 : t.label_type;
     return !!l && (l === r.ww.NEW || l === r.ww.UPDATED)
   }).forEach(e => {
     let [t, i] = e, r = null != t.application.embeddedActivityConfig && null != t.application.embeddedActivityConfig.shelf_rank ? t.application.embeddedActivityConfig.shelf_rank - 1 : i;

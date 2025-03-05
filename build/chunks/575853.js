@@ -1,4 +1,4 @@
-/** Chunk was on 30088 **/
+/** Chunk was on 82520 **/
 e.exports = {
   channelInfo: "channelInfo__68fc0",
   speakerIcon: "speakerIcon__68fc0",

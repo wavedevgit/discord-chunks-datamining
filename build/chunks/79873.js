@@ -1,4 +1,4 @@
-/** Chunk was on 72593 **/
+/** Chunk was on 54082 **/
 e.exports = {
   root: "root_bfe55a",
   idle: "idle_bfe55a",

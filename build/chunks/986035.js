@@ -1,59 +1,59 @@
-/** Chunk was on 72593 **/
+/** Chunk was on 57951 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 }), n(266796);
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
-  a = n(481060),
-  s = n(600164),
-  c = n(258083),
+  o = n(120356),
+  s = n.n(o),
+  c = n(481060),
+  a = n(600164),
+  l = n(258083),
   u = n(802138);
-class d extends i.PureComponent {
+class p extends i.PureComponent {
   render() {
     let {
       title: e,
       description: t,
       agreement: n,
       disagreement: i,
-      onAgree: l,
-      onDisagree: d,
-      imageClassName: p,
-      agreementButtonColor: h = a.zxk.Colors.RED
+      onAgree: o,
+      onDisagree: p,
+      imageClassName: g,
+      agreementButtonColor: f = c.zxk.Colors.RED
     } = this.props;
-    return (0, r.jsxs)(s.Z, {
-      className: c.gatedContent,
-      justify: s.Z.Justify.CENTER,
-      align: s.Z.Align.CENTER,
-      direction: s.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(a.Z, {
+      className: l.gatedContent,
+      justify: a.Z.Justify.CENTER,
+      align: a.Z.Align.CENTER,
+      direction: a.Z.Direction.VERTICAL,
       children: [(0, r.jsx)("div", {
-        className: o()(c.image, p)
+        className: s()(l.image, g)
       }), (0, r.jsx)("div", {
-        className: o()(c.title, u.marginBottom8),
+        className: s()(l.title, u.marginBottom8),
         children: e
       }), (0, r.jsx)("div", {
-        className: o()(c.description, u.marginBottom20),
+        className: s()(l.description, u.marginBottom20),
         children: t
-      }), (0, r.jsxs)(s.Z, {
-        justify: s.Z.Justify.CENTER,
-        align: s.Z.Align.CENTER,
+      }), (0, r.jsxs)(a.Z, {
+        justify: a.Z.Justify.CENTER,
+        align: a.Z.Align.CENTER,
         grow: 0,
-        children: [null != i ? (0, r.jsx)(a.zxk, {
-          className: c.action,
-          size: a.PhG.LARGE,
-          color: a.Ttl.PRIMARY,
-          onClick: d,
+        children: [null != i ? (0, r.jsx)(c.zxk, {
+          className: l.action,
+          size: c.PhG.LARGE,
+          color: c.Ttl.PRIMARY,
+          onClick: p,
           children: i
-        }) : null, null != n ? (0, r.jsx)(a.zxk, {
-          className: c.action,
-          color: h,
-          size: a.PhG.LARGE,
-          onClick: l,
+        }) : null, null != n ? (0, r.jsx)(c.zxk, {
+          className: l.action,
+          color: f,
+          size: c.PhG.LARGE,
+          onClick: o,
           children: n
         }) : null]
       })]
     })
   }
 }
-let p = d
+let g = p

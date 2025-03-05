@@ -33,8 +33,8 @@ var r = n(200651),
   S = n(43747),
   E = n(822857),
   L = n(82856),
-  A = n(960919),
-  Z = n(25990),
+  Z = n(960919),
+  A = n(25990),
   W = n(594174),
   R = n(626135),
   B = n(74538),
@@ -43,8 +43,8 @@ var r = n(200651),
   z = n(1870),
   M = n(429368),
   V = n(884697),
-  U = n(72462),
-  H = n(228624),
+  H = n(72462),
+  U = n(228624),
   G = n(188584),
   K = n(635552),
   q = n(905357),
@@ -240,13 +240,13 @@ let ey = {
       previewingVariantIndex: k
     } = C, y = (0, eh.N)(a, k), T = (0, eb.W)(a, j);
     o()(null != T, "Selected product should not be null");
-    let Z = (0, X.L)(a),
+    let A = (0, X.L)(a),
       {
         isPurchased: W,
         isPartiallyOwnedBundle: R
       } = (0, X.L)(T),
       M = (0, m.e7)([z.Z], () => z.Z.purchases),
-      U = (0, m.e7)([z.Z], () => z.Z.isClaiming === (null == T ? void 0 : T.skuId)),
+      H = (0, m.e7)([z.Z], () => z.Z.isClaiming === (null == T ? void 0 : T.skuId)),
       Q = (0, b.ZP)(),
       $ = (0, p.wj)(Q),
       ee = (0, V.G1)(T),
@@ -263,7 +263,7 @@ let ey = {
         product: T,
         onSuccess: x
       }),
-      ev = (0, H.hv)("CollectiblesProductPreviewInfo"),
+      ev = (0, U.hv)("CollectiblesProductPreviewInfo"),
       ex = (0, q.T)(T),
       {
         enabled: eC
@@ -285,9 +285,9 @@ let ey = {
         error: eL
       } = (0, S.f)(),
       {
-        balance: eA
+        balance: eZ
       } = (0, S.A)(),
-      eZ = i.useCallback(() => (0, O.Z)({
+      eA = i.useCallback(() => (0, O.Z)({
         skuId: T.skuId,
         analyticsLocations: N,
         variantsReturnStyle: ev,
@@ -352,7 +352,7 @@ let ey = {
           }), (0, r.jsx)(f.Text, {
             variant: "text-sm/normal",
             children: eD
-          }), Z.isPurchased || Z.isPartiallyOwnedBundle ? (0, r.jsx)(J.U, {
+          }), A.isPurchased || A.isPartiallyOwnedBundle ? (0, r.jsx)(J.U, {
             className: e_.priceTag,
             isPartiallyPurchased: R
           }) : ee ? (0, r.jsx)(f.Text, {
@@ -394,7 +394,7 @@ let ey = {
               if (ee) return (0, r.jsx)(f.zxk, {
                 className: e_.button,
                 look: f.zxk.Looks.FILLED,
-                submitting: U,
+                submitting: H,
                 submittingStartedLabel: eO.NW.string(eO.t["TYw+9v"]),
                 submittingFinishedLabel: eO.NW.string(eO.t.Pg1UPz),
                 onClick: async () => {
@@ -405,7 +405,7 @@ let ey = {
                 },
                 children: eO.NW.string(eO.t.zp6caG)
               });
-              let e = ey && (null == eA || ek.length > 0 || eA < ek[0].amount);
+              let e = ey && (null == eZ || ek.length > 0 || eZ < ek[0].amount);
               return (0, r.jsx)(f.zxk, {
                 className: s()(e_.button, {
                   [e_.enabledButton]: !e
@@ -426,11 +426,11 @@ let ey = {
                         (0, L.vp)()
                       }
                     })
-                  }) : eZ()
+                  }) : eA()
                 },
                 children: ey ? eO.NW.format(eO.t.kAgx5O, {
                   orbPrice: ek.length > 0 ? ek[0].amount : 1 / 0,
-                  orbIconHook: () => (0, r.jsx)(A.Z, {})
+                  orbIconHook: () => (0, r.jsx)(Z.Z, {})
                 }) : (0, V.x6)(T) ? eO.NW.string(eO.t.V1AWw8) : T.type === d.Z.PROFILE_EFFECT ? eO.NW.string(eO.t.kAeDcH) : eO.NW.string(eO.t.AQ0Ven)
               })
             })(), !ee && !el && !u.tq && (0, r.jsx)(ei.Z, {
@@ -440,7 +440,7 @@ let ey = {
             })]
           })
         }), !ey || ek.length <= 1 ? null : (0, r.jsx)(f.P3F, {
-          onClick: eZ,
+          onClick: eA,
           className: e_.payWithFiatLink,
           children: (0, r.jsx)(f.Text, {
             variant: "text-xxs/normal",
@@ -457,7 +457,7 @@ let ey = {
       })]
     })
   },
-  eA = e => {
+  eZ = e => {
     let {
       user: t
     } = e;
@@ -476,38 +476,40 @@ let ey = {
       })
     })
   },
-  eZ = e => {
+  eA = e => {
     let {
       user: t,
       nameplate: n
-    } = e;
+    } = e, a = i.useRef(null), s = (0, h.Z)(a);
     return (0, r.jsxs)("div", {
       className: e_.nameplateRightPanePreviewContainer,
-      children: [(0, r.jsx)(eA, {
+      children: [(0, r.jsx)(eZ, {
         user: ey.mallow
       }), (0, r.jsxs)(f.Text, {
         variant: "text-sm/semibold",
         className: e_.namplateRightPanePreviewSectionGroup,
         children: [eO.NW.string(eO.t["yzW/fX"]), " - 3"]
-      }), (0, r.jsx)(eA, {
+      }), (0, r.jsx)(eZ, {
         user: ey.phibi
       }), (0, r.jsx)("div", {
+        ref: a,
         className: e_.nameplateRightPanePreviewAvatarContainer,
         children: (0, r.jsx)(ev.Z, {
           className: e_.nameplatePreview,
           user: t,
           nameplate: n,
-          showStatus: !0
+          showStatus: !0,
+          isHighlighted: s
         })
-      }), (0, r.jsx)(eA, {
+      }), (0, r.jsx)(eZ, {
         user: ey.locke
       }), (0, r.jsxs)(f.Text, {
         variant: "text-sm/semibold",
         className: e_.namplateRightPanePreviewSectionGroup,
         children: [eO.NW.string(eO.t["NG43//"]), " - 12"]
-      }), (0, r.jsx)(eA, {
+      }), (0, r.jsx)(eZ, {
         user: ey.boom
-      }), (0, r.jsx)(eA, {
+      }), (0, r.jsx)(eZ, {
         user: ey.cherry
       })]
     })
@@ -516,7 +518,7 @@ let ey = {
     let {
       product: t,
       user: n
-    } = e, i = B.ZP.canUsePremiumProfileCustomization(n), a = (0, m.cj)([Z.Z], () => Z.Z.getAllPending()), {
+    } = e, i = B.ZP.canUsePremiumProfileCustomization(n), a = (0, m.cj)([A.Z], () => A.Z.getAllPending()), {
       pendingAvatarV2: s
     } = a, l = function(e, t) {
       if (null == e) return {};
@@ -541,7 +543,7 @@ let ey = {
     } = (0, Y.R)(t), v = null != f;
     return (0, r.jsx)("div", {
       className: (null == u ? void 0 : u.type) === d.Z.AVATAR_DECORATION ? e_.previewsContainerInner : e_.profileEffectPreviewsContainerInner,
-      children: (null == u ? void 0 : u.type) === d.Z.NAMEPLATE ? (0, r.jsx)(eZ, {
+      children: (null == u ? void 0 : u.type) === d.Z.NAMEPLATE ? (0, r.jsx)(eA, {
         user: n,
         nameplate: u
       }) : (0, r.jsxs)(r.Fragment, {
@@ -625,7 +627,7 @@ let ey = {
       analyticsLocations: _
     } = (0, P.ZP)([...p, x.Z.COLLECTIBLES_SHOP_DETAILS_MODAL]);
     (0, ee.u9)(O.skuId);
-    let [I] = O.items, k = (0, U.s)("CollectiblesShopProductDetailsModal");
+    let [I] = O.items, k = (0, H.s)("CollectiblesShopProductDetailsModal");
     if (i.useEffect(() => {
         null != b && (0, T.Z)(b.id, b.getAvatarURL(void 0, 80))
       }, [b]), i.useEffect(() => {

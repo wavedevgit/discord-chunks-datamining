@@ -1,4 +1,4 @@
-/** Chunk was on 72593 **/
+/** Chunk was on 54082 **/
 e.exports = {
   root: "root_c8dbe9",
   sprite: "sprite_c8dbe9",

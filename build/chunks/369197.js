@@ -1,4 +1,4 @@
-/** Chunk was on 72593 **/
+/** Chunk was on 54082 **/
 e.exports = {
   horizontalBounce: "horizontalBounce__3e795",
   container: "container__3e795",

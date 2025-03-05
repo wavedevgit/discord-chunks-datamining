@@ -1,4 +1,4 @@
-/** Chunk was on 30088 **/
+/** Chunk was on 82520 **/
 e.exports = {
   root: "root__52f07",
   footer: "footer__52f07",

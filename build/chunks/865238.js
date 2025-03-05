@@ -1,4 +1,4 @@
-/** Chunk was on 72593 **/
+/** Chunk was on 54082 **/
 n.d(t, {
   Z: () => S
 }), n(47120);
@@ -124,7 +124,7 @@ function S(e) {
               a();
               return
             }
-            let n = (0, h.s)(e.resolution, e.frameRate, t);
+            let n = (0, h.s_)(e.resolution, e.frameRate, t);
             p.Z.setGoLiveSource(n), a();
             return
           }

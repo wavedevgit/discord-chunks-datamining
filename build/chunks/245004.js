@@ -76,7 +76,7 @@ function T(e) {
   }, S = (0, c.q_F)({
     transform: b ? "translateX(-50%) translateY(0px) scale(2.25)" : "translateX(-50%) translateY(32px) scale(1)",
     borderRadius: b ? "7px" : "0px",
-    opacity: b ? .6 : 1,
+    opacity: b ? .3 : 1,
     transformOrigin: "center 0%",
     config: y
   }), T = (0, c.q_F)({

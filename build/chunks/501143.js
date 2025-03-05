@@ -1,4 +1,4 @@
-/** Chunk was on 72593 **/
+/** Chunk was on 54082 **/
 e.exports = {
   searchHeader: "searchHeader__83bd4",
   searchPageBox: "searchPageBox__83bd4",

@@ -1,4 +1,4 @@
-/** Chunk was on 72593 **/
+/** Chunk was on 54082 **/
 e.exports = {
   wrapper: "wrapper_cb9592",
   normal: "normal_cb9592",

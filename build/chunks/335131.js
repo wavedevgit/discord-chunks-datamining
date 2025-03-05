@@ -104,7 +104,7 @@ let I = e => {
       type: "COLLECTIBLES_CATEGORIES_FETCH",
       options: null != e ? e : {}
     });
-    let n = (0, m.n)(e);
+    let n = (0, m.nW)(e);
     try {
       let e = await a.tn.get({
         url: v.ANM.COLLECTIBLES_CATEGORIES,
@@ -251,7 +251,7 @@ let I = e => {
       tab: e,
       options: null != t ? t : {}
     });
-    let n = (0, m.n)(t, e);
+    let n = (0, m.nW)(t, e);
     try {
       let t = await a.tn.get({
         url: v.ANM.COLLECTIBLES_SHOP,

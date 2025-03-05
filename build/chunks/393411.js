@@ -238,17 +238,17 @@ let G = function(e) {
       })
     },
     en = () => {
-      if (null != i && null != i.planIdFromItems) {
-        let e = f.Z.get(i.planIdFromItems);
+      if (null != i && null != i.premiumPlanIdFromItems) {
+        let e = f.Z.get(i.premiumPlanIdFromItems);
         if (null == e) {
-          k.info("Plan not fetched for plan id: ".concat(i.planIdFromItems));
+          k.info("Plan not fetched for plan id: ".concat(i.premiumPlanIdFromItems));
           return
         }
         let t = (0, E.DE)(e, null == g ? void 0 : g.id, !1),
           n = t.length > 0 ? t[0] : i.currency,
           r = !1;
         1 === t.length && (null == g ? void 0 : g.id) === i.paymentSourceId && (0, E.tD)(e.id, n, null == g ? void 0 : g.id) && (r = !0), r ? c.O5(i, G) : (0, p.Z)({
-          initialPlanId: i.planIdFromItems,
+          initialPlanId: i.premiumPlanIdFromItems,
           analyticsLocations: G,
           analyticsLocation: V,
           analyticsObject: W,
@@ -268,7 +268,7 @@ let G = function(e) {
         return
       }
       i.status === P.O0b.PAUSED ? (0, p.Z)({
-        initialPlanId: i.planIdFromItems,
+        initialPlanId: i.premiumPlanIdFromItems,
         analyticsLocations: G,
         analyticsLocation: V,
         analyticsObject: W,

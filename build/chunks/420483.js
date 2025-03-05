@@ -1,4 +1,4 @@
-/** Chunk was on 30088 **/
+/** Chunk was on 82520 **/
 e.exports = {
   container: "container__2c264",
   acronym: "acronym__2c264",

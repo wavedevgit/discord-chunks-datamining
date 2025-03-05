@@ -1,38 +1,38 @@
-/** Chunk was on 72593 **/
+/** Chunk was on 75101 **/
 n.d(t, {
-  Z: () => c
+  Z: () => u
 }), n(47120);
-var r = n(200651),
-  i = n(192379),
+var i = n(200651),
+  r = n(192379),
   l = n(481060),
   o = n(911969),
   a = n(388032),
-  s = n(711642);
+  c = n(711642);
 
-function c(e) {
+function u(e) {
   let {
     name: t,
     labelType: n,
-    collapsed: c = !1,
-    showTooltip: u = !1
-  } = e, d = n === o.ww.NEW ? a.NW.string(a.t.y2b7CA) : a.NW.string(a.t["/qdhkp"]), p = n === o.ww.NEW ? s.activityNewBadge : s.activityUpdatedBadge, [h, f] = i.useState(c ? "" : d);
-  if (i.useEffect(() => {
-      c ? f("") : n === o.ww.NEW ? f(a.NW.string(a.t.y2b7CA)) : n === o.ww.UPDATED && f(a.NW.string(a.t["/qdhkp"]))
-    }, [c, n]), n === o.ww.NONE) return null;
-  let m = (0, r.jsx)(l.IGR, {
+    collapsed: u = !1,
+    showTooltip: d = !1
+  } = e, s = n === o.ww.NEW ? a.NW.string(a.t.y2b7CA) : a.NW.string(a.t["/qdhkp"]), p = n === o.ww.NEW ? c.activityNewBadge : c.activityUpdatedBadge, [f, v] = r.useState(u ? "" : s);
+  if (r.useEffect(() => {
+      u ? v("") : n === o.ww.NEW ? v(a.NW.string(a.t.y2b7CA)) : n === o.ww.UPDATED && v(a.NW.string(a.t["/qdhkp"]))
+    }, [u, n]), n === o.ww.NONE) return null;
+  let y = (0, i.jsx)(l.IGR, {
     className: p,
     disableColor: !0,
-    text: (0, r.jsx)("span", {
-      children: h
+    text: (0, i.jsx)("span", {
+      children: f
     })
   });
-  if (!u) return m;
-  let g = a.NW.formatToPlainString(a.t.Vs2EeX, {
+  if (!d) return y;
+  let b = a.NW.formatToPlainString(a.t.Vs2EeX, {
     activity: t
   });
-  return (0, r.jsx)(l.DY3, {
-    text: g,
-    tooltipContentClassName: s.tooltip,
-    children: m
+  return (0, i.jsx)(l.DY3, {
+    text: b,
+    tooltipContentClassName: c.tooltip,
+    children: y
   })
 }

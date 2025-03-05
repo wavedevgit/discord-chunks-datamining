@@ -1,7 +1,7 @@
-/** Chunk was on 69057 **/
+/** Chunk was on 75101 **/
 n.d(t, {
-  QN: () => s,
-  ZP: () => p,
+  QN: () => p,
+  ZP: () => s,
   gb: () => f,
   uF: () => v
 }), n(47120), n(653041);
@@ -9,16 +9,16 @@ var i = n(192379),
   r = n(442837),
   l = n(835473),
   o = n(158776),
-  c = n(594174),
-  a = n(823379),
+  a = n(594174),
+  c = n(823379),
   u = n(317381),
   d = n(16609);
 
-function p(e, t) {
+function s(e, t) {
   return f((0, r.Wu)([u.ZP], () => null != e && null != e.id && "" !== e.id ? u.ZP.getEmbeddedActivitiesForChannel(e.id) : u.i6), t)
 }
 
-function s(e) {
+function p(e) {
   let t = f((0, r.e7)([u.ZP], () => null != e ? u.ZP.getEmbeddedActivitiesForGuild(e) : u.i6));
   return i.useMemo(() => {
     let e = new Map;
@@ -38,9 +38,9 @@ function f(e, t) {
     u = new Set([]);
   for (let t of e)
     for (let e of t.userIds) u.add(e);
-  let d = (0, r.Wu)([c.default], () => {
+  let d = (0, r.Wu)([a.default], () => {
     let e = [];
-    for (let t of u) e.push(c.default.getUser(t));
+    for (let t of u) e.push(a.default.getUser(t));
     return e
   }, [u]);
   return i.useMemo(() => {
@@ -63,7 +63,7 @@ function f(e, t) {
         application: r,
         userParticipantAvatarUrls: l
       }
-    }).filter(a.lm)
+    }).filter(c.lm)
   }, [e, o, d, t])
 }
 

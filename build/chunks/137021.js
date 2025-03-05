@@ -106,7 +106,7 @@ function O(e) {
         n = "".concat(_, "\n\n").concat(t);
       w(!0), (await Promise.all(e.map(d.qx))).filter(m.lm).forEach(async e => {
         let t = b.Z.getChannel(e);
-        null != t && await i.Z.sendMessage(e, c.ZP.parse(t, n))
+        null != t && await i.Z.sendMessage(e, c.ZP.parse(t, n), !1)
       }), (0, a.showToast)((0, a.createToast)(g.NW.formatToPlainString(g.t.jQULqK, {
         applicationName: Z.name
       }), a.ToastType.SUCCESS)), P(!0), O()

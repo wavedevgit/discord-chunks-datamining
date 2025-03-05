@@ -18,15 +18,20 @@ function f(e) {
     guild: t
   } = e, n = (0, l.Ek)(t, "GuildBoostingMarketing"), [f, _] = (0, s.q_F)(() => ({
     scale: .8,
+    opacity: 0,
     config: {
       tension: 500,
       friction: 10
     }
   }));
   return (i.useEffect(() => {
-    _({
-      scale: 1
-    })
+    let e = setTimeout(() => {
+      _({
+        scale: 1,
+        opacity: 1
+      })
+    }, 300);
+    return () => clearTimeout(e)
   }, [_]), n) ? (0, r.jsxs)(o.animated.div, {
     className: d.container,
     style: f,

@@ -1,7 +1,7 @@
-/** Chunk was on 30088 **/
+/** Chunk was on 82520 **/
 n.d(t, {
   Z: () => j,
-  d: () => N
+  d: () => Z
 }), n(47120);
 var a = n(200651),
   i = n(192379),
@@ -14,8 +14,8 @@ var a = n(200651),
   u = n(430824),
   p = n(594174),
   f = n(115130),
-  g = n(566620),
-  m = n(127255),
+  m = n(566620),
+  g = n(127255),
   v = n(880308),
   h = n(451576),
   b = n(439934),
@@ -34,7 +34,7 @@ function j(e) {
     onClose: r,
     onActivityItemVisible: x,
     scrollerRef: j
-  } = e, [N, Z] = i.useState(0), S = (0, m.Z)({
+  } = e, [Z, S] = i.useState(0), N = (0, g.Z)({
     guildId: n,
     enableFilter: !0
   }), O = (0, s.e7)([p.default], () => p.default.getCurrentUser()), E = (0, s.e7)([u.Z], () => u.Z.getGuild(n), [n]), {
@@ -54,15 +54,15 @@ function j(e) {
 
       function t() {
         var e, t;
-        Z(null !== (t = null === (e = j.current) || void 0 === e ? void 0 : e.scrollTop) && void 0 !== t ? t : 0)
+        S(null !== (t = null === (e = j.current) || void 0 === e ? void 0 : e.scrollTop) && void 0 !== t ? t : 0)
       }
     }, [j]), i.useEffect(() => {
-      (M || null != n) && (0, g.w1)({
+      (M || null != n) && (0, m.w1)({
         guildId: n,
         force: !0
       })
     }, [n, M]), (0, v.g)(), null == E && !M || null == O) return null;
-  let L = S.length > 0;
+  let L = N.length > 0;
   return (0, a.jsx)(d.Gt, {
     value: A,
     children: (0, a.jsxs)("div", {
@@ -70,7 +70,7 @@ function j(e) {
       children: [L ? (0, a.jsx)("div", {
         className: C.scrollBackgroundContainer,
         style: {
-          top: -N
+          top: -Z
         },
         children: (0, a.jsx)("div", {
           className: C.scrollTierBackground,
@@ -78,7 +78,7 @@ function j(e) {
             height: (e => {
               let t = 1 === e.length;
               return I + Math.ceil(e.length / 2) * (t ? T : y)
-            })(S)
+            })(N)
           }
         })
       }) : null, (0, a.jsxs)(c.Ttm, {
@@ -88,8 +88,8 @@ function j(e) {
           className: C.scrollSection,
           children: (0, a.jsx)("div", {
             className: C.shelf,
-            children: S.map(e => (0, a.jsx)(b.Z, {
-              large: 1 === S.length,
+            children: N.map(e => (0, a.jsx)(b.Z, {
+              large: 1 === N.length,
               activityItem: e,
               context: {
                 channel: t,
@@ -119,7 +119,7 @@ function j(e) {
   })
 }
 
-function N() {
+function Z() {
   return (0, a.jsx)(c.Text, {
     variant: "text-sm/normal",
     children: _.NW.format(_.t.fijcEB, {

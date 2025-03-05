@@ -44,8 +44,7 @@ let v = e => {
         "aria-label": g.NW.string(g.t.cqpybG)
       }),
       name: g.NW.string(g.t.cqpybG),
-      selected: !1,
-      innerClassName: m.avatarWithTextInner
+      selected: !1
     }) : (0, r.jsx)(c.Z, {
       avatar: (0, r.jsx)(u.Z, {
         user: t,
@@ -55,8 +54,7 @@ let v = e => {
         "aria-hidden": !0
       }),
       name: p.ZP.getName(null, null, t),
-      selected: !1,
-      innerClassName: m.avatarWithTextInner
+      selected: !1
     })]
   })
 }

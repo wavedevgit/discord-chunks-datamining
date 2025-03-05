@@ -1,4 +1,4 @@
-/** Chunk was on 30088 **/
+/** Chunk was on 82520 **/
 e.exports = {
   activityItem: "activityItem__18da2",
   large: "large__18da2",
