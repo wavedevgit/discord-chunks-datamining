@@ -1,6 +1,6 @@
 /**
   Module ID: 23150
-  Original File Name: 6f67d9063236f109
+  Original File Name: bcadbc04c430db48
 **/
 .fallback_b789ab {
     box-sizing: border-box;
@@ -1865,7 +1865,8 @@ img.thumbnail__0f2e8 {
     justify-content: space-between;
     gap: 16px;
     margin-bottom: 16px;
-    align-items: center
+    align-items: center;
+    overflow: hidden
 }
 
 .popoutContentWrapper_af3b89 {
@@ -1915,7 +1916,13 @@ img.thumbnail__0f2e8 {
 .popoutUserContainer_af3b89 {
     display: flex;
     align-items: center;
-    flex-grow: 1
+    flex-grow: 1;
+    overflow: hidden
+}
+
+.popoutUsernames_af3b89 {
+    overflow: hidden;
+    text-overflow: ellipsis
 }
 
 .popoutUsername_af3b89 {

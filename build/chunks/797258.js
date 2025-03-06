@@ -41,6 +41,11 @@ class _ extends(r = a.ZP.Store) {
       t = o().find(d, t => t.active && t.sessionId !== e);
     return null != t ? t.activities : u
   }
+  getHiddenActivities() {
+    let e = l.default.getSessionId(),
+      t = o().find(d, t => t.active && t.sessionId !== e);
+    return null != t ? t.hiddenActivities : u
+  }
   getSessionById(e) {
     return d[e]
   }

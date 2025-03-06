@@ -4,8 +4,8 @@ n.d(t, {
 });
 var l = n(200651);
 n(192379);
-var s = n(512722),
-  i = n.n(s),
+var i = n(512722),
+  s = n.n(i),
   r = n(780384),
   a = n(481060),
   o = n(410030),
@@ -22,7 +22,7 @@ function _(e) {
   let {
     handleStepChange: t,
     handleClose: n
-  } = e, s = (0, o.ZP)(), {
+  } = e, i = (0, o.ZP)(), {
     activeSubscription: _,
     selectedSkuId: j,
     setSelectedPlanId: m,
@@ -35,7 +35,7 @@ function _(e) {
     selectedSkuId: j,
     startedPaymentFlowWithPaymentSources: L.current
   });
-  return i()(null != N, "Expected premium type"), (0, l.jsx)(C.Z, {
+  return s()(null != N, "Expected premium type"), (0, l.jsx)(C.Z, {
     premiumType: N,
     titleText: f.NW.string(f.t["7VcWW1"]),
     subtitleText: f.NW.format(f.t.Qk34Ii, {
@@ -50,7 +50,7 @@ function _(e) {
         children: f.NW.string(f.t["3PatS0"])
       }), (0, l.jsx)(a.zxk, {
         look: a.zxk.Looks.LINK,
-        color: (0, r.wj)(s) ? a.zxk.Colors.WHITE : a.zxk.Colors.PRIMARY,
+        color: (0, r.wj)(i) ? a.zxk.Colors.WHITE : a.zxk.Colors.PRIMARY,
         onClick: n,
         children: f.NW.string(f.t.h9tkAA)
       })]

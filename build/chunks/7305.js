@@ -4,8 +4,8 @@ n.d(t, {
   default: () => F
 }), n(411104), n(47120);
 var l = n(200651),
-  s = n(192379),
-  i = n(442837),
+  i = n(192379),
+  s = n(442837),
   r = n(570140),
   a = n(821849),
   o = n(100527),
@@ -61,7 +61,7 @@ function R(e) {
   let {
     analyticsLocation: t,
     analyticsObject: n,
-    analyticsSourceLocation: i,
+    analyticsSourceLocation: s,
     onComplete: o,
     transitionState: d,
     initialPlanId: u,
@@ -86,7 +86,7 @@ function R(e) {
   } = e, {
     analyticsLocations: R
   } = (0, C.ZP)();
-  s.useEffect(() => {
+  i.useEffect(() => {
     c.Z.isLoadedForPremiumSKUs() || r.Z.wait(() => (0, a.Y2)())
   }, []);
   let {
@@ -100,7 +100,7 @@ function R(e) {
     analyticsLocations: R,
     analyticsLocation: t,
     analyticsObject: n,
-    analyticsSourceLocation: i,
+    analyticsSourceLocation: s,
     analyticsSubscriptionType: M.NYc.PREMIUM,
     onComplete: o,
     transitionState: d,
@@ -149,8 +149,8 @@ function H(e) {
 function W(e) {
   var t, n;
   let {
-    initialPlanId: s,
-    handleStepChange: i,
+    initialPlanId: i,
+    handleStepChange: s,
     referralTrialOfferId: r
   } = e, {
     paymentSources: a,
@@ -168,8 +168,8 @@ function W(e) {
     breadcrumbSteps: A,
     onReturn: () => {
       let e = Object.values(a),
-        t = e.length < 1 && null == s ? h.h8.PLAN_SELECT : h.h8.REVIEW;
-      p && (t = h.h8.REVIEW), _ && e.length < 1 && (t = h.h8.SELECT_FREE_SKU), i(t, {
+        t = e.length < 1 && null == i ? h.h8.PLAN_SELECT : h.h8.REVIEW;
+      p && (t = h.h8.REVIEW), _ && e.length < 1 && (t = h.h8.SELECT_FREE_SKU), s(t, {
         trackedFromStep: h.h8.PAYMENT_TYPE
       })
     }
@@ -242,11 +242,11 @@ let B = [{
 }];
 
 function F(e) {
-  let t = (0, i.e7)([u.ZP], () => u.ZP.getPremiumTypeSubscription()),
+  let t = (0, s.e7)([u.ZP], () => u.ZP.getPremiumTypeSubscription()),
     {
       analyticsLocations: n
     } = (0, C.ZP)(e.analyticsLocations, o.Z.PREMIUM_PAYMENT_MODAL),
-    s = (0, S.s)("premiumPaymentModal"),
+    i = (0, S.s)("premiumPaymentModal"),
     {
       confirmationFooter: r,
       defaultPlanId: a,
@@ -282,7 +282,7 @@ function F(e) {
           giftMessage: c,
           giftStyle: h,
           giftingOrigin: d,
-          children: [(0, l.jsx)(R, U({}, e)), s && (0, l.jsx)(N.t, {})]
+          children: [(0, l.jsx)(R, U({}, e)), i && (0, l.jsx)(N.t, {})]
         })
       })
     })

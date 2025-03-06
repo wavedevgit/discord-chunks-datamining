@@ -362,8 +362,8 @@ function Y(e) {
 
 function K(e) {
   let t = f.default.getId();
-  if (E[t] === e.status && v[t] === e.activities) return !1;
-  E[t] = e.status, v[t] = [...e.activities].sort(R), delete O[t]
+  if (E[t] === e.status && v[t] === e.activities && b[t] === e.hiddenActivities) return !1;
+  E[t] = e.status, v[t] = [...e.activities].sort(R), b[t] = [...e.hiddenActivities].sort(R), delete O[t]
 }
 
 function z(e) {

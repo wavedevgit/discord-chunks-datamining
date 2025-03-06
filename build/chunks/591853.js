@@ -594,7 +594,7 @@ function ej(e) {
         horizontal: !0
       }), (0, r.jsx)(m.X6q, {
         variant: "heading-sm/normal",
-        className: eu.popoutTextSecondary,
+        className: i()(eu.popoutUsernames, eu.popoutTextSecondary),
         children: ec.NW.format(n, {
           user0: q.ZP.getName(s, null == t ? void 0 : t.id, v[0]),
           user1: q.ZP.getName(s, null == t ? void 0 : t.id, v[1]),

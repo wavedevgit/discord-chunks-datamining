@@ -1,6 +1,6 @@
 /**
   Module ID: 54082
-  Original File Name: 813b8736244ccef1
+  Original File Name: 3df9a1553021a68a
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -15136,7 +15136,8 @@ div.profileThemedContainer__656be {
     justify-content: space-between;
     gap: 16px;
     margin-bottom: 16px;
-    align-items: center
+    align-items: center;
+    overflow: hidden
 }
 
 .popoutContentWrapper_af3b89 {
@@ -15186,7 +15187,13 @@ div.profileThemedContainer__656be {
 .popoutUserContainer_af3b89 {
     display: flex;
     align-items: center;
-    flex-grow: 1
+    flex-grow: 1;
+    overflow: hidden
+}
+
+.popoutUsernames_af3b89 {
+    overflow: hidden;
+    text-overflow: ellipsis
 }
 
 .popoutUsername_af3b89 {

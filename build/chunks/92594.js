@@ -3,9 +3,9 @@ n.d(t, {
   t: () => g
 }), n(47120);
 var l = n(200651),
-  s = n(192379),
-  i = n(120356),
-  r = n.n(i),
+  i = n(192379),
+  s = n(120356),
+  r = n.n(s),
   a = n(570140),
   o = n(366939),
   C = n(16084),
@@ -26,7 +26,7 @@ function g() {
     activeSubscription: e,
     purchaseError: t,
     paymentError: n,
-    setPurchaseError: i,
+    setPurchaseError: s,
     selectedSkuId: g,
     selectedPlan: E,
     setSelectedSkuId: S,
@@ -34,8 +34,8 @@ function g() {
     setSelectedPlanNotification: y
   } = (0, h.JL)(), {
     isGift: I
-  } = (0, f.wD)(), [O, v] = s.useState(!1), [b, P] = s.useState(!1), [T, M] = s.useState(!1);
-  return s.useEffect(() => {
+  } = (0, f.wD)(), [O, v] = i.useState(!1), [b, P] = i.useState(!1), [T, M] = i.useState(!1);
+  return i.useEffect(() => {
     let l = setTimeout(() => {
       g === j.Si.TIER_2 && (null == e || !e.isPremium) && !I && ((null == t ? void 0 : t.code) === d.SM.BILLING_INSUFFICIENT_FUNDS || (null == n ? void 0 : n.code) === d.SM.BILLING_INSUFFICIENT_FUNDS) && M(!0)
     }, 1500);
@@ -56,7 +56,7 @@ function g() {
           }, "post-failure-nitro-basic-upsell-perk-hover")
         }),
         handleClick: () => {
-          i(null), a.Z.wait(C.pB), a.Z.wait(o.fw), y(m.NW.string(m.t["/5p4ws"])), S(j.Si.TIER_0);
+          s(null), a.Z.wait(C.pB), a.Z.wait(o.fw), y(m.NW.string(m.t["/5p4ws"])), S(j.Si.TIER_0);
           let e = j.Xh.PREMIUM_MONTH_TIER_0;
           (null == E ? void 0 : E.id) === j.Xh.PREMIUM_YEAR_TIER_2 && (e = j.Xh.PREMIUM_YEAR_TIER_0), N(e), P(!0)
         },

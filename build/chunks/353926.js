@@ -76,7 +76,7 @@ let y = "scientist:triggered",
   x = {},
   M = {},
   k = {},
-  j = "staging" === window.GLOBAL_ENV.RELEASE_CHANNEL,
+  j = "staging" === window.GLOBAL_ENV.RELEASE_CHANNEL || (0, c.fD)(),
   U = {};
 
 function G(e) {
