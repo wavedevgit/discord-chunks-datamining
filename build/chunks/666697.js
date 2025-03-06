@@ -47,12 +47,12 @@ let P = function(e) {
     })
   }, [t]), i.useEffect(() => () => E(!0), [E]);
   let R = null == L ? void 0 : L.storefront_available,
-    [k, Z] = i.useState(null != S ? S : y.GlobalDiscoveryAppsSections.ABOUT),
+    [Z, k] = i.useState(null != S ? S : y.GlobalDiscoveryAppsSections.ABOUT),
     w = i.useCallback(e => {
       var t;
       null === (t = A.current) || void 0 === t || t.scrollTo({
         to: 0
-      }), Z(y.GlobalDiscoveryAppsSections.ABOUT), n(e)
+      }), k(y.GlobalDiscoveryAppsSections.ABOUT), n(e)
     }, [n]);
   i.useEffect(() => {
     (null == L ? void 0 : L.storefront_available) && null != t && (0, l.Z)(t)
@@ -94,7 +94,7 @@ let P = function(e) {
     }], []),
     F = i.useMemo(() => {
       if (null == L) return null;
-      switch (k) {
+      switch (Z) {
         case y.GlobalDiscoveryAppsSections.ABOUT:
           return (0, r.jsx)(b.Z, {
             application: L
@@ -104,14 +104,14 @@ let P = function(e) {
             application: L
           })
       }
-    }, [k, L]),
+    }, [Z, L]),
     V = i.useCallback(e => {
       (0, m.zZ)(I.rMx.APP_DIRECTORY_PROFILE_TAB_CLICKED, {
         application_id: t,
         tab_name: e
-      }), Z(e), e === y.GlobalDiscoveryAppsSections.ABOUT ? (0, f.Gp)(I.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(t)) : (0, f.Gp)(I.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, e))
+      }), k(e), e === y.GlobalDiscoveryAppsSections.ABOUT ? (0, f.Gp)(I.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(t)) : (0, f.Gp)(I.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, e))
     }, [t]),
-    H = k === y.GlobalDiscoveryAppsSections.ABOUT;
+    H = Z === y.GlobalDiscoveryAppsSections.ABOUT;
   return (0, r.jsx)(c.Z, {
     onScroll: P,
     ref: A,
@@ -140,7 +140,7 @@ let P = function(e) {
               children: (0, r.jsx)(s.Z, {
                 tabs: W,
                 onTabSelect: V,
-                selectedTab: k
+                selectedTab: Z
               })
             }), F, (0, r.jsx)(C.Z, {
               applicationId: t,

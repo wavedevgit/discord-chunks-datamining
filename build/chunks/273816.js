@@ -1,11 +1,11 @@
 /** Chunk was on 50751 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(47120);
 var i = n(200651),
   r = n(192379),
-  o = n(120356),
-  l = n.n(o),
+  l = n(120356),
+  o = n.n(l),
   a = n(442837),
   s = n(481060),
   u = n(493773),
@@ -36,7 +36,7 @@ function O(e) {
   return e
 }
 
-function y(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,15 +49,15 @@ function y(e, t) {
   }), e
 }
 
-function v(e) {
+function y(e) {
   let {
     locked: t,
     pinned: n,
-    anchorLeft: o
-  } = e, v = (0, a.e7)([d.Z], () => d.Z.getSocket()), E = (0, a.e7)([f.ZP], () => f.ZP.isGPUBoosted());
+    anchorLeft: l
+  } = e, y = (0, a.e7)([d.Z], () => d.Z.getSocket()), E = (0, a.e7)([f.ZP], () => f.ZP.isGPUBoosted());
   (0, c.nU)();
   let b = (0, a.e7)([p.Z], () => p.Z.getWindow(m.$J)),
-    [j, x] = (0, c.m8)(v),
+    [j, x] = (0, c.m8)(y),
     {
       currentFPS: S,
       averageFrameTime: I,
@@ -68,7 +68,7 @@ function v(e) {
       bufferFramecountRef: P,
       frameCheckerEffect: _
     } = (0, c.d6)(!0, j, !0),
-    [T, D, k] = (0, c.ZF)(v),
+    [T, D, k] = (0, c.ZF)(y),
     [A, L] = (0, c.Y5)(T, _, b),
     R = performance.now() - x.current < c.MC,
     M = D(I, P.current);
@@ -79,12 +79,12 @@ function v(e) {
       N(), k(), A()
     }, [N, k, A]),
     [V, z] = r.useState(!0),
-    [U, G] = r.useState(!0),
-    [F, Y] = r.useState(!0),
+    [U, F] = r.useState(!0),
+    [G, Y] = r.useState(!0),
     [H, B] = r.useState(!0),
-    [Q, K] = r.useState(!0);
+    [K, Q] = r.useState(!0);
   return t && !n ? null : (0, i.jsxs)("div", {
-    className: l()(g.panelGroup, !o && g.rightAligned),
+    className: o()(g.panelGroup, !l && g.rightAligned),
     children: [(V || !t) && (0, i.jsxs)("div", {
       className: g.measurement,
       children: [!t && (0, i.jsx)("div", {
@@ -112,7 +112,7 @@ function v(e) {
         children: (0, i.jsx)(s.XZJ, {
           size: 16,
           value: U,
-          onChange: (e, t) => G(t)
+          onChange: (e, t) => F(t)
         })
       }), (0, i.jsxs)(s.Text, {
         variant: "text-md/normal",
@@ -125,13 +125,13 @@ function v(e) {
           children: [I.toFixed(2), "ms"]
         })]
       })]
-    }), (F || !t) && (0, i.jsxs)("div", {
+    }), (G || !t) && (0, i.jsxs)("div", {
       className: g.measurement,
       children: [!t && (0, i.jsx)("div", {
         className: g.measurementCheckbox,
         children: (0, i.jsx)(s.XZJ, {
           size: 16,
-          value: F,
+          value: G,
           onChange: (e, t) => Y(t)
         })
       }), (0, i.jsxs)(s.Text, {
@@ -171,19 +171,19 @@ function v(e) {
           children: w.current.toFixed(0)
         })]
       })]
-    }), (Q || !t) && (0, i.jsxs)("div", {
+    }), (K || !t) && (0, i.jsxs)("div", {
       className: g.measurement,
       children: [!t && (0, i.jsx)("div", {
         className: g.measurementCheckbox,
         children: (0, i.jsx)(s.XZJ, {
           size: 16,
-          value: Q,
-          onChange: (e, t) => K(t)
+          value: K,
+          onChange: (e, t) => Q(t)
         })
       }), (0, i.jsx)(s.ua7, {
         position: "left",
         text: "The average amount of 'lag' between us rendering a frame and being able to process background tasks. Values constantly above 1-2ms means our main thread is being burried by work and is taking all of its time in animation frames, most likely producing user interaciton blocking jank. (This doesn't work when the app is backgrounded though)",
-        children: e => (0, i.jsx)("div", y(O({}, e), {
+        children: e => (0, i.jsx)("div", v(O({}, e), {
           children: (0, i.jsxs)(s.Text, {
             variant: "text-md/normal",
             color: "text-secondary",
@@ -200,7 +200,7 @@ function v(e) {
     }), R && (0, i.jsx)(s.ua7, {
       position: "left",
       text: "We don't track frames while the app is in the background, because requestAnimationFrame doesn't fire in the background",
-      children: e => (0, i.jsx)("span", y(O({}, e), {
+      children: e => (0, i.jsx)("span", v(O({}, e), {
         children: (0, i.jsx)(s.Text, {
           tag: "span",
           variant: "code",

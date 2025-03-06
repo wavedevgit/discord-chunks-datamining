@@ -8,8 +8,8 @@ n.d(t, {
 });
 var i = n(348327),
   r = n.n(i),
-  o = n(972959),
-  l = n(569545);
+  l = n(972959),
+  o = n(569545);
 
 function a(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -42,13 +42,13 @@ function s(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let u = (0, o.H)(() => ({
+let u = (0, l.H)(() => ({
   streams: {}
 }));
 
 function c(e) {
   var t, n;
-  let i = (0, l.V9)(e);
+  let i = (0, o.V9)(e);
   return null !== (n = null === (t = u.useState(e => e.streams, r())[i]) || void 0 === t ? void 0 : t.zoom) && void 0 !== n ? n : 100
 }
 
@@ -57,7 +57,7 @@ function d(e) {
 }
 
 function p(e, t) {
-  let n = (0, l.V9)(e);
+  let n = (0, o.V9)(e);
   u.setState(e => {
     var i;
     return s(a({}, e), {
@@ -72,7 +72,7 @@ function p(e, t) {
 }
 
 function h(e, t) {
-  let n = (0, l.V9)(e);
+  let n = (0, o.V9)(e);
   u.setState(e => {
     var i;
     return s(a({}, e), {
@@ -88,6 +88,6 @@ function h(e, t) {
 
 function f(e) {
   var t;
-  let n = (0, l.V9)(e);
+  let n = (0, o.V9)(e);
   return null === (t = u.useState(e => e.streams, r())[n]) || void 0 === t ? void 0 : t.fitOverride
 }

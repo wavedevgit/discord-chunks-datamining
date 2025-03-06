@@ -1,14 +1,14 @@
-/** Chunk was on 54030 **/
+/** Chunk was on 18410 **/
 n.d(t, {
-  Z: () => f
+  Z: () => g
 }), n(47120), n(733860);
-var r, o = n(442837),
-  i = n(570140),
-  a = n(592125),
-  l = n(271383),
-  c = n(430824);
+var r, i = n(442837),
+  l = n(570140),
+  u = n(592125),
+  o = n(271383),
+  a = n(430824);
 
-function u(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -17,11 +17,11 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 let s = [],
-  _ = new Set;
-class d extends(r = o.ZP.PersistedStore) {
+  d = new Set;
+class f extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    this.waitFor(l.ZP, c.Z, a.Z), _ = new Set([...s = null !== (t = null == e ? void 0 : e.channelHistory) && void 0 !== t ? t : []])
+    this.waitFor(o.ZP, a.Z, u.Z), d = new Set([...s = null !== (t = null == e ? void 0 : e.channelHistory) && void 0 !== t ? t : []])
   }
   getState() {
     return {
@@ -32,16 +32,16 @@ class d extends(r = o.ZP.PersistedStore) {
     return s
   }
 }
-u(d, "displayName", "RecentVoiceChannelStore"), u(d, "persistKey", "RecentVoiceChannelStore");
-let f = new d(i.Z, {
+c(f, "displayName", "RecentVoiceChannelStore"), c(f, "persistKey", "RecentVoiceChannelStore");
+let g = new f(l.Z, {
   POST_CONNECTION_OPEN: function() {
-    _ = new Set([...s])
+    d = new Set([...s])
   },
   VOICE_CHANNEL_SELECT: function(e) {
     var t, n;
     let {
       channelId: r
     } = e;
-    return !(null == r || !(null !== (n = null === (t = a.Z.getChannel(r)) || void 0 === t ? void 0 : t.isVocal()) && void 0 !== n && n) || _.has(r)) && (s.unshift(r), _.add(r), s.length > 10 && (s.length = 10, _ = new Set([...s])), !0)
+    return !(null == r || !(null !== (n = null === (t = u.Z.getChannel(r)) || void 0 === t ? void 0 : t.isVocal()) && void 0 !== n && n) || d.has(r)) && (s.unshift(r), d.add(r), s.length > 10 && (s.length = 10, d = new Set([...s])), !0)
   }
 })

@@ -1,7 +1,9 @@
 /** Chunk was on 20777 **/
 n.d(t, {
-  Z: () => x,
-  _: () => P
+  ZP: () => x,
+  _W: () => P,
+  ge: () => v,
+  je: () => b
 });
 var r = n(200651),
   l = n(192379),
@@ -74,35 +76,37 @@ let M = f.ZP.getEnableHardwareAcceleration() ? E.Xo$ : E.qEK;
 
 function v(e) {
   let {
-    channel: t
+    channel: t,
+    size: n = E.EFr.SIZE_20
   } = e;
   return (0, r.jsx)(M, {
     src: (0, c.x)(t),
     "aria-hidden": !0,
-    size: E.EFr.SIZE_20
+    size: n
   })
 }
 
 function b(e) {
   let {
-    channel: t
-  } = e, n = (0, s.e7)([R.default], () => R.default.getUser(null == t ? void 0 : t.recipients[0])), l = (0, s.e7)([g.Z], () => !(null == n || null == t || t.isMultiUserDM()) && null != g.Z.getTypingUsers(null == t ? void 0 : t.id)[null == n ? void 0 : n.id]), {
-    status: a,
-    isMobile: i
-  } = (0, s.cj)([O.Z], () => null == n || null == t || t.isMultiUserDM() ? {
+    channel: t,
+    size: n = E.EFr.SIZE_20
+  } = e, l = (0, s.e7)([R.default], () => R.default.getUser(null == t ? void 0 : t.recipients[0])), a = (0, s.e7)([g.Z], () => !(null == l || null == t || t.isMultiUserDM()) && null != g.Z.getTypingUsers(null == t ? void 0 : t.id)[null == l ? void 0 : l.id]), {
+    status: i,
+    isMobile: o
+  } = (0, s.cj)([O.Z], () => null == l || null == t || t.isMultiUserDM() ? {
     status: null,
     isMobile: !1
   } : {
-    status: O.Z.getStatus(n.id),
-    isMobile: O.Z.isMobileOnline(n.id)
+    status: O.Z.getStatus(l.id),
+    isMobile: O.Z.isMobileOnline(l.id)
   });
   return (0, r.jsx)(M, {
-    size: E.EFr.SIZE_20,
-    src: null == n ? void 0 : n.getAvatarURL(void 0, 40),
-    status: a,
-    isMobile: i,
-    isTyping: l,
-    "aria-label": null == n ? void 0 : n.username,
+    size: n,
+    src: null == l ? void 0 : l.getAvatarURL(void 0, 40),
+    status: i,
+    isMobile: o,
+    isTyping: a,
+    "aria-label": null == l ? void 0 : l.username,
     statusTooltip: !0
   })
 }

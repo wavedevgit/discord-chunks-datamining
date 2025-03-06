@@ -1,20 +1,20 @@
 /** Chunk was on 54030 **/
 n.d(t, {
-  Z: () => I
+  Z: () => O
 }), n(653041), n(47120);
 var r = n(200651),
   o = n(192379),
-  i = n(442837),
-  a = n(481060),
-  l = n(355863),
-  c = n(237997),
-  u = n(451478),
-  s = n(145597),
-  _ = n(830917),
+  a = n(442837),
+  i = n(481060),
+  c = n(355863),
+  l = n(237997),
+  _ = n(451478),
+  u = n(145597),
+  s = n(830917),
   d = n(312178),
   f = n(388627),
-  p = n(892127),
-  b = n(561064),
+  b = n(892127),
+  p = n(561064),
   m = n(337380);
 
 function g(e) {
@@ -36,7 +36,7 @@ function g(e) {
   return e
 }
 
-function v(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,33 +49,33 @@ function v(e, t) {
   }), e
 }
 
-function y(e) {
+function v(e) {
   return e.widget.id
 }
 
-function h(e, t, n, o) {
-  return n === a.pJH.YEETED ? null : (0, r.jsx)(p.Z, v(g({}, t), {
+function y(e, t, n, o) {
+  return n === i.pJH.YEETED ? null : (0, r.jsx)(b.Z, h(g({}, t), {
     transitionState: n,
     cleanUp: o,
     dragContainerClassName: m.dragContainer,
     className: m.widget
   }), e)
 }
-let O = [],
-  I = o.memo(function(e) {
+let I = [],
+  O = o.memo(function(e) {
     let {
       className: t
-    } = e, n = (0, b.Z)(), p = (0, i.e7)([u.Z], () => u.Z.windowSize((0, _.ZY)(n))), m = (0, i.e7)([c.default], () => c.default.isPreviewingInGame()), I = (0, i.e7)([l.Z], () => {
-      let e = l.Z.getLayout(s.OVERLAY_LAYOUT_ID);
-      if (null == e) return O;
+    } = e, n = (0, p.Z)(), b = (0, a.e7)([_.Z], () => _.Z.windowSize((0, s.ZY)(n))), m = (0, a.e7)([l.default], () => l.default.isPreviewingInGame()), O = (0, a.e7)([c.Z], () => {
+      let e = c.Z.getLayout(u.OVERLAY_LAYOUT_ID);
+      if (null == e) return I;
       let t = [];
       for (let n of e.widgets) {
-        let e = l.Z.getWidget(n);
+        let e = c.Z.getWidget(n);
         if (null == e) continue;
         let r = d.p[e.type];
         null != r && t.push({
           widget: e,
-          renderWidget: t => r(v(g({}, t), {
+          renderWidget: t => r(h(g({}, t), {
             id: e.id,
             pinned: e.pinned,
             anchor: e.anchor,
@@ -84,15 +84,15 @@ let O = [],
         })
       }
       return t
-    }, [m], f.HP), P = o.useCallback(e => (0, r.jsx)("div", {
+    }, [m], f.HP), C = o.useCallback(e => (0, r.jsx)("div", {
       className: t,
-      style: p,
+      style: b,
       children: e
-    }), [t, p]);
-    return (0, r.jsx)(a.W3x, {
-      items: I,
-      renderItem: h,
-      getItemKey: y,
-      wrapChildren: P
+    }), [t, b]);
+    return (0, r.jsx)(i.W3x, {
+      items: O,
+      renderItem: y,
+      getItemKey: v,
+      wrapChildren: C
     })
   })

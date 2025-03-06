@@ -33,8 +33,8 @@ var r = n(200651),
   L = n(666697),
   T = n(548514),
   R = n(370648),
-  k = n(569527),
-  Z = n(979007),
+  Z = n(569527),
+  k = n(979007),
   w = n(981631),
   D = n(388032),
   M = n(483943);
@@ -268,10 +268,10 @@ let B = function() {
         applicationId: W,
         initialTab: F,
         onButtonsVisibilityChange: ee
-      }) : ea ? (0, r.jsx)(k.Z, {
+      }) : ea ? (0, r.jsx)(Z.Z, {
         onSelectApplication: eg,
         onScroll: e => ev(e, S.m_.SEARCH)
-      }) : Q === Z.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID.toString() ? (0, r.jsx)(R.Z, {
+      }) : Q === k.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID.toString() ? (0, r.jsx)(R.Z, {
         onScroll: e => ev(e, S.m_.HOME),
         onSelectApplication: eg
       }) : (0, r.jsx)(A.Z, {

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(200651);
 n(192379);
 var r = n(120356),
-  o = n.n(r),
-  l = n(464606);
+  l = n.n(r),
+  o = n(464606);
 
 function a(e) {
   let {
@@ -15,7 +15,7 @@ function a(e) {
   } = e;
   return (0, i.jsx)(i.Fragment, {
     children: t.map((e, t) => (0, i.jsx)("span", {
-      className: o()(l.key, n),
+      className: l()(o.key, n),
       children: e
     }, t))
   })

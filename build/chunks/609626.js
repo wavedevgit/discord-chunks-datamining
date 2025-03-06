@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(768581),
   r = n(620954),
-  o = n(987650),
-  l = n(981631),
+  l = n(987650),
+  o = n(981631),
   a = n(388032);
 
 function s(e, t) {
@@ -18,10 +18,10 @@ function s(e, t) {
     {
       trackView: d,
       trackClick: p
-    } = (0, r.R)(o.n0.ActivityUserJoin, {
-      notif_type: o.n0.ActivityUserJoin,
+    } = (0, r.R)(l.n0.ActivityUserJoin, {
+      notif_type: l.n0.ActivityUserJoin,
       notif_user_id: e.id,
-      activity_type: l.mFx.JOIN,
+      activity_type: o.mFx.JOIN,
       activity_name: t.name
     });
   return {

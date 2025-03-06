@@ -81,7 +81,7 @@ function j(e) {
       shownMutualGuilds: e,
       hiddenMutualGuilds: t
     }
-  }, [c, h]), k = R.length, Z = function(e, t, n, r, i) {
+  }, [c, h]), Z = R.length, k = function(e, t, n, r, i) {
     if (0 === t && 0 === e) return null;
     if (t > 0 && 0 === n) return g.NW.formatToPlainString(g.t.pnzE1t, {
       mutualGuildCount: t
@@ -97,13 +97,13 @@ function j(e) {
       nonMutualGuildCount: l.format(n)
     })
   }(E, A, L, P, I);
-  return 0 === T.length && null == Z ? null : (0, i.jsxs)("div", {
+  return 0 === T.length && null == k ? null : (0, i.jsxs)("div", {
     className: o()(j, _.wrapper),
     children: [(0, i.jsx)("div", {
       className: o()(_.icons, N),
       children: T.length > 0 ? (0, i.jsxs)(i.Fragment, {
         children: [T.map((e, t) => {
-          let n = t === T.length - 1 && 0 === k,
+          let n = t === T.length - 1 && 0 === Z,
             r = m.ZP.getGuildIconURL({
               id: e.id,
               icon: e.icon,
@@ -128,14 +128,14 @@ function j(e) {
             mask: u.ZP.Masks.VOICE_USER_SUMMARY_ITEM,
             children: l
           }, e.id)
-        }), k > 0 ? (0, i.jsx)(d.ua7, {
+        }), Z > 0 ? (0, i.jsx)(d.ua7, {
           text: g.NW.formatToPlainString(g.t.m6oRrK, {
             appNames: S.format(R.map(e => e.name))
           }),
           position: "top",
           children: e => (0, i.jsxs)("div", b(f({}, e), {
             className: o()(_.moreGuilds, x[O]),
-            children: ["+", k]
+            children: ["+", Z]
           }))
         }) : null]
       }) : (0, i.jsx)(d.QTo, {
@@ -145,10 +145,10 @@ function j(e) {
         height: O,
         className: _.defaultIcon
       })
-    }), null != Z ? (0, i.jsx)(d.Text, {
+    }), null != k ? (0, i.jsx)(d.Text, {
       variant: y,
       color: "header-secondary",
-      children: Z
+      children: k
     }) : null]
   })
 }

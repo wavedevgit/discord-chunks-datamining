@@ -1,39 +1,39 @@
-/** Chunk was on 54030 **/
+/** Chunk was on 18410 **/
 n.r(t), n.d(t, {
-  default: () => O,
-  useOverlayInitialFocus: () => h
+  default: () => v,
+  useOverlayInitialFocus: () => I
 }), n(47120);
 var r = n(200651),
-  o = n(192379),
-  i = n(442837),
-  a = n(13245),
-  l = n(615287),
-  c = n(493773),
-  u = n(238246),
+  i = n(192379),
+  l = n(442837),
+  u = n(13245),
+  o = n(615287),
+  a = n(493773),
+  c = n(238246),
   s = n(355863),
-  _ = n(944486),
-  d = n(358085);
+  d = n(944486),
+  f = n(358085);
 n(606206);
-var f = n(998502),
-  p = n(145597);
+var g = n(998502),
+  O = n(145597);
 n(371467);
-var b = n(554370),
-  m = n(371651),
-  g = n(610394),
-  v = n(757744),
-  y = n(981631);
+var p = n(554370),
+  y = n(371651),
+  h = n(610394),
+  _ = n(757744),
+  E = n(981631);
 
-function h(e, t) {
-  let n = (0, i.e7)([g.ZP], () => {
-      let e = g.ZP.getFocusedPID();
-      return !d.isPlatformEmbedded || null != e && e !== p.UNSET_PID
+function I(e, t) {
+  let n = (0, l.e7)([h.ZP], () => {
+      let e = h.ZP.getFocusedPID();
+      return !f.isPlatformEmbedded || null != e && e !== O.UNSET_PID
     }),
-    [r, u] = o.useState(n);
-  (0, c.Ng)(() => {
+    [r, c] = i.useState(n);
+  (0, a.Ng)(() => {
     let e = e => {
-      e.data === g.Il && requestAnimationFrame(() => {
+      e.data === h.Il && requestAnimationFrame(() => {
         requestAnimationFrame(() => {
-          window.parent.postMessage(g.A8, "*")
+          window.parent.postMessage(h.A8, "*")
         })
       })
     };
@@ -41,42 +41,42 @@ function h(e, t) {
       window.removeEventListener("message", e)
     }
   });
-  let b = o.useCallback(() => {
+  let p = i.useCallback(() => {
     requestAnimationFrame(() => {
       try {
-        a.Z.successfullyShown((0, p.getPID)()), f.ZP.showInactive(e)
+        u.Z.successfullyShown((0, O.getPID)()), g.ZP.showInactive(e)
       } catch (t) {
         t.message.includes("IPC") && setTimeout(() => {
-          f.ZP.showInactive(e)
+          g.ZP.showInactive(e)
         }, 100)
       }
     })
   }, [e]);
-  return o.useEffect(() => {
-    !r && n && n && (u(!0), b())
-  }, [b, r, n, e]), (0, c.Ng)(() => {
+  return i.useEffect(() => {
+    !r && n && n && (c(!0), p())
+  }, [p, r, n, e]), (0, a.Ng)(() => {
     var e;
-    r && b();
-    let n = null !== (e = g.ZP.getFocusedPID()) && void 0 !== e ? e : (0, p.getPID)(),
-      o = null != _.Z.getVoiceChannelId();
-    a.Z.track(y.rMx.OVERLAY_INITIALIZED, {
-      voice_widget_connected: o,
-      text_widget_connected: g.ZP.isPinned(y.Odu.TEXT),
-      overlay_render_method: l.gl[m.default.getOverlayMethod(n)],
+    r && p();
+    let n = null !== (e = h.ZP.getFocusedPID()) && void 0 !== e ? e : (0, O.getPID)(),
+      i = null != d.Z.getVoiceChannelId();
+    u.Z.track(E.rMx.OVERLAY_INITIALIZED, {
+      voice_widget_connected: i,
+      text_widget_connected: h.ZP.isPinned(E.Odu.TEXT),
+      overlay_render_method: o.gl[y.default.getOverlayMethod(n)],
       unpinned_widget_types: s.Z.getAllUnpinnedPinnedWidgets(t)
     })
   }), r
 }
 
-function O(e) {
+function v(e) {
   let {
     withTitleBar: t,
     windowKey: n
   } = e;
-  return h(n, v.$) ? (0, r.jsx)(u.Z, {
+  return I(n, _.$) ? (0, r.jsx)(c.Z, {
     withTitleBar: t,
     windowKey: n,
     title: "Discord Overlay",
-    children: (0, r.jsx)(b.Z, {})
+    children: (0, r.jsx)(p.Z, {})
   }) : null
 }

@@ -114,7 +114,7 @@ function P(e) {
             className: T.channelInfo,
             children: [(0, r.jsxs)("div", {
               className: T.channelName,
-              children: [(0, r.jsx)(u._, {
+              children: [(0, r.jsx)(u._W, {
                 channel: e,
                 guild: t
               }), (0, r.jsx)(o.Z, {

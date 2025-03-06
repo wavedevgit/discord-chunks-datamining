@@ -62,7 +62,7 @@ class x extends m.ZP {
         [_.disabled]: this.isDisabled()
       }),
       "data-dnd-name": e.name,
-      children: (0, r.jsxs)(b.Z, {
+      children: (0, r.jsxs)(b.ZP, {
         className: _.iconVisibility,
         channel: e,
         selected: t,

@@ -250,7 +250,7 @@ class ee extends U.ZP {
               }(s, ["onClick", "onContextMenu"]);
               return (0, r.jsx)(P.Z, {
                 channel: e,
-                children: (0, r.jsxs)(V.Z, $(X({
+                children: (0, r.jsxs)(V.ZP, $(X({
                   className: K.iconVisibility,
                   iconClassName: o()({
                     [K.iconLive]: O

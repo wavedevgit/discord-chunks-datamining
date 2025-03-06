@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120);
 var i = n(200651),
   r = n(192379),
-  o = n(904245),
-  l = n(13245),
+  l = n(904245),
+  o = n(13245),
   a = n(655687),
   s = n(541716),
   u = n(752305),
@@ -22,8 +22,8 @@ function g(e) {
     channel: n,
     onSend: g
   } = e, O = (0, p.Z)(), {
-    placeholder: y,
-    accessibilityLabel: v
+    placeholder: v,
+    accessibilityLabel: y
   } = (0, a.Z)({
     channel: n
   }), [E, b] = r.useState(() => (0, u.H2)()), {
@@ -35,8 +35,8 @@ function g(e) {
       richValue: n
     })
   }, []), w = r.useCallback(e => {
-    "Escape" === e.key && l.Z.updateNotificationStatus(t, f._1z.ACTIVE)
-  }, [t]), P = r.useCallback(() => (j.length > O || (o.Z.sendMessage(n.id, d.ZP.parse(n, j), !1), l.Z.setInputLocked(!0, (0, h.getPID)()), l.Z.updateNotificationStatus(t, f._1z.DISMISSED), null == g || g(j)), Promise.resolve({
+    "Escape" === e.key && o.Z.updateNotificationStatus(t, f._1z.ACTIVE)
+  }, [t]), P = r.useCallback(() => (j.length > O || (l.Z.sendMessage(n.id, d.ZP.parse(n, j), !1), o.Z.setInputLocked(!0, (0, h.getPID)()), o.Z.updateNotificationStatus(t, f._1z.DISMISSED), null == g || g(j)), Promise.resolve({
     shouldClear: !1,
     shouldRefocus: !0
   })), [j, O, n, t, g]);
@@ -44,8 +44,8 @@ function g(e) {
     children: (0, i.jsx)(c.Z, {
       innerClassName: m.textArea,
       onChange: Z,
-      placeholder: y,
-      accessibilityLabel: v,
+      placeholder: v,
+      accessibilityLabel: y,
       channel: n,
       textValue: j,
       richValue: x,

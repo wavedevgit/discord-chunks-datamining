@@ -207,7 +207,7 @@ let R = l.memo(function() {
             className: E.channelInfo,
             children: [(0, r.jsxs)("div", {
               className: E.channelName,
-              children: [(0, r.jsx)(g._, {
+              children: [(0, r.jsx)(g._W, {
                 channel: n,
                 guild: a
               }), (0, r.jsx)(m.Z, {

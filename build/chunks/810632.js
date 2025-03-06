@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120);
 var i = n(200651),
   r = n(192379),
-  o = n(442837),
-  l = n(481060),
+  l = n(442837),
+  o = n(481060),
   a = n(74299),
   s = n(562224),
   u = n(592125),
@@ -17,19 +17,19 @@ var i = n(200651),
   m = n(388032);
 
 function g(e, t) {
-  let g = (0, o.e7)([d.Z], () => d.Z.getVoiceChannelId()),
-    O = (0, o.e7)([u.Z], () => u.Z.getChannel(g), [g]),
-    y = (0, o.e7)([p.default], () => p.default.getCurrentUser()),
-    v = null == O ? void 0 : O.getGuildId(),
-    E = (0, o.e7)([c.Z], () => (0, a.Z)(c.Z));
+  let g = (0, l.e7)([d.Z], () => d.Z.getVoiceChannelId()),
+    O = (0, l.e7)([u.Z], () => u.Z.getChannel(g), [g]),
+    v = (0, l.e7)([p.default], () => p.default.getCurrentUser()),
+    y = null == O ? void 0 : O.getGuildId(),
+    E = (0, l.e7)([c.Z], () => (0, a.Z)(c.Z));
   return r.useCallback(async () => {
     if (!E || null == g) return;
     let [r] = await (0, s.Z)(e);
     if (!r) {
-      if (null == y) {
-        (0, l.showToast)((0, l.createToast)(m.NW.string(m.t.OKnWyc), l.ToastType.FAILURE));
+      if (null == v) {
+        (0, o.showToast)((0, o.createToast)(m.NW.string(m.t.OKnWyc), o.ToastType.FAILURE));
         return
-      }(0, l.ZDy)(async () => {
+      }(0, o.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("46746"), n.e("28965")]).then(n.bind(n, 60594));
@@ -55,7 +55,7 @@ function g(e, t) {
           }({}, t), r = r = {
             sourcePID: (0, h.getPID)(),
             selectSource: !1,
-            guildId: v,
+            guildId: y,
             analyticsLocation: f.Sbl.UNLOCKED_OVERLAY
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
             var n = Object.keys(e);
@@ -69,8 +69,8 @@ function g(e, t) {
           }), n))
         }
       }, {
-        contextKey: null != t ? (0, l.VnL)(t) : void 0
+        contextKey: null != t ? (0, o.VnL)(t) : void 0
       })
     }
-  }, [E, v, g, t, e, y])
+  }, [E, y, g, t, e, v])
 }

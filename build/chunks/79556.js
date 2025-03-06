@@ -119,7 +119,7 @@ class R extends S.ZP {
         spacing: 0,
         onRequestClose: this.handleClosePopout,
         shouldShow: c && this.state.shouldShowThreadsPopout || S && this.state.shouldShowActivities,
-        children: () => (0, r.jsxs)(I.Z, {
+        children: () => (0, r.jsxs)(I.ZP, {
           className: E.iconVisibility,
           channel: e,
           guild: t,

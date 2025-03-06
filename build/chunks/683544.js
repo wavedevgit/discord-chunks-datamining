@@ -59,7 +59,7 @@ let x = {
         loadId: T
       } = i.useMemo(() => P === d.M.FETCHING ? E : S, [P, E, S]),
       R = i.useMemo(() => null == A ? void 0 : A.filter(e => e.type === a.s.APPLICATION), [A]),
-      k = i.useCallback(e => {
+      Z = i.useCallback(e => {
         let {
           page: t,
           activeCategoryId: n,
@@ -82,13 +82,13 @@ let x = {
         })
       }, []);
     i.useEffect(() => {
-      j(), k({
+      j(), Z({
         page: y,
         activeCategoryId: n,
         onSuccessCallback: () => {}
       })
-    }, [n, j, k, y]);
-    let Z = i.useCallback((e, t) => {
+    }, [n, j, Z, y]);
+    let k = i.useCallback((e, t) => {
       (0, p.zZ)(b.rMx.APP_DIRECTORY_SEARCH_RESULT_CLICKED, {
         current_page: _.m_.SEARCH,
         application_id: e,
@@ -110,7 +110,7 @@ let x = {
             let n = e.data;
             return (0, r.jsx)(h.Z, {
               application: n,
-              onSelectApplication: e => Z(e, t)
+              onSelectApplication: e => k(e, t)
             }, n.id)
           }
           return null

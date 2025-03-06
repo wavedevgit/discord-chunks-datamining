@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(224706),
   r = n(13245),
-  o = n(150097),
-  l = n(620954),
+  l = n(150097),
+  o = n(620954),
   a = n(987650),
   s = n(388032);
 
@@ -18,10 +18,10 @@ function u(e, t, n, u, c) {
     icon: h,
     title: f,
     body: m
-  } = (0, o.Xi)(e, t, n), {
+  } = (0, l.Xi)(e, t, n), {
     trackView: g,
     trackClick: O
-  } = (0, l.R)(a.n0.ActivityInvite, {
+  } = (0, o.R)(a.n0.ActivityInvite, {
     notif_type: a.n0.ActivityInvite,
     notif_user_id: n.id,
     message_id: t.id,
@@ -40,7 +40,7 @@ function u(e, t, n, u, c) {
       g()
     },
     confirmText: s.NW.string(s.t.VJlc0d),
-    onConfirmClick: (o, l) => {
+    onConfirmClick: (l, o) => {
       var a;
       i.Z.join({
         userId: n.id,
@@ -49,7 +49,7 @@ function u(e, t, n, u, c) {
         channelId: e.id,
         messageId: t.id,
         activity: c
-      }), r.Z.updateNotificationStatus(l), O("join")
+      }), r.Z.updateNotificationStatus(o), O("join")
     },
     onDismissClick: () => {
       O("dismiss")

@@ -80,7 +80,7 @@ let v = (0, c.B)(function(e) {
         [b.selected]: I
       }),
       "data-dnd-name": S.name,
-      children: (0, r.jsxs)(f.Z, {
+      children: (0, r.jsxs)(f.ZP, {
         className: b.iconVisibility,
         channel: S,
         guild: t,

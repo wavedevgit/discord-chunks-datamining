@@ -1,7 +1,42 @@
 /**
   Module ID: 20777
-  Original File Name: 4c4279e16f31c528
+  Original File Name: 294ee179d4a8cb68
 **/
+.icon__2894c {
+    display: block;
+    width: 20px;
+    height: 20px;
+    flex: 0 0 auto
+}
+
+.iconWithGuildIcon__2894c {
+    background: var(--bg-mod-strong);
+    border-radius: var(--radius-round);
+    color: var(--text-secondary);
+    height: 12px;
+    margin-left: 12px;
+    margin-top: -15px;
+    overflow: visible;
+    padding: 4px;
+    position: relative;
+    width: 12px
+}
+
+.channelGuildIcon__2894c {
+    border-radius: var(--radius-sm)
+}
+
+.acronym__2894c {
+    font-weight: 500;
+    line-height: 1.2em;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-mod-strong);
+    color: var(--text-normal)
+}
+
 .clickable_c69b6d {
     cursor: pointer
 }
@@ -515,41 +550,6 @@
 
 .enable-forced-colors .modeMuted__2ea32:focus,.enable-forced-colors .modeMuted__2ea32:hover {
     opacity: 1
-}
-
-.icon__2894c {
-    display: block;
-    width: 20px;
-    height: 20px;
-    flex: 0 0 auto
-}
-
-.iconWithGuildIcon__2894c {
-    background: var(--bg-mod-strong);
-    border-radius: var(--radius-round);
-    color: var(--text-secondary);
-    height: 12px;
-    margin-left: 12px;
-    margin-top: -15px;
-    overflow: visible;
-    padding: 4px;
-    position: relative;
-    width: 12px
-}
-
-.channelGuildIcon__2894c {
-    border-radius: var(--radius-sm)
-}
-
-.acronym__2894c {
-    font-weight: 500;
-    line-height: 1.2em;
-    white-space: nowrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--bg-mod-strong);
-    color: var(--text-normal)
 }
 
 .container_b2d72f {

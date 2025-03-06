@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(200651);
 n(192379);
 var r = n(13245),
-  o = n(937889),
-  l = n(703656),
+  l = n(937889),
+  o = n(703656),
   a = n(460181),
   s = n(974180),
   u = n(150097),
@@ -18,8 +18,8 @@ var r = n(13245),
   m = n(618373),
   g = n(620954),
   O = n(987650),
-  y = n(981631),
-  v = n(388032);
+  v = n(981631),
+  y = n(388032);
 
 function E(e, t, n, E) {
   var b;
@@ -42,12 +42,12 @@ function E(e, t, n, E) {
   return {
     icon: j,
     title: x,
-    body: t.content.length > 0 ? (0, o.ZP)(t, {
+    body: t.content.length > 0 ? (0, l.ZP)(t, {
       noStyleAndInteraction: !0,
       formatInline: !0,
       hideSimpleEmbedContent: !1
     }).content : S,
-    hint: (e, t) => e && !t ? null : (0, m.Q)((0, g.P)(), v.t.ykjOAA, v.NW.string(v.t.jZkzVF)),
+    hint: (e, t) => e && !t ? null : (0, m.Q)((0, g.P)(), y.t.ykjOAA, y.NW.string(y.t.jZkzVF)),
     maxBodyLines: 2,
     renderFooter: (t, n, r) => t && !r ? (0, i.jsx)(f.Z, {
       id: n,
@@ -59,7 +59,7 @@ function E(e, t, n, E) {
     },
     onNotificationClick: () => {
       let n = (0, p.getPID)();
-      h.ZP.isInputLocked(n) ? (C("unlock"), r.Z.setInputLocked(!1, n)) : (C("jump"), (0, l.uL)(y.Z5c.CHANNEL(e.guild_id, e.id, t.id)), c.isPlatformEmbedded && d.ZP.focus())
+      h.ZP.isInputLocked(n) ? (C("unlock"), r.Z.setInputLocked(!1, n)) : (C("jump"), (0, o.uL)(v.Z5c.CHANNEL(e.guild_id, e.id, t.id)), c.isPlatformEmbedded && d.ZP.focus())
     },
     onDismissClick: () => {
       C("dismiss")

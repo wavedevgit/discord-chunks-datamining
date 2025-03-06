@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(26151),
   r = n(13245),
-  o = n(287734),
-  l = n(43267),
+  l = n(287734),
+  o = n(43267),
   a = n(933557),
   s = n(699516),
   u = n(594174),
@@ -18,11 +18,11 @@ var i = n(26151),
 function m(e) {
   let t = (0, a.F6)(e, u.default, s.Z),
     n = f.NW.string(f.t.ssrVzM),
-    m = (0, l.x)(e),
+    m = (0, o.x)(e),
     g = (0, c.Z)(e),
     {
       trackView: O,
-      trackClick: y
+      trackClick: v
     } = (0, d.R)(p.n0.IncomingCall, {
       notif_type: p.n0.IncomingCall,
       notif_user_id: g,
@@ -40,10 +40,10 @@ function m(e) {
       O()
     },
     onConfirmClick: (t, n) => {
-      if (y("join"), h.TPd.CALLABLE.has(e.type)) i.Z.call(e.id, !1, !1);
+      if (v("join"), h.TPd.CALLABLE.has(e.type)) i.Z.call(e.id, !1, !1);
       else {
         if (e.type !== h.d4z.GUILD_VOICE) return;
-        o.default.selectVoiceChannel(e.id)
+        l.default.selectVoiceChannel(e.id)
       }
       r.Z.updateNotificationStatus(n), r.Z.track(h.rMx.VOICE_CHANNEL_SELECTED, {
         location: "Overlay Notificaiton",
@@ -53,10 +53,10 @@ function m(e) {
       })
     },
     onCancelClick: () => {
-      y("decline"), i.Z.stopRinging(e.id)
+      v("decline"), i.Z.stopRinging(e.id)
     },
     onDismissClick: () => {
-      y("dismiss")
+      v("dismiss")
     }
   }
 }

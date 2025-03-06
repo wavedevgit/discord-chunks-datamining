@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(200651);
 n(192379);
 var r = n(120356),
-  o = n.n(r),
-  l = n(442837),
+  l = n.n(r),
+  o = n(442837),
   a = n(592125),
   s = n(944486),
   u = n(293224),
@@ -15,9 +15,9 @@ var r = n(120356),
 function d(e) {
   let {
     locked: t
-  } = e, n = (0, l.e7)([s.Z], () => s.Z.getVoiceChannelId()), r = (0, l.e7)([a.Z], () => a.Z.getChannel(n)), d = null != r;
+  } = e, n = (0, o.e7)([s.Z], () => s.Z.getVoiceChannelId()), r = (0, o.e7)([a.Z], () => a.Z.getChannel(n)), d = null != r;
   return (0, i.jsxs)("div", {
-    className: o()({
+    className: l()({
       [c.panelContainer]: !0,
       [c.locked]: t
     }),
@@ -45,7 +45,7 @@ function d(e) {
           locked: t
         })]
       }), (0, i.jsx)("div", {
-        className: o()(c.buttonSection, d && c.inCall),
+        className: l()(c.buttonSection, d && c.inCall),
         children: (0, i.jsx)(u.c_, {
           voiceChannel: r,
           locked: t

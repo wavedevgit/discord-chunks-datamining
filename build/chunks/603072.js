@@ -70,7 +70,7 @@ function T(e) {
         color: "none",
         children: P.NW.format(P.t.IX7oWl, {
           channelNameHook: () => null == t ? null : (0, r.jsxs)(l.Fragment, {
-            children: [(0, r.jsx)(p._, {
+            children: [(0, r.jsx)(p._W, {
               className: E.returnIcon,
               containerClassName: E.returnIconContainer,
               guild: n,

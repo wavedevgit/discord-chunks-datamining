@@ -78,7 +78,7 @@ function Y(e) {
         color: "none",
         children: U.NW.format(U.t.IX7oWl, {
           channelNameHook: () => null == n ? null : (0, r.jsxs)(l.Fragment, {
-            children: [(0, r.jsx)(g._, {
+            children: [(0, r.jsx)(g._W, {
               className: J.returnIcon,
               guild: t,
               channel: n

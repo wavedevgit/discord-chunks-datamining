@@ -1,12 +1,12 @@
 /** Chunk was on 50751 **/
 n.d(t, {
   Z: () => j,
-  z: () => v
+  z: () => y
 }), n(47120);
 var i = n(200651),
   r = n(192379),
-  o = n(120356),
-  l = n.n(o),
+  l = n(120356),
+  o = n.n(l),
   a = n(642128),
   s = n(481060),
   u = n(110924),
@@ -37,7 +37,7 @@ function O(e) {
   return e
 }
 
-function y(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,14 +49,14 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = 8,
+let y = 8,
   E = e => {
     let {
       participant: t,
       width: n,
       locked: r,
-      widgetId: o,
-      pinned: l
+      widgetId: l,
+      pinned: o
     } = e;
     return (0, i.jsx)("div", {
       className: g.tileContainer,
@@ -64,8 +64,8 @@ let v = 8,
         participant: t,
         width: n,
         locked: r,
-        widgetId: o,
-        pinned: l
+        widgetId: l,
+        pinned: o
       }, t.user.id)
     })
   },
@@ -79,7 +79,7 @@ let v = 8,
     let {
       widgetId: t,
       tileWidth: n,
-      layout: o,
+      layout: l,
       locked: h,
       activeStreams: j,
       streamParticipants: x,
@@ -93,11 +93,11 @@ let v = 8,
       widgetId: t,
       height: C,
       pinned: I
-    })), Z = (0, u.Z)(n), w = o === f.C5.VERTICAL, P = 0, _ = 0, T = (0, s.Yzy)(w ? N.map((e, t) => y(O({}, e), {
-      y: (P += e.height + (t > 0 ? v : 0)) - e.height,
+    })), Z = (0, u.Z)(n), w = l === f.C5.VERTICAL, P = 0, _ = 0, T = (0, s.Yzy)(w ? N.map((e, t) => v(O({}, e), {
+      y: (P += e.height + (t > 0 ? y : 0)) - e.height,
       x: 0
-    })) : N.map((e, t) => y(O({}, e), {
-      x: (_ += e.width + (t > 0 ? v : 0)) - e.width,
+    })) : N.map((e, t) => v(O({}, e), {
+      x: (_ += e.width + (t > 0 ? y : 0)) - e.width,
       y: 0
     })), {
       key: e => e.key,
@@ -149,7 +149,7 @@ let v = 8,
         contentInventoryIds: []
       })
     }, [D, k]), (0, i.jsx)("div", {
-      className: l()({
+      className: o()({
         [g.gridContainer]: !0,
         [g.vertical]: w,
         [g.horizontal]: !w
@@ -159,12 +159,12 @@ let v = 8,
       } : {
         width: _
       },
-      children: T((e, t, r, o) => (0, i.jsx)(a.animated.div, {
+      children: T((e, t, r, l) => (0, i.jsx)(a.animated.div, {
         className: g.gridItem,
         style: Object.assign({}, e, {
           width: n,
           height: C,
-          zIndex: N.length - o
+          zIndex: N.length - l
         }),
         children: E(t)
       }))

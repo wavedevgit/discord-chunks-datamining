@@ -177,7 +177,7 @@ let y = i.memo(function() {
             className: N.channelInfo,
             children: (0, r.jsxs)("div", {
               className: N.channelName,
-              children: [(0, r.jsx)(g._, {
+              children: [(0, r.jsx)(g._W, {
                 channel: t,
                 guild: s
               }), (0, r.jsx)(d.Z, {

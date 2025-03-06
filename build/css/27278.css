@@ -1,6 +1,6 @@
 /**
   Module ID: 27278
-  Original File Name: 400b495cc8f2c495
+  Original File Name: 6c7e501c3bd5084a
 **/
 .buttonContainer__7e329 {
     display: flex;
@@ -893,37 +893,143 @@
     margin-left: 8px
 }
 
-.channelNameContainer_c99562,.label_c99562 {
+.channelNameContainer__711d3,.label__711d3 {
     display: flex;
     align-items: center;
     gap: 4px
 }
 
-.channelName_c99562 {
+.channelName__711d3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     max-width: 140px
 }
 
-.channelMenuSubContainer_c99562,.channelName_c99562 {
+.recentChannelsMenu__711d3 {
+    width: 360px;
+    background: var(--bg-surface-overlay);
+    border-radius: 16px;
+    padding: 8px
+}
+
+.recentChannelsMenuHeader__711d3 {
+    display: flex;
+    align-items: center;
+    padding: 0 12px
+}
+
+.channelMenuSubContainer__711d3 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 8px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis
 }
 
-.channelMenuSubContainer_c99562 {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 8px
-}
-
-.icon_c99562 {
+.icon__711d3 {
     width: auto
 }
 
-.overflowCount_c99562 {
+.guildIconWrapper__711d3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background: var(--bg-surface-overlay)
+}
+
+.overflowCount__711d3 {
     max-width: 24px;
     max-height: 22px
+}
+
+.channelItemContainer__711d3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-width: 0;
+    width: calc(100% - 16px);
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 12px 12px 12px 0;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: transparent;
+    transition: border-color .1s ease-in-out
+}
+
+.channelItemContainer__711d3.channelItemHighlighted__711d3,.channelItemContainer__711d3:hover {
+    background-color: var(--bg-mod-strong)
+}
+
+.channelItemContainer__711d3.channelItemConnected__711d3 {
+    border: 1px solid var(--status-positive)
+}
+
+.searchBarContainer__711d3 {
+    padding-bottom: 16px
+}
+
+.searchBar__711d3 {
+    background-color: var(--bg-mod-strong)!important;
+    border-radius: 12px!important
+}
+
+.emptyChannelItem__711d3 {
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center
+}
+
+.channelItemIcon__711d3,.emptyChannelItem__711d3 {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.channelItemNameContainer__711d3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    flex: 1;
+    min-width: 0
+}
+
+.channelItemName__711d3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    max-width: 100%
+}
+
+.channelIcon__711d3 {
+    min-width: 16px
+}
+
+.channelItemNameText__711d3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%
+}
+
+.channelItemAvatars__711d3 {
+    display: flex;
+    align-items: center;
+    gap: 4px
+}
+
+.channelList__711d3 {
+    max-height: 360px
 }
 
 .toggleIconContainer__46219 {

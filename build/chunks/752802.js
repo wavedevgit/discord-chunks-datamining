@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120);
 var i = n(200651),
   r = n(192379),
-  o = n(120356),
-  l = n.n(o),
+  l = n(120356),
+  o = n.n(l),
   a = n(399606),
   s = n(46973),
   u = n(481060),
@@ -17,8 +17,8 @@ var i = n(200651),
   m = n(414910),
   g = n(194082),
   O = n(979264),
-  y = n(871118),
-  v = n(352978),
+  v = n(871118),
+  y = n(352978),
   E = n(833519),
   b = n(839662),
   j = n(199902),
@@ -69,13 +69,13 @@ function k(e, t) {
   var n, i, r = function(e, t) {
     if (null == e) return {};
     var n, i, r = {},
-      o = Object.keys(e);
-    for (i = 0; i < o.length; i++) n = o[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+      l = Object.keys(e);
+    for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
     return r
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (i = 0; i < o.length; i++) n = o[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+    var l = Object.getOwnPropertySymbols(e);
+    for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
   }
   return r
 }
@@ -83,12 +83,12 @@ function k(e, t) {
 function A(e) {
   let {
     participant: t
-  } = e, n = t.user.id, o = (0, a.e7)([S.Z], () => {
+  } = e, n = t.user.id, l = (0, a.e7)([S.Z], () => {
     let e = (0, m.Z)(t.type);
     return S.Z.isLocalMute(t.user.id, e)
-  }, [t]), l = (0, a.e7)([x.default], () => x.default.getId()), {
+  }, [t]), o = (0, a.e7)([x.default], () => x.default.getId()), {
     hasVideo: d
-  } = (0, b.Z)(t, l), p = o && d, h = r.useCallback(() => {
+  } = (0, b.Z)(t, o), p = l && d, h = r.useCallback(() => {
     c.Z.toggleLocalMute(n, s.Yn.STREAM)
   }, [n]);
   return (0, i.jsx)(u.ua7, {
@@ -119,12 +119,12 @@ function A(e) {
 }
 
 function L(e, t, r) {
-  return o => {
+  return l => {
     (0, N.Ws)(w.Odu.GO_LIVE, {
       type: N.Qu.GO_LIVE,
       value: N.bk.SETTINGS_OPENED,
       userId: e.user.id
-    }), o.stopPropagation(), null == r || r(), (0, d.jW)(o, async () => {
+    }), l.stopPropagation(), null == r || r(), (0, d.jW)(l, async () => {
       let {
         default: r
       } = await n.e("5704").then(n.bind(n, 360429));
@@ -142,13 +142,13 @@ function R(e) {
     hasActiveStream: t,
     participant: n,
     onEnablePin: r
-  } = e, o = (0, f.bp)(), s = n.user, c = (0, a.e7)([I.default], () => {
+  } = e, l = (0, f.bp)(), s = n.user, c = (0, a.e7)([I.default], () => {
     var e;
     return null !== (e = I.default.getUser(s.id)) && void 0 !== e ? e : s
   }, [s]), d = t ? P.NW.string(P.t.tLxK4u) : P.NW.string(P.t.E5RDnJ);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
-      className: l()(_.controlBackground, {
+      className: o()(_.controlBackground, {
         [_.controlsWithActiveStream]: t
       })
     }), !t && (0, i.jsx)("div", {
@@ -219,7 +219,7 @@ function R(e) {
               } = e, r = k(e, ["onClick"]);
               return (0, i.jsx)(u.P3F, D(T({}, r), {
                 className: _.controlAction,
-                onClick: L(n, o, t),
+                onClick: L(n, l, t),
                 children: (0, i.jsx)(u.xhG, {
                   size: "sm",
                   color: "currentColor"
@@ -238,8 +238,8 @@ let M = new Set([w.jm8.ENDED, w.jm8.FAILED, w.jm8.PAUSED]),
       participant: t,
       width: n,
       locked: r,
-      widgetId: o,
-      pinned: l
+      widgetId: l,
+      pinned: o
     } = e, s = (0, a.e7)([j.Z], () => j.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), c = (0, f.bp)(), d = null != s && M.has(s.state), h = null != s, m = (0, Z.yA)(t.stream), O = (0, Z.xN)(t.stream);
     return !h && r || d ? null : (0, i.jsxs)("div", {
       className: _.tile,
@@ -261,7 +261,7 @@ let M = new Set([w.jm8.ENDED, w.jm8.FAILED, w.jm8.PAUSED]),
           children: (0, i.jsx)(E.Z, {
             participant: t,
             width: n,
-            fit: null != O ? O : v.L.CONTAIN,
+            fit: null != O ? O : y.L.CONTAIN,
             inPopout: !0,
             focused: !r,
             paused: !1,
@@ -272,7 +272,7 @@ let M = new Set([w.jm8.ENDED, w.jm8.FAILED, w.jm8.PAUSED]),
         })
       }) : (0, i.jsx)("div", {
         className: _.streamPreview,
-        children: (0, i.jsx)(y.Z, {
+        children: (0, i.jsx)(v.Z, {
           noText: !0,
           className: _.absoluteFill,
           stream: t.stream
@@ -281,7 +281,7 @@ let M = new Set([w.jm8.ENDED, w.jm8.FAILED, w.jm8.PAUSED]),
         participant: t,
         hasActiveStream: h,
         onEnablePin: () => {
-          l || (0, p.xh)(o)
+          o || (0, p.xh)(l)
         }
       })]
     })

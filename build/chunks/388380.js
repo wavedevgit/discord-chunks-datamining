@@ -1,11 +1,11 @@
-/** Chunk was on 1272 **/
+/** Chunk was on 18410 **/
 n.d(t, {
-  Z: () => o
+  Z: () => u
 });
 var r = n(544891),
   i = n(570140),
   l = n(981631);
-let o = {
+let u = {
   async fetch() {
     try {
       let e = await r.tn.get({
