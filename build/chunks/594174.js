@@ -80,7 +80,7 @@ function I(e) {
   let d = e.avatar_decoration_data;
   void 0 !== d && (e.avatarDecorationData = (0, o.FG)(d), delete e.avatar_decoration_data);
   let f = e.collectibles;
-  void 0 !== f && (e.collectibles = (0, a.Xm)(f), delete e.collectibles);
+  void 0 !== f && (delete e.collectibles, e.collectibles = (0, a.Xm)(f));
   let _ = e.global_name;
   void 0 !== _ && (e.globalName = _, delete e.global_name);
   let p = e.primary_guild;

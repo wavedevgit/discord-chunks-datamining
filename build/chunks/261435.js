@@ -307,7 +307,7 @@ let ea = new eo(l.Z, {
     let {
       contentInventoryEntries: n
     } = e;
-    if (0 === n.length || S.default.hasChangedRenderMode(null !== (t = M.default.getFocusedPID()) && void 0 !== t ? t : (0, V.getPID)())) return;
+    if (0 === n.length || !R.default.showInviteNotification || S.default.hasChangedRenderMode(null !== (t = M.default.getFocusedPID()) && void 0 !== t ? t : (0, V.getPID)())) return;
     let i = B.Z.getGame();
     if (null == i) return;
     let {

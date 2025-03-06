@@ -8,7 +8,7 @@ var r = n(200651),
   o = n(442837),
   a = n(481060),
   s = n(194359),
-  l = n(320582),
+  l = n(276506),
   c = n(699516),
   u = n(594174),
   d = n(388032);
@@ -66,7 +66,9 @@ function g(e) {
   } = t, y = (0, o.e7)([u.default], () => {
     var e;
     return (null === (e = u.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === E
-  }, [E]), O = (0, l.VQ)(E), [S, I] = (0, o.Wu)([c.Z], () => [c.Z.isFriend(E), c.Z.isBlocked(E)], [E]), [T, N] = i.useState(!1);
+  }, [E]), O = (0, l.n)({
+    userId: E
+  }), [S, I] = (0, o.Wu)([c.Z], () => [c.Z.isFriend(E), c.Z.isBlocked(E)], [E]), [T, N] = i.useState(!1);
   if (b || y) return null;
 
   function A() {
@@ -97,25 +99,21 @@ function g(e) {
       contextKey: null != m ? (0, a.VnL)(m) : void 0
     })
   }
-  if (S) return (0, r.jsx)(a.sNh, {
+  return S ? (0, r.jsx)(a.sNh, {
     id: "remove-friend",
     label: d.NW.string(d.t.cvSt1N),
     action: A
-  });
-  {
-    let e = O ? d.t.LAcY7u : d.t.w5uwoK;
-    return (0, r.jsx)(a.sNh, {
-      id: "add-friend",
-      label: T ? d.NW.string(d.t.xMH6vL) : d.NW.string(e),
-      action: () => {
-        T || (s.Z.addRelationship({
-          userId: E,
-          context: {
-            location: f
-          }
-        }), N(!0), null == p || p())
-      },
-      disabled: I || T && !S
-    })
-  }
+  }) : (0, r.jsx)(a.sNh, {
+    id: "add-friend",
+    label: T ? d.NW.string(d.t.xMH6vL) : O,
+    action: () => {
+      T || (s.Z.addRelationship({
+        userId: E,
+        context: {
+          location: f
+        }
+      }), N(!0), null == p || p())
+    },
+    disabled: I || T && !S
+  })
 }
