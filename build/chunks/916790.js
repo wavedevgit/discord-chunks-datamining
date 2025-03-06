@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => k
+  Z: () => P
 }), n(47120), n(566702);
 var r = n(200651),
   a = n(192379),
@@ -12,23 +12,24 @@ var r = n(200651),
   d = n(481060),
   u = n(570140),
   m = n(665149),
-  h = n(301801),
-  p = n(4912),
-  f = n(55935),
-  x = n(428530),
-  b = n(257785),
-  _ = n(484036),
-  g = n(681619),
-  v = n(621060),
-  j = n(159185),
-  y = n(710662);
+  h = n(886118),
+  p = n(301801),
+  f = n(4912),
+  x = n(55935),
+  b = n(428530),
+  _ = n(257785),
+  g = n(484036),
+  v = n(681619),
+  j = n(621060),
+  y = n(159185),
+  C = n(710662);
 
-function C(e) {
+function O(e) {
   return parseFloat(e.toFixed(3))
 }
-let O = [{
+let N = [{
   key: "store",
-  cellClassName: j.actionColumn,
+  cellClassName: y.actionColumn,
   render(e) {
     let {
       trace: t
@@ -37,16 +38,16 @@ let O = [{
   }
 }, {
   key: "time",
-  cellClassName: j.totalTimeColumn,
+  cellClassName: y.totalTimeColumn,
   render(e) {
     let {
       trace: t
     } = e;
-    return "".concat(C(t.time), " ms")
+    return "".concat(O(t.time), " ms")
   }
 }];
 
-function N(e) {
+function T(e) {
   let {
     actionLog: t
   } = e, n = a.useMemo(() => t.traces.map(e => ({
@@ -54,13 +55,13 @@ function N(e) {
     trace: e
   })), [t]);
   return (0, r.jsx)(d.zJl, {
-    children: (0, r.jsx)(g.Z, {
-      columns: O,
+    children: (0, r.jsx)(v.Z, {
+      columns: N,
       data: n
     })
   })
 }
-let T = [{
+let S = [{
   id: "action",
   name: "Action",
   render(e) {
@@ -69,22 +70,22 @@ let T = [{
       actionLog: n
     } = e, a = c()(n.createdAt);
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(b.E, {
-        className: j.actionProperties,
-        children: [(0, r.jsx)(b.Z9, {
+      children: [(0, r.jsxs)(_.E, {
+        className: y.actionProperties,
+        children: [(0, r.jsx)(_.Z9, {
           name: "Created at",
           children: (0, r.jsx)("time", {
             dateTime: null === (t = n.createdAt) || void 0 === t ? void 0 : t.toISOString(),
-            title: (0, f.vc)(a, "LLLL"),
-            children: (0, f.Y4)(a)
+            title: (0, x.vc)(a, "LLLL"),
+            children: (0, x.Y4)(a)
           })
-        }), (0, r.jsxs)(b.Z9, {
+        }), (0, r.jsxs)(_.Z9, {
           name: "Total Time",
-          children: [C(n.totalTime), " ms"]
+          children: [O(n.totalTime), " ms"]
         })]
       }), (0, r.jsx)(d.zJl, {
-        className: j.inspectorContainer,
-        children: (0, r.jsx)(x.Z, {
+        className: y.inspectorContainer,
+        children: (0, r.jsx)(b.Z, {
           data: n.action
         })
       })]
@@ -97,21 +98,21 @@ let T = [{
     let {
       actionLog: t
     } = e;
-    return (0, r.jsx)(N, {
+    return (0, r.jsx)(T, {
       actionLog: t
     })
   }
 }];
 
-function S(e) {
+function E(e) {
   let {
     actionLog: t,
     initialHeight: n
-  } = e, i = a.useMemo(() => t.error ? [...T, {
+  } = e, i = a.useMemo(() => t.error ? [...S, {
     id: "error",
     name: (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(p.Z, {
-        className: j.errorIcon
+      children: [(0, r.jsx)(f.Z, {
+        className: y.errorIcon
       }), "Error"]
     }),
     render(e) {
@@ -120,36 +121,36 @@ function S(e) {
       } = e;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          className: l()(j.errorToolbar, y.toolbar),
+          className: l()(y.errorToolbar, C.toolbar),
           children: (0, r.jsx)("div", {
-            className: y.toolbarGroup,
+            className: C.toolbarGroup,
             children: (0, r.jsx)(d.zxk, {
-              className: y.toolbarButton,
+              className: C.toolbarButton,
               size: d.zxk.Sizes.MIN,
               onClick: () => console.error(t.error),
               children: "Log to Console"
             })
           })
         }), (0, r.jsx)(d.zJl, {
-          className: j.inspectorContainer,
-          children: (0, r.jsx)(x.Z, {
+          className: y.inspectorContainer,
+          children: (0, r.jsx)(b.Z, {
             data: t.error
           })
         })]
       })
     }
-  }] : T, [t]), {
+  }] : S, [t]), {
     TabBar: o,
     renderSelectedTab: s
-  } = (0, v.Z)({
+  } = (0, j.Z)({
     tabs: i
   }, [i]);
-  return (0, r.jsxs)(_.Z, {
-    className: j.subPanel,
+  return (0, r.jsxs)(g.Z, {
+    className: y.subPanel,
     minHeight: 100,
     initialHeight: n,
     children: [(0, r.jsx)(o, {}), (0, r.jsxs)(m.ZP, {
-      className: l()(y.headerBar, j.subPanelHeaderBar),
+      className: l()(C.headerBar, y.subPanelHeaderBar),
       children: [(0, r.jsx)(m.ZP.Icon, {
         icon: d.xVZ,
         tooltip: t.name
@@ -161,31 +162,40 @@ function S(e) {
     })]
   })
 }
-let E = [{
-  key: "action",
-  cellClassName: j.actionColumn,
-  render(e) {
+let k = [{
+    key: "action",
+    cellClassName: y.actionColumn,
+    render(e) {
+      let {
+        actionLog: t
+      } = e;
+      return (0, r.jsxs)(r.Fragment, {
+        children: [t.error && (0, r.jsx)(f.Z, {
+          className: y.errorIcon
+        }), t.name]
+      })
+    }
+  }, {
+    key: "total time",
+    cellClassName: y.totalTimeColumn,
+    render(e) {
+      let {
+        actionLog: t
+      } = e;
+      return "".concat(O(t.totalTime), " ms")
+    }
+  }],
+  I = e => {
     let {
       actionLog: t
     } = e;
-    return (0, r.jsxs)(r.Fragment, {
-      children: [t.error && (0, r.jsx)(p.Z, {
-        className: j.errorIcon
-      }), t.name]
-    })
-  }
-}, {
-  key: "total time",
-  cellClassName: j.totalTimeColumn,
-  render(e) {
-    let {
-      actionLog: t
-    } = e;
-    return "".concat(C(t.totalTime), " ms")
-  }
-}];
+    return t.name
+  },
+  w = {
+    searchType: h.S.REGEX
+  };
 
-function k() {
+function P() {
   let e = a.useRef(null),
     [t, n] = a.useState(""),
     i = function(e) {
@@ -203,26 +213,13 @@ function k() {
       actionLog: e
     })), [i]),
     [c, m] = a.useState(s),
-    [p, f] = a.useState(s),
+    [h, f] = a.useState(s),
     [x, b] = a.useState(!1),
-    [_, v] = a.useState(),
-    C = a.useRef(null),
-    O = a.useMemo(() => (0, o.throttle)(async (e, t) => {
-      if ("" === e) {
-        f(t);
-        return
-      }
-      C.current = (0, o.uniqueId)();
-      let n = await (0, h.H)(t, e => {
-        let {
-          actionLog: t
-        } = e;
-        return t.name
-      }, e, !0);
-      null != C.current && f(n)
-    }, 300, {
-      leading: !0
-    }), []),
+    [_, g] = a.useState(),
+    j = a.useCallback(e => {
+      f(e)
+    }, []),
+    O = (0, p.c)(I, j, w),
     N = a.useCallback(e => {
       m(s), b(e)
     }, [s]);
@@ -232,36 +229,34 @@ function k() {
       return
     }
     O(t, s)
-  }, [x, t, O, s, c]), a.useEffect(() => {
-    C.current = null
-  }, []);
+  }, [x, t, O, s, c]);
   let T = t.trim().length > 0,
-    k = a.useMemo(() => T ? p : x ? c : s, [s, p, T, x, c]);
+    S = a.useMemo(() => T ? h : x ? c : s, [s, h, T, x, c]);
   return (0, r.jsxs)("div", {
     ref: e,
-    className: l()(y.panel, j.panel),
+    className: l()(C.panel, y.panel),
     children: [(0, r.jsxs)("div", {
-      className: j.toolbar,
+      className: y.toolbar,
       children: [(0, r.jsx)("div", {
         title: "Toggles the flow of Actions",
-        className: j.pausedEvents,
+        className: y.pausedEvents,
         children: (0, r.jsx)(d.rsf, {
           checked: !x,
           onChange: e => N(!e)
         })
       }), (0, r.jsx)(d.E1j, {
-        className: j.searchBar,
+        className: y.searchBar,
         query: t,
         onChange: n,
         onClear: () => n(""),
         placeholder: "Search by action name"
       })]
-    }), (0, r.jsx)(g.Z, {
-      columns: E,
-      data: k,
+    }), (0, r.jsx)(v.Z, {
+      columns: k,
+      data: S,
       selectedRowKey: null == _ ? void 0 : _.id.toString(),
-      onClickRow: e => v(e.actionLog)
-    }), null != _ && (0, r.jsx)(S, {
+      onClickRow: e => g(e.actionLog)
+    }), null != _ && (0, r.jsx)(E, {
       actionLog: _,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300
     })]

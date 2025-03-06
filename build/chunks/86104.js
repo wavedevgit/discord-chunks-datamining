@@ -7,7 +7,7 @@ i.d(e, {
 var m = i(512722),
   d = i.n(m);
 let v = (0, i(170830).G)(async () => {
-  let t = await Promise.all([i.e("49670"), i.e("43903")]).then(i.bind(i, 241441)),
+  let t = await Promise.all([i.e("10651"), i.e("43903")]).then(i.bind(i, 241441)),
     e = await t.default();
   a = e.cwrap("lottie_create", "number", ["string"]), s = e._lottie_destroy, h = e._lottie_draw_into_bgra, o = e._lottie_draw_into_rgba, l = e._lottie_frame_count, c = e._lottie_frame_rate, u = e._memory_create, n = e, r = u(409600)
 });

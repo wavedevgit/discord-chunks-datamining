@@ -6,7 +6,7 @@ n.d(t, {
   gD: () => l,
   kg: () => u,
   pO: () => f
-}), n(789020), n(411104);
+}), n(47120), n(789020), n(411104);
 var r = n(544891),
   i = n(570140),
   o = n(216789),
@@ -23,25 +23,28 @@ async function s(e) {
     channelId: t
   });
   try {
-    let e = await r.tn.post({
+    let [e, c] = (0, o.Uo)({
+      content: s.content,
+      flags: s.flags
+    }), u = await r.tn.post({
       url: a.ANM.SCHEDULED_MESSAGES,
       body: {
         channel_id: t,
-        content: s.content,
+        content: e,
         scheduled_timestamp: n,
-        flags: s.flags,
+        flags: c,
         message_reference: s.message_reference,
         allowed_mentions: s.allowed_mentions,
         attachments: null != l ? l : []
       },
       rejectWithError: !0
     });
-    if (!e.ok) throw Error("Failed to create scheduled message");
+    if (!u.ok) throw Error("Failed to create scheduled message");
     return i.Z.dispatch({
       type: "SCHEDULED_MESSAGES_CREATE_SUCCESS",
       channelId: t,
-      scheduledMessageSend: (0, o.IR)(e.body)
-    }), e
+      scheduledMessageSend: (0, o.IR)(u.body)
+    }), u
   } catch (n) {
     var c, u;
     o.GO.error("Failed to create scheduled message", n);
