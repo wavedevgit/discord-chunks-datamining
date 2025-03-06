@@ -57,14 +57,17 @@ function h(e, t, i, s) {
           imageUri: o,
           file: s,
           originalAsset: l
-        } = n, u = s.name.replace(/\.[^/.]+$/, ""), d = (0, a.cN)({
+        } = n, u = s.name.replace(/\.[^/.]+$/, ""), d = (0, a.Z1)({
+          filename: u,
+          assetOrigin: r
+        }), f = (0, a.cN)({
           assetOrigin: r,
           imageUri: o,
-          description: u,
+          description: d,
           originalAsset: l
         });
         (0, c.j)({
-          image: d,
+          image: f,
           file: s,
           uploadType: e,
           guildId: t,

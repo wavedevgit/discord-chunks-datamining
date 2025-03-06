@@ -1,15 +1,17 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  YT: () => _,
-  Z7: () => f,
+  YT: () => p,
+  Z7: () => _,
   cU: () => o,
   d_: () => a,
+  iP: () => u,
   io: () => l,
   it: () => c,
-  lA: () => u,
+  lA: () => d,
+  qd: () => h,
   sU: () => s,
-  x3: () => d
+  x3: () => f
 });
 var r = n(626135),
   i = n(981631),
@@ -27,9 +29,12 @@ var r = n(626135),
   }({}),
   c = function(e) {
     return e.NSFW_CHANNEL_AGE_VERIFY = "nsfw_channel_age_verify", e.NSFW_CHANNEL_UNDERAGE = "nsfw_channel_underage", e.NSFW_CHANNEL_VERIFIED = "nsfw_channel_verified", e.NSFW_EMBEDDED_ACTIVITY = "nsfw_embedded_activity", e.NSFW_APP_LISTING = "nsfw_app_listing", e
+  }({}),
+  u = function(e) {
+    return e.NSFW_CHANNEL_AGREE_CTA = "nsfw_channel_agree_cta", e.NSFW_CHANNEL_DISAGREE_CTA = "nsfw_channel_disagree_cta", e
   }({});
 
-function u(e, t, n) {
+function d(e, t, n) {
   r.default.track(i.rMx.AGE_VERIFICATION_MODAL_VIEWED, {
     modal_session_id: e,
     modal_version: t,
@@ -37,7 +42,7 @@ function u(e, t, n) {
   })
 }
 
-function d(e, t, n) {
+function f(e, t, n) {
   r.default.track(i.rMx.AGE_VERIFICATION_MODAL_CLICKED, {
     modal_session_id: e,
     modal_version: t,
@@ -45,17 +50,26 @@ function d(e, t, n) {
   })
 }
 
-function f(e, t) {
+function _(e, t) {
   r.default.track(i.rMx.AGE_VERIFICATION_DM_CLICKED, {
     cta: e,
     channel_id: t
   })
 }
 
-function _(e, t, n) {
+function p(e, t, n) {
   r.default.track(i.rMx.NSFW_SPACE_WARNING_MODAL_VIEWED, {
     channel_id: t,
     guild_id: n,
     modal_type: e
+  })
+}
+
+function h(e, t, n, o) {
+  r.default.track(i.rMx.NSFW_SPACE_WARNING_MODAL_CLICKED, {
+    cta: e,
+    modal_type: t,
+    channel_id: n,
+    guild_id: o
   })
 }

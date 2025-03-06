@@ -25,9 +25,16 @@ let p = function(e) {
     channelId: y,
     guildId: j
   } = e;
-  return i.useEffect(() => {
+  i.useEffect(() => {
     (0, a.YT)(O, y, j)
-  }, [O, y, j]), (0, r.jsxs)(l.Z, {
+  }, [O, y, j]);
+  let E = i.useCallback(() => {
+      (0, a.qd)(a.iP.NSFW_CHANNEL_DISAGREE_CTA, O, y, j), null == d || d()
+    }, [d, O, y, j]),
+    h = i.useCallback(() => {
+      (0, a.qd)(a.iP.NSFW_CHANNEL_AGREE_CTA, O, y, j), null == f || f()
+    }, [f, O, y, j]);
+  return (0, r.jsxs)(l.Z, {
     className: u.gatedContent,
     justify: l.Z.Justify.CENTER,
     align: l.Z.Align.CENTER,
@@ -48,13 +55,13 @@ let p = function(e) {
         className: u.action,
         size: s.PhG.LARGE,
         color: s.Ttl.PRIMARY,
-        onClick: d,
+        onClick: E,
         children: p
       }) : null, null != o && null != f ? (0, r.jsx)(s.zxk, {
         className: u.action,
         color: m,
         size: s.PhG.LARGE,
-        onClick: f,
+        onClick: h,
         children: o
       }) : null]
     })]

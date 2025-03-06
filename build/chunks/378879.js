@@ -89,7 +89,7 @@ function Z(e) {
     } = (0, s.Z)({
       user: t,
       displayProfile: _,
-      pendingAvatar: n === l.pC.AVATAR ? a : void 0,
+      pendingAvatarSrc: n === l.pC.AVATAR ? a : void 0,
       isPreview: !0
     }),
     C = n === l.pC.AVATAR || n === l.pC.BANNER,

@@ -18,7 +18,7 @@ function d(e) {
     user: f,
     displayProfile: _,
     pendingThemeColors: p,
-    pendingAvatar: h,
+    pendingAvatarSrc: h,
     isPreview: g
   } = e, m = (0, o.ZP)(), E = (0, i.e7)([a.Z], () => a.Z.syncProfileThemeWithUserTheme), v = null != h ? h : null == f ? void 0 : f.getAvatarURL(null == _ ? void 0 : _.guildId, 80), b = (0, l.Sl)(u.Ilk.PRIMARY_530).hex, [y, O] = (0, s.Cf)(v, b, !1);
   if (!(null == _ ? void 0 : _.canEditThemes) && !g) return {
