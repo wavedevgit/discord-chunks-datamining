@@ -1,6 +1,6 @@
 /**
   Module ID: 77032
-  Original File Name: e2d819711b2e7067
+  Original File Name: 46a4b5ab025986a8
 **/
 .availabilityIndicator__40463 {
     display: flex;
@@ -135,7 +135,7 @@
 .emptyAvatarSlots__1df30 {
     display: flex;
     flex-direction: row;
-    gap: var(--spacing-16)
+    gap: var(--spacing-12)
 }
 
 .avatarPlaceholder__1df30 {

@@ -1,6 +1,6 @@
 /**
   Module ID: 11725
-  Original File Name: f4fa4ca98aaa9856
+  Original File Name: 9e8f3a40e44ed653
 **/
 .availabilityIndicator__40463 {
     display: flex;
@@ -114,7 +114,7 @@
 .emptyAvatarSlots__1df30 {
     display: flex;
     flex-direction: row;
-    gap: var(--spacing-16)
+    gap: var(--spacing-12)
 }
 
 .avatarPlaceholder__1df30 {

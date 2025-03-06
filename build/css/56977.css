@@ -1,6 +1,6 @@
 /**
   Module ID: 56977
-  Original File Name: f463843e1f810fe0
+  Original File Name: 61623e23779c2ada
 **/
 .modal__038c3 {
     width: 650px
@@ -104,7 +104,7 @@
 .emptyAvatarSlots__1df30 {
     display: flex;
     flex-direction: row;
-    gap: var(--spacing-16)
+    gap: var(--spacing-12)
 }
 
 .avatarPlaceholder__1df30 {
