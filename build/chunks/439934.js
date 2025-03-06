@@ -198,7 +198,6 @@ function L(e) {
         children: (0, a.jsx)("div", {
           className: E.badgeContainer,
           children: (0, a.jsx)(j.Z, {
-            name: H.name,
             labelType: W
           })
         })

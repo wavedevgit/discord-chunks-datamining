@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => y
 }), n(47120);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(579806),
   u = n(600164),
   m = n(729345),
-  g = n(785141),
-  p = n(921801),
+  p = n(785141),
+  g = n(921801),
   h = n(857192),
   f = n(131951),
-  b = n(226961),
-  N = n(12647),
-  x = n(569550),
+  x = n(226961),
+  b = n(12647),
+  N = n(569550),
   _ = n(726985),
   E = n(981631),
   j = n(65154),
@@ -87,11 +87,11 @@ function y(e) {
     debugLogging: f.Z.getDebugLogging(),
     aecDumpEnabled: f.Z.getAecDump(),
     supportsConnectionReplay: f.Z.supports(j.AN.CONNECTION_REPLAY)
-  })), P = (0, s.e7)([h.default], () => h.default.isStreamInfoOverlayEnabled), R = (0, s.e7)([b.ZP], () => b.ZP.shouldRecordNextConnection());
+  })), P = (0, s.e7)([h.default], () => h.default.isStreamInfoOverlayEnabled), R = (0, s.e7)([x.ZP], () => x.ZP.shouldRecordNextConnection());
   async function D() {
     d(!0);
     try {
-      await f.Z.getMediaEngine().writeAudioDebugState(), await N.Z.submitLiveCrashReport({
+      await f.Z.getMediaEngine().writeAudioDebugState(), await b.Z.submitLiveCrashReport({
           message: {
             message: "User Live Dump"
           }
@@ -115,7 +115,7 @@ function y(e) {
         var t;
         let n = C.NW.string(C.t.QZg0Jy),
           i = null != e ? e : C.NW.string(C.t.VzHcSk),
-          s = null === (t = (0, g.hp)(g.u.DEBUG_LOG_UPLOAD_FAILED)) || void 0 === t ? void 0 : t.errorCode,
+          s = null === (t = (0, p.hp)(p.u.DEBUG_LOG_UPLOAD_FAILED)) || void 0 === t ? void 0 : t.errorCode,
           l = C.NW.formatToPlainString(C.t["ejOT9/"], {
             errorCode: s
           });
@@ -147,12 +147,12 @@ function y(e) {
     }
   }
   let Z = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(p.F, {
+    children: [(0, r.jsx)(g.F, {
       setting: _.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_STREAM_INFO_OVERLAY,
       children: (0, r.jsx)(a.j7V, {
         value: P,
         onChange: e => {
-          (0, x.Z)("stream_info_overlay_enabled", e, P), (0, o.y)({
+          (0, N.Z)("stream_info_overlay_enabled", e, P), (0, o.y)({
             isStreamInfoOverlayEnabled: e
           })
         },
@@ -160,7 +160,7 @@ function y(e) {
         hideBorder: t,
         children: C.NW.string(C.t["0CEP6e"])
       })
-    }), (0, r.jsx)(p.F, {
+    }), (0, r.jsx)(g.F, {
       setting: _.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_AEC_DUMP,
       children: (0, r.jsx)(a.j7V, {
         value: A,
@@ -169,7 +169,7 @@ function y(e) {
         hideBorder: t,
         children: C.NW.string(C.t["r6K+TE"])
       })
-    }), (0, r.jsxs)(p.F, {
+    }), (0, r.jsxs)(g.F, {
       setting: _.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_CONNECTION_REPLAY,
       children: [(0, r.jsx)(a.j7V, {
         hideBorder: !0,
@@ -193,7 +193,7 @@ function y(e) {
       }), t ? null : (0, r.jsx)(a.$i$, {
         className: O.marginBottom20
       })]
-    }), (0, r.jsx)(p.F, {
+    }), (0, r.jsx)(g.F, {
       setting: _.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_LOGGING,
       children: (0, r.jsxs)("div", {
         children: [(0, r.jsx)(a.j7V, {

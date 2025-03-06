@@ -1,4 +1,5 @@
 /** Chunk was on 63141 **/
+"use strict";
 let i;
 n.d(t, {
   Z: () => eP
@@ -8,9 +9,9 @@ var r = n(200651),
   l = n(120356),
   a = n.n(l),
   s = n(921738),
-  d = n.n(s),
-  c = n(954955),
-  u = n.n(c),
+  c = n.n(s),
+  d = n(954955),
+  u = n.n(d),
   p = n(498607),
   h = n.n(p),
   f = n(442837),
@@ -63,8 +64,8 @@ var k = n(605236),
   el = n(348733),
   ea = n(312178),
   es = n(708383),
-  ed = n(923532),
-  ec = n(107200),
+  ec = n(923532),
+  ed = n(107200),
   eu = n(983660),
   ep = n(987650),
   eh = n(981631),
@@ -206,8 +207,8 @@ class eb extends o.Component {
     }), en.Z.trackExposure({
       location: "Overlay"
     });
-    let d = n && !i && null != l,
-      c = e && null != r && null != o,
+    let c = n && !i && null != l,
+      d = e && null != r && null != o,
       u = (0, k.un)(v.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX),
       p = this.props.hasOverlayV3UI,
       h = {
@@ -220,12 +221,12 @@ class eb extends o.Component {
       } : a ? h = {
         type: ep.nc.KEYBIND_INDICATORS,
         markAsDismissed: s
-      } : d && c ? h = {
+      } : c && d ? h = {
         type: ep.nc.GO_LIVE_VOICE,
         game: l,
         voiceChannelId: o,
         voiceGuild: r
-      } : d && (h = {
+      } : c && (h = {
         type: ep.nc.GO_LIVE_NON_VOICE,
         game: l
       }), O.Z.overlayMounted(h), window.addEventListener("resize", this.handleWindowResize), t && window.addEventListener("contextmenu", eO, !1), J.isPlatformEmbedded) {
@@ -278,14 +279,14 @@ class eb extends o.Component {
       initialized: o,
       isPreviewingInGame: l,
       activeRegions: s,
-      windowSize: d,
-      voiceGuild: c,
+      windowSize: c,
+      voiceGuild: d,
       voiceChannelId: u,
       hasOverlayV3UI: p
     } = this.props, {
       width: h,
       height: f
-    } = d;
+    } = c;
     if (0 === h || 0 === f || n || !o) return null;
     let v = e || l,
       m = S.default.getId();
@@ -299,14 +300,14 @@ class eb extends o.Component {
         keybind: t,
         onClick: e ? this.handleDeactivate : this.handleLock,
         isPreviewingInGame: l
-      }), (0, et.validResolution)(d) ? (0, r.jsx)(ea.Z, {
+      }), (0, et.validResolution)(c) ? (0, r.jsx)(ea.Z, {
         className: a()({
           [em.layoutLocked]: e,
           [em.layoutUnlocked]: !e
         })
-      }) : e ? null : this.renderInvalidSizeMessage(), (0, r.jsx)(ec.Z, {}), null != c && null != u && (0, r.jsx)(ed.Z, {
+      }) : e ? null : this.renderInvalidSizeMessage(), (0, r.jsx)(ed.Z, {}), null != d && null != u && (0, r.jsx)(ec.Z, {
         streamerId: m,
-        guildId: c.id,
+        guildId: d.id,
         channelId: u
       }), p && (0, r.jsx)(eu.Z, {
         locked: e
@@ -330,7 +331,7 @@ class eb extends o.Component {
         locked: r,
         activeRegions: o
       } = this.props;
-      t.keyCode === d().codes.esc && r && o.has(eh.O0n.TEXT_WIDGET) && O.Z.deactivateAllRegions()
+      t.keyCode === c().codes.esc && r && o.has(eh.O0n.TEXT_WIDGET) && O.Z.deactivateAllRegions()
     }), eE(this, "onKeyUpGlobal", e => {
       let t = eZ(e),
         n = this.getActiveKeyEventIndex(t);
@@ -354,7 +355,7 @@ function eP() {
     incompatibleApp: X.default.incompatibleApp,
     activeRegions: X.default.getActiveRegions(),
     isPreviewingInGame: X.default.isPreviewingInGame()
-  })), l = (0, f.e7)([q.Z], () => q.Z.windowSize()), a = (0, f.e7)([F.ZP], () => F.ZP.getOverlayKeybind()), s = (0, f.e7)([K.Z], () => K.Z.getVoiceChannelId()), d = (0, f.e7)([W.Z], () => W.Z.getChannel(s)), c = (0, f.e7)([M.Z], () => null != d ? M.Z.getGuild(d.guild_id) : null), u = (0, f.e7)([L.ZP, Y.Z], () => (0, A.Z)(L.ZP, Y.Z)), p = (0, j.Ns)(null == u ? void 0 : u.id), h = (0, f.e7)([N.Z], () => null != N.Z.getLastFeedFetchDate(ef.YN.GAME_PROFILE_FEED)), v = (0, f.e7)([G.Z], () => (0, w.Z)(G.Z)), E = (0, f.e7)([D.Z], () => null != D.Z.getCurrentUserActiveStream()), {
+  })), l = (0, f.e7)([q.Z], () => q.Z.windowSize()), a = (0, f.e7)([F.ZP], () => F.ZP.getOverlayKeybind()), s = (0, f.e7)([K.Z], () => K.Z.getVoiceChannelId()), c = (0, f.e7)([W.Z], () => W.Z.getChannel(s)), d = (0, f.e7)([M.Z], () => null != c ? M.Z.getGuild(c.guild_id) : null), u = (0, f.e7)([L.ZP, Y.Z], () => (0, A.Z)(L.ZP, Y.Z)), p = (0, j.Ns)(null == u ? void 0 : u.id), h = (0, f.e7)([N.Z], () => null != N.Z.getLastFeedFetchDate(ef.YN.GAME_PROFILE_FEED)), v = (0, f.e7)([G.Z], () => (0, w.Z)(G.Z)), E = (0, f.e7)([D.Z], () => null != D.Z.getCurrentUserActiveStream()), {
     analyticsLocations: y
   } = (0, C.ZP)(x.Z.OVERLAY), {
     showKeybindIndicators: O,
@@ -373,8 +374,8 @@ function eP() {
         keybind: null != a ? (0, ee.BB)(a.shortcut, !0) : "???",
         keybindKeyCodes: null != a ? a.shortcut : [],
         connectedToVoice: null != s,
-        voiceChannelId: null != d ? d.id : null,
-        voiceGuild: c,
+        voiceChannelId: null != c ? c.id : null,
+        voiceGuild: d,
         game: u,
         canGoLive: v,
         isStreaming: E,

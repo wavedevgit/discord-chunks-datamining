@@ -26,13 +26,15 @@ let C = function(e) {
     hasConnectPermission: v
   } = e, y = l.filter(g.Io), x = (0, d.J)(C.guild_id), j = i.useCallback(() => {
     x ? (0, u.hk)(C.guild_id, () => s.default.selectVoiceChannel(C.id)) : s.default.selectVoiceChannel(C.id)
-  }, [C.id, C.guild_id, x]), O = (0, c.Q3)("ChannelCallEmpty"), E = null !== (n = null === (t = p.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff()) && void 0 !== n && n, N = 4 === y.length ? 2 : 3;
+  }, [C.id, C.guild_id, x]), O = (0, c.Q3)("ChannelCallEmpty"), E = null !== (n = null === (t = p.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff()) && void 0 !== n && n, N = (0, a._q$)("ChannelCallEmpty"), I = 4 === y.length ? 2 : 3;
   return (0, r.jsxs)("div", {
-    className: _.container,
+    className: o()(_.container, {
+      [_.withRive]: N
+    }),
     children: [O && E && (0, r.jsx)(m.Z, {}), (0, r.jsx)("div", {
       className: _.tiles,
       style: {
-        maxWidth: 168 * N
+        maxWidth: 168 * I
       },
       children: y.slice(0, 5).map(e => (0, r.jsx)(f.ZP, {
         participant: e,

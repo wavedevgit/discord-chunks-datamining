@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => x
+  Z: () => N
 }), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -12,15 +12,15 @@ var r = n(200651),
   u = n(306453),
   d = n(108427),
   h = n(314897),
-  g = n(626135),
-  p = n(587444),
-  f = n(981631),
+  p = n(626135),
+  g = n(587444),
+  _ = n(981631),
   m = n(58346),
-  _ = n(388032),
+  f = n(388032),
   b = n(802138);
 
-function N(e, t, n) {
-  e.preventDefault(), g.default.track(f.rMx.GUILD_TEMPLATE_APP_OPENED, {
+function x(e, t, n) {
+  e.preventDefault(), p.default.track(_.rMx.GUILD_TEMPLATE_APP_OPENED, {
     guild_template_code: t,
     guild_template_name: n.name,
     guild_template_description: n.description,
@@ -31,7 +31,7 @@ function N(e, t, n) {
   c.Z.openMobileApp(n.state === m.Rj.RESOLVED ? t : void 0, i)
 }
 
-function x(e) {
+function N(e) {
   let {
     code: t
   } = e, n = (0, o.e7)([s.Z], () => s.Z.getGuildTemplate(t));
@@ -44,14 +44,14 @@ function x(e) {
       guildTemplate: n,
       tall: !0
     }), (0, r.jsx)(l.zx, {
-      onClick: e => N(e, t, n),
+      onClick: e => x(e, t, n),
       className: b.marginTop20,
-      children: _.NW.string(_.t["a3Gl+f"])
+      children: f.NW.string(f.t["a3Gl+f"])
     })]
-  }) : (0, r.jsx)(p.Z, {
-    text: _.NW.string(_.t["e/rZ2t"]),
-    buttonCta: _.NW.string(_.t.HAvYn5),
-    onClick: e => N(e, t, n)
+  }) : (0, r.jsx)(g.Z, {
+    text: f.NW.string(f.t["e/rZ2t"]),
+    buttonCta: f.NW.string(f.t.HAvYn5),
+    onClick: e => x(e, t, n)
   })
 }
 o.ZP.initialize()

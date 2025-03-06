@@ -1,4 +1,4 @@
-/** Chunk was on 55440 **/
+/** Chunk was on 45588 **/
 e.exports = {
   modalClose: "modalClose__19236",
   modalRoot: "modalRoot__19236",

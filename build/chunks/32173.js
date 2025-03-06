@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => eC,
   u: () => ej
@@ -13,13 +13,13 @@ var s = n(399606),
   d = n(100527),
   u = n(906732),
   m = n(975298),
-  g = n(779618),
-  p = n(832149),
+  p = n(779618),
+  g = n(832149),
   h = n(300284),
   f = n(703656),
-  b = n(547972),
-  N = n(131951),
-  x = n(594174),
+  x = n(547972),
+  b = n(131951),
+  N = n(594174),
   _ = n(78839),
   E = n(424218),
   j = n(63063),
@@ -67,13 +67,13 @@ var s = n(399606),
   ed = n(909910),
   eu = n(637810),
   em = n(570423),
-  eg = n(912429),
-  ep = n(91394),
+  ep = n(912429),
+  eg = n(91394),
   eh = n(209672),
   ef = n(698173),
-  eb = n(926262),
-  eN = n(482668),
-  ex = n(21504),
+  ex = n(926262),
+  eb = n(482668),
+  eN = n(21504),
   e_ = n(371435),
   eE = n(83663),
   ej = ((r = {}).CLIENT_THEMES = "clientThemes", r.CLIPS = "clips", r.COLLECTIBLE_DECO = "collectibleDeco", r.EARLY_ACCESS = "earlyAccess", r.ENTRANCE_SOUNDS = "entranceSounds", r.PROFILES = "profiles", r.REMIXING = "remixing", r.SERVER_BOOSTS = "serverBoosts", r.GREY_SERVER_BOOSTS = "greyServerBoosts", r.SPECIAL_MEMBER_PRICING = "specialMemberPricing", r.SPECIAL_MEMBER_PRICING_SEE_ALL_VARIANT = "specialMemberPricingSeeAllVariant", r.SPECIAL_SHOP_PERKS = "specialShopPerks", r.UNLIMITED_SUPER_REACTIONS = "unlimitedSuperReactions", r.SUPER_REACTIONS = "superReactions", r.UPCOMING_DROP_UNTIMED = "upcomingDropUntimed", r.CUSTOM_APP_ICONS = "customAppIcons", r.MORE_EMOJI_POWER = "moreEmojiPower", r.CUSTOM_SOUNDS_EVERYWHERE = "customSoundsEverywhere", r.SPECIAL_STICKER_ACCESS = "specialStickerAccess", r.LARGE_UPLOADS = "largeUploads", r.HD_VIDEO = "hdVideo", r.BADGE = "badge", r.GREY_BADGE = "greyBadge", r.ENTRANCE_SOUNDS_SEE_ALL_VARIATION = "entranceSoundsSeeAllVariation", r.EARLY_ACCESS_SEE_ALL_VARIATION = "earlyAccessSeeAllVariant", r.TENURE_REWARD_COLLECTIBLE = "tenureRewardCollectible", r.REFERRAL_PROGRAM = "referralProgram", r.NEW_APP_STYLES_UPDATE_JUNE_2024 = "newAppStylesUpdateJune2024", r.SERVER_PROFILES = "serverProfiles", r.SHY_PROJECT = "shyProject", r.TENURE_BADGE = "tenureBadge", r);
@@ -88,9 +88,9 @@ let eC = () => {
   } = (0, s.cj)([_.ZP], () => ({
     premiumSubscription: _.ZP.getPremiumTypeSubscription(),
     isEligibleForReward: _.ZP.getIsSubscriptionEligibleForReward()
-  })), ev = null != eC ? C.ZP.getPremiumPlanItem(eC) : null, eS = (null != ev ? C.ZP.getSkuIdForPlan(ev.planId) : null) === L.Si.TIER_2, eT = x.default.getCurrentUser(), eI = (0, C.I5)(eT, L.p9.TIER_2), ey = (0, C.I5)(eT, L.p9.TIER_0), eA = (0, I.bq)({
+  })), ev = null != eC ? C.ZP.getPremiumPlanItem(eC) : null, eS = (null != ev ? C.ZP.getSkuIdForPlan(ev.planId) : null) === L.Si.TIER_2, eT = N.default.getCurrentUser(), eI = (0, C.I5)(eT, L.p9.TIER_2), ey = (0, C.I5)(eT, L.p9.TIER_0), eA = (0, I.bq)({
     showAnimations: !0
-  }), eP = null != eA ? eA.initialPercentage : void 0, eR = null != eA ? eA.percentage : void 0, eD = (0, g.Z)(N.Z), eZ = (0, y.a)(), ew = (0, I.Kb)(B.qY), {
+  }), eP = null != eA ? eA.initialPercentage : void 0, eR = null != eA ? eA.percentage : void 0, eD = (0, p.Z)(b.Z), eZ = (0, y.a)(), ew = (0, I.Kb)(B.qY), {
     fractionalState: ek
   } = (0, m.Z)(), eW = (0, O.W)(), eL = ek === L.a$.FP_ONLY, {
     enabled: eB
@@ -133,7 +133,7 @@ let eC = () => {
       descriptionCta: eD ? G.NW.string(G.t.jVcuVV) : G.NW.string(G.t.hvVgAQ),
       pillText: G.NW.string(G.t.EYxi0t),
       onCtaClick: eD ? () => {
-        (0, b.Z)(V.Z.CLIPS, {
+        (0, x.Z)(V.Z.CLIPS, {
           openWithoutBackstack: !0,
           analyticsLocations: e
         })
@@ -377,7 +377,7 @@ let eC = () => {
       name: "specialStickerAccess",
       title: G.NW.string(G.t.tzdIwM),
       subtitle: G.NW.string(G.t.FXlU29),
-      perkImage: (0, W.gx)(t, K, eg),
+      perkImage: (0, W.gx)(t, K, ep),
       description: G.NW.string(G.t.e7FKCg)
     },
     largeUploads: {
@@ -388,14 +388,14 @@ let eC = () => {
       subtitle: G.NW.formatToPlainString(G.t["HI+cfn"], {
         premiumMaxSize: ej
       }),
-      perkImage: eb,
+      perkImage: ex,
       description: G.NW.string(G.t["R0gx+/"])
     },
     hdVideo: {
       name: "hdVideo",
       title: G.NW.string(G.t.RSXQYG),
       subtitle: G.NW.string(G.t.ymCPxs),
-      perkImage: ep,
+      perkImage: eg,
       description: G.NW.string(G.t["4WgB//"])
     },
     newAppStylesUpdateJune2024: {
@@ -456,7 +456,7 @@ let eC = () => {
       perkComponent: o,
       descriptionCta: a,
       onCtaClick: () => {
-        null != ew && (0, p.Z)({
+        null != ew && (0, g.Z)({
           product: ew,
           overrideTitle: G.NW.string(G.t.wRAXra),
           overrideDescription: G.NW.string(G.t.sQX6HR),
@@ -500,7 +500,7 @@ let eC = () => {
       termsLink: T.Ps
     }),
     perkComponent: (0, i.jsx)(w.Z, {
-      image: r ? ex.Z : eN.Z,
+      image: r ? eN.Z : eb.Z,
       cta: G.NW.string(G.t.s0w7a2),
       onClick: () => {
         (0, a.ZDy)(async () => {

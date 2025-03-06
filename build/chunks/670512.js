@@ -1,20 +1,20 @@
-/** Chunk was on 51424 **/
+/** Chunk was on 76282 **/
 n.d(t, {
   Z: () => g
 }), n(47120);
 var r, i = n(200651),
-  l = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  o = n(192379),
+  l = n(120356),
+  a = n.n(l),
   s = n(748780),
   c = n(846519),
   u = n(481060),
   d = n(585483),
   _ = n(981631),
-  E = n(388032),
-  p = n(903590);
+  p = n(388032),
+  E = n(903590);
 
-function m(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,11 +22,11 @@ function m(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let f = {
+let m = {
   friction: 15,
   tension: 100
 };
-class h extends(r = l.PureComponent) {
+class h extends(r = o.PureComponent) {
   componentDidMount() {
     this.setState({
       shown: !0
@@ -52,51 +52,51 @@ class h extends(r = l.PureComponent) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          m(e, t, n[t])
+          f(e, t, n[t])
         })
       }
       return e
     }({
       toValue: Math.min(e, 250)
-    }, f)).start()
+    }, m)).start()
   }
   renderArrowGroup(e) {
     return (0, i.jsxs)("div", {
-      className: a()(p.arrowGroup, e),
+      className: a()(E.arrowGroup, e),
       children: [(0, i.jsx)(s.Z.div, {
-        className: a()(p.arrowContainer, p.horizontal),
+        className: a()(E.arrowContainer, E.horizontal),
         style: this.getStyle(),
         children: (0, i.jsx)("img", {
           alt: "",
           src: n(403756),
-          className: p.arrowIcon
+          className: E.arrowIcon
         })
       }), (0, i.jsx)("div", {
-        className: a()(p.arrowContainer, p.diag1),
+        className: a()(E.arrowContainer, E.diag1),
         children: (0, i.jsx)("img", {
           alt: "",
           src: n(536404),
-          className: p.arrowIcon
+          className: E.arrowIcon
         })
       }), (0, i.jsx)("div", {
-        className: a()(p.arrowContainer, p.diag2),
+        className: a()(E.arrowContainer, E.diag2),
         children: (0, i.jsx)("img", {
           alt: "",
           src: n(569347),
-          className: p.arrowIcon
+          className: E.arrowIcon
         })
       })]
     })
   }
   renderContent() {
     return (0, i.jsxs)("div", {
-      className: p.tutorialMessages,
+      className: E.tutorialMessages,
       children: [(0, i.jsx)("div", {
-        className: p.searchMessage,
-        children: E.NW.string(E.t.Mp0IGB)
+        className: E.searchMessage,
+        children: p.NW.string(p.t.Mp0IGB)
       }), (0, i.jsx)("div", {
-        className: p.selectMessage,
-        children: E.NW.string(E.t["3CbpwM"])
+        className: E.selectMessage,
+        children: p.NW.string(p.t["3CbpwM"])
       })]
     })
   }
@@ -108,11 +108,11 @@ class h extends(r = l.PureComponent) {
     } = this.state;
     return (0, i.jsxs)("div", {
       ref: this.rootRef,
-      className: a()(p.tutorial, {
-        [p.shown]: t,
-        [p.hasQuery]: e
+      className: a()(E.tutorial, {
+        [E.shown]: t,
+        [E.hasQuery]: e
       }),
-      children: [this.renderContent(), this.renderArrowGroup(p.__invalid_left), this.renderArrowGroup(p.right)]
+      children: [this.renderContent(), this.renderArrowGroup(E.__invalid_left), this.renderArrowGroup(E.right)]
     })
   }
   getStyle() {
@@ -132,10 +132,10 @@ class h extends(r = l.PureComponent) {
     }
   }
   constructor(...e) {
-    super(...e), m(this, "state", {
+    super(...e), f(this, "state", {
       shown: !1,
       translateY: new s.Z.Value(0)
-    }), m(this, "rootRef", l.createRef()), m(this, "focusTimeout", new c.V7), m(this, "handleResultFocus", e => {
+    }), f(this, "rootRef", o.createRef()), f(this, "focusTimeout", new c.V7), f(this, "handleResultFocus", e => {
       let {
         node: t
       } = e;
@@ -152,5 +152,5 @@ class h extends(r = l.PureComponent) {
     })
   }
 }
-m(h, "contextType", u.Sfi);
+f(h, "contextType", u.Sfi);
 let g = h

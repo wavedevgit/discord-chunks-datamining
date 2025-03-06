@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => Y
 }), n(47120);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(481060),
   u = n(230711),
   m = n(419363),
-  g = n(857595),
-  p = n(607070),
+  p = n(857595),
+  g = n(607070),
   h = n(627845),
   f = n(600164),
-  b = n(313201),
-  N = n(786761),
-  x = n(3148),
+  x = n(313201),
+  b = n(786761),
+  N = n(3148),
   _ = n(739566),
   E = n(753206),
   j = n(440849),
@@ -71,11 +71,11 @@ function U(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let V = (0, b.hQ)(),
-  G = (0, b.hQ)(),
-  F = (0, b.hQ)(),
+let V = (0, x.hQ)(),
+  G = (0, x.hQ)(),
+  F = (0, x.hQ)(),
   H = o().debounce(e => {
-    (0, g.o2)(e)
+    (0, p.o2)(e)
   }, 250),
   z = o().debounce(e => {
     (0, O.Ct)(e)
@@ -135,7 +135,7 @@ function Y(e) {
 function K() {
   let e = I.jU.useSetting(),
     [t] = i.useState(() => {
-      let e = (0, N.e5)(U(M({}, (0, x.ZP)({
+      let e = (0, b.e5)(U(M({}, (0, N.ZP)({
         channelId: "1337",
         content: k.NW.formatToPlainString(k.t.bB80LC, {
           previewLink: "https://discord.com/accessibility"
@@ -183,9 +183,9 @@ function q() {
   let {
     saturation: e,
     desaturateUserColors: t
-  } = (0, c.cj)([p.Z], () => ({
-    saturation: p.Z.saturation,
-    desaturateUserColors: p.Z.desaturateUserColors
+  } = (0, c.cj)([g.Z], () => ({
+    saturation: g.Z.saturation,
+    desaturateUserColors: g.Z.desaturateUserColors
   }));
   return (0, r.jsxs)(d.hjN, {
     className: L.marginTop20,
@@ -215,7 +215,7 @@ function q() {
         hideBorder: !0,
         className: a()(L.marginTop20, L.marginBottom20),
         value: t,
-        onChange: g.f1,
+        onChange: p.f1,
         note: k.NW.string(k.t.nlAOER),
         children: k.NW.string(k.t.bQCodH)
       })
@@ -224,14 +224,14 @@ function q() {
 }
 
 function X() {
-  let e = (0, c.e7)([p.Z], () => p.Z.alwaysShowLinkDecorations);
+  let e = (0, c.e7)([g.Z], () => g.Z.alwaysShowLinkDecorations);
   return (0, r.jsx)(d.xJW, {
     className: L.marginTop20,
     children: (0, r.jsx)(d.j7V, {
       note: k.NW.string(k.t["72i5GB"]),
       value: e,
       onChange: function() {
-        (0, g.gs)(!e)
+        (0, p.gs)(!e)
       },
       children: k.NW.string(k.t.OLZFBw)
     })
@@ -239,7 +239,7 @@ function X() {
 }
 
 function J() {
-  let e = (0, c.e7)([p.Z], () => p.Z.roleStyle);
+  let e = (0, c.e7)([g.Z], () => g.Z.roleStyle);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(d.xJW, {
       title: k.NW.string(k.t.uSOPWl),
@@ -260,7 +260,7 @@ function J() {
           value: "hidden"
         }],
         onChange: function(e) {
-          (0, g.u1)(e.value)
+          (0, p.u1)(e.value)
         },
         value: e
       })]
@@ -271,7 +271,7 @@ function J() {
 }
 
 function Q() {
-  let e = (0, c.e7)([p.Z], () => p.Z.hideTags);
+  let e = (0, c.e7)([g.Z], () => g.Z.hideTags);
   return (0, r.jsx)(d.xJW, {
     title: k.NW.string(k.t.UQt6dX),
     className: L.marginTop20,
@@ -279,7 +279,7 @@ function Q() {
       setting: R.s6.ACCESSIBILITY_TAGS_NAMES,
       children: (0, r.jsx)(d.j7V, {
         value: !e,
-        onChange: () => (0, g.Nv)(!e),
+        onChange: () => (0, p.Nv)(!e),
         children: k.NW.string(k.t.UPwh1N)
       })
     })
@@ -287,7 +287,7 @@ function Q() {
 }
 
 function $() {
-  let e = (0, c.e7)([p.Z], () => p.Z.syncProfileThemeWithUserTheme),
+  let e = (0, c.e7)([g.Z], () => g.Z.syncProfileThemeWithUserTheme),
     t = i.useRef(null);
   return (0, A.Z)(t, P.rP.SYNC_PROFILE_THEME_WITH_USER_THEME), (0, r.jsx)(d.xJW, {
     ref: t,
@@ -303,7 +303,7 @@ function $() {
         }),
         className: L.marginTop20,
         value: e,
-        onChange: g.Uv,
+        onChange: p.Uv,
         children: k.NW.string(k.t["sSY+mJ"])
       })
     })
@@ -311,13 +311,13 @@ function $() {
 }
 
 function ee() {
-  let [e] = (0, c.Wu)([p.Z], () => [p.Z.syncForcedColors, p.Z.systemForcedColors]), [t, n] = i.useState(e);
+  let [e] = (0, c.Wu)([g.Z], () => [g.Z.syncForcedColors, g.Z.systemForcedColors]), [t, n] = i.useState(e);
   i.useEffect(() => {
     n(e)
   }, [e]);
   let s = i.useRef(null);
   i.useEffect(() => {
-    null != s.current && (clearTimeout(s.current), s.current = null), t !== e && (s.current = setTimeout(() => (0, g.qz)(t), 150))
+    null != s.current && (clearTimeout(s.current), s.current = null), t !== e && (s.current = setTimeout(() => (0, p.qz)(t), 150))
   }, [t, e]);
   let a = k.NW.format(k.t.GwEVEx, {
     learnMoreLink: T.Z.getArticleURL(D.BhN.FORCED_COLORS)
@@ -346,20 +346,20 @@ function et() {
       systemPrefersReducedMotion: l,
       gifAutoPlayOverrideReason: o,
       animateEmojiOverrideReason: u
-    } = (0, c.cj)([p.Z, y.Z], () => ({
-      systemPrefersReducedMotion: p.Z.systemPrefersReducedMotion,
-      rawPrefersReducedMotion: p.Z.rawPrefersReducedMotion,
-      useReducedMotion: p.Z.useReducedMotion,
+    } = (0, c.cj)([g.Z, y.Z], () => ({
+      systemPrefersReducedMotion: g.Z.systemPrefersReducedMotion,
+      rawPrefersReducedMotion: g.Z.rawPrefersReducedMotion,
+      useReducedMotion: g.Z.useReducedMotion,
       gifAutoPlayOverrideReason: y.Z.getAppliedOverrideReasonKey("gifAutoPlay"),
       animateEmojiOverrideReason: y.Z.getAppliedOverrideReasonKey("animateEmoji")
     })),
     m = i.useRef(null);
   (0, A.Z)(m, P.rP.REDUCED_MOTION);
   let h = i.useCallback((e, t) => {
-      (0, g.Zt)(t ? "auto" : l)
+      (0, p.Zt)(t ? "auto" : l)
     }, [l]),
     f = i.useCallback(e => {
-      (0, g.Zt)(e ? "reduce" : "no-preference")
+      (0, p.Zt)(e ? "reduce" : "no-preference")
     }, []);
   return (0, r.jsxs)(d.xJW, {
     ref: m,
@@ -442,7 +442,7 @@ function en() {
 }
 
 function er() {
-  let e = (0, c.e7)([p.Z], () => p.Z.isSubmitButtonEnabled),
+  let e = (0, c.e7)([g.Z], () => g.Z.isSubmitButtonEnabled),
     t = I.dN.useSetting(),
     n = i.useRef(null);
   return (0, A.Z)(n, P.rP.LEGACY_CHAT_INPUT), (0, r.jsxs)(d.xJW, {
@@ -456,7 +456,7 @@ function er() {
       children: (0, r.jsx)(d.j7V, {
         className: L.marginTop20,
         value: e,
-        onChange: g.eN,
+        onChange: p.eN,
         children: k.NW.string(k.t["3Fztn5"])
       })
     }), (0, r.jsx)(C.F, {

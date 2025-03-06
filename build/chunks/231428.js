@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => k
 }), n(47120);
@@ -11,13 +11,13 @@ var r, i = n(200651),
   d = n(91192),
   u = n(442837),
   m = n(481060),
-  g = n(570140),
-  p = n(355467),
+  p = n(570140),
+  g = n(355467),
   h = n(827837),
   f = n(821849),
-  b = n(724757),
-  N = n(600164),
-  x = n(239827),
+  x = n(724757),
+  b = n(600164),
+  N = n(239827),
   _ = n(818035),
   E = n(509545),
   j = n(78839),
@@ -70,19 +70,19 @@ function D(e) {
     locale: n,
     compactMode: r,
     numPages: a
-  } = e, o = s.useRef(null), [c, u] = s.useState(0), [g, h] = s.useState(null), f = t.slice(10 * c, (c + 1) * 10);
+  } = e, o = s.useRef(null), [c, u] = s.useState(0), [p, h] = s.useState(null), f = t.slice(10 * c, (c + 1) * 10);
   s.useEffect(() => {
     var e;
     null === (e = o.current) || void 0 === e || e.scrollTo({
       to: 0
     })
   }, [c]);
-  let N = s.useCallback(e => {
+  let b = s.useCallback(e => {
       u(e);
       let n = t[t.length - 1].id;
-      e >= a - 2 && g !== n && ((0, p.cQ)(10, n), h(n))
-    }, [t, a, g]),
-    _ = (0, b.Z)("billing-history", o);
+      e >= a - 2 && p !== n && ((0, g.cQ)(10, n), h(n))
+    }, [t, a, p]),
+    _ = (0, x.Z)("billing-history", o);
   return (0, i.jsx)(d.bG, {
     navigator: _,
     children: (0, i.jsx)(d.SJ, {
@@ -104,10 +104,10 @@ function D(e) {
           }
           return i
         }(e, ["ref"]);
-        return (0, i.jsx)(x.Z, R(P({
+        return (0, i.jsx)(N.Z, R(P({
           className: l()(I.verticalFit, I.paginator),
           currentPageIndex: c,
-          onChangePage: N,
+          onChangePage: b,
           numPages: a,
           showPageCount: !1,
           ref: t
@@ -132,8 +132,8 @@ class Z extends(r = s.PureComponent) {
     return Math.max(Math.ceil(this.props.payments.length / 10), 1)
   }
   componentDidMount() {
-    g.Z.wait(() => {
-      (0, h.N)(), (0, p.cQ)(30)
+    p.Z.wait(() => {
+      (0, h.N)(), (0, g.cQ)(30)
     })
   }
   renderPremiumExternalSubscription(e) {
@@ -166,7 +166,7 @@ class Z extends(r = s.PureComponent) {
         className: l()(I.paymentPane, I.verticalFit),
         children: [e ? null : (0, i.jsx)("div", {
           className: l()(I.paymentRow, I.bottomDivider),
-          children: (0, i.jsxs)(N.Z, {
+          children: (0, i.jsxs)(b.Z, {
             className: I.paymentRowHeader,
             children: [(0, i.jsx)("div", {
               className: y.date,
@@ -218,7 +218,7 @@ function k(e) {
     l = (0, u.Wu)([E.Z], () => E.Z.getPlanIdsForSkus(Array.from(a))),
     o = s.useCallback(() => l.length === r.size, [l, r]);
   return s.useEffect(() => {
-    o() || g.Z.wait(() => {
+    o() || p.Z.wait(() => {
       a.forEach(e => (0, f.GZ)(e, void 0, void 0, !0, void 0))
     })
   }, [o, a]), (0, i.jsx)(Z, R(P({}, e), {

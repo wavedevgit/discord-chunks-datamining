@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   O: () => S
 }), n(47120);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(335131),
   u = n(703656),
   m = n(751648),
-  g = n(511050),
-  p = n(52647),
+  p = n(511050),
+  g = n(52647),
   h = n(317257),
   f = n(120786),
-  b = n(775451),
-  N = n(970815),
-  x = n(720463),
+  x = n(775451),
+  b = n(970815),
+  N = n(720463),
   _ = n(931928),
   E = n(450272),
   j = n(981631),
@@ -35,9 +35,9 @@ function S() {
 function T() {
   let {
     openIntroToOrbsClaimedCoachmark: e
-  } = (0, g.l)({
+  } = (0, p.l)({
     location: "VirtualCurrencyComponents"
-  }), [t, n] = i.useState(150), [p, x] = i.useState(150), [_, v] = i.useState(500), [S, T] = i.useState(h.b.DEFAULT), I = () => {
+  }), [t, n] = i.useState(150), [g, N] = i.useState(150), [_, v] = i.useState(500), [S, T] = i.useState(h.b.DEFAULT), I = () => {
     switch (S) {
       case h.b.DEFAULT:
         T(h.b.HIGHLIGHTED);
@@ -57,7 +57,7 @@ function T() {
       children: "Balance Widget Components"
     }), (0, r.jsx)(E.E_, {
       label: "Balance Widget Menu",
-      children: (0, r.jsx)(b.V9, {
+      children: (0, r.jsx)(x.V9, {
         ctaText: C.NW.string(C.t["H57f4+"]),
         ctaOnClick: j.dG4,
         isCoachmarkEnabled: !1
@@ -118,20 +118,20 @@ function T() {
       })]
     }), (0, r.jsxs)(E.E_, {
       label: "Balance Widget Pill",
-      children: [(0, r.jsx)(N.A4, {
+      children: [(0, r.jsx)(b.A4, {
         balance: 150,
         balanceWidgetMode: h.b.DEFAULT
-      }), (0, r.jsx)(N.A4, {
+      }), (0, r.jsx)(b.A4, {
         balance: 150,
         balanceWidgetMode: h.b.HIGHLIGHTED
-      }), (0, r.jsx)(N.A4, {
+      }), (0, r.jsx)(b.A4, {
         balance: 150,
         balanceWidgetMode: h.b.SELECTED
-      }), (0, r.jsx)(N.A4, {
+      }), (0, r.jsx)(b.A4, {
         balance: 0,
         balanceWidgetMode: h.b.DEFAULT,
         showNotificationBadge: !0
-      }), (0, r.jsx)(N.A4, {
+      }), (0, r.jsx)(b.A4, {
         balance: null,
         balanceWidgetMode: h.b.DEFAULT
       })]
@@ -149,7 +149,7 @@ function T() {
         value: t,
         onChange: e => n(e)
       }), (0, r.jsx)(s.zx, {
-        onClick: () => x(t),
+        onClick: () => N(t),
         children: "Set Balance"
       }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
@@ -163,15 +163,15 @@ function T() {
         onChange: e => v(e)
       }), (0, r.jsx)(s.zx, {
         onClick: () => {
-          x(null), setTimeout(() => {
-            x(t)
+          N(null), setTimeout(() => {
+            N(t)
           }, _)
         },
         children: "Simulate Loading State"
       }), (0, r.jsx)("div", {
         className: O.interactivePillContainer,
-        children: (0, r.jsx)(N.A4, {
-          balance: p,
+        children: (0, r.jsx)(b.A4, {
+          balance: g,
           balanceWidgetMode: S,
           onClick: () => I()
         })
@@ -190,7 +190,7 @@ function T() {
 function I() {
   let {
     resetOnboardingAnnouncementModal: e
-  } = (0, p.Z)();
+  } = (0, g.Z)();
   return (0, r.jsxs)(E.$0, {
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-xl/semibold",
@@ -290,7 +290,7 @@ function I() {
       })]
     }), (0, r.jsx)(E.E_, {
       label: "Balance Widget Coachmark",
-      children: (0, r.jsx)(x.E, {
+      children: (0, r.jsx)(N.E, {
         earnedOrbsQuantity: 200,
         ctaOnClick: j.dG4,
         linkOnClick: j.dG4

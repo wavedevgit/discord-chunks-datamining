@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => J
 }), n(47120);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(780384),
   u = n(481060),
   m = n(816814),
-  g = n(809206),
-  p = n(497321),
+  p = n(809206),
+  g = n(497321),
   h = n(279837),
   f = n(952306),
-  b = n(600164),
-  N = n(690221),
-  x = n(346585),
+  x = n(600164),
+  b = n(690221),
+  N = n(346585),
   _ = n(347649),
   E = n(332473),
   j = n(303172),
@@ -87,7 +87,7 @@ class X extends i.PureComponent {
     (0, v.Z)(e.id, e.getAvatarURL(void 0, 80))
   }
   componentWillUnmount() {
-    m.Z.clearBackupCodes(), (0, g.Zy)()
+    m.Z.clearBackupCodes(), (0, p.Zy)()
   }
   renderAccountWarning() {
     let {
@@ -147,8 +147,8 @@ class X extends i.PureComponent {
       className: z.accountWarningBodyText,
       messageType: u.QYI.WARNING,
       children: [this.props.forceMigrationExperiment ? H.NW.format(H.t.zT1hgo, {
-        date: (0, x.IE)(this.props.locale)
-      }) : H.NW.format(H.t.pdYZys, {}), " ", "", (0, r.jsx)(N.Z, {
+        date: (0, N.IE)(this.props.locale)
+      }) : H.NW.format(H.t.pdYZys, {}), " ", "", (0, r.jsx)(b.Z, {
         className: z.noticeTextButton,
         onClick: () => (0, j.Z)(F.Kq.USER_SETTINGS),
         children: H.NW.string(H.t.LhlgY2)
@@ -199,15 +199,15 @@ class X extends i.PureComponent {
         })
       }), (0, r.jsx)(O.F, {
         setting: V.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-        children: (0, r.jsxs)(b.Z, {
-          align: b.Z.Align.STRETCH,
-          children: [(0, r.jsx)(b.Z.Child, {
+        children: (0, r.jsxs)(x.Z, {
+          align: x.Z.Align.STRETCH,
+          children: [(0, r.jsx)(x.Z.Child, {
             wrap: !0,
             children: (0, r.jsx)(L.Z, {
               backupCodes: e
             })
-          }), t.mfaEnabled ? null : (0, r.jsx)(b.Z, {
-            align: b.Z.Align.CENTER,
+          }), t.mfaEnabled ? null : (0, r.jsx)(x.Z, {
+            align: x.Z.Align.CENTER,
             basis: "323px",
             grow: 0,
             children: (0, r.jsx)("img", {
@@ -254,7 +254,7 @@ class X extends i.PureComponent {
         confirmText: H.NW.string(H.t["8lQ2ra"]),
         cancelText: H.NW.string(H.t["ETE/oK"]),
         onCancel: e,
-        onConfirm: () => (0, g.ss)("", !0).then(e),
+        onConfirm: () => (0, p.ss)("", !0).then(e),
         children: (0, r.jsx)(u.Text, {
           variant: "text-md/normal",
           children: H.NW.string(H.t.FB4H1N)
@@ -335,7 +335,7 @@ class X extends i.PureComponent {
     })
   }
   render() {
-    return this.props.hide ? (0, r.jsx)(p.Z, {}) : this.renderUnhidden()
+    return this.props.hide ? (0, r.jsx)(g.Z, {}) : this.renderUnhidden()
   }
   handleDisableAccountError(e) {
     if (e.body.code === G.evJ.INVALID_PASSWORD) throw e;
@@ -345,7 +345,7 @@ class X extends i.PureComponent {
     })
   }
   handleSubmitDisableAccount(e, t) {
-    return (0, g.ss)(e, t).then(G.dG4, this.handleDisableAccountError)
+    return (0, p.ss)(e, t).then(G.dG4, this.handleDisableAccountError)
   }
   handleDisableAccount() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],

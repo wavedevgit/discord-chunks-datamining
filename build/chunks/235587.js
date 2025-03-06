@@ -1,80 +1,80 @@
 /** Chunk was on 11212 **/
 "use strict";
-c.d(e, {
-  Z: () => u
-}), c(47120);
-var d, a = c(442837),
-  s = c(902704),
-  n = c(570140),
-  o = c(709054);
+a.d(e, {
+  Z: () => b
+}), a(47120);
+var c, d = a(442837),
+  s = a(902704),
+  n = a(570140),
+  f = a(709054);
 
-function f(t, e, c) {
+function i(t, e, a) {
   return e in t ? Object.defineProperty(t, e, {
-    value: c,
+    value: a,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : t[e] = c, t
+  }) : t[e] = a, t
 }
 
-function p(t, e, c) {
-  return "".concat(t, ",").concat(e, ",").concat(c)
+function o(t, e, a) {
+  return "".concat(t, ",").concat(e, ",").concat(a)
 }
-let i = () => ({
+let p = () => ({
     currentLeaderboardRanks: {},
     prevLeaderboardRanks: {}
   }),
-  r = i();
-class b extends(d = a.ZP.PersistedStore) {
+  r = p();
+class l extends(c = d.ZP.PersistedStore) {
   initialize(t) {
     return r = function(t) {
       for (var e = 1; e < arguments.length; e++) {
-        var c = null != arguments[e] ? arguments[e] : {},
-          d = Object.keys(c);
-        "function" == typeof Object.getOwnPropertySymbols && (d = d.concat(Object.getOwnPropertySymbols(c).filter(function(t) {
-          return Object.getOwnPropertyDescriptor(c, t).enumerable
-        }))), d.forEach(function(e) {
-          f(t, e, c[e])
+        var a = null != arguments[e] ? arguments[e] : {},
+          c = Object.keys(a);
+        "function" == typeof Object.getOwnPropertySymbols && (c = c.concat(Object.getOwnPropertySymbols(a).filter(function(t) {
+          return Object.getOwnPropertyDescriptor(a, t).enumerable
+        }))), c.forEach(function(e) {
+          i(t, e, a[e])
         })
       }
       return t
     }({}, r, null != t ? t : {}), ! function() {
       let t = Date.now();
-      for (let [e, c] of Object.entries(r.prevLeaderboardRanks))(null == c || t > c.ttl) && delete r.prevLeaderboardRanks[e];
-      for (let [e, c] of Object.entries(r.currentLeaderboardRanks))(null == c || t > c.ttl) && delete r.currentLeaderboardRanks[e]
+      for (let [e, a] of Object.entries(r.prevLeaderboardRanks))(null == a || t > a.ttl) && delete r.prevLeaderboardRanks[e];
+      for (let [e, a] of Object.entries(r.currentLeaderboardRanks))(null == a || t > a.ttl) && delete r.currentLeaderboardRanks[e]
     }(), !0
   }
   getState() {
     return r
   }
-  getPrevLeaderboardRanks(t, e, c) {
-    let d = p(t, e, c);
-    return r.prevLeaderboardRanks[d]
+  getPrevLeaderboardRanks(t, e, a) {
+    let c = o(t, e, a);
+    return r.prevLeaderboardRanks[c]
   }
-  getCurrentLeaderboardRanks(t, e, c) {
-    let d = p(t, e, c);
-    return r.currentLeaderboardRanks[d]
+  getCurrentLeaderboardRanks(t, e, a) {
+    let c = o(t, e, a);
+    return r.currentLeaderboardRanks[c]
   }
   reset() {
-    r = i()
+    r = p()
   }
 }
-f(b, "displayName", "GuildLeaderboardRanksStore"), f(b, "persistKey", "GuildLeaderboardRanksStore");
-let u = new b(n.Z, {
+i(l, "displayName", "GuildLeaderboardRanksStore"), i(l, "persistKey", "GuildLeaderboardRanksStore");
+let b = new l(n.Z, {
   SET_GUILD_LEADERBOARD: function(t) {
     var e;
     let {
-      leaderboardResponse: c,
-      intervalOffset: d
+      leaderboardResponse: a,
+      intervalOffset: c
     } = t;
-    if (0 !== d) return !1;
+    if (0 !== c) return !1;
     let {
-      leaderboard: a
-    } = c, n = p(a.guild_id, a.leaderboard_id, a.interval_start), f = {
-      ranks: a.users.map(t => t.user_id),
-      ttl: o.default.extractTimestamp(a.interval_end)
-    }, i = r.currentLeaderboardRanks[n];
-    if ((0, s.E)(f.ranks, null !== (e = null == i ? void 0 : i.ranks) && void 0 !== e ? e : [])) return !1;
-    r.prevLeaderboardRanks[n] = i, r.currentLeaderboardRanks[n] = f
+      leaderboard: d
+    } = a, n = o(d.guild_id, d.leaderboard_id, d.interval_start), i = {
+      ranks: d.users.map(t => t.user_id),
+      ttl: f.default.extractTimestamp(d.interval_end)
+    }, p = r.currentLeaderboardRanks[n];
+    if ((0, s.E)(i.ranks, null !== (e = null == p ? void 0 : p.ranks) && void 0 !== e ? e : [])) return !1;
+    r.prevLeaderboardRanks[n] = p, r.currentLeaderboardRanks[n] = i
   }
 })

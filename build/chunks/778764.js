@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => S
 }), n(47120), n(26686), n(266796), n(773603);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(313201),
   u = n(202858),
   m = n(287880),
-  g = n(358085),
-  p = n(960048),
+  p = n(358085),
+  g = n(960048),
   h = n(998502),
   f = n(365007),
-  b = n(15980),
-  N = n(755733),
-  x = n(981631),
+  x = n(15980),
+  b = n(755733),
+  N = n(981631),
   _ = n(388032),
   E = n(902255);
 
@@ -60,17 +60,17 @@ function O(e) {
     onClose: a,
     ticket: o,
     challenge: c
-  } = e, m = (0, d.Dt)(), [b, j] = i.useState(""), [C, O] = i.useState(!0), [v, S] = i.useState(N.x.INIT), [T, I] = i.useState(""), [y, A] = i.useState(null), P = async () => {
+  } = e, m = (0, d.Dt)(), [x, j] = i.useState(""), [C, O] = i.useState(!0), [v, S] = i.useState(b.x.INIT), [T, I] = i.useState(""), [y, A] = i.useState(null), P = async () => {
     let e;
-    S(N.x.REGISTER);
-    let t = g.isPlatformEmbedded && h.ZP.supportsFeature(x.eRX.WEBAUTHN) ? h.ZP.webAuthnRegister(c) : s.Ue(JSON.parse(c)).then(e => JSON.stringify(e));
+    S(b.x.REGISTER);
+    let t = p.isPlatformEmbedded && h.ZP.supportsFeature(N.eRX.WEBAUTHN) ? h.ZP.webAuthnRegister(c) : s.Ue(JSON.parse(c)).then(e => JSON.stringify(e));
     try {
       e = await t
     } catch (e) {
-      p.Z.captureException(e), A(_.NW.string(_.t.xSCvBQ)), S(N.x.INIT);
+      g.Z.captureException(e), A(_.NW.string(_.t.xSCvBQ)), S(b.x.INIT);
       return
     }
-    I(e), S(N.x.NAME)
+    I(e), S(b.x.NAME)
   };
   return (0, r.jsxs)(l.Y0X, {
     transitionState: t,
@@ -81,7 +81,7 @@ function O(e) {
       children: [(0, r.jsxs)(l.X6q, {
         id: m,
         variant: "heading-lg/semibold",
-        children: [v === N.x.INIT && _.NW.string(_.t.vrOCCg), v === N.x.REGISTER && _.NW.string(_.t.wePEBA), v === N.x.NAME && _.NW.string(_.t["cY/IOj"])]
+        children: [v === b.x.INIT && _.NW.string(_.t.vrOCCg), v === b.x.REGISTER && _.NW.string(_.t.wePEBA), v === b.x.NAME && _.NW.string(_.t["cY/IOj"])]
       }), (0, r.jsx)(l.olH, {
         onClick: a,
         className: E.modalCloseButton
@@ -90,7 +90,7 @@ function O(e) {
       activeSlide: v,
       width: 440,
       children: [(0, r.jsxs)(l.Mi4, {
-        id: N.x.INIT,
+        id: b.x.INIT,
         children: [(0, r.jsxs)(l.hzk, {
           className: E.content,
           children: [(0, r.jsx)("div", {
@@ -118,7 +118,7 @@ function O(e) {
           })
         })]
       }), (0, r.jsxs)(l.Mi4, {
-        id: N.x.REGISTER,
+        id: b.x.REGISTER,
         children: [(0, r.jsxs)(l.hzk, {
           className: E.content,
           children: [(0, r.jsx)("div", {
@@ -139,13 +139,13 @@ function O(e) {
           })
         })]
       }), (0, r.jsx)(l.Mi4, {
-        id: N.x.NAME,
+        id: b.x.NAME,
         children: (0, r.jsxs)("form", {
           onSubmit: e => {
-            e.preventDefault(), (0, f.Sr)(b, o, T).then(async () => {
+            e.preventDefault(), (0, f.Sr)(x, o, T).then(async () => {
               await (0, u.Yn)(!1)
             }).then(() => a()).catch(() => {
-              A(_.NW.string(_.t.fEptJC)), S(N.x.INIT)
+              A(_.NW.string(_.t.fEptJC)), S(b.x.INIT)
             })
           },
           children: [(0, r.jsxs)(l.hzk, {
@@ -162,7 +162,7 @@ function O(e) {
                 children: _.NW.string(_.t["Jzd+z8"])
               }), (0, r.jsx)(l.oil, {
                 className: E.input,
-                value: b,
+                value: x,
                 onChange: e => {
                   j(e), O(0 === e.length)
                 },
@@ -180,7 +180,7 @@ function O(e) {
               look: l.zxk.Looks.LINK,
               color: l.zxk.Colors.PRIMARY,
               onClick: () => {
-                S(N.x.INIT)
+                S(b.x.INIT)
               },
               children: _.NW.string(_.t["13/7kZ"])
             })]
@@ -229,9 +229,9 @@ function S() {
   let {
     credentials: e,
     hasFetchedCredentials: t
-  } = (0, a.cj)([b.Z], () => ({
-    hasFetchedCredentials: b.Z.hasFetchedCredentials(),
-    credentials: b.Z.getCredentials()
+  } = (0, a.cj)([x.Z], () => ({
+    hasFetchedCredentials: x.Z.hasFetchedCredentials(),
+    credentials: x.Z.getCredentials()
   }));
   i.useEffect(() => {
     t || (0, f.hL)()
@@ -288,7 +288,7 @@ function S() {
               challenge: n
             })))
           }).catch(e => {
-            e.message !== _.NW.string(_.t.N2yb9f) && p.Z.captureException(e)
+            e.message !== _.NW.string(_.t.N2yb9f) && g.Z.captureException(e)
           }).finally(() => {
             s(!1)
           })

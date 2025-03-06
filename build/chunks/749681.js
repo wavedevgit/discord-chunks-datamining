@@ -1,36 +1,36 @@
 /** Chunk was on 93886 **/
 n.r(t), n.d(t, {
   transitionToGlobalDiscovery: () => function e(t) {
-    var n, x, f;
+    var n, f, x;
     let b = t.tab;
     switch (d.Z.setState({
         selectedTab: b
       }), b) {
       case u.GlobalDiscoveryTab.SERVERS:
         let _ = t.selectedServersTab;
-        return null != _ ? l.Z.setState({
+        return null != _ ? i.Z.setState({
           selectedTab: _,
           entrypoint: null !== (n = t.entrypoint) && void 0 !== n ? n : p.Qq.UNKNOWN
-        }) : l.Z.setState({
-          entrypoint: null !== (x = t.entrypoint) && void 0 !== x ? x : p.Qq.UNKNOWN
+        }) : i.Z.setState({
+          entrypoint: null !== (f = t.entrypoint) && void 0 !== f ? f : p.Qq.UNKNOWN
         }), (0, o.uL)(m.Z5c.GLOBAL_DISCOVERY_SERVERS, t.extra);
       case u.GlobalDiscoveryTab.APPS:
         if (null != t.newSessionState) {
           let n = (0, a.PM)(),
             {
-              guildId: l,
-              entrypoint: i
+              guildId: i,
+              entrypoint: l
             } = t.newSessionState;
           if (r.z8.setState({
               sessionId: n,
-              guildId: null != l ? l : null,
-              entrypoint: i,
+              guildId: null != i ? i : null,
+              entrypoint: l,
               trackedOpenedFromExternalEntrypoint: !1
             }), c.default.track(m.rMx.APP_DIRECTORY_OPENED, {
-              source: null == i ? void 0 : i.name,
+              source: null == l ? void 0 : l.name,
               session_id: n,
-              guild_id: l,
-              user_id: null === (f = s.default.getCurrentUser()) || void 0 === f ? void 0 : f.id
+              guild_id: i,
+              user_id: null === (x = s.default.getCurrentUser()) || void 0 === x ? void 0 : x.id
             }), t.newSessionState.restorePreviousView) return e(function() {
             let {
               lastItem: e
@@ -71,7 +71,7 @@ n.r(t), n.d(t, {
         if (null != t.categoryId) return (0, o.uL)(m.Z5c.GLOBAL_DISCOVERY_APPS_CATEGORY(t.categoryId.toString()));
         else return (0, o.uL)(m.Z5c.GLOBAL_DISCOVERY_APPS);
       case u.GlobalDiscoveryTab.QUESTS:
-        return (0, i.navigateToQuestHome)({
+        return (0, l.navigateToQuestHome)({
           fromContent: t.questContent,
           questId: t.questId
         });
@@ -82,8 +82,8 @@ n.r(t), n.d(t, {
 }), n(610138), n(216116), n(78328), n(815648), n(47120), n(411104);
 var r = n(258971),
   a = n(726115),
-  l = n(859921),
-  i = n(341907),
+  i = n(859921),
+  l = n(341907),
   o = n(703656),
   s = n(594174),
   c = n(626135),

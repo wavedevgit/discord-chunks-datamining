@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => _
 }), n(47120);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(74538),
   u = n(242291),
   m = n(830253),
-  g = n(792165),
-  p = n(409673),
+  p = n(792165),
+  g = n(409673),
   h = n(603074),
   f = n(388032),
-  b = n(10314);
+  x = n(10314);
 
-function N(e) {
+function b(e) {
   let {
     onSelect: t
   } = e, [n, a] = i.useState(!1), o = (0, s.e7)([c.default], () => c.default.getCurrentUser()), u = d.ZP.canUseCustomCallSounds(o);
@@ -42,14 +42,14 @@ function N(e) {
           channel: null,
           onClose: t,
           onSelect: m,
-          gridNotice: u ? null : (0, r.jsx)(g.o, {}),
+          gridNotice: u ? null : (0, r.jsx)(p.o, {}),
           analyticsSource: "call sounds edit setting"
         })
       })
     },
     children: e => {
       var t, i;
-      return (0, r.jsx)(p.hU, (t = function(e) {
+      return (0, r.jsx)(g.hU, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -74,7 +74,7 @@ function N(e) {
         children: (0, r.jsx)(l.vdY, {
           size: "md",
           color: "currentColor",
-          className: b.secondaryIcon
+          className: x.secondaryIcon
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
@@ -90,7 +90,7 @@ function N(e) {
   })
 }
 
-function x(e) {
+function N(e) {
   let {
     sound: t
   } = e, {
@@ -99,13 +99,13 @@ function x(e) {
     emojiName: t.emojiName,
     soundName: t.name
   });
-  return (0, r.jsx)(p.hU, {
+  return (0, r.jsx)(g.hU, {
     onClick: n,
     text: i,
     children: (0, r.jsx)(l.gj8, {
       size: "md",
       color: "currentColor",
-      className: b.secondaryIconActive
+      className: x.secondaryIconActive
     })
   })
 }
@@ -117,17 +117,17 @@ function _(e) {
     onSelect: i
   } = e, s = null != t, c = null == t ? void 0 : t.emojiId, d = null == t ? void 0 : t.emojiName, u = s && (null != d || null != c);
   return (0, r.jsxs)("div", {
-    className: b.soundButtonSettingContainer,
+    className: x.soundButtonSettingContainer,
     children: [(0, r.jsxs)("div", {
-      className: b.container,
+      className: x.container,
       children: [u && (0, r.jsx)(o.Z, {
         emojiId: c,
         emojiName: d,
-        className: b.emoji
+        className: x.emoji
       }), (0, r.jsx)(l.Text, {
         variant: "text-xs/medium",
         color: "header-primary",
-        className: b.soundText,
+        className: x.soundText,
         children: null == t ? f.NW.string(f.t.PoWNfX) : n ? f.NW.format(f.t.B6HU6O, {
           soundName: t.name,
           subtextHook: e => (0, r.jsx)(l.Text, {
@@ -137,24 +137,24 @@ function _(e) {
             children: e
           })
         }) : t.name
-      }), s ? (0, r.jsx)(x, {
+      }), s ? (0, r.jsx)(N, {
         sound: t
       }) : (0, r.jsx)(l.gj8, {
         size: "md",
         color: "currentColor",
-        className: b.secondaryIconDisabled
+        className: x.secondaryIconDisabled
       })]
     }), (0, r.jsxs)("div", {
-      className: b.container,
-      children: [(0, r.jsx)(N, {
+      className: x.container,
+      children: [(0, r.jsx)(b, {
         onSelect: i
-      }), s && !n && (0, r.jsx)(p.hU, {
+      }), s && !n && (0, r.jsx)(g.hU, {
         onClick: () => i(null),
         text: f.NW.string(f.t.jmtcGB),
         children: (0, r.jsx)(l.XHJ, {
           size: "md",
           color: a.Z.unsafe_rawColors.RED_400.css,
-          className: b.secondaryIcon
+          className: x.secondaryIcon
         })
       })]
     })]

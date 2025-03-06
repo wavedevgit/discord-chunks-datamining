@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  q: () => N
+  q: () => b
 });
 var r = n(200651),
   i = n(192379),
@@ -14,17 +14,17 @@ var c = n(630759),
 n(921157);
 var u = n(171368),
   m = n(594174),
-  g = n(51144),
-  p = n(388032),
+  p = n(51144),
+  g = n(388032),
   h = n(845685);
 
 function f(e) {
   let {
     userId: t,
     count: n
-  } = e, d = (0, s.e7)([m.default], () => m.default.getUser(t)), f = g.ZP.getFormattedName(d), b = i.useCallback(() => {
+  } = e, d = (0, s.e7)([m.default], () => m.default.getUser(t)), f = p.ZP.getFormattedName(d), x = i.useCallback(() => {
     (0, c.Zn)(t)
-  }, [t]), N = i.useCallback(() => (0, u.openUserProfileModal)({
+  }, [t]), b = i.useCallback(() => (0, u.openUserProfileModal)({
     userId: t
   }), [t]);
   return i.useEffect(() => {
@@ -39,7 +39,7 @@ function f(e) {
       className: h.text,
       children: [(0, r.jsx)(a.P3F, {
         className: h.username,
-        onClick: N,
+        onClick: b,
         children: (0, r.jsx)(a.Text, {
           variant: "text-md/semibold",
           color: "interactive-active",
@@ -48,12 +48,12 @@ function f(e) {
       }), (0, r.jsx)(a.Text, {
         variant: "text-md/medium",
         color: "header-secondary",
-        children: p.NW.format(p.t["/MBjYG"], {
+        children: g.NW.format(g.t["/MBjYG"], {
           count: n
         })
       })]
     }), (0, r.jsx)(a.P3F, {
-      onClick: b,
+      onClick: x,
       className: h.sectionIconContainer,
       children: (0, r.jsx)(a.XHJ, {
         size: "xs"
@@ -62,7 +62,7 @@ function f(e) {
   })
 }
 
-function b(e) {
+function x(e) {
   let {
     className: t,
     userId: n,
@@ -78,7 +78,7 @@ function b(e) {
       children: [(0, r.jsx)(a.Text, {
         variant: "text-sm/semibold",
         color: "interactive-active",
-        children: p.NW.format(p.t.N4qBBA, {
+        children: g.NW.format(g.t.N4qBBA, {
           index: l + 1
         })
       }), (0, r.jsx)(a.Text, {
@@ -97,7 +97,7 @@ function b(e) {
   })
 }
 
-function N(e) {
+function b(e) {
   let {
     userId: t
   } = e, n = (0, d._)(t);
@@ -106,7 +106,7 @@ function N(e) {
       userId: t,
       count: n.length
     }), n.map((e, s) => (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(b, {
+      children: [(0, r.jsx)(x, {
         className: h.row,
         userId: t,
         index: s,

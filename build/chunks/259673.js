@@ -1,24 +1,24 @@
 /** Chunk was on 2026 **/
 n.d(t, {
-  M: () => p
+  M: () => f
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   a = n(442837),
-  s = n(980591),
-  l = n(921813),
-  o = n(643879),
+  l = n(980591),
+  o = n(921813),
+  s = n(643879),
   c = n(317257),
   u = n(25990),
   d = n(74538),
   m = n(755419);
-let p = e => {
+let f = e => {
   var t, n;
   let {
-    user: p
-  } = e, f = d.ZP.canUsePremiumProfileCustomization(p), v = (0, a.cj)([u.Z], () => u.Z.getAllPending()), {
-    pendingAvatarV2: h
-  } = v, b = function(e, t) {
+    user: f
+  } = e, p = d.ZP.canUsePremiumProfileCustomization(f), v = (0, a.cj)([u.Z], () => u.Z.getAllPending()), {
+    pendingAvatarV2: b
+  } = v, h = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -32,13 +32,13 @@ let p = e => {
       for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(v, ["pendingAvatarV2"]), x = (0, o.SD)({
-    userId: p.id,
-    image: h
-  }), [P, g] = (0, i.useState)(!1);
-  return (0, s.Z)(() => {
-    g(!0)
-  }, 250), (0, r.jsx)(l.Z, (t = function(e) {
+  }(v, ["pendingAvatarV2"]), g = (0, s.SD)({
+    userId: f.id,
+    image: b
+  }), [x, P] = (0, i.useState)(!1);
+  return (0, l.Z)(() => {
+    P(!0)
+  }, 250), (0, r.jsx)(o.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -55,12 +55,12 @@ let p = e => {
       })
     }
     return e
-  }({}, b), n = n = {
-    pendingAvatar: x,
-    user: p,
+  }({}, h), n = n = {
+    pendingAvatar: g,
+    user: f,
     pendingBadges: [(0, m.X2)()],
-    shouldOpenBadgeTooltip: e => P && e === c.l.ORB_PROFILE_BADGE,
-    canUsePremiumCustomization: f,
+    shouldOpenBadgeTooltip: e => x && e === c.l.ORB_PROFILE_BADGE,
+    canUsePremiumCustomization: p,
     disabledInputs: !0,
     hideExampleButton: !0
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

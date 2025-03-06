@@ -63,6 +63,7 @@ function d(e) {
       ActivityAgeGateModal: e
     } = await n.e("57951").then(n.bind(n, 252528));
     return n => (0, r.jsx)(e, c(s({}, n), {
+      channelId: a,
       application: t,
       onAgree: l,
       onDisagree: d

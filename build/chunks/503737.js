@@ -1,12 +1,12 @@
-/** Chunk was on 51424 **/
+/** Chunk was on 76282 **/
 n.d(t, {
-  Z: () => p
+  Z: () => E
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  l = n(570140),
-  o = n(468026),
+  o = n(570140),
+  l = n(468026),
   a = n(317770),
   s = n(981631),
   c = n(388032);
@@ -31,24 +31,24 @@ function u(e) {
 }
 let d = "ActivityInviteManager",
   _ = () => {
-    l.Z.dispatch({
+    o.Z.dispatch({
       type: "ACTIVITY_INVITE_MODAL_CLOSE"
     })
   };
-class E extends a.Z {
+class p extends a.Z {
   _initialize() {
-    l.Z.subscribe("ACTIVITY_INVITE_MODAL_OPEN", this.handleModalOpen), l.Z.subscribe("ACTIVITY_INVITE_MODAL_CLOSE", this.handleModalClose)
+    o.Z.subscribe("ACTIVITY_INVITE_MODAL_OPEN", this.handleModalOpen), o.Z.subscribe("ACTIVITY_INVITE_MODAL_CLOSE", this.handleModalClose)
   }
   _terminate() {
-    l.Z.unsubscribe("ACTIVITY_INVITE_MODAL_OPEN", this.handleModalOpen), l.Z.unsubscribe("ACTIVITY_INVITE_MODAL_CLOSE", this.handleModalClose)
+    o.Z.unsubscribe("ACTIVITY_INVITE_MODAL_OPEN", this.handleModalOpen), o.Z.unsubscribe("ACTIVITY_INVITE_MODAL_CLOSE", this.handleModalClose)
   }
   handleModalOpen(e) {
     let {
       activity: t,
-      isPrivate: l,
+      isPrivate: o,
       context: a
-    } = e, E = a === s.IlC.POPOUT ? i.u1M : i.z1l;
-    l ? (0, i.h7j)(e => (0, r.jsx)(o.default, u({
+    } = e, p = a === s.IlC.POPOUT ? i.u1M : i.z1l;
+    o ? (0, i.h7j)(e => (0, r.jsx)(l.default, u({
       title: c.NW.formatToPlainString(c.t["2tN7io"], {
         name: t.name
       }),
@@ -57,7 +57,7 @@ class E extends a.Z {
     }, e)), {
       onCloseCallback: _,
       modalKey: d
-    }, E) : (0, i.ZDy)(async () => {
+    }, p) : (0, i.ZDy)(async () => {
       let {
         default: e
       } = await n.e("79921").then(n.bind(n, 699099));
@@ -65,11 +65,11 @@ class E extends a.Z {
     }, {
       onCloseCallback: _,
       modalKey: d,
-      contextKey: E
+      contextKey: p
     })
   }
   handleModalClose(e) {
     (0, i.Mr3)(d)
   }
 }
-let p = new E
+let E = new p

@@ -228,7 +228,8 @@ function N(e) {
     entrypoint: n,
     contextualGuildId: i,
     contextualChannelId: o,
-    onSubmit: a
+    onSubmit: a,
+    appContext: l
   } = e;
   r.ZP.trackWithMetadata(u.rMx.REPORT_APPLICATION_CLICKED, {
     application_id: t.id,
@@ -244,7 +245,8 @@ function N(e) {
     contextualChannelId: o,
     entrypoint: n
   }, {}, {
-    onSubmit: a
+    onSubmit: a,
+    appContext: l
   })
 }
 

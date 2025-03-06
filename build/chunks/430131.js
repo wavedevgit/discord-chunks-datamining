@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => m
 });
@@ -18,15 +18,15 @@ function m(e) {
     errors: t,
     pendingNick: n,
     currentNick: m,
-    username: g,
-    guild: p
-  } = e, h = null != n ? n : m, f = (0, i.e7)([l.Z], () => l.Z.can(c.Plq.CHANGE_NICKNAME, p) || l.Z.can(c.Plq.MANAGE_NICKNAMES, p));
+    username: p,
+    guild: g
+  } = e, h = null != n ? n : m, f = (0, i.e7)([l.Z], () => l.Z.can(c.Plq.CHANGE_NICKNAME, g) || l.Z.can(c.Plq.MANAGE_NICKNAMES, g));
   return (0, r.jsxs)(a.Z, {
     title: d.NW.string(d.t.me1lRk),
     errors: t,
     children: [(0, r.jsx)(s.oil, {
       value: null != h ? h : "",
-      placeholder: g,
+      placeholder: p,
       maxLength: c.l$U,
       onChange: function(e) {
         (0, o.wi)(e, m)

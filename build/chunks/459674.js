@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
@@ -14,7 +14,7 @@ var i = n(442837),
   u = n(388032),
   m = n(802138);
 
-function g(e) {
+function p(e) {
   let {
     refreshStyles: t = !1
   } = e, n = (0, i.e7)([o.ZP], () => o.ZP.disableVoiceChannelChangeAlert);

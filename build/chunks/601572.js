@@ -1,52 +1,52 @@
-/** Chunk was on 55440 **/
+/** Chunk was on 45588 **/
 n.d(t, {
-  default: () => N
+  default: () => k
 }), n(47120);
 var o = n(200651),
-  i = n(192379),
-  a = n(481060),
+  a = n(192379),
+  i = n(481060),
   r = n(846027),
   c = n(410575),
   l = n(2052),
-  s = n(100527),
-  d = n(906732),
+  d = n(100527),
+  s = n(906732),
   _ = n(600164),
   u = n(313201),
   b = n(695346),
   f = n(932724),
-  g = n(716161),
-  p = n(672339),
+  p = n(716161),
+  g = n(672339),
   m = n(898531),
   h = n(131951),
-  I = n(594174),
-  v = n(626135),
-  T = n(747545),
-  C = n(981631),
-  O = n(388032),
-  S = n(262474);
+  v = n(594174),
+  I = n(626135),
+  C = n(747545),
+  T = n(981631),
+  S = n(388032),
+  O = n(262474);
 
-function N(e) {
+function k(e) {
   let {
     transitionState: t,
     videoEnabled: n,
-    onEnable: N,
-    onClose: k
-  } = e, E = h.Z.getCameraComponent(), A = (0, u.Dt)(), x = (0, m.Z)(), y = b.qF.useSetting(), [P, L] = i.useState((0, f.P)(I.default.getCurrentUser())), w = (0, l.O)(), {
+    onEnable: k,
+    onClose: N
+  } = e, x = h.Z.getCameraComponent(), w = (0, u.Dt)(), E = (0, m.Z)(), A = b.qF.useSetting(), [P, y] = a.useState((0, f.P)(v.default.getCurrentUser())), L = (0, l.O)(), {
     analyticsLocations: B
-  } = (0, d.ZP)(s.Z.CAMERA_PREVIEW), R = i.useRef(null);
-  i.useEffect(() => {
-    v.default.track(C.rMx.OPEN_MODAL, {
+  } = (0, s.ZP)(d.Z.CAMERA_PREVIEW), R = a.useRef(null);
+  a.useEffect(() => {
+    I.default.track(T.rMx.OPEN_MODAL, {
       type: "Camera Preview Modal"
     })
-  }, []), i.useEffect(() => {
+  }, []), a.useEffect(() => {
     var e;
     null === (e = R.current) || void 0 === e || e.scrollToTop()
   }, []);
-  let D = async () => {
-    await Z(), r.Z.setVideoEnabled(!0), null == N || N()
-  }, Z = async () => {
+  let W = async () => {
+    await D(), r.Z.setVideoEnabled(!0), null == k || k()
+  }, D = async () => {
     try {
-      await (0, p.wG)(P, {
+      await (0, g.wG)(P, {
         location: function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -65,78 +65,78 @@ function N(e) {
           }
           return e
         }({
-          page: C.ZY5.PREVIEW_CAMERA_MODAL
-        }, w.location)
+          page: T.ZY5.PREVIEW_CAMERA_MODAL
+        }, L.location)
       })
     } catch (e) {}
-    await k(), (0, g.Up)(P)
+    await N(), (0, p.Up)(P)
   };
-  return (0, o.jsx)(d.Gt, {
+  return (0, o.jsx)(s.Gt, {
     value: B,
     children: (0, o.jsx)(c.Z, {
-      page: C.ZY5.PREVIEW_CAMERA_MODAL,
-      children: (0, o.jsxs)(a.Y0X, {
-        className: S.modalRoot,
-        size: a.CgR.DYNAMIC,
-        "aria-labelledby": A,
+      page: T.ZY5.PREVIEW_CAMERA_MODAL,
+      children: (0, o.jsxs)(i.Y0X, {
+        className: O.modalRoot,
+        size: i.CgR.DYNAMIC,
+        "aria-labelledby": w,
         transitionState: t,
-        children: [(0, o.jsxs)(a.hzk, {
-          className: x ? S.contentWithVideoBackgrounds : S.content,
+        children: [(0, o.jsxs)(i.hzk, {
+          className: E ? O.contentWithVideoBackgrounds : O.content,
           scrollerRef: R,
-          children: [(0, o.jsx)(a.X6q, {
-            id: A,
-            className: S.header,
+          children: [(0, o.jsx)(i.X6q, {
+            id: w,
+            className: O.header,
             variant: "heading-xl/semibold",
-            children: n ? O.NW.string(O.t.LAwwbW) : O.NW.string(O.t["/HITVF"])
-          }), (0, o.jsx)(T.Z, {
+            children: n ? S.NW.string(S.t.LAwwbW) : S.NW.string(S.t["/HITVF"])
+          }), (0, o.jsx)(C.Z, {
             hidePreviewToggle: !0,
             showSmallBackgroundOptions: !0,
             hideDeviceHeader: !0,
             hideCameraSettingsLink: !0,
             selectedBackgroundOption: P,
-            onSelectBackgroundOption: L,
+            onSelectBackgroundOption: y,
             hideDeviceSelector: n,
             renderCamera: e => (0, o.jsxs)("div", {
-              className: S.cameraPreview,
+              className: O.cameraPreview,
               children: [(0, o.jsx)("div", {
-                className: S.camera,
-                children: (0, o.jsx)(E, {
+                className: O.camera,
+                children: (0, o.jsx)(x, {
                   disabled: !1,
                   deviceId: e,
                   width: 368,
                   height: 207
                 })
-              }), (0, o.jsx)(T.S, {})]
+              }), (0, o.jsx)(C.S, {})]
             }),
-            onLearnMore: k
+            onLearnMore: N
           })]
-        }), (0, o.jsxs)(a.mzw, {
+        }), (0, o.jsxs)(i.mzw, {
           justify: _.Z.Justify.BETWEEN,
           children: [(() => {
-            let e = n ? O.NW.string(O.t.KQENho) : O.NW.string(O.t.kgIe9f);
-            return (0, o.jsx)(a.zxk, {
-              onClick: n ? Z : D,
-              size: a.zxk.Sizes.SMALL,
+            let e = n ? S.NW.string(S.t.KQENho) : S.NW.string(S.t.kgIe9f);
+            return (0, o.jsx)(i.zxk, {
+              onClick: n ? D : W,
+              size: i.zxk.Sizes.SMALL,
               autoFocus: !n,
               children: e
             })
-          })(), (0, o.jsx)(a.XZJ, {
+          })(), (0, o.jsx)(i.XZJ, {
             size: 18,
-            type: a.XZJ.Types.INVERTED,
-            value: y,
+            type: i.XZJ.Types.INVERTED,
+            value: A,
             onChange: () => {
-              b.qF.updateSetting(!y), v.default.track(C.rMx.UPDATE_USER_SETTINGS_LOCAL, {
-                always_preview_video: !y
+              b.qF.updateSetting(!A), I.default.track(T.rMx.UPDATE_USER_SETTINGS_LOCAL, {
+                always_preview_video: !A
               })
             },
-            children: (0, o.jsx)(a.Text, {
+            children: (0, o.jsx)(i.Text, {
               variant: "text-sm/normal",
-              children: O.NW.string(O.t["3Ppr1t"])
+              children: S.NW.string(S.t["3Ppr1t"])
             })
           })]
-        }), (0, o.jsx)(a.olH, {
-          onClick: k,
-          className: S.modalClose
+        }), (0, o.jsx)(i.olH, {
+          onClick: N,
+          className: O.modalClose
         })]
       })
     })

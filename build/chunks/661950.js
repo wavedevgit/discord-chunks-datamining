@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => T
 });
@@ -13,13 +13,13 @@ var i = n(442837),
   d = n(738486),
   u = n(429789),
   m = n(208113),
-  g = n(625205),
-  p = n(325808),
+  p = n(625205),
+  g = n(325808),
   h = n(823087),
   f = n(232388),
-  b = n(716210),
-  N = n(459674),
-  x = n(803567),
+  x = n(716210),
+  b = n(459674),
+  N = n(803567),
   _ = n(269876),
   E = n(976758),
   j = n(726985),
@@ -40,7 +40,7 @@ function T() {
       children: [(0, r.jsxs)(d.Z, {
         children: [(0, r.jsx)(a.F, {
           setting: j.s6.VOICE_AND_VIDEO_DEVICES,
-          children: (0, r.jsx)(g.Z, {})
+          children: (0, r.jsx)(p.Z, {})
         }), (0, r.jsx)(a.F, {
           setting: j.s6.VOICE_AND_VIDEO_VOLUME_CONTROLS,
           children: (0, r.jsx)(E.Z, {})
@@ -56,7 +56,7 @@ function T() {
       }), (0, r.jsxs)(d.Z, {
         children: [(0, r.jsx)(a.F, {
           setting: j.s6.VOICE_AND_VIDEO_INPUT_MODE,
-          children: (0, r.jsx)(p.Z, {})
+          children: (0, r.jsx)(g.Z, {})
         }), (0, r.jsx)(a.F, {
           setting: j.s6.VOICE_AND_VIDEO_SENSITIVITY,
           children: e === O.pM.VOICE_ACTIVITY && (0, r.jsx)(_.Z, {})
@@ -65,16 +65,16 @@ function T() {
     }), (0, r.jsx)(c.Z, {
       webSetting: j.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
       title: v.NW.string(v.t["6I6GUl"]),
-      children: (0, r.jsx)(x.Z, {
+      children: (0, r.jsx)(N.Z, {
         refreshStyles: !0
       })
     }), (0, r.jsx)(c.Z, {
       title: v.NW.string(v.t["8/udY2"]),
       webSetting: j.s6.VOICE_AND_VIDEO_VOICE_ADVANCED,
       children: (0, r.jsxs)(d.Z, {
-        children: [(0, r.jsx)(b.Z, {
+        children: [(0, r.jsx)(x.Z, {
           refreshStyles: !0
-        }), (0, r.jsx)(N.Z, {
+        }), (0, r.jsx)(b.Z, {
           refreshStyles: !0
         }), (0, r.jsx)(u.Z, {
           refreshStyles: !0

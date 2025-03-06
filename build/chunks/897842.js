@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var a = n(120356),
-  l = n.n(a),
-  i = n(466377),
+  i = n.n(a),
+  l = n(466377),
   o = n(310752),
   s = n(313201),
   c = n(731994),
@@ -19,12 +19,12 @@ let u = "UPLOAD_ERROR_MODAL_KEY",
       help: n,
       transitionState: a
     } = e, u = (0, s.Dt)();
-    return (0, r.jsx)(i.Y0, {
-      size: i.Cg.DYNAMIC,
+    return (0, r.jsx)(l.Y0, {
+      size: l.Cg.DYNAMIC,
       "aria-labelledby": u,
       transitionState: a,
       children: (0, r.jsx)("div", {
-        className: l()(d.uploadModal, d.errorModal),
+        className: i()(d.uploadModal, d.errorModal),
         children: (0, r.jsxs)("div", {
           className: d.inner,
           children: [(0, r.jsx)(o.Z, {

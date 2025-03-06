@@ -1,11 +1,11 @@
-/** Chunk was on 51424 **/
+/** Chunk was on 76282 **/
 n.d(t, {
   Z: () => g
 }), n(653041), n(47120), n(266796);
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  o = n(120356),
+  l = n.n(o),
   a = n(392711),
   s = n.n(a),
   c = n(714338),
@@ -13,7 +13,7 @@ var r = n(200651),
   d = n(981631),
   _ = n(725082);
 
-function E(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,11 +21,11 @@ function E(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let p = {
+let E = {
     PRIMARY: () => !0,
     SECONDARY: () => !0
   },
-  m = () => (0, r.jsxs)("div", {
+  f = () => (0, r.jsxs)("div", {
     className: _.symbol,
     children: [(0, r.jsx)("div", {
       className: _.symbolBackground
@@ -34,7 +34,7 @@ let p = {
       src: n(977706)
     })]
   }, "symbol");
-class f extends i.PureComponent {
+class m extends i.PureComponent {
   componentDidMount() {
     this.setState({
       animating: !0
@@ -42,10 +42,10 @@ class f extends i.PureComponent {
       this.setState({
         renderSecondary: !0
       })
-    }, 120), this._doneTimeout = setTimeout(this.done, 1e3), p.PRIMARY()
+    }, 120), this._doneTimeout = setTimeout(this.done, 1e3), E.PRIMARY()
   }
   componentDidUpdate(e, t) {
-    this.state.renderSecondary && !t.renderSecondary && p.SECONDARY()
+    this.state.renderSecondary && !t.renderSecondary && E.SECONDARY()
   }
   componentWillUnmount() {
     clearTimeout(this._renderSecondaryTimeout), clearTimeout(this._doneTimeout)
@@ -120,28 +120,28 @@ class f extends i.PureComponent {
       offsetX: t,
       offsetY: n,
       animating: i,
-      scale: l
+      scale: o
     } = this.state, a = [this.renderPrimary()];
     return e && a.push(this.renderSecondary(t, n)), (0, r.jsx)("div", {
-      className: o()(_.container, {
+      className: l()(_.container, {
         [_.animate]: i
       }),
       style: {
         top: this.props.top,
         left: this.props.left,
-        transform: "scale(".concat(l, ")")
+        transform: "scale(".concat(o, ")")
       },
       children: a
     })
   }
   constructor(...e) {
-    super(...e), E(this, "_renderSecondaryTimeout", null), E(this, "_doneTimeout", null), E(this, "state", {
+    super(...e), p(this, "_renderSecondaryTimeout", null), p(this, "_doneTimeout", null), p(this, "state", {
       animating: !1,
       renderSecondary: !1,
       scale: s().random(.6, 1, !0),
       offsetX: s().random(0, 140, !1) - 70,
       offsetY: s().random(0, 140, !1) - 70
-    }), E(this, "done", () => {
+    }), p(this, "done", () => {
       this.props.onAnimationComplete(this.props.componentId)
     })
   }
@@ -161,34 +161,34 @@ class h extends i.PureComponent {
   }
   render() {
     return (0, r.jsx)("div", {
-      className: o()(_.ragingDemon, {
+      className: l()(_.ragingDemon, {
         [_.visible]: this.state.visible
       }),
       children: this.children
     })
   }
   constructor(...e) {
-    super(...e), E(this, "_timeouts", []), E(this, "children", []), E(this, "state", {
+    super(...e), p(this, "_timeouts", []), p(this, "children", []), p(this, "state", {
       explosions: 0,
       visible: !1
-    }), E(this, "setTimeout", (e, t) => {
+    }), p(this, "setTimeout", (e, t) => {
       let n = setTimeout(e, t);
       return this._timeouts.push(n), n
-    }), E(this, "removeExplosion", e => {
+    }), p(this, "removeExplosion", e => {
       let t = this.children,
         n = t.findIndex(t => {
-          if (t.type !== f) return !1;
+          if (t.type !== m) return !1;
           let n = t.props;
           return null != n.componentId && n.componentId === e
         });
       n >= 0 && t.splice(n, 1), this.forceUpdate()
-    }), E(this, "createExplosion", () => {
+    }), p(this, "createExplosion", () => {
       let e = this.children,
         t = window.innerWidth / 2 >> 0,
         n = window.innerHeight / 2 >> 0;
       if (this.state.explosions < 8) {
         let i = "expl-".concat(this.state.explosions);
-        e.push((0, r.jsx)(f, {
+        e.push((0, r.jsx)(m, {
           componentId: i,
           top: s().random(n - 100, n + 100, !1),
           left: s().random(t - 200, t + 200, !1),
@@ -197,9 +197,9 @@ class h extends i.PureComponent {
           explosions: this.state.explosions + 1
         })
       } else this.setTimeout(this.addSymbol, 750)
-    }), E(this, "addSymbol", () => {
-      this.children = [(0, r.jsx)(m, {}, "symbol")], this.forceUpdate(), this.setTimeout(this.delayedClose, 3e3)
-    }), E(this, "delayedClose", () => {
+    }), p(this, "addSymbol", () => {
+      this.children = [(0, r.jsx)(f, {}, "symbol")], this.forceUpdate(), this.setTimeout(this.delayedClose, 3e3)
+    }), p(this, "delayedClose", () => {
       this.props.handleDemonClose()
     })
   }

@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => u,
   r: () => d
@@ -19,7 +19,7 @@ let c = a.ZP.getEnableHardwareAcceleration() ? i.Xo$ : i.qEK,
     } = e, {
       avatarSrc: u,
       avatarDecorationSrc: m,
-      eventHandlers: g
+      eventHandlers: p
     } = (0, s.Z)({
       user: a,
       size: d
@@ -41,7 +41,7 @@ let c = a.ZP.getEnableHardwareAcceleration() ? i.Xo$ : i.qEK,
         })
       }
       return e
-    }({}, g), n = n = {
+    }({}, p), n = n = {
       children: (0, r.jsx)(c, {
         className: o.__invalid_avatar,
         src: u,

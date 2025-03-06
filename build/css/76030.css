@@ -1,6 +1,6 @@
 /**
   Module ID: 76030
-  Original File Name: a15e6ec0e02f718d
+  Original File Name: f494884d0b0f0751
 **/
 .image__04666 {
     width: 100%;
@@ -9702,6 +9702,18 @@ html .progress__61462 {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
+}
+
+.inviteContainer_a4b24e {
+    justify-self: auto
+}
+
+.infoWrapper_a4b24e {
+    flex: 1;
+    padding-top: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px
 }
 
 .guildIconImage_bab6e1 {

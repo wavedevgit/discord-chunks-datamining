@@ -5,7 +5,7 @@ n.d(t, {
   Hg: () => N,
   Kn: () => C,
   Nq: () => h,
-  TW: () => f,
+  TW: () => x,
   pn: () => b,
   uv: () => v,
   vx: () => _,
@@ -13,8 +13,8 @@ n.d(t, {
 });
 var r = n(442837),
   a = n(704215),
-  l = n(605236),
-  i = n(276444),
+  i = n(605236),
+  l = n(276444),
   o = n(822070),
   s = n(520540),
   c = n(533525),
@@ -23,7 +23,7 @@ var r = n(442837),
   m = n(388032);
 let h = "40%",
   p = 8,
-  x = e => {
+  f = e => {
     let {
       hasSentAll: t,
       hasSentAtLeastOne: n,
@@ -40,19 +40,19 @@ let h = "40%",
       helpdeskArticle: a
     })
   },
-  f = e => {
+  x = e => {
     let t = v(e);
     return null != t && t !== u.g2L.NOT_ELIGIBLE
   },
   b = e => {
-    let t = f(e),
+    let t = x(e),
       n = (0, c.b)("PremiumManagementSettings"),
-      a = (0, r.e7)([i.Z], () => i.Z.getRecipientStatus());
+      a = (0, r.e7)([l.Z], () => l.Z.getRecipientStatus());
     return !!t && (!!n || a.size > 0)
   },
   _ = e => {
     let t = g(e),
-      n = (0, l.wE)(a.z.REFERRAL_INCENTIVE_TOOLTIP_AND_TAB_COLOR);
+      n = (0, i.wE)(a.z.REFERRAL_INCENTIVE_TOOLTIP_AND_TAB_COLOR);
     return t && !n
   },
   g = e => {
@@ -68,7 +68,7 @@ let h = "40%",
       location: e
     }, {
       autoTrackExposure: !0
-    }), a = (0, r.e7)([i.Z], () => i.Z.getIsSenderEligibleForIncentive());
+    }), a = (0, r.e7)([l.Z], () => l.Z.getIsSenderEligibleForIncentive());
     return t && n && a
   },
   v = e => {
@@ -84,8 +84,8 @@ let h = "40%",
       location: e
     }, {
       autoTrackExposure: !0
-    }), a = (0, r.e7)([i.Z], () => i.Z.getIsFetchingReferralIncentiveEligibility()), l = (0, r.e7)([i.Z], () => i.Z.getSenderIncentiveState());
-    return a ? u.g2L.NOT_ELIGIBLE : n && t ? l : u.g2L.NOT_ELIGIBLE
+    }), a = (0, r.e7)([l.Z], () => l.Z.getIsFetchingReferralIncentiveEligibility()), i = (0, r.e7)([l.Z], () => l.Z.getSenderIncentiveState());
+    return a ? u.g2L.NOT_ELIGIBLE : n && t ? i : u.g2L.NOT_ELIGIBLE
   },
   j = e => {
     let t = v(e);
@@ -93,13 +93,13 @@ let h = "40%",
   },
   y = e => {
     let t = j(e),
-      n = (0, l.wE)(a.z.REFERRAL_INCENTIVE_AWARDED_INFO);
+      n = (0, i.wE)(a.z.REFERRAL_INCENTIVE_AWARDED_INFO);
     return t && !n
   },
   C = e => {
-    let t = f(e),
+    let t = x(e),
       n = (0, c.b)(e),
-      r = (0, l.wE)(a.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE);
+      r = (0, i.wE)(a.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE);
     return !t && n && !r
   },
   O = e => {
@@ -134,20 +134,20 @@ let h = "40%",
     } = e;
     switch (n) {
       case u.g2L.NOT_ELIGIBLE:
-        return x({
+        return f({
           hasSentAll: r.sent >= d.Q,
           hasSentAtLeastOne: r.sent >= 1,
           numSentUsers: r.sent,
           helpdeskArticle: t
         });
       case u.g2L.ELIGIBLE:
-        let l = {
+        let i = {
           discountRate: h,
           learnMoreLink: t,
           subscriptionInterval: m.NW.string(m.t.FPybU1)
         };
-        if (r.redeemed <= 1) return m.NW.format(m.t.nysttb, l);
-        return m.NW.format(m.t.nHuzUF, l);
+        if (r.redeemed <= 1) return m.NW.format(m.t.nysttb, i);
+        return m.NW.format(m.t.nHuzUF, i);
       case u.g2L.QUALIFIED:
       case u.g2L.COOLDOWN:
       case u.g2L.UNAPPLIED:

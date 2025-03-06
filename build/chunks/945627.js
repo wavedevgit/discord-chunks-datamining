@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => C
 }), n(47120), n(653041);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(372460),
   u = n(91896),
   m = n(768581),
-  g = n(136015),
-  p = n(695346),
+  p = n(136015),
+  g = n(695346),
   h = n(546957),
   f = n(838436),
-  b = n(51331),
-  N = n(726985),
-  x = n(981631),
+  x = n(51331),
+  b = n(726985),
+  N = n(981631),
   _ = n(388032),
   E = n(167198);
 
@@ -30,34 +30,34 @@ function j() {
         let {
           type: t
         } = e;
-        return t === x.OGo.FRIEND
+        return t === N.OGo.FRIEND
       }).map(e => {
         let {
           applicationId: t
         } = e;
         return t
       }).uniq().sortBy(e => u.Z.getGameFriendsForApplication(e).length).take(3).value(), u.Z.getGameRelationshipsVersion()]
-    }, [], g.Q),
+    }, [], p.Q),
     n = (0, d.wn)({
       location: "GameFriendDMsSettingHeader"
     }),
-    p = (0, c.Z)(t, n),
+    g = (0, c.Z)(t, n),
     h = i.useMemo(() => {
       let e = [];
       for (let t = 0; t < 2; t++) {
-        let n = p[t];
+        let n = g[t];
         if (null == n) break;
         e.push(n.name)
       }
-      let t = p.length - 2;
+      let t = g.length - 2;
       return t > 0 && e.push(_.NW.format(_.t["EADv+/"], {
         count: t
       })), e.join(", ")
-    }, [p]),
+    }, [g]),
     f = i.useMemo(() => {
       let e = [];
-      for (let t = 0; t < p.length; t++) {
-        let n = p[t];
+      for (let t = 0; t < g.length; t++) {
+        let n = g[t];
         if (null == n) continue;
         let {
           icon: i,
@@ -75,9 +75,9 @@ function j() {
           }, s)), 3 === e.length) break
       }
       return e
-    }, [p]),
-    b = i.useCallback(() => {
-      o.Z.open(x.oAB.AUTHORIZED_APPS)
+    }, [g]),
+    x = i.useCallback(() => {
+      o.Z.open(N.oAB.AUTHORIZED_APPS)
     }, []);
   return (0, r.jsxs)("div", {
     className: E.header,
@@ -103,7 +103,7 @@ function j() {
     }), (0, r.jsx)("div", {
       className: E.divider
     }), (0, r.jsxs)(l.P3F, {
-      onClick: b,
+      onClick: x,
       className: E.manageGamesLink,
       children: [(0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
@@ -119,15 +119,15 @@ function j() {
 }
 
 function C() {
-  let e = p._j.useSetting();
+  let e = g._j.useSetting();
   return (0, r.jsxs)(h.Z, {
     children: [(0, r.jsx)(j, {}), (0, r.jsx)(f.U, {
-      setting: N.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
-      children: (0, r.jsx)(b.Z, {
+      setting: b.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
+      children: (0, r.jsx)(x.Z, {
         title: _.NW.string(_.t["/U8Iwc"]),
         note: _.NW.string(_.t.WO2Hlp),
         value: e,
-        onChange: p._j.updateSetting
+        onChange: g._j.updateSetting
       })
     })]
   })

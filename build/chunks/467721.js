@@ -1,11 +1,11 @@
-/** Chunk was on 51424 **/
+/** Chunk was on 76282 **/
 n.d(t, {
   Z: () => u
 });
 var r, i = n(442837),
-  l = n(570140);
+  o = n(570140);
 
-function o(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,7 +29,7 @@ class c extends(r = i.ZP.PersistedStore) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          o(e, t, n[t])
+          l(e, t, n[t])
         })
       }
       return e
@@ -42,8 +42,8 @@ class c extends(r = i.ZP.PersistedStore) {
     return s.lastTriggered >= Date.now() - 1728e5
   }
 }
-o(c, "displayName", "HDStreamingViewerStore"), o(c, "persistKey", "HDStreamingViewerStore");
-let u = new c(l.Z, {
+l(c, "displayName", "HDStreamingViewerStore"), l(c, "persistKey", "HDStreamingViewerStore");
+let u = new c(o.Z, {
   LOGOUT: function() {
     s = a()
   },

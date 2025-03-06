@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 580f5b05f626f819
+  Original File Name: 6af2d166fddd5efb
 **/
 .container__46ab5 {
     text-align: center;
@@ -1426,6 +1426,95 @@
     border-radius: 8px;
     max-width: 500px;
     background-color: var(--background-primary)
+}
+
+:where(.visual-refresh) .explainerContainer_cd1bf7 {
+    position: relative;
+    gap: var(--space-32)
+}
+
+:where(.visual-refresh) .transparentBackground_cd1bf7 {
+    background-color: var(--transparent)
+}
+
+:where(.visual-refresh) .header_cd1bf7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-12)
+}
+
+:where(.visual-refresh) .outerWrapping_cd1bf7 {
+    margin: var(--space-24);
+    border-top-left-radius: var(--radius-lg);
+    border-top-right-radius: var(--radius-lg)
+}
+
+.main_c08b38 {
+    width: 100vw;
+    padding: 80px 0
+}
+
+.main_c08b38,.visual-refresh .main_c08b38 {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.visual-refresh .main_c08b38 {
+    width: 100%
+}
+
+.fullBorderWithGradient_c08b38 {
+    background-color: var(--bg-animated-gradient-background-not-black);
+    border-radius: var(--radius-lg)
+}
+
+.artwork_c08b38 {
+    top: 0;
+    left: 0
+}
+
+.artwork_c08b38,.gradient_c08b38 {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.gradient_c08b38 {
+    background: linear-gradient(180deg,hsl(var(--primary-800-hsl)/.5),hsl(var(--primary-800-hsl)/1))
+}
+
+.content_c08b38 {
+    flex-direction: column;
+    width: 800px;
+    height: 640px;
+    max-height: 640px;
+    background-color: var(--modal-background);
+    padding: 0 24px;
+    border-radius: 12px;
+    top: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.bottomCenterContent_c08b38,.content_c08b38 {
+    display: flex;
+    z-index: 1;
+    position: absolute
+}
+
+.bottomCenterContent_c08b38 {
+    align-items: center;
+    text-align: center;
+    bottom: 16px
+}
+
+.cover_c08b38 {
+    -o-object-fit: cover;
+    object-fit: cover
 }
 
 .container__7e486 {

@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => x
+  Z: () => N
 });
 var r = n(200651),
   i = n(192379),
@@ -12,23 +12,23 @@ var r = n(200651),
   d = n(617136),
   u = n(497505),
   m = n(865719),
-  g = n(341907),
-  p = n(46140),
+  p = n(341907),
+  g = n(46140),
   h = n(981631),
   f = n(388032),
-  b = n(920617),
-  N = n(66094);
+  x = n(920617),
+  b = n(66094);
 
-function x() {
+function N() {
   let e = (0, s.wj)((0, o.ZP)()),
     t = (0, m.y)({
-      location: p.dr.USER_SETTINGS_GIFT_INVENTORY
+      location: g.dr.USER_SETTINGS_GIFT_INVENTORY
     }),
     n = i.useMemo(() => ({
       backgroundImage: "url(".concat("https://cdn.discordapp.com/assets/discovery/quests-wumpus-hikes-mountain-transparent-background.png", ")")
     }), []),
-    x = i.useCallback(() => {
-      (0, l.xf)(), (0, g.navigateToQuestHome)({
+    N = i.useCallback(() => {
+      (0, l.xf)(), (0, p.navigateToQuestHome)({
         fromContent: u.jn.QUEST_HOME_MOVE_CALLOUT
       }), c.default.track(h.rMx.QUEST_CONTENT_CLICKED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -52,16 +52,16 @@ function x() {
       }, (0, d.mH)(u.jn.QUEST_HOME_MOVE_CALLOUT)))
     }, []);
   return t === m.$.NEVER_SHOW ? null : (0, r.jsx)("div", {
-    className: b.container,
+    className: x.container,
     style: n,
     children: (0, r.jsxs)("div", {
-      className: b.textContainer,
+      className: x.textContainer,
       children: [(0, r.jsxs)("div", {
-        className: b.headerContainer,
+        className: x.headerContainer,
         children: [(0, r.jsx)("img", {
           alt: "",
-          src: N,
-          className: b.icon
+          src: b,
+          className: x.icon
         }), (0, r.jsx)(a.X6q, {
           variant: "heading-lg/bold",
           color: "always-white",
@@ -74,9 +74,9 @@ function x() {
       }), (0, r.jsx)(a.zxk, {
         size: "large",
         color: e ? a.Ttl.BRAND : a.Ttl.WHITE,
-        className: b.button,
-        onClick: x,
-        innerClassName: b.innerButton,
+        className: x.button,
+        onClick: N,
+        innerClassName: x.innerButton,
         children: (0, r.jsx)(a.Text, {
           variant: "text-md/medium",
           color: e ? "always-white" : "text-normal",

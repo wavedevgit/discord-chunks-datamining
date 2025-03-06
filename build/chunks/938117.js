@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => C
 }), n(47120);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(716161),
   u = n(634041),
   m = n(647177),
-  g = n(672339),
-  p = n(898531),
+  p = n(672339),
+  g = n(898531),
   h = n(636188),
   f = n(678916),
-  b = n(981631),
-  N = n(869783),
-  x = n(388032),
+  x = n(981631),
+  b = n(869783),
+  N = n(388032),
   _ = n(215232);
 
 function E(e) {
@@ -61,7 +61,7 @@ function C(e) {
     currentDeviceId: v,
     smallerBackgroundOptions: S,
     className: T
-  } = e, I = (0, s.e7)([o.default], () => o.default.getCurrentUser()), [y, A] = i.useState(null), P = (0, p.Z)(), R = c.ZP.canUseCustomBackgrounds(I), D = (0, s.cj)([u.Z], () => R ? u.Z.videoFilterAssets : {}), Z = i.useMemo(() => Object.values(D).filter(e => e.type === f.xV.BACKGROUND), [D]), w = (0, l.O)(), k = {
+  } = e, I = (0, s.e7)([o.default], () => o.default.getCurrentUser()), [y, A] = i.useState(null), P = (0, g.Z)(), R = c.ZP.canUseCustomBackgrounds(I), D = (0, s.cj)([u.Z], () => R ? u.Z.videoFilterAssets : {}), Z = i.useMemo(() => Object.values(D).filter(e => e.type === f.xV.BACKGROUND), [D]), w = (0, l.O)(), k = {
     isVideoBackgroundSupported: P,
     onSelectBackgroundOption: O,
     selectedBackgroundOption: C
@@ -74,21 +74,21 @@ function C(e) {
       onSelectBackgroundOption: t,
       selectedBackgroundOption: n
     } = W.current;
-    e ? (0, g.FU)(n, v, {
+    e ? (0, p.FU)(n, v, {
       track: !1
     }).catch(() => t(null)) : null != n && t(null)
   }, [v]);
   let L = e => {
-    O(e), (0, g.FU)(e, v, {
+    O(e), (0, p.FU)(e, v, {
       location: w.location
     }).then(() => A(null)).catch(() => {
-      A(x.NW.string(x.t.ejrSLS)), (0, g.FU)(null, v, {
+      A(N.NW.string(N.t.ejrSLS)), (0, p.FU)(null, v, {
         location: w.location
       })
     })
   };
   return P ? (0, r.jsxs)(a.xJW, {
-    title: x.NW.string(x.t.lZTUPj),
+    title: N.NW.string(N.t.lZTUPj),
     className: T,
     children: [null != y ? (0, r.jsx)(a.kzN, {
       className: _.videoBackgroundError,
@@ -106,7 +106,7 @@ function C(e) {
           return n => (0, r.jsx)(e, j(E({}, n), {
             onLearnMore: t,
             analyticsSource: j(E({}, w.location), {
-              object: b.qAy.BUTTON_CTA
+              object: x.qAy.BUTTON_CTA
             })
           }))
         })
@@ -116,7 +116,7 @@ function C(e) {
         return new Promise(async r => {
           try {
             let r = await (0, d.Ff)(e, f.xV.BACKGROUND);
-            L(r), (0, m.g5)(r, t.type === N.m.MP4, n), A(null)
+            L(r), (0, m.g5)(r, t.type === b.m.MP4, n), A(null)
           } catch (e) {
             A(e.message)
           }

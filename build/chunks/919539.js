@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => T
 }), n(47120);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(63063),
   u = n(709054),
   m = n(88658),
-  g = n(750832),
-  p = n(976978),
+  p = n(750832),
+  g = n(976978),
   h = n(695346),
   f = n(639814),
-  b = n(838436),
-  N = n(51331),
-  x = n(922628),
+  x = n(838436),
+  b = n(51331),
+  N = n(922628),
   _ = n(703115),
   E = n(526761),
   j = n(726985),
@@ -30,7 +30,7 @@ function S(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, S = (0, f.c_)(), T = (0, p.q)(), I = h.h2.useSetting().includes(n), y = h.mX.useSetting(), A = h.zA.useSetting().includes(n), P = i.useCallback(e => {
+  } = e, S = (0, f.c_)(), T = (0, g.q)(), I = h.h2.useSetting().includes(n), y = h.mX.useSetting(), A = h.zA.useSetting().includes(n), P = i.useCallback(e => {
     let r = (0, m.gl)();
     e ? r.delete(n) : r.add(n), h.zA.updateSetting(Array.from(r)), c.default.track(O.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: _.Y.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
@@ -48,11 +48,11 @@ function S(e) {
 
   function D(e, t) {
     var n;
-    if ((0, g.SI)()) {
+    if ((0, p.SI)()) {
       a.Z.showAgeVerificationGetStartedModal(l.cU.MESSAGE_REQUESTS_SETTINGS);
       return
     }
-    t ? P(e) : (n = !e, (0, x.V)({
+    t ? P(e) : (n = !e, (0, N.V)({
       header: v.NW.string(v.t.yAfu1t),
       body: v.NW.string(v.t["Ry2z7+"]),
       confirmText: v.NW.string(v.t.gm1Ven),
@@ -66,10 +66,10 @@ function S(e) {
       }
     }))
   }
-  return (0, r.jsx)(b.U, {
+  return (0, r.jsx)(x.U, {
     setting: j.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
     scrollPosition: E.FY.MESSAGE_REQUESTS_V2,
-    children: n === C.T ? (0, r.jsx)(N.Z, {
+    children: n === C.T ? (0, r.jsx)(b.Z, {
       title: v.NW.string(v.t["3o2ojo"]),
       value: !T && !y,
       onChange: e => D(e, !1),
@@ -77,7 +77,7 @@ function S(e) {
       note: v.NW.format(v.t.wkm9a2, {
         helpdeskArticle: d.Z.getArticleURL(O.BhN.MESSAGE_REQUESTS)
       })
-    }) : (0, r.jsx)(N.Z, {
+    }) : (0, r.jsx)(b.Z, {
       title: v.NW.string(v.t["3o2ojo"]),
       value: !A,
       onChange: e => D(e, !0),

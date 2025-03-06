@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   N: () => M
 });
@@ -12,13 +12,13 @@ var r = n(399606),
   d = n(474936),
   u = n(981631),
   m = n(526761),
-  g = n(388032),
-  p = n(323780),
+  p = n(388032),
+  g = n(323780),
   h = n(101732),
   f = n(450598),
-  b = n(633030),
-  N = n(97942),
-  x = n(269987),
+  x = n(633030),
+  b = n(97942),
+  N = n(269987),
   _ = n(548629),
   E = n(507084),
   j = n(680313),
@@ -50,38 +50,38 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
     });
     return {
       badge: {
-        title: g.NW.string(g.t.SS87ra),
-        description: g.NW.string(g.t.oD6CRk),
+        title: p.NW.string(p.t.SS87ra),
+        description: p.NW.string(p.t.oD6CRk),
         imageSource: f,
         imageClassName: t.badgeImage
       },
       badgeAlt: {
-        title: g.NW.string(g.t["5cYMu7"]),
-        description: g.NW.string(g.t.vxk9vb),
-        imageSource: B(n, p, h),
+        title: p.NW.string(p.t["5cYMu7"]),
+        description: p.NW.string(p.t.vxk9vb),
+        imageSource: B(n, g, h),
         imageClassName: t.badgeNewImage
       },
       clientThemes: {
-        title: g.NW.string(g.t["/xvEMz"]),
-        description: g.NW.string(g.t.HKWdjo),
+        title: p.NW.string(p.t["/xvEMz"]),
+        description: p.NW.string(p.t.HKWdjo),
         className: t.clientThemesCard,
         imageSource: A,
         imageClassName: t.clientThemesImage
       },
       customAppIcons: {
-        title: g.NW.string(g.t.OuItFh),
-        description: g.NW.string(g.t.mPyrEx),
+        title: p.NW.string(p.t.OuItFh),
+        description: p.NW.string(p.t.mPyrEx),
         imageSource: P,
         imageClassName: t.customAppIconImage
       },
       emoji: {
-        title: g.NW.string(g.t["R2IV/f"]),
-        description: g.NW.string(g.t.R5Xag4),
+        title: p.NW.string(p.t["R2IV/f"]),
+        description: p.NW.string(p.t.R5Xag4),
         imageSource: R,
         imageClassName: t.emojiImage
       },
       guildProfile: {
-        title: g.NW.string(g.t.lKDhhI),
+        title: p.NW.string(p.t.lKDhhI),
         description: e => {
           let t = () => {
             s.Z.open(u.oAB.PROFILE_CUSTOMIZATION, null, {
@@ -89,89 +89,89 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
               analyticsLocations: e
             })
           };
-          return i ? g.NW.format(g.t.aj1pfX, {
+          return i ? p.NW.format(p.t.aj1pfX, {
             onCheckItOutClick: t
-          }) : g.NW.format(g.t.d2oYS0, {
+          }) : p.NW.format(p.t.d2oYS0, {
             onTryItOutClick: t
           })
         },
-        imageSource: N,
+        imageSource: b,
         imageClassName: t.perGuildProfilesImage
       },
       longerMessages: {
-        title: g.NW.string(g.t.BUSciY),
-        description: g.NW.string(g.t.vN6Xpa),
+        title: p.NW.string(p.t.BUSciY),
+        description: p.NW.string(p.t.vN6Xpa),
         imageSource: B(n, D, Z),
         imageClassName: t.longerMessagesImage
       },
       moreGuilds: {
-        title: g.NW.string(g.t.Bv8Pfn),
-        description: g.NW.string(g.t.JMfaTU),
-        imageSource: B(n, b, w),
+        title: p.NW.string(p.t.Bv8Pfn),
+        description: p.NW.string(p.t.JMfaTU),
+        imageSource: B(n, x, w),
         imageClassName: t.moreGuildsImage
       },
       moreGuildsAlt: {
-        title: g.NW.string(g.t.Bv8Pfn),
-        description: g.NW.string(g.t.JMfaTU),
+        title: p.NW.string(p.t.Bv8Pfn),
+        description: p.NW.string(p.t.JMfaTU),
         imageSource: B(n, E, j),
         imageClassName: t.moreGuildsAltImage
       },
       remix: {
-        title: g.NW.string(g.t.ZvulDg),
-        description: g.NW.string(g.t["8GwCPT"]),
-        imageSource: B(n, x, _),
+        title: p.NW.string(p.t.ZvulDg),
+        description: p.NW.string(p.t["8GwCPT"]),
+        imageSource: B(n, N, _),
         imageClassName: t.remixingImage,
         isEarlyAccess: !0
       },
       soundboard: {
-        title: g.NW.string(g.t["lGcW+f"]),
-        description: g.NW.string(g.t["/fDyOz"]),
+        title: p.NW.string(p.t["lGcW+f"]),
+        description: p.NW.string(p.t["/fDyOz"]),
         imageSource: B(n, C, O),
         imageClassName: t.soundboardImage
       },
       stickers: {
-        title: g.NW.string(g.t["1c+xwc"]),
-        description: g.NW.string(g.t.hJG8ZG),
+        title: p.NW.string(p.t["1c+xwc"]),
+        description: p.NW.string(p.t.hJG8ZG),
         imageSource: B(n, v, k),
         imageClassName: t.stickersImage
       },
       stickersBurst: {
-        title: g.NW.string(g.t.tzdIwM),
-        description: g.NW.string(g.t.hJG8ZG),
+        title: p.NW.string(p.t.tzdIwM),
+        description: p.NW.string(p.t.hJG8ZG),
         imageSource: B(n, v, k),
         imageClassName: t.stickersImage
       },
       stickersPerkDiscoverability: {
-        title: g.NW.string(g.t.tzdIwM),
-        description: g.NW.string(g.t.FXlU29),
+        title: p.NW.string(p.t.tzdIwM),
+        description: p.NW.string(p.t.FXlU29),
         imageSource: B(n, v, k),
         imageClassName: t.stickersImage
       },
       streaming: {
-        title: g.NW.string(g.t.RSXQYG),
-        description: g.NW.string(g.t.ymCPxs),
+        title: p.NW.string(p.t.RSXQYG),
+        description: p.NW.string(p.t.ymCPxs),
         imageSource: W,
         imageClassName: t.streamingImage
       },
       superReactions: {
-        title: g.NW.string(g.t.uZt5q6),
-        description: g.NW.string(g.t.ZK3Zoa),
+        title: p.NW.string(p.t.uZt5q6),
+        description: p.NW.string(p.t.ZK3Zoa),
         imageSource: B(n, S, T),
         imageClassName: t.superReactionsImage
       },
       upload: {
-        title: g.NW.formatToPlainString(g.t.jqhAdH, {
+        title: p.NW.formatToPlainString(p.t.jqhAdH, {
           premiumMaxSize: M
         }),
-        description: g.NW.formatToPlainString(g.t["HI+cfn"], {
+        description: p.NW.formatToPlainString(p.t["HI+cfn"], {
           premiumMaxSize: M
         }),
         imageSource: L,
         imageClassName: t.uploadImage
       },
       videoBackground: {
-        title: g.NW.string(g.t.NaGpTU),
-        description: g.NW.string(g.t["A8O/Q0"]),
+        title: p.NW.string(p.t.NaGpTU),
+        description: p.NW.string(p.t["A8O/Q0"]),
         imageSource: B(n, I, y),
         imageClassName: t.videoBackgroundImage
       }

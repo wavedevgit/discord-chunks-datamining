@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => b
+  Z: () => x
 });
 var r = n(200651),
   i = n(192379),
@@ -12,19 +12,19 @@ var r = n(200651),
   d = n(1585),
   u = n(580747),
   m = n(345861),
-  g = n(150039),
-  p = n(993413),
+  p = n(150039),
+  g = n(993413),
   h = n(388032),
   f = n(309277);
 
-function b(e) {
+function x(e) {
   let {
     user: t,
     guild: n,
     className: s,
     sectionTitle: m,
-    forcedDivider: b = !1,
-    withTutorial: x = !1,
+    forcedDivider: x = !1,
+    withTutorial: N = !1,
     isTryItOutFlow: _ = !1
   } = e, {
     analyticsLocations: E
@@ -33,14 +33,14 @@ function b(e) {
     guildAvatarDecoration: O,
     pendingAvatarDecoration: v,
     pendingErrors: S
-  } = (0, g.$U)(t, n), T = (0, u.Z)("enable_avatar_decoration_uploads"), I = i.useCallback(() => (0, d.ps)({
+  } = (0, p.$U)(t, n), T = (0, u.Z)("enable_avatar_decoration_uploads"), I = i.useCallback(() => (0, d.ps)({
     analyticsLocations: E,
     isTryItOutFlow: _,
     guild: n
-  }), [E, _, n]), y = _ || void 0 !== v ? null != v : (j ? O : C) != null, A = x ? l.gtL : l.zxk;
-  return (0, r.jsxs)(p.Z, {
+  }), [E, _, n]), y = _ || void 0 !== v ? null != v : (j ? O : C) != null, A = N ? l.gtL : l.zxk;
+  return (0, r.jsxs)(g.Z, {
     className: s,
-    forcedDivider: b,
+    forcedDivider: x,
     hasBackground: !0,
     title: m,
     errors: S,
@@ -50,7 +50,7 @@ function b(e) {
         size: l.zxk.Sizes.SMALL,
         onClick: I,
         className: a()({
-          [f.buttonHighlighted]: x
+          [f.buttonHighlighted]: N
         }),
         children: h.NW.string(h.t["Tna/TU"])
       }), y && (0, r.jsx)(l.zxk, {
@@ -59,16 +59,16 @@ function b(e) {
         look: l.zxk.Looks.LINK,
         size: l.zxk.Sizes.SMALL,
         onClick: function() {
-          (0, g.PO)(null == n ? void 0 : n.id, null)
+          (0, p.PO)(null == n ? void 0 : n.id, null)
         },
         children: (0, c.ad)(t, n) ? h.NW.string(h.t["GsW4/v"]) : h.NW.string(h.t.GReZ6O)
       })]
-    }), t.isStaff() && T && (0, r.jsx)(N, {
+    }), t.isStaff() && T && (0, r.jsx)(b, {
       user: t
     })]
   })
 }
-let N = e => {
+let b = e => {
   let {
     user: t
   } = e;

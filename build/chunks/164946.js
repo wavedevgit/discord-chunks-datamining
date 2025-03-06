@@ -14,7 +14,7 @@ function i(e) {
 
 function o(e) {
   let t = {};
-  if (void 0 !== e.pendingGlobalName && (t.globalName = e.pendingGlobalName), void 0 !== e.pendingAvatar && (t.avatar = e.pendingAvatar), void 0 !== e.pendingAvatarV2) {
+  if (void 0 !== e.pendingGlobalName && (t.globalName = e.pendingGlobalName), void 0 !== e.pendingAvatar && (t.avatar = e.pendingAvatar), void 0 !== e.pendingNameplate && (t.nameplate = e.pendingNameplate), void 0 !== e.pendingAvatarV2) {
     let {
       pendingAvatarV2: n
     } = e;

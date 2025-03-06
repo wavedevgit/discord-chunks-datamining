@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => d
 });
@@ -18,35 +18,35 @@ let d = e => {
     parentSetting: d,
     panelClassName: u,
     defaultTabIndex: m,
-    onTabChange: g
+    onTabChange: p
   } = e, {
-    viewableTabs: p,
+    viewableTabs: g,
     filteredTab: h
-  } = (0, o.a)(n, d), f = null != m ? n[m] : null, b = null !== (t = null != f ? f : h) && void 0 !== t ? t : p[0];
+  } = (0, o.a)(n, d), f = null != m ? n[m] : null, x = null !== (t = null != f ? f : h) && void 0 !== t ? t : g[0];
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.njP, {
       className: c.tabBar,
-      selectedItem: b.setting,
+      selectedItem: x.setting,
       onItemSelect: e => {
-        l.Z.setSection(i, e), null == g || g(e)
+        l.Z.setSection(i, e), null == p || p(e)
       },
       orientation: "horizontal",
       type: "top",
       look: "brand",
-      children: p.map(e => (0, r.jsx)(a.njP.Item, {
+      children: g.map(e => (0, r.jsx)(a.njP.Item, {
         className: c.tab,
         id: e.setting,
         "aria-label": e.title,
         children: e.title
       }, e.setting))
     }), (0, r.jsx)(a.njP.Panel, {
-      id: b.setting,
-      "aria-labelledby": b.title,
+      id: x.setting,
+      "aria-labelledby": x.title,
       className: s()(c.tabBarPanel, u),
       children: (e => {
         let t = e.component;
         return "function" == typeof t ? (0, r.jsx)(t, {}) : t
-      })(b)
+      })(x)
     })]
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => P
 }), n(47120), n(411104);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(533307),
   u = n(189907),
   m = n(812206),
-  g = n(600164),
-  p = n(925329),
+  p = n(600164),
+  g = n(925329),
   h = n(981632),
   f = n(314897),
-  b = n(82142),
-  N = n(246946),
-  x = n(509545),
+  x = n(82142),
+  b = n(246946),
+  N = n(509545),
   _ = n(55563),
   E = n(259580),
   j = n(572004),
@@ -60,8 +60,8 @@ class y extends i.PureComponent {
     } = this.props, {
       copyMode: n
     } = this.state;
-    return (0, r.jsxs)(g.Z, {
-      direction: g.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(p.Z, {
+      direction: p.Z.Direction.VERTICAL,
       className: T.giftCodeRow,
       children: [(0, r.jsx)(c.kO8, {
         className: T.codeText,
@@ -136,9 +136,9 @@ class A extends i.PureComponent {
     })
   }
   renderGenerateGiftCodeRow() {
-    return (0, r.jsxs)(g.Z, {
-      justify: g.Z.Justify.BETWEEN,
-      align: g.Z.Align.CENTER,
+    return (0, r.jsxs)(p.Z, {
+      justify: p.Z.Justify.BETWEEN,
+      align: p.Z.Align.CENTER,
       className: T.generateCodeRow,
       children: [(0, r.jsx)(c.Text, {
         variant: "text-md/normal",
@@ -181,15 +181,15 @@ class A extends i.PureComponent {
           splashArtURL: t.getSplashURL(512),
           children: (0, r.jsxs)("div", {
             className: T.cardHeader,
-            children: [(0, r.jsxs)(g.Z, {
-              align: g.Z.Align.CENTER,
+            children: [(0, r.jsxs)(p.Z, {
+              align: p.Z.Align.CENTER,
               children: [null != d ? (0, r.jsx)(h.Z, {
                 giftStyle: d,
                 className: T.seasonalGiftBox,
                 shouldAnimate: this.state.isHovered
-              }) : (0, r.jsx)(p.Z, {
+              }) : (0, r.jsx)(g.Z, {
                 game: t,
-                size: p.Z.Sizes.MEDIUM,
+                size: g.Z.Sizes.MEDIUM,
                 skuId: a.id
               }), (0, r.jsxs)("div", {
                 className: T.headerText,
@@ -249,19 +249,19 @@ class A extends i.PureComponent {
     })
   }
 }
-let P = l.ZP.connectStores([_.Z, N.Z, b.Z, m.Z, x.Z, f.default], e => {
+let P = l.ZP.connectStores([_.Z, b.Z, x.Z, m.Z, N.Z, f.default], e => {
   let {
     skuId: t,
     subscriptionPlanId: n,
     giftStyle: r
   } = e, i = _.Z.get(t);
   if (null == i) throw Error("SKU was unavailable while rendering gift.");
-  let s = b.Z.getForGifterSKUAndPlan(f.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === r);
+  let s = x.Z.getForGifterSKUAndPlan(f.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === r);
   return {
     sku: i,
-    hideCodes: N.Z.enabled,
-    isFetching: b.Z.getUserGiftCodesFetchingForSKUAndPlan(t, n),
-    loadedAt: b.Z.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
+    hideCodes: b.Z.enabled,
+    isFetching: x.Z.getUserGiftCodesFetchingForSKUAndPlan(t, n),
+    loadedAt: x.Z.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
     application: m.Z.getApplication(i.applicationId),
     subscriptionPlan: null != n ? (0, O.oE)(n) : null,
     giftCodes: s

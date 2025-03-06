@@ -1,46 +1,46 @@
 /** Chunk was on 45620 **/
 "use strict";
-r.d(t, {
-  Db: () => a
-}), r(301563), r(610138), r(216116), r(78328), r(815648), r(47120);
-var n = r(192379),
-  l = r(512969),
-  i = r(37234),
-  o = r(703656),
-  s = r(981631);
+n.d(t, {
+  Db: () => i
+}), n(301563), n(610138), n(216116), n(78328), n(815648), n(47120);
+var r = n(192379),
+  l = n(512969),
+  a = n(37234),
+  s = n(703656),
+  o = n(981631);
 
-function a() {
+function i() {
   let {
     search: e
-  } = (0, l.TH)(), t = (0, l.UO)(), r = n.useMemo(() => new URLSearchParams(e), [e]).get("source"), a = null != r ? parseInt(r, 10) : null;
+  } = (0, l.TH)(), t = (0, l.UO)(), n = r.useMemo(() => new URLSearchParams(e), [e]).get("source"), i = null != n ? parseInt(n, 10) : null;
   return function(e) {
     for (var t = 1; t < arguments.length; t++) {
-      var r = null != arguments[t] ? arguments[t] : {},
-        n = Object.keys(r);
-      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(r, e).enumerable
-      }))), n.forEach(function(t) {
-        var n;
-        n = r[t], t in e ? Object.defineProperty(e, t, {
-          value: n,
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : e[t] = n
+        }) : e[t] = r
       })
     }
     return e
   }({
-    onClose: n.useCallback(() => {
-      if (0 === a) {
-        (0, o.op)(), (0, i.jN)(s.S9g.USER_SETTINGS);
+    onClose: r.useCallback(() => {
+      if (0 === i) {
+        (0, s.op)(), (0, a.jN)(o.S9g.USER_SETTINGS);
         return
       }
-      if ((0, o.uv)()) {
-        (0, o.op)();
+      if ((0, s.uv)()) {
+        (0, s.op)();
         return
-      }(0, o.uL)(s.Z5c.APP)
-    }, [a]),
-    source: a
+      }(0, s.uL)(o.Z5c.APP)
+    }, [i]),
+    source: i
   }, t)
 }

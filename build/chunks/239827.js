@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => d
 });
@@ -15,8 +15,8 @@ let d = i.forwardRef(function(e, t) {
       numPages: d,
       onChangePage: u,
       children: m,
-      className: g,
-      showPageCount: p = !0
+      className: p,
+      showPageCount: g = !0
     } = e,
     h = function(e, t) {
       if (null == e) return {};
@@ -34,7 +34,7 @@ let d = i.forwardRef(function(e, t) {
       return i
     }(e, ["currentPageIndex", "numPages", "onChangePage", "children", "className", "showPageCount"]);
   let f = s <= 0,
-    b = s >= d - 1;
+    x = s >= d - 1;
   return (0, r.jsxs)("div", (n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -53,7 +53,7 @@ let d = i.forwardRef(function(e, t) {
     }
     return e
   }({
-    className: a()(c.__invalid_paginator, g),
+    className: a()(c.__invalid_paginator, p),
     ref: t
   }, h), i = i = {
     children: [m, (0, r.jsxs)("div", {
@@ -70,7 +70,7 @@ let d = i.forwardRef(function(e, t) {
           className: c.pageButtonIcon,
           "aria-label": o.NW.string(o.t.vgfxaG)
         })
-      }), p ? (0, r.jsx)("div", {
+      }), g ? (0, r.jsx)("div", {
         className: c.pageIndicator,
         children: o.NW.format(o.t.MtpIws, {
           currentPage: s + 1,
@@ -83,10 +83,10 @@ let d = i.forwardRef(function(e, t) {
         })
       }), (0, r.jsx)(l.P3F, {
         className: a()(c.pageButtonNext, {
-          [c.disabled]: b
+          [c.disabled]: x
         }),
-        tabIndex: b ? -1 : 0,
-        onClick: b ? void 0 : () => u(s + 1),
+        tabIndex: x ? -1 : 0,
+        onClick: x ? void 0 : () => u(s + 1),
         children: (0, r.jsx)(l.Fbu, {
           size: "md",
           color: "currentColor",

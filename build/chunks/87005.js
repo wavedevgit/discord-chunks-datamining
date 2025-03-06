@@ -1,11 +1,11 @@
-/** Chunk was on 51424 **/
+/** Chunk was on 76282 **/
 n.d(t, {
-  f: () => f
+  f: () => m
 }), n(47120);
 var r = n(192379),
   i = n(243814),
-  l = n(442837),
-  o = n(384275),
+  o = n(442837),
+  l = n(384275),
   a = n(911969),
   s = n(10718),
   c = n(812236),
@@ -13,29 +13,29 @@ var r = n(192379),
   d = n(881998);
 n(445392);
 var _ = n(783097),
-  E = n(689079);
-let p = {
+  p = n(689079);
+let E = {
     commandTypes: [a.yU.CHAT, a.yU.PRIMARY_ENTRY_POINT]
   },
-  m = {
+  f = {
     placeholderCount: 0,
-    limit: E.tn,
+    limit: p.tn,
     includeFrecency: !0
   };
 
-function f(e) {
+function m(e) {
   let {
     context: t,
     onlyActivityApps: n,
     allowCommandFetch: a,
-    includeAuthorizedAppsAndFetch: f
+    includeAuthorizedAppsAndFetch: m
   } = e, {
     sectionDescriptors: h,
     loading: g
   } = s.wi({
     context: t,
-    filters: p,
-    options: m,
+    filters: E,
+    options: f,
     allowFetch: a
   });
   return {
@@ -46,22 +46,22 @@ function f(e) {
         context: n,
         onlyActivityApps: a,
         includeAuthorizedAppsAndFetch: s
-      } = e, p = (0, l.e7)([d.Z], () => d.Z.getFetchState());
+      } = e, E = (0, o.e7)([d.Z], () => d.Z.getFetchState());
       r.useEffect(() => {
-        s && p === d.M.NOT_FETCHED && o.Z.fetch()
-      }, [s, p]);
-      let m = (0, l.Wu)([d.Z], () => {
+        s && E === d.M.NOT_FETCHED && l.Z.fetch()
+      }, [s, E]);
+      let f = (0, o.Wu)([d.Z], () => {
           var e, t;
           return s && null !== (t = null === (e = d.Z.getApps()) || void 0 === e ? void 0 : e.filter(e => e.scopes.includes(i.x.APPLICATIONS_COMMANDS))) && void 0 !== t ? t : []
         }),
-        f = t.filter(e => e.id !== E.bi.FRECENCY && e.id !== E.bi.BUILT_IN),
-        h = (0, u.h)(f, m);
+        m = t.filter(e => e.id !== p.bi.FRECENCY && e.id !== p.bi.BUILT_IN),
+        h = (0, u.h)(m, f);
       return r.useMemo(() => a ? h.filter(e => null != e.application && (0, _.ye)(e.application) && null != (0, c.Xu)(n, e.id)) : h, [h, n, a])
     }({
       sectionDescriptors: h,
       context: t,
       onlyActivityApps: n,
-      includeAuthorizedAppsAndFetch: f
+      includeAuthorizedAppsAndFetch: m
     })
   }
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => h
 });
@@ -33,26 +33,26 @@ function u(e) {
 let m = {
     unlockedAchievements: {}
   },
-  g = u({}, m);
-class p extends(r = i.ZP.PersistedStore) {
+  p = u({}, m);
+class g extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(a.default, c.ZP);
     let t = null != e ? e : u({}, m);
-    for (let e in t) g[e] = t[e]
+    for (let e in t) p[e] = t[e]
   }
   getState() {
-    return g
+    return p
   }
   getAllUnlockedAchievements() {
-    return g.unlockedAchievements
+    return p.unlockedAchievements
   }
   getUnlocked(e) {
     var t;
-    return null !== (t = g.unlockedAchievements[e]) && void 0 !== t ? t : null
+    return null !== (t = p.unlockedAchievements[e]) && void 0 !== t ? t : null
   }
 }
-d(p, "displayName", "PoggermodeAchievementStore"), d(p, "persistKey", "PoggermodeAchievementStore");
-let h = new p(s.Z, {
+d(g, "displayName", "PoggermodeAchievementStore"), d(g, "persistKey", "PoggermodeAchievementStore");
+let h = new g(s.Z, {
   POGGERMODE_ACHIEVEMENT_UNLOCK: function(e) {
     let {
       achievementId: t
@@ -60,7 +60,7 @@ let h = new p(s.Z, {
     if (!o.Z.isEnabled()) return !1;
     ! function(e) {
       var t, n;
-      if (null == g.unlockedAchievements[e]) g.unlockedAchievements = (t = u({}, g.unlockedAchievements), n = n = {
+      if (null == p.unlockedAchievements[e]) p.unlockedAchievements = (t = u({}, p.unlockedAchievements), n = n = {
         [e]: {
           achievementId: e,
           dateUnlocked: Date.now()

@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => h
 });
@@ -13,8 +13,8 @@ var i = n(120356),
   d = n(914788),
   u = n(981631),
   m = n(388032),
-  g = n(295210);
-let p = [18, 18, 16, 16, 14, 12, 10],
+  p = n(295210);
+let g = [18, 18, 16, 16, 14, 12, 10],
   h = e => {
     let {
       guildId: t
@@ -23,36 +23,36 @@ let p = [18, 18, 16, 16, 14, 12, 10],
     let i = n.hasFeature(u.oNc.VERIFIED) || n.hasFeature(u.oNc.PARTNERED),
       h = n.toString(),
       f = n.getIconURL(40, !0),
-      b = null,
-      N = p[p.length - 1];
+      x = null,
+      b = g[g.length - 1];
     if (null == n.icon && null != h) {
-      var x;
-      N = null !== (x = p[(b = (0, a.Zg)(h)).length - 1]) && void 0 !== x ? x : p[p.length - 1]
+      var N;
+      b = null !== (N = g[(x = (0, a.Zg)(h)).length - 1]) && void 0 !== N ? N : g[g.length - 1]
     }
     return (0, r.jsxs)("div", {
-      className: g.container,
+      className: p.container,
       children: [(0, r.jsxs)("div", {
         style: {
-          fontSize: N
+          fontSize: b
         },
-        children: [null != b ? (0, r.jsx)("div", {
-          className: s()(g.childWrapper, g.acronym),
+        children: [null != x ? (0, r.jsx)("div", {
+          className: s()(p.childWrapper, p.acronym),
           "aria-hidden": !0,
-          children: b
+          children: x
         }) : null, null != f ? (0, r.jsx)(o.qEK, {
           src: n.getIconURL(40, !0),
           size: o.EFr.SIZE_40,
           "aria-hidden": !0
         }) : null]
       }), (0, r.jsxs)("div", {
-        className: g.descriptors,
+        className: p.descriptors,
         children: [(0, r.jsxs)("div", {
-          className: g.header,
+          className: p.header,
           children: [i ? (0, r.jsx)(c.Z, {
             guild: n,
             tooltipPosition: "bottom",
             tooltipColor: o.ua7.Colors.PRIMARY,
-            className: g.guildBadge
+            className: p.guildBadge
           }) : null, (0, r.jsx)(o.Text, {
             variant: "text-md/semibold",
             children: n.toString()

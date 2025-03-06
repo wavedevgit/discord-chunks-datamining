@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => b
+  Z: () => x
 });
 var r = n(200651),
   i = n(192379),
@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(709586),
   u = n(267642),
   m = n(981631),
-  g = n(388032),
-  p = n(194072);
+  p = n(388032),
+  g = n(194072);
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -46,16 +46,16 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = function() {
+let x = function() {
   let e = i.useRef(null),
     {
       analyticsLocations: t
     } = (0, a.ZP)(),
     {
-      fractionalState: b
+      fractionalState: x
     } = (0, l.Z)();
 
-  function N(n) {
+  function b(n) {
     null != e.current && (0, s.Mr3)(e.current), (0, c.u)({
       analyticsLocation: {
         page: m.ZY5.GUILD_BOOSTING_USER_SETTINGS,
@@ -67,13 +67,13 @@ let b = function() {
       guild: n
     })
   }
-  async function x() {
+  async function N() {
     e.current = await (0, s.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 719228));
       return t => (0, r.jsx)(e, f(h({}, t), {
-        onSelectGuild: N
+        onSelectGuild: b
       }))
     }, {
       onCloseRequest: () => {
@@ -82,27 +82,27 @@ let b = function() {
     })
   }
   let _ = (0, u.aq)({
-    fractionalState: b
+    fractionalState: x
   });
   return (0, r.jsxs)("div", {
-    className: p.wrapper,
+    className: g.wrapper,
     children: [(0, r.jsx)(d.Z, {
-      className: p.boostIcon,
+      className: g.boostIcon,
       width: 16,
       height: 16
     }), (0, r.jsx)(s.Text, {
-      className: p.copy,
+      className: g.copy,
       color: "header-secondary",
       variant: "text-sm/medium",
-      children: g.NW.format(g.t.kqC5vr, {
+      children: p.NW.format(p.t.kqC5vr, {
         boostAnyGuildHook: (e, t) => {
           let n = null != _,
             i = (0, r.jsx)(s.zxk, {
-              className: p.cta,
+              className: g.cta,
               disabled: n,
               color: s.zxk.Colors.LINK,
               look: s.zxk.Looks.LINK,
-              onClick: n ? void 0 : x,
+              onClick: n ? void 0 : N,
               children: e
             }, t);
           return n ? (0, r.jsx)(o.Z, {

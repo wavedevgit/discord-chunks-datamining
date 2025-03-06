@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => h
 });
@@ -13,8 +13,8 @@ var i = n(524437),
   d = n(973005),
   u = n(726985),
   m = n(981631),
-  g = n(388032),
-  p = n(729794);
+  p = n(388032),
+  g = n(729794);
 
 function h() {
   var e;
@@ -24,13 +24,13 @@ function h() {
   return (0, r.jsxs)(c.U, {
     setting: u.s6.PRIVACY_DIRECT_MESSAGE_SPAM_FILTER_V2,
     children: [(0, r.jsx)(c.H, {
-      header: g.NW.string(g.t.tiCXaG),
-      description: g.NW.format(g.t.RvjRRE, {
+      header: p.NW.string(p.t.tiCXaG),
+      description: p.NW.format(p.t.RvjRRE, {
         appealLink: a.Z.getArticleURL(m.BhN.SAFE_DIRECT_MESSAGING)
       })
     }), (0, r.jsx)(s.FXm, {
-      className: p.radioGroup,
-      radioItemClassName: p.radioGroupItem,
+      className: g.radioGroup,
+      radioItemClassName: g.radioGroupItem,
       value: h,
       options: (0, l.c7)(),
       onChange: e => {

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120), n(26686);
 var r = n(200651),
   a = n(192379),
-  l = n(120356),
-  i = n.n(l),
+  i = n(120356),
+  l = n.n(i),
   o = n(392711),
   s = n(913527),
   c = n.n(s),
@@ -14,8 +14,8 @@ var r = n(200651),
   m = n(481060),
   h = n(129861),
   p = n(665149),
-  x = n(301801),
-  f = n(594174),
+  f = n(301801),
+  x = n(594174),
   b = n(55935),
   _ = n(120816),
   g = n(31336),
@@ -58,18 +58,18 @@ function E(e) {
   })
 }
 
-function I(e) {
+function k(e) {
   let {
     name: t,
     children: n,
-    copyValue: l
-  } = e, [i, o] = a.useState(!1);
+    copyValue: i
+  } = e, [l, o] = a.useState(!1);
   return a.useEffect(() => {
-    if (i) {
+    if (l) {
       let e = setTimeout(() => o(!1), 1e3);
       return () => clearTimeout(e)
     }
-  }, [i]), (0, r.jsxs)("div", {
+  }, [l]), (0, r.jsxs)("div", {
     className: N.customProperty,
     children: [(0, r.jsx)("dt", {
       className: N.customPropertiesName,
@@ -80,9 +80,9 @@ function I(e) {
       tag: "span",
       className: N.copyPropertyButton,
       onClick: () => {
-        (0, d.J)(JSON.stringify(l)), o(!0)
+        (0, d.J)(JSON.stringify(i)), o(!0)
       },
-      children: i ? (0, r.jsx)(m.kmB, {
+      children: l ? (0, r.jsx)(m.kmB, {
         color: "currentColor",
         size: "sm"
       }) : (0, r.jsx)(m.TIy, {
@@ -92,7 +92,7 @@ function I(e) {
     })]
   })
 }
-let k = [{
+let I = [{
     id: "details",
     name: "Details",
     render: e => {
@@ -101,13 +101,13 @@ let k = [{
           event: t,
           properties: n,
           timestamp: a,
-          fingerprint: l
+          fingerprint: i
         },
         onClose: o
-      } = e, s = f.default.getUser(l), u = c()(a);
+      } = e, s = x.default.getUser(i), u = c()(a);
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)(p.ZP, {
-          className: i()(T.headerBar, N.subPanelHeaderBar),
+          className: l()(T.headerBar, N.subPanelHeaderBar),
           children: [(0, r.jsx)(p.ZP.Icon, {
             icon: m.IeX,
             tooltip: t
@@ -146,7 +146,7 @@ let k = [{
               }({
                 event: t,
                 timestamp: a,
-                fingerprint: l,
+                fingerprint: i,
                 user: null == s ? void 0 : s.id
               }, n), (e, t) => void 0 === t ? null : t, 2))
             }
@@ -173,15 +173,15 @@ let k = [{
             })
           }), (0, r.jsx)(v.Z9, {
             name: "Fingerprint",
-            copyValue: l,
+            copyValue: i,
             children: (0, r.jsx)("code", {
-              children: l
+              children: i
             })
           })]
         }), (0, r.jsx)(E, {
           children: Object.entries(n).map(e => {
             let [t, n] = e;
-            return (0, r.jsx)(I, {
+            return (0, r.jsx)(k, {
               name: "".concat(t, ":"),
               copyValue: {
                 [t]: n || null
@@ -228,17 +228,17 @@ let k = [{
 function P() {
   let e = a.useRef(null),
     [t, n] = a.useState(""),
-    l = (0, u.e7)([_.Z], () => _.Z.loggedEventsVersion),
+    i = (0, u.e7)([_.Z], () => _.Z.loggedEventsVersion),
     [s, c] = a.useState(() => Object.keys(w)),
     [d, h] = a.useState(_.Z.loggedEvents),
     p = a.useRef(null),
-    f = a.useMemo(() => (0, o.throttle)(async (e, t) => {
+    x = a.useMemo(() => (0, o.throttle)(async (e, t) => {
       if ("" === e) {
         h(t);
         return
       }
       p.current = (0, o.uniqueId)();
-      let n = await (0, x.H)(t, e => {
+      let n = await (0, f.H)(t, e => {
         let {
           event: t
         } = e;
@@ -254,17 +254,17 @@ function P() {
       return !1
     });
   a.useEffect(() => {
-    f(t, _.Z.loggedEvents)
-  }, [t, f, l]);
-  let [v, E] = a.useState(void 0), I = b.find(e => e.key === v), {
+    x(t, _.Z.loggedEvents)
+  }, [t, x, i]);
+  let [v, E] = a.useState(void 0), k = b.find(e => e.key === v), {
     TabBar: P,
     renderSelectedTab: Z
   } = (0, C.Z)({
-    tabs: k
+    tabs: I
   }, []);
   return (0, r.jsxs)("div", {
     ref: e,
-    className: i()(T.panel, N.panel),
+    className: l()(T.panel, N.panel),
     children: [(0, r.jsxs)("div", {
       className: N.toolbar,
       children: [(0, r.jsx)(m.zxk, {
@@ -287,7 +287,7 @@ function P() {
         children: Object.entries(w).map(e => {
           let [t, n] = e;
           return (0, r.jsx)(m.P3F, {
-            className: i()(N.filter, s.includes(t) && N.activeFilter),
+            className: l()(N.filter, s.includes(t) && N.activeFilter),
             onClick: () => {
               c(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
             },
@@ -309,12 +309,12 @@ function P() {
       data: b,
       selectedRowKey: v,
       onClickRow: e => E(e.key)
-    }), null != I && (0, r.jsxs)(j.Z, {
+    }), null != k && (0, r.jsxs)(j.Z, {
       className: N.subPanel,
       minHeight: 100,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300,
       children: [(0, r.jsx)(P, {}), Z({
-        loggedEvent: I,
+        loggedEvent: k,
         onClose: () => E(void 0)
       })]
     })]

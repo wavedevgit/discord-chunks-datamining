@@ -4,7 +4,7 @@ n.d(t, {
   Qv: () => E,
   ZP: () => Z,
   fD: () => P,
-  w1: () => S
+  w1: () => A
 }), n(789020), n(757143), n(301563);
 var i, r = n(493683),
   l = n(911969),
@@ -17,8 +17,8 @@ var i, r = n(493683),
   p = n(122613),
   f = n(619915),
   v = n(16609),
-  y = n(761122),
-  b = n(361213),
+  b = n(761122),
+  y = n(361213),
   g = n(716600),
   h = n(952561),
   O = n(778569),
@@ -41,19 +41,19 @@ function Z(e) {
   } = e, {
     application: v,
     activity: g
-  } = t, h = g.client_platform_config[(0, y.Z)((0, u.getOS)())], m = null != h.label_until && Date.now() < Date.parse(h.label_until), w = (0, O.Z)({
+  } = t, h = g.client_platform_config[(0, b.Z)((0, u.getOS)())], m = null != h.label_until && Date.now() < Date.parse(h.label_until), w = (0, O.Z)({
     applicationId: v.id,
     size: c,
     names: a
-  }), j = null != g.activity_preview_video_asset_id ? (0, b.Z)(v.id, g.activity_preview_video_asset_id) : null, Z = (0, f.ZP)("channel" === n.type ? n.channel : void 0).find(e => {
+  }), j = null != g.activity_preview_video_asset_id ? (0, y.Z)(v.id, g.activity_preview_video_asset_id) : null, Z = (0, f.ZP)("channel" === n.type ? n.channel : void 0).find(e => {
     let {
       embeddedActivity: t
     } = e;
     return v.id === t.applicationId
-  }), A = E({
+  }), S = E({
     context: n,
     applicationId: v.id
-  }), C = S({
+  }), _ = A({
     applicationId: t.application.id,
     context: n,
     locationObject: i,
@@ -62,15 +62,15 @@ function Z(e) {
     launchingComponentId: d,
     commandOrigin: s,
     source: p
-  }), _ = P(v, t.activity);
+  }), C = P(v, t.activity);
   return {
     imageBackground: w,
     videoUrl: j,
     joinableEmbeddedApp: Z,
-    activityAction: A,
-    onActivityItemSelected: C,
+    activityAction: S,
+    onActivityItemSelected: _,
     labelType: m ? h.label_type : l.ww.NONE,
-    staffReleasePhase: _
+    staffReleasePhase: C
   }
 }
 
@@ -78,7 +78,7 @@ function P(e, t) {
   var n;
   let i = null !== (n = e.flags) && void 0 !== n ? n : 0;
   if (!((0, c.yE)(i, w.udG.EMBEDDED_RELEASED) || (0, c.yE)(i, w.udG.EMBEDDED_FIRST_PARTY))) return;
-  let r = t.client_platform_config[(0, y.Z)((0, u.getOS)())].release_phase;
+  let r = t.client_platform_config[(0, b.Z)((0, u.getOS)())].release_phase;
   return m.eB.includes(r) ? r.replace("_", " ").replace(/(^\w|\s\w)/g, e => e.toUpperCase()) : void 0
 }
 
@@ -100,7 +100,7 @@ function E(e) {
   return null != l && s === l.id && (null == c ? void 0 : c.id) === u.id ? r = 2 : null != d && (r = 1), r
 }
 
-function S(e) {
+function A(e) {
   let {
     applicationId: t,
     botUserIdForAppDM: n,
@@ -111,14 +111,14 @@ function S(e) {
     launchingComponentId: u,
     commandOrigin: f,
     sectionName: v,
-    source: y,
-    fetchesApplication: b = !0,
+    source: b,
+    fetchesApplication: y = !0,
     customId: h,
     referrerId: O
   } = e, m = E({
     context: i,
     applicationId: t,
-    fetchesApplication: b
+    fetchesApplication: y
   }), {
     analyticsLocations: w
   } = (0, o.ZP)(), j = (0, g.Z)();
@@ -139,7 +139,7 @@ function S(e) {
           componentId: u,
           commandOrigin: f,
           sectionName: v,
-          source: y,
+          source: b,
           customId: h,
           referrerId: O
         }).then(e => e && (null == c ? void 0 : c({
@@ -155,7 +155,7 @@ function S(e) {
           analyticsLocations: w,
           componentId: u,
           sectionName: v,
-          source: y,
+          source: b,
           customId: h,
           referrerId: O,
           instanceId: void 0,

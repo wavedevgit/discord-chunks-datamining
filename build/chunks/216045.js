@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => W
 }), n(47120);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(570140),
   u = n(809206),
   m = n(497321),
-  g = n(634894),
-  p = n(100527),
+  p = n(634894),
+  g = n(100527),
   h = n(906732),
   f = n(475977),
-  b = n(957730),
-  N = n(53691),
-  x = n(267717),
+  x = n(957730),
+  b = n(53691),
+  N = n(267717),
   _ = n(296810),
   E = n(921813),
   j = n(610794),
@@ -69,17 +69,17 @@ function W() {
       image: B
     }),
     V = (0, l.e7)([S.Z], () => S.Z.showNotice()),
-    G = P.dN.useSetting() && null != L ? b.ZP.parse(void 0, L).content : L,
+    G = P.dN.useSetting() && null != L ? x.ZP.parse(void 0, L).content : L,
     F = y.ZP.canUsePremiumProfileCustomization(n),
     {
       analyticsLocations: H
-    } = (0, h.ZP)(p.Z.PROFILE);
+    } = (0, h.ZP)(g.Z.PROFILE);
   i.useEffect(() => () => d.Z.wait(u.W3), []);
   let z = "UserSettingsProfileCustomization";
-  (0, g.j)({
+  (0, p.j)({
     location: z + " auto on",
     autoTrackExposure: !0
-  }), (0, g.j)({
+  }), (0, p.j)({
     location: z + " auto off",
     autoTrackExposure: !1
   });
@@ -138,11 +138,11 @@ function W() {
           isVisible: Y
         })
       })
-    }), X && !V && (0, r.jsx)(N.p, {
+    }), X && !V && (0, r.jsx)(b.p, {
       className: k.floatingNitroUpsell,
       showUpsell: X && !Y,
       text: w.NW.format(w.t.TmfgIy, {
-        onClick: () => (0, x.y)()
+        onClick: () => (0, N.y)()
       }),
       textVariant: "heading-md/medium",
       button: (0, r.jsxs)(c.gtL, {

@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => S
 });
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(18438),
   u = n(778825),
   m = n(851894),
-  g = n(484459),
-  p = n(216045),
+  p = n(484459),
+  g = n(216045),
   h = n(839469),
   f = n(25990),
-  b = n(594174),
-  N = n(585483),
-  x = n(16703),
+  x = n(594174),
+  b = n(585483),
+  N = n(16703),
   _ = n(785145),
   E = n(981631),
   j = n(526761),
@@ -31,10 +31,10 @@ function S() {
     location: "profile_customization_auto"
   });
   let e = (0, s.e7)([u.Z], () => u.Z.getGuild()),
-    t = (0, x.Z)(),
+    t = (0, N.Z)(),
     n = (0, s.e7)([u.Z, f.Z], () => u.Z.showNotice() || f.Z.showNotice()),
     S = null != e ? e : t,
-    T = (0, s.e7)([b.default], () => b.default.getCurrentUser()),
+    T = (0, s.e7)([x.default], () => x.default.getCurrentUser()),
     {
       subsection: I,
       setSubsection: y
@@ -50,17 +50,17 @@ function S() {
   function D(t) {
     if (I !== t) {
       if (n) {
-        N.S.dispatch(E.CkL.SHAKE_APP, {
+        b.S.dispatch(E.CkL.SHAKE_APP, {
           duration: 300,
           intensity: l.$x
-        }), N.S.dispatch(E.CkL.EMPHASIZE_NOTICE);
+        }), b.S.dispatch(E.CkL.EMPHASIZE_NOTICE);
         return
       }
       t === j.NB.GUILD && null == e && null != S && (0, d.Fq)(S, A), y(t)
     }
   }
   i.useEffect(() => {
-    null != T && (0, g.Z)(T.id, T.getAvatarURL(null == S ? void 0 : S.id, 80), {
+    null != T && (0, p.Z)(T.id, T.getAvatarURL(null == S ? void 0 : S.id, 80), {
       guildId: null == S ? void 0 : S.id
     })
   }, [null == S ? void 0 : S.id, T]);
@@ -90,7 +90,7 @@ function S() {
         }, j.NB.GUILD) : null]
       }), I === j.NB.GUILD ? (0, r.jsx)(m.Z, {
         selectedGuild: S
-      }) : (0, r.jsx)(p.Z, {})]
+      }) : (0, r.jsx)(g.Z, {})]
     })
   })
 }

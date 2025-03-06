@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => P
 }), n(47120);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(906732),
   u = n(856768),
   m = n(993413),
-  g = n(921801),
-  p = n(208049),
+  p = n(921801),
+  g = n(208049),
   h = n(763296),
   f = n(242291),
-  b = n(893663),
-  N = n(331642),
-  x = n(63063),
+  x = n(893663),
+  b = n(331642),
+  N = n(63063),
   _ = n(581883),
   E = n(738486),
   j = n(918257),
@@ -45,14 +45,14 @@ function P(e) {
   let {
     refreshStyles: t = !1
   } = e, n = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(g.F, {
+    children: [(0, r.jsxs)(p.F, {
       setting: O.s6.VOICE_AND_VIDEO_SOUNDBOARD,
       children: [(0, r.jsx)(j.Z, {
         refreshStyles: t
       }), (0, r.jsx)(C.Z, {
         refreshStyles: t
       })]
-    }), (0, r.jsxs)(g.F, {
+    }), (0, r.jsxs)(p.F, {
       setting: O.s6.VOICE_AND_VIDEO_ENTRANCE_SOUNDS,
       children: [t ? null : (0, r.jsx)(o.$i$, {
         className: I.callSoundsDivider
@@ -75,13 +75,13 @@ function R(e) {
     refreshStyles: t
   } = e, {
     analyticsLocations: n
-  } = (0, d.ZP)(), [s, c] = i.useState(S.hY), g = (0, b.tT)(s), _ = A(g), j = (null == g ? void 0 : g.type) === b.zx.GLOBAL, C = (0, l.e7)([h.Z], () => h.Z.hasFetchedAllSounds()) && null != g && null == _;
+  } = (0, d.ZP)(), [s, c] = i.useState(S.hY), p = (0, x.tT)(s), _ = A(p), j = (null == p ? void 0 : p.type) === x.zx.GLOBAL, C = (0, l.e7)([h.Z], () => h.Z.hasFetchedAllSounds()) && null != p && null == _;
   i.useEffect(() => {
     C && (0, f.tt)({
       location: n
     })
   }, [C, n]), i.useEffect(() => {
-    (0, p.w)()
+    (0, g.w)()
   }, []);
   let O = i.useCallback((e, t) => {
       let {
@@ -96,7 +96,7 @@ function R(e) {
         title: T.NW.string(T.t.nzUc3N),
         children: (0, r.jsx)(o.R94, {
           children: T.NW.format(T.t.u9RWmp, {
-            helpdeskArticle: x.Z.getArticleURL(v.BhN.SOUNDBOARD)
+            helpdeskArticle: N.Z.getArticleURL(v.BhN.SOUNDBOARD)
           })
         })
       }), (0, r.jsx)(u.Z, {
@@ -125,7 +125,7 @@ function R(e) {
           })
         }),
         forcedDivider: !t,
-        children: [(0, r.jsx)(N.Z, {
+        children: [(0, r.jsx)(b.Z, {
           sound: _,
           isGlobal: j,
           onSelect: e => {

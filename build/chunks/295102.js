@@ -1,5 +1,4 @@
-/** Chunk was on 45620 **/
-"use strict";
+/** Chunk was on 97434 **/
 e.exports = {
   partialOwnStateContainer: "partialOwnStateContainer__0d2da",
   partiallyOwnedDisclaimer: "partiallyOwnedDisclaimer__0d2da",

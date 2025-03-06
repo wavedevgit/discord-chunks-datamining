@@ -1,20 +1,20 @@
-/** Chunk was on 51424 **/
+/** Chunk was on 76282 **/
 n.d(t, {
   Z: () => u
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  l = n(570140),
-  o = n(317770),
+  o = n(570140),
+  l = n(317770),
   a = n(175281),
   s = n(285371);
-class c extends o.Z {
+class c extends l.Z {
   _initialize() {
-    l.Z.subscribe("SHOW_KEYBOARD_SHORTCUTS", this.showKeyboardShortcuts), l.Z.subscribe("HIDE_KEYBOARD_SHORTCUTS", this.hideKeyboardShortcuts)
+    o.Z.subscribe("SHOW_KEYBOARD_SHORTCUTS", this.showKeyboardShortcuts), o.Z.subscribe("HIDE_KEYBOARD_SHORTCUTS", this.hideKeyboardShortcuts)
   }
   _terminate() {
-    l.Z.unsubscribe("SHOW_KEYBOARD_SHORTCUTS", this.showKeyboardShortcuts), l.Z.unsubscribe("HIDE_KEYBOARD_SHORTCUTS", this.hideKeyboardShortcuts)
+    o.Z.unsubscribe("SHOW_KEYBOARD_SHORTCUTS", this.showKeyboardShortcuts), o.Z.unsubscribe("HIDE_KEYBOARD_SHORTCUTS", this.hideKeyboardShortcuts)
   }
   showKeyboardShortcuts() {
     (0, i.h7j)(e => (0, r.jsx)(a.Z, function(e) {

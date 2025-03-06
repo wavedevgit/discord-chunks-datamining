@@ -1,4 +1,5 @@
 /** Chunk was on 63141 **/
+"use strict";
 n.r(t), n.d(t, {
   default: () => _
 });
@@ -8,8 +9,8 @@ var i = n(200651),
   l = n(481060),
   a = n(490173),
   s = n(735246),
-  d = n(40851),
-  c = n(503737),
+  c = n(40851),
+  d = n(503737),
   u = n(823453),
   p = n(436774),
   h = n(686546),
@@ -21,12 +22,12 @@ var i = n(200651),
   O = n(981631);
 n(635324), n(167666), n(308765), n(913487), o.ZP.initialize();
 let _ = function() {
-  return r.useEffect(() => (v.Z.initialize(), c.Z.initialize(), m.Z.init(), () => {
-    v.Z.terminate(), c.Z.terminate()
+  return r.useEffect(() => (v.Z.initialize(), d.Z.initialize(), m.Z.init(), () => {
+    v.Z.terminate(), d.Z.terminate()
   }), []), (0, i.jsxs)(r.Fragment, {
     children: [(0, i.jsx)(u.Z, {}), (0, i.jsx)(s.T, {
       children: (0, i.jsxs)(E.Z, {
-        children: [(0, i.jsx)(h.Co, {}), (0, i.jsx)(p.ZP, {}), (0, i.jsx)(d.Wu, {
+        children: [(0, i.jsx)(h.Co, {}), (0, i.jsx)(p.ZP, {}), (0, i.jsx)(c.Wu, {
           appContext: O.IlC.OVERLAY,
           renderWindow: window,
           children: (0, i.jsxs)(f.yP, {

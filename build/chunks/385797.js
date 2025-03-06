@@ -1,41 +1,40 @@
-/** Chunk was on 45620 **/
-"use strict";
-r.d(t, {
+/** Chunk was on 76282 **/
+n.d(t, {
   Z: () => c
 });
-var n = r(200651),
-  l = r(786628),
-  i = r(755007),
-  o = r(231338),
-  s = r(592561);
+var r = n(200651),
+  i = n(786628),
+  o = n(755007),
+  l = n(231338),
+  a = n(592561);
 
-function a(e) {
+function s(e) {
   let {
     price: t,
-    isPremiumUser: r,
-    showInsufficientOrbBalanceTooltip: s
+    isPremiumUser: n,
+    showInsufficientOrbBalanceTooltip: a
   } = e;
-  return t.currency === o.pK.DISCORD_ORB ? (0, n.jsx)(i.Z, {
+  return t.currency === l.pK.DISCORD_ORB ? (0, r.jsx)(o.Z, {
     orbAmount: t.amount,
-    showInsufficientOrbBalanceTooltip: s
-  }) : (0, n.jsx)(l.Z, {
+    showInsufficientOrbBalanceTooltip: a
+  }) : (0, r.jsx)(i.Z, {
     price: t,
-    isPremiumUser: r
+    isPremiumUser: n
   })
 }
 
 function c(e) {
   let {
     displayPrices: t,
-    isPremiumUser: r,
-    showInsufficientOrbBalanceTooltip: l = !1
+    isPremiumUser: n,
+    showInsufficientOrbBalanceTooltip: i = !1
   } = e;
-  return (0, n.jsx)("div", {
-    className: s.priceLine,
-    children: t.map((e, t) => (0, n.jsx)(a, {
+  return (0, r.jsx)("div", {
+    className: a.priceLine,
+    children: t.map((e, t) => (0, r.jsx)(s, {
       price: e,
-      isPremiumUser: r,
-      showInsufficientOrbBalanceTooltip: l
+      isPremiumUser: n,
+      showInsufficientOrbBalanceTooltip: i
     }, t))
   })
 }

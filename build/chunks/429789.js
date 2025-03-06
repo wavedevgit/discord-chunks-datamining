@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => f
 });
@@ -13,8 +13,8 @@ var i = n(120356),
   d = n(921801),
   u = n(131951),
   m = n(726985),
-  g = n(388032),
-  p = n(802138);
+  p = n(388032),
+  g = n(802138);
 let h = (0, c.hQ)();
 
 function f(e) {
@@ -32,8 +32,8 @@ function f(e) {
     children: [(0, r.jsx)(l.vwX, {
       id: h,
       tag: l.RB0.H5,
-      className: p.marginBottom8,
-      children: g.NW.string(g.t.oSdBvb)
+      className: g.marginBottom8,
+      children: p.NW.string(p.t.oSdBvb)
     }), (0, r.jsx)(l.iRW, {
       initialValue: n,
       onValueChange: e => {
@@ -42,28 +42,28 @@ function f(e) {
       "aria-labelledby": h
     }), (0, r.jsx)(l.R94, {
       className: s()({
-        [p.marginBottom20]: !t
+        [g.marginBottom20]: !t
       }),
       type: l.R94.Types.DESCRIPTION,
-      children: g.NW.string(g.t["0A/8Rk"])
+      children: p.NW.string(p.t["0A/8Rk"])
     }), !t && (0, r.jsx)(l.$i$, {
-      className: p.marginBottom20
+      className: g.marginBottom20
     }), (0, r.jsx)(l.j7V, {
       value: i,
       onChange: e => o.Z.setAttenuation(n, e, c),
       hideBorder: t,
-      children: g.NW.string(g.t["9dHxRU"])
+      children: p.NW.string(p.t["9dHxRU"])
     }), (0, r.jsx)(l.j7V, {
       value: c,
       onChange: e => o.Z.setAttenuation(n, i, e),
       hideBorder: t,
-      children: g.NW.string(g.t.SMt0Gh)
+      children: p.NW.string(p.t.SMt0Gh)
     })]
   });
   return (0, r.jsx)(d.F, {
     setting: m.s6.VOICE_AND_VIDEO_ADVANCED_ATTENUATION,
     children: t ? f : (0, r.jsx)(l.hjN, {
-      className: p.marginBottom20,
+      className: g.marginBottom20,
       children: f
     })
   })

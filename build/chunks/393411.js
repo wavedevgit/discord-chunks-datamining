@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   R: () => V,
   Z: () => G
@@ -14,13 +14,13 @@ var i = n(120356),
   d = n(100527),
   u = n(906732),
   m = n(975298),
-  g = n(710845),
-  p = n(963249),
+  p = n(710845),
+  g = n(963249),
   h = n(301766),
   f = n(509545),
-  b = n(931331),
-  N = n(754347),
-  x = n(122289),
+  x = n(931331),
+  b = n(754347),
+  N = n(122289),
   _ = n(74538),
   E = n(212895),
   j = n(296848),
@@ -67,7 +67,7 @@ function w(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = new g.Z("SubscriptionHeader.tsx"),
+let k = new p.Z("SubscriptionHeader.tsx"),
   W = {
     page: P.ZY5.USER_SETTINGS,
     section: P.jXE.SETTINGS_PREMIUM,
@@ -157,7 +157,7 @@ function M(e) {
 function U() {
   return (0, r.jsxs)("div", {
     className: D.wordMark,
-    children: [(0, r.jsx)(N.Z, {
+    children: [(0, r.jsx)(b.Z, {
       className: D.discordWordmark,
       "aria-label": R.NW.string(R.t["FSOz7+"])
     }), (0, r.jsx)("div", {
@@ -178,7 +178,7 @@ function V() {
     }),
     buttons: (0, r.jsx)(T.Z, {
       className: D.toolsButton,
-      onClick: () => (0, p.Z)({
+      onClick: () => (0, g.Z)({
         subscriptionTier: A.Si.TIER_1,
         analyticsLocations: e,
         analyticsObject: W
@@ -195,7 +195,7 @@ let G = function(e) {
   let {
     subscription: i,
     renewalInvoicePreview: a,
-    paymentSource: g,
+    paymentSource: p,
     busy: y,
     analyticsLocation: V
   } = e, {
@@ -244,10 +244,10 @@ let G = function(e) {
           k.info("Plan not fetched for plan id: ".concat(i.premiumPlanIdFromItems));
           return
         }
-        let t = (0, E.DE)(e, null == g ? void 0 : g.id, !1),
+        let t = (0, E.DE)(e, null == p ? void 0 : p.id, !1),
           n = t.length > 0 ? t[0] : i.currency,
           r = !1;
-        1 === t.length && (null == g ? void 0 : g.id) === i.paymentSourceId && (0, E.tD)(e.id, n, null == g ? void 0 : g.id) && (r = !0), r ? c.O5(i, G) : (0, p.Z)({
+        1 === t.length && (null == p ? void 0 : p.id) === i.paymentSourceId && (0, E.tD)(e.id, n, null == p ? void 0 : p.id) && (r = !0), r ? c.O5(i, G) : (0, g.Z)({
           initialPlanId: i.premiumPlanIdFromItems,
           analyticsLocations: G,
           analyticsLocation: V,
@@ -258,7 +258,7 @@ let G = function(e) {
     },
     er = () => {
       if (!L.includes(i.status) || null == i.pauseEndsAt) {
-        (0, x.q2)(Error("Invalid subscription to resume"), {
+        (0, N.q2)(Error("Invalid subscription to resume"), {
           extra: {
             subscriptionId: i.id,
             status: i.status,
@@ -267,7 +267,7 @@ let G = function(e) {
         });
         return
       }
-      i.status === P.O0b.PAUSED ? (0, p.Z)({
+      i.status === P.O0b.PAUSED ? (0, g.Z)({
         initialPlanId: i.premiumPlanIdFromItems,
         analyticsLocations: G,
         analyticsLocation: V,
@@ -300,7 +300,7 @@ let G = function(e) {
     case A.p9.TIER_0:
       ed = (0, r.jsxs)("div", {
         className: D.wordMark,
-        children: [(0, r.jsx)(N.Z, {
+        children: [(0, r.jsx)(b.Z, {
           className: D.discordWordmark,
           "aria-label": R.NW.string(R.t["t9uG/v"])
         }), (0, r.jsx)("div", {
@@ -312,7 +312,7 @@ let G = function(e) {
       ed = (0, r.jsx)(U, {});
       break;
     case A.p9.TIER_2:
-      ed = (0, r.jsx)(b.Z, {
+      ed = (0, r.jsx)(x.Z, {
         className: D.planName,
         "aria-label": R.NW.string(R.t.lpNrPj)
       })
@@ -380,7 +380,7 @@ let G = function(e) {
               disabled: e,
               className: D.toolsButton,
               onClick: () => {
-                (0, p.Z)({
+                (0, g.Z)({
                   analyticsLocations: G,
                   analyticsLocation: V,
                   analyticsObject: W,

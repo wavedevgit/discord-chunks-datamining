@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => b
+  Z: () => x
 }), n(47120);
 var r, i = n(200651),
   s = n(192379),
@@ -11,9 +11,9 @@ var r, i = n(200651),
   d = n(893776),
   u = n(468026),
   m = n(594174),
-  g = n(388032);
+  p = n(388032);
 
-function p(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,7 +29,7 @@ function h(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -47,13 +47,13 @@ class f extends(r = s.Component) {
       color: e,
       disabled: this.state.isSendingVerificationEmail,
       onClick: this.handleResendVerification,
-      children: g.NW.string(g.t.lm1UKi)
+      children: p.NW.string(p.t.lm1UKi)
     })
   }
   constructor(...e) {
-    super(...e), p(this, "state", {
+    super(...e), g(this, "state", {
       isSendingVerificationEmail: !1
-    }), p(this, "handleResendVerification", () => {
+    }), g(this, "handleResendVerification", () => {
       let {
         currentUser: e,
         onClick: t
@@ -64,13 +64,13 @@ class f extends(r = s.Component) {
         d.Z.verifyResend().then(() => (0, c.h7j)(t => {
           var n, r;
           return (0, i.jsx)(c.ConfirmModal, (n = h({
-            header: g.NW.string(g.t.LykQYm),
-            confirmText: g.NW.string(g.t.BddRzc),
+            header: p.NW.string(p.t.LykQYm),
+            confirmText: p.NW.string(p.t.BddRzc),
             confirmButtonColor: c.zxk.Colors.BRAND
           }, t), r = r = {
             children: (0, i.jsx)(c.Text, {
               variant: "text-md/normal",
-              children: g.NW.format(g.t.azKEPz, {
+              children: p.NW.format(p.t.azKEPz, {
                 email: e.email
               })
             })
@@ -87,9 +87,9 @@ class f extends(r = s.Component) {
         })).catch(e => {
           let {
             body: t
-          } = e, n = g.NW.string(g.t.XcrQNz);
+          } = e, n = p.NW.string(p.t.XcrQNz);
           null != t && t.email && (n = t.email), (0, c.h7j)(e => (0, i.jsx)(u.default, h({
-            title: g.NW.string(g.t.VbTh0N),
+            title: p.NW.string(p.t.VbTh0N),
             body: n
           }, e)))
         }).then(() => this.setState({
@@ -99,11 +99,11 @@ class f extends(r = s.Component) {
     })
   }
 }
-p(f, "defaultProps", {
+g(f, "defaultProps", {
   size: c.zxk.Sizes.MEDIUM,
   color: c.zxk.Colors.BRAND
 });
-let b = o.ZP.connectStores([m.default], () => {
+let x = o.ZP.connectStores([m.default], () => {
   let e = m.default.getCurrentUser();
   return l()(null != e, "ResendEmailVerificationButton: currentUser cannot be undefined"), {
     currentUser: e

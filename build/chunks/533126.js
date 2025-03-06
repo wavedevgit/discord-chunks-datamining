@@ -15,7 +15,7 @@ function i(e) {
   return btoa(n).replace(/\+/g, "-").replace(/\//g, "_").replace(/=/g, "")
 }
 n.d(t, {
-  U2: () => _,
+  U2: () => f,
   wz: () => m
 });
 var o = "copy",
@@ -77,7 +77,7 @@ var d = {
     appidExclude: u(o),
     credProps: u(o)
   },
-  g = {
+  p = {
     appid: u(o),
     appidExclude: u(o),
     credProps: u(o)
@@ -103,8 +103,8 @@ c({
     var t;
     return (null == (t = e.getTransports) ? void 0 : t.call(e)) || []
   })
-}), s(g, e => e.getClientExtensionResults());
-var p = {
+}), s(p, e => e.getClientExtensionResults());
+var g = {
     mediation: u(o),
     publicKey: c({
       challenge: c(a),
@@ -116,7 +116,7 @@ var p = {
     }),
     signal: u(o)
   },
-  f = {
+  _ = {
     type: c(o),
     id: c(o),
     rawId: c(a),
@@ -127,13 +127,13 @@ var p = {
       signature: c(a),
       userHandle: c(a)
     }),
-    clientExtensionResults: s(g, e => e.getClientExtensionResults())
+    clientExtensionResults: s(p, e => e.getClientExtensionResults())
   };
 
 function m(e) {
-  return l(r, p, e)
+  return l(r, g, e)
 }
-async function _(e) {
+async function f(e) {
   let t = await navigator.credentials.get(e);
-  return t.toJSON = () => l(i, f, t), t
+  return t.toJSON = () => l(i, _, t), t
 }

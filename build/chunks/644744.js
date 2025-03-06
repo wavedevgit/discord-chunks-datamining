@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => N
+  Z: () => b
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(388032),
   m = n(249129);
 
-function g(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,7 +21,7 @@ function g(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let p = {
+let g = {
     [d.gkr.HOUSE_1]: m.membershipDialogHouse1,
     [d.gkr.HOUSE_2]: m.membershipDialogHouse2,
     [d.gkr.HOUSE_3]: m.membershipDialogHouse3
@@ -36,12 +36,12 @@ let p = {
     [d.gkr.HOUSE_2]: n(797148),
     [d.gkr.HOUSE_3]: n(374347)
   },
-  b = e => ({
+  x = e => ({
     [d.gkr.HOUSE_1]: u.NW.string(u.t.CpG10d),
     [d.gkr.HOUSE_2]: u.NW.string(u.t.VNPE6u),
     [d.gkr.HOUSE_3]: u.NW.string(u.t.KNfiTU)
   })[e];
-class N extends i.Component {
+class b extends i.Component {
   render() {
     let {
       houseMembership: e,
@@ -54,7 +54,7 @@ class N extends i.Component {
         houseName: (0, c.X8)(e)
       });
       return (0, r.jsx)("div", {
-        className: a()(m.membershipDialog, p[e]),
+        className: a()(m.membershipDialog, g[e]),
         children: (0, r.jsxs)("div", {
           className: m.membershipDialogContent,
           children: [(0, r.jsxs)(o.Z, {
@@ -72,7 +72,7 @@ class N extends i.Component {
               }), (0, r.jsx)(l.Text, {
                 className: m.membershipDialogHouseDescription,
                 variant: "text-md/normal",
-                children: b(e)
+                children: x(e)
               })]
             }), (0, r.jsx)(o.Z.Child, {
               className: m.houseLogoWrapper,
@@ -128,7 +128,7 @@ class N extends i.Component {
     })
   }
   constructor(...e) {
-    super(...e), g(this, "handleJoinHypeSquadClick", () => {
+    super(...e), p(this, "handleJoinHypeSquadClick", () => {
       (0, l.ZDy)(async () => {
         let {
           default: e
@@ -140,7 +140,7 @@ class N extends i.Component {
             "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
             }))), r.forEach(function(t) {
-              g(e, t, n[t])
+              p(e, t, n[t])
             })
           }
           return e

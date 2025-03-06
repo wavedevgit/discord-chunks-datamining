@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => j
 }), n(47120);
@@ -12,28 +12,28 @@ var r = n(200651),
   d = n(692547),
   u = n(481060),
   m = n(846027),
-  g = n(313201),
-  p = n(131951),
+  p = n(313201),
+  g = n(131951),
   h = n(65154),
   f = n(388032),
-  b = n(896753),
-  N = n(473845),
-  x = n(612064),
+  x = n(896753),
+  b = n(473845),
+  N = n(612064),
   _ = n(802138);
-let E = (0, g.hQ)();
+let E = (0, p.hQ)();
 
 function j() {
   let [e, t] = i.useState(-100), [n, s] = i.useState(!1), {
     threshold: j,
     autoThreshold: C
-  } = (0, l.cj)([p.Z], () => p.Z.getModeOptions()), {
+  } = (0, l.cj)([g.Z], () => g.Z.getModeOptions()), {
     inputMode: O,
     automaticVADSupported: v,
     isEnabled: S
-  } = (0, l.cj)([p.Z], () => ({
-    inputMode: p.Z.getMode(),
-    automaticVADSupported: p.Z.supports(h.AN.AUTOMATIC_VAD),
-    isEnabled: p.Z.isEnabled()
+  } = (0, l.cj)([g.Z], () => ({
+    inputMode: g.Z.getMode(),
+    automaticVADSupported: g.Z.supports(h.AN.AUTOMATIC_VAD),
+    isEnabled: g.Z.isEnabled()
   }));
 
   function T(e, n) {
@@ -49,13 +49,13 @@ function j() {
   i.useEffect(() => {
     let e = new c.V7;
     return e.start(1e3, () => {
-      p.Z.getMediaEngine().on(o.aB.VoiceActivity, T), e.stop()
+      g.Z.getMediaEngine().on(o.aB.VoiceActivity, T), e.stop()
     }), () => {
-      p.Z.getMediaEngine().removeListener(o.aB.VoiceActivity, T), e.stop()
+      g.Z.getMediaEngine().removeListener(o.aB.VoiceActivity, T), e.stop()
     }
   }, []);
   let y = (0, r.jsx)("section", {
-    className: a()(b.inputSensitivityToggle, b.manual),
+    className: a()(x.inputSensitivityToggle, x.manual),
     children: (0, r.jsx)(u.iRW, {
       initialValue: j + 100,
       onValueRender: e => "".concat((-((100 - e) * 1)).toFixed(0), "dB"),
@@ -68,9 +68,9 @@ function j() {
       },
       "aria-labelledby": E,
       children: (0, r.jsxs)("div", {
-        className: a()(b.sliderBar, b.microphone, b.inputSensitivityBar, N.bar),
+        className: a()(x.sliderBar, x.microphone, x.inputSensitivityBar, b.bar),
         children: [(0, r.jsx)("div", {
-          className: a()(b.fill, b.inputSensitivityBarFill),
+          className: a()(x.fill, x.inputSensitivityBarFill),
           style: {
             width: e + 100 + "%"
           }
@@ -81,12 +81,12 @@ function j() {
     })
   });
   return C && (y = (0, r.jsxs)("section", {
-    className: b.inputSensitivityToggle,
+    className: x.inputSensitivityToggle,
     children: [(0, r.jsx)("div", {
-      className: b.inputSensitivitySlider,
+      className: x.inputSensitivitySlider,
       children: (0, r.jsx)("div", {
-        className: a()(b.inputSensitivityBar, b.sliderBar, {
-          [b.speaking]: n
+        className: a()(x.inputSensitivityBar, x.sliderBar, {
+          [x.speaking]: n
         })
       })
     }), (0, r.jsx)(u.R94, {
@@ -97,10 +97,10 @@ function j() {
   })), (0, r.jsxs)(u.xJW, {
     title: f.NW.string(f.t["sqUm+v"]),
     titleId: E,
-    className: b.sensitivity,
-    children: [v && (0, r.jsx)(g.FG, {
+    className: x.sensitivity,
+    children: [v && (0, r.jsx)(p.FG, {
       children: e => (0, r.jsxs)("div", {
-        className: a()(x.horizontal, _.marginBottom4),
+        className: a()(N.horizontal, _.marginBottom4),
         children: [(0, r.jsx)(u.vwX, {
           tag: u.RB0.H3,
           className: _.marginReset,
@@ -116,7 +116,7 @@ function j() {
       })
     }), y, !S && (0, r.jsx)(u.R94, {
       type: u.R94.Types.DESCRIPTION,
-      className: a()(b.inputDisabledWarning, _.marginBottom8),
+      className: a()(x.inputDisabledWarning, _.marginBottom8),
       children: f.NW.format(f.t["O13I+P"], {
         onEnableClick: () => m.Z.enable(!0)
       })

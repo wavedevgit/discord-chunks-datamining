@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => j
+  Z: () => C
 });
 var r = n(200651),
   i = n(192379),
@@ -12,18 +12,18 @@ var r = n(200651),
   u = n(388905),
   d = n(925329),
   h = n(479446),
-  g = n(981632),
-  p = n(594174),
-  f = n(509545),
+  p = n(981632),
+  g = n(594174),
+  _ = n(509545),
   m = n(55563),
-  _ = n(296848),
+  f = n(296848),
   b = n(981631),
-  N = n(474936),
-  x = n(388032),
+  x = n(474936),
+  N = n(388032),
   v = n(722515),
   I = n(612064),
   E = n(802138);
-let j = l.ZP.connectStores([m.Z, c.Z, f.Z, p.default], e => {
+let C = l.ZP.connectStores([m.Z, c.Z, _.Z, g.default], e => {
   let {
     giftCode: t
   } = e, n = m.Z.get(t.skuId), {
@@ -31,9 +31,9 @@ let j = l.ZP.connectStores([m.Z, c.Z, f.Z, p.default], e => {
   } = t;
   return {
     sku: n,
-    subscriptionPlan: null != r ? (0, _.oE)(r) : null,
+    subscriptionPlan: null != r ? (0, f.oE)(r) : null,
     application: c.Z.getApplication(n.applicationId),
-    gifter: p.default.getUser(t.userId)
+    gifter: g.default.getUser(t.userId)
   }
 })(e => {
   let {
@@ -42,15 +42,15 @@ let j = l.ZP.connectStores([m.Z, c.Z, f.Z, p.default], e => {
     gifter: o,
     sku: l,
     application: c,
-    subscriptionPlan: p
-  } = e, f = null == o ? x.NW.string(x.t.lTGZAg) : x.NW.formatToPlainString(x.t.TjWdPT, {
+    subscriptionPlan: g
+  } = e, _ = null == o ? N.NW.string(N.t.lTGZAg) : N.NW.formatToPlainString(N.t.TjWdPT, {
     username: o.username
   }), m = l.name;
-  return null != p && (m = x.NW.formatToPlainString(p.interval === N.rV.MONTH ? x.t.CTpcCQ : x.t.rgPWGx, {
+  return null != g && (m = N.NW.formatToPlainString(g.interval === x.rV.MONTH ? N.t.CTpcCQ : N.t.rgPWGx, {
     skuName: l.name,
-    intervalCount: p.intervalCount
+    intervalCount: g.intervalCount
   })), (0, r.jsxs)(i.Fragment, {
-    children: [null != n.giftStyle ? (0, r.jsx)(g.Z, {
+    children: [null != n.giftStyle ? (0, r.jsx)(p.Z, {
       defaultAnimationState: h.SR.LOOP,
       giftStyle: n.giftStyle,
       className: v.seasonalIcon
@@ -60,13 +60,13 @@ let j = l.ZP.connectStores([m.Z, c.Z, f.Z, p.default], e => {
       className: E.marginBottom20
     }), null != t ? (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(u.DK, {
-        children: x.NW.string(x.t.mDFGFh)
+        children: N.NW.string(N.t.mDFGFh)
       }), (0, r.jsx)(u.Dx, {
         children: t
       })]
     }) : (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(u.DK, {
-        children: f
+        children: _
       }), (0, r.jsxs)(u.Dx, {
         className: a()(E.marginTop8, I.flexCenter),
         children: [l.productLine !== b.POd.COLLECTIBLES && (0, r.jsx)(d.Z, {

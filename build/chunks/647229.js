@@ -617,7 +617,7 @@ l.cipher.aes = function(e) {
     e && this.addEntropy(e, 2, "accelerometer"), f(this, 0)
   }
 }, l.random = new l.prng(6);
-i: try {
+e: try {
   if (a = e.exports) {
     try {
       s = n(Object(function() {
@@ -633,7 +633,7 @@ i: try {
   else if ("undefined" != typeof window && "undefined" != typeof Uint32Array) {
     if (o = new Uint32Array(32), window.crypto && window.crypto.getRandomValues) window.crypto.getRandomValues(o);
     else if (window.msCrypto && window.msCrypto.getRandomValues) window.msCrypto.getRandomValues(o);
-    else break i;
+    else break e;
     l.random.addEntropy(o, 1024, "crypto['getRandomValues']")
   }
 } catch (e) {

@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   C: () => ei,
   Z: () => ea
@@ -13,13 +13,13 @@ var r = n(200651),
   d = n(622535),
   u = n(780384),
   m = n(481060),
-  g = n(570140),
-  p = n(355467),
+  p = n(570140),
+  g = n(355467),
   h = n(37234),
   f = n(821849),
-  b = n(230711),
-  N = n(497321),
-  x = n(634894),
+  x = n(230711),
+  b = n(497321),
+  N = n(634894),
   _ = n(410030),
   E = n(607070),
   j = n(100527),
@@ -63,9 +63,9 @@ function en(e) {
     isDiscountApplied: n,
     activeDiscountInfo: i,
     theme: s
-  } = e, a = null != t.trialId, l = t.planIdFromItems === K.Xh.PREMIUM_YEAR_TIER_2, c = n || a, d = null != t.trialEndsAt ? o()(t.trialEndsAt).diff(o()(), "d") : 0, g = K.GP[t.planIdFromItems], p = w.ZP.formatPriceString(w.ZP.getDefaultPrice(g.id), g.interval);
+  } = e, a = null != t.trialId, l = t.planIdFromItems === K.Xh.PREMIUM_YEAR_TIER_2, c = n || a, d = null != t.trialEndsAt ? o()(t.trialEndsAt).diff(o()(), "d") : 0, p = K.GP[t.planIdFromItems], g = w.ZP.formatPriceString(w.ZP.getDefaultPrice(p.id), p.interval);
   if (c) {
-    var h, f, b;
+    var h, f, x;
     return (0, r.jsxs)(r.Fragment, {
       children: [(a || !l) && (0, r.jsx)(G.Cy, {
         text: a ? X.NW.string(X.t.qYKftb) : X.NW.string(X.t.EyjDRE),
@@ -79,14 +79,14 @@ function en(e) {
         className: J.trialHeader,
         children: a ? X.NW.format(X.t["2CGBrq"], {
           remainingTime: d,
-          price: p
+          price: g
         }) : l ? X.NW.format(X.t["+qqh6u"], {
           percent: null !== (h = null == i ? void 0 : i.percentage) && void 0 !== h ? h : K.Bo,
-          regularPrice: p
+          regularPrice: g
         }) : X.NW.formatToPlainString(X.t["3Ziutb"], {
           percent: null !== (f = null == i ? void 0 : i.percentage) && void 0 !== f ? f : K.M_,
-          regularPrice: p,
-          numMonths: null !== (b = null == i ? void 0 : i.duration) && void 0 !== b ? b : K.rt
+          regularPrice: g,
+          numMonths: null !== (x = null == i ? void 0 : i.duration) && void 0 !== x ? x : K.rt
         })
       })]
     })
@@ -94,7 +94,7 @@ function en(e) {
   return (0, r.jsx)(F.Z, {
     variant: void 0,
     subscriptionTier: K.Si.TIER_2,
-    interval: g.interval
+    interval: p.interval
   })
 }
 
@@ -110,10 +110,10 @@ function er() {
     o = null !== i && null !== i.planIdFromItems;
   if (!o && s === K.a$.NONE) return null;
   let d = s !== K.a$.NONE && !l,
-    g = null !== i && null != i.trialId;
+    p = null !== i && null != i.trialId;
   return (0, r.jsxs)("div", {
     className: a()(J.tierCard, {
-      [J.withTier2Rim]: e || g
+      [J.withTier2Rim]: e || p
     }),
     children: [(0, r.jsxs)("div", {
       className: J.tierInfo,
@@ -174,7 +174,7 @@ function er() {
           D.default.track(q.rMx.PREMIUM_SETTINGS_INTERACTED, {
             cta_type: "to_subscriptions_button",
             target: "subscriptions settings"
-          }), b.Z.open(q.oAB.SUBSCRIPTIONS)
+          }), x.Z.open(q.oAB.SUBSCRIPTIONS)
         },
         children: (0, r.jsx)(m.Text, {
           className: J.__invalid_managePlanButtonCTA,
@@ -294,25 +294,25 @@ let ea = function() {
       forceFetch: !0
     }),
     h = (0, B.n)(),
-    b = null == h ? void 0 : h.countryCode,
+    x = null == h ? void 0 : h.countryCode,
     _ = (0, c.e7)([A.Z], () => A.Z.enabled),
     E = "PremiumManagementSettings";
-  (0, x.j)({
+  (0, N.j)({
     location: E + " auto on",
     autoTrackExposure: !0
-  }), (0, x.j)({
+  }), (0, N.j)({
     location: E + " auto off",
     autoTrackExposure: !1
   }), (0, U.B)(E);
   let y = (0, M.b)(E),
     R = (0, z.pn)(E);
   i.useEffect(() => {
-    g.Z.wait(async () => {
-      _ || e || await Promise.all([p.jg(), p.tZ(), (0, f.Y2)(b, null, q.JjL.DISCOVERY)]), o(!1)
+    p.Z.wait(async () => {
+      _ || e || await Promise.all([g.jg(), g.tZ(), (0, f.Y2)(x, null, q.JjL.DISCOVERY)]), o(!1)
     })
-  }, [b, _, e]);
+  }, [x, _, e]);
   let [Z, w] = i.useState(!1);
-  if (_) return (0, r.jsx)(N.Z, {});
+  if (_) return (0, r.jsx)(b.Z, {});
   if (e) return (0, r.jsx)(T.c8, {});
   let k = s && null !== n && a,
     W = u !== K.a$.NONE;

@@ -1,51 +1,51 @@
 /** Chunk was on 11212 **/
 "use strict";
-c.d(e, {
-  Z: () => p
+a.d(e, {
+  Z: () => o
 });
-var d, a = c(442837),
-  s = c(570140);
+var c, d = a(442837),
+  s = a(570140);
 
-function n(t, e, c) {
+function n(t, e, a) {
   return e in t ? Object.defineProperty(t, e, {
-    value: c,
+    value: a,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : t[e] = c, t
+  }) : t[e] = a, t
 }
-let o = {
+let f = {
   lastUpdateRequested: {}
 };
-class f extends(d = a.ZP.PersistedStore) {
+class i extends(c = d.ZP.PersistedStore) {
   initialize(t) {
-    o = function(t) {
+    f = function(t) {
       for (var e = 1; e < arguments.length; e++) {
-        var c = null != arguments[e] ? arguments[e] : {},
-          d = Object.keys(c);
-        "function" == typeof Object.getOwnPropertySymbols && (d = d.concat(Object.getOwnPropertySymbols(c).filter(function(t) {
-          return Object.getOwnPropertyDescriptor(c, t).enumerable
-        }))), d.forEach(function(e) {
-          n(t, e, c[e])
+        var a = null != arguments[e] ? arguments[e] : {},
+          c = Object.keys(a);
+        "function" == typeof Object.getOwnPropertySymbols && (c = c.concat(Object.getOwnPropertySymbols(a).filter(function(t) {
+          return Object.getOwnPropertyDescriptor(a, t).enumerable
+        }))), c.forEach(function(e) {
+          n(t, e, a[e])
         })
       }
       return t
-    }({}, o, null != t ? t : {})
+    }({}, f, null != t ? t : {})
   }
   getState() {
-    return o
+    return f
   }
   getLastUpdateRequested(t) {
-    return o.lastUpdateRequested[t]
+    return f.lastUpdateRequested[t]
   }
 }
-n(f, "displayName", "UserLeaderboardStore"), n(f, "persistKey", "UserLeaderboardStore");
-let p = new f(s.Z, {
+n(i, "displayName", "UserLeaderboardStore"), n(i, "persistKey", "UserLeaderboardStore");
+let o = new i(s.Z, {
   SET_USER_LEADERBOARD_LAST_UPDATE_REQUESTED: function(t) {
     let {
       lastUpdateRequested: e,
-      leaderboardId: c
+      leaderboardId: a
     } = t;
-    o.lastUpdateRequested[c] = e
+    f.lastUpdateRequested[a] = e
   }
 })

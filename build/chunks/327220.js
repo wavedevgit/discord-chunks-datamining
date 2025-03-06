@@ -4,13 +4,13 @@ n.d(t, {
 }), n(47120);
 var r = n(192379),
   a = n(442837),
-  l = n(592125),
-  i = n(9156);
+  i = n(592125),
+  l = n(9156);
 
 function o(e) {
-  let t = (0, a.e7)([l.Z], () => l.Z.getPrivateChannelsVersion()),
-    n = (0, a.e7)([l.Z], () => l.Z.getMutableDMsByUserIds(), [t]),
-    o = (0, a.e7)([i.ZP], () => i.ZP.getMutedChannels(null)),
+  let t = (0, a.e7)([i.Z], () => i.Z.getPrivateChannelsVersion()),
+    n = (0, a.e7)([i.Z], () => i.Z.getMutableDMsByUserIds(), [t]),
+    o = (0, a.e7)([l.ZP], () => l.ZP.getMutedChannels(null)),
     s = r.useMemo(() => {
       let e = new Set;
       for (let t in n) {

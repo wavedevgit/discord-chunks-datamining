@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => _
 }), n(47120), n(411104);
@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(246946),
   u = n(626135),
   m = n(669079),
-  g = n(981631),
-  p = n(388032),
+  p = n(981631),
+  g = n(388032),
   h = n(323577);
 
 function f(e, t, n) {
@@ -25,7 +25,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function b(e) {
   return e
 }
 
-function N(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,15 +50,15 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class x extends i.Component {
+class N extends i.Component {
   get analyticsLocation() {
     let {
       analyticsContext: {
         location: e
       }
     } = this.props;
-    return N(b({}, e), {
-      object: g.qAy.BUTTON_CTA
+    return b(x({}, e), {
+      object: p.qAy.BUTTON_CTA
     })
   }
   render() {
@@ -72,9 +72,9 @@ class x extends i.Component {
     } = this.state;
     return (0, r.jsxs)(a.hjN, {
       tag: a.RB0.H1,
-      title: p.NW.string(p.t["il+VCg"]),
+      title: g.NW.string(g.t["il+VCg"]),
       children: [(0, r.jsx)(a.vwX, {
-        children: p.NW.string(p.t.SeKIoa)
+        children: g.NW.string(g.t.SeKIoa)
       }), (0, r.jsx)("form", {
         onSubmit: this.handleSubmit,
         children: (0, r.jsxs)(o.Z, {
@@ -83,18 +83,18 @@ class x extends i.Component {
             value: t,
             onChange: this.handleChange,
             placeholder: "WUMP-AAAAA-BBBBB-CCCCC",
-            error: !s && i ? p.NW.string(p.t.Y11a2t) : null,
+            error: !s && i ? g.NW.string(g.t.Y11a2t) : null,
             className: h.codeRedemptionInput
           }), (0, r.jsx)(a.zxk, {
             type: "submit",
             submitting: n,
-            children: p.NW.string(p.t.KIpp7O)
+            children: g.NW.string(g.t.KIpp7O)
           })]
         })
       }), s ? (0, r.jsx)(a.Text, {
         className: h.errorMessage,
         variant: "text-sm/normal",
-        children: p.NW.format(p.t.gPt3PD, {
+        children: g.NW.format(g.t.gPt3PD, {
           promoLink: () => {
             window.open("https://discord.com/billing/promotions/".concat(t))
           }
@@ -134,10 +134,10 @@ class x extends i.Component {
         if (null != e && null != e.giftCode.promotion) throw this.setState({
           isPromoCode: !0
         }), Error("Cannnot redeem promotion code as gift");
-        u.default.track(g.rMx.OPEN_MODAL, {
+        u.default.track(p.rMx.OPEN_MODAL, {
           type: "gift_accept",
-          location: N(b({}, this.analyticsLocation), {
-            object: g.qAy.BUTTON_CTA
+          location: b(x({}, this.analyticsLocation), {
+            object: p.qAy.BUTTON_CTA
           })
         }), (0, c.V)({
           processedCode: n
@@ -160,7 +160,7 @@ class x extends i.Component {
 function _() {
   let e = i.useContext(u.AnalyticsContext),
     t = (0, s.e7)([d.Z], () => d.Z.enabled);
-  return (0, r.jsx)(x, {
+  return (0, r.jsx)(N, {
     analyticsContext: e,
     obscureInput: t
   })

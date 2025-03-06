@@ -56,10 +56,10 @@ let h = new a.Yd("VoiceFilterStore"),
     voiceFilters: {},
     modelState: {},
     sortedVoiceFilters: [],
+    catalogFetchFailed: !1,
     catalogLastFetchTime: void 0,
     catalogUpdateTime: void 0,
-    limitedTimeVoices: void 0,
-    catalogFailed: !1
+    limitedTimeVoices: void 0
   };
 
 function m(e) {
@@ -107,7 +107,7 @@ function y(e) {
   let {
     catalog: t
   } = e;
-  g.catalogFailed = !1, g.models = t.models, g.limitedTimeVoices = t.limited_time_voices;
+  g.catalogFetchFailed = !1, g.models = t.models, g.limitedTimeVoices = t.limited_time_voices;
   let n = {},
     r = E(g.limitedTimeVoices);
   for (let {
@@ -125,7 +125,7 @@ function y(e) {
 }
 
 function O() {
-  g.catalogFailed = !0
+  g.catalogFetchFailed = !0
 }
 class S extends(r = s.ZP.Store) {
   getVoiceFilterModels() {
@@ -162,11 +162,11 @@ class S extends(r = s.ZP.Store) {
   isNativeModuleLoading() {
     return g.nativeVoiceFilterModuleState === c.O.LOADING
   }
-  showFailure() {
-    var e;
-    if (Object.keys(null !== (e = null == g ? void 0 : g.models) && void 0 !== e ? e : {}).length) return !1;
-    let t = g.nativeVoiceFilterModuleState === c.O.FAILED;
-    return g.catalogFailed || t
+  hasNativeModuleFailed() {
+    return g.nativeVoiceFilterModuleState === c.O.FAILED
+  }
+  getCatalogFetchFailed() {
+    return g.catalogFetchFailed
   }
 }
 

@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => m
 });
@@ -16,15 +16,15 @@ function m(e) {
   var t;
   let {
     user: m,
-    disabledInputs: g,
-    containerClassName: p
+    disabledInputs: p,
+    containerClassName: g
   } = e, {
     reducedMotion: h
   } = i.useContext(a.Sfi), {
     pendingAvatarV2: f,
-    pendingBanner: b,
-    pendingThemeColors: N,
-    pendingPronouns: x,
+    pendingBanner: x,
+    pendingThemeColors: b,
+    pendingPronouns: N,
     pendingBio: _,
     tryItOutThemeColors: E,
     tryItOutAvatarV2: j,
@@ -53,19 +53,19 @@ function m(e) {
     image: null != j ? j : f
   }), T = (0, l.Z)(O, !1);
   return (0, r.jsx)(d.Z, {
-    containerClassName: p,
+    containerClassName: g,
     user: m,
-    pendingPronouns: x,
+    pendingPronouns: N,
     pendingBio: _,
-    pendingBanner: null !== (t = null != C ? C : b) && void 0 !== t ? t : n(466045),
+    pendingBanner: null !== (t = null != C ? C : x) && void 0 !== t ? t : n(466045),
     pendingAvatar: S,
-    pendingThemeColors: null != E ? E : N,
+    pendingThemeColors: null != E ? E : b,
     pendingAvatarDecoration: T,
     pendingProfileEffectId: v,
     avatarClassName: null != j || null != f || h.enabled ? void 0 : u.spinningAvatar,
     canUsePremiumCustomization: !0,
     isTryItOutFlow: !0,
     hideExampleButton: !0,
-    disabledInputs: g
+    disabledInputs: p
   })
 }

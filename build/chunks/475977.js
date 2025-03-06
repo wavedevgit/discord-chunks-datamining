@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => v
 }), n(266796);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(481060),
   u = n(100527),
   m = n(906732),
-  g = n(626135),
-  p = n(335131),
+  p = n(626135),
+  g = n(335131),
   h = n(874703),
   f = n(410154),
-  b = n(302800),
-  N = n(981631),
-  x = n(474936),
+  x = n(302800),
+  b = n(981631),
+  N = n(474936),
   _ = n(388032),
   E = n(698555),
   j = n(786792),
@@ -68,9 +68,9 @@ let O = e => {
       title: () => v.title,
       description: () => v.body,
       revertTextColor: v.revertTextColor
-    } : b.GX[C], i.useEffect(() => {
-      g.default.track(N.rMx.PREMIUM_UPSELL_VIEWED, {
-        type: x.cd.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
+    } : x.GX[C], i.useEffect(() => {
+      p.default.track(b.rMx.PREMIUM_UPSELL_VIEWED, {
+        type: N.cd.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
         location_stack: n,
         version: null == v ? void 0 : v.version
       })
@@ -87,7 +87,7 @@ let O = e => {
         marketingVariant: C
       }), (0, r.jsx)(d.zxk, {
         onClick: () => {
-          (0, p.mK)({
+          (0, g.mK)({
             analyticsLocations: n,
             analyticsSource: u.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
           })

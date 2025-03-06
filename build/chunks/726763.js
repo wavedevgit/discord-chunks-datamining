@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => b
+  Z: () => x
 });
 var r = n(200651);
 n(192379);
@@ -13,12 +13,12 @@ var i = n(120356),
   d = n(921801),
   u = n(210887),
   m = n(726985),
-  g = n(388032),
-  p = n(802138);
+  p = n(388032),
+  g = n(802138);
 let h = n(651714),
   f = n(297166);
 
-function b(e) {
+function x(e) {
   let {
     refreshStyles: t = !1
   } = e, n = (0, a.e7)([u.Z], () => u.Z.theme);
@@ -26,12 +26,12 @@ function b(e) {
     setting: m.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_AUDIO,
     children: (0, r.jsx)(o.hjN, {
       className: s()({
-        [p.marginBottom20]: !t
+        [g.marginBottom20]: !t
       }),
-      title: g.NW.string(g.t.DSGme3),
+      title: p.NW.string(p.t.DSGme3),
       children: (0, r.jsx)(o.ToO, {
         className: s()({
-          [p.marginBottom20]: !t
+          [g.marginBottom20]: !t
         }),
         type: o.Dd5.PRIMARY,
         imageData: {
@@ -40,7 +40,7 @@ function b(e) {
           height: 40
         },
         align: c.Z.Align.CENTER,
-        body: g.NW.string(g.t["2nDAzM"])
+        body: p.NW.string(p.t["2nDAzM"])
       })
     })
   })

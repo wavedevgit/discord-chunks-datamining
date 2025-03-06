@@ -1,63 +1,62 @@
-/** Chunk was on 45620 **/
-"use strict";
-r.d(t, {
+/** Chunk was on 76282 **/
+n.d(t, {
   Z: () => d
 });
-var n = r(200651);
-r(192379);
-var l = r(120356),
-  i = r.n(l),
-  o = r(481060),
-  s = r(932563),
-  a = r(960919),
-  c = r(388032),
-  u = r(116264);
+var r = n(200651);
+n(192379);
+var i = n(120356),
+  o = n.n(i),
+  l = n(481060),
+  a = n(932563),
+  s = n(960919),
+  c = n(388032),
+  u = n(116264);
 
 function d(e) {
   let {
     orbAmount: t,
-    showInsufficientOrbBalanceTooltip: r
-  } = e, l = (0, s.c)(), d = null != l && l >= t;
-  return (0, n.jsx)(o.ua7, {
+    showInsufficientOrbBalanceTooltip: n
+  } = e, i = (0, a.c)(), d = null != i && i >= t;
+  return (0, r.jsx)(l.ua7, {
     position: "top",
     text: c.NW.string(c.t.zqh7ZG),
-    shouldShow: r && !d,
+    shouldShow: n && !d,
     children: e => {
-      var r, l;
-      return (0, n.jsxs)(o.Text, (r = function(e) {
+      var n, i;
+      return (0, r.jsxs)(l.Text, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(r);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-          }))), n.forEach(function(t) {
-            var n;
-            n = r[t], t in e ? Object.defineProperty(e, t, {
-              value: n,
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: !0,
               configurable: !0,
               writable: !0
-            }) : e[t] = n
+            }) : e[t] = r
           })
         }
         return e
       }({
         variant: "text-lg/bold",
-        className: i()(u.orbPriceTag, {
+        className: o()(u.orbPriceTag, {
           [u.insufficientBalance]: !d
         })
-      }, e), l = l = {
-        children: [(0, n.jsx)(a.Z, {}), t]
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-        var r = Object.keys(e);
+      }, e), i = i = {
+        children: [(0, r.jsx)(s.Z, {}), t]
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e);
-          r.push.apply(r, n)
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
         }
-        return r
-      })(Object(l)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
-      }), r))
+        return n
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
+      }), n))
     }
   })
 }

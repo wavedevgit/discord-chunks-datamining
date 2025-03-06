@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => o
 });
@@ -19,8 +19,8 @@ function o(e) {
     soloEmojiClassName: d,
     animate: u = !0,
     hideTooltip: m = !1,
-    hideEmoji: g = !1,
-    children: p
+    hideEmoji: p = !1,
+    children: g
   } = e;
   if (null == t) return null;
   let {
@@ -28,7 +28,7 @@ function o(e) {
   } = t, f = null != t.state && "" !== t.state ? t.state : c;
   return (0, r.jsxs)("div", {
     className: s()(l.__invalid_container, n),
-    children: [g || null == h ? null : (0, r.jsx)(a.Z, {
+    children: [p || null == h ? null : (0, r.jsx)(a.Z, {
       emoji: h,
       className: s()(l.emoji, i, null != d ? {
         [d]: null == f || "" === f
@@ -38,6 +38,6 @@ function o(e) {
     }), null != f && f.length > 0 ? (0, r.jsx)("span", {
       className: o,
       children: f
-    }) : null, p]
+    }) : null, g]
   })
 }

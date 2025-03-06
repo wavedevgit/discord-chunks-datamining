@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => f
 });
@@ -13,8 +13,8 @@ var i = n(120356),
   d = n(600164),
   u = n(594174),
   m = n(418632),
-  g = n(388032),
-  p = n(611588);
+  p = n(388032),
+  g = n(611588);
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -42,8 +42,8 @@ function f(e) {
     className: a
   } = e, {
     isClaimed: f,
-    isVerified: b,
-    hasEmail: N
+    isVerified: x,
+    hasEmail: b
   } = (0, o.cj)([u.default], () => {
     let e = u.default.getCurrentUser();
     return l()(null != e, "EmailNotice: currentUser cannot be undefined"), {
@@ -53,7 +53,7 @@ function f(e) {
     }
   });
 
-  function x() {
+  function N() {
     (0, c.ZDy)(async () => {
       let {
         default: e
@@ -61,30 +61,30 @@ function f(e) {
       return t => (0, r.jsx)(e, h({}, t))
     })
   }
-  return f && b ? null : (0, r.jsx)(c.Zbd, {
-    className: s()(p.wrapper, a),
+  return f && x ? null : (0, r.jsx)(c.Zbd, {
+    className: s()(g.wrapper, a),
     children: (0, r.jsxs)(d.Z, {
       align: d.Z.Align.CENTER,
       children: [(0, r.jsx)(d.Z.Child, {
-        className: p.image,
+        className: g.image,
         grow: 0,
         shrink: 0
       }), (0, r.jsxs)(d.Z.Child, {
         children: [(0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: f ? null != i ? i : g.NW.string(g.t.WuyBbG) : null != t ? t : g.NW.string(g.t["f+Zaoq"])
+          children: f ? null != i ? i : p.NW.string(p.t.WuyBbG) : null != t ? t : p.NW.string(p.t["f+Zaoq"])
         }), (0, r.jsxs)(d.Z, {
           justify: d.Z.Justify.CENTER,
-          className: p.content,
-          children: [f ? N ? (0, r.jsx)(d.Z.Child, {
+          className: g.content,
+          children: [f ? b ? (0, r.jsx)(d.Z.Child, {
             grow: 0,
             shrink: 0,
             children: (0, r.jsx)(m.Z, {})
           }) : (0, r.jsx)(c.zxk, {
             size: c.zxk.Sizes.MEDIUM,
             color: c.zxk.Colors.BRAND,
-            onClick: x,
-            children: g.NW.string(g.t.ydw5nZ)
+            onClick: N,
+            children: p.NW.string(p.t.ydw5nZ)
           }) : (0, r.jsx)(d.Z.Child, {
             grow: 0,
             shrink: 0,
@@ -99,16 +99,16 @@ function f(e) {
                   return t => (0, r.jsx)(e, h({}, t))
                 })
               },
-              children: g.NW.string(g.t.fiNVio)
+              children: p.NW.string(p.t.fiNVio)
             })
-          }), f && N ? (0, r.jsx)(d.Z.Child, {
+          }), f && b ? (0, r.jsx)(d.Z.Child, {
             grow: 0,
             shrink: 0,
             children: (0, r.jsx)(c.zxk, {
               color: c.zxk.Colors.PRIMARY,
               look: c.zxk.Looks.LINK,
-              onClick: x,
-              children: g.NW.string(g.t.Vm8akJ)
+              onClick: N,
+              children: p.NW.string(p.t.Vm8akJ)
             })
           }) : null]
         })]

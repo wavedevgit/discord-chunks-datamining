@@ -1,45 +1,45 @@
-/** Chunk was on 51424 **/
+/** Chunk was on 76282 **/
 n.d(t, {
   Z: () => G
 }), n(411104), n(47120);
 var r = n(200651);
 n(192379);
 var i = n(392711),
-  l = n(481060),
-  o = n(570140),
+  o = n(481060),
+  l = n(570140),
   a = n(904245),
   s = n(317770),
   c = n(100527),
   u = n(358221),
   d = n(963249),
   _ = n(93127),
-  E = n(430824),
-  p = n(594174),
-  m = n(431),
-  f = n(626135),
+  p = n(430824),
+  E = n(594174),
+  f = n(431),
+  m = n(626135),
   h = n(74538),
   g = n(557457),
-  O = n(970645),
-  N = n(30684),
-  I = n(514701),
-  b = n(6242),
-  T = n(467721),
-  C = n(757692),
+  b = n(970645),
+  O = n(30684),
+  N = n(514701),
+  I = n(6242),
+  C = n(467721),
+  T = n(757692),
   S = n(281494),
   y = n(276444),
-  P = n(937579),
-  R = n(522558),
-  A = n(879463),
-  v = n(822070),
+  v = n(937579),
+  P = n(522558),
+  R = n(879463),
+  A = n(822070),
   x = n(520540),
-  D = n(11352),
-  L = n(474936),
-  j = n(981631),
+  j = n(11352),
+  D = n(474936),
+  L = n(981631),
   k = n(354459),
   M = n(37113),
   Z = n(388032);
 
-function U(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -48,14 +48,14 @@ function U(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function U(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      U(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -75,28 +75,28 @@ function V(e, t) {
 }
 class F extends s.Z {
   _initialize() {
-    __OVERLAY__ ? o.Z.subscribe("PREMIUM_PAYMENT_MODAL_OPEN", this._handlePremiumPaymentModalOpen) : (o.Z.subscribe("PREMIUM_PAYMENT_MODAL_CLOSE", this._handlePremiumPaymentModalClose), o.Z.subscribe("MESSAGE_LENGTH_UPSELL", this.handleMessageLengthUpsell), o.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchPremiumOffer), o.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchCheckoutRecovery), o.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchUserAffinities), o.Z.subscribe("POST_CONNECTION_OPEN", this._trackCustomNotificationSoundsExposure), o.Z.subscribe("MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED", this.maybeShowHDStreamingViewerUpsellMessage))
+    __OVERLAY__ ? l.Z.subscribe("PREMIUM_PAYMENT_MODAL_OPEN", this._handlePremiumPaymentModalOpen) : (l.Z.subscribe("PREMIUM_PAYMENT_MODAL_CLOSE", this._handlePremiumPaymentModalClose), l.Z.subscribe("MESSAGE_LENGTH_UPSELL", this.handleMessageLengthUpsell), l.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchPremiumOffer), l.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchCheckoutRecovery), l.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchUserAffinities), l.Z.subscribe("POST_CONNECTION_OPEN", this._trackCustomNotificationSoundsExposure), l.Z.subscribe("MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED", this.maybeShowHDStreamingViewerUpsellMessage))
   }
   _terminate() {
-    __OVERLAY__ ? o.Z.unsubscribe("PREMIUM_PAYMENT_MODAL_OPEN", this._handlePremiumPaymentModalOpen) : (o.Z.unsubscribe("PREMIUM_PAYMENT_MODAL_CLOSE", this._handlePremiumPaymentModalClose), o.Z.unsubscribe("MESSAGE_LENGTH_UPSELL", this.handleMessageLengthUpsell), o.Z.unsubscribe("POST_CONNECTION_OPEN", this._maybeFetchPremiumOffer), o.Z.unsubscribe("POST_CONNECTION_OPEN", this._maybeFetchCheckoutRecovery), o.Z.unsubscribe("POST_CONNECTION_OPEN", this._maybeFetchUserAffinities), o.Z.unsubscribe("POST_CONNECTION_OPEN", this._trackCustomNotificationSoundsExposure), o.Z.unsubscribe("MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED", this.maybeShowHDStreamingViewerUpsellMessage))
+    __OVERLAY__ ? l.Z.unsubscribe("PREMIUM_PAYMENT_MODAL_OPEN", this._handlePremiumPaymentModalOpen) : (l.Z.unsubscribe("PREMIUM_PAYMENT_MODAL_CLOSE", this._handlePremiumPaymentModalClose), l.Z.unsubscribe("MESSAGE_LENGTH_UPSELL", this.handleMessageLengthUpsell), l.Z.unsubscribe("POST_CONNECTION_OPEN", this._maybeFetchPremiumOffer), l.Z.unsubscribe("POST_CONNECTION_OPEN", this._maybeFetchCheckoutRecovery), l.Z.unsubscribe("POST_CONNECTION_OPEN", this._maybeFetchUserAffinities), l.Z.unsubscribe("POST_CONNECTION_OPEN", this._trackCustomNotificationSoundsExposure), l.Z.unsubscribe("MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED", this.maybeShowHDStreamingViewerUpsellMessage))
   }
   handleMessageLengthUpsell(e) {
     let {
       channel: t,
       content: i
     } = e;
-    (0, l.ZDy)(async () => {
+    (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("33184").then(n.bind(n, 465836));
-      return n => (0, r.jsx)(e, w({
+      return n => (0, r.jsx)(e, U({
         channel: t,
         content: i
       }, n))
     })
   }
   _getReferralIncentiveEligibility() {
-    let e = p.default.getCurrentUser();
+    let e = E.default.getCurrentUser();
     if (y.Z.getIsFetchingReferralIncentiveEligibility() || !(0, h.I5)(e)) return;
     let t = {
         location: "PremiumManager"
@@ -104,12 +104,12 @@ class F extends s.Z {
       n = {
         autoTrackExposure: !1
       };
-    x.g.getCurrentConfig(t, n).enabled && !A.eP.getCurrentConfig(t, n).enabled && v.$.getCurrentConfig(t, n).enabled && (0, S.bq)()
+    x.g.getCurrentConfig(t, n).enabled && !R.eP.getCurrentConfig(t, n).enabled && A.$.getCurrentConfig(t, n).enabled && (0, S.bq)()
   }
   openPremiumPaymentModalInApp(e) {
     if (__OVERLAY__) throw Error("Should not use this function from the overlay, use ModalAPI.openModal instead");
     return new Promise((t, n) => {
-      (0, d.Z)(V(w({}, e), {
+      (0, d.Z)(V(U({}, e), {
         onClose: e => {
           e ? t() : n()
         }
@@ -124,8 +124,8 @@ class F extends s.Z {
       followupSKUInfo: r,
       analyticsObject: i
     } = null != e ? e : {};
-    return new Promise((e, l) => {
-      this._premiumPaymentModalCloseResolve = e, this._premiumPaymentModalCloseReject = l, o.Z.dispatch({
+    return new Promise((e, o) => {
+      this._premiumPaymentModalCloseResolve = e, this._premiumPaymentModalCloseReject = o, l.Z.dispatch({
         type: "PREMIUM_PAYMENT_MODAL_OPEN",
         initialPlanId: t,
         subscriptionTier: n,
@@ -135,68 +135,68 @@ class F extends s.Z {
     })
   }
   constructor(...e) {
-    super(...e), U(this, "_premiumPaymentModalCloseResolve", null), U(this, "_premiumPaymentModalCloseReject", null), U(this, "_maybeFetchPremiumOffer", async () => {
-      let e = p.default.getCurrentUser();
+    super(...e), w(this, "_premiumPaymentModalCloseResolve", null), w(this, "_premiumPaymentModalCloseReject", null), w(this, "_maybeFetchPremiumOffer", async () => {
+      let e = E.default.getCurrentUser();
       if (null != e && e.verified) {
-        let t = !(0, h.I5)(e) && m.Z.shouldFetchOffer();
-        await (0, P.T)("PremiumManager", t)
+        let t = !(0, h.I5)(e) && f.Z.shouldFetchOffer();
+        await (0, v.T)("PremiumManager", t)
       }
-      o.Z.dispatch({
+      l.Z.dispatch({
         type: "PREMIUM_MARKETING_DATA_READY"
       })
-    }), U(this, "_maybeFetchCheckoutRecovery", async () => {
-      let e = p.default.getCurrentUser();
-      null != e && e.verified && !(0, h.I5)(e) && N.Z.shouldFetchCheckoutRecovery() && await (0, O.o)()
-    }), U(this, "_maybeFetchUserAffinities", () => {
+    }), w(this, "_maybeFetchCheckoutRecovery", async () => {
+      let e = E.default.getCurrentUser();
+      null != e && e.verified && !(0, h.I5)(e) && O.Z.shouldFetchCheckoutRecovery() && await (0, b.o)()
+    }), w(this, "_maybeFetchUserAffinities", () => {
       let {
         enabled: e
-      } = R.w.getCurrentConfig({
+      } = P.w.getCurrentConfig({
         location: "PremiumManager"
       }, {
         autoTrackExposure: !1
       });
       e && (0, _.W)()
-    }), U(this, "_trackCustomNotificationSoundsExposure", () => {
-      D.Y.trackExposure({
+    }), w(this, "_trackCustomNotificationSoundsExposure", () => {
+      j.Y.trackExposure({
         location: "PremiumManager"
       })
-    }), U(this, "_handlePremiumPaymentModalOpen", e => {
-      (0, d.Z)(V(w({}, e), {
+    }), w(this, "_handlePremiumPaymentModalOpen", e => {
+      (0, d.Z)(V(U({}, e), {
         analyticsLocations: [c.Z.OVERLAY],
         onClose: e => {
-          o.Z.dispatch({
+          l.Z.dispatch({
             type: "PREMIUM_PAYMENT_MODAL_CLOSE",
             didSucceed: e
           })
         }
       }))
-    }), U(this, "_handlePremiumPaymentModalClose", e => {
+    }), w(this, "_handlePremiumPaymentModalClose", e => {
       let {
         didSucceed: t
       } = e;
       t && null != this._premiumPaymentModalCloseResolve ? this._premiumPaymentModalCloseResolve() : null != this._premiumPaymentModalCloseReject && this._premiumPaymentModalCloseReject(), this._premiumPaymentModalCloseResolve = null, this._premiumPaymentModalCloseReject = null
-    }), U(this, "maybeShowHDStreamingViewerUpsellMessage", e => {
-      let t = p.default.getCurrentUser();
+    }), w(this, "maybeShowHDStreamingViewerUpsellMessage", e => {
+      let t = E.default.getCurrentUser();
       (null == t ? void 0 : t.id) !== e.senderUserId && this._maybeSendViewerUpsellMessage(e.channelId, e.guildId, t)
-    }), U(this, "_maybeSendViewerUpsellMessage", (0, i.debounce)((e, t, n) => {
+    }), w(this, "_maybeSendViewerUpsellMessage", (0, i.debounce)((e, t, n) => {
       var r, i;
-      let l = u.Z.getSelectedParticipant(e),
-        o = (0, C.o)(l, n),
+      let o = u.Z.getSelectedParticipant(e),
+        l = (0, T.o)(o, n),
         {
           sendNitroMessage: s
-        } = (0, b.TD)(o),
-        c = null !== (i = null === (r = E.Z.getGuild(t)) || void 0 === r ? void 0 : r.premiumTier) && void 0 !== i ? i : j.Eu4.NONE;
-      if (T.Z.cooldownIsActive() || !s || c >= j.Eu4.TIER_2 || (null == l ? void 0 : l.type) !== k.fO.STREAM || (null == l ? void 0 : l.id) === (null == n ? void 0 : n.id) || null == l.maxResolution || null == l.maxFrameRate) return;
-      I.I();
+        } = (0, I.TD)(l),
+        c = null !== (i = null === (r = p.Z.getGuild(t)) || void 0 === r ? void 0 : r.premiumTier) && void 0 !== i ? i : L.Eu4.NONE;
+      if (C.Z.cooldownIsActive() || !s || c >= L.Eu4.TIER_2 || (null == o ? void 0 : o.type) !== k.fO.STREAM || (null == o ? void 0 : o.id) === (null == n ? void 0 : n.id) || null == o.maxResolution || null == o.maxFrameRate) return;
+      N.I();
       let d = Z.NW.formatToPlainString(Z.t.AbyeZG, {
-        nickname: l.userNick,
-        resolution: (0, M.o6)(l.maxResolution.height),
-        fps: (0, g.bp)(l.maxFrameRate)
+        nickname: o.userNick,
+        resolution: (0, M.o6)(o.maxResolution.height),
+        fps: (0, g.bp)(o.maxFrameRate)
       });
-      a.Z.sendNitroSystemMessage(e, d), f.default.track(j.rMx.PREMIUM_UPSELL_MESSAGE_SENT, {
-        type: L.cd.HD_STREAMING_VIEWER_UPSELL,
-        location_section: null != t ? j.jXE.TEXT_IN_VOICE : j.jXE.CHANNEL_TEXT_AREA,
-        location_object: j.qAy.MESSAGE,
+      a.Z.sendNitroSystemMessage(e, d), m.default.track(L.rMx.PREMIUM_UPSELL_MESSAGE_SENT, {
+        type: D.cd.HD_STREAMING_VIEWER_UPSELL,
+        location_section: null != t ? L.jXE.TEXT_IN_VOICE : L.jXE.CHANNEL_TEXT_AREA,
+        location_object: L.qAy.MESSAGE,
         guild_id: t
       })
     }, 200))

@@ -1,21 +1,21 @@
 /** Chunk was on 45620 **/
 "use strict";
-r.d(t, {
+n.d(t, {
   P: () => c
-}), r(47120);
-var n = r(192379),
-  l = r(979554),
-  i = r(442837),
-  o = r(597688),
-  s = r(365943),
-  a = r(25251);
+}), n(47120);
+var r = n(192379),
+  l = n(979554),
+  a = n(442837),
+  s = n(597688),
+  o = n(365943),
+  i = n(25251);
 let c = () => {
-  let e = (0, i.e7)([o.Z], () => o.Z.products);
-  n.useEffect(() => {
+  let e = (0, a.e7)([s.Z], () => s.Z.products);
+  r.useEffect(() => {
     let t = [...e.values()].filter(e => e.type === l.Z.PROFILE_EFFECT).some(e => {
       let t = e.items[0].id;
-      return null != t && null == a.Z.getProfileEffectById(t)
+      return null != t && null == i.Z.getProfileEffectById(t)
     });
-    (0, s.z)(t)
+    (0, o.z)(t)
   }, [e])
 }

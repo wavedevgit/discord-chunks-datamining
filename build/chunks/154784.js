@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => f
 }), n(47120);
@@ -12,24 +12,24 @@ var r = n(200651),
   d = n(672339),
   u = n(938117),
   m = n(131951),
-  g = n(594174),
-  p = n(726985),
+  p = n(594174),
+  g = n(726985),
   h = n(981631);
 
 function f() {
   let e = (0, a.O)(),
     t = i.useRef(!1),
     n = (0, s.e7)([m.Z], () => m.Z.getVideoDeviceId()),
-    [f, b] = i.useState((0, o.P)(g.default.getCurrentUser())),
-    N = i.useRef(f);
+    [f, x] = i.useState((0, o.P)(p.default.getCurrentUser())),
+    b = i.useRef(f);
   return i.useEffect(() => () => {
-    t.current && (0, c.Up)(N.current)
+    t.current && (0, c.Up)(b.current)
   }, []), (0, r.jsx)(l.F, {
-    setting: p.s6.VOICE_AND_VIDEO_VIDEO_BACKGROUND,
+    setting: g.s6.VOICE_AND_VIDEO_VIDEO_BACKGROUND,
     children: (0, r.jsx)(u.Z, {
       selectedBackgroundOption: f,
       onSelectBackgroundOption: n => {
-        t.current = !0, N.current = n, b(n), (0, d.wG)(n, {
+        t.current = !0, b.current = n, x(n), (0, d.wG)(n, {
           location: e.location
         }).catch(h.dG4)
       },

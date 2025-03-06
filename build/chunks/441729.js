@@ -1,11 +1,11 @@
-/** Chunk was on 51424 **/
+/** Chunk was on 76282 **/
 n.d(t, {
   Z: () => _
 });
 var r, i = n(442837),
-  l = n(570140);
+  o = n(570140);
 
-function o(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,7 +21,7 @@ function a(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      l(e, t, n[t])
     })
   }
   return e
@@ -64,8 +64,8 @@ class d extends(r = i.ZP.DeviceSettingsStore) {
     return u
   }
 }
-o(d, "displayName", "TTSStore"), o(d, "persistKey", "TTSStore"), o(d, "migrations", []);
-let _ = new d(l.Z, __OVERLAY__ ? {} : {
+l(d, "displayName", "TTSStore"), l(d, "persistKey", "TTSStore"), l(d, "migrations", []);
+let _ = new d(o.Z, __OVERLAY__ ? {} : {
   SPEAKING_MESSAGE: function(e) {
     let {
       messageId: t,

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var a = n(120356),
-  l = n.n(a),
-  i = n(481060),
+  i = n.n(a),
+  l = n(481060),
   o = n(926426);
 
 function s(e) {
@@ -15,16 +15,16 @@ function s(e) {
     hideInnerBorder: n = !1
   } = e;
   return (0, r.jsx)("div", {
-    className: l()(o.rankContainer, {
+    className: i()(o.rankContainer, {
       [o.goldBorder]: 1 === t,
       [o.silverBorder]: 2 === t,
       [o.bronzeBorder]: 3 === t,
       [o.defaultBorder]: t > 3
     }),
-    children: (0, r.jsx)(i.Text, {
+    children: (0, r.jsx)(l.Text, {
       tabularNumbers: !0,
       variant: t <= 3 ? "text-xs/semibold" : "text-xs/medium",
-      className: l()(o.rank, {
+      className: i()(o.rank, {
         [o.rankWithBorder]: !n,
         [o.goldText]: 1 === t,
         [o.silverText]: 2 === t,

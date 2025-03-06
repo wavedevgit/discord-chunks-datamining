@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => C
 }), n(47120), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(205822),
   u = n(329013),
   m = n(594174),
-  g = n(396821),
-  p = n(780771),
+  p = n(396821),
+  g = n(780771),
   h = n(4242),
   f = n(996746),
-  b = n(711325),
-  N = n(852630),
-  x = n(731994),
+  x = n(711325),
+  b = n(852630),
+  N = n(731994),
   _ = n(276107);
 
 function E(e) {
@@ -55,19 +55,19 @@ function j(e, t) {
 
 function C() {
   var e;
-  let [t, n] = (0, i.useState)(!1), [s, a] = (0, i.useState)(!1), [l, c] = (0, i.useState)(null), m = (0, g.ZP)(e => e.toolsCache), {
+  let [t, n] = (0, i.useState)(!1), [s, a] = (0, i.useState)(!1), [l, c] = (0, i.useState)(null), m = (0, p.ZP)(e => e.toolsCache), {
     setToolsCache: f,
-    removeToolsCache: N
-  } = (0, g.L3)(), {
+    removeToolsCache: b
+  } = (0, p.L3)(), {
     setImgCache: C
-  } = (0, g.W_)(), A = (0, i.useCallback)(e => {
+  } = (0, p.W_)(), A = (0, i.useCallback)(e => {
     let t = m[e];
     null != t && c({
       src: t.url,
       palette: t.palette
     }), c(t => null == t ? {
       src: e,
-      palette: p.jD
+      palette: g.jD
     } : j(E({}, t), {
       src: e
     }))
@@ -76,8 +76,8 @@ function C() {
       palette: e
     }))
   }, []), R = (0, i.useCallback)(e => {
-    N(e)
-  }, [N]);
+    b(e)
+  }, [b]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: _.controls,
@@ -102,7 +102,7 @@ function C() {
         })]
       }), (0, r.jsxs)("div", {
         className: _.themePicker,
-        children: [t && (0, r.jsx)(u.i, {}), " ", s && (0, r.jsx)(b.Z, {
+        children: [t && (0, r.jsx)(u.i, {}), " ", s && (0, r.jsx)(x.Z, {
           selected: null == l ? void 0 : null === (e = l.palette) || void 0 === e ? void 0 : e.name,
           onSelect: e => {
             (null == l ? void 0 : l.src) != null && f(l.src, l.src, e), P(e)
@@ -137,12 +137,12 @@ function C() {
         }), (0, r.jsx)(d.Z, {
           title: "upload image",
           description: "upload the background",
-          icons: x.pA,
+          icons: N.pA,
           onDrop: async e => {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
               r = await n.arrayBuffer();
-            C(t, t, (0, h.xh)(r)), f(t, t, p.jD)
+            C(t, t, (0, h.xh)(r)), f(t, t, g.jD)
           }
         }), (0, r.jsx)("div", {
           className: _.uploadedArea,
@@ -159,7 +159,7 @@ function C() {
         }), (0, r.jsx)(S, {
           label: "gradient override",
           onChange: e => P({
-            name: p._j,
+            name: g._j,
             darkBackground: e,
             lightBackground: e
           })
@@ -293,17 +293,17 @@ function I(e) {
         className: _.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
-      }), (0, r.jsx)(N.Z, {
+      }), (0, r.jsx)(b.Z, {
         nameplate: t
       }), (0, r.jsx)(o.Text, {
         className: _.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"
       }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(N.Z, {
+        children: [(0, r.jsx)(b.Z, {
           selected: !0,
           nameplate: t
-        }), (0, r.jsx)(N.Z, {
+        }), (0, r.jsx)(b.Z, {
           selected: !0
         })]
       })]

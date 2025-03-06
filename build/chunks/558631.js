@@ -1,10 +1,10 @@
-/** Chunk was on 51424 **/
+/** Chunk was on 76282 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 });
 var r = n(818083),
   i = n(987338);
-let l = (0, r.B)({
+let o = (0, r.B)({
   kind: "user",
   id: "2025-02_settings_search_in_quick_switcher",
   label: "Settings in Quick Switcher",

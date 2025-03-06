@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => m
 }), n(47120);
@@ -15,7 +15,7 @@ var r = n(200651),
 function m() {
   let e = (0, s.e7)([o.default], () => o.default.locale),
     [t, m] = i.useState(e),
-    [g] = i.useState(() => (0, c.u5)().map(e => {
+    [p] = i.useState(() => (0, c.u5)().map(e => {
       var t, i;
       let s;
       try {
@@ -70,7 +70,7 @@ function m() {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
       }), t
     })),
-    p = i.useCallback(e => {
+    g = i.useCallback(e => {
       let {
         value: t
       } = e;
@@ -83,8 +83,8 @@ function m() {
       children: (0, r.jsx)(a.xJW, {
         title: c.NW.string(c.t["mx+sp6"]),
         children: (0, r.jsx)(a.FXm, {
-          onChange: p,
-          options: g,
+          onChange: g,
+          options: p,
           value: t
         })
       })

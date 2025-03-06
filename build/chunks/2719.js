@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => X
 }), n(47120);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(692547),
   u = n(481060),
   m = n(230711),
-  g = n(129861),
-  p = n(279837),
+  p = n(129861),
+  g = n(279837),
   h = n(952306),
   f = n(299206),
-  b = n(295474),
-  N = n(144114),
-  x = n(918505),
+  x = n(295474),
+  b = n(144114),
+  N = n(918505),
   _ = n(332473),
   E = n(921801),
   j = n(485341),
@@ -78,9 +78,9 @@ function G(e) {
   let {
     className: l,
     user: o
-  } = e, c = i.useRef(null), m = (0, x.o9)(), g = (0, _.b)(), p = (0, b.gS)(), h = null !== (s = null == p ? void 0 : null === (t = p.nick) || void 0 === t ? void 0 : t[0]) && void 0 !== s ? s : null, [f, N] = i.useState(!1);
+  } = e, c = i.useRef(null), m = (0, N.o9)(), p = (0, _.b)(), g = (0, x.gS)(), h = null !== (s = null == g ? void 0 : null === (t = g.nick) || void 0 === t ? void 0 : t[0]) && void 0 !== s ? s : null, [f, b] = i.useState(!1);
   i.useEffect(() => {
-    N(null != c.current && c.current.scrollWidth > c.current.clientWidth)
+    b(null != c.current && c.current.scrollWidth > c.current.clientWidth)
   }, [o.username]);
   let E = !o.isClaimed(),
     j = m && !o.isPomelo() && !o.hasVerifiedEmailOrPhone() || E,
@@ -110,7 +110,7 @@ function G(e) {
           })]
         })]
       })
-    }), g && (0, r.jsx)("div", {
+    }), p && (0, r.jsx)("div", {
       className: B.pomeloWarning,
       children: (0, r.jsx)(u.ua7, {
         text: L.NW.string(L.t.HHC5Z2),
@@ -144,7 +144,7 @@ function G(e) {
         color: u.zxk.Colors.PRIMARY,
         "aria-label": L.NW.string(L.t["JECa9/"]),
         onClick: () => (0, u.ZDy)(async () => {
-          if (g) {
+          if (p) {
             let {
               default: e
             } = await Promise.all([n.e("85342"), n.e("23396")]).then(n.bind(n, 193049));
@@ -169,9 +169,9 @@ function F(e) {
   let {
     user: s,
     className: l
-  } = e, o = (0, b.gS)(), c = null !== (n = null == o ? void 0 : null === (t = o.nick) || void 0 === t ? void 0 : t[0]) && void 0 !== n ? n : null, m = A.ZP.getGlobalName(s), g = i.useRef(null), [p, h] = i.useState(!1);
+  } = e, o = (0, x.gS)(), c = null !== (n = null == o ? void 0 : null === (t = o.nick) || void 0 === t ? void 0 : t[0]) && void 0 !== n ? n : null, m = A.ZP.getGlobalName(s), p = i.useRef(null), [g, h] = i.useState(!1);
   return i.useEffect(() => {
-    h(null != g.current && g.current.scrollWidth > g.current.clientWidth)
+    h(null != p.current && p.current.scrollWidth > p.current.clientWidth)
   }, [m]), (0, r.jsxs)("div", {
     className: a()(B.field, l),
     children: [(0, r.jsx)("div", {
@@ -183,7 +183,7 @@ function F(e) {
           children: L.NW.string(L.t["9AjdkJ"])
         }), (0, r.jsx)("div", {
           className: B.usernameInnerRow,
-          ref: g,
+          ref: p,
           children: (0, r.jsx)(u.Text, {
             tag: "span",
             color: "header-primary",
@@ -211,7 +211,7 @@ function F(e) {
       color: u.zxk.Colors.PRIMARY,
       "aria-label": L.NW.string(L.t.YXeWYG),
       onClick: q,
-      children: p ? L.NW.string(L.t["16kTw8"]) : L.NW.string(L.t.bt75u7)
+      children: g ? L.NW.string(L.t["16kTw8"]) : L.NW.string(L.t.bt75u7)
     })]
   })
 }
@@ -351,11 +351,11 @@ function Y(e) {
         color: u.zxk.Colors.PRIMARY,
         "aria-label": L.NW.string(L.t.Rpn4Aw),
         onClick: function() {
-          (0, u.h7j)(e => (0, r.jsx)(p.default, U(M({}, e), {
+          (0, u.h7j)(e => (0, r.jsx)(g.default, U(M({}, e), {
             title: L.NW.string(L.t["3CTiKi"]),
             children: s.hasFlag(w.xW$.MFA_SMS) ? L.NW.string(L.t.jrhJys) : void 0,
             actionText: L.NW.string(L.t.N86XcH),
-            handleSubmit: e => N.Z.removePhone(e, N.L.USER_SETTINGS_UPDATE)
+            handleSubmit: e => b.Z.removePhone(e, b.L.USER_SETTINGS_UPDATE)
           })))
         },
         children: L.NW.string(L.t.N86XcH)
@@ -370,7 +370,7 @@ function Y(e) {
               default: e
             } = await Promise.resolve().then(n.bind(n, 607018));
             return t => (0, r.jsx)(e, M({
-              reason: N.L.USER_SETTINGS_UPDATE
+              reason: b.L.USER_SETTINGS_UPDATE
             }, t))
           }, {
             modalKey: k.M
@@ -459,7 +459,7 @@ function X() {
       }), (0, r.jsxs)("div", {
         children: [(0, r.jsxs)("div", {
           className: B.profileCardUsernameRow,
-          children: [(0, r.jsx)(g.Z, {
+          children: [(0, r.jsx)(p.Z, {
             user: t,
             className: B.userTag,
             discriminatorClass: B.discriminator

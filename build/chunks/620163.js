@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   i: () => eG
 });
@@ -13,13 +13,13 @@ var i = n(990547),
   d = n(37234),
   u = n(809206),
   m = n(230711),
-  g = n(493544),
-  p = n(579806),
+  p = n(493544),
+  g = n(579806),
   h = n(782568),
   f = n(758182),
-  b = n(163379),
-  N = n(703288),
-  x = n(574755),
+  x = n(163379),
+  b = n(703288),
+  N = n(574755),
   _ = n(377171),
   E = n(540059),
   j = n(621628),
@@ -67,13 +67,13 @@ var i = n(990547),
   ed = n(956699),
   eu = n(54942),
   em = n(293389),
-  eg = n(88624),
-  ep = n(387747),
+  ep = n(88624),
+  eg = n(387747),
   eh = n(389650),
   ef = n(649157),
-  eb = n(593648),
-  eN = n(327885),
-  ex = n(595242),
+  ex = n(593648),
+  eb = n(327885),
+  eN = n(595242),
   e_ = n(463153),
   eE = n(36192),
   ej = n(889029),
@@ -116,8 +116,8 @@ let eU = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       isStricterMessageRequestsEnabled: e2,
       hasLibraryApplication: e6,
       hasTOTPEnabled: e3,
-      developerMode: e4,
-      isAdultUser: e8,
+      developerMode: e8,
+      isAdultUser: e4,
       hasSecureFramesVerifiedUserIds: e7,
       hypeSquadRemoved: e9,
       stealthRemediationEnabled: e5,
@@ -128,7 +128,7 @@ let eU = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
     } = e;
     return Object.freeze({
       [ew.s6.SEARCH_NO_RESULTS]: {
-        section: g.ID.CUSTOM,
+        section: p.ID.CUSTOM,
         element: e_.Z
       },
       [ew.s6.ACCOUNT_SECURITY_TAB]: {
@@ -261,7 +261,7 @@ let eU = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       },
       [ew.s6.PROFILE_CUSTOMIZATION]: {
         section: ek.oAB.PROFILE_CUSTOMIZATION,
-        type: g.bT.WIDE,
+        type: p.bT.WIDE,
         searchableTitles: [eB.NW.string(eB.t["vi7f+v"])],
         label: eB.NW.string(eB.t["vi7f+v"]),
         ariaLabel: eB.NW.string(eB.t["vi7f+v"]),
@@ -444,7 +444,7 @@ let eU = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ek.oAB.CONTENT_AND_SOCIAL,
         searchableTitles: [eB.NW.string(eB.t.qFsx5u)],
         parent: ew.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-        predicate: () => eJ && !e8 && !eQ
+        predicate: () => eJ && !e4 && !eQ
       },
       [ew.s6.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2]: {
         section: ek.oAB.DATA_AND_PRIVACY,
@@ -521,8 +521,8 @@ let eU = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eB.NW.string(eB.t.z2jK6e)],
         label: eB.NW.string(eB.t.z2jK6e),
         ariaLabel: eB.NW.string(eB.t.z2jK6e),
-        icon: eY ? (0, r.jsx)(N.Z, {}) : void 0,
-        element: x.Z,
+        icon: eY ? (0, r.jsx)(b.Z, {}) : void 0,
+        element: N.Z,
         predicate: () => !eK,
         url: ek.Z5c.SETTINGS("clips")
       },
@@ -561,7 +561,7 @@ let eU = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ek.oAB.GUILD_BOOSTING,
         searchableTitles: [eB.NW.string(eB.t["+CbP2t"])],
         label: eB.NW.string(eB.t["+CbP2t"]),
-        element: ex.Z
+        element: eN.Z
       },
       [ew.s6.SUBSCRIPTIONS]: {
         section: ek.oAB.SUBSCRIPTIONS,
@@ -583,7 +583,7 @@ let eU = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ek.oAB.INVENTORY,
         searchableTitles: [eB.NW.string(eB.t["jcSP+v"])],
         label: eB.NW.string(eB.t["jcSP+v"]),
-        element: ep.Z,
+        element: eg.Z,
         ariaLabel: eB.NW.string(eB.t["jcSP+v"]),
         badgeCount: t
       },
@@ -1079,7 +1079,7 @@ let eU = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ek.oAB.VOICE,
         searchableTitles: [eB.NW.string(eB.t["726JHB"])],
         parent: ew.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING,
-        predicate: () => G.isPlatformEmbedded && L.Z.supports(eL.AN.DEBUG_LOGGING) && null != p.Z.fileManager.readLogFiles
+        predicate: () => G.isPlatformEmbedded && L.Z.supports(eL.AN.DEBUG_LOGGING) && null != g.Z.fileManager.readLogFiles
       },
       [ew.s6.VOICE_AND_VIDEO_RESET_VOICE_SETTINGS]: {
         section: ek.oAB.VOICE,
@@ -1207,7 +1207,7 @@ let eU = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eB.NW.string(eB.t.HcoRu7)],
         label: eB.NW.string(eB.t.HcoRu7),
         ariaLabel: eB.NW.string(eB.t.HcoRu7),
-        element: eb.Z,
+        element: ex.Z,
         url: ek.Z5c.SETTINGS("notifications")
       },
       [ew.s6.NOTIFICATIONS_ENABLE_DESKTOP]: {
@@ -1402,7 +1402,7 @@ let eU = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         parent: ew.s6.STREAMER_MODE,
         predicate: () => {
           var e, t, n;
-          return null !== (n = null === p.Z || void 0 === p.Z ? void 0 : null === (t = p.Z.window) || void 0 === t ? void 0 : null === (e = t.supportsContentProtection) || void 0 === e ? void 0 : e.call(t)) && void 0 !== n && n
+          return null !== (n = null === g.Z || void 0 === g.Z ? void 0 : null === (t = g.Z.window) || void 0 === t ? void 0 : null === (e = t.supportsContentProtection) || void 0 === e ? void 0 : e.call(t)) && void 0 !== n && n
         }
       },
       [ew.s6.SETTINGS_ADVANCED]: {
@@ -1434,7 +1434,7 @@ let eU = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ek.oAB.ADVANCED,
         searchableTitles: [eB.NW.string(eB.t.erOqlp)],
         parent: ew.s6.SETTINGS_ADVANCED,
-        predicate: () => e4
+        predicate: () => e8
       },
       [ew.s6.SETTINGS_ADVANCED_SHOW_PLAY_AGAIN]: {
         section: ek.oAB.ADVANCED,
@@ -1481,12 +1481,12 @@ let eU = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ek.oAB.OVERLAY,
         searchableTitles: [eB.NW.string(eB.t["9cb1U1"])],
         label: eB.NW.string(eB.t["9cb1U1"]),
-        element: eN.Z,
+        element: eb.Z,
         predicate: () => !eK && ez
       },
       [ew.s6.CHANGELOG]: {
         section: "changelog",
-        onClick: () => (0, b.Z)(!0),
+        onClick: () => (0, x.Z)(!0),
         searchableTitles: [eB.NW.string(eB.t.LRmNAg)],
         label: eB.NW.string(eB.t.LRmNAg)
       },
@@ -1510,7 +1510,7 @@ let eU = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: ek.oAB.HYPESQUAD_ONLINE,
         searchableTitles: [eB.NW.string(eB.t["k0R+4e"])],
         label: eB.NW.string(eB.t["k0R+4e"]),
-        element: eg.Z,
+        element: ep.Z,
         predicate: () => !e9
       },
       [ew.s6.TOWNHALL]: {
@@ -1869,11 +1869,11 @@ let eU = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         })
       },
       [ew.s6.SOCIAL_LINKS]: {
-        section: g.ID.CUSTOM,
+        section: p.ID.CUSTOM,
         element: X.Z
       },
       [ew.s6.CLIENT_DEBUG_INFO]: {
-        section: g.ID.CUSTOM,
+        section: p.ID.CUSTOM,
         element: z.Z
       }
     })

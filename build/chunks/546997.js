@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => h
 });
@@ -13,9 +13,9 @@ var i = n(442837),
   d = n(358085),
   u = n(726985),
   m = n(388032),
-  g = n(802138);
+  p = n(802138);
 
-function p(e) {
+function g(e) {
   (0, d.isMac)() && e ? (0, s.ZDy)(async () => {
     let {
       ConfirmModal: t
@@ -98,7 +98,7 @@ function h(e) {
       setting: u.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_SYSTEM_PICKER,
       children: (0, r.jsx)(s.j7V, {
         value: d,
-        onChange: p,
+        onChange: g,
         hideBorder: t,
         children: m.NW.string(m.t.ie1mgY)
       })
@@ -107,7 +107,7 @@ function h(e) {
   return (0, r.jsx)(o.F, {
     setting: u.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE,
     children: t ? h : (0, r.jsx)(s.hjN, {
-      className: g.marginBottom20,
+      className: p.marginBottom20,
       title: m.NW.string(m.t.NMCIf3),
       children: h
     })

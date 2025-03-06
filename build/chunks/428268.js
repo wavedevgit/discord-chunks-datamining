@@ -1,109 +1,109 @@
 /** Chunk was on 11212 **/
 "use strict";
-c.d(e, {
+a.d(e, {
   Z: () => j
 });
-var d = c(200651);
-c(192379);
-var a = c(442837),
-  s = c(692547),
-  n = c(481060),
-  o = c(726542),
-  f = c(231757),
-  p = c(511010),
-  i = c(553795),
-  r = c(979192),
-  b = c(873128),
-  u = c(463031),
-  l = c(981631),
-  m = c(388032),
-  g = c(647361);
+var c = a(200651);
+a(192379);
+var d = a(442837),
+  s = a(692547),
+  n = a(481060),
+  f = a(726542),
+  i = a(231757),
+  o = a(511010),
+  p = a(553795),
+  r = a(979192),
+  l = a(873128),
+  b = a(463031),
+  u = a(981631),
+  m = a(388032),
+  g = a(647361);
 let j = function(t) {
   let {
     guildId: e,
     leaderboardId: j
   } = t, {
     leaderboardsDisabled: h
-  } = (0, r.O)(e, j), _ = (0, a.e7)([i.Z], () => i.Z.getAccount(null, l.ABu.RIOT_GAMES)), v = (0, a.e7)([i.Z], () => i.Z.getAccount(null, l.ABu.LEAGUE_OF_LEGENDS)), x = (0, b.Z)({
+  } = (0, r.O)(e, j), y = (0, d.e7)([p.Z], () => p.Z.getAccount(null, u.ABu.RIOT_GAMES)), _ = (0, d.e7)([p.Z], () => p.Z.getAccount(null, u.ABu.LEAGUE_OF_LEGENDS)), B = (0, l.Z)({
     guildId: e,
     leaderboardId: j
-  }), O = j === u.z;
-  if ((!O || null != _ && null != v) && !h) return null;
-  let y = o.Z.get(l.ABu.RIOT_GAMES),
-    N = O && null == _ && null == v,
-    S = O && null != _ && null == v,
-    Z = O && null == _ && null != v,
-    P = S || Z;
-  return (0, d.jsxs)(d.Fragment, {
-    children: [(0, d.jsx)(p.Z, {
+  }), v = j === b.z;
+  if ((!v || null != y && null != _) && !h) return null;
+  let x = f.Z.get(u.ABu.RIOT_GAMES),
+    O = v && null == y && null == _,
+    N = v && null != y && null == _,
+    S = v && null == y && null != _,
+    Z = N || S;
+  return (0, c.jsxs)(c.Fragment, {
+    children: [(0, c.jsx)(o.Z, {
       className: g.divider
     }), function() {
       if (h) return null;
-      let t = N ? (0, d.jsx)(n.d3s, {
+      let t = O ? (0, c.jsx)(n.d3s, {
           className: g.infoMessageIcon
-        }) : (0, d.jsx)(n.aNP, {
+        }) : (0, c.jsx)(n.aNP, {
           color: s.Z.colors.STATUS_WARNING,
           className: g.infoMessageIcon
         }),
-        e = N ? m.NW.string(m.t["Ihg/Dg"]) : m.NW.string(m.t["J8U+Iy"]);
-      return (0, d.jsxs)("div", {
+        e = O ? m.NW.string(m.t["Ihg/Dg"]) : m.NW.string(m.t["J8U+Iy"]);
+      return (0, c.jsxs)("div", {
         className: g.updateMessage,
-        children: [t, (0, d.jsx)(n.Text, {
+        children: [t, (0, c.jsx)(n.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
           children: e
         })]
       })
-    }(), (0, d.jsxs)(n.zxk, {
+    }(), (0, c.jsxs)(n.zxk, {
       className: g.joinLeaderboardButton,
       innerClassName: g.joinLeaderboardButtonInner,
       onClick: function() {
-        return N || P ? (0, f.Z)({
-          platformType: l.ABu.RIOT_GAMES
-        }) : void(null != x && (0, n.ZDy)(async () => {
+        return O || Z ? (0, i.Z)({
+          platformType: u.ABu.RIOT_GAMES
+        }) : void(null != B && (0, n.ZDy)(async () => {
           let {
             default: t
-          } = await c.e("73217").then(c.bind(c, 139964));
-          return c => {
-            var a, s;
-            return (0, d.jsx)(t, (a = function(t) {
+          } = await a.e("73217").then(a.bind(a, 139964));
+          return a => {
+            var d, s;
+            return (0, c.jsx)(t, (d = function(t) {
               for (var e = 1; e < arguments.length; e++) {
-                var c = null != arguments[e] ? arguments[e] : {},
-                  d = Object.keys(c);
-                "function" == typeof Object.getOwnPropertySymbols && (d = d.concat(Object.getOwnPropertySymbols(c).filter(function(t) {
-                  return Object.getOwnPropertyDescriptor(c, t).enumerable
-                }))), d.forEach(function(e) {
-                  var d;
-                  d = c[e], e in t ? Object.defineProperty(t, e, {
-                    value: d,
+                var a = null != arguments[e] ? arguments[e] : {},
+                  c = Object.keys(a);
+                "function" == typeof Object.getOwnPropertySymbols && (c = c.concat(Object.getOwnPropertySymbols(a).filter(function(t) {
+                  return Object.getOwnPropertyDescriptor(a, t).enumerable
+                }))), c.forEach(function(e) {
+                  var c;
+                  c = a[e], e in t ? Object.defineProperty(t, e, {
+                    value: c,
                     enumerable: !0,
                     configurable: !0,
                     writable: !0
-                  }) : t[e] = d
+                  }) : t[e] = c
                 })
               }
               return t
-            }({}, c), s = s = {
+            }({}, a), s = s = {
               guildId: e,
-              leaderboard: x
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(s)) : (function(t, e) {
-              var c = Object.keys(t);
+              leaderboard: B
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(d, Object.getOwnPropertyDescriptors(s)) : (function(t, e) {
+              var a = Object.keys(t);
               if (Object.getOwnPropertySymbols) {
-                var d = Object.getOwnPropertySymbols(t);
-                c.push.apply(c, d)
+                var c = Object.getOwnPropertySymbols(t);
+                a.push.apply(a, c)
               }
-              return c
+              return a
             })(Object(s)).forEach(function(t) {
-              Object.defineProperty(a, t, Object.getOwnPropertyDescriptor(s, t))
-            }), a))
+              Object.defineProperty(d, t, Object.getOwnPropertyDescriptor(s, t))
+            }), d))
           }
         }))
       },
-      children: [O && !h && (0, d.jsx)("img", {
+      children: [v && !h && (0, c.jsx)("img", {
         alt: "Riot Games",
-        src: y.icon.whiteSVG,
+        src: x.icon.whiteSVG,
         className: g.riotIcon
-      }), N ? m.NW.string(m.t.w6VSSE) : P ? m.NW.string(m.t.CHNBdn) : m.NW.string(m.t["0yRXHx"])]
+      }), O ? m.NW.string(m.t.w6VSSE) : Z ? m.NW.string(m.t.CHNBdn) : m.NW.string(m.t["0yRXHx"])]
     })]
   })
 }

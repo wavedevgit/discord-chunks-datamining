@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => d
 });
@@ -18,14 +18,14 @@ function d(e) {
     note: d,
     title: u,
     disabled: m
-  } = e, g = i.useRef(null), p = i.useRef(null), h = i.useId(), f = (0, r.jsx)(l.rsf, {
+  } = e, p = i.useRef(null), g = i.useRef(null), h = i.useId(), f = (0, r.jsx)(l.rsf, {
     id: h,
     checked: t,
     onChange: n,
     focusProps: {
       enabled: !1
     },
-    innerRef: g,
+    innerRef: p,
     disabled: m
   });
   return (0, r.jsx)("div", {
@@ -35,8 +35,8 @@ function d(e) {
     children: (0, r.jsx)(l.tEY, {
       within: !0,
       offset: -4,
-      focusTarget: g,
-      ringTarget: p,
+      focusTarget: p,
+      ringTarget: g,
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: c.text,

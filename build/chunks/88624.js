@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => f
 });
@@ -13,8 +13,8 @@ var i = n(512722),
   d = n(792423),
   u = n(674985),
   m = n(594174),
-  g = n(843200),
-  p = n(388032),
+  p = n(843200),
+  g = n(388032),
   h = n(600435);
 
 function f() {
@@ -36,16 +36,16 @@ function f() {
       children: [(0, r.jsx)(l.X6q, {
         variant: "heading-xxl/semibold",
         className: h.introHeader,
-        children: null == e ? p.NW.string(p.t.iZowCQ) : p.NW.string(p.t.e7fL7O)
+        children: null == e ? g.NW.string(g.t.iZowCQ) : g.NW.string(g.t.e7fL7O)
       }), (0, r.jsx)(l.Text, {
         variant: "text-lg/normal",
-        children: p.NW.string(p.t["6FaVFB"])
+        children: g.NW.string(g.t["6FaVFB"])
       })]
     }),
-    children: [(0, r.jsx)(g.Z, {
+    children: [(0, r.jsx)(p.Z, {
       className: h.verificationNotice,
-      unclaimedNotice: p.NW.string(p.t.vZU8Ki),
-      unverifiedNotice: p.NW.string(p.t.T7TYEB)
+      unclaimedNotice: g.NW.string(g.t.vZU8Ki),
+      unverifiedNotice: g.NW.string(g.t.T7TYEB)
     }), (0, r.jsx)(c.Z, {
       houseMembership: e,
       isClaimed: t,

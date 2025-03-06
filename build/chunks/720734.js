@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => e$,
   m: () => eJ
@@ -13,13 +13,13 @@ var r = n(200651),
   d = n(846519),
   u = n(400354),
   m = n(652844),
-  g = n(747906),
-  p = n(789639),
+  p = n(747906),
+  g = n(789639),
   h = n(930295),
   f = n(481060),
-  b = n(355467),
-  N = n(239091),
-  x = n(230711),
+  x = n(355467),
+  b = n(239091),
+  N = n(230711),
   _ = n(410575),
   E = n(941129),
   j = n(634894),
@@ -67,13 +67,13 @@ var r = n(200651),
   ed = n(879815),
   eu = n(294629),
   em = n(875527),
-  eg = n(56848),
-  ep = n(378441),
+  ep = n(56848),
+  eg = n(378441),
   eh = n(358820),
   ef = n(469887),
-  eb = n(306609),
-  eN = n(199902),
-  ex = n(314897),
+  ex = n(306609),
+  eb = n(199902),
+  eN = n(314897),
   e_ = n(592125),
   eE = n(819640),
   ej = n(131951),
@@ -151,8 +151,8 @@ function eX(e) {
     coloredIconsEnabled: m
   } = (0, ec.Z)({
     location: "RTC Avatar"
-  }), g = (0, P.Z)(null == i ? void 0 : i.avatarDecoration), p = (0, ey.NZ)({
-    avatarDecoration: g,
+  }), p = (0, P.Z)(null == i ? void 0 : i.avatarDecoration), g = (0, ey.NZ)({
+    avatarDecoration: p,
     size: (0, R.y9)(f.EFr.SIZE_32)
   }), h = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE);
   return null == i ? null : (0, r.jsx)(_.Z, {
@@ -194,7 +194,7 @@ function eX(e) {
         }), (0, r.jsx)(ez, {
           size: u ? f.EFr["SIZE_".concat(h)] : f.EFr.SIZE_32,
           src: i.getAvatarURL(void 0, u ? h - 4 : 32, !1),
-          avatarDecoration: p,
+          avatarDecoration: g,
           "aria-label": i.username,
           status: n ? eB.Skl.STREAMING : s,
           isSpeaking: t,
@@ -367,12 +367,12 @@ class eJ extends i.PureComponent {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eB.oAB.ACCOUNT,
         t = arguments.length > 1 ? arguments[1] : void 0,
         n = arguments.length > 2 ? arguments[2] : void 0;
-      x.Z.open(e, t, n)
+      N.Z.open(e, t, n)
     }), eG(this, "handleOpenSettingsContextMenu", e => {
       let {
         currentUser: t
       } = this.props;
-      null != t && (0, N.jW)(e, async () => {
+      null != t && (0, b.jW)(e, async () => {
         let {
           default: e
         } = await n.e("2535").then(n.bind(n, 923422));
@@ -384,20 +384,20 @@ class eJ extends i.PureComponent {
         }))
       })
     }), eG(this, "audioOnInteractionHandler", (0, M.u)("AudioDeviceMenu", y.Z.ACCOUNT)), eG(this, "handleInputAudioContextMenu", (e, t) => {
-      (0, N.jW)(e, async () => {
+      (0, b.jW)(e, async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 659580));
         return () => (0, r.jsx)(A.Gt, {
           value: t,
           children: this.props.simplifiedCallSettingsEnabled ? (0, r.jsx)(e, {
-            onClose: N.Zy,
+            onClose: b.Zy,
             renderInputDevices: !0,
             renderInputVolume: !0,
             simplified: !0,
             onInteraction: this.audioOnInteractionHandler
           }) : (0, r.jsx)(e, {
-            onClose: N.Zy,
+            onClose: b.Zy,
             renderInputDevices: !0,
             renderInputModes: !0,
             renderInputVolume: !0,
@@ -406,20 +406,20 @@ class eJ extends i.PureComponent {
         })
       })
     }), eG(this, "handleOutputAudioContextMenu", (e, t) => {
-      (0, N.jW)(e, async () => {
+      (0, b.jW)(e, async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 659580));
         return () => (0, r.jsx)(A.Gt, {
           value: t,
           children: this.props.simplifiedCallSettingsEnabled ? (0, r.jsx)(e, {
-            onClose: N.Zy,
+            onClose: b.Zy,
             renderOutputDevices: !0,
             renderOutputVolume: !0,
             simplified: !0,
             onInteraction: this.audioOnInteractionHandler
           }) : (0, r.jsx)(e, {
-            onClose: N.Zy,
+            onClose: b.Zy,
             renderOutputDevices: !0,
             renderOutputVolume: !0,
             onInteraction: this.audioOnInteractionHandler
@@ -529,12 +529,12 @@ function eQ(e) {
     webBuildOverride: d,
     handleMouseEnterMute: u,
     handleMouseLeaveMute: m,
-    handleToggleSelfDeaf: g,
-    handleToggleSelfMute: p,
+    handleToggleSelfDeaf: p,
+    handleToggleSelfMute: g,
     handleInputAudioContextMenu: h,
-    handleOutputAudioContextMenu: b,
-    handleOpenAccountSettings: N,
-    handleOpenSettingsContextMenu: x,
+    handleOutputAudioContextMenu: x,
+    handleOpenAccountSettings: b,
+    handleOpenSettingsContextMenu: N,
     dismissibleContents: _
   } = e;
   return (0, r.jsxs)("div", {
@@ -549,19 +549,19 @@ function eQ(e) {
       tooltipForceOpen: o || void 0,
       onMouseEnter: u,
       onMouseLeave: m,
-      onClick: p,
+      onClick: g,
       onContextMenu: h
     }), (0, r.jsx)(e2, {
       selfDeaf: t,
       serverDeaf: a,
-      onClick: g,
-      onContextMenu: b,
+      onClick: p,
+      onContextMenu: x,
       awaitingRemote: i
     }), (0, r.jsx)(e0, {
       isEligibleForPomelo: c,
       webBuildOverride: d,
-      onClick: N,
-      onContextMenu: x,
+      onClick: b,
+      onContextMenu: N,
       dismissibleContents: _.settings
     })]
   })
@@ -570,7 +570,7 @@ function eQ(e) {
 function e$() {
   var e;
   let t = (0, o.e7)([eS.default], () => eS.default.getCurrentUser()),
-    n = (0, o.e7)([ex.default], () => ex.default.getId()),
+    n = (0, o.e7)([eN.default], () => eN.default.getId()),
     {
       activities: s,
       streaming: a,
@@ -588,27 +588,27 @@ function e$() {
         status: eO.Z.getStatus()
       }
     }),
-    d = (0, o.e7)([eN.Z], () => eN.Z.getAnyStreamForUser(n)),
+    d = (0, o.e7)([eb.Z], () => eb.Z.getAnyStreamForUser(n)),
     u = (0, C.Z)({
       userId: n
     }),
     m = eZ.ZP.useUserTag(t, {
       decoration: "never"
     }),
-    g = (0, o.e7)([ev.Z], () => ev.Z.hidePersonalInformation),
-    p = (0, o.e7)([eC.Z, e_.Z], () => {
+    p = (0, o.e7)([ev.Z], () => ev.Z.hidePersonalInformation),
+    g = (0, o.e7)([eC.Z, e_.Z], () => {
       let e = eC.Z.getChannelId();
       return null != e ? e_.Z.getChannel(e) : null
     }),
     {
       mute: h,
-      selfMute: N,
-      suppress: x
-    } = (0, eu.Z)(p),
+      selfMute: b,
+      suppress: N
+    } = (0, eu.Z)(g),
     {
       selfDeaf: _,
       deaf: S
-    } = (0, ed.Z)(p),
+    } = (0, ed.Z)(g),
     T = (0, o.e7)([D.C], () => {
       var e;
       return (0, Z.fD)() ? null === (e = D.C.getCurrentBuildOverride().overrides) || void 0 === e ? void 0 : e.discord_web : null
@@ -666,9 +666,9 @@ function e$() {
         (async () => {
           if (!e && null == n && a) {
             if (!r) {
-              await (0, b.ou)();
+              await (0, x.ou)();
               return
-            }!l && (t || await (0, b.l0)())
+            }!l && (t || await (0, x.l0)())
           }
         })()
       }, [a, n, e, r, t, l]), !e && !!a && !l && null != n && n
@@ -690,21 +690,21 @@ function e$() {
       currentUser: t,
       activities: s,
       applicationStream: d,
-      voiceChannel: p,
+      voiceChannel: g,
       dismissibleContents: er,
       userTag: m,
-      hidePrivateData: g,
+      hidePrivateData: p,
       occluded: w,
       premiumSubscription: I,
       selfDeaf: _,
-      selfMute: N,
+      selfMute: b,
       serverDeaf: S,
       serverMute: h,
       speaking: u,
       speakingWhileMuted: P,
       status: l,
       streaming: a,
-      suppress: x,
+      suppress: N,
       webBuildOverride: T,
       awaitingRemote: W,
       isEligibleForPomelo: k,
@@ -723,7 +723,7 @@ function e0(e) {
     onClick: i,
     onContextMenu: s,
     dismissibleContents: a
-  } = e, l = f.ewm, o = (0, p.i)();
+  } = e, l = f.ewm, o = (0, g.i)();
   l = null != t ? f.bgT : n ? f.Ncx : o.Component;
   let [d, u] = (0, H.US)(a);
   return (0, r.jsx)(f.yRy, {
@@ -758,14 +758,14 @@ function e1(e) {
     awaitingRemote: c,
     tooltipText: d,
     tooltipColor: u,
-    tooltipForceOpen: p,
-    onMouseEnter: b,
-    onMouseLeave: N,
-    onClick: x,
+    tooltipForceOpen: g,
+    onMouseEnter: x,
+    onMouseLeave: b,
+    onClick: N,
     onContextMenu: _
-  } = e, E = t || s || n, j = i.useRef(null), C = (0, m.O)(E ? "unmute" : "mute"), O = (0, g.P)(E ? "unmute" : "mute"), {
+  } = e, E = t || s || n, j = i.useRef(null), C = (0, m.O)(E ? "unmute" : "mute"), O = (0, p.P)(E ? "unmute" : "mute"), {
     activeVoice: v
-  } = (0, ep.o)(), S = null != v, T = (0, eg.z)(v), I = (0, o.e7)([eC.Z], () => eC.Z.isConnected()), {
+  } = (0, eg.o)(), S = null != v, T = (0, ep.z)(v), I = (0, o.e7)([eC.Z], () => eC.Z.isConnected()), {
     Component: P,
     events: R,
     play: D
@@ -811,12 +811,12 @@ function e1(e) {
       children: [(0, r.jsx)(ek.Z, {
         tooltipText: L,
         tooltipColor: u,
-        tooltipForceOpen: p,
+        tooltipForceOpen: g,
         onMouseEnter: () => {
-          b(), R.onMouseEnter()
+          x(), R.onMouseEnter()
         },
         onMouseLeave: () => {
-          N(), R.onMouseLeave()
+          b(), R.onMouseLeave()
         },
         icon: (0, r.jsx)(Z, {
           size: "custom",
@@ -825,7 +825,7 @@ function e1(e) {
           color: E ? f.TVs.colors.STATUS_DANGER : "currentColor"
         }),
         iconForeground: E ? eV.strikethrough : null,
-        onClick: x,
+        onClick: N,
         onContextMenu: U,
         role: "switch",
         className: M ? eV.micButtonWithMenu : void 0,
@@ -845,7 +845,7 @@ function e1(e) {
           let {
             closePopout: t
           } = e;
-          return (0, r.jsx)(eb.l, {
+          return (0, r.jsx)(ex.l, {
             onSettingsButtonClick: t
           })
         },
@@ -923,26 +923,26 @@ function e2(e) {
     Component: d,
     play: m,
     events: {
-      onMouseEnter: g,
-      onMouseLeave: p
+      onMouseEnter: p,
+      onMouseLeave: g
     }
   } = (0, u.l)(c ? "undeafen" : "deafen"), h = n ? f.Vm4 : d, {
-    coloredIconsEnabled: b
+    coloredIconsEnabled: x
   } = (0, ec.Z)({
     location: "RTC Microphone Button"
   }), {
-    analyticsLocations: N
+    analyticsLocations: b
   } = (0, A.ZP)(y.Z.AUDIO_OUTPUT_BUTTON);
   i.useEffect(() => () => m(), [c, m]);
-  let x = i.useCallback(e => {
-    o(e, N)
-  }, [o, N]);
+  let N = i.useCallback(e => {
+    o(e, b)
+  }, [o, b]);
   return (0, r.jsx)(A.Gt, {
-    value: N,
+    value: b,
     children: (0, r.jsx)(ek.Z, {
       tooltipText: (0, w.Z)(t, n, s),
-      onMouseEnter: g,
-      onMouseLeave: p,
+      onMouseEnter: p,
+      onMouseLeave: g,
       icon: (0, r.jsx)(h, {
         size: "custom",
         width: 20,
@@ -950,13 +950,13 @@ function e2(e) {
         color: c ? f.TVs.colors.STATUS_DANGER : "currentColor"
       }),
       onClick: l,
-      onContextMenu: x,
+      onContextMenu: N,
       innerClassName: a()({
         [eV.redIcon]: n
       }),
       iconForeground: c ? eV.strikethrough : null,
       role: "switch",
-      redGlow: b && c,
+      redGlow: x && c,
       "aria-label": eU.NW.string(eU.t.wjcRFR),
       "aria-checked": c,
       disabled: s

@@ -1,58 +1,58 @@
 /** Chunk was on 11212 **/
 "use strict";
-c.d(e, {
-  Z: () => l
+a.d(e, {
+  Z: () => u
 });
-var d = c(200651);
-c(192379);
-var a = c(442837),
-  s = c(481060),
-  n = c(594174),
-  o = c(5192),
-  f = c(371583),
-  p = c(864138),
-  i = c(986398),
-  r = c(69589),
-  b = c(388032),
-  u = c(615004);
+var c = a(200651);
+a(192379);
+var d = a(442837),
+  s = a(481060),
+  n = a(594174),
+  f = a(5192),
+  i = a(371583),
+  o = a(864138),
+  p = a(986398),
+  r = a(69589),
+  l = a(388032),
+  b = a(615004);
 
-function l(t) {
+function u(t) {
   let {
     userId: e,
-    leaderboard: c
-  } = t, l = (0, a.e7)([n.default], () => n.default.getUser(e));
-  if (null == l) return null;
-  let m = (0, f.r)(c),
-    g = o.ZP.getName(c.guild_id, void 0, l);
-  return (0, d.jsx)(p.z, {
+    leaderboard: a
+  } = t, u = (0, d.e7)([n.default], () => n.default.getUser(e));
+  if (null == u) return null;
+  let m = (0, i.r)(a),
+    g = f.ZP.getName(a.guild_id, void 0, u);
+  return (0, c.jsx)(o.z, {
     imageUrl: m,
-    children: (0, d.jsxs)("div", {
-      className: u.userContainer,
-      children: [(0, d.jsx)(r.Z, {
-        user: l,
+    children: (0, c.jsxs)("div", {
+      className: b.userContainer,
+      children: [(0, c.jsx)(r.Z, {
+        user: u,
         rank: 1,
         rankBadgeVisibility: "hidden"
-      }), (0, d.jsx)(s.LZC, {
+      }), (0, c.jsx)(s.LZC, {
         size: 8,
         horizontal: !0
-      }), (0, d.jsxs)("div", {
-        children: [(0, d.jsxs)("div", {
-          className: u.userNameContainer,
-          children: [(0, d.jsx)(s.Text, {
+      }), (0, c.jsxs)("div", {
+        children: [(0, c.jsxs)("div", {
+          className: b.userNameContainer,
+          children: [(0, c.jsx)(s.Text, {
             variant: "text-sm/semibold",
-            className: u.userName,
+            className: b.userName,
             children: g
-          }), (0, d.jsx)(s.LZC, {
+          }), (0, c.jsx)(s.LZC, {
             size: 4,
             horizontal: !0
-          }), (0, d.jsx)(i.Z, {
-            className: u.winnerImage,
-            leaderboard: c
+          }), (0, c.jsx)(p.Z, {
+            className: b.winnerImage,
+            leaderboard: a
           })]
-        }), (0, d.jsx)(s.Text, {
+        }), (0, c.jsx)(s.Text, {
           variant: "text-xs/normal",
-          className: u.userSubtitle,
-          children: b.NW.string(b.t["0ScUkZ"])
+          className: b.userSubtitle,
+          children: l.NW.string(l.t["0ScUkZ"])
         })]
       })]
     })

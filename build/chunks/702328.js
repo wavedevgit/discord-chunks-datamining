@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => ef
 }), n(47120);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(481060),
   u = n(634894),
   m = n(410030),
-  g = n(607070),
-  p = n(100527),
+  p = n(607070),
+  g = n(100527),
   h = n(906732),
   f = n(70097),
-  b = n(464824),
-  N = n(214852),
-  x = n(594174),
+  x = n(464824),
+  b = n(214852),
+  N = n(594174),
   _ = n(78839),
   E = n(626135),
   j = n(526167),
@@ -66,7 +66,7 @@ var r = n(200651),
   ed = n(181960),
   eu = n(313199),
   em = n(821969);
-let eg = e => {
+let ep = e => {
     let {
       isFullscreen: t,
       selectedPremiumType: n
@@ -75,7 +75,7 @@ let eg = e => {
       className: t ? es.perkCardsContainerSpacingFullscreen : es.perkCardsContainerSpacingSettings
     })
   },
-  ep = e => {
+  eg = e => {
     let {
       isFullscreen: t,
       inOfferExperience: n
@@ -128,16 +128,16 @@ let eg = e => {
       isFullscreen: W,
       entrypoint: U
     } = e;
-    (0, N.z)(b.X);
+    (0, b.z)(x.X);
     let G = U === et.EZ.ApplicationStoreHome,
       F = i.useRef(null),
       H = i.useRef(null),
-      ee = (0, l.e7)([g.Z], () => g.Z.useReducedMotion),
+      ee = (0, l.e7)([p.Z], () => p.Z.useReducedMotion),
       ef = (0, m.ZP)(),
-      eb = (0, c.wj)(ef),
-      eN = x.default.getCurrentUser(),
-      ex = (0, C.I5)(eN),
-      e_ = (0, v.xP)("PremiumMarketingHome") && !ex && G,
+      ex = (0, c.wj)(ef),
+      eb = N.default.getCurrentUser(),
+      eN = (0, C.I5)(eb),
+      e_ = (0, v.xP)("PremiumMarketingHome") && !eN && G,
       [eE, ej] = i.useState(!1),
       [eC, eO] = i.useState(!1),
       [ev, eS] = i.useState(!1),
@@ -162,7 +162,7 @@ let eg = e => {
       ez = null === (n = (0, S.Z)()) || void 0 === n ? void 0 : n.billingSettingsMarketingBanner,
       {
         analyticsLocations: eY
-      } = (0, h.ZP)(p.Z.PREMIUM_MARKETING),
+      } = (0, h.ZP)(g.Z.PREMIUM_MARKETING),
       eK = "PremiumMarketingHome";
     (0, u.j)({
       location: eK + " auto on",
@@ -186,7 +186,7 @@ let eg = e => {
             variant: e_ ? k.NN.MARKETING_PAGE_V2 : k.NN.DEFAULT,
             showWumpus: !e_,
             tier0CTAButton: e_ ? (0, r.jsx)(J.Z, {
-              forceInverted: eb && !e_,
+              forceInverted: ex && !e_,
               showIcon: !1,
               subscriptionTier: et.Si.TIER_0,
               className: es.marginTopForButtons,
@@ -226,7 +226,7 @@ let eg = e => {
       eX = (0, r.jsxs)("div", {
         className: a()(es.container, {
           [es.settingsContainer]: !W,
-          [es.containerBackground]: e_ && eb
+          [es.containerBackground]: e_ && ex
         }),
         "data-cy": "tier-0-marketing-page",
         children: [e_ && (0, r.jsx)("div", {
@@ -241,7 +241,7 @@ let eg = e => {
             [es.zIndex1]: eV
           }),
           isFullscreen: W
-        }), !e_ && (0, r.jsx)(ep, {
+        }), !e_ && (0, r.jsx)(eg, {
           isFullscreen: W,
           inOfferExperience: eV
         }), !W && eW ? (0, r.jsx)(D.Z, {
@@ -259,7 +259,7 @@ let eg = e => {
               subscriptionTier: ew,
               isFullscreen: W || eV,
               entrypoint: U,
-              isDarkMode: eb
+              isDarkMode: ex
             }) : (0, r.jsx)(V.ZP, {
               subscriptionTier: ew,
               isFullscreen: W || eV,
@@ -273,7 +273,7 @@ let eg = e => {
                 [es.noTopPaddingOverride]: null != eR
               }),
               entrypoint: U,
-              isDarkMode: eb
+              isDarkMode: ex
             })
           }), !e_ && !0 === eF && (0, r.jsx)(A.W, {
             isFullScreen: W,
@@ -311,7 +311,7 @@ let eg = e => {
           hasRenderedOnce: eA,
           isMarketingPageV2Enabled: e_,
           isReducedMotion: ee
-        }), !e_ && (0, r.jsx)(eg, {
+        }), !e_ && (0, r.jsx)(ep, {
           isFullscreen: W
         }), e_ && eq, (0, r.jsxs)("div", {
           className: es.planComparisonTableContainer,
@@ -363,7 +363,7 @@ let eg = e => {
           },
           children: (0, r.jsx)(q.Z, {
             isFooterVisible: eC,
-            isDarkMode: eb,
+            isDarkMode: ex,
             isReducedMotion: ee
           })
         })]

@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => C
 }), n(47120), n(773603);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(726542),
   u = n(275759),
   m = n(231757),
-  g = n(888496),
-  p = n(706454),
+  p = n(888496),
+  g = n(706454),
   h = n(553795),
   f = n(63063),
-  b = n(981631),
-  N = n(856651),
-  x = n(388032),
+  x = n(981631),
+  b = n(856651),
+  N = n(388032),
   _ = n(113831);
 
 function E(e) {
@@ -27,7 +27,7 @@ function E(e) {
     account: n,
     refreshed: a,
     handleRefresh: o
-  } = e, [c, d] = i.useState(!1), m = null !== (t = n.metadata) && void 0 !== t ? t : {}, h = (0, s.e7)([p.default], () => p.default.locale), E = i.useCallback(async () => {
+  } = e, [c, d] = i.useState(!1), m = null !== (t = n.metadata) && void 0 !== t ? t : {}, h = (0, s.e7)([g.default], () => g.default.locale), E = i.useCallback(async () => {
     d(!0);
     try {
       await o(n)
@@ -36,34 +36,34 @@ function E(e) {
     }
   }, [n, o]), j = null;
   switch (n.type) {
-    case b.ABu.REDDIT:
-      j = (0, g.oP)(m, _.metadataItem);
+    case x.ABu.REDDIT:
+      j = (0, p.oP)(m, _.metadataItem);
       break;
-    case b.ABu.STEAM:
-      j = (0, g.Dq)(m, _.metadataItem);
+    case x.ABu.STEAM:
+      j = (0, p.Dq)(m, _.metadataItem);
       break;
-    case b.ABu.TWITTER:
-      j = (0, g.rJ)(m, _.metadataItem);
+    case x.ABu.TWITTER:
+      j = (0, p.rJ)(m, _.metadataItem);
       break;
-    case b.ABu.EBAY:
-      j = (0, g.ul)(m, _.metadataItem);
+    case x.ABu.EBAY:
+      j = (0, p.ul)(m, _.metadataItem);
       break;
-    case b.ABu.PAYPAL:
-      j = (0, g.li)(m, _.metadataItem);
+    case x.ABu.PAYPAL:
+      j = (0, p.li)(m, _.metadataItem);
       break;
-    case b.ABu.TIKTOK:
-      j = (0, g.hf)(m, _.metadataItem)
+    case x.ABu.TIKTOK:
+      j = (0, p.hf)(m, _.metadataItem)
   }
-  let C = (0, u.FI)(m[N.PC.CREATED_AT], h),
+  let C = (0, u.FI)(m[b.PC.CREATED_AT], h),
     O = null,
-    v = x.NW.string(x.t.wzzjk5);
+    v = N.NW.string(N.t.wzzjk5);
   return (null == j || 0 === j.length) && null == C && (O = (0, r.jsx)(l.Text, {
     variant: "text-xs/normal",
     color: "header-secondary",
-    children: x.NW.format(x.t.Up2ni4, {
-      helpdeskUrl: f.Z.getArticleURL(b.BhN.CONNECTION_DETAILS)
+    children: N.NW.format(N.t.Up2ni4, {
+      helpdeskUrl: f.Z.getArticleURL(x.BhN.CONNECTION_DETAILS)
     })
-  }, "label"), v = x.NW.string(x.t["LVh3//"])), a && (v = x.NW.string(x.t.i4jeWV)), (0, r.jsxs)("div", {
+  }, "label"), v = N.NW.string(N.t["LVh3//"])), a && (v = N.NW.string(N.t.i4jeWV)), (0, r.jsxs)("div", {
     className: _.metadataContainer,
     children: [O, null == j ? void 0 : j.map((e, t) => (0, r.jsxs)(r.Fragment, {
       children: [e, t < j.length - 1 ? (0, r.jsx)("span", {
@@ -74,7 +74,7 @@ function E(e) {
     }) : null, null != C ? (0, r.jsx)(l.Text, {
       variant: "text-xs/normal",
       color: "header-secondary",
-      children: x.NW.format(x.t["9rfonp"], {
+      children: N.NW.format(N.t["9rfonp"], {
         date: C
       })
     }, "member-since") : null, (0, r.jsx)(l.zxk, {
@@ -84,7 +84,7 @@ function E(e) {
       size: l.zxk.Sizes.MIN,
       submitting: c,
       disabled: a,
-      "aria-label": x.NW.string(x.t.sCkLYG),
+      "aria-label": N.NW.string(N.t.sCkLYG),
       onClick: a ? void 0 : E,
       children: v
     }, "refresh-button")]
@@ -96,19 +96,19 @@ function j(e) {
     account: t,
     handleRefresh: n,
     refreshedAccountIds: s
-  } = e, [u, g] = i.useState(t.visibility), [p, h] = i.useState(t.metadataVisibility), f = (0, c.ZP)();
+  } = e, [u, p] = i.useState(t.visibility), [g, h] = i.useState(t.metadataVisibility), f = (0, c.ZP)();
   i.useEffect(() => {
-    g(t.visibility), h(t.metadataVisibility)
+    p(t.visibility), h(t.metadataVisibility)
   }, [t]);
-  let b = d.Z.get(t.type),
-    N = !0 === b.hasMetadata;
+  let x = d.Z.get(t.type),
+    b = !0 === x.hasMetadata;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: _.activityRow,
       children: [(0, r.jsx)("img", {
-        alt: b.name,
+        alt: x.name,
         className: _.connectionIcon,
-        src: (0, a.wj)(f) ? b.icon.darkSVG : b.icon.lightSVG
+        src: (0, a.wj)(f) ? x.icon.darkSVG : x.icon.lightSVG
       }), (0, r.jsxs)("div", {
         className: _.activitySettings,
         children: [(0, r.jsxs)(l.j7V, {
@@ -120,28 +120,28 @@ function j(e) {
               verified: n
             } = t, r = +!!e;
             if (e && !n) {
-              g(r), (0, m.Z)({
+              p(r), (0, m.Z)({
                 platformType: t.type,
                 location: "User Settings"
               });
               return
             }
-            g(r), o.Z.setVisibility(t.type, t.id, r)
+            p(r), o.Z.setVisibility(t.type, t.id, r)
           },
           children: [(0, r.jsx)(l.Text, {
             variant: "text-md/semibold",
             color: "header-primary",
-            children: b.name
-          }), N && (0, r.jsx)(E, {
+            children: x.name
+          }), b && (0, r.jsx)(E, {
             account: t,
             refreshed: s.includes(t.id),
             handleRefresh: n
           })]
-        }), N && (0, r.jsx)(l.j7V, {
+        }), b && (0, r.jsx)(l.j7V, {
           className: _.additionalDetailsSwitch,
           hideBorder: !0,
           disabled: 1 !== u || null == t.metadata,
-          value: 1 === p,
+          value: 1 === g,
           onChange: function(e) {
             let {
               verified: n
@@ -158,7 +158,7 @@ function j(e) {
           children: (0, r.jsx)(l.Text, {
             variant: "text-md/normal",
             color: "header-secondary",
-            children: x.NW.string(x.t["3l78ws"])
+            children: N.NW.string(N.t["3l78ws"])
           })
         })]
       })]
@@ -180,7 +180,7 @@ function C() {
     children: [(0, r.jsx)(l.vwX, {
       tag: l.RB0.H5,
       className: _.title,
-      children: x.NW.string(x.t.aw0GVV)
+      children: N.NW.string(N.t.aw0GVV)
     }), t.map(e => (0, r.jsx)(j, {
       account: e,
       handleRefresh: c,

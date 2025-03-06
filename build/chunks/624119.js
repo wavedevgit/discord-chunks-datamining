@@ -1,5 +1,5 @@
 /** Chunk was on 11212 **/
-var d = {
+var c = {
   "./champion_1.jpg": "619636",
   "./champion_10.jpg": "41404",
   "./champion_101.jpg": "985966",
@@ -171,17 +171,17 @@ var d = {
   "./champion_99.jpg": "751384"
 };
 
-function a(t) {
-  return c(s(t))
+function d(t) {
+  return a(s(t))
 }
 
 function s(t) {
-  if (!c.o(d, t)) {
+  if (!a.o(c, t)) {
     var e = Error("Cannot find module '" + t + "'");
     throw e.code = "MODULE_NOT_FOUND", e
   }
-  return d[t]
+  return c[t]
 }
-a.keys = function() {
-  return Object.keys(d)
-}, a.resolve = s, t.exports = a, a.id = 624119
+d.keys = function() {
+  return Object.keys(c)
+}, d.resolve = s, t.exports = d, d.id = 624119

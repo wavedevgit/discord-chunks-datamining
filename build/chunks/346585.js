@@ -1,17 +1,17 @@
-/** Chunk was on 51424 **/
+/** Chunk was on 76282 **/
 n.d(t, {
-  IE: () => I,
-  K9: () => O,
+  IE: () => N,
+  K9: () => b,
   NX: () => h,
   R_: () => g,
-  e$: () => E,
-  ti: () => N,
+  e$: () => p,
+  ti: () => O,
   zV: () => _
 }), n(757143), n(301563), n(47120), n(627341);
 var r = n(913527),
   i = n.n(r),
-  l = n(278074),
-  o = n(768581),
+  o = n(278074),
+  l = n(768581),
   a = n(709054),
   s = n(624138),
   c = n(219496),
@@ -20,7 +20,7 @@ var r = n(913527),
 
 function _(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-  return o.ZP.getUserAvatarURL({
+  return l.ZP.getUserAvatarURL({
     id: e.id,
     avatar: e.avatar,
     bot: e.bot,
@@ -28,23 +28,23 @@ function _(e) {
   }, t, 80)
 }
 
-function E(e) {
+function p(e) {
   let t = (0, s._I)(e.username).replace(u.RN, "").replace(u.iF, ".").toLowerCase();
   return "".concat(t).concat(e.discriminator).substring(0, 32)
 }
-let p = ["@", "#", ":"],
-  m = ["```", "discord", "hypesquad", "system message", "system mesage", "sustem message", "sustem mesage", "clyde"],
-  f = ["discordtag", "everyone", "here", "discord nitro", "discord", "snowsgiving"];
+let E = ["@", "#", ":"],
+  f = ["```", "discord", "hypesquad", "system message", "system mesage", "sustem message", "sustem mesage", "clyde"],
+  m = ["discordtag", "everyone", "here", "discord nitro", "discord", "snowsgiving"];
 
 function h(e) {
   var t;
   let n = e.username.toLowerCase();
   if ((t = u.kt, n.split("").filter(e => !t.includes(e.charCodeAt(0))).join("")).length < 2) return !0;
-  for (let e of p)
+  for (let e of E)
     if (n.includes(e)) return !0;
-  for (let e of f)
-    if (n === e.toLowerCase()) return !0;
   for (let e of m)
+    if (n === e.toLowerCase()) return !0;
+  for (let e of f)
     if (n.includes(e.toLowerCase())) return !0;
   return !1
 }
@@ -53,7 +53,7 @@ function g(e) {
   return e.toLowerCase().replace(/\s/g, "").replace("@", "")
 }
 
-function O(e) {
+function b(e) {
   let t = a.default.extractTimestamp(e);
   try {
     return i()(new Date(t)).format("MMM DD, YYYY")
@@ -61,14 +61,14 @@ function O(e) {
   return null
 }
 
-function N(e) {
-  return (0, l.EQ)(e).with({
+function O(e) {
+  return (0, o.EQ)(e).with({
     rateLimited: !0
   }, () => ({
     type: c.K.RATE_LIMIT,
     message: d.NW.string(d.t.T15lqq)
   })).with({
-    error: l.P.not(l.P.nullish)
+    error: o.P.not(o.P.nullish)
   }, e => {
     let {
       error: t
@@ -88,14 +88,14 @@ function N(e) {
     type: c.K.ERROR,
     message: d.NW.string(d.t.mCrAUV)
   })).with({
-    error: l.P.nullish
+    error: o.P.nullish
   }, () => ({
     type: c.K.INTERNAL_ERROR,
     message: ""
   })).otherwise(() => void 0)
 }
 
-function I(e) {
+function N(e) {
   return new Date(2024, 2, 4).toLocaleDateString(e, {
     month: "long",
     day: "numeric",

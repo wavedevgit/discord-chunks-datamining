@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => b
+  Z: () => x
 });
 var r, i, s, a = n(392711),
   l = n.n(a),
@@ -9,15 +9,15 @@ var r, i, s, a = n(392711),
   d = n(570140);
 let u = !1,
   m = [],
-  g = "",
-  p = !1,
+  p = "",
+  g = !1,
   h = {
     viewNonce: "",
     regenerateNonce: ""
   };
 class f extends(s = c.ZP.Store) {
   getVerificationKey() {
-    return g
+    return p
   }
   getBackupCodes() {
     return m
@@ -29,7 +29,7 @@ class f extends(s = c.ZP.Store) {
     return h
   }
   get hasSeenBackupPrompt() {
-    return p
+    return g
   }
 }
 i = "MFAStore", (r = "displayName") in f ? Object.defineProperty(f, r, {
@@ -38,7 +38,7 @@ i = "MFAStore", (r = "displayName") in f ? Object.defineProperty(f, r, {
   configurable: !0,
   writable: !0
 }) : f[r] = i;
-let b = new f(d.Z, {
+let x = new f(d.Z, {
   MFA_ENABLE_SUCCESS: function(e) {
     let {
       token: t,
@@ -66,7 +66,7 @@ let b = new f(d.Z, {
       codes: t,
       key: n
     } = e;
-    m = l().sortBy(t, "code"), g = n
+    m = l().sortBy(t, "code"), p = n
   },
   MFA_SEND_VERIFICATION_KEY: function(e) {
     let {
@@ -75,6 +75,6 @@ let b = new f(d.Z, {
     h = t
   },
   MFA_SEEN_BACKUP_CODE_PROMPT: function() {
-    p = !0
+    g = !0
   }
 })

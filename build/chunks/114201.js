@@ -1,195 +1,195 @@
 /** Chunk was on 11212 **/
 "use strict";
-c.d(e, {
-  Z: () => N
+a.d(e, {
+  Z: () => O
 });
-var d = c(200651);
-c(192379);
-var a = c(99815),
-  s = c(442837),
-  n = c(481060),
-  o = c(239091),
-  f = c(314897),
-  p = c(553795),
-  i = c(430824),
-  r = c(496675),
-  b = c(626135),
-  u = c(70956),
-  l = c(425128),
-  m = c(979192),
-  g = c(873128),
-  j = c(703733),
-  h = c(463031),
-  _ = c(981631),
-  v = c(388032),
-  x = c(668014);
+var c = a(200651);
+a(192379);
+var d = a(99815),
+  s = a(442837),
+  n = a(481060),
+  f = a(239091),
+  i = a(314897),
+  o = a(553795),
+  p = a(430824),
+  r = a(496675),
+  l = a(626135),
+  b = a(70956),
+  u = a(425128),
+  m = a(979192),
+  g = a(873128),
+  j = a(703733),
+  h = a(463031),
+  y = a(981631),
+  _ = a(388032),
+  B = a(668014);
 
-function O(t) {
+function v(t) {
   for (var e = 1; e < arguments.length; e++) {
-    var c = null != arguments[e] ? arguments[e] : {},
-      d = Object.keys(c);
-    "function" == typeof Object.getOwnPropertySymbols && (d = d.concat(Object.getOwnPropertySymbols(c).filter(function(t) {
-      return Object.getOwnPropertyDescriptor(c, t).enumerable
-    }))), d.forEach(function(e) {
-      var d;
-      d = c[e], e in t ? Object.defineProperty(t, e, {
-        value: d,
+    var a = null != arguments[e] ? arguments[e] : {},
+      c = Object.keys(a);
+    "function" == typeof Object.getOwnPropertySymbols && (c = c.concat(Object.getOwnPropertySymbols(a).filter(function(t) {
+      return Object.getOwnPropertyDescriptor(a, t).enumerable
+    }))), c.forEach(function(e) {
+      var c;
+      c = a[e], e in t ? Object.defineProperty(t, e, {
+        value: c,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : t[e] = d
+      }) : t[e] = c
     })
   }
   return t
 }
 
-function y(t, e) {
+function x(t, e) {
   return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
-    var c = Object.keys(t);
+    var a = Object.keys(t);
     if (Object.getOwnPropertySymbols) {
-      var d = Object.getOwnPropertySymbols(t);
-      c.push.apply(c, d)
+      var c = Object.getOwnPropertySymbols(t);
+      a.push.apply(a, c)
     }
-    return c
-  })(Object(e)).forEach(function(c) {
-    Object.defineProperty(t, c, Object.getOwnPropertyDescriptor(e, c))
+    return a
+  })(Object(e)).forEach(function(a) {
+    Object.defineProperty(t, a, Object.getOwnPropertyDescriptor(e, a))
   }), t
 }
 
-function N(t) {
+function O(t) {
   let {
     guildId: e,
-    leaderboardId: N
-  } = t, S = (0, s.e7)([f.default], () => f.default.getId()), Z = (0, s.e7)([p.Z], () => p.Z.getAccount(null, _.ABu.RIOT_GAMES)), P = (0, s.e7)([p.Z], () => p.Z.getAccount(null, _.ABu.LEAGUE_OF_LEGENDS)), E = (0, g.Z)({
+    leaderboardId: O
+  } = t, N = (0, s.e7)([i.default], () => i.default.getId()), S = (0, s.e7)([o.Z], () => o.Z.getAccount(null, y.ABu.RIOT_GAMES)), Z = (0, s.e7)([o.Z], () => o.Z.getAccount(null, y.ABu.LEAGUE_OF_LEGENDS)), P = (0, g.Z)({
     guildId: e,
-    leaderboardId: N
+    leaderboardId: O
   }), {
-    leaderboardsDisabled: T
-  } = (0, m.O)(e, N), I = null != P && null != Z ? () => {
-    b.default.track(_.rMx.LEADERBOARD_USER_DATA_REFRESH_REQUESTED, {
-      leaderboard_id: N,
+    leaderboardsDisabled: E
+  } = (0, m.O)(e, O), T = null != Z && null != S ? () => {
+    l.default.track(y.rMx.LEADERBOARD_USER_DATA_REFRESH_REQUESTED, {
+      leaderboard_id: O,
       guild_id: e
-    }), (0, l._7)({
-      riotConnectionId: Z.id,
-      lolConnectionId: P.id
+    }), (0, u._7)({
+      riotConnectionId: S.id,
+      lolConnectionId: Z.id
     })
-  } : _.dG4, R = null == Z || T ? v.NW.string(v.t["0yRXHx"]) : v.NW.string(v.t["KWpU6+"]), {
-    lastUpdateRequested: w,
-    statisticLastUpdatedDate: D
+  } : y.dG4, I = null == S || E ? _.NW.string(_.t["0yRXHx"]) : _.NW.string(_.t["KWpU6+"]), {
+    lastUpdateRequested: R,
+    statisticLastUpdatedDate: w
   } = (0, j.Z)({
-    userId: S,
+    userId: N,
     guildId: e,
-    leaderboardId: N,
-    statisticId: a.E.LOL_TOTAL_KILLS
+    leaderboardId: O,
+    statisticId: d.E.LOL_TOTAL_KILLS
   }), {
-    disabled: k,
-    subtext: L
+    disabled: D,
+    subtext: k
   } = function(t, e) {
     if (null == t) return {
       disabled: !1,
       subtext: void 0
     };
-    let c = (Date.now() - t.getTime()) / u.Z.Millis.SECOND;
-    if (c < 0) return {
+    let a = (Date.now() - t.getTime()) / b.Z.Millis.SECOND;
+    if (a < 0) return {
       disabled: !1,
       subtext: void 0
     };
-    let d = null != e ? t.getTime() > e.getTime() && c < u.Z.Seconds.HOUR : c < u.Z.Seconds.HOUR,
-      a = d ? v.NW.string(v.t["3gPhoa"]) : function(t) {
-        if (t > u.Z.Seconds.DAYS_30) {
-          let e = Math.round(t / u.Z.Seconds.DAYS_30);
-          return v.NW.formatToPlainString(v.t["HF7p4+"], {
+    let c = null != e ? t.getTime() > e.getTime() && a < b.Z.Seconds.HOUR : a < b.Z.Seconds.HOUR,
+      d = c ? _.NW.string(_.t["3gPhoa"]) : function(t) {
+        if (t > b.Z.Seconds.DAYS_30) {
+          let e = Math.round(t / b.Z.Seconds.DAYS_30);
+          return _.NW.formatToPlainString(_.t["HF7p4+"], {
             count: e
           })
         }
-        if (t > 2 * u.Z.Seconds.DAY) {
-          let e = Math.round(t / u.Z.Seconds.DAY);
-          return v.NW.formatToPlainString(v.t.HkESOj, {
+        if (t > 2 * b.Z.Seconds.DAY) {
+          let e = Math.round(t / b.Z.Seconds.DAY);
+          return _.NW.formatToPlainString(_.t.HkESOj, {
             count: e
           })
         }
-        if (t > u.Z.Seconds.DAY) return v.NW.string(v.t.gvgh9P);
-        if (t > u.Z.Seconds.HOUR) {
-          let e = Math.round(t / u.Z.Seconds.HOUR);
-          return v.NW.formatToPlainString(v.t.mW55WV, {
+        if (t > b.Z.Seconds.DAY) return _.NW.string(_.t.gvgh9P);
+        if (t > b.Z.Seconds.HOUR) {
+          let e = Math.round(t / b.Z.Seconds.HOUR);
+          return _.NW.formatToPlainString(_.t.mW55WV, {
             count: e
           })
         } {
-          if (!(t > u.Z.Seconds.MINUTE)) return v.NW.string(v.t.tT0mdn);
-          let e = Math.round(t / u.Z.Seconds.MINUTE);
-          return v.NW.formatToPlainString(v.t["1mNjX1"], {
+          if (!(t > b.Z.Seconds.MINUTE)) return _.NW.string(_.t.tT0mdn);
+          let e = Math.round(t / b.Z.Seconds.MINUTE);
+          return _.NW.formatToPlainString(_.t["1mNjX1"], {
             count: e
           })
         }
-      }(c);
+      }(a);
     return {
-      disabled: d,
-      subtext: a
+      disabled: c,
+      subtext: d
     }
-  }(w, D), A = (0, s.e7)([r.Z, i.Z], () => {
-    let t = i.Z.getGuild(e);
-    return r.Z.can(_.Plq.ADMINISTRATOR, t)
+  }(R, w), L = (0, s.e7)([r.Z, p.Z], () => {
+    let t = p.Z.getGuild(e);
+    return r.Z.can(y.Plq.ADMINISTRATOR, t)
   }, [e]);
-  return null == E ? null : (0, d.jsx)(n.yRy, {
+  return null == P ? null : (0, c.jsx)(n.yRy, {
     align: "top",
     position: "right",
     disablePointerEvents: !1,
     renderPopout: t => {
       let {
-        closePopout: a
+        closePopout: d
       } = t;
-      return (0, d.jsx)(n.v2r, {
+      return (0, c.jsx)(n.v2r, {
         navId: "leaderboard-popout-context-menu",
         onClose: () => {
-          (0, o.Zy)(), a()
+          (0, f.Zy)(), d()
         },
-        "aria-label": v.NW.string(v.t.BjCuf3),
+        "aria-label": _.NW.string(_.t.BjCuf3),
         onSelect: void 0,
-        children: (0, d.jsxs)(n.kSQ, {
-          children: [E.leaderboard_id === h.z && null != Z && (0, d.jsx)(n.sNh, {
+        children: (0, c.jsxs)(n.kSQ, {
+          children: [P.leaderboard_id === h.z && null != S && (0, c.jsx)(n.sNh, {
             id: "refresh-my-data",
-            label: v.NW.string(v.t.iopWUV),
-            action: I,
-            disabled: k,
-            subtext: L
-          }), (0, d.jsx)(n.sNh, {
+            label: _.NW.string(_.t.iopWUV),
+            action: T,
+            disabled: D,
+            subtext: k
+          }), (0, c.jsx)(n.sNh, {
             id: "leaderboard-modal",
-            label: R,
+            label: I,
             action: () => {
               (0, n.ZDy)(async () => {
                 let {
                   default: t
-                } = await c.e("73217").then(c.bind(c, 139964));
-                return c => (0, d.jsx)(t, y(O({}, c), {
+                } = await a.e("73217").then(a.bind(a, 139964));
+                return a => (0, c.jsx)(t, x(v({}, a), {
                   guildId: e,
-                  leaderboard: E
+                  leaderboard: P
                 }))
-              }), null == a || a()
+              }), null == d || d()
             }
-          }), A ? (0, d.jsx)(n.sNh, {
+          }), L ? (0, c.jsx)(n.sNh, {
             id: "leaderboard-settings-modal",
-            label: v.NW.string(v.t["QV4/6u"]),
+            label: _.NW.string(_.t["QV4/6u"]),
             action: () => {
               (0, n.ZDy)(async () => {
                 let {
                   default: t
-                } = await c.e("25526").then(c.bind(c, 262918));
-                return c => (0, d.jsx)(t, y(O({}, c), {
+                } = await a.e("25526").then(a.bind(a, 262918));
+                return a => (0, c.jsx)(t, x(v({}, a), {
                   guildId: e,
-                  leaderboardId: N
+                  leaderboardId: O
                 }))
-              }), null == a || a()
+              }), null == d || d()
             }
           }) : null]
         })
       })
     },
-    children: t => (0, d.jsx)(n.ua7, {
-      text: v.NW.string(v.t.UKOtz8),
-      children: e => (0, d.jsx)(n.P3F, y(O(y(O({}, e), {
-        className: x.menuIcon
+    children: t => (0, c.jsx)(n.ua7, {
+      text: _.NW.string(_.t.UKOtz8),
+      children: e => (0, c.jsx)(n.P3F, x(v(x(v({}, e), {
+        className: B.menuIcon
       }), t), {
-        children: (0, d.jsx)(n.xhG, {
+        children: (0, c.jsx)(n.xhG, {
           color: "currentColor",
           size: "custom",
           width: 16,

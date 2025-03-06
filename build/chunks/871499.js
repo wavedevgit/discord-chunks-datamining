@@ -103,7 +103,8 @@ function N(e) {
     "aria-label": C,
     iconSize: R = "md",
     look: P,
-    buttonText: D
+    buttonText: D,
+    size: w
   } = e;
   return (0, r.jsx)(h.Z, {
     children: (0, r.jsx)(s.ua7, {
@@ -121,7 +122,7 @@ function N(e) {
         } = e, T = S(e, ["onClick", "onContextMenu", "onMouseEnter", "onMouseLeave"]);
         return (0, r.jsxs)(s.zxk, O(b({
           look: null != P ? P : s.zxk.Looks.BLANK,
-          size: s.zxk.Sizes.NONE,
+          size: null != w ? w : s.zxk.Sizes.NONE,
           onKeyDown: e => {
             null == i || i(e)
           },

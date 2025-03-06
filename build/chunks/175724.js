@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   f: () => T
 });
@@ -12,13 +12,13 @@ var r = n(374470),
   d = n(807092),
   u = n(6025),
   m = n(897473),
-  g = n(913663),
-  p = n(268350),
+  p = n(913663),
+  g = n(268350),
   h = n(433355),
   f = n(592125),
-  b = n(703558),
-  N = n(323873),
-  x = n(375954),
+  x = n(703558),
+  b = n(323873),
+  N = n(375954),
   _ = n(306680),
   E = n(944486),
   j = n(914010),
@@ -49,21 +49,21 @@ let T = {
     if (!1 === I(n) || !1 === I(c)) return !1;
     if (null != n && (null == a ? void 0 : a.type) === m.tI.CREATE_THREAD) return u.Z.closeChannelSidebar(n), !1;
     let d = y(n),
-      g = y(c);
-    return null == n || d || g || null == a ? null != n && !d && o.Z.getChatOpen(n) ? i.Z.updateChatOpen(n, !1) : v.S.dispatch(S.CkL.SCROLLTO_PRESENT) : u.Z.closeChannelSidebar(n), !1
+      p = y(c);
+    return null == n || d || p || null == a ? null != n && !d && o.Z.getChatOpen(n) ? i.Z.updateChatOpen(n, !1) : v.S.dispatch(S.CkL.SCROLLTO_PRESENT) : u.Z.closeChannelSidebar(n), !1
   }
 };
 
 function I(e) {
   if (null != e) {
-    if (N.Z.isEditingAny(e)) return s.Z.endEditMessage(e), !1;
+    if (b.Z.isEditingAny(e)) return s.Z.endEditMessage(e), !1;
     if (null != d.Z.getPendingReply(e)) return (0, c.A6)(e), !1;
-    if (null != g.Z.getStickerPreview(e, b.d.ChannelMessage)) return (0, p.qB)(e, b.d.ChannelMessage), !1
+    if (null != p.Z.getStickerPreview(e, x.d.ChannelMessage)) return (0, g.qB)(e, x.d.ChannelMessage), !1
   }
 }
 
 function y(e) {
   if (null == e) return !1;
   let t = !1;
-  return x.Z.getMessages(e).hasMoreAfter && (s.Z.jumpToPresent(e, S.AQB), t = !0), _.ZP.hasUnread(e) && ((0, a.In)(e), t = !0), (0, a.iV)(e), t
+  return N.Z.getMessages(e).hasMoreAfter && (s.Z.jumpToPresent(e, S.AQB), t = !0), _.ZP.hasUnread(e) && ((0, a.In)(e), t = !0), (0, a.iV)(e), t
 }

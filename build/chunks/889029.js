@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => N
+  Z: () => b
 });
 var r = n(200651);
 n(192379);
@@ -13,19 +13,19 @@ var i = n(120356),
   d = n(921801),
   u = n(246946),
   m = n(358085),
-  g = n(726985),
-  p = n(981631),
+  p = n(726985),
+  g = n(981631),
   h = n(388032),
   f = n(919),
-  b = n(802138);
+  x = n(802138);
 
-function N() {
+function b() {
   let {
     enabled: e,
     autoToggle: t,
     hideInstantInvites: i,
-    hidePersonalInformation: N,
-    disableSounds: x,
+    hidePersonalInformation: b,
+    disableSounds: N,
     disableNotifications: _,
     enableContentProtection: E
   } = (0, a.cj)([u.Z], () => (function(e) {
@@ -55,9 +55,9 @@ function N() {
     tag: l.RB0.H1,
     title: h.NW.string(h.t.S5GfOT),
     children: [(0, r.jsx)(d.F, {
-      setting: g.s6.STREAMER_MODE_INTEGRATIONS,
+      setting: p.s6.STREAMER_MODE_INTEGRATIONS,
       children: (0, r.jsx)(l.ToO, {
-        className: b.marginBottom40,
+        className: x.marginBottom40,
         iconClassName: f.noticeIcon,
         type: l.Dd5.PRIMARY,
         imageData: {
@@ -68,17 +68,17 @@ function N() {
         },
         title: h.NW.string(h.t.bxGbHB),
         body: h.NW.format(h.t["4rmZn5"], {
-          streamkitURL: p.EYA.STREAMKIT
+          streamkitURL: g.EYA.STREAMKIT
         })
       })
     }), (0, r.jsxs)(d.F, {
-      setting: g.s6.STREAMER_MODE_ENABLE,
+      setting: p.s6.STREAMER_MODE_ENABLE,
       children: [(0, r.jsx)(l.j7V, {
         value: e,
         onChange: e => j("enabled", e),
         note: h.NW.format(h.t.MLVL2N, {
           onClick: () => {
-            c.Z.setSection(p.oAB.KEYBINDS)
+            c.Z.setSection(g.oAB.KEYBINDS)
           }
         }),
         children: h.NW.string(h.t.p9ZAJS)
@@ -92,18 +92,18 @@ function N() {
       })()]
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsx)(l.vwX, {
-        className: s()(b.marginTop40, b.marginBottom8, f.sectionLabel),
+        className: s()(x.marginTop40, x.marginBottom8, f.sectionLabel),
         children: h.NW.string(h.t["+1H47u"])
       }), (0, r.jsx)(d.F, {
-        setting: g.s6.STREAMER_MODE_HIDE_PERSONAL_INFORMATION,
+        setting: p.s6.STREAMER_MODE_HIDE_PERSONAL_INFORMATION,
         children: (0, r.jsx)(l.j7V, {
-          value: N,
+          value: b,
           onChange: e => j("hidePersonalInformation", e),
           note: h.NW.string(h.t["+9Lra2"]),
           children: h.NW.string(h.t.UpQziI)
         })
       }), (0, r.jsx)(d.F, {
-        setting: g.s6.STREAMER_MODE_HIDE_INVITE_LINKS,
+        setting: p.s6.STREAMER_MODE_HIDE_INVITE_LINKS,
         children: (0, r.jsx)(l.j7V, {
           value: i,
           onChange: e => j("hideInstantInvites", e),
@@ -111,15 +111,15 @@ function N() {
           children: h.NW.string(h.t.q7WNGh)
         })
       }), (0, r.jsx)(d.F, {
-        setting: g.s6.STREAMER_MODE_DISABLE_SOUNDS,
+        setting: p.s6.STREAMER_MODE_DISABLE_SOUNDS,
         children: (0, r.jsx)(l.j7V, {
-          value: x,
+          value: N,
           onChange: e => j("disableSounds", e),
           note: h.NW.string(h.t.eAkaio),
           children: h.NW.string(h.t.o56OZm)
         })
       }), (0, r.jsx)(d.F, {
-        setting: g.s6.STREAMER_MODE_DISABLE_NOTIFICATIONS,
+        setting: p.s6.STREAMER_MODE_DISABLE_NOTIFICATIONS,
         children: (0, r.jsx)(l.j7V, {
           value: _,
           onChange: e => j("disableNotifications", e),
@@ -127,7 +127,7 @@ function N() {
           children: h.NW.string(h.t.qmYiYW)
         })
       }), (0, r.jsx)(d.F, {
-        setting: g.s6.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE,
+        setting: p.s6.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE,
         children: (0, r.jsx)(l.j7V, {
           value: E,
           onChange: e => j("enableContentProtection", e),

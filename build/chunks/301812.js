@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => x
+  Z: () => N
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -12,17 +12,17 @@ var r = n(200651),
   d = n(838436),
   u = n(51331),
   m = n(703115),
-  g = n(526761),
-  p = n(726985),
+  p = n(526761),
+  g = n(726985),
   h = n(736530),
   f = n(981631),
-  b = n(388032);
+  x = n(388032);
 
-function N(e) {
+function b(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, c = o.SE.useSetting().includes(n), g = i.useCallback(e => {
+  } = e, c = o.SE.useSetting().includes(n), p = i.useCallback(e => {
     let r = (0, l._o)();
     e ? r.delete(n) : r.add(n), o.SE.updateSetting([...r]), s.default.track(f.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: m.Y.RESTRICT_GUILD_ACTIVITY_STATUS_TOGGLE,
@@ -31,24 +31,24 @@ function N(e) {
     })
   }, [t, n]);
   return n === h.T ? null : (0, r.jsx)(d.U, {
-    setting: p.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_ACTIVITY_STATUS_V2,
+    setting: g.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_ACTIVITY_STATUS_V2,
     children: (0, r.jsx)(u.Z, {
-      title: b.NW.string(b.t.IQO6Bg),
+      title: x.NW.string(x.t.IQO6Bg),
       value: !c,
-      onChange: g,
-      note: b.NW.format(b.t.v03Xpq, {
+      onChange: p,
+      note: x.NW.format(x.t.v03Xpq, {
         helpdeskArticle: a.Z.getArticleURL(f.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     })
   })
 }
 
-function x(e) {
+function N(e) {
   let {
-    ingress: t = g.f4.USER_SETTINGS_PRIVACY_SAFETY,
+    ingress: t = p.f4.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
   } = e, i = (0, c.is)();
-  return (0, r.jsx)(N, {
+  return (0, r.jsx)(b, {
     ingress: t,
     guildId: null != n ? n : i
   })

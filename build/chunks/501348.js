@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => er
 }), n(47120);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(780384),
   u = n(481060),
   m = n(153867),
-  g = n(230711),
-  p = n(493773),
+  p = n(230711),
+  g = n(493773),
   h = n(714338),
   f = n(857595),
-  b = n(607070),
-  N = n(627845),
-  x = n(514361),
+  x = n(607070),
+  b = n(627845),
+  N = n(514361),
   _ = n(600164),
   E = n(313201),
   j = n(540059),
@@ -122,7 +122,7 @@ let Y = {
   },
   $ = () => {
     let e = (0, j.Q3)("ThemeTitle"),
-      t = (0, l.e7)([x.Z], () => x.Z.isPreview),
+      t = (0, l.e7)([N.Z], () => N.Z.isPreview),
       {
         enabled: n
       } = I.Z.useExperiment({
@@ -291,9 +291,9 @@ class ee extends i.Component {
       children: (0, r.jsx)(u.R94, {
         type: u.R94.Types.DEFAULT,
         className: V.forcedColorsWarning,
-        children: (0, N.b)() ? U.NW.format(U.t.Jae48P, {
+        children: (0, b.b)() ? U.NW.format(U.t.Jae48P, {
           onClick: () => {
-            g.Z.open(L.oAB.ACCESSIBILITY)
+            p.Z.open(L.oAB.ACCESSIBILITY)
           }
         }) : U.NW.string(U.t.AUMSZG)
       })
@@ -464,7 +464,7 @@ class ee extends i.Component {
         className: G.marginTop20,
         children: U.NW.format(U.t["5LEQdX"], {
           onAccessibilityClick() {
-            g.Z.open(L.oAB.ACCESSIBILITY)
+            p.Z.open(L.oAB.ACCESSIBILITY)
           }
         })
       })]
@@ -618,7 +618,7 @@ class et extends ee {
       className: V.a11yCallout,
       children: U.NW.format(U.t["5LEQdX"], {
         onAccessibilityClick() {
-          g.Z.open(L.oAB.ACCESSIBILITY)
+          p.Z.open(L.oAB.ACCESSIBILITY)
         }
       })
     });
@@ -643,22 +643,22 @@ function er() {
     i = Z.L1.useSetting(),
     s = Z.hg.useSetting(),
     a = Z.YC.useSetting();
-  (0, p.ZP)(() => {
+  (0, g.ZP)(() => {
     en(o.z.CLIENT_THEMES_SETTINGS_BADGE), en(o.z.DEKSTOP_CUSTOM_APP_ICON_BADGE), en(o.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK)
   });
-  let c = (0, l.cj)([R.Z, D.ZP, b.Z, A.default, x.Z], () => {
+  let c = (0, l.cj)([R.Z, D.ZP, x.Z, A.default, N.Z], () => {
       var e, t;
       return {
         theme: R.Z.theme,
-        useForcedColors: b.Z.useForcedColors,
+        useForcedColors: x.Z.useForcedColors,
         useSystemTheme: D.ZP.useSystemTheme,
         darkSidebar: R.Z.darkSidebar,
-        fontSize: b.Z.fontSize,
-        zoom: b.Z.zoom,
-        messageGroupSpacing: b.Z.messageGroupSpacing,
+        fontSize: x.Z.fontSize,
+        zoom: x.Z.zoom,
+        messageGroupSpacing: x.Z.messageGroupSpacing,
         displayCompactAvatars: D.ZP.displayCompactAvatars,
         isStaff: null !== (t = null === (e = A.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff) && void 0 !== t && t,
-        gradientPreset: x.Z.gradientPreset
+        gradientPreset: N.Z.gradientPreset
       }
     }),
     d = (0, j.nm)("UserSettingsAppearance"),

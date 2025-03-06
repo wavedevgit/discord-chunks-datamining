@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 }), n(47120);
 var r = n(544891),
   i = n(570140),
@@ -18,7 +18,7 @@ function h(e, t) {
     handoff_source: t
   })
 }
-class g extends u.Z {
+class p extends u.Z {
   _initialize() {
     i.Z.subscribe("BROWSER_HANDOFF_END", this.handleEnd), i.Z.subscribe("BROWSER_HANDOFF_FROM_APP", this.handleHandoff)
   }
@@ -75,4 +75,4 @@ class g extends u.Z {
     }) : this[t] = n
   }
 }
-let p = new g
+let g = new p

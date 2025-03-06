@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => A
 });
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(230711),
   u = n(825209),
   m = n(706454),
-  g = n(494620),
-  p = n(131951),
+  p = n(494620),
+  g = n(131951),
   h = n(556296),
   f = n(924557),
-  b = n(435064),
-  N = n(894694),
-  x = n(779618),
+  x = n(435064),
+  b = n(894694),
+  N = n(779618),
   _ = n(39604),
   E = n(442334),
   j = n(356659),
@@ -31,18 +31,18 @@ var r = n(200651),
   y = n(802138);
 
 function A() {
-  let e = (0, l.e7)([p.Z], () => p.Z.getHardwareEncoding()),
+  let e = (0, l.e7)([g.Z], () => g.Z.getHardwareEncoding()),
     {
       clipsEnabled: t,
       remindersEnabled: n,
       decoupledClipsEnabled: s,
       clipsLength: A,
       clipsQuality: P
-    } = (0, l.cj)([b.Z], () => b.Z.getSettings()),
-    R = (0, l.e7)([b.Z], () => b.Z.getHardwareClassification()),
+    } = (0, l.cj)([x.Z], () => x.Z.getSettings()),
+    R = (0, l.e7)([x.Z], () => x.Z.getHardwareClassification()),
     D = (0, l.e7)([h.ZP], () => h.ZP.getKeybindForAction(C.kg4.SAVE_CLIP, !0)),
-    Z = b.Z.isDecoupledGameClippingEnabled(),
-    w = (0, x.Z)(p.Z),
+    Z = x.Z.isDecoupledGameClippingEnabled(),
+    w = (0, N.Z)(g.Z),
     {
       showClipsHeaderEntrypoint: k
     } = f.NV.useExperiment({
@@ -143,16 +143,16 @@ function A() {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(o.hjN, {
       disabled: !e,
-      children: [!e && (0, r.jsx)(g.Z, {
-        look: g.z.WARNING,
+      children: [!e && (0, r.jsx)(p.Z, {
+        look: p.z.WARNING,
         className: I.formItem,
         children: S.NW.format(S.t.kiaF4e, {
           onClick: () => d.Z.open(C.oAB.VOICE, null, {
             scrollPosition: v.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
           })
         })
-      }), R === N.x.BELOW_MINIMUM ? (0, r.jsx)(g.Z, {
-        look: g.z.WARNING,
+      }), R === b.x.BELOW_MINIMUM ? (0, r.jsx)(p.Z, {
+        look: p.z.WARNING,
         className: I.formItem,
         children: S.NW.string(S.t.SIxrIC)
       }) : null, (0, r.jsx)(o.j7V, {
@@ -166,7 +166,7 @@ function A() {
           trackAnalytics: !0
         }),
         children: S.NW.string(S.t.h8rgrK)
-      }), e && (0, r.jsx)(g.Z, {
+      }), e && (0, r.jsx)(p.Z, {
         className: I.formItem,
         children: S.NW.string(S.t["Z+Mfqa"])
       })]

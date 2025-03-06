@@ -1,7 +1,7 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Yn: () => g,
-  ZP: () => p
+  Yn: () => p,
+  ZP: () => g
 }), n(411104), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -63,20 +63,20 @@ function m(e) {
     }
     return i
   }(e, ["onError", "onSuccess", "PasswordConfirm"]);
-  let [g, p] = i.useState("");
+  let [p, g] = i.useState("");
   return (0, r.jsx)(a, u(d({}, m), {
     handleSubmit: e => l.Z.enableMFAStart(e),
     onError: e => {
-      ("object" == typeof e && null != e && (0, s.nr)(e, "code") && "number" == typeof e.code ? e.code : 0) === o.evJ.MFA_INVALID_SECRET ? (n(g), m.onClose()) : t(e)
+      ("object" == typeof e && null != e && (0, s.nr)(e, "code") && "number" == typeof e.code ? e.code : 0) === o.evJ.MFA_INVALID_SECRET ? (n(p), m.onClose()) : t(e)
     },
-    onPasswordChange: p,
+    onPasswordChange: g,
     title: c.NW.string(c.t.cDgKtb),
     actionText: c.NW.string(c.t["3PatS0"]),
     skipErrorMsgAbortCode: o.evJ.MFA_INVALID_SECRET
   }))
 }
 
-function g() {
+function p() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
   return new Promise(t => {
     (0, a.ZDy)(async () => {
@@ -92,7 +92,7 @@ function g() {
     })
   })
 }
-let p = {
+let g = {
   enableMFA: async function() {
     let e = await new Promise((e, t) => {
       (0, a.ZDy)(async () => {
@@ -116,6 +116,6 @@ let p = {
           handleEnableMFASuccess: t
         }))
       })
-    }), await g()
+    }), await p()
   }
 }

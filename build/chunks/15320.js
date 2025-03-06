@@ -18,8 +18,8 @@ var r = n(200651),
   f = n(637853),
   g = n(968644),
   j = n(104265),
-  N = n(588632),
-  v = n(290511),
+  v = n(588632),
+  N = n(290511),
   b = n(981631),
   _ = n(388032),
   C = n(607639);
@@ -56,14 +56,14 @@ function E(e, t) {
   }), e
 }
 
-function k(e, t) {
+function I(e, t) {
   return (0, r.jsx)("span", {
     className: C.helpTextItem,
     children: e
   }, t)
 }
 
-function I(e, t) {
+function k(e, t) {
   return !(e.hasFeature(b.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && e.hasFeature(b.oNc.MEMBER_VERIFICATION_GATE_ENABLED)) && null != t && p.Z.getCurrentConfig({
     location: "ba216b_1"
   }, {
@@ -83,18 +83,18 @@ function Z(e) {
     gotoPrevPrompt: h,
     gotoNextPrompt: p,
     completeOnboarding: j
-  } = e, v = (0, o.Wu)([x.Z], () => x.Z.getOnboardingResponsesForPrompt(n.id, c.id)), b = 0 === v.length && (null == c ? void 0 : c.required), E = null == c ? void 0 : c.options.filter(e => v.includes(e.id)), I = (0, f.L6)(E), Z = (0, f.dX)(E), y = 0 === v.length, {
+  } = e, N = (0, o.Wu)([x.Z], () => x.Z.getOnboardingResponsesForPrompt(n.id, c.id)), b = 0 === N.length && (null == c ? void 0 : c.required), E = null == c ? void 0 : c.options.filter(e => N.includes(e.id)), k = (0, f.L6)(E), Z = (0, f.dX)(E), y = 0 === N.length, {
     helpText: P,
     helpTextAdditional: w
   } = (0, g.Z)({
     guild: n,
     prompt: c,
-    selectedRoleIds: I,
+    selectedRoleIds: k,
     selectedChannelIds: Z,
-    itemHook: k
+    itemHook: I
   }), D = (0, d.Z)(n.id, 1e3), T = c.options.map(e => O({
     value: e.id
-  }, e)), R = c.options.filter(e => v.includes(e.id)).map(e => e.id);
+  }, e)), R = c.options.filter(e => N.includes(e.id)).map(e => e.id);
   return (0, r.jsx)("div", {
     className: C.prompt,
     children: (0, r.jsxs)("div", {
@@ -127,15 +127,15 @@ function Z(e) {
           color: "header-primary",
           id: t,
           children: c.title
-        }), (0, r.jsx)(N.Z, {
+        }), (0, r.jsx)(v.Z, {
           options: T,
           value: R,
           onChange: e => {
-            let t = e.find(e => !v.includes(e.id)),
+            let t = e.find(e => !N.includes(e.id)),
               n = e.map(e => e.id);
             if (null != t) m(c.id, t.id, !0);
             else {
-              let e = v.filter(e => !n.includes(e));
+              let e = N.filter(e => !n.includes(e));
               c.options.filter(t => e.includes(t.id)).forEach(e => {
                 m(c.id, e.id, !1)
               })
@@ -150,7 +150,7 @@ function Z(e) {
           children: l > 0 && (0, r.jsxs)(i.zxk, {
             className: C.button,
             innerClassName: C.buttonInner,
-            onClick: () => h(v.length),
+            onClick: () => h(N.length),
             size: i.zxk.Sizes.MEDIUM,
             look: i.zxk.Looks.OUTLINED,
             grow: !1,
@@ -179,7 +179,7 @@ function Z(e) {
                 innerClassName: C.buttonInner,
                 onMouseEnter: t,
                 onMouseLeave: n,
-                onClick: () => s ? j() : p(v.length),
+                onClick: () => s ? j() : p(N.length),
                 disabled: b,
                 size: i.zxk.Sizes.MEDIUM,
                 look: i.zxk.Looks.FILLED,
@@ -219,7 +219,7 @@ function y(e) {
     gotoPrevPrompt: m,
     gotoNextPrompt: h,
     completeOnboarding: p
-  } = e, N = (0, o.Wu)([x.Z], () => x.Z.getOnboardingResponsesForPrompt(n.id, c.id)), v = 0 === N.length && (null == c ? void 0 : c.required), b = null == c ? void 0 : c.options.filter(e => N.includes(e.id)), O = (0, f.L6)(b), E = (0, f.dX)(b), I = 0 === N.length, {
+  } = e, v = (0, o.Wu)([x.Z], () => x.Z.getOnboardingResponsesForPrompt(n.id, c.id)), N = 0 === v.length && (null == c ? void 0 : c.required), b = null == c ? void 0 : c.options.filter(e => v.includes(e.id)), O = (0, f.L6)(b), E = (0, f.dX)(b), k = 0 === v.length, {
     helpText: Z,
     helpTextAdditional: y
   } = (0, g.Z)({
@@ -227,7 +227,7 @@ function y(e) {
     prompt: c,
     selectedRoleIds: O,
     selectedChannelIds: E,
-    itemHook: k
+    itemHook: I
   });
   return (0, r.jsx)("div", {
     className: C.prompt,
@@ -267,7 +267,7 @@ function y(e) {
             guildId: n.id,
             option: e,
             onSelect: t => d(c.id, e.id, null != t && t),
-            selected: N.includes(e.id)
+            selected: v.includes(e.id)
           }, e.id))
         })]
       }), (0, r.jsxs)("div", {
@@ -277,7 +277,7 @@ function y(e) {
           children: l > 0 && (0, r.jsxs)(i.zxk, {
             className: C.button,
             innerClassName: C.buttonInner,
-            onClick: () => m(N.length),
+            onClick: () => m(v.length),
             size: i.zxk.Sizes.MEDIUM,
             look: i.zxk.Looks.OUTLINED,
             grow: !1,
@@ -295,7 +295,7 @@ function y(e) {
             color: "text-muted",
             children: [Z, " ", y]
           }), (0, r.jsx)(i.ua7, {
-            text: v ? _.NW.string(_.t.dA1dSU) : null,
+            text: N ? _.NW.string(_.t.dA1dSU) : null,
             children: e => {
               let {
                 onMouseEnter: t,
@@ -306,12 +306,12 @@ function y(e) {
                 innerClassName: C.buttonInner,
                 onMouseEnter: t,
                 onMouseLeave: n,
-                onClick: () => s ? p() : h(N.length),
-                disabled: v,
+                onClick: () => s ? p() : h(v.length),
+                disabled: N,
                 size: i.zxk.Sizes.MEDIUM,
                 look: i.zxk.Looks.FILLED,
                 grow: !1,
-                color: I ? i.zxk.Colors.PRIMARY : i.zxk.Colors.BRAND,
+                color: k ? i.zxk.Colors.PRIMARY : i.zxk.Colors.BRAND,
                 children: s ? (0, r.jsxs)(r.Fragment, {
                   children: [_.NW.string(_.t["8SuVoK"]), (0, r.jsx)("span", {
                     className: C.finishEmoji,
@@ -320,7 +320,7 @@ function y(e) {
                     children: "\uD83C\uDF89"
                   })]
                 }) : (0, r.jsxs)(r.Fragment, {
-                  children: [I ? _.NW.string(_.t["5WxrcX"]) : _.NW.string(_.t.PDTjLC), (0, r.jsx)(u.Z, {
+                  children: [k ? _.NW.string(_.t["5WxrcX"]) : _.NW.string(_.t.PDTjLC), (0, r.jsx)(u.Z, {
                     className: C.arrow,
                     direction: u.Z.Directions.RIGHT
                   })]
@@ -349,7 +349,7 @@ function P(e) {
     t.hasFeature(b.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && !t.hasFeature(b.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && a.ZP.fetchVerificationForm(t.id)
   }, [t]);
   let j = n[i],
-    N = i + 1 >= n.length && !I(t, g),
+    v = i + 1 >= n.length && !k(t, g),
     _ = n[0].required;
   l.useEffect(() => {
     !f && m.default.track(b.rMx.GUILD_ONBOARDING_STEP_VIEWED, E(O({}, (0, s.hH)(t.id)), {
@@ -368,9 +368,9 @@ function P(e) {
       })), i < n.length - 1 && m.default.track(b.rMx.GUILD_ONBOARDING_STEP_VIEWED, E(O({}, (0, s.hH)(t.id)), {
         step: i,
         required: n[i + 1].required
-      }))), i + 1 < n.length ? p(i + 1) : I(t, g) && p("rules")
+      }))), i + 1 < n.length ? p(i + 1) : k(t, g) && p("rules")
     },
-    k = e => {
+    I = e => {
       !f && (m.default.track(b.rMx.GUILD_ONBOARDING_STEP_COMPLETED, E(O({}, (0, s.hH)(t.id)), {
         step: i,
         skipped: !1,
@@ -385,29 +385,29 @@ function P(e) {
     };
   if (null == j) return null;
   switch (j.type) {
-    case v.FN.MULTIPLE_CHOICE:
+    case N.FN.MULTIPLE_CHOICE:
       return (0, r.jsx)(y, {
         guild: t,
         headerId: x,
         step: i,
         questionCount: n.length,
         currentPrompt: j,
-        lastPrompt: N,
+        lastPrompt: v,
         selectOption: d,
-        gotoPrevPrompt: k,
+        gotoPrevPrompt: I,
         gotoNextPrompt: C,
         completeOnboarding: u
       });
-    case v.FN.DROPDOWN:
+    case N.FN.DROPDOWN:
       return (0, r.jsx)(Z, {
         guild: t,
         headerId: x,
         step: i,
         questionCount: n.length,
         currentPrompt: j,
-        lastPrompt: N,
+        lastPrompt: v,
         selectOption: d,
-        gotoPrevPrompt: k,
+        gotoPrevPrompt: I,
         gotoNextPrompt: C,
         completeOnboarding: u
       });

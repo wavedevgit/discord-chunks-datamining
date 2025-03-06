@@ -1,85 +1,85 @@
 /** Chunk was on 11212 **/
 "use strict";
-c.d(e, {
+a.d(e, {
   Z: () => g
 });
-var d = c(200651);
-c(192379);
-var a = c(120356),
-  s = c.n(a),
-  n = c(381338),
-  o = c(442837),
-  f = c(481060),
-  p = c(206295),
-  i = c(594174),
-  r = c(5192),
-  b = c(528567),
-  u = c(371583),
-  l = c(388032),
-  m = c(972631);
+var c = a(200651);
+a(192379);
+var d = a(120356),
+  s = a.n(d),
+  n = a(381338),
+  f = a(442837),
+  i = a(481060),
+  o = a(206295),
+  p = a(594174),
+  r = a(5192),
+  l = a(528567),
+  b = a(371583),
+  u = a(388032),
+  m = a(972631);
 
 function g(t) {
-  var e, c, a, g;
+  var e, a, d, g;
   let {
     guildId: j,
     leaderboard: h,
-    className: _
-  } = t, v = null == h ? void 0 : null === (e = h.users) || void 0 === e ? void 0 : e[0], {
-    sort_by_statistic_id: x
-  } = h.guild_settings, O = null !== (g = null == v ? void 0 : null === (a = v.statistics) || void 0 === a ? void 0 : null === (c = a[x]) || void 0 === c ? void 0 : c.value) && void 0 !== g ? g : 0, y = l.NW.formatToPlainString(l.t.yhdo8v, {
-    value: O,
-    statisticName: (0, b.C)(x)
-  }), N = (0, u.j)(h), {
-    primaryColor: S,
-    secondaryColor: Z
-  } = (0, p.Z)("".concat(N, "?forColors")), P = (0, o.e7)([i.default], () => i.default.getUser(null == v ? void 0 : v.user_id));
-  if (null == P) return null;
-  let E = r.ZP.getName(j, void 0, P);
-  return (0, d.jsxs)("div", {
-    className: s()(m.container, _),
+    className: y
+  } = t, _ = null == h ? void 0 : null === (e = h.users) || void 0 === e ? void 0 : e[0], {
+    sort_by_statistic_id: B
+  } = h.guild_settings, v = null !== (g = null == _ ? void 0 : null === (d = _.statistics) || void 0 === d ? void 0 : null === (a = d[B]) || void 0 === a ? void 0 : a.value) && void 0 !== g ? g : 0, x = u.NW.formatToPlainString(u.t.yhdo8v, {
+    value: v,
+    statisticName: (0, l.C)(B)
+  }), O = (0, b.j)(h), {
+    primaryColor: N,
+    secondaryColor: S
+  } = (0, o.Z)("".concat(O, "?forColors")), Z = (0, f.e7)([p.default], () => p.default.getUser(null == _ ? void 0 : _.user_id));
+  if (null == Z) return null;
+  let P = r.ZP.getName(j, void 0, Z);
+  return (0, c.jsxs)("div", {
+    className: s()(m.container, y),
     style: {
-      backgroundImage: "linear-gradient(90deg, ".concat(Z, " 0%, ").concat(S, " 100%)")
+      backgroundImage: "linear-gradient(90deg, ".concat(S, " 0%, ").concat(N, " 100%)")
     },
-    children: [(0, d.jsx)(f.Text, {
+    children: [(0, c.jsx)(i.Text, {
       variant: "text-xs/medium",
       className: m.title,
       children: function(t) {
         switch (t) {
           case n.q.DAILY:
-            return l.NW.string(l.t.UfbhDA);
+            return u.NW.string(u.t.UfbhDA);
           case n.q.WEEKLY:
-            return l.NW.string(l.t["9x5Nam"]);
+            return u.NW.string(u.t["9x5Nam"]);
           case n.q.MONTHLY:
-            return l.NW.string(l.t.xB2Co6);
+            return u.NW.string(u.t.xB2Co6);
           default:
-            return l.NW.string(l.t["4N67JS"])
+            return u.NW.string(u.t["4N67JS"])
         }
       }(h.settings.interval_type)
-    }), (0, d.jsx)(f.qEK, {
-      src: P.getAvatarURL(j, 16),
-      size: f.EFr.SIZE_16,
+    }), (0, c.jsx)(i.qEK, {
+      src: Z.getAvatarURL(j, 16),
+      size: i.EFr.SIZE_16,
       "aria-label": "avatar"
-    }), (0, d.jsx)(f.LZC, {
+    }), (0, c.jsx)(i.LZC, {
       size: 6,
       horizontal: !0
-    }), (0, d.jsxs)("div", {
+    }), (0, c.jsxs)("div", {
       className: m.textContainer,
-      children: [(0, d.jsx)(f.Text, {
+      children: [(0, c.jsx)(i.Text, {
         className: m.username,
         variant: "text-xs/semibold",
         color: "header-primary",
-        children: E
-      }), (0, d.jsx)(f.Text, {
+        children: P
+      }), (0, c.jsx)(i.Text, {
         className: m.statsText,
         variant: "text-xxs/medium",
         color: "text-secondary",
-        children: y
+        children: x
       })]
-    }), null != N && (0, d.jsx)("div", {
+    }), null != O && (0, c.jsx)("div", {
       className: m.heroArtContainer,
-      children: (0, d.jsx)("img", {
+      children: (0, c.jsx)("img", {
         className: m.heroArt,
-        src: N,
+        src: O,
         alt: ""
       })
     })]

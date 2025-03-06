@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => x
+  Z: () => N
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -12,12 +12,12 @@ var r = n(200651),
   d = n(481060),
   u = n(699682),
   m = n(44315),
-  g = n(654904),
-  p = n(981631),
+  p = n(654904),
+  g = n(981631),
   h = n(388032),
   f = n(161064);
 
-function b(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function b(e) {
   return e
 }
 
-function N(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,26 +49,26 @@ function N(e, t) {
   }), e
 }
 
-function x(e) {
+function N(e) {
   let {
     onChange: t,
     onClose: n,
     color: s,
-    suggestedColors: x,
+    suggestedColors: N,
     disabled: _,
     label: E,
     colorPickerMiddle: j,
     colorPickerFooter: C,
     showEyeDropper: O
-  } = e, v = i.useRef(null), S = (0, d.dQu)(c.Z.colors.BACKGROUND_PRIMARY).hex(), T = c.Z.colors.BACKGROUND_ACCENT.css, I = (0, g.DP)(s), y = (0, o.Rf)(s), A = y === S ? T : y, P = (0, m.Lq)(I ? p.Ilk.WHITE_500 : p.Ilk.PRIMARY_530), R = (0, u.Z)(j), D = (0, u.Z)(C), [Z, w] = i.useState((0, l.Z)());
+  } = e, v = i.useRef(null), S = (0, d.dQu)(c.Z.colors.BACKGROUND_PRIMARY).hex(), T = c.Z.colors.BACKGROUND_ACCENT.css, I = (0, p.DP)(s), y = (0, o.Rf)(s), A = y === S ? T : y, P = (0, m.Lq)(I ? g.Ilk.WHITE_500 : g.Ilk.PRIMARY_530), R = (0, u.Z)(j), D = (0, u.Z)(C), [Z, w] = i.useState((0, l.Z)());
   return i.useEffect(() => {
     (R !== j || D !== C) && w((0, l.Z)())
   }, [C, j, D, R]), (0, r.jsx)(d.yRy, {
     positionKey: Z,
-    renderPopout: e => (0, r.jsx)(d.Z$W, N(b({}, e), {
+    renderPopout: e => (0, r.jsx)(d.Z$W, b(x({}, e), {
       value: s,
       onChange: t,
-      suggestedColors: x,
+      suggestedColors: N,
       middle: j,
       footer: C,
       showEyeDropper: O
@@ -97,9 +97,9 @@ function x(e) {
         className: a()(f.colorSwatch, {
           [f.disabled]: _
         }),
-        children: [(0, r.jsx)(d.P3F, N(b({}, n), {
+        children: [(0, r.jsx)(d.P3F, b(x({}, n), {
           tabIndex: _ ? -1 : 0,
-          onClick: _ ? p.dG4 : t,
+          onClick: _ ? g.dG4 : t,
           style: {
             backgroundColor: y,
             borderColor: A

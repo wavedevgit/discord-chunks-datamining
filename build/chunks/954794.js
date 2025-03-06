@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => h
 }), n(230036);
@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(882029),
   u = n(955204),
   m = n(248998),
-  g = n(388032),
-  p = n(23760);
+  p = n(388032),
+  g = n(23760);
 
 function h(e) {
   let {
@@ -23,31 +23,31 @@ function h(e) {
     children: [(0, r.jsx)(l.hjN, {
       children: (0, r.jsxs)(l.P3F, {
         onClick: t,
-        className: p.backContainer,
+        className: g.backContainer,
         children: [(0, r.jsx)(o.Z, {
           direction: o.Z.Directions.LEFT,
-          className: p.icon
+          className: g.icon
         }), (0, r.jsx)(l.Text, {
           variant: "text-lg/normal",
           color: "text-normal",
-          children: g.NW.string(g.t["13/7kZ"])
+          children: p.NW.string(p.t["13/7kZ"])
         })]
       })
     }), (0, r.jsxs)("div", {
-      className: p.headerContainer,
+      className: g.headerContainer,
       children: [(0, r.jsxs)("div", {
-        className: p.headerTextContainer,
+        className: g.headerTextContainer,
         children: [(0, r.jsx)(l.X6q, {
           variant: "heading-lg/extrabold",
           color: "header-primary",
-          children: g.NW.string(g.t["6jI0hY"])
+          children: p.NW.string(p.t["6jI0hY"])
         }), (0, r.jsx)(l.Text, {
           variant: "text-md/normal",
           color: "header-secondary",
-          children: g.NW.string(g.t.GuUItb)
+          children: p.NW.string(p.t.GuUItb)
         })]
       }), (0, r.jsx)("div", {
-        className: p.headerIcon,
+        className: g.headerIcon,
         children: (0, r.jsx)(l.rm8, {
           size: "custom",
           color: a.Z.unsafe_rawColors.ORANGE_345.css,
@@ -56,9 +56,9 @@ function h(e) {
         })
       })]
     }), h.length > 0 && (0, r.jsx)(l.hjN, {
-      className: p.divider,
+      className: g.divider,
       children: (0, r.jsx)("div", {
-        className: p.achievementGrid,
+        className: g.achievementGrid,
         children: h.map(e => {
           let {
             achievementId: t,
@@ -71,24 +71,24 @@ function h(e) {
         })
       })
     }), f.length > 0 && (0, r.jsxs)(l.hjN, {
-      className: p.divider,
+      className: g.divider,
       children: [(0, r.jsx)("div", {
-        className: p.headerTextContainer,
+        className: g.headerTextContainer,
         children: (0, r.jsx)(l.Text, {
           variant: "text-md/bold",
           color: "header-secondary",
-          children: g.NW.string(g.t.GFyMg4)
+          children: p.NW.string(p.t.GFyMg4)
         })
       }), (0, r.jsx)("div", {
-        className: p.achievementGrid,
+        className: g.achievementGrid,
         children: f.map(e => (0, r.jsx)(m.Z, {
           achievementId: e.id
         }, e.id))
       })]
     }), (0, r.jsx)(l.hjN, {
-      className: p.divider,
+      className: g.divider,
       children: (0, r.jsx)("div", {
-        className: p.bottomPadding
+        className: g.bottomPadding
       })
     })]
   })

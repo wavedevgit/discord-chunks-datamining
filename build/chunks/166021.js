@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => u
 }), n(47120);
@@ -15,7 +15,7 @@ let u = e => {
     cards: t,
     className: n,
     cardType: s
-  } = e, u = () => window.innerWidth < 910 ? 1 : window.innerWidth < 1400 ? 2 : 3, [m, g] = i.useState(0), [p, h] = i.useState(u()), f = t.length;
+  } = e, u = () => window.innerWidth < 910 ? 1 : window.innerWidth < 1400 ? 2 : 3, [m, p] = i.useState(0), [g, h] = i.useState(u()), f = t.length;
   i.useEffect(() => {
     let e = () => {
       h(u())
@@ -24,26 +24,26 @@ let u = e => {
       window.removeEventListener("resize", e)
     }
   }, []), i.useEffect(() => {
-    g(e => f > p && e > f - p ? f - p : f <= p ? 0 : e)
-  }, [f, p]);
-  let b = m > 0,
-    N = i.useCallback(e => ({
+    p(e => f > g && e > f - g ? f - g : f <= g ? 0 : e)
+  }, [f, g]);
+  let x = m > 0,
+    b = i.useCallback(e => ({
       x: (e - m) * 100
     }), [m]),
-    [x, _] = (0, o.bYB)(t.length, N);
+    [N, _] = (0, o.bYB)(t.length, b);
   return i.useEffect(() => {
-    _(N)
-  }, [_, N]), (0, r.jsx)("div", {
+    _(b)
+  }, [_, b]), (0, r.jsx)("div", {
     className: n,
     children: (0, r.jsxs)("div", {
       className: d.cardContainer,
-      children: [f > p && (0, r.jsx)(o.P3F, {
-        onClick: b ? () => {
-          g(e => 0 === e ? f - p : e - 1)
+      children: [f > g && (0, r.jsx)(o.P3F, {
+        onClick: x ? () => {
+          p(e => 0 === e ? f - g : e - 1)
         } : void 0,
         className: a()({
-          [d.leftArrow]: b,
-          [d.inactiveArrow]: !b
+          [d.leftArrow]: x,
+          [d.inactiveArrow]: !x
         }),
         children: (0, r.jsx)(o.whL, {
           className: d.arrowIcon,
@@ -51,7 +51,7 @@ let u = e => {
         })
       }), (0, r.jsx)("div", {
         className: d.cardInnerContainer,
-        children: x.map((e, n) => {
+        children: N.map((e, n) => {
           var i, a;
           let {
             x: o
@@ -92,19 +92,19 @@ let u = e => {
             }), i), "".concat(t[n].name, "_").concat(n, "_perks_card"))
           }, "".concat(t[n].name, "_").concat(n, "_animated_div"))
         })
-      }), f > p && (0, r.jsx)(o.P3F, {
+      }), f > g && (0, r.jsx)(o.P3F, {
         onClick: () => {
-          g(e => e >= f - p ? 0 : e + 1)
+          p(e => e >= f - g ? 0 : e + 1)
         },
         className: d.rightArrow,
         children: (0, r.jsx)(o.ZSh, {
           className: d.arrowIcon,
           colorClass: d.arrowIcon
         })
-      }), f > p && (0, r.jsx)("div", {
+      }), f > g && (0, r.jsx)("div", {
         className: d.cardProgressBar,
         children: t.map((e, t) => {
-          if (!(t > f - p)) return (0, r.jsx)("div", {
+          if (!(t > f - g)) return (0, r.jsx)("div", {
             className: t === m ? d.selectedDot : d.dot
           }, "progress_bar_dot_".concat(t))
         })

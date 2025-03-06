@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => T
 });
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(362948),
   u = n(695349),
   m = n(899667),
-  g = n(165630),
-  p = n(771845),
+  p = n(165630),
+  g = n(771845),
   h = n(594174),
   f = n(314884),
-  b = n(74538),
-  N = n(199778),
-  x = n(296533),
+  x = n(74538),
+  b = n(199778),
+  N = n(296533),
   _ = n(901750),
   E = n(112863),
   j = n(701157),
@@ -30,7 +30,7 @@ var r = n(200651),
 function T(e) {
   let {
     premiumSubscription: t
-  } = e, n = (0, s.e7)([f.Z], () => f.Z.boostSlots), T = i.useMemo(() => Object.values(n), [n]), I = (0, s.e7)([h.default], () => h.default.getCurrentUser()), y = b.ZP.isPremium(I, v.p9.TIER_2), A = (0, s.e7)([g.Z], () => g.Z.affinities), P = (0, s.e7)([p.ZP], () => p.ZP.getFlattenedGuildIds()), R = A.length > 0 || P.length > 0, D = T.length > 0, Z = i.useMemo(() => T.filter(e => null != e.premiumGuildSubscription), [T]), w = Z.length > 0, k = T.length > Z.length, W = (0, s.e7)([m.Z], () => m.Z.getCurrentUserAppliedBoosts()), {
+  } = e, n = (0, s.e7)([f.Z], () => f.Z.boostSlots), T = i.useMemo(() => Object.values(n), [n]), I = (0, s.e7)([h.default], () => h.default.getCurrentUser()), y = x.ZP.isPremium(I, v.p9.TIER_2), A = (0, s.e7)([p.Z], () => p.Z.affinities), P = (0, s.e7)([g.ZP], () => g.ZP.getFlattenedGuildIds()), R = A.length > 0 || P.length > 0, D = T.length > 0, Z = i.useMemo(() => T.filter(e => null != e.premiumGuildSubscription), [T]), w = Z.length > 0, k = T.length > Z.length, W = (0, s.e7)([m.Z], () => m.Z.getCurrentUserAppliedBoosts()), {
     fractionalState: L
   } = (0, a.Z)({
     forceFetch: !0
@@ -48,15 +48,15 @@ function T(e) {
       hasBoostPerk: V,
       hasGuildAffinitiesOrInGuild: R,
       subscriptionIsPausedOrPausePending: M
-    }), (0, r.jsx)(N.Z, {
+    }), (0, r.jsx)(b.Z, {
       hide: k,
       containerClassName: S.FPContainer,
       pillClassName: S.FPPill,
       isInReverseTrial: B
-    }), !R && (0, r.jsx)(E.Z, {}), (null == t ? void 0 : t.isPaused) && L === v.a$.NONE ? (0, r.jsx)(x.r, {
+    }), !R && (0, r.jsx)(E.Z, {}), (null == t ? void 0 : t.isPaused) && L === v.a$.NONE ? (0, r.jsx)(N.r, {
       appliedGuildBoosts: W,
       premiumSubscription: t
-    }) : (0, r.jsx)(x.Z, {
+    }) : (0, r.jsx)(N.Z, {
       guildBoostSlots: n,
       premiumSubscription: t
     }), (0, r.jsx)(O.Z, {

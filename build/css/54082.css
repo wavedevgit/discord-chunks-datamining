@@ -1,6 +1,6 @@
 /**
   Module ID: 54082
-  Original File Name: 5c52b763b041863d
+  Original File Name: 813b8736244ccef1
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -2818,6 +2818,18 @@ strong {
     animation: pulse-animation__6b38f 2s 1s infinite
 }
 
+:where(.visual-refresh) .container__6b38f:not(.pulse__6b38f) {
+    background-color: var(--opacity-black-52)
+}
+
+:where(.visual-refresh) .container__6b38f:not(.pulse__6b38f):hover {
+    background-color: var(--opacity-black-64)
+}
+
+:where(.visual-refresh) .container__6b38f:not(.pulse__6b38f):active {
+    background-color: var(--opacity-black-48)
+}
+
 @keyframes pulse-animation__6b38f {
     70% {
         box-shadow: 0 0 0 20px hsl(var(--green-360-hsl)/0)
@@ -3161,39 +3173,6 @@ strong {
     height: 1px;
     width: 100%;
     background-color: var(--background-modifier-accent)
-}
-
-.freeWrapper__9fa5a {
-    width: 560px;
-    display: grid;
-    grid-gap: 8px;
-    grid-template-columns: 345px 1fr;
-    padding: 12px;
-    background-color: var(--background-tertiary);
-    margin-top: 8px;
-    border-radius: 8px
-}
-
-.freeLeft__9fa5a {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin: 16px 0;
-    justify-content: center
-}
-
-.freeRight__9fa5a {
-    width: 212px;
-    height: auto
-}
-
-.freeButtonLink__9fa5a {
-    max-width: -moz-fit-content;
-    max-width: fit-content
-}
-
-.freeLeftTitle__9fa5a {
-    text-transform: uppercase
 }
 
 .clickableBanner__9fa5a {
@@ -3904,6 +3883,14 @@ input[type=checked]:focus-visible+.label_df4aaf {
     }
 }
 
+.pulseGradient__11664 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
 .container__5aa3a {
     width: 100%;
     flex-direction: column
@@ -3959,6 +3946,13 @@ input[type=checked]:focus-visible+.label_df4aaf {
     border-radius: 20px;
     margin: var(--space-24);
     justify-content: center
+}
+
+:where(.visual-refresh) .withRive__5aa3a {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border-radius: 0
 }
 
 :where(.visual-refresh) .tiles__5aa3a {
@@ -13919,6 +13913,13 @@ div.profileThemedContainer__656be {
     border-radius: 20px;
     margin: 24px;
     justify-content: center
+}
+
+:where(.visual-refresh) .withRive__0b34e {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border-radius: 0
 }
 
 :where(.visual-refresh) .continueIcon__0b34e {

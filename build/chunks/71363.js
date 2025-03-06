@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => S
 }), n(47120);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(607070),
   u = n(100527),
   m = n(906732),
-  g = n(975298),
-  p = n(410154),
+  p = n(975298),
+  g = n(410154),
   h = n(626135),
   f = n(695349),
-  b = n(103433),
-  N = n(166021),
-  x = n(32173),
+  x = n(103433),
+  b = n(166021),
+  N = n(32173),
   _ = n(391110),
   E = n(75077),
   j = n(981631),
@@ -33,7 +33,7 @@ let S = e => {
       isFullScreen: I
     } = e,
     y = i.useRef(null),
-    A = Object.entries((0, x.Z)()).reduce((e, t) => {
+    A = Object.entries((0, N.Z)()).reduce((e, t) => {
       let [n, r] = t;
       return !1 !== r.canReveal && "upcomingDropUntimed" !== r.name && (e[n] = r), e
     }, {}),
@@ -41,12 +41,12 @@ let S = e => {
       analyticsLocations: P
     } = (0, m.ZP)(u.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
     [R, D] = i.useState(!1),
-    Z = (0, p.ZP)("perks-discoverability"),
+    Z = (0, g.ZP)("perks-discoverability"),
     w = (0, l.e7)([d.Z], () => d.Z.useReducedMotion),
     k = (0, E.mN)(),
     {
       fractionalState: W
-    } = (0, g.Z)(),
+    } = (0, p.Z)(),
     L = (0, f.W)();
   return k ? (t = C.NW.string(C.t["+vt7w8"]), n = C.NW.string(C.t.LgHbnJ)) : (t = C.NW.string(C.t.LgHbnJ), n = C.NW.string(C.t["+vt7w8"])), (0, r.jsx)(c.yWw, {
     className: a()(O.allPerksScroller, {
@@ -58,7 +58,7 @@ let S = e => {
       className: O.container,
       children: (0, r.jsxs)(m.Gt, {
         value: P,
-        children: [(0, r.jsx)(b.Z, {
+        children: [(0, r.jsx)(x.Z, {
           className: O.heroHeading,
           onBackClick: () => {
             S(!1), h.default.track(j.rMx.NITRO_HOME_NAVIGATION, {
@@ -74,7 +74,7 @@ let S = e => {
             color: "header-primary",
             className: O.heading,
             children: t
-          }), (0, r.jsx)(N.Z, {
+          }), (0, r.jsx)(b.Z, {
             className: O.cardCarousel,
             cards: (0, E.sP)({
               perksCards: A,
@@ -91,7 +91,7 @@ let S = e => {
             color: "header-primary",
             className: O.heading,
             children: n
-          }), (0, r.jsx)(N.Z, {
+          }), (0, r.jsx)(b.Z, {
             className: O.cardCarousel,
             cards: (0, E.sP)({
               perksCards: A,
@@ -108,7 +108,7 @@ let S = e => {
             color: "header-primary",
             className: O.heading,
             children: C.NW.string(C.t.LTaxu7)
-          }), (0, r.jsx)(N.Z, {
+          }), (0, r.jsx)(b.Z, {
             className: O.cardCarousel,
             cards: (0, E.sP)({
               perksCards: A,

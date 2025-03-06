@@ -1,22 +1,24 @@
 /** Chunk was on 57951 **/
 n.d(t, {
-  ActivityAgeGateModal: () => a
+  ActivityAgeGateModal: () => l
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(986035),
+  o = n(480916),
+  c = n(986035),
   s = n(388032),
-  c = n(831022);
+  a = n(831022);
 
-function a(e) {
+function l(e) {
   var t, n, {
-      application: a,
-      onAgree: l,
-      onClose: u,
-      onDisagree: p
+      application: l,
+      onAgree: u,
+      onClose: g,
+      onDisagree: p,
+      channelId: f
     } = e,
-    g = function(e, t) {
+    d = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -30,7 +32,7 @@ function a(e) {
         for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(e, ["application", "onAgree", "onClose", "onDisagree"]);
+    }(e, ["application", "onAgree", "onClose", "onDisagree", "channelId"]);
   return (0, r.jsx)(i.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -48,22 +50,24 @@ function a(e) {
       })
     }
     return e
-  }({}, g), n = n = {
+  }({}, d), n = n = {
     children: (0, r.jsx)("div", {
-      children: (0, r.jsx)(o.Z, {
+      children: (0, r.jsx)(c.Z, {
+        modalType: o.it.NSFW_EMBEDDED_ACTIVITY,
+        channelId: f,
         onAgree: () => {
-          l(), u()
+          u(), g()
         },
         onDisagree: () => {
-          p(), u()
+          p(), g()
         },
         title: s.NW.string(s.t.SSDPOD),
         description: s.NW.formatToPlainString(s.t.OgmIq6, {
-          applicationName: a.name
+          applicationName: l.name
         }),
         agreement: s.NW.string(s.t.wVq7ur),
         disagreement: s.NW.string(s.t.hg1uxs),
-        imageClassName: c.image
+        imageClassName: a.image
       })
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

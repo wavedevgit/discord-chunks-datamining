@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   default: () => f
 });
@@ -13,8 +13,8 @@ var i = n(120356),
   d = n(409813),
   u = n(3409),
   m = n(388032),
-  g = n(795529),
-  p = n(612064);
+  p = n(795529),
+  g = n(612064);
 
 function h(e) {
   let {
@@ -25,8 +25,8 @@ function h(e) {
     toastContent: c,
     initialStep: h = d.h8.PAYMENT_TYPE,
     overwriteSubscriptionPaymentSource: f = !1
-  } = e, b = (0, u.fL)(), N = (0, u.vP)({
-    paymentModalArgs: b,
+  } = e, x = (0, u.fL)(), b = (0, u.vP)({
+    paymentModalArgs: x,
     initialStep: h,
     prependSteps: [],
     appendSteps: [],
@@ -38,7 +38,7 @@ function h(e) {
     },
     onStepChange: () => {},
     header: (0, r.jsxs)("div", {
-      className: s()(g.modalTitle, p.flex, p.justifyBetween, p.alignCenter),
+      className: s()(p.modalTitle, g.flex, g.justifyBetween, g.alignCenter),
       children: [(0, r.jsx)(o.vwX, {
         tag: o.RB0.H4,
         children: m.NW.string(m.t.eQ2bLi)
@@ -54,14 +54,14 @@ function h(e) {
   return (0, r.jsx)(o.Y0X, {
     transitionState: t,
     size: o.CgR.SMALL,
-    className: g.modal,
+    className: p.modal,
     "aria-label": m.NW.string(m.t.eQ2bLi),
     children: (0, r.jsx)("form", {
-      className: g.form,
+      className: p.form,
       onSubmit: function(e) {
         e.preventDefault()
       },
-      children: N
+      children: b
     })
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => j
 }), n(47120);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(153867),
   u = n(425493),
   m = n(918222),
-  g = n(607070),
-  p = n(304761),
+  p = n(607070),
+  g = n(304761),
   h = n(865427),
   f = n(358085),
-  b = n(210887),
-  N = n(981631),
-  x = n(388032),
+  x = n(210887),
+  b = n(981631),
+  N = n(388032),
   _ = n(658570);
 let E = [{
   label: "Latin alphabet",
@@ -47,9 +47,9 @@ function j() {
   let [e, t] = i.useState(Math.round(window.outerWidth / window.innerWidth * 100)), {
     platformZoom: n,
     theme: s
-  } = (0, l.cj)([b.Z, g.Z], () => ({
-    theme: b.Z.theme,
-    platformZoom: g.Z.zoom
+  } = (0, l.cj)([x.Z, p.Z], () => ({
+    theme: x.Z.theme,
+    platformZoom: p.Z.zoom
   })), [j, C] = i.useState("upright"), O = ["normal", "medium", "semibold", "bold", "extrabold"], v = new Map([
     ["normal", 400],
     ["medium", 500],
@@ -63,9 +63,9 @@ function j() {
     })
   }, []);
   let S = f.isPlatformEmbedded ? n : e,
-    T = (0, l.e7)([p.C], () => {
+    T = (0, l.e7)([g.C], () => {
       var e, t;
-      return (0, h.fD)() ? null === (t = p.C.getCurrentBuildOverride()) || void 0 === t ? void 0 : null === (e = t.overrides) || void 0 === e ? void 0 : e.discord_web : null
+      return (0, h.fD)() ? null === (t = g.C.getCurrentBuildOverride()) || void 0 === t ? void 0 : null === (e = t.overrides) || void 0 === e ? void 0 : e.discord_web : null
     }),
     [I, y] = (0, m.R)("playground-overrideText", null),
     [A, P] = (0, m.R)("playground-defaultText", E[0].value),
@@ -128,11 +128,11 @@ function j() {
             className: _.theme,
             orientation: "horizontal",
             options: [{
-              name: x.NW.string(x.t.b8Cei4),
-              value: N.BRd.DARK
+              name: N.NW.string(N.t.b8Cei4),
+              value: b.BRd.DARK
             }, {
-              name: x.NW.string(x.t.K2sFfn),
-              value: N.BRd.LIGHT
+              name: N.NW.string(N.t.K2sFfn),
+              value: b.BRd.LIGHT
             }],
             onChange: e => {
               (0, d.ZI)({

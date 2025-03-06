@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => C
+  Z: () => O
 }), n(47120), n(301563), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(773603);
 var r = n(200651),
   i = n(192379),
@@ -12,61 +12,61 @@ var r = n(200651),
   u = n(481060),
   d = n(570140),
   h = n(893776),
-  g = n(314897),
-  p = n(626135),
-  f = n(70956),
+  p = n(314897),
+  g = n(626135),
+  _ = n(70956),
   m = n(970648),
-  _ = n(981631),
+  f = n(981631),
   b = n(388032),
-  N = n(130437);
-let x = "mweb_handoff_nonce",
+  x = n(130437);
+let N = "mweb_handoff_nonce",
   v = "mweb_handoff_nonce_expiration",
-  I = +f.Z.Millis.MINUTE,
+  I = +_.Z.Millis.MINUTE,
   E = new Set(["nonce_missing", "nonce_expired", "handoff_exchange"]),
-  j = new Set(["deep_link_failed"]),
-  O = () => {
-    c.K.remove(x), c.K.remove(v)
+  C = new Set(["deep_link_failed"]),
+  j = () => {
+    c.K.remove(N), c.K.remove(v)
   },
-  C = () => {
-    let e = (0, l.e7)([g.default], () => g.default.getFingerprint()),
+  O = () => {
+    let e = (0, l.e7)([p.default], () => p.default.getFingerprint()),
       {
         fingerprint: t,
         handoff_token: n
       } = (0, o.parse)(window.location.search),
-      f = Array.isArray(t) ? t.length > 1 ? t[0] : null : t,
-      C = null != f ? f : null !== e ? e : void 0;
+      _ = Array.isArray(t) ? t.length > 1 ? t[0] : null : t,
+      O = null != _ ? _ : null !== e ? e : void 0;
     i.useEffect(() => {
-      null !== f && e !== f && d.Z.dispatch({
+      null !== _ && e !== _ && d.Z.dispatch({
         type: "FINGERPRINT",
-        fingerprint: f
+        fingerprint: _
       })
-    }, [f, e]);
+    }, [_, e]);
     let [S, y] = i.useState(null), T = i.useCallback(e => {
-      y(e), p.default.track(_.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
+      y(e), g.default.track(f.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
         reason: e,
-        fingerprint: (0, a.K)(C)
+        fingerprint: (0, a.K)(O)
       }, {
-        fingerprint: C
+        fingerprint: O
       })
-    }, [y, C]), A = c.K.get(x);
-    if ("null" === n && null === S && T("deep_link_failed"), null != n && "null" !== n && null == A && null === S && T("nonce_missing"), i.useEffect(() => {
-        if (null != A) {
+    }, [y, O]), P = c.K.get(N);
+    if ("null" === n && null === S && T("deep_link_failed"), null != n && "null" !== n && null == P && null === S && T("nonce_missing"), i.useEffect(() => {
+        if (null != P) {
           let e = c.K.get(v);
-          (null == e || Date.now() >= e) && (T("nonce_expired"), O())
+          (null == e || Date.now() >= e) && (T("nonce_expired"), j())
         }
-      }, [A, T]), i.useEffect(() => {
-        null != n && "null" !== n && null != A && null == S && s.tn.post({
-          url: _.ANM.HANDOFF_EXCHANGE,
+      }, [P, T]), i.useEffect(() => {
+        null != n && "null" !== n && null != P && null == S && s.tn.post({
+          url: f.ANM.HANDOFF_EXCHANGE,
           body: {
-            key: A,
+            key: P,
             handoff_token: n
           },
           rejectWithError: !0
         }).then(e => h.Z.loginToken(e.body.token, !1)).then(() => {
-          p.default.track(_.rMx.LOGIN_SUCCESSFUL, {
-            source: _.uRl.MOBILE_WEB_HANDOFF,
+          g.default.track(f.rMx.LOGIN_SUCCESSFUL, {
+            source: f.uRl.MOBILE_WEB_HANDOFF,
             is_new_user: !1,
-            fingerprint: (0, a.K)(C)
+            fingerprint: (0, a.K)(O)
           });
           let e = new URL(window.location.href),
             t = new URLSearchParams(e.search);
@@ -74,44 +74,44 @@ let x = "mweb_handoff_nonce",
         }).catch(() => {
           T("handoff_exchange")
         }).finally(() => {
-          O()
+          j()
         })
-      }, [n, A, S, C, T]), null == C) return null;
-    let P = null == S ? (0, r.jsxs)(r.Fragment, {
+      }, [n, P, S, O, T]), null == O) return null;
+    let A = null == S ? (0, r.jsxs)(r.Fragment, {
       children: [b.NW.string(b.t.uJ1Jsb), (0, r.jsx)("br", {}), b.NW.string(b.t.GHVWAg)]
-    }) : j.has(S) ? b.NW.string(b.t.EPt55u) : E.has(S) ? b.NW.string(b.t.g87kTk) : void 0;
-    return null != S && j.has(S) ? (0, r.jsx)("div", {
-      className: N.errorContainer,
+    }) : C.has(S) ? b.NW.string(b.t.EPt55u) : E.has(S) ? b.NW.string(b.t.g87kTk) : void 0;
+    return null != S && C.has(S) ? (0, r.jsx)("div", {
+      className: x.errorContainer,
       children: (0, r.jsx)(u.Text, {
         color: "interactive-normal",
         variant: "text-sm/semibold",
-        children: P
+        children: A
       })
     }) : (0, r.jsxs)("div", {
-      className: N.container,
+      className: x.container,
       children: [(0, r.jsx)(u.Text, {
         variant: "text-sm/semibold",
-        children: P
+        children: A
       }), (0, r.jsx)(u.zxk, {
         color: u.zxk.Colors.BRAND_INVERTED,
         onClick: () => {
           let e = m.Z.generateNonce();
-          c.K.set(x, e), c.K.set(v, Date.now() + I);
-          let t = new URL(_.x0X),
+          c.K.set(N, e), c.K.set(v, Date.now() + I);
+          let t = new URL(f.x0X),
             n = new URLSearchParams(window.location.search);
           n.delete("fingerprint"), n.delete("handoff_token");
           let r = new URLSearchParams;
-          r.set("redirect", encodeURIComponent(window.location.pathname + n.toString())), r.set("key", e), r.set("fingerprint", C), t.search = r.toString(), p.default.track(_.rMx.DEEP_LINK_CLICKED, {
-            fingerprint: (0, a.K)(C),
+          r.set("redirect", encodeURIComponent(window.location.pathname + n.toString())), r.set("key", e), r.set("fingerprint", O), t.search = r.toString(), g.default.track(f.rMx.DEEP_LINK_CLICKED, {
+            fingerprint: (0, a.K)(O),
             source: "mobile_web_handoff",
-            destination: _.x0X
+            destination: f.x0X
           }, {
-            fingerprint: C,
+            fingerprint: O,
             flush: !0
           }), window.location.href = t.toString()
         },
         children: (0, r.jsx)(u.Text, {
-          className: N.buttonText,
+          className: x.buttonText,
           variant: "text-sm/semibold",
           children: b.NW.string(b.t["NcC75+"])
         })

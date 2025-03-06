@@ -6,7 +6,7 @@ n.d(t, {
 var r = n(15729),
   a = n(731965);
 
-function l(e) {
+function i(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -25,7 +25,7 @@ function l(e) {
   return e
 }
 
-function i(e, t) {
+function l(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,11 +66,11 @@ let c = (0, r.U)(e => ({
         let r = e.assets[t];
         null != r && URL.revokeObjectURL(r.src);
         let a = URL.createObjectURL(n),
-          o = l({}, e.assets);
+          o = i({}, e.assets);
         return o[t] = {
           name: n.name,
           src: a
-        }, i(l({}, e), {
+        }, l(i({}, e), {
           assets: o
         })
       })
@@ -89,17 +89,17 @@ let c = (0, r.U)(e => ({
             var n, r, a = function(e, t) {
               if (null == e) return {};
               var n, r, a = {},
-                l = Object.keys(e);
-              for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
+                i = Object.keys(e);
+              for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
               return a
             }(e, t);
             if (Object.getOwnPropertySymbols) {
-              var l = Object.getOwnPropertySymbols(e);
-              for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
+              var i = Object.getOwnPropertySymbols(e);
+              for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
             }
             return a
           }(r, [t].map(o));
-        return i(l({}, e), {
+        return l(i({}, e), {
           assets: s
         })
       })

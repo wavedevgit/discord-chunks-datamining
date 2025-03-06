@@ -3,8 +3,8 @@ let r;
 n.d(t, {
   Z: () => U
 }), n(47120), n(301563), n(177593), n(773603);
-var a, l = n(392711),
-  i = n.n(l),
+var a, i = n(392711),
+  l = n.n(i),
   o = n(525654),
   s = n.n(o),
   c = n(579806),
@@ -13,8 +13,8 @@ var a, l = n(392711),
   m = n(812483),
   h = n(460181),
   p = n(474873),
-  x = n(135906),
-  f = n(592125),
+  f = n(135906),
+  x = n(592125),
   b = n(292959),
   _ = n(699516),
   g = n(246946),
@@ -35,14 +35,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 let E = C.isPlatformEmbedded && (0, C.isWindows)(),
-  I = E && 10 > parseFloat(c.Z.os.release),
-  k = !0;
-if (E && !I) {
+  k = E && 10 > parseFloat(c.Z.os.release),
+  I = !0;
+if (E && !k) {
   let [e, , t] = c.Z.os.release.split(".");
-  k = parseInt(e) > 10 || parseInt(t) >= 15063
+  I = parseInt(e) > 10 || parseInt(t) >= 15063
 }
 let w = new u.Z("NotificationUtils"),
-  P = E && k || "Chrome" === s().name && 47 > parseFloat(s().version) || "Firefox" === s().name && 52 > parseFloat(s().version);
+  P = E && I || "Chrome" === s().name && 47 > parseFloat(s().version) || "Firefox" === s().name && 52 > parseFloat(s().version);
 async function Z() {
   if (void 0 === r) {
     if (null === c.Z || void 0 === c.Z ? void 0 : c.Z.features.supports("notifications")) try {
@@ -60,7 +60,7 @@ async function R() {
 
 function L(e, t) {
   var n;
-  return null !== (n = (0, x.Z)(null != t ? t : p.Z.getSoundpack())[e]) && void 0 !== n ? n : e
+  return null !== (n = (0, f.Z)(null != t ? t : p.Z.getSoundpack())[e]) && void 0 !== n ? n : e
 }
 async function A(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
@@ -74,7 +74,7 @@ async function A(e) {
     w.warn("Native notification sound failed with error: ", e)
   }(0, h.GN)(e, t, void 0, n)
 }
-let D = i().throttle(A, 1e3, {
+let D = l().throttle(A, 1e3, {
   leading: !0
 });
 
@@ -83,7 +83,7 @@ function B() {
 }
 E && (window.addEventListener("focus", B), N.ZP.on("MAIN_WINDOW_FOCUS", B));
 let M = window.Notification;
-if (I) {
+if (k) {
   let e = {};
   N.ZP.on("NOTIFICATION_CLICK", (t, n) => {
     let r = e[n];
@@ -113,9 +113,9 @@ if (null === c.Z || void 0 === c.Z ? void 0 : c.Z.features.supports("notificatio
   N.ZP.on("NOTIFICATIONS_RECEIVED_RESPONSE", (e, t, n) => {
     if ("dismiss" === t) delete z[n];
     else {
-      var r, a, l;
+      var r, a, i;
       let e = z[n];
-      (null == e ? void 0 : null === (r = e.options) || void 0 === r ? void 0 : r.omitClickTracking) || j.default.track(T.rMx.NOTIFICATION_CLICKED, null == e ? void 0 : e.trackingProps), null == e || null === (l = e.options) || void 0 === l || null === (a = l.onClick) || void 0 === a || a.call(l)
+      (null == e ? void 0 : null === (r = e.options) || void 0 === r ? void 0 : r.omitClickTracking) || j.default.track(T.rMx.NOTIFICATION_CLICKED, null == e ? void 0 : e.trackingProps), null == e || null === (i = e.options) || void 0 === i || null === (a = i.onClick) || void 0 === a || a.call(i)
     }
   }), N.ZP.invoke("NOTIFICATIONS_REMOVE_ALL_NOTIFICATIONS")
 } catch (e) {
@@ -157,21 +157,21 @@ let U = {
     })
   },
   showNotification: async function(e, t, n, r, a) {
-    var l, i, o, s;
+    var i, l, o, s;
     let c;
     if (await W(a)) {
-      null != a.sound && !1 !== a.playSoundIfDisabled && G(a.sound, null !== (l = a.volume) && void 0 !== l ? l : 1, a.soundpack);
+      null != a.sound && !1 !== a.playSoundIfDisabled && G(a.sound, null !== (i = a.volume) && void 0 !== i ? i : 1, a.soundpack);
       return
     }
-    let u = null !== (i = null == a ? void 0 : a.tag) && void 0 !== i ? i : null,
+    let u = null !== (l = null == a ? void 0 : a.tag) && void 0 !== l ? l : null,
       h = await Z(),
       p = (null == h ? void 0 : h.authorizationStatus) === "authorized",
-      x = p && (null == h ? void 0 : h.sound) === !0,
+      f = p && (null == h ? void 0 : h.sound) === !0,
       g = e => {
         var t;
         null === (t = a.onShown) || void 0 === t || t.call(a), a.omitViewTracking || j.default.track(T.rMx.NOTIFICATION_VIEWED, r), P && setTimeout(() => e.close(), 5e3)
       };
-    if (null == a.sound || x || G(a.sound, null !== (o = a.volume) && void 0 !== o ? o : 1, a.soundpack), m.Z.getCurrentConfig({
+    if (null == a.sound || f || G(a.sound, null !== (o = a.volume) && void 0 !== o ? o : 1, a.soundpack), m.Z.getCurrentConfig({
         location: "showNotification"
       }).enabled && a.isUserAvatar && null != e && (e = await
         function(e) {
@@ -191,22 +191,22 @@ let U = {
             }
           })
         }(e)), p) {
-      let l = {
+      let i = {
         title: t,
         body: n
       };
-      null != e && (l.icon = e), (null == a ? void 0 : a.sound) != null && (l.sound = L(a.sound, a.soundpack)), (null == a ? void 0 : a.tag) != null && (l.identifier = a.tag);
-      let i = "string" == typeof(null == r ? void 0 : r.guild_id) ? r.guild_id : null,
+      null != e && (i.icon = e), (null == a ? void 0 : a.sound) != null && (i.sound = L(a.sound, a.soundpack)), (null == a ? void 0 : a.tag) != null && (i.identifier = a.tag);
+      let l = "string" == typeof(null == r ? void 0 : r.guild_id) ? r.guild_id : null,
         o = "string" == typeof(null == r ? void 0 : r.channel_id) ? r.channel_id : null,
         s = "string" == typeof(null == r ? void 0 : r.notif_user_id) ? r.notif_user_id : null;
       if (null != o) {
-        l.threadIdentifier = o;
-        let e = f.Z.getChannel(o);
-        null != e && (l.groupName = (0, d.F6)(e, v.default, _.Z))
+        i.threadIdentifier = o;
+        let e = x.Z.getChannel(o);
+        null != e && (i.groupName = (0, d.F6)(e, v.default, _.Z))
       }
-      null != s && (l.senderIdentifier = s, null != i && (l.senderDisplayName = y.ZP.getName(i, o, v.default.getUser(s))));
+      null != s && (i.senderIdentifier = s, null != l && (i.senderDisplayName = y.ZP.getName(l, o, v.default.getUser(s))));
       try {
-        let e = await N.ZP.invoke("NOTIFICATIONS_SEND_NOTIFICATION", l);
+        let e = await N.ZP.invoke("NOTIFICATIONS_SEND_NOTIFICATION", i);
         z[e] = {
           options: a,
           trackingProps: r
@@ -241,7 +241,7 @@ let U = {
     return (g(c), c.onclick = () => {
       var e;
       C.isPlatformEmbedded ? N.ZP.focus() : (window.focus(), c.close()), a.omitClickTracking || j.default.track(T.rMx.NOTIFICATION_CLICKED, r), null === (e = a.onClick) || void 0 === e || e.call(a)
-    }, k) ? c : {
+    }, I) ? c : {
       close() {
         var e;
         null == c || null === (e = c.onclose) || void 0 === e || e.call(c)

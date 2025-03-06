@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => W
 }), n(47120);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(240872),
   u = n(23645),
   m = n(712364),
-  g = n(279837),
-  p = n(600164),
+  p = n(279837),
+  g = n(600164),
   h = n(144114),
   f = n(921801),
-  b = n(607018),
-  N = n(778764),
-  x = n(314897),
+  x = n(607018),
+  b = n(778764),
+  N = n(314897),
   _ = n(325067),
   E = n(594174),
   j = n(572004),
@@ -124,7 +124,7 @@ class k extends i.PureComponent {
         })]
       })
     }
-    if (l) e = (0, r.jsx)(p.Z, {
+    if (l) e = (0, r.jsx)(g.Z, {
       className: a ? "" : P.marginTop8,
       children: (0, r.jsx)(o.zxk, {
         color: o.zxk.Colors.RED,
@@ -137,7 +137,7 @@ class k extends i.PureComponent {
     });
     else {
       let t = (0, O.c)(i);
-      e = (0, r.jsxs)(p.Z, {
+      e = (0, r.jsxs)(g.Z, {
         className: a ? "" : P.marginTop8,
         children: [(0, r.jsx)(o.zxk, {
           onClick: this.handleEnableSMS,
@@ -197,13 +197,13 @@ class k extends i.PureComponent {
           type: o.R94.Types.DESCRIPTION,
           className: P.marginBottom20,
           children: y.NW.format(y.t.OhmvYm, {})
-        }), (0, r.jsxs)(p.Z, {
-          children: [(0, r.jsx)(p.Z.Child, {
+        }), (0, r.jsxs)(g.Z, {
+          children: [(0, r.jsx)(g.Z.Child, {
             children: (0, r.jsx)("ul", {
               className: A.checkboxGroup,
               children: i(t.slice(0, t.length / 2))
             })
-          }), (0, r.jsx)(p.Z.Child, {
+          }), (0, r.jsx)(g.Z.Child, {
             children: (0, r.jsx)("ul", {
               className: A.checkboxGroup,
               children: i(t.slice(t.length / 2))
@@ -228,14 +228,14 @@ class k extends i.PureComponent {
         type: o.R94.Types.DESCRIPTION,
         className: P.marginBottom20,
         children: y.NW.string(y.t.bQwxiY)
-      }), (0, r.jsxs)(p.Z, {
-        justify: p.Z.Justify.START,
+      }), (0, r.jsxs)(g.Z, {
+        justify: g.Z.Justify.START,
         className: P.marginBottom20,
-        children: [(0, r.jsx)(p.Z.Child, {
+        children: [(0, r.jsx)(g.Z.Child, {
           wrap: !0,
           grow: 0,
           children: n
-        }), (0, r.jsxs)(p.Z.Child, {
+        }), (0, r.jsxs)(g.Z.Child, {
           wrap: !0,
           children: [(0, r.jsx)(f.F, {
             setting: S.s6.ACCOUNT_REMOVE_2FA,
@@ -257,7 +257,7 @@ class k extends i.PureComponent {
         })]
       }), e, this.renderMFASMS(), (0, r.jsx)(f.F, {
         setting: S.s6.ACCOUNT_SECURITY_KEYS,
-        children: (0, r.jsx)(N.Z, {})
+        children: (0, r.jsx)(b.Z, {})
       })]
     })
   }
@@ -274,7 +274,7 @@ class k extends i.PureComponent {
           size: o.PhG.SMALL,
           children: y.NW.string(y.t.cDgKtb)
         })
-      }), (0, r.jsx)(N.Z, {})]
+      }), (0, r.jsx)(b.Z, {})]
     })
   }
   render() {
@@ -297,7 +297,7 @@ class k extends i.PureComponent {
   }
   openPhoneVerificationModal() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-    (0, o.h7j)(t => (0, r.jsx)(b.default, D({
+    (0, o.h7j)(t => (0, r.jsx)(x.default, D({
       reason: h.L.USER_SETTINGS_UPDATE
     }, t, e)), {
       modalKey: I.M
@@ -322,7 +322,7 @@ class k extends i.PureComponent {
       let e = _.Z.getVerificationKey();
       await c.Z.confirmViewBackupCodes(e, !0)
     }), R(this, "sendMFABackupCodesVerificationKeyEmail", () => {
-      (0, o.h7j)(e => (0, r.jsx)(g.default, Z(D({}, e), {
+      (0, o.h7j)(e => (0, r.jsx)(p.default, Z(D({}, e), {
         handleSubmit: e => c.Z.sendMFABackupCodesVerificationKeyEmail(e).then(() => {
           this.viewBackupCodes(e)
         }),
@@ -360,7 +360,7 @@ class k extends i.PureComponent {
       let {
         currentUser: e
       } = this.props, t = () => {
-        (0, o.h7j)(e => (0, r.jsx)(g.default, Z(D({}, e), {
+        (0, o.h7j)(e => (0, r.jsx)(p.default, Z(D({}, e), {
           handleSubmit: c.Z.enableSMS,
           title: y.NW.string(y.t.DZQe29)
         })))
@@ -369,7 +369,7 @@ class k extends i.PureComponent {
         onAddedPhone: t
       }) : t()
     }), R(this, "handleDisableSMS", () => {
-      (0, o.h7j)(e => (0, r.jsx)(g.default, Z(D({}, e), {
+      (0, o.h7j)(e => (0, r.jsx)(p.default, Z(D({}, e), {
         handleSubmit: c.Z.disableSMS,
         title: y.NW.string(y.t.KLWnio),
         children: y.NW.string(y.t["W0/Dub"])
@@ -381,9 +381,9 @@ class k extends i.PureComponent {
 function W(e) {
   let t = (0, l.e7)([E.default], () => E.default.getCurrentUser());
   a()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
-  let n = (0, l.cj)([_.Z, x.default], () => ({
+  let n = (0, l.cj)([_.Z, N.default], () => ({
     togglingSMS: _.Z.togglingSMS,
-    hasTOTPEnabled: x.default.hasTOTPEnabled()
+    hasTOTPEnabled: N.default.hasTOTPEnabled()
   }));
   return (0, r.jsx)(k, D({
     currentUser: t

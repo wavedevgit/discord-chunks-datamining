@@ -1,12 +1,12 @@
-/** Chunk was on 51424 **/
+/** Chunk was on 76282 **/
 n.d(t, {
   Z: () => a
 });
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  l = n.n(i),
-  o = n(399324);
+  o = n.n(i),
+  l = n(399324);
 
 function a(e) {
   let {
@@ -15,9 +15,9 @@ function a(e) {
     color: i
   } = e;
   return (0, r.jsxs)("div", {
-    className: l()(o.container, n),
+    className: o()(l.container, n),
     children: [(0, r.jsxs)("svg", {
-      className: o.border,
+      className: l.border,
       width: "48",
       height: "48",
       viewBox: "0 0 48 48",

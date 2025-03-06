@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => I,
   r: () => T
@@ -13,13 +13,13 @@ var r = n(200651),
   d = n(280942),
   u = n(209747),
   m = n(430824),
-  g = n(267642),
-  p = n(74538),
+  p = n(267642),
+  g = n(74538),
   h = n(709054),
   f = n(357956),
-  b = n(275909),
-  N = n(300037),
-  x = n(981631),
+  x = n(275909),
+  b = n(300037),
+  N = n(981631),
   _ = n(474936),
   E = n(388032),
   j = n(37643);
@@ -40,7 +40,7 @@ function C(e) {
       date: new Date(e)
     })
   }, [n, o, c]), u = i.useMemo(() => (function(e) {
-    if (null == e || e === x.Eu4.NONE) return "";
+    if (null == e || e === N.Eu4.NONE) return "";
     let t = [E.NW.formatToPlainString(E.t.dLlKX1, {
       numEmojiSlots: _.HO[e].limits.emoji
     }), E.NW.formatToPlainString(E.t["+ANIfn"], {
@@ -57,7 +57,7 @@ function C(e) {
     }), E.NW.formatToPlainString(E.t.TbpCvr, {
       numVideoStageSeats: _.HO[e].limits.stageVideoUsers
     }), E.NW.string(E.t.LDyX3t), E.NW.string(E.t.YtGlPT)];
-    e >= x.Eu4.TIER_2 && (t.push(E.NW.string(E.t.SztbtL)), t.push(E.NW.string(E.t["3GK91t"]))), e >= x.Eu4.TIER_3 && t.push(E.NW.string(E.t.XUUJd3));
+    e >= N.Eu4.TIER_2 && (t.push(E.NW.string(E.t.SztbtL)), t.push(E.NW.string(E.t["3GK91t"]))), e >= N.Eu4.TIER_3 && t.push(E.NW.string(E.t.XUUJd3));
     let n = t[Math.floor(Math.random() * t.length)];
     return E.NW.format(E.t["/dOAmZ"], {
       perk: n
@@ -73,7 +73,7 @@ function C(e) {
       opacity: 0
     }
   }, "animate-always");
-  return o || t === x.Eu4.NONE ? (0, r.jsx)("div", {
+  return o || t === N.Eu4.NONE ? (0, r.jsx)("div", {
     className: j.boostDescriptionInnerContainer,
     children: (0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
@@ -98,23 +98,23 @@ function O(e) {
     premiumSubscription: s,
     hasCancelableGuildBoostSlot: u,
     showAltText: m,
-    isLastGuildBoostSlot: p
-  } = e, h = (0, a.e7)([o.Z], () => o.Z.useReducedMotion), N = i.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), x = i.useMemo(() => null != N && N > new Date, [N]), _ = (0, g.tl)(n), {
+    isLastGuildBoostSlot: g
+  } = e, h = (0, a.e7)([o.Z], () => o.Z.useReducedMotion), b = i.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), N = i.useMemo(() => null != b && b > new Date, [b]), _ = (0, p.tl)(n), {
     fractionalState: O
   } = (0, c.Z)();
   return (0, r.jsxs)("div", {
     className: j.boostContainer,
     children: [(0, r.jsxs)("div", {
       className: j.boostInnerContainer,
-      children: [(0, r.jsx)(b.Z, {
+      children: [(0, r.jsx)(x.Z, {
         isCanceled: _,
-        hasCooldown: x,
+        hasCooldown: N,
         useReducedMotion: h
       }), (0, r.jsx)("div", {
         className: j.boostDescriptionContainer,
-        children: null != N && x && !_ ? (0, r.jsx)(f.Z, {
+        children: null != b && N && !_ ? (0, r.jsx)(f.Z, {
           className: j.boostDescriptionInnerContainer,
-          cooldown: N.getTime()
+          cooldown: b.getTime()
         }) : (0, r.jsx)(C, {
           guildTier: t,
           guildBoostSlot: n,
@@ -175,7 +175,7 @@ function O(e) {
           }), t))
         }
       })]
-    }), !p && (0, r.jsx)("div", {
+    }), !g && (0, r.jsx)("div", {
       className: j.boostContainerSeparator
     })]
   })
@@ -191,7 +191,7 @@ function v(e) {
   } = e, o = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]);
   return (0, r.jsxs)("div", {
     className: j.appliedBoostContainer,
-    children: [(0, r.jsx)(N.Z, {
+    children: [(0, r.jsx)(b.Z, {
       guildId: t,
       boostingVariant: !1
     }), n.map((e, t) => (0, r.jsx)(O, {
@@ -226,7 +226,7 @@ function S(e) {
   }, i);
   return (0, r.jsxs)("div", {
     className: j.appliedBoostContainer,
-    children: [(0, r.jsx)(N.Z, {
+    children: [(0, r.jsx)(b.Z, {
       guildId: t,
       boostingVariant: !1
     }), n.map((e, t) => (0, r.jsx)(O, {
@@ -287,7 +287,7 @@ function I(e) {
       n = {};
     return Object.keys(t).forEach(r => {
       let i = t[r];
-      if (!(0, g.tl)(i) && e++, null != i.premiumGuildSubscription) {
+      if (!(0, p.tl)(i) && e++, null != i.premiumGuildSubscription) {
         let e = i.premiumGuildSubscription.guildId;
         e in n || (n[e] = []), n[e].push(i)
       }
@@ -297,7 +297,7 @@ function I(e) {
     }
   }, [t]);
   if (null == n || 0 === Object.keys(l).length) return null;
-  let c = o > p.ZP.getNumIncludedPremiumGuildSubscriptionSlots(n.planId);
+  let c = o > g.ZP.getNumIncludedPremiumGuildSubscriptionSlots(n.planId);
   return (0, r.jsxs)("div", {
     className: j.wrapper,
     children: [(0, r.jsx)("div", {

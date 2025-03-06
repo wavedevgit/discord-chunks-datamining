@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => m
 }), n(47120);
@@ -46,17 +46,17 @@ let m = function(e) {
     onClose: t,
     onClaim: n,
     code: m,
-    outboundPromotion: g,
-    transitionState: p
-  } = e, [h, f] = i.useState(null), b = (0, l.Dt)();
+    outboundPromotion: p,
+    transitionState: g
+  } = e, [h, f] = i.useState(null), x = (0, l.Dt)();
   return i.useEffect(() => {
-    null == m && (0, o.A2)(g.id).then(e => n(e)).catch(e => {
+    null == m && (0, o.A2)(p.id).then(e => n(e)).catch(e => {
       var t;
       return f(null == e ? void 0 : null === (t = e.body) || void 0 === t ? void 0 : t.code)
     })
-  }, [m, g.id, n]), (0, r.jsx)(s.Y0X, {
-    transitionState: p,
-    "aria-labelledby": b,
+  }, [m, p.id, n]), (0, r.jsx)(s.Y0X, {
+    transitionState: g,
+    "aria-labelledby": x,
     children: null != h ? (0, r.jsx)(u, {
       onClose: t
     }) : null == m ? (0, r.jsx)(s.hzk, {
@@ -77,7 +77,7 @@ let m = function(e) {
         children: [(0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           className: d.bodyText,
-          children: g.outboundRedemptionModalBody
+          children: p.outboundRedemptionModalBody
         }), (0, r.jsx)(s.$i$, {
           className: d.formDivider
         }), (0, r.jsxs)(s.hjN, {
@@ -99,7 +99,7 @@ let m = function(e) {
         children: [(0, r.jsx)(s.zxk, {
           color: s.zxk.Colors.BRAND,
           onClick: () => {
-            let e = (0, o.BU)(m, g);
+            let e = (0, o.BU)(m, p);
             window.open(e, "_blank")
           },
           children: c.NW.string(c.t["+zx47e"])

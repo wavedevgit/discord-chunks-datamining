@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => u
 });
@@ -18,8 +18,8 @@ function u(e) {
     otherUser: a,
     status: u
   } = e, m = (0, l.j_)(a.id, u), {
-    avatarSrc: g,
-    avatarDecorationSrc: p,
+    avatarSrc: p,
+    avatarDecorationSrc: g,
     eventHandlers: h
   } = (0, s.Z)({
     user: a,
@@ -47,8 +47,8 @@ function u(e) {
     }({}, h), n = n = {
       children: (0, r.jsx)(d, {
         className: c.avatar,
-        src: g,
-        avatarDecoration: p,
+        src: p,
+        avatarDecoration: g,
         size: i.EFr.SIZE_40,
         "aria-label": a.username
       })

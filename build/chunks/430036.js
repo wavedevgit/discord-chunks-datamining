@@ -307,7 +307,8 @@ class ea extends r.PureComponent {
       y = !s && null != t && t.isNSFW(),
       v = !g || c;
     return e = y && null != a ? (0, i.jsx)(_.Z, {
-      guild: a
+      guild: a,
+      channelId: t.id
     }) : (0, i.jsx)(w.Z, {
       channel: t,
       className: ee.messages,

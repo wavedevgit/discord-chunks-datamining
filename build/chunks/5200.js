@@ -54,11 +54,10 @@ function v(e) {
     children: (0, i.jsx)("div", {
       className: g.badgeContainer,
       children: (0, i.jsx)(p.Z, {
-        name: r.application.name,
         labelType: E
       })
     })
-  }), [r.application.name, E]), T = l.useMemo(() => {
+  }), [E]), T = l.useMemo(() => {
     switch (O) {
       case u.JS.JOIN:
         return (0, i.jsx)("div", {

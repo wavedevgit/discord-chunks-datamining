@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => b
+  Z: () => x
 }), n(47120), n(653041);
 var r = n(768433),
   i = n(710845),
@@ -12,9 +12,9 @@ var r = n(768433),
   d = n(496675),
   u = n(386438),
   m = n(287328),
-  g = n(458772);
+  p = n(458772);
 
-function p(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,7 +27,7 @@ let h = new i.Z("GuildBasicChannels");
 function f(e, t) {
   return null == e || e.type !== t.type || e.parent_id !== t.parent_id || d.Z.computeBasicPermissions(e) !== d.Z.computeBasicPermissions(t)
 }
-let b = new class {
+let x = new class {
   async getAsync(e) {
     let t = performance.now(),
       [n, r] = await Promise.all([m.Z.basicChannels(e).getKvEntries(), m.Z.syncedBasicChannels(e).getKvEntries()]),
@@ -130,7 +130,7 @@ let b = new class {
   }
   unsync(e, t) {
     var n;
-    null === (n = this.synced) || void 0 === n || n.delete(e), m.Z.basicChannelsTransaction(t).delete(e), m.Z.syncedBasicChannelsTransaction(t).put(e, !1), g.Z.invalidate(e)
+    null === (n = this.synced) || void 0 === n || n.delete(e), m.Z.basicChannelsTransaction(t).delete(e), m.Z.syncedBasicChannelsTransaction(t).put(e, !1), p.Z.invalidate(e)
   }
   sync(e) {
     h.verbose("Starting to write all basic channels");
@@ -154,7 +154,7 @@ let b = new class {
     })))), m.Z.syncedBasicChannelsTransaction(t).put(e, !0), !0)
   }
   constructor() {
-    p(this, "synced", null), p(this, "actions", {
+    g(this, "synced", null), g(this, "actions", {
       BACKGROUND_SYNC: (e, t) => this.handleBackgroundSync(e, t),
       CHANNEL_CREATE: (e, t) => this.handleChannelCreate(e, t),
       CHANNEL_DELETE: (e, t) => this.handleChannelDelete(e, t),

@@ -53,26 +53,26 @@ function j(e) {
   let {
     guild: n,
     prompts: j,
-    completeOnboarding: N,
-    setCurrentStep: v,
+    completeOnboarding: v,
+    setCurrentStep: N,
     disableTracking: b,
     previousPromptIndex: _
-  } = e, C = l.useRef(null), O = (0, o.e7)([c.Z], () => c.Z.getRulesPrompt(n.id)), [E, k] = l.useState(null !== (t = null == O ? void 0 : O.response) && void 0 !== t && t), I = (0, o.e7)([c.Z], () => c.Z.get(n.id)), Z = l.useRef(null), y = l.useRef(null), P = l.useCallback(async () => {
-    if (null != I && null != O) {
+  } = e, C = l.useRef(null), O = (0, o.e7)([c.Z], () => c.Z.getRulesPrompt(n.id)), [E, I] = l.useState(null !== (t = null == O ? void 0 : O.response) && void 0 !== t && t), k = (0, o.e7)([c.Z], () => c.Z.get(n.id)), Z = l.useRef(null), y = l.useRef(null), P = l.useCallback(async () => {
+    if (null != k && null != O) {
       try {
-        await a.ZP.submitVerificationForm(n.id, g(f({}, I), {
+        await a.ZP.submitVerificationForm(n.id, g(f({}, k), {
           formFields: [g(f({}, O), {
             response: E
           })]
         }))
       } catch (e) {}
-      N()
+      v()
     }
-  }, [n.id, I, O, E, N]);
+  }, [n.id, k, O, E, v]);
 
   function w(e) {
     let [t] = e;
-    t.isIntersecting && k(!0)
+    t.isIntersecting && I(!0)
   }
   return (l.useEffect(() => {
     let e = new IntersectionObserver(w, {
@@ -136,7 +136,7 @@ function j(e) {
               })), _ >= 0 && m.default.track(h.rMx.GUILD_ONBOARDING_STEP_VIEWED, g(f({}, (0, s.hH)(n.id)), {
                 step: _,
                 required: j[_].required
-              }))), v(_)
+              }))), N(_)
             },
             size: i.zxk.Sizes.MEDIUM,
             look: i.zxk.Looks.OUTLINED,

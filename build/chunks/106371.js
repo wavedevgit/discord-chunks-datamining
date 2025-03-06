@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => l
+  Z: () => i
 });
 var r = n(818083);
 let a = (0, r.B)({
@@ -49,4 +49,4 @@ let a = (0, r.B)({
     }
   }]
 });
-let l = a
+let i = a

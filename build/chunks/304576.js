@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => v
 });
@@ -13,13 +13,13 @@ var i = n(120356),
   d = n(357355),
   u = n(140465),
   m = n(775412),
-  g = n(104494),
-  p = n(639119),
+  p = n(104494),
+  g = n(639119),
   h = n(105759),
   f = n(346497),
-  b = n(422034),
-  N = n(710220),
-  x = n(318747),
+  x = n(422034),
+  b = n(710220),
+  N = n(318747),
   _ = n(635921),
   E = n(474936),
   j = n(388032),
@@ -51,7 +51,7 @@ let O = e => {
       isDarkMode: y
     } = e, {
       analyticsLocations: A
-    } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_HERO_CTA), P = (0, m._O)(), R = (0, g.Ng)(), D = (0, g.Wp)(R, E.Si.TIER_2) ? E.Si.TIER_2 : void 0, Z = (0, p.N)(), w = (0, u.Nx)(), k = (0, f.Vi)(), W = (0, a.e7)([d.Z], () => d.Z.affinities), L = (0, h.Z)(), B = I === E.EZ.ApplicationStoreHome && null != L, M = W.length > 0;
+    } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_HERO_CTA), P = (0, m._O)(), R = (0, p.Ng)(), D = (0, p.Wp)(R, E.Si.TIER_2) ? E.Si.TIER_2 : void 0, Z = (0, g.N)(), w = (0, u.Nx)(), k = (0, f.Vi)(), W = (0, a.e7)([d.Z], () => d.Z.affinities), L = (0, h.Z)(), B = I === E.EZ.ApplicationStoreHome && null != L, M = W.length > 0;
     return (0, r.jsx)(c.Gt, {
       value: A,
       children: (0, r.jsx)("div", {
@@ -67,12 +67,12 @@ let O = e => {
             variant: "display-sm",
             color: "header-primary",
             children: j.NW.string(j.t.YCZldH)
-          }), B ? (0, r.jsx)(N.Z, {
+          }), B ? (0, r.jsx)(b.Z, {
             referrer: L,
             isMarketingPageV2Enabled: !0
           }) : M && (0, r.jsx)("div", {
             className: C.affinityDescriptionV2,
-            children: (0, r.jsx)(b.Z, {
+            children: (0, r.jsx)(x.Z, {
               textColor: "text-normal",
               smallerText: !i,
               isMarketingPageV2Enabled: !0
@@ -81,7 +81,7 @@ let O = e => {
             className: s()(C.buttonContainer, C.marketingPageV2CTAContainer, {
               [C.marketingPageV2CTAMargin]: !(M || B)
             }),
-            children: (0, r.jsx)(x.Z, {
+            children: (0, r.jsx)(N.Z, {
               className: s()(C.button, S),
               forceWhite: !0
             })

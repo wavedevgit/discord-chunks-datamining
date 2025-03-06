@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -13,30 +13,30 @@ var r = n(200651),
   u = n(308083),
   m = n(754053);
 
-function g(e) {
+function p(e) {
   let {
     className: t,
     clanTag: n,
     clanBadge: s,
-    onTagClick: g,
-    guildId: p,
+    onTagClick: p,
+    guildId: g,
     guildName: h,
     guildIcon: f,
-    guildIconSize: b,
-    memberCount: N
-  } = e, x = i.useRef(null), [_, E] = i.useState(!1);
+    guildIconSize: x,
+    memberCount: b
+  } = e, N = i.useRef(null), [_, E] = i.useState(!1);
   return i.useEffect(() => {
-    let e = x.current;
+    let e = N.current;
     null != e && null != e.offsetWidth && null != e.scrollWidth && E(e.offsetWidth < e.scrollWidth)
   }, []), (0, r.jsxs)("div", {
     className: a()(m.container, t),
     children: [(0, r.jsxs)("div", {
       className: m.guildPrefixContainer,
       children: [(0, r.jsx)(o.b, {
-        guildId: p,
+        guildId: g,
         guildName: h,
         guildIcon: f,
-        iconSize: b,
+        iconSize: x,
         className: m.guildPrefixIcon,
         animate: !1
       }), (0, r.jsxs)("div", {
@@ -65,7 +65,7 @@ function g(e) {
               }
               return e
             }({
-              ref: x
+              ref: N
             }, e), n = n = {
               className: m.guildName,
               children: h
@@ -80,18 +80,18 @@ function g(e) {
               Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
             }), t))
           }
-        }), null != N && (0, r.jsx)(c.Z, {
-          count: N
+        }), null != b && (0, r.jsx)(c.Z, {
+          count: b
         })]
       })]
     }), (0, r.jsx)("div", {
       className: m.tagContainer,
       children: (0, r.jsx)(d.aG, {
-        guildId: p,
+        guildId: g,
         className: m.tag,
         clanTag: n,
         clanBadge: s,
-        onClick: g,
+        onClick: p,
         badgeSize: u.NC.SIZE_16,
         textColor: "interactive-normal",
         textVariant: "text-sm/semibold",

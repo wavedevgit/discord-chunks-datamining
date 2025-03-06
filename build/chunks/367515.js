@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  B: () => x
+  B: () => N
 });
 var r = n(200651),
   i = n(192379),
@@ -12,12 +12,12 @@ var r = n(200651),
   d = n(880257),
   u = n(631885),
   m = n(933970),
-  g = n(340453),
-  p = n(292352),
+  p = n(340453),
+  g = n(292352),
   h = n(388032),
   f = n(944921);
 
-function b(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function b(e) {
   return e
 }
 
-function N(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,15 +49,15 @@ function N(e, t) {
   }), e
 }
 
-function x(e) {
+function N(e) {
   let {
     user: t
-  } = e, s = (0, d.Z)(), x = (0, u.VM)(), _ = (0, l.e7)([c.default], () => c.default.getCurrentUser()), E = i.useCallback(() => {
+  } = e, s = (0, d.Z)(), N = (0, u.VM)(), _ = (0, l.e7)([c.default], () => c.default.getCurrentUser()), E = i.useCallback(() => {
     a()(void 0 !== _, "User must be logged in to accept a link request"), (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("59716").then(n.bind(n, 275370));
-      return n => (0, r.jsx)(e, N(b({}, n), {
+      return n => (0, r.jsx)(e, b(x({}, n), {
         currentUser: _,
         otherUser: t
       }))
@@ -67,7 +67,7 @@ function x(e) {
       let {
         default: e
       } = await n.e("958").then(n.bind(n, 4526));
-      return n => (0, r.jsx)(e, N(b({}, n), {
+      return n => (0, r.jsx)(e, b(x({}, n), {
         currentUser: _,
         otherUser: t
       }))
@@ -77,7 +77,7 @@ function x(e) {
       let {
         default: e
       } = await n.e("69015").then(n.bind(n, 247265));
-      return n => (0, r.jsx)(e, N(b({}, n), {
+      return n => (0, r.jsx)(e, b(x({}, n), {
         currentUser: _,
         otherUser: t
       }))
@@ -87,9 +87,9 @@ function x(e) {
     className: f.container,
     children: [(0, r.jsx)("div", {
       className: f.details,
-      children: (0, r.jsx)(g.Z, {
+      children: (0, r.jsx)(p.Z, {
         otherUser: t,
-        status: p.ne.PENDING
+        status: g.ne.PENDING
       })
     }), (0, r.jsx)("div", {
       className: f.actions,
@@ -99,7 +99,7 @@ function x(e) {
         tooltip: h.NW.string(h.t.e5iHmZ),
         onClick: C
       }) : (0, r.jsxs)(r.Fragment, {
-        children: [x ? null : (0, r.jsx)(m.Z, {
+        children: [N ? null : (0, r.jsx)(m.Z, {
           icon: o.dz2,
           className: f.__invalid_actionAccept,
           tooltip: h.NW.string(h.t.krWQZG),

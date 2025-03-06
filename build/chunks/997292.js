@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  r: () => p
+  r: () => g
 });
 var r = n(106351),
   i = n(475179),
@@ -12,8 +12,8 @@ var r = n(106351),
   d = n(592125),
   u = n(944486),
   m = n(914010),
-  g = n(981631);
-let p = {
+  p = n(981631);
+let g = {
   binds: ["mod+u"],
   comboKeysBindGlobal: !0,
   action() {
@@ -24,7 +24,7 @@ let p = {
     if (null != t && null != n && n.type === r.d.DM) {
       let e = c.ZP.getSection(t, null == n ? void 0 : n.isDM()),
         r = (0, o.Of)(n.getRecipientId()),
-        i = e === g.ULH.PROFILE;
+        i = e === p.ULH.PROFILE;
       return (0, l.TY)({
         displayProfile: r,
         isProfileOpen: !i

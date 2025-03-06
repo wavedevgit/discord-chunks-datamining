@@ -1,35 +1,35 @@
 /** Chunk was on 45620 **/
 "use strict";
-r.d(t, {
-  B: () => a
-}), r(47120), r(653041);
-var n = r(192379),
-  l = r(512969),
-  i = r(822857),
-  o = r(215023),
-  s = r(981631);
-let a = (e, t, r) => {
+n.d(t, {
+  B: () => i
+}), n(47120), n(653041);
+var r = n(192379),
+  l = n(512969),
+  a = n(822857),
+  s = n(215023),
+  o = n(981631);
+let i = (e, t, n) => {
   let {
-    enabled: a
-  } = (0, i.W)({
+    enabled: i
+  } = (0, a.W)({
     location: "useShopViewTransition"
-  }), c = n.useMemo(() => t !== o.AW.ORBS || a ? t : o.AW.HOME, [t, a]), [u, d] = n.useState(c), [p, f] = n.useState(o.f7.HIDDEN);
-  n.useEffect(() => {
-    d(c), f(o.f7.VISIBLE)
+  }), c = r.useMemo(() => t !== s.AW.ORBS || i ? t : s.AW.HOME, [t, i]), [d, u] = r.useState(c), [m, g] = r.useState(s.f7.HIDDEN);
+  r.useEffect(() => {
+    u(c), g(s.f7.VISIBLE)
   }, [c]);
-  let b = e => new Promise(t => setTimeout(t, e)),
+  let f = e => new Promise(t => setTimeout(t, e)),
     h = (0, l.k6)();
   return {
-    selectedTab: u,
-    transitionState: p,
-    transitionToTab: n.useCallback(async (t, n) => {
-      n ? (f(o.f7.OUT), await b(1.1 * o.lb), d(t), r || h.push(s.Z5c.COLLECTIBLES_SHOP_WITH_TAB(t), {
+    selectedTab: d,
+    transitionState: m,
+    transitionToTab: r.useCallback(async (t, r) => {
+      r ? (g(s.f7.OUT), await f(1.1 * s.lb), u(t), n || h.push(o.Z5c.COLLECTIBLES_SHOP_WITH_TAB(t), {
         shallow: !0
-      }), f(o.f7.IN)) : (d(t), r || h.push(s.Z5c.COLLECTIBLES_SHOP_WITH_TAB(t), {
+      }), g(s.f7.IN)) : (u(t), n || h.push(o.Z5c.COLLECTIBLES_SHOP_WITH_TAB(t), {
         shallow: !0
       })), null != e.current && e.current.scrollTo({
         to: 0
-      }), f(o.f7.VISIBLE)
-    }, [h, r, e])
+      }), g(s.f7.VISIBLE)
+    }, [h, n, e])
   }
 }

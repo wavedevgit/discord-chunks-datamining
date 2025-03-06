@@ -1,9 +1,9 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Nv: () => x,
+  Nv: () => N,
   pd: () => f,
   uX: () => _,
-  wk: () => b
+  wk: () => x
 });
 var r = n(350483),
   i = n(220444),
@@ -15,11 +15,11 @@ var r = n(350483),
   d = n(9156),
   u = n(981631),
   m = n(490897);
-let g = (e, t) => {
+let p = (e, t) => {
     let n = l.Z.getChannel(t);
     return null != n && ((0, a.hv)(n.type) || u.TPd.GUILD_VOCAL.has(n.type) ? o.ZP.getMentionCount(t) > 0 || c.Z.getVoiceChannelId() === t : (!d.ZP.isChannelMuted(e, t) || o.ZP.getMentionCount(t) > 0) && (0, i.d)(n))
   },
-  p = (e, t) => t === m.W.GUILD_EVENT ? !d.ZP.isMuteScheduledEventsEnabled(e) && o.ZP.hasUnread(e, t) : o.ZP.hasUnread(e, t),
+  g = (e, t) => t === m.W.GUILD_EVENT ? !d.ZP.isMuteScheduledEventsEnabled(e) && o.ZP.hasUnread(e, t) : o.ZP.hasUnread(e, t),
   h = (e, t) => {
     let n = l.Z.getChannel(t);
     return !!(null != n && u.TPd.GUILD_VOCAL.has(n.type)) && (o.ZP.getMentionCount(t) > 0 || c.Z.getVoiceChannelId() === t && o.ZP.getUnreadCount(t) > 0)
@@ -31,35 +31,35 @@ let g = (e, t) => {
       var e;
       let t = null !== (e = s.Z.getState().guildId) && void 0 !== e ? e : u.ME;
       return (0, r.Z)(1, {
-        channelPredicate: g,
+        channelPredicate: p,
         guildPredicate: e => e === t || !d.ZP.isMuted(e),
-        guildFeaturePredicate: p,
+        guildFeaturePredicate: g,
         ensureChatIsVisible: h,
         withVoiceChannels: !0
       }), !1
     }
   },
-  b = {
+  x = {
     binds: ["alt+shift+up"],
     comboKeysBindGlobal: !0,
     action() {
       var e;
       let t = null !== (e = s.Z.getState().guildId) && void 0 !== e ? e : u.ME;
       return (0, r.Z)(-1, {
-        channelPredicate: g,
+        channelPredicate: p,
         guildPredicate: e => e === t || !d.ZP.isMuted(e),
-        guildFeaturePredicate: p,
+        guildFeaturePredicate: g,
         ensureChatIsVisible: h,
         withVoiceChannels: !0
       }), !1
     }
   },
-  N = (e, t) => o.ZP.getMentionCount(t) > 0,
-  x = {
+  b = (e, t) => o.ZP.getMentionCount(t) > 0,
+  N = {
     binds: ["mod+shift+alt+down"],
     comboKeysBindGlobal: !0,
     action: () => ((0, r.Z)(1, {
-      channelPredicate: N,
+      channelPredicate: b,
       ensureChatIsVisible: h,
       withVoiceChannels: !0
     }), !1)
@@ -68,7 +68,7 @@ let g = (e, t) => {
     binds: ["mod+shift+alt+up"],
     comboKeysBindGlobal: !0,
     action: () => ((0, r.Z)(-1, {
-      channelPredicate: N,
+      channelPredicate: b,
       ensureChatIsVisible: h,
       withVoiceChannels: !0
     }), !1)

@@ -1,19 +1,19 @@
 /** Chunk was on 11212 **/
 "use strict";
-c.d(e, {
+a.d(e, {
   Z: () => n
 });
-var d = c(200651),
-  a = c(81063),
-  s = c(388032);
+var c = a(200651),
+  d = a(81063),
+  s = a(388032);
 
 function n(t) {
   let {
     leaderboard: e,
-    className: c
-  } = t, n = (0, a.xF)(e.settings.application_id, e.settings.winner_asset_id);
-  return null == n ? null : (0, d.jsx)("img", {
-    className: c,
+    className: a
+  } = t, n = (0, d.xF)(e.settings.application_id, e.settings.winner_asset_id);
+  return null == n ? null : (0, c.jsx)("img", {
+    className: a,
     src: n,
     alt: s.NW.string(s.t.QyRmzc)
   })

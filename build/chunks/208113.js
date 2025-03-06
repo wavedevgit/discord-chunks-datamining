@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 }), n(653041);
 var r = n(200651);
 n(192379);
@@ -13,14 +13,14 @@ var i = n(442837),
   d = n(726985),
   u = n(65154),
   m = n(388032),
-  g = n(802138);
+  p = n(802138);
 
-function p(e) {
+function g(e) {
   let {
     refreshStyles: t = !1
   } = e, {
     audioSubsystem: n,
-    legacyAudioSubsystemSupported: p,
+    legacyAudioSubsystemSupported: g,
     experimentalAudioSubsystemSupported: h,
     automaticAudioSubsystemSupported: f
   } = (0, i.cj)([o.Z], () => ({
@@ -28,8 +28,8 @@ function p(e) {
     legacyAudioSubsystemSupported: o.Z.supports(u.AN.LEGACY_AUDIO_SUBSYSTEM),
     experimentalAudioSubsystemSupported: o.Z.supports(u.AN.EXPERIMENTAL_AUDIO_SUBSYSTEM),
     automaticAudioSubsystemSupported: o.Z.supports(u.AN.AUTOMATIC_AUDIO_SUBSYSTEM)
-  })), b = (0, r.jsx)(s.q4e, {
-    className: g.marginBottom20,
+  })), x = (0, r.jsx)(s.q4e, {
+    className: p.marginBottom20,
     value: n,
     options: function(e, t, n) {
       let r = [{
@@ -46,7 +46,7 @@ function p(e) {
         value: u.iA.AUTOMATIC,
         label: m.NW.string(m.t.qNgtOz)
       }), r
-    }(p, h, f),
+    }(g, h, f),
     onChange: e => {
       (0, c.Z)(m.NW.string(m.t.uY7AcX), m.NW.string(m.t.gBqik5), () => a.Z.setAudioSubsystem(e))
     }
@@ -55,12 +55,12 @@ function p(e) {
     setting: d.s6.VOICE_AND_VIDEO_ADVANCED_SUBSYSTEM,
     children: t ? (0, r.jsx)(s.xJW, {
       title: m.NW.string(m.t.wVBHr6),
-      children: b
+      children: x
     }) : (0, r.jsxs)(s.hjN, {
-      className: g.marginBottom20,
+      className: p.marginBottom20,
       title: m.NW.string(m.t.wVBHr6),
-      children: [b, (0, r.jsx)(s.$i$, {
-        className: g.marginBottom20
+      children: [x, (0, r.jsx)(s.$i$, {
+        className: p.marginBottom20
       })]
     })
   })

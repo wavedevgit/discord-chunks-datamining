@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var r = n(200651),
   i = n(192379),
@@ -13,20 +13,20 @@ var r = n(200651),
   u = n(388032),
   m = n(802138);
 
-function g(e) {
+function p(e) {
   let {
     refreshStyles: t = !1
   } = e, {
     enabled: n
   } = (0, a.S)({
     location: "UserSettingsStreamPreviews"
-  }), g = o.I0.useSetting(), p = i.useCallback(e => {
+  }), p = o.I0.useSetting(), g = i.useCallback(e => {
     (0, c.Z)("stream_previews_disabled", e, o.I0.getSetting()), o.I0.updateSetting(e)
   }, []);
   if (!n) return null;
   let h = (0, r.jsx)(s.j7V, {
-    value: g,
-    onChange: p,
+    value: p,
+    onChange: g,
     note: u.NW.string(u.t.jTNPHB),
     hideBorder: t,
     children: u.NW.string(u.t["1CzWUF"])

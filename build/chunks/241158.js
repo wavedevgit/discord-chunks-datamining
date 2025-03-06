@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => E
 }), n(266796);
@@ -12,14 +12,14 @@ var r = n(200651),
   d = n(410030),
   u = n(70097),
   m = n(626135),
-  g = n(526167),
-  p = n(831964),
+  p = n(526167),
+  g = n(831964),
   h = n(981631),
   f = n(869783),
-  b = n(388032),
-  N = n(743413);
+  x = n(388032),
+  b = n(743413);
 
-function x(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,37 +42,37 @@ let _ = e => {
       name: t,
       title: n,
       description: s,
-      descriptionCta: b,
-      previewImage: x,
+      descriptionCta: x,
+      previewImage: N,
       videoUrl: _,
       shouldLoadVideo: E,
       index: j,
       isCompact: C,
       isReducedMotion: O,
       onClick: v
-    } = e, S = (0, g.rO)(), T = i.useRef(null), I = i.useRef(0), y = function(e) {
+    } = e, S = (0, p.rO)(), T = i.useRef(null), I = i.useRef(0), y = function(e) {
       let t;
       switch (e) {
-        case p.dm.EMOJIS:
-          t = N.emojisBackground;
+        case g.dm.EMOJIS:
+          t = b.emojisBackground;
           break;
-        case p.dm.REFERRAL_PROGRAM:
-          t = N.referralProgramBackground;
+        case g.dm.REFERRAL_PROGRAM:
+          t = b.referralProgramBackground;
           break;
-        case p.dm.NO_LIMITS:
-          t = N.noLimitsBackground;
+        case g.dm.NO_LIMITS:
+          t = b.noLimitsBackground;
           break;
-        case p.dm.NEW_APP_STYLES:
-          t = N.newStylesBackground;
+        case g.dm.NEW_APP_STYLES:
+          t = b.newStylesBackground;
           break;
-        case p.dm.YOUR_SPACE:
-          t = N.yourSpaceBackground;
+        case g.dm.YOUR_SPACE:
+          t = b.yourSpaceBackground;
           break;
-        case p.dm.SERVER_PROFILES:
-          t = N.serverProfilesBackground;
+        case g.dm.SERVER_PROFILES:
+          t = b.serverProfilesBackground;
           break;
-        case p.dm.SHOW_YOUR_STYLE:
-          t = N.yourStyleBackground
+        case g.dm.SHOW_YOUR_STYLE:
+          t = b.yourStyleBackground
       }
       return t
     }(t), A = (0, d.ZP)(), P = (0, o.wj)(A), R = P ? c.Ttl.WHITE : c.Ttl.BRAND, D = (0, l.debounce)(() => {
@@ -85,30 +85,30 @@ let _ = e => {
       null == T.current || O || (I.current = T.current.currentTime, T.current.pause())
     }, k = () => (0, r.jsxs)("div", {
       className: a()({
-        [N.whatsNewTextBoxOuter]: !C,
-        [N.compactTextBox]: C
+        [b.whatsNewTextBoxOuter]: !C,
+        [b.compactTextBox]: C
       }),
       children: [(0, r.jsx)(c.X6q, {
         variant: "heading-xxl/extrabold",
         color: "header-primary",
         className: a()({
-          [N.whatsNewBoxHeader]: !C,
-          [N.compactBoxHeader]: C
+          [b.whatsNewBoxHeader]: !C,
+          [b.compactBoxHeader]: C
         }),
         children: n
       }), (0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "text-muted",
-        className: N.whatsNewBoxDescription,
+        className: b.whatsNewBoxDescription,
         children: s
-      }), null != b && null != v && (0, r.jsx)(c.zxk, {
+      }), null != x && null != v && (0, r.jsx)(c.zxk, {
         look: c.iLD.OUTLINED,
         color: R,
-        className: a()(N.whatsNewBoxButton, P ? N.whatsNewBoxButtonWhite : N.whatsNewBoxButtonBrand),
+        className: a()(b.whatsNewBoxButton, P ? b.whatsNewBoxButtonWhite : b.whatsNewBoxButtonBrand),
         onClick: () => {
           D(), v()
         },
-        children: b
+        children: x
       })]
     }), W = e => {
       let {
@@ -116,19 +116,19 @@ let _ = e => {
       } = e;
       return (0, r.jsx)("div", {
         className: a()({
-          [N.whatsNewArtContainer]: !C,
-          [N.compactBoxArtContainer]: C
+          [b.whatsNewArtContainer]: !C,
+          [b.compactBoxArtContainer]: C
         }),
         children: (0, r.jsx)(u.Z, {
           playsInline: !0,
           preload: E ? "auto" : "none",
           muted: !0,
-          poster: x,
+          poster: N,
           loop: !0,
           className: a()({
-            [N.perkBoxVideo]: !C,
-            [N.leftSideArt]: t && !C,
-            [N.compactBoxVideo]: C
+            [b.perkBoxVideo]: !C,
+            [b.leftSideArt]: t && !C,
+            [b.compactBoxVideo]: C
           }),
           ref: T,
           children: (0, r.jsx)("source", {
@@ -140,8 +140,8 @@ let _ = e => {
     }, L = j % 2 == 0;
     return (0, r.jsx)("div", {
       className: a()(y, {
-        [N.whatsNewBoxContainer]: !C,
-        [N.compactBoxContainer]: C
+        [b.whatsNewBoxContainer]: !C,
+        [b.compactBoxContainer]: C
       }),
       onMouseEnter: Z,
       onFocus: Z,
@@ -164,26 +164,26 @@ let _ = e => {
       shouldLoadVideo: n,
       isBestOfNitro: i = !1,
       isReducedMotion: s
-    } = e, l = Object.values((0, p.ZP)(i)), o = i ? Object.values((0, p.__)()) : null;
+    } = e, l = Object.values((0, g.ZP)(i)), o = i ? Object.values((0, g.__)()) : null;
     return (0, r.jsxs)("div", {
-      className: a()(N.boxBackdrop, t),
+      className: a()(b.boxBackdrop, t),
       children: [(0, r.jsx)(c.X6q, {
-        className: N.whatsNewHeader,
+        className: b.whatsNewHeader,
         variant: "display-md",
         color: "header-primary",
-        children: i ? b.NW.string(b.t.EnzW2N) : b.NW.string(b.t.LRmNAg)
-      }), l.map((e, t) => (0, r.jsx)(_, x({
+        children: i ? x.NW.string(x.t.EnzW2N) : x.NW.string(x.t.LRmNAg)
+      }), l.map((e, t) => (0, r.jsx)(_, N({
         shouldLoadVideo: n,
         isReducedMotion: s,
         index: t
       }, e), e.name)), null != o && (0, r.jsxs)("div", {
-        className: N.compactBoxOuterContainer,
-        children: [o.map((e, t) => (0, r.jsx)(_, x({
+        className: b.compactBoxOuterContainer,
+        children: [o.map((e, t) => (0, r.jsx)(_, N({
           shouldLoadVideo: n,
           isReducedMotion: s,
           index: t
         }, e), e.name)), (0, r.jsx)("div", {
-          className: N.whatsNewSideGradient
+          className: b.whatsNewSideGradient
         })]
       })]
     })

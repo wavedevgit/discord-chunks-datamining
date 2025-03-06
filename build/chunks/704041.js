@@ -1,177 +1,177 @@
 /** Chunk was on 11212 **/
 "use strict";
-c.d(e, {
-  Z: () => O
-}), c(47120);
-var d = c(200651),
-  a = c(192379),
-  s = c(481060),
-  n = c(835473),
-  o = c(626135),
-  f = c(709054),
-  p = c(814059),
-  i = c(873128),
-  r = c(428268),
-  b = c(114201),
-  u = c(154658),
-  l = c(370611),
-  m = c(981631),
-  g = c(701488),
-  j = c(231338),
-  h = c(388032),
-  _ = c(5416);
+a.d(e, {
+  Z: () => v
+}), a(47120);
+var c = a(200651),
+  d = a(192379),
+  s = a(481060),
+  n = a(835473),
+  f = a(626135),
+  i = a(709054),
+  o = a(814059),
+  p = a(873128),
+  r = a(428268),
+  l = a(114201),
+  b = a(154658),
+  u = a(370611),
+  m = a(981631),
+  g = a(701488),
+  j = a(231338),
+  h = a(388032),
+  y = a(5416);
 
-function v(t) {
+function _(t) {
   let {
     children: e
   } = t;
-  return (0, d.jsx)(s.f6W, {
+  return (0, c.jsx)(s.f6W, {
     theme: j.BR.DARK,
     disableAdaptiveTheme: !0,
-    children: t => (0, d.jsx)("div", {
+    children: t => (0, c.jsx)("div", {
       className: t,
       children: e
     })
   })
 }
 
-function x(t) {
+function B(t) {
   let {
     leaderboard: e,
-    application: c
-  } = t, n = a.useMemo(() => (0, p.n)(f.default.extractTimestamp(e.interval_end)), [e]), o = c.getIconURL(g.Si.LARGE), i = null == o ? null : (0, d.jsx)("img", {
-    className: _.gameIcon,
-    src: o,
+    application: a
+  } = t, n = d.useMemo(() => (0, o.n)(i.default.extractTimestamp(e.interval_end)), [e]), f = a.getIconURL(g.Si.LARGE), p = null == f ? null : (0, c.jsx)("img", {
+    className: y.gameIcon,
+    src: f,
     "aria-hidden": !0,
     alt: ""
   });
-  return (0, d.jsxs)("div", {
-    className: _.header,
-    children: [i, (0, d.jsx)(s.LZC, {
+  return (0, c.jsxs)("div", {
+    className: y.header,
+    children: [p, (0, c.jsx)(s.LZC, {
       size: 8,
       horizontal: !0
-    }), (0, d.jsx)(s.X6q, {
+    }), (0, c.jsx)(s.X6q, {
       variant: "text-xs/normal",
-      className: _.leaderboardTitle,
+      className: y.leaderboardTitle,
       children: h.NW.format(h.t["MlT4+P"], {
-        leaderboardName: c.name,
+        leaderboardName: a.name,
         timeLeft: n,
-        leaderboardNameHook: (t, e) => (0, d.jsx)(s.Text, {
+        leaderboardNameHook: (t, e) => (0, c.jsx)(s.Text, {
           variant: "text-sm/medium",
-          className: _.leaderboardName,
+          className: y.leaderboardName,
           children: t
         }, e)
       })
-    }), (0, d.jsx)(b.Z, {
+    }), (0, c.jsx)(l.Z, {
       guildId: e.guild_id,
       leaderboardId: e.leaderboard_id
     })]
   })
 }
-let O = t => {
+let v = t => {
   var e;
   let {
-    guildId: c,
-    leaderboardId: f,
-    previewMode: p = !1,
-    source: b,
+    guildId: a,
+    leaderboardId: i,
+    previewMode: o = !1,
+    source: l,
     trackRankingItemInteraction: g
-  } = t, [j, O] = a.useState(p), y = a.useRef(null), N = (0, i.Z)({
-    guildId: c,
-    leaderboardId: f,
+  } = t, [j, v] = d.useState(o), x = d.useRef(null), O = (0, p.Z)({
+    guildId: a,
+    leaderboardId: i,
     intervalOffset: 0
-  }), S = (0, i.Z)({
-    guildId: c,
-    leaderboardId: f,
+  }), N = (0, p.Z)({
+    guildId: a,
+    leaderboardId: i,
     intervalOffset: -1
   });
-  (0, s.Tbt)(y),
+  (0, s.Tbt)(x),
   function(t) {
     let {
       guildId: e,
-      leaderboardId: c,
-      source: d
+      leaderboardId: a,
+      source: c
     } = t, s = {
-      leaderboard: (0, i.Z)({
+      leaderboard: (0, p.Z)({
         guildId: null != e ? e : "",
-        leaderboardId: c,
+        leaderboardId: a,
         intervalOffset: 0
       }),
-      prevLeaderboard: (0, i.Z)({
+      prevLeaderboard: (0, p.Z)({
         guildId: null != e ? e : "",
-        leaderboardId: c,
+        leaderboardId: a,
         intervalOffset: -1
       })
-    }, n = a.useRef(s);
-    a.useEffect(() => {
+    }, n = d.useRef(s);
+    d.useEffect(() => {
       n.current = s
-    }), a.useEffect(() => {
-      let t, c;
+    }), d.useEffect(() => {
+      let t, a;
       let {
-        leaderboard: a,
+        leaderboard: d,
         prevLeaderboard: s
       } = n.current;
-      if (null == a) return;
-      let f = a.guild_settings.sort_by_statistic_id;
+      if (null == d) return;
+      let i = d.guild_settings.sort_by_statistic_id;
       if (null != s) {
-        var p, i;
+        var o, p;
         let e = s.guild_settings.sort_by_statistic_id,
-          d = s.users[0];
-        t = null == d ? void 0 : d.user_id, c = null == d ? void 0 : null === (i = d.statistics) || void 0 === i ? void 0 : null === (p = i[e]) || void 0 === p ? void 0 : p.value
+          c = s.users[0];
+        t = null == c ? void 0 : c.user_id, a = null == c ? void 0 : null === (p = c.statistics) || void 0 === p ? void 0 : null === (o = p[e]) || void 0 === o ? void 0 : o.value
       }
-      o.default.track(m.rMx.LEADERBOARD_POPOUT_VIEWED, {
+      f.default.track(m.rMx.LEADERBOARD_POPOUT_VIEWED, {
         guild_id: e,
-        leaderboard_id: a.leaderboard_id,
-        interval_start: a.interval_start,
-        interval_end: a.interval_end,
-        sort_by_statistic_id: f,
-        sort_desc: a.guild_settings.sort_desc,
-        ordered_leaderboard_user_ids: a.users.map(t => t.user_id),
-        ordered_leaderboard_user_values: a.users.map(t => {
-          var e, c;
-          return null !== (c = null === (e = t.statistics[f]) || void 0 === e ? void 0 : e.value) && void 0 !== c ? c : 0
+        leaderboard_id: d.leaderboard_id,
+        interval_start: d.interval_start,
+        interval_end: d.interval_end,
+        sort_by_statistic_id: i,
+        sort_desc: d.guild_settings.sort_desc,
+        ordered_leaderboard_user_ids: d.users.map(t => t.user_id),
+        ordered_leaderboard_user_values: d.users.map(t => {
+          var e, a;
+          return null !== (a = null === (e = t.statistics[i]) || void 0 === e ? void 0 : e.value) && void 0 !== a ? a : 0
         }),
-        opened_from_source: d,
+        opened_from_source: c,
         last_interval_champion_id: t,
-        last_interval_champion_value: c
+        last_interval_champion_value: a
       })
-    }, [e, c, d])
+    }, [e, a, c])
   }({
-    guildId: c,
-    leaderboardId: f,
-    source: b
+    guildId: a,
+    leaderboardId: i,
+    source: l
   });
-  let Z = (0, n.q)(null == N ? void 0 : null === (e = N.settings) || void 0 === e ? void 0 : e.application_id);
-  return null == N || null == Z ? null : (0, d.jsx)(v, {
-    children: (0, d.jsxs)("div", {
-      className: _.popout,
-      ref: y,
-      children: [(0, d.jsxs)("div", {
-        className: _.content,
-        children: [(0, d.jsx)(x, {
-          leaderboard: N,
-          application: Z
-        }), (0, d.jsx)(l.Z, {
-          leaderboard: N,
+  let S = (0, n.q)(null == O ? void 0 : null === (e = O.settings) || void 0 === e ? void 0 : e.application_id);
+  return null == O || null == S ? null : (0, c.jsx)(_, {
+    children: (0, c.jsxs)("div", {
+      className: y.popout,
+      ref: x,
+      children: [(0, c.jsxs)("div", {
+        className: y.content,
+        children: [(0, c.jsx)(B, {
+          leaderboard: O,
+          application: S
+        }), (0, c.jsx)(u.Z, {
+          leaderboard: O,
           previewMode: j,
           trackRankingItemInteraction: g
-        }), j ? null : (0, d.jsxs)(d.Fragment, {
-          children: [null != S && (0, d.jsx)(u.Z, {
-            className: _.previousChampion,
-            guildId: c,
-            leaderboard: S
-          }), (0, d.jsx)(r.Z, {
-            guildId: c,
-            leaderboardId: f
+        }), j ? null : (0, c.jsxs)(c.Fragment, {
+          children: [null != N && (0, c.jsx)(b.Z, {
+            className: y.previousChampion,
+            guildId: a,
+            leaderboard: N
+          }), (0, c.jsx)(r.Z, {
+            guildId: a,
+            leaderboardId: i
           })]
         })]
-      }), j ? (0, d.jsx)(s.P3F, {
-        onClick: () => O(!1),
-        children: (0, d.jsx)("div", {
-          className: _.exitPreviewModeButton,
-          children: (0, d.jsx)(s.Text, {
+      }), j ? (0, c.jsx)(s.P3F, {
+        onClick: () => v(!1),
+        children: (0, c.jsx)("div", {
+          className: y.exitPreviewModeButton,
+          children: (0, c.jsx)(s.Text, {
             variant: "text-sm/medium",
-            className: _.exitPreviewModeText,
+            className: y.exitPreviewModeText,
             children: h.NW.string(h.t.GLeQe3)
           })
         })

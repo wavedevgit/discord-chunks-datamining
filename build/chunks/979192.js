@@ -1,35 +1,35 @@
 /** Chunk was on 11212 **/
 "use strict";
-c.d(e, {
-  O: () => i
+a.d(e, {
+  O: () => p
 });
-var d = c(442837),
-  a = c(675478),
-  s = c(581883),
-  n = c(626135),
-  o = c(434382),
-  f = c(981631);
-async function p(t, e) {
-  await (0, a.PS)(t, c => {
-    c.leaderboardsDisabled = !c.leaderboardsDisabled, n.default.track(f.rMx.LEADERBOARD_USER_OPT_OUT_UPDATED, {
+var c = a(442837),
+  d = a(675478),
+  s = a(581883),
+  n = a(626135),
+  f = a(434382),
+  i = a(981631);
+async function o(t, e) {
+  await (0, d.PS)(t, a => {
+    a.leaderboardsDisabled = !a.leaderboardsDisabled, n.default.track(i.rMx.LEADERBOARD_USER_OPT_OUT_UPDATED, {
       leaderboard_id: e,
       guild_id: t,
-      leaderboards_disabled: c.leaderboardsDisabled
+      leaderboards_disabled: a.leaderboardsDisabled
     })
-  }, a.fy.INFREQUENT_USER_ACTION), await new Promise(t => setTimeout(t, 300)), await o.Z.fetchLeaderboard({
+  }, d.fy.INFREQUENT_USER_ACTION), await new Promise(t => setTimeout(t, 300)), await f.Z.fetchLeaderboard({
     guildId: t,
     leaderboardId: e,
     force: !0
   })
 }
 
-function i(t, e) {
-  let c = (0, d.e7)([s.Z], () => {
-    var e, c;
-    return null === (c = s.Z.settings.guilds) || void 0 === c ? void 0 : null === (e = c.guilds) || void 0 === e ? void 0 : e[t]
+function p(t, e) {
+  let a = (0, c.e7)([s.Z], () => {
+    var e, a;
+    return null === (a = s.Z.settings.guilds) || void 0 === a ? void 0 : null === (e = a.guilds) || void 0 === e ? void 0 : e[t]
   }, [t]);
   return {
-    leaderboardsDisabled: (null == c ? void 0 : c.leaderboardsDisabled) === !0,
-    toggleGuildLeaderboardsDisabled: () => p(t, e)
+    leaderboardsDisabled: (null == a ? void 0 : a.leaderboardsDisabled) === !0,
+    toggleGuildLeaderboardsDisabled: () => o(t, e)
   }
 }

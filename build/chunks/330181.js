@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -12,7 +12,7 @@ var r = n(200651),
   d = n(584825),
   u = n(931547),
   m = n(388032);
-let g = e => {
+let p = e => {
   let [t, n] = i.useState(!1), [r, s] = i.useState(null);
   return {
     resetRenewalMutation: async t => {
@@ -30,7 +30,7 @@ let g = e => {
   }
 };
 
-function p(e) {
+function g(e) {
   let {
     groupListingId: t,
     subscription: n,
@@ -38,14 +38,14 @@ function p(e) {
   } = e, {
     analyticsLocations: l
   } = (0, c.ZP)(o.Z.PENDING_PLAN_CHANGE_NOTICE), {
-    resetRenewalMutation: p,
+    resetRenewalMutation: g,
     submitting: h,
     error: f
-  } = g(l), b = (0, d._k)(t, {
+  } = p(l), x = (0, d._k)(t, {
     includeSoftDeleted: !0
   }), {
-    currentListing: N,
-    nextListing: x
+    currentListing: b,
+    nextListing: N
   } = i.useMemo(() => {
     if ((null == n ? void 0 : n.renewalMutations) == null) return {
       currentListing: void 0,
@@ -54,20 +54,20 @@ function p(e) {
     let e = n.items[0].planId,
       t = n.renewalMutations.items[0].planId;
     return {
-      currentListing: b.find(t => t.subscription_plans[0].id === e),
-      nextListing: b.find(e => e.subscription_plans[0].id === t)
+      currentListing: x.find(t => t.subscription_plans[0].id === e),
+      nextListing: x.find(e => e.subscription_plans[0].id === t)
     }
-  }, [n, b]);
-  if (null == n || null == N || null == x) return null;
+  }, [n, x]);
+  if (null == n || null == b || null == N) return null;
   let _ = a()(n.currentPeriodEnd).format("MMM DD, YYYY");
   return (0, r.jsx)(u.Z, {
     message: m.NW.format(m.t.chw89f, {
-      currentListing: N.name,
-      nextListing: x.name,
+      currentListing: b.name,
+      nextListing: N.name,
       changeDate: _
     }),
     error: null == f ? void 0 : f.message,
-    onClick: () => p(n),
+    onClick: () => g(n),
     submitting: h,
     ctaMessage: m.NW.string(m.t.De4wIy),
     className: s

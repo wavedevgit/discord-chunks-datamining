@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => j
 }), n(47120);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(410154),
   u = n(695349),
   m = n(314684),
-  g = n(687362),
-  p = n(675619),
+  p = n(687362),
+  g = n(675619),
   h = n(119850),
   f = n(32173),
-  b = n(391110),
-  N = n(75077),
-  x = n(320319),
+  x = n(391110),
+  b = n(75077),
+  N = n(320319),
   _ = n(730313);
 let E = e => {
     let {
@@ -50,14 +50,14 @@ let E = e => {
     var t;
     let {
       className: n,
-      variant: s = b.R0.PERKS_DISCOVERABILITY,
+      variant: s = x.R0.PERKS_DISCOVERABILITY,
       noBackground: j = !1,
       leftAlignHeaders: C = !1,
       showAllPerksButton: O,
       headerClassname: v,
       isFullScreen: S = !0,
       shouldAutoScroll: T = !1
-    } = e, I = i.useRef(null), y = (0, m.Er)(), A = (0, g.v)(y), P = (0, d.ZP)("perks-discoverability"), R = s === b.R0.WHATS_NEW, D = (0, m.IY)(), Z = (0, h.x)();
+    } = e, I = i.useRef(null), y = (0, m.Er)(), A = (0, p.v)(y), P = (0, d.ZP)("perks-discoverability"), R = s === x.R0.WHATS_NEW, D = (0, m.IY)(), Z = (0, h.x)();
     i.useEffect(() => {
       R && !A && (D(), Z())
     }, [D, Z, R, A]);
@@ -65,20 +65,20 @@ let E = e => {
         R && A && D()
       },
       k = A && R;
-    (0, p.r)({
+    (0, g.r)({
       ref: I,
       shouldScroll: k || T,
       onScrollEnd: w,
       onCleanup: w
     });
-    let W = (0, N.Op)(R),
+    let W = (0, b.Op)(R),
       L = (0, f.Z)(),
-      B = (0, N.mN)(),
+      B = (0, b.mN)(),
       {
         fractionalState: M
       } = (0, c.Z)(),
       U = (0, u.W)(),
-      V = (0, N.sP)({
+      V = (0, b.sP)({
         perksCards: L,
         variant: s,
         shopMarketingVariation: P,
@@ -129,7 +129,7 @@ let E = e => {
           }),
           children: V.map((e, t) => {
             var n, i;
-            return (0, r.jsx)(x.Z, (n = function(e) {
+            return (0, r.jsx)(N.Z, (n = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   r = Object.keys(n);

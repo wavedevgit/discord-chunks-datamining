@@ -1,151 +1,156 @@
 /** Chunk was on 59056 **/
 n.d(t, {
-  default: () => L
+  default: () => v
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   a = n(512722),
-  s = n.n(a),
-  l = n(913527),
-  o = n.n(l),
+  l = n.n(a),
+  s = n(913527),
+  o = n.n(s),
   c = n(442837),
   d = n(481060),
   u = n(749210),
-  f = n(600164),
-  h = n(313201),
-  m = n(592125),
-  x = n(944486),
-  N = n(594174),
-  _ = n(626135),
-  b = n(63063),
-  g = n(771308),
-  k = n(758119),
-  E = n(622822),
-  y = n(13430),
-  j = n(723359),
-  z = n(981631),
-  A = n(388032),
-  C = n(326610);
+  f = n(168107),
+  h = n(480916),
+  m = n(600164),
+  x = n(313201),
+  _ = n(592125),
+  N = n(944486),
+  b = n(594174),
+  g = n(626135),
+  E = n(63063),
+  k = n(771308),
+  A = n(758119),
+  y = n(622822),
+  j = n(13430),
+  z = n(723359),
+  C = n(981631),
+  L = n(388032),
+  R = n(326610);
 
-function L(e) {
+function v(e) {
   let {
     transitionState: t,
     source: a
-  } = e, l = (0, c.e7)([N.default], () => N.default.getCurrentUser()), L = (0, c.e7)([x.Z, m.Z], () => m.Z.getChannel(x.Z.getChannelId())), [R, v] = i.useState(null), [T, S] = i.useState(null), [W, p] = i.useState(!1), [M, w] = i.useState(0), G = i.createRef(), I = i.createRef(), Z = (0, h.Dt)(), D = (0, E.Kt)(), Y = null != R ? o()().diff(R, "years") : null;
+  } = e, s = (0, c.e7)([b.default], () => b.default.getCurrentUser()), v = (0, c.e7)([N.Z, _.Z], () => _.Z.getChannel(N.Z.getChannelId())), [S, T] = i.useState(null), [W, M] = i.useState(null), [p, G] = i.useState(!1), [w, I] = i.useState(0), Z = i.createRef(), D = i.createRef(), Y = (0, x.Dt)(), F = (0, y.Kt)(), P = null != S ? o()().diff(S, "years") : null;
 
-  function F() {
-    if (a === j.L0.NSFW_SERVER_INVITE_EMBED) {
-      (0, k.qV)(a);
+  function B() {
+    if (a === z.L0.NSFW_SERVER_INVITE_EMBED) {
+      (0, A.qV)(a);
       return
     }
-    let e = null == L ? void 0 : L.getGuildId();
-    u.Z.nsfwReturnToSafety(e), (0, k.qV)(a)
+    let e = null == v ? void 0 : v.getGuildId();
+    u.Z.nsfwReturnToSafety(e), (0, A.qV)(a)
   }
-  async function P() {
-    s()(null != R, "Cannot submit null birthday.");
+  async function U() {
+    l()(null != S, "Cannot submit null birthday.");
     try {
-      return S(null), p(!0), await (0, g.Av)(R, a)
+      return M(null), G(!0), await (0, k.Av)(S, a)
     } catch (t) {
-      if (null != t.body && null != t.body.date_of_birth)(0, k.C8)(a, t.body.date_of_birth);
+      if (null != t.body && null != t.body.date_of_birth)(0, A.C8)(a, t.body.date_of_birth);
       else {
         var e;
-        (null == t ? void 0 : null === (e = t.body) || void 0 === e ? void 0 : e.username) != null ? S(A.NW.string(A.t["TGg/2t"])) : S(null == t ? void 0 : t.body.message), p(!1)
+        (null == t ? void 0 : null === (e = t.body) || void 0 === e ? void 0 : e.username) != null ? M(L.NW.string(L.t["TGg/2t"])) : M(null == t ? void 0 : t.body.message), G(!1)
       }
     }
   }
-  async function B() {
-    if (s()(null != Y, "Cannot submit if we haven't been able to calculate age."), Y < 18) {
-      w(1);
+  async function q() {
+    if (l()(null != P, "Cannot submit if we haven't been able to calculate age."), P < 18) {
+      I(1);
       return
     }
-    await P()
+    await U()
   }
-  async function U(e) {
-    e.preventDefault(), W || null == R || await B()
+  async function K(e) {
+    e.preventDefault(), p || null == S || await q()
   }
-  async function q() {
-    null == await P() && w(0)
+  async function O() {
+    null == await U() && I(0)
   }
   i.useEffect(() => {
-    null != l && null != l.nsfwAllowed && (0, k.qq)(a)
+    null != s && null != s.nsfwAllowed && (0, A.qq)(a)
   }), i.useEffect(() => {
-    _.default.track(z.rMx.AGE_GATE_ACTION, {
+    g.default.track(C.rMx.AGE_GATE_ACTION, {
       source: a,
-      action: j.Al.AGE_GATE_OPEN
+      action: z.Al.AGE_GATE_OPEN
     })
   }, [a]);
-  let K = i.useCallback(e => {
-      v(e)
-    }, [v]),
-    O = i.useCallback(() => {
+  let V = i.useCallback(e => {
+      T(e)
+    }, [T]),
+    X = i.useCallback(() => {
       var e;
-      null === (e = I.current) || void 0 === e || e.focus()
-    }, [I]);
-  return D ? (0, r.jsxs)(d.Y0X, {
+      null === (e = D.current) || void 0 === e || e.focus()
+    }, [D]),
+    Q = i.useCallback(() => {
+      f.Z.showAgeVerificationGetStartedModal(h.cU.NSFW_AGE_GATE)
+    }, []);
+  return F ? (0, r.jsxs)(d.Y0X, {
     transitionState: t,
     size: d.CgR.SMALL,
     children: [(0, r.jsx)(d.hzk, {
       children: (0, r.jsxs)("div", {
-        className: C.container,
+        className: R.container,
         children: [(0, r.jsx)("img", {
           alt: "",
           src: n(462991),
-          className: C.img
+          className: R.img
         }), (0, r.jsx)(d.X6q, {
           variant: "heading-xl/semibold",
-          className: C.title,
-          children: A.NW.string(A.t.ZmwvDQ)
+          className: R.title,
+          children: L.NW.string(L.t.ZmwvDQ)
         }), (0, r.jsx)(d.Text, {
           color: "header-secondary",
           variant: "text-sm/normal",
-          children: A.NW.string(A.t["NjO/s7"])
+          children: L.NW.string(L.t["NjO/s7"])
         })]
       })
     }), (0, r.jsxs)(d.mzw, {
-      justify: f.Z.Justify.BETWEEN,
+      justify: m.Z.Justify.BETWEEN,
       children: [(0, r.jsx)(d.zxk, {
         size: d.PhG.SMALL,
-        onClick: F,
-        children: A.NW.string(A.t.SFWVER)
+        onClick: Q,
+        children: L.NW.string(L.t.SFWVER)
       }), (0, r.jsx)(d.zxk, {
         look: d.zxk.Looks.LINK,
         size: d.zxk.Sizes.NONE,
         color: d.zxk.Colors.PRIMARY,
-        onClick: F,
-        children: A.NW.string(A.t.f3Pet7)
+        onClick: B,
+        children: L.NW.string(L.t.f3Pet7)
       })]
     })]
-  }) : 0 === M ? function() {
-    let e = a === j.L0.FAMILY_CENTER ? A.NW.string(A.t.M7mt7u) : A.NW.string(A.t.F8otRk),
+  }) : 0 === w ? function() {
+    let e = a === z.L0.FAMILY_CENTER ? L.NW.string(L.t.M7mt7u) : L.NW.string(L.t.F8otRk),
       i = (() => {
         switch (a) {
-          case j.L0.FAMILY_CENTER:
-            return A.NW.string(A.t.mhUrKS);
-          case j.L0.DEEP_LINK_PROMPT:
-            return A.NW.format(A.t.iyhg2t, {
-              helpURL: b.Z.getArticleURL(z.BhN.AGE_GATE)
+          case z.L0.FAMILY_CENTER:
+            return L.NW.string(L.t.mhUrKS);
+          case z.L0.DEEP_LINK_PROMPT:
+            return L.NW.format(L.t.iyhg2t, {
+              helpURL: E.Z.getArticleURL(C.BhN.AGE_GATE)
             });
           default:
-            return A.NW.format(A.t.n3QjDA, {
-              helpURL: b.Z.getArticleURL(z.BhN.AGE_GATE)
+            return L.NW.format(L.t.n3QjDA, {
+              helpURL: E.Z.getArticleURL(C.BhN.AGE_GATE)
             })
         }
       })();
     return (0, r.jsxs)(d.Y0X, {
       transitionState: t,
       size: d.CgR.SMALL,
-      "aria-labelledby": Z,
+      "aria-labelledby": Y,
       children: [(0, r.jsxs)(d.hzk, {
         children: [(0, r.jsxs)("div", {
-          className: C.container,
+          className: R.container,
           children: [(0, r.jsx)("img", {
             alt: "",
             src: n(462991),
-            className: C.img
+            className: R.img
           }), (0, r.jsx)(d.X6q, {
             variant: "heading-xl/semibold",
-            className: C.title,
-            id: Z,
+            className: R.title,
+            id: Y,
             children: e
           }), (0, r.jsx)(d.Text, {
             color: "header-secondary",
@@ -153,71 +158,71 @@ function L(e) {
             children: i
           })]
         }), (0, r.jsx)("form", {
-          onSubmit: U,
-          children: (0, r.jsx)(y.Z, {
-            label: A.NW.string(A.t.rhBeKS),
-            wrapperClassName: C.birthday,
+          onSubmit: K,
+          children: (0, r.jsx)(j.Z, {
+            label: L.NW.string(L.t.rhBeKS),
+            wrapperClassName: R.birthday,
             name: "date_of_birth",
-            onChange: K,
-            onPopulated: O,
-            error: T,
-            value: R,
-            ref: G,
+            onChange: V,
+            onPopulated: X,
+            error: W,
+            value: S,
+            ref: Z,
             autoFocus: !0
           })
         })]
       }), (0, r.jsxs)(d.mzw, {
-        justify: f.Z.Justify.BETWEEN,
+        justify: m.Z.Justify.BETWEEN,
         children: [(0, r.jsx)(d.zxk, {
-          buttonRef: I,
-          submitting: W,
-          disabled: null == R,
+          buttonRef: D,
+          submitting: p,
+          disabled: null == S,
           size: d.PhG.SMALL,
-          onClick: B,
-          children: A.NW.string(A.t.uBFuoq)
+          onClick: q,
+          children: L.NW.string(L.t.uBFuoq)
         }), (0, r.jsx)(d.zxk, {
           look: d.zxk.Looks.LINK,
           size: d.zxk.Sizes.NONE,
           color: d.zxk.Colors.PRIMARY,
-          onClick: F,
-          children: A.NW.string(A.t["1MrpWF"])
+          onClick: B,
+          children: L.NW.string(L.t["1MrpWF"])
         })]
       })]
     })
   }() : (0, r.jsxs)(d.Y0X, {
     transitionState: d.Dvm.ENTERED,
     size: d.CgR.SMALL,
-    "aria-labelledby": Z,
+    "aria-labelledby": Y,
     children: [(0, r.jsx)(d.hzk, {
       children: (0, r.jsxs)("div", {
-        className: C.confirmContainer,
+        className: R.confirmContainer,
         children: [(0, r.jsx)(d.X6q, {
           variant: "heading-xl/semibold",
-          className: C.confirmTitle,
-          id: Z,
-          children: A.NW.format(A.t.wumolZ, {
-            age: Y
+          className: R.confirmTitle,
+          id: Y,
+          children: L.NW.format(L.t.wumolZ, {
+            age: P
           })
         }), (0, r.jsx)(d.Text, {
           color: "header-secondary",
           variant: "text-sm/normal",
-          children: A.NW.format(A.t.n3QjDA, {
-            helpURL: b.Z.getArticleURL(z.BhN.AGE_GATE)
+          children: L.NW.format(L.t.n3QjDA, {
+            helpURL: E.Z.getArticleURL(C.BhN.AGE_GATE)
           })
         })]
       })
     }), (0, r.jsxs)(d.mzw, {
-      className: C.confirmFooter,
+      className: R.confirmFooter,
       children: [(0, r.jsx)(d.zxk, {
         look: d.zxk.Looks.LINK,
         size: d.zxk.Sizes.NONE,
         color: d.zxk.Colors.PRIMARY,
-        onClick: () => w(0),
-        children: A.NW.string(A.t.cfYCra)
+        onClick: () => I(0),
+        children: L.NW.string(L.t.cfYCra)
       }), (0, r.jsx)(d.zxk, {
         color: d.zxk.Colors.BRAND,
-        onClick: q,
-        children: A.NW.string(A.t["6tahio"])
+        onClick: O,
+        children: L.NW.string(L.t["6tahio"])
       })]
     })]
   })

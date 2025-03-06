@@ -5,7 +5,7 @@ var t = 30,
 e.exports = function(e, r) {
   var i, o, a, s, l, c, u, d, f, _, p, h, g, m, E, v, b, y, O, S, I, T, N, A, C;
   i = e.state, o = e.next_in, A = e.input, a = o + (e.avail_in - 5), s = e.next_out, C = e.output, l = s - (r - e.avail_out), c = s + (e.avail_out - 257), u = i.dmax, d = i.wsize, f = i.whave, _ = i.wnext, p = i.window, h = i.hold, g = i.bits, m = i.lencode, E = i.distcode, v = (1 << i.lenbits) - 1, b = (1 << i.distbits) - 1;
-  n: do
+  r: do
       for (g < 15 && (h += A[o++] << g, g += 8, h += A[o++] << g, g += 8), y = m[h & v];;) {
         if (h >>>= O = y >>> 24, g -= O, 0 == (O = y >>> 16 & 255)) C[s++] = 65535 & y;
         else if (16 & O)
@@ -13,12 +13,12 @@ e.exports = function(e, r) {
             if (h >>>= O = y >>> 24, g -= O, 16 & (O = y >>> 16 & 255)) {
               if (I = 65535 & y, g < (O &= 15) && (h += A[o++] << g, (g += 8) < O && (h += A[o++] << g, g += 8)), (I += h & (1 << O) - 1) > u) {
                 e.msg = "invalid distance too far back", i.mode = t;
-                break n
+                break r
               }
               if (h >>>= O, g -= O, I > (O = s - l)) {
                 if ((O = I - O) > f && i.sane) {
                   e.msg = "invalid distance too far back", i.mode = t;
-                  break n
+                  break r
                 }
                 if (T = 0, N = p, 0 === _) {
                   if (T += d - O, O < S) {
@@ -53,7 +53,7 @@ e.exports = function(e, r) {
               continue
             } else {
               e.msg = "invalid distance code", i.mode = t;
-              break n
+              break r
             }
             break
           } else if ((64 & O) == 0) {
@@ -61,10 +61,10 @@ e.exports = function(e, r) {
             continue
           } else if (32 & O) {
           i.mode = n;
-          break n
+          break r
         } else {
           e.msg = "invalid literal/length code", i.mode = t;
-          break n
+          break r
         }
         break
       }

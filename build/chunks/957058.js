@@ -1,17 +1,17 @@
 /** Chunk was on 45620 **/
 "use strict";
-r.d(t, {
-  u: () => a
+n.d(t, {
+  u: () => i
 });
-var n = r(192379),
-  l = r(557816),
-  i = r.n(l),
-  o = r(597688),
-  s = r(228624);
-let a = () => {
-  let e = (0, s.ed)("CollectiblesFeedShop");
-  return (0, n.useCallback)(t => i()(t.map(t => {
-    let r = o.Z.getProduct(t);
-    return e && null != r && null != r.variantGroupStoreListingId ? o.Z.getProductByStoreListingId(r.variantGroupStoreListingId) : r
+var r = n(192379),
+  l = n(557816),
+  a = n.n(l),
+  s = n(597688),
+  o = n(228624);
+let i = () => {
+  let e = (0, o.ed)("CollectiblesFeedShop");
+  return (0, r.useCallback)(t => a()(t.map(t => {
+    let n = s.Z.getProduct(t);
+    return e && null != n && null != n.variantGroupStoreListingId ? s.Z.getProductByStoreListingId(n.variantGroupStoreListingId) : n
   }).filter(e => null != e), "storeListingId"), [e])
 }

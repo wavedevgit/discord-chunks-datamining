@@ -20,12 +20,12 @@ function u(e, t, n) {
     if (g) return l(g);
     _ = !1, d = a, h = new r
   } else h = t ? [] : p;
-  t: for (; ++u < f;) {
+  n: for (; ++u < f;) {
     var m = e[u],
       E = t ? t(m) : m;
     if (m = n || 0 !== m ? m : 0, _ && E == E) {
       for (var v = h.length; v--;)
-        if (h[v] === E) continue t;
+        if (h[v] === E) continue n;
       t && h.push(E), p.push(m)
     } else d(h, E, n) || (h !== p && h.push(E), p.push(m))
   }

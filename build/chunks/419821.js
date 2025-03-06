@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   u: () => h
 });
@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(933970),
   u = n(340453),
   m = n(292352),
-  g = n(388032),
-  p = n(944921);
+  p = n(388032),
+  g = n(944921);
 
 function h(e) {
   let {
@@ -59,18 +59,18 @@ function h(e) {
     })
   }, [s, t]);
   return (0, r.jsxs)("div", {
-    className: p.container,
+    className: g.container,
     children: [(0, r.jsx)("div", {
-      className: p.details,
+      className: g.details,
       children: (0, r.jsx)(u.Z, {
         otherUser: t,
         status: m.ne.ACTIVE
       })
     }), (0, r.jsx)("div", {
-      className: p.actions,
+      className: g.actions,
       children: (0, r.jsx)(d.Z, {
         icon: o.Dio,
-        tooltip: g.NW.string(g.t.l20ZZm),
+        tooltip: p.NW.string(p.t.l20ZZm),
         onClick: h
       })
     })]

@@ -1,6 +1,6 @@
 /** Chunk was on 10125 **/
 a.r(t), a.d(t, {
-  default: () => A
+  default: () => k
 }), a(47120), a(301563);
 var s = a(200651),
   n = a(192379),
@@ -21,14 +21,14 @@ var s = a(200651),
   h = a(388032),
   T = a(36249),
   f = a(74830),
-  j = a(13299);
+  P = a(13299);
 i.ZP.initialize();
-let k = c.tq || c.Em;
+let j = c.tq || c.Em;
 
-function A(e) {
+function k(e) {
   let {
     match: t
-  } = e, a = (0, i.e7)([g.Z], () => g.Z.getState("quests")), c = t.params.questId, A = function(e) {
+  } = e, a = (0, i.e7)([g.Z], () => g.Z.getState("quests")), c = t.params.questId, k = function(e) {
     let [t, a] = n.useState(null);
     return n.useEffect(() => {
       (0, u.gU)(e).then(e => a({
@@ -40,7 +40,7 @@ function A(e) {
     }, [a, e]), t
   }(c);
   n.useEffect(() => {
-    !k && (null == a ? ((0, m.dA)({
+    !j && (null == a ? ((0, m.dA)({
       questId: c,
       event: E.rMx.QUEST_SHARE_LINK_DEEP_LINKED_INTO_DESKTOP_CLIENT
     }), o.Z.openNativeAppModal("quests", E.Etm.DEEP_LINK, {
@@ -53,12 +53,12 @@ function A(e) {
       hash: c
     }))
   }, [a, c]);
-  let I = n.useCallback(() => (0, N.openAppWithQuest)(c), [c]);
-  if (k) return (0, s.jsxs)("div", {
+  let A = n.useCallback(() => (0, N.openAppWithQuest)(c), [c]);
+  if (j) return (0, s.jsxs)("div", {
     className: T.page,
     children: [(0, s.jsx)("img", {
       className: T.bgImg,
-      src: j.Z,
+      src: P.ZP,
       alt: ""
     }), (0, s.jsx)("div", {
       className: T.logoContainer,
@@ -66,13 +66,13 @@ function A(e) {
         src: f,
         alt: ""
       })
-    }), null != A && (0, s.jsxs)("div", {
+    }), null != k && (0, s.jsxs)("div", {
       className: T.card,
-      children: ["ok" === A.status && (0, s.jsxs)(s.Fragment, {
+      children: ["ok" === k.status && (0, s.jsxs)(s.Fragment, {
         children: [(0, s.jsx)("div", {
           className: T.gameTile,
           children: (0, s.jsx)("img", {
-            src: "".concat(p.tD).concat(c, "/dark/").concat(A.value.assets.gameTile),
+            src: "".concat(p.tD).concat(c, "/dark/").concat(k.value.assets.gameTile),
             alt: "",
             className: T.gameTileImg
           })
@@ -80,7 +80,7 @@ function A(e) {
           variant: "heading-lg/semibold",
           color: "text-normal",
           className: T.headingText,
-          children: A.value.messages.questName
+          children: k.value.messages.questName
         })]
       }), (0, s.jsx)(l.Text, {
         variant: "text-md/normal",
@@ -88,12 +88,12 @@ function A(e) {
         children: h.NW.string(h.t.NweJIy)
       }), (0, s.jsx)(l.zxk, {
         fullWidth: !0,
-        onClick: I,
+        onClick: A,
         children: h.NW.string(h.t.UQvCf3)
       })]
     })]
   });
-  let P = null == a || a === E.kEZ.OPENING || a === E.kEZ.OPEN_FAIL;
+  let I = null == a || a === E.kEZ.OPENING || a === E.kEZ.OPEN_FAIL;
   return (0, s.jsxs)(s.Fragment, {
     children: [(0, s.jsx)(r.Z, {
       className: T.backgroundArtwork,
@@ -101,7 +101,7 @@ function A(e) {
     }), (0, s.jsx)("div", {
       className: T.container,
       children: (0, s.jsx)(d.ZP, {
-        children: P ? (0, s.jsxs)(s.Fragment, {
+        children: I ? (0, s.jsxs)(s.Fragment, {
           children: [(0, s.jsx)(d.Dx, {
             children: h.NW.string(h.t["Z+hCVV"])
           }), (0, s.jsx)(d.Hh, {})]

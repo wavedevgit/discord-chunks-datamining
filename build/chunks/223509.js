@@ -115,14 +115,14 @@ function ep(e, t) {
     eA = [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15];
   if (!e || !e.state || !e.output || !e.input && 0 !== e.avail_in) return v;
   (n = e.state).mode === M && (n.mode = k), en = e.next_out, i = e.output, eo = e.avail_out, et = e.next_in, r = e.input, er = e.avail_in, ea = n.hold, es = n.bits, el = er, ec = eo, eO = g;
-  r: for (;;) switch (n.mode) {
+  i: for (;;) switch (n.mode) {
     case I:
       if (0 === n.wrap) {
         n.mode = k;
         break
       }
       for (; es < 16;) {
-        if (0 === er) break r;
+        if (0 === er) break i;
         er--, ea += r[et++] << es, es += 8
       }
       if (2 & n.wrap && 35615 === ea) {
@@ -146,7 +146,7 @@ function ep(e, t) {
       break;
     case T:
       for (; es < 16;) {
-        if (0 === er) break r;
+        if (0 === er) break i;
         er--, ea += r[et++] << es, es += 8
       }
       if (n.flags = ea, (255 & n.flags) !== S) {
@@ -160,48 +160,48 @@ function ep(e, t) {
       n.head && (n.head.text = ea >> 8 & 1), 512 & n.flags && (eN[0] = 255 & ea, eN[1] = ea >>> 8 & 255, n.check = s(n.check, eN, 2, 0)), ea = 0, es = 0, n.mode = N;
     case N:
       for (; es < 32;) {
-        if (0 === er) break r;
+        if (0 === er) break i;
         er--, ea += r[et++] << es, es += 8
       }
       n.head && (n.head.time = ea), 512 & n.flags && (eN[0] = 255 & ea, eN[1] = ea >>> 8 & 255, eN[2] = ea >>> 16 & 255, eN[3] = ea >>> 24 & 255, n.check = s(n.check, eN, 4, 0)), ea = 0, es = 0, n.mode = A;
     case A:
       for (; es < 16;) {
-        if (0 === er) break r;
+        if (0 === er) break i;
         er--, ea += r[et++] << es, es += 8
       }
       n.head && (n.head.xflags = 255 & ea, n.head.os = ea >> 8), 512 & n.flags && (eN[0] = 255 & ea, eN[1] = ea >>> 8 & 255, n.check = s(n.check, eN, 2, 0)), ea = 0, es = 0, n.mode = C;
     case C:
       if (1024 & n.flags) {
         for (; es < 16;) {
-          if (0 === er) break r;
+          if (0 === er) break i;
           er--, ea += r[et++] << es, es += 8
         }
         n.length = ea, n.head && (n.head.extra_len = ea), 512 & n.flags && (eN[0] = 255 & ea, eN[1] = ea >>> 8 & 255, n.check = s(n.check, eN, 2, 0)), ea = 0, es = 0
       } else n.head && (n.head.extra = null);
       n.mode = R;
     case R:
-      if (1024 & n.flags && ((eu = n.length) > er && (eu = er), eu && (n.head && (ey = n.head.extra_len - n.length, n.head.extra || (n.head.extra = Array(n.head.extra_len)), o.arraySet(n.head.extra, r, et, eu, ey)), 512 & n.flags && (n.check = s(n.check, r, eu, et)), er -= eu, et += eu, n.length -= eu), n.length)) break r;
+      if (1024 & n.flags && ((eu = n.length) > er && (eu = er), eu && (n.head && (ey = n.head.extra_len - n.length, n.head.extra || (n.head.extra = Array(n.head.extra_len)), o.arraySet(n.head.extra, r, et, eu, ey)), 512 & n.flags && (n.check = s(n.check, r, eu, et)), er -= eu, et += eu, n.length -= eu), n.length)) break i;
       n.length = 0, n.mode = P;
     case P:
       if (2048 & n.flags) {
-        if (0 === er) break r;
+        if (0 === er) break i;
         eu = 0;
         do ey = r[et + eu++], n.head && ey && n.length < 65536 && (n.head.name += String.fromCharCode(ey)); while (ey && eu < er);
-        if (512 & n.flags && (n.check = s(n.check, r, eu, et)), er -= eu, et += eu, ey) break r
+        if (512 & n.flags && (n.check = s(n.check, r, eu, et)), er -= eu, et += eu, ey) break i
       } else n.head && (n.head.name = null);
       n.length = 0, n.mode = D;
     case D:
       if (4096 & n.flags) {
-        if (0 === er) break r;
+        if (0 === er) break i;
         eu = 0;
         do ey = r[et + eu++], n.head && ey && n.length < 65536 && (n.head.comment += String.fromCharCode(ey)); while (ey && eu < er);
-        if (512 & n.flags && (n.check = s(n.check, r, eu, et)), er -= eu, et += eu, ey) break r
+        if (512 & n.flags && (n.check = s(n.check, r, eu, et)), er -= eu, et += eu, ey) break i
       } else n.head && (n.head.comment = null);
       n.mode = w;
     case w:
       if (512 & n.flags) {
         for (; es < 16;) {
-          if (0 === er) break r;
+          if (0 === er) break i;
           er--, ea += r[et++] << es, es += 8
         }
         if (ea !== (65535 & n.check)) {
@@ -214,7 +214,7 @@ function ep(e, t) {
       break;
     case L:
       for (; es < 32;) {
-        if (0 === er) break r;
+        if (0 === er) break i;
         er--, ea += r[et++] << es, es += 8
       }
       e.adler = n.check = ei(ea), ea = 0, es = 0, n.mode = x;
@@ -222,14 +222,14 @@ function ep(e, t) {
       if (0 === n.havedict) return e.next_out = en, e.avail_out = eo, e.next_in = et, e.avail_in = er, n.hold = ea, n.bits = es, E;
       e.adler = n.check = 1, n.mode = M;
     case M:
-      if (t === p || t === h) break r;
+      if (t === p || t === h) break i;
     case k:
       if (n.last) {
         ea >>>= 7 & es, es -= 7 & es, n.mode = Q;
         break
       }
       for (; es < 3;) {
-        if (0 === er) break r;
+        if (0 === er) break i;
         er--, ea += r[et++] << es, es += 8
       }
       switch (n.last = 1 & ea, es -= 1, 3 & (ea >>>= 1)) {
@@ -239,7 +239,7 @@ function ep(e, t) {
         case 1:
           if (ef(n), n.mode = Z, t === h) {
             ea >>>= 2, es -= 2;
-            break r
+            break i
           }
           break;
         case 2:
@@ -252,19 +252,19 @@ function ep(e, t) {
       break;
     case j:
       for (ea >>>= 7 & es, es -= 7 & es; es < 32;) {
-        if (0 === er) break r;
+        if (0 === er) break i;
         er--, ea += r[et++] << es, es += 8
       }
       if ((65535 & ea) != (ea >>> 16 ^ 65535)) {
         e.msg = "invalid stored block lengths", n.mode = $;
         break
       }
-      if (n.length = 65535 & ea, ea = 0, es = 0, n.mode = U, t === h) break r;
+      if (n.length = 65535 & ea, ea = 0, es = 0, n.mode = U, t === h) break i;
     case U:
       n.mode = G;
     case G:
       if (eu = n.length) {
-        if (eu > er && (eu = er), eu > eo && (eu = eo), 0 === eu) break r;
+        if (eu > er && (eu = er), eu > eo && (eu = eo), 0 === eu) break i;
         o.arraySet(i, r, et, eu, en), er -= eu, et += eu, eo -= eu, en += eu, n.length -= eu;
         break
       }
@@ -272,7 +272,7 @@ function ep(e, t) {
       break;
     case B:
       for (; es < 14;) {
-        if (0 === er) break r;
+        if (0 === er) break i;
         er--, ea += r[et++] << es, es += 8
       }
       if (n.nlen = (31 & ea) + 257, ea >>>= 5, es -= 5, n.ndist = (31 & ea) + 1, ea >>>= 5, es -= 5, n.ncode = (15 & ea) + 4, ea >>>= 4, es -= 4, n.nlen > 286 || n.ndist > 30) {
@@ -283,7 +283,7 @@ function ep(e, t) {
     case V:
       for (; n.have < n.ncode;) {
         for (; es < 3;) {
-          if (0 === er) break r;
+          if (0 === er) break i;
           er--, ea += r[et++] << es, es += 8
         }
         n.lens[eA[n.have++]] = 7 & ea, ea >>>= 3, es -= 3
@@ -299,14 +299,14 @@ function ep(e, t) {
     case F:
       for (; n.have < n.nlen + n.ndist;) {
         for (; eh = (eT = n.lencode[ea & (1 << n.lenbits) - 1]) >>> 24, eg = eT >>> 16 & 255, em = 65535 & eT, !(eh <= es);) {
-          if (0 === er) break r;
+          if (0 === er) break i;
           er--, ea += r[et++] << es, es += 8
         }
         if (em < 16) ea >>>= eh, es -= eh, n.lens[n.have++] = em;
         else {
           if (16 === em) {
             for (eI = eh + 2; es < eI;) {
-              if (0 === er) break r;
+              if (0 === er) break i;
               er--, ea += r[et++] << es, es += 8
             }
             if (ea >>>= eh, es -= eh, 0 === n.have) {
@@ -316,13 +316,13 @@ function ep(e, t) {
             ey = n.lens[n.have - 1], eu = 3 + (3 & ea), ea >>>= 2, es -= 2
           } else if (17 === em) {
             for (eI = eh + 3; es < eI;) {
-              if (0 === er) break r;
+              if (0 === er) break i;
               er--, ea += r[et++] << es, es += 8
             }
             ea >>>= eh, es -= eh, ey = 0, eu = 3 + (7 & ea), ea >>>= 3, es -= 3
           } else {
             for (eI = eh + 7; es < eI;) {
-              if (0 === er) break r;
+              if (0 === er) break i;
               er--, ea += r[et++] << es, es += 8
             }
             ea >>>= eh, es -= eh, ey = 0, eu = 11 + (127 & ea), ea >>>= 7, es -= 7
@@ -351,7 +351,7 @@ function ep(e, t) {
         e.msg = "invalid distances set", n.mode = $;
         break
       }
-      if (n.mode = Z, t === h) break r;
+      if (n.mode = Z, t === h) break i;
     case Z:
       n.mode = H;
     case H:
@@ -360,12 +360,12 @@ function ep(e, t) {
         break
       }
       for (n.back = 0; eh = (eT = n.lencode[ea & (1 << n.lenbits) - 1]) >>> 24, eg = eT >>> 16 & 255, em = 65535 & eT, !(eh <= es);) {
-        if (0 === er) break r;
+        if (0 === er) break i;
         er--, ea += r[et++] << es, es += 8
       }
       if (eg && (240 & eg) == 0) {
         for (eE = eh, ev = eg, eb = em; eh = (eT = n.lencode[eb + ((ea & (1 << eE + ev) - 1) >> eE)]) >>> 24, eg = eT >>> 16 & 255, em = 65535 & eT, !(eE + eh <= es);) {
-          if (0 === er) break r;
+          if (0 === er) break i;
           er--, ea += r[et++] << es, es += 8
         }
         ea >>>= eE, es -= eE, n.back += eE
@@ -386,7 +386,7 @@ function ep(e, t) {
     case W:
       if (n.extra) {
         for (eI = n.extra; es < eI;) {
-          if (0 === er) break r;
+          if (0 === er) break i;
           er--, ea += r[et++] << es, es += 8
         }
         n.length += ea & (1 << n.extra) - 1, ea >>>= n.extra, es -= n.extra, n.back += n.extra
@@ -394,12 +394,12 @@ function ep(e, t) {
       n.was = n.length, n.mode = Y;
     case Y:
       for (; eh = (eT = n.distcode[ea & (1 << n.distbits) - 1]) >>> 24, eg = eT >>> 16 & 255, em = 65535 & eT, !(eh <= es);) {
-        if (0 === er) break r;
+        if (0 === er) break i;
         er--, ea += r[et++] << es, es += 8
       }
       if ((240 & eg) == 0) {
         for (eE = eh, ev = eg, eb = em; eh = (eT = n.distcode[eb + ((ea & (1 << eE + ev) - 1) >> eE)]) >>> 24, eg = eT >>> 16 & 255, em = 65535 & eT, !(eE + eh <= es);) {
-          if (0 === er) break r;
+          if (0 === er) break i;
           er--, ea += r[et++] << es, es += 8
         }
         ea >>>= eE, es -= eE, n.back += eE
@@ -412,7 +412,7 @@ function ep(e, t) {
     case K:
       if (n.extra) {
         for (eI = n.extra; es < eI;) {
-          if (0 === er) break r;
+          if (0 === er) break i;
           er--, ea += r[et++] << es, es += 8
         }
         n.offset += ea & (1 << n.extra) - 1, ea >>>= n.extra, es -= n.extra, n.back += n.extra
@@ -423,7 +423,7 @@ function ep(e, t) {
       }
       n.mode = z;
     case z:
-      if (0 === eo) break r;
+      if (0 === eo) break i;
       if (eu = ec - eo, n.offset > eu) {
         if ((eu = n.offset - eu) > n.whave && n.sane) {
           e.msg = "invalid distance too far back", n.mode = $;
@@ -436,13 +436,13 @@ function ep(e, t) {
       0 === n.length && (n.mode = H);
       break;
     case q:
-      if (0 === eo) break r;
+      if (0 === eo) break i;
       i[en++] = n.length, eo--, n.mode = H;
       break;
     case Q:
       if (n.wrap) {
         for (; es < 32;) {
-          if (0 === er) break r;
+          if (0 === er) break i;
           er--, ea |= r[et++] << es, es += 8
         }
         if (ec -= eo, e.total_out += ec, n.total += ec, ec && (e.adler = n.check = n.flags ? s(n.check, i, ec, en - ec) : a(n.check, i, ec, en - ec)), ec = eo, (n.flags ? ea : ei(ea)) !== n.check) {
@@ -455,7 +455,7 @@ function ep(e, t) {
     case X:
       if (n.wrap && n.flags) {
         for (; es < 32;) {
-          if (0 === er) break r;
+          if (0 === er) break i;
           er--, ea += r[et++] << es, es += 8
         }
         if (ea !== (0xffffffff & n.total)) {
@@ -467,10 +467,10 @@ function ep(e, t) {
       n.mode = J;
     case J:
       eO = m;
-      break r;
+      break i;
     case $:
       eO = b;
-      break r;
+      break i;
     case ee:
       return y;
     default:

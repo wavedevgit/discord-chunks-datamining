@@ -1,12 +1,11 @@
-/** Chunk was on 34981 **/
-"use strict";
-n.d(t, {
+/** Chunk was on 12192 **/
+r.d(t, {
   Z: () => s
 });
-var r = n(192379);
+var n = r(192379);
 
-function o(e, t) {
-  return (o = Object.setPrototypeOf || function(e, t) {
+function a(e, t) {
+  return (a = Object.setPrototypeOf || function(e, t) {
     return e.__proto__ = t, e
   })(e, t)
 }
@@ -14,12 +13,12 @@ var i = function(e) {
     var t = document.createElement("script");
     t.async = !0, t.defer = !0, t.src = e, document.head && document.head.appendChild(t)
   },
-  a = /(http|https):\/\/(www)?.+\/recaptcha/,
+  o = /(http|https):\/\/(www)?.+\/recaptcha/,
   c = ["sitekey", "theme", "size", "badge", "tabindex", "hl", "isolated"],
   s = function(e) {
     function t() {
-      for (var t, n = arguments.length, o = Array(n), c = 0; c < n; c++) o[c] = arguments[c];
-      return (t = e.call.apply(e, [this].concat(o)) || this).container = void 0, t.timer = void 0, t.state = {
+      for (var t, r = arguments.length, a = Array(r), c = 0; c < r; c++) a[c] = arguments[c];
+      return (t = e.call.apply(e, [this].concat(a)) || this).container = void 0, t.timer = void 0, t.state = {
         instanceKey: Date.now(),
         ready: !1,
         rendered: !1,
@@ -29,17 +28,17 @@ var i = function(e) {
         return !!(null == (e = window.grecaptcha) ? void 0 : e.ready)
       }, t._inject = function() {
         t.props.inject && !Array.from(document.scripts).reduce(function(e, t) {
-          return e || a.test(t.src)
+          return e || o.test(t.src)
         }, !1) && i("https://recaptcha.net/recaptcha/api.js?render=explicit" + (t.props.hl ? "&hl=" + t.props.hl : ""))
       }, t._prepare = function() {
         var e = t.props,
-          n = e.explicit,
-          r = e.onLoad;
+          r = e.explicit,
+          n = e.onLoad;
         window.grecaptcha.ready(function() {
           t.setState({
             ready: !0
           }, function() {
-            n || t.renderExplicitly(), r && r()
+            r || t.renderExplicitly(), n && n()
           })
         })
       }, t._renderRecaptcha = function(e, t) {
@@ -65,10 +64,10 @@ var i = function(e) {
       }, t.componentWillUnmount = function() {
         t._stopTimer()
       }, t.renderExplicitly = function() {
-        return new Promise(function(e, n) {
-          if (t.state.rendered) return n(Error("This recaptcha instance has been already rendered."));
-          if (!t.state.ready || !t.container) return n(Error("Recaptcha is not ready for rendering yet."));
-          var r = t._renderRecaptcha(t.container, {
+        return new Promise(function(e, r) {
+          if (t.state.rendered) return r(Error("This recaptcha instance has been already rendered."));
+          if (!t.state.ready || !t.container) return r(Error("Recaptcha is not ready for rendering yet."));
+          var n = t._renderRecaptcha(t.container, {
             sitekey: t.props.sitekey,
             theme: t.props.theme,
             size: t.props.size,
@@ -81,28 +80,28 @@ var i = function(e) {
             hl: t.state.invisible ? void 0 : t.props.hl
           });
           t.setState({
-            instanceId: r,
+            instanceId: n,
             rendered: !0
           }, function() {
             t.props.onRender && t.props.onRender(), e()
           })
         })
       }, t.reset = function() {
-        return new Promise(function(e, n) {
+        return new Promise(function(e, r) {
           if (t.state.rendered) return t._resetRecaptcha(), e();
-          n(Error("This recaptcha instance did not render yet."))
+          r(Error("This recaptcha instance did not render yet."))
         })
       }, t.execute = function() {
-        return new Promise(function(e, n) {
-          return t.state.invisible ? (t.state.rendered && (t._executeRecaptcha(), e()), n(Error("This recaptcha instance did not render yet."))) : n(Error("Manual execution is only available for invisible size."))
+        return new Promise(function(e, r) {
+          return t.state.invisible ? (t.state.rendered && (t._executeRecaptcha(), e()), r(Error("This recaptcha instance did not render yet."))) : r(Error("Manual execution is only available for invisible size."))
         })
       }, t.getResponse = function() {
-        return new Promise(function(e, n) {
+        return new Promise(function(e, r) {
           if (t.state.rendered) return e(t._getResponseRecaptcha());
-          n(Error("This recaptcha instance did not render yet."))
+          r(Error("This recaptcha instance did not render yet."))
         })
       }, t.render = function() {
-        var e = r.createElement("div", {
+        var e = n.createElement("div", {
           key: t.state.instanceKey,
           id: t.props.id,
           className: t.props.className,
@@ -119,15 +118,15 @@ var i = function(e) {
         }) : e
       }, t
     }
-    return t.prototype = Object.create(e.prototype), t.prototype.constructor = t, o(t, e), t.getDerivedStateFromProps = function(e, t) {
-      var n = "invisible" === e.size;
-      return n !== t.invisible ? {
-        invisible: n
+    return t.prototype = Object.create(e.prototype), t.prototype.constructor = t, a(t, e), t.getDerivedStateFromProps = function(e, t) {
+      var r = "invisible" === e.size;
+      return r !== t.invisible ? {
+        invisible: r
       } : null
     }, t.prototype.componentDidUpdate = function(e) {
       var t = this;
-      c.reduce(function(n, r) {
-        return t.props[r] !== e[r] ? [].concat(n, [r]) : n
+      c.reduce(function(r, n) {
+        return t.props[n] !== e[n] ? [].concat(r, [n]) : r
       }, []).length > 0 && this.setState({
         instanceKey: Date.now(),
         rendered: !1
@@ -135,7 +134,7 @@ var i = function(e) {
         t.props.explicit || t.renderExplicitly()
       })
     }, t
-  }(r.Component);
+  }(n.Component);
 s.defaultProps = {
   id: "",
   className: "g-recaptcha",

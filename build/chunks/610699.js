@@ -252,6 +252,7 @@ function q(e) {
   });
   return null == x.code || "" === x.code ? null : eb && null != ea ? (0, r.jsx)("div", {
     ref: en,
+    className: B.inviteContainer,
     children: (0, r.jsx)(Q, {
       app: ea,
       invite: x,
@@ -414,6 +415,7 @@ function Q(e) {
     embedUrl: g
   }, N), {
     info: (0, r.jsxs)("div", {
+      className: B.infoWrapper,
       children: [(0, r.jsx)(X, {
         channel: l,
         guild: s,

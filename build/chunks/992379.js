@@ -1,5 +1,4 @@
-/** Chunk was on 45620 **/
-"use strict";
+/** Chunk was on 97434 **/
 e.exports = {
   externalProductWrapper: "externalProductWrapper__320c6"
 }

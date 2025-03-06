@@ -1,6 +1,6 @@
 /**
   Module ID: 37709
-  Original File Name: e1750bdddfa2e26f
+  Original File Name: d24ab9433259b0da
 **/
 .coverContainer__2f300 {
     height: 640px;
@@ -142,6 +142,23 @@
 
 .coverButton__2f300 {
     margin-top: 24px
+}
+
+:where(.visual-refresh) .coverTitle__2f300 {
+    opacity: 1;
+    margin-bottom: var(--spacing-16)
+}
+
+:where(.visual-refresh) .guildImage__2f300 {
+    border-radius: 42px
+}
+
+:where(.visual-refresh) .centerContent__2f300 {
+    gap: 12px
+}
+
+:where(.visual-refresh) .coverContent__2f300 {
+    max-width: 500px
 }
 
 .optionButtonWrapper__270d7 {
@@ -414,63 +431,4 @@
     position: absolute;
     bottom: 78px;
     background: linear-gradient(0deg,var(--modal-background),transparent)
-}
-
-.main_c08b38 {
-    position: relative;
-    width: 100vw;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 0
-}
-
-.visual-refresh .main_c08b38 {
-    border-top-left-radius: var(--radius-md)
-}
-
-.artwork_c08b38 {
-    top: 0;
-    left: 0
-}
-
-.artwork_c08b38,.gradient_c08b38 {
-    position: absolute;
-    width: 100%;
-    height: 100%
-}
-
-.gradient_c08b38 {
-    background: linear-gradient(180deg,hsl(var(--primary-800-hsl)/.5),hsl(var(--primary-800-hsl)/1))
-}
-
-.content_c08b38 {
-    flex-direction: column;
-    width: 800px;
-    height: 640px;
-    max-height: 640px;
-    background-color: var(--modal-background);
-    padding: 0 24px;
-    border-radius: 12px;
-    top: 50%;
-    transform: translate(-50%,-50%)
-}
-
-.bottomCenterContent_c08b38,.content_c08b38 {
-    display: flex;
-    z-index: 1;
-    position: absolute
-}
-
-.bottomCenterContent_c08b38 {
-    align-items: center;
-    text-align: center;
-    bottom: 16px
-}
-
-.cover_c08b38 {
-    -o-object-fit: cover;
-    object-fit: cover
 }

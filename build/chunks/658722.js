@@ -6,9 +6,9 @@ function t(e, t) {
     r = e.length;
   if (r > n) return !1;
   if (r === n) return e === t;
-  t: for (var i = 0, o = 0; i < r; i++) {
+  n: for (var i = 0, o = 0; i < r; i++) {
     for (var a = e.charCodeAt(i); o < n;)
-      if (t.charCodeAt(o++) === a) continue t;
+      if (t.charCodeAt(o++) === a) continue n;
     return !1
   }
   return !0

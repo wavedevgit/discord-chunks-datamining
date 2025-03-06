@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
@@ -20,11 +20,11 @@ function m(e) {
     endsAt: i,
     fractionalState: l,
     activationDate: o
-  } = e, m = t ? d.NW.string(d.t["hT6i//"]) : d.NW.string(d.t["3G0CTE"]), g = t ? void 0 === o ? null : d.NW.format(d.t["0Vwb/v"], {
+  } = e, m = t ? d.NW.string(d.t["hT6i//"]) : d.NW.string(d.t["3G0CTE"]), p = t ? void 0 === o ? null : d.NW.format(d.t["0Vwb/v"], {
     activateDate: o
   }) : l === c.a$.FP_SUB_PAUSED ? d.NW.format(d.t.MMvaIC, {
     resumeDate: i.toDate()
-  }) : null, p = s()({
+  }) : null, g = s()({
     [u.fractionalUnactivatedPill]: t,
     [u.fractionalTimeRemainingPill]: !t
   }), h = s()({
@@ -41,14 +41,14 @@ function m(e) {
         variant: "heading-md/semibold",
         className: f,
         children: m
-      }), null !== g && (0, r.jsx)(a.Text, {
+      }), null !== p && (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
-        children: g
+        children: p
       })]
     }), (0, r.jsx)("div", {
       className: u.fractionalTimeRemainingPillWrapper,
       children: (0, r.jsx)("div", {
-        className: p,
+        className: g,
         children: (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           className: h,
@@ -58,12 +58,12 @@ function m(e) {
     })]
   })
 }
-let g = function(e) {
+let p = function(e) {
   let {
     fractionalPremiumInfo: t,
     className: n,
     activationDate: i
-  } = e, c = (0, o.Am)(t), g = c.length > 0, p = (0, l.Z)(t.endsAt, l.a.SHORT_TIME), h = g ? c : p;
+  } = e, c = (0, o.Am)(t), p = c.length > 0, g = (0, l.Z)(t.endsAt, l.a.SHORT_TIME), h = p ? c : g;
   return (0, r.jsx)("div", {
     children: (0, r.jsxs)("div", {
       className: s()(n, u.fractionalPremiumAccountCredit),
@@ -91,7 +91,7 @@ let g = function(e) {
           })]
         })
       }), (0, r.jsx)(m, {
-        showChargingUpState: g,
+        showChargingUpState: p,
         rowValueText: h,
         endsAt: t.endsAt,
         fractionalState: t.fractionalState,

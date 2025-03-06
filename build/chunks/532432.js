@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
@@ -17,26 +17,26 @@ let m = [{
   extensions: ["gif"]
 }];
 
-function g(e) {
+function p(e) {
   let {
     showRemoveAvatarButton: t,
     errors: n,
     onAvatarChange: i,
-    sectionTitle: g,
-    changeAvatarButtonText: p,
+    sectionTitle: p,
+    changeAvatarButtonText: g,
     guildId: h,
     className: f,
-    disabled: b = !1,
-    isTryItOutFlow: N = !1,
-    forcedDivider: x,
+    disabled: x = !1,
+    isTryItOutFlow: b = !1,
+    forcedDivider: N,
     withHighlight: _ = !1
   } = e, E = _ ? a.gtL : a.zxk;
   return (0, r.jsx)(o.Z, {
     className: f,
-    title: g,
+    title: p,
     errors: n,
-    disabled: b,
-    forcedDivider: x,
+    disabled: x,
+    forcedDivider: N,
     children: (0, r.jsxs)("div", {
       className: u.buttonsContainer,
       children: [(0, r.jsx)(E, {
@@ -44,8 +44,8 @@ function g(e) {
           [u.buttonHighlighted]: _
         }),
         size: a.zxk.Sizes.SMALL,
-        onClick: () => (0, l.$r)(c.pC.AVATAR, h, N, N ? m : void 0),
-        children: null != p ? p : d.NW.string(d.t["4OynCA"])
+        onClick: () => (0, l.$r)(c.pC.AVATAR, h, b, b ? m : void 0),
+        children: null != g ? g : d.NW.string(d.t["4OynCA"])
       }), t && (0, r.jsx)(a.zxk, {
         className: u.removeButton,
         color: a.zxk.Colors.PRIMARY,

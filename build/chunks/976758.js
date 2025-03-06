@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => h
 });
@@ -13,8 +13,8 @@ var i = n(442837),
   d = n(36703),
   u = n(388032),
   m = n(953949);
-let g = (0, o.hQ)(),
-  p = (0, o.hQ)();
+let p = (0, o.hQ)(),
+  g = (0, o.hQ)();
 
 function h() {
   let {
@@ -32,20 +32,20 @@ function h() {
       className: m.column,
       children: (0, r.jsx)(s.xJW, {
         title: u.NW.string(u.t.OX2Bnp),
-        titleId: g,
+        titleId: p,
         children: (0, r.jsx)(s.iRW, {
           initialValue: (0, d.P)(t),
           asValueChanges: t => a.Z.setInputVolume((0, d.A)(t), {
             analyticsLocations: e
           }),
-          "aria-labelledby": g
+          "aria-labelledby": p
         })
       })
     }), (0, r.jsx)("div", {
       className: m.column,
       children: (0, r.jsx)(s.xJW, {
         title: u.NW.string(u.t.eATD2N),
-        titleId: p,
+        titleId: g,
         children: (0, r.jsx)(s.iRW, {
           initialValue: (0, d.P)(n),
           maxValue: 200,
@@ -53,7 +53,7 @@ function h() {
           asValueChanges: t => a.Z.setOutputVolume((0, d.A)(t), {
             analyticsLocations: e
           }),
-          "aria-labelledby": p
+          "aria-labelledby": g
         })
       })
     })]

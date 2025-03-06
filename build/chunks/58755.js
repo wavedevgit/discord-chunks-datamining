@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120), n(301563), n(26686);
 var r = n(200651),
   a = n(192379),
-  l = n(394900),
-  i = n(661105),
+  i = n(394900),
+  l = n(661105),
   o = n(609067),
   s = n(94367),
   c = n(203165),
@@ -15,7 +15,7 @@ var r = n(200651),
   h = n(500949),
   p = n(198725);
 
-function x(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function x(e) {
   return e
 }
 
-function f(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,8 +63,8 @@ function g(e) {
     state: t,
     setState: n
   } = e, {
-    scales: l
-  } = t, [i, o] = a.useState(null), s = (0, r.jsxs)("div", {
+    scales: i
+  } = t, [l, o] = a.useState(null), s = (0, r.jsxs)("div", {
     className: p.section,
     children: [(0, r.jsx)(d.VcW, {
       options: _,
@@ -83,14 +83,14 @@ function g(e) {
           easing: h.iw.LINEAR,
           easingStrength: 1,
           steps: 26
-        }, n(f(x({}, t), {
+        }, n(x(f({}, t), {
           scales: [...t.scales, r]
         })))
       },
       popoutLayerContext: m.O$
     }), (0, r.jsx)("ul", {
       className: p.overrides,
-      children: l.map(e => (0, r.jsx)("li", {
+      children: i.map(e => (0, r.jsx)("li", {
         children: (0, r.jsx)(d.P3F, {
           onClick: () => o(e.name),
           style: {
@@ -98,14 +98,14 @@ function g(e) {
           },
           children: (0, r.jsx)(j, {
             scale: e,
-            onRemove: () => n(f(x({}, t), {
+            onRemove: () => n(x(f({}, t), {
               scales: t.scales.filter(t => t.name !== e.name)
             }))
           })
         })
       }, e.name))
     })]
-  }), u = l.find(e => e.name === i), b = null != u ? (0, r.jsx)(v, {
+  }), u = i.find(e => e.name === l), b = null != u ? (0, r.jsx)(v, {
     onClose: () => o(null),
     scale: u,
     setState: n
@@ -122,8 +122,8 @@ function v(e) {
     onClose: a
   } = e, {
     name: c,
-    base: x,
-    darkness: f,
+    base: f,
+    darkness: x,
     lightness: _,
     showColumnarPalettePreview: g,
     colorSpace: v,
@@ -151,7 +151,7 @@ function v(e) {
           let e = Object.entries(N).reduce((e, t) => {
             let [n, r] = t;
             return e[n] = {
-              value: (0, l.Z)((0, i.Z)(r, h.HW.sRGB), {
+              value: (0, i.Z)((0, l.Z)(r, h.HW.sRGB), {
                 format: "hex"
               }),
               type: "color"
@@ -175,7 +175,7 @@ function v(e) {
         }), " palette is generated from."]
       }), (0, r.jsx)("input", {
         type: "color",
-        value: x,
+        value: f,
         onChange: e => (0, h.Ib)(c, e.target.value, n)
       })]
     }), (0, r.jsxs)(d.xJW, {
@@ -209,7 +209,7 @@ function v(e) {
           onMarkerRender: () => null
         })]
       }), (0, r.jsxs)(d.xJW, {
-        title: "Darken (".concat((100 * f).toFixed(), "%)"),
+        title: "Darken (".concat((100 * x).toFixed(), "%)"),
         children: [(0, r.jsx)(d.R94, {
           type: d.geA.DESCRIPTION,
           children: "Increase the darkness of the lightest color in the palette. Increasing this makes the lighter colors in the palette darker."
@@ -294,7 +294,7 @@ function v(e) {
                   opacity: .75,
                   color: m
                 },
-                children: [(0, l.Z)((0, i.Z)(c, h.HW.sRGB), {
+                children: [(0, i.Z)((0, l.Z)(c, h.HW.sRGB), {
                   format: "hex"
                 }).toUpperCase(), " - ", u]
               })]
@@ -310,7 +310,7 @@ function j(e) {
   let {
     scale: t,
     onRemove: n
-  } = e, o = a.useMemo(() => Object.values((0, h.XM)(t)).map(e => (0, l.Z)((0, i.Z)(e, h.HW.sRGB), {
+  } = e, o = a.useMemo(() => Object.values((0, h.XM)(t)).map(e => (0, i.Z)((0, l.Z)(e, h.HW.sRGB), {
     format: "hex"
   })), [t]);
   return (0, r.jsxs)("li", {

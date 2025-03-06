@@ -1,6 +1,6 @@
 /**
   Module ID: 58121
-  Original File Name: 7c3cec86a52cd8e5
+  Original File Name: a4e3761df874ccf7
 **/
 .coverContainer__2f300 {
     height: 640px;
@@ -142,6 +142,23 @@
 
 .coverButton__2f300 {
     margin-top: 24px
+}
+
+:where(.visual-refresh) .coverTitle__2f300 {
+    opacity: 1;
+    margin-bottom: var(--spacing-16)
+}
+
+:where(.visual-refresh) .guildImage__2f300 {
+    border-radius: 42px
+}
+
+:where(.visual-refresh) .centerContent__2f300 {
+    gap: 12px
+}
+
+:where(.visual-refresh) .coverContent__2f300 {
+    max-width: 500px
 }
 
 .testimonialContainer__3e7e2 {

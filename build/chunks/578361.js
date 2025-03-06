@@ -1,7 +1,7 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => f,
-  n: () => g
+  n: () => p
 });
 var r, i = n(200651),
   s = n(192379),
@@ -32,8 +32,8 @@ function m(e) {
   }
   return e
 }
-var g = ((r = {})[r.RIGHT = -1] = "RIGHT", r[r.LEFT = 1] = "LEFT", r);
-let p = {
+var p = ((r = {})[r.RIGHT = -1] = "RIGHT", r[r.LEFT = 1] = "LEFT", r);
+let g = {
   friction: 7,
   tension: 40,
   clamp: !0
@@ -83,7 +83,7 @@ let f = e => {
     step: n,
     direction: r,
     className: s,
-    springSettings: a = p,
+    springSettings: a = g,
     fadeInOut: o = !1
   } = e;
   return (0, i.jsx)(c.W, {

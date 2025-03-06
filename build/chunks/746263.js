@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => f
 }), n(47120), n(866573), n(642549), n(787622);
@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(281598),
   u = n(451593),
   m = n(694539),
-  g = n(146181);
-let p = e => {
+  p = n(146181);
+let g = e => {
     var t, n, i;
     let {
       effect: s,
@@ -22,17 +22,17 @@ let p = e => {
       deleteConfig: c
     } = (0, u.E)();
     return (0, r.jsxs)(o.P3F, {
-      className: g.previewCard,
+      className: p.previewCard,
       onClick: () => {
         l(s)
       },
       children: [(0, r.jsx)("div", {
-        className: g.previewCardImage,
+        className: p.previewCardImage,
         style: {
           backgroundImage: "url(".concat(null === (i = s.config) || void 0 === i ? void 0 : null === (n = i.effects) || void 0 === n ? void 0 : null === (t = n[0]) || void 0 === t ? void 0 : t.base64, ")")
         }
       }), (0, r.jsxs)("div", {
-        className: a()(g.previewCardFooter, g.row),
+        className: a()(p.previewCardFooter, p.row),
         children: [(0, r.jsx)(o.Text, {
           variant: "text-md/bold",
           children: s.name
@@ -62,7 +62,7 @@ function f() {
   } = (0, u.E)(), [n, s] = i.useState(), l = i.useRef(null), f = i.useCallback((e, n) => {
     if (!e.type.startsWith("text/")) return (0, d.Eo)("Make sure you're only uploading text files!");
     t(JSON.parse(atob(n))), (0, d.XA)("Profile Effect (maybe??) imported!")
-  }, [t]), b = i.useCallback(e => {
+  }, [t]), x = i.useCallback(e => {
     var t;
     if ((null === (t = e.currentTarget) || void 0 === t ? void 0 : t.files) == null) {
       (0, d.Eo)("Error uploading file. Try again!");
@@ -70,19 +70,19 @@ function f() {
     }(0, d.Kr)(e.currentTarget.files, f, d.Eo)
   }, [f]);
   return (0, r.jsxs)("div", {
-    className: g.root,
+    className: p.root,
     children: [null == n && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: g.col,
+        className: p.col,
         children: [(0, r.jsx)("div", {
-          className: g.section,
+          className: p.section,
           children: (0, r.jsx)(o.X6q, {
             variant: "heading-lg/bold",
             children: "Profile Effects"
           })
         }), (0, r.jsx)("div", {
-          className: g.grid,
-          children: Object.values(e).map(e => (0, r.jsx)(p, {
+          className: p.grid,
+          children: Object.values(e).map(e => (0, r.jsx)(g, {
             effect: e,
             onClick: e => {
               s(e)
@@ -90,16 +90,16 @@ function f() {
           }, e.id))
         })]
       }), (0, r.jsxs)("div", {
-        className: a()(g.row, g.end, g.section),
+        className: a()(p.row, p.end, p.section),
         children: [(0, r.jsxs)("div", {
-          className: g.uploadButton,
+          className: p.uploadButton,
           children: [(0, r.jsx)(o.Text, {
             variant: "text-md/normal",
             color: "always-white",
             children: "Import Shared Config"
           }), (0, r.jsx)(c.Z, {
             ref: l,
-            onChange: b,
+            onChange: x,
             multiple: !1
           })]
         }), (0, r.jsx)(o.zxk, {

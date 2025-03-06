@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => el
 }), n(47120), n(26686), n(301563), n(566702), n(411104);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(442837),
   u = n(692547),
   m = n(481060),
-  g = n(570140),
-  p = n(661111),
+  p = n(570140),
+  g = n(661111),
   h = n(179658),
   f = n(491428),
-  b = n(225433),
-  N = n(484614),
-  x = n(615287),
+  x = n(225433),
+  b = n(484614),
+  N = n(615287),
   _ = n(386506),
   E = n(865427),
   j = n(802098),
@@ -103,7 +103,7 @@ class J extends i.Component {
     return (0, r.jsxs)(O.Z, {
       direction: O.Z.Direction.VERTICAL,
       className: a()(U.buildOverrideGroup, G.marginBottom20, V.card, U.row),
-      children: [(0, r.jsx)(b.Z, {
+      children: [(0, r.jsx)(x.Z, {
         className: a()(U.removeBuildOverride, {
           [U.removeBuildOverrideDisabled]: i
         }),
@@ -465,7 +465,7 @@ class $ extends i.Component {
       allowLoggedOut: o,
       experiments: c,
       experimentsError: d
-    } = this.state, u = M.S6.find(t => t.value === e), g = s.map(e => ({
+    } = this.state, u = M.S6.find(t => t.value === e), p = s.map(e => ({
       label: e,
       value: e
     }));
@@ -514,7 +514,7 @@ class $ extends i.Component {
           className: G.marginBottom20,
           children: (0, r.jsx)(m.q4e, {
             value: null,
-            options: g,
+            options: p,
             onChange: this.handleRemoveAllowedVersion,
             isDisabled: 0 === s.length
           })
@@ -606,7 +606,7 @@ class $ extends i.Component {
           children: [(0, r.jsx)(O.Z.Child, {
             wrap: !0,
             basis: "75%",
-            children: (0, r.jsx)(N.Z, {
+            children: (0, r.jsx)(b.Z, {
               value: n
             })
           }), (0, r.jsx)(m.zxk, {
@@ -867,7 +867,7 @@ function en() {
     t = (0, d.e7)([y.default], () => y.default.getForcedRenderMode()),
     [n, s] = i.useState(!1),
     [a, l] = i.useState(""),
-    o = e || t === x.R5.OUT_OF_PROCESS_V2 || t === x.R5.OUT_OF_PROCESS_V3 || t === x.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION;
+    o = e || t === N.R5.OUT_OF_PROCESS_V2 || t === N.R5.OUT_OF_PROCESS_V3 || t === N.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION;
   return (i.useEffect(() => {
     (async () => {
       l(await (0, Z.getOverlayURL)())
@@ -897,7 +897,7 @@ function en() {
         setting: L.s6.DEVELOPER_OPTIONS_CLEAR_CACHES,
         children: (0, r.jsx)(m.zxk, {
           onClick: () => {
-            g.Z.dispatch({
+            p.Z.dispatch({
               type: "CLEAR_CACHES",
               reason: "Requested by user",
               preventWritingCachesAgainThisSession: !0,
@@ -991,10 +991,10 @@ let er = d.ZP.connectStores([R.default], () => ({
     layoutDebuggingEnabled: c,
     isSourceMapsEnabled: d,
     isAnalyticsDebuggerEnabled: u,
-    isIdleStatusIndicatorEnabled: g,
-    onlyShowPreviewAppCollections: p,
+    isIdleStatusIndicatorEnabled: p,
+    onlyShowPreviewAppCollections: g,
     disableAppCollectionsCache: f,
-    preventPopoutClose: b
+    preventPopoutClose: x
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(P.F, {
@@ -1075,7 +1075,7 @@ let er = d.ZP.connectStores([R.default], () => ({
         }), (0, r.jsx)(P.F, {
           setting: L.s6.DEVELOPER_OPTIONS_IDLE_STATUS_INDICATOR,
           children: (0, r.jsx)(m.j7V, {
-            value: g,
+            value: p,
             note: "Displays a floating idle status indicator",
             onChange: e => (0, h.y)({
               idleStatusIndicatorEnabled: e
@@ -1095,7 +1095,7 @@ let er = d.ZP.connectStores([R.default], () => ({
         }), (0, r.jsx)(P.F, {
           setting: L.s6.DEVELOPER_OPTIONS_PREVENT_POPOUT_CLOSE,
           children: (0, r.jsx)(m.j7V, {
-            value: b,
+            value: x,
             note: "This is to enable viewing console logs for popout crashes. This may leave your app/popout in a weird state.",
             onChange: e => (0, h.y)({
               preventPopoutClose: e
@@ -1105,7 +1105,7 @@ let er = d.ZP.connectStores([R.default], () => ({
         }), (0, r.jsx)(P.F, {
           setting: L.s6.DEVELOPER_OPTIONS_PREVIEW_UNPUBLISHED_COLLECTIONS,
           children: (0, r.jsx)(m.j7V, {
-            value: p,
+            value: g,
             note: "Only show application collections (e.g. in App Directory, App Launcher in text) that have the 'preview' active state. This disables application collections cache, too, so you can see collections updates immediately.",
             onChange: e => (0, h.y)({
               onlyShowPreviewAppCollections: e
@@ -1188,7 +1188,7 @@ function es() {
           onChange: s
         }), (0, r.jsx)(m.zxk, {
           onClick: () => {
-            "" === n ? p.Z.setChangelogOverride(null) : p.Z.setChangelogOverride(n)
+            "" === n ? g.Z.setChangelogOverride(null) : g.Z.setChangelogOverride(n)
           },
           disabled: t === n,
           children: "Update Changelog"

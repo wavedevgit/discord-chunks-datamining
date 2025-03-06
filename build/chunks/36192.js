@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => v
 }), n(47120), n(266796), n(566702);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(481060),
   u = n(230711),
   m = n(497321),
-  g = n(100527),
-  p = n(43015),
+  p = n(100527),
+  g = n(43015),
   h = n(136097),
   f = n(605236),
-  b = n(246946),
-  N = n(594174),
-  x = n(460562),
+  x = n(246946),
+  b = n(594174),
+  N = n(460562),
   _ = n(823379),
   E = n(981631),
   j = n(921944),
@@ -30,17 +30,17 @@ function v() {
   let {
     currentSession: t,
     otherSessions: n
-  } = (0, h.h)(), s = (0, l.e7)([b.Z], () => b.Z.hidePersonalInformation), a = (0, l.e7)([N.default], () => N.default.getCurrentUser()), [u, g] = i.useState(!1);
+  } = (0, h.h)(), s = (0, l.e7)([x.Z], () => x.Z.hidePersonalInformation), a = (0, l.e7)([b.default], () => b.default.getCurrentUser()), [u, p] = i.useState(!1);
   i.useEffect(() => {
     (0, f.EW)(c.z.AUTH_SESSIONS_NEW, {
       dismissAction: j.L.AUTO
-    }), (0, p.fw)();
-    let e = setTimeout(() => g(!0), 500);
+    }), (0, g.fw)();
+    let e = setTimeout(() => p(!0), 500);
     return () => {
-      clearTimeout(e), (0, p.$Z)()
+      clearTimeout(e), (0, g.$Z)()
     }
   }, []);
-  let x = () => {
+  let N = () => {
       o.tn.post({
         url: E.ANM.AUTH_SESSION_NOTIFICATIONS_DEBUG,
         rejectWithError: !0
@@ -88,7 +88,7 @@ function v() {
         size: d.zxk.Sizes.SMALL,
         className: O.logOutAllButton,
         onClick: () => {
-          _.size > 0 ? (0, p.L$)(Array.from(_)) : (0, p.L$)(n.map(e => e.id_hash))
+          _.size > 0 ? (0, g.L$)(Array.from(_)) : (0, g.L$)(n.map(e => e.id_hash))
         },
         children: _.size > 0 ? C.NW.formatToPlainString(C.t["83CPLi"], {
           count: _.size
@@ -123,7 +123,7 @@ function v() {
           return (0, r.jsx)(d.zxk, {
             size: d.zxk.Sizes.SMALL,
             color: d.zxk.Colors.PRIMARY,
-            onClick: x,
+            onClick: N,
             onMouseEnter: t,
             onMouseLeave: n,
             children: "Trigger Suspicious Sessions Notification"
@@ -141,10 +141,10 @@ function S(e) {
     current: c,
     setChecked: u,
     checked: m,
-    useChecks: g
-  } = e, f = null !== (l = null === (t = o.client_info) || void 0 === t ? void 0 : t.location) && void 0 !== l ? l : null === (n = o.client_info) || void 0 === n ? void 0 : n.ip, b = null === (i = o.client_info) || void 0 === i ? void 0 : i.platform, {
-    text: N,
-    icon: x
+    useChecks: p
+  } = e, f = null !== (l = null === (t = o.client_info) || void 0 === t ? void 0 : t.location) && void 0 !== l ? l : null === (n = o.client_info) || void 0 === n ? void 0 : n.ip, x = null === (i = o.client_info) || void 0 === i ? void 0 : i.platform, {
+    text: b,
+    icon: N
   } = function(e) {
     switch (null == e ? void 0 : e.toLowerCase().trim()) {
       case null:
@@ -163,12 +163,12 @@ function S(e) {
           text: e, icon: d.pzj
         }
     }
-  }(null === (s = o.client_info) || void 0 === s ? void 0 : s.os), E = c ? null : (0, h.p)(o.approx_last_used_time), j = [N, b].filter(_.lm), v = [f, E].filter(_.lm);
+  }(null === (s = o.client_info) || void 0 === s ? void 0 : s.os), E = c ? null : (0, h.p)(o.approx_last_used_time), j = [b, x].filter(_.lm), v = [f, E].filter(_.lm);
   return (0, r.jsxs)("div", {
     className: a()(O.session, c ? O.currentSession : null),
     children: [(0, r.jsx)("div", {
       className: O.sessionIcon,
-      children: (0, r.jsx)(x, {
+      children: (0, r.jsx)(N, {
         size: "md",
         color: "currentColor"
       })
@@ -199,7 +199,7 @@ function S(e) {
           })]
         })]
       })]
-    }), c ? null : g ? (0, r.jsx)("div", {
+    }), c ? null : p ? (0, r.jsx)("div", {
       className: O.sessionCheckbox,
       children: (0, r.jsx)(d.XZJ, {
         onChange: (e, t) => {
@@ -210,7 +210,7 @@ function S(e) {
     }) : (0, r.jsx)(d.P3F, {
       className: O.sessionMoreButton,
       onClick: e => {
-        e.shiftKey ? null == u || u(!0) : (0, p.L$)(o.id_hash)
+        e.shiftKey ? null == u || u(!0) : (0, g.L$)(o.id_hash)
       },
       "aria-label": C.NW.string(C.t.E4MJNj),
       children: (0, r.jsx)(d.Dio, {
@@ -226,7 +226,7 @@ function T() {
     className: a()(O.session, O.legacySession),
     children: [(0, r.jsx)("div", {
       className: O.sessionIcon,
-      children: (0, r.jsx)(x.Z, {
+      children: (0, r.jsx)(N.Z, {
         width: "32",
         height: "32"
       })
@@ -246,7 +246,7 @@ function T() {
         children: (0, r.jsx)("span", {
           children: C.NW.format(C.t["044+8v"], {
             onClick: () => u.Z.setSection(E.oAB.ACCOUNT, null, {
-              analyticsLocations: [g.Z.USER_SETTINGS_SESSIONS]
+              analyticsLocations: [p.Z.USER_SETTINGS_SESSIONS]
             })
           })
         })

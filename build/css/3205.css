@@ -1,6 +1,6 @@
 /**
   Module ID: 3205
-  Original File Name: c9d19b77c935048a
+  Original File Name: eeed99e5c8f88ba0
 **/
 .popoutContainer_a6cedd {
     display: flex;
@@ -10769,6 +10769,23 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 
 .coverButton__2f300 {
     margin-top: 24px
+}
+
+:where(.visual-refresh) .coverTitle__2f300 {
+    opacity: 1;
+    margin-bottom: var(--spacing-16)
+}
+
+:where(.visual-refresh) .guildImage__2f300 {
+    border-radius: 42px
+}
+
+:where(.visual-refresh) .centerContent__2f300 {
+    gap: 12px
+}
+
+:where(.visual-refresh) .coverContent__2f300 {
+    max-width: 500px
 }
 
 .testimonialContainer__3e7e2 {

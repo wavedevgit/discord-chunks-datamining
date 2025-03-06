@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   $W: () => S,
   Mx: () => y,
@@ -18,13 +18,13 @@ var r, i = n(200651),
   d = n(471445),
   u = n(16206),
   m = n(790145),
-  g = n(925329),
-  p = n(565138),
+  p = n(925329),
+  g = n(565138),
   h = n(754688),
   f = n(237583),
-  b = n(430824),
-  N = n(699516),
-  x = n(594174),
+  x = n(430824),
+  b = n(699516),
+  N = n(594174),
   _ = n(51144),
   E = n(388032),
   j = n(619619);
@@ -113,10 +113,10 @@ class v extends s.Component {
     } = this.props;
     return (0, i.jsx)("div", {
       className: j.guildIconContainer,
-      children: (0, i.jsx)(p.Z, {
+      children: (0, i.jsx)(g.Z, {
         tabIndex: -1,
         guild: e,
-        size: p.Z.Sizes.MINI,
+        size: g.Z.Sizes.MINI,
         className: j.guildIcon
       })
     })
@@ -210,12 +210,12 @@ class S extends(r = s.Component) {
       lowImportance: a
     })), null != r && (t = (0, i.jsx)("span", {
       className: j.note,
-      children: (0, c.F6)(r, x.default, N.Z)
+      children: (0, c.F6)(r, N.default, b.Z)
     })), (0, i.jsxs)("div", {
       className: j.name,
       children: [(0, i.jsx)("span", {
         className: j.match,
-        children: (0, c.F6)(s, x.default, N.Z)
+        children: (0, c.F6)(s, N.default, b.Z)
       }), e, this.renderVoiceStates(), t]
     })
   }
@@ -257,7 +257,7 @@ class S extends(r = s.Component) {
     var e;
     let {
       channel: t
-    } = this.props, n = null === (e = b.Z.getGuild(this.props.channel.guild_id)) || void 0 === e ? void 0 : e.name, r = (0, c.F6)(t, x.default, N.Z), i = (0, u.Z)(t);
+    } = this.props, n = null === (e = x.Z.getGuild(this.props.channel.guild_id)) || void 0 === e ? void 0 : e.name, r = (0, c.F6)(t, N.default, b.Z), i = (0, u.Z)(t);
     return E.NW.formatToPlainString(E.t["Vw/da2"], {
       name: r,
       type: i,
@@ -317,7 +317,7 @@ class T extends s.Component {
       className: j.name,
       children: [(0, i.jsx)("span", {
         className: j.match,
-        children: (0, c.F6)(n, x.default, N.Z)
+        children: (0, c.F6)(n, N.default, b.Z)
       }), e]
     })
   }
@@ -338,7 +338,7 @@ class T extends s.Component {
     let {
       channel: e,
       mentions: t
-    } = this.props, n = (0, c.F6)(e, x.default, N.Z);
+    } = this.props, n = (0, c.F6)(e, N.default, b.Z);
     return null != t && t > 0 ? E.NW.formatToPlainString(E.t.LYdVfH, {
       name: n,
       mentions: t
@@ -388,7 +388,7 @@ class I extends s.Component {
     let {
       user: t,
       comparator: n
-    } = this.props, r = N.Z.getNickname(t.id);
+    } = this.props, r = b.Z.getNickname(t.id);
     return ((e = n === t.tag || null == n || "" === n ? t.username : n) === t.username || e === t.id) && (e = null != r ? r : _.ZP.getName(t)), e
   }
   renderName() {
@@ -471,7 +471,7 @@ class y extends s.Component {
       className: j.contentDefault,
       children: [(0, i.jsx)("div", {
         className: j.iconContainer,
-        children: (0, i.jsx)(g.Z, {
+        children: (0, i.jsx)(p.Z, {
           tabIndex: -1,
           className: j.gameIcon,
           game: t,

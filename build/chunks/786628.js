@@ -1,22 +1,21 @@
-/** Chunk was on 45620 **/
-"use strict";
-r.d(t, {
-  Z: () => s
+/** Chunk was on 76282 **/
+n.d(t, {
+  Z: () => a
 });
-var n = r(200651);
-r(192379);
-var l = r(481060),
-  i = r(937615),
-  o = r(527338);
+var r = n(200651);
+n(192379);
+var i = n(481060),
+  o = n(937615),
+  l = n(527338);
 
-function s(e) {
+function a(e) {
   let {
     price: t,
-    isPremiumUser: r
+    isPremiumUser: n
   } = e;
-  return (0, n.jsxs)(l.X6q, {
+  return (0, r.jsxs)(i.X6q, {
     variant: "heading-md/semibold",
-    className: o.priceTag,
-    children: [r && (0, n.jsx)(l.SrA, {}), (0, i.T4)(t.amount, t.currency)]
+    className: l.priceTag,
+    children: [n && (0, r.jsx)(i.SrA, {}), (0, o.T4)(t.amount, t.currency)]
   })
 }

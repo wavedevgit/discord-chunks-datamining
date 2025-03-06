@@ -1,8 +1,8 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Ae: () => d,
   Qe: () => m,
-  U0: () => g,
+  U0: () => p,
   bV: () => u,
   uZ: () => c
 }), n(518263), n(970173), n(520712), n(268111), n(941497), n(32026), n(480839), n(744285), n(492257), n(873817), n(610885), n(126298), n(757143), n(301563), n(566702);
@@ -21,7 +21,7 @@ function m(e) {
   return e.replace(/[\s._-]+/g, "").toUpperCase()
 }
 
-function g(e, t) {
+function p(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "Discord";
   return "otpauth://totp/".concat(encodeURI(n), ":").concat(encodeURI(e), "?secret=").concat(m(t), "&issuer=").concat(encodeURIComponent(n))
 }

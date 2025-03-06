@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => N
+  Z: () => x
 }), n(301563), n(47120);
 var r, i = n(200651),
   o = n(192379),
@@ -11,12 +11,12 @@ var r, i = n(200651),
   u = n(601964),
   d = n(896797),
   h = n(129293),
-  g = n(388905),
-  p = n(981631),
-  f = n(388032),
+  p = n(388905),
+  g = n(981631),
+  _ = n(388032),
   m = n(802138);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,7 +30,7 @@ class b extends(r = o.PureComponent) {
     let e = (0, h.Z)(this.props.location),
       t = (0, a.parse)(this.props.location.search);
     s.tn.post({
-      url: p.ANM.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
+      url: g.ANM.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
       body: {
         token: e,
         pixel_uuid: t.hash,
@@ -55,8 +55,8 @@ class b extends(r = o.PureComponent) {
     })), (0, c.e)("disable_server_highlight_notifications")
   }
   renderBusy() {
-    return (0, i.jsx)(g.ZP, {
-      children: (0, i.jsx)(g.Hh, {})
+    return (0, i.jsx)(p.ZP, {
+      children: (0, i.jsx)(p.Hh, {})
     })
   }
   renderSuccess() {
@@ -66,26 +66,26 @@ class b extends(r = o.PureComponent) {
     } = this.props, {
       guild: n
     } = this.state;
-    return (0, i.jsxs)(g.ZP, {
-      children: [(0, i.jsx)(g.Dx, {
+    return (0, i.jsxs)(p.ZP, {
+      children: [(0, i.jsx)(p.Dx, {
         className: m.marginBottom8,
-        children: f.NW.string(f.t.Z33eiI)
-      }), (0, i.jsx)(g.DK, {
-        children: f.NW.format(f.t.NRWtfH, {
+        children: _.NW.string(_.t.Z33eiI)
+      }), (0, i.jsx)(p.DK, {
+        children: _.NW.format(_.t.NRWtfH, {
           guildName: n.name
         })
-      }), (0, i.jsx)(g.zx, {
+      }), (0, i.jsx)(p.zx, {
         className: m.marginTop40,
         onClick: () => t(e),
-        children: f.NW.string(f.t.fIv16O)
-      }), (0, i.jsx)(g.zx, {
+        children: _.NW.string(_.t.fIv16O)
+      }), (0, i.jsx)(p.zx, {
         className: m.marginTop8,
-        color: g.zx.Colors.LINK,
-        look: g.zx.Looks.LINK,
+        color: p.zx.Colors.LINK,
+        look: p.zx.Looks.LINK,
         onClick: () => {
-          t(p.Z5c.USER_GUILD_NOTIFICATION_SETTINGS(n.id))
+          t(g.Z5c.USER_GUILD_NOTIFICATION_SETTINGS(n.id))
         },
-        children: f.NW.string(f.t["cGmT/P"])
+        children: _.NW.string(_.t["cGmT/P"])
       })]
     })
   }
@@ -94,19 +94,19 @@ class b extends(r = o.PureComponent) {
       defaultRoute: e,
       transitionTo: t
     } = this.props;
-    return (0, i.jsxs)(g.ZP, {
-      children: [(0, i.jsx)(g.Ee, {
+    return (0, i.jsxs)(p.ZP, {
+      children: [(0, i.jsx)(p.Ee, {
         src: n(105020),
         className: m.marginBottom20
-      }), (0, i.jsx)(g.Dx, {
+      }), (0, i.jsx)(p.Dx, {
         className: m.marginBottom8,
-        children: f.NW.string(f.t.ox9hIS)
-      }), (0, i.jsx)(g.DK, {
-        children: f.NW.string(f.t["/dcuR0"])
-      }), (0, i.jsx)(g.zx, {
+        children: _.NW.string(_.t.ox9hIS)
+      }), (0, i.jsx)(p.DK, {
+        children: _.NW.string(_.t["/dcuR0"])
+      }), (0, i.jsx)(p.zx, {
         className: m.marginTop40,
         onClick: () => t(e),
-        children: f.NW.string(f.t.fIv16O)
+        children: _.NW.string(_.t.fIv16O)
       })]
     })
   }
@@ -118,16 +118,16 @@ class b extends(r = o.PureComponent) {
     return e ? this.renderBusy() : t ? this.renderSuccess() : this.renderError()
   }
   constructor(...e) {
-    super(...e), _(this, "state", {
+    super(...e), f(this, "state", {
       busy: !0,
       success: !1,
       guild: null
     })
   }
 }
-_(b, "defaultProps", {
+f(b, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
-let N = l.ZP.connectStores([d.Z], () => ({
+let x = l.ZP.connectStores([d.Z], () => ({
   defaultRoute: d.Z.defaultRoute
 }))(b)

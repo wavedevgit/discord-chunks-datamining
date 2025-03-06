@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => k
 }), n(266796), n(627341);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(209613),
   u = n(82295),
   m = n(785681),
-  g = n(485664),
-  p = n(880257),
+  p = n(485664),
+  g = n(880257),
   h = n(631885),
   f = n(895328),
-  b = n(568671),
-  N = n(419821),
-  x = n(367515),
+  x = n(568671),
+  b = n(419821),
+  N = n(367515),
   _ = n(250285),
   E = n(292352),
   j = n(134612),
@@ -120,7 +120,7 @@ function A() {
         children: C.NW.format(C.t.yMnoDg, {
           link: "https://support.discord.com/hc/articles/14155060633623"
         })
-      }), e ? null : (0, r.jsx)(b.Z, {})]
+      }), e ? null : (0, r.jsx)(x.Z, {})]
     }), (0, r.jsx)("img", {
       className: v.bannerArt,
       src: T,
@@ -134,7 +134,7 @@ function P(e) {
     sectionType: t,
     sectionTitle: n,
     requests: s
-  } = e, a = i.useRef(null), l = "".concat(t, "-list"), m = (0, d.Z)(l), g = i.useCallback(e => {
+  } = e, a = i.useRef(null), l = "".concat(t, "-list"), m = (0, d.Z)(l), p = i.useCallback(e => {
     let {
       row: n,
       listIndex: i
@@ -142,13 +142,13 @@ function P(e) {
     return null == a ? null : (0, r.jsx)(_.Z, {
       userId: a.id,
       isLast: l,
-      children: () => t === E.ne.ACTIVE ? (0, r.jsx)(N.u, {
+      children: () => t === E.ne.ACTIVE ? (0, r.jsx)(b.u, {
         user: a
-      }) : (0, r.jsx)(x.B, {
+      }) : (0, r.jsx)(N.B, {
         user: a
       })
     }, a.id)
-  }, [s, t]), p = i.useCallback(() => (0, r.jsx)(u.Z, {
+  }, [s, t]), g = i.useCallback(() => (0, r.jsx)(u.Z, {
     children: (0, r.jsx)(c.Text, {
       className: S.marginBottom8,
       variant: "eyebrow",
@@ -206,8 +206,8 @@ function P(e) {
             },
             sectionHeight: E.zE,
             rowHeight: E.ip,
-            renderSection: p,
-            renderRow: g,
+            renderSection: g,
+            renderRow: p,
             sections: [s.length],
             chunkSize: 30,
             fade: !0
@@ -218,7 +218,7 @@ function P(e) {
   })
 }
 let R = () => {
-    let e = (0, p.Z)(),
+    let e = (0, g.Z)(),
       t = (0, h.mq)(E.ne.ACTIVE),
       n = e ? E.AG : E.i0,
       i = {
@@ -247,7 +247,7 @@ let R = () => {
   },
   D = () => {
     let e = (0, h.VM)(),
-      t = (0, p.Z)() ? E.AG : E.i0,
+      t = (0, g.Z)() ? E.AG : E.i0,
       n = (0, m.o)(C.NW.formatToPlainString(C.t["1/PzIi"], {
         maxConnections: t
       }), C.NW.formatToPlainString(C.t.RcTgiI, {
@@ -263,8 +263,8 @@ let R = () => {
     }) : null
   },
   Z = () => {
-    let e = (0, g.o)(),
-      t = (0, g.Q)(),
+    let e = (0, p.o)(),
+      t = (0, p.Q)(),
       n = (0, l.EQ)({
         helpline: e,
         throughline: t
@@ -306,7 +306,7 @@ let R = () => {
     })
   },
   k = () => {
-    let e = (0, p.Z)();
+    let e = (0, g.Z)();
     return (0, r.jsxs)("div", {
       className: v.container,
       children: [e ? (0, r.jsx)(y, {}) : (0, r.jsx)(A, {}), (0, r.jsx)(R, {}), (0, r.jsx)(w, {}), (0, r.jsx)(D, {}), (0, r.jsx)(Z, {})]

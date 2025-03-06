@@ -821,7 +821,7 @@ e = n.nmd(e), (function() {
         _ = tG(l, this.__takeCount__);
       if (!n || !r && i == l && _ == l) return iX(e, this.__actions__);
       var p = [];
-      t: for (; l-- && f < _;) {
+      n: for (; l-- && f < _;) {
         for (var h = -1, g = e[c += t]; ++h < d;) {
           var m = u[h],
             E = m.iteratee,
@@ -829,8 +829,8 @@ e = n.nmd(e), (function() {
             b = E(g);
           if (v == D) g = b;
           else if (!b) {
-            if (v == P) continue t;
-            break t
+            if (v == P) continue n;
+            break n
           }
         }
         p[f++] = g
@@ -1135,12 +1135,12 @@ e = n.nmd(e), (function() {
         u = t.length;
       if (!l) return c;
       n && (t = t5(t, nm(n))), r ? (a = t6, s = !1) : t.length >= o && (a = nv, s = !1, t = new rg(t));
-      t: for (; ++i < l;) {
+      n: for (; ++i < l;) {
         var d = e[i],
           f = null == n ? d : n(d);
         if (d = r || 0 !== d ? d : 0, s && f == f) {
           for (var _ = u; _--;)
-            if (t[_] === f) continue t;
+            if (t[_] === f) continue n;
           c.push(d)
         } else a(t, f, r) || c.push(d)
       }
@@ -1253,13 +1253,13 @@ e = n.nmd(e), (function() {
       f = e[0];
       var _ = -1,
         p = c[0];
-      t: for (; ++_ < a && d.length < u;) {
+      n: for (; ++_ < a && d.length < u;) {
         var h = f[_],
           g = t ? t(h) : h;
         if (h = i || 0 !== h ? h : 0, !(p ? nv(p, g) : o(d, g, i))) {
           for (l = s; --l;) {
             var m = c[l];
-            if (!(m ? nv(m, g) : o(e[l], g, i))) continue t
+            if (!(m ? nv(m, g) : o(e[l], g, i))) continue n
           }
           p && p.push(g), d.push(h)
         }
@@ -1651,12 +1651,12 @@ e = n.nmd(e), (function() {
         if (u) return nL(u);
         s = !1, i = nv, c = new rg
       } else c = t ? [] : l;
-      t: for (; ++r < a;) {
+      n: for (; ++r < a;) {
         var d = e[r],
           f = t ? t(d) : d;
         if (d = n || 0 !== d ? d : 0, s && f == f) {
           for (var _ = c.length; _--;)
-            if (c[_] === f) continue t;
+            if (c[_] === f) continue n;
           t && c.push(f), l.push(d)
         } else i(c, f, n) || (c !== l && c.push(f), l.push(d))
       }

@@ -1,8 +1,8 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   HJ: () => m,
-  Zd: () => p,
-  yD: () => g
+  Zd: () => g,
+  yD: () => p
 });
 var r = n(213919),
   i = n(544891),
@@ -59,7 +59,7 @@ function m() {
   })
 }
 
-function g(e, t) {
+function p(e, t) {
   u.log("Switching account to ".concat(e), {
     switchSynchronously: t
   });
@@ -70,7 +70,7 @@ function g(e, t) {
   }), Promise.resolve()) : a.Z.switchAccountToken(n, t)
 }
 
-function p(e) {
+function g(e) {
   s.Z.dispatch({
     type: "MULTI_ACCOUNT_REMOVE_ACCOUNT",
     userId: e

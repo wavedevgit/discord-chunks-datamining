@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => T
 }), n(653041), n(47120);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(415795),
   u = n(592125),
   m = n(984933),
-  g = n(430824),
-  p = n(914010),
+  p = n(430824),
+  g = n(914010),
   h = n(727785),
   f = n(388032),
-  b = n(855688);
+  x = n(855688);
 
-function N(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function N(e) {
   return e
 }
 
-function x(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -84,11 +84,11 @@ function v() {
 
 function S() {
   return (0, r.jsx)("div", {
-    className: b.voiceListSearchEmpty,
+    className: x.voiceListSearchEmpty,
     children: (0, r.jsx)(a.Text, {
       variant: "text-md/medium",
       color: "text-muted",
-      className: b.noVoiceChannelSelected,
+      className: x.noVoiceChannelSelected,
       children: f.NW.string(f.t.zHjCd3)
     })
   })
@@ -103,9 +103,9 @@ function T(e) {
     o.current = s
   });
   let [d, u] = i.useState(null !== (n = null === (t = s.params) || void 0 === t ? void 0 : t.channelId) && void 0 !== n ? n : void 0), m = i.useCallback(() => {
-    (0, a.ZDy)(async () => e => (0, r.jsx)(I, x(N({}, e), {
+    (0, a.ZDy)(async () => e => (0, r.jsx)(I, N(b({}, e), {
       onSelect: e => {
-        u(e), l.Z.setKeybind(x(N({}, o.current), {
+        u(e), l.Z.setKeybind(N(b({}, o.current), {
           params: {
             channelId: e
           }
@@ -115,11 +115,11 @@ function T(e) {
   }, []);
   return (0, r.jsx)(a.hjN, {
     title: f.NW.string(f.t.q4JpMz),
-    className: b.channelIdSection,
+    className: x.channelIdSection,
     children: (0, r.jsxs)(c.Z, {
       align: c.Z.Align.STRETCH,
       children: [(0, r.jsx)("div", {
-        className: b.selectedVoiceChannel,
+        className: x.selectedVoiceChannel,
         children: (0, r.jsx)(y, {
           channelId: d
         })
@@ -140,8 +140,8 @@ function I(e) {
     transitionState: t,
     onClose: n,
     onSelect: l
-  } = e, c = i.useId(), N = i.useRef(null), {
-    mouseFocusEnabled: x,
+  } = e, c = i.useId(), b = i.useRef(null), {
+    mouseFocusEnabled: N,
     enableMouseFocus: _,
     disableMouseFocus: C
   } = function() {
@@ -167,8 +167,8 @@ function I(e) {
     autocompleterBeforeCreateSearchContext: j
   }), A = function(e) {
     let t = "" !== e,
-      n = (0, s.Wu)([m.ZP, u.Z, p.Z], () => {
-        let e = p.Z.getGuildId();
+      n = (0, s.Wu)([m.ZP, u.Z, g.Z], () => {
+        let e = g.Z.getGuildId();
         if (t || null == e) return [];
         let n = [];
         for (let t of m.ZP.getVocalChannelIds(e)) {
@@ -193,7 +193,7 @@ function I(e) {
   i.useEffect(() => {
     let {
       current: e
-    } = N;
+    } = b;
     null == e || e.isItemVisible(0, P, !0) || e.scrollToIndex({
       section: 0,
       row: P
@@ -209,14 +209,14 @@ function I(e) {
       if ((null == t ? void 0 : t.type) === h.h8.VOICE_CHANNEL) return t.record.id
     })();
   return (0, r.jsx)("div", {
-    className: b.voiceModalContainer,
+    className: x.voiceModalContainer,
     onMouseMove: _,
     children: (0, r.jsxs)(a.Y0X, {
       transitionState: t,
       size: a.CgR.MEDIUM,
-      className: b.voiceModalRootContainer,
+      className: x.voiceModalRootContainer,
       children: [(0, r.jsx)("div", {
-        className: b.inputWrapper,
+        className: x.inputWrapper,
         children: (0, r.jsx)(a.oil, {
           value: T,
           onChange: I,
@@ -255,7 +255,7 @@ function I(e) {
         innerId: c,
         innerRole: "listbox",
         "aria-label": f.NW.string(f.t["+N3fW1"]),
-        ref: N,
+        ref: b,
         sections: [D],
         renderRow: function(e) {
           let {
@@ -267,19 +267,19 @@ function I(e) {
           })();
           if (null == i) return null;
           let s = null != i.parent_id ? u.Z.getChannel(i.parent_id) : void 0,
-            a = g.Z.getGuild(i.guild_id);
+            a = p.Z.getGuild(i.guild_id);
           return (0, r.jsx)(d.$W, {
             id: i.id,
             channel: i,
             category: s,
             focused: P === t,
-            onMouseEnter: () => x.current && R(t),
+            onMouseEnter: () => N.current && R(t),
             onClick: () => {
               l(i.id), n()
             },
             onFocus: () => R(t),
             children: null != a ? (0, r.jsx)("div", {
-              className: b.guildName,
+              className: x.guildName,
               children: a.name
             }) : null
           }, i.id)
@@ -288,7 +288,7 @@ function I(e) {
         renderFooter: O,
         sectionHeight: 0,
         rowHeight: 34,
-        className: b.voiceChannelList,
+        className: x.voiceChannelList,
         listHeaderHeight: 8,
         footerHeight: 16
       })]
@@ -303,12 +303,12 @@ function y(e) {
     channel: n,
     category: i,
     guild: l
-  } = (0, s.cj)([u.Z, g.Z], () => {
+  } = (0, s.cj)([u.Z, p.Z], () => {
     let e = null != t ? u.Z.getChannel(t) : void 0;
     return null != e ? {
       channel: e,
       category: null != e.parent_id ? u.Z.getChannel(e.parent_id) : void 0,
-      guild: null != e.guild_id ? g.Z.getGuild(e.guild_id) : void 0
+      guild: null != e.guild_id ? p.Z.getGuild(e.guild_id) : void 0
     } : {
       channel: void 0,
       category: void 0,
@@ -318,7 +318,7 @@ function y(e) {
   return null == n ? (0, r.jsx)(a.Text, {
     variant: "text-md/medium",
     color: "text-muted",
-    className: b.noVoiceChannelSelected,
+    className: x.noVoiceChannelSelected,
     children: f.NW.string(f.t["/fYIKy"])
   }) : (0, r.jsx)(d.$W, {
     channel: n,
@@ -329,7 +329,7 @@ function y(e) {
     onMouseEnter: _,
     focused: !1,
     children: null != l ? (0, r.jsx)("div", {
-      className: b.guildName,
+      className: x.guildName,
       children: l.name
     }) : null
   })

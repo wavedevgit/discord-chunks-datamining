@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => h
 });
@@ -13,7 +13,7 @@ var i = n(120356),
   d = n(474936),
   u = n(388032),
   m = n(87501);
-let g = (e, t) => {
+let p = (e, t) => {
     if ((null == e ? void 0 : e.status) === o.Vq.EARNED) {
       var n;
       return 2 === e.badgeVersion ? u.NW.format(u.t.Hu4jfn, {
@@ -27,7 +27,7 @@ let g = (e, t) => {
       days: e.daysLeft
     }) : null
   },
-  p = e => {
+  g = e => {
     switch (e) {
       case d.JN.PREMIUM_TENURE_1_MONTH:
       case d.w7.PREMIUM_TENURE_1_MONTH:
@@ -68,50 +68,50 @@ let g = (e, t) => {
         id: d,
         badgeVersion: h,
         nameUnformatted: f,
-        tenureReqNumMonths: b,
-        hasWideArt: N
+        tenureReqNumMonths: x,
+        hasWideArt: b
       } = t,
-      x = u.NW.string(f),
-      _ = (0, l.q)(d, b);
+      N = u.NW.string(f),
+      _ = (0, l.q)(d, x);
     return 1 === h ? (0, r.jsxs)("div", {
-      className: s()(m.container, p(d)),
+      className: s()(m.container, g(d)),
       children: [(0, r.jsx)("div", {}), " ", (0, r.jsx)("img", {
         src: i,
-        alt: x,
+        alt: N,
         className: m.badgeImage
       }), (0, r.jsxs)("div", {
         className: m.textColumn,
         children: [(0, r.jsx)(a.xv, {
           variant: "text-lg/semibold",
           className: m.badgeText,
-          children: x
+          children: N
         }), (0, r.jsx)(a.xv, {
           variant: "text-xs/normal",
-          children: g(t)
+          children: p(t)
         })]
       })]
     }) : (0, r.jsxs)("div", {
-      className: s()(m.container, p(d)),
+      className: s()(m.container, g(d)),
       children: [(0, r.jsx)("div", {}), " ", (0, r.jsx)("img", {
         src: i,
-        alt: x,
+        alt: N,
         className: s()(m.badgeImage, m.badgeImageV2, {
           [m.upcomingBadge]: t.status === o.Vq.UPCOMING,
-          [m.wide]: N
+          [m.wide]: b
         })
       }), (0, r.jsxs)("div", {
         className: m.textColumn,
         children: [(0, r.jsx)(a.xv, {
           variant: "text-lg/semibold",
           className: m.badgeText,
-          children: x
+          children: N
         }), (0, r.jsx)(a.xv, {
           variant: "text-md/normal",
           className: m.badgeText,
           children: _
         }), (0, r.jsx)(a.xv, {
           variant: "text-xs/normal",
-          children: g(t, n)
+          children: p(t, n)
         })]
       })]
     })

@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => f
 }), n(733860);
@@ -12,10 +12,10 @@ var r = n(200651),
   d = n(823379),
   u = n(997950),
   m = n(816108),
-  g = n(388032),
-  p = n(658162);
+  p = n(388032),
+  g = n(658162);
 let h = {
-  label: () => g.NW.string(g.t["32u1Dw"]),
+  label: () => p.NW.string(p.t["32u1Dw"]),
   value: u.Th
 };
 
@@ -23,22 +23,22 @@ function f() {
   let {
     selectedGuildId: e,
     setSelectedGuildId: t
-  } = (0, u.xu)(), n = (0, s.e7)([c.ZP], () => c.ZP.getFlattenedGuildIds()), g = (0, s.e7)([o.Z], () => o.Z.getGuilds()), {
+  } = (0, u.xu)(), n = (0, s.e7)([c.ZP], () => c.ZP.getFlattenedGuildIds()), p = (0, s.e7)([o.Z], () => o.Z.getGuilds()), {
     hideGuildOptions: f,
-    hideGlobalOption: b
-  } = (0, m.b)(), N = n[0];
+    hideGlobalOption: x
+  } = (0, m.b)(), b = n[0];
   i.useEffect(() => {
-    (!b || !f) && (e === u.Th && e !== N && b && t(N), e !== u.Th && f && t(u.Th))
-  }, [e, t, b, f, N]);
-  let x = i.useMemo(() => {
+    (!x || !f) && (e === u.Th && e !== b && x && t(b), e !== u.Th && f && t(u.Th))
+  }, [e, t, x, f, b]);
+  let N = i.useMemo(() => {
       let e = f ? [] : n.map(e => {
-        let t = g[e];
+        let t = p[e];
         return null == t ? null : {
           label: t.name,
           value: t.id
         }
       }).filter(d.lm);
-      if (!b) {
+      if (!x) {
         var t, r;
         e.unshift((t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -71,31 +71,31 @@ function f() {
         }), t))
       }
       return e
-    }, [f, n, b, g]),
+    }, [f, n, x, p]),
     _ = i.useCallback(e => {
       let t = (null == e ? void 0 : e.label) === h.label() && (null == e ? void 0 : e.value) === h.value;
       return null == e || "" === e.value || t ? (0, r.jsx)("div", {
-        className: p.clydeIconContainer,
+        className: g.clydeIconContainer,
         children: (0, r.jsx)(a.gw7, {
           size: "sm",
           color: "white",
           "aria-hidden": !0,
-          className: p.guildSelectOptionIcon
+          className: g.guildSelectOptionIcon
         })
       }) : (0, r.jsx)(l.Z, {
-        className: p.guildSelectOptionIcon,
-        guild: g[e.value],
+        className: g.guildSelectOptionIcon,
+        guild: p[e.value],
         size: l.Z.Sizes.SMALLER,
         active: !0
       })
-    }, [g]);
+    }, [p]);
   return (0, r.jsx)(a.VcW, {
-    wrapperClassName: p.searchableSelect,
+    wrapperClassName: g.searchableSelect,
     onChange: e => {
       t(e)
     },
     value: e,
-    options: x,
+    options: N,
     renderOptionPrefix: _
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => R
 });
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(497321),
   u = n(100527),
   m = n(367907),
-  g = n(906732),
-  p = n(296810),
+  p = n(906732),
+  g = n(296810),
   h = n(921813),
   f = n(643879),
-  b = n(621853),
-  N = n(246946),
-  x = n(594174),
+  x = n(621853),
+  b = n(246946),
+  N = n(594174),
   _ = n(63063),
   E = n(74538),
   j = n(18438),
@@ -79,10 +79,10 @@ function R(e) {
     selectedGuild: t
   } = e, {
     analyticsLocations: n
-  } = (0, g.ZP)(u.Z.GUILD_PROFILE), s = (0, l.e7)([x.default], () => {
-    let e = x.default.getCurrentUser();
+  } = (0, p.ZP)(u.Z.GUILD_PROFILE), s = (0, l.e7)([N.default], () => {
+    let e = N.default.getCurrentUser();
     return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-  }), R = (0, l.e7)([b.Z], () => !b.Z.isFetchingProfile(s.id, null == t ? void 0 : t.id)), D = (0, l.e7)([N.Z], () => N.Z.hidePersonalInformation), Z = (0, l.cj)([C.Z], () => A(y({}, C.Z.getAllPending()), {
+  }), R = (0, l.e7)([x.Z], () => !x.Z.isFetchingProfile(s.id, null == t ? void 0 : t.id)), D = (0, l.e7)([b.Z], () => b.Z.hidePersonalInformation), Z = (0, l.cj)([C.Z], () => A(y({}, C.Z.getAllPending()), {
     source: C.Z.getSource()
   })), {
     source: w,
@@ -111,7 +111,7 @@ function R(e) {
       destination_pane: T.jXE.SETTINGS_CUSTOMIZE_PROFILE,
       source: w
     })
-  }, [w]), D) ? (0, r.jsx)(d.Z, {}) : R ? (0, r.jsxs)(g.Gt, {
+  }, [w]), D) ? (0, r.jsx)(d.Z, {}) : R ? (0, r.jsxs)(p.Gt, {
     value: n,
     children: [(0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
@@ -124,7 +124,7 @@ function R(e) {
         onChange: e => {
           null != e && (0, j.HP)(e)
         }
-      }), (0, r.jsx)(p.Z, {
+      }), (0, r.jsx)(g.Z, {
         previewTitle: I.NW.formatToPlainString(I.t.Tc0slJ, {
           guildName: null == t ? void 0 : t.name
         }),

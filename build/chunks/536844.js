@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -13,23 +13,23 @@ var i = n(120356),
   d = n(388032),
   u = n(566272),
   m = n(568147),
-  g = n(332796);
-let p = e => {
+  p = n(332796);
+let g = e => {
   let {
     className: t,
     imageClassName: n,
     textContainerOverrideStyles: i,
-    location: p,
+    location: g,
     analyticsLocation: h
   } = e, {
     analyticsLocations: f
-  } = (0, l.ZP)(p), b = (0, o.rK)(), {
-    enabled: N
+  } = (0, l.ZP)(g), x = (0, o.rK)(), {
+    enabled: b
   } = o.RO.useExperiment({
     location: "GiftNitro"
   }, {
-    autoTrackExposure: b
-  }), x = N && b;
+    autoTrackExposure: x
+  }), N = b && x;
   return (0, r.jsx)(l.Gt, {
     value: f,
     children: (0, r.jsxs)("div", {
@@ -40,10 +40,10 @@ let p = e => {
         children: [(0, r.jsx)(a.X6q, {
           variant: "heading-lg/extrabold",
           className: u.heading,
-          children: x ? d.NW.string(d.t.LB3bJC) : d.NW.string(d.t.Ve9Ge3)
+          children: N ? d.NW.string(d.t.LB3bJC) : d.NW.string(d.t.Ve9Ge3)
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
-          children: x ? d.NW.string(d.t.u49cn5) : d.NW.string(d.t.yQ06u7)
+          children: N ? d.NW.string(d.t.u49cn5) : d.NW.string(d.t.yQ06u7)
         }), (0, r.jsx)(c.Z, {
           isGift: !0,
           className: u.giftCardButton,
@@ -54,7 +54,7 @@ let p = e => {
           premiumModalAnalyticsLocation: h
         })]
       }), (0, r.jsx)("img", {
-        src: x ? g : m,
+        src: N ? p : m,
         className: s()(u.bannerImage, n),
         alt: "gift nitro banner"
       })]

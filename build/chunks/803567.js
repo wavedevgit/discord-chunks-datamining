@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => y
 }), n(653041);
@@ -13,13 +13,13 @@ var i = n(120356),
   d = n(600164),
   u = n(313201),
   m = n(921801),
-  g = n(463395),
-  p = n(131951),
+  p = n(463395),
+  g = n(131951),
   h = n(626135),
   f = n(63063),
-  b = n(210887),
-  N = n(738486),
-  x = n(726985),
+  x = n(210887),
+  b = n(738486),
+  N = n(726985),
   _ = n(981631),
   E = n(388032),
   j = n(802138);
@@ -46,26 +46,26 @@ function T(e) {
 function I(e) {
   let {
     refreshStyles: t = !1
-  } = e, n = (0, a.e7)([b.Z], () => b.Z.theme), {
+  } = e, n = (0, a.e7)([x.Z], () => x.Z.theme), {
     noiseCancellation: i,
     noiseSuppression: s,
     noiseSuppressionSupported: u,
     noiseCancellationSupported: m
-  } = (0, a.cj)([p.Z], () => ({
-    noiseCancellation: p.Z.getNoiseCancellation(),
-    noiseSuppression: p.Z.getNoiseSuppression(),
-    noiseSuppressionSupported: p.Z.isNoiseSuppressionSupported(),
-    noiseCancellationSupported: p.Z.isNoiseCancellationSupported()
+  } = (0, a.cj)([g.Z], () => ({
+    noiseCancellation: g.Z.getNoiseCancellation(),
+    noiseSuppression: g.Z.getNoiseSuppression(),
+    noiseSuppressionSupported: g.Z.isNoiseSuppressionSupported(),
+    noiseCancellationSupported: g.Z.isNoiseCancellationSupported()
   }));
   if (!u && !m) return null;
-  let g = [];
-  return m && g.push({
+  let p = [];
+  return m && p.push({
     name: E.NW.string(E.t.rdoNzs),
     value: 2
-  }), u && g.push({
+  }), u && p.push({
     name: E.NW.string(E.t.qXeYHx),
     value: 1
-  }), g.push({
+  }), p.push({
     name: E.NW.string(E.t.wkYAl5),
     value: 0
   }), (0, r.jsxs)(o.hjN, {
@@ -80,7 +80,7 @@ function I(e) {
       className: j.marginBottom8,
       children: E.NW.string(E.t.najZCQ)
     }), (0, r.jsx)(o.FXm, {
-      options: g,
+      options: p,
       onChange: e => {
         c.Z.setNoiseCancellation(2 === e.value, S), c.Z.setNoiseSuppression(1 === e.value, S)
       },
@@ -113,28 +113,28 @@ function y(e) {
     automaticGainControl: d,
     vadAutoThreshold: u,
     vadUseKrisp: h
-  } = (0, a.cj)([p.Z], () => ({
-    inputMode: p.Z.getMode(),
-    inputDeviceId: p.Z.getInputDeviceId(),
-    echoCancellation: p.Z.getEchoCancellation(),
-    automaticGainControl: p.Z.getAutomaticGainControl(),
-    vadAutoThreshold: p.Z.getModeOptions().autoThreshold,
-    vadUseKrisp: p.Z.getModeOptions().vadUseKrisp
+  } = (0, a.cj)([g.Z], () => ({
+    inputMode: g.Z.getMode(),
+    inputDeviceId: g.Z.getInputDeviceId(),
+    echoCancellation: g.Z.getEchoCancellation(),
+    automaticGainControl: g.Z.getAutomaticGainControl(),
+    vadAutoThreshold: g.Z.getModeOptions().autoThreshold,
+    vadUseKrisp: g.Z.getModeOptions().vadUseKrisp
   })), {
     hasEchoCancellation: f,
-    hasNoiseSuppression: b,
+    hasNoiseSuppression: x,
     hasAutomaticGainControl: C
-  } = (0, a.cj)([g.Z], () => ({
-    hasEchoCancellation: g.Z.hasEchoCancellation(i),
-    hasNoiseSuppression: g.Z.hasNoiseSuppression(i),
-    hasAutomaticGainControl: g.Z.hasAutomaticGainControl(i)
-  }), [i]), O = n === _.pM4.VOICE_ACTIVITY && u, v = (0, r.jsxs)(N.Z, {
-    children: [(f || b || C) && (0, r.jsx)(o.R94, {
+  } = (0, a.cj)([p.Z], () => ({
+    hasEchoCancellation: p.Z.hasEchoCancellation(i),
+    hasNoiseSuppression: p.Z.hasNoiseSuppression(i),
+    hasAutomaticGainControl: p.Z.hasAutomaticGainControl(i)
+  }), [i]), O = n === _.pM4.VOICE_ACTIVITY && u, v = (0, r.jsxs)(b.Z, {
+    children: [(f || x || C) && (0, r.jsx)(o.R94, {
       className: t ? void 0 : j.marginBottom20,
       type: o.R94.Types.DESCRIPTION,
       children: E.NW.string(E.t["/Whuzs"])
     }), (0, r.jsx)(m.F, {
-      setting: x.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ECHO_CANCELLATION,
+      setting: N.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ECHO_CANCELLATION,
       children: (0, r.jsx)(o.j7V, {
         className: t ? void 0 : s()(j.marginTop8, j.marginBottom20),
         value: l,
@@ -147,12 +147,12 @@ function y(e) {
         children: E.NW.string(E.t.iWTwu7)
       })
     }), (0, r.jsx)(m.F, {
-      setting: x.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_NOISE_SUPPRESSION,
+      setting: N.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_NOISE_SUPPRESSION,
       children: (0, r.jsx)(I, {
         refreshStyles: t
       })
     }), (0, r.jsx)(m.F, {
-      setting: x.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ADVANCED_VOICE_ACTIVITY,
+      setting: N.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ADVANCED_VOICE_ACTIVITY,
       children: (0, r.jsx)(o.j7V, {
         value: h,
         onChange: e => c.Z.setMode(n, {
@@ -164,7 +164,7 @@ function y(e) {
         children: E.NW.string(E.t.BbESsr)
       })
     }), (0, r.jsx)(m.F, {
-      setting: x.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_AUTOMATIC_GAIN_CONTROL,
+      setting: N.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_AUTOMATIC_GAIN_CONTROL,
       children: (0, r.jsx)(o.j7V, {
         value: d,
         onChange: e => c.Z.setAutomaticGainControl(e, {

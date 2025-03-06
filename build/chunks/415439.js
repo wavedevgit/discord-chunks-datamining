@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   BV: () => E,
   FW: () => j,
@@ -15,32 +15,32 @@ var r = n(442837),
   d = n(895924),
   u = n(812236),
   m = n(740492),
-  g = n(973616),
-  p = n(592125),
+  p = n(973616),
+  g = n(592125),
   h = n(626135),
   f = n(823379),
-  b = n(728345),
-  N = n(812206),
-  x = n(981631);
+  x = n(728345),
+  b = n(812206),
+  N = n(981631);
 async function _(e, t, n) {
   t(e.id);
   let r = e.bot;
   if (null == r) try {
     var s, c, m;
-    r = null !== (m = null === (s = N.Z.getApplication(e.id)) || void 0 === s ? void 0 : s.bot) && void 0 !== m ? m : null === (c = g.ZP.createFromServer(await (0, b.UM)(e.id))) || void 0 === c ? void 0 : c.bot
+    r = null !== (m = null === (s = b.Z.getApplication(e.id)) || void 0 === s ? void 0 : s.bot) && void 0 !== m ? m : null === (c = p.ZP.createFromServer(await (0, x.UM)(e.id))) || void 0 === c ? void 0 : c.bot
   } catch (e) {
     t(void 0);
     return
   }
   if (null != r) {
     let s;
-    let c = null == p.Z.getDMFromUserId(r.id);
+    let c = null == g.Z.getDMFromUserId(r.id);
     try {
       s = (0, a.R)() ? await i.Z.getOrEnsurePrivateChannel(r.id) : await i.Z.openPrivateChannel([r.id], !1, !1, o.Z.APP_DMS_QUICK_LAUNCHER)
     } catch (e) {
       t(void 0)
     }
-    if (h.default.track(x.rMx.APP_DMS_QUICK_LAUNCHER_CLICKED, {
+    if (h.default.track(N.rMx.APP_DMS_QUICK_LAUNCHER_CLICKED, {
         application_id: e.id,
         is_new_dm: c,
         channel_id: s
@@ -71,7 +71,7 @@ async function _(e, t, n) {
 function E(e, t) {
   s.ZP.updatedUnsyncedSettings({
     showPlayAgain: e
-  }), e || h.default.track(x.rMx.APP_DMS_QUICK_LAUNCHER_HIDDEN, {
+  }), e || h.default.track(N.rMx.APP_DMS_QUICK_LAUNCHER_HIDDEN, {
     source: t
   })
 }

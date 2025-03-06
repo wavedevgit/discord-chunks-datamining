@@ -1,11 +1,11 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  L: () => f
+  L: () => x
 }), n(47120);
 var r = n(200651),
   a = n(192379),
-  l = n(120356),
-  i = n.n(l),
+  i = n(120356),
+  l = n.n(i),
   o = n(481060),
   s = n(310752),
   c = n(710845),
@@ -40,17 +40,17 @@ let h = new c.Z("ShopAssetsPreviewUploadArea"),
       modalKey: d.A
     })
   },
-  x = () => {
+  f = () => {
     p({
       title: "Invalid file type!",
       help: "Please drop only image files or a directory containing image files."
     })
   },
-  f = e => {
+  x = e => {
     let {
       className: t,
       onDrop: n
-    } = e, [l, c] = a.useState(!1), p = a.useRef(null), f = a.useCallback(e => {
+    } = e, [i, c] = a.useState(!1), p = a.useRef(null), x = a.useCallback(e => {
       for (let t of e) try {
         if (null == t || !t.isFile && !t.isDirectory) return h.warn("Dropped item is not a file or directory"), !1
       } catch (e) {
@@ -67,27 +67,27 @@ let h = new c.Z("ShopAssetsPreviewUploadArea"),
       e.preventDefault(), e.stopPropagation(), c(!1);
       let t = e.dataTransfer;
       if (null == t) {
-        x();
+        f();
         return
       }
       let r = await Promise.all(Array.from(t.items).map(e => {
         var t;
         return null !== (t = e.webkitGetAsEntry()) && void 0 !== t ? t : e.getAsEntry()
       })).then(e => e.filter(e => null != e));
-      if (0 === r.length || !f(r)) {
-        x();
+      if (0 === r.length || !x(r)) {
+        f();
         return
       }
       h.info("[DEBUG] file system entries: ".concat(r.length)), n(r)
-    }, [n, f]);
+    }, [n, x]);
     return a.useEffect(() => {
       var e;
       let t = null === (e = p.current) || void 0 === e ? void 0 : e.ownerDocument.body;
       if (null != t) return t.addEventListener("dragover", b, !1), () => t.removeEventListener("dragover", b, !1)
     }, [b]), (0, r.jsx)("div", {
       ref: p,
-      className: i()(t, m.uploadArea, {
-        [m.droppable]: l
+      className: l()(t, m.uploadArea, {
+        [m.droppable]: i
       }),
       onDragLeave: _,
       onDragEnd: _,

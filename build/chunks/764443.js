@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  I: () => x
+  I: () => N
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -13,30 +13,30 @@ var i = n(722770),
   d = n(70956),
   u = n(51144),
   m = n(246133),
-  g = n(981631),
-  p = n(388032),
+  p = n(981631),
+  g = n(388032),
   h = n(652480);
 let f = [{
   duration: 30 * d.Z.Millis.MINUTE,
-  label: () => p.NW.string(p.t.RxJGbG)
+  label: () => g.NW.string(g.t.RxJGbG)
 }, {
   duration: d.Z.Millis.HOUR,
-  label: () => p.NW.string(p.t.UMWBZm)
+  label: () => g.NW.string(g.t.UMWBZm)
 }, {
   duration: 3 * d.Z.Millis.HOUR,
-  label: () => p.NW.string(p.t.QmYWtr)
+  label: () => g.NW.string(g.t.QmYWtr)
 }, {
   duration: 8 * d.Z.Millis.HOUR,
-  label: () => p.NW.string(p.t.EpAXPD)
+  label: () => g.NW.string(g.t.EpAXPD)
 }, {
   duration: d.Z.Millis.DAY,
-  label: () => p.NW.string(p.t["755t4u"])
+  label: () => g.NW.string(g.t["755t4u"])
 }, {
   duration: void 0,
-  label: () => p.NW.string(p.t["46dqJS"])
+  label: () => g.NW.string(g.t["46dqJS"])
 }];
 
-function b(e) {
+function x(e) {
   let {
     status: t,
     currentStatus: n,
@@ -83,11 +83,11 @@ function b(e) {
     },
     action: () => (0, m.Z)(t, n, void 0, a ? d.Z.Millis.DAY : void 0),
     dontCloseOnAction: !0,
-    children: t !== g.Skl.ONLINE ? l : void 0
+    children: t !== p.Skl.ONLINE ? l : void 0
   })
 }
 
-function N(e, t, n) {
+function b(e, t, n) {
   return (0, r.jsx)(s.sNh, {
     id: e,
     keepItemStyles: !0,
@@ -116,7 +116,7 @@ function N(e, t, n) {
   })
 }
 
-function x(e) {
+function N(e) {
   let {
     expiringStatus: t,
     defaultClickExpire: n
@@ -124,9 +124,9 @@ function x(e) {
     location: "AccountProfilePopout"
   }), d = c.Cr.useSetting(), u = (0, l.p)(), m = o.e.useExperiment({
     location: "AccountProfilePopout"
-  }).allowQuietMode || u, x = c.fv.useSetting(), _ = e === g.Skl.DND, E = t => {
-    let n = null != d && "0" !== d ? p.NW.formatToPlainString(p.t.BWD8fn, {
-      endTime: new Date(Number(d)).toLocaleString(p.NW.currentLocale, {
+  }).allowQuietMode || u, N = c.fv.useSetting(), _ = e === p.Skl.DND, E = t => {
+    let n = null != d && "0" !== d ? g.NW.formatToPlainString(g.t.BWD8fn, {
+      endTime: new Date(Number(d)).toLocaleString(g.NW.currentLocale, {
         month: "numeric",
         day: "numeric",
         hour: "numeric",
@@ -135,10 +135,10 @@ function x(e) {
     }) : void 0;
     if (e === t && null != n) return n;
     switch (t) {
-      case g.Skl.DND:
-        return m ? p.NW.string(p.t.day5Aw) : p.NW.string(p.t.U9Vv19);
-      case g.Skl.INVISIBLE:
-        return p.NW.string(p.t.MqanVF);
+      case p.Skl.DND:
+        return m ? g.NW.string(g.t.day5Aw) : g.NW.string(g.t.U9Vv19);
+      case p.Skl.INVISIBLE:
+        return g.NW.string(g.t.MqanVF);
       default:
         return
     }
@@ -159,22 +159,22 @@ function x(e) {
     })
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [N(g.Skl.ONLINE, e), (0, r.jsx)(s.Clw, {}, "menu-separator-statuses"), t ? b({
-      status: g.Skl.IDLE,
+    children: [b(p.Skl.ONLINE, e), (0, r.jsx)(s.Clw, {}, "menu-separator-statuses"), t ? x({
+      status: p.Skl.IDLE,
       currentStatus: e,
-      description: E(g.Skl.IDLE),
+      description: E(p.Skl.IDLE),
       defaultClickExpire: n
-    }) : N(g.Skl.IDLE, e, E(g.Skl.IDLE)), t ? b({
-      status: g.Skl.DND,
+    }) : b(p.Skl.IDLE, e, E(p.Skl.IDLE)), t ? x({
+      status: p.Skl.DND,
       currentStatus: e,
-      description: E(g.Skl.DND),
+      description: E(p.Skl.DND),
       defaultClickExpire: n
-    }) : N(g.Skl.DND, e, E(g.Skl.DND)), t ? b({
-      status: g.Skl.INVISIBLE,
+    }) : b(p.Skl.DND, e, E(p.Skl.DND)), t ? x({
+      status: p.Skl.INVISIBLE,
       currentStatus: e,
-      description: E(g.Skl.INVISIBLE),
+      description: E(p.Skl.INVISIBLE),
       defaultClickExpire: n
-    }) : N(g.Skl.INVISIBLE, e, E(g.Skl.INVISIBLE)), m || u ? (0, r.jsxs)(r.Fragment, {
+    }) : b(p.Skl.INVISIBLE, e, E(p.Skl.INVISIBLE)), m || u ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.Clw, {}, "menu-separator-statuses"), (0, r.jsx)(s.sNh, {
         id: "quiet-mode",
         "aria-label": "focus mode",
@@ -188,20 +188,20 @@ function x(e) {
             className: h.icon
           }), (0, r.jsxs)("div", {
             className: h.focusModeTitle,
-            children: [p.NW.string(p.t.gJRnwM), (0, r.jsx)(s.IGR, {
-              text: u ? p.NW.string(p.t.ApAu9f) : _ ? p.NW.string(p.t.gH3Fra) : p.NW.string(p.t["64pl8/"]),
+            children: [g.NW.string(g.t.gJRnwM), (0, r.jsx)(s.IGR, {
+              text: u ? g.NW.string(g.t.ApAu9f) : _ ? g.NW.string(g.t.gH3Fra) : g.NW.string(g.t["64pl8/"]),
               color: u ? i.Z.BRAND_500 : _ ? i.Z.RED_400 : i.Z.PRIMARY_500
             })]
           }), (0, r.jsx)("div", {
             className: h.description,
-            children: u && null != x && "0" !== x ? p.NW.formatToPlainString(p.t.BWD8fn, {
-              endTime: new Date(Number(x)).toLocaleString(p.NW.currentLocale, {
+            children: u && null != N && "0" !== N ? g.NW.formatToPlainString(g.t.BWD8fn, {
+              endTime: new Date(Number(N)).toLocaleString(g.NW.currentLocale, {
                 month: "numeric",
                 day: "numeric",
                 hour: "numeric",
                 minute: "2-digit"
               })
-            }) : p.NW.string(p.t["Br1q+/"])
+            }) : g.NW.string(g.t["Br1q+/"])
           })]
         }),
         action: () => {

@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => y
 }), n(47120), n(610138), n(216116), n(78328), n(815648), n(301563);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(906732),
   u = n(464824),
   m = n(214852),
-  g = n(626135),
-  p = n(533525),
+  p = n(626135),
+  g = n(533525),
   h = n(314684),
   f = n(794484),
-  b = n(536844),
-  N = n(342414),
-  x = n(938736),
+  x = n(536844),
+  b = n(342414),
+  N = n(938736),
   _ = n(615042),
   E = n(391110),
   j = n(71363),
@@ -37,8 +37,8 @@ let I = "SubscriberNitroHome",
       } = (0, d.ZP)(c.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
       [y, A] = i.useState(!1);
     (0, h.FM)();
-    let P = (0, p.b)(I),
-      R = (0, x.TW)(I),
+    let P = (0, g.b)(I),
+      R = (0, N.TW)(I),
       D = "true" === new URLSearchParams(window.location.search).get("autoScroll");
     return window.history.replaceState({}, "", window.location.pathname), (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.yWw, {
@@ -48,7 +48,7 @@ let I = "SubscriberNitroHome",
           className: S.container,
           children: (0, r.jsxs)(d.Gt, {
             value: s,
-            children: [(0, r.jsx)(N.Z, {
+            children: [(0, r.jsx)(b.Z, {
               className: S.heroHeading,
               location: E.MQ.HOME
             }), (0, r.jsx)(f.Z, {
@@ -67,7 +67,7 @@ let I = "SubscriberNitroHome",
                 setIsAllPerksVisible: n,
                 previousComponent: E.MQ.HOME
               })
-            }), (0, r.jsx)(b.Z, {
+            }), (0, r.jsx)(x.Z, {
               className: S.giftNitro,
               location: c.Z.PREMIUM_MARKETING_GIFT_SECTION,
               analyticsLocation: {
@@ -78,7 +78,7 @@ let I = "SubscriberNitroHome",
               className: S.footerSpacing
             }), (0, r.jsx)(l.$, {
               onChange: e => {
-                e && !y && (g.default.track(O.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                e && !y && (p.default.track(O.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                   location_stack: s
                 }), A(!0))
               },

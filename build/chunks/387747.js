@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => h
 });
@@ -13,8 +13,8 @@ var i = n(410575),
   d = n(541540),
   u = n(206339),
   m = n(726985),
-  g = n(981631),
-  p = n(73127);
+  p = n(981631),
+  g = n(73127);
 
 function h() {
   return (0, r.jsxs)(r.Fragment, {
@@ -22,33 +22,33 @@ function h() {
       setting: m.s6.GIFT_NITRO,
       children: (0, r.jsx)(l.Z, {
         location: s.Z.USER_SETTINGS_GIFT_INVENTORY,
-        className: p.giftNitro,
-        imageClassName: p.giftNitroImage,
+        className: g.giftNitro,
+        imageClassName: g.giftNitroImage,
         textContainerOverrideStyles: {
           padding: "32px",
           width: "360px"
         },
         analyticsLocation: {
-          page: g.ZY5.GIFTING_SETTINGS,
-          section: g.jXE.GIFT_BANNER
+          page: p.ZY5.GIFTING_SETTINGS,
+          section: p.jXE.GIFT_BANNER
         }
       })
     }), (0, r.jsx)(c.F, {
       setting: m.s6.GIFT_CODE_REDEMPTION,
       children: (0, r.jsx)(i.Z, {
-        section: g.jXE.LIBRARY_INVENTORY_CODE_REDEMPTION,
+        section: p.jXE.LIBRARY_INVENTORY_CODE_REDEMPTION,
         children: (0, r.jsx)(d.Z, {})
       })
     }), (0, r.jsx)(c.F, {
       setting: m.s6.GIFT_INVENTORY_QUESTS,
       children: (0, r.jsx)(i.Z, {
-        section: g.jXE.QUESTS,
+        section: p.jXE.QUESTS,
         children: (0, r.jsx)(o.Z, {})
       })
     }), (0, r.jsx)(c.F, {
       setting: m.s6.GIFT_INVENTORY_LIST,
       children: (0, r.jsx)(i.Z, {
-        section: g.jXE.LIBRARY_INVENTORY_GIFTS_LIST,
+        section: p.jXE.LIBRARY_INVENTORY_GIFTS_LIST,
         children: (0, r.jsx)(u.Z, {})
       })
     }), (0, r.jsx)(c.F, {

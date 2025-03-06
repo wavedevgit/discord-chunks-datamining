@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => P
 });
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(906732),
   u = n(518950),
   m = n(598077),
-  g = n(626135),
-  p = n(63063),
+  p = n(626135),
+  g = n(63063),
   h = n(281494),
   f = n(276444),
-  b = n(520540),
-  N = n(796634),
-  x = n(197115),
+  x = n(520540),
+  b = n(796634),
+  N = n(197115),
   _ = n(119269),
   E = n(938736),
   j = n(981631),
@@ -155,17 +155,17 @@ let I = e => {
         referralSentUsers: R,
         hasSentAllReferrals: D,
         refreshAt: Z
-      } = (0, N.G)(),
+      } = (0, b.G)(),
       w = i.useMemo(() => R.map(e => new m.Z(e)), [R]),
       {
         subscriberHomeVariant: k
-      } = b.g.useExperiment({
+      } = x.g.useExperiment({
         location: "ReferralProgramProgressBar"
       }, {
         autoTrackExposure: !1
       }),
       W = y === j.g2L.UNAPPLIED || y === j.g2L.QUALIFIED,
-      L = k === b.p.VARIANT_2,
+      L = k === x.p.VARIANT_2,
       B = {
         redeemed: 0,
         converted: 0,
@@ -174,13 +174,13 @@ let I = e => {
     I.forEach(e => {
       e === h.Fe.REDEEMED && B.redeemed++, e === h.Fe.CONVERTED && (B.redeemed++, B.converted++)
     });
-    let M = B.sent === N.Q,
-      U = p.Z.getArticleURL(j.BhN.REFERRAL_PROGRAM),
+    let M = B.sent === b.Q,
+      U = g.Z.getArticleURL(j.BhN.REFERRAL_PROGRAM),
       {
         analyticsLocations: V
       } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
       G = i.useRef(null),
-      F = B.sent / N.Q * 100,
+      F = B.sent / b.Q * 100,
       H = !1;
     P && null != Z && (H = 0 < (t = Math.ceil((new Date(Z).getTime() - new Date().getTime()) / 864e5)) && t < E.AV, s = 100 * (E.AV - t) / E.AV);
     let z = H && null != t,
@@ -234,7 +234,7 @@ let I = e => {
             className: a()(O.expandedProgressBarButtonContainer, {
               [O.expandedProgressBarButtonContainerLayout]: !u
             }),
-            children: [!u && !L && (0, r.jsx)(x.Z, {
+            children: [!u && !L && (0, r.jsx)(N.Z, {
               color: o.Ttl.CUSTOM,
               buttonText: C.NW.string(C.t.Ve9Ge3),
               className: a()(O.expandedProgressBarGiftingCTA, {
@@ -246,7 +246,7 @@ let I = e => {
               className: O.expandedProgressBarSelectFriendsCTA,
               color: o.Ttl.CUSTOM,
               onClick: () => {
-                g.default.track(j.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+                p.default.track(j.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
                   location_stack: V
                 }), (0, o.ZDy)(async () => {
                   let {
@@ -270,7 +270,7 @@ let I = e => {
           })]
         })]
       }),
-      K = B.redeemed === N.Q;
+      K = B.redeemed === b.Q;
     return (0, r.jsx)(d.Gt, {
       value: V,
       children: (0, r.jsx)("div", {

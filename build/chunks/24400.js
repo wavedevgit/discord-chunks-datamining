@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var r = n(200651),
   i = n(604849),
@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(981631),
   m = n(388032);
 
-function g() {
+function p() {
   let e = (0, i.c)();
   return (0, r.jsx)(l.U, {
     setting: d.s6.PRIVACY_SAFETY_ALERTS_V2,

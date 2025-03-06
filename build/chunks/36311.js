@@ -22,31 +22,35 @@ var r = n(200651),
 let v = function(e) {
   let {
     guild: t,
-    className: n
-  } = e, l = (0, s.e7)([m.default], () => {
+    channelId: n,
+    className: l
+  } = e, v = (0, s.e7)([m.default], () => {
     var e;
     return (null === (e = m.default.getCurrentUser()) || void 0 === e ? void 0 : e.nsfwAllowed) === !1
-  }), v = i.useRef(null), y = (0, h.Kt)(), x = i.useCallback(() => {
+  }), y = i.useRef(null), x = (0, h.Kt)(), j = i.useCallback(() => {
     null != t && u.Z.nsfwReturnToSafety(t.id)
-  }, [t]), j = i.useCallback(() => {
-    null != t && u.Z.nsfwAgree(t.id)
   }, [t]), O = i.useCallback(() => {
+    null != t && u.Z.nsfwAgree(t.id)
+  }, [t]), E = i.useCallback(() => {
     d.Z.showAgeVerificationGetStartedModal(p.cU.NSFW_GUILD)
   }, []);
   i.useEffect(() => {
     let {
       current: e
-    } = v;
+    } = y;
     null == e || e.scrollToBottom()
   }, []);
-  let E = (0, a.EQ)({
-    nsfwDisallowed: l,
-    shouldPawtect: y
+  let N = (0, a.EQ)({
+    nsfwDisallowed: v,
+    shouldPawtect: x
   }).with({
     shouldPawtect: !0
   }, () => (0, r.jsx)(f.Z, {
-    onAgree: O,
-    onDisagree: x,
+    guildId: null == t ? void 0 : t.id,
+    channelId: n,
+    modalType: p.it.NSFW_CHANNEL_AGE_VERIFY,
+    onAgree: E,
+    onDisagree: j,
     title: _.NW.string(_.t.ZmwvDQ),
     description: _.NW.string(_.t["NjO/s7"]),
     agreement: _.NW.string(_.t.SFWVER),
@@ -57,8 +61,11 @@ let v = function(e) {
     nsfwDisallowed: !0,
     shouldPawtect: !1
   }, () => (0, r.jsx)(f.Z, {
-    onAgree: j,
-    onDisagree: x,
+    guildId: null == t ? void 0 : t.id,
+    channelId: n,
+    modalType: p.it.NSFW_CHANNEL_UNDERAGE,
+    onAgree: O,
+    onDisagree: j,
     title: _.NW.string(_.t.NEabBQ),
     description: _.NW.format(_.t["2kHZen"], {
       helpURL: g.Z.getArticleURL(b.BhN.NSFW_AGE_GATING)
@@ -67,19 +74,22 @@ let v = function(e) {
     disagreement: _.NW.string(_.t["13/7kZ"]),
     imageClassName: C.ageGatedImage
   })).otherwise(() => (0, r.jsx)(f.Z, {
-    onAgree: j,
-    onDisagree: x,
+    guildId: null == t ? void 0 : t.id,
+    channelId: n,
+    modalType: p.it.NSFW_CHANNEL_VERIFIED,
+    onAgree: O,
+    onDisagree: j,
     title: _.NW.string(_.t.ZmwvDQ),
     description: _.NW.string(_.t.E4Cd5O),
     agreement: _.NW.string(_.t.wVq7ur),
     disagreement: _.NW.string(_.t.hg1uxs)
   }));
   return (0, r.jsx)(c.Den, {
-    ref: v,
+    ref: y,
     className: C.scroller,
     children: (0, r.jsx)("div", {
-      className: o()(n, C.wrapper),
-      children: E
+      className: o()(l, C.wrapper),
+      children: N
     })
   })
 }

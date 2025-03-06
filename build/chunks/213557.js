@@ -129,6 +129,7 @@ function A(e) {
       }, n)
     })]
   }) : (0, r.jsx)(c.Z, {
-    guild: L
+    guild: L,
+    channelId: W.id
   })
 }

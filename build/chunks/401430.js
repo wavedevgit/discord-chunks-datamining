@@ -1,13 +1,13 @@
-/** Chunk was on 51424 **/
+/** Chunk was on 76282 **/
 n.d(t, {
   Wt: () => _,
-  mc: () => E,
-  q$: () => p
+  mc: () => p,
+  q$: () => E
 }), n(411104), n(789020), n(301563);
 var r = n(570140),
   i = n(566620),
-  l = n(728345),
-  o = n(812206),
+  o = n(728345),
+  l = n(812206),
   a = n(973616),
   s = n(630388),
   c = n(591759),
@@ -20,8 +20,8 @@ async function _(e, t) {
   });
   try {
     if (!await (0, i.W5)(e)) throw Error("Do not have access!");
-    let n = o.Z.getApplication(e);
-    null == n && (n = a.ZP.createFromServer(await l.ZP.fetchApplication(e)));
+    let n = l.Z.getApplication(e);
+    null == n && (n = a.ZP.createFromServer(await o.ZP.fetchApplication(e)));
     let _ = (0, s.yE)(n.flags, d.udG.EMBEDDED);
     if (_ && (null == t || !c.Z.URL_REGEX.test(t))) throw Error("Invalid Origin URL for embedded application");
     return _ || u.GR(n), r.Z.dispatch({
@@ -38,13 +38,13 @@ async function _(e, t) {
   }
 }
 
-function E() {
+function p() {
   r.Z.dispatch({
     type: "DEVELOPER_TEST_MODE_RESET"
   })
 }
 
-function p() {
+function E() {
   r.Z.dispatch({
     type: "DEVELOPER_TEST_MODE_RESET_ERROR"
   })

@@ -1,100 +1,100 @@
 /** Chunk was on 45620 **/
 "use strict";
-r.d(t, {
-  I: () => _
-}), r(653041);
-var n = r(200651),
-  l = r(192379),
-  i = r(120356),
-  o = r.n(i),
-  s = r(442837),
-  a = r(481060),
-  c = r(425493),
-  u = r(410030),
-  d = r(984370),
-  p = r(341907),
-  f = r(822857),
-  b = r(775451),
-  h = r(594174),
-  m = r(471731),
-  C = r(335131),
-  g = r(215023),
-  v = r(388032),
-  x = r(417756);
+n.d(t, {
+  I: () => j
+}), n(653041);
+var r = n(200651),
+  l = n(192379),
+  a = n(120356),
+  s = n.n(a),
+  o = n(442837),
+  i = n(481060),
+  c = n(425493),
+  d = n(410030),
+  u = n(984370),
+  m = n(341907),
+  g = n(822857),
+  f = n(775451),
+  h = n(594174),
+  p = n(471731),
+  b = n(335131),
+  C = n(215023),
+  _ = n(388032),
+  v = n(417756);
 
-function j(e) {
+function x(e) {
   let {
     tab: t,
-    displayText: r,
+    displayText: n,
     selected: l,
-    handleTransition: i
+    handleTransition: a
   } = e;
-  return (0, n.jsx)(d.Z.Title, {
-    onClick: () => i(t),
-    wrapperClassName: x.tabWrapper,
-    className: o()(x.tab, {
-      [x.selected]: l
+  return (0, r.jsx)(u.Z.Title, {
+    onClick: () => a(t),
+    wrapperClassName: v.tabWrapper,
+    className: s()(v.tab, {
+      [v.selected]: l
     }),
-    children: r
+    children: n
   })
 }
 
-function _(e) {
+function j(e) {
   let {
     isFullScreen: t,
-    isLayer: r,
-    onClose: i,
-    selectedTab: _,
-    handleTransition: y
-  } = e, O = (0, u.ZP)(), k = (0, s.e7)([h.default], () => h.default.getCurrentUser()), P = (null == k ? void 0 : k.isStaff()) || (null == k ? void 0 : k.isStaffPersonal()) || !1, {
-    enabled: S
-  } = (0, f.W)({
+    isLayer: n,
+    onClose: a,
+    selectedTab: j,
+    handleTransition: k
+  } = e, y = (0, d.ZP)(), S = (0, o.e7)([h.default], () => h.default.getCurrentUser()), O = (null == S ? void 0 : S.isStaff()) || (null == S ? void 0 : S.isStaffPersonal()) || !1, {
+    enabled: E
+  } = (0, g.W)({
     location: "collectibles_shop_header_bar"
-  }), E = [{
-    tab: g.AW.HOME,
-    displayText: v.NW.string(v.t.ijDDw8)
+  }), B = [{
+    tab: C.AW.HOME,
+    displayText: _.NW.string(_.t.ijDDw8)
   }, {
-    tab: g.AW.CATALOG,
-    displayText: v.NW.string(v.t.xFcotb)
+    tab: C.AW.CATALOG,
+    displayText: _.NW.string(_.t.xFcotb)
   }];
-  return S && E.push({
-    tab: g.AW.ORBS,
-    displayText: v.NW.string(v.t.q6uIys)
-  }), (0, n.jsx)(a.f6W, {
-    theme: O,
-    children: e => (0, n.jsxs)(d.Z, {
-      className: o()(e, x.headerBar, {
-        [x.fullscreenHeaderBar]: t
+  return E && B.push({
+    tab: C.AW.ORBS,
+    displayText: _.NW.string(_.t.q6uIys)
+  }), (0, r.jsx)(i.f6W, {
+    theme: y,
+    children: e => (0, r.jsxs)(u.Z, {
+      className: s()(e, v.headerBar, {
+        [v.fullscreenHeaderBar]: t
       }),
-      innerClassname: S ? x.headerBarInner : void 0,
-      toolbar: t || !P ? null : (0, n.jsx)(l.Fragment, {}),
-      children: [(0, n.jsx)(m.Z, {
-        className: x.discordLogo
-      }), (0, n.jsx)(d.Z.Title, {
-        children: v.NW.string(v.t.pWG4zc)
-      }), (0, n.jsx)("div", {
-        className: x.tabs,
-        children: E.map(e => {
+      innerClassname: E ? v.headerBarInner : void 0,
+      toolbar: t || !O ? null : (0, r.jsx)(l.Fragment, {}),
+      children: [(0, r.jsx)(p.Z, {
+        className: v.discordLogo
+      }), (0, r.jsx)(u.Z.Title, {
+        children: _.NW.string(_.t.pWG4zc)
+      }), (0, r.jsx)("div", {
+        className: v.tabs,
+        children: B.map(e => {
           let {
             tab: t,
-            displayText: r
+            displayText: n
           } = e;
-          return (0, n.jsx)(j, {
+          return (0, r.jsx)(x, {
             tab: t,
-            displayText: r,
-            selected: _ === t,
-            handleTransition: y
+            displayText: n,
+            selected: j === t,
+            handleTransition: k
           }, t)
         })
-      }), (S || t) && (0, n.jsxs)("div", {
-        className: x.alignedRightContent,
-        children: [S && (0, n.jsx)(b.V9, {
-          cardAlignment: b.V9.CardAlignment.END,
-          className: x.balanceWidgetMenu,
-          ctaText: v.NW.string(v.t["H57f4+"]),
-          ctaOnClick: () => (0, p.navigateToQuestHome)()
-        }), t && (0, n.jsx)(c.Z, {
-          closeAction: r ? C.DR : i,
+      }), (E || t) && (0, r.jsxs)("div", {
+        className: v.alignedRightContent,
+        children: [E && (0, r.jsx)(f.V9, {
+          cardAlignment: f.V9.CardAlignment.END,
+          className: v.balanceWidgetMenu,
+          ctaText: _.NW.string(_.t["H57f4+"]),
+          ctaOnClick: () => (0, m.navigateToQuestHome)()
+        }), t && (0, r.jsx)(c.Z, {
+          closeAction: n ? b.DR : a,
           keybind: "ESC"
         })]
       })]

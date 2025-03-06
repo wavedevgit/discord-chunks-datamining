@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 }), n(230036), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -12,9 +12,9 @@ var r = n(200651),
   d = n(851718),
   u = n(238847),
   m = n(388032),
-  g = n(250076);
+  p = n(250076);
 
-function p(e) {
+function g(e) {
   let {
     onGoBack: t
   } = e, n = (0, s.Wu)([o.ZP], () => {
@@ -33,7 +33,7 @@ function p(e) {
     title: m.NW.string(m.t["DB/m9f"])
   })), (0, r.jsxs)("div", {
     children: [c, (0, r.jsx)("div", {
-      className: g.subscriptionsContainer,
+      className: p.subscriptionsContainer,
       children: a ? (0, r.jsx)(d.Z, {
         subscriptions: n,
         updateHeader: (e, t) => {
@@ -57,7 +57,7 @@ function h(e) {
     title: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: g.title,
+    className: p.title,
     children: [(0, r.jsx)(a.zxk, {
       look: a.zxk.Looks.BLANK,
       onClick: t,

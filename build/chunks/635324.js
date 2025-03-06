@@ -1,4 +1,5 @@
 /** Chunk was on 63141 **/
+"use strict";
 n(47120);
 var i = n(200651),
   r = n(149765),
@@ -10,9 +11,9 @@ __OVERLAY__ && l.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
     clientId: t,
     authorizeProps: {
       authorizations: s,
-      permissions: d
+      permissions: c
     }
-  } = e, c = function(e, t) {
+  } = e, d = function(e, t) {
     if (null == e) return {};
     var n, i, r = function(e, t) {
       if (null == e) return {};
@@ -27,7 +28,7 @@ __OVERLAY__ && l.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
     }
     return r
   }(e.authorizeProps, ["authorizations", "permissions"]);
-  let u = "OAuth2Authorize_".concat(t, "_").concat(c.guildId, "_").concat(c.channelId);
+  let u = "OAuth2Authorize_".concat(t, "_").concat(d.guildId, "_").concat(d.channelId);
 
   function p(e) {
     let {
@@ -41,7 +42,7 @@ __OVERLAY__ && l.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
   }
   let h = a.Hn;
   try {
-    h = r.vB(null != d ? d : 0)
+    h = r.vB(null != c ? c : 0)
   } catch (e) {}(0, o.ZDy)(async () => {
     let {
       OAuth2AuthorizeModal: e
@@ -65,7 +66,7 @@ __OVERLAY__ && l.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
           })
         }
         return e
-      }({}, t, c), r = r = {
+      }({}, t, d), r = r = {
         authorizations: new Map(s),
         permissions: h,
         callback: p

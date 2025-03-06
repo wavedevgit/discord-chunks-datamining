@@ -6,8 +6,8 @@ n.d(t, {
 }), n(47120);
 var r = n(200651),
   a = n(192379),
-  l = n(120356),
-  i = n.n(l),
+  i = n(120356),
+  l = n.n(i),
   o = n(852229),
   s = n(481060),
   c = n(710662);
@@ -18,7 +18,7 @@ function d(e) {
     children: n
   } = e;
   return (0, r.jsx)("dl", {
-    className: i()(c.properties, t),
+    className: l()(c.properties, t),
     children: n
   })
 }
@@ -26,26 +26,26 @@ let u = e => {
   let {
     name: t,
     children: n,
-    copyValue: l
-  } = e, [i, d] = a.useState(!1);
+    copyValue: i
+  } = e, [l, d] = a.useState(!1);
   return a.useEffect(() => {
-    if (i) {
+    if (l) {
       let e = setTimeout(() => d(!1), 1e3);
       return () => clearTimeout(e)
     }
-  }, [i]), (0, r.jsxs)(r.Fragment, {
+  }, [l]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("dt", {
       className: c.propertyName,
       children: t
     }), (0, r.jsxs)("dd", {
       className: c.propertyValue,
-      children: [n, null != l ? (0, r.jsx)(s.P3F, {
+      children: [n, null != i ? (0, r.jsx)(s.P3F, {
         tag: "span",
         className: c.copyPropertyButton,
         onClick: () => {
-          (0, o.J)(l), d(!0)
+          (0, o.J)(i), d(!0)
         },
-        children: i ? (0, r.jsx)(s.kmB, {
+        children: l ? (0, r.jsx)(s.kmB, {
           color: "currentColor",
           size: "sm"
         }) : (0, r.jsx)(s.TIy, {

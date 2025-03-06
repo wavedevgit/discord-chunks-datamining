@@ -271,7 +271,8 @@ class ti extends i.PureComponent {
       })
     });
     if (e.isNSFW() && (!i || !t)) return (0, r.jsx)(x.Z, {
-      guild: n
+      guild: n,
+      channelId: e.id
     });
     if (e.isGuildVocal()) return null;
     if (e.isDirectory()) return s()(null != n, "directory channels must exist within a guild"), (0, r.jsx)(D.Z, {

@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(200651);
 n(192379);
@@ -13,9 +13,9 @@ var i = n(120356),
   u = n(981631),
   d = n(388032),
   h = n(762056),
-  g = n(802138);
+  p = n(802138);
 
-function p(e) {
+function g(e) {
   let {
     children: t
   } = e;
@@ -29,7 +29,7 @@ function p(e) {
   })
 }
 
-function f(e) {
+function _(e) {
   let {
     setSlide: t,
     transitionTo: i
@@ -37,28 +37,28 @@ function f(e) {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.Ee, {
       src: n(26230),
-      className: o()(g.marginBottom20, g.marginTop8)
+      className: o()(p.marginBottom20, p.marginTop8)
     }), (0, r.jsx)(l.Dx, {
-      className: g.marginBottom8,
+      className: p.marginBottom8,
       children: d.NW.string(d.t["8UcxIy"])
     }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       children: d.NW.string(d.t.O37hMj)
     }), (0, r.jsxs)(l.gO, {
-      className: o()(g.marginBottom20, g.marginTop20),
+      className: o()(p.marginBottom20, p.marginTop20),
       children: [(0, r.jsx)(a.Text, {
         variant: "text-sm/normal"
       }), (0, r.jsxs)("ul", {
         className: h.listContainer,
-        children: [(0, r.jsx)(p, {
+        children: [(0, r.jsx)(g, {
           children: d.NW.string(d.t.Gj1Zr6)
-        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(p, {
+        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(g, {
           children: d.NW.string(d.t["8C6t3N"])
-        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(p, {
+        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(g, {
           children: d.NW.string(d.t.mToZMD)
-        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(p, {
+        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(g, {
           children: d.NW.string(d.t.TPEvkZ)
-        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(p, {
+        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(g, {
           children: d.NW.string(d.t.H8Y1Li)
         })]
       })]

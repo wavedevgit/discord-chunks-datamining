@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => W
 }), n(47120), n(566702);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(524437),
   u = n(780384),
   m = n(481060),
-  g = n(457330),
-  p = n(410030),
+  p = n(457330),
+  g = n(410030),
   h = n(726542),
   f = n(921801),
-  b = n(553795),
-  N = n(430824),
-  x = n(63063),
+  x = n(553795),
+  b = n(430824),
+  N = n(63063),
   _ = n(358085),
   E = n(709054),
   j = n(362352),
@@ -32,7 +32,7 @@ var r = n(200651),
 
 function A(e) {
   let t = () => {
-    O.SE.updateSetting(e ? E.default.keys(N.Z.getGuilds()) : [])
+    O.SE.updateSetting(e ? E.default.keys(b.Z.getGuilds()) : [])
   };
   (0, m.h7j)(e => {
     var n, i;
@@ -118,7 +118,7 @@ function P() {
           color: "header-secondary",
           className: y.marginBottom8,
           children: T.NW.format(T.t.aUxRra, {
-            helpdeskArticle: x.Z.getArticleURL(S.BhN.ACTIVITY_STATUS_SETTINGS)
+            helpdeskArticle: N.Z.getArticleURL(S.BhN.ACTIVITY_STATUS_SETTINGS)
           })
         }), (0, r.jsx)(m.q4e, {
           options: o,
@@ -128,7 +128,7 @@ function P() {
       }) : (0, r.jsx)(m.j7V, {
         value: t === d.E5.OFF,
         note: T.NW.format(T.t["+5/xu7"], {
-          helpdeskArticle: x.Z.getArticleURL(S.BhN.ACTIVITY_STATUS_SETTINGS)
+          helpdeskArticle: N.Z.getArticleURL(S.BhN.ACTIVITY_STATUS_SETTINGS)
         }),
         onChange: e => s(!e),
         children: T.NW.string(T.t.D5GXTU)
@@ -200,7 +200,7 @@ let Z = e => {
 function w(e) {
   let {
     account: t
-  } = e, [n, s] = i.useState(t.showActivity), a = (0, p.ZP)();
+  } = e, [n, s] = i.useState(t.showActivity), a = (0, g.ZP)();
   i.useEffect(() => {
     s(t.showActivity)
   }, [t]);
@@ -211,7 +211,7 @@ function w(e) {
       hideBorder: !0,
       value: n,
       onChange: function(e) {
-        s(e), g.Z.setShowActivity(t.type, t.id, e)
+        s(e), p.Z.setShowActivity(t.type, t.id, e)
       },
       children: (0, r.jsxs)("div", {
         className: I.activitySwitchRow,
@@ -237,7 +237,7 @@ function w(e) {
 }
 
 function k() {
-  let e = (0, c.e7)([b.Z], () => b.Z.getAccounts()),
+  let e = (0, c.e7)([x.Z], () => x.Z.getAccounts()),
     t = i.useMemo(() => e.filter(e => h.Z.isSupported(e.type) && S.vbS.has(e.type)), [e]),
     [n, s] = i.useState(""),
     a = i.useMemo(() => {

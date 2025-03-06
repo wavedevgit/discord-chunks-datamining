@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   Z: () => h
 });
@@ -13,8 +13,8 @@ var i = n(120356),
   d = n(122021),
   u = n(231757),
   m = n(626135),
-  g = n(981631),
-  p = n(227890);
+  p = n(981631),
+  g = n(227890);
 let h = e => {
   let {
     disabled: t = !1,
@@ -22,38 +22,38 @@ let h = e => {
     className: i,
     innerClassName: h,
     onConnect: f
-  } = e, b = (0, o.ZP)(), N = c.Z.get((0, d.rR)(n));
+  } = e, x = (0, o.ZP)(), b = c.Z.get((0, d.rR)(n));
   return (0, r.jsx)(l.ua7, {
-    text: N.name,
+    text: b.name,
     children: e => {
       let {
         onMouseEnter: o,
         onMouseLeave: d
       } = e;
       return (0, r.jsx)("div", {
-        className: s()(p.wrapper, i),
+        className: s()(g.wrapper, i),
         children: (0, r.jsx)(l.tEY, {
           children: (0, r.jsx)("button", {
             onMouseEnter: o,
             onMouseLeave: d,
-            className: s()(p.inner, h),
+            className: s()(g.inner, h),
             type: "button",
             disabled: t,
             style: {
-              backgroundImage: "url('".concat((0, a.wj)(b) ? N.icon.darkSVG : N.icon.lightSVG, "')")
+              backgroundImage: "url('".concat((0, a.wj)(x) ? b.icon.darkSVG : b.icon.lightSVG, "')")
             },
             onClick: null != f ? f : () => (function(e) {
               let t = c.Z.get(e);
               (0, u.Z)({
                 platformType: t.type,
                 location: "Friends List"
-              }), m.default.track(g.rMx.ACCOUNT_LINK_STEP, {
+              }), m.default.track(p.rMx.ACCOUNT_LINK_STEP, {
                 previous_step: "desktop connections",
                 current_step: "desktop oauth",
                 platform_type: t.type
               })
             })(n),
-            "aria-label": N.name
+            "aria-label": b.name
           })
         })
       })

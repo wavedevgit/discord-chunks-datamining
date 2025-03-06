@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => x
+  Z: () => N
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -12,49 +12,49 @@ var r = n(200651),
   u = n(129293),
   d = n(388905),
   h = n(17894),
-  g = n(108427),
-  p = n(626135),
-  f = n(981631),
+  p = n(108427),
+  g = n(626135),
+  _ = n(981631),
   m = n(388032),
-  _ = n(507442),
+  f = n(507442),
   b = n(802138);
 
-function N(e) {
+function x(e) {
   n.g.location.assign(e)
 }
 
-function x(e) {
+function N(e) {
   let {
     location: t,
-    transitionTo: o = N
-  } = e, [l, x] = i.useState("submitting"), v = i.useRef(void 0);
+    transitionTo: o = x
+  } = e, [l, N] = i.useState("submitting"), v = i.useRef(void 0);
   (0, c.ZP)(() => {
-    (0, g.e)("verify_email");
+    (0, p.e)("verify_email");
     let e = (0, u.Z)(t);
     if (null == e) {
-      x("failed");
+      N("failed");
       return
     }(async () => {
       try {
         let t = await s.Z.verify(e);
-        x("succeeded"), v.current = t
+        N("succeeded"), v.current = t
       } catch (e) {
-        x("failed")
+        N("failed")
       }
     })()
   });
   let I = i.useCallback(() => {
-      o(f.Z5c.LOGIN)
+      o(_.Z5c.LOGIN)
     }, [o]),
     E = i.useCallback(() => {
-      p.default.track(f.rMx.VERIFY_ACCOUNT_APP_OPENED, {
+      g.default.track(_.rMx.VERIFY_ACCOUNT_APP_OPENED, {
         verifying_user_id: v.current
       }), (0, h.Z)("verify_email")
     }, []);
   return "failed" === l ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
       src: n(375673),
-      className: a()(_.image, b.marginBottom20)
+      className: a()(f.image, b.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: b.marginBottom8,
       children: m.NW.string(m.t.PCgG39)
@@ -68,7 +68,7 @@ function x(e) {
   }) : "succeeded" === l ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
       src: n(73962),
-      className: a()(_.image, b.marginBottom20)
+      className: a()(f.image, b.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: b.marginBottom40,
       children: m.NW.string(m.t.dAfGb2)
@@ -79,7 +79,7 @@ function x(e) {
   }) : (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
       src: n(892235),
-      className: a()(_.image, b.marginBottom20)
+      className: a()(f.image, b.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: b.marginBottom8,
       children: m.NW.string(m.t["0c8+5u"])

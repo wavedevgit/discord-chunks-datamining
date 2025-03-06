@@ -1,7 +1,7 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   default: () => h,
-  y: () => p
+  y: () => g
 });
 var r = n(200651);
 n(192379);
@@ -15,7 +15,7 @@ var i = n(481060),
   u = n(388032),
   m = n(559773);
 
-function g(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,13 +34,13 @@ function g(e) {
   return e
 }
 
-function p(e) {
+function g(e) {
   let t = a.default.getCurrentUser();
   null != t && (0, i.ZDy)(async () => {
     let {
       default: i
     } = await Promise.resolve().then(n.bind(n, 267717));
-    return n => (0, r.jsx)(i, g({
+    return n => (0, r.jsx)(i, p({
       user: t,
       analyticsSource: d.Sbl.PROFILE_PANEL,
       analyticsLocation: {
@@ -71,7 +71,7 @@ function h(e) {
     }
     return i
   }(e, ["user", "onClose"]);
-  return (0, r.jsx)(o.Z, g({
+  return (0, r.jsx)(o.Z, p({
     modalClassName: m.modal,
     modalContentClassName: m.modalContent,
     type: c.cd.TRY_IT_OUT_MODAL_UPSELL,

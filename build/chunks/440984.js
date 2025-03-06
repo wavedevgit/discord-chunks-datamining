@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
   D: () => _
 }), n(47120);
@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(530618),
   u = n(74538),
   m = n(937615),
-  g = n(230916),
-  p = n(798769),
+  p = n(230916),
+  g = n(798769),
   h = n(474936),
   f = n(388032),
-  b = n(472135),
-  N = n(982404),
-  x = n(299156);
+  x = n(472135),
+  b = n(982404),
+  N = n(299156);
 
 function _(e) {
   let {
@@ -28,7 +28,7 @@ function _(e) {
     confettiCanvas: E,
     userWasChurned: j = !1,
     userDiscountOffer: C
-  } = e, O = (0, o.ZP)(), v = (0, a.wj)(O) ? N : x, S = i.useRef(null), [T, I] = i.useState(!1), y = (0, g._)(t, h.Xh.PREMIUM_MONTH_TIER_2, C), A = (0, u.aS)(h.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
+  } = e, O = (0, o.ZP)(), v = (0, a.wj)(O) ? b : N, S = i.useRef(null), [T, I] = i.useState(!1), y = (0, p._)(t, h.Xh.PREMIUM_MONTH_TIER_2, C), A = (0, u.aS)(h.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
     currency: t.currency,
     paymentSourceId: t.paymentSourceId
   }), P = (0, m.T4)(A.amount, A.currency), R = (0, s.e7)([c.Z], () => c.Z.useReducedMotion);
@@ -41,7 +41,7 @@ function _(e) {
       regularPrice: P
     }),
     Z = (0, r.jsx)("div", {
-      className: b.whatYouLoseButtonContainer,
+      className: x.whatYouLoseButtonContainer,
       children: (0, r.jsx)(l.zxk, {
         color: l.zxk.Colors.BRAND,
         onClick: _,
@@ -49,27 +49,27 @@ function _(e) {
       })
     });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(p.Z, {
+    children: [(0, r.jsx)(g.Z, {
       premiumType: n,
-      className: b.cancellationHeader,
+      className: x.cancellationHeader,
       onClose: _
     }), (0, r.jsx)("div", {
       ref: S,
       children: (0, r.jsx)(l.hzk, {
-        className: b.body,
+        className: x.body,
         children: null != y ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)("div", {
-            className: b.discountAppliedBody,
+            className: x.discountAppliedBody,
             children: [(0, r.jsx)("img", {
               alt: "",
               src: v,
-              className: b.nitroIcon
+              className: x.nitroIcon
             }), (0, r.jsx)(l.X6q, {
               variant: "heading-xl/bold",
               children: j ? f.NW.string(f.t.gOOPaG) : f.NW.string(f.t.PZSyRk)
             })]
           }), (0, r.jsx)("div", {
-            className: b.bodyString,
+            className: x.bodyString,
             children: D
           }), Z]
         }) : (0, r.jsx)(l.$jN, {})

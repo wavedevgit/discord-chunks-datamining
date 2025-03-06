@@ -1,47 +1,47 @@
-/** Chunk was on 51424 **/
+/** Chunk was on 76282 **/
 n.d(t, {
   Z: () => y
 }), n(47120), n(653041);
 var r = n(570140),
   i = n(317770),
-  l = n(460181),
-  o = n(474873),
+  o = n(460181),
+  l = n(474873),
   a = n(314897),
   s = n(19780),
   c = n(944486),
   u = n(111583),
   d = n(351780),
   _ = n(843693),
-  E = n(981631);
-let p = (0, l.uk)("poggermode_applause", o.Z.getSoundpack()),
-  m = !1,
+  p = n(981631);
+let E = (0, o.uk)("poggermode_applause", l.Z.getSoundpack()),
   f = !1,
+  m = !1,
   h = [],
   g = null,
+  b = () => {
+    !f && (E.loop(), f = !0)
+  },
   O = () => {
-    !m && (p.loop(), m = !0)
+    E.stop(), f = !1
   },
   N = () => {
-    p.stop(), m = !1
-  },
-  I = () => {
     let e = d.Z.isEnabled(),
       t = d.Z.comboSoundsEnabled;
     return !!e && !!t && null != c.Z.getChannelId()
   },
-  b = () => {
-    if (0 === h.length || !I() || f) return;
-    f = !0;
+  I = () => {
+    if (0 === h.length || !N() || m) return;
+    m = !0;
     let [e, t] = h[h.length - 1];
-    (0, l.GN)(e, t), g = setTimeout(T, 1e3)
+    (0, o.GN)(e, t), g = setTimeout(C, 1e3)
   },
-  T = () => {
-    h.pop(), f = !1, b()
+  C = () => {
+    h.pop(), m = !1, I()
   },
-  C = function(e) {
+  T = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
       n = s.Z.isConnected();
-    h.push([e, t * (n ? .1 : 1)]), b()
+    h.push([e, t * (n ? .1 : 1)]), I()
   };
 class S extends i.Z {
   _initialize() {
@@ -54,30 +54,30 @@ class S extends i.Z {
     let {
       state: t
     } = e;
-    t === E.hes.RTC_CONNECTED ? p.volume = .1 : p.volume = 1
+    t === p.hes.RTC_CONNECTED ? E.volume = .1 : E.volume = 1
   }
   handleTypingStop(e) {
     let {
       userId: t
     } = e;
-    a.default.getId() === t && N()
+    a.default.getId() === t && O()
   }
   stopAudio() {
-    N()
+    O()
   }
   startAudio() {
     var e;
-    if (!I()) return;
+    if (!N()) return;
     let t = c.Z.getChannelId();
     if (null == t) return;
     let n = a.default.getId(),
       r = u.Z.isTyping(t, n),
       i = _.ZP.getUserCombo(n, t),
-      l = null !== (e = null == i ? void 0 : i.multiplier) && void 0 !== e ? e : 1;
-    r && l >= 7 ? O() : N()
+      o = null !== (e = null == i ? void 0 : i.multiplier) && void 0 !== e ? e : 1;
+    r && o >= 7 ? b() : O()
   }
   playAchievementUnlockSound() {
-    I() && C("poggermode_achievement_unlock")
+    N() && T("poggermode_achievement_unlock")
   }
 }
 let y = new S

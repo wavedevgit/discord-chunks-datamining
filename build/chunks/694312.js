@@ -18,19 +18,19 @@ function p(e) {
     p = (0, r.e7)([a.Z], () => a.Z.testModeEmbeddedApplicationId),
     f = n.map(e => e.application_id),
     v = null != p ? [p, ...f] : f,
-    y = (0, l.Z)(v),
-    b = i.useMemo(() => y.filter(c.lm), [y]),
-    g = i.useMemo(() => null != p && b.length > 0 && b[0].id === p && null != b[0].embeddedActivityConfig ? [{
-      activity: b[0].embeddedActivityConfig,
-      application: b[0]
-    }] : [], [b, p]),
+    b = (0, l.Z)(v),
+    y = i.useMemo(() => b.filter(c.lm), [b]),
+    g = i.useMemo(() => null != p && y.length > 0 && y[0].id === p && null != y[0].embeddedActivityConfig ? [{
+      activity: y[0].embeddedActivityConfig,
+      application: y[0]
+    }] : [], [y, p]),
     h = i.useMemo(() => n.map(e => {
-      let t = b.find(t => t.id === e.application_id);
+      let t = y.find(t => t.id === e.application_id);
       return null == t ? null : {
         activity: e,
         application: t
       }
-    }).filter(c.lm), [n, b]);
+    }).filter(c.lm), [n, y]);
   return i.useMemo(() => [...g, ...h].filter(e => {
     var t;
     let {

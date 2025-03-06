@@ -1,6 +1,6 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
@@ -13,13 +13,13 @@ var i = n(120356),
   d = n(474936),
   u = n(388032),
   m = n(153594);
-let g = e => {
+let p = e => {
   var {
     className: t,
     forceWhite: n,
     giftMessage: i,
-    subscriptionTier: g
-  } = e, p = function(e, t) {
+    subscriptionTier: p
+  } = e, g = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -36,8 +36,8 @@ let g = e => {
   }(e, ["className", "forceWhite", "giftMessage", "subscriptionTier"]);
   let h = (0, o.ZP)(),
     f = (0, a.wj)(h) || n,
-    b = f ? l.Ttl.WHITE : l.Ttl.BRAND,
-    N = g === d.Si.TIER_0 ? u.NW.string(u.t.rk4Uu7) : u.NW.string(u.t.Ve9Ge3);
+    x = f ? l.Ttl.WHITE : l.Ttl.BRAND,
+    b = p === d.Si.TIER_0 ? u.NW.string(u.t.rk4Uu7) : u.NW.string(u.t.Ve9Ge3);
   return (0, r.jsx)(c.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -57,11 +57,11 @@ let g = e => {
     return e
   }({
     isGift: !0,
-    color: b,
+    color: x,
     look: l.iLD.OUTLINED,
-    buttonText: N,
+    buttonText: b,
     giftMessage: i,
     className: s()(t, m.giftButton, f ? m.buttonWhite : m.buttonBrand),
-    subscriptionTier: g
-  }, p))
+    subscriptionTier: p
+  }, g))
 }

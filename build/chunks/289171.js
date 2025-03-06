@@ -1,4 +1,4 @@
-/** Chunk was on 45489 **/
+/** Chunk was on 51724 **/
 e.exports = {
   heading: "heading__6f81c",
   tabBar: "tabBar__6f81c",

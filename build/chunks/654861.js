@@ -268,10 +268,10 @@ var r = function(e) {
 
   function j(e, t) {
     for (var n, i, o, a = e.prev(), s = a, l = 0; s.isEven();) s = s.divide(2), l++;
-    e: for (i = 0; i < t.length; i++)
+    t: for (i = 0; i < t.length; i++)
       if (!e.lesser(t[i]) && !((o = r(t[i]).modPow(s, e)).isUnit() || o.equals(a))) {
         for (n = l - 1; 0 != n && !(o = o.square().mod(e)).isUnit(); n--)
-          if (o.equals(a)) continue e;
+          if (o.equals(a)) continue t;
         return !1
       }
     return !0
