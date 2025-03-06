@@ -24,7 +24,7 @@ function j(e) {
     return (null === (e = null != t ? s.ZP.getMember(t, r) : null) || void 0 === e ? void 0 : e.joinedAt) != null
   }, [t, r]), {
     validInviteKey: j,
-    isBypassInvite: I
+    isBypassInvite: x
   } = (0, a.cj)([u.Z], () => {
     var e;
     let n = u.Z.getInviteKeyForGuildId(t),
@@ -36,10 +36,10 @@ function j(e) {
       validInviteKey: n,
       isBypassInvite: (0, d.yE)(null !== (e = r.flags) && void 0 !== e ? e : 0, i.$.IS_APPLICATION_BYPASS)
     }
-  }), x = (0, o.Z)(), b = l.useMemo(() => f ? 0 : x.includes(t) ? 1 : (null == n ? void 0 : n.includes(v.oNc.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == n ? void 0 : n.includes(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && (null != j || e.visibility === m.k.PUBLIC_WITH_RECRUITMENT) && !I ? 2 : null != j ? 4 : (null == n ? void 0 : n.includes(v.oNc.DISCOVERABLE)) ? 3 : null, [n, t, I, f, x, e.visibility, j]);
+  }), b = (0, o.Z)(), h = l.useMemo(() => f ? 0 : b.includes(t) ? 1 : (null == n ? void 0 : n.includes(v.oNc.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == n ? void 0 : n.includes(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && (null != j || e.visibility === m.k.PUBLIC_WITH_RECRUITMENT) && !x ? 2 : null != j ? 4 : (null == n ? void 0 : n.includes(v.oNc.DISCOVERABLE)) ? 3 : null, [n, t, x, f, b, e.visibility, j]);
   return {
     guildId: t,
-    ctaType: b,
+    ctaType: h,
     validInviteKey: j
   }
 }

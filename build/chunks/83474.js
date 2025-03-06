@@ -22,8 +22,8 @@ var r = n(200651),
   g = n(768581),
   x = n(900849),
   O = n(249842),
-  v = n(838367),
-  P = n(576306),
+  P = n(838367),
+  v = n(576306),
   y = n(914620),
   N = n(981631),
   w = n(388032),
@@ -115,30 +115,30 @@ function T(e) {
     messageId: u
   } = e, {
     name: O,
-    id: v,
-    discoverySplash: P,
+    id: P,
+    discoverySplash: v,
     icon: y,
     description: I,
     presenceCount: C,
     memberCount: S,
     emojis: k
-  } = s, T = (0, i.e7)([p.default], () => p.default.getId()), _ = (0, i.e7)([b.ZP], () => b.ZP.isMember(v, T), [v, T]), [R, U] = l.useState(!1), D = e => {
-    if (e.stopPropagation(), _)(0, f.XU)(v, o, u);
+  } = s, T = (0, i.e7)([p.default], () => p.default.getId()), _ = (0, i.e7)([b.ZP], () => b.ZP.isMember(P, T), [P, T]), [R, U] = l.useState(!1), D = e => {
+    if (e.stopPropagation(), _)(0, f.XU)(P, o, u);
     else {
       let e = {
         page: N.ZY5.GUILD_CHANNEL,
         section: N.jXE.GUILD_POPOUT,
         object: N.qAy.CARD
       };
-      (0, x.Ub)(v, e)
+      (0, x.Ub)(P, e)
     }
     U(!0)
   }, F = g.ZP.getGuildDiscoverySplashURL({
-    id: v,
-    splash: P,
+    id: P,
+    splash: v,
     size: 250 * (0, j.x_)()
   }), L = null !== (t = g.ZP.getGuildIconURL({
-    id: v,
+    id: P,
     icon: y,
     size: 80
   })) && void 0 !== t ? t : void 0, G = k, A = null;
@@ -293,10 +293,10 @@ function _(e) {
     loading: a,
     unavailable: c,
     guild: o
-  } = (0, i.cj)([v.Z], () => ({
-    guild: v.Z.getGuild(t),
-    loading: v.Z.isFetchingGuild(t),
-    unavailable: v.Z.hasFetchFailed(t)
+  } = (0, i.cj)([P.Z], () => ({
+    guild: P.Z.getGuild(t),
+    loading: P.Z.isFetchingGuild(t),
+    unavailable: P.Z.hasFetchFailed(t)
   }), [t]);
   return (l.useEffect(() => {
     null != o || a || c || (0, O.P)(t)
@@ -312,7 +312,7 @@ function _(e) {
 }
 
 function R(e) {
-  return (0, P.h)() ? (0, r.jsx)(y.Z, {
+  return (0, v.h)() ? (0, r.jsx)(y.Z, {
     setPopoutRef: e.setPopoutRef,
     guildId: e.guildId,
     name: e.name

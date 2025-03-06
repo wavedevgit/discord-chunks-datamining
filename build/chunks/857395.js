@@ -74,7 +74,7 @@ function j(e) {
       unavailable: c.Z.hasFetchFailed(t)
     }), [t]),
     O = null != x,
-    v = l.useCallback(async () => {
+    P = l.useCallback(async () => {
       if (!b) try {
         O || await (0, i.P)(t)
       } catch (e) {}
@@ -86,7 +86,7 @@ function j(e) {
     clickTrap: !0
   })) : (0, r.jsx)(a.yRy, m({
     position: "right",
-    preload: v,
+    preload: P,
     clickTrap: !0,
     renderPopout: e => b ? (0, r.jsx)(u.Z, h(m({}, e), {
       guildId: t,

@@ -21,12 +21,12 @@ function j(e) {
     powerup: t
   } = e;
   switch (t.type) {
-    case f.U.LEVEL:
+    case f.Us.LEVEL:
       return (0, r.jsx)("img", {
         alt: "",
         src: m
       });
-    case f.U.PERK:
+    case f.Us.PERK:
       return (0, r.jsx)("img", {
         alt: "",
         src: "",

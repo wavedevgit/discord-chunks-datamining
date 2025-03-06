@@ -41,7 +41,7 @@ function _(e, t) {
     return
   }
   let n = {
-    application_id: c.N
+    application_id: c.NO
   };
   return (0, a.Kb)({
     url: u.ANM.STORE_PUBLISHED_LISTINGS_SKUS,
@@ -49,7 +49,7 @@ function _(e, t) {
     oldFormErrors: !0,
     rejectWithError: !1
   }).then(t => {
-    let n = t.body.map(e => (0, l.Z)(e)).filter(o.lm).sort((e, t) => e.skuId >= t.skuId ? 1 : -1).reduce((e, t) => (e.set(t.skuId, t), e), new Map);
+    let n = t.body.map(e => (0, l.Z)(t.body, e)).filter(o.lm).sort((e, t) => e.skuId >= t.skuId ? 1 : -1).reduce((e, t) => (e.set(t.skuId, t), e), new Map);
     return i.Z.dispatch({
       type: "GUILD_POWERUP_CATALOG_FETCH_SUCCESS",
       guildId: e,

@@ -1,6 +1,6 @@
 /**
   Module ID: 76030
-  Original File Name: f494884d0b0f0751
+  Original File Name: 2326c68397d5b925
 **/
 .image__04666 {
     width: 100%;
@@ -9966,6 +9966,79 @@ html .progress__61462 {
 
 .unavailableHeader__51eb2 {
     margin-bottom: 8px
+}
+
+.guildInviteContainer__083ae {
+    position: relative;
+    border-radius: 16px;
+    border: 1px solid var(--border-subtle);
+    background: var(--bg-surface-overlay);
+    overflow: hidden;
+    width: 300px
+}
+
+.clickable__083ae {
+    cursor: pointer
+}
+
+.cardHeightMeasure__083ae {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 16px;
+    width: 100%
+}
+
+.cardHeightMeasure__083ae .banner__083ae {
+    height: 80px
+}
+
+.mainContent__083ae {
+    margin: 12px 0 16px;
+    text-align: flex-start;
+    padding: 0 16px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    word-wrap: anywhere;
+    z-index: 0
+}
+
+.footer__083ae {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 1
+}
+
+.gradient__083ae {
+    height: 48px;
+    width: 100%;
+    background: linear-gradient(180deg,transparent,var(--bg-surface-overlay))
+}
+
+.footerContent__083ae {
+    background: var(--bg-surface-overlay)
+}
+
+.separator__083ae {
+    height: 1px;
+    background-color: var(--border-subtle)
+}
+
+.buttonContainer__083ae {
+    padding: 16px
+}
+
+.hideDetailsButton__083ae {
+    margin-top: -16px
+}
+
+.hideDetailsButtonInner__083ae {
+    margin: 0
 }
 
 .flex__708d1 {

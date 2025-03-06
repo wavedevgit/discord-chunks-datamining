@@ -1,16 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  o_: () => _,
-  sO: () => f,
-  xo: () => d
+  PC: () => h,
+  o_: () => p,
+  sO: () => _,
+  xo: () => f
 }), n(47120), n(266796);
 var r = n(345074),
   i = n(339085),
   o = n(633302),
-  a = n(823379);
+  a = n(823379),
+  s = n(405222);
 
-function s(e) {
+function l(e) {
   let {
     guildId: t,
     emojiId: n,
@@ -18,17 +20,17 @@ function s(e) {
   } = e, a = i.De.get(t);
   return null == n && null == r ? null : null != n ? null != a ? a.getById(n) : null : null != r ? o.ZP.getByName(r) : null
 }
-let l = {
+let c = {
   label: ""
 };
 
-function c(e, t) {
-  let n = Array(r.Sn).fill(l);
+function u(e, t) {
+  let n = Array(r.Sn).fill(c);
   for (let o of t) {
     var i;
     !(o.position < 0) && !(o.position >= r.Sn) && (n[o.position] = {
       label: o.label,
-      emoji: null !== (i = s({
+      emoji: null !== (i = l({
         guildId: e,
         emojiId: o.emoji_id,
         emojiName: o.emoji_name
@@ -38,7 +40,7 @@ function c(e, t) {
   return n
 }
 
-function u(e) {
+function d(e) {
   return null == e ? {} : Object.entries(e).reduce((e, t) => {
     let [n, r] = t;
     return e[n.toString()] = {
@@ -48,7 +50,7 @@ function u(e) {
   }, {})
 }
 
-function d(e) {
+function f(e) {
   var t, n, r, i, o;
   return {
     id: e.id,
@@ -60,14 +62,14 @@ function d(e) {
     memberCount: e.member_count,
     brandColorPrimary: null !== (n = e.brand_color_primary) && void 0 !== n ? n : null,
     visibility: e.visibility,
-    traits: c(e.id, null !== (r = e.traits) && void 0 !== r ? r : []),
+    traits: u(e.id, null !== (r = e.traits) && void 0 !== r ? r : []),
     gameApplicationIds: null !== (i = e.game_application_ids) && void 0 !== i ? i : [],
-    gameActivity: u(e.game_activity),
+    gameActivity: d(e.game_activity),
     features: null !== (o = e.features) && void 0 !== o ? o : []
   }
 }
 
-function f(e) {
+function _(e) {
   let t = {};
   return null != e.name && (t.name = e.name), null != e.description && (t.description = e.description), void 0 !== e.icon && (t.icon = e.icon), void 0 !== e.customBanner && (t.custom_banner = e.customBanner), null != e.visibility && (t.visibility = e.visibility), void 0 !== e.brandColorPrimary && (t.brand_color_primary = e.brandColorPrimary), null != e.traits && (t.traits = e.traits.map((e, t) => {
     var n, r, i;
@@ -81,9 +83,32 @@ function f(e) {
   }).filter(a.lm)), null != e.gameApplicationIds && (t.game_application_ids = e.gameApplicationIds), t
 }
 
-function _(e) {
+function p(e) {
   return e.reduce((e, t) => (e[t.game_application_id] = {
     level: t.activity_level,
     score: t.activity_score
   }, e), {})
+}
+
+function h(e) {
+  var t, n, r, i, o, a;
+  let {
+    guild: l,
+    profile: c
+  } = e, u = null != c ? f(c) : null;
+  return null != u ? u : null == l ? null : {
+    id: l.id,
+    name: l.name,
+    description: null !== (t = l.description) && void 0 !== t ? t : "",
+    icon: l.icon,
+    customBanner: l.banner,
+    onlineCount: null !== (r = null !== (n = l.approximate_presence_count) && void 0 !== n ? n : e.approximate_presence_count) && void 0 !== r ? r : 0,
+    memberCount: null !== (o = null !== (i = l.approximate_member_count) && void 0 !== i ? i : e.approximate_member_count) && void 0 !== o ? o : 0,
+    visibility: s.k.NOT_SPECIFIED,
+    traits: [],
+    gameApplicationIds: [],
+    gameActivity: {},
+    features: null !== (a = l.features) && void 0 !== a ? a : [],
+    brandColorPrimary: null
+  }
 }

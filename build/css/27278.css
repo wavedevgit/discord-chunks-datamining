@@ -1,6 +1,6 @@
 /**
   Module ID: 27278
-  Original File Name: 7437a49048b852ae
+  Original File Name: 400b495cc8f2c495
 **/
 .buttonContainer__7e329 {
     display: flex;
@@ -1315,6 +1315,7 @@
 }
 
 .nuxBackground__0b406 {
+    position: relative;
     background-color: var(--black);
     width: 100%;
     height: 100%

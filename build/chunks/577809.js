@@ -324,7 +324,7 @@ let T = e => {
               background: eS ? ej : eN
             },
             className: k.sidebarGradientOverlay
-          }), eS ? (0, r.jsx)(f.Z, {
+          }), eS ? (0, r.jsx)(f.ZP, {
             profile: G,
             className: k.guildProfile,
             disableCTA: !0

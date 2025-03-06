@@ -73,7 +73,7 @@ function N(e) {
   } = (0, m.u)(n.id);
   return (r.useEffect(() => {
     a()
-  }, [a]), null == l) ? null : (0, t.jsx)(h.Z, {
+  }, [a]), null == l) ? null : (0, t.jsx)(h.ZP, {
     profile: l,
     disableCTA: !0
   })

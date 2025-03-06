@@ -1,7 +1,68 @@
 /**
   Module ID: 31924
-  Original File Name: ea1a99d0151dce66
+  Original File Name: d6acb39540fe87f1
 **/
+.icon_f4b9b5 {
+    filter: saturate(1);
+    filter: saturate(var(--saturation-factor,1))
+}
+
+.unlocked_f4b9b5 {
+    color: var(--green-360)
+}
+
+.emoji_f4b9b5 {
+    color: var(--premium-perk-yellow)
+}
+
+.animated_f4b9b5 {
+    color: var(--premium-perk-light-blue)
+}
+
+.audio_f4b9b5 {
+    color: var(--premium-perk-dark-blue)
+}
+
+.customization_f4b9b5 {
+    color: var(--premium-perk-green)
+}
+
+.upload_f4b9b5 {
+    color: var(--premium-perk-pink)
+}
+
+.vanity_f4b9b5 {
+    color: var(--premium-perk-orange)
+}
+
+.stream_f4b9b5 {
+    color: var(--premium-perk-blue)
+}
+
+.sticker_f4b9b5 {
+    color: var(--premium-perk-purple)
+}
+
+.privateThread_f4b9b5 {
+    color: var(--premium-perk-green)
+}
+
+.customRoleIcon_f4b9b5 {
+    color: var(--premium-perk-purple)
+}
+
+.stage_f4b9b5 {
+    color: var(--premium-perk-green)
+}
+
+.soundboard_f4b9b5 {
+    color: var(--premium-perk-light-blue)
+}
+
+.visual-refresh .unlocked_f4b9b5 {
+    color: var(--status-positive)
+}
+
 .levelContainer__3dcc3 {
     background: var(--bg-base-tertiary);
     border-radius: var(--radius-sm);
@@ -14,6 +75,11 @@
 
 .perkContainer__3dcc3 {
     display: flex
+}
+
+.perkIcon__3dcc3 {
+    width: 20px;
+    height: 20px
 }
 
 .perkText__3dcc3 {

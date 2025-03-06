@@ -114,7 +114,7 @@ let E = function() {
         className: I.rightColumn,
         children: (0, r.jsx)(a.Ttm, {
           className: I.profilePreviewContainer,
-          children: (0, r.jsx)(m.Z, {
+          children: (0, r.jsx)(m.ZP, {
             className: I.profilePreview,
             profile: T,
             disableCTA: !0,

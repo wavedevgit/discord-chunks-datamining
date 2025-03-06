@@ -156,8 +156,8 @@ function _(e) {
     filters: R,
     analyticsLocation: Z,
     analyticsLocations: L = [],
-    modalSubTitle: k,
-    imageSpecifications: I,
+    modalSubTitle: I,
+    imageSpecifications: k,
     modalTitle: U = A.NW.string(A.t.DToW4e),
     uploadOptionTitle: D = A.NW.string(A.t["MsUY/f"])
   } = e, M = (0, a.e7)([b.Z], () => b.Z.isFocused()), W = (0, a.e7)([g.default], () => g.default.getCurrentUser()), B = (0, a.e7)([m.Z], () => m.Z.getGuildId()), H = (0, a.e7)([p.Z], () => p.Z.getGuild(B)), {
@@ -200,9 +200,9 @@ function _(e) {
           tag: i.RB0.H1,
           className: N.modalTitle,
           children: U
-        }), null != k ? (0, r.jsx)(i.Text, {
+        }), null != I ? (0, r.jsx)(i.Text, {
           variant: "text-md/normal",
-          children: k
+          children: I
         }) : null]
       }), (0, r.jsx)(i.olH, {
         onClick: c,
@@ -308,10 +308,10 @@ function _(e) {
             })
           })]
         })]
-      }), null != I ? (0, r.jsx)(i.Text, {
+      }), null != k ? (0, r.jsx)(i.Text, {
         className: N.imageSpecifications,
         variant: "text-sm/normal",
-        children: I
+        children: k
       }) : null, _ && J && (0, r.jsx)(f.Z, {
         uploadType: S,
         showUpsell: !0,

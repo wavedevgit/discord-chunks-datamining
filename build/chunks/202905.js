@@ -118,7 +118,7 @@ function v(e) {
             className: j.previewWrapper,
             children: [(0, r.jsx)("div", {
               className: j.gradient
-            }), (0, r.jsx)(u.Z, {
+            }), (0, r.jsx)(u.ZP, {
               className: j.preview,
               profile: S,
               CTAOverride: (0, r.jsx)(o.zxk, {

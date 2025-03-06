@@ -170,7 +170,7 @@ function O(e) {
   } = e, N = (0, h.vn)(p)[i.tier], v = a && n >= N, O = i.tier !== f.Eu4.NONE && i.tier !== f.Eu4.TIER_1, y = (e, t) => {
     var n;
     let {
-      icon: r,
+      Icon: r,
       className: i
     } = (0, m.t)(e.icon, t);
     return (0, s.jsxs)("div", {

@@ -6,26 +6,53 @@ n.d(t, {
 });
 var r = n(535396);
 let i = [{
-    type: r.U.LEVEL,
+    type: r.Us.LEVEL,
     skuId: "1",
     title: "Lorem ipsum",
     cost: 1,
-    dependencies: []
+    dependencies: [],
+    features: {
+      additional_emoji_slots: 50,
+      additional_sound_slots: 50,
+      additional_sticker_slots: 50,
+      total_emoji_slots: 50,
+      total_sound_slots: 50,
+      total_sticker_slots: 50,
+      features: []
+    }
   }, {
-    type: r.U.LEVEL,
+    type: r.Us.LEVEL,
     skuId: "2",
     title: "Lorem ipsum",
     cost: 1,
-    dependencies: ["1"]
+    dependencies: ["1"],
+    features: {
+      additional_emoji_slots: 50,
+      additional_sound_slots: 50,
+      additional_sticker_slots: 50,
+      total_emoji_slots: 50,
+      total_sound_slots: 50,
+      total_sticker_slots: 50,
+      features: []
+    }
   }, {
-    type: r.U.LEVEL,
+    type: r.Us.LEVEL,
     skuId: "3",
     title: "Lorem ipsum",
     cost: 1,
-    dependencies: ["2"]
+    dependencies: ["2"],
+    features: {
+      additional_emoji_slots: 50,
+      additional_sound_slots: 50,
+      additional_sticker_slots: 50,
+      total_emoji_slots: 50,
+      total_sound_slots: 50,
+      total_sticker_slots: 50,
+      features: []
+    }
   }],
   o = [{
-    type: r.U.PERK,
+    type: r.Us.PERK,
     skuId: "1",
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat posuere lao",
@@ -33,7 +60,7 @@ let i = [{
     bundle: !0,
     dependencies: []
   }, {
-    type: r.U.PERK,
+    type: r.Us.PERK,
     skuId: "2",
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat posuere lao",
@@ -41,7 +68,7 @@ let i = [{
     bundle: !0,
     dependencies: []
   }, {
-    type: r.U.PERK,
+    type: r.Us.PERK,
     skuId: "3",
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat posuere lao",
@@ -49,7 +76,7 @@ let i = [{
     bundle: !1,
     dependencies: []
   }, {
-    type: r.U.PERK,
+    type: r.Us.PERK,
     skuId: "4",
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat posuere lao",

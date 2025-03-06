@@ -41,7 +41,7 @@ function m(e) {
       children: p.NW.string(_.Z.MYYPa2)
     }), (0, r.jsx)("div", {
       className: h.powerupsContainer,
-      children: null === (t = E.get(f.U.PERK)) || void 0 === t ? void 0 : t.map((e, t) => (0, r.jsx)(s.Q, {
+      children: null === (t = E.get(f.Us.PERK)) || void 0 === t ? void 0 : t.map((e, t) => (0, r.jsx)(s.Q, {
         animatedCard: !0,
         heading: e.title,
         description: e.description,
