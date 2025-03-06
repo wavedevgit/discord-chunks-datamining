@@ -39,7 +39,9 @@ function u(e) {
     className: i()(d.embedSpotify, t),
     src: a.C7.EMBED(u),
     style: {
-      width: 400,
+      maxWidth: 400,
+      minWidth: 300,
+      width: "100%",
       height: g
     },
     frameBorder: 0,
