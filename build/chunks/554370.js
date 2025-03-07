@@ -23,8 +23,8 @@ var i = n(200651),
   b = n(131951),
   j = n(944486),
   x = n(556296),
-  S = n(808506),
-  I = n(237997),
+  I = n(808506),
+  S = n(237997),
   C = n(451478),
   N = n(585483),
   Z = n(358085),
@@ -176,14 +176,14 @@ function eo(e) {
     incompatibleApp: m,
     hasZeroSizeDimension: Z,
     keybind: A
-  } = (0, a.cj)([V.ZP, I.default, C.Z, x.ZP], () => {
+  } = (0, a.cj)([V.ZP, S.default, C.Z, x.ZP], () => {
     let e = C.Z.windowSize((0, _.ZY)(n)),
       t = x.ZP.getOverlayKeybind(),
       i = (0, P.getPID)();
     return {
       locked: V.ZP.isInputLocked(i),
-      focused: i === P.DEV_PID ? I.default.isFocused(i) : V.ZP.isFocused((0, P.getPID)()),
-      incompatibleApp: I.default.incompatibleApp,
+      focused: i === P.DEV_PID ? S.default.isFocused(i) : V.ZP.isFocused((0, P.getPID)()),
+      incompatibleApp: S.default.incompatibleApp,
       hasZeroSizeDimension: 0 === e.height || 0 === e.width,
       keybind: null != t ? (0, w.BB)(t.shortcut, !0) : "???"
     }
@@ -233,7 +233,7 @@ function eo(e) {
       var i;
       if (!x || e.current) return;
       e.current = !0;
-      let r = null !== (i = S.default.getFocusedPID()) && void 0 !== i ? i : (0, P.getPID)();
+      let r = null !== (i = I.default.getFocusedPID()) && void 0 !== i ? i : (0, P.getPID)();
       if (W.default.hasChangedRenderMode(r)) return;
       let o = [{
         type: G.nc.WELCOME

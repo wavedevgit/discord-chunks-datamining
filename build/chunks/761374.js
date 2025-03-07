@@ -23,9 +23,9 @@ var i = n(200651),
   b = n(340101),
   j = n(388032),
   x = n(336412);
-let S = [];
+let I = [];
 
-function I(e, t, n, i) {
+function S(e, t, n, i) {
   let r = (i - 1) * y.z;
   return e === b.C5.HORIZONTAL ? Math.min(Math.max((t - r) / i, 256), Math.max(16 * n / 9, 256)) : Math.min(Math.max(t, 256), Math.max((n - r) / i * 16 / 9, 256))
 }
@@ -63,7 +63,7 @@ function C(e) {
     streamParticipants: X
   } = (0, l.cj)([h.Z, d.Z], () => {
     if (null == M) return {
-      streamParticipants: S,
+      streamParticipants: I,
       participantsVersion: -1,
       activeStreams: new Set
     };
@@ -89,8 +89,8 @@ function C(e) {
     layout: et
   } = function(e, t, n, i, l) {
     let o = function(e, t, n, i) {
-        let r = I(b.C5.HORIZONTAL, e, t, n),
-          l = I(b.C5.VERTICAL, e, t, n);
+        let r = S(b.C5.HORIZONTAL, e, t, n),
+          l = S(b.C5.VERTICAL, e, t, n);
         switch (i) {
           case b.C5.VERTICAL:
             return l;
@@ -100,7 +100,7 @@ function C(e) {
         let o = (9 * l / 16 + y.z) * n - y.z;
         return e > 16 * t / 9 ? r : o <= t ? l : 9 * r / 16 <= t ? r : l
       }(n, i, t, l),
-      a = I(b.C5.VERTICAL, n, i, t),
+      a = S(b.C5.VERTICAL, n, i, t),
       s = null != l ? l : o === a ? b.C5.VERTICAL : b.C5.HORIZONTAL,
       [u, c] = r.useState(o);
     return r.useEffect(() => {

@@ -1,4 +1,4 @@
-/** Chunk was on 18410 **/
+/** Chunk was on 24491 **/
 n.d(t, {
   Z: () => g
 }), n(47120), n(733860);
@@ -6,9 +6,9 @@ var r, i = n(442837),
   l = n(570140),
   u = n(592125),
   o = n(271383),
-  a = n(430824);
+  c = n(430824);
 
-function c(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,7 +21,7 @@ let s = [],
 class f extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    this.waitFor(o.ZP, a.Z, u.Z), d = new Set([...s = null !== (t = null == e ? void 0 : e.channelHistory) && void 0 !== t ? t : []])
+    this.waitFor(o.ZP, c.Z, u.Z), d = new Set([...s = null !== (t = null == e ? void 0 : e.channelHistory) && void 0 !== t ? t : []])
   }
   getState() {
     return {
@@ -32,7 +32,7 @@ class f extends(r = i.ZP.PersistedStore) {
     return s
   }
 }
-c(f, "displayName", "RecentVoiceChannelStore"), c(f, "persistKey", "RecentVoiceChannelStore");
+a(f, "displayName", "RecentVoiceChannelStore"), a(f, "persistKey", "RecentVoiceChannelStore");
 let g = new f(l.Z, {
   POST_CONNECTION_OPEN: function() {
     d = new Set([...s])

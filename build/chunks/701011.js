@@ -2,8 +2,8 @@
 t.d(n, {
   Z: () => O
 }), t(47120);
-var r = t(200651),
-  o = t(192379),
+var o = t(200651),
+  r = t(192379),
   a = t(442837),
   i = t(704215),
   l = t(481060),
@@ -34,43 +34,43 @@ function I(e) {
       [n, a] = (0, d.US)(e);
     return {
       showsNewUserExperience: n === i.z.ACTIVITY_POPOUT_NUX_MODAL,
-      openNewUserExperienceModal: o.useCallback(() => {
+      openNewUserExperienceModal: r.useCallback(() => {
         (0, l.ZDy)(async () => {
           let {
             default: e
           } = await t.e("49077").then(t.bind(t, 97761));
           return n => {
-            var t, o;
-            return (0, r.jsx)(e, (t = function(e) {
+            var t, r;
+            return (0, o.jsx)(e, (t = function(e) {
               for (var n = 1; n < arguments.length; n++) {
                 var t = null != arguments[n] ? arguments[n] : {},
-                  r = Object.keys(t);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+                  o = Object.keys(t);
+                "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
                   return Object.getOwnPropertyDescriptor(t, e).enumerable
-                }))), r.forEach(function(n) {
-                  var r;
-                  r = t[n], n in e ? Object.defineProperty(e, n, {
-                    value: r,
+                }))), o.forEach(function(n) {
+                  var o;
+                  o = t[n], n in e ? Object.defineProperty(e, n, {
+                    value: o,
                     enumerable: !0,
                     configurable: !0,
                     writable: !0
-                  }) : e[n] = r
+                  }) : e[n] = o
                 })
               }
               return e
-            }({}, n), o = o = {
+            }({}, n), r = r = {
               onClickButton: () => {
                 a(x.L.USER_DISMISS), n.onClose()
               }
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : (function(e, n) {
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, n) {
               var t = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
-                var r = Object.getOwnPropertySymbols(e);
-                t.push.apply(t, r)
+                var o = Object.getOwnPropertySymbols(e);
+                t.push.apply(t, o)
               }
               return t
-            })(Object(o)).forEach(function(e) {
-              Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(o, e))
+            })(Object(r)).forEach(function(e) {
+              Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
             }), t))
           }
         }, {
@@ -81,15 +81,15 @@ function I(e) {
       }, [a])
     }
   }();
-  o.useEffect(() => {
+  r.useEffect(() => {
     a && c()
   }, [c, a]);
   let {
     renderWindow: u
-  } = o.useContext(s.ZP);
-  return a ? (0, r.jsx)("div", {
+  } = r.useContext(s.ZP);
+  return a ? (0, o.jsx)("div", {
     className: y.nuxBackground,
-    children: (0, r.jsx)(b.Z, {
+    children: (0, o.jsx)(b.Z, {
       eventTargetRef: {
         current: u.document.body
       }
@@ -111,8 +111,8 @@ function O() {
       channelId: n,
       guildId: t
     }
-  }), i = o.useRef(null), s = (0, c.Z)(e);
-  o.useEffect(() => {
+  }), i = r.useRef(null), s = (0, c.Z)(e);
+  r.useEffect(() => {
     null != e ? clearTimeout(i.current) : null != s && null == e && (i.current = window.setTimeout(() => {
       (0, p.xv)(g.KJ3.ACTIVITY_POPOUT)
     }, 5e3))
@@ -122,31 +122,31 @@ function O() {
       return null == n ? void 0 : u.Z.getApplication(n)
     }),
     b = (0, f.PR)();
-  return (0, r.jsx)("div", {
+  return (0, o.jsx)("div", {
     className: y.container,
-    children: null == e || null == d ? (0, r.jsx)(l.$jN, {
+    children: null == e || null == d ? (0, o.jsx)(l.$jN, {
       className: y.iframe
-    }) : (0, r.jsx)("div", {
+    }) : (0, o.jsx)("div", {
       className: y.loadedContentContainer,
-      children: (0, r.jsxs)("div", {
+      children: (0, o.jsxs)("div", {
         className: y.iframeAndHeaderContainer,
-        children: [(0, r.jsx)("div", {
+        children: [(0, o.jsx)("div", {
           className: y.headerContainer,
-          children: (0, r.jsx)(C.Z, {
+          children: (0, o.jsx)(C.Z, {
             applicationId: d.id,
             channelId: n
           })
-        }), (0, r.jsx)("div", {
+        }), (0, o.jsx)("div", {
           className: y.iframeContainer,
-          children: (0, r.jsx)(I, {
-            children: (0, r.jsx)(v.Z, {
+          children: (0, o.jsx)(I, {
+            children: (0, o.jsx)(v.Z, {
               channelId: n,
               guildId: t,
               embeddedActivity: e,
               application: d
             })
           })
-        }), b ? (0, r.jsx)(_.Z, {
+        }), b ? (0, o.jsx)(_.Z, {
           isEmbeddedActivity: !0
         }) : null]
       })

@@ -36,8 +36,8 @@ let E = l.memo(function(e) {
     cancelText: S,
     confirmText: x,
     icon: j,
-    body: Z,
-    title: C,
+    body: C,
+    title: Z,
     renderFooter: w,
     contentOpacity: P,
     status: N,
@@ -98,12 +98,12 @@ let E = l.memo(function(e) {
                   color: "interactive-normal",
                   variant: "text-sm/semibold",
                   lineClamp: 2,
-                  children: C
-                }), null != Z ? (0, r.jsx)(c.Text, {
+                  children: Z
+                }), null != C ? (0, r.jsx)(c.Text, {
                   color: "interactive-normal",
                   variant: "text-sm/normal",
                   lineClamp: null != t ? t * (D ? 2 : 1) : void 0,
-                  children: Z
+                  children: C
                 }) : null, function() {
                   let e = "function" == typeof O ? O(D, k) : O;
                   return null != O ? (0, r.jsx)(c.Text, {
@@ -195,9 +195,9 @@ function S(e) {
     f(d)
   }, [f, d]), j = l.useCallback(e => {
     u.Z.updateNotificationStatus(d), null == p || p(e, d)
-  }, [d, p]), Z = l.useCallback(e => {
+  }, [d, p]), C = l.useCallback(e => {
     null == v || v(e, d)
-  }, [v, d]), C = l.useCallback(e => {
+  }, [v, d]), Z = l.useCallback(e => {
     null == b || b(e, d)
   }, [b, d]), w = l.useCallback(e => {
     null == y || y(e, d)
@@ -208,10 +208,11 @@ function S(e) {
       renderFooter: _,
       onNotificationClick: R,
       onConfirmClick: T,
-      onCancelClick: A
+      onCancelClick: A,
+      disableClickableRegions: D = !1
     },
-    status: D
-  } = i, k = function(e, t) {
+    status: k
+  } = i, M = function(e, t) {
     if (null == e) return {};
     var n, r, l = function(e, t) {
       if (null == e) return {};
@@ -225,17 +226,17 @@ function S(e) {
       for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
     return l
-  }(i.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick"]), {
-    ref: M,
-    springs: L
+  }(i.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick", "disableClickableRegions"]), {
+    ref: L,
+    springs: W
   } = (0, h.X4)(i.id, s, c);
   return (0, r.jsx)(O, {
     transitionState: s,
-    springs: L,
+    springs: W,
     index: o,
     locked: a,
     children: (0, r.jsx)(m.Z, {
-      observe: 0 === o,
+      observe: 0 === o && !D,
       className: g.clickZone,
       children: (0, r.jsx)(E, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -254,21 +255,21 @@ function S(e) {
           })
         }
         return e
-      }({}, k), n = n = {
-        title: "function" == typeof k.title ? k.title(j) : k.title,
-        containerRef: M,
+      }({}, M), n = n = {
+        title: "function" == typeof M.title ? M.title(j) : M.title,
+        containerRef: L,
         notificationId: i.id,
         onNotificationShow: 0 === o ? x : void 0,
         onDismissClick: j,
-        onNotificationClick: null != v ? Z : void 0,
-        onConfirmClick: null != b ? C : void 0,
+        onNotificationClick: null != v ? C : void 0,
+        onConfirmClick: null != b ? Z : void 0,
         onCancelClick: null != y ? w : void 0,
         renderFooter: P,
         expand: !1,
         index: o,
         locked: a,
-        status: D,
-        contentOpacity: L.contentOpacity
+        status: k,
+        contentOpacity: W.contentOpacity
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

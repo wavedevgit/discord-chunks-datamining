@@ -23,8 +23,8 @@ var i = n(200651),
   b = n(839662),
   j = n(199902),
   x = n(314897),
-  S = n(131951),
-  I = n(594174),
+  I = n(131951),
+  S = n(594174),
   C = n(5192),
   N = n(444295),
   Z = n(1226),
@@ -83,9 +83,9 @@ function k(e, t) {
 function A(e) {
   let {
     participant: t
-  } = e, n = t.user.id, l = (0, a.e7)([S.Z], () => {
+  } = e, n = t.user.id, l = (0, a.e7)([I.Z], () => {
     let e = (0, m.Z)(t.type);
-    return S.Z.isLocalMute(t.user.id, e)
+    return I.Z.isLocalMute(t.user.id, e)
   }, [t]), o = (0, a.e7)([x.default], () => x.default.getId()), {
     hasVideo: d
   } = (0, b.Z)(t, o), p = l && d, h = r.useCallback(() => {
@@ -142,9 +142,9 @@ function R(e) {
     hasActiveStream: t,
     participant: n,
     onEnablePin: r
-  } = e, l = (0, f.bp)(), s = n.user, c = (0, a.e7)([I.default], () => {
+  } = e, l = (0, f.bp)(), s = n.user, c = (0, a.e7)([S.default], () => {
     var e;
-    return null !== (e = I.default.getUser(s.id)) && void 0 !== e ? e : s
+    return null !== (e = S.default.getUser(s.id)) && void 0 !== e ? e : s
   }, [s]), d = t ? P.NW.string(P.t.tLxK4u) : P.NW.string(P.t.E5RDnJ);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {

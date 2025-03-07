@@ -59,8 +59,8 @@ function y(e) {
   let b = (0, a.e7)([p.Z], () => p.Z.getWindow(m.$J)),
     [j, x] = (0, c.m8)(y),
     {
-      currentFPS: S,
-      averageFrameTime: I,
+      currentFPS: I,
+      averageFrameTime: S,
       timeSinceLastDrop: C,
       onResetFrameData: N,
       droppedFramesRef: Z,
@@ -71,7 +71,7 @@ function y(e) {
     [T, D, k] = (0, c.ZF)(y),
     [A, L] = (0, c.Y5)(T, _, b),
     R = performance.now() - x.current < c.MC,
-    M = D(I, P.current);
+    M = D(S, P.current);
   (0, u.ZP)(() => (A(), () => {
     L()
   }));
@@ -101,8 +101,8 @@ function y(e) {
         children: ["FPS:", " ", (0, i.jsx)(s.Text, {
           tag: "span",
           variant: "code",
-          color: S < 30 ? "text-danger" : S < 45 ? "text-warning" : "text-primary",
-          children: S.toFixed(2)
+          color: I < 30 ? "text-danger" : I < 45 ? "text-warning" : "text-primary",
+          children: I.toFixed(2)
         })]
       })]
     }), (U || !t) && (0, i.jsxs)("div", {
@@ -121,8 +121,8 @@ function y(e) {
         children: ["Frame Times:", " ", (0, i.jsxs)(s.Text, {
           tag: "span",
           variant: "code",
-          color: I > 1.1 * c.tO ? "text-warning" : "text-primary",
-          children: [I.toFixed(2), "ms"]
+          color: S > 1.1 * c.tO ? "text-warning" : "text-primary",
+          children: [S.toFixed(2), "ms"]
         })]
       })]
     }), (G || !t) && (0, i.jsxs)("div", {

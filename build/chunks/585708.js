@@ -1,38 +1,39 @@
 /** Chunk was on 50751 **/
 n.d(t, {
-  Z: () => E
+  Z: () => b
 });
 var i = n(200651);
 n(192379);
 var r = n(13245),
-  l = n(937889),
-  o = n(703656),
-  a = n(460181),
-  s = n(974180),
-  u = n(150097),
-  c = n(358085),
-  d = n(998502),
-  p = n(145597),
-  h = n(610394),
-  f = n(516542),
-  m = n(618373),
-  g = n(620954),
-  O = n(987650),
-  v = n(981631),
-  y = n(388032);
+  l = n(45114),
+  o = n(937889),
+  a = n(703656),
+  s = n(460181),
+  u = n(974180),
+  c = n(150097),
+  d = n(358085),
+  p = n(998502),
+  h = n(145597),
+  f = n(610394),
+  m = n(516542),
+  g = n(618373),
+  O = n(620954),
+  v = n(987650),
+  y = n(981631),
+  E = n(388032);
 
-function E(e, t, n, E) {
-  var b;
+function b(e, t, n, b) {
+  var j;
   let {
-    icon: j,
-    title: x,
+    icon: x,
+    title: I,
     body: S
-  } = (0, u.Xi)(e, t, n), {
-    trackView: I,
-    trackClick: C
-  } = (0, g.R)(O.n0.TextChat, {
-    notif_type: O.n0.TextChat,
-    notif_user_id: null === (b = t.author) || void 0 === b ? void 0 : b.id,
+  } = (0, c.Xi)(e, t, n), {
+    trackView: C,
+    trackClick: N
+  } = (0, O.R)(v.n0.TextChat, {
+    notif_type: v.n0.TextChat,
+    notif_user_id: null === (j = t.author) || void 0 === j ? void 0 : j.id,
     message_id: t.id,
     message_type: t.type,
     guild_id: e.guild_id,
@@ -40,29 +41,32 @@ function E(e, t, n, E) {
     channel_type: e.type
   });
   return {
-    icon: j,
-    title: x,
-    body: t.content.length > 0 ? (0, l.ZP)(t, {
+    icon: x,
+    title: I,
+    body: t.content.length > 0 ? (0, o.ZP)(t, {
       noStyleAndInteraction: !0,
       formatInline: !0,
       hideSimpleEmbedContent: !1
     }).content : S,
-    hint: (e, t) => e && !t ? null : (0, m.Q)((0, g.P)(), y.t.ykjOAA, y.NW.string(y.t.jZkzVF)),
+    hint: (e, t) => e && !t ? null : (0, g.Q)((0, O.P)(), E.t.ykjOAA, E.NW.string(E.t.jZkzVF)),
     maxBodyLines: 2,
-    renderFooter: (t, n, r) => t && !r ? (0, i.jsx)(f.Z, {
-      id: n,
+    renderFooter: (n, r, l) => n && !l ? (0, i.jsx)(m.Z, {
+      id: r,
+      replyToMessageId: t.id,
       channel: e,
-      onSend: () => C("send")
+      onSend: () => N("send")
     }) : null,
     onNotificationShow: () => {
-      E && (0, a.GN)(s.Ay, s.yk), I()
+      b && (0, s.GN)(u.Ay, u.yk), C()
     },
     onNotificationClick: () => {
-      let n = (0, p.getPID)();
-      h.ZP.isInputLocked(n) ? (C("unlock"), r.Z.setInputLocked(!1, n)) : (C("jump"), (0, o.uL)(v.Z5c.CHANNEL(e.guild_id, e.id, t.id)), c.isPlatformEmbedded && d.ZP.focus())
+      let n = (0, h.getPID)();
+      (0, l.In)(e.id, !0, !0, t.id, {
+        section: y.jXE.OVERLAY
+      }), f.ZP.isInputLocked(n) ? (N("unlock"), r.Z.setInputLocked(!1, n)) : (N("jump"), (0, a.uL)(y.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
     },
     onDismissClick: () => {
-      C("dismiss")
+      N("dismiss")
     }
   }
 }

@@ -1,6 +1,6 @@
 /**
   Module ID: 76030
-  Original File Name: 2326c68397d5b925
+  Original File Name: f5480aad2fea218e
 **/
 .image__04666 {
     width: 100%;
@@ -2593,15 +2593,15 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .filter_ed0705 .profile_ed0705 {
-    background: radial-gradient(100% 100% at 0 50%,color-mix(in srgb,var(--custom-voice-filter-icon-bg-color-one) 10%,transparent) 0,transparent 100%),radial-gradient(100% 100% at 50% 100%,color-mix(in srgb,var(--custom-voice-filter-icon-bg-color-two) 25%,transparent) 0,transparent 100%)
+    background: radial-gradient(100% 100% at 50% 100%,color-mix(in srgb,var(--custom-voice-filter-icon-bg-color-two) 50%,transparent) 0,color-mix(in srgb,var(--custom-voice-filter-icon-bg-color-two) 5%,transparent) 100%)
 }
 
 .filter_ed0705:hover .profile_ed0705 {
-    background: radial-gradient(100% 100% at 0 50%,color-mix(in srgb,var(--custom-voice-filter-icon-bg-color-one) 10%,transparent) 0,transparent 100%),radial-gradient(100% 100% at 50% 100%,color-mix(in srgb,var(--custom-voice-filter-icon-bg-color-two) 50%,transparent) 0,transparent 100%)
+    background: radial-gradient(100% 100% at 0 50%,color-mix(in srgb,var(--custom-voice-filter-icon-bg-color-one) 20%,transparent) 0,transparent 100%),radial-gradient(100% 100% at 50% 100%,color-mix(in srgb,var(--custom-voice-filter-icon-bg-color-two) 50%,transparent) 0,color-mix(in srgb,var(--custom-voice-filter-icon-bg-color-two) 5%,transparent) 100%)
 }
 
 .filter_ed0705.selected_ed0705 .profile_ed0705 {
-    background: radial-gradient(100% 100% at 0 50%,color-mix(in srgb,var(--custom-voice-filter-icon-bg-color-one) 25%,transparent) 0,transparent 100%),radial-gradient(100% 100% at 50% 100%,var(--custom-voice-filter-icon-bg-color-two) 0,transparent 100%)
+    background: radial-gradient(100% 100% at 0 50%,color-mix(in srgb,var(--custom-voice-filter-icon-bg-color-one) 40%,transparent) 0,transparent 100%),radial-gradient(100% 100% at 50% 100%,var(--custom-voice-filter-icon-bg-color-two) 0,color-mix(in srgb,var(--custom-voice-filter-icon-bg-color-two) 20%,transparent) 100%)
 }
 
 .filter_ed0705 .hoverButtonCircle_ed0705 {
@@ -2660,8 +2660,8 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .quinn_ed0705 {
-    --custom-voice-filter-icon-bg-color-one: #35ed7e;
-    --custom-voice-filter-icon-bg-color-two: #2f5e43
+    --custom-voice-filter-icon-bg-color-one: #68bcfe;
+    --custom-voice-filter-icon-bg-color-two: #5f549d
 }
 
 .quinn_ed0705 .thumbnail_ed0705 {

@@ -1,61 +1,72 @@
 /** Chunk was on 50751 **/
 n.d(t, {
-  Z: () => g
+  Z: () => v
 }), n(47120);
 var i = n(200651),
   r = n(192379),
   l = n(904245),
   o = n(13245),
-  a = n(655687),
-  s = n(541716),
-  u = n(752305),
-  c = n(893718),
-  d = n(957730),
-  p = n(849522),
-  h = n(145597),
-  f = n(981631),
-  m = n(880679);
+  a = n(45114),
+  s = n(493773),
+  u = n(655687),
+  c = n(541716),
+  d = n(752305),
+  p = n(893718),
+  h = n(957730),
+  f = n(849522),
+  m = n(145597),
+  g = n(981631),
+  O = n(880679);
 
-function g(e) {
+function v(e) {
   let {
     id: t,
-    channel: n,
-    onSend: g
-  } = e, O = (0, p.Z)(), {
-    placeholder: v,
-    accessibilityLabel: y
-  } = (0, a.Z)({
-    channel: n
-  }), [E, b] = r.useState(() => (0, u.H2)()), {
-    textValue: j,
-    richValue: x
-  } = E, [S, I] = r.useState(!1), C = r.useCallback(() => I(!0), []), N = r.useCallback(() => I(!1), []), Z = r.useCallback((e, t, n) => {
-    b({
-      textValue: t,
-      richValue: n
+    replyToMessageId: n,
+    channel: v,
+    onSend: y
+  } = e, E = (0, f.Z)(), {
+    placeholder: b,
+    accessibilityLabel: j
+  } = (0, u.Z)({
+    channel: v
+  }), [x, I] = r.useState(() => (0, d.H2)()), {
+    textValue: S,
+    richValue: C
+  } = x, [N, Z] = r.useState(!1), w = r.useCallback(() => Z(!0), []), P = r.useCallback(() => Z(!1), []);
+  (0, s.ZP)(() => {
+    (0, a.In)(v.id, !0, !0, n, {
+      section: g.jXE.OVERLAY
     })
-  }, []), w = r.useCallback(e => {
-    "Escape" === e.key && o.Z.updateNotificationStatus(t, f._1z.ACTIVE)
-  }, [t]), P = r.useCallback(() => (j.length > O || (l.Z.sendMessage(n.id, d.ZP.parse(n, j), !1), o.Z.setInputLocked(!0, (0, h.getPID)()), o.Z.updateNotificationStatus(t, f._1z.DISMISSED), null == g || g(j)), Promise.resolve({
-    shouldClear: !1,
-    shouldRefocus: !0
-  })), [j, O, n, t, g]);
+  });
+  let _ = r.useCallback((e, t, n) => {
+      I({
+        textValue: t,
+        richValue: n
+      })
+    }, []),
+    T = r.useCallback(e => {
+      "Escape" === e.key && o.Z.updateNotificationStatus(t, g._1z.ACTIVE)
+    }, [t]),
+    D = r.useCallback(() => (S.length > E || (l.Z.sendMessage(v.id, h.ZP.parse(v, S), !1), o.Z.setInputLocked(!0, (0, m.getPID)()), o.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == y || y(S)), Promise.resolve({
+      shouldClear: !1,
+      shouldRefocus: !0
+    })), [S, E, v, t, y]);
   return (0, i.jsx)("div", {
-    children: (0, i.jsx)(c.Z, {
-      innerClassName: m.textArea,
-      onChange: Z,
-      placeholder: v,
-      accessibilityLabel: y,
-      channel: n,
-      textValue: j,
-      richValue: x,
-      type: s.Ie.OVERLAY_INLINE_REPLY,
+    children: (0, i.jsx)(p.Z, {
+      innerClassName: O.textArea,
+      onChange: _,
+      placeholder: b,
+      accessibilityLabel: j,
+      channel: v,
+      textValue: S,
+      richValue: C,
+      type: c.Ie.OVERLAY_INLINE_REPLY,
       allowNewLines: !1,
-      onBlur: N,
-      onFocus: C,
-      focused: S,
-      onSubmit: P,
-      onKeyDown: w,
+      onBlur: P,
+      onFocus: w,
+      focused: N,
+      onSubmit: D,
+      onKeyDown: T,
       autoCompletePosition: "bottom",
       disableThemedBackground: !0
     })

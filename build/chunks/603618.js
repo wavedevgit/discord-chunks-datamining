@@ -24,8 +24,8 @@ var i = n(200651),
   b = n(194082),
   j = n(297781),
   x = n(656709),
-  S = n(567409),
-  I = n(225559),
+  I = n(567409),
+  S = n(225559),
   C = n(703656),
   N = n(93127),
   Z = n(814443),
@@ -141,7 +141,7 @@ function Q(e) {
         value: U.bk.CHAT,
         userId: a.id
       })
-    }, j = O ? Y.NW.string(Y.t["3fRyS0"]) : Y.NW.string(Y.t.y9eo7e), S = O ? (0, i.jsx)(d.ejJ, {
+    }, j = O ? Y.NW.string(Y.t["3fRyS0"]) : Y.NW.string(Y.t.y9eo7e), I = O ? (0, i.jsx)(d.ejJ, {
       color: "currentColor",
       size: "sm"
     }) : (0, i.jsx)(d.Uuj, {
@@ -167,7 +167,7 @@ function Q(e) {
       }) : (0, i.jsx)(d.kSu, {
         color: "currentColor",
         size: "sm"
-      }) : S
+      }) : I
     }))
   })
 }
@@ -319,7 +319,7 @@ function ee(e) {
     maxUserShowCount: n,
     userAffinityThresholdV1: i = 35,
     userAffinityThresholdV2: l = .0029
-  } = e, o = (0, S.Ns)(t);
+  } = e, o = (0, I.Ns)(t);
   (0, O.ZP)(() => {
     (0, N.W)(), (0, N._)()
   });
@@ -369,7 +369,7 @@ function ee(e) {
         }(w.Z.getUserAffinity(i), r, n)
       })
     }, [t, i, l]);
-  return (0, O.ZP)(() => (I.L(), () => I.v())), {
+  return (0, O.ZP)(() => (S.L(), () => S.v())), {
     entries: r.useMemo(() => {
       let e = o.filter(e => !p.some(t => t.activityUser.id === e.author_id)),
         t = [...p.map(e => (function(e) {
@@ -407,8 +407,8 @@ function et(e) {
 function en(e) {
   let {
     locked: t
-  } = e, n = (0, F.II)(), r = null == n ? void 0 : n.id, l = null == n ? void 0 : n.altId, o = (0, S.Ns)(r), a = (0, c.e7)([L.default], () => L.default.getCurrentUser()), s = null != l ? l : r, u = (0, c.e7)([D.Z], () => null == s ? null : D.Z.getApplicationActivity(s), [s]);
-  (0, O.ZP)(() => (I.L(), () => I.v()));
+  } = e, n = (0, F.II)(), r = null == n ? void 0 : n.id, l = null == n ? void 0 : n.altId, o = (0, I.Ns)(r), a = (0, c.e7)([L.default], () => L.default.getCurrentUser()), s = null != l ? l : r, u = (0, c.e7)([D.Z], () => null == s ? null : D.Z.getApplicationActivity(s), [s]);
+  (0, O.ZP)(() => (S.L(), () => S.v()));
   let p = null != u && (0, y.Z)(u, G.xjy.JOIN),
     f = (0, E.q)(null == u ? void 0 : u.application_id),
     m = null != f && (0, W.yE)(f.flags, G.udG.EMBEDDED),

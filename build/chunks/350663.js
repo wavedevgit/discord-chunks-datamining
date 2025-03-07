@@ -83,8 +83,8 @@ let y = 8,
       locked: h,
       activeStreams: j,
       streamParticipants: x,
-      participantsVersion: S,
-      pinned: I
+      participantsVersion: I,
+      pinned: S
     } = e, C = 9 / 16 * n, N = x.map(e => ({
       participant: e,
       key: e.user.id,
@@ -92,7 +92,7 @@ let y = 8,
       locked: h,
       widgetId: t,
       height: C,
-      pinned: I
+      pinned: S
     })), Z = (0, u.Z)(n), w = l === f.C5.VERTICAL, P = 0, _ = 0, T = (0, s.Yzy)(w ? N.map((e, t) => v(O({}, e), {
       y: (P += e.height + (t > 0 ? y : 0)) - e.height,
       x: 0
@@ -140,7 +140,7 @@ let y = 8,
       },
       config: b,
       trail: 100 * (n === Z)
-    }, n !== Z ? "animate-never" : "respect-motion-settings"), D = (0, p.ee)(() => new Set(x.map(e => e.user.id)), [x, S]), k = (0, p.ee)(() => new Set(x.filter(e => j.has((0, c.V9)(e.stream))).map(e => e.user.id)), [x, j, S]);
+    }, n !== Z ? "animate-never" : "respect-motion-settings"), D = (0, p.ee)(() => new Set(x.map(e => e.user.id)), [x, I]), k = (0, p.ee)(() => new Set(x.filter(e => j.has((0, c.V9)(e.stream))).map(e => e.user.id)), [x, j, I]);
     return r.useEffect(() => {
       0 !== D.size && (0, p.zi)(m.Odu.GO_LIVE, {
         locked: d.default.isInstanceLocked(),

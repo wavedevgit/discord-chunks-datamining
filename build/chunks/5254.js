@@ -1,13 +1,13 @@
-/** Chunk was on 18410 **/
+/** Chunk was on 24491 **/
 n.d(t, {
-  Z: () => E
+  Z: () => P
 }), n(47120);
 var r, i = n(392711),
   l = n.n(i),
   u = n(442837),
   o = n(570140),
-  a = n(598077),
-  c = n(594174),
+  c = n(598077),
+  a = n(594174),
   s = n(388380),
   d = n(72937);
 
@@ -21,23 +21,23 @@ function f(e, t, n) {
 }
 let g = {},
   O = 0,
-  p = !1,
-  y = !1;
+  y = !1,
+  p = !1;
 
-function h(e) {
+function E(e) {
   var t;
   let n = null != e.contact_names && e.contact_names.length >= 2 ? e.contact_names.slice(0, 2) : [];
   return {
     key: e.suggested_user.id,
     name: null === (t = l().first(e.reasons)) || void 0 === t ? void 0 : t.name,
-    user: new a.Z(e.suggested_user),
+    user: new c.Z(e.suggested_user),
     mutualFriendsCount: e.mutual_friends_count,
     contactNames: n
   }
 }
-class _ extends(r = u.ZP.Store) {
+class h extends(r = u.ZP.Store) {
   initialize() {
-    this.waitFor(c.default)
+    this.waitFor(a.default)
   }
   getSuggestionCount() {
     return O
@@ -52,14 +52,14 @@ class _ extends(r = u.ZP.Store) {
     return g[e]
   }
 }
-f(_, "displayName", "FriendSuggestionStore");
-let E = new _(o.Z, {
+f(h, "displayName", "FriendSuggestionStore");
+let P = new h(o.Z, {
   CONNECTION_OPEN: function(e) {
-    g = {}, (O = e.friendSuggestionCount) > 0 ? (y = !0, p || !y || (p = !0, y = !1, s.Z.fetch())) : (0, d.Z)()
+    g = {}, (O = e.friendSuggestionCount) > 0 ? (p = !0, y || !p || (y = !0, p = !1, s.Z.fetch())) : (0, d.Z)()
   },
   FRIEND_SUGGESTION_CREATE: function(e) {
     var t, n;
-    let r = h(e.suggestion);
+    let r = E(e.suggestion);
     if (null != g[r.key]) return !1;
     O++, t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -90,9 +90,9 @@ let E = new _(o.Z, {
   },
   LOAD_FRIEND_SUGGESTIONS_SUCCESS: function(e) {
     var t;
-    p = !1, t = e.suggestions, g = l().chain(t).map(e => h(e)).keyBy(e => e.key).value(), O = l().keys(g).length
+    y = !1, t = e.suggestions, g = l().chain(t).map(e => E(e)).keyBy(e => e.key).value(), O = l().keys(g).length
   },
   LOAD_FRIEND_SUGGESTIONS_FAILURE: function() {
-    p = !1, g = {}
+    y = !1, g = {}
   }
 })

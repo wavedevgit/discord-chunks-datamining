@@ -5,15 +5,15 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(243814),
-  a = n(793030),
-  s = n(974674),
-  l = n(1561),
-  c = n(993365),
-  u = n(385499),
-  d = n(768581),
-  f = n(630388),
-  _ = n(489863),
+  o = n(793030),
+  a = n(974674),
+  s = n(1561),
+  l = n(993365),
+  c = n(385499),
+  u = n(768581),
+  d = n(630388),
+  f = n(489863),
+  _ = n(713938),
   p = n(981631),
   h = n(182294),
   g = n(388032),
@@ -29,32 +29,32 @@ function E(e) {
     showLogout: y,
     location: O,
     scopes: S
-  } = e, I = d.ZP.getApplicationIconURL({
+  } = e, I = u.ZP.getApplicationIconURL({
     id: E.id,
     icon: E.icon
-  }), T = d.ZP.getUserAvatarURL(n), N = i.useMemo(() => S.some(e => e === o.x.SDK_SOCIAL_LAYER || e === o.x.SDK_SOCIAL_LAYER_PRESENCE) ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c.x, {
+  }), T = u.ZP.getUserAvatarURL(n), N = i.useMemo(() => S.some(e => (0, _.sg)(e)) ? (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(l.x, {
       variant: "text-lg/normal",
       color: "header-secondary",
       children: g.NW.string(g.t.uT1CPT)
-    }), (0, r.jsx)(a.X6, {
+    }), (0, r.jsx)(o.X6, {
       variant: "heading-xxl/bold",
       color: "header-primary",
       children: E.name
     })]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(c.x, {
+    children: [(0, r.jsxs)(l.x, {
       variant: "text-lg/bold",
       color: "header-primary",
-      children: [E.name, null != v ? (0, r.jsx)(u.Z, {
+      children: [E.name, null != v ? (0, r.jsx)(c.Z, {
         className: m.botTag,
-        verified: null != v.public_flags && (0, f.yE)(v.public_flags, p.xW$.VERIFIED_BOT)
+        verified: null != v.public_flags && (0, d.yE)(v.public_flags, p.xW$.VERIFIED_BOT)
       }) : null]
-    }), b.length > 0 ? (0, r.jsx)(c.x, {
+    }), b.length > 0 ? (0, r.jsx)(l.x, {
       variant: "text-md/normal",
       color: "header-secondary",
       children: g.NW.string(g.t.jFbDnJ)
-    }) : (0, r.jsx)(c.x, {
+    }) : (0, r.jsx)(l.x, {
       variant: "text-md/normal",
       color: "header-secondary",
       children: g.NW.string(g.t["X+Fdpq"])
@@ -65,7 +65,7 @@ function E(e) {
     className: m.header,
     children: [(0, r.jsxs)("div", {
       className: m.headerIcons,
-      children: [(0, r.jsx)(s.qE, {
+      children: [(0, r.jsx)(a.qE, {
         className: m.avatar,
         src: I,
         size: h.EF.SIZE_80,
@@ -79,7 +79,7 @@ function E(e) {
         }), (0, r.jsx)("div", {
           className: m.ellipse
         })]
-      }), (0, r.jsx)(s.qE, {
+      }), (0, r.jsx)(a.qE, {
         className: m.avatar,
         src: T,
         size: h.EF.SIZE_80,
@@ -87,23 +87,23 @@ function E(e) {
       })]
     }), N, y ? (0, r.jsx)("div", {
       className: m.currentUser,
-      children: (0, r.jsxs)(c.x, {
+      children: (0, r.jsxs)(l.x, {
         variant: "text-sm/normal",
         color: "text-muted",
         children: [g.NW.format(g.t.qRvpYW, {
-          userHook: () => (0, r.jsxs)(c.x, {
+          userHook: () => (0, r.jsxs)(l.x, {
             className: m.currentUserTag,
             variant: "text-sm/normal",
-            children: [n.username, !n.isPomelo() && (0, r.jsx)(c.x, {
+            children: [n.username, !n.isPomelo() && (0, r.jsx)(l.x, {
               className: m.currentUserDiscriminator,
               variant: "text-sm/normal",
               children: "#".concat(n.discriminator)
             })]
           }, n.id)
-        }), (0, r.jsx)(l.P, {
+        }), (0, r.jsx)(s.P, {
           tag: "a",
           className: m.logoutLink,
-          onClick: () => (0, _.c$)(O),
+          onClick: () => (0, f.c$)(O),
           children: g.NW.string(g.t["yV/hjI"])
         })]
       })

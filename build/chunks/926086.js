@@ -30,19 +30,19 @@ function m(e) {
   } = d.ZP.useState(e => ({
     timeToLiveMs: e.timeToLiveMs,
     reappearTimeMs: e.reappearTimeMs
-  }), s()), S = {
+  }), s()), I = {
     timeToLiveMs: j,
     reappearTimeMs: x
-  }, I = r.useRef(S);
+  }, S = r.useRef(I);
   r.useEffect(() => {
-    I.current = S
+    S.current = I
   }), r.useEffect(() => (y.current = setInterval(() => {
     let e = Date.now();
     g(e), v(t => {
       if (0 === t) return e;
       let n = e - t,
-        i = I.current.timeToLiveMs,
-        r = i + I.current.reappearTimeMs;
+        i = S.current.timeToLiveMs,
+        r = i + S.current.reappearTimeMs;
       return n > i ? t + r : t
     })
   }, 100), () => {

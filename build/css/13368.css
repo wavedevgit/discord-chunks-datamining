@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 989bd6262d4e5888
+  Original File Name: 3f58b850deb5765e
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -235,6 +235,23 @@
 
 .key__98feb+.key__98feb {
     margin-left: 0
+}
+
+.body__81a05,.nowPlayingNotification__81a05 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px
+}
+
+.bodyText__81a05 {
+    word-wrap: none;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.bodyText__81a05 strong {
+    color: var(--interactive-active)
 }
 
 .textArea_ab8e5c {

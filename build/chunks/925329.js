@@ -76,7 +76,8 @@ let g = e => {
     pid: g,
     className: m,
     guildClassName: E,
-    size: v = f.MEDIUM
+    size: v = f.MEDIUM,
+    allowUnknownGameIcon: b = !0
   } = e;
   if (null != c && (t = p(c)), null != n && null == t && (t = n.getIconURL(_(v))), null == (t = (0, s.Z)(g, t)) && null != i) {
     let e = h(v);
@@ -86,17 +87,17 @@ let g = e => {
       size: e
     })
   }
-  if (null == t) return (0, r.jsx)(a.IMN, {
+  if (null == t) return b ? (0, r.jsx)(a.IMN, {
     size: "md",
     color: "currentColor",
     className: o()(d.gameIcon, v, m)
-  });
-  let b = null == n ? void 0 : n.name,
-    y = null != b && "" !== b ? u.NW.formatToPlainString(u.t.tiKyYm, {
-      applicationName: b
+  }) : null;
+  let y = null == n ? void 0 : n.name,
+    O = null != y && "" !== y ? u.NW.formatToPlainString(u.t.tiKyYm, {
+      applicationName: y
     }) : u.NW.string(u.t["2B/phI"]);
   return (0, r.jsx)("img", {
-    alt: y,
+    alt: O,
     src: t,
     className: o()(d.gameIcon, v, m)
   })

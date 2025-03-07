@@ -165,7 +165,8 @@ class L {
       [I.n0.ClipsReminderNotification]: new w,
       [I.n0.ClipsNotification]: new w,
       [I.n0.KeybindIndicatorsNotification]: new w,
-      [I.n0.SendGameInvitesNotification]: new w
+      [I.n0.SendGameInvitesNotification]: new w,
+      [I.n0.NowPlayingNotification]: new w
     })
   }
 }

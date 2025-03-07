@@ -2,8 +2,8 @@
 t.d(n, {
   Z: () => D
 }), t(47120);
-var r = t(200651),
-  o = t(192379),
+var o = t(200651),
+  r = t(192379),
   a = t(120356),
   i = t.n(a),
   l = t(442837),
@@ -47,20 +47,20 @@ function D(e) {
   } = e, a = (0, l.e7)([d.Z], () => d.Z.getApplication(n)), D = (0, l.e7)([S.ZP], () => S.ZP.getSelfEmbeddedActivities().get(n)), R = (0, l.e7)([I.Z], () => I.Z.getChannel(t)), M = m.Sb.useSetting(), Y = (0, l.Wu)([O.ZP], () => {
     var e;
     return null == R || null == D ? [] : Array.from(null !== (e = D.userIds) && void 0 !== e ? e : []).map(e => O.ZP.getMember(R.guild_id, e))
-  }, [D, R]), G = o.useMemo(() => {
+  }, [D, R]), G = r.useMemo(() => {
     let e = new Map;
     return Y.forEach(n => {
       null != n && void 0 !== n && e.set(n.userId, n)
     }), e
-  }, [Y]), H = o.useCallback((e, n) => {
+  }, [Y]), H = r.useCallback((e, n) => {
     var t;
     if (null == e) return null;
-    let o = G.get(e.id),
-      a = null !== (t = null == o ? void 0 : o.nick) && void 0 !== t ? t : k.ZP.getName(e);
-    return (0, r.jsx)(c.DY3, {
+    let r = G.get(e.id),
+      a = null !== (t = null == r ? void 0 : r.nick) && void 0 !== t ? t : k.ZP.getName(e);
+    return (0, o.jsx)(c.DY3, {
       text: a,
       position: "bottom",
-      children: (0, r.jsx)("img", {
+      children: (0, o.jsx)("img", {
         src: e.getAvatarURL(null == n ? void 0 : n.guild_id, L),
         alt: a,
         className: U.avatar
@@ -70,7 +70,7 @@ function D(e) {
     location: "activity_popout_overflow_menu"
   }, {
     autoTrackExposure: !0
-  }).enabled, J = o.useCallback(() => {
+  }).enabled, J = r.useCallback(() => {
     let e = (0, T.getPID)();
     s.Z.setInputLocked(!p.ZP.isInputLocked(e), e)
   }, []), X = (0, Z.PR)(), {
@@ -79,7 +79,7 @@ function D(e) {
     handleStayOnTop: Q
   } = function() {
     let e = (0, l.e7)([b.Z], () => b.Z.getIsAlwaysOnTop(W.KJ3.ACTIVITY_POPOUT)),
-      n = o.useCallback(e => {
+      n = r.useCallback(e => {
         f.hY(W.KJ3.ACTIVITY_POPOUT, e)
       }, []);
     return {
@@ -96,14 +96,14 @@ function D(e) {
       popoutWindow: e,
       currentDocument: n,
       rootNode: t
-    } = (0, E.Z)(), [r, a] = o.useState(!1), i = o.useCallback(() => {
-      null != t && r && (a(!1), (0, N.Pr)(t, n))
-    }, [t, n, r]), l = o.useCallback(() => {
-      null != t && (r ? i() : (a(!0), (0, N.Dj)(t)))
-    }, [t, r, i]), c = o.useCallback(() => {
-      null != t && !(0, N.rB)(t, n) && r && l()
-    }, [t, n, r, l]);
-    return o.useEffect(() => (null == n || n.addEventListener(N.NO, c), () => {
+    } = (0, E.Z)(), [o, a] = r.useState(!1), i = r.useCallback(() => {
+      null != t && o && (a(!1), (0, N.Pr)(t, n))
+    }, [t, n, o]), l = r.useCallback(() => {
+      null != t && (o ? i() : (a(!0), (0, N.Dj)(t)))
+    }, [t, o, i]), c = r.useCallback(() => {
+      null != t && !(0, N.rB)(t, n) && o && l()
+    }, [t, n, o, l]);
+    return r.useEffect(() => (null == n || n.addEventListener(N.NO, c), () => {
       null == n || n.removeEventListener(N.NO, c)
     }), [n, c]), {
       rootNode: t,
@@ -112,33 +112,33 @@ function D(e) {
     }
   }();
   if (null == a || null == D) return null;
-  let er = (0, r.jsx)(u.Z, {
+  let eo = (0, o.jsx)(u.Z, {
     application: a,
     size: 24,
     className: U.appIcon
   });
-  return M && (er = (0, r.jsx)(c.DY3, {
+  return M && (eo = (0, o.jsx)(c.DY3, {
     text: D.compositeInstanceId,
     position: "bottom",
-    children: er
-  })), (0, r.jsx)(c.f6W, {
+    children: eo
+  })), (0, o.jsx)(c.f6W, {
     theme: W.BRd.DARK,
-    children: e => (0, r.jsxs)("div", {
+    children: e => (0, o.jsxs)("div", {
       className: i()(U.container, e),
-      children: [(0, r.jsxs)("div", {
+      children: [(0, o.jsxs)("div", {
         className: i()(U.headerSection, U.headerSectionLeft),
-        children: [er, (0, r.jsx)(c.Text, {
+        children: [eo, (0, o.jsx)(c.Text, {
           variant: "text-md/normal",
           color: "header-primary",
           children: a.name
-        }), (0, r.jsx)("div", {
+        }), (0, o.jsx)("div", {
           className: U.dotSpacer,
-          children: (0, r.jsx)(c.Text, {
+          children: (0, o.jsx)(c.Text, {
             variant: "text-md/normal",
             color: "text-muted",
             children: "."
           })
-        }), (0, r.jsx)(B.Z, {
+        }), (0, o.jsx)(B.Z, {
           renderIcon: !1,
           users: F,
           size: L,
@@ -146,11 +146,11 @@ function D(e) {
           className: U.userAvatars,
           renderUser: e => H(e, R)
         })]
-      }), (0, r.jsx)("div", {
+      }), (0, o.jsx)("div", {
         className: i()(U.headerSection, U.headerSectionRight),
-        children: (0, r.jsxs)("div", {
+        children: (0, o.jsxs)("div", {
           className: U.actionButtonsContainer,
-          children: [(0, r.jsx)(x.Z, {
+          children: [(0, o.jsx)(x.Z, {
             appContext: W.IlC.POPOUT,
             applicationId: n,
             channel: R,
@@ -160,25 +160,25 @@ function D(e) {
             look: c.zxk.Looks.FILLED,
             size: c.zxk.Sizes.TINY,
             buttonText: z.NW.string(z.t["6F9ivr"])
-          }), X ? (0, r.jsx)(C.Z, {
+          }), X ? (0, o.jsx)(C.Z, {
             onClick: J,
             iconComponent: c.epB,
             label: z.NW.string(z.t.mseZsL)
-          }) : null, q ? (0, r.jsx)(y.Z, {
+          }) : null, q ? (0, o.jsx)(y.Z, {
             popoutWindowAlwaysOnTop: $,
             onToggleStayOnTop: Q
-          }) : null, (0, r.jsx)(g.Z, {
+          }) : null, (0, o.jsx)(g.Z, {
             node: ee,
             guestWindow: en,
             onClick: et
-          }), K && (0, r.jsx)(c.yRy, {
+          }), K && (0, o.jsx)(c.yRy, {
             position: "bottom",
             renderPopout: e => {
               let {
                 closePopout: n
               } = e;
-              return (0, r.jsx)(h.Z, {
-                children: (0, r.jsx)(A.Z, {
+              return (0, o.jsx)(h.Z, {
+                children: (0, o.jsx)(A.Z, {
                   application: a,
                   channelId: t,
                   onClose: n
@@ -186,39 +186,39 @@ function D(e) {
               })
             },
             children: (e, n) => {
-              var t, r;
+              var t, o;
               let {
                 isShown: a
               } = n;
-              return (0, o.createElement)(v.Z, (t = function(e) {
+              return (0, r.createElement)(v.Z, (t = function(e) {
                 for (var n = 1; n < arguments.length; n++) {
                   var t = null != arguments[n] ? arguments[n] : {},
-                    r = Object.keys(t);
-                  "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+                    o = Object.keys(t);
+                  "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
                     return Object.getOwnPropertyDescriptor(t, e).enumerable
-                  }))), r.forEach(function(n) {
-                    var r;
-                    r = t[n], n in e ? Object.defineProperty(e, n, {
-                      value: r,
+                  }))), o.forEach(function(n) {
+                    var o;
+                    o = t[n], n in e ? Object.defineProperty(e, n, {
+                      value: o,
                       enumerable: !0,
                       configurable: !0,
                       writable: !0
-                    }) : e[n] = r
+                    }) : e[n] = o
                   })
                 }
                 return e
-              }({}, e), r = r = {
+              }({}, e), o = o = {
                 key: "more-options",
                 isActive: a
-              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, n) {
+              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : (function(e, n) {
                 var t = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
-                  var r = Object.getOwnPropertySymbols(e);
-                  t.push.apply(t, r)
+                  var o = Object.getOwnPropertySymbols(e);
+                  t.push.apply(t, o)
                 }
                 return t
-              })(Object(r)).forEach(function(e) {
-                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+              })(Object(o)).forEach(function(e) {
+                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(o, e))
               }), t))
             }
           }, "more-options-popout")]

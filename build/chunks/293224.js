@@ -29,8 +29,8 @@ var i = n(200651),
   b = n(55311),
   j = n(575175),
   x = n(933557),
-  S = n(471445),
-  I = n(44315),
+  I = n(471445),
+  S = n(44315),
   C = n(74299),
   N = n(803647),
   Z = n(565138),
@@ -203,7 +203,7 @@ function er(e) {
         onPopoutClick: O(n),
         onContextMenu: O(n),
         popoutOpen: r,
-        iconColor: c ? (0, I.Lq)(l.I.RED_400) : void 0,
+        iconColor: c ? (0, S.Lq)(l.I.RED_400) : void 0,
         onMouseEnter: () => {
           m.onMouseEnter()
         },
@@ -308,14 +308,14 @@ function eo(e) {
       onMouseEnter: j,
       onMouseLeave: x
     }
-  } = (0, p.o)(a ? "disable" : "enable"), S = null != n ? (0, A.X)({
+  } = (0, p.o)(a ? "disable" : "enable"), I = null != n ? (0, A.X)({
     enabled: a,
     cameraUnavailable: u,
     hasPermission: d,
     channel: n
   }) : void 0;
   r.useEffect(() => () => b(), [a, b]);
-  let I = en(l),
+  let S = en(l),
     C = null == n || !d;
   return (0, i.jsx)(h.yRy, {
     renderPopout: e => {
@@ -323,7 +323,7 @@ function eo(e) {
         closePopout: t
       } = e;
       return (0, i.jsx)(E.Z, {
-        onClose: I(t),
+        onClose: S(t),
         appContext: q.IlC.OVERLAY
       })
     },
@@ -338,7 +338,7 @@ function eo(e) {
       } = t;
       return (0, i.jsx)(ei, {
         iconComponent: y,
-        tooltip: S,
+        tooltip: I,
         onClick: v,
         isToggled: a,
         highlightedColor: a ? "green" : "white",
@@ -621,7 +621,7 @@ function ec(e) {
 function ed(e) {
   let {
     voiceChannel: t
-  } = e, n = (0, S.KS)(t), r = (0, x.ZP)(t);
+  } = e, n = (0, I.KS)(t), r = (0, x.ZP)(t);
   return (0, i.jsxs)("div", {
     className: ee.voiceChannelNameContainer,
     children: [null != n && (0, i.jsx)(h.Text, {

@@ -23,8 +23,8 @@ var r, l = n(200651),
   S = n(100527),
   x = n(906732),
   j = n(168551),
-  Z = n(260035),
-  C = n(597952),
+  C = n(260035),
+  Z = n(597952),
   w = n(628123),
   P = n(686546),
   N = n(950796),
@@ -204,7 +204,7 @@ class et extends(r = i.Component) {
             children: (0, l.jsx)("div", {
               "data-popout-root": !0,
               ref: this.rootRef,
-              className: a()(e, (0, C.Z)(), j, E, S),
+              className: a()(e, (0, Z.Z)(), j, E, S),
               children: (0, l.jsx)(m.JcV, {
                 containerRef: this.rootRef,
                 children: (0, l.jsx)(g.Z, {
@@ -212,7 +212,7 @@ class et extends(r = i.Component) {
                     children: [(0, l.jsx)(P.Co, {}), (0, l.jsx)(v.Wu, {
                       appContext: B.IlC.POPOUT,
                       renderWindow: y,
-                      children: (0, l.jsx)(Z.m, {
+                      children: (0, l.jsx)(C.m, {
                         children: (0, l.jsxs)(k.yP, {
                           children: [(0, l.jsxs)("div", {
                             className: X.popout,
@@ -293,7 +293,7 @@ let en = i.forwardRef(function(e, t) {
     } = (0, x.ZP)(S.Z.POPOUT_WINDOW),
     {
       clientThemesClassName: O,
-      clientThemesCSS: Z
+      clientThemesCSS: C
     } = (0, j.ZP)();
   return null == n ? null : (0, l.jsx)(m.Sle, {
     children: (0, l.jsx)(x.Gt, {
@@ -318,7 +318,7 @@ let en = i.forwardRef(function(e, t) {
         saturation: p.saturation,
         alwaysShowLinkDecorations: p.alwaysShowLinkDecorations,
         clientThemesClassName: O,
-        clientThemesCSS: Z,
+        clientThemesCSS: C,
         appWrapperClassName: h,
         isRefreshEnabled: i,
         isRefreshChatInputEnabled: o

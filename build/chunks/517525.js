@@ -24,9 +24,9 @@ var r = n(200651),
   S = n(981631),
   x = n(474936),
   j = n(388032),
-  Z = n(41997);
+  C = n(41997);
 
-function C(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -121,7 +121,7 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
           let {
             default: e
           } = await n.e("28479").then(n.bind(n, 78865));
-          return t => (0, r.jsx)(e, w(C({}, t), {
+          return t => (0, r.jsx)(e, w(Z({}, t), {
             analyticsSource: k
           }))
         })
@@ -138,17 +138,17 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
       text: A ? j.NW.string(j.t.q8TiVl) : D ? j.NW.string(j.t.IHgpEh) : j.NW.string(j.t.vLb0VV),
       position: "bottom",
       color: f.ua7.Colors.GREY,
-      children: e => (0, r.jsxs)(f.P3F, w(C({}, e), {
+      children: e => (0, r.jsxs)(f.P3F, w(Z({}, e), {
         onClick: W,
-        className: o()(Z.qualityIndicator, v, h.eE[d], A ? Z.qualityIndicatorLowQuality : Z.qualityIndicatorFullQuality, {
-          [Z.clickable]: L && D
+        className: o()(C.qualityIndicator, v, h.eE[d], A ? C.qualityIndicatorLowQuality : C.qualityIndicatorFullQuality, {
+          [C.clickable]: L && D
         }),
         children: [D ? (0, r.jsx)(f.SrA, {
           size: "md",
           color: "currentColor",
-          className: Z.premiumStreamIcon
+          className: C.premiumStreamIcon
         }) : null, (0, r.jsx)("span", {
-          className: Z.qualityResolution,
+          className: C.qualityResolution,
           children: (0, E.ml)(R.maxResolution)
         }), (0, r.jsx)("span", {
           children: (0, E.bp)(R.maxFrameRate)
@@ -157,8 +157,8 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
     });
     return (0, r.jsx)(f.IGR, {
       text: F,
-      className: o()(I, Z.qualityIndicatorBadge, {
-        [Z.qualityIndicatorBadgePremium]: D && _
+      className: o()(I, C.qualityIndicatorBadge, {
+        [C.qualityIndicatorBadgePremium]: D && _
       }),
       color: u.Z.unsafe_rawColors.PRIMARY_500.css,
       shape: d
@@ -197,13 +197,13 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         className: n,
         popoutProps: l
       } = e;
-      return (0, r.jsxs)("div", w(C({
-        className: o()(Z.streamQualityIndicator, n)
+      return (0, r.jsxs)("div", w(Z({
+        className: o()(C.streamQualityIndicator, n)
       }, l), {
         children: [y((e, n) => n ? (0, r.jsx)(a.animated.div, {
           style: e,
           children: (0, r.jsx)(k, {
-            className: Z.liveQualityIndicator,
+            className: C.liveQualityIndicator,
             participant: t,
             size: s,
             shape: f.Dv2.ROUND_LEFT,
@@ -214,7 +214,7 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
           })
         }) : null), (0, r.jsx)(a.animated.div, {
           style: O,
-          className: Z.liveIndicator,
+          className: C.liveIndicator,
           children: (0, r.jsx)(h.ZP, {
             look: h.jZ.RED,
             size: s,

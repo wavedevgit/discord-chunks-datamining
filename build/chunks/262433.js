@@ -50,8 +50,8 @@ function b(e) {
     deadDrawables: j
   } = e;
   b.save();
-  let Z = c.Z.getEmojiImage(null !== (n = null !== (t = o.emojiId) && void 0 !== t ? t : o.emojiName) && void 0 !== n ? n : ""),
-    C = (0, d.np)(o.x, g),
+  let C = c.Z.getEmojiImage(null !== (n = null !== (t = o.emojiId) && void 0 !== t ? t : o.emojiName) && void 0 !== n ? n : ""),
+    Z = (0, d.np)(o.x, g),
     w = (0, d.np)(o.y, y),
     {
       outlineColor: P
@@ -85,11 +85,11 @@ function b(e) {
         return r.particles[e.id] = a, r.lastSpawned[e.id] = Date.now(), r
       })
     })
-  }(o, C, w), (0, f.I)(b, C, w, P, m.q2), (0, f.T)(b, C, w, o.userId), v(o, e => (function(e, t, n) {
+  }(o, Z, w), (0, f.I)(b, Z, w, P, m.q2), (0, f.T)(b, Z, w, o.userId), v(o, e => (function(e, t, n) {
     if (null == t) return;
     let r = n.size * window.devicePixelRatio,
       l = n.x - r / 2 * window.devicePixelRatio,
       i = n.y - 1.2 * r * window.devicePixelRatio;
     e.globalAlpha = n.opacity, e.drawImage(t, r / 2 + l, r / 2 + i, r, r)
-  })(b, Z, e)), o.lastUpdatedAt + m.FO < Date.now() && (0, s.ZZ)(x, o), o.state === u.f.STOP && !(Object.keys(null !== (r = h.getState().particles[o.id]) && void 0 !== r ? r : {}).length > 0) && j.push(o), b.restore()
+  })(b, C, e)), o.lastUpdatedAt + m.FO < Date.now() && (0, s.ZZ)(x, o), o.state === u.f.STOP && !(Object.keys(null !== (r = h.getState().particles[o.id]) && void 0 !== r ? r : {}).length > 0) && j.push(o), b.restore()
 }

@@ -23,8 +23,8 @@ var i = n(200651),
   b = n(444295),
   j = n(906037),
   x = n(804570),
-  S = n(501787),
-  I = n(981631),
+  I = n(501787),
+  S = n(981631),
   C = n(65154),
   N = n(388032),
   Z = n(989424);
@@ -82,7 +82,7 @@ function T(e) {
     shouldDisplay: d
   } = e, p = (e, r) => {
     let l = e.user;
-    (0, b.Ws)(I.Odu.VIDEO, {
+    (0, b.Ws)(S.Odu.VIDEO, {
       type: b.Qu.CAMERA,
       value: b.bk.SETTINGS_OPENED,
       userId: null == l ? void 0 : l.id
@@ -94,7 +94,7 @@ function T(e) {
         user: l,
         mediaEngineContext: t,
         onWatchStream: () => {
-          (0, b.Ws)(I.Odu.VIDEO, {
+          (0, b.Ws)(S.Odu.VIDEO, {
             type: b.Qu.GO_LIVE,
             value: b.bk.ENABLED,
             userId: null == l ? void 0 : l.id
@@ -107,7 +107,7 @@ function T(e) {
     return null === (t = e.user) || void 0 === t ? void 0 : t.id
   })), [l]);
   return r.useEffect(() => {
-    d && (0, b.zi)(I.Odu.VIDEO, {
+    d && (0, b.zi)(S.Odu.VIDEO, {
       locked: E.default.isInstanceLocked(),
       shownUserIds: Array.from(h),
       liveUserIds: Array.from(h),
@@ -202,9 +202,9 @@ function k(e) {
       participantTileWidth: E,
       visibleParticipants: b
     } = (0, g.ZB)(u ? null != f ? f : e.width : null != m ? m : e.height, o, {
-      tileWidth: S.vZ,
-      tileMinWidth: S.mo,
-      tileMargin: S.F$,
+      tileWidth: I.vZ,
+      tileMinWidth: I.mo,
+      tileMargin: I.F$,
       limit: 8,
       cropSelfVideo: !0,
       version: s

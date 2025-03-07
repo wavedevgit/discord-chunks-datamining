@@ -51,7 +51,7 @@ function j(e) {
         className: x.splashImage,
         alt: c.name,
         src: u
-      }) : null, null != c && null != s ? (0, r.jsx)(Z, {
+      }) : null, null != c && null != s ? (0, r.jsx)(C, {
         width: n,
         channelId: i,
         participant: d,
@@ -61,15 +61,15 @@ function j(e) {
   })
 }
 
-function Z(e) {
+function C(e) {
   let {
     width: t,
     channelId: n,
     participant: i,
     applicationId: m
-  } = e, p = (0, E.V_)(t), [j] = (0, E.Ym)(t), Z = (0, a.e7)([g.Z], () => g.Z.getChannel(n)), C = (0, a.e7)([y.default, b.default], () => (0, d.J)(i, b.default) ? null : y.default.getUser(i.userId)), w = l.useMemo(() => null != C ? [C] : [], [C]), P = (0, v.q)(m), {
+  } = e, p = (0, E.V_)(t), [j] = (0, E.Ym)(t), C = (0, a.e7)([g.Z], () => g.Z.getChannel(n)), Z = (0, a.e7)([y.default, b.default], () => (0, d.J)(i, b.default) ? null : y.default.getUser(i.userId)), w = l.useMemo(() => null != Z ? [Z] : [], [Z]), P = (0, v.q)(m), {
     analyticsLocations: N
-  } = (0, h.ZP)(), I = (0, c.O)(), _ = i.activity.session_id, R = (0, f.Z)(i.activity, O.xjy.EMBEDDED) && (0, f.Z)(i.activity, O.xjy.CONTEXTLESS), [T, A] = l.useState(!1), D = null == C ? void 0 : C.id, k = l.useCallback(async e => {
+  } = (0, h.ZP)(), I = (0, c.O)(), _ = i.activity.session_id, R = (0, f.Z)(i.activity, O.xjy.EMBEDDED) && (0, f.Z)(i.activity, O.xjy.CONTEXTLESS), [T, A] = l.useState(!1), D = null == Z ? void 0 : Z.id, k = l.useCallback(async e => {
     e.stopPropagation(), null != m && null != D && (A(!0), await (0, u.Z)({
       applicationId: m,
       activityChannelId: n,
@@ -81,12 +81,12 @@ function Z(e) {
       isContextlessActivity: R
     }), A(!1))
   }, [m, D, I.location, N, _, n, R]);
-  return null == Z || null == C || null == P ? null : (0, r.jsxs)("div", {
+  return null == C || null == Z || null == P ? null : (0, r.jsxs)("div", {
     className: x.splash,
     children: [(0, r.jsx)(E.OV, {
       avatarSize: j,
-      guildId: Z.guild_id,
-      channelId: Z.id,
+      guildId: C.guild_id,
+      channelId: C.id,
       users: w
     }), (0, r.jsx)(s.Text, {
       className: o()(x.subheader, {
@@ -95,7 +95,7 @@ function Z(e) {
       }),
       variant: "text-sm/normal",
       children: S.NW.formatToPlainString(S.t["7Uuia2"], {
-        username: C.username
+        username: Z.username
       })
     }), (0, r.jsx)(s.Text, {
       className: o()(x.header, {

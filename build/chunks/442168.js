@@ -56,7 +56,7 @@ function E(e) {
     inPopout: n
   } = e, {
     reducedMotion: E
-  } = l.useContext(a.Sf), O = (0, l.useRef)(null), S = d.n.getState().clipsButtonRef, x = (0, f.V9)(t), j = (0, o.e7)([c.Z], () => c.Z.getActiveAnimation()), Z = (0, o.Wu)([c.Z], () => c.Z.getStreamClipAnimations(x)), C = (0, l.useRef)();
+  } = l.useContext(a.Sf), O = (0, l.useRef)(null), S = d.n.getState().clipsButtonRef, x = (0, f.V9)(t), j = (0, o.e7)([c.Z], () => c.Z.getActiveAnimation()), C = (0, o.Wu)([c.Z], () => c.Z.getStreamClipAnimations(x)), Z = (0, l.useRef)();
   l.useEffect(() => () => {
     (0, u.Gh)(x)
   }, [x]);
@@ -72,7 +72,7 @@ function E(e) {
     },
     P = e => {
       let t = null == S ? void 0 : S.getBoundingClientRect();
-      if (C.current = t, e.timestamp !== j || null == t || n) return v;
+      if (Z.current = t, e.timestamp !== j || null == t || n) return v;
       let {
         top: r,
         left: l
@@ -85,7 +85,7 @@ function E(e) {
       }
     },
     N = (0, l.useRef)(null),
-    I = (0, s.Yzy)(Z, {
+    I = (0, s.Yzy)(C, {
       keys: e => e.timestamp,
       ref: N,
       from: {
@@ -97,7 +97,7 @@ function E(e) {
       config: b
     }, "animate-always"),
     _ = (0, l.useRef)(null),
-    R = (0, s.Yzy)(Z, {
+    R = (0, s.Yzy)(C, {
       ref: _,
       keys: e => e.timestamp,
       from: e => h({
@@ -115,14 +115,14 @@ function E(e) {
         height: 0,
         width: 0
       }, (() => {
-        if (null != C.current) return {
-          top: C.current.top + 12,
-          left: C.current.left + 12
+        if (null != Z.current) return {
+          top: Z.current.top + 12,
+          left: Z.current.left + 12
         }
       })())),
       config: E.enabled ? y : g,
       onRest: (e, t) => {
-        null != t.item && null != Z.find(e => e.timestamp === t.item.timestamp) && (0, u.Gh)(x, t.item.timestamp)
+        null != t.item && null != C.find(e => e.timestamp === t.item.timestamp) && (0, u.Gh)(x, t.item.timestamp)
       }
     }, "animate-always");
   return (0, i.useChain)([N, _], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {

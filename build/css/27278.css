@@ -1,6 +1,6 @@
 /**
   Module ID: 27278
-  Original File Name: 6c7e501c3bd5084a
+  Original File Name: 3111b2ae5d8aa567
 **/
 .buttonContainer__7e329 {
     display: flex;
@@ -1201,6 +1201,23 @@
 
 .key__98feb+.key__98feb {
     margin-left: 0
+}
+
+.body__81a05,.nowPlayingNotification__81a05 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px
+}
+
+.bodyText__81a05 {
+    word-wrap: none;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.bodyText__81a05 strong {
+    color: var(--interactive-active)
 }
 
 .textArea_ab8e5c {
