@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(918701),
   p = n(475595),
   h = n(566078),
-  g = n(352084),
-  m = n(78826),
+  m = n(352084),
+  g = n(78826),
   E = n(341907),
   v = n(388032),
   b = n(624848);
@@ -28,9 +28,9 @@ let y = function(e) {
     quest: o,
     autoplay: y = !0,
     learnMoreStyle: O = null
-  } = e, S = (0, f.O5)(), I = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), T = i.useMemo(() => (0, p.fh)(o, p.eC.REWARD), [o]), N = i.useCallback(t => {
+  } = e, I = (0, f.O5)(), S = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), T = i.useMemo(() => (0, p.fh)(o, p.eC.REWARD), [o]), N = i.useCallback(t => {
     var n;
-    (0, s.k)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), S({
+    (0, s.k)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), I({
       questId: o.id,
       questContent: e.questContent,
       questContentPosition: e.questContentPosition,
@@ -39,22 +39,22 @@ let y = function(e) {
       fromContent: e.questContent,
       questId: o.id
     }), null === (n = e.onClick) || void 0 === n || n.call(e, t)
-  }, [S, o.id, e]), A = i.useRef(null), C = i.useRef(y), R = (0, _.Bg)(o.config);
+  }, [I, o.id, e]), A = i.useRef(null), C = i.useRef(y), R = (0, _.Bg)(o.config);
   return i.useEffect(() => {
     if (null != A.current) {
-      if (!T.isAnimated || I) {
+      if (!T.isAnimated || S) {
         A.current.currentTime = 0, A.current.pause();
         return
       }
       y && !C.current ? A.current.play() : !y && C.current && (A.current.currentTime = 0, A.current.pause()), C.current = y
     }
-  }, [y, T, I]), t = R ? (0, r.jsx)(m.Fl, {
+  }, [y, T, S]), t = R ? (0, r.jsx)(g.Fl, {
     id: "QuestRewardTile_rewardTileNitro",
-    children: e => (0, r.jsx)(g.Z, {
+    children: e => (0, r.jsx)(m.Z, {
       ref: e,
       className: b.questRewardTileAsset
     })
-  }) : T.isAnimated ? (0, r.jsx)(m.Fl, {
+  }) : T.isAnimated ? (0, r.jsx)(g.Fl, {
     id: "QuestRewardTile_rewardTileAnimated",
     children: e => {
       var t;
@@ -62,7 +62,7 @@ let y = function(e) {
         ref: t => {
           e.current = t, A.current = t
         },
-        autoPlay: !I && y,
+        autoPlay: !S && y,
         loop: !0,
         muted: !0,
         playsInline: !0,
@@ -74,7 +74,7 @@ let y = function(e) {
         })
       })
     }
-  }) : (0, r.jsx)(m.Fl, {
+  }) : (0, r.jsx)(g.Fl, {
     id: "QuestRewardTile_rewardTileStatic",
     children: e => (0, r.jsx)("img", {
       ref: e,

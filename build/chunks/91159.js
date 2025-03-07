@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A_: () => I,
+  A_: () => S,
   Ok: () => C,
   U4: () => T,
   Ye: () => h.Z,
@@ -21,8 +21,8 @@ var r = n(913527),
   _ = n(709054),
   p = n(569471),
   h = n(814391),
-  g = n(124368),
-  m = n(981631);
+  m = n(124368),
+  g = n(981631);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -65,7 +65,7 @@ function y(e, t) {
 
 function O(e, t) {
   if (null == e) return {};
-  var n, r, i = S(e, t);
+  var n, r, i = I(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -73,7 +73,7 @@ function O(e, t) {
   return i
 }
 
-function S(e, t) {
+function I(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -82,20 +82,20 @@ function S(e, t) {
 }
 n(388032);
 
-function I() {
-  (0, a.yw)(m.rMx.THREAD_BROWSER_TAB_CHANGED)
+function S() {
+  (0, a.yw)(g.rMx.THREAD_BROWSER_TAB_CHANGED)
 }
 
 function T() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "Modal";
-  (0, a.yw)(m.rMx.OPEN_MODAL, {
+  (0, a.yw)(g.rMx.OPEN_MODAL, {
     type: "Thread Browser",
     location_section: e
   })
 }
 
 function N() {
-  u.default.track(m.rMx.OPEN_POPOUT, {
+  u.default.track(g.rMx.OPEN_POPOUT, {
     type: "Active Threads Popout"
   })
 }
@@ -107,30 +107,30 @@ function A(e, t) {
   let o = e.getGuildId(),
     a = e.parent_id,
     l = (0, f.I)(o, a),
-    _ = e => (0, d.yE)(e, g.iN.ALL_MESSAGES) ? f.$R[m.bL.ALL_MESSAGES] : (0, d.yE)(e, g.iN.ONLY_MENTIONS) ? f.$R[m.bL.ONLY_MENTIONS] : (0, d.yE)(e, g.iN.NO_MESSAGES) ? f.$R[m.bL.NO_MESSAGES] : f.$R[m.bL.NULL],
+    _ = e => (0, d.yE)(e, m.iN.ALL_MESSAGES) ? f.$R[g.bL.ALL_MESSAGES] : (0, d.yE)(e, m.iN.ONLY_MENTIONS) ? f.$R[g.bL.ONLY_MENTIONS] : (0, d.yE)(e, m.iN.NO_MESSAGES) ? f.$R[g.bL.NO_MESSAGES] : f.$R[g.bL.NULL],
     h = null !== (n = p.Z.flags(e.id)) && void 0 !== n ? n : 0,
     E = _(h),
     b = p.Z.isMuted(e.id),
-    S = (0, f.sK)(p.Z.getMuteConfig(e.id)),
+    I = (0, f.sK)(p.Z.getMuteConfig(e.id)),
     {
-      can_send_message: I
+      can_send_message: S
     } = i,
     T = y(v({}, O(i, ["can_send_message"])), {
       channel_id: e.id,
       guild_id: o,
       parent_id: a,
       channel_type: e.type,
-      has_interacted_with_thread: (h & g.iN.HAS_INTERACTED) != 0,
+      has_interacted_with_thread: (h & m.iN.HAS_INTERACTED) != 0,
       parent_is_muted: c.ZP.isGuildOrCategoryOrChannelMuted(o, a),
       old_thread_notification_setting: E,
       new_thread_notification_setting: null != t.flags ? _(t.flags) : E,
       parent_notification_setting: l.channel_message_notification_settings,
       old_thread_is_muted: b,
       new_thread_is_muted: null !== (r = t.muted) && void 0 !== r ? r : b,
-      old_thread_muted_until: S,
-      new_thread_muted_until: null != t.mute_config ? (0, f.sK)(t.mute_config) : S
+      old_thread_muted_until: I,
+      new_thread_muted_until: null != t.mute_config ? (0, f.sK)(t.mute_config) : I
     });
-  u.default.track(m.rMx.THREAD_NOTIFICATION_SETTINGS_UPDATED, T)
+  u.default.track(g.rMx.THREAD_NOTIFICATION_SETTINGS_UPDATED, T)
 }
 let C = e => {
   var t, n;

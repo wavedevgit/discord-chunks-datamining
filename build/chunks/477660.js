@@ -43,25 +43,25 @@
           var i = [];
           for (n = r = r || n; t;) {
             for (var l = null, c = null, u = null, f = -1e5, _ = 1e5, p = [a.get(t.charCodeAt(0)), s], h = 0; h < p.length; h++) {
-              var g = p[h];
-              if (null != g)
-                for (var m = 0; m < g.length; m++) {
-                  var E = g[m],
+              var m = p[h];
+              if (null != m)
+                for (var g = 0; g < m.length; g++) {
+                  var E = m[g],
                     v = e[E],
                     b = v.order;
                   if (b > _) break;
                   var y = null == r.prevCapture ? "" : r.prevCapture[0],
                     O = v.match(t, r, y);
                   if (O) {
-                    var S = v.quality ? v.quality(O, r, y) : 0;
-                    (b < _ || S > f) && (l = E, c = v, u = O, f = S, _ = b)
+                    var I = v.quality ? v.quality(O, r, y) : 0;
+                    (b < _ || I > f) && (l = E, c = v, u = O, f = I, _ = b)
                   }
                 }
             }
             if (null == c || null == u) throw Error("Could not find a matching rule for the below content. The rule with highest `order` should always match content provided to it. Check the definition of `match` for '" + o[o.length - 1] + "'. It seems to not match the following source:\n" + t);
             if (u.index) throw Error("`match` must return a capture starting at index 0 (the current parse index). Did you forget a ^ at the start of the RegExp?");
-            var I = c.parse(u, d, r);
-            Array.isArray(I) ? Array.prototype.push.apply(i, I) : (null == I.type && (I.type = l), i.push(I)), r.prevCapture = u, t = t.substring(r.prevCapture[0].length)
+            var S = c.parse(u, d, r);
+            Array.isArray(S) ? Array.prototype.push.apply(i, S) : (null == S.type && (S.type = l), i.push(S)), r.prevCapture = u, t = t.substring(r.prevCapture[0].length)
           }
           return i
         },
@@ -104,7 +104,7 @@
       var i = "";
       for (var o in n = n || {}) {
         var a = n[o];
-        Object.prototype.hasOwnProperty.call(n, o) && a && (i += " " + g(o) + '="' + g(a) + '"')
+        Object.prototype.hasOwnProperty.call(n, o) && a && (i += " " + m(o) + '="' + m(a) + '"')
       }
       var s = "<" + e + i + ">";
       return r ? s + t + "</" + e + ">" : s
@@ -130,14 +130,14 @@
       "/": "&#x2F;",
       "`": "&#96;"
     },
-    g = function(e) {
+    m = function(e) {
       return String(e).replace(p, function(e) {
         return h[e]
       })
     },
-    m = /\\([^0-9A-Za-z\s])/g,
+    g = /\\([^0-9A-Za-z\s])/g,
     E = function(e) {
-      return e.replace(m, "$1")
+      return e.replace(g, "$1")
     },
     v = function(e, t, n) {
       var r = n.inline || !1;
@@ -159,16 +159,16 @@
     O = function() {
       return {}
     },
-    S = "(?:[*+-]|\\d+\\.)",
-    I = "( *)(" + S + ") +",
-    T = RegExp("^" + I),
-    N = RegExp(I + "[^\\n]*(?:\\n(?!\\1" + S + " )[^\\n]*)*(\n|$)", "gm"),
+    I = "(?:[*+-]|\\d+\\.)",
+    S = "( *)(" + I + ") +",
+    T = RegExp("^" + S),
+    N = RegExp(S + "[^\\n]*(?:\\n(?!\\1" + I + " )[^\\n]*)*(\n|$)", "gm"),
     A = /\n{2,}$/,
     C = /^ (?= *`)|(` *) $/g,
     R = A,
     P = / *\n+$/,
-    D = RegExp("^( *)(" + S + ") [\\s\\S]+?(?:\n{2,}(?! )(?!\\1" + S + " )\\n*|\\s*\n*$)"),
-    w = /(?:^|\n)( *)$/,
+    w = RegExp("^( *)(" + I + ") [\\s\\S]+?(?:\n{2,}(?! )(?!\\1" + I + " )\\n*|\\s*\n*$)"),
+    D = /(?:^|\n)( *)$/,
     L = function() {
       var e = /^ *\| *| *\| *$/g,
         t = / *$/,
@@ -332,7 +332,7 @@
         },
         html: function(e, t, n) {
           var r = e.lang ? "markdown-code-" + e.lang : void 0,
-            i = d("code", g(e.content), {
+            i = d("code", m(e.content), {
               class: r
             });
           return d("pre", i)
@@ -372,9 +372,9 @@
         order: G++,
         match: function(e, t) {
           var n = null == t.prevCapture ? "" : t.prevCapture[0],
-            r = w.exec(n),
+            r = D.exec(n),
             i = t._list || !t.inline;
-          return r && i ? (e = r[1] + e, D.exec(e)) : null
+          return r && i ? (e = r[1] + e, w.exec(e)) : null
         },
         parse: function(e, t, n) {
           var r = e[2],
@@ -774,7 +774,7 @@
           })
         },
         html: function(e, t, n) {
-          return d("code", g(e.content))
+          return d("code", m(e.content))
         }
       },
       br: {
@@ -801,7 +801,7 @@
           return e.content
         },
         html: function(e, t, n) {
-          return g(e.content)
+          return m(e.content)
         }
       }
     },
@@ -884,7 +884,7 @@
     defaultReactOutput: q,
     defaultHtmlOutput: Q,
     preprocess: r,
-    sanitizeText: g,
+    sanitizeText: m,
     sanitizeUrl: _,
     unescapeUrl: E,
     htmlTag: d,

@@ -56,9 +56,9 @@ function p(e, t) {
   }), e
 }
 let h = (0, c.isLinux)() ? u.HsE : (0, c.isMac)() ? u.REU : (0, c.isWindows)() ? u.iC$ : void 0,
-  g = a().invert(u.HsE);
-g["223"] = "`", Object.freeze(g);
-let m = Object.freeze(a().invert(u.REU)),
+  m = a().invert(u.HsE);
+m["223"] = "`", Object.freeze(m);
+let g = Object.freeze(a().invert(u.REU)),
   E = a().invert(u.iC$);
 E["223"] = "`", Object.freeze(E);
 let v = a().invert(null != h ? h : {});
@@ -71,9 +71,9 @@ function y(e) {
   let [, t, n] = e;
   switch (n) {
     case u.CgE.LINUX:
-      return g["" + t];
-    case u.CgE.MACOS:
       return m["" + t];
+    case u.CgE.MACOS:
+      return g["" + t];
     case u.CgE.WINDOWS:
       return E["" + t];
     case u.CgE.BROWSER:
@@ -109,7 +109,7 @@ function O(e) {
       throw Error("Unrecognized DeviceType ".concat(n, "."))
   }
 }(0, c.isMac)() || (v["223"] = "`"), Object.freeze(v);
-let S = [
+let I = [
     ["META", "⌘"],
     ["RIGHT META", "RIGHT ⌘"],
     ["SHIFT", "⇧"],
@@ -133,13 +133,13 @@ let S = [
     ["TAB", "⇥"],
     ["SPACE", "␣"]
   ],
-  I = e => {
-    for (let [t, n] of S)
+  S = e => {
+    for (let [t, n] of I)
       if (t === e.toUpperCase()) return n;
     return e
   },
   T = e => {
-    for (let [t, n] of S)
+    for (let [t, n] of I)
       if (n === e.toUpperCase()) return t.toLowerCase();
     return e
   },
@@ -186,5 +186,5 @@ function R(e) {
       }
       return t === u.MoX.MOUSE_BUTTON ? "mouse".concat(n) : t === u.MoX.GAMEPAD_BUTTON ? "gamepad".concat(n) : "dev".concat(t, ",").concat(n)
     }).filter(l.lm);
-  return t ? (-1 !== n.g.navigator.appVersion.indexOf("Mac OS X") ? r.map(I) : r).join(" + ").toUpperCase() : r.join("+")
+  return t ? (-1 !== n.g.navigator.appVersion.indexOf("Mac OS X") ? r.map(S) : r).join(" + ").toUpperCase() : r.join("+")
 }

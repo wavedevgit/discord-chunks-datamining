@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   M: () => f,
-  Z: () => I
+  Z: () => S
 });
 var r, i = n(392711),
   o = n.n(i),
@@ -53,9 +53,9 @@ var f = function(e) {
 let _ = [],
   p = {},
   h = {},
-  g = {};
+  m = {};
 
-function m(e) {
+function g(e) {
   let {
     surface: t,
     activeState: n
@@ -69,7 +69,7 @@ function E(e) {
     activeState: n
   } = e;
   h = d(c({}, h), {
-    [m({
+    [g({
       surface: t,
       activeState: n
     })]: 0
@@ -89,7 +89,7 @@ function y(e) {
     collections: t,
     surface: n,
     activeState: r
-  } = e, i = m({
+  } = e, i = g({
     surface: n,
     activeState: r
   }), o = v(t.map(e => (e.application_directory_collection_items = b(e.application_directory_collection_items), e)));
@@ -99,7 +99,7 @@ function y(e) {
     [i]: 1
   });
   let a = Date.now();
-  g = d(c({}, g), {
+  m = d(c({}, m), {
     [i]: a
   })
 }
@@ -110,19 +110,19 @@ function O(e) {
     activeState: n
   } = e;
   h = d(c({}, h), {
-    [m({
+    [g({
       surface: t,
       activeState: n
     })]: 2
   })
 }
-class S extends(r = a.ZP.Store) {
+class I extends(r = a.ZP.Store) {
   getLastFetchTimeMs(e) {
     let {
       surface: t,
       activeState: n
     } = e;
-    return g[m({
+    return m[g({
       surface: t,
       activeState: n
     })]
@@ -132,7 +132,7 @@ class S extends(r = a.ZP.Store) {
       surface: t,
       activeState: n
     } = e;
-    return h[m({
+    return h[g({
       surface: t,
       activeState: n
     })]
@@ -143,14 +143,14 @@ class S extends(r = a.ZP.Store) {
       surface: n,
       activeState: r
     } = e;
-    return null !== (t = p[m({
+    return null !== (t = p[g({
       surface: n,
       activeState: r
     })]) && void 0 !== t ? t : _
   }
 }
-l(S, "displayName", void 0);
-let I = new S(s.Z, {
+l(I, "displayName", void 0);
+let S = new I(s.Z, {
   APPLICATION_DIRECTORY_FETCH_COLLECTIONS: E,
   APPLICATION_DIRECTORY_FETCH_COLLECTIONS_SUCCESS: y,
   APPLICATION_DIRECTORY_FETCH_COLLECTIONS_FAILURE: O

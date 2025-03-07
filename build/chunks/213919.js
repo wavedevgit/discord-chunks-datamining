@@ -6,9 +6,9 @@ n.r(t), n.d(t, {
   getToken: () => b,
   hideToken: () => O,
   init: () => v,
-  removeToken: () => I,
+  removeToken: () => S,
   setToken: () => y,
-  showToken: () => S
+  showToken: () => I
 }), n(47120);
 var o = n(433517),
   a = n(231338);
@@ -29,7 +29,7 @@ let d = !1,
   p = !1,
   h = !1;
 
-function g() {
+function m() {
   if (p) {
     o.K.remove(a.B1), o.K.remove(a.XM);
     return
@@ -37,7 +37,7 @@ function g() {
   null != i ? o.K.set(a.B1, i) : o.K.remove(a.B1), o.K.set(a.XM, _)
 }
 
-function m(e) {
+function g(e) {
   return null == e || 0 === e.length ? {
     decryptedToken: null,
     wasEncrypted: !1
@@ -60,12 +60,12 @@ function v() {
   let {
     decryptedToken: e,
     wasEncrypted: t
-  } = m(i);
+  } = g(i);
   d = t, r = e, f = l(Object.entries(_).map(e => {
     let [t, n] = e, {
       decryptedToken: r,
       wasEncrypted: i
-    } = m(n);
+    } = g(n);
     return d = i || d, [t, r]
   }).filter(e => {
     let [t, n] = e;
@@ -79,28 +79,28 @@ function b(e) {
 
 function y(e, t) {
   if (null == e) {
-    I(t);
+    S(t);
     return
   }
-  r = e, null != t && (f[t] = e), d ? T() : (i = r, _ = f, g())
+  r = e, null != t && (f[t] = e), d ? T() : (i = r, _ = f, m())
 }
 
 function O() {
-  !p && (p = !0, g())
+  !p && (p = !0, m())
 }
 
-function S() {
-  p && (p = !1, g())
+function I() {
+  p && (p = !1, m())
 }
 
-function I(e) {
+function S(e) {
   let t = r;
-  return null != e && (t = f[e], delete f[e], delete _[e]), t === r && (r = null, i = null), g(), null != t
+  return null != e && (t = f[e], delete f[e], delete _[e]), t === r && (r = null, i = null), m(), null != t
 }
 
 function T() {
   (null == c ? void 0 : c.isEncryptionAvailable()) ? (null != r && (i = E(r)), _ = l(Object.entries(f).map(e => {
     let [t, n] = e;
     return [t, E(n)]
-  })), d = !0) : (i = r, _ = f), g()
+  })), d = !0) : (i = r, _ = f), m()
 }

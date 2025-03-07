@@ -2,10 +2,10 @@
 "use strict";
 n.d(t, {
   EM: () => v,
-  PR: () => m,
+  PR: () => g,
   Tt: () => O,
   ZD: () => N,
-  yY: () => S
+  yY: () => I
 }), n(47120);
 var r = n(192379),
   i = n(232713),
@@ -74,14 +74,14 @@ function h(e) {
   return [t, r, n]
 }
 
-function g(e) {
+function m(e) {
   let {
     notificationCount: t
   } = e;
   return null == t || 0 === t ? "" : t < 0 ? "• " : "(".concat(t, ") ")
 }
 
-function m(e) {
+function g(e) {
   (0, a.j)(() => p.setState({
     notificationCount: e
   }))
@@ -122,15 +122,15 @@ function O(e) {
   r.useEffect(() => E(e), [...Object.values(e)])
 }
 
-function S(e) {
+function I(e) {
   return O(e), null
 }
 
-function I() {
+function S() {
   let [e, t] = p(e => {
     let {
       flashQueue: t
-    } = e, n = h(e).filter(e => null != e).join(" | "), r = g(e);
+    } = e, n = h(e).filter(e => null != e).join(" | "), r = m(e);
     return ["".concat(r).concat(n), t[0]]
   }, i.X), [n, o] = r.useState(!1), a = r.useRef(0), s = null == t ? void 0 : t.messages[a.current % t.messages.length];
   return r.useEffect(() => {
@@ -171,7 +171,7 @@ function N() {
     skipsSettingDefaultPageTitle: e
   } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
   T();
-  let t = I();
+  let t = S();
   r.useEffect(() => {
     let n = t === d.base;
     (!e || !n) && (document.title = t)

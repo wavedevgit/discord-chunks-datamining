@@ -64,21 +64,21 @@ let _ = {
     ORIGINAL_MP4: "original.mp4"
   },
   h = _.MP4,
-  g = null,
-  m = "",
+  m = null,
+  g = "",
   E = "",
   v = [],
   b = [],
   y = h,
   O = [],
-  S = [];
+  I = [];
 
-function I(e) {
-  g = e.analyticsID
+function S(e) {
+  m = e.analyticsID
 }
 
 function T(e) {
-  "" === (m = e.query) && (E = "", v = [], O = [])
+  "" === (g = e.query) && (E = "", v = [], O = [])
 }
 
 function N(e) {
@@ -106,7 +106,7 @@ function A(e) {
 }
 
 function C(e) {
-  if (null != e.query && m === E) return !1;
+  if (null != e.query && g === E) return !1;
   null != e.query && (E = e.query), v = e.items.map(e => {
     let {
       width: t,
@@ -150,25 +150,25 @@ function P(e) {
   }))]
 }
 
-function D(e) {
+function w(e) {
   let {
     items: t
   } = e;
   O = t
 }
 
-function w(e) {
+function D(e) {
   let {
     items: t
   } = e;
-  S = t
+  I = t
 }
 class L extends(r = i.ZP.Store) {
   getAnalyticsID() {
-    return g
+    return m
   }
   getQuery() {
-    return m
+    return g
   }
   getResultQuery() {
     return E
@@ -186,16 +186,16 @@ class L extends(r = i.ZP.Store) {
     return O
   }
   getTrendingSearchTerms() {
-    return S
+    return I
   }
 }
 c(L, "displayName", "GIFPickerViewStore");
 let x = new L(a.Z, {
-  GIF_PICKER_INITIALIZE: I,
+  GIF_PICKER_INITIALIZE: S,
   GIF_PICKER_QUERY: T,
   GIF_PICKER_QUERY_SUCCESS: C,
   GIF_PICKER_QUERY_FAILURE: R,
   GIF_PICKER_TRENDING_FETCH_SUCCESS: P,
-  GIF_PICKER_SUGGESTIONS_SUCCESS: D,
-  GIF_PICKER_TRENDING_SEARCH_TERMS_SUCCESS: w
+  GIF_PICKER_SUGGESTIONS_SUCCESS: w,
+  GIF_PICKER_TRENDING_SEARCH_TERMS_SUCCESS: D
 })

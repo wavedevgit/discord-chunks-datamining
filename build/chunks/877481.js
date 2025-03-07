@@ -17,7 +17,7 @@ var r = n(274616),
   p = n(998502),
   h = n(981631);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,14 +26,14 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -58,15 +58,15 @@ function v(e, t) {
 let b = new i.Z("Games"),
   y = {},
   O = 0,
-  S = null,
-  I = 250,
+  I = null,
+  S = 250,
   T = 12e4,
   N = 36e5;
 
 function A() {
-  return null != S ? Promise.resolve(S) : (0, f.isDesktop)() ? p.ZP.ensureModule("discord_game_utils").then(() => {
+  return null != I ? Promise.resolve(I) : (0, f.isDesktop)() ? p.ZP.ensureModule("discord_game_utils").then(() => {
     let e = p.ZP.getGameUtils();
-    return null != e && null != e.findLaunchable ? (S = e, e) : Promise.reject(Error("game utils not found"))
+    return null != e && null != e.findLaunchable ? (I = e, e) : Promise.reject(Error("game utils not found"))
   }) : Promise.reject(Error("not desktop client"))
 }
 
@@ -77,7 +77,7 @@ function C(e) {
       thirdPartySkus: e.thirdPartySkus,
       executables: e.executables.filter(e => e.os === (0, f.getPlatformName)()).map(e => e.name)
     },
-    n = e.aliases.map(e => v(m({}, t), {
+    n = e.aliases.map(e => v(g({}, t), {
       name: e
     }));
   return [t, ...n]
@@ -107,29 +107,29 @@ async function P(e) {
   throw Error("could not find launchable")
 }
 
-function D(e, t, n) {
+function w(e, t, n) {
   let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0;
   if (e()) {
     t();
     return
   }
   setTimeout(() => {
-    r * I <= T ? D(e, t, n, r + 1) : n()
-  }, I)
+    r * S <= T ? w(e, t, n, r + 1) : n()
+  }, S)
 }
 
-function w(e) {
+function D(e) {
   return b.info("launch", e), new Promise((t, n) => {
     null == _.Z.safeParseWithQuery(e.launchTarget) ? n(Error("Failed to parse launch target. ".concat(e.launchTarget))) : (window.open(e.launchTarget), t([]))
   })
 }
 let L = {
-  waitSubscribed: (e, t) => new Promise((n, r) => D(() => a.Z.isSubscribed(e, t), n, r)),
+  waitSubscribed: (e, t) => new Promise((n, r) => w(() => a.Z.isSubscribed(e, t), n, r)),
   waitConnected(e) {
-    return new Promise(D.bind(this, () => l.Z.isConnected(e)))
+    return new Promise(w.bind(this, () => l.Z.isConnected(e)))
   },
   isLaunchable: e => P(C(e)).then(e => null != e).catch(() => !1),
-  launch: e => P(C(e)).then(w),
+  launch: e => P(C(e)).then(D),
   launchDispatchApplication(e, t, n, i, a) {
     let {
       launchOptions: l,
@@ -137,8 +137,8 @@ let L = {
       installPath: f,
       applicationId: _,
       branchId: p,
-      buildId: g,
-      shouldPatch: m
+      buildId: m,
+      shouldPatch: g
     } = e;
     if (null == l || null == c || null == f) throw Error("Couldn't construct launchable for ".concat(e.applicationId));
     null == a && (a = c);
@@ -150,7 +150,7 @@ let L = {
       let {
         liveBuildId: n
       } = t;
-      if (m && n !== g) return Promise.reject(Error("live build id changed"))
+      if (g && n !== m) return Promise.reject(Error("live build id changed"))
     }).then(() => d.Z.runLaunchSetup(_, p)).then(() => {
       let e = (0, o.Z)(f),
         r = {
@@ -177,7 +177,7 @@ let L = {
     })
   },
   isGameLaunchable: e => P(R(e)).then(e => null != e).catch(() => !1),
-  launchGame: e => l.Z.isConnected(e) ? Promise.resolve() : P(R(e)).then(w),
+  launchGame: e => l.Z.isConnected(e) ? Promise.resolve() : P(R(e)).then(D),
   isProtocolRegistered: e => A().then(t => {
     var n, r;
     return null !== (r = null === (n = t.isProtocolSchemeRegistered) || void 0 === n ? void 0 : n.call(t, e)) && void 0 !== r && r

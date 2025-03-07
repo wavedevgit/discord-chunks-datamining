@@ -42,8 +42,8 @@ function d(e) {
     allowedMentions: _,
     author: p,
     flags: h,
-    nonce: g,
-    poll: m,
+    nonce: m,
+    poll: g,
     changelogId: E,
     giftingPrompt: v,
     state: b
@@ -53,7 +53,7 @@ function d(e) {
     (null == e ? void 0 : e.state) === o.Y.LOADED && y.push(u(e.message.author))
   }
   return null == p && (p = s.default.getCurrentUser()), p instanceof a.Z && (p = u(p)), i()(null != p, "createMessage: author cannot be undefined"), {
-    id: null != g ? g : (0, l.r)(),
+    id: null != m ? m : (0, l.r)(),
     type: d,
     content: n,
     channel_id: t,
@@ -71,8 +71,8 @@ function d(e) {
     message_reference: f,
     message_snapshots: [],
     flags: h,
-    nonce: g,
-    poll: m,
+    nonce: m,
+    poll: g,
     changelog_id: E,
     gifting_prompt: v
   }

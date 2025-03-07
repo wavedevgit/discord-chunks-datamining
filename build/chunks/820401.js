@@ -2,7 +2,7 @@
 "use strict";
 n.r(t), n.d(t, {
   XXH64: () => h,
-  hash: () => g
+  hash: () => m
 });
 let r = 0x9e3779b185ebca87n,
   i = 0xc2b2ae3d27d4eb4fn,
@@ -78,6 +78,6 @@ class h {
   }
 }
 
-function g(e, t = 0) {
+function m(e, t = 0) {
   return new h(t).update(e).digest()
 }

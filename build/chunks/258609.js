@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => S
 }), n(47120);
 var r, i = n(442837),
   o = n(570140),
@@ -30,11 +30,11 @@ function h(e) {
   c = t, u = null
 }
 
-function g() {
+function m() {
   c = null, u = null
 }
 
-function m(e) {
+function g(e) {
   let {
     sessionType: t,
     nonce: n,
@@ -86,7 +86,7 @@ function y(e) {
   _[t] = n
 }
 let O = Object.freeze({});
-class S extends(r = i.ZP.DeviceSettingsStore) {
+class I extends(r = i.ZP.DeviceSettingsStore) {
   initialize(e) {
     null != e && (_ = e.lastSelectedDeviceByPlatform), this.waitFor(a.Z, s.Z)
   }
@@ -119,11 +119,11 @@ class S extends(r = i.ZP.DeviceSettingsStore) {
     return u
   }
 }
-l(S, "displayName", "GameConsoleStore"), l(S, "persistKey", "GameConsoleStore");
-let I = new S(o.Z, {
+l(I, "displayName", "GameConsoleStore"), l(I, "persistKey", "GameConsoleStore");
+let S = new I(o.Z, {
   REMOTE_SESSION_CONNECT: h,
-  REMOTE_SESSION_DISCONNECT: g,
-  WAIT_FOR_REMOTE_SESSION: m,
+  REMOTE_SESSION_DISCONNECT: m,
+  WAIT_FOR_REMOTE_SESSION: g,
   GAME_CONSOLE_FETCH_DEVICES_START: E,
   GAME_CONSOLE_FETCH_DEVICES_SUCCESS: v,
   GAME_CONSOLE_FETCH_DEVICES_FAIL: b,

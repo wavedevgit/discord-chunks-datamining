@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  x: () => I
+  x: () => S
 });
 var r = n(200651),
   i = n(192379),
@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(530618),
   p = n(331042),
   h = n(372654),
-  g = n(987209),
-  m = n(563132),
+  m = n(987209),
+  g = n(563132),
   E = n(179118),
   v = n(614277),
   b = n(698708);
@@ -44,7 +44,7 @@ function O(e) {
   return e
 }
 
-function S(e) {
+function I(e) {
   let {
     handleClose: t,
     confettiCanvas: n,
@@ -54,12 +54,12 @@ function S(e) {
     skusById: f,
     selectedSkuId: _,
     application: h
-  } = (0, m.JL)(), g = (0, s.e7)([c.Z], () => c.Z.getProduct(_)), E = (0, d.o)(g, l);
+  } = (0, g.JL)(), m = (0, s.e7)([c.Z], () => c.Z.getProduct(_)), E = (0, d.o)(m, l);
   a()(null != _, "Expected selectedSkuId"), a()(null != h, "Expected application");
   let y = f[_];
-  return (a()(null != y, "Expected sku"), null == g) ? null : (0, r.jsxs)(v.C3, {
+  return (a()(null != y, "Expected sku"), null == m) ? null : (0, r.jsxs)(v.C3, {
     children: [(0, r.jsx)(b.Z, {}), (0, r.jsx)(p.e, {
-      product: g,
+      product: m,
       onClose: t,
       confettiCanvas: n,
       analyticsLocations: o,
@@ -69,7 +69,7 @@ function S(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     isGift: t,
     giftCode: n,
@@ -78,11 +78,11 @@ function I(e) {
     giftRecipient: u,
     giftMessageError: d,
     isSendingMessage: p
-  } = (0, g.wD)(), v = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), b = i.useRef(null), {
+  } = (0, m.wD)(), v = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), b = i.useRef(null), {
     selectedSkuId: y
-  } = (0, m.JL)(), I = (0, s.e7)([c.Z], () => c.Z.getProduct(y)), {
+  } = (0, g.JL)(), S = (0, s.e7)([c.Z], () => c.Z.getProduct(y)), {
     confettiColors: T
-  } = (0, f.Z)(null == I ? void 0 : I.styles);
+  } = (0, f.Z)(null == S ? void 0 : S.styles);
   return t ? (0, r.jsxs)("div", {
     ref: b,
     children: [(0, r.jsx)(E.Z, {
@@ -96,8 +96,8 @@ function I(e) {
     }), !e.hideConfetti && !v && (0, r.jsx)(_.Z, {
       confettiTarget: b.current,
       confettiCanvas: e.confettiCanvas,
-      sprites: (0, h.vK)(null == I ? void 0 : I.categorySkuId),
+      sprites: (0, h.vK)(null == S ? void 0 : S.categorySkuId),
       colors: null == T ? void 0 : T.map(e => e.toHexString())
     })]
-  }) : (0, r.jsx)(S, O({}, e))
+  }) : (0, r.jsx)(I, O({}, e))
 }

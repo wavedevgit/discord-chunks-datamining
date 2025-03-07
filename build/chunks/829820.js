@@ -18,8 +18,8 @@ var r = n(192379),
   _ = n(239470),
   p = n(894344),
   h = n(203777),
-  g = n(616922);
-let m = 30 * l.Z.Millis.SECOND;
+  m = n(616922);
+let g = 30 * l.Z.Millis.SECOND;
 
 function E(e) {
   let {
@@ -31,7 +31,7 @@ function E(e) {
     s && (t !== u || n || i) && (l(!1), c.stop())
   }, [t, u, n, i, s, c]);
   let d = r.useCallback(() => {
-      l(!0), c.start(m, () => l(!1))
+      l(!0), c.start(g, () => l(!1))
     }, [c]),
     f = r.useCallback(() => {
       l(!1), c.stop()
@@ -60,11 +60,11 @@ function b(e, t, n) {
       clearLoading: u
     } = E(i),
     _ = r.useCallback(() => {
-      c(), (0, h.Z)(i, g.kG.USER_ACTIVITY_PLAY, n).catch(u)
+      c(), (0, h.Z)(i, m.kG.USER_ACTIVITY_PLAY, n).catch(u)
     }, [i, n, c, u]);
   return {
-    label: (0, d.Z)(i, g.kG.USER_ACTIVITY_PLAY),
-    tooltip: (0, f.Z)(i, g.kG.USER_ACTIVITY_PLAY),
+    label: (0, d.Z)(i, m.kG.USER_ACTIVITY_PLAY),
+    tooltip: (0, f.Z)(i, m.kG.USER_ACTIVITY_PLAY),
     disabled: !l && (a || o || s),
     loading: l,
     onClick: _,
@@ -83,15 +83,15 @@ function y(e, t, n, i) {
     } = a,
     {
       loading: h,
-      startLoading: m,
+      startLoading: g,
       clearLoading: b
     } = E(a),
     y = r.useCallback(() => {
-      m(), (0, p.Z)(a, g.kG.USER_ACTIVITY_SYNC, n).catch(b)
-    }, [a, n, m, b]);
+      g(), (0, p.Z)(a, m.kG.USER_ACTIVITY_SYNC, n).catch(b)
+    }, [a, n, g, b]);
   return {
-    label: (0, d.Z)(a, g.kG.USER_ACTIVITY_SYNC),
-    tooltip: (0, f.Z)(a, g.kG.USER_ACTIVITY_SYNC, o),
+    label: (0, d.Z)(a, m.kG.USER_ACTIVITY_SYNC),
+    tooltip: (0, f.Z)(a, m.kG.USER_ACTIVITY_SYNC, o),
     disabled: !h && (s || _ || l || u),
     loading: h,
     onClick: y,
@@ -113,11 +113,11 @@ function O(e, t, n) {
       clearLoading: _
     } = E(i),
     h = r.useCallback(() => {
-      u(), (0, p.Z)(i, g.kG.EMBED_SYNC, n).catch(_)
+      u(), (0, p.Z)(i, m.kG.EMBED_SYNC, n).catch(_)
     }, [i, n, u, _]);
   return {
-    label: (0, d.Z)(i, g.kG.EMBED_SYNC),
-    tooltip: (0, f.Z)(i, g.kG.EMBED_SYNC),
+    label: (0, d.Z)(i, m.kG.EMBED_SYNC),
+    tooltip: (0, f.Z)(i, m.kG.EMBED_SYNC),
     disabled: !c && (l || a || s || o),
     loading: c,
     onClick: h,

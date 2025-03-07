@@ -13,8 +13,8 @@
     _ = 125,
     p = 0,
     h = 0,
-    g = 0,
-    m = {
+    m = 0,
+    g = {
       get didTimeout() {
         return !1
       },
@@ -43,34 +43,34 @@
   }
 
   function y() {
-    125 != _ && (d = 7, _ = 125, f = 35, u && (b(), I())), E()
+    125 != _ && (d = 7, _ = 125, f = 35, u && (b(), S())), E()
   }
 
   function O() {
     i = null, r = setTimeout(T, 0)
   }
 
-  function S() {
+  function I() {
     r = null, a(O)
   }
 
-  function I() {
-    !u && (t = _ - (Date.now() - h), e = Date.now(), u = !0, f && t < f && (t = f), t > 9 ? r = setTimeout(S, t) : (t = 0, S()))
+  function S() {
+    !u && (t = _ - (Date.now() - h), e = Date.now(), u = !0, f && t < f && (t = f), t > 9 ? r = setTimeout(I, t) : (t = 0, I()))
   }
 
   function T() {
     var n, i, o, a = d > 9 ? 9 : 1;
     if (h = Date.now(), u = !1, r = null, c > 2 || h - t - 50 < e)
-      for (i = 0, o = l.length; i < o && m.timeRemaining() > a; i++) n = l.shift(), g++, n && n(m);
-    l.length ? I() : c = 0
+      for (i = 0, o = l.length; i < o && g.timeRemaining() > a; i++) n = l.shift(), m++, n && n(g);
+    l.length ? S() : c = 0
   }
 
   function N(e) {
-    return p++, l.push(e), I(), p
+    return p++, l.push(e), S(), p
   }
 
   function A(e) {
-    var t = e - 1 - g;
+    var t = e - 1 - m;
     l[t] && (l[t] = null)
   }
   if (o.requestIdleCallback && o.cancelIdleCallback) try {

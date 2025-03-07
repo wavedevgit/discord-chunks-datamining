@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => I
 });
 var r, i = n(442837),
   o = n(570140),
@@ -61,11 +61,11 @@ function h(e) {
   f.disabledSounds = t
 }
 
-function g() {
+function m() {
   f.disableAllSounds = !f.disableAllSounds
 }
 
-function m(e) {
+function g(e) {
   let {
     ttsType: t
   } = e;
@@ -143,11 +143,11 @@ c(O, "displayName", "NotificationSettingsStore"), c(O, "persistKey", "notificati
   let t = u({}, e);
   return t.disabledSounds = t.disabledSounds || [], t.disableUnreadBadge = t.disableUnreadBadge || !1, t.taskbarFlash = null == t.taskbarFlash || t.taskbarFlash, t.ttsType = t.ttsType || l.PrB.NEVER, null == t.desktopType && (t.desktopType = s.isPlatformEmbedded ? l.qrD.ALL : l.qrD.NEVER), t
 }]);
-let S = new O(o.Z, {
+let I = new O(o.Z, {
   NOTIFICATIONS_SET_DESKTOP_TYPE: p,
-  NOTIFICATIONS_SET_TTS_TYPE: m,
+  NOTIFICATIONS_SET_TTS_TYPE: g,
   NOTIFICATIONS_SET_DISABLED_SOUNDS: h,
-  NOTIFICATIONS_TOGGLE_ALL_DISABLED: g,
+  NOTIFICATIONS_TOGGLE_ALL_DISABLED: m,
   NOTIFICATIONS_SET_PERMISSION_STATE: y,
   NOTIFICATIONS_SET_DISABLE_UNREAD_BADGE: E,
   NOTIFICATIONS_SET_TASKBAR_FLASH: v,

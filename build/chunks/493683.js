@@ -16,8 +16,8 @@ var r = n(544891),
   _ = n(131704),
   p = n(592125),
   h = n(306680),
-  g = n(626135),
-  m = n(73346),
+  m = n(626135),
+  g = n(73346),
   E = n(26151),
   v = n(287734),
   b = n(981631),
@@ -108,7 +108,7 @@ let O = {
   closePrivateChannel(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
       n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-    return (0, s.Z)(e) && g.default.track(b.rMx.CHANGE_LOG_DM_REMOVED, {
+    return (0, s.Z)(e) && m.default.track(b.rMx.CHANGE_LOG_DM_REMOVED, {
       last_changelog_id: a.Z.latestChangelogId(),
       unread_count: h.ZP.getUnreadCount(e)
     }), o.Z.dispatch({
@@ -225,7 +225,7 @@ let O = {
   },
   fetchChannelStoreListing(e, t) {
     let n = null != t ? b.ANM.CHANNEL_STORE_LISTING_SKU(e, t) : b.ANM.CHANNEL_STORE_LISTING(e);
-    return (0, m.Kb)(n).then(t => {
+    return (0, g.Kb)(n).then(t => {
       o.Z.dispatch({
         type: "STORE_LISTING_FETCH_SUCCESS",
         channelId: e,

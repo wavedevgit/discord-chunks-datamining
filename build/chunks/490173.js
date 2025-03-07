@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => I
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -17,7 +17,7 @@ var r = n(200651),
   p = n(585483),
   h = n(981631);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,14 +26,14 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -68,8 +68,8 @@ let y = e => {
     rect: f,
     position: _,
     align: p,
-    impressionName: g,
-    impressionProperties: m,
+    impressionName: m,
+    impressionProperties: g,
     disableClickTrap: E = !1
   } = e, v = i.useRef(null), y = i.useMemo(() => ({
     current: l
@@ -91,27 +91,27 @@ let y = e => {
       null === (e = r.ownerDocument) || void 0 === e || e.removeEventListener("click", i, !0), null === (t = r.ownerDocument) || void 0 === t || t.removeEventListener("contextmenu", i, !0)
     }
   }, []);
-  let S = i.useRef(a);
+  let I = i.useRef(a);
   i.useEffect(() => {
-    S.current = a
+    I.current = a
   }), i.useEffect(() => () => {
     var e;
-    return null === (e = S.current) || void 0 === e ? void 0 : e.call(S)
+    return null === (e = I.current) || void 0 === e ? void 0 : e.call(I)
   }, []), i.useLayoutEffect(() => {
     var e;
     null === (e = v.current) || void 0 === e || e.updatePosition()
   }), (0, u.Z)({
     type: o.ImpressionTypes.MENU,
-    name: g,
-    properties: m
+    name: m,
+    properties: g
   });
-  let I = (0, c.Aq)(),
+  let S = (0, c.Aq)(),
     T = i.useCallback(() => {
-      I.dispatch(h.CkL.POPOUT_SHOW)
-    }, [I]),
+      S.dispatch(h.CkL.POPOUT_SHOW)
+    }, [S]),
     N = i.useCallback(() => {
-      I.dispatch(h.CkL.POPOUT_HIDE)
-    }, [I]);
+      S.dispatch(h.CkL.POPOUT_HIDE)
+    }, [S]);
   return (0, r.jsx)(d.W5, {
     onMount: T,
     onUnmount: N,
@@ -196,14 +196,14 @@ class O extends i.PureComponent {
     }) : null
   }
   constructor(...e) {
-    super(...e), g(this, "state", {
+    super(...e), m(this, "state", {
       render: void 0
-    }), g(this, "closeResize", e => {
+    }), m(this, "closeResize", e => {
       let {
         renderWindow: t
       } = this.props;
       e.target === t && this.close()
-    }), g(this, "close", () => {
+    }), m(this, "close", () => {
       let {
         isOpen: e,
         closeContextMenu: t
@@ -213,7 +213,7 @@ class O extends i.PureComponent {
   }
 }
 
-function S() {
+function I() {
   let {
     contextMenu: e,
     version: t,
@@ -226,7 +226,7 @@ function S() {
     appContext: s,
     renderWindow: u
   } = i.useContext(c.ZP);
-  return (0, r.jsx)(O, v(m({
+  return (0, r.jsx)(O, v(g({
     appContext: s,
     renderWindow: u
   }, e), {

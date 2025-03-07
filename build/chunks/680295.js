@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S,
+  Z: () => I,
   n: () => y
 }), n(47120);
 var r = n(200651),
@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(729436),
   p = n(142145),
   h = n(710867),
-  g = n(312904),
-  m = n(186917),
+  m = n(312904),
+  g = n(186917),
   E = n(687322);
 
 function v(e, t, n) {
@@ -51,44 +51,44 @@ let y = e => {
       useOpacityOnHover: l = !0,
       autoPlay: c = !0,
       restartMethod: h,
-      urlQueryString: m,
+      urlQueryString: g,
       profileEffectConfig: v,
       noBorderRadius: b = !1,
       introDelay: y = u.lG
-    } = e, O = i.useRef(null), [S, I] = i.useState([]);
-    (0, g.Z)(v);
+    } = e, O = i.useRef(null), [I, S] = i.useState([]);
+    (0, m.Z)(v);
     let [T, N] = i.useState(0), [A, C] = i.useState(0), {
       accessibilityLabel: R
-    } = v, [P, D] = i.useState(-y), {
-      stop: w,
+    } = v, [P, w] = i.useState(-y), {
+      stop: D,
       reset: L,
       ticking: x
     } = (0, f.Z)(e => {
-      D(t => t + e)
+      w(t => t + e)
     }), M = i.useRef(y);
     i.useEffect(() => {
       M.current = y
     }), i.useEffect(() => {
-      D(-M.current), I((0, _.H)(v.effects))
+      w(-M.current), S((0, _.H)(v.effects))
     }, [v]), i.useEffect(() => {
       let e = 0,
         t = 1 / 0;
-      S.forEach(n => {
+      I.forEach(n => {
         let r = n.start + n.duration;
         r > e && (e = r), n.loop && n.start < t && (t = n.start)
       }), N(t), C(e)
-    }, [C, S]);
+    }, [C, I]);
     let [k, j] = i.useState(!1);
     return i.useEffect(() => {
-      !0 === c || s || (w(), D(0)), !s && k && x.current && (w(), D(0)), o && s && !x.current && (L(), v.animationType === d.Q.PERSISTENT ? D(h === d.j.FromStart ? 0 : T) : D(0))
-    }, [s, k, T, o, w, L, x, v.animationType, c, h]), (0, r.jsx)("div", {
+      !0 === c || s || (D(), w(0)), !s && k && x.current && (D(), w(0)), o && s && !x.current && (L(), v.animationType === d.Q.PERSISTENT ? w(h === d.j.FromStart ? 0 : T) : w(0))
+    }, [s, k, T, o, D, L, x, v.animationType, c, h]), (0, r.jsx)("div", {
       ref: O,
       className: a()(E.profileEffects, {
         [E.hovered]: s && l
       }),
       children: (0, r.jsx)("div", {
         className: b ? E.innerNoRadius : E.inner,
-        children: S.map((e, i) => {
+        children: I.map((e, i) => {
           if (!x.current && v.animationType === d.Q.PERSISTENT && null != v.staticFrameSrc && 0 === i && !0 === c) {
             var o, a, s, l;
             let {
@@ -112,7 +112,7 @@ let y = e => {
             accessibilityLabel: R,
             hasPlayedThrough: k,
             setHasPlayedThrough: j,
-            urlQueryString: m,
+            urlQueryString: g,
             maxLoops: n,
             loopEnd: A,
             bannerAdjustment: t
@@ -151,13 +151,13 @@ let y = e => {
       })
     })
   },
-  S = e => {
+  I = e => {
     let t = (0, s.e7)([c.Z], () => c.Z.isFocused()),
       n = (0, s.e7)([l.Z], () => l.Z.useReducedMotion),
       [o, a] = i.useState(!1),
       {
         preset: u
-      } = (0, m.Z)(e.profileEffectId, () => a(!1)),
+      } = (0, g.Z)(e.profileEffectId, () => a(!1)),
       f = (0, _.C)(null == u ? void 0 : u.config);
     return null != u && null != f && (t || e.shopPreview || u.config.animationType !== d.Q.INTERMITTENT) ? !t && e.shopPreview || !t && u.config.animationType === d.Q.PERSISTENT || n || !1 === e.autoPlay && !1 === e.isHovering ? (0, r.jsx)(O, {
       useThumbnail: e.useThumbnail,

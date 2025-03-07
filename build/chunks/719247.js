@@ -17,7 +17,7 @@ var r, i = n(392711),
   p = n(561308),
   h = n(981631);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,7 +25,7 @@ function g(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let m = new Set([s.s.LISTENED_SESSION]),
+let g = new Set([s.s.LISTENED_SESSION]),
   E = new Map;
 
 function v(e) {
@@ -61,11 +61,11 @@ function O(e) {
   return n.size > 0
 }
 
-function S() {
+function I() {
   E.clear()
 }
 
-function I() {
+function S() {
   let e = !1,
     t = Array.from(E.keys()),
     n = new Set,
@@ -84,17 +84,17 @@ function I() {
 }
 class T extends(r = l.ZP.Store) {
   initialize() {
-    this.waitFor(d.Z, u.Z), this.syncWith([u.Z], I)
+    this.waitFor(d.Z, u.Z), this.syncWith([u.Z], S)
   }
   getMatchingActivity(e) {
     return (0, p.n2)(e) ? null : E.get(v(e))
   }
   constructor(...e) {
-    super(...e), g(this, "canRenderContent", e => !(0, p.n2)(e) && (!m.has(e.content_type) || null != this.getMatchingActivity(e)))
+    super(...e), m(this, "canRenderContent", e => !(0, p.n2)(e) && (!g.has(e.content_type) || null != this.getMatchingActivity(e)))
   }
 }
-g(T, "displayName", "ContentInventoryActivityStore");
+m(T, "displayName", "ContentInventoryActivityStore");
 let N = new T(c.Z, {
-  CONNECTION_OPEN: S,
+  CONNECTION_OPEN: I,
   CONTENT_INVENTORY_SET_FEED: O
 })

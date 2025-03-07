@@ -16,9 +16,9 @@ var r = n(911969),
   _ = n(877565),
   p = n(590921),
   h = n(126226),
-  g = n(388032);
+  m = n(388032);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,7 +34,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -99,15 +99,15 @@ let O = b(E({}, h.Z), {
         allowFetch: l
       });
     if (null == f) return h.K;
-    let g = f.filter(e => e.section.botId === u.user.id);
+    let m = f.filter(e => e.section.botId === u.user.id);
     if (d.hasSpaceTerminator) {
       let e = d.text.trim(),
         t = e + " ";
-      g = g.filter(n => n.untranslatedName === e || n.untranslatedName.startsWith(t))
+      m = m.filter(n => n.untranslatedName === e || n.untranslatedName.startsWith(t))
     }
-    return 0 === g.length ? h.K : {
+    return 0 === m.length ? h.K : {
       results: {
-        entries: g.slice(0, p.AQ).map(e => ({
+        entries: m.slice(0, p.AQ).map(e => ({
           command: e,
           section: null == _ ? void 0 : _.find(t => t.id === e.applicationId)
         }))
@@ -133,8 +133,8 @@ let O = b(E({}, h.Z), {
       autocompletes: t,
       onHover: s,
       onClick: c,
-      titleWithQuery: g.t.HFRoZW,
-      titleWithoutQuery: g.NW.string(g.t["0hKkS0"]),
+      titleWithQuery: m.t.HFRoZW,
+      titleWithoutQuery: m.NW.string(m.t["0hKkS0"]),
       Component: a.commands === p.L8.OLD_BUILT_INS ? l.ZP.Command : l.ZP.NewCommand,
       getProps: e => {
         let {

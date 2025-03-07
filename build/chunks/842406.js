@@ -17,7 +17,7 @@ var l = "undefined" != typeof BigInt,
 if (l) var p = s(BigInt.prototype.valueOf);
 if (c) var h = s(Symbol.prototype.valueOf);
 
-function g(e, t) {
+function m(e, t) {
   if ("object" != typeof e) return !1;
   try {
     return t(e), !0
@@ -26,7 +26,7 @@ function g(e, t) {
   }
 }
 
-function m(e) {
+function g(e) {
   return "undefined" != typeof Promise && e instanceof Promise || null !== e && "object" == typeof e && "function" == typeof e.then && "function" == typeof e.catch
 }
 
@@ -50,11 +50,11 @@ function O(e) {
   return "Uint32Array" === o(e)
 }
 
-function S(e) {
+function I(e) {
   return "Int8Array" === o(e)
 }
 
-function I(e) {
+function S(e) {
   return "Int16Array" === o(e)
 }
 
@@ -82,16 +82,16 @@ function P(e) {
   return "[object Map]" === u(e)
 }
 
-function D(e) {
+function w(e) {
   return "undefined" != typeof Map && (P.working ? P(e) : e instanceof Map)
 }
 
-function w(e) {
+function D(e) {
   return "[object Set]" === u(e)
 }
 
 function L(e) {
-  return "undefined" != typeof Set && (w.working ? w(e) : e instanceof Set)
+  return "undefined" != typeof Set && (D.working ? D(e) : e instanceof Set)
 }
 
 function x(e) {
@@ -125,7 +125,7 @@ function B(e) {
 function V(e) {
   return "undefined" != typeof DataView && (B.working ? B(e) : e instanceof DataView)
 }
-t.isArgumentsObject = r, t.isGeneratorFunction = i, t.isTypedArray = a, t.isPromise = m, t.isArrayBufferView = E, t.isUint8Array = v, t.isUint8ClampedArray = b, t.isUint16Array = y, t.isUint32Array = O, t.isInt8Array = S, t.isInt16Array = I, t.isInt32Array = T, t.isFloat32Array = N, t.isFloat64Array = A, t.isBigInt64Array = C, t.isBigUint64Array = R, P.working = "undefined" != typeof Map && P(new Map), t.isMap = D, w.working = "undefined" != typeof Set && w(new Set), t.isSet = L, x.working = "undefined" != typeof WeakMap && x(new WeakMap), t.isWeakMap = M, k.working = "undefined" != typeof WeakSet && k(new WeakSet), t.isWeakSet = j, U.working = "undefined" != typeof ArrayBuffer && U(new ArrayBuffer), t.isArrayBuffer = G, B.working = "undefined" != typeof ArrayBuffer && "undefined" != typeof DataView && B(new DataView(new ArrayBuffer(1), 0, 1)), t.isDataView = V;
+t.isArgumentsObject = r, t.isGeneratorFunction = i, t.isTypedArray = a, t.isPromise = g, t.isArrayBufferView = E, t.isUint8Array = v, t.isUint8ClampedArray = b, t.isUint16Array = y, t.isUint32Array = O, t.isInt8Array = I, t.isInt16Array = S, t.isInt32Array = T, t.isFloat32Array = N, t.isFloat64Array = A, t.isBigInt64Array = C, t.isBigUint64Array = R, P.working = "undefined" != typeof Map && P(new Map), t.isMap = w, D.working = "undefined" != typeof Set && D(new Set), t.isSet = L, x.working = "undefined" != typeof WeakMap && x(new WeakMap), t.isWeakMap = M, k.working = "undefined" != typeof WeakSet && k(new WeakSet), t.isWeakSet = j, U.working = "undefined" != typeof ArrayBuffer && U(new ArrayBuffer), t.isArrayBuffer = G, B.working = "undefined" != typeof ArrayBuffer && "undefined" != typeof DataView && B(new DataView(new ArrayBuffer(1), 0, 1)), t.isDataView = V;
 var F = "undefined" != typeof SharedArrayBuffer ? SharedArrayBuffer : void 0;
 
 function Z(e) {
@@ -157,23 +157,23 @@ function q(e) {
 }
 
 function Q(e) {
-  return g(e, d)
+  return m(e, d)
 }
 
 function X(e) {
-  return g(e, f)
+  return m(e, f)
 }
 
 function J(e) {
-  return g(e, _)
+  return m(e, _)
 }
 
 function $(e) {
-  return l && g(e, p)
+  return l && m(e, p)
 }
 
 function ee(e) {
-  return c && g(e, h)
+  return c && m(e, h)
 }
 
 function et(e) {

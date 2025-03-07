@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120);
 var r = n(570140),
   i = n(147913),
@@ -64,7 +64,7 @@ let f = 1e4,
     let p = o.ZP.getMember(e, t),
       h = a.default.getUser(t);
     if (null == p || null == h || (0, s.b)(p)) return;
-    let g = d(c({}, p), {
+    let m = d(c({}, p), {
       guildId: e,
       nick: null !== (n = p.nick) && void 0 !== n ? n : h.username,
       avatar: null !== (i = p.avatar) && void 0 !== i ? i : void 0,
@@ -79,9 +79,9 @@ let f = 1e4,
     });
     r.Z.dispatch(c({
       type: "GUILD_MEMBER_UPDATE"
-    }, g))
+    }, m))
   };
-class g extends i.Z {
+class m extends i.Z {
   _initialize() {
     _ = setInterval(() => p(), f)
   }
@@ -92,4 +92,4 @@ class g extends i.Z {
     super(...e), l(this, "clearGuildMemberTimeout", h)
   }
 }
-let m = new g
+let g = new m

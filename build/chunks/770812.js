@@ -17,8 +17,8 @@ var i = n(990547),
   _ = n(430824),
   p = n(687476),
   h = n(761966),
-  g = n(981631),
-  m = n(176505),
+  m = n(981631),
+  g = n(176505),
   E = n(388032),
   v = n(567818);
 let b = () => {
@@ -44,16 +44,16 @@ function y(e) {
     }
   });
   let O = () => {
-      (0, f.uL)(g.Z5c.CHANNEL(n, m.oC.ROLE_SUBSCRIPTIONS), {
+      (0, f.uL)(m.Z5c.CHANNEL(n, g.oC.ROLE_SUBSCRIPTIONS), {
         sourceLocationStack: y
       })
     },
-    S = (0, o.e7)([_.Z], () => _.Z.getGuild(n)),
-    I = (0, o.e7)([p.Z], () => null != n && p.Z.getUserSubscriptionRoles(n).size > 0),
-    T = I ? E.NW.string(E.t["GoLM9/"]) : E.NW.formatToPlainString(E.t["h0u/Hh"], {
-      serverName: null == S ? void 0 : S.name
+    I = (0, o.e7)([_.Z], () => _.Z.getGuild(n)),
+    S = (0, o.e7)([p.Z], () => null != n && p.Z.getUserSubscriptionRoles(n).size > 0),
+    T = S ? E.NW.string(E.t["GoLM9/"]) : E.NW.formatToPlainString(E.t["h0u/Hh"], {
+      serverName: null == I ? void 0 : I.name
     }),
-    N = I ? E.NW.string(E.t.PjZ7DQ) : E.NW.string(E.t.p8FG1N);
+    N = S ? E.NW.string(E.t.PjZ7DQ) : E.NW.string(E.t.p8FG1N);
   return (0, r.jsxs)("div", {
     className: v.container,
     children: [(0, r.jsx)("div", {

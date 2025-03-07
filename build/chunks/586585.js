@@ -62,8 +62,8 @@ let p = e => {
     primaryType: _,
     primaryText: p,
     primaryTooltip: h,
-    primaryDisabled: g,
-    primarySubmitting: m,
+    primaryDisabled: m,
+    primarySubmitting: g,
     onPrimary: E,
     secondaryText: v,
     onSecondary: b
@@ -73,8 +73,8 @@ let p = e => {
       t = {
         innerClassName: l.button,
         type: _,
-        disabled: g,
-        submitting: m,
+        disabled: m,
+        submitting: g,
         color: 0 === d ? i.zxk.Colors.BRAND : i.zxk.Colors.GREEN,
         onClick: E
       };
@@ -97,7 +97,7 @@ let p = e => {
     look: i.zxk.Looks.LINK,
     onClick: b,
     children: v
-  }), S = () => null == t ? null : (0, r.jsx)(i.zxk, {
+  }), I = () => null == t ? null : (0, r.jsx)(i.zxk, {
     className: l.back,
     color: i.zxk.Colors.PRIMARY,
     look: i.zxk.Looks.LINK,
@@ -107,7 +107,7 @@ let p = e => {
   return (0, r.jsxs)(i.mzw, {
     justify: o.Z.Justify.BETWEEN,
     align: o.Z.Align.CENTER,
-    children: [y(), O(), (0, r.jsx)(a.Z, {}), S()]
+    children: [y(), O(), (0, r.jsx)(a.Z, {}), I()]
   })
 };
 p.CTAType = _;

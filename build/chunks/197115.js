@@ -17,15 +17,15 @@ var i = n(120356),
   _ = n(301766),
   p = n(594174),
   h = n(78839),
-  g = n(451478),
-  m = n(74538),
+  m = n(451478),
+  g = n(74538),
   E = n(639119),
   v = n(474936),
   b = n(981631),
   y = n(388032),
   O = n(748273);
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,14 +34,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -93,10 +93,10 @@ function R(e) {
     disabledButtonText: o,
     disabledButtonTooltipText: a
   };
-  let s = null != t ? v.y7[(0, m.Wz)(t)] : null,
+  let s = null != t ? v.y7[(0, g.Wz)(t)] : null,
     l = null != s ? v.$e[s] : null,
     c = null != n ? v.$e[n] : null;
-  return r ? a = m.ZP.getSwitchingPlansDisabledMessage(i) : null != c && null != l && l < c ? (o = y.NW.string(y.t["2pG5GR"]), a = y.NW.string(y.t.jXaaRk)) : null != s && null != n && s === n ? (o = y.NW.string(y.t.ymSxh4), a = y.NW.string(y.t.jXaaRk)) : null == s && null != n && n === v.p9.TIER_2 && (a = y.NW.string(y.t.jXaaRk)), {
+  return r ? a = g.ZP.getSwitchingPlansDisabledMessage(i) : null != c && null != l && l < c ? (o = y.NW.string(y.t["2pG5GR"]), a = y.NW.string(y.t.jXaaRk)) : null != s && null != n && s === n ? (o = y.NW.string(y.t.ymSxh4), a = y.NW.string(y.t.jXaaRk)) : null == s && null != n && n === v.p9.TIER_2 && (a = y.NW.string(y.t.jXaaRk)), {
     disabledButtonText: o,
     disabledButtonTooltipText: a
   }
@@ -105,12 +105,12 @@ let P = function(e) {
   var {
     isGift: t,
     subscriptionTier: i,
-    onClick: S,
+    onClick: I,
     size: T,
     className: C,
     isTrialCTA: P,
-    buttonText: D,
-    buttonTextClassName: w,
+    buttonText: w,
+    buttonTextClassName: D,
     iconClassName: L,
     postSuccessGuild: x,
     onSubscribeModalClose: M,
@@ -126,7 +126,7 @@ let P = function(e) {
     planSelectBanner: W
   } = e, Y = A(e, ["isGift", "subscriptionTier", "onClick", "size", "className", "isTrialCTA", "buttonText", "buttonTextClassName", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "giftMessage", "overrideDisabledButtonText", "shinyButtonClassName", "showGradient", "confirmationFooter", "planSelectBanner"]);
   let K = (0, a.e7)([p.default], () => p.default.getCurrentUser()),
-    z = (0, a.e7)([g.Z], () => g.Z.isFocused()),
+    z = (0, a.e7)([m.Z], () => m.Z.isFocused()),
     q = (0, a.e7)([h.ZP], () => h.ZP.getPremiumTypeSubscription()),
     {
       analyticsLocations: Q
@@ -139,7 +139,7 @@ let P = function(e) {
         (0, f.uL)(b.Z5c.LOGIN);
         return
       }
-      if (null == S || S(e), (null == q ? void 0 : q.status) === b.O0b.ACCOUNT_HOLD) {
+      if (null == I || I(e), (null == q ? void 0 : q.status) === b.O0b.ACCOUNT_HOLD) {
         (0, u.A3)(), l.Z.open(b.oAB.PREMIUM), null == M || M(!1);
         return
       }
@@ -152,7 +152,7 @@ let P = function(e) {
             var {
               onClose: n
             } = t, i = A(t, ["onClose"]);
-            return (0, r.jsx)(e, N(I({}, i), {
+            return (0, r.jsx)(e, N(S({}, i), {
               onClose: n
             }))
           }
@@ -168,7 +168,7 @@ let P = function(e) {
             var {
               onClose: n
             } = t, i = A(t, ["onClose"]);
-            return (0, r.jsx)(e, N(I({}, i), {
+            return (0, r.jsx)(e, N(S({}, i), {
               onClose: n
             }))
           }
@@ -182,7 +182,7 @@ let P = function(e) {
         initialPlanId: null,
         subscriptionTier: i,
         analyticsLocations: Q,
-        analyticsObject: I({
+        analyticsObject: S({
           object: b.qAy.BUTTON_CTA,
           objectType: c
         }, k),
@@ -195,7 +195,7 @@ let P = function(e) {
         planSelectBanner: W
       })
     };
-  if (P) return (0, r.jsxs)(s.zxk, N(I({
+  if (P) return (0, r.jsxs)(s.zxk, N(S({
     size: T,
     className: C,
     innerClassName: O.premiumSubscribeButton,
@@ -207,11 +207,11 @@ let P = function(e) {
       color: "currentColor",
       className: O.premiumIcon
     }), (0, r.jsx)("span", {
-      className: o()(O.buttonText, w),
-      children: null != D ? D : y.NW.string(y.t["Gd/XHB"])
+      className: o()(O.buttonText, D),
+      children: null != w ? w : y.NW.string(y.t["Gd/XHB"])
     })]
   }));
-  if (t) return (0, r.jsxs)(s.zxk, N(I({
+  if (t) return (0, r.jsxs)(s.zxk, N(S({
     size: T,
     className: C,
     innerClassName: O.giftButton,
@@ -223,16 +223,16 @@ let P = function(e) {
       color: "currentColor",
       className: O.giftIcon
     }), (0, r.jsx)("span", {
-      className: o()(O.buttonText, w),
-      children: null != D ? D : y.NW.string(y.t.PEjaCw)
+      className: o()(O.buttonText, D),
+      children: null != w ? w : y.NW.string(y.t.PEjaCw)
     })]
   }));
   let ee = y.NW.string(y.t["2pG5GR"]),
-    et = null != q ? (0, m.Af)(q) : null,
-    en = null != et ? m.ZP.getPremiumType(et.planId) : null == K ? void 0 : K.premiumType,
+    et = null != q ? (0, g.Af)(q) : null,
+    en = null != et ? g.ZP.getPremiumType(et.planId) : null == K ? void 0 : K.premiumType,
     er = i === v.Si.TIER_2 && null != en && [v.p9.TIER_0, v.p9.TIER_1].includes(en);
   er && (ee = y.NW.string(y.t.IJI7ys));
-  let ei = null != q && m.ZP.isSwitchingPlansDisabled(q),
+  let ei = null != q && g.ZP.isSwitchingPlansDisabled(q),
     eo = null != q && q.status !== b.O0b.ACCOUNT_HOLD && !(0, _.Q0)(q.planId) && !er || ei,
     ea = eo ? null != V ? V : R({
       ctaSubscriptionSkuId: i,
@@ -243,7 +243,7 @@ let P = function(e) {
 
   function es(e) {
     var t, n;
-    return (0, r.jsxs)(s.gtL, N(I({
+    return (0, r.jsxs)(s.gtL, N(S({
       disabled: eo,
       onClick: $,
       innerClassName: O.premiumSubscribeButton,
@@ -261,8 +261,8 @@ let P = function(e) {
         color: "currentColor",
         className: o()(O.premiumIcon, L)
       }), (0, r.jsx)("span", {
-        className: o()(O.buttonText, w),
-        children: null !== (n = null !== (t = null == ea ? void 0 : ea.disabledButtonText) && void 0 !== t ? t : D) && void 0 !== n ? n : ee
+        className: o()(O.buttonText, D),
+        children: null !== (n = null !== (t = null == ea ? void 0 : ea.disabledButtonText) && void 0 !== t ? t : w) && void 0 !== n ? n : ee
       })]
     }))
   }

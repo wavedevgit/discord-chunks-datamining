@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => I
 }), n(733860);
 var r = n(200651),
   i = n(192379),
@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(554355),
   p = n(991989),
   h = n(787462),
-  g = n(635507),
-  m = n(470794),
+  m = n(635507),
+  g = n(470794),
   E = n(886777);
 
 function v(e) {
@@ -25,9 +25,9 @@ function v(e) {
     movDark: t = d,
     movLight: n = h,
     mp4Dark: i = f,
-    mp4Light: o = g,
+    mp4Light: o = m,
     pngDark: a = _,
-    pngLight: s = m,
+    pngLight: s = g,
     webmDark: c = p,
     webmLight: v = E
   } = e, b = (0, l.vu)(), y = [(0, r.jsx)("source", {
@@ -63,7 +63,7 @@ function v(e) {
 let b = s.Z.getAppSpinnerSources(),
   y = null != b ? v(b) : null,
   O = v({}),
-  S = e => {
+  I = e => {
     var t;
     let {
       loop: n = !0,
@@ -77,7 +77,7 @@ let b = s.Z.getAppSpinnerSources(),
       reducedMotion: p
     } = i.useContext(a.Sfi), h = O;
     null != y && (h = y);
-    let g = null !== (t = h[(0, o.wj)(_) ? u.BRd.DARK : u.BRd.LIGHT]) && void 0 !== t ? t : h[u.BRd.DARK];
+    let m = null !== (t = h[(0, o.wj)(_) ? u.BRd.DARK : u.BRd.LIGHT]) && void 0 !== t ? t : h[u.BRd.DARK];
     return (0, r.jsx)(c.Z, {
       ref: l,
       onLoadedData: f,
@@ -86,6 +86,6 @@ let b = s.Z.getAppSpinnerSources(),
       autoPlay: !p.enabled && s,
       playsInline: !0,
       "data-testid": "app-spinner",
-      children: g
+      children: m
     }, _)
   }

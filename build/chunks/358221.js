@@ -15,15 +15,15 @@ var r, i = n(512722),
   _ = n(569545),
   p = n(163612),
   h = n(199902),
-  g = n(314897),
-  m = n(523746),
+  m = n(314897),
+  g = n(523746),
   E = n(592125),
   v = n(158776),
   b = n(944486),
   y = n(606304),
   O = n(594174),
-  S = n(33039),
-  I = n(979651),
+  I = n(33039),
+  S = n(979651),
   T = n(413523),
   N = n(354459),
   A = n(981631);
@@ -61,12 +61,12 @@ function P(e, t) {
   return n
 }
 
-function D(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = new d.Z("ChannelRTCStore"),
+let D = new d.Z("ChannelRTCStore"),
   L = Object.freeze([]),
   x = [],
   M = {},
@@ -98,7 +98,7 @@ function z() {
   let n = b.Z.getVoiceChannelId();
   null == n || e.includes(n) || e.push(n);
   let r = f.Z.getRemoteSessionId(),
-    i = I.Z.getVoiceStateForSession(g.default.getId(), r);
+    i = S.Z.getVoiceStateForSession(m.default.getId(), r);
   (null == i ? void 0 : i.channelId) != null && e.push(null == i ? void 0 : i.channelId), s().difference(x, e).forEach(ei);
   let o = s().difference(e, x);
   return x = e, o
@@ -155,7 +155,7 @@ function et(e) {
 }
 
 function en(e) {
-  let t = g.default.getId(),
+  let t = m.default.getId(),
     n = Y(e);
   if (0 === n.size() || b.Z.getVoiceChannelId() !== e) {
     ee(e, null);
@@ -279,7 +279,7 @@ function eh(e) {
   s().forEach(n, e => ei(e))
 }
 
-function eg(e) {
+function em(e) {
   let {
     channelId: t,
     participantsOpen: n
@@ -287,7 +287,7 @@ function eg(e) {
   B[t] = n
 }
 
-function em(e) {
+function eg(e) {
   let {
     channelId: t,
     voiceParticipantsHidden: n
@@ -299,7 +299,7 @@ function eE(e) {
   let {
     channelId: t,
     selfStreamHidden: n
-  } = e, r = g.default.getId();
+  } = e, r = m.default.getId();
   if (n) {
     let [e] = X(t);
     (0, _.DB)(e) && e.includes(r) && ee(t, null)
@@ -339,7 +339,7 @@ function eO(e) {
   Z[t] = n, n && (F[t] = !1)
 }
 
-function eS(e) {
+function eI(e) {
   let {
     channelId: t,
     id: n
@@ -353,15 +353,15 @@ function eS(e) {
       let {
         ownerId: e
       } = (0, _.my)(n);
-      e === g.default.getId() && Q(e, [t])
+      e === m.default.getId() && Q(e, [t])
     } catch (e) {
-      w.warn("INVALID STREAM KEY FORMAT ".concat(n), e)
+      D.warn("INVALID STREAM KEY FORMAT ".concat(n), e)
     }
     et(r) || (B[t] = !1)
   }
 }
 
-function eI(e) {
+function eS(e) {
   let {
     channel: t
   } = e;
@@ -392,7 +392,7 @@ function eN(e) {
     layout: n,
     appContext: r
   } = e;
-  G[t] = D(R({}, G[t]), {
+  G[t] = w(R({}, G[t]), {
     [r]: n
   })
 }
@@ -433,14 +433,14 @@ function eP(e) {
   return Q(n, [t])
 }
 
-function eD(e) {
+function ew(e) {
   let {
     userId: t
   } = e;
   return Q(t)
 }
 
-function ew(e) {
+function eD(e) {
   let {
     channelId: t,
     senderUserId: n,
@@ -484,7 +484,7 @@ function eM(e) {
 }
 class ek extends(r = l.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(h.Z, g.default, m.Z, E.Z, u.ZP, v.Z, b.Z, y.Z, O.default, S.Z, I.Z), this.syncWith([u.ZP], ec), this.syncWith([v.Z], eu), this.syncWith([f.Z], eo), (null == e ? void 0 : e.voiceParticipantsHidden) !== void 0 && Object.assign(V, null == e ? void 0 : e.voiceParticipantsHidden)
+    this.waitFor(h.Z, m.default, g.Z, E.Z, u.ZP, v.Z, b.Z, y.Z, O.default, I.Z, S.Z), this.syncWith([u.ZP], ec), this.syncWith([v.Z], eu), this.syncWith([f.Z], eo), (null == e ? void 0 : e.voiceParticipantsHidden) !== void 0 && Object.assign(V, null == e ? void 0 : e.voiceParticipantsHidden)
   }
   getState() {
     return {
@@ -594,16 +594,16 @@ let ej = new ek(c.Z, {
   CHANNEL_SELECT: es,
   CHANNEL_RTC_ACTIVE_CHANNELS: eo,
   VOICE_STATE_UPDATES: el,
-  CHANNEL_CREATE: eI,
+  CHANNEL_CREATE: eS,
   CHANNEL_DELETE: eT,
   THREAD_DELETE: eT,
   CALL_CREATE: e_,
   CALL_UPDATE: e_,
   CALL_DELETE: ep,
-  CHANNEL_RTC_SELECT_PARTICIPANT: eS,
+  CHANNEL_RTC_SELECT_PARTICIPANT: eI,
   CHANNEL_RTC_UPDATE_LAYOUT: eN,
-  CHANNEL_RTC_UPDATE_PARTICIPANTS_OPEN: eg,
-  CHANNEL_RTC_UPDATE_VOICE_PARTICIPANTS_HIDDEN: em,
+  CHANNEL_RTC_UPDATE_PARTICIPANTS_OPEN: em,
+  CHANNEL_RTC_UPDATE_VOICE_PARTICIPANTS_HIDDEN: eg,
   CHANNEL_RTC_UPDATE_STAGE_STREAM_SIZE: ev,
   CHANNEL_RTC_UPDATE_STAGE_VIDEO_LIMIT_BOOST_UPSELL_DISMISSED: eb,
   STREAM_UPDATE_SELF_HIDDEN: eE,
@@ -611,8 +611,8 @@ let ej = new ek(c.Z, {
   CHANNEL_RTC_UPDATE_PARTCIPANTS_LIST_OPEN: eO,
   RTC_CONNECTION_VIDEO: eR,
   RTC_CONNECTION_PLATFORM: eP,
-  AUDIO_SET_LOCAL_VIDEO_DISABLED: eD,
-  MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED: ew,
+  AUDIO_SET_LOCAL_VIDEO_DISABLED: ew,
+  MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED: eD,
   STREAM_CLOSE: eA,
   STREAM_DELETE: eA,
   STREAM_WATCH: eC,

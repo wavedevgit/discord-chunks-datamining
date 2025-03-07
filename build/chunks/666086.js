@@ -16,8 +16,8 @@ var r = n(392711),
   _ = n(375954),
   p = n(944486),
   h = n(626135),
-  g = n(522558),
-  m = n(581025),
+  m = n(522558),
+  g = n(581025),
   E = n(795448),
   v = n(441623),
   b = n(474936),
@@ -32,7 +32,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function S(e) {
   }
   return e
 }
-let I = 50,
+let S = 50,
   T = 1e3;
 class N extends a.Z {
   isChannelEligible(e, t) {
@@ -55,7 +55,7 @@ class N extends a.Z {
       case i.d.GUILD_TEXT:
         let n = f.Z.getGuild(t),
           r = u.Z.getMemberCount(t);
-        return null != r && r <= I && (null == n ? void 0 : n.rulesChannelId) !== e.id && !e.isNSFW() && !(0, l.Z)(e) && null == e.linkedLobby;
+        return null != r && r <= S && (null == n ? void 0 : n.rulesChannelId) !== e.id && !e.isNSFW() && !(0, l.Z)(e) && null == e.linkedLobby;
       default:
         return !1
     }
@@ -73,13 +73,13 @@ class N extends a.Z {
   handleChannelSelect(e, t) {
     let {
       enabled: n
-    } = m.G.getCurrentConfig({
+    } = g.G.getCurrentConfig({
       location: "PremiumGiftingIntentManager handleChannelSelect"
     }, {
       autoTrackExposure: !1
     }), {
       enabled: r
-    } = g.w.getCurrentConfig({
+    } = m.w.getCurrentConfig({
       location: "PremiumGiftingIntentManager handleChannelSelect"
     }, {
       autoTrackExposure: !1
@@ -91,7 +91,7 @@ class N extends a.Z {
         let e = o[0];
         this.maybeSendGiftingPromptSystemMessageDebounced(i.id, b.hX.FRIEND_ANNIVERSARY, e, o.length > 1 ? b.X2.VIEW_ALL : b.X2.SEND_MESSAGE)
       }
-      n && h.default.track(y.rMx.FRIEND_ANNIVERSARIES_CHANNEL_VIEWED, S({
+      n && h.default.track(y.rMx.FRIEND_ANNIVERSARIES_CHANNEL_VIEWED, I({
         friend_anniversaries_count: o.length
       }, (0, s.v_)(i)))
     }

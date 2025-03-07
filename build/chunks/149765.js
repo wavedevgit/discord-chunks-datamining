@@ -1,18 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $e: () => I,
+  $e: () => S,
   Bw: () => h,
   Db: () => N,
   IH: () => A,
   Od: () => C,
   U_: () => O,
   e$: () => T,
-  fS: () => S,
+  fS: () => I,
   hX: () => v,
   r0: () => R,
   ug: () => P,
-  vB: () => m
+  vB: () => g
 }), n(309749);
 var r = n(654861),
   i = n.n(r);
@@ -135,13 +135,13 @@ let h = p ? function(e) {
   } : function(e) {
     return e instanceof _
   },
-  g = {},
-  m = p ? function(e) {
+  m = {},
+  g = p ? function(e) {
     return BigInt(e)
   } : function(e) {
-    return e instanceof _ ? e : ("number" == typeof e && (e = e.toString()), null != g[e] || (g[e] = _.fromString(e)), g[e])
+    return e instanceof _ ? e : ("number" == typeof e && (e = e.toString()), null != m[e] || (m[e] = _.fromString(e)), m[e])
   },
-  E = m(0),
+  E = g(0),
   v = p ? function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : E,
       t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : E;
@@ -176,13 +176,13 @@ let h = p ? function(e) {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : E;
     return e.not()
   },
-  S = p ? function(e, t) {
+  I = p ? function(e, t) {
     return e === t
   } : function(e, t) {
     return null == e || null == t ? e == t : e.equals(t)
   };
 
-function I() {
+function S() {
   for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
   let r = t[0];
   for (let e = 1; e < t.length; e++) r = b(r, t[e]);
@@ -190,11 +190,11 @@ function I() {
 }
 
 function T(e, t) {
-  return S(v(e, t), t)
+  return I(v(e, t), t)
 }
 
 function N(e, t) {
-  return !S(v(e, t), E)
+  return !I(v(e, t), E)
 }
 
 function A(e, t) {

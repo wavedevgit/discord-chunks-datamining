@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => w
+  Z: () => D
 }), n(47120);
 var r, i = n(442837),
   o = n(570140),
@@ -50,8 +50,8 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = 1728e5,
-  m = 6e5,
+let m = 1728e5,
+  g = 6e5,
   E = {
     userOffersLastFetchedAtDate: void 0,
     userAnnualOfferLastFetchedAtDate: void 0,
@@ -82,11 +82,11 @@ function O(e) {
   null == t && null == n && null == r && N(), null != t ? (v.userTrialOffers[t.trial_id] = t, v.userDiscountOffers = {}) : null != n ? (v.userDiscountOffers[n.discount_id] = n, v.userTrialOffers = {}) : null != r && (v.userDiscountOffers[r.discount_id] = r, v.userTrialOffers = {}), v.userOffersLastFetchedAtDate = Date.now(), v.isFetching = !1
 }
 
-function S() {
+function I() {
   N(), v.userOffersLastFetchedAtDate = Date.now(), v.isFetching = !1
 }
 
-function I(e) {
+function S(e) {
   let {
     userTrialOffer: t
   } = e;
@@ -127,7 +127,7 @@ function P() {
   }
   return !1
 }
-class D extends(r = i.ZP.PersistedStore) {
+class w extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     v = null != e ? e : E, this.waitFor(l.default), this.syncWith([l.default], A), this.syncWith([u.ZP], C), this.syncWith([a.Z], P)
   }
@@ -149,20 +149,20 @@ class D extends(r = i.ZP.PersistedStore) {
     var e;
     let t = v.userOffersLastFetchedAtDate,
       n = null !== (e = v.isFetching) && void 0 !== e && e;
-    return null == t ? !n : !n && Date.now() - g > t
+    return null == t ? !n : !n && Date.now() - m > t
   }
   shouldFetchReferralOffer(e) {
     var t;
     let n = v.userOffersLastFetchedAtDate,
       r = null !== (t = v.isFetching) && void 0 !== t && t;
     if (null == n) return !r;
-    let i = Date.now() - m > n,
+    let i = Date.now() - g > n,
       o = (null != e ? e : 0) > n;
     return !r && (i || o)
   }
   shouldFetchAnnualOffer() {
     let e = v.userAnnualOfferLastFetchedAtDate;
-    return null == e || Date.now() - g > e
+    return null == e || Date.now() - m > e
   }
   getAlmostExpiringTrialOffers(e) {
     let t = Object.values(d.nG).map(e => e.id),
@@ -199,7 +199,7 @@ class D extends(r = i.ZP.PersistedStore) {
     N()
   }
 }
-f(D, "displayName", "UserOfferStore"), f(D, "persistKey", "UserOfferStore"), f(D, "migrations", [e => {
+f(w, "displayName", "UserOfferStore"), f(w, "persistKey", "UserOfferStore"), f(w, "migrations", [e => {
   let t = null == e ? void 0 : e.userDiscounts;
   if (null != t) return h(_({}, e), {
     userDiscountOffers: t
@@ -213,13 +213,13 @@ f(D, "displayName", "UserOfferStore"), f(D, "persistKey", "UserOfferStore"), f(D
     isFetching: !1
   }) : e
 }]);
-let w = new D(o.Z, {
+let D = new w(o.Z, {
   BILLING_USER_OFFER_FETCH_START: b,
   BILLING_USER_TRIAL_OFFER_FETCH_SUCCESS: y,
-  BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS: I,
+  BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS: S,
   BILLING_USER_OFFER_FETCH_SUCCESS: O,
   BILLING_USER_OFFER_ACKNOWLEDGED_SUCCESS: T,
-  BILLING_USER_OFFER_FETCH_FAIL: S,
+  BILLING_USER_OFFER_FETCH_FAIL: I,
   BILLING_PAYMENT_SOURCE_CREATE_SUCCESS: R,
   BILLING_PAYMENT_SOURCE_UPDATE_SUCCESS: R,
   BILLING_PAYMENT_SOURCE_REMOVE_SUCCESS: R,

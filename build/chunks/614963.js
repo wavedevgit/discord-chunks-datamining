@@ -36,9 +36,9 @@ let u = 15,
   _ = 10,
   p = 5,
   h = 30,
-  g = 5;
+  m = 5;
 
-function m() {
+function g() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 30;
   return e <= 5 ? f : e <= 15 ? d : u
 }
@@ -80,10 +80,10 @@ let v = (0, i.oH)((e, t, n) => ({
 function b(e, t) {
   if ("streamer" === e.type) {
     if (100 * e.packetLossRate > _) return v(s.NW.string(s.t["1f1LHh"]), "Packet Loss", r.u.STREAM_SEND_HIGH_PACKET_LOSS);
-    if (e.frameRate <= m(t)) return v(s.NW.string(s.t["1f1LHh"]), "Frame Rate Encode", r.u.STREAM_SEND_LOW_FPS)
+    if (e.frameRate <= g(t)) return v(s.NW.string(s.t["1f1LHh"]), "Frame Rate Encode", r.u.STREAM_SEND_LOW_FPS)
   } else {
     if (100 * e.packetLossRate > _) return v(s.NW.string(s.t.BcOif3), "Packet Loss", r.u.STREAM_VIEW_HIGH_PACKET_LOSS);
-    if (e.frameRate <= m(t)) return v(s.NW.string(s.t.BcOif3), "Frame Rate Decode", r.u.STREAM_VIEW_LOW_FPS)
+    if (e.frameRate <= g(t)) return v(s.NW.string(s.t.BcOif3), "Frame Rate Decode", r.u.STREAM_VIEW_LOW_FPS)
   }
   return null
 }
@@ -93,7 +93,7 @@ function y(e, t, n, i) {
   if (null != t) {
     let e = E(t, p),
       n = E(t, h);
-    if (n.numDatapoints >= g) {
+    if (n.numDatapoints >= m) {
       var o;
       return null !== (o = b(e, null == i ? void 0 : i.maxFrameRate)) && void 0 !== o ? o : b(n, null == i ? void 0 : i.maxFrameRate)
     }

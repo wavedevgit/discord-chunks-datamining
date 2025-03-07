@@ -17,9 +17,9 @@ var i = n(481060),
   _ = n(318891),
   p = n(719296),
   h = n(981631),
-  g = n(388032);
+  m = n(388032);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -35,7 +35,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -54,7 +54,7 @@ class b extends d.Z {
       message: n
     } = e;
     (0, i.ZDy)(async () => e => (0, r.jsx)(a.default, E({
-      title: g.NW.formatToPlainString(g.t.hbiAOz, {
+      title: m.NW.formatToPlainString(m.t.hbiAOz, {
         code: t
       }),
       body: n
@@ -62,12 +62,12 @@ class b extends d.Z {
   }
   showLaunchErrorModal(e) {
     (0, i.ZDy)(async () => t => (0, r.jsx)(a.default, E({
-      title: g.NW.string(g.t.PtobXV),
+      title: m.NW.string(m.t.PtobXV),
       body: e
     }, t)))
   }
   showDevShelfOverrideEnabled() {
-    (0, i.showToast)((0, i.createToast)(g.NW.string(g.t.JfA7IC), i.ToastType.SUCCESS))
+    (0, i.showToast)((0, i.createToast)(m.NW.string(m.t.JfA7IC), i.ToastType.SUCCESS))
   }
   leaveActivity(e) {
     let {
@@ -92,7 +92,7 @@ class b extends d.Z {
   }
   releaseWebView() {}
   constructor(...e) {
-    super(...e), m(this, "handleRPCDisconnect", e => {
+    super(...e), g(this, "handleRPCDisconnect", e => {
       let {
         reason: t,
         application: n
@@ -101,7 +101,7 @@ class b extends d.Z {
         reason: t,
         application: n
       })
-    }), m(this, "handlePopoutWindowUpdate", () => {
+    }), g(this, "handlePopoutWindowUpdate", () => {
       let e = v,
         t = s.Z.getWindowOpen(h.KJ3.ACTIVITY_POPOUT);
       if (e && !t) {

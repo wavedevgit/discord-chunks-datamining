@@ -16,8 +16,8 @@ let d = {},
   _ = !1,
   p = (0, s.r)(window),
   h = (0, c.isMac)() || (0, c.isMacWeb)() ? "cmd" : "ctrl",
-  g = (0, c.isMac)() || (0, c.isMacWeb)() ? "opt" : "alt",
-  m = (0, c.isMac)() || (0, c.isMacWeb)() ? "return" : "enter",
+  m = (0, c.isMac)() || (0, c.isMacWeb)() ? "opt" : "alt",
+  g = (0, c.isMac)() || (0, c.isMacWeb)() ? "return" : "enter",
   E = [...o.u.binds, "mod+shift+[", "mod+shift+]", "mod+[", "mod+]", "alt+[", "alt+]", "ctrl+shift+tab", "ctrl+tab", "mod+n", "mod+t", "mod+shift+t", "mod+plus", "mod+minus", "mod+0"].map(e => e.replace("mod", h)),
   v = () => [],
   b = [];
@@ -33,13 +33,13 @@ function O(e) {
   return t.map(e => e.replace("mod", h))
 }
 
-function S(e, t) {
+function I(e, t) {
   return (n, r) => (l.default.track(u.rMx.KEYBOARD_SHORTCUT_USED, {
     shortcut_name: e
   }), t(n, r))
 }
 
-function I(e) {
+function S(e) {
   for (let [t, n] of Object.entries(e)) {
     if (null == n) continue;
     let e = v();
@@ -47,17 +47,17 @@ function I(e) {
     let r = n.binds.filter(t => (t = t.replace("mod", h), 0 > e.indexOf(t)));
     if (0 === r.length) continue;
     let i = n.comboKeysBindGlobal ? p.bindGlobal : p.bind;
-    if (null != n.action && i.call(p, r, S(t, n.action)), null != n.keyup && i.call(p, r, S(t, n.keyup), "keyup"), null != n.keydown) {
-      let e = r.indexOf("any-character"); - 1 !== e && (y("keydown", n.keydown), r.splice(e, 1)), r.length > 0 && i.call(p, r, S(t, n.keydown), "keydown")
+    if (null != n.action && i.call(p, r, I(t, n.action)), null != n.keyup && i.call(p, r, I(t, n.keyup), "keyup"), null != n.keydown) {
+      let e = r.indexOf("any-character"); - 1 !== e && (y("keydown", n.keydown), r.splice(e, 1)), r.length > 0 && i.call(p, r, I(t, n.keydown), "keydown")
     }
-    null != n.keypress && i.call(p, r, S(t, n.keypress), "keypress")
+    null != n.keypress && i.call(p, r, I(t, n.keypress), "keypress")
   }
 }(0, c.isDesktop)() && new(i())(document.documentElement).bind("backspace", e => e.preventDefault());
 let T = {
   combokeys: p,
   modKey: h,
-  altKey: g,
-  returnKey: m,
+  altKey: m,
+  returnKey: g,
   setGetKeybindList(e) {
     v = e
   },
@@ -71,10 +71,10 @@ let T = {
     d = e
   },
   enable() {
-    !_ && (_ = !0, this.checkDupes(d), I(d))
+    !_ && (_ = !0, this.checkDupes(d), S(d))
   },
   enableTemp(e) {
-    f.push(d), d = e, I(e), _ = !0
+    f.push(d), d = e, S(e), _ = !0
   },
   disableTemp() {
     let e = f.pop();

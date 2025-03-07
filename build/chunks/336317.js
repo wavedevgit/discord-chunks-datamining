@@ -57,13 +57,13 @@ let r = function() {
   }
 
   function _(e, t) {
-    for (var r, i, o, a, s, c, u, _, p, h, g, m, E, v = d(e, []), b = v.length; b--;) {
+    for (var r, i, o, a, s, c, u, _, p, h, m, g, E, v = d(e, []), b = v.length; b--;) {
       for (o = !1, a = document.createDocumentFragment(), c = (s = v[b]).nodeValue, _ = 0; u = n.exec(c);) {
-        if ((p = u.index) !== _ && a.appendChild(l(c.slice(_, p), !0)), m = f(g = u[0]), _ = p + g.length, E = t.callback(m, t), m && E) {
-          for (i in (h = new Image).onerror = t.onerror, h.setAttribute("draggable", "false"), r = t.attributes(g, m)) r.hasOwnProperty(i) && 0 !== i.indexOf("on") && !h.hasAttribute(i) && h.setAttribute(i, r[i]);
-          h.className = t.className, h.alt = g, h.src = E, o = !0, a.appendChild(h)
+        if ((p = u.index) !== _ && a.appendChild(l(c.slice(_, p), !0)), g = f(m = u[0]), _ = p + m.length, E = t.callback(g, t), g && E) {
+          for (i in (h = new Image).onerror = t.onerror, h.setAttribute("draggable", "false"), r = t.attributes(m, g)) r.hasOwnProperty(i) && 0 !== i.indexOf("on") && !h.hasAttribute(i) && h.setAttribute(i, r[i]);
+          h.className = t.className, h.alt = m, h.src = E, o = !0, a.appendChild(h)
         }
-        h || a.appendChild(l(g, !1)), h = null
+        h || a.appendChild(l(m, !1)), h = null
       }
       o && (_ < c.length && a.appendChild(l(c.slice(_), !0)), s.parentNode.replaceChild(a, s))
     }
@@ -87,11 +87,11 @@ let r = function() {
     return t[e]
   }
 
-  function g() {
+  function m() {
     return null
   }
 
-  function m(e) {
+  function g(e) {
     return "number" == typeof e ? e + "x" + e : e
   }
 
@@ -105,10 +105,10 @@ let r = function() {
       callback: n
     }), ("string" == typeof t ? p : _)(t, {
       callback: n.callback || u,
-      attributes: "function" == typeof n.attributes ? n.attributes : g,
+      attributes: "function" == typeof n.attributes ? n.attributes : m,
       base: "string" == typeof n.base ? n.base : e.base,
       ext: n.ext || e.ext,
-      size: n.folder || m(n.size || e.size),
+      size: n.folder || g(n.size || e.size),
       className: n.className || e.className,
       onerror: n.onerror || e.onerror
     })

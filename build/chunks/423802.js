@@ -59,7 +59,7 @@ function c(e, t, n, r) {
       keyThreshold: r.threshold
     }
   }
-  return m(e, t).reduce(function(e, t, i) {
+  return g(e, t).reduce(function(e, t, i) {
     var o = e.rank,
       s = e.rankedValue,
       l = e.keyIndex,
@@ -69,9 +69,9 @@ function c(e, t, n, r) {
       _ = u(d, n, r),
       p = s,
       h = f.minRanking,
-      g = f.maxRanking,
-      m = f.threshold;
-    return _ < h && _ >= a.MATCHES ? _ = h : _ > g && (_ = g), _ > o && (o = _, l = i, c = m, p = d), {
+      m = f.maxRanking,
+      g = f.threshold;
+    return _ < h && _ >= a.MATCHES ? _ = h : _ > m && (_ = m), _ > o && (o = _, l = i, c = g, p = d), {
       rankedValue: p,
       rank: o,
       keyIndex: l,
@@ -141,13 +141,13 @@ function h(e, t) {
   else if (null == e) n = null;
   else if (Object.hasOwnProperty.call(e, t)) n = e[t];
   else {
-    if (t.includes(".")) return g(t, e);
+    if (t.includes(".")) return m(t, e);
     n = null
   }
   return null == n ? [] : Array.isArray(n) ? n : [String(n)]
 }
 
-function g(e, t) {
+function m(e, t) {
   for (var n = e.split("."), r = [t], i = 0, o = n.length; i < o; i++) {
     for (var a = n[i], s = [], l = 0, c = r.length; l < c; l++) {
       var u = r[l];
@@ -167,7 +167,7 @@ function g(e, t) {
   return r
 }
 
-function m(e, t) {
+function g(e, t) {
   for (var n = [], r = 0, i = t.length; r < i; r++)
     for (var o = t[r], a = v(o), s = h(e, o), l = 0, c = s.length; l < c; l++) n.push({
       itemValue: s[l],

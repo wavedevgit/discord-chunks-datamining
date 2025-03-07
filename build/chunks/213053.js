@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120);
 var r = n(192379),
   i = n(120356),
@@ -36,7 +36,7 @@ function p(e) {
   return e
 }
 let h = "custom-profile-theme",
-  g = Object.freeze({
+  m = Object.freeze({
     "--profile-gradient-primary-color": "var(--background-secondary-alt)",
     "--profile-gradient-secondary-color": "var(--background-secondary-alt)",
     "--profile-gradient-overlay-color": "rgba(0, 0, 0, 0)",
@@ -52,15 +52,15 @@ let h = "custom-profile-theme",
     "--profile-role-pill-border-color": "var(--interactive-normal)"
   });
 
-function m(e) {
+function g(e) {
   let {
     theme: t,
     primaryColor: n,
     secondaryColor: i
-  } = e, [_, m] = (0, s.Wu)([c.Z], () => [c.Z.desaturateUserColors, c.Z.syncProfileThemeWithUserTheme]), E = (0, f.fq)(t), v = (0, f.wu)(t, n, m), b = (0, f.lM)(t, n), y = (0, f.e4)(t, i), O = m ? null == E ? void 0 : E.overlaySyncedWithUserTheme : null == E ? void 0 : E.overlay;
+  } = e, [_, g] = (0, s.Wu)([c.Z], () => [c.Z.desaturateUserColors, c.Z.syncProfileThemeWithUserTheme]), E = (0, f.fq)(t), v = (0, f.wu)(t, n, g), b = (0, f.lM)(t, n), y = (0, f.e4)(t, i), O = g ? null == E ? void 0 : E.overlaySyncedWithUserTheme : null == E ? void 0 : E.overlay;
   return {
     profileThemeStyle: (0, r.useMemo)(() => {
-      if (null == n || null == i || null == E || null == v || null == b || null == y || null == O) return g;
+      if (null == n || null == i || null == E || null == v || null == b || null == y || null == O) return m;
       let e = (e, t) => (0, a.ho)(e, _, null, t);
       return p({
         "--profile-gradient-primary-color": e(n),

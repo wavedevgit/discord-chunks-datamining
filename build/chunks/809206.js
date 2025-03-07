@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  FD: () => m,
-  I5: () => S,
+  FD: () => g,
+  I5: () => I,
   KP: () => A,
   Mn: () => y,
-  P6: () => w,
-  Re: () => I,
+  P6: () => D,
+  Re: () => S,
   S2: () => b,
   UZ: () => T,
   V3: () => O,
-  W3: () => D,
+  W3: () => w,
   Zy: () => E,
   b9: () => R,
   cV: () => N,
@@ -40,7 +40,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +53,7 @@ function g(e) {
   return e
 }
 
-function m() {
+function g() {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_INIT"
   })
@@ -70,7 +70,7 @@ function v(e, t) {
     i = t ? f.ANM.DELETE_ACCOUNT : f.ANM.DISABLE_ACCOUNT,
     o = t => r.tn.post({
       url: i,
-      body: g({
+      body: m({
         password: e
       }, t),
       oldFormErrors: !0,
@@ -119,7 +119,7 @@ function y(e) {
     password: s,
     avatar: d,
     avatarDescription: h,
-    avatarId: m,
+    avatarId: g,
     avatarDecoration: E,
     newPassword: v,
     globalName: y,
@@ -128,14 +128,14 @@ function y(e) {
   return a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SUBMIT"
   }), (0, u.Z)(e => {
-    let a = g({
+    let a = m({
       username: t,
       email: r,
       email_token: o,
       password: s,
       avatar: d,
       avatar_description: h,
-      avatar_id: m,
+      avatar_id: g,
       discriminator: n,
       global_name: y,
       new_password: v
@@ -162,11 +162,11 @@ function y(e) {
     return l.default.track(f.rMx.USER_AVATAR_UPDATED, {
       animated: (0, c.xR)(t.avatar),
       is_guild_profile: !1,
-      recent_avatar_id: null != m ? Number(m) : void 0,
-      is_edited_recent_avatar: null != d && null != m
+      recent_avatar_id: null != g ? Number(g) : void 0,
+      is_edited_recent_avatar: null != d && null != g
     }), a.Z.dispatch({
       type: "USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS"
-    }), (null != d || null != m) && a.Z.dispatch({
+    }), (null != d || null != g) && a.Z.dispatch({
       type: "RECENT_AVATARS_UPDATE"
     }), e
   }, e => (a.Z.dispatch({
@@ -186,14 +186,14 @@ function O(e) {
   })
 }
 
-function S(e) {
+function I(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR",
     avatar: e
   }), null == e ? o.uv.announce(p.NW.string(p.t["f1+oNj"])) : o.uv.announce(p.NW.string(p.t.NstziY))
 }
 
-function I(e) {
+function S(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_V2",
     avatar: e
@@ -240,13 +240,13 @@ function P() {
   })
 }
 
-function D() {
+function w() {
   a.Z.dispatch({
     type: "USER_SETTINGS_RESET_ALL_PENDING"
   })
 }
 
-function w() {
+function D() {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM"
   })

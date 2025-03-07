@@ -49,7 +49,7 @@ var r, i, o = "https://js.stripe.com/v3",
       window.Stripe ? e(window.Stripe) : t(Error("Stripe.js not available"))
     }
   },
-  g = function(e) {
+  m = function(e) {
     return null !== d ? d : (d = new Promise(function(t, n) {
       if ("undefined" == typeof window || "undefined" == typeof document) {
         t(null);
@@ -70,7 +70,7 @@ var r, i, o = "https://js.stripe.com/v3",
       return d = null, Promise.reject(e)
     })
   },
-  m = function(e, t, n) {
+  g = function(e, t, n) {
     if (null === e) return null;
     var r = e.apply(void 0, t);
     return u(r, n), r
@@ -86,8 +86,8 @@ var r, i, o = "https://js.stripe.com/v3",
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
     v = !0;
     var r = Date.now();
-    return g(i).then(function(e) {
-      return m(e, t, r)
+    return m(i).then(function(e) {
+      return g(e, t, r)
     })
   };
 b.setLoadParameters = function(e) {

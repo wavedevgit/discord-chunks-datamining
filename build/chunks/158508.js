@@ -17,9 +17,9 @@ var i = n(442837),
   _ = n(981631),
   p = n(921944),
   h = n(388032),
-  g = n(705583);
+  m = n(705583);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -35,7 +35,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -69,11 +69,11 @@ function O(e) {
   let {
     user: t,
     guildId: l,
-    channelId: m,
+    channelId: g,
     onBlock: v,
     onIgnore: O,
-    onUnignore: S,
-    location: I = "ContextMenu",
+    onUnignore: I,
+    location: S = "ContextMenu",
     appContext: T = _.IlC.APP
   } = e, {
     id: N
@@ -88,16 +88,16 @@ function O(e) {
     isBlocked: d.Z.isBlocked(N)
   }), [N]), P = (0, u.D)({
     location: "use-block-user-item-web"
-  }), D = P ? [o.z.IGNORE_USER_NEW_BADGE] : [], [w, L] = (0, c.US)(D), x = w === o.z.IGNORE_USER_NEW_BADGE;
+  }), w = P ? [o.z.IGNORE_USER_NEW_BADGE] : [], [D, L] = (0, c.US)(w), x = D === o.z.IGNORE_USER_NEW_BADGE;
   return !P || A || R ? null : (0, r.jsx)(a.sNh, {
     id: "ignore",
     color: "default",
     label: C ? h.NW.string(h.t["8wXU9P"]) : (0, r.jsxs)("div", {
-      className: g.label,
+      className: m.label,
       children: [h.NW.string(h.t.ytCpKi), x ? (0, r.jsx)(y, {}) : null]
     }),
     action: C ? () => {
-      null == S || S(), s.Z.unignoreUser(N, null != I ? I : "use-ignore-user-item-web", null != m ? m : void 0)
+      null == I || I(), s.Z.unignoreUser(N, null != S ? S : "use-ignore-user-item-web", null != g ? g : void 0)
     } : () => {
       x && L(p.L.TAKE_ACTION), (0, a.ZDy)(async () => {
         let {
@@ -105,11 +105,11 @@ function O(e) {
         } = await Promise.all([n.e("97652"), n.e("89540")]).then(n.bind(n, 240515));
         return n => (0, r.jsx)(e, b(E({}, n), {
           guildId: l,
-          channelId: m,
+          channelId: g,
           user: t,
           onIgnore: O,
           onBlock: v,
-          location: I
+          location: S
         }))
       }, {
         contextKey: (0, a.VnL)(T)

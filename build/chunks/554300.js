@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -53,7 +53,7 @@ function p(e, t) {
 
 function h(e, t) {
   if (null == e) return {};
-  var n, r, i = g(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,27 +61,27 @@ function h(e, t) {
   return i
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = i.forwardRef(function(e, t) {
+let g = i.forwardRef(function(e, t) {
   var n, {
       avatar: o,
       name: d,
       nameplate: _,
-      children: g,
-      subText: m,
+      children: m,
+      subText: g,
       decorators: E,
       onClick: v,
       hovered: b,
       selected: y,
       muted: O,
-      to: S,
-      avatarClassName: I,
+      to: I,
+      avatarClassName: S,
       selectedClassName: T,
       innerClassName: N,
       wrapContent: A,
@@ -94,11 +94,11 @@ let m = i.forwardRef(function(e, t) {
     [u.highlighted]: C,
     [u.active]: y,
     [null != T ? T : ""]: y,
-    [u.clickable]: !y && (null != S || null != v),
+    [u.clickable]: !y && (null != I || null != v),
     [u.wrapperPlated]: null != _
   }), P["aria-selected"] = null !== (n = P["aria-selected"]) && void 0 !== n ? n : y;
-  let D = i.useRef(null),
-    w = (0, r.jsxs)("div", {
+  let w = i.useRef(null),
+    D = (0, r.jsxs)("div", {
       className: a()(u.childContainer, {
         [u.nameplated]: null != _
       }),
@@ -106,15 +106,15 @@ let m = i.forwardRef(function(e, t) {
         nameplate: _,
         hovered: b,
         selected: y,
-        content: D.current
+        content: w.current
       }), (0, r.jsxs)("div", {
-        ref: D,
+        ref: w,
         className: a()(N, u.layout, {
           [u.muted]: !y && O,
           [u.wrappedLayout]: A
         }),
         children: [(0, r.jsx)("div", {
-          className: a()(u.avatar, I),
+          className: a()(u.avatar, S),
           children: o
         }), (0, r.jsxs)("div", {
           className: u.content,
@@ -126,24 +126,24 @@ let m = i.forwardRef(function(e, t) {
               }),
               children: d
             }), E]
-          }), null != m ? (0, r.jsx)("div", {
+          }), null != g ? (0, r.jsx)("div", {
             className: u.subText,
-            children: m
+            children: g
           }) : null]
-        }), null != g ? (0, r.jsx)("div", {
+        }), null != m ? (0, r.jsx)("div", {
           className: u.children,
-          children: g
+          children: m
         }) : null]
       })]
     });
-  return null != S ? (0, r.jsx)(l.tEY, p(f({}, R), {
+  return null != I ? (0, r.jsx)(l.tEY, p(f({}, R), {
     children: (0, r.jsx)(s.rU, p(f({
-      to: S,
+      to: I,
       onClick: v
     }, P), {
       role: "listitem",
       ref: t,
-      children: w
+      children: D
     }))
   })) : null != v ? (0, r.jsx)(l.P3F, p(f({
     onClick: v,
@@ -151,12 +151,12 @@ let m = i.forwardRef(function(e, t) {
   }, P), {
     role: "listitem",
     innerRef: t,
-    children: w
+    children: D
   })) : (0, r.jsx)(l.tEY, p(f({}, R), {
     children: (0, r.jsx)("div", p(f({}, P), {
       role: "listitem",
       ref: t,
-      children: w
+      children: D
     }))
   }))
 })

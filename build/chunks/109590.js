@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  EB: () => S,
+  EB: () => I,
   cl: () => y
 }), n(47120);
 var r = n(392711),
@@ -26,7 +26,7 @@ function _(e, t, n) {
 }
 let p = 10,
   h = 5;
-class g {
+class m {
   get(e) {
     return this._set.hasOwnProperty(e) || (this._set[e] = this._defaultValueFunc()), this._set[e]
   }
@@ -43,7 +43,7 @@ class g {
     _(this, "_set", void 0), _(this, "_defaultValueFunc", void 0), this._set = {}, this._defaultValueFunc = e
   }
 }
-class m {
+class g {
   request(e, t) {
     this.requested.get(e).add(t)
   }
@@ -70,10 +70,10 @@ class m {
     0 === this.requested.get(e).size && this.requested.delete(e)
   }
   constructor() {
-    _(this, "requested", void 0), this.requested = new g(() => new Set)
+    _(this, "requested", void 0), this.requested = new m(() => new Set)
   }
 }
-let E = new m,
+let E = new g,
   v = null;
 
 function b(e, t) {
@@ -85,7 +85,7 @@ function y(e) {
     loaded: t,
     firstMessage: n
   } = (0, o.cj)([d.Z], () => d.Z.getMessage(e.id)), r = (0, o.e7)([l.Z], () => l.Z.getChannel(e.parent_id));
-  return null != r && b(t, n) && I(r, e.id), {
+  return null != r && b(t, n) && S(r, e.id), {
     loaded: t,
     firstMessage: n
   }
@@ -102,11 +102,11 @@ function O(e, t) {
   }), n && null == v && (v = setTimeout(T, 0))
 }
 
-function S(e) {
+function I(e) {
   O(e, (0, u.U)(e.id).slice(0, p))
 }
 
-function I(e, t) {
+function S(e, t) {
   if (E.hasRequested(e.id, t)) return;
   let n = (0, u.U)(e.id),
     r = n.findIndex(e => e === t),

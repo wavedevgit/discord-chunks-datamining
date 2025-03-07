@@ -136,7 +136,7 @@
       get: function() {
         return o.shimGetDisplayMedia
       }
-    }), n.shimMediaStream = c, n.shimOnTrack = u, n.shimGetSendersWithDtmf = d, n.shimGetStats = f, n.shimSenderReceiverGetStats = _, n.shimAddTrackRemoveTrackWithNative = p, n.shimAddTrackRemoveTrack = h, n.shimPeerConnection = g, n.fixNegotiationNeeded = m;
+    }), n.shimMediaStream = c, n.shimOnTrack = u, n.shimGetSendersWithDtmf = d, n.shimGetStats = f, n.shimSenderReceiverGetStats = _, n.shimAddTrackRemoveTrackWithNative = p, n.shimAddTrackRemoveTrack = h, n.shimPeerConnection = m, n.fixNegotiationNeeded = g;
     var a = s(e("../utils.js"));
 
     function s(e) {
@@ -535,7 +535,7 @@
       }
     }
 
-    function g(e) {
+    function m(e) {
       var t = a.detectBrowser(e);
       if (!e.RTCPeerConnection && e.webkitRTCPeerConnection && (e.RTCPeerConnection = e.webkitRTCPeerConnection), e.RTCPeerConnection) {
         var n = 0 === e.RTCPeerConnection.prototype.addIceCandidate.length;
@@ -553,7 +553,7 @@
       }
     }
 
-    function m(e) {
+    function g(e) {
       a.wrapPeerConnectionEvent(e, "negotiationneeded", function(e) {
         if ("stable" === e.target.signalingState) return e
       })
@@ -937,7 +937,7 @@
       get: function() {
         return o.shimGetDisplayMedia
       }
-    }), n.shimOnTrack = c, n.shimPeerConnection = u, n.shimSenderGetStats = d, n.shimReceiverGetStats = f, n.shimRemoveStream = _, n.shimRTCDataChannel = p, n.shimAddTransceiver = h, n.shimCreateOffer = g, n.shimCreateAnswer = m;
+    }), n.shimOnTrack = c, n.shimPeerConnection = u, n.shimSenderGetStats = d, n.shimReceiverGetStats = f, n.shimRemoveStream = _, n.shimRTCDataChannel = p, n.shimAddTransceiver = h, n.shimCreateOffer = m, n.shimCreateAnswer = g;
     var a = s(e("../utils"));
 
     function s(e) {
@@ -1087,7 +1087,7 @@
       }
     }
 
-    function g(e) {
+    function m(e) {
       if ((void 0 === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection) {
         var t = e.RTCPeerConnection.prototype.createOffer;
         e.RTCPeerConnection.prototype.createOffer = function() {
@@ -1102,7 +1102,7 @@
       }
     }
 
-    function m(e) {
+    function g(e) {
       if ((void 0 === e ? "undefined" : r(e)) === "object" && e.RTCPeerConnection) {
         var t = e.RTCPeerConnection.prototype.createAnswer;
         e.RTCPeerConnection.prototype.createAnswer = function() {
@@ -1401,7 +1401,7 @@
         writable: !0
       }) : e[t] = n, e
     }
-    n.extractVersion = s, n.wrapPeerConnectionEvent = l, n.disableLog = c, n.disableWarnings = u, n.log = d, n.deprecated = f, n.detectBrowser = _, n.compactObject = h, n.walkStats = g, n.filterStats = m;
+    n.extractVersion = s, n.wrapPeerConnectionEvent = l, n.disableLog = c, n.disableWarnings = u, n.log = d, n.deprecated = f, n.detectBrowser = _, n.compactObject = h, n.walkStats = m, n.filterStats = g;
     var o = !0,
       a = !0;
 
@@ -1478,15 +1478,15 @@
       }, {}) : e
     }
 
-    function g(e, t, n) {
+    function m(e, t, n) {
       !(!t || n.has(t.id)) && (n.set(t.id, t), Object.keys(t).forEach(function(r) {
-        r.endsWith("Id") ? g(e, e.get(t[r]), n) : r.endsWith("Ids") && t[r].forEach(function(t) {
-          g(e, e.get(t), n)
+        r.endsWith("Id") ? m(e, e.get(t[r]), n) : r.endsWith("Ids") && t[r].forEach(function(t) {
+          m(e, e.get(t), n)
         })
       }))
     }
 
-    function m(e, t, n) {
+    function g(e, t, n) {
       var r = n ? "outbound-rtp" : "inbound-rtp",
         i = new Map;
       if (null === t) return i;
@@ -1495,7 +1495,7 @@
         "track" === e.type && e.trackIdentifier === t.id && o.push(e)
       }), o.forEach(function(t) {
         e.forEach(function(n) {
-          n.type === r && n.trackId === t.id && g(e, n, i)
+          n.type === r && n.trackId === t.id && m(e, n, i)
         })
       }), i
     }

@@ -25,19 +25,19 @@ async function _(e) {
     componentId: _,
     commandOrigin: p,
     sectionName: h,
-    source: g,
-    onExecutedCallback: m,
+    source: m,
+    onExecutedCallback: g,
     referrerId: E,
     customId: v,
     inviterUserId: b
   } = e, y = (0, u.Z)(), O = i.default.getCurrentUser();
   if (null == t) return !1;
-  let S = await (0, c.Z)(t, a);
+  let I = await (0, c.Z)(t, a);
   return null == a ? (o.S.dispatch(d.CkL.SHOW_ACTIVITIES_CHANNEL_SELECTOR, {
     applicationId: t
-  }), !1) : null != r.Z.getChannel(a) && null != O && null != S && (s.tZ(S.id), await (0, l.G6)({
+  }), !1) : null != r.Z.getChannel(a) && null != O && null != I && (s.tZ(I.id), await (0, l.G6)({
     channelId: a,
-    applicationId: S.id,
+    applicationId: I.id,
     isStart: !0,
     embeddedActivitiesManager: y,
     componentId: _,
@@ -45,8 +45,8 @@ async function _(e) {
     sectionName: h,
     locationObject: n,
     analyticsLocations: f,
-    source: g,
-    onExecutedCallback: m,
+    source: m,
+    onExecutedCallback: g,
     referrerId: E,
     customId: v,
     instanceId: void 0,

@@ -15,9 +15,9 @@ var r, i = n(392711),
   _ = n(709054),
   p = n(710111),
   h = n(981631),
-  g = n(526761);
+  m = n(526761);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,16 +30,16 @@ let E = new Map,
   b = new Set,
   y = 0,
   O = 0,
-  S = new Set,
-  I = new Map,
+  I = new Set,
+  S = new Map,
   T = !1;
 
 function N() {
-  E.clear(), v.clear(), I.clear(), T = !1, O = 0, y = 0
+  E.clear(), v.clear(), S.clear(), T = !1, O = 0, y = 0
 }
 
 function A() {
-  v.clear(), I.clear()
+  v.clear(), S.clear()
 }
 
 function C() {
@@ -66,14 +66,14 @@ function P(e) {
   E.delete(t.id)
 }
 
-function D(e) {
+function w(e) {
   let {
     sound: t
   } = e, n = E.get(t.guildId), r = null == n ? void 0 : n.findIndex(e => e.soundId === t.soundId);
   null != n && null != r && -1 !== r ? (n[r] = t, E.set(t.guildId, [...n])) : null != n && (null == n || n.push(t), E.set(t.guildId, [...n]))
 }
 
-function w(e) {
+function D(e) {
   let {
     guildId: t,
     soundboardSounds: n
@@ -105,8 +105,8 @@ function k(e) {
   let {
     soundId: i,
     userId: o
-  } = e, a = (null !== (n = v.get(i)) && void 0 !== n ? n : 0) + 1, s = (null !== (r = I.get(o)) && void 0 !== r ? r : 0) + 1;
-  v.set(i, a), I.set(o, s), o !== (null === (t = u.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) && (T = !0)
+  } = e, a = (null !== (n = v.get(i)) && void 0 !== n ? n : 0) + 1, s = (null !== (r = S.get(o)) && void 0 !== r ? r : 0) + 1;
+  v.set(i, a), S.set(o, s), o !== (null === (t = u.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) && (T = !0)
 }
 
 function j(e) {
@@ -114,8 +114,8 @@ function j(e) {
   let {
     soundId: r,
     userId: i
-  } = e, o = (null !== (t = v.get(r)) && void 0 !== t ? t : 0) - 1, a = (null !== (n = I.get(i)) && void 0 !== n ? n : 0) - 1;
-  o <= 0 ? v.delete(r) : v.set(r, o), a <= 0 ? I.delete(i) : I.set(i, a)
+  } = e, o = (null !== (t = v.get(r)) && void 0 !== t ? t : 0) - 1, a = (null !== (n = S.get(i)) && void 0 !== n ? n : 0) - 1;
+  o <= 0 ? v.delete(r) : v.set(r, o), a <= 0 ? S.delete(i) : S.set(i, a)
 }
 let U = o().debounce(e => {
   d.default.track(h.rMx.UPDATE_SOUNDBOARD_SETTINGS, {
@@ -146,10 +146,10 @@ function V(e) {
     type: n,
     proto: r
   } = t;
-  if (n === g.yP.FRECENCY_AND_FAVORITES_SETTINGS) {
+  if (n === m.yP.FRECENCY_AND_FAVORITES_SETTINGS) {
     var i, o;
-    S = new Set(null !== (o = null == r ? void 0 : null === (i = r.favoriteSoundboardSounds) || void 0 === i ? void 0 : i.soundIds) && void 0 !== o ? o : [])
-  } else n === g.yP.PRELOADED_USER_SETTINGS && B(r)
+    I = new Set(null !== (o = null == r ? void 0 : null === (i = r.favoriteSoundboardSounds) || void 0 === i ? void 0 : i.soundIds) && void 0 !== o ? o : [])
+  } else n === m.yP.PRELOADED_USER_SETTINGS && B(r)
 }
 
 function F(e) {
@@ -163,7 +163,7 @@ function Z(e) {
   let {
     soundboardStoreState: t
   } = e;
-  E = new Map(_.default.entries(t.soundboardSounds)), S = new Set(t.favoritedSoundIds), b = new Set(t.localSoundboardMutes)
+  E = new Map(_.default.entries(t.soundboardSounds)), I = new Set(t.favoritedSoundIds), b = new Set(t.localSoundboardMutes)
 }
 class H extends(r = a.ZP.Store) {
   initialize() {
@@ -172,7 +172,7 @@ class H extends(r = a.ZP.Store) {
   getOverlaySerializedState() {
     return {
       soundboardSounds: Object.fromEntries(E),
-      favoritedSoundIds: Array.from(S),
+      favoritedSoundIds: Array.from(I),
       localSoundboardMutes: Array.from(b)
     }
   }
@@ -205,17 +205,17 @@ class H extends(r = a.ZP.Store) {
     return 2 === y
   }
   isUserPlayingSounds(e) {
-    let t = I.get(e);
+    let t = S.get(e);
     return null != t && t > 0
   }
   isPlayingSound(e) {
     return null != v.get(e)
   }
   isFavoriteSound(e) {
-    return S.has(e)
+    return I.has(e)
   }
   getFavorites() {
-    return S
+    return I
   }
   isLocalSoundboardMuted(e) {
     return b.has(e)
@@ -227,12 +227,12 @@ class H extends(r = a.ZP.Store) {
     return 2 === O && 2 === y
   }
 }
-m(H, "displayName", "SoundboardStore");
+g(H, "displayName", "SoundboardStore");
 let W = new H(s.Z, {
   LOGOUT: N,
   GUILD_SOUNDBOARD_FETCH: C,
-  GUILD_SOUNDBOARD_SOUND_CREATE: D,
-  GUILD_SOUNDBOARD_SOUND_UPDATE: D,
+  GUILD_SOUNDBOARD_SOUND_CREATE: w,
+  GUILD_SOUNDBOARD_SOUND_UPDATE: w,
   GUILD_SOUNDBOARD_SOUND_DELETE: L,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: k,
   GUILD_SOUNDBOARD_SOUND_PLAY_END: j,
@@ -245,5 +245,5 @@ let W = new H(s.Z, {
   GUILD_DELETE: P,
   AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: F,
   OVERLAY_INITIALIZE: Z,
-  GUILD_SOUNDBOARD_SOUNDS_UPDATE: w
+  GUILD_SOUNDBOARD_SOUNDS_UPDATE: D
 })

@@ -10,17 +10,17 @@ n.d(t, {
   XZ: () => a,
   Y_: () => d,
   cP: () => o,
-  f4: () => m,
+  f4: () => g,
   fy: () => E,
   gP: () => l,
   h1: () => u,
   ic: () => y,
   oX: () => r,
   rP: () => f,
-  u0: () => S,
+  u0: () => I,
   vY: () => i,
   vc: () => O,
-  yP: () => g
+  yP: () => m
 });
 let r = 250,
   i = 762880,
@@ -53,10 +53,10 @@ let h = {
   AppearanceScrollPositions: u,
   ContentAndSocialScrollPositions: p
 };
-var g = function(e) {
+var m = function(e) {
     return e[e.PRELOADED_USER_SETTINGS = 1] = "PRELOADED_USER_SETTINGS", e[e.FRECENCY_AND_FAVORITES_SETTINGS = 2] = "FRECENCY_AND_FAVORITES_SETTINGS", e[e.TEST_SETTINGS = 3] = "TEST_SETTINGS", e
   }({}),
-  m = function(e) {
+  g = function(e) {
     return e.USER_SETTINGS_PRIVACY_SAFETY = "user_settings_privacy_safety", e.SERVER_PRIVACY_MODAL = "server_privacy_modal", e
   }({}),
   E = function(e) {
@@ -93,6 +93,6 @@ let y = {
     UNREADS_ONLY_MENTIONS: 4096,
     UNREADS_ALL_MESSAGES: 2048
   };
-var S = function(e) {
+var I = function(e) {
   return e.USER = "user", e.STREAM = "stream", e
 }({})

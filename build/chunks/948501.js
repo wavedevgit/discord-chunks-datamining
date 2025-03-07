@@ -22,7 +22,7 @@ let r = n(889658),
   c = [new i(">=0.0.0-0")],
   u = [new i(">=0.0.0")],
   d = (e, t, n) => {
-    let r, i, l, d, p, h, g;
+    let r, i, l, d, p, h, m;
     if (e === t) return !0;
     if (1 === e.length && e[0].semver === o) {
       if (1 === t.length && t[0].semver === o) return !0;
@@ -32,10 +32,10 @@ let r = n(889658),
       if (n.includePrerelease) return !0;
       t = u
     }
-    let m = new Set;
-    for (let t of e) ">" === t.operator || ">=" === t.operator ? r = f(r, t, n) : "<" === t.operator || "<=" === t.operator ? i = _(i, t, n) : m.add(t.semver);
-    if (m.size > 1 || r && i && ((l = s(r.semver, i.semver, n)) > 0 || 0 === l && (">=" !== r.operator || "<=" !== i.operator))) return null;
-    for (let e of m) {
+    let g = new Set;
+    for (let t of e) ">" === t.operator || ">=" === t.operator ? r = f(r, t, n) : "<" === t.operator || "<=" === t.operator ? i = _(i, t, n) : g.add(t.semver);
+    if (g.size > 1 || r && i && ((l = s(r.semver, i.semver, n)) > 0 || 0 === l && (">=" !== r.operator || "<=" !== i.operator))) return null;
+    for (let e of g) {
       if (r && !a(e, String(r), n) || i && !a(e, String(i), n)) return null;
       for (let r of t)
         if (!a(e, String(r), n)) return !1;
@@ -44,7 +44,7 @@ let r = n(889658),
     let E = !!i && !n.includePrerelease && !!i.semver.prerelease.length && i.semver,
       v = !!r && !n.includePrerelease && !!r.semver.prerelease.length && r.semver;
     for (let e of (E && 1 === E.prerelease.length && "<" === i.operator && 0 === E.prerelease[0] && (E = !1), t)) {
-      if (g = g || ">" === e.operator || ">=" === e.operator, h = h || "<" === e.operator || "<=" === e.operator, r) {
+      if (m = m || ">" === e.operator || ">=" === e.operator, h = h || "<" === e.operator || "<=" === e.operator, r) {
         if (v && e.semver.prerelease && e.semver.prerelease.length && e.semver.major === v.major && e.semver.minor === v.minor && e.semver.patch === v.patch && (v = !1), ">" === e.operator || ">=" === e.operator) {
           if ((d = f(r, e, n)) === e && d !== r) return !1
         } else if (">=" === r.operator && !a(r.semver, String(e), n)) return !1
@@ -56,7 +56,7 @@ let r = n(889658),
       }
       if (!e.operator && (i || r) && 0 !== l) return !1
     }
-    return (!r || !h || !!i || 0 === l) && (!i || !g || !!r || 0 === l) && !v && !E && !0
+    return (!r || !h || !!i || 0 === l) && (!i || !m || !!r || 0 === l) && !v && !E && !0
   },
   f = (e, t, n) => {
     if (!e) return t;

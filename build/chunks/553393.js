@@ -16,23 +16,23 @@ var r = n(200651),
   _ = n(40851),
   p = n(607070),
   h = n(258609),
-  g = n(102172),
-  m = n(210887),
+  m = n(102172),
+  g = n(210887),
   E = n(592125),
   v = n(430824),
   b = n(496675),
   y = n(979651),
   O = n(617136),
-  S = n(113434),
-  I = n(497505),
+  I = n(113434),
+  S = n(497505),
   T = n(918701),
   N = n(475595),
   A = n(602667),
   C = n(644646),
   R = n(880199),
   P = n(667105),
-  D = n(341907),
-  w = n(46140),
+  w = n(341907),
+  D = n(46140),
   L = n(981631),
   x = n(231338),
   M = n(388032),
@@ -64,11 +64,11 @@ let G = "4px",
   V = 222;
 
 function F(e, t) {
-  return null != e && null != t && (0, g.p9)(t, y.Z, v.Z, b.Z, h.Z)[0]
+  return null != e && null != t && (0, m.p9)(t, y.Z, v.Z, b.Z, h.Z)[0]
 }
 
 function Z(e) {
-  var t, n, h, g, v;
+  var t, n, h, m, v;
   let {
     quest: b,
     memberListItemRef: y,
@@ -82,8 +82,8 @@ function Z(e) {
     return null !== (e = E.Z.getChannel(null == A ? void 0 : A.channelId)) && void 0 !== e ? e : null
   }), Y = (0, P.hf)({
     quest: b,
-    location: I.jn.MEMBERS_LIST
-  }), K = (0, S.tP)(b), z = (null == b ? void 0 : null === (t = b.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, q = (null == b ? void 0 : null === (n = b.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null, Q = (null == b ? void 0 : null === (h = b.userStatus) || void 0 === h ? void 0 : h.completedAt) != null, X = (0, s.e7)([m.Z], () => m.Z.getState().theme), J = (0, l.wj)(X) ? x.BR.DARK : x.BR.LIGHT, $ = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
+    location: S.jn.MEMBERS_LIST
+  }), K = (0, I.tP)(b), z = (null == b ? void 0 : null === (t = b.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, q = (null == b ? void 0 : null === (n = b.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null, Q = (null == b ? void 0 : null === (h = b.userStatus) || void 0 === h ? void 0 : h.completedAt) != null, X = (0, s.e7)([g.Z], () => g.Z.getState().theme), J = (0, l.wj)(X) ? x.BR.DARK : x.BR.LIGHT, $ = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
     ref: ee,
     height: et
   } = (0, f.Z)(), [en, er] = i.useState($), ei = (0, _.Aq)(), eo = (0, a.eg)();
@@ -133,22 +133,22 @@ function Z(e) {
   let eu = () => {
       (0, O._3)({
         questId: b.id,
-        questContent: I.jn.MEMBERS_LIST,
+        questContent: S.jn.MEMBERS_LIST,
         questContentCTA: O.jZ.OPEN_DISCLOSURE,
         trackGuildAndChannelMetadata: !0
-      }), (0, D.openDisclosureModal)(b, {
-        content: I.jn.MEMBERS_LIST,
+      }), (0, w.openDisclosureModal)(b, {
+        content: S.jn.MEMBERS_LIST,
         ctaContent: O.jZ.OPEN_DISCLOSURE
       })
     },
     ed = () => {
       (0, O._3)({
         questId: b.id,
-        questContent: I.jn.MEMBERS_LIST,
+        questContent: S.jn.MEMBERS_LIST,
         questContentCTA: O.jZ.LEARN_MORE,
         trackGuildAndChannelMetadata: !0
-      }), (0, D.navigateToQuestHome)({
-        fromContent: I.jn.MEMBERS_LIST,
+      }), (0, w.navigateToQuestHome)({
+        fromContent: S.jn.MEMBERS_LIST,
         questId: b.id
       })
     },
@@ -158,7 +158,7 @@ function Z(e) {
     e_ = () => {
       if (F(A, W) && null != W) return (0, O._3)({
         questId: b.id,
-        questContent: I.jn.MEMBERS_LIST,
+        questContent: S.jn.MEMBERS_LIST,
         questContentCTA: O.jZ.WATCH_STREAM,
         trackGuildAndChannelMetadata: !0
       }), u.default.selectVoiceChannel(W.id), (0, d.iV)(A);
@@ -194,7 +194,7 @@ function Z(e) {
     "aria-expanded": en,
     className: k.wrapper,
     style: {
-      width: null !== (v = null === (g = y.current) || void 0 === g ? void 0 : g.clientWidth) && void 0 !== v ? v : V,
+      width: null !== (v = null === (m = y.current) || void 0 === m ? void 0 : m.clientWidth) && void 0 !== v ? v : V,
       height: ea.height,
       overflow: en ? "visible" : "hidden",
       borderRadius: ec
@@ -251,9 +251,9 @@ function Z(e) {
             }), "reward" === ep.tileAssetType && (0, r.jsx)(C.Z, {
               className: k.assetTile,
               quest: b,
-              questContent: I.jn.MEMBERS_LIST,
+              questContent: S.jn.MEMBERS_LIST,
               learnMoreStyle: "icon",
-              location: w.dr.MEMBERS_LIST,
+              location: D.dr.MEMBERS_LIST,
               onClick: el
             })]
           })
@@ -273,7 +273,7 @@ function Z(e) {
 function H(e) {
   return null == e.quest ? null : (0, r.jsx)(A.A, {
     questOrQuests: e.quest,
-    questContent: I.jn.MEMBERS_LIST,
+    questContent: S.jn.MEMBERS_LIST,
     trackGuildAndChannelMetadata: !0,
     children: t => (0, r.jsx)(Z, U({
       impressionRef: t

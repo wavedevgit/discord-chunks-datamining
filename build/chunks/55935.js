@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Hg: () => S,
-  KC: () => g,
+  Hg: () => I,
+  KC: () => m,
   QX: () => N,
   TD: () => T,
   Xf: () => b,
   Y4: () => v,
-  _w: () => m,
+  _w: () => g,
   vc: () => E,
   wY: () => h
 });
@@ -38,11 +38,11 @@ function h(e, t) {
   return Math.floor((p(e, !1) - p(t, !1)) / f)
 }
 
-function g(e, t) {
+function m(e, t) {
   return Math.abs(+e - +t) <= f && e.getDate() === t.getDate()
 }
 
-function m(e, t, n) {
+function g(e, t, n) {
   return Math.abs(e.valueOf() - t.valueOf()) < n
 }
 
@@ -77,7 +77,7 @@ function O(e) {
   return i().isMoment(e) ? e.toDate() : e
 }
 
-function S(e) {
+function I(e) {
   let t;
   let n = i().localeData(),
     r = new Date,
@@ -87,7 +87,7 @@ function S(e) {
 s.default.addChangeListener(() => {
   _ = Object.create(null)
 });
-let I = [{
+let S = [{
   key: "days",
   millisecondsInUnit: 864e5
 }, {
@@ -111,7 +111,7 @@ function T(e, t) {
     };
   if (e > t || n && Number(e) + 1200 > Number(t)) return r;
   let i = Number(t) - Number(e);
-  return I.forEach(e => {
+  return S.forEach(e => {
     let {
       key: t,
       millisecondsInUnit: n

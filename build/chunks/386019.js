@@ -21,8 +21,8 @@ function d(e) {
     display: _,
     onSelect: p,
     onClose: h,
-    appContext: g
-  } = e, [m, E] = i.useState(!1), {
+    appContext: m
+  } = e, [g, E] = i.useState(!1), {
     analyticsLocations: v
   } = (0, s.ZP)(a.Z.USER_PROFILE_ACTIVITY_CONTEXT_MENU), b = (0, l.Z)({
     display: _,
@@ -37,8 +37,8 @@ function d(e) {
     display: _,
     onClose: h,
     onAction: b,
-    isMenuOpen: m,
-    appContext: g
+    isMenuOpen: g,
+    appContext: m
   });
   return 0 === y.length || n.bot ? null : (0, r.jsx)(o.yRy, {
     align: "top",

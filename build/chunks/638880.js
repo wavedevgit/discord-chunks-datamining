@@ -16,36 +16,36 @@ var r = n(115911),
   _ = n(672181),
   p = n(882347),
   h = n(16609),
-  g = n(224189),
-  m = n(574952),
+  m = n(224189),
+  g = n(574952),
   E = n(917107),
   v = n(89425),
   b = n(197386),
   y = n(701488);
 
 function O(e) {
-  return (0, c.C)(() => S(e))
+  return (0, c.C)(() => I(e))
 }
-async function S(e) {
+async function I(e) {
   let t, {
       applicationId: n,
       activityChannelId: c,
       locationObject: O,
-      analyticsLocations: S,
-      componentId: I,
+      analyticsLocations: I,
+      componentId: S,
       sectionName: T,
       source: N,
       partyId: A,
       joinUserId: C,
       joinSessionId: R,
       secret: P,
-      inviterUserId: D,
-      instanceId: w,
+      inviterUserId: w,
+      instanceId: D,
       isContextlessActivity: L,
       customId: x,
       referrerId: M
     } = e,
-    k = (0, m.Z)(),
+    k = (0, g.Z)(),
     j = o.Z.getChannel(c),
     U = null == j ? void 0 : j.getGuildId(),
     G = null == U || "" === U,
@@ -56,7 +56,7 @@ async function S(e) {
   (null == V ? void 0 : V.applicationId) != null && (t = i.Z.getApplication(null == V ? void 0 : V.applicationId));
   let F = (null == V ? void 0 : V.location.kind) === r.X.CONTEXTLESS;
   if ((F || a.Z.getVoiceChannelId() === c) && null != V && V.applicationId === n && (F || (0, h.pY)(V.location) === a.Z.getVoiceChannelId())) return (0, b.Z)(U, V.location), Promise.resolve(!0);
-  let Z = await (0, g.Z)(n, c),
+  let Z = await (0, m.Z)(n, c),
     H = (0, u.Kb)(Z);
   if (L && (H ? c = void 0 : L = !1), !await (0, p.p)({
       applicationId: n,
@@ -81,19 +81,19 @@ async function S(e) {
     applicationId: n,
     isStart: !1,
     embeddedActivitiesManager: k,
-    analyticsLocations: S,
+    analyticsLocations: I,
     locationObject: O,
-    componentId: I,
+    componentId: S,
     sectionName: T,
     source: N,
     partyId: A,
     joinUserId: C,
     joinSessionId: R,
     secret: P,
-    inviterUserId: D,
+    inviterUserId: w,
     isContextlessActivity: L,
     customId: x,
-    instanceId: w,
+    instanceId: D,
     referrerId: M
   })
 }

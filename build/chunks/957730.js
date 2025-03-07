@@ -16,15 +16,15 @@ var r = n(392711),
   _ = n(467798),
   p = n(601070),
   h = n(695346),
-  g = n(592125),
-  m = n(984933),
+  m = n(592125),
+  g = n(984933),
   E = n(271383),
   v = n(430824),
   b = n(496675),
   y = n(699516),
   O = n(246946),
-  S = n(594174),
-  I = n(483360),
+  I = n(594174),
+  S = n(483360),
   T = n(176354),
   N = n(51144),
   A = n(981631),
@@ -40,7 +40,7 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +53,7 @@ function D(e) {
   return e
 }
 
-function w(e, t) {
+function D(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,7 +65,7 @@ function w(e, t) {
 }
 
 function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -173,7 +173,7 @@ let U = u.Z.RULES,
         if (/^[^ ]+@[^ ]+\.[^ .]+/.test(r)) return null;
         let i = x("@", e, t.users, "mention");
         if (i || (i = x("@", e, t.mentionableRoles, "roleMention"))) return i;
-        if (!(i = x("@", e, t.users.map(e => L(D({}, e), {
+        if (!(i = x("@", e, t.users.map(e => L(w({}, e), {
             text: e.text.split("#")[0]
           })), "mention"))) return null;
         let o = H.exec(e);
@@ -251,7 +251,7 @@ let U = u.Z.RULES,
         }
       }
     },
-    text: L(D({}, G), {
+    text: L(w({}, G), {
       match: (e, t) => "string" == typeof t.textExclusions && "" !== t.textExclusions ? (0, d.T9)(t.textExclusions).exec(e) : null != G.match ? G.match(e, t, "") : null
     })
   },
@@ -263,7 +263,7 @@ let U = u.Z.RULES,
       parse(e, t, n) {
         let {
           isNotification: r
-        } = n, i = S.default.getUser(e[1]);
+        } = n, i = I.default.getUser(e[1]);
         if (null == i) return {
           content: e[0]
         };
@@ -301,9 +301,9 @@ let U = u.Z.RULES,
     channel: {
       match: a().anyScopeRegex(F),
       parse(e) {
-        let t = g.Z.getChannel(e[1]);
+        let t = m.Z.getChannel(e[1]);
         return {
-          content: null == t ? e[0] : (0, s.F6)(t, S.default, y.Z, !0, !0)
+          content: null == t ? e[0] : (0, s.F6)(t, I.default, y.Z, !0, !0)
         }
       }
     },
@@ -339,7 +339,7 @@ let U = u.Z.RULES,
         content: "<id:".concat(e[1], ">")
       })
     },
-    timestamp: L(D({}, U.timestamp), {
+    timestamp: L(w({}, U.timestamp), {
       parse() {
         for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
         let r = U.timestamp.parse(...t);
@@ -350,7 +350,7 @@ let U = u.Z.RULES,
         }
       }
     }),
-    text: D({}, G)
+    text: w({}, G)
   };
 [W, Y].forEach(e => {
   Object.keys(e).forEach((t, n) => {
@@ -414,7 +414,7 @@ function J(e) {
   let a = i()(t.reduce((e, t) => {
       let {
         userId: n
-      } = t, r = S.default.getUser(n);
+      } = t, r = I.default.getUser(n);
       return null == r || e.push({
         id: n,
         text: r.tag
@@ -435,7 +435,7 @@ function J(e) {
         text: n
       }
     }),
-    c = i()(m.ZP.getTextChannelNameDisambiguations(n)).map(e => {
+    c = i()(g.ZP.getTextChannelNameDisambiguations(n)).map(e => {
       let {
         id: t,
         name: n
@@ -445,7 +445,7 @@ function J(e) {
         text: n
       }
     }),
-    u = null != n ? i()(I.k1).filter(e => e !== m.sH).flatMap(e => m.ZP.getChannels(n)[e].map(e => ({
+    u = null != n ? i()(S.k1).filter(e => e !== g.sH).flatMap(e => g.ZP.getChannels(n)[e].map(e => ({
       id: e.channel.id,
       text: e.channel.name
     }))).value() : [],
@@ -456,7 +456,7 @@ function J(e) {
     f = l.ZP.getDisambiguatedEmojiContext(n),
     _ = f.getEscapedCustomEmoticonNames(),
     h = f.getCustomEmoji(),
-    g = f.getCustomEmoticonRegex();
+    m = f.getCustomEmoticonRegex();
   return {
     inline: !0,
     mentionableRoles: s,
@@ -464,7 +464,7 @@ function J(e) {
     users: a,
     channels: c.concat(u).concat(d),
     emojiContext: f,
-    customEmoticonsRegex: g,
+    customEmoticonsRegex: m,
     customEmoji: h,
     textExclusions: _,
     disableErrorGuards: !0
@@ -494,7 +494,7 @@ let ee = {
   },
   parsePreprocessor: (e, t) => K(t, J(e)),
   unparse(e, t, n) {
-    let r = g.Z.getChannel(t),
+    let r = m.Z.getChannel(t),
       o = null != r ? r.getGuildId() : null,
       s = null != o ? v.Z.getGuild(o) : null,
       l = n ? Y : i().omit(Y, ["spoiler", "timestamp"]),

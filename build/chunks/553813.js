@@ -22,9 +22,9 @@ var p = "$1^";
 f("CARET"), c[u.CARET] = "^" + c[u.LONECARET] + c[u.XRANGEPLAIN] + "$", f("CARETLOOSE"), c[u.CARETLOOSE] = "^" + c[u.LONECARET] + c[u.XRANGEPLAINLOOSE] + "$", f("COMPARATORLOOSE"), c[u.COMPARATORLOOSE] = "^" + c[u.GTLT] + "\\s*(" + c[u.LOOSEPLAIN] + ")$|^$", f("COMPARATOR"), c[u.COMPARATOR] = "^" + c[u.GTLT] + "\\s*(" + c[u.FULLPLAIN] + ")$|^$", f("COMPARATORTRIM"), c[u.COMPARATORTRIM] = "(\\s*)" + c[u.GTLT] + "\\s*(" + c[u.LOOSEPLAIN] + "|" + c[u.XRANGEPLAIN] + ")", l[u.COMPARATORTRIM] = RegExp(c[u.COMPARATORTRIM], "g");
 var h = "$1$2$3";
 f("HYPHENRANGE"), c[u.HYPHENRANGE] = "^\\s*(" + c[u.XRANGEPLAIN] + ")\\s+-\\s+(" + c[u.XRANGEPLAIN] + ")\\s*$", f("HYPHENRANGELOOSE"), c[u.HYPHENRANGELOOSE] = "^\\s*(" + c[u.XRANGEPLAINLOOSE] + ")\\s+-\\s+(" + c[u.XRANGEPLAINLOOSE] + ")\\s*$", f("STAR"), c[u.STAR] = "(<|>)?=?\\s*\\*";
-for (var g = 0; g < d; g++) r(g, c[g]), l[g] || (l[g] = new RegExp(c[g]));
+for (var m = 0; m < d; m++) r(m, c[m]), l[m] || (l[m] = new RegExp(c[m]));
 
-function m(e, t) {
+function g(e, t) {
   if (t && "object" == typeof t || (t = {
       loose: !!t,
       includePrerelease: !1
@@ -38,12 +38,12 @@ function m(e, t) {
 }
 
 function E(e, t) {
-  var n = m(e, t);
+  var n = g(e, t);
   return n ? n.version : null
 }
 
 function v(e, t) {
-  var n = m(e.trim().replace(/^[=v]+/, ""), t);
+  var n = g(e.trim().replace(/^[=v]+/, ""), t);
   return n ? n.version : null
 }
 
@@ -83,8 +83,8 @@ function y(e, t, n, r) {
 
 function O(e, t) {
   if (j(e, t)) return null;
-  var n = m(e),
-    r = m(t),
+  var n = g(e),
+    r = g(t),
     i = "";
   if (n.prerelease.length || r.prerelease.length) {
     i = "pre";
@@ -94,14 +94,14 @@ function O(e, t) {
     if (("major" === a || "minor" === a || "patch" === a) && n[a] !== r[a]) return i + a;
   return o
 }
-t.parse = m, t.valid = E, t.clean = v, t.SemVer = b, b.prototype.format = function() {
+t.parse = g, t.valid = E, t.clean = v, t.SemVer = b, b.prototype.format = function() {
   return this.version = this.major + "." + this.minor + "." + this.patch, this.prerelease.length && (this.version += "-" + this.prerelease.join(".")), this.version
 }, b.prototype.toString = function() {
   return this.version
 }, b.prototype.compare = function(e) {
   return r("SemVer.compare", this.version, this.options, e), e instanceof b || (e = new b(e, this.options)), this.compareMain(e) || this.comparePre(e)
 }, b.prototype.compareMain = function(e) {
-  return e instanceof b || (e = new b(e, this.options)), I(this.major, e.major) || I(this.minor, e.minor) || I(this.patch, e.patch)
+  return e instanceof b || (e = new b(e, this.options)), S(this.major, e.major) || S(this.minor, e.minor) || S(this.patch, e.patch)
 }, b.prototype.comparePre = function(e) {
   if (e instanceof b || (e = new b(e, this.options)), this.prerelease.length && !e.prerelease.length) return -1;
   if (!this.prerelease.length && e.prerelease.length) return 1;
@@ -114,7 +114,7 @@ t.parse = m, t.valid = E, t.clean = v, t.SemVer = b, b.prototype.format = functi
     if (void 0 === i) return 1;
     if (void 0 === n) return -1;
     else if (n === i) continue;
-    else return I(n, i)
+    else return S(n, i)
   } while (++t)
 }, b.prototype.compareBuild = function(e) {
   e instanceof b || (e = new b(e, this.options));
@@ -126,7 +126,7 @@ t.parse = m, t.valid = E, t.clean = v, t.SemVer = b, b.prototype.format = functi
     if (void 0 === i) return 1;
     if (void 0 === n) return -1;
     else if (n === i) continue;
-    else return I(n, i)
+    else return S(n, i)
   } while (++t)
 }, b.prototype.inc = function(e, t) {
   switch (e) {
@@ -162,17 +162,17 @@ t.parse = m, t.valid = E, t.clean = v, t.SemVer = b, b.prototype.format = functi
       throw Error("invalid increment argument: " + e)
   }
   return this.format(), this.raw = this.version, this
-}, t.inc = y, t.diff = O, t.compareIdentifiers = I;
-var S = /^[0-9]+$/;
+}, t.inc = y, t.diff = O, t.compareIdentifiers = S;
+var I = /^[0-9]+$/;
 
-function I(e, t) {
-  var n = S.test(e),
-    r = S.test(t);
+function S(e, t) {
+  var n = I.test(e),
+    r = I.test(t);
   return n && r && (e *= 1, t *= 1), e === t ? 0 : n && !r ? -1 : r && !n ? 1 : e < t ? -1 : 1
 }
 
 function T(e, t) {
-  return I(t, e)
+  return S(t, e)
 }
 
 function N(e, t) {
@@ -195,13 +195,13 @@ function P(e, t) {
   return R(e, t, !0)
 }
 
-function D(e, t, n) {
+function w(e, t, n) {
   var r = new b(e, n),
     i = new b(t, n);
   return r.compare(i) || r.compareBuild(i)
 }
 
-function w(e, t, n) {
+function D(e, t, n) {
   return R(t, e, n)
 }
 
@@ -277,7 +277,7 @@ function F(e, t) {
   if (!(this instanceof F)) return new F(e, t);
   r("comparator", e, t), this.options = t, this.loose = !!t.loose, this.parse(e), this.semver === Z ? this.value = "" : this.value = this.operator + this.semver.version, r("comp", this)
 }
-t.rcompareIdentifiers = T, t.major = N, t.minor = A, t.patch = C, t.compare = R, t.compareLoose = P, t.compareBuild = D, t.rcompare = w, t.sort = L, t.rsort = x, t.gt = M, t.lt = k, t.eq = j, t.neq = U, t.gte = G, t.lte = B, t.cmp = V, t.Comparator = F;
+t.rcompareIdentifiers = T, t.major = N, t.minor = A, t.patch = C, t.compare = R, t.compareLoose = P, t.compareBuild = w, t.rcompare = D, t.sort = L, t.rsort = x, t.gt = M, t.lt = k, t.eq = j, t.neq = U, t.gte = G, t.lte = B, t.cmp = V, t.Comparator = F;
 var Z = {};
 
 function H(e, t) {
@@ -486,7 +486,7 @@ function ed(e, t, n, r) {
 }
 
 function ef(e, t) {
-  var n = m(e, t);
+  var n = g(e, t);
   return n && n.prerelease.length ? n.prerelease : null
 }
 
@@ -503,7 +503,7 @@ function ep(e, t) {
       (n = l[u.COERCERTL].exec(e)) && (!r || r.index + r[0].length !== e.length);) r && n.index + n[0].length === r.index + r[0].length || (r = n), l[u.COERCERTL].lastIndex = n.index + n[1].length + n[2].length;
     l[u.COERCERTL].lastIndex = -1
   } else r = e.match(l[u.COERCE]);
-  return null === r ? null : m(r[2] + "." + (r[3] || "0") + "." + (r[4] || "0"), t)
+  return null === r ? null : g(r[2] + "." + (r[3] || "0") + "." + (r[4] || "0"), t)
 }
 F.prototype.parse = function(e) {
   var t = this.options.loose ? l[u.COMPARATORLOOSE] : l[u.COMPARATOR],

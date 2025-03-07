@@ -16,9 +16,9 @@ let u = /(?:^|\.)(?:discordapp|discord|discordmerch)\.com$/i,
   _ = i().v4().source,
   p = "(?:[a-z\\u00a1-\\uffff0-9-_]+\\.)+",
   h = "(?:(?:[a-z\\u00a1-\\uffff]{2,}))",
-  g = "(?::\\d{2,5})?",
-  m = '(?:[/?#][^\\s"]*)?',
-  E = RegExp("(?:".concat(d, "|www\\.)").concat(f, "(?:localhost|").concat(_, "|").concat(p).concat(h, ")").concat(g).concat(m), "ig"),
+  m = "(?::\\d{2,5})?",
+  g = '(?:[/?#][^\\s"]*)?',
+  E = RegExp("(?:".concat(d, "|www\\.)").concat(f, "(?:localhost|").concat(_, "|").concat(p).concat(h, ")").concat(m).concat(g), "ig"),
   v = new Set([window.GLOBAL_ENV.CDN_HOST, window.GLOBAL_ENV.INVITE_HOST, window.GLOBAL_ENV.GIFT_CODE_HOST, window.GLOBAL_ENV.GUILD_TEMPLATE_HOST]),
   b = !1;
 
@@ -31,11 +31,11 @@ function O(e) {
   return null != e && (u.test(e) || t && y(e))
 }
 
-function S(e) {
+function I(e) {
   return null != e && "discord:" === e
 }
 
-function I(e) {
+function S(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
   if (null != e) {
     var n;
@@ -46,7 +46,7 @@ function I(e) {
 }
 
 function T(e) {
-  return null != e && S(s.parse(e).protocol)
+  return null != e && I(s.parse(e).protocol)
 }
 let N = {
   URL_REGEX: E,
@@ -54,13 +54,13 @@ let N = {
   isDiscordLocalhost: function(e, t) {
     return null != e && null != t && window.location.host === e
   },
-  isDiscordProtocol: S,
-  isDiscordUrl: I,
+  isDiscordProtocol: I,
+  isDiscordUrl: S,
   isDiscordUri: T,
   isDiscordCdnUrl: function(e) {
     return null != e && s.parse(e).hostname === window.GLOBAL_ENV.CDN_HOST
   },
-  isDiscordUrlOrUri: e => I(e) || T(e),
+  isDiscordUrlOrUri: e => S(e) || T(e),
   isAppRoute: e => {
     let t = e.toLowerCase();
     return t.startsWith("/channels/") || t.startsWith(c.Z5c.APPLICATION_STORE) || t.startsWith(c.Z5c.APPLICATION_LIBRARY) || t.startsWith(c.Z5c.MESSAGE_REQUESTS) || t.startsWith(c.Z5c.FAMILY_CENTER) || t.startsWith(c.Z5c.ACTIVITIES) || t.startsWith(c.Z5c.COLLECTIBLES_SHOP) || t.startsWith(c.Z5c.ACTIVITY)

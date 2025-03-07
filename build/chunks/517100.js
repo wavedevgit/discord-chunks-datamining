@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => w
+  Z: () => D
 });
 var r, i = n(442837),
   o = n(570140),
@@ -23,8 +23,8 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let h = Date.now(),
-  g = !1,
   m = !1,
+  g = !1,
   E = !1,
   v = !1,
   b = !1;
@@ -34,34 +34,34 @@ function y() {
 }
 
 function O() {
-  Date.now() - h > Math.min(l.CM.getSetting() * c.Z.Millis.SECOND, f.OSm) || y() ? m || o.Z.dispatch({
+  Date.now() - h > Math.min(l.CM.getSetting() * c.Z.Millis.SECOND, f.OSm) || y() ? g || o.Z.dispatch({
     type: "AFK",
     afk: !0
-  }) : m && o.Z.dispatch({
+  }) : g && o.Z.dispatch({
     type: "AFK",
     afk: !1
   })
 }
 
-function S() {
-  Date.now() - h > f.OSm || y() ? g || o.Z.dispatch({
+function I() {
+  Date.now() - h > f.OSm || y() ? m || o.Z.dispatch({
     type: "IDLE",
     idle: !0,
     idleSince: h
-  }) : g && o.Z.dispatch({
+  }) : m && o.Z.dispatch({
     type: "IDLE",
     idle: !1
   })
 }
 
-function I() {
-  S(), O()
+function S() {
+  I(), O()
 }
 
 function T() {
   var e;
   let t = e => {
-    h = Math.max(Date.now() - e, h), I(), setTimeout(T, 10 * c.Z.Millis.SECOND)
+    h = Math.max(Date.now() - e, h), S(), setTimeout(T, 10 * c.Z.Millis.SECOND)
   };
   if ((null === s.Z || void 0 === s.Z ? void 0 : null === (e = s.Z.remotePowerMonitor) || void 0 === e ? void 0 : e.getSystemIdleTimeMs) != null) {
     let e = s.Z.remotePowerMonitor.getSystemIdleTimeMs();
@@ -70,11 +70,11 @@ function T() {
 }
 
 function N(e) {
-  g = e.idle
+  m = e.idle
 }
 
 function A(e) {
-  m = e.afk
+  g = e.afk
 }
 
 function C(e) {
@@ -89,7 +89,7 @@ function R(e) {
   let {
     state: t
   } = e;
-  return b = t === f.$7l.BACKGROUND, h = Date.now(), I(), !1
+  return b = t === f.$7l.BACKGROUND, h = Date.now(), S(), !1
 }
 
 function P(e) {
@@ -100,7 +100,7 @@ function P(e) {
   return (!r || !(t <= h)) && (h = r ? t : Date.now(), __OVERLAY__ ? o.Z.dispatch({
     type: "OVERLAY_SET_NOT_IDLE",
     timestamp: h
-  }) : I(), !1)
+  }) : S(), !1)
 }
 __OVERLAY__ || (u.isPlatformEmbedded && (null === s.Z || void 0 === s.Z ? void 0 : s.Z.remotePowerMonitor) != null ? (T(), s.Z.remotePowerMonitor.on("resume", () => {
   E = !1, P({})
@@ -110,20 +110,20 @@ __OVERLAY__ || (u.isPlatformEmbedded && (null === s.Z || void 0 === s.Z ? void 0
   v = !0, P({})
 }), s.Z.remotePowerMonitor.on("unlock-screen", () => {
   v = !1, P({})
-})) : setInterval(I, .25 * f.OSm));
-class D extends(r = i.ZP.Store) {
+})) : setInterval(S, .25 * f.OSm));
+class w extends(r = i.ZP.Store) {
   isIdle() {
-    return g
-  }
-  isAFK() {
     return m
   }
+  isAFK() {
+    return g
+  }
   getIdleSince() {
-    return g ? h : null
+    return m ? h : null
   }
 }
-p(D, "displayName", "IdleStore");
-let w = new D(o.Z, {
+p(w, "displayName", "IdleStore");
+let D = new w(o.Z, {
   IDLE: N,
   AFK: A,
   SPEAKING: C,

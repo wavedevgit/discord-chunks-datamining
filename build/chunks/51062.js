@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => I
 }), n(47120);
 var r = n(192379),
   i = n(931609),
@@ -16,8 +16,8 @@ var r = n(192379),
   _ = n(594174),
   p = n(106824),
   h = n(691841),
-  g = n(981631),
-  m = n(377668),
+  m = n(981631),
+  g = n(377668),
   E = n(185923);
 
 function v(e, t, n) {
@@ -59,15 +59,15 @@ function O(e, t) {
   }), e
 }
 
-function S(e, t, n) {
-  var v, y, S, I, T, N, A;
+function I(e, t, n) {
+  var v, y, I, S, T, N, A;
   let {
     channel: C,
     type: R
-  } = e, [P, D] = r.useState(() => (0, p.P)()), w = (0, i.Z)(), L = (0, o.e7)([u.ZP], () => {
+  } = e, [P, w] = r.useState(() => (0, p.P)()), D = (0, i.Z)(), L = (0, o.e7)([u.ZP], () => {
     if (null != e.guild) {
       var t;
-      return null != u.ZP.getMember(null === (t = e.guild) || void 0 === t ? void 0 : t.id, m.fL)
+      return null != u.ZP.getMember(null === (t = e.guild) || void 0 === t ? void 0 : t.id, g.fL)
     }
     return !1
   }), x = (0, c.Ib)(e.guild, e.channel) && !L && !(0, c.g0)(e.guild), M = (0, o.e7)([u.ZP, _.default], () => {
@@ -78,7 +78,7 @@ function S(e, t, n) {
     canMentionEveryone: k,
     hidePersonalInformation: j
   } = (0, o.cj)([d.Z, f.Z], () => ({
-    canMentionEveryone: C.isPrivate() || M || R === l.Ie.RULES_INPUT || d.Z.can(g.Plq.MENTION_EVERYONE, C),
+    canMentionEveryone: C.isPrivate() || M || R === l.Ie.RULES_INPUT || d.Z.can(m.Plq.MENTION_EVERYONE, C),
     hidePersonalInformation: f.Z.hidePersonalInformation
   }), [C, R, M]), {
     activeCommand: U,
@@ -104,17 +104,17 @@ function S(e, t, n) {
     currentWord: null !== (N = null == V ? void 0 : V.word) && void 0 !== N ? N : "",
     currentWordIsAtStart: (null == V ? void 0 : V.isAtStart) === !0,
     optionText: null != G ? (0, a.KF)({
-      [G.name]: null !== (A = null === (S = e.editorRef.current) || void 0 === S ? void 0 : S.getCurrentCommandOptionValue()) && void 0 !== A ? A : []
+      [G.name]: null !== (A = null === (I = e.editorRef.current) || void 0 === I ? void 0 : I.getCurrentCommandOptionValue()) && void 0 !== A ? A : []
     }, G.name) : ""
   }), [Z] = r.useState(() => new p.Z(F));
   return r.useEffect(() => {
     Z.updateProps(F)
   }), r.useImperativeHandle(t, () => Z, [Z]), r.useEffect(() => {
-    let e = e => D(e);
-    return Z.on("change", e), Z.on("update", w), () => {
-      Z.off("change", e), Z.off("update", w)
+    let e = e => w(e);
+    return Z.on("change", e), Z.on("update", D), () => {
+      Z.off("change", e), Z.off("update", D)
     }
-  }, [w, Z]), r.useEffect(() => {
+  }, [D, Z]), r.useEffect(() => {
     var e;
     let t = null === (e = P.query) || void 0 === e ? void 0 : e.typeInfo.stores;
     if (null != t) {
@@ -124,5 +124,5 @@ function S(e, t, n) {
         for (let n of t) n.removeChangeListener(e)
       }
     }
-  }, [Z, null === (I = P.query) || void 0 === I ? void 0 : I.typeInfo]), [P, Z, B]
+  }, [Z, null === (S = P.query) || void 0 === S ? void 0 : S.typeInfo]), [P, Z, B]
 }

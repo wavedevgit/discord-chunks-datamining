@@ -35,8 +35,8 @@ let d = i.forwardRef(function(e, t) {
       title: _,
       icon: p,
       disabled: h,
-      htmlFor: g,
-      tag: m = "h5"
+      htmlFor: m,
+      tag: g = "h5"
     } = e,
     E = c(e, ["children", "className", "titleClassName", "title", "icon", "disabled", "htmlFor", "tag"]);
   let v = i.useId(),
@@ -48,9 +48,9 @@ let d = i.forwardRef(function(e, t) {
       component: (0, r.jsxs)("div", {
         className: l.sectionTitle,
         children: [p, null != _ ? (0, r.jsx)(s.v, {
-          tag: m,
+          tag: g,
           id: b,
-          htmlFor: g,
+          htmlFor: m,
           disabled: h,
           className: f,
           children: _

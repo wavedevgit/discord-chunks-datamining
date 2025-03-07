@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  T: () => S
+  T: () => I
 });
 var r = n(313694);
 
@@ -52,14 +52,14 @@ var f = new WeakMap,
   _ = new WeakMap,
   p = new WeakMap,
   h = new WeakMap,
-  g = new WeakMap,
   m = new WeakMap,
+  g = new WeakMap,
   E = new WeakMap,
   v = new WeakMap,
   b = new WeakMap,
   y = new WeakMap,
   O = new WeakMap;
-class S {
+class I {
   constructor(e, t, n) {
     if (i(this, f, {
         writable: !0,
@@ -73,10 +73,10 @@ class S {
       }), i(this, h, {
         writable: !0,
         value: void 0
-      }), i(this, g, {
+      }), i(this, m, {
         writable: !0,
         value: void 0
-      }), i(this, m, {
+      }), i(this, g, {
         writable: !0,
         value: (e, t, n) => {
           var r, i;
@@ -97,11 +97,11 @@ class S {
         }
       }), a(this, "setup", () => {
         if ("undefined" != typeof window) {
-          if (S.isSetUp) throw Error("Cannot have two MultiBackends at the same time.");
-          S.isSetUp = !0, s(this, E).call(this, window), s(this, p)[s(this, f)].instance.setup()
+          if (I.isSetUp) throw Error("Cannot have two MultiBackends at the same time.");
+          I.isSetUp = !0, s(this, E).call(this, window), s(this, p)[s(this, f)].instance.setup()
         }
       }), a(this, "teardown", () => {
-        "undefined" != typeof window && (S.isSetUp = !1, s(this, v).call(this, window), s(this, p)[s(this, f)].instance.teardown())
+        "undefined" != typeof window && (I.isSetUp = !1, s(this, v).call(this, window), s(this, p)[s(this, f)].instance.teardown())
       }), a(this, "connectDragSource", (e, t, n) => s(this, O).call(this, "connectDragSource", e, t, n)), a(this, "connectDragPreview", (e, t, n) => s(this, O).call(this, "connectDragPreview", e, t, n)), a(this, "connectDropTarget", (e, t, n) => s(this, O).call(this, "connectDropTarget", e, t, n)), a(this, "profile", () => s(this, p)[s(this, f)].instance.profile()), a(this, "previewEnabled", () => s(this, p)[s(this, f)].preview), a(this, "previewsList", () => s(this, _)), a(this, "backendsList", () => s(this, h)), i(this, E, {
         writable: !0,
         value: e => {
@@ -122,8 +122,8 @@ class S {
           let t = s(this, f);
           if (s(this, h).some(t => !!(t.id !== s(this, f) && t.transition && t.transition.check(e)) && (c(this, f, t.id), !0)), s(this, f) !== t) {
             var n;
-            s(this, p)[t].instance.teardown(), Object.keys(s(this, g)).forEach(e => {
-              let t = s(this, g)[e];
+            s(this, p)[t].instance.teardown(), Object.keys(s(this, m)).forEach(e => {
+              let t = s(this, m)[e];
               t.unsubscribe(), t.unsubscribe = s(this, y).call(this, t.func, ...t.args)
             }), s(this, _).backendChanged(this);
             let r = s(this, p)[s(this, f)];
@@ -140,19 +140,19 @@ class S {
         value: (e, t, n, r) => {
           let i = "".concat(e, "_").concat(t),
             o = s(this, y).call(this, e, t, n, r);
-          return s(this, g)[i] = {
+          return s(this, m)[i] = {
             func: e,
             args: [t, n, r],
             unsubscribe: o
           }, () => {
-            s(this, g)[i].unsubscribe(), delete s(this, g)[i]
+            s(this, m)[i].unsubscribe(), delete s(this, m)[i]
           }
         }
       }), !n || !n.backends || n.backends.length < 1) throw Error("You must specify at least one Backend, if you are coming from 2.x.x (or don't understand this error)\n        see this guide: https://github.com/louisbrunner/dnd-multi-backend/tree/master/packages/react-dnd-multi-backend#migrating-from-2xx");
     c(this, _, new r.J), c(this, p, {}), c(this, h, []), n.backends.forEach(n => {
-      let r = s(this, m).call(this, e, t, n);
+      let r = s(this, g).call(this, e, t, n);
       s(this, p)[r.id] = r, s(this, h).push(r)
-    }), c(this, f, s(this, h)[0].id), c(this, g, {})
+    }), c(this, f, s(this, h)[0].id), c(this, m, {})
   }
 }
-a(S, "isSetUp", !1)
+a(I, "isSetUp", !1)

@@ -4,8 +4,8 @@ n.d(t, {
   Ph: () => y,
   Tt: () => b,
   iL: () => v,
-  nY: () => S,
-  zx: () => I
+  nY: () => I,
+  zx: () => S
 });
 var r = n(200651),
   i = n(192379),
@@ -51,13 +51,13 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -113,7 +113,7 @@ function O(e, t) {
   }
 }
 
-function S() {
+function I() {
   let {
     look: e = v.FILLED,
     color: t = b.BRAND,
@@ -130,7 +130,7 @@ function S() {
   })
 }
 
-function I(e) {
+function S(e) {
   var {
     look: t = v.FILLED,
     color: n = b.BRAND,
@@ -139,15 +139,15 @@ function I(e) {
     grow: _ = !0,
     disabled: h = !1,
     submitting: E = !1,
-    type: I = "button",
+    type: S = "button",
     style: T,
     wrapperClassName: N,
     className: A,
     innerClassName: C,
     onClick: R,
     onDoubleClick: P,
-    onMouseDown: D,
-    onMouseUp: w,
+    onMouseDown: w,
+    onMouseUp: D,
     onMouseEnter: L,
     onMouseLeave: x,
     onKeyDown: M,
@@ -158,7 +158,7 @@ function I(e) {
     "aria-label": B,
     submittingStartedLabel: V,
     submittingFinishedLabel: F
-  } = e, Z = m(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
+  } = e, Z = g(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
   let H = h || E,
     W = H && (null != L || null != x),
     Y = W ? null : N,
@@ -167,24 +167,24 @@ function I(e) {
   i.useEffect(() => {
     !0 === E && (z.current = !0, l.u.announce(null != V ? V : d.NW.string(d.t.pfChQk))), !1 === E && !0 === z.current && l.u.announce(null != F ? F : d.NW.string(d.t.SVPara))
   }, [E, V, F]);
-  let q = (0, r.jsx)(c.t, g(p({}, G), {
+  let q = (0, r.jsx)(c.t, m(p({}, G), {
     offset: K,
-    children: (0, r.jsxs)("button", g(p({}, H ? null : Z), {
+    children: (0, r.jsxs)("button", m(p({}, H ? null : Z), {
       "aria-label": B,
       "aria-busy": !!E || void 0,
       ref: U,
       onClick: H ? e => e.preventDefault() : R,
       onDoubleClick: H ? e => e.preventDefault() : P,
-      onMouseUp: h ? void 0 : w,
-      onMouseDown: h ? void 0 : D,
+      onMouseUp: h ? void 0 : D,
+      onMouseDown: h ? void 0 : w,
       onMouseEnter: L,
       onMouseLeave: x,
       onKeyDown: h ? void 0 : M,
-      type: I,
+      type: S,
       disabled: h,
       style: T,
       rel: j,
-      className: a()(A, S({
+      className: a()(A, I({
         look: t,
         color: n,
         size: o,
@@ -230,24 +230,24 @@ function T(e) {
     onClick: h,
     onMouseDown: E,
     onMouseUp: O,
-    children: S,
-    rel: I
-  } = e, T = m(e, ["look", "color", "size", "fullWidth", "grow", "style", "className", "innerClassName", "to", "onClick", "onMouseDown", "onMouseUp", "children", "rel"]);
-  return (0, r.jsx)(s.rU, g(p({}, T), {
+    children: I,
+    rel: S
+  } = e, T = g(e, ["look", "color", "size", "fullWidth", "grow", "style", "className", "innerClassName", "to", "onClick", "onMouseDown", "onMouseUp", "children", "rel"]);
+  return (0, r.jsx)(s.rU, m(p({}, T), {
     to: _,
     onClick: h,
     onMouseUp: O,
     onMouseDown: E,
     style: c,
-    rel: I,
+    rel: S,
     className: a()(u, f.button, t, n, i, {
       [f.fullWidth]: o,
       [f.grow]: l
     }),
     children: (0, r.jsx)("span", {
       className: a()(f.contents, d),
-      children: S
+      children: I
     })
   }))
 }
-I.Looks = v, I.Colors = b, I.Sizes = y, I.Link = T
+S.Looks = v, S.Colors = b, S.Sizes = y, S.Link = T

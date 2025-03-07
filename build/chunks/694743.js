@@ -46,7 +46,7 @@ function _(e) {
       foregroundGradientColor: p,
       animate: h = !0
     } = e,
-    g = null != o ? o : 0;
+    m = null != o ? o : 0;
   return t = null != p ? {
     background: "linear-gradient(to right, ".concat(p[0], ", ").concat(p[1], ")")
   } : {
@@ -56,12 +56,12 @@ function _(e) {
     style: {
       backgroundColor: _
     },
-    children: g !== f && "number" == typeof g ? (0, r.jsx)("div", {
+    children: m !== f && "number" == typeof m ? (0, r.jsx)("div", {
       className: a()(l.progressBar, l[c], {
         [l.animating]: h
       }),
       style: u({
-        transform: "translate3d(".concat(Math.min(Math.max(0, g), 100) - 100, "%, 0, 0)")
+        transform: "translate3d(".concat(Math.min(Math.max(0, m), 100) - 100, "%, 0, 0)")
       }, t)
     }) : (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)("div", {

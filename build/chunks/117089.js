@@ -25,10 +25,10 @@ function o(e, t, n, o, a, s) {
   for (var u = 0; u < c.length; u++)
     for (var d = c[u], f = d[0], _ = d[1] - 1, p = 0; p < s.bynweekday.length; p++) {
       var h = void 0,
-        g = s.bynweekday[p],
-        m = g[0],
-        E = g[1];
-      E < 0 ? (h = _ + (E + 1) * 7, h -= (0, i.Vy)(a[h] - m, 7)) : (h = f + (E - 1) * 7, h += (0, i.Vy)(7 - a[h] + m, 7)), f <= h && h <= _ && (l.nwdaymask[h] = 1)
+        m = s.bynweekday[p],
+        g = m[0],
+        E = m[1];
+      E < 0 ? (h = _ + (E + 1) * 7, h -= (0, i.Vy)(a[h] - g, 7)) : (h = f + (E - 1) * 7, h += (0, i.Vy)(7 - a[h] + g, 7)), f <= h && h <= _ && (l.nwdaymask[h] = 1)
     }
   return l
 }

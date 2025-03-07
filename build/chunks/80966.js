@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -67,7 +67,7 @@ function h(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class g extends i.Component {
+class m extends i.Component {
   render() {
     let e = this.props,
       {
@@ -77,23 +77,23 @@ class g extends i.Component {
         mediaPlayerClassName: u,
         poster: f,
         fileName: h,
-        naturalWidth: g,
-        naturalHeight: m,
+        naturalWidth: m,
+        naturalHeight: g,
         playable: E,
         downloadable: v = !0,
         volume: b,
         autoPlay: y,
         autoMute: O,
-        responsive: S,
-        mediaLayoutType: I,
+        responsive: I,
+        mediaLayoutType: S,
         mimeType: T,
         renderOverlayContent: N,
         renderLinkComponent: A,
         onClick: C,
         onPlay: R,
         onPause: P,
-        onEnded: D,
-        onControlsShow: w,
+        onEnded: w,
+        onControlsShow: D,
         onControlsHide: L,
         onVolumeChange: x,
         onMute: M,
@@ -109,8 +109,8 @@ class g extends i.Component {
       minHeight: s.ZP.minHeight,
       shouldLink: !1,
       shouldAnimate: !1,
-      mediaLayoutType: I,
-      responsive: S,
+      mediaLayoutType: S,
+      responsive: I,
       children: e => {
         let {
           src: i,
@@ -118,7 +118,7 @@ class g extends i.Component {
             width: a,
             height: c
           }
-        } = e, d = !(g <= l.N_j && m <= l.XKF || g <= l.XKF && m <= l.N_j);
+        } = e, d = !(m <= l.N_j && g <= l.XKF || m <= l.XKF && g <= l.N_j);
         return (0, r.jsx)(s.ZP, {
           className: u,
           forceExternal: d,
@@ -126,12 +126,12 @@ class g extends i.Component {
           poster: i,
           width: a,
           height: c,
-          responsive: S,
+          responsive: I,
           volume: b,
           autoPlay: null != y && y,
           autoMute: null != O && O,
           type: s.ZP.Types.VIDEO,
-          mediaLayoutType: I,
+          mediaLayoutType: S,
           fileName: h,
           fileSize: null == n ? void 0 : (0, o.Ng)(n),
           fileSizeBytes: null == n ? void 0 : n,
@@ -141,10 +141,10 @@ class g extends i.Component {
           onClick: C,
           onPlay: R,
           onPause: P,
-          onEnded: D,
+          onEnded: w,
           onVolumeChange: x,
           onMute: M,
-          onControlsShow: w,
+          onControlsShow: D,
           onControlsHide: L,
           mimeType: T,
           downloadable: v

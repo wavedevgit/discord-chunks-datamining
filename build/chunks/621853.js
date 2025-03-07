@@ -16,9 +16,9 @@ var r = n(392711),
   _ = n(771845),
   p = n(291175),
   h = n(215023),
-  g = n(388032);
+  m = n(388032);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,7 +34,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -58,16 +58,16 @@ function b(e, t) {
 }
 let y = Symbol("NO GUILD ID"),
   O = new Map,
-  S = new Set,
-  I = "premium",
+  I = new Set,
+  S = "premium",
   T = "guild_booster_lvl",
   N = 0x7fffffff,
   A = new Map,
   C = new Map,
   R = new Map,
   P = new Map,
-  D = new Map,
   w = new Map,
+  D = new Map,
   L = new Map,
   x = !1;
 
@@ -103,21 +103,21 @@ function k(e, t) {
 }
 
 function j() {
-  O.clear(), S.clear(), A.clear(), C.clear(), D.clear(), w.clear(), L.clear(), x = !1
+  O.clear(), I.clear(), A.clear(), C.clear(), w.clear(), D.clear(), L.clear(), x = !1
 }
 
 function U(e) {
   let {
     userId: t
   } = e;
-  S.add(t)
+  I.add(t)
 }
 
 function G(e) {
   let {
     userId: t
   } = e;
-  S.delete(t)
+  I.delete(t)
 }
 
 function B(e) {
@@ -134,11 +134,11 @@ function B(e) {
 }
 
 function V(e) {
-  S.delete(e.userId), D.set(e.userId, B(e.mutualFriends)), w.set(e.userId, e.mutualFriends.length)
+  I.delete(e.userId), w.set(e.userId, B(e.mutualFriends)), D.set(e.userId, e.mutualFriends.length)
 }
 
 function F(e) {
-  var t, n, r, i, s, l, c, d, f, h, m, v, S, N, x, j, U, G, V, F, Z, H, W, Y, K, z, q;
+  var t, n, r, i, s, l, c, d, f, h, g, v, I, N, x, j, U, G, V, F, Z, H, W, Y, K, z, q;
   let Q = null !== (x = null === (t = e.guild_member_profile) || void 0 === t ? void 0 : t.guild_id) && void 0 !== x ? x : y;
   if (null === (n = O.get(e.user.id)) || void 0 === n || n.delete(Q), null != e.mutual_guilds) {
     let t = {};
@@ -158,9 +158,9 @@ function F(e) {
   }
   if (null != e.mutual_friends_count) {
     let t = e.mutual_friends_count;
-    w.set(e.user.id, t)
+    D.set(e.user.id, t)
   }
-  null != e.mutual_friends && (D.set(e.user.id, B(e.mutual_friends)), w.set(e.user.id, e.mutual_friends.length));
+  null != e.mutual_friends && (w.set(e.user.id, B(e.mutual_friends)), D.set(e.user.id, e.mutual_friends.length));
   let X = null != e.premium_since ? new Date(e.premium_since) : null,
     J = null != e.premium_guild_since ? new Date(e.premium_guild_since) : null,
     $ = e.application;
@@ -172,7 +172,7 @@ function F(e) {
       popoutAnimationParticleType: null === (l = e.user_profile) || void 0 === l ? void 0 : l.popout_animation_particle_type,
       bio: null !== (j = null === (c = e.user_profile) || void 0 === c ? void 0 : c.bio) && void 0 !== j ? j : "",
       profileEffectId: null === (f = e.user_profile) || void 0 === f ? void 0 : null === (d = f.profile_effect) || void 0 === d ? void 0 : d.id,
-      profileEffectExpiresAt: null === (m = e.user_profile) || void 0 === m ? void 0 : null === (h = m.profile_effect) || void 0 === h ? void 0 : h.expires_at,
+      profileEffectExpiresAt: null === (g = e.user_profile) || void 0 === g ? void 0 : null === (h = g.profile_effect) || void 0 === h ? void 0 : h.expires_at,
       pronouns: null !== (U = null === (v = e.user_profile) || void 0 === v ? void 0 : v.pronouns) && void 0 !== U ? U : "",
       connectedAccounts: null !== (G = e.connected_accounts.filter(e => a.Z.isSupported(e.type))) && void 0 !== G ? G : [],
       applicationRoleConnections: null !== (V = e.application_role_connections) && void 0 !== V ? V : [],
@@ -194,23 +194,23 @@ function F(e) {
       } : null,
       badges: null != e.badges ? e.badges.map(e => {
         let t = (0, p.fv)(e.id);
-        if ((e.id === I || null != t) && null != X) {
-          let n = g.NW.formatToPlainString(g.t["8zbGNT"], {
+        if ((e.id === S || null != t) && null != X) {
+          let n = m.NW.formatToPlainString(m.t["8zbGNT"], {
             date: X
           });
-          return null != t && (n = 2 === t.badgeVersion ? g.NW.formatToPlainString(g.t.Hu4jfn, {
+          return null != t && (n = 2 === t.badgeVersion ? m.NW.formatToPlainString(m.t.Hu4jfn, {
             date: X
           }) : (0, p.sZ)(t.id, X)), b(E({}, e), {
             description: n
           })
         }
         return e.id.startsWith(T) && null != J ? b(E({}, e), {
-          description: g.NW.formatToPlainString(g.t.IWkAq6, {
+          description: m.NW.formatToPlainString(m.t.IWkAq6, {
             date: J
           })
         }) : e
       }) : e.badges
-    }), (null === (N = e.user_profile) || void 0 === N ? void 0 : null === (S = N.profile_effect) || void 0 === S ? void 0 : S.expires_at) != null) {
+    }), (null === (N = e.user_profile) || void 0 === N ? void 0 : null === (I = N.profile_effect) || void 0 === I ? void 0 : I.expires_at) != null) {
     let t = new o.V7;
     R.set(e.user.id, t), M(e.user.id)
   }
@@ -386,8 +386,8 @@ function J(e) {
 function $(e) {
   let t = e.relationship.id,
     n = A.get(t);
-  if (!D.has(t) && !w.has(t) && null == n) return !1;
-  D.delete(t), w.delete(t), et(n)
+  if (!w.has(t) && !D.has(t) && null == n) return !1;
+  w.delete(t), D.delete(t), et(n)
 }
 
 function ee() {
@@ -406,7 +406,7 @@ class en extends f.Z {
     return null != n && n.has(null != t ? t : y)
   }
   isFetchingFriends(e) {
-    return S.has(e)
+    return I.has(e)
   }
   get isSubmitting() {
     return x
@@ -419,10 +419,10 @@ class en extends f.Z {
     return null == t ? null : null !== (r = null === (n = C.get(e)) || void 0 === n ? void 0 : n.get(t)) && void 0 !== r ? r : null
   }
   getMutualFriends(e) {
-    return D.get(e)
+    return w.get(e)
   }
   getMutualFriendsCount(e) {
-    return w.get(e)
+    return D.get(e)
   }
   getMutualGuilds(e) {
     return L.get(e)
@@ -463,7 +463,7 @@ class en extends f.Z {
       RELATIONSHIP_REMOVE: $,
       RELATIONSHIP_UPDATE: $,
       LOGOUT: j
-    }), m(this, "loadCache", () => {
+    }), g(this, "loadCache", () => {
       let e = this.readSnapshot(en.LATEST_SNAPSHOT_VERSION);
       null != e && e.forEach(e => {
         let {
@@ -475,6 +475,6 @@ class en extends f.Z {
     })
   }
 }
-m(en, "displayName", "UserProfileStore"), m(en, "LATEST_SNAPSHOT_VERSION", 1);
+g(en, "displayName", "UserProfileStore"), g(en, "LATEST_SNAPSHOT_VERSION", 1);
 let er = new en,
   ei = er

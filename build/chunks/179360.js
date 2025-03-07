@@ -4,7 +4,7 @@ n.d(t, {
   C0: () => u,
   W3: () => _,
   X8: () => f,
-  bG: () => g,
+  bG: () => m,
   dG: () => p,
   pD: () => h,
   tH: () => d
@@ -114,7 +114,7 @@ async function h(e) {
     guildBoostSlot: n
   }), n
 }
-async function g(e) {
+async function m(e) {
   let t = await r.tn.post({
       url: c.ANM.USER_GUILD_BOOST_SLOT_UNCANCEL(e),
       oldFormErrors: !0,

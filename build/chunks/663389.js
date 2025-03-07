@@ -35,15 +35,15 @@ let f = c.QZA.CLOSED,
   _ = null,
   p = null,
   h = {},
-  g = {},
   m = {},
+  g = {},
   E = null,
   v = null,
   b = !1,
   y = !1,
   O = null,
-  S = null,
-  I = [],
+  I = null,
+  S = [],
   T = null,
   N = null;
 
@@ -55,7 +55,7 @@ function C(e) {
   var t, n, r, i, o, a;
   let s = l.default.getCurrentUser();
   if (null == s) return R();
-  p = null !== (t = e.section) && void 0 !== t ? t : p, T = null !== (n = e.section) && void 0 !== n ? n : p, null != e.subsection && null != p && (h[p] = e.subsection), null != e.scrollPosition && null != p && (g[p] = e.scrollPosition), y = !!e.openWithoutBackstack, f = c.QZA.OPEN, m = {}, v = d({}, E = {
+  p = null !== (t = e.section) && void 0 !== t ? t : p, T = null !== (n = e.section) && void 0 !== n ? n : p, null != e.subsection && null != p && (h[p] = e.subsection), null != e.scrollPosition && null != p && (m[p] = e.scrollPosition), y = !!e.openWithoutBackstack, f = c.QZA.OPEN, g = {}, v = d({}, E = {
     [c.oAB.ACCOUNT]: {
       userId: s.id,
       username: s.username,
@@ -66,30 +66,30 @@ function C(e) {
       newPassword: null,
       claimed: s.isClaimed()
     }
-  }), O = null !== (r = e.onClose) && void 0 !== r ? r : null, S = null !== (i = e.analyticsLocation) && void 0 !== i ? i : null, I = null !== (o = e.analyticsLocations) && void 0 !== o ? o : [], N = null !== (a = e.impressionSource) && void 0 !== a ? a : null
+  }), O = null !== (r = e.onClose) && void 0 !== r ? r : null, I = null !== (i = e.analyticsLocation) && void 0 !== i ? i : null, S = null !== (o = e.analyticsLocations) && void 0 !== o ? o : [], N = null !== (a = e.impressionSource) && void 0 !== a ? a : null
 }
 
 function R() {
-  f = c.QZA.CLOSED, b = !1, E = null, T = null, v = null, _ = null, p = null, h = {}, g = {}, O = null, S = null, I = [], N = null
+  f = c.QZA.CLOSED, b = !1, E = null, T = null, v = null, _ = null, p = null, h = {}, m = {}, O = null, I = null, S = [], N = null
 }
 
 function P(e) {
   var t;
-  _ = p, p = e.section, S = null, I = null !== (t = e.analyticsLocations) && void 0 !== t ? t : [], null != e.subsection && (h[p] = e.subsection)
-}
-
-function D(e) {
-  let {
-    forSection: t
-  } = e;
-  null != t ? delete h[t] : null != p && delete h[p]
+  _ = p, p = e.section, I = null, S = null !== (t = e.analyticsLocations) && void 0 !== t ? t : [], null != e.subsection && (h[p] = e.subsection)
 }
 
 function w(e) {
   let {
     forSection: t
   } = e;
-  null != t ? delete g[t] : null != p && delete g[p]
+  null != t ? delete h[t] : null != p && delete h[p]
+}
+
+function D(e) {
+  let {
+    forSection: t
+  } = e;
+  null != t ? delete m[t] : null != p && delete m[p]
 }
 
 function L(e) {
@@ -122,13 +122,13 @@ function M() {
 }
 
 function k() {
-  f = c.QZA.OPEN, m = {}
+  f = c.QZA.OPEN, g = {}
 }
 
 function j(e) {
   var t;
   if (f !== c.QZA.SUBMITTING) return !1;
-  f = c.QZA.OPEN, p = c.oAB.ACCOUNT, m = null !== (t = e.errors) && void 0 !== t ? t : {}
+  f = c.QZA.OPEN, p = c.oAB.ACCOUNT, g = null !== (t = e.errors) && void 0 !== t ? t : {}
 }
 class U extends(r = a.ZP.Store) {
   initialize() {
@@ -150,7 +150,7 @@ class U extends(r = a.ZP.Store) {
     return null != p ? h[p] : null
   }
   getScrollPosition() {
-    return null != p ? g[p] : null
+    return null != p ? m[p] : null
   }
   shouldOpenWithoutBackstack() {
     return y
@@ -160,13 +160,13 @@ class U extends(r = a.ZP.Store) {
       submitting: f === c.QZA.SUBMITTING,
       section: p,
       subsection: null != p ? h[p] : null,
-      scrollPosition: null != p ? g[p] : null,
+      scrollPosition: null != p ? m[p] : null,
       settings: v,
-      errors: m,
+      errors: g,
       hasChanges: this.hasChanges(),
       openWithoutBackstack: y,
-      analyticsLocation: S,
-      analyticsLocations: I,
+      analyticsLocation: I,
+      analyticsLocations: S,
       initialSection: T,
       impressionSource: N
     }
@@ -184,8 +184,8 @@ let G = new U(s.Z, {
   USER_SETTINGS_MODAL_SUBMIT: x,
   USER_SETTINGS_MODAL_SUBMIT_FAILURE: j,
   USER_SETTINGS_MODAL_SET_SECTION: P,
-  USER_SETTINGS_MODAL_CLEAR_SUBSECTION: D,
-  USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: w,
+  USER_SETTINGS_MODAL_CLEAR_SUBSECTION: w,
+  USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: D,
   USER_SETTINGS_MODAL_UPDATE_ACCOUNT: L,
   USER_SETTINGS_MODAL_SUBMIT_COMPLETE: k,
   USER_SETTINGS_MODAL_RESET: M

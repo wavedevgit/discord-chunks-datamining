@@ -15,8 +15,8 @@ var r, i = n(200651),
   _ = n(84735),
   p = n(981729),
   h = n(607070),
-  g = n(540059),
-  m = n(473845);
+  m = n(540059),
+  g = n(473845);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,7 +71,7 @@ function O(e, t) {
   return null
 }
 
-function S(e) {
+function I(e) {
   let {
     markers: t,
     initialValue: n,
@@ -107,16 +107,16 @@ function S(e) {
   }
 }
 
-function I(e) {
+function S(e) {
   return v({
     value: Math.min(Math.max(e.initialValue, e.minValue), e.maxValue),
     initialValueProp: e.initialValue,
     newClosestIndex: null
-  }, S(e))
+  }, I(e))
 }
 class T extends(r = o.PureComponent) {
   static getDerivedStateFromProps(e, t) {
-    return e.initialValue !== t.initialValueProp ? y(v({}, I(e)), {
+    return e.initialValue !== t.initialValueProp ? y(v({}, S(e)), {
       active: t.active
     }) : null
   }
@@ -142,19 +142,19 @@ class T extends(r = o.PureComponent) {
       min: d,
       max: f
     } = this.state, {
-      disabled: g,
+      disabled: m,
       stickToMarkers: E,
       className: b,
       children: O,
-      barStyles: S,
-      fillStyles: I,
+      barStyles: I,
+      fillStyles: S,
       mini: T,
       hideBubble: A,
       defaultValue: C,
       orientation: R,
       onValueRender: P,
-      renderMarker: D,
-      getAriaValueText: w,
+      renderMarker: w,
+      getAriaValueText: D,
       barClassName: L,
       grabberClassName: x,
       grabberStyles: M = {},
@@ -171,26 +171,26 @@ class T extends(r = o.PureComponent) {
           r = null != C && C === n,
           a = this.renderMark(n);
         return (0, i.jsx)("div", {
-          className: s()(m.mark, {
-            [m.defaultValue]: r,
-            [m.markAbove]: 0 === k,
-            [m.markBelow]: 1 === k
+          className: s()(g.mark, {
+            [g.defaultValue]: r,
+            [g.markAbove]: 0 === k,
+            [g.markBelow]: 1 === k
           }),
           style: {
             left: "".concat(e, "%")
           },
-          children: null != D ? D(n) : (0, i.jsxs)(i.Fragment, {
+          children: null != w ? w(n) : (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
-              className: m.markValue,
+              className: g.markValue,
               children: a
             }), (0, i.jsx)("div", {
-              className: m["markDash".concat(null == a ? "simple" : "")]
+              className: g["markDash".concat(null == a ? "simple" : "")]
             })]
           })
         }, t)
       }) : null,
       H = null != P ? P(t) : "".concat(V.toFixed(0), "%"),
-      W = null !== (e = null == w ? void 0 : w(t)) && void 0 !== e ? e : void 0;
+      W = null !== (e = null == D ? void 0 : D(t)) && void 0 !== e ? e : void 0;
     return (0, i.jsx)(N, {
       active: n,
       keyboardFocused: r && h.Z.keyboardModeEnabled,
@@ -200,16 +200,16 @@ class T extends(r = o.PureComponent) {
           focusTarget: this.containerRef,
           ringTarget: this.grabberRef,
           children: (0, i.jsxs)(u.animated.div, {
-            className: s()(m.slider, b, {
-              [m.hasMarks]: (null !== (o = null == Z ? void 0 : Z.length) && void 0 !== o ? o : 0) > 0,
-              [m.disabled]: g,
-              [m.mini]: T
+            className: s()(g.slider, b, {
+              [g.hasMarks]: (null !== (o = null == Z ? void 0 : Z.length) && void 0 !== o ? o : 0) > 0,
+              [g.disabled]: m,
+              [g.mini]: T
             }),
             style: null == e ? void 0 : e.sliderStyles,
             "aria-valuemin": d,
             "aria-valuemax": f,
             "aria-valuenow": t,
-            "aria-disabled": g,
+            "aria-disabled": m,
             "aria-orientation": R,
             "aria-hidden": j,
             "aria-label": U,
@@ -230,26 +230,26 @@ class T extends(r = o.PureComponent) {
             onMouseLeave: () => null == e ? void 0 : e.setHovered(!1),
             ref: this.containerRef,
             children: [(0, i.jsx)("div", {
-              className: m.track,
+              className: g.track,
               children: Z
             }), (0, i.jsx)("div", {
-              className: s()(m.bar, L),
-              style: S,
+              className: s()(g.bar, L),
+              style: I,
               children: (0, i.jsx)("div", {
-                className: m.barFill,
-                style: y(v({}, I), {
+                className: g.barFill,
+                style: y(v({}, S), {
                   width: F
                 })
               })
             }), O, (0, i.jsx)("div", {
-              className: m.track,
+              className: g.track,
               children: (0, i.jsx)(p.u, {
                 color: p.u.Colors.GREY,
                 hideOnClick: !1,
                 text: A || E ? null : H,
                 forceOpen: n || r && h.Z.keyboardModeEnabled,
                 children: e => (0, i.jsx)("div", y(v({}, e), {
-                  className: s()(m.grabber, x),
+                  className: s()(g.grabber, x),
                   style: y(v({}, M), {
                     left: F
                   }),
@@ -454,7 +454,7 @@ class T extends(r = o.PureComponent) {
       active: !1,
       focused: !1,
       dragStartValue: void 0
-    }, I(e))
+    }, S(e))
   }
 }
 
@@ -463,7 +463,7 @@ function N(e) {
     active: t,
     keyboardFocused: n,
     children: r
-  } = e, i = (0, g.Q3)("Slider"), [a, s] = o.useState(!1), l = (0, f.q)({
+  } = e, i = (0, m.Q3)("Slider"), [a, s] = o.useState(!1), l = (0, f.q)({
     "--grabber-size": n || t || a ? "20px" : "16px",
     "--bar-size": n || t || a ? "6px" : "4px",
     config: y(v({}, u.config.stiff), {

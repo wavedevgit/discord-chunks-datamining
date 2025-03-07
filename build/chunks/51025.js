@@ -5,12 +5,12 @@ n.d(t, {
   LO: () => b,
   S1: () => E,
   Wx: () => P,
-  XT: () => D,
+  XT: () => w,
   al: () => C,
   cG: () => y,
-  li: () => S,
+  li: () => I,
   ob: () => v,
-  pC: () => I,
+  pC: () => S,
   v4: () => T,
   wO: () => N,
   wi: () => R
@@ -28,8 +28,8 @@ var r = n(544891),
   _ = n(830168),
   p = n(57513),
   h = n(981631),
-  g = n(388032);
-let m = 64;
+  m = n(388032);
+let g = 64;
 
 function E(e, t) {
   _.Z.init({
@@ -116,7 +116,7 @@ function O(e, t, n, r) {
   })
 }
 
-function S(e, t, n, r) {
+function I(e, t, n, r) {
   let o = arguments.length > 4 && void 0 !== arguments[4] && arguments[4];
   O(e, t, n, r), i.Z.dispatch({
     type: "DISPATCH_APPLICATION_UPDATE",
@@ -126,7 +126,7 @@ function S(e, t, n, r) {
   })
 }
 
-function I(e, t, n) {
+function S(e, t, n) {
   let r = o.Z.getApplication(e);
   null != r && (f.Z.removeShortcuts(r.name), u.default.track(h.rMx.LIBRARY_UNINSTALL_INITIATED, {
     application_id: r.id,
@@ -177,7 +177,7 @@ function P(e, t) {
   null != n && f.Z.createShortcuts(l.Xc.getSetting(), l.Pe.getSetting(), n.name, n.id, t.installPath)
 }
 
-function D(e, t) {
+function w(e, t) {
   let i = o.Z.getApplication(e);
   r.tn.post({
     url: h.ANM.LIBRARY_APPLICATION_INSTALLED(e, e),
@@ -187,7 +187,7 @@ function D(e, t) {
     let {
       default: t
     } = e;
-    t.showNotification(i.getIconURL(m), g.NW.string(g.t["1wR7yM"]), g.NW.formatToPlainString(g.t["89VAgY"], {
+    t.showNotification(i.getIconURL(g), m.NW.string(m.t["1wR7yM"]), m.NW.formatToPlainString(m.t["89VAgY"], {
       name: i.name
     }), {
       notif_type: "Game Library Game Installed"

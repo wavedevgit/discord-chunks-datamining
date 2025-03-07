@@ -40,7 +40,7 @@ let p = 400,
     tension: 300
   });
 
-function g(e) {
+function m(e) {
   let {
     width: t,
     height: n,
@@ -56,7 +56,7 @@ function g(e) {
   }
 }
 
-function m(e, t, n, r, i) {
+function g(e, t, n, r, i) {
   if (null == e || null == t) return {
     width: void 0,
     height: void 0
@@ -84,24 +84,24 @@ function E(e) {
     height: v,
     maxWidth: b,
     maxHeight: y
-  } = e, O = i.useRef(null), S = (0, u.vV)(E, v, b, y), {
-    width: I,
+  } = e, O = i.useRef(null), I = (0, u.vV)(E, v, b, y), {
+    width: S,
     height: T
-  } = m(E, v, b, y, n), [N, A] = (0, l.q_F)(() => ({
+  } = g(E, v, b, y, n), [N, A] = (0, l.q_F)(() => ({
     scale: 1,
     config: h
   })), [C, R] = (0, l.q_F)(() => ({
     x: 0,
     y: 0,
     config: h
-  })), [P, D] = i.useState(!1), [w, L] = i.useState({
+  })), [P, w] = i.useState(!1), [D, L] = i.useState({
     x: 0,
     y: 0
-  }), x = (null != I ? I : 0) > window.innerWidth || (null != T ? T : 0) > window.innerHeight;
+  }), x = (null != S ? S : 0) > window.innerWidth || (null != T ? T : 0) > window.innerHeight;
   i.useEffect(() => {
     let e = c.Z.useReducedMotion;
     n ? A({
-      scale: S,
+      scale: I,
       immediate: e
     }) : (A({
       scale: 1,
@@ -111,12 +111,12 @@ function E(e) {
       y: 0,
       immediate: e
     }))
-  }, [n, A, S, C, R]);
+  }, [n, A, I, C, R]);
   let M = (e, t) => {
       var n;
-      let r = null == I ? null === (n = O.current) || void 0 === n ? void 0 : n.getBoundingClientRect() : null,
-        i = g({
-          width: null != I ? I : r.width,
+      let r = null == S ? null === (n = O.current) || void 0 === n ? void 0 : n.getBoundingClientRect() : null,
+        i = m({
+          width: null != S ? S : r.width,
           height: null != T ? T : r.height,
           offset: {
             x: C.x.goal,
@@ -130,7 +130,7 @@ function E(e) {
       C.x.set(i.x), C.y.set(i.y)
     },
     k = e => {
-      n && 0 === e.button && (e.preventDefault(), D(!0), L({
+      n && 0 === e.button && (e.preventDefault(), w(!0), L({
         x: e.clientX,
         y: e.clientY
       }))
@@ -139,7 +139,7 @@ function E(e) {
       if (!n) {
         0 === e.button && (null == o || o(e));
         return
-      }(e.clientX - w.x) ** 2 + (e.clientY - w.y) ** 2 < p && (null == o || o(e)), D(!1)
+      }(e.clientX - D.x) ** 2 + (e.clientY - D.y) ** 2 < p && (null == o || o(e)), w(!1)
     };
   return (0, r.jsx)(s.animated.div, {
     ref: O,
@@ -147,7 +147,7 @@ function E(e) {
     onMouseUp: j,
     onMouseMove: e => P && M(e.movementX, e.movementY),
     onWheel: e => !e.ctrlKey && M(-e.deltaX, -e.deltaY),
-    onMouseLeave: () => D(!1),
+    onMouseLeave: () => w(!1),
     onClick: e => e.stopPropagation(),
     className: a()(f, d.wrapper, {
       [d.panning]: n && P,

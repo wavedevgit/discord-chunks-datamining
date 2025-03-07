@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m,
+  Z: () => g,
   m: () => E
 }), n(47120), n(653041), n(566702);
 var r = n(192379),
@@ -17,8 +17,8 @@ var r = n(192379),
   _ = n(251625),
   p = n(606301),
   h = n(549058);
-let g = (0, _.ad)(l.$p, h.J7),
-  m = (e, t, n) => {
+let m = (0, _.ad)(l.$p, h.J7),
+  g = (e, t, n) => {
     let i = (0, c.fQ)(n),
       o = (0, a.e7)([d.default], () => d.default.getCurrentUser());
     return r.useMemo(() => {
@@ -59,7 +59,7 @@ let g = (0, _.ad)(l.$p, h.J7),
             return
           }
           if (!0 === d.current) return;
-          u.Z.hasLoadedStickerPacks || (d.current = !0, await g(), d.current = !1), f(l.current)
+          u.Z.hasLoadedStickerPacks || (d.current = !0, await m(), d.current = !1), f(l.current)
         }
       },
       debouncedSetTextInputValue: f

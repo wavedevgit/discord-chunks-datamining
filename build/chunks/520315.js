@@ -15,7 +15,7 @@ function a(e) {
     minHeightOverride: s,
     maxHeightOverride: l,
     maxAnimationHeight: c
-  } = e, u = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), [d, f] = r.useState(null), _ = r.useCallback(() => {}, []), p = u ? _ : f, h = r.useRef(), g = r.useRef(), m = r.useRef(t), E = r.useRef(a);
+  } = e, u = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), [d, f] = r.useState(null), _ = r.useCallback(() => {}, []), p = u ? _ : f, h = r.useRef(), m = r.useRef(), g = r.useRef(t), E = r.useRef(a);
   E.current = a;
   let v = r.useRef(s);
   v.current = s;
@@ -23,25 +23,25 @@ function a(e) {
   b.current = l;
   let y = r.useRef(c);
   y.current = c;
-  let [O, S] = r.useState(!1), I = r.useCallback(() => S(!1), []);
+  let [O, I] = r.useState(!1), S = r.useCallback(() => I(!1), []);
   return r.useLayoutEffect(() => {
-    void 0 !== t && (h.current = void 0, g.current = void 0, S(!1))
+    void 0 !== t && (h.current = void 0, m.current = void 0, I(!1))
   }, [t]), r.useLayoutEffect(() => {
     var e, r, i;
     if (null == d) return;
     let {
       height: o
     } = d.getBoundingClientRect();
-    !n && (null == h.current || o < h.current) && (h.current = o), n && (null == g.current || o > g.current) && (g.current = o);
+    !n && (null == h.current || o < h.current) && (h.current = o), n && (null == m.current || o > m.current) && (m.current = o);
     let a = null !== (e = v.current) && void 0 !== e ? e : h.current,
-      s = null !== (r = b.current) && void 0 !== r ? r : g.current,
-      l = m.current !== t;
-    if (m.current = t, null == a || null == s || l) return;
+      s = null !== (r = b.current) && void 0 !== r ? r : m.current,
+      l = g.current !== t;
+    if (g.current = t, null == a || null == s || l) return;
     let c = Math.min(null !== (i = y.current) && void 0 !== i ? i : s, s),
       u = n ? a : c,
       f = n ? c : a;
     if (u === f) return;
-    S(!0), d.style.height = "".concat(u, "px"), d.style.transition = "";
+    I(!0), d.style.height = "".concat(u, "px"), d.style.transition = "";
     let _ = null;
     return _ = requestAnimationFrame(() => {
       _ = null, d.style.height = "".concat(f, "px"), d.style.transition = "height ".concat(E.current, "ms ease-in-out")
@@ -51,6 +51,6 @@ function a(e) {
   }, [t, d, O]), {
     ref: p,
     isTransitioning: O,
-    onTransitionEnd: I
+    onTransitionEnd: S
   }
 }

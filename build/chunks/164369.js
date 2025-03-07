@@ -27,15 +27,15 @@ function _(e) {
       years: p * _.years
     });
   _.months = Math.abs((0, l.Z)(n, h));
-  var g = (0, i.Z)(h, {
+  var m = (0, i.Z)(h, {
     months: p * _.months
   });
-  _.days = Math.abs((0, o.Z)(n, g));
-  var m = (0, i.Z)(g, {
+  _.days = Math.abs((0, o.Z)(n, m));
+  var g = (0, i.Z)(m, {
     days: p * _.days
   });
-  _.hours = Math.abs((0, a.Z)(n, m));
-  var E = (0, i.Z)(m, {
+  _.hours = Math.abs((0, a.Z)(n, g));
+  var E = (0, i.Z)(g, {
     hours: p * _.hours
   });
   _.minutes = Math.abs((0, s.Z)(n, E));

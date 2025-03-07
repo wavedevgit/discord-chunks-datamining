@@ -16,7 +16,7 @@ n.d(t, {
   ib: () => R,
   lh: () => J,
   mF: () => q,
-  ub: () => w,
+  ub: () => D,
   v1: () => j,
   x6: () => k,
   zi: () => Q
@@ -34,15 +34,15 @@ var r = n(392711),
   _ = n(388032);
 let p = 365,
   h = 366,
-  g = "ddd MMM Do \xb7 LT",
-  m = "ddd MMM Do, YYYY \xb7 LT",
+  m = "ddd MMM Do \xb7 LT",
+  g = "ddd MMM Do, YYYY \xb7 LT",
   E = "LT",
   v = 4,
   b = [a.Ci.MO.weekday, a.Ci.TU.weekday, a.Ci.WE.weekday, a.Ci.TH.weekday, a.Ci.FR.weekday],
   y = [a.Ci.SU.weekday, a.Ci.MO.weekday, a.Ci.TU.weekday, a.Ci.WE.weekday, a.Ci.TH.weekday],
   O = [a.Ci.TU.weekday, a.Ci.WE.weekday, a.Ci.TH.weekday, a.Ci.FR.weekday, a.Ci.SA.weekday],
-  S = [a.Ci.SA.weekday, a.Ci.SU.weekday],
-  I = [a.Ci.FR.weekday, a.Ci.SA.weekday],
+  I = [a.Ci.SA.weekday, a.Ci.SU.weekday],
+  S = [a.Ci.FR.weekday, a.Ci.SA.weekday],
   T = [a.Ci.SU.weekday, a.Ci.MO.weekday],
   N = [a.Ci.SU.weekday, a.Ci.MO.weekday, a.Ci.TU.weekday, a.Ci.WE.weekday, a.Ci.TH.weekday, a.Ci.FR.weekday, a.Ci.SA.weekday],
   A = new Set([0, 6]);
@@ -93,19 +93,19 @@ let R = () => {
       t = e.hour();
     return e.minutes() >= 30 && (t += 1), e.hour(t).minutes(0).seconds(0)
   },
-  P = (e, t) => (0, l.vc)(e, e.get("years") === t.get("years") ? g : m),
-  D = (e, t) => {
+  P = (e, t) => (0, l.vc)(e, e.get("years") === t.get("years") ? m : g),
+  w = (e, t) => {
     let n = (0, l.wY)(e.toDate(), t.toDate());
     return n > 1 || n < 0 ? P(e, t) : (0, l.vc)(e, e.localeData().calendar(n < 1 ? "sameDay" : "nextDay", e, t))
   };
 
-function w(e, t, n) {
+function D(e, t, n) {
   null == n && (n = o()());
   let r = o()(e),
     i = null != t && "" !== t ? o()(t) : void 0,
     a = null != t && r.isSame(i, "day");
   return {
-    startDateTimeString: D(r, n),
+    startDateTimeString: w(r, n),
     endDateTimeString: null != i ? a ? i.format(E) : P(i, n) : void 0,
     currentOrPastEvent: r <= n,
     upcomingEvent: r <= o()().add(1, "hour"),
@@ -223,7 +223,7 @@ function Y(e) {
 function K(e) {
   let t = L(e.toDate().getDay()),
     n = L(e.toDate().getUTCDay());
-  return n.weekday - t.weekday > 0 ? T : n.weekday - t.weekday < 0 ? I : S
+  return n.weekday - t.weekday > 0 ? T : n.weekday - t.weekday < 0 ? S : I
 }
 
 function z(e, t) {

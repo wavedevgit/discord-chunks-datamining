@@ -38,7 +38,7 @@ function h(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function g(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -59,19 +59,19 @@ function E(e) {
   let {
     user: t,
     color: p,
-    guildId: g,
+    guildId: m,
     channelId: E,
     onBlock: v,
     onIgnore: b,
     onUnblock: y,
     location: O = "ContextMenu",
-    appContext: S = f.IlC.APP
+    appContext: I = f.IlC.APP
   } = e, {
-    id: I
+    id: S
   } = t, T = (0, o.e7)([d.default], () => {
     var e;
-    return (null === (e = d.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === I
-  }, [I]), N = (0, o.e7)([u.Z], () => u.Z.isBlocked(I), [I]), A = (0, l.D)({
+    return (null === (e = d.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === S
+  }, [S]), N = (0, o.e7)([u.Z], () => u.Z.isBlocked(S), [S]), A = (0, l.D)({
     location: "use-block-user-item-web"
   }), C = (0, i.EQ)({
     isStealthRemediationEnabled: A,
@@ -88,24 +88,24 @@ function E(e) {
     color: null != C ? C : "default",
     label: N ? _.NW.string(_.t.XyHpKC) : _.NW.string(_.t.l4EmaW),
     action: N ? () => {
-      null == y || y(), s.Z.unblockUser(I, {
+      null == y || y(), s.Z.unblockUser(S, {
         location: O
-      }), c.Z.showUnblockSuccessToast(I, null != E ? E : void 0)
+      }), c.Z.showUnblockSuccessToast(S, null != E ? E : void 0)
     } : () => {
       (0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("97652"), n.e("89540")]).then(n.bind(n, 478923));
-        return n => (0, r.jsx)(e, m(h({}, n), {
+        return n => (0, r.jsx)(e, g(h({}, n), {
           user: t,
-          guildId: g,
+          guildId: m,
           channelId: E,
           onBlock: v,
           onIgnore: b,
           location: O
         }))
       }, {
-        contextKey: (0, a.VnL)(S)
+        contextKey: (0, a.VnL)(I)
       })
     }
   })

@@ -14,15 +14,15 @@ var o, a = n(512722),
   _ = n(594190),
   p = n(444852),
   h = n(569545),
-  g = n(687516),
-  m = n(139656),
+  m = n(687516),
+  g = n(139656),
   E = n(358085),
   v = n(199902),
   b = n(314897),
   y = n(131951),
   O = n(158776),
-  S = n(19780),
-  I = n(981631),
+  I = n(19780),
+  S = n(981631),
   T = n(65154);
 
 function N(e, t, n) {
@@ -37,8 +37,8 @@ let A = {},
   C = {},
   R = {},
   P = {},
-  D = {},
-  w = I.hVg.THEATRE,
+  w = {},
+  D = S.hVg.THEATRE,
   L = {},
   x = [],
   M = 30;
@@ -48,10 +48,10 @@ function k(e, t, n) {
     sessionId: r,
     streamKey: e,
     serverId: t,
-    initialLayout: w,
+    initialLayout: D,
     analyticsContext: n,
     isStreamer: null != C[e],
-    parentMediaSessionId: S.Z.getMediaSessionId()
+    parentMediaSessionId: I.Z.getMediaSessionId()
   })
 }
 
@@ -119,7 +119,7 @@ function V(e) {
       distributor: e.distributor
     })
   }
-  null != l ? D[u] = l : delete D[u]
+  null != l ? w[u] = l : delete w[u]
 }
 
 function F(e) {
@@ -133,7 +133,7 @@ function F(e) {
       isOwner: r
     } = e;
     n.setActionContext(t), r && n.trackEnd()
-  }), P[n] = null, R[n] = null, delete D[n]
+  }), P[n] = null, R[n] = null, delete w[n]
 }
 
 function Z(e) {
@@ -148,14 +148,14 @@ function Z(e) {
   if (null == a && null != n) {
     null == R[t] && (C[t] = null);
     let e = (0, h.my)(t);
-    null == C[t] && null == P[t] && (C[t] = (0, g.L2)(e, O.Z));
+    null == C[t] && null == P[t] && (C[t] = (0, m.L2)(e, O.Z));
     let i = new p.A({
       streamRegion: r,
       streamApplication: C[t],
       streamSourceType: et(P[t]),
       actionContext: A[t],
       numViewers: null != o ? o.length : 0,
-      goLiveModalDurationMs: D[t]
+      goLiveModalDurationMs: w[t]
     });
     a = k(t, n, i), L[t] = a
   }
@@ -198,7 +198,7 @@ function z(e) {
   let {
     layout: t
   } = e;
-  w = t, Object.values(L).forEach(e => e.layoutChange(t))
+  D = t, Object.values(L).forEach(e => e.layoutChange(t))
 }
 
 function q() {
@@ -271,7 +271,7 @@ function et(e) {
 }
 class en extends(o = u.ZP.Store) {
   getActiveStreamKey() {
-    return (0, m.Z)(y.Z) ? i : null
+    return (0, g.Z)(y.Z) ? i : null
   }
   getRTCConnections() {
     return L
@@ -283,7 +283,7 @@ class en extends(o = u.ZP.Store) {
     return L[e]
   }
   getStatsHistory(e, t, n) {
-    if (!(0, m.Z)(y.Z) || null == t) return null;
+    if (!(0, g.Z)(y.Z) || null == t) return null;
     if (n) {
       let n = v.Z.getActiveStreamForUser(t, e);
       if (null == n || 0 === v.Z.getViewerIds(n).length) return null
@@ -291,10 +291,10 @@ class en extends(o = u.ZP.Store) {
     return x.map(e => n ? $(e.rtp.outbound) : ee(e.rtp.inbound[t]))
   }
   getQuality() {
-    if (!(0, m.Z)(y.Z)) return I.IE4.UNKNOWN;
+    if (!(0, g.Z)(y.Z)) return S.IE4.UNKNOWN;
     let e = this.getActiveStreamKey(),
       t = null != e ? L[e] : null;
-    return null != t ? t.quality : I.IE4.UNKNOWN
+    return null != t ? t.quality : S.IE4.UNKNOWN
   }
   getMediaSessionId(e) {
     if (null == e) return null;

@@ -6,7 +6,7 @@ var r = n(444675),
   },
   o = /%[sdj%]/g;
 t.format = function(e) {
-  if (!I(e)) {
+  if (!S(e)) {
     for (var t = [], n = 0; n < arguments.length; n++) t.push(c(arguments[n]));
     return t.join(" ")
   }
@@ -75,9 +75,9 @@ function f(e) {
 }
 
 function _(e, n, r) {
-  if (e.customInspect && n && D(n.inspect) && n.inspect !== t.inspect && !(n.constructor && n.constructor.prototype === n)) {
+  if (e.customInspect && n && w(n.inspect) && n.inspect !== t.inspect && !(n.constructor && n.constructor.prototype === n)) {
     var i, o = n.inspect(r, e);
-    return I(o) || (o = _(e, o, r)), o
+    return S(o) || (o = _(e, o, r)), o
   }
   var a = p(e, n);
   if (a) return a;
@@ -85,7 +85,7 @@ function _(e, n, r) {
     l = f(s);
   if (e.showHidden && (s = Object.getOwnPropertyNames(n)), P(n) && (s.indexOf("message") >= 0 || s.indexOf("description") >= 0)) return h(n);
   if (0 === s.length) {
-    if (D(n)) {
+    if (w(n)) {
       var c = n.name ? ": " + n.name : "";
       return e.stylize("[Function" + c + "]", "special")
     }
@@ -96,32 +96,32 @@ function _(e, n, r) {
   var u = "",
     d = !1,
     b = ["{", "}"];
-  return (v(n) && (d = !0, b = ["[", "]"]), D(n) && (u = " [Function" + (n.name ? ": " + n.name : "") + "]"), A(n) && (u = " " + RegExp.prototype.toString.call(n)), R(n) && (u = " " + Date.prototype.toUTCString.call(n)), P(n) && (u = " " + h(n)), 0 !== s.length || d && 0 != n.length) ? r < 0 ? A(n) ? e.stylize(RegExp.prototype.toString.call(n), "regexp") : e.stylize("[Object]", "special") : (e.seen.push(n), i = d ? g(e, n, r, l, s) : s.map(function(t) {
-    return m(e, n, r, l, t, d)
+  return (v(n) && (d = !0, b = ["[", "]"]), w(n) && (u = " [Function" + (n.name ? ": " + n.name : "") + "]"), A(n) && (u = " " + RegExp.prototype.toString.call(n)), R(n) && (u = " " + Date.prototype.toUTCString.call(n)), P(n) && (u = " " + h(n)), 0 !== s.length || d && 0 != n.length) ? r < 0 ? A(n) ? e.stylize(RegExp.prototype.toString.call(n), "regexp") : e.stylize("[Object]", "special") : (e.seen.push(n), i = d ? m(e, n, r, l, s) : s.map(function(t) {
+    return g(e, n, r, l, t, d)
   }), e.seen.pop(), E(i, u, b)) : b[0] + u + b[1]
 }
 
 function p(e, t) {
   if (N(t)) return e.stylize("undefined", "undefined");
-  if (I(t)) {
+  if (S(t)) {
     var n = "'" + JSON.stringify(t).replace(/^"|"$/g, "").replace(/'/g, "\\'").replace(/\\"/g, '"') + "'";
     return e.stylize(n, "string")
   }
-  return S(t) ? e.stylize("" + t, "number") : b(t) ? e.stylize("" + t, "boolean") : y(t) ? e.stylize("null", "null") : void 0
+  return I(t) ? e.stylize("" + t, "number") : b(t) ? e.stylize("" + t, "boolean") : y(t) ? e.stylize("null", "null") : void 0
 }
 
 function h(e) {
   return "[" + Error.prototype.toString.call(e) + "]"
 }
 
-function g(e, t, n, r, i) {
-  for (var o = [], a = 0, s = t.length; a < s; ++a) j(t, String(a)) ? o.push(m(e, t, n, r, String(a), !0)) : o.push("");
+function m(e, t, n, r, i) {
+  for (var o = [], a = 0, s = t.length; a < s; ++a) j(t, String(a)) ? o.push(g(e, t, n, r, String(a), !0)) : o.push("");
   return i.forEach(function(i) {
-    i.match(/^\d+$/) || o.push(m(e, t, n, r, i, !0))
+    i.match(/^\d+$/) || o.push(g(e, t, n, r, i, !0))
   }), o
 }
 
-function m(e, t, n, r, i, o) {
+function g(e, t, n, r, i, o) {
   var a, s, l;
   if ((l = Object.getOwnPropertyDescriptor(t, i) || {
       value: t[i]
@@ -159,11 +159,11 @@ function O(e) {
   return null == e
 }
 
-function S(e) {
+function I(e) {
   return "number" == typeof e
 }
 
-function I(e) {
+function S(e) {
   return "string" == typeof e
 }
 
@@ -191,11 +191,11 @@ function P(e) {
   return C(e) && ("[object Error]" === L(e) || e instanceof Error)
 }
 
-function D(e) {
+function w(e) {
   return "function" == typeof e
 }
 
-function w(e) {
+function D(e) {
   return null === e || "boolean" == typeof e || "number" == typeof e || "string" == typeof e || "symbol" == typeof e || void 0 === e
 }
 
@@ -240,7 +240,7 @@ t.debuglog = function(e) {
   string: "green",
   date: "magenta",
   regexp: "red"
-}, t.types = n(842406), t.isArray = v, t.isBoolean = b, t.isNull = y, t.isNullOrUndefined = O, t.isNumber = S, t.isString = I, t.isSymbol = T, t.isUndefined = N, t.isRegExp = A, t.types.isRegExp = A, t.isObject = C, t.isDate = R, t.types.isDate = R, t.isError = P, t.types.isNativeError = P, t.isFunction = D, t.isPrimitive = w, t.isBuffer = n(102439);
+}, t.types = n(842406), t.isArray = v, t.isBoolean = b, t.isNull = y, t.isNullOrUndefined = O, t.isNumber = I, t.isString = S, t.isSymbol = T, t.isUndefined = N, t.isRegExp = A, t.types.isRegExp = A, t.isObject = C, t.isDate = R, t.types.isDate = R, t.isError = P, t.types.isNativeError = P, t.isFunction = w, t.isPrimitive = D, t.isBuffer = n(102439);
 var M = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 function k() {

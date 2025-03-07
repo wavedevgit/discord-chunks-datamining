@@ -19,9 +19,9 @@ let {
   SemanticColors: p,
   RawColors: h
 } = s.V, {
-  Shadows: g
+  Shadows: m
 } = c.V, {
-  Spacing: m
+  Spacing: g
 } = u.V, E = Symbol("semanticColor");
 
 function v(e) {
@@ -38,7 +38,7 @@ let b = {
     [E]: t
   })),
   unsafe_rawColors: h,
-  shadows: a()(g, e => {
+  shadows: a()(m, e => {
     function t(t) {
       return {
         resolve: (n, r) => t(e[n].nativeStyles, r)
@@ -53,7 +53,7 @@ let b = {
     }
   }),
   radii: l.w,
-  spacing: m,
+  spacing: g,
   internal: {
     isSemanticColor: e => "object" == typeof e && null !== e && E in e,
     getSemanticColorName: e => e[E],

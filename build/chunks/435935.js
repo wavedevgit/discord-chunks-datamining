@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  k: () => S
+  k: () => I
 });
 var r, i, o = n(200651),
   a = n(192379),
@@ -51,7 +51,7 @@ function p(e, t) {
 
 function h(e, t) {
   if (null == e) return {};
-  var n, r, i = g(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -59,14 +59,14 @@ function h(e, t) {
   return i
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = {
+let g = {
     VERTICAL: c.flexVertical,
     HORIZONTAL: c.flexHorizontal,
     HORIZONTAL_REVERSE: c.flexHorizontalReverse
@@ -106,7 +106,7 @@ class O extends(r = a.PureComponent) {
         wrap: d
       } = e,
       _ = h(e, ["children", "className", "shrink", "grow", "basis", "style", "wrap"]),
-      g = f({
+      m = f({
         style: f({
           flexGrow: i,
           flexShrink: r,
@@ -116,9 +116,9 @@ class O extends(r = a.PureComponent) {
       }, _);
     if (!d && "string" != typeof t && 1 === a.Children.count(t)) {
       let e = a.Children.only(t);
-      return g.style = f({}, g.style, e.props.style), g.className = l()(e.props.className, n), a.cloneElement(e, g)
+      return m.style = f({}, m.style, e.props.style), m.className = l()(e.props.className, n), a.cloneElement(e, m)
     }
-    return (0, o.jsx)("div", p(f({}, g), {
+    return (0, o.jsx)("div", p(f({}, m), {
       children: t
     }))
   }
@@ -128,7 +128,7 @@ d(O, "defaultProps", {
   style: {},
   wrap: !1
 });
-class S extends(i = a.PureComponent) {
+class I extends(i = a.PureComponent) {
   render() {
     let e = this.props,
       {
@@ -141,25 +141,25 @@ class S extends(i = a.PureComponent) {
         shrink: c,
         grow: d,
         basis: _,
-        style: g,
-        gutter: m
+        style: m,
+        gutter: g
       } = e,
       E = h(e, ["children", "className", "direction", "justify", "align", "wrap", "shrink", "grow", "basis", "style", "gutter"]),
       v = f({
         flexShrink: c,
         flexGrow: d,
         flexBasis: _
-      }, g);
+      }, m);
     return (0, o.jsx)("div", p(f({
       style: v,
-      className: l()(u.flex, r, i, a, s, m, n)
+      className: l()(u.flex, r, i, a, s, g, n)
     }, E), {
       children: t
     }))
   }
 }
-d(S, "Child", O), d(S, "Direction", m), d(S, "Align", b), d(S, "Justify", E), d(S, "Wrap", v), d(S, "Gutter", y), d(S, "defaultProps", {
-  direction: m.HORIZONTAL,
+d(I, "Child", O), d(I, "Direction", g), d(I, "Align", b), d(I, "Justify", E), d(I, "Wrap", v), d(I, "Gutter", y), d(I, "defaultProps", {
+  direction: g.HORIZONTAL,
   justify: E.START,
   align: b.STRETCH,
   wrap: v.WRAP,

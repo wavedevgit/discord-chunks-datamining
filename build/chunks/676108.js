@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -52,13 +52,13 @@ function h(e, t) {
   }), e
 }
 
-function g(e) {
+function m(e) {
   var t;
   let {
     editorRef: n,
     options: f,
     channel: p
-  } = e, g = null === (t = n.current) || void 0 === t ? void 0 : t.getSlateEditor(), m = i.useCallback((e, t) => {
+  } = e, m = null === (t = n.current) || void 0 === t ? void 0 : t.getSlateEditor(), g = i.useCallback((e, t) => {
     let r = n.current;
     null != e && null != r && r.insertEmoji(e, t, !1), t && (0, l._Q)()
   }, [n]), E = e => {
@@ -70,12 +70,12 @@ function g(e) {
       channel: p,
       closePopout: t,
       onSelectEmoji: (e, n) => {
-        m(e, n), n && t()
+        g(e, n), n && t()
       },
       pickerIntention: u.Hz.COMMUNITY_CONTENT
     })
   };
-  return null == g ? null : (0, r.jsxs)("div", {
+  return null == m ? null : (0, r.jsxs)("div", {
     id: "slate-toolbar",
     className: d.staticToolbar,
     children: [(0, r.jsx)("div", {

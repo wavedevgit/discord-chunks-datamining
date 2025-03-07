@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => I
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -16,9 +16,9 @@ var r = n(200651),
   _ = n(600164),
   p = n(981631),
   h = n(831077),
-  g = n(802138);
+  m = n(802138);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,7 +34,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -100,7 +100,7 @@ class O extends i.PureComponent {
           children: o
         }), t && (0, r.jsx)(_.Z, {
           wrap: _.Z.Wrap.WRAP,
-          className: g.marginReset,
+          className: m.marginReset,
           grow: 0,
           shrink: 0,
           children: (0, r.jsx)(f.dz2, {
@@ -112,9 +112,9 @@ class O extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), m(this, "state", {
+    super(...e), g(this, "state", {
       color: y(this.props.color)
-    }), m(this, "handleKeyUp", e => {
+    }), g(this, "handleKeyUp", e => {
       if (e.which === p.yXg.ENTER || e.which === p.yXg.SPACE) {
         let e = this.props,
           {
@@ -122,7 +122,7 @@ class O extends i.PureComponent {
           } = e;
         t(v(e, ["onClick"]))
       }
-    }), m(this, "handleClick", () => {
+    }), g(this, "handleClick", () => {
       let e = this.props,
         {
           onClick: t
@@ -131,4 +131,4 @@ class O extends i.PureComponent {
     })
   }
 }
-let S = O
+let I = O

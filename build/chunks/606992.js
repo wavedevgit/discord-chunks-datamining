@@ -43,10 +43,10 @@ function a(e) {
       break
     }
     if (null == p) return;
-    let g = f.document.createRange();
-    g.setStart(p, h), g.setEnd(p, h);
-    let m = g.getBoundingClientRect();
-    (null == m ? void 0 : m.height) !== 0 && c(null != m ? m : null)
+    let m = f.document.createRange();
+    m.setStart(p, h), m.setEnd(p, h);
+    let g = m.getBoundingClientRect();
+    (null == g ? void 0 : g.height) !== 0 && c(null != g ? g : null)
   }, [s, f.document, a, d, u, n]);
   return r.useEffect(() => (f.document.addEventListener("selectionchange", _), () => f.document.removeEventListener("selectionchange", _)), [f.document, _]), r.useEffect(() => {
     _()

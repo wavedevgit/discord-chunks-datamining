@@ -18,7 +18,7 @@ var i = r(n(532825)),
   f = /^--/;
 
 function _(e, t) {
-  return null == t || "boolean" == typeof t || "" === t ? "" : "number" != typeof t || 0 === t || f.test(e) || g.hasOwnProperty(e) && g[e] ? ("" + t).trim() : t + "px"
+  return null == t || "boolean" == typeof t || "" === t ? "" : "number" != typeof t || 0 === t || f.test(e) || m.hasOwnProperty(e) && m[e] ? ("" + t).trim() : t + "px"
 }
 var p = {};
 
@@ -47,7 +47,7 @@ function h(e, t) {
     }), void 0 !== s && (e.scrollTop = s), void 0 !== l && (e.scrollLeft = l)
   })
 }
-var g = {
+var m = {
     animationIterationCount: !0,
     borderImageOutset: !0,
     borderImageSlice: !0,
@@ -90,27 +90,27 @@ var g = {
     strokeOpacity: !0,
     strokeWidth: !0
   },
-  m = function(e, t) {
+  g = function(e, t) {
     return e + t.charAt(0).toUpperCase() + t.substring(1)
   },
   E = ["Webkit", "Ms", "Moz", "O"];
-g = Object.keys(g).reduce(function(e, t) {
+m = Object.keys(m).reduce(function(e, t) {
   return E.forEach(function(n) {
-    return e[m(n, t)] = e[t]
+    return e[g(n, t)] = e[t]
   }), e
-}, g);
+}, m);
 var v = /^(matrix|translate|scale|rotate|skew)/,
   b = /^(translate)/,
   y = /^(rotate|skew)/,
   O = function(e, t) {
     return u.is.num(e) && 0 !== e ? e + t : e
   },
-  S = function e(t, n) {
+  I = function e(t, n) {
     return u.is.arr(t) ? t.every(function(t) {
       return e(t, n)
     }) : u.is.num(t) ? t === n : parseFloat(t) === n
   },
-  I = function(e) {
+  S = function(e) {
     function t(t) {
       var n = t.x,
         r = t.y,
@@ -121,7 +121,7 @@ var v = /^(matrix|translate|scale|rotate|skew)/,
       return (n || r || o) && (s.push([n || 0, r || 0, o || 0]), l.push(function(e) {
         return ["translate3d(" + e.map(function(e) {
           return O(e, "px")
-        }).join(",") + ")", S(e, 0)]
+        }).join(",") + ")", I(e, 0)]
       })), u.each(a, function(e, t) {
         if ("transform" === t) s.push([e || ""]), l.push(function(e) {
           return [e, "" === e]
@@ -134,11 +134,11 @@ var v = /^(matrix|translate|scale|rotate|skew)/,
               r = e[1],
               i = e[2],
               o = e[3];
-            return ["rotate3d(" + t + "," + r + "," + i + "," + O(o, n) + ")", S(o, 0)]
+            return ["rotate3d(" + t + "," + r + "," + i + "," + O(o, n) + ")", I(o, 0)]
           } : function(e) {
             return [t + "(" + e.map(function(e) {
               return O(e, n)
-            }).join(",") + ")", S(e, +!!t.startsWith("scale"))]
+            }).join(",") + ")", I(e, +!!t.startsWith("scale"))]
           })
         }
       }), s.length && (a.transform = new T(s, l)), e.call(this, a) || this
@@ -196,7 +196,7 @@ o.Globals.assign({
 var A = c.createHost(N, {
   applyAnimatedValues: h,
   createAnimatedStyle: function(e) {
-    return new I(e)
+    return new S(e)
   },
   getComponentProps: function(e) {
     return e.scrollTop, e.scrollLeft, i(e, ["scrollTop", "scrollLeft"])

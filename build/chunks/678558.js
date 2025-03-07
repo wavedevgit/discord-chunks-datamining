@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(695349),
   p = n(314884),
   h = n(78839),
-  g = n(267642),
-  m = n(879892),
+  m = n(267642),
+  g = n(879892),
   E = n(981631),
   v = n(474936),
   b = n(388032),
@@ -32,7 +32,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function S(e) {
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,7 +57,7 @@ function I(e, t) {
 }
 
 function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -85,13 +85,13 @@ let C = e => {
     analyticsSourceLocation: n,
     guild: o,
     buttonText: O,
-    targetBoostedGuildTier: I,
+    targetBoostedGuildTier: S,
     onClose: A = () => {},
     closeLayer: C = () => {},
     pauseAnimation: R = !1,
     applicationId: P,
-    handleSubscribeModalClose: D,
-    withHighlight: w = !1,
+    handleSubscribeModalClose: w,
+    withHighlight: D = !1,
     icon: L
   } = e, x = N(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon"]), {
     analyticsLocations: M
@@ -99,13 +99,13 @@ let C = e => {
     fractionalState: G
   } = (0, d.Z)(), B = (0, _.W)();
   p.Z.hasFetched || (0, l.X8)();
-  let V = (0, g.vx)(p.Z.boostSlots),
-    F = null != I ? Math.max((0, g.KK)(o, I), 1) : 1,
-    Z = (0, g.aq)({
+  let V = (0, m.vx)(p.Z.boostSlots),
+    F = null != S ? Math.max((0, m.KK)(o, S), 1) : 1,
+    Z = (0, m.aq)({
       fractionalState: G
     }),
     H = async () => {
-      U(!0), await (0, m.u)({
+      U(!0), await (0, g.u)({
         analyticsLocations: M,
         analyticsLocation: t,
         analyticsSourceLocation: n,
@@ -115,7 +115,7 @@ let C = e => {
         closeLayer: C,
         inPopout: k,
         applicationId: P,
-        handleSubscribeModalClose: D
+        handleSubscribeModalClose: w
       }), U(!1)
     }, W = h.ZP.getPremiumTypeSubscription(), Y = (0, r.jsxs)("div", {
       className: y.button,
@@ -130,18 +130,18 @@ let C = e => {
   }), x.disabled = !0), null != Z) ? (0, r.jsx)(f.Z, {
     text: B ? void 0 : Z,
     "aria-label": !1,
-    children: e => (0, r.jsx)(s.gtL, T(S(T(S({}, e), {
+    children: e => (0, r.jsx)(s.gtL, T(I(T(I({}, e), {
       disabled: !0,
       size: s.zxk.Sizes.SMALL,
       pauseAnimation: R
     }), x), {
       children: Y
     }))
-  }) : (0, r.jsx)(s.gtL, T(S({
+  }) : (0, r.jsx)(s.gtL, T(I({
     size: s.zxk.Sizes.SMALL
   }, x), {
     className: a()(x.className, {
-      [y.buttonHighlighted]: w
+      [y.buttonHighlighted]: D
     }),
     submitting: j,
     onClick: H,

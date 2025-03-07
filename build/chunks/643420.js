@@ -51,8 +51,8 @@ function p(e, t) {
   }), e
 }
 let h = 1e3 / 60,
-  g = 24,
-  m = {
+  m = 24,
+  g = {
     velocity: {
       type: "static-random",
       minValue: {
@@ -111,38 +111,38 @@ function b(e) {
     children: t
   } = e, [n, l] = i.useState(!1), d = (0, a.bp)(), [_, b] = i.useState(null), {
     confettiCanvas: y
-  } = i.useContext(s.h), O = (0, o.uR)(y, _), S = i.useMemo(() => ({
+  } = i.useContext(s.h), O = (0, o.uR)(y, _), I = i.useMemo(() => ({
     triggerAnimation: () => l(!0),
     untriggerAnimation: () => l(!1)
-  }), []), I = i.useCallback(() => {
+  }), []), S = i.useCallback(() => {
     let e = null == y ? void 0 : y.getCanvas();
     if (null == e) return;
     let t = e.getBoundingClientRect();
-    O.createConfetti(p(f({}, m), {
+    O.createConfetti(p(f({}, g), {
       position: {
         type: "static-random",
         minValue: {
           x: -t.width / 2,
-          y: -g
+          y: -m
         },
         maxValue: {
           x: t.width,
-          y: -g
+          y: -m
         }
       }
     }))
   }, [O, y]);
   return (i.useEffect(() => {
-    let e = n ? setInterval(I, h) : null;
+    let e = n ? setInterval(S, h) : null;
     return () => clearInterval(e)
-  }, [n, I]), d === u.IlC.OVERLAY) ? t : (0, r.jsxs)(c.Rm.Provider, {
-    value: S,
+  }, [n, S]), d === u.IlC.OVERLAY) ? t : (0, r.jsxs)(c.Rm.Provider, {
+    value: I,
     children: [t, (0, r.jsx)(o.Ji, {
       ref: b,
       colors: E,
       sprites: v,
-      spriteWidth: g,
-      spriteHeight: g
+      spriteWidth: m,
+      spriteHeight: m
     })]
   })
 }

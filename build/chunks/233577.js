@@ -17,8 +17,8 @@ var i = n(570140),
   _ = n(419922),
   p = n(483360),
   h = n(877565),
-  g = n(590921),
-  m = n(981631),
+  m = n(590921),
+  g = n(981631),
   E = n(388032);
 let v = 8,
   b = {
@@ -39,7 +39,7 @@ let O = {
   stores: [d.Z],
   matches(e, t, n, r, i) {
     var o;
-    return i.commands !== g.L8.DISABLED && i.commands !== g.L8.OLD_BUILT_INS && (null === (o = a.Z.getActiveCommand(e.id)) || void 0 === o ? void 0 : o.integrationType) === m.q9n.STICKER && a.Z.getOptionStates(e.id).query.hasValue
+    return i.commands !== m.L8.DISABLED && i.commands !== m.L8.OLD_BUILT_INS && (null === (o = a.Z.getActiveCommand(e.id)) || void 0 === o ? void 0 : o.integrationType) === g.q9n.STICKER && a.Z.getOptionStates(e.id).query.hasValue
   },
   queryResults(e, t, n, r) {
     var i;
@@ -120,16 +120,16 @@ let O = {
       },
       command: p,
       commandOrigin: s.bB.CHAT
-    }), o.ZP.trackWithMetadata(m.rMx.APPLICATION_COMMAND_USED, {
+    }), o.ZP.trackWithMetadata(g.rMx.APPLICATION_COMMAND_USED, {
       command_id: p.id,
       application_id: p.applicationId,
       command_type: p.type,
       source: a.Z.getSource(u.id)
     }));
     let h = r[l];
-    return c.sendSticker(h.sticker, f.V0.BUILT_IN_INTEGRATION), h.sticker.type === f.n0.GUILD && (t = h.sticker.guild_id), o.ZP.trackWithMetadata(m.rMx.SEARCH_RESULT_SELECTED, {
+    return c.sendSticker(h.sticker, f.V0.BUILT_IN_INTEGRATION), h.sticker.type === f.n0.GUILD && (t = h.sticker.guild_id), o.ZP.trackWithMetadata(g.rMx.SEARCH_RESULT_SELECTED, {
       load_id: h.sticker.id,
-      search_type: m.aib.STICKER,
+      search_type: g.aib.STICKER,
       source_object: "/".concat(n),
       total_results: r.length,
       index_num: l,
@@ -137,7 +137,7 @@ let O = {
       sticker_id: h.sticker.id,
       query: _
     }), {
-      type: g.z2.STICKER,
+      type: m.z2.STICKER,
       metadata: {
         numStickerResults: r.length,
         stickerId: h.sticker.id

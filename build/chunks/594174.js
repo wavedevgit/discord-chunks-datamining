@@ -4,7 +4,7 @@ n.r(t), n.d(t, {
   ASSISTANT_WUMPUS_VOICE_USER: () => b,
   default: () => eA,
   mergeUser: () => N,
-  transformUser: () => I,
+  transformUser: () => S,
   users: () => E
 }), n(47120), n(789020), n(51350), n(653041), n(230036);
 var r = n(392711),
@@ -20,9 +20,9 @@ var r = n(392711),
   _ = n(412788),
   p = n(981631),
   h = n(308083),
-  g = n(474936);
+  m = n(474936);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -48,7 +48,7 @@ function O(e, t) {
   return !(null == n || (0, h.dM)(n.primaryGuild, t.primary_guild)) && (null == n.primaryGuild || null != t.primary_guild) && (n.primaryGuild = (0, h.lt)(t.primary_guild), E[n.id] = n, v++, !0)
 }
 
-function S(e, t) {
+function I(e, t) {
   switch (!0) {
     case null == e.primaryGuild && null == t.primary_guild:
       break;
@@ -62,7 +62,7 @@ function S(e, t) {
   return t
 }
 
-function I(e) {
+function S(e) {
   let t = e.mfa_enabled;
   null != t && (e.mfaEnabled = t, delete e.mfa_enabled);
   let n = (0, l.G)(e.premium_type);
@@ -98,8 +98,8 @@ function N(e) {
   if (null == r) void 0 !== (t = (r = new c.Z(e)).premiumType) && i && (r.premiumType = C((0, l.QI)(r), r.premiumType));
   else if (n) {
     var o;
-    let n = I(e);
-    void 0 !== (t = null !== (o = n.premium_type) && void 0 !== o ? o : n.premiumType) && i && (0, l.VR)(n) && (n = A(n)), n = S(r, n), r = r.merge(n)
+    let n = S(e);
+    void 0 !== (t = null !== (o = n.premium_type) && void 0 !== o ? o : n.premiumType) && i && (0, l.VR)(n) && (n = A(n)), n = I(r, n), r = r.merge(n)
   }(0, l.jX)((0, l.QI)(r), t, r.premiumType);
   let a = E[e.id] !== r;
   return E[e.id] = r, a && v++, a
@@ -116,7 +116,7 @@ function C(e, t) {
   if (!e) return t;
   let n = s.Z.getPremiumTypeOverride(),
     r = s.Z.getPremiumTypeActual();
-  return n === g.F_ ? r : n
+  return n === m.F_ ? r : n
 }
 
 function R(e, t) {
@@ -156,7 +156,7 @@ function P(e) {
   }))
 }
 
-function D(e) {
+function w(e) {
   let {
     guilds: t,
     lazyPrivateChannels: n
@@ -173,13 +173,13 @@ function D(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   return !("incomplete" in e)
 }
 
 function L(e) {
   if (null != e.users)
-    for (let t of e.users) !(t.id in E && w(t)) && (E[t.id] = new c.Z(t))
+    for (let t of e.users) !(t.id in E && D(t)) && (E[t.id] = new c.Z(t))
 }
 
 function x(e) {
@@ -492,7 +492,7 @@ function eh(e) {
   return null != t.user && N(t.user)
 }
 
-function eg(e) {
+function em(e) {
   let {
     appliedBoosts: t
   } = e;
@@ -504,7 +504,7 @@ function eg(e) {
   })
 }
 
-function em(e) {
+function eg(e) {
   let {
     request: t
   } = e, {
@@ -558,14 +558,14 @@ function eO(e) {
   return n.reduce((e, t) => N(t) || e, !1)
 }
 
-function eS(e) {
+function eI(e) {
   let {
     members: t
   } = e, n = f.default.getId();
   return t.reduce((e, t) => t.member.user.id === n ? e : N(t.member.user) || e, !1)
 }
 
-function eI(e) {
+function eS(e) {
   let {
     messageItems: t
   } = e;
@@ -598,7 +598,7 @@ class eN extends _.Z {
     if (null != t)
       for (let e of t.users) E[e.id] = new c.Z(e);
     if (null != e.users)
-      for (let t of e.users) !(t.id in E && w(t)) && (E[t.id] = new c.Z(t));
+      for (let t of e.users) !(t.id in E && D(t)) && (E[t.id] = new c.Z(t));
     for (let t of [e.privateChannels, e.initialGuildChannels])
       for (let e of t) {
         var n;
@@ -639,7 +639,7 @@ class eN extends _.Z {
   constructor() {
     super({
       CONNECTION_OPEN: P,
-      CONNECTION_OPEN_SUPPLEMENTAL: D,
+      CONNECTION_OPEN_SUPPLEMENTAL: w,
       UPDATE_CLIENT_PREMIUM_TYPE: k,
       OVERLAY_INITIALIZE: L,
       CACHE_LOADED: e => this.handleLoadCache(e),
@@ -662,8 +662,8 @@ class eN extends _.Z {
       GUILD_BAN_REMOVE: $,
       CHANNEL_RECIPIENT_ADD: ee,
       CHANNEL_RECIPIENT_REMOVE: ee,
-      GUILD_JOIN_REQUEST_CREATE: em,
-      GUILD_JOIN_REQUEST_UPDATE: em,
+      GUILD_JOIN_REQUEST_CREATE: eg,
+      GUILD_JOIN_REQUEST_UPDATE: eg,
       GUILD_MEMBER_ADD: et,
       GUILD_MEMBER_UPDATE: et,
       GUILD_MEMBERS_CHUNK_BATCH: er,
@@ -680,7 +680,7 @@ class eN extends _.Z {
       AUDIT_LOG_FETCH_SUCCESS: ep,
       AUDIT_LOG_FETCH_NEXT_PAGE_SUCCESS: ep,
       GIFT_CODE_RESOLVE_SUCCESS: eh,
-      GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: eg,
+      GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: em,
       LOAD_THREADS_SUCCESS: B,
       LOAD_ARCHIVED_THREADS_SUCCESS: B,
       LOAD_FORUM_POSTS: V,
@@ -695,11 +695,11 @@ class eN extends _.Z {
       FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: ey,
       FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: eO,
       FAMILY_CENTER_REQUEST_LINK_SUCCESS: eb,
-      MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: eS,
-      LOAD_GRAVITY_HYDRATED: eI,
+      MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: eI,
+      LOAD_GRAVITY_HYDRATED: eS,
       EMBEDDED_ACTIVITY_UPDATE_V2: eT
     })
   }
 }
-m(eN, "displayName", "UserStore"), m(eN, "LATEST_SNAPSHOT_VERSION", 1);
+g(eN, "displayName", "UserStore"), g(eN, "LATEST_SNAPSHOT_VERSION", 1);
 let eA = new eN

@@ -17,15 +17,15 @@ var r = n(990547),
   _ = n(314897),
   p = n(664915),
   h = n(984933),
-  g = n(430824),
-  m = n(944486),
+  m = n(430824),
+  g = n(944486),
   E = n(914010),
   v = n(594174),
   b = n(626135),
   y = n(700785),
   O = n(74538),
-  S = n(573261),
-  I = n(668781),
+  I = n(573261),
+  S = n(668781),
   T = n(981631),
   N = n(388032);
 
@@ -68,9 +68,9 @@ function P(e, t) {
   }), e
 }
 
-function D(e, t) {
+function w(e, t) {
   if (null == e) return {};
-  var n, r, i = w(e, t);
+  var n, r, i = D(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -78,7 +78,7 @@ function D(e, t) {
   return i
 }
 
-function w(e, t) {
+function D(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -86,7 +86,7 @@ function w(e, t) {
   return i
 }
 let L = e => {
-    I.Z.show({
+    S.Z.show({
       title: N.NW.string(N.t.cTaRxM),
       body: N.NW.formatToPlainString(N.t["VSd+Ag"], {
         quantity: e
@@ -102,15 +102,15 @@ let L = e => {
     })
   },
   M = () => {
-    I.Z.show({
+    S.Z.show({
       title: N.NW.string(N.t.ZZlox8),
       body: N.NW.string(N.t.ZUEGFh)
     })
   };
 
 function k(e) {
-  return new Promise(t => g.Z.addConditionalChangeListener(() => {
-    let n = g.Z.getGuild(e);
+  return new Promise(t => m.Z.addConditionalChangeListener(() => {
+    let n = m.Z.getGuild(e);
     return null == n || (t(n), !1)
   }))
 }
@@ -139,7 +139,7 @@ let U = {
     }));
     try {
       let t = E.Z.getGuildId(),
-        r = e === t && null != g.Z.getGuild(e) ? m.Z.getChannelId(e) : null,
+        r = e === t && null != m.Z.getGuild(e) ? g.Z.getChannelId(e) : null,
         i = await o.tn.put({
           url: T.ANM.GUILD_JOIN(e),
           query: {
@@ -159,7 +159,7 @@ let U = {
           type: "USER_GUILD_JOIN_REQUEST_UPDATE",
           guildId: e,
           request: i.body.join_request
-        }), null == g.Z.getGuild(e) && i.body.show_verification_form) return (0, f.uL)(T.Z5c.GUILD_MEMBER_VERIFICATION(e)), i;
+        }), null == m.Z.getGuild(e) && i.body.show_verification_form) return (0, f.uL)(T.Z5c.GUILD_MEMBER_VERIFICATION(e)), i;
       if (null != i.body.welcome_screen && a.Z.dispatch({
           type: "WELCOME_SCREEN_UPDATE",
           guildId: i.body.id,
@@ -255,7 +255,7 @@ let U = {
       reason: a,
       location: s
     } = e;
-    return S.Z.patch({
+    return I.Z.patch({
       url: T.ANM.GUILD_MEMBER(t, n),
       reason: a,
       body: {
@@ -327,7 +327,7 @@ let U = {
     let {
       icon: r,
       unicodeEmoji: i
-    } = n, a = D(n, ["icon", "unicodeEmoji"]), s = null === r || (null == r ? void 0 : r.startsWith("data:")) ? r : void 0, c = await o.tn.patch({
+    } = n, a = w(n, ["icon", "unicodeEmoji"]), s = null === r || (null == r ? void 0 : r.startsWith("data:")) ? r : void 0, c = await o.tn.patch({
       url: T.ANM.GUILD_ROLE(e, t),
       body: P(C({}, a), {
         icon: s,

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   O: () => _,
-  Z: () => I
+  Z: () => S
 }), n(789020);
 var r, i = n(442837),
   o = n(570140),
@@ -47,11 +47,11 @@ var _ = function(e) {
 let p = "INITIALIZED",
   h = [];
 
-function g() {
+function m() {
   f = d(), p = "INITIALIZED", h = []
 }
 
-function m() {
+function g() {
   f.useActivityUrlOverride = !f.useActivityUrlOverride
 }
 
@@ -91,7 +91,7 @@ function O(e) {
   } = e;
   f.filter = t
 }
-class S extends(r = i.ZP.PersistedStore) {
+class I extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     f = u({}, d(), null != e ? e : {})
   }
@@ -123,10 +123,10 @@ class S extends(r = i.ZP.PersistedStore) {
     return this.getIsEnabled() && null != h.find(t => t.id === e)
   }
 }
-c(S, "displayName", "DeveloperActivityShelfStore"), c(S, "persistKey", "DeveloperActivityShelfStore"), c(S, "migrations", [e => (delete e.isEnabled, u({}, e))]);
-let I = new S(o.Z, {
-  LOGOUT: g,
-  DEVELOPER_ACTIVITY_SHELF_TOGGLE_USE_ACTIVITY_URL_OVERRIDE: m,
+c(I, "displayName", "DeveloperActivityShelfStore"), c(I, "persistKey", "DeveloperActivityShelfStore"), c(I, "migrations", [e => (delete e.isEnabled, u({}, e))]);
+let S = new I(o.Z, {
+  LOGOUT: m,
+  DEVELOPER_ACTIVITY_SHELF_TOGGLE_USE_ACTIVITY_URL_OVERRIDE: g,
   DEVELOPER_ACTIVITY_SHELF_SET_ACTIVITY_URL_OVERRIDE: E,
   DEVELOPER_ACTIVITY_SHELF_MARK_ACTIVITY_USED: v,
   DEVELOPER_ACTIVITY_SHELF_FETCH_START() {

@@ -93,15 +93,15 @@ var p = function() {
                 _ = d.anchorY,
                 p = d.offsetX,
                 h = d.offsetY,
-                g = {
+                m = {
                   anchorX: f,
                   anchorY: _
                 },
-                m = {
+                g = {
                   offsetX: p,
                   offsetY: h
                 },
-                E = (0, i.rK)(c, u, n, g, m);
+                E = (0, i.rK)(c, u, n, m, g);
               r.setDragImage(u, E.x, E.y)
             }
           }

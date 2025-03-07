@@ -16,15 +16,15 @@ var r = n(200651),
   _ = n(724884),
   p = n(355045),
   h = n(290799),
-  g = n(394769),
-  m = n(555932),
+  m = n(394769),
+  g = n(555932),
   E = n(808189),
   v = n(362948),
   b = n(245004),
   y = n(383881),
   O = n(981631),
-  S = n(388032),
-  I = n(37325);
+  I = n(388032),
+  S = n(37325);
 let T = function(e) {
   let {
     analyticsLocation: t,
@@ -32,7 +32,7 @@ let T = function(e) {
     onClose: T
   } = e, [N, A] = i.useState(!0), C = i.useRef(!1), R = (0, l.Z)(() => Date.now()), {
     analyticsLocations: P
-  } = (0, c.ZP)(), D = i.useCallback(() => {
+  } = (0, c.ZP)(), w = i.useCallback(() => {
     null == T || T(), f.default.track(O.rMx.MODAL_DISMISSED, {
       type: O.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: P,
@@ -41,7 +41,7 @@ let T = function(e) {
       guild_id: n.id,
       duration_open_ms: Date.now() - R
     })
-  }, [T, t, P, R, n.id]), w = i.useCallback(e => {
+  }, [T, t, P, R, n.id]), D = i.useCallback(e => {
     e && !C.current && (f.default.track(O.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
       type: O.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: P,
@@ -60,72 +60,72 @@ let T = function(e) {
     })
   }, [n.id, t, P]), i.useEffect(() => {
     function e(e) {
-      "Escape" === e.key && D()
+      "Escape" === e.key && w()
     }
     return window.addEventListener("keydown", e), () => {
       window.removeEventListener("keydown", e)
     }
-  }, [D]), (0, r.jsxs)(r.Fragment, {
+  }, [w]), (0, r.jsxs)(r.Fragment, {
     children: [null != T && (0, r.jsx)("div", {
-      className: I.closeIconWrapper,
+      className: S.closeIconWrapper,
       children: (0, r.jsx)(s.Z, {
-        className: I.closeIcon,
-        closeAction: D,
+        className: S.closeIcon,
+        closeAction: w,
         keybind: "ESC",
         variant: s.Z.Variants.SOLID
       })
     }), (0, r.jsxs)(a.yWw, {
-      className: I.scroller,
+      className: S.scroller,
       children: [(0, r.jsxs)("div", {
-        className: I.header,
+        className: S.header,
         children: [(0, r.jsxs)("div", {
-          className: I.headerContentWrapper,
+          className: S.headerContentWrapper,
           children: [(0, r.jsx)(u.Z, {
             guild: e.guild,
             themeResponsive: !1
           }), (0, r.jsx)(a.X6q, {
-            className: I.heading,
+            className: S.heading,
             color: "always-white",
             variant: "display-lg",
-            children: S.NW.string(S.t.N4sqzM)
+            children: I.NW.string(I.t.N4sqzM)
           }), (0, r.jsx)(p.Z, {
             guild: n,
-            closeLayer: D,
+            closeLayer: w,
             onCtaVisibilityChange: A
-          }), (0, r.jsx)(m.Z, {
+          }), (0, r.jsx)(g.Z, {
             guild: n
           }), (0, r.jsx)(E.Z, {
             guild: n
           })]
         }), (0, r.jsx)(y.O, {})]
       }), (0, r.jsxs)("div", {
-        className: I.middleBodyContentWrapper,
+        className: S.middleBodyContentWrapper,
         children: [(0, r.jsx)(b.Z, {
           guild: e.guild
         }), (0, r.jsx)(d.Z, {
           guild: e.guild
         })]
       }), (0, r.jsxs)("div", {
-        className: I.lowerBody,
+        className: S.lowerBody,
         children: [(0, r.jsxs)("div", {
-          className: I.lowerBodyContentWrapper,
+          className: S.lowerBodyContentWrapper,
           children: [(0, r.jsx)(v.Z, {
-            className: I.tierComparisonTable,
+            className: S.tierComparisonTable,
             guild: n
           }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(h.Z, {})]
         }), (0, r.jsx)(y.A, {}), (0, r.jsx)("div", {
-          className: I.lowerBodyBackgroundImage
+          className: S.lowerBodyBackgroundImage
         })]
       }), (0, r.jsx)(o.$, {
-        onChange: w,
+        onChange: D,
         children: (0, r.jsx)("div", {
-          className: I.persistentCtaSpacer
+          className: S.persistentCtaSpacer
         })
       })]
-    }), (0, r.jsx)(g.Z, {
+    }), (0, r.jsx)(m.Z, {
       guild: n,
       isVisible: !N,
-      closeLayer: D
+      closeLayer: w
     })]
   })
 }

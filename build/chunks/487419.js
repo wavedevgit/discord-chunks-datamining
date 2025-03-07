@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => S
 }), n(47120);
 var r, i = n(442837),
   o = n(570140),
@@ -36,7 +36,7 @@ function _(e) {
 let p = {},
   h = {};
 
-function g() {
+function m() {
   var e;
   let t = null !== (e = s.Z.getGuildsProto()) && void 0 !== e ? e : {},
     n = l.Z.getGuilds(),
@@ -47,7 +47,7 @@ function g() {
   }, t[e])
 }
 
-function m(e) {
+function g(e) {
   return null != e && Object.keys(e).length > 0 ? {
     raidDetectedAt: e.raid_detected_at,
     dmSpamDetectedAt: e.dm_spam_detected_at,
@@ -59,7 +59,7 @@ function m(e) {
 function E(e) {
   for (let n of (p = {}, e.guilds)) {
     var t;
-    let e = m(null === (t = n.properties) || void 0 === t ? void 0 : t.incidents_data);
+    let e = g(null === (t = n.properties) || void 0 === t ? void 0 : t.incidents_data);
     null != e && ((0, d.i9)(e) || (0, d.ur)(e)) && (p[n.id] = e)
   }
 }
@@ -68,14 +68,14 @@ function v(e) {
   var t;
   let {
     guild: n
-  } = e, r = m(null === (t = n.properties) || void 0 === t ? void 0 : t.incidents_data);
+  } = e, r = g(null === (t = n.properties) || void 0 === t ? void 0 : t.incidents_data);
   null != r && ((0, d.i9)(r) || (0, d.ur)(r)) && (p[n.id] = r)
 }
 
 function b(e) {
   let {
     guild: t
-  } = e, n = m(t.incidents_data);
+  } = e, n = g(t.incidents_data);
   null != n && ((0, d.i9)(n) || (0, d.ur)(n)) ? p[t.id] = n : delete p[t.id]
 }
 
@@ -89,9 +89,9 @@ function y(e) {
 function O(e) {
   p = {}
 }
-class S extends(r = i.ZP.Store) {
+class I extends(r = i.ZP.Store) {
   initialize() {
-    this.waitFor(s.Z, l.Z, c.Z, a.Z), this.syncWith([s.Z, l.Z, c.Z, a.Z], g)
+    this.waitFor(s.Z, l.Z, c.Z, a.Z), this.syncWith([s.Z, l.Z, c.Z, a.Z], m)
   }
   getGuildIncident(e) {
     return p[e]
@@ -103,8 +103,8 @@ class S extends(r = i.ZP.Store) {
     return h
   }
 }
-f(S, "displayName", "GuildIncidentsStore");
-let I = new S(o.Z, {
+f(I, "displayName", "GuildIncidentsStore");
+let S = new I(o.Z, {
   CONNECTION_OPEN: E,
   GUILD_CREATE: v,
   GUILD_UPDATE: b,

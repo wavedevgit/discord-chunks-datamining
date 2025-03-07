@@ -72,26 +72,26 @@ let p = i.forwardRef(function(e, t) {
       className: _,
       titleClassName: p,
       tag: h = "h5",
-      required: g = !1,
-      style: m,
+      required: m = !1,
+      style: g,
       title: E,
       error: v,
       titleId: b
     } = e,
     y = f(e, ["children", "disabled", "className", "titleClassName", "tag", "required", "style", "title", "error", "titleId"]);
   let O = i.useId(),
-    S = i.useId(),
-    I = null != b ? b : O,
-    T = null != v ? null !== (n = y.errorId) && void 0 !== n ? n : S : void 0,
+    I = i.useId(),
+    S = null != b ? b : O,
+    T = null != v ? null !== (n = y.errorId) && void 0 !== n ? n : I : void 0,
     [N, A] = i.useState(void 0),
     [C, R] = i.useState(void 0),
     P = void 0 !== C;
   return (0, r.jsx)("div", {
     ref: t,
     className: null != _ ? _ : void 0,
-    style: null != m ? m : void 0,
+    style: null != g ? g : void 0,
     children: (0, r.jsx)(o.ol, {
-      titleId: I,
+      titleId: S,
       errorId: T,
       error: null != v ? v : void 0,
       isFocused: N,
@@ -103,10 +103,10 @@ let p = i.forwardRef(function(e, t) {
         children: [null != E || null != v ? (0, r.jsx)(a.v, d(c({
           tag: h,
           disabled: u,
-          required: g,
+          required: m,
           error: v,
           className: p,
-          id: I,
+          id: S,
           errorId: T
         }, y), {
           children: E

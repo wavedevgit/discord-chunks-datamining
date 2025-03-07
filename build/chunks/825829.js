@@ -4,12 +4,12 @@ n.d(t, {
   FL: () => B,
   Mq: () => j,
   NK: () => Z,
-  OP: () => I,
+  OP: () => S,
   Sw: () => W,
   ZP: () => F,
   ge: () => H,
   hU: () => U,
-  nY: () => S,
+  nY: () => I,
   nj: () => Y
 }), n(47120);
 var r = n(192379),
@@ -26,8 +26,8 @@ var r = n(192379),
   p = n(496675);
 n(594174);
 var h = n(313889),
-  g = n(177862),
-  m = n(981631),
+  m = n(177862),
+  g = n(981631),
   E = n(388032);
 
 function v(e, t, n) {
@@ -69,26 +69,26 @@ function O(e, t) {
   }), e
 }
 
-function S(e) {
-  return e.type === m.uaV.AUTO_MODERATION_ACTION
+function I(e) {
+  return e.type === g.uaV.AUTO_MODERATION_ACTION
 }
 
-function I(e) {
+function S(e) {
   var t;
   return null === (t = e.embeds) || void 0 === t ? void 0 : t.some(e => {
     let {
       type: t
     } = e;
-    return t === m.hBH.AUTO_MODERATION_NOTIFICATION
+    return t === g.hBH.AUTO_MODERATION_NOTIFICATION
   })
 }
 
 function T(e) {
-  return e.type === m.hBH.AUTO_MODERATION_NOTIFICATION
+  return e.type === g.hBH.AUTO_MODERATION_NOTIFICATION
 }
 
 function N(e) {
-  return e.type === m.hBH.AUTO_MODERATION_MESSAGE
+  return e.type === g.hBH.AUTO_MODERATION_MESSAGE
 }
 
 function A(e, t) {
@@ -123,12 +123,12 @@ function P(e) {
   if (null != t) return t
 }
 
-function D(e) {
+function w(e) {
   let t = A(e, s.G.QUARANTINE_USER_ACTION);
   if (null != t) return t
 }
 
-function w(e) {
+function D(e) {
   let t = A(e, s.G.BLOCK_PROFILE_UPDATE_TYPE);
   if (null != t) return t
 }
@@ -195,11 +195,11 @@ function k(e, t, n) {
 }
 
 function j(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : m.VqG,
+  let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : g.VqG,
     r = arguments.length > 3 ? arguments[3] : void 0,
     i = arguments.length > 4 ? arguments[4] : void 0,
-    l = w(e),
-    c = D(e),
+    l = D(e),
+    c = w(e),
     u = L(e),
     d = P(e),
     f = R(e),
@@ -209,9 +209,9 @@ function j(e, t) {
     let e = x(l, c, u);
     if (null != e) return e
   }
-  let g = p.Z.can(m.Plq.VIEW_CHANNEL, t),
-    v = M(t, g),
-    b = null != t && g ? n : m.VqG,
+  let m = p.Z.can(g.Plq.VIEW_CHANNEL, t),
+    v = M(t, m),
+    b = null != t && m ? n : g.VqG,
     y = k(e, v, n);
   return null != y ? y : null != h ? _ === a.y.MODAL && null != i ? f !== o.P.BLOCKED ? E.NW.format(E.t["4xL9Sk"], {
     applicationName: h,
@@ -324,11 +324,11 @@ function Z(e) {
 function H(e) {
   if (null == e) return E.NW.string(E.t.Gh3A0N);
   switch (e) {
-    case g.$l.LEGITIMATE_ACTIVITY:
+    case m.$l.LEGITIMATE_ACTIVITY:
       return E.NW.string(E.t["riQ+HB"]);
-    case g.$l.DM_SPAM:
+    case m.$l.DM_SPAM:
       return E.NW.string(E.t.j5V0io);
-    case g.$l.JOIN_RAID:
+    case m.$l.JOIN_RAID:
       return E.NW.string(E.t.qhaRbG);
     default:
       return E.NW.string(E.t.GPg6JC)

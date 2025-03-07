@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.r(t), n.d(t, {
-  getOrParseBioAST: () => m,
+  getOrParseBioAST: () => g,
   parseBioReact: () => h,
   parseBioReactWithCachedAST: () => E,
   parseBioReactWithoutScrolling: () => b
@@ -24,16 +24,16 @@ let _ = (0, f.Z)([d.Z.PROFILE_BIO_RULES, (0, u.Z)({
     max: 2e3
   }),
   h = c.w4(_),
-  g = void 0;
+  m = void 0;
 
-function m(e) {
+function g(e) {
   let t = p.get(e);
-  return null != t || (t = g(e, !0), p.set(e, t)), t
+  return null != t || (t = m(e, !0), p.set(e, t)), t
 }
 
 function E(e) {
   if (0 === e.trim().length) return null;
-  let t = m(e);
+  let t = g(e);
   return l().reactFor(l().ruleOutput(_, "react"))(t)
 }
 let v = ["link", "url", "autolink", "customEmoji", "emoji", "commandMention"],

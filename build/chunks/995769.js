@@ -108,10 +108,10 @@ var r = n(606956),
   h = function(e) {
     return !!e && "object" == typeof e && !!(e.constructor && e.constructor.isBuffer && e.constructor.isBuffer(e))
   },
-  g = function(e, t) {
+  m = function(e, t) {
     return [].concat(e, t)
   },
-  m = function(e, t) {
+  g = function(e, t) {
     if (o(e)) {
       for (var n = [], r = 0; r < e.length; r += 1) n.push(t(e[r]));
       return n
@@ -121,12 +121,12 @@ var r = n(606956),
 e.exports = {
   arrayToObject: l,
   assign: u,
-  combine: g,
+  combine: m,
   compact: _,
   decode: d,
   encode: f,
   isBuffer: h,
   isRegExp: p,
-  maybeMap: m,
+  maybeMap: g,
   merge: c
 }

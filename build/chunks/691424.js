@@ -16,23 +16,23 @@ var r = n(200651),
   _ = n(339085),
   p = n(818083),
   h = n(779699),
-  g = n(359875),
-  m = n(124072),
+  m = n(359875),
+  g = n(124072),
   E = n(692629),
   v = n(695503),
   b = n(628692),
   y = n(590956),
   O = n(703656),
-  S = n(271383),
-  I = n(430824),
+  I = n(271383),
+  S = n(430824),
   T = n(572004),
   N = n(746878),
   A = n(285063),
   C = n(943362),
   R = n(551452),
   P = n(69626),
-  D = n(142990),
-  w = n(532901),
+  w = n(142990),
+  D = n(532901),
   L = n(311739),
   x = n(981631),
   M = n(176505),
@@ -159,7 +159,7 @@ function W(e) {
 }
 
 function Y(e, t, n) {
-  let r = I.Z.getGuild(e);
+  let r = S.Z.getGuild(e);
   if (null == e || null == r) return;
   let i = t => {
     r.hasFeature(x.oNc.COMMUNITY) && (0, O.uL)(x.Z5c.CHANNEL(e, t))
@@ -177,9 +177,9 @@ function Y(e, t, n) {
       break;
     case "linked-roles":
       if (null != n) {
-        let t = S.ZP.getSelfMember(e);
+        let t = I.ZP.getSelfMember(e);
         if (null == t) return null;
-        let r = I.Z.getRoles(e)[n];
+        let r = S.Z.getRoles(e)[n];
         null == r || t.roles.includes(r.id) ? c.Z.dispatch({
           type: "GUILD_ROLE_CONNECTIONS_MODAL_SHOW",
           guildId: e
@@ -327,7 +327,7 @@ let z = {
       let i = () => {
         Y(e.guildId, e.id, e.itemId)
       };
-      return (0, N.k)(e.id) ? (0, r.jsxs)(m.Z, {
+      return (0, N.k)(e.id) ? (0, r.jsxs)(g.Z, {
         role: "link",
         onClick: i,
         className: "channelMention",
@@ -375,8 +375,8 @@ let z = {
   },
   guild: {
     react: (e, t, n) => {
-      let i = I.Z.getGuild(e.guildId);
-      return (0, r.jsx)(g.Z, {
+      let i = S.Z.getGuild(e.guildId);
+      return (0, r.jsx)(m.Z, {
         guild: i,
         children: (0, N.S)(e, t, n)
       }, n.key)
@@ -413,8 +413,8 @@ let z = {
 
 function q(e) {
   return V(G({}, z), {
-    link: (0, w.Z)(e),
-    devLink: (0, D.Z)(e),
+    link: (0, D.Z)(e),
+    devLink: (0, w.Z)(e),
     emoji: H(e),
     customEmoji: W(e),
     channelMention: (0, R.Z)(e),

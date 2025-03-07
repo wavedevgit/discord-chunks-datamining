@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(411104), n(301563);
 var r = n(570140),
   i = n(846027),
@@ -24,7 +24,7 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class g {
+class m {
   _onGameDetectionUpdate(e) {
     this.applications = e.map(e => {
       var t, n;
@@ -184,9 +184,9 @@ class g {
     })
   }
 }
-let m = {
+let g = {
   instance: null,
   init() {
-    null == this.instance && (this.instance = new g)
+    null == this.instance && (this.instance = new m)
   }
 }

@@ -25,8 +25,8 @@ let f = () => (0, r.jsx)("img", {
       balanceWidgetMode: o = l.b.DEFAULT,
       showNotificationBadge: p,
       onClick: h,
-      onMouseEnter: g,
-      onMouseLeave: m,
+      onMouseEnter: m,
+      onMouseLeave: g,
       onMouseDown: E,
       className: v
     } = e, b = d.default;
@@ -37,31 +37,31 @@ let f = () => (0, r.jsx)("img", {
       case l.b.SELECTED:
         b = d.selected
     }
-    let [y, O] = (0, i.useState)(!1), S = null === n;
+    let [y, O] = (0, i.useState)(!1), I = null === n;
     (0, i.useEffect)(() => {
-      S && !y && (O(!0), setTimeout(() => {
+      I && !y && (O(!0), setTimeout(() => {
         O(!1)
       }, 500))
-    }, [S, O, y]);
-    let I = S || y,
+    }, [I, O, y]);
+    let S = I || y,
       T = y ? null : n;
     return (0, r.jsx)(s.P3F, {
-      onClick: I ? void 0 : h,
+      onClick: S ? void 0 : h,
       className: d.clickable,
       children: (0, r.jsxs)("span", {
-        onMouseEnter: g,
-        onMouseLeave: m,
+        onMouseEnter: m,
+        onMouseLeave: g,
         onMouseDown: E,
         id: _,
         ref: t,
         className: a()(d.container, b, v, {
-          [d.containerLoading]: I
+          [d.containerLoading]: S
         }),
         children: [(0, r.jsx)(u.M, {
-          loading: I
+          loading: S
         }), (0, r.jsx)(c.Z, {
           value: T,
-          className: I ? d.counterLoading : void 0
+          className: S ? d.counterLoading : void 0
         }), p && (0, r.jsx)(f, {})]
       })
     })

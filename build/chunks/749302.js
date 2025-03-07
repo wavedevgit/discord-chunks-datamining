@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -26,7 +26,7 @@ function h(e, t) {
   }, [n])
 }
 
-function g(e) {
+function m(e) {
   let {
     application: t
   } = e;
@@ -41,13 +41,13 @@ function g(e) {
   })
 }
 
-function m(e) {
+function g(e) {
   let {
     menuItemId: t,
     user: n,
     label: s,
     gameRelationships: _,
-    onClick: m,
+    onClick: g,
     color: E
   } = e, {
     id: v,
@@ -57,47 +57,47 @@ function m(e) {
     return (null === (e = d.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === v
   }), O = (0, c.wn)({
     location: "useAcceptGameFriendRequest"
-  }), S = y || b || !O, I = S ? p : _, [T, N] = i.useState(!1), A = i.useCallback(() => N(!0), []), C = i.useMemo(() => I.map(e => {
+  }), I = y || b || !O, S = I ? p : _, [T, N] = i.useState(!1), A = i.useCallback(() => N(!0), []), C = i.useMemo(() => S.map(e => {
     let {
       applicationId: t
     } = e;
     return t
-  }), [I]), R = (0, o.e7)([u.Z], () => u.Z.getRelationshipType(v), [v]), P = h(C, T || 1 === I.length);
-  if (S || 0 === I.length || R === f.OGo.FRIEND) return null;
-  if (1 === I.length) {
+  }), [S]), R = (0, o.e7)([u.Z], () => u.Z.getRelationshipType(v), [v]), P = h(C, T || 1 === S.length);
+  if (I || 0 === S.length || R === f.OGo.FRIEND) return null;
+  if (1 === S.length) {
     let {
       applicationId: e
-    } = I[0], n = P.get(e);
+    } = S[0], n = P.get(e);
     return null == n ? null : (0, r.jsx)(a.sNh, {
       color: E,
       id: t,
       label: s,
-      subtext: (0, r.jsx)(g, {
+      subtext: (0, r.jsx)(m, {
         application: n
       }),
       onFocus: A,
-      action: () => m(n)
+      action: () => g(n)
     })
   }
-  let D = [];
-  return (I.forEach(e => {
+  let w = [];
+  return (S.forEach(e => {
     let {
       applicationId: t
     } = e, n = P.get(t);
-    null != n && D.push((0, r.jsx)(a.sNh, {
+    null != n && w.push((0, r.jsx)(a.sNh, {
       id: t,
       label: n.name,
       icon: (0, r.jsx)(l.Z, {
         game: n,
         size: l.Z.Sizes.XXSMALL
       }),
-      action: () => m(n)
+      action: () => g(n)
     }, t))
-  }), 0 === D.length) ? null : (0, r.jsx)(a.sNh, {
+  }), 0 === w.length) ? null : (0, r.jsx)(a.sNh, {
     color: E,
     id: t,
     label: s,
     onFocus: A,
-    children: D
+    children: w
   })
 }

@@ -5,7 +5,7 @@ n.d(t, {
   H6: () => h,
   Qh: () => f,
   Sn: () => _,
-  Th: () => g,
+  Th: () => m,
   jd: () => d
 }), n(230036), n(47120);
 var r = n(544891),
@@ -84,7 +84,7 @@ function h(e, t) {
   })
 }
 
-function g(e, t) {
+function m(e, t) {
   return r.tn.del({
     url: u.ANM.GUILD_POWERUP_TOGGLE(e, t),
     rejectWithError: !0

@@ -29,8 +29,8 @@ let i = (e, t) => {
   _ = /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i,
   p = ((0, r.isIOS)() || (0, r.isAndroid)(), /\.(mp4|mov)$/i),
   h = /\.(mp4|webm|mov)$/i,
-  g = /\.(mp4|webm|mov)$/i,
-  m = (0, r.isIOS)() ? p : (0, r.isAndroid)() ? h : g,
-  E = e => i(e, m),
-  v = e => null != e && m.test(e),
+  m = /\.(mp4|webm|mov)$/i,
+  g = (0, r.isIOS)() ? p : (0, r.isAndroid)() ? h : m,
+  E = e => i(e, g),
+  v = e => null != e && g.test(e),
   b = e => o(e, "video")

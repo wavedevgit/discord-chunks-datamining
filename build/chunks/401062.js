@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Lx: () => I,
-  kq: () => S,
+  Lx: () => S,
+  kq: () => I,
   vy: () => O,
   yX: () => b
 });
@@ -19,8 +19,8 @@ var r = n(392711),
   _ = n(176354),
   p = n(696900),
   h = n(456631),
-  g = n(963838),
-  m = n(353368),
+  m = n(963838),
+  g = n(353368),
   E = n(981631),
   v = n(710111),
   b = function(e) {
@@ -43,9 +43,9 @@ function O(e, t, n) {
   let {
     abortController: o,
     onRequestProgress: s
-  } = y(e), l = null !== (r = p.Z.getState().animationType) && void 0 !== r ? r : m.q.BASIC, d = {
+  } = y(e), l = null !== (r = p.Z.getState().animationType) && void 0 !== r ? r : g.q.BASIC, d = {
     animation_type: l,
-    animation_id: (0, g.Iu)(l, g.v)
+    animation_id: (0, m.Iu)(l, m.v)
   };
   i.tn.post({
     url: E.ANM.CUSTOM_CALL_SOUNDS(e),
@@ -58,7 +58,7 @@ function O(e, t, n) {
   }), (0, u.Z)([a.Z.CHANNEL_CALL], n, t, c.jy.ENTRY)
 }
 
-function S(e, t, n, r) {
+function I(e, t, n, r) {
   var o, a;
   let s = l.ZP.getCustomEmojiById(null !== (o = t.emojiId) && void 0 !== o ? o : ""),
     {
@@ -80,7 +80,7 @@ function S(e, t, n, r) {
     if (d.signal.aborted) return
   }), (0, u.Z)(null != r ? r : [], n, t, c.jy.DEFAULT)
 }
-let I = async e => {
+let S = async e => {
   let {
     channel: t,
     emoji: n,
@@ -90,7 +90,7 @@ let I = async e => {
     isPremium: l
   } = e;
   if (null == n || h.Z.isOnCooldown) return;
-  let c = l && null != a ? a : m.q.BASIC;
+  let c = l && null != a ? a : g.q.BASIC;
   try {
     let e = null != n.id ? {
       emoji_id: n.id,
@@ -120,8 +120,8 @@ let I = async e => {
     }
   }
 }, T = {
-  [m.q.BASIC]: "Basic",
-  [m.q.PREMIUM]: "Premium"
+  [g.q.BASIC]: "Basic",
+  [g.q.PREMIUM]: "Premium"
 }, N = (e, t, n, r) => {
   let {
     unicode: i,

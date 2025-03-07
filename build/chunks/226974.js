@@ -56,8 +56,8 @@ var u = [],
   _ = null,
   p = 3,
   h = !1,
-  g = !1,
   m = !1,
+  g = !1,
   E = "function" == typeof setTimeout ? setTimeout : null,
   v = "function" == typeof clearTimeout ? clearTimeout : null,
   b = "undefined" != typeof setImmediate ? setImmediate : null;
@@ -72,8 +72,8 @@ function y(e) {
 }
 
 function O(e) {
-  if (m = !1, y(e), !g) {
-    if (null !== r(u)) g = !0, L(S);
+  if (g = !1, y(e), !m) {
+    if (null !== r(u)) m = !0, L(I);
     else {
       var t = r(d);
       null !== t && x(O, t.startTime - e)
@@ -81,8 +81,8 @@ function O(e) {
   }
 }
 
-function S(e, n) {
-  g = !1, m && (m = !1, v(N), N = -1), h = !0;
+function I(e, n) {
+  m = !1, g && (g = !1, v(N), N = -1), h = !0;
   var o = p;
   try {
     for (y(n), _ = r(u); null !== _ && (!(_.expirationTime > n) || e && !R());) {
@@ -105,7 +105,7 @@ function S(e, n) {
   }
 }
 "undefined" != typeof navigator && void 0 !== navigator.scheduling && void 0 !== navigator.scheduling.isInputPending && navigator.scheduling.isInputPending.bind(navigator.scheduling);
-var I = !1,
+var S = !1,
   T = null,
   N = -1,
   A = 5,
@@ -123,25 +123,25 @@ function P() {
     try {
       n = T(!0, e)
     } finally {
-      n ? a() : (I = !1, T = null)
+      n ? a() : (S = !1, T = null)
     }
-  } else I = !1
+  } else S = !1
 }
 if ("function" == typeof b) a = function() {
   b(P)
 };
 else if ("undefined" != typeof MessageChannel) {
-  var D = new MessageChannel,
-    w = D.port2;
-  D.port1.onmessage = P, a = function() {
-    w.postMessage(null)
+  var w = new MessageChannel,
+    D = w.port2;
+  w.port1.onmessage = P, a = function() {
+    D.postMessage(null)
   }
 } else a = function() {
   E(P, 0)
 };
 
 function L(e) {
-  T = e, I || (I = !0, a())
+  T = e, S || (S = !0, a())
 }
 
 function x(e, n) {
@@ -152,7 +152,7 @@ function x(e, n) {
 t.unstable_IdlePriority = 5, t.unstable_ImmediatePriority = 1, t.unstable_LowPriority = 4, t.unstable_NormalPriority = 3, t.unstable_Profiling = null, t.unstable_UserBlockingPriority = 2, t.unstable_cancelCallback = function(e) {
   e.callback = null
 }, t.unstable_continueExecution = function() {
-  g || h || (g = !0, L(S))
+  m || h || (m = !0, L(I))
 }, t.unstable_forceFrameRate = function(e) {
   0 > e || 125 < e ? console.error("forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported") : A = 0 < e ? Math.floor(1e3 / e) : 5
 }, t.unstable_getCurrentPriorityLevel = function() {
@@ -219,7 +219,7 @@ t.unstable_IdlePriority = 5, t.unstable_ImmediatePriority = 1, t.unstable_LowPri
     startTime: o,
     expirationTime: s,
     sortIndex: -1
-  }, o > a ? (e.sortIndex = o, n(d, e), null === r(u) && e === r(d) && (m ? (v(N), N = -1) : m = !0, x(O, o - a))) : (e.sortIndex = s, n(u, e), g || h || (g = !0, L(S))), e
+  }, o > a ? (e.sortIndex = o, n(d, e), null === r(u) && e === r(d) && (g ? (v(N), N = -1) : g = !0, x(O, o - a))) : (e.sortIndex = s, n(u, e), m || h || (m = !0, L(I))), e
 }, t.unstable_shouldYield = R, t.unstable_wrapCallback = function(e) {
   var t = p;
   return function() {

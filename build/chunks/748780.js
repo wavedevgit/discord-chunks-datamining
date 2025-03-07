@@ -68,19 +68,19 @@ function h(e, t) {
   return i
 }
 
-function g(e) {
+function m(e) {
   let t = Object.keys(e)[0];
   return "".concat(t, "(").concat(e[t], ")")
 }
-let m = /rgba\(([\d.]+), ([\d.]+), ([\d.]+), ([\d.]+)\)/;
+let g = /rgba\(([\d.]+), ([\d.]+), ([\d.]+), ([\d.]+)\)/;
 
 function E(e) {
-  let t = e.match(m);
+  let t = e.match(g);
   return null != t && (e = "rgba(".concat(0 | t[1], ", ").concat(0 | t[2], ", ").concat(0 | t[3], ", ").concat(t[4], ")")), e
 }
 
 function v(e) {
-  return e && (e.transform && (e.transform = e.WebkitTransform = e.MozTransform = e.transform.map(g).join(" ")), e.color && (e.color = E(e.color)), e.backgroundColor && (e.backgroundColor = E(e.backgroundColor))), e
+  return e && (e.transform && (e.transform = e.WebkitTransform = e.MozTransform = e.transform.map(m).join(" ")), e.color && (e.color = E(e.color)), e.backgroundColor && (e.backgroundColor = E(e.backgroundColor))), e
 }
 
 function b(e, t, n) {
@@ -101,7 +101,7 @@ function O(e, t, n) {
   return void 0 !== t && void 0 != n ? s()(t, n) : e
 }
 
-function S(e, t) {
+function I(e, t) {
   let n;
   let {
     toValueMin: i,
@@ -113,30 +113,30 @@ function S(e, t) {
     invert: u,
     callback: f,
     type: h = "spring",
-    shouldLoop: g,
-    durationMin: m,
+    shouldLoop: m,
+    durationMin: g,
     durationMax: E
-  } = t, v = p(t, ["toValueMin", "toValueMax", "tension", "friction", "loop", "reverse", "invert", "callback", "type", "shouldLoop", "durationMin", "durationMax"]), b = e._value, y = O(t.duration, m, E), I = O(t.toValue, i, o), T = r[h](e, _(d({}, v), {
-    toValue: I,
+  } = t, v = p(t, ["toValueMin", "toValueMax", "tension", "friction", "loop", "reverse", "invert", "callback", "type", "shouldLoop", "durationMin", "durationMax"]), b = e._value, y = O(t.duration, g, E), S = O(t.toValue, i, o), T = r[h](e, _(d({}, v), {
+    toValue: S,
     tension: a,
     friction: s,
     duration: y
   })), N = T;
   if (c || u) {
-    let i = O(t.duration, m, E);
+    let i = O(t.duration, g, E);
     n = r[h](e, _(d({}, v), {
-      toValue: c ? b : -I,
+      toValue: c ? b : -S,
       tension: a,
       friction: s,
       duration: i
     })), N = r.sequence([T, n])
   }
   l ? N.start(() => {
-    (!g || g && g()) && (f ? f(S.bind(null, e, t)) : S(e, t))
+    (!m || m && m()) && (f ? f(I.bind(null, e, t)) : I(e, t))
   }) : N.start(f)
 }
 
-function I(e) {
+function S(e) {
   for (var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), r = 1; r < t; r++) n[r - 1] = arguments[r];
   return e.interpolate({
     inputRange: [0, 1],
@@ -150,8 +150,8 @@ let T = {
   N = _(d({}, r), {
     Easing: o(),
     accelerate: y,
-    animate: S,
-    interpolate: I,
+    animate: I,
+    interpolate: S,
     Extrapolate: T,
     div: r.createAnimatedComponent("div"),
     span: r.createAnimatedComponent("span"),

@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ft: () => m,
+  Ft: () => g,
   ML: () => y,
   ZJ: () => b,
-  mF: () => g
+  mF: () => m
 }), n(47120);
 var r = n(512722),
   i = n.n(r),
@@ -19,19 +19,19 @@ var r = n(512722),
   _ = n(807169),
   p = n(689079),
   h = n(981631),
-  g = function(e) {
+  m = function(e) {
     return e[e.ALLOWED = 0] = "ALLOWED", e[e.NSFW_NOT_ALLOWED = 1] = "NSFW_NOT_ALLOWED", e[e.WRONG_COMMAND_TYPE = 2] = "WRONG_COMMAND_TYPE", e[e.PREDICATE_FAILED = 3] = "PREDICATE_FAILED", e[e.CONTEXT_NOT_ALLOWED = 4] = "CONTEXT_NOT_ALLOWED", e[e.MISSING_BASE_PERMISSIONS = 5] = "MISSING_BASE_PERMISSIONS", e[e.CHANNEL_DENIED = 6] = "CHANNEL_DENIED", e[e.USER_DENIED = 7] = "USER_DENIED", e
   }({});
 
-function m(e, t, n) {
+function g(e, t, n) {
   var r;
   let {
     context: l,
-    commandTypes: g,
-    allowNsfw: m,
+    commandTypes: m,
+    allowNsfw: g,
     computedPermissions: O,
-    userId: S,
-    roleIds: I,
+    userId: I,
+    roleIds: S,
     isImpersonating: T,
     hasBaseAccessPermissions: N
   } = t, {
@@ -39,14 +39,14 @@ function m(e, t, n) {
     applicationAllowedForChannel: C,
     isGuildInstalled: R,
     isUserInstalled: P,
-    commandBotId: D
+    commandBotId: w
   } = n;
-  if (!g.includes(e.type)) return 2;
-  if (e.nsfw && !m) return 1;
-  let w = null != l ? (0, _.Vh)(l, D) : void 0;
+  if (!m.includes(e.type)) return 2;
+  if (e.nsfw && !g) return 1;
+  let D = null != l ? (0, _.Vh)(l, w) : void 0;
   if (null != e.contexts) {
-    if (null != w && !e.contexts.includes(w)) return 4
-  } else if (e.inputType === d.iw.BOT && (!1 === e.dmPermission && w === s.D.BOT_DM || w === s.D.PRIVATE_CHANNEL)) return 4;
+    if (null != D && !e.contexts.includes(D)) return 4
+  } else if (e.inputType === d.iw.BOT && (!1 === e.dmPermission && D === s.D.BOT_DM || D === s.D.PRIVATE_CHANNEL)) return 4;
   if (null != e.predicate && l instanceof c.Sf) {
     let t = u.Z.getGuild(l.guild_id);
     if (!e.predicate({
@@ -63,7 +63,7 @@ function m(e, t, n) {
     let t = b(e.permissions, l, L);
     if (v(t) || !E(t) && v(C)) return 6
   }
-  let x = y(e.permissions, L, S, I, T);
+  let x = y(e.permissions, L, I, S, T);
   return E(x) ? 0 : v(x) ? 7 : v(A) || null != e.defaultMemberPermissions && !(!a.fS(e.defaultMemberPermissions, f.BO) && a.e$(O, e.defaultMemberPermissions)) ? 7 : 0
 }
 

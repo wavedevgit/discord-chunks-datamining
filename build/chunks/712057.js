@@ -34,19 +34,19 @@ let a = "#ffffff",
         ratio: 5,
         saturationFactor: l
       })) && void 0 !== n ? n : f,
-      g = (0, i.k8)({
+      m = (0, i.k8)({
         colors: [f, u],
         ratio: 7,
         saturationFactor: l
       }),
-      m = (0, i.k8)({
+      g = (0, i.k8)({
         colors: [f, d],
         ratio: 7,
         saturationFactor: l
       });
     return {
       LIGHT: {
-        accentColor: null == g ? void 0 : g.toHexString(),
+        accentColor: null == m ? void 0 : m.toHexString(),
         backgroundColor: (0, i.xj)({
           colorRGB: p,
           saturationFactor: l
@@ -55,7 +55,7 @@ let a = "#ffffff",
         opacity: (null == _ ? void 0 : _.saturation) < .1 ? .35 : .1
       },
       DARK: {
-        accentColor: null == m ? void 0 : m.toHexString(),
+        accentColor: null == g ? void 0 : g.toHexString(),
         backgroundColor: (0, i.xj)({
           colorRGB: h,
           saturationFactor: l

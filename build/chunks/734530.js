@@ -112,23 +112,23 @@
   function p(e) {
     return e && e.__esModule && Object.prototype.hasOwnProperty.call(e, "default") ? e.default : e
   }
-  var h, g, m, E, v = {
+  var h, m, g, E, v = {
     exports: {}
   };
 
   function b() {
-    return g ? h : (g = 1, h = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED")
+    return m ? h : (m = 1, h = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED")
   }
 
   function y() {
-    if (E) return m;
+    if (E) return g;
     E = 1;
     var e = b();
 
     function t() {}
 
     function n() {}
-    return n.resetWarningCache = t, m = function() {
+    return n.resetWarningCache = t, g = function() {
       function r(t, n, r, i, o, a) {
         if (a !== e) {
           var s = Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
@@ -167,7 +167,7 @@
   }
   v.exports = y()();
   var O = p(v.exports),
-    S = function(e, n, r) {
+    I = function(e, n, r) {
       var i = !!r,
         o = t.useRef(r);
       t.useEffect(function() {
@@ -183,7 +183,7 @@
           }
       }, [i, n, e, o])
     },
-    I = function(e) {
+    S = function(e) {
       var n = t.useRef(e);
       return t.useEffect(function() {
         n.current = e
@@ -226,21 +226,21 @@
         return n.includes(a) ? (s && console.warn("Unsupported prop change: options.".concat(a, " is not a mutable property.")), i) : s ? r(r({}, i || {}), {}, o({}, a, e[a])) : i
       }, null) : null
     },
-    D = "Invalid prop `stripe` supplied to `Elements`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.",
-    w = function(e) {
-      var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : D;
+    w = "Invalid prop `stripe` supplied to `Elements`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.",
+    D = function(e) {
+      var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : w;
       if (null === e || A(e)) return e;
       throw Error(t)
     },
     L = function(e) {
-      var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : D;
+      var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : w;
       if (N(e)) return {
         tag: "async",
         stripePromise: Promise.resolve(e).then(function(e) {
-          return w(e, t)
+          return D(e, t)
         })
       };
-      var n = w(e, t);
+      var n = D(e, t);
       return null === n ? {
         tag: "empty"
       } : {
@@ -296,11 +296,11 @@
             e = !1
           }
       }, [o, s, r]);
-      var u = I(n);
+      var u = S(n);
       t.useEffect(function() {
         null !== u && u !== n && console.warn("Unsupported prop change on Elements: You cannot change the `stripe` prop after setting it.")
       }, [u, n]);
-      var d = I(r);
+      var d = S(r);
       return t.useEffect(function() {
         if (s.elements) {
           var e = P(r, d, ["clientSecret", "fonts"]);
@@ -384,28 +384,28 @@
             e = !1
           }
       }, [o, d, r, c]);
-      var h = I(n);
+      var h = S(n);
       t.useEffect(function() {
         null !== h && h !== n && console.warn("Unsupported prop change on CustomCheckoutProvider: You cannot change the `stripe` prop after setting it.")
       }, [h, n]);
-      var g = I(r);
+      var m = S(r);
       t.useEffect(function() {
         if (d.customCheckoutSdk) {
-          !r.clientSecret || T(g) || R(r.clientSecret, g.clientSecret) || console.warn("Unsupported prop change: options.client_secret is not a mutable property.");
-          var e, t, n = null == g ? void 0 : null === (e = g.elementsOptions) || void 0 === e ? void 0 : e.appearance,
+          !r.clientSecret || T(m) || R(r.clientSecret, m.clientSecret) || console.warn("Unsupported prop change: options.client_secret is not a mutable property.");
+          var e, t, n = null == m ? void 0 : null === (e = m.elementsOptions) || void 0 === e ? void 0 : e.appearance,
             i = null == r ? void 0 : null === (t = r.elementsOptions) || void 0 === t ? void 0 : t.appearance;
           i && !R(i, n) && d.customCheckoutSdk.changeAppearance(i)
         }
-      }, [r, g, d.customCheckoutSdk]), t.useEffect(function() {
+      }, [r, m, d.customCheckoutSdk]), t.useEffect(function() {
         x(d.stripe)
       }, [d.stripe]);
-      var m = t.useMemo(function() {
+      var g = t.useMemo(function() {
         return W(d.customCheckoutSdk, s)
       }, [d.customCheckoutSdk, s]);
       return d.customCheckoutSdk ? t.createElement(F.Provider, {
         value: d
       }, t.createElement(H.Provider, {
-        value: m
+        value: g
       }, i)) : null
     };
   K.propTypes = {
@@ -446,8 +446,8 @@
             _ = n.onChange,
             p = n.onEscape,
             h = n.onClick,
-            g = n.onLoadError,
-            m = n.onLoaderStart,
+            m = n.onLoadError,
+            g = n.onLoaderStart,
             E = n.onNetworksChange,
             v = n.onConfirm,
             b = n.onCancel,
@@ -458,27 +458,27 @@
             A = "customCheckoutSdk" in T ? T.customCheckoutSdk : null,
             C = l(t.useState(null), 2),
             R = C[0],
-            D = C[1],
-            w = t.useRef(null),
+            w = C[1],
+            D = t.useRef(null),
             L = t.useRef(null);
-          S(R, "blur", u), S(R, "focus", d), S(R, "escape", p), S(R, "click", h), S(R, "loaderror", g), S(R, "loaderstart", m), S(R, "networkschange", E), S(R, "confirm", v), S(R, "cancel", b), S(R, "shippingaddresschange", y), S(R, "shippingratechange", O), S(R, "change", _), f && (i = "expressCheckout" === e ? f : function() {
+          I(R, "blur", u), I(R, "focus", d), I(R, "escape", p), I(R, "click", h), I(R, "loaderror", m), I(R, "loaderstart", g), I(R, "networkschange", E), I(R, "confirm", v), I(R, "cancel", b), I(R, "shippingaddresschange", y), I(R, "shippingratechange", O), I(R, "change", _), f && (i = "expressCheckout" === e ? f : function() {
             f(R)
-          }), S(R, "ready", i), t.useLayoutEffect(function() {
-            if (null === w.current && null !== L.current && (N || A)) {
+          }), I(R, "ready", i), t.useLayoutEffect(function() {
+            if (null === D.current && null !== L.current && (N || A)) {
               var t = null;
-              A ? t = A.createElement(e, c) : N && (t = N.create(e, c)), w.current = t, D(t), t && t.mount(L.current)
+              A ? t = A.createElement(e, c) : N && (t = N.create(e, c)), D.current = t, w(t), t && t.mount(L.current)
             }
           }, [N, A, c]);
-          var x = I(c);
+          var x = S(c);
           return t.useEffect(function() {
-            if (w.current) {
+            if (D.current) {
               var e = P(c, x, ["paymentRequest"]);
-              e && w.current.update(e)
+              e && D.current.update(e)
             }
           }, [c, x]), t.useLayoutEffect(function() {
             return function() {
-              if (w.current && "function" == typeof w.current.destroy) try {
-                w.current.destroy(), w.current = null
+              if (D.current && "function" == typeof D.current.destroy) try {
+                D.current.destroy(), D.current = null
               } catch (e) {}
             }
           }, []), t.createElement("div", {
@@ -561,11 +561,11 @@
       }, [u.embeddedCheckout]), t.useEffect(function() {
         x(s)
       }, [s]);
-      var f = I(n);
+      var f = S(n);
       t.useEffect(function() {
         null !== f && f !== n && console.warn("Unsupported prop change on EmbeddedCheckoutProvider: You cannot change the `stripe` prop after setting it.")
       }, [f, n]);
-      var _ = I(r);
+      var _ = S(r);
       return t.useEffect(function() {
         if (null != _) {
           if (null == r) {
@@ -617,16 +617,16 @@
     e_ = J("fpxBank", $),
     ep = J("iban", $),
     eh = J("idealBank", $),
-    eg = J("p24Bank", $),
-    em = J("epsBank", $),
+    em = J("p24Bank", $),
+    eg = J("epsBank", $),
     eE = J("payment", $),
     ev = J("expressCheckout", $),
     eb = J("paymentRequestButton", $),
     ey = J("linkAuthentication", $),
     eO = J("address", $),
-    eS = J("shippingAddress", $),
-    eI = J("paymentMethodMessaging", $),
+    eI = J("shippingAddress", $),
+    eS = J("paymentMethodMessaging", $),
     eT = J("affirmMessage", $),
     eN = J("afterpayClearpayMessage", $);
-  e.AddressElement = eO, e.AffirmMessageElement = eT, e.AfterpayClearpayMessageElement = eN, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CustomCheckoutProvider = K, e.Elements = j, e.ElementsConsumer = B, e.EmbeddedCheckout = ea, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = em, e.ExpressCheckoutElement = ev, e.FpxBankElement = e_, e.IbanElement = ep, e.IdealBankElement = eh, e.LinkAuthenticationElement = ey, e.P24BankElement = eg, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eI, e.PaymentRequestButtonElement = eb, e.ShippingAddressElement = eS, e.useCustomCheckout = Q, e.useElements = G, e.useStripe = es
+  e.AddressElement = eO, e.AffirmMessageElement = eT, e.AfterpayClearpayMessageElement = eN, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CustomCheckoutProvider = K, e.Elements = j, e.ElementsConsumer = B, e.EmbeddedCheckout = ea, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = eg, e.ExpressCheckoutElement = ev, e.FpxBankElement = e_, e.IbanElement = ep, e.IdealBankElement = eh, e.LinkAuthenticationElement = ey, e.P24BankElement = em, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eS, e.PaymentRequestButtonElement = eb, e.ShippingAddressElement = eI, e.useCustomCheckout = Q, e.useElements = G, e.useStripe = es
 })

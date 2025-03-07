@@ -3,10 +3,10 @@
 n.d(t, {
   $z: () => R,
   BH: () => A,
-  BO: () => D,
+  BO: () => w,
   D7: () => x,
   Dd: () => C,
-  Ft: () => w,
+  Ft: () => D,
   X0: () => k,
   XA: () => j,
   Z8: () => O,
@@ -30,8 +30,8 @@ n(131704);
 var _ = n(703558),
   p = n(895924),
   h = n(689079),
-  g = n(981631),
-  m = n(231338);
+  m = n(981631),
+  g = n(231338);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -85,7 +85,7 @@ function O(e) {
     i[e.id] = e
   })));
   let _ = (null != l ? l : []).map(e => e.name),
-    g = (null != l ? l : []).map(e => e.displayName);
+    m = (null != l ? l : []).map(e => e.displayName);
   return {
     version: o.version,
     guildId: o.guild_id,
@@ -96,13 +96,13 @@ function O(e) {
     type: null !== (t = o.type) && void 0 !== t ? t : u.yU.CHAT,
     inputType: p.iw.BOT,
     untranslatedDescription: a.description,
-    options: S(a.options),
+    options: I(a.options),
     rootCommand: o,
     subCommandPath: l,
     defaultMemberPermissions: null == o.default_member_permissions ? void 0 : c.vB(o.default_member_permissions),
     dmPermission: o.dm_permission,
     permissions: i,
-    displayName: [null !== (n = o.name_localized) && void 0 !== n ? n : o.name, ...g].join(" "),
+    displayName: [null !== (n = o.name_localized) && void 0 !== n ? n : o.name, ...m].join(" "),
     displayDescription: null !== (r = a.description_localized) && void 0 !== r ? r : a.description,
     nsfw: o.nsfw,
     contexts: o.contexts,
@@ -112,12 +112,12 @@ function O(e) {
   }
 }
 
-function S(e) {
+function I(e) {
   return null == e ? void 0 : e.map(e => {
     var t, n;
     let r = y(v({}, e), {
-      choices: I(e.choices),
-      options: S(e.options),
+      choices: S(e.choices),
+      options: I(e.options),
       serverLocalizedName: e.name_localized,
       displayName: null !== (t = e.name_localized) && void 0 !== t ? t : e.name,
       displayDescription: null !== (n = e.description_localized) && void 0 !== n ? n : e.description
@@ -134,7 +134,7 @@ function S(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   return null == e ? void 0 : e.map(e => {
     var t;
     return y(v({}, e), {
@@ -213,7 +213,7 @@ function N(e, t) {
 }
 
 function A(e) {
-  return g.Xyh.test(e.trim())
+  return m.Xyh.test(e.trim())
 }
 
 function C(e, t, n, r) {
@@ -242,9 +242,9 @@ function R(e) {
 function P(e) {
   return i()(e).subtract(1).toString()
 }
-let D = c.vB(0);
+let w = c.vB(0);
 
-function w(e) {
+function D(e) {
   let {
     PermissionStore: t,
     guild: n,
@@ -253,14 +253,14 @@ function w(e) {
     commandLevelPermissions: o,
     defaultMemberPermissions: a
   } = e;
-  if (n.ownerId === r.userId || t.can(m.Pl.ADMINISTRATOR, n)) return !0;
+  if (n.ownerId === r.userId || t.can(g.Pl.ADMINISTRATOR, n)) return !0;
   let s = n.id;
   if (null != o) {
     let e = L(r, s, o);
     if ("boolean" == typeof e) return e
   }
   let l = L(r, s, i);
-  return ("boolean" != typeof l || !!l) && (null == a || !c.fS(a, D) && t.can(a, n))
+  return ("boolean" != typeof l || !!l) && (null == a || !c.fS(a, w) && t.can(a, n))
 }
 
 function L(e, t, n) {
@@ -338,7 +338,7 @@ function U(e) {
     searchResultsPosition: c,
     source: u
   } = e;
-  (0, d.yw)(g.rMx.APPLICATION_COMMAND_SELECTED, {
+  (0, d.yw)(m.rMx.APPLICATION_COMMAND_SELECTED, {
     command_id: null !== (n = null === (t = r.rootCommand) || void 0 === t ? void 0 : t.id) && void 0 !== n ? n : r.id,
     application_id: r.applicationId,
     location: i,

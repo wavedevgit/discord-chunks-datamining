@@ -16,24 +16,24 @@ var i = n(512722),
   _ = n(570140),
   p = n(710845),
   h = n(977059),
-  g = n(695346),
-  m = n(199902),
+  m = n(695346),
+  g = n(199902),
   E = n(314897),
   v = n(358085),
   b = n(998502),
   y = n(569545),
   O = n(70722),
-  S = n(981631),
-  I = n(65154);
+  I = n(981631),
+  S = n(65154);
 let T = 3e5,
   N = 6e4,
   A = {},
   C = new f.V7,
   R = !1,
   P = window.document.createElement("canvas"),
-  D = 512,
-  w = 288;
-P.width = D, P.height = w;
+  w = 512,
+  D = 288;
+P.width = w, P.height = D;
 let L = P.getContext("2d");
 
 function x() {
@@ -49,7 +49,7 @@ let M = s().debounce((e, t, n, r) => {
 }, 500);
 
 function k(e) {
-  let t = Math.min(D / e.width, w / e.height),
+  let t = Math.min(w / e.width, D / e.height),
     n = e.width * t,
     r = e.height * t;
   P.width = n, P.height = r;
@@ -67,7 +67,7 @@ async function j(e, t) {
     enabled: n
   } = (0, h.R)({
     location: "uploadStreamPreviews"
-  }), i = (0, v.isWeb)() && g.I0.getSetting() || m.Z.getIsActiveStreamPreviewDisabled(t);
+  }), i = (0, v.isWeb)() && m.I0.getSetting() || g.Z.getIsActiveStreamPreviewDisabled(t);
   if (n && i) return;
   let a = () => j(e, t);
   if (!R) try {
@@ -80,14 +80,14 @@ async function j(e, t) {
         previewURL: r
       }), v.isPlatformEmbedded) {
       let e = E.default.getToken();
-      o()(null != e, "Auth token was null while sending screenshot."), await b.ZP.makeChunkedRequest(S.ANM.STREAM_PREVIEW(t), {
+      o()(null != e, "Auth token was null while sending screenshot."), await b.ZP.makeChunkedRequest(I.ANM.STREAM_PREVIEW(t), {
         thumbnail: r
       }, {
         method: "POST",
         token: e
       })
     } else await l.tn.post({
-      url: S.ANM.STREAM_PREVIEW(t),
+      url: I.ANM.STREAM_PREVIEW(t),
       body: {
         thumbnail: r
       },
@@ -117,7 +117,7 @@ function G(e, t) {
     width: r,
     height: i
   } = n.getVideoTracks()[0].getSettings(), o = document.createElement("video"), a = document.createElement("canvas");
-  o.width = a.width = null != r ? r : D, o.height = a.height = null != i ? i : w, o.srcObject = n, o.play();
+  o.width = a.width = null != r ? r : w, o.height = a.height = null != i ? i : D, o.srcObject = n, o.play();
   let s = a.getContext("2d");
   return new Promise((e, n) => {
     o.ontimeupdate = () => {
@@ -162,12 +162,12 @@ let V = {
         streamId: o,
         context: a
       } = e;
-      null == o || a !== I.Yn.STREAM || i !== E.default.getId() || __OVERLAY__ || (x(), r = o, M(o, t, n, i))
+      null == o || a !== S.Yn.STREAM || i !== E.default.getId() || __OVERLAY__ || (x(), r = o, M(o, t, n, i))
     }), _.Z.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
       let {
         videoState: t
       } = e;
-      R = t === S.FQ1.PAUSED
+      R = t === I.FQ1.PAUSED
     })
   }
 }

@@ -75,16 +75,16 @@ function t(e) {
       begin: "\\(",
       end: "\\)"
     },
-    g = {
+    m = {
       endsWithParent: !0,
       relevance: 0
     },
-    m = {
+    g = {
       keywords: i,
       className: "name",
       begin: n,
       relevance: 0,
-      starts: g
+      starts: m
     },
     E = [u, h, s, l, c, d, p, _, a, f, o],
     v = {
@@ -102,7 +102,7 @@ function t(e) {
         endsParent: !0
       }].concat(E)
     };
-  return h.contains = [v, m, g], g.contains = E, _.contains = E, {
+  return h.contains = [v, g, m], m.contains = E, _.contains = E, {
     name: "Clojure",
     aliases: ["clj", "edn"],
     illegal: /\S/,

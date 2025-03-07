@@ -70,7 +70,7 @@ function h(e, t) {
   return e.pathname === t.pathname && e.search === t.search && e.hash === t.hash && e.key === t.key && (0, o.Z)(e.state, t.state)
 }
 
-function g() {
+function m() {
   var e = null,
     t = [];
   return {
@@ -107,7 +107,7 @@ function g() {
     }
   }
 }
-var m = !!("undefined" != typeof window && window.document && window.document.createElement);
+var g = !!("undefined" != typeof window && window.document && window.document.createElement);
 
 function E(e, t) {
   t(window.confirm(e))
@@ -129,8 +129,8 @@ function y() {
 function O(e) {
   return void 0 === e.state && -1 === navigator.userAgent.indexOf("CriOS")
 }
-var S = "popstate",
-  I = "hashchange";
+var I = "popstate",
+  S = "hashchange";
 
 function T() {
   try {
@@ -141,7 +141,7 @@ function T() {
 }
 
 function N(e) {
-  void 0 === e && (e = {}), m || (0, a.Z)(!1);
+  void 0 === e && (e = {}), g || (0, a.Z)(!1);
   var t = window.history,
     n = v(),
     i = !b(),
@@ -166,13 +166,13 @@ function N(e) {
   function R() {
     return Math.random().toString(36).substr(2, N)
   }
-  var P = g();
+  var P = m();
 
-  function D(e) {
+  function w(e) {
     (0, r.Z)(Q, e), Q.length = t.length, P.notifyListeners(Q.location, Q.action)
   }
 
-  function w(e) {
+  function D(e) {
     O(e) || M(C(e.state))
   }
 
@@ -182,11 +182,11 @@ function N(e) {
   var x = !1;
 
   function M(e) {
-    if (x) x = !1, D();
+    if (x) x = !1, w();
     else {
       var t = "POP";
       P.confirmTransitionTo(e, t, h, function(n) {
-        n ? D({
+        n ? w({
           action: t,
           location: e
         }) : k(e)
@@ -224,7 +224,7 @@ function N(e) {
           else {
             var l = U.indexOf(Q.location.key),
               u = U.slice(0, l + 1);
-            u.push(o.key), U = u, D({
+            u.push(o.key), U = u, w({
               action: i,
               location: o
             })
@@ -248,7 +248,7 @@ function N(e) {
               state: s
             }, null, r), c) window.location.replace(r);
           else {
-            var l = U.indexOf(Q.location.key); - 1 !== l && (U[l] = o.key), D({
+            var l = U.indexOf(Q.location.key); - 1 !== l && (U[l] = o.key), w({
               action: i,
               location: o
             })
@@ -272,7 +272,7 @@ function N(e) {
   var W = 0;
 
   function Y(e) {
-    1 === (W += e) && 1 === e ? (window.addEventListener(S, w), i && window.addEventListener(I, L)) : 0 === W && (window.removeEventListener(S, w), i && window.removeEventListener(I, L))
+    1 === (W += e) && 1 === e ? (window.addEventListener(I, D), i && window.addEventListener(S, L)) : 0 === W && (window.removeEventListener(I, D), i && window.removeEventListener(S, L))
   }
   var K = !1;
 
@@ -338,16 +338,16 @@ function P() {
   return -1 === t ? "" : e.substring(t + 1)
 }
 
-function D(e) {
+function w(e) {
   window.location.hash = e
 }
 
-function w(e) {
+function D(e) {
   window.location.replace(R(window.location.href) + "#" + e)
 }
 
 function L(e) {
-  void 0 === e && (e = {}), m || (0, a.Z)(!1);
+  void 0 === e && (e = {}), g || (0, a.Z)(!1);
   var t = window.history;
   y();
   var n = e,
@@ -364,10 +364,10 @@ function L(e) {
     var e = b(P());
     return f && (e = u(e, f)), p(e)
   }
-  var S = g();
+  var I = m();
 
-  function I(e) {
-    (0, r.Z)(J, e), J.length = t.length, S.notifyListeners(J.location, J.action)
+  function S(e) {
+    (0, r.Z)(J, e), J.length = t.length, I.notifyListeners(J.location, J.action)
   }
   var T = !1,
     N = null;
@@ -379,7 +379,7 @@ function L(e) {
   function x() {
     var e = P(),
       t = v(e);
-    if (e !== t) w(t);
+    if (e !== t) D(t);
     else {
       var n = O(),
         r = J.location;
@@ -389,11 +389,11 @@ function L(e) {
   }
 
   function M(e) {
-    if (T) T = !1, I();
+    if (T) T = !1, S();
     else {
       var t = "POP";
-      S.confirmTransitionTo(e, t, o, function(n) {
-        n ? I({
+      I.confirmTransitionTo(e, t, o, function(n) {
+        n ? S({
           action: t,
           location: e
         }) : k(e)
@@ -410,7 +410,7 @@ function L(e) {
   }
   var j = P(),
     U = v(j);
-  j !== U && w(U);
+  j !== U && D(U);
   var G = O(),
     B = [_(G)];
 
@@ -423,20 +423,20 @@ function L(e) {
   function F(e, t) {
     var n = "PUSH",
       r = p(e, void 0, void 0, J.location);
-    S.confirmTransitionTo(r, n, o, function(e) {
+    I.confirmTransitionTo(r, n, o, function(e) {
       if (e) {
         var t = _(r),
           i = v(f + t),
           o = P() !== i;
         if (o) {
-          N = t, D(i);
+          N = t, w(i);
           var a = B.lastIndexOf(_(J.location)),
             s = B.slice(0, a + 1);
-          s.push(t), B = s, I({
+          s.push(t), B = s, S({
             action: n,
             location: r
           })
-        } else I()
+        } else S()
       }
     })
   }
@@ -444,13 +444,13 @@ function L(e) {
   function Z(e, t) {
     var n = "REPLACE",
       r = p(e, void 0, void 0, J.location);
-    S.confirmTransitionTo(r, n, o, function(e) {
+    I.confirmTransitionTo(r, n, o, function(e) {
       if (e) {
         var t = _(r),
           i = v(f + t),
           o = P() !== i;
-        o && (N = t, w(i));
-        var a = B.indexOf(_(J.location)); - 1 !== a && (B[a] = t), I({
+        o && (N = t, D(i));
+        var a = B.indexOf(_(J.location)); - 1 !== a && (B[a] = t), S({
           action: n,
           location: r
         })
@@ -478,7 +478,7 @@ function L(e) {
 
   function Q(e) {
     void 0 === e && (e = !1);
-    var t = S.setPrompt(e);
+    var t = I.setPrompt(e);
     return q || (z(1), q = !0),
       function() {
         return q && (q = !1, z(-1)), t()
@@ -486,7 +486,7 @@ function L(e) {
   }
 
   function X(e) {
-    var t = S.appendListener(e);
+    var t = I.appendListener(e);
     return z(1),
       function() {
         z(-1), t()
@@ -522,7 +522,7 @@ function M(e) {
     s = void 0 === a ? 0 : a,
     l = t.keyLength,
     c = void 0 === l ? 6 : l,
-    u = g();
+    u = m();
 
   function d(e) {
     (0, r.Z)(A, e), A.length = A.entries.length, u.notifyListeners(A.location, A.action)
@@ -532,7 +532,7 @@ function M(e) {
     return Math.random().toString(36).substr(2, c)
   }
   var h = x(s, 0, o.length - 1),
-    m = o.map(function(e) {
+    g = o.map(function(e) {
       return "string" == typeof e ? p(e, void 0, f()) : p(e, void 0, e.key || f())
     }),
     E = _;
@@ -583,11 +583,11 @@ function M(e) {
     y(-1)
   }
 
-  function S() {
+  function I() {
     y(1)
   }
 
-  function I(e) {
+  function S(e) {
     var t = A.index + e;
     return t >= 0 && t < A.entries.length
   }
@@ -600,18 +600,18 @@ function M(e) {
     return u.appendListener(e)
   }
   var A = {
-    length: m.length,
+    length: g.length,
     action: "POP",
-    location: m[h],
+    location: g[h],
     index: h,
-    entries: m,
+    entries: g,
     createHref: E,
     push: v,
     replace: b,
     go: y,
     goBack: O,
-    goForward: S,
-    canGo: I,
+    goForward: I,
+    canGo: S,
     block: T,
     listen: N
   };

@@ -23,14 +23,14 @@ function h(e) {
     onAction: n,
     onClose: h
   } = e, {
-    profileType: g
-  } = (0, u.z)(), m = (0, i.e7)([c.Z], () => c.Z.isInChannel(t.id));
+    profileType: m
+  } = (0, u.z)(), g = (0, i.e7)([c.Z], () => c.Z.isInChannel(t.id));
   if (!(0, i.e7)([l.Z], () => t.isPrivate() || l.Z.can(_.Plq.CONNECT, t))) return null;
-  let E = () => g === f.y0.FULL_SIZE ? p.NW.string(p.t["3xjX0d"]) : t.isDM() || t.isGroupDM() ? p.NW.string(p.t["7hwn2N"]) : t.isGuildStageVoice() ? p.NW.string(p.t.Acqcoq) : p.NW.string(p.t.BXxdl5),
-    v = () => g === f.y0.FULL_SIZE ? p.NW.string(p.t.VJlc0d) : t.isDM() || t.isGroupDM() ? p.NW.string(p.t.ozoE2N) : t.isGuildStageVoice() ? p.NW.string(p.t["7vb2cX"]) : p.NW.string(p.t["96ANUF"]);
+  let E = () => m === f.y0.FULL_SIZE ? p.NW.string(p.t["3xjX0d"]) : t.isDM() || t.isGroupDM() ? p.NW.string(p.t["7hwn2N"]) : t.isGuildStageVoice() ? p.NW.string(p.t.Acqcoq) : p.NW.string(p.t.BXxdl5),
+    v = () => m === f.y0.FULL_SIZE ? p.NW.string(p.t.VJlc0d) : t.isDM() || t.isGroupDM() ? p.NW.string(p.t.ozoE2N) : t.isGuildStageVoice() ? p.NW.string(p.t["7vb2cX"]) : p.NW.string(p.t["96ANUF"]);
   return (0, r.jsx)(d.tG, {
-    text: m ? E() : v(),
-    themeColor: m ? "secondary" : "primary",
+    text: g ? E() : v(),
+    themeColor: g ? "secondary" : "primary",
     fullWidth: !0,
     onClick: e => {
       e.stopPropagation(), null == n || n({

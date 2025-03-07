@@ -16,8 +16,8 @@ var r = n(115911),
   _ = n(317381),
   p = n(638880),
   h = n(782769),
-  g = n(527805),
-  m = n(388032);
+  m = n(527805),
+  g = n(388032);
 
 function E(e) {
   let {
@@ -25,40 +25,40 @@ function E(e) {
     handleCanJoin: n
   } = e;
   switch (t) {
-    case g.Fw.CAN_JOIN:
+    case m.Fw.CAN_JOIN:
       null == n || n();
       break;
-    case g.Fw.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION:
+    case m.Fw.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION:
       (0, a.w)();
       break;
-    case g.Fw.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS:
+    case m.Fw.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS:
       i.Z.show({
-        title: m.NW.string(m.t.PtobXV),
-        body: m.NW.string(m.t.UXoQTk),
+        title: g.NW.string(g.t.PtobXV),
+        body: g.NW.string(g.t.UXoQTk),
         hideActionSheet: !1
       });
       break;
-    case g.Fw.ACTIVITY_NOT_SUPPORTED_ON_OS:
+    case m.Fw.ACTIVITY_NOT_SUPPORTED_ON_OS:
       i.Z.show({
-        title: m.NW.string(m.t.PtobXV),
-        body: m.NW.string(m.t.uGDCc3),
+        title: g.NW.string(g.t.PtobXV),
+        body: g.NW.string(g.t.uGDCc3),
         hideActionSheet: !1
       });
       break;
-    case g.Fw.ACTIVITY_AGE_GATED:
+    case m.Fw.ACTIVITY_AGE_GATED:
       i.Z.show({
-        title: m.NW.string(m.t.PtobXV),
-        body: m.NW.string(m.t["4WuFRE"]),
+        title: g.NW.string(g.t.PtobXV),
+        body: g.NW.string(g.t["4WuFRE"]),
         hideActionSheet: !1
       });
       break;
-    case g.Fw.NO_CHANNEL_CONNECT_PERMISSION:
-    case g.Fw.CHANNEL_FULL:
-    case g.Fw.NO_CHANNEL:
-    case g.Fw.NO_USER:
+    case m.Fw.NO_CHANNEL_CONNECT_PERMISSION:
+    case m.Fw.CHANNEL_FULL:
+    case m.Fw.NO_CHANNEL:
+    case m.Fw.NO_USER:
       i.Z.show({
-        title: m.NW.string(m.t.PtobXV),
-        body: m.NW.string(m.t.FUCQcn),
+        title: g.NW.string(g.t.PtobXV),
+        body: g.NW.string(g.t.FUCQcn),
         hideActionSheet: !1
       })
   }
@@ -69,24 +69,24 @@ async function v(e) {
     applicationId: n,
     launchId: i,
     inputApplication: a,
-    analyticsLocations: m,
+    analyticsLocations: g,
     launchingComponentId: v,
     sectionName: b,
     inviterUserId: y
-  } = e, O = _.ZP.getEmbeddedActivitiesForChannel(t).find(e => e.applicationId === n && (null == i || e.launchId === i)), S = a;
-  if (null == S) {
+  } = e, O = _.ZP.getEmbeddedActivitiesForChannel(t).find(e => e.applicationId === n && (null == i || e.launchId === i)), I = a;
+  if (null == I) {
     let e = await o.ZP.fetchApplication(n);
-    S = s.ZP.createFromServer(e)
+    I = s.ZP.createFromServer(e)
   }
-  if (null == O || null == S) return;
-  let I = d.default.getCurrentUser(),
+  if (null == O || null == I) return;
+  let S = d.default.getCurrentUser(),
     T = l.Z.getChannel(t);
   async function N() {
     null != O && await (0, p.Z)({
       applicationId: O.applicationId,
       activityChannelId: t,
       locationObject: {},
-      analyticsLocations: m,
+      analyticsLocations: g,
       componentId: v,
       sectionName: b,
       inviterUserId: y,
@@ -95,11 +95,11 @@ async function v(e) {
     })
   }
   E({
-    embeddedActivityJoinability: (0, g.ZP)({
-      userId: null == I ? void 0 : I.id,
-      application: S,
+    embeddedActivityJoinability: (0, m.ZP)({
+      userId: null == S ? void 0 : S.id,
+      application: I,
       channelId: t,
-      currentUser: I,
+      currentUser: S,
       isActivitiesEnabledForCurrentPlatform: (0, h.a)(T),
       ChannelStore: l.Z,
       VoiceStateStore: f.Z,

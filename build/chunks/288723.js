@@ -25,27 +25,27 @@ let d = {
       n = e.options,
       o = e.name;
     if (!t.modifiersData[o]._skip) {
-      for (var d = n.mainAxis, f = void 0 === d || d, _ = n.altAxis, p = void 0 === _ || _, h = n.fallbackPlacements, g = n.padding, m = n.boundary, E = n.rootBoundary, v = n.altBoundary, b = n.flipVariations, y = void 0 === b || b, O = n.allowedAutoPlacements, S = t.options.placement, I = (0, i.Z)(S) === S, T = h || (I || !y ? [(0, r.Z)(S)] : u(S)), N = [S].concat(T).reduce(function(e, n) {
+      for (var d = n.mainAxis, f = void 0 === d || d, _ = n.altAxis, p = void 0 === _ || _, h = n.fallbackPlacements, m = n.padding, g = n.boundary, E = n.rootBoundary, v = n.altBoundary, b = n.flipVariations, y = void 0 === b || b, O = n.allowedAutoPlacements, I = t.options.placement, S = (0, i.Z)(I) === I, T = h || (S || !y ? [(0, r.Z)(I)] : u(I)), N = [I].concat(T).reduce(function(e, n) {
           return e.concat((0, i.Z)(n) === l.d7 ? (0, s.Z)(t, {
             placement: n,
-            boundary: m,
+            boundary: g,
             rootBoundary: E,
-            padding: g,
+            padding: m,
             flipVariations: y,
             allowedAutoPlacements: O
           }) : n)
-        }, []), A = t.rects.reference, C = t.rects.popper, R = new Map, P = !0, D = N[0], w = 0; w < N.length; w++) {
-        var L = N[w],
+        }, []), A = t.rects.reference, C = t.rects.popper, R = new Map, P = !0, w = N[0], D = 0; D < N.length; D++) {
+        var L = N[D],
           x = (0, i.Z)(L),
           M = (0, c.Z)(L) === l.BL,
           k = [l.we, l.I].indexOf(x) >= 0,
           j = k ? "width" : "height",
           U = (0, a.Z)(t, {
             placement: L,
-            boundary: m,
+            boundary: g,
             rootBoundary: E,
             altBoundary: v,
-            padding: g
+            padding: m
           }),
           G = k ? M ? l.F2 : l.t$ : M ? l.I : l.we;
         A[j] > C[j] && (G = (0, r.Z)(G));
@@ -54,7 +54,7 @@ let d = {
         if (f && V.push(U[x] <= 0), p && V.push(U[G] <= 0, U[B] <= 0), V.every(function(e) {
             return e
           })) {
-          D = L, P = !1;
+          w = L, P = !1;
           break
         }
         R.set(L, V)
@@ -67,9 +67,9 @@ let d = {
                 return e
               })
             });
-            if (t) return D = t, "break"
+            if (t) return w = t, "break"
           }, H = F; H > 0 && "break" !== Z(H); H--);
-      t.placement !== D && (t.modifiersData[o]._skip = !0, t.placement = D, t.reset = !0)
+      t.placement !== w && (t.modifiersData[o]._skip = !0, t.placement = w, t.reset = !0)
     }
   },
   requiresIfExists: ["offset"],

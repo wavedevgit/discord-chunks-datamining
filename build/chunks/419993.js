@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  K: () => I
+  K: () => S
 }), n(653041);
 var r, i = n(200651),
   o = n(192379),
@@ -15,8 +15,8 @@ var r, i = n(200651),
   _ = n(179240),
   p = n(388032),
   h = n(433398),
-  g = n(828854),
-  m = n(332952);
+  m = n(828854),
+  g = n(332952);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -30,8 +30,8 @@ let v = (0, l.Z)(),
   b = (0, l.Z)(),
   y = (0, l.Z)(),
   O = 10,
-  S = 7.23;
-class I extends(r = o.Component) {
+  I = 7.23;
+class S extends(r = o.Component) {
   getPaddingRight() {
     let {
       maxLength: e,
@@ -39,7 +39,7 @@ class I extends(r = o.Component) {
     } = this.props;
     if (null == e) return O;
     let n = "".concat(e).length;
-    return t && (n += "".concat(e, " / ").length), S * n + O
+    return t && (n += "".concat(e, " / ").length), I * n + O
   }
   getCharsLeftLength() {
     let {
@@ -125,16 +125,16 @@ class I extends(r = o.Component) {
       spellCheck: E,
       resizeable: v,
       className: O,
-      id: S,
-      rows: I,
+      id: I,
+      rows: S,
       flex: T,
       autosize: N,
       required: A,
       onInvalid: C,
       inputRef: R
-    } = this.props, P = N ? _.l : "textarea", D = this.hasError(), w = null !== (t = this.props["aria-labelledby"]) && void 0 !== t ? t : null === (e = this.context) || void 0 === e ? void 0 : e.titleId, L = this.getAriaDescribedBy();
+    } = this.props, P = N ? _.l : "textarea", w = this.hasError(), D = null !== (t = this.props["aria-labelledby"]) && void 0 !== t ? t : null === (e = this.context) || void 0 === e ? void 0 : e.titleId, L = this.getAriaDescribedBy();
     return (0, i.jsxs)("div", {
-      className: s()(g.inputWrapper, {
+      className: s()(m.inputWrapper, {
         [h.flex]: T
       }),
       children: [(0, i.jsxs)("div", {
@@ -144,18 +144,18 @@ class I extends(r = o.Component) {
         children: [(0, i.jsx)(c.t, {
           children: (0, i.jsx)(P, {
             type: "text",
-            className: s()(g.inputDefault, h.textArea, m.scrollbarDefault, O, {
-              [g.error]: D,
-              [g.disabled]: n,
+            className: s()(m.inputDefault, h.textArea, g.scrollbarDefault, O, {
+              [m.error]: w,
+              [m.disabled]: n,
               [h.resizeable]: v
             }),
-            "aria-labelledby": w,
+            "aria-labelledby": D,
             "aria-describedby": L,
-            "aria-invalid": D,
+            "aria-invalid": w,
             style: {
               paddingRight: this.getPaddingRight()
             },
-            id: S,
+            id: I,
             disabled: n,
             placeholder: o,
             value: r,
@@ -169,7 +169,7 @@ class I extends(r = o.Component) {
             onFocus: this.onFocus,
             onKeyDown: this.onKeyDown,
             onInvalid: C,
-            rows: I,
+            rows: S,
             ref: R
           })
         }), null != l && (0, i.jsx)(d.n, {
@@ -226,7 +226,7 @@ class I extends(r = o.Component) {
     }
   }
 }
-E(I, "contextType", u.q3), E(I, "defaultProps", {
+E(S, "contextType", u.q3), E(S, "defaultProps", {
   name: "",
   disabled: !1,
   placeholder: "",

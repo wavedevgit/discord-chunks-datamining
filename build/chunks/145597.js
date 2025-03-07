@@ -9,8 +9,8 @@ n.r(t), n.d(t, {
   OVERLAY_VERSION: () => s,
   UNSET_PID: () => f,
   getPID: () => p,
-  getRPCAuthToken: () => g,
-  log: () => m,
+  getRPCAuthToken: () => m,
+  log: () => g,
   setOutOfProcessSupport: () => v,
   setPID: () => h,
   supportsOutOfProcess: () => b,
@@ -44,15 +44,15 @@ function h(e) {
   r = e
 }
 
-function g() {
+function m() {
   return new URLSearchParams(window.location.search).get("rpc_auth_token")
 }
 
-function m(e) {
+function g(e) {
   (0, i.lW)({
     type: a.BmY.LOG_MESSAGES,
     pid: p(),
-    token: g(),
+    token: m(),
     payload: e
   })
 }

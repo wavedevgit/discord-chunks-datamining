@@ -43,25 +43,25 @@ function p(e) {
       confirmText: _,
       cancelText: p,
       className: h,
-      onConfirm: g,
-      onCancel: m,
+      onConfirm: m,
+      onCancel: g,
       onClose: E,
       onCloseCallback: v,
       bodyClassName: b,
       transitionState: y,
       loading: O = !1,
-      confirmButtonColor: S = s.zx.Colors.RED,
-      focusCancel: I = !1,
+      confirmButtonColor: I = s.zx.Colors.RED,
+      focusCancel: S = !1,
       impression: T
     } = e,
     N = i.useRef(null),
     A = (0, c.Q3)("ConfirmModal");
   return i.useEffect(() => {
-    I || setTimeout(() => {
+    S || setTimeout(() => {
       var e;
       return null === (e = N.current) || void 0 === e ? void 0 : e.focus()
     }, 0)
-  }, [I]), i.useLayoutEffect(() => () => null == v ? void 0 : v()), null != p && (t = (0, r.jsx)(s.zx, {
+  }, [S]), i.useLayoutEffect(() => () => null == v ? void 0 : v()), null != p && (t = (0, r.jsx)(s.zx, {
     type: "button",
     look: A ? s.zx.Looks.FILLED : s.zx.Looks.LINK,
     color: s.zx.Colors.PRIMARY,
@@ -69,24 +69,24 @@ function p(e) {
     size: s.zx.Sizes.MEDIUM,
     disabled: O,
     onClick: () => {
-      null == m || m(), E()
+      null == g || g(), E()
     },
-    autoFocus: I,
+    autoFocus: S,
     children: p
   })), null != _ && (n = (0, r.jsx)(s.zx, {
     buttonRef: N,
     type: "submit",
     size: s.zx.Sizes.MEDIUM,
-    color: S,
+    color: I,
     submitting: O,
     onClick: async () => {
       try {
-        await (null == g ? void 0 : g()), E()
+        await (null == m ? void 0 : m()), E()
       } catch (e) {
         throw e
       }
     },
-    autoFocus: !I,
+    autoFocus: !S,
     children: _
   })), (0, r.jsxs)(u.Y0, {
     className: h,

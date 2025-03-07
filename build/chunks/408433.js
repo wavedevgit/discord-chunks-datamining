@@ -7,7 +7,7 @@ n.d(t, {
   jz: () => A,
   kC: () => O,
   l3: () => N,
-  o3: () => I,
+  o3: () => S,
   vP: () => C
 }), n(474991), n(398202), n(301563), n(789020), n(266796), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(47120), n(653041);
 var r = n(392711),
@@ -23,8 +23,8 @@ let f = /sketchfab/i,
   _ = /^https:\/\/sketchfab\.com/i,
   p = /youtube|steam|imgur|vimeo|sketchfab|soundcloud|streamable|twitch|vid\.me|twitter/i,
   h = 0x15b7e4a5bfb,
-  g = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop$/,
-  m = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
+  m = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop$/,
+  g = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
   E = RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/shop");
 
 function v(e) {
@@ -97,7 +97,7 @@ function O(e, t, n) {
   if (null != n.image && v(n.image) && (r.image = y(n.image)), null != n.video && (null == r.thumbnail && null != n.video.proxy_url && v(n.video) && (r.thumbnail = {
       width: n.video.width,
       height: n.video.height,
-      url: S(n.video.proxy_url, {
+      url: I(n.video.proxy_url, {
         format: "webp"
       })
     }), null != r.thumbnail && v(n.video) && b(t, n.provider, n.video) && (r.video = y(n.video))), d.k.has(r.type)) {
@@ -119,14 +119,14 @@ function O(e, t, n) {
   return r
 }
 
-function S(e, t) {
+function I(e, t) {
   let n = new URL(e);
   return Object.keys(t).forEach(e => {
     n.searchParams.set(e, t[e])
   }), n.toString()
 }
 
-function I(e) {
+function S(e) {
   let t = new Map,
     n = [];
   return e.forEach(e => {
@@ -155,7 +155,7 @@ function T(e) {
 }
 
 function N(e) {
-  return e.type === u.hBH.ARTICLE && null != e.url && (m.test(e.url) || g.test(e.url))
+  return e.type === u.hBH.ARTICLE && null != e.url && (g.test(e.url) || m.test(e.url))
 }
 
 function A(e) {

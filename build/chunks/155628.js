@@ -61,40 +61,40 @@ function t(e) {
       end: "[ \\t]*=",
       excludeEnd: !0
     },
-    g = {
+    m = {
       className: "variable",
       keywords: _,
       begin: t,
       relevance: 0,
       contains: [h, p]
     },
-    m = n + "\\(",
+    g = n + "\\(",
     E = {
       className: "title",
       keywords: {
         $pattern: t,
         built_in: i
       },
-      begin: m,
+      begin: g,
       end: "\\(",
       returnBegin: !0,
       excludeEnd: !0
     },
     v = {
       className: "function",
-      begin: m,
+      begin: g,
       end: "\\)$",
       returnBegin: !0,
       keywords: _,
       illegal: "[\\[\\]\\|\\$\\?%,~#@]",
-      contains: [E, p, g, u, c, f]
+      contains: [E, p, m, u, c, f]
     };
   return {
     name: "ISBL",
     case_insensitive: !0,
     keywords: _,
     illegal: "\\$|\\?|%|,|;$|~|#|@|</",
-    contains: [v, h, p, g, u, c, f]
+    contains: [v, h, p, m, u, c, f]
   }
 }
 e.exports = t

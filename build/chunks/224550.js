@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(411104);
 var r = n(200651);
 n(192379);
@@ -17,28 +17,28 @@ var i = n(442837),
   _ = n(474936),
   p = n(388032),
   h = n(88519);
-let g = function(e) {
-  let t, n, g, m;
+let m = function(e) {
+  let t, n, m, g;
   let {
     subscriptionPlan: E,
     isGift: v,
     isTrial: b,
     isEmbeddedIAP: y,
     renewalInvoice: O,
-    paymentSourceType: S,
-    hide: I,
+    paymentSourceType: I,
+    hide: S,
     purchaseType: T,
     productLine: N,
     basePrice: A,
     currentSubscription: C
   } = e, R = (0, i.e7)([a.ZP], () => a.ZP.inReverseTrial());
-  if (I) return null;
+  if (S) return null;
   let P = null == e.planGroup ? [] : e.planGroup;
   if (null != O) {
     let e = c.ZP.getIntervalForInvoice(O);
-    t = e.intervalType, n = e.intervalCount, g = (0, u.og)((0, u.T4)(O.total, O.currency), t, n), m = (0, u.og)((0, u.T4)(O.subtotal, O.currency), t, n)
+    t = e.intervalType, n = e.intervalCount, m = (0, u.og)((0, u.T4)(O.total, O.currency), t, n), g = (0, u.og)((0, u.T4)(O.subtotal, O.currency), t, n)
   } else null != E && (t = E.interval, n = E.intervalCount);
-  let D = (0, o.K)({
+  let w = (0, o.K)({
       purchaseType: T || f.GZQ.SUBSCRIPTION,
       plan: E,
       premiumSubscription: null == C ? null : C,
@@ -46,19 +46,19 @@ let g = function(e) {
       planGroup: P,
       isPrepaidPaymentSource: !1
     }),
-    w = p.NW.format(p.t.Y2Rkqa, {
-      primaryText: D,
+    D = p.NW.format(p.t.Y2Rkqa, {
+      primaryText: w,
       paidURL: f.EYA.PAID_TERMS
     }),
     L = p.NW.format(p.t.H2uH5e, {
-      primaryText: D,
+      primaryText: w,
       paidURL: f.EYA.PAID_TERMS
     }),
     x = "",
     M = "";
   if (y) {
-    if (null != g && (null == O ? void 0 : O.subscriptionPeriodEnd) != null) x = p.NW.format(p.t["2VPTa2"], {
-      subtotalRate: m
+    if (null != m && (null == O ? void 0 : O.subscriptionPeriodEnd) != null) x = p.NW.format(p.t["2VPTa2"], {
+      subtotalRate: g
     });
     else switch (t) {
       case _.rV.MONTH:
@@ -77,20 +77,20 @@ let g = function(e) {
     }
   } else if (T === f.GZQ.ONE_TIME) switch (N) {
     case f.POd.COLLECTIBLES:
-      M = w, x = v ? p.NW.format(p.t.ofqyUl, {
+      M = D, x = v ? p.NW.format(p.t.ofqyUl, {
         paidURL: f.EYA.PAID_TERMS
       }) : p.NW.format(p.t.G3l0s7, {
         paidURL: f.EYA.PAID_TERMS
       });
       break;
     case f.POd.GUILD_PRODUCT:
-      M = w, x = p.NW.format(p.t["GEAQ+v"], {
+      M = D, x = p.NW.format(p.t["GEAQ+v"], {
         paidURL: f.EYA.PAID_TERMS
       });
       break;
     default:
       M = L, x = p.NW.string(p.t["9/siSU"])
-  } else if (null == E || v) switch (v && (M = w), t) {
+  } else if (null == E || v) switch (v && (M = D), t) {
     case _.rV.MONTH:
       x = v ? p.NW.string(p.t.IjNapq) : p.NW.string(p.t["/sGXPj"]), x = v ? p.NW.string(p.t.IjNapq) : 1 === n ? p.NW.string(p.t["/sGXPj"]) : p.NW.formatToPlainString(p.t.Fqjiho, {
         intervalCount: n
@@ -161,10 +161,10 @@ let g = function(e) {
       })]
     }), "" !== x && (0, r.jsx)("div", {
       children: x
-    }), S === f.HeQ.PAYSAFE_CARD && (0, r.jsx)("div", {
+    }), I === f.HeQ.PAYSAFE_CARD && (0, r.jsx)("div", {
       className: h.paymentSourceNoticeCopy,
       children: p.NW.string(p.t.kj9VLC)
-    }), S === f.HeQ.SOFORT && (0, r.jsxs)("div", {
+    }), I === f.HeQ.SOFORT && (0, r.jsxs)("div", {
       className: h.paymentSourceNoticeCopy,
       children: [p.NW.string(p.t["UYy1/v"]), " "]
     })]

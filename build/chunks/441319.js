@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   M9: () => C,
-  aW: () => w,
-  wu: () => D
+  aW: () => D,
+  wu: () => w
 }), n(47120);
 var r = n(997945),
   i = n(388032),
@@ -18,15 +18,15 @@ var r = n(997945),
   _ = n(480423),
   p = n(273593),
   h = n(665801),
-  g = n(818143),
-  m = n(666475),
+  m = n(818143),
+  g = n(666475),
   E = n(591304),
   v = n(73375),
   b = n(328664),
   y = n(328259),
   O = n(19009),
-  S = n(234912),
-  I = n(405571),
+  I = n(234912),
+  S = n(405571),
   T = n(730886),
   N = n(473974),
   A = n(563856);
@@ -64,7 +64,7 @@ function P() {
     isPremium: !0
   }, {
     id: r.Ru.PASTEL,
-    iconSource: I,
+    iconSource: S,
     isPremium: !0,
     name: i.NW.string(i.t.mTSkLS)
   }, {
@@ -84,7 +84,7 @@ function P() {
     name: i.NW.string(i.t.ixdjPD)
   }, {
     id: r.Ru.GALAXY,
-    iconSource: g,
+    iconSource: m,
     isPremium: !0,
     name: i.NW.string(i.t.cb78Li)
   }, {
@@ -104,7 +104,7 @@ function P() {
     name: i.NW.string(i.t.IoLVi4)
   }, {
     id: r.Ru.GAMING,
-    iconSource: m,
+    iconSource: g,
     isPremium: !0,
     name: i.NW.string(i.t["2Tf+c3"])
   }, {
@@ -144,7 +144,7 @@ function P() {
     name: i.NW.string(i.t.yxJB9P)
   }, {
     id: r.Ru.MIDNIGHT_PRISM,
-    iconSource: S,
+    iconSource: I,
     isPremium: !0,
     name: i.NW.string(i.t.nshUZW)
   }, {
@@ -155,10 +155,10 @@ function P() {
   }]
 }
 
-function D() {
+function w() {
   return [R(), ...P()]
 }
 
-function w(e) {
-  return D().find(t => t.id === e)
+function D(e) {
+  return w().find(t => t.id === e)
 }

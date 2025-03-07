@@ -22,18 +22,18 @@ function u(e) {
     _ = void 0 === f ? c : f,
     p = e.referenceElement,
     h = e.onFirstUpdate,
-    g = e.innerRef,
-    m = e.children,
+    m = e.innerRef,
+    g = e.children,
     E = r.useContext(i.C8),
     v = r.useState(null),
     b = v[0],
     y = v[1],
     O = r.useState(null),
-    S = O[0],
-    I = O[1];
+    I = O[0],
+    S = O[1];
   r.useEffect(function() {
-    (0, o.k$)(g, b)
-  }, [g, b]);
+    (0, o.k$)(m, b)
+  }, [m, b]);
   var T = r.useMemo(function() {
       return {
         placement: n,
@@ -41,19 +41,19 @@ function u(e) {
         onFirstUpdate: h,
         modifiers: [].concat(_, [{
           name: "arrow",
-          enabled: null != S,
+          enabled: null != I,
           options: {
-            element: S
+            element: I
           }
         }])
       }
-    }, [n, d, h, _, S]),
+    }, [n, d, h, _, I]),
     N = (0, a.D)(p || E, b, T),
     A = N.state,
     C = N.styles,
     R = N.forceUpdate,
     P = N.update,
-    D = r.useMemo(function() {
+    w = r.useMemo(function() {
       return {
         ref: y,
         style: C.popper,
@@ -62,11 +62,11 @@ function u(e) {
         isReferenceHidden: A && A.modifiersData.hide ? A.modifiersData.hide.isReferenceHidden : null,
         arrowProps: {
           style: C.arrow,
-          ref: I
+          ref: S
         },
         forceUpdate: R || s,
         update: P || l
       }
-    }, [y, I, n, A, C, P, R]);
-  return (0, o.$p)(m)(D)
+    }, [y, S, n, A, C, P, R]);
+  return (0, o.$p)(g)(w)
 }

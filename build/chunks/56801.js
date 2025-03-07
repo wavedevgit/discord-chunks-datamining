@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => I
 });
 var r = n(200651),
   i = n(192379),
@@ -47,13 +47,13 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -75,7 +75,7 @@ let v = [16, 8, 8, 8],
   y = 4,
   O = 8;
 
-function S(e) {
+function I(e) {
   let {
     className: t,
     channel: n,
@@ -83,8 +83,8 @@ function S(e) {
     activeCategoryIndex: _,
     filteredSectionId: h,
     onSectionClick: E,
-    applicationCommandListRef: S
-  } = e, I = i.useRef(null), T = i.useCallback((e, t) => {
+    applicationCommandListRef: I
+  } = e, S = i.useRef(null), T = i.useCallback((e, t) => {
     var n;
     let r = 2 * y;
     return (null === (n = o[t + 1]) || void 0 === n ? void 0 : n.type) === u.Qi.BUILT_IN && (r += O), b + r
@@ -115,8 +115,8 @@ function S(e) {
         children: e => {
           var {
             onClick: t
-          } = e, n = m(e, ["onClick"]);
-          return (0, r.jsx)(s.P3F, g(p({
+          } = e, n = g(e, ["onClick"]);
+          return (0, r.jsx)(s.P3F, m(p({
             "aria-label": i.name,
             onClick: () => {
               E(i), null == t || t()
@@ -133,8 +133,8 @@ function S(e) {
   return 0 === o.length ? null : (0, r.jsx)("div", {
     className: a()(t, f.wrapper),
     children: (0, r.jsx)(c.Z, {
-      categoryListRef: I,
-      expressionsListRef: S,
+      categoryListRef: S,
+      expressionsListRef: I,
       store: l.Xn,
       categories: o,
       className: f.list,

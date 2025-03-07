@@ -12,15 +12,15 @@ var s, l = n(442837),
   _ = n(102172),
   p = n(139656),
   h = n(855403),
-  g = n(314897),
-  m = n(592125),
+  m = n(314897),
+  g = n(592125),
   E = n(430824),
   v = n(131951),
   b = n(496675),
   y = n(19780),
   O = n(944486),
-  S = n(979651),
-  I = n(981631),
+  I = n(979651),
+  S = n(981631),
   T = n(70722);
 
 function N(e, t, n) {
@@ -62,8 +62,8 @@ function R(e, t) {
   }), e
 }
 let P = null,
-  D = {},
-  w = null;
+  w = {},
+  D = null;
 
 function L() {
   r = new Map, i = {}, o = {}, a = {}
@@ -71,12 +71,12 @@ function L() {
 
 function x(e) {
   var t;
-  null == i[e.ownerId] && (i[e.ownerId] = {}), i[e.ownerId][null !== (t = e.guildId) && void 0 !== t ? t : I.kod] = e
+  null == i[e.ownerId] && (i[e.ownerId] = {}), i[e.ownerId][null !== (t = e.guildId) && void 0 !== t ? t : S.kod] = e
 }
 
 function M(e, t) {
   var n;
-  let r = null != t ? t : I.kod;
+  let r = null != t ? t : S.kod;
   return (null === (n = i[e]) || void 0 === n ? void 0 : n[r]) != null && (delete i[e][r], !0)
 }
 
@@ -121,8 +121,8 @@ function G(e) {
       discoverable: s
     }), !0;
     {
-      let t = g.default.getSessionId();
-      return n === g.default.getId() && o !== t && null != y.Z.getChannelId() ? e : M(n, r) || e
+      let t = m.default.getSessionId();
+      return n === m.default.getId() && o !== t && null != y.Z.getChannelId() ? e : M(n, r) || e
     }
   }, !1)
 }
@@ -132,8 +132,8 @@ function B(e) {
     streamKey: t
   } = e, n = (0, f.my)(t);
   r.delete(t), r.set(t, R(A({}, n), {
-    state: I.jm8.CONNECTING
-  })), n.ownerId === g.default.getId() && (D[n.channelId] = !1)
+    state: S.jm8.CONNECTING
+  })), n.ownerId === m.default.getId() && (w[n.channelId] = !1)
 }
 
 function V(e) {
@@ -151,10 +151,10 @@ function V(e) {
     streamType: n,
     guildId: i,
     channelId: o,
-    ownerId: g.default.getId()
-  }), m = null !== (t = null != s ? d.ZP.getGameForPID(s) : null != c ? d.ZP.getRunningGames().find(e => (0, h.Z)(c, e.windowHandle)) : null) && void 0 !== t ? t : null;
+    ownerId: m.default.getId()
+  }), g = null !== (t = null != s ? d.ZP.getGameForPID(s) : null != c ? d.ZP.getRunningGames().find(e => (0, h.Z)(c, e.windowHandle)) : null) && void 0 !== t ? t : null;
   a[p] = {
-    id: null == m ? void 0 : m.id,
+    id: null == g ? void 0 : g.id,
     pid: s,
     sourceName: l,
     previewDisabled: _,
@@ -163,8 +163,8 @@ function V(e) {
     streamType: n,
     guildId: i,
     channelId: o,
-    ownerId: g.default.getId(),
-    state: I.jm8.CONNECTING
+    ownerId: m.default.getId(),
+    state: S.jm8.CONNECTING
   })
 }
 
@@ -183,7 +183,7 @@ function Z(e) {
     paused: a
   } = e;
   r.set(t, R(A({}, (0, f.my)(t)), {
-    state: a ? I.jm8.PAUSED : I.jm8.ACTIVE
+    state: a ? S.jm8.PAUSED : S.jm8.ACTIVE
   })), o[t] = {
     streamKey: t,
     region: n,
@@ -204,8 +204,8 @@ function W(e) {
     channelId: n
   } = e;
   P = t, Array.from(r.values()).forEach(e => {
-    (0, f.V9)(e) !== P && e.state === I.jm8.ENDED && k((0, f.V9)(e))
-  }), null != t && (0, f.DB)(t) && t.includes(g.default.getId()) && (D[n] = !1)
+    (0, f.V9)(e) !== P && e.state === S.jm8.ENDED && k((0, f.V9)(e))
+  }), null != t && (0, f.DB)(t) && t.includes(m.default.getId()) && (w[n] = !1)
 }
 
 function Y(e) {
@@ -217,10 +217,10 @@ function Y(e) {
   delete o[t];
   let s = r.get(t);
   if (null == s) return !1;
-  let l = I.jm8.ENDED;
-  if (i) l = I.jm8.RECONNECTING;
-  else if (a === I.si2.UNAUTHORIZED) l = I.jm8.FAILED;
-  else if (a === I.si2.SAFETY_GUILD_RATE_LIMITED) {
+  let l = S.jm8.ENDED;
+  if (i) l = S.jm8.RECONNECTING;
+  else if (a === S.si2.UNAUTHORIZED) l = S.jm8.FAILED;
+  else if (a === S.si2.SAFETY_GUILD_RATE_LIMITED) {
     let {
       guildId: e
     } = (0, f.my)(t);
@@ -229,11 +229,11 @@ function Y(e) {
         default: n
       } = t;
       n(e)
-    }), l = I.jm8.ENDED
+    }), l = S.jm8.ENDED
   }
   r.set(t, R(A({}, s), {
     state: l
-  })), l === I.jm8.ENDED && P !== t && k(t)
+  })), l === S.jm8.ENDED && P !== t && k(t)
 }
 
 function K(e) {
@@ -242,7 +242,7 @@ function K(e) {
   } = e, n = r.get(t);
   if (null == n) return !1;
   r.set(t, R(A({}, n), {
-    state: I.jm8.FAILED
+    state: S.jm8.FAILED
   }))
 }
 
@@ -253,14 +253,14 @@ function z(e) {
   } = e;
   if (null == t) return !1;
   let i = r.get(t);
-  if (null == i || i.state === I.jm8.ENDED) return !1;
+  if (null == i || i.state === S.jm8.ENDED) return !1;
   let o = i.state;
   switch (n) {
-    case I.hes.DISCONNECTED:
-      o = I.jm8.RECONNECTING;
+    case S.hes.DISCONNECTED:
+      o = S.jm8.RECONNECTING;
       break;
-    case I.hes.RTC_CONNECTED:
-      o = I.jm8.ACTIVE
+    case S.hes.RTC_CONNECTED:
+      o = S.jm8.ACTIVE
   }
   if (o === i.state) return !1;
   r.set(t, R(A({}, i), {
@@ -273,39 +273,39 @@ function q(e) {
     channelId: t,
     selfStreamHidden: n
   } = e;
-  (0, f.DB)(P) && (null == P ? void 0 : P.includes(g.default.getId())) && !1 === D[t] && !0 === n && (P = null), D[t] = n
+  (0, f.DB)(P) && (null == P ? void 0 : P.includes(m.default.getId())) && !1 === w[t] && !0 === n && (P = null), w[t] = n
 }
 
 function Q(e) {
   let {
     intent: t
   } = e;
-  w = t
+  D = t
 }
 
 function X(e, t) {
-  let n = m.Z.getBasicChannel(t);
-  return e === T.lo.CALL || null != n && b.Z.canBasicChannel(I.S7T.VIEW_CHANNEL, n)
+  let n = g.Z.getBasicChannel(t);
+  return e === T.lo.CALL || null != n && b.Z.canBasicChannel(S.S7T.VIEW_CHANNEL, n)
 }
 
 function J(e) {
   if (X(e.streamType, e.channelId)) return !0;
-  let t = m.Z.getBasicChannel(e.channelId);
-  return null != t && (0, _.p9)(t, S.Z, E.Z, b.Z, u.Z)[0]
+  let t = g.Z.getBasicChannel(e.channelId);
+  return null != t && (0, _.p9)(t, I.Z, E.Z, b.Z, u.Z)[0]
 }
 L();
 class $ extends(s = l.ZP.PersistedStore) {
   initialize(e) {
-    this.syncWith([b.Z], () => !0), this.waitFor(d.ZP, b.Z), (null == e ? void 0 : e.selfStreamParticipantsHidden) !== void 0 && Object.assign(D, null == e ? void 0 : e.selfStreamParticipantsHidden)
+    this.syncWith([b.Z], () => !0), this.waitFor(d.ZP, b.Z), (null == e ? void 0 : e.selfStreamParticipantsHidden) !== void 0 && Object.assign(w, null == e ? void 0 : e.selfStreamParticipantsHidden)
   }
   getState() {
     return {
-      selfStreamParticipantsHidden: D
+      selfStreamParticipantsHidden: w
     }
   }
   isSelfStreamHidden(e) {
     var t;
-    return null !== (t = D[e]) && void 0 !== t && t
+    return null !== (t = w[e]) && void 0 !== t && t
   }
   getLastActiveStream() {
     var e;
@@ -329,8 +329,8 @@ class $ extends(s = l.ZP.PersistedStore) {
   }
   getCurrentUserActiveStream() {
     let e = O.Z.getVoiceChannelId(),
-      t = m.Z.getChannel(e);
-    return null == t ? null : this.getActiveStreamForUser(g.default.getId(), t.getGuildId())
+      t = g.Z.getChannel(e);
+    return null == t ? null : this.getActiveStreamForUser(m.default.getId(), t.getGuildId())
   }
   getActiveStreamForUser(e, t) {
     var n;
@@ -340,9 +340,9 @@ class $ extends(s = l.ZP.PersistedStore) {
   getStreamerActiveStreamMetadata() {
     var e;
     let t = O.Z.getVoiceChannelId(),
-      n = m.Z.getChannel(t);
+      n = g.Z.getChannel(t);
     if (null == n) return null;
-    let r = this.getActiveStreamForUser(g.default.getId(), n.getGuildId());
+    let r = this.getActiveStreamForUser(m.default.getId(), n.getGuildId());
     return null == r ? null : null !== (e = a[(0, f.V9)(r)]) && void 0 !== e ? e : null
   }
   getStreamerActiveStreamMetadataForStream(e) {
@@ -369,7 +369,7 @@ class $ extends(s = l.ZP.PersistedStore) {
   getStreamForUser(e, t) {
     var n;
     if (!(0, p.Z)(v.Z)) return null;
-    let r = null === (n = i[e]) || void 0 === n ? void 0 : n[null != t ? t : I.kod];
+    let r = null === (n = i[e]) || void 0 === n ? void 0 : n[null != t ? t : S.kod];
     return null != r && J(r) ? r : null
   }
   getRTCStream(e) {
@@ -389,7 +389,7 @@ class $ extends(s = l.ZP.PersistedStore) {
     return null != n ? n.viewerIds : []
   }
   getCurrentAppIntent() {
-    return w
+    return D
   }
   getStreamingState() {
     return (0, p.Z)(v.Z) ? {

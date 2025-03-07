@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  BD: () => g,
+  BD: () => m,
   DF: () => p,
   ZP: () => b,
   _F: () => h
@@ -59,10 +59,10 @@ var p = function(e) {
   h = function(e) {
     return e[e.ADJACENT = 0] = "ADJACENT", e[e.STACKED = 1] = "STACKED", e
   }({}),
-  g = function(e) {
+  m = function(e) {
     return e.BRAND = "brand", e.PRIMARY = "primary", e
   }({});
-let m = Object.freeze({
+let g = Object.freeze({
     brand: c.colorBrand,
     primary: c.colorPrimary
   }),
@@ -84,34 +84,34 @@ function b(e) {
     content: f,
     contentClassName: p,
     buttonCTA: h,
-    secondaryButtonCTA: g,
+    secondaryButtonCTA: m,
     onClick: b,
     onSecondaryClick: y,
     buttonProps: O = {
       color: a.zxk.Colors.BRAND,
       look: a.zxk.Looks.FILLED
     },
-    secondaryButtonProps: S = {
+    secondaryButtonProps: I = {
       color: a.zxk.Colors.BRAND_INVERTED
     },
-    onComponentMount: I,
+    onComponentMount: S,
     asset: T,
     markAsDismissed: N,
     caretPosition: A = "caretTopCenter",
     buttonLayout: C = 0
   } = e;
   (0, s.ZP)(() => {
-    null == I || I()
+    null == S || S()
   });
-  let R = null != g,
+  let R = null != m,
     P = e => {
       b(e), null == N || N(l.L.PRIMARY)
     },
-    D = () => {
+    w = () => {
       null == y || y(), null == N || N(l.L.SECONDARY)
     };
   return (0, r.jsxs)("div", {
-    className: o()(n, m[t], c.upsellTooltipWrapper, c[A]),
+    className: o()(n, g[t], c.upsellTooltipWrapper, c[A]),
     children: [T, null == i ? null : (0, r.jsx)(a.X6q, {
       color: E[t],
       className: o()(u, c.upsellTooltipHeader),
@@ -127,10 +127,10 @@ function b(e) {
         [c.upsellButtonsAdjacent]: 0 === C,
         [c.upsellButtonsStacked]: 1 === C
       }),
-      children: [R ? (0, r.jsx)(a.zxk, _(d({}, S), {
+      children: [R ? (0, r.jsx)(a.zxk, _(d({}, I), {
         fullWidth: 1 === C,
-        onClick: D,
-        children: g
+        onClick: w,
+        children: m
       })) : null, null == h ? null : (0, r.jsx)(a.zxk, _(d({}, O), {
         fullWidth: !R || 1 === C,
         onClick: P,

@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  AH: () => I,
+  AH: () => S,
   Ag: () => x,
   CS: () => b,
-  EW: () => w,
+  EW: () => D,
   OR: () => L,
   QB: () => T,
-  T0: () => D,
+  T0: () => w,
   Wf: () => R,
   cT: () => j,
   eT: () => P,
@@ -15,7 +15,7 @@ n.d(t, {
   gl: () => A,
   is: () => y,
   lL: () => U,
-  m0: () => S,
+  m0: () => I,
   nE: () => C,
   pf: () => N,
   qm: () => M,
@@ -35,15 +35,15 @@ var r = n(990547),
   _ = n(918701),
   p = n(184299),
   h = n(720293),
-  g = n(566078),
-  m = n(981631),
+  m = n(566078),
+  g = n(981631),
   E = n(388032);
 let v = 5;
 async function b(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
   try {
     let n = (await i.tn.post({
-      url: m.ANM.QUEST_ON_CONSOLE_START(e),
+      url: g.ANM.QUEST_ON_CONSOLE_START(e),
       query: t ? {
         preview: t
       } : void 0,
@@ -84,7 +84,7 @@ async function b(e) {
 }
 async function y(e) {
   await i.tn.post({
-    url: m.ANM.QUEST_ON_CONSOLE_STOP(e),
+    url: g.ANM.QUEST_ON_CONSOLE_STOP(e),
     rejectWithError: !1
   })
 }
@@ -92,35 +92,35 @@ async function O() {
   if (!d.Z.isFetchingCurrentQuests) {
     o.Z.dispatch({
       type: "QUESTS_FETCH_CURRENT_QUESTS_BEGIN"
-    }), u.Z.recordQuestRequestAttempt(m.ANM.QUESTS_CURRENT_QUESTS);
+    }), u.Z.recordQuestRequestAttempt(g.ANM.QUESTS_CURRENT_QUESTS);
     try {
       let e = await i.tn.get({
-          url: m.ANM.QUESTS_CURRENT_QUESTS,
+          url: g.ANM.QUESTS_CURRENT_QUESTS,
           rejectWithError: !1
         }),
         t = e.body.quests.filter(e => (0, _.Qe)(e)).map(e => (0, _.WP)(e)).filter(e => {
           var t;
-          return (null === (t = e.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null || g.r.build(e.config).rewardPlatforms.length > 0
+          return (null === (t = e.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null || m.r.build(e.config).rewardPlatforms.length > 0
         }),
         n = e.body.excluded_quests;
       o.Z.dispatch({
         type: "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS",
         quests: t,
         excludedQuests: n
-      }), u.Z.recordQuestRequestApiResponse(m.ANM.QUESTS_CURRENT_QUESTS, {
+      }), u.Z.recordQuestRequestApiResponse(g.ANM.QUESTS_CURRENT_QUESTS, {
         wasSuccessful: !0
       })
     } catch (e) {
       o.Z.dispatch({
         type: "QUESTS_FETCH_CURRENT_QUESTS_FAILURE",
         error: new a.Z(e)
-      }), u.Z.recordQuestRequestApiResponse(m.ANM.QUESTS_CURRENT_QUESTS, {
+      }), u.Z.recordQuestRequestApiResponse(g.ANM.QUESTS_CURRENT_QUESTS, {
         wasSuccessful: !1
       })
     }
   }
 }
-async function S(e) {
+async function I(e) {
   let {
     questId: t,
     streamKey: n,
@@ -129,7 +129,7 @@ async function S(e) {
   try {
     var s;
     let e = await l.Z.post({
-      url: m.ANM.QUESTS_HEARTBEAT(t),
+      url: g.ANM.QUESTS_HEARTBEAT(t),
       body: {
         stream_key: n,
         terminal: i
@@ -161,7 +161,7 @@ async function S(e) {
     })
   }
 }
-async function I(e, t) {
+async function S(e, t) {
   if (null != t.questContentCTA && (0, c._3)({
       questId: e,
       questContent: t.questContent,
@@ -175,7 +175,7 @@ async function I(e, t) {
     });
     try {
       let n = await i.tn.post({
-        url: m.ANM.QUESTS_ENROLL(e),
+        url: g.ANM.QUESTS_ENROLL(e),
         body: {
           location: t.questContent
         },
@@ -201,7 +201,7 @@ async function T(e, t, n) {
     });
     try {
       let r = await i.tn.post({
-          url: m.ANM.QUESTS_CLAIM_REWARD(e),
+          url: g.ANM.QUESTS_CLAIM_REWARD(e),
           body: {
             platform: t,
             location: n
@@ -235,7 +235,7 @@ async function N(e) {
     });
     try {
       let t = await i.tn.get({
-        url: m.ANM.QUESTS_REWARD_CODE(e),
+        url: g.ANM.QUESTS_REWARD_CODE(e),
         rejectWithError: !1
       });
       o.Z.dispatch({
@@ -263,7 +263,7 @@ async function A(e, t) {
     });
     try {
       let n = await i.tn.post({
-        url: m.ANM.QUESTS_DISMISS_CONTENT(e, t),
+        url: g.ANM.QUESTS_DISMISS_CONTENT(e, t),
         body: {},
         rejectWithError: !1
       });
@@ -291,7 +291,7 @@ async function R(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1;
   try {
     let n = await i.tn.post({
-      url: m.ANM.QUESTS_PREVIEW_COMPLETE(e),
+      url: g.ANM.QUESTS_PREVIEW_COMPLETE(e),
       body: {
         percent: t
       },
@@ -312,7 +312,7 @@ async function R(e) {
 async function P(e) {
   try {
     let t = await i.tn.del({
-      url: m.ANM.QUESTS_PREVIEW_STATUS(e),
+      url: g.ANM.QUESTS_PREVIEW_STATUS(e),
       body: {},
       rejectWithError: !1
     });
@@ -328,13 +328,13 @@ async function P(e) {
     })
   }
 }
-async function D(e) {
+async function w(e) {
   try {
     o.Z.dispatch({
       type: "QUESTS_DOCK_RESET_SOFT_DISMISSAL"
     });
     let t = await i.tn.del({
-      url: m.ANM.QUESTS_PREVIEW_DISMISSIBILITY(e),
+      url: g.ANM.QUESTS_PREVIEW_DISMISSIBILITY(e),
       body: {},
       rejectWithError: !1
     });
@@ -351,7 +351,7 @@ async function D(e) {
   }
 }
 
-function w(e) {
+function D(e) {
   o.Z.dispatch({
     type: "QUESTS_DELIVERY_OVERRIDE",
     questId: e
@@ -372,7 +372,7 @@ async function x() {
     });
     try {
       let e = (await i.tn.get({
-        url: m.ANM.QUESTS_CLAIMED_QUESTS,
+        url: g.ANM.QUESTS_CLAIMED_QUESTS,
         rejectWithError: !1
       })).body.quests.map(e => (0, _.hQ)(e));
       o.Z.dispatch({
@@ -404,7 +404,7 @@ async function k(e) {
   try {
     let t = await (0, s.Gg)(),
       n = await i.tn.get({
-        url: m.ANM.QUEST_FETCH_QUEST_TO_DELIVER(e, null == t ? void 0 : t.uuid),
+        url: g.ANM.QUEST_FETCH_QUEST_TO_DELIVER(e, null == t ? void 0 : t.uuid),
         rejectWithError: !1
       });
     o.Z.dispatch({
@@ -424,7 +424,7 @@ async function k(e) {
 async function j(e, t) {
   var n;
   await l.Z.post({
-    url: m.ANM.QUESTS_VIDEO_PROGRESS(e),
+    url: g.ANM.QUESTS_VIDEO_PROGRESS(e),
     body: {
       timestamp: t
     },
@@ -471,7 +471,7 @@ async function U(e) {
 }
 async function G(e) {
   let t = await i.tn.get({
-    url: m.ANM.QUEST(e),
+    url: g.ANM.QUEST(e),
     rejectWithError: !1
   });
   return (0, _.q6)(t.body)

@@ -50,8 +50,8 @@ let d = [],
   _ = {},
   p = {},
   h = {},
-  g = {},
-  m = {
+  m = {},
+  g = {
     botUserIdToAppUsage: {}
   },
   E = 10;
@@ -61,11 +61,11 @@ function v(e) {
   h[e.id] = Date.now();
   let n = e;
   for (let r of (null != t && (n = t.mergeFromApplicationUpdate(e)), f[e.id] = n, p[e.name.toLowerCase()] = n, e.aliases)) p[r.toLowerCase()] = n;
-  delete g[e.id]
+  delete m[e.id]
 }
 
 function b() {
-  f = {}, _ = {}, p = {}, h = {}, g = {}
+  f = {}, _ = {}, p = {}, h = {}, m = {}
 }
 
 function y(e) {
@@ -78,18 +78,18 @@ function y(e) {
 function O(e) {
   let {
     applicationId: t
-  } = e, n = g[t];
-  return g[t] = !0, !0 !== n
+  } = e, n = m[t];
+  return m[t] = !0, !0 !== n
 }
 
-function S(e) {
+function I(e) {
   let {
     application: t
   } = e;
   T(t)
 }
 
-function I(e) {
+function S(e) {
   let {
     application: t
   } = e;
@@ -104,29 +104,29 @@ function N(e) {
   let {
     userId: t,
     applicationId: n
-  } = e, r = m.botUserIdToAppUsage[t];
-  null == r ? m.botUserIdToAppUsage[t] = {
+  } = e, r = g.botUserIdToAppUsage[t];
+  null == r ? g.botUserIdToAppUsage[t] = {
     applicationId: n,
     lastUsedMs: Date.now()
-  } : m.botUserIdToAppUsage[t] = {
+  } : g.botUserIdToAppUsage[t] = {
     applicationId: n,
     lastUsedMs: r.lastUsedMs
   };
   let i = new Map;
-  for (let [e, t] of Object.entries(m.botUserIdToAppUsage)) i.set(e, t);
+  for (let [e, t] of Object.entries(g.botUserIdToAppUsage)) i.set(e, t);
   let o = Array.from(i.entries()).sort((e, t) => t[1].lastUsedMs - e[1].lastUsedMs);
   for (let e = 0; e < o.length; e++)
     if (e >= E) {
       let t = o[e][0];
-      delete m.botUserIdToAppUsage[t]
+      delete g.botUserIdToAppUsage[t]
     }
 }
 
 function A(e) {
   let {
     applicationId: t
-  } = e, n = g[t];
-  return g[t] = !1, !1 !== n
+  } = e, n = m[t];
+  return m[t] = !1, !1 !== n
 }
 
 function C(e) {
@@ -134,8 +134,8 @@ function C(e) {
     applicationIds: t
   } = e, n = !1;
   for (let e of t) {
-    let t = g[e];
-    g[e] = !0, n = !0 !== t
+    let t = m[e];
+    m[e] = !0, n = !0 !== t
   }
   return n
 }
@@ -154,7 +154,7 @@ function P(e) {
   for (let e of t) v(a.ZP.createFromServer(e))
 }
 
-function D(e) {
+function w(e) {
   let {
     recommendations: t
   } = e;
@@ -165,7 +165,7 @@ function D(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     user: t,
     application: n
@@ -179,8 +179,8 @@ function w(e) {
 function L(e) {
   let {
     botUserId: t
-  } = e, n = m.botUserIdToAppUsage[t];
-  null != n && (m.botUserIdToAppUsage[t] = u(l({}, n), {
+  } = e, n = g.botUserIdToAppUsage[t];
+  null != n && (g.botUserIdToAppUsage[t] = u(l({}, n), {
     lastUsedMs: Date.now()
   }))
 }
@@ -190,8 +190,8 @@ function x(e) {
     applicationIds: t
   } = e, n = !1;
   for (let e of t) {
-    let t = g[e];
-    g[e] = !1, n = !1 !== t
+    let t = m[e];
+    m[e] = !1, n = !1 !== t
   }
   return n
 }
@@ -299,14 +299,14 @@ class Y extends(r = i.ZP.PersistedStore) {
         let n = e.botUserIdToAppUsage[t],
           r = n.applicationId,
           i = n.lastUsedMs;
-        "string" == typeof r && r.length > 0 && "number" == typeof i && i > 0 && (m.botUserIdToAppUsage[t] = {
+        "string" == typeof r && r.length > 0 && "number" == typeof i && i > 0 && (g.botUserIdToAppUsage[t] = {
           applicationId: r,
           lastUsedMs: i
         })
       }
   }
   getState() {
-    return m
+    return g
   }
   _getAllApplications() {
     return Object.values(f)
@@ -336,17 +336,17 @@ class Y extends(r = i.ZP.PersistedStore) {
     return h[e]
   }
   isFetchingApplication(e) {
-    return !0 === g[e]
+    return !0 === m[e]
   }
   didFetchingApplicationFail(e) {
-    return !1 === g[e]
+    return !1 === m[e]
   }
   getFetchingOrFailedFetchingIds() {
-    return Object.keys(g)
+    return Object.keys(m)
   }
   getAppIdForBotUserId(e) {
     var t;
-    if (null != e) return null === (t = m.botUserIdToAppUsage[e]) || void 0 === t ? void 0 : t.applicationId
+    if (null != e) return null === (t = g.botUserIdToAppUsage[e]) || void 0 === t ? void 0 : t.applicationId
   }
 }
 s(Y, "displayName", "ApplicationStore"), s(Y, "persistKey", "ApplicationStore");
@@ -354,12 +354,12 @@ let K = new Y(o.Z, {
   LOGOUT: b,
   OVERLAY_INITIALIZE: y,
   APPLICATION_FETCH: O,
-  APPLICATION_FETCH_SUCCESS: I,
+  APPLICATION_FETCH_SUCCESS: S,
   APPLICATION_FETCH_FAIL: A,
   APPLICATIONS_FETCH: C,
   APPLICATIONS_FETCH_SUCCESS: P,
   APPLICATIONS_FETCH_FAIL: x,
-  APPLICATION_UPDATE: S,
+  APPLICATION_UPDATE: I,
   APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: M,
   ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: M,
   ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: M,
@@ -371,8 +371,8 @@ let K = new Y(o.Z, {
   LIBRARY_FETCH_SUCCESS: R,
   STORE_LISTING_FETCH_SUCCESS: V,
   LOAD_MESSAGES_SUCCESS: F,
-  APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_SUCCESS: D,
-  USER_PROFILE_FETCH_SUCCESS: w,
+  APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_SUCCESS: w,
+  USER_PROFILE_FETCH_SUCCESS: D,
   APP_DM_OPEN: L,
   USER_AUTHORIZED_APPS_UPDATE: H,
   LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: W

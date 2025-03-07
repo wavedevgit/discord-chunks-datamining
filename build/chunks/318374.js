@@ -25,7 +25,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function m(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -61,20 +61,20 @@ function v(e) {
     maxUsers: o,
     guildId: s,
     channelId: h,
-    className: m,
+    className: g,
     avatarClassName: v,
     size: b = c.EFr.SIZE_24,
     overflowCountVariant: y = "text-xs/medium",
     overflowCountColor: O = "interactive-normal",
-    overflowCountClassName: S,
-    hideOverflowCount: I = !1,
+    overflowCountClassName: I,
+    hideOverflowCount: S = !1,
     disableUsernameTooltip: T = !1,
     disableUserPopout: N = !1,
     onClick: A,
     onFocus: C,
     onUserClick: R,
     onUserPopoutRequestClose: P
-  } = e, [D, w] = i.useState(!1);
+  } = e, [w, D] = i.useState(!1);
 
   function L() {
     return (0, r.jsx)(c.VqE, {
@@ -89,19 +89,19 @@ function v(e) {
           disablePopout: "function" == typeof N ? N(e.id) : N,
           onClick: R,
           onPopoutRequestClose: () => {
-            w(!1), null == P || P()
+            D(!1), null == P || P()
           },
           onContextMenu: t => (0, u.jW)(t, async () => {
             let {
               default: t
             } = await Promise.all([n.e("79695"), n.e("69220"), n.e("65593")]).then(n.bind(n, 881351));
-            return n => (0, r.jsx)(t, E(g({}, n), {
+            return n => (0, r.jsx)(t, E(m({}, n), {
               user: e,
               guildId: s,
               channelId: h
             }))
           }, {
-            onClose: () => w(!1)
+            onClose: () => D(!1)
           })
         }, e.id))
       })
@@ -129,16 +129,16 @@ function v(e) {
         }, e.id)
       }).value(),
       n = t.length - o;
-    return n > 0 && !I && (e[e.length - 1] = (0, r.jsx)(c.yRy, {
+    return n > 0 && !S && (e[e.length - 1] = (0, r.jsx)(c.yRy, {
       renderPopout: L,
-      shouldShow: D,
+      shouldShow: w,
       position: "bottom",
-      onRequestClose: () => w(!1),
+      onRequestClose: () => D(!1),
       children: () => (0, r.jsx)(c.zxk, {
-        className: a()(p.avatar, p.overflow, S),
+        className: a()(p.avatar, p.overflow, I),
         onFocus: C,
         onClick: e => {
-          null == A || A(e), w(!0)
+          null == A || A(e), D(!0)
         },
         look: c.zxk.Looks.BLANK,
         size: c.zxk.Sizes.NONE,
@@ -151,7 +151,7 @@ function v(e) {
     }, "overflow")), e
   }
   return t.length <= 0 ? null : (0, r.jsx)("div", {
-    className: a()(m, p.avatars),
+    className: a()(g, p.avatars),
     children: x()
   })
 }

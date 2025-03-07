@@ -18,7 +18,7 @@ var r = n(200651),
   p = n(388032),
   h = n(571359);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,14 +27,14 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -78,28 +78,28 @@ var O = function(e) {
   return e[e.SMALL = 0] = "SMALL", e[e.MEDIUM = 1] = "MEDIUM", e[e.CLIP = 2] = "CLIP", e
 }({});
 
-function S(e) {
+function I(e) {
   e.stopPropagation()
 }
 
-function I(e, t) {
+function S(e, t) {
   let {
     id: n,
     channelId: i,
     className: o,
-    children: g,
+    children: m,
     actions: E,
     handleEditModal: y,
     keyboardModeEnabled: O,
-    onKeyDown: I,
+    onKeyDown: S,
     draftType: T,
     size: N = 1
   } = e, A = (0, s.JA)(n), {
     onFocus: C
   } = A, R = b(A, ["onFocus"]), {
     handleFocus: P,
-    handleBlur: D
-  } = (0, f.b)(C), w = 0 === N, L = null != E, x = e => {
+    handleBlur: w
+  } = (0, f.b)(C), D = 0 === N, L = null != E, x = e => {
     if (O) {
       switch (e.which) {
         case _.yXg.D:
@@ -117,13 +117,13 @@ function I(e, t) {
             atEnd: !0
           })
       }
-      null == I || I(e)
+      null == S || S(e)
     }
   };
   return (0, r.jsx)(l.tEY, {
-    children: (0, r.jsx)("li", v(m({}, R), {
+    children: (0, r.jsx)("li", v(g({}, R), {
       onFocus: P,
-      onBlur: D,
+      onBlur: w,
       onKeyDown: x,
       className: a()(h.upload, o, {
         [h.sizeClip]: 2 === N
@@ -131,17 +131,17 @@ function I(e, t) {
       ref: t,
       children: (0, r.jsxs)("div", {
         className: h.uploadContainer,
-        children: [g, L ? (0, r.jsx)("div", {
+        children: [m, L ? (0, r.jsx)("div", {
           className: h.actionBarContainer,
           children: (0, r.jsx)("div", {
             className: a()(h.actionBar, {
-              [h.smallActionBar]: w
+              [h.smallActionBar]: D
             }),
-            onContextMenu: S,
+            onContextMenu: I,
             "aria-label": p.NW.string(p.t["8Lu3Dg"]),
             children: (0, r.jsx)(u.ZP, {
               className: a()({
-                [h.miniPopover]: w
+                [h.miniPopover]: D
               }),
               children: E
             })
@@ -151,4 +151,4 @@ function I(e, t) {
     }))
   })
 }
-let T = i.forwardRef(I)
+let T = i.forwardRef(S)

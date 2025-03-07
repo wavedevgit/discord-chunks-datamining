@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(981631),
   p = n(176505),
   h = n(730621),
-  g = n(388032),
-  m = n(752593);
+  m = n(388032),
+  g = n(752593);
 
 function E(e) {
   let {
@@ -44,39 +44,39 @@ function E(e) {
     (0, u.xf)(), (0, d.uL)(_.Z5c.CHANNEL(t.id, p.oC.GUILD_BOOSTS))
   }, [t.id]);
   return o ? (0, r.jsxs)(s.animated.div, {
-    className: a()(m.container, {
-      [m.themeResponsiveContainer]: n
+    className: a()(g.container, {
+      [g.themeResponsiveContainer]: n
     }),
     style: E,
     children: [(0, r.jsxs)("div", {
-      className: m.description,
+      className: g.description,
       children: [(0, r.jsx)(l.xv, {
         variant: "text-md/semibold",
         className: a()({
-          [m.text]: !n,
-          [m.responsiveText]: n
+          [g.text]: !n,
+          [g.responsiveText]: n
         }),
-        children: g.NW.string(h.Z.XBP9VV)
+        children: m.NW.string(h.Z.XBP9VV)
       }), (0, r.jsx)(l.xv, {
         variant: "text-md/semibold",
-        className: m.highlight,
-        children: g.NW.string(h.Z["l/4T7u"])
+        className: g.highlight,
+        children: m.NW.string(h.Z["l/4T7u"])
       }), (0, r.jsx)(l.xv, {
         variant: "text-md/semibold",
         className: a()({
-          [m.text]: !n,
-          [m.responsiveText]: n
+          [g.text]: !n,
+          [g.responsiveText]: n
         }),
-        children: g.NW.string(h.Z.wS3GDA)
+        children: m.NW.string(h.Z.wS3GDA)
       }), (0, r.jsx)(l.xv, {
         variant: "text-md/semibold",
-        className: m.highlight,
-        children: g.NW.string(h.Z["uFH+vL"])
+        className: g.highlight,
+        children: m.NW.string(h.Z["uFH+vL"])
       })]
     }), (0, r.jsx)(c.zxk, {
-      className: m.button,
+      className: g.button,
       onClick: b,
-      children: g.NW.string(h.Z.E5V5KC)
+      children: m.NW.string(h.Z.E5V5KC)
     })]
   }) : null
 }

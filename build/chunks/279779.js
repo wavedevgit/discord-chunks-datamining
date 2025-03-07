@@ -16,8 +16,8 @@ var r = n(392711),
   _ = n(630388),
   p = n(823379),
   h = n(960048),
-  g = n(709054),
-  m = n(51144),
+  m = n(709054),
+  g = n(51144),
   E = n(981631);
 
 function v(e, t, n) {
@@ -36,7 +36,7 @@ function y(e) {
     id: e.id,
     username: "0" !== e.discriminator ? "".concat(e.username, "#").concat(e.discriminator) : e.username
   };
-  if (null != m.ZP.getGlobalName(e) && (t.globalName = e.globalName), e.bot && (t.isBot = !0), e instanceof l.Z) t.isProvisional = e.isProvisional;
+  if (null != g.ZP.getGlobalName(e) && (t.globalName = e.globalName), e.bot && (t.isBot = !0), e instanceof l.Z) t.isProvisional = e.isProvisional;
   else if ("flags" in e) {
     var n;
     t.isProvisional = _.yE(null !== (n = e.flags) && void 0 !== n ? n : 0, E.xW$.PROVISIONAL_ACCOUNT)
@@ -48,7 +48,7 @@ function O(e, t, n) {
   null != e && (e[t] = null != n && "" !== n ? n : null)
 }
 
-function S(e) {
+function I(e) {
   let t = [];
   if (null == e || !(0, s.hv)(e.type)) return t;
   let {
@@ -60,7 +60,7 @@ function S(e) {
   }), t
 }
 
-function I(e, t) {
+function S(e, t) {
   let n = [];
   return e.forEach(e => {
     let r = y(e.user);
@@ -192,7 +192,7 @@ class N extends a.Z {
           for (let t in r[e]) {
             var i, o;
             let a = n[t],
-              s = null !== (o = null === (i = r[e][t]) || void 0 === i ? void 0 : i.nick) && void 0 !== o ? o : m.ZP.getGlobalName(a);
+              s = null !== (o = null === (i = r[e][t]) || void 0 === i ? void 0 : i.nick) && void 0 !== o ? o : g.ZP.getGlobalName(a);
             null != a && (a[e] = null != s && "" !== s ? s : null)
           }
         this.updateUsers(Object.values(n), "connection_open")
@@ -202,7 +202,7 @@ class N extends a.Z {
         guilds: t
       } = e;
       setTimeout(() => {
-        let e = i().flatMap(t, e => I(e.members, e.id)),
+        let e = i().flatMap(t, e => S(e.members, e.id)),
           n = i().flatMap(t, e => {
             var t;
             let n = [];
@@ -224,10 +224,10 @@ class N extends a.Z {
         guildMembers: n
       } = e, r = new Map;
       for (let e of t) r.set(e.id, y(e));
-      for (let e of g.default.keys(n)) {
+      for (let e of m.default.keys(n)) {
         let t = n[e];
         if (null != t)
-          for (let n of g.default.keys(t)) {
+          for (let n of m.default.keys(t)) {
             let i = r.get(n),
               o = t[n];
             null != i && null != o && null != o.nick && (O(i, e, o.nick), r.set(n, i))
@@ -245,12 +245,12 @@ class N extends a.Z {
       } = e, {
         members: n
       } = t;
-      this.updateUsers(I(n, t.id), "guild_create")
+      this.updateUsers(S(n, t.id), "guild_create")
     }), v(this, "_handleGuildMembersChunkBatch", e => {
       let {
         chunks: t
       } = e, n = [];
-      for (let e of t) n.push(...I(e.members, e.guildId));
+      for (let e of t) n.push(...S(e.members, e.guildId));
       this.updateUsers(n, "guild_members_chunk_batch")
     }), v(this, "_handleGuildMemberUpdate", e => {
       let {
@@ -260,7 +260,7 @@ class N extends a.Z {
       } = e, i = y(n);
       null != i && (O(i, t, r), this.updateUsers([i], "guild_member_update"))
     }), v(this, "_handlePassiveUpdateV2", e => {
-      this.updateUsers(I(e.members, e.guildId), "passive_update_v2")
+      this.updateUsers(S(e.members, e.guildId), "passive_update_v2")
     }), v(this, "_handleRelationshipAdd", e => {
       let t = y(e.relationship.user);
       this.updateUsers([t], "relationship_add")
@@ -275,7 +275,7 @@ class N extends a.Z {
         channel: {
           id: t
         }
-      } = e, n = S(c.Z.getChannel(t));
+      } = e, n = I(c.Z.getChannel(t));
       if (0 === n.length) return;
       let r = y(f.default.getCurrentUser());
       O(r, t), n.push(r), this.updateUsers(n, "dm_create")
@@ -284,7 +284,7 @@ class N extends a.Z {
         channels: t
       } = e;
       for (let e of t) {
-        let t = S(c.Z.getChannel(e.id));
+        let t = I(c.Z.getChannel(e.id));
         if (0 === t.length) continue;
         let n = y(f.default.getCurrentUser());
         O(n, e.id), t.push(n), this.updateUsers(t, "dm_updates")

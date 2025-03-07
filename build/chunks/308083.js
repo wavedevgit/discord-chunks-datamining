@@ -4,17 +4,17 @@ n.d(t, {
   CT: () => A,
   Du: () => u,
   Gh: () => W,
-  HR: () => w,
+  HR: () => D,
   K_: () => U,
   LK: () => b,
   NC: () => Z,
   OH: () => j,
   Sq: () => h,
-  TY: () => g,
+  TY: () => m,
   U6: () => v,
-  Us: () => m,
+  Us: () => g,
   WZ: () => C,
-  Wy: () => S,
+  Wy: () => I,
   c4: () => p,
   cG: () => d,
   cm: () => _,
@@ -46,8 +46,8 @@ let u = 200,
   _ = 20,
   p = 30,
   h = 24,
-  g = 12,
-  m = 300,
+  m = 12,
+  g = 300,
   E = 3;
 a()("2024-01-01T00:00:00");
 let v = "",
@@ -99,27 +99,27 @@ function O() {
     }
   }
 }
-var S = function(e) {
+var I = function(e) {
   return e[e.GAMES = 0] = "GAMES", e[e.PLAYSTYLE = 1] = "PLAYSTYLE", e[e.UTILITY_TRAITS = 2] = "UTILITY_TRAITS", e[e.INTERESTS = 3] = "INTERESTS", e[e.DESCRIPTION = 4] = "DESCRIPTION", e[e.CUSTOMIZE_TAG_BADGE = 5] = "CUSTOMIZE_TAG_BADGE", e[e.CUSTOMIZE_BANNER = 6] = "CUSTOMIZE_BANNER", e[e.MEMBER_APPLICATION = 7] = "MEMBER_APPLICATION", e
 }({});
-if (isNaN(Number(Object.values(S).pop()))) throw Error("Failed to get the last step in the ClanSetupSteps enum");
-let I = ["Server: NA", "Server: EU", "Server: LATAM", "Server: KR", "Server: AP", "Voice ON", "Voice OFF", "Unrated", "All Ranks", "Bronze+", "Silver+", "Gold+", "Platinum+", "Diamond+"],
-  T = new Set([...I, "Server: NA", "Server: EU", "Server: Asia", "Server: TW/HK/MO", "Mondstadt", "Liyue", "Inazuma", "Sumeru", "Fontaine", "F2P", "Spenders", "Co-op", "Support"]),
+if (isNaN(Number(Object.values(I).pop()))) throw Error("Failed to get the last step in the ClanSetupSteps enum");
+let S = ["Server: NA", "Server: EU", "Server: LATAM", "Server: KR", "Server: AP", "Voice ON", "Voice OFF", "Unrated", "All Ranks", "Bronze+", "Silver+", "Gold+", "Platinum+", "Diamond+"],
+  T = new Set([...S, "Server: NA", "Server: EU", "Server: Asia", "Server: TW/HK/MO", "Mondstadt", "Liyue", "Inazuma", "Sumeru", "Fontaine", "F2P", "Spenders", "Co-op", "Support"]),
   N = ["20+", "30+", "40+", "All Ages"],
   A = ["Recurring Events", "Beginner Friendly", "PUGs", "Inclusive", "Parent Friendly", "Work-life Balance", "Competitive", "Streamer", "Esports"],
-  C = new Set([...I, ...N, ...A]),
+  C = new Set([...S, ...N, ...A]),
   R = new Set(["Bulgarian", "Chinese (Simplified)", "Chinese (Traditional)", "Croatian", "Czech", "Danish", "Dutch", "English", "Finnish", "French", "German", "Greek", "Hindi", "Hungarian", "Italian", "Japanese", "Korean", "Lithuanian", "Norwegian", "Polish", "Portuguese", "Romanian", "Russian", "Spanish", "Swedish", "Thai", "Turkish", "Ukrainian", "Vietnamese"]);
 
 function P(e) {
   return !C.has(e) && !L.has(e) && !R.has(e)
 }
 
-function D(e) {
+function w(e) {
   return t => -(+(null != e && !!e.includes(t)) << 4 | +!!P(t) << 3 | +!!T.has(t) << 2 | +!!N.includes(t) << 1 | +!!A.includes(t) << 0)
 }
 
-function w(e, t) {
-  return i().sortBy(e, D(t))
+function D(e, t) {
+  return i().sortBy(e, w(t))
 }
 let L = new Set(["anime", "fanart", "venting", "mudae", "OwO bot", "movie nights", "study together", "scheduled gaming", "all day vc", "slow paced", "art streams", "work from home", "gartic phone", "fast food reviews", "dress to impress", "music production", "variety shows", "manga", "webtoon", "brainrot", "topsters", "dad jokes", "photography", "minecraft smp", "pirate shows", "skincare", "microwaved food", "board games", "sci-fi books", "sleeping", "brunch pics", "pet pics", "recipes", "speedrunning", "eating on mic", "k-pop", "deafened", "programming", "study buddies", "DnD", "lore dumping", "sleepy cats", "podcasts", "houseplants", "knitting", "tech", "keyboards", "horses", "bad movies", "hiking", "lo-fi chilling", "watch together", "listen alongs", "late night tacos", "drip", "trading", "travel", "cups", "coffee", "F1", "roman history", "ssense doomscrolling", "skibidi toilet", "capcut editing", "tiktok rizz party", "industrial grade glycine", "frutiger aero", "y2k", "sanrio", "nuzlockes", "small form factor pcs", "esports", "game modding", "chiikawa", "underground rap", "pc music", "homestuck", "horse hoof cleaning", "analog horror", "pimple popping", "asmr", "ya fiction", "fanfiction", "cosplay", "fanart", "zines", "vtubers", "JRPGs", "retro gaming", "collecting", "coquette", "true crime", "critical role", "cottagecore", "goblincore", "renfaire", "letterboxd", "tarot readings", "fortune telling", "magic tricks", "ice cold sprite", "slime", "soap cutting", "mukbang", "premier league", "NBA", "hyperpop", "dance covers", "photocard trading", "toploader decorating", "unboxing", "decoden", "jpop", "mandopop", "cantopop", "amapiano", "ghibli", "pokemon vgc", "subway surfers", "family guy funny moments", "cranking 90s", "friday night funkin", "FNAF"]);
 var x = function(e) {

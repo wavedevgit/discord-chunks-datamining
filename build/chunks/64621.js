@@ -16,15 +16,15 @@ var r = n(200651),
   _ = n(158776),
   p = n(594174),
   h = n(81570),
-  g = n(652853),
-  m = n(228168),
+  m = n(652853),
+  g = n(228168),
   E = n(981631),
   v = n(388032),
   b = n(937349),
   y = n(425637),
   O = n(685741);
-let S = 200,
-  I = 32,
+let I = 200,
+  S = 32,
   T = 30;
 
 function N(e) {
@@ -34,7 +34,7 @@ function N(e) {
     user: N
   } = e, {
     profileType: A
-  } = (0, g.z)(), C = (0, h.T)({
+  } = (0, m.z)(), C = (0, h.T)({
     location: "UserProfilePopoutInteractionCoachmark"
   }), R = (0, a.e7)([p.default], () => {
     var e;
@@ -44,8 +44,8 @@ function N(e) {
       type: t
     } = e;
     return t === E.IIU.CUSTOM_STATUS
-  })), D = !R && A === m.y0.BITE_SIZE && (0, o.EQ)(t).with(m.n_.AVATAR, () => C && null == P).with(m.n_.STATUS, () => C).with(m.n_.ACTIVITY, () => !C).exhaustive(), [w, L] = i.useState(!1);
-  (0, c.Z)(() => L(!0), D ? S : null);
+  })), w = !R && A === g.y0.BITE_SIZE && (0, o.EQ)(t).with(g.n_.AVATAR, () => C && null == P).with(g.n_.STATUS, () => C).with(g.n_.ACTIVITY, () => !C).exhaustive(), [D, L] = i.useState(!1);
+  (0, c.Z)(() => L(!0), w ? I : null);
   let {
     asset: x,
     assetClassName: M,
@@ -68,12 +68,12 @@ function N(e) {
     className: b.activityCoachmark,
     content: v.NW.string(v.t.LQ32TU),
     header: v.NW.string(v.t.XDBiPT),
-    spacing: I,
+    spacing: S,
     dismissibleContentType: s.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ACTIVITY
-  }, V = (0, u.N)(s.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), F = w && !V ? [B] : [], [Z, H] = (0, d.US)(F);
+  }, V = (0, u.N)(s.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), F = D && !V ? [B] : [], [Z, H] = (0, d.US)(F);
   return (0, r.jsx)(l.yRy, {
     align: "center",
-    position: t === m.n_.AVATAR ? "left" : "right",
+    position: t === g.n_.AVATAR ? "left" : "right",
     shouldShow: null != Z,
     spacing: G,
     renderPopout: e => {

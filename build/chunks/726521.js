@@ -2,14 +2,14 @@
 "use strict";
 n.d(t, {
   I6: () => y,
-  J7: () => I,
+  J7: () => S,
   JM: () => O,
   Jw: () => h,
   WL: () => E,
   ak: () => p,
-  d$: () => m,
-  eE: () => S,
-  ic: () => g,
+  d$: () => g,
+  eE: () => I,
+  ic: () => m,
   pX: () => b,
   sq: () => _,
   uu: () => N,
@@ -85,7 +85,7 @@ function h(e, t, n) {
   })
 }
 
-function g(e, t) {
+function m(e, t) {
   let n = i.Z.getStageInstanceByChannel(e.id);
   null != n && (A(s.b.STAGE_CHANNEL, {
     stage_instance_id: n.id,
@@ -99,7 +99,7 @@ function g(e, t) {
   }))
 }
 
-function m(e, t) {
+function g(e, t) {
   var n;
   A(s.b.GUILD_SCHEDULED_EVENT, {
     guild_scheduled_event_id: e.id,
@@ -180,7 +180,7 @@ function O(e, t) {
   })
 }
 
-function S(e, t) {
+function I(e, t) {
   let n = new o.ZP({});
   A(s.BM.MESSAGE, {
     message_id: void 0,
@@ -195,7 +195,7 @@ function S(e, t) {
     emailToken: e
   })
 }
-async function I(e, t, n) {
+async function S(e, t, n) {
   try {
     await (0, l.ox)({
       name: s.b.MESSAGE,

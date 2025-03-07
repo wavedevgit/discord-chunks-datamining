@@ -17,7 +17,7 @@ var r = n(200651),
   p = n(388032),
   h = n(203396);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,14 +26,14 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -78,17 +78,17 @@ let O = i.forwardRef(function(e, t) {
     children: n,
     className: i,
     subsection: o,
-    onAction: g,
+    onAction: m,
     onClose: E
   } = e, y = b(e, ["children", "className", "subsection", "onAction", "onClose"]);
   let {
     profileType: O
   } = (0, d.z)(), {
-    analyticsLocations: S
+    analyticsLocations: I
   } = (0, l.ZP)(), {
-    context: I
+    context: S
   } = (0, c.KZ)();
-  return O === _.y0.FULL_SIZE || (null == I ? void 0 : I.userId) == null ? (0, r.jsx)(u.Z.Overlay, v(m({
+  return O === _.y0.FULL_SIZE || (null == S ? void 0 : S.userId) == null ? (0, r.jsx)(u.Z.Overlay, v(g({
     ref: t,
     className: a()(h.card, i)
   }, y), {
@@ -97,15 +97,15 @@ let O = i.forwardRef(function(e, t) {
     className: h.clickableContainer,
     "aria-label": p.NW.string(p.t.pD1L1t),
     onClick: () => {
-      null == g || g({
+      null == m || m({
         action: "PRESS_CARD"
-      }), (0, f.openUserProfileModal)(m({
+      }), (0, f.openUserProfileModal)(g({
         section: _.oh.ACTIVITY,
-        sourceAnalyticsLocations: S,
+        sourceAnalyticsLocations: I,
         subsection: o
-      }, I)), null == E || E()
+      }, S)), null == E || E()
     },
-    children: (0, r.jsx)(u.Z.Overlay, v(m({
+    children: (0, r.jsx)(u.Z.Overlay, v(g({
       ref: t,
       className: a()(h.card, i)
     }, y), {

@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(474936),
   p = n(981631),
   h = n(388032),
-  g = n(354458);
-let m = (0, f.kt)({
+  m = n(354458);
+let g = (0, f.kt)({
   id: "1",
   type: p.d4z.DM
 });
@@ -34,10 +34,10 @@ function E(e) {
     innerClassName: b,
     disabled: y = !1,
     disableThemedBackground: O = !1
-  } = e, [S, I] = i.useState(null != f ? f : E), [T, N] = i.useState((0, c.JM)(S)), A = i.useRef(!1);
+  } = e, [I, S] = i.useState(null != f ? f : E), [T, N] = i.useState((0, c.JM)(I)), A = i.useRef(!1);
 
   function C(e, t, n) {
-    t !== S && (I(t), N(n), o(t))
+    t !== I && (S(t), N(n), o(t))
   }
 
   function R() {
@@ -53,22 +53,22 @@ function E(e) {
   }, []), i.useEffect(() => {
     if (void 0 === f) {
       let e = (0, c.JM)(E);
-      I(E), N(e)
+      S(E), N(e)
     }
   }, [f, E]), (0, r.jsx)("div", {
-    className: a()(g.body, v),
+    className: a()(m.body, v),
     children: (0, r.jsxs)(d.Z, {
       title: t,
       errors: n,
       disabled: y,
       children: [(0, r.jsx)(u.Z, {
-        innerClassName: a()(g.textArea, b),
-        editorClassName: g.editorTextArea,
+        innerClassName: a()(m.textArea, b),
+        editorClassName: m.editorTextArea,
         maxCharacterCount: _.$n,
         onChange: C,
         placeholder: p,
-        channel: m,
-        textValue: S,
+        channel: g,
+        textValue: I,
         richValue: T,
         type: l.Ie.CUSTOM_GIFT,
         onBlur: () => {

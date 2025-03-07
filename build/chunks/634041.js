@@ -50,8 +50,8 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = !1,
-  m = null,
+let m = !1,
+  g = null,
   E = !1,
   v = {};
 
@@ -80,7 +80,7 @@ function O(e) {
   v = _({}, v), delete v[t.id]
 }
 
-function S(e) {
+function I(e) {
   var t;
   let n = u.default.getCurrentUser();
   if (null == n) return !1;
@@ -88,22 +88,22 @@ function S(e) {
   return null != c.Z.getVoiceChannelId() && l.Z.isVideoEnabled() && null != r
 }
 
-function I(e) {
+function S(e) {
   let {
     backgroundOption: t
   } = e;
-  S(t) && (E = !0)
+  I(t) && (E = !0)
 }
 
 function T(e) {
   let {
     settings: t
   } = e;
-  o.TO.CAMERA_BACKGROUND_LIVE in t && (g = !0)
+  o.TO.CAMERA_BACKGROUND_LIVE in t && (m = !0)
 }
 
 function N() {
-  m !== c.Z.getVoiceChannelId() && (E = !1), S() && (E = !0), m = c.Z.getVoiceChannelId()
+  g !== c.Z.getVoiceChannelId() && (E = !1), I() && (E = !0), g = c.Z.getVoiceChannelId()
 }
 class A extends(r = i.ZP.Store) {
   initialize() {
@@ -113,7 +113,7 @@ class A extends(r = i.ZP.Store) {
     return v
   }
   get hasBeenApplied() {
-    return g
+    return m
   }
   get hasUsedBackgroundInCall() {
     return E
@@ -124,6 +124,6 @@ let C = new A(a.Z, {
   VIDEO_FILTER_ASSETS_FETCH_SUCCESS: b,
   VIDEO_FILTER_ASSET_UPLOAD_SUCCESS: y,
   VIDEO_FILTER_ASSET_DELETE_SUCCESS: O,
-  VIDEO_SAVE_LAST_USED_BACKGROUND_OPTION: I,
+  VIDEO_SAVE_LAST_USED_BACKGROUND_OPTION: S,
   MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS: T
 })

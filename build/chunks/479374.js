@@ -13,8 +13,8 @@ var r = n(161581),
   _ = i && i.prototype,
   p = l("species"),
   h = !1,
-  g = o(r.PromiseRejectionEvent),
-  m = a("Promise", function() {
+  m = o(r.PromiseRejectionEvent),
+  g = a("Promise", function() {
     var e = s(i),
       t = e !== String(i);
     if (!t && 66 === f || d && !(_.catch && _.finally)) return !0;
@@ -27,10 +27,10 @@ var r = n(161581),
         };
       if ((n.constructor = {})[p] = r, !(h = n.then(function() {}) instanceof r)) return !0
     }
-    return !t && (c || u) && !g
+    return !t && (c || u) && !m
   });
 e.exports = {
-  CONSTRUCTOR: m,
-  REJECTION_EVENT: g,
+  CONSTRUCTOR: g,
+  REJECTION_EVENT: m,
   SUBCLASSING: h
 }

@@ -10,23 +10,23 @@ var r, i, o, a = n(212036),
   _ = n(938507),
   p = n(251069),
   h = n(859209),
-  g = n(4340),
-  m = n(838957),
+  m = n(4340),
+  g = n(838957),
   E = n(144748),
   v = n(276321),
   b = n(641236),
   y = n(457507),
   O = n(644659),
-  S = O.enforce,
-  I = O.get,
+  I = O.enforce,
+  S = O.get,
   T = l.Int8Array,
   N = T && T.prototype,
   A = l.Uint8ClampedArray,
   C = A && A.prototype,
   R = T && E(T),
   P = N && E(N),
-  D = Object.prototype,
-  w = l.TypeError,
+  w = Object.prototype,
+  D = l.TypeError,
   L = b("toStringTag"),
   x = y("TYPED_ARRAY_TAG"),
   M = "TypedArrayConstructor",
@@ -55,7 +55,7 @@ var r, i, o, a = n(212036),
   V = function(e) {
     var t = E(e);
     if (u(t)) {
-      var n = I(t);
+      var n = S(t);
       return n && d(n, M) ? n[M] : V(t)
     }
   },
@@ -66,11 +66,11 @@ var r, i, o, a = n(212036),
   },
   Z = function(e) {
     if (F(e)) return e;
-    throw w("Target is not a typed array")
+    throw D("Target is not a typed array")
   },
   H = function(e) {
-    if (c(e) && (!v || m(R, e))) return e;
-    throw w(_(e) + " is not a typed array constructor")
+    if (c(e) && (!v || g(R, e))) return e;
+    throw D(_(e) + " is not a typed array constructor")
   },
   W = function(e, t, n, r) {
     if (s) {
@@ -105,16 +105,16 @@ var r, i, o, a = n(212036),
       for (r in U)(i = l[r]) && (!i[e] || n) && h(i, e, t)
     }
   };
-for (r in U)(o = (i = l[r]) && i.prototype) ? S(o)[M] = i : k = !1;
-for (r in G)(o = (i = l[r]) && i.prototype) && (S(o)[M] = i);
+for (r in U)(o = (i = l[r]) && i.prototype) ? I(o)[M] = i : k = !1;
+for (r in G)(o = (i = l[r]) && i.prototype) && (I(o)[M] = i);
 if ((!k || !c(R) || R === Function.prototype) && (R = function() {
-    throw w("Incorrect invocation")
+    throw D("Incorrect invocation")
   }, k))
   for (r in U) l[r] && v(l[r], R);
-if ((!k || !P || P === D) && (P = R.prototype, k))
+if ((!k || !P || P === w) && (P = R.prototype, k))
   for (r in U) l[r] && v(l[r].prototype, P);
 if (k && E(C) !== P && v(C, P), s && !d(P, L))
-  for (r in j = !0, g(P, L, {
+  for (r in j = !0, m(P, L, {
       configurable: !0,
       get: function() {
         return u(this) ? this[x] : void 0

@@ -37,12 +37,12 @@ function _(e) {
     isPreview: n = !1,
     source: o,
     questId: _
-  } = e, [p, h] = i.useState(!1), [g, m] = i.useState(new Set), [E, v] = i.useState(!1), b = i.useRef(!1);
+  } = e, [p, h] = i.useState(!1), [m, g] = i.useState(new Set), [E, v] = i.useState(!1), b = i.useRef(!1);
   i.useEffect(() => {
     let e = new Set;
-    for (let t of g) u(t) || e.add(t);
-    e.size !== g.size && m(e)
-  }, [g]);
+    for (let t of m) u(t) || e.add(t);
+    e.size !== m.size && g(e)
+  }, [m]);
   let y = i.useCallback(e => {
       let {
         assetNode: t,
@@ -61,14 +61,14 @@ function _(e) {
       }), h(!0))
     }, [n, o, _]),
     O = i.useCallback(e => {
-      m(t => {
+      g(t => {
         let n = new Set(t);
         return n.delete(e), n
       })
     }, []),
-    S = i.useCallback((e, t) => {
+    I = i.useCallback((e, t) => {
       if (v(!0), u(e)) return;
-      m(t => {
+      g(t => {
         let n = new Set(t);
         return n.add(e), n
       });
@@ -88,16 +88,16 @@ function _(e) {
       }
       e.addEventListener(n, r), e.addEventListener("error", i)
     }, [y, O]),
-    I = i.useMemo(() => g.size > 0 || !E, [E, g]);
+    S = i.useMemo(() => m.size > 0 || !E, [E, m]);
   i.useEffect(() => {
-    I || (b.current = !0)
-  }, [I]);
+    S || (b.current = !0)
+  }, [S]);
   let T = i.useMemo(() => ({
-    registerAsset: S,
+    registerAsset: I,
     unregisterAsset: O,
     hasError: p,
-    isLoading: I && !b.current
-  }), [S, O, p, I]);
+    isLoading: S && !b.current
+  }), [I, O, p, S]);
   return (0, r.jsx)(c.Provider, {
     value: T,
     children: t

@@ -6,15 +6,15 @@ n.d(t, {
   ID: () => y,
   US: () => T,
   Xz: () => N,
-  Z: () => g,
-  c_: () => I,
+  Z: () => m,
+  c_: () => S,
   f4: () => A,
   g_: () => v,
   ho: () => E,
-  pG: () => m,
+  pG: () => g,
   rf: () => C,
   x3: () => R,
-  z5: () => S
+  z5: () => I
 });
 var r = n(544891),
   i = n(570140),
@@ -55,7 +55,7 @@ function h(e) {
     feature_tier: f.h1.PREMIUM_STANDARD
   })
 }
-async function g(e, t) {
+async function m(e, t) {
   var n, c, u;
   let f = null === (n = l.default.getCurrentUser()) || void 0 === n ? void 0 : n.id;
   if (null == f) return;
@@ -99,7 +99,7 @@ async function g(e, t) {
   }
 }
 
-function m() {
+function g() {
   i.Z.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_PROFILE_CHANGES"
   })
@@ -137,14 +137,14 @@ function O(e) {
   })
 }
 
-function S(e) {
+function I(e) {
   i.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_THEME_COLORS",
     themeColors: e
   })
 }
 
-function I(e) {
+function S(e) {
   i.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR",
     avatar: e

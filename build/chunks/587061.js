@@ -17,12 +17,12 @@ var r = n(192379),
   p = n(981631),
   h = n(420212);
 
-function g(e) {
+function m(e) {
   let t = e.ctrlKey || e.altKey || e.metaKey;
   e.key !== h.mR.Tab || t || __OVERLAY__ || (0, o.$s)() || u.Z.maybeShowKeyboardNavigationExplainerModal()
 }
 
-function m(e) {
+function g(e) {
   let t = _.C$("shift"),
     n = _.C$("tab");
   if (e.key === h.mR.Tab && e.shiftKey && null != t && null != n) return [
@@ -43,7 +43,7 @@ function E(e, t) {
   var n, r;
   let i = (0, f.VG)(null === (n = (0, f.uB)(e)) || void 0 === n ? void 0 : n.activeElement);
   if (i && e.key !== h.mR.Tab || e.ctrlKey || e.altKey || e.metaKey || e.key !== h.mR.Tab && e.shiftKey) return;
-  let o = m(e);
+  let o = g(e);
   null == o || d.ZP.hasExactKeybind(o) || s.Z.hasBind(null !== (r = _.H9(o[0])) && void 0 !== r ? r : "") || ((0, l.Qj)(), i && !t && e.preventDefault())
 }
 
@@ -56,7 +56,7 @@ let b = function(e, t) {
   let o = (0, r.useCallback)(e => {
     E(e, t)
   }, [t]);
-  return (0, r.useLayoutEffect)(() => (n ? (e.addEventListener("mousedown", v), e.addEventListener("keydown", g)) : e.addEventListener("keydown", o), () => {
-    n ? (e.removeEventListener("mousedown", v), e.removeEventListener("keydown", g)) : e.removeEventListener("keydown", o)
+  return (0, r.useLayoutEffect)(() => (n ? (e.addEventListener("mousedown", v), e.addEventListener("keydown", m)) : e.addEventListener("keydown", o), () => {
+    n ? (e.removeEventListener("mousedown", v), e.removeEventListener("keydown", m)) : e.removeEventListener("keydown", o)
   }), [e, o, n]), n
 }

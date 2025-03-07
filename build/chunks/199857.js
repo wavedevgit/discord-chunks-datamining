@@ -15,9 +15,9 @@ var r, i = n(74514),
   _ = n(986770),
   p = n(649318),
   h = n(65154),
-  g = n(436620);
+  m = n(436620);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -272,12 +272,12 @@ class O extends d.Z {
     let {
       ssrcs: _,
       remainingAudioStreams: h,
-      remainingVideoStreams: g
+      remainingVideoStreams: m
     } = this.buildSSRCsFromOutboundStreams(e, t, n, r);
     return {
       ssrcs: _,
       remainingAudioStreams: h,
-      remainingVideoStreams: g,
+      remainingVideoStreams: m,
       answer: (0, p.Rx)({
         type: "answer",
         baseSDP: f,
@@ -346,18 +346,18 @@ class O extends d.Z {
       audioSSRC: f,
       videoSSRC: _,
       rtxSSRC: h,
-      extensions: g
+      extensions: m
     } = this.parseLocalDescription();
-    this.codecs = d, this.extensions = g, this.audioSSRC = f, this.videoReady = _ > 0 && h > 0, (this.videoStreamParameters[0].ssrc !== _ || this.videoStreamParameters[0].rtxSsrc !== h || this.videoReady) && (this.videoStreamParameters[0].ssrc = 0 === _ ? this.videoStreamParameters[0].ssrc : _, this.videoStreamParameters[0].rtxSsrc = 0 === h ? this.videoStreamParameters[0].rtxSsrc : h, this.videoStreamParameters[0].active = this.videoReady, this.emit(u.Sh.Video, this.userId, this.input.getVideoStreamId(), this.audioSSRC, _, h, this.videoStreamParameters)), null == this.sdp ? this.emit(u.Sh.Connected, "webrtc", (0, p.sc)(l)) : this.setRemoteAnswer(c, t, n, r)
+    this.codecs = d, this.extensions = m, this.audioSSRC = f, this.videoReady = _ > 0 && h > 0, (this.videoStreamParameters[0].ssrc !== _ || this.videoStreamParameters[0].rtxSsrc !== h || this.videoReady) && (this.videoStreamParameters[0].ssrc = 0 === _ ? this.videoStreamParameters[0].ssrc : _, this.videoStreamParameters[0].rtxSsrc = 0 === h ? this.videoStreamParameters[0].rtxSsrc : h, this.videoStreamParameters[0].active = this.videoReady, this.emit(u.Sh.Video, this.userId, this.input.getVideoStreamId(), this.audioSSRC, _, h, this.videoStreamParameters)), null == this.sdp ? this.emit(u.Sh.Connected, "webrtc", (0, p.sc)(l)) : this.setRemoteAnswer(c, t, n, r)
   }
   constructor(e, t, n, r) {
-    super(e, t, n, r), m(this, "pc", void 0), m(this, "sdp", null), m(this, "negotiating", !1), m(this, "negotiationNeeded", !1), m(this, "audioTransceiver", void 0), m(this, "videoTransceiver", void 0), m(this, "users", new Map), m(this, "userIdsBySsrc", new Map), m(this, "assignedStreams", new Map), m(this, "unassignedStreams", {
+    super(e, t, n, r), g(this, "pc", void 0), g(this, "sdp", null), g(this, "negotiating", !1), g(this, "negotiationNeeded", !1), g(this, "audioTransceiver", void 0), g(this, "videoTransceiver", void 0), g(this, "users", new Map), g(this, "userIdsBySsrc", new Map), g(this, "assignedStreams", new Map), g(this, "unassignedStreams", {
       audio: [],
       video: []
-    }), m(this, "inactiveTransceivers", {
+    }), g(this, "inactiveTransceivers", {
       audio: [],
       video: []
-    }), m(this, "trackUserIds", {}), m(this, "audioCodec", null), m(this, "audioPayloadType", null), m(this, "videoCodec", null), m(this, "videoPayloadType", null), m(this, "rtxPayloadType", null), m(this, "extensions", []), m(this, "codecs", []), m(this, "logger", void 0), m(this, "getUserIdBySsrc", e => this.userIdsBySsrc.get(e)), m(this, "handlePeerConnectionStateChange", () => {
+    }), g(this, "trackUserIds", {}), g(this, "audioCodec", null), g(this, "audioPayloadType", null), g(this, "videoCodec", null), g(this, "videoPayloadType", null), g(this, "rtxPayloadType", null), g(this, "extensions", []), g(this, "codecs", []), g(this, "logger", void 0), g(this, "getUserIdBySsrc", e => this.userIdsBySsrc.get(e)), g(this, "handlePeerConnectionStateChange", () => {
       let e = this.peerConnectionState;
       switch (this.logger.info("peerConnectionState =>", e), e) {
         case "connected":
@@ -373,7 +373,7 @@ class O extends d.Z {
         case "closed":
           this.setConnectionState(h.$j.DISCONNECTED)
       }
-    }), m(this, "handleIceConnectionStateChange", () => {
+    }), g(this, "handleIceConnectionStateChange", () => {
       let e = this.iceConnectionState;
       switch (this.logger.info("iceConnectionState =>", e), e) {
         case "connected":
@@ -389,12 +389,12 @@ class O extends d.Z {
         case "closed":
           this.setConnectionState(h.$j.DISCONNECTED)
       }
-    }), m(this, "handleSignalingStateChange", () => {
+    }), g(this, "handleSignalingStateChange", () => {
       let e = this.signalingState;
       this.logger.info("signalingState => ".concat(e))
-    }), m(this, "handleIceGatheringStateChange", () => {
+    }), g(this, "handleIceGatheringStateChange", () => {
       this.logger.info("iceGatheringState =>", this.iceGatheringState)
-    }), m(this, "handleTrack", e => {
+    }), g(this, "handleTrack", e => {
       let t = e.streams[0].id,
         n = e.track;
       if (!/^default/.test(n.id)) {
@@ -411,12 +411,12 @@ class O extends d.Z {
           (null === (t = this.users.get(e)) || void 0 === t ? void 0 : t.videoSSRC) == null && this.destroyOutput(e, n)
         }
       }
-    }), this.logger = new _.Y("UnifiedConnection(".concat(e, ")")), this.videoSupported = g.U8;
+    }), this.logger = new _.Y("UnifiedConnection(".concat(e, ")")), this.videoSupported = m.U8;
     let i = this.pc = new RTCPeerConnection({
       bundlePolicy: "max-bundle",
       sdpSemantics: "unified-plan"
     });
-    g.X6 ? (i.onconnectionstatechange = this.handlePeerConnectionStateChange, i.oniceconnectionstatechange = this.handlePeerConnectionStateChange) : i.oniceconnectionstatechange = this.handleIceConnectionStateChange, i.onsignalingstatechange = this.handleSignalingStateChange, i.onicegatheringstatechange = this.handleIceGatheringStateChange, i.ontrack = this.handleTrack, i.addTransceiver("audio", {
+    m.X6 ? (i.onconnectionstatechange = this.handlePeerConnectionStateChange, i.oniceconnectionstatechange = this.handlePeerConnectionStateChange) : i.oniceconnectionstatechange = this.handleIceConnectionStateChange, i.onsignalingstatechange = this.handleSignalingStateChange, i.onicegatheringstatechange = this.handleIceGatheringStateChange, i.ontrack = this.handleTrack, i.addTransceiver("audio", {
       direction: "recvonly",
       sendEncodings: [{
         maxBitrate: this.voiceBitrate

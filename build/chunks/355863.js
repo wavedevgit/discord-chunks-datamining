@@ -14,9 +14,9 @@ var o, a = n(392711),
   _ = n(252982),
   p = n(434529),
   h = n(981631),
-  g = n(757744);
+  m = n(757744);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,7 +32,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -56,8 +56,8 @@ function b(e, t) {
 }
 let y = "migrated",
   O = .02,
-  S = .01,
-  I = {
+  I = .01,
+  S = {
     [h.Odu.GUILDS]: {
       minSize: {
         width: 312,
@@ -161,7 +161,7 @@ let y = "migrated",
       layoutPolicy: "REQUIRED",
       defaultSettings: {
         anchor: {
-          left: S,
+          left: I,
           top: .35,
           bottom: void 0,
           right: void 0
@@ -172,7 +172,7 @@ let y = "migrated",
         },
         pinned: !0
       },
-      version: g.H
+      version: m.H
     },
     [h.Odu.VIDEO]: {
       minSize: {
@@ -185,7 +185,7 @@ let y = "migrated",
       layoutPolicy: "OPTIONAL_DEFAULT",
       defaultSettings: {
         anchor: {
-          left: S,
+          left: I,
           top: void 0,
           bottom: O,
           right: void 0
@@ -197,7 +197,7 @@ let y = "migrated",
         },
         pinned: !0
       },
-      version: g.H
+      version: m.H
     },
     [h.Odu.GO_LIVE]: {
       minSize: {
@@ -213,7 +213,7 @@ let y = "migrated",
           left: void 0,
           top: void 0,
           bottom: O,
-          right: S
+          right: I
         },
         size: {
           fixed: !0,
@@ -222,7 +222,7 @@ let y = "migrated",
         },
         pinned: !1
       },
-      version: g.H
+      version: m.H
     },
     [h.Odu.QUICK_ACTIONS]: {
       minSize: {
@@ -246,7 +246,7 @@ let y = "migrated",
         },
         pinned: !1
       },
-      version: g.H
+      version: m.H
     },
     [h.Odu.NOTIFICATIONS]: {
       minSize: {
@@ -259,7 +259,7 @@ let y = "migrated",
       layoutPolicy: "REQUIRED",
       defaultSettings: {
         anchor: {
-          left: S,
+          left: I,
           top: O,
           bottom: void 0,
           right: void 0
@@ -270,7 +270,7 @@ let y = "migrated",
         },
         pinned: !0
       },
-      version: g.H
+      version: m.H
     },
     [h.Odu.ACTIVITY]: {
       minSize: {
@@ -286,7 +286,7 @@ let y = "migrated",
           left: void 0,
           top: .35,
           bottom: void 0,
-          right: S
+          right: I
         },
         size: {
           height: "auto",
@@ -294,7 +294,7 @@ let y = "migrated",
         },
         pinned: !1
       },
-      version: g.H
+      version: m.H
     },
     [h.Odu.CLICK_ZONE_DEBUG]: {
       minSize: {
@@ -318,7 +318,7 @@ let y = "migrated",
         },
         pinned: !0
       },
-      version: g.H
+      version: m.H
     },
     [h.Odu.PERFORMANCE_DEBUG]: {
       minSize: {
@@ -342,7 +342,7 @@ let y = "migrated",
         },
         pinned: !0
       },
-      version: g.H
+      version: m.H
     }
   };
 
@@ -416,17 +416,17 @@ function P(e, t) {
   return !0
 }
 
-function D(e) {
+function w(e) {
   let {
     widgetId: t,
     meta: n
   } = e;
   return A(t, (e, t) => {
-    w(e, n)
+    D(e, n)
   })
 }
 
-function w(e, t) {
+function D(e, t) {
   var n;
   i = b(E({}, i), {
     [e.id]: e.merge({
@@ -536,21 +536,21 @@ function F(e) {
 
 function Z(e) {
   var t;
-  return null === (t = I[e]) || void 0 === t ? void 0 : t.defaultSettings
+  return null === (t = S[e]) || void 0 === t ? void 0 : t.defaultSettings
 }
 class H extends(o = c.ZP.PersistedStore) {
   initialize(e) {
     null != e && null != e.layouts && null != e.widgets ? (r = V(e.layouts), i = F(e.widgets)) : (r = {}, i = {});
     let t = !1,
       n = [];
-    s().forEach(I, (e, t) => {
+    s().forEach(S, (e, t) => {
       "REQUIRED" === e.layoutPolicy && n.push(t)
     }), s().forEach(r, (e, o) => {
       let a = this.getWidgetsForLayout(o),
         s = !1;
       for (let r of n) {
         let n = a.find(e => e.type === r);
-        if (null != n || I[r].version !== e.version) continue;
+        if (null != n || S[r].version !== e.version) continue;
         s = t = !0;
         let c = (0, l.Z)();
         n = new _.Z(b(E({}, this.getWidgetDefaultSettings(r)), {
@@ -613,7 +613,7 @@ class H extends(o = c.ZP.PersistedStore) {
     }), n
   }
   getWidgetConfig(e) {
-    return I[e]
+    return S[e]
   }
   getWidgetDefaultSettings(e) {
     return Z(e)
@@ -623,7 +623,7 @@ class H extends(o = c.ZP.PersistedStore) {
     return null != t ? t.type : ""
   }
   getRegisteredWidgets() {
-    return I
+    return S
   }
   getDefaultLayout(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
@@ -642,7 +642,7 @@ class H extends(o = c.ZP.PersistedStore) {
     }), n
   }
 }
-m(H, "displayName", "LayoutStore"), m(H, "persistKey", "LayoutStore"), m(H, "migrations", [() => {
+g(H, "displayName", "LayoutStore"), g(H, "persistKey", "LayoutStore"), g(H, "migrations", [() => {
   let {
     pinnedWidgets: e,
     positions: t,
@@ -759,5 +759,5 @@ let W = new H(d.Z, {
   LAYOUT_DELETE_WIDGET: M,
   LAYOUT_DELETE_ALL_WIDGETS: k,
   LAYOUT_CREATE_WIDGETS: j,
-  LAYOUT_SET_WIDGET_META: D
+  LAYOUT_SET_WIDGET_META: w
 })

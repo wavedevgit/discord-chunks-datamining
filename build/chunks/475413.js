@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   ef: () => v,
-  kF: () => m,
+  kF: () => g,
   oY: () => b,
   tG: () => E,
   y: () => y
@@ -72,13 +72,13 @@ function h(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let g = {
+let m = {
   primary: o()(c.themeColor, c.primary),
   secondary: o()(c.themeColor, c.secondary),
   none: ""
 };
 
-function m(e) {
+function g(e) {
   var {
     action: t,
     color: n = a.zx.Colors.PRIMARY,
@@ -89,7 +89,7 @@ function m(e) {
   } = e, _ = p(e, ["action", "color", "themeColor", "className", "innerClassName", "onClick"]);
   let {
     trackUserProfileAction: h
-  } = (0, l.KZ)(), m = e => {
+  } = (0, l.KZ)(), g = e => {
     null != t && h({
       action: t
     }), null == f || f(e)
@@ -97,10 +97,10 @@ function m(e) {
   return (0, r.jsx)(a.zx, d({
     className: o()(c.button, s),
     innerClassName: o()(c.buttonInner, u),
-    color: o()(n, g[i]),
+    color: o()(n, m[i]),
     look: a.zx.Looks.FILLED,
     size: a.zx.Sizes.SMALL,
-    onClick: m
+    onClick: g
   }, _))
 }
 
@@ -109,7 +109,7 @@ function E(e) {
     text: t,
     icon: n
   } = e, i = p(e, ["text", "icon"]);
-  return (0, r.jsxs)(m, _(d({
+  return (0, r.jsxs)(g, _(d({
     "aria-label": t
   }, i), {
     children: [null != n && (0, r.jsx)(n, {
@@ -128,7 +128,7 @@ function v(e) {
     tooltipDelay: u,
     tooltipClassName: f,
     tooltipContainerClassName: h,
-    ariaLabel: g,
+    ariaLabel: m,
     className: E,
     innerClassName: v,
     shouldShowTooltip: b = !0
@@ -142,13 +142,13 @@ function v(e) {
     shouldShow: b,
     className: h,
     tooltipClassName: f,
-    children: (0, r.jsx)(m, _(d({
+    children: (0, r.jsx)(g, _(d({
       className: o()(c.icon, E),
       innerClassName: o()(c.icon, v),
       look: a.zx.Looks.FILLED,
       size: a.zx.Sizes.NONE,
       grow: !1,
-      "aria-label": "string" == typeof n && null == g ? n : g
+      "aria-label": "string" == typeof n && null == m ? n : m
     }, y), {
       children: (0, r.jsx)(t, {
         size: "xs",

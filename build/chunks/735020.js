@@ -53,17 +53,17 @@ function _(e) {
 }
 
 function p() {
-  g()
+  m()
 }
 
 function h() {
-  g()
+  m()
 }
 
-function g() {
+function m() {
   c = {}
 }
-class m extends(r = i.ZP.Store) {
+class g extends(r = i.ZP.Store) {
   getMessage(e, t) {
     return c[u({
       id: e,
@@ -71,8 +71,8 @@ class m extends(r = i.ZP.Store) {
     })]
   }
 }
-l(m, "displayName", "SearchMessageStore");
-let E = new m(o.Z, {
+l(g, "displayName", "SearchMessageStore");
+let E = new g(o.Z, {
   SEARCH_FINISH: d,
   MOD_VIEW_SEARCH_FINISH: d,
   MESSAGE_UPDATE: f,

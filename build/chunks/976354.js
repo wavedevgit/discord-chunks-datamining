@@ -75,7 +75,7 @@ function t(e) {
       begin: "\\(\\s*",
       end: "\\)"
     },
-    g = {
+    m = {
       endsWithParent: !0,
       relevance: 0
     };
@@ -87,7 +87,7 @@ function t(e) {
     }, {
       begin: n
     }]
-  }, g], g.contains = [_, p, h, i, o, a, s, l, c, d, u], {
+  }, m], m.contains = [_, p, h, i, o, a, s, l, c, d, u], {
     name: "Lisp",
     illegal: /\S/,
     contains: [o, e.SHEBANG(), i, a, s, _, p, h, u]

@@ -61,10 +61,10 @@ let h = {
     enableBuildOverrides: !1,
     enableEmojiClick: !0
   },
-  g = p(s.Z.RULES, [(0, a.Z)({
+  m = p(s.Z.RULES, [(0, a.Z)({
     enableBuildOverrides: !0
   })]),
-  m = i().omit(p(s.Z.RULES, [(0, a.Z)(h)]), "paragraph", "newline"),
+  g = i().omit(p(s.Z.RULES, [(0, a.Z)(h)]), "paragraph", "newline"),
   E = p(s.Z.CHANNEL_TOPIC_RULES, [(0, a.Z)(f(u({}, h), {
     emojiTooltipPosition: "bottom"
   })), {
@@ -78,8 +78,8 @@ let h = {
   b = p(s.Z.EMBED_TITLE_RULES, [(0, a.Z)(h)]),
   y = p(s.Z.INLINE_REPLY_RULES, [(0, a.Z)(h)]),
   O = p(s.Z.GUILD_VERIFICATION_FORM_RULES, [(0, a.Z)(h)]),
-  S = p(s.Z.GUILD_EVENT_RULES, [(0, a.Z)(h)]),
-  I = p(s.Z.AUTO_MODERATION_SYSTEM_MESSAGE_RULES, [(0, a.Z)(h)]),
+  I = p(s.Z.GUILD_EVENT_RULES, [(0, a.Z)(h)]),
+  S = p(s.Z.AUTO_MODERATION_SYSTEM_MESSAGE_RULES, [(0, a.Z)(h)]),
   T = i().omit(p(s.Z.RULES, [(0, a.Z)(h)]), "paragraph", "newline", "strong", "codeBlock", "inlineCode", "u", "link", "url", "autolink", "list", "heading", "subtext"),
   N = {
     text: s.Z.RULES.text
@@ -88,13 +88,13 @@ let h = {
     combineAndInjectMentionRule: p,
     createReactRules: a.Z,
     defaultReactRuleOptions: h,
-    defaultRules: g,
-    guildEventRules: S,
+    defaultRules: m,
+    guildEventRules: I,
     notifCenterV2MessagePreviewRules: T,
     lockscreenWidgetMessageRules: N,
     astParserFor: o._p,
     reactParserFor: o.w4,
-    parse: o.w4(g),
+    parse: o.w4(m),
     parseTopic: (e, t, n, r) => o.w4(E)(e, t, u({
       allowLinks: !0
     }, n), r),
@@ -102,12 +102,12 @@ let h = {
     parseEmbedTitle: o.w4(b),
     parseInlineReply: o.w4(y),
     parseGuildVerificationFormRule: o.w4(O),
-    parseGuildEventDescription: o.w4(S),
-    parseAutoModerationSystemMessage: o.w4(I),
-    parseForumPostGuidelines: o.w4(m),
-    parseToAST: o._p(g),
+    parseGuildEventDescription: o.w4(I),
+    parseAutoModerationSystemMessage: o.w4(S),
+    parseForumPostGuidelines: o.w4(g),
+    parseToAST: o._p(m),
     parseTopicToAST: o._p(E),
     parseEmbedTitleToAST: o._p(b),
     parseInlineReplyToAST: o._p(y),
-    parseAutoModerationSystemMessageToAST: o._p(I)
+    parseAutoModerationSystemMessageToAST: o._p(S)
   }

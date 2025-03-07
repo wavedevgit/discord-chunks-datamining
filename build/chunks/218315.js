@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => S
 }), n(47120), n(789020);
 var r = n(200651);
 n(192379);
@@ -17,8 +17,8 @@ var i = n(481060),
   _ = n(563534),
   p = n(734893),
   h = n(846121),
-  g = n(931261),
-  m = n(460347),
+  m = n(931261),
+  g = n(460347),
   E = n(372897);
 
 function v(e, t, n) {
@@ -59,7 +59,7 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class S extends o.Z {
+class I extends o.Z {
   constructor(...e) {
     super(...e), v(this, "onboardingCompleteGuilds", new Set), v(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen(),
@@ -132,11 +132,11 @@ class S extends o.Z {
       } = await this._getOrLoadOnboardingMemberActions(e), i = null == n ? void 0 : n.find(e => e.channelId === t);
       (null == r ? void 0 : r[t]) !== !0 && null != i && i.actionType === p.oi.CHAT && (0, f.Oh)(e, t)
     }), v(this, "_getOrLoadOnboardingMemberActions", async e => {
-      let t = (0, g.s)(e),
+      let t = (0, m.s)(e),
         n = a.Z.isFullServerPreview(e);
       if (!t && !n) return {};
       let r = c.ZP.getSelfMember(e);
-      if (null == r || !(0, m.m)(e)) return {};
+      if (null == r || !(0, g.m)(e)) return {};
       let [i, o] = await Promise.all([this._getOrLoadOnboardingHomeSettings(e), this._getOrLoadMemberActions(e, r)]);
       return {
         memberActions: i,
@@ -145,7 +145,7 @@ class S extends o.Z {
     }), v(this, "_getOrLoadOnboardingHomeSettings", async e => {
       let t = _.Z.getNewMemberActions(e),
         n = _.Z.getIsLoading(e);
-      if (!(null == t && !n && (0, m.m)(e))) return t;
+      if (!(null == t && !n && (0, g.m)(e))) return t;
       {
         let t = await (0, f.cP)(e);
         return null == t ? void 0 : t.newMemberActions
@@ -160,4 +160,4 @@ class S extends o.Z {
     })
   }
 }
-let I = new S
+let S = new I

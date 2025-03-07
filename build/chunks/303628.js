@@ -16,15 +16,15 @@ var r = n(200651),
   _ = n(607070),
   p = n(209613),
   h = n(998698),
-  g = n(540059),
-  m = n(661824),
+  m = n(540059),
+  g = n(661824),
   E = n(703558),
   v = n(117530),
   b = n(459273),
   y = n(444282),
   O = n(898463),
-  S = n(981631),
-  I = n(659227),
+  I = n(981631),
+  S = n(659227),
   T = n(332952);
 
 function N(e, t, n) {
@@ -68,7 +68,7 @@ function R(e, t) {
 
 function P(e, t) {
   if (null == e) return {};
-  var n, r, i = D(e, t);
+  var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -76,28 +76,28 @@ function P(e, t) {
   return i
 }
 
-function D(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let w = [];
+let D = [];
 
 function L(e) {
   let {
     channelId: t,
     type: n
   } = e, o = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled), N = (0, p.Z)("attachments", l.hy.HORIZONTAL), C = (0, c.e7)([v.Z], () => v.Z.getUploads(t, n.drafts.type)), {
-    isApplicationCommand: D,
+    isApplicationCommand: w,
     commandOptions: L,
     commandOptionStates: x
   } = (0, c.cj)([h.Z], () => {
     let e = h.Z.getActiveCommand(t);
     if (null == e) return {
       isApplicationCommand: !1,
-      commandOptions: w,
+      commandOptions: D,
       commandOptionStates: null
     };
     let n = h.Z.getOptionStates(t);
@@ -123,11 +123,11 @@ function L(e) {
     N.focusFirstVisibleItem()
   }, [N]);
   (0, b.yp)({
-    event: S.CkL.FOCUS_ATTACHMENT_AREA,
+    event: I.CkL.FOCUS_ATTACHMENT_AREA,
     handler: U
   });
   let G = {
-      isApplicationCommand: D,
+      isApplicationCommand: w,
       previousUploadOptions: k,
       uploadOptions: M
     },
@@ -149,8 +149,8 @@ function L(e) {
       }), j(i)
     }
   }, [t, M.length, n]);
-  let V = (0, g.Q3)("ChannelAttachmentArea");
-  return !D && 0 === C.length || D && 0 === M.length ? null : (0, r.jsxs)(i.Fragment, {
+  let V = (0, m.Q3)("ChannelAttachmentArea");
+  return !w && 0 === C.length || w && 0 === M.length ? null : (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)(s.bG, {
       navigator: N,
       children: (0, r.jsx)(s.SJ, {
@@ -161,8 +161,8 @@ function L(e) {
           return (0, r.jsx)("ul", R(A({
             ref: i
           }, s), {
-            className: a()(I.channelAttachmentArea, T.scrollbarGhost),
-            children: D ? M.map(e => (0, r.jsx)(y.Z, {
+            className: a()(S.channelAttachmentArea, T.scrollbarGhost),
+            children: w ? M.map(e => (0, r.jsx)(y.Z, {
               channelId: t,
               keyboardModeEnabled: o,
               option: e
@@ -176,7 +176,7 @@ function L(e) {
           }))
         }
       })
-    }), n.drafts.type === E.d.FirstThreadMessage || V ? null : (0, r.jsx)(m.Z, {})]
+    }), n.drafts.type === E.d.FirstThreadMessage || V ? null : (0, r.jsx)(g.Z, {})]
   })
 }
 

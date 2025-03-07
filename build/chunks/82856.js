@@ -50,13 +50,13 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -84,7 +84,7 @@ let v = "balance-widget-pill-overlay",
     };
     (0, s.vp)(t), y()
   },
-  S = {
+  I = {
     modalKey: v,
     onCloseCallback: s.vp,
     onCloseRequest: async () => {
@@ -92,10 +92,10 @@ let v = "balance-widget-pill-overlay",
     }
   };
 
-function I(e) {
+function S(e) {
   (0, a.ZDy)(async () => t => (0, r.jsx)(A, p({
     onClick: f.dG4
-  }, e, t)), S)
+  }, e, t)), I)
 }
 
 function T(e) {
@@ -106,7 +106,7 @@ function T(e) {
   }));
   return (0, i.useEffect)(() => {
     let n = b();
-    t && !n ? I(e) : !t && n && y()
+    t && !n ? S(e) : !t && n && y()
   }, [t, e]), {
     shouldOpen: t
   }
@@ -131,7 +131,7 @@ function A(e) {
     onClick: n,
     onClose: i
   } = e;
-  m(e, ["backgroundElementRef", "onClick", "onClose"]);
+  g(e, ["backgroundElementRef", "onClick", "onClose"]);
   let {
     balance: a
   } = (0, l.A)(), _ = async () => {
@@ -141,7 +141,7 @@ function A(e) {
   } = (0, o.cj)([c.Z], () => ({
     hideImmediately: c.Z.hidePillOverlayImmediately
   }));
-  return (0, r.jsx)(d.E, g(p({
+  return (0, r.jsx)(d.E, m(p({
     backgroundElementRef: t,
     onGetBoundingRect: f.dG4
   }, N), {

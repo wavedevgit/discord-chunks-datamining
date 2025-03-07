@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  F: () => S,
+  F: () => I,
   H: () => T
 }), n(266796), n(47120), n(411104);
 var r, i = n(200651),
@@ -16,8 +16,8 @@ var r, i = n(200651),
   _ = n(952265),
   p = n(481060),
   h = n(40851),
-  g = n(314910),
-  m = n(920676),
+  m = n(314910),
+  g = n(920676),
   E = n(981631);
 
 function v(e, t, n) {
@@ -58,8 +58,8 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = Symbol("POPOUT_PREVENT_CLOSE"),
-  I = new Set(["Spacebar", " ", "Enter"]);
+let I = Symbol("POPOUT_PREVENT_CLOSE"),
+  S = new Set(["Spacebar", " ", "Enter"]);
 class T extends(r = o.Component) {
   shouldShowPopout(e, t) {
     return null != e.shouldShow ? e.shouldShow : t.shouldShowPopout
@@ -135,11 +135,11 @@ class T extends(r = o.Component) {
       clickTrap: p = !1
     } = this.props, {
       resizeKey: h,
-      isLoading: m,
+      isLoading: g,
       shouldShowLoadingState: E
     } = this.state;
-    return m && !E ? null : (0, i.jsx)(d.mh, {
-      layerContext: null != _ ? _ : g.nz,
+    return g && !E ? null : (0, i.jsx)(d.mh, {
+      layerContext: null != _ ? _ : m.nz,
       children: (0, i.jsx)(f.j, {
         ref: this.layerRef,
         onMount: this.handlePopoutShow,
@@ -201,7 +201,7 @@ class T extends(r = o.Component) {
         onRequestClose: t,
         shouldShow: n
       } = this.props;
-      (null == t ? void 0 : t(e)) !== S && null == n && this.toggleShow(!1)
+      (null == t ? void 0 : t(e)) !== I && null == n && this.toggleShow(!1)
     }), v(this, "handleClick", e => {
       let {
         onShiftClick: t,
@@ -248,7 +248,7 @@ class T extends(r = o.Component) {
         }
       }
     }), v(this, "handleKeyboardPreload", e => {
-      I.has(e.key) && this.handlePreload()
+      S.has(e.key) && this.handlePreload()
     }), v(this, "handleDocumentMouseDown", e => {
       let {
         ignoreModalClicks: t
@@ -272,5 +272,5 @@ v(T, "defaultProps", {
   autoInvert: !1,
   nudgeAlignIntoViewport: !1,
   spacing: 0,
-  loadingComponent: (0, i.jsx)(m.x, {})
+  loadingComponent: (0, i.jsx)(g.x, {})
 }), v(T, "contextType", h.ZP)

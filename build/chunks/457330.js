@@ -37,7 +37,7 @@ function h(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function g(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -59,7 +59,7 @@ function v(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
   return i.tn.post({
     url: _.ANM.CONNECTIONS_CALLBACK(e),
-    body: h(m(h({}, t), {
+    body: h(g(h({}, t), {
       insecure: n,
       friend_sync: _.BFP.has(e)
     }), s.g.getCurrentConfig({
@@ -100,20 +100,20 @@ let b = {
       location: n
     });
     let h = _.ANM.CONNECTIONS_AUTHORIZE(e),
-      g = new URLSearchParams;
-    null != o && g.append("two_way_user_code", o), null != f && g.append("success_redirect", f), null != r ? (g.append("two_way_link_type", r), g.append("two_way_link", "true")) : null != l && g.append("two_way_link", String(l)), null != p && g.append("handle", p);
+      m = new URLSearchParams;
+    null != o && m.append("two_way_user_code", o), null != f && m.append("success_redirect", f), null != r ? (m.append("two_way_link_type", r), m.append("two_way_link", "true")) : null != l && m.append("two_way_link", String(l)), null != p && m.append("handle", p);
     let {
-      enabled: m
+      enabled: g
     } = s.g.getCurrentConfig({
       location: "ConnectedAcountsActionCreators.authorize"
     }, {
       autoTrackExposure: !0
     });
-    if (m) {
+    if (g) {
       let e = c.default.getSessionId();
-      null != e && g.append("session_id", e)
+      null != e && m.append("session_id", e)
     }
-    h = h + "?" + g.toString();
+    h = h + "?" + m.toString();
     let E = await i.tn.get({
         url: h,
         oldFormErrors: !0,

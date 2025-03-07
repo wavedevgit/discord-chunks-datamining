@@ -17,8 +17,8 @@ var i = n(120356),
   _ = n(158776),
   p = n(5192),
   h = n(579407),
-  g = n(388032),
-  m = n(862078),
+  m = n(388032),
+  g = n(862078),
   E = n(660097);
 let v = e => {
   let {
@@ -29,22 +29,22 @@ let v = e => {
     isHighlighted: b,
     showStatus: y,
     showWumpus: O
-  } = e, S = (0, a.e7)([f.Z], () => (0, s.wj)(f.Z.theme)), I = null != n ? (0, h.EU)(n) : i, T = (0, a.e7)([_.Z], () => _.Z.getStatus(t.id));
+  } = e, I = (0, a.e7)([f.Z], () => (0, s.wj)(f.Z.theme)), S = null != n ? (0, h.EU)(n) : i, T = (0, a.e7)([_.Z], () => _.Z.getStatus(t.id));
   return (0, r.jsxs)("div", {
-    className: o()(v, m.nameplatePreview),
+    className: o()(v, g.nameplatePreview),
     style: {
-      color: S ? "white" : "black"
+      color: I ? "white" : "black"
     },
-    children: [null != I && (0, r.jsx)(d.Z, {
-      nameplate: I,
+    children: [null != S && (0, r.jsx)(d.Z, {
+      nameplate: S,
       hovered: b
     }), O ? (0, r.jsx)(c.Z, {
       avatar: (0, r.jsx)(l.qEK, {
         src: E,
         size: l.EFr.SIZE_32,
-        "aria-label": g.NW.string(g.t.cqpybG)
+        "aria-label": m.NW.string(m.t.cqpybG)
       }),
-      name: g.NW.string(g.t.cqpybG),
+      name: m.NW.string(m.t.cqpybG),
       selected: !1
     }) : (0, r.jsx)(c.Z, {
       avatar: (0, r.jsx)(u.Z, {

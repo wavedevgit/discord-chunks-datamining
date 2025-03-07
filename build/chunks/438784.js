@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  I: () => S,
-  b: () => I
+  I: () => I,
+  b: () => S
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -58,8 +58,8 @@ function p() {
 function h() {
   return document.hasFocus()
 }
-let g = .25,
-  m = 4,
+let m = .25,
+  g = 4,
   E = 1,
   v = 2.8,
   b = {
@@ -96,7 +96,7 @@ function O(e) {
   let t = e % 2;
   return t > 1 ? 1 - (t - 1) : t
 }
-let S = i.memo(function(e) {
+let I = i.memo(function(e) {
     let {
       dotRadius: t,
       dotPosition: n,
@@ -107,7 +107,7 @@ let S = i.memo(function(e) {
     let [f] = (0, l.q_F)(() => _(d({}, y), {
       to: async e => {
         let t = v;
-        for (; u.current;) c.current = h(), c.current ? (t += E * m, await e({
+        for (; u.current;) c.current = h(), c.current ? (t += E * g, await e({
           dotCycle: t,
           immediate: !1
         })) : t !== v ? (t = v, await e({
@@ -118,7 +118,7 @@ let S = i.memo(function(e) {
     }), "animate-always"), b = (6 * t + t / 4 * 2) / 2;
     return (0, r.jsx)(r.Fragment, {
       children: [0, 1, 2].map(e => {
-        let i = g * e,
+        let i = m * e,
           l = t + t * a * e;
         return (0, r.jsx)(s.animated.circle, {
           cx: n ? n.to([0, 1], [b, l]) : l,
@@ -132,7 +132,7 @@ let S = i.memo(function(e) {
       })
     })
   }),
-  I = i.memo(i.forwardRef(function(e, t) {
+  S = i.memo(i.forwardRef(function(e, t) {
     let {
       dotRadius: n,
       x: i,
@@ -160,7 +160,7 @@ let S = i.memo(function(e) {
           style: {
             opacity: d.to(e => Math.min(1, Math.max(e, 0)))
           },
-          children: (0, r.jsx)(S, {
+          children: (0, r.jsx)(I, {
             dotRadius: n,
             dotPosition: d
           })

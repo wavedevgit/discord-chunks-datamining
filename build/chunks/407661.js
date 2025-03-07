@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => S
 });
 var r = n(200651),
   i = n(192379),
@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(665906),
   p = n(488131),
   h = n(375954),
-  g = n(962293),
-  m = n(981631),
+  m = n(962293),
+  g = n(981631),
   E = n(388032),
   v = n(458125);
 let b = 2,
@@ -30,14 +30,14 @@ function O(e, t) {
     let e = r;
     for (let t = 0; t < y; t++) {
       let r = h.Z.getMessage(n, e);
-      if ((null == r ? void 0 : r.type) !== m.uaV.REPLY || null == r.messageReference) return t;
+      if ((null == r ? void 0 : r.type) !== g.uaV.REPLY || null == r.messageReference) return t;
       e = r.messageReference.message_id
     }
     return y
   }, [n, r])
 }
 
-function S(e) {
+function I(e) {
   let {
     channel: t,
     message: n,
@@ -51,7 +51,7 @@ function S(e) {
   return i.useEffect(() => {
     s.current = o
   }), i.useEffect(() => {
-    (0, c.yw)(m.rMx.THREAD_NUDGE_SHOWN, {
+    (0, c.yw)(g.rMx.THREAD_NUDGE_SHOWN, {
       type: "Reply Chain (".concat(b + 1, ")"),
       reply_chain_length: s.current + 1,
       channel_id: t.id,
@@ -82,7 +82,7 @@ function S(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     reply: t,
     chatInputType: n
@@ -95,7 +95,7 @@ function I(e) {
     nick: p,
     colorString: h,
     colorRoleName: y
-  } = (0, u.ZP)(o), I = O(i, o), T = (0, _.NE)(i, o), N = n.showThreadPromptOnReply && I >= b && T, A = () => (0, f.uL)(m.Z5c.CHANNEL(i.getGuildId(), i.id, o.id));
+  } = (0, u.ZP)(o), S = O(i, o), T = (0, _.NE)(i, o), N = n.showThreadPromptOnReply && S >= b && T, A = () => (0, f.uL)(g.Z5c.CHANNEL(i.getGuildId(), i.id, o.id));
 
   function C(e) {
     e.stopPropagation(), (0, d.qx)(i.id, !s)
@@ -170,14 +170,14 @@ function I(e) {
               className: v.separator,
               "aria-hidden": !0
             })]
-          }), (0, r.jsx)(g.B, {
+          }), (0, r.jsx)(m.B, {
             onClick: R
           })]
         })]
-      }), N && (0, r.jsx)(S, {
+      }), N && (0, r.jsx)(I, {
         channel: i,
         message: o,
-        replyChainLength: I
+        replyChainLength: S
       })]
     })
   })

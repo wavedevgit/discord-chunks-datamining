@@ -27,33 +27,33 @@ let u = (e, t, n) => {
     } = e, {
       joinedEmojiSourceGuildRecord: s,
       emoji: d
-    } = (0, i.cj)([a.ZP, o.Z], () => u(a.ZP, o.Z, t)), f = null != s, _ = null != s && s.hasFeature(c.oNc.DISCOVERABLE), p = (!f || _) && null != t, [h, g] = r.useState(p), [m, E] = r.useState(null), v = null != s ? l.JO.createFromGuildRecord(s) : null, [b, y] = r.useState(v), [O, S] = r.useState(null), I = r.useRef(n);
+    } = (0, i.cj)([a.ZP, o.Z], () => u(a.ZP, o.Z, t)), f = null != s, _ = null != s && s.hasFeature(c.oNc.DISCOVERABLE), p = (!f || _) && null != t, [h, m] = r.useState(p), [g, E] = r.useState(null), v = null != s ? l.JO.createFromGuildRecord(s) : null, [b, y] = r.useState(v), [O, I] = r.useState(null), S = r.useRef(n);
     return r.useEffect(() => {
-      I.current = n
+      S.current = n
     }), r.useEffect(() => {
       var e, n;
-      null === (e = I.current) || void 0 === e || e.call(I);
+      null === (e = S.current) || void 0 === e || e.call(S);
       let r = async () => {
         var e;
         let n = null != t ? await (0, l.Fi)(t) : null;
         if (null != n) switch (E(n.type), n.type) {
           case l.w6.APPLICATION:
-            S(n.application);
+            I(n.application);
             break;
           case l.w6.GUILD:
             y(n.guild)
         }
-        g(!1), null === (e = I.current) || void 0 === e || e.call(I)
+        m(!1), null === (e = S.current) || void 0 === e || e.call(S)
       };
       if (p) {
         r();
         return
       }
-      null === (n = I.current) || void 0 === n || n.call(I)
+      null === (n = S.current) || void 0 === n || n.call(S)
     }, [t, p]), {
       expressionSourceGuild: b,
       expressionSourceApplication: O,
-      sourceType: m,
+      sourceType: g,
       joinedEmojiSourceGuildRecord: s,
       hasJoinedEmojiSourceGuild: f,
       emoji: d,

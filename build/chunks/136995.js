@@ -37,7 +37,7 @@ function h(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function g(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -78,15 +78,15 @@ function b(e) {
     centerButton: n = !1
   } = e, p = E(e, ["channel", "centerButton"]);
   let {
-    parentAnalyticsLocation: g
+    parentAnalyticsLocation: m
   } = (0, s.ZP)(), v = n ? d.d : d.Z, b = t.isManaged() || !t.isPrivate() ? _.NW.string(_.t.S0W8Z2) : _.NW.string(_.t["0D/6R0"]), y = (0, c.Z)({
     location: "JoinCallButton"
   }), O = i.useCallback(() => {
-    (0, l.v)(g, l.d.JOIN_CALL), a.default.selectVoiceChannel(t.id)
-  }, [t.id, g]);
+    (0, l.v)(m, l.d.JOIN_CALL), a.default.selectVoiceChannel(t.id)
+  }, [t.id, m]);
   return i.useEffect(() => (u.S.subscribe(f.CkL.CALL_ACCEPT, O), () => {
     u.S.unsubscribe(f.CkL.CALL_ACCEPT, O)
-  }), [O]), (0, r.jsx)(v, m(h({}, p), {
+  }), [O]), (0, r.jsx)(v, g(h({}, p), {
     iconComponent: o.Csw,
     label: b,
     onClick: O,

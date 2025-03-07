@@ -7,7 +7,7 @@ n.d(t, {
   WO: () => o,
   _n: () => f,
   ak: () => s,
-  al: () => g,
+  al: () => m,
   bi: () => l,
   hz: () => u,
   lr: () => p,
@@ -38,7 +38,7 @@ let c = 10,
   p = 10,
   h = 500;
 
-function g(e) {
+function m(e) {
   if (null != e.choices) return i.NW.string(i.t.xi5aam);
   switch (e.type) {
     case r.jw.BOOLEAN:

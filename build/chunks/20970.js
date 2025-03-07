@@ -52,8 +52,8 @@ let {
   u: _,
   br: p,
   em: h,
-  image: g,
-  text: m
+  image: m,
+  text: g
 } = r.defaultRules, E = {
   newline: l,
   paragraph: c,
@@ -68,9 +68,9 @@ let {
   u: _,
   br: p,
   em: h,
-  image: g,
+  image: m,
   hook: {
-    order: m.order,
+    order: g.order,
     match: (0, r.inlineRegex)(/^\$\[(.*?)\]\((\w+)\)/),
     parse(e, t, n) {
       let {
@@ -84,7 +84,7 @@ let {
     react: (e, t, n) => e.render(t(e.content, n), n.key)
   },
   noparse: {
-    order: m.order,
+    order: g.order,
     match: (0, r.inlineRegex)(/^!!(\d+?)!!/),
     parse(e, t, n) {
       let {
@@ -97,5 +97,5 @@ let {
     },
     react: e => e.content
   },
-  text: m
+  text: g
 }

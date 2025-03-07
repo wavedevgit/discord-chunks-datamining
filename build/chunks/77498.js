@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => w
+  Z: () => D
 }), n(47120), n(301563);
 var i, o, a = n(442837),
   s = n(433517),
@@ -22,16 +22,16 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let h = "GameStoreReportedGames",
-  g = 0x80000000,
-  m = f.Z.Millis.DAY,
+  m = 0x80000000,
+  g = f.Z.Millis.DAY,
   E = new c.Z,
   v = {},
   b = {},
   y = null !== (i = s.K.get(h)) && void 0 !== i ? i : {},
   O = "",
-  S = null;
+  I = null;
 
-function I(e) {
+function S(e) {
   var t, n, r, i, o, a, s;
   return {
     id: e.id,
@@ -89,10 +89,10 @@ function P(e) {
     games: t,
     etag: n
   } = e;
-  for (let e of (null != n && O !== n && (O = n), t)) N(I(e));
-  r = void 0, S = Date.now()
+  for (let e of (null != n && O !== n && (O = n), t)) N(S(e));
+  r = void 0, I = Date.now()
 }
-class D extends(o = a.ZP.PersistedStore) {
+class w extends(o = a.ZP.PersistedStore) {
   initialize(e) {
     var t;
     null != e && (null != e.detectableGamesEtag && (O = e.detectableGamesEtag), null === (t = e.detectableGames) || void 0 === t || t.forEach(e => N(e)))
@@ -118,7 +118,7 @@ class D extends(o = a.ZP.PersistedStore) {
     return Object.prototype.hasOwnProperty.call(v, t) ? v[t] : null
   }
   isGameInDatabase(e) {
-    return null != this.getGameByName(e.name) || void 0 !== e.nativeProcessObserverId && (e.nativeProcessObserverId & g) == 0
+    return null != this.getGameByName(e.name) || void 0 !== e.nativeProcessObserverId && (e.nativeProcessObserverId & m) == 0
   }
   get fetching() {
     return !0 === r
@@ -127,13 +127,13 @@ class D extends(o = a.ZP.PersistedStore) {
     return O
   }
   get lastFetched() {
-    return S
+    return I
   }
   get detectableGamesTtl() {
-    return m
+    return g
   }
   canFetchDetectableGames() {
-    return !0 !== r && (null == S || Date.now() >= S + m)
+    return !0 !== r && (null == I || Date.now() >= I + g)
   }
   getGameByExecutable(e) {
     return b[e]
@@ -161,7 +161,7 @@ class D extends(o = a.ZP.PersistedStore) {
     y[e] = !0, s.K.set(h, y)
   }
 }
-p(D, "displayName", "GameStore"), p(D, "persistKey", "GameStore"), p(D, "migrations", [e => {
+p(w, "displayName", "GameStore"), p(w, "persistKey", "GameStore"), p(w, "migrations", [e => {
   var t, n;
   return null == e ? {
     detectableGamesEtag: "",
@@ -174,7 +174,7 @@ p(D, "displayName", "GameStore"), p(D, "persistKey", "GameStore"), p(D, "migrati
   detectableGamesEtag: "",
   detectableGames: []
 }]);
-let w = new D(l.Z, {
+let D = new w(l.Z, {
   OVERLAY_INITIALIZE: A,
   GAMES_DATABASE_FETCH: C,
   GAMES_DATABASE_FETCH_FAIL: R,

@@ -15,8 +15,8 @@ var r, i = n(392711),
   _ = n(164878),
   p = n(763296),
   h = n(697426),
-  g = n(710111),
-  m = n(526761);
+  m = n(710111),
+  g = n(526761);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,10 +57,10 @@ function y(e, t) {
   }), e
 }
 let O = [],
-  S = new(s())({
-    max: g.zb
+  I = new(s())({
+    max: m.zb
   }),
-  I = new u.ZP({
+  S = new u.ZP({
     computeBonus: () => 100,
     computeWeight: e => {
       let t = 1;
@@ -68,7 +68,7 @@ let O = [],
     },
     lookupKey: e => p.Z.getSoundById(e),
     afterCompute: () => {},
-    numFrequentlyItems: g.O6
+    numFrequentlyItems: m.O6
   });
 
 function T(e) {
@@ -93,14 +93,14 @@ function N(e) {
 }
 
 function A(e) {
-  S.set(e, e)
+  I.set(e, e)
 }
 
 function C(e) {
-  I.track(e), O.push({
+  S.track(e), O.push({
     key: e,
     timestamp: Date.now()
-  }), I.compute()
+  }), S.compute()
 }
 
 function R(e) {
@@ -115,21 +115,21 @@ function P(e) {
   }))
 }
 
-function D() {
+function w() {
   var e;
   if (!x()) return;
   let t = null === (e = d.Z.frecencyWithoutFetchingLatest.playedSoundFrecency) || void 0 === e ? void 0 : e.playedSounds;
-  I.overwriteHistory(P(null != t ? t : {}), O)
+  S.overwriteHistory(P(null != t ? t : {}), O)
 }
 
-function w(e) {
+function D(e) {
   let {
     settings: {
       type: t
     },
     wasSaved: n
   } = e;
-  x() && t === m.yP.FRECENCY_AND_FAVORITES_SETTINGS && n && (O = [])
+  x() && t === g.yP.FRECENCY_AND_FAVORITES_SETTINGS && n && (O = [])
 }
 
 function L() {
@@ -147,11 +147,11 @@ function x() {
 }
 class M extends(r = l.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(f.default, p.Z), (null == e ? void 0 : e.recentlyHeardCache) != null && S.load(e.recentlyHeardCache), (null == e ? void 0 : e.playedEventsPendingFlush) != null && (O = e.playedEventsPendingFlush), this.syncWith([d.Z], D)
+    this.waitFor(f.default, p.Z), (null == e ? void 0 : e.recentlyHeardCache) != null && I.load(e.recentlyHeardCache), (null == e ? void 0 : e.playedEventsPendingFlush) != null && (O = e.playedEventsPendingFlush), this.syncWith([d.Z], w)
   }
   getState() {
     return {
-      recentlyHeardCache: S.dump(),
+      recentlyHeardCache: I.dump(),
       playedEventsPendingFlush: O
     }
   }
@@ -159,18 +159,18 @@ class M extends(r = l.ZP.PersistedStore) {
     return O.length > 0
   }
   get playedSoundHistory() {
-    return I.usageHistory
+    return S.usageHistory
   }
   get recentlyHeardSoundIds() {
-    return S.values()
+    return I.values()
   }
   get frecentlyPlayedSounds() {
-    return I.frequently
+    return S.frequently
   }
 }
 E(M, "displayName", "SoundboardEventStore"), E(M, "persistKey", "SoundboardEventStore");
 let k = new M(c.Z, {
   GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY: T,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: N,
-  USER_SETTINGS_PROTO_UPDATE: w
+  USER_SETTINGS_PROTO_UPDATE: D
 })

@@ -15,15 +15,15 @@ var r, i = n(392711),
   _ = n(195663),
   p = n(131704),
   h = n(601964),
-  g = n(598077),
-  m = n(386438),
+  m = n(598077),
+  g = n(386438),
   E = n(700785),
   v = n(592125),
   b = n(271383),
   y = n(430824),
   O = n(594174),
-  S = n(981631),
-  I = n(478743);
+  I = n(981631),
+  S = n(478743);
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -52,7 +52,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   var t;
   let n = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     r = O.default.getCurrentUser();
@@ -68,10 +68,10 @@ function D(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     n = A[e];
-  return null != n ? n : A[e] = D(e, t)
+  return null != n ? n : A[e] = w(e, t)
 }
 
 function L(e) {
@@ -221,7 +221,7 @@ function Q(e, t, n, r) {
       let i = v.Z.getChannel(e.parent_id);
       return null == i ? E.Hn : E.Og(e, Q(i, t, n, r), f.Z.hasJoined(e.id))
     }
-    i = w(e.id)
+    i = D(e.id)
   } else e instanceof h.ZP && (i = P(e.id));
   return void 0 !== t || void 0 !== n || void 0 !== r ? E.uB({
     user: O.default.getCurrentUser(),
@@ -237,7 +237,7 @@ class X extends(r = s.ZP.Store) {
     this.waitFor(O.default, y.Z, v.Z, b.ZP, f.Z, d.Z, c.Z)
   }
   getChannelPermissions(e) {
-    return p.Ec.has(e.type) ? D(e.id) : w(e.id)
+    return p.Ec.has(e.type) ? w(e.id) : D(e.id)
   }
   getGuildPermissions(e) {
     return P(e.id)
@@ -245,25 +245,25 @@ class X extends(r = s.ZP.Store) {
   getGuildPermissionProps(e) {
     let t = O.default.getCurrentUser();
     return {
-      canManageGuild: this.can(S.Plq.MANAGE_GUILD, e),
-      canManageChannels: this.can(S.Plq.MANAGE_CHANNELS, e),
-      canManageRoles: this.can(S.Plq.MANAGE_ROLES, e),
-      canManageBans: this.can(S.Plq.BAN_MEMBERS, e),
-      canManageNicknames: this.can(S.Plq.MANAGE_NICKNAMES, e),
-      canManageGuildExpressions: this.can(S.Plq.MANAGE_GUILD_EXPRESSIONS, e) || this.can(S.Plq.CREATE_GUILD_EXPRESSIONS, e),
-      canViewAuditLog: this.can(S.Plq.VIEW_AUDIT_LOG, e),
-      canViewAuditLogV2: this.can(S.Plq.VIEW_AUDIT_LOG, e),
-      canManageWebhooks: this.can(S.Plq.MANAGE_WEBHOOKS, e),
-      canViewGuildAnalytics: this.can(S.Plq.VIEW_GUILD_ANALYTICS, e),
+      canManageGuild: this.can(I.Plq.MANAGE_GUILD, e),
+      canManageChannels: this.can(I.Plq.MANAGE_CHANNELS, e),
+      canManageRoles: this.can(I.Plq.MANAGE_ROLES, e),
+      canManageBans: this.can(I.Plq.BAN_MEMBERS, e),
+      canManageNicknames: this.can(I.Plq.MANAGE_NICKNAMES, e),
+      canManageGuildExpressions: this.can(I.Plq.MANAGE_GUILD_EXPRESSIONS, e) || this.can(I.Plq.CREATE_GUILD_EXPRESSIONS, e),
+      canViewAuditLog: this.can(I.Plq.VIEW_AUDIT_LOG, e),
+      canViewAuditLogV2: this.can(I.Plq.VIEW_AUDIT_LOG, e),
+      canManageWebhooks: this.can(I.Plq.MANAGE_WEBHOOKS, e),
+      canViewGuildAnalytics: this.can(I.Plq.VIEW_GUILD_ANALYTICS, e),
       canAccessMembersPage: this.canAccessMemberSafetyPage(e),
-      isGuildAdmin: this.can(S.Plq.ADMINISTRATOR, e),
+      isGuildAdmin: this.can(I.Plq.ADMINISTRATOR, e),
       isOwner: null != t && e.isOwner(t),
       isOwnerWithRequiredMfaLevel: null != t && e.isOwnerWithRequiredMfaLevel(t),
       guild: e
     }
   }
   canAccessMemberSafetyPage(e) {
-    return a.Db(P(e.id), I.N)
+    return a.Db(P(e.id), S.N)
   }
   canAccessGuildSettings(e) {
     return a.Db(P(e.id), E.ym)
@@ -276,16 +276,16 @@ class X extends(r = s.ZP.Store) {
     return a.e$(o, e)
   }
   canBasicChannel(e, t, n, r, i) {
-    return "basicPermissions" in t ? m.Z.has(t.basicPermissions, e) : a.e$(Q(t, n, r, i), m.Z.asBigFlag(e))
+    return "basicPermissions" in t ? g.Z.has(t.basicPermissions, e) : a.e$(Q(t, n, r, i), g.Z.asBigFlag(e))
   }
   computePermissions(e, t, n, r) {
     return Q(e, t, n, r)
   }
   computeBasicPermissions(e) {
-    return "basicPermissions" in e ? e.basicPermissions : m.Z.asBasicFlag(Q(e))
+    return "basicPermissions" in e ? e.basicPermissions : g.Z.asBasicFlag(Q(e))
   }
   canManageUser(e, t, n) {
-    let r = t instanceof g.Z ? t.id : t;
+    let r = t instanceof m.Z ? t.id : t;
     if (n.isOwner(r)) return !1;
     let i = O.default.getCurrentUser();
     if (!this.can(e, n)) return !1;
@@ -304,7 +304,7 @@ class X extends(r = s.ZP.Store) {
   }
   canImpersonateRole(e, t) {
     let n = this.getHighestRole(e),
-      r = this.can(S.Plq.MANAGE_GUILD, e) && this.can(S.Plq.MANAGE_ROLES, e),
+      r = this.can(I.Plq.MANAGE_GUILD, e) && this.can(I.Plq.MANAGE_ROLES, e),
       i = this.isRoleHigher(e, n, t);
     return r && (i || t.id === (null == n ? void 0 : n.id))
   }

@@ -53,7 +53,7 @@ function p(e, t) {
 
 function h(e, t) {
   if (null == e) return {};
-  var n, r, i = g(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,14 +61,14 @@ function h(e, t) {
   return i
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = 1,
+let g = 1,
   E = i.memo(function(e) {
     let {
       onClick: t,
@@ -76,18 +76,18 @@ let m = 1,
       title: o,
       href: d,
       children: _,
-      messageId: g,
+      messageId: m,
       channelId: E
     } = e, v = h(e, ["onClick", "trusted", "title", "href", "children", "messageId", "channelId"]), {
       analyticsLocations: b
     } = (0, c.ZP)(l.Z.MASKED_LINK), y = i.useCallback(t => (0, u.q)(e, t, b), [b, e]), O = i.useCallback(e => {
-      e.button === m && y(e)
-    }, [y]), S = a().sanitizeUrl(d);
+      e.button === g && y(e)
+    }, [y]), I = a().sanitizeUrl(d);
     return (0, r.jsx)(s.eee, p(f({}, v), {
       title: o,
       target: "_blank",
       rel: "noreferrer noopener",
-      href: S,
+      href: I,
       onClick: y,
       onAuxClick: O,
       children: null != _ ? _ : o

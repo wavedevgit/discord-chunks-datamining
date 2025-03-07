@@ -15,15 +15,15 @@ var r, i = n(348327),
   _ = n(314897),
   p = n(592125),
   h = n(430824),
-  g = n(496675),
-  m = n(699516),
+  m = n(496675),
+  g = n(699516),
   E = n(606304),
   v = n(594174),
   b = n(979651),
   y = n(938475),
   O = n(501655),
-  S = n(88751),
-  I = n(427679);
+  I = n(88751),
+  S = n(427679);
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -43,7 +43,7 @@ function P(e) {
   return null !== (t = e.getGuildId()) && void 0 !== t ? t : N
 }
 
-function D(e) {
+function w(e) {
   return A.values(null != e ? e : void 0, !0).map(e => {
     let {
       id: t
@@ -52,7 +52,7 @@ function D(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   C.has(e) || (C.add(e), s()(p.Z.getMutableGuildChannelsForGuild(e)).values().forEach(e => {
     M(e) && A.set(e.id, e)
   }))
@@ -62,7 +62,7 @@ function L(e) {
   let t = R[e];
   if (null != t) return t;
   let n = p.Z.getChannel(e);
-  return null != n && n.isGuildStageVoice() && (w(n.guild_id), M(n)) ? x(e) : null
+  return null != n && n.isGuildStageVoice() && (D(n.guild_id), M(n)) ? x(e) : null
 }
 
 function x(e) {
@@ -80,7 +80,7 @@ function k(e, t) {
 }
 
 function j(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : D();
+  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : w();
   return t.reduce((t, n) => {
     let r = x(n);
     return e(r) ? (k(n, r), !0) : t
@@ -88,7 +88,7 @@ function j(e) {
 }
 
 function U(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : D();
+  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : w();
   return j(t => t.updateParticipant(e), t)
 }
 
@@ -133,7 +133,7 @@ function H(e) {
 
 function W(e) {
   let t = !1;
-  for (let n of D(e.guildId)) t = x(n).rebuild() || t;
+  for (let n of w(e.guildId)) t = x(n).rebuild() || t;
   return t
 }
 
@@ -202,12 +202,12 @@ function $(e) {
   let {
     guildId: t
   } = e;
-  if (C.has(t)) return j(e => e.rebuild(), D(t))
+  if (C.has(t)) return j(e => e.rebuild(), w(t))
 }
 let ee = [];
 class et extends(r = l.ZP.Store) {
   initialize() {
-    this.waitFor(_.default, v.default, p.Z, E.Z, b.Z, g.Z, y.ZP, h.Z, S.ZP, m.Z, I.Z, f.Z)
+    this.waitFor(_.default, v.default, p.Z, E.Z, b.Z, m.Z, y.ZP, h.Z, I.ZP, g.Z, S.Z, f.Z)
   }
   getParticipantsVersion(e) {
     var t, n;
@@ -230,7 +230,7 @@ class et extends(r = l.ZP.Store) {
     return null !== (r = null === (n = L(e)) || void 0 === n ? void 0 : n.size(t)) && void 0 !== r ? r : 0
   }
   getChannels(e) {
-    return w(null != e ? e : N), A.values(null != e ? e : N)
+    return D(null != e ? e : N), A.values(null != e ? e : N)
   }
   getChannelsVersion() {
     return A.version

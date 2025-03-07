@@ -37,7 +37,7 @@ function h(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function g(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -59,9 +59,9 @@ let E = i.memo(function(e) {
     height: n,
     src: o,
     url: p,
-    format: g,
+    format: m,
     className: E
-  } = e, [v, b] = i.useState(!1), y = (0, c.hb)((0, l.iy)(p)), O = y ? f.NW.string(f.t["5/NS7+"]) : f.NW.string(f.t.nIH0v7), S = y ? s.r7p : s.vxU;
+  } = e, [v, b] = i.useState(!1), y = (0, c.hb)((0, l.iy)(p)), O = y ? f.NW.string(f.t["5/NS7+"]) : f.NW.string(f.t.nIH0v7), I = y ? s.r7p : s.vxU;
   i.useEffect(() => {
     if (!v) return;
     let e = setTimeout(() => {
@@ -69,26 +69,26 @@ let E = i.memo(function(e) {
     }, 500);
     return () => clearTimeout(e)
   }, [v]);
-  let I = e => {
+  let S = e => {
     e.preventDefault(), e.stopPropagation(), b(!0), y ? (0, l.PF)(p) : ((0, l.uL)({
       url: p,
       src: o,
       width: t,
       height: n,
-      format: g
+      format: m
     }), u.S.dispatch(d.CkL.FAVORITE_GIF))
   };
   return (0, r.jsx)(s.ua7, {
     text: O,
-    children: e => (0, r.jsx)(s.P3F, m(h({}, e), {
+    children: e => (0, r.jsx)(s.P3F, g(h({}, e), {
       className: a()(E, _.gifFavoriteButton, {
         [_.selected]: y,
         [_.showPulse]: v
       }),
       onMouseDown: e => e.preventDefault(),
-      onClick: I,
+      onClick: S,
       onDoubleClick: e => e.preventDefault(),
-      children: (0, r.jsx)(S, {
+      children: (0, r.jsx)(I, {
         color: "currentColor",
         className: _.icon,
         size: "custom",

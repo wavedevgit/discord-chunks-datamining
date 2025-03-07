@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g,
+  Z: () => m,
   s: () => h
 });
 var r, i = n(200651),
@@ -74,7 +74,7 @@ let h = {
   BRAND: l.cardBrand,
   CUSTOM: l.card
 };
-class g extends(r = o.PureComponent) {
+class m extends(r = o.PureComponent) {
   render() {
     let e;
     let t = this.props,
@@ -93,7 +93,7 @@ class g extends(r = o.PureComponent) {
     }))
   }
 }
-c(g, "Types", h), c(g, "defaultProps", {
+c(m, "Types", h), c(m, "defaultProps", {
   type: h.PRIMARY,
   outline: !1,
   editable: !1

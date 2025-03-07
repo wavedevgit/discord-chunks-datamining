@@ -6,7 +6,7 @@ n.d(t, {
   E6: () => H,
   EE: () => U,
   Gk: () => Q,
-  Gt: () => D,
+  Gt: () => w,
   OV: () => j,
   PZ: () => J,
   Rg: () => q,
@@ -34,16 +34,16 @@ var r = n(200651),
   _ = n(70956),
   p = n(823379),
   h = n(709054),
-  g = n(26033),
-  m = n(22211),
+  m = n(26033),
+  g = n(22211),
   E = n(561308),
   v = n(797342),
   b = n(371991),
   y = n(206583),
   O = n(388032),
-  S = n(425507);
+  I = n(425507);
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -59,7 +59,7 @@ function T(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -106,13 +106,13 @@ let P = {
   [c.s.WATCHED_MEDIA]: [z, q],
   [c.s.LAUNCHED_ACTIVITY]: [j, U, k, K, Y, V]
 };
-var D = function(e) {
+var w = function(e) {
   return e[e.CARD = 0] = "CARD", e[e.POPOUT = 1] = "POPOUT", e[e.STREAMING_POPOUT = 2] = "STREAMING_POPOUT", e[e.GAME_PROFILE = 3] = "GAME_PROFILE", e[e.USER_PROFILE = 4] = "USER_PROFILE", e[e.EMBED = 5] = "EMBED", e[e.LEADERBOARD_POPOUT = 6] = "LEADERBOARD_POPOUT", e[e.OVERLAY = 7] = "OVERLAY", e
 }({});
-let w = i.createContext({});
+let D = i.createContext({});
 
 function L() {
-  return i.useContext(w)
+  return i.useContext(D)
 }
 
 function x(e) {
@@ -120,7 +120,7 @@ function x(e) {
     children: t
   } = e, n = C(e, ["children"]);
   return (0, r.jsx)("div", A(T({
-    className: S.badgeContainer
+    className: I.badgeContainer
   }, n), {
     children: t
   }))
@@ -148,7 +148,7 @@ function M(e) {
       }), (0, r.jsx)(f.Text, {
         variant: "text-xs/normal",
         color: s,
-        className: S.badgeLabel,
+        className: I.badgeLabel,
         scaleFontToUserSetting: 5 === c,
         children: n
       })]
@@ -161,7 +161,7 @@ function k(e) {
     entry: t
   } = e, {
     channel: n
-  } = (0, m.Z)(t), {
+  } = (0, g.Z)(t), {
     location: i
   } = L();
   return null == n || (0, p.Hi)(i, [1, 2, 3, 4]) ? null : (0, r.jsx)(M, {
@@ -180,7 +180,7 @@ function j(e) {
     location: a
   } = L(), s = (0, E.Jg)(t) && (0, p.Hi)(a, [0, 4, 7]), l = s ? f.TVs.colors.TEXT_POSITIVE : o, c = s ? "text-positive" : i, {
     streamPreviewUrl: u
-  } = (0, m.Z)(t), d = null != u ? f.hGI : (0, g.Mq)(t) ? f.jje : f.iWm;
+  } = (0, g.Z)(t), d = null != u ? f.hGI : (0, m.Mq)(t) ? f.jje : f.iWm;
   return (0, r.jsxs)(x, {
     children: [(0, r.jsx)(d, {
       size: "xxs",
@@ -228,7 +228,7 @@ function G(e) {
     location: a
   } = L(), s = (0, E.Jg)(t) && (0, p.Hi)(a, [0, 4]), l = s ? f.TVs.colors.TEXT_POSITIVE : o, c = s ? "text-positive" : i;
   return (0, r.jsxs)("div", {
-    className: S.badgeContainer,
+    className: I.badgeContainer,
     children: [(0, r.jsx)(f.aXf, {
       size: "xxs",
       color: l
@@ -385,7 +385,7 @@ function z(e) {
     location: a
   } = L(), s = (0, E.Jg)(t) && 4 === a, l = s ? f.TVs.colors.TEXT_POSITIVE : o, c = s ? "text-positive" : i;
   return (0, r.jsxs)("div", {
-    className: S.badgeContainer,
+    className: I.badgeContainer,
     children: [(0, r.jsx)(f.ARS, {
       size: "xxs",
       color: l
@@ -423,15 +423,15 @@ function Q(e) {
     defaultTextColor: "text-muted"
   } : {
     defaultTextColor: "text-secondary"
-  }, (0, r.jsx)(w.Provider, {
+  }, (0, r.jsx)(D.Provider, {
     value: T({
       location: n
     }, t),
     children: (0, r.jsx)("div", {
-      className: a()(S.badgesContainer, {
-        [S.badgesContainerCard]: 0 === n,
-        [S.badgesContainerPopout]: (0, p.Hi)(n, [1, 2]),
-        [S.badgesContainerGameProfile]: 3 === n
+      className: a()(I.badgesContainer, {
+        [I.badgesContainerCard]: 0 === n,
+        [I.badgesContainerPopout]: (0, p.Hi)(n, [1, 2]),
+        [I.badgesContainerGameProfile]: 3 === n
       }, o),
       children: i
     })

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -16,17 +16,17 @@ var r = n(200651),
   _ = n(981631),
   p = n(388032),
   h = n(927454);
-let g = i.forwardRef(function(e, t) {
+let m = i.forwardRef(function(e, t) {
     let {
       emojiListRef: n,
       gridNavigatorId: o,
-      isFullRow: g,
-      onKeyDown: m,
+      isFullRow: m,
+      onKeyDown: g,
       onFocus: E,
       autoFocus: v,
       className: b,
       defaultSearchPlaceholder: y
-    } = e, O = i.useRef(null), S = (0, d.Iu)(e => e.searchQuery), [I, T] = u.kJ.useStore(e => [e.inspectedExpressionPosition, e.searchPlaceholder], s.X), N = i.useCallback(e => {
+    } = e, O = i.useRef(null), I = (0, d.Iu)(e => e.searchQuery), [S, T] = u.kJ.useStore(e => [e.inspectedExpressionPosition, e.searchPlaceholder], s.X), N = i.useCallback(e => {
       var t;
       u.kJ.setActiveCategoryIndex("" === e ? 0 : f.c), u.kJ.setInspectedExpressionPosition(0, 0), u.kJ.setSearchPlaceholder(null), (0, d.ql)(e), null === (t = n.current) || void 0 === t || t.scrollTo(0)
     }, [n]), A = i.useCallback(() => {
@@ -39,7 +39,7 @@ let g = i.forwardRef(function(e, t) {
         case _.yXg.ARROW_DOWN:
           document.activeElement !== e.target && e.preventDefault()
       }
-      m(e)
+      g(e)
     };
     return i.useImperativeHandle(t, () => ({
       focus: () => {
@@ -48,7 +48,7 @@ let g = i.forwardRef(function(e, t) {
       }
     })), (0, r.jsx)(c.E1j, {
       autoFocus: v,
-      query: S,
+      query: I,
       ref: O,
       size: c.E1j.Sizes.MEDIUM,
       placeholder: null != T ? T : y,
@@ -57,15 +57,15 @@ let g = i.forwardRef(function(e, t) {
       onFocus: E,
       onChange: N,
       className: a()(b, {
-        [h.searchBarFullRow]: g
+        [h.searchBarFullRow]: m
       }),
       inputProps: {
         "aria-label": p.NW.string(p.t.tCauZW),
         "aria-haspopup": "grid",
         "aria-controls": o,
         "aria-expanded": !0,
-        "aria-activedescendant": (0, l.NE)(o, I.columnIndex, I.rowIndex)
+        "aria-activedescendant": (0, l.NE)(o, S.columnIndex, S.rowIndex)
       }
     })
   }),
-  m = i.memo(g)
+  g = i.memo(m)

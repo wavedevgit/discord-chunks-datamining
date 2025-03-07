@@ -16,8 +16,8 @@ var r = n(392711),
   _ = n(131951),
   p = n(709054),
   h = n(725380),
-  g = n(340332),
-  m = n(675478),
+  m = n(340332),
+  g = n(675478),
   E = n(65154);
 
 function v(e, t, n) {
@@ -58,8 +58,8 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = 300,
-  I = 2e3,
+let I = 300,
+  S = 2e3,
   T = e => "AudioContextSettingsMigrated:".concat(e),
   N = e => e === E.Yn.STREAM ? o.h.STREAM : o.h.USER;
 
@@ -70,7 +70,7 @@ function A(e, t, n) {
 function C(e) {
   let t = p.default.entries(e),
     n = t.length;
-  if (n <= S) return;
+  if (n <= I) return;
   let r = t.sort((e, t) => {
       let [n, {
         modifiedAt: r
@@ -79,7 +79,7 @@ function C(e) {
       }] = t;
       return Number(r) - Number(o)
     }),
-    i = n - S;
+    i = n - I;
   for (let t = 0; t < i; t++) {
     let [n] = r[t];
     delete e[n]
@@ -94,10 +94,10 @@ function R(e) {
 }
 
 function P() {
-  s.K.get(T(f.default.getId())) || m.hW.updateAsync("audioContextSettings", e => {
+  s.K.get(T(f.default.getId())) || g.hW.updateAsync("audioContextSettings", e => {
     let t = !1;
     for (let [n, r] of Object.entries(_.Z.getState().settingsByContext)) {
-      let i = (0, g.z)(n);
+      let i = (0, m.z)(n);
       if (null == i) continue;
       let o = e[i],
         a = String(Date.now()),
@@ -112,33 +112,33 @@ function P() {
         muted: !1,
         modifiedAt: a
       }, s[e]), {
-        volume: (0, g.r)(t, n)
+        volume: (0, m.r)(t, n)
       });
       let l = Object.keys(o).length;
       for (let [e, [n, r]] of Object.entries(s).entries()) {
-        if (S - l - (e + 1) <= 0) break;
+        if (I - l - (e + 1) <= 0) break;
         null == o[n] && (t = !0, o[n] = r)
       }
     }
     return s.K.set(T(f.default.getId()), !0), t
-  }, m.fy.AUTOMATED)
+  }, g.fy.AUTOMATED)
 }
 
-function D(e, t, n, r) {
+function w(e, t, n, r) {
   var i;
   let o = !(arguments.length > 4) || void 0 === arguments[4] || arguments[4],
-    a = (0, g.z)(n);
+    a = (0, m.z)(n);
   if (null == a) return !1;
   let s = e[a];
   return s[t] = null !== (i = s[t]) && void 0 !== i ? i : R(n), r(s[t]), s[t].modifiedAt = String(Date.now()), o && A(s, t, n), C(s), !0
 }
 
-function w() {
+function D() {
   P()
 }
 let L = i().debounce(() => {
   U()
-}, I);
+}, S);
 
 function x(e, t, n) {
   (0, h.RF)(e, t, {
@@ -162,15 +162,15 @@ let j = i().debounce(c.On, 500, {
 });
 
 function U() {
-  m.hW.updateAsync("audioContextSettings", e => {
+  g.hW.updateAsync("audioContextSettings", e => {
     let t = !1;
     return (0, h.$E)((n, r, i) => {
-      let o = D(e, r, n, e => {
+      let o = w(e, r, n, e => {
         Object.assign(e, i)
       });
       t = t || o
     }), t
-  }, m.fy.INFREQUENT_USER_ACTION)
+  }, g.fy.INFREQUENT_USER_ACTION)
 }
 
 function G(e) {
@@ -205,7 +205,7 @@ function V(e) {
 class F extends l.Z {
   constructor(...e) {
     super(...e), v(this, "actions", {
-      POST_CONNECTION_OPEN: w,
+      POST_CONNECTION_OPEN: D,
       AUDIO_SET_LOCAL_VOLUME: G,
       AUDIO_TOGGLE_LOCAL_MUTE: B,
       AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: V

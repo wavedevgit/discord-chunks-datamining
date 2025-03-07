@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => I
 }), n(47120), n(230036);
 var r = n(200651),
   i = n(192379),
@@ -47,12 +47,12 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = 4,
+let g = 4,
   E = 10,
   v = 2;
 
@@ -118,7 +118,7 @@ function y(e) {
     text: h,
     position: "bottom",
     "aria-label": n.name,
-    children: e => (0, r.jsxs)("div", g(p({}, e), {
+    children: e => (0, r.jsxs)("div", m(p({}, e), {
       className: a()(f.gameImageContainer, o && f.highlighted),
       children: [(0, r.jsx)("img", {
         src: u,
@@ -148,7 +148,7 @@ let O = e => (t, n) => {
       l = null !== (a = null == e ? void 0 : null === (i = e[n.id]) || void 0 === i ? void 0 : i.score) && void 0 !== a ? a : 0;
     return s !== l ? l - s : 0
   },
-  S = i.memo(function(e) {
+  I = i.memo(function(e) {
     let {
       games: t,
       prioritizedGameIds: n = new Set,
@@ -158,17 +158,17 @@ let O = e => (t, n) => {
       let e = t.filter(e => null != e && null != e.icon),
         r = e.filter(e => !n.has(e.id)).sort(O(o));
       return [...e.filter(e => n.has(e.id)).sort(O(o)), ...r]
-    }, [o, t, n]), c = s.slice(0, m - 1), d = i.useMemo(() => {
+    }, [o, t, n]), c = s.slice(0, g - 1), d = i.useMemo(() => {
       var e;
-      let t = s[m - 1];
+      let t = s[g - 1];
       if (null == t) return null;
       let n = t.getIconURL(24);
       if (null == n) return null;
-      if (s.length <= m) return (0, r.jsx)(y, {
+      if (s.length <= g) return (0, r.jsx)(y, {
         game: t,
         gameActivity: o
       });
-      let i = s.slice(m - 1);
+      let i = s.slice(g - 1);
       return (0, r.jsx)(l.ua7, {
         "aria-label": null !== (e = (0, u.f6)(i.map(e => e.name))) && void 0 !== e ? e : "",
         onTooltipShow: () => null == a ? void 0 : a(),
@@ -177,7 +177,7 @@ let O = e => (t, n) => {
           gameActivity: o
         }),
         position: "bottom",
-        children: e => (0, r.jsxs)("div", g(p({}, e), {
+        children: e => (0, r.jsxs)("div", m(p({}, e), {
           className: f.gameImageContainer,
           children: [(0, r.jsx)("img", {
             src: n,

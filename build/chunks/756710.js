@@ -59,8 +59,8 @@ function h(e) {
     disabled: d = !1,
     keepItemStyles: _ = !1,
     menuItemProps: h,
-    action: g,
-    dontCloseOnActionIfHoldingShiftKey: m,
+    action: m,
+    dontCloseOnActionIfHoldingShiftKey: g,
     dontCloseOnAction: E,
     onClose: v
   } = e, b = i.useRef(null);
@@ -68,9 +68,9 @@ function h(e) {
     o && (0, l.F)(b)
   }, [o]);
   let y = i.useCallback(e => {
-      if (null == g) return !1;
-      e.shiftKey && m || E || v(), e.persist(), requestAnimationFrame(() => g(e))
-    }, [g, v, m, E]),
+      if (null == m) return !1;
+      e.shiftKey && g || E || v(), e.persist(), requestAnimationFrame(() => m(e))
+    }, [m, v, g, E]),
     O = _ ? a()(u.item, c._[n], {
       [u.focused]: o
     }) : u.customItem;

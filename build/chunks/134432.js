@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Q4: () => R,
-  Vv: () => I,
+  Vv: () => S,
   oO: () => N,
   po: () => T,
   x_: () => d.Z
@@ -38,8 +38,8 @@ function p(e, t) {
   return n
 }
 let h = 5,
-  g = /\.webp($|\?|#)/i,
-  m = /\.avif($|\?|#)/i,
+  m = /\.webp($|\?|#)/i,
+  g = /\.avif($|\?|#)/i,
   E = [16, 20, 22, 24, 28, 32, 40, 44, 48, 56, 60, 64, 80, 96, 100, 128, 160, 240, 256, 300, 320, 480, 512, 600, 640, 1024, 1280, 1536, 2048, 3072, 4096],
   v = 4096,
   b = new(a())({
@@ -54,7 +54,7 @@ function y(e, t) {
   return async () => {
     await u.Z.isOnline(), n.fails < h ? n.fail(() => {
       O(e)
-    }) : S(!0, e, t)
+    }) : I(!0, e, t)
   }
 }
 
@@ -64,11 +64,11 @@ function O(e) {
     let {
       backoff: n
     } = e;
-    null != n && n.succeed(), S(!1, e, t)
+    null != n && n.succeed(), I(!1, e, t)
   }, t.src = e.url
 }
 
-function S(e, t, n) {
+function I(e, t, n) {
   let {
     callbacks: r,
     url: i
@@ -89,7 +89,7 @@ function S(e, t, n) {
   null != r && r.forEach(n => n(e, t))
 }
 
-function I(e) {
+function S(e) {
   let t = b.get(e);
   return null != t && t.loaded
 }
@@ -144,7 +144,7 @@ function C(e) {
   } = e;
   if (t.startsWith("data:image")) return t;
   let [_, p] = A(t);
-  null != l && (p.format = l), null != u && (p.quality = u), d && f && (g.test(t) || m.test(t)) && (p.animated = !0), m.test(t) && (p.format = "webp");
+  null != l && (p.format = l), null != u && (p.quality = u), d && f && (m.test(t) || g.test(t)) && (p.animated = !0), g.test(t) && (p.format = "webp");
   let h = (0, c.Tj)({
     width: o,
     height: a,

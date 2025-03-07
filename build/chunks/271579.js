@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   WS: () => p,
-  ZP: () => g,
+  ZP: () => m,
   zS: () => h
 }), n(474991), n(398202), n(301563), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(47120);
 var r = n(264344),
@@ -64,7 +64,7 @@ function h(e) {
   }
 }
 
-function g(e, t) {
+function m(e, t) {
   let {
     utmSource: n,
     androidFallbackLink: r,
@@ -76,9 +76,9 @@ function g(e, t) {
   }
   let p = encodeURIComponent(l.toString()),
     h = encodeURIComponent((0, a.Z)()),
-    g = +!!_(),
-    m = null != r ? encodeURIComponent(r) : null,
+    m = +!!_(),
+    g = null != r ? encodeURIComponent(r) : null,
     E = null != i ? encodeURIComponent(i) : null,
-    v = "".concat(f, "/?link=").concat(p, "&utm_source=").concat(n, "&apn=").concat(c, "&isi=").concat(u, "&ibi=").concat(d, "&sd=").concat(h, "&efr=").concat(g);
-  return null != m && (v += "&afl=".concat(m)), null != E && (v += "&ifl=".concat(E)), v
+    v = "".concat(f, "/?link=").concat(p, "&utm_source=").concat(n, "&apn=").concat(c, "&isi=").concat(u, "&ibi=").concat(d, "&sd=").concat(h, "&efr=").concat(m);
+  return null != g && (v += "&afl=".concat(g)), null != E && (v += "&ifl=".concat(E)), v
 }

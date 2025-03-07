@@ -70,7 +70,7 @@ function h(e) {
   }))
 }
 
-function g(e) {
+function m(e) {
   let {
     guildId: t,
     profile: n
@@ -86,7 +86,7 @@ function g(e) {
   }))
 }
 
-function m(e) {
+function g(e) {
   let {
     guildId: t,
     error: n
@@ -175,7 +175,7 @@ function O(e) {
   }))
 }
 
-function S(e) {
+function I(e) {
   let {
     guildId: t,
     channelType: n
@@ -183,7 +183,7 @@ function S(e) {
   n === s.d4z.GUILD_ANNOUNCEMENT && _.delete(t)
 }
 
-function I(e) {
+function S(e) {
   let {
     guildId: t,
     enabled: n
@@ -232,14 +232,14 @@ class N extends(r = i.ZP.Store) {
 l(N, "displayName", "GuildProfileStore");
 let A = new N(o.Z, {
   GUILD_PROFILE_FETCH: h,
-  GUILD_PROFILE_FETCH_SUCCESS: g,
-  GUILD_PROFILE_FETCH_FAILURE: m,
+  GUILD_PROFILE_FETCH_SUCCESS: m,
+  GUILD_PROFILE_FETCH_FAILURE: g,
   GUILD_PROFILE_UPDATE: E,
   GUILD_PROFILE_UPDATE_SUCCESS: v,
   GUILD_PROFILE_UPDATE_FAILURE: b,
   MEMBER_VERIFICATION_FORM_UPDATE: y,
   INVITE_RESOLVE_SUCCESS: O,
-  CREATE_CHANNEL_MODAL_SUBMIT: S,
-  GUILD_SETTINGS_SET_WIDGET: I,
+  CREATE_CHANNEL_MODAL_SUBMIT: I,
+  GUILD_SETTINGS_SET_WIDGET: S,
   GUILD_UPDATE: T
 })

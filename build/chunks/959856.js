@@ -16,15 +16,15 @@ var r = n(512722),
   _ = n(734298),
   p = n(970838),
   h = n(68721),
-  g = n(997653),
-  m = n(384136),
+  m = n(997653),
+  g = n(384136),
   E = n(740197),
   v = n(548820),
   b = n(579237),
   y = n(582168),
   O = n(825040),
-  S = n(65154),
-  I = n(436620);
+  I = n(65154),
+  S = n(436620);
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -43,52 +43,52 @@ class A extends l.Z {
     this.interacted || (document.createElement("audio").play(), this.interacted = !0), this.eachConnection(e => e.interact())
   }
   static supported() {
-    return !__OVERLAY__ && (I.fi && null != window.AudioContext && null != window.RTCPeerConnection ? (n(250678), !0) : (N.info("WebRTC is not supported on", a().name, a().version), !1))
+    return !__OVERLAY__ && (S.fi && null != window.AudioContext && null != window.RTCPeerConnection ? (n(250678), !0) : (N.info("WebRTC is not supported on", a().name, a().version), !1))
   }
   supported() {
     return !0
   }
   supports(e) {
     switch (e) {
-      case S.AN.AUDIO_INPUT_DEVICE:
+      case I.AN.AUDIO_INPUT_DEVICE:
         return E.S5;
-      case S.AN.AUDIO_OUTPUT_DEVICE:
+      case I.AN.AUDIO_OUTPUT_DEVICE:
         return E.ZA;
-      case S.AN.VIDEO:
-        return I.U8;
-      case S.AN.DESKTOP_CAPTURE:
+      case I.AN.VIDEO:
+        return S.U8;
+      case I.AN.DESKTOP_CAPTURE:
         var t;
         return (null === (t = navigator.mediaDevices) || void 0 === t ? void 0 : t.getDisplayMedia) != null;
-      case S.AN.VOICE_PROCESSING:
+      case I.AN.VOICE_PROCESSING:
         return "Chrome" === a().name;
-      case S.AN.NATIVE_PING:
-      case S.AN.DIAGNOSTICS:
-        return I.Fo;
-      case S.AN.DESKTOP_CAPTURE_APPLICATIONS:
-      case S.AN.LOOPBACK:
-      case S.AN.NOISE_SUPPRESSION:
-      case S.AN.AUTOMATIC_GAIN_CONTROL:
+      case I.AN.NATIVE_PING:
+      case I.AN.DIAGNOSTICS:
+        return S.Fo;
+      case I.AN.DESKTOP_CAPTURE_APPLICATIONS:
+      case I.AN.LOOPBACK:
+      case I.AN.NOISE_SUPPRESSION:
+      case I.AN.AUTOMATIC_GAIN_CONTROL:
         return "Safari" !== a().name;
-      case S.AN.NOISE_CANCELLATION:
+      case I.AN.NOISE_CANCELLATION:
         return u()();
-      case S.AN.QOS:
-      case S.AN.ATTENUATION:
-      case S.AN.AUTOMATIC_VAD:
-      case S.AN.LEGACY_AUDIO_SUBSYSTEM:
-      case S.AN.EXPERIMENTAL_AUDIO_SUBSYSTEM:
-      case S.AN.AUTOMATIC_AUDIO_SUBSYSTEM:
-      case S.AN.AUDIO_SUBSYSTEM_DEFERRED_SWITCH:
-      case S.AN.DEBUG_LOGGING:
-      case S.AN.VOICE_PANNING:
-      case S.AN.AUTO_ENABLE:
-      case S.AN.DESKTOP_CAPTURE_FORMAT:
-      case S.AN.VIDEO_HOOK:
-      case S.AN.OPEN_H264:
-      case S.AN.AEC_DUMP:
-      case S.AN.DISABLE_VIDEO:
-      case S.AN.CONNECTION_REPLAY:
-      case S.AN.SIMULCAST:
-      case S.AN.SCREEN_CAPTURE_KIT:
+      case I.AN.QOS:
+      case I.AN.ATTENUATION:
+      case I.AN.AUTOMATIC_VAD:
+      case I.AN.LEGACY_AUDIO_SUBSYSTEM:
+      case I.AN.EXPERIMENTAL_AUDIO_SUBSYSTEM:
+      case I.AN.AUTOMATIC_AUDIO_SUBSYSTEM:
+      case I.AN.AUDIO_SUBSYSTEM_DEFERRED_SWITCH:
+      case I.AN.DEBUG_LOGGING:
+      case I.AN.VOICE_PANNING:
+      case I.AN.AUTO_ENABLE:
+      case I.AN.DESKTOP_CAPTURE_FORMAT:
+      case I.AN.VIDEO_HOOK:
+      case I.AN.OPEN_H264:
+      case I.AN.AEC_DUMP:
+      case I.AN.DISABLE_VIDEO:
+      case I.AN.CONNECTION_REPLAY:
+      case I.AN.SIMULCAST:
+      case I.AN.SCREEN_CAPTURE_KIT:
       default:
         return !1
     }
@@ -104,8 +104,8 @@ class A extends l.Z {
       modes: a,
       streamUserId: s,
       streamParameters: l
-    } = n, c = (0, g.Q)(e, t, this.getAudioContext(), l);
-    return c.streamUserId = s, c.setOutputVolume(this.outputVolume), c.setSinkId(this.sinkId), c.once(d.S.Destroy, e => this.connections.delete(e)), c.on(d.S.Silence, e => this.emit(f.aB.Silence, e)), c.on(d.S.DesktopSourceEnd, this.handleDesktopSourceEnd), c.on(d.S.AudioPermission, this.handleAudioPermission), c.on(d.S.VideoPermission, this.handleVideoPermission), this.interacted && c.interact(), e === S.Yn.DEFAULT && (c.setAudioSource(this.sourceId), this.enabled && c.input.enableAudioInput()), this.connections.add(c), this.emit(f.aB.Connection, c), c
+    } = n, c = (0, m.Q)(e, t, this.getAudioContext(), l);
+    return c.streamUserId = s, c.setOutputVolume(this.outputVolume), c.setSinkId(this.sinkId), c.once(d.S.Destroy, e => this.connections.delete(e)), c.on(d.S.Silence, e => this.emit(f.aB.Silence, e)), c.on(d.S.DesktopSourceEnd, this.handleDesktopSourceEnd), c.on(d.S.AudioPermission, this.handleAudioPermission), c.on(d.S.VideoPermission, this.handleVideoPermission), this.interacted && c.interact(), e === I.Yn.DEFAULT && (c.setAudioSource(this.sourceId), this.enabled && c.input.enableAudioInput()), this.connections.add(c), this.emit(f.aB.Connection, c), c
   }
   findConnection(e) {
     return Array.from(this.connections).find(t => null == e || t.context === e)
@@ -127,7 +127,7 @@ class A extends l.Z {
     e.on("permission", this.handleAudioPermission);
     try {
       var t;
-      await e.enable(), "Firefox" === a().name && await this.handleDeviceChange(), this.enabled = !0, this.eachConnection(e => e.input.enableAudioInput(), S.Yn.DEFAULT), null === (t = this.voiceActivityInput) || void 0 === t || t.enable()
+      await e.enable(), "Firefox" === a().name && await this.handleDeviceChange(), this.enabled = !0, this.eachConnection(e => e.input.enableAudioInput(), I.Yn.DEFAULT), null === (t = this.voiceActivityInput) || void 0 === t || t.enable()
     } finally {
       e.destroy()
     }
@@ -141,7 +141,7 @@ class A extends l.Z {
   }
   setAudioInputDevice(e) {
     var t, n;
-    this.sourceId = e, this.eachConnection(t => t.setAudioSource(e), S.Yn.DEFAULT), null === (t = this.voiceActivityInput) || void 0 === t || t.setSource(e), null === (n = this.loopback) || void 0 === n || n.setAudioSource(e)
+    this.sourceId = e, this.eachConnection(t => t.setAudioSource(e), I.Yn.DEFAULT), null === (t = this.voiceActivityInput) || void 0 === t || t.setSource(e), null === (n = this.loopback) || void 0 === n || n.setAudioSource(e)
   }
   getAudioOutputDevices() {
     return (0, E.HS)()
@@ -154,7 +154,7 @@ class A extends l.Z {
     return (0, E.l0)()
   }
   setVideoInputDevice(e) {
-    this.eachConnection(t => t.setVideoSource(e), S.Yn.DEFAULT)
+    this.eachConnection(t => t.setVideoSource(e), I.Yn.DEFAULT)
   }
   getSupportedVideoCodecs(e) {
     e([])
@@ -164,7 +164,7 @@ class A extends l.Z {
   }
   async getDesktopSource(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-      n = await m.Z.get(e, t);
+      n = await g.Z.get(e, t);
     return this.pendingDesktopInputs[n.id] = n, n.id
   }
   getScreenPreviews(e, t) {
@@ -189,7 +189,7 @@ class A extends l.Z {
   setGoLiveSource(e, t) {
     if (null == e) this.eachConnection(e => e.setDesktopInput(null), t);
     else if (null != e.desktopDescription && null != this.findConnection(t)) {
-      i()(t === S.Yn.STREAM, "Go live context is not STREAM");
+      i()(t === I.Yn.STREAM, "Go live context is not STREAM");
       let n = !1,
         r = this.pendingDesktopInputs[e.desktopDescription.id];
       null != r && this.eachConnection(e => {
@@ -205,7 +205,7 @@ class A extends l.Z {
   setAudioSubsystem(e) {}
   queueAudioSubsystem(e) {}
   getAudioSubsystem() {
-    return S.iA.STANDARD
+    return I.iA.STANDARD
   }
   getAudioLayer() {
     return ""
@@ -265,7 +265,7 @@ class A extends l.Z {
   presentNativeScreenSharePicker(e) {}
   releaseNativeDesktopVideoSourcePickerStream() {}
   constructor() {
-    super(), T(this, "Video", O.Z), T(this, "Camera", y.Z), T(this, "_audioContext", null), T(this, "outputVolume", S.Qx), T(this, "sourceId", S.w5), T(this, "sinkId", S.w5), T(this, "enabled", !1), T(this, "connections", new Set), T(this, "interacted", !1), T(this, "loopback", null), T(this, "voiceActivityInput", null), T(this, "pendingDesktopInputs", {}), T(this, "enablePromise", null), T(this, "handleActiveSinksChange", (e, t) => {
+    super(), T(this, "Video", O.Z), T(this, "Camera", y.Z), T(this, "_audioContext", null), T(this, "outputVolume", I.Qx), T(this, "sourceId", I.w5), T(this, "sinkId", I.w5), T(this, "enabled", !1), T(this, "connections", new Set), T(this, "interacted", !1), T(this, "loopback", null), T(this, "voiceActivityInput", null), T(this, "pendingDesktopInputs", {}), T(this, "enablePromise", null), T(this, "handleActiveSinksChange", (e, t) => {
       this.connections.forEach(n => n.setHasActiveVideoOutputSink(e, t, "MediaEngineWebRTC.handleActiveSinksChange"))
     }), T(this, "handleNewListener", e => {
       switch (e) {

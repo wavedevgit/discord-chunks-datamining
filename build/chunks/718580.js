@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   H: () => T,
-  M: () => I
+  M: () => S
 });
 var r = n(200651),
   i = n(192379),
@@ -26,7 +26,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,7 +51,7 @@ function m(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -84,7 +84,7 @@ function O(e, t) {
   return null == e ? null : e.index > t.index ? "backwards" : e.index < t.index ? "forwards" : null
 }
 
-function S(e, t) {
+function I(e, t) {
   return n => {
     if (0 === n) return "auto";
     let r = "forwards" === t.current,
@@ -94,21 +94,21 @@ function S(e, t) {
   }
 }
 
-function I(e) {
+function S(e) {
   return null
 }
 
 function T(e) {
   var t, n, h, {
-      contentDisplay: m,
+      contentDisplay: g,
       fadeInOut: b = !1
     } = e,
-    I = v(e, ["contentDisplay", "fadeInOut"]);
+    S = v(e, ["contentDisplay", "fadeInOut"]);
   let T = {},
     {
       analyticsLocations: N
     } = (0, _.ZP)();
-  i.Children.forEach(I.children, (e, t) => {
+  i.Children.forEach(S.children, (e, t) => {
     T[e.props.id] = {
       children: e.props.children,
       impressionName: e.props.impressionName,
@@ -116,20 +116,20 @@ function T(e) {
       index: t
     }
   });
-  let A = I.activeSlide,
-    C = (0, d.Z)(I.activeSlide),
-    R = null !== (t = I.directionOverride) && void 0 !== t ? t : O(null != C ? T[C] : null, T[A]),
+  let A = S.activeSlide,
+    C = (0, d.Z)(S.activeSlide),
+    R = null !== (t = S.directionOverride) && void 0 !== t ? t : O(null != C ? T[C] : null, T[A]),
     {
       reducedMotion: P
     } = i.useContext(l.S),
-    D = i.useContext(f.Z),
-    w = T[A].impressionName,
-    L = E(g({}, T[A].impressionProperties), {
+    w = i.useContext(f.Z),
+    D = T[A].impressionName,
+    L = E(m({}, T[A].impressionProperties), {
       location_stack: N
     });
-  D({
+  w({
     type: a.ImpressionTypes.MODAL,
-    name: w,
+    name: D,
     properties: L,
     _stackContext: {
       isSlide: !0
@@ -139,10 +139,10 @@ function T(e) {
     ref: x,
     width: M = 0,
     height: k = 0
-  } = (0, u.Z)(A), j = g({}, y, I.springConfig, P.enabled ? {
+  } = (0, u.Z)(A), j = m({}, y, S.springConfig, P.enabled ? {
     clamp: !0
   } : null), U = (0, c.q_F)({
-    width: null !== (n = I.width) && void 0 !== n ? n : M,
+    width: null !== (n = S.width) && void 0 !== n ? n : M,
     height: k,
     config: j
   }, null == C ? "animate-never" : "respect-motion-settings"), G = (0, c.Yzy)(A, {
@@ -161,21 +161,21 @@ function T(e) {
       let {
         item: n
       } = t;
-      n === A && null != I.onSlideReady && I.onSlideReady(n)
+      n === A && null != S.onSlideReady && S.onSlideReady(n)
     }
   }, null == C ? "animate-never" : "respect-motion-settings"), B = (0, p.Z)(R), {
     width: V,
     centered: F = !0
-  } = I, Z = s.tq ? "100%" : U.width.to(e => "string" == typeof e ? e : Math.round(e)), H = s.tq ? "100%" : U.height.to(e => Math.round(e)), W = s.tq ? {} : F ? {
+  } = S, Z = s.tq ? "100%" : U.width.to(e => "string" == typeof e ? e : Math.round(e)), H = s.tq ? "100%" : U.height.to(e => Math.round(e)), W = s.tq ? {} : F ? {
     transform: "translate3d(0, -50%, 0) scale(1.0, 1.0)",
     top: "50%"
   } : {
     transform: "scale(1.0, 1.0)"
   }, Y = s.tq ? {} : {
-    overflow: null !== (h = I.overflow) && void 0 !== h ? h : "hidden"
+    overflow: null !== (h = S.overflow) && void 0 !== h ? h : "hidden"
   };
   return (0, r.jsx)(o.animated.div, {
-    style: g({
+    style: m({
       position: "relative",
       minWidth: Z,
       minHeight: H
@@ -188,15 +188,15 @@ function T(e) {
       };
       return (0, r.jsx)(o.animated.div, {
         ref: t === A ? x : null,
-        style: g({
+        style: m({
           position: "absolute",
-          display: m,
+          display: g,
           flexDirection: "column",
           backfaceVisibility: "hidden",
           width: s.tq ? "100%" : V
-        }, W, P.enabled ? a : g({
-          left: e.value.to(S("left", B)),
-          right: e.value.to(S("right", B))
+        }, W, P.enabled ? a : m({
+          left: e.value.to(I("left", B)),
+          right: e.value.to(I("right", B))
         }, b && a)),
         children: T[t].children
       }, i)

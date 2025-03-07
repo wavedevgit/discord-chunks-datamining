@@ -3,7 +3,7 @@
 n.d(t, {
   B5: () => y,
   PI: () => v,
-  WD: () => I,
+  WD: () => S,
   aM: () => T,
   ui: () => N
 }), n(230036), n(411104);
@@ -29,7 +29,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function g(e) {
   }
   return e
 }
-let m = 60,
+let g = 60,
   E = 1,
   v = .5;
 class b {
@@ -66,7 +66,7 @@ class b {
         }), (0, c.dA)({
           questId: e.id,
           event: p.rMx.QUEST_CONTENT_VIEWED,
-          properties: g({
+          properties: m({
             min_view_time_seconds: this.minViewTimeSeconds,
             min_viewport_percentage: this.minViewportPercentage,
             triggered_by_status_change: this.triggeredByStatusChange
@@ -84,7 +84,7 @@ class b {
           }), (0, c.dA)({
             questId: t.id,
             event: p.rMx.QUEST_CONTENT_VIEW_TIME,
-            properties: g({
+            properties: m({
               is_termination_beat: e,
               viewed_time_ms: n,
               triggered_by_status_change: y.triggeredByStatusChange
@@ -93,7 +93,7 @@ class b {
           })
         }
       }), y.lastBeatTime = Date.now()
-    }), h(this, "commonProperties", e => g({
+    }), h(this, "commonProperties", e => m({
       impression_id: this.id,
       decision_id: this.questDecisionId,
       quest_status: (0, c.uk)(e)
@@ -111,13 +111,13 @@ class b {
         triggeredByStatusChange: t
       })
     }), h(this, "start", () => {
-      this.stop(!1), this.lastBeatTime = Date.now(), this.heartbeatTimeoutId = window.setInterval(() => this.beat(), 1e3 * m), this.minViewTimeReachedTimeoutId = window.setTimeout(this.onMinViewTimeReached, 1e3 * this.minViewTimeSeconds), this.quests.forEach(e => {
+      this.stop(!1), this.lastBeatTime = Date.now(), this.heartbeatTimeoutId = window.setInterval(() => this.beat(), 1e3 * g), this.minViewTimeReachedTimeoutId = window.setTimeout(this.onMinViewTimeReached, 1e3 * this.minViewTimeSeconds), this.quests.forEach(e => {
         (0, _.T)().info("".concat(e.config.messages.questName, " Quest became visible at ").concat((0, c._b)(this.questContent)), {
           impressionId: this.id
         }), (0, c.dA)({
           questId: e.id,
           event: p.rMx.QUEST_CONTENT_LOADED,
-          properties: g({
+          properties: m({
             triggered_by_status_change: this.triggeredByStatusChange
           }, this.commonProperties(e)),
           trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata
@@ -141,16 +141,16 @@ let y = (e, t) => {
       n = (0, s.Z)(t);
     return t !== n
   },
-  S = i.createContext(void 0);
+  I = i.createContext(void 0);
 
-function I() {
-  let e = i.useContext(S);
+function S() {
+  let e = i.useContext(I);
   return null == e ? void 0 : e.current
 }
 
 function T() {
   var e;
-  return null === (e = I()) || void 0 === e ? void 0 : e.getId()
+  return null === (e = S()) || void 0 === e ? void 0 : e.getId()
 }
 
 function N(e) {
@@ -178,7 +178,7 @@ function N(e) {
       trackGuildAndChannelMetadata: e.trackGuildAndChannelMetadata,
       minViewTimeSeconds: e.minViewTimeSeconds
     }), l.current.start())
-  }, [a, t, l, s, n, e.questOrQuests, e.questContent, e.questContentPosition, e.questContentRowIndex, e.trackGuildAndChannelMetadata, c, e.minViewTimeSeconds, f]), (0, r.jsx)(S.Provider, {
+  }, [a, t, l, s, n, e.questOrQuests, e.questContent, e.questContentPosition, e.questContentRowIndex, e.trackGuildAndChannelMetadata, c, e.minViewTimeSeconds, f]), (0, r.jsx)(I.Provider, {
     value: l,
     children: e.children(o, l)
   })

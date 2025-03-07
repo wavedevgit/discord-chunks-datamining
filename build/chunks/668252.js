@@ -187,17 +187,17 @@
               this.Qb = function(n, r, s, c, p) {
                 if (e()) {
                   var h = u.push(n),
-                    g = d.push(r);
+                    m = d.push(r);
                   if (t.canvas) {
-                    for (var m of ((t.canvas.width != h || t.canvas.height != g) && (t.canvas.width = h, t.canvas.height = g), t.viewport(0, g - r, n, r), t.disable(t.SCISSOR_TEST), t.clearColor(0, 0, 0, 0), t.clear(t.COLOR_BUFFER_BIT), t.enable(t.SCISSOR_TEST), s.sort((e, t) => t.wb - e.wb), h = f.push(c), a != h && (t.bufferData(t.ARRAY_BUFFER, 8 * h, t.DYNAMIC_DRAW), a = h), h = 0, s)) t.bufferSubData(t.ARRAY_BUFFER, h, m.Ta), h += 4 * m.Ta.length;
+                    for (var g of ((t.canvas.width != h || t.canvas.height != m) && (t.canvas.width = h, t.canvas.height = m), t.viewport(0, m - r, n, r), t.disable(t.SCISSOR_TEST), t.clearColor(0, 0, 0, 0), t.clear(t.COLOR_BUFFER_BIT), t.enable(t.SCISSOR_TEST), s.sort((e, t) => t.wb - e.wb), h = f.push(c), a != h && (t.bufferData(t.ARRAY_BUFFER, 8 * h, t.DYNAMIC_DRAW), a = h), h = 0, s)) t.bufferSubData(t.ARRAY_BUFFER, h, g.Ta), h += 4 * g.Ta.length;
                     for (var E of (console.assert(h == 4 * c), s)) t.bufferSubData(t.ARRAY_BUFFER, h, E.Db), h += 4 * E.Db.length;
-                    for (var v of (console.assert(h == 8 * c), h = _.push(p), l != h && (t.bufferData(t.ELEMENT_ARRAY_BUFFER, 2 * h, t.DYNAMIC_DRAW), l = h), m = 0, s)) t.bufferSubData(t.ELEMENT_ARRAY_BUFFER, m, v.indices), m += 2 * v.indices.length;
-                    for (let e of (console.assert(m == 2 * p), v = 0, E = !0, h = m = 0, s)) {
-                      e.image.Ka != v && (t.bindTexture(t.TEXTURE_2D, e.image.Ja || null), v = e.image.Ka), e.mc ? (t.scissor(e.Ya, g - e.Za - e.jb, e.Ac, e.jb), E = !0) : E && (t.scissor(0, g - r, n, r), E = !1), s = 2 / n;
+                    for (var v of (console.assert(h == 8 * c), h = _.push(p), l != h && (t.bufferData(t.ELEMENT_ARRAY_BUFFER, 2 * h, t.DYNAMIC_DRAW), l = h), g = 0, s)) t.bufferSubData(t.ELEMENT_ARRAY_BUFFER, g, v.indices), g += 2 * v.indices.length;
+                    for (let e of (console.assert(g == 2 * p), v = 0, E = !0, h = g = 0, s)) {
+                      e.image.Ka != v && (t.bindTexture(t.TEXTURE_2D, e.image.Ja || null), v = e.image.Ka), e.mc ? (t.scissor(e.Ya, m - e.Za - e.jb, e.Ac, e.jb), E = !0) : E && (t.scissor(0, m - r, n, r), E = !1), s = 2 / n;
                       let a = -2 / r;
-                      t.uniform4f(i, e.ha[0] * s * e.Ba, e.ha[1] * a * e.Ca, e.ha[2] * s * e.Ba, e.ha[3] * a * e.Ca), t.uniform2f(o, e.ha[4] * s * e.Ba + s * (e.Ya - e.ic * e.Ba) - 1, e.ha[5] * a * e.Ca + a * (e.Za - e.jc * e.Ca) + 1), t.vertexAttribPointer(0, 2, t.FLOAT, !1, 0, h), t.vertexAttribPointer(1, 2, t.FLOAT, !1, 0, h + 4 * c), t.drawElements(t.TRIANGLES, e.indices.length, t.UNSIGNED_SHORT, m), h += 4 * e.Ta.length, m += 2 * e.indices.length
+                      t.uniform4f(i, e.ha[0] * s * e.Ba, e.ha[1] * a * e.Ca, e.ha[2] * s * e.Ba, e.ha[3] * a * e.Ca), t.uniform2f(o, e.ha[4] * s * e.Ba + s * (e.Ya - e.ic * e.Ba) - 1, e.ha[5] * a * e.Ca + a * (e.Za - e.jc * e.Ca) + 1), t.vertexAttribPointer(0, 2, t.FLOAT, !1, 0, h), t.vertexAttribPointer(1, 2, t.FLOAT, !1, 0, h + 4 * c), t.drawElements(t.TRIANGLES, e.indices.length, t.UNSIGNED_SHORT, g), h += 4 * e.Ta.length, g += 2 * e.indices.length
                     }
-                    console.assert(h == 4 * c), console.assert(m == 2 * p)
+                    console.assert(h == 4 * c), console.assert(g == 2 * p)
                   }
                 }
               }, this.canvas = function() {
@@ -248,7 +248,7 @@
             }
 
             function n() {
-              for (let e of (0 < I.length && (u.Qb(S.drawWidth(), S.drawHeight(), I, T, N), I = [], N = T = 0, S.reset(512, 512)), O)) {
+              for (let e of (0 < S.length && (u.Qb(I.drawWidth(), I.drawHeight(), S, T, N), S = [], N = T = 0, I.reset(512, 512)), O)) {
                 for (let t of e.H) t();
                 e.H = []
               }
@@ -263,8 +263,8 @@
               _ = o.StrokeJoin,
               p = o.BlendMode,
               h = r.fill,
-              g = r.stroke,
-              m = o.FillRule.evenOdd,
+              m = r.stroke,
+              g = o.FillRule.evenOdd,
               E = 1;
             var v = o.RenderImage.extend("CanvasRenderImage", {
                 __construct: function({
@@ -398,7 +398,7 @@
                     this.Xa = o, this.ja = null
                   }
                   switch (i) {
-                    case g:
+                    case m:
                       e.strokeStyle = o, e.lineWidth = this.Ib, e.lineCap = this.Ha, e.lineJoin = this.Ia, e.stroke(n);
                       break;
                     case h:
@@ -407,8 +407,8 @@
                 }
               });
             let O = new Set,
-              S = null,
-              I = [],
+              I = null,
+              S = [],
               T = 0,
               N = 0;
             var A = o.CanvasRenderer = l.extend("Renderer", {
@@ -433,7 +433,7 @@
                 e = Math.cos(e), this.transform(e, t, -t, e, 0, 0)
               },
               _drawPath: function(e, t) {
-                this.H.push(t.draw.bind(t, this.C, e.T, e.Va === m ? "evenodd" : "nonzero"))
+                this.H.push(t.draw.bind(t, this.C, e.T, e.Va === g ? "evenodd" : "nonzero"))
               },
               _drawRiveImage: function(t, n, r) {
                 var i = t.Fb;
@@ -453,19 +453,19 @@
               _drawImageMesh: function(t, r, i, a, s, l, c, d, f, _) {
                 var p = this.C.canvas.width,
                   h = this.C.canvas.height;
-                let g = f - c,
-                  m = _ - d;
+                let m = f - c,
+                  g = _ - d;
                 c = Math.max(c, 0), d = Math.max(d, 0);
                 let E = (f = Math.min(f, p)) - c,
                   v = (_ = Math.min(_, h)) - d;
-                if (console.assert(E <= Math.min(g, p)), console.assert(v <= Math.min(m, h)), !(0 >= E || 0 >= v)) {
-                  f = E < g || v < m, p = _ = 1;
+                if (console.assert(E <= Math.min(m, p)), console.assert(v <= Math.min(g, h)), !(0 >= E || 0 >= v)) {
+                  f = E < m || v < g, p = _ = 1;
                   var b = Math.ceil(E * _),
                     y = Math.ceil(v * p);
-                  h = u.hc(), b > h && (_ *= h / b, b = h), y > h && (p *= h / y, y = h), S || (S = new o.DynamicRectanizer(h)).reset(512, 512), 0 > (h = S.addRect(b, y)) && (n(), O.add(this), console.assert(0 <= (h = S.addRect(b, y))));
+                  h = u.hc(), b > h && (_ *= h / b, b = h), y > h && (p *= h / y, y = h), I || (I = new o.DynamicRectanizer(h)).reset(512, 512), 0 > (h = I.addRect(b, y)) && (n(), O.add(this), console.assert(0 <= (h = I.addRect(b, y))));
                   var A = 65535 & h,
                     C = h >> 16;
-                  I.push({
+                  S.push({
                     ha: this.S.slice(this.S.length - 6),
                     image: t,
                     Ya: A,
@@ -492,7 +492,7 @@
                 }
               },
               _clipPath: function(e) {
-                this.H.push(this.C.clip.bind(this.C, e.T, e.Va === m ? "evenodd" : "nonzero"))
+                this.H.push(this.C.clip.bind(this.C, e.T, e.Va === g ? "evenodd" : "nonzero"))
               },
               clear: function() {
                 O.add(this), this.H.push(this.C.clearRect.bind(this.C, 0, 0, this.Ua.width, this.Ua.height))
@@ -569,15 +569,15 @@
             o.RendererWrapper.prototype.align = function(e, t, n, r, i = 1) {
               P.call(this, e, t, n, r, i)
             }, r = new a, o.requestAnimationFrame = r.requestAnimationFrame.bind(r), o.cancelAnimationFrame = r.cancelAnimationFrame.bind(r), o.enableFPSCounter = r.Rb.bind(r), o.disableFPSCounter = r.Ob, r.ob = n, o.resolveAnimationFrame = n, o.cleanup = function() {
-              S && S.delete()
+              I && I.delete()
             }
           };
           var f, _, p = Object.assign({}, o),
             h = "./this.program",
-            g = "object" == typeof window,
-            m = "function" == typeof importScripts,
+            m = "object" == typeof window,
+            g = "function" == typeof importScripts,
             E = "";
-          (g || m) && (m ? E = self.location.href : "undefined" != typeof document && document.currentScript && (E = document.currentScript.src), e && (E = e), E = 0 !== E.indexOf("blob:") ? E.substr(0, E.replace(/[?#].*/, "").lastIndexOf("/") + 1) : "", m && (_ = e => {
+          (m || g) && (g ? E = self.location.href : "undefined" != typeof document && document.currentScript && (E = document.currentScript.src), e && (E = e), E = 0 !== E.indexOf("blob:") ? E.substr(0, E.replace(/[?#].*/, "").lastIndexOf("/") + 1) : "", g && (_ = e => {
             var t = new XMLHttpRequest;
             return t.open("GET", e, !1), t.responseType = "arraybuffer", t.send(null), new Uint8Array(t.response)
           }), f = (e, t, n) => {
@@ -589,11 +589,11 @@
           var v = o.print || console.log.bind(console),
             b = o.printErr || console.error.bind(console);
           Object.assign(o, p), p = null, o.thisProgram && (h = o.thisProgram), o.wasmBinary && (y = o.wasmBinary), o.noExitRuntime, "object" != typeof WebAssembly && F("no native wasm support detected");
-          var y, O, S, I, T, N, A, C, R, P, D, w = !1;
+          var y, O, I, S, T, N, A, C, R, P, w, D = !1;
 
           function L() {
             var e = O.buffer;
-            o.HEAP8 = I = new Int8Array(e), o.HEAP16 = N = new Int16Array(e), o.HEAP32 = C = new Int32Array(e), o.HEAPU8 = T = new Uint8Array(e), o.HEAPU16 = A = new Uint16Array(e), o.HEAPU32 = R = new Uint32Array(e), o.HEAPF32 = P = new Float32Array(e), o.HEAPF64 = D = new Float64Array(e)
+            o.HEAP8 = S = new Int8Array(e), o.HEAP16 = N = new Int16Array(e), o.HEAP32 = C = new Int32Array(e), o.HEAPU8 = T = new Uint8Array(e), o.HEAPU16 = A = new Uint16Array(e), o.HEAPU32 = R = new Uint32Array(e), o.HEAPF32 = P = new Float32Array(e), o.HEAPF64 = w = new Float64Array(e)
           }
           var x, M = [],
             k = [],
@@ -608,7 +608,7 @@
             V = null;
 
           function F(e) {
-            throw o.onAbort && o.onAbort(e), b(e = "Aborted(" + e + ")"), w = !0, e = new WebAssembly.RuntimeError(e + ". Build with -sASSERTIONS for more info."), i(e), e
+            throw o.onAbort && o.onAbort(e), b(e = "Aborted(" + e + ")"), D = !0, e = new WebAssembly.RuntimeError(e + ". Build with -sASSERTIONS for more info."), i(e), e
           }
 
           function Z(e) {
@@ -626,7 +626,7 @@
           }
 
           function Y(e) {
-            if (!y && (g || m)) {
+            if (!y && (m || g)) {
               if ("function" == typeof fetch && !e.startsWith("file://")) return fetch(e, {
                 credentials: "same-origin"
               }).then(t => {
@@ -717,7 +717,7 @@
                     nO(o, r, i)
                   }
                   if (e == window.h.I.ya || e == window.h.I.La)
-                    for (nS(o, r, i), s = 0; s < n.outputBuffer.numberOfChannels; ++s)
+                    for (nI(o, r, i), s = 0; s < n.outputBuffer.numberOfChannels; ++s)
                       for (l = n.outputBuffer.getChannelData(s), c = a.sa, u = 0; u < r; u += 1) l[u] = c[u * t + s];
                   else
                     for (s = 0; s < n.outputBuffer.numberOfChannels; ++s) n.outputBuffer.getChannelData(s).fill(0)
@@ -855,7 +855,7 @@
           var eh = {
               open: function(e) {
                 var t = e_[e.node.za];
-                if (!t) throw new eD(43);
+                if (!t) throw new ew(43);
                 e.s = t, e.seekable = !1
               },
               close: function(e) {
@@ -865,30 +865,30 @@
                 e.s.V.qa(e.s)
               },
               read: function(e, t, n, r) {
-                if (!e.s || !e.s.V.ib) throw new eD(60);
+                if (!e.s || !e.s.V.ib) throw new ew(60);
                 for (var i = 0, o = 0; o < r; o++) {
                   try {
                     var a = e.s.V.ib(e.s)
                   } catch (e) {
-                    throw new eD(29)
+                    throw new ew(29)
                   }
-                  if (void 0 === a && 0 === i) throw new eD(6);
+                  if (void 0 === a && 0 === i) throw new ew(6);
                   if (null == a) break;
                   i++, t[n + o] = a
                 }
                 return i && (e.node.timestamp = Date.now()), i
               },
               write: function(e, t, n, r) {
-                if (!e.s || !e.s.V.Oa) throw new eD(60);
+                if (!e.s || !e.s.V.Oa) throw new ew(60);
                 try {
                   for (var i = 0; i < r; i++) e.s.V.Oa(e.s, t[n + i])
                 } catch (e) {
-                  throw new eD(29)
+                  throw new ew(29)
                 }
                 return r && (e.node.timestamp = Date.now()), i
               }
             },
-            eg = {
+            em = {
               ib: function() {
                 e: {
                   if (!ec.length) {
@@ -925,7 +925,7 @@
                 return [24, 80]
               }
             },
-            em = {
+            eg = {
               Oa: function(e, t) {
                 null === t || 10 === t ? (b(el(e.F, 0)), e.F = []) : 0 != t && e.F.push(t)
               },
@@ -942,7 +942,7 @@
             O: null,
             U: () => ev.createNode(null, "/", 16895, 0),
             createNode(e, t, n, r) {
-              if (24576 == (61440 & n) || 4096 == (61440 & n)) throw new eD(63);
+              if (24576 == (61440 & n) || 4096 == (61440 & n)) throw new ew(63);
               return ev.O || (ev.O = {
                 dir: {
                   node: {
@@ -1007,7 +1007,7 @@
                 }
               },
               ka() {
-                throw ew[44]
+                throw eD[44]
               },
               va: (e, t, n, r) => ev.createNode(e, t, n, r),
               ub(e, t, n) {
@@ -1016,7 +1016,7 @@
                     var r = ek(t, n)
                   } catch (e) {}
                   if (r)
-                    for (var i in r.j) throw new eD(55)
+                    for (var i in r.j) throw new ew(55)
                 }
                 delete e.parent.j[e.name], e.parent.timestamp = Date.now(), e.name = n, t.j[n] = e, t.timestamp = e.parent.timestamp, e.parent = t
               },
@@ -1025,7 +1025,7 @@
               },
               vb(e, t) {
                 var n, r = ek(e, t);
-                for (n in r.j) throw new eD(55);
+                for (n in r.j) throw new ew(55);
                 delete e.j[t], e.timestamp = Date.now()
               },
               sb(e) {
@@ -1035,7 +1035,7 @@
               },
               Ea: (e, t, n) => ((e = ev.createNode(e, t, 41471, 0)).link = n, e),
               ma(e) {
-                if (40960 != (61440 & e.mode)) throw new eD(28);
+                if (40960 != (61440 & e.mode)) throw new ew(28);
                 return e.link
               }
             },
@@ -1049,7 +1049,7 @@
                 return e
               },
               write(e, t, n, r, i, o) {
-                if (t.buffer === I.buffer && (o = !1), !r) return 0;
+                if (t.buffer === S.buffer && (o = !1), !r) return 0;
                 if ((e = e.node).timestamp = Date.now(), t.subarray && (!e.j || e.j.subarray)) {
                   if (o) return e.j = t.subarray(n, n + r), e.v = r;
                   if (0 === e.v && 0 === i) return e.j = t.slice(n, n + r), e.v = r;
@@ -1061,15 +1061,15 @@
                 return e.v = Math.max(e.v, i + r), r
               },
               ba(e, t, n) {
-                if (1 === n ? t += e.position : 2 === n && 32768 == (61440 & e.node.mode) && (t += e.node.v), 0 > t) throw new eD(28);
+                if (1 === n ? t += e.position : 2 === n && 32768 == (61440 & e.node.mode) && (t += e.node.v), 0 > t) throw new ew(28);
                 return t
               },
               pa(e, t, n) {
                 eE(e.node, t + n), e.node.v = Math.max(e.node.v, t + n)
               },
               lb(e, t, n, r, i) {
-                if (32768 != (61440 & e.node.mode)) throw new eD(43);
-                if (e = e.node.j, 2 & i || e.buffer !== I.buffer) throw (0 < n || n + t < e.length) && (e = e.subarray ? e.subarray(n, n + t) : Array.prototype.slice.call(e, n, n + t)), n = !0, F(), t = void 0, new eD(48);
+                if (32768 != (61440 & e.node.mode)) throw new ew(43);
+                if (e = e.node.j, 2 & i || e.buffer !== S.buffer) throw (0 < n || n + t < e.length) && (e = e.subarray ? e.subarray(n, n + t) : Array.prototype.slice.call(e, n, n + t)), n = !0, F(), t = void 0, new ew(48);
                 return n = !1, t = e.byteOffset, {
                   o: t,
                   M: n
@@ -1083,14 +1083,14 @@
             var n = 0;
             return e && (n |= 365), t && (n |= 146), n
           }
-          var ey, eO, eS, eI, eT = null,
+          var ey, eO, eI, eS, eT = null,
             eN = {},
             eA = [],
             eC = 1,
             eR = null,
             eP = !0,
-            eD = null,
-            ew = {},
+            ew = null,
+            eD = {},
             eL = (e, t = {}) => {
               if (!(e = ea(e))) return {
                 path: "",
@@ -1099,7 +1099,7 @@
               if (8 < (t = Object.assign({
                   gb: !0,
                   Qa: 0
-                }, t)).Qa) throw new eD(32);
+                }, t)).Qa) throw new ew(32);
               e = e.split("/").filter(e => !!e);
               for (var n = eT, r = "/", i = 0; i < e.length; i++) {
                 var o = i === e.length - 1;
@@ -1108,7 +1108,7 @@
                   for (o = 0; 40960 == (61440 & n.mode);)
                     if (n = eQ(r), n = eL(r = ea(en(r), n), {
                         Qa: t.Qa + 1
-                      }).node, 40 < o++) throw new eD(32)
+                      }).node, 40 < o++) throw new ew(32)
                 }
               }
               return {
@@ -1128,7 +1128,7 @@
             },
             ek = (e, t) => {
               var n;
-              if (n = (n = eG(e, "x")) ? n : 2 * !e.l.ka) throw new eD(n, e);
+              if (n = (n = eG(e, "x")) ? n : 2 * !e.l.ka) throw new ew(n, e);
               for (n = eR[eM(e.id, t)]; n; n = n.lc) {
                 var r = n.name;
                 if (n.parent.id === e.id && r === t) return n
@@ -1150,15 +1150,15 @@
             eV = () => {
               for (var e = 0; 4096 >= e; e++)
                 if (!eA[e]) return e;
-              throw new eD(33)
+              throw new ew(33)
             },
             eF = e => {
-              if (!(e = eA[e])) throw new eD(8);
+              if (!(e = eA[e])) throw new ew(8);
               return e
             },
-            eZ = (e, t = -1) => (eS || ((eS = function() {
+            eZ = (e, t = -1) => (eI || ((eI = function() {
               this.h = {}
-            }).prototype = {}, Object.defineProperties(eS.prototype, {
+            }).prototype = {}, Object.defineProperties(eI.prototype, {
               object: {
                 get() {
                   return this.node
@@ -1183,13 +1183,13 @@
                   this.h.position = e
                 }
               }
-            })), e = Object.assign(new eS, e), -1 == t && (t = eV()), e.X = t, eA[t] = e),
+            })), e = Object.assign(new eI, e), -1 == t && (t = eV()), e.X = t, eA[t] = e),
             eH = {
               open: e => {
                 e.m = eN[e.node.za].m, e.m.open && e.m.open(e)
               },
               ba: () => {
-                throw new eD(70)
+                throw new ew(70)
               }
             },
             eW = (e, t) => {
@@ -1200,13 +1200,13 @@
             eY = (e, t) => {
               var n = "/" === t,
                 r = !t;
-              if (n && eT) throw new eD(10);
+              if (n && eT) throw new ew(10);
               if (!n && !r) {
                 var i = eL(t, {
                   gb: !1
                 });
-                if (t = i.path, (i = i.node).wa) throw new eD(10);
-                if (16384 != (61440 & i.mode)) throw new eD(54)
+                if (t = i.path, (i = i.node).wa) throw new ew(10);
+                if (16384 != (61440 & i.mode)) throw new ew(54)
               }
               t = {
                 type: e,
@@ -1219,33 +1219,33 @@
               var r = eL(e, {
                 parent: !0
               }).node;
-              if (!(e = er(e)) || "." === e || ".." === e) throw new eD(28);
+              if (!(e = er(e)) || "." === e || ".." === e) throw new ew(28);
               var i = eB(r, e);
-              if (i) throw new eD(i);
-              if (!r.l.va) throw new eD(63);
+              if (i) throw new ew(i);
+              if (!r.l.va) throw new ew(63);
               return r.l.va(r, e, t, n)
             },
             ez = (e, t, n) => {
               void 0 === n && (n = t, t = 438), eK(e, 8192 | t, n)
             },
             eq = (e, t) => {
-              if (!ea(e)) throw new eD(44);
+              if (!ea(e)) throw new ew(44);
               var n = eL(t, {
                 parent: !0
               }).node;
-              if (!n) throw new eD(44);
+              if (!n) throw new ew(44);
               var r = eB(n, t = er(t));
-              if (r) throw new eD(r);
-              if (!n.l.Ea) throw new eD(63);
+              if (r) throw new ew(r);
+              if (!n.l.Ea) throw new ew(63);
               n.l.Ea(n, t, e)
             },
             eQ = e => {
-              if (!(e = eL(e).node)) throw new eD(44);
-              if (!e.l.ma) throw new eD(28);
+              if (!(e = eL(e).node)) throw new ew(44);
+              if (!e.l.ma) throw new ew(28);
               return ea(ex(e.parent), e.l.ma(e))
             },
             eX = (e, t, n) => {
-              if ("" === e) throw new eD(44);
+              if ("" === e) throw new ew(44);
               if ("string" == typeof t) {
                 var r = {
                   r: 0,
@@ -1269,19 +1269,19 @@
               }
               if (r = !1, 64 & t) {
                 if (i) {
-                  if (128 & t) throw new eD(20)
+                  if (128 & t) throw new ew(20)
                 } else i = eK(e, n, 0), r = !0
               }
-              if (!i) throw new eD(44);
-              if (8192 == (61440 & i.mode) && (t &= -513), 65536 & t && 16384 != (61440 & i.mode)) throw new eD(54);
-              if (!r && (n = i ? 40960 == (61440 & i.mode) ? 32 : 16384 == (61440 & i.mode) && ("r" !== eU(t) || 512 & t) ? 31 : eG(i, eU(t)) : 44)) throw new eD(n);
+              if (!i) throw new ew(44);
+              if (8192 == (61440 & i.mode) && (t &= -513), 65536 & t && 16384 != (61440 & i.mode)) throw new ew(54);
+              if (!r && (n = i ? 40960 == (61440 & i.mode) ? 32 : 16384 == (61440 & i.mode) && ("r" !== eU(t) || 512 & t) ? 31 : eG(i, eU(t)) : 44)) throw new ew(n);
               if (512 & t && !r) {
                 if (!(n = "string" == typeof(n = i) ? eL(n, {
                     fb: !0
-                  }).node : n).l.P) throw new eD(63);
-                if (16384 == (61440 & n.mode)) throw new eD(31);
-                if (32768 != (61440 & n.mode)) throw new eD(28);
-                if (r = eG(n, "w")) throw new eD(r);
+                  }).node : n).l.P) throw new ew(63);
+                if (16384 == (61440 & n.mode)) throw new ew(31);
+                if (32768 != (61440 & n.mode)) throw new ew(28);
+                if (r = eG(n, "w")) throw new ew(r);
                 n.l.P(n, {
                   size: 0,
                   timestamp: Date.now()
@@ -1296,21 +1296,21 @@
                 m: i.m,
                 zc: [],
                 error: !1
-              })).m.open && i.m.open(i), !o.logReadFiles || 1 & t || (eI || (eI = {}), e in eI || (eI[e] = 1)), i
+              })).m.open && i.m.open(i), !o.logReadFiles || 1 & t || (eS || (eS = {}), e in eS || (eS[e] = 1)), i
             },
             eJ = (e, t, n) => {
-              if (null === e.X) throw new eD(8);
-              if (!e.seekable || !e.m.ba) throw new eD(70);
-              if (0 != n && 1 != n && 2 != n) throw new eD(28);
+              if (null === e.X) throw new ew(8);
+              if (!e.seekable || !e.m.ba) throw new ew(70);
+              if (0 != n && 1 != n && 2 != n) throw new ew(28);
               e.position = e.m.ba(e, t, n), e.zc = []
             },
             e$ = () => {
-              eD || ((eD = function(e, t) {
+              ew || ((ew = function(e, t) {
                 this.name = "ErrnoError", this.node = t, this.pc = function(e) {
                   this.aa = e
                 }, this.pc(e), this.message = "FS error"
-              }).prototype = Error(), eD.prototype.constructor = eD, [44].forEach(e => {
-                ew[e] = new eD(e), ew[e].stack = "<generic error, no stack>"
+              }).prototype = Error(), ew.prototype.constructor = ew, [44].forEach(e => {
+                eD[e] = new ew(e), eD[e].stack = "<generic error, no stack>"
               }))
             },
             e0 = (e, t, n) => {
@@ -1330,9 +1330,9 @@
                     try {
                       var s = t()
                     } catch (e) {
-                      throw new eD(29)
+                      throw new ew(29)
                     }
-                    if (void 0 === s && 0 === o) throw new eD(6);
+                    if (void 0 === s && 0 === o) throw new ew(6);
                     if (null == s) break;
                     o++, n[r + a] = s
                   }
@@ -1342,7 +1342,7 @@
                   for (var o = 0; o < i; o++) try {
                     n(t[r + o])
                   } catch (e) {
-                    throw new eD(29)
+                    throw new ew(29)
                   }
                   return i && (e.node.timestamp = Date.now()), o
                 }
@@ -1443,12 +1443,12 @@
           function tp() {}
           var th = !1;
 
-          function tg(e) {
+          function tm(e) {
             --e.count.value, 0 === e.count.value && (e.G ? e.L.W(e.G) : e.u.i.W(e.o))
           }
 
-          function tm(e, t, n) {
-            return t === n ? e : void 0 === n.A ? null : null === (e = tm(e, t, n.A)) ? null : n.Pb(e)
+          function tg(e, t, n) {
+            return t === n ? e : void 0 === n.A ? null : null === (e = tg(e, t, n.A)) ? null : n.Pb(e)
           }
           var tE = {};
 
@@ -1464,26 +1464,26 @@
           function tO(e, t) {
             return t.u && t.o || ty("makeClassHandle requires ptr and ptrType"), !!t.L != !!t.G && ty("Both smartPtrType and smartPtr must be specified"), t.count = {
               value: 1
-            }, tS(Object.create(e, {
+            }, tI(Object.create(e, {
               g: {
                 value: t
               }
             }))
           }
 
-          function tS(e) {
-            return "undefined" == typeof FinalizationRegistry ? (tS = e => e, e) : (th = new FinalizationRegistry(e => {
-              tg(e.g)
-            }), tS = e => {
+          function tI(e) {
+            return "undefined" == typeof FinalizationRegistry ? (tI = e => e, e) : (th = new FinalizationRegistry(e => {
+              tm(e.g)
+            }), tI = e => {
               var t = e.g;
               return t.G && th.register(e, {
                 g: t
               }, e), e
             }, tp = e => {
               th.unregister(e)
-            }, tS(e))
+            }, tI(e))
           }
-          var tI = {};
+          var tS = {};
 
           function tT(e) {
             for (; e.length;) {
@@ -1501,7 +1501,7 @@
           function tR(e, t, n) {
             function r(t) {
               (t = n(t)).length !== e.length && ty("Mismatched type converter count");
-              for (var r = 0; r < e.length; ++r) tw(e[r], t[r])
+              for (var r = 0; r < e.length; ++r) tD(e[r], t[r])
             }
             e.forEach(function(e) {
               tC[e] = t
@@ -1531,7 +1531,7 @@
             }
           }
 
-          function tD(e, t, n = {}) {
+          function tw(e, t, n = {}) {
             var r = t.name;
             if (e || e9(`type "${r}" must have a positive integer typeid pointer`), td.hasOwnProperty(e)) {
               if (n.$b) return;
@@ -1540,9 +1540,9 @@
             td[e] = t, delete tC[e], tA.hasOwnProperty(e) && (t = tA[e], delete tA[e], t.forEach(e => e()))
           }
 
-          function tw(e, t, n = {}) {
+          function tD(e, t, n = {}) {
             if (!("argPackAdvance" in t)) throw TypeError("registerType registeredInstance requires argPackAdvance");
-            tD(e, t, n)
+            tw(e, t, n)
           }
 
           function tL(e) {
@@ -1696,7 +1696,7 @@
             switch (t) {
               case 0:
                 return function(e) {
-                  return this.fromWireType((n ? I : T)[e])
+                  return this.fromWireType((n ? S : T)[e])
                 };
               case 1:
                 return function(e) {
@@ -1725,7 +1725,7 @@
                 };
               case 3:
                 return function(e) {
-                  return this.fromWireType(D[e >> 3])
+                  return this.fromWireType(w[e >> 3])
                 };
               default:
                 throw TypeError("Unknown float type: " + e)
@@ -1736,7 +1736,7 @@
             switch (t) {
               case 0:
                 return n ? function(e) {
-                  return I[e]
+                  return S[e]
                 } : function(e) {
                   return T[e]
                 };
@@ -1983,7 +1983,7 @@
                   "%Z": e => e.xc,
                   "%%": () => "%"
                 }, n = n.replace(/%%/g, "\0\0"), c) n.includes(u) && (n = n.replace(RegExp(u, "g"), c[u](r)));
-              return (u = ef(n = n.replace(/\0\0/g, "%"), !1)).length > t ? 0 : (I.set(u, e), u.length - 1)
+              return (u = ef(n = n.replace(/\0\0/g, "%"), !1)).length > t ? 0 : (S.set(u, e), u.length - 1)
             };
 
           function nh(e, t, n, r) {
@@ -2010,7 +2010,7 @@
             eK("/dev", 16895, 0), eW(259, {
               read: () => 0,
               write: (e, t, n, r) => r
-            }), ez("/dev/null", 259), ep(1280, eg), ep(1536, em), ez("/dev/tty", 1280), ez("/dev/tty1", 1536);
+            }), ez("/dev/null", 259), ep(1280, em), ep(1536, eg), ez("/dev/tty", 1280), ez("/dev/tty1", 1536);
             var e = new Uint8Array(1024),
               t = 0,
               n = () => (0 === t && (t = eo(e).byteLength), e[--t]);
@@ -2067,8 +2067,8 @@
             for (var e = 0, t = e7.h; t < e7.M.length; ++t) void 0 !== e7.M[t] && ++e;
             return e
           }, tr = o.PureVirtualError = tn("PureVirtualError");
-          for (var ng = Array(256), nm = 0; 256 > nm; ++nm) ng[nm] = String.fromCharCode(nm);
-          ti = ng, o.getInheritedInstanceCount = function() {
+          for (var nm = Array(256), ng = 0; 256 > ng; ++ng) nm[ng] = String.fromCharCode(ng);
+          ti = nm, o.getInheritedInstanceCount = function() {
             return Object.keys(tc).length
           }, o.getLiveInheritedInstances = function() {
             var e, t = [];
@@ -2090,7 +2090,7 @@
             return t === r && n === e
           }, tx.prototype.clone = function() {
             if (this.g.o || tL(this), this.g.ia) return this.g.count.value += 1, this;
-            var e = tS,
+            var e = tI,
               t = Object,
               n = t.create,
               r = Object.getPrototypeOf(this),
@@ -2109,7 +2109,7 @@
               }
             })), e.g.count.value += 1, e.g.fa = !1, e
           }, tx.prototype.delete = function() {
-            this.g.o || tL(this), this.g.fa && !this.g.ia && e9("Object already scheduled for deletion"), tp(this), tg(this.g), this.g.ia || (this.g.G = void 0, this.g.o = void 0)
+            this.g.o || tL(this), this.g.fa && !this.g.ia && e9("Object already scheduled for deletion"), tp(this), tm(this.g), this.g.ia || (this.g.G = void 0, this.g.o = void 0)
           }, tx.prototype.isDeleted = function() {
             return !this.g.o
           }, tx.prototype.deleteLater = function() {
@@ -2138,7 +2138,7 @@
             if (void 0 !== r) return 0 === r.g.count.value ? (r.g.o = n, r.g.G = e, r.clone()) : (r = r.clone(), this.ab(e), r);
             if (!(r = tE[r = this.i.Ub(n)])) return t.call(this);
             r = this.ta ? r.Kb : r.pointerType;
-            var i = tm(n, this.i, r.i);
+            var i = tg(n, this.i, r.i);
             return null === i ? t.call(this) : this.ua ? tO(r.i.N, {
               u: r,
               o: i,
@@ -2174,7 +2174,7 @@
                   default:
                     return -28;
                   case 9:
-                    return C[nI() >> 2] = 28, -1
+                    return C[nS() >> 2] = 28, -1
                 }
               } catch (e) {
                 if (void 0 === e1 || "ErrnoError" !== e.name) throw e;
@@ -2199,7 +2199,7 @@
                       t = [3, 28, 127, 21, 4, 0, 1, 0, 17, 19, 26, 0, 18, 15, 23, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
                       var i = e3();
                       C[i >> 2] = 25856, C[i + 4 >> 2] = 5, C[i + 8 >> 2] = 191, C[i + 12 >> 2] = 35387;
-                      for (var o = 0; 32 > o; o++) I[i + o + 17 >> 0] = t[o] || 0
+                      for (var o = 0; 32 > o; o++) S[i + o + 17 >> 0] = t[o] || 0
                     }
                     return 0;
                   case 21506:
@@ -2207,7 +2207,7 @@
                   case 21508:
                     if (!r.s) return -59;
                     if (r.s.V.cc)
-                      for (i = e3(), t = [], o = 0; 32 > o; o++) t.push(I[i + o + 17 >> 0]);
+                      for (i = e3(), t = [], o = 0; 32 > o; o++) t.push(S[i + o + 17 >> 0]);
                     return 0;
                   case 21519:
                     if (!r.s) return -59;
@@ -2215,7 +2215,7 @@
                   case 21520:
                     return r.s ? -28 : -59;
                   case 21531:
-                    if (i = e3(), !r.m.ac) throw new eD(59);
+                    if (i = e3(), !r.m.ac) throw new ew(59);
                     return r.m.ac(r, t, i);
                   case 21523:
                     if (!r.s) return -59;
@@ -2235,7 +2235,7 @@
                 if ("/" === i.charAt(0)) t = i;
                 else {
                   var o = -100 === e ? "/" : eF(e).path;
-                  if (0 == i.length) throw new eD(44);
+                  if (0 == i.length) throw new ew(44);
                   t = et(o + "/" + i)
                 }
                 var a = r ? e3() : 0;
@@ -2267,7 +2267,7 @@
                     g: {
                       value: t
                     }
-                  }), tS(this), e = tu(i, e = t.o), tc.hasOwnProperty(e) ? e9(`Tried to register registered instance: ${e}`) : tc[e] = this
+                  }), tI(this), e = tu(i, e = t.o), tc.hasOwnProperty(e) ? e9(`Tried to register registered instance: ${e}`) : tc[e] = this
                 }, o.__destruct = function() {
                   this === o && e9("Pass correct 'this' to __destruct"), tp(this);
                   var e = this.g.o;
@@ -2276,8 +2276,8 @@
               return tt(e)
             },
             _embind_finalize_value_object: function(e) {
-              var t = tI[e];
-              delete tI[e];
+              var t = tS[e];
+              delete tS[e];
               var n = t.Pa,
                 r = t.W,
                 i = t.eb;
@@ -2320,7 +2320,7 @@
             _embind_register_bigint: function() {},
             _embind_register_bool: function(e, t, n, r, i) {
               var o = tP(n);
-              tw(e, {
+              tD(e, {
                 name: t = to(t),
                 fromWireType: function(e) {
                   return !!e
@@ -2330,7 +2330,7 @@
                 },
                 argPackAdvance: 8,
                 readValueFromPointer: function(e) {
-                  if (1 === n) var r = I;
+                  if (1 === n) var r = S;
                   else if (2 === n) r = N;
                   else if (4 === n) r = C;
                   else throw TypeError("Unknown boolean type size: " + t);
@@ -2481,7 +2481,7 @@
               })
             },
             _embind_register_emval: function(e, t) {
-              tw(e, {
+              tD(e, {
                 name: t = to(t),
                 fromWireType: function(e) {
                   var t = te(e);
@@ -2497,7 +2497,7 @@
             },
             _embind_register_enum: function(e, t, n, r) {
               function i() {}
-              n = tP(n), t = to(t), i.values = {}, tw(e, {
+              n = tP(n), t = to(t), i.values = {}, tD(e, {
                 name: t,
                 constructor: i,
                 fromWireType: function(e) {
@@ -2523,7 +2523,7 @@
               }), e.values[n] = r, e[t] = r
             },
             _embind_register_float: function(e, t, n) {
-              n = tP(n), tw(e, {
+              n = tP(n), tD(e, {
                 name: t = to(t),
                 fromWireType: function(e) {
                   return e
@@ -2555,7 +2555,7 @@
                 return t >>> 0
               } : function(e, t) {
                 return t
-              }, tw(e, {
+              }, tD(e, {
                 name: t,
                 fromWireType: o,
                 toWireType: n,
@@ -2571,7 +2571,7 @@
                 return new i(t.buffer, t[e + 1], t[e])
               }
               var i = [Int8Array, Uint8Array, Int16Array, Uint16Array, Int32Array, Uint32Array, Float32Array, Float64Array][t];
-              tw(e, {
+              tD(e, {
                 name: n = to(n),
                 fromWireType: r,
                 argPackAdvance: 8,
@@ -2582,7 +2582,7 @@
             },
             _embind_register_std_string: function(e, t) {
               var n = "std::string" === (t = to(t));
-              tw(e, {
+              tD(e, {
                 name: t,
                 fromWireType: function(e) {
                   var t = R[e >> 2],
@@ -2631,7 +2631,7 @@
                 a = () => A,
                 s = 1;
               else 4 === t && (r = t8, i = t9, o = ne, a = () => R, s = 2);
-              tw(e, {
+              tD(e, {
                 name: n,
                 fromWireType: function(e) {
                   for (var n, i = R[e >> 2], o = a(), l = e + 4, c = 0; c <= i; ++c) {
@@ -2654,7 +2654,7 @@
               })
             },
             _embind_register_value_object: function(e, t, n, r, i, o) {
-              tI[e] = {
+              tS[e] = {
                 name: to(t),
                 Pa: tK(n, r),
                 W: tK(i, o),
@@ -2662,7 +2662,7 @@
               }
             },
             _embind_register_value_object_field: function(e, t, n, r, i, o, a, s, l, c) {
-              tI[e].eb.push({
+              tS[e].eb.push({
                 Sb: to(t),
                 Yb: n,
                 Wb: tK(r, i),
@@ -2673,7 +2673,7 @@
               })
             },
             _embind_register_void: function(e, t) {
-              tw(e, {
+              tD(e, {
                 fc: !0,
                 name: t = to(t),
                 argPackAdvance: 0,
@@ -2740,7 +2740,7 @@
             },
             emscripten_asm_const_int: (e, t, n) => {
               var r;
-              for (nl.length = 0, n >>= 2; r = T[t++];) n += 105 != r & n, nl.push(105 == r ? C[n] : D[n++ >> 1]), ++n;
+              for (nl.length = 0, n >>= 2; r = T[t++];) n += 105 != r & n, nl.push(105 == r ? C[n] : w[n++ >> 1]), ++n;
               return J[e].apply(null, nl)
             },
             emscripten_date_now: function() {
@@ -2773,8 +2773,8 @@
               var n = 0;
               return nu().forEach(function(r, i) {
                 var o = t + n;
-                for (i = R[e + 4 * i >> 2] = o, o = 0; o < r.length; ++o) I[i++ >> 0] = r.charCodeAt(o);
-                I[i >> 0] = 0, n += r.length + 1
+                for (i = R[e + 4 * i >> 2] = o, o = 0; o < r.length; ++o) S[i++ >> 0] = r.charCodeAt(o);
+                S[i >> 0] = 0, n += r.length + 1
               }), 0
             },
             environ_sizes_get: (e, t) => {
@@ -2788,7 +2788,7 @@
             fd_close: function(e) {
               try {
                 var t = eF(e);
-                if (null === t.X) throw new eD(8);
+                if (null === t.X) throw new ew(8);
                 t.Ma && (t.Ma = null);
                 try {
                   t.m.close && t.m.close(t)
@@ -2815,28 +2815,28 @@
                       u = s,
                       d = l,
                       f = o,
-                      _ = I;
-                    if (0 > d || 0 > f) throw new eD(28);
-                    if (null === c.X || 1 == (2097155 & c.flags)) throw new eD(8);
-                    if (16384 == (61440 & c.node.mode)) throw new eD(31);
-                    if (!c.m.read) throw new eD(28);
+                      _ = S;
+                    if (0 > d || 0 > f) throw new ew(28);
+                    if (null === c.X || 1 == (2097155 & c.flags)) throw new ew(8);
+                    if (16384 == (61440 & c.node.mode)) throw new ew(31);
+                    if (!c.m.read) throw new ew(28);
                     var p = void 0 !== f;
                     if (p) {
-                      if (!c.seekable) throw new eD(70)
+                      if (!c.seekable) throw new ew(70)
                     } else f = c.position;
                     var h = c.m.read(c, _, u, d, f);
                     p || (c.position += h);
-                    var g = h;
-                    if (0 > g) {
-                      var m = -1;
+                    var m = h;
+                    if (0 > m) {
+                      var g = -1;
                       break e
                     }
-                    if (t += g, g < l) break;
-                    void 0 !== o && (o += g)
+                    if (t += m, m < l) break;
+                    void 0 !== o && (o += m)
                   }
-                  m = t
+                  g = t
                 }
-                return R[r >> 2] = m,
+                return R[r >> 2] = g,
                 0
               }
               catch (e) {
@@ -2867,28 +2867,28 @@
                       u = s,
                       d = l,
                       f = o,
-                      _ = I;
-                    if (0 > d || 0 > f) throw new eD(28);
-                    if (null === c.X || 0 == (2097155 & c.flags)) throw new eD(8);
-                    if (16384 == (61440 & c.node.mode)) throw new eD(31);
-                    if (!c.m.write) throw new eD(28);
+                      _ = S;
+                    if (0 > d || 0 > f) throw new ew(28);
+                    if (null === c.X || 0 == (2097155 & c.flags)) throw new ew(8);
+                    if (16384 == (61440 & c.node.mode)) throw new ew(31);
+                    if (!c.m.write) throw new ew(28);
                     c.seekable && 1024 & c.flags && eJ(c, 0, 2);
                     var p = void 0 !== f;
                     if (p) {
-                      if (!c.seekable) throw new eD(70)
+                      if (!c.seekable) throw new ew(70)
                     } else f = c.position;
                     var h = c.m.write(c, _, u, d, f, void 0);
                     p || (c.position += h);
-                    var g = h;
-                    if (0 > g) {
-                      var m = -1;
+                    var m = h;
+                    if (0 > m) {
+                      var g = -1;
                       break e
                     }
-                    t += g, void 0 !== o && (o += g)
+                    t += m, void 0 !== o && (o += m)
                   }
-                  m = t
+                  g = t
                 }
-                return R[r >> 2] = m,
+                return R[r >> 2] = g,
                 0
               }
               catch (e) {
@@ -2900,7 +2900,7 @@
           };
           ! function() {
             function e(e) {
-              if (O = (S = e = e.exports).memory, L(), x = S.__indirect_function_table, k.unshift(S.__wasm_call_ctors), G--, o.monitorRunDependencies && o.monitorRunDependencies(G), 0 == G && (null !== B && (clearInterval(B), B = null), V)) {
+              if (O = (I = e = e.exports).memory, L(), x = I.__indirect_function_table, k.unshift(I.__wasm_call_ctors), G--, o.monitorRunDependencies && o.monitorRunDependencies(G), 0 == G && (null !== B && (clearInterval(B), B = null), V)) {
                 var t = V;
                 V = null, t()
               }
@@ -2919,18 +2919,18 @@
               e(t.instance)
             }).catch(i)
           }();
-          var nv = e => (nv = S.free)(e),
-            nb = e => (nb = S.malloc)(e),
-            ny = o._ma_device__on_notification_unlocked = e => (ny = o._ma_device__on_notification_unlocked = S.ma_device__on_notification_unlocked)(e);
-          o._ma_malloc_emscripten = (e, t) => (o._ma_malloc_emscripten = S.ma_malloc_emscripten)(e, t), o._ma_free_emscripten = (e, t) => (o._ma_free_emscripten = S.ma_free_emscripten)(e, t);
-          var nO = o._ma_device_process_pcm_frames_capture__webaudio = (e, t, n) => (nO = o._ma_device_process_pcm_frames_capture__webaudio = S.ma_device_process_pcm_frames_capture__webaudio)(e, t, n),
-            nS = o._ma_device_process_pcm_frames_playback__webaudio = (e, t, n) => (nS = o._ma_device_process_pcm_frames_playback__webaudio = S.ma_device_process_pcm_frames_playback__webaudio)(e, t, n),
-            nI = () => (nI = S.__errno_location)(),
-            nT = e => (nT = S.__getTypeName)(e);
+          var nv = e => (nv = I.free)(e),
+            nb = e => (nb = I.malloc)(e),
+            ny = o._ma_device__on_notification_unlocked = e => (ny = o._ma_device__on_notification_unlocked = I.ma_device__on_notification_unlocked)(e);
+          o._ma_malloc_emscripten = (e, t) => (o._ma_malloc_emscripten = I.ma_malloc_emscripten)(e, t), o._ma_free_emscripten = (e, t) => (o._ma_free_emscripten = I.ma_free_emscripten)(e, t);
+          var nO = o._ma_device_process_pcm_frames_capture__webaudio = (e, t, n) => (nO = o._ma_device_process_pcm_frames_capture__webaudio = I.ma_device_process_pcm_frames_capture__webaudio)(e, t, n),
+            nI = o._ma_device_process_pcm_frames_playback__webaudio = (e, t, n) => (nI = o._ma_device_process_pcm_frames_playback__webaudio = I.ma_device_process_pcm_frames_playback__webaudio)(e, t, n),
+            nS = () => (nS = I.__errno_location)(),
+            nT = e => (nT = I.__getTypeName)(e);
 
           function nN() {
             function e() {
-              if (!n && (n = !0, o.calledRun = !0, !w)) {
+              if (!n && (n = !0, o.calledRun = !0, !D)) {
                 if (o.noFSInit || ey || (ey = !0, e$(), o.stdin = o.stdin, o.stdout = o.stdout, o.stderr = o.stderr, o.stdin ? e0("stdin", o.stdin) : eq("/dev/tty", "/dev/stdin"), o.stdout ? e0("stdout", null, o.stdout) : eq("/dev/tty", "/dev/stdout"), o.stderr ? e0("stderr", null, o.stderr) : eq("/dev/tty1", "/dev/stderr"), eX("/dev/stdin", 0), eX("/dev/stdout", 1), eX("/dev/stderr", 1)), eP = !1, $(k), r(o), o.onRuntimeInitialized && o.onRuntimeInitialized(), o.postRun)
                   for ("function" == typeof o.postRun && (o.postRun = [o.postRun]); o.postRun.length;) {
                     var e = o.postRun.shift();
@@ -2949,7 +2949,7 @@
               }, 1)) : e())
             }
           }
-          if (o.__embind_initialize_bindings = () => (o.__embind_initialize_bindings = S._embind_initialize_bindings)(), o.dynCall_iiji = (e, t, n, r, i) => (o.dynCall_iiji = S.dynCall_iiji)(e, t, n, r, i), o.dynCall_jiji = (e, t, n, r, i) => (o.dynCall_jiji = S.dynCall_jiji)(e, t, n, r, i), o.dynCall_iiiji = (e, t, n, r, i, a) => (o.dynCall_iiiji = S.dynCall_iiiji)(e, t, n, r, i, a), o.dynCall_iij = (e, t, n, r) => (o.dynCall_iij = S.dynCall_iij)(e, t, n, r), o.dynCall_jii = (e, t, n) => (o.dynCall_jii = S.dynCall_jii)(e, t, n), o.dynCall_viijii = (e, t, n, r, i, a, s) => (o.dynCall_viijii = S.dynCall_viijii)(e, t, n, r, i, a, s), o.dynCall_iiiiij = (e, t, n, r, i, a, s) => (o.dynCall_iiiiij = S.dynCall_iiiiij)(e, t, n, r, i, a, s), o.dynCall_iiiiijj = (e, t, n, r, i, a, s, l, c) => (o.dynCall_iiiiijj = S.dynCall_iiiiijj)(e, t, n, r, i, a, s, l, c), o.dynCall_iiiiiijj = (e, t, n, r, i, a, s, l, c, u) => (o.dynCall_iiiiiijj = S.dynCall_iiiiiijj)(e, t, n, r, i, a, s, l, c, u), V = function e() {
+          if (o.__embind_initialize_bindings = () => (o.__embind_initialize_bindings = I._embind_initialize_bindings)(), o.dynCall_iiji = (e, t, n, r, i) => (o.dynCall_iiji = I.dynCall_iiji)(e, t, n, r, i), o.dynCall_jiji = (e, t, n, r, i) => (o.dynCall_jiji = I.dynCall_jiji)(e, t, n, r, i), o.dynCall_iiiji = (e, t, n, r, i, a) => (o.dynCall_iiiji = I.dynCall_iiiji)(e, t, n, r, i, a), o.dynCall_iij = (e, t, n, r) => (o.dynCall_iij = I.dynCall_iij)(e, t, n, r), o.dynCall_jii = (e, t, n) => (o.dynCall_jii = I.dynCall_jii)(e, t, n), o.dynCall_viijii = (e, t, n, r, i, a, s) => (o.dynCall_viijii = I.dynCall_viijii)(e, t, n, r, i, a, s), o.dynCall_iiiiij = (e, t, n, r, i, a, s) => (o.dynCall_iiiiij = I.dynCall_iiiiij)(e, t, n, r, i, a, s), o.dynCall_iiiiijj = (e, t, n, r, i, a, s, l, c) => (o.dynCall_iiiiijj = I.dynCall_iiiiijj)(e, t, n, r, i, a, s, l, c), o.dynCall_iiiiiijj = (e, t, n, r, i, a, s, l, c, u) => (o.dynCall_iiiiiijj = I.dynCall_iiiiiijj)(e, t, n, r, i, a, s, l, c, u), V = function e() {
               n || nN(), n || (V = e)
             }, o.preInit)
             for ("function" == typeof o.preInit && (o.preInit = [o.preInit]); 0 < o.preInit.length;) o.preInit.pop()();
@@ -3047,13 +3047,13 @@
             p = void 0 === _ ? 1 : _;
           if (!t || !a.length || !s || !l || !n || "undefined" == typeof window) return null;
           var h = null,
-            g = !1,
-            m = (function(e) {
-              if (g && e instanceof MouseEvent) {
-                "mouseup" == e.type && (g = !1);
+            m = !1,
+            g = (function(e) {
+              if (m && e instanceof MouseEvent) {
+                "mouseup" == e.type && (m = !1);
                 return
               }
-              g = f && "touchend" === e.type && "touchstart" === h, h = e.type;
+              m = f && "touchend" === e.type && "touchstart" === h, h = e.type;
               var t = e.currentTarget.getBoundingClientRect(),
                 r = i(e, f),
                 o = r.clientX,
@@ -3061,22 +3061,22 @@
               if (o || s) {
                 var d = o - t.left,
                   _ = s - t.top,
-                  m = l.computeAlignment(c, u, {
+                  g = l.computeAlignment(c, u, {
                     minX: 0,
                     minY: 0,
                     maxX: t.width,
                     maxY: t.height
                   }, n.bounds, p),
                   E = new l.Mat2D;
-                m.invert(E);
+                g.invert(E);
                 var v = new l.Vec2D(d, _),
                   b = l.mapXY(E, v),
                   y = b.x(),
                   O = b.y();
-                switch (b.delete(), E.delete(), v.delete(), m.delete(), e.type) {
+                switch (b.delete(), E.delete(), v.delete(), g.delete(), e.type) {
                   case "mouseout":
-                    for (var S = 0, I = a; S < I.length; S++) {
-                      var T = I[S];
+                    for (var I = 0, S = a; I < S.length; I++) {
+                      var T = S[I];
                       T.pointerMove(y, O)
                     }
                     break;
@@ -3097,20 +3097,20 @@
                     break;
                   case "touchend":
                   case "mouseup":
-                    for (var P = 0, D = a; P < D.length; P++) {
-                      var T = D[P];
+                    for (var P = 0, w = a; P < w.length; P++) {
+                      var T = w[P];
                       T.pointerUp(y, O)
                     }
                 }
               }
             }).bind(r);
-          return t.addEventListener("mouseover", m), t.addEventListener("mouseout", m), t.addEventListener("mousemove", m, !0), t.addEventListener("mousedown", m), t.addEventListener("mouseup", m), t.addEventListener("touchmove", m, {
+          return t.addEventListener("mouseover", g), t.addEventListener("mouseout", g), t.addEventListener("mousemove", g, !0), t.addEventListener("mousedown", g), t.addEventListener("mouseup", g), t.addEventListener("touchmove", g, {
               passive: f
-            }), t.addEventListener("touchstart", m, {
+            }), t.addEventListener("touchstart", g, {
               passive: f
-            }), t.addEventListener("touchend", m),
+            }), t.addEventListener("touchend", g),
             function() {
-              t.removeEventListener("mouseover", m), t.removeEventListener("mouseout", m), t.removeEventListener("mousemove", m, !0), t.removeEventListener("mousedown", m), t.removeEventListener("mouseup", m), t.removeEventListener("touchmove", m), t.removeEventListener("touchstart", m), t.removeEventListener("touchend", m)
+              t.removeEventListener("mouseover", g), t.removeEventListener("mouseout", g), t.removeEventListener("mousemove", g, !0), t.removeEventListener("mousedown", g), t.removeEventListener("mouseup", g), t.removeEventListener("touchmove", g), t.removeEventListener("touchstart", g), t.removeEventListener("touchend", g)
             }
         }
     }, (e, t, n) => {
@@ -3319,14 +3319,14 @@
           }
         }
       },
-      g = function(e) {
+      m = function(e) {
         function t() {
           var t = null !== e && e.apply(this, arguments) || this;
           return t.isHandledError = !0, t
         }
         return _(t, e), t
       }(Error),
-      m = function(e) {
+      g = function(e) {
         return e && e.isHandledError ? e.message : "Problem loading file; may be corrupt!"
       };
     (function(e) {
@@ -3489,7 +3489,7 @@
           void 0 === r && (r = []), void 0 === i && (i = []), this.runtime = e, this.artboard = t, this.eventManager = n, this.animations = r, this.stateMachines = i
         }
         return e.prototype.add = function(e, t, n) {
-          if (void 0 === n && (n = !0), 0 === (e = w(e)).length) this.animations.forEach(function(e) {
+          if (void 0 === n && (n = !0), 0 === (e = D(e)).length) this.animations.forEach(function(e) {
             return e.playing = t
           }), this.stateMachines.forEach(function(e) {
             return e.playing = t
@@ -3595,7 +3595,7 @@
           configurable: !0
         }), e.prototype.stop = function(e) {
           var t = this;
-          e = w(e);
+          e = D(e);
           var n = [];
           if (0 === e.length) n = this.animations.map(function(e) {
             return e.name
@@ -3696,7 +3696,7 @@
     function(e) {
       e.OneShot = "oneshot", e.Loop = "loop", e.PingPong = "pingpong"
     }(s || (s = {}));
-    var S = function() {
+    var I = function() {
         function e(e) {
           void 0 === e && (e = []), this.listeners = e
         }
@@ -3727,7 +3727,7 @@
           })
         }, e
       }(),
-      I = function() {
+      S = function() {
         function e(e) {
           this.eventManager = e, this.queue = []
         }
@@ -3846,7 +3846,7 @@
           enumerable: !1,
           configurable: !0
         }), t
-      }(S)),
+      }(I)),
       N = function() {
         function e() {}
         return e.prototype.observe = function() {}, e.prototype.unobserve = function() {}, e.prototype.disconnect = function() {}, e
@@ -3874,7 +3874,7 @@
       }()),
       R = function() {
         function e(e) {
-          this.enableRiveAssetCDN = !0, this.referenceCount = 0, this.destroyed = !1, this.src = e.src, this.buffer = e.buffer, e.assetLoader && (this.assetLoader = e.assetLoader), this.enableRiveAssetCDN = "boolean" != typeof e.enableRiveAssetCDN || e.enableRiveAssetCDN, this.eventManager = new S, e.onLoad && this.on(a.Load, e.onLoad), e.onLoadError && this.on(a.LoadError, e.onLoadError)
+          this.enableRiveAssetCDN = !0, this.referenceCount = 0, this.destroyed = !1, this.src = e.src, this.buffer = e.buffer, e.assetLoader && (this.assetLoader = e.assetLoader), this.enableRiveAssetCDN = "boolean" != typeof e.enableRiveAssetCDN || e.enableRiveAssetCDN, this.eventManager = new I, e.onLoad && this.on(a.Load, e.onLoad), e.onLoadError && this.on(a.LoadError, e.onLoadError)
         }
         return e.prototype.initData = function() {
           return p(this, void 0, void 0, function() {
@@ -3883,7 +3883,7 @@
               switch (o.label) {
                 case 0:
                   if (!this.src) return [3, 2];
-                  return t = this, [4, D(this.src)];
+                  return t = this, [4, w(this.src)];
                 case 1:
                   t.buffer = o.sent(), o.label = 2;
                 case 2:
@@ -3946,7 +3946,7 @@
           this.loaded = !1, this.destroyed = !1, this._observed = null, this.readyForPlaying = !1, this.artboard = null, this.eventCleanup = null, this.shouldDisableRiveListeners = !1, this.automaticallyHandleEvents = !1, this.enableRiveAssetCDN = !0, this._volume = 1, this._artboardWidth = void 0, this._artboardHeight = void 0, this._devicePixelRatioUsed = 1, this._hasZeroSize = !1, this._audioEventListener = null, this._boundDraw = null, this.durations = [], this.frameTimes = [], this.frameCount = 0, this.isTouchScrollEnabled = !1, this.onCanvasResize = function(e) {
             var t = n._hasZeroSize !== e;
             n._hasZeroSize = e, e ? n._layout.maxX && n._layout.maxY || n.resizeToCanvas() : t && n.resizeDrawingSurfaceToCanvas()
-          }, this.renderSecondTimer = 0, this._boundDraw = this.draw.bind(this), this.eventTarget = e.eventTarget, this.canvas = e.canvas, e.canvas.constructor === HTMLCanvasElement && (this._observed = C.add(this.canvas, this.onCanvasResize)), this.src = e.src, this.buffer = e.buffer, this.riveFile = e.riveFile, this.layout = null !== (t = e.layout) && void 0 !== t ? t : new E, this.shouldDisableRiveListeners = !!e.shouldDisableRiveListeners, this.isTouchScrollEnabled = !!e.isTouchScrollEnabled, this.automaticallyHandleEvents = !!e.automaticallyHandleEvents, this.enableRiveAssetCDN = void 0 === e.enableRiveAssetCDN || e.enableRiveAssetCDN, this.eventManager = new S, e.onLoad && this.on(a.Load, e.onLoad), e.onLoadError && this.on(a.LoadError, e.onLoadError), e.onPlay && this.on(a.Play, e.onPlay), e.onPause && this.on(a.Pause, e.onPause), e.onStop && this.on(a.Stop, e.onStop), e.onLoop && this.on(a.Loop, e.onLoop), e.onStateChange && this.on(a.StateChange, e.onStateChange), e.onAdvance && this.on(a.Advance, e.onAdvance), e.onload && !e.onLoad && this.on(a.Load, e.onload), e.onloaderror && !e.onLoadError && this.on(a.LoadError, e.onloaderror), e.onplay && !e.onPlay && this.on(a.Play, e.onplay), e.onpause && !e.onPause && this.on(a.Pause, e.onpause), e.onstop && !e.onStop && this.on(a.Stop, e.onstop), e.onloop && !e.onLoop && this.on(a.Loop, e.onloop), e.onstatechange && !e.onStateChange && this.on(a.StateChange, e.onstatechange), e.assetLoader && (this.assetLoader = e.assetLoader), this.taskQueue = new I(this.eventManager), this.init({
+          }, this.renderSecondTimer = 0, this._boundDraw = this.draw.bind(this), this.eventTarget = e.eventTarget, this.canvas = e.canvas, e.canvas.constructor === HTMLCanvasElement && (this._observed = C.add(this.canvas, this.onCanvasResize)), this.src = e.src, this.buffer = e.buffer, this.riveFile = e.riveFile, this.layout = null !== (t = e.layout) && void 0 !== t ? t : new E, this.shouldDisableRiveListeners = !!e.shouldDisableRiveListeners, this.isTouchScrollEnabled = !!e.isTouchScrollEnabled, this.automaticallyHandleEvents = !!e.automaticallyHandleEvents, this.enableRiveAssetCDN = void 0 === e.enableRiveAssetCDN || e.enableRiveAssetCDN, this.eventManager = new I, e.onLoad && this.on(a.Load, e.onLoad), e.onLoadError && this.on(a.LoadError, e.onLoadError), e.onPlay && this.on(a.Play, e.onPlay), e.onPause && this.on(a.Pause, e.onPause), e.onStop && this.on(a.Stop, e.onStop), e.onLoop && this.on(a.Loop, e.onLoop), e.onStateChange && this.on(a.StateChange, e.onStateChange), e.onAdvance && this.on(a.Advance, e.onAdvance), e.onload && !e.onLoad && this.on(a.Load, e.onload), e.onloaderror && !e.onLoadError && this.on(a.LoadError, e.onloaderror), e.onplay && !e.onPlay && this.on(a.Play, e.onplay), e.onpause && !e.onPause && this.on(a.Pause, e.onpause), e.onstop && !e.onStop && this.on(a.Stop, e.onstop), e.onloop && !e.onLoop && this.on(a.Loop, e.onloop), e.onstatechange && !e.onStateChange && this.on(a.StateChange, e.onstatechange), e.assetLoader && (this.assetLoader = e.assetLoader), this.taskQueue = new S(this.eventManager), this.init({
             src: this.src,
             buffer: this.buffer,
             riveFile: this.riveFile,
@@ -3974,9 +3974,9 @@
             d = e.useOffscreenRenderer,
             f = void 0 !== d && d;
           if (!this.destroyed) {
-            if (this.src = r, this.buffer = i, this.riveFile = o, !this.src && !this.buffer && !this.riveFile) throw new g(t.missingErrorMessage);
-            var _ = w(a),
-              p = w(s);
+            if (this.src = r, this.buffer = i, this.riveFile = o, !this.src && !this.buffer && !this.riveFile) throw new m(t.missingErrorMessage);
+            var _ = D(a),
+              p = D(s);
             this.loaded = !1, this.readyForPlaying = !1, v.awaitInstance().then(function(e) {
               !n.destroyed && (n.runtime = e, n.removeRiveListeners(), n.deleteRiveRenderer(), n.renderer = n.runtime.makeRenderer(n.canvas, f), n.canvas.width || n.canvas.height || n.resizeDrawingSurfaceToCanvas(), n.initData(l, _, p, u).then(function() {
                 return n.setupRiveListeners()
@@ -4038,13 +4038,13 @@
                 case 1:
                   l.sent(), l.label = 2;
                 case 2:
-                  if (!this.riveFile) throw new g(t.cleanupErrorMessage);
+                  if (!this.riveFile) throw new m(t.cleanupErrorMessage);
                   return this.file = this.riveFile.getInstance(), this.initArtboard(e, n, r, i), this.initArtboardSize(), this.initializeAudio(), this.loaded = !0, this.eventManager.fire({
                     type: a.Load,
                     data: null !== (s = this.src) && void 0 !== s ? s : "buffer"
                   }), this.readyForPlaying = !0, this.taskQueue.process(), this.drawFrame(), [2, Promise.resolve()];
                 case 3:
-                  return console.warn(o = m(l.sent())), this.eventManager.fire({
+                  return console.warn(o = g(l.sent())), this.eventManager.fire({
                     type: a.LoadError,
                     data: o
                   }), [2, Promise.reject(o)];
@@ -4101,16 +4101,16 @@
             var p = _[d],
               h = p.reportedEventCount();
             if (h)
-              for (var g = 0; g < h; g++) {
-                var m = p.reportedEventAt(g);
-                if (m) {
-                  if (m.type === o.OpenUrl) {
+              for (var m = 0; m < h; m++) {
+                var g = p.reportedEventAt(m);
+                if (g) {
+                  if (g.type === o.OpenUrl) {
                     if (this.eventManager.fire({
                         type: a.RiveEvent,
-                        data: m
+                        data: g
                       }), this.automaticallyHandleEvents) {
                       var E = document.createElement("a"),
-                        v = m,
+                        v = g,
                         b = v.url,
                         y = v.target,
                         O = (0, f.sanitizeUrl)(b);
@@ -4118,17 +4118,17 @@
                     }
                   } else this.eventManager.fire({
                     type: a.RiveEvent,
-                    data: m
+                    data: g
                   })
                 }
               }
             p.advanceAndApply(r)
           }
           0 == this.animator.stateMachines.length && this.artboard.advance(r);
-          var S = this.renderer;
-          S.clear(), S.save(), this.alignRenderer(), this._hasZeroSize || this.artboard.draw(S), S.restore(), S.flush(), this.animator.handleLooping(), this.animator.handleStateChanges(), this.animator.handleAdvancing(r), this.frameCount++;
-          var I = performance.now();
-          for (this.frameTimes.push(I), this.durations.push(I - n); this.frameTimes[0] <= I - 1e3;) this.frameTimes.shift(), this.durations.shift();
+          var I = this.renderer;
+          I.clear(), I.save(), this.alignRenderer(), this._hasZeroSize || this.artboard.draw(I), I.restore(), I.flush(), this.animator.handleLooping(), this.animator.handleStateChanges(), this.animator.handleAdvancing(r), this.frameCount++;
+          var S = performance.now();
+          for (this.frameTimes.push(S), this.durations.push(S - n); this.frameTimes[0] <= S - 1e3;) this.frameTimes.shift(), this.durations.shift();
           this.animator.isPlaying ? this.startRendering() : this.animator.isPaused ? this.lastRenderTime = 0 : this.animator.isStopped && (this.lastRenderTime = 0)
         }, t.prototype.alignRenderer = function() {
           var e = this,
@@ -4187,7 +4187,7 @@
           n && (n.text = t)
         }, t.prototype.play = function(e, t) {
           var n = this;
-          if (e = w(e), !this.readyForPlaying) {
+          if (e = D(e), !this.readyForPlaying) {
             this.taskQueue.add({
               action: function() {
                 return n.play(e, t)
@@ -4198,7 +4198,7 @@
           this.animator.play(e), this.eventCleanup && this.eventCleanup(), this.setupRiveListeners(), this.startRendering()
         }, t.prototype.pause = function(e) {
           var t = this;
-          if (e = w(e), !this.readyForPlaying) {
+          if (e = D(e), !this.readyForPlaying) {
             this.taskQueue.add({
               action: function() {
                 return t.pause(e)
@@ -4209,7 +4209,7 @@
           this.eventCleanup && this.eventCleanup(), this.animator.pause(e)
         }, t.prototype.scrub = function(e, t) {
           var n = this;
-          if (e = w(e), !this.readyForPlaying) {
+          if (e = D(e), !this.readyForPlaying) {
             this.taskQueue.add({
               action: function() {
                 return n.scrub(e, t)
@@ -4220,7 +4220,7 @@
           this.animator.scrub(e, t || 0), this.drawFrame()
         }, t.prototype.stop = function(e) {
           var t = this;
-          if (e = w(e), !this.readyForPlaying) {
+          if (e = D(e), !this.readyForPlaying) {
             this.taskQueue.add({
               action: function() {
                 return t.stop(e)
@@ -4231,8 +4231,8 @@
           this.animator && this.animator.stop(e), this.eventCleanup && this.eventCleanup()
         }, t.prototype.reset = function(e) {
           var t, n = null == e ? void 0 : e.artboard,
-            r = w(null == e ? void 0 : e.animations),
-            i = w(null == e ? void 0 : e.stateMachines),
+            r = D(null == e ? void 0 : e.animations),
+            i = D(null == e ? void 0 : e.stateMachines),
             o = null !== (t = null == e ? void 0 : e.autoplay) && void 0 !== t && t;
           this.cleanupInstances(), this.initArtboard(n, r, i, o), this.taskQueue.process()
         }, t.prototype.load = function(e) {
@@ -4520,7 +4520,7 @@
           configurable: !0
         }), t.missingErrorMessage = "Rive source file or data buffer required", t.cleanupErrorMessage = "Attempt to use file after calling cleanup.", t
       }(),
-      D = function(e) {
+      w = function(e) {
         return p(void 0, void 0, void 0, function() {
           return h(this, function(t) {
             switch (t.label) {
@@ -4534,12 +4534,12 @@
           })
         })
       },
-      w = function(e) {
+      D = function(e) {
         return "string" == typeof e ? [e] : e instanceof Array ? e : []
       },
       L = {
-        EventManager: S,
-        TaskQueueManager: I
+        EventManager: I,
+        TaskQueueManager: S
       },
       x = function(e) {
         return new Promise(function(t) {

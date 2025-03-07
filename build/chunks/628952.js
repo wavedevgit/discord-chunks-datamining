@@ -17,8 +17,8 @@ var i = n(120356),
   _ = n(583434),
   p = n(905357),
   h = n(473608),
-  g = n(388032),
-  m = n(305026);
+  m = n(388032),
+  g = n(305026);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -67,27 +67,27 @@ let O = e => {
     shouldDisplayHeader: b = !1,
     className: O
   } = e, {
-    product: S
+    product: I
   } = (0, _.T)(t), {
-    giftRecipient: I,
+    giftRecipient: S,
     giftRecipientError: T
-  } = (0, c.wD)(), N = (0, s.e7)([f.default], () => f.default.getCurrentUser()), A = (0, p.k)(S);
-  if (null == S) return null;
-  let [C] = S.items, R = () => C.type === a.Z.AVATAR_DECORATION ? g.NW.string(g.t["7v0T9P"]) : C.type === a.Z.PROFILE_EFFECT ? g.NW.string(g.t.wR5wOj) : null, P = null != I && I.id !== (null == N ? void 0 : N.id), D = () => {
+  } = (0, c.wD)(), N = (0, s.e7)([f.default], () => f.default.getCurrentUser()), A = (0, p.k)(I);
+  if (null == I) return null;
+  let [C] = I.items, R = () => C.type === a.Z.AVATAR_DECORATION ? m.NW.string(m.t["7v0T9P"]) : C.type === a.Z.PROFILE_EFFECT ? m.NW.string(m.t.wR5wOj) : null, P = null != S && S.id !== (null == N ? void 0 : N.id), w = () => {
     null != t && null != E && E(t)
   };
   return (0, r.jsxs)("div", {
     className: O,
     children: [b && (0, r.jsxs)("div", {
-      className: m.previewTitleContainer,
+      className: g.previewTitleContainer,
       children: [(0, r.jsx)(l.vwX, {
-        className: m.previewTitle,
-        children: g.NW.string(g.t.PpoJzs)
+        className: g.previewTitle,
+        children: m.NW.string(m.t.PpoJzs)
       }), P && (0, r.jsx)(l.yRy, {
-        preload: () => (0, d.Z)(I.id, I.getAvatarURL(null, 80)),
+        preload: () => (0, d.Z)(S.id, S.getAvatarURL(null, 80)),
         renderPopout: e => (0, r.jsx)(u.Z, y(v({}, e), {
-          user: I,
-          pendingAvatar: I.getAvatarURL(null, (0, l.pxk)(l.EFr.SIZE_80)),
+          user: S,
+          pendingAvatar: S.getAvatarURL(null, (0, l.pxk)(l.EFr.SIZE_80)),
           pendingAvatarDecoration: C.type === a.Z.AVATAR_DECORATION ? C : null,
           pendingProfileEffectId: C.type === a.Z.PROFILE_EFFECT ? C.id : null,
           canUsePremiumCustomization: !0,
@@ -96,28 +96,28 @@ let O = e => {
         align: "center",
         position: "right",
         children: e => (0, r.jsx)(l.P3F, y(v({}, e), {
-          className: m.previewLink,
+          className: g.previewLink,
           children: (0, r.jsx)(l.Text, {
             variant: "text-xs/medium",
             color: "text-link",
-            children: g.NW.string(g.t["2GnJQE"])
+            children: m.NW.string(m.t["2GnJQE"])
           })
         }))
-      }, I.id)]
+      }, S.id)]
     }), (0, r.jsxs)(l.P3F, {
       tag: "div",
-      onClick: D,
-      className: o()(m.previewContainer, {
-        [m.previewContainerSelected]: n && null == T,
-        [m.previewContainerError]: n && null != T
+      onClick: w,
+      className: o()(g.previewContainer, {
+        [g.previewContainerSelected]: n && null == T,
+        [g.previewContainerError]: n && null != T
       }),
       children: [(0, r.jsxs)("div", {
-        className: m.giftInfoContainer,
+        className: g.giftInfoContainer,
         children: [(0, r.jsx)(h.O, {
-          product: S,
+          product: I,
           fallbackLabel: null
         }), (0, r.jsxs)("div", {
-          className: m.previewTextContainer,
+          className: g.previewTextContainer,
           children: [(0, r.jsx)(l.Text, {
             variant: "text-md/semibold",
             children: A
@@ -131,7 +131,7 @@ let O = e => {
           children: i
         })]
       }), n && null != T && (0, r.jsx)("div", {
-        className: m.recipientError,
+        className: g.recipientError,
         children: (0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "status-danger-background",

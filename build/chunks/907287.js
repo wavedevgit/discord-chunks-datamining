@@ -15,23 +15,23 @@ function a(e, t, n, a, s, l) {
   var p = l.get(e),
     h = l.get(t);
   if (p && h) return p == t && h == e;
-  var g = !0;
+  var m = !0;
   l.set(e, t), l.set(t, e);
-  for (var m = c; ++f < d;) {
+  for (var g = c; ++f < d;) {
     var E = e[_ = u[f]],
       v = t[_];
     if (a) var b = c ? a(v, E, _, t, e, l) : a(E, v, _, e, t, l);
     if (!(void 0 === b ? E === v || s(E, v, n, a, l) : b)) {
-      g = !1;
+      m = !1;
       break
     }
-    m || (m = "constructor" == _)
+    g || (g = "constructor" == _)
   }
-  if (g && !m) {
+  if (m && !g) {
     var y = e.constructor,
       O = t.constructor;
-    y != O && "constructor" in e && "constructor" in t && !("function" == typeof y && y instanceof y && "function" == typeof O && O instanceof O) && (g = !1)
+    y != O && "constructor" in e && "constructor" in t && !("function" == typeof y && y instanceof y && "function" == typeof O && O instanceof O) && (m = !1)
   }
-  return l.delete(e), l.delete(t), g
+  return l.delete(e), l.delete(t), m
 }
 e.exports = a

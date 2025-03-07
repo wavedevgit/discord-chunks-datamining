@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.r(t), n.d(t, {
-  closeUserProfileModal: () => g,
+  closeUserProfileModal: () => m,
   openUserProfileModal: () => h
 });
 var r = n(259443),
@@ -39,25 +39,25 @@ async function h(e) {
     joinRequestId: u,
     section: _,
     subsection: h,
-    friendToken: g,
-    showGuildProfile: m,
+    friendToken: m,
+    showGuildProfile: g,
     analyticsLocation: E,
     sourceAnalyticsLocations: v,
     appContext: b
   } = e, y = c.default.getUser(t);
   p(t), null == y ? await (0, a.In)(t, {
     type: "modal",
-    guildId: m && null != n ? n : void 0,
+    guildId: g && null != n ? n : void 0,
     withMutualGuilds: !0,
     withMutualFriends: !0,
-    friendToken: g,
+    friendToken: m,
     joinRequestId: u
   }) : (0, d.Z)(y.id, y.getAvatarURL(void 0, f), {
     type: "modal",
-    guildId: m && null != n ? n : void 0,
+    guildId: g && null != n ? n : void 0,
     withMutualGuilds: !0,
     withMutualFriends: !0,
-    friendToken: g,
+    friendToken: m,
     joinRequestId: u
   }), o.Z.dispatch({
     type: "USER_PROFILE_MODAL_OPEN",
@@ -69,15 +69,15 @@ async function h(e) {
     sessionId: null != l ? l : void 0,
     section: _,
     subsection: h,
-    friendToken: g,
-    showGuildProfile: m,
+    friendToken: m,
+    showGuildProfile: g,
     analyticsLocation: E,
     sourceAnalyticsLocations: v,
     appContext: b
   })
 }
 
-function g() {
+function m() {
   o.Z.dispatch({
     type: "USER_PROFILE_MODAL_CLOSE"
   })

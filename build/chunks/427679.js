@@ -70,25 +70,25 @@ function h(e) {
   d(t.guild_id, [t])
 }
 
-function g(e, t) {
+function m(e, t) {
   var n;
   if (delete u[t], null == e) return;
   let r = l({}, null !== (n = c[e]) && void 0 !== n ? n : {});
   delete r[t], c[e] = r
 }
 
-function m(e) {
+function g(e) {
   let {
     instance: t
   } = e;
-  g(t.guild_id, t.channel_id)
+  m(t.guild_id, t.channel_id)
 }
 
 function E(e) {
   let {
     channel: t
   } = e;
-  g(t.guild_id, t.id)
+  m(t.guild_id, t.id)
 }
 
 function v() {
@@ -120,7 +120,7 @@ let y = new b(o.Z, {
   GUILD_DELETE: p,
   STAGE_INSTANCE_CREATE: h,
   STAGE_INSTANCE_UPDATE: h,
-  STAGE_INSTANCE_DELETE: m,
+  STAGE_INSTANCE_DELETE: g,
   CHANNEL_DELETE: E,
   LOGOUT: v
 })

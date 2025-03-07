@@ -72,17 +72,17 @@ function t(e) {
       }],
       relevance: 0
     },
-    g = ["false", "null", "true"],
-    m = ["__CLASS__", "__DIR__", "__FILE__", "__FUNCTION__", "__COMPILER_HALT_OFFSET__", "__LINE__", "__METHOD__", "__NAMESPACE__", "__TRAIT__", "die", "echo", "exit", "include", "include_once", "print", "require", "require_once", "array", "abstract", "and", "as", "binary", "bool", "boolean", "break", "callable", "case", "catch", "class", "clone", "const", "continue", "declare", "default", "do", "double", "else", "elseif", "empty", "enddeclare", "endfor", "endforeach", "endif", "endswitch", "endwhile", "enum", "eval", "extends", "final", "finally", "float", "for", "foreach", "from", "global", "goto", "if", "implements", "instanceof", "insteadof", "int", "integer", "interface", "isset", "iterable", "list", "match|0", "mixed", "new", "never", "object", "or", "private", "protected", "public", "readonly", "real", "return", "string", "switch", "throw", "trait", "try", "unset", "use", "var", "void", "while", "xor", "yield"],
+    m = ["false", "null", "true"],
+    g = ["__CLASS__", "__DIR__", "__FILE__", "__FUNCTION__", "__COMPILER_HALT_OFFSET__", "__LINE__", "__METHOD__", "__NAMESPACE__", "__TRAIT__", "die", "echo", "exit", "include", "include_once", "print", "require", "require_once", "array", "abstract", "and", "as", "binary", "bool", "boolean", "break", "callable", "case", "catch", "class", "clone", "const", "continue", "declare", "default", "do", "double", "else", "elseif", "empty", "enddeclare", "endfor", "endforeach", "endif", "endswitch", "endwhile", "enum", "eval", "extends", "final", "finally", "float", "for", "foreach", "from", "global", "goto", "if", "implements", "instanceof", "insteadof", "int", "integer", "interface", "isset", "iterable", "list", "match|0", "mixed", "new", "never", "object", "or", "private", "protected", "public", "readonly", "real", "return", "string", "switch", "throw", "trait", "try", "unset", "use", "var", "void", "while", "xor", "yield"],
     E = ["Error|0", "AppendIterator", "ArgumentCountError", "ArithmeticError", "ArrayIterator", "ArrayObject", "AssertionError", "BadFunctionCallException", "BadMethodCallException", "CachingIterator", "CallbackFilterIterator", "CompileError", "Countable", "DirectoryIterator", "DivisionByZeroError", "DomainException", "EmptyIterator", "ErrorException", "Exception", "FilesystemIterator", "FilterIterator", "GlobIterator", "InfiniteIterator", "InvalidArgumentException", "IteratorIterator", "LengthException", "LimitIterator", "LogicException", "MultipleIterator", "NoRewindIterator", "OutOfBoundsException", "OutOfRangeException", "OuterIterator", "OverflowException", "ParentIterator", "ParseError", "RangeException", "RecursiveArrayIterator", "RecursiveCachingIterator", "RecursiveCallbackFilterIterator", "RecursiveDirectoryIterator", "RecursiveFilterIterator", "RecursiveIterator", "RecursiveIteratorIterator", "RecursiveRegexIterator", "RecursiveTreeIterator", "RegexIterator", "RuntimeException", "SeekableIterator", "SplDoublyLinkedList", "SplFileInfo", "SplFileObject", "SplFixedArray", "SplHeap", "SplMaxHeap", "SplMinHeap", "SplObjectStorage", "SplObserver", "SplPriorityQueue", "SplQueue", "SplStack", "SplSubject", "SplTempFileObject", "TypeError", "UnderflowException", "UnexpectedValueException", "UnhandledMatchError", "ArrayAccess", "BackedEnum", "Closure", "Fiber", "Generator", "Iterator", "IteratorAggregate", "Serializable", "Stringable", "Throwable", "Traversable", "UnitEnum", "WeakReference", "WeakMap", "Directory", "__PHP_Incomplete_Class", "parent", "php_user_filter", "self", "static", "stdClass"],
     v = {
-      keyword: m,
+      keyword: g,
       literal: (e => {
         let t = [];
         return e.forEach(e => {
           t.push(e), e.toLowerCase() === e ? t.push(e.toUpperCase()) : t.push(e.toLowerCase())
         }), t
-      })(g),
+      })(m),
       built_in: E
     },
     b = e => e.map(e => e.replace(/\|\d+$/, "")),
@@ -96,7 +96,7 @@ function t(e) {
       }]
     },
     O = t.concat(r, "\\b(?!\\()"),
-    S = {
+    I = {
       variants: [{
         match: [t.concat(/::/, t.lookahead(/(?!class\b)/)), O],
         scope: {
@@ -126,7 +126,7 @@ function t(e) {
         }
       }]
     },
-    I = {
+    S = {
       scope: "attr",
       match: t.concat(r, t.lookahead(":"), t.lookahead(/(?!::)/))
     },
@@ -135,32 +135,32 @@ function t(e) {
       begin: /\(/,
       end: /\)/,
       keywords: v,
-      contains: [I, a, S, e.C_BLOCK_COMMENT_MODE, p, h, y]
+      contains: [S, a, I, e.C_BLOCK_COMMENT_MODE, p, h, y]
     },
     N = {
       relevance: 0,
-      match: [/\b/, t.concat("(?!fn\\b|function\\b|", b(m).join("\\b|"), "|", b(E).join("\\b|"), "\\b)"), r, t.concat(_, "*"), t.lookahead(/(?=\()/)],
+      match: [/\b/, t.concat("(?!fn\\b|function\\b|", b(g).join("\\b|"), "|", b(E).join("\\b|"), "\\b)"), r, t.concat(_, "*"), t.lookahead(/(?=\()/)],
       scope: {
         3: "title.function.invoke"
       },
       contains: [T]
     };
   T.contains.push(N);
-  let A = [I, S, e.C_BLOCK_COMMENT_MODE, p, h, y],
+  let A = [S, I, e.C_BLOCK_COMMENT_MODE, p, h, y],
     C = {
       begin: t.concat(/#\[\s*\\?/, t.either(i, o)),
       beginScope: "meta",
       end: /]/,
       endScope: "meta",
       keywords: {
-        literal: g,
+        literal: m,
         keyword: ["new", "array"]
       },
       contains: [{
         begin: /\[/,
         end: /]/,
         keywords: {
-          literal: g,
+          literal: m,
           keyword: ["new", "array"]
         },
         contains: ["self", ...A]
@@ -196,7 +196,7 @@ function t(e) {
     }, s, {
       scope: "variable.language",
       match: /\$this\b/
-    }, a, N, S, {
+    }, a, N, I, {
       match: [/const/, /\s/, r],
       scope: {
         1: "keyword",
@@ -221,7 +221,7 @@ function t(e) {
         excludeBegin: !0,
         excludeEnd: !0,
         keywords: v,
-        contains: ["self", C, a, S, e.C_BLOCK_COMMENT_MODE, p, h]
+        contains: ["self", C, a, I, e.C_BLOCK_COMMENT_MODE, p, h]
       }]
     }, {
       scope: "class",

@@ -91,7 +91,7 @@ function h(e) {
   }
 }
 
-function g(e) {
+function m(e) {
   let {
     top: t,
     left: n,
@@ -106,7 +106,7 @@ function g(e) {
   }
 }
 
-function m(e) {
+function g(e) {
   return null != e ? "".concat(e, "px") : "auto"
 }
 class E extends(r = o.PureComponent) {
@@ -148,7 +148,7 @@ class E extends(r = o.PureComponent) {
       left: n,
       bottom: r,
       right: i
-    }, null != o && (o.style.top = m(t), o.style.bottom = m(r), o.style.left = m(n), o.style.right = m(i))
+    }, null != o && (o.style.top = g(t), o.style.bottom = g(r), o.style.left = g(n), o.style.right = g(i))
   }
   render() {
     let {
@@ -235,7 +235,7 @@ class E extends(r = o.PureComponent) {
         onDragStart: u,
         onDrag: f,
         onFlip: h,
-        snapOrientation: m
+        snapOrientation: g
       } = this.props, {
         dragging: E,
         dragging: v,
@@ -248,20 +248,20 @@ class E extends(r = o.PureComponent) {
         }) < c) return;
       E = !0;
       let {
-        clientWidth: S,
-        clientHeight: I
-      } = r, T = g(d({
+        clientWidth: I,
+        clientHeight: S
+      } = r, T = m(d({
         top: n - this._offsetY,
         left: t - this._offsetX
-      }, i, o, S, I));
-      if (m) {
+      }, i, o, I, S));
+      if (g) {
         let e = _(T = p(T));
         b = e[0], y = e[1]
       } else T = {
         top: T.top,
         left: T.left
       };
-      2 === s && y !== this.state.horizontalOrientation && (this._offsetX = S - this._offsetX, O = !0), 2 === a && b !== this.state.verticalOrientation && (this._offsetY = I - this._offsetY, O = !0), this.setDOMPositions(T), v || null == u || u(T, r), null == f || f(T, r), O && (null == h || h([b, y])), this.setState({
+      2 === s && y !== this.state.horizontalOrientation && (this._offsetX = I - this._offsetX, O = !0), 2 === a && b !== this.state.verticalOrientation && (this._offsetY = S - this._offsetY, O = !0), this.setDOMPositions(T), v || null == u || u(T, r), null == f || f(T, r), O && (null == h || h([b, y])), this.setState({
         dragging: E,
         verticalOrientation: b,
         horizontalOrientation: y,
@@ -303,7 +303,7 @@ class E extends(r = o.PureComponent) {
         clientHeight: u,
         clientWidth: f
       } = r, h = d(t, i, o, f, u);
-      if (h = g(h), s) {
+      if (h = m(h), s) {
         let t = _(e = p(h));
         l = t[0], c = t[1]
       } else e = {
@@ -314,11 +314,11 @@ class E extends(r = o.PureComponent) {
       };
       if (t.left === e.left && t.right === e.right && t.top === e.top && t.bottom === e.bottom) return;
       null == a || a(e, r), this.setDOMPositions(e);
-      let m = 0 === e.top;
-      (l !== n.verticalOrientation || c !== n.horizontalOrientation || m !== n.atTopEdge) && this.setState({
+      let g = 0 === e.top;
+      (l !== n.verticalOrientation || c !== n.horizontalOrientation || g !== n.atTopEdge) && this.setState({
         verticalOrientation: l,
         horizontalOrientation: c,
-        atTopEdge: m
+        atTopEdge: g
       })
     });
     let [t, n] = _(e.initialPosition);

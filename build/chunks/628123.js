@@ -16,15 +16,15 @@ var r = n(200651),
   _ = n(386506),
   p = n(304761),
   h = n(865427),
-  g = n(406128),
-  m = n(797614),
+  m = n(406128),
+  g = n(797614),
   E = n(703656),
   v = n(626135),
   b = n(960048),
   y = n(998502),
   O = n(981631),
-  S = n(388032),
-  I = n(618005);
+  I = n(388032),
+  S = n(618005);
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -52,12 +52,12 @@ function N() {
     size: f.PhG.LARGE,
     onClick: n,
     submitting: e,
-    className: I.clearOverrideButton,
-    children: S.NW.string(S.t["/Nz9ra"])
+    className: S.clearOverrideButton,
+    children: I.NW.string(I.t["/Nz9ra"])
   })
 }
 let A = a().throttle(e => {
-  m.Z.increment({
+  g.Z.increment({
     name: c.V.APP_CRASHED,
     tags: ["reason:".concat(s.v.UNHANDLED_JS_ERROR), "level:".concat(l.c.FATAL), "modded_client:".concat(e)]
   }, !0)
@@ -109,24 +109,24 @@ class C extends i.PureComponent {
     if (null !== this.state.error) {
       let e = (0, r.jsxs)("div", {
           children: [(0, r.jsx)("p", {
-            children: S.NW.string(S.t.tx8CkJ)
+            children: I.NW.string(I.t.tx8CkJ)
           }), (0, r.jsx)("p", {
-            children: S.NW.string(S.t.CvQlAA)
+            children: I.NW.string(I.t.CvQlAA)
           })]
         }),
         n = (0, r.jsxs)("div", {
-          className: I.buttons,
+          className: S.buttons,
           children: [(0, r.jsx)(f.zxk, {
             size: f.PhG.LARGE,
             onClick: this._handleSubmitReport,
-            children: S.NW.string(S.t["+hivLS"])
+            children: I.NW.string(I.t["+hivLS"])
           }), (0, r.jsx)(N, {})]
         });
-      return (0, r.jsx)(g.Z, {
-        title: S.NW.string(S.t["3h+n+/"]),
+      return (0, r.jsx)(m.Z, {
+        title: I.NW.string(I.t["3h+n+/"]),
         note: null != t ? t() : e,
         action: n,
-        className: I.errorPage
+        className: S.errorPage
       })
     }
     return e

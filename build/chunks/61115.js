@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(113434),
   p = n(569984),
   h = n(981631),
-  g = n(388032),
-  m = n(942172),
+  m = n(388032),
+  g = n(942172),
   E = n(677486);
 
 function v(e, t, n) {
@@ -59,8 +59,8 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = 2500,
-  I = 467;
+let I = 2500,
+  S = 467;
 
 function T(e) {
   let {
@@ -74,7 +74,7 @@ function T(e) {
       width: "0%"
     },
     config: {
-      duration: S
+      duration: I
     }
   })), R = e => {
     f(), y(1), null != p && d.default.track(h.rMx.QUEST_SURVEY_SUBMITTED, O(b({}, C(p, n)), {
@@ -91,24 +91,24 @@ function T(e) {
   }), null == p && a(), (0, r.jsx)(l.Y0X, {
     transitionState: o,
     size: l.CgR.DYNAMIC,
-    className: m.modalRoot,
+    className: g.modalRoot,
     children: (0, r.jsxs)(l.MyZ, {
       activeSlide: v,
-      width: I,
+      width: S,
       onSlideReady: P,
       children: [(0, r.jsxs)(l.Mi4, {
         id: 0,
         children: [(0, r.jsxs)(l.xBx, {
           direction: u.Z.Direction.VERTICAL,
           separator: !1,
-          className: m.modalHeader,
+          className: g.modalHeader,
           children: [(0, r.jsx)(l.olH, {
-            className: m.closeBtn,
+            className: g.closeBtn,
             onClick: a
           }), (0, r.jsx)("img", {
             src: E,
             alt: "",
-            className: m.asset
+            className: g.asset
           }), (0, r.jsx)(l.X6q, {
             variant: "heading-lg/semibold",
             children: n.title
@@ -118,7 +118,7 @@ function T(e) {
             children: n.subtitle
           })]
         }), (0, r.jsx)(l.hzk, {
-          className: m.modalContent,
+          className: g.modalContent,
           children: n.choices.map(e => (0, r.jsx)(N, {
             choice: e,
             onClick: R
@@ -127,27 +127,27 @@ function T(e) {
       }), (0, r.jsxs)(l.Mi4, {
         id: 1,
         children: [(0, r.jsxs)(l.hzk, {
-          className: m.completedModalContent,
+          className: g.completedModalContent,
           children: [(0, r.jsx)("img", {
             src: E,
             alt: "",
-            className: m.asset
+            className: g.asset
           }), (0, r.jsx)(l.X6q, {
             variant: "heading-lg/semibold",
-            children: g.NW.string(g.t.KTjjrK)
+            children: m.NW.string(m.t.KTjjrK)
           }), (0, r.jsx)(l.Text, {
             variant: "text-md/normal",
             color: "text-muted",
-            children: g.NW.string(g.t.AvbrEB)
+            children: m.NW.string(m.t.AvbrEB)
           })]
         }), (0, r.jsx)(l.mzw, {
           children: (0, r.jsxs)("div", {
-            className: m.closeButtonContainer,
+            className: g.closeButtonContainer,
             children: [(0, r.jsx)(l.zxk, {
               onClick: a,
-              children: g.NW.string(g.t.cpT0Cg)
+              children: m.NW.string(m.t.cpT0Cg)
             }), (0, r.jsx)(s.animated.div, {
-              className: m.progressOverlay,
+              className: g.progressOverlay,
               style: T
             })]
           })
@@ -164,7 +164,7 @@ function N(e) {
     onClick: i
   } = e;
   return (0, r.jsxs)(l.P3F, {
-    className: a()(m.choiceContainer, t),
+    className: a()(g.choiceContainer, t),
     onClick: () => i(n),
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/semibold",

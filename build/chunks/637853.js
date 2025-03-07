@@ -2,14 +2,14 @@
 "use strict";
 n.d(t, {
   Ee: () => y,
-  L6: () => w,
-  V7: () => S,
-  VF: () => D,
-  b$: () => m,
+  L6: () => D,
+  V7: () => I,
+  VF: () => w,
+  b$: () => g,
   d9: () => R,
   dF: () => O,
   dX: () => L,
-  iF: () => I,
+  iF: () => S,
   kl: () => N,
   mn: () => T,
   p3: () => v,
@@ -28,9 +28,9 @@ var r = n(442837),
   _ = n(977258),
   p = n(981631),
   h = n(372897);
-let g = new Date(16824888e5);
+let m = new Date(16824888e5);
 
-function m(e) {
+function g(e) {
   return (0, r.e7)([l.Z, c.Z], () => {
     let t = l.Z.getGuild(e),
       n = !!(null == t ? void 0 : t.hasFeature(p.oNc.COMMUNITY)),
@@ -50,7 +50,7 @@ function E(e) {
 
 function v(e, t) {
   var n;
-  if (null == e || !e.hasFeature(p.oNc.GUILD_ONBOARDING) || null == t || null == t.joinedAt || new Date(t.joinedAt) < g) return !1;
+  if (null == e || !e.hasFeature(p.oNc.GUILD_ONBOARDING) || null == t || null == t.joinedAt || new Date(t.joinedAt) < m) return !1;
   let r = null !== (n = t.flags) && void 0 !== n ? n : 0;
   return u.yE(r, h.q.STARTED_ONBOARDING) && !u.yE(r, h.q.COMPLETED_ONBOARDING)
 }
@@ -87,18 +87,18 @@ function O(e, t, n) {
   }))
 }
 
-function S(e) {
-  return I(a.Z.getChannel(e))
+function I(e) {
+  return S(a.Z.getChannel(e))
 }
 
-function I(e) {
+function S(e) {
   return !!(null != e && (0, _.s)(e.guild_id, e.id)) && (e.isForumChannel() ? f.Uu(p.Plq.SEND_MESSAGES_IN_THREADS, e) : f.Uu(p.Plq.SEND_MESSAGES, e))
 }
 
 function T(e) {
   return (0, r.e7)([a.Z], () => {
     let t = a.Z.getChannel(e);
-    return (0, d.lm)(t) && I(t)
+    return (0, d.lm)(t) && S(t)
   })
 }
 
@@ -121,7 +121,7 @@ function N(e, t, n) {
 function A(e, t) {
   return e.filter(e => {
     var n;
-    return I(null === (n = t[e]) || void 0 === n ? void 0 : n.channel)
+    return S(null === (n = t[e]) || void 0 === n ? void 0 : n.channel)
   })
 }
 
@@ -157,18 +157,18 @@ function P(e, t) {
   return e[0].length === t[0].length && e[1].length === t[1].length && (0, i.Z)(e[0], t[0]) && (0, i.Z)(e[1], t[1])
 }
 
-function D(e, t) {
+function w(e, t) {
   return (0, r.e7)([s.ZP], () => {
     let n = s.ZP.getChannels(e),
       r = [],
       i = [],
       o = {};
-    for (let e of n[s.sH])(0, _.s)(e.channel.guild_id, e.channel.id) && (t.has(e.channel.id) && !e.channel.isCategory() || !e.channel.isThread() && null != e.channel.parent_id && t.has(e.channel.parent_id)) && (o[e.channel.id] = e, r.push(e.channel), I(e.channel) && i.push(e.channel.id));
+    for (let e of n[s.sH])(0, _.s)(e.channel.guild_id, e.channel.id) && (t.has(e.channel.id) && !e.channel.isCategory() || !e.channel.isThread() && null != e.channel.parent_id && t.has(e.channel.parent_id)) && (o[e.channel.id] = e, r.push(e.channel), S(e.channel) && i.push(e.channel.id));
     return [i, r]
   }, [e, t], P)
 }
 
-function w(e) {
+function D(e) {
   return new Set(e.map(e => e.roleIds).flat().filter(d.lm))
 }
 

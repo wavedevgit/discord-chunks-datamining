@@ -16,8 +16,8 @@ var r = n(904245),
   _ = n(70956),
   p = n(358085),
   h = n(743498),
-  g = n(875527),
-  m = n(709706),
+  m = n(875527),
+  g = n(709706),
   E = n(981631),
   v = n(231338),
   b = n(388032);
@@ -31,11 +31,11 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 let O = 30 * _.Z.Millis.MINUTE,
-  S = 10 * _.Z.Millis.SECOND,
-  I = new o.Z("VoiceFilterFeedbackManager");
+  I = 10 * _.Z.Millis.SECOND,
+  S = new o.Z("VoiceFilterFeedbackManager");
 
 function T() {
-  return (0, g.wt)({
+  return (0, m.wt)({
     location: "VoiceFilterFeedbackManager",
     autoTrackExposure: !1
   })
@@ -48,10 +48,10 @@ class N extends i.Z {
     let {
       guildId: t
     } = e;
-    T() && (0, g.m3)({
+    T() && (0, m.m3)({
       location: "VoiceFilterFeedbackManager",
       guildId: t
-    }) && m.Z.isNativeModuleLoaded() ? (0, h.v6)(null) : this.maybeQueueFeedbackMessage()
+    }) && g.Z.isNativeModuleLoaded() ? (0, h.v6)(null) : this.maybeQueueFeedbackMessage()
   }
   maybeQueueFeedbackMessage() {
     if (!T()) return;
@@ -59,7 +59,7 @@ class N extends i.Z {
     let e = f.default.getCurrentUser();
     !((null == e ? void 0 : e.isStaff()) !== !0 || null == c.Z.getActiveVoiceFilter() || c.Z.isSelfMute() || c.Z.isSelfMutedTemporarily()) && (this.queuedSendTimeout = setTimeout(() => {
       this._maybeSendFeedbackMessage()
-    }, S))
+    }, I))
   }
   _maybeSendFeedbackMessage() {
     var e, t;
@@ -71,7 +71,7 @@ class N extends i.Z {
       f = l.Z.getGuild(o);
     if (null == f || !f.hasFeature(E.oNc.INTERNAL_EMPLOYEE_ONLY) || i.type === E.d4z.GUILD_STAGE_VOICE) return;
     if (!u.Z.can(v.Pl.SEND_MESSAGES, i)) {
-      I.info("Skipping vf feedback message due to no send permission");
+      S.info("Skipping vf feedback message due to no send permission");
       return
     }
     let _ = "".concat(i.id, ":").concat(n),
@@ -79,14 +79,14 @@ class N extends i.Z {
     if (null != h) {
       let e = Date.now() - h;
       if (e - h < O) {
-        I.info("Skipping vf feedback message due to cooldown", e);
+        S.info("Skipping vf feedback message due to cooldown", e);
         return
       }
     }
-    let g = m.Z.getVoiceFilter(n),
-      y = null != g ? b.NW.string(g.name) : "Don't Know",
-      S = c.Z.getInputDeviceId(),
-      T = null === (e = c.Z.getInputDevices()[S]) || void 0 === e ? void 0 : e.name,
+    let m = g.Z.getVoiceFilter(n),
+      y = null != m ? b.NW.string(m.name) : "Don't Know",
+      I = c.Z.getInputDeviceId(),
+      T = null === (e = c.Z.getInputDevices()[I]) || void 0 === e ? void 0 : e.name,
       N = c.Z.getOutputDeviceId(),
       A = new URLSearchParams({
         usp: "pp_url",

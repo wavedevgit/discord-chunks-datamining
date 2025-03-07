@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(50101),
   p = n(388032),
   h = n(730621),
-  g = n(782763),
-  m = n(567949),
+  m = n(782763),
+  g = n(567949),
   E = n(552781),
   v = n(952567),
   b = n(807159);
@@ -45,7 +45,7 @@ function O(e) {
   return e
 }
 
-function S(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,8 +56,8 @@ function S(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -71,7 +71,7 @@ function T(e) {
     isNewPerk: d,
     animatedCard: _,
     isEnabled: h
-  } = e, [m, E] = i.useState(!1), [v, b] = i.useState(!1), y = _ && v, S = {
+  } = e, [g, E] = i.useState(!1), [v, b] = i.useState(!1), y = _ && v, I = {
     tension: 400,
     friction: 30
   }, T = (0, c.q_F)({
@@ -79,66 +79,66 @@ function T(e) {
     borderRadius: y ? "7px" : "0px",
     opacity: y ? .3 : 1,
     transformOrigin: "center 0%",
-    config: S
+    config: I
   }), N = (0, c.q_F)({
     y: y ? -25 : 0,
-    config: S
+    config: I
   }), A = (0, c.q_F)({
     opacity: +!!y,
     transform: y ? "translateY(0)" : "translateY(20px)",
-    config: S
+    config: I
   }), C = (0, c.q_F)({
     opacity: +!!y,
-    config: S
+    config: I
   }), R = i.useCallback(e => {
     e && _ && E(!0)
   }, [_]), P = (0, u.O)(R);
   return (0, r.jsxs)("div", {
-    className: a()(g.topPerksCard, {
-      [g.animatedTopPerksCard]: _,
-      [g.animate]: m
+    className: a()(m.topPerksCard, {
+      [m.animatedTopPerksCard]: _,
+      [m.animate]: g
     }),
     onMouseEnter: () => b(!0),
     onMouseLeave: () => b(!1),
     children: [(0, r.jsx)("div", {
-      className: g.intObserver,
+      className: m.intObserver,
       ref: P
     }), (0, r.jsxs)("div", {
-      className: g.topPerksCardImageWrapper,
+      className: m.topPerksCardImageWrapper,
       children: [(0, r.jsx)(s.animated.img, {
-        className: g.topPerksCardImage,
+        className: m.topPerksCardImage,
         src: o,
         alt: "",
         style: T
       }), (0, r.jsx)(s.animated.div, {
-        className: g.imageGradientOverlay,
+        className: m.imageGradientOverlay,
         style: C
       })]
     }), y && (0, r.jsx)("div", {
-      className: g.borderGlowOverlay
+      className: m.borderGlowOverlay
     }), (0, r.jsxs)(s.animated.div, {
-      style: I(O({}, N), {
+      style: S(O({}, N), {
         transform: N.y.to(e => "translateY(".concat(e, "px)"))
       }),
-      className: g.contentContainer,
+      className: m.contentContainer,
       children: [(0, r.jsx)(c.X6q, {
-        className: g.topPerksCardHeading,
+        className: m.topPerksCardHeading,
         variant: "heading-lg/extrabold",
         children: n
       }), (0, r.jsx)(c.Text, {
-        className: g.topPerksCardDescription,
+        className: m.topPerksCardDescription,
         variant: "text-sm/normal",
         children: t
       }), (0, r.jsxs)("div", {
-        className: g.labelsContainer,
+        className: m.labelsContainer,
         children: [null != l && (0, r.jsxs)("div", {
-          className: g.topPerksCardLabelContainer,
+          className: m.topPerksCardLabelContainer,
           children: [(0, r.jsx)(f.Z, {}), (0, r.jsx)(c.Text, {
             variant: "text-sm/semibold",
             children: l
           })]
         }), h && (0, r.jsxs)("div", {
-          className: g.topPerksCardLabelContainer,
+          className: m.topPerksCardLabelContainer,
           children: [(0, r.jsx)(c.owK, {
             size: "custom",
             height: 14,
@@ -152,22 +152,22 @@ function T(e) {
         })]
       }), _ && (0, r.jsxs)(s.animated.div, {
         style: A,
-        className: g.buttonsContainer,
+        className: m.buttonsContainer,
         children: [(0, r.jsx)(c.zxk, {
           color: c.zxk.Colors.BRAND,
-          className: g.button,
+          className: m.button,
           children: p.NW.string(p.t["oPAx7+"])
         }), (0, r.jsx)(c.zxk, {
           color: c.zxk.Colors.PRIMARY,
-          className: g.button,
+          className: m.button,
           children: p.NW.string(p.t.GoCQxc)
         })]
       })]
     }), d && (0, r.jsx)(c.IGR, {
-      className: g.topPerksCardNew,
+      className: m.topPerksCardNew,
       text: p.NW.string(p.t.y2b7CA)
-    }), m && (0, r.jsx)("div", {
-      className: g.shineLine
+    }), g && (0, r.jsx)("div", {
+      className: m.shineLine
     })]
   })
 }
@@ -176,13 +176,13 @@ let N = function(e) {
     guild: t
   } = e, n = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), i = (0, _.Ek)(t, "GuildBoostingMarketingTopPerksCards");
   return (0, r.jsxs)("div", {
-    className: g.wrapper,
+    className: m.wrapper,
     children: [(0, r.jsx)(c.X6q, {
-      className: g.heading,
+      className: m.heading,
       variant: "heading-xxl/extrabold",
       children: p.NW.string(p.t.aGdB3N)
     }), (0, r.jsxs)("div", {
-      className: g.topPerksCards,
+      className: m.topPerksCards,
       children: [(0, r.jsx)(T, {
         description: p.NW.string(p.t.HTvLGh),
         heading: p.NW.string(p.t.IpRQw8),
@@ -191,7 +191,7 @@ let N = function(e) {
       }), (0, r.jsx)(T, {
         description: p.NW.string(p.t.wOYbTk),
         heading: p.NW.string(p.t.G6jZo6),
-        imgSrc: n ? E : m,
+        imgSrc: n ? E : g,
         label: i ? p.NW.string(h.Z.dyNT9v) : void 0
       }), (0, r.jsx)(T, {
         description: p.NW.string(p.t.yCjoUF),

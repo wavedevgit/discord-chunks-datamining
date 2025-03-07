@@ -24,17 +24,17 @@ var h = {
     enqueueReplaceState: function() {},
     enqueueSetState: function() {}
   },
-  g = Object.assign,
-  m = {};
+  m = Object.assign,
+  g = {};
 
 function E(e, t, n) {
-  this.props = e, this.context = t, this.refs = m, this.updater = n || h
+  this.props = e, this.context = t, this.refs = g, this.updater = n || h
 }
 
 function v() {}
 
 function b(e, t, n) {
-  this.props = e, this.context = t, this.refs = m, this.updater = n || h
+  this.props = e, this.context = t, this.refs = g, this.updater = n || h
 }
 E.prototype.isReactComponent = {}, E.prototype.setState = function(e, t) {
   if ("object" != typeof e && "function" != typeof e && null != e) throw Error("setState(...): takes an object of state variables to update or a function which returns an object of state variables.");
@@ -43,10 +43,10 @@ E.prototype.isReactComponent = {}, E.prototype.setState = function(e, t) {
   this.updater.enqueueForceUpdate(this, e, "forceUpdate")
 }, v.prototype = E.prototype;
 var y = b.prototype = new v;
-y.constructor = b, g(y, E.prototype), y.isPureReactComponent = !0;
+y.constructor = b, m(y, E.prototype), y.isPureReactComponent = !0;
 var O = Array.isArray,
-  S = Object.prototype.hasOwnProperty,
-  I = {
+  I = Object.prototype.hasOwnProperty,
+  S = {
     current: null
   },
   T = {
@@ -61,7 +61,7 @@ function N(e, t, r) {
     a = null,
     s = null;
   if (null != t)
-    for (i in void 0 !== t.ref && (s = t.ref), void 0 !== t.key && (a = "" + t.key), t) S.call(t, i) && !T.hasOwnProperty(i) && (o[i] = t[i]);
+    for (i in void 0 !== t.ref && (s = t.ref), void 0 !== t.key && (a = "" + t.key), t) I.call(t, i) && !T.hasOwnProperty(i) && (o[i] = t[i]);
   var l = arguments.length - 2;
   if (1 === l) o.children = r;
   else if (1 < l) {
@@ -76,7 +76,7 @@ function N(e, t, r) {
     key: a,
     ref: s,
     props: o,
-    _owner: I.current
+    _owner: S.current
   }
 }
 
@@ -106,11 +106,11 @@ function R(e) {
 }
 var P = /\/+/g;
 
-function D(e, t) {
+function w(e, t) {
   return "object" == typeof e && null !== e && null != e.key ? R("" + e.key) : t.toString(36)
 }
 
-function w(e, t, i, o, a) {
+function D(e, t, i, o, a) {
   var s = typeof e;
   ("undefined" === s || "boolean" === s) && (e = null);
   var l = !1;
@@ -127,15 +127,15 @@ function w(e, t, i, o, a) {
           l = !0
       }
   }
-  if (l) return a = a(l = e), e = "" === o ? "." + D(l, 0) : o, O(a) ? (i = "", null != e && (i = e.replace(P, "$&/") + "/"), w(a, t, i, "", function(e) {
+  if (l) return a = a(l = e), e = "" === o ? "." + w(l, 0) : o, O(a) ? (i = "", null != e && (i = e.replace(P, "$&/") + "/"), D(a, t, i, "", function(e) {
     return e
   })) : null != a && (C(a) && (a = A(a, i + (!a.key || l && l.key === a.key ? "" : ("" + a.key).replace(P, "$&/") + "/") + e)), t.push(a)), 1;
   if (l = 0, o = "" === o ? "." : o + ":", O(e))
     for (var c = 0; c < e.length; c++) {
-      var u = o + D(s = e[c], c);
-      l += w(s, t, i, u, a)
+      var u = o + w(s = e[c], c);
+      l += D(s, t, i, u, a)
     } else if ("function" == typeof(u = p(e)))
-      for (e = u.call(e), c = 0; !(s = e.next()).done;) u = o + D(s = s.value, c++), l += w(s, t, i, u, a);
+      for (e = u.call(e), c = 0; !(s = e.next()).done;) u = o + w(s = s.value, c++), l += D(s, t, i, u, a);
     else if ("object" === s) throw Error("Objects are not valid as a React child (found: " + ("[object Object]" === (t = String(e)) ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
   return l
 }
@@ -144,7 +144,7 @@ function L(e, t, n) {
   if (null == e) return e;
   var r = [],
     i = 0;
-  return w(e, r, "", "", function(e) {
+  return D(e, r, "", "", function(e) {
     return t.call(n, e, i++)
   }), r
 }
@@ -170,7 +170,7 @@ var M = {
   j = {
     ReactCurrentDispatcher: M,
     ReactCurrentBatchConfig: k,
-    ReactCurrentOwner: I
+    ReactCurrentOwner: S
   };
 
 function U() {
@@ -200,13 +200,13 @@ t.Children = {
   }
 }, t.Component = E, t.Fragment = i, t.Profiler = a, t.PureComponent = b, t.StrictMode = o, t.Suspense = u, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = j, t.act = U, t.cloneElement = function(e, t, r) {
   if (null == e) throw Error("React.cloneElement(...): The argument must be a React element, but you passed " + e + ".");
-  var i = g({}, e.props),
+  var i = m({}, e.props),
     o = e.key,
     a = e.ref,
     s = e._owner;
   if (null != t) {
-    if (void 0 !== t.ref && (a = t.ref, s = I.current), void 0 !== t.key && (o = "" + t.key), e.type && e.type.defaultProps) var l = e.type.defaultProps;
-    for (c in t) S.call(t, c) && !T.hasOwnProperty(c) && (i[c] = void 0 === t[c] && void 0 !== l ? l[c] : t[c])
+    if (void 0 !== t.ref && (a = t.ref, s = S.current), void 0 !== t.key && (o = "" + t.key), e.type && e.type.defaultProps) var l = e.type.defaultProps;
+    for (c in t) I.call(t, c) && !T.hasOwnProperty(c) && (i[c] = void 0 === t[c] && void 0 !== l ? l[c] : t[c])
   }
   var c = arguments.length - 2;
   if (1 === c) i.children = r;

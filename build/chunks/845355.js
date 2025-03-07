@@ -11,12 +11,12 @@ function s(e, t, n, s) {
   for (var u = (t = n(t)) != t, d = null === t, f = r(t), _ = void 0 === t; l < c;) {
     var p = o((l + c) / 2),
       h = n(e[p]),
-      g = void 0 !== h,
-      m = null === h,
+      m = void 0 !== h,
+      g = null === h,
       E = h == h,
       v = r(h);
     if (u) var b = s || E;
-    else b = _ ? E && (s || g) : d ? E && g && (s || !m) : f ? E && g && !m && (s || !v) : !m && !v && (s ? h <= t : h < t);
+    else b = _ ? E && (s || m) : d ? E && m && (s || !g) : f ? E && m && !g && (s || !v) : !g && !v && (s ? h <= t : h < t);
     b ? l = p + 1 : c = p
   }
   return a(c, i)

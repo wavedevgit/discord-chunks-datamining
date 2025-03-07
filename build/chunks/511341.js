@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(810097),
   p = n(652853),
   h = n(228168),
-  g = n(185923),
-  m = n(420212),
+  m = n(185923),
+  g = n(420212),
   E = n(231338),
   v = n(388032),
   b = n(178708);
@@ -59,8 +59,8 @@ function O(e) {
     sourceType: _,
     sourceDetails: v,
     setPopoutRef: O,
-    onAction: S,
-    onClose: I
+    onAction: I,
+    onClose: S
   } = e, {
     resetInteraction: T,
     setInteractionToast: N
@@ -71,19 +71,19 @@ function O(e) {
     null == O || O(null == P ? void 0 : P.current)
   }, [P, O]), i.useEffect(() => {
     let e = e => {
-      e.key === m.vn.ESCAPE && (e.stopPropagation(), T())
+      e.key === g.vn.ESCAPE && (e.stopPropagation(), T())
     };
     return document.addEventListener("keydown", e), () => {
       document.removeEventListener("keydown", e)
     }
-  }, [I, T]);
-  let D = async e => {
+  }, [S, T]);
+  let w = async e => {
     if (null == e) return;
-    _ === h.n_.AVATAR ? S({
+    _ === h.n_.AVATAR ? I({
       action: "SEND_REACT_AVATAR"
-    }) : _ === h.n_.STATUS ? S({
+    }) : _ === h.n_.STATUS ? I({
       action: "SEND_REACT_CUSTOM_STATUS"
-    }) : S({
+    }) : I({
       action: "SEND_REACT_ACTIVITY"
     });
     let n = y({
@@ -110,8 +110,8 @@ function O(e) {
     guildId: null != n ? n : void 0,
     closePopout: E.dG,
     onSelectEmoji: async (e, t) => {
-      await D(e), t && (T(), null == I || I())
+      await w(e), t && (T(), null == S || S())
     },
-    pickerIntention: g.Hz.PROFILE
+    pickerIntention: m.Hz.PROFILE
   })
 }

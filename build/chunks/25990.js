@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, o, a, s, l, c, u, d, f, _, p, h, g, m, E, v;
+let r, i, o, a, s, l, c, u, d, f, _, p, h, m, g, E, v;
 n.d(t, {
   Z: () => es
 });
 var b, y = n(979554),
   O = n(442837),
-  S = n(570140),
-  I = n(981631);
+  I = n(570140),
+  S = n(981631);
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -17,32 +17,32 @@ function T(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let N = I.QZA.CLOSED,
+let N = S.QZA.CLOSED,
   A = {};
 
 function C() {
-  N = I.QZA.OPEN, A = {}
+  N = S.QZA.OPEN, A = {}
 }
 
 function R() {
-  N = I.QZA.CLOSED, A = {}
+  N = S.QZA.CLOSED, A = {}
 }
 
 function P() {
-  N = I.QZA.SUBMITTING, A = {}
-}
-
-function D(e) {
-  var t;
-  if (N !== I.QZA.SUBMITTING) return !1;
-  N = I.QZA.OPEN, A = null !== (t = e.errors) && void 0 !== t ? t : {}
+  N = S.QZA.SUBMITTING, A = {}
 }
 
 function w(e) {
+  var t;
+  if (N !== S.QZA.SUBMITTING) return !1;
+  N = S.QZA.OPEN, A = null !== (t = e.errors) && void 0 !== t ? t : {}
+}
+
+function D(e) {
   let {
     section: t
   } = e;
-  return t === I.oAB.ACCOUNT && C()
+  return t === S.oAB.ACCOUNT && C()
 }
 
 function L(e) {
@@ -56,7 +56,7 @@ function x(e) {
   let {
     avatar: t
   } = e;
-  i = t, g = void 0
+  i = t, m = void 0
 }
 
 function M(e) {
@@ -91,7 +91,7 @@ function G(e) {
   let {
     item: t
   } = e;
-  (null == t ? void 0 : t.type) === y.Z.PROFILE_EFFECT ? (m = null, E = null == t ? void 0 : t.id) : (null == t ? void 0 : t.type) === y.Z.AVATAR_DECORATION && (E = null, m = t)
+  (null == t ? void 0 : t.type) === y.Z.PROFILE_EFFECT ? (g = null, E = null == t ? void 0 : t.id) : (null == t ? void 0 : t.type) === y.Z.AVATAR_DECORATION && (E = null, g = t)
 }
 
 function B(e) {
@@ -147,14 +147,14 @@ function K(e) {
   let {
     avatar: t
   } = e;
-  g = t
+  m = t
 }
 
 function z(e) {
   let {
     avatarDecoration: t
   } = e;
-  m = t
+  g = t
 }
 
 function q(e) {
@@ -179,7 +179,7 @@ function X(e) {
       avatarDecoration: r
     }
   } = e;
-  p = t, v = n, m = r
+  p = t, v = n, g = r
 }
 
 function J() {
@@ -203,7 +203,7 @@ function en() {
 }
 
 function er() {
-  h = void 0, g = void 0, m = void 0, E = void 0, v = void 0, p = void 0
+  h = void 0, m = void 0, g = void 0, E = void 0, v = void 0, p = void 0
 }
 
 function ei() {
@@ -224,7 +224,7 @@ class ea extends(b = O.ZP.Store) {
     return void 0 !== r || void 0 !== i || void 0 !== c || void 0 !== u || void 0 !== d || void 0 !== f || void 0 !== _ || void 0 !== a || void 0 !== s || void 0 !== o || void 0 !== l
   }
   getIsSubmitDisabled() {
-    return void 0 !== u && u.length > I.tPV
+    return void 0 !== u && u.length > S.tPV
   }
   getPendingAvatar() {
     return r
@@ -281,10 +281,10 @@ class ea extends(b = O.ZP.Store) {
     return h
   }
   getTryItOutAvatarV2() {
-    return g
+    return m
   }
   getTryItOutAvatarDecoration() {
-    return m
+    return g
   }
   getTryItOutProfileEffectId() {
     return E
@@ -296,23 +296,23 @@ class ea extends(b = O.ZP.Store) {
     return {
       tryItOutThemeColors: p,
       tryItOutAvatar: h,
-      tryItOutAvatarV2: g,
-      tryItOutAvatarDecoration: m,
+      tryItOutAvatarV2: m,
+      tryItOutAvatarDecoration: g,
       tryItOutProfileEffectId: E,
       tryItOutBanner: v
     }
   }
 }
 T(ea, "displayName", "UserSettingsAccountStore");
-let es = new ea(S.Z, {
+let es = new ea(I.Z, {
   USER_SETTINGS_ACCOUNT_INIT: C,
   USER_SETTINGS_MODAL_INIT: C,
   USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: C,
-  USER_SETTINGS_MODAL_SET_SECTION: w,
+  USER_SETTINGS_MODAL_SET_SECTION: D,
   USER_SETTINGS_ACCOUNT_CLOSE: R,
   USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM: eo,
   USER_SETTINGS_ACCOUNT_SUBMIT: P,
-  USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE: D,
+  USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE: w,
   USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR: L,
   USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_V2: x,
   USER_SETTINGS_ACCOUNT_SET_PENDING_GLOBAL_NAME: M,

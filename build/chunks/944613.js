@@ -23,15 +23,15 @@ let h = function(e) {
     roleStyle: i,
     roleFilter: a,
     onSelect: h,
-    onClose: g
-  } = e, m = (0, c.e7)([d.Z], () => d.Z.getRoles(n.id)), E = e => s()(m).filter(a).filter(t => o()(e.toLowerCase(), t.name.toLowerCase())).value();
+    onClose: m
+  } = e, g = (0, c.e7)([d.Z], () => d.Z.getRoles(n.id)), E = e => s()(g).filter(a).filter(t => o()(e.toLowerCase(), t.name.toLowerCase())).value();
   return (0, r.jsx)(u.DBG, {
     className: t,
     value: new Set,
     onChange: h,
     placeholder: _.NW.string(_.t.XPGZXF),
     "aria-label": _.NW.string(_.t.ljnBlp),
-    onClose: g,
+    onClose: m,
     children: e => E(e).map(e => {
       var t, n;
       return (0, r.jsxs)(u.lo1, {

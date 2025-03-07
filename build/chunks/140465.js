@@ -2,11 +2,11 @@
 "use strict";
 n.d(t, {
   B4: () => O,
-  Nx: () => g,
+  Nx: () => m,
   UV: () => y,
   WR: () => b,
   lr: () => E,
-  t7: () => m
+  t7: () => g
 }), n(47120);
 var r = n(192379),
   i = n(913527),
@@ -22,14 +22,14 @@ var r = n(192379),
   p = n(474936),
   h = n(981631);
 
-function g() {
+function m() {
   let e = (0, _.N)(),
     t = (0, c._O)(),
     n = (0, f.Ng)(),
-    r = m();
+    r = g();
   return null != e || t || null != n || r
 }
-let m = () => {
+let g = () => {
     var e;
     let t = (0, a.e7)([l.ZP], () => l.ZP.getPremiumTypeSubscription()),
       n = null == t ? void 0 : null === (e = t.metadata) || void 0 === e ? void 0 : e.active_discount_expires_at;
@@ -100,7 +100,7 @@ let m = () => {
     }
   }, y = () => {
     let e = (0, a.e7)([l.ZP], () => l.ZP.getPremiumTypeSubscription()),
-      t = m(),
+      t = g(),
       n = null !== e && e.hasPremiumNitroMonthly,
       r = null != e && null != e.trialId;
     return n && !r && !t

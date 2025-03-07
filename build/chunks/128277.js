@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => w
+  Z: () => D
 }), n(301563);
 var r = n(200651),
   i = n(192379),
@@ -16,15 +16,15 @@ var r = n(200651),
   _ = n(649700),
   p = n(952164),
   h = n(960870),
-  g = n(139793),
-  m = n(994746),
+  m = n(139793),
+  g = n(994746),
   E = n(652853),
   v = n(448980),
   b = n(336383),
   y = n(194811),
   O = n(373826),
-  S = n(262210),
-  I = n(666984),
+  I = n(262210),
+  S = n(666984),
   T = n(670451),
   N = n(228168),
   A = n(203396);
@@ -62,13 +62,13 @@ function P(e, t) {
   return n
 }
 
-function D(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function w(e) {
+function D(e) {
   let {
     user: t,
     currentUser: n,
@@ -76,13 +76,13 @@ function w(e) {
     className: C,
     onClose: P
   } = e, {
-    profileType: w
+    profileType: D
   } = (0, E.z)(), L = {
-    [A.fullSize]: w === N.y0.FULL_SIZE
+    [A.fullSize]: D === N.y0.FULL_SIZE
   }, x = (0, _.Z)({
     activity: o,
     user: t
-  }), M = (0, m.Z)(o), {
+  }), M = (0, g.Z)(o), {
     largeImage: k
   } = (0, d.FO)(o), {
     analyticsLocations: j
@@ -92,7 +92,7 @@ function w(e) {
     activity: o,
     entry: x,
     analyticsLocations: j
-  }), G = (0, g.Z)({
+  }), G = (0, m.Z)({
     userId: t.id,
     onAction: U
   });
@@ -127,14 +127,14 @@ function w(e) {
         start: t,
         end: n
       } = e;
-      return null == t || null == n ? null : (0, r.jsx)(S.Z, {
+      return null == t || null == n ? null : (0, r.jsx)(I.Z, {
         start: t,
         end: n
       })
     },
     F = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: a()(A.actions, L),
-      children: (0, r.jsx)(I.Z, {
+      children: (0, r.jsx)(S.Z, {
         user: t,
         activity: o,
         onAction: U
@@ -147,7 +147,7 @@ function w(e) {
       className: a()(A.card, C),
       onAction: U,
       onClose: P,
-      children: [(0, r.jsx)(y.Z, D(R({}, M), {
+      children: [(0, r.jsx)(y.Z, w(R({}, M), {
         contextMenu: (0, r.jsx)(T.Z, {
           display: "live",
           user: t,
@@ -185,9 +185,9 @@ function w(e) {
               activity: o,
               className: A.badges
             }), V()]
-          }), w === N.y0.FULL_SIZE && F()]
+          }), D === N.y0.FULL_SIZE && F()]
         })
-      }), w !== N.y0.FULL_SIZE && F()]
+      }), D !== N.y0.FULL_SIZE && F()]
     })
   })
 }

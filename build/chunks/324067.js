@@ -23,15 +23,15 @@ function _(e, t, n) {
 }
 let p = null,
   h = {},
-  g = null;
+  m = null;
 
-function m() {
+function g() {
   return {
     _categories: [],
     null: []
   }
 }
-let E = m();
+let E = g();
 
 function v(e, t) {
   e.index = t
@@ -39,7 +39,7 @@ function v(e, t) {
 
 function b(e) {
   let t = u.ZP.getChannels(e),
-    n = m(),
+    n = g(),
     r = e => {
       var t;
       let {
@@ -74,7 +74,7 @@ function O(e) {
   h[t] = void 0, p === t && b(t)
 }
 
-function S(e) {
+function I(e) {
   let {
     guild: {
       id: t
@@ -83,7 +83,7 @@ function S(e) {
   delete h[t]
 }
 
-function I(e) {
+function S(e) {
   let {
     channel: {
       guild_id: t
@@ -126,7 +126,7 @@ function C(e) {
 }
 
 function R(e, t) {
-  if (g = t, null == e || null == e.getGuildId()) return !1;
+  if (m = t, null == e || null == e.getGuildId()) return !1;
   let n = e.getGuildId();
   return null != n && (h[n] = void 0, n === p && b(n), !0)
 }
@@ -135,10 +135,10 @@ function P(e) {
   let {
     channelId: t
   } = e;
-  return null == t && null != g ? R(c.Z.getChannel(g), null) : R(c.Z.getChannel(t), t)
+  return null == t && null != m ? R(c.Z.getChannel(m), null) : R(c.Z.getChannel(t), t)
 }
 
-function D(e) {
+function w(e) {
   let {
     voiceStates: t
   } = e;
@@ -151,7 +151,7 @@ function D(e) {
   }, !1)
 }
 
-function w(e) {
+function D(e) {
   let {
     guildId: t
   } = e;
@@ -177,15 +177,15 @@ class M extends(r = i.ZP.Store) {
 }
 _(M, "displayName", "GuildCategoryStore");
 let k = new M(o.Z, {
-  CHANNEL_SELECT: w,
+  CHANNEL_SELECT: D,
   CONNECTION_OPEN: y,
   OVERLAY_INITIALIZE: y,
   CACHE_LOADED_LAZY: y,
   GUILD_CREATE: O,
   GUILD_UPDATE: O,
-  GUILD_DELETE: S,
-  CHANNEL_CREATE: I,
-  CHANNEL_DELETE: I,
+  GUILD_DELETE: I,
+  CHANNEL_CREATE: S,
+  CHANNEL_DELETE: S,
   CHANNEL_UPDATES: T,
   GUILD_MEMBER_UPDATE: N,
   CURRENT_USER_UPDATE: A,
@@ -195,5 +195,5 @@ let k = new M(o.Z, {
   IMPERSONATE_UPDATE: C,
   IMPERSONATE_STOP: C,
   VOICE_CHANNEL_SELECT: P,
-  VOICE_STATE_UPDATES: D
+  VOICE_STATE_UPDATES: w
 })

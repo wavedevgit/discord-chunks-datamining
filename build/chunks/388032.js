@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Kj: () => p,
-  NW: () => g,
+  NW: () => m,
   St: () => h,
   Vb: () => c.Vb,
   t: () => l.k,
@@ -59,7 +59,7 @@ let p = function(e) {
     return [Array.isArray(navigator.languages) ? navigator.languages[0] : null, navigator.language, navigator.browserLanguage, navigator.userLanguage, e].find(e => null != e && "" !== e)
   }("en-US"),
   h = (0, c.YI)(p, "en-US"),
-  g = new o.IntlManager({
+  m = new o.IntlManager({
     initialLocale: h,
     defaultLocale: "en-US"
   }).withFormatters({

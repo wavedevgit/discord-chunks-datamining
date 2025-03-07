@@ -20,12 +20,12 @@ let d = .1,
       forCollectedModal: o = !1,
       isPurchased: _,
       removeSetHeight: p = !1
-    } = e, h = o ? f : d, [g, m] = i.useState(!0);
+    } = e, h = o ? f : d, [m, g] = i.useState(!0);
     return (i.useEffect(() => {
-      if (!0 !== o) m(!1);
+      if (!0 !== o) g(!1);
       else {
         let e = setTimeout(() => {
-          m(!1)
+          g(!1)
         }, h);
         return () => {
           clearTimeout(e)
@@ -41,7 +41,7 @@ let d = .1,
         alt: " ",
         className: o ? c.previewForCollected : c.preview,
         "aria-hidden": !0
-      }), !g && (0, r.jsx)("div", {
+      }), !m && (0, r.jsx)("div", {
         className: _ ? c.purchasedEffect : void 0,
         children: (0, r.jsx)(l.Z, {
           profileEffectId: t,

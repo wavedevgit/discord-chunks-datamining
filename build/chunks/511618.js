@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -16,7 +16,7 @@ var r = n(200651),
   _ = n(388032),
   p = n(755576);
 let h = 3,
-  g = e => {
+  m = e => {
     let {
       emojis: t
     } = e, {
@@ -28,7 +28,7 @@ let h = 3,
         location_stack: n
       })
     }, [n]);
-    let g = (0, r.jsx)("div", {
+    let m = (0, r.jsx)("div", {
       className: p.emojis,
       children: t.slice(0, h).map((e, t) => {
         if (null == e.id) return null;
@@ -61,7 +61,7 @@ let h = 3,
           })
         })
       }), (0, r.jsx)(a.dY, {
-        children: g
+        children: m
       })]
     })
   }

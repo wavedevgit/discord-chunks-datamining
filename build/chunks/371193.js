@@ -20,8 +20,8 @@ var r = Object.assign || function(e) {
 n(328794);
 var p = n(549639),
   h = n(466657),
-  g = n(173821),
-  m = function(e, t, n) {
+  m = n(173821),
+  g = function(e, t, n) {
     if (e instanceof s) {
       var i = r({}, t),
         o = r({}, t);
@@ -38,11 +38,11 @@ var p = n(549639),
     return null
   },
   E = function e(t, n) {
-    return m(t, n, e) || {
+    return g(t, n, e) || {
       start: function(e) {
         var r = t,
           i = n;
-        r.stopTracking(), n.toValue instanceof o ? r.track(new f(r, n.toValue, g, i, e)) : r.animate(new g(i), e)
+        r.stopTracking(), n.toValue instanceof o ? r.track(new f(r, n.toValue, m, i, e)) : r.animate(new m(i), e)
       },
       stop: function() {
         t.stopAnimation()
@@ -50,7 +50,7 @@ var p = n(549639),
     }
   },
   v = function e(t, n) {
-    return m(t, n, e) || {
+    return g(t, n, e) || {
       start: function(e) {
         var r = t,
           i = n;
@@ -62,7 +62,7 @@ var p = n(549639),
     }
   },
   b = function e(t, n) {
-    return m(t, n, e) || {
+    return g(t, n, e) || {
       start: function(e) {
         var r = t,
           i = n;
@@ -125,16 +125,16 @@ var p = n(549639),
       };
     return o
   },
-  S = function(e) {
+  I = function(e) {
     return v(new a(0), {
       toValue: 0,
       delay: e,
       duration: 0
     })
   },
-  I = function(e, t) {
+  S = function(e, t) {
     return O(t.map(function(t, n) {
-      return y([S(e * n), t])
+      return y([I(e * n), t])
     }))
   },
   T = function(e, t) {
@@ -171,10 +171,10 @@ e.exports = {
     for (var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), r = 1; r < t; r++) n[r - 1] = arguments[r];
     return new d(e, n)
   },
-  delay: S,
+  delay: I,
   sequence: y,
   parallel: O,
-  stagger: I,
+  stagger: S,
   event: T,
   isAnimated: _,
   createAnimatedComponent: n(350323),

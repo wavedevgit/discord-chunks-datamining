@@ -51,14 +51,14 @@ let d = new Map,
   p = !1,
   h = !1;
 
-function g(e) {
+function m(e) {
   let {
     userId: t
   } = e;
   f.add(t)
 }
 
-function m(e) {
+function g(e) {
   let {
     outbox: t,
     userId: n
@@ -104,16 +104,16 @@ function O() {
   _ = null, p = !1
 }
 
-function S() {
+function I() {
   d = new Map, f = new Set, _ = null, p = !1
 }
 
-function I() {
-  S(), h = !0
+function S() {
+  I(), h = !0
 }
 
 function T() {
-  S()
+  I()
 }
 class N extends(r = i.ZP.Store) {
   getMatchingOutboxEntry(e) {
@@ -141,10 +141,10 @@ class N extends(r = i.ZP.Store) {
 }
 s(N, "displayName", "ContentInventoryOutboxStore");
 let A = new N(o.Z, {
-  CONNECTION_OPEN: I,
+  CONNECTION_OPEN: S,
   LOGOUT: T,
-  CONTENT_INVENTORY_FETCH_OUTBOX_START: g,
-  CONTENT_INVENTORY_FETCH_OUTBOX_SUCCESS: m,
+  CONTENT_INVENTORY_FETCH_OUTBOX_START: m,
+  CONTENT_INVENTORY_FETCH_OUTBOX_SUCCESS: g,
   CONTENT_INVENTORY_FETCH_OUTBOX_FAILURE: E,
   CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_START: v,
   CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_SUCCESS: b,

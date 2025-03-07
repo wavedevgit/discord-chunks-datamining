@@ -24,8 +24,8 @@ function _(e, t, n) {
 }
 let p = r.v.LEAGUE_OF_LEGENDS_WEEKLY,
   h = 3,
-  g = 5,
-  m = 9e5,
+  m = 5,
+  g = 9e5,
   E = new Map,
   v = new Set,
   b = new Map;
@@ -44,16 +44,16 @@ function O(e, t) {
       location: "GuildLeaderboardManager"
     }) || !c.Z.isFocused() || !a.Z.isConnected()) return !1;
   let i = s.Z.getIdleSince();
-  return !(null != i && Date.now() - i > m)
-}
-
-function S() {
-  for (let e in E) clearTimeout(E.get(e)), E.delete(e)
+  return !(null != i && Date.now() - i > g)
 }
 
 function I() {
+  for (let e in E) clearTimeout(E.get(e)), E.delete(e)
+}
+
+function S() {
   var e;
-  S();
+  I();
   let t = l.Z.getGuildId();
   if (null == t || !O(t, p)) return;
   let n = d.Z.getLeaderboardResponse(t, p),
@@ -98,12 +98,12 @@ async function T(e) {
       type: "SET_GUILD_LEADERBOARD",
       leaderboardResponse: e,
       intervalOffset: 0
-    }), b.delete(o), v.delete(o), I()
+    }), b.delete(o), v.delete(o), S()
   } catch (i) {
     var a;
     let e = (null !== (a = b.get(o)) && void 0 !== a ? a : 0) + 1;
     if (b.set(o, e), !O(t, n)) return;
-    let r = 1e3 * Math.pow(g, e);
+    let r = 1e3 * Math.pow(m, e);
     E.set(o, setTimeout(() => T({
       guildId: t,
       leaderboardId: n,
@@ -113,11 +113,11 @@ async function T(e) {
 }
 
 function N() {
-  I()
+  S()
 }
 
 function A() {
-  S(), E = new Map, v = new Set, b = new Map, N()
+  I(), E = new Map, v = new Set, b = new Map, N()
 }
 class C extends o.Z {
   fetchLeaderboard(e) {

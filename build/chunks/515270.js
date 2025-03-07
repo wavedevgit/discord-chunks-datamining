@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  L6: () => D,
+  L6: () => w,
   ZP: () => E,
   iF: () => P
 }), n(47120), n(301563), n(411104), n(653041), n(757143);
@@ -26,10 +26,10 @@ for (let e of p) {
   if (h.set(e, e), null != n)
     for (let t of n) h.set(t.toLowerCase(), e)
 }
-let g = /^[a-z0-9_+\-.#]+$/,
-  m = /^[a-z0-9_+\-.#]+$/i;
+let m = /^[a-z0-9_+\-.#]+$/,
+  g = /^[a-z0-9_+\-.#]+$/i;
 for (let [e, t] of h)
-  if (null == e.match(g)) throw Error("Language name does not match regex: ".concat(e));
+  if (null == e.match(m)) throw Error("Language name does not match regex: ".concat(e));
 
 function E(e) {
   let {
@@ -44,7 +44,7 @@ function E(e) {
 
 function v(e) {
   let t = y(e);
-  S(e, t)
+  I(e, t)
 }
 let b = /(?:<span class="([^"]*)">)|(?:<\/span>)/g;
 
@@ -72,8 +72,8 @@ function O(e, t, n, r, i) {
     f = n && 0 === a.length,
     _ = r && 0 === a.length,
     p = (u ? a.slice(1) : a).length % 2 == 1,
-    g = p && (null == c || "" === c || null != c.match(m)),
-    E = g && null != c && null !== (o = h.get(c.toLowerCase())) && void 0 !== o ? o : null;
+    m = p && (null == c || "" === c || null != c.match(g)),
+    E = m && null != c && null !== (o = h.get(c.toLowerCase())) && void 0 !== o ? o : null;
   return {
     blockEntry: t,
     wasInCodeBlock: n,
@@ -83,13 +83,13 @@ function O(e, t, n, r, i) {
     hljsTypes: null,
     closesCodeBlock: u,
     opensCodeBlock: p,
-    opensCodeBlockOnOwnLine: g
+    opensCodeBlockOnOwnLine: m
   }
 }
 
-function S(e, t) {
+function I(e, t) {
   for (let n of t) {
-    let [t, r] = n.blockEntry, i = I(n);
+    let [t, r] = n.blockEntry, i = S(n);
     (null == t ? void 0 : t.codeBlockState) != i && u.Q.setNodes(e, {
       codeBlockState: i
     }, {
@@ -98,7 +98,7 @@ function S(e, t) {
   }
 }
 
-function I(e) {
+function S(e) {
   return e.isStyledCodeBlockLine || e.wasInCodeBlock ? {
     lang: e.lang,
     wasInCodeBlock: e.wasInCodeBlock,
@@ -215,7 +215,7 @@ function P(e, t) {
   return n % 2 != 0
 }
 
-function D(e) {
+function w(e) {
   if (null == e.selection) return !1;
   let t = d.M8.start(e.selection);
   return P(e, t)

@@ -67,8 +67,8 @@ function _(e, t) {
 }
 let p = ["#be0351", "#ff2c52", "#f0f0f0"],
   h = ["#ffb84b", "#ffe361", "#f0f0f0"],
-  g = [.3, .4, 1],
-  m = [{
+  m = [.3, .4, 1],
+  g = [{
     base: 8,
     tint: 1
   }, {
@@ -103,8 +103,8 @@ let p = ["#be0351", "#ff2c52", "#f0f0f0"],
       } = (0, s.s)({
         primaryBaseColors: p,
         primaryTintColor: l,
-        primaryTintLuminances: g,
-        primaryLuminanceWeights: m,
+        primaryTintLuminances: m,
+        primaryLuminanceWeights: g,
         secondaryBaseColors: h,
         secondaryTintColor: u,
         secondaryTintLuminances: E,

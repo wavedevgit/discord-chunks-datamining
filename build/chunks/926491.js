@@ -15,9 +15,9 @@ var r, i = n(956067),
   _ = n(430824),
   p = n(70956),
   h = n(373228),
-  g = n(378233);
+  m = n(378233);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -33,7 +33,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -57,8 +57,8 @@ function b(e, t) {
 }
 let y = 2,
   O = new Map,
-  S = new Map,
-  I = null,
+  I = new Map,
+  S = null,
   T = [],
   N = null,
   A = !1,
@@ -67,7 +67,7 @@ let y = 2,
     C = new Map(C.set(e, t))
   },
   P = p.Z.Millis.HOUR,
-  D = async () => {
+  w = async () => {
     if (0 !== y) return;
     let e = s.Z.database();
     if (null == e) return;
@@ -79,7 +79,7 @@ let y = 2,
     })
   };
 
-function w(e) {
+function D(e) {
   let {
     stickers: t
   } = e;
@@ -93,18 +93,18 @@ function w(e) {
 let L = function(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
       n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null;
-    S.set(e.id, e), t && x(e, n)
+    I.set(e.id, e), t && x(e, n)
   },
   x = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
-    if (null == I) return;
+    if (null == S) return;
     let {
       tags: n
     } = e, r = {
       type: h.MO.STICKER_NAME,
       value: e.name.trim().toLocaleLowerCase()
     };
-    if ((0, g.jl)(e)) {
+    if ((0, m.jl)(e)) {
       let t = T.find(t => t.id === e.pack_id),
         i = [r, ...(null != n ? n : "").split(",").map(e => ({
           type: h.MO.TAG,
@@ -113,8 +113,8 @@ let L = function(e) {
       null != t && i.push({
         type: h.MO.PACK_NAME,
         value: t.name
-      }), I.set(e.id, i)
-    } else if ((0, g.J8)(e) && null != n) {
+      }), S.set(e.id, i)
+    } else if ((0, m.J8)(e) && null != n) {
       let i = u.ZP.getByName(n),
         o = [r, {
           type: h.MO.TAG,
@@ -128,7 +128,7 @@ let L = function(e) {
         })
       }
       if (null == i) {
-        I.set(e.id, o);
+        S.set(e.id, o);
         return
       }
       o.push({
@@ -137,7 +137,7 @@ let L = function(e) {
       }), i.forEachDiversity(e => o.push({
         type: h.MO.CORRELATED_EMOJI,
         value: e.surrogates
-      })), I.set(e.id, o)
+      })), S.set(e.id, o)
     }
   },
   M = (e, t, n) => {
@@ -159,10 +159,10 @@ let L = function(e) {
     let {
       guilds: t
     } = e;
-    I = null, S = new Map, C = new Map, t.forEach(G), y = +!!t.every(e => null != e.stickers)
+    S = null, I = new Map, C = new Map, t.forEach(G), y = +!!t.every(e => null != e.stickers)
   },
   U = () => {
-    I = null, S = new Map, C = new Map, y = 0
+    S = null, I = new Map, C = new Map, y = 0
   };
 
 function G(e) {
@@ -183,11 +183,11 @@ function V(e) {
     guild: n
   } = e;
   (null !== (t = C.get(n.id)) && void 0 !== t ? t : []).forEach(e => {
-    null != I && I.delete(e.id), S.delete(e.id)
+    null != S && S.delete(e.id), I.delete(e.id)
   }), C.delete(n.id), C = new Map(C)
 }
 let F = () => {
-    y = 0, T = [], S.clear(), O.clear(), I = null, C.clear(), C = new Map(C), A = !1, N = null
+    y = 0, T = [], I.clear(), O.clear(), S = null, C.clear(), C = new Map(C), A = !1, N = null
   },
   Z = () => {
     A = !0
@@ -233,13 +233,13 @@ let F = () => {
       stickers: r
     } = e, i = e => {
       let t;
-      let n = S.get(e.id);
-      return null != n && (0, g.J8)(n) && (t = null != n.user ? n.user : void 0), b(E({}, e), {
+      let n = I.get(e.id);
+      return null != n && (0, m.J8)(n) && (t = null != n.user ? n.user : void 0), b(E({}, e), {
         user: t
       })
     };
     (null !== (t = C.get(n)) && void 0 !== t ? t : []).filter(e => null == r.find(t => t.id === e.id)).forEach(e => {
-      S.delete(e.id), null != I && I.delete(e.id)
+      I.delete(e.id), null != S && S.delete(e.id)
     });
     let o = r.map(e => i(e));
     o.forEach(e => L(e)), R(n, o)
@@ -255,7 +255,7 @@ class Q extends(r = o.ZP.Store) {
     return y
   }
   get stickerMetadata() {
-    return D(), null == I && (I = new Map, k()), I
+    return w(), null == S && (S = new Map, k()), S
   }
   get hasLoadedStickerPacks() {
     return null != N && N + P > Date.now()
@@ -264,7 +264,7 @@ class Q extends(r = o.ZP.Store) {
     return A
   }
   getStickerById(e) {
-    return S.has(e) || D(), S.get(e)
+    return I.has(e) || w(), I.get(e)
   }
   getStickerPack(e) {
     return O.get(e)
@@ -279,16 +279,16 @@ class Q extends(r = o.ZP.Store) {
     return C
   }
   getAllStickersIterator() {
-    return D(), S.values()
+    return w(), I.values()
   }
   getAllGuildStickers() {
-    return D(), C
+    return w(), C
   }
   getStickersByGuildId(e) {
-    return D(), C.get(e)
+    return w(), C.get(e)
   }
 }
-m(Q, "displayName", "StickersStore");
+g(Q, "displayName", "StickersStore");
 let X = new Q(a.Z, {
   BACKGROUND_SYNC: U,
   CONNECTION_OPEN: j,
@@ -302,5 +302,5 @@ let X = new Q(a.Z, {
   GUILD_STICKERS_CREATE_SUCCESS: K,
   STICKER_FETCH_SUCCESS: z,
   GUILD_STICKERS_UPDATE: q,
-  CACHED_STICKERS_LOADED: w
+  CACHED_STICKERS_LOADED: D
 })

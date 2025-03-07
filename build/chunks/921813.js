@@ -16,15 +16,15 @@ var r = n(200651),
   _ = n(576635),
   p = n(518950),
   h = n(502762),
-  g = n(4517),
-  m = n(25990),
+  m = n(4517),
+  g = n(25990),
   E = n(594174),
   v = n(150039),
   b = n(450734),
   y = n(225089),
   O = n(853726),
-  S = n(165747),
-  I = n(981631),
+  I = n(165747),
+  S = n(981631),
   T = n(228168),
   N = n(388032),
   A = n(371831);
@@ -37,13 +37,13 @@ function C(e) {
     onUpsellClick: o,
     pendingBanner: s,
     pendingBio: c,
-    pendingPronouns: m,
+    pendingPronouns: g,
     pendingAvatar: E,
     pendingAvatarDecoration: N,
     pendingNickname: C,
     pendingGlobalName: P,
-    pendingThemeColors: D,
-    pendingProfileEffectId: w,
+    pendingThemeColors: w,
+    pendingProfileEffectId: D,
     avatarClassName: L,
     containerClassName: x,
     isTryItOutFlow: M = !1,
@@ -65,7 +65,7 @@ function C(e) {
     size: l.EFr.SIZE_80,
     showPending: !0
   }), Y = (0, v.ZT)({
-    pendingProfileEffectId: w,
+    pendingProfileEffectId: D,
     displayProfile: Z
   }), {
     theme: K,
@@ -73,7 +73,7 @@ function C(e) {
   } = (0, _.Z)({
     user: t,
     displayProfile: Z,
-    pendingThemeColors: D,
+    pendingThemeColors: w,
     isPreview: i
   }), q = (0, u.H)("ProfileCustomizationPreview");
   return (0, r.jsxs)("div", {
@@ -82,7 +82,7 @@ function C(e) {
       user: t,
       displayProfile: Z,
       profileType: T.y0.BITE_SIZE,
-      pendingThemeColors: D,
+      pendingThemeColors: w,
       className: a()(A.container, x),
       forceShowPremium: i,
       children: [(0, r.jsxs)("header", {
@@ -96,7 +96,7 @@ function C(e) {
           isTryItOutFlow: M,
           disabledInputs: k,
           onUpsellClick: () => null == o ? void 0 : o({
-            object: I.qAy.EDIT_PROFILE_BANNER
+            object: S.qAy.EDIT_PROFILE_BANNER
           })
         }), (0, r.jsx)(b.Z, {
           user: t,
@@ -111,9 +111,9 @@ function C(e) {
           disabledInputs: k,
           isTryItOutFlow: M,
           onUpsellClick: () => null == o ? void 0 : o({
-            object: I.qAy.AVATAR
+            object: S.qAy.AVATAR
           })
-        }), !j && (0, r.jsx)(g.Z, {
+        }), !j && (0, r.jsx)(m.Z, {
           location: "ProfileCustomizationPreview",
           user: t,
           profileType: T.y0.BITE_SIZE
@@ -126,12 +126,12 @@ function C(e) {
         pendingNickname: C,
         pendingGlobalName: P,
         pendingBio: c,
-        pendingPronouns: m,
+        pendingPronouns: g,
         isTryItOutFlow: M,
         hideBioSection: U,
         pendingBadges: V,
         shouldOpenBadgeTooltip: F
-      }), (0, r.jsx)(S.Z, {
+      }), (0, r.jsx)(I.Z, {
         user: t,
         hideMessageInput: G,
         hideExampleButton: B
@@ -145,7 +145,7 @@ function C(e) {
 function R() {
   var e;
   let t = (0, s.e7)([E.default], () => E.default.getCurrentUser()),
-    n = (0, s.e7)([m.Z], () => m.Z.getPendingNameplate()),
+    n = (0, s.e7)([g.Z], () => g.Z.getPendingNameplate()),
     o = i.useMemo(() => {
       var e;
       return null == t || null === (e = t.collectibles) || void 0 === e || e.nameplate, N.NW.string(N.t.ziaxGh)

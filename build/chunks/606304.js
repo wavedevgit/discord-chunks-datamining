@@ -23,8 +23,8 @@ function _(e, t, n) {
 }
 let p = new Map,
   h = null,
-  g = null,
-  m = null;
+  m = null,
+  g = null;
 
 function E() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : f.Yn.DEFAULT,
@@ -74,15 +74,15 @@ function O(e, t, n) {
   return !0
 }
 
-function S(e) {
+function I(e) {
   let {
     user: t,
     sessionId: n
   } = e;
-  h = t.id, g = n, m = null
+  h = t.id, m = n, g = null
 }
 
-function I(e) {
+function S(e) {
   let {
     context: t,
     userId: n,
@@ -108,8 +108,8 @@ function T(e) {
       userId: n,
       channelId: r,
       sessionId: i
-    } = t, o = !1, a = m;
-    return n === h && i === g && (m = null != r ? r : null), a !== m && (o = p.delete(f.Yn.DEFAULT) || o), null == r ? o = n === h && i === g ? p.delete(f.Yn.DEFAULT) || o : v(f.Yn.DEFAULT, n) || o : n === h && i !== g ? o = p.delete(f.Yn.DEFAULT) || o : n !== h && r !== c.Z.getChannelId() && (o = v(f.Yn.DEFAULT, n) || o), o || e
+    } = t, o = !1, a = g;
+    return n === h && i === m && (g = null != r ? r : null), a !== g && (o = p.delete(f.Yn.DEFAULT) || o), null == r ? o = n === h && i === m ? p.delete(f.Yn.DEFAULT) || o : v(f.Yn.DEFAULT, n) || o : n === h && i !== m ? o = p.delete(f.Yn.DEFAULT) || o : n !== h && r !== c.Z.getChannelId() && (o = v(f.Yn.DEFAULT, n) || o), o || e
   }, !1)
 }
 class N extends(r = i.ZP.Store) {
@@ -158,8 +158,8 @@ class N extends(r = i.ZP.Store) {
 }
 _(N, "displayName", "SpeakingStore");
 let A = new N(o.Z, {
-  CONNECTION_OPEN: S,
-  OVERLAY_INITIALIZE: S,
-  SPEAKING: I,
+  CONNECTION_OPEN: I,
+  OVERLAY_INITIALIZE: I,
+  SPEAKING: S,
   VOICE_STATE_UPDATES: T
 })

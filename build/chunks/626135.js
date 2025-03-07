@@ -2,7 +2,7 @@
 "use strict";
 n.r(t), n.d(t, {
   AnalyticEventConfigs: () => j,
-  AnalyticsContext: () => I,
+  AnalyticsContext: () => S,
   AnalyticsSchema: () => d,
   addExtraAnalyticsDecorator: () => k,
   clearAnalyticsEventsRecording: () => X,
@@ -30,9 +30,9 @@ var r = n(192379),
   _ = n(960048),
   p = n(981631),
   h = n(94752),
-  g = n(388032);
+  m = n(388032);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -48,7 +48,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -88,18 +88,18 @@ function O(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let S = {
+let I = {
     location: {}
   },
-  I = r.createContext(S),
+  S = r.createContext(I),
   T = {},
   N = 1e4,
   A = 6e4,
   C = 12e4,
   R = 3e5,
   P = 9e5,
-  D = 36e5,
-  w = 864e5,
+  w = 36e5,
+  D = 864e5,
   L = .001,
   x = performance.now(),
   M = [];
@@ -150,7 +150,7 @@ let j = {
     throttleKeys: e => null != e.channel_static_route ? [e.guild_id, e.channel_static_route, e.channel_view] : [e.channel_id, e.channel_view]
   },
   [p.rMx.TEXT_IN_VOICE_OPENED]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: e => [e.channel_id]
   },
   [p.rMx.NOTIFICATION_VIEWED]: {
@@ -205,25 +205,25 @@ let j = {
     throttleKeys: () => []
   },
   [p.rMx.RPC_SERVER_ERROR_CAUGHT]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: () => []
   },
   [p.rMx.RPC_COMMAND_SENT]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: e => [e.application_id, e.command],
     throttlePercent: L
   },
   [p.rMx.RPC_SUBSCRIPTION_REQUESTED]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: e => [e.application_id, e.event],
     throttlePercent: L
   },
   [p.rMx.ACTIVITY_HANDSHAKE]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: e => [e.application_id]
   },
   [p.rMx.CHANNEL_BANNER_VIEWED]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: e => [e.banner_type, e.channel_id]
   },
   [p.rMx.PREMIUM_UPSELL_VIEWED]: {
@@ -275,7 +275,7 @@ let j = {
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [p.rMx.LIVE_ACTIVITY_SETTINGS_UPDATED]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: () => []
   },
   [p.rMx.KEYWORD_FILTER_MATCH]: {
@@ -367,7 +367,7 @@ function H(e) {
     } = o;
     o = E({}, y(o, ["source"]), G(e))
   }
-  o.client_performance_cpu = f.Z.getCurrentCPUUsagePercent(), o.client_performance_memory = f.Z.getCurrentMemoryUsageKB(), o.cpu_core_count = f.Z.getCPUCoreCount(), o.accessibility_features = B(), o.rendered_locale = g.NW.currentLocale, o.uptime_app = Math.floor((performance.now() - x) / 1e3);
+  o.client_performance_cpu = f.Z.getCurrentCPUUsagePercent(), o.client_performance_memory = f.Z.getCurrentMemoryUsageKB(), o.cpu_core_count = f.Z.getCPUCoreCount(), o.accessibility_features = B(), o.rendered_locale = m.NW.currentLocale, o.uptime_app = Math.floor((performance.now() - x) / 1e3);
   let a = f.Z.getProcessUptime();
   null != a && (o.uptime_process_renderer = Math.floor(a));
   let {

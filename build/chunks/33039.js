@@ -61,7 +61,7 @@ function h(e, t) {
   }
 }
 
-function g(e, t, n, r) {
+function m(e, t, n, r) {
   var i;
   e in p || (p[e] = {});
   let o = null !== (i = p[e][null != t ? t : a.kod]) && void 0 !== i ? i : {};
@@ -72,7 +72,7 @@ function g(e, t, n, r) {
   })
 }
 
-function m(e) {
+function g(e) {
   let {
     user: t,
     sessionId: n
@@ -95,7 +95,7 @@ function v(e) {
     streamId: r,
     context: i
   } = e;
-  null != r ? g(t, n, r, i) : h(t, n, i)
+  null != r ? m(t, n, r, i) : h(t, n, i)
 }
 
 function b(e) {
@@ -134,7 +134,7 @@ class y extends(r = i.ZP.Store) {
 }
 l(y, "displayName", "VideoStreamStore");
 let O = new y(o.Z, {
-  CONNECTION_OPEN: m,
+  CONNECTION_OPEN: g,
   OVERLAY_INITIALIZE: E,
   RTC_CONNECTION_VIDEO: v,
   VOICE_STATE_UPDATES: b

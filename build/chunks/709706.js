@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => D
+  Z: () => w
 }), n(230036), n(47120), n(51350);
 var r, i = n(315008),
   o = n(347715),
@@ -50,7 +50,7 @@ function p(e, t) {
   }), e
 }
 let h = new a.Yd("VoiceFilterStore"),
-  g = {
+  m = {
     nativeVoiceFilterModuleState: c.O.UNINITIALIZED,
     models: {},
     voiceFilters: {},
@@ -62,7 +62,7 @@ let h = new a.Yd("VoiceFilterStore"),
     limitedTimeVoices: void 0
   };
 
-function m(e) {
+function g(e) {
   return e.available ? 0 : e.temporarilyAvailable ? 1 : 2
 }
 
@@ -89,15 +89,15 @@ function E(e) {
 }
 
 function v(e) {
-  if (null == g.limitedTimeVoices) {
+  if (null == m.limitedTimeVoices) {
     h.warn("No limited time voices available to update");
     return
   }
-  g.limitedTimeVoices.current_set_end = e.toISOString(), g.limitedTimeVoices.next_set_start = e.toISOString(), g.limitedTimeVoices.next_set_end = (0, i.default)(e, 2).toISOString(), I()
+  m.limitedTimeVoices.current_set_end = e.toISOString(), m.limitedTimeVoices.next_set_start = e.toISOString(), m.limitedTimeVoices.next_set_end = (0, i.default)(e, 2).toISOString(), S()
 }
 
 function b(e) {
-  return Object.entries(e).sort((e, t) => m(e[1]) - m(t[1])).map(e => {
+  return Object.entries(e).sort((e, t) => g(e[1]) - g(t[1])).map(e => {
     let [t] = e;
     return t
   })
@@ -107,81 +107,81 @@ function y(e) {
   let {
     catalog: t
   } = e;
-  g.catalogFetchFailed = !1, g.models = t.models, g.limitedTimeVoices = t.limited_time_voices;
+  m.catalogFetchFailed = !1, m.models = t.models, m.limitedTimeVoices = t.limited_time_voices;
   let n = {},
-    r = E(g.limitedTimeVoices);
+    r = E(m.limitedTimeVoices);
   for (let {
       id: e,
       models: i,
       available: o
     }
-    of(g.catalogUpdateTime = r.catalogUpdateTime, t.voices)) Object.hasOwn(u.x, e) && (n[e] = p(f({}, u.x[e]), {
+    of(m.catalogUpdateTime = r.catalogUpdateTime, t.voices)) Object.hasOwn(u.x, e) && (n[e] = p(f({}, u.x[e]), {
     id: e,
     modelIds: i,
     available: o,
     temporarilyAvailable: r.currentSet.includes(e)
   }));
-  return g.voiceFilters = n, g.sortedVoiceFilters = b(g.voiceFilters), g.catalogLastFetchTime = new Date, !0
+  return m.voiceFilters = n, m.sortedVoiceFilters = b(m.voiceFilters), m.catalogLastFetchTime = new Date, !0
 }
 
 function O() {
-  g.catalogFetchFailed = !0
+  m.catalogFetchFailed = !0
 }
-class S extends(r = s.ZP.Store) {
+class I extends(r = s.ZP.Store) {
   getVoiceFilterModels() {
-    return g.models
+    return m.models
   }
   getVoiceFilters() {
-    return g.voiceFilters
+    return m.voiceFilters
   }
   getVoiceFilter(e) {
-    return g.voiceFilters[e]
+    return m.voiceFilters[e]
   }
   getModelState(e) {
-    return g.modelState[e]
+    return m.modelState[e]
   }
   isModelDownloaded(e) {
     var t;
-    return (null === (t = g.modelState[e]) || void 0 === t ? void 0 : t.status) === c.L.DOWNLOADED
+    return (null === (t = m.modelState[e]) || void 0 === t ? void 0 : t.status) === c.L.DOWNLOADED
   }
   getSortedVoiceFilters() {
-    return g.sortedVoiceFilters.map(e => g.voiceFilters[e])
+    return m.sortedVoiceFilters.map(e => m.voiceFilters[e])
   }
   getCatalogLastFetchTime() {
-    return g.catalogLastFetchTime
+    return m.catalogLastFetchTime
   }
   getCatalogUpdateTime() {
-    return g.catalogUpdateTime
+    return m.catalogUpdateTime
   }
   getLimitedTimeVoices() {
-    return g.limitedTimeVoices
+    return m.limitedTimeVoices
   }
   isNativeModuleLoaded() {
-    return g.nativeVoiceFilterModuleState === c.O.LOADED
+    return m.nativeVoiceFilterModuleState === c.O.LOADED
   }
   isNativeModuleLoading() {
-    return g.nativeVoiceFilterModuleState === c.O.LOADING
+    return m.nativeVoiceFilterModuleState === c.O.LOADING
   }
   hasNativeModuleFailed() {
-    return g.nativeVoiceFilterModuleState === c.O.FAILED
+    return m.nativeVoiceFilterModuleState === c.O.FAILED
   }
   getCatalogFetchFailed() {
-    return g.catalogFetchFailed
+    return m.catalogFetchFailed
   }
 }
 
-function I() {
-  let e = E(g.limitedTimeVoices);
-  g.catalogUpdateTime = e.catalogUpdateTime, Object.keys(g.voiceFilters).forEach(t => {
-    g.voiceFilters[t].temporarilyAvailable = e.currentSet.includes(t)
-  }), g.sortedVoiceFilters = b(g.voiceFilters)
+function S() {
+  let e = E(m.limitedTimeVoices);
+  m.catalogUpdateTime = e.catalogUpdateTime, Object.keys(m.voiceFilters).forEach(t => {
+    m.voiceFilters[t].temporarilyAvailable = e.currentSet.includes(t)
+  }), m.sortedVoiceFilters = b(m.voiceFilters)
 }
 
 function T(e) {
   let {
     modelId: t
   } = e;
-  g.modelState[t] = p(f({}, g.modelState[t]), {
+  m.modelState[t] = p(f({}, m.modelState[t]), {
     status: c.L.DOWNLOADING,
     downloadedBytes: 0
   })
@@ -193,7 +193,7 @@ function N(e) {
     downloadedBytes: n,
     totalBytes: r
   } = e;
-  g.modelState[t] = p(f({}, g.modelState[t]), {
+  m.modelState[t] = p(f({}, m.modelState[t]), {
     downloadedBytes: n,
     totalBytes: r
   })
@@ -204,7 +204,7 @@ function A(e) {
   let {
     modelId: n
   } = e;
-  (null === (t = g.modelState[n]) || void 0 === t ? void 0 : t.status) !== c.L.DOWNLOADED && (g.modelState[n] = p(f({}, g.modelState[n]), {
+  (null === (t = m.modelState[n]) || void 0 === t ? void 0 : t.status) !== c.L.DOWNLOADED && (m.modelState[n] = p(f({}, m.modelState[n]), {
     status: c.L.MISSING
   }))
 }
@@ -213,7 +213,7 @@ function C(e) {
   let {
     modelId: t
   } = e;
-  g.modelState[t] = p(f({}, g.modelState[t]), {
+  m.modelState[t] = p(f({}, m.modelState[t]), {
     status: c.L.DOWNLOADED,
     downloadedBytes: void 0
   })
@@ -227,17 +227,17 @@ function R(e) {
 }
 
 function P(e) {
-  g.nativeVoiceFilterModuleState = e.state
+  m.nativeVoiceFilterModuleState = e.state
 }
-d(S, "displayName", "VoiceFilterStore");
-let D = new S(l.Z, {
+d(I, "displayName", "VoiceFilterStore");
+let w = new I(l.Z, {
   VOICE_FILTER_DOWNLOAD_STARTED: T,
   VOICE_FILTER_DOWNLOAD_PROGRESS: N,
   VOICE_FILTER_DOWNLOAD_FAILED: A,
   VOICE_FILTER_FILE_READY: C,
   VOICE_FILTER_CATALOG_FETCH_SUCCESS: y,
   VOICE_FILTER_CATALOG_FETCH_FAILED: O,
-  VOICE_FILTER_UPDATE_LIMITED_TIME_VOICES: I,
+  VOICE_FILTER_UPDATE_LIMITED_TIME_VOICES: S,
   VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME: R,
   VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE: P
 })

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   ZP: () => k,
-  wU: () => w
+  wU: () => D
 }), n(47120);
 var r, i = n(442837),
   o = n(759174),
@@ -25,7 +25,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function m(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -74,8 +74,8 @@ function b(e, t) {
 }
 let y = 7,
   O = 1e3,
-  S = new Set,
-  I = new o.h(function(e) {
+  I = new Set,
+  S = new o.h(function(e) {
     let {
       userId: t,
       channelId: n
@@ -122,23 +122,23 @@ let N = new o.h(function(e) {
 function C(e) {
   var t, n, r, i, o, s;
   let l = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-    c = I.get(A(e)),
-    u = E(g({}, c, e), {
+    c = S.get(A(e)),
+    u = E(m({}, c, e), {
       value: null !== (n = null !== (t = e.value) && void 0 !== t ? t : null == c ? void 0 : c.value) && void 0 !== n ? n : 0,
       multiplier: Math.min(null !== (i = null !== (r = e.multiplier) && void 0 !== r ? r : null == c ? void 0 : c.multiplier) && void 0 !== i ? i : 1, y),
       decayInterval: null !== (o = null == c ? void 0 : c.decayInterval) && void 0 !== o ? o : new a.Xp
     });
-  I.set(A(e), u), l && (null === (s = u.decayInterval) || void 0 === s || s.start(O, () => {
-    let e = I.get(A(u));
+  S.set(A(e), u), l && (null === (s = u.decayInterval) || void 0 === s || s.start(O, () => {
+    let e = S.get(A(u));
     if (null != e) {
       let n = u.multiplier !== e.multiplier && u.value !== e.value;
       if (e.value <= 0 || n) {
         var t;
-        null === (t = e.decayInterval) || void 0 === t || t.stop(), e.value <= 0 && (C(E(g({}, e), {
+        null === (t = e.decayInterval) || void 0 === t || t.stop(), e.value <= 0 && (C(E(m({}, e), {
           value: 0,
           multiplier: 1
         })), M.emitChange())
-      } else C(E(g({}, e), {
+      } else C(E(m({}, e), {
         value: e.value - 1
       })), M.emitChange()
     }
@@ -157,7 +157,7 @@ function P(e) {
   C(n)
 }
 
-function D(e) {
+function w(e) {
   let {
     comboMessage: t
   } = e;
@@ -165,7 +165,7 @@ function D(e) {
   R(t)
 }
 
-function w(e, t, n, r) {
+function D(e, t, n, r) {
   return !(e !== t || null == n || r.has(n)) && (r.add(n), !0)
 }
 
@@ -181,8 +181,8 @@ function L(e) {
   } = e;
   if (!d.Z.isEnabled()) return !1;
   let s = l.default.getId();
-  if (!w(null == o ? void 0 : o.id, s, a, S)) return !1;
-  let c = I.get(A({
+  if (!D(null == o ? void 0 : o.id, s, a, I)) return !1;
+  let c = S.get(A({
     userId: null !== (t = null == o ? void 0 : o.id) && void 0 !== t ? t : "???",
     channelId: r
   }));
@@ -200,14 +200,14 @@ class x extends(r = i.ZP.Store) {
     this.waitFor(l.default, c.Z)
   }
   getComboScore(e, t) {
-    let n = I.get(A({
+    let n = S.get(A({
       userId: e,
       channelId: t
     }));
     return null == n ? 0 : (0, f.Eo)(n)
   }
   getUserCombo(e, t) {
-    return I.get(A({
+    return S.get(A({
       userId: e,
       channelId: t
     }))
@@ -233,7 +233,7 @@ class x extends(r = i.ZP.Store) {
 h(x, "displayName", "PoggermodeStore");
 let M = new x(s.Z, {
     POGGERMODE_UPDATE_COMBO: P,
-    POGGERMODE_UPDATE_MESSAGE_COMBO: D,
+    POGGERMODE_UPDATE_MESSAGE_COMBO: w,
     MESSAGE_CREATE: L
   }),
   k = M

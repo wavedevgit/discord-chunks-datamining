@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  n: () => g
+  n: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -60,7 +60,7 @@ function h(e, t, n) {
     })
   })
 }
-let g = i.forwardRef(function(e, t) {
+let m = i.forwardRef(function(e, t) {
   let {
     query: n,
     onChange: o,
@@ -69,15 +69,15 @@ let g = i.forwardRef(function(e, t) {
     placeholder: u = f.NW.string(f.t["5h0QOD"]),
     "aria-label": d,
     onInteraction: p
-  } = e, g = i.useRef(null), m = i.useRef(null);
+  } = e, m = i.useRef(null), g = i.useRef(null);
   i.useImperativeHandle(t, () => ({
     focus: () => {
       var e;
-      return null === (e = m.current) || void 0 === e ? void 0 : e.focus()
+      return null === (e = g.current) || void 0 === e ? void 0 : e.focus()
     },
     blur: () => {
       var e;
-      return null === (e = m.current) || void 0 === e ? void 0 : e.blur()
+      return null === (e = g.current) || void 0 === e ? void 0 : e.blur()
     },
     activate: () => !1
   }), []);
@@ -86,8 +86,8 @@ let g = i.forwardRef(function(e, t) {
       o(e.currentTarget.value), null == p || p(c.U.SEARCH)
     };
   return (0, r.jsx)(l.t, {
-    focusTarget: m,
-    ringTarget: g,
+    focusTarget: g,
+    ringTarget: m,
     offset: {
       top: 2,
       bottom: 2,
@@ -96,11 +96,11 @@ let g = i.forwardRef(function(e, t) {
     },
     children: (0, r.jsxs)("div", {
       className: _.container,
-      ref: g,
+      ref: m,
       children: [(0, r.jsx)("input", {
         role: "searchbox",
         "aria-busy": a,
-        ref: m,
+        ref: g,
         className: _.input,
         value: n,
         onChange: v,

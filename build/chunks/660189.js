@@ -54,14 +54,14 @@ function h() {
   p = {}
 }
 
-function g(e) {
+function m(e) {
   let {
     threads: t
   } = e;
   for (let e in t) v(e, t[e].first_message)
 }
 
-function m(e) {
+function g(e) {
   let {
     threads: t,
     firstMessages: n
@@ -112,7 +112,7 @@ function O(e) {
   }
 }
 
-function S(e) {
+function I(e) {
   let {
     type: t,
     channelId: n,
@@ -129,7 +129,7 @@ function S(e) {
   p[n] = d({}, c), "MESSAGE_REACTION_ADD" === t ? p[n].firstMessage = c.firstMessage.addReaction(o, f, e.colors, s) : p[n].firstMessage = c.firstMessage.removeReaction(o, f, s)
 }
 
-function I(e) {
+function S(e) {
   let {
     channelId: t,
     messageId: n,
@@ -198,13 +198,13 @@ let R = new C(o.Z, {
   MESSAGE_UPDATE: b,
   MESSAGE_DELETE: y,
   THREAD_CREATE: O,
-  MESSAGE_REACTION_ADD: S,
-  MESSAGE_REACTION_REMOVE: S,
+  MESSAGE_REACTION_ADD: I,
+  MESSAGE_REACTION_REMOVE: I,
   MESSAGE_REACTION_REMOVE_ALL: T,
   MESSAGE_REACTION_REMOVE_EMOJI: N,
-  MESSAGE_REACTION_ADD_MANY: I,
-  LOAD_FORUM_POSTS: g,
-  LOAD_THREADS_SUCCESS: m,
-  LOAD_ARCHIVED_THREADS_SUCCESS: m,
+  MESSAGE_REACTION_ADD_MANY: S,
+  LOAD_FORUM_POSTS: m,
+  LOAD_THREADS_SUCCESS: g,
+  LOAD_ARCHIVED_THREADS_SUCCESS: g,
   LOAD_MESSAGES_SUCCESS: A
 })

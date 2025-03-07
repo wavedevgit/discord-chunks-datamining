@@ -12,35 +12,35 @@ var r = n(939793),
   _ = "[object Set]",
   p = "[object String]",
   h = "[object Symbol]",
-  g = "[object ArrayBuffer]",
-  m = "[object DataView]",
+  m = "[object ArrayBuffer]",
+  g = "[object DataView]",
   E = "[object Float32Array]",
   v = "[object Float64Array]",
   b = "[object Int8Array]",
   y = "[object Int16Array]",
   O = "[object Int32Array]",
-  S = "[object Uint8Array]",
-  I = "[object Uint8ClampedArray]",
+  I = "[object Uint8Array]",
+  S = "[object Uint8ClampedArray]",
   T = "[object Uint16Array]",
   N = "[object Uint32Array]";
 
 function A(e, t, n) {
   var A = e.constructor;
   switch (t) {
-    case g:
+    case m:
       return r(e);
     case l:
     case c:
       return new A(+e);
-    case m:
+    case g:
       return i(e, n);
     case E:
     case v:
     case b:
     case y:
     case O:
-    case S:
     case I:
+    case S:
     case T:
     case N:
       return s(e, n);

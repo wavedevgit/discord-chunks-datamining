@@ -24,25 +24,25 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let h = 750,
-  g = 15,
-  m = 500,
+  m = 15,
+  g = 500,
   E = 25,
   v = 25,
   b = 1,
   y = null,
-  O = new l.b(h, m),
-  S = new c.S(g),
-  I = !1;
+  O = new l.b(h, g),
+  I = new c.S(m),
+  S = !1;
 class T extends a.Z {
   initialize() {
     this.waitFor(r.Z), this.waitFor(o.Z), this.waitFor(i.Z), this.syncWith([s.Z], () => !0), this.syncWith([o.Z], N)
   }
   loadCache() {
     let e = this.readSnapshot(T.LATEST_SNAPSHOT_VERSION);
-    null != e && (I = !0, T.mergeSnapshot(e))
+    null != e && (S = !0, T.mergeSnapshot(e))
   }
   canEvictOrphans() {
-    return I
+    return S
   }
   saveLimit(e) {
     let t = r.Z.getBasicChannel(e);
@@ -60,18 +60,18 @@ class T extends a.Z {
       version: T.LATEST_SNAPSHOT_VERSION,
       data: {
         channels: [...O.allValues()].filter(e => !e.fallback),
-        penalized: [...S.keys()],
+        penalized: [...I.keys()],
         lastChannel: y
       }
     }
   }
   static mergeSnapshot(e) {
     let t = O,
-      n = S;
-    for (let n of (O = new l.b(O.primaryCapacity, O.extendedCapacity), S = new c.S(S.capacity), y = null != y ? y : e.lastChannel, [e.channels, t.values()]))
+      n = I;
+    for (let n of (O = new l.b(O.primaryCapacity, O.extendedCapacity), I = new c.S(I.capacity), y = null != y ? y : e.lastChannel, [e.channels, t.values()]))
       for (let e of n) e.fallback || O.put(e.channelId, e);
     for (let t of [e.penalized, n.keys()])
-      for (let e of t) S.put(e, null)
+      for (let e of t) I.put(e, null)
   }
   static recordChannel(e) {
     let t = r.Z.getBasicChannel(e);
@@ -82,7 +82,7 @@ class T extends a.Z {
         channelId: e,
         channelType: t.type
       };
-      y = r, O.put(e, r), (0, u.Hr)(t) && null != S.put(e, null) && O.delete(e)
+      y = r, O.put(e, r), (0, u.Hr)(t) && null != I.put(e, null) && O.delete(e)
     }
   }
   static deleteChannel(e) {
@@ -112,8 +112,8 @@ class T extends a.Z {
       CONNECTION_OPEN_SUPPLEMENTAL: A,
       GUILD_DELETE: L,
       LOGIN_SUCCESS: x,
-      THREAD_DELETE: w,
-      THREAD_UPDATE: D
+      THREAD_DELETE: D,
+      THREAD_UPDATE: w
     })
   }
 }
@@ -124,7 +124,7 @@ function N() {
 }
 
 function A() {
-  T.dropUnreachableChannels(), T.replaceLru((0, _.J)(O, h + m))
+  T.dropUnreachableChannels(), T.replaceLru((0, _.J)(O, h + g))
 }
 
 function C(e) {
@@ -142,11 +142,11 @@ function P(e) {
   T.deleteChannel(e.channel.id)
 }
 
-function D(e) {
+function w(e) {
   C(e.channel)
 }
 
-function w(e) {
+function D(e) {
   T.deleteChannel(e.channel.id)
 }
 
@@ -155,11 +155,11 @@ function L(e) {
 }
 
 function x(e) {
-  O.clear(), S.clear(), I = !1
+  O.clear(), I.clear(), S = !1
 }
 
 function M(e) {
-  I = !0
+  S = !0
 }
 p(T, "displayName", "SaveableChannelsStore"), p(T, "LATEST_SNAPSHOT_VERSION", 1);
 let k = new T

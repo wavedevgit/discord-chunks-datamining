@@ -28,7 +28,7 @@ e.exports = function(e, t, n, d) {
     });
   if (!_ || !p || n) {
     var h = r(/./ [f]),
-      g = t(f, "" [e], function(e, t, n, i, a) {
+      m = t(f, "" [e], function(e, t, n, i, a) {
         var s = r(e),
           l = t.exec;
         return l === o || l === u.exec ? _ && !a ? {
@@ -41,7 +41,7 @@ e.exports = function(e, t, n, d) {
           done: !1
         }
       });
-    i(String.prototype, e, g[0]), i(u, f, g[1])
+    i(String.prototype, e, m[0]), i(u, f, m[1])
   }
   d && l(u[f], "sham", !0)
 }

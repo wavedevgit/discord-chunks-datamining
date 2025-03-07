@@ -13,8 +13,8 @@ var r = n(926515),
   _ = l("native-string-replace", String.prototype.replace),
   p = RegExp.prototype.exec,
   h = p,
-  g = i("".charAt),
-  m = i("".indexOf),
+  m = i("".charAt),
+  g = i("".indexOf),
   E = i("".replace),
   v = i("".slice),
   b = function() {
@@ -25,18 +25,18 @@ var r = n(926515),
   y = s.BROKEN_CARET,
   O = void 0 !== /()??/.exec("")[1];
 (b || O || y || d || f) && (h = function(e) {
-  var t, n, i, s, l, d, f, S = this,
-    I = u(S),
+  var t, n, i, s, l, d, f, I = this,
+    S = u(I),
     T = o(e),
-    N = I.raw;
-  if (N) return N.lastIndex = S.lastIndex, t = r(h, N, T), S.lastIndex = N.lastIndex, t;
-  var A = I.groups,
-    C = y && S.sticky,
-    R = r(a, S),
-    P = S.source,
-    D = 0,
-    w = T;
-  if (C && (-1 === m(R = E(R, "y", ""), "g") && (R += "g"), w = v(T, S.lastIndex), S.lastIndex > 0 && (!S.multiline || S.multiline && "\n" !== g(T, S.lastIndex - 1)) && (P = "(?: " + P + ")", w = " " + w, D++), n = RegExp("^(?:" + P + ")", R)), O && (n = RegExp("^" + P + "$(?!\\s)", R)), b && (i = S.lastIndex), s = r(p, C ? n : S, w), C ? s ? (s.input = v(s.input, D), s[0] = v(s[0], D), s.index = S.lastIndex, S.lastIndex += s[0].length) : S.lastIndex = 0 : b && s && (S.lastIndex = S.global ? s.index + s[0].length : i), O && s && s.length > 1 && r(_, s[0], n, function() {
+    N = S.raw;
+  if (N) return N.lastIndex = I.lastIndex, t = r(h, N, T), I.lastIndex = N.lastIndex, t;
+  var A = S.groups,
+    C = y && I.sticky,
+    R = r(a, I),
+    P = I.source,
+    w = 0,
+    D = T;
+  if (C && (-1 === g(R = E(R, "y", ""), "g") && (R += "g"), D = v(T, I.lastIndex), I.lastIndex > 0 && (!I.multiline || I.multiline && "\n" !== m(T, I.lastIndex - 1)) && (P = "(?: " + P + ")", D = " " + D, w++), n = RegExp("^(?:" + P + ")", R)), O && (n = RegExp("^" + P + "$(?!\\s)", R)), b && (i = I.lastIndex), s = r(p, C ? n : I, D), C ? s ? (s.input = v(s.input, w), s[0] = v(s[0], w), s.index = I.lastIndex, I.lastIndex += s[0].length) : I.lastIndex = 0 : b && s && (I.lastIndex = I.global ? s.index + s[0].length : i), O && s && s.length > 1 && r(_, s[0], n, function() {
       for (l = 1; l < arguments.length - 2; l++) void 0 === arguments[l] && (s[l] = void 0)
     }), s && A)
     for (l = 0, s.groups = d = c(null); l < A.length; l++) d[(f = A[l])[0]] = s[f[1]];

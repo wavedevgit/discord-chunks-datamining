@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(703558),
   p = n(626135),
   h = n(358085),
-  g = n(998502),
-  m = n(981631),
+  m = n(998502),
+  g = n(981631),
   E = n(388032),
   v = n(720513),
   b = n(802138);
@@ -44,7 +44,7 @@ function O(e) {
   return e
 }
 
-function S(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,8 +55,8 @@ function S(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -90,8 +90,8 @@ function A(e) {
       }), f(!0)
     })
   }, []);
-  let g = (0, c.Z)(h),
-    m = Math.max(16, (N + T - (null !== (t = null == g ? void 0 : g.width) && void 0 !== t ? t : 0)) / 2);
+  let m = (0, c.Z)(h),
+    g = Math.max(16, (N + T - (null !== (t = null == m ? void 0 : m.width) && void 0 !== t ? t : 0)) / 2);
   return (0, r.jsx)("img", {
     ref: h,
     src: l,
@@ -103,8 +103,8 @@ function A(e) {
     style: {
       width: null !== (n = _.width) && void 0 !== n ? n : "initial",
       height: null !== (o = _.height) && void 0 !== o ? o : T,
-      marginLeft: m,
-      marginRight: m,
+      marginLeft: g,
+      marginRight: g,
       marginTop: null != _.height ? T - _.height - 33 : -33
     }
   })
@@ -124,10 +124,10 @@ class C extends i.Component {
 class R extends i.Component {
   componentDidMount() {
     var e;
-    (null === (e = this.props.upload) || void 0 === e ? void 0 : e.showLargeMessageDialog) && this.props.upload.item.platform === u.ow.WEB && p.default.track(m.rMx.OPEN_MODAL, {
+    (null === (e = this.props.upload) || void 0 === e ? void 0 : e.showLargeMessageDialog) && this.props.upload.item.platform === u.ow.WEB && p.default.track(g.rMx.OPEN_MODAL, {
       type: "Upload Large Message",
       message_content_length: this.props.upload.item.file.size
-    }), h.isPlatformEmbedded && g.ZP.focus()
+    }), h.isPlatformEmbedded && m.ZP.focus()
   }
   shouldComponentUpdate(e) {
     return null != e.upload
@@ -186,7 +186,7 @@ class R extends i.Component {
               filename: e
             }),
             onKeyDown: e => {
-              if (e.which === m.yXg.ENTER) return this.handleSubmit()
+              if (e.which === g.yXg.ENTER) return this.handleSubmit()
             }
           }), e.isImage ? (0, r.jsxs)(i.Fragment, {
             children: [(0, r.jsx)("div", {
@@ -202,7 +202,7 @@ class R extends i.Component {
                 description: e
               }),
               onKeyDown: e => {
-                if (e.which === m.yXg.ENTER) return this.handleSubmit()
+                if (e.which === g.yXg.ENTER) return this.handleSubmit()
               }
             })]
           }) : null, !0 !== o && (0, r.jsx)(s.XZJ, {
@@ -269,7 +269,7 @@ class R extends i.Component {
       }), t()
     });
     let s = e.ignoreDraft ? "" : _.Z.getDraft(this.props.channelId, e.draftType);
-    this.state = I(O({}, (0, d.eK)(s)), {
+    this.state = S(O({}, (0, d.eK)(s)), {
       textFocused: !0,
       hasSpoiler: null !== (i = null === (t = e.upload) || void 0 === t ? void 0 : t.spoiler) && void 0 !== i && i,
       filename: null !== (o = null === (n = e.upload) || void 0 === n ? void 0 : n.filename) && void 0 !== o ? o : "",
@@ -281,7 +281,7 @@ class R extends i.Component {
 
 function P(e) {
   let t = (0, f.Z)();
-  return e.upload.item.platform !== u.ow.WEB ? null : (0, r.jsx)(R, I(O({}, e), {
+  return e.upload.item.platform !== u.ow.WEB ? null : (0, r.jsx)(R, S(O({}, e), {
     file: e.upload.item.file,
     messageMaxLength: t
   }))

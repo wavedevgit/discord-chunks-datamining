@@ -5,7 +5,7 @@ n.d(t, {
   Z1: () => h,
   cN: () => E,
   fD: () => f,
-  mh: () => m,
+  mh: () => g,
   pC: () => _
 }), n(301563), n(266796);
 var r = n(664751),
@@ -80,7 +80,7 @@ function h(e) {
   return "".concat(r, ", ").concat(i)
 }
 
-function g(e) {
+function m(e) {
   switch (e) {
     case "gif":
       return "image/gif";
@@ -93,7 +93,7 @@ function g(e) {
   }
 }
 
-function m(e, t) {
+function g(e, t) {
   let n = d({
       storageHash: e,
       canAnimate: !0,
@@ -102,7 +102,7 @@ function m(e, t) {
     r = p(t);
   return {
     filename: "".concat(r, ".").concat(n),
-    type: g(n)
+    type: m(n)
   }
 }
 

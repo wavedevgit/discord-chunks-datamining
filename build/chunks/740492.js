@@ -36,8 +36,8 @@ function h(e) {
   }
   return e
 }
-let g = (window.innerWidth - d.PrS) / 2,
-  m = "standard",
+let m = (window.innerWidth - d.PrS) / 2,
+  g = "standard",
   E = null;
 
 function v() {
@@ -56,11 +56,11 @@ function O() {
   }
 }
 
-function S() {
+function I() {
   null == b && (b = {})
 }
 
-function I() {}
+function S() {}
 
 function T() {
   return b.darkSidebar = !b.darkSidebar, !0
@@ -89,7 +89,7 @@ class A extends(r = a.ZP.DeviceSettingsStore) {
   }
   get videoUploadQuality() {
     var e;
-    return null !== (e = b.videoUploadQuality) && void 0 !== e ? e : m
+    return null !== (e = b.videoUploadQuality) && void 0 !== e ? e : g
   }
   get dataSavingMode() {
     var e, t;
@@ -109,7 +109,7 @@ class A extends(r = a.ZP.DeviceSettingsStore) {
   }
   get postSidebarWidth() {
     var e;
-    return null !== (e = b.postSidebarWidth) && void 0 !== e ? e : g
+    return null !== (e = b.postSidebarWidth) && void 0 !== e ? e : m
   }
   get callChatSidebarWidth() {
     var e;
@@ -203,7 +203,7 @@ p(A, "displayName", "UnsyncedUserSettingsStore"), p(A, "persistKey", "UnsyncedUs
 let C = new A(l.Z, {
   UNSYNCED_USER_SETTINGS_UPDATE: y,
   LOGOUT: O,
-  LOGIN_SUCCESS: S,
-  REGISTER_SUCCESS: I,
+  LOGIN_SUCCESS: I,
+  REGISTER_SUCCESS: S,
   ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: T
 })

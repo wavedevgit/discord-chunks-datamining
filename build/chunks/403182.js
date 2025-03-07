@@ -3,12 +3,12 @@
 n.d(t, {
   Ng: () => O,
   OC: () => A,
-  dg: () => S,
+  dg: () => I,
   dp: () => E,
   f3: () => b,
   iL: () => C,
-  nA: () => I,
-  qF: () => m,
+  nA: () => S,
+  qF: () => g,
   uV: () => y,
   vY: () => N
 }), n(301563), n(47120), n(757143);
@@ -25,9 +25,9 @@ var r = n(200651),
   _ = n(474936),
   p = n(388032);
 let h = 524288e3,
-  g = 524288e3;
+  m = 524288e3;
 
-function m(e, t) {
+function g(e, t) {
   return e instanceof File ? e : E(e.data.buffer, e.filename, null != t ? t : "text/plain")
 }
 
@@ -95,7 +95,7 @@ function O(e) {
   return o().filesize(e)
 }
 
-function S(e) {
+function I(e) {
   let t = c.default.getCurrentUser(),
     n = d.ZP.getUserMaxFileSize(t);
   if (null == e) return n;
@@ -103,8 +103,8 @@ function S(e) {
   return Math.max(null != r ? _.HO[r.premiumTier].limits.fileSize : f.mBz, n)
 }
 
-function I(e, t) {
-  let n = S(t);
+function S(e, t) {
+  let n = I(t);
   return Array.from(e).some(e => e.size > n)
 }
 
@@ -120,14 +120,14 @@ function N(e) {
 
 function A() {
   let e = c.default.getCurrentUser();
-  return null != e && e.isStaff() ? g : h
+  return null != e && e.isStaff() ? m : h
 }
 
 function C(e) {
   let {
     guildId: t,
     onClick: n
-  } = e, i = (0, u.BU)(S(t) / 1024, {
+  } = e, i = (0, u.BU)(I(t) / 1024, {
     useKibibytes: !0
   }), o = (0, u.BU)(_.Uq / 1024, {
     useKibibytes: !0

@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(358085),
   p = n(418469),
   h = n(776031),
-  g = n(981631),
-  m = n(231338),
+  m = n(981631),
+  g = n(231338),
   E = n(65154),
   v = n(388032);
 
@@ -28,9 +28,9 @@ function b(e) {
     showReportOption: b = !1,
     disableChangeWindows: y = !1,
     simplified: O = !1,
-    appContext: S = g.IlC.APP
+    appContext: I = m.IlC.APP
   } = e, {
-    desktopSourceId: I
+    desktopSourceId: S
   } = (0, o.cj)([f.Z], () => {
     var e;
     let {
@@ -39,16 +39,16 @@ function b(e) {
     return {
       desktopSourceId: null == t ? void 0 : t.id
     }
-  }), T = (0, o.e7)([d.Z], () => d.Z.getState().soundshareEnabled), N = f.Z.supports(E.AN.DESKTOP_CAPTURE_APPLICATIONS), A = (0, o.e7)([f.Z], () => f.Z.supports(E.AN.SOUNDSHARE)), C = (0, o.e7)([f.Z], () => f.Z.supportsScreenSoundshare()), R = (0, h.Z)(t, S), P = (0, p.Z)(t, S, m.Vq), D = null != I && A && (!I.startsWith("screen") || C), w = u.Z.useExperiment({
+  }), T = (0, o.e7)([d.Z], () => d.Z.getState().soundshareEnabled), N = f.Z.supports(E.AN.DESKTOP_CAPTURE_APPLICATIONS), A = (0, o.e7)([f.Z], () => f.Z.supports(E.AN.SOUNDSHARE)), C = (0, o.e7)([f.Z], () => f.Z.supportsScreenSoundshare()), R = (0, h.Z)(t, I), P = (0, p.Z)(t, I, g.Vq), w = null != S && A && (!S.startsWith("screen") || C), D = u.Z.useExperiment({
     location: "ManageStreamsMenu"
   }, {
-    disable: !D,
+    disable: !w,
     autoTrackExposure: !0
   }).enabled, L = i.useCallback(() => {
-    (null == I ? void 0 : I.startsWith("prepicked:")) ? f.Z.getMediaEngine().eachConnection(e => {
+    (null == S ? void 0 : S.startsWith("prepicked:")) ? f.Z.getMediaEngine().eachConnection(e => {
       e.context === E.Yn.STREAM && e.presentDesktopSourcePicker()
     }): n()
-  }, [I, n]), x = i.useCallback(() => {
+  }, [S, n]), x = i.useCallback(() => {
     let {
       preset: e,
       resolution: t,
@@ -61,8 +61,8 @@ function b(e) {
       },
       context: E.Yn.STREAM
     };
-    null != I && (r.desktopSettings = {
-      sourceId: I,
+    null != S && (r.desktopSettings = {
+      sourceId: S,
       sound: !T
     }), (0, l.Rc)({
       preset: e,
@@ -70,7 +70,7 @@ function b(e) {
       frameRate: n,
       soundshareEnabled: !T
     }), s.Z.setGoLiveSource(r)
-  }, [I, T]);
+  }, [S, T]);
   if (null == t) return (0, r.jsx)(a.sNh, {
     id: "share-your-screen",
     label: v.NW.string(v.t.fjBNo6),
@@ -82,7 +82,7 @@ function b(e) {
       label: v.NW.string(v.t.ytAD9f),
       children: R
     }) : null,
-    k = w ? (0, r.jsx)(a.S89, {
+    k = D ? (0, r.jsx)(a.S89, {
       id: "stream-settings-audio-enable",
       label: O ? v.NW.string(v.t.af2Tw8) : v.NW.string(v.t.ZJEHt7),
       checked: T,

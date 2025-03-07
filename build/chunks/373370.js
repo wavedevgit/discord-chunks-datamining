@@ -57,7 +57,7 @@ function h(e, t, n) {
   return n ? c.NW.formatToParts(e, t) : c.NW.formatToPlainString(e, t)
 }
 
-function g(e) {
+function m(e) {
   let {
     quest: t,
     taskDetails: n,
@@ -78,7 +78,7 @@ function g(e) {
   }, r)
 }
 
-function m(e) {
+function g(e) {
   let {
     quest: t,
     taskDetails: n,
@@ -178,12 +178,12 @@ function O(e) {
       targetMinutes: f
     } = n,
     _ = (0, o.Kr)(t.config);
-  if ((0, o.$J)(t) && (0, o.$H)(t)) return g({
+  if ((0, o.$J)(t) && (0, o.$H)(t)) return m({
     quest: t,
     taskDetails: n,
     withoutMarkdown: i
   });
-  if ((0, o.$J)(t)) return m({
+  if ((0, o.$J)(t)) return g({
     quest: t,
     taskDetails: n,
     withoutMarkdown: i
@@ -215,23 +215,23 @@ function O(e) {
     duration: _
   }, i)
 }
-let S = e => {
+let I = e => {
   try {
     let t = "";
     if ("string" == typeof e) return e;
     if (Array.isArray(e)) {
-      for (let n of e) t += S(n.content);
+      for (let n of e) t += I(n.content);
       return t
     }
-    return S(e.content)
+    return I(e.content)
   } catch (e) {
     return p.error("Failed to convert ASTNode to string", e), ""
   }
 };
 
-function I(e) {
+function S(e) {
   let t = O(e);
-  return e.withoutMarkdown ? S(t) : t
+  return e.withoutMarkdown ? I(t) : t
 }
 
 function T(e) {
@@ -243,7 +243,7 @@ function T(e) {
     quest: t,
     questContent: r
   });
-  return I(_(d({}, e), {
+  return S(_(d({}, e), {
     connectedConsoleLinkOnClick: o,
     withoutMarkdown: !1,
     withSimplifiedCopy: (0, a.j)({

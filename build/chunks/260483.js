@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => w
+  Z: () => D
 }), n(47120);
 var r, i = n(392711),
   o = n.n(i),
@@ -43,10 +43,10 @@ function p(e) {
 
 function h(e) {
   var t;
-  null === (t = e.threads) || void 0 === t || t.forEach(m)
+  null === (t = e.threads) || void 0 === t || t.forEach(g)
 }
 
-function g(e) {
+function m(e) {
   if (!(e.id in f)) {
     var t, n;
     f[e.id] = {
@@ -59,9 +59,9 @@ function g(e) {
   return f[e.id]
 }
 
-function m(e) {
+function g(e) {
   if (!l.AW.has(e.type)) return !1;
-  let t = g(e);
+  let t = m(e);
   null != e.memberCount && (t.memberCount = e.memberCount), null != e.memberIdsPreview && (t.memberIdsPreview = e.memberIdsPreview)
 }
 
@@ -94,17 +94,17 @@ function O(e) {
   let {
     channel: t
   } = e;
-  return m(t)
-}
-
-function S(e) {
-  let {
-    threads: t
-  } = e;
-  t.forEach(m)
+  return g(t)
 }
 
 function I(e) {
+  let {
+    threads: t
+  } = e;
+  t.forEach(g)
+}
+
+function S(e) {
   let {
     threads: t
   } = e;
@@ -143,7 +143,7 @@ function C(e) {
 function R(e) {
   if (null != e && !(e.id in f)) {
     let t = c.Z.getChannel(e.id);
-    if (null != t) return m(t), !0
+    if (null != t) return g(t), !0
   }
   return !1
 }
@@ -153,7 +153,7 @@ function P(e) {
   if (null == t) return !1;
   null != e.memberIdsPreview && (t.memberIdsPreview = e.memberIdsPreview), t.memberCount = e.memberCount
 }
-class D extends(r = a.ZP.Store) {
+class w extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(c.Z)
   }
@@ -169,8 +169,8 @@ class D extends(r = a.ZP.Store) {
     return f
   }
 }
-u(D, "displayName", "ThreadMembersStore");
-let w = new D(s.Z, {
+u(w, "displayName", "ThreadMembersStore");
+let D = new w(s.Z, {
   CONNECTION_OPEN: E,
   OVERLAY_INITIALIZE: v,
   GUILD_CREATE: b,
@@ -178,12 +178,12 @@ let w = new D(s.Z, {
   CHANNEL_DELETE: T,
   THREAD_CREATE: O,
   THREAD_UPDATE: O,
-  THREAD_LIST_SYNC: S,
+  THREAD_LIST_SYNC: I,
   THREAD_MEMBERS_UPDATE: P,
   SEARCH_FINISH: C,
   MOD_VIEW_SEARCH_FINISH: C,
-  LOAD_THREADS_SUCCESS: I,
-  LOAD_ARCHIVED_THREADS_SUCCESS: I,
+  LOAD_THREADS_SUCCESS: S,
+  LOAD_ARCHIVED_THREADS_SUCCESS: S,
   THREAD_DELETE: N,
   LOAD_MESSAGES_SUCCESS: A
 })

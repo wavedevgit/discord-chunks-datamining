@@ -16,15 +16,15 @@ var r = n(200651),
   _ = n(588468),
   p = n(30465),
   h = n(313201),
-  g = n(314910),
-  m = n(549006),
+  m = n(314910),
+  g = n(549006),
   E = n(430824),
   v = n(436896),
   b = n(590921),
   y = n(606992),
   O = n(51062),
-  S = n(918559),
-  I = n(862172);
+  I = n(918559),
+  S = n(862172);
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -82,8 +82,8 @@ function P(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let D = 490,
-  w = 490,
+let w = 490,
+  D = 490,
   L = 245,
   x = 200,
   M = 175,
@@ -99,7 +99,7 @@ let D = 490,
       return null !== (e = E.Z.getGuild(k.guild_id)) && void 0 !== e ? e : null
     }, [k.guild_id]), F = i.useRef(), [Z, H, W] = (0, O.Z)(C(N({}, e), {
       guild: V
-    }), t, F), Y = (null === (n = j.autocomplete) || void 0 === n ? void 0 : n.forceChatLayer) ? m.ZP : g.ZP, K = (0, _.DJ)(Z.selectedIndex);
+    }), t, F), Y = (null === (n = j.autocomplete) || void 0 === n ? void 0 : n.forceChatLayer) ? g.ZP : m.ZP, K = (0, _.DJ)(Z.selectedIndex);
     (0, p.KR)(B, Z.isVisible, K), v.Z.trackExposure({
       location: "6e9811_1"
     });
@@ -117,7 +117,7 @@ let D = 490,
     }), Q = (0, l.e7)([d.ZP], () => {
       let e = d.ZP.getSelfEmbeddedActivityForChannel(k.id),
         t = d.ZP.getActivityPanelMode();
-      return (0, u.l5)(k) && null != e && (0, f.pY)(e.location) === k.id && t === S.Ez.PANEL
+      return (0, u.l5)(k) && null != e && (0, f.pY)(e.location) === k.id && t === I.Ez.PANEL
     }, [k]), X = i.useMemo(() => (null == q ? void 0 : q.top) == null && (null == q ? void 0 : q.left) == null && (null == q ? void 0 : q.bottom) == null && (null == q ? void 0 : q.right) == null ? "" : String(Date.now()), [null == q ? void 0 : q.top, null == q ? void 0 : q.left, null == q ? void 0 : q.bottom, null == q ? void 0 : q.right]);
     if (i.useEffect(() => {
         G(Z.isVisible)
@@ -134,17 +134,17 @@ let D = 490,
     })) && void 0 !== o ? o : null;
     if (null == J) return null;
     let $ = {
-        [I.autocompleteAttached]: null == q,
-        [I.autocompletePopout]: null != q,
-        [I.bottom]: null == q && "bottom" === e.position,
-        [I.autocompleteTop]: Q
+        [S.autocompleteAttached]: null == q,
+        [S.autocompletePopout]: null != q,
+        [S.bottom]: null == q && "bottom" === e.position,
+        [S.autocompleteTop]: Q
       },
-      ee = D;
-    null != q && (ee = (null === (T = j.autocomplete) || void 0 === T ? void 0 : T.small) ? x : (null === (A = Z.query) || void 0 === A ? void 0 : A.type) === b.eq.EMOJIS_AND_STICKERS ? w : L), ee = Math.min(window.innerHeight - M, ee);
+      ee = w;
+    null != q && (ee = (null === (T = j.autocomplete) || void 0 === T ? void 0 : T.small) ? x : (null === (A = Z.query) || void 0 === A ? void 0 : A.type) === b.eq.EMOJIS_AND_STICKERS ? D : L), ee = Math.min(window.innerHeight - M, ee);
     let et = (0, r.jsx)(_.ZP, {
       id: B,
-      className: a()(I.autocomplete, $),
-      innerClassName: I.autocompleteInner,
+      className: a()(S.autocomplete, $),
+      innerClassName: S.autocompleteInner,
       onMouseDown: e => e.preventDefault(),
       children: (0, r.jsx)(s.bG, {
         navigator: W,
@@ -160,7 +160,7 @@ let D = 490,
                 t.current = null !== (n = null == e ? void 0 : e.getScrollerNode()) && void 0 !== n ? n : null, F.current = e
               }
             }, n), {
-              className: I.scroller,
+              className: S.scroller,
               style: {
                 maxHeight: ee
               },

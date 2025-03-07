@@ -81,9 +81,9 @@ class c {
     let _ = this.getPaddingTop(),
       p = this.getPaddingBottom(),
       h = this.getPaddingLeft(),
-      g = this.getPaddingRight(),
-      m = null !== (e = this.marginLeft) && void 0 !== e ? e : 0;
-    this.columnHeights = Array(n).fill(_), this.columnWidth = (u - g - h - l * (n - 1) - (d ? l : 0)) / n, this.itemGrid = [];
+      m = this.getPaddingRight(),
+      g = null !== (e = this.marginLeft) && void 0 !== e ? e : 0;
+    this.columnHeights = Array(n).fill(_), this.columnWidth = (u - m - h - l * (n - 1) - (d ? l : 0)) / n, this.itemGrid = [];
     let E = 0;
     for (; E < this.sections.length;) {
       this.gridData.boundaries[E] = this.currentRow, this.currentRow = 0, this.lastColumnIndex = 0;
@@ -125,8 +125,8 @@ class c {
         height: d
       }), this.coordsMap[i(E)] = {
         position: "absolute",
-        [f]: m,
-        width: this.columnWidth * n + l * (n - 1) + h + g,
+        [f]: g,
+        width: this.columnWidth * n + l * (n - 1) + h + m,
         top: _,
         height: this.getMaxColumnHeight(this.columnHeights) - _
       }, E++

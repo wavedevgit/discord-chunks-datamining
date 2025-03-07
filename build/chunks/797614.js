@@ -62,8 +62,8 @@ function h() {
   let e = a.Z;
   return null != e && r.e.ALL.has(e) ? e : null
 }
-let g = 12e4,
-  m = 100;
+let m = 12e4,
+  g = 100;
 class E {
   _getMetricWithDefaults(e, t) {
     let {
@@ -85,14 +85,14 @@ class E {
   increment(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
       n = this._getMetricWithDefaults(e, "count");
-    this._metrics.push(n), (t || this._metrics.length >= m) && this._flush()
+    this._metrics.push(n), (t || this._metrics.length >= g) && this._flush()
   }
   distribution(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
       r = f(u({}, this._getMetricWithDefaults(e, "distribution")), {
         value: t
       });
-    this._metrics.push(r), (n || this._metrics.length >= m) && this._flush()
+    this._metrics.push(r), (n || this._metrics.length >= g) && this._flush()
   }
   _flush() {
     if (this._metrics.length > 0) {
@@ -102,14 +102,14 @@ class E {
         body: {
           metrics: e,
           client_info: {
-            built_at: "1741319837107",
-            build_number: "375347"
+            built_at: "1741323997444",
+            build_number: "375354"
           }
         },
         retries: 1,
         rejectWithError: !0
       }).catch(t => {
-        this._metrics.length + e.length < m && (this._metrics = [...this._metrics, ...e])
+        this._metrics.length + e.length < g && (this._metrics = [...this._metrics, ...e])
       })
     }
     this._metrics = []
@@ -117,7 +117,7 @@ class E {
   constructor() {
     c(this, "_metrics", void 0), c(this, "_intervalId", void 0), this._metrics = [], this._intervalId = setInterval(() => {
       this._flush()
-    }, g)
+    }, m)
   }
 }
 let v = new E

@@ -17,24 +17,24 @@ var r = n(200651),
   _ = n(100527),
   p = n(94795),
   h = n(327943),
-  g = n(539873),
-  m = n(207164),
+  m = n(539873),
+  g = n(207164),
   E = n(238302),
   v = n(514361),
   b = n(572397),
   y = n(705262),
   O = n(436774),
-  S = n(768762),
-  I = n(197115),
+  I = n(768762),
+  S = n(197115),
   T = n(210887),
   N = n(727939),
   A = n(981631),
   C = n(921944),
   R = n(474936),
   P = n(388032),
-  D = n(445754);
+  w = n(445754);
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -50,7 +50,7 @@ function L(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
@@ -73,10 +73,10 @@ function M(e) {
 }
 
 function k() {
-  let e = (0, m.Z)();
+  let e = (0, g.Z)();
   return i.useEffect(() => {
     (0, p.nJ)(), e()
-  }, [e]), (0, r.jsx)(g.Z, {
+  }, [e]), (0, r.jsx)(m.Z, {
     isEditor: !0
   })
 }
@@ -127,35 +127,35 @@ function j(e) {
     }
   }, [t]);
   return (0, r.jsxs)("div", {
-    className: D.footerContainer,
+    className: w.footerContainer,
     children: [o && (0, r.jsxs)("div", {
-      className: D.footerLabelContainer,
+      className: w.footerLabelContainer,
       children: [(0, r.jsx)(c.SrA, {
-        className: D.footerNitro,
+        className: w.footerNitro,
         size: "xs",
         color: O.JX.PREMIUM_TIER_2
       }), (0, r.jsx)(c.Text, {
-        className: D.footerText,
+        className: w.footerText,
         variant: "text-sm/medium",
         children: P.NW.format(P.t.x2dQxM, {
           onClick: h
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: D.footerButtonContainer,
+      className: w.footerButtonContainer,
       children: [(0, r.jsx)("div", {
         children: (0, r.jsx)(c.zxk, {
-          className: a()(D.footerButton, D.footerButtonBack),
+          className: a()(w.footerButton, w.footerButtonBack),
           color: c.Ttl.PRIMARY,
           size: c.zxk.Sizes.NONE,
           onClick: f,
           "aria-label": p,
-          children: (0, r.jsx)(S.Z, {
-            direction: S.Z.Directions.LEFT
+          children: (0, r.jsx)(I.Z, {
+            direction: I.Z.Directions.LEFT
           })
         })
-      }), o && (0, r.jsx)(I.Z, {
-        className: D.footerButton,
+      }), o && (0, r.jsx)(S.Z, {
+        className: w.footerButton,
         subscriptionTier: R.Si.TIER_2,
         showGradient: !0,
         fullWidth: !0,
@@ -176,28 +176,28 @@ function U(e) {
   }, {
     name: P.NW.string(P.t.RPh2oq),
     value: 1
-  }], []), _ = (0, l.e7)([v.Z], () => v.Z.isPreview), g = (0, l.e7)([h.Z], () => h.Z.isUpsellPreview), m = _ || g, y = i.useMemo(() => T.Z.theme, []), O = (0, b.J)(), S = i.useCallback(() => {
-    _ && O(), g && (0, p.O7)()
-  }, [_, g, O]), I = (0, f.Z)(null, m ? S : A.dG4), R = i.useCallback(() => {
-    m && (0, u.ZI)({
+  }], []), _ = (0, l.e7)([v.Z], () => v.Z.isPreview), m = (0, l.e7)([h.Z], () => h.Z.isUpsellPreview), g = _ || m, y = i.useMemo(() => T.Z.theme, []), O = (0, b.J)(), I = i.useCallback(() => {
+    _ && O(), m && (0, p.O7)()
+  }, [_, m, O]), S = (0, f.Z)(null, g ? I : A.dG4), R = i.useCallback(() => {
+    g && (0, u.ZI)({
       theme: y
-    }), (0, p.G8)(), (0, E.Mo)(), S(), null == n || n(C.L.DISMISS)
-  }, [S, n, m, y]);
+    }), (0, p.G8)(), (0, E.Mo)(), I(), null == n || n(C.L.DISMISS)
+  }, [I, n, g, y]);
   return (0, r.jsx)(N.Z, {
-    className: D.draggableContainer,
+    className: w.draggableContainer,
     children: (0, r.jsxs)("div", {
-      ref: I,
-      className: D.container,
+      ref: S,
+      className: w.container,
       children: [(0, r.jsxs)("div", {
-        className: D.headerParentContainer,
+        className: w.headerParentContainer,
         children: [(0, r.jsxs)("div", {
-          className: D.headerContainer,
+          className: w.headerContainer,
           children: [(0, r.jsx)(c.X6q, {
             variant: "heading-lg/extrabold",
             children: P.NW.string(P.t.viGN6e)
           }), (0, r.jsx)(c.olH, {
-            className: D.closeContainer,
-            innerClassName: D.closeInner,
+            className: w.closeContainer,
+            innerClassName: w.closeInner,
             withCircleBackground: !0,
             onClick: R
           })]
@@ -213,13 +213,13 @@ function U(e) {
           look: "pill"
         })]
       }), (0, r.jsxs)(c.Ttm, {
-        className: D.scrollContainer,
+        className: w.scrollContainer,
         children: [0 === a && (0, r.jsx)(M, {
           isCoachmark: o
         }), 1 === a && (0, r.jsx)(k, {})]
       }), (0, r.jsx)(j, {
         tab: a,
-        isPreview: m,
+        isPreview: g,
         onClose: R,
         isCoachmark: !1
       })]

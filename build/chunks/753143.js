@@ -64,23 +64,23 @@ function f(e) {
     listHeaderHeight: _,
     chunkSize: p = 256,
     paddingTop: h = 0,
-    paddingBottom: g = 0,
-    getScrollerState: m,
+    paddingBottom: m = 0,
+    getScrollerState: g,
     getAnchorId: E
   } = e, v = (0, o.Z)(), b = (0, r.useRef)(d), [y] = (0, r.useState)(() => new i.Z), {
     dirty: O,
-    chunkStart: S,
-    chunkEnd: I,
+    chunkStart: I,
+    chunkEnd: S,
     forceUpdateOnChunkChange: T
   } = (0, a.Z)({
     chunkSize: p,
-    getScrollerState: m,
+    getScrollerState: g,
     forceUpdate: v
   }), {
     items: N
   } = b.current, A = null, {
     scrollTop: C
-  } = m();
+  } = g();
   for (let e of N) {
     if (0 === C) break;
     if ("footer" === e.type || "header" === e.type || null == e.anchorId) continue;
@@ -96,19 +96,19 @@ function f(e) {
     }
   }
   let R = (0, r.useMemo)(() => {
-      let e = Math.max(0, S * p);
+      let e = Math.max(0, I * p);
       return null != f && e < f
-    }, [p, S, f]),
+    }, [p, I, f]),
     P = (0, r.useMemo)(() => O > 0 ? b.current : (y.mergeProps({
       sectionHeight: n,
       rowHeight: s,
       footerHeight: c,
       listHeaderHeight: _,
-      paddingBottom: g,
+      paddingBottom: m,
       paddingTop: h,
       sections: t,
       getAnchorId: E
-    }), y.compute(Math.max(0, S * p), I * p)), [O, S, I, n, s, c, _, g, h, t, y, p, E]);
+    }), y.compute(Math.max(0, I * p), S * p)), [O, I, S, n, s, c, _, m, h, t, y, p, E]);
   return (0, r.useLayoutEffect)(() => void(b.current = P)), u(l({}, P), {
     listComputer: y,
     forceUpdateOnChunkChange: T,

@@ -8,7 +8,7 @@ n.d(t, {
   _b: () => y,
   dA: () => T,
   jZ: () => N,
-  mH: () => I,
+  mH: () => S,
   uk: () => O
 }), n(47120);
 var r = n(192379),
@@ -33,7 +33,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,7 +58,7 @@ function m(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -75,7 +75,7 @@ function O(e) {
   return (null === (t = e.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null ? "COMPLETED_CLAIMED" : (null === (n = e.userStatus) || void 0 === n ? void 0 : n.completedAt) != null ? "COMPLETED" : (null === (r = e.userStatus) || void 0 === r ? void 0 : r.enrolledAt) != null ? "ENROLLED" : "NONE"
 }
 
-function S(e) {
+function I(e) {
   let t = f.r.build(e.config);
   return {
     quest_id: e.id,
@@ -85,7 +85,7 @@ function S(e) {
   }
 }
 
-function I(e, t, n) {
+function S(e, t, n) {
   return {
     content_id: e,
     content_name: y(e),
@@ -104,7 +104,7 @@ function T(e) {
   if (null == u || (0, d.X7)({
       location: _.dr.QUEST_PREVIEW_TOOL
     }) && a.Z.getLayers().includes(p.S9g.USER_SETTINGS)) return;
-  let f = g({}, S(u), r);
+  let f = m({}, I(u), r);
   if (o.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", n, f), u.preview) return;
   let h = b.has(n);
   if (l) return i.ZP.trackWithMetadata(n, f, h);
@@ -129,7 +129,7 @@ function A(e) {
   T({
     questId: t,
     event: p.rMx.QUEST_CONTENT_CLICKED,
-    properties: E(g({}, I(n, i, o)), {
+    properties: E(m({}, S(n, i, o)), {
       cta_name: r,
       impression_id: a
     }),
@@ -147,7 +147,7 @@ function C(e) {
   T({
     questId: n,
     event: p.rMx.QUEST_BAR_MODE_CHANGED,
-    properties: E(g({}, I(t)), {
+    properties: E(m({}, S(t)), {
       mode: r,
       previous_mode: i
     })
@@ -167,7 +167,7 @@ function R() {
     T({
       questId: n,
       event: r,
-      properties: E(g({}, i), {
+      properties: E(m({}, i), {
         impression_id: null == e ? void 0 : e.getId()
       }),
       trackGuildAndChannelMetadata: o
@@ -190,7 +190,7 @@ function P() {
     e({
       questId: n,
       event: p.rMx.QUEST_CONTENT_CLICKED,
-      properties: E(g({}, I(r, o, a)), {
+      properties: E(m({}, S(r, o, a)), {
         cta_name: i
       }),
       trackGuildAndChannelMetadata: s

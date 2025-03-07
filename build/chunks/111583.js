@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => D
+  Z: () => w
 });
 var i, o = n(442837),
   a = n(544891),
@@ -35,8 +35,8 @@ function p(e) {
   return e
 }
 let h = 10 * c.Z.Millis.SECOND,
-  g = 1.5 * c.Z.Millis.SECOND,
-  m = 5,
+  m = 1.5 * c.Z.Millis.SECOND,
+  g = 5,
   E = {},
   v = Object.freeze({});
 
@@ -55,7 +55,7 @@ function y(e) {
     o = .8 * h;
   if (null != r && (null != r.timeout || r.prevSend + o > i)) return !1;
   let c = setTimeout(() => {
-    if (null != r && r.channelId === t && n === u.default.getId() && null != r.timeout) r.timeout = null, !(R(t) > m) && a.tn.post({
+    if (null != r && r.channelId === t && n === u.default.getId() && null != r.timeout) r.timeout = null, !(R(t) > g) && a.tn.post({
       url: f.ANM.TYPING(t),
       oldFormErrors: !0,
       rejectWithError: !0
@@ -77,7 +77,7 @@ function y(e) {
         })
       }
     })
-  }, null == r || r.prevSend > i - 2 * o ? g : 0);
+  }, null == r || r.prevSend > i - 2 * o ? m : 0);
   return r = {
     channelId: t,
     timeout: c,
@@ -93,7 +93,7 @@ function O(e) {
   null != r.timeout && clearTimeout(r.timeout), r = null
 }
 
-function S(e) {
+function I(e) {
   let {
     channelId: t
   } = e, n = u.default.getId();
@@ -103,7 +103,7 @@ function S(e) {
   }))
 }
 
-function I(e, t) {
+function S(e, t) {
   return setTimeout(() => {
     s.Z.dispatch({
       type: "TYPING_STOP",
@@ -118,7 +118,7 @@ function T(e) {
     channelId: t,
     userId: n
   } = e, r = p({}, b(t));
-  clearTimeout(r[n]), r[n] = I(t, n), E[t] = r
+  clearTimeout(r[n]), r[n] = S(t, n), E[t] = r
 }
 
 function N(e) {
@@ -162,11 +162,11 @@ class P extends(i = o.ZP.Store) {
   }
 }
 _(P, "displayName", "TypingStore");
-let D = new P(s.Z, {
+let w = new P(s.Z, {
   TYPING_START: T,
   TYPING_STOP: N,
   TYPING_START_LOCAL: y,
-  TYPING_STOP_LOCAL: S,
+  TYPING_STOP_LOCAL: I,
   CONNECTION_OPEN: C,
   OVERLAY_INITIALIZE: C,
   MESSAGE_CREATE: A

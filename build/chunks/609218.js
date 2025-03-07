@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I,
-  p: () => S
+  Z: () => S,
+  p: () => I
 }), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -17,36 +17,36 @@ var r = n(200651),
   _ = n(626135),
   p = n(74538),
   h = n(357355),
-  g = n(639119),
-  m = n(197115),
+  m = n(639119),
+  g = n(197115),
   E = n(302945),
   v = n(474936),
   b = n(981631),
   y = n(388032),
   O = n(260248),
-  S = function(e) {
+  I = function(e) {
     return e[e.NONE = 0] = "NONE", e[e.PARENT_CONTAINER = 1] = "PARENT_CONTAINER", e[e.TAB_PARENT_CONTAINER = 2] = "TAB_PARENT_CONTAINER", e
   }({});
 
-function I(e) {
+function S(e) {
   let {
     containerContext: t,
     image: n,
     title: o,
-    description: S,
-    enableSocialProof: I,
+    description: I,
+    enableSocialProof: S,
     analyticsLocationSection: T,
     upsellViewedTrackingData: N,
     onClose: A,
     onDisplay: C,
     onLearnMore: R
-  } = e, P = (0, s.e7)([h.Z], () => h.Z.affinities), D = (0, s.e7)([h.Z], () => h.Z.hasFetched);
+  } = e, P = (0, s.e7)([h.Z], () => h.Z.affinities), w = (0, s.e7)([h.Z], () => h.Z.hasFetched);
   i.useEffect(() => {
-    !D && I && c.MH()
-  }, [D, I]), i.useEffect(() => {
+    !w && S && c.MH()
+  }, [w, S]), i.useEffect(() => {
     _.default.track(b.rMx.PREMIUM_UPSELL_VIEWED, N), null == C || C()
   }, [C, N]);
-  let w = P.length > 1 && I,
+  let D = P.length > 1 && S,
     L = () => 2 === t ? O.hasTabParentContainer : 1 === t ? O.hasParentContainer : O.noParentContainer,
     x = () => {
       _.default.track(b.rMx.PREMIUM_PROMOTION_OPENED, {
@@ -54,7 +54,7 @@ function I(e) {
         location_object: b.qAy.NAVIGATION_LINK
       }), null == R || R(), (0, d.Z)(), A(), (0, u.xf)(), (0, f.uL)(b.Z5c.APPLICATION_STORE)
     },
-    M = (0, g.N)(),
+    M = (0, m.N)(),
     k = i.useCallback(() => {
       var e;
       return null !== (e = (0, p.fr)(M)) && void 0 !== e ? e : y.NW.string(y.t.pj0XBA)
@@ -80,16 +80,16 @@ function I(e) {
           alt: "Nitro Perk"
         }), (0, r.jsx)(l.X6q, {
           className: a()(O.title, {
-            [O.titleNoSocialProof]: !w
+            [O.titleNoSocialProof]: !D
           }),
           variant: "heading-xl/bold",
           children: o
-        }), w && (0, r.jsx)(E.Z, {
+        }), D && (0, r.jsx)(E.Z, {
           affinities: P
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           className: O.body,
-          children: S
+          children: I
         })]
       }), (0, r.jsxs)("div", {
         className: O.ctaContainer,
@@ -100,7 +100,7 @@ function I(e) {
           look: l.zxk.Looks.LINK,
           onClick: x,
           children: y.NW.string(y.t.ZnqyZ2)
-        }), (0, r.jsx)(m.Z, {
+        }), (0, r.jsx)(g.Z, {
           showGradient: !0,
           premiumModalAnalyticsLocation: {
             section: T,

@@ -2,10 +2,10 @@
 "use strict";
 n.d(t, {
   Jj: () => p,
-  Lz: () => g,
+  Lz: () => m,
   gS: () => h,
   rV: () => _,
-  s$: () => m
+  s$: () => g
 }), n(47120), n(301563);
 var r = n(829883),
   i = n(378233),
@@ -40,14 +40,14 @@ function h(e) {
   return null != n && c.has(n) && f(t) && p(e)
 }
 
-function g(e) {
+function m(e) {
   let t = o.Z.toURLSafe(e);
   if (null == t) return !1;
   let n = d(e);
   return null != n && u.has(n) && f(t) && p(e)
 }
 
-function m(e) {
+function g(e) {
   let t = o.Z.toURLSafe(e);
   return null == t || t.host === l ? e : (t.origin === a ? (t.host = l, t.searchParams.delete("size"), t.searchParams.delete("width"), t.searchParams.delete("height"), t.searchParams.delete("quality")) : (t.searchParams.delete("width"), t.searchParams.delete("height"), t.searchParams.set("quality", "lossless")), t.searchParams.delete("format"), t.toString())
 }

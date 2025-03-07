@@ -47,14 +47,14 @@ function h(e) {
   l.add(t)
 }
 
-function g(e) {
+function m(e) {
   let {
     channel: t
   } = e;
   return f(t)
 }
 
-function m(e) {
+function g(e) {
   let {
     channels: t
   } = e;
@@ -119,8 +119,8 @@ class y extends o.Z {
       CONNECTION_OPEN_SUPPLEMENTAL: p,
       CACHE_LOADED_LAZY: () => this.loadCache(),
       OVERLAY_INITIALIZE: v,
-      CHANNEL_CREATE: g,
-      CHANNEL_UPDATES: m,
+      CHANNEL_CREATE: m,
+      CHANNEL_UPDATES: g,
       CHANNEL_DELETE: E,
       SET_LOCATION_METADATA: b,
       MESSAGE_REQUEST_ACCEPT_OPTIMISTIC: h

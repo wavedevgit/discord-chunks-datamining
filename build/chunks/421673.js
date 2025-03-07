@@ -17,16 +17,16 @@ var r = n(658722),
 let _ = 100,
   p = 8,
   h = 7,
-  g = 6,
-  m = 5,
+  m = 6,
+  g = 5,
   E = 4,
   v = 3,
   b = 2,
   y = 1,
   O = [],
-  S = 350,
-  I = a()(N, S),
-  T = a()(A, S);
+  I = 350,
+  S = a()(N, I),
+  T = a()(A, I);
 
 function N(e, t) {
   c.default.track(f.rMx.SEARCH_STARTED, {
@@ -53,12 +53,12 @@ function C(e, t, n, r) {
     u = null != t.emojiId ? s.ZP.getCustomEmojiById(t.emojiId) : null,
     f = null != t.emojiName ? l.ZP.convertSurrogateToName(t.emojiName, !1) : null,
     O = null != f ? l.ZP.getByName(f) : null,
-    S = null != u ? [u.name] : null !== (o = null == O ? void 0 : O.names) && void 0 !== o ? o : [];
-  return e === c && (a += p), S.includes(e) && (a += h), c.startsWith(e) && (a += g), S.some(t => t.startsWith(e)) && (a += m), c.endsWith(e) && (a += E), S.some(t => t.endsWith(e)) && (a += v), i()(e, t.name.toLocaleLowerCase()) && (a += b), S.some(t => i()(e, t)) && (a += y), a > 0 && (0, d.Nq)(n, t, r) && (a += _), a
+    I = null != u ? [u.name] : null !== (o = null == O ? void 0 : O.names) && void 0 !== o ? o : [];
+  return e === c && (a += p), I.includes(e) && (a += h), c.startsWith(e) && (a += m), I.some(t => t.startsWith(e)) && (a += g), c.endsWith(e) && (a += E), I.some(t => t.endsWith(e)) && (a += v), i()(e, t.name.toLocaleLowerCase()) && (a += b), I.some(t => i()(e, t)) && (a += y), a > 0 && (0, d.Nq)(n, t, r) && (a += _), a
 }
 
 function R(e, t, n, r, i) {
-  let o = t.reduce((t, o) => (I(i, null == r ? void 0 : r.id), t[o.soundId] = C(e.toLocaleLowerCase(), o, n, r), t), {}),
+  let o = t.reduce((t, o) => (S(i, null == r ? void 0 : r.id), t[o.soundId] = C(e.toLocaleLowerCase(), o, n, r), t), {}),
     a = t.filter(e => o[e.soundId] > 0).sort((e, t) => o[t.soundId] - o[e.soundId]);
   return T(a, i, null == r ? void 0 : r.id, e), a
 }

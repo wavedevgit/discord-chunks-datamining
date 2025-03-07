@@ -27,15 +27,15 @@ var i = n(772848),
   _ = n(866960),
   p = n(626135),
   h = n(954824),
-  g = n(617136),
-  m = n(569984),
+  m = n(617136),
+  g = n(569984),
   E = n(497505),
   v = n(918701),
   b = n(184299),
   y = n(862847),
   O = n(5881),
-  S = n(492112),
-  I = n(61115),
+  I = n(492112),
+  S = n(61115),
   T = n(150560),
   N = n(46140),
   A = n(981631),
@@ -63,7 +63,7 @@ function P(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -74,8 +74,8 @@ function D(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+function D(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -94,7 +94,7 @@ function M(e) {
     let {
       default: e
     } = await Promise.all([n.e("99393"), n.e("48923"), n.e("59644")]).then(n.bind(n, 985866));
-    return n => (0, r.jsx)(e, w(P({}, n), {
+    return n => (0, r.jsx)(e, D(P({}, n), {
       questId: t,
       questContentPosition: o,
       location: i,
@@ -109,7 +109,7 @@ function k(e, t) {
     let {
       default: i
     } = await Promise.all([n.e("8016"), n.e("86620")]).then(n.bind(n, 824393));
-    return n => (0, r.jsx)(i, w(P({}, n), {
+    return n => (0, r.jsx)(i, D(P({}, n), {
       quest: e,
       location: t
     }))
@@ -121,7 +121,7 @@ function j(e, t) {
     let {
       default: i
     } = await n.e("88938").then(n.bind(n, 390238));
-    return n => (0, r.jsx)(i, w(P({}, n), {
+    return n => (0, r.jsx)(i, D(P({}, n), {
       quest: e,
       location: t
     }))
@@ -133,7 +133,7 @@ function U(e, t) {
     let {
       default: i
     } = await n.e("20565").then(n.bind(n, 383294));
-    return n => (0, r.jsx)(i, w(P({}, n), {
+    return n => (0, r.jsx)(i, D(P({}, n), {
       quest: e,
       location: t
     }))
@@ -145,7 +145,7 @@ function U(e, t) {
 }
 
 function G(e, t) {
-  (0, g._3)({
+  (0, m._3)({
     questId: e.id,
     questContent: t.content,
     questContentPosition: t.position,
@@ -155,7 +155,7 @@ function G(e, t) {
     let {
       default: i
     } = await n.e("4266").then(n.bind(n, 316210));
-    return n => (0, r.jsx)(i, w(P({}, n), {
+    return n => (0, r.jsx)(i, D(P({}, n), {
       questContent: t.content,
       quest: e
     }))
@@ -187,10 +187,10 @@ function V(e) {
       location: N.dr.QUESTS_BAR
     };
   if (!(0, y.j)(n)) return;
-  let r = (0, S.Z)({
+  let r = (0, I.Z)({
     entityName: e.config.messages.gameTitle
   });
-  t.log("Showing survey ".concat(r.id)), (0, I.C)({
+  t.log("Showing survey ".concat(r.id)), (0, S.C)({
     questId: e.id,
     survey: r
   })
@@ -211,7 +211,7 @@ function H(e) {
     let {
       default: i
     } = await Z();
-    return o => (0, r.jsx)(i, w(P({}, o), {
+    return o => (0, r.jsx)(i, D(P({}, o), {
       openStartClockTime: performance.now(),
       questId: e.id,
       autoplay: t,
@@ -224,10 +224,10 @@ function H(e) {
       var t, r;
       let i = b.ZP.getState().getVideoProgress(e.id);
       if (null == i) return;
-      let o = m.Z.getQuest(e.id);
+      let o = g.Z.getQuest(e.id);
       null != o && (null === (t = o.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null && (null === (r = o.userStatus) || void 0 === r ? void 0 : r.completedAt) == null && (0, v.FI)(o, i.maxTimestampSec);
       let a = F(i.maxTimestampSec, i.duration);
-      (0, g.dA)({
+      (0, m.dA)({
         questId: e.id,
         event: A.rMx.QUEST_VIDEO_PROGRESSED,
         properties: {
@@ -235,7 +235,7 @@ function H(e) {
           video_timestamp_seconds: i.maxTimestampSec,
           video_session_id: n
         }
-      }), (0, g.dA)({
+      }), (0, m.dA)({
         questId: e.id,
         event: A.rMx.QUEST_VIDEO_MODAL_CLOSED,
         properties: {

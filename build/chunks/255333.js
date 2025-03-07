@@ -63,9 +63,9 @@ function p(e) {
 let h = new(o())({
     max: f
   }),
-  g = {};
+  m = {};
 
-function m(e) {
+function g(e) {
   let {
     applicationId: t,
     guildId: n,
@@ -75,7 +75,7 @@ function m(e) {
     guildId: n,
     page: r
   });
-  g = d(c({}, g), {
+  m = d(c({}, m), {
     [i]: 1
   })
 }
@@ -99,7 +99,7 @@ function E(e) {
     loadId: i,
     page: o,
     totalPages: a
-  }), g = d(c({}, g), {
+  }), m = d(c({}, m), {
     [s]: 2
   })
 }
@@ -114,7 +114,7 @@ function v(e) {
     guildId: n,
     page: r
   });
-  g = d(c({}, g), {
+  m = d(c({}, m), {
     [i]: 3
   })
 }
@@ -139,7 +139,7 @@ class b extends(r = a.ZP.Store) {
       guildId: n,
       page: r
     } = e;
-    if (null != t) return g[p({
+    if (null != t) return m[p({
       applicationId: t,
       guildId: n,
       page: r
@@ -148,7 +148,7 @@ class b extends(r = a.ZP.Store) {
 }
 l(b, "displayName", "ApplicationDirectorySimilarApplicationsStore");
 let y = new b(s.Z, {
-  APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS: m,
+  APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS: g,
   APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_SUCCESS: E,
   APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_FAILURE: v
 })

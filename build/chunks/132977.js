@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   ZX: () => O,
-  gt: () => S,
+  gt: () => I,
   rH: () => v
 });
 var r, i = n(200651),
@@ -48,13 +48,13 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -90,8 +90,8 @@ class O extends(r = o.PureComponent) {
         shineSize: n,
         shinePaused: r
       } = e,
-      o = m(e, ["className", "shineSize", "shinePaused"]);
-    return (0, i.jsx)(l.Z.div, g(p({}, o), {
+      o = g(e, ["className", "shineSize", "shinePaused"]);
+    return (0, i.jsx)(l.Z.div, m(p({}, o), {
       className: s()(f.shineContainer, t, {
         [f.shinePaused]: r
       }),
@@ -109,7 +109,7 @@ class O extends(r = o.PureComponent) {
 _(O, "defaultProps", {
   shineSize: "default"
 });
-let S = e => {
+let I = e => {
   var {
     children: t,
     className: n,
@@ -120,21 +120,21 @@ let S = e => {
     shinePaused: _,
     buttonShineClassName: h,
     onlyShineOnHover: E
-  } = e, v = m(e, ["children", "className", "disabled", "submitting", "pauseAnimation", "shineSize", "shinePaused", "buttonShineClassName", "onlyShineOnHover"]);
+  } = e, v = g(e, ["children", "className", "disabled", "submitting", "pauseAnimation", "shineSize", "shinePaused", "buttonShineClassName", "onlyShineOnHover"]);
   let b = o.createRef(),
     y = (0, u.Z)(b),
-    S = !r && !a && !0 !== l && (!E || y);
-  return (0, i.jsxs)(c.zxk, g(p({
+    I = !r && !a && !0 !== l && (!E || y);
+  return (0, i.jsxs)(c.zxk, m(p({
     buttonRef: b
   }, v), {
     className: s()(f.shinyButton, n),
     disabled: r,
     submitting: a,
-    children: [t, S ? (0, i.jsx)(O, {
+    children: [t, I ? (0, i.jsx)(O, {
       shinePaused: _,
       className: s()(f.buttonShine, E ? f.onlyShineOnHover : void 0, h),
       shineSize: d
     }) : null]
   }))
 };
-S.ShineSizes = v
+I.ShineSizes = v

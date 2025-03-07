@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => D,
+  Z: () => w,
   c: () => C
 }), n(411104), n(177593), n(773603);
 var i = n(990547),
@@ -17,8 +17,8 @@ var i = n(990547),
   _ = n(703656),
   p = n(365007),
   h = n(314897),
-  g = n(480294),
-  m = n(573261),
+  m = n(480294),
+  g = n(573261),
   E = n(572691),
   v = n(981631),
   b = n(792101);
@@ -45,7 +45,7 @@ function O(e) {
   return e
 }
 
-function S(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,8 +56,8 @@ function S(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -93,7 +93,7 @@ function P() {
     }]
   })
 }
-let D = {
+let w = {
   startSession(e) {
     l.Z.wait(() => {
       l.Z.dispatch({
@@ -115,7 +115,7 @@ let D = {
     return l.Z.dispatch({
       type: "LOGIN",
       isPasswordAttempt: !0
-    }), m.Z.post(I(O({
+    }), g.Z.post(S(O({
       url: v.ANM.LOGIN,
       body: {
         login: t,
@@ -209,7 +209,7 @@ let D = {
       isMultiAccount: a,
       mfaType: s
     } = e;
-    return m.Z.post({
+    return g.Z.post({
       url: v.ANM.LOGIN_MFA(s),
       body: {
         code: t,
@@ -275,7 +275,7 @@ let D = {
       source: r,
       giftCodeSKUId: o
     } = e;
-    return m.Z.post({
+    return g.Z.post({
       url: v.ANM.WEBAUTHN_CONDITIONAL_UI_LOGIN,
       body: {
         credential: n,
@@ -349,7 +349,7 @@ let D = {
     var e;
     let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : v.Z5c.DEFAULT_LOGGED_OUT,
       n = arguments.length > 1 ? arguments[1] : void 0;
-    return m.Z.post(I(O({
+    return g.Z.post(S(O({
       url: v.ANM.LOGOUT,
       body: {
         provider: (0, b.xJ)(),
@@ -396,7 +396,7 @@ let D = {
     }).catch(() => P(e))
   },
   async verify(e) {
-    let t = await m.Z.post({
+    let t = await g.Z.post({
       url: v.ANM.VERIFY,
       body: {
         token: e
@@ -411,7 +411,7 @@ let D = {
       token: t.body.token
     }), t.body.user_id
   },
-  authorizePayment: e => m.Z.post({
+  authorizePayment: e => g.Z.post({
     url: v.ANM.AUTHORIZE_PAYMENT,
     body: {
       token: e
@@ -421,7 +421,7 @@ let D = {
     },
     rejectWithError: !0
   }),
-  authorizeIPAddress: e => m.Z.post({
+  authorizeIPAddress: e => g.Z.post({
     url: v.ANM.AUTHORIZE_IP,
     body: {
       token: e
@@ -431,7 +431,7 @@ let D = {
     },
     rejectWithError: !0
   }),
-  verifyResend: () => m.Z.post({
+  verifyResend: () => g.Z.post({
     url: v.ANM.VERIFY_RESEND,
     oldFormErrors: !0,
     trackedActionData: {
@@ -464,7 +464,7 @@ let D = {
           backup: s,
           totp: l
         }
-      } = await m.Z.post({
+      } = await g.Z.post({
         url: v.ANM.RESET_PASSWORD,
         body: r,
         oldFormErrors: !0,
@@ -501,7 +501,7 @@ let D = {
     } = e;
     return l.Z.dispatch({
       type: "LOGIN_MFA"
-    }), (await m.Z.post({
+    }), (await g.Z.post({
       url: v.ANM.RESET_PASSWORD,
       body: {
         code: n,
@@ -526,7 +526,7 @@ let D = {
       type: "FORGOT_PASSWORD_REQUEST"
     });
     try {
-      return await m.Z.post({
+      return await g.Z.post({
         url: v.ANM.FORGOT_PASSWORD,
         body: {
           login: e
@@ -577,7 +577,7 @@ let D = {
     rejectWithError: !0
   }).then(e => {
     var t, n, i, o, a;
-    if (clearTimeout(r), null == g.Z.getAuthenticationConsentRequired()) {
+    if (clearTimeout(r), null == m.Z.getAuthenticationConsentRequired()) {
       let t = null === (o = null == e ? void 0 : null === (i = e.body) || void 0 === i ? void 0 : i.consent_required) || void 0 === o || o;
       l.Z.dispatch({
         type: "SET_CONSENT_REQUIRED",

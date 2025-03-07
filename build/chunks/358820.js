@@ -4,8 +4,8 @@ n.d(t, {
   fz: () => O,
   ge: () => T,
   r5: () => N,
-  rk: () => S,
-  wV: () => I
+  rk: () => I,
+  wV: () => S
 }), n(411104);
 var r = n(512722),
   i = n.n(r),
@@ -21,7 +21,7 @@ var r = n(512722),
   p = n(709706),
   h = n(750180);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -70,30 +70,30 @@ function O(e) {
       fileName: i
     } = e,
     o = p.Z.getModelState(r);
-  (null == o ? void 0 : o.status) !== h.L.DOWNLOADING && (a.Z.dispatch(m({
+  (null == o ? void 0 : o.status) !== h.L.DOWNLOADING && (a.Z.dispatch(g({
     type: "VOICE_FILTER_DOWNLOAD_STARTED"
   }, e)), f.ZP.downloadVoiceFilterFile(n, i, t => {
     let {
       downloadedBytes: n,
       totalBytes: r
     } = t;
-    a.Z.dispatch(v(m({
+    a.Z.dispatch(v(g({
       type: "VOICE_FILTER_DOWNLOAD_PROGRESS"
     }, e), {
       downloadedBytes: n,
       totalBytes: r
     }))
   }).then(n => {
-    a.Z.dispatch(v(m({
+    a.Z.dispatch(v(g({
       type: "VOICE_FILTER_FILE_READY"
     }, e), {
       fetchedFromNetwork: n.fetchedFromNetwork,
       analyticsContext: t
     }))
   }).catch(t => {
-    (null == t ? void 0 : t.USER_CANCELED_DOWNLOAD) ? b.info("User canceled the download for Voice Filter dependency", e): b.error("Failed to fetch voice filter model", m({
+    (null == t ? void 0 : t.USER_CANCELED_DOWNLOAD) ? b.info("User canceled the download for Voice Filter dependency", e): b.error("Failed to fetch voice filter model", g({
       reason: t
-    }, e)), a.Z.dispatch(v(m({
+    }, e)), a.Z.dispatch(v(g({
       type: "VOICE_FILTER_DOWNLOAD_FAILED"
     }, e), {
       error: t
@@ -101,7 +101,7 @@ function O(e) {
   }))
 }
 
-function S(e) {
+function I(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
   if (!p.Z.isNativeModuleLoaded()) {
     b.warn("Voice Filter apply ignored, module not loaded.");
@@ -125,7 +125,7 @@ function S(e) {
     })
   })
 }
-async function I() {
+async function S() {
   if (!p.Z.isNativeModuleLoaded()) {
     b.info("Voice Filter catalog refresh ignored, module not loaded.");
     return
@@ -176,7 +176,7 @@ async function N() {
       await t.setupResources(), await a.Z.dispatch({
         type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
         state: h.O.LOADED
-      }), await I();
+      }), await S();
       let n = l.Z.getMostRecentlyRequestedVoiceFilter();
       if (null != n) {
         var e;

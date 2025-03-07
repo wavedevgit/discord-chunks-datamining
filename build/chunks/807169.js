@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Hs: () => m,
+  Hs: () => g,
   Vh: () => b,
-  k: () => g,
+  k: () => m,
   ny: () => y
 });
 var r = n(192379),
@@ -20,34 +20,34 @@ var r = n(192379),
   p = n(594174),
   h = n(981631);
 
-function g(e, t) {
+function m(e, t) {
   var n, r, i, o, a;
   let _;
   let h = null != (_ = e instanceof c.Sf && e.isThread() && null !== (i = d.Z.getChannel(e.parent_id)) && void 0 !== i ? i : e) ? y(_) : void 0,
-    g = l.xM.getSetting(),
-    m = u.default.getId(),
+    m = l.xM.getSetting(),
+    g = u.default.getId(),
     b = null !== (o = null === (n = p.default.getCurrentUser()) || void 0 === n ? void 0 : n.nsfwAllowed) && void 0 !== o && o,
-    O = null != h && null !== (a = null === (r = f.ZP.getMember(h, m)) || void 0 === r ? void 0 : r.roles) && void 0 !== a ? a : [],
-    S = s.Z.isViewingRoles(h),
+    O = null != h && null !== (a = null === (r = f.ZP.getMember(h, g)) || void 0 === r ? void 0 : r.roles) && void 0 !== a ? a : [],
+    I = s.Z.isViewingRoles(h),
     {
-      computedPermissions: I,
+      computedPermissions: S,
       hasBaseAccessPermissions: T,
       hasSendMessagesPermission: N
     } = v(_, e instanceof c.Sf && e.isThread());
   return {
     context: _,
-    userId: m,
+    userId: g,
     roleIds: O,
-    isImpersonating: S,
+    isImpersonating: I,
     commandTypes: t,
-    computedPermissions: I,
+    computedPermissions: S,
     hasBaseAccessPermissions: T,
     hasSendMessagesPermission: N,
-    allowNsfw: E(_, b, g)
+    allowNsfw: E(_, b, m)
   }
 }
 
-function m(e, t) {
+function g(e, t) {
   let n = r.useMemo(() => {
       if (e instanceof c.Sf && e.isThread()) {
         var t;
@@ -62,11 +62,11 @@ function m(e, t) {
       var e, t;
       return null !== (t = null === (e = p.default.getCurrentUser()) || void 0 === e ? void 0 : e.nsfwAllowed) && void 0 !== t && t
     }),
-    g = (0, o.Wu)([f.ZP], () => {
+    m = (0, o.Wu)([f.ZP], () => {
       var e, t;
       return null != i && null !== (t = null === (e = f.ZP.getMember(i, _)) || void 0 === e ? void 0 : e.roles) && void 0 !== t ? t : []
     }),
-    m = (0, o.e7)([s.Z], () => s.Z.isViewingRoles(i));
+    g = (0, o.e7)([s.Z], () => s.Z.isViewingRoles(i));
   return r.useMemo(() => {
     let {
       computedPermissions: r,
@@ -76,15 +76,15 @@ function m(e, t) {
     return {
       context: n,
       userId: _,
-      roleIds: g,
+      roleIds: m,
       commandTypes: t,
-      isImpersonating: m,
+      isImpersonating: g,
       computedPermissions: r,
       hasBaseAccessPermissions: i,
       hasSendMessagesPermission: o,
       allowNsfw: E(n, h, a)
     }
-  }, [t, n, m, g, _, h, a, e])
+  }, [t, n, g, m, _, h, a, e])
 }
 
 function E(e, t, n) {

@@ -6,16 +6,16 @@ n.d(t, {
   J8: () => x,
   Q6: () => A,
   V9: () => j,
-  WD: () => w,
+  WD: () => D,
   X_: () => P,
-  Zt: () => S,
+  Zt: () => I,
   Zv: () => T,
   _V: () => N,
   cv: () => k,
   gM: () => B,
   jl: () => M,
   sM: () => C,
-  z: () => D
+  z: () => w
 }), n(474991), n(398202), n(301563), n(411104), n(566702);
 var r = n(606301),
   i = n(134432),
@@ -31,16 +31,16 @@ var r = n(606301),
 let {
   API_ENDPOINT: p,
   MEDIA_PROXY_ENDPOINT: h,
-  PROJECT_ENV: g,
-  ASSET_ENDPOINT: m,
+  PROJECT_ENV: m,
+  ASSET_ENDPOINT: g,
   CDN_HOST: E
-} = window.GLOBAL_ENV, v = Object.values(d.og), b = decodeURIComponent(_.ANM.STICKER_ASSET("[\\d]+", "(".concat(v.join("|"), ")"))), y = RegExp("(".concat(location.protocol).concat(m, "|").concat(location.protocol).concat(h, ")(").concat(b, ")"), "ig"), O = RegExp("".concat(location.protocol).concat(p, "(").concat(b, ")"), "ig"), S = e => {
+} = window.GLOBAL_ENV, v = Object.values(d.og), b = decodeURIComponent(_.ANM.STICKER_ASSET("[\\d]+", "(".concat(v.join("|"), ")"))), y = RegExp("(".concat(location.protocol).concat(g, "|").concat(location.protocol).concat(h, ")(").concat(b, ")"), "ig"), O = RegExp("".concat(location.protocol).concat(p, "(").concat(b, ")"), "ig"), I = e => {
   if (null != e.cover_sticker_id) {
     let t = e.stickers.find(t => t.id === e.cover_sticker_id);
     if (null != t) return t
   }
   return e.stickers[0]
-}, I = e => {
+}, S = e => {
   switch (e) {
     case d.u3.PNG:
       return l.$k ? d.og.WEBP : d.og.PNG;
@@ -67,7 +67,7 @@ let {
     default:
       throw Error("Unexpected file type: ".concat(e))
   }
-}, N = e => null == e ? null : "".concat(e.name, ".").concat(I(e.format_type)), A = function(e) {
+}, N = e => null == e ? null : "".concat(e.name, ".").concat(S(e.format_type)), A = function(e) {
   let {
     isPreview: t = !1,
     size: n = f.lE
@@ -75,11 +75,11 @@ let {
   if (null == e.format_type) return null;
   let r = e.format_type;
   e.format_type === d.u3.GIF && t && (r = d.u3.PNG);
-  let o = I(r),
+  let o = S(r),
     a = _.ANM.STICKER_ASSET(e.id, o),
     s = o === d.og.WEBP ? "&quality=lossless" : "";
-  if ("development" !== g) {
-    if (e.format_type === d.u3.LOTTIE) return "".concat(location.protocol).concat(m).concat(a);
+  if ("development" !== m) {
+    if (e.format_type === d.u3.LOTTIE) return "".concat(location.protocol).concat(g).concat(a);
     let r = e.format_type === d.u3.APNG && t && !(0, c.isAndroid)() ? "&passthrough=false" : "",
       o = Math.min(2, (0, i.x_)());
     return "".concat(location.protocol).concat(h).concat(a, "?size=").concat((0, i.oO)(n * o)).concat(r).concat(s)
@@ -91,18 +91,18 @@ let {
   if (null == r) return null;
   let o = l.$k ? "webp" : "png";
   return n = null != E ? "".concat(location.protocol, "//").concat(E, "/app-assets/").concat(f.Ks, "/store/").concat(r, ".").concat(o) : "".concat(location.protocol).concat(p).concat(_.ANM.STORE_ASSET(f.Ks, r, o)), null != t && (n += "?size=".concat((0, i.oO)(t))), n
-}, R = e => null != e.match("development" !== g ? y : O), P = e => e.stickers.some(e => {
+}, R = e => null != e.match("development" !== m ? y : O), P = e => e.stickers.some(e => {
   let {
     format_type: t
   } = e;
   return t === d.u3.APNG || t === d.u3.LOTTIE || t === d.u3.GIF
-}), D = e => ({
+}), w = e => ({
   type: d.Ih.PACK,
   id: e.id,
   name: e.name,
   stickers: e.stickers,
-  previewSticker: S(e)
-}), w = (e, t) => e === f.yr.ANIMATE_ON_INTERACTION ? t : e !== f.yr.NEVER_ANIMATE, L = (e, t, n, i) => {
+  previewSticker: I(e)
+}), D = (e, t) => e === f.yr.ANIMATE_ON_INTERACTION ? t : e !== f.yr.NEVER_ANIMATE, L = (e, t, n, i) => {
   if (s.Z.getUploadCount(n, i) > 0) return !0;
   let o = u.Z.getStickerPreview(n, i);
   if (null != o && o.length > 0) return !0;

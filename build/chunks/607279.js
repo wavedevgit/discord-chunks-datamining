@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(47120);
 var r, i = n(200651),
   o = n(192379),
@@ -46,21 +46,21 @@ class h extends(r = o.Component) {
       onChange: d,
       onFocus: f,
       onBlur: h,
-      onKeyPress: g,
-      autoComplete: m,
+      onKeyPress: m,
+      autoComplete: g,
       forwardedRef: E,
       closeIconClassName: v,
       searchIconClassName: b,
       cta: y
-    } = this.props, O = null != r && r.length > 0, S = null != E ? E : this._textInputRef;
+    } = this.props, O = null != r && r.length > 0, I = null != E ? E : this._textInputRef;
     return (0, i.jsx)(l.tEY, {
-      focusTarget: S,
+      focusTarget: I,
       ringTarget: this._containerRef,
       children: (0, i.jsxs)("div", {
         className: s()(u.searchBox, a),
         ref: this._containerRef,
         children: [(0, i.jsx)(l.oil, {
-          inputRef: S,
+          inputRef: I,
           focusProps: {
             enabled: !1
           },
@@ -71,12 +71,12 @@ class h extends(r = o.Component) {
           onChange: d,
           onFocus: f,
           onBlur: h,
-          onKeyPress: g,
+          onKeyPress: m,
           value: O ? r : "",
           placeholder: n,
           autoFocus: e,
           "aria-label": t,
-          autoComplete: m ? "on" : "off"
+          autoComplete: g ? "on" : "off"
         }), null != y ? (0, i.jsx)(l.Text, {
           color: "text-muted",
           variant: "text-xs/normal",
@@ -115,6 +115,6 @@ class h extends(r = o.Component) {
 d(h, "defaultProps", {
   autoComplete: !1
 });
-let g = o.forwardRef((e, t) => (0, i.jsx)(h, f({
+let m = o.forwardRef((e, t) => (0, i.jsx)(h, f({
   forwardedRef: t
 }, e)))

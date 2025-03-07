@@ -3,7 +3,7 @@
 n.d(t, {
   C3: () => E,
   O3: () => v,
-  ZP: () => m
+  ZP: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -35,7 +35,7 @@ function h(e, t) {
   return i
 }
 
-function g(e) {
+function m(e) {
   let {
     header: t,
     isLargeModal: n
@@ -47,27 +47,27 @@ function g(e) {
   }
 }
 
-function m(e) {
+function g(e) {
   var t, n, o, s, c, p;
   let {
     header: h,
-    isLargeModal: m,
+    isLargeModal: g,
     stepProps: E
-  } = g(e), {
+  } = m(e), {
     step: v,
     stepConfigs: b,
     setBodyNode: y,
     setFooterNode: O,
-    setModalOverlayNode: S,
-    setReadySlideId: I
+    setModalOverlayNode: I,
+    setReadySlideId: S
   } = (0, d.JL)(), T = b.find(e => e.key === v);
   i.useEffect(() => {
-    S(null)
-  }, [v, S]), l()(null != T, "Unknown step for current payment flow.");
+    I(null)
+  }, [v, I]), l()(null != T, "Unknown step for current payment flow.");
   let N = null !== (c = null == T ? void 0 : null === (t = T.options) || void 0 === t ? void 0 : t.hideSlider) && void 0 !== c && c,
     A = null == T ? void 0 : null === (n = T.options) || void 0 === n ? void 0 : n.bodyClassName,
     C = null == T ? void 0 : null === (o = T.options) || void 0 === o ? void 0 : o.sliderBodyClassName;
-  return void 0 !== m && m && (C = _.sliderBodyLarge), (0, r.jsxs)(r.Fragment, {
+  return void 0 !== g && g && (C = _.sliderBodyLarge), (0, r.jsxs)(r.Fragment, {
     children: [null === (p = null == T ? void 0 : null === (s = T.options) || void 0 === s ? void 0 : s.renderHeader) || void 0 === p || p ? h : null, T.renderStep(E), null == v || N ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.hzk, {
         className: a()(A, _.body, _.noRoundedCorners, {
@@ -76,7 +76,7 @@ function m(e) {
         children: (0, r.jsx)(u.MyZ, {
           activeSlide: v,
           centered: !1,
-          onSlideReady: e => I(e),
+          onSlideReady: e => S(e),
           width: v === f.h8.ADD_PAYMENT_STEPS ? 408 : void 0,
           children: b.filter(e => null != e.key).map(e => (0, r.jsx)(u.Mi4, {
             id: e.key,
@@ -90,7 +90,7 @@ function m(e) {
       }), (0, r.jsx)("div", {
         ref: e => O(e)
       }), (0, r.jsx)("div", {
-        ref: e => S(e)
+        ref: e => I(e)
       })]
     })]
   })

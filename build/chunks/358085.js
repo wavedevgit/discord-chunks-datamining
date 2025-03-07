@@ -4,13 +4,13 @@ n.r(t), n.d(t, {
   PlatformTypes: () => r,
   getNativePlatform: () => v,
   getOS: () => b,
-  getPlatform: () => m,
+  getPlatform: () => g,
   getPlatformName: () => E,
   isAndroid: () => h,
   isAndroidChrome: () => f,
   isAndroidWeb: () => _,
   isDesktop: () => u,
-  isIOS: () => g,
+  isIOS: () => m,
   isLinux: () => c,
   isMac: () => l,
   isMacWeb: () => p,
@@ -42,7 +42,7 @@ function u() {
 }
 
 function d() {
-  return "WEB" === m()
+  return "WEB" === g()
 }
 
 function f() {
@@ -63,11 +63,11 @@ function h() {
   return "android" === a
 }
 
-function g() {
+function m() {
   return "ios" === a
 }
 
-function m() {
+function g() {
   return s() ? "WINDOWS" : l() ? "OSX" : c() ? "LINUX" : "WEB"
 }
 

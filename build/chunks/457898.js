@@ -108,7 +108,7 @@ function t(e) {
         contains: [s]
       }]
     },
-    g = {
+    m = {
       begin: /using\s/,
       end: /$/,
       returnBegin: !0,
@@ -117,7 +117,7 @@ function t(e) {
         begin: /(using|assembly|command|module|namespace|type)/
       }]
     },
-    m = {
+    g = {
       variants: [{
         className: "operator",
         begin: "(".concat(r, ")\\b")
@@ -169,7 +169,7 @@ function t(e) {
     aliases: ["pwsh", "ps", "ps1"],
     case_insensitive: !0,
     keywords: i,
-    contains: b.concat(p, h, g, m, y)
+    contains: b.concat(p, h, m, g, y)
   }
 }
 e.exports = t

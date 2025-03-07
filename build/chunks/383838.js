@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   Dd: () => h,
-  Sw: () => g,
-  To: () => m
+  Sw: () => m,
+  To: () => g
 });
 var r = n(200651);
 n(192379);
@@ -55,18 +55,18 @@ function p(e, t) {
   return i
 }
 let h = a.Z.Types,
-  g = {
+  m = {
     LEFT: "left",
     RIGHT: "right"
   };
 
-function m(e) {
+function g(e) {
   let t, n, {
       type: i = a.Z.Types.DANGER,
       imageData: d,
       button: p,
       className: h,
-      iconClassName: m,
+      iconClassName: g,
       title: E,
       body: v,
       style: b,
@@ -82,12 +82,12 @@ function m(e) {
       shrink: 0,
       children: (0, r.jsx)("img", f({
         alt: "",
-        className: o()(u.icon, m)
+        className: o()(u.icon, g)
       }, n))
-    }), e === g.RIGHT && (O = s.Z.Direction.HORIZONTAL_REVERSE)
+    }), e === m.RIGHT && (O = s.Z.Direction.HORIZONTAL_REVERSE)
   } else null != p && (n = p);
-  let S = !0;
-  return i === a.Z.Types.PRIMARY && (S = !1), (0, r.jsx)(a.Z, {
+  let I = !0;
+  return i === a.Z.Types.PRIMARY && (I = !1), (0, r.jsx)(a.Z, {
     className: o()(u.formNotice, h),
     type: i,
     style: b,
@@ -98,13 +98,13 @@ function m(e) {
         children: [null != E && "" !== E ? (0, r.jsx)(c.v, {
           tag: c.R.H5,
           className: o()(u.formNoticeTitle, {
-            [u.whiteText]: S
+            [u.whiteText]: I
           }),
           faded: !0,
           children: E
         }) : null, (0, r.jsx)(l.R, {
           className: o()(u.formNoticeBody, {
-            [u.whiteText]: S
+            [u.whiteText]: I
           }),
           children: v
         }), n]
@@ -112,4 +112,4 @@ function m(e) {
     })
   })
 }
-m.Types = a.Z.Types
+g.Types = a.Z.Types

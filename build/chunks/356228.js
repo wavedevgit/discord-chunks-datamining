@@ -214,10 +214,10 @@ function h(e) {
       t = (0, r.pi)((0, r.pi)({}, t), d(o.stem));
       continue
     }
-    var g = f(o.stem);
-    g && (t = (0, r.pi)((0, r.pi)({}, t), g));
-    var m = _(o.stem);
-    m && (t = (0, r.pi)((0, r.pi)({}, t), m))
+    var m = f(o.stem);
+    m && (t = (0, r.pi)((0, r.pi)({}, t), m));
+    var g = _(o.stem);
+    g && (t = (0, r.pi)((0, r.pi)({}, t), g))
   }
   return t
 }

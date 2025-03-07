@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => w
+  Z: () => D
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -16,15 +16,15 @@ var r = n(200651),
   _ = n(481060),
   p = n(68405),
   h = n(527429),
-  g = n(656733),
-  m = n(251625),
+  m = n(656733),
+  g = n(251625),
   E = n(985375),
   v = n(132748),
   b = n(353903),
   y = n(215016),
   O = n(981631),
-  S = n(388032),
-  I = n(726573);
+  I = n(388032),
+  S = n(726573);
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -73,13 +73,13 @@ function P(e) {
   let n = l().sample(l().values(e));
   return {
     type: O.wI2.FAVORITES,
-    name: S.NW.string(S.t.y3LQCA),
+    name: I.NW.string(I.t.y3LQCA),
     icon: _.r7p,
     src: null != n ? n.src : "https://media.giphy.com/media/1TOSaJsWtnhe0/giphy.gif",
     format: null !== (t = null == n ? void 0 : n.format) && void 0 !== t ? t : u.EO.IMAGE
   }
 }
-class D extends i.PureComponent {
+class w extends i.PureComponent {
   componentDidMount() {
     0 === this.props.trendingCategories.length && (0, p.Tg)()
   }
@@ -93,14 +93,14 @@ class D extends i.PureComponent {
     } = e;
     return (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: n === O.wI2.FAVORITES ? I.categoryFadeBlurple : I.categoryFade
+        className: n === O.wI2.FAVORITES ? S.categoryFadeBlurple : S.categoryFade
       }), (0, r.jsxs)("div", {
-        className: I.categoryText,
+        className: S.categoryText,
         children: [n === O.wI2.TRENDING_GIFS ? (0, r.jsx)(f.I, {
-          className: I.categoryIcon,
+          className: S.categoryIcon,
           color: "currentColor"
         }) : null, (0, r.jsx)("span", {
-          className: I.categoryName,
+          className: S.categoryName,
           children: t
         })]
       })]
@@ -148,7 +148,7 @@ class D extends i.PureComponent {
       if (e > 0) return null;
       let n = this.getData()[t];
       return null != n ? n.name : null
-    }), T(this, "memoizedData", (0, m.oH)(function(e, t) {
+    }), T(this, "memoizedData", (0, g.oH)(function(e, t) {
       let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
       return n ? [...t] : [e, ...t]
     })), T(this, "renderItem", (e, t, n, i) => {
@@ -187,7 +187,7 @@ class D extends i.PureComponent {
       }) : (0, r.jsx)(_.GMG, {
         ref: this._masonryRef,
         fade: !0,
-        className: a()(I.container, i),
+        className: a()(S.container, i),
         itemGutter: 12,
         getItemKey: this.getItemKey,
         columns: e,
@@ -210,11 +210,11 @@ class D extends i.PureComponent {
   }
 }
 
-function w(e) {
-  let t = (0, c.e7)([g.Z], () => g.Z.getTrendingCategories()),
+function D(e) {
+  let t = (0, c.e7)([m.Z], () => m.Z.getTrendingCategories()),
     n = (0, E.gG)(),
     i = (0, y.PY)();
-  return (0, r.jsx)(D, C(N({}, e, i), {
+  return (0, r.jsx)(w, C(N({}, e, i), {
     trendingCategories: t,
     favorites: n
   }))

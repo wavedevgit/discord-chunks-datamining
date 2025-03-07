@@ -17,8 +17,8 @@ var r, i = n(873546),
   _ = n(944486),
   p = n(914010),
   h = n(594174),
-  g = n(981631),
-  m = n(176505),
+  m = n(981631),
+  g = n(176505),
   E = n(231338);
 
 function v(e, t, n) {
@@ -32,16 +32,16 @@ function v(e, t, n) {
 let b = "message_requests",
   y = !1,
   O = !1,
-  S = !0,
-  I = !1,
+  I = !0,
+  S = !1,
   T = {},
   N = {};
 
 function A(e) {
   if (null == e) return null;
-  if ((0, m.AB)(e)) {
+  if ((0, g.AB)(e)) {
     let t = p.Z.getGuildId();
-    return null == t ? null : (0, m.Qk)(e, t)
+    return null == t ? null : (0, g.Qk)(e, t)
   }
   return e
 }
@@ -52,7 +52,7 @@ function C(e) {
 
 function R(e) {
   let t = !1;
-  I && (I = !1, t = !0);
+  S && (S = !1, t = !0);
   let n = A(_.Z.getChannelId());
   return null != n && n in T && (delete T[n], t = !0), t && e ? e : !e
 }
@@ -61,12 +61,12 @@ function P() {
   O && (O = R(O)), y = R(y)
 }
 
-function D() {
+function w() {
   y && (y = R(y)), O = R(O)
 }
 
-function w() {
-  S || l.S.dispatch(g.CkL.SEARCH_RESULTS_CLOSE), S = R(S)
+function D() {
+  I || l.S.dispatch(m.CkL.SEARCH_RESULTS_CLOSE), I = R(I)
 }
 
 function L(e) {
@@ -76,7 +76,7 @@ function L(e) {
     baseChannelId: r,
     details: i
   } = e;
-  I = !1;
+  S = !1;
   let o = A(r);
   return null != o && (N[n] = {
     type: t,
@@ -100,7 +100,7 @@ function M(e) {
     channelId: r,
     details: i
   } = e;
-  I = !1;
+  S = !1;
   let o = A(n);
   return null != o && (T[o] = {
     type: t,
@@ -115,7 +115,7 @@ function k(e) {
     parentMessageId: n,
     location: r
   } = e;
-  I = !1;
+  S = !1;
   let i = A(t);
   null != i && (T[i] = {
     type: s.tI.CREATE_THREAD,
@@ -179,8 +179,8 @@ function V(e) {
 }
 
 function F() {
-  if (I === f.Z.isActive()) return !1;
-  I = f.Z.isActive()
+  if (S === f.Z.isActive()) return !1;
+  S = f.Z.isActive()
 }
 
 function Z() {
@@ -190,7 +190,7 @@ class H extends(r = o.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t, n, r, i, o;
-      y = null !== (t = e.isMembersOpen) && void 0 !== t && t, O = null !== (n = e.isSummariesOpen) && void 0 !== n && n, S = null === (r = e.isProfileOpen) || void 0 === r || r, T = null !== (i = e.sidebars) && void 0 !== i ? i : {}, N = null !== (o = e.guildSidebars) && void 0 !== o ? o : {}
+      y = null !== (t = e.isMembersOpen) && void 0 !== t && t, O = null !== (n = e.isSummariesOpen) && void 0 !== n && n, I = null === (r = e.isProfileOpen) || void 0 === r || r, T = null !== (i = e.sidebars) && void 0 !== i ? i : {}, N = null !== (o = e.guildSidebars) && void 0 !== o ? o : {}
     }
     this.syncWith([f.Z], F), this.syncWith([d.Z], B)
   }
@@ -198,15 +198,15 @@ class H extends(r = o.ZP.PersistedStore) {
     return {
       isMembersOpen: y,
       isSummariesOpen: O,
-      isProfileOpen: S,
+      isProfileOpen: I,
       sidebars: T,
       guildSidebars: N
     }
   }
   getSection(e, t) {
-    if (I) return g.ULH.SEARCH;
+    if (S) return m.ULH.SEARCH;
     let n = A(e);
-    return null != n && null != T[n] ? g.ULH.SIDEBAR_CHAT : t && S ? g.ULH.PROFILE : O ? g.ULH.SUMMARIES : y ? g.ULH.MEMBERS : g.ULH.NONE
+    return null != n && null != T[n] ? m.ULH.SIDEBAR_CHAT : t && I ? m.ULH.PROFILE : O ? m.ULH.SUMMARIES : y ? m.ULH.MEMBERS : m.ULH.NONE
   }
   getSidebarState(e) {
     let t = A(e);
@@ -217,14 +217,14 @@ class H extends(r = o.ZP.PersistedStore) {
   }
   getCurrentSidebarChannelId(e) {
     let t = A(e);
-    if (null == t || I) return null;
+    if (null == t || S) return null;
     let n = T[t];
     return null == n ? null : n.type === s.tI.VIEW_THREAD || n.type === s.tI.VIEW_CHANNEL ? n.channelId : null
   }
   getCurrentSidebarMessageId(e) {
     var t;
     let n = A(e);
-    if (null == n || I) return null;
+    if (null == n || S) return null;
     let r = T[n];
     return null == r ? null : r.type === s.tI.VIEW_THREAD || r.type === s.tI.VIEW_CHANNEL ? null === (t = r.details) || void 0 === t ? void 0 : t.initialMessageId : null
   }
@@ -232,8 +232,8 @@ class H extends(r = o.ZP.PersistedStore) {
 v(H, "displayName", "ChannelSectionStore"), v(H, "persistKey", "ChannelSectionStore2");
 let W = new H(a.Z, {
   CHANNEL_TOGGLE_MEMBERS_SECTION: P,
-  PROFILE_PANEL_TOGGLE_SECTION: w,
-  CHANNEL_TOGGLE_SUMMARIES_SECTION: D,
+  PROFILE_PANEL_TOGGLE_SECTION: D,
+  CHANNEL_TOGGLE_SUMMARIES_SECTION: w,
   SIDEBAR_VIEW_CHANNEL: M,
   SIDEBAR_VIEW_GUILD: L,
   SIDEBAR_CREATE_THREAD: k,

@@ -25,7 +25,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function g(e) {
   }
   return e
 }
-let m = 84;
+let g = 84;
 
 function E(e) {
   let {
@@ -48,7 +48,7 @@ function E(e) {
     iconURL: _
   } = i.useMemo(() => (0, s.sl)(t, {
     fakeAppIconURL: p,
-    size: m
+    size: g
   }), [t]), h = i.useMemo(() => [{
     type: o.Y.USER_INSTALL,
     icon: a.oLu,
@@ -172,8 +172,8 @@ function O(e) {
       ref: u,
       lineHeight: p,
       lineCount: h
-    } = S(),
-    m = i.useMemo(() => {
+    } = I(),
+    g = i.useMemo(() => {
       if (null == p || null == h) return {
         key: 0
       };
@@ -188,9 +188,9 @@ function O(e) {
       ref: E,
       isTransitioning: v,
       onTransitionEnd: b
-    } = (0, c.Z)(g({
+    } = (0, c.Z)(m({
       isExpanded: o
-    }, m)),
+    }, g)),
     O = o || v;
   return (0, r.jsxs)("div", {
     className: f.descriptionContainer,
@@ -204,7 +204,7 @@ function O(e) {
         variant: "text-sm/medium",
         lineClamp: O ? void 0 : y,
         style: {
-          maxHeight: O ? void 0 : m.minHeightOverride
+          maxHeight: O ? void 0 : g.minHeightOverride
         },
         children: l
       })
@@ -226,7 +226,7 @@ function O(e) {
   })
 }
 
-function S() {
+function I() {
   let e = i.useRef(null),
     [t, n] = i.useState(null),
     [r, o] = i.useState(null);

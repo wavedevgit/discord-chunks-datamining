@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  CZ: () => g,
+  CZ: () => m,
   FT: () => v,
   In: () => d,
   Ju: () => E,
   U6: () => _,
   iV: () => h,
-  jT: () => m,
+  jT: () => g,
   y5: () => p
 }), n(47120), n(653041);
 var r = n(570140),
@@ -80,7 +80,7 @@ function h(e) {
   })
 }
 
-function g(e, t) {
+function m(e, t) {
   r.Z.dispatch({
     type: "ENABLE_AUTOMATIC_ACK",
     channelId: e,
@@ -88,7 +88,7 @@ function g(e, t) {
   })
 }
 
-function m(e, t) {
+function g(e, t) {
   r.Z.dispatch({
     type: "DISABLE_AUTOMATIC_ACK",
     channelId: e,

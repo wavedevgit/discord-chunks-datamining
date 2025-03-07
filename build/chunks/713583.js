@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -47,16 +47,16 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e) {
+function g(e) {
   var t;
   let o, _, h, {
-      className: m,
+      className: g,
       activeCommand: E,
       activeOption: v,
       optionStates: b,
@@ -72,13 +72,13 @@ function m(e) {
         let {
           default: e
         } = await n.e("5396").then(n.bind(n, 731646));
-        return t => (0, r.jsx)(e, g(p({}, t), {
+        return t => (0, r.jsx)(e, m(p({}, t), {
           id: i,
           label: d.NW.string(d.t.oJ1Mu7)
         }))
       })
     }, [null == E ? void 0 : null === (t = E.rootCommand) || void 0 === t ? void 0 : t.id]),
-    S = i.useCallback(() => {
+    I = i.useCallback(() => {
       c.Po({
         channelId: y,
         command: null,
@@ -91,7 +91,7 @@ function m(e) {
     o = v.displayName, _ = v.displayDescription, h = (null == e ? void 0 : e.success) ? null : null == e ? void 0 : e.error
   } else o = "".concat(u.GI).concat(E.displayName), _ = E.displayDescription, h = null;
   return (0, r.jsxs)("div", {
-    className: a()(m, f.bar),
+    className: a()(g, f.bar),
     onContextMenu: O,
     children: [(0, r.jsxs)("div", {
       className: f.commandInfo,
@@ -108,7 +108,7 @@ function m(e) {
     }), (0, r.jsx)("div", {
       className: f.actions,
       children: (0, r.jsx)(l.B, {
-        onClick: S
+        onClick: I
       })
     })]
   })

@@ -16,16 +16,16 @@ var r = n(200651),
   _ = n(592125),
   p = n(944486),
   h = n(626135),
-  g = n(572004),
-  m = n(591759),
+  m = n(572004),
+  g = n(591759),
   E = n(135431),
   v = n(621853),
   b = n(429974),
   y = n(475413),
   O = n(981631),
-  S = n(388032);
+  I = n(388032);
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -41,7 +41,7 @@ function T(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -69,7 +69,7 @@ function C(e) {
   var {
     user: t,
     closePopout: n
-  } = e, I = N(e, ["user", "closePopout"]);
+  } = e, S = N(e, ["user", "closePopout"]);
   let A = (0, o.e7)([v.Z], () => {
       var e;
       return null === (e = v.Z.getUserProfile(t.id)) || void 0 === e ? void 0 : e.application
@@ -80,19 +80,19 @@ function C(e) {
       var e;
       return null === (e = _.Z.getChannel(C)) || void 0 === e ? void 0 : e.guild_id
     }),
-    D = i.useMemo(() => null != R ? {
+    w = i.useMemo(() => null != R ? {
       channel: R,
       type: "channel"
     } : {
       type: "contextless"
     }, [R]),
-    w = (0, s.Z)({
-      context: D
+    D = (0, s.Z)({
+      context: w
     }),
     L = t.id,
     x = i.useCallback(() => {
       if (null != A) {
-        if (w) {
+        if (D) {
           let e = p.Z.getCurrentlySelectedChannelId(),
             t = _.Z.getChannel(e),
             r = null != f.ZP.getSidebarState(e) || (null == t ? void 0 : t.isGuildVocal()) ? d.Ie.SIDEBAR : d.Ie.NORMAL;
@@ -105,13 +105,13 @@ function C(e) {
           applicationId: A.id
         }, A))
       }
-    }, [w, A, L, P, n]),
-    M = w ? S.NW.string(S.t["Cia+Aw"]) : S.NW.string(S.t.NgXl3N);
+    }, [D, A, L, P, n]),
+    M = D ? I.NW.string(I.t["Cia+Aw"]) : I.NW.string(I.t.NgXl3N);
   if (null == A || !(0, E.Eb)(A)) return null;
   let {
     customInstallUrl: k
-  } = A, j = null == k || m.Z.isDiscordUrl(k) ? a.qJs : a.Gr1, U = w ? void 0 : j;
-  return g.wS ? (0, r.jsx)(a.yRy, {
+  } = A, j = null == k || g.Z.isDiscordUrl(k) ? a.qJs : a.Gr1, U = D ? void 0 : j;
+  return m.wS ? (0, r.jsx)(a.yRy, {
     renderPopout: e => {
       let {
         closePopout: t
@@ -119,13 +119,13 @@ function C(e) {
       return (0, r.jsx)(a.v2r, {
         navId: "user-bot-profile-add-app",
         onClose: t,
-        "aria-label": S.NW.string(S.t.dbkxVl),
+        "aria-label": I.NW.string(I.t.dbkxVl),
         onSelect: void 0,
         children: (0, r.jsx)(a.kSQ, {
           children: (0, r.jsx)(a.sNh, {
             id: "copy",
-            label: S.NW.string(S.t.XWDiho),
-            action: () => (0, g.JG)((0, u.J)(A))
+            label: I.NW.string(I.t.XWDiho),
+            action: () => (0, m.JG)((0, u.J)(A))
           })
         })
       })
@@ -140,12 +140,12 @@ function C(e) {
         icon: U,
         onContextMenu: t,
         onClick: x
-      }, n, I))
+      }, n, S))
     }
   }) : (0, r.jsx)(y.tG, T({
     action: "PRESS_ADD_APP",
     text: M,
     icon: U,
     onClick: x
-  }, I))
+  }, S))
 }

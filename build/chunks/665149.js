@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  JO: () => m,
+  JO: () => g,
   ZP: () => y,
   iz: () => E
 });
@@ -18,7 +18,7 @@ var r = n(200651),
   _ = n(79712),
   p = n(414273);
 let h = 24,
-  g = e => {
+  m = e => {
     let {
       className: t,
       wrapperClassName: n,
@@ -49,7 +49,7 @@ let h = 24,
       children: h
     })
   },
-  m = e => {
+  g = e => {
     let {
       className: t,
       iconClassName: n,
@@ -59,23 +59,23 @@ let h = 24,
       showBadge: l = !1,
       badgePosition: u = "bottom",
       color: _,
-      foreground: g,
-      background: m,
+      foreground: m,
+      background: g,
       icon: E,
       iconSize: v = h,
       onClick: b,
       onContextMenu: y,
       tooltip: O = null,
-      tooltipColor: S,
-      tooltipPosition: I = "bottom",
+      tooltipColor: I,
+      tooltipPosition: S = "bottom",
       tooltipDisabled: T,
       hideOnClick: N = !0,
       role: A,
       "aria-label": C,
       "aria-hidden": R,
       "aria-checked": P,
-      "aria-expanded": D,
-      "aria-haspopup": w
+      "aria-expanded": w,
+      "aria-haspopup": D
     } = e, L = (0, f.Q3)("BaseHeaderBar"), x = (0, r.jsx)(E, {
       x: 0,
       y: 0,
@@ -83,14 +83,14 @@ let h = 24,
       height: v,
       size: "custom",
       className: a()(n, p.icon),
-      colorClass: null != g ? g : void 0,
-      secondaryColorClass: null != m ? m : void 0,
+      colorClass: null != m ? m : void 0,
+      secondaryColorClass: null != g ? g : void 0,
       color: null != _ ? _ : "currentColor"
     }), M = C;
     return null == M && "string" == typeof O && (M = O), (0, r.jsx)(c.ua7, {
       text: O,
-      color: S,
-      position: I,
+      color: I,
+      position: S,
       hideOnClick: N,
       shouldShow: !T,
       children: e => {
@@ -98,7 +98,7 @@ let h = 24,
           onMouseEnter: f,
           onMouseLeave: h,
           onFocus: O,
-          onBlur: S
+          onBlur: I
         } = e;
         return null == b ? (0, r.jsx)("div", {
           className: a()(t, p.iconWrapper, {
@@ -111,14 +111,14 @@ let h = 24,
             height: v,
             size: "custom",
             className: a()(n, p.icon),
-            colorClass: null != g ? g : void 0,
-            secondaryColorClass: null != m ? m : void 0,
+            colorClass: null != m ? m : void 0,
+            secondaryColorClass: null != g ? g : void 0,
             color: null != _ ? _ : "currentColor",
             "aria-hidden": R,
             onMouseEnter: f,
             onMouseLeave: h,
             onFocus: O,
-            onBlur: S
+            onBlur: I
           })
         }) : (0, r.jsxs)(c.P3F, {
           tag: "div",
@@ -127,7 +127,7 @@ let h = 24,
           onMouseEnter: f,
           onMouseLeave: h,
           onFocus: O,
-          onBlur: S,
+          onBlur: I,
           className: a()(t, {
             [p.iconWrapper]: !0,
             [p.clickable]: !s && null != b,
@@ -138,8 +138,8 @@ let h = 24,
           "aria-label": M,
           "aria-hidden": R,
           "aria-checked": P,
-          "aria-haspopup": w,
-          "aria-expanded": D,
+          "aria-haspopup": D,
+          "aria-expanded": w,
           tabIndex: s || null == b ? -1 : 0,
           children: [l ? (0, r.jsx)(d.ZP, {
             mask: "top" === u ? d.ZP.Masks.HEADER_BAR_BADGE_TOP : d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
@@ -187,8 +187,8 @@ let b = e => {
     toolbar: f,
     onDoubleClick: _,
     "aria-label": h,
-    "aria-labelledby": g,
-    role: m,
+    "aria-labelledby": m,
+    role: g,
     scrollable: E,
     transparent: v = !1
   } = e, b = i.useRef(null), y = i.useContext(u.Z);
@@ -199,8 +199,8 @@ let b = e => {
       [p.themedMobile]: l.tq
     }),
     "aria-label": h,
-    "aria-labelledby": g,
-    role: m,
+    "aria-labelledby": m,
+    role: g,
     ref: b,
     children: (0, r.jsxs)(c.JcV, {
       containerRef: b,
@@ -223,5 +223,5 @@ let b = e => {
     })
   })
 };
-b.Icon = m, b.Title = g, b.Divider = E, b.Caret = v;
+b.Icon = g, b.Title = m, b.Divider = E, b.Caret = v;
 let y = b

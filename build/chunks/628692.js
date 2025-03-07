@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(409700),
   p = n(321889),
   h = n(763296),
-  g = n(697426),
-  m = n(409673),
+  m = n(697426),
+  g = n(409673),
   E = n(695346),
   v = n(592125),
   b = n(388032),
@@ -33,7 +33,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function S(e) {
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,7 +58,7 @@ function I(e, t) {
 }
 
 function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -137,29 +137,29 @@ let R = function(e) {
   } = e, d = E.jU.useSetting(), b = (0, s.e7)([h.Z], () => h.Z.getSoundById(o), [o]), O = i.useMemo(() => {
     var e;
     return null !== (e = (0, f.Z)(t, n, o, a)) && void 0 !== e ? e : b
-  }, [t, n, o, a, b]), I = (0, s.e7)([v.Z], () => v.Z.getChannel(t)), A = (0, u.X0)({
+  }, [t, n, o, a, b]), S = (0, s.e7)([v.Z], () => v.Z.getChannel(t)), A = (0, u.X0)({
     location: "SoundboardMention"
   }), R = i.useRef(null), {
     isPlaying: P,
-    playSound: D
-  } = (0, p.Z)(O, I), w = i.useCallback(async () => {
-    if (await D()) {
+    playSound: w
+  } = (0, p.Z)(O, S), D = i.useCallback(async () => {
+    if (await w()) {
       var e;
       null === (e = R.current) || void 0 === e || e.addAnimation()
     }
-  }, [D]);
+  }, [w]);
   return A ? null == O ? (0, r.jsx)(N, {
-    playSound: w
-  }) : c && !d ? (0, r.jsx)(m.ZP, {
+    playSound: D
+  }) : c && !d ? (0, r.jsx)(g.ZP, {
     containerClassName: y.jumboContainer,
     className: y.jumboButton,
     sound: O,
-    channel: I,
+    channel: S,
     refreshEnabled: !0,
-    onSelectItem: w,
+    onSelectItem: D,
     isPlayingSoundOverride: P,
     isSoundmoji: !0,
-    buttonOverlay: g.Pb.SOUNDMOJI,
+    buttonOverlay: m.Pb.SOUNDMOJI,
     tooltipClassName: y.tooltip,
     tooltipContentClassName: y.tooltipContainer,
     tooltipOverride: (0, r.jsx)(_.Dp, {
@@ -175,10 +175,10 @@ let R = function(e) {
     tooltipContentClassName: y.tooltipContainer,
     position: "top",
     delay: 500,
-    children: e => (0, r.jsx)("span", T(S({}, e), {
+    children: e => (0, r.jsx)("span", T(I({}, e), {
       children: (0, r.jsx)(C, {
         sound: O,
-        playSound: w,
+        playSound: D,
         isPlaying: P
       })
     }))

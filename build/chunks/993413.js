@@ -44,8 +44,8 @@ function _(e) {
     className: _,
     errors: p,
     disabled: h = !1,
-    hideDivider: g = !1,
-    showBorder: m = !1,
+    hideDivider: m = !1,
+    showBorder: g = !1,
     borderType: E,
     hasBackground: v = !1,
     forcedDivider: b = !1,
@@ -54,14 +54,14 @@ function _(e) {
   return (0, r.jsx)("div", {
     className: o()(u.customizationSection, _, {
       [u.disabled]: h,
-      [u.hideDivider]: g,
-      [u.showBorder]: m,
+      [u.hideDivider]: m,
+      [u.showBorder]: g,
       [u.withDivider]: b
     }),
     children: (0, r.jsxs)(c.Z, {
       className: u.customizationSectionBorder,
       backgroundClassName: u.customizationSectionBackground,
-      isShown: m,
+      isShown: g,
       type: E,
       hasBackground: v,
       children: [(0, r.jsxs)(a.vwX, {

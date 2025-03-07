@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(584973),
   p = n(303524),
   h = n(170187),
-  g = n(329520),
-  m = n(868781),
+  m = n(329520),
+  g = n(868781),
   E = n(122943),
   v = n(556638),
   b = n(981631),
@@ -29,19 +29,19 @@ function O(e) {
     activities: n,
     applicationStream: o,
     voiceChannel: O,
-    textClassName: S,
-    emojiClassName: I,
+    textClassName: I,
+    emojiClassName: S,
     textSize: T = "xs",
     animate: N = !0,
     hasQuest: A = !1,
     hideEmoji: C = !1,
     hideTooltip: R = !1
   } = e, P = "live-activity-status-web", {
-    blockeeExperimentEnabled: D,
-    blockerExperimentEnabled: w
+    blockeeExperimentEnabled: w,
+    blockerExperimentEnabled: D
   } = (0, u.NR)(P);
   (0, d.Z)(null == t ? void 0 : t.id, P);
-  let L = D && (null == o ? void 0 : o.discoverable) === !1 ? null : o,
+  let L = w && (null == o ? void 0 : o.discoverable) === !1 ? null : o,
     x = i.useMemo(() => {
       var e, t;
       let r = null == n ? void 0 : n.find(e => {
@@ -55,14 +55,14 @@ function O(e) {
       return null == ("" === i ? null : i) && null == r.emoji ? null : r
     }, [n]),
     M = (0, l.e7)([f.Z], () => f.Z.isBlockedOrIgnored(null == t ? void 0 : t.id));
-  if (w && M) return null;
+  if (D && M) return null;
   let k = (null == t ? void 0 : t.bot) === !0,
     j = (null == x ? void 0 : x.state) != null && "xs" === T,
     U = () => {
-      if (null != L) return (0, r.jsx)(g.Z, {
+      if (null != L) return (0, r.jsx)(m.Z, {
         game: null == n ? void 0 : n.find(c.Z),
         textVariant: "text-".concat(T, "/medium"),
-        textClassName: S,
+        textClassName: I,
         hideText: j,
         hideIcon: k,
         hideTooltip: R
@@ -70,7 +70,7 @@ function O(e) {
       if (null != O) return (0, r.jsx)(E.Z, {
         channel: O,
         textVariant: "text-".concat(T, "/medium"),
-        textClassName: S,
+        textClassName: I,
         hideText: j,
         hideTooltip: R
       });
@@ -80,10 +80,10 @@ function O(e) {
         } = e;
         return t !== b.IIU.CUSTOM_STATUS && t !== b.IIU.HANG_STATUS
       });
-      return null != e ? (0, r.jsx)(m.Z, {
+      return null != e ? (0, r.jsx)(g.Z, {
         activity: e,
         textVariant: "text-".concat(T, "/medium"),
-        textClassName: S,
+        textClassName: I,
         hideText: j,
         hideIcon: k,
         hideTooltip: R
@@ -98,10 +98,10 @@ function O(e) {
           emoji: e,
           animate: N,
           hideTooltip: R,
-          className: I
+          className: S
         }), null != t && (0, r.jsx)(h.Z, {
           variant: "text-".concat(T, "/medium"),
-          className: S,
+          className: I,
           children: t
         })]
       })
@@ -113,7 +113,7 @@ function O(e) {
     }),
     children: [U(), (0, r.jsx)(s.xv, {
       variant: "text-".concat(T, "/normal"),
-      className: a()(y.text, y.dot, S),
+      className: a()(y.text, y.dot, I),
       children: v.l
     }), G(), A && (0, r.jsx)(p.Z, {})]
   })

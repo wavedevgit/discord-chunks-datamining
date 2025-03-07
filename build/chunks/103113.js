@@ -16,15 +16,15 @@ var r = n(200651),
   _ = n(785717),
   p = n(221292),
   h = n(687158),
-  g = n(899007),
-  m = n(648052),
+  m = n(899007),
+  g = n(648052),
   E = n(867176),
   v = n(280885),
   b = n(502762),
   y = n(530),
   O = n(679332),
-  S = n(544989),
-  I = n(171368),
+  I = n(544989),
+  S = n(171368),
   T = n(228168),
   N = n(388032),
   A = n(231930);
@@ -57,8 +57,8 @@ function P(e) {
     guildId: n,
     channelId: C,
     messageId: P,
-    roleId: D,
-    setPopoutRef: w,
+    roleId: w,
+    setPopoutRef: D,
     closePopout: L,
     disableUserProfileLink: x = __OVERLAY__,
     newAnalyticsLocations: M = []
@@ -70,13 +70,13 @@ function P(e) {
     guildId: n,
     channelId: C,
     messageId: P,
-    roleId: D
+    roleId: w
   }), G = i.useRef(null), B = (0, a.Z)(G);
   i.useEffect(() => {
-    null == w || w(null == G ? void 0 : G.current)
-  }, [G, w]);
+    null == D || D(null == G ? void 0 : G.current)
+  }, [G, D]);
   let V = () => {
-      null == L || L(), (0, I.openUserProfileModal)(R({
+      null == L || L(), (0, S.openUserProfileModal)(R({
         sourceAnalyticsLocations: j
       }, U))
     },
@@ -102,7 +102,7 @@ function P(e) {
           user: t,
           displayProfile: k,
           profileType: T.y0.BITE_SIZE,
-          children: [(0, r.jsx)(S.Z, {
+          children: [(0, r.jsx)(I.Z, {
             profileType: T.y0.BITE_SIZE,
             children: (0, r.jsx)(O.Z, {
               user: t,
@@ -115,7 +115,7 @@ function P(e) {
               displayProfile: k,
               guildId: n,
               profileType: T.y0.BITE_SIZE
-            }), (0, r.jsx)(g.Z, {
+            }), (0, r.jsx)(m.Z, {
               user: t,
               displayProfile: k,
               guildId: n,
@@ -133,7 +133,7 @@ function P(e) {
               profileType: T.y0.BITE_SIZE,
               nickname: f.ZP.getName(n, C, t),
               onOpenProfile: F ? V : void 0,
-              tags: (0, r.jsx)(m.Z, {
+              tags: (0, r.jsx)(g.Z, {
                 displayProfile: k,
                 profileType: T.y0.BITE_SIZE,
                 onClose: L

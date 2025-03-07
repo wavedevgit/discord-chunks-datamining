@@ -12,15 +12,15 @@ var s, l = n(392711),
   _ = n(212819),
   p = n(353926),
   h = n(823385),
-  g = n(592125),
-  m = n(430824),
+  m = n(592125),
+  g = n(430824),
   E = n(306680),
   v = n(944486),
   b = n(9156),
   y = n(594174),
   O = n(70956),
-  S = n(709054),
-  I = n(418088),
+  I = n(709054),
+  S = n(418088),
   T = n(814249);
 
 function N(e, t, n) {
@@ -62,8 +62,8 @@ function R(e, t) {
   }), e
 }
 let P = {},
-  D = {},
   w = {},
+  D = {},
   L = [],
   x = {},
   M = {
@@ -87,13 +87,13 @@ class V extends(s = u.ZP.PersistedStore) {
   }
   initialize(e) {
     var t;
-    r = null === (t = null == e ? void 0 : e.shouldShowTopicsBar) || void 0 === t || t, this.waitFor(g.Z, y.default, v.Z, m.Z, p.Z), this.syncWith([h.Z], B)
+    r = null === (t = null == e ? void 0 : e.shouldShowTopicsBar) || void 0 === t || t, this.waitFor(m.Z, y.default, v.Z, g.Z, p.Z), this.syncWith([h.Z], B)
   }
   allSummaries() {
     return P
   }
   topSummaries() {
-    return Object.values(P).flat().filter(e => e.people.length > 1 && S.default.extractTimestamp(e.endId) > new Date().getTime() - 5 * O.Z.Millis.HOUR).sort((e, t) => S.default.extractTimestamp(t.endId) - S.default.extractTimestamp(e.endId))
+    return Object.values(P).flat().filter(e => e.people.length > 1 && I.default.extractTimestamp(e.endId) > new Date().getTime() - 5 * O.Z.Millis.HOUR).sort((e, t) => I.default.extractTimestamp(t.endId) - I.default.extractTimestamp(e.endId))
   }
   summaries(e) {
     var t;
@@ -110,19 +110,19 @@ class V extends(s = u.ZP.PersistedStore) {
     return null != a && a.channelId === e && null != a.summaryId ? this.findSummary(e, null == a ? void 0 : a.summaryId) : null
   }
   summaryFeedback(e) {
-    return null == e ? null : w[e.id]
+    return null == e ? null : D[e.id]
   }
   isFetching(e, t) {
     var n, r;
-    return null != t ? (null === (r = D[e]) || void 0 === r ? void 0 : r.summaryId) === t : (null === (n = D[e]) || void 0 === n ? void 0 : n.fetching) === !0
+    return null != t ? (null === (r = w[e]) || void 0 === r ? void 0 : r.summaryId) === t : (null === (n = w[e]) || void 0 === n ? void 0 : n.fetching) === !0
   }
   status(e) {
-    return D[e]
+    return w[e]
   }
   shouldFetch(e, t) {
     var n, r;
-    let i = D[e],
-      o = g.Z.getChannel(e);
+    let i = w[e],
+      o = m.Z.getChannel(e);
     if (!(0, f.Lp)(o)) return !1;
     if (null != t) {
       let e = null !== (n = null == i ? void 0 : i.summaryIdLastRequestedAt) && void 0 !== n ? n : 0,
@@ -152,10 +152,10 @@ class V extends(s = u.ZP.PersistedStore) {
       numChannels: i = G
     } = e, o = [];
     return t && (o = o.concat(k)), n && (o = o.concat(L.map(e => e.channel_id))), r && (o = o.filter(e => {
-      let t = g.Z.getChannel(e);
+      let t = m.Z.getChannel(e);
       return null != t && !b.ZP.isChannelMuted(t.guild_id, e) && E.ZP.hasUnread(e)
     })), (o = o.filter(e => {
-      let t = g.Z.getChannel(e);
+      let t = m.Z.getChannel(e);
       return (0, f.Lp)(t, !1, !1)
     })).slice(0, i)
   }
@@ -189,19 +189,19 @@ let Z = new V(d.Z, {
       receivedAt: a
     } = e;
     if (null != r && Object.keys(r).length > 0) {
-      let e = (0, I.b)(r, i),
+      let e = (0, S.b)(r, i),
         n = [...null !== (t = P[i]) && void 0 !== t ? t : []],
         o = n.findIndex(t => t.id === (null == e ? void 0 : e.id));
       o > -1 ? n[o] = e : n.push(e), P[i] = n
     }
-    let s = R(A({}, null !== (n = D[i]) && void 0 !== n ? n : {
+    let s = R(A({}, null !== (n = w[i]) && void 0 !== n ? n : {
       fetching: !1
     }), {
       summaryId: void 0,
       summaryIdLastReceivedAt: a,
       summaryIdError: o
     });
-    D[i] = s
+    w[i] = s
   },
   REQUEST_CHANNEL_SUMMARY(e) {
     var t;
@@ -210,7 +210,7 @@ let Z = new V(d.Z, {
       summaryId: r,
       requestedAt: i
     } = e;
-    D[n] = R(A({}, null !== (t = D[n]) && void 0 !== t ? t : {
+    w[n] = R(A({}, null !== (t = w[n]) && void 0 !== t ? t : {
       fetching: !1
     }), {
       summaryId: r,
@@ -223,23 +223,23 @@ let Z = new V(d.Z, {
       channelId: n,
       error: r,
       receivedAt: i
-    } = e, o = t.filter(e => Object.keys(e).length > 0).map(e => (0, I.b)(e, n));
+    } = e, o = t.filter(e => Object.keys(e).length > 0).map(e => (0, S.b)(e, n));
     if (null != a && a.channelId === n && !o.some(e => e.id === (null == a ? void 0 : a.summaryId))) {
       var s;
       let e = (null !== (s = P[n]) && void 0 !== s ? s : []).find(e => e.id === (null == a ? void 0 : a.summaryId));
       null != e && o.push(e)
     }
-    P[n] = (0, l.sortBy)(o, e => S.default.extractTimestamp(e.startId)).reverse();
-    let c = R(A({}, D[n]), {
+    P[n] = (0, l.sortBy)(o, e => I.default.extractTimestamp(e.startId)).reverse();
+    let c = R(A({}, w[n]), {
       fetching: !1,
       error: void 0,
       lastReceivedAt: i
     });
-    null != r && (c.error = r), D[n] = c
+    null != r && (c.error = r), w[n] = c
   },
   REQUEST_CHANNEL_SUMMARIES(e) {
     var t;
-    D[e.channelId] = R(A({}, null !== (t = D[e.channelId]) && void 0 !== t ? t : {}), {
+    w[e.channelId] = R(A({}, null !== (t = w[e.channelId]) && void 0 !== t ? t : {}), {
       fetching: !0,
       lastRequestedAt: e.requestedAt
     })
@@ -280,7 +280,7 @@ let Z = new V(d.Z, {
       summary: t,
       rating: n
     } = e;
-    null != n ? w[t.id] = n : delete w[t.id]
+    null != n ? D[t.id] = n : delete D[t.id]
   },
   REQUEST_CHANNEL_AFFINITIES() {
     M = R(A({}, M), {
@@ -312,14 +312,14 @@ let Z = new V(d.Z, {
       requestedAt: n
     } = e, r = t.reduce((e, t) => {
       var r;
-      let i = null !== (r = D[t]) && void 0 !== r ? r : {};
+      let i = null !== (r = w[t]) && void 0 !== r ? r : {};
       return e[t] = R(A({}, i), {
         fetching: !0,
         lastRequestedAt: n,
         error: void 0
       }), e
     }, {});
-    D = A({}, D, r)
+    w = A({}, w, r)
   },
   RECEIVE_CHANNEL_SUMMARIES_BULK(e) {
     let {
@@ -330,11 +330,11 @@ let Z = new V(d.Z, {
         channelIds: i
       }
     } = e, o = c().toPairs(t).reduce((e, t) => {
-      let [n, r] = t, i = c().chain(r.map(e => (0, I.b)(e, n))).sortBy(e => S.default.extractTimestamp(e.startId)).takeRight(U).reverse().filter(e => Object.keys(e).length > 0).value();
+      let [n, r] = t, i = c().chain(r.map(e => (0, S.b)(e, n))).sortBy(e => I.default.extractTimestamp(e.startId)).takeRight(U).reverse().filter(e => Object.keys(e).length > 0).value();
       return e[n] = i, e
     }, {}), a = i.reduce((e, t) => {
       var i;
-      let a = null !== (i = D[t]) && void 0 !== i ? i : {},
+      let a = null !== (i = w[t]) && void 0 !== i ? i : {},
         s = o[t];
       return null != s && (e.summariesByChannel[t] = s), e.summaryFetchStatusByChannel[t] = R(A({}, a), {
         fetching: !1,
@@ -345,7 +345,7 @@ let Z = new V(d.Z, {
       summariesByChannel: {},
       summaryFetchStatusByChannel: {}
     });
-    P = A({}, P, a.summariesByChannel), D = A({}, D, a.summaryFetchStatusByChannel)
+    P = A({}, P, a.summariesByChannel), w = A({}, w, a.summaryFetchStatusByChannel)
   },
   CONVERSATION_SUMMARY_UPDATE(e) {
     var t, n, r;
@@ -353,15 +353,15 @@ let Z = new V(d.Z, {
       channel_id: i,
       summaries: o,
       guild_id: a
-    } = e, s = Date.now(), l = c().chain(o).sortBy(e => S.default.extractTimestamp(e.start_id)).filter(e => Object.keys(e).length > 0).map(e => (0, I.b)(e, i)).reverse().value(), u = null !== (n = P[i]) && void 0 !== n ? n : [], d = c().chain(l).concat(u).sortBy(e => S.default.extractTimestamp(e.startId)).takeRight(U).uniqBy("id").reverse().value();
-    P[i] = d, D[i] = R(A({}, D[i]), {
+    } = e, s = Date.now(), l = c().chain(o).sortBy(e => I.default.extractTimestamp(e.start_id)).filter(e => Object.keys(e).length > 0).map(e => (0, S.b)(e, i)).reverse().value(), u = null !== (n = P[i]) && void 0 !== n ? n : [], d = c().chain(l).concat(u).sortBy(e => I.default.extractTimestamp(e.startId)).takeRight(U).uniqBy("id").reverse().value();
+    P[i] = d, w[i] = R(A({}, w[i]), {
       error: void 0,
-      fetching: null !== (r = null === (t = D[i]) || void 0 === t ? void 0 : t.fetching) && void 0 !== r && r,
+      fetching: null !== (r = null === (t = w[i]) || void 0 === t ? void 0 : t.fetching) && void 0 !== r && r,
       lastReceivedAt: s
     })
   },
   CLEAR_CONVERSATION_SUMMARIES() {
-    P = {}, D = {}
+    P = {}, w = {}
   },
   DELETE_SUMMARY(e) {
     var t;

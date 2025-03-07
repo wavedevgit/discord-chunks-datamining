@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  O: () => I
+  O: () => S
 }), n(47120), n(627341);
 var r = n(200651),
   i = n(512722),
@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(731896),
   p = n(594174),
   h = n(597688),
-  g = n(579407),
-  m = n(231103),
+  m = n(579407),
+  g = n(231103),
   E = n(223223);
 
 function v(e, t, n) {
@@ -57,7 +57,7 @@ let y = e => {
     return null == t ? n : (0, r.jsx)("img", b({
       src: o,
       alt: t.label,
-      className: m.avatarDecoration
+      className: g.avatarDecoration
     }, a))
   },
   O = e => {
@@ -73,32 +73,32 @@ let y = e => {
       title: l
     } = null !== (t = null == o ? void 0 : o.config) && void 0 !== t ? t : {};
     return (0, r.jsxs)("div", {
-      className: m.profileEffectContainer,
+      className: g.profileEffectContainer,
       children: [(0, r.jsx)("img", {
         src: E,
         alt: a,
-        className: m.profileEffectBackground
+        className: g.profileEffectBackground
       }), (0, r.jsx)("img", {
-        className: m.profileEffect,
+        className: g.profileEffect,
         src: s,
         alt: l
       })]
     })
   },
-  S = e => {
+  I = e => {
     let {
       nameplate: t,
       fallbackLabel: n
     } = e;
     return null == t ? n : (0, r.jsx)("div", {
-      className: m.nameplateContainer,
+      className: g.nameplateContainer,
       children: (0, r.jsx)(f.Z, {
-        nameplate: (0, g.EU)(t),
+        nameplate: (0, m.EU)(t),
         selected: !0
       })
     })
   },
-  I = e => {
+  S = e => {
     var t;
     let {
       product: n,
@@ -111,7 +111,7 @@ let y = e => {
     }))).with(s.Z.PROFILE_EFFECT, () => (o()(f.type === s.Z.PROFILE_EFFECT, "ts-match checked the type"), (0, r.jsx)(O, {
       profileEffect: f,
       fallbackLabel: c
-    }))).with(s.Z.NAMEPLATE, () => (o()(f.type === s.Z.NAMEPLATE, "ts-match checked the type"), (0, r.jsx)(S, {
+    }))).with(s.Z.NAMEPLATE, () => (o()(f.type === s.Z.NAMEPLATE, "ts-match checked the type"), (0, r.jsx)(I, {
       nameplate: f,
       fallbackLabel: c
     }))).otherwise(() => c)

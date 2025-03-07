@@ -2,13 +2,13 @@
 "use strict";
 n.d(t, {
   Hf: () => O,
-  JT: () => I,
+  JT: () => S,
   Nk: () => b,
   Qm: () => N,
   VB: () => y,
   Xq: () => E,
   YZ: () => T,
-  wi: () => S
+  wi: () => I
 }), n(47120), n(653041);
 var r = n(192379),
   i = n(442837),
@@ -44,7 +44,7 @@ function h(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,8 +55,8 @@ function g(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -140,7 +140,7 @@ function O(e) {
   return [null == t ? void 0 : t.result, null == n ? void 0 : n.result]
 }
 
-function S(e) {
+function I(e) {
   let {
     context: t,
     filters: n,
@@ -148,10 +148,10 @@ function S(e) {
     allowFetch: c
   } = e, u = "channel" === t.type ? t.channel.guild_id : null, d = (0, i.e7)([o.Z], () => o.Z.getGuild(u), [u]), {
     descriptors: p,
-    commands: g,
+    commands: m,
     sectionedCommands: E,
     loading: v
-  } = (0, l.JK)(t, d, n, m(h({}, a), {
+  } = (0, l.JK)(t, d, n, g(h({}, a), {
     allowFetch: c
   })), [b, y] = r.useState(null), O = r.useMemo(() => {
     var e;
@@ -160,7 +160,7 @@ function S(e) {
   return r.useMemo(() => {
     let e = {
       loading: v,
-      commands: g,
+      commands: m,
       activeSections: p,
       commandsByActiveSection: E,
       filteredSectionId: b,
@@ -189,13 +189,13 @@ function S(e) {
           data: O
         }]
       }
-      e.commands = [...g, ...O]
+      e.commands = [...m, ...O]
     }
     return e
-  }, [g, p, b, E, v, O])
+  }, [m, p, b, E, v, O])
 }
 
-function I(e, t, n) {
+function S(e, t, n) {
   var r;
   let {
     descriptors: i,

@@ -3,9 +3,9 @@
 n.d(t, {
   $K: () => A,
   OQ: () => y,
-  RE: () => S,
+  RE: () => I,
   Xe: () => C,
-  dv: () => I,
+  dv: () => S,
   rS: () => O,
   t0: () => b
 }), n(47120), n(653041);
@@ -22,8 +22,8 @@ var r = n(392711),
   _ = n(675478),
   p = n(486472),
   h = n(823379),
-  g = n(668781),
-  m = n(981631),
+  m = n(668781),
+  g = n(981631),
   E = n(526761),
   v = n(388032);
 
@@ -38,7 +38,7 @@ function y(e) {
     type: "EMOJI_FETCH",
     guildId: e
   }), o.tn.get({
-    url: m.ANM.GUILD_EMOJIS(e),
+    url: g.ANM.GUILD_EMOJIS(e),
     oldFormErrors: !0,
     rejectWithError: !0
   }).then(t => s.Z.dispatch({
@@ -62,7 +62,7 @@ function O(e) {
     type: "EMOJI_UPLOAD_START",
     guildId: t
   }), o.tn.post({
-    url: m.ANM.GUILD_EMOJIS(t),
+    url: g.ANM.GUILD_EMOJIS(t),
     body: {
       image: n,
       name: r,
@@ -79,18 +79,18 @@ function O(e) {
   }), Promise.reject(e)))
 }
 
-function S(e, t) {
+function I(e, t) {
   return s.Z.dispatch({
     type: "EMOJI_DELETE",
     guildId: e,
     emojiId: t
   }), o.tn.del({
-    url: m.ANM.GUILD_EMOJI(e, t),
+    url: g.ANM.GUILD_EMOJI(e, t),
     oldFormErrors: !0,
     rejectWithError: !1
   })
 }
-async function I(e) {
+async function S(e) {
   let {
     guildId: t,
     emojiId: n,
@@ -99,7 +99,7 @@ async function I(e) {
   } = e;
   try {
     return await o.tn.patch({
-      url: m.ANM.GUILD_EMOJI(t, n),
+      url: g.ANM.GUILD_EMOJI(t, n),
       body: {
         name: r,
         roles: i
@@ -128,7 +128,7 @@ function N(e) {
 
 function A(e) {
   let t = N(e);
-  null != t && _.DZ.updateAsync("favoriteEmojis", e => (e.emojis = T(e.emojis), i().size(e.emojis) >= E.oX) ? (g.Z.show({
+  null != t && _.DZ.updateAsync("favoriteEmojis", e => (e.emojis = T(e.emojis), i().size(e.emojis) >= E.oX) ? (m.Z.show({
     title: v.NW.string(v.t["+XYXtb"]),
     body: v.NW.formatToPlainString(v.t.JaIyFh, {
       count: E.oX

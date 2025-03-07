@@ -23,8 +23,8 @@ let f = {},
   _ = {},
   p = null,
   h = null,
-  g = null,
-  m = "lastChangeLogDate",
+  m = null,
+  g = "lastChangeLogDate",
   E = null,
   v = null,
   b = new Set;
@@ -45,15 +45,15 @@ function O(e) {
   (b = new Set(b)).delete(t)
 }
 
-function S(e) {
+function I(e) {
   let {
     config: t,
     latestChangelogId: n
   } = e;
-  p = n, g = t
+  p = n, m = t
 }
 
-function I(e) {
+function S(e) {
   let {
     id: t,
     changelog: n
@@ -88,7 +88,7 @@ function A(e) {
   let {
     changelogDate: t
   } = e;
-  v = new Date(t), o.K.set(m, t)
+  v = new Date(t), o.K.set(g, t)
 }
 
 function C() {
@@ -97,11 +97,11 @@ function C() {
 class R extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(s.default, c.Z), this.syncWith([s.default], () => !0), this.syncWith([c.Z], C);
-    let e = o.K.get(m);
+    let e = o.K.get(g);
     if (null != e) try {
       v = new Date(e)
     } catch (e) {
-      o.K.remove(m)
+      o.K.remove(g)
     }
   }
   getChangelog(e, t) {
@@ -116,10 +116,10 @@ class R extends(r = i.ZP.Store) {
     return null !== (r = null === (n = _[e]) || void 0 === n ? void 0 : n[t]) && void 0 !== r ? r : u.LU.NOT_LOADED
   }
   hasLoadedConfig() {
-    return null != g
+    return null != m
   }
   getConfig() {
-    return g
+    return m
   }
   overrideId() {
     return h
@@ -132,7 +132,7 @@ class R extends(r = i.ZP.Store) {
   }
   getStateForDebugging() {
     return {
-      changelogConfig: g,
+      changelogConfig: m,
       loadedChangelogs: _,
       lastSeenChangelogId: E,
       lastSeenChangelogDate: v
@@ -146,8 +146,8 @@ d(R, "displayName", "ChangelogStore");
 let P = new R(a.Z, {
   CHANGE_LOG_LOCK: y,
   CHANGE_LOG_UNLOCK: O,
-  CHANGE_LOG_SET_CONFIG: S,
-  CHANGE_LOG_FETCH_SUCCESS: I,
+  CHANGE_LOG_SET_CONFIG: I,
+  CHANGE_LOG_FETCH_SUCCESS: S,
   CHANGE_LOG_FETCH_FAILED: T,
   CHANGE_LOG_SET_OVERRIDE: N,
   CHANGE_LOG_MARK_SEEN: A

@@ -17,8 +17,8 @@ var i = n(120356),
   _ = n(228168),
   p = n(388032),
   h = n(357837),
-  g = n(506501);
-let m = e => {
+  m = n(506501);
+let g = e => {
     let {
       message: t,
       userId: n,
@@ -27,7 +27,7 @@ let m = e => {
       trackUserProfileAction: a
     } = (0, d.KZ)();
     return (0, r.jsxs)("div", {
-      className: o()(g.toast, h.toastPadding),
+      className: o()(m.toast, h.toastPadding),
       children: [(0, r.jsx)(l.dz2, {
         size: "sm",
         className: h.toastIcon,
@@ -52,7 +52,7 @@ let m = e => {
     })
   },
   E = () => (0, r.jsxs)("div", {
-    className: o()(g.toast, h.toastPadding),
+    className: o()(m.toast, h.toastPadding),
     children: [(0, r.jsx)(l.$jN, {
       type: l.RAz.SPINNING_CIRCLE_SIMPLE,
       className: h.toastIcon
@@ -70,7 +70,7 @@ let m = e => {
     } = e, {
       interactionTypeSent: c,
       showInteractionToast: d
-    } = (0, f.Xo)(), g = c === _.P.REPLY ? p.NW.string(p.t.BPaiaW) : p.NW.string(p.t.Ry2EtL), v = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), b = (0, l.Yzy)(d, {
+    } = (0, f.Xo)(), m = c === _.P.REPLY ? p.NW.string(p.t.BPaiaW) : p.NW.string(p.t.Ry2EtL), v = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), b = (0, l.Yzy)(d, {
       from: {
         transform: v ? "translateY(0)" : "translateY(16px)",
         opacity: 0
@@ -100,9 +100,9 @@ let m = e => {
           type: l.ToastType.CUSTOM,
           id: "react_reply_success_toast",
           options: {
-            component: (0, r.jsx)(m, {
+            component: (0, r.jsx)(g, {
               userId: t,
-              message: g,
+              message: m,
               onClose: n
             })
           }

@@ -57,7 +57,7 @@ async function h() {
   let e = c.ZP.requireModule("discord_media");
   return await e.getSystemAnalyticsBlob() || []
 }
-async function g() {
+async function m() {
   try {
     let t = (await h()).filter(e => p.hashes[e.name] !== e.hash);
     for (let {
@@ -78,8 +78,8 @@ async function g() {
   } catch (e) {}
 }
 
-function m() {
-  return g(), !1
+function g() {
+  return m(), !1
 }
 class E extends(r = i.ZP.PersistedStore) {
   initialize(e) {
@@ -100,7 +100,7 @@ class E extends(r = i.ZP.PersistedStore) {
 }
 u(E, "displayName", "SystemAnalyticsStore"), u(E, "persistKey", "SystemAnalyticsStore");
 let v = new E(o.Z, {
-  START_SESSION: m
+  START_SESSION: g
 });
 
 function b() {

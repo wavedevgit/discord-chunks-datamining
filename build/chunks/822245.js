@@ -36,7 +36,7 @@ function h(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,8 +47,8 @@ function g(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -81,17 +81,17 @@ function O(e) {
     command: n
   } = e;
   if (!E.includes(n.type) || (null === (t = u.ZP.getLaunchState(n.applicationId)) || void 0 === t ? void 0 : t.isLaunching)) return !1;
-  I(n.applicationId)
-}
-
-function S(e) {
-  let {
-    applicationId: t
-  } = e;
-  I(t)
+  S(n.applicationId)
 }
 
 function I(e) {
+  let {
+    applicationId: t
+  } = e;
+  S(t)
+}
+
+function S(e) {
   v.pendingUsages.push({
     key: e,
     timestamp: Date.now()
@@ -101,7 +101,7 @@ function I(e) {
 function T() {
   var e, t;
   let n = null !== (t = null === (e = d.Z.frecencyWithoutFetchingLatest.applicationFrecency) || void 0 === e ? void 0 : e.applications) && void 0 !== t ? t : {};
-  b.overwriteHistory(o().mapValues(n, e => m(h({}, e), {
+  b.overwriteHistory(o().mapValues(n, e => g(h({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), v.pendingUsages)
 }
@@ -129,6 +129,6 @@ class N extends(r = a.ZP.PersistedStore) {
 p(N, "displayName", "ApplicationFrecencyStore"), p(N, "persistKey", "ApplicationFrecency");
 let A = new N(s.Z, {
   APPLICATION_COMMAND_USED: O,
-  EMBEDDED_ACTIVITY_OPEN: S,
+  EMBEDDED_ACTIVITY_OPEN: I,
   USER_SETTINGS_PROTO_UPDATE: y
 })

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => I
 }), n(47120);
 var r = n(544891),
   i = n(147913),
@@ -52,11 +52,11 @@ let _ = {},
   p = 0,
   h = 15 * s.Z.Millis.SECOND;
 
-function g() {
+function m() {
   _ = u({}, o.Z.getCollapsedCategories())
 }
 
-function m() {
+function g() {
   __OVERLAY__ || (clearTimeout(p), p = setTimeout(() => v({}), h))
 }
 async function E(e, t) {
@@ -102,13 +102,13 @@ function y() {
 class O extends i.Z {
   constructor(...e) {
     super(...e), c(this, "actions", {
-      CATEGORY_COLLAPSE: m,
-      CATEGORY_EXPAND: m,
-      CATEGORY_COLLAPSE_ALL: m,
-      CATEGORY_EXPAND_ALL: m,
-      POST_CONNECTION_OPEN: g,
+      CATEGORY_COLLAPSE: g,
+      CATEGORY_EXPAND: g,
+      CATEGORY_COLLAPSE_ALL: g,
+      CATEGORY_EXPAND_ALL: g,
+      POST_CONNECTION_OPEN: m,
       USER_GUILD_SETTINGS_FULL_UPDATE: y
     }), c(this, "saveUserGuildSettings", E), c(this, "saveUserGuildSettingsBulk", v)
   }
 }
-let S = new O
+let I = new O

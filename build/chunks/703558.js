@@ -47,19 +47,19 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = n(981631).en1 + 500;
+let g = n(981631).en1 + 500;
 var E = function(e) {
   return e[e.ChannelMessage = 0] = "ChannelMessage", e[e.ThreadSettings = 1] = "ThreadSettings", e[e.FirstThreadMessage = 2] = "FirstThreadMessage", e[e.ApplicationLauncherCommand = 3] = "ApplicationLauncherCommand", e[e.Poll = 4] = "Poll", e[e.SlashCommand = 5] = "SlashCommand", e[e.ForwardContextMessage = 6] = "ForwardContextMessage", e
 }({});
 let v = {};
 
 function b(e) {
-  return e.length > m && (e = e.substr(0, m)), e
+  return e.length > g && (e = e.substr(0, g)), e
 }
 
 function y(e) {
@@ -89,7 +89,7 @@ function O(e) {
   return "DRAFT_SAVE" === t
 }
 
-function S(e) {
+function I(e) {
   let {
     channelId: t,
     draftType: n
@@ -97,7 +97,7 @@ function S(e) {
   return T(t, n)
 }
 
-function I(e) {
+function S(e) {
   let {
     channelId: t,
     draft: n
@@ -105,7 +105,7 @@ function I(e) {
   if (null == r) return;
   let i = y(r),
     o = i[t];
-  null == o && (o = i[t] = {}), o[1] = g(p({
+  null == o && (o = i[t] = {}), o[1] = m(p({
     timestamp: Date.now()
   }, o[1], n), {
     parentChannelId: t
@@ -172,11 +172,11 @@ function P(e) {
   }
 }
 
-function D(e) {
+function w(e) {
   e.isSwitchingAccount || (v = {})
 }
 
-function w(e) {
+function D(e) {
   e.userId in v && delete v[e.userId]
 }
 
@@ -258,14 +258,14 @@ _(x, "displayName", "DraftStore"), _(x, "persistKey", "DraftStore"), _(x, "migra
 }]);
 let M = new x(s.Z, {
   CONNECTION_OPEN: A,
-  LOGOUT: D,
-  MULTI_ACCOUNT_REMOVE_ACCOUNT: w,
+  LOGOUT: w,
+  MULTI_ACCOUNT_REMOVE_ACCOUNT: D,
   GUILD_DELETE: C,
   CHANNEL_DELETE: R,
   THREAD_DELETE: R,
   THREAD_CREATE: P,
   DRAFT_SAVE: O,
   DRAFT_CHANGE: O,
-  DRAFT_CLEAR: S,
-  THREAD_SETTINGS_DRAFT_CHANGE: I
+  DRAFT_CLEAR: I,
+  THREAD_SETTINGS_DRAFT_CHANGE: S
 })

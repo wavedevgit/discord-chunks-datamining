@@ -36,7 +36,7 @@ function h(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,8 +47,8 @@ function g(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -146,12 +146,12 @@ class O extends(r = o.PureComponent) {
         onKeyDown: u,
         onKeyUp: d,
         onKeyPress: p,
-        isLoading: g,
+        isLoading: m,
         size: v,
         disabled: b,
         onChange: O,
-        onBlur: S,
-        onFocus: I,
+        onBlur: I,
+        onFocus: S,
         autoComplete: T,
         inputProps: N,
         hideSearchIcon: A,
@@ -161,7 +161,7 @@ class O extends(r = o.PureComponent) {
     return (0, i.jsx)(c.t, {
       focusTarget: this.inputRef,
       ringTarget: this.containerRef,
-      children: (0, i.jsx)("div", m(h({
+      children: (0, i.jsx)("div", g(h({
         className: s()(o, _.container, v, {
           [_.disabled]: b
         }),
@@ -169,9 +169,9 @@ class O extends(r = o.PureComponent) {
       }, R), {
         children: (0, i.jsxs)("div", {
           className: _.inner,
-          children: [(0, i.jsx)("input", m(h({}, N), {
-            onFocus: I,
-            onBlur: S,
+          children: [(0, i.jsx)("input", g(h({}, N), {
+            onFocus: S,
+            onBlur: I,
             className: _.input,
             value: t,
             onChange: this.handleOnChange,
@@ -189,7 +189,7 @@ class O extends(r = o.PureComponent) {
             hasContent: t.length > 0,
             onClear: r,
             className: l,
-            isLoading: g
+            isLoading: m
           })]
         })
       }))

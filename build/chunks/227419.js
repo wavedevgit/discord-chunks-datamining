@@ -17,9 +17,9 @@ var i = n(392711),
   _ = n(895924),
   p = n(689079),
   h = n(981631),
-  g = n(388032);
+  m = n(388032);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -35,7 +35,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -62,7 +62,7 @@ function y(e) {
   switch (e) {
     case h.nkL.GIF.title:
     case h.nkL.TENOR.title:
-      return g.NW.string(g.t["0vrCgI"]);
+      return m.NW.string(m.t["0vrCgI"]);
     default:
       return ""
   }
@@ -85,10 +85,10 @@ let O = [...o()(h.nkL).values().map(e => ({
     displayName: "query",
     type: c.jw.STRING,
     get description() {
-      return g.NW.string(g.t["+9g3Dg"])
+      return m.NW.string(m.t["+9g3Dg"])
     },
     get displayDescription() {
-      return g.NW.string(g.t["+9g3Dg"])
+      return m.NW.string(m.t["+9g3Dg"])
     },
     required: !0
   }] : [],
@@ -102,20 +102,20 @@ let O = [...o()(h.nkL).values().map(e => ({
   inputType: _.iw.BUILT_IN,
   applicationId: p.bi.BUILT_IN,
   get untranslatedDescription() {
-    return g.NW.string(g.t["26C4oq"])
+    return m.NW.string(m.t["26C4oq"])
   },
   get displayDescription() {
-    return g.NW.string(g.t["26C4oq"])
+    return m.NW.string(m.t["26C4oq"])
   },
   options: [{
     name: "silent",
     displayName: "silent",
     type: c.jw.BOOLEAN,
     get description() {
-      return g.NW.string(g.t.YH7PkJ)
+      return m.NW.string(m.t.YH7PkJ)
     },
     get displayDescription() {
-      return g.NW.string(g.t.bq3JXl)
+      return m.NW.string(m.t.bq3JXl)
     },
     required: !1
   }],
@@ -132,29 +132,29 @@ let O = [...o()(h.nkL).values().map(e => ({
     } = t;
     if (null == o) return;
     let c = (0, u.F6)(o, f.default, d.Z),
-      _ = g.NW.formatToPlainString(g.t.hJ5Ap6, {
+      _ = m.NW.formatToPlainString(m.t.hJ5Ap6, {
         name: c
       }),
-      p = g.NW.format(g.t.SSIVOj, {
+      p = m.NW.format(m.t.SSIVOj, {
         name: c
       }),
       h = null !== (i = null === (n = e.find(e => "silent" === e.name)) || void 0 === n ? void 0 : n.value) && void 0 !== i && i;
-    async function m() {
+    async function g() {
       if (null != o) try {
         await s.Z.closePrivateChannel(o.id, void 0, h)
       } catch (e) {
-        l.Z.sendBotMessage(o.id, g.NW.string(g.t.YOsuT0))
+        l.Z.sendBotMessage(o.id, m.NW.string(m.t.YOsuT0))
       }
     }
-    o.isManaged() && (_ = g.NW.formatToPlainString(g.t.hVGjER, {
+    o.isManaged() && (_ = m.NW.formatToPlainString(m.t.hVGjER, {
       name: c
-    }), p = g.NW.format(g.t.IK1Qvr, {
+    }), p = m.NW.format(m.t.IK1Qvr, {
       name: c
     })), (0, a.h7j)(e => (0, r.jsx)(a.ConfirmModal, b(E({
       header: _,
-      confirmText: g.NW.string(g.t["26C4oq"]),
-      cancelText: g.NW.string(g.t["ETE/oK"]),
-      onConfirm: m
+      confirmText: m.NW.string(m.t["26C4oq"]),
+      cancelText: m.NW.string(m.t["ETE/oK"]),
+      onConfirm: g
     }, e), {
       children: (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
@@ -170,20 +170,20 @@ let O = [...o()(h.nkL).values().map(e => ({
   inputType: _.iw.BUILT_IN_INTEGRATION,
   applicationId: p.bi.BUILT_IN,
   get untranslatedDescription() {
-    return g.NW.string(g.t.GUH9IC)
+    return m.NW.string(m.t.GUH9IC)
   },
   get displayDescription() {
-    return g.NW.string(g.t.GUH9IC)
+    return m.NW.string(m.t.GUH9IC)
   },
   options: [{
     name: "query",
     displayName: "query",
     type: c.jw.STRING,
     get description() {
-      return g.NW.string(g.t.hIbHm5)
+      return m.NW.string(m.t.hIbHm5)
     },
     get displayDescription() {
-      return g.NW.string(g.t.hIbHm5)
+      return m.NW.string(m.t.hIbHm5)
     },
     required: !0
   }],

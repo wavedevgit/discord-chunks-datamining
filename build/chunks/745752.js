@@ -28,7 +28,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,13 +53,13 @@ function m(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function v(e) {
-  c.default.track(_.rMx.GUILD_ONBOARDING_LOADED, E(g({}, (0, o.hH)(e)), {
+  c.default.track(_.rMx.GUILD_ONBOARDING_LOADED, E(m({}, (0, o.hH)(e)), {
     has_new_prompts: !1,
     number_of_prompts: 0
   }))
@@ -76,7 +76,7 @@ function b(e) {
     let {
       body: n
     } = t, r = (0, f.cf)(n);
-    return i.Z.dispatch(g({
+    return i.Z.dispatch(m({
       type: "GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS",
       guildId: e
     }, r)).then(() => r.prompts)
@@ -93,9 +93,9 @@ async function y(e) {
   if (null == o || !o.hasFeature(_.oNc.GUILD_ONBOARDING)) return Promise.resolve();
   let c = d.Z.shouldFetchPrompts(e),
     f = d.Z.getOnboardingPrompts(e);
-  if (!c && f.length > 0) return f.every(e => !e.inOnboarding) ? I(e) : i || O(e), Promise.resolve();
+  if (!c && f.length > 0) return f.every(e => !e.inOnboarding) ? S(e) : i || O(e), Promise.resolve();
   let h = await b(e);
-  return Array.isArray(h) && h.every(e => !e.inOnboarding) ? (I(e), Promise.resolve()) : (i || O(e), h)
+  return Array.isArray(h) && h.every(e => !e.inOnboarding) ? (S(e), Promise.resolve()) : (i || O(e), h)
 }
 
 function O(e) {
@@ -104,14 +104,14 @@ function O(e) {
     guildId: e
   })
 }
-let S = -2;
+let I = -2;
 
-function I(e) {
-  c.default.track(_.rMx.GUILD_ONBOARDING_STEP_VIEWED, E(g({}, (0, o.hH)(e)), {
-    step: S,
+function S(e) {
+  c.default.track(_.rMx.GUILD_ONBOARDING_STEP_VIEWED, E(m({}, (0, o.hH)(e)), {
+    step: I,
     required: !0
-  })), c.default.track(_.rMx.GUILD_ONBOARDING_STEP_COMPLETED, E(g({}, (0, o.hH)(e)), {
-    step: S,
+  })), c.default.track(_.rMx.GUILD_ONBOARDING_STEP_COMPLETED, E(m({}, (0, o.hH)(e)), {
+    step: I,
     skipped: !1,
     is_final_step: !0,
     in_onboarding: !0

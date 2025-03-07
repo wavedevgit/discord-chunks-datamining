@@ -13,9 +13,9 @@ var a, s = n(772848),
   _ = n(598077),
   p = n(12647),
   h = n(358085),
-  g = n(374023);
+  m = n(374023);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -35,11 +35,11 @@ function O() {
   i = null, b.stop(), v = !1, c.K.set(E, v)
 }
 
-function S(e) {
+function I(e) {
   r = "".concat(location.protocol, "//").concat(location.host, "/handoff?rpc=").concat(e.port), y()
 }
 
-function I(e) {
+function S(e) {
   if (null != i) return !1;
   i = (0, s.Z)(), b.start(e.timeout, () => (0, f.lx)()), y()
 }
@@ -66,7 +66,7 @@ class C extends(a = l.ZP.Store) {
     !1 !== c.K.get(E) && (v = h.isPlatformEmbedded && "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL)
   }
   isHandoffAvailable() {
-    return !g.s.isDisallowPopupsSet() && v
+    return !m.s.isDisallowPopupsSet() && v
   }
   get user() {
     return o
@@ -75,10 +75,10 @@ class C extends(a = l.ZP.Store) {
     return i
   }
 }
-m(C, "displayName", "BrowserHandoffStore");
+g(C, "displayName", "BrowserHandoffStore");
 let R = new C(d.Z, {
-  RPC_SERVER_READY: S,
-  BROWSER_HANDOFF_BEGIN: I,
+  RPC_SERVER_READY: I,
+  BROWSER_HANDOFF_BEGIN: S,
   BROWSER_HANDOFF_FROM_APP: T,
   BROWSER_HANDOFF_UNAVAILABLE: O,
   BROWSER_HANDOFF_SET_USER: N,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  I: () => m
+  I: () => g
 });
 var r = n(200651),
   i = n(192379),
@@ -55,7 +55,7 @@ let h = {
     friction: 24,
     tension: 280
   },
-  g = {
+  m = {
     [c.az.TOP]: {
       styles: u.containerTop,
       transition: {
@@ -106,7 +106,7 @@ let h = {
     }
   };
 
-function m() {
+function g() {
   var e, t, n, u;
   let d = (0, l.Es)(e => e.currentToast),
     _ = i.useRef(null !== (n = null == d ? void 0 : null === (e = d.options) || void 0 === e ? void 0 : e.position) && void 0 !== n ? n : c.si.position),
@@ -119,9 +119,9 @@ function m() {
   }, [d]);
   let h = i.useMemo(() => {
       var e, t;
-      return g[null !== (t = null == d ? void 0 : null === (e = d.options) || void 0 === e ? void 0 : e.position) && void 0 !== t ? t : _.current]
+      return m[null !== (t = null == d ? void 0 : null === (e = d.options) || void 0 === e ? void 0 : e.position) && void 0 !== t ? t : _.current]
     }, [d]),
-    m = (0, a.Yzy)(d, f({
+    g = (0, a.Yzy)(d, f({
       keys: e => {
         var t;
         return null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : ""
@@ -133,7 +133,7 @@ function m() {
     }, p.current)
   }, [d]), (0, r.jsx)("div", {
     className: h.styles,
-    children: m((e, t) => null === t ? null : (0, r.jsx)(o.animated.div, {
+    children: g((e, t) => null === t ? null : (0, r.jsx)(o.animated.div, {
       style: e,
       children: (0, r.jsx)(s.F, f({}, t))
     }, t.id))

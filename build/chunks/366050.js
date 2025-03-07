@@ -49,8 +49,8 @@ function _(e, t) {
 }
 let p = new Map,
   h = {},
-  g = l.VD2.BOTTOM_RIGHT,
-  m = {
+  m = l.VD2.BOTTOM_RIGHT,
+  g = {
     [c.cL.VIDEO]: c.l8[c.cL.VIDEO],
     [c.cL.CAMERA_PREVIEW]: c.l8[c.cL.CAMERA_PREVIEW]
   };
@@ -66,7 +66,7 @@ function E(e) {
   let c = {
     id: o,
     component: a,
-    position: null !== (t = s.position) && void 0 !== t ? t : g,
+    position: null !== (t = s.position) && void 0 !== t ? t : m,
     props: s,
     docked: null !== (n = s.docked) && void 0 !== n && n
   };
@@ -103,7 +103,7 @@ function b(e) {
       e.set(r, _(d({}, t), {
         position: n
       }))
-    }), p = e, g = n
+    }), p = e, m = n
   }
 }
 
@@ -112,7 +112,7 @@ function y(e) {
     width: t,
     pipType: n
   } = e;
-  m[n] = t
+  g[n] = t
 }
 
 function O(e) {
@@ -123,7 +123,7 @@ function O(e) {
   h[t] = n
 }
 
-function S(e) {
+function I(e) {
   let {
     id: t
   } = e;
@@ -137,7 +137,7 @@ function S(e) {
   }
 }
 
-function I(e) {
+function S(e) {
   let {
     id: t
   } = e;
@@ -164,13 +164,13 @@ function N() {
 class A extends(o = a.ZP.PersistedStore) {
   initialize(e) {
     if (null == e) {
-      g = l.VD2.BOTTOM_RIGHT, m = {
+      m = l.VD2.BOTTOM_RIGHT, g = {
         [c.cL.VIDEO]: c.l8[c.cL.VIDEO],
         [c.cL.CAMERA_PREVIEW]: c.l8[c.cL.CAMERA_PREVIEW]
       };
       return
     }
-    g = e.openPosition, m = e.pipWidths
+    m = e.openPosition, g = e.pipWidths
   }
   get pipWindow() {
     var e;
@@ -186,7 +186,7 @@ class A extends(o = a.ZP.PersistedStore) {
     return p
   }
   pipWidth(e) {
-    return m[e]
+    return g[e]
   }
   isEmbeddedActivityHidden() {
     return null == i
@@ -199,8 +199,8 @@ class A extends(o = a.ZP.PersistedStore) {
   }
   getState() {
     return {
-      openPosition: g,
-      pipWidths: m
+      openPosition: m,
+      pipWidths: g
     }
   }
 }
@@ -219,8 +219,8 @@ let C = new A(s.Z, {
   PICTURE_IN_PICTURE_CLOSE: v,
   PICTURE_IN_PICTURE_MOVE: b,
   PICTURE_IN_PICTURE_RESIZE: y,
-  PICTURE_IN_PICTURE_HIDE: S,
-  PICTURE_IN_PICTURE_SHOW: I,
+  PICTURE_IN_PICTURE_HIDE: I,
+  PICTURE_IN_PICTURE_SHOW: S,
   PICTURE_IN_PICTURE_UPDATE_RECT: O,
   PICTURE_IN_PICTURE_UPDATE_SELECTED_WINDOW: T,
   LOGOUT: N

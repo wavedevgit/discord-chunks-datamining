@@ -16,15 +16,15 @@ var r = n(200651),
   _ = n(208049),
   p = n(697426),
   h = n(409673),
-  g = n(430824),
-  m = n(197115),
+  m = n(430824),
+  g = n(197115),
   E = n(125900),
   v = n(767434),
   b = n(474936),
   y = n(981631),
   O = n(710111),
-  S = n(388032),
-  I = n(680052);
+  I = n(388032),
+  S = n(680052);
 
 function T(e) {
   let {
@@ -36,7 +36,7 @@ function T(e) {
       await c.Z.joinGuild(t), c.Z.transitionToGuildSync(t)
     } catch (e) {}
   }, [n, t]);
-  return o === v.y.GET_NITRO ? (0, r.jsx)(m.Z, {
+  return o === v.y.GET_NITRO ? (0, r.jsx)(g.Z, {
     fullWidth: !0,
     showGradient: !0,
     premiumModalAnalyticsLocation: {
@@ -46,12 +46,12 @@ function T(e) {
     size: l.zxk.Sizes.SMALL,
     color: l.zxk.Colors.CUSTOM,
     onClick: n,
-    buttonText: S.NW.string(S.t.pj0XBA)
+    buttonText: I.NW.string(I.t.pj0XBA)
   }) : o === v.y.JOIN_GUILD ? (0, r.jsx)(l.zxk, {
     size: l.zxk.Sizes.SMALL,
     fullWidth: !0,
     onClick: a,
-    children: S.NW.string(S.t.riu2R0)
+    children: I.NW.string(I.t.riu2R0)
   }) : null
 }
 
@@ -60,26 +60,26 @@ function N(e) {
     sound: t,
     channel: n,
     closePopout: c,
-    refreshPosition: m
-  } = e, b = t.guildId === O.X8, y = (0, s.e7)([g.Z], () => g.Z.getGuild(t.guildId)), N = !b && null != y, [A, C] = i.useState(), R = (0, E.V2)({
+    refreshPosition: g
+  } = e, b = t.guildId === O.X8, y = (0, s.e7)([m.Z], () => m.Z.getGuild(t.guildId)), N = !b && null != y, [A, C] = i.useState(), R = (0, E.V2)({
     location: "SoundmojiGuildInfo"
-  }), P = b || N || null != A || !R, [D, w] = i.useState(!P);
+  }), P = b || N || null != A || !R, [w, D] = i.useState(!P);
   i.useEffect(() => {
-    !P && (w(!0), (0, _.xU)(t.soundId, t.guildId).then(e => {
+    !P && (D(!0), (0, _.xU)(t.soundId, t.guildId).then(e => {
       C(e)
     }).finally(() => {
-      w(!1), m()
+      D(!1), g()
     }))
-  }, [m, P, t.guildId, t.soundId]);
+  }, [g, P, t.guildId, t.soundId]);
   let {
     buttonType: L,
     description: x
-  } = (0, v.Z)(t, n, N, A), M = L === v.y.JOIN_GUILD, k = !b && D, j = i.useMemo(() => N ? u.JO.createFromGuildRecord(y) : null != A ? u.JO.createFromDiscoverableGuild(A) : void 0, [y, N, A]);
+  } = (0, v.Z)(t, n, N, A), M = L === v.y.JOIN_GUILD, k = !b && w, j = i.useMemo(() => N ? u.JO.createFromGuildRecord(y) : null != A ? u.JO.createFromDiscoverableGuild(A) : void 0, [y, N, A]);
   return k ? (0, r.jsx)(f.SE, {}) : (0, r.jsxs)("div", {
-    className: I.infoContainer,
+    className: S.infoContainer,
     children: [(0, r.jsxs)(f.W_, {
       children: [(0, r.jsxs)("div", {
-        className: I.infoExpandedSoundContainer,
+        className: S.infoExpandedSoundContainer,
         children: [(0, r.jsx)(h.ZP, {
           refreshEnabled: !0,
           buttonOverlay: p.Pb.NONE,
@@ -92,14 +92,14 @@ function N(e) {
           children: x
         })]
       }), null != j && (0, r.jsxs)("div", {
-        className: I.infoExpandedGuildContainer,
+        className: S.infoExpandedGuildContainer,
         children: [(0, r.jsx)(a.xv, {
           variant: "eyebrow",
           color: "header-muted",
-          className: I.infoExpandedGuildTitle,
-          children: N ? S.NW.string(S.t.tGDabm) : S.NW.string(S.t.rnOmOT)
+          className: S.infoExpandedGuildTitle,
+          children: N ? I.NW.string(I.t.tGDabm) : I.NW.string(I.t.rnOmOT)
         }), (0, r.jsx)("div", {
-          className: I.infoExpandedGuildInfo,
+          className: S.infoExpandedGuildInfo,
           children: (0, r.jsx)(d.Oe, {
             expressionSourceGuild: j,
             hasJoinedExpressionSourceGuild: N,
@@ -114,7 +114,7 @@ function N(e) {
     }), (0, r.jsx)(l.IGR, {
       text: "BETA",
       color: o.Z.BG_BRAND,
-      className: I.betaBadge
+      className: S.betaBadge
     })]
   })
 }

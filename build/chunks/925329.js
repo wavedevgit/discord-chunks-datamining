@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -68,21 +68,21 @@ function h(e) {
       return l.Z.Sizes.MEDIUM
   }
 }
-let g = e => {
+let m = e => {
   let t, {
     game: n,
     guild: i,
     skuId: c,
-    pid: g,
-    className: m,
+    pid: m,
+    className: g,
     guildClassName: E,
     size: v = f.MEDIUM,
     allowUnknownGameIcon: b = !0
   } = e;
-  if (null != c && (t = p(c)), null != n && null == t && (t = n.getIconURL(_(v))), null == (t = (0, s.Z)(g, t)) && null != i) {
+  if (null != c && (t = p(c)), null != n && null == t && (t = n.getIconURL(_(v))), null == (t = (0, s.Z)(m, t)) && null != i) {
     let e = h(v);
     return (0, r.jsx)(l.Z, {
-      className: o()(d.gameIcon, E, m),
+      className: o()(d.gameIcon, E, g),
       guild: i,
       size: e
     })
@@ -90,7 +90,7 @@ let g = e => {
   if (null == t) return b ? (0, r.jsx)(a.IMN, {
     size: "md",
     color: "currentColor",
-    className: o()(d.gameIcon, v, m)
+    className: o()(d.gameIcon, v, g)
   }) : null;
   let y = null == n ? void 0 : n.name,
     O = null != y && "" !== y ? u.NW.formatToPlainString(u.t.tiKyYm, {
@@ -99,8 +99,8 @@ let g = e => {
   return (0, r.jsx)("img", {
     alt: O,
     src: t,
-    className: o()(d.gameIcon, v, m)
+    className: o()(d.gameIcon, v, g)
   })
 };
-g.Sizes = f;
-let m = g
+m.Sizes = f;
+let g = m

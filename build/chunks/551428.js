@@ -24,7 +24,7 @@ let d = {},
   p = {},
   h = new Set;
 
-function g(e) {
+function m(e) {
   let t = e.id,
     n = e.sku.id,
     r = d[t],
@@ -32,7 +32,7 @@ function g(e) {
   !(null != r && !r.isSlimDirectoryVersion() && i.isSlimDirectoryVersion()) && (!1 === e.published ? (null == _[n] && (_[n] = new Set), _[n].add(t)) : p[n] = t, d[t] = i, h.delete(e.sku.id))
 }
 
-function m(e, t) {
+function g(e, t) {
   return "".concat(e, ":").concat(t)
 }
 
@@ -40,7 +40,7 @@ function E(e) {
   let {
     storeListings: t
   } = e;
-  for (let e of t) g(e)
+  for (let e of t) m(e)
 }
 
 function v(e) {
@@ -50,8 +50,8 @@ function v(e) {
   } = e;
   if (null != n) {
     let e = l.Z.createFromServer(t);
-    f[m(n, e.skuId)] = e, p[e.skuId] = e.id
-  } else g(t)
+    f[g(n, e.skuId)] = e, p[e.skuId] = e.id
+  } else m(t)
 }
 
 function b(e) {
@@ -59,7 +59,7 @@ function b(e) {
     giftCode: t
   } = e;
   if (null == t.store_listing) return !1;
-  g(t.store_listing)
+  m(t.store_listing)
 }
 
 function y(e) {
@@ -76,31 +76,31 @@ function O(e) {
   h.delete(t)
 }
 
-function S() {
+function I() {
   d = {}, p = {}, _ = {}, f = {}, h = new Set
 }
 
-function I() {
+function S() {
   if (r === s.default.locale) return !1;
-  S(), r = s.default.locale
+  I(), r = s.default.locale
 }
 class T extends(i = o.ZP.Store) {
   initialize() {
-    this.waitFor(s.default), this.syncWith([s.default], I), r = s.default.locale
+    this.waitFor(s.default), this.syncWith([s.default], S), r = s.default.locale
   }
   get(e) {
     return d[e]
   }
   getForSKU(e, t) {
     let n = p[e];
-    return null != t ? f[m(t, e)] : null != n ? d[n] : null
+    return null != t ? f[g(t, e)] : null != n ? d[n] : null
   }
   getUnpublishedForSKU(e) {
     let t = _[e];
     return null == t ? [] : Array.from(t).map(e => d[e]).filter(c.lm)
   }
   getForChannel(e, t) {
-    return f[m(e, t)]
+    return f[g(e, t)]
   }
   isFetchingForSKU(e) {
     return h.has(e)
@@ -130,7 +130,7 @@ let N = new T(a.Z, {
   STORE_LISTINGS_FETCH_FAIL: O,
   STORE_LISTINGS_FETCH_SUCCESS: E,
   STORE_LISTING_FETCH_SUCCESS: v,
-  USER_SETTINGS_PROTO_UPDATE: I,
-  APPLICATION_STORE_CLEAR_DATA: S,
+  USER_SETTINGS_PROTO_UPDATE: S,
+  APPLICATION_STORE_CLEAR_DATA: I,
   GIFT_CODE_RESOLVE_SUCCESS: b
 })

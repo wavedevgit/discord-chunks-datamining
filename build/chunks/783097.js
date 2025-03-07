@@ -14,10 +14,10 @@ n.d(t, {
   Y$: () => M,
   Yn: () => G,
   jD: () => R,
-  lf: () => w,
+  lf: () => D,
   pF: () => V,
   sl: () => k,
-  vJ: () => D,
+  vJ: () => w,
   yJ: () => x,
   ye: () => P
 }), n(266796), n(789020), n(627494), n(757143), n(301563), n(653041), n(47120);
@@ -34,8 +34,8 @@ var r = n(912370),
   _ = n(630388),
   p = n(358085),
   h = n(541099),
-  g = n(827498),
-  m = n(981631),
+  m = n(827498),
+  g = n(981631),
   E = n(689079),
   v = n(388032);
 
@@ -72,13 +72,13 @@ function O(e, t) {
   return n
 }
 
-function S(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -113,17 +113,17 @@ function R(e) {
 
 function P(e) {
   var t;
-  return A(e) && (0, _.yE)(null !== (t = e.flags) && void 0 !== t ? t : 0, m.udG.EMBEDDED)
-}
-
-function D(e) {
-  var t;
-  return A(e) && (0, _.yE)(null !== (t = e.flags) && void 0 !== t ? t : 0, m.udG.PARTNER)
+  return A(e) && (0, _.yE)(null !== (t = e.flags) && void 0 !== t ? t : 0, g.udG.EMBEDDED)
 }
 
 function w(e) {
   var t;
-  return A(e) && (0, _.yE)(null !== (t = e.flags) && void 0 !== t ? t : 0, m.udG.PROMOTED)
+  return A(e) && (0, _.yE)(null !== (t = e.flags) && void 0 !== t ? t : 0, g.udG.PARTNER)
+}
+
+function D(e) {
+  var t;
+  return A(e) && (0, _.yE)(null !== (t = e.flags) && void 0 !== t ? t : 0, g.udG.PROMOTED)
 }
 
 function L(e) {
@@ -181,9 +181,9 @@ function k(e) {
     {
       fakeAppIconURL: n
     } = t,
-    r = I(t, ["fakeAppIconURL"]);
+    r = S(t, ["fakeAppIconURL"]);
   return A(e) ? {
-    iconURL: d.ZP.getApplicationIconURL(S(y({}, r), {
+    iconURL: d.ZP.getApplicationIconURL(I(y({}, r), {
       id: e.id,
       icon: e.icon
     })),
@@ -206,7 +206,7 @@ function U(e) {
 }
 
 function G(e) {
-  return e === g._b.TEXT
+  return e === m._b.TEXT
 }
 
 function B(e) {
@@ -217,7 +217,7 @@ function V(e) {
   let t = [];
   for (let n of e) {
     let e = n.application_directory_collection_items.filter(e => e.type === r.C.APPLICATION && P(e.application));
-    0 !== e.length && t.push(S(y({}, n), {
+    0 !== e.length && t.push(I(y({}, n), {
       application_directory_collection_items: e
     }))
   }
@@ -248,7 +248,7 @@ function Z(e) {
 }
 
 function H(e) {
-  f.S.dispatchToLastSubscribed(m.CkL.OPEN_APP_LAUNCHER, {
+  f.S.dispatchToLastSubscribed(g.CkL.OPEN_APP_LAUNCHER, {
     applicationId: e
   })
 }

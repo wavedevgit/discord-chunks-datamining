@@ -16,8 +16,8 @@ var i, o = n(392711),
   _ = n(592125),
   p = n(306680),
   h = n(823379),
-  g = n(709054),
-  m = n(569471);
+  m = n(709054),
+  g = n(569471);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -31,14 +31,14 @@ let v = 25,
   b = !1,
   y = !0,
   O = !1,
-  S = !1,
-  I = null,
+  I = !1,
+  S = null,
   T = s.z.LATEST_ACTIVITY,
   N = [],
   A = 0;
 
 function C() {
-  b = !1, y = !0, O = !1, S = !1, I = null, T = s.z.LATEST_ACTIVITY, r = new Set, A = 0, N = []
+  b = !1, y = !0, O = !1, I = !1, S = null, T = s.z.LATEST_ACTIVITY, r = new Set, A = 0, N = []
 }
 
 function R(e, t) {
@@ -46,14 +46,14 @@ function R(e, t) {
 }
 
 function P(e) {
-  e.channelId === I && e.sortOrder === T && (0, h.OL)(e.tagFilter, r) || C(), I = e.channelId, T = e.sortOrder, r = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), b = !0, y = !1
+  e.channelId === S && e.sortOrder === T && (0, h.OL)(e.tagFilter, r) || C(), S = e.channelId, T = e.sortOrder, r = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), b = !0, y = !1
 }
 
-function D(e) {
-  if (e.channelId !== I || e.sortOrder !== T || !(0, h.OL)(e.tagFilter, r)) return !1;
+function w(e) {
+  if (e.channelId !== S || e.sortOrder !== T || !(0, h.OL)(e.tagFilter, r)) return !1;
   let t = e.threads.filter(e => f.AW.has(e.type)).map(e => e.id);
   N = N.concat(t);
-  let n = _.Z.getChannel(I);
+  let n = _.Z.getChannel(S);
   null != n && n.isForumLikeChannel() && (0, d.Hr)({
     guildId: n.guild_id,
     channelId: n.id,
@@ -64,33 +64,33 @@ function D(e) {
   }), L(), O = e.hasMore, A = e.offset + v, b = !1, y = !1
 }
 
-function w(e) {
-  return (null == I || null == e.channelId || I === e.channelId) && L()
+function D(e) {
+  return (null == S || null == e.channelId || S === e.channelId) && L()
 }
 
 function L() {
-  if (null == I) return !1;
+  if (null == S) return !1;
   let e = !O,
     t = _.Z.getChannel(N[N.length - 1]),
     n = null == t ? null : R(t, T);
-  N = a()(_.Z.getAllThreadsForParent(I)).filter(e => e.isArchivedThread()).filter(t => {
+  N = a()(_.Z.getAllThreadsForParent(S)).filter(e => e.isArchivedThread()).filter(t => {
     var i;
     if (0 !== r.size && (null === (i = t.appliedTags) || void 0 === i ? void 0 : i.some(e => r.has(e))) !== !0) return !1;
     if (e || null == n) return !0;
     {
       let e = null == t ? null : R(t, T);
-      return null != e && g.default.compare(e, n) >= 0
+      return null != e && m.default.compare(e, n) >= 0
     }
-  }).sort((e, t) => g.default.compare(R(e, T), R(t, T))).map(e => e.id).reverse().value()
+  }).sort((e, t) => m.default.compare(R(e, T), R(t, T))).map(e => e.id).reverse().value()
 }
 
 function x(e) {
-  if (e.channelId !== I || e.sortOrder !== T || !(0, h.OL)(e.tagFilter, r)) return !1;
-  b = !1, S = !0, y = !1
+  if (e.channelId !== S || e.sortOrder !== T || !(0, h.OL)(e.tagFilter, r)) return !1;
+  b = !1, I = !0, y = !1
 }
 
 function M(e) {
-  if (e.channel.id !== I) return !1;
+  if (e.channel.id !== S) return !1;
   C()
 }
 
@@ -110,15 +110,15 @@ function U(e) {
   let {
     channel: t
   } = e;
-  return I === t.parent_id && !!(0, u.yv)(t.id) && void k(t.id)
+  return S === t.parent_id && !!(0, u.yv)(t.id) && void k(t.id)
 }
 let G = [];
 class B extends(i = l.ZP.Store) {
   initialize() {
-    this.waitFor(_.Z, m.Z, p.ZP)
+    this.waitFor(_.Z, g.Z, p.ZP)
   }
   get canLoadMore() {
-    return O && !b && !S
+    return O && !b && !I
   }
   get nextOffset() {
     return A
@@ -127,10 +127,10 @@ class B extends(i = l.ZP.Store) {
     return y
   }
   isLoading(e, t, n) {
-    return I === e && T === t && (0, h.OL)(r, n) ? b : (C(), !1)
+    return S === e && T === t && (0, h.OL)(r, n) ? b : (C(), !1)
   }
   getThreads(e, t, n) {
-    return I === e && T === t && (0, h.OL)(r, n) ? N : G
+    return S === e && T === t && (0, h.OL)(r, n) ? N : G
   }
 }
 E(B, "displayName", "ArchivedThreadsStore");
@@ -140,7 +140,7 @@ let V = new B(c.Z, {
   THREAD_UPDATE: U,
   CHANNEL_DELETE: M,
   LOAD_ARCHIVED_THREADS: P,
-  LOAD_ARCHIVED_THREADS_SUCCESS: D,
+  LOAD_ARCHIVED_THREADS_SUCCESS: w,
   LOAD_ARCHIVED_THREADS_FAIL: x,
-  RESORT_THREADS: w
+  RESORT_THREADS: D
 })

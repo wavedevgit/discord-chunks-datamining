@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => I
 });
 var r = n(200651);
 n(192379);
@@ -17,8 +17,8 @@ var i = n(442837),
   _ = n(103450),
   p = n(592125),
   h = n(944486),
-  g = n(475413),
-  m = n(981631),
+  m = n(475413),
+  g = n(981631),
   E = n(388032);
 
 function v(e, t, n) {
@@ -60,21 +60,21 @@ function O(e, t) {
   }), e
 }
 
-function S(e) {
+function I(e) {
   let {
     user: t,
     activity: n,
     onAction: v,
     onClose: y
   } = e, {
-    newestAnalyticsLocation: S
-  } = (0, l.ZP)(), I = (0, a.bp)() === m.IlC.POPOUT, T = (0, i.e7)([p.Z, h.Z], () => p.Z.getChannel(h.Z.getChannelId())), N = (0, _.e)({
+    newestAnalyticsLocation: I
+  } = (0, l.ZP)(), S = (0, a.bp)() === g.IlC.POPOUT, T = (0, i.e7)([p.Z, h.Z], () => p.Z.getChannel(h.Z.getChannelId())), N = (0, _.e)({
     activity: null != n ? n : void 0,
     embeddedActivity: void 0,
     user: t,
     onClose: y
   });
-  if (null == N && null != n && (0, s.Z)(n)) return (0, r.jsx)(g.tG, {
+  if (null == N && null != n && (0, s.Z)(n)) return (0, r.jsx)(m.tG, {
     icon: o.jje,
     text: E.NW.string(E.t.RscU7O),
     color: o.Ttl.BRAND,
@@ -88,8 +88,8 @@ function S(e) {
           type: "channel",
           channel: T
         },
-        analyticsLocation: S,
-        openInPopout: I
+        analyticsLocation: I,
+        openInPopout: S
       }) : (0, c.__)(u._b.TEXT, f.Ie.NORMAL, {
         applicationId: n.application_id
       })
@@ -101,15 +101,15 @@ function S(e) {
     handleJoinRequest: C,
     buttonCTA: R,
     tooltip: P,
-    isEnabled: D,
-    isEmbedded: w
+    isEnabled: w,
+    isEmbedded: D
   } = N;
-  return w ? (0, r.jsx)(o.ua7, {
+  return D ? (0, r.jsx)(o.ua7, {
     text: P,
-    children: e => (0, r.jsx)(g.tG, O(b({}, e), {
+    children: e => (0, r.jsx)(m.tG, O(b({}, e), {
       icon: o.YVR,
       text: R,
-      disabled: !D,
+      disabled: !w,
       submitting: A,
       fullWidth: !0,
       onClick: e => {
@@ -120,10 +120,10 @@ function S(e) {
     }))
   }) : (0, r.jsx)(o.ua7, {
     text: P,
-    children: e => (0, r.jsx)(g.tG, O(b({}, e), {
+    children: e => (0, r.jsx)(m.tG, O(b({}, e), {
       icon: o.iWm,
       text: R,
-      disabled: !D,
+      disabled: !w,
       submitting: A,
       fullWidth: !0,
       onClick: e => {

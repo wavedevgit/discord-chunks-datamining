@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => S
 }), n(47120);
 var r, i = n(442837),
   o = n(570140),
@@ -31,7 +31,7 @@ function h(e) {
   delete f[e]
 }
 
-function g(e) {
+function m(e) {
   let {
     id: t
   } = e;
@@ -39,7 +39,7 @@ function g(e) {
   f[t] = !0
 }
 
-function m(e) {
+function g(e) {
   let {
     id: t
   } = e;
@@ -96,7 +96,7 @@ function O(e) {
     delete f[t.id]
   })
 }
-class S extends(r = i.ZP.PersistedStore) {
+class I extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(s.Z, l.Z), this.removeChangeListener(p), this.addChangeListener(p), f = null != e ? e : {}
   }
@@ -113,12 +113,12 @@ class S extends(r = i.ZP.PersistedStore) {
     return _
   }
 }
-d(S, "displayName", "CategoryCollapseStore"), d(S, "persistKey", "collapsedCategories");
-let I = new S(o.Z, {
+d(I, "displayName", "CategoryCollapseStore"), d(I, "persistKey", "collapsedCategories");
+let S = new I(o.Z, {
   CONNECTION_OPEN: E,
   USER_GUILD_SETTINGS_FULL_UPDATE: v,
-  CATEGORY_COLLAPSE: g,
-  CATEGORY_EXPAND: m,
+  CATEGORY_COLLAPSE: m,
+  CATEGORY_EXPAND: g,
   CATEGORY_COLLAPSE_ALL: y,
   CATEGORY_EXPAND_ALL: O,
   CHANNEL_DELETE: b

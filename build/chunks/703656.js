@@ -2,7 +2,7 @@
 "use strict";
 let r, i, o;
 n.d(t, {
-  At: () => I,
+  At: () => S,
   DB: () => C,
   DR: () => T,
   Wf: () => A,
@@ -11,7 +11,7 @@ n.d(t, {
   eH: () => P,
   m1: () => N,
   op: () => R,
-  s1: () => S,
+  s1: () => I,
   uL: () => v,
   uv: () => y
 }), n(653041), n(26686), n(757143), n(301563);
@@ -46,11 +46,11 @@ let _ = new s.Z("Routing/Utils"),
   p = [u.E07.DEVELOPER_PORTAL];
 r = __OVERLAY__ ? (0, a.PP)() : (0, a.lX)();
 let h = !1,
-  g = r.listen((e, t) => {
-    "REPLACE" !== t && (h = !0, g())
+  m = r.listen((e, t) => {
+    "REPLACE" !== t && (h = !0, m())
   });
 
-function m() {
+function g() {
   return !l.S.hasSubscribers(u.CkL.MODAL_CLOSE) && (n(574254).Z.close(), !0)
 }
 
@@ -85,11 +85,11 @@ function O(e, t, n) {
   E(e, "replace") || (_.log("Replacing route with ".concat(e)), "string" == typeof e ? r.replace(e, t) : r.replace(e), i = n)
 }
 
-function S() {
+function I() {
   return r
 }
 
-function I() {
+function S() {
   return i
 }
 
@@ -132,9 +132,9 @@ function C() {
 }
 
 function R() {
-  m() && (i = null, r.goBack())
+  g() && (i = null, r.goBack())
 }
 
 function P() {
-  m() && (i = null, r.goForward())
+  g() && (i = null, r.goForward())
 }

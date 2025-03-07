@@ -30,7 +30,7 @@ let p = {
 };
 
 function h(e, t, n) {
-  if (g(e, t), E(e, t) || n <= 0) return;
+  if (m(e, t), E(e, t) || n <= 0) return;
   let r = n + Date.now();
   p[t][e.id] = {
     rateLimitPerUser: e.rateLimitPerUser,
@@ -47,11 +47,11 @@ function h(e, t, n) {
   }, !0)
 }
 
-function g(e, t) {
+function m(e, t) {
   null != p[t][e.id] && (p[t][e.id].timer.stop(), delete p[t][e.id])
 }
 
-function m(e, t) {
+function g(e, t) {
   let n = l.Z.getChannel(e);
   if (null == n) return !1;
   h(n, t, 0 === n.rateLimitPerUser ? 0 : n.rateLimitPerUser * s.Z.Millis.SECOND + f)
@@ -65,7 +65,7 @@ function v(e) {
   let {
     channelId: t
   } = e;
-  return m(t, 0)
+  return g(t, 0)
 }
 
 function b(e) {
@@ -80,7 +80,7 @@ function y(e) {
     channelId: t,
     slowmodeType: n
   } = e;
-  return m(t, n)
+  return g(t, n)
 }
 
 function O(e) {
@@ -93,7 +93,7 @@ function O(e) {
   h(i, n, 0 === r ? 0 : r + f)
 }
 
-function S(e) {
+function I(e) {
   let {
     channels: t
   } = e;
@@ -107,7 +107,7 @@ function S(e) {
   })
 }
 
-function I() {
+function S() {
   [0, 1].forEach(e => {
     Object.keys(p[e]).forEach(t => p[e][t].timer.stop()), p[e] = {}
   })
@@ -131,6 +131,6 @@ let N = new T(a.Z, {
   UPLOAD_START: v,
   UPLOAD_FAIL: b,
   UPLOAD_CANCEL_REQUEST: b,
-  CHANNEL_UPDATES: S,
-  LOGOUT: I
+  CHANNEL_UPDATES: I,
+  LOGOUT: S
 })

@@ -9,19 +9,19 @@ n.d(t, {
   Z3: () => u,
   ZR: () => s,
   am: () => p,
-  av: () => I,
+  av: () => S,
   cq: () => E,
   j: () => C,
   k3: () => N,
   kb: () => A,
   n: () => _,
-  oi: () => m,
-  pw: () => S,
+  oi: () => g,
+  pw: () => I,
   rk: () => O,
   tB: () => b,
   uo: () => T,
   vD: () => v,
-  x3: () => g
+  x3: () => m
 }), n(266796);
 var r = n(592125),
   i = n(823379),
@@ -36,8 +36,8 @@ let s = 7,
   _ = 1,
   p = 30,
   h = 200,
-  g = 7;
-var m = function(e) {
+  m = 7;
+var g = function(e) {
   return e[e.VIEW = 0] = "VIEW", e[e.CHAT = 1] = "CHAT", e
 }({});
 
@@ -145,17 +145,17 @@ let O = e => {
   return t
 };
 
-function S(e) {
+function I(e) {
   return null == e || (null == e.message || !(e.message.length > 0)) && (null == e.authorIds || !(e.authorIds.length > 0))
 }
 
-function I(e) {
-  return null == e || !!S(e.welcomeMessage) && (null == e.newMemberActions || !(e.newMemberActions.length > 0)) && (null == e.resourceChannels || !(e.resourceChannels.length > 0))
+function S(e) {
+  return null == e || !!I(e.welcomeMessage) && (null == e.newMemberActions || !(e.newMemberActions.length > 0)) && (null == e.resourceChannels || !(e.resourceChannels.length > 0))
 }
 
 function T(e) {
   var t, n;
-  return null != e && (!!I(e) || (null === (t = e.welcomeMessage) || void 0 === t ? void 0 : t.message) != null && !(e.welcomeMessage.message.length < s) && (null === (n = e.welcomeMessage) || void 0 === n ? void 0 : n.authorIds) != null && 0 !== e.welcomeMessage.authorIds.length && null != e.newMemberActions && !(e.newMemberActions.length < d))
+  return null != e && (!!S(e) || (null === (t = e.welcomeMessage) || void 0 === t ? void 0 : t.message) != null && !(e.welcomeMessage.message.length < s) && (null === (n = e.welcomeMessage) || void 0 === n ? void 0 : n.authorIds) != null && 0 !== e.welcomeMessage.authorIds.length && null != e.newMemberActions && !(e.newMemberActions.length < d))
 }
 
 function N(e) {

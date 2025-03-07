@@ -15,8 +15,8 @@ var r, i = n(392711),
   _ = n(70956),
   p = n(780570),
   h = n(358085),
-  g = n(804739),
-  m = n(941128),
+  m = n(804739),
+  g = n(941128),
   E = n(391690),
   v = n(981631);
 
@@ -53,20 +53,20 @@ function O(e, t) {
   return n
 }
 
-function S(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = 200,
+let S = 200,
   T = 200,
   N = +_.Z.Millis.MINUTE,
   A = {},
   C = "content",
   R = "file://",
   P = !1,
-  D = 0,
   w = 0,
+  D = 0,
   L = 0,
   x = [],
   M = [],
@@ -94,18 +94,18 @@ function B(e) {
     storage: d,
     install_path: _,
     installed_size: p,
-    repairing: g
+    repairing: m
   } = e, {
-    should_patch: m
+    should_patch: g
   } = e;
-  switch (null == m && (m = !0), e.state.type) {
+  switch (null == g && (g = !0), e.state.type) {
     case v.DJE.COMPLETE: {
       let e;
       let E = {},
         b = null;
-      if (g) e = v.vxO.REPAIRING;
+      if (m) e = v.vxO.REPAIRING;
       else if (null == t) e = v.vxO.INSTALL_REQUIRED;
-      else if (m && (t !== n || null != r && 0 !== o().difference(r, i).length)) e = v.vxO.UPDATE_REQUIRED;
+      else if (g && (t !== n || null != r && 0 !== o().difference(r, i).length)) e = v.vxO.UPDATE_REQUIRED;
       else if (e = v.vxO.UP_TO_DATE, null != _) {
         let e = l.Z.fileManager.join(_, C),
           t = (0, f.D)();
@@ -118,7 +118,7 @@ function B(e) {
                 name: i,
                 working_dir: o
               } = n, a = i, s = l.Z.fileManager.join(e, r);
-              (0, h.isMac)() && !s.startsWith(R) && (s = "".concat(R).concat(s)), t = null != o ? l.Z.fileManager.join(e, o) : l.Z.fileManager.dirname(s), E[a] = S(y({}, n), {
+              (0, h.isMac)() && !s.startsWith(R) && (s = "".concat(R).concat(s)), t = null != o ? l.Z.fileManager.join(e, o) : l.Z.fileManager.dirname(s), E[a] = I(y({}, n), {
                 id: a,
                 fullExecutablePath: s,
                 fullWorkingDir: t
@@ -131,7 +131,7 @@ function B(e) {
             let {
               executable: r
             } = n, i = "Default", o = i;
-            E[o] = S(y({}, n), {
+            E[o] = I(y({}, n), {
               name: i,
               id: o,
               fullExecutablePath: l.Z.fileManager.join(e, r),
@@ -153,7 +153,7 @@ function B(e) {
         installedSize: p,
         launchOptions: E,
         defaultLaunchOptionId: b,
-        shouldPatch: m,
+        shouldPatch: g,
         storage: d
       }
     }
@@ -169,7 +169,7 @@ function B(e) {
         paused: E
       } = e.state, b = l.type;
       return {
-        type: o = b === v.f07.UNINSTALLING ? v.vxO.UNINSTALLING : g ? v.vxO.REPAIRING : null == t ? v.vxO.INSTALLING : v.vxO.UPDATING,
+        type: o = b === v.f07.UNINSTALLING ? v.vxO.UNINSTALLING : m ? v.vxO.REPAIRING : null == t ? v.vxO.INSTALLING : v.vxO.UPDATING,
         stage: b,
         applicationId: a,
         branchId: s,
@@ -185,7 +185,7 @@ function B(e) {
         progress: f,
         total: h,
         paused: E,
-        shouldPatch: m
+        shouldPatch: g
       }
     }
   }
@@ -231,9 +231,9 @@ function Y(e) {
     timestamp: Date.now()
   }, ...k]).slice(0, T)
 }
-let K = o().throttle(H, I),
-  z = o().throttle(W, I),
-  q = o().throttle(Y, I);
+let K = o().throttle(H, S),
+  z = o().throttle(W, S),
+  q = o().throttle(Y, S);
 
 function Q(e, t, n) {
   let r = n(A[t]),
@@ -255,9 +255,9 @@ function X(e) {
       let a = (0, p.Tu)(e, t);
       if (n[a] = B(r[e][t]), null != A[a]) {
         let e = Q(n, a, V);
-        e > 0 && K(D += e);
+        e > 0 && K(w += e);
         let r = Q(n, a, F);
-        r > 0 && q(w += r);
+        r > 0 && q(D += r);
         let s = Q(n, a, Z);
         if (s > 0 && z(L += s), i === t) {
           let e = n[a];
@@ -280,7 +280,7 @@ function X(e) {
             branchId: t,
             installationPath: r
           })
-        }), -1 === m.Z.getQueuePosition(e, t) && (n[a].type === v.vxO.INSTALLING || n[a].type === v.vxO.UPDATING) && d.Z.hasApplication(e, t) && E.Z.shouldBeInstalled(e, t) && s.Z.wait(() => {
+        }), -1 === g.Z.getQueuePosition(e, t) && (n[a].type === v.vxO.INSTALLING || n[a].type === v.vxO.UPDATING) && d.Z.hasApplication(e, t) && E.Z.shouldBeInstalled(e, t) && s.Z.wait(() => {
           s.Z.dispatch({
             type: "DISPATCH_APPLICATION_UPDATE",
             applicationId: e,
@@ -317,7 +317,7 @@ class J extends(r = a.ZP.Store) {
     return null != n && null != n.storage && !!n.storage.sync
   }
   isLaunchable(e, t) {
-    if (!(0, g.Q)()) return !1;
+    if (!(0, m.Q)()) return !1;
     let n = A[(0, p.Tu)(e, t)];
     return null != n && n.type === v.vxO.UP_TO_DATE && null != n.launchOptions && 0 !== n.launchOptions.length
   }

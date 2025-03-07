@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120);
 var r = n(268146),
   i = n(46973),
@@ -63,7 +63,7 @@ function h(e) {
   }
   s.ZP.setCrashInformation(o, +!!n)
 }
-class g extends o.Z {
+class m extends o.Z {
   constructor(...e) {
     super(...e), c(this, "actions", {
       RTC_CONNECTION_STATE: p,
@@ -72,4 +72,4 @@ class g extends o.Z {
     })
   }
 }
-let m = new g
+let g = new m

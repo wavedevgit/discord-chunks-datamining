@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(424218),
   p = n(403182),
   h = n(63063),
-  g = n(74538),
-  m = n(790527),
+  m = n(74538),
+  g = n(790527),
   E = n(474936),
   v = n(981631),
   b = n(388032),
@@ -32,7 +32,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function S(e) {
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -66,7 +66,7 @@ function T(e, t) {
 function N(e) {
   var {
     onClose: t
-  } = e, n = I(e, ["onClose"]);
+  } = e, n = S(e, ["onClose"]);
   let O = (0, o.e7)([d.default], () => d.default.getCurrentUser()),
     T = (0, o.e7)([c.Z], () => c.Z.theme),
     N = (0, o.e7)([u.Z], () => u.Z.getGuildId()),
@@ -77,7 +77,7 @@ function N(e) {
       src: "https://cdn.discordapp.com/assets/premium/roadblocks/file_upload_".concat(A, "_v2.png")
     }),
     R = i.useMemo(() => {
-      let e = g.ZP.getUserMaxFileSize(O);
+      let e = m.ZP.getUserMaxFileSize(O);
       return (0, _.BU)(e / 1024, {
         useKibibytes: !0
       })
@@ -88,7 +88,7 @@ function N(e) {
         window.open(h.Z.getArticleURL(v.BhN.NITRO_FAQ), "_blank")
       }
     }),
-    D = (0, r.jsx)("div", {
+    w = (0, r.jsx)("div", {
       className: y.body,
       children: (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
@@ -96,19 +96,19 @@ function N(e) {
       })
     });
 
-  function w() {
+  function D() {
     (0, s.Z)(), t(), f.default.track(v.rMx.PREMIUM_PROMOTION_OPENED, {
       location_section: v.jXE.FILE_UPLOAD_UPSELL_MODAL,
       location_object: v.qAy.NAVIGATION_LINK
     }), (0, l.uL)(v.Z5c.APPLICATION_STORE)
   }
-  return (0, r.jsx)(m.Z, S({
+  return (0, r.jsx)(g.Z, I({
     artElement: C,
     artContainerClassName: y.artContainer,
     enableArtBoxShadow: !1,
     type: E.cd.UPLOAD_ERROR_UPSELL,
     title: b.NW.string(b.t["9C+41t"]),
-    body: D,
+    body: w,
     context: b.NW.formatToPlainString(b.t.q5fTZm, {
       maxSize: R
     }),
@@ -119,7 +119,7 @@ function N(e) {
     onClose: t,
     subscriptionTier: E.Si.TIER_2,
     secondaryCTA: b.NW.string(b.t.ZnqyZ2),
-    onSecondaryClick: w,
+    onSecondaryClick: D,
     showEnhancedUpsell: !0
   }, n))
 }

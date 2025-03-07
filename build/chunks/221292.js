@@ -21,9 +21,9 @@ var r = n(367907),
   _ = n(687158),
   p = n(228168),
   h = n(981631),
-  g = n(231338);
+  m = n(231338);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -39,7 +39,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -81,10 +81,10 @@ let y = e => {
   O = e => {
     let t = s.Z.getStatus(e),
       n = s.Z.isMobileOnline(e);
-    return t === g.Sk.ONLINE && n ? "".concat(t, "-mobile") : t === g.Sk.ONLINE ? "".concat(t, "-desktop") : t
+    return t === m.Sk.ONLINE && n ? "".concat(t, "-mobile") : t === m.Sk.ONLINE ? "".concat(t, "-desktop") : t
   },
-  S = e => null == e ? e : "VOICE" === e ? "VOICE" : Object.keys(h.IIU)[Object.values(h.IIU).indexOf(e)],
-  I = e => {
+  I = e => null == e ? e : "VOICE" === e ? "VOICE" : Object.keys(h.IIU)[Object.values(h.IIU).indexOf(e)],
+  S = e => {
     var t, n;
     let {
       layout: r,
@@ -155,7 +155,7 @@ let y = e => {
       action: s,
       section: l
     } = e;
-    u.default.track(h.rMx.USER_PROFILE_ACTION, b(E({}, (0, r.hH)(t), (0, r.JS)(n), I(e), T(e)), {
+    u.default.track(h.rMx.USER_PROFILE_ACTION, b(E({}, (0, r.hH)(t), (0, r.JS)(n), S(e), T(e)), {
       location_stack: a,
       profile_action: s,
       profile_section: l,
@@ -176,11 +176,11 @@ let y = e => {
       outbox: d,
       voiceChannelId: f
     } = e;
-    u.default.track(h.rMx.USER_PROFILE_ACTIVITY_ACTION, b(E({}, (0, r.hH)(t), (0, r.JS)(n), I(e), T(e)), {
+    u.default.track(h.rMx.USER_PROFILE_ACTIVITY_ACTION, b(E({}, (0, r.hH)(t), (0, r.JS)(n), S(e), T(e)), {
       location_stack: i,
       activity_action: o,
       activity_display: a,
-      activity_type: S(null != l ? h.IIU.STREAMING : null == s ? void 0 : s.type),
+      activity_type: I(null != l ? h.IIU.STREAMING : null == s ? void 0 : s.type),
       activity_name: null == s ? void 0 : s.name,
       activity_platform: null == s ? void 0 : s.platform,
       activity_session_id: null == s ? void 0 : s.session_id,
@@ -209,7 +209,7 @@ let y = e => {
       analyticsLocations: i,
       badge: o
     } = e;
-    u.default.track(h.rMx.USER_PROFILE_BADGE_PRESSED, b(E({}, (0, r.hH)(t), (0, r.JS)(n), I(e), T(e)), {
+    u.default.track(h.rMx.USER_PROFILE_BADGE_PRESSED, b(E({}, (0, r.hH)(t), (0, r.JS)(n), S(e), T(e)), {
       location_stack: i,
       badge: o
     }))
@@ -221,7 +221,7 @@ let y = e => {
       analyticsLocations: i,
       badge: o
     } = e;
-    u.default.track(h.rMx.USER_PROFILE_BADGE_HOVERED, b(E({}, (0, r.hH)(t), (0, r.JS)(n), I(e), T(e)), {
+    u.default.track(h.rMx.USER_PROFILE_BADGE_HOVERED, b(E({}, (0, r.hH)(t), (0, r.JS)(n), S(e), T(e)), {
       location_stack: i,
       badge: o
     }))

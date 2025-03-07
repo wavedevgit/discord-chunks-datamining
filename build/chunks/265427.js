@@ -31,7 +31,7 @@ c && s && _ ? r(d, function(e) {
     n = t.slice || t.set;
   n && (h["$" + e] = o(n))
 });
-var g = function(e) {
+var m = function(e) {
     var t = !1;
     return r(h, function(n, r) {
       if (!t) try {
@@ -39,7 +39,7 @@ var g = function(e) {
       } catch (e) {}
     }), t
   },
-  m = function(e) {
+  g = function(e) {
     var t = !1;
     return r(h, function(n, r) {
       if (!t) try {
@@ -51,7 +51,7 @@ e.exports = function(e) {
   if (!e || "object" != typeof e) return !1;
   if (!c) {
     var t = f(l(e), 8, -1);
-    return p(d, t) > -1 ? t : "Object" === t && m(e)
+    return p(d, t) > -1 ? t : "Object" === t && g(e)
   }
-  return s ? g(e) : null
+  return s ? m(e) : null
 }

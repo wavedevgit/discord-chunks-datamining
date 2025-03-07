@@ -6,16 +6,16 @@ n.d(t, {
   Ku: () => c,
   VF: () => y,
   WX: () => f,
-  X_: () => S,
-  _U: () => g,
+  X_: () => I,
+  _U: () => m,
   fL: () => E,
   gG: () => s,
-  gv: () => I,
+  gv: () => S,
   j8: () => p,
   nz: () => h,
   p: () => o,
   p1: () => u,
-  pg: () => m,
+  pg: () => g,
   rC: () => v,
   sy: () => _,
   wm: () => a,
@@ -46,8 +46,8 @@ let h = {
     1: i.d4z.GUILD_STAGE_VOICE,
     2: i.d4z.GUILD_VOICE
   },
-  g = new Set([3]),
-  m = new Set([1, 2]);
+  m = new Set([3]),
+  g = new Set([1, 2]);
 var E = function(e) {
   return e[e.EVENT_INFO = 0] = "EVENT_INFO", e[e.RSVP_LIST = 1] = "RSVP_LIST", e
 }({});
@@ -55,9 +55,9 @@ let v = 100,
   b = 2 * r.Z.Millis.DAY,
   y = 12 * r.Z.Millis.HOUR,
   O = 4;
-var S = function(e) {
+var I = function(e) {
     return e.NEW_EVENT = "Upcoming Event Notice", e.EVENT_STARTING_SOON = "Event Starting Soon Notice", e
   }({}),
-  I = function(e) {
+  S = function(e) {
     return e[e.UNINTERESTED = 0] = "UNINTERESTED", e[e.INTERESTED = 1] = "INTERESTED", e
   }({})

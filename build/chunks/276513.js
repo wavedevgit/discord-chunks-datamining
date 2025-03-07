@@ -47,13 +47,13 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -82,9 +82,9 @@ function v(e) {
     iconPosition: v = "end",
     external: b,
     focusProps: y
-  } = e, O = m(e, ["role", "variant", "textVariant", "lineClamp", "text", "icon", "iconPosition", "external", "focusProps"]);
+  } = e, O = g(e, ["role", "variant", "textVariant", "lineClamp", "text", "icon", "iconPosition", "external", "focusProps"]);
 
-  function S() {
+  function I() {
     if (null == E) return;
     let e = "text-lg/medium" === i ? "md" : "sm";
     return (0, r.jsx)(E, {
@@ -92,19 +92,19 @@ function v(e) {
       size: e
     })
   }
-  return b && (E = a.G), (0, r.jsx)(s.t, g(p({}, y), {
-    children: (0, r.jsxs)("button", g(p({
+  return b && (E = a.G), (0, r.jsx)(s.t, m(p({}, y), {
+    children: (0, r.jsxs)("button", m(p({
       role: t,
       className: o()(f.linkButton, f[n])
     }, O), {
-      children: [null != E && "start" === v && (0, r.jsx)(S, {}), (0, r.jsx)(c.x, {
+      children: [null != E && "start" === v && (0, r.jsx)(I, {}), (0, r.jsx)(c.x, {
         tag: "span",
         variant: i,
         color: "none",
         lineClamp: _,
         className: f.text,
         children: h
-      }), null != E && "end" === v && (0, r.jsx)(S, {}), b && (0, r.jsx)(l.n, {
+      }), null != E && "end" === v && (0, r.jsx)(I, {}), b && (0, r.jsx)(l.n, {
         children: d.NW.string(u.Z.cgdAs7)
       })]
     }))

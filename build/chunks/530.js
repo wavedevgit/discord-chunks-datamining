@@ -23,45 +23,45 @@ function p(e) {
     usernameIcon: i,
     tags: p,
     nickname: h,
-    nicknameIcons: g,
-    pronouns: m,
+    nicknameIcons: m,
+    pronouns: g,
     className: E,
     isTryItOut: v,
     onOpenProfile: b,
     nicknameVariant: y = "heading-lg/bold",
     pronounsVariant: O = "text-sm/medium"
-  } = e, S = {
+  } = e, I = {
     [_.biteSize]: n === d.y0.BITE_SIZE,
     [_.fullSize]: n === d.y0.FULL_SIZE,
     [_.panel]: n === d.y0.PANEL
-  }, I = e => null == b ? e : (0, r.jsx)(a.P3F, {
+  }, S = e => null == b ? e : (0, r.jsx)(a.P3F, {
     onClick: b,
     className: _.clickableUsername,
     children: e
-  }), T = null != m && m.length > 0, N = (0, l.D)(t);
+  }), T = null != g && g.length > 0, N = (0, l.D)(t);
   return (0, r.jsxs)("div", {
     className: o()(_.container, {
       [_.bot]: null != N
     }, E),
     children: [(0, r.jsxs)("div", {
       className: _.usernameRow,
-      children: [I((0, r.jsx)(a.X6q, {
-        className: o()(_.nickname, S),
+      children: [S((0, r.jsx)(a.X6q, {
+        className: o()(_.nickname, I),
         variant: y,
         children: h
       })), null != N && (0, r.jsx)(c.Z, {
         type: N,
         verified: t.isVerifiedBot()
-      }), null != g && (0, r.jsx)("div", {
-        className: o()(_.nicknameIcons, S),
-        children: g
+      }), null != m && (0, r.jsx)("div", {
+        className: o()(_.nicknameIcons, I),
+        children: m
       })]
     }), (0, r.jsxs)("div", {
-      className: o()(_.tags, S, {
+      className: o()(_.tags, I, {
         [_.pronouns]: T,
         [_.bot]: null != N
       }),
-      children: [I((0, r.jsx)(s.Z, {
+      children: [S((0, r.jsx)(s.Z, {
         user: t,
         usernameIcon: i,
         forceUsername: !0,
@@ -82,7 +82,7 @@ function p(e) {
             variant: O,
             className: _.pronounsText,
             color: "header-primary",
-            children: m
+            children: g
           })
         })]
       }), (0, r.jsx)(u.ZP, {

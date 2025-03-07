@@ -16,15 +16,15 @@ var r = n(392711),
   _ = n(5192),
   p = n(51144),
   h = n(298552),
-  g = n(444758),
-  m = n(723454),
+  m = n(444758),
+  g = n(723454),
   E = n(772096),
   v = n(800927),
   b = n(143223),
   y = n(945884),
   O = n(594199),
-  S = n(97734),
-  I = n(303694),
+  I = n(97734),
+  S = n(303694),
   T = n(660199),
   N = n(364458),
   A = n(981631),
@@ -32,7 +32,7 @@ var r = n(392711),
   R = n(377668),
   P = n(388032);
 
-function D(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -41,14 +41,14 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -104,10 +104,10 @@ let V = e => {
   Z = {
     newline: a().defaultRules.newline,
     paragraph: a().defaultRules.paragraph,
-    escape: x(w({}, a().defaultRules.escape), {
+    escape: x(D({}, a().defaultRules.escape), {
       match: (e, t, n) => !1 === t.allowEscape ? null : a().defaultRules.escape.match(e, t, n)
     }),
-    blockQuote: x(w({}, a().defaultRules.blockQuote), {
+    blockQuote: x(D({}, a().defaultRules.blockQuote), {
       requiredFirstCharacters: [" ", ">"],
       match(e, t) {
         let {
@@ -139,10 +139,10 @@ let V = e => {
       }
     }),
     link: E.ZP,
-    autolink: x(w({}, a().defaultRules.autolink), {
+    autolink: x(D({}, a().defaultRules.autolink), {
       parse: B
     }),
-    url: x(w({}, a().defaultRules.url), {
+    url: x(D({}, a().defaultRules.url), {
       requiredFirstCharacters: ["h", "s"],
       match(e, t) {
         if (!t.inline) return null;
@@ -169,10 +169,10 @@ let V = e => {
     u: a().defaultRules.u,
     br: a().defaultRules.br,
     text: O.ZP,
-    inlineCode: x(w({}, a().defaultRules.inlineCode), {
+    inlineCode: x(D({}, a().defaultRules.inlineCode), {
       parse(e, t, n) {
         let r = a().defaultRules.inlineCode.parse(e, t, n);
-        return !0 === n.parseInlineCodeChildContent ? x(w({}, r), {
+        return !0 === n.parseInlineCodeChildContent ? x(D({}, r), {
           validationChildContent: t(r.content, n)
         }) : r
       }
@@ -281,9 +281,9 @@ let V = e => {
         }
       }
     },
-    channelMention: g.Z.channelMention,
-    channelOrMessageUrl: g.Z.channelOrMessageUrl,
-    mediaPostLink: g.Z.mediaPostLink,
+    channelMention: m.Z.channelMention,
+    channelOrMessageUrl: m.Z.channelOrMessageUrl,
+    mediaPostLink: m.Z.mediaPostLink,
     attachmentLink: h.Z.attachmentLink,
     shopLink: b.Z.shopLink,
     commandMention: {
@@ -371,7 +371,7 @@ let V = e => {
       match: e => A.PEY.exec(e),
       parse(e, t, n) {
         var r;
-        let [, i, o] = e, a = (0, I.l)(i), s = (0, I.W)(i, o, null === (r = F(n)) || void 0 === r ? void 0 : r.id);
+        let [, i, o] = e, a = (0, S.l)(i), s = (0, S.W)(i, o, null === (r = F(n)) || void 0 === r ? void 0 : r.id);
 
         function l(e) {
           return null == e ? null : [{
@@ -390,11 +390,11 @@ let V = e => {
         }
       }
     },
-    heading: m.Z,
+    heading: g.Z,
     list: v.Z,
     subtext: y.Z
   },
-  H = (0, N.Z)([Z, S.Z]),
+  H = (0, N.Z)([Z, I.Z]),
   W = i().omit(H, ["inlineCode", "codeBlock", "br", "blockQuote", "subtext", "soundboard"]),
   Y = i().omit(H, ["inlineCode", "codeBlock", "br", "blockQuote", "autolink", "url", "attachmentLink", "mention", "roleMention", "channelMention", "channelOrMessageUrl", "mediaPostLink", "subtext", "soundboard"]),
   K = i().omit(H, ["codeBlock", "br", "mention", "channel", "roleMention", "attachmentLink", "subtext", "soundboard"]),
@@ -435,7 +435,7 @@ let ee = 10,
       parse(e, t, n) {
         var r;
         let i = null !== (r = n.parseDepth) && void 0 !== r ? r : 0,
-          o = x(w({}, n), {
+          o = x(D({}, n), {
             parseDepth: i + 1
           }),
           a = t(e[2], o),

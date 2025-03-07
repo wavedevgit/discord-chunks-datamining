@@ -17,8 +17,8 @@ var i = n(442837),
   _ = n(158508),
   p = n(622724),
   h = n(785717),
-  g = n(621853),
-  m = n(475413),
+  m = n(621853),
+  g = n(475413),
   E = n(388032);
 
 function v(e, t, n) {
@@ -52,74 +52,74 @@ function y(e) {
   } = e, {
     trackUserProfileAction: O
   } = (0, h.KZ)(), {
-    analyticsLocations: S,
-    newestAnalyticsLocation: I
+    analyticsLocations: I,
+    newestAnalyticsLocation: S
   } = (0, s.ZP)(a.Z.USER_PROFILE_OVERFLOW_MENU), T = l.J.useExperiment({
     location: "UserSettingsAuthedApps"
   }, {
     autoTrackExposure: !0
-  }).enabled, N = (0, i.e7)([g.Z], () => g.Z.getUserProfile(t.id)), A = null == N ? void 0 : N.application, C = (0, d.Z)({
+  }).enabled, N = (0, i.e7)([m.Z], () => m.Z.getUserProfile(t.id)), A = null == N ? void 0 : N.application, C = (0, d.Z)({
     user: t,
     application: null != A ? A : void 0,
     guildId: n,
     onItemClick: () => {
       O({
         action: "MANAGE_APP",
-        analyticsLocations: S
+        analyticsLocations: I
       }), null == y || y()
     }
   }), R = (0, f.Z)({
     user: t,
     guildId: n,
-    location: I,
+    location: S,
     color: "danger",
     onBlock: () => O({
       action: "BLOCK",
-      analyticsLocations: S
+      analyticsLocations: I
     }),
     onUnblock: () => O({
       action: "UNBLOCK",
-      analyticsLocations: S
+      analyticsLocations: I
     })
   }), P = (0, _.Z)({
     user: t,
     guildId: n,
-    location: I,
+    location: S,
     onIgnore: () => O({
       action: "IGNORE",
-      analyticsLocations: S
+      analyticsLocations: I
     }),
     onUnignore: () => O({
       action: "UNIGNORE",
-      analyticsLocations: S
+      analyticsLocations: I
     })
-  }), D = (0, p.Z)({
+  }), w = (0, p.Z)({
     user: t,
     guildId: n,
-    location: I,
+    location: S,
     color: "danger",
     onAction: () => O({
       action: "REPORT",
-      analyticsLocations: S
+      analyticsLocations: I
     })
-  }), w = (0, u.Z)({
+  }), D = (0, u.Z)({
     id: null == A ? void 0 : A.id,
     label: E.NW.string(E.t["+NP/b2"]),
     onSuccess: () => O({
       action: "COPY_APP_ID",
-      analyticsLocations: S
+      analyticsLocations: I
     })
   }), L = [
     [v], T ? [C] : [],
-    [P, R, D],
+    [P, R, w],
     [(0, c.Z)({
       application: A,
       label: E.NW.string(E.t.WqhZsr),
       onSuccess: () => O({
         action: "COPY_APP_LINK",
-        analyticsLocations: S
+        analyticsLocations: I
       })
-    }), w]
+    }), D]
   ];
   return L.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.yRy, {
     renderPopout: e => {
@@ -136,7 +136,7 @@ function y(e) {
         }, t))
       })
     },
-    children: e => (0, r.jsx)(m.oY, b({
+    children: e => (0, r.jsx)(g.oY, b({
       action: "PRESS_OPTIONS",
       icon: o.xhG,
       tooltipText: E.NW.string(E.t.UKOtz8)

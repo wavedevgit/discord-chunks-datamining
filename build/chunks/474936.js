@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   $7: () => k,
-  $8: () => eD,
+  $8: () => ew,
   $e: () => _,
   $n: () => eJ,
   A5: () => G,
@@ -21,12 +21,12 @@ n.d(t, {
   GP: () => C,
   HO: () => eL,
   Hk: () => Q,
-  IW: () => I,
+  IW: () => S,
   JN: () => e6,
-  Lw: () => eI,
+  Lw: () => eS,
   M_: () => e3,
   Nl: () => ep,
-  No: () => S,
+  No: () => I,
   OT: () => es,
   Ph: () => e7,
   QF: () => eR,
@@ -52,10 +52,10 @@ n.d(t, {
   XB: () => eE,
   Xh: () => E,
   Y1: () => ex,
-  YQ: () => g,
+  YQ: () => m,
   Z1: () => y,
   Zh: () => d,
-  _k: () => ew,
+  _k: () => eD,
   a$: () => te,
   a1: () => eH,
   a7: () => J,
@@ -68,7 +68,7 @@ n.d(t, {
   dO: () => ee,
   dT: () => eu,
   eZ: () => eX,
-  ee: () => em,
+  ee: () => eg,
   ff: () => Z,
   gW: () => eh,
   gh: () => B,
@@ -84,7 +84,7 @@ n.d(t, {
   kJ: () => eQ,
   m8: () => V,
   mn: () => T,
-  n5: () => eg,
+  n5: () => em,
   nG: () => eb,
   nH: () => ej,
   nL: () => eV,
@@ -98,12 +98,12 @@ n.d(t, {
   rV: () => N,
   rX: () => F,
   rt: () => e2,
-  vL: () => eS,
+  vL: () => eI,
   w1: () => ev,
   w7: () => e5,
   wh: () => K,
   xT: () => et,
-  y7: () => m,
+  y7: () => g,
   ys: () => eU,
   zp: () => U
 }), n(47120);
@@ -160,8 +160,8 @@ let u = void 0,
 var h = function(e) {
   return e.NONE = "628379670982688768", e.TIER_0 = "978380684370378762", e.TIER_1 = "521846918637420545", e.TIER_2 = "521847234246082599", e.GUILD = "590663762298667008", e.LEGACY = "521842865731534868", e
 }({});
-let g = ["628379670982688768", "978380684370378762", "521846918637420545", "521847234246082599", "590663762298667008"],
-  m = Object.freeze({
+let m = ["628379670982688768", "978380684370378762", "521846918637420545", "521847234246082599", "590663762298667008"],
+  g = Object.freeze({
     "978380684370378762": 3,
     "521846918637420545": 1,
     "521847234246082599": 2,
@@ -175,8 +175,8 @@ let v = new Set(["978380692553465866", "1024422698568122368", "51165187173620121
   b = new Set(["511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"]),
   y = new Set(["590665532894740483", "944037355453415424", "944037391444738048", "590665538238152709"]),
   O = new Set(["642251038925127690", "944037208325619722", "944037355453415424", "944037391444738048"]),
-  S = new Set(["978380692553465866", "511651871736201216", "511651880837840896"]),
-  I = Object.freeze({
+  I = new Set(["978380692553465866", "511651871736201216", "511651880837840896"]),
+  S = Object.freeze({
     "978380684370378762": "978380692553465866",
     "521846918637420545": "511651871736201216",
     "521847234246082599": "511651880837840896",
@@ -338,8 +338,8 @@ let C = Object.freeze({
   }),
   R = new Set(["511651880837840896"]),
   P = 16,
-  D = 8,
-  w = 5,
+  w = 8,
+  D = 5,
   L = 30,
   x = 2,
   M = 3,
@@ -377,8 +377,8 @@ let C = Object.freeze({
   e_ = "1215366184820539392",
   ep = "1223319122125783040",
   eh = "1223380890109870080",
-  eg = "1265748546523762828",
-  em = [ep, eh],
+  em = "1265748546523762828",
+  eg = [ep, eh],
   eE = 8,
   ev = 96,
   eb = Object.freeze({
@@ -433,13 +433,13 @@ var ey = function(e) {
   eO = function(e) {
     return e[e.PREMIUM_TIER_1 = 1] = "PREMIUM_TIER_1", e[e.PREMIUM_TIER_2 = 2] = "PREMIUM_TIER_2", e[e.GUILD_BOOST = 4] = "GUILD_BOOST", e[e.PREMIUM_TIER_0 = 8] = "PREMIUM_TIER_0", e[e.ON_REVERSE_TRIAL = 16] = "ON_REVERSE_TRIAL", e
   }({});
-let eS = Object.freeze({
+let eI = Object.freeze({
     "978380684370378762": 8,
     "521846918637420545": 1,
     "521847234246082599": 2,
     "590663762298667008": 4
   }),
-  eI = 0x3200000,
+  eS = 0x3200000,
   eT = 0x3200000,
   eN = 524288e3,
   eA = 0x3200000,
@@ -451,13 +451,13 @@ let eS = Object.freeze({
     [i.Eu4.TIER_2]: 15,
     [i.Eu4.TIER_3]: 30
   },
-  eD = {
+  ew = {
     [i.Eu4.NONE]: eP[i.Eu4.NONE],
     [i.Eu4.TIER_1]: eP[i.Eu4.NONE] + eP[i.Eu4.TIER_1],
     [i.Eu4.TIER_2]: eP[i.Eu4.NONE] + eP[i.Eu4.TIER_1] + eP[i.Eu4.TIER_2],
     [i.Eu4.TIER_3]: eP[i.Eu4.NONE] + eP[i.Eu4.TIER_1] + eP[i.Eu4.TIER_2] + eP[i.Eu4.TIER_3]
   },
-  ew = {
+  eD = {
     [i.Eu4.NONE]: eE,
     [i.Eu4.TIER_1]: 24,
     [i.Eu4.TIER_2]: 36,
@@ -472,8 +472,8 @@ let eS = Object.freeze({
         fileSize: i.mBz,
         screenShareQualityFramerate: 30,
         screenShareQualityResolution: "720p",
-        soundboardSounds: ew[i.Eu4.NONE],
-        stickers: eD[i.Eu4.NONE],
+        soundboardSounds: eD[i.Eu4.NONE],
+        stickers: ew[i.Eu4.NONE],
         stageVideoUsers: i.B9o
       }
     },
@@ -485,8 +485,8 @@ let eS = Object.freeze({
         fileSize: i.mBz,
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "720p",
-        soundboardSounds: ew[i.Eu4.TIER_1],
-        stickers: eD[i.Eu4.TIER_1],
+        soundboardSounds: eD[i.Eu4.TIER_1],
+        stickers: ew[i.Eu4.TIER_1],
         stageVideoUsers: i.B9o
       }
     },
@@ -498,8 +498,8 @@ let eS = Object.freeze({
         fileSize: eA,
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "1080p",
-        soundboardSounds: ew[i.Eu4.TIER_2],
-        stickers: eD[i.Eu4.TIER_2],
+        soundboardSounds: eD[i.Eu4.TIER_2],
+        stickers: ew[i.Eu4.TIER_2],
         stageVideoUsers: i.eez
       }
     },
@@ -511,8 +511,8 @@ let eS = Object.freeze({
         fileSize: eC,
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "1080p",
-        soundboardSounds: ew[i.Eu4.TIER_3],
-        stickers: eD[i.Eu4.TIER_3],
+        soundboardSounds: eD[i.Eu4.TIER_3],
+        stickers: ew[i.Eu4.TIER_3],
         stageVideoUsers: i.RcX
       }
     }
@@ -528,8 +528,8 @@ let ej = {
   "1024422698568122368": P,
   "511651876987469824": P,
   "511651885459963904": P,
-  "944037208325619722": D,
-  "642251038925127690": w
+  "944037208325619722": w,
+  "642251038925127690": D
 };
 var eU = function(e) {
   return e.HIGH_STREAMING_QUALITY = "high_streaming_quality", e.MID_STREAMING_QUALITY = "mid_streaming_quality", e
@@ -554,7 +554,7 @@ let eZ = Object.freeze({
   }),
   eH = Object.freeze({
     3: {
-      fileSize: eI
+      fileSize: eS
     },
     1: {
       fileSize: eT

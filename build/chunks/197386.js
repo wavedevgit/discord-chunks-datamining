@@ -20,17 +20,17 @@ function h(e, t) {
   let n = c.ZP.getSelfEmbeddedActivityForLocation(t);
   if (null == n) return;
   let h = i.Z.getApplication(n.applicationId),
-    g = (0, d.pY)(n.location),
-    m = (0, u.ZP)({
+    m = (0, d.pY)(n.location),
+    g = (0, u.ZP)({
       application: h,
-      channelId: g
+      channelId: m
     });
-  if (null != m) {
-    (0, a.Z)(m);
+  if (null != g) {
+    (0, a.Z)(g);
     return
   }
-  null != g && ((0, s.uL)(p.Z5c.CHANNEL(e, g)), (0, f.Z)(g) ? (r.Z.selectParticipant(g, (0, o.gN)({
+  null != m && ((0, s.uL)(p.Z5c.CHANNEL(e, m)), (0, f.Z)(m) ? (r.Z.selectParticipant(m, (0, o.gN)({
     applicationId: n.applicationId,
     instanceId: null == n ? void 0 : n.compositeInstanceId
-  })), r.Z.updateLayout(g, p.AEg.NO_CHAT)) : (0, l.tg)(_.Ez.PANEL))
+  })), r.Z.updateLayout(m, p.AEg.NO_CHAT)) : (0, l.tg)(_.Ez.PANEL))
 }

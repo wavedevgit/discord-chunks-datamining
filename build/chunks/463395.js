@@ -28,17 +28,17 @@ function h(e, t, n) {
   return null != r ? n(r) : t
 }
 
-function g(e, t) {
+function m(e, t) {
   let n = f[e];
   null != n && n.forEach(e => delete _[e.id]), f[e] = t, t.forEach(e => _[e.id] = e)
 }
 
-function m(e) {
+function g(e) {
   let {
     applicationId: t,
     devices: n
   } = e;
-  g(t, n), s.K.set(d, f), p++
+  m(t, n), s.K.set(d, f), p++
 }
 class E extends(r = a.ZP.Store) {
   initialize() {
@@ -46,7 +46,7 @@ class E extends(r = a.ZP.Store) {
     null != e && o().forEach(e, (e, t) => {
       e.forEach(e => {
         "audioinput" === e.type && e.hardwareMute && (e.hardwareMute = !1)
-      }), g(t, e)
+      }), m(t, e)
     })
   }
   isCertified(e) {
@@ -86,5 +86,5 @@ class E extends(r = a.ZP.Store) {
 }
 u(E, "displayName", "CertifiedDeviceStore");
 let v = new E(l.Z, {
-  CERTIFIED_DEVICES_SET: m
+  CERTIFIED_DEVICES_SET: g
 })

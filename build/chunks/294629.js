@@ -21,10 +21,10 @@ function u(e) {
     mediaEngineStore: d = a.Z,
     permissionStore: f = s.Z,
     impersonateStore: _ = i.Z
-  } = e, p = null != n ? u.getVoiceState(n.getGuildId(), r.getId()) : null, h = d.isSelfMute() || d.isSelfMutedTemporarily(), g = null == n ? void 0 : n.getGuildId(), m = _.isViewingRoles(g) && !f.can(c.Plq.SPEAK, n);
+  } = e, p = null != n ? u.getVoiceState(n.getGuildId(), r.getId()) : null, h = d.isSelfMute() || d.isSelfMutedTemporarily(), m = null == n ? void 0 : n.getGuildId(), g = _.isViewingRoles(m) && !f.can(c.Plq.SPEAK, n);
   return {
     selfMute: h,
-    suppress: (null == p ? void 0 : p.suppress) || m,
+    suppress: (null == p ? void 0 : p.suppress) || g,
     mute: null !== (t = null == p ? void 0 : p.mute) && void 0 !== t && t
   }
 }

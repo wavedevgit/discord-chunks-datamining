@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => S
 }), n(789020);
 var r = n(697988),
   i = n(544891),
@@ -16,8 +16,8 @@ var r = n(697988),
   _ = n(496675),
   p = n(823379),
   h = n(920303),
-  g = n(569471),
-  m = n(91159),
+  m = n(569471),
+  g = n(91159),
   E = n(952537),
   v = n(981631),
   b = n(176505),
@@ -37,7 +37,7 @@ function O(e, t) {
   }), t))
 }
 
-function S(e, t) {
+function I(e, t) {
   o.Z.dispatch({
     type: "THREAD_MEMBER_LOCAL_UPDATE",
     id: e.id,
@@ -46,7 +46,7 @@ function S(e, t) {
     isJoining: t
   })
 }
-let I = {
+let S = {
   archiveThread(e, t) {
     let n = {
       archived: !0
@@ -102,7 +102,7 @@ let I = {
     invitable: t
   }),
   async joinThread(e, t) {
-    e.isForumPost() && S(e, !0);
+    e.isForumPost() && I(e, !0);
     try {
       return await i.tn.post({
         url: v.ANM.THREAD_MEMBER(e.id),
@@ -123,7 +123,7 @@ let I = {
         title: y.NW.string(y.t.j2d6Ki),
         body: y.NW.string(y.t.fEptJC)
       });
-      e.isForumPost() && S(e, !1)
+      e.isForumPost() && I(e, !1)
     }
   },
   async addMember(e, t, n) {
@@ -149,7 +149,7 @@ let I = {
       })
     }
   },
-  leaveThread: (e, t) => (e.isForumPost() && S(e, !1), i.tn.del({
+  leaveThread: (e, t) => (e.isForumPost() && I(e, !1), i.tn.del({
     url: v.ANM.THREAD_MEMBER(e.id),
     query: {
       location: t
@@ -266,7 +266,7 @@ let I = {
     })
   },
   async setNotificationSettings(e, t) {
-    return (0, m.ZJ)(e, t), g.Z.hasJoined(e.id) || await this.joinThread(e, "Change Notification Settings"), i.tn.patch({
+    return (0, g.ZJ)(e, t), m.Z.hasJoined(e.id) || await this.joinThread(e, "Change Notification Settings"), i.tn.patch({
       url: v.ANM.THREAD_MEMBER_SETTINGS(e.id),
       body: t,
       rejectWithError: !1

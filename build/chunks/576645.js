@@ -5,10 +5,10 @@ n.d(t, {
   Nt: () => Z,
   Ou: () => G,
   R2: () => L,
-  T$: () => D,
+  T$: () => w,
   Uu: () => k,
   ZC: () => F,
-  Zm: () => w,
+  Zm: () => D,
   bK: () => j,
   mx: () => U,
   t6: () => x,
@@ -28,40 +28,40 @@ var r = n(192379),
   _ = n(430824),
   p = n(131951),
   h = n(158776),
-  g = n(959457),
-  m = n(594174),
+  m = n(959457),
+  g = n(594174),
   E = n(451478),
   v = n(626135),
   b = n(980463),
   y = n(823961),
   O = n(317951),
-  S = n(111810),
-  I = n(896835),
+  I = n(111810),
+  S = n(896835),
   T = n(477931),
   N = n(981631),
   A = n(37113);
 let C = 35e5,
   R = 1e4,
   P = new a.Yd("HDStreamingConsumableModal"),
-  D = e => {
+  w = e => {
     let t = (0, s.e7)([_.Z], () => _.Z.getGuild(null == e ? void 0 : e.guild_id)),
-      n = (0, s.e7)([m.default], () => {
+      n = (0, s.e7)([g.default], () => {
         var e;
-        return null === (e = m.default.getCurrentUser()) || void 0 === e ? void 0 : e.id
+        return null === (e = g.default.getCurrentUser()) || void 0 === e ? void 0 : e.id
       }),
       i = (0, s.Wu)([f.Z], () => null == e ? [] : f.Z.getAllActiveStreamsForChannel(e.id).filter(e => e.ownerId !== n)),
       o = i.some(e => {
-        let t = m.default.getUser(e.ownerId);
+        let t = g.default.getUser(e.ownerId);
         return null != t && h.Z.isMobileOnline(t.id)
       }),
       [a, l] = (0, r.useState)(null),
       [c, u] = (0, r.useState)([]);
-    (0, s.e7)([g.Z], () => {
+    (0, s.e7)([m.Z], () => {
       if (null == a || Date.now() - a > R) {
         let e = i.map(e => {
           var t;
           let n = (0, d.V9)(e),
-            r = g.Z.getRTCConnection(n);
+            r = m.Z.getRTCConnection(n);
           return null == r ? void 0 : null === (t = r.getVideoStats()) || void 0 === t ? void 0 : t.inbound_bitrate_estimate_percentile99
         });
         P.info("Setting bitrates", e), u(e), l(Date.now())
@@ -70,14 +70,14 @@ let C = 35e5,
     let p = (0, r.useMemo)(() => 0 === c.length || !c.some(e => null == e || e < C), [c]);
     return ((null == t ? void 0 : t.premiumTier) === N.Eu4.NONE || (null == t ? void 0 : t.premiumTier) === N.Eu4.TIER_1) && p && !o
   },
-  w = (e, t) => {
-    let n = (0, s.e7)([m.default], () => {
+  D = (e, t) => {
+    let n = (0, s.e7)([g.default], () => {
         var e;
-        return null === (e = m.default.getCurrentUser()) || void 0 === e ? void 0 : e.id
+        return null === (e = g.default.getCurrentUser()) || void 0 === e ? void 0 : e.id
       }),
       r = (0, s.Wu)([f.Z], () => null == e ? [] : f.Z.getAllActiveStreamsForChannel(e.id).filter(e => e.ownerId !== n)),
-      i = (0, I.j)(t),
-      o = D(e);
+      i = (0, S.j)(t),
+      o = w(e);
     return i && o && r.length > 0
   };
 
@@ -93,7 +93,7 @@ function L(e) {
 }
 
 function x(e) {
-  let t = (0, S.V1)("Utils.tsx"),
+  let t = (0, I.V1)("Utils.tsx"),
     [n, i, o, a, l] = (0, s.Wu)([y.Z], () => [y.Z.isEntitlementFetched(e), y.Z.fetchPotionCount(e), y.Z.isEntitlementFetching(e), y.Z.getEntitlement(e), y.Z.getErrored(e)]);
   return (0, r.useEffect)(() => {
     n || o || !t || (0, b.gA)(e)
@@ -148,7 +148,7 @@ function U(e) {
 
 function G(e) {
   let t = (0, s.e7)([_.Z], () => _.Z.getGuild(null == e ? void 0 : e.guild_id)),
-    n = (0, I.j)("VoiceEffectsActionBar");
+    n = (0, S.j)("VoiceEffectsActionBar");
   return ((null == t ? void 0 : t.premiumTier) === N.Eu4.NONE || (null == t ? void 0 : t.premiumTier) === N.Eu4.TIER_1) && (null == e ? void 0 : e.type) === N.d4z.GUILD_VOICE && !(null == e ? void 0 : e.isHDStreamSplashed) && n
 }
 
@@ -169,7 +169,7 @@ function F(e) {
   if (null == e || null == e.potions || 0 === e.potions.length) return null;
   for (let r of e.potions) {
     var t, n;
-    if (r.type === T.B.CONFETTI && r.used_by === (null === (t = m.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) && (null === (n = r.emoji) || void 0 === n ? void 0 : n.length) > 0) return r.emoji[0]
+    if (r.type === T.B.CONFETTI && r.used_by === (null === (t = g.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) && (null === (n = r.emoji) || void 0 === n ? void 0 : n.length) > 0) return r.emoji[0]
   }
   return null
 }

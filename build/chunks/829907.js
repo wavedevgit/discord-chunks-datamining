@@ -4,12 +4,12 @@ n.d(t, {
   DH: () => N,
   HD: () => d,
   PD: () => A,
-  P_: () => m,
+  P_: () => g,
   X8: () => f,
-  hj: () => S,
+  hj: () => I,
   qT: () => C,
-  qc: () => I,
-  sS: () => g,
+  qc: () => S,
+  sS: () => m,
   tY: () => _
 }), n(47120);
 var r = n(615287),
@@ -44,7 +44,7 @@ function h(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   switch (e) {
     case i.Jx.BORDERLESS_FULLSCREEN:
       return "Borderless Fullscreen";
@@ -61,7 +61,7 @@ function g(e) {
   }
 }
 
-function m(e) {
+function g(e) {
   switch (e) {
     case r.gl.OutOfProcess:
       return "Out of Process";
@@ -89,7 +89,7 @@ let v = {
   },
   y = 16,
   O = !0;
-async function S(e) {
+async function I(e) {
   var t;
   let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : y,
     r = await h(e, n),
@@ -101,7 +101,7 @@ async function S(e) {
   return null != s ? s(e, i, r) : r
 }
 
-function I(e) {
+function S(e) {
   var t;
   let n = null === (t = l.Z.getGameByName(e.name)) || void 0 === t ? void 0 : t.id;
   if (null == n) return !1;

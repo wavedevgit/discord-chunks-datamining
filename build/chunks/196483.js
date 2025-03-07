@@ -43,14 +43,14 @@ function a(e, t) {
   };
   let p = null,
     h = null,
-    g = null;
+    m = null;
   return e.apply = t => {
     let {
       history: o
     } = e;
     n(t);
     let a = i.bN.richValue(e);
-    a !== g && (0 === o.stack.length && (o.stack = [c(e)], o.index = 0), r.T.isSaving(e) && (s(e, t, p), p = t), h = t, g = a)
+    a !== m && (0 === o.stack.length && (o.stack = [c(e)], o.index = 0), r.T.isSaving(e) && (s(e, t, p), p = t), h = t, m = a)
   }, e.deleteBackward = t => {
     r.T.withSingleEntry(e, () => o(t))
   }, e.deleteForward = t => {

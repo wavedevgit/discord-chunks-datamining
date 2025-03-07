@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  D: () => I,
+  D: () => S,
   Z: () => N
 });
 var r = n(200651),
@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(589530),
   p = n(591759),
   h = n(254109),
-  g = n(212459),
-  m = n(654577);
+  m = n(212459),
+  g = n(654577);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -61,7 +61,7 @@ function y(e, t) {
 
 function O(e, t) {
   if (null == e) return {};
-  var n, r, i = S(e, t);
+  var n, r, i = I(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -69,7 +69,7 @@ function O(e, t) {
   return i
 }
 
-function S(e, t) {
+function I(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -77,7 +77,7 @@ function S(e, t) {
   return i
 }
 
-function I(e) {
+function S(e) {
   let t = p.Z.toURLSafe(e);
   return null == t ? null : (t.searchParams.append("format", "webp"), t.toString())
 }
@@ -94,7 +94,7 @@ function T(e) {
       width: p,
       height: E,
       url: b,
-      proxyUrl: S,
+      proxyUrl: I,
       alt: T,
       type: N,
       maxWidth: C,
@@ -102,14 +102,14 @@ function T(e) {
     } = n,
     P = O(n, ["width", "height", "url", "proxyUrl", "alt", "type", "maxWidth", "maxHeight"]),
     {
-      zoomed: D,
-      setZoomed: w
-    } = (0, g.Y)(),
-    L = A(D, b, S),
+      zoomed: w,
+      setZoomed: D
+    } = (0, m.Y)(),
+    L = A(w, b, I),
     x = null != p && 0 !== p && null != E && 0 !== E;
-  if ("VIDEO" === N && x && null != S) {
+  if ("VIDEO" === N && x && null != I) {
     var M;
-    let e = I(S);
+    let e = S(I);
     if (null == e) return null;
     let t = null !== (M = n.renderLinkComponent) && void 0 !== M ? M : d.iT;
     return (0, r.jsx)(c.Z, y(v({}, P), {
@@ -139,7 +139,7 @@ function T(e) {
     maxHeight: s,
     useFullWidth: !0,
     shouldLink: !1,
-    className: m.media,
+    className: g.media,
     animated: !i && n.animated,
     autoPlay: !i,
     alt: T,
@@ -148,7 +148,7 @@ function T(e) {
     src: L,
     alt: T,
     onContextMenu: f,
-    className: m.dimensionlessImage,
+    className: g.dimensionlessImage,
     style: {
       maxWidth: o,
       maxHeight: s
@@ -158,12 +158,12 @@ function T(e) {
     height: E,
     maxWidth: o,
     maxHeight: s,
-    active: D,
-    className: a()(m.wrapper, {
-      [m.zoomed]: D
+    active: w,
+    className: a()(g.wrapper, {
+      [g.zoomed]: w
     }),
     onClick: () => {
-      w(!D), (0, h.yg)(D ? h.uG.ZOOM_OUT_IMAGE_PRESSED : h.uG.ZOOM_IN_IMAGE_PRESSED)
+      D(!w), (0, h.yg)(w ? h.uG.ZOOM_OUT_IMAGE_PRESSED : h.uG.ZOOM_IN_IMAGE_PRESSED)
     },
     children: t
   }) : null

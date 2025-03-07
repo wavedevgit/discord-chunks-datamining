@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => S
 }), n(47120);
 var r, i = n(512722),
   o = n.n(i),
@@ -63,7 +63,7 @@ function h(e) {
   }) : t
 }
 
-function g(e) {
+function m(e) {
   o()(!p.has(e.windowId), "Window initialized multiple times");
   let {
     width: t,
@@ -83,7 +83,7 @@ function g(e) {
   }), i && (_ = e.windowId), !0
 }
 
-function m(e) {
+function g(e) {
   let t = h(e.windowId);
   return t.isElementFullscreen !== e.isElementFullscreen && (p.set(e.windowId, f(u({}, t), {
     isElementFullscreen: e.isElementFullscreen
@@ -145,9 +145,9 @@ class O extends(r = a.ZP.Store) {
   }
 }
 c(O, "displayName", "WindowStore");
-let S = new O(s.Z, {
-  WINDOW_INIT: g,
-  WINDOW_FULLSCREEN_CHANGE: m,
+let I = new O(s.Z, {
+  WINDOW_INIT: m,
+  WINDOW_FULLSCREEN_CHANGE: g,
   WINDOW_FOCUS: E,
   WINDOW_RESIZED: b,
   WINDOW_UNLOAD: y,
@@ -158,7 +158,7 @@ Promise.resolve().then(n.bind(n, 626135)).then(e => {
     addExtraAnalyticsDecorator: t
   } = e;
   t(e => {
-    e.client_app_state = S.isFocused() ? "focused" : "unfocused"
+    e.client_app_state = I.isFocused() ? "focused" : "unfocused"
   })
 });
-let I = S
+let S = I

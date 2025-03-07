@@ -16,23 +16,23 @@ var r = n(200651),
   _ = n(768865),
   p = n(617136),
   h = n(497505),
-  g = n(703656),
-  m = n(317257),
+  m = n(703656),
+  g = n(317257),
   E = n(594174),
   v = n(626135),
   b = n(111361),
   y = n(291175),
   O = n(785717),
-  S = n(221292),
-  I = n(485341),
+  I = n(221292),
+  S = n(485341),
   T = n(797321),
   N = n(228168),
   A = n(981631),
   C = n(474936),
   R = n(681642),
   P = n(388032),
-  D = n(219041),
-  w = n(223640);
+  w = n(219041),
+  D = n(223640);
 
 function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -58,21 +58,21 @@ function x(e) {
 let M = e => {
     if (null != e) switch (e) {
       case C.JN.PREMIUM_TENURE_1_MONTH:
-        return D.tieredTenureBadgeBronzeGlow;
+        return w.tieredTenureBadgeBronzeGlow;
       case C.JN.PREMIUM_TENURE_3_MONTH:
-        return D.tieredTenureBadgeSilverGlow;
+        return w.tieredTenureBadgeSilverGlow;
       case C.JN.PREMIUM_TENURE_6_MONTH:
-        return D.tieredTenureBadgeGoldGlow;
+        return w.tieredTenureBadgeGoldGlow;
       case C.JN.PREMIUM_TENURE_12_MONTH:
-        return D.tieredTenureBadgePlatinumGlow;
+        return w.tieredTenureBadgePlatinumGlow;
       case C.JN.PREMIUM_TENURE_24_MONTH:
-        return D.tieredTenureBadgeDiamondGlow;
+        return w.tieredTenureBadgeDiamondGlow;
       case C.JN.PREMIUM_TENURE_36_MONTH:
-        return D.tieredTenureBadgeEmeraldGlow;
+        return w.tieredTenureBadgeEmeraldGlow;
       case C.JN.PREMIUM_TENURE_60_MONTH:
-        return D.tieredTenureBadgeRubyGlow;
+        return w.tieredTenureBadgeRubyGlow;
       case C.JN.PREMIUM_TENURE_72_MONTH:
-        return D.tieredTenureBadgeFireGlow;
+        return w.tieredTenureBadgeFireGlow;
       default:
         return
     }
@@ -82,7 +82,7 @@ let M = e => {
       badge: t,
       tieredTenureBadge: n
     } = e;
-    return t.id === m.l.ORB_PROFILE_BADGE ? (0, r.jsx)(f.r4, {
+    return t.id === g.l.ORB_PROFILE_BADGE ? (0, r.jsx)(f.r4, {
       profileBadge: t
     }) : void 0 !== n && t.id !== R.a ? (0, r.jsx)(f.L7, {
       profileBadge: t,
@@ -107,17 +107,17 @@ function j(e) {
     isBadgeVersion2: W
   } = (0, d.D)();
   return (0, r.jsx)("div", {
-    className: a()(D.container, n),
+    className: a()(w.container, n),
     "aria-label": P.NW.string(P.t.VWV0y8),
     role: "group",
     children: t.map(e => {
-      let t = e.id === m.l.ORB_PROFILE_BADGE,
+      let t = e.id === g.l.ORB_PROFILE_BADGE,
         n = (0, y.fv)(e.id),
         i = W && (null != n || e.id === R.a),
         c = t => {
           if (B({
               action: "PRESS_BADGE"
-            }), (0, S.NE)(x({
+            }), (0, I.NE)(x({
               badge: e.id,
               analyticsLocations: U
             }, G)), i) {
@@ -126,7 +126,7 @@ function j(e) {
                 premium_type: H,
                 viewed_user_id: null == f ? void 0 : f.userId
               }), H) {
-              (null == f ? void 0 : f.userId) === (null == Z ? void 0 : Z.id) ? (0, g.uL)(A.Z5c.NITRO_HOME) : (0, _.k)({
+              (null == f ? void 0 : f.userId) === (null == Z ? void 0 : Z.id) ? (0, m.uL)(A.Z5c.NITRO_HOME) : (0, _.k)({
                 analyticsLocations: U,
                 displayProfile: f
               }), null == L || L();
@@ -150,9 +150,9 @@ function j(e) {
           if (null != n) return null == L || L(), n(t)
         },
         u = () => {
-          e.id === I.i && v.default.track(A.rMx.QUEST_CONTENT_VIEWED, x({}, (0, p.mH)(h.jn.QUEST_BADGE))), B({
+          e.id === S.i && v.default.track(A.rMx.QUEST_CONTENT_VIEWED, x({}, (0, p.mH)(h.jn.QUEST_BADGE))), B({
             action: "HOVER_BADGE"
-          }), (0, S.Qf)(x({
+          }), (0, I.Qf)(x({
             badge: e.id,
             analyticsLocations: U
           }, G))
@@ -178,16 +178,16 @@ function j(e) {
           children: [(0, r.jsx)("img", {
             alt: " ",
             "aria-hidden": !0,
-            src: t ? w : (0, N.jC)(e.icon),
-            className: a()(D.badge, o, {
-              [D.orbBadge]: t
+            src: t ? D : (0, N.jC)(e.icon),
+            className: a()(w.badge, o, {
+              [w.orbBadge]: t
             })
           }), E && (0, r.jsxs)("div", {
-            className: D.starContainer,
+            className: w.starContainer,
             children: [(0, r.jsx)(T.Z, {
-              className: D.topLeftStar
+              className: w.topLeftStar
             }), (0, r.jsx)(T.Z, {
-              className: D.bottomRightStar
+              className: w.bottomRightStar
             })]
           })]
         })

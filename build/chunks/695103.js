@@ -36,8 +36,8 @@ let h = {
     applicationId: null,
     originURL: null
   },
-  g = h,
-  m = new Set,
+  m = h,
+  g = new Set,
   E = !1;
 
 function v() {
@@ -45,14 +45,14 @@ function v() {
 }
 
 function b() {
-  r = null, i = null, m = new Set, g.applicationId = null, g.originURL = null, v()
+  r = null, i = null, g = new Set, m.applicationId = null, m.originURL = null, v()
 }
 
 function y(e) {
   let {
     applicationId: t
   } = e;
-  m.add(t), o = null
+  g.add(t), o = null
 }
 
 function O(e) {
@@ -60,18 +60,18 @@ function O(e) {
     applicationId: t,
     originURL: n
   } = e;
-  r = t, i = n, m.delete(t), o = null, g.applicationId = t, g.originURL = n
+  r = t, i = n, g.delete(t), o = null, m.applicationId = t, m.originURL = n
 }
 
-function S(e) {
+function I(e) {
   let {
     applicationId: t,
     error: n
   } = e;
-  m.delete(t), o = n
+  g.delete(t), o = n
 }
 
-function I(e) {
+function S(e) {
   let {
     testModeApplicationId: t
   } = e;
@@ -79,7 +79,7 @@ function I(e) {
 }
 class T extends(a = s.ZP.PersistedStore) {
   initialize(e) {
-    r = (g = p({}, null != e ? e : h)).applicationId, i = g.originURL, this.waitFor(d.Z, c.Z), this.syncWith([d.Z, c.Z], () => !0), f.Z.whenInitialized(() => {
+    r = (m = p({}, null != e ? e : h)).applicationId, i = m.originURL, this.waitFor(d.Z, c.Z), this.syncWith([d.Z, c.Z], () => !0), f.Z.whenInitialized(() => {
       E = !0
     })
   }
@@ -93,13 +93,13 @@ class T extends(a = s.ZP.PersistedStore) {
     return u.Sb.getSetting() && this.inTestModeForApplication(e)
   }
   getState() {
-    return g
+    return m
   }
   get isTestMode() {
     return null != r
   }
   get isFetchingAuthorization() {
-    return m.size > 0
+    return g.size > 0
   }
   get testModeEmbeddedApplicationId() {
     return null != i ? r : null
@@ -123,8 +123,8 @@ _(T, "displayName", "TestModeStore"), _(T, "persistKey", "TestModeStore");
 let N = new T(l.Z, {
   DEVELOPER_TEST_MODE_AUTHORIZATION_START: y,
   DEVELOPER_TEST_MODE_AUTHORIZATION_SUCCESS: O,
-  DEVELOPER_TEST_MODE_AUTHORIZATION_FAIL: S,
-  OVERLAY_INITIALIZE: I,
+  DEVELOPER_TEST_MODE_AUTHORIZATION_FAIL: I,
+  OVERLAY_INITIALIZE: S,
   DEVELOPER_TEST_MODE_RESET_ERROR: v,
   LOGOUT: b,
   DEVELOPER_TEST_MODE_RESET: b

@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(430824),
   p = n(496675),
   h = n(699516),
-  g = n(771845),
-  m = n(594174),
+  m = n(771845),
+  g = n(594174),
   E = n(981631),
   v = n(388032);
 
@@ -54,12 +54,12 @@ function O(e, t) {
   return n
 }
 
-function S(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = "max_uses",
+let S = "max_uses",
   T = "User Invite Context Menu",
   N = "context_menu";
 
@@ -74,8 +74,8 @@ function C(e) {
     user: t,
     guildId: n,
     onAction: s
-  } = e, c = (0, o.e7)([m.default], () => m.default.getCurrentUser(), []), d = (0, o.Wu)([g.ZP, _.Z, p.Z], () => {
-    let e = g.ZP.getFlattenedGuildIds(),
+  } = e, c = (0, o.e7)([g.default], () => g.default.getCurrentUser(), []), d = (0, o.Wu)([m.ZP, _.Z, p.Z], () => {
+    let e = m.ZP.getFlattenedGuildIds(),
       t = [];
     return e.forEach(e => {
       let r = _.Z.getGuild(e);
@@ -86,14 +86,14 @@ function C(e) {
   function N(e, t) {
     let n = f.ZP.getDefaultChannel(e.id, !0, E.Plq.CREATE_INSTANT_INVITE);
     if (null != n) {
-      if (O(S(y({}, b), {
+      if (O(I(y({}, b), {
           [e.id]: !0
         })), !p.Z.can(E.Plq.CREATE_INSTANT_INVITE, e) && null != e.vanityURLCode) {
         A(t, e.vanityURLCode);
         return
       }
       l.ZP.createInvite(n.id, {
-        [I]: 1,
+        [S]: 1,
         unique: !0
       }, T).then(e => A(t, e.code))
     }

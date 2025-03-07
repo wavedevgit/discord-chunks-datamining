@@ -55,30 +55,30 @@ let u = new Set([l.pK.ARS, l.pK.CLP, l.pK.COP]),
       userLocale: p
     } = e, {
       countryCode: h,
-      amount: m,
+      amount: g,
       currency: E,
       paymentSourceTypes: v
-    } = t, b = 0 !== v.length, y = g(h), O = (0, a.T4)(m, E, {
+    } = t, b = 0 !== v.length, y = m(h), O = (0, a.T4)(g, E, {
       style: "currency",
       currency: E,
       currencyDisplay: "symbol",
       localeOverride: y
-    }), S = c.NW.format(c.t["4cHbQ0"], {
+    }), I = c.NW.format(c.t["4cHbQ0"], {
       helpCenterLink: o.Z.getArticleURL(s.BhN.LOCALIZED_PRICING),
       currencyISOCode: E.toUpperCase(),
       localizedPriceWithCurrencySymbol: O
     });
-    if (d.has(E) && (S = c.NW.format(c.t["5kvQMz"], {
+    if (d.has(E) && (I = c.NW.format(c.t["5kvQMz"], {
         helpCenterLink: o.Z.getArticleURL(s.BhN.LOCALIZED_PRICING),
         localizedPriceWithCurrencySymbol: O
-      })), u.has(E) && (S = c.NW.format(c.t.BrYPGh, {
+      })), u.has(E) && (I = c.NW.format(c.t.BrYPGh, {
         helpCenterLink: o.Z.getArticleURL(s.BhN.LOCALIZED_PRICING),
         currencyISOCode: E.toUpperCase(),
         localizedPriceWithCurrencySymbol: O
-      })), null == n || n.hasPremiumNitroMonthly || (S = c.NW.format(c.t.xnD0NT, {
+      })), null == n || n.hasPremiumNitroMonthly || (I = c.NW.format(c.t.xnD0NT, {
         helpCenterLink: o.Z.getArticleURL(s.BhN.LOCALIZED_PRICING),
         currencyISOCode: E.toUpperCase()
-      })), E === l.pK.EUR && (S = r ? c.NW.format(c.t.o60rUF, {
+      })), E === l.pK.EUR && (I = r ? c.NW.format(c.t.o60rUF, {
         country: (0, i.q9)(h),
         currencyISOCode: E.toUpperCase(),
         helpCenterLink: o.Z.getArticleURL(s.BhN.LOCALIZED_PRICING)
@@ -95,7 +95,7 @@ let u = new Set([l.pK.ARS, l.pK.CLP, l.pK.COP]),
         style: "short",
         type: "conjunction"
       });
-      S = c.NW.format(c.t.QqRQPj, {
+      I = c.NW.format(c.t.QqRQPj, {
         helpCenterLink: o.Z.getArticleURL(s.BhN.LOCALIZED_PRICING),
         paymentMethods: t.format(e)
       })
@@ -104,14 +104,14 @@ let u = new Set([l.pK.ARS, l.pK.CLP, l.pK.COP]),
       localizedPricingBannerHeader: c.NW.formatToPlainString(c.t.BuFSam, {
         country: (0, i.q9)(h)
       }),
-      localizedPricingBannerBody: S,
+      localizedPricingBannerBody: I,
       localizedPricingBannerLinkOnly: c.NW.format(c.t.XufWPj, {
         helpCenterLink: o.Z.getArticleURL(s.BhN.LOCALIZED_PRICING)
       }),
       localizedPricingBannerSubNotif: b ? void 0 : c.NW.string(c.t.YDdBe3)
     }
   },
-  g = e => {
+  m = e => {
     let t = r.Z.find(t => t.alpha2 === e);
     return null == t ? void 0 : t.localeForICU
   }

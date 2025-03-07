@@ -17,7 +17,7 @@ var r = n(108131),
   p = n(709054),
   h = n(38618);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,7 +25,7 @@ function g(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let m = 2e3,
+let g = 2e3,
   E = new c.Z("EntityVersionsManager");
 class v extends s.Z {
   _initialize() {
@@ -35,7 +35,7 @@ class v extends s.Z {
     a.Z.unsubscribe("CONNECTION_OPEN", y)
   }
   constructor(...e) {
-    super(...e), g(this, "actions", {
+    super(...e), m(this, "actions", {
       GUILD_CREATE: O,
       DELETED_ENTITY_IDS: b
     })
@@ -52,7 +52,7 @@ function b(e) {
 
 function y() {
   l.Z.getAll().then(e => {
-    e.forEach(e => S(e))
+    e.forEach(e => I(e))
   })
 }
 
@@ -60,14 +60,14 @@ function O(e) {
   let {
     guild: t
   } = e;
-  t.unableToSyncDeletes && S(t.id)
-}
-
-function S(e) {
-  setTimeout(() => I(e), Math.ceil(Math.random() * m))
+  t.unableToSyncDeletes && I(t.id)
 }
 
 function I(e) {
+  setTimeout(() => S(e), Math.ceil(Math.random() * g))
+}
+
+function S(e) {
   var t, n, r;
   let i = null === (t = _.Z.getGuild(e)) || void 0 === t ? void 0 : t.name;
   E.fileOnly("requesting deleted guild entities (id: ".concat(e, ", name: ").concat(i, ")"));

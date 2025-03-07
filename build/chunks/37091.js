@@ -71,14 +71,14 @@ function h(e) {
   delete r[t]
 }
 
-function g(e) {
+function m(e) {
   let {
     enabled: t
   } = e;
   _ = t
 }
 
-function m(e) {
+function g(e) {
   var t;
   let {
     completingEmoji: n,
@@ -128,7 +128,7 @@ a(v, "persistKey", "HighFiveStore");
 let b = new v(o.Z, {
   HIGH_FIVE_QUEUE: p,
   HIGH_FIVE_REMOVE: h,
-  HIGH_FIVE_SET_ENABLED: g,
-  HIGH_FIVE_COMPLETE: m,
+  HIGH_FIVE_SET_ENABLED: m,
+  HIGH_FIVE_COMPLETE: g,
   HIGH_FIVE_COMPLETE_CLEAR: E
 })

@@ -5,12 +5,12 @@ n.d(t, {
   Eg: () => A,
   IZ: () => b,
   PP: () => E,
-  Ub: () => m,
+  Ub: () => g,
   c6: () => T,
-  m9: () => S,
+  m9: () => I,
   mT: () => N,
   qn: () => O,
-  rC: () => I,
+  rC: () => S,
   tI: () => y
 }), n(301563), n(266796), n(47120);
 var r = n(664751),
@@ -57,12 +57,12 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function m(e, t) {
+async function g(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
     {
       channelId: r,
@@ -74,18 +74,18 @@ async function m(e, t) {
     } = n,
     h = (0, s.s1)();
   f && a.Z.setHistorySnapshot(p({}, h));
-  let m = u.Z.getGuild(e),
+  let g = u.Z.getGuild(e),
     E = {
       state: {
         analyticsSource: t
       }
     };
-  null != m && null != m.joinedAt ? _ && (0, l.X)(e, E) : (await o.Z.joinGuild(e, {
+  null != g && null != g.joinedAt ? _ && (0, l.X)(e, E) : (await o.Z.joinGuild(e, {
     lurker: !0,
     source: c,
     loadId: d,
     lurkLocation: null == t ? void 0 : t.page
-  }), _ && await o.Z.transitionToGuildSync(e, g(p({}, E), {
+  }), _ && await o.Z.transitionToGuildSync(e, m(p({}, E), {
     welcomeModalChannelId: r,
     search: h.location.search
   }), r)), null == i || i()
@@ -149,7 +149,7 @@ function O(e) {
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     categoryId: t,
     error: n,
@@ -165,7 +165,7 @@ function S(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     categoryId: t
   } = e;

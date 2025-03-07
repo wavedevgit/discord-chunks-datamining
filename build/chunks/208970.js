@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => I
 });
 var r, i = n(442837),
   o = n(570140),
@@ -86,7 +86,7 @@ function h(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     channelId: t,
     threadIds: n
@@ -99,7 +99,7 @@ function g(e) {
   })
 }
 
-function m(e) {
+function g(e) {
   let {
     channelId: t
   } = e;
@@ -161,13 +161,13 @@ class O extends(r = i.ZP.Store) {
   }
 }
 s(O, "displayName", "ForumSearchStore");
-let S = new O(o.Z, {
+let I = new O(o.Z, {
   CONNECTION_OPEN: y,
   THREAD_DELETE: v,
   CHANNEL_DELETE: b,
   FORUM_SEARCH_QUERY_UPDATED: p,
   FORUM_SEARCH_START: h,
-  FORUM_SEARCH_SUCCESS: g,
-  FORUM_SEARCH_FAILURE: m,
+  FORUM_SEARCH_SUCCESS: m,
+  FORUM_SEARCH_FAILURE: g,
   FORUM_SEARCH_CLEAR: E
 })

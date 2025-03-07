@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => S
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -16,9 +16,9 @@ var r = n(200651),
   _ = n(441319),
   p = n(981631),
   h = n(388032),
-  g = n(870832);
+  m = n(870832);
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,7 +34,7 @@ function E(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -62,7 +62,7 @@ let y = () => [h.NW.string(h.t.EgWTY2), h.NW.string(h.t.umBn5e), h.NW.string(h.t
     return null !== (e = l().sample(y())) && void 0 !== e ? e : h.NW.string(h.t.EgWTY2)
   };
 
-function S(e) {
+function I(e) {
   let {
     id: t,
     className: n,
@@ -71,26 +71,26 @@ function S(e) {
     tabIndex: l,
     children: f,
     locked: h = !1
-  } = e, [m, v] = i.useState((0, _.aW)(t).name), y = t === d.Ru.PIRATE, S = (0, c.xUy)({
-    label: m,
+  } = e, [g, v] = i.useState((0, _.aW)(t).name), y = t === d.Ru.PIRATE, I = (0, c.xUy)({
+    label: g,
     isSelected: s
   });
   return (0, r.jsx)(c.ua7, {
-    text: m,
+    text: g,
     onTooltipShow: () => y && v(O()),
     children: e => (0, r.jsxs)("div", {
-      className: g.appIconSelectionContainer,
-      children: [(0, r.jsx)(c.P3F, b(E({}, e, S), {
-        tabIndex: null != l ? l : S.tabIndex,
-        className: a()(g.appIconSelection, {
-          [g.selected]: s
+      className: m.appIconSelectionContainer,
+      children: [(0, r.jsx)(c.P3F, b(E({}, e, I), {
+        tabIndex: null != l ? l : I.tabIndex,
+        className: a()(m.appIconSelection, {
+          [m.selected]: s
         }, n),
         onClick: s ? p.dG4 : () => null == o ? void 0 : o(t),
         children: f
       })), s && (0, r.jsx)(u.oK, {}), h && (0, r.jsx)("div", {
-        className: g.lockedBadgeContainer,
+        className: m.lockedBadgeContainer,
         children: (0, r.jsx)(c.mBM, {
-          className: g.lockedBadge,
+          className: m.lockedBadge,
           color: "currentColor"
         })
       })]
@@ -98,7 +98,7 @@ function S(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     icon: t,
     isSelected: n,
@@ -107,11 +107,11 @@ function I(e) {
     onSelect: a,
     locked: s
   } = e;
-  return (0, r.jsx)(S, {
+  return (0, r.jsx)(I, {
     onSelect: i ? void 0 : a,
     isSelected: n,
     id: t.id,
-    className: i ? g.disabled : void 0,
+    className: i ? m.disabled : void 0,
     tabIndex: o,
     locked: s,
     children: (0, r.jsx)(f.Z, {

@@ -17,35 +17,35 @@ var r = n(477660),
   _ = n(364640),
   p = n(772096),
   h = n(982806),
-  g = n(540709),
-  m = n(881706),
+  m = n(540709),
+  g = n(881706),
   E = n(592125),
   v = n(430824),
   b = n(20303),
   y = n(902676),
   O = n(375954),
-  S = n(699516),
-  I = n(944486),
+  I = n(699516),
+  S = n(944486),
   T = n(626135),
   N = n(981631),
   A = n(388032);
 
 function C(e, t) {
   var n;
-  let r = E.Z.getChannel(I.Z.getChannelId());
-  return !!(null == r || r.type !== N.d4z.DM || S.Z.isFriend(null !== (n = r.getRecipientId()) && void 0 !== n ? n : "")) && e === t
+  let r = E.Z.getChannel(S.Z.getChannelId());
+  return !!(null == r || r.type !== N.d4z.DM || I.Z.isFriend(null !== (n = r.getRecipientId()) && void 0 !== n ? n : "")) && e === t
 }
 
 function R(e, t) {
   let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [],
-    S = arguments.length > 3 ? arguments[3] : void 0,
+    I = arguments.length > 3 ? arguments[3] : void 0,
     {
-      trusted: I,
+      trusted: S,
       onClick: C,
       onConfirm: R,
       onCancel: P,
-      shouldConfirm: D,
-      messageId: w,
+      shouldConfirm: w,
+      messageId: D,
       channelId: L
     } = e,
     x = i().sanitizeUrl(e.href);
@@ -56,7 +56,7 @@ function R(e, t) {
         url: e.href
       }),
       isDismissable: !0,
-      contextKey: S
+      contextKey: I
     });
     return
   }
@@ -68,12 +68,12 @@ function R(e, t) {
   }
   let k = null,
     j = !1,
-    U = w,
+    U = D,
     G = L,
     B = null;
-  if (null != w && null != L) {
+  if (null != D && null != L) {
     var V, F, Z;
-    let e = O.Z.getMessage(L, w),
+    let e = O.Z.getMessage(L, D),
       t = E.Z.getBasicChannel(L);
     k = null !== (Z = null == t ? void 0 : t.guild_id) && void 0 !== Z ? Z : null;
     let n = v.Z.getGuild(k),
@@ -123,19 +123,19 @@ function R(e, t) {
     null == t || t.preventDefault(), l.Z.show(M);
     return
   }
-  if (null != (0, m.v)(M)) {
-    null == t || t.preventDefault(), g.Z.show(M);
+  if (null != (0, g.v)(M)) {
+    null == t || t.preventDefault(), m.Z.show(M);
     return
   }
   if ((0, f.I)(M)) {
     null == t || t.preventDefault(), d.Z.show(M);
     return
   }
-  let Y = "function" == typeof I ? I() : I,
+  let Y = "function" == typeof S ? S() : S,
     K = (0, y.E)(M),
     z = "http:" !== K && "https:" !== K;
   if (!z && (Y || b.Z.isTrustedDomain(M)) || z && b.Z.isTrustedProtocol(M)) {
-    null == t || null != D && D ? H() : j && _.Z.trackAnnouncementMessageLinkClicked({
+    null == t || null != w && w ? H() : j && _.Z.trackAnnouncementMessageLinkClicked({
       messageId: U,
       channelId: L,
       guildId: k,
@@ -150,7 +150,7 @@ function R(e, t) {
     onConfirm: H,
     onCancel: W,
     isProtocol: !0,
-    contextKey: S
+    contextKey: I
   });
   else {
     let e = (0, p.yw)(M),
@@ -161,7 +161,7 @@ function R(e, t) {
       onConfirm: H,
       onCancel: W,
       isProtocol: !1,
-      contextKey: S
+      contextKey: I
     })
   }
 }

@@ -35,24 +35,24 @@ var s = function() {
       return t[e] < t[n] ? -1 : 1
     });
     for (var d = [], f = [], _ = [], p = 0; p < l - 1; p++) i = t[p + 1] - t[p], o = n[p + 1] - n[p], f.push(i), d.push(o), _.push(o / i);
-    for (var h = [_[0]], g = 0; g < f.length - 1; g++) {
-      var m = _[g],
-        E = _[g + 1];
-      if (m * E <= 0) h.push(0);
+    for (var h = [_[0]], m = 0; m < f.length - 1; m++) {
+      var g = _[m],
+        E = _[m + 1];
+      if (g * E <= 0) h.push(0);
       else {
-        i = f[g];
-        var v = f[g + 1],
+        i = f[m];
+        var v = f[m + 1],
           b = i + v;
-        h.push(3 * b / ((b + v) / m + (b + i) / E))
+        h.push(3 * b / ((b + v) / g + (b + i) / E))
       }
     }
     h.push(_[_.length - 1]);
-    for (var y = [], O = [], S = 0; S < h.length - 1; S++) {
-      s = _[S];
-      var I = h[S],
-        T = 1 / f[S],
-        N = I + h[S + 1] - s - s;
-      y.push((s - I - N) * T), O.push(N * T * T)
+    for (var y = [], O = [], I = 0; I < h.length - 1; I++) {
+      s = _[I];
+      var S = h[I],
+        T = 1 / f[I],
+        N = S + h[I + 1] - s - s;
+      y.push((s - S - N) * T), O.push(N * T * T)
     }
     this.xs = t, this.ys = n, this.c1s = h, this.c2s = y, this.c3s = O
   }

@@ -17,7 +17,7 @@ var r, i = n(200651),
   p = n(354459),
   h = n(965548);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -26,14 +26,14 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -43,8 +43,8 @@ let E = 200,
   b = 40,
   y = 80,
   O = 132,
-  S = 80,
-  I = {
+  I = 80,
+  S = {
     [_.VD2.TOP_RIGHT]: h.resizeHandleTopRight,
     [_.VD2.TOP_LEFT]: h.resizeHandleTopLeft,
     [_.VD2.BOTTOM_LEFT]: h.resizeHandleBottomLeft,
@@ -82,7 +82,7 @@ function A(e) {
   }, [c]);
   return (0, i.jsx)("div", {
     onMouseDown: d,
-    className: s()(h.resizeHandle, I[l])
+    className: s()(h.resizeHandle, S[l])
   })
 }
 class C extends(r = o.PureComponent) {
@@ -114,11 +114,11 @@ class C extends(r = o.PureComponent) {
       maxX: a,
       maxY: s,
       dockedRect: l
-    } = this.props, u = Math.round(n), d = Math.round(s - i - this._boundHeight), p = Math.round(r), h = Math.round(a - o - this._boundWidth), g = (0, f.getPlatform)() !== f.PlatformTypes.WEB && this.inPopout ? v : 0;
+    } = this.props, u = Math.round(n), d = Math.round(s - i - this._boundHeight), p = Math.round(r), h = Math.round(a - o - this._boundWidth), m = (0, f.getPlatform)() !== f.PlatformTypes.WEB && this.inPopout ? v : 0;
     if (null != l) {
-      var m, E;
+      var g, E;
       return {
-        y: (null !== (m = null == l ? void 0 : l.y) && void 0 !== m ? m : 0) - g,
+        y: (null !== (g = null == l ? void 0 : l.y) && void 0 !== g ? g : 0) - m,
         x: null !== (E = null == l ? void 0 : l.x) && void 0 !== E ? E : 0
       }
     }
@@ -246,11 +246,11 @@ class C extends(r = o.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), g(this, "state", {
+    super(...e), m(this, "state", {
       isResizing: !1
-    }), g(this, "_draggable", void 0), g(this, "_innerDivRef", o.createRef()), g(this, "_resizeObserver", void 0), g(this, "_width", null), g(this, "_boundWidth", 0), g(this, "_boundHeight", 0), g(this, "_velocityX", 0), g(this, "_velocityY", 0), g(this, "_lastMoveTime", void 0), g(this, "_lastMoveX", 0), g(this, "_lastMoveY", 0), g(this, "ensureIsInPosition", () => {
+    }), m(this, "_draggable", void 0), m(this, "_innerDivRef", o.createRef()), m(this, "_resizeObserver", void 0), m(this, "_width", null), m(this, "_boundWidth", 0), m(this, "_boundHeight", 0), m(this, "_velocityX", 0), m(this, "_velocityY", 0), m(this, "_lastMoveTime", void 0), m(this, "_lastMoveX", 0), m(this, "_lastMoveY", 0), m(this, "ensureIsInPosition", () => {
       this.setPosition(this.props.position)
-    }), g(this, "ensureWidth", () => {
+    }), m(this, "ensureWidth", () => {
       let {
         onResize: e,
         edgeOffsetLeft: t,
@@ -261,20 +261,20 @@ class C extends(r = o.PureComponent) {
       if (null == i) return;
       let o = N(r - (t + n), i);
       this.getWidth() > o && (this._width = o, null == e || e(o))
-    }), g(this, "handleSetInnerDivRef", e => {
+    }), m(this, "handleSetInnerDivRef", e => {
       this._innerDivRef.current = e;
       let t = null == e ? void 0 : e.ownerDocument.defaultView;
       if (null != e && null != t) {
         var n;
         this._resizeObserver = new t.ResizeObserver(this.ensureIsInPosition), null === (n = this._resizeObserver) || void 0 === n || n.observe(e)
       }
-    }), g(this, "handleSetDraggableRef", e => {
+    }), m(this, "handleSetDraggableRef", e => {
       this._draggable = e
-    }), g(this, "handleResize", e => {
+    }), m(this, "handleResize", e => {
       this._width = e, this.state.isResizing || this.setState({
         isResizing: !0
       })
-    }), g(this, "handleResizeEnd", e => {
+    }), m(this, "handleResizeEnd", e => {
       let {
         onResize: t,
         resizeConfig: n
@@ -284,13 +284,13 @@ class C extends(r = o.PureComponent) {
       this._width = r, null == t || t(r), this.setState({
         isResizing: !1
       }), this.ensureWidth()
-    }), g(this, "handleDragStart", (e, t) => {
+    }), m(this, "handleDragStart", (e, t) => {
       this._velocityX = 0, this._velocityY = 0, this._lastMoveX = e, this._lastMoveY = t, this._lastMoveTime = new Date
-    }), g(this, "handleDrag", (e, t) => {
+    }), m(this, "handleDrag", (e, t) => {
       let n = new Date,
         r = Number(n) - Number(this._lastMoveTime);
       0 !== r && (this._velocityX = (e - this._lastMoveX) / r, this._velocityY = (t - this._lastMoveY) / r, this._lastMoveX = e, this._lastMoveY = t, this._lastMoveTime = n)
-    }), g(this, "handleDragEnd", (e, t) => {
+    }), m(this, "handleDragEnd", (e, t) => {
       let n;
       let {
         maxX: r,
@@ -306,7 +306,7 @@ class C extends(r = o.PureComponent) {
     })
   }
 }
-g(C, "defaultProps", {
+m(C, "defaultProps", {
   hidden: !1,
   roundCorners: !0
 });
@@ -324,12 +324,12 @@ let R = e => {
       appContext: d,
       roundCorners: f,
       resizeConfig: p
-    } = e, g = () => {
+    } = e, m = () => {
       if (null == t) return null;
       let e = n.map(e => {
           if (e.id !== t.id && e.component !== _.NYg.EMBED_IFRAME) return null;
           let n = "string" == typeof e.component ? u[e.component] : e.component;
-          return (0, i.jsx)(n, m({
+          return (0, i.jsx)(n, g({
             width: r
           }, e.props), e.id)
         }),
@@ -347,7 +347,7 @@ let R = e => {
         dockedRect: c,
         edgeOffsetTop: y,
         edgeOffsetBottom: O,
-        edgeOffsetLeft: S,
+        edgeOffsetLeft: I,
         edgeOffsetRight: y,
         roundCorners: f,
         resizeConfig: h ? void 0 : p,
@@ -356,7 +356,7 @@ let R = e => {
     };
     return (0, i.jsx)("div", {
       className: h.pictureInPicture,
-      children: g()
+      children: m()
     })
   },
   P = o.memo(R)

@@ -6,13 +6,13 @@ n.d(t, {
   Cj: () => f,
   WY: () => A,
   YD: () => x,
-  ZJ: () => g,
+  ZJ: () => m,
   aD: () => p,
-  j: () => w,
+  j: () => D,
   k8: () => L,
   oo: () => _,
   pz: () => h,
-  vq: () => m,
+  vq: () => g,
   xj: () => k
 }), n(411104), n(47120), n(301563), n(653041), n(230036);
 var r = n(688619),
@@ -111,11 +111,11 @@ function h(e, t, n) {
   }
 }
 
-function g(e, t, n) {
+function m(e, t, n) {
   return "hsl(".concat(e, ", calc(var(--saturation-factor, 1) * ").concat(t, "%), ").concat(n, "%)")
 }
 
-function m(e, t, n) {
+function g(e, t, n) {
   return "#" + (0x1000000 + (e << 16) + (t << 8) + n).toString(16).slice(1)
 }
 
@@ -141,11 +141,11 @@ function v(e) {
     _ = Math.max(u, d, f),
     p = _ - Math.min(u, d, f),
     h = e => (_ - e) / 6 / p + .5,
-    g = e => Math.round(100 * e) / 100;
+    m = e => Math.round(100 * e) / 100;
   return 0 === p ? i = o = 0 : (o = p / _, t = h(u), n = h(d), r = h(f), (i = u === _ ? r - n : d === _ ? 1 / 3 + t - r : f === _ ? 2 / 3 + n - t : 0) < 0 ? i += 1 : i > 1 && (i -= 1)), {
     h: Math.round(360 * i),
-    s: g(100 * o),
-    v: g(100 * _)
+    s: m(100 * o),
+    v: m(100 * _)
   }
 }
 
@@ -179,8 +179,8 @@ d(c({}, {
 });
 let y = 30,
   O = 80,
-  S = 20,
-  I = 30,
+  I = 20,
+  S = 30,
   T = 40,
   N = 15;
 
@@ -195,7 +195,7 @@ function A(e) {
     a = r,
     s = i,
     l = o;
-  s < y && (s += I), l > O && (l -= T), l < S && (l += N);
+  s < y && (s += S), l > O && (l -= T), l < I && (l += N);
   let c = 360 / (t + 1);
   for (; n.length < t;) {
     (a -= c) < 0 && (a += 360);
@@ -254,7 +254,7 @@ function P(e, t, n) {
   }
 }
 
-function D(e, t, n) {
+function w(e, t, n) {
   let r, i, o;
   if (e /= 360, 0 === t) r = i = o = n;
   else {
@@ -268,10 +268,10 @@ function D(e, t, n) {
   return new a.Z(Math.round(255 * r), Math.round(255 * i), Math.round(255 * o), 1)
 }
 
-function w(e, t) {
+function D(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = P(e.red, e.green, e.blue);
-  return n ? r.lightness = r.lightness + t > 1 ? .9 : r.lightness + t : r.lightness = r.lightness - t < 0 ? .1 : r.lightness - t, D(r.hue, r.saturation, r.lightness)
+  return n ? r.lightness = r.lightness + t > 1 ? .9 : r.lightness + t : r.lightness = r.lightness - t < 0 ? .1 : r.lightness - t, w(r.hue, r.saturation, r.lightness)
 }
 
 function L(e) {
@@ -294,9 +294,9 @@ function L(e) {
       else break
     } else if (u.lightness > .05) u.lightness -= .05;
     else break;
-    c = R([D(u.hue, u.saturation, u.lightness), t[1]])
+    c = R([w(u.hue, u.saturation, u.lightness), t[1]])
   }
-  return D(u.hue, u.saturation, u.lightness)
+  return w(u.hue, u.saturation, u.lightness)
 }
 
 function x(e) {
@@ -327,7 +327,7 @@ function k(e) {
   } = e;
   if (null == n) return n;
   let i = P(n.red, n.green, n.blue);
-  return null == i ? null == n ? void 0 : n.toHexString() : null === (t = D(i.hue, i.saturation * r, i.lightness)) || void 0 === t ? void 0 : t.toHexString()
+  return null == i ? null == n ? void 0 : n.toHexString() : null === (t = w(i.hue, i.saturation * r, i.lightness)) || void 0 === t ? void 0 : t.toHexString()
 }
 
 function j(e, t, n) {

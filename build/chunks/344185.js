@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => w
+  Z: () => D
 }), n(47120);
 var r, i = n(392711),
   o = n.n(i),
@@ -50,9 +50,9 @@ function p(e, t) {
   }), e
 }
 let h = {},
-  g = new Set;
+  m = new Set;
 
-function m(e) {
+function g(e) {
   return {
     id: e.id,
     parentId: e.parent_id
@@ -64,17 +64,17 @@ function E(e) {
 }
 
 function v(e) {
-  null != e.threads && e.threads.length > 0 && (h[e.id] = {}, e.threads.filter(e => l.AW.has(e.type)).forEach(t => b(e.id, t))), e.hasThreadsSubscription && g.add(e.id)
+  null != e.threads && e.threads.length > 0 && (h[e.id] = {}, e.threads.filter(e => l.AW.has(e.type)).forEach(t => b(e.id, t))), e.hasThreadsSubscription && m.add(e.id)
 }
 
 function b(e, t) {
   let n = h[e],
     r = t.parent_id;
-  r in n || (n[r] = {}), h[e][r][t.id] = m(t)
+  r in n || (n[r] = {}), h[e][r][t.id] = g(t)
 }
 
 function y(e) {
-  h = {}, g.clear(), e.guilds.forEach(e => {
+  h = {}, m.clear(), e.guilds.forEach(e => {
     v(e)
   })
 }
@@ -88,14 +88,14 @@ function O(e) {
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     guild: t
   } = e;
   E(t.id), v(t)
 }
 
-function I(e) {
+function S(e) {
   let {
     guild: t
   } = e;
@@ -113,7 +113,7 @@ function T(e) {
     let e = null !== (n = h[r.guild_id]) && void 0 !== n ? n : {};
     h[r.guild_id] = p(f({}, e), {
       [r.parent_id]: p(f({}, e[r.parent_id]), {
-        [r.id]: m(r)
+        [r.id]: g(r)
       })
     })
   }
@@ -125,7 +125,7 @@ function N(e) {
     threads: n,
     channelIds: r
   } = e;
-  for (let e in null == r && g.add(t), h[t] = f({}, h[t]), h[t]) h[t][e] = f({}, h[t][e]);
+  for (let e in null == r && m.add(t), h[t] = f({}, h[t]), h[t]) h[t][e] = f({}, h[t][e]);
   n.forEach(e => b(t, e))
 }
 
@@ -156,7 +156,7 @@ function R(e) {
   h[t.guild_id] = f({}, h[t.guild_id]), delete h[t.guild_id][t.id]
 }
 let P = {};
-class D extends(r = a.ZP.Store) {
+class w extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(c.Z)
   }
@@ -180,15 +180,15 @@ class D extends(r = a.ZP.Store) {
     })
   }
   hasLoaded(e) {
-    return g.has(e)
+    return m.has(e)
   }
 }
-d(D, "displayName", "ActiveThreadsStore");
-let w = new D(s.Z, {
+d(w, "displayName", "ActiveThreadsStore");
+let D = new w(s.Z, {
   CONNECTION_OPEN: y,
   OVERLAY_INITIALIZE: O,
-  GUILD_CREATE: S,
-  GUILD_DELETE: I,
+  GUILD_CREATE: I,
+  GUILD_DELETE: S,
   THREAD_CREATE: T,
   THREAD_UPDATE: T,
   THREAD_LIST_SYNC: N,

@@ -48,12 +48,12 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = "LOGIN_REQUIRED_ACTIONS_MODAL_KEY";
+let g = "LOGIN_REQUIRED_ACTIONS_MODAL_KEY";
 class E extends a.Z {
   handleConnectionOpen() {
     let e = s.default.getCurrentUser();
@@ -70,14 +70,14 @@ class E extends a.Z {
           i = () => {
             l.default.track(d.rMx.FORCED_UPDATE_PASSWORD_SUCCEEDED), t.onClose()
           };
-        return (0, r.jsx)(e, g(p({}, t), {
+        return (0, r.jsx)(e, m(p({}, t), {
           onSuccess: i,
           onClose: n,
           requirementsUpdated: !0
         }))
       }
     }, {
-      modalKey: m,
+      modalKey: g,
       onCloseRequest: f.Vq,
       instant: !0
     }) : t && o.Z.logout(d.Z5c.LOGIN)

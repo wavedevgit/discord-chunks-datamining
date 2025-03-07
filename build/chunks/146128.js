@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   BV: () => v,
-  Rm: () => m,
+  Rm: () => g,
   aO: () => y
 }), n(47120);
 var r = n(200651),
@@ -19,7 +19,7 @@ var r = n(200651),
   p = n(131333),
   h = n(981631);
 
-function g(e) {
+function m(e) {
   if (null == e || null == u.Z.emojiAnimationTriggers) return !1;
   for (let t of u.Z.emojiAnimationTriggers) {
     let n = l.ZP.getByName(t);
@@ -33,7 +33,7 @@ function g(e) {
   }
   return !1
 }
-let m = i.createContext({
+let g = i.createContext({
   triggerAnimation: () => {},
   untriggerAnimation: () => {}
 });
@@ -44,15 +44,15 @@ function E(e) {
   } = e, {
     triggerAnimation: n,
     untriggerAnimation: o
-  } = i.useContext(m), s = (0, a.bp)(), l = i.useMemo(() => ({
+  } = i.useContext(g), s = (0, a.bp)(), l = i.useMemo(() => ({
     triggerAnimation: e => {
-      s !== h.IlC.OVERLAY && g(e) && n(e)
+      s !== h.IlC.OVERLAY && m(e) && n(e)
     },
     untriggerAnimation: e => {
-      s !== h.IlC.OVERLAY && g(e) && o(e)
+      s !== h.IlC.OVERLAY && m(e) && o(e)
     }
   }), [s, n, o]);
-  return (0, r.jsx)(m.Provider, {
+  return (0, r.jsx)(g.Provider, {
     value: l,
     children: t
   })
@@ -86,7 +86,7 @@ function b(e) {
     emojiName: a
   } = e, s = (0, o.e7)([c.Z], () => c.Z.getMessage(n, r)), {
     triggerAnimation: l
-  } = i.useContext(m);
+  } = i.useContext(g);
   return i.useEffect(() => {
     if (!u.Z.triggerEmojiAnimationFromSentMessage || (null == s ? void 0 : s.state) !== h.yb.SENT || (0, f.JL)(r)) return;
     let {
@@ -105,7 +105,7 @@ function y(e) {
     disable: l,
     emojiRef: c
   } = e, u = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), f = d.Z.useIsEligible(), _ = (0, a.bp)();
-  return l || _ === h.IlC.OVERLAY || !f || null == n || null == t || u || null == c || !g(i) ? null : (0, r.jsx)(b, {
+  return l || _ === h.IlC.OVERLAY || !f || null == n || null == t || u || null == c || !m(i) ? null : (0, r.jsx)(b, {
     emojiRef: c,
     channelId: t,
     messageId: n,

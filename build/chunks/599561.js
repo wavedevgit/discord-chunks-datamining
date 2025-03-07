@@ -35,12 +35,12 @@ function n(e) {
       className: "named-character",
       begin: /\\\[[$a-zA-Z][$a-zA-Z0-9]+\]/
     },
-    g = {
+    m = {
       className: "operator",
       relevance: 0,
       begin: /[+\-*/,;.:@~=><&|_`'^?!%]+/
     },
-    m = {
+    g = {
       className: "pattern",
       relevance: 0,
       begin: /([a-zA-Z$][a-zA-Z0-9$]*)?_+([a-zA-Z$][a-zA-Z0-9$]*)?/
@@ -74,7 +74,7 @@ function n(e) {
     },
     contains: [e.COMMENT(/\(\*/, /\*\)/, {
       contains: ["self"]
-    }), m, E, b, p, h, e.QUOTE_STRING_MODE, d, g, v]
+    }), g, E, b, p, h, e.QUOTE_STRING_MODE, d, m, v]
   }
 }
 e.exports = n

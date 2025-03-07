@@ -20,25 +20,25 @@ function u(e) {
     alignment: u,
     style: f,
     eventTargetRef: _
-  } = e, p = i.useContext(s.Sfi), h = d(), [g, m] = i.useState(void 0), {
+  } = e, p = i.useContext(s.Sfi), h = d(), [m, g] = i.useState(void 0), {
     rive: E,
     RiveComponent: v
   } = (0, a.useRive)({
     eventTarget: null == _ ? void 0 : _.current,
     src: t,
     autoplay: n,
-    stateMachines: g,
+    stateMachines: m,
     layout: new a.Layout({
       fit: null != l ? c.L[l] : a.Fit.Cover,
       alignment: null != u ? c.E[u] : a.Alignment.Center
     })
   });
   i.useEffect(() => {
-    null != E && null == g && (m(E.stateMachineNames), E.reset({
+    null != E && null == m && (g(E.stateMachineNames), E.reset({
       stateMachines: E.stateMachineNames,
       autoplay: n
     }), E.setupRiveListeners())
-  }, [E, n, g]);
+  }, [E, n, m]);
   let b = i.useRef(0);
   return i.useEffect(() => {
     if (null == E) return;

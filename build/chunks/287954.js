@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -69,7 +69,7 @@ function h(e, t) {
   return i
 }
 
-function g(e, t) {
+function m(e, t) {
   return e === c.P.REACT ? {
     position: "left",
     align: "top",
@@ -83,33 +83,33 @@ function g(e, t) {
   }
 }
 
-function m(e) {
+function g(e) {
   var {
     user: t,
     guildId: n,
     channelId: u,
     profileType: f,
     onClose: h,
-    children: m
+    children: g
   } = e, E = p(e, ["user", "guildId", "channelId", "profileType", "onClose", "children"]);
   let {
     interactionType: v,
     interactionSource: b,
     resetInteraction: y,
     interactionSourceId: O
-  } = (0, o.Xo)(), S = f === c.y0.FULL_SIZE ? (0, l.z)(t.id, n) : void 0, I = b === E.sourceType && v === c.P.REACT, T = b === E.sourceType && v === c.P.REPLY, N = (I || T) && O === E.sourceId;
+  } = (0, o.Xo)(), I = f === c.y0.FULL_SIZE ? (0, l.z)(t.id, n) : void 0, S = b === E.sourceType && v === c.P.REACT, T = b === E.sourceType && v === c.P.REPLY, N = (S || T) && O === E.sourceId;
   return (0, r.jsx)(i.yRy, _(d({
     renderPopout: e => {
       let {
         setPopoutRef: i
-      } = e, o = I ? a.Z : s.Z;
+      } = e, o = S ? a.Z : s.Z;
       return (0, r.jsx)(o, d({
         user: t,
         guildId: n,
         channelId: u,
         profileType: f,
         onClose: h,
-        modalKey: S,
+        modalKey: I,
         setPopoutRef: i
       }, E))
     },
@@ -117,7 +117,7 @@ function m(e) {
       y(), null == h || h()
     },
     shouldShow: N
-  }, g(v, f)), {
-    children: m
+  }, m(v, f)), {
+    children: g
   }))
 }

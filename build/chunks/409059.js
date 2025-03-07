@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => S
 }), n(47120);
 var r, i = n(442837),
   o = n(570140),
@@ -63,14 +63,14 @@ function h(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     guildTemplates: t
   } = e;
   t.forEach(e => h(e))
 }
 
-function m(e) {
+function g(e) {
   return f(e.code, e => {
     e.state = s.Rj.EXPIRED
   })
@@ -102,7 +102,7 @@ function y(e) {
 function O(e) {
   d = null
 }
-class S extends(r = i.ZP.Store) {
+class I extends(r = i.ZP.Store) {
   getGuildTemplate(e) {
     if (null != e) return u.get(e)
   }
@@ -119,15 +119,15 @@ class S extends(r = i.ZP.Store) {
     return d
   }
 }
-l(S, "displayName", "GuildTemplateStore");
-let I = new S(o.Z, {
+l(I, "displayName", "GuildTemplateStore");
+let S = new I(o.Z, {
   GUILD_TEMPLATE_RESOLVE: _,
   GUILD_TEMPLATE_CREATE_SUCCESS: p,
   GUILD_TEMPLATE_SYNC_SUCCESS: p,
   GUILD_TEMPLATE_RESOLVE_SUCCESS: p,
-  GUILD_TEMPLATE_LOAD_FOR_GUILD_SUCCESS: g,
-  GUILD_TEMPLATE_RESOLVE_FAILURE: m,
-  GUILD_TEMPLATE_DELETE_SUCCESS: m,
+  GUILD_TEMPLATE_LOAD_FOR_GUILD_SUCCESS: m,
+  GUILD_TEMPLATE_RESOLVE_FAILURE: g,
+  GUILD_TEMPLATE_DELETE_SUCCESS: g,
   GUILD_TEMPLATE_ACCEPT: E,
   GUILD_TEMPLATE_ACCEPT_SUCCESS: v,
   GUILD_TEMPLATE_ACCEPT_FAILURE: b,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120);
 var r = n(442837),
   i = n(570140);
@@ -111,12 +111,12 @@ function h(e) {
     appliedBoosts: i
   })), c = o
 }
-class g extends r.ZP.Store {
+class m extends r.ZP.Store {
   getStateForGuild(e) {
     return c.get(e)
   }
 }
-let m = new g(i.Z, {
+let g = new m(i.Z, {
   GUILD_POWERUP_CATALOG_FETCH_SUCCESS: f,
   GUILD_UNLOCKED_POWERUPS_FETCH_SUCCESS: _,
   GUILD_POWERUP_ENTITLEMENTS_CREATE: p,

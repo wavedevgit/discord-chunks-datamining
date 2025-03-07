@@ -15,16 +15,16 @@ var i, o = n(392711),
   _ = n(662594),
   p = n(433355),
   h = n(592125),
-  g = n(486472),
-  m = n(271383),
+  m = n(486472),
+  g = n(271383),
   E = n(430824),
   v = n(19780),
   b = n(699516),
   y = n(944486),
   O = n(914010),
-  S = n(981631);
+  I = n(981631);
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -33,7 +33,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 let T = new c.ZP(e => {
-  for (let t in e) null != E.Z.getGuild(t) || g.Z.isUnavailable(t) || delete e[t];
+  for (let t in e) null != E.Z.getGuild(t) || m.Z.isUnavailable(t) || delete e[t];
   l.Z.dispatch({
     type: "GUILD_SUBSCRIPTIONS_FLUSH",
     subscriptions: e
@@ -52,7 +52,7 @@ function N(e, t) {
 }
 
 function A(e, t) {
-  return T.subscribeToGuild(e), null != t && p.ZP.getSection(t) === S.ULH.MEMBERS && C(e, t, c.KV)
+  return T.subscribeToGuild(e), null != t && p.ZP.getSection(t) === I.ULH.MEMBERS && C(e, t, c.KV)
 }
 
 function C(e, t, n) {
@@ -60,7 +60,7 @@ function C(e, t, n) {
   let r = h.Z.getChannel(t);
   if (null == r) return !1;
   let i = r.getGuildId();
-  return (i !== e && e === S.I_8 && T.subscribeToGuild(i), null != r && r.isThread()) ? r.type === S.d4z.ANNOUNCEMENT_THREAD ? T.subscribeChannel(i, r.parent_id, n) : !!r.isActiveThread() && T.subscribeThreadMemberList(i, t, y.Z.getChannelId()) : T.subscribeChannel(i, t, n)
+  return (i !== e && e === I.I_8 && T.subscribeToGuild(i), null != r && r.isThread()) ? r.type === I.d4z.ANNOUNCEMENT_THREAD ? T.subscribeChannel(i, r.parent_id, n) : !!r.isActiveThread() && T.subscribeThreadMemberList(i, t, y.Z.getChannelId()) : T.subscribeChannel(i, t, n)
 }
 
 function R(e) {
@@ -83,7 +83,7 @@ function P() {
   N(!1, !1)
 }
 
-function D(e) {
+function w(e) {
   let {
     idle: t
   } = e;
@@ -91,7 +91,7 @@ function D(e) {
   N(!1, !0)
 }
 
-function w() {
+function D() {
   T.reset()
 }
 
@@ -172,7 +172,7 @@ function F(e) {
     guildId: t,
     channelId: n
   } = e;
-  return !g.Z.isUnavailable(t) && A(t, n)
+  return !m.Z.isUnavailable(t) && A(t, n)
 }
 
 function Z() {
@@ -201,7 +201,7 @@ function Y() {
       userId: t
     } = e;
     if (null != r && r.userId === t || b.Z.isFriend(t)) return !1;
-    let n = m.ZP.memberOf(t);
+    let n = g.ZP.memberOf(t);
     if (0 === n.length) return !1;
     let [i] = n;
     r = {
@@ -240,13 +240,13 @@ class z extends(i = s.ZP.Store) {
     return null != t && Object.keys(t).length > 0
   }
 }
-I(z, "displayName", "GuildSubscriptionsStore");
+S(z, "displayName", "GuildSubscriptionsStore");
 let q = new z(l.Z, {
   CONNECTION_OPEN: R,
   CONNECTION_RESUMED: R,
   CONNECTION_CLOSED: P,
-  IDLE: D,
-  LOGOUT: w,
+  IDLE: w,
+  LOGOUT: D,
   VOICE_CHANNEL_SELECT: F,
   CHANNEL_SELECT: F,
   GUILD_CREATE: L,

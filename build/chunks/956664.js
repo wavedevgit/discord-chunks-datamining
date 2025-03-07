@@ -3,15 +3,15 @@
 n.d(t, {
   Bo: () => A,
   Dc: () => h,
-  OF: () => S,
+  OF: () => I,
   QB: () => N,
   Tj: () => c,
   XN: () => O,
-  _H: () => m,
+  _H: () => g,
   c0: () => R,
   fD: () => T,
   kD: () => C,
-  rn: () => g,
+  rn: () => m,
   rv: () => E,
   vV: () => p,
   zp: () => d
@@ -79,7 +79,7 @@ function h(e) {
   return (n = Math.round(n * o)) > i && (a = i / n), Math.min(o * a, 1)
 }
 
-function g(e) {
+function m(e) {
   let {
     width: t,
     height: n,
@@ -89,7 +89,7 @@ function g(e) {
   return t === n ? 1 : Math.min(Math.max(r / t, i / n), 1)
 }
 
-function m(e) {
+function g(e) {
   let {
     width: t,
     height: n
@@ -122,8 +122,8 @@ function O(e, t, n) {
     c = l()(s, t);
   return "boolean" == typeof c ? b : c.palette()
 }
-let S = e => "number" == typeof e ? null : I(e),
-  I = a().memoize(e => new Promise((t, n) => {
+let I = e => "number" == typeof e ? null : S(e),
+  S = a().memoize(e => new Promise((t, n) => {
     let r = new Image;
     r.crossOrigin = "Anonymous", r.onerror = e => {
       n(e), r.onerror = r.onload = null, r = null

@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(572004),
   p = n(63063),
   h = n(358085),
-  g = n(145022),
-  m = n(981631),
+  m = n(145022),
+  g = n(981631),
   E = n(388032),
   v = n(90677);
 
@@ -57,7 +57,7 @@ function O() {
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     subHead: t,
     buildDetails: n,
@@ -90,7 +90,7 @@ function S(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let t, n, r, {
       currentOverrides: i,
       linkMeta: o,
@@ -100,13 +100,13 @@ function I(e) {
     } = e,
     _ = ["discord_web"];
   h.isPlatformEmbedded || _.push("discord_marketing", "discord_developers");
-  let p = (0, g.Z)(o, _);
+  let p = (0, m.Z)(o, _);
   if (!p.valid) return T(p.reason);
   l()(null != o, "BuildOverrideEmbed.renderResolved: linkMeta should never be null if resolved");
   let {
-    discord_web: m,
+    discord_web: g,
     discord_developers: v
-  } = o.targetBuildOverride, y = null != m ? m : v;
+  } = o.targetBuildOverride, y = null != g ? g : v;
   l()(null != y, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web or linkMeta.targetBuildOverride.discord_developers should never be null if resolved"), b(y, i) ? (n = E.NW.string(E.t.tX4xrq), t = s, r = c.zxk.Colors.RED) : (n = E.NW.string(E.t.nOunHB), t = a, r = c.zxk.Colors.GREEN);
   let O = () => {
     d.Z.isConnected() ? u.Z.show({
@@ -117,7 +117,7 @@ function I(e) {
       confirmText: E.NW.string(E.t["QDX/qq"])
     }) : t()
   };
-  return S({
+  return I({
     subHead: E.NW.string(E.t.RCYGoq),
     buildDetails: y.id,
     buttonClick: O,
@@ -128,7 +128,7 @@ function I(e) {
 }
 
 function T(e) {
-  return S({
+  return I({
     subHead: E.NW.string(E.t.ODXApK),
     buttonColor: c.zxk.Colors.TRANSPARENT,
     buttonText: "Invalid",
@@ -148,7 +148,7 @@ function N(e, t, n) {
       }) : E.NW.string(E.t.Wj3LW1)
     }), (0, r.jsx)(c.eee, {
       className: v.infoLink,
-      href: p.Z.getArticleURL(m.BhN.BUILD_OVERRIDE_EMBED),
+      href: p.Z.getArticleURL(g.BhN.BUILD_OVERRIDE_EMBED),
       target: "_blank",
       children: (0, r.jsx)(c.d3s, {
         size: "xs",
@@ -179,7 +179,7 @@ let A = e => {
       className: v.content,
       children: [(0, r.jsx)(f.Z, {
         className: v.icon
-      }), t ? O() : I({
+      }), t ? O() : S({
         currentOverrides: n,
         linkMeta: o,
         applyBuildOverride: d,

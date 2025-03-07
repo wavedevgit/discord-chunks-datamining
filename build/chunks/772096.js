@@ -49,18 +49,18 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = new(a())({
+let g = new(a())({
   max: 50
 });
 
 function E(e) {
   let t = e,
-    n = m.get(t);
+    n = g.get(t);
   if (null != n) return n;
   let r = (0, f.yx)(e),
     i = (0, f.zq)(r),
@@ -68,14 +68,14 @@ function E(e) {
       whitespaceSanitized: r,
       fullySanitized: i
     };
-  return m.set(t, o), o
+  return g.set(t, o), o
 }
 let v = ["http:", "https:", "discord:"],
   b = [d.b.TEXT, d.b.UNDERLINE, d.b.STRONG, d.b.ITALICS, d.b.STRIKETHROUGH, d.b.INLINE_CODE, d.b.SPOILER, d.b.LINE_BREAK, d.b.TIMESTAMP],
   y = [...b, d.b.EMOJI, d.b.CUSTOM_EMOJI],
   O = [d.b.LIST, d.b.HEADING, d.b.BLOCK_QUOTE, d.b.SUBTEXT],
-  S = [d.b.TEXT],
-  I = [d.b.UNDERLINE, d.b.STRONG, d.b.ITALICS, d.b.STRIKETHROUGH, d.b.INLINE_CODE, d.b.SPOILER, d.b.LINE_BREAK, d.b.TIMESTAMP, d.b.EMOJI, d.b.CUSTOM_EMOJI, d.b.LIST, d.b.HEADING, d.b.BLOCK_QUOTE, d.b.SUBTEXT];
+  I = [d.b.TEXT],
+  S = [d.b.UNDERLINE, d.b.STRONG, d.b.ITALICS, d.b.STRIKETHROUGH, d.b.INLINE_CODE, d.b.SPOILER, d.b.LINE_BREAK, d.b.TIMESTAMP, d.b.EMOJI, d.b.CUSTOM_EMOJI, d.b.LIST, d.b.HEADING, d.b.BLOCK_QUOTE, d.b.SUBTEXT];
 
 function T(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [];
@@ -146,25 +146,25 @@ function A(e) {
     return null
   }
 }
-let C = g(p({}, l().defaultRules.link), {
+let C = m(p({}, l().defaultRules.link), {
   match: (e, t, n) => t.allowLinks ? l().defaultRules.link.match(e, t, n) : null,
   parse(e, t, n) {
     let [r, o, a, s] = e, u = () => ({
       type: d.b.TEXT,
       content: r
-    }), f = E(a), _ = E(o), h = E(null != s ? s : ""), m = f.whitespaceSanitized, v = _.fullySanitized, C = h.fullySanitized, R = v.trim();
-    if (0 === m.trim().length || 0 === R.length) return u();
+    }), f = E(a), _ = E(o), h = E(null != s ? s : ""), g = f.whitespaceSanitized, v = _.fullySanitized, C = h.fullySanitized, R = v.trim();
+    if (0 === g.trim().length || 0 === R.length) return u();
     let P = A(l().unescapeUrl(a)),
-      D = null == P,
-      w = (0, c.ZP)(o).length > 0 || (0, c.ZP)(s).length > 0;
-    if (D || w) return u();
-    let L = g(p({}, n), {
+      w = null == P,
+      D = (0, c.ZP)(o).length > 0 || (0, c.ZP)(s).length > 0;
+    if (w || D) return u();
+    let L = m(p({}, n), {
         allowEscape: !1,
         parseInlineCodeChildContent: !0
       }),
       x = n.allowEmojiLinks ? y : b,
       M = [...x, ...O],
-      k = [...S, ...I],
+      k = [...I, ...S],
       j = T(t(v, L), M, [d.b.EMOJI]),
       U = T(t(C, L), k);
     if (null == j || null == U || 0 === N(j).trim().length) return u();

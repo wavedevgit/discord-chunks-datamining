@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -52,13 +52,13 @@ function h(e, t) {
   }), e
 }
 
-function g(e) {
+function m(e) {
   let {
     user: t,
     location: f = "ContextMenu",
     onFriendRequestSent: p,
-    onFriendRemove: g,
-    appContext: m
+    onFriendRemove: m,
+    appContext: g
   } = e, {
     id: E,
     username: v,
@@ -68,7 +68,7 @@ function g(e) {
     return (null === (e = u.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === E
   }, [E]), O = (0, l.n)({
     userId: E
-  }), [S, I] = (0, o.Wu)([c.Z], () => [c.Z.isFriend(E), c.Z.isBlocked(E)], [E]), [T, N] = i.useState(!1);
+  }), [I, S] = (0, o.Wu)([c.Z], () => [c.Z.isFriend(E), c.Z.isBlocked(E)], [E]), [T, N] = i.useState(!1);
   if (b || y) return null;
 
   function A() {
@@ -85,7 +85,7 @@ function g(e) {
         onConfirm: () => {
           s.Z.removeFriend(E, {
             location: f
-          }), N(!1), null == g || g()
+          }), N(!1), null == m || m()
         }
       }, t), {
         children: (0, r.jsx)(a.Text, {
@@ -96,10 +96,10 @@ function g(e) {
         })
       }))
     }, {
-      contextKey: null != m ? (0, a.VnL)(m) : void 0
+      contextKey: null != g ? (0, a.VnL)(g) : void 0
     })
   }
-  return S ? (0, r.jsx)(a.sNh, {
+  return I ? (0, r.jsx)(a.sNh, {
     id: "remove-friend",
     label: d.NW.string(d.t.cvSt1N),
     action: A
@@ -114,6 +114,6 @@ function g(e) {
         }
       }), N(!0), null == p || p())
     },
-    disabled: I || T && !S
+    disabled: S || T && !I
   })
 }

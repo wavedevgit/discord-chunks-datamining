@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => S
 }), n(474991), n(398202), n(301563), n(757143), n(627494);
 var r = n(512722),
   i = n.n(r),
@@ -51,15 +51,15 @@ let d = /\n{2,}$/,
   _ = "(?:[*-]|\\d+\\.)",
   p = "(%INDENT_CAPTURE_PATTERN%)(" + _ + ") +",
   h = RegExp("^" + p.replace("%INDENT_CAPTURE_PATTERN%", " *")),
-  g = p + "[^\\n]*(?:\\n(?!%INDENT_CAPTURE_PATTERN%" + _ + " )[^\\n]*)*(\n|$)",
-  m = / *\n$/,
+  m = p + "[^\\n]*(?:\\n(?!%INDENT_CAPTURE_PATTERN%" + _ + " )[^\\n]*)*(\n|$)",
+  g = / *\n$/,
   E = RegExp("^( *)(" + _ + ") [\\s\\S]+?(?:\\n(?! )(?!\\1" + _ + " )|$)"),
   v = /^[ \t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]+$/,
   b = 10,
   y = 1,
   O = 1e9,
-  S = e => e.map(e => ("text" === e.type && null != e.content && (e.content = e.content.replace(/\n+\s*$/, "")), e)),
-  I = u(l({}, a().defaultRules.list), {
+  I = e => e.map(e => ("text" === e.type && null != e.content && (e.content = e.content.replace(/\n+\s*$/, "")), e)),
+  S = u(l({}, a().defaultRules.list), {
     requiredFirstCharacters: " *-0123456789".split(""),
     match: (e, t) => {
       if (!t.allowList || t._listLevel >= b + 1) return null;
@@ -76,11 +76,11 @@ let d = /\n{2,}$/,
         f = null != c ? c[0].length : 0,
         _ = null != c ? c[1].length : 0,
         p = " {".concat(_, ",").concat(_ + 1, "}"),
-        E = RegExp(g.replaceAll("%INDENT_CAPTURE_PATTERN%", p), "gm"),
+        E = RegExp(m.replaceAll("%INDENT_CAPTURE_PATTERN%", p), "gm"),
         v = RegExp("^ {1," + f + "}", "gm"),
         b = s.match(E);
       i()(null != b, "markup list items can not be parsed.");
-      let I = !1;
+      let S = !1;
       return {
         ordered: o,
         start: a,
@@ -88,13 +88,13 @@ let d = /\n{2,}$/,
           let i;
           let o = e.replace(h, "").replace(v, ""),
             a = r === b.length - 1,
-            s = -1 !== o.indexOf("\n\n") || a && I;
-          I = s;
+            s = -1 !== o.indexOf("\n\n") || a && S;
+          S = s;
           let c = n.inline,
             d = n._list,
             f = n._listLevel;
-          n._list = !0, n._listLevel = (null != f ? f : 0) + 1, s ? (n.inline = !1, i = o.replace(m, "\n\n")) : (n.inline = !0, i = o.replace(m, ""));
-          let _ = S(t(i, u(l({}, n), {
+          n._list = !0, n._listLevel = (null != f ? f : 0) + 1, s ? (n.inline = !1, i = o.replace(g, "\n\n")) : (n.inline = !0, i = o.replace(g, ""));
+          let _ = I(t(i, u(l({}, n), {
             allowHeading: !1
           })));
           return n.inline = c, n._list = d, n._listLevel = f, _

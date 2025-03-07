@@ -50,9 +50,9 @@ function p(e, t) {
   }), e
 }
 let h = {},
-  g = (0, l.isWindows)() ? "".concat(s.Z.process.env.LOCALAPPDATA, "\\DiscordGames") : (0, l.isMac)() ? "/Applications/DiscordGames" : "/tmp";
+  m = (0, l.isWindows)() ? "".concat(s.Z.process.env.LOCALAPPDATA, "\\DiscordGames") : (0, l.isMac)() ? "/Applications/DiscordGames" : "/tmp";
 
-function m(e, t) {
+function g(e, t) {
   var n;
   h = p(f({}, h), {
     [e]: f({}, null !== (n = h[e]) && void 0 !== n ? n : {}, t)
@@ -82,7 +82,7 @@ function y(e) {
   } = e;
   null == r.installations[t] && (r.installations[t] = {}), r.installations[t][n] = {
     installationPath: i
-  }, r.installationPaths.has(i) || I({
+  }, r.installationPaths.has(i) || S({
     path: i,
     metadata: {}
   })
@@ -93,13 +93,13 @@ function O(e) {
     applicationId: t,
     branchId: n
   } = e, r = c.Z.getState(t, n);
-  null != r && null == r.buildId && null == r.manifestIds && S({
+  null != r && null == r.buildId && null == r.manifestIds && I({
     applicationId: t,
     branchId: n
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     applicationId: t,
     branchId: n
@@ -108,9 +108,9 @@ function S(e) {
   delete r.installations[t][n], 0 === Object.keys(r.installations[t]).length && delete r.installations[t]
 }
 
-function I(e) {
+function S(e) {
   if (r.installationPaths.has(e.path)) return !1;
-  m(e.path, e.metadata);
+  g(e.path, e.metadata);
   let t = new Set(r.installationPaths);
   t.add(e.path), r.installationPaths = t
 }
@@ -138,12 +138,12 @@ function A(e) {
   let {
     metadataPayload: t
   } = e;
-  for (let e in t) m(e, t[e])
+  for (let e in t) g(e, t[e])
 }
 class C extends(i = o.ZP.PersistedStore) {
   initialize(e) {
     let t = f({}, e);
-    null == t.installations && (t.installations = {}), null == t.defaultInstallationPath && (t.defaultInstallationPath = g), null == t.installationPaths ? t.installationPaths = new Set([t.defaultInstallationPath]) : t.installationPaths = new Set(Array.from(t.installationPaths)), null == t.pathLabels && (t.pathLabels = {}), r = t
+    null == t.installations && (t.installations = {}), null == t.defaultInstallationPath && (t.defaultInstallationPath = m), null == t.installationPaths ? t.installationPaths = new Set([t.defaultInstallationPath]) : t.installationPaths = new Set(Array.from(t.installationPaths)), null == t.pathLabels && (t.pathLabels = {}), r = t
   }
   getState() {
     return r
@@ -177,15 +177,15 @@ class C extends(i = o.ZP.PersistedStore) {
   }
   getLabelFromPath(e) {
     var t, n;
-    return e === g ? u.NW.string(u.t.VdDrjo) : null !== (n = null !== (t = s.Z.fileManager.basename(e)) && void 0 !== t ? t : e.replace(/[/\\]+$/, "").split(/[/\\]+/g).slice(-1)[0]) && void 0 !== n ? n : "?"
+    return e === m ? u.NW.string(u.t.VdDrjo) : null !== (n = null !== (t = s.Z.fileManager.basename(e)) && void 0 !== t ? t : e.replace(/[/\\]+$/, "").split(/[/\\]+/g).slice(-1)[0]) && void 0 !== n ? n : "?"
   }
 }
 d(C, "displayName", "InstallationManagerStore"), d(C, "persistKey", "InstallationManagerStore");
 let R = new C(a.Z, {
   DISPATCH_APPLICATION_INSTALL: y,
-  DISPATCH_APPLICATION_UNINSTALL: S,
+  DISPATCH_APPLICATION_UNINSTALL: I,
   DISPATCH_APPLICATION_CANCEL: O,
-  INSTALLATION_LOCATION_ADD: I,
+  INSTALLATION_LOCATION_ADD: S,
   INSTALLATION_LOCATION_REMOVE: T,
   INSTALLATION_LOCATION_UPDATE: N,
   INSTALLATION_LOCATION_FETCH_METADATA: A,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  q: () => I
+  q: () => S
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(599659),
   p = n(981632),
   h = n(96848),
-  g = n(703926),
-  m = n(474936),
+  m = n(703926),
+  g = n(474936),
   E = n(388032),
   v = n(220283);
 
@@ -54,12 +54,12 @@ function O(e, t) {
   return n
 }
 
-function S(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = e => {
+let S = e => {
   let {
     isShopGift: t,
     className: n,
@@ -67,12 +67,12 @@ let I = e => {
   } = e, {
     giftRecipient: b,
     selectedGiftStyle: O,
-    setSelectedGiftStyle: I,
+    setSelectedGiftStyle: S,
     emojiConfetti: T,
     soundEffect: N,
     setEmojiConfetti: A,
     setSoundEffect: C
-  } = (0, l.wD)(), [R, P] = i.useState(!1), D = i.useRef(null), w = (0, s.arW)({
+  } = (0, l.wD)(), [R, P] = i.useState(!1), w = i.useRef(null), D = (0, s.arW)({
     orientation: "horizontal"
   }), L = (0, u.MY)(b, t), x = L === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, M = L !== u.xr.DEFAULT, k = (0, f.rK)(), {
     enabled: j
@@ -85,7 +85,7 @@ let I = e => {
   } = _.O.useExperiment({
     location: "gift card"
   }), G = null;
-  M && (G = k && j ? m.kJ : m.QI), U && (G = m.RQ);
+  M && (G = k && j ? g.kJ : g.QI), U && (G = g.RQ);
   let B = e => {
     null != C && C(null == e ? void 0 : e)
   };
@@ -116,20 +116,20 @@ let I = e => {
           })
         })]
       })]
-    }), (0, r.jsx)("div", S(y({
+    }), (0, r.jsx)("div", I(y({
       tabIndex: null != O || R ? void 0 : 0,
       onFocus: e => {
         var t;
-        e.target === e.currentTarget && (null === (t = D.current) || void 0 === t || t.focus())
+        e.target === e.currentTarget && (null === (t = w.current) || void 0 === t || t.focus())
       },
       className: a()(v.giftBoxOptionContainer, o),
       "aria-label": E.NW.string(E.t.v54NrK)
-    }, w), {
-      children: null != G && G.map((e, t) => (0, r.jsx)(g.m, {
+    }, D), {
+      children: null != G && G.map((e, t) => (0, r.jsx)(m.m, {
         isSelected: O === e,
         giftStyle: e,
-        setSelectedGiftStyle: I,
-        ref: 0 === t ? D : null,
+        setSelectedGiftStyle: S,
+        ref: 0 === t ? w : null,
         onFocus: () => P(!0),
         onBlur: () => P(!1)
       }, e))

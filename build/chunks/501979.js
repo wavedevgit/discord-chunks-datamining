@@ -13,30 +13,30 @@ function l(e, t, n, l, c, u) {
   var p = u.get(e),
     h = u.get(t);
   if (p && h) return p == t && h == e;
-  var g = -1,
-    m = !0,
+  var m = -1,
+    g = !0,
     E = n & s ? new r : void 0;
-  for (u.set(e, t), u.set(t, e); ++g < f;) {
-    var v = e[g],
-      b = t[g];
-    if (l) var y = d ? l(b, v, g, t, e, u) : l(v, b, g, e, t, u);
+  for (u.set(e, t), u.set(t, e); ++m < f;) {
+    var v = e[m],
+      b = t[m];
+    if (l) var y = d ? l(b, v, m, t, e, u) : l(v, b, m, e, t, u);
     if (void 0 !== y) {
       if (y) continue;
-      m = !1;
+      g = !1;
       break
     }
     if (E) {
       if (!i(t, function(e, t) {
           if (!o(E, t) && (v === e || c(v, e, n, l, u))) return E.push(t)
         })) {
-        m = !1;
+        g = !1;
         break
       }
     } else if (!(v === b || c(v, b, n, l, u))) {
-      m = !1;
+      g = !1;
       break
     }
   }
-  return u.delete(e), u.delete(t), m
+  return u.delete(e), u.delete(t), g
 }
 e.exports = l

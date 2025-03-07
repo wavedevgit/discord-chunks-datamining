@@ -84,8 +84,8 @@ function _(e, t, n) {
     entityType: _,
     entityMetadata: p,
     image: h,
-    recurrenceRule: g,
-    eventExceptions: m
+    recurrenceRule: m,
+    eventExceptions: g
   } = e;
   return {
     id: null != n ? n : a.Ku,
@@ -101,8 +101,8 @@ function _(e, t, n) {
     guild_id: t,
     creator_id: r.default.getId(),
     status: a.p1.SCHEDULED,
-    recurrence_rule: l(g),
-    guild_scheduled_event_exceptions: u(m)
+    recurrence_rule: l(m),
+    guild_scheduled_event_exceptions: u(g)
   }
 }
 

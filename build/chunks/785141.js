@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  hp: () => S,
+  hp: () => I,
   kr: () => O,
   u: () => E
 }), n(47120), n(411104), n(26686);
@@ -18,8 +18,8 @@ var r = n(570140),
   _ = n(704806),
   p = n(626135),
   h = n(848479),
-  g = n(981631);
-let m = new i.Z("AVError");
+  m = n(981631);
+let g = new i.Z("AVError");
 var E = function(e) {
   return e.STREAM_FAILED_TO_START = "stream-failed-to-start", e.NO_INPUT_DEVICES = "no-input-devices", e.NO_AUDIO_INPUT_DETECTED = "no-audio-input-detected", e.DEBUG_LOG_UPLOAD_FAILED = "debug-log-upload-failed", e.STREAM_VIEW_LOW_FPS = "stream-view-low-fps", e.STREAM_VIEW_HIGH_PACKET_LOSS = "stream-view-high-packet-loss", e.STREAM_SEND_LOW_FPS = "stream-send-low-encode-fps", e.STREAM_SEND_HIGH_PACKET_LOSS = "stream-send-high-packet-loss", e.STREAM_BAD_NETWORK_QUALITY = "stream-send-network-quality", e.STREAM_SOUNDSHARE_FAILED = "stream-soundshare-failed", e
 }({});
@@ -83,34 +83,34 @@ function y(e, t) {
   var n;
   let r = null !== (n = t.channelId) && void 0 !== n ? n : d.Z.getVoiceChannelId(),
     i = s.Z.getChannel(r),
-    m = null != t.streamKey ? (0, o.my)(t.streamKey) : null,
+    g = null != t.streamKey ? (0, o.my)(t.streamKey) : null,
     E = null != t.streamKey ? f.Z.getRTCConnection(t.streamKey) : null,
     {
       resolution: b,
       fps: y
     } = a.Z.getState();
   (0, _.q)().then(n => {
-    var o, a, s, d, f, _, O, S, I, T, N, A, C, R, P, D, w, L, x, M, k, j, U, G, B, V, F, Z, H, W, Y, K, z, q, Q, X, J;
+    var o, a, s, d, f, _, O, I, S, T, N, A, C, R, P, w, D, L, x, M, k, j, U, G, B, V, F, Z, H, W, Y, K, z, q, Q, X, J;
     let $ = {
       error_name: e.valueOf(),
       error_code: v[e].errorCode,
       error_severity: v[e].severity,
       error_category: v[e].category,
-      underlying_error: null !== (I = t.underlyingError) && void 0 !== I ? I : null,
+      underlying_error: null !== (S = t.underlyingError) && void 0 !== S ? S : null,
       error_message: null !== (T = t.errorMessage) && void 0 !== T ? T : null,
       guild_id: null !== (N = null == i ? void 0 : i.guild_id) && void 0 !== N ? N : null,
       channel_id: null != r ? r : null,
       channel_type: null !== (A = null == i ? void 0 : i.type) && void 0 !== A ? A : null,
       rtc_connection_id: null !== (C = t.rtcConnectionId) && void 0 !== C ? C : null,
       media_session_id: null !== (P = null !== (R = t.mediaSessionId) && void 0 !== R ? R : c.Z.getMediaSessionId()) && void 0 !== P ? P : null,
-      parent_media_session_id: null !== (D = t.parentMediaSessionId) && void 0 !== D ? D : null,
-      context: null !== (w = t.mediaContext) && void 0 !== w ? w : null,
+      parent_media_session_id: null !== (w = t.parentMediaSessionId) && void 0 !== w ? w : null,
+      context: null !== (D = t.mediaContext) && void 0 !== D ? D : null,
       voice_backend_version: null !== (L = null === (o = c.Z.getRTCConnection()) || void 0 === o ? void 0 : o.getVoiceVersion()) && void 0 !== L ? L : null,
       rtc_worker_backend_version: null !== (x = null === (a = c.Z.getRTCConnection()) || void 0 === a ? void 0 : a.getRtcWorkerVersion()) && void 0 !== x ? x : null,
       guild_region: null !== (M = u.Z.getRegion(c.Z.getHostname())) && void 0 !== M ? M : null,
       hostname: null !== (k = c.Z.getHostname()) && void 0 !== k ? k : null,
       duration: null !== (j = null != t.streamKey ? null == E ? void 0 : E.getDurationSeconds() : null === (s = c.Z.getRTCConnection()) || void 0 === s ? void 0 : s.getDurationSeconds()) && void 0 !== j ? j : null,
-      sender_user_id: null !== (U = null == m ? void 0 : m.ownerId) && void 0 !== U ? U : null,
+      sender_user_id: null !== (U = null == g ? void 0 : g.ownerId) && void 0 !== U ? U : null,
       stream_region: null !== (G = null == E ? void 0 : E.getRegion()) && void 0 !== G ? G : null,
       stream_source_type: null !== (B = null == E ? void 0 : null === (d = E.analyticsContext) || void 0 === d ? void 0 : d.streamSourceType) && void 0 !== B ? B : null,
       num_stream_viewers: null !== (V = null == E ? void 0 : null === (f = E.analyticsContext) || void 0 === f ? void 0 : f.numViewers) && void 0 !== V ? V : null,
@@ -127,7 +127,7 @@ function y(e, t) {
       hardware_enabled: l.Z.getHardwareEncoding(),
       audio_input_device_name: null !== (Q = t.audioInputDeviceName) && void 0 !== Q ? Q : null === (_ = l.Z.getInputDevices()[l.Z.getInputDeviceId()]) || void 0 === _ ? void 0 : _.name,
       audio_output_device_name: null !== (X = t.audioOutputDeviceName) && void 0 !== X ? X : null === (O = l.Z.getOutputDevices()[l.Z.getOutputDeviceId()]) || void 0 === O ? void 0 : O.name,
-      video_device_name: null !== (J = t.videoDeviceName) && void 0 !== J ? J : null === (S = l.Z.getVideoDevices()[l.Z.getVideoDeviceId()]) || void 0 === S ? void 0 : S.name,
+      video_device_name: null !== (J = t.videoDeviceName) && void 0 !== J ? J : null === (I = l.Z.getVideoDevices()[l.Z.getVideoDeviceId()]) || void 0 === I ? void 0 : I.name,
       audio_subsystem: l.Z.getMediaEngine().getAudioSubsystem(),
       automatic_audio_subsystem: l.Z.getSettings().automaticAudioSubsystem,
       audio_layer: l.Z.getMediaEngine().getAudioLayer(),
@@ -142,16 +142,16 @@ function y(e, t) {
       input_volume: l.Z.getInputVolume(),
       output_volume: l.Z.getOutputVolume()
     };
-    p.default.track(g.rMx.AV_ERROR_REPORTED, $)
+    p.default.track(m.rMx.AV_ERROR_REPORTED, $)
   })
 }
 
 function O(e, t) {
   if (null != t.underlyingError && !Object.values(b).includes(t.underlyingError)) {
-    m.error("Invalid underlying error string '".concat(t.underlyingError, "', must be member of AVUnderlyingError"));
+    g.error("Invalid underlying error string '".concat(t.underlyingError, "', must be member of AVUnderlyingError"));
     return
   }
-  m.error("AV error reported: ".concat(e, " ").concat(JSON.stringify(t)));
+  g.error("AV error reported: ".concat(e, " ").concat(JSON.stringify(t)));
   let n = v[e];
   r.Z.dispatch({
     type: "REPORT_AV_ERROR",
@@ -163,7 +163,7 @@ function O(e, t) {
   }), y(e, t)
 }
 
-function S(e) {
+function I(e) {
   return v[e]
 }! function() {
   let e = Object.values(v).map(e => e.errorCode),

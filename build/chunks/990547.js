@@ -13,9 +13,9 @@ n.r(t), n.d(t, {
   StandardAnalyticsSchemaNameMap: () => b.StandardAnalyticsSchemaNameMap,
   TypedEventProperties: () => v.TypedEventProperties,
   analyticsTrackingStoreMaker: () => E.l,
-  encodeProperties: () => m.Z,
+  encodeProperties: () => g.Z,
   extendSuperProperties: () => K,
-  getCampaignParams: () => w,
+  getCampaignParams: () => D,
   getDevice: () => j,
   getOS: () => k,
   getSuperProperties: () => q,
@@ -34,8 +34,8 @@ var f = n(903772),
   _ = n(627420),
   p = n(433517),
   h = n(298444),
-  g = n(979675),
-  m = n(947486),
+  m = n(979675),
+  g = n(947486),
   E = n(699407),
   v = n(20281),
   b = n(525769);
@@ -62,7 +62,7 @@ function O(e) {
   return e
 }
 
-function S(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -73,8 +73,8 @@ function S(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -122,17 +122,17 @@ if (null != R) {
 }
 let P = "utm_source utm_medium utm_campaign utm_content utm_term".split(" ");
 
-function D(e, t) {
+function w(e, t) {
   if (null == e) return "";
   t = t.replace(/[[]/, "\\[").replace(/[\]]/, "\\]");
   let n = new RegExp("[\\?&]".concat(t, "=([^&#]*)")).exec(e);
   return null === n || "string" != typeof n[1] && n[1].length ? "" : decodeURIComponent(n[1]).replace(/\+/g, " ")
 }
 
-function w(e) {
+function D(e) {
   let t = {};
   return P.forEach(n => {
-    let r = D(e, n);
+    let r = w(e, n);
     r.length > 0 && (t[n] = r)
   }), t
 }
@@ -149,7 +149,7 @@ function x() {
     r = "yahoo" !== n ? "q" : "p";
   if (null != n) {
     e.search_engine = n;
-    let i = D(t, r);
+    let i = w(t, r);
     i.length > 0 && (e.mp_keyword = i)
   }
   return e
@@ -215,7 +215,7 @@ function G() {
 
 function B() {
   var e, t;
-  return I(O({}, {
+  return S(O({}, {
     browser_user_agent: window.navigator.userAgent || "",
     browser_version: d().version || ""
   }), {
@@ -225,7 +225,7 @@ function B() {
 
 function V() {
   let e = {};
-  return e.referrer = document.referrer, e.referring_domain = U(), e = O({}, e, w(window.location.href), x())
+  return e.referrer = document.referrer, e.referring_domain = U(), e = O({}, e, D(window.location.href), x())
 }
 
 function F(e, t) {
@@ -254,7 +254,7 @@ function W() {
   let r = {},
     i = window.GLOBAL_ENV.RELEASE_CHANNEL;
   i && (null == r.release_channel || "" === r.release_channel) && (r.release_channel = i.split("-")[0]);
-  let o = parseInt((n = "375347", "375347"), 10);
+  let o = parseInt((n = "375354", "375354"), 10);
   isNaN(o) || (r.client_build_number = o);
   let a = null == R ? void 0 : null === (e = (t = R.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
   return isNaN(a) || (r.native_build_number = a), r.client_event_source = H(), r.has_client_mods = (0, f.e)(), r
@@ -270,7 +270,7 @@ if (null == r) try {
 }
 
 function K(e) {
-  r = O({}, r, e), i = (0, m.Z)(r)
+  r = O({}, r, e), i = (0, g.Z)(r)
 }
 K(W());
 let z = e => {
@@ -278,7 +278,7 @@ let z = e => {
     analyticEventConfigs: t,
     dispatcher: r,
     TRACK_ACTION_NAME: i
-  } = e, o = (0, g.$)(r, i);
+  } = e, o = (0, m.$)(r, i);
   return function(e, r) {
     let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
     if (null != n.g.isServerRendering && !0 === n.g.isServerRendering) return Promise.resolve();

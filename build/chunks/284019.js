@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(200651),
   i = n(192379),
@@ -68,7 +68,7 @@ function h(e, t) {
   return i
 }
 
-function g(e) {
+function m(e) {
   var {
     themeColor: t,
     color: n,

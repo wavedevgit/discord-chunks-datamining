@@ -68,7 +68,7 @@ function _(e, t) {
     openInPopoutEnabled: _
   } = e, p = d(e, ["openInPopoutEnabled"]), h = o.Z.getWindowOpen(l.KJ3.CHANNEL_CALL_POPOUT) && null != _ && _;
   h && (0, a.Z)(l.KJ3.CHANNEL_CALL_POPOUT);
-  let g = h ? i.u1M : i.z1l;
+  let m = h ? i.u1M : i.z1l;
   (0, i.ZDy)(async () => {
     let {
       default: e
@@ -76,6 +76,6 @@ function _(e, t) {
     return t => (0, r.jsx)(e, u({}, p, t))
   }, {
     onCloseCallback: f,
-    contextKey: g
+    contextKey: m
   })
 }

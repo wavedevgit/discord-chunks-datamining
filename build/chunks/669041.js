@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B: () => g,
+  B: () => m,
   QuestsRewardModalUnverified: () => h
 }), n(47120);
 var r = n(200651),
@@ -62,7 +62,7 @@ function h(e) {
       })
     })
   }, []);
-  let g = () => (0, r.jsx)(a.mzw, {
+  let m = () => (0, r.jsx)(a.mzw, {
     className: d.modalFooter,
     children: (0, r.jsx)(a.zxk, {
       color: a.zxk.Colors.BRAND,
@@ -99,7 +99,7 @@ function h(e) {
           variant: "text-md/normal",
           children: u.NW.string(u.t.vjyinp)
         })
-      }), g()]
+      }), m()]
     }), "success" === p.status && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(a.hzk, {
         className: d.content,
@@ -124,12 +124,12 @@ function h(e) {
             children: u.NW.string(u.t.yb7itb)
           })]
         })
-      }), g()]
+      }), m()]
     })]
   })
 }
 
-function g() {
+function m() {
   (0, a.ZDy)(async () => {
     let {
       QuestsRewardModalUnverified: e

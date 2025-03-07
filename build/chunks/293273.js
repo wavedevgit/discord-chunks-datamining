@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => D
+  Z: () => w
 }), n(653041), n(47120);
 var r, i = n(348327),
   o = n.n(i),
@@ -15,8 +15,8 @@ var r, i = n(348327),
   _ = n(406066),
   p = n(768419),
   h = n(695346),
-  g = n(581883),
-  m = n(199902),
+  m = n(581883),
+  g = n(199902),
   E = n(272053),
   v = n(77498),
   b = n(981631);
@@ -42,8 +42,8 @@ function O(e) {
   }
   return e
 }
-let S = [],
-  I = {};
+let I = [],
+  S = {};
 
 function T() {
   let e = [],
@@ -56,16 +56,16 @@ function T() {
     type: b.IIU.STREAMING
   }, r));
   let i = new Set;
-  s().forEach(I, t => {
+  s().forEach(S, t => {
     let [, n] = t;
     null != n.application_id && (i.add(n.name), e.push(n))
   });
   let a = f.ZP.getVisibleGame(),
     l = null != a && null != a.name && i.has(a.name),
     c = null != a && a.isLauncher,
-    u = null != m.Z.getCurrentUserActiveStream(),
-    g = l || c && !u;
-  if (null != a && null != a.name && !g) {
+    u = null != g.Z.getCurrentUserActiveStream(),
+    m = l || c && !u;
+  if (null != a && null != a.name && !m) {
     var y, T;
     e.push({
       type: b.IIU.PLAYING,
@@ -79,11 +79,11 @@ function T() {
   let N = p.Z.getActivity();
   null != N && e.push(O({
     type: b.IIU.LISTENING
-  }, N)), o()(S, e) || (S = e)
+  }, N)), o()(I, e) || (I = e)
 }
 
 function N() {
-  I = {}, T()
+  S = {}, T()
 }
 
 function A(e) {
@@ -92,32 +92,32 @@ function A(e) {
     pid: n,
     activity: r
   } = e;
-  if (o()(I[t], [n, r])) return !1;
-  null != r ? I[t] = [n, r] : delete I[t], T()
+  if (o()(S[t], [n, r])) return !1;
+  null != r ? S[t] = [n, r] : delete S[t], T()
 }
 
 function C(e) {
   let {
     socketId: t
   } = e;
-  delete I[t], T()
+  delete S[t], T()
 }
 
 function R(e) {
   let {
     localActivities: t
   } = e;
-  I = O({}, t), T()
+  S = O({}, t), T()
 }
 class P extends(r = l.ZP.Store) {
   initialize() {
-    this.waitFor(f.ZP, u.ZP, E.Z, m.Z, p.Z, g.Z, v.Z), this.syncWith([_.Z], () => T())
+    this.waitFor(f.ZP, u.ZP, E.Z, g.Z, p.Z, m.Z, v.Z), this.syncWith([_.Z], () => T())
   }
   getActivities() {
-    return S
+    return I
   }
   getPrimaryActivity() {
-    return S[0]
+    return I[0]
   }
   getApplicationActivity(e) {
     return this.findActivity(t => t.application_id === e)
@@ -126,19 +126,19 @@ class P extends(r = l.ZP.Store) {
     return this.findActivity(e => e.type === b.IIU.CUSTOM_STATUS)
   }
   findActivity(e) {
-    return S.find(e)
+    return I.find(e)
   }
   getApplicationActivities() {
-    return I
+    return S
   }
   getActivityForPID(e) {
-    for (let [t, n] of Object.values(I))
+    for (let [t, n] of Object.values(S))
       if (t === e) return n;
     return null
   }
 }
 y(P, "displayName", "LocalActivityStore");
-let D = new P(c.Z, {
+let w = new P(c.Z, {
   OVERLAY_INITIALIZE: R,
   START_SESSION: N,
   LOCAL_ACTIVITY_UPDATE: A,

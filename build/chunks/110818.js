@@ -23,10 +23,10 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-var g = function(e) {
+var m = function(e) {
   return e.NORMAL = "normal", e.SPEED_START = "speed_start", e.SPEED_LOOP = "speed_loop", e.FINISH = "finish", e.IDLE = "idle", e
-}(g || {});
-let m = {
+}(m || {});
+let g = {
   normal: {
     BEG: 0,
     END: 600,
@@ -81,7 +81,7 @@ class E extends(r = l.PureComponent) {
       className: u()(p.sequencedAnimation, e),
       importData: this.importDefault,
       nextScene: i ? "idle" : t,
-      sceneSegments: m,
+      sceneSegments: g,
       onScenePlay: n,
       onSceneComplete: r,
       pauseWhileUnfocused: o,
@@ -89,7 +89,7 @@ class E extends(r = l.PureComponent) {
     })
   }
 }
-h(E, "Scenes", g);
+h(E, "Scenes", m);
 var v = function(e) {
   return e.NORMAL = "normal", e.SPEED_START = "speed_start", e.SPEED_LOOP = "speed_loop", e.FINISH = "finish", e.IDLE = "idle", e
 }(v || {});
@@ -160,7 +160,7 @@ h(y, "Scenes", v);
 var O = function(e) {
   return e.IDLE_ENTRY = "idle_entry", e.IDLE_LOOP = "idle_loop", e.BOOST_START = "boost_start", e.BOOST_LOOP = "boost_loop", e.BOOST_END = "boost_end", e.VICTORY = "victory", e.ERROR = "error", e
 }(O || {});
-let S = {
+let I = {
   idle_entry: {
     BEG: 0,
     END: 50
@@ -191,7 +191,7 @@ let S = {
     END: 375
   }
 };
-class I extends l.PureComponent {
+class S extends l.PureComponent {
   getStyle(e) {
     let {
       animation: t
@@ -324,10 +324,10 @@ class A extends(o = l.PureComponent) {
           className: p.tier2Foreground
         })]
       }) : (0, s.jsxs)(s.Fragment, {
-        children: [(0, s.jsx)(I, {
+        children: [(0, s.jsx)(S, {
           className: p.tier2Background,
           animation: this.backgroundAnimation
-        }), (0, s.jsx)(I, {
+        }), (0, s.jsx)(S, {
           className: p.tier2Foreground,
           animation: this.foregroundAnimation
         })]
@@ -335,7 +335,7 @@ class A extends(o = l.PureComponent) {
         className: p.sequencedAnimation,
         importData: this.importData,
         nextScene: n ? "idle_loop" : t,
-        sceneSegments: S,
+        sceneSegments: I,
         onScenePlay: this.handleScenePlay,
         onSceneComplete: r,
         pauseWhileUnfocused: !1,
@@ -412,7 +412,7 @@ let R = {
     WHITE: "#ebf0f7",
     PINK: "#fa6ef6"
   }),
-  D = [{
+  w = [{
     left: 29,
     top: 100,
     color: P.WHITE
@@ -437,7 +437,7 @@ let R = {
     top: 97,
     color: P.PINK
   }],
-  w = Object.freeze({
+  D = Object.freeze({
     SCALE_INITIAL: 0,
     SCALE_MIDDLE: 1,
     SCALE_END: 0,
@@ -458,13 +458,13 @@ let R = {
 function L(e) {
   let {
     animate: t
-  } = e, [n, r] = l.useState(0), i = (0, _.bYB)(D.length, D.map((e, i) => {
-    let o = i > 0 ? w.DELAY_STAGGER * i + Math.random() * (w.DELAY_MAX - w.DELAY_MIN) + w.DELAY_MIN : 0,
-      a = Math.random() * (w.SIZE_MAX - w.SIZE_MIN) + w.SIZE_MIN;
+  } = e, [n, r] = l.useState(0), i = (0, _.bYB)(w.length, w.map((e, i) => {
+    let o = i > 0 ? D.DELAY_STAGGER * i + Math.random() * (D.DELAY_MAX - D.DELAY_MIN) + D.DELAY_MIN : 0,
+      a = Math.random() * (D.SIZE_MAX - D.SIZE_MIN) + D.SIZE_MIN;
     return {
       from: {
-        scale: w.SCALE_INITIAL,
-        rotate: w.ROTATE_INITIAL,
+        scale: D.SCALE_INITIAL,
+        rotate: D.ROTATE_INITIAL,
         top: e.top,
         left: e.left,
         width: a,
@@ -472,34 +472,34 @@ function L(e) {
       },
       to: async e => {
         t ? (await e({
-          scale: w.SCALE_MIDDLE,
-          rotate: w.ROTATE_MIDDLE,
+          scale: D.SCALE_MIDDLE,
+          rotate: D.ROTATE_MIDDLE,
           delay: o,
           config: {
-            duration: w.DURATION_MIDDLE,
-            easing: w.EASING_MIDDLE
+            duration: D.DURATION_MIDDLE,
+            easing: D.EASING_MIDDLE
           }
         }), await e({
-          scale: w.SCALE_END,
-          rotate: w.ROTATE_END,
+          scale: D.SCALE_END,
+          rotate: D.ROTATE_END,
           config: {
-            duration: w.DURATION_END,
-            easing: w.EASING_END
+            duration: D.DURATION_END,
+            easing: D.EASING_END
           }
         }), await e({
-          scale: w.SCALE_INITIAL,
-          rotate: w.ROTATE_INITIAL,
+          scale: D.SCALE_INITIAL,
+          rotate: D.ROTATE_INITIAL,
           immediate: !0
-        }), i === D.length - 1 && r(n + 1)) : await e({
-          scale: w.SCALE_INITIAL,
-          rotate: w.ROTATE_INITIAL
+        }), i === w.length - 1 && r(n + 1)) : await e({
+          scale: D.SCALE_INITIAL,
+          rotate: D.ROTATE_INITIAL
         })
       }
     }
   }));
   return (0, s.jsx)(s.Fragment, {
     children: i.map((e, t) => {
-      let n = D[t];
+      let n = w[t];
       return (0, s.jsx)(d.animated.svg, {
         style: e,
         className: p.guildStar,

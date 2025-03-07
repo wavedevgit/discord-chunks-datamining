@@ -15,8 +15,8 @@ var r, i = n(200651),
   _ = n(372769),
   p = n(451478),
   h = n(956664),
-  g = n(153066),
-  m = n(783700);
+  m = n(153066),
+  g = n(783700);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,7 +59,7 @@ function y(e, t) {
 
 function O(e, t) {
   if (null == e) return {};
-  var n, r, i = S(e, t);
+  var n, r, i = I(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -67,14 +67,14 @@ function O(e, t) {
   return i
 }
 
-function S(e, t) {
+function I(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let I = {
+let S = {
     SMOL: "Smol",
     MINI: "Mini",
     SMALLER: "Smaller",
@@ -85,24 +85,24 @@ let I = {
     XLARGE: "XLarge"
   },
   T = {
-    [I.SMOL]: 16,
-    [I.MINI]: 20,
-    [I.SMALLER]: 24,
-    [I.SMALL]: 30,
-    [I.MEDIUM]: 40,
-    [I.LARGE]: 50,
-    [I.LARGER]: 64,
-    [I.XLARGE]: 100
+    [S.SMOL]: 16,
+    [S.MINI]: 20,
+    [S.SMALLER]: 24,
+    [S.SMALL]: 30,
+    [S.MEDIUM]: 40,
+    [S.LARGE]: 50,
+    [S.LARGER]: 64,
+    [S.XLARGE]: 100
   },
   N = {
-    [I.SMOL]: [10, 10, 8, 6, 6, 4],
-    [I.MINI]: [12, 12, 10, 10, 8, 6, 4],
-    [I.SMALLER]: [13, 13, 11, 11, 9, 7, 5],
-    [I.SMALL]: [14, 14, 12, 12, 10, 8, 6],
-    [I.MEDIUM]: [16, 16, 14, 14, 12, 10, 8],
-    [I.LARGE]: [18, 18, 16, 16, 14, 12, 10],
-    [I.LARGER]: [19, 19, 17, 17, 15, 13, 11],
-    [I.XLARGE]: [20, 20, 18, 18, 16, 14, 12]
+    [S.SMOL]: [10, 10, 8, 6, 6, 4],
+    [S.MINI]: [12, 12, 10, 10, 8, 6, 4],
+    [S.SMALLER]: [13, 13, 11, 11, 9, 7, 5],
+    [S.SMALL]: [14, 14, 12, 12, 10, 8, 6],
+    [S.MEDIUM]: [16, 16, 14, 14, 12, 10, 8],
+    [S.LARGE]: [18, 18, 16, 16, 14, 12, 10],
+    [S.LARGER]: [19, 19, 17, 17, 15, 13, 11],
+    [S.XLARGE]: [20, 20, 18, 18, 16, 14, 12]
   };
 class A extends o.PureComponent {
   renderAcronym() {
@@ -111,7 +111,7 @@ class A extends o.PureComponent {
       iconSrc: t
     } = this.props;
     return null != e.icon || null != t ? null : (0, i.jsx)("div", {
-      className: m.acronym,
+      className: g.acronym,
       children: e.acronym
     })
   }
@@ -124,7 +124,7 @@ class A extends o.PureComponent {
       badgeTooltipDelay: o
     } = this.props;
     return e && null != t.hasFeature ? (0, i.jsx)(_.Z, {
-      className: m.guildIconBadge,
+      className: g.guildIconBadge,
       guild: t,
       badgeStrokeColor: n,
       tooltipColor: r,
@@ -147,8 +147,8 @@ class A extends o.PureComponent {
         onClick: h,
         to: E,
         badgeStrokeColor: b,
-        animate: S,
-        tabIndex: I,
+        animate: I,
+        tabIndex: S,
         iconSrc: T,
         "aria-hidden": A
       } = n,
@@ -156,17 +156,17 @@ class A extends o.PureComponent {
       R = N[c],
       P = null != h ? d.P3F : "div";
     return (0, i.jsxs)(P, y(v({
-      className: s()(m.icon, o, (0, g.l)(m, "iconSize", c), {
-        [null !== (e = (0, g.l)(m, "iconActive", c)) && void 0 !== e ? e : ""]: l,
-        [m.iconInactive]: !l,
-        [m.noIcon]: null == r.icon
+      className: s()(g.icon, o, (0, m.l)(g, "iconSize", c), {
+        [null !== (e = (0, m.l)(g, "iconActive", c)) && void 0 !== e ? e : ""]: l,
+        [g.iconInactive]: !l,
+        [g.noIcon]: null == r.icon
       }),
       "aria-hidden": A,
       style: null == r.icon ? v({
         fontSize: (null !== (t = R[r.acronym.length]) && void 0 !== t ? t : R[R.length - 1]) * f
       }, u) : u,
       onClick: null != E || null == h ? void 0 : h,
-      tabIndex: I
+      tabIndex: S
     }, C), {
       children: [this.renderAcronym(), this.renderBadge()]
     }))
@@ -227,8 +227,8 @@ class R extends(r = o.PureComponent) {
     return (0, i.jsx)(C, v({}, this.props))
   }
 }
-E(R, "Sizes", I), E(R, "defaultProps", {
-  size: I.LARGE,
+E(R, "Sizes", S), E(R, "defaultProps", {
+  size: S.LARGE,
   textScale: 1,
   showBadge: !1,
   showTooltip: !1,

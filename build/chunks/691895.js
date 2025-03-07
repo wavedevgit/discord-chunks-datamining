@@ -19,8 +19,8 @@ function s(e) {
       logs: f,
       nativeLogs: _,
       serverTrace: p
-    } = r, h = 0 === c ? null !== (s = null === (o = i().find(f, e => e.log.indexOf("Logger loaded") >= 0)) || void 0 === o ? void 0 : o.timestamp) && void 0 !== s ? s : e : d, g = l(u(f, _, t, n), h), m = "Trace #".concat(c + 1, " started ").concat((0, a.Ye)(d), "\n").concat(g);
-    return null != p && (m += "\n Server trace for trace #".concat(c + 1).concat(p)), m
+    } = r, h = 0 === c ? null !== (s = null === (o = i().find(f, e => e.log.indexOf("Logger loaded") >= 0)) || void 0 === o ? void 0 : o.timestamp) && void 0 !== s ? s : e : d, m = l(u(f, _, t, n), h), g = "Trace #".concat(c + 1, " started ").concat((0, a.Ye)(d), "\n").concat(m);
+    return null != p && (g += "\n Server trace for trace #".concat(c + 1).concat(p)), g
   }).join("\n\n")
 }
 

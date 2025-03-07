@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120);
 var r = n(275726),
   i = n(904245),
@@ -24,7 +24,7 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class g extends o.Z {
+class m extends o.Z {
   handleVoiceStateUpdates(e) {
     let {
       voiceStates: t
@@ -53,4 +53,4 @@ class g extends o.Z {
     })
   }
 }
-let m = new g
+let g = new m

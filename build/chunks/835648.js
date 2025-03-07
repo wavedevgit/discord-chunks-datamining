@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(593618),
   p = n(594174),
   h = n(74538),
-  g = n(697426),
-  m = n(526617),
+  m = n(697426),
+  g = n(526617),
   E = n(474936),
   v = n(388032),
   b = n(13774);
@@ -44,7 +44,7 @@ function O(e) {
   return e
 }
 
-function S(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,8 +55,8 @@ function S(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -88,7 +88,7 @@ function R(e) {
     onClick: i,
     listItemProps: o
   } = e, s = T(e, ["icon", "isSelected", "onClick", "listItemProps"]);
-  return (0, r.jsx)(c.P3F, I(O({}, o, s), {
+  return (0, r.jsx)(c.P3F, S(O({}, o, s), {
     onClick: i,
     className: a()(b.categoryIcon, {
       [b.selected]: n
@@ -102,29 +102,29 @@ function R(e) {
 
 function P(e, t, n, i, o, a) {
   switch (e.categoryInfo.type) {
-    case g.bg.FAVORITES:
-      return (0, r.jsx)(R, I(O({}, i), {
+    case m.bg.FAVORITES:
+      return (0, r.jsx)(R, S(O({}, i), {
         icon: c.r7p,
         onClick: t,
         isSelected: n,
         listItemProps: o
       }), e.key);
-    case g.bg.RECENTLY_HEARD:
-      return (0, r.jsx)(R, I(O({}, i), {
+    case m.bg.RECENTLY_HEARD:
+      return (0, r.jsx)(R, S(O({}, i), {
         icon: c.T39,
         onClick: t,
         isSelected: n,
         listItemProps: o
       }), e.key);
-    case g.bg.FREQUENTLY_USED:
-      return (0, r.jsx)(R, I(O({}, i), {
+    case m.bg.FREQUENTLY_USED:
+      return (0, r.jsx)(R, S(O({}, i), {
         icon: c.IeX,
         onClick: t,
         isSelected: n,
         listItemProps: o
       }), e.key);
-    case g.bg.GUILD:
-      return (0, r.jsx)(c.P3F, I(O({}, o, i), {
+    case m.bg.GUILD:
+      return (0, r.jsx)(c.P3F, S(O({}, o, i), {
         className: b.category,
         onClick: t,
         children: (0, r.jsx)(u.Z, {
@@ -133,8 +133,8 @@ function P(e, t, n, i, o, a) {
           isLocked: a
         })
       }), e.key);
-    case g.bg.DEFAULTS:
-      return (0, r.jsx)(R, I(O({}, i), {
+    case m.bg.DEFAULTS:
+      return (0, r.jsx)(R, S(O({}, i), {
         icon: c.gw7,
         onClick: t,
         isSelected: n,
@@ -145,35 +145,35 @@ function P(e, t, n, i, o, a) {
   }
 }
 
-function D(e) {
+function w(e) {
   switch (e.categoryInfo.type) {
-    case g.bg.FAVORITES:
+    case m.bg.FAVORITES:
       return v.NW.string(v.t.k8fFjo);
-    case g.bg.RECENTLY_HEARD:
+    case m.bg.RECENTLY_HEARD:
       return v.NW.string(v.t["8i/+SE"]);
-    case g.bg.FREQUENTLY_USED:
+    case m.bg.FREQUENTLY_USED:
       return v.NW.string(v.t["+cGVV1"]);
-    case g.bg.GUILD:
+    case m.bg.GUILD:
       return (0, r.jsx)(_.K, {
         guild: e.categoryInfo.guild,
         includeActivity: !1
       });
-    case g.bg.DEFAULTS:
+    case m.bg.DEFAULTS:
       return v.NW.string(v.t.Rtvk9f)
   }
 }
 
-function w(e) {
+function D(e) {
   switch (e.categoryInfo.type) {
-    case g.bg.FAVORITES:
+    case m.bg.FAVORITES:
       return v.NW.string(v.t.k8fFjo);
-    case g.bg.RECENTLY_HEARD:
+    case m.bg.RECENTLY_HEARD:
       return v.NW.string(v.t["8i/+SE"]);
-    case g.bg.FREQUENTLY_USED:
+    case m.bg.FREQUENTLY_USED:
       return v.NW.string(v.t["+cGVV1"]);
-    case g.bg.GUILD:
+    case m.bg.GUILD:
       return e.categoryInfo.guild.name;
-    case g.bg.DEFAULTS:
+    case m.bg.DEFAULTS:
       return v.NW.string(v.t.Rtvk9f)
   }
 }
@@ -187,8 +187,8 @@ function L(e) {
     isNitroLocked: a
   } = e, l = (0, s.JA)("soundboard_guild_".concat(n));
   return (0, r.jsx)(c.ua7, {
-    text: D(t),
-    "aria-label": w(t),
+    text: w(t),
+    "aria-label": D(t),
     position: "right",
     children: e => P(t, i, o, e, l, a)
   })
@@ -202,8 +202,8 @@ function x(e) {
     listPadding: a = A,
     guildId: s,
     inExpressionPicker: c
-  } = e, u = i.useRef(null), _ = (0, l.e7)([p.default], () => p.default.getCurrentUser()), g = (0, h.I5)(_, E.p9.TIER_2), v = i.useCallback((e, t, n, i) => {
-    let a = o && (0, m.O)(e.categoryInfo, g, s);
+  } = e, u = i.useRef(null), _ = (0, l.e7)([p.default], () => p.default.getCurrentUser()), m = (0, h.I5)(_, E.p9.TIER_2), v = i.useCallback((e, t, n, i) => {
+    let a = o && (0, g.O)(e.categoryInfo, m, s);
     return (0, r.jsx)(L, {
       category: e,
       categoryIndex: t,
@@ -211,7 +211,7 @@ function x(e) {
       isSelected: i,
       isNitroLocked: a
     })
-  }, [s, o, g]);
+  }, [s, o, m]);
   return (0, r.jsx)(f.Z, {
     className: c ? b.expressionPickerCategoryList : b.categoryList,
     categoryListRef: u,

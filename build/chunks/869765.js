@@ -28,8 +28,8 @@ var p = function(e) {
 let h = Object.freeze({
     state: 1
   }),
-  g = new Set;
-class m {
+  m = new Set;
+class g {
   handleCacheDisposed(e, t) {
     this._cachedMessageIds.has(e) && (this._cachedMessageIds = new Set(this._cachedMessageIds), this._cachedMessageIds.delete(e))
   }
@@ -63,7 +63,7 @@ class E {
   }
   set(e, t, n) {
     let r = this._channelCaches.get(e);
-    null == r && (r = new m, this._channelCaches.set(e, r)), r.set(t, n)
+    null == r && (r = new g, this._channelCaches.set(e, r)), r.set(t, n)
   }
   updateExistingMessageIfCached(e) {
     let t = this._channelCaches.get(e.channel_id);
@@ -134,14 +134,14 @@ function O(e) {
   return y(t, e => b(e))
 }
 
-function S(e) {
+function I(e) {
   let {
     messages: t
   } = e;
   return y(Object.values(t), e => y(Object.values(e), e => b(e)))
 }
 
-function I(e) {
+function S(e) {
   let {
     messages: t
   } = e;
@@ -197,7 +197,7 @@ function P(e, t) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     id: t,
     channelId: n
@@ -205,7 +205,7 @@ function D(e) {
   return P(n, t)
 }
 
-function w(e) {
+function D(e) {
   let {
     ids: t,
     channelId: n
@@ -259,25 +259,25 @@ class j extends(r = a.ZP.Store) {
   }
   getReplyIdsForChannel(e) {
     let t;
-    return null != e && (t = v.getCachedMessageIdsForChannel(e)), null != t ? t : g
+    return null != e && (t = v.getCachedMessageIdsForChannel(e)), null != t ? t : m
   }
 }
 _(j, "displayName", "ReferencedMessageStore");
 let U = new j(s.Z, {
-  CACHE_LOADED: S,
+  CACHE_LOADED: I,
   LOCAL_MESSAGES_LOADED: O,
   LOAD_MESSAGES_SUCCESS: O,
   LOAD_MESSAGES_AROUND_SUCCESS: O,
-  SEARCH_FINISH: I,
-  MOD_VIEW_SEARCH_FINISH: I,
+  SEARCH_FINISH: S,
+  MOD_VIEW_SEARCH_FINISH: S,
   LOAD_THREADS_SUCCESS: M,
   LOAD_ARCHIVED_THREADS_SUCCESS: M,
   MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: N,
   LOAD_FORUM_POSTS: k,
   MESSAGE_CREATE: T,
   MESSAGE_UPDATE: A,
-  MESSAGE_DELETE: D,
-  MESSAGE_DELETE_BULK: w,
+  MESSAGE_DELETE: w,
+  MESSAGE_DELETE_BULK: D,
   CREATE_PENDING_REPLY: L,
   CHANNEL_DELETE: C,
   THREAD_DELETE: C,

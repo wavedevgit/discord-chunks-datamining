@@ -25,7 +25,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function m(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -77,29 +77,29 @@ let y = function(e) {
     style: t,
     src: n,
     backgroundSrc: h,
-    userId: m,
+    userId: g,
     pulseSpeakingIndicator: b = !1,
     speaking: y = !1
   } = e, O = v(e, ["style", "src", "backgroundSrc", "userId", "pulseSpeakingIndicator", "speaking"]);
-  let S = null != h ? h : n,
-    I = (0, s.ZP)(S, o.Z.unsafe_rawColors.PRIMARY_800.css),
+  let I = null != h ? h : n,
+    S = (0, s.ZP)(I, o.Z.unsafe_rawColors.PRIMARY_800.css),
     T = (0, l.c)(!0, "VideoBackground-web").enabled,
-    N = (0, u.ZP)(null != m ? m : _.lds),
+    N = (0, u.ZP)(null != g ? g : _.lds),
     A = null == N ? void 0 : N.getBannerURL({
       size: 1024,
       canAnimate: f.QK.getSetting()
     });
   if (i.useEffect(() => {
-      null != m && T && (0, d.Z)(m, void 0, {
+      null != g && T && (0, d.Z)(g, void 0, {
         dispatchWait: !0
       })
-    }, [T, m]), null == n) return null;
-  let C = (0, r.jsx)(a.qEK, g({
+    }, [T, g]), null == n) return null;
+  let C = (0, r.jsx)(a.qEK, m({
       className: p.avatarWrapper,
       src: n
     }, O)),
-    R = E(g({}, t), {
-      backgroundColor: I
+    R = E(m({}, t), {
+      backgroundColor: S
     });
   return null != A && y && T && (R.backgroundImage = "url(".concat(A, ")"), R.backgroundSize = "cover"), (0, r.jsx)("div", {
     style: R,

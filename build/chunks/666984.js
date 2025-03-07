@@ -21,33 +21,33 @@ function _(e) {
     user: _,
     activity: p,
     onAction: h
-  } = e, g = (0, s.Ih)(p, _), m = (0, s.Fe)(p, _);
+  } = e, m = (0, s.Ih)(p, _), g = (0, s.Fe)(p, _);
   return (0, a.Z)(p) && ((0, o.Z)(p, u.xjy.PLAY) || (0, o.Z)(p, u.xjy.SYNC)) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.ef, {
       icon: i.iOO,
-      tooltipText: null !== (t = m.tooltip) && void 0 !== t ? t : d.NW.string(d.t.eU3inJ),
-      disabled: m.disabled,
-      submitting: m.loading,
+      tooltipText: null !== (t = g.tooltip) && void 0 !== t ? t : d.NW.string(d.t.eU3inJ),
+      disabled: g.disabled,
+      submitting: g.loading,
       fullWidth: !0,
       onClick: e => {
         e.stopPropagation(), null == h || h({
           action: "PRESS_LISTEN_ALONG_ON_SPOTIFY_BUTTON"
-        }), m.onClick()
+        }), g.onClick()
       }
     }), (0, r.jsx)(i.DY3, {
-      text: g.tooltip,
+      text: m.tooltip,
       className: f.primaryButton,
       children: (0, r.jsx)(c.tG, {
         icon: () => (0, r.jsx)(l.Z, {}),
-        text: null !== (n = g.label) && void 0 !== n ? n : d.NW.string(d.t.rRffNz),
-        disabled: g.disabled,
-        submitting: g.loading,
+        text: null !== (n = m.label) && void 0 !== n ? n : d.NW.string(d.t.rRffNz),
+        disabled: m.disabled,
+        submitting: m.loading,
         wrapperClassName: f.primaryButton,
         fullWidth: !0,
         onClick: e => {
           null == e || e.stopPropagation(), null == h || h({
             action: "PRESS_PLAY_ON_SPOTIFY_BUTTON"
-          }), g.onClick()
+          }), m.onClick()
         }
       })
     })]

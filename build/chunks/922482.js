@@ -19,9 +19,9 @@ var r = n(749210),
   _ = n(881824),
   p = n(107511),
   h = n(146085),
-  g = n(96150);
+  m = n(96150);
 
-function m(e, t) {
+function g(e, t) {
   return !!d.Z.can(h.gl, e) && (!_.Zl(e.id) || t === e.id || (_.vu(e, () => b(e, !0)), !1))
 }
 
@@ -34,7 +34,7 @@ function E(e, t) {
       lurker: !0
     }), u.Z.addConditionalChangeListener(() => {
       let e = c.Z.getChannel(t);
-      return null == e || (v(e), g.Z.initialize(), i(e), !1)
+      return null == e || (v(e), m.Z.initialize(), i(e), !1)
     })
   })
 }
@@ -42,7 +42,7 @@ function E(e, t) {
 function v(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     n = f.Z.getVoiceChannelId();
-  if (!t && !m(e, n) || (p.Z.initialize(), i.default.selectVoiceChannel(e.id), (n = f.Z.getVoiceChannelId()) !== e.id)) return !1;
+  if (!t && !g(e, n) || (p.Z.initialize(), i.default.selectVoiceChannel(e.id), (n = f.Z.getVoiceChannelId()) !== e.id)) return !1;
   let r = l.Z.getAllApplicationStreamsForChannel(e.id);
   return r.length > 0 && (0, o.rn)(r[0], {
     noFocus: !1

@@ -24,11 +24,11 @@ function h(e) {
   }), t
 }
 
-function g(e) {
+function m(e) {
   return e && 1 === e.nodeType
 }
 
-function m(e, t, n) {
+function g(e, t, n) {
   var r = e[t];
   return null == r && void 0 !== n ? n : r
 }
@@ -48,32 +48,32 @@ e.exports = function(e) {
   }
   var E = e.reporter;
   E || (E = l(!1 === E));
-  var v = m(e, "batchProcessor", u({
+  var v = g(e, "batchProcessor", u({
       reporter: E
     })),
     b = {};
-  b.callOnAdd = !!m(e, "callOnAdd", !0), b.debug = !!m(e, "debug", !1);
+  b.callOnAdd = !!g(e, "callOnAdd", !0), b.debug = !!g(e, "debug", !1);
   var y = o(t),
     O = i({
       stateHandler: d
     }),
-    S = m(e, "strategy", "object"),
-    I = m(e, "important", !1),
+    I = g(e, "strategy", "object"),
+    S = g(e, "important", !1),
     T = {
       reporter: E,
       batchProcessor: v,
       stateHandler: d,
       idHandler: t,
-      important: I
+      important: S
     };
-  if ("scroll" === S && (c.isLegacyOpera() ? (E.warn("Scroll strategy is not supported on legacy Opera. Changing to object strategy."), S = "object") : c.isIE(9) && (E.warn("Scroll strategy is not supported on IE9. Changing to object strategy."), S = "object")), "scroll" === S) n = _(T);
-  else if ("object" === S) n = f(T);
-  else throw Error("Invalid strategy name: " + S);
+  if ("scroll" === I && (c.isLegacyOpera() ? (E.warn("Scroll strategy is not supported on legacy Opera. Changing to object strategy."), I = "object") : c.isIE(9) && (E.warn("Scroll strategy is not supported on IE9. Changing to object strategy."), I = "object")), "scroll" === I) n = _(T);
+  else if ("object" === I) n = f(T);
+  else throw Error("Invalid strategy name: " + I);
   var N = {};
 
   function A(e) {
     if (!e) return E.error("At least one element is required.");
-    if (g(e)) e = [e];
+    if (m(e)) e = [e];
     else {
       if (!p(e)) return E.error("Invalid arguments. Must be a DOM element or a collection of DOM elements.");
       e = h(e)
@@ -99,15 +99,15 @@ e.exports = function(e) {
       }
       if (o || (o = i, i = e, e = {}), !i) throw Error("At least one element required.");
       if (!o) throw Error("Listener required.");
-      if (g(i)) i = [i];
+      if (m(i)) i = [i];
       else {
         if (!p(i)) return E.error("Invalid arguments. Must be a DOM element or a collection of DOM elements.");
         i = h(i)
       }
       var l = 0,
-        c = m(e, "callOnAdd", b.callOnAdd),
-        u = m(e, "onReady", function() {}),
-        f = m(e, "debug", b.debug);
+        c = g(e, "callOnAdd", b.callOnAdd),
+        u = g(e, "onReady", function() {}),
+        f = g(e, "debug", b.debug);
       r(i, function(e) {
         d.getState(e) || (d.initState(e), t.set(e));
         var _ = t.get(e);
@@ -120,7 +120,7 @@ e.exports = function(e) {
           }
           return f && E.log(_, "Making detectable..."), O.markBusy(e, !0), n.makeDetectable({
             debug: f,
-            important: I
+            important: S
           }, e, function(e) {
             if (f && E.log(_, "onElementDetectable"), d.getState(e)) {
               O.markAsDetectable(e), O.markBusy(e, !1), n.addListener(e, a), s(c, e, o);

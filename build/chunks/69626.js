@@ -17,15 +17,15 @@ var r = n(200651),
   _ = n(592125),
   p = n(703558),
   h = n(496675),
-  g = n(944486),
-  m = n(585483),
+  m = n(944486),
+  g = n(585483),
   E = n(981631),
   v = n(689079),
   b = n(665692),
   y = n(388032),
   O = n(302432);
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,14 +34,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -78,7 +78,7 @@ function A(e, t, n, i, o) {
     }, n, o);
     if (null != a && a.untranslatedName === t) {
       var d, f;
-      m.S.dispatch(E.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+      g.S.dispatch(E.CkL.FOCUS_CHANNEL_TEXT_AREA, {
         channelId: e
       });
       let t = null != u ? {
@@ -100,14 +100,14 @@ function A(e, t, n, i, o) {
       })
     }
   };
-  "" !== p.Z.getDraft(e, p.d.ChannelMessage) ? (0, a.h7j)(t => (0, r.jsx)(a.ConfirmModal, N(I({
+  "" !== p.Z.getDraft(e, p.d.ChannelMessage) ? (0, a.h7j)(t => (0, r.jsx)(a.ConfirmModal, N(S({
     header: y.NW.string(y.t.pe26Cg),
     confirmText: y.NW.string(y.t.VkKicX),
     cancelText: y.NW.string(y.t["ETE/oK"]),
     onConfirm: () => u(),
     confirmButtonColor: a.zxk.Colors.BRAND,
     onCloseCallback: () => {
-      m.S.dispatch(E.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+      g.S.dispatch(E.CkL.FOCUS_CHANNEL_TEXT_AREA, {
         channelId: e
       })
     }
@@ -125,31 +125,31 @@ function C(e) {
     node: n,
     output: s,
     state: p
-  } = e, m = (0, o.e7)([_.Z, g.Z], () => {
+  } = e, g = (0, o.e7)([_.Z, m.Z], () => {
     var e;
-    return _.Z.getChannel(null !== (e = n.channelId) && void 0 !== e ? e : g.Z.getChannelId())
+    return _.Z.getChannel(null !== (e = n.channelId) && void 0 !== e ? e : m.Z.getChannelId())
   }, [n.channelId]), {
     hasSendMessagePerm: y,
     hasUseAppCommandsPerm: O
   } = (0, o.cj)([h.Z], () => ({
-    hasSendMessagePerm: h.Z.can(E.Plq.SEND_MESSAGES, m),
-    hasUseAppCommandsPerm: h.Z.can(E.Plq.USE_APPLICATION_COMMANDS, m)
-  })), S = void 0 !== m ? {
+    hasSendMessagePerm: h.Z.can(E.Plq.SEND_MESSAGES, g),
+    hasUseAppCommandsPerm: h.Z.can(E.Plq.USE_APPLICATION_COMMANDS, g)
+  })), I = void 0 !== g ? {
     type: "channel",
-    channel: m
+    channel: g
   } : {
     type: "contextless"
   }, {
-    command: I
-  } = l.YZ(S, null !== (t = n.commandKey) && void 0 !== t ? t : ""), T = f.dN.useSetting(), N = i.useMemo(() => {
-    if (null == I || null == m || I.untranslatedName !== n.commandName || T) return !1;
-    let e = m.isPrivate();
-    if ((0, d.xl)(m) || !e && !y) return !1;
-    let t = (null == I ? void 0 : I.applicationId) === v.bi.BUILT_IN;
+    command: S
+  } = l.YZ(I, null !== (t = n.commandKey) && void 0 !== t ? t : ""), T = f.dN.useSetting(), N = i.useMemo(() => {
+    if (null == S || null == g || S.untranslatedName !== n.commandName || T) return !1;
+    let e = g.isPrivate();
+    if ((0, d.xl)(g) || !e && !y) return !1;
+    let t = (null == S ? void 0 : S.applicationId) === v.bi.BUILT_IN;
     return !!e || !!t || !!O
-  }, [m, I, y, O, n.commandName, T]), C = i.useCallback(e => {
-    null == e || e.stopPropagation(), null != m && null != n.commandName && null != n.commandKey && A(m.id, n.commandName, n.commandKey, c.Vh.MENTION)
-  }, [m, n.commandKey, n.commandName]);
+  }, [g, S, y, O, n.commandName, T]), C = i.useCallback(e => {
+    null == e || e.stopPropagation(), null != g && null != n.commandName && null != n.commandKey && A(g.id, n.commandName, n.commandKey, c.Vh.MENTION)
+  }, [g, n.commandKey, n.commandName]);
   return N ? (0, r.jsx)(a.ua7, {
     text: n.output,
     position: "top",
@@ -178,7 +178,7 @@ function R(e) {
     commandDescription: i,
     applicationId: s,
     onClick: l
-  } = e, u = (0, o.e7)([g.Z], () => g.Z.getChannelId()), d = e => {
+  } = e, u = (0, o.e7)([m.Z], () => m.Z.getChannelId()), d = e => {
     null == e || e.stopPropagation(), A(u, n, t, c.Vh.POPULAR_COMMANDS, s), null == l || l(t)
   };
   return (0, r.jsx)(a.ua7, {

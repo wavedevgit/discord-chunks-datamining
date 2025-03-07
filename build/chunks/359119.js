@@ -58,24 +58,24 @@ let _ = [],
   p = {},
   h = new Set;
 
-function g(e) {
+function m(e) {
   return 2 === e.type || 3 === e.type
 }
 
-function m(e) {
+function g(e) {
   let {
     safetyWarnings: t
   } = e;
-  null != t && (p[e.id] = t, t.some(e => g(e) && null != e.dismiss_timestamp && !N(e.dismiss_timestamp)) ? h.add(e.id) : h.delete(e.id)), null == t && (null != p[e.id] && delete p[e.id], h.delete(e.id))
+  null != t && (p[e.id] = t, t.some(e => m(e) && null != e.dismiss_timestamp && !N(e.dismiss_timestamp)) ? h.add(e.id) : h.delete(e.id)), null == t && (null != p[e.id] && delete p[e.id], h.delete(e.id))
 }
 
 function E(e) {
-  m(e.channel)
+  g(e.channel)
 }
 
 function v(e) {
   e.channels.forEach(e => {
-    m(e)
+    g(e)
   })
 }
 
@@ -106,7 +106,7 @@ function O(e) {
   })))
 }
 
-function S(e) {
+function I(e) {
   let {
     channelId: t,
     warningIds: n
@@ -118,7 +118,7 @@ function S(e) {
   }) : e)
 }
 
-function I(e) {
+function S(e) {
   let {
     channelId: t
   } = e;
@@ -127,7 +127,7 @@ function I(e) {
 
 function T() {
   p = {}, Object.values(o.Z.getMutablePrivateChannels()).forEach(e => {
-    m(e)
+    g(e)
   })
 }
 
@@ -158,6 +158,6 @@ let C = new A(i.Z, {
   CONNECTION_OPEN_SUPPLEMENTAL: T,
   CHANNEL_SAFETY_WARNING_FEEDBACK: y,
   CLEAR_CHANNEL_SAFETY_WARNINGS: O,
-  DISMISS_CHANNEL_SAFETY_WARNINGS: S,
-  ACKNOWLEDGE_CHANNEL_SAFETY_WARNING_TOOLTIP: I
+  DISMISS_CHANNEL_SAFETY_WARNINGS: I,
+  ACKNOWLEDGE_CHANNEL_SAFETY_WARNING_TOOLTIP: S
 })

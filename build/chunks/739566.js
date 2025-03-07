@@ -2,11 +2,11 @@
 "use strict";
 n.d(t, {
   JZ: () => h,
-  Sw: () => g,
+  Sw: () => m,
   Uj: () => _,
   ZH: () => p,
   ZP: () => f,
-  ij: () => m
+  ij: () => g
 });
 var r = n(512722),
   i = n.n(r),
@@ -33,7 +33,7 @@ function _(e) {
     p = d.ZP.useName((null == e ? void 0 : e.author.bot) ? null == e ? void 0 : e.author : _),
     {
       guild: h,
-      guildRoles: g
+      guildRoles: m
     } = (0, o.cj)([l.Z], () => {
       let e = l.Z.getGuild(i),
         t = null != e ? l.Z.getRoles(e.id) : void 0;
@@ -42,29 +42,29 @@ function _(e) {
         guildRoles: t
       }
     }, [i]),
-    m = (0, o.e7)([c.Z], () => null != r && (null == n ? void 0 : n.isPrivate()) ? c.Z.getNickname(r) : null);
+    g = (0, o.e7)([c.Z], () => null != r && (null == n ? void 0 : n.isPrivate()) ? c.Z.getNickname(r) : null);
   return null == e ? null : E({
     user: e.author,
     channel: n,
     guild: h,
-    guildRoles: g,
+    guildRoles: m,
     userName: p,
     member: f,
-    friendNickname: m
+    friendNickname: g
   })
 }
 
 function p(e) {
   let t = a.Z.getChannel(e.channel_id);
-  return m(e.author, t)
+  return g(e.author, t)
 }
 
 function h(e, t) {
-  let n = g(e, t);
+  let n = m(e, t);
   return i()(null != n, "Result cannot be null because user and channel are not null"), n
 }
 
-function g(e, t) {
+function m(e, t) {
   let n = null == e ? void 0 : e.id,
     r = null == t ? void 0 : t.guild_id,
     i = (0, o.e7)([s.ZP], () => null == r || null == n ? null : s.ZP.getMember(r, n)),
@@ -92,7 +92,7 @@ function g(e, t) {
   })
 }
 
-function m(e, t) {
+function g(e, t) {
   let n = null == e ? void 0 : e.id,
     r = null == t ? void 0 : t.guild_id,
     i = l.Z.getGuild(r),

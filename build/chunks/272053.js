@@ -16,7 +16,7 @@ var r, i = n(348327),
   p = n(246946),
   h = n(981631);
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,14 +24,14 @@ function g(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let m = "33kozedd0zs6fbauka98psnc7zwom2s",
+let g = "33kozedd0zs6fbauka98psnc7zwom2s",
   E = +f.Z.Millis.MINUTE,
   v = e => "https://youtube.com/watch?v=".concat(e),
   b = 5 * f.Z.Millis.MINUTE,
   y = "https://api.twitch.tv/helix",
   O = /live_user_(.*)-\{width\}/,
-  S = 128,
-  I = null,
+  I = 128,
+  S = null,
   T = 0,
   N = null,
   A = new Set,
@@ -47,13 +47,13 @@ function P(e, t, n) {
     url: "".concat(y).concat(e),
     query: t,
     headers: {
-      "Client-ID": m,
+      "Client-ID": g,
       Authorization: "Bearer ".concat(n)
     },
     rejectWithError: !1
   })
 }
-async function D(e, t) {
+async function w(e, t) {
   var n;
   let r = C[e];
   if (null != r) return r;
@@ -66,7 +66,7 @@ async function D(e, t) {
   }, t), o = null === (n = i[0]) || void 0 === n ? void 0 : n.name;
   return C[e] = o, o
 }
-class w {
+class D {
   start() {
     this._started || (this._started = !0, _.Z.isFetching() ? c.Z.fetch() : this._check())
   }
@@ -96,15 +96,15 @@ class w {
         title: c
       } = a, f = {
         large_image: null != s && null !== (r = (0, d.f)(h.ABu.TWITCH, s)) && void 0 !== r ? r : void 0
-      }, _ = await D(l, t), p = u.Z.get(h.ABu.TWITCH), g = null !== (i = R(s)) && void 0 !== i ? i : e.name, m = null != c && "" !== c ? c.slice(0, S) : void 0, E = null != _ && "" !== _ ? _.slice(0, S) : void 0;
+      }, _ = await w(l, t), p = u.Z.get(h.ABu.TWITCH), m = null !== (i = R(s)) && void 0 !== i ? i : e.name, g = null != c && "" !== c ? c.slice(0, I) : void 0, E = null != _ && "" !== _ ? _.slice(0, I) : void 0;
       return {
         url: null === (n = p.getPlatformUserUrl) || void 0 === n ? void 0 : n.call(p, {
           id: e.id,
-          name: g
+          name: m
         }),
         name: p.name,
         assets: f,
-        details: m,
+        details: g,
         state: E
       }
     } catch (n) {
@@ -143,7 +143,7 @@ class w {
         }
       } = r[0], l = {
         large_image: null !== (n = (0, d.f)(h.ABu.YOUTUBE, a.high.url)) && void 0 !== n ? n : void 0
-      }, c = null != o && "" !== o ? o.slice(0, S) : void 0;
+      }, c = null != o && "" !== o ? o.slice(0, I) : void 0;
       return N = {
         url: v(i),
         name: u.Z.get(h.ABu.YOUTUBE).name,
@@ -178,10 +178,10 @@ class w {
     this._started && (this._nextCheck = setTimeout(() => this._check(), E))
   }
   constructor() {
-    g(this, "_nextCheck", void 0), g(this, "_started", void 0), this._started = !1
+    m(this, "_nextCheck", void 0), m(this, "_started", void 0), this._started = !1
   }
 }
-let L = new w;
+let L = new D;
 
 function x() {
   p.Z.enabled ? L.start() : L.stop()
@@ -189,18 +189,18 @@ function x() {
 
 function M(e) {
   var t;
-  if (o()(e.stream, I)) return !1;
-  I = null !== (t = e.stream) && void 0 !== t ? t : null
+  if (o()(e.stream, S)) return !1;
+  S = null !== (t = e.stream) && void 0 !== t ? t : null
 }
 class k extends(r = a.ZP.Store) {
   initialize() {
     x(), this.waitFor(_.Z), this.syncWith([p.Z], x)
   }
   getStream() {
-    return I
+    return S
   }
 }
-g(k, "displayName", "ExternalStreamingStore");
+m(k, "displayName", "ExternalStreamingStore");
 let j = new k(l.Z, {
   STREAMING_UPDATE: M,
   USER_CONNECTIONS_UPDATE: () => L._check()

@@ -41,11 +41,11 @@ function h(e) {
   }
 }
 
-function g(e) {
+function m(e) {
   delete d[e], u === e && (u = null)
 }
 
-function m(e) {
+function g(e) {
   let {
     guildJoinRequests: t
   } = e;
@@ -63,11 +63,11 @@ function E(e) {
     guildId: n
   } = e;
   if (null == t) {
-    g(n);
+    m(n);
     return
   }
   let r = h(t);
-  (0, l.d3)(r) ? g(n): d[n] = r
+  (0, l.d3)(r) ? m(n): d[n] = r
 }
 
 function v(e) {
@@ -79,21 +79,21 @@ function v(e) {
   let r = h(n),
     i = s.default.getCurrentUser();
   if (null != i && r.userId !== i.id) return !1;
-  (0, l.d3)(r) ? g(t): d[t] = r
+  (0, l.d3)(r) ? m(t): d[t] = r
 }
 
 function b(e) {
   let {
     guildId: t
   } = e;
-  g(t)
+  m(t)
 }
 
 function y(e) {
   let {
     guild: t
   } = e;
-  g(t.id)
+  m(t.id)
 }
 
 function O(e) {
@@ -125,7 +125,7 @@ function O(e) {
   }
 }
 
-function S(e) {
+function I(e) {
   let {
     guilds: t
   } = e;
@@ -147,7 +147,7 @@ function S(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     guildId: t,
     cooldown: n
@@ -182,7 +182,7 @@ function N(e) {
   let {
     guildId: t
   } = e;
-  g(t)
+  m(t)
 }
 
 function A(e) {
@@ -217,17 +217,17 @@ class R extends(r = i.ZP.Store) {
 }
 c(R, "displayName", "UserGuildJoinRequestStore");
 let P = new R(o.Z, {
-  CONNECTION_OPEN: m,
+  CONNECTION_OPEN: g,
   GUILD_JOIN_REQUEST_UPDATE: v,
   GUILD_JOIN_REQUEST_CREATE: v,
   GUILD_JOIN_REQUEST_DELETE: b,
   USER_GUILD_JOIN_REQUEST_UPDATE: E,
   GUILD_DELETE: y,
-  USER_JOIN_REQUEST_GUILDS_FETCH: S,
+  USER_JOIN_REQUEST_GUILDS_FETCH: I,
   MEMBER_VERIFICATION_FORM_UPDATE: T,
   INVITE_ACCEPT_SUCCESS: O,
   ACK_APPROVED_GUILD_JOIN_REQUEST: N,
   USER_GUILD_JOIN_REQUEST_COACHMARK_SHOW: A,
   USER_GUILD_JOIN_REQUEST_COACHMARK_CLEAR: C,
-  USER_GUILD_JOIN_REQUEST_COOLDOWN_FETCH: I
+  USER_GUILD_JOIN_REQUEST_COOLDOWN_FETCH: S
 })

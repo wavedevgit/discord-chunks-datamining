@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  o: () => g
+  o: () => m
 }), n(47120);
 var r, i = n(200651),
   o = n(192379),
@@ -53,7 +53,7 @@ let h = {
   friction: 7,
   tension: 60
 };
-class g extends(r = o.Component) {
+class m extends(r = o.Component) {
   componentWillAppear(e) {
     this.animateTo(1).start(e)
   }
@@ -100,4 +100,4 @@ class g extends(r = o.Component) {
     super(...e), d(this, "animation", new l.Z.Value(0))
   }
 }
-d(g, "contextType", c.Sfi)
+d(m, "contextType", c.Sfi)

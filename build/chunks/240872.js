@@ -60,8 +60,8 @@ let d = {
       onCloseCallback: _,
       secondaryConfirmText: p,
       onConfirmSecondary: h,
-      className: g,
-      titleClassName: m,
+      className: m,
+      titleClassName: g,
       contextKey: E
     } = e;
     (0, i.h7)(e => (0, r.jsx)(o.default, u(l({}, e), {
@@ -74,8 +74,8 @@ let d = {
       onCancel: f,
       secondaryConfirmText: p,
       onConfirmSecondary: h,
-      className: g,
-      titleClassName: m
+      className: m,
+      titleClassName: g
     })), {
       onCloseCallback: _
     }, E)

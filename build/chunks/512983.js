@@ -81,8 +81,8 @@ function h(e) {
     disabled: _,
     required: p = !1,
     error: h,
-    errorId: g
-  } = e, m = f(e, ["tag", "children", "className", "faded", "disabled", "required", "error", "errorId"]);
+    errorId: m
+  } = e, g = f(e, ["tag", "children", "className", "faded", "disabled", "required", "error", "errorId"]);
   switch (n) {
     case "legend":
     case "label":
@@ -98,12 +98,12 @@ function h(e) {
       [s.disabled]: _,
       [s.error]: null != h
     })
-  }, m), {
+  }, g), {
     children: [i, p && null == h ? (0, r.jsx)("span", {
       className: s.required,
       children: "*"
     }) : null, null != h ? (0, r.jsxs)("span", {
-      id: g,
+      id: m,
       className: s.errorMessage,
       children: [null != i ? (0, r.jsx)("span", {
         className: s.errorSeparator,

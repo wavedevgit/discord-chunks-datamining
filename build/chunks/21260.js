@@ -71,7 +71,7 @@ function h(e, t) {
   return i
 }
 
-function g(e) {
+function m(e) {
   let {
     items: t,
     maxLines: n,
@@ -94,7 +94,7 @@ function g(e) {
   return c
 }
 
-function m() {
+function g() {
   let [e, t] = i.useState(0), n = i.useRef(null), r = new Map, o = new ResizeObserver(e => {
     e.forEach(e => {
       var t;
@@ -133,7 +133,7 @@ function E(e) {
     var e;
     if (null == d.current) return;
     l.current.length = n.length, c.current = null !== (e = d.current.getBoundingClientRect().width) && void 0 !== e ? e : 0;
-    let i = g({
+    let i = m({
       items: n,
       maxLines: r,
       itemGapPx: t,
@@ -199,10 +199,10 @@ function O(e) {
   } = e, {
     ref: f,
     width: _
-  } = m(), {
+  } = g(), {
     lastVisibleIndex: p,
     onItemLayout: h,
-    overflowItemsRef: g
+    overflowItemsRef: m
   } = E({
     items: n,
     itemGapPx: s,
@@ -211,7 +211,7 @@ function O(e) {
   }), O = i.useCallback(e => (0, r.jsx)(v, {
     items: e,
     renderItem: o
-  }), [o]), S = null != d ? d : O, I = i.useMemo(() => n.slice(0, p + 1), [n, p]), T = i.useMemo(() => n.slice(p + 1), [n, p]);
+  }), [o]), I = null != d ? d : O, S = i.useMemo(() => n.slice(0, p + 1), [n, p]), T = i.useMemo(() => n.slice(p + 1), [n, p]);
   return (0, r.jsxs)("div", {
     className: a()(t, c.items),
     ref: f,
@@ -227,11 +227,11 @@ function O(e) {
         }, y(e)))
       }), (0, r.jsx)("div", {
         className: c.overflowMeasurement,
-        ref: g,
+        ref: m,
         children: o(l.NW.formatToPlainString(l.t.vGclWl, {
           count: Number("1".concat(n.length))
         }))
       })]
-    }), I.map(o), T.length > 0 && S(T)]
+    }), S.map(o), T.length > 0 && I(T)]
   })
 }

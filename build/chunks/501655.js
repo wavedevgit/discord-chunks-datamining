@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ui: () => I,
+  Ui: () => S,
   ZP: () => R,
-  pV: () => S
+  pV: () => I
 }), n(653041), n(47120);
 var r = n(759174),
   i = n(933546),
@@ -18,8 +18,8 @@ var r = n(759174),
   _ = n(938475),
   p = n(5192),
   h = n(88751),
-  g = n(427679),
-  m = n(590415),
+  m = n(427679),
+  g = n(590415),
   E = n(974609);
 
 function v(e, t, n) {
@@ -60,10 +60,10 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var S = function(e) {
+var I = function(e) {
     return e.SPEAKER = "SPEAKER", e.AUDIENCE = "AUDIENCE", e.NO_ROLE = "NO_ROLE", e.ALL_REQUESTED_TO_SPEAK = "ALL_REQUESTED_TO_SPEAK", e.REQUESTED_TO_SPEAK_ONLY = "REQUESTED_TO_SPEAK_ONLY", e.BLOCKED = "BLOCKED", e.IGNORED = "IGNORED", e.FRIEND = "FRIEND", e.SELECTED = "SELECTED", e.MEDIA = "MEDIA", e
   }({}),
-  I = function(e) {
+  S = function(e) {
     return e.VOICE = "VOICE", e.STREAM = "STREAM", e
   }({});
 
@@ -90,7 +90,7 @@ function N(e) {
 }
 
 function A(e) {
-  return e === m.xO.REQUESTED_TO_SPEAK || e === m.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK
+  return e === g.xO.REQUESTED_TO_SPEAK || e === g.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK
 }
 
 function C(e) {
@@ -102,7 +102,7 @@ function C(e) {
     ignored: o,
     isFriend: a
   } = e, s = [];
-  return A(r) && s.push("ALL_REQUESTED_TO_SPEAK"), r === m.xO.REQUESTED_TO_SPEAK && s.push("REQUESTED_TO_SPEAK_ONLY"), t ? s.push("SPEAKER") : (null != n ? s.push(n.id) : s.push("NO_ROLE"), s.push("AUDIENCE")), i ? s.push("BLOCKED") : o && s.push("IGNORED"), a && s.push("FRIEND"), s
+  return A(r) && s.push("ALL_REQUESTED_TO_SPEAK"), r === g.xO.REQUESTED_TO_SPEAK && s.push("REQUESTED_TO_SPEAK_ONLY"), t ? s.push("SPEAKER") : (null != n ? s.push(n.id) : s.push("NO_ROLE"), s.push("AUDIENCE")), i ? s.push("BLOCKED") : o && s.push("IGNORED"), a && s.push("FRIEND"), s
 }
 class R {
   _getParticipantsForUser(e, t) {
@@ -111,29 +111,29 @@ class R {
     let v = [],
       y = f.Z.getVoiceStateForChannel(this.channelId, e);
     if (null == y) return v;
-    let S = d.default.getUser(e);
-    if (null == S) return null != this.guildId && g.Z.isPublic(this.channelId) && l.Z.requestMember(this.guildId, e), v;
-    let I = null != t ? t[0] : null,
+    let I = d.default.getUser(e);
+    if (null == I) return null != this.guildId && m.Z.isPublic(this.channelId) && l.Z.requestMember(this.guildId, e), v;
+    let S = null != t ? t[0] : null,
       T = null != this.guildId ? c.ZP.getMember(this.guildId, e) : null,
-      N = null !== (n = null == T ? void 0 : T.nick) && void 0 !== n ? n : p.ZP.getName(this.guildId, this.channelId, S),
+      N = null !== (n = null == T ? void 0 : T.nick) && void 0 !== n ? n : p.ZP.getName(this.guildId, this.channelId, I),
       A = {
-        user: S,
-        userNick: p.ZP.getName(this.guildId, this.channelId, S),
+        user: I,
+        userNick: p.ZP.getName(this.guildId, this.channelId, I),
         nick: N,
         comparator: (0, _.sQ)(y, N),
         voiceState: y,
         role: (0, E.H)(this.guildId, e),
         speaker: h.ZP.isSpeaker(e, this.channelId),
         member: T,
-        blocked: u.Z.isBlocked(S.id),
-        ignored: u.Z.isIgnored(S.id),
-        isFriend: u.Z.isFriend(S.id),
-        connectedOn: null !== (r = null == I ? void 0 : I.connectedOn) && void 0 !== r ? r : Date.now()
+        blocked: u.Z.isBlocked(I.id),
+        ignored: u.Z.isIgnored(I.id),
+        isFriend: u.Z.isFriend(I.id),
+        connectedOn: null !== (r = null == S ? void 0 : S.connectedOn) && void 0 !== r ? r : Date.now()
       },
       C = O(b({}, A), {
         type: "VOICE",
-        id: S.id,
-        rtsState: (0, m.gf)(y)
+        id: I.id,
+        rtsState: (0, g.gf)(y)
       });
     v.push(C);
     let R = null !== (i = a.Z.getStreamForUser(e, this.guildId)) && void 0 !== i ? i : a.Z.getActiveStreamForUser(e, this.guildId);
@@ -142,7 +142,7 @@ class R {
       s = O(b({}, A), {
         id: e,
         type: "STREAM",
-        rtsState: m.xO.NONE
+        rtsState: g.xO.NONE
       }), v.push(s)
     }
     return v

@@ -69,8 +69,8 @@ function t(e) {
         _: a
       }
     },
-    g = e.C_NUMBER_MODE,
-    m = {
+    m = e.C_NUMBER_MODE,
+    g = {
       match: [n, /\s*/, /=/, /\s*/, /\(/, n, /\)\s*\{/],
       scope: {
         1: "title.function",
@@ -88,7 +88,7 @@ function t(e) {
       scope: "subst",
       begin: /%\(/,
       end: /\)/,
-      contains: [g, h, l, p, d]
+      contains: [m, h, l, p, d]
     },
     b = {
       scope: "string",
@@ -114,7 +114,7 @@ function t(e) {
       match: t.concat("\\b(?!", y.join("|"), "\\b)", /[a-zA-Z_]\w*(?:[?!]|\b)/),
       className: "variable"
     },
-    S = {
+    I = {
       scope: "comment",
       variants: [{
         begin: [/#!?/, /[A-Za-z_]+(?=\()/],
@@ -137,7 +137,7 @@ function t(e) {
       "variable.language": o,
       literal: i
     },
-    contains: [S, g, b, f, E, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, h, u, m, c, l, d, p, _, O]
+    contains: [I, m, b, f, E, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, h, u, g, c, l, d, p, _, O]
   }
 }
 e.exports = t

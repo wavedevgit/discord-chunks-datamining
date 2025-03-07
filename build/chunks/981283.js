@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => S
 });
 var r = n(200651);
 n(192379);
@@ -17,8 +17,8 @@ var i = n(392711),
   _ = n(19780),
   p = n(594174),
   h = n(449753),
-  g = n(569545),
-  m = n(960861),
+  m = n(569545),
+  g = n(960861),
   E = n(803647),
   v = n(70722),
   b = n(981631);
@@ -44,10 +44,10 @@ function O(e) {
   }
   return e
 }
-let S = (0, i.debounce)(l.xc, 1e3),
-  I = {
+let I = (0, i.debounce)(l.xc, 1e3),
+  S = {
     init() {
-      h.Z.init(), m.ZP.initializeIfNeeded(), a.Z.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
+      h.Z.init(), g.ZP.initializeIfNeeded(), a.Z.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
         let {
           videoState: t
         } = e, n = u.Z.getCurrentUserActiveStream();
@@ -68,9 +68,9 @@ let S = (0, i.debounce)(l.xc, 1e3),
           allowMultiple: n
         } = e;
         if (n) return;
-        let r = (0, g.my)(t);
+        let r = (0, m.my)(t);
         u.Z.getAllActiveStreams().forEach(e => {
-          e.ownerId !== r.ownerId && e.ownerId !== d.default.getId() && (e.ownerId === d.default.getId() && s.Z.setGoLiveSource(null), (0, l.aP)((0, g.V9)(e), !1))
+          e.ownerId !== r.ownerId && e.ownerId !== d.default.getId() && (e.ownerId === d.default.getId() && s.Z.setGoLiveSource(null), (0, l.aP)((0, m.V9)(e), !1))
         })
       }), a.Z.subscribe("VOICE_STATE_UPDATES", e => {
         let {
@@ -94,10 +94,10 @@ let S = (0, i.debounce)(l.xc, 1e3),
         } = e, {
           ownerId: r,
           guildId: i
-        } = (0, g.my)(n);
+        } = (0, m.my)(n);
         if (null == i || null == r || r !== (null === (t = p.default.getCurrentUser()) || void 0 === t ? void 0 : t.id)) return;
         let o = f.Z.getMemberCount(i);
-        null != o && !(o < 2) && !(o > v.tB) && c.eo.getSetting() && S(n)
+        null != o && !(o < 2) && !(o > v.tB) && c.eo.getSetting() && I(n)
       })
     }
   }

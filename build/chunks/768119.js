@@ -23,10 +23,10 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let h = .05,
-  g = {};
+  m = {};
 
-function m(e) {
-  return null == g[e] && (g[e] = {
+function g(e) {
+  return null == m[e] && (m[e] = {
     searchId: e,
     searchType: E(e),
     isIndexing: !1,
@@ -44,7 +44,7 @@ function m(e) {
     resultsBlocked: 0,
     showBlockedResults: !1,
     showNoResultsAlt: !1
-  }), g[e]
+  }), m[e]
 }
 
 function E(e) {
@@ -54,28 +54,28 @@ function E(e) {
 function v(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null;
   if (null == e) return n;
-  let r = g[e];
+  let r = m[e];
   return null == r ? n : t(r)
 }
 let b = "SearchStore",
   y = "tokenized",
   O = !1,
-  S = {},
-  I = null;
+  I = {},
+  S = null;
 
 function T(e) {
   let {
     searchId: t,
     editorState: n
   } = e;
-  m(t).editorState = n
+  g(t).editorState = n
 }
 
 function N(e) {
   let {
     searchId: t
   } = e;
-  null != t && m(t)
+  null != t && g(t)
 }
 
 function A(e) {
@@ -84,7 +84,7 @@ function A(e) {
     queryString: r,
     searchId: i,
     query: a
-  } = e, s = m(i);
+  } = e, s = g(i);
   null != s.searchFetcher && (s.searchFetcher.cancel(), s.searchFetcher = null);
   let f = i,
     p = s.searchType,
@@ -94,13 +94,13 @@ function A(e) {
     searchId: i,
     query: r
   });
-  let g = i === _.I_8 ? null === (t = d.Z.getChannel(f)) || void 0 === t ? void 0 : t.guild_id : p === _.aib.GUILD ? i : null;
+  let m = i === _.I_8 ? null === (t = d.Z.getChannel(f)) || void 0 === t ? void 0 : t.guild_id : p === _.aib.GUILD ? i : null;
   h.fetch(e => {
     var t, n;
     l.Z.dispatch({
       type: "SEARCH_FINISH",
       searchId: i,
-      guildId: g,
+      guildId: m,
       analyticsId: e.body.analytics_id,
       totalResults: e.body.total_results,
       messages: e.body.messages,
@@ -119,7 +119,7 @@ function A(e) {
     l.Z.dispatch({
       type: "SEARCH_FINISH",
       searchId: i,
-      guildId: g,
+      guildId: m,
       messages: [],
       threads: [],
       members: [],
@@ -139,37 +139,37 @@ function C(e) {
     query: r
   } = e;
   if ("string" != typeof r || "" === (r = r.trim())) return;
-  let i = S[n] = null !== (t = S[n]) && void 0 !== t ? t : [],
+  let i = I[n] = null !== (t = I[n]) && void 0 !== t ? t : [],
     o = i.indexOf(r); - 1 !== o ? (i.splice(o, 1), i.unshift(r)) : null != i[0] && "" !== i[0] && r.startsWith(i[0]) ? i[0] = r : o < 0 && i.unshift(r), i.length > 5 && i.splice(5, i.length), s.K.set(b, {
-    history: S
+    history: I
   })
 }
 
 function R(e) {
   let {
     searchId: t
-  } = e, n = m(t);
+  } = e, n = g(t);
   n.isIndexing = !0, n.isHistoricalIndexing = !0, n.isSearching = !1
 }
 
 function P(e) {
   let {
     searchId: t
-  } = e, n = m(t);
+  } = e, n = g(t);
   n.isSearching = !1, n.isIndexing = !1, n.isHistoricalIndexing = e.doingHistoricalIndex || !1, n.searchFetcher = null, n.totalResults = e.totalResults, n.hasError = e.hasError, n.analyticsId = e.analyticsId, n.documentsIndexed = null != e.documentsIndexed ? e.documentsIndexed : 0, n.showNoResultsAlt = Math.random() < h, n.rawResults = e.messages, null == n.query && (n.hasError = !0)
 }
 
-function D(e) {
+function w(e) {
   let {
     searchId: t
-  } = e, n = g[t];
+  } = e, n = m[t];
   if (null == n) return !1;
-  null != n.searchFetcher && n.searchFetcher.cancel(), delete g[t]
+  null != n.searchFetcher && n.searchFetcher.cancel(), delete m[t]
 }
 
-function w(e) {
-  if (e === I) return !1;
-  null != e && null == g[e] && m(e), I = e
+function D(e) {
+  if (e === S) return !1;
+  null != e && null == m[e] && g(e), S = e
 }
 
 function L(e) {
@@ -177,22 +177,22 @@ function L(e) {
     guildId: t,
     channelId: n
   } = e;
-  w(null != t ? t : n)
+  D(null != t ? t : n)
 }
 
 function x(e) {
   let {
     searchId: t
   } = e;
-  w(t)
+  D(t)
 }
 
 function M(e) {
   let {
     searchId: t
   } = e;
-  null == t ? (s.K.remove(b), S = {}) : (delete S[t], s.K.set(b, {
-    history: S
+  null == t ? (s.K.remove(b), I = {}) : (delete I[t], s.K.set(b, {
+    history: I
   }))
 }
 
@@ -201,8 +201,8 @@ function k(e) {
     searchId: t,
     query: n
   } = e;
-  null != S[t] && (S[t] = S[t].filter(e => e !== n), s.K.set(b, {
-    history: S
+  null != I[t] && (I[t] = I[t].filter(e => e !== n), s.K.set(b, {
+    history: I
   }))
 }
 
@@ -217,42 +217,42 @@ function U(e) {
     searchId: t,
     showBlocked: n
   } = e;
-  m(t).showBlockedResults = n
+  g(t).showBlockedResults = n
 }
 
 function G() {
-  Object.keys(g).forEach(e => {
-    null != g[e] && (g[e].searchType = E(e))
+  Object.keys(m).forEach(e => {
+    null != m[e] && (m[e].searchType = E(e))
   })
 }
 
 function B() {
-  s.K.remove(b), S = {}
+  s.K.remove(b), I = {}
 }
 
 function V() {
-  return null != I && D({
-    searchId: I
+  return null != S && w({
+    searchId: S
   })
 }
 class F extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(f.Z, d.Z);
     let e = s.K.get(b);
-    (null == e ? void 0 : e.history) != null && (S = j(e.history)), O = !!s.K.get(y)
+    (null == e ? void 0 : e.history) != null && (I = j(e.history)), O = !!s.K.get(y)
   }
   getCurrentSearchId() {
-    return I
+    return S
   }
   isActive() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : I;
+    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : S;
     return null != e && (this.isIndexing(e) || this.isSearching(e) || this.hasResults(e))
   }
   isTokenized() {
     return O
   }
   getSearchType(e) {
-    return v(null != e ? e : I, e => e.searchType)
+    return v(null != e ? e : S, e => e.searchType)
   }
   getRawResults(e) {
     return v(e, e => e.rawResults)
@@ -289,7 +289,7 @@ class F extends(r = a.ZP.Store) {
     return v(e, e => e.editorState)
   }
   getHistory(e) {
-    return S[e]
+    return I[e]
   }
   getOffset(e) {
     var t;
@@ -329,7 +329,7 @@ let Z = new F(l.Z, {
   SEARCH_START: A,
   SEARCH_INDEXING: R,
   SEARCH_FINISH: P,
-  SEARCH_EDITOR_STATE_CLEAR: D,
+  SEARCH_EDITOR_STATE_CLEAR: w,
   SEARCH_ENSURE_SEARCH_STATE: N,
   SEARCH_EDITOR_STATE_CHANGE: T,
   SEARCH_SET_SHOW_BLOCKED_RESULTS: U,

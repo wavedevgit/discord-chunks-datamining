@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  c: () => I,
+  c: () => S,
   x: () => C
 }), n(47120), n(266796);
 var r = n(200651),
@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(449480),
   p = n(114487),
   h = n(214715),
-  g = n(550271),
-  m = n(308083),
+  m = n(550271),
+  g = n(308083),
   E = n(388032),
   v = n(730335);
 
@@ -55,17 +55,17 @@ function O(e, t) {
   return n
 }
 
-function S(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function I(e) {
+function S(e) {
   let {
     wildcardDescriptors: t,
     primaryColor: n
-  } = e, o = t.filter(e => e !== m.U6).join(", "), a = (0, s.dQu)(s.TVs.colors.BACKGROUND_FLOATING), l = (0, d.pX)(n, a.hex()), c = i.useRef(null), [u, f] = i.useState(!1);
+  } = e, o = t.filter(e => e !== g.U6).join(", "), a = (0, s.dQu)(s.TVs.colors.BACKGROUND_FLOATING), l = (0, d.pX)(n, a.hex()), c = i.useRef(null), [u, f] = i.useState(!1);
   if (i.useEffect(() => {
       let e = c.current;
       null != e && null != e.offsetWidth && null != e.scrollWidth && f(e.offsetWidth < e.scrollWidth)
@@ -83,7 +83,7 @@ function I(e) {
       text: o,
       color: s.ua7.Colors.PRIMARY,
       shouldShow: u,
-      children: e => (0, r.jsx)("span", S(y({}, e), {
+      children: e => (0, r.jsx)("span", I(y({}, e), {
         style: _,
         className: v.wildCardText,
         ref: c,
@@ -192,8 +192,8 @@ function C(e) {
     className: C,
     position: R,
     showBrandingFooter: P = !1,
-    bannerUrl: D,
-    onlyAnimateIconOnHover: w = !1,
+    bannerUrl: w,
+    onlyAnimateIconOnHover: D = !1,
     hasPendingJoinRequest: L = !1,
     atMaxMemberCapacity: x = !1,
     footer: M = null
@@ -212,13 +212,13 @@ function C(e) {
     H(!1)
   }, []), Q = E.NW.formatToPlainString(E.t["0WHArK"], {
     count: n.memberCount
-  }), X = null != D ? D : (0, f.pY)(n.id, B), J = null == o && null == X ? {
+  }), X = null != w ? w : (0, f.pY)(n.id, B), J = null == o && null == X ? {
     background: "linear-gradient(90deg, ".concat(U, ", ").concat(G, ")")
   } : void 0, $ = null != o ? o : null != X ? (0, r.jsx)("img", {
     alt: E.NW.string(E.t.nH6S2d),
     src: X,
     className: v.bannerImage
-  }) : null, ee = i.useMemo(() => (0, m.HR)(n.traits, b), [n.traits, b]);
+  }) : null, ee = i.useMemo(() => (0, g.HR)(n.traits, b), [n.traits, b]);
   i.useEffect(() => {
     let e = W.current;
     null != e && null != e.offsetWidth && null != e.scrollWidth && K(e.offsetWidth < e.scrollWidth)
@@ -262,14 +262,14 @@ function C(e) {
                 guildName: n.name,
                 guildIcon: n.icon,
                 iconSize: 64,
-                animate: !w || Z
+                animate: !D || Z
               })
             })
           }), (0, r.jsx)("div", {
             className: v.clanTagChipletWrapper,
             children: (0, r.jsxs)("div", {
               className: v.clanTagChiplet,
-              children: [(0, r.jsx)(g.A, {
+              children: [(0, r.jsx)(m.A, {
                 width: 16,
                 height: 16,
                 badge: j.badgeKind,
@@ -290,7 +290,7 @@ function C(e) {
             text: n.name,
             color: s.ua7.Colors.PRIMARY,
             shouldShow: Y,
-            children: e => (0, r.jsx)("span", S(y({}, e), {
+            children: e => (0, r.jsx)("span", I(y({}, e), {
               ref: W,
               className: v.nameText,
               children: n.name
@@ -310,8 +310,8 @@ function C(e) {
             variant: "text-xs/normal",
             color: "text-secondary",
             className: v.clanInfoItem,
-            children: null !== (t = (0, m.mv)(n.playstyle)) && void 0 !== t ? t : E.NW.string(E.t.JijC4O)
-          }), (0, r.jsx)(I, {
+            children: null !== (t = (0, g.mv)(n.playstyle)) && void 0 !== t ? t : E.NW.string(E.t.JijC4O)
+          }), (0, r.jsx)(S, {
             wildcardDescriptors: n.wildcardDescriptors,
             primaryColor: n.branding.primaryColor
           })]

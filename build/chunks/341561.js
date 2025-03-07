@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => w
+  Z: () => D
 });
 var r = n(200651);
 n(192379);
@@ -17,8 +17,8 @@ var i = n(952265),
   _ = n(430824),
   p = n(626135),
   h = n(483360),
-  g = n(877565),
-  m = n(590921),
+  m = n(877565),
+  g = n(590921),
   E = n(665692),
   v = n(981631),
   b = n(388032),
@@ -33,7 +33,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function S(e) {
   }
   return e
 }
-let I = 8,
+let S = 8,
   T = 4,
   N = 4,
   A = 40,
@@ -63,12 +63,12 @@ function P(e) {
   return "".concat(E.Iv).concat(e.name).concat(E.Iv)
 }
 
-function D(e) {
+function w(e) {
   var t;
   let n = e.animated ? "a" : "";
   return e.managed || null == e.id ? "".concat(E.Iv).concat(e.name).concat(E.Iv) : "<".concat(n, ":").concat(null !== (t = e.originalName) && void 0 !== t ? t : e.name, ":").concat(e.id, ">")
 }
-let w = {
+let D = {
   sentinel: E.Iv,
   stores: [u.Z],
   matches: (e, t, n, r, i) => n.length > 1,
@@ -99,7 +99,7 @@ let w = {
     if (r.allowStickers) {
       (0, c.$p)();
       let t = h.ZP.queryStickers([n], !0, [e, (e, t) => t === l.eb.SENDABLE]),
-        r = Math.max(T, I - d.length);
+        r = Math.max(T, S - d.length);
       f = t.slice(0, r), "-" === n[0] && (f = t.filter(e => e.sticker.name === n))
     }
     let _ = [];
@@ -139,11 +139,11 @@ let w = {
         let {
           default: e
         } = await n.e("9766").then(n.bind(n, 889684));
-        return t => (0, r.jsx)(e, S({}, t))
+        return t => (0, r.jsx)(e, I({}, t))
       })
-    }, h = t.length > 0 || l.length > 0, m = a.length > 0;
+    }, h = t.length > 0 || l.length > 0, g = a.length > 0;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, g.HI)({
+      children: [(0, m.HI)({
         query: u,
         selectedIndex: c,
         autocompletes: t,
@@ -160,7 +160,7 @@ let w = {
         }),
         getQuery: e => "".concat(E.Iv).concat(e),
         key: "emoji"
-      }), l.length > 0 ? (0, g.HI)({
+      }), l.length > 0 ? (0, m.HI)({
         query: u,
         selectedIndex: c,
         autocompletes: l,
@@ -181,9 +181,9 @@ let w = {
         getQuery: e => "".concat(E.Iv).concat(e),
         key: "emoji-upsell",
         indexOffset: t.length
-      }) : null, h && m && (0, r.jsx)(o.ZP.Divider, {
+      }) : null, h && g && (0, r.jsx)(o.ZP.Divider, {
         className: y.divider
-      }), (0, g.HI)({
+      }), (0, m.HI)({
         query: u,
         selectedIndex: c,
         autocompletes: a,
@@ -208,9 +208,9 @@ let w = {
         key: "stickers",
         indexOffset: t.length + l.length,
         headerClassName: h ? y.secondarySection : void 0
-      }), (h || m) && s.length > 0 && (0, r.jsx)(o.ZP.Divider, {
+      }), (h || g) && s.length > 0 && (0, r.jsx)(o.ZP.Divider, {
         className: y.divider
-      }), (0, g.HI)({
+      }), (0, m.HI)({
         query: u,
         selectedIndex: c,
         autocompletes: s,
@@ -231,7 +231,7 @@ let w = {
         getQuery: e => e,
         key: "soundmoji",
         indexOffset: t.length + l.length + a.length,
-        headerClassName: h || m ? y.secondarySection : void 0
+        headerClassName: h || g ? y.secondarySection : void 0
       })]
     })
   },
@@ -249,8 +249,8 @@ let w = {
     } = e;
     if (o < t.length) {
       let e = t[o];
-      return a.insertText(P(e), D(e)), {
-        type: m.z2.EMOJI,
+      return a.insertText(P(e), w(e)), {
+        type: g.z2.EMOJI,
         metadata: {
           emojiId: e.id,
           numEmojiResults: t.length,
@@ -267,7 +267,7 @@ let w = {
     if ((o -= n.length) < i.length) {
       let e = i[o];
       return a.insertText(""), a.sendSticker(e.sticker, d.V0.AUTOCOMPLETE), {
-        type: m.z2.STICKER,
+        type: g.z2.STICKER,
         metadata: {
           numEmojiResults: t.length,
           numStickerResults: i.length,
@@ -284,7 +284,7 @@ let w = {
         sound_id: e.sound.soundId,
         source: "autocomplete"
       }), {
-        type: m.z2.SOUNDMOJI,
+        type: g.z2.SOUNDMOJI,
         metadata: {
           numEmojiResults: t.length,
           numStickerResults: i.length

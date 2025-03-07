@@ -16,15 +16,15 @@ var r = n(200651),
   _ = n(317951),
   p = n(987209),
   h = n(563132),
-  g = n(409813),
-  m = n(107998),
+  m = n(409813),
+  g = n(107998),
   E = n(791785),
   v = n(961830),
   b = n(742956),
   y = n(346790),
   O = n(49308),
-  S = n(117652),
-  I = n(126982),
+  I = n(117652),
+  S = n(126982),
   T = n(981631),
   N = n(302800),
   A = n(231338),
@@ -52,7 +52,7 @@ function P(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -63,8 +63,8 @@ function D(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+function D(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -75,7 +75,7 @@ function L(e) {
     onClose: n,
     onComplete: o,
     onStepChange: R,
-    transitionState: D,
+    transitionState: w,
     loadId: L,
     skuId: x,
     isGift: M = !1,
@@ -97,12 +97,12 @@ function L(e) {
     step: n,
     onClose: () => t(!1),
     giftingOrigin: U
-  }) : (0, r.jsx)(I.Z, {
+  }) : (0, r.jsx)(S.Z, {
     step: n,
     onClose: () => t(!1)
-  }), et = i.useMemo(() => [v.WA, ...M ? [S.Dd] : [], y.n, ...v.yp, v.wo, {
-    key: g.h8.CONFIRM,
-    renderStep: e => (0, r.jsx)(O.x, w(P({}, e), {
+  }), et = i.useMemo(() => [v.WA, ...M ? [I.Dd] : [], y.n, ...v.yp, v.wo, {
+    key: m.h8.CONFIRM,
+    renderStep: e => (0, r.jsx)(O.x, D(P({}, e), {
       confettiCanvas: Z,
       analyticsLocations: V,
       hideConfetti: null != K
@@ -134,7 +134,7 @@ function L(e) {
       isGift: M,
       activeSubscription: null,
       purchaseType: A.GZ.ONE_TIME,
-      children: (0, r.jsx)(m.c1, {
+      children: (0, r.jsx)(g.c1, {
         children: (0, r.jsx)(p.KB, {
           isGift: M,
           giftRecipient: k,
@@ -147,7 +147,7 @@ function L(e) {
             skuId: Q,
             initialPlanId: null,
             analyticsLocations: V,
-            transitionState: D,
+            transitionState: w,
             renderHeader: ee,
             returnRef: B,
             onStepChange: R,

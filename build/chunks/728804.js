@@ -16,11 +16,11 @@ var r = n(690244),
     for (var n, r = e; null !== (n = r.next); r = n)
       if (n.key === t) return r.next = n.next, n.next = e.next, e.next = n, n
   },
-  g = function(e, t) {
+  m = function(e, t) {
     var n = h(e, t);
     return n && n.value
   },
-  m = function(e, t, n) {
+  g = function(e, t, n) {
     var r = h(e, t);
     r ? r.value = n : e.next = {
       key: t,
@@ -41,7 +41,7 @@ e.exports = function() {
         if (e) return c(e, r)
       } else if (l) {
         if (t) return f(t, r)
-      } else if (n) return g(n, r)
+      } else if (n) return m(n, r)
     },
     has: function(r) {
       if (s && r && ("object" == typeof r || "function" == typeof r)) {
@@ -55,7 +55,7 @@ e.exports = function() {
       s && r && ("object" == typeof r || "function" == typeof r) ? (e || (e = new s), u(e, r, i)) : l ? (t || (t = new l), _(t, r, i)) : (n || (n = {
         key: {},
         next: null
-      }), m(n, r, i))
+      }), g(n, r, i))
     }
   };
   return r

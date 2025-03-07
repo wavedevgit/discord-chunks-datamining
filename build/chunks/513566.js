@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => S
 }), n(47120);
 var r = n(348327),
   i = n.n(r),
@@ -16,8 +16,8 @@ var r = n(348327),
   _ = n(67844),
   p = n(173507),
   h = n(592125),
-  g = n(131951),
-  m = n(944486),
+  m = n(131951),
+  g = n(944486),
   E = n(358085),
   v = n(998502),
   b = n(981631),
@@ -31,7 +31,7 @@ function O(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class S extends u.Z {
+class I extends u.Z {
   _initialize() {
     this.isSupported && (s.Z.subscribe("AUDIO_SET_MODE", this.handleViewUpdate), s.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleViewUpdate), s.Z.subscribe("START_SESSION", this.handleViewUpdate), s.Z.subscribe("CONNECTION_OPEN", this.handleViewUpdate), s.Z.subscribe("CONNECTION_CLOSED", this.handleViewUpdate), s.Z.subscribe("CALL_CREATE", this.handleViewUpdate), s.Z.subscribe("CALL_UPDATE", this.handleViewUpdate), s.Z.subscribe("CALL_DELETE", this.handleViewUpdate), s.Z.subscribe("CHANNEL_DELETE", this.handleViewUpdate), s.Z.subscribe("VOICE_STATE_UPDATES", this.handleViewUpdate), s.Z.subscribe("AUDIO_TOGGLE_SELF_MUTE", this.handleViewUpdate), s.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", this.handleViewUpdate), s.Z.subscribe("AUDIO_TOGGLE_LOCAL_MUTE", this.handleViewUpdate), s.Z.subscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleViewUpdate), v.ZP.on("THUMBAR_BUTTONS_CLICKED", (e, t) => this.buttonClicked(t)))
   }
@@ -44,7 +44,7 @@ class S extends u.Z {
   constructor(...e) {
     super(...e), O(this, "callbackActions", {
       [v.tS.VIDEO]: () => {
-        g.Z.isVideoEnabled() ? l.Z.setVideoEnabled(!1) : (0, p.Z)(() => l.Z.setVideoEnabled(!0), b.IlC.APP)
+        m.Z.isVideoEnabled() ? l.Z.setVideoEnabled(!1) : (0, p.Z)(() => l.Z.setVideoEnabled(!0), b.IlC.APP)
       },
       [v.tS.MUTE]: () => l.Z.toggleSelfMute({
         location: "Thumbar"
@@ -60,15 +60,15 @@ class S extends u.Z {
       }
       this.callbackActions[e.buttonName]()
     }), O(this, "handleViewUpdate", a().debounce(() => {
-      let e = m.Z.getVoiceChannelId();
+      let e = g.Z.getVoiceChannelId();
       if (null == e) {
         this.setThumbarButtons([]);
         return
       }
-      let t = g.Z.isSelfMute(),
-        n = g.Z.isSelfDeaf(),
-        r = g.Z.isVideoEnabled(),
-        i = g.Z.isVideoAvailable(),
+      let t = m.Z.isSelfMute(),
+        n = m.Z.isSelfDeaf(),
+        r = m.Z.isVideoEnabled(),
+        i = m.Z.isVideoAvailable(),
         o = h.Z.getChannel(e),
         a = null == o || (0, f.y)(o),
         {
@@ -108,4 +108,4 @@ class S extends u.Z {
     }, 100))
   }
 }
-let I = new S
+let S = new I

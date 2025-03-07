@@ -3,7 +3,7 @@
 n.d(t, {
   Gg: () => y,
   KH: () => E,
-  ZP: () => m
+  ZP: () => g
 }), n(47120), n(978209), n(301563), n(653041);
 var r = n(512722),
   i = n.n(r),
@@ -18,9 +18,9 @@ var r = n(512722),
 let _ = /(@[^@#]+(?:#0|#\d{4}))|(@[^\s\t@#:]+)(?=[\s\t@:])|(:[a-zA-Z0-9_~]+:)|(#"(?:\ |\\\\|\\"|(?!")\w)+")|(#[^\s\t@#:]+(?=[\s\t@#:]))/g,
   p = new Set(["emoji", "customEmoji", "textMention", "userMention", "roleMention", "channelMention", "staticRouteLink", "soundboard", "timestamp"]),
   h = new Set(["line", "blockQuote"]),
-  g = new Set(["applicationCommandOption"]);
+  m = new Set(["applicationCommandOption"]);
 
-function m(e, t, n) {
+function g(e, t, n) {
   let {
     isInline: r,
     isVoid: i,
@@ -45,7 +45,7 @@ function E(e, t, n) {
       let [o, a] = i;
       for (let i = o.children.length - 1; i >= 0; i--) {
         let s = o.children[i];
-        if (g.has(s.type)) {
+        if (m.has(s.type)) {
           let o = [s, f.C0.child(a, i)];
           r ? b(e, o, !0, null) : v(e, o, t, n)
         }
@@ -91,7 +91,7 @@ function b(e, t, n, r) {
           path: f.C0.child(i, 0),
           offset: 0
         };
-      (n || null != r && I(e, o, l, r)) && (d.Q.voidToText(e, (0, u.sg)(s, {
+      (n || null != r && S(e, o, l, r)) && (d.Q.voidToText(e, (0, u.sg)(s, {
         mode: "plain",
         preventEmojiSurrogates: !0
       }), i), a = !0)
@@ -230,7 +230,7 @@ function O(e, t, n, r, i) {
         _.lastIndex = u.index + 1;
         continue
       }
-      if (I(e, a, {
+      if (S(e, a, {
           path: p,
           offset: u.index
         }, i)) continue;
@@ -241,12 +241,12 @@ function O(e, t, n, r, i) {
         node: o
       }) : _.lastIndex = u.index + 1
     }
-    for (let t of h.reverse()) S(e, [d, f.C0.child(a, c)], t.index, t.length, t.node), l = !0
+    for (let t of h.reverse()) I(e, [d, f.C0.child(a, c)], t.index, t.length, t.node), l = !0
   }
   return l
 }
 
-function S(e, t, n, r, o) {
+function I(e, t, n, r, o) {
   let [a, s] = t, l = {
     path: s,
     offset: n
@@ -260,7 +260,7 @@ function S(e, t, n, r, o) {
   })
 }
 
-function I(e, t, n, r) {
+function S(e, t, n, r) {
   let i = 0;
   for (let [r, o] of f.bN.nodes(e, {
       at: {

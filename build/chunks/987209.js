@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(669079),
   p = n(563132),
   h = n(474936),
-  g = n(388032);
-let m = h.Cj.STANDARD_BOX,
+  m = n(388032);
+let g = h.Cj.STANDARD_BOX,
   E = void 0,
   [v, b, y] = (0, f.Z)();
 
@@ -31,29 +31,29 @@ function O(e) {
     giftingOrigin: y,
     children: O
   } = e, {
-    selectedSkuId: S
-  } = (0, p.JL)(), [I, T] = i.useState(n), [N, A] = i.useState(), [C, R] = i.useState(!1), P = (0, _.pO)(I), D = (0, l.TX)(), {
-    enabled: w
+    selectedSkuId: I
+  } = (0, p.JL)(), [S, T] = i.useState(n), [N, A] = i.useState(), [C, R] = i.useState(!1), P = (0, _.pO)(S), w = (0, l.TX)(), {
+    enabled: D
   } = c.O.useExperiment({
     location: "gift card"
   }), L = E;
-  P && (L = D ? h.Cj.SEASONAL_STANDARD_BOX : null != b ? b : m, w && (L = h.Cj.NITROWEEN_STANDARD));
-  let [x, M] = i.useState(L), k = (0, d.iE)(), [j, U] = i.useState(), [G, B] = i.useState(t && (0, _.MY)(I) === _.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == f ? g.NW.string(g.t.ZkOo1d) : f), [V, F] = i.useState(void 0), [Z, H] = i.useState(void 0), W = (0, _.E5)(S, t), [Y, K] = i.useState(!1), [z, q] = i.useState(!1), [Q, X] = i.useState(), J = i.useCallback(e => {
+  P && (L = w ? h.Cj.SEASONAL_STANDARD_BOX : null != b ? b : g, D && (L = h.Cj.NITROWEEN_STANDARD));
+  let [x, M] = i.useState(L), k = (0, d.iE)(), [j, U] = i.useState(), [G, B] = i.useState(t && (0, _.MY)(S) === _.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == f ? m.NW.string(m.t.ZkOo1d) : f), [V, F] = i.useState(void 0), [Z, H] = i.useState(void 0), W = (0, _.E5)(I, t), [Y, K] = i.useState(!1), [z, q] = i.useState(!1), [Q, X] = i.useState(), J = i.useCallback(e => {
     let {
       onSubscriptionConfirmation: t
     } = e;
-    return q(!0), (0, s.YD)(I, W).then(() => {
+    return q(!0), (0, s.YD)(S, W).then(() => {
       q(!1), null == t || t(), K(!0)
     }).catch(e => {
       q(!1), X(e), K(!0)
     })
-  }, [I, W, q, K, X]), $ = (0, u.x8)(), ee = (0, o.Wu)([a.Z], () => a.Z.recommendedGiftSkuIds);
+  }, [S, W, q, K, X]), $ = (0, u.x8)(), ee = (0, o.Wu)([a.Z], () => a.Z.recommendedGiftSkuIds);
   return (0, r.jsx)(v.Provider, {
     value: {
       isGift: t,
       giftCode: W,
       giftMessage: f,
-      giftRecipient: I,
+      giftRecipient: S,
       setGiftRecipient: T,
       giftRecipientError: N,
       setGiftRecipientError: A,

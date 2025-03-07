@@ -4,8 +4,8 @@ n.d(t, {
   Dv: () => p,
   G2: () => y,
   IG: () => v,
-  NG: () => m,
-  OV: () => g,
+  NG: () => g,
+  OV: () => m,
   fW: () => O,
   lB: () => b,
   mA: () => E
@@ -91,11 +91,11 @@ function h(e) {
   }
 }
 
-function g(e) {
+function m(e) {
   return e < 10 ? 16 : e < 100 ? 22 : 30
 }
 
-function m(e) {
+function g(e) {
   return e < 1e3 ? "".concat(e) : "".concat(Math.min(Math.floor(e / 1e3), 9), "k+")
 }
 let E = e => {
@@ -111,11 +111,11 @@ let E = e => {
       className: o()(u, s.numberBadge, l),
       style: c({
         backgroundColor: i ? void 0 : n,
-        width: g(t),
+        width: m(t),
         paddingRight: h(t)
       }, _)
     }, E), {
-      children: m(t)
+      children: g(t)
     }))
   },
   v = e => {

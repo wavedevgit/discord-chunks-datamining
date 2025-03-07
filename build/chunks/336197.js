@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 });
 var r = n(727429),
   i = n(703656),
@@ -60,7 +60,7 @@ function h(e) {
     guildId: null != n ? n : u.ME
   })
 }
-async function g(e, t) {
+async function m(e, t) {
   let n = (0, s.Qj)(e);
   if (null != n && !await (0, l.Z)(n)) {
     (0, c.k)({

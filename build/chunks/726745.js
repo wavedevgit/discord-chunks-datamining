@@ -3,7 +3,7 @@
 let r, i;
 n.d(t, {
   Z: () => R,
-  q: () => g
+  q: () => m
 }), n(653041);
 var o, a = n(213919),
   s = n(442837),
@@ -50,10 +50,10 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var g = function(e) {
+var m = function(e) {
   return e[e.INVALID = 0] = "INVALID", e[e.VALIDATING = 1] = "VALIDATING", e[e.VALID = 2] = "VALID", e
 }({});
-let m = [],
+let g = [],
   E = !1;
 
 function v(e) {
@@ -61,21 +61,21 @@ function v(e) {
     user: t
   } = e;
   r = t.id, E = !1;
-  let n = m.slice(),
+  let n = g.slice(),
     i = n.findIndex(e => {
       let {
         id: n
       } = e;
       return n === t.id
     });
-  i > -1 ? (m[i].avatar = t.avatar, m[i].username = t.username, m[i].discriminator = t.discriminator, m[i].tokenStatus = 2) : n.push({
+  i > -1 ? (g[i].avatar = t.avatar, g[i].username = t.username, g[i].discriminator = t.discriminator, g[i].tokenStatus = 2) : n.push({
     id: t.id,
     avatar: t.avatar,
     username: t.username,
     discriminator: t.discriminator,
     tokenStatus: 2,
     pushSyncToken: null
-  }), (m = n).length > d.$H && m.splice(d.$H).forEach(e => {
+  }), (g = n).length > d.$H && g.splice(d.$H).forEach(e => {
     let {
       id: t
     } = e;
@@ -84,7 +84,7 @@ function v(e) {
 }
 
 function b(e) {
-  E = !!e.isSwitchingAccount, e.isSwitchingAccount || (m = m.filter(e => {
+  E = !!e.isSwitchingAccount, e.isSwitchingAccount || (g = g.filter(e => {
     let {
       id: t
     } = e;
@@ -93,7 +93,7 @@ function b(e) {
 }
 
 function y(e) {
-  m = m.filter(t => {
+  g = g.filter(t => {
     let {
       id: n
     } = t;
@@ -104,32 +104,32 @@ function y(e) {
 function O(e) {
   let {
     user: t
-  } = e, n = m.slice(), r = n.find(e => {
+  } = e, n = g.slice(), r = n.find(e => {
     let {
       id: n
     } = e;
     return n === t.id
   });
-  null != r && (r.avatar = t.avatar, r.username = t.username, r.discriminator = t.discriminator, m = n)
+  null != r && (r.avatar = t.avatar, r.username = t.username, r.discriminator = t.discriminator, g = n)
 }
 
-function S(e, t) {
-  let n = m.slice(),
+function I(e, t) {
+  let n = g.slice(),
     r = n.find(t => {
       let {
         id: n
       } = t;
       return n === e
     });
-  null != r && (r.tokenStatus = t, m = n)
+  null != r && (r.tokenStatus = t, g = n)
 }
 
-function I(e) {
+function S(e) {
   let {
     from: t,
     to: n
   } = e;
-  m = (0, c.aB)(m, t, n)
+  g = (0, c.aB)(g, t, n)
 }
 
 function T(e) {
@@ -144,7 +144,7 @@ function N(e) {
     userId: t,
     pushSyncToken: n
   } = e;
-  m = m.map(e => e.id === t ? h(_({}, e), {
+  g = g.map(e => e.id === t ? h(_({}, e), {
     pushSyncToken: n
   }) : e)
 }
@@ -153,7 +153,7 @@ function A(e) {
   let {
     invalidPushSyncTokens: t
   } = e;
-  m = m.map(e => null != e.pushSyncToken && t.includes(e.pushSyncToken) ? h(_({}, e), {
+  g = g.map(e => null != e.pushSyncToken && t.includes(e.pushSyncToken) ? h(_({}, e), {
     pushSyncToken: null
   }) : e)
 }
@@ -161,7 +161,7 @@ class C extends(o = s.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t;
-      m = null !== (t = e.users) && void 0 !== t ? t : [], i = e.canUseMultiAccountMobile
+      g = null !== (t = e.users) && void 0 !== t ? t : [], i = e.canUseMultiAccountMobile
     }
   }
   getCanUseMultiAccountMobile() {
@@ -169,15 +169,15 @@ class C extends(o = s.ZP.PersistedStore) {
   }
   getState() {
     return {
-      users: m,
+      users: g,
       canUseMultiAccountMobile: i
     }
   }
   getUsers() {
-    return m
+    return g
   }
   getValidUsers() {
-    return m.filter(e => {
+    return g.filter(e => {
       let {
         tokenStatus: t
       } = e;
@@ -185,10 +185,10 @@ class C extends(o = s.ZP.PersistedStore) {
     })
   }
   getHasLoggedInAccounts() {
-    return m.length > 0
+    return g.length > 0
   }
   getIsValidatingUsers() {
-    return m.some(e => {
+    return g.some(e => {
       let {
         tokenStatus: t
       } = e;
@@ -222,11 +222,11 @@ f(C, "displayName", "MultiAccountStore"), f(C, "persistKey", "MultiAccountStore"
 let R = new C(l.Z, {
   CONNECTION_OPEN: v,
   LOGOUT: b,
-  MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST: e => S(e.userId, 1),
-  MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS: e => S(e.userId, 2),
-  MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE: e => S(e.userId, 0),
+  MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST: e => I(e.userId, 1),
+  MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS: e => I(e.userId, 2),
+  MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE: e => I(e.userId, 0),
   MULTI_ACCOUNT_REMOVE_ACCOUNT: e => y(e.userId),
-  MULTI_ACCOUNT_MOVE_ACCOUNT: I,
+  MULTI_ACCOUNT_MOVE_ACCOUNT: S,
   CURRENT_USER_UPDATE: O,
   MULTI_ACCOUNT_MOBILE_EXPERIMENT_UPDATE: T,
   MULTI_ACCOUNT_UPDATE_PUSH_SYNC_TOKEN: N,

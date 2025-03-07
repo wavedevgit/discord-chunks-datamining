@@ -15,15 +15,15 @@ var i, o, a = n(442837),
   p = n(541049);
 n(449934);
 var h = n(12647),
-  g = n(358085),
-  m = n(238514),
+  m = n(358085),
+  g = n(238514),
   E = n(740492),
   v = n(581883),
   b = n(874893),
   y = n(981631),
   O = n(469115);
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,14 +32,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -66,12 +66,12 @@ let A = null !== (i = (0, p.Z)()) && void 0 !== i ? i : y.BRd.DARK,
   R = null,
   P = !1;
 
-function D() {
+function w() {
   var e, t;
   if (__OVERLAY__) return y.BRd.DARK;
   if (d.Z.syncForcedColors && "active" === d.Z.systemForcedColors && null != r) return r;
   if (E.ZP.useSystemTheme === b.K.ON && null != r) return (0, _.O_)("ThemeStore") ? (0, c.wj)(r) ? null != C ? C : y.BRd.DARK : y.BRd.LIGHT : r;
-  let n = null === (e = m.Z.getAppearanceSettings()) || void 0 === e ? void 0 : e.theme;
+  let n = null === (e = g.Z.getAppearanceSettings()) || void 0 === e ? void 0 : e.theme;
   if (null != n) return n;
   let i = null === (t = v.Z.settings.appearance) || void 0 === t ? void 0 : t.theme;
   if (null == i) return A;
@@ -89,8 +89,8 @@ function D() {
   }
 }
 
-function w() {
-  return D()
+function D() {
+  return w()
 }
 
 function L() {
@@ -102,7 +102,7 @@ function x() {
 }
 
 function M() {
-  return (0, c.ap)(w())
+  return (0, c.ap)(D())
 }
 
 function k(e) {
@@ -125,7 +125,7 @@ function G(e) {
   let {
     presetId: r
   } = e;
-  A = null != r && null !== (n = null === (t = O.qt[r]) || void 0 === t ? void 0 : t.theme) && void 0 !== n ? n : w();
+  A = null != r && null !== (n = null === (t = O.qt[r]) || void 0 === t ? void 0 : t.theme) && void 0 !== n ? n : D();
   let i = null != r;
   return P !== i ? (P = i, !0) : V()
 }
@@ -138,23 +138,23 @@ function B(e) {
 }
 
 function V() {
-  let e = w();
+  let e = D();
   return !(0, f.qu)(A, e) && (A = e, !0)
 }
 
 function F() {
-  let e = w();
+  let e = D();
   return e !== A && (Z(A = e), !0)
 }
 
 function Z(e) {
-  if (!__OVERLAY__ && g.isPlatformEmbedded) {
+  if (!__OVERLAY__ && m.isPlatformEmbedded) {
     let t = [],
       n = (0, _.O_)("ThemeStore");
     n && t.push("visual-refresh");
     try {
       let r = (0, l.uJ)(n ? "BACKGROUND_TERTIARY" : "BACKGROUND_SECONDARY", {
-        theme: null != e ? e : w(),
+        theme: null != e ? e : D(),
         saturation: d.Z.saturation,
         enabledExperiments: t
       });
@@ -168,7 +168,7 @@ class H extends(o = a.ZP.PersistedStore) {
       var t;
       Z(A = e.theme), C = null !== (t = e.selectedDarkTheme) && void 0 !== t ? t : null
     }
-    this.waitFor(E.ZP, m.Z, v.Z, d.Z)
+    this.waitFor(E.ZP, g.Z, v.Z, d.Z)
   }
   getState() {
     return {
@@ -180,7 +180,7 @@ class H extends(o = a.ZP.PersistedStore) {
     return (0, c.ap)(this.theme) && E.ZP.darkSidebar && !P
   }
   get theme() {
-    return w()
+    return D()
   }
   get selectedDarkTheme() {
     return C
@@ -195,9 +195,9 @@ class H extends(o = a.ZP.PersistedStore) {
     return null !== R
   }
 }
-S(H, "displayName", "ThemeStore"), S(H, "persistKey", "ThemeStore"), S(H, "migrations", [e => {
+I(H, "displayName", "ThemeStore"), I(H, "persistKey", "ThemeStore"), I(H, "migrations", [e => {
   let t = e.theme;
-  return "amoled" === t && (t = "midnight"), N(I({}, e), {
+  return "amoled" === t && (t = "midnight"), N(S({}, e), {
     theme: t
   })
 }]);

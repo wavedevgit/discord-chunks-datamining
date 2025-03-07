@@ -12,17 +12,17 @@ var r = n(566885),
   f = n(11697),
   _ = Array;
 e.exports = function(e) {
-  var t, n, p, h, g, m, E = o(e),
+  var t, n, p, h, m, g, E = o(e),
     v = l(this),
     b = arguments.length,
     y = b > 1 ? arguments[1] : void 0,
     O = void 0 !== y;
   O && (y = r(y, b > 2 ? arguments[2] : void 0));
-  var S = f(E),
-    I = 0;
-  if (S && !(this === _ && s(S)))
-    for (g = (h = d(E, S)).next, n = v ? new this : []; !(p = i(g, h)).done; I++) m = O ? a(h, y, [p.value, I], !0) : p.value, u(n, I, m);
+  var I = f(E),
+    S = 0;
+  if (I && !(this === _ && s(I)))
+    for (m = (h = d(E, I)).next, n = v ? new this : []; !(p = i(m, h)).done; S++) g = O ? a(h, y, [p.value, S], !0) : p.value, u(n, S, g);
   else
-    for (t = c(E), n = v ? new this(t) : _(t); t > I; I++) m = O ? y(E[I], I) : E[I], u(n, I, m);
-  return n.length = I, n
+    for (t = c(E), n = v ? new this(t) : _(t); t > S; S++) g = O ? y(E[S], S) : E[S], u(n, S, g);
+  return n.length = S, n
 }

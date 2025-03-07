@@ -15,7 +15,7 @@ n.d(t, {
   Yy: () => V,
   aP: () => Z,
   bR: () => J,
-  l4: () => w,
+  l4: () => D,
   lJ: () => k,
   m8: () => ee,
   oh: () => B,
@@ -37,8 +37,8 @@ var r = n(286379),
   _ = n(594174),
   p = n(626135),
   h = n(630388),
-  g = n(948561),
-  m = n(704454),
+  m = n(948561),
+  g = n(704454),
   E = n(719548),
   v = n(981631),
   b = n(973005);
@@ -65,12 +65,12 @@ function O(e) {
   return e
 }
 n(388032);
-let S = {
+let I = {
     [b.TI.DISABLED.valueOf()]: i.Q4.SHOW,
     [b.TI.NON_FRIENDS.valueOf()]: i.Q4.SHOW,
     [b.TI.FRIENDS_AND_NON_FRIENDS.valueOf()]: i.Q4.BLOCK
   },
-  I = {
+  S = {
     [b.TI.DISABLED.valueOf()]: i.Q4.SHOW,
     [b.TI.NON_FRIENDS.valueOf()]: i.Q4.BLOCK,
     [b.TI.FRIENDS_AND_NON_FRIENDS.valueOf()]: i.Q4.BLOCK
@@ -94,10 +94,10 @@ let S = {
     } = e;
     if (null != t && t !== i.Q4.UNSET_EXPLICIT_CONTENT_REDACTION) return t;
     let o = _.default.getCurrentUser();
-    return (0, m.bc)("resolveSettingWithDefaults") ? D({
+    return (0, g.bc)("resolveSettingWithDefaults") ? w({
       isDm: n,
       isFriend: r
-    }) : (0, m.g2)("resolveSettingWithDefaults") ? i.Q4.BLUR : (null == o ? void 0 : o.nsfwAllowed) === !1 ? P({
+    }) : (0, g.g2)("resolveSettingWithDefaults") ? i.Q4.BLUR : (null == o ? void 0 : o.nsfwAllowed) === !1 ? P({
       isDm: n,
       isFriend: r
     }) : R({
@@ -112,7 +112,7 @@ let S = {
     } = e;
     if (!t) return i.Q4.SHOW;
     let r = u.UP.getSetting();
-    return n ? S[r] : I[r]
+    return n ? I[r] : S[r]
   },
   P = e => {
     let {
@@ -123,14 +123,14 @@ let S = {
     let r = u.UP.getSetting();
     return n ? T[r] : N[r]
   },
-  D = e => {
+  w = e => {
     let {
       isDm: t = !1,
       isFriend: n = !1
     } = e;
     return t && !n ? i.Q4.BLOCK : i.Q4.BLUR
   },
-  w = () => {
+  D = () => {
     let e = u.Sh.getSetting();
     return {
       explicitContentGuilds: C({
@@ -160,11 +160,11 @@ function x(e) {
     explicitContentGuilds: r,
     explicitContentFriendDm: i,
     explicitContentNonFriendDm: o
-  } = w(), a = d.Z.getChannel(e.channel_id);
+  } = D(), a = d.Z.getChannel(e.channel_id);
   return null != a && (a.isDM() || a.isGroupDM() ? null != e.author && f.Z.getFriendIDs().includes(e.author.id) ? L(i) : L(o) : L(r))
 }
 let M = e => {
-  let t = w();
+  let t = D();
   u.Sh.updateSetting(O({}, t, e))
 };
 var k = function(e) {
@@ -263,7 +263,7 @@ function Y(e) {
     message_id: s,
     embed_ids: f,
     user_is_underage: (0, c.U)(),
-    scan_timeout_duration: g.b2,
+    scan_timeout_duration: m.b2,
     attachment_ids_v2: u
   }), l.Z.increment({
     name: r.V.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT,
@@ -361,13 +361,13 @@ function X(e) {
 let J = (e, t) => null != e && null != t && (e <= E.LN || t <= E.iE);
 
 function $() {
-  let e = (0, m.G7)("explicit_media_redaction_utils"),
+  let e = (0, g.G7)("explicit_media_redaction_utils"),
     t = (0, o.sf)();
   return e && t
 }
 
 function ee() {
-  let e = (0, m.UQ)("explicit_media_redaction_utils"),
+  let e = (0, g.UQ)("explicit_media_redaction_utils"),
     t = (0, o.L5)();
   return e && t
 }

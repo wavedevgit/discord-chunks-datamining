@@ -17,15 +17,15 @@ var r = n(200651),
   _ = n(607070),
   p = n(134432),
   h = n(314910),
-  g = n(506071),
-  m = n(453070),
+  m = n(506071),
+  g = n(453070),
   E = n(373228),
   v = n(378233),
   b = n(388032),
   y = n(552119);
 let O = e => e.preventDefault(),
-  S = .7,
-  I = 33,
+  I = .7,
+  S = 33,
   T = 1.55,
   N = {
     tension: 1100,
@@ -57,7 +57,7 @@ let P = e => {
       maskAsset: o,
       size: s,
       withLoadingIndicator: l = !0
-    } = e, c = s >= I;
+    } = e, c = s >= S;
     return (0, r.jsxs)("div", {
       className: a()(y.assetWrapper, {
         [y.assetWrapperMasked]: n || o
@@ -85,7 +85,7 @@ let P = e => {
       })]
     })
   },
-  D = e => {
+  w = e => {
     let {
       shouldAnimate: t,
       size: o,
@@ -97,58 +97,58 @@ let P = e => {
       maskAsset: f,
       positionRef: _,
       withLoadingIndicator: h,
-      onError: g
-    } = e, m = i.useRef(null), E = i.useRef(null), [O, S] = i.useState(!0), [I, T] = i.useState(!1), N = i.useRef(!1);
+      onError: m
+    } = e, g = i.useRef(null), E = i.useRef(null), [O, I] = i.useState(!0), [S, T] = i.useState(!1), N = i.useRef(!1);
     N.current = t && u;
     let A = null == s ? (0, v.Q6)(a) : s;
     return (l()(null != A, "Unable to determine sticker asset URL. Sticker ID: ".concat(a.id)), i.useEffect(() => {
-      if (null == m.current || null == A) return;
+      if (null == g.current || null == A) return;
       let e = Math.min(2, (0, p.x_)());
-      m.current.width = o * e, m.current.height = o * e;
+      g.current.width = o * e, g.current.height = o * e;
       let t = !1;
       return (async () => {
         let {
           default: e
         } = await n.e("21617").then(n.bind(n, 357939));
-        null != m.current && (E.current = new e({
-          canvas: m.current,
+        null != g.current && (E.current = new e({
+          canvas: g.current,
           animationId: a.id,
           assetUrl: A,
           assetData: c,
           onInitialDraw: () => {
-            t || S(!1)
+            t || I(!1)
           },
           onError: () => {
-            t || (S(!1), T(!0), null == g || g())
+            t || (I(!1), T(!0), null == m || m())
           }
         }), N.current && E.current.setState(!0))
       })(), () => {
         var e;
         null === (e = E.current) || void 0 === e || e.drop(), E.current = null, t = !0
       }
-    }, [A, o, a.id, c, g]), i.useEffect(() => {
+    }, [A, o, a.id, c, m]), i.useEffect(() => {
       var e;
       let n;
       t || (n = 0), null === (e = E.current) || void 0 === e || e.setState(t && u, n)
     }, [a, t, u]), null == A) ? null : (0, r.jsx)("div", {
       role: "img",
       className: d,
-      "aria-label": I ? b.NW.string(b.t.yEvsKy) : R(a),
+      "aria-label": S ? b.NW.string(b.t.yEvsKy) : R(a),
       ref: _,
       children: (0, r.jsx)(P, {
-        hasError: I,
+        hasError: S,
         isLoading: O,
         maskAsset: f,
         size: o,
         withLoadingIndicator: h,
         children: C((0, r.jsx)("canvas", {
           className: y.lottieCanvas,
-          ref: m
+          ref: g
         }), a.id)
       })
     })
   },
-  w = e => {
+  D = e => {
     let {
       shouldAnimate: t,
       sticker: n,
@@ -159,34 +159,34 @@ let P = e => {
       positionRef: u,
       withLoadingIndicator: f,
       fileUri: _
-    } = e, [p, h] = i.useState(!1), [g, m] = i.useState(!0), [E, b] = i.useState(!1), I = i.useRef(null), T = i.useRef(null), N = null != _ ? _ : (0, v.Q6)(n, {
+    } = e, [p, h] = i.useState(!1), [m, g] = i.useState(!0), [E, b] = i.useState(!1), S = i.useRef(null), T = i.useRef(null), N = null != _ ? _ : (0, v.Q6)(n, {
       isPreview: !t || !p || !o,
       size: s
     }), A = i.useCallback(() => {
-      m(!1)
-    }, []), D = i.useCallback(() => {
+      g(!1)
+    }, []), w = i.useCallback(() => {
       b(!0)
     }, []);
     return (i.useEffect(() => {
-      if (null != I.current) {
+      if (null != S.current) {
         let {
           isVisible: e
-        } = I.current;
+        } = S.current;
         h(e)
       }
     }, []), i.useLayoutEffect(() => {
       var e;
-      (null === (e = T.current) || void 0 === e ? void 0 : e.complete) === !0 && m(!1)
+      (null === (e = T.current) || void 0 === e ? void 0 : e.complete) === !0 && g(!1)
     }, []), null == N) ? null : (0, r.jsx)(d.$, {
-      ref: I,
+      ref: S,
       onChange: h,
-      threshold: S,
+      threshold: I,
       children: (0, r.jsx)("div", {
         className: a()(l, y.__invalid_pngImageWrapper),
         ref: u,
         children: (0, r.jsx)(P, {
           hasError: E,
-          isLoading: g,
+          isLoading: m,
           maskAsset: c,
           size: s,
           withLoadingIndicator: f,
@@ -195,7 +195,7 @@ let P = e => {
             alt: R(n),
             src: N,
             draggable: !1,
-            onError: D,
+            onError: w,
             onLoad: A,
             onContextMenu: O,
             ref: T
@@ -213,17 +213,17 @@ let P = e => {
       positionRef: s,
       size: l,
       sticker: d
-    } = e, p = (0, u.e7)([_.Z], () => _.Z.useReducedMotion), g = i.useRef(null), m = {
+    } = e, p = (0, u.e7)([_.Z], () => _.Z.useReducedMotion), m = i.useRef(null), g = {
       transform: "scale(".concat(p ? 1 : 1 / n, ")"),
       opacity: 0
     }, E = (0, f.Yzy)(a, {
-      ref: g,
-      from: m,
+      ref: m,
+      from: g,
       enter: {
         transform: "scale(1)",
         opacity: 1
       },
-      leave: m,
+      leave: g,
       config: N
     }), v = i.useRef(null), b = (0, f.q_F)({
       ref: v,
@@ -231,7 +231,7 @@ let P = e => {
       opacity: +!!a,
       config: A
     }, "animate-always");
-    return (0, c.useChain)(a ? [g, v] : [v, g], a ? [0, .0625] : [0, 0]), E((e, i) => i && (0, r.jsx)(h.W5, {
+    return (0, c.useChain)(a ? [m, v] : [v, m], a ? [0, .0625] : [0, 0]), E((e, i) => i && (0, r.jsx)(h.W5, {
       className: y.positionedLayer,
       fixed: !0,
       align: "center",
@@ -279,9 +279,9 @@ let P = e => {
       assetData: _,
       fileUri: p,
       onError: h
-    } = e, v = (0, g.n)(), b = (0, m.t$)(t) && !n, y = i.useRef(null);
+    } = e, v = (0, m.n)(), b = (0, g.t$)(t) && !n, y = i.useRef(null);
     if (null == u) return null;
-    let O = u.format_type === E.u3.LOTTIE ? D : w;
+    let O = u.format_type === E.u3.LOTTIE ? w : D;
     return (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(O, {
         shouldAnimate: b,

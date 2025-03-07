@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   M: () => u,
-  Z: () => g
+  Z: () => m
 });
 var r, i = n(442837),
   o = n(570140),
@@ -43,7 +43,7 @@ class h extends(r = i.ZP.Store) {
   }
 }
 c(h, "displayName", "AuthorizedAppsStore");
-let g = new h(o.Z, {
+let m = new h(o.Z, {
   USER_AUTHORIZED_APPS_REQUEST: _,
   USER_AUTHORIZED_APPS_UPDATE: p
 })

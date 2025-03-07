@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => S
 });
 var r, i = n(442837),
   o = n(570140),
@@ -80,7 +80,7 @@ function h(e) {
   }
 }
 
-function g(e) {
+function m(e) {
   let {
     channelId: t,
     shouldMention: n
@@ -92,7 +92,7 @@ function g(e) {
   }))
 }
 
-function m(e) {
+function g(e) {
   let {
     channelId: t
   } = e;
@@ -143,7 +143,7 @@ function y(e) {
 function O() {
   d = {}, f = {}, _ = {}
 }
-class S extends(r = i.ZP.Store) {
+class I extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(a.Z)
   }
@@ -154,12 +154,12 @@ class S extends(r = i.ZP.Store) {
     return _[e]
   }
 }
-s(S, "displayName", "PendingReplyStore");
-let I = new S(o.Z, {
+s(I, "displayName", "PendingReplyStore");
+let S = new I(o.Z, {
   CREATE_PENDING_REPLY: p,
   CREATE_SHALLOW_PENDING_REPLY: h,
-  SET_PENDING_REPLY_SHOULD_MENTION: g,
-  DELETE_PENDING_REPLY: m,
+  SET_PENDING_REPLY_SHOULD_MENTION: m,
+  DELETE_PENDING_REPLY: g,
   CONNECTION_OPEN: O,
   LOGOUT: O,
   MESSAGE_DELETE: E,

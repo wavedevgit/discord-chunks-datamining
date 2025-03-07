@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => S
 }), n(627341);
 var r = n(200651),
   i = n(192379),
@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(95422),
   p = n(222062),
   h = n(706454),
-  g = n(158776),
-  m = n(55935),
+  m = n(158776),
+  g = n(55935),
   E = n(74538),
   v = n(204418),
   b = n(388032),
@@ -35,10 +35,10 @@ let O = [{
     avatarSize: c.EFr.SIZE_32,
     showStatus: !0
   }],
-  S = e => {
+  I = e => {
     let {
       purchase: t
-    } = e, n = (0, l.e7)([h.default], () => h.default.locale), i = (0, u.qS)(t), o = null != t.expiresAt ? (0, m.TD)(Date.now(), t.expiresAt) : null, a = (0, _.a)(t), s = t.purchasedAt.toLocaleDateString(n, {
+    } = e, n = (0, l.e7)([h.default], () => h.default.locale), i = (0, u.qS)(t), o = null != t.expiresAt ? (0, g.TD)(Date.now(), t.expiresAt) : null, a = (0, _.a)(t), s = t.purchasedAt.toLocaleDateString(n, {
       month: "long",
       year: "numeric"
     });
@@ -82,17 +82,17 @@ let O = [{
       })]
     })
   },
-  I = e => {
+  S = e => {
     let {
       user: t,
       guildId: n,
       avatarDecorationOverride: o,
       className: _
-    } = e, h = (0, l.e7)([g.Z], () => g.Z.getStatus(t.id)), {
-      product: m,
-      purchase: I
-    } = (0, d.Z)(null == o ? void 0 : o.skuId), T = E.ZP.canUseCollectibles(t), N = (0, u.qS)(I), A = (0, u.G1)(m), C = !T && N, R = (0, p.M)(!A || T), P = (0, f.k)(m), D = i.useMemo(() => C ? b.NW.string(b.t.zrBmQE) : (0, s.EQ)([A, T, R]).with([!0, !0, !1], () => b.NW.string(b.t.L5hyz8)).with([!0, !1, !0], () => b.NW.string(b.t.q0PlFh)).with([!0, !1, !1], () => b.NW.string(b.t.ucqOV1)).otherwise(() => b.NW.string(b.t.UROtt7)), [C, A, T, R]);
-    return null != m && (null == I || C) ? (0, r.jsxs)("div", {
+    } = e, h = (0, l.e7)([m.Z], () => m.Z.getStatus(t.id)), {
+      product: g,
+      purchase: S
+    } = (0, d.Z)(null == o ? void 0 : o.skuId), T = E.ZP.canUseCollectibles(t), N = (0, u.qS)(S), A = (0, u.G1)(g), C = !T && N, R = (0, p.M)(!A || T), P = (0, f.k)(g), w = i.useMemo(() => C ? b.NW.string(b.t.zrBmQE) : (0, s.EQ)([A, T, R]).with([!0, !0, !1], () => b.NW.string(b.t.L5hyz8)).with([!0, !1, !0], () => b.NW.string(b.t.q0PlFh)).with([!0, !1, !1], () => b.NW.string(b.t.ucqOV1)).otherwise(() => b.NW.string(b.t.UROtt7)), [C, A, T, R]);
+    return null != g && (null == S || C) ? (0, r.jsxs)("div", {
       className: a()(y.modalPreview, y.shopPreviewContainer, _),
       children: [(0, r.jsx)("div", {
         className: y.shopPreviewBanner,
@@ -108,7 +108,7 @@ let O = [{
           children: P
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: D
+          children: w
         })]
       })]
     }) : (0, r.jsxs)("div", {
@@ -142,8 +142,8 @@ let O = [{
             }, "".concat(i).concat(a))
           })
         })]
-      }), null != I && (0, r.jsx)(S, {
-        purchase: I
+      }), null != S && (0, r.jsx)(I, {
+        purchase: S
       })]
     })
   }

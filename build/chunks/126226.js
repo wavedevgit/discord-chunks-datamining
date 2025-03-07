@@ -18,15 +18,15 @@ var i = n(693789),
   _ = n(895924),
   p = n(581364),
   h = n(826298),
-  g = n(588468),
-  m = n(496675),
+  m = n(588468),
+  g = n(496675),
   E = n(226951),
   v = n(877565),
   b = n(590921),
   y = n(665692),
   O = n(689079),
-  S = n(388032),
-  I = n(654699);
+  I = n(388032),
+  S = n(654699);
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -69,7 +69,7 @@ function R(e) {
 }
 let P = {
   sentinel: y.GI,
-  stores: [f.Z, c.ZP, m.Z],
+  stores: [f.Z, c.ZP, g.Z],
   matches: (e, t, n, r, i) => i.commands !== b.L8.DISABLED && null == f.Z.getActiveCommand(e.id) && (r || i.commands !== b.L8.OLD_BUILT_INS),
   queryResults(e, t, n, r, i) {
     if (0 === n.length && r.commands !== b.L8.OLD_BUILT_INS) return A;
@@ -140,10 +140,10 @@ let P = {
       autocompletes: t,
       onHover: l,
       onClick: c,
-      titleWithQuery: S.t.HFRoZW,
-      titleWithoutQuery: S.NW.string(S.t["0hKkS0"]),
+      titleWithQuery: I.t.HFRoZW,
+      titleWithoutQuery: I.NW.string(I.t["0hKkS0"]),
       getQuery: e => "".concat(y.GI).concat(e),
-      Component: d ? g.ZP.Command : g.ZP.NewCommand,
+      Component: d ? m.ZP.Command : m.ZP.NewCommand,
       getProps: e => {
         let {
           command: t,
@@ -159,14 +159,14 @@ let P = {
         }
       },
       key: "commands",
-      headerClassName: d ? I.legacyInputCommandHeader : null,
+      headerClassName: d ? S.legacyInputCommandHeader : null,
       headerTrailingContent: d ? (0, r.jsx)(i.zx, {
         type: "button",
         look: i.zx.Looks.LINK,
         color: i.zx.Colors.BRAND,
         size: i.zx.Sizes.MIN,
         onClick: C,
-        children: S.NW.string(S.t["8a0P09"])
+        children: I.NW.string(I.t["8a0P09"])
       }) : null
     })
   },

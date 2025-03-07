@@ -52,9 +52,9 @@ function h(e, t) {
   }), e
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function g(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -158,18 +158,18 @@ function O(e, t, n, o) {
     });
   return i.forwardRef(function(o, p) {
     var {
-      className: m,
+      className: g,
       onScroll: O,
-      onResize: S = null,
-      onContentResize: I = null,
+      onResize: I = null,
+      onContentResize: S = null,
       dir: T = "ltr",
       sections: N,
       sectionHeight: A,
       rowHeight: C,
       footerHeight: R = 0,
       sidebarHeight: P,
-      listHeaderHeight: D = 0,
-      renderSection: w,
+      listHeaderHeight: w = 0,
+      renderSection: D,
       renderRow: L,
       renderFooter: x,
       renderSidebar: M,
@@ -190,7 +190,7 @@ function O(e, t, n, o) {
       innerAriaOrientation: Q,
       innerClassName: X,
       innerTag: J = "div"
-    } = o, $ = g(o, ["className", "onScroll", "onResize", "onContentResize", "dir", "sections", "sectionHeight", "rowHeight", "footerHeight", "sidebarHeight", "listHeaderHeight", "renderSection", "renderRow", "renderFooter", "renderSidebar", "renderListHeader", "stickyListHeader", "wrapSection", "getAnchorId", "paddingTop", "paddingBottom", "fade", "customTheme", "chunkSize", "style", "innerId", "innerRole", "innerAriaLabel", "innerAriaMultiselectable", "innerAriaOrientation", "innerClassName", "innerTag"]);
+    } = o, $ = m(o, ["className", "onScroll", "onResize", "onContentResize", "dir", "sections", "sectionHeight", "rowHeight", "footerHeight", "sidebarHeight", "listHeaderHeight", "renderSection", "renderRow", "renderFooter", "renderSidebar", "renderListHeader", "stickyListHeader", "wrapSection", "getAnchorId", "paddingTop", "paddingBottom", "fade", "customTheme", "chunkSize", "style", "innerId", "innerRole", "innerAriaLabel", "innerAriaMultiselectable", "innerAriaOrientation", "innerClassName", "innerTag"]);
     let ee = i.useRef(null),
       et = i.useRef(null),
       [en, er] = i.useState(!1),
@@ -201,7 +201,7 @@ function O(e, t, n, o) {
       } = (0, u.T4)();
     (0, u.tT)({
       scrollerRef: ei,
-      className: m,
+      className: g,
       specs: s,
       orientation: "vertical",
       dir: T
@@ -220,17 +220,17 @@ function O(e, t, n, o) {
       rowHeight: C,
       footerHeight: R,
       sidebarHeight: P,
-      listHeaderHeight: D,
+      listHeaderHeight: w,
       paddingTop: B,
       paddingBottom: V,
       chunkSize: H,
       getScrollerState: ea,
       getAnchorId: G
-    }), ep = (0, u.t2)(ei), eh = i.useRef(S), eg = i.useRef(I);
+    }), ep = (0, u.t2)(ei), eh = i.useRef(I), em = i.useRef(S);
     i.useLayoutEffect(() => {
-      eh.current = S, eg.current = I
+      eh.current = I, em.current = S
     });
-    let em = i.useCallback(function() {
+    let eg = i.useCallback(function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 2;
         if (e > eo.current.dirty && (eo.current.dirty = e), 2 === e) {
           var t;
@@ -238,7 +238,7 @@ function O(e, t, n, o) {
         }
         ef(e)
       }, [ef, eo]),
-      eE = i.useCallback(() => em(), [em]);
+      eE = i.useCallback(() => eg(), [eg]);
     (0, u.zn)({
       ref: ei,
       onUpdate: eE,
@@ -249,7 +249,7 @@ function O(e, t, n, o) {
       ref: et,
       onUpdate: () => {
         var e;
-        return null === (e = eg.current) || void 0 === e ? void 0 : e.call(eg)
+        return null === (e = em.current) || void 0 === e ? void 0 : e.call(em)
       },
       key: "content",
       resizeObserver: f,
@@ -264,13 +264,13 @@ function O(e, t, n, o) {
       getSectionRowFromIndex: eb
     }, (0, u.rH)(ei, ea, ed, ep)), [ei, ea, eb, ev, ed, ep]);
     let ey = i.useCallback(e => {
-      em(1), null == ee.current ? er(!0) : clearTimeout(ee.current), ee.current = setTimeout(() => {
+      eg(1), null == ee.current ? er(!0) : clearTimeout(ee.current), ee.current = setTimeout(() => {
         ee.current = null, er(!1)
       }, 200), null != O && O(e)
-    }, [O, em]);
+    }, [O, eg]);
     return i.useLayoutEffect(() => {
       2 !== eo.current.dirty && (eo.current.dirty = 2)
-    }, [ec, w, L, x, U, el, es, eo]), (0, u.rS)({
+    }, [ec, D, L, x, U, el, es, eo]), (0, u.rS)({
       scrollerRef: ei,
       anchor: e_,
       getScrollerState: ea,
@@ -280,7 +280,7 @@ function O(e, t, n, o) {
     }), (0, r.jsxs)("div", h(_({
       ref: ei,
       onScroll: ey,
-      className: a()(m, {
+      className: a()(g, {
         [e]: !0,
         [t]: F,
         [n]: Z,
@@ -305,14 +305,14 @@ function O(e, t, n, o) {
             items: ec,
             renderListHeader: k,
             stickyListHeader: j,
-            renderSection: w,
+            renderSection: D,
             renderRow: L,
             renderFooter: x,
             wrapSection: U,
             spacerTop: es
           })
         })
-      }), [J, Y, K, z, q, Q, el, X, ec, k, j, w, L, x, U, es]), i.useMemo(() => y({
+      }), [J, Y, K, z, q, Q, el, X, ec, k, j, D, L, x, U, es]), i.useMemo(() => y({
         isSidebarVisible: eu,
         renderSidebar: M,
         sidebarHeight: P,

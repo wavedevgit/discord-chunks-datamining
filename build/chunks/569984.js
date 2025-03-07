@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, o, a, s, l, c, u, d, f, _, p, h, g, m, E, v;
+let r, i, o, a, s, l, c, u, d, f, _, p, h, m, g, E, v;
 n.d(t, {
-  Z: () => eS
+  Z: () => eI
 }), n(47120);
 var b, y = n(392711),
   O = n(754700),
-  S = n(887003),
-  I = n(442837),
+  I = n(887003),
+  S = n(442837),
   T = n(570140),
   N = n(497505),
   A = n(918701),
@@ -15,7 +15,7 @@ var b, y = n(392711),
   R = n(5881),
   P = n(46140);
 
-function D(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,14 +24,14 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -56,7 +56,7 @@ function x(e, t) {
 let M = new Map;
 
 function k() {
-  r = !1, i = !1, o = new Map, a = new Map, s = new Map, l = 0, c = new Set, u = new Set, d = new Set, f = new Set, M = new Map, p = new Map, h = new Map, g = new Map, m = null, E = new Map, _ = new Set, v = new Map
+  r = !1, i = !1, o = new Map, a = new Map, s = new Map, l = 0, c = new Set, u = new Set, d = new Set, f = new Set, M = new Map, p = new Map, h = new Map, m = new Map, g = null, E = new Map, _ = new Set, v = new Map
 }
 
 function j(e, t) {
@@ -68,7 +68,7 @@ function j(e, t) {
 function U(e, t) {
   let n = (o = new Map(o)).get(e);
   if (null != n) {
-    let r = w({}, n, t);
+    let r = D({}, n, t);
     j(e, t), o.set(e, r)
   }
 }
@@ -83,7 +83,7 @@ function B(e, t) {
   let n = o.get(e),
     r = null == n ? void 0 : n.userStatus;
   null != r && null == r.claimedAt && U(e, {
-    userStatus: x(w({}, r), {
+    userStatus: x(D({}, r), {
       claimedAt: t.claimedAt
     })
   })
@@ -94,7 +94,7 @@ function V(e) {
   let {
     entitlements: n
   } = e, r = null === (t = n.items[0].tenantMetadata) || void 0 === t ? void 0 : t.questRewards.reward;
-  return (null == r ? void 0 : r.tag) !== S.w.REWARD_CODE ? null : r.rewardCode
+  return (null == r ? void 0 : r.tag) !== I.w.REWARD_CODE ? null : r.rewardCode
 }
 
 function F(e, t) {
@@ -108,7 +108,7 @@ function F(e, t) {
       entitlements: t
     });
     null != n && G(e, n), U(e, {
-      userStatus: x(w({}, i), {
+      userStatus: x(D({}, i), {
         claimedAt: t.claimedAt,
         claimedTier: null !== (a = null == n ? void 0 : n.tier) && void 0 !== a ? a : null
       })
@@ -117,7 +117,7 @@ function F(e, t) {
 }
 
 function Z(e) {
-  null != g.get(e) && (g = new Map(g)).delete(e)
+  null != m.get(e) && (m = new Map(m)).delete(e)
 }
 
 function H() {
@@ -174,7 +174,7 @@ function J(e) {
     questId: t,
     streamKey: n
   } = e;
-  null == g.get(n) && (g = new Map(g)).set(n, {
+  null == m.get(n) && (m = new Map(m)).set(n, {
     questId: t,
     streamKey: n,
     firstFailedAt: Date.now()
@@ -308,7 +308,7 @@ function eh(e) {
   }), 0 === Object.keys(r.progress).length && M.has(r.questId) && (n.log("Removing optimistic progress for ".concat(r.questId)), M.delete(r.questId))
 }
 
-function eg(e) {
+function em(e) {
   let {
     previewQuestUserStatus: t
   } = e;
@@ -317,11 +317,11 @@ function eg(e) {
   }), null == t.claimedAt && (p = new Map(p)).delete(t.questId), null == t.enrolledAt && ((E = new Map(E)).delete(t.questId), C.ZP.getState().resetQuest(t.questId))
 }
 
-function em(e) {
+function eg(e) {
   let {
     questId: t
   } = e;
-  m = m === t ? null : t
+  g = g === t ? null : t
 }
 
 function eE(e) {
@@ -361,7 +361,7 @@ function ey(e) {
   v.delete(t)
 }
 k();
-class eO extends(b = I.ZP.Store) {
+class eO extends(b = S.ZP.Store) {
   get quests() {
     return o
   }
@@ -381,7 +381,7 @@ class eO extends(b = I.ZP.Store) {
     return l
   }
   get questDeliveryOverride() {
-    return o.get(null != m ? m : "")
+    return o.get(null != g ? g : "")
   }
   get questToDeliverForPlacement() {
     return v
@@ -405,7 +405,7 @@ class eO extends(b = I.ZP.Store) {
     return h.get(e)
   }
   getStreamHeartbeatFailure(e) {
-    return g.get(e)
+    return m.get(e)
   }
   getQuest(e) {
     return o.get(e)
@@ -422,8 +422,8 @@ class eO extends(b = I.ZP.Store) {
     return null === (n = M.get(e)) || void 0 === n ? void 0 : n.get(t)
   }
 }
-D(eO, "displayName", "QuestsStore");
-let eS = new eO(T.Z, {
+w(eO, "displayName", "QuestsStore");
+let eI = new eO(T.Z, {
   LOGOUT: H,
   QUESTS_FETCH_CURRENT_QUESTS_BEGIN: W,
   QUESTS_FETCH_CURRENT_QUESTS_SUCCESS: Y,
@@ -450,8 +450,8 @@ let eS = new eO(T.Z, {
   QUESTS_USER_STATUS_UPDATE: eh,
   STREAM_CLOSE: $,
   QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: ep,
-  QUESTS_PREVIEW_UPDATE_SUCCESS: eg,
-  QUESTS_DELIVERY_OVERRIDE: em,
+  QUESTS_PREVIEW_UPDATE_SUCCESS: em,
+  QUESTS_DELIVERY_OVERRIDE: eg,
   QUESTS_SELECT_TASK_PLATFORM: eE,
   QUESTS_UPDATE_OPTIMISTIC_PROGRESS: ev
 })

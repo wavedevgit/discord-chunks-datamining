@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  J: () => S
+  J: () => I
 }), n(47120), n(610138), n(216116), n(78328), n(815648);
 var r = n(200651),
   i = n(192379),
@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(53289),
   p = n(953101),
   h = n(701488),
-  g = n(981631),
-  m = n(682462);
+  m = n(981631),
+  g = n(682462);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -64,40 +64,40 @@ function O(e) {
     className: n,
     style: o,
     onLoad: a,
-    shouldRefocus: m,
+    shouldRefocus: g,
     queryParams: E,
     allowPopups: b = !1,
     referrerPolicy: O = "origin"
-  } = e, S = (0, f.sU)({}), I = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), T = i.useRef(null), N = (0, _.Z)(T, m, null == S ? window : S), A = y(v({}, E), {
-    frame_id: I,
+  } = e, I = (0, f.sU)({}), S = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), T = i.useRef(null), N = (0, _.Z)(T, g, null == I ? window : I), A = y(v({}, E), {
+    frame_id: S,
     platform: h.S4.DESKTOP
-  }), [C, R] = i.useState(!1), P = u.Z.theme, D = v({}, o);
+  }), [C, R] = i.useState(!1), P = u.Z.theme, w = v({}, o);
 
-  function w(e) {
+  function D(e) {
     var n;
     null == a || a(e.target), T.current = e.target, N(!0), null === (n = e.target.contentWindow) || void 0 === n || n.postMessage([c.Z.HELLO, A], null != t ? t : "")
   }
-  return P === g.BRd.LIGHT ? D.colorScheme = "light" : D.colorScheme = "dark", i.useEffect(() => (d.S.dispatch(g.CkL.IFRAME_MOUNT, {
-    id: I
+  return P === m.BRd.LIGHT ? w.colorScheme = "light" : w.colorScheme = "dark", i.useEffect(() => (d.S.dispatch(m.CkL.IFRAME_MOUNT, {
+    id: S
   }), () => {
-    d.S.dispatch(g.CkL.IFRAME_UNMOUNT, {
-      id: I
+    d.S.dispatch(m.CkL.IFRAME_UNMOUNT, {
+      id: S
     })
-  }), [I]), i.useEffect(() => {
+  }), [S]), i.useEffect(() => {
     let e = e => {
       let {
         resizing: t
       } = e;
       R(t)
     };
-    return d.S.subscribe(g.CkL.MANUAL_IFRAME_RESIZING, e), () => {
-      d.S.unsubscribe(g.CkL.MANUAL_IFRAME_RESIZING, e)
+    return d.S.subscribe(m.CkL.MANUAL_IFRAME_RESIZING, e), () => {
+      d.S.unsubscribe(m.CkL.MANUAL_IFRAME_RESIZING, e)
     }
-  }, []), C && (D.pointerEvents = "none"), null != t ? (0, r.jsx)("iframe", {
-    style: D,
+  }, []), C && (w.pointerEvents = "none"), null != t ? (0, r.jsx)("iframe", {
+    style: w,
     allow: "autoplay; encrypted-media",
     referrerPolicy: O,
-    onLoad: w,
+    onLoad: D,
     sandbox: (0, p.Z)({
       allowPopups: b
     }),
@@ -106,18 +106,18 @@ function O(e) {
   }) : null
 }
 
-function S(e) {
+function I(e) {
   let {
     onLoad: t
   } = e, [n, o] = i.useState(!1), s = i.useCallback(e => {
     o(!0), null == t || t(e)
   }, [t]);
   return (0, r.jsxs)("div", {
-    className: m.fillParent,
+    className: g.fillParent,
     children: [!n && (0, r.jsx)("div", {
-      className: a()(m.fillParent, m.iframePlaceholder)
+      className: a()(g.fillParent, g.iframePlaceholder)
     }), (0, r.jsx)("div", {
-      className: a()(m.fillParent, n ? void 0 : m.hiddenIframeContainer),
+      className: a()(g.fillParent, n ? void 0 : g.hiddenIframeContainer),
       children: (0, r.jsx)(O, y(v({}, e), {
         onLoad: s
       }))

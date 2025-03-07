@@ -5,19 +5,19 @@ n.d(t, {
   Nc: () => E,
   Nv: () => C,
   Qj: () => _,
-  TX: () => S,
+  TX: () => I,
   Uv: () => A,
   ZZ: () => d,
   Zt: () => b,
   cq: () => f,
   eN: () => N,
   f1: () => h,
-  gs: () => I,
-  lq: () => g,
+  gs: () => S,
+  lq: () => m,
   o2: () => v,
   oL: () => u,
   qz: () => y,
-  r_: () => m,
+  r_: () => g,
   rf: () => p,
   u1: () => T
 });
@@ -73,13 +73,13 @@ function h() {
   })
 }
 
-function g() {
+function m() {
   r.Z.dispatch({
     type: "ACCESSIBILITY_DARK_SIDEBAR_TOGGLE"
   })
 }
 
-function m() {
+function g() {
   r.Z.dispatch({
     type: "KEYBOARD_NAVIGATION_EXPLAINER_MODAL_SEEN"
   })
@@ -137,14 +137,14 @@ function O(e, t) {
   })
 }
 
-function S(e) {
+function I(e) {
   r.Z.dispatch({
     type: "ACCESSIBILITY_SYSTEM_PREFERS_CONTRAST_CHANGED",
     systemPrefersContrast: e
   })
 }
 
-function I(e) {
+function S(e) {
   r.Z.dispatch({
     type: "ACCESSIBILITY_SET_ALWAYS_SHOW_LINK_DECORATIONS",
     alwaysShowLinkDecorations: e

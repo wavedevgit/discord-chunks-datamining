@@ -41,7 +41,7 @@ function h(e, t) {
   for (r = 0; r < o.length; r++) t.indexOf(n = o[r]) >= 0 || (i[n] = e[n]);
   return i
 }
-var g = {
+var m = {
     BASE: "base",
     BODY: "body",
     HEAD: "head",
@@ -54,7 +54,7 @@ var g = {
     TITLE: "title",
     FRAGMENT: "Symbol(react.fragment)"
   },
-  m = {
+  g = {
     rel: ["amphtml", "canonical", "alternate"]
   },
   E = {
@@ -65,8 +65,8 @@ var g = {
     name: ["robots", "description"],
     property: ["og:type", "og:title", "og:url", "og:image", "og:image:alt", "og:description", "twitter:url", "twitter:title", "twitter:description", "twitter:image", "twitter:image:alt", "twitter:card", "twitter:site"]
   },
-  b = Object.keys(g).map(function(e) {
-    return g[e]
+  b = Object.keys(m).map(function(e) {
+    return m[e]
   }),
   y = {
     accesskey: "accessKey",
@@ -81,24 +81,24 @@ var g = {
   O = Object.keys(y).reduce(function(e, t) {
     return e[y[t]] = t, e
   }, {}),
-  S = function(e, t) {
+  I = function(e, t) {
     for (var n = e.length - 1; n >= 0; n -= 1) {
       var r = e[n];
       if (Object.prototype.hasOwnProperty.call(r, t)) return r[t]
     }
     return null
   },
-  I = function(e) {
-    var t = S(e, g.TITLE),
-      n = S(e, "titleTemplate");
+  S = function(e) {
+    var t = I(e, m.TITLE),
+      n = I(e, "titleTemplate");
     if (Array.isArray(t) && (t = t.join("")), n && t) return n.replace(/%s/g, function() {
       return t
     });
-    var r = S(e, "defaultTitle");
+    var r = I(e, "defaultTitle");
     return t || r || void 0
   },
   T = function(e) {
-    return S(e, "onChangeClientState") || function() {}
+    return I(e, "onChangeClientState") || function() {}
   },
   N = function(e, t) {
     return t.filter(function(t) {
@@ -111,9 +111,9 @@ var g = {
   },
   A = function(e, t) {
     return t.filter(function(e) {
-      return void 0 !== e[g.BASE]
+      return void 0 !== e[m.BASE]
     }).map(function(e) {
-      return e[g.BASE]
+      return e[m.BASE]
     }).reverse().reduce(function(t, n) {
       if (!t.length)
         for (var r = Object.keys(n), i = 0; i < r.length; i += 1) {
@@ -160,7 +160,7 @@ var g = {
   P = function(e) {
     return Array.isArray(e) ? e.join("") : e
   },
-  D = function(e, t) {
+  w = function(e, t) {
     return Array.isArray(e) ? e.reduce(function(e, n) {
       return ! function(e, t) {
         for (var n = Object.keys(e), r = 0; r < n.length; r += 1)
@@ -174,11 +174,11 @@ var g = {
       default: e
     }
   },
-  w = function(e, t) {
+  D = function(e, t) {
     var n;
     return f({}, e, ((n = {})[t] = void 0, n))
   },
-  L = [g.NOSCRIPT, g.SCRIPT, g.STYLE],
+  L = [m.NOSCRIPT, m.SCRIPT, m.STYLE],
   x = function(e, t) {
     return void 0 === t && (t = !0), !1 === t ? String(e) : String(e).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#x27;")
   },
@@ -208,13 +208,13 @@ var g = {
   },
   U = function(e, t, n) {
     switch (e) {
-      case g.TITLE:
+      case m.TITLE:
         return {
           toComponent: function() {
             var e, n, i, o;
             return n = t.titleAttributes, (i = {
               key: e = t.title
-            })["data-rh"] = !0, o = k(n, i), [r.createElement(g.TITLE, o, e)]
+            })["data-rh"] = !0, o = k(n, i), [r.createElement(m.TITLE, o, e)]
           }, toString: function() {
             return function(e, t, n, r) {
               var i = M(n),
@@ -278,16 +278,16 @@ var g = {
         var t = e.linkTags,
           n = e.scriptTags,
           r = e.encode,
-          i = D(e.metaTags, v),
-          o = D(t, m),
-          a = D(n, E);
+          i = w(e.metaTags, v),
+          o = w(t, g),
+          a = w(n, E);
         return {
           priorityMethods: {
             toComponent: function() {
-              return [].concat(j(g.META, i.priority), j(g.LINK, o.priority), j(g.SCRIPT, a.priority))
+              return [].concat(j(m.META, i.priority), j(m.LINK, o.priority), j(m.SCRIPT, a.priority))
             },
             toString: function() {
-              return U(g.META, i.priority, r) + " " + U(g.LINK, o.priority, r) + " " + U(g.SCRIPT, a.priority, r)
+              return U(m.META, i.priority, r) + " " + U(m.LINK, o.priority, r) + " " + U(m.SCRIPT, a.priority, r)
             }
           },
           metaTags: i.default,
@@ -299,15 +299,15 @@ var g = {
     }
     return {
       priority: _,
-      base: U(g.BASE, t, r),
+      base: U(m.BASE, t, r),
       bodyAttributes: U("bodyAttributes", n, r),
       htmlAttributes: U("htmlAttributes", i, r),
-      link: U(g.LINK, u, r),
-      meta: U(g.META, d, r),
-      noscript: U(g.NOSCRIPT, o, r),
-      script: U(g.SCRIPT, f, r),
-      style: U(g.STYLE, a, r),
-      title: U(g.TITLE, {
+      link: U(m.LINK, u, r),
+      meta: U(m.META, d, r),
+      noscript: U(m.NOSCRIPT, o, r),
+      script: U(m.SCRIPT, f, r),
+      style: U(m.STYLE, a, r),
+      title: U(m.TITLE, {
         title: l,
         titleAttributes: c
       }, r)
@@ -376,7 +376,7 @@ W.canUseDOM = H, W.propTypes = {
   context: {}
 }, W.displayName = "HelmetProvider";
 var Y = function(e, t) {
-    var n, r = document.head || document.querySelector(g.HEAD),
+    var n, r = document.head || document.querySelector(m.HEAD),
       i = r.querySelectorAll(e + "[data-rh]"),
       o = [].slice.call(i),
       a = [];
@@ -419,17 +419,17 @@ var Y = function(e, t) {
       c = e.styleTags,
       u = e.title,
       d = e.titleAttributes;
-    K(g.BODY, e.bodyAttributes), K(g.HTML, r),
+    K(m.BODY, e.bodyAttributes), K(m.HTML, r),
       function(e, t) {
-        void 0 !== e && document.title !== e && (document.title = P(e)), K(g.TITLE, t)
+        void 0 !== e && document.title !== e && (document.title = P(e)), K(m.TITLE, t)
       }(u, d);
     var f = {
-        baseTag: Y(g.BASE, n),
-        linkTags: Y(g.LINK, i),
-        metaTags: Y(g.META, o),
-        noscriptTags: Y(g.NOSCRIPT, a),
-        scriptTags: Y(g.SCRIPT, l),
-        styleTags: Y(g.STYLE, c)
+        baseTag: Y(m.BASE, n),
+        linkTags: Y(m.LINK, i),
+        metaTags: Y(m.META, o),
+        noscriptTags: Y(m.NOSCRIPT, a),
+        scriptTags: Y(m.SCRIPT, l),
+        styleTags: Y(m.STYLE, c)
       },
       _ = {},
       p = {};
@@ -464,16 +464,16 @@ var Y = function(e, t) {
             return delete t.context, t
           })),
           bodyAttributes: N("bodyAttributes", e),
-          defer: S(e, "defer"),
-          encode: S(e, "encodeSpecialCharacters"),
+          defer: I(e, "defer"),
+          encode: I(e, "encodeSpecialCharacters"),
           htmlAttributes: N("htmlAttributes", e),
-          linkTags: C(g.LINK, ["rel", "href"], e),
-          metaTags: C(g.META, ["name", "charset", "http-equiv", "property", "itemprop"], e),
-          noscriptTags: C(g.NOSCRIPT, ["innerHTML"], e),
+          linkTags: C(m.LINK, ["rel", "href"], e),
+          metaTags: C(m.META, ["name", "charset", "http-equiv", "property", "itemprop"], e),
+          noscriptTags: C(m.NOSCRIPT, ["innerHTML"], e),
           onChangeClientState: T(e),
-          scriptTags: C(g.SCRIPT, ["src", "innerHTML"], e),
-          styleTags: C(g.STYLE, ["cssText"], e),
-          title: I(e),
+          scriptTags: C(m.SCRIPT, ["src", "innerHTML"], e),
+          styleTags: C(m.STYLE, ["cssText"], e),
+          title: S(e),
           titleAttributes: N("titleAttributes", e),
           prioritizeSeoTags: R(e, "prioritizeSeoTags")
         };
@@ -500,16 +500,16 @@ var X = ["children"],
     _(t, e);
     var n = t.prototype;
     return n.shouldComponentUpdate = function(e) {
-      return !s()(w(this.props, "helmetData"), w(e, "helmetData"))
+      return !s()(D(this.props, "helmetData"), D(e, "helmetData"))
     }, n.mapNestedChildrenToProps = function(e, t) {
       if (!t) return null;
       switch (e.type) {
-        case g.SCRIPT:
-        case g.NOSCRIPT:
+        case m.SCRIPT:
+        case m.NOSCRIPT:
           return {
             innerHTML: t
           };
-        case g.STYLE:
+        case m.STYLE:
           return {
             cssText: t
           };
@@ -526,13 +526,13 @@ var X = ["children"],
         o = e.newChildProps,
         a = e.nestedChildren;
       switch (r.type) {
-        case g.TITLE:
+        case m.TITLE:
           return f({}, i, ((t = {})[r.type] = a, t.titleAttributes = f({}, o), t));
-        case g.BODY:
+        case m.BODY:
           return f({}, i, {
             bodyAttributes: f({}, o)
           });
-        case g.HTML:
+        case m.HTML:
           return f({}, i, {
             htmlAttributes: f({}, o)
           });
@@ -564,14 +564,14 @@ var X = ["children"],
             }, {}),
             l = e.type;
           switch ("symbol" == typeof l ? l = l.toString() : n.warnOnInvalidChildren(e, o), l) {
-            case g.FRAGMENT:
+            case m.FRAGMENT:
               t = n.mapChildrenToProps(o, t);
               break;
-            case g.LINK:
-            case g.META:
-            case g.NOSCRIPT:
-            case g.SCRIPT:
-            case g.STYLE:
+            case m.LINK:
+            case m.META:
+            case m.NOSCRIPT:
+            case m.SCRIPT:
+            case m.STYLE:
               i = n.flattenArrayTypeChildren({
                 child: e,
                 arrayTypeChildren: i,

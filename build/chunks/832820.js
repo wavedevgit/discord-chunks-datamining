@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(883998),
   p = n(576645),
   h = n(981631),
-  g = n(388032),
-  m = n(646406);
+  m = n(388032),
+  g = n(646406);
 
 function E(e) {
   let {
@@ -42,13 +42,13 @@ let v = function(e) {
     (0, c.Hi)(e, t.id)
   }, [t.id]), O = i.useCallback(() => {
     (0, c.GA)(t.id)
-  }, [t.id]), S = i.useMemo(() => null != n ? n.name.replace(/_/g, " ") : "", [n]), I = i.useCallback(() => {
+  }, [t.id]), I = i.useMemo(() => null != n ? n.name.replace(/_/g, " ") : "", [n]), S = i.useCallback(() => {
     (0, c.Hb)(t.id)
-  }, [t.id]), T = i.useMemo(() => null != b && b > 0 ? (null == v ? void 0 : v.type) === h.qc2.DEVELOPER_GIFT ? g.NW.format(g.t["b+P6ra"], {
+  }, [t.id]), T = i.useMemo(() => null != b && b > 0 ? (null == v ? void 0 : v.type) === h.qc2.DEVELOPER_GIFT ? m.NW.format(m.t["b+P6ra"], {
     numPotions: b
-  }) : g.NW.format(g.t.RiQ4cn, {
+  }) : m.NW.format(m.t.RiQ4cn, {
     numPotions: b
-  }) : g.NW.string(g.t.hvVgAQ), [b, v]), [N, A] = i.useState(!1 === s);
+  }) : m.NW.string(m.t.hvVgAQ), [b, v]), [N, A] = i.useState(!1 === s);
   i.useEffect(() => {
     !1 === s && O()
   }, [s, O]);
@@ -67,7 +67,7 @@ let v = function(e) {
       })
     }, [t.id]);
   return (0, r.jsxs)("div", {
-    className: m.bar,
+    className: g.bar,
     children: [(0, r.jsx)(_.Z, {
       channel: t,
       shouldShow: N,
@@ -77,36 +77,36 @@ let v = function(e) {
       align: "left",
       children: () => (0, r.jsxs)(a.P3F, {
         onClick: () => A(!N),
-        className: m.emojiSelectContainer,
+        className: g.emojiSelectContainer,
         children: [(0, r.jsx)("div", {
-          className: m.emojiIconContainer,
+          className: g.emojiIconContainer,
           children: (0, r.jsx)(E, {
             emojiConfetti: null != n ? n : void 0
           })
         }), (0, r.jsx)(o.xv, {
           variant: "text-sm/medium",
-          children: null == n ? g.NW.string(g.t.mzfiGR) : g.NW.format(g.t.Hcd9OT, {
-            emojiName: S
+          children: null == n ? m.NW.string(m.t.mzfiGR) : m.NW.format(m.t.Hcd9OT, {
+            emojiName: I
           })
         })]
       })
     }), (0, r.jsxs)("div", {
-      className: m.end,
+      className: g.end,
       children: [(0, r.jsx)(a.zxk, {
         look: a.zxk.Looks.LINK,
         size: a.zxk.Sizes.SMALL,
         onClick: P,
         color: a.zxk.Colors.TRANSPARENT,
-        className: m.learnMoreButton,
+        className: g.learnMoreButton,
         children: (0, r.jsx)(o.xv, {
           variant: "text-sm/medium",
           children: T
         })
       }), (0, r.jsx)("div", {
-        className: m.separator,
+        className: g.separator,
         "aria-hidden": !0
       }), (0, r.jsx)(l.B, {
-        onClick: I
+        onClick: S
       })]
     })]
   })

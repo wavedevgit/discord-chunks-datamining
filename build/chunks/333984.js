@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(47120);
 var r = n(592125),
   i = n(412788);
@@ -60,17 +60,17 @@ function h(e) {
   } = e, n = !1;
   return a.has(t.id) && (a.delete(t.id), n = !0), n
 }
-class g extends i.Z {
+class m extends i.Z {
   initialize() {
     this.waitFor(r.Z)
   }
   loadCache() {
-    let e = this.readSnapshot(g.LATEST_SNAPSHOT_VERSION);
+    let e = this.readSnapshot(m.LATEST_SNAPSHOT_VERSION);
     null != e && (a = new Set(e))
   }
   takeSnapshot() {
     return {
-      version: g.LATEST_SNAPSHOT_VERSION,
+      version: m.LATEST_SNAPSHOT_VERSION,
       data: Array.from(a)
     }
   }
@@ -101,5 +101,5 @@ class g extends i.Z {
     })
   }
 }
-o(g, "displayName", "SpamMessageRequestStore"), o(g, "LATEST_SNAPSHOT_VERSION", 1);
-let m = new g
+o(m, "displayName", "SpamMessageRequestStore"), o(m, "LATEST_SNAPSHOT_VERSION", 1);
+let g = new m

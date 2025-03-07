@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => D
+  Z: () => w
 });
 var r = n(200651),
   i = n(192379),
@@ -16,15 +16,15 @@ var r = n(200651),
   _ = n(314897),
   p = n(271383),
   h = n(594174),
-  g = n(970606),
-  m = n(645896),
+  m = n(970606),
+  g = n(645896),
   E = n(905362),
   v = n(353093),
   b = n(900681),
   y = n(284019),
   O = n(308083),
-  S = n(981631),
-  I = n(388032),
+  I = n(981631),
+  S = n(388032),
   T = n(233639);
 
 function N(e, t, n) {
@@ -69,25 +69,25 @@ function R(e, t) {
 function P(e) {
   e.stopPropagation()
 }
-let D = i.memo(function(e) {
+let w = i.memo(function(e) {
   var t;
   let {
     clan: n,
     isLoading: N,
     onClose: C,
-    profileViewedAnalytics: D,
-    userId: w
-  } = e, L = null == n ? void 0 : n.identityGuildId, x = (0, m.Cc)(null != L ? L : null), M = null == n ? void 0 : n.tag, {
+    profileViewedAnalytics: w,
+    userId: D
+  } = e, L = null == n ? void 0 : n.identityGuildId, x = (0, g.Cc)(null != L ? L : null), M = null == n ? void 0 : n.tag, {
     newestAnalyticsLocation: k
   } = (0, l.ZP)(), j = i.useMemo(() => A({
-    tagUserId: w,
+    tagUserId: D,
     source: k
-  }, D), [w, k, D]), U = (0, a.e7)([_.default], () => _.default.getId()), G = (0, a.e7)([p.ZP], () => null != L ? p.ZP.getMember(L, U) : null, [L, U]), B = (0, a.e7)([u.Z], () => {
+  }, w), [D, k, w]), U = (0, a.e7)([_.default], () => _.default.getId()), G = (0, a.e7)([p.ZP], () => null != L ? p.ZP.getMember(L, U) : null, [L, U]), B = (0, a.e7)([u.Z], () => {
     var e;
     return (null == x ? void 0 : x.id) != null && (null === (e = u.Z.getRequest(x.id)) || void 0 === e ? void 0 : e.applicationStatus) === c.wB.SUBMITTED
   }), V = null != x && x.memberCount >= O.Du, F = (0, a.e7)([h.default], () => h.default.getUser(U), [U]), Z = (null == G ? void 0 : G.joinedAt) != null, H = (0, v.Z4)(L, null == F ? void 0 : F.primaryGuild), W = null != (0, d.Z)(L);
   i.useEffect(() => {
-    null != L && (0, g.u0)(R(A({
+    null != L && (0, m.u0)(R(A({
       guildId: L,
       hasJoinRequest: W
     }, j), {
@@ -95,13 +95,13 @@ let D = i.memo(function(e) {
     }))
   }, [L, W, j]);
   let Y = i.useCallback(e => {
-      null != L && (e.stopPropagation(), e.preventDefault(), null == C || C(), (0, g.hM)(L, g.UE.TAG_ADOPTION), (0, E.SJ)(L))
+      null != L && (e.stopPropagation(), e.preventDefault(), null == C || C(), (0, m.hM)(L, m.UE.TAG_ADOPTION), (0, E.SJ)(L))
     }, [L, C]),
     K = i.useCallback(() => {
-      null != L && ((0, g.hM)(L, g.UE.APPLICATION), (0, f.uL)(S.Z5c.GUILD_MEMBER_VERIFICATION(L)))
+      null != L && ((0, m.hM)(L, m.UE.APPLICATION), (0, f.uL)(I.Z5c.GUILD_MEMBER_VERIFICATION(L)))
     }, [L]),
     z = i.useCallback(() => {
-      null != L && ((0, g.hM)(L, g.UE.GUILD), (0, f.XU)(L))
+      null != L && ((0, m.hM)(L, m.UE.GUILD), (0, f.XU)(L))
     }, [L]),
     q = i.useMemo(() => {
       var e, t;
@@ -120,21 +120,21 @@ let D = i.memo(function(e) {
           return (0, r.jsx)(y.Z, R(A({
             onClick: K
           }, q), {
-            children: I.NW.string(I.t.dXvKgY)
+            children: S.NW.string(S.t.dXvKgY)
           }));
-        case !Z && (null == x ? void 0 : null === (e = x.discoveryProfileFeatures) || void 0 === e ? void 0 : e.has(S.oNc.CLAN_DISCOVERY_DISABLED)):
+        case !Z && (null == x ? void 0 : null === (e = x.discoveryProfileFeatures) || void 0 === e ? void 0 : e.has(I.oNc.CLAN_DISCOVERY_DISABLED)):
           return null;
         case Z && !H:
           return (0, r.jsx)(y.Z, R(A({
             onClick: Y
           }, q), {
-            children: I.NW.string(I.t["1keBy8"])
+            children: S.NW.string(S.t["1keBy8"])
           }));
         case Z && H:
           return (0, r.jsx)(y.Z, R(A({
             onClick: z
           }, q), {
-            children: I.NW.string(I.t.muzrLS)
+            children: S.NW.string(S.t.muzrLS)
           }));
         default:
           return null

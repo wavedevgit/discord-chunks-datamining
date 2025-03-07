@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S,
+  Z: () => I,
   b: () => O
 });
 var r = n(200651);
@@ -38,8 +38,8 @@ function _(e) {
 }
 let p = window.matchMedia("(prefers-reduced-motion: reduce)"),
   h = window.matchMedia("(prefers-contrast: more)"),
-  g = window.matchMedia("(prefers-contrast: less)"),
-  m = window.matchMedia("(prefers-color-scheme: dark)"),
+  m = window.matchMedia("(prefers-contrast: less)"),
+  g = window.matchMedia("(prefers-color-scheme: dark)"),
   E = window.matchMedia("(prefers-color-scheme: light)"),
   v = window.matchMedia("(forced-colors: active)"),
   b = 5;
@@ -52,9 +52,9 @@ function y() {
 function O() {
   return "windows" === (0, l.getOS)()
 }
-let S = {
+let I = {
   initBasic() {
-    p.addListener(this.handleSystemPrefersReducedMotionChanged), this.handleSystemPrefersReducedMotionChanged(p), m.addListener(this.handleSystemColorPreferencesChanged), E.addListener(this.handleSystemColorPreferencesChanged), v.addListener(this.handleSystemColorPreferencesChanged), this.handleSystemColorPreferencesChanged(), h.addListener(this.handleSystemPrefersContrastChanged), g.addListener(this.handleSystemPrefersContrastChanged), this.handleSystemPrefersContrastChanged()
+    p.addListener(this.handleSystemPrefersReducedMotionChanged), this.handleSystemPrefersReducedMotionChanged(p), g.addListener(this.handleSystemColorPreferencesChanged), E.addListener(this.handleSystemColorPreferencesChanged), v.addListener(this.handleSystemColorPreferencesChanged), this.handleSystemColorPreferencesChanged(), h.addListener(this.handleSystemPrefersContrastChanged), m.addListener(this.handleSystemPrefersContrastChanged), this.handleSystemPrefersContrastChanged()
   },
   init() {
     this.initBasic(), o.Z.subscribe("ACCESSIBILITY_COLORBLIND_TOGGLE", () => {
@@ -82,7 +82,7 @@ let S = {
   },
   handleSystemColorPreferencesChanged() {
     let e;
-    m.matches ? e = d.BRd.DARK : E.matches && (e = d.BRd.LIGHT);
+    g.matches ? e = d.BRd.DARK : E.matches && (e = d.BRd.LIGHT);
     let t = (!l.isPlatformEmbedded || O()) && v.matches ? "active" : "none";
     o.Z.wait(() => {
       c.Ej(e, t)
@@ -90,7 +90,7 @@ let S = {
   },
   handleSystemPrefersContrastChanged() {
     let e = "no-preference";
-    h.matches ? e = "more" : g.matches && (e = "less"), o.Z.wait(() => {
+    h.matches ? e = "more" : m.matches && (e = "less"), o.Z.wait(() => {
       c.TX(e)
     })
   }

@@ -132,12 +132,12 @@
     }
   }
 
-  function g(e, t, n, r) {
+  function m(e, t, n, r) {
     var i = [V(o(e).toString(16)), V(o(t).toString(16)), V(o(n).toString(16))];
     return r && i[0].charAt(0) == i[0].charAt(1) && i[1].charAt(0) == i[1].charAt(1) && i[2].charAt(0) == i[2].charAt(1) ? i[0].charAt(0) + i[1].charAt(0) + i[2].charAt(0) : i.join("")
   }
 
-  function m(e, t, n, r, i) {
+  function g(e, t, n, r, i) {
     var a = [V(o(e).toString(16)), V(o(t).toString(16)), V(o(n).toString(16)), V(Z(r))];
     return i && a[0].charAt(0) == a[0].charAt(1) && a[1].charAt(0) == a[1].charAt(1) && a[2].charAt(0) == a[2].charAt(1) && a[3].charAt(0) == a[3].charAt(1) ? a[0].charAt(0) + a[1].charAt(0) + a[2].charAt(0) + a[3].charAt(0) : a.join("")
   }
@@ -168,13 +168,13 @@
     return n.l += t / 100, n.l = j(n.l), c(n)
   }
 
-  function S(e, t) {
+  function I(e, t) {
     t = 0 === t ? 0 : t || 10;
     var n = c(e).toRgb();
     return n.r = s(0, a(255, n.r - o(-(t / 100 * 255)))), n.g = s(0, a(255, n.g - o(-(t / 100 * 255)))), n.b = s(0, a(255, n.b - o(-(t / 100 * 255)))), c(n)
   }
 
-  function I(e, t) {
+  function S(e, t) {
     t = 0 === t ? 0 : t || 10;
     var n = c(e).toHsl();
     return n.l -= t / 100, n.l = j(n.l), c(n)
@@ -246,7 +246,7 @@
     return o
   }
 
-  function D(e, t) {
+  function w(e, t) {
     t = t || 6;
     for (var n = c(e).toHsv(), r = n.h, i = n.s, o = n.v, a = [], s = 1 / t; t--;) a.push(c({
       h: r,
@@ -318,13 +318,13 @@
       return 1 == this._a ? "hsl(" + t + ", " + n + "%, " + r + "%)" : "hsla(" + t + ", " + n + "%, " + r + "%, " + this._roundA + ")"
     },
     toHex: function(e) {
-      return g(this._r, this._g, this._b, e)
+      return m(this._r, this._g, this._b, e)
     },
     toHexString: function(e) {
       return "#" + this.toHex(e)
     },
     toHex8: function(e) {
-      return m(this._r, this._g, this._b, this._a, e)
+      return g(this._r, this._g, this._b, this._a, e)
     },
     toHex8String: function(e) {
       return "#" + this.toHex8(e)
@@ -352,7 +352,7 @@
       return 1 == this._a ? "rgb(" + o(100 * k(this._r, 255)) + "%, " + o(100 * k(this._g, 255)) + "%, " + o(100 * k(this._b, 255)) + "%)" : "rgba(" + o(100 * k(this._r, 255)) + "%, " + o(100 * k(this._g, 255)) + "%, " + o(100 * k(this._b, 255)) + "%, " + this._roundA + ")"
     },
     toName: function() {
-      return 0 === this._a ? "transparent" : !(this._a < 1) && (L[g(this._r, this._g, this._b, !0)] || !1)
+      return 0 === this._a ? "transparent" : !(this._a < 1) && (L[m(this._r, this._g, this._b, !0)] || !1)
     },
     toFilter: function(e) {
       var t = "#" + E(this._r, this._g, this._b, this._a),
@@ -382,10 +382,10 @@
       return this._applyModification(O, arguments)
     },
     brighten: function() {
-      return this._applyModification(S, arguments)
+      return this._applyModification(I, arguments)
     },
     darken: function() {
-      return this._applyModification(I, arguments)
+      return this._applyModification(S, arguments)
     },
     desaturate: function() {
       return this._applyModification(v, arguments)
@@ -409,7 +409,7 @@
       return this._applyCombination(N, arguments)
     },
     monochromatic: function() {
-      return this._applyCombination(D, arguments)
+      return this._applyCombination(w, arguments)
     },
     splitcomplement: function() {
       return this._applyCombination(R, arguments)
@@ -474,7 +474,7 @@
       size: a
     }) || !i ? s : (n.includeFallbackColors = !1, c.mostReadable(e, ["#fff", "#000"], n))
   };
-  var w = c.names = {
+  var D = c.names = {
       aliceblue: "f0f8ff",
       antiquewhite: "faebd7",
       aqua: "0ff",
@@ -625,7 +625,7 @@
       yellow: "ff0",
       yellowgreen: "9acd32"
     },
-    L = c.hexNames = x(w);
+    L = c.hexNames = x(D);
 
   function x(e) {
     var t = {};
@@ -700,7 +700,7 @@
   function K(e) {
     e = e.replace(n, "").replace(r, "").toLowerCase();
     var t, i = !1;
-    if (w[e]) e = w[e], i = !0;
+    if (D[e]) e = D[e], i = !0;
     else if ("transparent" == e) return {
       r: 0,
       g: 0,

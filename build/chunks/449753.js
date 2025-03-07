@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => I
 }), n(47120);
 var r = n(846519),
   i = n(570140),
@@ -16,8 +16,8 @@ var r = n(846519),
   _ = n(569545),
   p = n(981631);
 let h = new r.V7,
-  g = new r.V7,
-  m = 18e4,
+  m = new r.V7,
+  g = 18e4,
   E = 5 * f.Z.Millis.SECOND,
   v = 12 * f.Z.Millis.SECOND,
   b = null;
@@ -38,10 +38,10 @@ function O(e, t) {
   let n = null != t ? t : c.Z.getPreferredRegion();
   null != n && n !== c.Z.getRegion(d.Z.getHostname(d.Z.getActiveStreamKey())) && (0, o.dV)(e, n)
 }
-let S = {
+let I = {
   init() {
     let e = (e, t) => {
-      d.Z.getAllActiveStreamKeys().includes(e) || g.start(t ? v : E, () => {
+      d.Z.getAllActiveStreamKeys().includes(e) || m.start(t ? v : E, () => {
         i.Z.dispatch({
           type: "STREAM_TIMED_OUT",
           streamKey: e
@@ -68,13 +68,13 @@ let S = {
         ownerId: s.default.getId()
       }), null == o ? void 0 : o.isGuildStageVoice())
     }), i.Z.subscribe("STREAM_CREATE", () => {
-      g.stop()
+      m.stop()
     }), i.Z.subscribe("STREAM_UPDATE", () => {
-      g.stop()
+      m.stop()
     }), i.Z.subscribe("STREAM_DELETE", () => {
-      g.stop()
+      m.stop()
     }), i.Z.subscribe("STREAM_CLOSE", () => {
-      h.stop(), g.stop()
+      h.stop(), m.stop()
     }), i.Z.subscribe("VOICE_CHANNEL_SELECT", e => {
       let {
         channelId: t
@@ -102,7 +102,7 @@ let S = {
         if (t !== s.default.getId() && null != n) {
           if (i && y(n, t)) return;
           let e = a.Z.getActiveStreamForUser(t, r);
-          if (null != e && e.channelId === n && (i || e.state === p.jm8.ENDED || h.start(m, () => (0, o.aP)((0, _.V9)(e), !1)), i && e.state === p.jm8.ENDED)) {
+          if (null != e && e.channelId === n && (i || e.state === p.jm8.ENDED || h.start(g, () => (0, o.aP)((0, _.V9)(e), !1)), i && e.state === p.jm8.ENDED)) {
             h.stop();
             let e = a.Z.getStreamForUser(t, r);
             if (null == e) return;

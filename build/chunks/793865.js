@@ -23,11 +23,11 @@ function h(e) {
     onSelect: n,
     simplified: i = !1,
     appContext: h,
-    onInteraction: g
-  } = e, m = (0, a.e7)([c.default], () => {
+    onInteraction: m
+  } = e, g = (0, a.e7)([c.default], () => {
     let e = c.default.getCurrentUser();
     return o()(null != e, "VideoDeviceMenu: currentUser cannot be undefined"), e
-  }), E = (0, u.Z)(i), v = (0, d.Z)(m.id, h), b = (0, f.Z)(h);
+  }), E = (0, u.Z)(i), v = (0, d.Z)(g.id, h), b = (0, f.Z)(h);
   return (0, r.jsx)(l.Z, {
     object: _.qAy.CONTEXT_MENU,
     children: (0, r.jsxs)(s.v2r, {
@@ -35,7 +35,7 @@ function h(e) {
       navId: "video-device-context",
       "aria-label": p.NW.string(p.t.F122Gx),
       onSelect: n,
-      onInteraction: g,
+      onInteraction: m,
       children: [E, (0, r.jsxs)(s.kSQ, {
         children: [v, i ? b : null]
       })]

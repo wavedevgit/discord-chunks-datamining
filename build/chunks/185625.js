@@ -7,12 +7,12 @@ n.d(t, {
   RV: () => b,
   VP: () => C,
   X: () => A,
-  ZD: () => m,
+  ZD: () => g,
   fw: () => E,
   hs: () => O,
   i_: () => P,
   k8: () => N,
-  ox: () => g,
+  ox: () => m,
   qJ: () => y,
   yL: () => v
 }), n(411104), n(977457), n(47120);
@@ -64,7 +64,7 @@ function _(e, t) {
 }
 async function p(e, t) {
   var n;
-  let r = I(e),
+  let r = S(e),
     o = await i.tn.get({
       url: c.ANM.GET_REPORT_MENU(r),
       query: (null == t ? void 0 : t.variant) != null ? {
@@ -76,7 +76,7 @@ async function p(e, t) {
 }
 async function h(e, t) {
   var n;
-  let r = S(e),
+  let r = I(e),
     o = await i.tn.get({
       url: c.ANM.GET_UNAUTHENTICATED_REPORT_MENU(r),
       query: (null == t ? void 0 : t.variant) != null ? {
@@ -86,8 +86,8 @@ async function h(e, t) {
     });
   return null !== (n = o.body) && void 0 !== n ? n : JSON.parse(o.text)
 }
-async function g(e, t) {
-  let n = I(e),
+async function m(e, t) {
+  let n = S(e),
     r = await p(e, t);
   await i.tn.post({
     url: c.ANM.SUBMIT_REPORT_MENU(n),
@@ -99,9 +99,9 @@ async function g(e, t) {
   })
 }
 
-function m(e, t, n) {
+function g(e, t, n) {
   return s.ZP.get("iar_skip_api_report_submit") ? Promise.resolve() : i.tn.post({
-    url: c.ANM.SUBMIT_REPORT_MENU(I(t)),
+    url: c.ANM.SUBMIT_REPORT_MENU(S(t)),
     body: T(e, t, n),
     rejectWithError: !1
   })
@@ -109,7 +109,7 @@ function m(e, t, n) {
 
 function E(e, t, n, r) {
   if (s.ZP.get("iar_skip_api_report_submit")) return Promise.resolve();
-  let o = S(t);
+  let o = I(t);
   return i.tn.post({
     url: c.ANM.SUBMIT_UNAUTHENTICATED_REPORT_MENU(o),
     body: T(e, t, n, r),
@@ -154,13 +154,13 @@ async function O(e) {
   })).body
 }
 
-function S(e) {
+function I(e) {
   let t = e.name;
   if (!Object.values(l.BM).includes(t)) throw Error("Invalid report type ".concat(e.name));
   return t
 }
 
-function I(e) {
+function S(e) {
   let t = e.name;
   if (!Object.values(l.b).includes(t)) throw Error("Invalid report type ".concat(e.name));
   return t

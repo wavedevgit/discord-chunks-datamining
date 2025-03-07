@@ -23,11 +23,11 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let h = new Map,
-  g = [];
+  m = [];
 
-function m(e, t) {
+function g(e, t) {
   var n, r;
-  return null !== (r = null === (n = E(e)) || void 0 === n ? void 0 : n.get(t)) && void 0 !== r ? r : g
+  return null !== (r = null === (n = E(e)) || void 0 === n ? void 0 : n.get(t)) && void 0 !== r ? r : m
 }
 
 function E(e) {
@@ -43,7 +43,7 @@ function v(e, t, n) {
 function b(e) {
   let {
     channelId: t
-  } = e, n = [...m(t, d.d.ChannelMessage)];
+  } = e, n = [...g(t, d.d.ChannelMessage)];
   n.shift(), v(t, d.d.ChannelMessage, n)
 }
 let y = e => {
@@ -52,7 +52,7 @@ let y = e => {
     channelId: n,
     showLargeMessageDialog: r,
     draftType: i
-  } = e, a = [...m(n, i)];
+  } = e, a = [...g(n, i)];
   if (a.length + t.length > f.dN1 && i !== d.d.SlashCommand && i !== d.d.ApplicationLauncherCommand) {
     l.Z.show({
       title: _.NW.string(_.t.wOr6hI),
@@ -73,26 +73,26 @@ function O(e) {
     channelId: t,
     id: n,
     draftType: r
-  } = e, i = [...m(t, r)], o = i.findIndex(e => (0, u.T)({
+  } = e, i = [...g(t, r)], o = i.findIndex(e => (0, u.T)({
     uri: n,
     filename: n
   }, e));
   o > -1 && (i.splice(o, 1)[0].cancel(), v(t, r, i))
 }
 
-function S(e) {
+function I(e) {
   let {
     channelId: t,
     attachmentIds: n,
     draftType: r
-  } = e, i = [...m(t, r)];
+  } = e, i = [...g(t, r)];
   n.forEach(e => {
     let t = i.findIndex(t => e === t.id);
     t > -1 && i.splice(t, 1)[0].cancel()
   }), v(t, r, i)
 }
 
-function I(e) {
+function S(e) {
   let {
     channelId: t,
     id: n,
@@ -101,7 +101,7 @@ function I(e) {
     spoiler: o,
     thumbnail: a,
     draftType: s
-  } = e, l = [...m(t, s)].map(e => (e.id === n && (void 0 !== r && (e.filename = r), void 0 !== o && (e.spoiler = o), void 0 !== i && (e.description = i), void 0 !== a && (e.isThumbnail = a)), e));
+  } = e, l = [...g(t, s)].map(e => (e.id === n && (void 0 !== r && (e.filename = r), void 0 !== o && (e.spoiler = o), void 0 !== i && (e.description = i), void 0 !== a && (e.isThumbnail = a)), e));
   v(t, s, l)
 }
 
@@ -111,7 +111,7 @@ function T(e) {
     id: n,
     file: r,
     draftType: i
-  } = e, o = [...m(t, i)].filter(e => e.id !== n), a = new c.n(r, t);
+  } = e, o = [...g(t, i)].filter(e => e.id !== n), a = new c.n(r, t);
   a.upload(), o.push(a), v(t, i, o)
 }
 
@@ -140,34 +140,34 @@ function C(e) {
 }
 class R extends(r = a.ZP.Store) {
   getFirstUpload(e, t) {
-    let n = m(e, t);
+    let n = g(e, t);
     return n.length > 0 ? n[0] : null
   }
   hasAdditionalUploads(e, t) {
     var n;
-    return (null !== (n = m(e, t).length) && void 0 !== n ? n : 0) > 1
+    return (null !== (n = g(e, t).length) && void 0 !== n ? n : 0) > 1
   }
   getUploads(e, t) {
-    return m(e, t)
+    return g(e, t)
   }
   getUploadCount(e, t) {
     var n;
-    return null !== (n = m(e, t).length) && void 0 !== n ? n : 0
+    return null !== (n = g(e, t).length) && void 0 !== n ? n : 0
   }
   getUpload(e, t, n) {
-    return m(e, n).find(e => e.id === t)
+    return g(e, n).find(e => e.id === t)
   }
   findUpload(e, t, n) {
-    return m(e, t).find(n)
+    return g(e, t).find(n)
   }
 }
 p(R, "displayName", "UploadAttachmentStore");
 let P = new R(s.Z, {
   UPLOAD_ATTACHMENT_POP_FILE: b,
   UPLOAD_ATTACHMENT_ADD_FILES: y,
-  UPLOAD_ATTACHMENT_UPDATE_FILE: I,
+  UPLOAD_ATTACHMENT_UPDATE_FILE: S,
   UPLOAD_ATTACHMENT_REMOVE_FILE: O,
-  UPLOAD_ATTACHMENT_REMOVE_FILES: S,
+  UPLOAD_ATTACHMENT_REMOVE_FILES: I,
   UPLOAD_ATTACHMENT_CLEAR_ALL_FILES: A,
   UPLOAD_ATTACHMENT_SET_UPLOADS: N,
   UPLOAD_ATTACHMENT_SET_FILE: T,

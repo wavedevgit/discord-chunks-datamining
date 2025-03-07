@@ -2,12 +2,12 @@
 "use strict";
 n.d(t, {
   $E: () => L,
-  T6: () => D,
-  TW: () => I,
+  T6: () => w,
+  TW: () => S,
   U0: () => R,
   WO: () => x,
   rU: () => P,
-  wX: () => w
+  wX: () => D
 });
 var r = n(544891),
   i = n(780384),
@@ -22,8 +22,8 @@ var r = n(544891),
   _ = n(626135),
   p = n(585483),
   h = n(70956),
-  g = n(176354),
-  m = n(563114),
+  m = n(176354),
+  g = n(563114),
   E = n(981631),
   v = n(388032);
 
@@ -60,12 +60,12 @@ function O(e, t) {
   return n
 }
 
-function S(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var I = function(e) {
+var S = function(e) {
   return e.MESSAGE = "Message", e.FORUM_TOOLBAR = "Forum Toolbar", e.MOBILE_MEDIA_VIEWER = "Mobile Media Viewer", e.MESSAGE_HOVER_BAR = "Message Hover Bar", e.MESSAGE_INLINE_BUTTON = "Message Inline Button", e.MESSAGE_CONTEXT_MENU = "Message Context Menu", e.MESSAGE_REACTION_PICKER = "Message Reaction Picker", e.MESSAGE_SHORTCUT = "Message Shortcut", e
 }({});
 
@@ -202,10 +202,10 @@ async function P(e, t, n) {
     }
     f ? (i.uv.announce(v.NW.formatToPlainString(v.t["RJlG+f"], {
       name: n.name
-    })), m.Z.triggerFullscreenAnimation({
+    })), g.Z.triggerFullscreenAnimation({
       channelId: e,
       messageId: t,
-      emoji: S(y({}, n), {
+      emoji: I(y({}, n), {
         animated: !1
       })
     })) : i.uv.announce(v.NW.formatToPlainString(v.t.ol4acH, {
@@ -227,7 +227,7 @@ async function P(e, t, n) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     channelId: t,
     messageId: n,
@@ -242,14 +242,14 @@ function D(e) {
     key: i
   })
 }
-async function w(e, t, n) {
+async function D(e, t, n) {
   let i = null != n && !!n.isRetry;
   await c.Z.unarchiveThreadIfNecessary(e), r.tn.del({
     url: E.ANM.REMOVE_REACTIONS(e, t),
     oldFormErrors: !0,
     rejectWithError: !1
   }).catch(n => {
-    T(n, () => w(e, t, {
+    T(n, () => D(e, t, {
       isRetry: !0
     }), {
       isRetry: i
@@ -335,7 +335,7 @@ async function x(e) {
 async function M(e, t) {
   let n = [];
   if (t) try {
-    n = await (0, g.B6)(e)
+    n = await (0, m.B6)(e)
   } catch (e) {}
   return n
 }

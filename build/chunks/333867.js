@@ -48,13 +48,13 @@ function h(e, t) {
   return n
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -84,8 +84,8 @@ function O(e) {
     giftingOrigin: h,
     onClose: E,
     onComplete: O,
-    analyticsLocations: S,
-    analyticsObject: I,
+    analyticsLocations: I,
+    analyticsObject: S,
     giftRecipient: T,
     variantsReturnStyle: N
   } = e, A = !1, C = (0, i.Z)(), R = e => {
@@ -95,14 +95,14 @@ function O(e) {
     var {
       onClose: t,
       returnRef: i
-    } = e, o = m(e, ["onClose", "returnRef"]);
-    return (0, r.jsx)(d.Z, g(p({}, o), {
+    } = e, o = g(e, ["onClose", "returnRef"]);
+    return (0, r.jsx)(d.Z, m(p({}, o), {
       loadId: C,
       skuId: n,
       isGift: u,
       giftMessage: _,
       giftingOrigin: h,
-      analyticsLocations: S,
+      analyticsLocations: I,
       giftRecipient: T,
       onClose: e => {
         t(), null == E || E(e)
@@ -119,10 +119,10 @@ function O(e) {
       A || c.default.track(f.rMx.PAYMENT_FLOW_CANCELED, {
         load_id: C,
         payment_type: f.Zuq[f.GZQ.ONE_TIME],
-        location: I,
+        location: S,
         is_gift: u,
         sku_id: n,
-        location_stack: S
+        location_stack: I
       }), (0, a.fw)(), (0, s.p)(), null == E || E(A), A && (0, l.qg)({
         variantsReturnStyle: N,
         location: "openCollectiblesPaymentModal"

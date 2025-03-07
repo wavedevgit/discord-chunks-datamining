@@ -10,7 +10,7 @@ n.d(t, {
   iV: () => x,
   n9: () => j,
   pR: () => L,
-  rn: () => w,
+  rn: () => D,
   tK: () => P,
   xc: () => U
 });
@@ -27,17 +27,17 @@ var r = n(512722),
   _ = n(199902),
   p = n(314897),
   h = n(592125),
-  g = n(430824),
-  m = n(944486),
+  m = n(430824),
+  g = n(944486),
   E = n(979651),
   v = n(934415),
   b = n(70956),
   y = n(557457),
   O = n(573261);
 n(26151), n(493683);
-var S = n(475179);
+var I = n(475179);
 n(287734);
-var I = n(981631),
+var S = n(981631),
   T = n(70722);
 
 function N(e, t, n) {
@@ -69,7 +69,7 @@ function R(e, t, n) {
     streamType: null != e ? T.lo.GUILD : T.lo.CALL,
     guildId: e,
     channelId: t,
-    appContext: __OVERLAY__ ? I.IlC.OVERLAY : I.IlC.APP
+    appContext: __OVERLAY__ ? S.IlC.OVERLAY : S.IlC.APP
   }, n))
 }
 
@@ -82,18 +82,18 @@ function P(e, t) {
   })
 }
 
-function D(e, t) {
+function w(e, t) {
   let n = h.Z.getChannel(t);
-  return i()(null != n, "Cannot join a null voice channel"), !E.Z.isInChannel(t) && (0, v.rY)(n, E.Z, g.Z)
+  return i()(null != n, "Cannot join a null voice channel"), !E.Z.isInChannel(t) && (0, v.rY)(n, E.Z, m.Z)
 }
 
-function w(e, t) {
+function D(e, t) {
   if (null != l.Z.getRemoteSessionId()) return;
   let {
     guildId: n,
     channelId: r
   } = e;
-  if (null != n && D(n, r)) return;
+  if (null != n && w(n, r)) return;
   let i = (0, c.V9)(e),
     o = (null == t ? void 0 : t.forceMultiple) || _.Z.getAllActiveStreamsForChannel(r).filter(e => {
       let {
@@ -105,7 +105,7 @@ function w(e, t) {
     type: "STREAM_WATCH",
     streamKey: i,
     allowMultiple: o
-  }), o || null != t && t.noFocus || S.Z.selectParticipant(e.channelId, i)
+  }), o || null != t && t.noFocus || I.Z.selectParticipant(e.channelId, i)
 }
 
 function L(e, t) {
@@ -121,10 +121,10 @@ function x(e, t) {
     guildId: n,
     channelId: r
   } = e;
-  if (null != n && D(n, r)) return;
-  w(e, t);
-  let i = d.Z.getWindowOpen(I.KJ3.CHANNEL_CALL_POPOUT),
-    o = m.Z.getVoiceChannelId();
+  if (null != n && w(n, r)) return;
+  D(e, t);
+  let i = d.Z.getWindowOpen(S.KJ3.CHANNEL_CALL_POPOUT),
+    o = g.Z.getVoiceChannelId();
   (!i || o !== r) && (0, u.Z)(e)
 }
 
@@ -133,7 +133,7 @@ function M(e) {
   k(e, t), s.Z.dispatch({
     type: "STREAM_STOP",
     streamKey: e,
-    appContext: __OVERLAY__ ? I.IlC.OVERLAY : I.IlC.APP
+    appContext: __OVERLAY__ ? S.IlC.OVERLAY : S.IlC.APP
   })
 }
 
@@ -159,7 +159,7 @@ async function j(e, t, n) {
   });
   try {
     let e = await a.tn.get({
-      url: I.ANM.STREAM_PREVIEW(r),
+      url: S.ANM.STREAM_PREVIEW(r),
       query: {
         version: Date.now()
       },
@@ -183,7 +183,7 @@ async function j(e, t, n) {
 async function U(e) {
   try {
     await O.Z.post({
-      url: I.ANM.STREAM_NOTIFY(e),
+      url: S.ANM.STREAM_NOTIFY(e),
       oldFormErrors: !0,
       trackedActionData: {
         event: o.NetworkActionNames.STREAM_NOTIFY
@@ -201,7 +201,7 @@ function G(e) {
 
 function B(e, t) {
   a.tn.patch({
-    url: I.ANM.STREAM(e),
+    url: S.ANM.STREAM(e),
     body: {
       region: t
     },

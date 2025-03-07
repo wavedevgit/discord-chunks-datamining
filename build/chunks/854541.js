@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  AG: () => w,
+  AG: () => D,
   Z$: () => M,
   jH: () => L,
   zH: () => k
@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(463208),
   p = n(481060),
   h = n(408886),
-  g = n(44315),
-  m = n(665149),
+  m = n(44315),
+  g = n(665149),
   E = n(981631),
   v = n(388032),
   b = n(506299);
@@ -47,7 +47,7 @@ function O(e) {
   return e
 }
 
-function S(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function S(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -89,7 +89,7 @@ function P(e) {
   return null == e ? null : "string" == typeof e ? (0, c.FX)(e) ? (0, c._i)(e) : null : e
 }
 
-function D(e) {
+function w(e) {
   let {
     color: t,
     isDefault: n = !1,
@@ -99,7 +99,7 @@ function D(e) {
     style: u = {},
     onClick: d,
     "aria-label": _
-  } = e, h = (0, s.JA)("color-".concat(t)), m = null != t ? (0, c.Rf)(t) : u.backgroundColor, v = !1;
+  } = e, h = (0, s.JA)("color-".concat(t)), g = null != t ? (0, c.Rf)(t) : u.backgroundColor, v = !1;
 
   function y() {
     let e = 16,
@@ -108,12 +108,12 @@ function D(e) {
       size: "custom",
       width: e,
       height: t,
-      color: (0, g.Lq)(v ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
+      color: (0, m.Lq)(v ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
     })
   }
   return i && !o ? v = !0 : (i || o) && (v = (0, c.Bd)(t) > .1), (0, r.jsx)(f.t, {
     offset: -2,
-    children: (0, r.jsxs)("button", I(O({
+    children: (0, r.jsxs)("button", S(O({
       type: "button",
       className: a()(b.colorPickerSwatch, {
         [b.disabled]: l,
@@ -123,10 +123,10 @@ function D(e) {
       }),
       disabled: l,
       onClick: () => null == d ? void 0 : d(t),
-      style: I(O({}, u), {
-        backgroundColor: m
+      style: S(O({}, u), {
+        backgroundColor: g
       }),
-      "aria-label": null != _ ? _ : m
+      "aria-label": null != _ ? _ : g
     }, h), {
       children: [i ? (0, r.jsx)(p.vdY, {
         size: "custom",
@@ -134,12 +134,12 @@ function D(e) {
         colorClass: b.colorPickerDropperFg,
         width: 14,
         height: 14,
-        color: (0, g.Lq)(v ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
+        color: (0, m.Lq)(v ? E.Ilk.WHITE_500 : E.Ilk.BLACK_500)
       }) : null, y()]
     }))
   })
 }
-class w extends i.PureComponent {
+class D extends i.PureComponent {
   render() {
     let {
       color: e,
@@ -147,7 +147,7 @@ class w extends i.PureComponent {
       value: n,
       disabled: i
     } = this.props;
-    return (0, r.jsx)(D, {
+    return (0, r.jsx)(w, {
       isDefault: !0,
       color: e,
       isSelected: e === n || 0 === n,
@@ -164,7 +164,7 @@ class L extends i.PureComponent {
       disabled: n,
       "aria-label": i
     } = this.props;
-    return (0, r.jsx)(D, {
+    return (0, r.jsx)(w, {
       isCustom: !0,
       color: e,
       isSelected: t === e,
@@ -182,17 +182,17 @@ function x(e) {
     onClose: s,
     suggestedColors: l,
     middle: f,
-    footer: g,
+    footer: m,
     showEyeDropper: E,
     wrapperComponentType: y,
-    className: S
-  } = e, T = (0, h.Z)(), N = P(t), R = null != N ? N : 0, D = (0, c.Rf)(R), w = (0, c.O)(R), [L, x] = i.useState({
+    className: I
+  } = e, T = (0, h.Z)(), N = P(t), R = null != N ? N : 0, w = (0, c.Rf)(R), D = (0, c.O)(R), [L, x] = i.useState({
     current: R,
     pending: {
-      hex: D,
-      hsl: w
+      hex: w,
+      hsl: D
     },
-    input: D
+    input: w
   });
   i.useEffect(() => {
     if (null == N || N === L.current) return;
@@ -210,7 +210,7 @@ function x(e) {
   let M = e => {
       let t = "#" === e[0] ? e : "#".concat(e);
       if (!(0, c.FX)(t)) {
-        x(e => I(O({}, e), {
+        x(e => S(O({}, e), {
           input: t
         }));
         return
@@ -234,7 +234,7 @@ function x(e) {
         M(e)
       } catch (e) {}
     }, j = i.useCallback(e => {
-      x(t => I(O({}, t), {
+      x(t => S(O({}, t), {
         pending: e,
         input: e.hex
       })), n && o((0, c._i)(e.hex))
@@ -255,7 +255,7 @@ function x(e) {
         })
       }), f, (0, r.jsxs)("div", {
         className: b.customColorPickerInputContainer,
-        children: [E && null != T && (0, r.jsx)(m.JO, {
+        children: [E && null != T && (0, r.jsx)(g.JO, {
           onClick: k,
           tooltip: v.NW.string(v.t["0dU9Nz"]),
           tooltipPosition: "top",
@@ -277,11 +277,11 @@ function x(e) {
           className: b.suggestedColor,
           onClick: () => M(e)
         }, "".concat(e, "-").concat(t)))
-      }), g]
+      }), m]
     }), B = null != y ? y : d.V;
   return (0, r.jsx)(B, {
     "aria-label": v.NW.string(v.t.WTqQ5e),
-    className: a()(b.customColorPicker, S),
+    className: a()(b.customColorPicker, I),
     children: G
   })
 }
@@ -301,13 +301,13 @@ function k(e) {
     colorContainerClassName: p
   } = e, h = e => (0, r.jsx)("div", {
     className: b.colorPickerRow,
-    children: e.map(e => (0, r.jsx)(D, {
+    children: e.map(e => (0, r.jsx)(w, {
       color: e,
       isSelected: e === c,
       onClick: d,
       disabled: u
     }, e))
-  }), g = o.slice(0, o.length / 2), m = o.slice(o.length / 2, o.length), E = (0, l.ZP)({
+  }), m = o.slice(0, o.length / 2), g = o.slice(o.length / 2, o.length), E = (0, l.ZP)({
     id: "color-picker",
     isEnabled: !0,
     scrollToStart: R,
@@ -320,7 +320,7 @@ function k(e) {
         var {
           ref: o
         } = e, s = T(e, ["ref"]);
-        return (0, r.jsxs)("div", I(O({
+        return (0, r.jsxs)("div", S(O({
           className: a()(b.container, t),
           ref: o
         }, s), {
@@ -340,7 +340,7 @@ function k(e) {
               disabled: u
             })
           }), (0, r.jsxs)("div", {
-            children: [h(g), h(m)]
+            children: [h(m), h(g)]
           })]
         }))
       }

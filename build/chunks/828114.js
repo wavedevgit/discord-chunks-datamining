@@ -13,27 +13,27 @@ var r = n(147018),
   _ = n(859209),
   p = n(641236),
   h = n(874652),
-  g = n(84297),
-  m = a.PROPER,
+  m = n(84297),
+  g = a.PROPER,
   E = a.CONFIGURABLE,
-  v = g.IteratorPrototype,
-  b = g.BUGGY_SAFARI_ITERATORS,
+  v = m.IteratorPrototype,
+  b = m.BUGGY_SAFARI_ITERATORS,
   y = p("iterator"),
   O = "keys",
-  S = "values",
-  I = "entries",
+  I = "values",
+  S = "entries",
   T = function() {
     return this
   };
-e.exports = function(e, t, n, a, p, g, N) {
+e.exports = function(e, t, n, a, p, m, N) {
   l(n, t, a);
   var A, C, R, P = function(e) {
       if (e === p && M) return M;
       if (!b && e && e in L) return L[e];
       switch (e) {
         case O:
-        case S:
         case I:
+        case S:
           return function() {
             return new n(this, e)
           }
@@ -42,25 +42,25 @@ e.exports = function(e, t, n, a, p, g, N) {
         return new n(this)
       }
     },
-    D = t + " Iterator",
-    w = !1,
+    w = t + " Iterator",
+    D = !1,
     L = e.prototype,
     x = L[y] || L["@@iterator"] || p && L[p],
     M = !b && x || P(p),
     k = "Array" === t && L.entries || x;
-  if (k && (A = c(k.call(new e))) !== Object.prototype && A.next && (o || c(A) === v || (u ? u(A, v) : s(A[y]) || _(A, y, T)), d(A, D, !0, !0), o && (h[D] = T)), m && p === S && x && x.name !== S && (!o && E ? f(L, "name", S) : (w = !0, M = function() {
+  if (k && (A = c(k.call(new e))) !== Object.prototype && A.next && (o || c(A) === v || (u ? u(A, v) : s(A[y]) || _(A, y, T)), d(A, w, !0, !0), o && (h[w] = T)), g && p === I && x && x.name !== I && (!o && E ? f(L, "name", I) : (D = !0, M = function() {
       return i(x, this)
     })), p) {
     if (C = {
-        values: P(S),
-        keys: g ? M : P(O),
-        entries: P(I)
+        values: P(I),
+        keys: m ? M : P(O),
+        entries: P(S)
       }, N)
-      for (R in C) !b && !w && R in L || _(L, R, C[R]);
+      for (R in C) !b && !D && R in L || _(L, R, C[R]);
     else r({
       target: t,
       proto: !0,
-      forced: b || w
+      forced: b || D
     }, C)
   }
   return (!o || N) && L[y] !== M && _(L, y, M, {

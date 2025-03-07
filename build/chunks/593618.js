@@ -17,23 +17,23 @@ var r = n(200651),
   _ = n(470883),
   p = n(750881),
   h = n(540059),
-  g = n(666188),
-  m = n(372769),
+  m = n(666188),
+  g = n(372769),
   E = n(523751),
   v = n(246364),
   b = n(746916),
   y = n(965638),
   O = n(160404),
-  S = n(777861),
-  I = n(565799),
+  I = n(777861),
+  S = n(565799),
   T = n(501655),
   N = n(517334),
   A = n(344185),
   C = n(199902),
   R = n(984933),
   P = n(699516),
-  D = n(9156),
-  w = n(594174),
+  w = n(9156),
+  D = n(594174),
   L = n(938475),
   x = n(981631),
   M = n(388032),
@@ -111,9 +111,9 @@ function F(e) {
       });
       return u ? (0, _.dq)(r, s) : r
     }),
-    h = (0, c.Wu)([I.Z], () => l().flatMap(o, t => {
+    h = (0, c.Wu)([S.Z], () => l().flatMap(o, t => {
       if (t === e.afkChannelId) return [];
-      let n = I.Z.getMutableParticipants(t, T.pV.SPEAKER).filter(e => e.type === T.Ui.VOICE).map(e => {
+      let n = S.Z.getMutableParticipants(t, T.pV.SPEAKER).filter(e => e.type === T.Ui.VOICE).map(e => {
         let {
           user: t
         } = e;
@@ -121,12 +121,12 @@ function F(e) {
       });
       return u ? (0, _.dq)(n, s) : n
     })),
-    g = (0, c.e7)([I.Z], () => {
+    m = (0, c.e7)([S.Z], () => {
       let e = 0;
-      for (let t of o) e += I.Z.getParticipantCount(t, T.pV.AUDIENCE);
+      for (let t of o) e += S.Z.getParticipantCount(t, T.pV.AUDIENCE);
       return e
     }),
-    m = (0, c.Wu)([C.Z], () => {
+    g = (0, c.Wu)([C.Z], () => {
       let e = C.Z.getAllApplicationStreams().filter(e => e.guildId === t).map(e => e.ownerId);
       return u ? (0, _._j)(e, s) : e
     }, [u, s, t]),
@@ -134,22 +134,22 @@ function F(e) {
       let e = d.ZP.getEmbeddedActivitiesForGuild(t).flatMap(e => Array.from(e.userIds));
       return u ? (0, _._j)(e, s) : e
     }, [t, u, s]),
-    v = (0, c.Wu)([w.default], () => {
-      let e = E.map(e => w.default.getUser(e));
+    v = (0, c.Wu)([D.default], () => {
+      let e = E.map(e => D.default.getUser(e));
       return u ? (0, _.dq)(e) : e
     }, [u, E]),
-    b = (0, c.Wu)([w.default], () => m.map(e => w.default.getUser(e)), [m]),
-    y = f.filter(e => !m.includes(e.id) && !E.includes(e.id)),
+    b = (0, c.Wu)([D.default], () => g.map(e => D.default.getUser(e)), [g]),
+    y = f.filter(e => !g.includes(e.id) && !E.includes(e.id)),
     O = u ? (0, _.dq)(y) : y,
-    S = b.filter(e => null != e && !E.includes(e.id)),
-    D = h.length > 0 || y.length > 0 || S.length > 0 || v.length > 0;
+    I = b.filter(e => null != e && !E.includes(e.id)),
+    w = h.length > 0 || y.length > 0 || I.length > 0 || v.length > 0;
   return {
     voiceUsersToShow: O,
     stageSpeakers: h,
-    numStageListeners: g,
-    streamUsersToShow: S,
+    numStageListeners: m,
+    streamUsersToShow: I,
     embeddedActivitiesUsers: v,
-    hasActivity: D
+    hasActivity: w
   }
 }
 
@@ -203,7 +203,7 @@ function W(e) {
     color: "text-muted",
     className: n,
     children: M.NW.string(M.t.fpKdS0)
-  }) : (0, r.jsx)(S.Z, {
+  }) : (0, r.jsx)(I.Z, {
     muteConfig: t,
     className: n
   })
@@ -219,15 +219,15 @@ function Y(e) {
     streamUsersToShow: l,
     embeddedActivitiesUsers: d
   } = F(t), f = Z(u.gj8, i, n), _ = H(n, o, s), p = Z(u.hGI, l, n), h = Z(u.nG3, d, n), {
-    isMuted: g,
-    muteConfig: m
-  } = (0, c.cj)([D.ZP], () => ({
-    isMuted: D.ZP.isMuted(n),
-    muteConfig: D.ZP.getMuteConfig(n)
+    isMuted: m,
+    muteConfig: g
+  } = (0, c.cj)([w.ZP], () => ({
+    isMuted: w.ZP.isMuted(n),
+    muteConfig: w.ZP.getMuteConfig(n)
   }), [n]), E = null != f || null != p;
   return (0, r.jsxs)(r.Fragment, {
-    children: [_, f, p, h, g ? (0, r.jsx)(W, {
-      muteConfig: m,
+    children: [_, f, p, h, m ? (0, r.jsx)(W, {
+      muteConfig: g,
       className: a()(k.muteText, {
         [k.muteTextWithActivity]: E
       })
@@ -264,7 +264,7 @@ function q(e) {
   let {
     guild: t,
     includeActivity: n = !0
-  } = e, i = (0, g.Z)(t), o = (0, b.E)(t), s = null != o ? (0, r.jsx)(z, {
+  } = e, i = (0, m.Z)(t), o = (0, b.E)(t), s = null != o ? (0, r.jsx)(z, {
     guildJoinRequestStatus: o
   }) : null, l = n ? (0, r.jsx)(Y, {
     guild: t
@@ -275,7 +275,7 @@ function q(e) {
       children: [i ? (0, r.jsx)(E.Z, {
         guild: t,
         className: k.rowIconV2
-      }) : (0, r.jsx)(m.Z, {
+      }) : (0, r.jsx)(g.Z, {
         guild: t,
         size: 20,
         className: k.rowIcon

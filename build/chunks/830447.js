@@ -17,8 +17,8 @@ var r = n(200651),
   _ = n(857595),
   p = n(607070),
   h = n(828214),
-  g = n(670596),
-  m = n(788314),
+  m = n(670596),
+  g = n(788314),
   E = n(748497);
 
 function v(e, t, n) {
@@ -60,22 +60,22 @@ function O(e, t) {
   }), e
 }
 
-function S(e) {
+function I(e) {
   return null == e ? [] : i.Children.toArray(e).flatMap(e => {
     var t;
-    return null == e ? [] : Array.isArray(e) ? S(e) : e.type === i.Fragment ? null !== (t = S(e.props.children)) && void 0 !== t ? t : [] : [e]
+    return null == e ? [] : Array.isArray(e) ? I(e) : e.type === i.Fragment ? null !== (t = I(e.props.children)) && void 0 !== t ? t : [] : [e]
   })
 }
 
-function I(e) {
-  return S(e).reduce((e, t) => {
+function S(e) {
+  return I(e).reduce((e, t) => {
     var n, r;
     if (t.type === h.Cl) return e.push({
       type: "separator",
       navigable: !1
     }), e;
     if (t.type === h.kS) {
-      let n = I(t.props.children);
+      let n = S(t.props.children);
       return n.length > 0 && (e.push({
         type: "groupstart",
         length: n.length,
@@ -99,7 +99,7 @@ function I(e) {
       key: t.props.id,
       navigable: !0,
       label: t.props.label,
-      children: t.props.children ? I(t.props.children) : void 0,
+      children: t.props.children ? S(t.props.children) : void 0,
       onChildrenScroll: t.props.onChildrenScroll,
       props: t.props,
       childRowHeight: t.props.childRowHeight,
@@ -148,13 +148,13 @@ function N(e, t, n, i) {
     let c = a.length > 0 ? a[a.length - 1] : e;
     switch (s.type) {
       case "separator":
-        c.push((0, r.jsx)(m.Z0, {}, "separator-".concat(l))), o = 0;
+        c.push((0, r.jsx)(g.Z0, {}, "separator-".concat(l))), o = 0;
         break;
       case "groupstart":
-        o > 0 && s.length > 0 && (c.push((0, r.jsx)(m.Z0, {}, "separator-".concat(l))), o = 0), a.push([]);
+        o > 0 && s.length > 0 && (c.push((0, r.jsx)(g.Z0, {}, "separator-".concat(l))), o = 0), a.push([]);
         break;
       case "groupend":
-        a.length > 0 && e.push((0, r.jsx)(m.ZA, b({
+        a.length > 0 && e.push((0, r.jsx)(g.ZA, b({
           contents: a.pop()
         }, s.props), "group-".concat(l)));
         break;
@@ -167,7 +167,7 @@ function N(e, t, n, i) {
           subMenuClassName: d
         } = s, f = null != e, _ = [...n, s.key], p = t.isFocused(_), h = null != e ? {
           "aria-haspopup": !0
-        } : {}, g = (0, r.jsx)(m.ck, O(b({}, s.props), {
+        } : {}, m = (0, r.jsx)(g.ck, O(b({}, s.props), {
           label: s.label,
           hasSubmenu: null != e,
           isFocused: p,
@@ -177,8 +177,8 @@ function N(e, t, n, i) {
           }), h),
           onClose: i
         }), s.key);
-        f ? null != a ? c.push((0, r.jsx)(m.P2, O(b({}, s.props), {
-          parentItem: g,
+        f ? null != a ? c.push((0, r.jsx)(g.P2, O(b({}, s.props), {
+          parentItem: m,
           isFocused: p,
           menuSubmenuProps: t.getSubmenuProps({
             path: _
@@ -187,20 +187,20 @@ function N(e, t, n, i) {
           rowHeight: a,
           onScroll: l,
           listClassName: u
-        }), "".concat(s.key, "-submenu"))) : c.push((0, r.jsx)(m.LY, O(b({}, s.props), {
+        }), "".concat(s.key, "-submenu"))) : c.push((0, r.jsx)(g.LY, O(b({}, s.props), {
           subMenuClassName: d,
-          parentItem: g,
+          parentItem: m,
           isFocused: p,
           menuSubmenuProps: t.getSubmenuProps({
             path: _
           }),
           renderSubmenu: () => N(e, t, _, i)
-        }), "".concat(s.key, "-submenu"))) : c.push(g), o++;
+        }), "".concat(s.key, "-submenu"))) : c.push(m), o++;
         break
       }
       case "customitem": {
         let e = [...n, s.key];
-        c.push((0, r.jsx)(m.kq, O(b({}, s.props), {
+        c.push((0, r.jsx)(g.kq, O(b({}, s.props), {
           isFocused: t.isFocused(e),
           menuItemProps: t.getItemProps({
             path: e,
@@ -213,7 +213,7 @@ function N(e, t, n, i) {
       }
       case "checkbox": {
         let e = [...n, s.key];
-        c.push((0, r.jsx)(m.oC, O(b({}, s.props), {
+        c.push((0, r.jsx)(g.oC, O(b({}, s.props), {
           isFocused: t.isFocused(e),
           menuItemProps: t.getItemProps({
             path: e,
@@ -224,7 +224,7 @@ function N(e, t, n, i) {
       }
       case "radio": {
         let e = [...n, s.key];
-        c.push((0, r.jsx)(m.Rk, O(b({}, s.props), {
+        c.push((0, r.jsx)(g.Rk, O(b({}, s.props), {
           isFocused: t.isFocused(e),
           menuItemProps: t.getItemProps({
             path: e,
@@ -235,7 +235,7 @@ function N(e, t, n, i) {
       }
       case "control": {
         let e = [...n, s.key];
-        c.push((0, r.jsx)(m.lc, O(b({}, s.props), {
+        c.push((0, r.jsx)(g.lc, O(b({}, s.props), {
           isFocused: t.isFocused(e),
           menuItemProps: t.getItemProps({
             path: e
@@ -246,7 +246,7 @@ function N(e, t, n, i) {
       }
       case "compositecontrol": {
         let e = [...n, s.key];
-        c.push((0, r.jsx)(m.$I, O(b({}, s.props), {
+        c.push((0, r.jsx)(g.$I, O(b({}, s.props), {
           isFocused: t.isFocused(e),
           menuItemProps: t.getItemProps({
             path: e
@@ -270,45 +270,45 @@ function A(e) {
     children: h,
     onClose: v,
     onSelect: y,
-    onInteraction: S
-  } = e, A = I(h), C = T(A), P = i.useRef([]);
+    onInteraction: I
+  } = e, A = S(h), C = T(A), P = i.useRef([]);
   l()(P.current, C) || (P.current = C);
-  let D = null === (t = A.find(e => null != e.key)) || void 0 === t ? void 0 : t.key,
-    w = (0, c.ZP)({
+  let w = null === (t = A.find(e => null != e.key)) || void 0 === t ? void 0 : t.key,
+    D = (0, c.ZP)({
       navId: n,
       items: P.current,
-      initialFocusPath: p.Z.keyboardModeEnabled && null != D ? [D] : [],
+      initialFocusPath: p.Z.keyboardModeEnabled && null != w ? [w] : [],
       closeMenu: v
     });
   i.useEffect(() => {
-    w.isUsingKeyboardNavigation ? p.Z.keyboardModeEnabled || (0, _.Qj)() : p.Z.keyboardModeEnabled && (0, _.rf)()
-  }, [w.isUsingKeyboardNavigation]);
+    D.isUsingKeyboardNavigation ? p.Z.keyboardModeEnabled || (0, _.Qj)() : p.Z.keyboardModeEnabled && (0, _.rf)()
+  }, [D.isUsingKeyboardNavigation]);
   let L = i.useRef(null);
   (0, u.T)(L);
   let x = s ? d.u2 : d.zJ,
     M = i.useMemo(() => ({
       onSelect: y,
-      onInteraction: S
-    }), [y, S]);
-  return (0, r.jsx)(g.p.Provider, {
+      onInteraction: I
+    }), [y, I]);
+  return (0, r.jsx)(m.p.Provider, {
     value: M,
     children: (0, r.jsx)("div", O(b({
       className: a()(E.menu, E[o], f)
-    }, w.getContainerProps()), {
+    }, D.getContainerProps()), {
       ref: L,
       "aria-label": e["aria-label"],
       children: (0, r.jsxs)(x, {
         className: E.scroller,
-        children: [0 === A.length && (0, r.jsx)(m.ck, {
+        children: [0 === A.length && (0, r.jsx)(g.ck, {
           disabled: !0,
           label: () => (0, r.jsx)(R, {}),
-          menuItemProps: w.getItemProps({
+          menuItemProps: D.getItemProps({
             path: ["empty"]
           }),
           isFocused: !1,
           onFocus: () => {},
           onClose: v
-        }), A.length > 0 && N(A, w, [], v)]
+        }), A.length > 0 && N(A, D, [], v)]
       })
     }))
   })

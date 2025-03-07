@@ -28,7 +28,7 @@ let p = i.memo(function(e) {
   } = e, n = (0, o.cj)([s.C], () => s.C.getCurrentBuildOverride()), a = (0, o.e7)([s.C], () => s.C.getBuildOverride(t)), {
     payload: p,
     validatedURL: h
-  } = a, g = n.state === s.Z.Resolving || a.state === s.Z.Resolving, m = i.useCallback(() => {
+  } = a, m = n.state === s.Z.Resolving || a.state === s.Z.Resolving, g = i.useCallback(() => {
     if ((0, l.mG)(a.url) && null != a.override) {
       var e;
       return f(null === (e = a.override) || void 0 === e ? void 0 : e.targetBuildOverride)
@@ -36,10 +36,10 @@ let p = i.memo(function(e) {
     return null == p ? Promise.reject(Error("Invalid override payload")) : ((0, u.Z)(a.override, p), d(p))
   }, [p, a]);
   return null != h ? (0, r.jsx)(c.Z, {
-    loading: g,
+    loading: m,
     linkMeta: a.override,
     currentOverrides: n.overrides,
-    applyBuildOverride: m,
+    applyBuildOverride: g,
     clearBuildOverride: _,
     url: h
   }) : null

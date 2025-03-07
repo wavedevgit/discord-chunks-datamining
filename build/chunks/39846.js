@@ -24,9 +24,9 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let g = null;
+let m = null;
 
-function m() {
+function g() {
   i.Z.requestPermission(p.Eu.AUDIO).then(e => {
     e && (0, f.Z)(!0)
   }), u.Z.getMode() === _.pM4.PUSH_TO_TALK && i.Z.requestPermission(p.Eu.INPUT_MONITORING)
@@ -45,7 +45,7 @@ class b extends r.Z {
     let {
       channelId: t
     } = e;
-    null == t && (g = null)
+    null == t && (m = null)
   }
   handleVoiceStateUpdates(e) {
     let {
@@ -56,12 +56,12 @@ class b extends r.Z {
         userId: t,
         channelId: n
       } = e;
-      if (null != n && l.default.getId() === t && null != d.Z.getRTCConnectionId() && g !== n) {
+      if (null != n && l.default.getId() === t && null != d.Z.getRTCConnectionId() && m !== n) {
         if (E(t, n)) {
-          g = n, m();
+          m = n, g();
           return
         }
-        v(new s.Z(e)) && (g = n, m())
+        v(new s.Z(e)) && (m = n, g())
       }
     })
   }

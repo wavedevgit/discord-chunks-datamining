@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  H: () => g,
+  H: () => m,
   Z: () => A
 }), n(47120), n(733860);
 var i, o = n(392711),
@@ -24,19 +24,19 @@ function f(e, t, n) {
 let _ = [],
   p = {},
   h = [],
-  g = e => {
+  m = e => {
     null != e && l.Z.dispatch({
       type: "VOICE_CHANNEL_EFFECT_CLEAR",
       userId: e
     })
   },
-  m = [],
+  g = [],
   E = 20,
   v = 10 * c.Z.Millis.SECOND,
   b = () => {
     let e = new Date;
-    if ((m = [e, ...m].slice(0, E)).length >= E) {
-      let t = m[m.length - 1],
+    if ((g = [e, ...g].slice(0, E)).length >= E) {
+      let t = g[g.length - 1],
         n = e.getTime() - t.getTime();
       n < v && (r = new Date(e.getTime() + v - n))
     }
@@ -51,7 +51,7 @@ let _ = [],
     let e = (0, u.cX)(h);
     s.uv.announce(e, "polite"), h = []
   }, 500),
-  S = e => {
+  I = e => {
     let {
       emoji: t,
       userId: n,
@@ -66,7 +66,7 @@ let _ = [],
       userId: n
     }], O())
   },
-  I = e => {
+  S = e => {
     let {
       emoji: t
     } = e;
@@ -95,8 +95,8 @@ class N extends(i = a.ZP.Store) {
 f(N, "displayName", "VoiceChannelEffectsStore");
 let A = new N(l.Z, {
   VOICE_CHANNEL_EFFECT_CLEAR: T,
-  VOICE_CHANNEL_EFFECT_RECENT_EMOJI: I,
-  VOICE_CHANNEL_EFFECT_SEND: S,
+  VOICE_CHANNEL_EFFECT_RECENT_EMOJI: S,
+  VOICE_CHANNEL_EFFECT_SEND: I,
   VOICE_CHANNEL_EFFECT_SENT_LOCAL: b,
   VOICE_CHANNEL_EFFECT_UPDATE_TIME_STAMP: y
 })

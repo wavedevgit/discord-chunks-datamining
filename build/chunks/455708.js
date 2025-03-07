@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(28546),
   p = n(656733),
   h = n(985375),
-  g = n(653235),
-  m = n(215016),
+  m = n(653235),
+  g = n(215016),
   E = n(981631),
   v = n(149203),
   b = n(388032),
@@ -32,7 +32,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function S(e) {
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,7 +57,7 @@ function I(e, t) {
 }
 
 function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -144,11 +144,11 @@ class A extends i.PureComponent {
     } = this.props, {
       resultType: d
     } = this.state;
-    return null == d ? (0, r.jsx)(g.Z, {
+    return null == d ? (0, r.jsx)(m.Z, {
       className: e,
       hideFavoritesTile: u,
       onSelectItem: this.handleSelectItem
-    }) : (0, r.jsx)(m.ZP, {
+    }) : (0, r.jsx)(g.ZP, {
       className: e,
       data: d === E.wI2.FAVORITES ? o : t,
       onSelectGIF: this.handleSelectGIF,
@@ -242,22 +242,22 @@ let C = i.forwardRef((e, t) => {
   } = (0, _.Iu)(e => ({
     expressionPickerQuery: e.searchQuery,
     isSearchSuggestion: e.isSearchSuggestion
-  }), s.X), f = null != u && "" !== u ? u : n, g = (0, h.HI)(), m = i.createRef();
+  }), s.X), f = null != u && "" !== u ? u : n, m = (0, h.HI)(), g = i.createRef();
   return i.useLayoutEffect(() => {
     if (d) {
       var e;
-      null === (e = m.current) || void 0 === e || e.focus()
+      null === (e = g.current) || void 0 === e || e.focus()
     }
-  }, [d, m]), (0, r.jsx)(A, T(S({}, e), {
+  }, [d, g]), (0, r.jsx)(A, T(I({}, e), {
     forwardedRef: t,
     query: f,
     resultQuery: o,
     resultItems: a,
     suggestions: c,
-    favorites: g,
+    favorites: m,
     searchOffset: 0,
     searchTotalResults: p.Z.getResultItems().length,
     searchLimit: null,
-    searchBarRef: m
+    searchBarRef: g
   }))
 })

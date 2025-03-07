@@ -16,15 +16,15 @@ var r = n(200651),
   _ = n(221292),
   p = n(687158),
   h = n(899007),
-  g = n(867176),
-  m = n(502762),
+  m = n(867176),
+  g = n(502762),
   E = n(952124),
   v = n(544989),
   b = n(4517),
   y = n(171368),
   O = n(895697),
-  S = n(161572),
-  I = n(228168),
+  I = n(161572),
+  S = n(228168),
   T = n(388032),
   N = n(231930);
 
@@ -57,8 +57,8 @@ function R(e) {
     guildId: A,
     channelId: R,
     messageId: P,
-    roleId: D,
-    closePopout: w,
+    roleId: w,
+    closePopout: D,
     setPopoutRef: L,
     disableUserProfileLink: x = __OVERLAY__,
     newAnalyticsLocations: M = []
@@ -70,13 +70,13 @@ function R(e) {
     guildId: A,
     channelId: R,
     messageId: P,
-    roleId: D
+    roleId: w
   }), U = (0, p.ZP)(t.id, A), G = (0, o.e7)([d.Z], () => null != A ? d.Z.getGuild(A) : null), B = (0, o.e7)([u.ZP], () => null != A ? u.ZP.getMember(A, t.id) : null), V = i.useRef(null), F = (0, s.Z)(V);
   i.useEffect(() => {
     null == L || L(null == V ? void 0 : V.current)
   }, [V, L]);
   let Z = e => {
-      null == w || w(), (0, y.openUserProfileModal)(C({
+      null == D || D(), (0, y.openUserProfileModal)(C({
         sourceAnalyticsLocations: k
       }, j, e))
     },
@@ -98,37 +98,37 @@ function R(e) {
       children: (0, r.jsx)(a.VqE, {
         ref: V,
         "aria-label": t.username,
-        children: (0, r.jsxs)(m.Z, {
+        children: (0, r.jsxs)(g.Z, {
           user: t,
           displayProfile: U,
-          profileType: I.y0.BITE_SIZE,
+          profileType: S.y0.BITE_SIZE,
           children: [(0, r.jsx)(v.Z, {
-            profileType: I.y0.BITE_SIZE,
+            profileType: S.y0.BITE_SIZE,
             children: (0, r.jsx)(E.Z, {
               user: t,
               guildId: A,
               viewProfileItem: H(),
-              onCloseProfile: w
+              onCloseProfile: D
             })
           }), (0, r.jsxs)("header", {
             className: N.header,
-            children: [(0, r.jsx)(g.Z, {
+            children: [(0, r.jsx)(m.Z, {
               user: t,
               displayProfile: U,
               guildId: A,
-              profileType: I.y0.BITE_SIZE
+              profileType: S.y0.BITE_SIZE
             }), (0, r.jsx)(h.Z, {
               user: t,
               displayProfile: U,
               guildId: A,
               channelId: R,
-              profileType: I.y0.BITE_SIZE,
+              profileType: S.y0.BITE_SIZE,
               onOpenProfile: x ? void 0 : Z
             }), (0, r.jsx)(b.Z, {
               location: "BotUserProfilePopout",
               user: t,
-              profileType: I.y0.BITE_SIZE,
-              onCloseProfile: w
+              profileType: S.y0.BITE_SIZE,
+              onCloseProfile: D
             })]
           }), (0, r.jsx)(O.Z, {
             user: t,
@@ -138,12 +138,12 @@ function R(e) {
             isHovering: F,
             onOpenProfile: x ? void 0 : Z,
             channelId: R,
-            onClose: w
-          }), (0, r.jsx)(S.Z, {
+            onClose: D
+          }), (0, r.jsx)(I.Z, {
             user: t,
             guildId: A,
             channelId: R,
-            onClose: w
+            onClose: D
           })]
         })
       })

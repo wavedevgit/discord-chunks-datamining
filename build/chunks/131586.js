@@ -86,14 +86,14 @@ function t(e) {
   let h = {
       variants: [s, _, f, l, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE]
     },
-    g = {
+    m = {
       begin: "<",
       end: ">",
       contains: [{
         beginKeywords: "in out"
       }, o]
     },
-    m = e.IDENT_RE + "(<" + e.IDENT_RE + "(\\s*,\\s*" + e.IDENT_RE + ")*>)?(\\[\\])?",
+    g = e.IDENT_RE + "(<" + e.IDENT_RE + "(\\s*,\\s*" + e.IDENT_RE + ")*>)?(\\[\\])?",
     E = {
       begin: "@" + e.IDENT_RE,
       relevance: 0
@@ -131,7 +131,7 @@ function t(e) {
       illegal: /[^\s:,]/,
       contains: [{
         beginKeywords: "where class"
-      }, o, g, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
+      }, o, m, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
     }, {
       beginKeywords: "namespace",
       relevance: 0,
@@ -143,7 +143,7 @@ function t(e) {
       relevance: 0,
       end: /[{;=]/,
       illegal: /[^\s:]/,
-      contains: [o, g, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
+      contains: [o, m, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
     }, {
       className: "meta",
       begin: "^\\s*\\[(?=[\\w])",
@@ -160,7 +160,7 @@ function t(e) {
       relevance: 0
     }, {
       className: "function",
-      begin: "(" + m + "\\s+)+" + e.IDENT_RE + "\\s*(<[^=]+>\\s*)?\\(",
+      begin: "(" + g + "\\s+)+" + e.IDENT_RE + "\\s*(<[^=]+>\\s*)?\\(",
       returnBegin: !0,
       end: /\s*[{;=]/,
       excludeEnd: !0,
@@ -171,7 +171,7 @@ function t(e) {
       }, {
         begin: e.IDENT_RE + "\\s*(<[^=]+>\\s*)?\\(",
         returnBegin: !0,
-        contains: [e.TITLE_MODE, g],
+        contains: [e.TITLE_MODE, m],
         relevance: 0
       }, {
         match: /\(\)/

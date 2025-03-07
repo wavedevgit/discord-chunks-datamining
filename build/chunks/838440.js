@@ -26,7 +26,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,8 +39,8 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
-  (0, i.h7j)(n => (0, r.jsx)(a.default, g({
+function g(e, t) {
+  (0, i.h7j)(n => (0, r.jsx)(a.default, m({
     title: p.NW.string(p.t.l8rYLi),
     body: p.NW.formatToPlainString(p.t.FfjF19, {
       currentLength: e,
@@ -74,14 +74,14 @@ function E(e) {
     });
     return
   }
-  let S = y ? _.en1 : _.J6R,
-    I = !y;
-  if (u.length > S) {
-    I && null != E ? o.Z.dispatch({
+  let I = y ? _.en1 : _.J6R,
+    S = !y;
+  if (u.length > I) {
+    S && null != E ? o.Z.dispatch({
       type: "MESSAGE_LENGTH_UPSELL",
       channel: E,
       content: u
-    }) : m(u.length, S), O({
+    }) : g(u.length, I), O({
       valid: !1,
       failureReason: _.zYc.MESSAGE_TOO_LONG
     });
@@ -122,7 +122,7 @@ function E(e) {
       }
   }
   if (s.ZP.isFull()) {
-    (0, i.h7j)(e => (0, r.jsx)(a.default, g({
+    (0, i.h7j)(e => (0, r.jsx)(a.default, m({
       title: p.NW.string(p.t["7Q4eo6"]),
       body: p.NW.string(p.t.gi6XHh),
       confirmText: p.NW.string(p.t.Z4U1g4)

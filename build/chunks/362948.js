@@ -141,7 +141,7 @@ let p = 1048576,
     getTier3Value: () => !0
   }];
 
-function g(e) {
+function m(e) {
   let {
     children: t,
     className: n,
@@ -164,7 +164,7 @@ function g(e) {
   })
 }
 
-function m(e) {
+function g(e) {
   let t;
   let {
     className: n,
@@ -259,19 +259,19 @@ let b = function(e) {
         children: [(0, r.jsx)("thead", {
           children: (0, r.jsxs)("tr", {
             className: _.__invalid_tableRow,
-            children: [(0, r.jsx)(g, {
+            children: [(0, r.jsx)(m, {
               className: _.tableRowHeading,
               children: f.NW.string(f.t.F5MY0t)
-            }), !b && (0, r.jsx)(g, {
+            }), !b && (0, r.jsx)(m, {
               tier: u.Eu4.NONE,
               children: f.NW.string(f.t.mx8j2t)
-            }), (0, r.jsx)(g, {
+            }), (0, r.jsx)(m, {
               tier: u.Eu4.TIER_1,
               children: f.NW.string(f.t.nzXtaW)
-            }), (0, r.jsx)(g, {
+            }), (0, r.jsx)(m, {
               tier: u.Eu4.TIER_2,
               children: f.NW.string(f.t["h33/ub"])
-            }), (0, r.jsx)(g, {
+            }), (0, r.jsx)(m, {
               tier: u.Eu4.TIER_3,
               children: f.NW.string(f.t.BfF6EB)
             })]
@@ -313,14 +313,14 @@ let b = function(e) {
                     })
                   })
                 })
-              }), !b && (0, r.jsx)(m, {
+              }), !b && (0, r.jsx)(g, {
                 textVariant: "text-md/normal",
                 value: e.getTier0Value()
-              }), (0, r.jsx)(m, {
+              }), (0, r.jsx)(g, {
                 value: e.getTier1Value()
-              }), (0, r.jsx)(m, {
+              }), (0, r.jsx)(g, {
                 value: e.getTier2Value()
-              }), (0, r.jsx)(m, {
+              }), (0, r.jsx)(g, {
                 value: e.getTier3Value()
               })]
             }, i) : null

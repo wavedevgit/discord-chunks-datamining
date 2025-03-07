@@ -24,8 +24,8 @@ let f = i.Z.Millis.DAY,
   _ = 30 * i.Z.Millis.MINUTE,
   p = 5 * i.Z.Millis.SECOND,
   h = 5 * i.Z.Millis.MINUTE,
-  g = 12 * i.Z.Millis.HOUR;
-class m extends r.Z {
+  m = 12 * i.Z.Millis.HOUR;
+class g extends r.Z {
   _fetch() {
     (0, l.cB)({
       location: u.dr.QUESTS_MANAGER
@@ -43,7 +43,7 @@ class m extends r.Z {
         0 === a.Z.lastFetchedCurrentQuests && this._fetch()
       }, Math.floor(Math.random() * p))
     }), d(this, "handleRunningGamesChange", () => {
-      !(this.instantiatedAt + g > Date.now() || a.Z.lastFetchedCurrentQuests + g > Date.now()) && this._fetch()
+      !(this.instantiatedAt + m > Date.now() || a.Z.lastFetchedCurrentQuests + m > Date.now()) && this._fetch()
     }), d(this, "handleUserSettingsProtoUpdate", e => {
       let {
         partial: t,
@@ -62,4 +62,4 @@ class m extends r.Z {
     })
   }
 }
-let E = new m
+let E = new g

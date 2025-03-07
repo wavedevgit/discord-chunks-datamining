@@ -3,9 +3,9 @@
 n.d(t, {
   Jm: () => _,
   L5: () => f,
-  WD: () => m,
+  WD: () => g,
   WN: () => h,
-  l6: () => g,
+  l6: () => m,
   sf: () => d
 }), n(301563), n(47120);
 var r = n(192379),
@@ -43,12 +43,12 @@ function h(e, t) {
   return f() && p(e, t)
 }
 
-function g() {
+function m() {
   let e = (0, i.e7)([s.default], () => s.default.getCurrentUser());
   return (null == e ? void 0 : e.ageVerificationStatus) !== o.F$.UNVERIFIED
 }
 
-function m(e) {
+function g(e) {
   let [t, n] = r.useState(!1);
   return {
     loading: t,

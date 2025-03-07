@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => I
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(585483),
   p = n(70956),
   h = n(981631),
-  g = n(388032),
-  m = n(991174);
+  m = n(388032),
+  g = n(991174);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -89,28 +89,28 @@ function O(e) {
       let n = "".concat(e.seconds()).padStart(2, "0");
       t = "".concat(e.minutes(), ":").concat(n)
     }
-  } else t = s ? d ? g.NW.string(g.t["8+NidX"]) : g.NW.string(g.t.SSzXvb) : d ? "" : g.NW.string(g.t.Icu3bW);
+  } else t = s ? d ? m.NW.string(m.t["8+NidX"]) : m.NW.string(m.t.SSzXvb) : d ? "" : m.NW.string(m.t.Icu3bW);
   return (0, r.jsx)(l.ua7, {
     text: O,
     children: e => (0, r.jsx)("div", y(v({
-      className: m.cooldownWrapper
+      className: g.cooldownWrapper
     }, e), {
       children: (0, r.jsxs)(l.Text, {
-        className: m.cooldownText,
+        className: g.cooldownText,
         variant: d ? "text-xs/medium" : "text-sm/medium",
         color: f ? E ? "text-danger" : "text-muted" : "interactive-normal",
         tabularNumbers: !0,
         children: [t, (0, r.jsx)(l.ANZ, {
           size: "xs",
           color: "currentColor",
-          className: m.slowModeIcon
+          className: g.slowModeIcon
         })]
       })
     }))
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     channel: t,
     isThreadCreation: n = !1

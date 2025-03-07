@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => D
+  Z: () => w
 });
 var r = n(200651),
   i = n(192379),
@@ -16,21 +16,21 @@ var r = n(200651),
   _ = n(906732),
   p = n(639119),
   h = n(197115),
-  g = n(587446),
-  m = n(594174),
+  m = n(587446),
+  g = n(594174),
   E = n(626135),
   v = n(74538),
   b = n(94795),
   y = n(327943),
   O = n(539873),
-  S = n(981631),
-  I = n(921944),
+  I = n(981631),
+  S = n(921944),
   T = n(474936),
   N = n(388032),
   A = n(641126);
 let C = () => {
     var e, t, n;
-    let i = (0, s.e7)([m.default], () => v.ZP.isPremium(m.default.getCurrentUser())),
+    let i = (0, s.e7)([g.default], () => v.ZP.isPremium(g.default.getCurrentUser())),
       o = (0, p.N)(),
       a = (null == o ? void 0 : null === (e = o.subscription_trial) || void 0 === e ? void 0 : e.sku_id) === T.Si.TIER_2;
     return (0, r.jsx)(h.Z, {
@@ -46,7 +46,7 @@ let C = () => {
     let {
       markAsDismissed: t
     } = e, n = () => {
-      null == t || t(I.L.DISMISS), (0, b.G8)()
+      null == t || t(S.L.DISMISS), (0, b.G8)()
     };
     return (0, r.jsxs)("div", {
       className: A.editorHeader,
@@ -63,7 +63,7 @@ let C = () => {
         children: [(0, r.jsx)(l.X6q, {
           variant: "heading-lg/extrabold",
           children: N.NW.string(N.t["hb/wEx"])
-        }), (0, r.jsx)(g.Z, {
+        }), (0, r.jsx)(m.Z, {
           className: A.premiumIcon
         })]
       })]
@@ -74,7 +74,7 @@ let C = () => {
       isCoachmark: t,
       markAsDismissed: n
     } = e, i = (0, s.e7)([y.Z], () => y.Z.isUpsellPreview), o = () => {
-      null == n || n(I.L.DISMISS), (0, b.G8)(), t || c.Z.open()
+      null == n || n(S.L.DISMISS), (0, b.G8)(), t || c.Z.open()
     };
     return (0, r.jsxs)("div", {
       className: A.editorFooter,
@@ -88,35 +88,35 @@ let C = () => {
     })
   };
 
-function D(e) {
+function w(e) {
   let {
     isCoachmark: t,
     markAsDismissed: n
   } = e, {
     analyticsLocations: o
-  } = (0, _.ZP)(f.Z.APP_ICON_EDITOR), c = (0, s.e7)([m.default], () => m.default.getCurrentUser()), {
+  } = (0, _.ZP)(f.Z.APP_ICON_EDITOR), c = (0, s.e7)([g.default], () => g.default.getCurrentUser()), {
     isUpsellPreview: p,
     isEditorOpen: h,
-    shouldEditorAnimate: g
+    shouldEditorAnimate: m
   } = (0, s.cj)([y.Z, d.Z], () => ({
     isUpsellPreview: y.Z.isUpsellPreview,
     isEditorOpen: y.Z.isEditorOpen,
     shouldEditorAnimate: t && !d.Z.useReducedMotion
   }));
   i.useEffect(() => {
-    p && E.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
+    p && E.default.track(I.rMx.PREMIUM_UPSELL_VIEWED, {
       type: T.cd.APP_ICON_UPSELL,
       location_stack: o
     })
   }, [p, o]);
-  let v = (0, u.Z)(null, p ? b.O7 : S.dG4);
+  let v = (0, u.Z)(null, p ? b.O7 : I.dG4);
   return (i.useEffect(() => {
     if (p && !h) return b.O7
   }, [p, h]), null == c) ? null : (0, r.jsx)(_.Gt, {
     value: o,
     children: (0, r.jsx)("div", {
       ref: v,
-      className: a()(A.editor, g ? A.editorAnimate : null),
+      className: a()(A.editor, m ? A.editorAnimate : null),
       "data-app-right-panel": !0,
       children: (0, r.jsxs)(l.y5t, {
         children: [(0, r.jsx)(R, {

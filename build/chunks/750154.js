@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  JE: () => g,
+  JE: () => m,
   Lw: () => _,
   dS: () => h,
   rq: () => p
@@ -54,7 +54,7 @@ function h(e) {
   return (null == e ? void 0 : e.application_id) === s.gD
 }
 
-function g(e) {
+function m(e) {
   let t = p(e);
   if (null == t) return !1;
   let {

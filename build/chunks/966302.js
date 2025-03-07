@@ -16,23 +16,23 @@ var r = n(200651),
   _ = n(249e3),
   p = n(100527),
   h = n(906732),
-  g = n(43267),
-  m = n(933557),
+  m = n(43267),
+  g = n(933557),
   E = n(703656),
   v = n(932724),
   b = n(672339),
   y = n(898531),
   O = n(923973),
-  S = n(82965),
-  I = n(189771),
+  I = n(82965),
+  S = n(189771),
   T = n(560688),
   N = n(88479),
   A = n(136995),
   C = n(25827),
   R = n(430824),
   P = n(131951),
-  D = n(594174),
-  w = n(451478),
+  w = n(594174),
+  D = n(451478),
   L = n(768581),
   x = n(358221),
   M = n(584511),
@@ -101,7 +101,7 @@ function ee(e) {
     header: t
   } = e, n = P.Z.getCameraComponent(), o = (0, l.e7)([P.Z], () => P.Z.getVideoDeviceId()), a = (0, y.Z)();
   return i.useEffect(() => {
-    let e = D.default.getCurrentUser();
+    let e = w.default.getCurrentUser();
     if (a && null != e) {
       let t = (0, v.P)(e);
       (0, b.FU)(t, o, {
@@ -135,7 +135,7 @@ function et(e) {
   } = (0, h.ZP)(), {
     cameraUnavailable: s,
     enabled: l
-  } = (0, O.Z)(), d = (0, I.Z)(n), _ = (0, S.Z)({
+  } = (0, O.Z)(), d = (0, S.Z)(n), _ = (0, I.Z)({
     location: "CallActionButtons"
   });
   return (0, r.jsxs)("div", {
@@ -205,11 +205,11 @@ function en(e) {
     channel: E
   } = e, {
     analyticsLocations: v
-  } = (0, h.ZP)(p.Z.INCOMING_CALL_MODAL), [b, y] = i.useState(!1), O = (0, l.e7)([R.Z], () => R.Z.getGuild(E.guild_id)), S = null != O ? L.ZP.getGuildIconURL({
+  } = (0, h.ZP)(p.Z.INCOMING_CALL_MODAL), [b, y] = i.useState(!1), O = (0, l.e7)([R.Z], () => R.Z.getGuild(E.guild_id)), I = null != O ? L.ZP.getGuildIconURL({
     id: O.id,
     icon: O.icon,
     size: $
-  }) : null, I = null !== (t = (0, g.x)(E, $, !0)) && void 0 !== t ? t : S, T = (0, m.ZP)(E), [N, A] = (0, l.Wu)([P.Z], () => [P.Z.supports(V.AN.VIDEO), Object.keys(P.Z.getVideoDevices()).length]), C = null != O ? "".concat(T, ", ").concat(O.name) : T, D = (0, l.e7)([w.Z], () => w.Z.isFocused()), k = (0, l.e7)([x.Z], () => x.Z.getMode(E.id)), j = i.useCallback(e => {
+  }) : null, S = null !== (t = (0, m.x)(E, $, !0)) && void 0 !== t ? t : I, T = (0, g.ZP)(E), [N, A] = (0, l.Wu)([P.Z], () => [P.Z.supports(V.AN.VIDEO), Object.keys(P.Z.getVideoDevices()).length]), C = null != O ? "".concat(T, ", ").concat(O.name) : T, w = (0, l.e7)([D.Z], () => D.Z.isFocused()), k = (0, l.e7)([x.Z], () => x.Z.getMode(E.id)), j = i.useCallback(e => {
     null != e.top && null != e.left && d.Z.move(e.left, e.top)
   }, []), U = (0, c.q_F)({
     value: +!!b,
@@ -227,8 +227,8 @@ function en(e) {
     W = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(M.Z, {
         className: Z.icon,
-        ringing: D,
-        src: null != I ? I : "",
+        ringing: w,
+        src: null != S ? S : "",
         ringingType: M.Z.RingingType.INCOMING,
         size: b ? c.EFr.SIZE_40 : c.EFr.SIZE_80
       }), (0, r.jsxs)("div", {
@@ -247,7 +247,7 @@ function en(e) {
       })]
     }),
     K = G ? q : Q,
-    en = (0, l.e7)([w.Z], () => w.Z.windowSize());
+    en = (0, l.e7)([D.Z], () => D.Z.windowSize());
   return (0, r.jsx)(h.Gt, {
     value: v,
     children: (0, r.jsx)(_.Z, {

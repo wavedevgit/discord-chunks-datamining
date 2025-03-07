@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(789020), n(47120);
 var r = n(87051),
   i = n(147913),
@@ -24,7 +24,7 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let h = +l.Z.Millis.DAY;
-class g extends i.Z {
+class m extends i.Z {
   checkGuilds() {
     s.ZP.useNewNotifications && Object.values(a.Z.getGuilds()).forEach(e => {
       if (null == e.joinedAt || Date.now() - e.joinedAt.getTime() > h || s.ZP.getMessageNotifications(e.id) === f.bL.ALL_MESSAGES) return;
@@ -46,4 +46,4 @@ class g extends i.Z {
     })
   }
 }
-let m = new g
+let g = new m

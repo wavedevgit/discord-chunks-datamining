@@ -159,7 +159,7 @@ var f = function() {
   p = void 0 !== globalThis.ResizeObserver,
   h = !p;
 
-function g(e, t) {
+function m(e, t) {
   void 0 === t && (t = !0);
   var n = r.useState({
       width: 0,
@@ -204,7 +204,7 @@ function g(e, t) {
     n.disconnect()
   }, [e, c]), i
 }
-var m = {
+var g = {
   useDevicePixelRatio: !0,
   fitCanvasToArtboardHeight: !1,
   useOffscreenRenderer: !0,
@@ -212,7 +212,7 @@ var m = {
 };
 
 function E(e) {
-  return Object.assign({}, m, e)
+  return Object.assign({}, g, e)
 }
 
 function v(e) {
@@ -232,7 +232,7 @@ function v(e) {
     _ = f[0],
     p = _.height,
     h = _.width,
-    m = f[1],
+    g = f[1],
     v = r.useState({
       height: 0,
       width: 0
@@ -240,16 +240,16 @@ function v(e) {
     b = v[0],
     y = b.height,
     O = b.width,
-    S = v[1],
-    I = r.useState(!0),
-    T = I[0],
-    N = I[1],
+    I = v[1],
+    S = r.useState(!0),
+    T = S[0],
+    N = S[1],
     A = d.fitCanvasToArtboardHeight,
     C = d.shouldResizeCanvasToContainer,
     R = d.useDevicePixelRatio,
     P = d.customDevicePixelRatio,
-    D = g(o, C),
-    w = u(P),
+    w = m(o, C),
+    D = u(P),
     L = null != c ? c : {},
     x = L.maxX,
     M = L.maxY,
@@ -273,27 +273,27 @@ function v(e) {
       if (i) {
         var s = t !== h || r !== p;
         if (d.fitCanvasToArtboardHeight && s && (o.current.style.height = r + "px", a = !0), d.useDevicePixelRatio) {
-          if (s || t * w !== O || r * w !== y) {
-            var c = w * t,
-              u = w * r;
-            i.width = c, i.height = u, i.style.width = t + "px", i.style.height = r + "px", S({
+          if (s || t * D !== O || r * D !== y) {
+            var c = D * t,
+              u = D * r;
+            i.width = c, i.height = u, i.style.width = t + "px", i.style.height = r + "px", I({
               width: c,
               height: u
             }), a = !0
           }
-        } else s && (i.width = t, i.height = r, S({
+        } else s && (i.width = t, i.height = r, I({
           width: t,
           height: r
         }), a = !0);
-        m({
+        g({
           width: t,
           height: r
         })
       }
       l && (T || a) && l && l(), T && N(!1)
     }
-  }, [i, o, D, w, k, T, N, y, O, p, h, l, C, A, R, n]), r.useEffect(function() {
-    S({
+  }, [i, o, w, D, k, T, N, y, O, p, h, l, C, A, R, n]), r.useEffect(function() {
+    I({
       width: 0,
       height: 0
     })
@@ -304,7 +304,7 @@ var b, y = function() {
     return e.prototype.observe = function() {}, e.prototype.unobserve = function() {}, e.prototype.disconnect = function() {}, e
   }(),
   O = globalThis.IntersectionObserver || y,
-  S = function() {
+  I = function() {
     function e() {
       var e = this;
       this.elementsMap = new Map, this.onObserved = function(t) {
@@ -320,8 +320,8 @@ var b, y = function() {
       this.observer.unobserve(e), this.elementsMap.delete(e)
     }, e
   }(),
-  I = function() {
-    return b || (b = new S), b
+  S = function() {
+    return b || (b = new I), b
   };
 
 function T(e) {
@@ -362,22 +362,22 @@ function N(e, t) {
     _ = d[1],
     p = !!e,
     h = E(t),
-    g = u(),
-    m = r.useCallback(function() {
+    m = u(),
+    g = r.useCallback(function() {
       if (f) {
         if (f.layout && f.layout.fit === i.Fit.Layout && s) {
-          var e = g * f.layout.layoutScaleFactor;
-          f.devicePixelRatioUsed = g, f.artboardWidth = (null == s ? void 0 : s.width) / e, f.artboardHeight = (null == s ? void 0 : s.height) / e
+          var e = m * f.layout.layoutScaleFactor;
+          f.devicePixelRatioUsed = m, f.artboardWidth = (null == s ? void 0 : s.width) / e, f.artboardHeight = (null == s ? void 0 : s.height) / e
         }
         f.startRendering(), f.resizeToCanvas()
       }
-    }, [f, g]);
+    }, [f, m]);
   v({
     riveLoaded: !!f,
     canvasElem: s,
     containerRef: c,
     options: h,
-    onCanvasHasResized: m,
+    onCanvasHasResized: g,
     artboardBounds: null == f ? void 0 : f.bounds
   });
   var b = r.useCallback(function(e) {
@@ -406,13 +406,13 @@ function N(e, t) {
     }, []),
     O = {
       observe: r.useCallback(function(e, t) {
-        I().registerCallback(e, t)
+        S().registerCallback(e, t)
       }, []),
       unobserve: r.useCallback(function(e) {
-        I().removeCallback(e)
+        S().removeCallback(e)
       }, [])
     },
-    S = O.observe,
+    I = O.observe,
     N = O.unobserve;
   r.useEffect(function() {
     var e, t = !1,
@@ -422,13 +422,13 @@ function N(e, t) {
           e.width > 0 && e.height > 0 && e.top < (window.innerHeight || document.documentElement.clientHeight) && e.bottom > 0 && e.left < (window.innerWidth || document.documentElement.clientWidth) && e.right > 0 && (null == f || f.startRendering(), t = !1)
         }
       };
-    return s && !1 !== h.shouldUseIntersectionObserver && S(s, function(r) {
+    return s && !1 !== h.shouldUseIntersectionObserver && I(s, function(r) {
         r.isIntersecting ? f && f.startRendering() : f && f.stopRendering(), t = !r.isIntersecting, clearTimeout(e), r.isIntersecting || 0 !== r.boundingClientRect.width || (e = setTimeout(n, 10))
       }),
       function() {
         s && N(s)
       }
-  }, [S, N, f, s, h.shouldUseIntersectionObserver]), r.useEffect(function() {
+  }, [I, N, f, s, h.shouldUseIntersectionObserver]), r.useEffect(function() {
     return function() {
       f && (f.cleanup(), _(null))
     }
@@ -465,8 +465,8 @@ t.default = function(e) {
     _ = e.shouldResizeCanvasToContainer,
     p = void 0 === _ || _,
     h = e.automaticallyHandleEvents,
-    g = void 0 !== h && h,
-    m = e.children,
+    m = void 0 !== h && h,
+    g = e.children,
     E = s(e, ["src", "artboard", "animations", "stateMachines", "layout", "useOffscreenRenderer", "shouldDisableRiveListeners", "shouldResizeCanvasToContainer", "automaticallyHandleEvents", "children"]),
     v = N({
       src: t,
@@ -476,12 +476,12 @@ t.default = function(e) {
       stateMachines: i,
       autoplay: !0,
       shouldDisableRiveListeners: f,
-      automaticallyHandleEvents: g
+      automaticallyHandleEvents: m
     }, {
       useOffscreenRenderer: u,
       shouldResizeCanvasToContainer: p
     }).RiveComponent;
-  return o.default.createElement(v, a({}, E), m)
+  return o.default.createElement(v, a({}, E), g)
 }, t.useResizeCanvas = v, t.useRive = N, t.useRiveFile = function(e) {
   var t = this,
     n = r.useState(null),

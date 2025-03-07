@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(47120);
 var r = n(979590),
   i = n.n(r),
@@ -74,7 +74,7 @@ let u = 50,
       l: o
     })
   },
-  g = e => t => {
+  m = e => t => {
     let n = (0, o.e7)([a.Z], () => a.Z.saturation);
     if (null == t) return {};
     let r = {

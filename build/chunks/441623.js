@@ -15,8 +15,8 @@ var r, i = n(392711),
   _ = n(699516),
   p = n(709054),
   h = n(522558),
-  g = n(581025),
-  m = n(981631);
+  m = n(581025),
+  g = n(981631);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -42,8 +42,8 @@ function v(e) {
 let b = 5,
   y = 15,
   O = 7,
-  S = 6048e5,
-  I = 12096e5;
+  I = 6048e5,
+  S = 12096e5;
 
 function T() {
   return {
@@ -58,7 +58,7 @@ let N = T(),
   R = {},
   P = null;
 
-function D(e, t) {
+function w(e, t) {
   let n = new Date,
     r = new Date(e.getTime());
   r.setFullYear(t);
@@ -68,8 +68,8 @@ function D(e, t) {
   return o.setDate(r.getDate() + O), n > i && n < o
 }
 
-function w(e) {
-  return !D(e, e.getFullYear()) && D(e, new Date().getFullYear())
+function D(e) {
+  return !w(e, e.getFullYear()) && w(e, new Date().getFullYear())
 }
 
 function L() {
@@ -77,10 +77,10 @@ function L() {
     q(P);
     return
   }
-  if (k(), !f.Z.hasConsented(m.pjP.PERSONALIZATION)) return;
+  if (k(), !f.Z.hasConsented(g.pjP.PERSONALIZATION)) return;
   let {
     enabled: e
-  } = g.G.getCurrentConfig({
+  } = m.G.getCurrentConfig({
     location: "PremiumGiftingIntentStore updateFriendAnniversaries"
   }, {
     autoTrackExposure: !1
@@ -96,9 +96,9 @@ function L() {
       if (A.length >= y) break;
       let t = _.Z.getSince(e),
         n = d.Z.getUserAffinity(e);
-      if (_.Z.getRelationshipType(e) === m.OGo.FRIEND && !_.Z.isIgnored(e) && null != n && n.affinity > 0 && null != t) {
+      if (_.Z.getRelationshipType(e) === g.OGo.FRIEND && !_.Z.isIgnored(e) && null != n && n.affinity > 0 && null != t) {
         let n = new Date(t);
-        w(n) && (A.push(e), R[e] = {
+        D(n) && (A.push(e), R[e] = {
           friendsSince: n
         })
       }
@@ -161,7 +161,7 @@ function Z(e) {
 function H() {
   for (let e in N.messageGiftIntentLastShownMap) {
     let t = N.messageGiftIntentLastShownMap[e];
-    Date.now() - t > I && delete N.messageGiftIntentLastShownMap[e]
+    Date.now() - t > S && delete N.messageGiftIntentLastShownMap[e]
   }
 }
 
@@ -235,7 +235,7 @@ class Q extends(r = l.ZP.PersistedStore) {
   canShowFriendsTabBadge() {
     var e;
     let t = null !== (e = N.friendsTabBadgeLastDismissedTime) && void 0 !== e ? e : 0;
-    return !(Date.now() - t <= S) && M()
+    return !(Date.now() - t <= I) && M()
   }
   getFriendAnniversaryYears(e) {
     let t = R[e];

@@ -3,8 +3,8 @@
 n.d(t, {
   Wc: () => E,
   Ye: () => v,
-  bp: () => m,
-  ml: () => g,
+  bp: () => g,
+  ml: () => m,
   nG: () => _,
   tR: () => f
 });
@@ -39,13 +39,13 @@ function h(e, t, n) {
   return l.ND.find(r => (null == r.preset || r.preset === e) && r.resolution === t && r.fps === n)
 }
 
-function g(e) {
+function m(e) {
   return e.type === u.uA.SOURCE ? d.NW.string(d.t.XjXqzs) : d.NW.formatToPlainString(d.t.TEOC0N, {
     resolution: e.height
   })
 }
 
-function m(e) {
+function g(e) {
   return d.NW.formatToPlainString(d.t.Qb44XF, {
     fps: e
   })

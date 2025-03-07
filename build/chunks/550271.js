@@ -17,15 +17,15 @@ var i = n(496532),
   _ = n(533122),
   p = n(874706),
   h = n(137411),
-  g = n(775101),
-  m = n(933632),
+  m = n(775101),
+  g = n(933632),
   E = n(158188),
   v = n(66334),
   b = n(215635),
   y = n(718572),
   O = n(496223),
-  S = n(846262),
-  I = n(926372),
+  I = n(846262),
+  S = n(926372),
   T = n(116175);
 
 function N(e, t, n) {
@@ -80,11 +80,11 @@ let P = e => {
         secondaryTintColor: N
       }, R));
     case T.ZD.WATER_DROP:
-      return (0, r.jsx)(S.l, A({
+      return (0, r.jsx)(I.l, A({
         primaryTintColor: n
       }, R));
     case T.ZD.SKULL:
-      return (0, r.jsx)(g.F, A({
+      return (0, r.jsx)(m.F, A({
         primaryTintColor: n
       }, R));
     case T.ZD.TOADSTOOL:
@@ -148,7 +148,7 @@ let P = e => {
         secondaryTintColor: N
       }, R));
     case T.ZD.SMOKE:
-      return (0, r.jsx)(m.l, A({
+      return (0, r.jsx)(g.l, A({
         primaryTintColor: n,
         secondaryTintColor: N
       }, R));
@@ -168,7 +168,7 @@ let P = e => {
         secondaryTintColor: N
       }, R));
     case T.ZD.WIND:
-      return (0, r.jsx)(I.z, A({
+      return (0, r.jsx)(S.z, A({
         primaryTintColor: n,
         secondaryTintColor: N
       }, R))

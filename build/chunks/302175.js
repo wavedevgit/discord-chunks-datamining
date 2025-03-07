@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -16,22 +16,22 @@ var r = n(200651),
   _ = n(730621),
   p = n(388032),
   h = n(840987),
-  g = n(952567);
+  m = n(952567);
 
-function m(e) {
+function g(e) {
   var t;
   let {
     guild: n
-  } = e, m = (0, u.Ek)(n, "GuildPowerupsMarketingPowerupCards");
+  } = e, g = (0, u.Ek)(n, "GuildPowerupsMarketingPowerupCards");
   i.useEffect(() => {
-    m && ((0, l.Sn)(n.id), (0, l.Fm)(n.id))
-  }, [m, n.id]);
+    g && ((0, l.Sn)(n.id), (0, l.Fm)(n.id))
+  }, [g, n.id]);
   let E = (0, d.Z)(n.id),
     v = (0, a.e7)([c.Z], () => {
       var e;
       return null === (e = c.Z.getStateForGuild(n.id)) || void 0 === e ? void 0 : e.unlocked
     });
-  return m && null != E ? (0, r.jsxs)("div", {
+  return g && null != E ? (0, r.jsxs)("div", {
     className: h.container,
     children: [(0, r.jsx)(o.X6, {
       variant: "heading-xxl/extrabold",
@@ -45,7 +45,7 @@ function m(e) {
         animatedCard: !0,
         heading: e.title,
         description: e.description,
-        imgSrc: g,
+        imgSrc: m,
         label: p.NW.formatToPlainString(_.Z.QOacIS, {
           quantity: e.cost
         }),

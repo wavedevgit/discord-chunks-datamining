@@ -8,9 +8,9 @@ n.d(t, {
   Ko: () => p,
   Pe: () => R,
   WU: () => N,
-  cl: () => S,
+  cl: () => I,
   g9: () => v,
-  jW: () => m,
+  jW: () => g,
   kG: () => T,
   qc: () => b,
   zV: () => y
@@ -75,13 +75,13 @@ let h = {
   [u.dCx.FILTER_ON]: !0
 };
 
-function g(e) {
+function m(e) {
   let t = a.ZP[e],
     n = null != t ? t.queryKey : null;
   return null == n && (n = "content"), n
 }
 
-function m(e, t) {
+function g(e, t) {
   if (s.Z.didAgree(t)) {
     let t = l.default.getCurrentUser();
     null != t && (e.include_nsfw = null == t.nsfwAllowed || t.nsfwAllowed)
@@ -104,7 +104,7 @@ function E(e) {
           r && (t.min_id = c.default.fromTimestamp(r)), i && (t.max_id = c.default.fromTimestamp(i));
           return
       }
-      let o = g(n);
+      let o = m(n);
       null == t[o] && (t[o] = new Set);
       let a = t[o];
       switch (n) {
@@ -206,17 +206,17 @@ function O(e) {
   return e.reduce((e, t) => null == t ? e : t.results.length + e, 0)
 }
 
-function S(e) {
+function I(e) {
   return null == e ? "" : e.map(e => e.getFullMatch()).join("")
 }
-let I = new o.ZP;
+let S = new o.ZP;
 
 function T(e) {
-  return I.tokenize(e)
+  return S.tokenize(e)
 }
 
 function N() {
-  return I.clearCache()
+  return S.clearCache()
 }
 
 function A(e) {
@@ -229,7 +229,7 @@ function C(e, t) {
 }
 
 function R() {
-  (0, a.Pe)(), I.reset(), i()(a.ZP).forOwn((e, t) => I.addRule(_({
+  (0, a.Pe)(), S.reset(), i()(a.ZP).forOwn((e, t) => S.addRule(_({
     type: t
   }, e)))
 }

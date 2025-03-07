@@ -24,7 +24,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function g(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,7 +49,7 @@ function m(e, t) {
 }
 
 function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -58,11 +58,11 @@ let v = {},
   y = {},
   O = !1;
 
-function S() {
+function I() {
   O = !0
 }
 
-function I() {
+function S() {
   O = !1, v = {}
 }
 
@@ -72,11 +72,11 @@ function T(e, t, n) {
   for (let t = 0; t < e.options.length; t++) {
     let o = e.options[t],
       a = null == n[o.id];
-    a && (r = !0), i.push(E(g({}, o), {
+    a && (r = !0), i.push(E(m({}, o), {
       isUnseen: a
     }))
   }
-  return E(g({}, e), {
+  return E(m({}, e), {
     options: i,
     hasNewAnswers: r,
     isNew: null == t[e.id]
@@ -112,7 +112,7 @@ function A(e) {
     responses: u ? [] : o,
     onboardingPromptsSeen: a,
     onboardingResponsesSeen: s
-  }, u || D(t, o), y[t] = Date.now()
+  }, u || w(t, o), y[t] = Date.now()
 }
 
 function C() {
@@ -125,7 +125,7 @@ function R(e) {
     guildId: u,
     updates: d
   } = e, f = null !== (o = null !== (i = d.onboardingPromptsSeen) && void 0 !== i ? i : null === (t = v[u]) || void 0 === t ? void 0 : t.onboardingPromptsSeen) && void 0 !== o ? o : {}, _ = null !== (s = null !== (a = d.onboardingResponsesSeen) && void 0 !== a ? a : null === (n = v[u]) || void 0 === n ? void 0 : n.onboardingResponsesSeen) && void 0 !== s ? s : {}, p = N(null !== (c = null !== (l = d.prompts) && void 0 !== l ? l : null === (r = v[u]) || void 0 === r ? void 0 : r.prompts) && void 0 !== c ? c : [], f, _);
-  v[u] = E(g({}, v[u], d), {
+  v[u] = E(m({}, v[u], d), {
     prompts: p
   })
 }
@@ -137,10 +137,10 @@ function P(e) {
     selected: r,
     removedOptionIds: i
   } = e;
-  return !!l.Z.isFullServerPreview(t) || null != v[t] && (null != i && i.length > 0 && o().pullAll(v[t].responses, i), r ? v[t].responses.push(n) : o().pull(v[t].responses, n), null == b[t] && (b[t] = {}), b[t][n] = r, null != i && i.forEach(e => b[t][e] = !1), b[t] = g({}, b[t]), !0)
+  return !!l.Z.isFullServerPreview(t) || null != v[t] && (null != i && i.length > 0 && o().pullAll(v[t].responses, i), r ? v[t].responses.push(n) : o().pull(v[t].responses, n), null == b[t] && (b[t] = {}), b[t][n] = r, null != i && i.forEach(e => b[t][e] = !1), b[t] = m({}, b[t]), !0)
 }
 
-function D(e, t) {
+function w(e, t) {
   if (null == b[e]) return;
   let n = {};
   Object.keys(b[e]).forEach(r => {
@@ -149,23 +149,23 @@ function D(e, t) {
   let r = t.filter(e => null == n[e] || !0 === n[e]);
   Object.keys(n).forEach(e => {
     !0 !== n[e] || t.includes(e) || r.push(e)
-  }), v[e] = E(g({}, v[e]), {
+  }), v[e] = E(m({}, v[e]), {
     responses: r
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     guildId: t,
     options: n,
     prompts_seen: r,
     options_seen: i
   } = e;
-  D(t, n);
+  w(t, n);
   let o = v[t];
   if (null == o) return !1;
   let a = N(o.prompts, r, i);
-  v[t] = E(g({}, o), {
+  v[t] = E(m({}, o), {
     prompts: a,
     onboardingPrompts: a.filter(e => e.inOnboarding),
     onboardingPromptsSeen: r,
@@ -178,7 +178,7 @@ function L(e) {
     guildId: t,
     channelIds: n
   } = e;
-  v[t] = E(g({}, v[t]), {
+  v[t] = E(m({}, v[t]), {
     defaultChannelIds: n
   })
 }
@@ -266,12 +266,12 @@ class U extends(r = a.ZP.Store) {
 }
 h(U, "displayName", "GuildOnboardingPromptsStore");
 let G = new U(s.Z, {
-  CONNECTION_OPEN: I,
-  GUILD_ONBOARDING_PROMPTS_FETCH_START: S,
+  CONNECTION_OPEN: S,
+  GUILD_ONBOARDING_PROMPTS_FETCH_START: I,
   GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: A,
   GUILD_ONBOARDING_PROMPTS_FETCH_FAILURE: C,
   GUILD_ONBOARDING_SELECT_OPTION: P,
-  GUILD_ONBOARDING_UPDATE_RESPONSES_SUCCESS: w,
+  GUILD_ONBOARDING_UPDATE_RESPONSES_SUCCESS: D,
   GUILD_ONBOARDING_PROMPTS_LOCAL_UPDATE: R,
   GUILD_SETTINGS_ONBOARDING_PROMPTS_SAVE_SUCCESS: R,
   GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_SUCCESS: L,

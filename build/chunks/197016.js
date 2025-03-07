@@ -78,20 +78,20 @@ function p(e) {
     h = () => {
       null == n || n(), o.default.disconnect()
     },
-    g = () => s.NW.string(s.t["6vrfgo"]),
+    m = () => s.NW.string(s.t["6vrfgo"]),
     {
-      Component: m,
+      Component: g,
       events: E
     } = (0, i.K)();
   return (0, r.jsx)(p, d(c({}, _), {
     onClick: h,
-    iconComponent: m,
+    iconComponent: g,
     onMouseEnter: e => {
       null == l || l(e), E.onMouseEnter()
     },
     onMouseLeave: e => {
       null == u || u(e), E.onMouseLeave()
     },
-    label: g()
+    label: m()
   }))
 }

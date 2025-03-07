@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => D
+  Z: () => w
 }), n(47120);
 var i, o = n(442837),
   a = n(570140),
@@ -23,8 +23,8 @@ let u = new Map,
   _ = new Set,
   p = new Map,
   h = new Map,
-  g = null,
-  m = !1,
+  m = null,
+  g = !1,
   E = e => {
     d.add(e.skuId)
   },
@@ -42,17 +42,17 @@ let u = new Map,
     let t = e.entitlements[0];
     l.Rm.has(t.sku_id) && p.set(e.skuId, s.Z.createFromServer(t))
   },
-  S = e => {
+  I = e => {
     f.delete(e.skuId), p.set(e.skuId, e.entitlement), null != e.numPotions && h.set(e.skuId, e.numPotions)
   },
-  I = e => {
+  S = e => {
     _.add(e.skuId), f.delete(e.skuId)
   },
   T = e => {
     f.add(e.skuId)
   },
   N = e => {
-    g = e.previousGoLiveSettings
+    m = e.previousGoLiveSettings
   },
   A = e => {
     p.delete(e.skuId)
@@ -69,14 +69,14 @@ let u = new Map,
     }
   },
   R = e => {
-    m = e.enabled
+    g = e.enabled
   };
 class P extends(i = o.ZP.Store) {
   get lastConfetti() {
     return r
   }
   get confettiMode() {
-    return m
+    return g
   }
   getPrice(e) {
     return u.get(e)
@@ -100,18 +100,18 @@ class P extends(i = o.ZP.Store) {
     return f.has(e)
   }
   getPreviousGoLiveSettings() {
-    return g
+    return m
   }
 }
 c(P, "displayName", "ConsumablesStore");
-let D = new P(a.Z, {
+let w = new P(a.Z, {
   CONSUMABLES_PRICE_FETCH_STARTED: E,
   CONSUMABLES_PRICE_FETCH_SUCCEEDED: v,
   CONSUMABLES_PRICE_FETCH_FAILED: b,
   CONSUMABLES_CLEAR_ERROR: y,
-  CONSUMABLES_ENTITLEMENT_FETCH_COMPLETED: S,
+  CONSUMABLES_ENTITLEMENT_FETCH_COMPLETED: I,
   SKU_PURCHASE_SUCCESS: O,
-  CONSUMABLES_ENTITLEMENT_FETCH_FAILED: I,
+  CONSUMABLES_ENTITLEMENT_FETCH_FAILED: S,
   CONSUMABLES_ENTITLEMENT_FETCH_STARTED: T,
   SET_PREVIOUS_GO_LIVE_SETTINGS: N,
   CLEAR_CONSUMED_ENTITLEMENT: A,

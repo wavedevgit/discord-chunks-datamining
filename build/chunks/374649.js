@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ED: () => I,
+  ED: () => S,
   Ox: () => T,
   hz: () => v,
-  o5: () => S,
+  o5: () => I,
   pV: () => N
 }), n(47120), n(26686);
 var r = n(192379),
@@ -56,9 +56,9 @@ function h(e, t) {
   }), e
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -66,7 +66,7 @@ function g(e, t) {
   return i
 }
 
-function m(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -83,12 +83,12 @@ async function E(e) {
     currency: u,
     renewal: f,
     metadata: p
-  } = e, m = {
+  } = e, g = {
     items: (t = (0, c.gB)(t)).map(e => {
       var {
         planId: t
       } = e;
-      return h(_({}, g(e, ["planId"])), {
+      return h(_({}, m(e, ["planId"])), {
         plan_id: t
       })
     }),
@@ -103,7 +103,7 @@ async function E(e) {
   try {
     let e = await a.tn.post({
       url: d.ANM.BILLING_SUBSCRIPTIONS_PREVIEW,
-      body: m,
+      body: g,
       oldFormErrors: !0,
       rejectWithError: !1
     });
@@ -122,7 +122,7 @@ async function v(e) {
     applyEntitlements: u = !1,
     analyticsLocations: f,
     analyticsLocation: p,
-    userDiscountOfferId: m
+    userDiscountOfferId: g
   } = e;
   null != n && (n = (0, c.gB)(n));
   let E = {
@@ -130,7 +130,7 @@ async function v(e) {
       var {
         planId: t
       } = e;
-      return h(_({}, g(e, ["planId"])), {
+      return h(_({}, m(e, ["planId"])), {
         plan_id: t
       })
     }),
@@ -138,7 +138,7 @@ async function v(e) {
     renewal: i,
     apply_entitlements: u,
     currency: o,
-    user_discount_offer_id: m
+    user_discount_offer_id: g
   };
   try {
     let e = await a.tn.patch({
@@ -219,7 +219,7 @@ function O(e, t) {
   }, [n, t]), [i, a]
 }
 
-function S(e) {
+function I(e) {
   let t = (0, r.useRef)(e);
   (0, r.useEffect)(() => {
     t.current = e
@@ -228,12 +228,12 @@ function S(e) {
   return O(e, (0, r.useCallback)(() => b(t.current), [n]))
 }
 
-function I(e) {
+function S(e) {
   if ("subscriptionId" in e && null == e.subscriptionId) {
     let {
       subscriptionId: t
     } = e;
-    e = g(e, ["subscriptionId"])
+    e = m(e, ["subscriptionId"])
   }
   let t = (0, r.useRef)(e);
   (0, r.useEffect)(() => {

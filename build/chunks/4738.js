@@ -21,7 +21,7 @@ function p(e) {
     totalPageCount: n,
     disabled: o,
     onPageChange: s
-  } = e, [d, f] = i.useState(!1), [p, h] = i.useState(null), g = null != p && p >= 1 && p <= n, m = e => {
+  } = e, [d, f] = i.useState(!1), [p, h] = i.useState(null), m = null != p && p >= 1 && p <= n, g = e => {
     let t = parseInt(e);
     if ("" === e || isNaN(t)) {
       h(null);
@@ -29,7 +29,7 @@ function p(e) {
     }
     h(t)
   }, E = e => {
-    "Enter" === e.key && null != p && g && (s(p), f(!1), h(null))
+    "Enter" === e.key && null != p && m && (s(p), f(!1), h(null))
   };
   return o ? (0, r.jsx)(u.X6q, {
     className: _.gap,
@@ -41,7 +41,7 @@ function p(e) {
     className: _.jumpToPageInlineInput,
     size: c.o.Sizes.MINI,
     value: null == p ? "" : "".concat(p),
-    onChange: m,
+    onChange: g,
     onBlur: () => {
       f(!1), h(null)
     },
@@ -66,8 +66,8 @@ function h(e) {
     maxVisiblePages: o,
     disablePaginationGap: c,
     onPageChange: h,
-    hideMaxPage: g = !1,
-    className: m
+    hideMaxPage: m = !1,
+    className: g
   } = e, E = Math.ceil(n / i);
 
   function v(e) {
@@ -140,7 +140,7 @@ function h(e) {
     }, e.key)
   }
 
-  function S(e) {
+  function I(e) {
     return (0, r.jsx)(p, {
       page: e,
       totalPageCount: E,
@@ -149,13 +149,13 @@ function h(e) {
     }, e.key)
   }
 
-  function I(e) {
+  function S(e) {
     let {
       pages: t,
       hasMultiplePages: n
     } = e;
     return n ? (0, r.jsx)("div", {
-      className: a()(_.pageControlContainer, m),
+      className: a()(_.pageControlContainer, g),
       children: (0, r.jsx)("nav", {
         className: _.pageControl,
         children: t.map(e => {
@@ -165,7 +165,7 @@ function h(e) {
             case d.s.PAGE:
               return O(e);
             case d.s.GAP:
-              return S(e);
+              return I(e);
             case d.s.NEXT:
               return y(e);
             default:
@@ -179,8 +179,8 @@ function h(e) {
     totalPageCount: E,
     selectedPage: t,
     maxVisiblePages: o,
-    hideMaxPage: g,
+    hideMaxPage: m,
     onPageChange: v,
-    children: I
+    children: S
   })
 }

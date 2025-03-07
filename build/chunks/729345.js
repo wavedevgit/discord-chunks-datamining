@@ -16,14 +16,14 @@ var r = n(544891),
   _ = n(691895),
   p = n(889911),
   h = n(981631);
-let g = 9437184,
-  m = 0xe00000,
+let m = 9437184,
+  g = 0xe00000,
   E = new u.Z("DebugUploadManager"),
   v = null,
   b = null;
 async function y(e, t) {
   try {
-    await O(e), await (0, o.u)(m, t)
+    await O(e), await (0, o.u)(g, t)
   } catch (t) {
     let e;
     throw t instanceof i.n0 && (e = "UploadErrorCodes.".concat(i.cz[t.code])), (0, a.kr)(a.u.DEBUG_LOG_UPLOAD_FAILED, {
@@ -51,16 +51,16 @@ async function O(e) {
       i = "Push logs failed: ".concat(e)
     }
     let o = t.length + n.length + i.length;
-    if (o > g) {
-      let e = 1 - g / o;
+    if (o > m) {
+      let e = 1 - m / o;
       t = t.slice(t.length - Math.floor(t.length * e)), n = n.slice(n.length - Math.floor(n.length * e)), i = i.slice(i.length - Math.floor(i.length * e))
     }
     let a = (null == b ? void 0 : b.AppOpenedTimestamp) != null ? b.AppOpenedTimestamp : null,
       u = "\n    ".concat((0, _.Z)(a), "\n\n    ").concat((0, s.EA)(), "\n\n    Metadata:\n    ").concat(JSON.stringify((0, d.Z)(), void 0, 2), "\n\n    ChannelStore:\n    ").concat(JSON.stringify(l.Z.getDebugInfo(), void 0, 2), "\n\n    Logs:\n    ").concat(t, "\n\n    System logs:\n    ").concat(n, "\n\n    Push Notifications:\n    ").concat(i, "\n    ");
     c.ZH();
-    let m = h.ANM.DEBUG_LOG(e, "discord_app_logs");
+    let g = h.ANM.DEBUG_LOG(e, "discord_app_logs");
     await r.tn.post({
-      url: m,
+      url: g,
       body: u,
       retries: 3,
       headers: {

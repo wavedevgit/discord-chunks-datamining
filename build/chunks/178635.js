@@ -52,22 +52,22 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = 200,
-  m = {
+let m = 200,
+  g = {
     chance: .2,
     cooldown: 864e5
   },
   E = {
-    [d.nw.VOICE]: h(_({}, m), {
+    [d.nw.VOICE]: h(_({}, g), {
       hotspot: s.v6.VOICE_CALL_FEEDBACK,
       storageKey: "lastVoiceFeedback",
-      eligibilityChecks: [S]
+      eligibilityChecks: [I]
     }),
-    [d.nw.STREAM]: h(_({}, m), {
+    [d.nw.STREAM]: h(_({}, g), {
       hotspot: s.v6.REPORT_PROBLEM_POST_STREAM,
       storageKey: "lastStreamFeedback"
     }),
-    [d.nw.VIDEO_BACKGROUND]: h(_({}, m), {
+    [d.nw.VIDEO_BACKGROUND]: h(_({}, g), {
       hotspot: s.v6.VIDEO_BACKGROUND_FEEDBACK,
       storageKey: "lastVideoBackgroundFeedback"
     }),
@@ -122,11 +122,11 @@ function O(e) {
   return !0
 }
 
-function S(e) {
+function I(e) {
   return !c.Z.getWasEverRtcConnected() || c.Z.getWasEverMultiParticipant()
 }
 
-function I(e) {
+function S(e) {
   let t = E[e];
   null != t.storageKey && o.K.set(t.storageKey, Date.now())
 }
@@ -136,7 +136,7 @@ class T extends a.Z {
   }
   constructor(...e) {
     super(...e), f(this, "feedbackTypeToShow", null), f(this, "showFeedbackModalDebounced", i().debounce(e => {
-      null != this.feedbackTypeToShow && (I(this.feedbackTypeToShow), this.feedbackTypeToShow = null, e())
-    }, g))
+      null != this.feedbackTypeToShow && (S(this.feedbackTypeToShow), this.feedbackTypeToShow = null, e())
+    }, m))
   }
 }

@@ -20,8 +20,8 @@ var r = n(658722),
   _ = n(944486),
   p = n(914010),
   h = n(246946),
-  g = n(594174),
-  m = n(483360),
+  m = n(594174),
+  g = n(483360),
   E = n(226951),
   v = n(51144),
   b = n(981631),
@@ -36,7 +36,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function S(e) {
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -61,7 +61,7 @@ function I(e, t) {
 }
 
 function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -88,11 +88,11 @@ function P(e) {
   return R(l()().startOf(e).add(t, e), e)
 }
 
-function D(e, t, n) {
+function w(e, t, n) {
   return R(l()(e, t).local(), n)
 }
 
-function w() {
+function D() {
   return {
     [y.NW.string(y.t.HYiVER)]: () => P("day"),
     [y.NW.string(y.t.cu86KC)]: () => P("day", -1),
@@ -120,14 +120,14 @@ function V(e) {
   let t;
   let n = e.getMatch(1),
     r = e => null != e ? null == e ? void 0 : e.id : null;
-  return null != (t = b.Xyh.test(n) ? n : r(n === b.ME ? g.default.getCurrentUser() : null != e.getMatch(4) ? g.default.findByTag(e.getMatch(4)) : g.default.findByTag(e.getMatch(2), e.getMatch(3)))) && (e.setData("userId", t), !0)
+  return null != (t = b.Xyh.test(n) ? n : r(n === b.ME ? m.default.getCurrentUser() : null != e.getMatch(4) ? m.default.findByTag(e.getMatch(4)) : m.default.findByTag(e.getMatch(2), e.getMatch(3)))) && (e.setData("userId", t), !0)
 }
 
 function F(e, t) {
   let n, r;
   let i = e.getFullMatch().trim().toLowerCase(),
-    o = w()[i];
-  return null != o ? [n, r] = o() : N().has(i) ? [n, r] = D(i, "MMMM", "month") : A().has(i) ? [n, r] = D(i, "dddd", "day") : C().has(i) ? [n, r] = D(i, "YYYY", "year") : [n, r] = D(i, b.b2L, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), !0)
+    o = D()[i];
+  return null != o ? [n, r] = o() : N().has(i) ? [n, r] = w(i, "MMMM", "month") : A().has(i) ? [n, r] = w(i, "dddd", "day") : C().has(i) ? [n, r] = w(i, "YYYY", "year") : [n, r] = w(i, b.b2L, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), !0)
 }
 
 function Z(e) {
@@ -163,7 +163,7 @@ function H(e) {
 }
 
 function W() {
-  return [...Array.from(N()), ...Array.from(A()), ...Array.from(C()), ...Object.keys(w())]
+  return [...Array.from(N()), ...Array.from(A()), ...Array.from(C()), ...Object.keys(D())]
 }
 
 function Y() {
@@ -171,7 +171,7 @@ function Y() {
 }
 
 function K(e, t, n) {
-  return z(e, t, W()).map(e => T(S({}, e), {
+  return z(e, t, W()).map(e => T(I({}, e), {
     group: n,
     key: "".concat(n, "-").concat(e.text)
   }))
@@ -195,22 +195,22 @@ function q(e, t) {
     };
   switch (o) {
     case b.aib.GUILD:
-      n = m.ZP.queryGuildUsers(T(S({}, a), {
+      n = g.ZP.queryGuildUsers(T(I({}, a), {
         guildId: t
       }));
       break;
     case b.aib.CHANNEL:
-      n = m.ZP.queryChannelUsers(T(S({}, a), {
+      n = g.ZP.queryChannelUsers(T(I({}, a), {
         channelId: t
       }));
       break;
     case b.aib.DMS:
-      n = m.ZP.queryUsers(e, r, !0, i, () => !0);
+      n = g.ZP.queryUsers(e, r, !0, i, () => !0);
       break;
     default:
       return []
   }
-  let s = g.default.getCurrentUser(),
+  let s = m.default.getCurrentUser(),
     l = e.toLowerCase().replace(/^@/, ""),
     c = null != s && e.length > 0 && (y.NW.string(y.t.Qf3ptr).startsWith(l) || b.ME.substr(1).startsWith(l)),
     u = n.filter(e => {
@@ -376,12 +376,12 @@ function ee() {
       validator: Q,
       getAutocompletions(e, t, n) {
         "#" === e[0] && (e = e.substring(1));
-        let r = m.ZP.queryChannels({
+        let r = g.ZP.queryChannels({
           query: e,
           type: u.sH,
           guildId: t,
           limit: 1 / 0
-        }).concat(m.ZP.queryChannels({
+        }).concat(g.ZP.queryChannels({
           query: e,
           type: u.Zb,
           guildId: t,

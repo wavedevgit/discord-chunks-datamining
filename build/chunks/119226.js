@@ -17,8 +17,8 @@ var i = n(278074),
   _ = n(680295),
   p = n(998502),
   h = n(987209),
-  g = n(388032),
-  m = n(938211),
+  m = n(388032),
+  g = n(938211),
   E = n(241822);
 
 function v(e, t, n) {
@@ -59,9 +59,9 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = p.ZP.getEnableHardwareAcceleration() ? a.Xo$ : a.qEK;
+let I = p.ZP.getEnableHardwareAcceleration() ? a.Xo$ : a.qEK;
 
-function I(e) {
+function S(e) {
   let {
     avatarDecoration: t
   } = e, {
@@ -73,13 +73,13 @@ function I(e) {
     size: (0, s.y9)(a.EFr.SIZE_152)
   });
   return (0, r.jsx)("div", {
-    className: m.giftMainAnimationWrapper,
-    children: (0, r.jsx)(S, O(b({}, i), {
+    className: g.giftMainAnimationWrapper,
+    children: (0, r.jsx)(I, O(b({}, i), {
       avatarDecoration: n,
       src: o,
-      className: m.avatar,
+      className: g.avatar,
       size: a.EFr.SIZE_152,
-      "aria-label": g.NW.string(g.t.lqaIxM)
+      "aria-label": m.NW.string(m.t.lqaIxM)
     }))
   })
 }
@@ -90,11 +90,11 @@ function T(e) {
     id: n
   } = e, i = null === (t = (0, f.V)(n)) || void 0 === t ? void 0 : t.config;
   return (0, r.jsxs)("div", {
-    className: m.profileEffectContainer,
+    className: g.profileEffectContainer,
     children: [(0, r.jsx)("img", {
       src: E,
       alt: null == i ? void 0 : i.accessibilityLabel,
-      className: m.profileEffectBackground
+      className: g.profileEffectBackground
     }), (0, r.jsx)(_.Z, {
       profileEffectId: n
     })]
@@ -110,7 +110,7 @@ function N(e) {
     product: a
   } = (0, c.T)(null == t ? void 0 : t.id), s = null == a ? void 0 : a.items[0], l = (0, i.EQ)(s).with({
     type: o.Z.AVATAR_DECORATION
-  }, e => (0, r.jsx)(I, {
+  }, e => (0, r.jsx)(S, {
     avatarDecoration: e
   })).with({
     type: o.Z.PROFILE_EFFECT
@@ -118,12 +118,12 @@ function N(e) {
     id: e.id
   })).otherwise(() => null);
   return null != n && null == l ? (0, r.jsx)("div", {
-    className: m.giftMainAnimationWrapper,
+    className: g.giftMainAnimationWrapper,
     children: (0, r.jsx)(d.Z, {
       defaultAnimationState: u.SR.LOOP,
       giftStyle: n,
       shouldAnimate: !0,
-      className: m.__invalid_giftMainAnimation
+      className: g.__invalid_giftMainAnimation
     })
   }) : l
 }

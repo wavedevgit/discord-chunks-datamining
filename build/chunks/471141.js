@@ -22,13 +22,13 @@ function _(e) {
     tooltipNote: _,
     onChange: p,
     className: h,
-    style: g,
-    note: m,
+    style: m,
+    note: g,
     children: E,
     disabledText: v,
     containerRef: b
-  } = e, y = i.useRef(null), O = i.useRef(null), S = i.useId(), I = (0, r.jsx)(l.r, {
-    id: S,
+  } = e, y = i.useRef(null), O = i.useRef(null), I = i.useId(), S = (0, r.jsx)(l.r, {
+    id: I,
     checked: t,
     onChange: p,
     disabled: n,
@@ -39,7 +39,7 @@ function _(e) {
   });
   return (0, r.jsxs)("div", {
     ref: b,
-    style: g,
+    style: m,
     className: a()(f.container, h, {
       [f.disabled]: n
     }),
@@ -52,23 +52,23 @@ function _(e) {
         className: f.labelRow,
         ref: O,
         children: [(0, r.jsx)("label", {
-          htmlFor: S,
+          htmlFor: I,
           className: f.title,
           children: E
         }), (0, r.jsx)("div", {
           className: f.control,
           children: null != _ ? (0, r.jsx)(c.DY, {
             text: _,
-            children: I
-          }) : I
+            children: S
+          }) : S
         })]
       })
-    }), null != m && (0, r.jsx)("div", {
+    }), null != g && (0, r.jsx)("div", {
       className: f.note,
       children: (0, r.jsx)(d.R, {
         disabled: n,
         type: d.g.DESCRIPTION,
-        children: m
+        children: g
       })
     }), n && null != v && (0, r.jsx)("div", {
       className: f.disabledText,

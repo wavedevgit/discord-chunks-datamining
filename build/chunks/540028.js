@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => S
 }), n(653041), n(47120);
 var r = n(200651);
 n(192379);
@@ -17,8 +17,8 @@ var i = n(442837),
   _ = n(366050),
   p = n(594174),
   h = n(981631),
-  g = n(354459),
-  m = n(388032),
+  m = n(354459),
+  g = n(388032),
   E = n(54329);
 
 function v(e, t, n) {
@@ -60,7 +60,7 @@ function O(e, t) {
   }), e
 }
 
-function S(e) {
+function I(e) {
   let {
     closePopout: t,
     idle: n,
@@ -74,21 +74,21 @@ function S(e) {
     y = (0, i.e7)([d.Z], () => d.Z.getSelectedParticipant(p)),
     O = (0, i.e7)([d.Z], () => d.Z.getStreamParticipants(p));
 
-  function S(e) {
+  function I(e) {
     (null == b ? void 0 : b.id) !== e.pipWindow.id && (0, l.k3)(e.pipWindow.id);
     let t = e.participant;
-    null != t && t.type !== g.fO.ACTIVITY && s.Z.selectParticipant(p, t.id)
+    null != t && t.type !== m.fO.ACTIVITY && s.Z.selectParticipant(p, t.id)
   }
 
-  function I(e) {
+  function S(e) {
     if (e.pipWindow.component === h.NYg.EMBED_IFRAME && null != v) {
       var t;
       let e = null === (t = u.Z.getApplication(v.applicationId)) || void 0 === t ? void 0 : t.name;
-      return null == e ? m.NW.string(m.t["8raC1N"]) : m.NW.formatToPlainString(m.t["a9+V+f"], {
+      return null == e ? g.NW.string(g.t["8raC1N"]) : g.NW.formatToPlainString(g.t["a9+V+f"], {
         activityName: e
       })
     }
-    return null == e.participant || e.participant.type !== g.fO.STREAM ? m.NW.string(m.t["ng/Kws"]) : m.NW.formatToPlainString(m.t.sqmFRk, {
+    return null == e.participant || e.participant.type !== m.fO.STREAM ? g.NW.string(g.t["ng/Kws"]) : g.NW.formatToPlainString(g.t.sqmFRk, {
       username: e.participant.userNick
     })
   }
@@ -111,12 +111,12 @@ function S(e) {
     var t;
     let n = e.pipWindow.id,
       i = null === (t = e.participant) || void 0 === t ? void 0 : t.id,
-      o = I(e),
+      o = S(e),
       s = "".concat(n).concat(null != i ? i : "");
     return (0, r.jsx)(a.sNh, {
       id: s,
       label: o,
-      action: () => S(e)
+      action: () => I(e)
     }, s)
   }
   return (0, r.jsx)(a.v2r, {
@@ -127,7 +127,7 @@ function S(e) {
     children: T().map(N)
   })
 }
-let I = function(e) {
+let S = function(e) {
   let {
     voiceChannelId: t,
     idle: n
@@ -137,7 +137,7 @@ let I = function(e) {
   }), c = 1 === s.length && s[0].component === h.NYg.EMBED_IFRAME || 0 === l.length, u = 1 === s.length && l.length <= 1;
   return c || u ? null : (0, r.jsx)(a.yRy, {
     position: "bottom",
-    renderPopout: e => (0, r.jsx)(S, b({
+    renderPopout: e => (0, r.jsx)(I, b({
       voiceChannelId: t,
       pipWindows: s,
       idle: n

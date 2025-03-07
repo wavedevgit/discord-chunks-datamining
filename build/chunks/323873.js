@@ -51,7 +51,7 @@ function _(e, t) {
 let p = {},
   h = {};
 
-function g(e) {
+function m(e) {
   let {
     channelId: t,
     messageId: n,
@@ -66,7 +66,7 @@ function g(e) {
   }, h[t] = i
 }
 
-function m(e) {
+function g(e) {
   let {
     channelId: t,
     textValue: n,
@@ -125,8 +125,8 @@ class b extends(r = i.ZP.Store) {
 }
 u(b, "displayName", "EditMessageStore");
 let y = new b(o.Z, {
-  MESSAGE_START_EDIT: g,
-  MESSAGE_UPDATE_EDIT: m,
+  MESSAGE_START_EDIT: m,
+  MESSAGE_UPDATE_EDIT: g,
   MESSAGE_END_EDIT: E,
   MESSAGE_DELETE: v
 })

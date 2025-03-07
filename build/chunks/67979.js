@@ -38,7 +38,7 @@ function h(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function g(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -80,7 +80,7 @@ function y(e) {
     onSelect: n,
     dateFormat: i = b,
     minDate: p,
-    maxDate: g,
+    maxDate: m,
     disabled: v = !1
   } = e, y = (0, d.Q3)("DateInput");
 
@@ -91,7 +91,7 @@ function y(e) {
     return (0, r.jsx)(l.V, {
       children: (0, r.jsx)(a.CalendarPicker, {
         minDate: p,
-        maxDate: g,
+        maxDate: m,
         value: t,
         onSelect: e => {
           n(e), i()
@@ -109,7 +109,7 @@ function y(e) {
       var {
         onClick: n
       } = e, a = E(e, ["onClick"]);
-      return (0, r.jsx)(s.P, m(h({}, a), {
+      return (0, r.jsx)(s.P, g(h({}, a), {
         className: o()(_.inputDefault, f.container, {
           [_.disabled]: v,
           [f.disabled]: v

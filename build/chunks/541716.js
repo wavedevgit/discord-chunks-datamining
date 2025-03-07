@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ie: () => S,
+  Ie: () => I,
   OW: () => o,
   gy: () => a
 });
@@ -338,7 +338,7 @@ let s = {
       disableEnterToSubmit: !0
     }
   },
-  g = {
+  m = {
     analyticsName: "user_profile",
     drafts: {
       type: i.d.ChannelMessage
@@ -363,7 +363,7 @@ let s = {
     toolbarType: 2,
     layout: 1
   },
-  m = {
+  g = {
     analyticsName: "overlay_inline_reply",
     drafts: {
       type: i.d.ChannelMessage
@@ -479,16 +479,16 @@ let s = {
     showCharacterCount: !0,
     toolbarType: 1
   },
-  S = {
+  I = {
     NORMAL: s,
     OVERLAY: l,
-    OVERLAY_INLINE_REPLY: m,
+    OVERLAY_INLINE_REPLY: g,
     SIDEBAR: c,
     EDIT: u,
     FORM: d,
     VOICE_CHANNEL_STATUS: f,
     THREAD_CREATION: _,
-    USER_PROFILE: g,
+    USER_PROFILE: m,
     USER_PROFILE_REPLY: E,
     PROFILE_BIO_INPUT: v,
     CUSTOM_GIFT: b,

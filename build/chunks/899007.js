@@ -16,16 +16,16 @@ var r = n(200651),
   _ = n(158776),
   p = n(74538),
   h = n(998502),
-  g = n(785717),
-  m = n(369566),
+  m = n(785717),
+  g = n(369566),
   E = n(518950),
   v = n(652853),
   b = n(228168),
   y = n(981631),
   O = n(474936),
-  S = n(171872);
+  I = n(171872);
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -41,7 +41,7 @@ function T(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -71,29 +71,29 @@ function R(e) {
     displayProfile: n,
     guildId: o,
     channelId: h,
-    profileType: I,
+    profileType: S,
     animateOnHover: N,
     onOpenProfile: R,
     className: P,
-    previewStatus: D
+    previewStatus: w
   } = e, {
-    theme: w
+    theme: D
   } = (0, v.z)(), {
     analyticsLocations: L
   } = (0, d.ZP)(u.Z.AVATAR), {
     trackUserProfileAction: x
-  } = (0, g.KZ)(), M = p.ZP.isPremiumAtLeast(null == n ? void 0 : n.premiumType, O.p9.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
+  } = (0, m.KZ)(), M = p.ZP.isPremiumAtLeast(null == n ? void 0 : n.premiumType, O.p9.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
     live: j
-  } = (0, m.Z)(t.id), [U] = j, {
+  } = (0, g.Z)(t.id), [U] = j, {
     status: G,
     isMobileOnline: B
   } = (0, s.cj)([_.Z], () => ({
     status: (0, c.Z)(U) ? y.Skl.STREAMING : _.Z.getStatus(t.id),
     isMobileOnline: _.Z.isMobileOnline(t.id)
-  })), V = void 0 !== D ? D : G, F = I === b.y0.FULL_SIZE ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = a()(S.avatar, {
-    [S.biteSize]: I === b.y0.BITE_SIZE,
-    [S.fullSize]: I === b.y0.FULL_SIZE,
-    [S.panel]: I === b.y0.PANEL
+  })), V = void 0 !== w ? w : G, F = S === b.y0.FULL_SIZE ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = a()(I.avatar, {
+    [I.biteSize]: S === b.y0.BITE_SIZE,
+    [I.fullSize]: S === b.y0.FULL_SIZE,
+    [I.panel]: S === b.y0.PANEL
   }, P), {
     avatarDecorationSrc: H,
     avatarSrc: W,
@@ -108,9 +108,9 @@ function R(e) {
     avatarDecoration: H,
     size: F,
     "aria-label": t.username,
-    imageClassName: null != R ? S.overlay : void 0,
+    imageClassName: null != R ? I.overlay : void 0,
     status: k ? y.Skl.UNKNOWN : V,
-    statusBackdropColor: M && !k ? (0, l.QFD)(w) : void 0,
+    statusBackdropColor: M && !k ? (0, l.QFD)(D) : void 0,
     isMobile: B,
     statusTooltip: !0,
     statusTooltipDelay: b.vB
@@ -119,9 +119,9 @@ function R(e) {
     className: Z,
     children: K
   })) : (0, r.jsx)(l.P3F, A(T({}, Y), {
-    className: a()(Z, S.clickable),
+    className: a()(Z, I.clickable),
     focusProps: {
-      ringClassName: S.focusRing
+      ringClassName: I.focusRing
     },
     onClick: () => {
       x({

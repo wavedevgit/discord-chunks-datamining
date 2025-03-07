@@ -17,15 +17,15 @@ var i = n(120356),
   _ = n(428548),
   p = n(718759),
   h = n(679219),
-  g = n(835225),
-  m = n(939039),
+  m = n(835225),
+  g = n(939039),
   E = n(117795),
   v = n(358085),
   b = n(998502),
   y = n(388032),
   O = n(516546);
-let S = "#ffffff",
-  I = e => b.ZP.close(e),
+let I = "#ffffff",
+  S = e => b.ZP.close(e),
   T = e => b.ZP.minimize(e),
   N = (e, t) => {
     (0, v.isMac)() && !t.altKey ? b.ZP.fullscreen(e) : b.ZP.maximize(e)
@@ -38,7 +38,7 @@ let S = "#ffffff",
       hasOpenLayer: a
     } = e, l = (0, r.jsx)(s.P3F, {
       className: O.winButtonClose,
-      onClick: () => I(n),
+      onClick: () => S(n),
       "aria-label": y.NW.string(y.t.ZdNUj4),
       tabIndex: -1,
       children: (0, r.jsx)(_.Z, {})
@@ -53,7 +53,7 @@ let S = "#ffffff",
       onClick: () => T(n),
       "aria-label": y.NW.string(y.t.CxOC4e),
       tabIndex: -1,
-      children: (0, r.jsx)(m.Z, {})
+      children: (0, r.jsx)(g.Z, {})
     }), d = (0, r.jsxs)(r.Fragment, {
       children: [l, c, u]
     });
@@ -91,7 +91,7 @@ let S = "#ffffff",
           className: O.macButtons,
           children: [(0, r.jsx)(s.P3F, {
             className: O.macButtonClose,
-            onClick: () => I(n),
+            onClick: () => S(n),
             "aria-label": y.NW.string(y.t.ZdNUj4),
             tabIndex: -1,
             children: (0, r.jsx)(p.Z, {
@@ -110,14 +110,14 @@ let S = "#ffffff",
             onClick: e => N(n, e),
             "aria-label": y.NW.string(y.t["2nM3Pj"]),
             tabIndex: -1,
-            children: (0, r.jsx)(g.Z, {
+            children: (0, r.jsx)(m.Z, {
               color: "#006500"
             })
           })]
         }), i ? (0, r.jsx)("div", {
           className: O.wordmarkMacOS,
           children: (0, r.jsx)(f.Z, {
-            color: S
+            color: I
           })
         }) : null]
       })

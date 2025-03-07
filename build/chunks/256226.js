@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(607070),
   p = n(134433),
   h = n(111028),
-  g = n(91218),
-  m = n(518738),
+  m = n(91218),
+  g = n(518738),
   E = n(388032),
   v = n(986647);
 
@@ -54,13 +54,13 @@ function O(e, t) {
   return n
 }
 
-function S(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -86,11 +86,11 @@ let N = i.forwardRef(function(e, t) {
     role: C,
     onRemove: R,
     guildId: P,
-    disableBorderColor: D,
-    onMouseDown: w
+    disableBorderColor: w,
+    onMouseDown: D
   } = e, L = (0, s.JA)(C.id), {
     tabIndex: x
-  } = L, M = I(L, ["tabIndex"]), k = (0, m.p9)({
+  } = L, M = S(L, ["tabIndex"]), k = (0, g.p9)({
     roleId: C.id,
     size: 16,
     guildId: P
@@ -99,7 +99,7 @@ let N = i.forwardRef(function(e, t) {
       let {
         default: e
       } = await n.e("5396").then(n.bind(n, 731646));
-      return t => (0, r.jsx)(e, S(y({}, t), {
+      return t => (0, r.jsx)(e, I(y({}, t), {
         id: C.id,
         label: E.NW.string(E.t.sMsaLi)
       }))
@@ -122,9 +122,9 @@ let N = i.forwardRef(function(e, t) {
   let W = i.useMemo(() => {
       var t;
       return y({
-        borderColor: D ? void 0 : F
+        borderColor: w ? void 0 : F
       }, null !== (t = e.style) && void 0 !== t ? t : {})
-    }, [F, D, e.style]),
+    }, [F, w, e.style]),
     Y = () => N ? (0, r.jsx)(d.DY3, {
       text: E.NW.string(E.t.u3RVsL),
       children: (0, r.jsxs)(d.P3F, {
@@ -158,16 +158,16 @@ let N = i.forwardRef(function(e, t) {
       children: T
     });
   return (0, r.jsx)(d.tEY, {
-    children: (0, r.jsxs)("div", S(y({
+    children: (0, r.jsxs)("div", I(y({
       ref: t,
       className: a()(v.role, A),
       style: W,
       onContextMenu: G,
-      onMouseDown: w,
+      onMouseDown: D,
       "aria-label": C.name,
       tabIndex: x
     }, M), {
-      children: [Y(), null != k ? (0, r.jsx)(g.Z, S(y({
+      children: [Y(), null != k ? (0, r.jsx)(m.Z, I(y({
         className: v.roleIcon
       }, k), {
         enableTooltip: !1

@@ -25,10 +25,10 @@ let d = [],
 
 function h(e) {
   let t = new Set([...null != e ? e : []]);
-  return [...d].reduce((e, n) => t.has(n) ? e : g(n) || e, !1)
+  return [...d].reduce((e, n) => t.has(n) ? e : m(n) || e, !1)
 }
 
-function g(e) {
+function m(e) {
   let t = d.indexOf(e);
   if (t > -1) {
     let n = [...d];
@@ -37,7 +37,7 @@ function g(e) {
   return !1
 }
 
-function m(e) {
+function g(e) {
   return !(e === c.ME || d.includes(e)) && (d = [...d, e], !0)
 }
 
@@ -54,7 +54,7 @@ function v(e) {
     loadId: o
   } = e;
   if (n) {
-    switch (m(t), E(t, o), r) {
+    switch (g(t), E(t, o), r) {
       case c.vtS.MOBILE_GUILD_DISCOVERY:
         p = {
           type: c.vtS.MOBILE_GUILD_DISCOVERY
@@ -78,7 +78,7 @@ function b(e) {
   let {
     guild: t
   } = e;
-  return !!(null != t.joined_at && d.includes(t.id)) && (g(t.id), _ = null, p = null, !0)
+  return !!(null != t.joined_at && d.includes(t.id)) && (m(t.id), _ = null, p = null, !0)
 }
 
 function y(e) {
@@ -88,29 +88,29 @@ function y(e) {
     joinedAt: r,
     user: i
   } = e, o = i.id === (null === (t = l.default.getCurrentUser()) || void 0 === t ? void 0 : t.id), a = null == r;
-  return !!(o && !a && d.includes(n)) && (g(n), _ = null, p = null, !0)
+  return !!(o && !a && d.includes(n)) && (m(n), _ = null, p = null, !0)
 }
 
 function O(e) {
   let {
     guild: t
   } = e;
-  return !!d.includes(t.id) && (g(t.id), _ = null, p = null, !0)
+  return !!d.includes(t.id) && (m(t.id), _ = null, p = null, !0)
 }
 
-function S(e) {
+function I(e) {
   let {
     ignoredGuildIds: t
   } = e, n = h(t);
   return n && (_ = null, p = null), n
 }
 
-function I(e) {
+function S(e) {
   let {
     lurkingGuildId: t,
     lurkingSource: n
   } = e;
-  return m(t), p = n, !0
+  return g(t), p = n, !0
 }
 
 function T() {
@@ -149,8 +149,8 @@ u(N, "displayName", "LurkingStore");
 let A = new N(o.Z, {
   CONNECTION_OPEN: T,
   GUILD_JOIN: v,
-  GUILD_STOP_LURKING: S,
-  GUILD_STOP_LURKING_FAILURE: I,
+  GUILD_STOP_LURKING: I,
+  GUILD_STOP_LURKING_FAILURE: S,
   GUILD_CREATE: b,
   GUILD_DELETE: O,
   GUILD_MEMBER_ADD: y

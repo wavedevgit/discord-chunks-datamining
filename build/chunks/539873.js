@@ -16,15 +16,15 @@ var r = n(200651),
   _ = n(98278),
   p = n(311476),
   h = n(587446),
-  g = n(996073),
-  m = n(327943),
+  m = n(996073),
+  g = n(327943),
   E = n(997945),
   v = n(401460),
   b = n(441319),
   y = n(981631),
   O = n(526761),
-  S = n(388032),
-  I = n(822727),
+  I = n(388032),
+  S = n(822727),
   T = n(658749);
 
 function N(e, t, n) {
@@ -72,15 +72,15 @@ function P(e) {
     disabled: o,
     isEditor: N,
     renderCTAButtons: C
-  } = e, [P, D] = (0, s.Wu)([m.Z], () => [m.Z.getCurrentDesktopIcon(), m.Z.isUpsellPreview]), {
-    enabled: w
+  } = e, [P, w] = (0, s.Wu)([g.Z], () => [g.Z.getCurrentDesktopIcon(), g.Z.isUpsellPreview]), {
+    enabled: D
   } = p.Z.getCurrentConfig({
     location: "UserSettingsAppearanceInAppIcon"
   }, {
-    autoTrackExposure: D,
-    disable: !D
+    autoTrackExposure: w,
+    disable: !w
   }), L = i.useRef(null);
-  (0, g.Z)(L, O.h1.CUSTOM_APP_ICONS);
+  (0, m.Z)(L, O.h1.CUSTOM_APP_ICONS);
   let x = (0, d.Dt)(),
     M = (0, l.arW)({
       orientation: "horizontal",
@@ -88,7 +88,7 @@ function P(e) {
     }),
     k = (0, f.Q3)("AppIconSelectionGroup"),
     j = e => {
-      if (w && !N && e !== E.aH.DEFAULT) {
+      if (D && !N && e !== E.aH.DEFAULT) {
         (0, l.ZDy)(async () => {
           let {
             default: e
@@ -111,31 +111,31 @@ function P(e) {
   return (0, r.jsx)("div", {
     ref: L,
     children: (0, r.jsx)("div", R(A({}, M), {
-      className: I.__invalid_container,
+      className: S.__invalid_container,
       children: (0, r.jsxs)("div", {
         className: t,
         children: [(0, r.jsxs)("div", {
-          className: I.header,
+          className: S.header,
           children: [(0, r.jsxs)("div", {
-            className: I.headings,
+            className: S.headings,
             children: [!N && (0, r.jsxs)("div", {
-              className: I.title,
+              className: S.title,
               children: [(0, r.jsx)(l.X6q, {
-                className: I.titleText,
+                className: S.titleText,
                 variant: k ? "text-lg/medium" : "text-md/medium",
-                children: S.NW.string(S.t.NThqT0)
-              }), !w && (0, r.jsx)(h.Z, {
-                className: I.premiumIcon
+                children: I.NW.string(I.t.NThqT0)
+              }), !D && (0, r.jsx)(h.Z, {
+                className: S.premiumIcon
               })]
-            }), w ? N ? null : (0, r.jsxs)("div", {
-              className: I.description,
+            }), D ? N ? null : (0, r.jsxs)("div", {
+              className: S.description,
               children: [(0, r.jsx)(l.SrA, {
                 size: "md",
                 color: "currentColor",
-                className: I.nitroWheel
+                className: S.nitroWheel
               }), (0, r.jsx)(l.X6q, {
                 variant: "text-sm/normal",
-                children: S.NW.format(S.t.x2dQxM, {
+                children: I.NW.format(I.t.x2dQxM, {
                   onClick: () => {
                     (0, _.$)()
                   }
@@ -146,12 +146,12 @@ function P(e) {
               className: a()({
                 [T.subtext]: k
               }),
-              children: S.NW.string(S.t.IgENJi)
+              children: I.NW.string(I.t.IgENJi)
             })]
           }), null == C ? void 0 : C()]
         }), (0, r.jsx)("div", {
-          className: a()(I.presets, {
-            [I.presetsJustified]: w && N
+          className: a()(S.presets, {
+            [S.presetsJustified]: D && N
           }),
           children: (0, b.wu)().filter(e => {
             let {
@@ -164,7 +164,7 @@ function P(e) {
             onSelect: e => j(e),
             disabled: o,
             tabIndex: 0 !== t || o ? void 0 : 0,
-            locked: w && !N && e.id !== E.aH.DEFAULT
+            locked: D && !N && e.id !== E.aH.DEFAULT
           }, e.id))
         })]
       })

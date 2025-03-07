@@ -3,8 +3,8 @@
 n.d(t, {
   $r: () => h,
   DP: () => E,
-  Ly: () => m,
-  SG: () => g
+  Ly: () => g,
+  SG: () => m
 }), n(757143), n(301563);
 var r = n(200651);
 n(192379);
@@ -80,7 +80,7 @@ function h(e, t, i, s) {
   })
 }
 
-function g(e, t, n) {
+function m(e, t, n) {
   let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
   if (null != e) return e;
   let {
@@ -90,7 +90,7 @@ function g(e, t, n) {
   return a && null == t ? s.ZP.getDefaultAvatarURL(n.id, n.discriminator) : a || (null == t ? void 0 : t.avatar) == null ? n.getAvatarURL(void 0, i, o) : n.getAvatarURL(null == t ? void 0 : t.guildId, i, o)
 }
 
-function m(e) {
+function g(e) {
   var t;
   let {
     pendingNickname: n,

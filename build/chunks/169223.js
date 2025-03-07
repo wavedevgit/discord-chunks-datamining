@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => S
 }), n(47120);
 var r = n(200651);
 n(192379);
@@ -17,8 +17,8 @@ var i = n(481060),
   _ = n(158776),
   p = n(19780),
   h = n(959457),
-  g = n(178635),
-  m = n(531578),
+  m = n(178635),
+  g = n(531578),
   E = n(981631);
 
 function v(e, t, n) {
@@ -59,7 +59,7 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class S extends g.Z {
+class I extends m.Z {
   _initialize() {
     c.Z.init()
   }
@@ -76,7 +76,7 @@ class S extends g.Z {
       let {
         analyticsData: t
       } = e;
-      this.possiblyShowFeedbackModal(m.nw.VOICE, () => {
+      this.possiblyShowFeedbackModal(g.nw.VOICE, () => {
         (0, i.ZDy)(async () => {
           let {
             default: e
@@ -91,14 +91,14 @@ class S extends g.Z {
       let {
         streamKey: a,
         canShowFeedback: c
-      } = e, u = (0, s.my)(a), f = (0, l.L2)(u, _.Z), p = null !== (o = h.Z.getVideoStats(a)) && void 0 !== o ? o : {}, g = b({
+      } = e, u = (0, s.my)(a), f = (0, l.L2)(u, _.Z), p = null !== (o = h.Z.getVideoStats(a)) && void 0 !== o ? o : {}, m = b({
         media_session_id: h.Z.getMediaSessionId(a),
         rtc_connection_id: h.Z.getRtcConnectionId(a),
         stream_region: h.Z.getRegion(a),
         max_viewers: h.Z.getMaxViewers(a),
         parent_media_session_id: null === (t = h.Z.getRTCConnection(a)) || void 0 === t ? void 0 : t.parentMediaSessionId
       }, p);
-      c && this.possiblyShowFeedbackModal(m.nw.STREAM, () => {
+      c && this.possiblyShowFeedbackModal(g.nw.STREAM, () => {
         (0, i.ZDy)(async () => {
           let {
             default: e
@@ -108,7 +108,7 @@ class S extends g.Z {
             streamApplication: f,
             isStreamer: u.ownerId === d.default.getId()
           }, t), {
-            analyticsData: g
+            analyticsData: m
           }))
         })
       })
@@ -116,7 +116,7 @@ class S extends g.Z {
       let {
         analyticsData: t
       } = e;
-      this.possiblyShowFeedbackModal(m.nw.VIDEO_BACKGROUND, () => {
+      this.possiblyShowFeedbackModal(g.nw.VIDEO_BACKGROUND, () => {
         (0, i.ZDy)(async () => {
           let {
             default: e
@@ -134,8 +134,8 @@ class S extends g.Z {
       } = e, c = a.Z.getApplication(t), d = (0, o.pY)(s), _ = f.Z.getChannel(d), h = {
         rtc_connection_id: p.Z.getRTCConnectionId(),
         media_session_id: p.Z.getMediaSessionId()
-      }, g = u.Z.getWindowOpen(E.KJ3.CHANNEL_CALL_POPOUT) ? i.u1M : i.z1l;
-      null != c && null != _ && l && this.possiblyShowFeedbackModal(m.nw.ACTIVITY, () => {
+      }, m = u.Z.getWindowOpen(E.KJ3.CHANNEL_CALL_POPOUT) ? i.u1M : i.z1l;
+      null != c && null != _ && l && this.possiblyShowFeedbackModal(g.nw.ACTIVITY, () => {
         (0, i.ZDy)(async () => {
           let {
             default: e
@@ -146,7 +146,7 @@ class S extends g.Z {
             analyticsData: h
           }))
         }, {
-          contextKey: g
+          contextKey: m
         })
       })
     }), v(this, "handleInAppReportsFeedback", e => {
@@ -154,7 +154,7 @@ class S extends g.Z {
         reportId: t,
         reportType: o
       } = e;
-      this.possiblyShowFeedbackModal(m.nw.IN_APP_REPORTS, () => {
+      this.possiblyShowFeedbackModal(g.nw.IN_APP_REPORTS, () => {
         (0, i.ZDy)(async () => {
           let {
             default: e
@@ -169,7 +169,7 @@ class S extends g.Z {
       let {
         channel: t
       } = e;
-      this.possiblyShowFeedbackModal(m.nw.USER_DM_MUTE, () => {
+      this.possiblyShowFeedbackModal(g.nw.USER_DM_MUTE, () => {
         (0, i.ZDy)(async () => {
           let {
             default: e
@@ -180,7 +180,7 @@ class S extends g.Z {
         })
       })
     }), v(this, "handleBlockUserFeedback", () => {
-      this.possiblyShowFeedbackModal(m.nw.BLOCK_USER, () => {
+      this.possiblyShowFeedbackModal(g.nw.BLOCK_USER, () => {
         (0, i.ZDy)(async () => {
           let {
             default: e
@@ -191,4 +191,4 @@ class S extends g.Z {
     })
   }
 }
-let I = new S
+let S = new I

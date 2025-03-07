@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => S
 });
 var r = n(200651),
   i = n(120356),
@@ -16,8 +16,8 @@ var r = n(200651),
   _ = n(785717),
   p = n(652853),
   h = n(475413),
-  g = n(228168),
-  m = n(981631),
+  m = n(228168),
+  g = n(981631),
   E = n(921944),
   v = n(474936),
   b = n(388032),
@@ -39,7 +39,7 @@ function O(e) {
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     tiny: t,
     isPremiumUser: n,
@@ -64,8 +64,8 @@ function S(e) {
         buttonShineClassName: y.viewPremiumPerksButtonShine,
         onClick: () => {
           u({
-            action: g.yM.VIEW_PREMIUM_PERKS
-          }), (0, f.uL)(m.Z5c.APPLICATION_STORE), null == i || i()
+            action: m.yM.VIEW_PREMIUM_PERKS
+          }), (0, f.uL)(g.Z5c.APPLICATION_STORE), null == i || i()
         },
         children: [(0, r.jsx)(s.SrA, {
           size: "xs",
@@ -74,13 +74,13 @@ function S(e) {
       }) : (0, r.jsx)(d.Z, {
         onClick: () => {
           u({
-            action: g.yM.GET_PREMIUM
+            action: m.yM.GET_PREMIUM
           }), null == i || i()
         },
         buttonText: b.NW.string(b.t.x6rkDg),
         subscriptionTier: v.Si.TIER_2,
         premiumModalAnalyticsLocation: {
-          section: m.jXE.USER_PROFILE
+          section: g.jXE.USER_PROFILE
         },
         className: y.upsellButton,
         size: t ? s.zxk.Sizes.TINY : s.zxk.Sizes.SMALL,
@@ -92,7 +92,7 @@ function S(e) {
       className: y.upsellButtonWrapper,
       children: (0, r.jsx)(h.tG, {
         icon: s.EOn,
-        action: g.yM.VISIT_SHOP,
+        action: m.yM.VISIT_SHOP,
         text: b.NW.string(b.t.b2d0Nz),
         look: s.zxk.Looks.FILLED,
         color: s.zxk.Colors.PRIMARY,
@@ -109,14 +109,14 @@ function S(e) {
     })]
   })
 }
-let I = function(e) {
+let S = function(e) {
   let {
     isPremiumUser: t,
     onInteraction: n,
     className: i
   } = e, {
     profileType: l
-  } = (0, p.z)(), c = l === g.y0.FULL_SIZE;
+  } = (0, p.z)(), c = l === m.y0.FULL_SIZE;
   return (0, r.jsx)(u.ZP, {
     contentTypes: [a.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS],
     children: e => {
@@ -135,7 +135,7 @@ let I = function(e) {
           a = (0, r.jsx)(O, {
             onClose: () => u(E.L.USER_DISMISS)
           }),
-          l = (0, r.jsx)(S, {
+          l = (0, r.jsx)(I, {
             isPremiumUser: t,
             onInteraction: n,
             tiny: c

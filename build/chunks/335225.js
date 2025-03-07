@@ -15,17 +15,17 @@ var r = n(566885),
       d = 6 === e,
       f = 7 === e,
       _ = 5 === e || d;
-    return function(p, h, g, m) {
-      for (var E, v, b = a(p), y = o(b), O = r(h, g), S = s(y), I = 0, T = m || l, N = t ? T(p, S) : n || f ? T(p, 0) : void 0; S > I; I++)
-        if ((_ || I in y) && (v = O(E = y[I], I, b), e)) {
-          if (t) N[I] = v;
+    return function(p, h, m, g) {
+      for (var E, v, b = a(p), y = o(b), O = r(h, m), I = s(y), S = 0, T = g || l, N = t ? T(p, I) : n || f ? T(p, 0) : void 0; I > S; S++)
+        if ((_ || S in y) && (v = O(E = y[S], S, b), e)) {
+          if (t) N[S] = v;
           else if (v) switch (e) {
             case 3:
               return !0;
             case 5:
               return E;
             case 6:
-              return I;
+              return S;
             case 2:
               c(N, E)
           } else switch (e) {

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  L: () => m
+  L: () => g
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -37,28 +37,28 @@ function h(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   let {
     color: o,
     src: s,
     size: p = "md",
-    width: g,
-    height: m,
+    width: m,
+    height: g,
     className: E,
     initialAnimation: v,
     markers: b
-  } = e, [y, O] = i.useState(null), S = i.useRef(null), I = i.useRef(null), T = i.useRef(null), N = "custom" === p ? {
-    width: g,
-    height: m
+  } = e, [y, O] = i.useState(null), I = i.useRef(null), S = i.useRef(null), T = i.useRef(null), N = "custom" === p ? {
+    width: m,
+    height: g
   } : (0, u.m)(p), A = !(0, f.Z)("lottie_hover_multiple_loop"), C = i.useContext(c.S).reducedMotion.enabled, {
     enabled: R
   } = d.Z.useExperiment({
     location: "LottieIcon web entry point"
-  }), P = C || !R, D = i.useRef(v);
+  }), P = C || !R, w = i.useRef(v);
   return i.useImperativeHandle(t, () => ({
     play: e => {
       if (null != T.current) {
-        if (I.current = e, P) {
+        if (S.current = e, P) {
           let t = b[e];
           T.current.resetSegments(!0), T.current.setSegment(t.start + t.duration, t.start + t.duration), T.current.stop()
         } else T.current.setLoop(!A && e.includes("hover")), T.current.resetSegments(!0), T.current.playSegments([b[e].start, b[e].start + b[e].duration], !0)
@@ -68,7 +68,7 @@ function g(e, t) {
       if (null == T.current || P) return
     },
     stopIfPlaying: e => {
-      null == T.current || P || I.current !== e || (T.current.resetSegments(!0), T.current.setSegment(b[e].start, b[e].start), T.current.stop())
+      null == T.current || P || S.current !== e || (T.current.resetSegments(!0), T.current.setSegment(b[e].start, b[e].start), T.current.stop())
     }
   }), [P, A, b]), i.useEffect(() => {
     null == y && s().then(e => O(e.default))
@@ -77,13 +77,13 @@ function g(e, t) {
     let n, {
         default: r
       } = e,
-      i = null !== (t = I.current) && void 0 !== t ? t : D.current;
+      i = null !== (t = S.current) && void 0 !== t ? t : w.current;
     if (null != i && null != b[i]) {
       let e = b[i];
       n = [e.start, e.start + e.duration]
     }
-    null != S.current && (T.current = r.loadAnimation({
-      container: S.current,
+    null != I.current && (T.current = r.loadAnimation({
+      container: I.current,
       renderer: "svg",
       loop: !1,
       autoplay: !1,
@@ -99,7 +99,7 @@ function g(e, t) {
       display: "flex"
     }, N),
     className: a()(_.lottieIcon, E),
-    ref: S
+    ref: I
   })
 }
-let m = i.forwardRef(g)
+let g = i.forwardRef(m)

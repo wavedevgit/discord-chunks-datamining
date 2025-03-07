@@ -16,16 +16,16 @@ var r = n(570140),
   _ = n(131951),
   p = n(19780),
   h = n(944486),
-  g = n(959457),
-  m = n(979651),
+  m = n(959457),
+  g = n(979651),
   E = n(557457),
   v = n(785141),
   b = n(272395),
   y = n(674503),
   O = n(981631),
-  S = n(65154);
+  I = n(65154);
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -41,7 +41,7 @@ function T(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -60,7 +60,7 @@ let C = new Map([
         voiceChannelId: t,
         voiceState: n
       } = e, r = d.Z.getChannel(t), i = (null == r ? void 0 : r.isGuildStageVoice()) && (null == n ? void 0 : n.suppress), o = p.Z.getMediaSessionId();
-      if (null != r && null != o && !1 === _.Z.getInputDetected() && !i) return [w()]
+      if (null != r && null != o && !1 === _.Z.getInputDetected() && !i) return [D()]
     }
   }],
   [v.u.NO_INPUT_DEVICES, {
@@ -69,7 +69,7 @@ let C = new Map([
         voiceChannelId: t,
         voiceState: n
       } = e, r = d.Z.getChannel(t), i = (null == r ? void 0 : r.isGuildStageVoice()) && (null == n ? void 0 : n.suppress), o = 0 === Object.keys(_.Z.getInputDevices()).length, a = p.Z.getMediaSessionId();
-      if (o && null != r && null != a && !i) return [w()]
+      if (o && null != r && null != a && !i) return [D()]
     }
   }],
   [v.u.STREAM_VIEW_LOW_FPS, {
@@ -187,7 +187,7 @@ function P(e, t) {
   return "".concat(e, ":").concat(R(e, t))
 }
 
-function D(e) {
+function w(e) {
   if (null == e) return null;
   let t = [];
   for (let n of o.Z.getStreamParticipants(e)) {
@@ -197,9 +197,9 @@ function D(e) {
       o = i === u.default.getId();
     if (!o && null == c.Z.getActiveStreamForUser(i, r)) continue;
     let a = o && null != f.Z.getHookError(O.K3D.SOUND),
-      s = (0, l.Z)(g.Z.getQuality(), g.Z.getStatsHistory(r, i, o), a, e),
+      s = (0, l.Z)(m.Z.getQuality(), m.Z.getStatsHistory(r, i, o), a, e),
       d = n.id,
-      _ = g.Z.getMediaSessionId(d);
+      _ = m.Z.getMediaSessionId(d);
     null != s && null != _ && t.push(T({
       streamError: s
     }, L(d)))
@@ -207,25 +207,25 @@ function D(e) {
   return t
 }
 
-function w() {
+function D() {
   return T({
     channelId: h.Z.getVoiceChannelId(),
     mediaSessionId: p.Z.getMediaSessionId(),
     rtcConnectionId: p.Z.getRTCConnectionId(),
-    mediaContext: S.Yn.DEFAULT
+    mediaContext: I.Yn.DEFAULT
   }, x())
 }
 
 function L(e) {
   let {
     channelId: t
-  } = (0, s.my)(e), n = g.Z.getRTCConnection(e);
+  } = (0, s.my)(e), n = m.Z.getRTCConnection(e);
   return T({
     channelId: t,
     mediaSessionId: null == n ? void 0 : n.getMediaSessionId(),
     parentMediaSessionId: null == n ? void 0 : n.parentMediaSessionId,
     rtcConnectionId: null == n ? void 0 : n.getRTCConnectionId(),
-    mediaContext: S.Yn.STREAM,
+    mediaContext: I.Yn.STREAM,
     streamKey: e
   }, x())
 }
@@ -246,8 +246,8 @@ class M extends i.Z {
     var e, t;
     if (__OVERLAY__) return;
     let n = null !== (e = h.Z.getVoiceChannelId()) && void 0 !== e ? e : null,
-      i = null != n && null !== (t = m.Z.getVoiceStateForChannel(n)) && void 0 !== t ? t : null,
-      o = D(n),
+      i = null != n && null !== (t = g.Z.getVoiceStateForChannel(n)) && void 0 !== t ? t : null,
+      o = w(n),
       a = new Map;
     for (let [e, t] of C) {
       let r = t.getActiveErrors({
@@ -285,7 +285,7 @@ class M extends i.Z {
     })
   }
   constructor(...e) {
-    super(...e), I(this, "actions", {
+    super(...e), S(this, "actions", {
       MEDIA_ENGINE_SET_AUDIO_ENABLED: this.updateActiveErrors,
       AUDIO_INPUT_DETECTED: this.updateActiveErrors,
       AUDIO_SET_DISPLAY_SILENCE_WARNING: this.updateActiveErrors,

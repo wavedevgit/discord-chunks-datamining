@@ -20,7 +20,7 @@ var r = n(581031),
       return !1
     }
   },
-  g = function(e) {
+  m = function(e) {
     if (!o(e)) return !1;
     switch (a(e)) {
       case "AsyncFunction":
@@ -34,9 +34,9 @@ var r = n(581031),
       return !0
     }
   };
-g.sham = !0, e.exports = !d || i(function() {
+m.sham = !0, e.exports = !d || i(function() {
   var e;
   return h(h.call) || !h(Object) || !h(function() {
     e = !0
   }) || e
-}) ? g : h
+}) ? m : h

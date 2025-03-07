@@ -17,23 +17,23 @@ var i = n(120356),
   _ = n(906732),
   p = n(379357),
   h = n(358696),
-  g = n(649700),
-  m = n(810568),
+  m = n(649700),
+  g = n(810568),
   E = n(168524),
   v = n(769654),
   b = n(960870),
   y = n(139793),
   O = n(994746),
-  S = n(273284),
-  I = n(232174),
+  I = n(273284),
+  S = n(232174),
   T = n(510659),
   N = n(287954),
   A = n(660579),
   C = n(652853),
   R = n(64621),
   P = n(979038),
-  D = n(448980),
-  w = n(336383),
+  w = n(448980),
+  D = n(336383),
   L = n(194811),
   x = n(373826),
   M = n(315324),
@@ -90,12 +90,12 @@ function K(e) {
   }, {
     interactionSource: en,
     interactionSourceId: er
-  } = (0, T.Xo)(), ei = (0, g.Z)({
+  } = (0, T.Xo)(), ei = (0, m.Z)({
     activity: W,
     user: n
   }), eo = (0, E.Z)(Y({
     location: "UserProfileActivityCard",
-    source: m.m1.UserProfile,
+    source: g.m1.UserProfile,
     trackEntryPointImpression: !0
   }, (0, G.nK)({
     user: n,
@@ -175,11 +175,11 @@ function K(e) {
     variant: "text-xs/normal"
   }), eh = () => {
     var e;
-    return W.type === V.IIU.WATCHING ? null : (0, u.Z)(W) ? eg() : (0, r.jsx)(x.Z, {
+    return W.type === V.IIU.WATCHING ? null : (0, u.Z)(W) ? em() : (0, r.jsx)(x.Z, {
       text: null === (e = W.assets) || void 0 === e ? void 0 : e.large_text,
       variant: "text-xs/normal"
     })
-  }, eg = () => {
+  }, em = () => {
     var e, t, n, i;
     return (null === (e = W.party) || void 0 === e ? void 0 : e.size) == null && W.application_id === F.Zc ? (0, r.jsxs)("div", {
       className: H.gameState,
@@ -211,8 +211,8 @@ function K(e) {
       variant: "text-xs/normal",
       text: W.state
     }) : null
-  }, em = () => {
-    if (!(0, I.Z)(W)) return null;
+  }, eg = () => {
+    if (!(0, S.Z)(W)) return null;
     let {
       start: e,
       end: t
@@ -259,7 +259,7 @@ function K(e) {
         guildId: Q,
         profileType: ee,
         sourceId: ey,
-        sourceDetails: null == ei ? (0, S.Z)(W) : null,
+        sourceDetails: null == ei ? (0, I.Z)(W) : null,
         entry: ei,
         onAction: ea,
         sourceType: B.n_.ACTIVITY,
@@ -280,7 +280,7 @@ function K(e) {
           onShowToolbar: () => ea({
             action: "HOVER_ACTIVITY_CARD"
           }),
-          children: (0, r.jsxs)(w.Z, {
+          children: (0, r.jsxs)(D.Z, {
             ref: es,
             className: o()(X, {
               [H.hoisted]: eO
@@ -293,11 +293,11 @@ function K(e) {
                 className: o()(H.content, et),
                 children: [!n.bot && ef(), (0, r.jsxs)("div", {
                   className: H.details,
-                  children: [eE(), !n.bot && (0, r.jsx)(D.Z, {
+                  children: [eE(), !n.bot && (0, r.jsx)(w.Z, {
                     user: n,
                     activity: W,
                     className: H.badges
-                  }), em()]
+                  }), eg()]
                 }), ee === B.y0.FULL_SIZE && eb()]
               }), ev()]
             }), ee !== B.y0.FULL_SIZE && eb()]

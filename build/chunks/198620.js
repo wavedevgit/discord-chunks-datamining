@@ -20,20 +20,20 @@ let f = new Set(["/attachments/", "/ephemeral-attachments/"]),
   _ = new Set(["/external/"]),
   p = +s.Z.Millis.HOUR,
   h = new Set([window.GLOBAL_ENV.CDN_HOST, null === (r = window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT) || void 0 === r ? void 0 : r.substring(2)].map(u).filter(Boolean)),
-  g = new Set((null !== (o = null === (i = window.GLOBAL_ENV.IMAGE_PROXY_ENDPOINTS) || void 0 === i ? void 0 : i.split(",")) && void 0 !== o ? o : []).map(e => e.substring(2)).map(u).filter(Boolean)),
-  m = !1,
+  m = new Set((null !== (o = null === (i = window.GLOBAL_ENV.IMAGE_PROXY_ENDPOINTS) || void 0 === i ? void 0 : i.split(",")) && void 0 !== o ? o : []).map(e => e.substring(2)).map(u).filter(Boolean)),
+  g = !1,
   E = !1;
 
 function v(e) {
   let t = h.has(e.hostname),
-    n = m && d(e.hostname),
+    n = g && d(e.hostname),
     r = Array.from(f).some(t => e.pathname.startsWith(t));
   return (t || n) && r
 }
 
 function b(e) {
   var t;
-  let n = g.has(e.hostname),
+  let n = m.has(e.hostname),
     r = E && d(null !== (t = e.hostname) && void 0 !== t ? t : ""),
     i = Array.from(_).some(t => e.pathname.startsWith(t));
   return (n || r) && i
@@ -52,20 +52,20 @@ function O(e) {
   return isNaN(n) ? void 0 : n * s.Z.Millis.SECOND
 }
 
-function S(e) {
+function I(e) {
   let t = O(e);
   return null == t || t <= Date.now() + p
 }
 
-function I(e) {
+function S(e) {
   let t = l.Z.toURLSafe(e.url);
-  return null != t && S(t)
+  return null != t && I(t)
 }
 
 function T(e) {
   if (null == e) return !1;
   let t = l.Z.toURLSafe(e.url);
-  return !!(null != t && v(t)) && S(t)
+  return !!(null != t && v(t)) && I(t)
 }
 
 function N(e) {
@@ -74,7 +74,7 @@ function N(e) {
 }
 
 function A(e) {
-  return e.attachments.some(I) || e.embeds.some(N)
+  return e.attachments.some(S) || e.embeds.some(N)
 }
 async function C(e) {
   let t = await a.tn.post({
@@ -88,7 +88,7 @@ async function C(e) {
 }
 async function R(e) {
   let t = l.Z.toURLSafe(e);
-  if (null == t || !S(t)) return e;
+  if (null == t || !I(t)) return e;
   let n = await C(e);
   return null != n ? n : e
 }

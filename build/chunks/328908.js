@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  GA: () => g,
+  GA: () => m,
   Hb: () => p,
   Hi: () => E,
-  LN: () => m,
+  LN: () => g,
   OG: () => T,
-  Qj: () => I,
+  Qj: () => S,
   Qy: () => O,
   Rg: () => h,
   q5: () => b,
-  t0: () => S,
+  t0: () => I,
   z8: () => v
 });
 var r = n(15729),
@@ -96,12 +96,12 @@ let d = Object.freeze({
   h = (e, t) => {
     null != f.getState().messageSendConfetti[e] ? p(e) : _(e, t)
   },
-  g = e => {
+  m = e => {
     let t = f.getState();
     null != t.messageSendConfetti[e] && 0 === t.messageSendConfetti[e].state && (t.messageSendConfetti[e].hasAutoPopped = !0)
   };
 
-function m(e) {
+function g(e) {
   return f(t => null != t.messageSendConfetti[e])
 }
 
@@ -151,11 +151,11 @@ function O() {
   })
 }
 
-function S(e, t, n) {
+function I(e, t, n) {
   n ? y(e) : E(e, t)
 }
 
-function I(e, t) {
+function S(e, t) {
   return f(n => {
     var r;
     return t ? n.messageReactionConfetti : null === (r = n.messageSendConfetti[e]) || void 0 === r ? void 0 : r.emoji

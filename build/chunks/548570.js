@@ -16,23 +16,23 @@ var r = n(512722),
   _ = n(795513),
   p = n(266750),
   h = n(250407),
-  g = n(710845),
-  m = n(797614),
+  m = n(710845),
+  g = n(797614),
   E = n(218543),
   v = n(857192),
   b = n(626135),
   y = n(12647),
   O = n(70956),
-  S = n(358085),
-  I = n(960048),
+  I = n(358085),
+  S = n(960048),
   T = n(138859),
   N = n(14639),
   A = n(639655),
   C = n(610308),
   R = n(91247),
   P = n(508569),
-  D = n(183139),
-  w = n(645436),
+  w = n(183139),
+  D = n(645436),
   L = n(833508),
   x = n(981631);
 
@@ -74,7 +74,7 @@ function U(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let G = new g.Z("GatewaySocket"),
+let G = new m.Z("GatewaySocket"),
   B = new C.Z;
 
 function V(e) {
@@ -141,7 +141,7 @@ function X(e) {
   return null == e ? 0 : "string" == typeof e ? e.length : e.byteLength
 }
 let J = window.GLOBAL_ENV.GATEWAY_ENDPOINT;
-class $ extends D.Z {
+class $ extends w.Z {
   get connectionState() {
     return this.connectionState_
   }
@@ -159,7 +159,7 @@ class $ extends D.Z {
       G.verbose("Skipping _connect because willReconnect is false");
       return
     }
-    if (w.a()) {
+    if (D.a()) {
       G.info("Skipping _connect because socket is paused");
       return
     }
@@ -191,28 +191,28 @@ class $ extends D.Z {
             t: o,
             d: a
           } = B.unpack(e);
-        if (r !== D.j.DISPATCH && s.Z.mark("\uD83C\uDF10", "GatewaySocket.onMessage ".concat(r, " ").concat(D.j[r])), v.default.isLoggingGatewayEvents) {
+        if (r !== w.j.DISPATCH && s.Z.mark("\uD83C\uDF10", "GatewaySocket.onMessage ".concat(r, " ").concat(w.j[r])), v.default.isLoggingGatewayEvents) {
           let e = [r];
-          r === D.j.DISPATCH && e.push(o), e.push(a), G.verboseDangerously("<~", ...e)
+          r === w.j.DISPATCH && e.push(o), e.push(a), G.verboseDangerously("<~", ...e)
         }
         let l = Date.now() - n;
         switch ("READY" === o ? E.Z.parseReady.set(n, l) : "READY_SUPPLEMENTAL" === o ? E.Z.parseReadySupplemental.set(n, l) : l > 10 && s.Z.mark("\uD83C\uDF10", "Parse " + o, l), null != i && (this.seq = i), r) {
-          case D.j.HELLO:
+          case w.j.HELLO:
             this._clearHelloTimeout(), this._handleHello(a);
             break;
-          case D.j.RECONNECT:
+          case w.j.RECONNECT:
             this._handleReconnect();
             break;
-          case D.j.INVALID_SESSION:
+          case w.j.INVALID_SESSION:
             this._handleInvalidSession(a);
             break;
-          case D.j.HEARTBEAT:
+          case w.j.HEARTBEAT:
             this._handleHeartbeatReceive();
             break;
-          case D.j.HEARTBEAT_ACK:
+          case w.j.HEARTBEAT_ACK:
             this._handleHeartbeatAck(a);
             break;
-          case D.j.DISPATCH:
+          case w.j.DISPATCH:
             this._handleDispatch(a, o, "READY" === o ? {
               compressed_byte_size: t,
               uncompressed_byte_size: X(e),
@@ -293,7 +293,7 @@ class $ extends D.Z {
     }
   }
   _tryDetectInvalidIOSToken(e, t, n) {
-    (0, S.isIOS)() && null != this.token && e === H && t === W && (this.iosGoingAwayEventCount += 1, 3 === this.iosGoingAwayEventCount && u.tn.get({
+    (0, I.isIOS)() && null != this.token && e === H && t === W && (this.iosGoingAwayEventCount += 1, 3 === this.iosGoingAwayEventCount && u.tn.get({
       url: x.ANM.ME,
       headers: {
         authorization: this.token
@@ -351,7 +351,7 @@ class $ extends D.Z {
   }
   _doResume() {
     var e;
-    this.connectionState = T.Z.RESUMING, this.dispatcher.resumeAnalytics = (0, R.zH)(Date.now() - this.connectionStartTime), G.info("[RESUME] resuming session ".concat(null !== (e = this.sessionId) && void 0 !== e ? e : "", ", seq: ").concat(this.seq)), this.send(D.j.RESUME, {
+    this.connectionState = T.Z.RESUMING, this.dispatcher.resumeAnalytics = (0, R.zH)(Date.now() - this.connectionStartTime), G.info("[RESUME] resuming session ".concat(null !== (e = this.sessionId) && void 0 !== e ? e : "", ", seq: ").concat(this.seq)), this.send(w.j.RESUME, {
       token: this.token,
       session_id: this.sessionId,
       seq: this.seq
@@ -398,7 +398,7 @@ class $ extends D.Z {
         client_state: a
       },
       d = JSON.stringify(u);
-    this.identifyUncompressedByteSize = d.length, this.identifyCompressedByteSize = o.deflate(d).length, this.identifyCount += 1, this.send(D.j.IDENTIFY, u, !1)
+    this.identifyUncompressedByteSize = d.length, this.identifyCompressedByteSize = o.deflate(d).length, this.identifyCount += 1, this.send(w.j.IDENTIFY, u, !1)
   }
   _doFastConnectIdentify() {
     this.seq = 0, this.sessionId = null;
@@ -420,7 +420,7 @@ class $ extends D.Z {
     this.lastHeartbeatAckTime = Date.now()
   }
   _sendHeartbeat() {
-    this.send(D.j.HEARTBEAT, this.seq, !1), this.lastHeartbeatTime = Date.now()
+    this.send(w.j.HEARTBEAT, this.seq, !1), this.lastHeartbeatTime = Date.now()
   }
   getLogger() {
     return G
@@ -446,10 +446,10 @@ class $ extends D.Z {
       error: n,
       metricAction: r
     } = e;
-    G.error("resetSocketOnError during ".concat(t, ": ").concat(n.message), n.stack), m.Z.increment({
+    G.error("resetSocketOnError during ".concat(t, ": ").concat(n.message), n.stack), g.Z.increment({
       name: l.V.SOCKET_CRASHED,
       tags: ["action:".concat(null != r ? r : t)]
-    }, !0), !1 !== e.sentry && I.Z.captureException(n, {
+    }, !0), !1 !== e.sentry && S.Z.captureException(n, {
       tags: {
         socketCrashedAction: t
       }

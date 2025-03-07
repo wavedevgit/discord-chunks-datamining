@@ -16,44 +16,44 @@ let f = 6e4;
 async function _(e, t) {
   var n, _, p, h;
   let {
-    type: g,
-    withMutualGuilds: m = !1,
+    type: m,
+    withMutualGuilds: g = !1,
     withMutualFriendsCount: E = !1,
     withMutualFriends: v = !1,
     friendToken: b,
     preloadUserBanner: y = !0,
     dispatchWait: O = !1,
-    guildId: S,
-    channelId: I,
+    guildId: I,
+    channelId: S,
     joinRequestId: T,
     abortSignal: N
   } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
-  if ("" === e || u.Z.isFetchingProfile(e, S)) return;
+  if ("" === e || u.Z.isFetchingProfile(e, I)) return;
   let A = u.Z.getUserProfile(e),
     C = Date.now() - (null !== (h = null == A ? void 0 : A.lastFetched) && void 0 !== h ? h : 0) >= f;
   if (((null == A ? void 0 : null === (n = A.fetchError) || void 0 === n ? void 0 : n.status) === 404 || (null == A ? void 0 : null === (_ = A.fetchError) || void 0 === _ ? void 0 : _.status) === 429) && !C) return;
-  let R = u.Z.getGuildMemberProfile(e, S),
+  let R = u.Z.getGuildMemberProfile(e, I),
     P = u.Z.getMutualGuilds(e),
-    D = u.Z.getMutualFriends(e),
-    w = u.Z.getMutualFriendsCount(e);
-  m = m || null != S;
-  let L = null == D && v,
-    x = null == w && E,
-    M = null != S && null == R;
-  if (!(null == P && m) && !L && !x && !M && !C) return;
+    w = u.Z.getMutualFriends(e),
+    D = u.Z.getMutualFriendsCount(e);
+  g = g || null != I;
+  let L = null == w && v,
+    x = null == D && E,
+    M = null != I && null == R;
+  if (!(null == P && g) && !L && !x && !M && !C) return;
   (0, s.z)(), null != t && (0, o.vM)(t);
   let k = {
-      type: g,
-      withMutualGuilds: m,
+      type: m,
+      withMutualGuilds: g,
       withMutualFriends: v,
       withMutualFriendsCount: E,
       friendToken: b,
-      guildId: S,
+      guildId: I,
       joinRequestId: T,
       abortSignal: N,
-      connectionsRoleId: null == S ? void 0 : null === (p = (0, a.Ur)({
-        guildMember: c.ZP.getMember(S, e),
-        channel: l.Z.getChannel(I)
+      connectionsRoleId: null == I ? void 0 : null === (p = (0, a.Ur)({
+        guildMember: c.ZP.getMember(I, e),
+        channel: l.Z.getChannel(S)
       })) || void 0 === p ? void 0 : p.id
     },
     j = y ? d.Z : void 0;

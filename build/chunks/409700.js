@@ -19,8 +19,8 @@ var r = n(200651),
   _ = n(74538),
   p = n(125900),
   h = n(824690),
-  g = n(240479),
-  m = n(710111),
+  m = n(240479),
+  g = n(710111),
   E = n(388032),
   v = n(680052),
   b = n(553481);
@@ -47,7 +47,7 @@ function O(e) {
   return e
 }
 
-function S(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function S(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -91,7 +91,7 @@ function N(e) {
   } = e, i = (0, p.V2)({
     location: "SoundmojiBanner"
   }), o = (0, l.e7)([d.default], () => _.ZP.canUseSoundboardEverywhere(d.default.getCurrentUser())), a = (0, l.e7)([u.Z], () => u.Z.getGuildId());
-  return n || o || t.guildId === m.X8 || t.guildId === a || !i ? (0, r.jsx)(c.IGR, {
+  return n || o || t.guildId === g.X8 || t.guildId === a || !i ? (0, r.jsx)(c.IGR, {
     text: "BETA",
     color: s.Z.BG_BRAND,
     className: v.betaBadge
@@ -160,20 +160,20 @@ function C(e) {
     clickableClassName: u
   } = e, [d, f] = i.useState(!1), [_, p] = i.useState(String(Date.now())), h = i.useCallback(e => {
     e.stopPropagation(), f(!d)
-  }, [d]), g = i.useCallback(() => {
+  }, [d]), m = i.useCallback(() => {
     p(String(Date.now()))
-  }, []), m = i.useRef(null);
+  }, []), g = i.useRef(null);
   i.useEffect(() => {
     var e, t;
-    d ? null === (e = m.current) || void 0 === e || e.focus() : null === (t = m.current) || void 0 === t || t.blur(), null == l || l(d)
+    d ? null === (e = g.current) || void 0 === e || e.focus() : null === (t = g.current) || void 0 === t || t.blur(), null == l || l(d)
   }, [d, l]);
   let E = !d;
   return (0, r.jsx)(c.yRy, {
     renderPopout: e => (0, r.jsx)(c.P3F, {
       onClick: e => e.stopPropagation(),
       onMouseOver: e => e.stopPropagation(),
-      children: t(I(O({}, e), {
-        refreshPosition: g
+      children: t(S(O({}, e), {
+        refreshPosition: m
       }))
     }),
     align: "center",
@@ -194,8 +194,8 @@ function C(e) {
       text: o,
       position: "top",
       shouldShow: E,
-      children: t => (0, r.jsx)(c.P3F, I(O({
-        innerRef: m
+      children: t => (0, r.jsx)(c.P3F, S(O({
+        innerRef: g
       }, t, e), {
         "aria-label": o,
         onClick: h,
@@ -225,7 +225,7 @@ function R(e) {
       })
     }), (0, r.jsx)(C, {
       setTooltipShowing: i,
-      renderPopout: e => (0, r.jsx)(g.Z, O({
+      renderPopout: e => (0, r.jsx)(m.Z, O({
         sound: t,
         channel: n
       }, e)),
