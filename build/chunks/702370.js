@@ -405,7 +405,7 @@ let eI = {
                 },
                 children: ew.NW.string(ew.t.zp6caG)
               });
-              let e = eI && (null == eZ || ek.length > 0 || eZ < ek[0].amount);
+              let e = eI && (null == eZ || 0 === ek.length || eZ < ek[0].amount);
               return (0, r.jsx)(p.zxk, {
                 className: l()(e_.button, {
                   [e_.enabledButton]: !e

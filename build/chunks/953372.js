@@ -67,13 +67,6 @@ function O(e) {
         hideIcon: k,
         hideTooltip: R
       });
-      if (null != O) return (0, r.jsx)(E.Z, {
-        channel: O,
-        textVariant: "text-".concat(T, "/medium"),
-        textClassName: I,
-        hideText: j,
-        hideTooltip: R
-      });
       let e = null == n ? void 0 : n.find(e => {
         let {
           type: t
@@ -86,6 +79,12 @@ function O(e) {
         textClassName: I,
         hideText: j,
         hideIcon: k,
+        hideTooltip: R
+      }) : null != O ? (0, r.jsx)(E.Z, {
+        channel: O,
+        textVariant: "text-".concat(T, "/medium"),
+        textClassName: I,
+        hideText: j,
         hideTooltip: R
       }) : null
     },

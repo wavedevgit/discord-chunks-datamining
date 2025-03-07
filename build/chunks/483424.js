@@ -29,34 +29,33 @@ function h(e) {
     live: v,
     stream: b
   } = (0, c.Z)(t.id), [y] = v, {
-    voiceChannel: O,
-    voiceActivity: I
+    voiceChannel: O
   } = (0, u.Z)({
     userId: t.id,
     guildId: m,
     surface: "user-profile-featured-activity"
-  }), S = null != y && y === I, T = t.id === n.id, N = (0, i.e7)([s.Z, a.Z], () => {
-    let e = T ? s.Z.getStatus() : a.Z.getStatus(t.id, m);
+  }), I = t.id === n.id, S = (0, i.e7)([s.Z, a.Z], () => {
+    let e = I ? s.Z.getStatus() : a.Z.getStatus(t.id, m);
     return e === p.Sk.OFFLINE || e === p.Sk.INVISIBLE
   }), {
-    voiceActivityStatusEnabled: A
+    voiceActivityStatusEnabled: T
   } = (0, o.U)({
     location: "UserProfileFeaturedActivity"
   }), {
-    voiceActivityCardEnabled: C
+    voiceActivityCardEnabled: N
   } = (0, l.o)({
     location: "UserProfileFeaturedActivity"
-  }), R = A || C;
-  return N || null == b ? !R || N || null == O || S ? N || null == y ? null : (0, r.jsx)(d.Z, {
+  }), A = T || N;
+  return S || null == b ? S || null == y ? A && !S && null != O ? (0, r.jsx)(_.Z, {
+    user: t,
+    voiceChannel: O,
+    className: g,
+    onClose: E
+  }) : null : (0, r.jsx)(d.Z, {
     user: t,
     currentUser: n,
     activity: y,
     profileGuildId: null == h ? void 0 : h.guildId,
-    className: g,
-    onClose: E
-  }) : (0, r.jsx)(_.Z, {
-    user: t,
-    voiceChannel: O,
     className: g,
     onClose: E
   }) : (0, r.jsx)(f.Z, {

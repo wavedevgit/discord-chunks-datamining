@@ -60,17 +60,17 @@ function O(e) {
     className: x.scroller,
     fade: !0,
     children: [!U && (B || D) ? (0, r.jsxs)(b.Z, {
-      children: [null != A && (0, r.jsx)(g.Z, {
+      children: [D && (0, r.jsx)(y.Z, {
+        user: n,
+        voiceChannel: w,
+        onClose: P
+      }), null != A && (0, r.jsx)(g.Z, {
         location: "UserProfileModalActivity",
         user: n,
         currentUser: t,
         stream: A,
         onClose: P,
         profileGuildId: null == O ? void 0 : O.guildId
-      }), D && (0, r.jsx)(y.Z, {
-        user: n,
-        voiceChannel: w,
-        onClose: P
       }), T.map((e, o) => (0, r.jsx)(m.Z, {
         user: n,
         currentUser: t,
