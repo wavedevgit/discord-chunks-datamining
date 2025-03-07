@@ -1,6 +1,6 @@
 /** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => j
+  Z: () => C
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -43,14 +43,14 @@ let E = [{
   value: "custom"
 }];
 
-function j() {
+function C() {
   let [e, t] = i.useState(Math.round(window.outerWidth / window.innerWidth * 100)), {
     platformZoom: n,
     theme: s
   } = (0, l.cj)([x.Z, p.Z], () => ({
     theme: x.Z.theme,
     platformZoom: p.Z.zoom
-  })), [j, C] = i.useState("upright"), O = ["normal", "medium", "semibold", "bold", "extrabold"], v = new Map([
+  })), [C, j] = i.useState("upright"), O = ["normal", "medium", "semibold", "bold", "extrabold"], v = new Map([
     ["normal", 400],
     ["medium", 500],
     ["semibold", 600],
@@ -81,8 +81,8 @@ function j() {
   return (0, r.jsx)("div", {
     className: _.fullscreen,
     style: {
-      "--playground-font-family": "mono" === j ? "gg mono" : "gg sans",
-      "--playground-font-style": "italic" === j ? "italic" : "normal"
+      "--playground-font-family": "mono" === C ? "gg mono" : "gg sans",
+      "--playground-font-style": "italic" === C ? "italic" : "normal"
     },
     children: (0, r.jsxs)(o.hjN, {
       tag: o.RB0.H1,
@@ -157,9 +157,9 @@ function j() {
               value: "mono"
             }],
             onChange: e => {
-              C(e.value)
+              j(e.value)
             },
-            value: j
+            value: C
           })
         }), (0, r.jsx)(u.Z, {
           closeAction: c.xf,

@@ -1,6 +1,6 @@
 /** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => C
+  Z: () => j
 }), n(47120), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648);
 var r = n(200651),
   i = n(192379),
@@ -40,7 +40,7 @@ function E(e) {
   return e
 }
 
-function j(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,13 +53,13 @@ function j(e, t) {
   }), e
 }
 
-function C() {
+function j() {
   var e;
   let [t, n] = (0, i.useState)(!1), [s, a] = (0, i.useState)(!1), [l, c] = (0, i.useState)(null), m = (0, p.ZP)(e => e.toolsCache), {
     setToolsCache: f,
     removeToolsCache: b
   } = (0, p.L3)(), {
-    setImgCache: C
+    setImgCache: j
   } = (0, p.W_)(), A = (0, i.useCallback)(e => {
     let t = m[e];
     null != t && c({
@@ -68,11 +68,11 @@ function C() {
     }), c(t => null == t ? {
       src: e,
       palette: g.jD
-    } : j(E({}, t), {
+    } : C(E({}, t), {
       src: e
     }))
   }, [m]), P = (0, i.useCallback)(e => {
-    c(t => null == t ? null : j(E({}, t), {
+    c(t => null == t ? null : C(E({}, t), {
       palette: e
     }))
   }, []), R = (0, i.useCallback)(e => {
@@ -142,7 +142,7 @@ function C() {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
               r = await n.arrayBuffer();
-            C(t, t, (0, h.xh)(r)), f(t, t, g.jD)
+            j(t, t, (0, h.xh)(r)), f(t, t, g.jD)
           }
         }), (0, r.jsx)("div", {
           className: _.uploadedArea,

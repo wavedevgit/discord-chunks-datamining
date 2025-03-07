@@ -61,13 +61,13 @@ function b(e) {
     overrideDescriptor: u
   } = e, [m, p] = i.useState(null != u), [x, b] = i.useState(!1), N = i.useCallback(() => {
     p(e => !e)
-  }, []), _ = (0, l.e7)([d.Z], () => d.Z.getUserExperimentDescriptor(s)), E = (0, l.e7)([d.Z], () => d.Z.getLoadedUserExperiment(s)), j = (0, l.Wu)([d.Z], () => a().sortBy(d.Z.getRecentExposures(g.xY.USER, s), e => {
+  }, []), _ = (0, l.e7)([d.Z], () => d.Z.getUserExperimentDescriptor(s)), E = (0, l.e7)([d.Z], () => d.Z.getLoadedUserExperiment(s)), C = (0, l.Wu)([d.Z], () => a().sortBy(d.Z.getRecentExposures(g.xY.USER, s), e => {
     let [t, n] = e;
     return -n
   }).map(e => {
     let [t, n] = e;
     return "".concat(new Date(n).toLocaleString(), " (").concat(t, ")")
-  })), C = (0, r.jsx)(o.P3F, {
+  })), j = (0, r.jsx)(o.P3F, {
     onClick: N,
     children: (0, r.jsxs)(o.vwX, {
       tag: o.RB0.H3,
@@ -89,7 +89,7 @@ function b(e) {
   return m ? (0, r.jsxs)("div", {
     className: h.group,
     children: [(0, r.jsxs)(o.hjN, {
-      children: [C, (0, r.jsxs)("div", {
+      children: [j, (0, r.jsxs)("div", {
         children: [(0, r.jsx)(o.xJW, {
           title: "Bucket Override",
           children: (0, r.jsx)(o.q4e, {
@@ -140,7 +140,7 @@ function b(e) {
         }), (0, r.jsx)(o.Text, {
           variant: "code",
           className: h.pre,
-          children: 0 === j.length ? "None" : j.join("\n")
+          children: 0 === C.length ? "None" : C.join("\n")
         })]
       }) : (0, r.jsx)(o.zxk, {
         className: h.debugButton,
@@ -155,7 +155,7 @@ function b(e) {
   }) : (0, r.jsx)("div", {
     className: h.group,
     children: (0, r.jsx)(o.hjN, {
-      children: C
+      children: j
     })
   })
 }
@@ -173,7 +173,7 @@ function N(e) {
   }).map(e => {
     let [t, n] = e;
     return "".concat(new Date(n).toLocaleString(), " (").concat(t, ")")
-  })), [j, C] = (0, l.Wu)([u.Z, d.Z], () => {
+  })), [C, j] = (0, l.Wu)([u.Z, d.Z], () => {
     let e = a().sortBy(a().values(u.Z.getGuilds()), e => e.name.toLowerCase()),
       t = {},
       r = [];
@@ -229,7 +229,7 @@ function N(e) {
         className: h.description,
         children: [(0, r.jsxs)(o.R94, {
           type: o.geA.DESCRIPTION,
-          children: ["Current Assignments: ", C]
+          children: ["Current Assignments: ", j]
         }), null == _ ? (0, r.jsx)(o.R94, {
           type: o.geA.DESCRIPTION,
           children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
@@ -242,7 +242,7 @@ function N(e) {
         }), (0, r.jsx)(o.Text, {
           variant: "code",
           className: h.pre,
-          children: j
+          children: C
         }), (0, r.jsx)(o.vwX, {
           tag: "h5",
           className: h.debugTitle,

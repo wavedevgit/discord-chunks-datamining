@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(16703),
   _ = n(785145),
   E = n(981631),
-  j = n(526761),
-  C = n(726985),
+  C = n(526761),
+  j = n(726985),
   O = n(388032),
   v = n(198270);
 
@@ -56,7 +56,7 @@ function S() {
         }), b.S.dispatch(E.CkL.EMPHASIZE_NOTICE);
         return
       }
-      t === j.NB.GUILD && null == e && null != S && (0, d.Fq)(S, A), y(t)
+      t === C.NB.GUILD && null == e && null != S && (0, d.Fq)(S, A), y(t)
     }
   }
   i.useEffect(() => {
@@ -66,7 +66,7 @@ function S() {
   }, [null == S ? void 0 : S.id, T]);
   let Z = !0,
     w = !0;
-  return P && 1 === R.length && (R.includes(C.s6.PROFILE_SERVER_PROFILES) ? (D(j.NB.GUILD), w = !1) : R.includes(C.s6.PROFILE_USER_PROFILE) && (D(j.NB.USER_PROFILE), Z = !1)), (0, r.jsx)(o.Gt, {
+  return P && 1 === R.length && (R.includes(j.s6.PROFILE_SERVER_PROFILES) ? (D(C.NB.GUILD), w = !1) : R.includes(j.s6.PROFILE_USER_PROFILE) && (D(C.NB.USER_PROFILE), Z = !1)), (0, r.jsx)(o.Gt, {
     value: A,
     children: (0, r.jsxs)(a.y5t, {
       component: (0, r.jsx)(a.X6q, {
@@ -81,14 +81,14 @@ function S() {
         onItemSelect: D,
         children: [w ? (0, r.jsx)(a.njP.Item, {
           className: v.tabBarItem,
-          id: j.NB.USER_PROFILE,
+          id: C.NB.USER_PROFILE,
           children: O.NW.string(O.t["OU3/Pj"])
-        }, j.NB.USER_PROFILE) : null, Z ? (0, r.jsx)(a.njP.Item, {
+        }, C.NB.USER_PROFILE) : null, Z ? (0, r.jsx)(a.njP.Item, {
           className: v.tabBarItem,
-          id: j.NB.GUILD,
+          id: C.NB.GUILD,
           children: O.NW.string(O.t.kPHroa)
-        }, j.NB.GUILD) : null]
-      }), I === j.NB.GUILD ? (0, r.jsx)(m.Z, {
+        }, C.NB.GUILD) : null]
+      }), I === C.NB.GUILD ? (0, r.jsx)(m.Z, {
         selectedGuild: S
       }) : (0, r.jsx)(g.Z, {})]
     })

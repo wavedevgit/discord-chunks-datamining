@@ -25,8 +25,8 @@ var r = n(192379),
   N = n(725727),
   _ = n(977156),
   E = n(922611),
-  j = n(921157),
-  C = n(667172),
+  C = n(921157),
+  j = n(667172),
   O = n(237292),
   v = n(314897),
   S = n(283595),
@@ -101,7 +101,7 @@ function U() {
     location: "settings"
   }), z = null !== (n = null === (e = y.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff()) && void 0 !== n && n, Y = (0, O.y0)({
     location: "settings"
-  }), K = (0, C.v4)({
+  }), K = (0, j.v4)({
     location: "settings"
   }), q = (0, o.Q)(), X = (0, _.Zy)({
     location: L.dr.USER_SETTINGS_SEARCH_GIFT_INVENTORY
@@ -115,7 +115,7 @@ function U() {
     hypeSquadRemoved: en
   } = m.Z.useExperiment({
     location: "settings"
-  }), er = null === (a = (0, h.Z)()) || void 0 === a || a, ei = (null === (t = (0, j.s)()) || void 0 === t ? void 0 : t.length) > 0, es = (0, E.D)({
+  }), er = null === (a = (0, h.Z)()) || void 0 === a || a, ei = (null === (t = (0, C.s)()) || void 0 === t ? void 0 : t.length) > 0, es = (0, E.D)({
     location: "settings_renderer_utils"
   }), {
     hasBlockedUsers: ea,

@@ -80,7 +80,7 @@ function g(e) {
   }, [t]);
   let {
     loadState: E
-  } = (0, l.qz)(), j = E !== l.jd.LOADED;
+  } = (0, l.qz)(), C = E !== l.jd.LOADED;
   switch (f) {
     case c.j.HOME:
       return (0, r.jsx)(r.Fragment, {
@@ -89,13 +89,13 @@ function g(e) {
           return (0, r.jsx)(o.Z, {
             subscription: e,
             navigateToSwitchPlan: b,
-            loadingState: j ? o.G.LOADING : null !== (t = N[e.id]) && void 0 !== t ? t : o.G.LOADING
+            loadingState: C ? o.G.LOADING : null !== (t = N[e.id]) && void 0 !== t ? t : o.G.LOADING
           }, e.id)
         })
       });
     case c.j.SWITCH_APP_PLANS:
       let {
-        route: C
+        route: j
       } = g, O = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {

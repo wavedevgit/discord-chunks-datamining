@@ -78,11 +78,11 @@ function h(e) {
     {
       id: E
     } = (0, a.f$)(),
-    [j, C] = i.useState(!1),
+    [C, j] = i.useState(!1),
     O = null != f;
   i.useLayoutEffect(() => {
     if (O) return (0, s.N)(E, e => {
-      C(e === t)
+      j(e === t)
     })
   }, [t, E, O]);
   let v = e => (0, r.jsxs)(d.kF, p(m({}, e, _, x), {
@@ -110,8 +110,8 @@ function h(e) {
   return O ? (0, r.jsx)(o.yRy, {
     spacing: 0,
     renderPopout: f,
-    shouldShow: j,
-    onRequestClose: () => C(!1),
+    shouldShow: C,
+    onRequestClose: () => j(!1),
     children: v
   }) : v()
 }

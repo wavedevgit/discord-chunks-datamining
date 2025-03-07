@@ -62,24 +62,24 @@ function E() {
         color: "info-help-text",
         className: x.labelSpacing,
         children: "Payment-method-specific components and views may not appear for you unless your browser is supported for that payment method and they have been configured on your browser."
-      }), (0, r.jsx)(j, {}), (0, r.jsx)(T, {}), (0, r.jsx)(Z, {})]
+      }), (0, r.jsx)(C, {}), (0, r.jsx)(T, {}), (0, r.jsx)(Z, {})]
     })
   })
 }
 
-function j() {
+function C() {
   return (0, r.jsxs)(h.$0, {
     children: [(0, r.jsx)(o.X6q, {
       variant: "heading-xl/semibold",
       children: "Payment Request Components - Google Pay"
     }), (0, r.jsx)(h.E_, {
       label: "Google Pay - Default View",
-      children: (0, r.jsx)(C, {
+      children: (0, r.jsx)(j, {
         paymentRequestWallet: "googlePay"
       })
     }), (0, r.jsx)(h.E_, {
       label: "Google Pay - Connector View",
-      children: (0, r.jsx)(C, {
+      children: (0, r.jsx)(j, {
         paymentRequestWallet: "googlePay",
         renderConnectorView: !0
       })
@@ -93,12 +93,12 @@ function j() {
       children: "Payment Request Components - Apple Pay"
     }), (0, r.jsx)(h.E_, {
       label: "Apple Pay - Default View",
-      children: (0, r.jsx)(C, {
+      children: (0, r.jsx)(j, {
         paymentRequestWallet: "applePay"
       })
     }), (0, r.jsx)(h.E_, {
       label: "Apple Pay - Connector View",
-      children: (0, r.jsx)(C, {
+      children: (0, r.jsx)(j, {
         renderConnectorView: !0,
         paymentRequestWallet: "applePay"
       })
@@ -111,7 +111,7 @@ function j() {
   })
 }
 
-function C(e) {
+function j(e) {
   let t = i.useRef(null),
     n = {
       paymentLabel: f.NW.string(f.t.ZURqX1),
@@ -165,7 +165,7 @@ function v(e) {
       onPrimary: () => l(),
       onBack: () => {}
     }),
-    children: (0, r.jsx)(C, {
+    children: (0, r.jsx)(j, {
       renderConnectorView: !0,
       renderStepBody: !0,
       paymentRequestWallet: t,

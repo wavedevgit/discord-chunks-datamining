@@ -22,8 +22,8 @@ var r = n(200651),
   N = n(230711),
   _ = n(410575),
   E = n(941129),
-  j = n(634894),
-  C = n(586902),
+  C = n(634894),
+  j = n(586902),
   O = n(907305),
   v = n(468363),
   S = n(297369),
@@ -76,8 +76,8 @@ var r = n(200651),
   eN = n(314897),
   e_ = n(592125),
   eE = n(819640),
-  ej = n(131951),
-  eC = n(19780),
+  eC = n(131951),
+  ej = n(19780),
   eO = n(885110),
   ev = n(246946),
   eS = n(594174),
@@ -589,15 +589,15 @@ function e$() {
       }
     }),
     d = (0, o.e7)([eb.Z], () => eb.Z.getAnyStreamForUser(n)),
-    u = (0, C.Z)({
+    u = (0, j.Z)({
       userId: n
     }),
     m = eZ.ZP.useUserTag(t, {
       decoration: "never"
     }),
     p = (0, o.e7)([ev.Z], () => ev.Z.hidePersonalInformation),
-    g = (0, o.e7)([eC.Z, e_.Z], () => {
-      let e = eC.Z.getChannelId();
+    g = (0, o.e7)([ej.Z, e_.Z], () => {
+      let e = ej.Z.getChannelId();
       return null != e ? e_.Z.getChannel(e) : null
     }),
     {
@@ -614,7 +614,7 @@ function e$() {
       return (0, Z.fD)() ? null === (e = D.C.getCurrentBuildOverride().overrides) || void 0 === e ? void 0 : e.discord_web : null
     }),
     I = (0, o.e7)([eT.ZP], () => eT.ZP.getPremiumTypeSubscription()),
-    P = (0, o.e7)([ej.Z], () => ej.Z.getSpeakingWhileMuted()),
+    P = (0, o.e7)([eC.Z], () => eC.Z.getSpeakingWhileMuted()),
     R = (0, o.e7)([eE.Z], () => eE.Z.hasLayers()),
     w = (0, f.s9z)(f.JQI) || R || eD.s.isDisallowPopupsSet(),
     k = (0, J.b)(),
@@ -639,10 +639,10 @@ function e$() {
       location: "Account"
     }),
     Y = "account";
-  (0, j.j)({
+  (0, C.j)({
     location: Y + " auto on",
     autoTrackExposure: !0
-  }), (0, j.j)({
+  }), (0, C.j)({
     location: Y + " auto off",
     autoTrackExposure: !1
   });
@@ -763,13 +763,13 @@ function e1(e) {
     onMouseLeave: b,
     onClick: N,
     onContextMenu: _
-  } = e, E = t || s || n, j = i.useRef(null), C = (0, m.O)(E ? "unmute" : "mute"), O = (0, p.P)(E ? "unmute" : "mute"), {
+  } = e, E = t || s || n, C = i.useRef(null), j = (0, m.O)(E ? "unmute" : "mute"), O = (0, p.P)(E ? "unmute" : "mute"), {
     activeVoice: v
-  } = (0, eg.o)(), S = null != v, T = (0, ep.z)(v), I = (0, o.e7)([eC.Z], () => eC.Z.isConnected()), {
+  } = (0, eg.o)(), S = null != v, T = (0, ep.z)(v), I = (0, o.e7)([ej.Z], () => ej.Z.isConnected()), {
     Component: P,
     events: R,
     play: D
-  } = S ? O : C, Z = n || s ? f.v0G : P, {
+  } = S ? O : j, Z = n || s ? f.v0G : P, {
     mode: w
   } = (0, eo.ZP)({
     location: "RTC Microphone Button"
@@ -790,7 +790,7 @@ function e1(e) {
     [V, G] = i.useState(!1),
     F = i.useCallback(e => {
       var t;
-      if ((0, l.k)(null == e ? void 0 : e.target, Node) && (null === (t = j.current) || void 0 === t ? void 0 : t.contains(e.target))) return h.F;
+      if ((0, l.k)(null == e ? void 0 : e.target, Node) && (null === (t = C.current) || void 0 === t ? void 0 : t.contains(e.target))) return h.F;
       G(!1)
     }, []),
     [H, z] = i.useState(!1);
@@ -804,7 +804,7 @@ function e1(e) {
   }, [I]), (0, r.jsx)(A.Gt, {
     value: B,
     children: (0, r.jsxs)("div", {
-      ref: j,
+      ref: C,
       className: a()(eV.micButtonParent, {
         [eV.buttonSpace]: W
       }),

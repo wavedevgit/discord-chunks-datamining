@@ -1,6 +1,6 @@
 /** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => C
+  Z: () => j
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -21,20 +21,20 @@ var r = n(200651),
   N = n(761675),
   _ = n(839526),
   E = n(4046),
-  j = n(423741);
-let C = e => {
+  C = n(423741);
+let j = e => {
   var t, n;
   let {
     className: s,
-    isFooterVisible: C,
+    isFooterVisible: j,
     isDarkMode: O,
     isReducedMotion: v
   } = e, {
     analyticsLocations: S
   } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_FOOTER_CTA), T = (0, p.Ng)(), I = (0, p.Wp)(T, f.Si.TIER_2) ? f.Si.TIER_2 : void 0, y = (0, g.N)(), A = (0, m.Nx)(), P = (0, u.rO)(), R = i.useRef(null), [D, Z] = i.useState(!1);
   return i.useEffect(() => {
-    !C || v || D || null == R.current || R.current.play()
-  }, [C, v, D]), (0, r.jsx)(c.Gt, {
+    !j || v || D || null == R.current || R.current.play()
+  }, [j, v, D]), (0, r.jsx)(c.Gt, {
     value: S,
     children: (0, r.jsxs)("div", {
       className: a()(N.container, s),
@@ -61,7 +61,7 @@ let C = e => {
           },
           ref: R,
           children: (0, r.jsx)("source", {
-            src: P ? _.Z : j.Z,
+            src: P ? _.Z : C.Z,
             type: P ? x.m.MP4 : x.m.WEBM
           })
         })

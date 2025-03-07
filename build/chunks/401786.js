@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(653798),
   _ = n(311821),
   E = n(42818),
-  j = n(314884),
-  C = n(509545),
+  C = n(314884),
+  j = n(509545),
   O = n(78839),
   v = n(267642),
   S = n(74538),
@@ -80,7 +80,7 @@ function D(e) {
 }
 async function Z(e, t, n, r) {
   let i = null != r ? r : function() {
-    let e = Object.values(j.Z.boostSlots),
+    let e = Object.values(C.Z.boostSlots),
       t = a().sortBy(e.filter(e => !(0, v.tl)(e)), e => [null != e.premiumGuildSubscription, null != e.cooldownEndsAt ? new Date(e.cooldownEndsAt) : null])[0];
     return null != t ? t.id : null
   }();
@@ -97,7 +97,7 @@ function w(e) {
     guildBoostSlotId: c,
     onBack: d,
     onNext: b,
-    onClose: j
+    onClose: C
   } = e, [O, v] = i.useState(!1), [A, D] = i.useState(null), [w, k] = i.useMemo(() => {
     try {
       return [(0, x.g)(a, -1), !1]
@@ -106,20 +106,20 @@ function w(e) {
         [], !0
       ]
     }
-  }, [a]), W = i.useRef(j);
+  }, [a]), W = i.useRef(C);
   i.useEffect(() => {
-    W.current = j
+    W.current = C
   }), i.useEffect(() => {
     k && W.current()
   }, [k]);
   let {
     premiumSubscriptionPlan: L,
     premiumGuildPlan: B
-  } = (0, l.cj)([C.Z], () => {
-    let e = C.Z.get(a.planId);
+  } = (0, l.cj)([j.Z], () => {
+    let e = j.Z.get(a.planId);
     return {
       premiumSubscriptionPlan: e,
-      premiumGuildPlan: null != e ? C.Z.getForSkuAndInterval((0, S.Wz)(y.Si.GUILD), e.interval, e.intervalCount) : null
+      premiumGuildPlan: null != e ? j.Z.getForSkuAndInterval((0, S.Wz)(y.Si.GUILD), e.interval, e.intervalCount) : null
     }
   }), {
     analyticsLocations: M
@@ -162,7 +162,7 @@ function w(e) {
     } = L;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(I.Z, {
-      onClose: j
+      onClose: C
     }), (0, r.jsxs)(o.hzk, {
       className: R.body,
       children: [null !== A && (0, r.jsx)(o.kzN, {

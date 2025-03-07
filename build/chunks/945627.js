@@ -1,6 +1,6 @@
 /** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => C
+  Z: () => j
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -22,7 +22,7 @@ var r = n(200651),
   _ = n(388032),
   E = n(167198);
 
-function j() {
+function C() {
   let e = (0, a.e7)([u.Z], () => u.Z.getGameFriendCount()),
     [t] = (0, a.e7)([u.Z], () => {
       let e = u.Z.getGameRelationships().values();
@@ -118,10 +118,10 @@ function j() {
   })
 }
 
-function C() {
+function j() {
   let e = g._j.useSetting();
   return (0, r.jsxs)(h.Z, {
-    children: [(0, r.jsx)(j, {}), (0, r.jsx)(f.U, {
+    children: [(0, r.jsx)(C, {}), (0, r.jsx)(f.U, {
       setting: b.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
       children: (0, r.jsx)(x.Z, {
         title: _.NW.string(_.t["/U8Iwc"]),

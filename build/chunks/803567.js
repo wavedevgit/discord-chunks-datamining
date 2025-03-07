@@ -22,8 +22,8 @@ var i = n(120356),
   N = n(726985),
   _ = n(981631),
   E = n(388032),
-  j = n(802138);
-let C = n(775322),
+  C = n(802138);
+let j = n(775322),
   O = n(853453),
   v = (0, u.hQ)(),
   S = {
@@ -69,15 +69,15 @@ function I(e) {
     name: E.NW.string(E.t.wkYAl5),
     value: 0
   }), (0, r.jsxs)(o.hjN, {
-    className: t ? void 0 : j.marginBottom20,
+    className: t ? void 0 : C.marginBottom20,
     children: [(0, r.jsx)(o.vwX, {
       id: v,
       tag: o.RB0.H3,
-      className: j.marginBottom8,
+      className: C.marginBottom8,
       children: E.NW.string(E.t.t8QhiY)
     }), (0, r.jsx)(o.R94, {
       type: o.R94.Types.DESCRIPTION,
-      className: j.marginBottom8,
+      className: C.marginBottom8,
       children: E.NW.string(E.t.najZCQ)
     }), (0, r.jsx)(o.FXm, {
       options: p,
@@ -86,10 +86,10 @@ function I(e) {
       },
       value: i ? 2 : +!!s
     }), m && (0, r.jsx)(o.ToO, {
-      className: j.marginBottom8,
+      className: C.marginBottom8,
       type: o.Dd5.PRIMARY,
       imageData: {
-        src: (0, l.ap)(n) ? C : O,
+        src: (0, l.ap)(n) ? j : O,
         width: 70,
         height: 40
       },
@@ -123,20 +123,20 @@ function y(e) {
   })), {
     hasEchoCancellation: f,
     hasNoiseSuppression: x,
-    hasAutomaticGainControl: C
+    hasAutomaticGainControl: j
   } = (0, a.cj)([p.Z], () => ({
     hasEchoCancellation: p.Z.hasEchoCancellation(i),
     hasNoiseSuppression: p.Z.hasNoiseSuppression(i),
     hasAutomaticGainControl: p.Z.hasAutomaticGainControl(i)
   }), [i]), O = n === _.pM4.VOICE_ACTIVITY && u, v = (0, r.jsxs)(b.Z, {
-    children: [(f || x || C) && (0, r.jsx)(o.R94, {
-      className: t ? void 0 : j.marginBottom20,
+    children: [(f || x || j) && (0, r.jsx)(o.R94, {
+      className: t ? void 0 : C.marginBottom20,
       type: o.R94.Types.DESCRIPTION,
       children: E.NW.string(E.t["/Whuzs"])
     }), (0, r.jsx)(m.F, {
       setting: N.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ECHO_CANCELLATION,
       children: (0, r.jsx)(o.j7V, {
-        className: t ? void 0 : s()(j.marginTop8, j.marginBottom20),
+        className: t ? void 0 : s()(C.marginTop8, C.marginBottom20),
         value: l,
         onChange: e => c.Z.setEchoCancellation(e, {
           page: _.ZY5.USER_SETTINGS,
@@ -172,14 +172,14 @@ function y(e) {
           section: _.jXE.SETTINGS_VOICE_AND_VIDEO
         }),
         note: E.NW.string(E.t["6EjbvL"]),
-        disabled: C,
+        disabled: j,
         hideBorder: t,
         children: E.NW.string(E.t.cUMdHx)
       })
     })]
   });
   return t ? v : (0, r.jsx)(o.hjN, {
-    className: j.marginBottom20,
+    className: C.marginBottom20,
     title: E.NW.string(E.t["6I6GUl"]),
     children: v
   })

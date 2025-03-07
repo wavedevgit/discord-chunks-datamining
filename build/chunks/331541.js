@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(648052),
   _ = n(867176),
   E = n(537006),
-  j = n(483424),
-  C = n(681837),
+  C = n(483424),
+  j = n(681837),
   O = n(502762),
   v = n(530),
   S = n(309494),
@@ -143,7 +143,7 @@ function Y(e) {
                 onClose: n
               }),
               nicknameIcons: (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(C.Z, {
+                children: [(0, r.jsx)(j.Z, {
                   userId: t.id
                 }), (0, r.jsx)(S.Z, {
                   user: t,
@@ -158,7 +158,7 @@ function Y(e) {
             }), (0, r.jsx)(E.Z, {
               isPremiumUser: el,
               onInteraction: n
-            }), (0, r.jsx)(j.Z, {
+            }), (0, r.jsx)(C.Z, {
               user: t,
               currentUser: t,
               displayProfile: q,

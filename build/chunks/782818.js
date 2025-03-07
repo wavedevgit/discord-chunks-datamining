@@ -15,9 +15,9 @@ var r = n(200651),
   p = n(225516),
   m = n(598989),
   g = n(898331),
-  b = n(841183),
-  j = n(981631),
-  x = n(486324),
+  j = n(841183),
+  x = n(981631),
+  b = n(486324),
   h = n(388032),
   y = n(170286);
 
@@ -46,10 +46,10 @@ function v() {
       default: e
     } = await n.e("21907").then(n.bind(n, 53394));
     return t => (0, r.jsx)(e, O({
-      analyticsSource: j.Sbl.PROFILE_PANEL,
+      analyticsSource: x.Sbl.PROFILE_PANEL,
       analyticsLocation: {
-        section: j.jXE.USER_PROFILE,
-        object: j.qAy.RECENT_AVATARS_UPSELL
+        section: x.jXE.USER_PROFILE,
+        object: x.qAy.RECENT_AVATARS_UPSELL
       },
       onSecondaryClick: c.pTH
     }, t))
@@ -68,7 +68,7 @@ function C(e) {
   } = t, {
     avatarSrc: s,
     eventHandlers: u
-  } = (0, b.Z)({
+  } = (0, j.Z)({
     avatarId: a,
     storageHash: i
   }), {
@@ -120,13 +120,13 @@ function N(e) {
     onComplete: a,
     onClose: s
   } = e, d = (0, o.e7)([u.default], () => u.default.getCurrentUser()), {
-    avatars: b,
+    avatars: j,
     loading: v,
     error: N
   } = (0, m.S)(), {
     recentAvatarsLimit: E,
     numberOfLockedAvatarSlots: S
-  } = (0, f.pC)(t), [P, w] = l.useState(null), T = null != P ? P : null == N ? void 0 : N.message, F = b.length > E ? b.slice(0, E) : b, _ = F.length, R = Math.max(E - _, 0), Z = (0, c.vRw)(), L = l.useCallback(async e => {
+  } = (0, f.pC)(t), [P, w] = l.useState(null), T = null != P ? P : null == N ? void 0 : N.message, F = j.length > E ? j.slice(0, E) : j, R = F.length, _ = Math.max(E - R, 0), Z = (0, c.vRw)(), L = l.useCallback(async e => {
     if (null == d) return;
     w(null);
     let {
@@ -137,7 +137,7 @@ function N(e) {
       userId: d.id,
       avatarId: t,
       storageHash: l,
-      size: j.dGM,
+      size: x.dGM,
       canAnimate: !0,
       allowWebp: !1
     });
@@ -160,7 +160,7 @@ function N(e) {
           }),
           originalAsset: e,
           onCrop: a,
-          uploadType: x.pC.AVATAR,
+          uploadType: b.pC.AVATAR,
           showUpsellHeader: !0
         }, n))
       }, {
@@ -184,7 +184,7 @@ function N(e) {
       className: i()(y.recentAvatarSlots, {
         [y.withPremiumUpsell]: !t
       }),
-      children: [_ > 0 && (0, r.jsx)("ul", {
+      children: [R > 0 && (0, r.jsx)("ul", {
         "aria-label": h.NW.string(h.t.lsU63N),
         className: y.recentAvatarList,
         children: F.map((e, t) => (0, r.jsx)("li", {
@@ -194,13 +194,13 @@ function N(e) {
             onSelectRecentAvatar: L
           })
         }, e.id))
-      }), R > 0 && (0, r.jsxs)("div", {
+      }), _ > 0 && (0, r.jsxs)("div", {
         className: y.emptyAvatarSlots,
         children: [(0, r.jsx)(c.nn4, {
           children: h.NW.format(h.t["8W2HOz"], {
-            numberOfEmptyAvatarSlots: R
+            numberOfEmptyAvatarSlots: _
           })
-        }), [...Array(R)].map((e, t) => (0, r.jsx)(g.Z, {
+        }), [...Array(_)].map((e, t) => (0, r.jsx)(g.Z, {
           className: y.avatarPlaceholder
         }, t))]
       }), !t && (0, r.jsx)(A, {

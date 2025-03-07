@@ -1,6 +1,6 @@
 /** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => C
+  Z: () => j
 }), n(47120), n(518263), n(970173), n(520712), n(268111), n(941497), n(32026), n(480839), n(744285), n(492257), n(873817), n(610885), n(126298), n(733860), n(230036);
 var r = n(200651),
   i = n(192379),
@@ -50,7 +50,7 @@ function E(e) {
   })
 }
 
-function j(e) {
+function C(e) {
   let {
     items: t,
     dismissedContents: n,
@@ -65,7 +65,7 @@ function j(e) {
   })
 }
 
-function C() {
+function j() {
   var e;
   let t = (0, x.ZP)(e => e.recentlyShown),
     {
@@ -78,7 +78,7 @@ function C() {
       newUserMinAgeRequiredOverridden: f.Z.newUserMinAgeRequiredOverridden
     })),
     [b, E] = i.useState(""),
-    C = null !== (e = (0, l.e7)([g.Z], () => {
+    j = null !== (e = (0, l.e7)([g.Z], () => {
       var e;
       return null === (e = g.Z.settings.userContent) || void 0 === e ? void 0 : e.dismissedContents
     })) && void 0 !== e ? e : new Uint8Array,
@@ -154,9 +154,9 @@ function C() {
           children: (0, r.jsx)(d.vwX, {
             children: "Recently Shown"
           })
-        }), (0, r.jsx)(j, {
+        }), (0, r.jsx)(C, {
           items: T,
-          dismissedContents: C,
+          dismissedContents: j,
           handleChange: S
         })]
       }) : null, I.length > 0 ? (0, r.jsxs)(r.Fragment, {
@@ -165,9 +165,9 @@ function C() {
           children: (0, r.jsx)(d.vwX, {
             children: "Recent Overrides"
           })
-        }), (0, r.jsx)(j, {
+        }), (0, r.jsx)(C, {
           items: I,
-          dismissedContents: C,
+          dismissedContents: j,
           handleChange: S
         })]
       }) : null, (0, r.jsx)(u.Z, {
@@ -175,9 +175,9 @@ function C() {
         children: (0, r.jsx)(d.vwX, {
           children: "Available Dismissible Contents"
         })
-      }), (0, r.jsx)(j, {
+      }), (0, r.jsx)(C, {
         items: y,
-        dismissedContents: C,
+        dismissedContents: j,
         handleChange: S
       })]
     })]

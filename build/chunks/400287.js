@@ -30,8 +30,8 @@ function N() {
     }),
     _ = g.R$.useSetting(),
     E = g.cC.useSetting(),
-    j = g.vF.useSetting(),
-    C = g.H1.useSetting(),
+    C = g.vF.useSetting(),
+    j = g.H1.useSetting(),
     O = g.ev.useSetting(),
     v = g.x4.useSetting(),
     S = g.RS.useSetting(),
@@ -71,7 +71,7 @@ function N() {
         setting: h.s6.CHAT_INLINE_MEDIA_IMAGE_DESCRIPTIONS,
         children: (0, r.jsx)(a.j7V, {
           className: s()(b.marginTop8, b.marginBottom40),
-          value: C,
+          value: j,
           note: x.NW.string(x.t.T0rbtL),
           onChange: g.H1.updateSetting,
           children: x.NW.string(x.t["w8j+yc"])
@@ -217,7 +217,7 @@ function N() {
           setting: h.s6.CHAT_THREADS_SPLIT_VIEW,
           children: (0, r.jsx)(a.j7V, {
             className: b.marginTop8,
-            value: j,
+            value: C,
             onChange: g.vF.updateSetting,
             children: x.NW.string(x.t.AInv5u)
           })

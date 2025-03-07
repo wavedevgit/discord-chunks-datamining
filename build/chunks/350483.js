@@ -37,15 +37,15 @@ let b = s().throttle(function(e, t) {
       withVoiceChannels: _ = !1
     } = t,
     E = null !== (i = o.Z.getState().guildId) && void 0 !== i ? i : h.ME,
-    j = o.Z.getState().channelId,
-    C = function(e, t) {
+    C = o.Z.getState().channelId,
+    j = function(e, t) {
       let n = [h.ME, ...u.ZP.getFlattenedGuildIds()],
         r = n.indexOf(e);
       return t > 0 ? n.slice(r).concat(n.slice(0, r), e) : (n.splice(r, 0, e), n.slice(r + 1).concat(n.slice(0, r + 1)))
     }(E, e),
-    O = e > 0 ? 0 : C.length - 1,
+    O = e > 0 ? 0 : j.length - 1,
     v = x(E, _),
-    S = v.indexOf(j) + e;
+    S = v.indexOf(C) + e;
   for (; null != E && "" !== E;) {
     if (l = v[S], f(E))
       for (; null != l && "" !== l;) {
@@ -89,7 +89,7 @@ let b = s().throttle(function(e, t) {
         });
         S += e, l = v[S]
       }
-    if (O += e, null == (E = C[O]) || "" === E) break;
+    if (O += e, null == (E = j[O]) || "" === E) break;
     v = x(E, _), S = e < 0 ? v.length - 1 : 0
   }
   p.S.dispatch(h.CkL.SHAKE_APP, {

@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(346585),
   _ = n(347649),
   E = n(332473),
-  j = n(303172),
-  C = n(518560),
+  C = n(303172),
+  j = n(518560),
   O = n(921801),
   v = n(484459),
   S = n(430824),
@@ -150,7 +150,7 @@ class X extends i.PureComponent {
         date: (0, N.IE)(this.props.locale)
       }) : H.NW.format(H.t.pdYZys, {}), " ", "", (0, r.jsx)(b.Z, {
         className: z.noticeTextButton,
-        onClick: () => (0, j.Z)(F.Kq.USER_SETTINGS),
+        onClick: () => (0, C.Z)(F.Kq.USER_SETTINGS),
         children: H.NW.string(H.t.LhlgY2)
       })]
     }) : null
@@ -328,7 +328,7 @@ class X extends i.PureComponent {
           setting: V.s6.ACCOUNT_SECURITY_TAB
         }, {
           title: H.NW.string(H.t["Vov/9v"]),
-          component: C.Z,
+          component: j.Z,
           setting: V.s6.PRIVACY_AND_SAFETY_STANDING
         }]
       })

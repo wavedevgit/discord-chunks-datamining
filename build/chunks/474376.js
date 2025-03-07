@@ -1,6 +1,6 @@
 /** Chunk was on 51724 **/
 n.d(t, {
-  g: () => j
+  g: () => C
 }), n(653041);
 var r = n(200651);
 n(192379);
@@ -23,11 +23,11 @@ var i = n(442837),
   _ = n(388032),
   E = n(853759);
 
-function j(e) {
+function C(e) {
   let t = (0, i.e7)([m.default], () => m.default.getCurrentUser()),
     n = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation),
-    j = (0, i.e7)([c.Z], () => (0, s.wj)(c.Z.theme)),
-    C = (0, o.R6)("useMultiAccountMenuItems"),
+    C = (0, i.e7)([c.Z], () => (0, s.wj)(c.Z.theme)),
+    j = (0, o.R6)("useMultiAccountMenuItems"),
     {
       multiAccountUsers: O
     } = (0, x.L)(),
@@ -73,11 +73,11 @@ function j(e) {
             }), o && (0, r.jsx)(a.owK, {
               size: "sm",
               color: (0, l.Lq)(t ? N.Ilk.WHITE_500 : N.Ilk.BRAND_500),
-              secondaryColor: (0, l.Lq)(t && j || t && !C && !j ? N.Ilk.BRAND_500 : N.Ilk.WHITE_500),
+              secondaryColor: (0, l.Lq)(t && C || t && !j && !C ? N.Ilk.BRAND_500 : N.Ilk.WHITE_500),
               className: E.activeIcon
             }), c && (0, r.jsx)(a.P4T, {
               color: (0, l.Lq)(N.Ilk.RED_400),
-              secondaryColor: (0, l.Lq)(t && j || t && !C && !j ? N.Ilk.BRAND_500 : N.Ilk.WHITE_500),
+              secondaryColor: (0, l.Lq)(t && C || t && !j && !C ? N.Ilk.BRAND_500 : N.Ilk.WHITE_500),
               size: "xs",
               className: E.activeIcon
             })]

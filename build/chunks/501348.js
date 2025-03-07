@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(514361),
   _ = n(600164),
   E = n(313201),
-  j = n(540059),
-  C = n(605236),
+  C = n(540059),
+  j = n(605236),
   O = n(786761),
   v = n(3148),
   S = n(739566),
@@ -121,7 +121,7 @@ let Y = {
     }))]
   },
   $ = () => {
-    let e = (0, j.Q3)("ThemeTitle"),
+    let e = (0, C.Q3)("ThemeTitle"),
       t = (0, l.e7)([N.Z], () => N.Z.isPreview),
       {
         enabled: n
@@ -630,7 +630,7 @@ class et extends ee {
   }
 }
 let en = e => {
-  (0, C.un)(e) || (0, C.EW)(e, {
+  (0, j.un)(e) || (0, j.EW)(e, {
     dismissAction: B.L.AUTO,
     forceTrack: !0
   })
@@ -661,9 +661,9 @@ function er() {
         gradientPreset: N.Z.gradientPreset
       }
     }),
-    d = (0, j.nm)("UserSettingsAppearance"),
-    u = (0, j.o9)("UserSettingsAppearance"),
-    m = (0, j.Q3)("UserSettingsAppearance");
+    d = (0, C.nm)("UserSettingsAppearance"),
+    u = (0, C.o9)("UserSettingsAppearance"),
+    m = (0, C.Q3)("UserSettingsAppearance");
   return (0, r.jsx)(m ? et : ee, H({
     messageDisplayCompact: e,
     hideSimpleEmbedContent: t && n,

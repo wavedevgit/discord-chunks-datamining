@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(32173),
   _ = n(391110),
   E = n(75077),
-  j = n(981631),
-  C = n(388032),
+  C = n(981631),
+  j = n(388032),
   O = n(951084),
   v = n(865215);
 let S = e => {
@@ -48,7 +48,7 @@ let S = e => {
       fractionalState: W
     } = (0, p.Z)(),
     L = (0, f.W)();
-  return k ? (t = C.NW.string(C.t["+vt7w8"]), n = C.NW.string(C.t.LgHbnJ)) : (t = C.NW.string(C.t.LgHbnJ), n = C.NW.string(C.t["+vt7w8"])), (0, r.jsx)(c.yWw, {
+  return k ? (t = j.NW.string(j.t["+vt7w8"]), n = j.NW.string(j.t.LgHbnJ)) : (t = j.NW.string(j.t.LgHbnJ), n = j.NW.string(j.t["+vt7w8"])), (0, r.jsx)(c.yWw, {
     className: a()(O.allPerksScroller, {
       [O.open]: s,
       [O.openCloseReduceMotion]: w
@@ -61,7 +61,7 @@ let S = e => {
         children: [(0, r.jsx)(x.Z, {
           className: O.heroHeading,
           onBackClick: () => {
-            S(!1), h.default.track(j.rMx.NITRO_HOME_NAVIGATION, {
+            S(!1), h.default.track(C.rMx.NITRO_HOME_NAVIGATION, {
               current_component: _.MQ.SEE_ALL,
               next_component: T,
               interaction_component: "Back Button"
@@ -107,7 +107,7 @@ let S = e => {
             variant: "heading-xxl/extrabold",
             color: "header-primary",
             className: O.heading,
-            children: C.NW.string(C.t.LTaxu7)
+            children: j.NW.string(j.t.LTaxu7)
           }), (0, r.jsx)(b.Z, {
             className: O.cardCarousel,
             cards: (0, E.sP)({
@@ -125,7 +125,7 @@ let S = e => {
           className: O.footerSpacing
         }), (0, r.jsx)(o.$, {
           onChange: e => {
-            e && !R && (h.default.track(j.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+            e && !R && (h.default.track(C.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
               location_stack: P
             }), D(!0))
           },
@@ -137,7 +137,7 @@ let S = e => {
           className: O.bottomIllustration,
           width: 112,
           height: 85,
-          alt: C.NW.string(C.t.X4IxWF)
+          alt: j.NW.string(j.t.X4IxWF)
         })]
       })
     })

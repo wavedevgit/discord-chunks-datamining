@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(775412),
   _ = n(104494),
   E = n(639119),
-  j = n(230916),
-  C = n(346497),
+  C = n(230916),
+  j = n(346497),
   O = n(823188),
   v = n(21023),
   S = n(318747),
@@ -54,7 +54,7 @@ function w(e) {
   return e
 }
 let k = () => {
-    let e = (0, C.W1)();
+    let e = (0, j.W1)();
     return (0, r.jsx)(O.Cy, {
       text: e,
       className: A.bogoPillWithSparkles,
@@ -175,13 +175,13 @@ let k = () => {
       Q = (0, N.rT)(),
       $ = (0, _.Ng)(),
       ee = null != $ && (0, _.Wp)($, I.Si.TIER_2),
-      et = (0, j.A)(I.Xh.PREMIUM_MONTH_TIER_2),
+      et = (0, C.A)(I.Xh.PREMIUM_MONTH_TIER_2),
       en = "".concat(et, "/").concat((0, b.eP)(I.rV.MONTH)),
       er = (0, b.CY)(I.Xh.PREMIUM_MONTH_TIER_0),
       ei = (0, b.CY)(I.Xh.PREMIUM_MONTH_TIER_2),
       es = (0, g.Z)(),
       ea = (0, v.n)(er, ei, ee, en, es.fractionalState),
-      el = (0, C.Vi)();
+      el = (0, j.Vi)();
     if (!G || !F) return null;
     let eo = {
       label: (0, r.jsx)(c.X6q, {

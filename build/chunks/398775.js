@@ -1,6 +1,6 @@
 /** Chunk was on 51724 **/
 n.d(t, {
-  Sz: () => j,
+  Sz: () => C,
   of: () => E
 }), n(653041), n(47120), n(230036);
 var r = n(200651),
@@ -110,7 +110,7 @@ function E(e) {
   })
 }
 
-function j(e) {
+function C(e) {
   let {
     premiumSubscription: t,
     premiumType: n,
@@ -119,7 +119,7 @@ function j(e) {
     analyticsLocation: d
   } = e, [u, h] = i.useState(!1), {
     analyticsLocations: E
-  } = (0, p.ZP)(), [j, C] = i.useState(!1), O = (0, m.ZP)(), v = null, S = null, T = [x.O0b.PAST_DUE, x.O0b.PAUSED].includes(t.status) ? t.currentPeriodStart : t.currentPeriodEnd, I = a()(T).add(l, "days").toDate();
+  } = (0, p.ZP)(), [C, j] = i.useState(!1), O = (0, m.ZP)(), v = null, S = null, T = [x.O0b.PAST_DUE, x.O0b.PAUSED].includes(t.status) ? t.currentPeriodStart : t.currentPeriodEnd, I = a()(T).add(l, "days").toDate();
   switch (t.status) {
     case x.O0b.PAST_DUE:
       S = b.NW.format(b.t["xaS18/"], {
@@ -168,12 +168,12 @@ function j(e) {
         className: N.whatYouLoseButtonContainer,
         children: [(0, r.jsx)(c.zxk, {
           color: c.zxk.Colors.RED,
-          disabled: j || null == l,
+          disabled: C || null == l,
           onClick: async () => {
             await _({
               premiumSubscription: t,
               pauseDuration: l,
-              setIsCancelling: C,
+              setIsCancelling: j,
               setHasError: h,
               onClose: s,
               analyticsLocations: E,

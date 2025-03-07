@@ -45,7 +45,7 @@ function b() {
       })
     }
     return e
-  })({}, u.Z.getSettings())), j = (e, t) => {
+  })({}, u.Z.getSettings())), C = (e, t) => {
     o.Z.update({
       [e]: t
     })
@@ -75,7 +75,7 @@ function b() {
       setting: p.s6.STREAMER_MODE_ENABLE,
       children: [(0, r.jsx)(l.j7V, {
         value: e,
-        onChange: e => j("enabled", e),
+        onChange: e => C("enabled", e),
         note: h.NW.format(h.t.MLVL2N, {
           onClick: () => {
             c.Z.setSection(g.oAB.KEYBINDS)
@@ -85,7 +85,7 @@ function b() {
       }), (() => {
         if (m.isPlatformEmbedded) return (0, r.jsx)(l.j7V, {
           value: t,
-          onChange: e => j("autoToggle", e),
+          onChange: e => C("autoToggle", e),
           note: h.NW.string(h.t.ZPi4lJ),
           children: h.NW.string(h.t.PKDAJy)
         })
@@ -98,7 +98,7 @@ function b() {
         setting: p.s6.STREAMER_MODE_HIDE_PERSONAL_INFORMATION,
         children: (0, r.jsx)(l.j7V, {
           value: b,
-          onChange: e => j("hidePersonalInformation", e),
+          onChange: e => C("hidePersonalInformation", e),
           note: h.NW.string(h.t["+9Lra2"]),
           children: h.NW.string(h.t.UpQziI)
         })
@@ -106,7 +106,7 @@ function b() {
         setting: p.s6.STREAMER_MODE_HIDE_INVITE_LINKS,
         children: (0, r.jsx)(l.j7V, {
           value: i,
-          onChange: e => j("hideInstantInvites", e),
+          onChange: e => C("hideInstantInvites", e),
           note: h.NW.string(h.t.m7mS2d),
           children: h.NW.string(h.t.q7WNGh)
         })
@@ -114,7 +114,7 @@ function b() {
         setting: p.s6.STREAMER_MODE_DISABLE_SOUNDS,
         children: (0, r.jsx)(l.j7V, {
           value: N,
-          onChange: e => j("disableSounds", e),
+          onChange: e => C("disableSounds", e),
           note: h.NW.string(h.t.eAkaio),
           children: h.NW.string(h.t.o56OZm)
         })
@@ -122,7 +122,7 @@ function b() {
         setting: p.s6.STREAMER_MODE_DISABLE_NOTIFICATIONS,
         children: (0, r.jsx)(l.j7V, {
           value: _,
-          onChange: e => j("disableNotifications", e),
+          onChange: e => C("disableNotifications", e),
           note: h.NW.string(h.t.ZAmpQ0),
           children: h.NW.string(h.t.qmYiYW)
         })
@@ -130,7 +130,7 @@ function b() {
         setting: p.s6.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE,
         children: (0, r.jsx)(l.j7V, {
           value: E,
-          onChange: e => j("enableContentProtection", e),
+          onChange: e => C("enableContentProtection", e),
           note: h.NW.string(h.t.P4vj0t),
           children: h.NW.string(h.t["iA81+f"])
         })

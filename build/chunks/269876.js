@@ -1,6 +1,6 @@
 /** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => j
+  Z: () => C
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -22,10 +22,10 @@ var r = n(200651),
   _ = n(802138);
 let E = (0, p.hQ)();
 
-function j() {
+function C() {
   let [e, t] = i.useState(-100), [n, s] = i.useState(!1), {
-    threshold: j,
-    autoThreshold: C
+    threshold: C,
+    autoThreshold: j
   } = (0, l.cj)([g.Z], () => g.Z.getModeOptions()), {
     inputMode: O,
     automaticVADSupported: v,
@@ -57,9 +57,9 @@ function j() {
   let y = (0, r.jsx)("section", {
     className: a()(x.inputSensitivityToggle, x.manual),
     children: (0, r.jsx)(u.iRW, {
-      initialValue: j + 100,
+      initialValue: C + 100,
       onValueRender: e => "".concat((-((100 - e) * 1)).toFixed(0), "dB"),
-      onValueChange: e => I(-((100 - e) * 1), C),
+      onValueChange: e => I(-((100 - e) * 1), j),
       barStyles: {
         background: d.Z.unsafe_rawColors.GREEN_360.css
       },
@@ -80,7 +80,7 @@ function j() {
       })
     })
   });
-  return C && (y = (0, r.jsxs)("section", {
+  return j && (y = (0, r.jsxs)("section", {
     className: x.inputSensitivityToggle,
     children: [(0, r.jsx)("div", {
       className: x.inputSensitivitySlider,
@@ -110,8 +110,8 @@ function j() {
           })
         }), (0, r.jsx)(u.rsf, {
           id: e,
-          checked: C,
-          onChange: e => I(j, e)
+          checked: j,
+          onChange: e => I(C, e)
         })]
       })
     }), y, !S && (0, r.jsx)(u.R94, {

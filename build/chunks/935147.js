@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(629654),
   _ = n(53691),
   E = n(165583),
-  j = n(267717),
-  C = n(643879),
+  C = n(267717),
+  j = n(643879),
   O = n(350327),
   v = n(996073),
   S = n(25990),
@@ -163,7 +163,7 @@ function V(e) {
           }), (0, r.jsx)(w.Z, {
             className: U.customizationSection,
             user: V,
-            pendingAvatarSrc: (0, C.SD)({
+            pendingAvatarSrc: (0, j.SD)({
               userId: V.id,
               image: null != q ? q : z
             }),
@@ -205,7 +205,7 @@ function V(e) {
         className: U.floatingUpsell,
         showUpsell: !0,
         text: M.NW.format(M.t.TmfgIy, {
-          onClick: () => (0, j.y)(es)
+          onClick: () => (0, C.y)(es)
         }),
         button: H ? M.NW.string(M.t.AfRWIy) : eo ? M.NW.formatToPlainString(M.t.bkQ4bG, {
           percent: null == el ? void 0 : el.discount.amount

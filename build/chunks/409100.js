@@ -57,8 +57,8 @@ let g = e => {
       }
       return i
     }(e, ["forceInverted", "subscriptionTier", "hasActivePromotion", "isPersistentCTA", "useShorterCTA", "confirmationFooter", "planSelectBanner"]);
-    let j = (0, a.ZP)(),
-      C = (0, i.wj)(j) || t,
+    let C = (0, a.ZP)(),
+      j = (0, i.wj)(C) || t,
       O = (0, c.N)(),
       v = null == O ? void 0 : O.subscription_trial,
       S = (0, l.a5)({
@@ -94,8 +94,8 @@ let g = e => {
       }
       return e
     }({
-      color: C ? s.Ttl.BRAND_INVERTED : s.Ttl.BRAND,
-      buttonShineClassName: "buttonShineClassName" in E ? E.buttonShineClassName : C ? p.brandShine : void 0,
+      color: j ? s.Ttl.BRAND_INVERTED : s.Ttl.BRAND,
+      buttonShineClassName: "buttonShineClassName" in E ? E.buttonShineClassName : j ? p.brandShine : void 0,
       buttonText: A,
       buttonTextClassName: I ? p.freeTrialText : void 0,
       onlyShineOnHover: !0,

@@ -22,8 +22,8 @@ var r, i = n(230711),
   N = n(91342),
   _ = n(181708),
   E = n(821721),
-  j = n(158897),
-  C = n(290650),
+  C = n(158897),
+  j = n(290650),
   O = n(751125),
   v = n(904505),
   S = n(712626),
@@ -51,7 +51,7 @@ let w = () => {
         title: m.NW.string(m.t["6b3ydH"]),
         description: m.NW.string(m.t["Y+IJys"]),
         previewImage: g,
-        videoUrl: e ? C.ZP : O.ZP,
+        videoUrl: e ? j.ZP : O.ZP,
         isCompact: !0
       }
     }
@@ -93,7 +93,7 @@ let w = () => {
         descriptionCta: m.NW.string(m.t.jVcuVV),
         onClick: r,
         previewImage: x,
-        videoUrl: p ? E.ZP : j.ZP
+        videoUrl: p ? E.ZP : C.ZP
       }
     }, _ = {
       showYourStyle: {

@@ -22,8 +22,8 @@ var r = n(200651),
   N = n(605236),
   _ = n(984370),
   E = n(797614),
-  j = n(108427),
-  C = n(210887),
+  C = n(108427),
+  j = n(210887),
   O = n(695346),
   v = n(594174),
   S = n(626135),
@@ -141,9 +141,9 @@ function z() {
     h = (0, b.Dt)(),
     f = v.default.getCurrentUser(),
     _ = null != e,
-    C = s && null != f && !_;
+    j = s && null != f && !_;
   (0, p.ZP)(() => {
-    (0, j.e)("family-center"), T.ZP.initialPageLoad(), n || (0, N.EW)(d.z.FAMILY_CENTER_NEW_BADGE, {
+    (0, C.e)("family-center"), T.ZP.initialPageLoad(), n || (0, N.EW)(d.z.FAMILY_CENTER_NEW_BADGE, {
       dismissAction: B.L.AUTO,
       forceTrack: !0
     })
@@ -176,8 +176,8 @@ function z() {
       })
     }
   }, [s, _]), i.useEffect(() => {
-    C && (0, g.mN)(L.L0.FAMILY_CENTER)
-  }, [C]), C) ? null : (0, r.jsxs)("main", {
+    j && (0, g.mN)(L.L0.FAMILY_CENTER)
+  }, [j]), j) ? null : (0, r.jsxs)("main", {
     className: U.container,
     "aria-label": M.NW.string(M.t.RZqaJi),
     children: [(0, r.jsx)(x.yY, {
@@ -201,12 +201,12 @@ function z() {
 function Y() {
   let {
     analyticsLocations: e
-  } = (0, f.ZP)(h.Z.FAMILY_CENTER), t = (0, P.Z)(), n = (0, R.M8)(), s = (0, N.wE)(d.z.FAMILY_CENTER_NEW_BADGE), l = (0, c.e7)([I.Z], () => I.Z.getIsInitialized()), _ = (0, A.M)(), D = (0, c.e7)([C.Z], () => C.Z.theme), {
+  } = (0, f.ZP)(h.Z.FAMILY_CENTER), t = (0, P.Z)(), n = (0, R.M8)(), s = (0, N.wE)(d.z.FAMILY_CENTER_NEW_BADGE), l = (0, c.e7)([I.Z], () => I.Z.getIsInitialized()), _ = (0, A.M)(), D = (0, c.e7)([j.Z], () => j.Z.theme), {
     selectedTab: Z,
     handleTabChange: w
   } = (0, y.Z)(), V = (0, b.Dt)(), F = v.default.getCurrentUser(), z = null != t, Y = l && null != F && !z;
   (0, p.ZP)(() => {
-    m.Y(W.Z5c.FAMILY_CENTER), (0, j.e)("family-center"), !I.Z.isLoading() && I.Z.canRefetch() && T.ZP.initialPageLoad(), s || (0, N.EW)(d.z.FAMILY_CENTER_NEW_BADGE, {
+    m.Y(W.Z5c.FAMILY_CENTER), (0, C.e)("family-center"), !I.Z.isLoading() && I.Z.canRefetch() && T.ZP.initialPageLoad(), s || (0, N.EW)(d.z.FAMILY_CENTER_NEW_BADGE, {
       dismissAction: B.L.AUTO,
       forceTrack: !0
     })

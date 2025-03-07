@@ -236,6 +236,14 @@ class eg extends f.Z {
     }
     t ? n.addUserToStatsCollectionPausedSet(e) : n.removeUserFromStatsCollectionPausedSet(e)
   }
+  getOutboundStats() {
+    let e = this.getOrCreateVideoQuality();
+    return null != e ? e.getOutboundStats() : null
+  }
+  getInboundStats(e) {
+    let t = this.getOrCreateVideoQuality();
+    return null != t ? t.getInboundStats(e) : null
+  }
   setState(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
     this.logger.info("RTC connection state: ".concat(this.state, " => ").concat(e)), this.state = e, this.stateHistory.update(this.state), this.emit(H.z.State, e, {

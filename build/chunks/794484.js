@@ -1,6 +1,6 @@
 /** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => j
+  Z: () => C
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -46,13 +46,13 @@ let E = e => {
       })
     })
   },
-  j = e => {
+  C = e => {
     var t;
     let {
       className: n,
       variant: s = x.R0.PERKS_DISCOVERABILITY,
-      noBackground: j = !1,
-      leftAlignHeaders: C = !1,
+      noBackground: C = !1,
+      leftAlignHeaders: j = !1,
       showAllPerksButton: O,
       headerClassname: v,
       isFullScreen: S = !0,
@@ -99,27 +99,27 @@ let E = e => {
       }), (0, r.jsxs)("div", {
         ref: I,
         className: a()(_.section, {
-          [_.centerAlignSection]: !C,
-          [_.leftAlignSection]: C
+          [_.centerAlignSection]: !j,
+          [_.leftAlignSection]: j
         }, n),
         children: [(0, r.jsx)(E, {
           showAllPerksButton: O,
-          leftAlignHeaders: C,
+          leftAlignHeaders: j,
           title: W.title,
           headerClassname: v
         }), (0, r.jsx)(o.Text, {
           variant: "text-lg/normal",
           color: "header-primary",
           className: a()(_.subtitle, {
-            [_.subtitle]: null == O || C,
-            [_.subtitleWithButton]: null != O && !C,
-            [_.fullWidth]: R || C,
+            [_.subtitle]: null == O || j,
+            [_.subtitleWithButton]: null != O && !j,
+            [_.fullWidth]: R || j,
             [_.moreSubtitleMargin]: G,
-            [_.leftAlignSubtitle]: C,
-            [_.centerAlignSubtitle]: !C
+            [_.leftAlignSubtitle]: j,
+            [_.centerAlignSubtitle]: !j
           }),
           children: W.subtitle
-        }), !C && null != O && (0, r.jsx)("div", {
+        }), !j && null != O && (0, r.jsx)("div", {
           className: _.showAllPerksButtonCenter,
           children: O
         }), (0, r.jsx)("div", {
@@ -149,7 +149,7 @@ let E = e => {
             }({
               confettiCanvas: e.name === f.u.TENURE_REWARD_COLLECTIBLE ? F : void 0
             }, e), i = i = {
-              forceShadow: j
+              forceShadow: C
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

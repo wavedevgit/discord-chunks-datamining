@@ -22,8 +22,8 @@ var r = n(200651),
   N = n(104494),
   _ = n(639119),
   E = n(311476),
-  j = n(165583),
-  C = n(197115),
+  C = n(165583),
+  j = n(197115),
   O = n(504983),
   v = n(626135),
   S = n(210887),
@@ -56,7 +56,7 @@ let R = () => {
         color: g ? o.zxk.Colors.BRAND : o.zxk.Colors.PRIMARY,
         onClick: () => R(),
         children: g ? A.NW.string(A.t.SKNnqq) : A.NW.string(A.t["E+COuL"])
-      }), (0, r.jsx)(C.Z, {
+      }), (0, r.jsx)(j.Z, {
         showGradient: g,
         subscriptionTier: y.Si.TIER_2,
         buttonText: g ? A.NW.string(A.t.pj0XBA) : d ? A.NW.formatToPlainString(A.t.bkQ4bG, {
@@ -96,7 +96,7 @@ let R = () => {
                 children: A.NW.string(A.t["E+COuL"])
               }), (0, r.jsx)("div", {
                 className: P.premiumTier2Divider
-              }), (0, r.jsx)(j.ZP, {
+              }), (0, r.jsx)(C.ZP, {
                 type: y.cd.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
                 subscriptionTier: y.Si.TIER_2
               })]

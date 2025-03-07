@@ -29,7 +29,7 @@ function x(e) {
     authorizedApplicationId: m.Z.testModeApplicationId,
     authorizationError: m.Z.error,
     authorizing: m.Z.isFetchingAuthorization
-  })), [_, E] = i.useState(null != x ? x : ""), [j, C] = i.useState("8080"), [O, v] = i.useState("localhost"), S = (0, u.Dt)(), T = f.test(_);
+  })), [_, E] = i.useState(null != x ? x : ""), [C, j] = i.useState("8080"), [O, v] = i.useState("localhost"), S = (0, u.Dt)(), T = f.test(_);
   async function I() {
     o.q$();
     let e = function(e, t, n) {
@@ -40,7 +40,7 @@ function x(e) {
         case "proxy":
           return (0, c.ZP)(n)
       }
-    }(O, j, _);
+    }(O, C, _);
     null != await o.Wt(_, e) && t()
   }
   i.useEffect(() => () => l.Z.wait(() => o.q$()), []);
@@ -116,15 +116,15 @@ function x(e) {
             title: p.NW.string(p.t.fF4zxs),
             required: !0,
             children: (0, r.jsx)(a.oil, {
-              value: j,
+              value: C,
               maxLength: 5,
-              onChange: e => C(e),
+              onChange: e => j(e),
               disabled: N
             })
           }), (0, r.jsx)(a.zxk, {
             submitting: N,
             type: "submit",
-            disabled: !T || 0 === _.length || "localhost" === O && 0 === j.length,
+            disabled: !T || 0 === _.length || "localhost" === O && 0 === C.length,
             color: y ? a.zxk.Colors.RED : a.zxk.Colors.GREEN,
             children: y ? p.NW.string(p.t.d6TR3N) : p.NW.string(p.t.qwuK5O)
           })]

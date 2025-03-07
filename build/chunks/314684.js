@@ -28,8 +28,8 @@ var r = n(192379),
   N = n(823379),
   _ = n(111361),
   E = n(595878),
-  j = n(944880),
-  C = n(513785),
+  C = n(944880),
+  j = n(513785),
   O = n(106255),
   v = n(474936),
   S = n(735825),
@@ -70,7 +70,7 @@ function y(e, t) {
 function A() {
   var e;
   let t = function() {
-      let e = (0, a.cj)([C.Z], () => C.Z.getState());
+      let e = (0, a.cj)([j.Z], () => j.Z.getState());
       if (null != e) return e.userTenureRewardStatusByRewardId[S.Ft.FREE_AVATAR_DECO_1_MONTH]
     }(),
     n = function(e) {
@@ -220,7 +220,7 @@ function L() {
   let n = A(),
     i = null !== (e = null == n ? void 0 : n.showCard) && void 0 !== e && e;
   r.useEffect(() => {
-    i && j.Z.forceRefreshIfOutdated()
+    i && C.Z.forceRefreshIfOutdated()
   }, [i])
 }
 

@@ -22,8 +22,8 @@ var r = n(200651),
   N = n(634894),
   _ = n(410030),
   E = n(607070),
-  j = n(100527),
-  C = n(906732),
+  C = n(100527),
+  j = n(906732),
   O = n(211242),
   v = n(975298),
   S = n(15640),
@@ -283,7 +283,7 @@ let ea = function() {
   let e = (0, O.Q)(),
     {
       analyticsLocations: t
-    } = (0, C.ZP)(j.Z.PREMIUM_SETTINGS),
+    } = (0, j.ZP)(C.Z.PREMIUM_SETTINGS),
     n = (0, c.e7)([P.ZP], () => P.ZP.getPremiumTypeSubscription()),
     s = (0, c.e7)([P.ZP], () => P.ZP.hasFetchedSubscriptions()),
     a = (0, S.V)(),
@@ -322,7 +322,7 @@ let ea = function() {
   });
   if (!k && !W || l) return (0, r.jsx)(m.$jN, {});
   let L = null !== n && null != n.trialId;
-  return (0, r.jsx)(C.Gt, {
+  return (0, r.jsx)(j.Gt, {
     value: t,
     children: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {

@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(709054),
   _ = n(647177),
   E = n(63985),
-  j = n(678916),
-  C = n(981631),
+  C = n(678916),
+  j = n(981631),
   O = n(190378),
   v = n(486324),
   S = n(474936),
@@ -143,7 +143,7 @@ function D(e) {
     isAnimatedImage: b,
     isVideo: N,
     hotspotLocation: E
-  } = e, j = function(e, t) {
+  } = e, C = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -176,13 +176,13 @@ function D(e) {
     });
 
   function Z() {
-    null != E && P && (h.Kw(E), x.default.track(C.rMx.PREMIUM_UPSELL_VIEWED, {
+    null != E && P && (h.Kw(E), x.default.track(j.rMx.PREMIUM_UPSELL_VIEWED, {
       type: S.cd.ANIMATED_VIDEO_BACKGROUND_NEW_PRESET,
       location: O.location,
       location_stack: v
     }))
   }
-  return (0, r.jsxs)(o.P3F, A(y({}, j), {
+  return (0, r.jsxs)(o.P3F, A(y({}, C), {
     className: a()(I.backgroundOption, {
       [I.backgroundOptionSelected]: s
     }),
@@ -281,7 +281,7 @@ function k(e) {
     analyticsLocations: i
   } = (0, p.ZP)(m.Z.VIDEO_BACKGROUND_CUSTOM_UPSELL);
   return (0, u.ZP)(() => {
-    x.default.track(C.rMx.PREMIUM_UPSELL_VIEWED, {
+    x.default.track(j.rMx.PREMIUM_UPSELL_VIEWED, {
       type: S.cd.VIDEO_BACKGROUNDS_INLINE,
       location: n.location,
       location_stack: i
@@ -310,7 +310,7 @@ function W(e) {
           default: e
         } = await Promise.all([n.e("91689"), n.e("55849"), n.e("11725")]).then(n.bind(n, 192277));
         return n => (0, r.jsx)(e, y({
-          maxFileSizeBytes: j.SJ,
+          maxFileSizeBytes: C.SJ,
           onComplete: e => {
             let {
               imageUri: n,
@@ -345,7 +345,7 @@ function L(e) {
     smallerOptions: d
   } = e, u = i.useMemo(() => n.sort((e, t) => null == e.last_used || null == t.last_used ? N.default.compare(t.id, e.id) : new Date(t.last_used).getTime() - new Date(e.last_used).getTime()), [n]), g = u.length >= 25, {
     analyticsLocations: h
-  } = (0, p.ZP)(m.Z.VIDEO_BACKGROUND_OPTIONS), f = Object.values((0, E.Z)()).sort((e, t) => j.E1[e.id] - j.E1[t.id]);
+  } = (0, p.ZP)(m.Z.VIDEO_BACKGROUND_OPTIONS), f = Object.values((0, E.Z)()).sort((e, t) => C.E1[e.id] - C.E1[t.id]);
   return (0, r.jsx)(p.Gt, {
     value: h,
     children: (0, r.jsxs)("div", {
@@ -357,9 +357,9 @@ function L(e) {
         text: T.NW.string(T.t.fUdMeH)
       }), (0, r.jsx)(P, {
         className: I.__invalid_backgroundOptionBlurred,
-        selected: s === j.f7,
+        selected: s === C.f7,
         icon: o.yMH,
-        onClick: () => a(j.f7),
+        onClick: () => a(C.f7),
         text: T.NW.string(T.t.LhSyLy),
         children: (0, r.jsx)("div", {
           className: I.backgroundOptionBlurBackground

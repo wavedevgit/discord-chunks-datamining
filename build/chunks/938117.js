@@ -1,6 +1,6 @@
 /** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => C
+  Z: () => j
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -40,7 +40,7 @@ function E(e) {
   return e
 }
 
-function j(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,10 +53,10 @@ function j(e, t) {
   }), e
 }
 
-function C(e) {
+function j(e) {
   let {
     onLearnMore: t,
-    selectedBackgroundOption: C,
+    selectedBackgroundOption: j,
     onSelectBackgroundOption: O,
     currentDeviceId: v,
     smallerBackgroundOptions: S,
@@ -64,7 +64,7 @@ function C(e) {
   } = e, I = (0, s.e7)([o.default], () => o.default.getCurrentUser()), [y, A] = i.useState(null), P = (0, g.Z)(), R = c.ZP.canUseCustomBackgrounds(I), D = (0, s.cj)([u.Z], () => R ? u.Z.videoFilterAssets : {}), Z = i.useMemo(() => Object.values(D).filter(e => e.type === f.xV.BACKGROUND), [D]), w = (0, l.O)(), k = {
     isVideoBackgroundSupported: P,
     onSelectBackgroundOption: O,
-    selectedBackgroundOption: C
+    selectedBackgroundOption: j
   }, W = i.useRef(k);
   i.useEffect(() => {
     W.current = k
@@ -96,16 +96,16 @@ function C(e) {
     }) : null, (0, r.jsx)(h.Z, {
       canUseCustomBackgrounds: R,
       customBackgroundOptions: Z,
-      selectedOption: C,
+      selectedOption: j,
       onSelectOption: L,
       onUpsellClick: () => {
         (0, a.ZDy)(async () => {
           let {
             default: e
           } = await n.e("87200").then(n.bind(n, 592163));
-          return n => (0, r.jsx)(e, j(E({}, n), {
+          return n => (0, r.jsx)(e, C(E({}, n), {
             onLearnMore: t,
-            analyticsSource: j(E({}, w.location), {
+            analyticsSource: C(E({}, w.location), {
               object: x.qAy.BUTTON_CTA
             })
           }))

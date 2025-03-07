@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(615287),
   _ = n(386506),
   E = n(865427),
-  j = n(802098),
-  C = n(663993),
+  C = n(802098),
+  j = n(663993),
   O = n(600164),
   v = n(118012),
   S = n(482215),
@@ -571,7 +571,7 @@ class $ extends i.Component {
   renderPayloadBlock() {
     let e = JSON.stringify(this.generatePayload(), null, 2),
       t = () => e,
-      i = (0, r.jsx)(C.GI, {
+      i = (0, r.jsx)(j.GI, {
         createPromise: () => Promise.resolve().then(n.bind(n, 364964)),
         webpackId: 364964,
         renderFallback: t,
@@ -1170,8 +1170,8 @@ function ei() {
 
 function es() {
   var e;
-  let t = (0, d.e7)([j.Z], () => j.Z.overrideId()),
-    [n, s] = i.useState(null !== (e = j.Z.overrideId()) && void 0 !== e ? e : "");
+  let t = (0, d.e7)([C.Z], () => C.Z.overrideId()),
+    [n, s] = i.useState(null !== (e = C.Z.overrideId()) && void 0 !== e ? e : "");
   return (0, r.jsx)(P.F, {
     setting: L.s6.DEVELOPER_OPTIONS_CHANGELOG_OVERRIDE,
     children: (0, r.jsxs)(m.hjN, {

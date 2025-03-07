@@ -46,8 +46,8 @@ let _ = e => {
       previewImage: N,
       videoUrl: _,
       shouldLoadVideo: E,
-      index: j,
-      isCompact: C,
+      index: C,
+      isCompact: j,
       isReducedMotion: O,
       onClick: v
     } = e, S = (0, p.rO)(), T = i.useRef(null), I = i.useRef(0), y = function(e) {
@@ -85,15 +85,15 @@ let _ = e => {
       null == T.current || O || (I.current = T.current.currentTime, T.current.pause())
     }, k = () => (0, r.jsxs)("div", {
       className: a()({
-        [b.whatsNewTextBoxOuter]: !C,
-        [b.compactTextBox]: C
+        [b.whatsNewTextBoxOuter]: !j,
+        [b.compactTextBox]: j
       }),
       children: [(0, r.jsx)(c.X6q, {
         variant: "heading-xxl/extrabold",
         color: "header-primary",
         className: a()({
-          [b.whatsNewBoxHeader]: !C,
-          [b.compactBoxHeader]: C
+          [b.whatsNewBoxHeader]: !j,
+          [b.compactBoxHeader]: j
         }),
         children: n
       }), (0, r.jsx)(c.Text, {
@@ -116,8 +116,8 @@ let _ = e => {
       } = e;
       return (0, r.jsx)("div", {
         className: a()({
-          [b.whatsNewArtContainer]: !C,
-          [b.compactBoxArtContainer]: C
+          [b.whatsNewArtContainer]: !j,
+          [b.compactBoxArtContainer]: j
         }),
         children: (0, r.jsx)(u.Z, {
           playsInline: !0,
@@ -126,9 +126,9 @@ let _ = e => {
           poster: N,
           loop: !0,
           className: a()({
-            [b.perkBoxVideo]: !C,
-            [b.leftSideArt]: t && !C,
-            [b.compactBoxVideo]: C
+            [b.perkBoxVideo]: !j,
+            [b.leftSideArt]: t && !j,
+            [b.compactBoxVideo]: j
           }),
           ref: T,
           children: (0, r.jsx)("source", {
@@ -137,11 +137,11 @@ let _ = e => {
           })
         }, _)
       })
-    }, L = j % 2 == 0;
+    }, L = C % 2 == 0;
     return (0, r.jsx)("div", {
       className: a()(y, {
-        [b.whatsNewBoxContainer]: !C,
-        [b.compactBoxContainer]: C
+        [b.whatsNewBoxContainer]: !j,
+        [b.compactBoxContainer]: j
       }),
       onMouseEnter: Z,
       onFocus: Z,

@@ -23,13 +23,13 @@ function b(e) {
     previewEnabled: t,
     onEnablePreview: n,
     onCancelPreview: b
-  } = e, N = p.Z.getCameraComponent(), [_, E] = i.useState((0, c.P)(g.default.getCurrentUser())), j = i.useRef(!1), C = i.useRef(_), O = (0, o.O)(), v = (0, s.e7)([p.Z], () => p.Z.isVideoAvailable());
+  } = e, N = p.Z.getCameraComponent(), [_, E] = i.useState((0, c.P)(g.default.getCurrentUser())), C = i.useRef(!1), j = i.useRef(_), O = (0, o.O)(), v = (0, s.e7)([p.Z], () => p.Z.isVideoAvailable());
   return i.useEffect(() => () => {
-    j.current && l.Z.wait(() => (0, d.Up)(C.current))
+    C.current && l.Z.wait(() => (0, d.Up)(j.current))
   }, []), (0, r.jsx)(m.Z, {
     selectedBackgroundOption: _,
     onSelectBackgroundOption: e => {
-      j.current = !0, C.current = e, E(e), (0, u.wG)(e, {
+      C.current = !0, j.current = e, E(e), (0, u.wG)(e, {
         location: O.location
       }).catch(h.dG4)
     },

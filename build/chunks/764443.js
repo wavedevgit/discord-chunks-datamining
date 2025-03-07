@@ -142,7 +142,7 @@ function N(e) {
       default:
         return
     }
-  }, j = (0, r.jsx)(r.Fragment, {
+  }, C = (0, r.jsx)(r.Fragment, {
     children: f.map(t => {
       let {
         duration: n,
@@ -208,7 +208,7 @@ function N(e) {
           (0, l.oW)(!u)
         },
         dontCloseOnAction: !0,
-        children: j
+        children: C
       }, "quiet-mode")]
     }) : null]
   })

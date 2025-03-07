@@ -60,8 +60,8 @@ function u(e) {
   i.useEffect(() => {
     requestAnimationFrame(E)
   }, [E, u, m]);
-  let j = "auto";
-  return null != f && (j = g ? "".concat(f.expandedHeight, "px") : "".concat(f.truncatedHeight, "px")), (0, r.jsxs)("div", {
+  let C = "auto";
+  return null != f && (C = g ? "".concat(f.expandedHeight, "px") : "".concat(f.truncatedHeight, "px")), (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.Text, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -84,7 +84,7 @@ function u(e) {
       lineClamp: g ? void 0 : m,
       ref: _,
       style: {
-        height: j
+        height: C
       },
       children: u
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

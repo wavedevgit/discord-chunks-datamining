@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(314897),
   _ = n(325067),
   E = n(594174),
-  j = n(572004),
-  C = n(287880),
+  C = n(572004),
+  j = n(287880),
   O = n(714565),
   v = n(202858),
   S = n(726985),
@@ -74,9 +74,9 @@ function w(e) {
       consumed: n
     }
   } = e, s = "".concat(t.substr(0, 4), "-").concat(t.substr(4)), a = i.useRef(null), l = i.useCallback(e => {
-    if ("c" === e.key && e.metaKey && j.wS) {
+    if ("c" === e.key && e.metaKey && C.wS) {
       var t;
-      e.preventDefault(), e.stopPropagation(), (0, j.JG)(s), null == a || null === (t = a.current) || void 0 === t || t.focus()
+      e.preventDefault(), e.stopPropagation(), (0, C.JG)(s), null == a || null === (t = a.current) || void 0 === t || t.focus()
     }
   }, [s]);
   return (0, r.jsx)("li", {
@@ -281,7 +281,7 @@ class k extends i.PureComponent {
     let {
       currentUser: e
     } = this.props;
-    return C.uZ ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, r.jsx)(o.hjN, {
+    return j.uZ ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, r.jsx)(o.hjN, {
       title: y.NW.string(y.t.EPVq09),
       children: (0, r.jsx)(o.R94, {
         type: o.R94.Types.DESCRIPTION,

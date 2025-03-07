@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(710808),
   _ = n(625205),
   E = n(325808),
-  j = n(823087),
-  C = n(232388),
+  C = n(823087),
+  j = n(232388),
   O = n(546997),
   v = n(186934),
   S = n(716210),
@@ -65,7 +65,7 @@ function U() {
         children: (0, r.jsx)(D.Z, {})
       }), (0, r.jsxs)(c.F, {
         setting: w.s6.VOICE_AND_VIDEO_MIC_TEST,
-        children: [(0, r.jsx)(j.Z, {}), (0, r.jsx)(a.R94, {
+        children: [(0, r.jsx)(C.Z, {}), (0, r.jsx)(a.R94, {
           className: B.marginBottom20,
           type: a.R94.Types.DESCRIPTION,
           children: L.NW.format(L.t["V+B3FB"], {
@@ -113,7 +113,7 @@ function U() {
         children: [(0, r.jsx)(f.Z, {}), (0, r.jsx)(A.Z, {}), (0, r.jsx)(c.F, {
           setting: w.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
           children: (0, r.jsx)(P.Z, {})
-        }), (0, r.jsx)(T.Z, {}), (0, r.jsx)(C.Z, {}), (0, r.jsx)(h.Z, {}), k && (0, r.jsx)(v.Z, {}), (0, r.jsx)(x.Z, {}), (0, r.jsx)(O.Z, {}), (0, r.jsx)(S.Z, {}), (0, r.jsx)(I.Z, {
+        }), (0, r.jsx)(T.Z, {}), (0, r.jsx)(j.Z, {}), (0, r.jsx)(h.Z, {}), k && (0, r.jsx)(v.Z, {}), (0, r.jsx)(x.Z, {}), (0, r.jsx)(O.Z, {}), (0, r.jsx)(S.Z, {}), (0, r.jsx)(I.Z, {
           refreshStyles: !0
         }), (0, r.jsx)(a.$i$, {
           className: B.marginBottom40

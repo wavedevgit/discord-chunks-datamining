@@ -1,6 +1,6 @@
 /** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => j,
+  Z: () => C,
   _: () => p._
 }), n(266796), n(47120);
 var r = n(200651),
@@ -200,7 +200,7 @@ class E extends i.PureComponent {
   }
 }
 
-function j(e) {
+function C(e) {
   var t, n;
   let {
     inputDevice: i,

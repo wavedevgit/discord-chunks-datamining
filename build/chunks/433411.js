@@ -28,8 +28,8 @@ function x(e) {
     isTryItOutFlow: _ = !1
   } = e, {
     analyticsLocations: E
-  } = (0, o.ZP)(), j = null != n, {
-    userAvatarDecoration: C,
+  } = (0, o.ZP)(), C = null != n, {
+    userAvatarDecoration: j,
     guildAvatarDecoration: O,
     pendingAvatarDecoration: v,
     pendingErrors: S
@@ -37,7 +37,7 @@ function x(e) {
     analyticsLocations: E,
     isTryItOutFlow: _,
     guild: n
-  }), [E, _, n]), y = _ || void 0 !== v ? null != v : (j ? O : C) != null, A = N ? l.gtL : l.zxk;
+  }), [E, _, n]), y = _ || void 0 !== v ? null != v : (C ? O : j) != null, A = N ? l.gtL : l.zxk;
   return (0, r.jsxs)(g.Z, {
     className: s,
     forcedDivider: x,

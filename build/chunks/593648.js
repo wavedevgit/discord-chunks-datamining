@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(197344),
   _ = n(476756),
   E = n(734934),
-  j = n(223683),
-  C = n(312400),
+  C = n(223683),
+  j = n(312400),
   O = n(115345),
   v = n(392888),
   S = n(106371),
@@ -471,14 +471,14 @@ function Q() {
 }
 
 function $() {
-  let e = C.xT.useExperiment({
+  let e = j.xT.useExperiment({
       location: "UserSettingsNotifications"
     }, {
       autoTrackExposure: !1
     }).enabled,
     {
       manuallyOpen: t
-    } = C.fs.useExperiment({
+    } = j.fs.useExperiment({
       location: "UserSettingsNotifications"
     }, {
       autoTrackExposure: !1
@@ -520,7 +520,7 @@ function $() {
           children: [(0, r.jsx)(I.F, {
             setting: L.s6.NOTIFICATIONS_RESTORE_MOST_RECENT_SNAPSHOT,
             children: (0, r.jsx)(u.zxk, {
-              onClick: j.KP,
+              onClick: C.KP,
               children: "Restore most recent snapshot"
             })
           }), (0, r.jsx)(I.F, {
@@ -551,7 +551,7 @@ function $() {
 }
 async function ee(e) {
   e(!0);
-  let t = await (0, j.Tn)();
+  let t = await (0, C.Tn)();
   0 === t.length ? await (0, O.oL)() : m.Z.show({
     title: U.NW.string(U.t["cY+Ooa"]),
     body: U.NW.format(U.t["7zTJJS"], {

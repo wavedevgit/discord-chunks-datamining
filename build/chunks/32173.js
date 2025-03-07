@@ -1,7 +1,7 @@
 /** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => eC,
-  u: () => ej
+  Z: () => ej,
+  u: () => eC
 }), n(266796);
 var r, i = n(200651);
 n(192379);
@@ -22,8 +22,8 @@ var s = n(399606),
   N = n(594174),
   _ = n(78839),
   E = n(424218),
-  j = n(63063),
-  C = n(74538),
+  C = n(63063),
+  j = n(74538),
   O = n(695349),
   v = n(860489),
   S = n(715037),
@@ -76,19 +76,19 @@ var s = n(399606),
   eN = n(21504),
   e_ = n(371435),
   eE = n(83663),
-  ej = ((r = {}).CLIENT_THEMES = "clientThemes", r.CLIPS = "clips", r.COLLECTIBLE_DECO = "collectibleDeco", r.EARLY_ACCESS = "earlyAccess", r.ENTRANCE_SOUNDS = "entranceSounds", r.PROFILES = "profiles", r.REMIXING = "remixing", r.SERVER_BOOSTS = "serverBoosts", r.GREY_SERVER_BOOSTS = "greyServerBoosts", r.SPECIAL_MEMBER_PRICING = "specialMemberPricing", r.SPECIAL_MEMBER_PRICING_SEE_ALL_VARIANT = "specialMemberPricingSeeAllVariant", r.SPECIAL_SHOP_PERKS = "specialShopPerks", r.UNLIMITED_SUPER_REACTIONS = "unlimitedSuperReactions", r.SUPER_REACTIONS = "superReactions", r.UPCOMING_DROP_UNTIMED = "upcomingDropUntimed", r.CUSTOM_APP_ICONS = "customAppIcons", r.MORE_EMOJI_POWER = "moreEmojiPower", r.CUSTOM_SOUNDS_EVERYWHERE = "customSoundsEverywhere", r.SPECIAL_STICKER_ACCESS = "specialStickerAccess", r.LARGE_UPLOADS = "largeUploads", r.HD_VIDEO = "hdVideo", r.BADGE = "badge", r.GREY_BADGE = "greyBadge", r.ENTRANCE_SOUNDS_SEE_ALL_VARIATION = "entranceSoundsSeeAllVariation", r.EARLY_ACCESS_SEE_ALL_VARIATION = "earlyAccessSeeAllVariant", r.TENURE_REWARD_COLLECTIBLE = "tenureRewardCollectible", r.REFERRAL_PROGRAM = "referralProgram", r.NEW_APP_STYLES_UPDATE_JUNE_2024 = "newAppStylesUpdateJune2024", r.SERVER_PROFILES = "serverProfiles", r.SHY_PROJECT = "shyProject", r.TENURE_BADGE = "tenureBadge", r);
-let eC = () => {
+  eC = ((r = {}).CLIENT_THEMES = "clientThemes", r.CLIPS = "clips", r.COLLECTIBLE_DECO = "collectibleDeco", r.EARLY_ACCESS = "earlyAccess", r.ENTRANCE_SOUNDS = "entranceSounds", r.PROFILES = "profiles", r.REMIXING = "remixing", r.SERVER_BOOSTS = "serverBoosts", r.GREY_SERVER_BOOSTS = "greyServerBoosts", r.SPECIAL_MEMBER_PRICING = "specialMemberPricing", r.SPECIAL_MEMBER_PRICING_SEE_ALL_VARIANT = "specialMemberPricingSeeAllVariant", r.SPECIAL_SHOP_PERKS = "specialShopPerks", r.UNLIMITED_SUPER_REACTIONS = "unlimitedSuperReactions", r.SUPER_REACTIONS = "superReactions", r.UPCOMING_DROP_UNTIMED = "upcomingDropUntimed", r.CUSTOM_APP_ICONS = "customAppIcons", r.MORE_EMOJI_POWER = "moreEmojiPower", r.CUSTOM_SOUNDS_EVERYWHERE = "customSoundsEverywhere", r.SPECIAL_STICKER_ACCESS = "specialStickerAccess", r.LARGE_UPLOADS = "largeUploads", r.HD_VIDEO = "hdVideo", r.BADGE = "badge", r.GREY_BADGE = "greyBadge", r.ENTRANCE_SOUNDS_SEE_ALL_VARIATION = "entranceSoundsSeeAllVariation", r.EARLY_ACCESS_SEE_ALL_VARIATION = "earlyAccessSeeAllVariant", r.TENURE_REWARD_COLLECTIBLE = "tenureRewardCollectible", r.REFERRAL_PROGRAM = "referralProgram", r.NEW_APP_STYLES_UPDATE_JUNE_2024 = "newAppStylesUpdateJune2024", r.SERVER_PROFILES = "serverProfiles", r.SHY_PROJECT = "shyProject", r.TENURE_BADGE = "tenureBadge", r);
+let ej = () => {
   let {
     analyticsLocations: e
-  } = (0, u.ZP)(d.Z.PREMIUM_MARKETING_PERK_CARD), t = (0, o.ZP)(), r = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), ej = (0, E.BU)(L.Uq / 1024, {
+  } = (0, u.ZP)(d.Z.PREMIUM_MARKETING_PERK_CARD), t = (0, o.ZP)(), r = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), eC = (0, E.BU)(L.Uq / 1024, {
     useKibibytes: !0
   }), {
-    premiumSubscription: eC,
+    premiumSubscription: ej,
     isEligibleForReward: eO
   } = (0, s.cj)([_.ZP], () => ({
     premiumSubscription: _.ZP.getPremiumTypeSubscription(),
     isEligibleForReward: _.ZP.getIsSubscriptionEligibleForReward()
-  })), ev = null != eC ? C.ZP.getPremiumPlanItem(eC) : null, eS = (null != ev ? C.ZP.getSkuIdForPlan(ev.planId) : null) === L.Si.TIER_2, eT = N.default.getCurrentUser(), eI = (0, C.I5)(eT, L.p9.TIER_2), ey = (0, C.I5)(eT, L.p9.TIER_0), eA = (0, I.bq)({
+  })), ev = null != ej ? j.ZP.getPremiumPlanItem(ej) : null, eS = (null != ev ? j.ZP.getSkuIdForPlan(ev.planId) : null) === L.Si.TIER_2, eT = N.default.getCurrentUser(), eI = (0, j.I5)(eT, L.p9.TIER_2), ey = (0, j.I5)(eT, L.p9.TIER_0), eA = (0, I.bq)({
     showAnimations: !0
   }), eP = null != eA ? eA.initialPercentage : void 0, eR = null != eA ? eA.percentage : void 0, eD = (0, p.Z)(b.Z), eZ = (0, y.a)(), ew = (0, I.Kb)(B.qY), {
     fractionalState: ek
@@ -138,7 +138,7 @@ let eC = () => {
           analyticsLocations: e
         })
       } : () => {
-        window.open(j.Z.getArticleURL(M.BhN.CLIPS), "_blank")
+        window.open(C.Z.getArticleURL(M.BhN.CLIPS), "_blank")
       },
       perkImage: $
     } : {
@@ -383,10 +383,10 @@ let eC = () => {
     largeUploads: {
       name: "largeUploads",
       title: G.NW.formatToPlainString(G.t.jqhAdH, {
-        premiumMaxSize: ej
+        premiumMaxSize: eC
       }),
       subtitle: G.NW.formatToPlainString(G.t["HI+cfn"], {
-        premiumMaxSize: ej
+        premiumMaxSize: eC
       }),
       perkImage: ex,
       description: G.NW.string(G.t["R0gx+/"])
@@ -413,7 +413,7 @@ let eC = () => {
       title: G.NW.string(G.t.tPY4o6),
       subtitle: G.NW.string(G.t.JY0grK),
       description: G.NW.format(G.t["2JqTFx"], {
-        helpdeskArticle: j.Z.getArticleURL(M.BhN.REFERRAL_PROGRAM)
+        helpdeskArticle: C.Z.getArticleURL(M.BhN.REFERRAL_PROGRAM)
       }),
       descriptionCta: G.NW.string(G.t.JST6jo),
       isPremiumGetCta: !eS || void 0,

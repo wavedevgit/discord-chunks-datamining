@@ -25,8 +25,8 @@ let h = e => {
       isCarousel: N,
       onCtaClick: _,
       perkComponent: E,
-      subtitle: j = "",
-      descriptionCta: C = "",
+      subtitle: C = "",
+      descriptionCta: j = "",
       cardVariant: O,
       subtitleClassName: v,
       imageOverlayText: S
@@ -56,7 +56,7 @@ let h = e => {
       shouldShowElement: e => (null == e ? void 0 : e.onlyShowOnHover) !== !0,
       cardVariantStyleInfo: T,
       titleClassName: f,
-      subtitle: j,
+      subtitle: C,
       subtitleClassName: v
     }), null != b && (0, r.jsxs)("div", {
       className: s()(u.relative, {
@@ -76,7 +76,7 @@ let h = e => {
       }) : null]
     }), null != E && (0, r.jsxs)("div", {
       className: u.cardIllustrationNoHover,
-      children: [E, 0 !== C.length && null != _ && (0, r.jsx)(a.zxk, {
+      children: [E, 0 !== j.length && null != _ && (0, r.jsx)(a.zxk, {
         className: x,
         disabled: !y,
         fullWidth: !0,
@@ -86,7 +86,7 @@ let h = e => {
           children: [(0, r.jsx)("img", {
             alt: i,
             src: n
-          }), C]
+          }), j]
         })
       })]
     })]

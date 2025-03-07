@@ -27,8 +27,8 @@ function E() {
   let {
     analyticsLocations: i
   } = (0, d.ZP)(), E = (0, a.e7)([h.Z], () => h.Z.theme), {
-    canSetInputDevice: j,
-    canSetOutputDevice: C,
+    canSetInputDevice: C,
+    canSetOutputDevice: j,
     inputDeviceId: O,
     outputDeviceId: v
   } = (0, a.cj)([g.Z], () => ({
@@ -37,13 +37,13 @@ function E() {
     inputDeviceId: g.Z.getInputDeviceId(),
     outputDeviceId: g.Z.getOutputDeviceId()
   })), S = (0, u.Z)(), T = (0, m.Z)();
-  j || (e = (0, r.jsx)(o.R94, {
+  C || (e = (0, r.jsx)(o.R94, {
     type: o.R94.Types.DESCRIPTION,
     className: _.marginTop8,
     children: b.NW.format(b.t["1iK6UV"], {
       onDownloadClick: () => (0, f.y)("Help Text Input Devices")
     })
-  })), C || (t = (0, r.jsx)(o.R94, {
+  })), j || (t = (0, r.jsx)(o.R94, {
     type: o.R94.Types.DESCRIPTION,
     className: _.marginTop8,
     children: b.NW.format(b.t.Ow0dbG, {

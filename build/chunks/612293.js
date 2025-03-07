@@ -1,6 +1,6 @@
 /** Chunk was on 51724 **/
 n.d(t, {
-  default: () => j,
+  default: () => C,
   f: () => E
 }), n(47120);
 var r = n(200651),
@@ -47,7 +47,7 @@ let E = () => {
   })
 };
 
-function j(e) {
+function C(e) {
   let {
     transitionState: t,
     onClose: n
@@ -55,13 +55,13 @@ function j(e) {
   return (0, r.jsx)(o.Y0X, {
     transitionState: t,
     size: o.CgR.DYNAMIC,
-    children: (0, r.jsx)(C, {
+    children: (0, r.jsx)(j, {
       onClose: n
     })
   })
 }
 
-function C(e) {
+function j(e) {
   let {
     onClose: t
   } = e, n = (0, l.e7)([x.default], () => x.default.getCurrentUser()), {

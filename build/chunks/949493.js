@@ -22,28 +22,28 @@ var i = n(921801),
   N = n(190014),
   _ = n(301812),
   E = n(988043),
-  j = n(919539),
-  C = n(726985),
+  C = n(919539),
+  j = n(726985),
   O = n(981631),
   v = n(388032);
 let S = () => (0, r.jsx)(f.Z, {
     title: v.NW.string(v.t["y62Z/f"]),
-    webSetting: C.s6.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
+    webSetting: j.s6.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
     children: (0, r.jsxs)(h.Z, {
       children: [(0, r.jsx)(i.F, {
-        setting: C.s6.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
+        setting: j.s6.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
         children: (0, r.jsx)(g.Z, {})
-      }), (0, r.jsx)(E.Z, {}), (0, r.jsx)(j.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(N.Z, {})]
+      }), (0, r.jsx)(E.Z, {}), (0, r.jsx)(C.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(N.Z, {})]
     })
   }),
   T = () => (0, r.jsxs)(f.Z, {
     title: v.NW.string(v.t.xVRG4O),
-    webSetting: C.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
+    webSetting: j.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
     children: [(0, r.jsx)(u.P, {}), (0, r.jsx)(d.Z, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(c.Z, {}), (0, r.jsx)(l.Z, {}), (0, r.jsx)(b.Z, {})]
   }),
   I = () => (0, r.jsxs)(f.Z, {
     title: v.NW.string(v.t["1Qn8iY"]),
-    webSetting: C.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
+    webSetting: j.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
     children: [(0, r.jsx)(m.Z, {}), (0, r.jsx)(x.ZP, {})]
   }),
   y = () => {
@@ -53,7 +53,7 @@ let S = () => (0, r.jsx)(f.Z, {
     return (0, r.jsx)(f.Z, {
       title: v.NW.string(v.t.oPyABA),
       description: e,
-      webSetting: C.s6.PRIVACY_AND_SAFETY_GAME_FRIENDS_CATEGORY,
+      webSetting: j.s6.PRIVACY_AND_SAFETY_GAME_FRIENDS_CATEGORY,
       children: (0, r.jsx)(o.Z, {})
     })
   };

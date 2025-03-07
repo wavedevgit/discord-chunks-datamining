@@ -24,8 +24,8 @@ var r = n(200651),
   N = n(600164),
   _ = n(925329),
   E = n(963249),
-  j = n(301766),
-  C = n(594174),
+  C = n(301766),
+  j = n(594174),
   O = n(626135),
   v = n(63063),
   S = n(74538),
@@ -47,8 +47,8 @@ function W(e) {
       fromStandaloneBillingPage: s = !0,
       className: l
     } = e,
-    c = (0, u.e7)([C.default], () => {
-      let e = C.default.getCurrentUser();
+    c = (0, u.e7)([j.default], () => {
+      let e = j.default.getCurrentUser();
       return o()(null != e, "GuildBoostingHeader: currentUser cannot be undefined"), e
     });
   if (0 === (0, S.uV)(n.additionalPlans)) return null;
@@ -359,14 +359,14 @@ function z(e) {
     applyEntitlements: !0,
     analyticsLocations: m,
     analyticsLocation: c
-  }), N = null == a ? void 0 : a.invalid, _ = (0, u.e7)([C.default], () => {
+  }), N = null == a ? void 0 : a.invalid, _ = (0, u.e7)([j.default], () => {
     var e;
-    return null === (e = C.default.getCurrentUser()) || void 0 === e ? void 0 : e.hasFreePremium()
+    return null === (e = j.default.getCurrentUser()) || void 0 === e ? void 0 : e.hasFreePremium()
   }), E = d()(i.currentPeriodEnd), O = null != i.paymentSourceId, v = null !== (t = null == b ? void 0 : b.total) && void 0 !== t ? t : 0, S = !O && v > 0 && (7 >= E.diff(d()(), "days") || i.status === Z.O0b.PAST_DUE) && !_ && !i.isPurchasedExternally, T = N && i.status === Z.O0b.PAST_DUE && !_ && !i.isPurchasedExternally, A = (0, y.U)(), P = !_ && A, R = (null == i ? void 0 : i.status) === Z.O0b.PAST_DUE ? d()().diff(d()(i.currentPeriodStart), "days") : 0, [W] = (0, I.Ox)({
     subscriptionId: i.id,
     preventFetch: !P
   });
-  return null == x || null == b ? (0, r.jsx)(p.$jN, {}) : (null != i.renewalMutations && (i.renewalMutations.planId !== i.planId && !(0, j.Q0)(i.renewalMutations.planId) || i.hasExternalPlanChange) && (n = (0, r.jsx)(D.Z, {
+  return null == x || null == b ? (0, r.jsx)(p.$jN, {}) : (null != i.renewalMutations && (i.renewalMutations.planId !== i.planId && !(0, C.Q0)(i.renewalMutations.planId) || i.hasExternalPlanChange) && (n = (0, r.jsx)(D.Z, {
     subscription: i,
     renewalMutations: i.renewalMutations,
     className: k.renewalMutationNotice,

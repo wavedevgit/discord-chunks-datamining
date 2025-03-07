@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(825209),
   _ = n(615287),
   E = n(593472),
-  j = n(493773),
-  C = n(887278),
+  C = n(493773),
+  j = n(887278),
   O = n(812206),
   v = n(835473),
   S = n(243778),
@@ -275,7 +275,7 @@ function ef(e) {
   i.useEffect(() => {
     N(m), S(u)
   }, [m, u]);
-  let D = (0, C.$1)(),
+  let D = (0, j.$1)(),
     w = !(0, $.supportsOutOfProcess)(),
     {
       legacyEnabled: W,
@@ -409,7 +409,7 @@ function ef(e) {
           return [er.NW.string(er.t.ONovPz), null]
       }
     })();
-  return ((0, j.ZP)(() => {
+  return ((0, C.ZP)(() => {
     f.Z.getDetectableGames()
   }), null == a) ? null : (0, r.jsxs)(ep, {
     onExpand: R,
@@ -551,7 +551,7 @@ function eN() {
   let [e, t] = i.useState(!1), {
     legacyEnabled: n,
     oopEnabled: s
-  } = (0, p.cj)([Z.default], () => Z.default.getGlobalEnabledStatus()), a = (0, p.Wu)([T.ZP], () => T.ZP.getGamesSeen(!0)), l = (0, v.Z)(a.map(e => e.id)), o = (0, C.$1)(), c = (e, t) => {
+  } = (0, p.cj)([Z.default], () => Z.default.getGlobalEnabledStatus()), a = (0, p.Wu)([T.ZP], () => T.ZP.getGamesSeen(!0)), l = (0, v.Z)(a.map(e => e.id)), o = (0, j.$1)(), c = (e, t) => {
     var r, i;
     eh(t), b.Z.setEnabled(e, s);
     let a = null !== (i = null === (r = T.ZP.getCurrentGameForAnalytics()) || void 0 === r ? void 0 : r.id) && void 0 !== i ? i : null;
@@ -695,7 +695,7 @@ function e_() {
 
 function eE() {
   let e = (0, p.e7)([z.ZP], () => z.ZP.getOverlayKeybind()),
-    t = (0, C.$1)(),
+    t = (0, j.$1)(),
     n = !(0, $.supportsOutOfProcess)(),
     [i, s] = (0, p.Wu)([T.ZP], () => [T.ZP.canShowAdminWarning, T.ZP.getVisibleGame()], []),
     a = null != s && s.elevated && i;
@@ -733,7 +733,7 @@ function eE() {
   })
 }
 
-function ej(e) {
+function eC(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
@@ -771,11 +771,11 @@ function ej(e) {
   }
 }
 
-function eC() {
+function ej() {
   let [e, t] = (0, S.US)([g.z.OVERLAY_OOP_SETTINGS_NUX], void 0, !0), n = () => {
     t(et.L.DISMISS)
   };
-  return ((0, j.ZP)(() => () => {
+  return ((0, C.ZP)(() => () => {
     t(et.L.AUTO_DISMISS)
   }), e !== g.z.OVERLAY_OOP_SETTINGS_NUX) ? null : (0, r.jsxs)("div", {
     className: ei.overlaySettingsNux,
@@ -838,22 +838,22 @@ function eO(e) {
   })), x = (0, R.o4)("user_settings").overlayV3UI, N = (0, p.e7)([H.default], () => H.default.getCurrentUser()), _ = (0, D.Z)({
     location: "overlay_user_settings"
   });
-  (0, j.ZP)(() => {
+  (0, C.ZP)(() => {
     if (J.isPlatformEmbedded) return (0, I.Ky)(), I.P7
   }),
   function() {
     let e = ed(ec);
     m().isEqual(e, ec) || (q.default.track(ee.rMx.OVERLAY_SETTINGS_UPDATED, e), ec = e)
   }();
-  let [E] = i.useState(() => [ej(er.NW.string(er.t.C0ZDvr), !0, !1), ej(er.NW.string(er.t.iOtj8P), !1, !1, !0), ej(er.NW.string(er.t["0oqNgI"]), !1, !0)]), C = (0, p.e7)([w.ZP], () => w.ZP.getWidgetByType(ee.Odu.VOICE_V3)), O = [null != N ? function(e) {
-    let t = ej(e.username);
+  let [E] = i.useState(() => [eC(er.NW.string(er.t.C0ZDvr), !0, !1), eC(er.NW.string(er.t.iOtj8P), !1, !1, !0), eC(er.NW.string(er.t["0oqNgI"]), !1, !0)]), j = (0, p.e7)([w.ZP], () => w.ZP.getWidgetByType(ee.Odu.VOICE_V3)), O = [null != N ? function(e) {
+    let t = eC(e.username);
     return t.user = e, t
   }(N) : null, ...E].filter(X.lm), v = [new Map(O.map(e => [e.user.id, e])), O.map(e => e.user.id)];
   return null == N ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(h.hjN, {
       tag: h.RB0.H1,
       title: er.NW.string(er.t["9cb1U1"]),
-      children: [x ? (0, r.jsx)(eC, {}) : null, (0, r.jsxs)("div", {
+      children: [x ? (0, r.jsx)(ej, {}) : null, (0, r.jsxs)("div", {
         className: ei.overlayEnabledSettingsContainer,
         children: [(0, r.jsx)(ef, {}), (0, r.jsx)(e_, {}), (0, r.jsx)(eN, {})]
       }), (0, r.jsx)("div", {
@@ -971,8 +971,8 @@ function eO(e) {
               children: [(0, r.jsx)(L.PI, {
                 children: er.NW.string(er.t.KNJ6Vl)
               }), (0, r.jsx)(L.ls, {}), (0, r.jsx)(L.RT, {
-                id: null !== (t = null == C ? void 0 : C.id) && void 0 !== t ? t : "voice-widget",
-                pinned: null !== (n = null == C ? void 0 : C.pinned) && void 0 !== n && n
+                id: null !== (t = null == j ? void 0 : j.id) && void 0 !== t ? t : "voice-widget",
+                pinned: null !== (n = null == j ? void 0 : j.pinned) && void 0 !== n && n
               })]
             })]
           })

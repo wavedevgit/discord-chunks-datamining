@@ -25,8 +25,8 @@ function h(e) {
     b = (0, a.e7)([l.Z], () => null != x ? l.Z.getApplication(x) : null, [x]),
     N = null === (t = e.metadata) || void 0 === t ? void 0 : t.application_subscription_guild_id,
     _ = (0, a.e7)([o.Z], () => o.Z.getGuild(N), [N]),
-    [E, j] = r.useState(!1),
-    C = null == i ? void 0 : function(e) {
+    [E, C] = r.useState(!1),
+    j = null == i ? void 0 : function(e) {
       let {
         listing: t,
         subscription: n
@@ -48,10 +48,10 @@ function h(e) {
     application: b,
     guild: _,
     expanded: E,
-    handleToggleExpanded: () => j(e => !e),
+    handleToggleExpanded: () => C(e => !e),
     listing: i,
     storeListing: h,
     groupListing: f,
-    subscriptionInfo: C
+    subscriptionInfo: j
   }
 }

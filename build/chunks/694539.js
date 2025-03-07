@@ -26,7 +26,7 @@ let E = e => {
     back: n
   } = e, {
     upsertConfig: s
-  } = (0, h.E)(), E = (0, o.e7)([p.default], () => p.default.getCurrentUser()), [j, C] = i.useState(!0), O = i.useRef(null), [v, S] = i.useState(!1), [T, I] = i.useState(!1), [y, A] = i.useState(!1), [P, R] = i.useState([]), [D, Z] = i.useState(t.name);
+  } = (0, h.E)(), E = (0, o.e7)([p.default], () => p.default.getCurrentUser()), [C, j] = i.useState(!0), O = i.useRef(null), [v, S] = i.useState(!1), [T, I] = i.useState(!1), [y, A] = i.useState(!1), [P, R] = i.useState([]), [D, Z] = i.useState(t.name);
   i.useEffect(() => {
     let e = t.config.effects;
     e.length > 0 && R([...e].map(e => (e.src = (0, u.$j)(e.base64), e)))
@@ -66,7 +66,7 @@ let E = e => {
           src: v ? N : _,
           alt: "",
           width: 450
-        }), j && (0, r.jsx)(x.Z, {
+        }), C && (0, r.jsx)(x.Z, {
           config: {
             type: l.Z.PROFILE_EFFECT,
             title: "debug",
@@ -173,7 +173,7 @@ let E = e => {
           }), (0, r.jsx)(c.zxk, {
             color: c.Ttl.BRAND,
             onClick: () => {
-              C(!1), setTimeout(() => C(!0), 100)
+              j(!1), setTimeout(() => j(!0), 100)
             },
             children: "Replay Animation"
           }), (0, r.jsx)(c.zxk, {

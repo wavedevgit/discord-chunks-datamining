@@ -47,7 +47,7 @@ let f = (0, l.hQ)(),
       return null == t ? null : (0, r.jsx)(r.Fragment, {
         children: b(t)
       })
-    }, [b]), _ = i.useCallback(e => (0, d.nE)(e, !0, p.Sbl.USER_SETTINGS), []), E = i.useCallback(e => e === l, [l]), j = i.useCallback(e => e, []), C = i.useCallback(() => (0, d.nE)(null, !1), []);
+    }, [b]), _ = i.useCallback(e => (0, d.nE)(e, !0, p.Sbl.USER_SETTINGS), []), E = i.useCallback(e => e === l, [l]), C = i.useCallback(e => e, []), j = i.useCallback(() => (0, d.nE)(null, !1), []);
     return (0, r.jsxs)(o.Z, {
       title: g.NW.string(g.t.umdfaG),
       titleId: f,
@@ -63,8 +63,8 @@ let f = (0, l.hQ)(),
         select: _,
         renderOptionValue: N,
         renderOptionLabel: b,
-        serialize: j,
-        clear: C,
+        serialize: C,
+        clear: j,
         clearable: null != l
       })]
     })

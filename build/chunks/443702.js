@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(351402),
   _ = n(853872),
   E = n(78839),
-  j = n(706454),
-  C = n(726985),
+  C = n(706454),
+  j = n(726985),
   O = n(981631),
   v = n(388032),
   S = n(700292);
@@ -52,7 +52,7 @@ class T extends i.PureComponent {
         className: S.syncing,
         children: (0, r.jsx)(o.$jN, {})
       }) : (0, r.jsx)(f.F, {
-        setting: C.s6.BILLING_PAYMENT_METHODS,
+        setting: j.s6.BILLING_PAYMENT_METHODS,
         children: (0, r.jsx)(g.Z, {
           paymentSources: n,
           defaultPaymentSourceId: i,
@@ -62,7 +62,7 @@ class T extends i.PureComponent {
           submitting: c
         })
       }), (0, r.jsx)(f.F, {
-        setting: C.s6.BILLING_TRANSACTION_HISTORY,
+        setting: j.s6.BILLING_TRANSACTION_HISTORY,
         children: (0, r.jsx)("div", {
           className: S.paymentHistory,
           children: (0, r.jsxs)(o.y5t, {
@@ -87,11 +87,11 @@ class T extends i.PureComponent {
 }
 
 function I() {
-  let e = (0, l.cj)([j.default, N.Z, _.Z, b.default, x.Z, E.ZP], () => {
+  let e = (0, l.cj)([C.default, N.Z, _.Z, b.default, x.Z, E.ZP], () => {
     let e = E.ZP.getPremiumTypeSubscription(),
       t = b.default.getCurrentUser();
     return a()(null != t, "UserSettingsBilling: currentUser cannot be undefined"), {
-      locale: j.default.locale,
+      locale: C.default.locale,
       hide: x.Z.enabled,
       isClaimed: t.isClaimed(),
       isVerified: t.verified,

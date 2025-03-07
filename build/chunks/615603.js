@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(267642),
   _ = n(63063),
   E = n(74538),
-  j = n(283029),
-  C = n(357956),
+  C = n(283029),
+  j = n(357956),
   O = n(275909),
   v = n(981631),
   S = n(474936),
@@ -88,7 +88,7 @@ function P(e) {
         children: T.NW.format(T.t.Z4ULRE, {
           date: l.currentPeriodEnd
         })
-      }) : t.isOnCooldown() && null != u ? (0, r.jsx)(C.Z, {
+      }) : t.isOnCooldown() && null != u ? (0, r.jsx)(j.Z, {
         cooldown: u.getTime()
       }) : (0, r.jsx)(c.Text, {
         className: I.__invalid_unappliedGuildBoostSlotDescription,
@@ -145,9 +145,9 @@ let Z = function(e) {
   let {
     guildBoostSlots: s,
     fractionalPremiumState: g
-  } = e, h = (0, o.e7)([b.ZP], () => b.ZP.getPremiumTypeSubscription()), C = (null == h ? void 0 : h.isPausedOrPausePending) === !0, {
+  } = e, h = (0, o.e7)([b.ZP], () => b.ZP.getPremiumTypeSubscription()), j = (null == h ? void 0 : h.isPausedOrPausePending) === !0, {
     fractionalState: O
-  } = (0, u.Z)(), Z = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), w = (0, o.e7)([x.default], () => x.default.getCurrentUser()), k = O === S.a$.FP_SUB_PAUSED, W = O !== S.a$.NONE, L = C && !k, {
+  } = (0, u.Z)(), Z = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), w = (0, o.e7)([x.default], () => x.default.getCurrentUser()), k = O === S.a$.FP_SUB_PAUSED, W = O !== S.a$.NONE, L = j && !k, {
     appliedGuildBoostSlots: B,
     unappliedGuildBoostSlots: M,
     numActiveGuildBoostSlots: U,
@@ -170,7 +170,7 @@ let Z = function(e) {
     }
   }, [s]), F = null != h ? E.ZP.getNumIncludedPremiumGuildSubscriptionSlots(h.planId) : 0, H = Math.max(0, F - B.length), z = U > F, Y = F === s.length, K = Y ? H : 1, q = i.useMemo(() => {
     let e = [];
-    for (let t = 0; t < K; t++) e.push((0, r.jsx)(j.Z, {
+    for (let t = 0; t < K; t++) e.push((0, r.jsx)(C.Z, {
       className: I.headerBoostGem,
       useReducedMotion: Z
     }, t));
@@ -201,7 +201,7 @@ let Z = function(e) {
     numUnappliedGuildBoostSlots: J
   });
   let Q = (0, l.EQ)({
-    subscriptionIsPausedOrPausePending: C,
+    subscriptionIsPausedOrPausePending: j,
     hasFractionPremium: W
   }).with({
     subscriptionIsPausedOrPausePending: !0,

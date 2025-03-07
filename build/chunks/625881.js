@@ -1,6 +1,6 @@
 /** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => j
+  Z: () => C
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -21,13 +21,13 @@ var r = n(200651),
   N = n(413803),
   _ = n(982404),
   E = n(299156);
-let j = function(e) {
+let C = function(e) {
   let {
     premiumSubscription: t,
     premiumType: n,
     onClose: s,
-    onConfirm: j,
-    userDiscountOffer: C
+    onConfirm: C,
+    userDiscountOffer: j
   } = e, [O, v] = i.useState(!1), [S, T] = i.useState(!1), I = async e => {
     try {
       T(!0), v(!1), await l.tn.post({
@@ -36,16 +36,16 @@ let j = function(e) {
           user_discount_offer_id: e
         },
         rejectWithError: !0
-      }), j()
+      }), C()
     } catch (e) {
       v(!0)
     }
     T(!1)
-  }, y = (0, d.ZP)(), A = (0, o.wj)(y) ? _ : E, P = (0, g._)(t, f.Xh.PREMIUM_MONTH_TIER_2, C), R = (0, m.aS)(f.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
+  }, y = (0, d.ZP)(), A = (0, o.wj)(y) ? _ : E, P = (0, g._)(t, f.Xh.PREMIUM_MONTH_TIER_2, j), R = (0, m.aS)(f.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
     currency: t.currency,
     paymentSourceId: t.paymentSourceId
   }), D = (0, p.T4)(R.amount, R.currency);
-  return null == C ? null : (0, r.jsxs)(r.Fragment, {
+  return null == j ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(h.Z, {
       premiumType: n,
       onClose: s
@@ -56,7 +56,7 @@ let j = function(e) {
         children: [(0, r.jsx)(c.X6q, {
           variant: "heading-xl/bold",
           children: b.NW.format(b.t.q9Vxu7, {
-            percent: C.discount.amount
+            percent: j.discount.amount
           })
         }), (0, r.jsxs)("div", {
           className: N.confirmDiscountDescription,
@@ -67,8 +67,8 @@ let j = function(e) {
           }), (0, r.jsx)(c.Text, {
             variant: "text-sm/medium",
             children: b.NW.format(b.t.Eq1RHB, {
-              percent: C.discount.amount,
-              numMonths: C.discount.user_usage_limit,
+              percent: j.discount.amount,
+              numMonths: j.discount.user_usage_limit,
               price: D
             })
           })]
@@ -79,8 +79,8 @@ let j = function(e) {
             className: N.confirmDiscountLegaleseText,
             children: b.NW.format(b.t.hrGTjI, {
               discountedPrice: P,
-              billingPeriod: (0, m.JP)(C.discount.user_usage_limit_interval),
-              numMonths: C.discount.user_usage_limit,
+              billingPeriod: (0, m.JP)(j.discount.user_usage_limit_interval),
+              numMonths: j.discount.user_usage_limit,
               fullPrice: D,
               helpdeskArticle: u.Z.getArticleURL(x.BhN.PAID_TERMS)
             })
@@ -104,7 +104,7 @@ let j = function(e) {
           }), (0, r.jsx)(c.zxk, {
             size: c.PhG.SMALL,
             submitting: S,
-            onClick: () => I(C.id),
+            onClick: () => I(j.id),
             children: b.NW.string(b.t.CKSuZG)
           })]
         })]

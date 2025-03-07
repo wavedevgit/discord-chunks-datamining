@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(89057),
   _ = n(605236),
   E = n(464824),
-  j = n(214852),
-  C = n(621853),
+  C = n(214852),
+  j = n(621853),
   O = n(484459),
   v = n(246946),
   S = n(594174),
@@ -45,7 +45,7 @@ let V = function(e) {
   let {
     entrypoint: t = L.EZ.UserSettings
   } = e;
-  (0, j.z)(E.X);
+  (0, C.z)(E.X);
   let n = (0, x.Q)(),
     {
       sourceAnalyticsLocations: s,
@@ -68,7 +68,7 @@ let V = function(e) {
     {
       enabled: et
     } = (0, w.D)(),
-    en = (0, l.e7)([C.Z], () => null != F ? C.Z.getUserProfile(F.id) : null),
+    en = (0, l.e7)([j.Z], () => null != F ? j.Z.getUserProfile(F.id) : null),
     er = (0, l.e7)([A.Z], () => A.Z.hasFetched);
   return (i.useEffect(() => {
     er || u.MH()

@@ -21,9 +21,9 @@ var r = n(200651),
   N = n(103986),
   _ = n(802138);
 let E = !h.isPlatformEmbedded,
-  j = (0, p.hQ)();
+  C = (0, p.hQ)();
 
-function C(e) {
+function j(e) {
   return e >= 1e3 ? (e /= 1e3, "".concat(e.toFixed(2), "s")) : "".concat(e.toFixed(0), " ms")
 }
 
@@ -66,7 +66,7 @@ function O(e) {
         className: N.column,
         children: (0, r.jsxs)(o.xJW, {
           children: [(0, r.jsx)(o.vwX, {
-            id: j,
+            id: C,
             tag: o.RB0.H5,
             className: _.marginBottom8,
             children: b.NW.string(b.t.y0ShVl)
@@ -75,9 +75,9 @@ function O(e) {
             onValueChange: e => c.Z.setMode(n, {
               delay: e
             }),
-            onValueRender: C,
+            onValueRender: j,
             maxValue: x.qhL,
-            "aria-labelledby": j
+            "aria-labelledby": C
           })]
         })
       })]

@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(922628),
   _ = n(703115),
   E = n(526761),
-  j = n(726985),
-  C = n(736530),
+  C = n(726985),
+  j = n(736530),
   O = n(981631),
   v = n(388032);
 
@@ -67,9 +67,9 @@ function S(e) {
     }))
   }
   return (0, r.jsx)(x.U, {
-    setting: j.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
+    setting: C.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
     scrollPosition: E.FY.MESSAGE_REQUESTS_V2,
-    children: n === C.T ? (0, r.jsx)(b.Z, {
+    children: n === j.T ? (0, r.jsx)(b.Z, {
       title: v.NW.string(v.t["3o2ojo"]),
       value: !T && !y,
       onChange: e => D(e, !1),

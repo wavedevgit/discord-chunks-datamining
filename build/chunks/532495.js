@@ -22,8 +22,8 @@ var i = n(512722),
   N = n(818420),
   _ = n(134795),
   E = n(610966),
-  j = n(513901),
-  C = n(451392),
+  C = n(513901),
+  j = n(451392),
   O = n(906364),
   v = n(643879),
   S = n(350327),
@@ -132,7 +132,7 @@ function Z() {
       sectionTitle: R.NW.string(R.t["7v0T9P"])
     }, "decoration"), es && (0, r.jsx)(N.Z, {
       user: L
-    }), (0, r.jsx)(j.Z, {
+    }), (0, r.jsx)(C.Z, {
       user: L,
       sectionTitle: R.NW.string(R.t.wR5wOj)
     }, "effect"), X ? (0, r.jsxs)(r.Fragment, {
@@ -141,7 +141,7 @@ function Z() {
         errors: Y.banner,
         onBannerChange: S.g_,
         forcedDivider: !0
-      }, "banner"), (0, r.jsx)(C.Z, {
+      }, "banner"), (0, r.jsx)(j.Z, {
         user: L,
         pendingAvatarSrc: K,
         pendingColors: z,

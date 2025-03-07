@@ -1,6 +1,6 @@
 /**
   Module ID: 51724
-  Original File Name: c5be85c020e36656
+  Original File Name: 446c324d9b1140e0
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -467,7 +467,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 16px;
+    font-size: 1rem;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -9428,6 +9428,10 @@ html .invoiceCancelRow_b9f95d {
 
 .buttonHighlighted__28d5e {
     background: linear-gradient(95.07deg,var(--premium-tier-2-purple-for-gradients),var(--premium-tier-2-purple-for-gradients-2) 49.96%,var(--premium-tier-2-pink-for-gradients) 95.93%)
+}
+
+.newBadge__28d5e {
+    margin-left: 4px
 }
 
 .buttonsContainer_ffefd9 {

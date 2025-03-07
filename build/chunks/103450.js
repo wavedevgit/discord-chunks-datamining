@@ -92,7 +92,7 @@ function B(e) {
     let e = d.ZP.getCurrentEmbeddedActivity();
     return null != e && e.applicationId === (null == V ? void 0 : V.application_id) && e.location.kind === i.X.CONTEXTLESS
   }), ec = (0, c.O)();
-  if (Q && null != F && (null != V || !(0, g.Z)(V, j.xjy.CONTEXTLESS))) return null;
+  if (Q && null == F && (null == V || !(0, g.Z)(V, j.xjy.CONTEXTLESS))) return null;
   let eu = !M.isPlatformEmbedded;
   if (!((0, g.Z)(V, j.xjy.JOIN) || Q) || null == q) return null;
   let ed = !J || Q && !el,

@@ -25,7 +25,7 @@ function x(e) {
     onCopy: m,
     "aria-label": x,
     delay: b = h
-  } = e, [N, _] = i.useState(0), [E, j] = i.useState(!1), [C, O] = i.useState(!1), [v] = i.useState(() => new a.V7), [S] = i.useState(() => new a.V7);
+  } = e, [N, _] = i.useState(0), [E, C] = i.useState(!1), [j, O] = i.useState(!1), [v] = i.useState(() => new a.V7), [S] = i.useState(() => new a.V7);
   if (i.useEffect(() => () => {
       v.stop(), S.stop()
     }, [v, S]), !c.wS) return (0, r.jsx)(r.Fragment, {
@@ -35,7 +35,7 @@ function x(e) {
     I = T ? l.FGA.RED : l.FGA.GREEN,
     y = E ? I : l.FGA.PRIMARY,
     A = () => {
-      null == m || m(), (0, c.JG)(n), o.default.track(u.rMx.TEXT_COPIED), C || _(N + 1), O(!0), j(!0), v.start(p, () => O(!1)), S.start(g, () => _(0))
+      null == m || m(), (0, c.JG)(n), o.default.track(u.rMx.TEXT_COPIED), j || _(N + 1), O(!0), C(!0), v.start(p, () => O(!1)), S.start(g, () => _(0))
     };
   return (0, r.jsx)(l.ua7, {
     text: (() => {
@@ -51,9 +51,9 @@ function x(e) {
     delay: b,
     "aria-label": x,
     color: y,
-    forceOpen: C,
+    forceOpen: j,
     onAnimationRest: (e, t) => {
-      !C && E && t.phase === u.UkZ.LEAVE && j(!1)
+      !j && E && t.phase === u.UkZ.LEAVE && C(!1)
     },
     children: e => {
       var t, n, {

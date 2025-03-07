@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(594174),
   _ = n(63063),
   E = n(74538),
-  j = n(18438),
-  C = n(778825),
+  C = n(18438),
+  j = n(778825),
   O = n(856607),
   v = n(594496),
   S = n(856768),
@@ -82,8 +82,8 @@ function R(e) {
   } = (0, p.ZP)(u.Z.GUILD_PROFILE), s = (0, l.e7)([N.default], () => {
     let e = N.default.getCurrentUser();
     return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-  }), R = (0, l.e7)([x.Z], () => !x.Z.isFetchingProfile(s.id, null == t ? void 0 : t.id)), D = (0, l.e7)([b.Z], () => b.Z.hidePersonalInformation), Z = (0, l.cj)([C.Z], () => A(y({}, C.Z.getAllPending()), {
-    source: C.Z.getSource()
+  }), R = (0, l.e7)([x.Z], () => !x.Z.isFetchingProfile(s.id, null == t ? void 0 : t.id)), D = (0, l.e7)([b.Z], () => b.Z.hidePersonalInformation), Z = (0, l.cj)([j.Z], () => A(y({}, j.Z.getAllPending()), {
+    source: j.Z.getSource()
   })), {
     source: w,
     pendingAvatarV2: k
@@ -105,7 +105,7 @@ function R(e) {
     userId: s.id,
     image: k
   });
-  return (i.useEffect(() => () => c.Z.wait(j.W3), []), i.useEffect(() => {
+  return (i.useEffect(() => () => c.Z.wait(C.W3), []), i.useEffect(() => {
     null != w && m.ZP.trackWithMetadata(T.rMx.SETTINGS_PANE_VIEWED, {
       settings_type: "guild",
       destination_pane: T.jXE.SETTINGS_CUSTOMIZE_PROFILE,
@@ -122,7 +122,7 @@ function R(e) {
       children: [(0, r.jsx)(S.Z, {
         guildId: t.id,
         onChange: e => {
-          null != e && (0, j.HP)(e)
+          null != e && (0, C.HP)(e)
         }
       }), (0, r.jsx)(g.Z, {
         previewTitle: I.NW.formatToPlainString(I.t.Tc0slJ, {

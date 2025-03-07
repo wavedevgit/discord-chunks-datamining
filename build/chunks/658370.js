@@ -27,8 +27,8 @@ let x = e => {
     subtitle: N = "",
     description: _ = "",
     descriptionCta: E = "",
-    isPremiumGetCta: j,
-    onCtaClick: C,
+    isPremiumGetCta: C,
+    onCtaClick: j,
     cardVariant: O
   } = e, v = (0, d.N)(), S = null == v ? void 0 : v.subscription_trial, T = (0, c.Ng)(), I = (0, l.Rt)({
     intervalType: null == S ? void 0 : S.interval,
@@ -50,15 +50,15 @@ let x = e => {
       titleClassName: x,
       subtitle: N,
       description: _
-    }), j && (0, r.jsx)(p.Z, {
+    }), C && (0, r.jsx)(p.Z, {
       className: b,
       subscriptionTier: g.Si.TIER_2,
       buttonText: y,
       color: a.zxk.Colors.GREEN,
       look: a.zxk.Looks.FILLED
-    }), 0 !== E.length && (null == (n = null == A ? void 0 : A.descriptionCta) ? void 0 : n.hideOnHoverComponent) !== !0 && null != C && (0, r.jsx)(a.zxk, {
+    }), 0 !== E.length && (null == (n = null == A ? void 0 : A.descriptionCta) ? void 0 : n.hideOnHoverComponent) !== !0 && null != j && (0, r.jsx)(a.zxk, {
       className: b,
-      onClick: C,
+      onClick: j,
       children: E
     })]
   })

@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(509545),
   _ = n(74538),
   E = n(937615),
-  j = n(474936),
-  C = n(388032),
+  C = n(474936),
+  j = n(388032),
   O = n(332550);
 
 function v(e) {
@@ -35,7 +35,7 @@ function v(e) {
   } = e, l = (0, c.e7)([x.Z], () => x.Z.theme), {
     analyticsLocations: h
   } = (0, g.ZP)(p.Z.SUBSCRIPTION_CANCEL_DOWNGRADE_MODAL);
-  async function j() {
+  async function C() {
     await (0, m.dP)(t, t.planId, h, a), s()
   }
   let v = N.Z.get(t.planId);
@@ -47,35 +47,35 @@ function v(e) {
     T = (0, E.og)((0, E.T4)(S.amount, S.currency), v.interval, v.intervalCount);
   return (0, r.jsxs)(u.Y0X, {
     transitionState: i,
-    "aria-label": C.NW.string(C.t["E9kB4+"]),
+    "aria-label": j.NW.string(j.t["E9kB4+"]),
     children: [(0, r.jsxs)(u.xBx, {
       justify: f.Z.Justify.BETWEEN,
       separator: !1,
       children: [(0, r.jsx)(u.vwX, {
         tag: u.RB0.H4,
-        children: C.NW.string(C.t["E9kB4+"])
+        children: j.NW.string(j.t["E9kB4+"])
       }), (0, r.jsx)(u.olH, {
         onClick: s
       })]
     }), (0, r.jsx)(u.hzk, {
       className: O.modalBody,
-      children: (0, b.Q0)(t.planId) ? C.NW.format(C.t.GMp54O, {
+      children: (0, b.Q0)(t.planId) ? j.NW.format(j.t.GMp54O, {
         downgradedPlan: _.ZP.getDisplayName(n.planId),
         existingRate: T
-      }) : C.NW.format(C.t["vx/NZ2"], {
+      }) : j.NW.format(j.t["vx/NZ2"], {
         existingPlan: _.ZP.getDisplayName(t.planId),
         downgradedPlan: _.ZP.getDisplayName(n.planId),
         existingRate: T
       })
     }), (0, r.jsxs)(u.mzw, {
       children: [(0, r.jsx)(u.zxk, {
-        onClick: j,
-        children: C.NW.string(C.t.frE8KC)
+        onClick: C,
+        children: j.NW.string(j.t.frE8KC)
       }), (0, r.jsx)(u.zxk, {
         look: u.zxk.Looks.LINK,
         color: (0, d.ap)(l) ? u.zxk.Colors.PRIMARY : u.zxk.Colors.WHITE,
         onClick: s,
-        children: C.NW.string(C.t.oEAioK)
+        children: j.NW.string(j.t.oEAioK)
       })]
     })]
   })
@@ -88,7 +88,7 @@ function S(e) {
     className: s,
     analyticsLocation: l
   } = e, [o, c] = i.useState(!1), d = (0, h.Z)(), m = t.currentPeriodEnd;
-  return d.fractionalState === j.a$.FP_SUB_PAUSED && (m = d.endsAt.toDate()), (0, r.jsxs)("div", {
+  return d.fractionalState === C.a$.FP_SUB_PAUSED && (m = d.endsAt.toDate()), (0, r.jsxs)("div", {
     className: a()(O.root, s),
     children: [(0, r.jsx)(u.P4T, {
       size: "custom",
@@ -98,7 +98,7 @@ function S(e) {
       className: O.infoIcon
     }), (0, r.jsx)("div", {
       className: O.text,
-      children: C.NW.format(C.t.ar1cPj, {
+      children: j.NW.format(j.t.ar1cPj, {
         planName: t.hasExternalPlanChange ? (0, _.zL)(n) : _.ZP.getDisplayName(n.planId),
         date: m
       })
@@ -107,7 +107,7 @@ function S(e) {
         c(!0), e.preventDefault()
       },
       className: O.cancelLink,
-      children: C.NW.string(C.t["ETE/oK"])
+      children: j.NW.string(j.t["ETE/oK"])
     }), o ? (0, r.jsx)(u.u_l, {
       renderModal: e => {
         let {

@@ -290,7 +290,7 @@ class y extends o.Z {
     this.videoStopped.value = t, t !== n && i().forEach(this.outboundStats, e => e.statsWindow = [])
   }
   getStats(e) {
-    if (null == e) return;
+    if (null == e) return null;
     let t = Number(this.streamStart),
       n = (null != this.streamEnd ? this.streamEnd - t : this.timestampProducer.now() - t) / 1e3,
       r = Math.max(e.aggregationDuration, 0) / 1e3,

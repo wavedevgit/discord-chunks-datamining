@@ -42,7 +42,7 @@ let b = e => {
       listing: o,
       subscription: N,
       onClose: _
-    } = e, E = (0, u.Dt)(), j = (0, p.YB)(s), C = (null == j ? void 0 : null === (t = j.cover_image_asset) || void 0 === t ? void 0 : t.application_id) != null ? (0, m._W)(j.cover_image_asset.application_id, j.cover_image_asset, 440) : void 0, {
+    } = e, E = (0, u.Dt)(), C = (0, p.YB)(s), j = (null == C ? void 0 : null === (t = C.cover_image_asset) || void 0 === t ? void 0 : t.application_id) != null ? (0, m._W)(C.cover_image_asset.application_id, C.cover_image_asset, 440) : void 0, {
       analyticsLocations: O
     } = (0, d.ZP)(c.Z.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
       cancelSubscription: v,
@@ -61,7 +61,7 @@ let b = e => {
       "aria-labelledby": E,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)("img", {
-          src: C,
+          src: j,
           alt: "",
           className: x.headerImage
         }), (0, r.jsx)(l.olH, {

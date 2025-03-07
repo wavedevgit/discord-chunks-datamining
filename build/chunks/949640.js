@@ -26,7 +26,7 @@ function u(e) {
   (0, i.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("91689"), n.e("55849"), n.e("56977")]).then(n.bind(n, 192277));
+    } = await Promise.all([n.e("91689"), n.e("55849"), n.e("48119")]).then(n.bind(n, 192277));
     return n => (0, r.jsx)(e, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},

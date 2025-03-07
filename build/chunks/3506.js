@@ -22,8 +22,8 @@ var i = n(512722),
   N = n(957148),
   _ = n(556296),
   E = n(808506),
-  j = n(237997),
-  C = n(626135);
+  C = n(237997),
+  j = n(626135);
 n(63063);
 var O = n(13140),
   v = n(981631),
@@ -33,7 +33,7 @@ let I = y(null);
 
 function y(e) {
   var t;
-  let n = j.default.getNotificationPositionMode(),
+  let n = C.default.getNotificationPositionMode(),
     r = n !== v._vf.DISABLED,
     i = _.ZP.getOverlayKeybind(),
     s = _.ZP.getOverlayChatKeybind();
@@ -41,10 +41,10 @@ function y(e) {
     enabled: E.default.enabled,
     notifications_enabled: r,
     notifications_position: r ? n : null,
-    text_notifications_mode: j.default.getTextChatNotificationMode(),
+    text_notifications_mode: C.default.getTextChatNotificationMode(),
     hotkey: null != i ? (0, O.BB)(i.shortcut) : null,
     text_activation_hotkey: null != s ? (0, O.BB)(s.shortcut) : null,
-    text_opacity_slider: j.default.getTextWidgetOpacity(),
+    text_opacity_slider: C.default.getTextWidgetOpacity(),
     old_enabled: null !== (t = null == e ? void 0 : e.enabled) && void 0 !== t ? t : E.default.enabled
   }
 }
@@ -75,19 +75,19 @@ function P(e) {
     notificationPositionMode: R,
     textChatNotificationMode: D,
     shouldShowKeybindIndicators: Z
-  } = (0, o.cj)([j.default], () => ({
-    avatarSizeMode: j.default.getAvatarSizeMode(),
-    displayNameMode: j.default.getDisplayNameMode(),
-    displayUserMode: j.default.getDisplayUserMode(),
-    notificationPositionMode: j.default.getNotificationPositionMode(),
-    textChatNotificationMode: j.default.getTextChatNotificationMode(),
-    shouldShowKeybindIndicators: j.default.showKeybindIndicators
+  } = (0, o.cj)([C.default], () => ({
+    avatarSizeMode: C.default.getAvatarSizeMode(),
+    displayNameMode: C.default.getDisplayNameMode(),
+    displayUserMode: C.default.getDisplayUserMode(),
+    notificationPositionMode: C.default.getNotificationPositionMode(),
+    textChatNotificationMode: C.default.getTextChatNotificationMode(),
+    shouldShowKeybindIndicators: C.default.showKeybindIndicators
   })), w = (0, o.e7)([_.ZP], () => _.ZP.getOverlayKeybind()), k = (0, x.Z)({
     location: "overlay_user_settings"
   }), W = (0, p.$1)();
   return ! function() {
     let e = y(I);
-    l().isEqual(e, I) || (C.default.track(v.rMx.OVERLAY_SETTINGS_UPDATED, e), I = e)
+    l().isEqual(e, I) || (j.default.track(v.rMx.OVERLAY_SETTINGS_UPDATED, e), I = e)
   }(), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(c.hjN, {
       className: t,

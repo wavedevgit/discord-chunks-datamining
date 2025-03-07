@@ -1,6 +1,6 @@
 /** Chunk was on 51724 **/
 n.d(t, {
-  Z: () => C
+  Z: () => j
 }), n(47120), n(773603);
 var r = n(200651),
   i = n(192379),
@@ -34,30 +34,30 @@ function E(e) {
     } finally {
       d(!1)
     }
-  }, [n, o]), j = null;
+  }, [n, o]), C = null;
   switch (n.type) {
     case x.ABu.REDDIT:
-      j = (0, p.oP)(m, _.metadataItem);
+      C = (0, p.oP)(m, _.metadataItem);
       break;
     case x.ABu.STEAM:
-      j = (0, p.Dq)(m, _.metadataItem);
+      C = (0, p.Dq)(m, _.metadataItem);
       break;
     case x.ABu.TWITTER:
-      j = (0, p.rJ)(m, _.metadataItem);
+      C = (0, p.rJ)(m, _.metadataItem);
       break;
     case x.ABu.EBAY:
-      j = (0, p.ul)(m, _.metadataItem);
+      C = (0, p.ul)(m, _.metadataItem);
       break;
     case x.ABu.PAYPAL:
-      j = (0, p.li)(m, _.metadataItem);
+      C = (0, p.li)(m, _.metadataItem);
       break;
     case x.ABu.TIKTOK:
-      j = (0, p.hf)(m, _.metadataItem)
+      C = (0, p.hf)(m, _.metadataItem)
   }
-  let C = (0, u.FI)(m[b.PC.CREATED_AT], h),
+  let j = (0, u.FI)(m[b.PC.CREATED_AT], h),
     O = null,
     v = N.NW.string(N.t.wzzjk5);
-  return (null == j || 0 === j.length) && null == C && (O = (0, r.jsx)(l.Text, {
+  return (null == C || 0 === C.length) && null == j && (O = (0, r.jsx)(l.Text, {
     variant: "text-xs/normal",
     color: "header-secondary",
     children: N.NW.format(N.t.Up2ni4, {
@@ -65,17 +65,17 @@ function E(e) {
     })
   }, "label"), v = N.NW.string(N.t["LVh3//"])), a && (v = N.NW.string(N.t.i4jeWV)), (0, r.jsxs)("div", {
     className: _.metadataContainer,
-    children: [O, null == j ? void 0 : j.map((e, t) => (0, r.jsxs)(r.Fragment, {
-      children: [e, t < j.length - 1 ? (0, r.jsx)("span", {
+    children: [O, null == C ? void 0 : C.map((e, t) => (0, r.jsxs)(r.Fragment, {
+      children: [e, t < C.length - 1 ? (0, r.jsx)("span", {
         className: _.dot
       }) : null]
-    })), null != j && j.length > 0 && null != C ? (0, r.jsx)("div", {
+    })), null != C && C.length > 0 && null != j ? (0, r.jsx)("div", {
       className: _.dot
-    }) : null, null != C ? (0, r.jsx)(l.Text, {
+    }) : null, null != j ? (0, r.jsx)(l.Text, {
       variant: "text-xs/normal",
       color: "header-secondary",
       children: N.NW.format(N.t["9rfonp"], {
-        date: C
+        date: j
       })
     }, "member-since") : null, (0, r.jsx)(l.zxk, {
       className: _.metadataRefreshButton,
@@ -91,7 +91,7 @@ function E(e) {
   })
 }
 
-function j(e) {
+function C(e) {
   let {
     account: t,
     handleRefresh: n,
@@ -168,7 +168,7 @@ function j(e) {
   })
 }
 
-function C() {
+function j() {
   let e = (0, s.e7)([h.Z], () => h.Z.getAccounts()),
     t = i.useMemo(() => e.filter(e => d.Z.isSupported(e.type)), [e]),
     [n, a] = i.useState([]),
@@ -181,7 +181,7 @@ function C() {
       tag: l.RB0.H5,
       className: _.title,
       children: N.NW.string(N.t.aw0GVV)
-    }), t.map(e => (0, r.jsx)(j, {
+    }), t.map(e => (0, r.jsx)(C, {
       account: e,
       handleRefresh: c,
       refreshedAccountIds: n

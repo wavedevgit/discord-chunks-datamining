@@ -15,9 +15,9 @@ var r = n(200651),
   p = n(222062),
   m = n(530329),
   g = n(373230),
-  b = n(72703),
-  j = n(960291),
-  x = n(782818),
+  j = n(72703),
+  x = n(960291),
+  b = n(782818),
   h = n(442552),
   y = n(430824),
   O = n(914010),
@@ -31,9 +31,9 @@ var r = n(200651),
   w = n(486324),
   T = n(869783),
   F = n(388032),
-  _ = n(882061);
+  R = n(882061);
 
-function R(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -70,9 +70,9 @@ function L(e) {
     shouldAnimate: t = !0
   } = e;
   return (0, r.jsx)("div", {
-    className: _.gifGrid,
+    className: R.gifGrid,
     children: Z.map(e => (0, r.jsx)("div", {
-      className: _.gif,
+      className: R.gif,
       style: {
         backgroundImage: "url(".concat(t ? e.gif : e.png, ")")
       }
@@ -103,7 +103,7 @@ function k(e) {
     guild: n
   } = e;
   return (0, r.jsx)("div", {
-    className: _.boostingPill,
+    className: R.boostingPill,
     children: (0, r.jsx)(d.Z, {
       guildFeature: t,
       guild: n,
@@ -121,23 +121,23 @@ function U(e) {
     shouldShowPremiumIcon: o
   } = e, c = null != a && null != l;
   return (0, r.jsxs)("div", {
-    className: i()(_.optionDescription, {
-      [_.hasBoostingPill]: c
+    className: i()(R.optionDescription, {
+      [R.hasBoostingPill]: c
     }),
     "aria-hidden": !0,
     children: [(0, r.jsxs)("div", {
-      className: _.optionIconAndLabel,
+      className: R.optionIconAndLabel,
       children: [t, (0, r.jsxs)(s.Text, {
         variant: "text-sm/semibold",
-        className: i()(_.optionLabelText, {
-          [_.hasPremiumIcon]: o
+        className: i()(R.optionLabelText, {
+          [R.hasPremiumIcon]: o
         }),
         children: [o && (0, r.jsx)(s.DY3, {
           text: F.NW.string(F.t["5AFxuL"]),
           children: (0, r.jsx)(s.SrA, {
             size: "xs",
             color: "currentColor",
-            className: _.premiumWheel
+            className: R.premiumWheel
           })
         }), n]
       })]
@@ -167,7 +167,7 @@ function D(e) {
     children: [(0, r.jsx)(s.tEY, {
       within: !0,
       children: (0, r.jsxs)("div", {
-        className: i()(_.option, _.imageUploadOption),
+        className: i()(R.option, R.imageUploadOption),
         children: [(0, r.jsx)(U, {
           icon: (0, r.jsx)(s.FmF, {
             size: "md",
@@ -210,7 +210,7 @@ function M(e) {
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(s.P3F, {
-      className: _.option,
+      className: R.option,
       onClick: l,
       "aria-label": F.NW.string(F.t["xsC+//"]),
       onMouseEnter: i,
@@ -253,7 +253,7 @@ function W(e) {
     analyticsLocations: q
   } = (0, u.ZP)(Z, c.Z.SELECT_IMAGE_MODAL), Y = l.useCallback(e => {
     let {
-      assetOrigin: t = b.q.NEW_ASSET,
+      assetOrigin: t = j.q.NEW_ASSET,
       imageUri: n,
       file: r,
       originalAsset: l,
@@ -275,7 +275,7 @@ function W(e) {
       let {
         default: l
       } = await Promise.all([n.e("59732"), n.e("71741")]).then(n.bind(n, 712451));
-      return n => (0, r.jsx)(l, R({
+      return n => (0, r.jsx)(l, _({
         imageUri: e,
         file: t,
         onCrop: Y,
@@ -288,12 +288,12 @@ function W(e) {
     })
   }, [null == E ? void 0 : E.page, H, Y, h, d]), K = l.useCallback(() => {
     a(), (0, S.Z)(f)
-  }, [f, a]), Q = l.useCallback(() => {
+  }, [f, a]), $ = l.useCallback(() => {
     (0, s.ZDy)(async () => {
       let {
         default: e
       } = await n.e("72891").then(n.bind(n, 195297));
-      return t => (0, r.jsx)(e, R({
+      return t => (0, r.jsx)(e, _({
         uploadType: d,
         onComplete: e => {
           let {
@@ -324,28 +324,28 @@ function W(e) {
       upload_type: d
     })
   }, [G, E, q, d]);
-  let $ = h && V,
+  let Q = h && V,
     ee = d === w.pC.AVATAR && X;
   return (0, r.jsxs)(s.Y0X, {
     transitionState: t,
     size: s.CgR.DYNAMIC,
-    className: _.modal,
+    className: R.modal,
     children: [(0, r.jsxs)(s.xBx, {
-      className: _.modalHeader,
+      className: R.modalHeader,
       separator: !1,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-lg/semibold",
         children: I
       }), (0, r.jsx)(s.olH, {
         onClick: a,
-        className: _.modalCloseButton
+        className: R.modalCloseButton
       })]
     }), (0, r.jsxs)(s.hzk, {
-      className: _.modalContent,
+      className: R.modalContent,
       children: [(0, r.jsxs)("div", {
-        className: _.imageSelectionSection,
+        className: R.imageSelectionSection,
         children: [(0, r.jsxs)("ul", {
-          className: _.optionsList,
+          className: R.optionsList,
           "aria-label": F.NW.string(F.t.iBnqtb),
           children: [(0, r.jsx)("li", {
             children: (0, r.jsx)(D, {
@@ -361,31 +361,31 @@ function W(e) {
             children: (0, r.jsx)(M, {
               uploadType: d,
               guild: B,
-              handleOpenGIFPickerModal: Q
+              handleOpenGIFPickerModal: $
             })
           })]
         }), null != L ? (0, r.jsx)(s.Text, {
-          className: _.imageSpecifications,
+          className: R.imageSpecifications,
           variant: "text-sm/normal",
           color: "text-muted",
           children: L
         }) : null]
       }), ee ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(x.Z, {
+        children: [(0, r.jsx)(b.Z, {
           onComplete: Y,
           onClose: a
-        }), $ && (0, r.jsx)(j.Z, {
-          className: _.premiumUpsell,
+        }), Q && (0, r.jsx)(x.Z, {
+          className: R.premiumUpsell,
           showUpsell: !0,
           position: "inline",
           showShadow: !1
         })]
-      }) : $ && (0, r.jsx)(m.Z, {
+      }) : Q && (0, r.jsx)(m.Z, {
         uploadType: d,
         showUpsell: !0,
         position: "inline",
         showShadow: !1,
-        className: _.premiumUpsell
+        className: R.premiumUpsell
       })]
     })]
   })

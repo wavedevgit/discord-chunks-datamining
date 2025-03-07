@@ -21,8 +21,8 @@ var r = n(374470),
   N = n(375954),
   _ = n(306680),
   E = n(944486),
-  j = n(914010),
-  C = n(574254),
+  C = n(914010),
+  j = n(574254),
   O = n(451478),
   v = n(585483),
   S = n(981631);
@@ -32,7 +32,7 @@ let T = {
   action(e) {
     if (O.Z.isElementFullScreen()) return !1;
     if (v.S.hasSubscribers(S.CkL.CALL_DECLINE)) return v.S.dispatch(S.CkL.CALL_DECLINE), !1;
-    if (C.Z.close()) return !1;
+    if (j.Z.close()) return !1;
     if (v.S.hasSubscribers(S.CkL.MEDIA_MODAL_CLOSE)) return v.S.dispatch(S.CkL.MEDIA_MODAL_CLOSE), !1;
     if ((0, r.k)(e.target)) {
       let t = (0, l.J5)(e.target);
@@ -41,7 +41,7 @@ let T = {
     if (v.S.hasSubscribers(S.CkL.CLOSE_GIF_PICKER)) return v.S.dispatch(S.CkL.CLOSE_GIF_PICKER), !1;
     if (v.S.hasSubscribers(S.CkL.MODAL_CLOSE)) return v.S.dispatch(S.CkL.MODAL_CLOSE), !1;
     if (v.S.hasSubscribers(S.CkL.SEARCH_RESULTS_CLOSE)) return v.S.dispatch(S.CkL.SEARCH_RESULTS_CLOSE), !1;
-    let t = j.Z.getGuildId(),
+    let t = C.Z.getGuildId(),
       n = E.Z.getChannelId(t),
       s = f.Z.getChannel(n),
       a = h.ZP.getSection(n, null == s ? void 0 : s.isDM()) === S.ULH.SIDEBAR_CHAT ? h.ZP.getSidebarState(n) : null,

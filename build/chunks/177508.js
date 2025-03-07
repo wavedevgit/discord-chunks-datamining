@@ -51,8 +51,8 @@ function _(e, t) {
   }), e
 }
 let E = Object.keys(d.zxk.Colors).filter(e => "CUSTOM" !== e),
-  j = Object.keys(d.zxk.Looks).filter(e => "BLANK" !== e),
-  C = Object.keys(d.zxk.Sizes).filter(e => "NONE" !== e);
+  C = Object.keys(d.zxk.Looks).filter(e => "BLANK" !== e),
+  j = Object.keys(d.zxk.Sizes).filter(e => "NONE" !== e);
 
 function O() {
   return (0, r.jsxs)("div", {
@@ -231,7 +231,7 @@ function R() {
 }
 
 function D() {
-  let [e, t] = i.useState(!1), n = E.flatMap(e => [...j.map(t => (0, r.jsxs)(d.zxk, {
+  let [e, t] = i.useState(!1), n = E.flatMap(e => [...C.map(t => (0, r.jsxs)(d.zxk, {
     color: d.zxk.Colors[e],
     look: d.zxk.Looks[t],
     fullWidth: !0,
@@ -241,7 +241,7 @@ function D() {
     children: [e.toLowerCase(), " - ", t.toLowerCase()]
   }, e + t)), (0, r.jsx)("hr", {
     className: b.sectionDivider
-  }, e + "divider")]), s = C.flatMap(e => (0, r.jsx)(d.zxk, {
+  }, e + "divider")]), s = j.flatMap(e => (0, r.jsx)(d.zxk, {
     color: d.zxk.Colors.BRAND,
     look: d.zxk.Looks.FILLED,
     size: d.zxk.Sizes[e],

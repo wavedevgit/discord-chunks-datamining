@@ -22,7 +22,7 @@ var r = n(200651),
   _ = n(388032),
   E = n(902255);
 
-function j(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function j(e) {
   return e
 }
 
-function C(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,7 +60,7 @@ function O(e) {
     onClose: a,
     ticket: o,
     challenge: c
-  } = e, m = (0, d.Dt)(), [x, j] = i.useState(""), [C, O] = i.useState(!0), [v, S] = i.useState(b.x.INIT), [T, I] = i.useState(""), [y, A] = i.useState(null), P = async () => {
+  } = e, m = (0, d.Dt)(), [x, C] = i.useState(""), [j, O] = i.useState(!0), [v, S] = i.useState(b.x.INIT), [T, I] = i.useState(""), [y, A] = i.useState(null), P = async () => {
     let e;
     S(b.x.REGISTER);
     let t = p.isPlatformEmbedded && h.ZP.supportsFeature(N.eRX.WEBAUTHN) ? h.ZP.webAuthnRegister(c) : s.Ue(JSON.parse(c)).then(e => JSON.stringify(e));
@@ -164,7 +164,7 @@ function O(e) {
                 className: E.input,
                 value: x,
                 onChange: e => {
-                  j(e), O(0 === e.length)
+                  C(e), O(0 === e.length)
                 },
                 autoFocus: !0,
                 minLength: 1
@@ -174,7 +174,7 @@ function O(e) {
             className: E.footer,
             children: [(0, r.jsx)(l.zxk, {
               type: "submit",
-              disabled: C,
+              disabled: j,
               children: _.NW.string(_.t["5dyZ1d"])
             }), (0, r.jsx)(l.zxk, {
               look: l.zxk.Looks.LINK,
@@ -209,7 +209,7 @@ function v(e) {
           let {
             default: e
           } = await n.e("804").then(n.bind(n, 89616));
-          return t => (0, r.jsx)(e, j({
+          return t => (0, r.jsx)(e, C({
             credential: i
           }, t))
         })
@@ -251,7 +251,7 @@ function S() {
         name: e.name,
         className: E.credentialItem,
         onContextMenu: t => {
-          (0, o.vq)(t, t => (0, r.jsx)(v, C(j({}, t), {
+          (0, o.vq)(t, t => (0, r.jsx)(v, j(C({}, t), {
             credential: e
           })))
         },
@@ -260,7 +260,7 @@ function S() {
           color: l.zxk.Colors.TRANSPARENT,
           size: l.zxk.Sizes.ICON,
           onClick: t => {
-            (0, o.vq)(t, t => (0, r.jsx)(v, C(j({}, t), {
+            (0, o.vq)(t, t => (0, r.jsx)(v, j(C({}, t), {
               credential: e
             })))
           },
@@ -283,7 +283,7 @@ function S() {
               ticket: t,
               challenge: n
             } = e;
-            (0, l.h7j)(e => (0, r.jsx)(O, C(j({}, e), {
+            (0, l.h7j)(e => (0, r.jsx)(O, j(C({}, e), {
               ticket: t,
               challenge: n
             })))

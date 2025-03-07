@@ -1,7 +1,7 @@
 /** Chunk was on 51724 **/
 n.d(t, {
   V9: () => O,
-  ek: () => C
+  ek: () => j
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -22,10 +22,10 @@ var r = n(200651),
   N = n(981631),
   _ = n(215023),
   E = n(388032),
-  j = n(577956);
-let C = {
-    START: j.alignLeft,
-    END: j.alignRight
+  C = n(577956);
+let j = {
+    START: C.alignLeft,
+    END: C.alignRight
   },
   O = e => {
     let {
@@ -35,7 +35,7 @@ let C = {
       isCoachmarkEnabled: O = !0,
       linkText: v = E.NW.string(E.t["7f4H7O"]),
       linkTo: S,
-      cardAlignment: T = C.START,
+      cardAlignment: T = j.START,
       className: I
     } = e, {
       balance: y
@@ -78,9 +78,9 @@ let C = {
       }, [R, V]),
       F = (0, o.Z)(null, G);
     return (0, r.jsxs)("div", {
-      className: a()(j.container, I, {
-        [j.hidden]: Z,
-        [j.visible]: !Z
+      className: a()(C.container, I, {
+        [C.hidden]: Z,
+        [C.visible]: !Z
       }),
       children: [(0, r.jsx)(x.A4, {
         ref: L,
@@ -92,9 +92,9 @@ let C = {
         onClick: V,
         showNotificationBadge: t
       }), R && (0, r.jsx)("div", {
-        className: a()(j.cardContainer, T, {
-          [j.hidden]: Z,
-          [j.visible]: !Z
+        className: a()(C.cardContainer, T, {
+          [C.hidden]: Z,
+          [C.visible]: !Z
         }),
         ref: F,
         children: (0, r.jsx)(f.L, {
@@ -108,4 +108,4 @@ let C = {
       })]
     })
   };
-O.CardAlignment = C
+O.CardAlignment = j

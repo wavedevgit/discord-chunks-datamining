@@ -42,25 +42,25 @@ function x(e) {
     });
   if (null == _) return null;
   let E = _.subscriptionPlanId,
-    j = c.Z.get(E);
-  s()(null != j, "Missing plan");
-  let C = (0, u.T4)(b.total, b.currency);
-  return j.interval === p.rV.YEAR ? t = h.NW.format(h.t["jPz/39"], {
-    price: C,
+    C = c.Z.get(E);
+  s()(null != C, "Missing plan");
+  let j = (0, u.T4)(b.total, b.currency);
+  return C.interval === p.rV.YEAR ? t = h.NW.format(h.t["jPz/39"], {
+    price: j,
     termsUrl: g.EYA.TERMS,
     paidURL: g.EYA.PAID_TERMS,
     privacyUrl: g.EYA.PRIVACY
-  }) : j.interval === p.rV.MONTH && (t = 1 === j.intervalCount ? h.NW.format(h.t.m27GpK, {
-    price: C,
+  }) : C.interval === p.rV.MONTH && (t = 1 === C.intervalCount ? h.NW.format(h.t.m27GpK, {
+    price: j,
     termsUrl: g.EYA.TERMS,
     paidURL: g.EYA.PAID_TERMS,
     privacyUrl: g.EYA.PRIVACY
   }) : h.NW.format(h.t["9xf5V1"], {
-    price: C,
+    price: j,
     termsUrl: g.EYA.TERMS,
     paidURL: g.EYA.PAID_TERMS,
     privacyUrl: g.EYA.PRIVACY,
-    intervalCount: j.intervalCount
+    intervalCount: C.intervalCount
   })), (0, r.jsx)(a.Text, {
     color: "text-muted",
     className: N,

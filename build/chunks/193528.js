@@ -57,20 +57,20 @@ function N(e) {
     suggestedColors: N,
     disabled: _,
     label: E,
-    colorPickerMiddle: j,
-    colorPickerFooter: C,
+    colorPickerMiddle: C,
+    colorPickerFooter: j,
     showEyeDropper: O
-  } = e, v = i.useRef(null), S = (0, d.dQu)(c.Z.colors.BACKGROUND_PRIMARY).hex(), T = c.Z.colors.BACKGROUND_ACCENT.css, I = (0, p.DP)(s), y = (0, o.Rf)(s), A = y === S ? T : y, P = (0, m.Lq)(I ? g.Ilk.WHITE_500 : g.Ilk.PRIMARY_530), R = (0, u.Z)(j), D = (0, u.Z)(C), [Z, w] = i.useState((0, l.Z)());
+  } = e, v = i.useRef(null), S = (0, d.dQu)(c.Z.colors.BACKGROUND_PRIMARY).hex(), T = c.Z.colors.BACKGROUND_ACCENT.css, I = (0, p.DP)(s), y = (0, o.Rf)(s), A = y === S ? T : y, P = (0, m.Lq)(I ? g.Ilk.WHITE_500 : g.Ilk.PRIMARY_530), R = (0, u.Z)(C), D = (0, u.Z)(j), [Z, w] = i.useState((0, l.Z)());
   return i.useEffect(() => {
-    (R !== j || D !== C) && w((0, l.Z)())
-  }, [C, j, D, R]), (0, r.jsx)(d.yRy, {
+    (R !== C || D !== j) && w((0, l.Z)())
+  }, [j, C, D, R]), (0, r.jsx)(d.yRy, {
     positionKey: Z,
     renderPopout: e => (0, r.jsx)(d.Z$W, b(x({}, e), {
       value: s,
       onChange: t,
       suggestedColors: N,
-      middle: j,
-      footer: C,
+      middle: C,
+      footer: j,
       showEyeDropper: O
     })),
     onRequestClose: n,

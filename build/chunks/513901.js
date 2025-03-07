@@ -27,8 +27,8 @@ function N(e) {
     sectionTitle: N,
     forcedDivider: _ = !1,
     withTutorial: E = !1,
-    showBorder: j = !1,
-    isTryItOutFlow: C = !1,
+    showBorder: C = !1,
+    isTryItOutFlow: j = !1,
     initialSelectedEffectId: O
   } = e, v = (0, m.Kg)(t, n), S = u.ZP.canUsePremiumProfileCustomization(t), {
     analyticsLocations: T
@@ -53,7 +53,7 @@ function N(e) {
     borderType: g.Y.PREMIUM,
     hasBackground: !0,
     title: N,
-    showBorder: j,
+    showBorder: C,
     errors: y,
     className: s,
     children: (0, r.jsxs)("div", {
@@ -65,7 +65,7 @@ function N(e) {
           [b.buttonHighlighted]: E
         }),
         children: x.NW.string(x.t["0nEVoK"])
-      }), (C || void 0 !== I ? null != I : null != v) && (0, r.jsx)(l.zxk, {
+      }), (j || void 0 !== I ? null != I : null != v) && (0, r.jsx)(l.zxk, {
         className: b.removeButton,
         color: l.zxk.Colors.PRIMARY,
         look: l.zxk.Looks.LINK,

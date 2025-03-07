@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(367515),
   _ = n(250285),
   E = n(292352),
-  j = n(134612),
-  C = n(388032),
+  C = n(134612),
+  j = n(388032),
   O = n(828859),
   v = n(635312),
   S = n(802138),
@@ -70,32 +70,32 @@ function y() {
           className: S.marginBottom8,
           variant: "heading-xl/medium",
           children: (0, r.jsx)(c.y5t, {
-            children: C.NW.string(C.t.pHEnV1)
+            children: j.NW.string(j.t.pHEnV1)
           })
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",
           color: "text-muted",
           className: S.marginBottom20,
-          children: C.NW.string(C.t["1J/gZ2"])
+          children: j.NW.string(j.t["1J/gZ2"])
         })]
       }), (0, r.jsx)("img", {
         className: v.bannerArt,
         src: T,
-        alt: C.NW.string(C.t["r+PDmp"])
+        alt: j.NW.string(j.t["r+PDmp"])
       })]
     }), (0, r.jsxs)("div", {
       className: v.steps,
       children: [(0, r.jsx)(I, {
-        header: C.NW.string(C.t["7xxAnp"]),
-        description: C.NW.string(C.t["1M9So6"]),
+        header: j.NW.string(j.t["7xxAnp"]),
+        description: j.NW.string(j.t["1M9So6"]),
         stepNumber: 1
       }), (0, r.jsx)(I, {
-        header: C.NW.string(C.t["AXgx+f"]),
-        description: C.NW.string(C.t.GzMFnZ),
+        header: j.NW.string(j.t["AXgx+f"]),
+        description: j.NW.string(j.t.GzMFnZ),
         stepNumber: 2
       }), (0, r.jsx)(I, {
-        header: C.NW.string(C.t.MZn1tL),
-        description: C.NW.string(C.t["8rLBxM"]),
+        header: j.NW.string(j.t.MZn1tL),
+        description: j.NW.string(j.t["8rLBxM"]),
         stepNumber: 3
       })]
     })]
@@ -111,20 +111,20 @@ function A() {
         className: S.marginBottom8,
         variant: "heading-xl/medium",
         children: (0, r.jsx)(c.y5t, {
-          children: C.NW.string(C.t.zUCWEB)
+          children: j.NW.string(j.t.zUCWEB)
         })
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/medium",
         color: "text-muted",
         className: S.marginBottom20,
-        children: C.NW.format(C.t.yMnoDg, {
+        children: j.NW.format(j.t.yMnoDg, {
           link: "https://support.discord.com/hc/articles/14155060633623"
         })
       }), e ? null : (0, r.jsx)(x.Z, {})]
     }), (0, r.jsx)("img", {
       className: v.bannerArt,
       src: T,
-      alt: C.NW.string(C.t["r+PDmp"])
+      alt: j.NW.string(j.t["r+PDmp"])
     })]
   })
 }
@@ -225,7 +225,7 @@ let R = () => {
         count: t.length,
         max: n
       },
-      s = (0, m.o)(C.NW.formatToPlainString(C.t["+tnO39"], i), C.NW.formatToPlainString(C.t["pu6/U1"], i));
+      s = (0, m.o)(j.NW.formatToPlainString(j.t["+tnO39"], i), j.NW.formatToPlainString(j.t["pu6/U1"], i));
     return t.length > 0 ? (0, r.jsx)(P, {
       sectionType: E.ne.ACTIVE,
       sectionTitle: s,
@@ -240,7 +240,7 @@ let R = () => {
       }), (0, r.jsx)("div", {
         className: v.box,
         children: (0, r.jsx)(f.Z, {
-          text: C.NW.string(C.t.C4ScLC)
+          text: j.NW.string(j.t.C4ScLC)
         })
       })]
     })
@@ -248,9 +248,9 @@ let R = () => {
   D = () => {
     let e = (0, h.VM)(),
       t = (0, g.Z)() ? E.AG : E.i0,
-      n = (0, m.o)(C.NW.formatToPlainString(C.t["1/PzIi"], {
+      n = (0, m.o)(j.NW.formatToPlainString(j.t["1/PzIi"], {
         maxConnections: t
-      }), C.NW.formatToPlainString(C.t.RcTgiI, {
+      }), j.NW.formatToPlainString(j.t.RcTgiI, {
         maxConnections: t
       }));
     return e ? (0, r.jsx)("div", {
@@ -270,12 +270,12 @@ let R = () => {
         throughline: t
       }).with({
         helpline: !0
-      }, () => C.NW.format(C.t.KOwsf3, {
+      }, () => j.NW.format(j.t.KOwsf3, {
         helpLink: "https://support.discord.com/hc/articles/7925648993943-Crisis-Text-Line"
       })).with({
         throughline: !0
-      }, () => C.NW.format(C.t["6tsC8v"], {
-        helpLink: j.$l
+      }, () => j.NW.format(j.t["6tsC8v"], {
+        helpLink: C.$l
       })).otherwise(() => null);
     return null == n ? null : (0, r.jsxs)("div", {
       className: a()(v.__invalid_helpLineInfo, S.marginTop20),
@@ -283,7 +283,7 @@ let R = () => {
         className: v.supportHeader,
         variant: "heading-sm/semibold",
         children: (0, r.jsx)(c.y5t, {
-          children: C.NW.string(C.t["7/tVho"])
+          children: j.NW.string(j.t["7/tVho"])
         })
       }), (0, r.jsx)(c.Text, {
         variant: "text-xs/medium",
@@ -294,9 +294,9 @@ let R = () => {
   },
   w = () => {
     let e = (0, h.mq)(E.ne.PENDING),
-      t = (0, m.o)(C.NW.formatToPlainString(C.t.IkAgkJ, {
+      t = (0, m.o)(j.NW.formatToPlainString(j.t.IkAgkJ, {
         count: e.length
-      }), C.NW.formatToPlainString(C.t.Q8XnAQ, {
+      }), j.NW.formatToPlainString(j.t.Q8XnAQ, {
         count: e.length
       }));
     return 0 === e.length ? null : (0, r.jsx)(P, {

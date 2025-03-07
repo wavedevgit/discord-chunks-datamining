@@ -39,9 +39,9 @@ function N(e) {
 }
 
 function _() {
-  let [e] = i.useState(() => m.ZP.getEnableHardwareAcceleration()), t = g.bm.useSetting(), n = g.Sb.useSetting(), _ = (0, s.e7)([u.Z], () => u.Z.testModeApplicationId), E = (0, s.e7)([p.ZP], () => p.ZP.showPlayAgain), j = i.useCallback(e => {
+  let [e] = i.useState(() => m.ZP.getEnableHardwareAcceleration()), t = g.bm.useSetting(), n = g.Sb.useSetting(), _ = (0, s.e7)([u.Z], () => u.Z.testModeApplicationId), E = (0, s.e7)([p.ZP], () => p.ZP.showPlayAgain), C = i.useCallback(e => {
     g.bm.updateSetting(!e)
-  }, []), C = i.useCallback(e => {
+  }, []), j = i.useCallback(e => {
     e ? (0, a.h7j)(e => (0, r.jsx)(h.Z, N({}, e))) : l.mc()
   }, []), O = i.useCallback(e => {
     (0, c.BV)(e, o.Z.USER_SETTINGS)
@@ -95,7 +95,7 @@ function _() {
       setting: f.s6.SETTINGS_ADVANCED_SHOW_GAME_LIBRARY,
       children: (0, r.jsx)(a.j7V, {
         value: !t,
-        onChange: j,
+        onChange: C,
         note: b.NW.string(b.t["8mYp39"]),
         children: b.NW.string(b.t.fi3UQE)
       })
@@ -104,7 +104,7 @@ function _() {
       children: (0, r.jsx)(a.j7V, {
         value: null != _,
         note: b.NW.string(b.t["52hMnJ"]),
-        onChange: C,
+        onChange: j,
         children: b.NW.string(b.t.erOqlp)
       })
     }), (0, r.jsx)(d.F, {

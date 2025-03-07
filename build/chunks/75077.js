@@ -7,7 +7,7 @@ n.d(t, {
   iG: () => N,
   mN: () => v,
   oo: () => x,
-  sP: () => C
+  sP: () => j
 }), n(653041), n(627341);
 var r = n(278074),
   i = n(442837),
@@ -72,7 +72,7 @@ function N(e, t) {
 }
 let _ = (e, t, n) => (0, s.wj)(e) ? t : n,
   E = "getWhatsNewRow",
-  j = e => {
+  C = e => {
     let {
       cards: t,
       perksCards: n,
@@ -127,7 +127,7 @@ let _ = (e, t, n) => (0, s.wj)(e) ? t : n,
       card: n.unlimitedSuperReactions
     }), t
   },
-  C = e => {
+  j = e => {
     let {
       perksCards: t,
       variant: n,
@@ -150,7 +150,7 @@ let _ = (e, t, n) => (0, s.wj)(e) ? t : n,
         }, () => [t.profiles, t.clientThemes, t.hdVideo]).otherwise(() => [t.profiles, t.clientThemes, t.serverBoosts]);
         break;
       case m.R0.WHATS_NEW:
-        d = j({
+        d = C({
           cards: d,
           perksCards: t,
           isFullScreen: s,

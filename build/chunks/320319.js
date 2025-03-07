@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(404615),
   _ = n(238108),
   E = n(32173),
-  j = n(391110),
-  C = n(484239),
+  C = n(391110),
+  j = n(484239),
   O = n(658370),
   v = n(735825),
   S = n(981631),
@@ -73,7 +73,7 @@ let R = {
       canReveal: n = !0,
       dismissibleContentType: s,
       forceShadow: N,
-      cardType: C,
+      cardType: j,
       confettiCanvas: O
     } = e, w = null == e ? void 0 : e.onCtaClick, k = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), [W, L] = i.useState(!1), [B, M] = i.useState(!1), U = (0, x.Er)(), V = (0, x.IB)(), [G, F] = i.useState(!1), [H, z] = i.useState(t === E.u.TENURE_REWARD_COLLECTIBLE && V && (null == U ? void 0 : U.nitroTenureStatus) === v.EB.REDEEMABLE);
     i.useEffect(() => {
@@ -82,7 +82,7 @@ let R = {
     let Y = i.useCallback(() => {
         F(!0)
       }, []),
-      K = C === j.R0.CARD_CAROUSEL_FIRST_ROW || C === j.R0.CARD_CAROUSEL_SECOND_ROW || C === j.R0.CARD_CAROUSEL_THIRD_ROW,
+      K = j === C.R0.CARD_CAROUSEL_FIRST_ROW || j === C.R0.CARD_CAROUSEL_SECOND_ROW || j === C.R0.CARD_CAROUSEL_THIRD_ROW,
       q = (0, E.Z)(),
       [X, J] = (0, h.cv)(null != s && n || s === d.z.TENURE_REWARD_REDEEMABLE_CONFETTI ? [s] : []);
     i.useEffect(() => () => {
@@ -249,7 +249,7 @@ let Z = i.forwardRef((e, t) => {
     pillText: E,
     perkImage: v,
     imageOverlayText: S
-  } = e, T = x === j.R0.CARD_CAROUSEL_FIRST_ROW || x === j.R0.CARD_CAROUSEL_SECOND_ROW || x === j.R0.CARD_CAROUSEL_THIRD_ROW, I = "" !== o || "" !== c || "" !== l && f === j.zW.REWARD, A = (0, N._)(f);
+  } = e, T = x === C.R0.CARD_CAROUSEL_FIRST_ROW || x === C.R0.CARD_CAROUSEL_SECOND_ROW || x === C.R0.CARD_CAROUSEL_THIRD_ROW, I = "" !== o || "" !== c || "" !== l && f === C.zW.REWARD, A = (0, N._)(f);
   return (0, r.jsxs)(u.P3F, {
     className: a()(y.card, g, null === (n = A.cardContainer) || void 0 === n ? void 0 : n.className, {
       [y.clickable]: null != b,
@@ -266,7 +266,7 @@ let Z = i.forwardRef((e, t) => {
       children: E
     }), (0, r.jsx)("div", {
       ref: t
-    }), (0, r.jsx)(C.Z, {
+    }), (0, r.jsx)(j.Z, {
       title: i,
       titleClassName: s,
       subtitle: l,

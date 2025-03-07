@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(197115),
   _ = n(119269),
   E = n(938736),
-  j = n(981631),
-  C = n(388032),
+  C = n(981631),
+  j = n(388032),
   O = n(955048),
   v = n(691766);
 
@@ -79,7 +79,7 @@ let I = e => {
       children: n
     });
     return (0, r.jsx)(o.ua7, {
-      text: C.NW.string(C.t.UnKHdn),
+      text: j.NW.string(j.t.UnKHdn),
       shouldShow: !d,
       tooltipContentClassName: O.unsentTooltipContent,
       children: e => (0, r.jsx)("div", {
@@ -164,7 +164,7 @@ let I = e => {
       }, {
         autoTrackExposure: !1
       }),
-      W = y === j.g2L.UNAPPLIED || y === j.g2L.QUALIFIED,
+      W = y === C.g2L.UNAPPLIED || y === C.g2L.QUALIFIED,
       L = k === x.p.VARIANT_2,
       B = {
         redeemed: 0,
@@ -175,7 +175,7 @@ let I = e => {
       e === h.Fe.REDEEMED && B.redeemed++, e === h.Fe.CONVERTED && (B.redeemed++, B.converted++)
     });
     let M = B.sent === b.Q,
-      U = g.Z.getArticleURL(j.BhN.REFERRAL_PROGRAM),
+      U = g.Z.getArticleURL(C.BhN.REFERRAL_PROGRAM),
       {
         analyticsLocations: V
       } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
@@ -215,7 +215,7 @@ let I = e => {
             }), (0, r.jsx)(o.X6q, {
               variant: "heading-sm/semibold",
               className: O.referralCountdownDays,
-              children: C.NW.format(C.t.eq39am, {
+              children: j.NW.format(j.t.eq39am, {
                 days: t
               })
             })]
@@ -236,7 +236,7 @@ let I = e => {
             }),
             children: [!u && !L && (0, r.jsx)(N.Z, {
               color: o.Ttl.CUSTOM,
-              buttonText: C.NW.string(C.t.Ve9Ge3),
+              buttonText: j.NW.string(j.t.Ve9Ge3),
               className: a()(O.expandedProgressBarGiftingCTA, {
                 [O.expandedProgressBarGiftingCTALayout]: !u
               }),
@@ -246,7 +246,7 @@ let I = e => {
               className: O.expandedProgressBarSelectFriendsCTA,
               color: o.Ttl.CUSTOM,
               onClick: () => {
-                p.default.track(j.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+                p.default.track(C.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
                   location_stack: V
                 }), (0, o.ZDy)(async () => {
                   let {
@@ -264,7 +264,7 @@ let I = e => {
                   src: v,
                   alt: "",
                   className: O.expandedProgressBarSelectFriendsIcon
-                }), M ? C.NW.string(C.t.SY9tyM) : C.NW.string(C.t.Lm2nFR)]
+                }), M ? j.NW.string(j.t.SY9tyM) : j.NW.string(j.t.Lm2nFR)]
               })
             })]
           })]
@@ -301,9 +301,9 @@ let I = e => {
             children: (0, r.jsx)(o.X6q, {
               color: "always-white",
               variant: "heading-md/extrabold",
-              children: C.NW.format(C.t["7GMtc3"], {
+              children: j.NW.format(j.t["7GMtc3"], {
                 discountRate: E.Nq,
-                subscriptionInterval: C.NW.string(C.t.FPybU1)
+                subscriptionInterval: j.NW.string(j.t.FPybU1)
               })
             })
           }), Y]

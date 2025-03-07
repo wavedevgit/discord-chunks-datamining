@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(600164),
   _ = n(925329),
   E = n(406174),
-  j = n(810762),
-  C = n(681833),
+  C = n(810762),
+  j = n(681833),
   O = n(856888),
   v = n(921801),
   S = n(246946),
@@ -118,7 +118,7 @@ let q = function() {
     (0, p.Y2)(), d.jg(), (0, u.X8)(), d.tZ()
   }), function() {
     g.Z.clearSubsection()
-  }), []), S.Z.enabled) ? (0, r.jsx)(h.Z, {}) : m && _ ? P === V.cP ? (0, r.jsx)(j.Z, {
+  }), []), S.Z.enabled) ? (0, r.jsx)(h.Z, {}) : m && _ ? P === V.cP ? (0, r.jsx)(C.Z, {
     onGoBack: () => g.Z.clearSubsection()
   }) : P === V.XZ ? (0, r.jsx)(O.Z, {
     onGoBack: () => g.Z.clearSubsection()
@@ -156,7 +156,7 @@ let q = function() {
           onClickManageSubscription: () => g.Z.setSection(U.oAB.SUBSCRIPTIONS, V.cP)
         })]
       }), Z > 0 && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(K, {}), (0, r.jsx)(C.Z, {
+        children: [(0, r.jsx)(K, {}), (0, r.jsx)(j.Z, {
           count: Z,
           onClickManageSubscription: () => {
             g.Z.setSection(U.oAB.SUBSCRIPTIONS, V.XZ), R.default.track(U.rMx.PREMIUM_APPLICATION_SUBSCRIPTION_MANAGE_CTA_CLICKED)

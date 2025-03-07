@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(122021),
   _ = n(275759),
   E = n(231757),
-  j = n(888496),
-  C = n(605236),
+  C = n(888496),
+  j = n(605236),
   O = n(565138),
   v = n(297700),
   S = n(553795),
@@ -125,7 +125,7 @@ function H(e) {
       locale: g
     } = e,
     [h, x] = i.useState(o.friendSync),
-    [C, O] = i.useState(o.visibility),
+    [j, O] = i.useState(o.visibility),
     [S, T] = i.useState(o.metadataVisibility),
     [I, y] = i.useState(o.showActivity),
     [A, R] = i.useState(null),
@@ -256,24 +256,24 @@ function H(e) {
         s = (0, _.FI)(n[L.PC.CREATED_AT], g);
       switch (e.type) {
         case W.ABu.REDDIT:
-          i = (0, j.oP)(n, U.metadataItem);
+          i = (0, C.oP)(n, U.metadataItem);
           break;
         case W.ABu.STEAM:
-          i = (0, j.Dq)(n, U.metadataItem);
+          i = (0, C.Dq)(n, U.metadataItem);
           break;
         case W.ABu.BLUESKY:
         case W.ABu.TWITTER:
         case W.ABu.MASTODON:
-          i = (0, j.rJ)(n, U.metadataItem);
+          i = (0, C.rJ)(n, U.metadataItem);
           break;
         case W.ABu.EBAY:
-          i = (0, j.ul)(n, U.metadataItem);
+          i = (0, C.ul)(n, U.metadataItem);
           break;
         case W.ABu.PAYPAL:
-          i = (0, j.li)(n, U.metadataItem);
+          i = (0, C.li)(n, U.metadataItem);
           break;
         case W.ABu.TIKTOK:
-          i = (0, j.hf)(n, U.metadataItem)
+          i = (0, C.hf)(n, U.metadataItem)
       }
       null !== s && (null == i && (i = []), null == i || i.push((0, r.jsx)(u.Text, {
         variant: "text-xs/normal",
@@ -358,7 +358,7 @@ function H(e) {
         }
         T(n), p.Z.setMetadataVisibility(o.type, o.id, n)
       },
-      disabled: 1 !== C || null == o.metadata,
+      disabled: 1 !== j || null == o.metadata,
       children: (0, r.jsx)(u.Text, {
         variant: "text-sm/semibold",
         children: M.NW.string(M.t.FYKGsL)
@@ -370,7 +370,7 @@ function H(e) {
         children: [(0, r.jsx)(u.j7V, {
           className: U.connectionOptionSwitch,
           hideBorder: !0,
-          value: 1 === C,
+          value: 1 === j,
           onChange: function(e) {
             let {
               verified: t
@@ -426,7 +426,7 @@ function H(e) {
 
 function z() {
   return i.useEffect(() => () => {
-    (0, C.EW)(o.z.NEW_CRUNCHYROLL_CONNECTION, {
+    (0, j.EW)(o.z.NEW_CRUNCHYROLL_CONNECTION, {
       dismissAction: B.L.AUTO
     })
   }, []), (0, r.jsxs)("div", {

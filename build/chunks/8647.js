@@ -27,9 +27,9 @@ let E = function(e) {
     buttonClassName: i
   } = e, {
     promotion: E
-  } = (0, f.mq)(), j = (0, a.e7)([d.ZP], () => d.ZP.getPremiumTypeSubscription());
+  } = (0, f.mq)(), C = (0, a.e7)([d.ZP], () => d.ZP.getPremiumTypeSubscription());
   if (!(0, g.Vi)()) return null;
-  let C = new Date(E.endDate);
+  let j = new Date(E.endDate);
   return (0, r.jsx)(c.O, {
     newLocations: [o.Z.PREMIUM_MARKETING_PAGE_BANNER],
     children: (0, r.jsxs)("div", {
@@ -49,12 +49,12 @@ let E = function(e) {
           children: [(0, r.jsx)(l.X6q, {
             variant: "display-sm",
             color: "always-white",
-            children: null == j || null == (0, m.he)(j) ? N.NW.string(N.t.xbzNJC) : N.NW.string(N.t["22WZ9P"])
+            children: null == C || null == (0, m.he)(C) ? N.NW.string(N.t.xbzNJC) : N.NW.string(N.t["22WZ9P"])
           }), (0, r.jsx)(l.Text, {
             className: _.countdown,
             variant: "text-sm/bold",
             children: (0, r.jsx)(p.Z, {
-              endDate: C
+              endDate: j
             })
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/medium",

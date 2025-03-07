@@ -1,6 +1,6 @@
 /** Chunk was on 55849 **/
 n.d(t, {
-  Z: () => _
+  Z: () => R
 }), n(47120);
 var r = n(200651),
   l = n(192379),
@@ -15,9 +15,9 @@ var r = n(200651),
   p = n(430824),
   m = n(914010),
   g = n(594174),
-  b = n(451478),
-  j = n(626135),
-  x = n(74538),
+  j = n(451478),
+  x = n(626135),
+  b = n(74538),
   h = n(621961),
   y = n(884858),
   O = n(981631),
@@ -145,24 +145,24 @@ function F(e) {
   })
 }
 
-function _(e) {
+function R(e) {
   let {
     transitionState: t,
     onClose: c,
     onComplete: h,
     uploadType: S,
     maxFileSizeBytes: w,
-    showUpsellHeader: _,
-    filters: R,
+    showUpsellHeader: R,
+    filters: _,
     analyticsLocation: Z,
     analyticsLocations: L = [],
     modalSubTitle: I,
     imageSpecifications: k,
     modalTitle: U = A.NW.string(A.t.DToW4e),
     uploadOptionTitle: D = A.NW.string(A.t["MsUY/f"])
-  } = e, M = (0, a.e7)([b.Z], () => b.Z.isFocused()), W = (0, a.e7)([g.default], () => g.default.getCurrentUser()), B = (0, a.e7)([m.Z], () => m.Z.getGuildId()), H = (0, a.e7)([p.Z], () => p.Z.getGuild(B)), {
+  } = e, M = (0, a.e7)([j.Z], () => j.Z.isFocused()), W = (0, a.e7)([g.default], () => g.default.getCurrentUser()), B = (0, a.e7)([m.Z], () => m.Z.getGuildId()), H = (0, a.e7)([p.Z], () => p.Z.getGuild(B)), {
     reducedMotion: z
-  } = l.useContext(i.Sfi), G = (0, i.vRw)(), V = !x.ZP.canUseAnimatedAvatar(W) && S === v.pC.AVATAR, {
+  } = l.useContext(i.Sfi), G = (0, i.vRw)(), V = !b.ZP.canUseAnimatedAvatar(W) && S === v.pC.AVATAR, {
     analyticsLocations: X
   } = (0, s.ZP)(L, o.Z.SELECT_IMAGE_MODAL);
 
@@ -179,10 +179,10 @@ function _(e) {
     })
   }
   l.useEffect(() => {
-    V && j.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
+    V && x.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
       type: O.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
       location_stack: X
-    }), j.default.track(O.rMx.OPEN_MODAL, {
+    }), x.default.track(O.rMx.OPEN_MODAL, {
       type: O.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
       location: Z
     })
@@ -244,7 +244,7 @@ function _(e) {
                   file: t,
                   onCrop: q,
                   uploadType: S,
-                  showUpsellHeader: _,
+                  showUpsellHeader: R,
                   allowSkip: !0,
                   analyticsPage: null == Z ? void 0 : Z.page
                 }, n))
@@ -256,7 +256,7 @@ function _(e) {
             onFileSizeError: function() {
               c(), (0, y.Z)(w)
             },
-            filters: R
+            filters: _
           })]
         }), (0, r.jsxs)(i.P3F, {
           className: N.optionBox,
@@ -278,7 +278,7 @@ function _(e) {
                     isFromTenor: !0
                   })
                 },
-                showUpsellHeader: _,
+                showUpsellHeader: R,
                 analyticsPage: null == Z ? void 0 : Z.page
               }, t))
             }, {
@@ -312,7 +312,7 @@ function _(e) {
         className: N.imageSpecifications,
         variant: "text-sm/normal",
         children: k
-      }) : null, _ && J && (0, r.jsx)(f.Z, {
+      }) : null, R && J && (0, r.jsx)(f.Z, {
         uploadType: S,
         showUpsell: !0,
         position: "inline",

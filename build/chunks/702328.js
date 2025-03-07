@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(594174),
   _ = n(78839),
   E = n(626135),
-  j = n(526167),
-  C = n(74538),
+  C = n(526167),
+  j = n(74538),
   O = n(140465),
   v = n(278605),
   S = n(286961),
@@ -136,17 +136,17 @@ let ep = e => {
       ef = (0, m.ZP)(),
       ex = (0, c.wj)(ef),
       eb = N.default.getCurrentUser(),
-      eN = (0, C.I5)(eb),
+      eN = (0, j.I5)(eb),
       e_ = (0, v.xP)("PremiumMarketingHome") && !eN && G,
-      [eE, ej] = i.useState(!1),
-      [eC, eO] = i.useState(!1),
+      [eE, eC] = i.useState(!1),
+      [ej, eO] = i.useState(!1),
       [ev, eS] = i.useState(!1),
       [eT, eI] = i.useState(!1),
-      ey = (0, j.rO)(),
+      ey = (0, C.rO)(),
       [eA, eP] = i.useState(!1),
       eR = (0, l.e7)([_.ZP], () => _.ZP.getPremiumTypeSubscription()),
-      eD = null != eR ? (0, C.Af)(eR) : null,
-      eZ = null != eD ? C.ZP.getSkuIdForPlan(eD.planId) : null,
+      eD = null != eR ? (0, j.Af)(eR) : null,
+      eZ = null != eD ? j.ZP.getSkuIdForPlan(eD.planId) : null,
       ew = null !== eZ && eZ !== et.Si.TIER_2 ? et.Si.TIER_2 : null,
       ek = (0, I.n)(),
       eW = null != ek,
@@ -252,7 +252,7 @@ let ep = e => {
             [es.heroHeadingV2Container]: e_
           }),
           children: [(0, r.jsx)(o.$, {
-            onChange: e => ej(e),
+            onChange: e => eC(e),
             threshold: 0,
             active: !0,
             children: e_ ? (0, r.jsx)(X.Z, {
@@ -338,7 +338,7 @@ let ep = e => {
         }), !e_ && (0, r.jsx)("div", {
           className: W ? es.footerSpacingFullscreen : es.footerSpacing
         }), (0, r.jsx)(z.Z, {
-          isVisible: !eE && !ev && !eC && eA,
+          isVisible: !eE && !ev && !ej && eA,
           isFullscreen: W,
           subscriptionTier: ew,
           isMarketingPageV2: e_
@@ -362,7 +362,7 @@ let ep = e => {
             eO(e)
           },
           children: (0, r.jsx)(q.Z, {
-            isFooterVisible: eC,
+            isFooterVisible: ej,
             isDarkMode: ex,
             isReducedMotion: ee
           })

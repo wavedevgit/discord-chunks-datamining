@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(63063),
   _ = n(358085),
   E = n(709054),
-  j = n(362352),
-  C = n(413182),
+  C = n(362352),
+  j = n(413182),
   O = n(695346),
   v = n(726985),
   S = n(981631),
@@ -80,7 +80,7 @@ function A(e) {
 function P() {
   let e = O.G6.useSetting(),
     t = O.Wz.useSetting(),
-    n = (0, j.Yd)("activity privacy tab"),
+    n = (0, C.Yd)("activity privacy tab"),
     i = _.isPlatformEmbedded ? T.NW.string(T.t.MznbeH) : T.NW.string(T.t.oKqC4u),
     s = e => {
       O.Wz.updateSetting(e ? d.E5.ON_FOR_LARGE_GUILDS : d.E5.OFF), A(e)
@@ -270,7 +270,7 @@ function W(e) {
     showHeader: n = !0
   } = e, {
     showRedesign: i
-  } = C.b.useExperiment({
+  } = j.b.useExperiment({
     location: "activity privacy tab"
   });
   return (0, r.jsxs)(m.hjN, {

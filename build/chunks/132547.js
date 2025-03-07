@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(938736),
   _ = n(615042),
   E = n(391110),
-  j = n(71363),
-  C = n(781800),
+  C = n(71363),
+  j = n(781800),
   O = n(981631),
   v = n(388032),
   S = n(951084),
@@ -63,7 +63,7 @@ let I = "SubscriberNitroHome",
               className: S.perksDiscoverability,
               noBackground: !0,
               leftAlignHeaders: !0,
-              showAllPerksButton: (0, r.jsx)(C.Z, {
+              showAllPerksButton: (0, r.jsx)(j.Z, {
                 setIsAllPerksVisible: n,
                 previousComponent: E.MQ.HOME
               })
@@ -94,7 +94,7 @@ let I = "SubscriberNitroHome",
             })]
           })
         })
-      }), (0, r.jsx)(j.Z, {
+      }), (0, r.jsx)(C.Z, {
         isAllPerksVisible: t,
         setIsAllPerksVisible: n,
         previousComponent: E.MQ.HOME

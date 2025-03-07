@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(296533),
   _ = n(901750),
   E = n(112863),
-  j = n(701157),
-  C = n(912152),
+  C = n(701157),
+  j = n(912152),
   O = n(615603),
   v = n(474936),
   S = n(482397);
@@ -43,7 +43,7 @@ function T(e) {
       hasAppliedGuildBoosts: w,
       hasBoostPerk: V,
       canAddBoosts: U
-    }), L === v.a$.NONE && (0, r.jsx)(C.Z, {
+    }), L === v.a$.NONE && (0, r.jsx)(j.Z, {
       hasAppliedGuildBoosts: w,
       hasBoostPerk: V,
       hasGuildAffinitiesOrInGuild: R,
@@ -62,7 +62,7 @@ function T(e) {
     }), (0, r.jsx)(O.Z, {
       guildBoostSlots: T,
       fractionalPremiumState: L
-    }), (0, r.jsx)(j.Z, {
+    }), (0, r.jsx)(C.Z, {
       canAddBoosts: w && U,
       canApplyBoosts: k
     }), (0, r.jsx)(d.Z, {

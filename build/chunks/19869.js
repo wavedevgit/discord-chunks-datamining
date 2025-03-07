@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(720463),
   _ = n(931928),
   E = n(450272),
-  j = n(981631),
-  C = n(388032),
+  C = n(981631),
+  j = n(388032),
   O = n(747431),
   v = n(701905);
 
@@ -58,8 +58,8 @@ function T() {
     }), (0, r.jsx)(E.E_, {
       label: "Balance Widget Menu",
       children: (0, r.jsx)(x.V9, {
-        ctaText: C.NW.string(C.t["H57f4+"]),
-        ctaOnClick: j.dG4,
+        ctaText: j.NW.string(j.t["H57f4+"]),
+        ctaOnClick: C.dG4,
         isCoachmarkEnabled: !1
       })
     }), (0, r.jsxs)(E.E_, {
@@ -75,7 +75,7 @@ function T() {
         })
       }), (0, r.jsx)(s.zx, {
         onClick: () => {
-          (0, l.xf)(), (0, u.s1)().location.pathname.includes(j.Z5c.COLLECTIBLES_SHOP) || (0, d.mK)({
+          (0, l.xf)(), (0, u.s1)().location.pathname.includes(C.Z5c.COLLECTIBLES_SHOP) || (0, d.mK)({
             openInLayer: !1,
             analyticsLocations: y,
             analyticsSource: o.Z.REVENUE_STORYBOOK_TEST_PAGE
@@ -105,7 +105,7 @@ function T() {
         })]
       }), (0, r.jsx)(s.zx, {
         onClick: () => {
-          (0, l.xf)(), (0, u.s1)().location.pathname.includes(j.Z5c.COLLECTIBLES_SHOP) || (0, d.mK)({
+          (0, l.xf)(), (0, u.s1)().location.pathname.includes(C.Z5c.COLLECTIBLES_SHOP) || (0, d.mK)({
             openInLayer: !1,
             analyticsLocations: y,
             analyticsSource: o.Z.REVENUE_STORYBOOK_TEST_PAGE
@@ -179,9 +179,9 @@ function T() {
     }), (0, r.jsx)(E.E_, {
       label: "Balance Widget Card",
       children: (0, r.jsx)(f.L, {
-        ctaText: C.NW.string(C.t["H57f4+"]),
-        linkText: C.NW.string(C.t["7f4H7O"]),
-        ctaOnClick: j.dG4
+        ctaText: j.NW.string(j.t["H57f4+"]),
+        linkText: j.NW.string(j.t["7f4H7O"]),
+        ctaOnClick: C.dG4
       })
     })]
   })
@@ -275,15 +275,15 @@ function I() {
       label: "Onboarding Coachmark",
       direction: "vertical",
       children: [(0, r.jsx)(_.ED, {
-        onClose: j.dG4,
+        onClose: C.dG4,
         renderTail: !1
       }), (0, r.jsxs)("div", {
         className: v.horizontalContainer,
         children: [(0, r.jsx)(_.ED, {
-          onClose: j.dG4,
+          onClose: C.dG4,
           renderTail: !0
         }), (0, r.jsx)(_.ED, {
-          onClose: j.dG4,
+          onClose: C.dG4,
           renderTail: !0,
           invertCoachmark: !0
         })]
@@ -292,8 +292,8 @@ function I() {
       label: "Balance Widget Coachmark",
       children: (0, r.jsx)(N.E, {
         earnedOrbsQuantity: 200,
-        ctaOnClick: j.dG4,
-        linkOnClick: j.dG4
+        ctaOnClick: C.dG4,
+        linkOnClick: C.dG4
       })
     })]
   })

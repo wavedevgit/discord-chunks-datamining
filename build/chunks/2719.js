@@ -21,8 +21,8 @@ var r = n(200651),
   N = n(918505),
   _ = n(332473),
   E = n(921801),
-  j = n(485341),
-  C = n(687158),
+  C = n(485341),
+  j = n(687158),
   O = n(518950),
   v = n(184325),
   S = n(867176),
@@ -83,8 +83,8 @@ function G(e) {
     b(null != c.current && c.current.scrollWidth > c.current.clientWidth)
   }, [o.username]);
   let E = !o.isClaimed(),
-    j = m && !o.isPomelo() && !o.hasVerifiedEmailOrPhone() || E,
-    C = j ? L.NW.string(L.t["7Ngnys"]) : void 0;
+    C = m && !o.isPomelo() && !o.hasVerifiedEmailOrPhone() || E,
+    j = C ? L.NW.string(L.t["7Ngnys"]) : void 0;
   return (0, r.jsxs)("div", {
     className: a()(B.field, l),
     children: [(0, r.jsx)("div", {
@@ -136,9 +136,9 @@ function G(e) {
         }))
       })
     }), (0, r.jsx)(u.ua7, {
-      text: C,
+      text: j,
       children: e => (0, r.jsx)(u.zxk, U(M({}, e), {
-        disabled: j,
+        disabled: C,
         size: u.zxk.Sizes.SMALL,
         className: B.fieldButton,
         color: u.zxk.Colors.PRIMARY,
@@ -424,8 +424,8 @@ function X() {
       let e = I.default.getCurrentUser();
       return o()(null != e, "UserSettingsAccountProfileCard: currentUser cannot be undefined"), e
     }),
-    n = (0, C.ZP)(t.id),
-    i = (0, j.Z)(n),
+    n = (0, j.ZP)(t.id),
+    i = (0, C.Z)(n),
     s = R.co.useSetting(),
     a = (0, c.e7)([T.Z], () => T.Z.getErrors()),
     l = null == a ? void 0 : null === (e = a.avatar) || void 0 === e ? void 0 : e[0],

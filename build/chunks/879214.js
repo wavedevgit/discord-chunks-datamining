@@ -1,6 +1,6 @@
 /** Chunk was on 51724 **/
 n.d(t, {
-  W: () => j
+  W: () => C
 });
 var r = n(200651),
   i = n(120356),
@@ -21,17 +21,17 @@ var r = n(200651),
   N = n(474936),
   _ = n(388032),
   E = n(537363);
-let j = e => {
+let C = e => {
   let {
     isFullScreen: t,
     analyticsLocations: n
-  } = e, i = (0, l.e7)([p.default], () => p.default.getCurrentUser()), j = (0, l.e7)([c.Z], () => c.Z.useReducedMotion), C = g.ZP.isPremiumExactly(i, N.p9.TIER_1), O = new Date(b.Lk);
+  } = e, i = (0, l.e7)([p.default], () => p.default.getCurrentUser()), C = (0, l.e7)([c.Z], () => c.Z.useReducedMotion), j = g.ZP.isPremiumExactly(i, N.p9.TIER_1), O = new Date(b.Lk);
   return (0, r.jsx)(u.O, {
     newLocations: [d.Z.PREMIUM_MARKETING_PAGE_BANNER],
     children: (0, r.jsx)("div", {
       className: s()(E.banner, {
         [E.bannerFullScreen]: t,
-        [E.staticBanner]: j
+        [E.staticBanner]: C
       }),
       children: (0, r.jsxs)("div", {
         className: s()(E.bannerContent, {
@@ -40,7 +40,7 @@ let j = e => {
         children: [(0, r.jsx)(a.X6, {
           variant: "display-sm",
           color: "always-white",
-          children: !0 === C ? _.NW.string(_.t.tY1el5) : _.NW.string(_.t.HaPg8P)
+          children: !0 === j ? _.NW.string(_.t.tY1el5) : _.NW.string(_.t.HaPg8P)
         }), (0, r.jsx)(a.xv, {
           className: E.countdown,
           variant: "text-sm/bold",
