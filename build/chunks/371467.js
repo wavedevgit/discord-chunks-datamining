@@ -41,8 +41,8 @@ var i, r = n(512722),
   V = n(955978),
   z = n(333727),
   U = n(585708),
-  F = n(588909),
-  G = n(981631),
+  G = n(588909),
+  F = n(981631),
   Y = n(388032);
 
 function H(e, t, n) {
@@ -102,31 +102,31 @@ let el = 30 * Z.Z.Millis.MINUTE,
   eo = 2 * Z.Z.Millis.MINUTE;
 
 function ea() {
-  if (et && null == ee.find(e => e.status === G._1z.FOCUSED))
+  if (et && null == ee.find(e => e.status === F._1z.FOCUSED))
     for (let e of (et = !1, ee = [...ee, ...en], en = [], ee.length > 40 && (ee.length = 40), ee)) e.timer.start()
 }
 
 function es() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 3;
-  ee.filter(e => e.type === k.kL.TEXT && e.status === G._1z.TIMED_OUT).sort((e, t) => t.timestamp - e.timestamp).forEach((t, n) => {
-    (n >= e || t.timestamp < Date.now() - J) && eu(t.id, G._1z.DISMISSED)
+  ee.filter(e => e.type === k.kL.TEXT && e.status === F._1z.TIMED_OUT).sort((e, t) => t.timestamp - e.timestamp).forEach((t, n) => {
+    (n >= e || t.timestamp < Date.now() - J) && eu(t.id, F._1z.DISMISSED)
   })
 }
 
 function eu(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : G._1z.DISMISSED;
+  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : F._1z.DISMISSED;
   if (null == e) return !1;
   let n = ee.findIndex(t => t.id === e);
   if (-1 === n) return !1;
   let i = ee[n];
-  if (i.timer.stop(), ee = [...ee], t === G._1z.FOCUSED) {
+  if (i.timer.stop(), ee = [...ee], t === F._1z.FOCUSED) {
     let [e] = ee.splice(n, 1);
     e = K(B({}, e), {
       status: t
     }), ee.unshift(e), et = !0;
     return
   }
-  t === G._1z.DISMISSED ? ee.splice(n, 1) : ee[n] = K(B({}, i), {
+  t === F._1z.DISMISSED ? ee.splice(n, 1) : ee[n] = K(B({}, i), {
     status: t
   }), ea()
 }
@@ -144,7 +144,7 @@ function ed(e, t) {
     r = !1,
     l = B({
       id: i,
-      status: G._1z.ACTIVE,
+      status: F._1z.ACTIVE,
       timer: function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
           n = arguments.length > 2 ? arguments[2] : void 0,
@@ -152,7 +152,7 @@ function ed(e, t) {
         return {
           start() {
             let r = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : t,
-              l = r ? G._1z.TIMED_OUT : G._1z.DISMISSED; - 1 === i && (i = setTimeout(() => u.Z.updateNotificationStatus(e, l), null != n ? n : Q))
+              l = r ? F._1z.TIMED_OUT : F._1z.DISMISSED; - 1 === i && (i = setTimeout(() => u.Z.updateNotificationStatus(e, l), null != n ? n : Q))
           },
           stop() {
             clearTimeout(i), i = -1
@@ -190,7 +190,7 @@ function ep() {
     let r = t.gameId;
     if (null == r) return !1;
     let l = null === (n = v.Z.getNowPlaying(r)[e]) || void 0 === n ? void 0 : n.activity;
-    if (null == l || l.type !== G.IIU.PLAYING || !(null != l.created_at && Date.now() - l.created_at < eo)) return !1;
+    if (null == l || l.type !== F.IIU.PLAYING || !(null != l.created_at && Date.now() - l.created_at < eo)) return !1;
     let o = b.Z.getVoiceChannelId(),
       a = null === (i = S.Z.getDiscoverableVoiceStateForUser(e)) || void 0 === i ? void 0 : i.channelId;
     if (null != o && null != a && o === a) return !1;
@@ -243,8 +243,8 @@ function eh(e) {
   if (null == r || !r.isRingable() || "GUILD_RING_START" === e.type && !h.Z.getCurrentConfig({
       guildId: e.guildId,
       location: "OverlayV3StartRinging"
-    }).enabled || j.Z.getStatus() === G.Skl.DND || p.QZ.getSetting()) return !1;
-  let l = ee.find(e => e.type === k.kL.TEXT && e.channelId === t && e.messageType === G.uaV.CALL);
+    }).enabled || j.Z.getStatus() === F.Skl.DND || p.QZ.getSetting()) return !1;
+  let l = ee.find(e => e.type === k.kL.TEXT && e.channelId === t && e.messageType === F.uaV.CALL);
   null != l && eu(l.id), ed((0, W.Z)(r), {
     priority: k.Tu.HIGH,
     expirationExternallyManaged: !0,
@@ -277,7 +277,7 @@ let em = new ef(s.Z, {
     es(0);
     let i = null !== (t = D.ZP.getFocusedPID()) && void 0 !== t ? t : _.UNSET_PID;
     if (T.default.hasChangedRenderMode(i)) return;
-    let r = (0, F.Z)((0, A.pL)(), n);
+    let r = (0, G.Z)((0, A.pL)(), n);
     null != r && ed(r, {
       priority: k.Tu.URGENT,
       type: k.kL.NUDGE,
@@ -289,13 +289,13 @@ let em = new ef(s.Z, {
       locked: t
     } = e;
     if (t) {
-      for (let e of ee) e.status === G._1z.FOCUSED && eu(e.id, G._1z.ACTIVE);
+      for (let e of ee) e.status === F._1z.FOCUSED && eu(e.id, F._1z.ACTIVE);
       return !0
     }
-    for (let e of (es(), ee)) e.type === k.kL.NUDGE ? eu(e.id, G._1z.DISMISSED) : e.status !== G._1z.ACTIVE || e.expirationExternallyManaged || (e.timer.stop(), e.timer.start(e.expirationExternallyManaged));
+    for (let e of (es(), ee)) e.type === k.kL.NUDGE ? eu(e.id, F._1z.DISMISSED) : e.status !== F._1z.ACTIVE || e.expirationExternallyManaged || (e.timer.stop(), e.timer.start(e.expirationExternallyManaged));
     if (ee.length > 0) {
       var n;
-      return eu(null === (n = ee.filter(e => e.type === k.kL.TEXT).sort((e, t) => t.timestamp - e.timestamp)[0]) || void 0 === n ? void 0 : n.id, G._1z.FOCUSED)
+      return eu(null === (n = ee.filter(e => e.type === k.kL.TEXT).sort((e, t) => t.timestamp - e.timestamp)[0]) || void 0 === n ? void 0 : n.id, F._1z.FOCUSED)
     }
   },
   MESSAGE_CREATE: function(e) {
@@ -305,7 +305,7 @@ let em = new ef(s.Z, {
       message: a
     } = e, s = m.Z.getChannel(o), u = I.default.getUser(null === (t = a.author) || void 0 === t ? void 0 : t.id);
     if (null == s || null == u) return !1;
-    if ((null === (n = a.activity) || void 0 === n ? void 0 : n.type) === G.mFx.JOIN || (null === (i = a.activity) || void 0 === i ? void 0 : i.type) === G.mFx.JOIN_REQUEST) {
+    if ((null === (n = a.activity) || void 0 === n ? void 0 : n.type) === F.mFx.JOIN || (null === (i = a.activity) || void 0 === i ? void 0 : i.type) === F.mFx.JOIN_REQUEST) {
       if (!(0, w.eF)(a, o, !0, !0)) return !1;
       let e = function(e, t, n) {
         var i;
@@ -315,11 +315,11 @@ let em = new ef(s.Z, {
           s = null !== (i = null == a ? void 0 : a.altId) && void 0 !== i ? i : null == a ? void 0 : a.id;
         if (null == a || null == s) return !1;
         switch (t.activity.type) {
-          case G.mFx.JOIN:
+          case F.mFx.JOIN:
             if (null == (r = y.Z.getApplicationActivity(n.id, s)) || null == r.party || r.party.id !== t.activity.party_id) return !1;
             o = (0, L.Z)(e, t, n, a, r);
             break;
-          case G.mFx.JOIN_REQUEST:
+          case F.mFx.JOIN_REQUEST:
             if (null == (r = j.Z.getApplicationActivity(s)) || null == r.party || r.party.id !== t.activity.party_id) return !1;
             o = (0, z.Z)(e, n, a, r)
         }
@@ -332,7 +332,7 @@ let em = new ef(s.Z, {
       }(s, a, u);
       if (!1 !== e) return e
     }
-    if (N.default.getTextChatNotificationMode() === G.Ypu.DISABLED || x.Z.disableNotifications || !(0, w.eF)(a, o)) return !1;
+    if (N.default.getTextChatNotificationMode() === F.Ypu.DISABLED || x.Z.disableNotifications || !(0, w.eF)(a, o)) return !1;
     let c = !O.Z.isSoundDisabled(C.Ay),
       p = null !== (r = g.Z.getMessage(o, a.id)) && void 0 !== r ? r : (0, d.e5)(a);
     ed((0, U.Z)(s, p, u, c), {
@@ -381,7 +381,7 @@ let em = new ef(s.Z, {
         applicationId: r
       } = e,
       l = (0, A.pL)();
-    return null != l && (null == l ? void 0 : l.id) != null && (l.id === r || l.altId === r) && (n === G.mFx.JOIN && (t = (0, R.Z)(i, l)), null != t && void ed(t, {
+    return null != l && (null == l ? void 0 : l.id) != null && (l.id === r || l.altId === r) && (n === F.mFx.JOIN && (t = (0, R.Z)(i, l)), null != t && void ed(t, {
       priority: k.Tu.URGENT,
       type: k.kL.GENERIC
     }))

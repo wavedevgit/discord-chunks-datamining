@@ -1,6 +1,6 @@
 /**
   Module ID: 54082
-  Original File Name: 3df9a1553021a68a
+  Original File Name: c88020eabdb75afd
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -306,12 +306,11 @@ strong {
     align-items: top
 }
 
-.footer_e8d31f {
-    margin-top: var(--spacing-12)
+.details_e8d31f,.footer_e8d31f {
+    display: flex
 }
 
 .details_e8d31f {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     overflow: hidden;

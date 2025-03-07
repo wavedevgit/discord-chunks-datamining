@@ -48,8 +48,8 @@ var i = n(200651),
   V = n(199902),
   z = n(314897),
   U = n(430824),
-  F = n(131951),
-  G = n(19780),
+  G = n(131951),
+  F = n(19780),
   Y = n(944486),
   H = n(594174),
   B = n(979651),
@@ -286,7 +286,7 @@ function eo(e) {
   let {
     voiceChannel: n,
     locked: l
-  } = e, a = (0, o.e7)([F.Z], () => F.Z.isVideoEnabled()), s = (0, o.e7)([F.Z], () => Object.values(F.Z.getVideoDevices())[0]), u = null === (t = null == s ? void 0 : s.disabled) || void 0 === t || t, c = !1 === u, d = (0, D.Z)(n), m = e => {
+  } = e, a = (0, o.e7)([G.Z], () => G.Z.isVideoEnabled()), s = (0, o.e7)([G.Z], () => Object.values(G.Z.getVideoDevices())[0]), u = null === (t = null == s ? void 0 : s.disabled) || void 0 === t || t, c = !1 === u, d = (0, D.Z)(n), m = e => {
     f.Z.setVideoEnabled(e)
   }, g = () => {
     c ? m(!0) : (0, M.Z)()
@@ -361,7 +361,7 @@ function ea(e) {
     } = e,
     a = (0, o.e7)([H.default], () => H.default.getCurrentUser()),
     s = (0, D.Z)(n),
-    u = (0, o.cj)([F.Z], () => (0, C.Z)(F.Z)),
+    u = (0, o.cj)([G.Z], () => (0, C.Z)(G.Z)),
     d = (0, o.e7)([V.Z], () => V.Z.getCurrentUserActiveStream()),
     p = (0, J.g)((0, K.getPID)()),
     f = () => {
@@ -455,7 +455,7 @@ function es(e) {
   } = e, a = null !== (t = null == r ? void 0 : r.getGuildId()) && void 0 !== t ? t : null, {
     mute: s,
     suppress: u
-  } = (0, k.Z)(r), c = (0, o.e7)([F.Z], () => F.Z.isDeaf()), p = null == r || s || u || c;
+  } = (0, k.Z)(r), c = (0, o.e7)([G.Z], () => G.Z.isDeaf()), p = null == r || s || u || c;
 
   function f(e) {
     null != a && ((0, Q.Ws)(q.Odu.QUICK_ACTIONS, {
@@ -646,11 +646,11 @@ function ep(e) {
   var t, n;
   let {
     voiceChannel: r
-  } = e, l = null == r ? void 0 : r.id, a = (0, o.cj)([G.Z], () => ({
-    channelId: G.Z.getChannelId(),
-    quality: G.Z.getQuality(),
-    state: G.Z.getState(),
-    lastPing: G.Z.getLastPing()
+  } = e, l = null == r ? void 0 : r.id, a = (0, o.cj)([F.Z], () => ({
+    channelId: F.Z.getChannelId(),
+    quality: F.Z.getQuality(),
+    state: F.Z.getState(),
+    lastPing: F.Z.getLastPing()
   })), s = null != l, u = (0, o.e7)([B.Z], () => null != l && B.Z.hasVideo(l), [l]);
   return s && null != r && (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(w.Z, (t = et({}, a), n = n = {

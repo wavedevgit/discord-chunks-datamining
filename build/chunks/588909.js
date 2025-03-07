@@ -104,12 +104,10 @@ function Z(e, t) {
       };
       break;
     case v.nc.CONTENT_INVENTORY:
-      (0, f.Rb)("welcomeNotification").allowActivityWidget && (b.renderFooter = () => (0, i.jsx)("div", {
-        className: I.container,
-        children: (0, i.jsx)(m.lX, {
-          gamingId: null == e ? void 0 : e.id,
-          maxUserShowCount: 5
-        })
+      (0, f.Rb)("welcomeNotification").allowActivityWidget && (b.renderFooter = () => (0, i.jsx)(m.lX, {
+        gamingId: null == e ? void 0 : e.id,
+        maxUserShowCount: 5,
+        className: I.container
       }), b.onNotificationShow = () => {
         a.Z.track(y.rMx.OVERLAY_GAME_INVITE_NOTIFICATION_SHOWN, {
           user_ids: r.entries.map(e => e.author_id),

@@ -57,7 +57,7 @@ function C(e) {
     var e;
     let n = g.Z.getWidget(t);
     return !!(0, b.ZL)(n) && (null === (e = n.meta.showAllStreams) || void 0 === e || e)
-  }, [t]), F = !P, G = (0, l.e7)([m.Z], () => m.Z.getChannel(M)), Y = (0, l.e7)([f.default], () => f.default.getId()), H = T && F || D && P, B = !T && F || !D && P, {
+  }, [t]), G = !P, F = (0, l.e7)([m.Z], () => m.Z.getChannel(M)), Y = (0, l.e7)([f.default], () => f.default.getId()), H = T && G || D && P, B = !T && G || !D && P, {
     participantsVersion: K,
     activeStreams: Q,
     streamParticipants: X
@@ -84,7 +84,7 @@ function C(e) {
       activeStreams: e,
       participantsVersion: d.Z.getParticipantsVersion(M)
     }
-  }, [M, Y, U, H, B]), J = X.length, q = null == G || 0 === Q.size && C || 0 === J && !C, $ = P ? b.C5.HORIZONTAL : b.C5.VERTICAL, {
+  }, [M, Y, U, H, B]), J = X.length, q = null == F || 0 === Q.size && C || 0 === J && !C, $ = P ? b.C5.HORIZONTAL : b.C5.VERTICAL, {
     tileWidth: ee,
     layout: et
   } = function(e, t, n, i, l) {

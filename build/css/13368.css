@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 3f58b850deb5765e
+  Original File Name: a1c40d7014470169
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -97,12 +97,11 @@
     align-items: top
 }
 
-.footer_e8d31f {
-    margin-top: var(--spacing-12)
+.details_e8d31f,.footer_e8d31f {
+    display: flex
 }
 
 .details_e8d31f {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
@@ -806,7 +805,8 @@
 
 .container__32c39 {
     border-top: 1px solid var(--bg-mod-strong);
-    padding-top: var(--spacing-12)
+    padding-top: var(--spacing-12);
+    margin-top: var(--spacing-12)
 }
 
 .buttonContainer__7e329 {

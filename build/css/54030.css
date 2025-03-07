@@ -1,6 +1,6 @@
 /**
   Module ID: 54030
-  Original File Name: a84c3371e025134b
+  Original File Name: 1bfb80e022cf53cb
 **/
 .key__98feb {
     display: inline-block;
@@ -147,7 +147,8 @@
 
 .container__32c39 {
     border-top: 1px solid var(--bg-mod-strong);
-    padding-top: var(--spacing-12)
+    padding-top: var(--spacing-12);
+    margin-top: var(--spacing-12)
 }
 
 .buttonContainer__7e329 {

@@ -79,8 +79,8 @@ function y(e) {
       N(), k(), A()
     }, [N, k, A]),
     [V, z] = r.useState(!0),
-    [U, F] = r.useState(!0),
-    [G, Y] = r.useState(!0),
+    [U, G] = r.useState(!0),
+    [F, Y] = r.useState(!0),
     [H, B] = r.useState(!0),
     [K, Q] = r.useState(!0);
   return t && !n ? null : (0, i.jsxs)("div", {
@@ -112,7 +112,7 @@ function y(e) {
         children: (0, i.jsx)(s.XZJ, {
           size: 16,
           value: U,
-          onChange: (e, t) => F(t)
+          onChange: (e, t) => G(t)
         })
       }), (0, i.jsxs)(s.Text, {
         variant: "text-md/normal",
@@ -125,13 +125,13 @@ function y(e) {
           children: [S.toFixed(2), "ms"]
         })]
       })]
-    }), (G || !t) && (0, i.jsxs)("div", {
+    }), (F || !t) && (0, i.jsxs)("div", {
       className: g.measurement,
       children: [!t && (0, i.jsx)("div", {
         className: g.measurementCheckbox,
         children: (0, i.jsx)(s.XZJ, {
           size: 16,
-          value: G,
+          value: F,
           onChange: (e, t) => Y(t)
         })
       }), (0, i.jsxs)(s.Text, {

@@ -95,8 +95,8 @@ let I = r.memo(function(e) {
   } = t, W = (0, h.w_)(R, _), V = (0, h.KR)(M, _), {
     minSize: z,
     resizeX: U,
-    resizeY: F,
-    dragAnywhere: G
+    resizeY: G,
+    dragAnywhere: F
   } = null != Z ? Z : {}, Y = A || !w, H = r.useMemo(() => ({
     minX: 0,
     minY: 0,
@@ -131,11 +131,11 @@ let I = r.memo(function(e) {
     hidden: !Y,
     locked: w,
     resizeX: null != U && U,
-    resizeY: null != F && F,
+    resizeY: null != G && G,
     style: {
       zIndex: L
     },
-    dragAnywhere: null != G && G,
+    dragAnywhere: null != F && F,
     active: !w,
     onUpdate: T,
     onClick: D,
