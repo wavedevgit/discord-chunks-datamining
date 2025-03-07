@@ -278,36 +278,38 @@ class C extends g.ZP {
     }
   }
   async reactNativeCompressAndExtractData() {
-    var e;
+    var e, t;
     if (!(0, E.F)(this.item.target).shouldReactNativeCompressUploads) return this.uploadAnalytics.compressAndExtractDisabled = !0, S.log("reactNativeCompressAndExtractData() disabled by upload target"), this;
     if (!0 === this.reactNativeFilePrepped) return this.uploadAnalytics.fileAlreadyPrepped = !0, S.log("reactNativeCompressAndExtractData() file already prepped - ".concat(this.id)), this;
     S.log("Starting compression/conversion for ".concat(this.id));
-    let t = await this.trackTime("compressTimeMs", async () => {
+    let n = await this.trackTime("compressTimeMs", async () => {
       var e;
       return await (0, _.J)(this, null !== (e = this.reactNativeFileIndex) && void 0 !== e ? e : 0)
     });
-    if (null == t || null == t.file) return S.error("Failed to get compressed file for ".concat(this.id)), this;
-    let n = t.uri,
-      r = t.file.name,
-      i = t.file.type;
-    if ((0, g.rG)(t.file) && (this.uploadAnalytics.imageCompressionQuality = t.file.imageCompressionQuality, this.uploadAnalytics.videoCompressionQuality = t.file.videoCompressionQuality, this.uploadAnalytics.convertedMimeType = t.file.type, void 0 !== t.file.videoMetadata && (this.uploadAnalytics.sourceMediaWidth = t.file.videoMetadata.width, this.uploadAnalytics.sourceMediaHeight = t.file.videoMetadata.height, this.uploadAnalytics.sourceMediaFormat = t.file.videoMetadata.format, this.uploadAnalytics.sourceVideoBitrate = t.file.videoMetadata.bitRate, this.uploadAnalytics.sourceVideoFramerate = t.file.videoMetadata.frameRate, this.uploadAnalytics.videoDurationMs = t.file.videoMetadata.durationMs, this.uploadAnalytics.sourceVideoProfile = t.file.videoMetadata.sourceProfile, this.uploadAnalytics.sourceVideoLevel = t.file.videoMetadata.sourceLevel), void 0 !== t.file.encodingConfig && (this.uploadAnalytics.targetVideoWidth = t.file.encodingConfig.targetWidth, this.uploadAnalytics.targetVideoHeight = t.file.encodingConfig.targetHeight, this.uploadAnalytics.targetVideoBitrate = t.file.encodingConfig.targetBitrate, this.uploadAnalytics.targetVideoCodec = t.file.encodingConfig.useHEVC ? "hvc1" : "avc1", this.uploadAnalytics.targetVideoFramerate = t.file.encodingConfig.frameRate, this.uploadAnalytics.targetVideoIsHdr = t.file.encodingConfig.createHDR, this.uploadAnalytics.hevcIsSupported = t.file.encodingConfig.hevcIsSupported, this.uploadAnalytics.progressUpdateGranularity = t.file.encodingConfig.progressUpdateGranularity)), this.filename = r, null == r || null == n || null == i) throw S.error("Insufficient file data: ".concat({
-      filename: r,
-      uri: n,
-      mimeType: i
+    if (null == n || null == n.file) return S.error("Failed to get compressed file for ".concat(this.id)), this;
+    let r = n.uri,
+      i = n.file.name;
+    if ((0, g.rG)(n.file) && (this.uploadAnalytics.imageCompressionQuality = n.file.imageCompressionQuality, this.uploadAnalytics.videoCompressionQuality = n.file.videoCompressionQuality, n.file.isImage && (this.uploadAnalytics.sourceMediaWidth = this.item.width, this.uploadAnalytics.sourceMediaHeight = this.item.height), void 0 !== n.file.videoMetadata && (this.uploadAnalytics.sourceMediaWidth = n.file.videoMetadata.width, this.uploadAnalytics.sourceMediaHeight = n.file.videoMetadata.height, this.uploadAnalytics.sourceMediaFormat = n.file.videoMetadata.format, this.uploadAnalytics.sourceVideoBitrate = n.file.videoMetadata.bitRate, this.uploadAnalytics.sourceVideoFramerate = n.file.videoMetadata.frameRate, this.uploadAnalytics.videoDurationMs = n.file.videoMetadata.durationMs, this.uploadAnalytics.sourceVideoProfile = n.file.videoMetadata.sourceProfile, this.uploadAnalytics.sourceVideoLevel = n.file.videoMetadata.sourceLevel), void 0 !== n.file.encodingConfig && (this.uploadAnalytics.targetVideoWidth = n.file.encodingConfig.targetWidth, this.uploadAnalytics.targetVideoHeight = n.file.encodingConfig.targetHeight, this.uploadAnalytics.targetVideoBitrate = n.file.encodingConfig.targetBitrate, this.uploadAnalytics.targetVideoCodec = n.file.encodingConfig.useHEVC ? "hvc1" : "avc1", this.uploadAnalytics.targetVideoFramerate = n.file.encodingConfig.frameRate, this.uploadAnalytics.targetVideoIsHdr = n.file.encodingConfig.createHDR, this.uploadAnalytics.hevcIsSupported = n.file.encodingConfig.hevcIsSupported, this.uploadAnalytics.progressUpdateGranularity = n.file.encodingConfig.progressUpdateGranularity)), this.filename = i, null == i || null == r || null == n.file.type) throw S.error("Insufficient file data: ".concat({
+      filename: i,
+      uri: r,
+      type: n.file.type
     }, " for ").concat(this.id)), Error("Insufficient file data: ".concat({
-      filename: r,
-      uri: n,
-      mimeType: i
+      filename: i,
+      uri: r,
+      type: n.file.type
     }));
-    let o = null !== (e = t.fileSize) && void 0 !== e ? e : (await (0, m.Lc)(n)).size;
-    if (this.postCompressionSize = o, this.currentSize = o, null == o) throw S.error("Size missing from file data for ".concat(this.id)), Error("Size missing from file data");
-    S.log("Completed compression and conversion. Output size=".concat(o, " bytes; filename=").concat(r, " for ").concat(this.id));
-    let a = {
-      uri: n,
-      filename: r,
-      mimeType: i
+    let o = null === (e = i.split(".").pop()) || void 0 === e ? void 0 : e.toLowerCase(),
+      a = "jpg" === o || "jpeg" === o ? "image/jpeg" : n.file.type;
+    this.uploadAnalytics.convertedMimeType = a;
+    let s = null !== (t = n.fileSize) && void 0 !== t ? t : (await (0, m.Lc)(r)).size;
+    if (this.postCompressionSize = s, this.currentSize = s, null == s) throw S.error("Size missing from file data for ".concat(this.id)), Error("Size missing from file data");
+    S.log("Completed compression and conversion. Output size=".concat(s, " bytes; filename=").concat(i, "; mimeType=").concat(a, " for ").concat(this.id));
+    let l = {
+      uri: r,
+      filename: i,
+      mimeType: a
     };
-    return this.item = y({}, this.item, a), this.reactNativeFilePrepped = !0, this
+    return this.item = y({}, this.item, l), this.reactNativeFilePrepped = !0, this
   }
   handleError(e) {
     this.setStatus("ERROR"), this.error = e, this.trackUploadFinished("ERROR");

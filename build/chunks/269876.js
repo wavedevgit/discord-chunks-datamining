@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => C
+  Z: () => j
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -16,16 +16,16 @@ var r = n(200651),
   g = n(131951),
   h = n(65154),
   f = n(388032),
-  x = n(896753),
-  b = n(473845),
-  N = n(612064),
+  b = n(896753),
+  N = n(473845),
+  x = n(612064),
   _ = n(802138);
 let E = (0, p.hQ)();
 
-function C() {
+function j() {
   let [e, t] = i.useState(-100), [n, s] = i.useState(!1), {
-    threshold: C,
-    autoThreshold: j
+    threshold: j,
+    autoThreshold: C
   } = (0, l.cj)([g.Z], () => g.Z.getModeOptions()), {
     inputMode: O,
     automaticVADSupported: v,
@@ -55,11 +55,11 @@ function C() {
     }
   }, []);
   let y = (0, r.jsx)("section", {
-    className: a()(x.inputSensitivityToggle, x.manual),
+    className: a()(b.inputSensitivityToggle, b.manual),
     children: (0, r.jsx)(u.iRW, {
-      initialValue: C + 100,
+      initialValue: j + 100,
       onValueRender: e => "".concat((-((100 - e) * 1)).toFixed(0), "dB"),
-      onValueChange: e => I(-((100 - e) * 1), j),
+      onValueChange: e => I(-((100 - e) * 1), C),
       barStyles: {
         background: d.Z.unsafe_rawColors.GREEN_360.css
       },
@@ -68,9 +68,9 @@ function C() {
       },
       "aria-labelledby": E,
       children: (0, r.jsxs)("div", {
-        className: a()(x.sliderBar, x.microphone, x.inputSensitivityBar, b.bar),
+        className: a()(b.sliderBar, b.microphone, b.inputSensitivityBar, N.bar),
         children: [(0, r.jsx)("div", {
-          className: a()(x.fill, x.inputSensitivityBarFill),
+          className: a()(b.fill, b.inputSensitivityBarFill),
           style: {
             width: e + 100 + "%"
           }
@@ -80,13 +80,13 @@ function C() {
       })
     })
   });
-  return j && (y = (0, r.jsxs)("section", {
-    className: x.inputSensitivityToggle,
+  return C && (y = (0, r.jsxs)("section", {
+    className: b.inputSensitivityToggle,
     children: [(0, r.jsx)("div", {
-      className: x.inputSensitivitySlider,
+      className: b.inputSensitivitySlider,
       children: (0, r.jsx)("div", {
-        className: a()(x.inputSensitivityBar, x.sliderBar, {
-          [x.speaking]: n
+        className: a()(b.inputSensitivityBar, b.sliderBar, {
+          [b.speaking]: n
         })
       })
     }), (0, r.jsx)(u.R94, {
@@ -97,10 +97,10 @@ function C() {
   })), (0, r.jsxs)(u.xJW, {
     title: f.NW.string(f.t["sqUm+v"]),
     titleId: E,
-    className: x.sensitivity,
+    className: b.sensitivity,
     children: [v && (0, r.jsx)(p.FG, {
       children: e => (0, r.jsxs)("div", {
-        className: a()(N.horizontal, _.marginBottom4),
+        className: a()(x.horizontal, _.marginBottom4),
         children: [(0, r.jsx)(u.vwX, {
           tag: u.RB0.H3,
           className: _.marginReset,
@@ -110,13 +110,13 @@ function C() {
           })
         }), (0, r.jsx)(u.rsf, {
           id: e,
-          checked: j,
-          onChange: e => I(C, e)
+          checked: C,
+          onChange: e => I(j, e)
         })]
       })
     }), y, !S && (0, r.jsx)(u.R94, {
       type: u.R94.Types.DESCRIPTION,
-      className: a()(x.inputDisabledWarning, _.marginBottom8),
+      className: a()(b.inputDisabledWarning, _.marginBottom8),
       children: f.NW.format(f.t["O13I+P"], {
         onEnableClick: () => m.Z.enable(!0)
       })

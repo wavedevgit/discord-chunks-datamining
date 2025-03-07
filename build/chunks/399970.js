@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => x
+  Z: () => b
 }), n(47120), n(301563);
 var r = n(200651),
   i = n(192379),
@@ -17,19 +17,19 @@ var r = n(200651),
   h = n(802138);
 let f = /^\d+$|^$/;
 
-function x(e) {
+function b(e) {
   let {
     onClose: t,
     transitionState: n
   } = e, {
-    authorizedApplicationId: x,
-    authorizationError: b,
-    authorizing: N
+    authorizedApplicationId: b,
+    authorizationError: N,
+    authorizing: x
   } = (0, s.cj)([m.Z], () => ({
     authorizedApplicationId: m.Z.testModeApplicationId,
     authorizationError: m.Z.error,
     authorizing: m.Z.isFetchingAuthorization
-  })), [_, E] = i.useState(null != x ? x : ""), [C, j] = i.useState("8080"), [O, v] = i.useState("localhost"), S = (0, u.Dt)(), T = f.test(_);
+  })), [_, E] = i.useState(null != b ? b : ""), [j, C] = i.useState("8080"), [O, v] = i.useState("localhost"), S = (0, u.Dt)(), T = f.test(_);
   async function I() {
     o.q$();
     let e = function(e, t, n) {
@@ -40,11 +40,11 @@ function x(e) {
         case "proxy":
           return (0, c.ZP)(n)
       }
-    }(O, C, _);
+    }(O, j, _);
     null != await o.Wt(_, e) && t()
   }
   i.useEffect(() => () => l.Z.wait(() => o.q$()), []);
-  let y = null != x && x === _,
+  let y = null != b && b === _,
     A = y ? function() {
       o.mc(), E(""), v(null)
     } : I;
@@ -68,9 +68,9 @@ function x(e) {
         className: h.marginBottom20,
         type: a.R94.Types.DESCRIPTION,
         children: p.NW.string(p.t.a6Vilp)
-      }), null == b ? null : (0, r.jsx)(a.kzN, {
+      }), null == N ? null : (0, r.jsx)(a.kzN, {
         className: h.marginBottom20,
-        children: b
+        children: N
       }), (0, r.jsx)("form", {
         onSubmit: e => {
           e.preventDefault(), A()
@@ -89,7 +89,7 @@ function x(e) {
               onChange: function(e) {
                 E(e)
               },
-              disabled: N
+              disabled: x
             })
           }), (0, r.jsx)(a.xJW, {
             className: g.inputWrapper,
@@ -116,15 +116,15 @@ function x(e) {
             title: p.NW.string(p.t.fF4zxs),
             required: !0,
             children: (0, r.jsx)(a.oil, {
-              value: C,
+              value: j,
               maxLength: 5,
-              onChange: e => j(e),
-              disabled: N
+              onChange: e => C(e),
+              disabled: x
             })
           }), (0, r.jsx)(a.zxk, {
-            submitting: N,
+            submitting: x,
             type: "submit",
-            disabled: !T || 0 === _.length || "localhost" === O && 0 === C.length,
+            disabled: !T || 0 === _.length || "localhost" === O && 0 === j.length,
             color: y ? a.zxk.Colors.RED : a.zxk.Colors.GREEN,
             children: y ? p.NW.string(p.t.d6TR3N) : p.NW.string(p.t.qwuK5O)
           })]

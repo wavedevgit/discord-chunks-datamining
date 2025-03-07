@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => p
 }), n(47120);
@@ -39,7 +39,7 @@ function p(e) {
       var n;
       p(null === (n = e.body) || void 0 === n ? void 0 : n.message)
     }
-  }, h = null != t.paymentSource && t.status === c.Py.COMPLETED, f = null == n ? void 0 : n.invoiceLink, x = null == n ? void 0 : n.refundInvoiceLinks;
+  }, h = null != t.paymentSource && t.status === c.Py.COMPLETED, f = null == n ? void 0 : n.invoiceLink, b = null == n ? void 0 : n.refundInvoiceLinks;
   return t.hasInvoiceURL && null == n ? (0, r.jsxs)("div", {
     className: u.downloadInvoice,
     children: [(0, r.jsx)(a.eee, {
@@ -59,7 +59,7 @@ function p(e) {
     children: [(0, r.jsx)(a.eee, {
       href: f,
       children: d.NW.string(d.t.R0xzCA)
-    }), null != x ? x.map((e, t) => (0, r.jsx)(a.eee, {
+    }), null != b ? b.map((e, t) => (0, r.jsx)(a.eee, {
       className: u.downloadRefundInvoice,
       href: e,
       children: d.NW.string(d.t["3x6NGx"])

@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   i: () => eH
 }), n(653041);
@@ -17,13 +17,13 @@ var i = n(990547),
   g = n(579806),
   h = n(782568),
   f = n(758182),
-  x = n(163379),
-  b = n(703288),
-  N = n(574755),
+  b = n(163379),
+  N = n(703288),
+  x = n(574755),
   _ = n(377171),
   E = n(540059),
-  C = n(621628),
-  j = n(18438),
+  j = n(621628),
+  C = n(18438),
   O = n(778825),
   v = n(665166),
   S = n(715495),
@@ -71,13 +71,13 @@ var i = n(990547),
   eg = n(88624),
   eh = n(387747),
   ef = n(389650),
-  ex = n(649157),
-  eb = n(593648),
-  eN = n(327885),
+  eb = n(649157),
+  eN = n(593648),
+  ex = n(327885),
   e_ = n(595242),
   eE = n(463153),
-  eC = n(36192),
-  ej = n(889029),
+  ej = n(36192),
+  eC = n(889029),
   eO = n(400287),
   ev = n(554042),
   eS = n(936982),
@@ -124,8 +124,8 @@ let eV = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       hasLibraryApplication: e3,
       hasTOTPEnabled: e8,
       developerMode: e4,
-      isAdultUser: e7,
-      hasSecureFramesVerifiedUserIds: e9,
+      isAdultUser: e9,
+      hasSecureFramesVerifiedUserIds: e7,
       hypeSquadRemoved: e5,
       stealthRemediationEnabled: te,
       hasIgnoredUsers: tt,
@@ -283,7 +283,7 @@ let eV = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         },
         onSettingsClose: () => {
           o.Z.wait(() => {
-            (0, j.It)(), (0, u.P6)(), m.Z.clearSubsection(eW.oAB.PROFILE_CUSTOMIZATION)
+            (0, C.It)(), (0, u.P6)(), m.Z.clearSubsection(eW.oAB.PROFILE_CUSTOMIZATION)
           })
         },
         url: eW.Z5c.SETTINGS("profile-customization")
@@ -452,13 +452,13 @@ let eV = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eW.oAB.CONTENT_AND_SOCIAL,
         searchableTitles: [eM.NW.string(eM.t.qFsx5u)],
         parent: ek.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-        predicate: () => eQ && !e7 && !e$
+        predicate: () => eQ && !e9 && !e$
       },
       [ek.s6.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2]: {
         section: eW.oAB.DATA_AND_PRIVACY,
         searchableTitles: [eM.NW.string(eM.t["5b3FND"])],
         parent: ek.s6.PRIVACY_AND_SAFETY_VOICE_SECURITY,
-        predicate: () => e9
+        predicate: () => e7
       },
       [ek.s6.PRIVACY_FAMILY_CENTER]: {
         section: eW.oAB.FAMILY_CENTER,
@@ -491,7 +491,7 @@ let eV = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eM.NW.string(eM.t["+1h0k5"])],
         label: eM.NW.string(eM.t["+1h0k5"]),
         ariaLabel: eM.NW.string(eM.t["+1h0k5"]),
-        element: eC.Z,
+        element: ej.Z,
         newIndicatorDismissibleContentTypes: [s.z.AUTH_SESSIONS_NEW],
         impressionName: i.ImpressionNames.USER_SETTINGS_SESSIONS,
         impressionProperties: {
@@ -529,8 +529,8 @@ let eV = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eM.NW.string(eM.t.z2jK6e)],
         label: eM.NW.string(eM.t.z2jK6e),
         ariaLabel: eM.NW.string(eM.t.z2jK6e),
-        icon: eK ? (0, r.jsx)(b.Z, {}) : void 0,
-        element: N.Z,
+        icon: eK ? (0, r.jsx)(N.Z, {}) : void 0,
+        element: x.Z,
         predicate: () => !eq,
         url: eW.Z5c.SETTINGS("clips")
       },
@@ -1215,7 +1215,7 @@ let eV = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eM.NW.string(eM.t.HcoRu7)],
         label: eM.NW.string(eM.t.HcoRu7),
         ariaLabel: eM.NW.string(eM.t.HcoRu7),
-        element: eb.Z,
+        element: eN.Z,
         url: eW.Z5c.SETTINGS("notifications")
       },
       [ek.s6.NOTIFICATIONS_ENABLE_DESKTOP]: {
@@ -1349,7 +1349,7 @@ let eV = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eW.oAB.LOCALE,
         searchableTitles: [eM.NW.string(eM.t.IHMsPj)],
         label: eM.NW.string(eM.t.IHMsPj),
-        element: ex.Z,
+        element: eb.Z,
         url: eW.Z5c.SETTINGS("language")
       },
       [ek.s6.WINDOW_SETTINGS]: {
@@ -1371,7 +1371,7 @@ let eV = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eM.NW.string(eM.t.S5GfOT)],
         label: eM.NW.string(eM.t.S5GfOT),
         ariaLabel: eM.NW.string(eM.t.S5GfOT),
-        element: ej.Z,
+        element: eC.Z,
         url: eW.Z5c.SETTINGS("streamer-mode")
       },
       [ek.s6.STREAMER_MODE_INTEGRATIONS]: {
@@ -1489,12 +1489,12 @@ let eV = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eW.oAB.OVERLAY,
         searchableTitles: [eM.NW.string(eM.t["9cb1U1"])],
         label: eM.NW.string(eM.t["9cb1U1"]),
-        element: eN.Z,
+        element: ex.Z,
         predicate: () => !eq && eY
       },
       [ek.s6.CHANGELOG]: {
         section: "changelog",
-        onClick: () => (0, x.Z)(!0),
+        onClick: () => (0, b.Z)(!0),
         searchableTitles: [eM.NW.string(eM.t.LRmNAg)],
         label: eM.NW.string(eM.t.LRmNAg)
       },
@@ -1713,7 +1713,7 @@ let eV = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eW.oAB.DISMISSIBLE_CONTENT_OPTIONS,
         searchableTitles: ["Dismissible Contents"],
         label: "Dismissible Contents",
-        element: C.Z,
+        element: j.Z,
         predicate: () => W.Z.isDeveloper
       },
       [ek.s6.PAYMENT_FLOW_MODALS]: {

@@ -1,5 +1,5 @@
-/** Chunk was on 57540 **/
-o.exports = {
+/** Chunk was on 68780 **/
+e.exports = {
   body: "body__89307",
   title: "title__89307",
   whatYouLoseItemContainer: "whatYouLoseItemContainer__89307",

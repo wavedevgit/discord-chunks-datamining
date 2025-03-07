@@ -1,5 +1,5 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 36149 **/
 n.d(t, {
-  J: () => r
+  J: () => l
 });
-let r = "KEYBOARD_SHORTCUT_MODAL_KEY"
+let l = "KEYBOARD_SHORTCUT_MODAL_KEY"

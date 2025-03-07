@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => O
 });
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(435064),
   h = n(779618),
   f = n(39604),
-  x = n(703288),
-  b = n(491758),
-  N = n(233685),
+  b = n(703288),
+  N = n(491758),
+  x = n(233685),
   _ = n(388032),
   E = n(678519),
-  C = n(107248),
-  j = n(802138);
+  j = n(107248),
+  C = n(802138);
 
 function O(e) {
   let {
@@ -48,17 +48,17 @@ function O(e) {
       tag: l.RB0.H1,
       title: n ? (0, r.jsxs)("div", {
         className: E.headerContainer,
-        children: [_.NW.string(_.t.z2jK6e), (0, r.jsx)(x.Z, {})]
+        children: [_.NW.string(_.t.z2jK6e), (0, r.jsx)(b.Z, {})]
       }) : null,
       children: T && (0, r.jsxs)("form", {
         onSubmit: e => e.preventDefault(),
-        children: [(0, r.jsx)(b.Z, {}), (0, r.jsx)(N.Z, {})]
+        children: [(0, r.jsx)(N.Z, {}), (0, r.jsx)(x.Z, {})]
       })
     }), T && (0, r.jsx)(l.$i$, {}), (0, r.jsxs)(l.hjN, {
-      className: n || T ? j.marginTop20 : t,
+      className: n || T ? C.marginTop20 : t,
       children: [(0, r.jsx)(l.j7V, {
         hideBorder: !0,
-        className: C.formItem,
+        className: j.formItem,
         value: O,
         note: _.NW.string(_.t["wW9/zc"]),
         onChange: e => f.yg({
@@ -67,7 +67,7 @@ function O(e) {
         children: _.NW.string(_.t.AGDDkJ)
       }), v && y && (0, r.jsx)(l.j7V, {
         hideBorder: !0,
-        className: C.formItem,
+        className: j.formItem,
         value: I,
         note: _.NW.string(_.t["0vjy8P"]),
         onChange: e => f.yl({

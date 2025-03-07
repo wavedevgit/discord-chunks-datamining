@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => N
+  Z: () => x
 });
 var r = n(200651),
   i = n(192379),
@@ -16,10 +16,10 @@ var r = n(200651),
   g = n(46140),
   h = n(981631),
   f = n(388032),
-  x = n(920617),
-  b = n(66094);
+  b = n(920617),
+  N = n(66094);
 
-function N() {
+function x() {
   let e = (0, s.wj)((0, o.ZP)()),
     t = (0, m.y)({
       location: g.dr.USER_SETTINGS_GIFT_INVENTORY
@@ -27,7 +27,7 @@ function N() {
     n = i.useMemo(() => ({
       backgroundImage: "url(".concat("https://cdn.discordapp.com/assets/discovery/quests-wumpus-hikes-mountain-transparent-background.png", ")")
     }), []),
-    N = i.useCallback(() => {
+    x = i.useCallback(() => {
       (0, l.xf)(), (0, p.navigateToQuestHome)({
         fromContent: u.jn.QUEST_HOME_MOVE_CALLOUT
       }), c.default.track(h.rMx.QUEST_CONTENT_CLICKED, function(e) {
@@ -52,16 +52,16 @@ function N() {
       }, (0, d.mH)(u.jn.QUEST_HOME_MOVE_CALLOUT)))
     }, []);
   return t === m.$.NEVER_SHOW ? null : (0, r.jsx)("div", {
-    className: x.container,
+    className: b.container,
     style: n,
     children: (0, r.jsxs)("div", {
-      className: x.textContainer,
+      className: b.textContainer,
       children: [(0, r.jsxs)("div", {
-        className: x.headerContainer,
+        className: b.headerContainer,
         children: [(0, r.jsx)("img", {
           alt: "",
-          src: b,
-          className: x.icon
+          src: N,
+          className: b.icon
         }), (0, r.jsx)(a.X6q, {
           variant: "heading-lg/bold",
           color: "always-white",
@@ -74,9 +74,9 @@ function N() {
       }), (0, r.jsx)(a.zxk, {
         size: "large",
         color: e ? a.Ttl.BRAND : a.Ttl.WHITE,
-        className: x.button,
-        onClick: N,
-        innerClassName: x.innerButton,
+        className: b.button,
+        onClick: x,
+        innerClassName: b.innerButton,
         children: (0, r.jsx)(a.Text, {
           variant: "text-md/medium",
           color: e ? "always-white" : "text-normal",

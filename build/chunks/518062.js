@@ -1,4 +1,4 @@
-/** Chunk was on 71491 **/
+/** Chunk was on 63844 **/
 t.d(n, {
   Z: () => p
 }), t(47120);
@@ -24,7 +24,7 @@ function p(e) {
     purchaseScene: c.fe.Scenes.STARS,
     errorScene: c.fe.Scenes.ERROR,
     successScene: c.fe.Scenes.SUCCESS
-  }), m = (0, l.e7)([o.Z], () => o.Z.useReducedMotion);
+  }), S = (0, l.e7)([o.Z], () => o.Z.useReducedMotion);
   return (0, r.jsxs)(i.xBx, {
     align: s.Z.Align.START,
     className: u.header,
@@ -34,7 +34,7 @@ function p(e) {
       nextScene: d,
       onScenePlay: e => _(c.fe.getNextScene(e)),
       pauseWhileUnfocused: !1,
-      pause: m
+      pause: S
     }), (0, r.jsx)("div", {
       className: u.headerTitle
     }), (0, r.jsx)(i.olH, {

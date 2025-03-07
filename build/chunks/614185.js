@@ -1,11 +1,11 @@
-/** Chunk was on 76282 **/
+/** Chunk was on 40247 **/
 n.d(t, {
-  D: () => l,
-  E: () => o
+  D: () => o,
+  E: () => l
 });
 var r = n(818083),
   i = n(987338);
-let o = (0, r.B)({
+let l = (0, r.B)({
     kind: "user",
     id: "2025-02_name_plate_experiment",
     label: "Nameplates Experiment",
@@ -30,7 +30,7 @@ let o = (0, r.B)({
       }
     }]
   }),
-  l = e => o.useExperiment({
+  o = e => l.useExperiment({
     location: e
   }, {
     autoTrackExposure: !1

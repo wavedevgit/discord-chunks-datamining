@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => I,
   r: () => T
@@ -17,14 +17,14 @@ var r = n(200651),
   g = n(74538),
   h = n(709054),
   f = n(357956),
-  x = n(275909),
-  b = n(300037),
-  N = n(981631),
+  b = n(275909),
+  N = n(300037),
+  x = n(981631),
   _ = n(474936),
   E = n(388032),
-  C = n(37643);
+  j = n(37643);
 
-function j(e) {
+function C(e) {
   let {
     guildTier: t,
     guildBoostSlot: n,
@@ -40,7 +40,7 @@ function j(e) {
       date: new Date(e)
     })
   }, [n, o, c]), u = i.useMemo(() => (function(e) {
-    if (null == e || e === N.Eu4.NONE) return "";
+    if (null == e || e === x.Eu4.NONE) return "";
     let t = [E.NW.formatToPlainString(E.t.dLlKX1, {
       numEmojiSlots: _.HO[e].limits.emoji
     }), E.NW.formatToPlainString(E.t["+ANIfn"], {
@@ -57,7 +57,7 @@ function j(e) {
     }), E.NW.formatToPlainString(E.t.TbpCvr, {
       numVideoStageSeats: _.HO[e].limits.stageVideoUsers
     }), E.NW.string(E.t.LDyX3t), E.NW.string(E.t.YtGlPT)];
-    e >= N.Eu4.TIER_2 && (t.push(E.NW.string(E.t.SztbtL)), t.push(E.NW.string(E.t["3GK91t"]))), e >= N.Eu4.TIER_3 && t.push(E.NW.string(E.t.XUUJd3));
+    e >= x.Eu4.TIER_2 && (t.push(E.NW.string(E.t.SztbtL)), t.push(E.NW.string(E.t["3GK91t"]))), e >= x.Eu4.TIER_3 && t.push(E.NW.string(E.t.XUUJd3));
     let n = t[Math.floor(Math.random() * t.length)];
     return E.NW.format(E.t["/dOAmZ"], {
       perk: n
@@ -73,8 +73,8 @@ function j(e) {
       opacity: 0
     }
   }, "animate-always");
-  return o || t === N.Eu4.NONE ? (0, r.jsx)("div", {
-    className: C.boostDescriptionInnerContainer,
+  return o || t === x.Eu4.NONE ? (0, r.jsx)("div", {
+    className: j.boostDescriptionInnerContainer,
     children: (0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
@@ -82,7 +82,7 @@ function j(e) {
     })
   }) : m((e, t) => (0, r.jsx)(s.animated.div, {
     style: e,
-    className: C.boostDescriptionInnerContainer,
+    className: j.boostDescriptionInnerContainer,
     children: (0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
@@ -99,23 +99,23 @@ function O(e) {
     hasCancelableGuildBoostSlot: u,
     showAltText: m,
     isLastGuildBoostSlot: g
-  } = e, h = (0, a.e7)([o.Z], () => o.Z.useReducedMotion), b = i.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), N = i.useMemo(() => null != b && b > new Date, [b]), _ = (0, p.tl)(n), {
+  } = e, h = (0, a.e7)([o.Z], () => o.Z.useReducedMotion), N = i.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), x = i.useMemo(() => null != N && N > new Date, [N]), _ = (0, p.tl)(n), {
     fractionalState: O
   } = (0, c.Z)();
   return (0, r.jsxs)("div", {
-    className: C.boostContainer,
+    className: j.boostContainer,
     children: [(0, r.jsxs)("div", {
-      className: C.boostInnerContainer,
-      children: [(0, r.jsx)(x.Z, {
+      className: j.boostInnerContainer,
+      children: [(0, r.jsx)(b.Z, {
         isCanceled: _,
-        hasCooldown: N,
+        hasCooldown: x,
         useReducedMotion: h
       }), (0, r.jsx)("div", {
-        className: C.boostDescriptionContainer,
-        children: null != b && N && !_ ? (0, r.jsx)(f.Z, {
-          className: C.boostDescriptionInnerContainer,
-          cooldown: b.getTime()
-        }) : (0, r.jsx)(j, {
+        className: j.boostDescriptionContainer,
+        children: null != N && x && !_ ? (0, r.jsx)(f.Z, {
+          className: j.boostDescriptionInnerContainer,
+          cooldown: N.getTime()
+        }) : (0, r.jsx)(C, {
           guildTier: t,
           guildBoostSlot: n,
           showAltText: m,
@@ -158,7 +158,7 @@ function O(e) {
             return e
           }({}, e), n = n = {
             "aria-label": E.NW.string(E.t.PdRCRk),
-            className: C.boostSlotMenuIcon,
+            className: j.boostSlotMenuIcon,
             children: (0, r.jsx)(l.Huf, {
               size: "md",
               color: "currentColor"
@@ -176,7 +176,7 @@ function O(e) {
         }
       })]
     }), !g && (0, r.jsx)("div", {
-      className: C.boostContainerSeparator
+      className: j.boostContainerSeparator
     })]
   })
 }
@@ -190,8 +190,8 @@ function v(e) {
     showAltText: l
   } = e, o = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]);
   return (0, r.jsxs)("div", {
-    className: C.appliedBoostContainer,
-    children: [(0, r.jsx)(b.Z, {
+    className: j.appliedBoostContainer,
+    children: [(0, r.jsx)(N.Z, {
       guildId: t,
       boostingVariant: !1
     }), n.map((e, t) => (0, r.jsx)(O, {
@@ -225,8 +225,8 @@ function S(e) {
     cooldown_ends_at: null
   }, i);
   return (0, r.jsxs)("div", {
-    className: C.appliedBoostContainer,
-    children: [(0, r.jsx)(b.Z, {
+    className: j.appliedBoostContainer,
+    children: [(0, r.jsx)(N.Z, {
       guildId: t,
       boostingVariant: !1
     }), n.map((e, t) => (0, r.jsx)(O, {
@@ -252,16 +252,16 @@ function T(e) {
     }), e
   }, [t]);
   return null == n || 0 === t.length ? null : (0, r.jsxs)("div", {
-    className: C.wrapper,
+    className: j.wrapper,
     children: [(0, r.jsx)("div", {
-      className: C.container,
+      className: j.container,
       children: h.default.keys(s).map(e => (0, r.jsx)(S, {
         guildId: e,
         premiumSubscription: n,
         appliedGuildBoosts: s[e]
       }, e))
     }), (0, r.jsx)("div", {
-      className: C.mainSeparator
+      className: j.mainSeparator
     })]
   })
 }
@@ -299,9 +299,9 @@ function I(e) {
   if (null == n || 0 === Object.keys(l).length) return null;
   let c = o > g.ZP.getNumIncludedPremiumGuildSubscriptionSlots(n.planId);
   return (0, r.jsxs)("div", {
-    className: C.wrapper,
+    className: j.wrapper,
     children: [(0, r.jsx)("div", {
-      className: C.container,
+      className: j.container,
       children: h.default.keys(l).map(e => (0, r.jsx)(v, {
         guildId: e,
         guildBoostSlotRecords: l[e],
@@ -310,7 +310,7 @@ function I(e) {
         showAltText: s
       }, e))
     }), (0, r.jsx)("div", {
-      className: C.mainSeparator
+      className: j.mainSeparator
     })]
   })
 }

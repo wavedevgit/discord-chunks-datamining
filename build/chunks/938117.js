@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => j
+  Z: () => C
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -16,9 +16,9 @@ var r = n(200651),
   g = n(898531),
   h = n(636188),
   f = n(678916),
-  x = n(981631),
-  b = n(869783),
-  N = n(388032),
+  b = n(981631),
+  N = n(869783),
+  x = n(388032),
   _ = n(215232);
 
 function E(e) {
@@ -40,7 +40,7 @@ function E(e) {
   return e
 }
 
-function C(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,10 +53,10 @@ function C(e, t) {
   }), e
 }
 
-function j(e) {
+function C(e) {
   let {
     onLearnMore: t,
-    selectedBackgroundOption: j,
+    selectedBackgroundOption: C,
     onSelectBackgroundOption: O,
     currentDeviceId: v,
     smallerBackgroundOptions: S,
@@ -64,7 +64,7 @@ function j(e) {
   } = e, I = (0, s.e7)([o.default], () => o.default.getCurrentUser()), [y, A] = i.useState(null), P = (0, g.Z)(), R = c.ZP.canUseCustomBackgrounds(I), D = (0, s.cj)([u.Z], () => R ? u.Z.videoFilterAssets : {}), Z = i.useMemo(() => Object.values(D).filter(e => e.type === f.xV.BACKGROUND), [D]), w = (0, l.O)(), k = {
     isVideoBackgroundSupported: P,
     onSelectBackgroundOption: O,
-    selectedBackgroundOption: j
+    selectedBackgroundOption: C
   }, W = i.useRef(k);
   i.useEffect(() => {
     W.current = k
@@ -82,13 +82,13 @@ function j(e) {
     O(e), (0, p.FU)(e, v, {
       location: w.location
     }).then(() => A(null)).catch(() => {
-      A(N.NW.string(N.t.ejrSLS)), (0, p.FU)(null, v, {
+      A(x.NW.string(x.t.ejrSLS)), (0, p.FU)(null, v, {
         location: w.location
       })
     })
   };
   return P ? (0, r.jsxs)(a.xJW, {
-    title: N.NW.string(N.t.lZTUPj),
+    title: x.NW.string(x.t.lZTUPj),
     className: T,
     children: [null != y ? (0, r.jsx)(a.kzN, {
       className: _.videoBackgroundError,
@@ -96,17 +96,17 @@ function j(e) {
     }) : null, (0, r.jsx)(h.Z, {
       canUseCustomBackgrounds: R,
       customBackgroundOptions: Z,
-      selectedOption: j,
+      selectedOption: C,
       onSelectOption: L,
       onUpsellClick: () => {
         (0, a.ZDy)(async () => {
           let {
             default: e
           } = await n.e("87200").then(n.bind(n, 592163));
-          return n => (0, r.jsx)(e, C(E({}, n), {
+          return n => (0, r.jsx)(e, j(E({}, n), {
             onLearnMore: t,
-            analyticsSource: C(E({}, w.location), {
-              object: x.qAy.BUTTON_CTA
+            analyticsSource: j(E({}, w.location), {
+              object: b.qAy.BUTTON_CTA
             })
           }))
         })
@@ -116,7 +116,7 @@ function j(e) {
         return new Promise(async r => {
           try {
             let r = await (0, d.Ff)(e, f.xV.BACKGROUND);
-            L(r), (0, m.g5)(r, t.type === b.m.MP4, n), A(null)
+            L(r), (0, m.g5)(r, t.type === N.m.MP4, n), A(null)
           } catch (e) {
             A(e.message)
           }

@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 e.exports = {
   pageDescription: "pageDescription__8f372",
   subscriptionsContainer: "subscriptionsContainer__8f372",

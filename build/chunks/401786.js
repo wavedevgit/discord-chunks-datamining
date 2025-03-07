@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   default: () => W
 }), n(411104), n(47120);
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(906732),
   h = n(600164),
   f = n(374649),
-  x = n(431369),
-  b = n(55610),
-  N = n(653798),
+  b = n(431369),
+  N = n(55610),
+  x = n(653798),
   _ = n(311821),
   E = n(42818),
-  C = n(314884),
-  j = n(509545),
+  j = n(314884),
+  C = n(509545),
   O = n(78839),
   v = n(267642),
   S = n(74538),
@@ -62,7 +62,7 @@ function D(e) {
         }) : P.NW.format(P.t.otHdfX, {
           endDate: t.currentPeriodEnd
         })
-      }), (0, r.jsx)(b.Z, {
+      }), (0, r.jsx)(N.Z, {
         fromBoostCancelModal: !0
       })]
     }), t.isPurchasedExternally ? null : (0, r.jsxs)(o.mzw, {
@@ -80,7 +80,7 @@ function D(e) {
 }
 async function Z(e, t, n, r) {
   let i = null != r ? r : function() {
-    let e = Object.values(C.Z.boostSlots),
+    let e = Object.values(j.Z.boostSlots),
       t = a().sortBy(e.filter(e => !(0, v.tl)(e)), e => [null != e.premiumGuildSubscription, null != e.cooldownEndsAt ? new Date(e.cooldownEndsAt) : null])[0];
     return null != t ? t.id : null
   }();
@@ -96,30 +96,30 @@ function w(e) {
     premiumSubscription: a,
     guildBoostSlotId: c,
     onBack: d,
-    onNext: b,
-    onClose: C
+    onNext: N,
+    onClose: j
   } = e, [O, v] = i.useState(!1), [A, D] = i.useState(null), [w, k] = i.useMemo(() => {
     try {
-      return [(0, x.g)(a, -1), !1]
+      return [(0, b.g)(a, -1), !1]
     } catch (e) {
       return [
         [], !0
       ]
     }
-  }, [a]), W = i.useRef(C);
+  }, [a]), W = i.useRef(j);
   i.useEffect(() => {
-    W.current = C
+    W.current = j
   }), i.useEffect(() => {
     k && W.current()
   }, [k]);
   let {
     premiumSubscriptionPlan: L,
     premiumGuildPlan: B
-  } = (0, l.cj)([j.Z], () => {
-    let e = j.Z.get(a.planId);
+  } = (0, l.cj)([C.Z], () => {
+    let e = C.Z.get(a.planId);
     return {
       premiumSubscriptionPlan: e,
-      premiumGuildPlan: null != e ? j.Z.getForSkuAndInterval((0, S.Wz)(y.Si.GUILD), e.interval, e.intervalCount) : null
+      premiumGuildPlan: null != e ? C.Z.getForSkuAndInterval((0, S.Wz)(y.Si.GUILD), e.interval, e.intervalCount) : null
     }
   }), {
     analyticsLocations: M
@@ -162,7 +162,7 @@ function w(e) {
     } = L;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(I.Z, {
-      onClose: C
+      onClose: j
     }), (0, r.jsxs)(o.hzk, {
       className: R.body,
       children: [null !== A && (0, r.jsx)(o.kzN, {
@@ -172,18 +172,18 @@ function w(e) {
         children: P.NW.format(P.t["0W23cn"], {
           endDate: G.subscriptionPeriodStart
         })
-      }), (0, r.jsxs)(N.PO, {
+      }), (0, r.jsxs)(x.PO, {
         className: R.invoiceTable,
-        children: [(0, r.jsx)(N.q9, {
+        children: [(0, r.jsx)(x.q9, {
           children: P.NW.string(P.t.iqhIp6)
-        }), (0, r.jsx)(N.R$, {
+        }), (0, r.jsx)(x.R$, {
           label: P.NW.format(P.t["Vg+LRk"], {
             subscriptionCount: 1
           }),
           value: (0, T.og)((0, T.T4)(z, a.currency), Y, K),
           className: R.invoiceCancelRow
         }), null != V && V.length > 0 ? (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(N.KU, {}), (0, r.jsx)(E.nd, {
+          children: [(0, r.jsx)(x.KU, {}), (0, r.jsx)(E.nd, {
             premiumSubscription: a,
             renewalInvoice: G,
             isUpdate: !0
@@ -198,7 +198,7 @@ function w(e) {
         disabled: O,
         onClick: async () => {
           try {
-            v(!0), D(null), await Z(a, w, M, c), b()
+            v(!0), D(null), await Z(a, w, M, c), N()
           } catch (t) {
             let e = t instanceof u.HF ? t : new u.HF(t, t.code);
             D(P.NW.string(e.code === m.SM.BILLING_PAUSE_INVALID_UPDATE ? P.t.dq4vq6 : P.t["5mlOCQ"])), v(!1)

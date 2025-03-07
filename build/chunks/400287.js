@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => N
+  Z: () => x
 });
 var r = n(200651);
 n(192379);
@@ -17,21 +17,21 @@ var i = n(120356),
   g = n(695346),
   h = n(726985),
   f = n(981631),
-  x = n(388032),
-  b = n(802138);
+  b = n(388032),
+  N = n(802138);
 
-function N() {
+function x() {
   let e = (0, c.pR)(),
     t = (0, c.Ju)(),
     n = g.fq.useSetting(),
     i = g.eR.useSetting(),
-    N = (0, u.V2)({
+    x = (0, u.V2)({
       location: "UserSettingsTextImages"
     }),
     _ = g.R$.useSetting(),
     E = g.cC.useSetting(),
-    C = g.vF.useSetting(),
-    j = g.H1.useSetting(),
+    j = g.vF.useSetting(),
+    C = g.H1.useSetting(),
     O = g.ev.useSetting(),
     v = g.x4.useSetting(),
     S = g.RS.useSetting(),
@@ -42,91 +42,91 @@ function N() {
     } = (0, o.ZP)(l.Z.TEXT_AND_IMAGES);
   return (0, r.jsxs)(a.hjN, {
     tag: a.RB0.H1,
-    title: x.NW.string(x.t["/VQax8"]),
+    title: b.NW.string(b.t["/VQax8"]),
     children: [(0, r.jsxs)(m.F, {
       setting: h.s6.CHAT_INLINE_MEDIA,
       children: [(0, r.jsx)(a.vwX, {
-        className: b.marginBottom8,
-        children: x.NW.string(x.t.U68Dgo)
+        className: N.marginBottom8,
+        children: b.NW.string(b.t.U68Dgo)
       }), (0, r.jsx)(m.F, {
         setting: h.s6.CHAT_INLINE_MEDIA_LINKS,
         children: (0, r.jsx)(a.j7V, {
-          className: s()(b.marginTop8, b.marginBottom20),
+          className: s()(N.marginTop8, N.marginBottom20),
           value: S,
           onChange: g.RS.updateSetting,
-          children: x.NW.string(x.t.U47N1t)
+          children: b.NW.string(b.t.U47N1t)
         })
       }), (0, r.jsx)(m.F, {
         setting: h.s6.CHAT_INLINE_MEDIA_UPLOADS,
         children: (0, r.jsx)(a.j7V, {
-          className: s()(b.marginTop8, b.marginBottom20),
+          className: s()(N.marginTop8, N.marginBottom20),
           value: v,
-          note: x.NW.formatToPlainString(x.t.qjjvqK, {
+          note: b.NW.formatToPlainString(b.t.qjjvqK, {
             maxSize: 10
           }),
           onChange: g.x4.updateSetting,
-          children: x.NW.string(x.t.VP11Nj)
+          children: b.NW.string(b.t.VP11Nj)
         })
       }), (0, r.jsx)(m.F, {
         setting: h.s6.CHAT_INLINE_MEDIA_IMAGE_DESCRIPTIONS,
         children: (0, r.jsx)(a.j7V, {
-          className: s()(b.marginTop8, b.marginBottom40),
-          value: j,
-          note: x.NW.string(x.t.T0rbtL),
+          className: s()(N.marginTop8, N.marginBottom40),
+          value: C,
+          note: b.NW.string(b.t.T0rbtL),
           onChange: g.H1.updateSetting,
-          children: x.NW.string(x.t["w8j+yc"])
+          children: b.NW.string(b.t["w8j+yc"])
         })
       })]
     }), (0, r.jsxs)(m.F, {
       setting: h.s6.CHAT_EMBEDS,
       children: [(0, r.jsx)(a.vwX, {
-        className: b.marginBottom8,
-        children: x.NW.string(x.t.PWZOn5)
+        className: N.marginBottom8,
+        children: b.NW.string(b.t.PWZOn5)
       }), (0, r.jsx)(m.F, {
         setting: h.s6.CHAT_EMBEDS_LINK_PREVIEWS,
         children: (0, r.jsx)(a.j7V, {
-          className: s()(b.marginTop8, b.marginBottom40),
+          className: s()(N.marginTop8, N.marginBottom40),
           value: T,
           onChange: g.NA.updateSetting,
-          children: x.NW.string(x.t.xX0ZTE)
+          children: b.NW.string(b.t.xX0ZTE)
         })
       })]
     }), (0, r.jsxs)(m.F, {
       setting: h.s6.CHAT_EMOJI,
       children: [(0, r.jsx)(a.vwX, {
-        className: b.marginBottom8,
-        children: x.NW.string(x.t.sMOuub)
+        className: N.marginBottom8,
+        children: b.NW.string(b.t.sMOuub)
       }), (0, r.jsx)(m.F, {
         setting: h.s6.CHAT_EMOJI_REACTIONS,
         children: (0, r.jsx)(a.j7V, {
-          className: s()(b.marginTop8, b.marginBottom20),
+          className: s()(N.marginTop8, N.marginBottom20),
           value: I,
           onChange: g.nc.updateSetting,
-          children: x.NW.string(x.t.Iv24sr)
+          children: b.NW.string(b.t.Iv24sr)
         })
       }), (0, r.jsx)(m.F, {
         setting: h.s6.CHAT_EMOJI_EMOTICONS,
         children: (0, r.jsx)(a.j7V, {
-          className: b.marginBottom40,
+          className: N.marginBottom40,
           value: O,
-          note: d.Z.parse(x.NW.string(x.t["20dvub"])),
+          note: d.Z.parse(b.NW.string(b.t["20dvub"])),
           onChange: g.ev.updateSetting,
-          children: x.NW.string(x.t["79qal5"])
+          children: b.NW.string(b.t["79qal5"])
         })
       })]
     }), (0, r.jsx)(m.F, {
       setting: h.s6.CHAT_STICKERS,
       children: (0, r.jsxs)(a.hjN, {
-        className: b.marginBottom8,
+        className: N.marginBottom8,
         children: [(0, r.jsx)(a.vwX, {
-          className: b.marginBottom8,
-          children: x.NW.string(x.t["6NtAuL"])
+          className: N.marginBottom8,
+          children: b.NW.string(b.t["6NtAuL"])
         }), t ? null : (0, r.jsx)(m.F, {
           setting: h.s6.CHAT_STICKERS_SUGGESTIONS,
           children: (0, r.jsx)(a.j7V, {
-            className: s()(b.marginTop8, b.marginBottom20),
+            className: s()(N.marginTop8, N.marginBottom20),
             value: e,
-            note: x.NW.string(x.t.r3uQUV),
+            note: b.NW.string(b.t.r3uQUV),
             onChange: t => {
               p.default.track(f.rMx.STICKER_SUGGESTIONS_ENABLED_TOGGLED, {
                 enabled: !e,
@@ -136,14 +136,14 @@ function N() {
                 location_stack: y
               }), (0, c.AW)(!e)
             },
-            children: x.NW.string(x.t["479+PT"])
+            children: b.NW.string(b.t["479+PT"])
           })
         }), (0, r.jsx)(m.F, {
           setting: h.s6.CHAT_STICKERS_AUTOCOMPLETE,
           children: (0, r.jsx)(a.j7V, {
-            className: b.marginBottom40,
+            className: N.marginBottom40,
             value: n,
-            note: x.NW.string(x.t["/eVrj4"]),
+            note: b.NW.string(b.t["/eVrj4"]),
             onChange: e => {
               p.default.track(f.rMx.STICKERS_IN_AUTOCOMPLETE_TOGGLED, {
                 enabled: e,
@@ -153,23 +153,23 @@ function N() {
                 location_stack: y
               }), g.fq.updateSetting(e)
             },
-            children: x.NW.string(x.t["29xPVV"])
+            children: b.NW.string(b.t["29xPVV"])
           })
         })]
       })
-    }), N && (0, r.jsx)(m.F, {
+    }), x && (0, r.jsx)(m.F, {
       setting: h.s6.CHAT_SOUNDMOJI,
       children: (0, r.jsxs)(a.hjN, {
-        className: b.marginBottom8,
+        className: N.marginBottom8,
         children: [(0, r.jsx)(a.vwX, {
-          className: b.marginBottom8,
-          children: x.NW.string(x.t.EHlAMT)
+          className: N.marginBottom8,
+          children: b.NW.string(b.t.EHlAMT)
         }), (0, r.jsx)(m.F, {
           setting: h.s6.CHAT_SOUNDMOJI_AUTOCOMPLETE,
           children: (0, r.jsx)(a.j7V, {
-            className: b.marginBottom40,
+            className: N.marginBottom40,
             value: i,
-            note: x.NW.string(x.t.hrSIhI),
+            note: b.NW.string(b.t.hrSIhI),
             onChange: e => {
               p.default.track(f.rMx.SOUNDMOJI_IN_AUTOCOMPLETE_TOGGLED, {
                 checked: e,
@@ -178,21 +178,21 @@ function N() {
                 }
               }), g.eR.updateSetting(e)
             },
-            children: x.NW.string(x.t["CtYr+f"])
+            children: b.NW.string(b.t["CtYr+f"])
           })
         })]
       })
     }), (0, r.jsx)(m.F, {
       setting: h.s6.CHAT_TEXT_BOX,
       children: (0, r.jsxs)(a.hjN, {
-        className: b.marginBottom8,
+        className: N.marginBottom8,
         children: [(0, r.jsx)(a.vwX, {
-          className: b.marginBottom8,
-          children: x.NW.string(x.t.afR0pK)
+          className: N.marginBottom8,
+          children: b.NW.string(b.t.afR0pK)
         }), (0, r.jsx)(m.F, {
           setting: h.s6.CHAT_TEXT_BOX_PREVIEW,
           children: (0, r.jsx)(a.j7V, {
-            className: s()(b.marginTop8, b.marginBottom40),
+            className: s()(N.marginTop8, N.marginBottom40),
             value: _,
             onChange: e => {
               p.default.track(f.rMx.PREVIEW_MARKDOWN_TOGGLED, {
@@ -202,44 +202,44 @@ function N() {
                 }
               }), g.R$.updateSetting(e)
             },
-            children: x.NW.string(x.t.AqGrEB)
+            children: b.NW.string(b.t.AqGrEB)
           })
         })]
       })
     }), (0, r.jsx)(m.F, {
       setting: h.s6.CHAT_THREADS,
       children: (0, r.jsxs)(a.hjN, {
-        className: b.marginBottom40,
+        className: N.marginBottom40,
         children: [(0, r.jsx)(a.vwX, {
-          className: b.marginBottom8,
-          children: x.NW.string(x.t.B2panJ)
+          className: N.marginBottom8,
+          children: b.NW.string(b.t.B2panJ)
         }), (0, r.jsx)(m.F, {
           setting: h.s6.CHAT_THREADS_SPLIT_VIEW,
           children: (0, r.jsx)(a.j7V, {
-            className: b.marginTop8,
-            value: C,
+            className: N.marginTop8,
+            value: j,
             onChange: g.vF.updateSetting,
-            children: x.NW.string(x.t.AInv5u)
+            children: b.NW.string(b.t.AInv5u)
           })
         })]
       })
     }), (0, r.jsx)(m.F, {
       setting: h.s6.CHAT_SPOILERS,
       children: (0, r.jsxs)(a.xJW, {
-        title: x.NW.string(x.t.QgwmV1),
+        title: b.NW.string(b.t.QgwmV1),
         children: [(0, r.jsx)(a.R94, {
           type: a.R94.Types.DESCRIPTION,
-          className: b.marginBottom8,
-          children: x.NW.string(x.t.TYnRkZ)
+          className: N.marginBottom8,
+          children: b.NW.string(b.t.TYnRkZ)
         }), (0, r.jsx)(a.FXm, {
           options: [{
-            name: x.NW.string(x.t["KFH/mZ"]),
+            name: b.NW.string(b.t["KFH/mZ"]),
             value: f.A2N.ON_CLICK
           }, {
-            name: x.NW.string(x.t.K5VTBA),
+            name: b.NW.string(b.t.K5VTBA),
             value: f.A2N.IF_MODERATOR
           }, {
-            name: x.NW.string(x.t.Pe1RbG),
+            name: b.NW.string(b.t.Pe1RbG),
             value: f.A2N.ALWAYS
           }],
           onChange: e => g.cC.updateSetting(e.value),

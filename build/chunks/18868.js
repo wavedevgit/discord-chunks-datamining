@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  L: () => x
+  L: () => f
 }), n(47120);
 var r = n(200651),
   a = n(192379),
@@ -40,17 +40,17 @@ let h = new c.Z("ShopAssetsPreviewUploadArea"),
       modalKey: d.A
     })
   },
-  f = () => {
+  x = () => {
     p({
       title: "Invalid file type!",
       help: "Please drop only image files or a directory containing image files."
     })
   },
-  x = e => {
+  f = e => {
     let {
       className: t,
       onDrop: n
-    } = e, [i, c] = a.useState(!1), p = a.useRef(null), x = a.useCallback(e => {
+    } = e, [i, c] = a.useState(!1), p = a.useRef(null), f = a.useCallback(e => {
       for (let t of e) try {
         if (null == t || !t.isFile && !t.isDirectory) return h.warn("Dropped item is not a file or directory"), !1
       } catch (e) {
@@ -67,19 +67,19 @@ let h = new c.Z("ShopAssetsPreviewUploadArea"),
       e.preventDefault(), e.stopPropagation(), c(!1);
       let t = e.dataTransfer;
       if (null == t) {
-        f();
+        x();
         return
       }
       let r = await Promise.all(Array.from(t.items).map(e => {
         var t;
         return null !== (t = e.webkitGetAsEntry()) && void 0 !== t ? t : e.getAsEntry()
       })).then(e => e.filter(e => null != e));
-      if (0 === r.length || !x(r)) {
-        f();
+      if (0 === r.length || !f(r)) {
+        x();
         return
       }
       h.info("[DEBUG] file system entries: ".concat(r.length)), n(r)
-    }, [n, x]);
+    }, [n, f]);
     return a.useEffect(() => {
       var e;
       let t = null === (e = p.current) || void 0 === e ? void 0 : e.ownerDocument.body;

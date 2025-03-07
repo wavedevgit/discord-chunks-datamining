@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => en
 }), n(653041), n(47120);
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(87051),
   h = n(419363),
   f = n(818083),
-  x = n(688465),
-  b = n(487419),
-  N = n(197344),
+  b = n(688465),
+  N = n(487419),
+  x = n(197344),
   _ = n(476756),
   E = n(734934),
-  C = n(223683),
-  j = n(312400),
+  j = n(223683),
+  C = n(312400),
   O = n(115345),
   v = n(392888),
   S = n(106371),
@@ -197,7 +197,7 @@ function K(e) {
       label: U.NW.string(U.t.CP3DCw),
       sound: "reconnect"
     }],
-    g = null != N.Z.useHolidaySoundpack();
+    g = null != x.Z.useHolidaySoundpack();
   return (0, r.jsx)(I.F, {
     setting: L.s6.NOTIFICATIONS_SOUNDS,
     children: (0, r.jsxs)(u.hjN, {
@@ -239,7 +239,7 @@ function K(e) {
 }
 
 function q() {
-  let e = (0, c.e7)([b.Z], () => b.Z.getGuildAlertSettings()),
+  let e = (0, c.e7)([N.Z], () => N.Z.getGuildAlertSettings()),
     [t, n] = i.useState(null),
     s = Z.default.keys(e).map(t => {
       let n = e[t];
@@ -253,7 +253,7 @@ function q() {
     children: [(0, r.jsxs)(u.X6q, {
       variant: "heading-lg/semibold",
       className: a()(V.titleWithBeta, G.marginBottom20),
-      children: [U.NW.string(U.t.D9yVAA), (0, r.jsx)(x.Z, {})]
+      children: [U.NW.string(U.t.D9yVAA), (0, r.jsx)(b.Z, {})]
     }), (0, r.jsx)(u.R94, {
       type: u.geA.DESCRIPTION,
       className: G.marginBottom20,
@@ -471,14 +471,14 @@ function Q() {
 }
 
 function $() {
-  let e = j.xT.useExperiment({
+  let e = C.xT.useExperiment({
       location: "UserSettingsNotifications"
     }, {
       autoTrackExposure: !1
     }).enabled,
     {
       manuallyOpen: t
-    } = j.fs.useExperiment({
+    } = C.fs.useExperiment({
       location: "UserSettingsNotifications"
     }, {
       autoTrackExposure: !1
@@ -520,7 +520,7 @@ function $() {
           children: [(0, r.jsx)(I.F, {
             setting: L.s6.NOTIFICATIONS_RESTORE_MOST_RECENT_SNAPSHOT,
             children: (0, r.jsx)(u.zxk, {
-              onClick: C.KP,
+              onClick: j.KP,
               children: "Restore most recent snapshot"
             })
           }), (0, r.jsx)(I.F, {
@@ -551,7 +551,7 @@ function $() {
 }
 async function ee(e) {
   e(!0);
-  let t = await (0, C.Tn)();
+  let t = await (0, j.Tn)();
   0 === t.length ? await (0, O.oL)() : m.Z.show({
     title: U.NW.string(U.t["cY+Ooa"]),
     body: U.NW.format(U.t["7zTJJS"], {

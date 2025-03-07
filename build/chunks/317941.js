@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => P
 }), n(47120), n(411104);
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(925329),
   h = n(981632),
   f = n(314897),
-  x = n(82142),
-  b = n(246946),
-  N = n(509545),
+  b = n(82142),
+  N = n(246946),
+  x = n(509545),
   _ = n(55563),
   E = n(259580),
-  C = n(572004),
-  j = n(669079),
+  j = n(572004),
+  C = n(669079),
   O = n(296848),
   v = n(474936),
   S = n(388032),
@@ -65,10 +65,10 @@ class y extends i.PureComponent {
       className: T.giftCodeRow,
       children: [(0, r.jsx)(c.kO8, {
         className: T.codeText,
-        value: (0, j.Nz)(t.code),
+        value: (0, C.Nz)(t.code),
         text: this.copyButtonText,
         mode: n,
-        supportsCopy: C.wS,
+        supportsCopy: j.wS,
         hideMessage: e ? S.NW.string(S.t["0RLn4+"]) : null,
         onCopy: this.handleCopy,
         buttonColor: c.Ttl.BRAND,
@@ -95,9 +95,9 @@ class y extends i.PureComponent {
         giftCode: t,
         sku: n
       } = this.props;
-      (0, j.dM)(t, n);
+      (0, C.dM)(t, n);
       try {
-        (0, C.JG)(e), this.setState({
+        (0, j.JG)(e), this.setState({
           copyMode: c.uA3.SUCCESS
         })
       } catch (e) {
@@ -249,19 +249,19 @@ class A extends i.PureComponent {
     })
   }
 }
-let P = l.ZP.connectStores([_.Z, b.Z, x.Z, m.Z, N.Z, f.default], e => {
+let P = l.ZP.connectStores([_.Z, N.Z, b.Z, m.Z, x.Z, f.default], e => {
   let {
     skuId: t,
     subscriptionPlanId: n,
     giftStyle: r
   } = e, i = _.Z.get(t);
   if (null == i) throw Error("SKU was unavailable while rendering gift.");
-  let s = x.Z.getForGifterSKUAndPlan(f.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === r);
+  let s = b.Z.getForGifterSKUAndPlan(f.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === r);
   return {
     sku: i,
-    hideCodes: b.Z.enabled,
-    isFetching: x.Z.getUserGiftCodesFetchingForSKUAndPlan(t, n),
-    loadedAt: x.Z.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
+    hideCodes: N.Z.enabled,
+    isFetching: b.Z.getUserGiftCodesFetchingForSKUAndPlan(t, n),
+    loadedAt: b.Z.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
     application: m.Z.getApplication(i.applicationId),
     subscriptionPlan: null != n ? (0, O.oE)(n) : null,
     giftCodes: s

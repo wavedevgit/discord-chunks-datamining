@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  ZP: () => x,
+  ZP: () => b,
   u0: () => l
 });
 var r, i = n(200651);
@@ -137,7 +137,7 @@ let o = "premium_tier_2_gradient",
       }), g]
     })
   },
-  x = e => {
+  b = e => {
     let {
       className: t,
       variant: n

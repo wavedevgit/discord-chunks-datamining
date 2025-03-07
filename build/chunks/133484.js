@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => b
+  Z: () => N
 });
 var r = n(200651),
   i = n(192379),
@@ -16,14 +16,14 @@ var r = n(200651),
   g = n(388032),
   h = n(601789),
   f = n(699623),
-  x = n(820350);
+  b = n(820350);
 
-function b(e) {
+function N(e) {
   let {
     user: t,
     showOverlay: n,
-    children: b
-  } = e, N = (0, a.ZP)(), {
+    children: N
+  } = e, x = (0, a.ZP)(), {
     analyticsLocations: _
   } = (0, o.ZP)(l.Z.PREMIUM_UPSELL_OVERLAY);
   return (i.useEffect(() => {
@@ -34,7 +34,7 @@ function b(e) {
   }, [n, _]), n) ? (0, r.jsxs)("div", {
     className: h.upsellOverlayContainer,
     children: [(0, r.jsx)("div", {
-      children: b
+      children: N
     }), (0, r.jsxs)("div", {
       className: h.upsellOverlay,
       children: [(0, r.jsx)("img", {
@@ -45,9 +45,9 @@ function b(e) {
             case m.BRd.DARK:
               return f;
             case m.BRd.LIGHT:
-              return x
+              return b
           }
-        }(N)
+        }(x)
       }), (0, r.jsxs)("div", {
         className: h.upsellTextContainer,
         children: [(0, r.jsx)(s.Text, {
@@ -66,5 +66,5 @@ function b(e) {
         subscriptionTier: p.Si.TIER_2
       })]
     })]
-  }) : b
+  }) : N
 }

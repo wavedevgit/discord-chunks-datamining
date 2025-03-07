@@ -1,12 +1,13 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 13981 **/
+"use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => s
 }), n(47120);
 var r = n(192379),
-  i = n(817080),
-  s = n(579806),
+  o = n(817080),
+  i = n(579806),
   a = n(358085);
-class l extends r.Component {
+class s extends r.Component {
   getFileContents() {
     let {
       fileContents: e
@@ -14,13 +15,13 @@ class l extends r.Component {
     return "function" == typeof e && (e = e()), e
   }
   downloadNative(e, t) {
-    s.Z.fileManager.saveWithDialog(e, t)
+    i.Z.fileManager.saveWithDialog(e, t)
   }
   downloadHtml5(e, t) {
     let n = new Blob([e], {
       type: this.props.contentType
     });
-    (0, i.saveAs)(n, t)
+    (0, o.saveAs)(n, t)
   }
   render() {
     let {

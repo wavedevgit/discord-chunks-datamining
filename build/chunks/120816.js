@@ -11,8 +11,8 @@ var r, a, i, l = n(772848),
 let m = 0,
   h = [],
   p = 0,
-  f = [],
-  x = !1;
+  x = [],
+  f = !1;
 class b extends(r = s.ZP.Store) {
   initialize() {
     this.waitFor(u.Z)
@@ -24,10 +24,10 @@ class b extends(r = s.ZP.Store) {
     return p
   }
   get loggedTriggers() {
-    return f
+    return x
   }
   get trackTriggers() {
-    return x
+    return f
   }
 }
 i = "AnalyticsLogStore", (a = "displayName") in b ? Object.defineProperty(b, a, {
@@ -60,7 +60,7 @@ let _ = new b(c.Z, {
       location: i,
       previouslyTracked: o
     } = e;
-    u.Z.isDeveloper && x && (f = [...f, {
+    u.Z.isDeveloper && f && (x = [...x, {
       key: (0, l.Z)(),
       experimentId: t,
       descriptor: n,
@@ -69,15 +69,15 @@ let _ = new b(c.Z, {
       location: i,
       previouslyTracked: o,
       timestamp: new Date
-    }]).length > 500 && f.shift()
+    }]).length > 500 && x.shift()
   },
   SET_TRACK_TRIGGERS: function(e) {
     let {
       enabled: t
     } = e;
-    x = t
+    f = t
   },
   ANALYTICS_LOG_CLEAR: function() {
-    h = [], p++, f = []
+    h = [], p++, x = []
   }
 })

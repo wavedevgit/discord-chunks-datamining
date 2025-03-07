@@ -1,72 +1,72 @@
-/** Chunk was on 51724 **/
-n.d(t, {
-  Mm: () => g,
-  jj: () => m,
-  wH: () => u
+/** Chunk was on 20565 **/
+r.d(t, {
+  Mm: () => b,
+  jj: () => f,
+  wH: () => d
 });
-var r = n(200651),
-  i = n(192379),
-  s = n(442837),
-  a = n(481060),
-  l = n(751648),
-  o = n(479766);
+var n = r(200651),
+  a = r(192379),
+  o = r(442837),
+  c = r(481060),
+  l = r(751648),
+  i = r(479766);
 
-function c(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    var r = null != arguments[t] ? arguments[t] : {},
+      n = Object.keys(r);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(r, e).enumerable
+    }))), n.forEach(function(t) {
+      var n;
+      n = r[t], t in e ? Object.defineProperty(e, t, {
+        value: n,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = r
+      }) : e[t] = n
     })
   }
   return e
 }
-let d = "balance-widget-menu-coachmark-modal",
-  u = () => (0, a.nfh)(d),
-  m = () => (0, a.Mr3)(d),
-  p = {
-    modalKey: d,
+let u = "balance-widget-menu-coachmark-modal",
+  d = () => (0, c.nfh)(u),
+  f = () => (0, c.Mr3)(u),
+  m = {
+    modalKey: u,
     onCloseCallback: l.j2,
     onCloseRequest: async () => {
       await (0, l.j2)()
     }
   };
 
-function g(e) {
-  let t = (0, s.cj)([o.Z], () => o.Z.earnedOrbsCoachmark),
+function b(e) {
+  let t = (0, o.cj)([i.Z], () => i.Z.earnedOrbsCoachmark),
     {
       shouldOpen: l,
-      earnedOrbsQuantity: d
+      earnedOrbsQuantity: u
     } = t;
-  return (0, i.useEffect)(() => {
-    let t = u();
+  return (0, a.useEffect)(() => {
+    let t = d();
     if (l && !t) {
-      var i, s, o;
-      !(o = (i = c({}, e), s = s = {
-        earnedOrbsQuantity: d
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
-        var n = Object.keys(e);
+      var a, o, i;
+      !(i = (a = s({}, e), o = o = {
+        earnedOrbsQuantity: u
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+        var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
+          var n = Object.getOwnPropertySymbols(e);
+          r.push.apply(r, n)
         }
-        return n
-      })(Object(s)).forEach(function(e) {
-        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
-      }), i)).isCoachmarkEnabled || (0, a.ZDy)(async () => {
+        return r
+      })(Object(o)).forEach(function(e) {
+        Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(o, e))
+      }), a)).isCoachmarkEnabled || (0, c.ZDy)(async () => {
         let {
           BalanceWidgetEarnedOrbsCoachmarkModal: e
-        } = await n.e("82081").then(n.bind(n, 720463));
-        return t => (0, r.jsx)(e, c({}, o, t))
-      }, p)
-    } else !l && t && m()
-  }, [l, d, e]), c({}, t)
+        } = await r.e("82081").then(r.bind(r, 720463));
+        return t => (0, n.jsx)(e, s({}, i, t))
+      }, m)
+    } else !l && t && f()
+  }, [l, u, e]), s({}, t)
 }

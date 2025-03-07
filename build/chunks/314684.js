@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   $_: () => Z,
   Er: () => A,
@@ -23,13 +23,13 @@ var r = n(192379),
   g = n(706140),
   h = n(243778),
   f = n(594174),
-  x = n(580130),
-  b = n(626135),
-  N = n(823379),
+  b = n(580130),
+  N = n(626135),
+  x = n(823379),
   _ = n(111361),
   E = n(595878),
-  C = n(944880),
-  j = n(513785),
+  j = n(944880),
+  C = n(513785),
   O = n(106255),
   v = n(474936),
   S = n(735825),
@@ -70,14 +70,14 @@ function y(e, t) {
 function A() {
   var e;
   let t = function() {
-      let e = (0, a.cj)([j.Z], () => j.Z.getState());
+      let e = (0, a.cj)([C.Z], () => C.Z.getState());
       if (null != e) return e.userTenureRewardStatusByRewardId[S.Ft.FREE_AVATAR_DECO_1_MONTH]
     }(),
     n = function(e) {
-      let t = (0, a.e7)([x.Z], () => {
+      let t = (0, a.e7)([b.Z], () => {
           var e;
-          return null !== (e = x.Z.getForApplication(v.CL)) && void 0 !== e ? e : R
-        }, [], N.OL),
+          return null !== (e = b.Z.getForApplication(v.CL)) && void 0 !== e ? e : R
+        }, [], x.OL),
         n = (0, a.e7)([f.default], () => {
           let e = f.default.getCurrentUser();
           return null != e && (0, _.M5)(e, v.p9.TIER_2)
@@ -87,10 +87,10 @@ function A() {
     i = (0, a.e7)([f.default], () => f.default.getCurrentUser()),
     l = null != n,
     o = function() {
-      let e = (0, a.e7)([x.Z], () => {
+      let e = (0, a.e7)([b.Z], () => {
         var e;
-        return null !== (e = x.Z.getForApplication(T.XAJ)) && void 0 !== e ? e : R
-      }, [], N.OL);
+        return null !== (e = b.Z.getForApplication(T.XAJ)) && void 0 !== e ? e : R
+      }, [], x.OL);
       return (0, O.Cl)(S.qY, e)
     }(),
     c = l && null != o && (0, O.C3)(o.skuId, i),
@@ -188,7 +188,7 @@ let R = new Set,
       [n] = (0, g.cv)(t),
       i = r.useRef(!1);
     return r.useCallback(() => {
-      null != e && !0 === e.showNotification && (n === l.z.TENURE_REWARD_REDEEMABLE || n === l.z.TENURE_REWARD_PENDING) && ((0, p.EW)(n), n === l.z.TENURE_REWARD_PENDING && !1 === i.current && (b.default.track(T.rMx.USER_NITRO_TENURE_REWARD_ACKNOWLEDGED, {
+      null != e && !0 === e.showNotification && (n === l.z.TENURE_REWARD_REDEEMABLE || n === l.z.TENURE_REWARD_PENDING) && ((0, p.EW)(n), n === l.z.TENURE_REWARD_PENDING && !1 === i.current && (N.default.track(T.rMx.USER_NITRO_TENURE_REWARD_ACKNOWLEDGED, {
         user_tenure_reward_id: null == e ? void 0 : e.tenureRewardStatusId,
         tenure_reward_id: e.tenureRewardSkuId,
         reward_type: null == e ? void 0 : e.tenureRewardType,
@@ -200,7 +200,7 @@ let R = new Set,
 function W() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : v.CL,
     t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-    n = (0, a.e7)([x.Z], () => x.Z.isFetchingForApplication(e)),
+    n = (0, a.e7)([b.Z], () => b.Z.isFetchingForApplication(e)),
     i = (0, a.e7)([f.default], () => {
       let e = f.default.getCurrentUser();
       return null != e && (0, _.M5)(e, v.p9.TIER_2)
@@ -220,7 +220,7 @@ function L() {
   let n = A(),
     i = null !== (e = null == n ? void 0 : n.showCard) && void 0 !== e && e;
   r.useEffect(() => {
-    i && C.Z.forceRefreshIfOutdated()
+    i && j.Z.forceRefreshIfOutdated()
   }, [i])
 }
 

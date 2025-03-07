@@ -9,25 +9,25 @@ var r = n(200651),
   s = n.n(a),
   o = n(180650),
   i = n(87290),
-  c = n(960048),
-  d = n(381585),
+  d = n(960048),
+  c = n(381585),
   u = n(597688),
   m = n(506800),
   g = n(788822),
-  f = n(215023),
-  h = n(388032),
+  h = n(215023),
+  f = n(388032),
   p = n(39532);
 let b = e => {
     let {
       handleTransition: t,
       featuredBlockRecord: n
-    } = e, a = u.Z.getCategory(o.T.ROBERT), c = (0, m.c)("CollectiblesFeedShop") && null != a, d = u.Z.getCategory(o.T.ANIME_V2), b = l.useMemo(() => h.NW.string(new Date > f.gJ ? h.t.l0CjbW : h.t.uPewb2), []);
+    } = e, a = u.Z.getCategory(o.T.ROBERT), d = (0, m.c)("CollectiblesFeedShop") && null != a, c = u.Z.getCategory(o.T.ANIME_V2), b = l.useMemo(() => f.NW.string(new Date > h.gJ ? f.t.l0CjbW : f.t.uPewb2), []);
     return (0, r.jsx)("div", {
       className: s()(p.section, p.col2, p.featuredBlocksContainer),
       children: null == n ? void 0 : n.subblocks.map((e, n) => {
         if (e.type === i.O.CATEGORY) {
-          let l = null != e.unpublishedAt ? h.NW.string(h.t["h/uBCQ"]) : "1341506445245415424" === e.categoryStoreListingId ? h.NW.string(h.t.PsL3bW) : e.categoryStoreListingId === (null == d ? void 0 : d.storeListingId) ? h.NW.string(h.t["o/oRJC"]) : void 0,
-            s = c && e.categoryStoreListingId === (null == a ? void 0 : a.storeListingId) ? b : l;
+          let l = null != e.unpublishedAt ? f.NW.string(f.t["h/uBCQ"]) : "1341506445245415424" === e.categoryStoreListingId ? f.NW.string(f.t.PsL3bW) : e.categoryStoreListingId === (null == c ? void 0 : c.storeListingId) ? f.NW.string(f.t["o/oRJC"]) : void 0,
+            s = d && e.categoryStoreListingId === (null == a ? void 0 : a.storeListingId) ? b : l;
           return (0, r.jsx)(g.q, {
             subblock: e,
             badgeText: 0 === n ? l : s,
@@ -43,11 +43,11 @@ let b = e => {
       handleTransition: t,
       categories: n
     } = e, l = (0, m.c)("CollectiblesFeedShop") && null != u.Z.getCategory(o.T.ROBERT);
-    if (null == n || n.length < 2) return c.Z.captureMessage("Collectible Featured Block requires at least 2 categories"), null;
-    let [a, i] = n, b = (null == a ? void 0 : a.unpublishedAt) != null ? h.NW.string(h.t["h/uBCQ"]) : void 0, C = h.NW.string(new Date > f.gJ ? h.t.l0CjbW : h.t.uPewb2), _ = l ? C : h.NW.string(h.t["o/oRJC"]);
+    if (null == n || n.length < 2) return d.Z.captureMessage("Collectible Featured Block requires at least 2 categories"), null;
+    let [a, i] = n, b = (null == a ? void 0 : a.unpublishedAt) != null ? f.NW.string(f.t["h/uBCQ"]) : void 0, C = f.NW.string(new Date > h.gJ ? f.t.l0CjbW : f.t.uPewb2), _ = l ? C : f.NW.string(f.t["o/oRJC"]);
     return (0, r.jsx)("div", {
       className: s()(p.section, p.col2, p.featuredBlocksContainer),
-      children: (0, r.jsxs)(d.k0, {
+      children: (0, r.jsxs)(c.k0, {
         newValue: {
           categoryPosition: 1,
           pageSection: "featured_block"

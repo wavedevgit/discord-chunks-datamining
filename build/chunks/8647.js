@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => E
 });
@@ -17,9 +17,9 @@ var i = n(120356),
   g = n(346497),
   h = n(409100),
   f = n(725727),
-  x = n(474936),
-  b = n(981631),
-  N = n(388032),
+  b = n(474936),
+  N = n(981631),
+  x = n(388032),
   _ = n(660476);
 let E = function(e) {
   let {
@@ -27,9 +27,9 @@ let E = function(e) {
     buttonClassName: i
   } = e, {
     promotion: E
-  } = (0, f.mq)(), C = (0, a.e7)([d.ZP], () => d.ZP.getPremiumTypeSubscription());
+  } = (0, f.mq)(), j = (0, a.e7)([d.ZP], () => d.ZP.getPremiumTypeSubscription());
   if (!(0, g.Vi)()) return null;
-  let j = new Date(E.endDate);
+  let C = new Date(E.endDate);
   return (0, r.jsx)(c.O, {
     newLocations: [o.Z.PREMIUM_MARKETING_PAGE_BANNER],
     children: (0, r.jsxs)("div", {
@@ -49,24 +49,24 @@ let E = function(e) {
           children: [(0, r.jsx)(l.X6q, {
             variant: "display-sm",
             color: "always-white",
-            children: null == C || null == (0, m.he)(C) ? N.NW.string(N.t.xbzNJC) : N.NW.string(N.t["22WZ9P"])
+            children: null == j || null == (0, m.he)(j) ? x.NW.string(x.t.xbzNJC) : x.NW.string(x.t["22WZ9P"])
           }), (0, r.jsx)(l.Text, {
             className: _.countdown,
             variant: "text-sm/bold",
             children: (0, r.jsx)(p.Z, {
-              endDate: j
+              endDate: C
             })
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/medium",
             color: "always-white",
-            children: N.NW.format(N.t["j/x4GB"], {
-              helpCenterLink: u.Z.getArticleURL(b.BhN.SUMMER_BOGO_2024)
+            children: x.NW.format(x.t["j/x4GB"], {
+              helpCenterLink: u.Z.getArticleURL(N.BhN.SUMMER_BOGO_2024)
             })
           })]
         }), (0, r.jsx)(h.Z, {
-          buttonText: N.NW.string(N.t.J61px8),
+          buttonText: x.NW.string(x.t.J61px8),
           buttonTextClassName: _.subscribeButtonText,
-          subscriptionTier: x.Si.TIER_2,
+          subscriptionTier: b.Si.TIER_2,
           showIcon: !1,
           className: null != i ? i : _.subscribeButton,
           forceInverted: !0

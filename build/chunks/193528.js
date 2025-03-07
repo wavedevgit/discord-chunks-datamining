@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => N
+  Z: () => x
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -17,7 +17,7 @@ var r = n(200651),
   h = n(388032),
   f = n(161064);
 
-function x(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function x(e) {
   return e
 }
 
-function b(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,28 +49,28 @@ function b(e, t) {
   }), e
 }
 
-function N(e) {
+function x(e) {
   let {
     onChange: t,
     onClose: n,
     color: s,
-    suggestedColors: N,
+    suggestedColors: x,
     disabled: _,
     label: E,
-    colorPickerMiddle: C,
-    colorPickerFooter: j,
+    colorPickerMiddle: j,
+    colorPickerFooter: C,
     showEyeDropper: O
-  } = e, v = i.useRef(null), S = (0, d.dQu)(c.Z.colors.BACKGROUND_PRIMARY).hex(), T = c.Z.colors.BACKGROUND_ACCENT.css, I = (0, p.DP)(s), y = (0, o.Rf)(s), A = y === S ? T : y, P = (0, m.Lq)(I ? g.Ilk.WHITE_500 : g.Ilk.PRIMARY_530), R = (0, u.Z)(C), D = (0, u.Z)(j), [Z, w] = i.useState((0, l.Z)());
+  } = e, v = i.useRef(null), S = (0, d.dQu)(c.Z.colors.BACKGROUND_PRIMARY).hex(), T = c.Z.colors.BACKGROUND_ACCENT.css, I = (0, p.DP)(s), y = (0, o.Rf)(s), A = y === S ? T : y, P = (0, m.Lq)(I ? g.Ilk.WHITE_500 : g.Ilk.PRIMARY_530), R = (0, u.Z)(j), D = (0, u.Z)(C), [Z, w] = i.useState((0, l.Z)());
   return i.useEffect(() => {
-    (R !== C || D !== j) && w((0, l.Z)())
-  }, [j, C, D, R]), (0, r.jsx)(d.yRy, {
+    (R !== j || D !== C) && w((0, l.Z)())
+  }, [C, j, D, R]), (0, r.jsx)(d.yRy, {
     positionKey: Z,
-    renderPopout: e => (0, r.jsx)(d.Z$W, b(x({}, e), {
+    renderPopout: e => (0, r.jsx)(d.Z$W, N(b({}, e), {
       value: s,
       onChange: t,
-      suggestedColors: N,
-      middle: C,
-      footer: j,
+      suggestedColors: x,
+      middle: j,
+      footer: C,
       showEyeDropper: O
     })),
     onRequestClose: n,
@@ -97,7 +97,7 @@ function N(e) {
         className: a()(f.colorSwatch, {
           [f.disabled]: _
         }),
-        children: [(0, r.jsx)(d.P3F, b(x({}, n), {
+        children: [(0, r.jsx)(d.P3F, N(b({}, n), {
           tabIndex: _ ? -1 : 0,
           onClick: _ ? g.dG4 : t,
           style: {

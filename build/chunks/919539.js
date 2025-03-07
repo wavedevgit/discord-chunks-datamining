@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => T
 }), n(47120);
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(976978),
   h = n(695346),
   f = n(639814),
-  x = n(838436),
-  b = n(51331),
-  N = n(922628),
+  b = n(838436),
+  N = n(51331),
+  x = n(922628),
   _ = n(703115),
   E = n(526761),
-  C = n(726985),
-  j = n(736530),
+  j = n(726985),
+  C = n(736530),
   O = n(981631),
   v = n(388032);
 
@@ -52,7 +52,7 @@ function S(e) {
       a.Z.showAgeVerificationGetStartedModal(l.cU.MESSAGE_REQUESTS_SETTINGS);
       return
     }
-    t ? P(e) : (n = !e, (0, N.V)({
+    t ? P(e) : (n = !e, (0, x.V)({
       header: v.NW.string(v.t.yAfu1t),
       body: v.NW.string(v.t["Ry2z7+"]),
       confirmText: v.NW.string(v.t.gm1Ven),
@@ -66,10 +66,10 @@ function S(e) {
       }
     }))
   }
-  return (0, r.jsx)(x.U, {
-    setting: C.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
+  return (0, r.jsx)(b.U, {
+    setting: j.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
     scrollPosition: E.FY.MESSAGE_REQUESTS_V2,
-    children: n === j.T ? (0, r.jsx)(b.Z, {
+    children: n === C.T ? (0, r.jsx)(N.Z, {
       title: v.NW.string(v.t["3o2ojo"]),
       value: !T && !y,
       onChange: e => D(e, !1),
@@ -77,7 +77,7 @@ function S(e) {
       note: v.NW.format(v.t.wkm9a2, {
         helpdeskArticle: d.Z.getArticleURL(O.BhN.MESSAGE_REQUESTS)
       })
-    }) : (0, r.jsx)(b.Z, {
+    }) : (0, r.jsx)(N.Z, {
       title: v.NW.string(v.t["3o2ojo"]),
       value: !A,
       onChange: e => D(e, !0),

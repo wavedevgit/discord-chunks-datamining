@@ -14,9 +14,9 @@ var r = n(200651),
   m = n(681619),
   h = n(621060),
   p = n(710662),
-  f = n(579581);
+  x = n(579581);
 
-function x(e, t) {
+function f(e, t) {
   return e.store.getName().localeCompare(t.store.getName())
 }
 
@@ -31,7 +31,7 @@ function b(e) {
       t.removeChangeListener(e)
     }
   }, [t, n]), (0, r.jsx)(s.zJl, {
-    className: f.inspectorContainer,
+    className: x.inspectorContainer,
     children: (0, r.jsx)(d.Z, {
       data: i
     })
@@ -39,7 +39,7 @@ function b(e) {
 }
 let _ = [{
     key: "name",
-    cellClassName: f.__invalid_eventColumn,
+    cellClassName: x.__invalid_eventColumn,
     render(e) {
       let {
         store: t
@@ -55,7 +55,7 @@ let _ = [{
         store: t
       } = e;
       return null == t.__getLocalVars ? (0, r.jsxs)("div", {
-        className: f.inspectorContainer,
+        className: x.inspectorContainer,
         children: ["Store is missing ", (0, r.jsx)("code", {
           children: "__getLocalVars"
         }), " method."]
@@ -89,11 +89,11 @@ function v(e) {
     tabs: g
   }, []);
   return (0, r.jsxs)(u.Z, {
-    className: f.subPanel,
+    className: x.subPanel,
     minHeight: 100,
     initialHeight: n,
     children: [(0, r.jsx)(a, {}), (0, r.jsxs)(c.ZP, {
-      className: l()(p.headerBar, f.subPanelHeaderBar),
+      className: l()(p.headerBar, x.subPanelHeaderBar),
       children: [(0, r.jsx)(c.ZP.Icon, {
         icon: s.lO_,
         tooltip: t.getName()
@@ -113,7 +113,7 @@ function j() {
     c = a.useMemo(() => i.map(e => ({
       key: e._dispatchToken,
       store: e
-    })).sort(x), [i]).filter(e => (function(e, t) {
+    })).sort(f), [i]).filter(e => (function(e, t) {
       let {
         store: n
       } = e;
@@ -123,11 +123,11 @@ function j() {
     h = i.find(e => e._dispatchToken === d);
   return (0, r.jsxs)("div", {
     ref: e,
-    className: l()(p.panel, f.panel),
+    className: l()(p.panel, x.panel),
     children: [(0, r.jsx)("div", {
-      className: f.toolbar,
+      className: x.toolbar,
       children: (0, r.jsx)(s.E1j, {
-        className: f.searchBar,
+        className: x.searchBar,
         size: s.E1j.Sizes.SMALL,
         query: t,
         onChange: n,

@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => p
 }), n(47120);
@@ -22,11 +22,11 @@ function p(e) {
     guildId: g,
     guildName: h,
     guildIcon: f,
-    guildIconSize: x,
-    memberCount: b
-  } = e, N = i.useRef(null), [_, E] = i.useState(!1);
+    guildIconSize: b,
+    memberCount: N
+  } = e, x = i.useRef(null), [_, E] = i.useState(!1);
   return i.useEffect(() => {
-    let e = N.current;
+    let e = x.current;
     null != e && null != e.offsetWidth && null != e.scrollWidth && E(e.offsetWidth < e.scrollWidth)
   }, []), (0, r.jsxs)("div", {
     className: a()(m.container, t),
@@ -36,7 +36,7 @@ function p(e) {
         guildId: g,
         guildName: h,
         guildIcon: f,
-        iconSize: x,
+        iconSize: b,
         className: m.guildPrefixIcon,
         animate: !1
       }), (0, r.jsxs)("div", {
@@ -65,7 +65,7 @@ function p(e) {
               }
               return e
             }({
-              ref: N
+              ref: x
             }, e), n = n = {
               className: m.guildName,
               children: h
@@ -80,8 +80,8 @@ function p(e) {
               Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
             }), t))
           }
-        }), null != b && (0, r.jsx)(c.Z, {
-          count: b
+        }), null != N && (0, r.jsx)(c.Z, {
+          count: N
         })]
       })]
     }), (0, r.jsx)("div", {

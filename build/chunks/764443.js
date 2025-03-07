@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  I: () => N
+  I: () => x
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -36,7 +36,7 @@ let f = [{
   label: () => g.NW.string(g.t["46dqJS"])
 }];
 
-function x(e) {
+function b(e) {
   let {
     status: t,
     currentStatus: n,
@@ -87,7 +87,7 @@ function x(e) {
   })
 }
 
-function b(e, t, n) {
+function N(e, t, n) {
   return (0, r.jsx)(s.sNh, {
     id: e,
     keepItemStyles: !0,
@@ -116,7 +116,7 @@ function b(e, t, n) {
   })
 }
 
-function N(e) {
+function x(e) {
   let {
     expiringStatus: t,
     defaultClickExpire: n
@@ -124,7 +124,7 @@ function N(e) {
     location: "AccountProfilePopout"
   }), d = c.Cr.useSetting(), u = (0, l.p)(), m = o.e.useExperiment({
     location: "AccountProfilePopout"
-  }).allowQuietMode || u, N = c.fv.useSetting(), _ = e === p.Skl.DND, E = t => {
+  }).allowQuietMode || u, x = c.fv.useSetting(), _ = e === p.Skl.DND, E = t => {
     let n = null != d && "0" !== d ? g.NW.formatToPlainString(g.t.BWD8fn, {
       endTime: new Date(Number(d)).toLocaleString(g.NW.currentLocale, {
         month: "numeric",
@@ -142,7 +142,7 @@ function N(e) {
       default:
         return
     }
-  }, C = (0, r.jsx)(r.Fragment, {
+  }, j = (0, r.jsx)(r.Fragment, {
     children: f.map(t => {
       let {
         duration: n,
@@ -159,22 +159,22 @@ function N(e) {
     })
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [b(p.Skl.ONLINE, e), (0, r.jsx)(s.Clw, {}, "menu-separator-statuses"), t ? x({
+    children: [N(p.Skl.ONLINE, e), (0, r.jsx)(s.Clw, {}, "menu-separator-statuses"), t ? b({
       status: p.Skl.IDLE,
       currentStatus: e,
       description: E(p.Skl.IDLE),
       defaultClickExpire: n
-    }) : b(p.Skl.IDLE, e, E(p.Skl.IDLE)), t ? x({
+    }) : N(p.Skl.IDLE, e, E(p.Skl.IDLE)), t ? b({
       status: p.Skl.DND,
       currentStatus: e,
       description: E(p.Skl.DND),
       defaultClickExpire: n
-    }) : b(p.Skl.DND, e, E(p.Skl.DND)), t ? x({
+    }) : N(p.Skl.DND, e, E(p.Skl.DND)), t ? b({
       status: p.Skl.INVISIBLE,
       currentStatus: e,
       description: E(p.Skl.INVISIBLE),
       defaultClickExpire: n
-    }) : b(p.Skl.INVISIBLE, e, E(p.Skl.INVISIBLE)), m || u ? (0, r.jsxs)(r.Fragment, {
+    }) : N(p.Skl.INVISIBLE, e, E(p.Skl.INVISIBLE)), m || u ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.Clw, {}, "menu-separator-statuses"), (0, r.jsx)(s.sNh, {
         id: "quiet-mode",
         "aria-label": "focus mode",
@@ -194,8 +194,8 @@ function N(e) {
             })]
           }), (0, r.jsx)("div", {
             className: h.description,
-            children: u && null != N && "0" !== N ? g.NW.formatToPlainString(g.t.BWD8fn, {
-              endTime: new Date(Number(N)).toLocaleString(g.NW.currentLocale, {
+            children: u && null != x && "0" !== x ? g.NW.formatToPlainString(g.t.BWD8fn, {
+              endTime: new Date(Number(x)).toLocaleString(g.NW.currentLocale, {
                 month: "numeric",
                 day: "numeric",
                 hour: "numeric",
@@ -208,7 +208,7 @@ function N(e) {
           (0, l.oW)(!u)
         },
         dontCloseOnAction: !0,
-        children: C
+        children: j
       }, "quiet-mode")]
     }) : null]
   })

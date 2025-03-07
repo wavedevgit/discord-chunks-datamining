@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => Y
 });
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(300284),
   h = n(680295),
   f = n(785717),
-  x = n(687158),
-  b = n(899007),
-  N = n(648052),
+  b = n(687158),
+  N = n(899007),
+  x = n(648052),
   _ = n(867176),
   E = n(537006),
-  C = n(483424),
-  j = n(681837),
+  j = n(483424),
+  C = n(681837),
   O = n(502762),
   v = n(530),
   S = n(309494),
@@ -70,7 +70,7 @@ function Y(e) {
     currentUser: t,
     onClose: n,
     setPopoutRef: Y
-  } = e, K = __OVERLAY__, q = (0, x.ZP)(t.id), {
+  } = e, K = __OVERLAY__, q = (0, b.ZP)(t.id), {
     analyticsLocations: X
   } = (0, m.ZP)(u.Z.ACCOUNT_PROFILE_POPOUT), J = (0, f.ZB)({
     layout: "SIMPLIFIED_ACCOUNT_POPOUT",
@@ -114,7 +114,7 @@ function Y(e) {
               user: t,
               displayProfile: q,
               profileType: V.y0.BITE_SIZE
-            }), (0, r.jsx)(b.Z, {
+            }), (0, r.jsx)(N.Z, {
               user: t,
               displayProfile: q,
               profileType: V.y0.BITE_SIZE,
@@ -137,13 +137,13 @@ function Y(e) {
               nickname: Z.ZP.getName(null, null, t),
               onOpenProfile: K ? void 0 : eo,
               pronouns: null == q ? void 0 : q.pronouns,
-              tags: (0, r.jsx)(N.Z, {
+              tags: (0, r.jsx)(x.Z, {
                 displayProfile: q,
                 profileType: V.y0.BITE_SIZE,
                 onClose: n
               }),
               nicknameIcons: (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(j.Z, {
+                children: [(0, r.jsx)(C.Z, {
                   userId: t.id
                 }), (0, r.jsx)(S.Z, {
                   user: t,
@@ -158,7 +158,7 @@ function Y(e) {
             }), (0, r.jsx)(E.Z, {
               isPremiumUser: el,
               onInteraction: n
-            }), (0, r.jsx)(C.Z, {
+            }), (0, r.jsx)(j.Z, {
               user: t,
               currentUser: t,
               displayProfile: q,

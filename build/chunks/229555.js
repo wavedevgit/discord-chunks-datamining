@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => h
 });
@@ -68,23 +68,23 @@ let p = (e, t) => {
         id: d,
         badgeVersion: h,
         nameUnformatted: f,
-        tenureReqNumMonths: x,
-        hasWideArt: b
+        tenureReqNumMonths: b,
+        hasWideArt: N
       } = t,
-      N = u.NW.string(f),
-      _ = (0, l.q)(d, x);
+      x = u.NW.string(f),
+      _ = (0, l.q)(d, b);
     return 1 === h ? (0, r.jsxs)("div", {
       className: s()(m.container, g(d)),
       children: [(0, r.jsx)("div", {}), " ", (0, r.jsx)("img", {
         src: i,
-        alt: N,
+        alt: x,
         className: m.badgeImage
       }), (0, r.jsxs)("div", {
         className: m.textColumn,
         children: [(0, r.jsx)(a.xv, {
           variant: "text-lg/semibold",
           className: m.badgeText,
-          children: N
+          children: x
         }), (0, r.jsx)(a.xv, {
           variant: "text-xs/normal",
           children: p(t)
@@ -94,17 +94,17 @@ let p = (e, t) => {
       className: s()(m.container, g(d)),
       children: [(0, r.jsx)("div", {}), " ", (0, r.jsx)("img", {
         src: i,
-        alt: N,
+        alt: x,
         className: s()(m.badgeImage, m.badgeImageV2, {
           [m.upcomingBadge]: t.status === o.Vq.UPCOMING,
-          [m.wide]: b
+          [m.wide]: N
         })
       }), (0, r.jsxs)("div", {
         className: m.textColumn,
         children: [(0, r.jsx)(a.xv, {
           variant: "text-lg/semibold",
           className: m.badgeText,
-          children: N
+          children: x
         }), (0, r.jsx)(a.xv, {
           variant: "text-md/normal",
           className: m.badgeText,

@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => ef
 }), n(47120);
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(100527),
   h = n(906732),
   f = n(70097),
-  x = n(464824),
-  b = n(214852),
-  N = n(594174),
+  b = n(464824),
+  N = n(214852),
+  x = n(594174),
   _ = n(78839),
   E = n(626135),
-  C = n(526167),
-  j = n(74538),
+  j = n(526167),
+  C = n(74538),
   O = n(140465),
   v = n(278605),
   S = n(286961),
@@ -128,25 +128,25 @@ let ep = e => {
       isFullscreen: W,
       entrypoint: U
     } = e;
-    (0, b.z)(x.X);
+    (0, N.z)(b.X);
     let G = U === et.EZ.ApplicationStoreHome,
       F = i.useRef(null),
       H = i.useRef(null),
       ee = (0, l.e7)([p.Z], () => p.Z.useReducedMotion),
       ef = (0, m.ZP)(),
-      ex = (0, c.wj)(ef),
-      eb = N.default.getCurrentUser(),
-      eN = (0, j.I5)(eb),
-      e_ = (0, v.xP)("PremiumMarketingHome") && !eN && G,
-      [eE, eC] = i.useState(!1),
-      [ej, eO] = i.useState(!1),
+      eb = (0, c.wj)(ef),
+      eN = x.default.getCurrentUser(),
+      ex = (0, C.I5)(eN),
+      e_ = (0, v.xP)("PremiumMarketingHome") && !ex && G,
+      [eE, ej] = i.useState(!1),
+      [eC, eO] = i.useState(!1),
       [ev, eS] = i.useState(!1),
       [eT, eI] = i.useState(!1),
-      ey = (0, C.rO)(),
+      ey = (0, j.rO)(),
       [eA, eP] = i.useState(!1),
       eR = (0, l.e7)([_.ZP], () => _.ZP.getPremiumTypeSubscription()),
-      eD = null != eR ? (0, j.Af)(eR) : null,
-      eZ = null != eD ? j.ZP.getSkuIdForPlan(eD.planId) : null,
+      eD = null != eR ? (0, C.Af)(eR) : null,
+      eZ = null != eD ? C.ZP.getSkuIdForPlan(eD.planId) : null,
       ew = null !== eZ && eZ !== et.Si.TIER_2 ? et.Si.TIER_2 : null,
       ek = (0, I.n)(),
       eW = null != ek,
@@ -186,7 +186,7 @@ let ep = e => {
             variant: e_ ? k.NN.MARKETING_PAGE_V2 : k.NN.DEFAULT,
             showWumpus: !e_,
             tier0CTAButton: e_ ? (0, r.jsx)(J.Z, {
-              forceInverted: ex && !e_,
+              forceInverted: eb && !e_,
               showIcon: !1,
               subscriptionTier: et.Si.TIER_0,
               className: es.marginTopForButtons,
@@ -226,7 +226,7 @@ let ep = e => {
       eX = (0, r.jsxs)("div", {
         className: a()(es.container, {
           [es.settingsContainer]: !W,
-          [es.containerBackground]: e_ && ex
+          [es.containerBackground]: e_ && eb
         }),
         "data-cy": "tier-0-marketing-page",
         children: [e_ && (0, r.jsx)("div", {
@@ -252,14 +252,14 @@ let ep = e => {
             [es.heroHeadingV2Container]: e_
           }),
           children: [(0, r.jsx)(o.$, {
-            onChange: e => eC(e),
+            onChange: e => ej(e),
             threshold: 0,
             active: !0,
             children: e_ ? (0, r.jsx)(X.Z, {
               subscriptionTier: ew,
               isFullscreen: W || eV,
               entrypoint: U,
-              isDarkMode: ex
+              isDarkMode: eb
             }) : (0, r.jsx)(V.ZP, {
               subscriptionTier: ew,
               isFullscreen: W || eV,
@@ -273,7 +273,7 @@ let ep = e => {
                 [es.noTopPaddingOverride]: null != eR
               }),
               entrypoint: U,
-              isDarkMode: ex
+              isDarkMode: eb
             })
           }), !e_ && !0 === eF && (0, r.jsx)(A.W, {
             isFullScreen: W,
@@ -338,7 +338,7 @@ let ep = e => {
         }), !e_ && (0, r.jsx)("div", {
           className: W ? es.footerSpacingFullscreen : es.footerSpacing
         }), (0, r.jsx)(z.Z, {
-          isVisible: !eE && !ev && !ej && eA,
+          isVisible: !eE && !ev && !eC && eA,
           isFullscreen: W,
           subscriptionTier: ew,
           isMarketingPageV2: e_
@@ -362,8 +362,8 @@ let ep = e => {
             eO(e)
           },
           children: (0, r.jsx)(q.Z, {
-            isFooterVisible: ej,
-            isDarkMode: ex,
+            isFooterVisible: eC,
+            isDarkMode: eb,
             isReducedMotion: ee
           })
         })]

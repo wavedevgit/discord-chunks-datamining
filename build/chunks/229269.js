@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   f: () => E
 }), n(47120), n(26686);
@@ -16,10 +16,10 @@ var r = n(200651),
   g = n(439021),
   h = n(450272),
   f = n(388032),
-  x = n(311514),
-  b = n(518732);
+  b = n(311514),
+  N = n(518732);
 
-function N(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,26 +60,26 @@ function E() {
       children: [(0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "info-help-text",
-        className: x.labelSpacing,
+        className: b.labelSpacing,
         children: "Payment-method-specific components and views may not appear for you unless your browser is supported for that payment method and they have been configured on your browser."
-      }), (0, r.jsx)(C, {}), (0, r.jsx)(T, {}), (0, r.jsx)(Z, {})]
+      }), (0, r.jsx)(j, {}), (0, r.jsx)(T, {}), (0, r.jsx)(Z, {})]
     })
   })
 }
 
-function C() {
+function j() {
   return (0, r.jsxs)(h.$0, {
     children: [(0, r.jsx)(o.X6q, {
       variant: "heading-xl/semibold",
       children: "Payment Request Components - Google Pay"
     }), (0, r.jsx)(h.E_, {
       label: "Google Pay - Default View",
-      children: (0, r.jsx)(j, {
+      children: (0, r.jsx)(C, {
         paymentRequestWallet: "googlePay"
       })
     }), (0, r.jsx)(h.E_, {
       label: "Google Pay - Connector View",
-      children: (0, r.jsx)(j, {
+      children: (0, r.jsx)(C, {
         paymentRequestWallet: "googlePay",
         renderConnectorView: !0
       })
@@ -93,12 +93,12 @@ function C() {
       children: "Payment Request Components - Apple Pay"
     }), (0, r.jsx)(h.E_, {
       label: "Apple Pay - Default View",
-      children: (0, r.jsx)(j, {
+      children: (0, r.jsx)(C, {
         paymentRequestWallet: "applePay"
       })
     }), (0, r.jsx)(h.E_, {
       label: "Apple Pay - Connector View",
-      children: (0, r.jsx)(j, {
+      children: (0, r.jsx)(C, {
         renderConnectorView: !0,
         paymentRequestWallet: "applePay"
       })
@@ -111,7 +111,7 @@ function C() {
   })
 }
 
-function j(e) {
+function C(e) {
   let t = i.useRef(null),
     n = {
       paymentLabel: f.NW.string(f.t.ZURqX1),
@@ -126,7 +126,7 @@ function j(e) {
         look: o.zxk.Looks.LINK
       })
     };
-  return e.renderStepBody ? (0, r.jsx)(g.t, N({}, n, e)) : "applePay" === e.paymentRequestWallet ? (0, r.jsx)(d.Ch, N({}, n, e)) : (0, r.jsx)(d.Tr, N({}, n, e))
+  return e.renderStepBody ? (0, r.jsx)(g.t, x({}, n, e)) : "applePay" === e.paymentRequestWallet ? (0, r.jsx)(d.Ch, x({}, n, e)) : (0, r.jsx)(d.Tr, x({}, n, e))
 }
 
 function O(e) {
@@ -136,15 +136,15 @@ function O(e) {
     className: i
   } = e;
   return (0, r.jsx)("div", {
-    className: l()(b.root, b.focusLock, b.small, b.rootWithShadow, x.modal, i),
+    className: l()(N.root, N.focusLock, N.small, N.rootWithShadow, b.modal, i),
     "aria-label": f.NW.string(f.t.eQ2bLi),
     children: (0, r.jsxs)("form", {
-      className: x.form,
+      className: b.form,
       onSubmit: e => {
         e.preventDefault()
       },
       children: [(0, r.jsx)(o.hzk, {
-        className: x.scrollerContent,
+        className: b.scrollerContent,
         children: t
       }), n]
     })
@@ -165,7 +165,7 @@ function v(e) {
       onPrimary: () => l(),
       onBack: () => {}
     }),
-    children: (0, r.jsx)(j, {
+    children: (0, r.jsx)(C, {
       renderConnectorView: !0,
       renderStepBody: !0,
       paymentRequestWallet: t,
@@ -180,9 +180,9 @@ function S(e) {
     children: t
   } = e;
   return (0, r.jsx)(O, {
-    className: x.choosePaymentTypeModal,
+    className: b.choosePaymentTypeModal,
     children: (0, r.jsx)("div", {
-      className: x.choosePaymentTypeContainer,
+      className: b.choosePaymentTypeContainer,
       children: t
     })
   })
@@ -203,7 +203,7 @@ function T() {
     }), (0, r.jsx)(h.E_, {
       label: "All Payment Request Wallets Enabled",
       children: (0, r.jsx)(S, {
-        children: (0, r.jsx)(c.ZP, _(N({}, e), {
+        children: (0, r.jsx)(c.ZP, _(x({}, e), {
           onChooseType: () => {},
           paymentRequestWallets: ["googlePay", "applePay"]
         }))
@@ -211,7 +211,7 @@ function T() {
     }), (0, r.jsx)(h.E_, {
       label: "No Payment Wallets Enabled",
       children: (0, r.jsx)(S, {
-        children: (0, r.jsx)(c.ZP, _(N({}, e), {
+        children: (0, r.jsx)(c.ZP, _(x({}, e), {
           onChooseType: () => {},
           paymentRequestWallets: []
         }))
@@ -219,7 +219,7 @@ function T() {
     }), (0, r.jsx)(h.E_, {
       label: "Is Eligible for Trial",
       children: (0, r.jsx)(S, {
-        children: (0, r.jsx)(c.ZP, _(N({}, e), {
+        children: (0, r.jsx)(c.ZP, _(x({}, e), {
           isEligibleForTrial: !0,
           onChooseType: () => {},
           paymentRequestWallets: []
@@ -278,7 +278,7 @@ let I = {
   R = e => void 0 !== e ? JSON.stringify(e, null, 2) : "undefined";
 
 function D() {
-  let [e, t] = i.useState(R(A)), [n, a] = i.useState(A), [l, c] = i.useState(R(P)), [d, m] = i.useState(P), [p, g] = i.useState(null), [f, b] = i.useState((0, r.jsx)(h.DS, {
+  let [e, t] = i.useState(R(A)), [n, a] = i.useState(A), [l, c] = i.useState(R(P)), [d, m] = i.useState(P), [p, g] = i.useState(null), [f, N] = i.useState((0, r.jsx)(h.DS, {
     errorLabel: I.CONFIGURABLE,
     elementOptions: A,
     children: (0, r.jsx)(s.ExpressCheckoutElement, {
@@ -291,25 +291,25 @@ function D() {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsxs)(o.Text, {
       variant: "text-md/normal",
-      className: x.labelSpacing,
+      className: b.labelSpacing,
       children: ["Try configuring options for the Stripe Element container and Express Checkout Element here. Not all settings will change the appearance or functionality of the checkout button - use this to figure out the customizability of the Express Checkout Element.", (0, r.jsx)("br", {}), (0, r.jsx)("br", {}), "Start by changing the `borderRadius` or `buttonHeight` as a test!"]
     }), (0, r.jsxs)(o.Text, {
       variant: "text-md/normal",
-      className: x.labelSpacing,
+      className: b.labelSpacing,
       children: [(0, r.jsx)("b", {
         children: "elements.options:"
       }), (0, r.jsx)("br", {}), (0, r.jsx)(h.lD, {
         href: "https://github.com/stripe/stripe-js/blob/master/types/stripe-js/elements-group.d.ts#L632"
       })]
     }), (0, r.jsx)(o.Kx8, {
-      className: x.textarea,
+      className: b.textarea,
       placeholder: "Stripe Elements Container Options",
       showCharacterCount: !0,
       value: e,
       onChange: t
     }), (0, r.jsxs)(o.Text, {
       variant: "text-md/normal",
-      className: x.labelSpacing,
+      className: b.labelSpacing,
       children: [(0, r.jsx)("b", {
         children: "expressCheckoutElement.options:"
       }), (0, r.jsx)("br", {}), (0, r.jsx)(h.lD, {
@@ -318,7 +318,7 @@ function D() {
         href: "https://docs.stripe.com/elements/express-checkout-element/migration#customize-express-checkout-element"
       })]
     }), (0, r.jsx)(o.Kx8, {
-      className: x.textarea,
+      className: b.textarea,
       placeholder: "Stripe Express Checkout Element Options",
       showCharacterCount: !0,
       value: l,
@@ -328,7 +328,7 @@ function D() {
       color: "text-danger",
       children: p
     }), (0, r.jsx)(o.zxk, {
-      className: x.applyChangesButton,
+      className: b.applyChangesButton,
       color: o.zxk.Colors.BRAND,
       look: o.zxk.Looks.FILLED,
       size: o.zxk.Sizes.SMALL,
@@ -336,10 +336,10 @@ function D() {
         try {
           let t = JSON.parse(e),
             n = JSON.parse(l);
-          b(null), b((0, r.jsxs)(r.Fragment, {
+          N(null), N((0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsxs)(o.Text, {
               variant: "text-md/normal",
-              className: x.labelSpacing,
+              className: b.labelSpacing,
               children: ["Element updated at: ", new Date().toString()]
             }), (0, r.jsx)(h.DS, {
               errorLabel: I.CONFIGURABLE,
@@ -359,17 +359,17 @@ function D() {
       children: "Apply Changes"
     }), (0, r.jsx)(o.Text, {
       variant: "text-md/normal",
-      className: x.labelSpacing,
+      className: b.labelSpacing,
       children: "Current Element Options:"
     }), (0, r.jsx)(u.Z, {
-      className: x.markdown,
+      className: b.markdown,
       children: "".concat("``", " ").concat(R(n), " ").concat("``")
     }), (0, r.jsx)(o.Text, {
       variant: "text-md/normal",
-      className: x.labelSpacing,
+      className: b.labelSpacing,
       children: "Current Express Checkout Element Options:"
     }), (0, r.jsx)(u.Z, {
-      className: x.markdown,
+      className: b.markdown,
       children: "".concat("``", " ").concat(R(d), " ").concat("``")
     }), f]
   })
@@ -400,10 +400,10 @@ function Z() {
         children: (0, r.jsxs)("div", {
           children: [(0, r.jsx)(o.Text, {
             variant: "text-md/normal",
-            className: x.labelSpacing,
+            className: b.labelSpacing,
             children: "expressCheckoutElement.options:"
           }), (0, r.jsx)(u.Z, {
-            className: x.markdown,
+            className: b.markdown,
             children: "".concat("``").concat(R(y[e]), " ").concat("``")
           }), (0, r.jsx)(h.DS, {
             errorLabel: t,

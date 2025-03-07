@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => Z
 }), n(653041), n(627341);
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(401786),
   h = n(450468),
   f = n(98278),
-  x = n(594174),
-  b = n(78839),
-  N = n(267642),
+  b = n(594174),
+  N = n(78839),
+  x = n(267642),
   _ = n(63063),
   E = n(74538),
-  C = n(283029),
-  j = n(357956),
+  j = n(283029),
+  C = n(357956),
   O = n(275909),
   v = n(981631),
   S = n(474936),
@@ -70,7 +70,7 @@ function P(e) {
     premiumSubscription: l,
     useReducedMotion: o,
     fractionalPremiumState: d
-  } = e, u = i.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), p = (0, N.tl)(t), g = (null == l ? void 0 : l.isPaused) === !0 || d !== S.a$.NONE, h = d !== S.a$.NONE ? T.NW.format(T.t.hshta2, {
+  } = e, u = i.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), p = (0, x.tl)(t), g = (null == l ? void 0 : l.isPaused) === !0 || d !== S.a$.NONE, h = d !== S.a$.NONE ? T.NW.format(T.t.hshta2, {
     helpCenterLink: _.Z.getArticleURL(v.BhN.FRACTIONAL_PREMIUM_ABOUT)
   }) : T.NW.string(T.t.mOWsFx);
   return (0, r.jsxs)("li", {
@@ -88,7 +88,7 @@ function P(e) {
         children: T.NW.format(T.t.Z4ULRE, {
           date: l.currentPeriodEnd
         })
-      }) : t.isOnCooldown() && null != u ? (0, r.jsx)(j.Z, {
+      }) : t.isOnCooldown() && null != u ? (0, r.jsx)(C.Z, {
         cooldown: u.getTime()
       }) : (0, r.jsx)(c.Text, {
         className: I.__invalid_unappliedGuildBoostSlotDescription,
@@ -145,9 +145,9 @@ let Z = function(e) {
   let {
     guildBoostSlots: s,
     fractionalPremiumState: g
-  } = e, h = (0, o.e7)([b.ZP], () => b.ZP.getPremiumTypeSubscription()), j = (null == h ? void 0 : h.isPausedOrPausePending) === !0, {
+  } = e, h = (0, o.e7)([N.ZP], () => N.ZP.getPremiumTypeSubscription()), C = (null == h ? void 0 : h.isPausedOrPausePending) === !0, {
     fractionalState: O
-  } = (0, u.Z)(), Z = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), w = (0, o.e7)([x.default], () => x.default.getCurrentUser()), k = O === S.a$.FP_SUB_PAUSED, W = O !== S.a$.NONE, L = j && !k, {
+  } = (0, u.Z)(), Z = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), w = (0, o.e7)([b.default], () => b.default.getCurrentUser()), k = O === S.a$.FP_SUB_PAUSED, W = O !== S.a$.NONE, L = C && !k, {
     appliedGuildBoostSlots: B,
     unappliedGuildBoostSlots: M,
     numActiveGuildBoostSlots: U,
@@ -160,7 +160,7 @@ let Z = function(e) {
       r = !1,
       i = !0;
     return s.forEach(s => {
-      !(0, N.tl)(s) && n++, s.isOnCooldown() ? r = !0 : i = !1, null != s.premiumGuildSubscription ? e.push(s) : t.push(s)
+      !(0, x.tl)(s) && n++, s.isOnCooldown() ? r = !0 : i = !1, null != s.premiumGuildSubscription ? e.push(s) : t.push(s)
     }), {
       appliedGuildBoostSlots: e,
       unappliedGuildBoostSlots: t,
@@ -170,7 +170,7 @@ let Z = function(e) {
     }
   }, [s]), F = null != h ? E.ZP.getNumIncludedPremiumGuildSubscriptionSlots(h.planId) : 0, H = Math.max(0, F - B.length), z = U > F, Y = F === s.length, K = Y ? H : 1, q = i.useMemo(() => {
     let e = [];
-    for (let t = 0; t < K; t++) e.push((0, r.jsx)(C.Z, {
+    for (let t = 0; t < K; t++) e.push((0, r.jsx)(j.Z, {
       className: I.headerBoostGem,
       useReducedMotion: Z
     }, t));
@@ -201,7 +201,7 @@ let Z = function(e) {
     numUnappliedGuildBoostSlots: J
   });
   let Q = (0, l.EQ)({
-    subscriptionIsPausedOrPausePending: j,
+    subscriptionIsPausedOrPausePending: C,
     hasFractionPremium: W
   }).with({
     subscriptionIsPausedOrPausePending: !0,

@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  W: () => C
+  W: () => j
 });
 var r = n(200651),
   i = n(120356),
@@ -16,22 +16,22 @@ var r = n(200651),
   g = n(74538),
   h = n(821629),
   f = n(114625),
-  x = n(711896),
-  b = n(780525),
-  N = n(474936),
+  b = n(711896),
+  N = n(780525),
+  x = n(474936),
   _ = n(388032),
   E = n(537363);
-let C = e => {
+let j = e => {
   let {
     isFullScreen: t,
     analyticsLocations: n
-  } = e, i = (0, l.e7)([p.default], () => p.default.getCurrentUser()), C = (0, l.e7)([c.Z], () => c.Z.useReducedMotion), j = g.ZP.isPremiumExactly(i, N.p9.TIER_1), O = new Date(b.Lk);
+  } = e, i = (0, l.e7)([p.default], () => p.default.getCurrentUser()), j = (0, l.e7)([c.Z], () => c.Z.useReducedMotion), C = g.ZP.isPremiumExactly(i, x.p9.TIER_1), O = new Date(N.Lk);
   return (0, r.jsx)(u.O, {
     newLocations: [d.Z.PREMIUM_MARKETING_PAGE_BANNER],
     children: (0, r.jsx)("div", {
       className: s()(E.banner, {
         [E.bannerFullScreen]: t,
-        [E.staticBanner]: C
+        [E.staticBanner]: j
       }),
       children: (0, r.jsxs)("div", {
         className: s()(E.bannerContent, {
@@ -40,7 +40,7 @@ let C = e => {
         children: [(0, r.jsx)(a.X6, {
           variant: "display-sm",
           color: "always-white",
-          children: !0 === j ? _.NW.string(_.t.tY1el5) : _.NW.string(_.t.HaPg8P)
+          children: !0 === C ? _.NW.string(_.t.tY1el5) : _.NW.string(_.t.HaPg8P)
         }), (0, r.jsx)(a.xv, {
           className: E.countdown,
           variant: "text-sm/bold",
@@ -51,7 +51,7 @@ let C = e => {
           variant: "text-sm/medium",
           color: "always-white",
           children: _.NW.format(_.t.ESckJy, {
-            termsLink: b.Ps
+            termsLink: N.Ps
           })
         }), (0, r.jsx)(o.gtL, {
           color: "white",
@@ -60,9 +60,9 @@ let C = e => {
           onClick: () => {
             (0, m.Z)({
               analyticsLocations: n,
-              subscriptionTier: N.Si.TIER_2,
+              subscriptionTier: x.Si.TIER_2,
               confirmationFooter: (0, r.jsx)(f.Z, {}),
-              planSelectBanner: (0, r.jsx)(x.Z, {})
+              planSelectBanner: (0, r.jsx)(b.Z, {})
             })
           },
           children: (0, r.jsx)(a.xv, {

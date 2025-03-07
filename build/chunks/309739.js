@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => W
 }), n(47120), n(566702);
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(410030),
   h = n(726542),
   f = n(921801),
-  x = n(553795),
-  b = n(430824),
-  N = n(63063),
+  b = n(553795),
+  N = n(430824),
+  x = n(63063),
   _ = n(358085),
   E = n(709054),
-  C = n(362352),
-  j = n(413182),
+  j = n(362352),
+  C = n(413182),
   O = n(695346),
   v = n(726985),
   S = n(981631),
@@ -32,7 +32,7 @@ var r = n(200651),
 
 function A(e) {
   let t = () => {
-    O.SE.updateSetting(e ? E.default.keys(b.Z.getGuilds()) : [])
+    O.SE.updateSetting(e ? E.default.keys(N.Z.getGuilds()) : [])
   };
   (0, m.h7j)(e => {
     var n, i;
@@ -80,7 +80,7 @@ function A(e) {
 function P() {
   let e = O.G6.useSetting(),
     t = O.Wz.useSetting(),
-    n = (0, C.Yd)("activity privacy tab"),
+    n = (0, j.Yd)("activity privacy tab"),
     i = _.isPlatformEmbedded ? T.NW.string(T.t.MznbeH) : T.NW.string(T.t.oKqC4u),
     s = e => {
       O.Wz.updateSetting(e ? d.E5.ON_FOR_LARGE_GUILDS : d.E5.OFF), A(e)
@@ -118,7 +118,7 @@ function P() {
           color: "header-secondary",
           className: y.marginBottom8,
           children: T.NW.format(T.t.aUxRra, {
-            helpdeskArticle: N.Z.getArticleURL(S.BhN.ACTIVITY_STATUS_SETTINGS)
+            helpdeskArticle: x.Z.getArticleURL(S.BhN.ACTIVITY_STATUS_SETTINGS)
           })
         }), (0, r.jsx)(m.q4e, {
           options: o,
@@ -128,7 +128,7 @@ function P() {
       }) : (0, r.jsx)(m.j7V, {
         value: t === d.E5.OFF,
         note: T.NW.format(T.t["+5/xu7"], {
-          helpdeskArticle: N.Z.getArticleURL(S.BhN.ACTIVITY_STATUS_SETTINGS)
+          helpdeskArticle: x.Z.getArticleURL(S.BhN.ACTIVITY_STATUS_SETTINGS)
         }),
         onChange: e => s(!e),
         children: T.NW.string(T.t.D5GXTU)
@@ -237,7 +237,7 @@ function w(e) {
 }
 
 function k() {
-  let e = (0, c.e7)([x.Z], () => x.Z.getAccounts()),
+  let e = (0, c.e7)([b.Z], () => b.Z.getAccounts()),
     t = i.useMemo(() => e.filter(e => h.Z.isSupported(e.type) && S.vbS.has(e.type)), [e]),
     [n, s] = i.useState(""),
     a = i.useMemo(() => {
@@ -270,7 +270,7 @@ function W(e) {
     showHeader: n = !0
   } = e, {
     showRedesign: i
-  } = j.b.useExperiment({
+  } = C.b.useExperiment({
     location: "activity privacy tab"
   });
   return (0, r.jsxs)(m.hjN, {

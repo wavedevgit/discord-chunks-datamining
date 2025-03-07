@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => v
 });
@@ -17,22 +17,22 @@ var i = n(120356),
   g = n(639119),
   h = n(105759),
   f = n(346497),
-  x = n(422034),
-  b = n(710220),
-  N = n(318747),
+  b = n(422034),
+  N = n(710220),
+  x = n(318747),
   _ = n(635921),
   E = n(474936),
-  C = n(388032),
-  j = n(370623);
+  j = n(388032),
+  C = n(370623);
 let O = e => {
     let t, {
       trialOffer: n,
       discountOffer: i
     } = e;
-    if (null != n ? t = C.NW.string(C.t.IBYG5e) : null != i && (t = C.NW.formatToPlainString(C.t.iiLbvr, {
+    if (null != n ? t = j.NW.string(j.t.IBYG5e) : null != i && (t = j.NW.formatToPlainString(j.t.iiLbvr, {
         percent: i.discount.amount
       })), null != t) return (0, r.jsx)("div", {
-      className: j.premiumOfferPill,
+      className: C.premiumOfferPill,
       children: (0, r.jsx)(l.Text, {
         variant: "redesign/heading-18/bold",
         color: "always-white",
@@ -55,41 +55,41 @@ let O = e => {
     return (0, r.jsx)(c.Gt, {
       value: A,
       children: (0, r.jsx)("div", {
-        className: s()(j.container, j.marketingPageV2Container, v),
+        className: s()(C.container, C.marketingPageV2Container, v),
         "data-testid": "v2-marketing-page-hero-header",
         children: (0, r.jsxs)("div", {
-          className: j.marketingPageV2TextContainer,
+          className: C.marketingPageV2TextContainer,
           children: [w && (0, r.jsx)(O, {
             trialOffer: Z,
             discountOffer: R
           }), (0, r.jsx)(l.X6q, {
-            className: j.marketingPageV2Heading,
+            className: C.marketingPageV2Heading,
             variant: "display-sm",
             color: "header-primary",
-            children: C.NW.string(C.t.YCZldH)
-          }), B ? (0, r.jsx)(b.Z, {
+            children: j.NW.string(j.t.YCZldH)
+          }), B ? (0, r.jsx)(N.Z, {
             referrer: L,
             isMarketingPageV2Enabled: !0
           }) : M && (0, r.jsx)("div", {
-            className: j.affinityDescriptionV2,
-            children: (0, r.jsx)(x.Z, {
+            className: C.affinityDescriptionV2,
+            children: (0, r.jsx)(b.Z, {
               textColor: "text-normal",
               smallerText: !i,
               isMarketingPageV2Enabled: !0
             })
           }), k || P ? (0, r.jsx)("div", {
-            className: s()(j.buttonContainer, j.marketingPageV2CTAContainer, {
-              [j.marketingPageV2CTAMargin]: !(M || B)
+            className: s()(C.buttonContainer, C.marketingPageV2CTAContainer, {
+              [C.marketingPageV2CTAMargin]: !(M || B)
             }),
-            children: (0, r.jsx)(N.Z, {
-              className: s()(j.button, S),
+            children: (0, r.jsx)(x.Z, {
+              className: s()(C.button, S),
               forceWhite: !0
             })
           }) : (0, r.jsx)(_.PK, {
             subscriptionTier: null !== (n = null != T ? T : null == Z ? void 0 : null === (t = Z.subscription_trial) || void 0 === t ? void 0 : t.sku_id) && void 0 !== n ? n : D,
             inOfferExperience: w,
-            containerClassName: s()(j.marketingPageV2CTAContainer, {
-              [j.marketingPageV2CTAMargin]: !(M || B)
+            containerClassName: s()(C.marketingPageV2CTAContainer, {
+              [C.marketingPageV2CTAMargin]: !(M || B)
             }),
             buttonClassName: S,
             isMarketingPageV2Enabled: !0,

@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => el
 }), n(47120), n(26686), n(301563), n(566702), n(411104);
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(661111),
   h = n(179658),
   f = n(491428),
-  x = n(225433),
-  b = n(484614),
-  N = n(615287),
+  b = n(225433),
+  N = n(484614),
+  x = n(615287),
   _ = n(386506),
   E = n(865427),
-  C = n(802098),
-  j = n(663993),
+  j = n(802098),
+  C = n(663993),
   O = n(600164),
   v = n(118012),
   S = n(482215),
@@ -103,7 +103,7 @@ class J extends i.Component {
     return (0, r.jsxs)(O.Z, {
       direction: O.Z.Direction.VERTICAL,
       className: a()(U.buildOverrideGroup, G.marginBottom20, V.card, U.row),
-      children: [(0, r.jsx)(x.Z, {
+      children: [(0, r.jsx)(b.Z, {
         className: a()(U.removeBuildOverride, {
           [U.removeBuildOverrideDisabled]: i
         }),
@@ -571,7 +571,7 @@ class $ extends i.Component {
   renderPayloadBlock() {
     let e = JSON.stringify(this.generatePayload(), null, 2),
       t = () => e,
-      i = (0, r.jsx)(j.GI, {
+      i = (0, r.jsx)(C.GI, {
         createPromise: () => Promise.resolve().then(n.bind(n, 364964)),
         webpackId: 364964,
         renderFallback: t,
@@ -606,7 +606,7 @@ class $ extends i.Component {
           children: [(0, r.jsx)(O.Z.Child, {
             wrap: !0,
             basis: "75%",
-            children: (0, r.jsx)(b.Z, {
+            children: (0, r.jsx)(N.Z, {
               value: n
             })
           }), (0, r.jsx)(m.zxk, {
@@ -867,7 +867,7 @@ function en() {
     t = (0, d.e7)([y.default], () => y.default.getForcedRenderMode()),
     [n, s] = i.useState(!1),
     [a, l] = i.useState(""),
-    o = e || t === N.R5.OUT_OF_PROCESS_V2 || t === N.R5.OUT_OF_PROCESS_V3 || t === N.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION;
+    o = e || t === x.R5.OUT_OF_PROCESS_V2 || t === x.R5.OUT_OF_PROCESS_V3 || t === x.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION;
   return (i.useEffect(() => {
     (async () => {
       l(await (0, Z.getOverlayURL)())
@@ -994,7 +994,7 @@ let er = d.ZP.connectStores([R.default], () => ({
     isIdleStatusIndicatorEnabled: p,
     onlyShowPreviewAppCollections: g,
     disableAppCollectionsCache: f,
-    preventPopoutClose: x
+    preventPopoutClose: b
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(P.F, {
@@ -1095,7 +1095,7 @@ let er = d.ZP.connectStores([R.default], () => ({
         }), (0, r.jsx)(P.F, {
           setting: L.s6.DEVELOPER_OPTIONS_PREVENT_POPOUT_CLOSE,
           children: (0, r.jsx)(m.j7V, {
-            value: x,
+            value: b,
             note: "This is to enable viewing console logs for popout crashes. This may leave your app/popout in a weird state.",
             onChange: e => (0, h.y)({
               preventPopoutClose: e
@@ -1170,8 +1170,8 @@ function ei() {
 
 function es() {
   var e;
-  let t = (0, d.e7)([C.Z], () => C.Z.overrideId()),
-    [n, s] = i.useState(null !== (e = C.Z.overrideId()) && void 0 !== e ? e : "");
+  let t = (0, d.e7)([j.Z], () => j.Z.overrideId()),
+    [n, s] = i.useState(null !== (e = j.Z.overrideId()) && void 0 !== e ? e : "");
   return (0, r.jsx)(P.F, {
     setting: L.s6.DEVELOPER_OPTIONS_CHANGELOG_OVERRIDE,
     children: (0, r.jsxs)(m.hjN, {

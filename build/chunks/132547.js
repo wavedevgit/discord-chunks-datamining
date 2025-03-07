@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => y
 }), n(47120), n(610138), n(216116), n(78328), n(815648), n(301563);
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(533525),
   h = n(314684),
   f = n(794484),
-  x = n(536844),
-  b = n(342414),
-  N = n(938736),
+  b = n(536844),
+  N = n(342414),
+  x = n(938736),
   _ = n(615042),
   E = n(391110),
-  C = n(71363),
-  j = n(781800),
+  j = n(71363),
+  C = n(781800),
   O = n(981631),
   v = n(388032),
   S = n(951084),
@@ -38,7 +38,7 @@ let I = "SubscriberNitroHome",
       [y, A] = i.useState(!1);
     (0, h.FM)();
     let P = (0, g.b)(I),
-      R = (0, N.TW)(I),
+      R = (0, x.TW)(I),
       D = "true" === new URLSearchParams(window.location.search).get("autoScroll");
     return window.history.replaceState({}, "", window.location.pathname), (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.yWw, {
@@ -48,7 +48,7 @@ let I = "SubscriberNitroHome",
           className: S.container,
           children: (0, r.jsxs)(d.Gt, {
             value: s,
-            children: [(0, r.jsx)(b.Z, {
+            children: [(0, r.jsx)(N.Z, {
               className: S.heroHeading,
               location: E.MQ.HOME
             }), (0, r.jsx)(f.Z, {
@@ -63,11 +63,11 @@ let I = "SubscriberNitroHome",
               className: S.perksDiscoverability,
               noBackground: !0,
               leftAlignHeaders: !0,
-              showAllPerksButton: (0, r.jsx)(j.Z, {
+              showAllPerksButton: (0, r.jsx)(C.Z, {
                 setIsAllPerksVisible: n,
                 previousComponent: E.MQ.HOME
               })
-            }), (0, r.jsx)(x.Z, {
+            }), (0, r.jsx)(b.Z, {
               className: S.giftNitro,
               location: c.Z.PREMIUM_MARKETING_GIFT_SECTION,
               analyticsLocation: {
@@ -94,7 +94,7 @@ let I = "SubscriberNitroHome",
             })]
           })
         })
-      }), (0, r.jsx)(C.Z, {
+      }), (0, r.jsx)(j.Z, {
         isAllPerksVisible: t,
         setIsAllPerksVisible: n,
         previousComponent: E.MQ.HOME

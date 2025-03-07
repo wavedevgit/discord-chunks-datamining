@@ -1,8 +1,8 @@
-/** Chunk was on 76282 **/
+/** Chunk was on 12075 **/
 n.d(t, {
   Sr: () => C,
   Xq: () => T,
-  Zg: () => S
+  Zg: () => y
 }), n(411104);
 var r = n(186070),
   i = n(185514),
@@ -19,8 +19,8 @@ var r = n(186070),
   f = n(673553),
   m = n(280492),
   h = n(746887),
-  g = n(721383),
-  b = n(743810),
+  b = n(721383),
+  g = n(743810),
   O = n(981631),
   N = n(388032);
 
@@ -39,10 +39,10 @@ let C = {
     [O.EkH.CHANNEL_PREV]: i.x5,
     [O.EkH.NAVIGATE_BACK]: i.Nx,
     [O.EkH.NAVIGATE_FORWARD]: i.On,
-    [O.EkH.UNREAD_NEXT]: b.pd,
-    [O.EkH.UNREAD_PREV]: b.wk,
-    [O.EkH.MENTION_CHANNEL_NEXT]: b.Nv,
-    [O.EkH.MENTION_CHANNEL_PREV]: b.uX,
+    [O.EkH.UNREAD_NEXT]: g.pd,
+    [O.EkH.UNREAD_PREV]: g.wk,
+    [O.EkH.MENTION_CHANNEL_NEXT]: g.Nv,
+    [O.EkH.MENTION_CHANNEL_PREV]: g.uX,
     [O.EkH.TOGGLE_PREVIOUS_GUILD]: i.$c,
     [O.EkH.JUMP_TO_GUILD]: o.u,
     [O.EkH.SUBMIT]: E.z,
@@ -55,7 +55,7 @@ let C = {
     [O.EkH.SCROLL_UP]: d.B2,
     [O.EkH.SCROLL_DOWN]: d.gN,
     [O.EkH.SEARCH_EMOJIS]: _.S,
-    [O.EkH.TOGGLE_HOTKEYS]: g._,
+    [O.EkH.TOGGLE_HOTKEYS]: b._,
     [O.EkH.JUMP_TO_FIRST_UNREAD]: s.O,
     [O.EkH.RETURN_TO_AUDIO_CHANNEL]: u.F,
     [O.EkH.CALL_ACCEPT]: r.IL,
@@ -66,7 +66,7 @@ let C = {
     [O.EkH.QUICKSWITCHER_SHOW]: c.$
   };
 
-function S() {
+function y() {
   return [{
     description: N.NW.string(N.t.bx4Uy8),
     binds: I(O.EkH.SERVER_PREV, O.EkH.SERVER_NEXT)

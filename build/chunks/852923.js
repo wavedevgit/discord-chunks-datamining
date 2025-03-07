@@ -1,101 +1,101 @@
-/** Chunk was on 76282 **/
+/** Chunk was on 40247 **/
 n.d(t, {
-  Z: () => h
+  Z: () => T
 });
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  l = n(481060),
+  l = n.n(i),
+  o = n(481060),
   a = n(922611),
   s = n(592125),
   c = n(944486),
   u = n(471253),
-  d = n(623633),
-  _ = n(930180),
-  p = n(388032),
-  E = n(211534);
+  E = n(623633),
+  d = n(930180),
+  _ = n(388032),
+  N = n(211534);
 
-function f(e) {
+function I(e) {
   let t = c.Z.getVoiceChannelId();
   if (null == t) return;
   let n = s.Z.getChannel(t);
   null != n && (0, u.RK)(n, e)
 }
 
-function m(e) {
+function O(e) {
   var t, n;
   let {
     channelId: i
-  } = e, s = null !== (t = (0, _._d)(i)) && void 0 !== t ? t : 0, c = null !== (n = (0, _.K3)(i)) && void 0 !== n ? n : 0, u = (0, a.D)({
+  } = e, s = null !== (t = (0, d._d)(i)) && void 0 !== t ? t : 0, c = null !== (n = (0, d.K3)(i)) && void 0 !== n ? n : 0, u = (0, a.D)({
     location: "invited_to_speak_header"
   });
   return s > 0 && c > 0 ? (0, r.jsx)("div", {
-    className: E.blocked,
+    className: N.blocked,
     children: (0, r.jsx)("div", {
-      className: o()(E.blockedText, E.noIcon),
-      children: p.NW.string(p.t.xlJRfn)
+      className: l()(N.blockedText, N.noIcon),
+      children: _.NW.string(_.t.xlJRfn)
     })
   }) : u && s > 0 ? (0, r.jsx)("div", {
-    className: E.blocked,
+    className: N.blocked,
     children: (0, r.jsx)("div", {
-      className: o()(E.blockedText, E.noIcon),
-      children: p.NW.string(p.t.WYad9f)
+      className: l()(N.blockedText, N.noIcon),
+      children: _.NW.string(_.t.WYad9f)
     })
   }) : s > 0 ? (0, r.jsxs)("div", {
-    className: E.blocked,
-    children: [u ? null : (0, r.jsx)(l.t6m, {
+    className: N.blocked,
+    children: [u ? null : (0, r.jsx)(o.t6m, {
       size: "xxs",
       color: "currentColor",
-      className: E.blockedIcon
+      className: N.blockedIcon
     }), (0, r.jsx)("div", {
-      className: o()(E.blockedText, {
-        [E.noIcon]: u
+      className: l()(N.blockedText, {
+        [N.noIcon]: u
       }),
-      children: p.NW.format(p.t.ATpigY, {
+      children: _.NW.format(_.t.ATpigY, {
         number: s
       })
     })]
   }) : c > 0 ? (0, r.jsx)("div", {
-    className: E.blocked,
+    className: N.blocked,
     children: (0, r.jsx)("div", {
-      className: o()(E.blockedText, E.noIcon),
-      children: p.NW.string(p.t.eHq2OD)
+      className: l()(N.blockedText, N.noIcon),
+      children: _.NW.string(_.t.eHq2OD)
     })
   }) : null
 }
 
-function h() {
-  let e = (0, d.Z)();
-  return null == e ? null : (0, r.jsxs)(l.qXd, {
-    className: E.container,
-    color: l.DM8.DEFAULT,
+function T() {
+  let e = (0, E.Z)();
+  return null == e ? null : (0, r.jsxs)(o.qXd, {
+    className: N.container,
+    color: o.DM8.DEFAULT,
     children: [(0, r.jsx)("div", {
-      children: p.NW.string(p.t.Ul1RJS)
-    }), (0, r.jsx)(m, {
+      children: _.NW.string(_.t.Ul1RJS)
+    }), (0, r.jsx)(O, {
       channelId: e.id
-    }), (0, r.jsx)(l.zxk, {
-      className: E.acceptButton,
-      size: l.zxk.Sizes.MIN,
-      color: l.zxk.Colors.WHITE,
-      onClick: () => f(!1),
-      children: (0, r.jsx)(l.Text, {
-        className: E.acceptText,
+    }), (0, r.jsx)(o.zxk, {
+      className: N.acceptButton,
+      size: o.zxk.Sizes.MIN,
+      color: o.zxk.Colors.WHITE,
+      onClick: () => I(!1),
+      children: (0, r.jsx)(o.Text, {
+        className: N.acceptText,
         variant: "text-xs/normal",
         color: "none",
-        children: p.NW.string(p.t.MpO0p6)
+        children: _.NW.string(_.t.MpO0p6)
       })
-    }), (0, r.jsx)(l.zxk, {
-      className: E.declineButton,
-      look: l.zxk.Looks.OUTLINED,
-      size: l.zxk.Sizes.MIN,
-      color: l.zxk.Colors.WHITE,
-      onClick: () => f(!0),
-      children: (0, r.jsx)(l.Text, {
-        className: E.declineText,
+    }), (0, r.jsx)(o.zxk, {
+      className: N.declineButton,
+      look: o.zxk.Looks.OUTLINED,
+      size: o.zxk.Sizes.MIN,
+      color: o.zxk.Colors.WHITE,
+      onClick: () => I(!0),
+      children: (0, r.jsx)(o.Text, {
+        className: N.declineText,
         variant: "text-xs/normal",
         color: "none",
-        children: p.NW.string(p.t["1YDv7e"])
+        children: _.NW.string(_.t["1YDv7e"])
       })
     })]
   })

@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => j
+  Z: () => C
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -16,59 +16,59 @@ var r = n(200651),
   g = n(639119),
   h = n(635921),
   f = n(474936),
-  x = n(869783),
-  b = n(388032),
-  N = n(761675),
+  b = n(869783),
+  N = n(388032),
+  x = n(761675),
   _ = n(839526),
   E = n(4046),
-  C = n(423741);
-let j = e => {
+  j = n(423741);
+let C = e => {
   var t, n;
   let {
     className: s,
-    isFooterVisible: j,
+    isFooterVisible: C,
     isDarkMode: O,
     isReducedMotion: v
   } = e, {
     analyticsLocations: S
   } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_FOOTER_CTA), T = (0, p.Ng)(), I = (0, p.Wp)(T, f.Si.TIER_2) ? f.Si.TIER_2 : void 0, y = (0, g.N)(), A = (0, m.Nx)(), P = (0, u.rO)(), R = i.useRef(null), [D, Z] = i.useState(!1);
   return i.useEffect(() => {
-    !j || v || D || null == R.current || R.current.play()
-  }, [j, v, D]), (0, r.jsx)(c.Gt, {
+    !C || v || D || null == R.current || R.current.play()
+  }, [C, v, D]), (0, r.jsx)(c.Gt, {
     value: S,
     children: (0, r.jsxs)("div", {
-      className: a()(N.container, s),
+      className: a()(x.container, s),
       children: [(0, r.jsx)(l.X6q, {
-        className: N.footerHeader,
+        className: x.footerHeader,
         variant: "display-md",
         color: "header-primary",
-        children: b.NW.string(b.t.lEw32t)
+        children: N.NW.string(N.t.lEw32t)
       }), (0, r.jsx)(h.PK, {
         subscriptionTier: null !== (n = null == y ? void 0 : null === (t = y.subscription_trial) || void 0 === t ? void 0 : t.sku_id) && void 0 !== n ? n : I,
         inOfferExperience: A,
-        containerClassName: N.footerCTAContainer,
+        containerClassName: x.footerCTAContainer,
         isMarketingPageV2Enabled: !0,
         isDarkMode: O
       }), (0, r.jsx)("div", {
-        className: N.footerArtContainer,
+        className: x.footerArtContainer,
         children: (0, r.jsx)(d.Z, {
           playsInline: !0,
           preload: "auto",
           poster: E.Z,
-          className: N.footerArt,
+          className: x.footerArt,
           onEnded: () => {
             Z(!0)
           },
           ref: R,
           children: (0, r.jsx)("source", {
-            src: P ? _.Z : C.Z,
-            type: P ? x.m.MP4 : x.m.WEBM
+            src: P ? _.Z : j.Z,
+            type: P ? b.m.MP4 : b.m.WEBM
           })
         })
       }), (0, r.jsx)("div", {
-        className: N.leftGradient
+        className: x.leftGradient
       }), (0, r.jsx)("div", {
-        className: N.rightGradient
+        className: x.rightGradient
       })]
     })
   })

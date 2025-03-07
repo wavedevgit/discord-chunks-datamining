@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   $W: () => S,
   Mx: () => y,
@@ -22,14 +22,14 @@ var r, i = n(200651),
   g = n(565138),
   h = n(754688),
   f = n(237583),
-  x = n(430824),
-  b = n(699516),
-  N = n(594174),
+  b = n(430824),
+  N = n(699516),
+  x = n(594174),
   _ = n(51144),
   E = n(388032),
-  C = n(619619);
+  j = n(619619);
 
-function j(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -75,18 +75,18 @@ class O extends s.PureComponent {
       },
       tabIndex: -1,
       innerRef: this.setRef,
-      className: C.result,
+      className: j.result,
       onClick: this.handleClick,
       onMouseEnter: this.handleMouseEnter,
       onContextMenu: r,
       children: [t, null != n ? (0, i.jsx)("div", {
-        className: C.score,
+        className: j.score,
         children: n >> 0
       }) : null]
     })
   }
   constructor(...e) {
-    super(...e), j(this, "node", void 0), j(this, "handleClick", e => {
+    super(...e), C(this, "node", void 0), C(this, "handleClick", e => {
       e.preventDefault();
       let {
         onClick: t
@@ -94,14 +94,14 @@ class O extends s.PureComponent {
         node: n
       } = this;
       null != n && t(e, n)
-    }), j(this, "handleMouseEnter", e => {
+    }), C(this, "handleMouseEnter", e => {
       let {
         onMouseEnter: t
       } = this.props, {
         node: n
       } = this;
       null != n && t(e, n)
-    }), j(this, "setRef", e => {
+    }), C(this, "setRef", e => {
       this.node = e
     })
   }
@@ -112,12 +112,12 @@ class v extends s.Component {
       guild: e
     } = this.props;
     return (0, i.jsx)("div", {
-      className: C.guildIconContainer,
+      className: j.guildIconContainer,
       children: (0, i.jsx)(g.Z, {
         tabIndex: -1,
         guild: e,
         size: g.Z.Sizes.MINI,
-        className: C.guildIcon
+        className: j.guildIcon
       })
     })
   }
@@ -126,9 +126,9 @@ class v extends s.Component {
       guild: e
     } = this.props;
     return (0, i.jsx)("div", {
-      className: C.name,
+      className: j.name,
       children: (0, i.jsx)("span", {
-        className: C.match,
+        className: j.match,
         children: e.name
       })
     })
@@ -139,9 +139,9 @@ class v extends s.Component {
       children: t
     } = this.props;
     return (0, i.jsxs)("div", {
-      className: e ? C.contentUnread : C.contentDefault,
+      className: e ? j.contentUnread : j.contentDefault,
       children: [this.renderIcon(), this.renderName(), (0, i.jsx)("div", {
-        className: C.misc,
+        className: j.misc,
         children: t
       })]
     })
@@ -186,11 +186,11 @@ class S extends(r = s.Component) {
     if (null == n) return null;
     let r = null !== (e = (0, u.Z)(t)) && void 0 !== e ? e : "";
     return (0, i.jsx)("div", {
-      className: C.iconContainer,
+      className: j.iconContainer,
       role: "img",
       "aria-label": r,
       children: (0, i.jsx)(n, {
-        className: C.icon,
+        className: j.icon,
         size: "xs",
         color: "currentColor"
       })
@@ -205,17 +205,17 @@ class S extends(r = s.Component) {
       isMentionLowImportance: a
     } = this.props;
     return null != n && n > 0 && (e = (0, i.jsx)(m.Z, {
-      className: C.badge,
+      className: j.badge,
       value: n,
       lowImportance: a
     })), null != r && (t = (0, i.jsx)("span", {
-      className: C.note,
-      children: (0, c.F6)(r, N.default, b.Z)
+      className: j.note,
+      children: (0, c.F6)(r, x.default, N.Z)
     })), (0, i.jsxs)("div", {
-      className: C.name,
+      className: j.name,
       children: [(0, i.jsx)("span", {
-        className: C.match,
-        children: (0, c.F6)(s, N.default, b.Z)
+        className: j.match,
+        children: (0, c.F6)(s, x.default, N.Z)
       }), e, this.renderVoiceStates(), t]
     })
   }
@@ -225,7 +225,7 @@ class S extends(r = s.Component) {
       channel: t
     } = this.props;
     return null == e ? null : (0, i.jsx)(f.Z, {
-      className: C.voiceSummaryContainer,
+      className: j.voiceSummaryContainer,
       guildId: t.guild_id,
       users: e.map(e => {
         let {
@@ -246,9 +246,9 @@ class S extends(r = s.Component) {
     } = this.props;
     return (0, i.jsxs)("div", {
       "aria-hidden": !0,
-      className: e || null != t && t > 0 ? C.contentUnread : C.contentDefault,
+      className: e || null != t && t > 0 ? j.contentUnread : j.contentDefault,
       children: [this.renderIcon(), this.renderName(), (0, i.jsx)("div", {
-        className: C.misc,
+        className: j.misc,
         children: n
       })]
     })
@@ -257,7 +257,7 @@ class S extends(r = s.Component) {
     var e;
     let {
       channel: t
-    } = this.props, n = null === (e = x.Z.getGuild(this.props.channel.guild_id)) || void 0 === e ? void 0 : e.name, r = (0, c.F6)(t, N.default, b.Z), i = (0, u.Z)(t);
+    } = this.props, n = null === (e = b.Z.getGuild(this.props.channel.guild_id)) || void 0 === e ? void 0 : e.name, r = (0, c.F6)(t, x.default, N.Z), i = (0, u.Z)(t);
     return E.NW.formatToPlainString(E.t["Vw/da2"], {
       name: r,
       type: i,
@@ -287,7 +287,7 @@ class S extends(r = s.Component) {
     })
   }
 }
-j(S, "defaultProps", {
+C(S, "defaultProps", {
   unread: !1
 });
 class T extends s.Component {
@@ -296,7 +296,7 @@ class T extends s.Component {
       channel: e
     } = this.props;
     return (0, i.jsx)("div", {
-      className: C.dmIconContainer,
+      className: j.dmIconContainer,
       children: (0, i.jsx)(a.qEK, {
         src: (0, o.x)(e),
         size: a.EFr.SIZE_20,
@@ -311,13 +311,13 @@ class T extends s.Component {
       channel: n
     } = this.props;
     return null != t && t > 0 && (e = (0, i.jsx)(m.Z, {
-      className: C.badge,
+      className: j.badge,
       value: t
     })), (0, i.jsxs)("div", {
-      className: C.name,
+      className: j.name,
       children: [(0, i.jsx)("span", {
-        className: C.match,
-        children: (0, c.F6)(n, N.default, b.Z)
+        className: j.match,
+        children: (0, c.F6)(n, x.default, N.Z)
       }), e]
     })
   }
@@ -327,9 +327,9 @@ class T extends s.Component {
       children: t
     } = this.props;
     return (0, i.jsxs)("div", {
-      className: null != e && e > 0 ? C.contentUnread : C.contentDefault,
+      className: null != e && e > 0 ? j.contentUnread : j.contentDefault,
       children: [this.renderIcon(), this.renderName(), (0, i.jsx)("div", {
-        className: C.misc,
+        className: j.misc,
         children: t
       })]
     })
@@ -338,7 +338,7 @@ class T extends s.Component {
     let {
       channel: e,
       mentions: t
-    } = this.props, n = (0, c.F6)(e, N.default, b.Z);
+    } = this.props, n = (0, c.F6)(e, x.default, N.Z);
     return null != t && t > 0 ? E.NW.formatToPlainString(E.t.LYdVfH, {
       name: n,
       mentions: t
@@ -375,7 +375,7 @@ class I extends s.Component {
       user: e
     } = this.props;
     return (0, i.jsx)("div", {
-      className: C.iconContainer,
+      className: j.iconContainer,
       children: (0, i.jsx)(a.qEK, {
         src: e.getAvatarURL(void 0, 20),
         "aria-hidden": !0,
@@ -388,7 +388,7 @@ class I extends s.Component {
     let {
       user: t,
       comparator: n
-    } = this.props, r = b.Z.getNickname(t.id);
+    } = this.props, r = N.Z.getNickname(t.id);
     return ((e = n === t.tag || null == n || "" === n ? t.username : n) === t.username || e === t.id) && (e = null != r ? r : _.ZP.getName(t)), e
   }
   renderName() {
@@ -398,15 +398,15 @@ class I extends s.Component {
       mentions: n
     } = this.props, r = this.getDisplayNickname();
     return null != n && n > 0 && (e = (0, i.jsx)(m.Z, {
-      className: C.badge,
+      className: j.badge,
       value: n
     })), (0, i.jsxs)("div", {
-      className: C.name,
+      className: j.name,
       children: [(0, i.jsx)("span", {
-        className: C.match,
+        className: j.match,
         children: r
       }), e, (0, i.jsx)("span", {
-        className: C.username,
+        className: j.username,
         children: _.ZP.getUserTag(t)
       })]
     })
@@ -417,9 +417,9 @@ class I extends s.Component {
       mentions: t
     } = this.props;
     return (0, i.jsxs)("div", {
-      className: null != t && t > 0 ? C.contentUnread : C.contentDefault,
+      className: null != t && t > 0 ? j.contentUnread : j.contentDefault,
       children: [this.renderIcon(), this.renderName(), (0, i.jsx)("div", {
-        className: C.misc,
+        className: j.misc,
         children: e
       })]
     })
@@ -468,17 +468,17 @@ class y extends s.Component {
       application: t
     } = this.props;
     return (0, i.jsxs)("div", {
-      className: C.contentDefault,
+      className: j.contentDefault,
       children: [(0, i.jsx)("div", {
-        className: C.iconContainer,
+        className: j.iconContainer,
         children: (0, i.jsx)(p.Z, {
           tabIndex: -1,
-          className: C.gameIcon,
+          className: j.gameIcon,
           game: t,
-          size: C.gameIconSize
+          size: j.gameIconSize
         })
       }), t.name, (0, i.jsx)("div", {
-        className: C.misc,
+        className: j.misc,
         children: e
       })]
     })
@@ -504,11 +504,11 @@ class y extends s.Component {
 class A extends s.Component {
   render() {
     return (0, i.jsx)("div", {
-      className: C.__invalid_resultDefault,
+      className: j.__invalid_resultDefault,
       children: (0, i.jsx)("div", {
-        className: C.contentDefault,
+        className: j.contentDefault,
         children: (0, i.jsx)("div", {
-          className: C.header,
+          className: j.header,
           children: this.props.children
         })
       })
@@ -532,12 +532,12 @@ class P extends s.Component {
       size: "xs",
       color: "currentColor"
     })), (0, i.jsxs)("div", {
-      className: C.contentDefault,
+      className: j.contentDefault,
       children: [(0, i.jsx)("div", {
-        className: C.iconContainer,
+        className: j.iconContainer,
         children: t
       }), e, (0, i.jsx)("div", {
-        className: C.misc,
+        className: j.misc,
         children: r
       })]
     })
@@ -610,15 +610,15 @@ class R extends s.Component {
         })
     }
     return (0, i.jsxs)("div", {
-      className: C.contentDefault,
+      className: j.contentDefault,
       children: [(0, i.jsx)("div", {
-        className: C.iconContainer,
+        className: j.iconContainer,
         children: t
       }), (0, i.jsx)("div", {
-        className: C.name,
+        className: j.name,
         children: e
       }), (0, i.jsx)("div", {
-        className: C.misc,
+        className: j.misc,
         children: r
       })]
     })

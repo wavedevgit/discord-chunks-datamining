@@ -9,14 +9,14 @@ var r = n(200651),
   s = n.n(a),
   o = n(642128),
   i = n(873546),
-  c = n(481060),
-  d = n(774078),
+  d = n(481060),
+  c = n(774078),
   u = n(388032),
   m = n(546277),
   g = n(781385),
-  f = n(585616);
+  h = n(585616);
 
-function h(e) {
+function f(e) {
   let {
     endDate: t
   } = e, {
@@ -24,12 +24,12 @@ function h(e) {
     hours: l,
     minutes: a,
     seconds: s
-  } = (0, d.Z)(t), o = function(e, t, n, r) {
+  } = (0, c.Z)(t), o = function(e, t, n, r) {
     let l = (e, t) => "".concat(e.toString().padStart(2, "0")).concat(t),
       a = [];
     return e > 0 && a.push(l(e, u.NW.string(u.t.QJyuxc))), (t > 0 || a.length > 0) && a.push(l(t, u.NW.string(u.t["1LyF1t"]))), (n > 0 || a.length > 0) && a.push(l(n, u.NW.string(u.t.n7dksL))), a.push(l(r, u.NW.string(u.t["6m/6nJ"]))), a.join(":")
   }(n, l, a, s);
-  return (0, r.jsx)(c.Text, {
+  return (0, r.jsx)(d.Text, {
     variant: "heading-md/medium",
     className: m.countdown,
     tag: "div",
@@ -46,7 +46,7 @@ let p = l.memo(function(e) {
     isVisible: n,
     displayOptions: l,
     isFullScreen: a
-  } = e, d = (0, c.q_F)({
+  } = e, c = (0, d.q_F)({
     transform: "translateX(-50%) ".concat(n ? "translateY(-75%)" : "translateY(0%)"),
     opacity: +!!n,
     config: {
@@ -74,8 +74,8 @@ let p = l.memo(function(e) {
         })
       }
       return e
-    }({}, l.style, d),
-    children: [(0, r.jsx)(c.Text, {
+    }({}, l.style, c),
+    children: [(0, r.jsx)(d.Text, {
       variant: "text-md/medium",
       className: m.countdownLabel,
       children: l.label()
@@ -84,7 +84,7 @@ let p = l.memo(function(e) {
       className: m.countdownIcon,
       alt: "",
       "aria-hidden": !0
-    }), (0, r.jsx)(h, {
+    }), (0, r.jsx)(f, {
       endDate: t
     }), (0, r.jsx)("img", {
       src: g.Z,
@@ -92,7 +92,7 @@ let p = l.memo(function(e) {
       alt: "",
       "aria-hidden": !0
     }), (0, r.jsx)("img", {
-      src: f.Z,
+      src: h.Z,
       className: s()(m.sparkles, m.right),
       alt: "",
       "aria-hidden": !0

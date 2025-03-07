@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => g
 }), n(47120);
@@ -52,15 +52,15 @@ function g(e) {
     route: c.j.HOME
   }), {
     route: f
-  } = g, x = () => {
+  } = g, b = () => {
     h({
       route: c.j.HOME
     })
-  }, b = e => {
+  }, N = e => {
     h(m({
       route: c.j.SWITCH_APP_PLANS
-    }, e)), n(u.NW.string(u.t.VFqtkJ), x)
-  }, [N, _] = i.useState({});
+    }, e)), n(u.NW.string(u.t.VFqtkJ), b)
+  }, [x, _] = i.useState({});
   i.useEffect(() => {
     for (let n of t) {
       var e;
@@ -80,7 +80,7 @@ function g(e) {
   }, [t]);
   let {
     loadState: E
-  } = (0, l.qz)(), C = E !== l.jd.LOADED;
+  } = (0, l.qz)(), j = E !== l.jd.LOADED;
   switch (f) {
     case c.j.HOME:
       return (0, r.jsx)(r.Fragment, {
@@ -88,14 +88,14 @@ function g(e) {
           var t;
           return (0, r.jsx)(o.Z, {
             subscription: e,
-            navigateToSwitchPlan: b,
-            loadingState: C ? o.G.LOADING : null !== (t = N[e.id]) && void 0 !== t ? t : o.G.LOADING
+            navigateToSwitchPlan: N,
+            loadingState: j ? o.G.LOADING : null !== (t = x[e.id]) && void 0 !== t ? t : o.G.LOADING
           }, e.id)
         })
       });
     case c.j.SWITCH_APP_PLANS:
       let {
-        route: j
+        route: C
       } = g, O = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
@@ -112,7 +112,7 @@ function g(e) {
         return i
       }(g, ["route"]);
       return (0, r.jsx)(d.Z, p(m({}, O), {
-        navigateToHome: x
+        navigateToHome: b
       }));
     default:
       (0, s.vE)(f)

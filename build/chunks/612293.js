@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  default: () => C,
+  default: () => j,
   f: () => E
 }), n(47120);
 var r = n(200651),
@@ -17,9 +17,9 @@ var r = n(200651),
   g = n(884697),
   h = n(709999),
   f = n(22267),
-  x = n(594174),
-  b = n(981631),
-  N = n(388032),
+  b = n(594174),
+  N = n(981631),
+  x = n(388032),
   _ = n(964021);
 let E = () => {
   (0, o.ZDy)(async () => {
@@ -47,7 +47,7 @@ let E = () => {
   })
 };
 
-function C(e) {
+function j(e) {
   let {
     transitionState: t,
     onClose: n
@@ -55,22 +55,22 @@ function C(e) {
   return (0, r.jsx)(o.Y0X, {
     transitionState: t,
     size: o.CgR.DYNAMIC,
-    children: (0, r.jsx)(j, {
+    children: (0, r.jsx)(C, {
       onClose: n
     })
   })
 }
 
-function j(e) {
+function C(e) {
   let {
     onClose: t
-  } = e, n = (0, l.e7)([x.default], () => x.default.getCurrentUser()), {
+  } = e, n = (0, l.e7)([b.default], () => b.default.getCurrentUser()), {
     available: s,
     purchased: a
   } = (0, g.yV)(), d = a.find(e => {
     var t, r;
     return e.skuId === (null == n ? void 0 : null === (r = n.collectibles) || void 0 === r ? void 0 : null === (t = r.nameplate) || void 0 === t ? void 0 : t.skuId)
-  }), [p, h] = (0, i.useState)(null != d ? d : null), [f, b] = (0, i.useState)(null != d), E = (0, i.useCallback)(() => {
+  }), [p, h] = (0, i.useState)(null != d ? d : null), [f, N] = (0, i.useState)(null != d), E = (0, i.useCallback)(() => {
     t(), (0, m.mK)({
       analyticsLocations: [u.Z.USER_SETTINGS_NAMEPLATE_MODAL],
       analyticsSource: u.Z.USER_SETTINGS_NAMEPLATE_MODAL,
@@ -83,7 +83,7 @@ function j(e) {
       className: _.header,
       children: [(0, r.jsx)(o.X6q, {
         variant: "heading-lg/semibold",
-        children: N.NW.string(N.t.NzNLv7)
+        children: x.NW.string(x.t.NzNLv7)
       }), (0, r.jsx)(o.P3F, {
         onClick: t,
         className: _.close,
@@ -94,7 +94,7 @@ function j(e) {
       children: [(0, r.jsx)(O, {
         selected: p,
         onSelect: (e, t) => {
-          h(e), b(null != t && t)
+          h(e), N(null != t && t)
         },
         available: s,
         purchased: a,
@@ -111,7 +111,7 @@ function j(e) {
         onClick: t,
         children: (0, r.jsx)(o.Text, {
           variant: "text-sm/medium",
-          children: N.NW.string(N.t.y1MYys)
+          children: x.NW.string(x.t.y1MYys)
         })
       }), !1 === f && null != p ? (0, r.jsx)(o.zxk, {
         className: _.goToShopButton,
@@ -120,14 +120,14 @@ function j(e) {
         children: (0, r.jsx)(o.Text, {
           color: "always-white",
           variant: "text-sm/medium",
-          children: N.NW.string(N.t.ABkyQk)
+          children: x.NW.string(x.t.ABkyQk)
         })
       }) : (0, r.jsx)(o.zxk, {
         disabled: null == p,
         onClick: () => {
           (0, c.KP)(p), t()
         },
-        children: N.NW.string(N.t.daaiqK)
+        children: x.NW.string(x.t.daaiqK)
       })]
     })]
   })
@@ -141,13 +141,13 @@ function O(e) {
     purchased: s,
     onShop: a
   } = e;
-  return null == (0, l.e7)([x.default], () => x.default.getCurrentUser()) ? null : (0, r.jsxs)(o.u2D, {
+  return null == (0, l.e7)([b.default], () => b.default.getCurrentUser()) ? null : (0, r.jsxs)(o.u2D, {
     className: _.inventory,
     children: [(0, r.jsx)(o.Text, {
       className: _.inventoryTitle,
       color: "text-secondary",
       variant: "text-xs/semibold",
-      children: N.NW.string(N.t["6wbgS0"]).toLocaleUpperCase()
+      children: x.NW.string(x.t["6wbgS0"]).toLocaleUpperCase()
     }), (0, r.jsxs)("div", {
       className: _.inventoryControls,
       children: [(0, r.jsxs)(o.P3F, {
@@ -155,25 +155,25 @@ function O(e) {
         onClick: () => n(null),
         children: [(0, r.jsx)(o.t6m, {}), (0, r.jsx)(o.Text, {
           variant: "text-xs/semibold",
-          children: N.NW.string(N.t["3i+W8/"])
+          children: x.NW.string(x.t["3i+W8/"])
         })]
       }), (0, r.jsxs)(o.P3F, {
         className: _.inventoryControlsButton,
         onClick: a,
         children: [(0, r.jsx)(o.EOn, {}), (0, r.jsx)(o.Text, {
           variant: "text-xs/semibold",
-          children: N.NW.string(N.t.cFfWg4)
+          children: x.NW.string(x.t.cFfWg4)
         })]
       })]
     }), (0, r.jsx)(o.Text, {
       className: _.inventoryDescriptionTitle,
       color: "text-secondary",
       variant: "text-xs/semibold",
-      children: N.NW.string(N.t.SNAtBg)
+      children: x.NW.string(x.t.SNAtBg)
     }), (0, r.jsx)(o.Text, {
       className: _.inventoryDescription,
       variant: "text-sm/normal",
-      children: N.NW.string(N.t["3gaDLS"])
+      children: x.NW.string(x.t["3gaDLS"])
     }), (0, r.jsxs)("div", {
       className: _.list,
       children: [s.map(e => (0, r.jsx)(v, {
@@ -196,7 +196,7 @@ function v(e) {
     isPurchased: n = !1,
     isSelected: s = !1,
     onClick: c
-  } = e, d = (0, l.e7)([x.default], () => x.default.getCurrentUser()), [u, m] = (0, i.useState)(!1);
+  } = e, d = (0, l.e7)([b.default], () => b.default.getCurrentUser()), [u, m] = (0, i.useState)(!1);
   return null == d ? null : (0, r.jsxs)(o.P3F, {
     className: a()(_.nameplateItem, {
       [_.selected]: s
@@ -222,7 +222,7 @@ function S(e) {
   let {
     selectedNameplate: t,
     purchased: n
-  } = e, i = (0, l.e7)([x.default], () => x.default.getCurrentUser()), s = (0, l.e7)([p.Z], () => p.Z.getProduct(null == t ? void 0 : t.skuId)), a = (0, d.ZP)() !== b.BRd.LIGHT;
+  } = e, i = (0, l.e7)([b.default], () => b.default.getCurrentUser()), s = (0, l.e7)([p.Z], () => p.Z.getProduct(null == t ? void 0 : t.skuId)), a = (0, d.ZP)() !== N.BRd.LIGHT;
   return null == i ? null : (0, r.jsx)("div", {
     className: _.preview,
     children: n || null == t ? (0, r.jsx)(T, {
@@ -303,7 +303,7 @@ function I(e) {
         children: null == s ? void 0 : s.name
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
-        children: N.NW.string(N.t.my5jxM)
+        children: x.NW.string(x.t.my5jxM)
       })]
     })]
   })

@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => N
+  Z: () => x
 });
 var r = n(200651),
   i = n(192379),
@@ -16,19 +16,19 @@ var r = n(200651),
   g = n(504983),
   h = n(981631),
   f = n(474936),
-  x = n(388032),
-  b = n(669228);
+  b = n(388032),
+  N = n(669228);
 
-function N(e) {
+function x(e) {
   let {
     user: t,
     guild: n,
     className: s,
-    sectionTitle: N,
+    sectionTitle: x,
     forcedDivider: _ = !1,
     withTutorial: E = !1,
-    showBorder: C = !1,
-    isTryItOutFlow: j = !1,
+    showBorder: j = !1,
+    isTryItOutFlow: C = !1,
     initialSelectedEffectId: O
   } = e, v = (0, m.Kg)(t, n), S = u.ZP.canUsePremiumProfileCustomization(t), {
     analyticsLocations: T
@@ -52,28 +52,28 @@ function N(e) {
     forcedDivider: _,
     borderType: g.Y.PREMIUM,
     hasBackground: !0,
-    title: N,
-    showBorder: C,
+    title: x,
+    showBorder: j,
     errors: y,
     className: s,
     children: (0, r.jsxs)("div", {
-      className: b.buttonsContainer,
+      className: N.buttonsContainer,
       children: [(0, r.jsx)(R, {
         size: l.zxk.Sizes.SMALL,
         onClick: A,
         className: a()({
-          [b.buttonHighlighted]: E
+          [N.buttonHighlighted]: E
         }),
-        children: x.NW.string(x.t["0nEVoK"])
-      }), (j || void 0 !== I ? null != I : null != v) && (0, r.jsx)(l.zxk, {
-        className: b.removeButton,
+        children: b.NW.string(b.t["0nEVoK"])
+      }), (C || void 0 !== I ? null != I : null != v) && (0, r.jsx)(l.zxk, {
+        className: N.removeButton,
         color: l.zxk.Colors.PRIMARY,
         look: l.zxk.Looks.LINK,
         size: l.zxk.Sizes.SMALL,
         onClick: function() {
           (0, m.s6)(null, v, null == n ? void 0 : n.id)
         },
-        children: P ? x.NW.string(x.t.GJ3Fcn) : x.NW.string(x.t["Ld+f5e"])
+        children: P ? b.NW.string(b.t.GJ3Fcn) : b.NW.string(b.t["Ld+f5e"])
       })]
     })
   })

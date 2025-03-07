@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => g
 }), n(47120);
@@ -21,12 +21,12 @@ function g(e) {
     g = (0, a.e7)([l.Z], () => l.Z.getGuild(null == i ? void 0 : i.guild_id)),
     [h, f] = r.useState(!1),
     {
-      fetchSubscriptionsSettings: x
+      fetchSubscriptionsSettings: b
     } = (0, c.JH)();
   r.useEffect(() => {
-    h && null != g && null == d.Z.getSubscriptionSettings(g.id) && x(g.id)
-  }, [h, g, x]);
-  let b = null == n ? void 0 : function(e) {
+    h && null != g && null == d.Z.getSubscriptionSettings(g.id) && b(g.id)
+  }, [h, g, b]);
+  let N = null == n ? void 0 : function(e) {
     let {
       subscription: t
     } = e, n = s()(t.currentPeriodEnd).format("M/D/YY"), r = null != t.price ? (0, o.T4)(t.price, t.currency) : "", i = s()(t.createdAt).format("M/D/YY"), a = t.status === m.O0b.CANCELED, l = t.status === m.O0b.PAST_DUE, c = null != t.trialId;
@@ -48,6 +48,6 @@ function g(e) {
     handleToggleExpanded: () => f(e => !e),
     listing: n,
     groupListing: i,
-    subscriptionInfo: b
+    subscriptionInfo: N
   }
 }

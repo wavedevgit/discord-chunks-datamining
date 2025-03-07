@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => R
 });
@@ -17,13 +17,13 @@ var i = n(512722),
   g = n(513901),
   h = n(451392),
   f = n(906364),
-  x = n(643879),
-  b = n(621853),
-  N = n(271383),
+  b = n(643879),
+  N = n(621853),
+  x = n(271383),
   _ = n(594174),
   E = n(74538),
-  C = n(51144),
-  j = n(18438),
+  j = n(51144),
+  C = n(18438),
   O = n(778825),
   v = n(52597),
   S = n(430131),
@@ -98,14 +98,14 @@ function R(e) {
       errors: O.Z.getErrors(),
       guild: O.Z.getGuild()
     }
-  }), G = (0, x.SD)({
+  }), G = (0, b.SD)({
     userId: Z.id,
     image: w
   }), F = null != D ? D : V;
   s()(null != F, "guild should not be null");
   let H = (0, o.gS)(F.id),
-    z = (0, a.e7)([N.ZP], () => null == F.id ? null : N.ZP.getMember(F.id, Z.id)),
-    Y = (0, a.e7)([b.Z], () => b.Z.getGuildMemberProfile(Z.id, F.id)),
+    z = (0, a.e7)([x.ZP], () => null == F.id ? null : x.ZP.getMember(F.id, Z.id)),
+    Y = (0, a.e7)([N.Z], () => N.Z.getGuildMemberProfile(Z.id, F.id)),
     K = E.ZP.canUsePremiumProfileCustomization(Z),
     q = (0, c.GH)(w, null == z ? void 0 : z.avatar),
     X = (0, c.f$)(W, null == Y ? void 0 : Y.banner),
@@ -119,7 +119,7 @@ function R(e) {
     className: y.sectionsContainer,
     children: [(0, r.jsx)(S.Z, {
       errors: null !== (i = null == U ? void 0 : U.nick) && void 0 !== i ? i : null == H ? void 0 : H.nick,
-      username: C.ZP.getName(Z),
+      username: j.ZP.getName(Z),
       pendingNick: k,
       currentNick: null == z ? void 0 : z.nick,
       guild: F
@@ -147,7 +147,7 @@ function R(e) {
           })]
         }),
         showRemoveAvatarButton: q,
-        onAvatarChange: e => ee(e, null == z ? void 0 : z.avatar, j.Re),
+        onAvatarChange: e => ee(e, null == z ? void 0 : z.avatar, C.Re),
         errors: null == U ? void 0 : U.avatar,
         guildId: F.id,
         disabled: !K
@@ -182,7 +182,7 @@ function R(e) {
       }, "effect"), (0, r.jsx)(p.Z, {
         showRemoveBannerButton: X,
         errors: null == U ? void 0 : U.banner,
-        onBannerChange: e => ee(e, null == Y ? void 0 : Y.banner, j.g_),
+        onBannerChange: e => ee(e, null == Y ? void 0 : Y.banner, C.g_),
         guildId: null == F ? void 0 : F.id,
         disabled: !K
       }, "banner"), (0, r.jsx)(h.Z, {

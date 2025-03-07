@@ -14,8 +14,8 @@ var r = n(200651),
   m = n(615287),
   h = n(594190),
   p = n(306381),
-  f = n(371651),
-  x = n(829907),
+  x = n(371651),
+  f = n(829907),
   b = n(610394),
   _ = n(355863),
   g = n(449224),
@@ -23,9 +23,9 @@ var r = n(200651),
   j = n(572004),
   y = n(70956),
   C = n(145597),
-  O = n(246992),
-  N = n(981631),
-  T = n(757744),
+  N = n(246992),
+  T = n(981631),
+  O = n(757744),
   S = n(388032),
   E = n(637460),
   k = n(710662);
@@ -62,8 +62,8 @@ function w(e, t) {
   }), e
 }
 let P = {
-    [N.Odu.CLICK_ZONE_DEBUG]: e => w(I({
-      type: N.Odu.CLICK_ZONE_DEBUG,
+    [T.Odu.CLICK_ZONE_DEBUG]: e => w(I({
+      type: T.Odu.CLICK_ZONE_DEBUG,
       id: (0, o.Z)(),
       layoutId: e,
       anchor: {
@@ -74,11 +74,11 @@ let P = {
         width: 100,
         height: 100
       }
-    }, _.Z.getWidgetDefaultSettings(N.Odu.CLICK_ZONE_DEBUG)), {
+    }, _.Z.getWidgetDefaultSettings(T.Odu.CLICK_ZONE_DEBUG)), {
       pinned: !0
     }),
-    [N.Odu.PERFORMANCE_DEBUG]: e => w(I({
-      type: N.Odu.PERFORMANCE_DEBUG,
+    [T.Odu.PERFORMANCE_DEBUG]: e => w(I({
+      type: T.Odu.PERFORMANCE_DEBUG,
       id: (0, o.Z)(),
       layoutId: e,
       anchor: {
@@ -90,7 +90,7 @@ let P = {
         width: "auto",
         height: "auto"
       }
-    }, _.Z.getWidgetDefaultSettings(N.Odu.PERFORMANCE_DEBUG)), {
+    }, _.Z.getWidgetDefaultSettings(T.Odu.PERFORMANCE_DEBUG)), {
       pinned: !0
     })
   },
@@ -150,7 +150,7 @@ function L(e) {
     }), (0, r.jsxs)(c.Text, {
       variant: "text-sm/normal",
       color: "text-normal",
-      children: ["fullscreenType: ", (0, x.sS)(t.fullscreenType)]
+      children: ["fullscreenType: ", (0, f.sS)(t.fullscreenType)]
     }), (0, r.jsxs)(c.Text, {
       variant: "text-sm/normal",
       color: "text-normal",
@@ -170,7 +170,7 @@ function L(e) {
     }), (0, r.jsxs)(c.Text, {
       variant: "text-sm/normal",
       color: "text-normal",
-      children: ["overlayMethod: ", (0, x.P_)(t.overlayMethod)]
+      children: ["overlayMethod: ", (0, f.P_)(t.overlayMethod)]
     }), (0, r.jsxs)(c.Text, {
       variant: "text-sm/normal",
       color: "text-normal",
@@ -198,7 +198,7 @@ function L(e) {
 function A(e) {
   let {
     pid: t
-  } = e, n = (0, s.cj)([v.default], () => v.default.getOverlayPIDStatuses()), a = (0, s.cj)([f.default], () => f.default.getTrackedGames()), i = (0, s.e7)([v.default], () => v.default.isInputLocked(t), [t]), l = (0, s.e7)([v.default], () => v.default.DEV_isInputLockedV3(t), [t]), o = (0, s.e7)([v.default], () => v.default.DEV_isInputLocked(t), [t]), d = (0, s.e7)([v.default], () => v.default.isReady(t), [t]);
+  } = e, n = (0, s.cj)([v.default], () => v.default.getOverlayPIDStatuses()), a = (0, s.cj)([x.default], () => x.default.getTrackedGames()), i = (0, s.e7)([v.default], () => v.default.isInputLocked(t), [t]), l = (0, s.e7)([v.default], () => v.default.DEV_isInputLockedV3(t), [t]), o = (0, s.e7)([v.default], () => v.default.DEV_isInputLocked(t), [t]), d = (0, s.e7)([v.default], () => v.default.isReady(t), [t]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(c.Text, {
       variant: "text-md/semibold",
@@ -259,13 +259,13 @@ function A(e) {
 }
 
 function D(e) {
-  let t = Z(Object.values((0, s.Wu)([_.Z], () => _.Z.getWidgetsForLayout(T.$))), e);
+  let t = Z(Object.values((0, s.Wu)([_.Z], () => _.Z.getWidgetsForLayout(O.$))), e);
   return [t, () => {
     if (null != t)(0, d.E9)(t.id);
     else {
       let t = P[e];
       if (null == t) return;
-      let n = t(T.$);
+      let n = t(O.$);
       (0, d.A4)(n)
     }
   }]
@@ -273,7 +273,7 @@ function D(e) {
 
 function B() {
   var e, t;
-  let [n, i] = D(N.Odu.CLICK_ZONE_DEBUG), [o, d] = D(N.Odu.PERFORMANCE_DEBUG), _ = (0, s.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(p.G.ClickZones)), g = (0, s.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(p.G.WidgetAreas)), j = (0, s.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(p.G.DisabledGPUBoost)), T = (0, s.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(p.G.ForceGPUBoost)), S = (0, s.e7)([f.default], () => f.default.getForcedRenderMode()), [P, Z] = a.useState({}), [R, B] = a.useState(S), M = e => {
+  let [n, i] = D(T.Odu.CLICK_ZONE_DEBUG), [o, d] = D(T.Odu.PERFORMANCE_DEBUG), _ = (0, s.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(p.G.ClickZones)), g = (0, s.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(p.G.WidgetAreas)), j = (0, s.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(p.G.DisabledGPUBoost)), O = (0, s.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(p.G.ForceGPUBoost)), S = (0, s.e7)([x.default], () => x.default.getForcedRenderMode()), [P, Z] = a.useState({}), [R, B] = a.useState(S), M = e => {
     B(e), u.Z.forceRenderMode(e)
   }, z = [{
     label: m.R5.UNSET,
@@ -292,7 +292,7 @@ function B() {
     value: m.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION
   }].map(e => w(I({}, e), {
     label: "".concat(e.label, " ").concat(S === e.value ? "(current)" : "")
-  })), F = (0, s.cj)([f.default], () => f.default.getTrackedGames()), G = (0, s.e7)([v.default], () => v.default.getFocusedPID()), W = (0, s.e7)([v.default], () => v.default.isFocusedPidOutOfProcess()), U = (0, C.getPID)(), H = (0, s.e7)([f.default], () => f.default.isOverlayOOPEnabledForPid(U), [U]), V = (0, s.e7)([h.ZP], () => h.ZP.getRunningGames());
+  })), F = (0, s.cj)([x.default], () => x.default.getTrackedGames()), G = (0, s.e7)([v.default], () => v.default.getFocusedPID()), W = (0, s.e7)([v.default], () => v.default.isFocusedPidOutOfProcess()), U = (0, C.getPID)(), H = (0, s.e7)([x.default], () => x.default.isOverlayOOPEnabledForPid(U), [U]), V = (0, s.e7)([h.ZP], () => h.ZP.getRunningGames());
   a.useEffect(() => {
     Z(e => {
       for (let t of Object.keys(F)) e[Number(t)] = F[Number(t)];
@@ -304,7 +304,7 @@ function B() {
     let e = h.ZP.getRunningGames(),
       t = [],
       n = Date.now();
-    for (let r of e) t.push((0, x.hj)(r.pid, 0).then(e => [r.pid, e, n]));
+    for (let r of e) t.push((0, f.hj)(r.pid, 0).then(e => [r.pid, e, n]));
     let r = await Promise.all(t);
     Y(e => r.reduce((e, t) => {
       var n;
@@ -406,7 +406,7 @@ function B() {
           text: "Forces GPU Boost, which can help with performance when games compete for GPU resources.",
           children: e => (0, r.jsx)("div", w(I({}, e), {
             children: (0, r.jsx)(c.XZJ, {
-              value: T,
+              value: O,
               onChange: () => ee(),
               size: 18,
               disabled: j,
@@ -467,7 +467,7 @@ function B() {
             isSelected: e => e === R,
             options: z,
             select: M,
-            popoutLayerContext: O.O$
+            popoutLayerContext: N.O$
           })
         }))
       }), er.length > 0 && (0, r.jsx)(c.ua7, {
@@ -558,7 +558,7 @@ function B() {
                   return (0, r.jsx)(c.Text, {
                     variant: "text-xs/normal",
                     color: "text-normal",
-                    children: "".concat(n, ":").concat((0, x.sS)(n), " @ ").concat(a)
+                    children: "".concat(n, ":").concat((0, f.sS)(n), " @ ").concat(a)
                   }, "".concat(e.pid, "-").concat(n, "-").concat(a))
                 })]
               }, e.pid)

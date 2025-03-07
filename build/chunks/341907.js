@@ -108,7 +108,7 @@ function k(e, t) {
   (0, s.ZDy)(async () => {
     let {
       default: i
-    } = await Promise.all([n.e("8016"), n.e("86620")]).then(n.bind(n, 824393));
+    } = await Promise.resolve().then(n.bind(n, 824393));
     return n => (0, r.jsx)(i, D(P({}, n), {
       quest: e,
       location: t

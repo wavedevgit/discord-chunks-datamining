@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => j
+  Z: () => C
 }), n(47120), n(773603);
 var r = n(200651),
   i = n(192379),
@@ -16,9 +16,9 @@ var r = n(200651),
   g = n(706454),
   h = n(553795),
   f = n(63063),
-  x = n(981631),
-  b = n(856651),
-  N = n(388032),
+  b = n(981631),
+  N = n(856651),
+  x = n(388032),
   _ = n(113831);
 
 function E(e) {
@@ -34,48 +34,48 @@ function E(e) {
     } finally {
       d(!1)
     }
-  }, [n, o]), C = null;
+  }, [n, o]), j = null;
   switch (n.type) {
-    case x.ABu.REDDIT:
-      C = (0, p.oP)(m, _.metadataItem);
+    case b.ABu.REDDIT:
+      j = (0, p.oP)(m, _.metadataItem);
       break;
-    case x.ABu.STEAM:
-      C = (0, p.Dq)(m, _.metadataItem);
+    case b.ABu.STEAM:
+      j = (0, p.Dq)(m, _.metadataItem);
       break;
-    case x.ABu.TWITTER:
-      C = (0, p.rJ)(m, _.metadataItem);
+    case b.ABu.TWITTER:
+      j = (0, p.rJ)(m, _.metadataItem);
       break;
-    case x.ABu.EBAY:
-      C = (0, p.ul)(m, _.metadataItem);
+    case b.ABu.EBAY:
+      j = (0, p.ul)(m, _.metadataItem);
       break;
-    case x.ABu.PAYPAL:
-      C = (0, p.li)(m, _.metadataItem);
+    case b.ABu.PAYPAL:
+      j = (0, p.li)(m, _.metadataItem);
       break;
-    case x.ABu.TIKTOK:
-      C = (0, p.hf)(m, _.metadataItem)
+    case b.ABu.TIKTOK:
+      j = (0, p.hf)(m, _.metadataItem)
   }
-  let j = (0, u.FI)(m[b.PC.CREATED_AT], h),
+  let C = (0, u.FI)(m[N.PC.CREATED_AT], h),
     O = null,
-    v = N.NW.string(N.t.wzzjk5);
-  return (null == C || 0 === C.length) && null == j && (O = (0, r.jsx)(l.Text, {
+    v = x.NW.string(x.t.wzzjk5);
+  return (null == j || 0 === j.length) && null == C && (O = (0, r.jsx)(l.Text, {
     variant: "text-xs/normal",
     color: "header-secondary",
-    children: N.NW.format(N.t.Up2ni4, {
-      helpdeskUrl: f.Z.getArticleURL(x.BhN.CONNECTION_DETAILS)
+    children: x.NW.format(x.t.Up2ni4, {
+      helpdeskUrl: f.Z.getArticleURL(b.BhN.CONNECTION_DETAILS)
     })
-  }, "label"), v = N.NW.string(N.t["LVh3//"])), a && (v = N.NW.string(N.t.i4jeWV)), (0, r.jsxs)("div", {
+  }, "label"), v = x.NW.string(x.t["LVh3//"])), a && (v = x.NW.string(x.t.i4jeWV)), (0, r.jsxs)("div", {
     className: _.metadataContainer,
-    children: [O, null == C ? void 0 : C.map((e, t) => (0, r.jsxs)(r.Fragment, {
-      children: [e, t < C.length - 1 ? (0, r.jsx)("span", {
+    children: [O, null == j ? void 0 : j.map((e, t) => (0, r.jsxs)(r.Fragment, {
+      children: [e, t < j.length - 1 ? (0, r.jsx)("span", {
         className: _.dot
       }) : null]
-    })), null != C && C.length > 0 && null != j ? (0, r.jsx)("div", {
+    })), null != j && j.length > 0 && null != C ? (0, r.jsx)("div", {
       className: _.dot
-    }) : null, null != j ? (0, r.jsx)(l.Text, {
+    }) : null, null != C ? (0, r.jsx)(l.Text, {
       variant: "text-xs/normal",
       color: "header-secondary",
-      children: N.NW.format(N.t["9rfonp"], {
-        date: j
+      children: x.NW.format(x.t["9rfonp"], {
+        date: C
       })
     }, "member-since") : null, (0, r.jsx)(l.zxk, {
       className: _.metadataRefreshButton,
@@ -84,14 +84,14 @@ function E(e) {
       size: l.zxk.Sizes.MIN,
       submitting: c,
       disabled: a,
-      "aria-label": N.NW.string(N.t.sCkLYG),
+      "aria-label": x.NW.string(x.t.sCkLYG),
       onClick: a ? void 0 : E,
       children: v
     }, "refresh-button")]
   })
 }
 
-function C(e) {
+function j(e) {
   let {
     account: t,
     handleRefresh: n,
@@ -100,15 +100,15 @@ function C(e) {
   i.useEffect(() => {
     p(t.visibility), h(t.metadataVisibility)
   }, [t]);
-  let x = d.Z.get(t.type),
-    b = !0 === x.hasMetadata;
+  let b = d.Z.get(t.type),
+    N = !0 === b.hasMetadata;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: _.activityRow,
       children: [(0, r.jsx)("img", {
-        alt: x.name,
+        alt: b.name,
         className: _.connectionIcon,
-        src: (0, a.wj)(f) ? x.icon.darkSVG : x.icon.lightSVG
+        src: (0, a.wj)(f) ? b.icon.darkSVG : b.icon.lightSVG
       }), (0, r.jsxs)("div", {
         className: _.activitySettings,
         children: [(0, r.jsxs)(l.j7V, {
@@ -131,13 +131,13 @@ function C(e) {
           children: [(0, r.jsx)(l.Text, {
             variant: "text-md/semibold",
             color: "header-primary",
-            children: x.name
-          }), b && (0, r.jsx)(E, {
+            children: b.name
+          }), N && (0, r.jsx)(E, {
             account: t,
             refreshed: s.includes(t.id),
             handleRefresh: n
           })]
-        }), b && (0, r.jsx)(l.j7V, {
+        }), N && (0, r.jsx)(l.j7V, {
           className: _.additionalDetailsSwitch,
           hideBorder: !0,
           disabled: 1 !== u || null == t.metadata,
@@ -158,7 +158,7 @@ function C(e) {
           children: (0, r.jsx)(l.Text, {
             variant: "text-md/normal",
             color: "header-secondary",
-            children: N.NW.string(N.t["3l78ws"])
+            children: x.NW.string(x.t["3l78ws"])
           })
         })]
       })]
@@ -168,7 +168,7 @@ function C(e) {
   })
 }
 
-function j() {
+function C() {
   let e = (0, s.e7)([h.Z], () => h.Z.getAccounts()),
     t = i.useMemo(() => e.filter(e => d.Z.isSupported(e.type)), [e]),
     [n, a] = i.useState([]),
@@ -180,8 +180,8 @@ function j() {
     children: [(0, r.jsx)(l.vwX, {
       tag: l.RB0.H5,
       className: _.title,
-      children: N.NW.string(N.t.aw0GVV)
-    }), t.map(e => (0, r.jsx)(C, {
+      children: x.NW.string(x.t.aw0GVV)
+    }), t.map(e => (0, r.jsx)(j, {
       account: e,
       handleRefresh: c,
       refreshedAccountIds: n

@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => x
+  Z: () => b
 }), n(47120), n(266796), n(26686), n(653041), n(230036);
 var r = n(200651),
   i = n(192379),
@@ -23,7 +23,7 @@ function f(e, t) {
   }))
 }
 
-function x() {
+function b() {
   let e = (0, l.cj)([d.Z], () => d.Z.getAllExperimentOverrideDescriptors()),
     t = (0, l.cj)([d.Z], () => d.Z.getRegisteredExperiments()),
     [n, s] = i.useState(""),
@@ -37,7 +37,7 @@ function x() {
       onChange: s,
       onClear: () => s("")
     }), a.length > 0 ? a.map(t => {
-      let n = t.experiment.type === g.xY.GUILD ? N : b;
+      let n = t.experiment.type === g.xY.GUILD ? x : N;
       return (0, r.jsx)(n, {
         experiment: t.experiment,
         experimentId: t.id,
@@ -53,22 +53,22 @@ function x() {
   })
 }
 
-function b(e) {
+function N(e) {
   var t;
   let {
     experiment: n,
     experimentId: s,
     overrideDescriptor: u
-  } = e, [m, p] = i.useState(null != u), [x, b] = i.useState(!1), N = i.useCallback(() => {
+  } = e, [m, p] = i.useState(null != u), [b, N] = i.useState(!1), x = i.useCallback(() => {
     p(e => !e)
-  }, []), _ = (0, l.e7)([d.Z], () => d.Z.getUserExperimentDescriptor(s)), E = (0, l.e7)([d.Z], () => d.Z.getLoadedUserExperiment(s)), C = (0, l.Wu)([d.Z], () => a().sortBy(d.Z.getRecentExposures(g.xY.USER, s), e => {
+  }, []), _ = (0, l.e7)([d.Z], () => d.Z.getUserExperimentDescriptor(s)), E = (0, l.e7)([d.Z], () => d.Z.getLoadedUserExperiment(s)), j = (0, l.Wu)([d.Z], () => a().sortBy(d.Z.getRecentExposures(g.xY.USER, s), e => {
     let [t, n] = e;
     return -n
   }).map(e => {
     let [t, n] = e;
     return "".concat(new Date(n).toLocaleString(), " (").concat(t, ")")
-  })), j = (0, r.jsx)(o.P3F, {
-    onClick: N,
+  })), C = (0, r.jsx)(o.P3F, {
+    onClick: x,
     children: (0, r.jsxs)(o.vwX, {
       tag: o.RB0.H3,
       className: h.title,
@@ -89,7 +89,7 @@ function b(e) {
   return m ? (0, r.jsxs)("div", {
     className: h.group,
     children: [(0, r.jsxs)(o.hjN, {
-      children: [j, (0, r.jsxs)("div", {
+      children: [C, (0, r.jsxs)("div", {
         children: [(0, r.jsx)(o.xJW, {
           title: "Bucket Override",
           children: (0, r.jsx)(o.q4e, {
@@ -116,7 +116,7 @@ function b(e) {
           type: o.geA.DESCRIPTION,
           children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
         }) : null]
-      }), x ? (0, r.jsxs)("div", {
+      }), b ? (0, r.jsxs)("div", {
         children: [(0, r.jsx)(o.vwX, {
           tag: "h5",
           className: h.debugTitle,
@@ -140,13 +140,13 @@ function b(e) {
         }), (0, r.jsx)(o.Text, {
           variant: "code",
           className: h.pre,
-          children: 0 === C.length ? "None" : C.join("\n")
+          children: 0 === j.length ? "None" : j.join("\n")
         })]
       }) : (0, r.jsx)(o.zxk, {
         className: h.debugButton,
         size: o.zxk.Sizes.SMALL,
         look: o.zxk.Looks.BLANK,
-        onClick: () => b(!0),
+        onClick: () => N(!0),
         children: "More Details \xbb"
       })]
     }), (0, r.jsx)(o.$i$, {
@@ -155,17 +155,17 @@ function b(e) {
   }) : (0, r.jsx)("div", {
     className: h.group,
     children: (0, r.jsx)(o.hjN, {
-      children: j
+      children: C
     })
   })
 }
 
-function N(e) {
+function x(e) {
   let {
     experiment: t,
     experimentId: n,
     overrideDescriptor: s
-  } = e, [m, p] = i.useState(null != s), [x, b] = i.useState(!1), N = i.useCallback(() => {
+  } = e, [m, p] = i.useState(null != s), [b, N] = i.useState(!1), x = i.useCallback(() => {
     p(e => !e)
   }, []), _ = (0, l.e7)([d.Z], () => d.Z.getLoadedGuildExperiment(n)), E = (0, l.Wu)([d.Z], () => a().sortBy(d.Z.getRecentExposures(g.xY.GUILD, n), e => {
     let [t, n] = e;
@@ -173,7 +173,7 @@ function N(e) {
   }).map(e => {
     let [t, n] = e;
     return "".concat(new Date(n).toLocaleString(), " (").concat(t, ")")
-  })), [C, j] = (0, l.Wu)([u.Z, d.Z], () => {
+  })), [j, C] = (0, l.Wu)([u.Z, d.Z], () => {
     let e = a().sortBy(a().values(u.Z.getGuilds()), e => e.name.toLowerCase()),
       t = {},
       r = [];
@@ -186,7 +186,7 @@ function N(e) {
     let s = a()(t).keys().map(Number).sort().map(e => "".concat(t[e], " guilds in bucket ").concat(e)).join(", ");
     return [r.join("\n"), s]
   }), O = (0, r.jsx)(o.P3F, {
-    onClick: N,
+    onClick: x,
     children: (0, r.jsxs)(o.vwX, {
       tag: o.RB0.H3,
       className: h.title,
@@ -229,12 +229,12 @@ function N(e) {
         className: h.description,
         children: [(0, r.jsxs)(o.R94, {
           type: o.geA.DESCRIPTION,
-          children: ["Current Assignments: ", j]
+          children: ["Current Assignments: ", C]
         }), null == _ ? (0, r.jsx)(o.R94, {
           type: o.geA.DESCRIPTION,
           children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
         }) : null]
-      }), x ? (0, r.jsxs)("div", {
+      }), b ? (0, r.jsxs)("div", {
         children: [(0, r.jsx)(o.vwX, {
           tag: "h5",
           className: h.debugTitle,
@@ -242,7 +242,7 @@ function N(e) {
         }), (0, r.jsx)(o.Text, {
           variant: "code",
           className: h.pre,
-          children: C
+          children: j
         }), (0, r.jsx)(o.vwX, {
           tag: "h5",
           className: h.debugTitle,
@@ -272,7 +272,7 @@ function N(e) {
         className: h.debugButton,
         size: o.zxk.Sizes.SMALL,
         look: o.zxk.Looks.BLANK,
-        onClick: () => b(!0),
+        onClick: () => N(!0),
         children: "More Details \xbb"
       })]
     }), (0, r.jsx)(o.$i$, {

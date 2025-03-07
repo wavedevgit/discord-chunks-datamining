@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   S: () => I,
   Z: () => y
@@ -17,13 +17,13 @@ var r = n(200651),
   g = n(906732),
   h = n(920321),
   f = n(921801),
-  x = n(695346),
-  b = n(716161),
-  N = n(938117),
+  b = n(695346),
+  N = n(716161),
+  x = n(938117),
   _ = n(131951),
   E = n(626135),
-  C = n(358085),
-  j = n(981631),
+  j = n(358085),
+  C = n(981631),
   O = n(726985),
   v = n(388032),
   S = n(85073);
@@ -62,7 +62,7 @@ function y(e) {
   } = (0, c.cj)([_.Z], () => ({
     currentDeviceId: _.Z.getVideoDeviceId(),
     isVideoAvailable: _.Z.isVideoAvailable()
-  })), k = (0, h.Z)(), W = x.qF.useSetting(), L = Object.values(k).map(e => {
+  })), k = (0, h.Z)(), W = b.qF.useSetting(), L = Object.values(k).map(e => {
     let {
       id: t,
       name: n
@@ -73,7 +73,7 @@ function y(e) {
     }
   });
   return i.useEffect(() => {
-    (0, b.XV)()
+    (0, N.XV)()
   }, []), (0, r.jsxs)(r.Fragment, {
     children: [y(Z), _.Z.isEnabled() ? null : (0, r.jsx)(u.Text, {
       className: S.permissionWarning,
@@ -86,7 +86,7 @@ function y(e) {
       className: S.previewToggle,
       note: v.NW.string(v.t.WNbX4O),
       onChange: e => {
-        x.qF.updateSetting(e), E.default.track(j.rMx.UPDATE_USER_SETTINGS_LOCAL, {
+        b.qF.updateSetting(e), E.default.track(C.rMx.UPDATE_USER_SETTINGS_LOCAL, {
           always_preview_video: e
         })
       },
@@ -110,12 +110,12 @@ function y(e) {
           isDisabled: !w,
           onChange: e => m.Z.setVideoDevice(e),
           "aria-label": v.NW.string(v.t["t9eQ/v"])
-        }), !s && !!(0, C.isWindows)() && !!C.isPlatformEmbedded && o().satisfies(p.Z.os.release, ">=10.0.22000") && (0, r.jsx)(u.R94, {
+        }), !s && !!(0, j.isWindows)() && !!j.isPlatformEmbedded && o().satisfies(p.Z.os.release, ">=10.0.22000") && (0, r.jsx)(u.R94, {
           className: S.cameraDeeplink,
           children: v.NW.format(v.t.aJYgRk, {
             onCameraSettingsClick: () => {
               var e;
-              null == R || R(), window.open((e = Z, (0, C.getPlatform)() === C.PlatformTypes.WINDOWS ? "ms-settings:camera" + (null != e ? "?cameraId=".concat(encodeURIComponent(e.replace(T, "{E5323777-F976-4f5b-9B55-B94699C46E44}"))) : "") : "")), E.default.track(j.rMx.SYSTEM_CAMERA_SETTINGS_OPENED, {
+              null == R || R(), window.open((e = Z, (0, j.getPlatform)() === j.PlatformTypes.WINDOWS ? "ms-settings:camera" + (null != e ? "?cameraId=".concat(encodeURIComponent(e.replace(T, "{E5323777-F976-4f5b-9B55-B94699C46E44}"))) : "") : "")), E.default.track(C.rMx.SYSTEM_CAMERA_SETTINGS_OPENED, {
                 location_stack: D
               })
             }
@@ -124,7 +124,7 @@ function y(e) {
       })
     }), (0, r.jsx)(f.F, {
       setting: O.s6.VOICE_AND_VIDEO_VIDEO_BACKGROUND,
-      children: (0, r.jsx)(N.Z, {
+      children: (0, r.jsx)(x.Z, {
         className: S.spacingTop24,
         onLearnMore: l,
         selectedBackgroundOption: d,

@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => U
 }), n(653041);
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(975298),
   h = n(15640),
   f = n(594174),
-  x = n(78839),
-  b = n(74538),
-  N = n(775412),
+  b = n(78839),
+  N = n(74538),
+  x = n(775412),
   _ = n(104494),
   E = n(639119),
-  C = n(230916),
-  j = n(346497),
+  j = n(230916),
+  C = n(346497),
   O = n(823188),
   v = n(21023),
   S = n(318747),
@@ -54,7 +54,7 @@ function w(e) {
   return e
 }
 let k = () => {
-    let e = (0, j.W1)();
+    let e = (0, C.W1)();
     return (0, r.jsx)(O.Cy, {
       text: e,
       className: A.bogoPillWithSparkles,
@@ -75,7 +75,7 @@ let k = () => {
       } = e,
       i = (0, u.ZP)();
     t = n === I.p9.TIER_0 ? (0, o.wj)(i) ? P : R : (0, o.wj)(i) ? D : Z;
-    let s = (0, b.Px)(n);
+    let s = (0, N.Px)(n);
     return (0, r.jsx)("img", {
       src: t,
       className: A.logo,
@@ -156,7 +156,7 @@ let k = () => {
       {
         analyticsLocations: V
       } = (0, p.ZP)(m.Z.PREMIUM_MARKETING_PLAN_COMPARISON),
-      G = (0, l.e7)([x.ZP], () => x.ZP.hasFetchedSubscriptions()),
+      G = (0, l.e7)([b.ZP], () => b.ZP.hasFetchedSubscriptions()),
       F = (0, h.V)(),
       H = "PlanComparisonTable";
     (0, d.j)({
@@ -169,19 +169,19 @@ let k = () => {
     let z = (0, u.ZP)(),
       Y = (0, o.ap)(z),
       K = (0, l.e7)([f.default], () => f.default.getCurrentUser()),
-      q = (0, b.M5)(K, I.p9.TIER_2),
+      q = (0, N.M5)(K, I.p9.TIER_2),
       X = (0, E.N)(),
       J = null == X ? void 0 : null === (t = X.subscription_trial) || void 0 === t ? void 0 : t.sku_id,
-      Q = (0, N.rT)(),
+      Q = (0, x.rT)(),
       $ = (0, _.Ng)(),
       ee = null != $ && (0, _.Wp)($, I.Si.TIER_2),
-      et = (0, C.A)(I.Xh.PREMIUM_MONTH_TIER_2),
-      en = "".concat(et, "/").concat((0, b.eP)(I.rV.MONTH)),
-      er = (0, b.CY)(I.Xh.PREMIUM_MONTH_TIER_0),
-      ei = (0, b.CY)(I.Xh.PREMIUM_MONTH_TIER_2),
+      et = (0, j.A)(I.Xh.PREMIUM_MONTH_TIER_2),
+      en = "".concat(et, "/").concat((0, N.eP)(I.rV.MONTH)),
+      er = (0, N.CY)(I.Xh.PREMIUM_MONTH_TIER_0),
+      ei = (0, N.CY)(I.Xh.PREMIUM_MONTH_TIER_2),
       es = (0, g.Z)(),
       ea = (0, v.n)(er, ei, ee, en, es.fractionalState),
-      el = (0, j.Vi)();
+      el = (0, C.Vi)();
     if (!G || !F) return null;
     let eo = {
       label: (0, r.jsx)(c.X6q, {

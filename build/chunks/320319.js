@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => w
 }), n(47120), n(266796);
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(605236),
   h = n(706140),
   f = n(626135),
-  x = n(314684),
-  b = n(715627),
-  N = n(404615),
+  b = n(314684),
+  N = n(715627),
+  x = n(404615),
   _ = n(238108),
   E = n(32173),
-  C = n(391110),
-  j = n(484239),
+  j = n(391110),
+  C = n(484239),
   O = n(658370),
   v = n(735825),
   S = n(981631),
@@ -72,17 +72,17 @@ let R = {
       name: t,
       canReveal: n = !0,
       dismissibleContentType: s,
-      forceShadow: N,
-      cardType: j,
+      forceShadow: x,
+      cardType: C,
       confettiCanvas: O
-    } = e, w = null == e ? void 0 : e.onCtaClick, k = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), [W, L] = i.useState(!1), [B, M] = i.useState(!1), U = (0, x.Er)(), V = (0, x.IB)(), [G, F] = i.useState(!1), [H, z] = i.useState(t === E.u.TENURE_REWARD_COLLECTIBLE && V && (null == U ? void 0 : U.nitroTenureStatus) === v.EB.REDEEMABLE);
+    } = e, w = null == e ? void 0 : e.onCtaClick, k = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), [W, L] = i.useState(!1), [B, M] = i.useState(!1), U = (0, b.Er)(), V = (0, b.IB)(), [G, F] = i.useState(!1), [H, z] = i.useState(t === E.u.TENURE_REWARD_COLLECTIBLE && V && (null == U ? void 0 : U.nitroTenureStatus) === v.EB.REDEEMABLE);
     i.useEffect(() => {
       t === E.u.TENURE_REWARD_COLLECTIBLE && V && (null == U ? void 0 : U.nitroTenureStatus) === v.EB.REDEEMABLE && z(!0)
     }, [V, t, U]);
     let Y = i.useCallback(() => {
         F(!0)
       }, []),
-      K = j === C.R0.CARD_CAROUSEL_FIRST_ROW || j === C.R0.CARD_CAROUSEL_SECOND_ROW || j === C.R0.CARD_CAROUSEL_THIRD_ROW,
+      K = C === j.R0.CARD_CAROUSEL_FIRST_ROW || C === j.R0.CARD_CAROUSEL_SECOND_ROW || C === j.R0.CARD_CAROUSEL_THIRD_ROW,
       q = (0, E.Z)(),
       [X, J] = (0, h.cv)(null != s && n || s === d.z.TENURE_REWARD_REDEEMABLE_CONFETTI ? [s] : []);
     i.useEffect(() => () => {
@@ -139,7 +139,7 @@ let R = {
       }
     }), n) ? t === E.u.UPCOMING_DROP_UNTIMED ? (0, r.jsx)("div", {
       className: a()(y.flipCardContainer, {
-        [y.forceShadow]: N
+        [y.forceShadow]: x
       }),
       onMouseEnter: ee,
       onFocus: ee,
@@ -168,12 +168,12 @@ let R = {
       className: a()({
         [y.noFlipCardContainer]: !K,
         [y.noFlipCardContainerCarousel]: K,
-        [y.forceShadow]: N,
+        [y.forceShadow]: x,
         [y.reducedMotion]: k
       }),
       children: [(0, r.jsx)(Z, P(A({}, e), {
         ref: t === E.u.TENURE_REWARD_COLLECTIBLE ? ei : void 0
-      })), H && (0, r.jsx)(b.Z, {
+      })), H && (0, r.jsx)(N.Z, {
         speedValues: R,
         numBursts: 3,
         particlesPerBurst: 15,
@@ -188,7 +188,7 @@ let R = {
       })]
     }) : (0, r.jsx)("div", {
       className: a()(y.flipCardContainer, {
-        [y.forceShadow]: N
+        [y.forceShadow]: x
       }),
       children: (0, r.jsxs)(u.P3F, {
         onClick: () => L(!0),
@@ -225,7 +225,7 @@ let R = {
         })]
       })
     }) : (0, r.jsx)(D, P(A({}, q.upcomingDropUntimed), {
-      forceShadow: N
+      forceShadow: x
     }))
   });
 D.displayName = "PerkDiscoverabilityCard";
@@ -243,30 +243,30 @@ let Z = i.forwardRef((e, t) => {
     className: g,
     perkComponent: h,
     cardVariant: f,
-    cardType: x,
-    onClick: b,
+    cardType: b,
+    onClick: N,
     backgroundImage: _,
     pillText: E,
     perkImage: v,
     imageOverlayText: S
-  } = e, T = x === C.R0.CARD_CAROUSEL_FIRST_ROW || x === C.R0.CARD_CAROUSEL_SECOND_ROW || x === C.R0.CARD_CAROUSEL_THIRD_ROW, I = "" !== o || "" !== c || "" !== l && f === C.zW.REWARD, A = (0, N._)(f);
+  } = e, T = b === j.R0.CARD_CAROUSEL_FIRST_ROW || b === j.R0.CARD_CAROUSEL_SECOND_ROW || b === j.R0.CARD_CAROUSEL_THIRD_ROW, I = "" !== o || "" !== c || "" !== l && f === j.zW.REWARD, A = (0, x._)(f);
   return (0, r.jsxs)(u.P3F, {
     className: a()(y.card, g, null === (n = A.cardContainer) || void 0 === n ? void 0 : n.className, {
-      [y.clickable]: null != b,
+      [y.clickable]: null != N,
       [y.hideOverflow]: T
     }),
     onMouseEnter: p,
     style: {
       backgroundImage: null != _ ? "url(".concat(_, ")") : void 0
     },
-    onClick: b,
+    onClick: N,
     children: [null != E && (0, r.jsx)(u.Text, {
       variant: "text-xs/semibold",
       className: y.pill,
       children: E
     }), (0, r.jsx)("div", {
       ref: t
-    }), (0, r.jsx)(j.Z, {
+    }), (0, r.jsx)(C.Z, {
       title: i,
       titleClassName: s,
       subtitle: l,

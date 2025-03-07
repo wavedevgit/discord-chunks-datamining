@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => X
 }), n(47120), n(653041), n(773603);
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(497321),
   h = n(23551),
   f = n(468026),
-  x = n(410030),
-  b = n(726542),
-  N = n(122021),
+  b = n(410030),
+  N = n(726542),
+  x = n(122021),
   _ = n(275759),
   E = n(231757),
-  C = n(888496),
-  j = n(605236),
+  j = n(888496),
+  C = n(605236),
   O = n(565138),
   v = n(297700),
   S = n(553795),
@@ -99,7 +99,7 @@ let F = e => {
           color: "header-primary",
           children: s.guild.toString()
         }), (0, r.jsx)(u.eee, {
-          href: null === (n = b.Z.get(s.type)) || void 0 === n ? void 0 : null === (t = n.getPlatformUserUrl) || void 0 === t ? void 0 : t.call(n, s.account),
+          href: null === (n = N.Z.get(s.type)) || void 0 === n ? void 0 : null === (t = n.getPlatformUserUrl) || void 0 === t ? void 0 : t.call(n, s.account),
           children: (0, r.jsx)(u.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
@@ -124,18 +124,18 @@ function H(e) {
       theme: m,
       locale: g
     } = e,
-    [h, x] = i.useState(o.friendSync),
-    [j, O] = i.useState(o.visibility),
+    [h, b] = i.useState(o.friendSync),
+    [C, O] = i.useState(o.visibility),
     [S, T] = i.useState(o.metadataVisibility),
     [I, y] = i.useState(o.showActivity),
     [A, R] = i.useState(null),
     [B, V] = i.useState(null),
     [H, z] = i.useState(!1),
     [Y, K] = i.useState([]),
-    q = (0, N.rR)(o.type),
-    X = b.Z.get(q);
+    q = (0, x.rR)(o.type),
+    X = N.Z.get(q);
   i.useEffect(() => {
-    x(o.friendSync), O(o.visibility), T(o.metadataVisibility), y(o.showActivity)
+    b(o.friendSync), O(o.visibility), T(o.metadataVisibility), y(o.showActivity)
   }, [o]);
   let J = {
       inProgressVisibility: A,
@@ -154,7 +154,7 @@ function H(e) {
   }, [o]);
 
   function $() {
-    let e = b.Z.get(o.type),
+    let e = N.Z.get(o.type),
       t = M.NW.string(M.t.apVJu7);
     (0, D.Z)(o) && (t = (0, r.jsxs)(r.Fragment, {
       children: [t, (0, r.jsx)(Z.Z, {
@@ -177,8 +177,8 @@ function H(e) {
     className: U.connection,
     children: [function(e) {
       var t;
-      let n = b.Z.get(e.type),
-        i = b.Z.get(q),
+      let n = N.Z.get(e.type),
+        i = N.Z.get(q),
         s = "1" === (null !== (t = e.metadata) && void 0 !== t ? t : {})[L.PC.TWITTER_VERIFIED],
         a = null;
       return n.type === W.ABu.TWITTER && s && (a = (0, r.jsx)(u.ua7, {
@@ -256,24 +256,24 @@ function H(e) {
         s = (0, _.FI)(n[L.PC.CREATED_AT], g);
       switch (e.type) {
         case W.ABu.REDDIT:
-          i = (0, C.oP)(n, U.metadataItem);
+          i = (0, j.oP)(n, U.metadataItem);
           break;
         case W.ABu.STEAM:
-          i = (0, C.Dq)(n, U.metadataItem);
+          i = (0, j.Dq)(n, U.metadataItem);
           break;
         case W.ABu.BLUESKY:
         case W.ABu.TWITTER:
         case W.ABu.MASTODON:
-          i = (0, C.rJ)(n, U.metadataItem);
+          i = (0, j.rJ)(n, U.metadataItem);
           break;
         case W.ABu.EBAY:
-          i = (0, C.ul)(n, U.metadataItem);
+          i = (0, j.ul)(n, U.metadataItem);
           break;
         case W.ABu.PAYPAL:
-          i = (0, C.li)(n, U.metadataItem);
+          i = (0, j.li)(n, U.metadataItem);
           break;
         case W.ABu.TIKTOK:
-          i = (0, C.hf)(n, U.metadataItem)
+          i = (0, j.hf)(n, U.metadataItem)
       }
       null !== s && (null == i && (i = []), null == i || i.push((0, r.jsx)(u.Text, {
         variant: "text-xs/normal",
@@ -286,7 +286,7 @@ function H(e) {
       let a = Y.includes(e.id),
         l = M.NW.string(M.t.wzzjk5);
       if (null == i || 0 === i.length) {
-        if (!0 !== b.Z.get(e.type).hasMetadata) return null;
+        if (!0 !== N.Z.get(e.type).hasMetadata) return null;
         i = [(0, r.jsx)(u.IGR, {
           className: U.connectionMetadataUpsellTag,
           text: M.NW.string(M.t.y2b7CA)
@@ -322,7 +322,7 @@ function H(e) {
       hideBorder: !0,
       value: h,
       onChange: function(e) {
-        x(e), p.Z.setFriendSync(o.type, o.id, e)
+        b(e), p.Z.setFriendSync(o.type, o.id, e)
       },
       children: (0, r.jsx)(u.Text, {
         variant: "text-sm/semibold",
@@ -341,7 +341,7 @@ function H(e) {
           platform: X.name
         })
       })
-    })), (null === (t = b.Z.get(o.type)) || void 0 === t ? void 0 : t.hasMetadata) === !0 && (a = (0, r.jsx)(u.j7V, {
+    })), (null === (t = N.Z.get(o.type)) || void 0 === t ? void 0 : t.hasMetadata) === !0 && (a = (0, r.jsx)(u.j7V, {
       className: U.connectionOptionSwitch,
       hideBorder: !0,
       value: 1 === S,
@@ -358,7 +358,7 @@ function H(e) {
         }
         T(n), p.Z.setMetadataVisibility(o.type, o.id, n)
       },
-      disabled: 1 !== j || null == o.metadata,
+      disabled: 1 !== C || null == o.metadata,
       children: (0, r.jsx)(u.Text, {
         variant: "text-sm/semibold",
         children: M.NW.string(M.t.FYKGsL)
@@ -370,7 +370,7 @@ function H(e) {
         children: [(0, r.jsx)(u.j7V, {
           className: U.connectionOptionSwitch,
           hideBorder: !0,
-          value: 1 === j,
+          value: 1 === C,
           onChange: function(e) {
             let {
               verified: t
@@ -426,7 +426,7 @@ function H(e) {
 
 function z() {
   return i.useEffect(() => () => {
-    (0, j.EW)(o.z.NEW_CRUNCHYROLL_CONNECTION, {
+    (0, C.EW)(o.z.NEW_CRUNCHYROLL_CONNECTION, {
       dismissAction: B.L.AUTO
     })
   }, []), (0, r.jsxs)("div", {
@@ -447,7 +447,7 @@ function z() {
 }
 
 function Y(e) {
-  let t = b.Z.get(e);
+  let t = N.Z.get(e);
   (0, E.Z)({
     platformType: t.type
   }), A.default.track(W.rMx.ACCOUNT_LINK_STEP, {
@@ -464,7 +464,7 @@ function K() {
       onComplete: Y
     })
   }
-  let t = (0, N.fq)(),
+  let t = (0, x.fq)(),
     n = (0, u.bWb)().enabled ? 24 : 18;
   return (0, r.jsxs)("div", {
     className: U.connectionsContainer,
@@ -526,7 +526,7 @@ function q(e) {
       note: M.NW.string(M.t.WenGZ2),
       children: M.NW.string(M.t["aoLS8/"])
     })]
-  }) : s.filter(e => b.Z.isSupported(e.type)).map((e, t) => (0, r.jsx)(H, {
+  }) : s.filter(e => N.Z.isSupported(e.type)).map((e, t) => (0, r.jsx)(H, {
     theme: a,
     account: e,
     locale: l,
@@ -546,7 +546,7 @@ let X = () => {
   let e = (0, l.e7)([y.Z], () => y.Z.hidePersonalInformation),
     t = (0, l.e7)([S.Z], () => S.Z.isFetching()),
     n = (0, l.e7)([S.Z], () => S.Z.getAccounts()),
-    s = (0, x.ZP)();
+    s = (0, b.ZP)();
   (0, l.e7)([I.ZP], () => I.ZP.getFlattenedGuildIds());
   let a = (0, l.e7)([R.default], () => R.default.locale);
   return (i.useEffect(() => {

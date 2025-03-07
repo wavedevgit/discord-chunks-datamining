@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => P
 });
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(63063),
   h = n(281494),
   f = n(276444),
-  x = n(520540),
-  b = n(796634),
-  N = n(197115),
+  b = n(520540),
+  N = n(796634),
+  x = n(197115),
   _ = n(119269),
   E = n(938736),
-  C = n(981631),
-  j = n(388032),
+  j = n(981631),
+  C = n(388032),
   O = n(955048),
   v = n(691766);
 
@@ -79,7 +79,7 @@ let I = e => {
       children: n
     });
     return (0, r.jsx)(o.ua7, {
-      text: j.NW.string(j.t.UnKHdn),
+      text: C.NW.string(C.t.UnKHdn),
       shouldShow: !d,
       tooltipContentClassName: O.unsentTooltipContent,
       children: e => (0, r.jsx)("div", {
@@ -155,17 +155,17 @@ let I = e => {
         referralSentUsers: R,
         hasSentAllReferrals: D,
         refreshAt: Z
-      } = (0, b.G)(),
+      } = (0, N.G)(),
       w = i.useMemo(() => R.map(e => new m.Z(e)), [R]),
       {
         subscriberHomeVariant: k
-      } = x.g.useExperiment({
+      } = b.g.useExperiment({
         location: "ReferralProgramProgressBar"
       }, {
         autoTrackExposure: !1
       }),
-      W = y === C.g2L.UNAPPLIED || y === C.g2L.QUALIFIED,
-      L = k === x.p.VARIANT_2,
+      W = y === j.g2L.UNAPPLIED || y === j.g2L.QUALIFIED,
+      L = k === b.p.VARIANT_2,
       B = {
         redeemed: 0,
         converted: 0,
@@ -174,13 +174,13 @@ let I = e => {
     I.forEach(e => {
       e === h.Fe.REDEEMED && B.redeemed++, e === h.Fe.CONVERTED && (B.redeemed++, B.converted++)
     });
-    let M = B.sent === b.Q,
-      U = g.Z.getArticleURL(C.BhN.REFERRAL_PROGRAM),
+    let M = B.sent === N.Q,
+      U = g.Z.getArticleURL(j.BhN.REFERRAL_PROGRAM),
       {
         analyticsLocations: V
       } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
       G = i.useRef(null),
-      F = B.sent / b.Q * 100,
+      F = B.sent / N.Q * 100,
       H = !1;
     P && null != Z && (H = 0 < (t = Math.ceil((new Date(Z).getTime() - new Date().getTime()) / 864e5)) && t < E.AV, s = 100 * (E.AV - t) / E.AV);
     let z = H && null != t,
@@ -215,7 +215,7 @@ let I = e => {
             }), (0, r.jsx)(o.X6q, {
               variant: "heading-sm/semibold",
               className: O.referralCountdownDays,
-              children: j.NW.format(j.t.eq39am, {
+              children: C.NW.format(C.t.eq39am, {
                 days: t
               })
             })]
@@ -234,9 +234,9 @@ let I = e => {
             className: a()(O.expandedProgressBarButtonContainer, {
               [O.expandedProgressBarButtonContainerLayout]: !u
             }),
-            children: [!u && !L && (0, r.jsx)(N.Z, {
+            children: [!u && !L && (0, r.jsx)(x.Z, {
               color: o.Ttl.CUSTOM,
-              buttonText: j.NW.string(j.t.Ve9Ge3),
+              buttonText: C.NW.string(C.t.Ve9Ge3),
               className: a()(O.expandedProgressBarGiftingCTA, {
                 [O.expandedProgressBarGiftingCTALayout]: !u
               }),
@@ -246,7 +246,7 @@ let I = e => {
               className: O.expandedProgressBarSelectFriendsCTA,
               color: o.Ttl.CUSTOM,
               onClick: () => {
-                p.default.track(C.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+                p.default.track(j.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
                   location_stack: V
                 }), (0, o.ZDy)(async () => {
                   let {
@@ -264,13 +264,13 @@ let I = e => {
                   src: v,
                   alt: "",
                   className: O.expandedProgressBarSelectFriendsIcon
-                }), M ? j.NW.string(j.t.SY9tyM) : j.NW.string(j.t.Lm2nFR)]
+                }), M ? C.NW.string(C.t.SY9tyM) : C.NW.string(C.t.Lm2nFR)]
               })
             })]
           })]
         })]
       }),
-      K = B.redeemed === b.Q;
+      K = B.redeemed === N.Q;
     return (0, r.jsx)(d.Gt, {
       value: V,
       children: (0, r.jsx)("div", {
@@ -301,9 +301,9 @@ let I = e => {
             children: (0, r.jsx)(o.X6q, {
               color: "always-white",
               variant: "heading-md/extrabold",
-              children: j.NW.format(j.t["7GMtc3"], {
+              children: C.NW.format(C.t["7GMtc3"], {
                 discountRate: E.Nq,
-                subscriptionInterval: j.NW.string(j.t.FPybU1)
+                subscriptionInterval: C.NW.string(C.t.FPybU1)
               })
             })
           }), Y]

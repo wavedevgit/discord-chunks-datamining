@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => b
+  Z: () => N
 });
 var r = n(200651);
 n(192379);
@@ -17,21 +17,21 @@ var i = n(120356),
   g = n(193528),
   h = n(993413),
   f = n(388032),
-  x = n(779281);
+  b = n(779281);
 
-function b(e) {
+function N(e) {
   let {
     user: t,
     pendingAvatarSrc: n,
     pendingColors: i,
     onThemeColorsChange: a,
-    preventDisabled: b,
-    guildId: N,
+    preventDisabled: N,
+    guildId: x,
     className: _,
     showPremiumIcon: E = !0,
-    showResetThemeButton: C = !1,
-    forcedDivider: j
-  } = e, O = (0, u.ZP)(t.id, N), {
+    showResetThemeButton: j = !1,
+    forcedDivider: C
+  } = e, O = (0, u.ZP)(t.id, x), {
     primaryColor: v,
     secondaryColor: S
   } = (0, m.Z)({
@@ -39,28 +39,28 @@ function b(e) {
     displayProfile: O,
     pendingThemeColors: i,
     isPreview: !0
-  }), T = p.ZP.canUsePremiumProfileCustomization(t), I = null != n ? n : t.getAvatarURL(N, 80), y = (0, c.dQu)(o.Z.unsafe_rawColors.PRIMARY_530).hex(), A = (0, d.Cf)(I, y, !1);
+  }), T = p.ZP.canUsePremiumProfileCustomization(t), I = null != n ? n : t.getAvatarURL(x, 80), y = (0, c.dQu)(o.Z.unsafe_rawColors.PRIMARY_530).hex(), A = (0, d.Cf)(I, y, !1);
   if (null == v || null == S) return null;
   let P = e => {
     a(l()(e, null == O ? void 0 : O.themeColors) ? void 0 : e)
   };
   return (0, r.jsx)(h.Z, {
     title: f.NW.string(f.t.DMeO2d),
-    disabled: !T && !b,
-    className: s()(x.__invalid_profileThemesSection, _),
+    disabled: !T && !N,
+    className: s()(b.__invalid_profileThemesSection, _),
     showPremiumIcon: E,
-    forcedDivider: j,
+    forcedDivider: C,
     children: (0, r.jsxs)("div", {
-      className: x.sectionContainer,
+      className: b.sectionContainer,
       children: [(0, r.jsx)("div", {
-        className: x.sparkleContainer,
+        className: b.sparkleContainer,
         children: (0, r.jsx)(g.Z, {
           onChange: e => P([e, S]),
           color: v,
           suggestedColors: A,
           showEyeDropper: !0,
           label: (0, r.jsx)(c.Text, {
-            className: x.colorSwatchLabel,
+            className: b.colorSwatchLabel,
             color: "header-secondary",
             variant: "text-xs/normal",
             "aria-hidden": !0,
@@ -68,22 +68,22 @@ function b(e) {
           })
         })
       }), (0, r.jsx)("div", {
-        className: x.sparkleContainer,
+        className: b.sparkleContainer,
         children: (0, r.jsx)(g.Z, {
           onChange: e => P([v, e]),
           color: S,
           suggestedColors: A,
           showEyeDropper: !0,
           label: (0, r.jsx)(c.Text, {
-            className: x.colorSwatchLabel,
+            className: b.colorSwatchLabel,
             color: "header-secondary",
             variant: "text-xs/normal",
             "aria-hidden": !0,
             children: f.NW.string(f.t["8elvy8"])
           })
         })
-      }), C && null != N && (0, r.jsx)(c.zxk, {
-        className: x.resetButton,
+      }), j && null != x && (0, r.jsx)(c.zxk, {
+        className: b.resetButton,
         color: c.zxk.Colors.PRIMARY,
         look: c.zxk.Looks.LINK,
         size: c.zxk.Sizes.SMALL,

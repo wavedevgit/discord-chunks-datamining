@@ -1,12 +1,12 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 36149 **/
 n.d(t, {
   _: () => a
 });
-var r = n(481060),
+var l = n(481060),
   i = n(191980),
-  s = n(285371);
+  c = n(285371);
 let a = {
   binds: ["mod+/", "mod+shift+/"],
   comboKeysBindGlobal: !0,
-  action: () => ((0, r.nfh)(s.J) ? i.C() : i.$(), !1)
+  action: () => ((0, l.nfh)(c.J) ? i.C() : i.$(), !1)
 }

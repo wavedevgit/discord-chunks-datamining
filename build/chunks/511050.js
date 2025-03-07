@@ -1,63 +1,63 @@
-/** Chunk was on 51724 **/
-n.d(t, {
-  Z: () => h,
-  l: () => g
+/** Chunk was on 20565 **/
+r.d(t, {
+  Z: () => p,
+  l: () => b
 });
-var r = n(192379),
-  i = n(442837),
-  s = n(710845),
-  a = n(569984),
-  l = n(918701),
-  o = n(751648),
-  c = n(23547),
-  d = n(822857),
-  u = n(981631),
-  m = n(642145);
-let p = new s.Z("VirtualCurrency"),
-  g = e => {
+var n = r(192379),
+  a = r(442837),
+  o = r(710845),
+  c = r(569984),
+  l = r(918701),
+  i = r(751648),
+  s = r(23547),
+  u = r(822857),
+  d = r(981631),
+  f = r(642145);
+let m = new o.Z("VirtualCurrency"),
+  b = e => {
     let {
       location: t
     } = e, {
-      enabled: n
-    } = (0, d.W)({
+      enabled: r
+    } = (0, u.W)({
       location: t
-    }), s = (0, i.e7)([a.Z], () => {
-      if (!n) return null;
-      let e = a.Z.getQuest(m.V);
+    }), o = (0, a.e7)([c.Z], () => {
+      if (!r) return null;
+      let e = c.Z.getQuest(f.V);
       return null == e ? null : (0, l.LM)(e.config)
-    }, [n]), g = (0, r.useCallback)(e => {
+    }, [r]), b = (0, n.useCallback)(e => {
       let {
         forceOpen: t,
-        delayMS: n = 500
+        delayMS: r = 500
       } = e;
-      if (null == s && !t) {
-        p.warn("Could not open Intro to Orbs Claimed Coachmark. Reward orb quantity not found or quest does not exist with ID ".concat(m.V));
+      if (null == o && !t) {
+        m.warn("Could not open Intro to Orbs Claimed Coachmark. Reward orb quantity not found or quest does not exist with ID ".concat(f.V));
         return
       }
-      if (!(0, c.wH)()) {
-        let e = () => (0, o.hF)({
-          earnedOrbsQuantity: null != s ? s : 200,
-          dedupeKey: t ? void 0 : m.V
+      if (!(0, s.wH)()) {
+        let e = () => (0, i.hF)({
+          earnedOrbsQuantity: null != o ? o : 200,
+          dedupeKey: t ? void 0 : f.V
         });
-        if (void 0 === n || 0 === n) {
+        if (void 0 === r || 0 === r) {
           e();
           return
         }
         setTimeout(() => {
           e()
-        }, n)
+        }, r)
       }
-    }, [s]), h = (0, r.useCallback)(() => {
-      (0, c.wH)() && (0, c.jj)()
+    }, [o]), p = (0, n.useCallback)(() => {
+      (0, s.wH)() && (0, s.jj)()
     }, []);
-    return n ? {
-      rewardOrbQuantity: s,
-      openIntroToOrbsClaimedCoachmark: g,
-      closeIntroToOrbsClaimedCoachmark: h
+    return r ? {
+      rewardOrbQuantity: o,
+      openIntroToOrbsClaimedCoachmark: b,
+      closeIntroToOrbsClaimedCoachmark: p
     } : {
       rewardOrbQuantity: void 0,
-      openIntroToOrbsClaimedCoachmark: u.dG4,
-      closeIntroToOrbsClaimedCoachmark: u.dG4
+      openIntroToOrbsClaimedCoachmark: d.dG4,
+      closeIntroToOrbsClaimedCoachmark: d.dG4
     }
   },
-  h = g
+  p = b

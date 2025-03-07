@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => N
+  Z: () => x
 });
 var r = n(200651);
 n(192379);
@@ -17,8 +17,8 @@ var i = n(120356),
   g = n(684553),
   h = n(828859),
   f = n(633488),
-  x = n(361848);
-let b = () => {
+  b = n(361848);
+let N = () => {
     let e = (0, d.mq)(m.ne.ACTIVE),
       t = (0, c.Z)(),
       {
@@ -34,7 +34,7 @@ let b = () => {
       }) : (0, r.jsx)(u.Z, {})
     })
   },
-  N = () => {
+  x = () => {
     let e = (0, c.Z)(),
       t = (0, l.o)(p.NW.string(p.t.T7GyW1), p.NW.string(p.t.goKE2d)),
       n = (0, l.o)(p.NW.format(p.t.MXjDSk, {
@@ -59,11 +59,11 @@ let b = () => {
               children: n
             })]
           })
-        }), (0, r.jsx)(b, {})]
+        }), (0, r.jsx)(N, {})]
       }), (0, r.jsx)("div", {
         className: g.headerImage,
         children: (0, r.jsx)("img", {
-          src: e ? f : x,
+          src: e ? f : b,
           alt: p.NW.string(p.t.ffg6xc)
         })
       })]

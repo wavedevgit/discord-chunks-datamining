@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => S
 });
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(216045),
   h = n(839469),
   f = n(25990),
-  x = n(594174),
-  b = n(585483),
-  N = n(16703),
+  b = n(594174),
+  N = n(585483),
+  x = n(16703),
   _ = n(785145),
   E = n(981631),
-  C = n(526761),
-  j = n(726985),
+  j = n(526761),
+  C = n(726985),
   O = n(388032),
   v = n(198270);
 
@@ -31,10 +31,10 @@ function S() {
     location: "profile_customization_auto"
   });
   let e = (0, s.e7)([u.Z], () => u.Z.getGuild()),
-    t = (0, N.Z)(),
+    t = (0, x.Z)(),
     n = (0, s.e7)([u.Z, f.Z], () => u.Z.showNotice() || f.Z.showNotice()),
     S = null != e ? e : t,
-    T = (0, s.e7)([x.default], () => x.default.getCurrentUser()),
+    T = (0, s.e7)([b.default], () => b.default.getCurrentUser()),
     {
       subsection: I,
       setSubsection: y
@@ -50,13 +50,13 @@ function S() {
   function D(t) {
     if (I !== t) {
       if (n) {
-        b.S.dispatch(E.CkL.SHAKE_APP, {
+        N.S.dispatch(E.CkL.SHAKE_APP, {
           duration: 300,
           intensity: l.$x
-        }), b.S.dispatch(E.CkL.EMPHASIZE_NOTICE);
+        }), N.S.dispatch(E.CkL.EMPHASIZE_NOTICE);
         return
       }
-      t === C.NB.GUILD && null == e && null != S && (0, d.Fq)(S, A), y(t)
+      t === j.NB.GUILD && null == e && null != S && (0, d.Fq)(S, A), y(t)
     }
   }
   i.useEffect(() => {
@@ -66,7 +66,7 @@ function S() {
   }, [null == S ? void 0 : S.id, T]);
   let Z = !0,
     w = !0;
-  return P && 1 === R.length && (R.includes(j.s6.PROFILE_SERVER_PROFILES) ? (D(C.NB.GUILD), w = !1) : R.includes(j.s6.PROFILE_USER_PROFILE) && (D(C.NB.USER_PROFILE), Z = !1)), (0, r.jsx)(o.Gt, {
+  return P && 1 === R.length && (R.includes(C.s6.PROFILE_SERVER_PROFILES) ? (D(j.NB.GUILD), w = !1) : R.includes(C.s6.PROFILE_USER_PROFILE) && (D(j.NB.USER_PROFILE), Z = !1)), (0, r.jsx)(o.Gt, {
     value: A,
     children: (0, r.jsxs)(a.y5t, {
       component: (0, r.jsx)(a.X6q, {
@@ -81,14 +81,14 @@ function S() {
         onItemSelect: D,
         children: [w ? (0, r.jsx)(a.njP.Item, {
           className: v.tabBarItem,
-          id: C.NB.USER_PROFILE,
+          id: j.NB.USER_PROFILE,
           children: O.NW.string(O.t["OU3/Pj"])
-        }, C.NB.USER_PROFILE) : null, Z ? (0, r.jsx)(a.njP.Item, {
+        }, j.NB.USER_PROFILE) : null, Z ? (0, r.jsx)(a.njP.Item, {
           className: v.tabBarItem,
-          id: C.NB.GUILD,
+          id: j.NB.GUILD,
           children: O.NW.string(O.t.kPHroa)
-        }, C.NB.GUILD) : null]
-      }), I === C.NB.GUILD ? (0, r.jsx)(m.Z, {
+        }, j.NB.GUILD) : null]
+      }), I === j.NB.GUILD ? (0, r.jsx)(m.Z, {
         selectedGuild: S
       }) : (0, r.jsx)(g.Z, {})]
     })

@@ -1,15 +1,15 @@
-/** Chunk was on 76282 **/
+/** Chunk was on 26593 **/
 n.d(t, {
-  UV: () => _,
-  _s: () => u,
+  UV: () => f,
+  _s: () => c,
   kW: () => d,
-  km: () => c
+  km: () => u
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(273504),
-  l = n(388032);
+  l = n(273504),
+  o = n(388032);
 
 function a(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -43,17 +43,17 @@ function s(e, t) {
   }), e
 }
 
-function c(e) {
+function u(e) {
   return {
-    [o.jj.BLOCK_MESSAGE]: (e, t) => new Promise(e => {
+    [l.jj.BLOCK_MESSAGE]: (e, t) => new Promise(e => {
       (0, i.ZDy)(async () => {
         let {
           default: i
         } = await n.e("94005").then(n.bind(n, 144462));
         return n => {
-          var o;
+          var l;
           return (0, r.jsx)(i, s(a({
-            initialCustomMessage: null !== (o = t.metadata.customMessage) && void 0 !== o ? o : "",
+            initialCustomMessage: null !== (l = t.metadata.customMessage) && void 0 !== l ? l : "",
             onSubmit: r => {
               t.metadata.customMessage = r, e(t), n.onClose()
             }
@@ -63,45 +63,45 @@ function c(e) {
         }
       })
     }),
-    [o.jj.FLAG_TO_CHANNEL]: (t, l) => new Promise(c => {
+    [l.jj.FLAG_TO_CHANNEL]: (t, o) => new Promise(u => {
       (0, i.ZDy)(async () => {
         let {
           default: i
-        } = await n.e("74543").then(n.bind(n, 643611)), u = t.actions.find(e => e.type === o.jj.FLAG_TO_CHANNEL);
+        } = await n.e("74543").then(n.bind(n, 643611)), c = t.actions.find(e => e.type === l.jj.FLAG_TO_CHANNEL);
         return n => (0, r.jsx)(i, s(a({
-          action: l,
-          isEdit: null != u,
+          action: o,
+          isEdit: null != c,
           triggerType: t.triggerType,
           guildId: e,
           onEditChannel: e => {
-            l.metadata.channelId = e, t.exemptChannels.add(e), c(l), n.onClose()
+            o.metadata.channelId = e, t.exemptChannels.add(e), u(o), n.onClose()
           }
         }, n), {
-          onClose: () => (c(null), n.onClose())
+          onClose: () => (u(null), n.onClose())
         }))
       })
     }),
-    [o.jj.USER_COMMUNICATION_DISABLED]: (e, t) => new Promise(l => {
+    [l.jj.USER_COMMUNICATION_DISABLED]: (e, t) => new Promise(o => {
       (0, i.ZDy)(async () => {
         let {
           default: i
-        } = await n.e("78273").then(n.bind(n, 41767)), c = e.actions.find(e => e.type === o.jj.USER_COMMUNICATION_DISABLED);
+        } = await n.e("78273").then(n.bind(n, 41767)), u = e.actions.find(e => e.type === l.jj.USER_COMMUNICATION_DISABLED);
         return n => (0, r.jsx)(i, s(a({
           action: t,
-          isEdit: null != c,
+          isEdit: null != u,
           triggerType: e.triggerType,
           onUpdateDuration: e => {
-            null != e && (t.metadata.durationSeconds = e), l(t), n.onClose()
+            null != e && (t.metadata.durationSeconds = e), o(t), n.onClose()
           }
         }, n), {
-          onClose: () => (l(null), n.onClose())
+          onClose: () => (o(null), n.onClose())
         }))
       })
     })
   }
 }
 
-function u(e, t, o, l) {
+function c(e, t, l, o) {
   (0, i.ZDy)(async () => {
     let {
       default: i
@@ -110,8 +110,8 @@ function u(e, t, o, l) {
       automodDecision: {
         messageId: e,
         messageContent: t,
-        decisionId: o,
-        channel: l
+        decisionId: l,
+        channel: o
       }
     }))
   })
@@ -129,16 +129,16 @@ function d(e, t) {
   })
 }
 
-function _(e) {
+function f(e) {
   (0, i.h7j)(t => (0, r.jsx)(i.ConfirmModal, s(a({
-    header: l.NW.string(l.t.wLGrjI),
-    confirmText: l.NW.string(l.t["cY+Ooa"]),
+    header: o.NW.string(o.t.wLGrjI),
+    confirmText: o.NW.string(o.t["cY+Ooa"]),
     onConfirm: e,
-    cancelText: l.NW.string(l.t["ETE/oK"])
+    cancelText: o.NW.string(o.t["ETE/oK"])
   }, t), {
     children: (0, r.jsx)(i.Text, {
       variant: "text-md/normal",
-      children: l.NW.string(l.t.arYQ2d)
+      children: o.NW.string(o.t.arYQ2d)
     })
   })))
 }

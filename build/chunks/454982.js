@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => m
 }), n(47120);
@@ -48,7 +48,7 @@ let m = function(e) {
     code: m,
     outboundPromotion: p,
     transitionState: g
-  } = e, [h, f] = i.useState(null), x = (0, l.Dt)();
+  } = e, [h, f] = i.useState(null), b = (0, l.Dt)();
   return i.useEffect(() => {
     null == m && (0, o.A2)(p.id).then(e => n(e)).catch(e => {
       var t;
@@ -56,7 +56,7 @@ let m = function(e) {
     })
   }, [m, p.id, n]), (0, r.jsx)(s.Y0X, {
     transitionState: g,
-    "aria-labelledby": x,
+    "aria-labelledby": b,
     children: null != h ? (0, r.jsx)(u, {
       onClose: t
     }) : null == m ? (0, r.jsx)(s.hzk, {

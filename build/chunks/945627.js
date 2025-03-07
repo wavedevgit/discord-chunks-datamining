@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => j
+  Z: () => C
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(695346),
   h = n(546957),
   f = n(838436),
-  x = n(51331),
-  b = n(726985),
-  N = n(981631),
+  b = n(51331),
+  N = n(726985),
+  x = n(981631),
   _ = n(388032),
   E = n(167198);
 
-function C() {
+function j() {
   let e = (0, a.e7)([u.Z], () => u.Z.getGameFriendCount()),
     [t] = (0, a.e7)([u.Z], () => {
       let e = u.Z.getGameRelationships().values();
@@ -30,7 +30,7 @@ function C() {
         let {
           type: t
         } = e;
-        return t === N.OGo.FRIEND
+        return t === x.OGo.FRIEND
       }).map(e => {
         let {
           applicationId: t
@@ -76,8 +76,8 @@ function C() {
       }
       return e
     }, [g]),
-    x = i.useCallback(() => {
-      o.Z.open(N.oAB.AUTHORIZED_APPS)
+    b = i.useCallback(() => {
+      o.Z.open(x.oAB.AUTHORIZED_APPS)
     }, []);
   return (0, r.jsxs)("div", {
     className: E.header,
@@ -103,7 +103,7 @@ function C() {
     }), (0, r.jsx)("div", {
       className: E.divider
     }), (0, r.jsxs)(l.P3F, {
-      onClick: x,
+      onClick: b,
       className: E.manageGamesLink,
       children: [(0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
@@ -118,12 +118,12 @@ function C() {
   })
 }
 
-function j() {
+function C() {
   let e = g._j.useSetting();
   return (0, r.jsxs)(h.Z, {
-    children: [(0, r.jsx)(C, {}), (0, r.jsx)(f.U, {
-      setting: b.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
-      children: (0, r.jsx)(x.Z, {
+    children: [(0, r.jsx)(j, {}), (0, r.jsx)(f.U, {
+      setting: N.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
+      children: (0, r.jsx)(b.Z, {
         title: _.NW.string(_.t["/U8Iwc"]),
         note: _.NW.string(_.t.WO2Hlp),
         value: e,

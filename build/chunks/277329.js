@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => x
+  Z: () => b
 });
 var r = n(200651);
 n(192379);
@@ -18,7 +18,7 @@ var i = n(442837),
   h = n(388032),
   f = n(289171);
 
-function x() {
+function b() {
   let e = (0, m.b)(),
     t = (0, i.e7)([o.Z], () => o.Z.getSubsection()),
     n = null != t && e.some(e => e.id === t) ? t : e[0].id;

@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   z: () => p
 });
@@ -62,8 +62,8 @@ function p(e) {
     icon: g,
     iconPosition: h = "end",
     iconOpticalOffsetMargin: f = 0,
-    focusProps: x
-  } = e, b = function(e, t) {
+    focusProps: b
+  } = e, N = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -79,7 +79,7 @@ function p(e) {
     return i
   }(e, ["role", "variant", "size", "text", "icon", "iconPosition", "iconOpticalOffsetMargin", "focusProps"]);
 
-  function N() {
+  function x() {
     if (null == g) return;
     let e = function() {
       if (0 === f) return {};
@@ -101,19 +101,19 @@ function p(e) {
       size: m[i]
     })
   }
-  return (0, r.jsx)(a.t, d(c({}, x), {
+  return (0, r.jsx)(a.t, d(c({}, b), {
     children: (0, r.jsxs)("button", d(c({
       role: t,
       className: s()(o.button, o[i], o[n])
-    }, b), {
-      children: [null != g && "start" === h && (0, r.jsx)(N, {}), (0, r.jsx)(l.x, {
+    }, N), {
+      children: [null != g && "start" === h && (0, r.jsx)(x, {}), (0, r.jsx)(l.x, {
         tag: "span",
         variant: u[i],
         color: "none",
         className: o.text,
         lineClamp: 1,
         children: p
-      }), null != g && "end" === h && (0, r.jsx)(N, {})]
+      }), null != g && "end" === h && (0, r.jsx)(x, {})]
     }))
   }))
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 71491 **/
+/** Chunk was on 63844 **/
 t.d(n, {
   Z: () => C
 });
@@ -13,13 +13,13 @@ var r = t(200651),
   p = t(906732),
   d = t(600164),
   _ = t(963249),
-  m = t(639119),
-  S = t(165583),
+  S = t(639119),
+  m = t(165583),
   f = t(263954),
   E = t(706454),
   b = t(709586),
-  h = t(626135),
-  P = t(930153),
+  P = t(626135),
+  h = t(930153),
   g = t(74538),
   I = t(937615),
   x = t(981631),
@@ -43,7 +43,7 @@ function k(e) {
       icon: b.Z,
       iconClassName: T.perkIconGuild,
       description: y.NW.formatToPlainString(y.t["1A6vXl"], {
-        percent: (0, P.T3)(t, N.Rr / 100)
+        percent: (0, h.T3)(t, N.Rr / 100)
       })
     }), n ? (0, r.jsx)(f.Z, {
       icon: c.EO4,
@@ -70,16 +70,16 @@ function C(e) {
     onSkip: f,
     onSubscriptionConfirmation: E,
     analyticsLocation: b,
-    analyticsSourceLocation: P,
+    analyticsSourceLocation: h,
     priceOptions: C
   } = e, {
     analyticsLocations: O,
     sourceAnalyticsLocations: M
   } = (0, p.ZP)(u.Z.GUILD_BOOSTING_PREMIUM_UPSELL), {
     theme: L
-  } = (0, c.TCT)(), j = (0, a.ap)(L) ? c.zxk.Colors.PRIMARY : c.zxk.Colors.WHITE, v = null == t || null == t.premiumSubscriptionType, R = g.ZP.getPrice(N.Xh.PREMIUM_MONTH_TIER_2, !1, !1, C), A = (0, I.T4)(R.amount, R.currency), D = (0, m.N)(), Z = null == D ? void 0 : D.trial_id, w = (null == D ? void 0 : null === (n = D.subscription_trial) || void 0 === n ? void 0 : n.sku_id) === N.Si.TIER_2;
+  } = (0, c.TCT)(), j = (0, a.ap)(L) ? c.zxk.Colors.PRIMARY : c.zxk.Colors.WHITE, R = null == t || null == t.premiumSubscriptionType, A = g.ZP.getPrice(N.Xh.PREMIUM_MONTH_TIER_2, !1, !1, C), v = (0, I.T4)(A.amount, A.currency), D = (0, S.N)(), Z = null == D ? void 0 : D.trial_id, w = (null == D ? void 0 : null === (n = D.subscription_trial) || void 0 === n ? void 0 : n.sku_id) === N.Si.TIER_2;
   return l.useEffect(() => {
-    h.default.track(x.rMx.PREMIUM_UPSELL_VIEWED, {
+    P.default.track(x.rMx.PREMIUM_UPSELL_VIEWED, {
       type: N.cd.GUILD_PREMIUM_UPSELL_MODAL,
       location_stack: M
     })
@@ -89,7 +89,7 @@ function C(e) {
       children: [(0, r.jsx)(c.olH, {
         onClick: i,
         className: T.closeButton
-      }), w && (0, r.jsx)(S.dz, {
+      }), w && (0, r.jsx)(m.dz, {
         className: T.premiumTrialBadge
       }), (0, r.jsx)("div", {
         className: o()(T.upsellImage, {
@@ -98,10 +98,10 @@ function C(e) {
       }), (0, r.jsx)("div", {
         className: T.bodyText,
         children: null != Z ? y.NW.string(y.t.AoSzEh) : y.NW.format(y.t["7vePZW"], {
-          monthlyPrice: A
+          monthlyPrice: v
         })
       }), (0, r.jsx)(k, {
-        shouldUpsellFromNoneTier: v
+        shouldUpsellFromNoneTier: R
       })]
     }), (0, r.jsxs)(c.mzw, {
       align: d.Z.Align.CENTER,
@@ -151,7 +151,7 @@ function C(e) {
               })(Object(n)).forEach(function(t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               }), e),
-              analyticsSourceLocation: P,
+              analyticsSourceLocation: h,
               onSubscriptionConfirmation: E,
               trialId: Z
             })

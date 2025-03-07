@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 e.exports = {
   item: "item__6be08",
   removeBuildOverride: "removeBuildOverride__6be08",

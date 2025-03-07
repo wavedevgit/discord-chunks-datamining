@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  P: () => b
+  P: () => N
 }), n(733860);
 var r = n(200651);
 n(192379);
@@ -17,15 +17,15 @@ var i = n(524437),
   g = n(726985),
   h = n(981631),
   f = n(388032),
-  x = n(535721);
+  b = n(535721);
 
-function b() {
+function N() {
   var e;
   let t = null === (e = (0, d.Z)()) || void 0 === e || e,
     {
       explicitContentGuilds: n,
-      explicitContentFriendDm: b,
-      explicitContentNonFriendDm: N
+      explicitContentFriendDm: N,
+      explicitContentNonFriendDm: x
     } = (0, c.B)(),
     _ = e => {
       if ((0, o.Ks)()) {
@@ -40,15 +40,15 @@ function b() {
       value: i.Q4.BLOCK,
       label: f.NW.string(f.t["D/157e"])
     }],
-    C = [{
+    j = [{
       value: i.Q4.BLUR,
       label: f.NW.string(f.t.S49UaW)
     }],
-    j = {
+    C = {
       value: i.Q4.SHOW,
       label: f.NW.string(f.t["5k5OFh"])
     };
-  return t && (E.unshift(j), C.unshift(j)), (0, r.jsxs)(m.U, {
+  return t && (E.unshift(C), j.unshift(C)), (0, r.jsxs)(m.U, {
     setting: g.s6.PRIVACY_SENSITIVE_MEDIA_V2,
     scrollPosition: p.FY.EXPLICIT_MEDIA_REDACTION_V2,
     children: [(0, r.jsx)(m.H, {
@@ -59,10 +59,10 @@ function b() {
     }), (0, r.jsx)(s.xJW, {
       tag: s.RB0.H3,
       title: f.NW.string(f.t["6k0AgI"]),
-      titleClassName: x.selectItemTitle,
+      titleClassName: b.selectItemTitle,
       children: (0, r.jsx)(s.q4e, {
         options: E,
-        value: b,
+        value: N,
         onChange: e => _({
           explicitContentFriendDm: e
         })
@@ -70,10 +70,10 @@ function b() {
     }), (0, r.jsx)(s.xJW, {
       tag: s.RB0.H3,
       title: f.NW.string(f.t.D2EGSk),
-      titleClassName: x.selectItemTitle,
+      titleClassName: b.selectItemTitle,
       children: (0, r.jsx)(s.q4e, {
         options: E,
-        value: N,
+        value: x,
         onChange: e => _({
           explicitContentNonFriendDm: e
         })
@@ -81,9 +81,9 @@ function b() {
     }), t && (0, r.jsx)(s.xJW, {
       tag: s.RB0.H3,
       title: f.NW.string(f.t["FP+a4+"]),
-      titleClassName: x.selectItemTitle,
+      titleClassName: b.selectItemTitle,
       children: (0, r.jsx)(s.q4e, {
-        options: C,
+        options: j,
         value: n,
         onChange: e => _({
           explicitContentGuilds: e

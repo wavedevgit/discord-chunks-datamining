@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => d
 });
@@ -22,11 +22,11 @@ let d = e => {
   } = e, {
     viewableTabs: g,
     filteredTab: h
-  } = (0, o.a)(n, d), f = null != m ? n[m] : null, x = null !== (t = null != f ? f : h) && void 0 !== t ? t : g[0];
+  } = (0, o.a)(n, d), f = null != m ? n[m] : null, b = null !== (t = null != f ? f : h) && void 0 !== t ? t : g[0];
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.njP, {
       className: c.tabBar,
-      selectedItem: x.setting,
+      selectedItem: b.setting,
       onItemSelect: e => {
         l.Z.setSection(i, e), null == p || p(e)
       },
@@ -40,13 +40,13 @@ let d = e => {
         children: e.title
       }, e.setting))
     }), (0, r.jsx)(a.njP.Panel, {
-      id: x.setting,
-      "aria-labelledby": x.title,
+      id: b.setting,
+      "aria-labelledby": b.title,
       className: s()(c.tabBarPanel, u),
       children: (e => {
         let t = e.component;
         return "function" == typeof t ? (0, r.jsx)(t, {}) : t
-      })(x)
+      })(b)
     })]
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 76282 **/
+/** Chunk was on 12075 **/
 n.d(t, {
   Z: () => G
 }), n(411104), n(47120);
@@ -18,15 +18,15 @@ var i = n(392711),
   f = n(431),
   m = n(626135),
   h = n(74538),
-  g = n(557457),
-  b = n(970645),
+  b = n(557457),
+  g = n(970645),
   O = n(30684),
   N = n(514701),
   I = n(6242),
   C = n(467721),
   T = n(757692),
-  S = n(281494),
-  y = n(276444),
+  y = n(281494),
+  S = n(276444),
   v = n(937579),
   P = n(522558),
   R = n(879463),
@@ -97,14 +97,14 @@ class F extends s.Z {
   }
   _getReferralIncentiveEligibility() {
     let e = E.default.getCurrentUser();
-    if (y.Z.getIsFetchingReferralIncentiveEligibility() || !(0, h.I5)(e)) return;
+    if (S.Z.getIsFetchingReferralIncentiveEligibility() || !(0, h.I5)(e)) return;
     let t = {
         location: "PremiumManager"
       },
       n = {
         autoTrackExposure: !1
       };
-    x.g.getCurrentConfig(t, n).enabled && !R.eP.getCurrentConfig(t, n).enabled && A.$.getCurrentConfig(t, n).enabled && (0, S.bq)()
+    x.g.getCurrentConfig(t, n).enabled && !R.eP.getCurrentConfig(t, n).enabled && A.$.getCurrentConfig(t, n).enabled && (0, y.bq)()
   }
   openPremiumPaymentModalInApp(e) {
     if (__OVERLAY__) throw Error("Should not use this function from the overlay, use ModalAPI.openModal instead");
@@ -146,7 +146,7 @@ class F extends s.Z {
       })
     }), w(this, "_maybeFetchCheckoutRecovery", async () => {
       let e = E.default.getCurrentUser();
-      null != e && e.verified && !(0, h.I5)(e) && O.Z.shouldFetchCheckoutRecovery() && await (0, b.o)()
+      null != e && e.verified && !(0, h.I5)(e) && O.Z.shouldFetchCheckoutRecovery() && await (0, g.o)()
     }), w(this, "_maybeFetchUserAffinities", () => {
       let {
         enabled: e
@@ -191,7 +191,7 @@ class F extends s.Z {
       let d = Z.NW.formatToPlainString(Z.t.AbyeZG, {
         nickname: o.userNick,
         resolution: (0, M.o6)(o.maxResolution.height),
-        fps: (0, g.bp)(o.maxFrameRate)
+        fps: (0, b.bp)(o.maxFrameRate)
       });
       a.Z.sendNitroSystemMessage(e, d), m.default.track(L.rMx.PREMIUM_UPSELL_MESSAGE_SENT, {
         type: D.cd.HD_STREAMING_VIEWER_UPSELL,

@@ -1,12 +1,12 @@
-/** Chunk was on 76282 **/
+/** Chunk was on 40247 **/
 n.d(t, {
   h: () => s
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(671533),
-  l = n(981631),
+  l = n(671533),
+  o = n(981631),
   a = n(951058);
 
 function s(e) {
@@ -20,7 +20,7 @@ function s(e) {
     className: a.backNotice,
     children: [c && (0, r.jsx)(i.RyX, {
       onClick: s,
-      noticeType: l.kVF.BACK_TO_PREVIOUS_SCREEN
+      noticeType: o.kVF.BACK_TO_PREVIOUS_SCREEN
     }), (0, r.jsxs)(i.zxk, {
       className: a.backButton,
       innerClassName: a.backButtonInner,
@@ -28,10 +28,10 @@ function s(e) {
       color: i.zxk.Colors.WHITE,
       size: i.zxk.Sizes.NONE,
       onClick: n,
-      children: [(0, r.jsx)(o.Z, {
+      children: [(0, r.jsx)(l.Z, {
         width: 16,
         height: 16,
-        direction: o.Z.Directions.LEFT,
+        direction: l.Z.Directions.LEFT,
         className: a.__invalid_backArrow
       }), t]
     })]

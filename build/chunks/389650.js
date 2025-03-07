@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => G
 }), n(266796), n(47120), n(653041);
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(825209),
   h = n(721383),
   f = n(612226),
-  x = n(714338),
-  b = n(924557),
-  N = n(600164),
+  b = n(714338),
+  N = n(924557),
+  x = n(600164),
   _ = n(74299),
   E = n(131951),
-  C = n(556296),
-  j = n(808506),
+  j = n(556296),
+  C = n(808506),
   O = n(63063),
   v = n(358085),
   S = n(13140),
@@ -85,7 +85,7 @@ class U extends i.PureComponent {
     let {
       keybind: e
     } = this.props, t = S.BB(e.shortcut);
-    return x.Z.hasBind(t) ? (0, r.jsx)(u.R94, {
+    return b.Z.hasBind(t) ? (0, r.jsx)(u.R94, {
       className: R.keybindMessage,
       type: u.geA.DESCRIPTION,
       style: {
@@ -112,17 +112,17 @@ class U extends i.PureComponent {
       managed: e,
       enabled: t
     } = this.props.keybind;
-    return (0, r.jsxs)(N.Z, {
-      direction: N.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(x.Z, {
+      direction: x.Z.Direction.VERTICAL,
       className: a()(R.keybindGroup, D.card),
       children: [!e && (0, r.jsx)(p.Z, {
         "aria-label": P.NW.string(P.t.qEHmmJ),
         className: R.removeKeybind,
         onClick: this.handleDeleteKeybind,
         look: p.Z.Looks.FILLED
-      }), (0, r.jsxs)(N.Z, {
+      }), (0, r.jsxs)(x.Z, {
         className: Z.marginBottom8,
-        children: [(0, r.jsx)(N.Z.Child, {
+        children: [(0, r.jsx)(x.Z.Child, {
           basis: "45%",
           children: (0, r.jsx)(u.xJW, {
             title: P.NW.string(P.t.UUpADw),
@@ -134,7 +134,7 @@ class U extends i.PureComponent {
               isDisabled: e
             })
           })
-        }), (0, r.jsx)(N.Z.Child, {
+        }), (0, r.jsx)(x.Z.Child, {
           basis: "45%",
           children: (0, r.jsx)(u.xJW, {
             title: P.NW.string(P.t["1La4tL"]),
@@ -144,7 +144,7 @@ class U extends i.PureComponent {
               onChange: this.handleShortcutChange
             })
           })
-        }), (0, r.jsx)(N.Z.Child, {
+        }), (0, r.jsx)(x.Z.Child, {
           grow: 0,
           shrink: 0,
           children: (0, r.jsx)(u.xJW, {
@@ -160,7 +160,7 @@ class U extends i.PureComponent {
             })
           })
         })]
-      }), (0, r.jsx)(N.Z.Child, {
+      }), (0, r.jsx)(x.Z.Child, {
         children: this.renderMessage()
       }), this.renderExtraSettings()]
     })
@@ -310,16 +310,16 @@ class V extends i.PureComponent {
         tag: u.RB0.H1,
         title: P.NW.string(P.t.T9DA2N),
         children: v.isPlatformEmbedded ? (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsxs)(N.Z, {
-            justify: N.Z.Justify.BETWEEN,
+          children: [(0, r.jsxs)(x.Z, {
+            justify: x.Z.Justify.BETWEEN,
             className: Z.marginBottom20,
-            children: [(0, r.jsx)(N.Z.Child, {
+            children: [(0, r.jsx)(x.Z.Child, {
               grow: 0,
               children: (0, r.jsx)(u.Wn, {
                 messageType: u.QYI.WARNING,
                 children: P.NW.string(P.t.NoKjWF)
               })
-            }), (0, r.jsx)(N.Z.Child, {
+            }), (0, r.jsx)(x.Z.Child, {
               wrap: !0,
               grow: 0,
               children: (0, r.jsx)(u.zxk, {
@@ -403,10 +403,10 @@ class V extends i.PureComponent {
 }
 
 function G() {
-  let e = (0, c.e7)([C.ZP], () => C.ZP.getState()),
+  let e = (0, c.e7)([j.ZP], () => j.ZP.getState()),
     t = (0, c.e7)([E.Z], () => (0, _.Z)(E.Z)),
-    n = (0, c.e7)([j.default], () => j.default.isSupported()),
-    i = (0, b.Go)();
+    n = (0, c.e7)([C.default], () => C.default.isSupported()),
+    i = (0, N.Go)();
   return (0, r.jsx)(V, {
     keybinds: e,
     canGoLive: t,

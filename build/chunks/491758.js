@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => A
 });
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(131951),
   h = n(556296),
   f = n(924557),
-  x = n(435064),
-  b = n(894694),
-  N = n(779618),
+  b = n(435064),
+  N = n(894694),
+  x = n(779618),
   _ = n(39604),
   E = n(442334),
-  C = n(356659),
-  j = n(981631),
+  j = n(356659),
+  C = n(981631),
   O = n(37113),
   v = n(526761),
   S = n(388032),
@@ -38,11 +38,11 @@ function A() {
       decoupledClipsEnabled: s,
       clipsLength: A,
       clipsQuality: P
-    } = (0, l.cj)([x.Z], () => x.Z.getSettings()),
-    R = (0, l.e7)([x.Z], () => x.Z.getHardwareClassification()),
-    D = (0, l.e7)([h.ZP], () => h.ZP.getKeybindForAction(j.kg4.SAVE_CLIP, !0)),
-    Z = x.Z.isDecoupledGameClippingEnabled(),
-    w = (0, N.Z)(g.Z),
+    } = (0, l.cj)([b.Z], () => b.Z.getSettings()),
+    R = (0, l.e7)([b.Z], () => b.Z.getHardwareClassification()),
+    D = (0, l.e7)([h.ZP], () => h.ZP.getKeybindForAction(C.kg4.SAVE_CLIP, !0)),
+    Z = b.Z.isDecoupledGameClippingEnabled(),
+    w = (0, x.Z)(g.Z),
     {
       showClipsHeaderEntrypoint: k
     } = f.NV.useExperiment({
@@ -53,17 +53,17 @@ function A() {
   a()(null != D, "Save clip keybind unset");
   let W = (0, l.e7)([m.default], () => m.default.locale),
     L = i.useMemo(() => [{
-      value: C.OT.SECONDS_30,
+      value: j.OT.SECONDS_30,
       label: S.NW.formatToPlainString(S.t["bTFv//"], {
         count: 30
       })
     }, {
-      value: C.OT.MINUTES_1,
+      value: j.OT.MINUTES_1,
       label: S.NW.formatToPlainString(S.t.ICo9Nj, {
         count: 1
       })
     }, {
-      value: C.OT.MINUTES_2,
+      value: j.OT.MINUTES_2,
       label: S.NW.formatToPlainString(S.t.ICo9Nj, {
         count: 2
       })
@@ -147,11 +147,11 @@ function A() {
         look: p.z.WARNING,
         className: I.formItem,
         children: S.NW.format(S.t.kiaF4e, {
-          onClick: () => d.Z.open(j.oAB.VOICE, null, {
+          onClick: () => d.Z.open(C.oAB.VOICE, null, {
             scrollPosition: v.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
           })
         })
-      }), R === b.x.BELOW_MINIMUM ? (0, r.jsx)(p.Z, {
+      }), R === N.x.BELOW_MINIMUM ? (0, r.jsx)(p.Z, {
         look: p.z.WARNING,
         className: I.formItem,
         children: S.NW.string(S.t.SIxrIC)

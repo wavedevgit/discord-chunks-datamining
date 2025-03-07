@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => S
 }), n(47120);
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(410154),
   h = n(626135),
   f = n(695349),
-  x = n(103433),
-  b = n(166021),
-  N = n(32173),
+  b = n(103433),
+  N = n(166021),
+  x = n(32173),
   _ = n(391110),
   E = n(75077),
-  C = n(981631),
-  j = n(388032),
+  j = n(981631),
+  C = n(388032),
   O = n(951084),
   v = n(865215);
 let S = e => {
@@ -33,7 +33,7 @@ let S = e => {
       isFullScreen: I
     } = e,
     y = i.useRef(null),
-    A = Object.entries((0, N.Z)()).reduce((e, t) => {
+    A = Object.entries((0, x.Z)()).reduce((e, t) => {
       let [n, r] = t;
       return !1 !== r.canReveal && "upcomingDropUntimed" !== r.name && (e[n] = r), e
     }, {}),
@@ -48,7 +48,7 @@ let S = e => {
       fractionalState: W
     } = (0, p.Z)(),
     L = (0, f.W)();
-  return k ? (t = j.NW.string(j.t["+vt7w8"]), n = j.NW.string(j.t.LgHbnJ)) : (t = j.NW.string(j.t.LgHbnJ), n = j.NW.string(j.t["+vt7w8"])), (0, r.jsx)(c.yWw, {
+  return k ? (t = C.NW.string(C.t["+vt7w8"]), n = C.NW.string(C.t.LgHbnJ)) : (t = C.NW.string(C.t.LgHbnJ), n = C.NW.string(C.t["+vt7w8"])), (0, r.jsx)(c.yWw, {
     className: a()(O.allPerksScroller, {
       [O.open]: s,
       [O.openCloseReduceMotion]: w
@@ -58,10 +58,10 @@ let S = e => {
       className: O.container,
       children: (0, r.jsxs)(m.Gt, {
         value: P,
-        children: [(0, r.jsx)(x.Z, {
+        children: [(0, r.jsx)(b.Z, {
           className: O.heroHeading,
           onBackClick: () => {
-            S(!1), h.default.track(C.rMx.NITRO_HOME_NAVIGATION, {
+            S(!1), h.default.track(j.rMx.NITRO_HOME_NAVIGATION, {
               current_component: _.MQ.SEE_ALL,
               next_component: T,
               interaction_component: "Back Button"
@@ -74,7 +74,7 @@ let S = e => {
             color: "header-primary",
             className: O.heading,
             children: t
-          }), (0, r.jsx)(b.Z, {
+          }), (0, r.jsx)(N.Z, {
             className: O.cardCarousel,
             cards: (0, E.sP)({
               perksCards: A,
@@ -91,7 +91,7 @@ let S = e => {
             color: "header-primary",
             className: O.heading,
             children: n
-          }), (0, r.jsx)(b.Z, {
+          }), (0, r.jsx)(N.Z, {
             className: O.cardCarousel,
             cards: (0, E.sP)({
               perksCards: A,
@@ -107,8 +107,8 @@ let S = e => {
             variant: "heading-xxl/extrabold",
             color: "header-primary",
             className: O.heading,
-            children: j.NW.string(j.t.LTaxu7)
-          }), (0, r.jsx)(b.Z, {
+            children: C.NW.string(C.t.LTaxu7)
+          }), (0, r.jsx)(N.Z, {
             className: O.cardCarousel,
             cards: (0, E.sP)({
               perksCards: A,
@@ -125,7 +125,7 @@ let S = e => {
           className: O.footerSpacing
         }), (0, r.jsx)(o.$, {
           onChange: e => {
-            e && !R && (h.default.track(C.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+            e && !R && (h.default.track(j.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
               location_stack: P
             }), D(!0))
           },
@@ -137,7 +137,7 @@ let S = e => {
           className: O.bottomIllustration,
           width: 112,
           height: 85,
-          alt: j.NW.string(j.t.X4IxWF)
+          alt: C.NW.string(C.t.X4IxWF)
         })]
       })
     })

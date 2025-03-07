@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => f
 });
@@ -38,9 +38,9 @@ let g = e => {
       forceInverted: t,
       subscriptionTier: n,
       hasActivePromotion: f = !1,
-      isPersistentCTA: x = !1,
-      useShorterCTA: b = !1,
-      confirmationFooter: N,
+      isPersistentCTA: b = !1,
+      useShorterCTA: N = !1,
+      confirmationFooter: x,
       planSelectBanner: _
     } = e, E = function(e, t) {
       if (null == e) return {};
@@ -57,8 +57,8 @@ let g = e => {
       }
       return i
     }(e, ["forceInverted", "subscriptionTier", "hasActivePromotion", "isPersistentCTA", "useShorterCTA", "confirmationFooter", "planSelectBanner"]);
-    let C = (0, a.ZP)(),
-      j = (0, i.wj)(C) || t,
+    let j = (0, a.ZP)(),
+      C = (0, i.wj)(j) || t,
       O = (0, c.N)(),
       v = null == O ? void 0 : O.subscription_trial,
       S = (0, l.a5)({
@@ -68,11 +68,11 @@ let g = e => {
       T = (0, o.Ng)(),
       I = null != v && n === v.sku_id,
       y = (null == O ? void 0 : O.trial_id) === u.a7,
-      A = f ? m.NW.string(m.t.J61px8) : null != T ? h(n, b, x, T.discount.amount) : g({
+      A = f ? m.NW.string(m.t.J61px8) : null != T ? h(n, N, b, T.discount.amount) : g({
         showTrialCTA: I,
         subscriptionTier: n,
         trialDurationCopy: S,
-        isPersistentCTA: x,
+        isPersistentCTA: b,
         shouldShowReferralTrialCopy: y,
         subscriptionTrial: v
       });
@@ -94,13 +94,13 @@ let g = e => {
       }
       return e
     }({
-      color: j ? s.Ttl.BRAND_INVERTED : s.Ttl.BRAND,
-      buttonShineClassName: "buttonShineClassName" in E ? E.buttonShineClassName : j ? p.brandShine : void 0,
+      color: C ? s.Ttl.BRAND_INVERTED : s.Ttl.BRAND,
+      buttonShineClassName: "buttonShineClassName" in E ? E.buttonShineClassName : C ? p.brandShine : void 0,
       buttonText: A,
       buttonTextClassName: I ? p.freeTrialText : void 0,
       onlyShineOnHover: !0,
       subscriptionTier: n,
-      confirmationFooter: N,
+      confirmationFooter: x,
       planSelectBanner: _
     }, E))
   }

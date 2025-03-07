@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => C
+  Z: () => j
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -16,9 +16,9 @@ var r = n(200651),
   g = n(675619),
   h = n(119850),
   f = n(32173),
-  x = n(391110),
-  b = n(75077),
-  N = n(320319),
+  b = n(391110),
+  N = n(75077),
+  x = n(320319),
   _ = n(730313);
 let E = e => {
     let {
@@ -46,18 +46,18 @@ let E = e => {
       })
     })
   },
-  C = e => {
+  j = e => {
     var t;
     let {
       className: n,
-      variant: s = x.R0.PERKS_DISCOVERABILITY,
-      noBackground: C = !1,
-      leftAlignHeaders: j = !1,
+      variant: s = b.R0.PERKS_DISCOVERABILITY,
+      noBackground: j = !1,
+      leftAlignHeaders: C = !1,
       showAllPerksButton: O,
       headerClassname: v,
       isFullScreen: S = !0,
       shouldAutoScroll: T = !1
-    } = e, I = i.useRef(null), y = (0, m.Er)(), A = (0, p.v)(y), P = (0, d.ZP)("perks-discoverability"), R = s === x.R0.WHATS_NEW, D = (0, m.IY)(), Z = (0, h.x)();
+    } = e, I = i.useRef(null), y = (0, m.Er)(), A = (0, p.v)(y), P = (0, d.ZP)("perks-discoverability"), R = s === b.R0.WHATS_NEW, D = (0, m.IY)(), Z = (0, h.x)();
     i.useEffect(() => {
       R && !A && (D(), Z())
     }, [D, Z, R, A]);
@@ -71,14 +71,14 @@ let E = e => {
       onScrollEnd: w,
       onCleanup: w
     });
-    let W = (0, b.Op)(R),
+    let W = (0, N.Op)(R),
       L = (0, f.Z)(),
-      B = (0, b.mN)(),
+      B = (0, N.mN)(),
       {
         fractionalState: M
       } = (0, c.Z)(),
       U = (0, u.W)(),
-      V = (0, b.sP)({
+      V = (0, N.sP)({
         perksCards: L,
         variant: s,
         shopMarketingVariation: P,
@@ -99,27 +99,27 @@ let E = e => {
       }), (0, r.jsxs)("div", {
         ref: I,
         className: a()(_.section, {
-          [_.centerAlignSection]: !j,
-          [_.leftAlignSection]: j
+          [_.centerAlignSection]: !C,
+          [_.leftAlignSection]: C
         }, n),
         children: [(0, r.jsx)(E, {
           showAllPerksButton: O,
-          leftAlignHeaders: j,
+          leftAlignHeaders: C,
           title: W.title,
           headerClassname: v
         }), (0, r.jsx)(o.Text, {
           variant: "text-lg/normal",
           color: "header-primary",
           className: a()(_.subtitle, {
-            [_.subtitle]: null == O || j,
-            [_.subtitleWithButton]: null != O && !j,
-            [_.fullWidth]: R || j,
+            [_.subtitle]: null == O || C,
+            [_.subtitleWithButton]: null != O && !C,
+            [_.fullWidth]: R || C,
             [_.moreSubtitleMargin]: G,
-            [_.leftAlignSubtitle]: j,
-            [_.centerAlignSubtitle]: !j
+            [_.leftAlignSubtitle]: C,
+            [_.centerAlignSubtitle]: !C
           }),
           children: W.subtitle
-        }), !j && null != O && (0, r.jsx)("div", {
+        }), !C && null != O && (0, r.jsx)("div", {
           className: _.showAllPerksButtonCenter,
           children: O
         }), (0, r.jsx)("div", {
@@ -129,7 +129,7 @@ let E = e => {
           }),
           children: V.map((e, t) => {
             var n, i;
-            return (0, r.jsx)(N.Z, (n = function(e) {
+            return (0, r.jsx)(x.Z, (n = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   r = Object.keys(n);
@@ -149,7 +149,7 @@ let E = e => {
             }({
               confettiCanvas: e.name === f.u.TENURE_REWARD_COLLECTIBLE ? F : void 0
             }, e), i = i = {
-              forceShadow: C
+              forceShadow: j
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

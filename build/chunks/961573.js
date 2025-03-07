@@ -1,4 +1,4 @@
-/** Chunk was on 57540 **/
+/** Chunk was on 62173 **/
 o.exports = {
   promotionalFooter: "promotionalFooter__82bb4"
 }

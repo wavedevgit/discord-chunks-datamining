@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(47120);
 var r = n(200651),
   l = n(192379),
@@ -9,18 +9,18 @@ var r = n(200651),
   s = n.n(a),
   o = n(622535),
   i = n(481060),
-  c = n(597688),
-  d = n(297651),
+  d = n(597688),
+  c = n(297651),
   u = n(215023),
   m = n(388032),
   g = n(39532);
-let f = e => {
+let h = e => {
   var t;
   let {
     wideBannerBlock: n,
     handleTransition: a,
-    tab: f
-  } = e, h = null === (t = c.Z.getCategoryByStoreListingId(n.categoryStoreListingId)) || void 0 === t ? void 0 : t.skuId, p = l.useRef(null), [b, C] = l.useState();
+    tab: h
+  } = e, f = null === (t = d.Z.getCategoryByStoreListingId(n.categoryStoreListingId)) || void 0 === t ? void 0 : t.skuId, p = l.useRef(null), [b, C] = l.useState();
   l.useEffect(() => {
     let e = p.current;
     if (null == e) return;
@@ -31,10 +31,10 @@ let f = e => {
       e.onload = null
     }
   }, []);
-  let _ = null != h ? h : "",
+  let _ = null != f ? f : "",
     {
       handleCardVisibilityChange: v
-    } = (0, d.E)(_, "home", "marketing wide banner"),
+    } = (0, c.E)(_, "home", "marketing wide banner"),
     x = n.bannerUrl;
   return null == x ? null : (0, r.jsx)(o.$, {
     onChange: v,
@@ -66,14 +66,14 @@ let f = e => {
             style: {
               color: n.bannerTextColor
             },
-            variant: f === u.AW.ORBS ? "heading-xl/bold" : "heading-lg/semibold",
+            variant: h === u.AW.ORBS ? "heading-xl/bold" : "heading-lg/semibold",
             children: n.title
           }), (0, r.jsx)(i.Text, {
             style: {
-              color: f === u.AW.ORBS ? "rgba(255, 255, 255, 0.65)" : n.bannerTextColor
+              color: h === u.AW.ORBS ? "rgba(255, 255, 255, 0.65)" : n.bannerTextColor
             },
             lineClamp: 2,
-            variant: f === u.AW.ORBS ? "text-md/medium" : "text-sm/medium",
+            variant: h === u.AW.ORBS ? "text-md/medium" : "text-sm/medium",
             children: n.body
           })]
         })

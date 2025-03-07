@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   D: () => _
 }), n(47120);
@@ -16,9 +16,9 @@ var r = n(200651),
   g = n(798769),
   h = n(474936),
   f = n(388032),
-  x = n(472135),
-  b = n(982404),
-  N = n(299156);
+  b = n(472135),
+  N = n(982404),
+  x = n(299156);
 
 function _(e) {
   let {
@@ -26,22 +26,22 @@ function _(e) {
     premiumType: n,
     onClose: _,
     confettiCanvas: E,
-    userWasChurned: C = !1,
-    userDiscountOffer: j
-  } = e, O = (0, o.ZP)(), v = (0, a.wj)(O) ? b : N, S = i.useRef(null), [T, I] = i.useState(!1), y = (0, p._)(t, h.Xh.PREMIUM_MONTH_TIER_2, j), A = (0, u.aS)(h.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
+    userWasChurned: j = !1,
+    userDiscountOffer: C
+  } = e, O = (0, o.ZP)(), v = (0, a.wj)(O) ? N : x, S = i.useRef(null), [T, I] = i.useState(!1), y = (0, p._)(t, h.Xh.PREMIUM_MONTH_TIER_2, C), A = (0, u.aS)(h.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
     currency: t.currency,
     paymentSourceId: t.paymentSourceId
   }), P = (0, m.T4)(A.amount, A.currency), R = (0, s.e7)([c.Z], () => c.Z.useReducedMotion);
   if (i.useEffect(() => {
       null != S.current && null != y && I(!0)
-    }, [S, T, y]), null == j || null == y) return null;
+    }, [S, T, y]), null == C || null == y) return null;
   let D = f.NW.format(f.t.gPzMHR, {
-      numMonths: j.discount.user_usage_limit,
+      numMonths: C.discount.user_usage_limit,
       discountedPrice: y,
       regularPrice: P
     }),
     Z = (0, r.jsx)("div", {
-      className: x.whatYouLoseButtonContainer,
+      className: b.whatYouLoseButtonContainer,
       children: (0, r.jsx)(l.zxk, {
         color: l.zxk.Colors.BRAND,
         onClick: _,
@@ -51,25 +51,25 @@ function _(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(g.Z, {
       premiumType: n,
-      className: x.cancellationHeader,
+      className: b.cancellationHeader,
       onClose: _
     }), (0, r.jsx)("div", {
       ref: S,
       children: (0, r.jsx)(l.hzk, {
-        className: x.body,
+        className: b.body,
         children: null != y ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)("div", {
-            className: x.discountAppliedBody,
+            className: b.discountAppliedBody,
             children: [(0, r.jsx)("img", {
               alt: "",
               src: v,
-              className: x.nitroIcon
+              className: b.nitroIcon
             }), (0, r.jsx)(l.X6q, {
               variant: "heading-xl/bold",
-              children: C ? f.NW.string(f.t.gOOPaG) : f.NW.string(f.t.PZSyRk)
+              children: j ? f.NW.string(f.t.gOOPaG) : f.NW.string(f.t.PZSyRk)
             })]
           }), (0, r.jsx)("div", {
-            className: x.bodyString,
+            className: b.bodyString,
             children: D
           }), Z]
         }) : (0, r.jsx)(l.$jN, {})

@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   N: () => M
 });
@@ -16,13 +16,13 @@ var r = n(399606),
   g = n(323780),
   h = n(101732),
   f = n(450598),
-  x = n(633030),
-  b = n(97942),
-  N = n(269987),
+  b = n(633030),
+  N = n(97942),
+  x = n(269987),
   _ = n(548629),
   E = n(507084),
-  C = n(680313),
-  j = n(926433),
+  j = n(680313),
+  C = n(926433),
   O = n(302036),
   v = n(994554),
   S = n(1549),
@@ -95,7 +95,7 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
             onTryItOutClick: t
           })
         },
-        imageSource: b,
+        imageSource: N,
         imageClassName: t.perGuildProfilesImage
       },
       longerMessages: {
@@ -107,26 +107,26 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
       moreGuilds: {
         title: p.NW.string(p.t.Bv8Pfn),
         description: p.NW.string(p.t.JMfaTU),
-        imageSource: B(n, x, w),
+        imageSource: B(n, b, w),
         imageClassName: t.moreGuildsImage
       },
       moreGuildsAlt: {
         title: p.NW.string(p.t.Bv8Pfn),
         description: p.NW.string(p.t.JMfaTU),
-        imageSource: B(n, E, C),
+        imageSource: B(n, E, j),
         imageClassName: t.moreGuildsAltImage
       },
       remix: {
         title: p.NW.string(p.t.ZvulDg),
         description: p.NW.string(p.t["8GwCPT"]),
-        imageSource: B(n, N, _),
+        imageSource: B(n, x, _),
         imageClassName: t.remixingImage,
         isEarlyAccess: !0
       },
       soundboard: {
         title: p.NW.string(p.t["lGcW+f"]),
         description: p.NW.string(p.t["/fDyOz"]),
-        imageSource: B(n, j, O),
+        imageSource: B(n, C, O),
         imageClassName: t.soundboardImage
       },
       stickers: {

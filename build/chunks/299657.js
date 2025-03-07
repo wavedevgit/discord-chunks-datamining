@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => V
 }), n(47120);
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(497321),
   h = n(100527),
   f = n(906732),
-  x = n(211242),
-  b = n(15640),
-  N = n(89057),
+  b = n(211242),
+  N = n(15640),
+  x = n(89057),
   _ = n(605236),
   E = n(464824),
-  C = n(214852),
-  j = n(621853),
+  j = n(214852),
+  C = n(621853),
   O = n(484459),
   v = n(246946),
   S = n(594174),
@@ -45,8 +45,8 @@ let V = function(e) {
   let {
     entrypoint: t = L.EZ.UserSettings
   } = e;
-  (0, C.z)(E.X);
-  let n = (0, x.Q)(),
+  (0, j.z)(E.X);
+  let n = (0, b.Q)(),
     {
       sourceAnalyticsLocations: s,
       analyticsLocations: V
@@ -56,7 +56,7 @@ let V = function(e) {
     H = null == F ? void 0 : F.id,
     z = (0, Z.N)(),
     Y = (0, D.Ng)(),
-    K = (0, b.V)(),
+    K = (0, N.V)(),
     [q, X] = i.useState(!0),
     J = i.useRef(0),
     Q = (0, y.M5)(F, L.p9.TIER_2);
@@ -68,7 +68,7 @@ let V = function(e) {
     {
       enabled: et
     } = (0, w.D)(),
-    en = (0, l.e7)([j.Z], () => null != F ? j.Z.getUserProfile(F.id) : null),
+    en = (0, l.e7)([C.Z], () => null != F ? C.Z.getUserProfile(F.id) : null),
     er = (0, l.e7)([A.Z], () => A.Z.hasFetched);
   return (i.useEffect(() => {
     er || u.MH()
@@ -84,7 +84,7 @@ let V = function(e) {
       location_stack: s,
       load_duration_ms: J.current
     })
-  }, [s, q]), (0, l.e7)([v.Z], () => v.Z.enabled)) ? (0, r.jsx)(g.Z, {}) : n ? (0, r.jsx)(N.c8, {}) : t === L.EZ.ApplicationStoreHome && Q ? et && null == en ? (0, r.jsx)("div", {
+  }, [s, q]), (0, l.e7)([v.Z], () => v.Z.enabled)) ? (0, r.jsx)(g.Z, {}) : n ? (0, r.jsx)(x.c8, {}) : t === L.EZ.ApplicationStoreHome && Q ? et && null == en ? (0, r.jsx)("div", {
     className: a()(U.container, U.loading),
     children: (0, r.jsx)(c.$jN, {})
   }) : (0, r.jsx)(f.Gt, {

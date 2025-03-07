@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   default: () => f
 });
@@ -25,8 +25,8 @@ function h(e) {
     toastContent: c,
     initialStep: h = d.h8.PAYMENT_TYPE,
     overwriteSubscriptionPaymentSource: f = !1
-  } = e, x = (0, u.fL)(), b = (0, u.vP)({
-    paymentModalArgs: x,
+  } = e, b = (0, u.fL)(), N = (0, u.vP)({
+    paymentModalArgs: b,
     initialStep: h,
     prependSteps: [],
     appendSteps: [],
@@ -61,7 +61,7 @@ function h(e) {
       onSubmit: function(e) {
         e.preventDefault()
       },
-      children: b
+      children: N
     })
   })
 }

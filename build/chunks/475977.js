@@ -1,100 +1,73 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => v
-}), n(266796);
+  Z: () => h
+});
 var r = n(200651),
   i = n(192379),
-  s = n(120356),
-  a = n.n(s),
-  l = n(115434),
-  o = n(264181),
-  c = n(399606),
-  d = n(481060),
-  u = n(100527),
-  m = n(906732),
-  p = n(626135),
-  g = n(335131),
-  h = n(874703),
-  f = n(410154),
-  x = n(302800),
-  b = n(981631),
-  N = n(474936),
-  _ = n(388032),
-  E = n(698555),
-  C = n(786792),
-  j = n(161594);
-let O = e => {
-    var t, n, i, s, l;
-    let {
-      displayOptions: o,
-      marketingVariant: c
-    } = e;
-    return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)("div", {
-        className: E.artContainer,
-        "aria-hidden": !0,
-        role: "presentation",
-        children: (0, r.jsx)("img", {
-          src: null !== (i = null == o ? void 0 : o.artSrc) && void 0 !== i ? i : j,
-          className: a()(E.art, {
-            [E.tideArt]: null != c && c === f.C5.TIDE
-          }),
-          alt: ""
-        })
-      }), (0, r.jsxs)("div", {
-        className: E.mainColumn,
-        children: [(0, r.jsx)(d.X6q, {
-          variant: "heading-lg/extrabold",
-          color: (null == o ? void 0 : o.revertTextColor) ? "redesign-button-overlay-text" : "currentColor",
-          className: E.title,
-          children: null !== (s = null == o ? void 0 : null === (t = o.title) || void 0 === t ? void 0 : t.call(o)) && void 0 !== s ? s : _.NW.string(_.t["4Emkur"])
-        }), (0, r.jsx)(d.Text, {
-          variant: "text-sm/normal",
-          color: (null == o ? void 0 : o.revertTextColor) ? "redesign-button-overlay-text" : "currentColor",
-          children: null !== (l = null == o ? void 0 : null === (n = o.description) || void 0 === n ? void 0 : n.call(o)) && void 0 !== l ? l : _.NW.string(_.t.gn7SZW)
-        })]
-      })]
+  s = n(481060),
+  a = n(100527),
+  l = n(906732),
+  o = n(626135),
+  c = n(335131),
+  d = n(196033),
+  u = n(981631),
+  m = n(474936),
+  p = n(388032),
+  g = n(698555);
+let h = () => {
+  let {
+    analyticsLocations: e
+  } = (0, l.ZP)(a.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), t = i.useRef(null), {
+    asset: n,
+    popoutAsset: h,
+    title: f,
+    body: b,
+    version: N,
+    revertTextColor: x
+  } = (0, d.W)();
+  return i.useEffect(() => {
+    o.default.track(u.rMx.PREMIUM_UPSELL_VIEWED, {
+      type: m.cd.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
+      location_stack: e,
+      version: N
     })
-  },
-  v = () => {
-    var e;
-    let t;
-    let {
-      analyticsLocations: n
-    } = (0, m.ZP)(u.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), s = i.useRef(null), j = (0, f.ZP)("CollectiblesUpsellBanner"), v = (0, c.e7)([h.Z], () => h.Z.getMarketingBySurface(l.K.EDIT_PROFILE_SETTINGS));
-    return t = (null == v ? void 0 : v.type) === o.Z.BANNER ? {
-      artSrc: v.popoutAsset,
-      backgroundSrc: v.asset,
-      title: () => v.title,
-      description: () => v.body,
-      revertTextColor: v.revertTextColor
-    } : x.GX[j], i.useEffect(() => {
-      p.default.track(b.rMx.PREMIUM_UPSELL_VIEWED, {
-        type: N.cd.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
-        location_stack: n,
-        version: null == v ? void 0 : v.version
+  }, [e, N]), (0, r.jsxs)("div", {
+    ref: t,
+    className: g.container,
+    style: {
+      backgroundImage: "url(".concat(n, ")")
+    },
+    children: [(0, r.jsx)("div", {
+      className: g.artContainer,
+      "aria-hidden": !0,
+      role: "presentation",
+      children: (0, r.jsx)("img", {
+        src: h,
+        className: g.art,
+        alt: ""
       })
-    }, [n, null == v ? void 0 : v.version]), (0, r.jsxs)("div", {
-      ref: s,
-      className: a()(E.container, {
-        [E.robertContainer]: j === f.C5.ROBERT
-      }),
-      style: {
-        backgroundImage: "url(".concat(null !== (e = null == t ? void 0 : t.backgroundSrc) && void 0 !== e ? e : C, ")")
-      },
-      children: [(0, r.jsx)(O, {
-        displayOptions: t,
-        marketingVariant: j
-      }), (0, r.jsx)(d.zxk, {
-        onClick: () => {
-          (0, g.mK)({
-            analyticsLocations: n,
-            analyticsSource: u.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
-          })
-        },
-        className: E.ctaButton,
-        color: d.zxk.Colors.BRAND_INVERTED,
-        children: _.NW.string(_.t.fYfGgI)
+    }), (0, r.jsxs)("div", {
+      className: g.mainColumn,
+      children: [(0, r.jsx)(s.X6q, {
+        variant: "heading-lg/extrabold",
+        color: x ? "redesign-button-overlay-text" : "currentColor",
+        className: g.title,
+        children: f
+      }), (0, r.jsx)(s.Text, {
+        variant: "text-sm/normal",
+        color: x ? "redesign-button-overlay-text" : "currentColor",
+        children: b
       })]
-    })
-  }
+    }), (0, r.jsx)(s.zxk, {
+      onClick: () => {
+        (0, c.mK)({
+          analyticsLocations: e,
+          analyticsSource: a.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
+        })
+      },
+      className: g.ctaButton,
+      color: s.zxk.Colors.BRAND_INVERTED,
+      children: p.NW.string(p.t.fYfGgI)
+    })]
+  })
+}

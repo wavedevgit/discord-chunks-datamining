@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => _
 }), n(47120), n(411104);
@@ -25,7 +25,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function x(e) {
   return e
 }
 
-function b(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,14 +50,14 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class N extends i.Component {
+class x extends i.Component {
   get analyticsLocation() {
     let {
       analyticsContext: {
         location: e
       }
     } = this.props;
-    return b(x({}, e), {
+    return N(b({}, e), {
       object: p.qAy.BUTTON_CTA
     })
   }
@@ -136,7 +136,7 @@ class N extends i.Component {
         }), Error("Cannnot redeem promotion code as gift");
         u.default.track(p.rMx.OPEN_MODAL, {
           type: "gift_accept",
-          location: b(x({}, this.analyticsLocation), {
+          location: N(b({}, this.analyticsLocation), {
             object: p.qAy.BUTTON_CTA
           })
         }), (0, c.V)({
@@ -160,7 +160,7 @@ class N extends i.Component {
 function _() {
   let e = i.useContext(u.AnalyticsContext),
     t = (0, s.e7)([d.Z], () => d.Z.enabled);
-  return (0, r.jsx)(N, {
+  return (0, r.jsx)(x, {
     analyticsContext: e,
     obscureInput: t
   })

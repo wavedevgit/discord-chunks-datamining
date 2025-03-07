@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => _
 });
@@ -16,14 +16,14 @@ var r = n(200651),
   g = n(899667),
   h = n(853872),
   f = n(78839),
-  x = n(783739),
-  b = n(981631),
-  N = n(778893);
+  b = n(783739),
+  N = n(981631),
+  x = n(778893);
 
 function _() {
   i.useEffect(() => {
     c.Z.wait(() => {
-      d.jg(), d.tZ(), (0, u.X8)(), (0, m.Y2)(null, null, b.JjL.DISCOVERY), (0, u.tH)(!0)
+      d.jg(), d.tZ(), (0, u.X8)(), (0, m.Y2)(null, null, N.JjL.DISCOVERY), (0, u.tH)(!0)
     })
   }, []);
   let {
@@ -34,17 +34,17 @@ function _() {
     premiumSubscription: f.ZP.getPremiumTypeSubscription()
   })), n = (0, p.V)(), s = (0, l.e7)([h.Z], () => h.Z.hasFetchedPaymentSources), _ = (0, l.e7)([g.Z], () => g.Z.isFetchingCurrentUserAppliedBoosts);
   return e && n && s && !_ ? (0, r.jsxs)("div", {
-    className: N.container,
+    className: x.container,
     children: [(0, r.jsx)("div", {
-      className: N.background
+      className: x.background
     }), (0, r.jsx)("div", {
-      className: N.content,
-      children: (0, r.jsx)(x.Z, {
+      className: x.content,
+      children: (0, r.jsx)(b.Z, {
         premiumSubscription: t
       })
     })]
   }) : (0, r.jsx)("div", {
-    className: a()(N.container, N.loading),
+    className: a()(x.container, x.loading),
     children: (0, r.jsx)(o.$jN, {})
   })
 }

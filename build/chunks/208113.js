@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => g
 }), n(653041);
@@ -28,7 +28,7 @@ function g(e) {
     legacyAudioSubsystemSupported: o.Z.supports(u.AN.LEGACY_AUDIO_SUBSYSTEM),
     experimentalAudioSubsystemSupported: o.Z.supports(u.AN.EXPERIMENTAL_AUDIO_SUBSYSTEM),
     automaticAudioSubsystemSupported: o.Z.supports(u.AN.AUTOMATIC_AUDIO_SUBSYSTEM)
-  })), x = (0, r.jsx)(s.q4e, {
+  })), b = (0, r.jsx)(s.q4e, {
     className: p.marginBottom20,
     value: n,
     options: function(e, t, n) {
@@ -55,11 +55,11 @@ function g(e) {
     setting: d.s6.VOICE_AND_VIDEO_ADVANCED_SUBSYSTEM,
     children: t ? (0, r.jsx)(s.xJW, {
       title: m.NW.string(m.t.wVBHr6),
-      children: x
+      children: b
     }) : (0, r.jsxs)(s.hjN, {
       className: p.marginBottom20,
       title: m.NW.string(m.t.wVBHr6),
-      children: [x, (0, r.jsx)(s.$i$, {
+      children: [b, (0, r.jsx)(s.$i$, {
         className: p.marginBottom20
       })]
     })

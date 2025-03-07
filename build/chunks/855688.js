@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 e.exports = {
   voiceModalContainer: "voiceModalContainer__25eff",
   voiceModalRootContainer: "voiceModalRootContainer__25eff",

@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   MM: () => V,
   Yn: () => H,
@@ -19,13 +19,13 @@ var r = n(200651),
   g = n(230711),
   h = n(100527),
   f = n(906732),
-  x = n(17894),
-  b = n(975298),
-  N = n(600164),
+  b = n(17894),
+  N = n(975298),
+  x = n(600164),
   _ = n(925329),
   E = n(963249),
-  C = n(301766),
-  j = n(594174),
+  j = n(301766),
+  C = n(594174),
   O = n(626135),
   v = n(63063),
   S = n(74538),
@@ -47,8 +47,8 @@ function W(e) {
       fromStandaloneBillingPage: s = !0,
       className: l
     } = e,
-    c = (0, u.e7)([j.default], () => {
-      let e = j.default.getCurrentUser();
+    c = (0, u.e7)([C.default], () => {
+      let e = C.default.getCurrentUser();
       return o()(null != e, "GuildBoostingHeader: currentUser cannot be undefined"), e
     });
   if (0 === (0, S.uV)(n.additionalPlans)) return null;
@@ -98,7 +98,7 @@ function W(e) {
       className: k.boostingDesktopAppBlurb,
       variant: "text-sm/normal",
       children: w.NW.format(w.t.k6haR0, {
-        openAppHook: () => (0, x.Z)("app")
+        openAppHook: () => (0, b.Z)("app")
       })
     })]
   })
@@ -214,8 +214,8 @@ function V() {
     }), (0, r.jsx)(p.Zbd, {
       className: k.noItemsCard,
       type: p.Zbd.Types.CUSTOM,
-      children: (0, r.jsxs)(N.Z, {
-        align: N.Z.Align.CENTER,
+      children: (0, r.jsxs)(x.Z, {
+        align: x.Z.Align.CENTER,
         children: [(0, r.jsx)(_.Z, {
           game: null,
           size: _.Z.Sizes.SMALL,
@@ -247,30 +247,30 @@ function G(e) {
     renewal: !0,
     analyticsLocations: m,
     analyticsLocation: n
-  }, [x] = (0, I.ED)(g);
-  x = null != d ? d : x;
-  let N = null != u ? {} : {
+  }, [b] = (0, I.ED)(g);
+  b = null != d ? d : b;
+  let x = null != u ? {} : {
       subscriptionId: t.id,
       renewal: !0,
       applyEntitlements: !0,
       analyticsLocations: m,
       analyticsLocation: n
     },
-    [_] = (0, I.ED)(N);
+    [_] = (0, I.ED)(x);
   _ = null != u ? u : _;
-  let E = (0, b.Z)();
-  return null == x || null == _ ? (0, r.jsx)(p.$jN, {}) : (0, r.jsxs)(r.Fragment, {
+  let E = (0, N.Z)();
+  return null == b || null == _ ? (0, r.jsx)(p.$jN, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: k.subscriptionRows,
       children: [(0, r.jsx)(P.Z, {
         subscription: t,
-        renewalInvoicePreview: x,
+        renewalInvoicePreview: b,
         paymentSource: i,
         busy: s,
         analyticsLocation: n
       }), (0, r.jsx)(W, {
         subscription: t,
-        renewalInvoicePreview: x,
+        renewalInvoicePreview: b,
         fromStandaloneBillingPage: l,
         className: k.guildSubscriptionRow
       })]
@@ -302,7 +302,7 @@ function G(e) {
               onPaymentSourceAdded: T.i1,
               highlightAddPaymentMethodButton: c || o,
               analyticsLocation: n,
-              currentInvoicePreview: x,
+              currentInvoicePreview: b,
               dropdownClassName: k.paymentDropdown
             })]
           })]
@@ -348,25 +348,25 @@ function z(e) {
   null != s && null != s[0] && (i = s[0]);
   let {
     analyticsLocations: m
-  } = (0, f.ZP)(h.Z.SUBSCRIPTION_DETAILS), g = null != s ? s.slice(1) : [], [x] = (0, I.ED)({
+  } = (0, f.ZP)(h.Z.SUBSCRIPTION_DETAILS), g = null != s ? s.slice(1) : [], [b] = (0, I.ED)({
     subscriptionId: i.id,
     renewal: !0,
     analyticsLocations: m,
     analyticsLocation: c
-  }), [b] = (0, I.ED)({
+  }), [N] = (0, I.ED)({
     subscriptionId: i.id,
     renewal: !0,
     applyEntitlements: !0,
     analyticsLocations: m,
     analyticsLocation: c
-  }), N = null == a ? void 0 : a.invalid, _ = (0, u.e7)([j.default], () => {
+  }), x = null == a ? void 0 : a.invalid, _ = (0, u.e7)([C.default], () => {
     var e;
-    return null === (e = j.default.getCurrentUser()) || void 0 === e ? void 0 : e.hasFreePremium()
-  }), E = d()(i.currentPeriodEnd), O = null != i.paymentSourceId, v = null !== (t = null == b ? void 0 : b.total) && void 0 !== t ? t : 0, S = !O && v > 0 && (7 >= E.diff(d()(), "days") || i.status === Z.O0b.PAST_DUE) && !_ && !i.isPurchasedExternally, T = N && i.status === Z.O0b.PAST_DUE && !_ && !i.isPurchasedExternally, A = (0, y.U)(), P = !_ && A, R = (null == i ? void 0 : i.status) === Z.O0b.PAST_DUE ? d()().diff(d()(i.currentPeriodStart), "days") : 0, [W] = (0, I.Ox)({
+    return null === (e = C.default.getCurrentUser()) || void 0 === e ? void 0 : e.hasFreePremium()
+  }), E = d()(i.currentPeriodEnd), O = null != i.paymentSourceId, v = null !== (t = null == N ? void 0 : N.total) && void 0 !== t ? t : 0, S = !O && v > 0 && (7 >= E.diff(d()(), "days") || i.status === Z.O0b.PAST_DUE) && !_ && !i.isPurchasedExternally, T = x && i.status === Z.O0b.PAST_DUE && !_ && !i.isPurchasedExternally, A = (0, y.U)(), P = !_ && A, R = (null == i ? void 0 : i.status) === Z.O0b.PAST_DUE ? d()().diff(d()(i.currentPeriodStart), "days") : 0, [W] = (0, I.Ox)({
     subscriptionId: i.id,
     preventFetch: !P
   });
-  return null == x || null == b ? (0, r.jsx)(p.$jN, {}) : (null != i.renewalMutations && (i.renewalMutations.planId !== i.planId && !(0, C.Q0)(i.renewalMutations.planId) || i.hasExternalPlanChange) && (n = (0, r.jsx)(D.Z, {
+  return null == b || null == N ? (0, r.jsx)(p.$jN, {}) : (null != i.renewalMutations && (i.renewalMutations.planId !== i.planId && !(0, j.Q0)(i.renewalMutations.planId) || i.hasExternalPlanChange) && (n = (0, r.jsx)(D.Z, {
     subscription: i,
     renewalMutations: i.renewalMutations,
     className: k.renewalMutationNotice,
@@ -398,8 +398,8 @@ function z(e) {
             fromStandaloneBillingPage: o,
             showNoPaymentMethod: S,
             showInvalidPaymentMethod: T,
-            fetchedCurrentInvoicePreview: x,
-            fetchedRenewalInvoicePreview: b
+            fetchedCurrentInvoicePreview: b,
+            fetchedRenewalInvoicePreview: N
           })
         }), g.map((e, t) => (0, r.jsxs)("div", {
           className: k.dupSubscriptionRow,

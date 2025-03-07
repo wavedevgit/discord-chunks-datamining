@@ -16,16 +16,16 @@ let u = () => {
     assets: m,
     upsertAsset: h,
     previewEnabled: p,
-    setPreviewEnabled: f,
-    deleteAsset: x
+    setPreviewEnabled: x,
+    deleteAsset: f
   } = (0, o.N)(), b = a.useCallback((e, t) => {
     let n = c.Kj[e.name];
     null != n && (e.type.startsWith("image/") || e.type.startsWith("video/")) && h(n, e)
   }, [h]), _ = a.useCallback(async e => {
-    (await (0, c.RF)(e)).forEach(e => (0, c.ZK)(e, b, c.Eo)), f(!0)
-  }, [b, f]), g = a.useCallback(e => {
-    x(e)
-  }, [x]), v = a.useMemo(() => Object.values(c.Fr).filter(e => null != m[e]).map(e => ({
+    (await (0, c.RF)(e)).forEach(e => (0, c.ZK)(e, b, c.Eo)), x(!0)
+  }, [b, x]), g = a.useCallback(e => {
+    f(e)
+  }, [f]), v = a.useMemo(() => Object.values(c.Fr).filter(e => null != m[e]).map(e => ({
     label: e,
     value: e
   })), [m]);
@@ -40,7 +40,7 @@ let u = () => {
       className: d.previewToggleContainer,
       children: [(0, r.jsx)(i.rsf, {
         checked: p,
-        onChange: e => f(e)
+        onChange: e => x(e)
       }), (0, r.jsx)(i.Text, {
         variant: "text-md/normal",
         children: "Enable Preview"

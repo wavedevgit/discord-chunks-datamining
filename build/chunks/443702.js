@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => I
 });
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(390954),
   h = n(89057),
   f = n(921801),
-  x = n(246946),
-  b = n(594174),
-  N = n(351402),
+  b = n(246946),
+  N = n(594174),
+  x = n(351402),
   _ = n(853872),
   E = n(78839),
-  C = n(706454),
-  j = n(726985),
+  j = n(706454),
+  C = n(726985),
   O = n(981631),
   v = n(388032),
   S = n(700292);
@@ -52,7 +52,7 @@ class T extends i.PureComponent {
         className: S.syncing,
         children: (0, r.jsx)(o.$jN, {})
       }) : (0, r.jsx)(f.F, {
-        setting: j.s6.BILLING_PAYMENT_METHODS,
+        setting: C.s6.BILLING_PAYMENT_METHODS,
         children: (0, r.jsx)(g.Z, {
           paymentSources: n,
           defaultPaymentSourceId: i,
@@ -62,7 +62,7 @@ class T extends i.PureComponent {
           submitting: c
         })
       }), (0, r.jsx)(f.F, {
-        setting: j.s6.BILLING_TRANSACTION_HISTORY,
+        setting: C.s6.BILLING_TRANSACTION_HISTORY,
         children: (0, r.jsx)("div", {
           className: S.paymentHistory,
           children: (0, r.jsxs)(o.y5t, {
@@ -87,20 +87,20 @@ class T extends i.PureComponent {
 }
 
 function I() {
-  let e = (0, l.cj)([C.default, N.Z, _.Z, b.default, x.Z, E.ZP], () => {
+  let e = (0, l.cj)([j.default, x.Z, _.Z, N.default, b.Z, E.ZP], () => {
     let e = E.ZP.getPremiumTypeSubscription(),
-      t = b.default.getCurrentUser();
+      t = N.default.getCurrentUser();
     return a()(null != t, "UserSettingsBilling: currentUser cannot be undefined"), {
-      locale: C.default.locale,
-      hide: x.Z.enabled,
+      locale: j.default.locale,
+      hide: b.Z.enabled,
       isClaimed: t.isClaimed(),
       isVerified: t.verified,
       premiumSubscription: e,
       defaultPaymentSourceId: _.Z.defaultPaymentSourceId,
       paymentSources: _.Z.paymentSources,
-      syncing: N.Z.isSyncing,
-      isRemovingPaymentSource: N.Z.isRemovingPaymentSource,
-      isUpdatingPaymentSource: N.Z.isUpdatingPaymentSource
+      syncing: x.Z.isSyncing,
+      isRemovingPaymentSource: x.Z.isRemovingPaymentSource,
+      isUpdatingPaymentSource: x.Z.isUpdatingPaymentSource
     }
   });
   return (0, r.jsx)(T, function(e) {

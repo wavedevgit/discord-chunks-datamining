@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 e.exports = {
   flipCardContainer: "flipCardContainer_f8e6bf",
   noFlipCardContainer: "noFlipCardContainer_f8e6bf",

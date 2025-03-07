@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   ZP: () => k,
   __: () => w,
@@ -17,13 +17,13 @@ var r, i = n(230711),
   g = n(880511),
   h = n(985443),
   f = n(612253),
-  x = n(832287),
-  b = n(872532),
-  N = n(91342),
+  b = n(832287),
+  N = n(872532),
+  x = n(91342),
   _ = n(181708),
   E = n(821721),
-  C = n(158897),
-  j = n(290650),
+  j = n(158897),
+  C = n(290650),
   O = n(751125),
   v = n(904505),
   S = n(712626),
@@ -43,7 +43,7 @@ let w = () => {
         title: m.NW.string(m.t.zY5PPT),
         description: m.NW.string(m.t.R5Xag4),
         previewImage: p,
-        videoUrl: e ? N.ZP : _.ZP,
+        videoUrl: e ? x.ZP : _.ZP,
         isCompact: !0
       },
       noLimits: {
@@ -51,7 +51,7 @@ let w = () => {
         title: m.NW.string(m.t["6b3ydH"]),
         description: m.NW.string(m.t["Y+IJys"]),
         previewImage: g,
-        videoUrl: e ? j.ZP : O.ZP,
+        videoUrl: e ? C.ZP : O.ZP,
         isCompact: !0
       }
     }
@@ -67,14 +67,14 @@ let w = () => {
         openWithoutBackstack: !0,
         analyticsLocations: t
       })
-    }, p = (0, o.rO)(), g = c.Z.getArticleURL(d.BhN.REFERRAL_PROGRAM), N = {
+    }, p = (0, o.rO)(), g = c.Z.getArticleURL(d.BhN.REFERRAL_PROGRAM), x = {
       serverProfiles: {
         name: "serverProfiles",
         title: m.NW.string(m.t.I9TYMj),
         description: m.NW.string(m.t.HMSHeH),
         descriptionCta: m.NW.string(m.t.jVcuVV),
         onClick: n,
-        previewImage: b,
+        previewImage: N,
         videoUrl: p ? I.ZP : y.ZP
       },
       referralProgram: {
@@ -92,8 +92,8 @@ let w = () => {
         description: m.NW.string(m.t.HC5wVV),
         descriptionCta: m.NW.string(m.t.jVcuVV),
         onClick: r,
-        previewImage: x,
-        videoUrl: p ? E.ZP : C.ZP
+        previewImage: b,
+        videoUrl: p ? E.ZP : j.ZP
       }
     }, _ = {
       showYourStyle: {
@@ -115,5 +115,5 @@ let w = () => {
         videoUrl: p ? R.Z : D.Z
       }
     };
-    return e ? _ : N
+    return e ? _ : x
   }

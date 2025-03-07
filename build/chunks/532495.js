@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => Z
 });
@@ -17,13 +17,13 @@ var i = n(512722),
   g = n(126631),
   h = n(433411),
   f = n(532432),
-  x = n(349177),
-  b = n(872736),
-  N = n(818420),
+  b = n(349177),
+  N = n(872736),
+  x = n(818420),
   _ = n(134795),
   E = n(610966),
-  C = n(513901),
-  j = n(451392),
+  j = n(513901),
+  C = n(451392),
   O = n(906364),
   v = n(643879),
   S = n(350327),
@@ -109,7 +109,7 @@ function Z() {
     es = (0, m.H)("DefaultCustomizationSections");
   return (0, r.jsxs)("div", {
     className: D.sectionsContainer,
-    children: [(0, r.jsx)(x.Z, {
+    children: [(0, r.jsx)(b.Z, {
       placeholder: L.username,
       errors: en,
       currentGlobalName: L.globalName,
@@ -130,9 +130,9 @@ function Z() {
     }, "avatar"), (0, r.jsx)(h.Z, {
       user: L,
       sectionTitle: R.NW.string(R.t["7v0T9P"])
-    }, "decoration"), es && (0, r.jsx)(N.Z, {
+    }, "decoration"), es && (0, r.jsx)(x.Z, {
       user: L
-    }), (0, r.jsx)(C.Z, {
+    }), (0, r.jsx)(j.Z, {
       user: L,
       sectionTitle: R.NW.string(R.t.wR5wOj)
     }, "effect"), X ? (0, r.jsxs)(r.Fragment, {
@@ -141,7 +141,7 @@ function Z() {
         errors: Y.banner,
         onBannerChange: S.g_,
         forcedDivider: !0
-      }, "banner"), (0, r.jsx)(j.Z, {
+      }, "banner"), (0, r.jsx)(C.Z, {
         user: L,
         pendingAvatarSrc: K,
         pendingColors: z,
@@ -161,7 +161,7 @@ function Z() {
       currentBio: null !== (W = null == B ? void 0 : B.bio) && void 0 !== W ? W : ""
     }, "bio"), ei.length > 0 && (0, r.jsx)(d.Z, {
       availableClans: ei
-    }), null != et && (0, r.jsx)(b.Z, {
+    }), null != et && (0, r.jsx)(N.Z, {
       legacyUsername: et
     }, "legacy_username")]
   })

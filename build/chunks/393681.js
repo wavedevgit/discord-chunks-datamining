@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => J
 }), n(47120);
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(497321),
   h = n(279837),
   f = n(952306),
-  x = n(600164),
-  b = n(690221),
-  N = n(346585),
+  b = n(600164),
+  N = n(690221),
+  x = n(346585),
   _ = n(347649),
   E = n(332473),
-  C = n(303172),
-  j = n(518560),
+  j = n(303172),
+  C = n(518560),
   O = n(921801),
   v = n(484459),
   S = n(430824),
@@ -147,10 +147,10 @@ class X extends i.PureComponent {
       className: z.accountWarningBodyText,
       messageType: u.QYI.WARNING,
       children: [this.props.forceMigrationExperiment ? H.NW.format(H.t.zT1hgo, {
-        date: (0, N.IE)(this.props.locale)
-      }) : H.NW.format(H.t.pdYZys, {}), " ", "", (0, r.jsx)(b.Z, {
+        date: (0, x.IE)(this.props.locale)
+      }) : H.NW.format(H.t.pdYZys, {}), " ", "", (0, r.jsx)(N.Z, {
         className: z.noticeTextButton,
-        onClick: () => (0, C.Z)(F.Kq.USER_SETTINGS),
+        onClick: () => (0, j.Z)(F.Kq.USER_SETTINGS),
         children: H.NW.string(H.t.LhlgY2)
       })]
     }) : null
@@ -199,15 +199,15 @@ class X extends i.PureComponent {
         })
       }), (0, r.jsx)(O.F, {
         setting: V.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-        children: (0, r.jsxs)(x.Z, {
-          align: x.Z.Align.STRETCH,
-          children: [(0, r.jsx)(x.Z.Child, {
+        children: (0, r.jsxs)(b.Z, {
+          align: b.Z.Align.STRETCH,
+          children: [(0, r.jsx)(b.Z.Child, {
             wrap: !0,
             children: (0, r.jsx)(L.Z, {
               backupCodes: e
             })
-          }), t.mfaEnabled ? null : (0, r.jsx)(x.Z, {
-            align: x.Z.Align.CENTER,
+          }), t.mfaEnabled ? null : (0, r.jsx)(b.Z, {
+            align: b.Z.Align.CENTER,
             basis: "323px",
             grow: 0,
             children: (0, r.jsx)("img", {
@@ -328,7 +328,7 @@ class X extends i.PureComponent {
           setting: V.s6.ACCOUNT_SECURITY_TAB
         }, {
           title: H.NW.string(H.t["Vov/9v"]),
-          component: j.Z,
+          component: C.Z,
           setting: V.s6.PRIVACY_AND_SAFETY_STANDING
         }]
       })

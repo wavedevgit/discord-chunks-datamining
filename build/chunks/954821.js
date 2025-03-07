@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   h: () => _
 }), n(47120), n(266796);
@@ -16,8 +16,8 @@ var r = n(200651),
   g = n(305342),
   h = n(293810),
   f = n(388032),
-  x = n(314516);
-let b = e => {
+  b = n(314516);
+let N = e => {
     let [t, n] = i.useState(!1), [r, s] = i.useState(null);
     return {
       cancelSubscription: async t => {
@@ -33,62 +33,62 @@ let b = e => {
       submitting: t
     }
   },
-  N = e => {
+  x = e => {
     var t;
     let {
       transitionState: n,
       groupListing: i,
       guildId: s,
       listing: o,
-      subscription: N,
+      subscription: x,
       onClose: _
-    } = e, E = (0, u.Dt)(), C = (0, p.YB)(s), j = (null == C ? void 0 : null === (t = C.cover_image_asset) || void 0 === t ? void 0 : t.application_id) != null ? (0, m._W)(C.cover_image_asset.application_id, C.cover_image_asset, 440) : void 0, {
+    } = e, E = (0, u.Dt)(), j = (0, p.YB)(s), C = (null == j ? void 0 : null === (t = j.cover_image_asset) || void 0 === t ? void 0 : t.application_id) != null ? (0, m._W)(j.cover_image_asset.application_id, j.cover_image_asset, 440) : void 0, {
       analyticsLocations: O
     } = (0, d.ZP)(c.Z.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
       cancelSubscription: v,
       error: S,
       submitting: T
-    } = b(O), I = async () => {
-      await v(N.id) && _()
-    }, y = o.role_benefits.benefits.filter(e => e.ref_type === h.Qs.CHANNEL), A = o.role_benefits.benefits.filter(e => e.ref_type === h.Qs.INTANGIBLE), P = a()(N.currentPeriodEnd).format("MMMM Do, YYYY"), R = f.NW.formatToPlainString(f.t.KsMRPz, {
+    } = N(O), I = async () => {
+      await v(x.id) && _()
+    }, y = o.role_benefits.benefits.filter(e => e.ref_type === h.Qs.CHANNEL), A = o.role_benefits.benefits.filter(e => e.ref_type === h.Qs.INTANGIBLE), P = a()(x.currentPeriodEnd).format("MMMM Do, YYYY"), R = f.NW.formatToPlainString(f.t.KsMRPz, {
       numChannels: y.length,
       numAdditionalBenefits: A.length,
       subscriptionEndDate: P
     });
     return (0, r.jsxs)(l.Y0X, {
       transitionState: n,
-      className: x.__invalid_modal,
+      className: b.__invalid_modal,
       "aria-labelledby": E,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)("img", {
-          src: j,
+          src: C,
           alt: "",
-          className: x.headerImage
+          className: b.headerImage
         }), (0, r.jsx)(l.olH, {
           withCircleBackground: !0,
-          className: x.closeButton,
+          className: b.closeButton,
           onClick: _
         })]
       }), null != S ? (0, r.jsx)(l.kzN, {
         children: S.message
       }) : null, (0, r.jsxs)(l.hzk, {
-        className: x.content,
+        className: b.content,
         children: [(0, r.jsx)(l.X6q, {
           id: E,
           variant: "text-md/medium",
-          className: x.title,
+          className: b.title,
           children: f.NW.string(f.t.O6l5tL)
         }), (0, r.jsx)(l.Text, {
-          className: x.description,
+          className: b.description,
           variant: "text-sm/normal",
           children: R
         }), (0, r.jsx)(g.c, {
           listingId: o.id,
           guildId: i.guild_id,
-          className: x.benefits
+          className: b.benefits
         })]
       }), (0, r.jsxs)(l.mzw, {
-        className: x.footer,
+        className: b.footer,
         children: [(0, r.jsx)(l.zxk, {
           color: l.zxk.Colors.RED,
           onClick: I,
@@ -97,7 +97,7 @@ let b = e => {
         }), (0, r.jsx)(l.zxk, {
           look: l.zxk.Looks.LINK,
           color: l.zxk.Colors.WHITE,
-          className: x.goBackButton,
+          className: b.goBackButton,
           onClick: _,
           children: f.NW.string(f.t.EP6EPT)
         })]
@@ -105,7 +105,7 @@ let b = e => {
     })
   },
   _ = e => {
-    (0, l.h7j)(t => (0, r.jsx)(N, function(e) {
+    (0, l.h7j)(t => (0, r.jsx)(x, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

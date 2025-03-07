@@ -1,7 +1,7 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   V9: () => O,
-  ek: () => j
+  ek: () => C
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -17,15 +17,15 @@ var r = n(200651),
   g = n(790542),
   h = n(317257),
   f = n(120786),
-  x = n(970815),
-  b = n(82856),
-  N = n(981631),
+  b = n(970815),
+  N = n(82856),
+  x = n(981631),
   _ = n(215023),
   E = n(388032),
-  C = n(577956);
-let j = {
-    START: C.alignLeft,
-    END: C.alignRight
+  j = n(577956);
+let C = {
+    START: j.alignLeft,
+    END: j.alignRight
   },
   O = e => {
     let {
@@ -35,7 +35,7 @@ let j = {
       isCoachmarkEnabled: O = !0,
       linkText: v = E.NW.string(E.t["7f4H7O"]),
       linkTo: S,
-      cardAlignment: T = j.START,
+      cardAlignment: T = C.START,
       className: I
     } = e, {
       balance: y
@@ -43,20 +43,20 @@ let j = {
       analyticsLocations: W
     } = (0, d.ZP)(c.Z.VIRTUAL_CURRENCY_BALANCE_WIDGET), L = i.useRef(null), {
       shouldOpen: B
-    } = (0, b.lJ)({
+    } = (0, N.lJ)({
       backgroundElementRef: L
     }), {
       shouldOpen: M
     } = (0, p.Mm)({
       backgroundElementRef: L,
       isCoachmarkEnabled: O,
-      onCloseCallback: N.dG4,
-      onClickPill: N.dG4,
+      onCloseCallback: x.dG4,
+      onClickPill: x.dG4,
       linkOnClick: () => {
         (0, m.navigateToQuestHome)()
       },
       ctaOnClick: () => {
-        k.pathname !== N.Z5c.COLLECTIBLES_SHOP && (0, u.mK)({
+        k.pathname !== x.Z5c.COLLECTIBLES_SHOP && (0, u.mK)({
           openInLayer: !1,
           tab: _.AW.ORBS,
           analyticsLocations: W,
@@ -67,7 +67,7 @@ let j = {
     i.useEffect(() => {
       if (!O) return;
       let e = (0, p.wH)();
-      (0, b.Pe)() || e || U ? (w(!0), D(!1)) : w(!1)
+      (0, N.Pe)() || e || U ? (w(!0), D(!1)) : w(!1)
     }, [O, U]);
     let V = i.useCallback(() => {
         let e = !R;
@@ -78,11 +78,11 @@ let j = {
       }, [R, V]),
       F = (0, o.Z)(null, G);
     return (0, r.jsxs)("div", {
-      className: a()(C.container, I, {
-        [C.hidden]: Z,
-        [C.visible]: !Z
+      className: a()(j.container, I, {
+        [j.hidden]: Z,
+        [j.visible]: !Z
       }),
-      children: [(0, r.jsx)(x.A4, {
+      children: [(0, r.jsx)(b.A4, {
         ref: L,
         balance: y,
         balanceWidgetMode: U ? h.b.DEFAULT : A,
@@ -92,9 +92,9 @@ let j = {
         onClick: V,
         showNotificationBadge: t
       }), R && (0, r.jsx)("div", {
-        className: a()(C.cardContainer, T, {
-          [C.hidden]: Z,
-          [C.visible]: !Z
+        className: a()(j.cardContainer, T, {
+          [j.hidden]: Z,
+          [j.visible]: !Z
         }),
         ref: F,
         children: (0, r.jsx)(f.L, {
@@ -108,4 +108,4 @@ let j = {
       })]
     })
   };
-O.CardAlignment = j
+O.CardAlignment = C

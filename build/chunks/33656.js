@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => N
+  Z: () => x
 });
 var r = n(200651),
   i = n(192379),
@@ -16,9 +16,9 @@ var r = n(200651),
   g = n(726985),
   h = n(388032),
   f = n(45341),
-  x = n(802138);
+  b = n(802138);
 
-function b(e) {
+function N(e) {
   let {
     label: t,
     onChange: n,
@@ -33,7 +33,7 @@ function b(e) {
   })
 }
 
-function N() {
+function x() {
   let e = (0, l.e7)([d.Z], () => d.Z.getSubsection()),
     t = i.createRef(),
     {
@@ -47,7 +47,7 @@ function N() {
       null == t || null === (n = t.current) || void 0 === n || n.scrollIntoView(!0)
     }
   }, [s, t, e]);
-  let N = p.M0.reduce((e, t) => e || !!n[t], !1),
+  let x = p.M0.reduce((e, t) => e || !!n[t], !1),
     _ = {
       [p.$Z.COMMUNICATION]: g.s6.NOTIFICATIONS_EMAILS_COMMUNICATION,
       [p.$Z.SOCIAL]: g.s6.NOTIFICATIONS_EMAILS_SOCIAL,
@@ -60,7 +60,7 @@ function N() {
     children: [(0, r.jsx)("div", {
       ref: t
     }), (0, r.jsxs)(o.hjN, {
-      className: x.marginTop40,
+      className: b.marginTop40,
       tag: o.RB0.H1,
       title: h.NW.string(h.t.TPchzM),
       children: [p.Od.map(e => {
@@ -68,7 +68,7 @@ function N() {
           category: t,
           label: i,
           subLabel: s
-        } = e, a = _[t], l = (0, r.jsx)(b, {
+        } = e, a = _[t], l = (0, r.jsx)(N, {
           label: i(),
           subLabel: s(),
           enabled: n[t],
@@ -84,7 +84,7 @@ function N() {
         setting: g.s6.NOTIFICATIONS_EMAILS_UNSUBSCRIBE_FROM_ALL_MARKETING_EMAILS,
         children: [(0, r.jsx)(o.zxk, {
           className: f.marketingUnsubscribeButton,
-          disabled: !N,
+          disabled: !x,
           look: o.iLD.LINK,
           color: o.Ttl.LINK,
           onClick: u.oc,
@@ -93,7 +93,7 @@ function N() {
           type: o.geA.DESCRIPTION,
           children: h.NW.string(h.t.iYjQ8f)
         }), (0, r.jsx)(o.$i$, {
-          className: a()(x.marginTop40, x.marginBottom40)
+          className: a()(b.marginTop40, b.marginBottom40)
         })]
       })]
     })]

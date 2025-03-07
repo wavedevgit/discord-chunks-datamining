@@ -122,7 +122,7 @@ let Z = (0, s.Z)(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
         }), t), s)
       }), e.user.isStaff() && R.length > 0 ? (0, n.jsx)(o.sNh, {
-        label: "Build overrides",
+        label: "Build Overrides",
         id: "build_overrides",
         children: (0, n.jsx)(o.kSQ, {
           children: R.map(e => (0, n.jsx)(o.k5B, {

@@ -1,13 +1,13 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 2668 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 });
 var r = n(200651);
 n(192379);
-var i = n(481060),
-  s = n(688465),
-  a = n(388032);
-let l = () => (0, r.jsx)(i.DY3, {
-  text: a.NW.string(a.t["/fgfWl"]),
-  children: (0, r.jsx)(s.Z, {})
+var l = n(481060),
+  a = n(688465),
+  i = n(388032);
+let o = () => (0, r.jsx)(l.DY3, {
+  text: i.NW.string(i.t["/fgfWl"]),
+  children: (0, r.jsx)(a.Z, {})
 })

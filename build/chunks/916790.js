@@ -14,8 +14,8 @@ var r = n(200651),
   m = n(665149),
   h = n(886118),
   p = n(301801),
-  f = n(4912),
-  x = n(55935),
+  x = n(4912),
+  f = n(55935),
   b = n(428530),
   _ = n(257785),
   g = n(484036),
@@ -24,10 +24,10 @@ var r = n(200651),
   y = n(159185),
   C = n(710662);
 
-function O(e) {
+function N(e) {
   return parseFloat(e.toFixed(3))
 }
-let N = [{
+let T = [{
   key: "store",
   cellClassName: y.actionColumn,
   render(e) {
@@ -43,11 +43,11 @@ let N = [{
     let {
       trace: t
     } = e;
-    return "".concat(O(t.time), " ms")
+    return "".concat(N(t.time), " ms")
   }
 }];
 
-function T(e) {
+function O(e) {
   let {
     actionLog: t
   } = e, n = a.useMemo(() => t.traces.map(e => ({
@@ -56,7 +56,7 @@ function T(e) {
   })), [t]);
   return (0, r.jsx)(d.zJl, {
     children: (0, r.jsx)(v.Z, {
-      columns: N,
+      columns: T,
       data: n
     })
   })
@@ -76,12 +76,12 @@ let S = [{
           name: "Created at",
           children: (0, r.jsx)("time", {
             dateTime: null === (t = n.createdAt) || void 0 === t ? void 0 : t.toISOString(),
-            title: (0, x.vc)(a, "LLLL"),
-            children: (0, x.Y4)(a)
+            title: (0, f.vc)(a, "LLLL"),
+            children: (0, f.Y4)(a)
           })
         }), (0, r.jsxs)(_.Z9, {
           name: "Total Time",
-          children: [O(n.totalTime), " ms"]
+          children: [N(n.totalTime), " ms"]
         })]
       }), (0, r.jsx)(d.zJl, {
         className: y.inspectorContainer,
@@ -98,7 +98,7 @@ let S = [{
     let {
       actionLog: t
     } = e;
-    return (0, r.jsx)(T, {
+    return (0, r.jsx)(O, {
       actionLog: t
     })
   }
@@ -111,7 +111,7 @@ function E(e) {
   } = e, i = a.useMemo(() => t.error ? [...S, {
     id: "error",
     name: (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(f.Z, {
+      children: [(0, r.jsx)(x.Z, {
         className: y.errorIcon
       }), "Error"]
     }),
@@ -170,7 +170,7 @@ let k = [{
         actionLog: t
       } = e;
       return (0, r.jsxs)(r.Fragment, {
-        children: [t.error && (0, r.jsx)(f.Z, {
+        children: [t.error && (0, r.jsx)(x.Z, {
           className: y.errorIcon
         }), t.name]
       })
@@ -182,7 +182,7 @@ let k = [{
       let {
         actionLog: t
       } = e;
-      return "".concat(O(t.totalTime), " ms")
+      return "".concat(N(t.totalTime), " ms")
     }
   }],
   I = e => {
@@ -213,25 +213,25 @@ function P() {
       actionLog: e
     })), [i]),
     [c, m] = a.useState(s),
-    [h, f] = a.useState(s),
-    [x, b] = a.useState(!1),
+    [h, x] = a.useState(s),
+    [f, b] = a.useState(!1),
     [_, g] = a.useState(),
     j = a.useCallback(e => {
-      f(e)
+      x(e)
     }, []),
-    O = (0, p.c)(I, j, w),
-    N = a.useCallback(e => {
+    N = (0, p.c)(I, j, w),
+    T = a.useCallback(e => {
       m(s), b(e)
     }, [s]);
   a.useEffect(() => {
-    if (x) {
-      O(t, null != c ? c : s);
+    if (f) {
+      N(t, null != c ? c : s);
       return
     }
-    O(t, s)
-  }, [x, t, O, s, c]);
-  let T = t.trim().length > 0,
-    S = a.useMemo(() => T ? h : x ? c : s, [s, h, T, x, c]);
+    N(t, s)
+  }, [f, t, N, s, c]);
+  let O = t.trim().length > 0,
+    S = a.useMemo(() => O ? h : f ? c : s, [s, h, O, f, c]);
   return (0, r.jsxs)("div", {
     ref: e,
     className: l()(C.panel, y.panel),
@@ -241,8 +241,8 @@ function P() {
         title: "Toggles the flow of Actions",
         className: y.pausedEvents,
         children: (0, r.jsx)(d.rsf, {
-          checked: !x,
-          onChange: e => N(!e)
+          checked: !f,
+          onChange: e => T(!e)
         })
       }), (0, r.jsx)(d.E1j, {
         className: y.searchBar,

@@ -9,13 +9,13 @@ var r = n(200651),
   s = n.n(a),
   o = n(442837),
   i = n(481060),
-  c = n(594174),
-  d = n(381585),
+  d = n(594174),
+  c = n(381585),
   u = n(597688),
   m = n(937510),
   g = n(38900),
-  f = n(709999),
-  h = n(957058),
+  h = n(709999),
+  f = n(957058),
   p = n(215023),
   b = n(388032),
   C = n(39532);
@@ -26,7 +26,7 @@ let _ = e => {
     handleTransition: a,
     numVisibleItems: _,
     tab: v
-  } = e, x = (0, o.e7)([c.default], () => c.default.getCurrentUser()), j = l.createRef(), k = (0, h.u)(), y = l.useMemo(() => k(n), [t, k, n]), S = (0, m.l)(y);
+  } = e, x = (0, o.e7)([d.default], () => d.default.getCurrentUser()), k = l.createRef(), j = (0, f.u)(), S = l.useMemo(() => j(n), [t, j, n]), y = (0, m.l)(S);
   return null == x ? null : (0, r.jsxs)("div", {
     className: s()(C.row, C.between, C.section, C.popularPicksSection),
     children: [(0, r.jsxs)("div", {
@@ -44,19 +44,19 @@ let _ = e => {
       })]
     }), (0, r.jsx)("div", {
       className: C.feed,
-      ref: j,
+      ref: k,
       children: t ? (0, r.jsx)(r.Fragment, {
         children: [...Array(12)].map((e, t) => (0, r.jsx)(g.K, {}, t + 1))
       }) : (0, r.jsx)(r.Fragment, {
-        children: S.slice(0, _).map((e, t) => {
+        children: y.slice(0, _).map((e, t) => {
           let n = u.Z.getCategoryForProduct(e.skuId);
-          return null == e || null == n ? null : (0, r.jsx)(d.k0, {
+          return null == e || null == n ? null : (0, r.jsx)(c.k0, {
             newValue: {
               tilePosition: t,
               pageSection: "popular picks",
               categoryPosition: 2
             },
-            children: (0, r.jsx)(f.Z, {
+            children: (0, r.jsx)(h.Z, {
               product: e,
               category: n,
               user: x,

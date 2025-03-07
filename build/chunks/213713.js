@@ -14,8 +14,8 @@ var r = n(200651),
   m = n(433517),
   h = n(481060),
   p = n(570140),
-  f = n(812206),
-  x = n(835473),
+  x = n(812206),
+  f = n(835473),
   b = n(246992),
   _ = n(681619),
   g = n(810568),
@@ -23,9 +23,9 @@ var r = n(200651),
   j = n(77498),
   y = n(823379),
   C = n(550532),
-  O = n(71585),
-  N = n(146282),
-  T = n(780106),
+  N = n(71585),
+  T = n(146282),
+  O = n(780106),
   S = n(650613),
   E = n(789086),
   k = n(206583),
@@ -74,7 +74,7 @@ function Z(e) {
   var t, n;
   let {
     type: a
-  } = e, i = (0, u.e7)([N.Z], () => N.Z.getFilters()), l = null !== (n = null == i ? void 0 : null === (t = i.types) || void 0 === t ? void 0 : t.has(a)) && void 0 !== n && n;
+  } = e, i = (0, u.e7)([T.Z], () => T.Z.getFilters()), l = null !== (n = null == i ? void 0 : null === (t = i.types) || void 0 === t ? void 0 : t.has(a)) && void 0 !== n && n;
   return (0, r.jsx)(h.XZJ, {
     value: l,
     onClick: function() {
@@ -93,9 +93,9 @@ function Z(e) {
 
 function R() {
   var e, t;
-  let n = (0, u.e7)([N.Z], () => N.Z.getFeed(k.YN.GLOBAL_FEED)),
-    i = (0, u.e7)([N.Z], () => N.Z.getDebugImpressionCappingDisabled()),
-    l = (0, u.e7)([O.Z], () => O.Z.getDebugFastImpressionCappingEnabled()),
+  let n = (0, u.e7)([T.Z], () => T.Z.getFeed(k.YN.GLOBAL_FEED)),
+    i = (0, u.e7)([T.Z], () => T.Z.getDebugImpressionCappingDisabled()),
+    l = (0, u.e7)([N.Z], () => N.Z.getDebugFastImpressionCappingEnabled()),
     o = function(e) {
       let t = s().groupBy(e, e => e.content_type);
       return Object.keys(t).map(e => {
@@ -107,14 +107,14 @@ function R() {
         }
       })
     }(null == n ? void 0 : null === (e = n.entries) || void 0 === e ? void 0 : e.map(e => e.content)),
-    c = (0, u.e7)([N.Z], () => {
+    c = (0, u.e7)([T.Z], () => {
       var e;
-      return (null === (e = N.Z.getFeedState(k.YN.GLOBAL_FEED)) || void 0 === e ? void 0 : e.loading) === !0
+      return (null === (e = T.Z.getFeedState(k.YN.GLOBAL_FEED)) || void 0 === e ? void 0 : e.loading) === !0
     }),
     [Z, R] = a.useState(""),
-    A = (0, u.e7)([j.Z, f.Z], () => {
+    A = (0, u.e7)([j.Z, x.Z], () => {
       var e, t, n;
-      return parseInt(Z) > 0 ? Z : null !== (n = null === (e = j.Z.getGameByName(Z)) || void 0 === e ? void 0 : e.id) && void 0 !== n ? n : null === (t = f.Z.getApplicationByName(Z)) || void 0 === t ? void 0 : t.id
+      return parseInt(Z) > 0 ? Z : null !== (n = null === (e = j.Z.getGameByName(Z)) || void 0 === e ? void 0 : e.id) && void 0 !== n ? n : null === (t = x.Z.getApplicationByName(Z)) || void 0 === t ? void 0 : t.id
     }, [Z]),
     D = (0, v.Z)({
       applicationId: A,
@@ -128,7 +128,7 @@ function R() {
       let [t] = e;
       return t
     }),
-    M = (0, x.Z)(B).filter(y.lm),
+    M = (0, f.Z)(B).filter(y.lm),
     z = (0, u.e7)([C.Z], () => C.Z.getFakeGameToShow());
   return (0, r.jsx)("div", {
     className: w.panel,
@@ -223,7 +223,7 @@ function R() {
           variant: "text-md/normal",
           children: "Force show game:"
         }), (0, r.jsx)(h.PhF, {
-          options: T.h.map(e => ({
+          options: O.h.map(e => ({
             label: e,
             value: e
           })),

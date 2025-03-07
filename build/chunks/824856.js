@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => x
+  Z: () => b
 }), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -17,23 +17,23 @@ var r = n(200651),
   h = n(993553),
   f = n(960700);
 
-function x(e) {
+function b(e) {
   let {
     cta: t,
     storeListing: n,
     className: s
   } = e, {
-    applicationId: x,
-    benefits: b,
-    description: N
-  } = n, _ = i.useMemo(() => null == n.thumbnail ? null : (0, g.q)(x, n.thumbnail, 256), [x, n.thumbnail]), {
+    applicationId: b,
+    benefits: N,
+    description: x
+  } = n, _ = i.useMemo(() => null == n.thumbnail ? null : (0, g.q)(b, n.thumbnail, 256), [b, n.thumbnail]), {
     data: E
-  } = (0, d.X)(n.skuId), C = i.useMemo(() => {
+  } = (0, d.X)(n.skuId), j = i.useMemo(() => {
     if (null == E || 0 === E.length) return null;
     let e = E[0];
     return (0, m.xg)(e)
   }, [E]);
-  return null == C ? null : (0, r.jsxs)(l.l, {
+  return null == j ? null : (0, r.jsxs)(l.l, {
     className: a()(f.wrapper, s),
     header: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
@@ -49,20 +49,20 @@ function x(e) {
             children: n.summary
           }), (0, r.jsx)(c.Text, {
             variant: "text-md/medium",
-            children: C
+            children: j
           })]
         })]
       }), t]
     }),
-    children: [!(0, p.Ew)(N) && (0, r.jsx)("div", {
+    children: [!(0, p.Ew)(x) && (0, r.jsx)("div", {
       className: f.description,
       children: (0, r.jsx)(h.Z, {
         variant: "text-sm/medium",
-        children: N
+        children: x
       })
-    }), null != b && b.length > 0 && (0, r.jsx)("div", {
+    }), null != N && N.length > 0 && (0, r.jsx)("div", {
       className: f.benefits,
-      children: b.map(e => {
+      children: N.map(e => {
         let {
           id: t,
           name: n,
@@ -71,7 +71,7 @@ function x(e) {
         } = e;
         return (0, r.jsx)(o.Gm, {
           header: n,
-          icon: (0, u.n)(x, s),
+          icon: (0, u.n)(b, s),
           description: i
         }, t)
       })

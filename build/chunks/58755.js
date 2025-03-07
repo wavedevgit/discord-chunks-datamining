@@ -15,7 +15,7 @@ var r = n(200651),
   h = n(500949),
   p = n(198725);
 
-function f(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function x(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -83,7 +83,7 @@ function g(e) {
           easing: h.iw.LINEAR,
           easingStrength: 1,
           steps: 26
-        }, n(x(f({}, t), {
+        }, n(f(x({}, t), {
           scales: [...t.scales, r]
         })))
       },
@@ -98,7 +98,7 @@ function g(e) {
           },
           children: (0, r.jsx)(j, {
             scale: e,
-            onRemove: () => n(x(f({}, t), {
+            onRemove: () => n(f(x({}, t), {
               scales: t.scales.filter(t => t.name !== e.name)
             }))
           })
@@ -122,15 +122,15 @@ function v(e) {
     onClose: a
   } = e, {
     name: c,
-    base: f,
-    darkness: x,
+    base: x,
+    darkness: f,
     lightness: _,
     showColumnarPalettePreview: g,
     colorSpace: v,
     easingStrength: j = 1,
     useP3ColorSpace: C,
-    steps: O = 26
-  } = t, N = (0, h.XM)(t), T = (0, h.W6)(N, c);
+    steps: N = 26
+  } = t, T = (0, h.XM)(t), O = (0, h.W6)(T, c);
   return (0, r.jsxs)(d.hjN, {
     className: p.paletteSettings,
     children: [(0, r.jsxs)("div", {
@@ -148,7 +148,7 @@ function v(e) {
         children: c
       }), (0, r.jsx)(d.P3F, {
         onClick: function() {
-          let e = Object.entries(N).reduce((e, t) => {
+          let e = Object.entries(T).reduce((e, t) => {
             let [n, r] = t;
             return e[n] = {
               value: (0, i.Z)((0, l.Z)(r, h.HW.sRGB), {
@@ -175,7 +175,7 @@ function v(e) {
         }), " palette is generated from."]
       }), (0, r.jsx)("input", {
         type: "color",
-        value: f,
+        value: x,
         onChange: e => (0, h.Ib)(c, e.target.value, n)
       })]
     }), (0, r.jsxs)(d.xJW, {
@@ -209,7 +209,7 @@ function v(e) {
           onMarkerRender: () => null
         })]
       }), (0, r.jsxs)(d.xJW, {
-        title: "Darken (".concat((100 * x).toFixed(), "%)"),
+        title: "Darken (".concat((100 * f).toFixed(), "%)"),
         children: [(0, r.jsx)(d.R94, {
           type: d.geA.DESCRIPTION,
           children: "Increase the darkness of the lightest color in the palette. Increasing this makes the lighter colors in the palette darker."
@@ -260,10 +260,10 @@ function v(e) {
           children: "Use P3 Color Space"
         })
       }), (0, r.jsx)(d.xJW, {
-        title: "Steps (".concat(O, ")"),
+        title: "Steps (".concat(N, ")"),
         children: (0, r.jsx)(d.iRW, {
           onValueRender: () => null,
-          initialValue: O,
+          initialValue: N,
           minValue: (0, h.A0)(c).length,
           maxValue: 100,
           onValueChange: e => (0, h.YC)(c, Math.round(e), n),
@@ -274,8 +274,8 @@ function v(e) {
         children: (0, r.jsx)("div", {
           className: p.paletteOverrides,
           "data-columnar": g,
-          children: Object.entries(N).map((e, n) => {
-            let [a, c] = e, u = (0, h.HI)(c), m = (0, o.Z)((0, s.Z)("black"), c) > 4.5 ? "black" : "white", p = T[a];
+          children: Object.entries(T).map((e, n) => {
+            let [a, c] = e, u = (0, h.HI)(c), m = (0, o.Z)((0, s.Z)("black"), c) > 4.5 ? "black" : "white", p = O[a];
             return (0, r.jsxs)("div", {
               style: {
                 backgroundColor: u

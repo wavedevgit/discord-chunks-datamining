@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   O: () => S
 }), n(47120);
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(52647),
   h = n(317257),
   f = n(120786),
-  x = n(775451),
-  b = n(970815),
-  N = n(720463),
+  b = n(775451),
+  N = n(970815),
+  x = n(720463),
   _ = n(931928),
   E = n(450272),
-  C = n(981631),
-  j = n(388032),
+  j = n(981631),
+  C = n(388032),
   O = n(747431),
   v = n(701905);
 
@@ -37,7 +37,7 @@ function T() {
     openIntroToOrbsClaimedCoachmark: e
   } = (0, p.l)({
     location: "VirtualCurrencyComponents"
-  }), [t, n] = i.useState(150), [g, N] = i.useState(150), [_, v] = i.useState(500), [S, T] = i.useState(h.b.DEFAULT), I = () => {
+  }), [t, n] = i.useState(150), [g, x] = i.useState(150), [_, v] = i.useState(500), [S, T] = i.useState(h.b.DEFAULT), I = () => {
     switch (S) {
       case h.b.DEFAULT:
         T(h.b.HIGHLIGHTED);
@@ -57,9 +57,9 @@ function T() {
       children: "Balance Widget Components"
     }), (0, r.jsx)(E.E_, {
       label: "Balance Widget Menu",
-      children: (0, r.jsx)(x.V9, {
-        ctaText: j.NW.string(j.t["H57f4+"]),
-        ctaOnClick: C.dG4,
+      children: (0, r.jsx)(b.V9, {
+        ctaText: C.NW.string(C.t["H57f4+"]),
+        ctaOnClick: j.dG4,
         isCoachmarkEnabled: !1
       })
     }), (0, r.jsxs)(E.E_, {
@@ -75,7 +75,7 @@ function T() {
         })
       }), (0, r.jsx)(s.zx, {
         onClick: () => {
-          (0, l.xf)(), (0, u.s1)().location.pathname.includes(C.Z5c.COLLECTIBLES_SHOP) || (0, d.mK)({
+          (0, l.xf)(), (0, u.s1)().location.pathname.includes(j.Z5c.COLLECTIBLES_SHOP) || (0, d.mK)({
             openInLayer: !1,
             analyticsLocations: y,
             analyticsSource: o.Z.REVENUE_STORYBOOK_TEST_PAGE
@@ -105,7 +105,7 @@ function T() {
         })]
       }), (0, r.jsx)(s.zx, {
         onClick: () => {
-          (0, l.xf)(), (0, u.s1)().location.pathname.includes(C.Z5c.COLLECTIBLES_SHOP) || (0, d.mK)({
+          (0, l.xf)(), (0, u.s1)().location.pathname.includes(j.Z5c.COLLECTIBLES_SHOP) || (0, d.mK)({
             openInLayer: !1,
             analyticsLocations: y,
             analyticsSource: o.Z.REVENUE_STORYBOOK_TEST_PAGE
@@ -118,20 +118,20 @@ function T() {
       })]
     }), (0, r.jsxs)(E.E_, {
       label: "Balance Widget Pill",
-      children: [(0, r.jsx)(b.A4, {
+      children: [(0, r.jsx)(N.A4, {
         balance: 150,
         balanceWidgetMode: h.b.DEFAULT
-      }), (0, r.jsx)(b.A4, {
+      }), (0, r.jsx)(N.A4, {
         balance: 150,
         balanceWidgetMode: h.b.HIGHLIGHTED
-      }), (0, r.jsx)(b.A4, {
+      }), (0, r.jsx)(N.A4, {
         balance: 150,
         balanceWidgetMode: h.b.SELECTED
-      }), (0, r.jsx)(b.A4, {
+      }), (0, r.jsx)(N.A4, {
         balance: 0,
         balanceWidgetMode: h.b.DEFAULT,
         showNotificationBadge: !0
-      }), (0, r.jsx)(b.A4, {
+      }), (0, r.jsx)(N.A4, {
         balance: null,
         balanceWidgetMode: h.b.DEFAULT
       })]
@@ -149,7 +149,7 @@ function T() {
         value: t,
         onChange: e => n(e)
       }), (0, r.jsx)(s.zx, {
-        onClick: () => N(t),
+        onClick: () => x(t),
         children: "Set Balance"
       }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
@@ -163,14 +163,14 @@ function T() {
         onChange: e => v(e)
       }), (0, r.jsx)(s.zx, {
         onClick: () => {
-          N(null), setTimeout(() => {
-            N(t)
+          x(null), setTimeout(() => {
+            x(t)
           }, _)
         },
         children: "Simulate Loading State"
       }), (0, r.jsx)("div", {
         className: O.interactivePillContainer,
-        children: (0, r.jsx)(b.A4, {
+        children: (0, r.jsx)(N.A4, {
           balance: g,
           balanceWidgetMode: S,
           onClick: () => I()
@@ -179,9 +179,9 @@ function T() {
     }), (0, r.jsx)(E.E_, {
       label: "Balance Widget Card",
       children: (0, r.jsx)(f.L, {
-        ctaText: j.NW.string(j.t["H57f4+"]),
-        linkText: j.NW.string(j.t["7f4H7O"]),
-        ctaOnClick: C.dG4
+        ctaText: C.NW.string(C.t["H57f4+"]),
+        linkText: C.NW.string(C.t["7f4H7O"]),
+        ctaOnClick: j.dG4
       })
     })]
   })
@@ -275,25 +275,25 @@ function I() {
       label: "Onboarding Coachmark",
       direction: "vertical",
       children: [(0, r.jsx)(_.ED, {
-        onClose: C.dG4,
+        onClose: j.dG4,
         renderTail: !1
       }), (0, r.jsxs)("div", {
         className: v.horizontalContainer,
         children: [(0, r.jsx)(_.ED, {
-          onClose: C.dG4,
+          onClose: j.dG4,
           renderTail: !0
         }), (0, r.jsx)(_.ED, {
-          onClose: C.dG4,
+          onClose: j.dG4,
           renderTail: !0,
           invertCoachmark: !0
         })]
       })]
     }), (0, r.jsx)(E.E_, {
       label: "Balance Widget Coachmark",
-      children: (0, r.jsx)(N.E, {
+      children: (0, r.jsx)(x.E, {
         earnedOrbsQuantity: 200,
-        ctaOnClick: C.dG4,
-        linkOnClick: C.dG4
+        ctaOnClick: j.dG4,
+        linkOnClick: j.dG4
       })
     })]
   })

@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => x
+  Z: () => b
 });
 var r = n(200651);
 n(192379);
@@ -17,20 +17,20 @@ var i = n(120356),
   g = n(474936),
   h = n(981631),
   f = n(174541);
-let x = function(e) {
+let b = function(e) {
   let {
     localizedPricingPromo: t,
     smallGap: n
-  } = e, i = t.countryCode, x = (0, a.e7)([o.default], () => o.default.locale);
+  } = e, i = t.countryCode, b = (0, a.e7)([o.default], () => o.default.locale);
   (0, u.U)(h.jXE.SETTINGS_PREMIUM_BANNER, i);
-  let b = (0, a.e7)([c.ZP], () => c.ZP.getPremiumTypeSubscription()),
+  let N = (0, a.e7)([c.ZP], () => c.ZP.getPremiumTypeSubscription()),
     {
-      localizedPricingBannerHeader: N,
+      localizedPricingBannerHeader: x,
       localizedPricingBannerBody: _
     } = (0, d.vB)({
       localizedPricingPromo: t,
-      subscription: b,
-      userLocale: x
+      subscription: N,
+      userLocale: b
     }),
     E = i.toLowerCase() + "Banner";
   return (0, r.jsxs)("div", {
@@ -43,7 +43,7 @@ let x = function(e) {
     }), (0, r.jsx)(l.X6q, {
       className: f.bannerHeading,
       variant: "heading-xl/semibold",
-      children: N
+      children: x
     }), (0, r.jsx)("div", {
       className: f.textContainer,
       children: (0, r.jsx)(l.Text, {

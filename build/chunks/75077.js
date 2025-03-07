@@ -1,13 +1,13 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Dp: () => f,
-  Gw: () => b,
+  Gw: () => N,
   Op: () => O,
   gx: () => _,
-  iG: () => N,
+  iG: () => x,
   mN: () => v,
-  oo: () => x,
-  sP: () => j
+  oo: () => b,
+  sP: () => C
 }), n(653041), n(627341);
 var r = n(278074),
   i = n(442837),
@@ -33,7 +33,7 @@ let f = e => {
         return ""
     }
   },
-  x = e => {
+  b = e => {
     switch (e) {
       case g.EB.PENDING:
         return h.NW.string(h.t.nlcs6O);
@@ -44,7 +44,7 @@ let f = e => {
         return
     }
   },
-  b = e => {
+  N = e => {
     switch (e) {
       case g.EB.PENDING:
         return h.NW.string(h.t.LAFMBQ);
@@ -56,7 +56,7 @@ let f = e => {
     }
   };
 
-function N(e, t) {
+function x(e, t) {
   switch (e) {
     case g.EB.PENDING:
       return null != t ? h.NW.formatToPlainString(h.t.a1eKDg, {
@@ -72,7 +72,7 @@ function N(e, t) {
 }
 let _ = (e, t, n) => (0, s.wj)(e) ? t : n,
   E = "getWhatsNewRow",
-  C = e => {
+  j = e => {
     let {
       cards: t,
       perksCards: n,
@@ -127,7 +127,7 @@ let _ = (e, t, n) => (0, s.wj)(e) ? t : n,
       card: n.unlimitedSuperReactions
     }), t
   },
-  j = e => {
+  C = e => {
     let {
       perksCards: t,
       variant: n,
@@ -150,7 +150,7 @@ let _ = (e, t, n) => (0, s.wj)(e) ? t : n,
         }, () => [t.profiles, t.clientThemes, t.hdVideo]).otherwise(() => [t.profiles, t.clientThemes, t.serverBoosts]);
         break;
       case m.R0.WHATS_NEW:
-        d = C({
+        d = j({
           cards: d,
           perksCards: t,
           isFullScreen: s,

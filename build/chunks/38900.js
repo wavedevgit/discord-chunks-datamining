@@ -11,11 +11,11 @@ var l = n(120356),
   s = n(577852),
   o = n(134442),
   i = n(219574),
-  c = n(661252);
-let d = () => 4 * Math.random() + 8,
-  u = [d(), d(), d()],
+  d = n(661252);
+let c = () => 4 * Math.random() + 8,
+  u = [c(), c(), c()],
   m = () => (0, r.jsx)("div", {
-    className: a()(i.skeleton, c.shopCard),
+    className: a()(i.skeleton, d.shopCard),
     children: (0, r.jsxs)("div", {
       className: i.cardBody,
       children: [(0, r.jsx)("div", {

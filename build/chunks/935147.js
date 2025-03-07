@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => V
 }), n(47120), n(266796);
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(884697),
   h = n(175756),
   f = n(104494),
-  x = n(639119),
-  b = n(211712),
-  N = n(629654),
+  b = n(639119),
+  N = n(211712),
+  x = n(629654),
   _ = n(53691),
   E = n(165583),
-  C = n(267717),
-  j = n(643879),
+  j = n(267717),
+  C = n(643879),
   O = n(350327),
   v = n(996073),
   S = n(25990),
@@ -94,14 +94,14 @@ function V(e) {
   let {
     analyticsLocations: et,
     sourceAnalyticsLocations: en
-  } = (0, d.ZP)(c.Z.USER_SETTINGS_TRY_OUT_PREMIUM), [er, ei] = i.useState(Math.floor(Math.random() * b.J2.length)), es = e => {
+  } = (0, d.ZP)(c.Z.USER_SETTINGS_TRY_OUT_PREMIUM), [er, ei] = i.useState(Math.floor(Math.random() * N.J2.length)), es = e => {
     if (e) {
       if ((0, l.Re)(q), (0, O.z5)(K), (0, O.ho)(X), null != Q) {
         let e = m.Z.getProduct(Q.skuId);
         null != e && (0, g.G1)(e) ? (0, u.fK)(e.skuId).then(() => (0, l.cV)(Q)) : null != p.Z.getPurchase(Q.skuId) && (0, l.cV)(Q)
       }
       T.default.track(W.rMx.TRY_IT_OUT_PRESET_SELECTED, {
-        preset: b.J2[er].presetName
+        preset: N.J2[er].presetName
       })
     }
   };
@@ -114,7 +114,7 @@ function V(e) {
       location_stack: en
     })
   }, [en, V, G]);
-  let ea = (null === (n = (0, x.N)()) || void 0 === n ? void 0 : null === (t = n.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === L.Si.TIER_2,
+  let ea = (null === (n = (0, b.N)()) || void 0 === n ? void 0 : null === (t = n.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === L.Si.TIER_2,
     el = (0, f.Ng)(),
     eo = (0, f.Wp)(el, L.Si.TIER_2),
     ec = "TryOutPremiumSection";
@@ -142,7 +142,7 @@ function V(e) {
           }), M.NW.string(M.t.gMlDNT)]
         }),
         profilePreview: (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(N.Z, {
+          children: [(0, r.jsx)(x.Z, {
             selectedIndex: er,
             setSelectedIndex: ei
           }), (0, r.jsx)(k.Z, {
@@ -163,7 +163,7 @@ function V(e) {
           }), (0, r.jsx)(w.Z, {
             className: U.customizationSection,
             user: V,
-            pendingAvatarSrc: (0, j.SD)({
+            pendingAvatarSrc: (0, C.SD)({
               userId: V.id,
               image: null != q ? q : z
             }),
@@ -205,7 +205,7 @@ function V(e) {
         className: U.floatingUpsell,
         showUpsell: !0,
         text: M.NW.format(M.t.TmfgIy, {
-          onClick: () => (0, C.y)(es)
+          onClick: () => (0, j.y)(es)
         }),
         button: H ? M.NW.string(M.t.AfRWIy) : eo ? M.NW.formatToPlainString(M.t.bkQ4bG, {
           percent: null == el ? void 0 : el.discount.amount

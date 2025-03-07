@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => b
+  Z: () => N
 }), n(47120);
 var r = n(200651);
 n(192379);
@@ -18,23 +18,23 @@ var i = n(512722),
   h = n(388032),
   f = n(811617);
 
-function x(e) {
+function b(e) {
   let t, {
       subscription: n,
       withOverheadSeparator: i
     } = e,
     {
-      analyticsLocations: x
+      analyticsLocations: b
     } = (0, o.ZP)(),
-    [b] = (0, m.ED)({
+    [N] = (0, m.ED)({
       subscriptionId: n.id,
       renewal: !0,
-      analyticsLocations: x,
+      analyticsLocations: b,
       analyticsLocation: l.Z.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT
     });
-  if (null == b) return null;
-  let N = i ? f.finePrintWithOverheadSeparator : f.finePrint,
-    _ = b.invoiceItems.find(e => {
+  if (null == N) return null;
+  let x = i ? f.finePrintWithOverheadSeparator : f.finePrint,
+    _ = N.invoiceItems.find(e => {
       let {
         subscriptionPlanId: t
       } = e;
@@ -42,39 +42,39 @@ function x(e) {
     });
   if (null == _) return null;
   let E = _.subscriptionPlanId,
-    C = c.Z.get(E);
-  s()(null != C, "Missing plan");
-  let j = (0, u.T4)(b.total, b.currency);
-  return C.interval === p.rV.YEAR ? t = h.NW.format(h.t["jPz/39"], {
-    price: j,
+    j = c.Z.get(E);
+  s()(null != j, "Missing plan");
+  let C = (0, u.T4)(N.total, N.currency);
+  return j.interval === p.rV.YEAR ? t = h.NW.format(h.t["jPz/39"], {
+    price: C,
     termsUrl: g.EYA.TERMS,
     paidURL: g.EYA.PAID_TERMS,
     privacyUrl: g.EYA.PRIVACY
-  }) : C.interval === p.rV.MONTH && (t = 1 === C.intervalCount ? h.NW.format(h.t.m27GpK, {
-    price: j,
+  }) : j.interval === p.rV.MONTH && (t = 1 === j.intervalCount ? h.NW.format(h.t.m27GpK, {
+    price: C,
     termsUrl: g.EYA.TERMS,
     paidURL: g.EYA.PAID_TERMS,
     privacyUrl: g.EYA.PRIVACY
   }) : h.NW.format(h.t["9xf5V1"], {
-    price: j,
+    price: C,
     termsUrl: g.EYA.TERMS,
     paidURL: g.EYA.PAID_TERMS,
     privacyUrl: g.EYA.PRIVACY,
-    intervalCount: C.intervalCount
+    intervalCount: j.intervalCount
   })), (0, r.jsx)(a.Text, {
     color: "text-muted",
-    className: N,
+    className: x,
     variant: "text-xs/normal",
     children: t
   })
 }
 
-function b(e) {
+function N(e) {
   let {
     subscription: t,
     withOverheadSeparator: n
   } = e;
-  return t.status === g.O0b.CANCELED || t.isPurchasedExternally ? null : (0, r.jsx)(x, {
+  return t.status === g.O0b.CANCELED || t.isPurchasedExternally ? null : (0, r.jsx)(b, {
     subscription: t,
     withOverheadSeparator: n
   })

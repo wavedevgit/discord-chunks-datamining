@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => g
 }), n(47120);
@@ -41,11 +41,11 @@ function g(e) {
     resetRenewalMutation: g,
     submitting: h,
     error: f
-  } = p(l), x = (0, d._k)(t, {
+  } = p(l), b = (0, d._k)(t, {
     includeSoftDeleted: !0
   }), {
-    currentListing: b,
-    nextListing: N
+    currentListing: N,
+    nextListing: x
   } = i.useMemo(() => {
     if ((null == n ? void 0 : n.renewalMutations) == null) return {
       currentListing: void 0,
@@ -54,16 +54,16 @@ function g(e) {
     let e = n.items[0].planId,
       t = n.renewalMutations.items[0].planId;
     return {
-      currentListing: x.find(t => t.subscription_plans[0].id === e),
-      nextListing: x.find(e => e.subscription_plans[0].id === t)
+      currentListing: b.find(t => t.subscription_plans[0].id === e),
+      nextListing: b.find(e => e.subscription_plans[0].id === t)
     }
-  }, [n, x]);
-  if (null == n || null == b || null == N) return null;
+  }, [n, b]);
+  if (null == n || null == N || null == x) return null;
   let _ = a()(n.currentPeriodEnd).format("MMM DD, YYYY");
   return (0, r.jsx)(u.Z, {
     message: m.NW.format(m.t.chw89f, {
-      currentListing: b.name,
-      nextListing: N.name,
+      currentListing: N.name,
+      nextListing: x.name,
       changeDate: _
     }),
     error: null == f ? void 0 : f.message,

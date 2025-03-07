@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => x
+  Z: () => b
 });
 var r = n(200651),
   i = n(192379),
@@ -17,19 +17,19 @@ var r = n(200651),
   h = n(388032),
   f = n(309277);
 
-function x(e) {
+function b(e) {
   let {
     user: t,
     guild: n,
     className: s,
     sectionTitle: m,
-    forcedDivider: x = !1,
-    withTutorial: N = !1,
+    forcedDivider: b = !1,
+    withTutorial: x = !1,
     isTryItOutFlow: _ = !1
   } = e, {
     analyticsLocations: E
-  } = (0, o.ZP)(), C = null != n, {
-    userAvatarDecoration: j,
+  } = (0, o.ZP)(), j = null != n, {
+    userAvatarDecoration: C,
     guildAvatarDecoration: O,
     pendingAvatarDecoration: v,
     pendingErrors: S
@@ -37,10 +37,10 @@ function x(e) {
     analyticsLocations: E,
     isTryItOutFlow: _,
     guild: n
-  }), [E, _, n]), y = _ || void 0 !== v ? null != v : (C ? O : j) != null, A = N ? l.gtL : l.zxk;
+  }), [E, _, n]), y = _ || void 0 !== v ? null != v : (j ? O : C) != null, A = x ? l.gtL : l.zxk;
   return (0, r.jsxs)(g.Z, {
     className: s,
-    forcedDivider: x,
+    forcedDivider: b,
     hasBackground: !0,
     title: m,
     errors: S,
@@ -50,7 +50,7 @@ function x(e) {
         size: l.zxk.Sizes.SMALL,
         onClick: I,
         className: a()({
-          [f.buttonHighlighted]: N
+          [f.buttonHighlighted]: x
         }),
         children: h.NW.string(h.t["Tna/TU"])
       }), y && (0, r.jsx)(l.zxk, {
@@ -63,12 +63,12 @@ function x(e) {
         },
         children: (0, c.ad)(t, n) ? h.NW.string(h.t["GsW4/v"]) : h.NW.string(h.t.GReZ6O)
       })]
-    }), t.isStaff() && T && (0, r.jsx)(b, {
+    }), t.isStaff() && T && (0, r.jsx)(N, {
       user: t
     })]
   })
 }
-let b = e => {
+let N = e => {
   let {
     user: t
   } = e;

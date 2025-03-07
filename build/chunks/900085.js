@@ -1,4 +1,4 @@
-/** Chunk was on 76282 **/
+/** Chunk was on 12075 **/
 n.d(t, {
   Z: () => X
 }), n(411104), n(47120), n(301563), n(733860);
@@ -16,15 +16,15 @@ var r, i = n(200651),
   f = n(815372),
   m = n(14429),
   h = n(576855),
-  g = n(313201),
-  b = n(991346),
+  b = n(313201),
+  g = n(991346),
   O = n(592125),
   N = n(888369),
   I = n(430824),
   C = n(306680),
   T = n(944486),
-  S = n(938475),
-  y = n(483360),
+  y = n(938475),
+  S = n(483360),
   v = n(585483),
   P = n(63063),
   R = n(51596),
@@ -108,13 +108,13 @@ let G = c.ZP.connectStores([C.ZP, O.Z], e => {
       category: O.Z.getChannel(t.parent_id)
     }
   })(F),
-  W = c.ZP.connectStores([S.ZP], e => {
+  W = c.ZP.connectStores([y.ZP], e => {
     let {
       channel: t
     } = e;
     if (null == t.guild_id) throw Error("ConnectedVoiceChannel - somehow we got a voice channel with no guild_id...");
     return {
-      voiceStates: S.ZP.getVoiceStates(t.guild_id)[t.id]
+      voiceStates: y.ZP.getVoiceStates(t.guild_id)[t.id]
     }
   })(F),
   B = c.ZP.connectStores([N.default], e => {
@@ -282,7 +282,7 @@ class K extends o.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), Z(this, "scrollerRef", o.createRef()), Z(this, "inputRef", o.createRef()), Z(this, "_listId", (0, g.hQ)()), Z(this, "state", {
+    super(...e), Z(this, "scrollerRef", o.createRef()), Z(this, "inputRef", o.createRef()), Z(this, "_listId", (0, b.hQ)()), Z(this, "state", {
       query: this.props.query,
       mouseFocusDisabled: !0
     }), Z(this, "handleInputChange", () => {
@@ -566,7 +566,7 @@ class K extends o.PureComponent {
 
 function X(e) {
   let t = (0, c.cj)([A.Z], () => A.Z.getProps()),
-    n = (0, b.Pt)(),
+    n = (0, g.Pt)(),
     r = D.Z.useExperiment({
       location: "QuickSwitcher"
     }).enabled,
@@ -585,6 +585,6 @@ function X(e) {
       title: k.NW.string(k.t["3D5yo6"]),
       searchableTitles: [k.NW.string(k.t["3D5yo6"])],
       path: L.Z5c.SETTINGS("account")
-    }), (0, y.gF)(e)
+    }), (0, S.gF)(e)
   }, [l, r]), (0, i.jsx)(K, w({}, t, e))
 }

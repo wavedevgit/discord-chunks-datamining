@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => j
+  Z: () => C
 }), n(47120), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648);
 var r = n(200651),
   i = n(192379),
@@ -16,9 +16,9 @@ var r = n(200651),
   g = n(780771),
   h = n(4242),
   f = n(996746),
-  x = n(711325),
-  b = n(852630),
-  N = n(731994),
+  b = n(711325),
+  N = n(852630),
+  x = n(731994),
   _ = n(276107);
 
 function E(e) {
@@ -40,7 +40,7 @@ function E(e) {
   return e
 }
 
-function C(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,13 +53,13 @@ function C(e, t) {
   }), e
 }
 
-function j() {
+function C() {
   var e;
   let [t, n] = (0, i.useState)(!1), [s, a] = (0, i.useState)(!1), [l, c] = (0, i.useState)(null), m = (0, p.ZP)(e => e.toolsCache), {
     setToolsCache: f,
-    removeToolsCache: b
+    removeToolsCache: N
   } = (0, p.L3)(), {
-    setImgCache: j
+    setImgCache: C
   } = (0, p.W_)(), A = (0, i.useCallback)(e => {
     let t = m[e];
     null != t && c({
@@ -68,16 +68,16 @@ function j() {
     }), c(t => null == t ? {
       src: e,
       palette: g.jD
-    } : C(E({}, t), {
+    } : j(E({}, t), {
       src: e
     }))
   }, [m]), P = (0, i.useCallback)(e => {
-    c(t => null == t ? null : C(E({}, t), {
+    c(t => null == t ? null : j(E({}, t), {
       palette: e
     }))
   }, []), R = (0, i.useCallback)(e => {
-    b(e)
-  }, [b]);
+    N(e)
+  }, [N]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: _.controls,
@@ -102,7 +102,7 @@ function j() {
         })]
       }), (0, r.jsxs)("div", {
         className: _.themePicker,
-        children: [t && (0, r.jsx)(u.i, {}), " ", s && (0, r.jsx)(x.Z, {
+        children: [t && (0, r.jsx)(u.i, {}), " ", s && (0, r.jsx)(b.Z, {
           selected: null == l ? void 0 : null === (e = l.palette) || void 0 === e ? void 0 : e.name,
           onSelect: e => {
             (null == l ? void 0 : l.src) != null && f(l.src, l.src, e), P(e)
@@ -137,12 +137,12 @@ function j() {
         }), (0, r.jsx)(d.Z, {
           title: "upload image",
           description: "upload the background",
-          icons: N.pA,
+          icons: x.pA,
           onDrop: async e => {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
               r = await n.arrayBuffer();
-            j(t, t, (0, h.xh)(r)), f(t, t, g.jD)
+            C(t, t, (0, h.xh)(r)), f(t, t, g.jD)
           }
         }), (0, r.jsx)("div", {
           className: _.uploadedArea,
@@ -293,17 +293,17 @@ function I(e) {
         className: _.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
-      }), (0, r.jsx)(b.Z, {
+      }), (0, r.jsx)(N.Z, {
         nameplate: t
       }), (0, r.jsx)(o.Text, {
         className: _.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"
       }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(b.Z, {
+        children: [(0, r.jsx)(N.Z, {
           selected: !0,
           nameplate: t
-        }), (0, r.jsx)(b.Z, {
+        }), (0, r.jsx)(N.Z, {
           selected: !0
         })]
       })]

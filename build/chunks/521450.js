@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => _
 });
@@ -16,9 +16,9 @@ var r = n(200651),
   g = n(695346),
   h = n(981631),
   f = n(930441),
-  x = n(388032),
-  b = n(302859),
-  N = n(802138);
+  b = n(388032),
+  N = n(302859),
+  x = n(802138);
 let _ = () => {
   let e = g.Ex.useSetting(),
     {
@@ -28,20 +28,20 @@ let _ = () => {
   return i.useEffect(() => {
     null == n && (0, m.Y7)()
   }, [n]), (0, r.jsxs)("div", {
-    className: b.container,
+    className: N.container,
     children: [(0, r.jsx)(d.Text, {
       variant: "eyebrow",
       color: "text-muted",
-      children: x.NW.string(x.t.USIXU1)
+      children: b.NW.string(b.t.USIXU1)
     }), (0, r.jsx)(d.j7V, {
-      className: a()(N.marginTop8, N.marginBottom20),
+      className: a()(x.marginTop8, x.marginBottom20),
       value: e,
-      note: x.NW.string(x.t["5MdB3t"]),
+      note: b.NW.string(b.t["5MdB3t"]),
       hideBorder: !0,
       onChange: g.Ex.updateSetting,
-      children: x.NW.string(x.t.zkEceX)
+      children: b.NW.string(b.t.zkEceX)
     }), e ? (0, r.jsx)(d.Zbd, {
-      className: b.enableCard,
+      className: N.enableCard,
       type: d.Zbd.Types.CUSTOM,
       outline: !0,
       children: (0, r.jsxs)(o.k, {
@@ -50,7 +50,7 @@ let _ = () => {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/semibold",
             color: "text-normal",
-            children: x.NW.string(x.t.xAVm7O)
+            children: b.NW.string(b.t.xAVm7O)
           })
         }), (0, r.jsx)(d.P3F, {
           children: (0, r.jsx)(l.rU, {
@@ -61,23 +61,23 @@ let _ = () => {
                 scrollRestoration: !1
               }
             },
-            children: x.NW.string(x.t.cUIXFR)
+            children: b.NW.string(b.t.cUIXFR)
           })
         }), (0, r.jsx)(d.G2e, {
           icon: d.ZSh,
-          className: b.arrow,
+          className: N.arrow,
           disableColor: !0
         })]
       })
     }) : null, (0, r.jsx)(d.j7V, {
-      className: a()(N.marginTop20, N.marginBottom20),
+      className: a()(x.marginTop20, x.marginBottom20),
       value: !!t[f.$Z.FAMILY_CENTER_DIGEST],
-      note: x.NW.string(x.t["y34S4+"]),
+      note: b.NW.string(b.t["y34S4+"]),
       hideBorder: !0,
       onChange: function(e) {
         (0, m.pR)(f.$Z.FAMILY_CENTER_DIGEST, e)
       },
-      children: x.NW.string(x.t.irvJKS)
+      children: b.NW.string(b.t.irvJKS)
     })]
   })
 }

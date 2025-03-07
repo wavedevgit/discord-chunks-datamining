@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => S
 }), n(47120), n(26686), n(266796), n(773603);
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(960048),
   h = n(998502),
   f = n(365007),
-  x = n(15980),
-  b = n(755733),
-  N = n(981631),
+  b = n(15980),
+  N = n(755733),
+  x = n(981631),
   _ = n(388032),
   E = n(902255);
 
-function C(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function C(e) {
   return e
 }
 
-function j(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,17 +60,17 @@ function O(e) {
     onClose: a,
     ticket: o,
     challenge: c
-  } = e, m = (0, d.Dt)(), [x, C] = i.useState(""), [j, O] = i.useState(!0), [v, S] = i.useState(b.x.INIT), [T, I] = i.useState(""), [y, A] = i.useState(null), P = async () => {
+  } = e, m = (0, d.Dt)(), [b, j] = i.useState(""), [C, O] = i.useState(!0), [v, S] = i.useState(N.x.INIT), [T, I] = i.useState(""), [y, A] = i.useState(null), P = async () => {
     let e;
-    S(b.x.REGISTER);
-    let t = p.isPlatformEmbedded && h.ZP.supportsFeature(N.eRX.WEBAUTHN) ? h.ZP.webAuthnRegister(c) : s.Ue(JSON.parse(c)).then(e => JSON.stringify(e));
+    S(N.x.REGISTER);
+    let t = p.isPlatformEmbedded && h.ZP.supportsFeature(x.eRX.WEBAUTHN) ? h.ZP.webAuthnRegister(c) : s.Ue(JSON.parse(c)).then(e => JSON.stringify(e));
     try {
       e = await t
     } catch (e) {
-      g.Z.captureException(e), A(_.NW.string(_.t.xSCvBQ)), S(b.x.INIT);
+      g.Z.captureException(e), A(_.NW.string(_.t.xSCvBQ)), S(N.x.INIT);
       return
     }
-    I(e), S(b.x.NAME)
+    I(e), S(N.x.NAME)
   };
   return (0, r.jsxs)(l.Y0X, {
     transitionState: t,
@@ -81,7 +81,7 @@ function O(e) {
       children: [(0, r.jsxs)(l.X6q, {
         id: m,
         variant: "heading-lg/semibold",
-        children: [v === b.x.INIT && _.NW.string(_.t.vrOCCg), v === b.x.REGISTER && _.NW.string(_.t.wePEBA), v === b.x.NAME && _.NW.string(_.t["cY/IOj"])]
+        children: [v === N.x.INIT && _.NW.string(_.t.vrOCCg), v === N.x.REGISTER && _.NW.string(_.t.wePEBA), v === N.x.NAME && _.NW.string(_.t["cY/IOj"])]
       }), (0, r.jsx)(l.olH, {
         onClick: a,
         className: E.modalCloseButton
@@ -90,7 +90,7 @@ function O(e) {
       activeSlide: v,
       width: 440,
       children: [(0, r.jsxs)(l.Mi4, {
-        id: b.x.INIT,
+        id: N.x.INIT,
         children: [(0, r.jsxs)(l.hzk, {
           className: E.content,
           children: [(0, r.jsx)("div", {
@@ -118,7 +118,7 @@ function O(e) {
           })
         })]
       }), (0, r.jsxs)(l.Mi4, {
-        id: b.x.REGISTER,
+        id: N.x.REGISTER,
         children: [(0, r.jsxs)(l.hzk, {
           className: E.content,
           children: [(0, r.jsx)("div", {
@@ -139,13 +139,13 @@ function O(e) {
           })
         })]
       }), (0, r.jsx)(l.Mi4, {
-        id: b.x.NAME,
+        id: N.x.NAME,
         children: (0, r.jsxs)("form", {
           onSubmit: e => {
-            e.preventDefault(), (0, f.Sr)(x, o, T).then(async () => {
+            e.preventDefault(), (0, f.Sr)(b, o, T).then(async () => {
               await (0, u.Yn)(!1)
             }).then(() => a()).catch(() => {
-              A(_.NW.string(_.t.fEptJC)), S(b.x.INIT)
+              A(_.NW.string(_.t.fEptJC)), S(N.x.INIT)
             })
           },
           children: [(0, r.jsxs)(l.hzk, {
@@ -162,9 +162,9 @@ function O(e) {
                 children: _.NW.string(_.t["Jzd+z8"])
               }), (0, r.jsx)(l.oil, {
                 className: E.input,
-                value: x,
+                value: b,
                 onChange: e => {
-                  C(e), O(0 === e.length)
+                  j(e), O(0 === e.length)
                 },
                 autoFocus: !0,
                 minLength: 1
@@ -174,13 +174,13 @@ function O(e) {
             className: E.footer,
             children: [(0, r.jsx)(l.zxk, {
               type: "submit",
-              disabled: j,
+              disabled: C,
               children: _.NW.string(_.t["5dyZ1d"])
             }), (0, r.jsx)(l.zxk, {
               look: l.zxk.Looks.LINK,
               color: l.zxk.Colors.PRIMARY,
               onClick: () => {
-                S(b.x.INIT)
+                S(N.x.INIT)
               },
               children: _.NW.string(_.t["13/7kZ"])
             })]
@@ -209,7 +209,7 @@ function v(e) {
           let {
             default: e
           } = await n.e("804").then(n.bind(n, 89616));
-          return t => (0, r.jsx)(e, C({
+          return t => (0, r.jsx)(e, j({
             credential: i
           }, t))
         })
@@ -229,9 +229,9 @@ function S() {
   let {
     credentials: e,
     hasFetchedCredentials: t
-  } = (0, a.cj)([x.Z], () => ({
-    hasFetchedCredentials: x.Z.hasFetchedCredentials(),
-    credentials: x.Z.getCredentials()
+  } = (0, a.cj)([b.Z], () => ({
+    hasFetchedCredentials: b.Z.hasFetchedCredentials(),
+    credentials: b.Z.getCredentials()
   }));
   i.useEffect(() => {
     t || (0, f.hL)()
@@ -251,7 +251,7 @@ function S() {
         name: e.name,
         className: E.credentialItem,
         onContextMenu: t => {
-          (0, o.vq)(t, t => (0, r.jsx)(v, j(C({}, t), {
+          (0, o.vq)(t, t => (0, r.jsx)(v, C(j({}, t), {
             credential: e
           })))
         },
@@ -260,7 +260,7 @@ function S() {
           color: l.zxk.Colors.TRANSPARENT,
           size: l.zxk.Sizes.ICON,
           onClick: t => {
-            (0, o.vq)(t, t => (0, r.jsx)(v, j(C({}, t), {
+            (0, o.vq)(t, t => (0, r.jsx)(v, C(j({}, t), {
               credential: e
             })))
           },
@@ -283,7 +283,7 @@ function S() {
               ticket: t,
               challenge: n
             } = e;
-            (0, l.h7j)(e => (0, r.jsx)(O, j(C({}, e), {
+            (0, l.h7j)(e => (0, r.jsx)(O, C(j({}, e), {
               ticket: t,
               challenge: n
             })))

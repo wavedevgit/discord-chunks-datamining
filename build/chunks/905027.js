@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => p
 }), n(47120);
@@ -36,13 +36,13 @@ function p() {
       }
       a && (0, d.b9)(), g(!1)
     }, [null == t ? void 0 : t.id]),
-    x = i.useCallback(() => {
+    b = i.useCallback(() => {
       (0, d.W3)()
     }, []);
   return (0, r.jsx)(a.Z, {
     submitting: p,
     onSave: f,
-    onReset: x,
+    onReset: b,
     disabled: e,
     errorMessage: null != h ? h : void 0
   })

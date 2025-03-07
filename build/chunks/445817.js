@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => b
+  Z: () => N
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -16,29 +16,29 @@ var r = n(200651),
   g = n(594174),
   h = n(981631),
   f = n(388032),
-  x = n(885377);
+  b = n(885377);
 
-function b(e) {
+function N(e) {
   let {
     previewEnabled: t,
     onEnablePreview: n,
-    onCancelPreview: b
-  } = e, N = p.Z.getCameraComponent(), [_, E] = i.useState((0, c.P)(g.default.getCurrentUser())), C = i.useRef(!1), j = i.useRef(_), O = (0, o.O)(), v = (0, s.e7)([p.Z], () => p.Z.isVideoAvailable());
+    onCancelPreview: N
+  } = e, x = p.Z.getCameraComponent(), [_, E] = i.useState((0, c.P)(g.default.getCurrentUser())), j = i.useRef(!1), C = i.useRef(_), O = (0, o.O)(), v = (0, s.e7)([p.Z], () => p.Z.isVideoAvailable());
   return i.useEffect(() => () => {
-    C.current && l.Z.wait(() => (0, d.Up)(j.current))
+    j.current && l.Z.wait(() => (0, d.Up)(C.current))
   }, []), (0, r.jsx)(m.Z, {
     selectedBackgroundOption: _,
     onSelectBackgroundOption: e => {
-      C.current = !0, j.current = e, E(e), (0, u.wG)(e, {
+      j.current = !0, C.current = e, E(e), (0, u.wG)(e, {
         location: O.location
       }).catch(h.dG4)
     },
-    onCancelPreview: b,
+    onCancelPreview: N,
     renderCamera: e => t ? (0, r.jsx)("div", {
-      className: x.cameraWrapper,
+      className: b.cameraWrapper,
       children: (0, r.jsxs)("div", {
-        className: x.camera,
-        children: [(0, r.jsx)(N, {
+        className: b.camera,
+        children: [(0, r.jsx)(x, {
           deviceId: e,
           width: 387,
           height: 218,
@@ -46,9 +46,9 @@ function b(e) {
         }), (0, r.jsx)(m.S, {})]
       })
     }) : (0, r.jsxs)("div", {
-      className: x.cameraWrapper,
+      className: b.cameraWrapper,
       children: [(0, r.jsx)("div", {
-        className: x.previewImage
+        className: b.previewImage
       }), (0, r.jsx)(a.ua7, {
         text: v ? null : f.NW.string(f.t["8jSzSU"]),
         children: e => {

@@ -14,8 +14,8 @@ var r = n(200651),
   m = n(213713),
   h = n(665149),
   p = n(906467),
-  f = n(259580),
-  x = n(31336),
+  x = n(259580),
+  f = n(31336),
   b = n(19759),
   _ = n(432877);
 n(381996);
@@ -24,9 +24,9 @@ var g = n(392750),
   j = n(592197),
   y = n(806240),
   C = n(789654),
-  O = n(719672),
-  N = n(691867),
-  T = n(916790),
+  N = n(719672),
+  T = n(691867),
+  O = n(916790),
   S = n(645973),
   E = n(903502),
   k = n(912072),
@@ -90,7 +90,7 @@ function ee() {
       }, {
         id: "dispatcher",
         name: "Dispatcher",
-        render: () => (0, r.jsx)(T.Z, {})
+        render: () => (0, r.jsx)(O.Z, {})
       }];
       return p.Z.isDeveloper && (e.push({
         id: "shop",
@@ -135,7 +135,7 @@ function ee() {
       }), e.push({
         id: "design_toggles",
         name: "Design Toggles",
-        render: () => (0, r.jsx)(N.Z, {})
+        render: () => (0, r.jsx)(T.Z, {})
       }), e.push({
         id: "overlays",
         name: "Dev Overlays",
@@ -171,7 +171,7 @@ function ee() {
       }), e.push({
         id: "dcf",
         name: "DCF",
-        render: () => (0, r.jsx)(O.Z, {})
+        render: () => (0, r.jsx)(N.Z, {})
       }), e.push({
         id: "potions",
         name: "Potions",
@@ -214,7 +214,7 @@ function ee() {
       tabs: t,
       initialSelectedTabId: null !== (e = b.Z.lastOpenTabId) && void 0 !== e ? e : void 0,
       onChangeTab: e => {
-        (0, x.Qh)({
+        (0, f.Qh)({
           lastOpenTabId: e
         })
       }
@@ -231,7 +231,7 @@ function ee() {
       toolbar: (0, r.jsx)(h.ZP.Icon, {
         icon: c.Dio,
         tooltip: K.NW.string(K.t.cpT0Cg),
-        onClick: x.SO
+        onClick: f.SO
       }),
       children: [(0, r.jsx)(h.ZP.Icon, {
         icon: c.Ymb,
@@ -249,7 +249,7 @@ function et() {
   let e = a.useRef(null),
     t = (0, s.e7)([b.Z], () => b.Z.sidebarWidth),
     [n, i] = a.useState(null),
-    l = a.useCallback(e => (0, x.Qh)({
+    l = a.useCallback(e => (0, f.Qh)({
       sidebarWidth: e
     }), []);
   return (a.useEffect(() => {
@@ -283,11 +283,11 @@ function en() {
   }) : (0, r.jsx)("div", {
     className: q.container,
     children: (0, r.jsx)(c.P3F, {
-      onClick: x.SO,
+      onClick: f.SO,
       children: (0, r.jsxs)(h.ZP, {
         className: l()($.headerBar, q.mobileHeaderCollapsed),
-        toolbar: (0, r.jsx)(f.Z, {
-          direction: f.Z.Directions.UP
+        toolbar: (0, r.jsx)(x.Z, {
+          direction: x.Z.Directions.UP
         }),
         children: [(0, r.jsx)(h.ZP.Icon, {
           icon: c.Ymb,

@@ -1,5 +1,6 @@
-/** Chunk was on 86620 **/
-e.exports = {
+/** Chunk was on web.js **/
+"use strict";
+var r = {
   rootContainer: "rootContainer__5ce63",
   rootContainerLoading: "rootContainerLoading__5ce63",
   claimedRootContainer: "claimedRootContainer__5ce63",
@@ -28,4 +29,5 @@ e.exports = {
   errorModalFooter: "errorModalFooter__5ce63",
   iconBackgroundFractional: "iconBackgroundFractional__5ce63",
   iconFractional: "iconFractional__5ce63"
-}
+};
+e.exports = r

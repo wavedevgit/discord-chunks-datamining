@@ -33,8 +33,8 @@ var r, a, i = n(192379),
   m = n(385787),
   h = n(566162),
   p = n(567027),
-  f = n(461195),
-  x = n(857702),
+  x = n(461195),
+  f = n(857702),
   b = n(20450),
   _ = n(312976),
   g = n(147591),
@@ -42,9 +42,9 @@ var r, a, i = n(192379),
   j = n(940172),
   y = n(81011),
   C = n(981613),
-  O = n(762399),
-  N = n(232112),
-  T = n(53796),
+  N = n(762399),
+  T = n(232112),
+  O = n(53796),
   S = n(723757),
   E = n(375924),
   k = n(596136),
@@ -99,8 +99,8 @@ let F = {
     HSLuv: m.Z,
     HSV: h.Z,
     HWB: p.Z,
-    ICTCP: f.Z,
-    JzCzHz: x.Z,
+    ICTCP: x.Z,
+    JzCzHz: f.Z,
     Jzazbz: b.Z,
     LCH: _.Z,
     LCHuv: g.Z,
@@ -108,9 +108,9 @@ let F = {
     Lab_D65: j.Z,
     Luv: y.Z,
     OKLCH: C.Z,
-    OKLab: O.Z,
-    P3: N.Z,
-    ProPhoto: T.Z,
+    OKLab: N.Z,
+    P3: T.Z,
+    ProPhoto: O.Z,
     REC_2020: S.Z,
     REC_2100_HLG: E.Z,
     REC_2100_PQ: k.Z,
@@ -227,22 +227,22 @@ function ea(e) {
     outputSpace: s,
     space: s,
     progression: e => e ** o
-  }), f = (0, L.w6)(u, c, {
+  }), x = (0, L.w6)(u, c, {
     steps: h,
     outputSpace: s,
     space: s,
     progression: e => e ** o
-  }), x = [];
+  }), f = [];
   for (let e = 0; e < m; e++) {
     let t = p(e / m);
-    x.push(t)
+    f.push(t)
   }
-  x.push(c);
+  f.push(c);
   for (let e = 1; e < h; e++) {
-    let t = f(1 - e / h);
-    x.push(t)
+    let t = x(1 - e / h);
+    f.push(t)
   }
-  return Object.fromEntries(x.map((e, n) => ["".concat(t, "-").concat(n), e]))
+  return Object.fromEntries(f.map((e, n) => ["".concat(t, "-").concat(n), e]))
 }
 
 function ei(e, t, n) {

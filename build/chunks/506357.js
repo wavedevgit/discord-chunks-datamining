@@ -1,53 +1,53 @@
-/** Chunk was on 76282 **/
+/** Chunk was on 40247 **/
 n.d(t, {
-  Z: () => N
+  Z: () => A
 });
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  l = n(481060),
+  l = n(442837),
+  o = n(481060),
   a = n(565138),
   s = n(241559),
   c = n(527379),
   u = n(430824),
-  d = n(944486),
-  _ = n(914010),
-  p = n(626135),
-  E = n(528011),
-  f = n(666657),
-  m = n(533244),
-  h = n(981631),
-  g = n(176505),
-  b = n(388032),
-  O = n(980566);
+  E = n(944486),
+  d = n(914010),
+  _ = n(626135),
+  N = n(528011),
+  I = n(666657),
+  O = n(533244),
+  T = n(981631),
+  S = n(176505),
+  p = n(388032),
+  P = n(980566);
 
-function N(e) {
-  var t, N;
+function A(e) {
+  var t, A;
   let {
-    onDismiss: I
-  } = e, C = (0, o.e7)([_.Z], () => _.Z.getGuildId()), T = (0, o.e7)([d.Z], () => null != C ? d.Z.getChannelId(C) : null, [C]), S = null != C ? C : null, y = (0, o.e7)([u.Z], () => null != S ? u.Z.getGuild(S) : null, [S]), {
-    shouldShowIncidentActions: v,
-    incidentData: P,
-    isUnderLockdown: R
-  } = (0, E.mI)(S), A = (0, s.n2)(null !== (t = null == y ? void 0 : y.id) && void 0 !== t ? t : h.lds), x = i.useCallback(() => null != y && (0, c._X)(y.id), [y]);
-  if (null == y || null == P || !v) return null;
-  let j = e => {
-      if (e && A && T !== g.oC.MEMBER_SAFETY && x()) {
-        p.default.track(h.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
-          notice_type: h.kVF.GUILD_RAID_NOTIFICATION,
-          guild_id: y.id
+    onDismiss: R
+  } = e, C = (0, l.e7)([d.Z], () => d.Z.getGuildId()), f = (0, l.e7)([E.Z], () => null != C ? E.Z.getChannelId(C) : null, [C]), m = null != C ? C : null, D = (0, l.e7)([u.Z], () => null != m ? u.Z.getGuild(m) : null, [m]), {
+    shouldShowIncidentActions: g,
+    incidentData: y,
+    isUnderLockdown: h
+  } = (0, N.mI)(m), b = (0, s.n2)(null !== (t = null == D ? void 0 : D.id) && void 0 !== t ? t : T.lds), U = i.useCallback(() => null != D && (0, c._X)(D.id), [D]);
+  if (null == D || null == y || !g) return null;
+  let k = e => {
+      if (e && b && f !== S.oC.MEMBER_SAFETY && U()) {
+        _.default.track(T.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
+          notice_type: T.kVF.GUILD_RAID_NOTIFICATION,
+          guild_id: D.id
         });
         return
-      }(0, l.ZDy)(async () => {
+      }(0, o.ZDy)(async () => {
         let e = {
-            source: f.Zu.NAGBAR,
-            alertType: (0, m.T1)(P)
+            source: I.Zu.NAGBAR,
+            alertType: (0, O.T1)(y)
           },
           {
             default: t
           } = await n.e("58175").then(n.bind(n, 664452));
         return n => {
-          var i, o;
+          var i, l;
           return (0, r.jsx)(t, (i = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -65,69 +65,69 @@ function N(e) {
               })
             }
             return e
-          }({}, n), o = o = {
-            guildId: y.id,
+          }({}, n), l = l = {
+            guildId: D.id,
             analyticsData: e
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(o)).forEach(function(e) {
-            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
+          })(Object(l)).forEach(function(e) {
+            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
           }), i))
         }
       })
     },
-    D = (0, r.jsx)(a.Z, {
-      className: O.guildIcon,
-      guild: y,
+    M = (0, r.jsx)(a.Z, {
+      className: P.guildIcon,
+      guild: D,
       size: a.Z.Sizes.MINI
     }),
-    L = (0, m.OY)(P, y.name);
-  if (null != (null !== (N = P.dmsDisabledUntil) && void 0 !== N ? N : P.invitesDisabledUntil) && R) return (0, r.jsxs)(l.qXd, {
-    className: O.notice,
-    color: l.DM8.NEUTRAL,
-    children: [(0, r.jsx)(l.RyX, {
-      onClick: I,
-      noticeType: h.kVF.GUILD_RAID_NOTIFICATION
-    }), D, L, (0, r.jsx)(l.EyT, {
-      className: O.actionButton,
-      onClick: () => j(!1),
+    v = (0, O.OY)(y, D.name);
+  if (null != (null !== (A = y.dmsDisabledUntil) && void 0 !== A ? A : y.invitesDisabledUntil) && h) return (0, r.jsxs)(o.qXd, {
+    className: P.notice,
+    color: o.DM8.NEUTRAL,
+    children: [(0, r.jsx)(o.RyX, {
+      onClick: R,
+      noticeType: T.kVF.GUILD_RAID_NOTIFICATION
+    }), M, v, (0, r.jsx)(o.EyT, {
+      className: P.actionButton,
+      onClick: () => k(!1),
       children: (0, r.jsxs)("div", {
-        className: O.actionButtonInner,
-        children: [(0, r.jsx)(l.mBM, {
+        className: P.actionButtonInner,
+        children: [(0, r.jsx)(o.mBM, {
           size: "xs",
           color: "currentColor"
         }), (0, r.jsx)("span", {
-          children: b.NW.string(b.t["c+7oa2"])
+          children: p.NW.string(p.t["c+7oa2"])
         })]
       })
     })]
   });
-  let k = (0, m.CG)(P) ? b.NW.formatToPlainString(b.t.tZTx2N, {
-      guildName: y.name
-    }) : (0, m.kk)(P) ? b.NW.formatToPlainString(b.t["1bSmxs"], {
-      guildName: y.name
-    }) : b.NW.formatToPlainString(b.t.W87xDA, {
-      guildName: y.name
+  let Z = (0, O.CG)(y) ? p.NW.formatToPlainString(p.t.tZTx2N, {
+      guildName: D.name
+    }) : (0, O.kk)(y) ? p.NW.formatToPlainString(p.t["1bSmxs"], {
+      guildName: D.name
+    }) : p.NW.formatToPlainString(p.t.W87xDA, {
+      guildName: D.name
     }),
-    M = A && T === g.oC.MEMBER_SAFETY;
-  return (0, r.jsxs)(l.qXd, {
-    className: O.notice,
-    color: l.DM8.WARNING,
-    children: [(0, r.jsx)(l.RyX, {
-      onClick: I,
-      noticeType: h.kVF.GUILD_RAID_NOTIFICATION
-    }), D, k, !M && (0, r.jsx)(l.EyT, {
-      className: O.actionButton,
-      onClick: () => j(!0),
+    j = b && f === S.oC.MEMBER_SAFETY;
+  return (0, r.jsxs)(o.qXd, {
+    className: P.notice,
+    color: o.DM8.WARNING,
+    children: [(0, r.jsx)(o.RyX, {
+      onClick: R,
+      noticeType: T.kVF.GUILD_RAID_NOTIFICATION
+    }), M, Z, !j && (0, r.jsx)(o.EyT, {
+      className: P.actionButton,
+      onClick: () => k(!0),
       children: (0, r.jsx)("div", {
-        className: O.actionButtonInner,
+        className: P.actionButtonInner,
         children: (0, r.jsx)("span", {
-          children: b.NW.string(b.t.zDJDho)
+          children: p.NW.string(p.t.zDJDho)
         })
       })
     })]

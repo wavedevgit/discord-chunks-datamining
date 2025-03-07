@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => C
+  Z: () => j
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -16,9 +16,9 @@ var r = n(200651),
   g = n(304761),
   h = n(865427),
   f = n(358085),
-  x = n(210887),
-  b = n(981631),
-  N = n(388032),
+  b = n(210887),
+  N = n(981631),
+  x = n(388032),
   _ = n(658570);
 let E = [{
   label: "Latin alphabet",
@@ -43,14 +43,14 @@ let E = [{
   value: "custom"
 }];
 
-function C() {
+function j() {
   let [e, t] = i.useState(Math.round(window.outerWidth / window.innerWidth * 100)), {
     platformZoom: n,
     theme: s
-  } = (0, l.cj)([x.Z, p.Z], () => ({
-    theme: x.Z.theme,
+  } = (0, l.cj)([b.Z, p.Z], () => ({
+    theme: b.Z.theme,
     platformZoom: p.Z.zoom
-  })), [C, j] = i.useState("upright"), O = ["normal", "medium", "semibold", "bold", "extrabold"], v = new Map([
+  })), [j, C] = i.useState("upright"), O = ["normal", "medium", "semibold", "bold", "extrabold"], v = new Map([
     ["normal", 400],
     ["medium", 500],
     ["semibold", 600],
@@ -81,8 +81,8 @@ function C() {
   return (0, r.jsx)("div", {
     className: _.fullscreen,
     style: {
-      "--playground-font-family": "mono" === C ? "gg mono" : "gg sans",
-      "--playground-font-style": "italic" === C ? "italic" : "normal"
+      "--playground-font-family": "mono" === j ? "gg mono" : "gg sans",
+      "--playground-font-style": "italic" === j ? "italic" : "normal"
     },
     children: (0, r.jsxs)(o.hjN, {
       tag: o.RB0.H1,
@@ -128,11 +128,11 @@ function C() {
             className: _.theme,
             orientation: "horizontal",
             options: [{
-              name: N.NW.string(N.t.b8Cei4),
-              value: b.BRd.DARK
+              name: x.NW.string(x.t.b8Cei4),
+              value: N.BRd.DARK
             }, {
-              name: N.NW.string(N.t.K2sFfn),
-              value: b.BRd.LIGHT
+              name: x.NW.string(x.t.K2sFfn),
+              value: N.BRd.LIGHT
             }],
             onChange: e => {
               (0, d.ZI)({
@@ -157,9 +157,9 @@ function C() {
               value: "mono"
             }],
             onChange: e => {
-              j(e.value)
+              C(e.value)
             },
-            value: C
+            value: j
           })
         }), (0, r.jsx)(u.Z, {
           closeAction: c.xf,

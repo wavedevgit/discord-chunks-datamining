@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => g
 });
@@ -50,9 +50,9 @@ function g(e) {
     onClose: g,
     hasCancelableGuildBoostSlot: h,
     premiumSubscription: f,
-    onSelect: x,
-    fractionalState: b
-  } = e, N = {
+    onSelect: b,
+    fractionalState: N
+  } = e, x = {
     transfer: {
       label: null != t.premiumGuildSubscription ? d.NW.string(d.t["PR0n//"]) : d.NW.string(d.t["+fmEYG"]),
       subtext: t.isOnCooldown() ? d.NW.string(d.t.XnB8Mz) : null,
@@ -71,30 +71,30 @@ function g(e) {
   };
   switch (f.status) {
     case o.O0b.PAST_DUE:
-      N.cancel.disabled = !0, N.cancel.subtext = d.NW.string(d.t.WnL6DQ), N.uncancel.disabled = !0;
+      x.cancel.disabled = !0, x.cancel.subtext = d.NW.string(d.t.WnL6DQ), x.uncancel.disabled = !0;
       break;
     case o.O0b.PAUSE_PENDING:
     case o.O0b.PAUSED:
-      b === c.a$.NONE && (N.transfer.disabled = !0, N.transfer.subtext = d.NW.string(d.t.LiLRRU)), N.cancel.subtext = d.NW.string(d.t["1ywaWF"]), N.cancel.disabled = !0, N.uncancel.disabled = !0
+      N === c.a$.NONE && (x.transfer.disabled = !0, x.transfer.subtext = d.NW.string(d.t.LiLRRU)), x.cancel.subtext = d.NW.string(d.t["1ywaWF"]), x.cancel.disabled = !0, x.uncancel.disabled = !0
   }
-  b !== c.a$.NONE && (N.cancel.subtext = d.NW.string(d.t.dq4vq6), N.cancel.disabled = !0, N.uncancel.disabled = !0);
-  let _ = i.useMemo(() => f.isPausedOrPausePending && b === c.a$.NONE ? (0, r.jsx)(s.sNh, {
+  N !== c.a$.NONE && (x.cancel.subtext = d.NW.string(d.t.dq4vq6), x.cancel.disabled = !0, x.uncancel.disabled = !0);
+  let _ = i.useMemo(() => f.isPausedOrPausePending && N === c.a$.NONE ? (0, r.jsx)(s.sNh, {
     id: "manage-subscription",
     label: d.NW.string(d.t.obRG6e),
     action: () => a.Z.open(o.oAB.SUBSCRIPTIONS),
     iconLeft: s.WGR,
     className: u.manageSubscription
-  }) : null, [b, f]);
+  }) : null, [N, f]);
   return (0, r.jsxs)(s.v2r, {
-    onSelect: x,
+    onSelect: b,
     navId: "subscription-context",
     variant: "fixed",
     "aria-label": d.NW.string(d.t.ogxXGh),
     onClose: g,
     children: [(0, r.jsx)(s.sNh, {
       id: "apply",
-      label: N.transfer.label,
-      subtext: N.transfer.subtext,
+      label: x.transfer.label,
+      subtext: x.transfer.subtext,
       action: function() {
         (0, s.ZDy)(async () => {
           let {
@@ -106,11 +106,11 @@ function g(e) {
           }))
         })
       },
-      disabled: N.transfer.disabled
+      disabled: x.transfer.disabled
     }), (0, l.tl)(t) ? (0, r.jsx)(s.sNh, {
       id: "uncancel",
-      label: N.uncancel.label,
-      subtext: N.uncancel.subtext,
+      label: x.uncancel.label,
+      subtext: x.uncancel.subtext,
       action: function() {
         (0, s.ZDy)(async () => {
           let {
@@ -121,11 +121,11 @@ function g(e) {
           }))
         })
       },
-      disabled: N.uncancel.disabled
+      disabled: x.uncancel.disabled
     }) : (0, r.jsx)(s.sNh, {
       id: "cancel",
-      label: N.cancel.label,
-      subtext: N.cancel.subtext,
+      label: x.cancel.label,
+      subtext: x.cancel.subtext,
       action: function() {
         (0, s.ZDy)(async () => {
           let {
@@ -136,7 +136,7 @@ function g(e) {
           }))
         })
       },
-      disabled: N.cancel.disabled,
+      disabled: x.cancel.disabled,
       color: "danger"
     }), _]
   })

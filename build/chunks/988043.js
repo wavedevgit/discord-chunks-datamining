@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => j
+  Z: () => C
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -16,17 +16,17 @@ var r = n(200651),
   g = n(51331),
   h = n(922628),
   f = n(703115),
-  x = n(526761),
-  b = n(726985),
-  N = n(736530),
+  b = n(526761),
+  N = n(726985),
+  x = n(736530),
   _ = n(981631),
   E = n(388032);
 
-function C(e) {
+function j(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, x = (0, m.c_)(), C = u.h2.useSetting().includes(n), j = (0, d.q)(), O = i.useCallback(e => {
+  } = e, b = (0, m.c_)(), j = u.h2.useSetting().includes(n), C = (0, d.q)(), O = i.useCallback(e => {
     let r = (0, c.YK)();
     e ? r.delete(n) : r.add(n), u.h2.updateSetting(Array.from(r)), l.default.track(_.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: f.Y.DIRECT_MESSAGES_TOGGLE,
@@ -57,29 +57,29 @@ function C(e) {
     })
   };
   return (0, r.jsx)(p.U, {
-    setting: b.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
-    children: n === N.T ? (0, r.jsx)(g.Z, {
+    setting: N.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
+    children: n === x.T ? (0, r.jsx)(g.Z, {
       title: E.NW.string(E.t.RAQUSE),
       note: E.NW.string(E.t.wbYDfX),
-      value: !j,
+      value: !C,
       onChange: e => {
         S(!e)
       }
     }) : (0, r.jsx)(g.Z, {
       title: E.NW.string(E.t.RAQUSE),
-      note: x ? E.NW.string(E.t.V0ka0d) : E.NW.string(E.t.G7c3Xl),
-      value: !C,
+      note: b ? E.NW.string(E.t.V0ka0d) : E.NW.string(E.t.G7c3Xl),
+      value: !j,
       onChange: O
     })
   })
 }
 
-function j(e) {
+function C(e) {
   let {
-    ingress: t = x.f4.USER_SETTINGS_PRIVACY_SAFETY,
+    ingress: t = b.f4.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
   } = e, i = (0, m.is)();
-  return (0, r.jsx)(C, {
+  return (0, r.jsx)(j, {
     ingress: t,
     guildId: null != n ? n : i
   })

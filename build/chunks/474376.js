@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  g: () => C
+  g: () => j
 }), n(653041);
 var r = n(200651);
 n(192379);
@@ -17,24 +17,24 @@ var i = n(442837),
   g = n(51144),
   h = n(480387),
   f = n(726745),
-  x = n(251423),
-  b = n(383832),
-  N = n(981631),
+  b = n(251423),
+  N = n(383832),
+  x = n(981631),
   _ = n(388032),
   E = n(853759);
 
-function C(e) {
+function j(e) {
   let t = (0, i.e7)([m.default], () => m.default.getCurrentUser()),
     n = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation),
-    C = (0, i.e7)([c.Z], () => (0, s.wj)(c.Z.theme)),
-    j = (0, o.R6)("useMultiAccountMenuItems"),
+    j = (0, i.e7)([c.Z], () => (0, s.wj)(c.Z.theme)),
+    C = (0, o.R6)("useMultiAccountMenuItems"),
     {
       multiAccountUsers: O
-    } = (0, x.L)(),
+    } = (0, b.L)(),
     v = e => {
-      e !== (null == t ? void 0 : t.id) && (p.default.track(N.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
+      e !== (null == t ? void 0 : t.id) && (p.default.track(x.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
         location: {
-          section: N.jXE.USER_PROFILE
+          section: x.jXE.USER_PROFILE
         }
       }), h.yD(e))
     },
@@ -72,19 +72,19 @@ function C(e) {
               })]
             }), o && (0, r.jsx)(a.owK, {
               size: "sm",
-              color: (0, l.Lq)(t ? N.Ilk.WHITE_500 : N.Ilk.BRAND_500),
-              secondaryColor: (0, l.Lq)(t && C || t && !j && !C ? N.Ilk.BRAND_500 : N.Ilk.WHITE_500),
+              color: (0, l.Lq)(t ? x.Ilk.WHITE_500 : x.Ilk.BRAND_500),
+              secondaryColor: (0, l.Lq)(t && j || t && !C && !j ? x.Ilk.BRAND_500 : x.Ilk.WHITE_500),
               className: E.activeIcon
             }), c && (0, r.jsx)(a.P4T, {
-              color: (0, l.Lq)(N.Ilk.RED_400),
-              secondaryColor: (0, l.Lq)(t && C || t && !j && !C ? N.Ilk.BRAND_500 : N.Ilk.WHITE_500),
+              color: (0, l.Lq)(x.Ilk.RED_400),
+              secondaryColor: (0, l.Lq)(t && j || t && !C && !j ? x.Ilk.BRAND_500 : x.Ilk.WHITE_500),
               size: "xs",
               className: E.activeIcon
             })]
           })
         },
         action: () => {
-          null == e || e(), c ? (0, b.Z)() : v(s.id)
+          null == e || e(), c ? (0, N.Z)() : v(s.id)
         }
       }, s.id)
     });
@@ -93,7 +93,7 @@ function C(e) {
       id: "manage-accounts",
       label: _.NW.string(_.t.WbFpq6),
       action: () => {
-        null == e || e(), (0, b.Z)()
+        null == e || e(), (0, N.Z)()
       }
     })]
   })), S

@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => u
 }), n(47120);
@@ -31,7 +31,7 @@ function u(e) {
       }
       return i
     }(e, ["children", "lineClamp"]);
-  let [g, h] = i.useState(!1), [f, x] = i.useState(null), b = null != f && (0, r.jsx)("button", {
+  let [g, h] = i.useState(!1), [f, b] = i.useState(null), N = null != f && (0, r.jsx)("button", {
     className: d.button,
     onClick: () => h(e => !e),
     children: (0, r.jsxs)(o.Text, {
@@ -46,22 +46,22 @@ function u(e) {
         size: "xs"
       })]
     })
-  }), [N, _] = i.useState(null), E = i.useCallback(() => {
-    if (null == N) return;
+  }), [x, _] = i.useState(null), E = i.useCallback(() => {
+    if (null == x) return;
     let {
       scrollHeight: e,
       clientHeight: t
-    } = N;
-    e > t && x({
+    } = x;
+    e > t && b({
       truncatedHeight: t,
       expandedHeight: e
     })
-  }, [N]);
+  }, [x]);
   i.useEffect(() => {
     requestAnimationFrame(E)
   }, [E, u, m]);
-  let C = "auto";
-  return null != f && (C = g ? "".concat(f.expandedHeight, "px") : "".concat(f.truncatedHeight, "px")), (0, r.jsxs)("div", {
+  let j = "auto";
+  return null != f && (j = g ? "".concat(f.expandedHeight, "px") : "".concat(f.truncatedHeight, "px")), (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.Text, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -84,7 +84,7 @@ function u(e) {
       lineClamp: g ? void 0 : m,
       ref: _,
       style: {
-        height: C
+        height: j
       },
       children: u
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -96,6 +96,6 @@ function u(e) {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t)), b]
+    }), t)), N]
   })
 }

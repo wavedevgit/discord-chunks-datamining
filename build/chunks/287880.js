@@ -1,27 +1,28 @@
-/** Chunk was on 51724 **/
-n.d(t, {
+/** Chunk was on 23746 **/
+"use strict";
+r.d(t, {
   Ae: () => d,
-  Qe: () => m,
-  U0: () => p,
+  Qe: () => h,
+  U0: () => g,
   bV: () => u,
-  uZ: () => c
-}), n(518263), n(970173), n(520712), n(268111), n(941497), n(32026), n(480839), n(744285), n(492257), n(873817), n(610885), n(126298), n(757143), n(301563), n(566702);
-var r, i, s, a = n(943418);
-let l = null !== (s = null === (r = window) || void 0 === r ? void 0 : r.crypto) && void 0 !== s ? s : null === (i = window) || void 0 === i ? void 0 : i.msCrypto,
-  o = "Uint8Array" in window,
-  c = null != l && "getRandomValues" in l && o,
-  d = "PublicKeyCredential" in window && o;
+  uZ: () => l
+}), r(518263), r(970173), r(520712), r(268111), r(941497), r(32026), r(480839), r(744285), r(492257), r(873817), r(610885), r(126298), r(757143), r(301563), r(566702);
+var n, s, i, a = r(943418);
+let o = null !== (i = null === (n = window) || void 0 === n ? void 0 : n.crypto) && void 0 !== i ? i : null === (s = window) || void 0 === s ? void 0 : s.msCrypto,
+  c = "Uint8Array" in window,
+  l = null != o && "getRandomValues" in o && c,
+  d = "PublicKeyCredential" in window && c;
 
 function u() {
   var e;
-  return e = l.getRandomValues(new Uint8Array(20)), a.encode(e).toString("utf8").replace(/=/g, "").toLowerCase().replace(/(\w{4})/g, "$1 ").trim()
+  return e = o.getRandomValues(new Uint8Array(20)), a.encode(e).toString("utf8").replace(/=/g, "").toLowerCase().replace(/(\w{4})/g, "$1 ").trim()
 }
 
-function m(e) {
+function h(e) {
   return e.replace(/[\s._-]+/g, "").toUpperCase()
 }
 
-function p(e, t) {
-  let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "Discord";
-  return "otpauth://totp/".concat(encodeURI(n), ":").concat(encodeURI(e), "?secret=").concat(m(t), "&issuer=").concat(encodeURIComponent(n))
+function g(e, t) {
+  let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "Discord";
+  return "otpauth://totp/".concat(encodeURI(r), ":").concat(encodeURI(e), "?secret=").concat(h(t), "&issuer=").concat(encodeURIComponent(r))
 }

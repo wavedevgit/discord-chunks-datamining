@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => A
 });
@@ -17,34 +17,34 @@ var i = n(921801),
   g = n(540204),
   h = n(546957),
   f = n(893996),
-  x = n(273927),
-  b = n(864239),
-  N = n(190014),
+  b = n(273927),
+  N = n(864239),
+  x = n(190014),
   _ = n(301812),
   E = n(988043),
-  C = n(919539),
-  j = n(726985),
+  j = n(919539),
+  C = n(726985),
   O = n(981631),
   v = n(388032);
 let S = () => (0, r.jsx)(f.Z, {
     title: v.NW.string(v.t["y62Z/f"]),
-    webSetting: j.s6.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
+    webSetting: C.s6.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
     children: (0, r.jsxs)(h.Z, {
       children: [(0, r.jsx)(i.F, {
-        setting: j.s6.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
+        setting: C.s6.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
         children: (0, r.jsx)(g.Z, {})
-      }), (0, r.jsx)(E.Z, {}), (0, r.jsx)(C.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(N.Z, {})]
+      }), (0, r.jsx)(E.Z, {}), (0, r.jsx)(j.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(x.Z, {})]
     })
   }),
   T = () => (0, r.jsxs)(f.Z, {
     title: v.NW.string(v.t.xVRG4O),
-    webSetting: j.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-    children: [(0, r.jsx)(u.P, {}), (0, r.jsx)(d.Z, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(c.Z, {}), (0, r.jsx)(l.Z, {}), (0, r.jsx)(b.Z, {})]
+    webSetting: C.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
+    children: [(0, r.jsx)(u.P, {}), (0, r.jsx)(d.Z, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(c.Z, {}), (0, r.jsx)(l.Z, {}), (0, r.jsx)(N.Z, {})]
   }),
   I = () => (0, r.jsxs)(f.Z, {
     title: v.NW.string(v.t["1Qn8iY"]),
-    webSetting: j.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
-    children: [(0, r.jsx)(m.Z, {}), (0, r.jsx)(x.ZP, {})]
+    webSetting: C.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
+    children: [(0, r.jsx)(m.Z, {}), (0, r.jsx)(b.ZP, {})]
   }),
   y = () => {
     let e = v.NW.format(v.t.VaxeGh, {
@@ -53,7 +53,7 @@ let S = () => (0, r.jsx)(f.Z, {
     return (0, r.jsx)(f.Z, {
       title: v.NW.string(v.t.oPyABA),
       description: e,
-      webSetting: j.s6.PRIVACY_AND_SAFETY_GAME_FRIENDS_CATEGORY,
+      webSetting: C.s6.PRIVACY_AND_SAFETY_GAME_FRIENDS_CATEGORY,
       children: (0, r.jsx)(o.Z, {})
     })
   };

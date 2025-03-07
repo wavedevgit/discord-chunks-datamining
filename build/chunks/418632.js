@@ -1,19 +1,19 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 20102 **/
 n.d(t, {
-  Z: () => x
+  Z: () => g
 }), n(47120);
 var r, i = n(200651),
-  s = n(192379),
-  a = n(512722),
-  l = n.n(a),
-  o = n(442837),
-  c = n(481060),
-  d = n(893776),
-  u = n(468026),
-  m = n(594174),
-  p = n(388032);
+  o = n(192379),
+  s = n(512722),
+  l = n.n(s),
+  c = n(442837),
+  a = n(481060),
+  u = n(893776),
+  d = n(468026),
+  f = n(594174),
+  b = n(388032);
 
-function g(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,38 +22,38 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
 }
-class f extends(r = s.Component) {
+class p extends(r = o.Component) {
   render() {
     let {
       color: e,
       look: t,
       size: n
     } = this.props;
-    return (0, i.jsx)(c.zxk, {
+    return (0, i.jsx)(a.zxk, {
       look: t,
       size: n,
       color: e,
       disabled: this.state.isSendingVerificationEmail,
       onClick: this.handleResendVerification,
-      children: p.NW.string(p.t.lm1UKi)
+      children: b.NW.string(b.t.lm1UKi)
     })
   }
   constructor(...e) {
-    super(...e), g(this, "state", {
+    super(...e), h(this, "state", {
       isSendingVerificationEmail: !1
-    }), g(this, "handleResendVerification", () => {
+    }), h(this, "handleResendVerification", () => {
       let {
         currentUser: e,
         onClick: t
@@ -61,16 +61,16 @@ class f extends(r = s.Component) {
       null == t || t(), this.setState({
         isSendingVerificationEmail: !0
       }, () => {
-        d.Z.verifyResend().then(() => (0, c.h7j)(t => {
+        u.Z.verifyResend().then(() => (0, a.h7j)(t => {
           var n, r;
-          return (0, i.jsx)(c.ConfirmModal, (n = h({
-            header: p.NW.string(p.t.LykQYm),
-            confirmText: p.NW.string(p.t.BddRzc),
-            confirmButtonColor: c.zxk.Colors.BRAND
+          return (0, i.jsx)(a.ConfirmModal, (n = m({
+            header: b.NW.string(b.t.LykQYm),
+            confirmText: b.NW.string(b.t.BddRzc),
+            confirmButtonColor: a.zxk.Colors.BRAND
           }, t), r = r = {
-            children: (0, i.jsx)(c.Text, {
+            children: (0, i.jsx)(a.Text, {
               variant: "text-md/normal",
-              children: p.NW.format(p.t.azKEPz, {
+              children: b.NW.format(b.t.azKEPz, {
                 email: e.email
               })
             })
@@ -87,9 +87,9 @@ class f extends(r = s.Component) {
         })).catch(e => {
           let {
             body: t
-          } = e, n = p.NW.string(p.t.XcrQNz);
-          null != t && t.email && (n = t.email), (0, c.h7j)(e => (0, i.jsx)(u.default, h({
-            title: p.NW.string(p.t.VbTh0N),
+          } = e, n = b.NW.string(b.t.XcrQNz);
+          null != t && t.email && (n = t.email), (0, a.h7j)(e => (0, i.jsx)(d.default, m({
+            title: b.NW.string(b.t.VbTh0N),
             body: n
           }, e)))
         }).then(() => this.setState({
@@ -99,13 +99,13 @@ class f extends(r = s.Component) {
     })
   }
 }
-g(f, "defaultProps", {
-  size: c.zxk.Sizes.MEDIUM,
-  color: c.zxk.Colors.BRAND
+h(p, "defaultProps", {
+  size: a.zxk.Sizes.MEDIUM,
+  color: a.zxk.Colors.BRAND
 });
-let x = o.ZP.connectStores([m.default], () => {
-  let e = m.default.getCurrentUser();
+let g = c.ZP.connectStores([f.default], () => {
+  let e = f.default.getCurrentUser();
   return l()(null != e, "ResendEmailVerificationButton: currentUser cannot be undefined"), {
     currentUser: e
   }
-})(f)
+})(p)

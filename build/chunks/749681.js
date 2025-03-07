@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 n.r(t), n.d(t, {
   transitionToGlobalDiscovery: () => function e(t) {
-    var n, f, x;
+    var n, x, f;
     let b = t.tab;
     switch (d.Z.setState({
         selectedTab: b
@@ -12,7 +12,7 @@ n.r(t), n.d(t, {
           selectedTab: _,
           entrypoint: null !== (n = t.entrypoint) && void 0 !== n ? n : p.Qq.UNKNOWN
         }) : i.Z.setState({
-          entrypoint: null !== (f = t.entrypoint) && void 0 !== f ? f : p.Qq.UNKNOWN
+          entrypoint: null !== (x = t.entrypoint) && void 0 !== x ? x : p.Qq.UNKNOWN
         }), (0, o.uL)(m.Z5c.GLOBAL_DISCOVERY_SERVERS, t.extra);
       case u.GlobalDiscoveryTab.APPS:
         if (null != t.newSessionState) {
@@ -30,7 +30,7 @@ n.r(t), n.d(t, {
               source: null == l ? void 0 : l.name,
               session_id: n,
               guild_id: i,
-              user_id: null === (x = s.default.getCurrentUser()) || void 0 === x ? void 0 : x.id
+              user_id: null === (f = s.default.getCurrentUser()) || void 0 === f ? void 0 : f.id
             }), t.newSessionState.restorePreviousView) return e(function() {
             let {
               lastItem: e

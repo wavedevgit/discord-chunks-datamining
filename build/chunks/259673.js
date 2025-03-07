@@ -3,8 +3,8 @@ n.d(t, {
   M: () => f
 }), n(47120);
 var r = n(200651),
-  i = n(192379),
-  a = n(442837),
+  a = n(192379),
+  i = n(442837),
   l = n(980591),
   o = n(921813),
   s = n(643879),
@@ -16,26 +16,26 @@ let f = e => {
   var t, n;
   let {
     user: f
-  } = e, p = d.ZP.canUsePremiumProfileCustomization(f), v = (0, a.cj)([u.Z], () => u.Z.getAllPending()), {
-    pendingAvatarV2: b
-  } = v, h = function(e, t) {
+  } = e, p = d.ZP.canUsePremiumProfileCustomization(f), v = (0, i.cj)([u.Z], () => u.Z.getAllPending()), {
+    pendingAvatarV2: h
+  } = v, b = function(e, t) {
     if (null == e) return {};
-    var n, r, i = function(e, t) {
+    var n, r, a = function(e, t) {
       if (null == e) return {};
-      var n, r, i = {},
-        a = Object.keys(e);
-      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
+      var n, r, a = {},
+        i = Object.keys(e);
+      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
+      return a
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var i = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
     }
-    return i
+    return a
   }(v, ["pendingAvatarV2"]), g = (0, s.SD)({
     userId: f.id,
-    image: b
-  }), [x, P] = (0, i.useState)(!1);
+    image: h
+  }), [x, P] = (0, a.useState)(!1);
   return (0, l.Z)(() => {
     P(!0)
   }, 250), (0, r.jsx)(o.Z, (t = function(e) {
@@ -55,7 +55,7 @@ let f = e => {
       })
     }
     return e
-  }({}, h), n = n = {
+  }({}, b), n = n = {
     pendingAvatar: g,
     user: f,
     pendingBadges: [(0, m.X2)()],

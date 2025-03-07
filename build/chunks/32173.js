@@ -1,7 +1,7 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => ej,
-  u: () => eC
+  Z: () => eC,
+  u: () => ej
 }), n(266796);
 var r, i = n(200651);
 n(192379);
@@ -17,13 +17,13 @@ var s = n(399606),
   g = n(832149),
   h = n(300284),
   f = n(703656),
-  x = n(547972),
-  b = n(131951),
-  N = n(594174),
+  b = n(547972),
+  N = n(131951),
+  x = n(594174),
   _ = n(78839),
   E = n(424218),
-  C = n(63063),
-  j = n(74538),
+  j = n(63063),
+  C = n(74538),
   O = n(695349),
   v = n(860489),
   S = n(715037),
@@ -71,26 +71,26 @@ var s = n(399606),
   eg = n(91394),
   eh = n(209672),
   ef = n(698173),
-  ex = n(926262),
-  eb = n(482668),
-  eN = n(21504),
+  eb = n(926262),
+  eN = n(482668),
+  ex = n(21504),
   e_ = n(371435),
   eE = n(83663),
-  eC = ((r = {}).CLIENT_THEMES = "clientThemes", r.CLIPS = "clips", r.COLLECTIBLE_DECO = "collectibleDeco", r.EARLY_ACCESS = "earlyAccess", r.ENTRANCE_SOUNDS = "entranceSounds", r.PROFILES = "profiles", r.REMIXING = "remixing", r.SERVER_BOOSTS = "serverBoosts", r.GREY_SERVER_BOOSTS = "greyServerBoosts", r.SPECIAL_MEMBER_PRICING = "specialMemberPricing", r.SPECIAL_MEMBER_PRICING_SEE_ALL_VARIANT = "specialMemberPricingSeeAllVariant", r.SPECIAL_SHOP_PERKS = "specialShopPerks", r.UNLIMITED_SUPER_REACTIONS = "unlimitedSuperReactions", r.SUPER_REACTIONS = "superReactions", r.UPCOMING_DROP_UNTIMED = "upcomingDropUntimed", r.CUSTOM_APP_ICONS = "customAppIcons", r.MORE_EMOJI_POWER = "moreEmojiPower", r.CUSTOM_SOUNDS_EVERYWHERE = "customSoundsEverywhere", r.SPECIAL_STICKER_ACCESS = "specialStickerAccess", r.LARGE_UPLOADS = "largeUploads", r.HD_VIDEO = "hdVideo", r.BADGE = "badge", r.GREY_BADGE = "greyBadge", r.ENTRANCE_SOUNDS_SEE_ALL_VARIATION = "entranceSoundsSeeAllVariation", r.EARLY_ACCESS_SEE_ALL_VARIATION = "earlyAccessSeeAllVariant", r.TENURE_REWARD_COLLECTIBLE = "tenureRewardCollectible", r.REFERRAL_PROGRAM = "referralProgram", r.NEW_APP_STYLES_UPDATE_JUNE_2024 = "newAppStylesUpdateJune2024", r.SERVER_PROFILES = "serverProfiles", r.SHY_PROJECT = "shyProject", r.TENURE_BADGE = "tenureBadge", r);
-let ej = () => {
+  ej = ((r = {}).CLIENT_THEMES = "clientThemes", r.CLIPS = "clips", r.COLLECTIBLE_DECO = "collectibleDeco", r.EARLY_ACCESS = "earlyAccess", r.ENTRANCE_SOUNDS = "entranceSounds", r.PROFILES = "profiles", r.REMIXING = "remixing", r.SERVER_BOOSTS = "serverBoosts", r.GREY_SERVER_BOOSTS = "greyServerBoosts", r.SPECIAL_MEMBER_PRICING = "specialMemberPricing", r.SPECIAL_MEMBER_PRICING_SEE_ALL_VARIANT = "specialMemberPricingSeeAllVariant", r.SPECIAL_SHOP_PERKS = "specialShopPerks", r.UNLIMITED_SUPER_REACTIONS = "unlimitedSuperReactions", r.SUPER_REACTIONS = "superReactions", r.UPCOMING_DROP_UNTIMED = "upcomingDropUntimed", r.CUSTOM_APP_ICONS = "customAppIcons", r.MORE_EMOJI_POWER = "moreEmojiPower", r.CUSTOM_SOUNDS_EVERYWHERE = "customSoundsEverywhere", r.SPECIAL_STICKER_ACCESS = "specialStickerAccess", r.LARGE_UPLOADS = "largeUploads", r.HD_VIDEO = "hdVideo", r.BADGE = "badge", r.GREY_BADGE = "greyBadge", r.ENTRANCE_SOUNDS_SEE_ALL_VARIATION = "entranceSoundsSeeAllVariation", r.EARLY_ACCESS_SEE_ALL_VARIATION = "earlyAccessSeeAllVariant", r.TENURE_REWARD_COLLECTIBLE = "tenureRewardCollectible", r.REFERRAL_PROGRAM = "referralProgram", r.NEW_APP_STYLES_UPDATE_JUNE_2024 = "newAppStylesUpdateJune2024", r.SERVER_PROFILES = "serverProfiles", r.SHY_PROJECT = "shyProject", r.TENURE_BADGE = "tenureBadge", r);
+let eC = () => {
   let {
     analyticsLocations: e
-  } = (0, u.ZP)(d.Z.PREMIUM_MARKETING_PERK_CARD), t = (0, o.ZP)(), r = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), eC = (0, E.BU)(L.Uq / 1024, {
+  } = (0, u.ZP)(d.Z.PREMIUM_MARKETING_PERK_CARD), t = (0, o.ZP)(), r = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), ej = (0, E.BU)(L.Uq / 1024, {
     useKibibytes: !0
   }), {
-    premiumSubscription: ej,
+    premiumSubscription: eC,
     isEligibleForReward: eO
   } = (0, s.cj)([_.ZP], () => ({
     premiumSubscription: _.ZP.getPremiumTypeSubscription(),
     isEligibleForReward: _.ZP.getIsSubscriptionEligibleForReward()
-  })), ev = null != ej ? j.ZP.getPremiumPlanItem(ej) : null, eS = (null != ev ? j.ZP.getSkuIdForPlan(ev.planId) : null) === L.Si.TIER_2, eT = N.default.getCurrentUser(), eI = (0, j.I5)(eT, L.p9.TIER_2), ey = (0, j.I5)(eT, L.p9.TIER_0), eA = (0, I.bq)({
+  })), ev = null != eC ? C.ZP.getPremiumPlanItem(eC) : null, eS = (null != ev ? C.ZP.getSkuIdForPlan(ev.planId) : null) === L.Si.TIER_2, eT = x.default.getCurrentUser(), eI = (0, C.I5)(eT, L.p9.TIER_2), ey = (0, C.I5)(eT, L.p9.TIER_0), eA = (0, I.bq)({
     showAnimations: !0
-  }), eP = null != eA ? eA.initialPercentage : void 0, eR = null != eA ? eA.percentage : void 0, eD = (0, p.Z)(b.Z), eZ = (0, y.a)(), ew = (0, I.Kb)(B.qY), {
+  }), eP = null != eA ? eA.initialPercentage : void 0, eR = null != eA ? eA.percentage : void 0, eD = (0, p.Z)(N.Z), eZ = (0, y.a)(), ew = (0, I.Kb)(B.qY), {
     fractionalState: ek
   } = (0, m.Z)(), eW = (0, O.W)(), eL = ek === L.a$.FP_ONLY, {
     enabled: eB
@@ -133,12 +133,12 @@ let ej = () => {
       descriptionCta: eD ? G.NW.string(G.t.jVcuVV) : G.NW.string(G.t.hvVgAQ),
       pillText: G.NW.string(G.t.EYxi0t),
       onCtaClick: eD ? () => {
-        (0, x.Z)(V.Z.CLIPS, {
+        (0, b.Z)(V.Z.CLIPS, {
           openWithoutBackstack: !0,
           analyticsLocations: e
         })
       } : () => {
-        window.open(C.Z.getArticleURL(M.BhN.CLIPS), "_blank")
+        window.open(j.Z.getArticleURL(M.BhN.CLIPS), "_blank")
       },
       perkImage: $
     } : {
@@ -383,12 +383,12 @@ let ej = () => {
     largeUploads: {
       name: "largeUploads",
       title: G.NW.formatToPlainString(G.t.jqhAdH, {
-        premiumMaxSize: eC
+        premiumMaxSize: ej
       }),
       subtitle: G.NW.formatToPlainString(G.t["HI+cfn"], {
-        premiumMaxSize: eC
+        premiumMaxSize: ej
       }),
-      perkImage: ex,
+      perkImage: eb,
       description: G.NW.string(G.t["R0gx+/"])
     },
     hdVideo: {
@@ -413,7 +413,7 @@ let ej = () => {
       title: G.NW.string(G.t.tPY4o6),
       subtitle: G.NW.string(G.t.JY0grK),
       description: G.NW.format(G.t["2JqTFx"], {
-        helpdeskArticle: C.Z.getArticleURL(M.BhN.REFERRAL_PROGRAM)
+        helpdeskArticle: j.Z.getArticleURL(M.BhN.REFERRAL_PROGRAM)
       }),
       descriptionCta: G.NW.string(G.t.JST6jo),
       isPremiumGetCta: !eS || void 0,
@@ -500,7 +500,7 @@ let ej = () => {
       termsLink: T.Ps
     }),
     perkComponent: (0, i.jsx)(w.Z, {
-      image: r ? eN.Z : eb.Z,
+      image: r ? ex.Z : eN.Z,
       cta: G.NW.string(G.t.s0w7a2),
       onClick: () => {
         (0, a.ZDy)(async () => {

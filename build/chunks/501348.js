@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => er
 }), n(47120);
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(493773),
   h = n(714338),
   f = n(857595),
-  x = n(607070),
-  b = n(627845),
-  N = n(514361),
+  b = n(607070),
+  N = n(627845),
+  x = n(514361),
   _ = n(600164),
   E = n(313201),
-  C = n(540059),
-  j = n(605236),
+  j = n(540059),
+  C = n(605236),
   O = n(786761),
   v = n(3148),
   S = n(739566),
@@ -121,8 +121,8 @@ let Y = {
     }))]
   },
   $ = () => {
-    let e = (0, C.Q3)("ThemeTitle"),
-      t = (0, l.e7)([N.Z], () => N.Z.isPreview),
+    let e = (0, j.Q3)("ThemeTitle"),
+      t = (0, l.e7)([x.Z], () => x.Z.isPreview),
       {
         enabled: n
       } = I.Z.useExperiment({
@@ -291,7 +291,7 @@ class ee extends i.Component {
       children: (0, r.jsx)(u.R94, {
         type: u.R94.Types.DEFAULT,
         className: V.forcedColorsWarning,
-        children: (0, b.b)() ? U.NW.format(U.t.Jae48P, {
+        children: (0, N.b)() ? U.NW.format(U.t.Jae48P, {
           onClick: () => {
             p.Z.open(L.oAB.ACCESSIBILITY)
           }
@@ -630,7 +630,7 @@ class et extends ee {
   }
 }
 let en = e => {
-  (0, j.un)(e) || (0, j.EW)(e, {
+  (0, C.un)(e) || (0, C.EW)(e, {
     dismissAction: B.L.AUTO,
     forceTrack: !0
   })
@@ -646,24 +646,24 @@ function er() {
   (0, g.ZP)(() => {
     en(o.z.CLIENT_THEMES_SETTINGS_BADGE), en(o.z.DEKSTOP_CUSTOM_APP_ICON_BADGE), en(o.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK)
   });
-  let c = (0, l.cj)([R.Z, D.ZP, x.Z, A.default, N.Z], () => {
+  let c = (0, l.cj)([R.Z, D.ZP, b.Z, A.default, x.Z], () => {
       var e, t;
       return {
         theme: R.Z.theme,
-        useForcedColors: x.Z.useForcedColors,
+        useForcedColors: b.Z.useForcedColors,
         useSystemTheme: D.ZP.useSystemTheme,
         darkSidebar: R.Z.darkSidebar,
-        fontSize: x.Z.fontSize,
-        zoom: x.Z.zoom,
-        messageGroupSpacing: x.Z.messageGroupSpacing,
+        fontSize: b.Z.fontSize,
+        zoom: b.Z.zoom,
+        messageGroupSpacing: b.Z.messageGroupSpacing,
         displayCompactAvatars: D.ZP.displayCompactAvatars,
         isStaff: null !== (t = null === (e = A.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff) && void 0 !== t && t,
-        gradientPreset: N.Z.gradientPreset
+        gradientPreset: x.Z.gradientPreset
       }
     }),
-    d = (0, C.nm)("UserSettingsAppearance"),
-    u = (0, C.o9)("UserSettingsAppearance"),
-    m = (0, C.Q3)("UserSettingsAppearance");
+    d = (0, j.nm)("UserSettingsAppearance"),
+    u = (0, j.o9)("UserSettingsAppearance"),
+    m = (0, j.Q3)("UserSettingsAppearance");
   return (0, r.jsx)(m ? et : ee, H({
     messageDisplayCompact: e,
     hideSimpleEmbedContent: t && n,

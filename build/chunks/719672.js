@@ -15,7 +15,7 @@ var a = n(913527),
   m = n(675478),
   h = n(681619),
   p = n(793272);
-let f = e => {
+let x = e => {
     switch (e) {
       case c.D.DC_DISMISSED:
         return "DISMISS:";
@@ -27,7 +27,7 @@ let f = e => {
         return "UNKNOWN TYPE:"
     }
   },
-  x = [{
+  f = [{
     key: "events",
     render(e) {
       let {
@@ -58,8 +58,8 @@ function _() {
         dismissibleContent: n
       } = e;
       return {
-        key: f(t) + n.toString(),
-        event: f(t),
+        key: x(t) + n.toString(),
+        event: x(t),
         dismissibleContent: n
       }
     }),
@@ -95,7 +95,7 @@ function _() {
         data: _
       })
     }), (0, r.jsx)("br", {}), (0, r.jsx)(h.Z, {
-      columns: x,
+      columns: f,
       data: o
     })]
   })

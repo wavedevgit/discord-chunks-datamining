@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => W
 }), n(47120);
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(600164),
   h = n(144114),
   f = n(921801),
-  x = n(607018),
-  b = n(778764),
-  N = n(314897),
+  b = n(607018),
+  N = n(778764),
+  x = n(314897),
   _ = n(325067),
   E = n(594174),
-  C = n(572004),
-  j = n(287880),
+  j = n(572004),
+  C = n(287880),
   O = n(714565),
   v = n(202858),
   S = n(726985),
@@ -74,9 +74,9 @@ function w(e) {
       consumed: n
     }
   } = e, s = "".concat(t.substr(0, 4), "-").concat(t.substr(4)), a = i.useRef(null), l = i.useCallback(e => {
-    if ("c" === e.key && e.metaKey && C.wS) {
+    if ("c" === e.key && e.metaKey && j.wS) {
       var t;
-      e.preventDefault(), e.stopPropagation(), (0, C.JG)(s), null == a || null === (t = a.current) || void 0 === t || t.focus()
+      e.preventDefault(), e.stopPropagation(), (0, j.JG)(s), null == a || null === (t = a.current) || void 0 === t || t.focus()
     }
   }, [s]);
   return (0, r.jsx)("li", {
@@ -257,7 +257,7 @@ class k extends i.PureComponent {
         })]
       }), e, this.renderMFASMS(), (0, r.jsx)(f.F, {
         setting: S.s6.ACCOUNT_SECURITY_KEYS,
-        children: (0, r.jsx)(b.Z, {})
+        children: (0, r.jsx)(N.Z, {})
       })]
     })
   }
@@ -274,14 +274,14 @@ class k extends i.PureComponent {
           size: o.PhG.SMALL,
           children: y.NW.string(y.t.cDgKtb)
         })
-      }), (0, r.jsx)(b.Z, {})]
+      }), (0, r.jsx)(N.Z, {})]
     })
   }
   render() {
     let {
       currentUser: e
     } = this.props;
-    return j.uZ ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, r.jsx)(o.hjN, {
+    return C.uZ ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, r.jsx)(o.hjN, {
       title: y.NW.string(y.t.EPVq09),
       children: (0, r.jsx)(o.R94, {
         type: o.R94.Types.DESCRIPTION,
@@ -297,7 +297,7 @@ class k extends i.PureComponent {
   }
   openPhoneVerificationModal() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-    (0, o.h7j)(t => (0, r.jsx)(x.default, D({
+    (0, o.h7j)(t => (0, r.jsx)(b.default, D({
       reason: h.L.USER_SETTINGS_UPDATE
     }, t, e)), {
       modalKey: I.M
@@ -381,9 +381,9 @@ class k extends i.PureComponent {
 function W(e) {
   let t = (0, l.e7)([E.default], () => E.default.getCurrentUser());
   a()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
-  let n = (0, l.cj)([_.Z, N.default], () => ({
+  let n = (0, l.cj)([_.Z, x.default], () => ({
     togglingSMS: _.Z.togglingSMS,
-    hasTOTPEnabled: N.default.hasTOTPEnabled()
+    hasTOTPEnabled: x.default.hasTOTPEnabled()
   }));
   return (0, r.jsx)(k, D({
     currentUser: t

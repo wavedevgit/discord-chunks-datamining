@@ -1,6 +1,6 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => x
+  Z: () => b
 });
 var r = n(200651),
   i = n(192379),
@@ -46,16 +46,16 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = function() {
+let b = function() {
   let e = i.useRef(null),
     {
       analyticsLocations: t
     } = (0, a.ZP)(),
     {
-      fractionalState: x
+      fractionalState: b
     } = (0, l.Z)();
 
-  function b(n) {
+  function N(n) {
     null != e.current && (0, s.Mr3)(e.current), (0, c.u)({
       analyticsLocation: {
         page: m.ZY5.GUILD_BOOSTING_USER_SETTINGS,
@@ -67,13 +67,13 @@ let x = function() {
       guild: n
     })
   }
-  async function N() {
+  async function x() {
     e.current = await (0, s.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 719228));
       return t => (0, r.jsx)(e, f(h({}, t), {
-        onSelectGuild: b
+        onSelectGuild: N
       }))
     }, {
       onCloseRequest: () => {
@@ -82,7 +82,7 @@ let x = function() {
     })
   }
   let _ = (0, u.aq)({
-    fractionalState: x
+    fractionalState: b
   });
   return (0, r.jsxs)("div", {
     className: g.wrapper,
@@ -102,7 +102,7 @@ let x = function() {
               disabled: n,
               color: s.zxk.Colors.LINK,
               look: s.zxk.Looks.LINK,
-              onClick: n ? void 0 : N,
+              onClick: n ? void 0 : x,
               children: e
             }, t);
           return n ? (0, r.jsx)(o.Z, {

@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => E
 }), n(47120);
@@ -17,9 +17,9 @@ var i = n(392711),
   g = n(131951),
   h = n(210887),
   f = n(962100),
-  x = n(65154),
-  b = n(388032),
-  N = n(910415),
+  b = n(65154),
+  N = n(388032),
+  x = n(910415),
   _ = n(802138);
 
 function E() {
@@ -27,26 +27,26 @@ function E() {
   let {
     analyticsLocations: i
   } = (0, d.ZP)(), E = (0, a.e7)([h.Z], () => h.Z.theme), {
-    canSetInputDevice: C,
-    canSetOutputDevice: j,
+    canSetInputDevice: j,
+    canSetOutputDevice: C,
     inputDeviceId: O,
     outputDeviceId: v
   } = (0, a.cj)([g.Z], () => ({
-    canSetInputDevice: g.Z.supports(x.AN.AUDIO_INPUT_DEVICE),
-    canSetOutputDevice: g.Z.supports(x.AN.AUDIO_OUTPUT_DEVICE),
+    canSetInputDevice: g.Z.supports(b.AN.AUDIO_INPUT_DEVICE),
+    canSetOutputDevice: g.Z.supports(b.AN.AUDIO_OUTPUT_DEVICE),
     inputDeviceId: g.Z.getInputDeviceId(),
     outputDeviceId: g.Z.getOutputDeviceId()
   })), S = (0, u.Z)(), T = (0, m.Z)();
-  C || (e = (0, r.jsx)(o.R94, {
+  j || (e = (0, r.jsx)(o.R94, {
     type: o.R94.Types.DESCRIPTION,
     className: _.marginTop8,
-    children: b.NW.format(b.t["1iK6UV"], {
+    children: N.NW.format(N.t["1iK6UV"], {
       onDownloadClick: () => (0, f.y)("Help Text Input Devices")
     })
-  })), j || (t = (0, r.jsx)(o.R94, {
+  })), C || (t = (0, r.jsx)(o.R94, {
     type: o.R94.Types.DESCRIPTION,
     className: _.marginTop8,
-    children: b.NW.format(b.t.Ow0dbG, {
+    children: N.NW.format(N.t.Ow0dbG, {
       onDownloadClick: () => (0, f.y)("Help Text Output Devices")
     })
   }));
@@ -65,13 +65,13 @@ function E() {
       t = (0, r.jsx)("img", {
         src: e,
         alt: "Certified",
-        className: N.deviceOptionCertified
+        className: x.deviceOptionCertified
       })
     }
     return (0, r.jsxs)("span", {
-      className: N.deviceOption,
+      className: x.deviceOption,
       children: [(0, r.jsx)("span", {
-        className: N.deviceOptionLabel,
+        className: x.deviceOptionLabel,
         children: p.Z.getCertifiedDeviceName(s, i)
       }), t]
     }, s)
@@ -81,11 +81,11 @@ function E() {
     return R(e[0])
   }
   return (0, r.jsxs)("div", {
-    className: N.devices,
+    className: x.devices,
     children: [(0, r.jsx)("div", {
-      className: N.column,
+      className: x.column,
       children: (0, r.jsxs)(o.xJW, {
-        title: b.NW.string(b.t.hHMYbW),
+        title: N.NW.string(N.t.hHMYbW),
         children: [(0, r.jsx)(o.q4e, {
           value: O,
           onChange: e => c.Z.setInputDevice(e, {
@@ -108,9 +108,9 @@ function E() {
         }), e]
       })
     }), (0, r.jsx)("div", {
-      className: N.column,
+      className: x.column,
       children: (0, r.jsxs)(o.xJW, {
-        title: b.NW.string(b.t.dl18zc),
+        title: N.NW.string(N.t.dl18zc),
         children: [(0, r.jsx)(o.q4e, {
           value: v,
           onChange: e => c.Z.setOutputDevice(e, {

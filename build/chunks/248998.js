@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => p
 }), n(266796);
@@ -27,13 +27,13 @@ function p(e) {
       hideDescriptionUntilUnlock: h,
       onAction: f
     } = i,
-    x = h && !a,
-    b = a ? "header-primary" : "text-muted",
-    N = a ? "header-secondary" : "text-muted",
+    b = h && !a,
+    N = a ? "header-primary" : "text-muted",
+    x = a ? "header-secondary" : "text-muted",
     _ = l()(n),
     E = null != f && a,
-    C = E ? o.P3F : "div";
-  return (0, r.jsxs)(C, {
+    j = E ? o.P3F : "div";
+  return (0, r.jsxs)(j, {
     className: s()(m.container, E && m.actionable),
     onClick: () => {
       E && f()
@@ -54,12 +54,12 @@ function p(e) {
         children: (0, c.Y4)(_)
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
-        color: b,
+        color: N,
         children: p()
       }), (0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
-        color: N,
-        children: x ? "?????" : g()
+        color: x,
+        children: b ? "?????" : g()
       })]
     })]
   })

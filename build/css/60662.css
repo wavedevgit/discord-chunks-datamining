@@ -1,0 +1,509 @@
+/**
+  Module ID: 60662
+  Original File Name: 7527c6a27e63b6fd
+**/
+.subscription_d970da {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    padding: 16px
+}
+
+.subscriptionInfo_d970da {
+    margin-left: 16px
+}
+
+.tierInfo_d970da {
+    display: flex;
+    align-items: center
+}
+
+.tierPill_d970da {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    padding: 4px 8px 4px 4px;
+    border-radius: 11px;
+    font-size: 12px;
+    line-height: 14px;
+    background-color: var(--background-secondary-alt)
+}
+
+.tierPill_d970da,.tierPillStar_d970da {
+    color: var(--text-normal)
+}
+
+.tierPillStar_d970da {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px
+}
+
+.guildIcon_d970da {
+    background-color: var(--background-primary)
+}
+
+.guildName_d970da {
+    flex: 1;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--header-primary)
+}
+
+.levelIcon_d970da {
+    width: 16px;
+    height: 16px;
+    margin: 0 4px
+}
+
+.levelDownIcon_d970da {
+    color: var(--status-danger)
+}
+
+.levelUpIcon_d970da {
+    color: var(--green-360)
+}
+
+.theme-light .boost_d970da {
+    background-color: var(--primary-230)
+}
+
+.theme-light .guildName_d970da {
+    color: var(--primary-500)
+}
+
+.tierPillGem_d970da {
+    color: var(--header-muted)
+}
+
+.content__2cbe8 {
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column
+}
+
+.guildCard__2cbe8 {
+    margin: 16px 0
+}
+
+.image__2cbe8 {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    align-self: center;
+    margin: 20px 0;
+    flex-shrink: 0
+}
+
+.transferGuildCardHeader__2cbe8 {
+    text-transform: uppercase;
+    margin-top: 16px
+}
+
+.activeTransferGuildCardBorder__2cbe8 {
+    background: linear-gradient(270deg,var(--guild-boosting-purple),var(--guild-boosting-blue));
+    padding: 2px
+}
+
+.activeTransferGuildCardBorder__2cbe8,.transferFromGuildCard__2cbe8 {
+    margin-top: 8px;
+    border-radius: 8px
+}
+
+.transferToGuildCard__2cbe8 {
+    border-radius: 8px
+}
+
+.error__2cbe8 {
+    margin: 16px
+}
+
+.pendingCancellation__2cbe8 {
+    margin-top: 16px;
+    padding: 8px 16px;
+    background: var(--info-warning-background);
+    display: flex;
+    border-radius: 4px;
+    border: 1px solid var(--info-warning-foreground);
+    align-items: center
+}
+
+.pendingCancellationIcon__2cbe8 {
+    color: var(--text-warning);
+    flex-shrink: 0
+}
+
+.pendingCancellationMessage__2cbe8 {
+    color: var(--text-normal);
+    margin-left: 10px
+}
+
+.modal__39466 {
+    overflow: hidden
+}
+
+.modalCloseButton__39466 {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    opacity: .8
+}
+
+.modalCloseButton__39466:hover {
+    opacity: 1
+}
+
+.modalContent__39466 {
+    padding: 8px 0
+}
+
+.selectHeaderContainer__39466 {
+    z-index: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.selectHeader__39466 {
+    margin-bottom: 16px
+}
+
+.selectSearch__39466 {
+    width: 100%
+}
+
+.selectGuild__39466 {
+    display: flex;
+    align-items: center;
+    padding: 8px 6px;
+    margin: 0 0 0 8px;
+    cursor: pointer;
+    border-radius: 4px
+}
+
+.selectGuild__39466:hover {
+    background-color: var(--background-secondary-alt)
+}
+
+.selectGuildIcon__39466 {
+    flex: 0 0 auto
+}
+
+.selectGuildName__39466 {
+    flex: 0 1 auto;
+    margin-left: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.selectGuildLevel__39466 {
+    flex: 0 0 auto;
+    margin-left: 6px
+}
+
+.selectGuildCopy__39466 {
+    align-items: baseline;
+    display: flex;
+    flex: 1 1 auto;
+    overflow: hidden
+}
+
+.selectGuildPseudoCta__39466 {
+    background: var(--brand-500);
+    flex: 0 0 auto;
+    margin-left: 6px;
+    padding: 6px 16px;
+    border-radius: 4px
+}
+
+.emptyStateWrapper__39466 {
+    padding: 8px 16px;
+    text-align: center
+}
+
+.emptyStateWrapper__39466 p {
+    margin: 0
+}
+
+.emptyStateWrapper__39466 a:hover {
+    -webkit-text-decoration: underline;
+    text-decoration: underline
+}
+
+.upsellFooter__5e07c {
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    color: var(--text-normal);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 16px;
+    padding: 8px
+}
+
+.upsellFooterIcon__5e07c {
+    flex-shrink: 0;
+    margin-right: 8px;
+    height: 24px;
+    width: 24px
+}
+
+.reverseTrialUpsellContainer__5e07c {
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0 0 40px 0 rgba(229,85,211,.5)
+}
+
+.unlockIcon__5e07c {
+    height: 46px;
+    width: 46px;
+    pointer-events: none;
+    position: absolute;
+    left: 7px;
+    top: -14px
+}
+
+.upsellText__5e07c {
+    padding-left: 48px
+}
+
+.bodyText__945b8 {
+    color: var(--text-normal);
+    font-size: 16px;
+    line-height: 20px
+}
+
+.planSelectText__945b8 {
+    margin-bottom: 16px
+}
+
+.planSelectRow__945b8 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 8px auto
+}
+
+.planSelectRowALaCarte__945b8 {
+    justify-content: flex-start
+}
+
+.planSelectorWrapper__945b8 {
+    align-items: center;
+    display: flex
+}
+
+.planSelectorHeader__945b8 {
+    font-weight: 600;
+    margin-bottom: 8px
+}
+
+.planSelectorRadioBarALaCarte__945b8 {
+    align-items: flex-start
+}
+
+.planSelectorRadioIconALaCarte__945b8 {
+    margin-top: 4px
+}
+
+.planSelectorPlanName__945b8 {
+    margin-right: 4px
+}
+
+.planSelectorLabel__945b8 {
+    color: var(--text-normal);
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 16px
+}
+
+.planSelectorPreviewPrice__945b8 {
+    color: var(--interactive-normal);
+    font-size: 16px;
+    line-height: 20px
+}
+
+.planSelectDivider__945b8 {
+    background-color: var(--background-modifier-accent);
+    height: 1px;
+    margin: 16px 0
+}
+
+.planSelectorSubtotal__945b8 {
+    color: var(--interactive-active);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px
+}
+
+.invoiceTableBottom__945b8,.paymentSourceWrapper__945b8 {
+    margin: 16px 0
+}
+
+.taxInclusiveNote__945b8 {
+    margin-top: 12px
+}
+
+.confirmationContainer__945b8 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 56px 32px 64px
+}
+
+.confirmationAnimation__945b8 {
+    width: 400px;
+    height: 140px;
+    margin-bottom: 32px
+}
+
+.confirmationText__945b8,.confirmationUpgradedBanner__945b8 {
+    margin-bottom: 16px
+}
+
+.confirmationText__945b8 {
+    color: var(--interactive-normal);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center
+}
+
+.confirmationText__945b8 p {
+    margin: 0
+}
+
+.confirmationText__945b8 p+p {
+    margin-top: 8px
+}
+
+.existingSlotNotice__945b8 {
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    color: var(--text-normal);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 16px;
+    padding: 8px;
+    margin-bottom: 16px
+}
+
+.existingSlotIcon__945b8 {
+    flex-shrink: 0;
+    margin-right: 8px;
+    height: 24px;
+    width: 24px
+}
+
+.existingSlotTooltipWarningIcon__945b8 {
+    height: 16px;
+    width: 14px;
+    vertical-align: text-bottom;
+    margin-left: 6px;
+    cursor: pointer
+}
+
+.loadingSpinner__945b8 {
+    flex: 1;
+    max-width: 100px
+}
+
+.reverseTrialContextInfoDivider__945b8 {
+    background-color: var(--background-modifier-accent);
+    height: 1px
+}
+
+.reverseTrialContextText__945b8 {
+    margin: 12px 0
+}
+
+.reverseTrialContextMarginBottom__945b8 {
+    margin-bottom: 8px
+}
+
+.modal__0f8ce {
+    overflow: hidden
+}
+
+.selectContent__0f8ce {
+    padding: 8px 0
+}
+
+.confirmImage__0f8ce {
+    width: 264px;
+    height: 134px
+}
+
+.transferConfirmImage__0f8ce {
+    width: 216px;
+    height: 128px
+}
+
+.successBody__0f8ce {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px
+}
+
+.successAnimation__0f8ce {
+    width: 300px;
+    height: 200px
+}
+
+.quantitySelectorBody__0f8ce {
+    margin-top: 20px
+}
+
+.quantitySelectorDescription__0f8ce,.quantitySelectorHeader__0f8ce {
+    margin-bottom: 16px
+}
+
+.quantitySelectorWrapper__0f8ce {
+    align-items: center;
+    display: flex;
+    margin: 32px auto
+}
+
+.quantitySelectorLabel__0f8ce {
+    line-height: 20px;
+    margin-left: 16px
+}
+
+.modalCloseButton__0f8ce {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    opacity: .8
+}
+
+.modalCloseButton__0f8ce:hover {
+    opacity: 1
+}
+
+.images-light .confirmImage__0f8ce {
+    background-image: url(/assets/52c92d8492ebe041.svg)
+}
+
+.images-light .transferConfirmImage__0f8ce {
+    background-image: url(/assets/2d416896e0bbb412.svg)
+}
+
+.images-dark .confirmImage__0f8ce {
+    background-image: url(/assets/52c92d8492ebe041.svg)
+}
+
+.images-dark .transferConfirmImage__0f8ce {
+    background-image: url(/assets/c278e895ac47b4af.svg)
+}
+
+.tierPill__0f8ce {
+    background-color: var(--background-secondary-alt);
+    color: var(--text-normal)
+}

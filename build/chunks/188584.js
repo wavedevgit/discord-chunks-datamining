@@ -1,16 +1,16 @@
 /** Chunk was on 2026 **/
 n.d(t, {
-  k: () => a
+  k: () => i
 });
 var r = n(192379),
-  i = n(328456);
-let a = e => {
+  a = n(328456);
+let i = e => {
   let {
     firstProfileEffect: t,
     firstAvatarDecoration: n
   } = r.useMemo(() => {
     var t;
-    return new i.b(null !== (t = e.bundledProducts) && void 0 !== t ? t : [])
+    return new a.b(null !== (t = e.bundledProducts) && void 0 !== t ? t : [])
   }, [e]);
   return {
     firstProfileEffect: t,

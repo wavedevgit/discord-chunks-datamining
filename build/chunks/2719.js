@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => X
 }), n(47120);
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(279837),
   h = n(952306),
   f = n(299206),
-  x = n(295474),
-  b = n(144114),
-  N = n(918505),
+  b = n(295474),
+  N = n(144114),
+  x = n(918505),
   _ = n(332473),
   E = n(921801),
-  C = n(485341),
-  j = n(687158),
+  j = n(485341),
+  C = n(687158),
   O = n(518950),
   v = n(184325),
   S = n(867176),
@@ -78,13 +78,13 @@ function G(e) {
   let {
     className: l,
     user: o
-  } = e, c = i.useRef(null), m = (0, N.o9)(), p = (0, _.b)(), g = (0, x.gS)(), h = null !== (s = null == g ? void 0 : null === (t = g.nick) || void 0 === t ? void 0 : t[0]) && void 0 !== s ? s : null, [f, b] = i.useState(!1);
+  } = e, c = i.useRef(null), m = (0, x.o9)(), p = (0, _.b)(), g = (0, b.gS)(), h = null !== (s = null == g ? void 0 : null === (t = g.nick) || void 0 === t ? void 0 : t[0]) && void 0 !== s ? s : null, [f, N] = i.useState(!1);
   i.useEffect(() => {
-    b(null != c.current && c.current.scrollWidth > c.current.clientWidth)
+    N(null != c.current && c.current.scrollWidth > c.current.clientWidth)
   }, [o.username]);
   let E = !o.isClaimed(),
-    C = m && !o.isPomelo() && !o.hasVerifiedEmailOrPhone() || E,
-    j = C ? L.NW.string(L.t["7Ngnys"]) : void 0;
+    j = m && !o.isPomelo() && !o.hasVerifiedEmailOrPhone() || E,
+    C = j ? L.NW.string(L.t["7Ngnys"]) : void 0;
   return (0, r.jsxs)("div", {
     className: a()(B.field, l),
     children: [(0, r.jsx)("div", {
@@ -136,9 +136,9 @@ function G(e) {
         }))
       })
     }), (0, r.jsx)(u.ua7, {
-      text: j,
+      text: C,
       children: e => (0, r.jsx)(u.zxk, U(M({}, e), {
-        disabled: C,
+        disabled: j,
         size: u.zxk.Sizes.SMALL,
         className: B.fieldButton,
         color: u.zxk.Colors.PRIMARY,
@@ -169,7 +169,7 @@ function F(e) {
   let {
     user: s,
     className: l
-  } = e, o = (0, x.gS)(), c = null !== (n = null == o ? void 0 : null === (t = o.nick) || void 0 === t ? void 0 : t[0]) && void 0 !== n ? n : null, m = A.ZP.getGlobalName(s), p = i.useRef(null), [g, h] = i.useState(!1);
+  } = e, o = (0, b.gS)(), c = null !== (n = null == o ? void 0 : null === (t = o.nick) || void 0 === t ? void 0 : t[0]) && void 0 !== n ? n : null, m = A.ZP.getGlobalName(s), p = i.useRef(null), [g, h] = i.useState(!1);
   return i.useEffect(() => {
     h(null != p.current && p.current.scrollWidth > p.current.clientWidth)
   }, [m]), (0, r.jsxs)("div", {
@@ -355,7 +355,7 @@ function Y(e) {
             title: L.NW.string(L.t["3CTiKi"]),
             children: s.hasFlag(w.xW$.MFA_SMS) ? L.NW.string(L.t.jrhJys) : void 0,
             actionText: L.NW.string(L.t.N86XcH),
-            handleSubmit: e => b.Z.removePhone(e, b.L.USER_SETTINGS_UPDATE)
+            handleSubmit: e => N.Z.removePhone(e, N.L.USER_SETTINGS_UPDATE)
           })))
         },
         children: L.NW.string(L.t.N86XcH)
@@ -370,7 +370,7 @@ function Y(e) {
               default: e
             } = await Promise.resolve().then(n.bind(n, 607018));
             return t => (0, r.jsx)(e, M({
-              reason: b.L.USER_SETTINGS_UPDATE
+              reason: N.L.USER_SETTINGS_UPDATE
             }, t))
           }, {
             modalKey: k.M
@@ -424,8 +424,8 @@ function X() {
       let e = I.default.getCurrentUser();
       return o()(null != e, "UserSettingsAccountProfileCard: currentUser cannot be undefined"), e
     }),
-    n = (0, j.ZP)(t.id),
-    i = (0, C.Z)(n),
+    n = (0, C.ZP)(t.id),
+    i = (0, j.Z)(n),
     s = R.co.useSetting(),
     a = (0, c.e7)([T.Z], () => T.Z.getErrors()),
     l = null == a ? void 0 : null === (e = a.avatar) || void 0 === e ? void 0 : e[0],

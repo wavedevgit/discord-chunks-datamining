@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => P
 }), n(47120);
@@ -16,13 +16,13 @@ var r = n(200651),
   g = n(208049),
   h = n(763296),
   f = n(242291),
-  x = n(893663),
-  b = n(331642),
-  N = n(63063),
+  b = n(893663),
+  N = n(331642),
+  x = n(63063),
   _ = n(581883),
   E = n(738486),
-  C = n(918257),
-  j = n(970813),
+  j = n(918257),
+  C = n(970813),
   O = n(726985),
   v = n(981631),
   S = n(710111),
@@ -47,9 +47,9 @@ function P(e) {
   } = e, n = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(p.F, {
       setting: O.s6.VOICE_AND_VIDEO_SOUNDBOARD,
-      children: [(0, r.jsx)(C.Z, {
+      children: [(0, r.jsx)(j.Z, {
         refreshStyles: t
-      }), (0, r.jsx)(j.Z, {
+      }), (0, r.jsx)(C.Z, {
         refreshStyles: t
       })]
     }), (0, r.jsxs)(p.F, {
@@ -75,12 +75,12 @@ function R(e) {
     refreshStyles: t
   } = e, {
     analyticsLocations: n
-  } = (0, d.ZP)(), [s, c] = i.useState(S.hY), p = (0, x.tT)(s), _ = A(p), C = (null == p ? void 0 : p.type) === x.zx.GLOBAL, j = (0, l.e7)([h.Z], () => h.Z.hasFetchedAllSounds()) && null != p && null == _;
+  } = (0, d.ZP)(), [s, c] = i.useState(S.hY), p = (0, b.tT)(s), _ = A(p), j = (null == p ? void 0 : p.type) === b.zx.GLOBAL, C = (0, l.e7)([h.Z], () => h.Z.hasFetchedAllSounds()) && null != p && null == _;
   i.useEffect(() => {
-    j && (0, f.tt)({
+    C && (0, f.tt)({
       location: n
     })
-  }, [j, n]), i.useEffect(() => {
+  }, [C, n]), i.useEffect(() => {
     (0, g.w)()
   }, []);
   let O = i.useCallback((e, t) => {
@@ -96,7 +96,7 @@ function R(e) {
         title: T.NW.string(T.t.nzUc3N),
         children: (0, r.jsx)(o.R94, {
           children: T.NW.format(T.t.u9RWmp, {
-            helpdeskArticle: N.Z.getArticleURL(v.BhN.SOUNDBOARD)
+            helpdeskArticle: x.Z.getArticleURL(v.BhN.SOUNDBOARD)
           })
         })
       }), (0, r.jsx)(u.Z, {
@@ -125,13 +125,13 @@ function R(e) {
           })
         }),
         forcedDivider: !t,
-        children: [(0, r.jsx)(b.Z, {
+        children: [(0, r.jsx)(N.Z, {
           sound: _,
-          isGlobal: C,
+          isGlobal: j,
           onSelect: e => {
             null == e ? (0, f.aC)(s, n) : (0, f.SZ)(s, e, n)
           }
-        }), j && (0, r.jsx)(o.Wn, {
+        }), C && (0, r.jsx)(o.Wn, {
           className: I.notice,
           messageType: o.QYI.WARNING,
           children: T.NW.string(T.t.WkPsFR)

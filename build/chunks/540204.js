@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => f
 }), n(733860);
@@ -25,12 +25,12 @@ function f() {
     setSelectedGuildId: t
   } = (0, u.xu)(), n = (0, s.e7)([c.ZP], () => c.ZP.getFlattenedGuildIds()), p = (0, s.e7)([o.Z], () => o.Z.getGuilds()), {
     hideGuildOptions: f,
-    hideGlobalOption: x
-  } = (0, m.b)(), b = n[0];
+    hideGlobalOption: b
+  } = (0, m.b)(), N = n[0];
   i.useEffect(() => {
-    (!x || !f) && (e === u.Th && e !== b && x && t(b), e !== u.Th && f && t(u.Th))
-  }, [e, t, x, f, b]);
-  let N = i.useMemo(() => {
+    (!b || !f) && (e === u.Th && e !== N && b && t(N), e !== u.Th && f && t(u.Th))
+  }, [e, t, b, f, N]);
+  let x = i.useMemo(() => {
       let e = f ? [] : n.map(e => {
         let t = p[e];
         return null == t ? null : {
@@ -38,7 +38,7 @@ function f() {
           value: t.id
         }
       }).filter(d.lm);
-      if (!x) {
+      if (!b) {
         var t, r;
         e.unshift((t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -71,7 +71,7 @@ function f() {
         }), t))
       }
       return e
-    }, [f, n, x, p]),
+    }, [f, n, b, p]),
     _ = i.useCallback(e => {
       let t = (null == e ? void 0 : e.label) === h.label() && (null == e ? void 0 : e.value) === h.value;
       return null == e || "" === e.value || t ? (0, r.jsx)("div", {
@@ -95,7 +95,7 @@ function f() {
       t(e)
     },
     value: e,
-    options: N,
+    options: x,
     renderOptionPrefix: _
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => u
 }), n(47120);
@@ -26,24 +26,24 @@ let u = e => {
   }, []), i.useEffect(() => {
     p(e => f > g && e > f - g ? f - g : f <= g ? 0 : e)
   }, [f, g]);
-  let x = m > 0,
-    b = i.useCallback(e => ({
+  let b = m > 0,
+    N = i.useCallback(e => ({
       x: (e - m) * 100
     }), [m]),
-    [N, _] = (0, o.bYB)(t.length, b);
+    [x, _] = (0, o.bYB)(t.length, N);
   return i.useEffect(() => {
-    _(b)
-  }, [_, b]), (0, r.jsx)("div", {
+    _(N)
+  }, [_, N]), (0, r.jsx)("div", {
     className: n,
     children: (0, r.jsxs)("div", {
       className: d.cardContainer,
       children: [f > g && (0, r.jsx)(o.P3F, {
-        onClick: x ? () => {
+        onClick: b ? () => {
           p(e => 0 === e ? f - g : e - 1)
         } : void 0,
         className: a()({
-          [d.leftArrow]: x,
-          [d.inactiveArrow]: !x
+          [d.leftArrow]: b,
+          [d.inactiveArrow]: !b
         }),
         children: (0, r.jsx)(o.whL, {
           className: d.arrowIcon,
@@ -51,7 +51,7 @@ let u = e => {
         })
       }), (0, r.jsx)("div", {
         className: d.cardInnerContainer,
-        children: N.map((e, n) => {
+        children: x.map((e, n) => {
           var i, a;
           let {
             x: o

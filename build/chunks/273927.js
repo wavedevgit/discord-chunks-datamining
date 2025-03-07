@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   GF: () => O,
   ZP: () => S,
@@ -18,9 +18,9 @@ var r = n(200651),
   g = n(63063),
   h = n(838436),
   f = n(526761),
-  x = n(726985),
-  b = n(981631),
-  N = n(388032),
+  b = n(726985),
+  N = n(981631),
+  x = n(388032),
   _ = n(460722);
 
 function E(e) {
@@ -38,13 +38,13 @@ function E(e) {
       children: [(0, r.jsx)(o.Text, {
         variant: "text-md/semibold",
         color: "interactive-active",
-        children: N.NW.string(i ? N.t.PFOUKS : N.t["93ZDWF"])
+        children: x.NW.string(i ? x.t.PFOUKS : x.t["93ZDWF"])
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "header-secondary",
-        children: i ? N.NW.format(N.t["r91W/v"], {
+        children: i ? x.NW.format(x.t["r91W/v"], {
           numberOfBlockedUsers: n
-        }) : N.NW.format(N.t.rXUeOj, {
+        }) : x.NW.format(x.t.rXUeOj, {
           numberOfIgnoredUsers: n
         })
       })]
@@ -52,16 +52,16 @@ function E(e) {
   })
 }
 
-function C(e) {
+function j(e) {
   var t;
   let {
     userId: n,
     last: s
-  } = e, g = (0, l.e7)([m.Z], () => m.Z.isBlocked(n)), h = (0, l.e7)([p.default], () => p.default.getUser(n)), [f, x] = i.useState(!1), b = i.useCallback(() => {
-    x(!0), g ? c.Z.unblockUser(n).catch(() => {
-      x(!1)
+  } = e, g = (0, l.e7)([m.Z], () => m.Z.isBlocked(n)), h = (0, l.e7)([p.default], () => p.default.getUser(n)), [f, b] = i.useState(!1), N = i.useCallback(() => {
+    b(!0), g ? c.Z.unblockUser(n).catch(() => {
+      b(!1)
     }) : c.Z.unignoreUser(n, u.Z.USER_SETTINGS).catch(() => {
-      x(!1)
+      b(!1)
     })
   }, [g, n]);
   return null == h ? null : (0, r.jsxs)("div", {
@@ -87,14 +87,14 @@ function C(e) {
       })]
     }), (0, r.jsx)(o.zxk, {
       color: o.Ttl.PRIMARY,
-      onClick: b,
+      onClick: N,
       submitting: f,
-      children: N.NW.string(g ? N.t.XyHpKC : N.t["8wXU9P"])
+      children: x.NW.string(g ? x.t.XyHpKC : x.t["8wXU9P"])
     })]
   })
 }
 
-function j(e) {
+function C(e) {
   let {
     setting: t,
     userIds: n,
@@ -109,7 +109,7 @@ function j(e) {
         numberOfUsers: n.length
       }), (0, r.jsx)("div", {
         className: _.usersList,
-        children: n.slice(0, a).map((e, t) => (0, r.jsx)(C, {
+        children: n.slice(0, a).map((e, t) => (0, r.jsx)(j, {
           userId: e,
           last: t === n.length - 1
         }, e))
@@ -123,7 +123,7 @@ function j(e) {
           children: (0, r.jsx)(o.Text, {
             variant: "text-sm/semibold",
             color: "text-normal",
-            children: N.NW.format(N.t.jULEDg, {
+            children: x.NW.format(x.t.jULEDg, {
               numberOfUsers: a + 5 < n.length ? 5 : n.length - a
             })
           })
@@ -135,8 +135,8 @@ function j(e) {
 
 function O() {
   let e = (0, l.Wu)([m.Z], () => m.Z.getBlockedIDs());
-  return (0, r.jsx)(j, {
-    setting: x.s6.BLOCKED_USERS,
+  return (0, r.jsx)(C, {
+    setting: b.s6.BLOCKED_USERS,
     userIds: e,
     listType: "blocked"
   })
@@ -144,8 +144,8 @@ function O() {
 
 function v() {
   let e = (0, l.Wu)([m.Z], () => m.Z.getIgnoredIDs());
-  return (0, r.jsx)(j, {
-    setting: x.s6.IGNORED_USERS,
+  return (0, r.jsx)(C, {
+    setting: b.s6.IGNORED_USERS,
     userIds: e,
     listType: "ignored"
   })
@@ -153,13 +153,13 @@ function v() {
 
 function S() {
   return (0, r.jsxs)(h.U, {
-    setting: x.s6.RESTRICTED_USERS,
+    setting: b.s6.RESTRICTED_USERS,
     scrollPosition: f.FY.RESTRICTED_ACCOUNTS,
     scrollHighlightDelay: 900,
     children: [(0, r.jsx)(h.H, {
-      header: N.NW.string(N.t["3wRorq"]),
-      description: N.NW.format(N.t["0aNQo6"], {
-        helpArticle: g.Z.getArticleURL(b.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
+      header: x.NW.string(x.t["3wRorq"]),
+      description: x.NW.format(x.t["0aNQo6"], {
+        helpArticle: g.Z.getArticleURL(N.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
       })
     }), (0, r.jsx)(O, {}), (0, r.jsx)(v, {})]
   })

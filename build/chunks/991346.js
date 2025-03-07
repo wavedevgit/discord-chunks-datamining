@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Gj: () => V,
   Pt: () => U,
@@ -20,13 +20,13 @@ var r = n(192379),
   g = n(610697),
   h = n(880257),
   f = n(631885),
-  x = n(223639),
-  b = n(160913),
-  N = n(725727),
+  b = n(223639),
+  N = n(160913),
+  x = n(725727),
   _ = n(977156),
   E = n(922611),
-  C = n(921157),
-  j = n(667172),
+  j = n(921157),
+  C = n(667172),
   O = n(237292),
   v = n(314897),
   S = n(283595),
@@ -78,8 +78,8 @@ function M(e) {
 
 function U() {
   var e, t, n, a;
-  let P = (0, N.YO)().length,
-    k = (0, b.U)(),
+  let P = (0, x.YO)().length,
+    k = (0, N.U)(),
     W = (0, i.e7)([I.Z], () => I.Z.getProps().impressionSource),
     B = (0, f.gU)(),
     M = (0, w.bC)(),
@@ -101,13 +101,13 @@ function U() {
     location: "settings"
   }), z = null !== (n = null === (e = y.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff()) && void 0 !== n && n, Y = (0, O.y0)({
     location: "settings"
-  }), K = (0, j.v4)({
+  }), K = (0, C.v4)({
     location: "settings"
   }), q = (0, o.Q)(), X = (0, _.Zy)({
     location: L.dr.USER_SETTINGS_SEARCH_GIFT_INVENTORY
   }), {
     enabled: J
-  } = x.Z.useExperiment({
+  } = b.Z.useExperiment({
     location: "UserSettingsInventory"
   }, {
     autoTrackExposure: !0
@@ -115,7 +115,7 @@ function U() {
     hypeSquadRemoved: en
   } = m.Z.useExperiment({
     location: "settings"
-  }), er = null === (a = (0, h.Z)()) || void 0 === a || a, ei = (null === (t = (0, C.s)()) || void 0 === t ? void 0 : t.length) > 0, es = (0, E.D)({
+  }), er = null === (a = (0, h.Z)()) || void 0 === a || a, ei = (null === (t = (0, j.s)()) || void 0 === t ? void 0 : t.length) > 0, es = (0, E.D)({
     location: "settings_renderer_utils"
   }), {
     hasBlockedUsers: ea,

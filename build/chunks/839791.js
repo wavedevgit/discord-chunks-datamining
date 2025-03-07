@@ -1,4 +1,4 @@
-/** Chunk was on 51724 **/
+/** Chunk was on 1815 **/
 e.exports = {
   bannerContainer: "bannerContainer_f01cc3",
   bannerBodyContainer: "bannerBodyContainer_f01cc3",
