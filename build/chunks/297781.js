@@ -229,7 +229,7 @@ function G(e) {
   } = L(), s = (0, E.Jg)(t) && (0, p.Hi)(a, [0, 4]), l = s ? f.TVs.colors.TEXT_POSITIVE : o, c = s ? "text-positive" : i;
   return (0, r.jsxs)("div", {
     className: I.badgeContainer,
-    children: [(0, r.jsx)(f.aXf, {
+    children: [(0, r.jsx)(f.RZG, {
       size: "xxs",
       color: l
     }), (0, r.jsx)(b.ZP, {

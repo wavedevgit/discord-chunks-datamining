@@ -32,7 +32,7 @@ function d(e) {
     type: u.IIU.PLAYING
   }, () => o.iWm).with({
     type: u.IIU.LISTENING
-  }, () => o.aXf).with({
+  }, () => o.RZG).with({
     type: u.IIU.WATCHING
   }, () => o.ARS).with({
     type: u.IIU.STREAMING
