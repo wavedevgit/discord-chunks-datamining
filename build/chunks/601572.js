@@ -1,4 +1,4 @@
-/** Chunk was on 45588 **/
+/** Chunk was on 38791 **/
 n.d(t, {
   default: () => k
 }), n(47120);
@@ -8,8 +8,8 @@ var o = n(200651),
   r = n(846027),
   c = n(410575),
   l = n(2052),
-  d = n(100527),
-  s = n(906732),
+  s = n(100527),
+  d = n(906732),
   _ = n(600164),
   u = n(313201),
   b = n(695346),
@@ -33,7 +33,7 @@ function k(e) {
     onClose: N
   } = e, x = h.Z.getCameraComponent(), w = (0, u.Dt)(), E = (0, m.Z)(), A = b.qF.useSetting(), [P, y] = a.useState((0, f.P)(v.default.getCurrentUser())), L = (0, l.O)(), {
     analyticsLocations: B
-  } = (0, s.ZP)(d.Z.CAMERA_PREVIEW), R = a.useRef(null);
+  } = (0, d.ZP)(s.Z.CAMERA_PREVIEW), R = a.useRef(null);
   a.useEffect(() => {
     I.default.track(T.rMx.OPEN_MODAL, {
       type: "Camera Preview Modal"
@@ -71,7 +71,7 @@ function k(e) {
     } catch (e) {}
     await N(), (0, p.Up)(P)
   };
-  return (0, o.jsx)(s.Gt, {
+  return (0, o.jsx)(d.Gt, {
     value: B,
     children: (0, o.jsx)(c.Z, {
       page: T.ZY5.PREVIEW_CAMERA_MODAL,

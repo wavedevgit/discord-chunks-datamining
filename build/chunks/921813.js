@@ -53,10 +53,11 @@ function C(e) {
     hideMessageInput: G = !0,
     hideExampleButton: B = !1,
     pendingBadges: V,
-    shouldOpenBadgeTooltip: F
-  } = e, Z = (0, f.ZP)(t.id, null == n ? void 0 : n.id), {
-    avatarSrc: H,
-    avatarDecorationSrc: W
+    shouldOpenBadgeTooltip: F,
+    showNameplatePreview: Z = !1
+  } = e, H = (0, f.ZP)(t.id, null == n ? void 0 : n.id), {
+    avatarSrc: W,
+    avatarDecorationSrc: Y
   } = (0, p.Z)({
     user: t,
     guildId: null == n ? void 0 : n.id,
@@ -64,23 +65,23 @@ function C(e) {
     avatarOverride: E,
     size: l.EFr.SIZE_80,
     showPending: !0
-  }), Y = (0, v.ZT)({
+  }), K = (0, v.ZT)({
     pendingProfileEffectId: D,
-    displayProfile: Z
+    displayProfile: H
   }), {
-    theme: K,
-    primaryColor: z
+    theme: z,
+    primaryColor: q
   } = (0, _.Z)({
     user: t,
-    displayProfile: Z,
+    displayProfile: H,
     pendingThemeColors: w,
     isPreview: i
-  }), q = (0, u.H)("ProfileCustomizationPreview");
+  }), Q = (0, u.H)("ProfileCustomizationPreview");
   return (0, r.jsxs)("div", {
     className: A.column,
     children: [(0, r.jsxs)(h.Z, {
       user: t,
-      displayProfile: Z,
+      displayProfile: H,
       profileType: T.y0.BITE_SIZE,
       pendingThemeColors: w,
       className: a()(A.container, x),
@@ -89,7 +90,7 @@ function C(e) {
         className: A.header,
         children: [(0, r.jsx)(y.Z, {
           user: t,
-          displayProfile: Z,
+          displayProfile: H,
           guildId: null == n ? void 0 : n.id,
           canUsePremiumCustomization: i,
           pendingBanner: s,
@@ -101,12 +102,12 @@ function C(e) {
         }), (0, r.jsx)(b.Z, {
           user: t,
           guild: n,
-          displayProfile: Z,
+          displayProfile: H,
           canUsePremiumCustomization: i,
-          previewAvatar: H,
-          previewAvatarDecoration: W,
-          previewTheme: K,
-          previewPrimaryColor: z,
+          previewAvatar: W,
+          previewAvatarDecoration: Y,
+          previewTheme: z,
+          previewPrimaryColor: q,
           className: L,
           disabledInputs: k,
           isTryItOutFlow: M,
@@ -120,7 +121,7 @@ function C(e) {
         })]
       }), (0, r.jsx)(O.Z, {
         user: t,
-        displayProfile: Z,
+        displayProfile: H,
         guild: n,
         pendingAvatar: E,
         pendingNickname: C,
@@ -135,10 +136,10 @@ function C(e) {
         user: t,
         hideMessageInput: G,
         hideExampleButton: B
-      }), null != Y && (0, r.jsx)(d.Z, {
-        profileEffectId: Y
+      }), null != K && (0, r.jsx)(d.Z, {
+        profileEffectId: K
       })]
-    }), q && (0, r.jsx)(R, {})]
+    }), Q && Z && (0, r.jsx)(R, {})]
   })
 }
 

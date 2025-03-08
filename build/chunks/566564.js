@@ -12,16 +12,16 @@ var r = n(200651),
   d = n(481060),
   c = n(594174),
   u = n(960048),
-  m = n(744112),
-  g = n(223143),
-  h = n(364111),
-  f = n(752053),
+  g = n(744112),
+  h = n(223143),
+  f = n(364111),
+  m = n(752053),
   p = n(81136),
   b = n(953655),
   C = n(548685),
   _ = n(580914),
-  v = n(384067),
-  x = n(215023),
+  x = n(384067),
+  v = n(215023),
   k = n(388032),
   j = n(39532);
 let S = e => {
@@ -36,20 +36,20 @@ let S = e => {
     } = (0, p.Z)(), {
       isFetchingShopHome: c,
       fetchShopHomeError: u,
-      shopBlocks: m,
-      refreshShopHome: g
-    } = (0, h.E)(s, {
+      shopBlocks: g,
+      refreshShopHome: h
+    } = (0, f.E)(s, {
       noCache: i,
       includeUnpublished: d,
       includeBundles: !0
-    }), x = l.useCallback(() => {
-      g()
-    }, [g]);
-    return null != u ? (0, r.jsx)(f.Z, {
-      onRetry: x,
-      errorOrigin: f.i.SHOP_PAGE,
+    }), v = l.useCallback(() => {
+      h()
+    }, [h]);
+    return null != u ? (0, r.jsx)(m.Z, {
+      onRetry: v,
+      errorOrigin: m.i.SHOP_PAGE,
       errorMessage: u.message
-    }) : c || 0 === m.length ? (0, r.jsxs)(r.Fragment, {
+    }) : c || 0 === g.length ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(_.Z, {
         isLoading: c,
         handleTransition: t,
@@ -66,7 +66,7 @@ let S = e => {
         tab: s
       })]
     }) : (0, r.jsx)(r.Fragment, {
-      children: m.map((e, l) => {
+      children: g.map((e, l) => {
         if (null == e) return null;
         switch (e.type) {
           case o.z.HERO:
@@ -91,7 +91,7 @@ let S = e => {
               tab: s
             }, l);
           case o.z.WIDE_BANNER:
-            return (0, r.jsx)(v.Z, {
+            return (0, r.jsx)(x.Z, {
               handleTransition: t,
               wideBannerBlock: e,
               tab: s
@@ -108,36 +108,36 @@ let S = e => {
       isFullScreen: n,
       handleTransition: a,
       numVisibleItems: o,
-      tab: h
+      tab: f
     } = e, {
       isFetchingCategories: b,
       fetchCategoriesError: C,
       fetchPurchasesError: _,
-      claimError: v,
+      claimError: x,
       refreshCategories: y
-    } = (0, g.ZP)({
+    } = (0, h.ZP)({
       location: "CollectiblesFeedShop"
-    }), O = null !== (t = null != C ? C : _) && void 0 !== t ? t : v, B = (0, i.e7)([c.default], () => c.default.getCurrentUser()), E = (0, m.b)("Collectibles Shop Button"), {
+    }), O = null !== (t = null != C ? C : _) && void 0 !== t ? t : x, E = (0, i.e7)([c.default], () => c.default.getCurrentUser()), B = (0, g.b)("Collectibles Shop Button"), {
       noCache: T,
       includeUnpublished: I
-    } = (0, p.Z)(), N = l.useCallback(() => {
+    } = (0, p.Z)(), L = l.useCallback(() => {
       y()
     }, [y]);
-    if (null == B) return null;
+    if (null == E) return null;
     if (null != O) {
       let e = [];
       null != C ? e.push("shop load fetch categories error: ".concat(O.message)) : null != _ ? e.push("shop load fetch purchase error: ".concat(O.message)) : e.push("shop load claim error: ".concat(O.message)), u.Z.captureMessage(e.join("\n"), {
         tags: {
-          isStaff: B.isStaff().toString(),
-          preloadEnabled: E.toString(),
+          isStaff: E.isStaff().toString(),
+          preloadEnabled: B.toString(),
           disableCache: T.toString(),
           includeUnpublished: I.toString()
         }
       })
     }
-    return null != C ? (0, r.jsx)(f.Z, {
-      onRetry: N,
-      errorOrigin: f.i.SHOP_PAGE,
+    return null != C ? (0, r.jsx)(m.Z, {
+      onRetry: L,
+      errorOrigin: m.i.SHOP_PAGE,
       errorMessage: C.message
     }) : (0, r.jsx)("div", {
       className: s()(j.shop, {
@@ -149,8 +149,8 @@ let S = e => {
           handleTransition: a,
           numVisibleItems: o,
           isFetchingCategories: b,
-          tab: h
-        }), h === x.AW.HOME && o >= x.iA && (0, r.jsxs)("div", {
+          tab: f
+        }), f === v.AW.HOME && o >= v.iA && (0, r.jsxs)("div", {
           className: j.endOfFeed,
           children: [(0, r.jsx)(d.X6q, {
             variant: "heading-md/semibold",

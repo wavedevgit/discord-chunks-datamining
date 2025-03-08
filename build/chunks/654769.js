@@ -58,23 +58,23 @@ async function R() {
   return (null == e ? void 0 : e.authorizationStatus) === "authorized" && (null == e ? void 0 : e.sound) === !0
 }
 
-function L(e, t) {
+function A(e, t) {
   var n;
   return null !== (n = (0, x.Z)(null != t ? t : p.Z.getSoundpack())[e]) && void 0 !== n ? n : e
 }
-async function A(e) {
+async function L(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
     n = arguments.length > 2 ? arguments[2] : void 0;
   if (await R()) try {
     await T.ZP.invoke("NOTIFICATIONS_SEND_NOTIFICATION", {
-      sound: L(e, n)
+      sound: A(e, n)
     });
     return
   } catch (e) {
     w.warn("Native notification sound failed with error: ", e)
   }(0, h.GN)(e, t, void 0, n)
 }
-let D = l().throttle(A, 1e3, {
+let D = l().throttle(L, 1e3, {
   leading: !0
 });
 
@@ -132,7 +132,7 @@ async function F() {
 function G(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
     n = arguments.length > 2 ? arguments[2] : void 0;
-  e.includes("message") ? D(e, t, n) : A(e, t, n)
+  e.includes("message") ? D(e, t, n) : L(e, t, n)
 }
 async function W(e) {
   return g.Z.disableNotifications && null == e.overrideStreamerMode || !await F() || C.isPlatformEmbedded && !T.ZP.shouldDisplayNotifications()
@@ -195,7 +195,7 @@ let U = {
         title: t,
         body: n
       };
-      null != e && (i.icon = e), (null == a ? void 0 : a.sound) != null && (i.sound = L(a.sound, a.soundpack)), (null == a ? void 0 : a.tag) != null && (i.identifier = a.tag);
+      null != e && (i.icon = e), (null == a ? void 0 : a.sound) != null && (i.sound = A(a.sound, a.soundpack)), (null == a ? void 0 : a.tag) != null && (i.identifier = a.tag);
       let l = "string" == typeof(null == r ? void 0 : r.guild_id) ? r.guild_id : null,
         o = "string" == typeof(null == r ? void 0 : r.channel_id) ? r.channel_id : null,
         s = "string" == typeof(null == r ? void 0 : r.notif_user_id) ? r.notif_user_id : null;
@@ -249,5 +249,5 @@ let U = {
     }
   },
   disabled: W,
-  playNotificationSound: A
+  playNotificationSound: L
 }

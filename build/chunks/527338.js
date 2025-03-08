@@ -1,4 +1,4 @@
-/** Chunk was on 97434 **/
+/** Chunk was on 93886 **/
 e.exports = {
   priceTag: "priceTag_cb53f6"
 }

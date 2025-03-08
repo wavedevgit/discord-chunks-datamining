@@ -31,9 +31,9 @@ var r = n(200651),
   E = n(642145),
   T = n(981631),
   A = n(388032),
-  R = n(964045);
+  B = n(964045);
 
-function B(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -99,9 +99,9 @@ function q(e) {
     style: v,
     children: (0, r.jsxs)("div", {
       ref: c,
-      className: R.hints,
+      className: B.hints,
       children: [(0, r.jsxs)("div", {
-        className: R.hintsContainer,
+        className: B.hintsContainer,
         children: [(0, r.jsx)(y, {
           size: "xs",
           color: O
@@ -142,8 +142,8 @@ function D(e) {
     loop: !0,
     muted: !0,
     playsInline: !0,
-    className: a()(R.videoOverlay, {
-      [R.videoOverlayVisible]: i
+    className: a()(B.videoOverlay, {
+      [B.videoOverlayVisible]: i
     }),
     controls: !1,
     children: (0, r.jsx)("source", {
@@ -180,9 +180,9 @@ function W(e) {
   }, [C, V, H]);
   let et = o.useMemo(() => (0, _.z)(_.i.QUEST_HOME_VIDEO, m), [m]);
   return (0, r.jsxs)("div", {
-    className: R.container,
+    className: B.container,
     children: [(0, r.jsxs)("div", {
-      className: R.heroAssetWrapper,
+      className: B.heroAssetWrapper,
       children: [V.isAnimated ? (0, r.jsx)(w.Fl, {
         id: "QuestTileBanner_heroAnimated",
         children: e => {
@@ -193,7 +193,7 @@ function W(e) {
             loop: !0,
             muted: !0,
             playsInline: !0,
-            className: R.heroAsset,
+            className: B.heroAsset,
             controls: !1,
             children: (0, r.jsx)("source", {
               src: V.url,
@@ -206,7 +206,7 @@ function W(e) {
         children: e => (0, r.jsx)("img", {
           ref: e,
           alt: "".concat(m.config.messages.questName),
-          className: R.heroAsset,
+          className: B.heroAsset,
           src: V.url
         })
       }), Z && !H && null != et && !$ && (0, r.jsx)(D, {
@@ -215,33 +215,33 @@ function W(e) {
         visible: C
       })]
     }), (0, r.jsx)("div", {
-      className: a()(R.overlay, {
-        [R.darkThemeGradient]: U,
-        [R.lightThemeGradient]: !U
+      className: a()(B.overlay, {
+        [B.darkThemeGradient]: U,
+        [B.lightThemeGradient]: !U
       })
     }), (0, r.jsxs)("div", {
-      className: R.positionContentOverBackground,
+      className: B.positionContentOverBackground,
       children: [(0, r.jsxs)("div", {
-        className: R.contents,
+        className: B.contents,
         children: [(0, r.jsxs)("div", {
-          className: R.topRow,
+          className: B.topRow,
           children: [m.preview && (0, r.jsx)("div", {
-            className: R.pill,
+            className: B.pill,
             children: (0, r.jsx)(d.Text, {
               variant: "eyebrow",
               color: "always-white",
-              className: R.eyebrowText,
+              className: B.eyebrowText,
               children: A.NW.string(A.t.SKNnqq)
             })
           }), Z && (0, r.jsx)(d.ua7, {
             text: J ? A.NW.string(A.t.YsCuyM) : G ? A.NW.string(A.t["74Kqra"]) : (0, j.zi)(m) ? A.NW.string(A.t["I6JG4+"]) : A.NW.string(A.t.umdNio),
-            children: e => (0, r.jsx)(d.P3F, k(B({}, e), {
-              className: R.utilButtonWrapper,
+            children: e => (0, r.jsx)(d.P3F, k(R({}, e), {
+              className: B.utilButtonWrapper,
               "aria-label": A.NW.string(A.t.RscU7O),
               onClick: ee,
               children: (0, r.jsx)(d.o1U, {
                 color: "currentColor",
-                className: R.utilButtonIcon
+                className: B.utilButtonIcon
               })
             }))
           }), (0, r.jsx)(S.r, {
@@ -253,24 +253,24 @@ function W(e) {
             hideLearnMore: !0,
             shouldShowDisclosure: !0,
             showShareLink: !0,
-            children: e => (0, r.jsx)(d.P3F, k(B({}, e), {
-              className: R.utilButtonWrapper,
+            children: e => (0, r.jsx)(d.P3F, k(R({}, e), {
+              className: B.utilButtonWrapper,
               "aria-label": A.NW.string(A.t.DEoVWV),
               children: (0, r.jsx)(d.xhG, {
                 size: "md",
                 color: "currentColor",
-                className: R.utilButtonIcon
+                className: B.utilButtonIcon
               })
             }))
           })]
         }), (0, r.jsx)(O.ZP, {
-          className: R.partnerBranding,
-          logotypeClassName: R.partnerLogotypes,
+          className: B.partnerBranding,
+          logotypeClassName: B.partnerLogotypes,
           quest: m,
           separatorSpacing: O.US.MEDIUM,
           withGameTile: !1
         }), (0, r.jsxs)("div", {
-          className: R.bottomRow,
+          className: B.bottomRow,
           children: [(0, r.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: U ? "text-muted" : "always-white",

@@ -1,4 +1,4 @@
-/** Chunk was on 12075 **/
+/** Chunk was on 74329 **/
 n.d(t, {
   Z: () => X
 }), n(411104), n(47120), n(301563), n(733860);
@@ -23,8 +23,8 @@ var r, i = n(200651),
   I = n(430824),
   C = n(306680),
   T = n(944486),
-  y = n(938475),
-  S = n(483360),
+  S = n(938475),
+  y = n(483360),
   v = n(585483),
   P = n(63063),
   R = n(51596),
@@ -108,13 +108,13 @@ let G = c.ZP.connectStores([C.ZP, O.Z], e => {
       category: O.Z.getChannel(t.parent_id)
     }
   })(F),
-  W = c.ZP.connectStores([y.ZP], e => {
+  W = c.ZP.connectStores([S.ZP], e => {
     let {
       channel: t
     } = e;
     if (null == t.guild_id) throw Error("ConnectedVoiceChannel - somehow we got a voice channel with no guild_id...");
     return {
-      voiceStates: y.ZP.getVoiceStates(t.guild_id)[t.id]
+      voiceStates: S.ZP.getVoiceStates(t.guild_id)[t.id]
     }
   })(F),
   B = c.ZP.connectStores([N.default], e => {
@@ -585,6 +585,6 @@ function X(e) {
       title: k.NW.string(k.t["3D5yo6"]),
       searchableTitles: [k.NW.string(k.t["3D5yo6"])],
       path: L.Z5c.SETTINGS("account")
-    }), (0, S.gF)(e)
+    }), (0, y.gF)(e)
   }, [l, r]), (0, i.jsx)(K, w({}, t, e))
 }

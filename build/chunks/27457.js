@@ -1,4 +1,4 @@
-/** Chunk was on 12075 **/
+/** Chunk was on 74329 **/
 n.d(t, {
   BP: () => eh,
   ZP: () => eb
@@ -25,8 +25,8 @@ var r = n(200651),
   I = n(352978),
   C = n(936847),
   T = n(512384),
-  y = n(33316),
-  S = n(576645),
+  S = n(33316),
+  y = n(576645),
   v = n(6242),
   P = n(757692),
   R = n(210975),
@@ -130,8 +130,8 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
       inCall: eI = !1,
       selected: eC = !1,
       noBorder: eT = !1,
-      noVideoRender: ey = !1,
-      focused: eS = !1,
+      noVideoRender: eS = !1,
+      focused: ey = !1,
       blocked: ev = !1,
       ignored: eP = !1,
       fit: eR = I.L.CONTAIN,
@@ -202,9 +202,9 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
       }, {
         autoTrackExposure: !1
       }),
-      e8 = (0, a.e7)([w.Z], () => e9 && null != eW ? w.Z.findActivity(eW, e => null != e.application_id && e.type === et.IIU.PLAYING) : null, [e9, eW]),
-      e7 = (0, a.e7)([M.Z], () => (null == e8 ? void 0 : e8.application_id) != null ? M.Z.getDetectableGame(e8.application_id) : null),
-      e5 = (0, a.e7)([p.Z], () => null != e7 && (null == e8 ? void 0 : e8.application_id) != null ? p.Z.getApplication(null == e8 ? void 0 : e8.application_id) : void 0),
+      e7 = (0, a.e7)([w.Z], () => e9 && null != eW ? w.Z.findActivity(eW, e => null != e.application_id && e.type === et.IIU.PLAYING) : null, [e9, eW]),
+      e8 = (0, a.e7)([M.Z], () => (null == e7 ? void 0 : e7.application_id) != null ? M.Z.getDetectableGame(e7.application_id) : null),
+      e5 = (0, a.e7)([p.Z], () => null != e8 && (null == e7 ? void 0 : e7.application_id) != null ? p.Z.getApplication(null == e7 ? void 0 : e7.application_id) : void 0),
       te = (0, R.wV)({
         userId: eW,
         channelId: eb.id,
@@ -217,12 +217,12 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
       }),
       tn = i.useMemo(() => F.type === en.fO.STREAM ? null != tt && tt : F.type === en.fO.USER && null != te && te, [tt, te, F.type]);
     i.useEffect(() => {
-      eM(eS)
-    }, [eS]);
+      eM(ey)
+    }, [ey]);
     let [tr, ti] = i.useState(!1), to = i.useCallback(() => {
       _.Z.useReducedMotion || ti(!0)
     }, []);
-    (0, S.J)(eb, to);
+    (0, y.J)(eb, to);
     let tl = i.useCallback(() => {
         null != eW && u.Z.toggleLocalMute(eW, eo.Yn.STREAM)
       }, [eW]),
@@ -248,13 +248,13 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
           onVideoResize: eN,
           paused: eA,
           inPopout: eO,
-          focused: eS,
+          focused: ey,
           inOverlayPopout: eD
         }), td = (0, r.jsx)(Q._, {
           participant: F,
           selected: eC,
           width: eg,
-          focused: eS,
+          focused: ey,
           idle: eL,
           premiumIndicator: e1.enabled
         }), t_ = el.NW.formatToPlainString(el.t.gHPz3d, {
@@ -273,7 +273,7 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
           width: eg,
           blocked: ev,
           ignored: eP,
-          noVideoRender: ey || eK,
+          noVideoRender: eS || eK,
           pulseSpeakingIndicator: ex,
           inOverlayPopout: eD
         }), td = (0, r.jsx)(J.T, {
@@ -285,7 +285,7 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
         break;
       case en.fO.ACTIVITY:
         tu = (0, r.jsx)(K.ZP, {
-          interactible: eS,
+          interactible: ey,
           participant: F,
           selected: eC,
           channel: eb,
@@ -310,7 +310,7 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
           onVideoResize: eN,
           paused: eA,
           inPopout: eO,
-          focused: eS,
+          focused: ey,
           inOverlayPopout: eD
         })
     }
@@ -330,7 +330,7 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
         onMouseLeave: () => {
           eV(!1)
         },
-        children: [tr && F.type === en.fO.STREAM && (0, r.jsx)(y.Z, {
+        children: [tr && F.type === en.fO.STREAM && (0, r.jsx)(S.Z, {
           baseTileRef: tp.current,
           cleanup: () => ti(!1)
         }), (0, r.jsxs)(T.Z, {
@@ -384,7 +384,7 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
                   className: ea.selectedIcon
                 })
               }) : null, ed.includes(F.type) ? null : (0, r.jsx)(tf, ec(es({
-                focused: eS,
+                focused: ey,
                 width: eg,
                 inCall: eI,
                 participantType: F.type,
@@ -409,8 +409,8 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
                 channelId: eb.id
               }) : null, eI && !eT ? (0, r.jsx)("div", {
                 className: l()(ea.border, {
-                  [ea.voiceChannelEffect]: !eS && null != e3,
-                  [ea.speaking]: eX && !eS
+                  [ea.voiceChannelEffect]: !ey && null != e3,
+                  [ea.speaking]: eX && !ey
                 })
               }) : null]
             })
@@ -511,8 +511,8 @@ let ef = i.memo(e => {
     serverMuted: I,
     serverDeafened: C,
     hasVideo: T,
-    hideAudioIcon: y,
-    onToggleMute: S
+    hideAudioIcon: S,
+    onToggleMute: y
   } = e, v = (0, a.e7)([Z.Z], () => null != E && Z.Z.isLocalVideoAutoDisabled(E, (0, f.Z)(p)), [E, p]), P = (0, $.N)(o), R = (0, $.K)(o), [A, x] = i.useState(!1);
   i.useEffect(() => {
     let e = !1,
@@ -521,7 +521,7 @@ let ef = i.memo(e => {
       };
     return F.Z.addChangeListener(t), () => F.Z.removeChangeListener(t)
   }, []);
-  let j = !y && p === en.fO.STREAM && T && (!R || N),
+  let j = !S && p === en.fO.STREAM && T && (!R || N),
     D = function(e) {
       let {
         localMuted: t,
@@ -610,7 +610,7 @@ let ef = i.memo(e => {
       }), (0, r.jsxs)("div", {
         className: ea.overlayButtonContainer,
         children: [j && (0, r.jsx)(eE, {
-          onClick: S,
+          onClick: y,
           tooltipText: N ? el.NW.string(el.t.YqAjX1) : el.NW.string(el.t["w4m94+"]),
           icon: N ? c.OyP : c.gj8,
           hideWhenInactive: !N
@@ -646,13 +646,13 @@ let em = i.memo(e => {
     ignored: I,
     hideAudioIcon: C,
     participantType: T,
-    participantUserId: y,
-    onContextMenu: S,
+    participantUserId: S,
+    onContextMenu: y,
     onToggleMute: v,
     platform: P,
     application: R,
     secureFramesVerified: A
-  } = e, x = null, j = null, D = null, L = (0, $.K)(p), k = (0, $.N)(p), M = (0, a.e7)([Z.Z], () => null != y && Z.Z.isLocalVideoAutoDisabled(y, (0, f.Z)(T)), [y, T]), w = (0, c.bWb)().enabled;
+  } = e, x = null, j = null, D = null, L = (0, $.K)(p), k = (0, $.N)(p), M = (0, a.e7)([Z.Z], () => null != S && Z.Z.isLocalVideoAutoDisabled(S, (0, f.Z)(T)), [S, T]), w = (0, c.bWb)().enabled;
   if (!C) {
     if (i && T === en.fO.STREAM && E && !O) x = (0, r.jsx)(c.ua7, {
       text: el.NW.string(el.t.YqAjX1),
@@ -722,7 +722,7 @@ let em = i.memo(e => {
       } = e, n = eu(e, ["onClick"]);
       return (0, r.jsx)(c.P3F, ec(es({}, n), {
         onClick: e => {
-          e.stopPropagation(), null == t || t(), S(e)
+          e.stopPropagation(), null == t || t(), y(e)
         },
         className: l()(ea.status, ea.interactive),
         children: (0, r.jsx)(c.xhG, {

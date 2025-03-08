@@ -31,8 +31,8 @@ var r = n(200651),
   E = n(341907),
   T = n(693900),
   A = n(164495),
-  R = n(759853),
-  B = n(205511),
+  B = n(759853),
+  R = n(205511),
   k = n(710235),
   q = n(694802),
   D = n(95985),
@@ -367,7 +367,7 @@ function K(e) {
         })]
       }), (0, r.jsx)("div", {
         className: Z.divider
-      }), (0, r.jsx)(R.Z, {
+      }), (0, r.jsx)(B.Z, {
         expansionSpring: c,
         overlayRef: d,
         progressBarRef: H,
@@ -391,7 +391,7 @@ function K(e) {
           }), (0, r.jsx)(q.Z, {
             quest: n
           })]
-        })).with(h.LI.CONSOLE, () => (0, r.jsx)(B.Z, {
+        })).with(h.LI.CONSOLE, () => (0, r.jsx)(R.Z, {
           quest: n,
           taskDetails: s
         })).exhaustive()

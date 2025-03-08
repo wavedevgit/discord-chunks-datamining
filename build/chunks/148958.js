@@ -1,18 +1,18 @@
-/** Chunk was on 40247 **/
+/** Chunk was on 74329 **/
 n.d(t, {
   h: () => u
 }), n(47120), n(653041), n(230036);
 var r = n(192379),
   i = n(442837),
-  l = n(581364),
-  o = n(675478),
+  o = n(581364),
+  l = n(675478),
   a = n(709054),
   s = n(822245),
   c = n(526761);
 
 function u(e, t) {
   r.useEffect(() => {
-    o.DZ.loadIfUncached(c.yP.FRECENCY_AND_FAVORITES_SETTINGS)
+    l.DZ.loadIfUncached(c.yP.FRECENCY_AND_FAVORITES_SETTINGS)
   }, []);
   let n = (0, i.e7)([s.Z], () => s.Z.getApplicationFrecencyWithoutLoadingLatest()),
     u = r.useMemo(() => null == t || 0 === t.length ? e : e.map(e => {
@@ -47,33 +47,33 @@ function u(e, t) {
         Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
       }), r
     }), [e, t]),
-    E = r.useMemo(() => null == t ? void 0 : t.filter(t => !e.some(e => e.id === t.application.id)), [e, t]),
-    d = r.useMemo(() => {
+    d = r.useMemo(() => null == t ? void 0 : t.filter(t => !e.some(e => e.id === t.application.id)), [e, t]),
+    _ = r.useMemo(() => {
       var e;
-      null == E || E.forEach(e => {
+      null == d || d.forEach(e => {
         let t = a.default.extractTimestamp(e.id);
         null == n.getEntry(e.application.id) && n.track(e.application.id, t)
       }), n.compute();
-      let t = null !== (e = null == E ? void 0 : E.map(e => (0, l.X0)(e.application, !0))) && void 0 !== e ? e : [],
+      let t = null !== (e = null == d ? void 0 : d.map(e => (0, o.X0)(e.application, !0))) && void 0 !== e ? e : [],
         r = [...u];
       return r.push(...t), r.sort((e, t) => {
         var r, i;
-        let l = (null !== (r = n.getScore(t.id)) && void 0 !== r ? r : 0) - (null !== (i = n.getScore(e.id)) && void 0 !== i ? i : 0);
-        return 0 !== l ? l : e.name.localeCompare(t.name)
+        let o = (null !== (r = n.getScore(t.id)) && void 0 !== r ? r : 0) - (null !== (i = n.getScore(e.id)) && void 0 !== i ? i : 0);
+        return 0 !== o ? o : e.name.localeCompare(t.name)
       }), r
-    }, [u, n, E]);
+    }, [u, n, d]);
   return r.useMemo(() => {
     var e, r;
-    let i, l;
+    let i, o;
     null == t || t.forEach(e => {
       let t = a.default.extractTimestamp(e.id);
-      (null == l || t > l) && (i = e, l = t)
+      (null == o || t > o) && (i = e, o = t)
     }), u.forEach(e => {
       var t, r;
-      let o = Math.max(...null !== (r = null === (t = n.getEntry(e.id)) || void 0 === t ? void 0 : t.recentUses) && void 0 !== r ? r : []);
-      (null == l || o > l) && (i = e, l = o)
+      let l = Math.max(...null !== (r = null === (t = n.getEntry(e.id)) || void 0 === t ? void 0 : t.recentUses) && void 0 !== r ? r : []);
+      (null == o || l > o) && (i = e, o = l)
     });
-    let o = null !== (r = null == i ? void 0 : null === (e = i.application) || void 0 === e ? void 0 : e.id) && void 0 !== r ? r : "";
-    return [...d.filter(e => e.id === o), ...d.filter(e => e.id !== o)]
-  }, [d, u, n, t])
+    let l = null !== (r = null == i ? void 0 : null === (e = i.application) || void 0 === e ? void 0 : e.id) && void 0 !== r ? r : "";
+    return [..._.filter(e => e.id === l), ..._.filter(e => e.id !== l)]
+  }, [_, u, n, t])
 }

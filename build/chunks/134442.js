@@ -1,6 +1,6 @@
-/** Chunk was on 45620 **/
+/** Chunk was on web.js **/
 "use strict";
-e.exports = {
+var r = {
   shopBanner: "shopBanner__7f856",
   animationAsset: "animationAsset__7f856",
   categoryLogo: "categoryLogo__7f856",
@@ -11,4 +11,5 @@ e.exports = {
   blackSummary: "blackSummary__7f856",
   limitedTimeBadge: "limitedTimeBadge__7f856",
   getPremiumHook: "getPremiumHook__7f856"
-}
+};
+e.exports = r

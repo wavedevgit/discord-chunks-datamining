@@ -1,8 +1,8 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  K: () => m,
-  Z: () => g
+  K: () => g,
+  Z: () => h
 });
 var r = n(200651);
 n(192379);
@@ -14,7 +14,7 @@ var l = n(120356),
   d = n(661252);
 let c = () => 4 * Math.random() + 8,
   u = [c(), c(), c()],
-  m = () => (0, r.jsx)("div", {
+  g = () => (0, r.jsx)("div", {
     className: a()(i.skeleton, d.shopCard),
     children: (0, r.jsxs)("div", {
       className: i.cardBody,
@@ -29,7 +29,7 @@ let c = () => 4 * Math.random() + 8,
       })]
     })
   }),
-  g = () => (0, r.jsx)("div", {
+  h = () => (0, r.jsx)("div", {
     className: s.skeletons,
     children: u.map(e => (0, r.jsxs)("div", {
       className: s.cardsContainer,
@@ -40,6 +40,6 @@ let c = () => 4 * Math.random() + 8,
         })
       }), Array.from({
         length: e
-      }, (e, t) => t).map(e => (0, r.jsx)(m, {}, e))]
+      }, (e, t) => t).map(e => (0, r.jsx)(g, {}, e))]
     }, e))
   })

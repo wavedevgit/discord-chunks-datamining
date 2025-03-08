@@ -1,4 +1,4 @@
-/** Chunk was on 24389 **/
+/** Chunk was on 74329 **/
 n.d(t, {
   Z: () => f
 });
@@ -13,7 +13,7 @@ var i = n(780384),
   u = n(231338),
   d = n(319239);
 
-function b(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -31,12 +31,12 @@ function b(e) {
   }
   return e
 }
-let h = {
+let p = {
     trophy: u.Il.PRIMARY_400,
     locked: u.Il.PRIMARY_400,
     unlocked: u.Il.GREEN_330
   },
-  p = {
+  E = {
     trophy: u.Il.PRIMARY_400,
     locked: u.Il.PRIMARY_400,
     unlocked: u.Il.GREEN_330
@@ -48,59 +48,59 @@ function f(e) {
     achievementId: n,
     unlocked: u,
     size: f = o.EFr.SIZE_40
-  } = e, g = (0, l.ZP)(), O = (0, c.oX)(n);
-  if (null == O) return null;
-  let v = (0, o.UCu)(f),
+  } = e, m = (0, l.ZP)(), h = (0, c.oX)(n);
+  if (null == h) return null;
+  let b = (0, o.UCu)(f),
     {
-      name: m,
-      rarity: y
-    } = O,
+      name: g,
+      rarity: O
+    } = h,
     {
-      color: E
-    } = (0, c.F7)(y),
-    _ = (0, i.wj)(g) ? h : p,
-    P = (v.size - v.offset - 2 * v.stroke) * .8,
-    j = v.size - v.stroke,
-    C = {
-      width: .4 * P,
-      height: .4 * P
+      color: N
+    } = (0, c.F7)(O),
+    I = (0, i.wj)(m) ? p : E,
+    C = (b.size - b.offset - 2 * b.stroke) * .8,
+    T = b.size - b.stroke,
+    S = {
+      width: .4 * C,
+      height: .4 * C
     },
-    N = {
-      width: C.width + 1,
-      height: C.height + 1,
-      right: v.stroke + 1,
-      bottom: v.stroke + 1,
+    y = {
+      width: S.width + 1,
+      height: S.height + 1,
+      right: b.stroke + 1,
+      bottom: b.stroke + 1,
       padding: 0
     };
   return (0, r.jsxs)("div", {
     className: d.container,
     style: {
-      width: j,
-      height: j,
-      padding: v.stroke
+      width: T,
+      height: T,
+      padding: b.stroke
     },
-    "aria-label": "".concat(null !== (t = m()) && void 0 !== t ? t : ""),
+    "aria-label": "".concat(null !== (t = g()) && void 0 !== t ? t : ""),
     children: [(0, r.jsx)("div", {
       className: d.trophyIconContainer,
       children: (0, r.jsx)(o.rm8, {
         size: "custom",
-        color: u ? E : (0, a.Lq)(_.trophy),
-        width: P,
-        height: P
+        color: u ? N : (0, a.Lq)(I.trophy),
+        width: C,
+        height: C
       })
     }), !u && (0, r.jsx)("div", {
       className: d.lockContainer,
-      style: N,
-      children: (0, r.jsx)(o.mBM, b({
+      style: y,
+      children: (0, r.jsx)(o.mBM, _({
         size: "custom",
-        color: (0, a.Lq)(_.locked)
-      }, C))
-    }), u && y === c.EP.LEGENDARY && (0, r.jsx)("div", {
+        color: (0, a.Lq)(I.locked)
+      }, S))
+    }), u && O === c.EP.LEGENDARY && (0, r.jsx)("div", {
       className: d.lockContainer,
-      style: N,
-      children: (0, r.jsx)(s.Z, b({
+      style: y,
+      children: (0, r.jsx)(s.Z, _({
         className: d.confettiIcon
-      }, C))
+      }, S))
     })]
   })
 }

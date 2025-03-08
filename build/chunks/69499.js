@@ -1,20 +1,20 @@
-/** Chunk was on 40247 **/
+/** Chunk was on 74329 **/
 n.d(t, {
-  E: () => N,
-  Z: () => O
+  E: () => E,
+  Z: () => m
 }), n(47120), n(230036);
 var r = n(200651),
   i = n(192379),
-  l = n(442837),
-  o = n(481060),
+  o = n(442837),
+  l = n(481060),
   a = n(239091),
   s = n(585237),
   c = n(812206),
   u = n(55563),
-  E = n(73346),
-  d = n(388032);
+  d = n(73346),
+  _ = n(388032);
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,20 +22,20 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let N = {
+let E = {
   DropdownSizes: s.Z.DropdownSizes,
   Sizes: s.Z.Sizes,
   Colors: s.Z.Colors,
   Looks: s.Z.Looks
 };
-class I extends i.PureComponent {
+class f extends i.PureComponent {
   render() {
     var e, t;
     let n = this.props,
       {
         skus: i,
-        children: l,
-        applicationId: o,
+        children: o,
+        applicationId: l,
         primarySKU: a,
         onSKUSelect: c
       } = n,
@@ -44,13 +44,13 @@ class I extends i.PureComponent {
         var n, r, i = function(e, t) {
           if (null == e) return {};
           var n, r, i = {},
-            l = Object.keys(e);
-          for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+            o = Object.keys(e);
+          for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
           return i
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var l = Object.getOwnPropertySymbols(e);
-          for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+          var o = Object.getOwnPropertySymbols(e);
+          for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
         }
         return i
       }(n, ["skus", "children", "applicationId", "primarySKU", "onSKUSelect"]);
@@ -61,7 +61,7 @@ class I extends i.PureComponent {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          _(e, t, n[t])
+          p(e, t, n[t])
         })
       }
       return e
@@ -70,7 +70,7 @@ class I extends i.PureComponent {
       onDropdownClick: i.length > 0 ? this.handleContextMenu : null,
       onContextMenu: i.length > 0 ? this.handleContextMenu : void 0
     }, u), t = t = {
-      children: l
+      children: o
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -83,18 +83,18 @@ class I extends i.PureComponent {
     }), e))
   }
   constructor(...e) {
-    super(...e), _(this, "renderContextMenu", () => {
+    super(...e), p(this, "renderContextMenu", () => {
       let {
         skus: e,
         onSKUSelect: t,
         onMenuSelect: n
       } = this.props;
-      return (0, r.jsx)(o.v2r, {
+      return (0, r.jsx)(l.v2r, {
         onSelect: n,
         navId: "test-skus",
-        "aria-label": d.NW.string(d.t.ogxXGh),
+        "aria-label": _.NW.string(_.t.ogxXGh),
         onClose: a.Zy,
-        children: e.map(e => (0, r.jsx)(o.sNh, {
+        children: e.map(e => (0, r.jsx)(l.sNh, {
           id: "".concat(e.id),
           label: e.name,
           action: () => {
@@ -102,9 +102,9 @@ class I extends i.PureComponent {
           }
         }, "".concat(e.id)))
       })
-    }), _(this, "handleContextMenu", e => {
+    }), p(this, "handleContextMenu", e => {
       e.stopPropagation(), a.vq(e, this.renderContextMenu)
-    }), _(this, "handleClick", () => {
+    }), p(this, "handleClick", () => {
       let {
         onSKUSelect: e,
         primarySKU: t
@@ -113,13 +113,13 @@ class I extends i.PureComponent {
     })
   }
 }
-let O = l.ZP.connectStores([u.Z, c.Z], e => {
+let m = o.ZP.connectStores([u.Z, c.Z], e => {
   var t;
   let {
     applicationId: n
-  } = e, r = (0, E.uF)(n, c.Z, u.Z);
+  } = e, r = (0, d.uF)(n, c.Z, u.Z);
   return {
     skus: (null !== (t = u.Z.getForApplication(n)) && void 0 !== t ? t : []).sort((e, t) => null != r && e.id === r.id ? -1 : null != r && t.id === r.id ? 1 : e.name >= t.name ? -1 : 1),
     primarySKU: r
   }
-})(I)
+})(f)

@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: b27e127cafbb99f6
+  Original File Name: 8e821206ff3aa793
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -3074,16 +3074,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     color: var(--interactive-active);
     width: 16px;
     height: 16px
-}
-
-.badgeDark_dd79c2 {
-    background-color: var(--white-500);
-    color: var(--black-500)
-}
-
-.badgeLight_dd79c2 {
-    background-color: var(--black-500);
-    color: var(--white-500)
 }
 
 .giftButton_f3c9fa {

@@ -128,7 +128,8 @@ function M() {
         onUpsellClick: w.Z,
         pendingBio: z
       }, G), t = t = {
-        pendingAvatar: F
+        pendingAvatar: F,
+        showNameplatePreview: !0
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

@@ -1,4 +1,4 @@
-/** Chunk was on 12075 **/
+/** Chunk was on 74329 **/
 n.d(t, {
   Z: () => D
 }), n(266796), n(47120), n(653041);
@@ -25,7 +25,7 @@ var r = n(200651),
   C = n(388032),
   T = n(312732);
 
-function y(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -33,7 +33,7 @@ function y(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let S = {
+let y = {
   UP: u().throttle(() => (0, g.GN)("ddr-up"), 100),
   DOWN: u().throttle(() => (0, g.GN)("ddr-down"), 100),
   LEFT: u().throttle(() => (0, g.GN)("ddr-left"), 100),
@@ -178,7 +178,7 @@ class x extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), y(this, "state", {
+    super(...e), S(this, "state", {
       UP: !1,
       DOWN: !1,
       LEFT: !1,
@@ -187,31 +187,31 @@ class x extends i.PureComponent {
       scaleX: new d.Z.Value(1),
       scaleY: new d.Z.Value(0),
       animating: !1
-    }), y(this, "scrollerRef", i.createRef()), y(this, "lastInputedKeys", []), y(this, "scrollPageUp", () => {
+    }), S(this, "scrollerRef", i.createRef()), S(this, "lastInputedKeys", []), S(this, "scrollPageUp", () => {
       let e = this.scrollerRef.current;
       s()(null != e, "Scroller is pagedUp when not mounted"), e.scrollPageUp({
         animate: !0
       })
-    }), y(this, "scrollPageDown", () => {
+    }), S(this, "scrollPageDown", () => {
       let e = this.scrollerRef.current;
       s()(null != e, "Scroller is pagedDown when not mounted"), e.scrollPageDown({
         animate: !0
       })
-    }), y(this, "arrowUp", e => {
+    }), S(this, "arrowUp", e => {
       let {
         direction: t
       } = e;
       this.setState({
         [t]: !1
       })
-    }), y(this, "arrowDown", e => {
+    }), S(this, "arrowDown", e => {
       let {
         direction: t
       } = e;
-      S[t](), this.setState({
+      y[t](), this.setState({
         [t]: !0
       })
-    }), y(this, "componentWillLeave", e => {
+    }), S(this, "componentWillLeave", e => {
       this.setState({
         animating: !0
       }), this.state.opacity.setValue(1), this.state.scaleX.setValue(.5), this.state.scaleY.setValue(1), d.Z.sequence([d.Z.timing(this.state.opacity, {
@@ -219,9 +219,9 @@ class x extends i.PureComponent {
         duration: 800,
         easing: d.Z.Easing.cubic
       })]).start(e)
-    }), y(this, "toggleOpacity", () => {
+    }), S(this, "toggleOpacity", () => {
       1 === this.state.opacity._value ? this.state.opacity.setValue(0) : this.state.opacity.setValue(1)
-    }), y(this, "getStyles", () => ({
+    }), S(this, "getStyles", () => ({
       opacity: this.state.opacity.interpolate({
         inputRange: [0, 1],
         outputRange: [0, 1]
@@ -237,19 +237,19 @@ class x extends i.PureComponent {
           outputRange: [0, 1]
         })
       }]
-    })), y(this, "handleKeyDown", e => {
+    })), S(this, "handleKeyDown", e => {
       if (this.lastInputedKeys.push(e.keyCode), this.lastInputedKeys = this.lastInputedKeys.slice(-5), this.lastInputedKeys[0] === I.yXg.H && this.lastInputedKeys[1] === I.yXg.H && this.lastInputedKeys[2] === I.yXg.ARROW_RIGHT && this.lastInputedKeys[3] === I.yXg.N && this.lastInputedKeys[4] === I.yXg.K && this.props.activateRagingDemon(), this.props.keyboardModeEnabled) return;
       let t = v(e);
       null !== t && (e.stopPropagation(), e.preventDefault(), this.arrowDown({
         direction: t
       }))
-    }), y(this, "handleKeyUp", e => {
+    }), S(this, "handleKeyUp", e => {
       if (this.props.keyboardModeEnabled) return;
       let t = v(e);
       null !== t && (e.stopPropagation(), e.preventDefault(), this.arrowUp({
         direction: t
       }))
-    }), y(this, "onArrowClick", e => {
+    }), S(this, "onArrowClick", e => {
       this.arrowDown({
         direction: e
       })
@@ -264,7 +264,7 @@ function j(e) {
     className: o,
     children: a
   } = e, [s, c] = i.useState(t), u = i.useCallback(() => {
-    S[n](), c(!0)
+    y[n](), c(!0)
   }, [n]);
   return i.useEffect(() => {
     if (s) {

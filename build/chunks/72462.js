@@ -1,6 +1,6 @@
 /** Chunk was on 2026 **/
 n.d(t, {
-  s: () => a
+  s: () => i
 });
 let r = (0, n(818083).B)({
     kind: "user",
@@ -17,6 +17,6 @@ let r = (0, n(818083).B)({
       }
     }]
   }),
-  a = e => r.useExperiment({
+  i = e => r.useExperiment({
     location: e
   }).showShareLinkButton

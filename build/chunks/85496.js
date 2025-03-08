@@ -1,4 +1,4 @@
-/** Chunk was on 97434 **/
+/** Chunk was on 93886 **/
 e.exports = {
   channel: "channel__972a0",
   fullWidth: "fullWidth__972a0",

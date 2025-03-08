@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => f
 }), n(47120);
 var r = n(200651),
   l = n(192379),
@@ -12,15 +12,15 @@ var r = n(200651),
   d = n(597688),
   c = n(297651),
   u = n(215023),
-  m = n(388032),
-  g = n(39532);
-let h = e => {
+  g = n(388032),
+  h = n(39532);
+let f = e => {
   var t;
   let {
     wideBannerBlock: n,
     handleTransition: a,
-    tab: h
-  } = e, f = null === (t = d.Z.getCategoryByStoreListingId(n.categoryStoreListingId)) || void 0 === t ? void 0 : t.skuId, p = l.useRef(null), [b, C] = l.useState();
+    tab: f
+  } = e, m = null === (t = d.Z.getCategoryByStoreListingId(n.categoryStoreListingId)) || void 0 === t ? void 0 : t.skuId, p = l.useRef(null), [b, C] = l.useState();
   l.useEffect(() => {
     let e = p.current;
     if (null == e) return;
@@ -31,21 +31,21 @@ let h = e => {
       e.onload = null
     }
   }, []);
-  let _ = null != f ? f : "",
+  let _ = null != m ? m : "",
     {
-      handleCardVisibilityChange: v
+      handleCardVisibilityChange: x
     } = (0, c.E)(_, "home", "marketing wide banner"),
-    x = n.bannerUrl;
-  return null == x ? null : (0, r.jsx)(o.$, {
-    onChange: v,
+    v = n.bannerUrl;
+  return null == v ? null : (0, r.jsx)(o.$, {
+    onChange: x,
     threshold: 0,
     children: (0, r.jsxs)("div", {
-      className: s()(g.row, g.between, g.section, g.bannerBlockContainer),
+      className: s()(h.row, h.between, h.section, h.bannerBlockContainer),
       children: [(0, r.jsx)("div", {
-        className: g.wideBannerBackgroundImg,
+        className: h.wideBannerBackgroundImg,
         children: (0, r.jsx)("img", {
           ref: p,
-          src: x,
+          src: v,
           alt: n.title,
           style: {
             width: "100%",
@@ -56,32 +56,32 @@ let h = e => {
           }
         })
       }), (0, r.jsx)("div", {
-        className: g.wideBannerContentContainer,
+        className: h.wideBannerContentContainer,
         style: {
           maxHeight: null != b ? "".concat(b, "px") : "auto"
         },
         children: (0, r.jsxs)("div", {
-          className: g.wideBannerTextContainer,
+          className: h.wideBannerTextContainer,
           children: [(0, r.jsx)(i.X6q, {
             style: {
               color: n.bannerTextColor
             },
-            variant: h === u.AW.ORBS ? "heading-xl/bold" : "heading-lg/semibold",
+            variant: f === u.AW.ORBS ? "heading-xl/bold" : "heading-lg/semibold",
             children: n.title
           }), (0, r.jsx)(i.Text, {
             style: {
-              color: h === u.AW.ORBS ? "rgba(255, 255, 255, 0.65)" : n.bannerTextColor
+              color: f === u.AW.ORBS ? "rgba(255, 255, 255, 0.65)" : n.bannerTextColor
             },
             lineClamp: 2,
-            variant: h === u.AW.ORBS ? "text-md/medium" : "text-sm/medium",
+            variant: f === u.AW.ORBS ? "text-md/medium" : "text-sm/medium",
             children: n.body
           })]
         })
       }), !0 !== n.disableCta && (0, r.jsx)(i.zxk, {
-        className: g.wideBannerBlockButton,
+        className: h.wideBannerBlockButton,
         color: i.Ttl.WHITE,
         onClick: () => a("shop wide banner", _),
-        children: m.NW.string(m.t.jVcuVV)
+        children: g.NW.string(g.t.jVcuVV)
       })]
     })
   })

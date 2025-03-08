@@ -1,11 +1,11 @@
-/** Chunk was on 40247 **/
+/** Chunk was on 74329 **/
 n.d(t, {
-  Z: () => d
+  Z: () => _
 });
 var r, i = n(442837),
-  l = n(570140);
+  o = n(570140);
 
-function o(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,7 +21,7 @@ function a(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      l(e, t, n[t])
     })
   }
   return e
@@ -44,7 +44,7 @@ let c = {
     currentMessage: null
   },
   u = c;
-class E extends(r = i.ZP.DeviceSettingsStore) {
+class d extends(r = i.ZP.DeviceSettingsStore) {
   initialize(e) {
     u = a({}, c, null != e ? e : null)
   }
@@ -64,8 +64,8 @@ class E extends(r = i.ZP.DeviceSettingsStore) {
     return u
   }
 }
-o(E, "displayName", "TTSStore"), o(E, "persistKey", "TTSStore"), o(E, "migrations", []);
-let d = new E(l.Z, __OVERLAY__ ? {} : {
+l(d, "displayName", "TTSStore"), l(d, "persistKey", "TTSStore"), l(d, "migrations", []);
+let _ = new d(o.Z, __OVERLAY__ ? {} : {
   SPEAKING_MESSAGE: function(e) {
     let {
       messageId: t,

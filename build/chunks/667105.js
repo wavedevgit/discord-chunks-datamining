@@ -178,26 +178,21 @@ function U(e) {
     questContentRowIndex: f
   }), y = (0, g._s)({
     quest: n
-  }), I = (0, g.Rf)(n), S = (0, g.GU)(n), P = S.length > 0 ? S[0] : null, D = i.useCallback(() => {
+  }), I = (0, g.Rf)(n), S = i.useCallback(() => {
     (0, d.$)()
-  }, []), M = i.useCallback(() => {
+  }, []), P = i.useCallback(() => {
     (0, c.mK)({
       openInLayer: !1,
       tab: C.AW.ORBS,
       analyticsLocations: [],
       analyticsSource: l.Z.QUEST_HOME_PAGE
     })
-  }, []), k = null === (t = (0, h.WD)()) || void 0 === t ? void 0 : t.getId(), j = n.id === A.V;
+  }, []), D = null === (t = (0, h.WD)()) || void 0 === t ? void 0 : t.getId(), M = n.id === A.V;
   return i.useMemo(() => {
-    if (null != P) return {
-      text: R.NW.string(R.t.k4z4en),
-      tooltipText: P,
-      onClick: null
-    };
     switch (o) {
       case g.OH.UNACCEPTED:
         let e = R.NW.string(R.t.kUQLMD);
-        E && j ? e = R.NW.string(R.t.CwGuEx) : E && (e = R.NW.string(R.t.umdNio));
+        E && M ? e = R.NW.string(R.t.CwGuEx) : E && (e = R.NW.string(R.t.umdNio));
         let t = E ? p.jZ.START_QUEST : p.jZ.ACCEPT_QUEST;
         return {
           text: e, tooltipText: e, onClick: () => {
@@ -221,7 +216,7 @@ function U(e) {
             ctaContent: p.jZ.CONNECT_CONSOLE,
             position: u,
             rowIndex: f,
-            impressionId: k
+            impressionId: D
           })
         };
         if (E) return {
@@ -259,19 +254,19 @@ function U(e) {
         });
         if ((0, b.Bg)(n.config)) return {
           tooltipText: null,
-          onClick: D,
+          onClick: S,
           text: R.NW.string(R.t["eQX+go"])
         };
         else if ((0, b.xN)(n.config)) return {
           tooltipText: null,
           text: R.NW.string(R.t.iEw2Nz),
-          onClick: M
+          onClick: P
         };
         return L(w({}, i), {
           text: R.NW.string(R.t.bAGFz8)
         })
     }
-  }, [P, o, E, y, _, v, a, n, s, u, f, k, I, D, j, M])
+  }, [o, E, y, _, v, a, n, s, u, f, D, I, S, M, P])
 }
 
 function G() {

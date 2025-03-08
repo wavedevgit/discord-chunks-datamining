@@ -1,4 +1,4 @@
-/** Chunk was on 24389 **/
+/** Chunk was on 74329 **/
 n.d(t, {
   T: () => s,
   v: () => c
@@ -33,9 +33,9 @@ let a = "collectibles shop product details modal",
       category: s,
       shouldCheckoutWithOrbs: u,
       analyticsSource: d,
-      analyticsLocations: b,
-      returnRef: h,
-      tab: p
+      analyticsLocations: _,
+      returnRef: p,
+      tab: E
     } = e;
     u && (0, o.S6)(), (0, i.ZDy)(async () => {
       let {
@@ -48,9 +48,9 @@ let a = "collectibles shop product details modal",
           category: s,
           shouldCheckoutWithOrbs: u,
           analyticsSource: d,
-          analyticsLocations: b,
-          returnRef: h,
-          tab: p
+          analyticsLocations: _,
+          returnRef: p,
+          tab: E
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

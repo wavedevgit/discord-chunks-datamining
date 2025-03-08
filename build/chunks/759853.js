@@ -29,10 +29,10 @@ let b = ["#51BC9D"],
     } = e, {
       completionSpring: _,
       startCompletionAnimation: C
-    } = (0, f.G)(), O = (null === (t = j.userStatus) || void 0 === t ? void 0 : t.completedAt) != null, w = o.useRef(!1), S = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), P = o.useRef(null), N = (0, d.e7)([m.Z], () => m.Z.hasLayers()), E = (0, u.Z)(N), [T, A] = o.useState(null), [R, B] = o.useState(null), k = o.useRef(new i.qA({
+    } = (0, f.G)(), O = (null === (t = j.userStatus) || void 0 === t ? void 0 : t.completedAt) != null, w = o.useRef(!1), S = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), P = o.useRef(null), N = (0, d.e7)([m.Z], () => m.Z.hasLayers()), E = (0, u.Z)(N), [T, A] = o.useState(null), [B, R] = o.useState(null), k = o.useRef(new i.qA({
       gravity: 0,
       wind: 0
-    })), q = (0, i.uR)(T, R), D = o.useCallback(() => {
+    })), q = (0, i.uR)(T, B), D = o.useCallback(() => {
       if (S) return;
       let e = v.current,
         t = P.current;
@@ -146,7 +146,7 @@ let b = ["#51BC9D"],
           className: x.confetti,
           environment: k.current
         }), (0, r.jsx)(i.Ji, {
-          ref: B,
+          ref: R,
           sprites: [h],
           colors: b,
           spriteWidth: g.Ko,
