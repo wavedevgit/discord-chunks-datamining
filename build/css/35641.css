@@ -1,6 +1,6 @@
 /**
   Module ID: 35641
-  Original File Name: 9c2996b294fccc88
+  Original File Name: afb2937914057794
 **/
 .modalHeader_e6fa8e {
     display: flex;
@@ -93,7 +93,11 @@
     background-color: var(--background-secondary-alt)
 }
 
-.selectableChannelRow_e6fa8e:hover:after,.selectableChannelRow_e6fa8e:last-child:after {
+.selectableChannelRow_e6fa8e:hover:after {
+    display: none
+}
+
+.selectableChannelRow_e6fa8e:last-child:after {
     display: none
 }
 

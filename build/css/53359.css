@@ -1,6 +1,6 @@
 /**
   Module ID: 53359
-  Original File Name: 8769dbd2fac0ec72
+  Original File Name: f5ebce4c6b7b8cde
 **/
 .list_c47777 {
     max-height: 500px
@@ -86,11 +86,12 @@
     background-color: var(--background-tertiary)
 }
 
-.button_f563df:hover,.keyboard-mode .button_f563df.focused_f563df {
+.button_f563df:hover {
     background-color: var(--background-secondary-alt)
 }
 
 .keyboard-mode .button_f563df.focused_f563df {
+    background-color: var(--background-secondary-alt);
     box-shadow: 0 0 0 2px var(--blue-345)
 }
 

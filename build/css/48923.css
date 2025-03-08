@@ -1,6 +1,6 @@
 /**
   Module ID: 48923
-  Original File Name: 760b8806d7f3e2aa
+  Original File Name: 91532fce48cd1a19
 **/
 .modalRoot__5b400 {
     max-width: 340px;
@@ -939,13 +939,10 @@
 .heroAssetWrapper__5f897 {
     border-radius: 8px 8px 0 0;
     overflow: hidden;
-    right: 0;
-    top: 0
-}
-
-.heroAssetWrapper__5f897,.heroAssetWrapper__5f897:after {
     position: absolute;
     left: 0;
+    right: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     z-index: 1
@@ -955,8 +952,13 @@
     background-color: currentColor;
     bottom: 0;
     content: "";
+    height: 100%;
+    left: 0;
     -webkit-mask-image: linear-gradient(180deg,transparent,#000);
     mask-image: linear-gradient(180deg,transparent,#000);
+    position: absolute;
+    width: 100%;
+    z-index: 1;
     color: transparent
 }
 
@@ -1220,7 +1222,11 @@
     padding: 12px
 }
 
-.headingWrapper__10e9a,.stepsWrapper__10e9a:not(:last-child) {
+.stepsWrapper__10e9a:not(:last-child) {
+    margin-bottom: 12px
+}
+
+.headingWrapper__10e9a {
     margin-bottom: 12px
 }
 
@@ -2042,24 +2048,26 @@
 .heroAssetWrapper_f339f7 {
     border-radius: 8px 8px 0 0;
     overflow: hidden;
-    right: 0;
-    height: calc(100% - 38px)
-}
-
-.heroAssetWrapper_f339f7,.heroAssetWrapper_f339f7:after {
     position: absolute;
     left: 0;
+    right: 0;
     top: 0;
     width: 100%;
+    height: calc(100% - 38px);
     z-index: 1
 }
 
 .heroAssetWrapper_f339f7:after {
     background-color: currentColor;
+    top: 0;
     content: "";
     height: 100%;
+    left: 0;
     -webkit-mask-image: linear-gradient(180deg,transparent,#000);
-    mask-image: linear-gradient(180deg,transparent,#000)
+    mask-image: linear-gradient(180deg,transparent,#000);
+    position: absolute;
+    width: 100%;
+    z-index: 1
 }
 
 .heroAsset_f339f7 {

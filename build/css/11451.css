@@ -1,6 +1,6 @@
 /**
   Module ID: 11451
-  Original File Name: a24cbd4f4fdb5d70
+  Original File Name: 45bec559bc486c5c
 **/
 .spinnerContainer__74df5 {
     display: flex;
@@ -50,7 +50,11 @@
     background-color: var(--background-modifier-accent)
 }
 
-.container__74df5+.container__74df5.selected__74df5:after,.container__74df5+.container__74df5.siblingSelected__74df5:after {
+.container__74df5+.container__74df5.siblingSelected__74df5:after {
+    display: none
+}
+
+.container__74df5+.container__74df5.selected__74df5:after {
     display: none
 }
 

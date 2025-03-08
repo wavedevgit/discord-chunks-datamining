@@ -1,6 +1,6 @@
 /**
   Module ID: 96173
-  Original File Name: e03f58700587eb0a
+  Original File Name: 99dea8855e806a2b
 **/
 .container__5537c {
     min-width: 100%;
@@ -466,7 +466,11 @@
     align-items: center
 }
 
-.button__6cf35,.button__6cf35+.button__6cf35 {
+.button__6cf35 {
+    margin-left: 8px
+}
+
+.button__6cf35+.button__6cf35 {
     margin-left: 8px
 }
 

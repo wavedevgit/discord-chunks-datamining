@@ -1,6 +1,6 @@
 /**
   Module ID: 18895
-  Original File Name: bfca1082344736d0
+  Original File Name: 1616489fca39f532
 **/
 .effect_a9ddb3 {
     position: absolute;
@@ -1097,11 +1097,12 @@
     border: 1px solid var(--background-modifier-hover)
 }
 
-.theme-light .container_faa96b.isOpen_faa96b,.theme-light .container_faa96b:active {
+.theme-light .container_faa96b:active {
     border: 1px solid var(--background-modifier-selected)
 }
 
 .theme-light .container_faa96b.isOpen_faa96b {
+    border: 1px solid var(--background-modifier-selected);
     background-color: var(--background-modifier-active)
 }
 

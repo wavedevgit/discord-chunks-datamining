@@ -1,6 +1,6 @@
 /**
   Module ID: 53494
-  Original File Name: 367d33da08ed0438
+  Original File Name: 7037b2d162203986
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -2509,7 +2509,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     display: none
 }
 
-.addButton__29444.forceVisible__29444,.iconVisibility__29444:hover .addButton__29444 {
+.addButton__29444.forceVisible__29444 {
+    display: block
+}
+
+.iconVisibility__29444:hover .addButton__29444 {
     display: block
 }
 
@@ -3624,7 +3628,9 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .videoContainer__8ce85:before {
+    margin-left: 8px;
     content: "";
+    position: absolute;
     top: 1px;
     right: 1px;
     bottom: 1px;
@@ -3637,23 +3643,21 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
     mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
-    mask-composite: exclude
-}
-
-.video__8ce85,.videoContainer__8ce85:before {
-    margin-left: 8px;
-    position: absolute;
+    mask-composite: exclude;
     pointer-events: none
 }
 
 .video__8ce85 {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    pointer-events: none;
     opacity: 0.01;
+    margin-left: 8px;
     border-radius: var(--radius-sm);
     padding: 1px 0
 }
@@ -3727,7 +3731,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     text-decoration: underline
 }
 
-.enable-forced-colors .statusDiv__5cda9 .pencilIcon__5cda9,.enable-forced-colors .statusDiv__5cda9 .statusText__5cda9,.enable-forced-colors .statusDiv__5cda9:hover .pencilIcon__5cda9,.enable-forced-colors .statusDiv__5cda9:hover .statusText__5cda9 {
+.enable-forced-colors .statusDiv__5cda9 .pencilIcon__5cda9,.enable-forced-colors .statusDiv__5cda9 .statusText__5cda9 {
+    color: inherit
+}
+
+.enable-forced-colors .statusDiv__5cda9:hover .pencilIcon__5cda9,.enable-forced-colors .statusDiv__5cda9:hover .statusText__5cda9 {
     color: inherit
 }
 

@@ -1,6 +1,6 @@
 /**
   Module ID: 28102
-  Original File Name: 6f1ec834ae8e69ed
+  Original File Name: 17611a4131f067e3
 **/
 .wrapper__889ee {
     width: auto
@@ -13,7 +13,11 @@
     cursor: crosshair
 }
 
-.saturation__889ee>div,.saturation__889ee>div>div {
+.saturation__889ee>div {
+    border-radius: 3px
+}
+
+.saturation__889ee>div>div {
     border-radius: 3px
 }
 

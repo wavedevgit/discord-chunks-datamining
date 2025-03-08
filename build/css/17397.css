@@ -1,6 +1,6 @@
 /**
   Module ID: 17397
-  Original File Name: e67bc51ee1ea2e9b
+  Original File Name: 2d5913afc3457b58
 **/
 @use postcss-pxtorem;
 
@@ -515,7 +515,11 @@
     filter: drop-shadow(var(--elevation-medium))
 }
 
-.avatar_c19a55.clickable_c19a55:active,.avatar_c19a55.clickable_c19a55:active+.avatarDecoration_c19a55 {
+.avatar_c19a55.clickable_c19a55:active {
+    transform: translateY(1px)
+}
+
+.avatar_c19a55.clickable_c19a55:active+.avatarDecoration_c19a55 {
     transform: translateY(1px)
 }
 
@@ -622,7 +626,11 @@
     white-space: nowrap
 }
 
-.keyboard-mode .wrapper_c19a55:focus .timestampVisibleOnHover_c19a55,.mouse-mode .wrapper_c19a55:hover .timestampVisibleOnHover_c19a55 {
+.mouse-mode .wrapper_c19a55:hover .timestampVisibleOnHover_c19a55 {
+    opacity: 1
+}
+
+.keyboard-mode .wrapper_c19a55:focus .timestampVisibleOnHover_c19a55 {
     opacity: 1
 }
 

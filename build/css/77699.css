@@ -1,6 +1,6 @@
 /**
   Module ID: 77699
-  Original File Name: 41f532fab6faf3d5
+  Original File Name: 443d0939fff9491c
 **/
 .container__270b2 {
     flex-direction: row;
@@ -175,7 +175,11 @@
     align-items: center
 }
 
-.button__6cf35,.button__6cf35+.button__6cf35 {
+.button__6cf35 {
+    margin-left: 8px
+}
+
+.button__6cf35+.button__6cf35 {
     margin-left: 8px
 }
 

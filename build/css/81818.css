@@ -1,6 +1,6 @@
 /**
   Module ID: 81818
-  Original File Name: 5c65fb201e13b17c
+  Original File Name: 2594a79191020dd0
 **/
 .row__19fd1 {
     align-items: center;
@@ -370,7 +370,11 @@
     object-fit: contain
 }
 
-.selected__0f2e8,.selected__0f2e8:hover {
+.selected__0f2e8 {
+    background-color: var(--background-modifier-selected)
+}
+
+.selected__0f2e8:hover {
     background-color: var(--background-modifier-selected)
 }
 

@@ -1,6 +1,6 @@
 /**
   Module ID: 1815
-  Original File Name: bb44990bd65b5fee
+  Original File Name: 563d16611250bb74
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -467,7 +467,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 1rem;
+    font-size: 16px;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -3731,7 +3731,11 @@ h1.title_feb59c,h2.title_feb59c {
     max-width: var(--custom-button-button-lg-width)
 }
 
-.button_bf1984:active,.button_bf1984:hover {
+.button_bf1984:hover {
+    background-color: var(--white-500)!important
+}
+
+.button_bf1984:active {
     background-color: var(--white-500)!important
 }
 
@@ -5963,7 +5967,13 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
     border-radius: 20px
 }
 
-.card_f8e6bf:hover .carouselCardImage_f8e6bf,.card_f8e6bf:hover .carouselCardImageGrayscale_f8e6bf {
+.card_f8e6bf:hover .carouselCardImage_f8e6bf {
+    scale: 116.5%;
+    margin-left: 0;
+    margin-bottom: -9px
+}
+
+.card_f8e6bf:hover .carouselCardImageGrayscale_f8e6bf {
     scale: 116.5%;
     margin-left: 0;
     margin-bottom: -9px
@@ -5999,7 +6009,13 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 }
 
 @media screen and (max-width:1330px) {
-    .card_f8e6bf:hover .carouselCardImage_f8e6bf,.card_f8e6bf:hover .carouselCardImageGrayscale_f8e6bf {
+    .card_f8e6bf:hover .carouselCardImage_f8e6bf {
+        scale: 122%;
+        margin-left: 0;
+        margin-bottom: -9px
+    }
+
+    .card_f8e6bf:hover .carouselCardImageGrayscale_f8e6bf {
         scale: 122%;
         margin-left: 0;
         margin-bottom: -9px
@@ -10983,7 +10999,11 @@ html:not(.visual-refresh) .phoneField_a0c54f .countryButton_a0c54f {
     border-radius: 3px
 }
 
-html:not(.visual-refresh) .phoneField_a0c54f .countryCode_a0c54f,html:not(.visual-refresh) .phoneField_a0c54f .plusSign_a0c54f {
+html:not(.visual-refresh) .phoneField_a0c54f .plusSign_a0c54f {
+    color: var(--white-500)
+}
+
+html:not(.visual-refresh) .phoneField_a0c54f .countryCode_a0c54f {
     color: var(--white-500)
 }
 
@@ -15775,7 +15795,11 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
     opacity: .8
 }
 
-.header__7e090 .closeButton__7e090:hover,.enable-forced-colors .header__7e090 .closeButton__7e090 {
+.header__7e090 .closeButton__7e090:hover {
+    opacity: 1
+}
+
+.enable-forced-colors .header__7e090 .closeButton__7e090 {
     opacity: 1
 }
 
@@ -16074,7 +16098,11 @@ html .invoiceCancelRow__968a4 {
     margin-top: 0
 }
 
-.description__803f2 p:last-child,.groupTitle__803f2 {
+.description__803f2 p:last-child {
+    margin-bottom: 0
+}
+
+.groupTitle__803f2 {
     margin-bottom: 0
 }
 

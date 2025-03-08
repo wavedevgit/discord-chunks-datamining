@@ -1,6 +1,6 @@
 /**
   Module ID: 23150
-  Original File Name: bcadbc04c430db48
+  Original File Name: efed148097bde0fc
 **/
 .fallback_b789ab {
     box-sizing: border-box;
@@ -418,7 +418,19 @@
     border-bottom-right-radius: var(--radius-xs)
 }
 
-.theme-dark .message__5126c.selected__5126c,.theme-dark.mouse-mode.full-motion .message__5126c:hover,.theme-dark.mouse-mode.full-motion.visual-refresh .message__5126c:hover,.theme-dark.visual-refresh .message__5126c.selected__5126c,.theme-light .message__5126c.selected__5126c,.theme-light.mouse-mode.full-motion .message__5126c:hover,.theme-light.mouse-mode.full-motion.visual-refresh .message__5126c:hover,.theme-light.visual-refresh .message__5126c.selected__5126c {
+.theme-dark .message__5126c.selected__5126c,.theme-dark.mouse-mode.full-motion .message__5126c:hover {
+    background: var(--background-message-hover)
+}
+
+.theme-dark.mouse-mode.full-motion.visual-refresh .message__5126c:hover,.theme-dark.visual-refresh .message__5126c.selected__5126c {
+    background: var(--background-message-hover)
+}
+
+.theme-light .message__5126c.selected__5126c,.theme-light.mouse-mode.full-motion .message__5126c:hover {
+    background: var(--background-message-hover)
+}
+
+.theme-light.mouse-mode.full-motion.visual-refresh .message__5126c:hover,.theme-light.visual-refresh .message__5126c.selected__5126c {
     background: var(--background-message-hover)
 }
 
@@ -776,23 +788,23 @@
     content: "";
     border-radius: var(--radius-sm);
     box-shadow: 0 0 1px 1px var(--black) inset;
-    pointer-events: none;
-    left: 0;
-    width: 100%
-}
-
-.heroContainer__813d8:after,.heroSplash__813d8 {
     position: absolute;
+    pointer-events: none;
     top: 0;
+    left: 0;
+    width: 100%;
     height: 100%
 }
 
 .heroSplash__813d8 {
+    height: 100%;
     width: 220px;
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: top;
     object-position: top;
+    position: absolute;
+    top: 0;
     right: 0;
     border-top-right-radius: var(--radius-sm);
     border-bottom-right-radius: var(--radius-sm);
@@ -1250,7 +1262,11 @@
     object-fit: contain
 }
 
-.selected__0f2e8,.selected__0f2e8:hover {
+.selected__0f2e8 {
+    background-color: var(--background-modifier-selected)
+}
+
+.selected__0f2e8:hover {
     background-color: var(--background-modifier-selected)
 }
 

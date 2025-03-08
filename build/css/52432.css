@@ -1,6 +1,6 @@
 /**
   Module ID: 52432
-  Original File Name: 9a445dd0707e8040
+  Original File Name: 240baddd21fc6a23
 **/
 .root__66e7e {
     border-radius: 8px;
@@ -102,7 +102,10 @@
 }
 
 .emojiContainer__5c58b.selected__5c58b .emoji__5c58b,.emojiContainer__5c58b:hover .emoji__5c58b {
-    filter: none;
+    filter: none
+}
+
+.emojiContainer__5c58b.selected__5c58b .emoji__5c58b,.emojiContainer__5c58b:hover .emoji__5c58b {
     opacity: 1
 }
 

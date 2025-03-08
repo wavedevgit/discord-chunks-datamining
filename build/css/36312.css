@@ -1,6 +1,6 @@
 /**
   Module ID: 36312
-  Original File Name: c8af2436d124cc6e
+  Original File Name: 94fc930e82aa80ef
 **/
 .modal__2bb83 {
     min-height: 150px
@@ -50,10 +50,12 @@
 }
 
 .listItem__2bb83 {
+    margin: 0;
+    padding: 0;
     border-top: 0
 }
 
-.listItem__2bb83,.listItem__2bb83.active__2bb83,.listItem__2bb83:hover {
+.listItem__2bb83.active__2bb83,.listItem__2bb83:hover {
     margin: 0;
     padding: 0
 }

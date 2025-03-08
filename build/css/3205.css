@@ -1,6 +1,6 @@
 /**
   Module ID: 3205
-  Original File Name: eeed99e5c8f88ba0
+  Original File Name: 0c35c122d4c41824
 **/
 .popoutContainer_a6cedd {
     display: flex;
@@ -358,7 +358,11 @@
     transition: color .2s ease-in-out
 }
 
-.clickable_a6eb6a:hover,.clickable_a6eb6a:hover>* {
+.clickable_a6eb6a:hover {
+    color: var(--interactive-active)
+}
+
+.clickable_a6eb6a:hover>* {
     color: var(--interactive-active)
 }
 
@@ -1084,12 +1088,17 @@
 }
 
 .addFormFieldText_eaaeee {
+    color: var(--interactive-normal);
     font-weight: 600;
     margin-left: 8px;
     cursor: pointer
 }
 
-.addFormFieldText_eaaeee,.multipleChoiceFixedTextColor_eaaeee:active:not([aria-checked=true]),.multipleChoiceFixedTextColor_eaaeee:hover:not([aria-checked=true]) {
+.multipleChoiceFixedTextColor_eaaeee:hover:not([aria-checked=true]) {
+    color: var(--interactive-normal)
+}
+
+.multipleChoiceFixedTextColor_eaaeee:active:not([aria-checked=true]) {
     color: var(--interactive-normal)
 }
 
@@ -5956,7 +5965,11 @@ div:has(>div>.modal_d7831d) {
     visibility: hidden
 }
 
-.containerFocused__5d756 .closeIcon__5d756,.removeButton__5d756:hover .closeIcon__5d756 {
+.removeButton__5d756:hover .closeIcon__5d756 {
+    visibility: visible
+}
+
+.containerFocused__5d756 .closeIcon__5d756 {
     visibility: visible
 }
 
@@ -7099,10 +7112,11 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .removeButtonDisabled__9a73f {
+    color: var(--interactive-muted);
     cursor: not-allowed
 }
 
-.removeButtonDisabled__9a73f,.removeButtonDisabled__9a73f:hover {
+.removeButtonDisabled__9a73f:hover {
     color: var(--interactive-muted)
 }
 
@@ -7114,7 +7128,11 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     border: 1px solid CanvasText
 }
 
-.enable-forced-colors .removeButton__9a73f,.enable-forced-colors .removeButton__9a73f:hover {
+.enable-forced-colors .removeButton__9a73f {
+    color: ButtonText
+}
+
+.enable-forced-colors .removeButton__9a73f:hover {
     color: ButtonText
 }
 
@@ -7122,7 +7140,11 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     color: Highlight
 }
 
-.enable-forced-colors .removeButtonDisabled__9a73f,.enable-forced-colors .removeButtonDisabled__9a73f:hover {
+.enable-forced-colors .removeButtonDisabled__9a73f {
+    color: GrayText
+}
+
+.enable-forced-colors .removeButtonDisabled__9a73f:hover {
     color: GrayText
 }
 
@@ -7599,20 +7621,23 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .roleRow__5f97b:before {
-    top: 0
-}
-
-.roleRow__5f97b:before,.roleRow__5f97b:last-child:after {
     content: "";
     position: absolute;
     left: 32px;
     right: 8px;
     height: 1px;
+    top: 0;
     background-color: var(--background-modifier-accent)
 }
 
 .roleRow__5f97b:last-child:after {
-    bottom: -1px
+    content: "";
+    position: absolute;
+    left: 32px;
+    right: 8px;
+    height: 1px;
+    bottom: -1px;
+    background-color: var(--background-modifier-accent)
 }
 
 .roleRow__5f97b:hover+.roleRow__5f97b:before,.roleRow__5f97b:hover:after,.roleRow__5f97b:hover:before {
@@ -9051,7 +9076,11 @@ html:not(.visual-refresh) .bannedUserModal_cdb2b0 .reasonHeader_cdb2b0 {
     border-color: var(--text-link)
 }
 
-:where(.visual-refresh) .inputInner_a97616,:where(.visual-refresh) .inputInner_a97616:hover {
+:where(.visual-refresh) .inputInner_a97616 {
+    border: none
+}
+
+:where(.visual-refresh) .inputInner_a97616:hover {
     border: none
 }
 
@@ -12094,7 +12123,15 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     min-height: 60px
 }
 
-.row__15634.active__15634 .soundPreviewIcon__15634,.row__15634:hover .soundEditContainer__15634,.row__15634:hover .soundPreviewIcon__15634 {
+.row__15634:hover .soundEditContainer__15634 {
+    opacity: 1
+}
+
+.row__15634:hover .soundPreviewIcon__15634 {
+    opacity: 1
+}
+
+.row__15634.active__15634 .soundPreviewIcon__15634 {
     opacity: 1
 }
 
@@ -12336,7 +12373,11 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     color: var(--interactive-active)
 }
 
-.actionRemove__83b1d,.actionRemove__83b1d:focus,.actionRemove__83b1d:hover {
+.actionRemove__83b1d {
+    color: var(--text-danger)
+}
+
+.actionRemove__83b1d:focus,.actionRemove__83b1d:hover {
     color: var(--text-danger)
 }
 
@@ -13613,7 +13654,15 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     padding: 0
 }
 
-.traitInput__4cbea:active,.traitInput__4cbea:focus,.traitInput__4cbea:hover {
+.traitInput__4cbea:focus {
+    border: none
+}
+
+.traitInput__4cbea:hover {
+    border: none
+}
+
+.traitInput__4cbea:active {
     border: none
 }
 

@@ -1,6 +1,6 @@
 /**
   Module ID: 63844
-  Original File Name: 35842c0e4eaa35be
+  Original File Name: 695e18b0eb889e9a
 **/
 .header__7e090 {
     background-image: url(/assets/cb4131669938b6ad.svg);
@@ -33,7 +33,11 @@
     opacity: .8
 }
 
-.header__7e090 .closeButton__7e090:hover,.enable-forced-colors .header__7e090 .closeButton__7e090 {
+.header__7e090 .closeButton__7e090:hover {
+    opacity: 1
+}
+
+.enable-forced-colors .header__7e090 .closeButton__7e090 {
     opacity: 1
 }
 

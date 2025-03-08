@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 732273bc5766cf86
+  Original File Name: 3a3c37c335a6b4c0
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -48,7 +48,11 @@
     border-bottom-color: var(--brand-500)
 }
 
-.tabItem_fe7ab2.selected_fe7ab2,.tabItem_fe7ab2:active {
+.tabItem_fe7ab2:active {
+    border-bottom-color: var(--control-brand-foreground)
+}
+
+.tabItem_fe7ab2.selected_fe7ab2 {
     border-bottom-color: var(--control-brand-foreground)
 }
 

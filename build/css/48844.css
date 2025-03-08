@@ -1,6 +1,6 @@
 /**
   Module ID: 48844
-  Original File Name: dee0721413f120ac
+  Original File Name: 4c712d946506c3c7
 **/
 .content__72a27 {
     margin-top: -5px;
@@ -71,25 +71,22 @@
 
 .scrollBg__66682 {
     opacity: .8;
-    position: absolute;
-    top: 0;
     left: 24px;
     right: 24px;
     bottom: 0;
-    background-color: var(--background-secondary);
     border-radius: 20px;
     box-shadow: var(--elevation-high)
+}
+
+.scrollBg__66682,.scrollBg__66682 .scrollBgTop__66682 {
+    position: absolute;
+    top: 0;
+    background-color: var(--background-secondary)
 }
 
 .scrollBg__66682 .scrollBgTop__66682 {
     left: 0;
     right: -24px;
-    top: 0;
-    background-color: var(--background-secondary)
-}
-
-.scrollBg__66682 .scrollBgTop__66682,.scrollBg__66682 .scrollBgTop__66682:before {
-    position: absolute;
     height: 36px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px
@@ -97,21 +94,22 @@
 
 .scrollBg__66682 .scrollBgTop__66682:before {
     content: "";
+    position: absolute;
     background-color: var(--background-tertiary);
     bottom: 0;
     right: 0;
-    width: 24px
+    height: 36px;
+    width: 24px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px
 }
 
 .scrollBg__66682 .scrollBgBottom__66682 {
-    left: -20px;
-    background-color: var(--background-tertiary)
-}
-
-.scrollBg__66682 .scrollBgBottom__66682,.scrollBg__66682 .scrollBgBottom__66682:after {
     position: absolute;
+    left: -20px;
     right: 0;
     bottom: 0;
+    background-color: var(--background-tertiary);
     height: 36px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px
@@ -119,8 +117,14 @@
 
 .scrollBg__66682 .scrollBgBottom__66682:after {
     content: "";
+    position: absolute;
     background-color: var(--background-secondary);
-    width: 24px
+    bottom: 0;
+    right: 0;
+    height: 36px;
+    width: 24px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px
 }
 
 .signatureBlock__66682 {
@@ -318,13 +322,10 @@
 }
 
 .scrollBg_f8a1b1 .scrollBgTop_f8a1b1 {
+    position: absolute;
     left: 0;
     right: -24px;
-    top: 0
-}
-
-.scrollBg_f8a1b1 .scrollBgTop_f8a1b1,.scrollBg_f8a1b1 .scrollBgTop_f8a1b1:before {
-    position: absolute;
+    top: 0;
     height: 36px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px
@@ -332,21 +333,22 @@
 
 .scrollBg_f8a1b1 .scrollBgTop_f8a1b1:before {
     content: "";
+    position: absolute;
     bottom: 0;
     right: 0;
+    height: 36px;
     width: 24px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     background-color: var(--background-tertiary)
 }
 
 .scrollBg_f8a1b1 .scrollBgBottom_f8a1b1 {
-    left: -20px;
-    background-color: var(--background-tertiary)
-}
-
-.scrollBg_f8a1b1 .scrollBgBottom_f8a1b1,.scrollBg_f8a1b1 .scrollBgBottom_f8a1b1:after {
     position: absolute;
+    left: -20px;
     right: 0;
     bottom: 0;
+    background-color: var(--background-tertiary);
     height: 36px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px
@@ -354,8 +356,14 @@
 
 .scrollBg_f8a1b1 .scrollBgBottom_f8a1b1:after {
     content: "";
+    position: absolute;
     background-color: var(--background-secondary);
-    width: 24px
+    bottom: 0;
+    right: 0;
+    height: 36px;
+    width: 24px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px
 }
 
 .overviewSidebarWrapper_f8a1b1 {
@@ -449,11 +457,19 @@
     cursor: pointer
 }
 
-.theme-light .scrollBg_f8a1b1,.theme-light .scrollBg_f8a1b1 .scrollBgBottom_f8a1b1:after,.theme-light .scrollBg_f8a1b1 .scrollBgTop_f8a1b1 {
+.theme-light .scrollBg_f8a1b1,.theme-light .scrollBg_f8a1b1 .scrollBgTop_f8a1b1 {
     background-color: var(--background-primary)
 }
 
-.theme-dark .scrollBg_f8a1b1,.theme-dark .scrollBg_f8a1b1 .scrollBgBottom_f8a1b1:after,.theme-dark .scrollBg_f8a1b1 .scrollBgTop_f8a1b1 {
+.theme-light .scrollBg_f8a1b1 .scrollBgBottom_f8a1b1:after {
+    background-color: var(--background-primary)
+}
+
+.theme-dark .scrollBg_f8a1b1,.theme-dark .scrollBg_f8a1b1 .scrollBgTop_f8a1b1 {
+    background-color: var(--background-secondary)
+}
+
+.theme-dark .scrollBg_f8a1b1 .scrollBgBottom_f8a1b1:after {
     background-color: var(--background-secondary)
 }
 

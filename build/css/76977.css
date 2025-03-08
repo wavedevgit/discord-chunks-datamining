@@ -1,6 +1,6 @@
 /**
   Module ID: 76977
-  Original File Name: 21150a63ddbb6170
+  Original File Name: 4de9420daddf824b
 **/
 .key__1728a {
     display: inline-block;
@@ -377,7 +377,11 @@
     cursor: pointer
 }
 
-.icon__777cc.toggledIconOn__777cc,.icon__777cc:hover {
+.icon__777cc:hover {
+    opacity: 1
+}
+
+.icon__777cc.toggledIconOn__777cc {
     opacity: 1
 }
 
@@ -572,15 +576,13 @@
 }
 
 .wrapper__88a53 {
+    box-sizing: border-box;
     position: absolute
-}
-
-.wrapper__88a53,.wrapper__88a53>* {
-    box-sizing: border-box
 }
 
 .wrapper__88a53>* {
     position: relative;
+    box-sizing: border-box;
     width: 100%;
     height: 100%
 }
@@ -993,7 +995,11 @@
     font-weight: 500
 }
 
-.theme-dark .inGame_ee4d7e:not(.inGameActive_ee4d7e) .messages_ee4d7e,.theme-dark .inGame_ee4d7e:not(.inGameActive_ee4d7e) .messages_ee4d7e .scroller_ee4d7e {
+.theme-dark .inGame_ee4d7e:not(.inGameActive_ee4d7e) .messages_ee4d7e {
+    background-color: transparent
+}
+
+.theme-dark .inGame_ee4d7e:not(.inGameActive_ee4d7e) .messages_ee4d7e .scroller_ee4d7e {
     background-color: transparent
 }
 

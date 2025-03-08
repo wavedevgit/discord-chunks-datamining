@@ -1,6 +1,6 @@
 /**
   Module ID: 77246
-  Original File Name: 4174e1a1307e6e83
+  Original File Name: 39fa2b1b9d0151f0
 **/
 .content__7e015 {
     border-radius: 8px;
@@ -55,10 +55,11 @@
 }
 
 .selectedOption__7e015 {
+    border: 2px solid var(--brand-500);
     padding: 15px
 }
 
-.selectedOption__7e015,.selectedOption__7e015:hover {
+.selectedOption__7e015:hover {
     border: 2px solid var(--brand-500)
 }
 

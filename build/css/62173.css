@@ -1,6 +1,6 @@
 /**
   Module ID: 62173
-  Original File Name: 9c3ad2ade10a698d
+  Original File Name: 279452fb7187d9ac
 **/
 .wrapper__1bb33 {
     position: relative
@@ -20,14 +20,16 @@
     box-shadow: 0 0 28px 4px var(--premium-tier-2-purple-for-gradients-2)
 }
 
-.contentGlow__1bb33:hover,.initialGlowDown__1bb33,.initialGlowUp__1bb33 {
+.initialGlowDown__1bb33,.initialGlowUp__1bb33 {
     border-radius: 8px;
     transition: .5s
 }
 
 .contentGlow__1bb33:hover {
+    border-radius: 8px;
     box-shadow: 0 0 28px 4px var(--premium-tier-2-purple-for-gradients-2);
-    animation-duration: .5s
+    animation-duration: .5s;
+    transition: .5s
 }
 
 .innerContent__1bb33 {

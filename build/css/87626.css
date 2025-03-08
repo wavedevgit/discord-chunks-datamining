@@ -1,6 +1,6 @@
 /**
   Module ID: 87626
-  Original File Name: 4019397eed61a7a5
+  Original File Name: d0da95849f826d1e
 **/
 @value contentWidthRestrictedLimit: 848px;
 
@@ -147,21 +147,23 @@
 }
 
 .buttonPrimary__0c41a {
-    background-color: hsl(235 calc(1*85.6%) 64.7%)
-}
-
-@supports (color: hsl(0 0% 0% / 0)) and (top: var(--f)) {
-    .buttonPrimary__0c41a {
-        background-color: hsl(235 calc(var(--saturation-factor, 1)*85.6%) 64.7%)
-    }
-}
-
-.buttonPrimary__0c41a,.buttonPrimary__0c41a:hover {
+    background-color: hsl(235 calc(1*85.6%) 64.7%);
     color: hsl(0 calc(1*0%) 100%)
 }
 
 @supports (color: hsl(0 0% 0% / 0)) and (top: var(--f)) {
-    .buttonPrimary__0c41a,.buttonPrimary__0c41a:hover {
+    .buttonPrimary__0c41a {
+        background-color: hsl(235 calc(var(--saturation-factor, 1)*85.6%) 64.7%);
+        color: hsl(0 calc(var(--saturation-factor, 1)*0%) 100%)
+    }
+}
+
+.buttonPrimary__0c41a:hover {
+    color: hsl(0 calc(1*0%) 100%)
+}
+
+@supports (color: hsl(0 0% 0% / 0)) and (top: var(--f)) {
+    .buttonPrimary__0c41a:hover {
         color: hsl(0 calc(var(--saturation-factor, 1)*0%) 100%)
     }
 }
@@ -237,21 +239,23 @@
 
     .button__0c41a {
         background-color: hsl(0 calc(1*0%) 100%);
+        color: hsl(235 calc(1*85.6%) 64.7%);
         margin-top: 16px;
         align-self: center
     }
 
 @    supports (color: hsl(0 0% 0% / 0)) and (top: var(--f)) {
-        .button__0c41a{background-color: hsl(0 calc(var(--saturation-factor, 1)*0%) 100%)
+        .button__0c41a{background-color: hsl(0 calc(var(--saturation-factor, 1)*0%) 100%);
+        color: hsl(235 calc(var(--saturation-factor, 1)*85.6%) 64.7%)
     }
 }
 
-.button__0c41a,.button__0c41a:hover {
+.button__0c41a:hover {
     color: hsl(235 calc(1*85.6%) 64.7%)
 }
 
 @supports (color: hsl(0 0% 0% / 0)) and (top: var(--f)) {
-    .button__0c41a,.button__0c41a:hover {
+    .button__0c41a:hover {
         color: hsl(235 calc(var(--saturation-factor, 1)*85.6%) 64.7%)
     }
 }}
@@ -313,7 +317,11 @@
     opacity: .8
 }
 
-.opener_dda9b4:hover,.openerOpen_dda9b4 {
+.opener_dda9b4:hover {
+    opacity: 1
+}
+
+.openerOpen_dda9b4 {
     opacity: 1
 }
 

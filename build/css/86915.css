@@ -1,6 +1,6 @@
 /**
   Module ID: 86915
-  Original File Name: c30cee483ced0f1e
+  Original File Name: ff895c015028ecde
 **/
 .iconButton_aa66d3 {
     position: relative;
@@ -336,7 +336,11 @@
     transition: opacity .2s ease
 }
 
-.sidebarHeader__0ab2c:hover,.sidebarHeader__0ab2c:hover .addRoleIcon__0ab2c {
+.sidebarHeader__0ab2c:hover {
+    opacity: 1
+}
+
+.sidebarHeader__0ab2c:hover .addRoleIcon__0ab2c {
     opacity: 1
 }
 
@@ -592,10 +596,6 @@
 }
 
 .dropIndicatorBefore__3f6df:before {
-    left: -5px
-}
-
-.dropIndicatorAfter__3f6df:after,.dropIndicatorBefore__3f6df:before {
     background-color: var(--brand-500);
     border-radius: 2px;
     content: "";
@@ -604,10 +604,20 @@
     z-index: 1;
     position: absolute;
     top: 0;
-    bottom: 0
+    bottom: 0;
+    left: -5px
 }
 
 .dropIndicatorAfter__3f6df:after {
+    background-color: var(--brand-500);
+    border-radius: 2px;
+    content: "";
+    width: 2px;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
     right: -5px
 }
 

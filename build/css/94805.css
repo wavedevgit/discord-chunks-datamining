@@ -1,6 +1,6 @@
 /**
   Module ID: 94805
-  Original File Name: e21b09162671e9e5
+  Original File Name: 9851a47760454ab9
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -756,7 +756,14 @@
     border: 1px solid var(--background-modifier-accent)
 }
 
-.fieldBackground_d48a51,.fieldBackground_d48a51:hover:not(:focus) {
+.fieldBackground_d48a51 {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-tertiary);
+    border-radius: 4px;
+    opacity: 1
+}
+
+.fieldBackground_d48a51:hover:not(:focus) {
     background-color: var(--background-secondary);
     border: 1px solid var(--background-tertiary);
     border-radius: 4px;

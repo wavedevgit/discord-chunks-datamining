@@ -1,6 +1,6 @@
 /**
   Module ID: 76030
-  Original File Name: f5480aad2fea218e
+  Original File Name: 4105d9c2eb92ddaf
 **/
 .image__04666 {
     width: 100%;
@@ -1959,7 +1959,11 @@ div.clanTagBadgeContainer__07f91 {
     flex-shrink: 0
 }
 
-.optionsActive__07f91,.optionsButton__07f91:hover {
+.optionsButton__07f91:hover {
+    background: var(--bg-overlay-active,var(--background-modifier-active))
+}
+
+.optionsActive__07f91 {
     background: var(--bg-overlay-active,var(--background-modifier-active))
 }
 
@@ -5874,7 +5878,11 @@ html .progress__61462 {
     gap: var(--spacing-4)
 }
 
-.accessory__09bc1:hover,.accessory__09bc1:hover .accessoryText__09bc1 {
+.accessory__09bc1:hover {
+    color: var(--interactive-hover)
+}
+
+.accessory__09bc1:hover .accessoryText__09bc1 {
     color: var(--interactive-hover)
 }
 
@@ -6567,12 +6575,18 @@ html .progress__61462 {
 }
 
 .progressBar_ef0e9b:after {
+    background-color: currentColor;
+    border-radius: 4px;
     content: "";
+    height: 100%;
     opacity: .2;
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%
 }
 
-.progressBar_ef0e9b:after,.progressBarFill_ef0e9b {
+.progressBarFill_ef0e9b {
     background-color: currentColor;
     border-radius: 4px;
     height: 100%;
@@ -12629,7 +12643,11 @@ html .progress__61462 {
     color: var(--interactive-hover)
 }
 
-.closeIcon__45690:active,.visual-refresh .closeIcon__45690:hover {
+.closeIcon__45690:active {
+    color: var(--interactive-active)
+}
+
+.visual-refresh .closeIcon__45690:hover {
     color: var(--interactive-active)
 }
 

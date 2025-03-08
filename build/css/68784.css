@@ -1,6 +1,6 @@
 /**
   Module ID: 68784
-  Original File Name: 171e83f01cd23510
+  Original File Name: e69eec1e1a0a9391
 **/
 .answerRow__7b848 {
     display: grid;
@@ -305,11 +305,12 @@
     transition: background-color .2s var(--custom-button-transition-duration) ease, border-color var(--custom-button-transition-duration) ease
 }
 
-.option__20987:hover,.optionSelected__20987 {
+.option__20987:hover {
     background-color: var(--background-floating)
 }
 
 .optionSelected__20987 {
+    background-color: var(--background-floating);
     border: 2px solid var(--brand-500)
 }
 

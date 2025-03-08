@@ -1,6 +1,6 @@
 /**
   Module ID: 22942
-  Original File Name: afec4e776d2666fa
+  Original File Name: 9d50795c4fd7f595
 **/
 .modalRoot_d507dd {
     height: 100%;
@@ -59,10 +59,11 @@
 }
 
 .navButtonActive_d507dd {
-    background-color: var(--background-accent)
+    background-color: var(--background-accent);
+    color: var(--white-500)
 }
 
-.navButtonActive_d507dd,.navButtonActive_d507dd:hover {
+.navButtonActive_d507dd:hover {
     color: var(--white-500)
 }
 

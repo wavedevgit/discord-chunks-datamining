@@ -1,6 +1,6 @@
 /**
   Module ID: 13981
-  Original File Name: d07c689794b1def1
+  Original File Name: 4f5af81ca0ed3c7f
 **/
 .card__594f1,.spacing__594f1 {
     margin-bottom: 20px
@@ -154,7 +154,11 @@ html:not(.visual-refresh) .phoneField_a0c54f .countryButton_a0c54f {
     border-radius: 3px
 }
 
-html:not(.visual-refresh) .phoneField_a0c54f .countryCode_a0c54f,html:not(.visual-refresh) .phoneField_a0c54f .plusSign_a0c54f {
+html:not(.visual-refresh) .phoneField_a0c54f .plusSign_a0c54f {
+    color: var(--white-500)
+}
+
+html:not(.visual-refresh) .phoneField_a0c54f .countryCode_a0c54f {
     color: var(--white-500)
 }
 

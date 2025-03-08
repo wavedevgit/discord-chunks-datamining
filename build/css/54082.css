@@ -1,6 +1,6 @@
 /**
   Module ID: 54082
-  Original File Name: c88020eabdb75afd
+  Original File Name: e7387de24920e5f6
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -59,7 +59,11 @@
     border-left-color: var(--white-500)
 }
 
-.theme-light.contentNarrowMedia__79cbe.topArrow__79cbe:before,.theme-light .contentNarrowNoMedia__79cbe.topArrow__79cbe:before,.theme-light.contentWideNoMedia__79cbe.topArrow__79cbe:before,.theme-light .contentWideNoMedia__79cbe.topArrow__79cbe:before,.theme-light.topArrow__79cbe:before,.theme-light .topArrow__79cbe:before {
+.theme-light.topArrow__79cbe:before,.theme-light .topArrow__79cbe:before {
+    border-bottom-color: var(--white-500)
+}
+
+.theme-light.contentNarrowMedia__79cbe.topArrow__79cbe:before,.theme-light .contentNarrowNoMedia__79cbe.topArrow__79cbe:before,.theme-light.contentWideNoMedia__79cbe.topArrow__79cbe:before,.theme-light .contentWideNoMedia__79cbe.topArrow__79cbe:before {
     border-bottom-color: var(--white-500)
 }
 
@@ -79,7 +83,11 @@
     border-left-color: var(--background-surface-higher)
 }
 
-.visual-refresh.contentNarrowMedia__79cbe.topArrow__79cbe:before,.visual-refresh .contentNarrowNoMedia__79cbe.topArrow__79cbe:before,.visual-refresh.contentWideNoMedia__79cbe.topArrow__79cbe:before,.visual-refresh .contentWideNoMedia__79cbe.topArrow__79cbe:before,.visual-refresh.topArrow__79cbe:before,.visual-refresh .topArrow__79cbe:before {
+.visual-refresh.topArrow__79cbe:before,.visual-refresh .topArrow__79cbe:before {
+    border-bottom-color: var(--background-surface-higher)
+}
+
+.visual-refresh.contentNarrowMedia__79cbe.topArrow__79cbe:before,.visual-refresh .contentNarrowNoMedia__79cbe.topArrow__79cbe:before,.visual-refresh.contentWideNoMedia__79cbe.topArrow__79cbe:before,.visual-refresh .contentWideNoMedia__79cbe.topArrow__79cbe:before {
     border-bottom-color: var(--background-surface-higher)
 }
 
@@ -1259,7 +1267,11 @@ strong {
     width: 440px
 }
 
-.searchBar_cba592,html:not(.visual-refresh) .header_cba592 {
+html:not(.visual-refresh) .header_cba592 {
+    padding-bottom: var(--space-8)
+}
+
+.searchBar_cba592 {
     padding-bottom: var(--space-8)
 }
 
@@ -1971,7 +1983,11 @@ strong {
     gap: var(--spacing-4)
 }
 
-.experimentOverlayTitle__2f4f7.idle__2f4f7,.experimentOverlayTitle__2f4f7:empty {
+.experimentOverlayTitle__2f4f7.idle__2f4f7 {
+    opacity: 0
+}
+
+.experimentOverlayTitle__2f4f7:empty {
     opacity: 0
 }
 
@@ -3296,7 +3312,11 @@ strong {
     transform: scale(1)
 }
 
-.active__26d03,.button__26d03:hover .iconHover__26d03 {
+.active__26d03 {
+    transform: scale(1.1)
+}
+
+.button__26d03:hover .iconHover__26d03 {
     transform: scale(1.1)
 }
 
@@ -5674,11 +5694,12 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     background-color: var(--background-tertiary)
 }
 
-.button_f563df:hover,.keyboard-mode .button_f563df.focused_f563df {
+.button_f563df:hover {
     background-color: var(--background-secondary-alt)
 }
 
 .keyboard-mode .button_f563df.focused_f563df {
+    background-color: var(--background-secondary-alt);
     box-shadow: 0 0 0 2px var(--blue-345)
 }
 
@@ -6911,7 +6932,11 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     width: 100%
 }
 
-.active__34c2c,.active__34c2c:hover {
+.active__34c2c {
+    color: var(--text-brand)
+}
+
+.active__34c2c:hover {
     color: var(--text-brand)
 }
 
@@ -8568,7 +8593,15 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     color: var(--interactive-normal)
 }
 
-.button_e6e74f:active,.button_e6e74f:hover,.buttonActive_e6e74f {
+.button_e6e74f:hover {
+    color: var(--interactive-active)
+}
+
+.button_e6e74f:active {
+    color: var(--interactive-active)
+}
+
+.buttonActive_e6e74f {
     color: var(--interactive-active)
 }
 
@@ -9028,25 +9061,22 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .scrollBg__66682 {
     opacity: .8;
-    position: absolute;
-    top: 0;
     left: 24px;
     right: 24px;
     bottom: 0;
-    background-color: var(--background-secondary);
     border-radius: 20px;
     box-shadow: var(--elevation-high)
+}
+
+.scrollBg__66682,.scrollBg__66682 .scrollBgTop__66682 {
+    position: absolute;
+    top: 0;
+    background-color: var(--background-secondary)
 }
 
 .scrollBg__66682 .scrollBgTop__66682 {
     left: 0;
     right: -24px;
-    top: 0;
-    background-color: var(--background-secondary)
-}
-
-.scrollBg__66682 .scrollBgTop__66682,.scrollBg__66682 .scrollBgTop__66682:before {
-    position: absolute;
     height: 36px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px
@@ -9054,21 +9084,22 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .scrollBg__66682 .scrollBgTop__66682:before {
     content: "";
+    position: absolute;
     background-color: var(--background-tertiary);
     bottom: 0;
     right: 0;
-    width: 24px
+    height: 36px;
+    width: 24px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px
 }
 
 .scrollBg__66682 .scrollBgBottom__66682 {
-    left: -20px;
-    background-color: var(--background-tertiary)
-}
-
-.scrollBg__66682 .scrollBgBottom__66682,.scrollBg__66682 .scrollBgBottom__66682:after {
     position: absolute;
+    left: -20px;
     right: 0;
     bottom: 0;
+    background-color: var(--background-tertiary);
     height: 36px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px
@@ -9076,8 +9107,14 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .scrollBg__66682 .scrollBgBottom__66682:after {
     content: "";
+    position: absolute;
     background-color: var(--background-secondary);
-    width: 24px
+    bottom: 0;
+    right: 0;
+    height: 36px;
+    width: 24px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px
 }
 
 .signatureBlock__66682 {
@@ -9275,13 +9312,10 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .scrollBg_f8a1b1 .scrollBgTop_f8a1b1 {
+    position: absolute;
     left: 0;
     right: -24px;
-    top: 0
-}
-
-.scrollBg_f8a1b1 .scrollBgTop_f8a1b1,.scrollBg_f8a1b1 .scrollBgTop_f8a1b1:before {
-    position: absolute;
+    top: 0;
     height: 36px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px
@@ -9289,21 +9323,22 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .scrollBg_f8a1b1 .scrollBgTop_f8a1b1:before {
     content: "";
+    position: absolute;
     bottom: 0;
     right: 0;
+    height: 36px;
     width: 24px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     background-color: var(--background-tertiary)
 }
 
 .scrollBg_f8a1b1 .scrollBgBottom_f8a1b1 {
-    left: -20px;
-    background-color: var(--background-tertiary)
-}
-
-.scrollBg_f8a1b1 .scrollBgBottom_f8a1b1,.scrollBg_f8a1b1 .scrollBgBottom_f8a1b1:after {
     position: absolute;
+    left: -20px;
     right: 0;
     bottom: 0;
+    background-color: var(--background-tertiary);
     height: 36px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px
@@ -9311,8 +9346,14 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .scrollBg_f8a1b1 .scrollBgBottom_f8a1b1:after {
     content: "";
+    position: absolute;
     background-color: var(--background-secondary);
-    width: 24px
+    bottom: 0;
+    right: 0;
+    height: 36px;
+    width: 24px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px
 }
 
 .overviewSidebarWrapper_f8a1b1 {
@@ -9406,11 +9447,19 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     cursor: pointer
 }
 
-.theme-light .scrollBg_f8a1b1,.theme-light .scrollBg_f8a1b1 .scrollBgBottom_f8a1b1:after,.theme-light .scrollBg_f8a1b1 .scrollBgTop_f8a1b1 {
+.theme-light .scrollBg_f8a1b1,.theme-light .scrollBg_f8a1b1 .scrollBgTop_f8a1b1 {
     background-color: var(--background-primary)
 }
 
-.theme-dark .scrollBg_f8a1b1,.theme-dark .scrollBg_f8a1b1 .scrollBgBottom_f8a1b1:after,.theme-dark .scrollBg_f8a1b1 .scrollBgTop_f8a1b1 {
+.theme-light .scrollBg_f8a1b1 .scrollBgBottom_f8a1b1:after {
+    background-color: var(--background-primary)
+}
+
+.theme-dark .scrollBg_f8a1b1,.theme-dark .scrollBg_f8a1b1 .scrollBgTop_f8a1b1 {
+    background-color: var(--background-secondary)
+}
+
+.theme-dark .scrollBg_f8a1b1 .scrollBgBottom_f8a1b1:after {
     background-color: var(--background-secondary)
 }
 
@@ -10219,12 +10268,13 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     color: var(--text-normal)
 }
 
-.input__4f074:focus,.outer__4f074:hover .input__4f074 {
+.outer__4f074:hover .input__4f074 {
     box-shadow: inset 0 0 0 1px var(--background-tertiary)
 }
 
 .input__4f074:focus {
-    background-color: var(--background-secondary)
+    background-color: var(--background-secondary);
+    box-shadow: inset 0 0 0 1px var(--background-tertiary)
 }
 
 .visual-refresh .input__4f074 {
@@ -12639,10 +12689,12 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .bottomRowActionDisabled__34940 .innerBottomRowAction__34940 {
+    background-color: var(--background-modifier-accent);
+    color: var(--text-muted);
     opacity: .5
 }
 
-.bottomRowActionDisabled__34940 .innerBottomRowAction__34940,.bottomRowActionDisabled__34940 .innerBottomRowAction__34940:hover {
+.bottomRowActionDisabled__34940 .innerBottomRowAction__34940:hover {
     background-color: var(--background-modifier-accent);
     color: var(--text-muted)
 }
@@ -13281,7 +13333,7 @@ div.profileThemedContainer__656be {
     flex-shrink: 0
 }
 
-.raisedHandCount__15cd2,.raisedHandIcon__15cd2:hover {
+.raisedHandIcon__15cd2:hover {
     color: var(--white-500)
 }
 
@@ -13293,6 +13345,7 @@ div.profileThemedContainer__656be {
     padding: 0 4px;
     border-radius: 999px;
     background: var(--status-danger);
+    color: var(--white-500);
     box-sizing: border-box;
     position: absolute;
     left: 50%;
@@ -13550,10 +13603,11 @@ div.profileThemedContainer__656be {
 }
 
 .no-webkit-scrollbar .auto_c8b5c7 {
-    scrollbar-width: auto
+    scrollbar-width: auto;
+    scrollbar-color: var(--black-500) var(--background-modifier-accent)
 }
 
-.no-webkit-scrollbar .auto_c8b5c7,.no-webkit-scrollbar .auto_c8b5c7.fade_c8b5c7:hover {
+.no-webkit-scrollbar .auto_c8b5c7.fade_c8b5c7:hover {
     scrollbar-color: var(--black-500) var(--background-modifier-accent)
 }
 

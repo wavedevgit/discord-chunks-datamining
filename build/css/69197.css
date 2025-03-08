@@ -1,6 +1,6 @@
 /**
   Module ID: 69197
-  Original File Name: fbca687ea9b08398
+  Original File Name: 6d6b2c1255ba4d02
 **/
 .loadingWrapper__5a143 {
     display: flex;
@@ -910,7 +910,11 @@
     padding-bottom: 20px
 }
 
-.container__1689b p>img,.image__1689b {
+.container__1689b p>img {
+    border-radius: 5px
+}
+
+.image__1689b {
     border-radius: 5px
 }
 

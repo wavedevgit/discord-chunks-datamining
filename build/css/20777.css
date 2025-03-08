@@ -1,6 +1,6 @@
 /**
   Module ID: 20777
-  Original File Name: 294ee179d4a8cb68
+  Original File Name: 1401a35a6f837659
 **/
 .icon__2894c {
     display: block;
@@ -394,7 +394,13 @@
     color: var(--interactive-hover)
 }
 
-.modeConnected__2ea32 .name__2ea32,.modeConnected__2ea32:hover .name__2ea32,.modeSelected__2ea32 .name__2ea32,.modeSelected__2ea32:hover .name__2ea32,.modeUnreadImportant__2ea32 .name__2ea32,.modeUnreadImportant__2ea32:hover .name__2ea32,.notInteractive__2ea32.modeConnected__2ea32 .name__2ea32,.notInteractive__2ea32.modeSelected__2ea32 .name__2ea32 {
+.notInteractive__2ea32.modeConnected__2ea32 .name__2ea32,.notInteractive__2ea32.modeSelected__2ea32 .name__2ea32 {
+    color: var(--interactive-active);
+    font-weight: 500;
+    font-weight: var(--font-weight-semibold-1x-light-theme,500)
+}
+
+.modeConnected__2ea32 .name__2ea32,.modeConnected__2ea32:hover .name__2ea32,.modeSelected__2ea32 .name__2ea32,.modeSelected__2ea32:hover .name__2ea32,.modeUnreadImportant__2ea32 .name__2ea32,.modeUnreadImportant__2ea32:hover .name__2ea32 {
     color: var(--interactive-active);
     font-weight: 500;
     font-weight: var(--font-weight-semibold-1x-light-theme,500)

@@ -1,6 +1,6 @@
 /**
   Module ID: 78111
-  Original File Name: 7d8047f304e26879
+  Original File Name: ac1c35a86ffce532
 **/
 .container__270b2 {
     flex-direction: row;
@@ -175,7 +175,11 @@
     align-items: center
 }
 
-.button__6cf35,.button__6cf35+.button__6cf35 {
+.button__6cf35 {
+    margin-left: 8px
+}
+
+.button__6cf35+.button__6cf35 {
     margin-left: 8px
 }
 

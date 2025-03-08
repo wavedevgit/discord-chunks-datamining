@@ -1,6 +1,6 @@
 /**
   Module ID: 95883
-  Original File Name: 6a9bbf4f6f236bd1
+  Original File Name: b3801b6268986647
 **/
 .previewSection__9ab62 {
     display: flex;
@@ -136,7 +136,13 @@
     cursor: normal
 }
 
-.skeletonChatContainer_e1323c .chatHeader_e1323c .roleContainer_e1323c,.skeletonChatContainer_e1323c .chatHeader_e1323c .roleContainer_e1323c>span {
+.skeletonChatContainer_e1323c .chatHeader_e1323c .roleContainer_e1323c {
+    display: inline-block;
+    height: 20px;
+    width: 20px
+}
+
+.skeletonChatContainer_e1323c .chatHeader_e1323c .roleContainer_e1323c>span {
     display: inline-block;
     height: 20px;
     width: 20px
