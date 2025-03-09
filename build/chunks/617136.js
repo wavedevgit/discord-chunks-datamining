@@ -3,6 +3,7 @@
 n.d(t, {
   Ic: () => C,
   O5: () => P,
+  Zk: () => w,
   _3: () => A,
   _F: () => R,
   _b: () => y,
@@ -196,4 +197,13 @@ function P() {
       trackGuildAndChannelMetadata: s
     })
   }, [e])
+}
+
+function w(e, t) {
+  r.useEffect(() => {
+    i.ZP.trackWithMetadata(p.rMx.QUEST_EMBED_FALLBACK_VIEWED, {
+      quest_id: t,
+      reason: e
+    })
+  }, [e, t])
 }

@@ -50,7 +50,7 @@ function A(e) {
   return e
 }
 
-function R(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ function R(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = (0, l.animated)(d.CJ0),
+let R = (0, l.animated)(d.CJ0),
   Z = (0, l.animated)(x.Z),
   I = e => {
     var {
@@ -104,7 +104,7 @@ let _ = (0, l.animated)(d.CJ0),
       shouldShow: l,
       color: d.ua7.Colors.GREEN,
       text: P.NW.string(P.t.MSaeTU),
-      children: () => (0, r.jsx)(d.zxk, R(A({}, o), {
+      children: () => (0, r.jsx)(d.zxk, _(A({}, o), {
         className: w.shareButton,
         color: d.zxk.Colors.PRIMARY,
         size: d.zxk.Sizes.SMALL,
@@ -267,7 +267,7 @@ let _ = (0, l.animated)(d.CJ0),
                 children: [(0, r.jsx)(d.ua7, {
                   text: x.config.messages.questName,
                   shouldShow: null != F && null != G && F < G,
-                  children: e => (0, r.jsx)(d.X6q, R(A({
+                  children: e => (0, r.jsx)(d.X6q, _(A({
                     ref: z,
                     variant: "lg" === v ? "heading-xxl/bold" : "sm" === v ? "heading-xl/bold" : "heading-lg/bold",
                     className: w.heading,
@@ -316,7 +316,7 @@ let _ = (0, l.animated)(d.CJ0),
                 visibility: L || D ? "inherit" : "hidden"
               },
               "aria-hidden": !L && !D,
-              children: (0, r.jsx)(d.P3F, R(A({}, e), {
+              children: (0, r.jsx)(d.P3F, _(A({}, e), {
                 className: w.iconWrapper,
                 "aria-label": P.NW.string(P.t.DEoVWV),
                 children: (0, r.jsx)(d.xhG, {
@@ -329,7 +329,7 @@ let _ = (0, l.animated)(d.CJ0),
             onClick: es,
             className: w.iconWrapper,
             "aria-label": D ? P.NW.string(P.t.iTcumZ) : P.NW.string(P.t.dcl9MT),
-            children: (0, r.jsx)(_, {
+            children: (0, r.jsx)(R, {
               style: {
                 rotate: M.to({
                   range: [0, 1],

@@ -652,7 +652,9 @@ function U() {
         withBorder: !0,
         children: [(0, r.jsx)(p.vwX, {
           children: "Quest Card Embed"
-        }), er ? (0, r.jsx)(_.o, {}) : (0, r.jsx)(v.Z, {
+        }), er ? (0, r.jsx)(_.o, {
+          questId: Y.id
+        }) : (0, r.jsx)(v.Z, {
           quest: Y,
           location: f.jn.QUESTS_EMBED
         }, Y.id)]

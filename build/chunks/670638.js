@@ -70,14 +70,14 @@ function T(e) {
       handleResetStatusClick: w,
       handleOverrideDeliveryClick: A
     } = (0, p.kJ)(e.quest.id),
-    R = s.useCallback(() => {
+    _ = s.useCallback(() => {
       (0, f.FE)(e.quest, {
         content: e.questContent,
         ctaContent: u.jZ.CONTEXT_MENU_OPEN_GAME_LINK,
         impressionId: S
       })
     }, [S, e.quest, e.questContent]),
-    _ = s.useCallback(() => {
+    R = s.useCallback(() => {
       (0, f.f2)(e.quest.id, {
         content: e.questContent,
         position: e.questContentPosition,
@@ -107,12 +107,12 @@ function T(e) {
       children: [(0, r.jsx)(o.sNh, {
         id: "play-game",
         label: C.NW.string(M),
-        action: R,
+        action: _,
         icon: o.zFc
       }), !0 === e.showShareLink && (0, r.jsx)(o.sNh, {
         id: "share-link",
         label: C.NW.string(C.t.RDE0SU),
-        action: _,
+        action: R,
         icon: o.TIy
       }), !1]
     }, "major-actions"), (0, r.jsxs)(o.kSQ, {

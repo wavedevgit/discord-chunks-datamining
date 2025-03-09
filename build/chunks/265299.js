@@ -24,7 +24,11 @@ function p(e) {
   }), f = i.useMemo(() => n.find(e => e.id === t), [t, n]), h = i.useMemo(() => p.find(e => e.id === t), [t, p]);
   return m ? (0, r.jsx)(a.$jN, {
     className: u.spinner
-  }) : null != h ? (0, r.jsx)(c.W, {}) : null == f ? (0, r.jsx)(d.o, {}) : (0, r.jsx)(s.Z, {
+  }) : null != h ? (0, r.jsx)(c.W, {
+    questId: t
+  }) : null == f ? (0, r.jsx)(d.o, {
+    questId: t
+  }) : (0, r.jsx)(s.Z, {
     quest: f,
     location: l.jn.QUESTS_EMBED
   }, f.id)

@@ -31,8 +31,8 @@ var r = n(200651),
   P = n(644646),
   w = n(880199),
   A = n(670638),
-  R = n(667105),
-  _ = n(860151),
+  _ = n(667105),
+  R = n(860151),
   Z = n(341907),
   I = n(46140),
   M = n(981631),
@@ -123,7 +123,7 @@ function Q(e) {
       fromContent: C.jn.QUEST_LIVE_STREAM,
       questId: Q.id
     })
-  }, [Q, F]), em = (0, R.hf)({
+  }, [Q, F]), em = (0, _.hf)({
     quest: Q,
     location: C.jn.QUEST_LIVE_STREAM
   }), ep = s.useMemo(() => (0, E.T)({
@@ -206,7 +206,7 @@ function Q(e) {
             })
           })]
         })]
-      }), eg && !ef && !es && (0, r.jsx)(_.Z, {
+      }), eg && !ef && !es && (0, r.jsx)(R.Z, {
         autoplay: G,
         quest: Q,
         questContent: C.jn.QUEST_LIVE_STREAM,

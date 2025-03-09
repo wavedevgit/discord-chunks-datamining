@@ -31,9 +31,9 @@ var r = n(200651),
   P = n(46140),
   w = n(981631),
   A = n(388032),
-  R = n(419892);
+  _ = n(419892);
 
-function _(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -75,7 +75,7 @@ function M(e) {
   } = e;
   return "xs" === t ? (0, r.jsx)(a.P3F, {
     tabIndex: i,
-    className: R.learnMoreLink,
+    className: _.learnMoreLink,
     tag: "span",
     onClick: n,
     children: (0, r.jsx)(a.Text, {
@@ -85,7 +85,7 @@ function M(e) {
     })
   }) : (0, r.jsx)(a.zxk, {
     tabIndex: i,
-    wrapperClassName: R.ctaButtonWrapper,
+    wrapperClassName: _.ctaButtonWrapper,
     color: a.Ttl.PRIMARY,
     onClick: n,
     children: s
@@ -111,17 +111,17 @@ function L(e) {
   }), v = d && !m ? a.gtL : a.zxk;
   return (0, r.jsx)(a.ua7, {
     text: j.tooltipText,
-    tooltipContentClassName: R.ctaTooltipText,
+    tooltipContentClassName: _.ctaTooltipText,
     children: e => {
       var t;
-      return (0, r.jsx)(v, Z(_({}, e), {
-        wrapperClassName: R.ctaButtonWrapper,
+      return (0, r.jsx)(v, Z(R({}, e), {
+        wrapperClassName: _.ctaButtonWrapper,
         color: a.Ttl.BRAND,
         disabled: null == j.onClick,
         submitting: p,
         onClick: null !== (t = j.onClick) && void 0 !== t ? t : () => {},
         children: (0, r.jsx)("div", {
-          className: R.ctaButtonInner,
+          className: _.ctaButtonInner,
           children: j.text
         })
       }))
@@ -146,11 +146,11 @@ let D = e => {
     quest: t,
     children: (0, r.jsx)(E.Z, {
       autoplay: c,
-      className: o()(R.gridImg, {
-        [R.questRewardGiftInventory]: F && "lg" === i,
-        [R.questRewardEmbed]: G && "lg" === i,
-        [R.questRewardEmbedSm]: "sm" === i,
-        [R.questRewardEmbedXs]: "xs" === i
+      className: o()(_.gridImg, {
+        [_.questRewardGiftInventory]: F && "lg" === i,
+        [_.questRewardEmbed]: G && "lg" === i,
+        [_.questRewardEmbedSm]: "sm" === i,
+        [_.questRewardEmbedXs]: "xs" === i
       }),
       learnMoreStyle: F ? null : "text",
       location: P.dr.QUESTS_CARD,
@@ -160,12 +160,12 @@ let D = e => {
     })
   });
   return (0, r.jsxs)("div", {
-    className: R.root,
+    className: _.root,
     children: [(0, r.jsxs)("div", {
-      className: o()(R.outerContainer, {
-        [R.outerContainerSm]: "sm" === i,
-        [R.outerContainerXs]: "xs" === i,
-        [R.outerContainerNoProgress]: !V
+      className: o()(_.outerContainer, {
+        [_.outerContainerSm]: "sm" === i,
+        [_.outerContainerXs]: "xs" === i,
+        [_.outerContainerNoProgress]: !V
       }),
       style: {
         visibility: H ? "inherit" : "hidden"
@@ -173,13 +173,13 @@ let D = e => {
       "aria-hidden": !H,
       children: [(0, r.jsx)(a.ua7, {
         text: er ? A.NW.string(A.t["04MTGR"]) : null,
-        tooltipContentClassName: R.rewardTileExpirationTooltip,
+        tooltipContentClassName: _.rewardTileExpirationTooltip,
         shouldShow: er,
-        children: e => (0, r.jsxs)("div", Z(_({
-          className: R.rewardTileWrapper
+        children: e => (0, r.jsxs)("div", Z(R({
+          className: _.rewardTileWrapper
         }, e), {
           children: [g && (0, r.jsx)("div", {
-            className: R.rewardTileExpired,
+            className: _.rewardTileExpired,
             children: (0, r.jsx)(a.P4T, {
               color: a.TVs.colors.WHITE
             })
@@ -190,10 +190,10 @@ let D = e => {
           }) : ei]
         }))
       }), (0, r.jsxs)("div", {
-        className: o()(R.gridText, R.taskDetails),
+        className: o()(_.gridText, _.taskDetails),
         children: [(0, r.jsx)(a.Text, {
           variant: I(n, i, U),
-          className: R.taskInstructions,
+          className: _.taskInstructions,
           children: g ? A.NW.formatToPlainString(A.t["ge+AJi"], {
             questName: t.config.messages.questName
           }) : X
@@ -270,7 +270,7 @@ let D = e => {
           })
         })]
       }), (0, r.jsxs)("div", {
-        className: o()(R.ctaButtonContainer, R.gridCtaButtons),
+        className: o()(_.ctaButtonContainer, _.gridCtaButtons),
         children: [!F && (0, r.jsx)(M, {
           containerSize: i,
           onClick: () => {
@@ -293,15 +293,15 @@ let D = e => {
           inGiftInventory: F
         })]
       }), V && (0, r.jsx)(N.Z, {
-        className: R.gridProgressBar,
+        className: _.gridProgressBar,
         color: Q ? a.TVs.colors.TEXT_POSITIVE : a.TVs.colors.BG_BRAND,
         quest: t,
         isInventory: F
       })]
     }), es && (0, r.jsxs)("div", {
-      className: R.microphoneContainer,
+      className: _.microphoneContainer,
       children: [(0, r.jsx)("div", {
-        className: R.separator
+        className: _.separator
       }), (0, r.jsx)(S.Z, {
         quest: t,
         location: n
