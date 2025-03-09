@@ -27,8 +27,8 @@ var r = n(200651),
   P = n(131951),
   k = n(944486),
   L = n(449224),
-  E = n(574254),
-  w = n(556296),
+  w = n(574254),
+  E = n(556296),
   N = n(237997),
   T = n(451478),
   Z = n(585483),
@@ -136,7 +136,7 @@ let eo = o.memo(function(e) {
   });
 
 function ei() {
-  if (null != E.Z.getContextMenu()) {
+  if (null != w.Z.getContextMenu()) {
     (0, u.Zy)();
     return
   }
@@ -168,11 +168,11 @@ function eu() {
       incompatibleApp: a,
       hasValidResolution: u,
       hasZeroSizeDimension: m,
-      keybind: E,
+      keybind: w,
       isPreviewingInGame: Z
-    } = (0, c.cj)([F.ZP, N.default, T.Z, w.ZP], () => {
+    } = (0, c.cj)([F.ZP, N.default, T.Z, E.ZP], () => {
       let t = T.Z.windowSize((0, D.ZY)(e)),
-        n = w.ZP.getOverlayKeybind(),
+        n = E.ZP.getOverlayKeybind(),
         r = (0, A.getPID)();
       return {
         locked: F.ZP.isInputLocked(r),
@@ -274,7 +274,7 @@ function eu() {
           children: J.NW.string(J.t.iOq96u)
         }), ee, (!t || j.has(X.O0n.TEXT_WIDGET)) && (0, r.jsx)(eo, {
           locked: t,
-          keybind: E,
+          keybind: w,
           onClick: ei
         }), u ? (0, r.jsx)(V.Z, {
           className: i()({
@@ -296,7 +296,7 @@ function eu() {
           channelId: er
         }), (0, r.jsx)(G.Z, {
           locked: M,
-          keybind: E
+          keybind: w
         }), (0, r.jsx)(B.Z, {})]
       })
     })

@@ -16,8 +16,8 @@ function u(e, n, t) {
     }, {
       autoTrackExposure: !0
     }).enabled,
-    d = (0, r.e7)([c.Z], () => c.Z.getChannel(n)),
-    _ = null == d ? void 0 : d.getGuildId();
+    _ = (0, r.e7)([c.Z], () => c.Z.getChannel(n)),
+    d = null == _ ? void 0 : _.getGuildId();
   return !1 === u ? null : (0, o.jsx)(a.sNh, {
     id: "report-app",
     color: "danger",
@@ -25,8 +25,8 @@ function u(e, n, t) {
     action: () => (0, l.uu)({
       application: e,
       entrypoint: "activity_ui_popout",
-      contextualGuildId: null != _ ? _ : void 0,
-      contextualChannelId: null == d ? void 0 : d.id,
+      contextualGuildId: null != d ? d : void 0,
+      contextualChannelId: null == _ ? void 0 : _.id,
       appContext: t
     }),
     icon: a.U65

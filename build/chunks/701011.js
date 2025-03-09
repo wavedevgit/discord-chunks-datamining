@@ -1,6 +1,6 @@
 /** Chunk was on 27278 **/
 t.d(n, {
-  Z: () => O
+  Z: () => P
 }), t(47120);
 var o = t(200651),
   r = t(192379),
@@ -10,16 +10,16 @@ var o = t(200651),
   c = t(110924),
   s = t(40851),
   u = t(812206),
-  d = t(243778),
-  _ = t(554370),
+  _ = t(243778),
+  d = t(554370),
   p = t(788983),
-  b = t(546247),
-  f = t(214629),
+  f = t(546247),
+  b = t(214629),
   m = t(317381),
   h = t(16609),
   v = t(781780),
-  C = t(325749),
-  g = t(981631),
+  g = t(325749),
+  C = t(981631),
   x = t(921944),
   y = t(832969);
 
@@ -31,7 +31,7 @@ function I(e) {
     openNewUserExperienceModal: c
   } = function() {
     let e = [i.z.ACTIVITY_POPOUT_NUX_MODAL],
-      [n, a] = (0, d.US)(e);
+      [n, a] = (0, _.US)(e);
     return {
       showsNewUserExperience: n === i.z.ACTIVITY_POPOUT_NUX_MODAL,
       openNewUserExperienceModal: r.useCallback(() => {
@@ -89,7 +89,7 @@ function I(e) {
   } = r.useContext(s.ZP);
   return a ? (0, o.jsx)("div", {
     className: y.nuxBackground,
-    children: (0, o.jsx)(b.Z, {
+    children: (0, o.jsx)(f.Z, {
       eventTargetRef: {
         current: u.document.body
       }
@@ -97,7 +97,7 @@ function I(e) {
   }) : n
 }
 
-function O() {
+function P() {
   let {
     embeddedActivity: e,
     channelId: n,
@@ -114,17 +114,17 @@ function O() {
   }), i = r.useRef(null), s = (0, c.Z)(e);
   r.useEffect(() => {
     null != e ? clearTimeout(i.current) : null != s && null == e && (i.current = window.setTimeout(() => {
-      (0, p.xv)(g.KJ3.ACTIVITY_POPOUT)
+      (0, p.xv)(C.KJ3.ACTIVITY_POPOUT)
     }, 5e3))
   }, [e, s]);
-  let d = (0, a.e7)([u.Z], () => {
+  let _ = (0, a.e7)([u.Z], () => {
       let n = null == e ? void 0 : e.applicationId;
       return null == n ? void 0 : u.Z.getApplication(n)
     }),
-    b = (0, f.PR)();
+    f = (0, b.PR)();
   return (0, o.jsx)("div", {
     className: y.container,
-    children: null == e || null == d ? (0, o.jsx)(l.$jN, {
+    children: null == e || null == _ ? (0, o.jsx)(l.$jN, {
       className: y.iframe
     }) : (0, o.jsx)("div", {
       className: y.loadedContentContainer,
@@ -132,8 +132,8 @@ function O() {
         className: y.iframeAndHeaderContainer,
         children: [(0, o.jsx)("div", {
           className: y.headerContainer,
-          children: (0, o.jsx)(C.Z, {
-            applicationId: d.id,
+          children: (0, o.jsx)(g.Z, {
+            applicationId: _.id,
             channelId: n
           })
         }), (0, o.jsx)("div", {
@@ -143,10 +143,10 @@ function O() {
               channelId: n,
               guildId: t,
               embeddedActivity: e,
-              application: d
+              application: _
             })
           })
-        }), b ? (0, o.jsx)(_.Z, {
+        }), f ? (0, o.jsx)(d.Z, {
           isEmbeddedActivity: !0
         }) : null]
       })

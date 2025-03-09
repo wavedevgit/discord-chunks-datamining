@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 66656c4dc0520785
+  Original File Name: 184412d52257ddf2
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -243,8 +243,24 @@
     gap: 4px
 }
 
+.nowPlayingNotificationIcon__81a05 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px
+}
+
+.gameIcon__81a05 {
+    display: inline-block
+}
+
+.bodyText__81a05,.gameIcon__81a05 {
+    vertical-align: middle
+}
+
 .bodyText__81a05 {
-    word-wrap: none;
+    flex: 1;
+    min-width: 0;
     overflow: hidden;
     text-overflow: ellipsis
 }

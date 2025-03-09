@@ -10,21 +10,21 @@ var o = t(200651),
   c = t(481060),
   s = t(13245),
   u = t(753972),
-  d = t(812206),
-  _ = t(726721),
+  _ = t(812206),
+  d = t(726721),
   p = t(610394),
-  b = t(522474),
-  f = t(788983),
+  f = t(522474),
+  b = t(788983),
   m = t(695346),
   h = t(390322),
   v = t(961048),
-  C = t(871499),
-  g = t(268353),
+  g = t(871499),
+  C = t(268353),
   x = t(786915),
   y = t(107169),
   I = t(592125),
-  O = t(271383),
-  P = t(594174),
+  P = t(271383),
+  O = t(594174),
   j = t(358085),
   k = t(51144),
   w = t(998502),
@@ -44,9 +44,9 @@ function D(e) {
   let {
     applicationId: n,
     channelId: t
-  } = e, a = (0, l.e7)([d.Z], () => d.Z.getApplication(n)), D = (0, l.e7)([S.ZP], () => S.ZP.getSelfEmbeddedActivities().get(n)), R = (0, l.e7)([I.Z], () => I.Z.getChannel(t)), M = m.Sb.useSetting(), Y = (0, l.Wu)([O.ZP], () => {
+  } = e, a = (0, l.e7)([_.Z], () => _.Z.getApplication(n)), D = (0, l.e7)([S.ZP], () => S.ZP.getSelfEmbeddedActivities().get(n)), R = (0, l.e7)([I.Z], () => I.Z.getChannel(t)), M = m.Sb.useSetting(), Y = (0, l.Wu)([P.ZP], () => {
     var e;
-    return null == R || null == D ? [] : Array.from(null !== (e = D.userIds) && void 0 !== e ? e : []).map(e => O.ZP.getMember(R.guild_id, e))
+    return null == R || null == D ? [] : Array.from(null !== (e = D.userIds) && void 0 !== e ? e : []).map(e => P.ZP.getMember(R.guild_id, e))
   }, [D, R]), G = r.useMemo(() => {
     let e = new Map;
     return Y.forEach(n => {
@@ -66,7 +66,7 @@ function D(e) {
         className: U.avatar
       }, e.id)
     }, e.id)
-  }, [G]), V = null == D ? void 0 : D.userIds, F = (0, l.Wu)([P.default], () => Array.from(null != V ? V : []).map(e => P.default.getUser(e)).filter(e => null != e), [V]), K = _.Z.useExperiment({
+  }, [G]), V = null == D ? void 0 : D.userIds, F = (0, l.Wu)([O.default], () => Array.from(null != V ? V : []).map(e => O.default.getUser(e)).filter(e => null != e), [V]), K = d.Z.useExperiment({
     location: "activity_popout_overflow_menu"
   }, {
     autoTrackExposure: !0
@@ -78,9 +78,9 @@ function D(e) {
     popoutWindowAlwaysOnTop: $,
     handleStayOnTop: Q
   } = function() {
-    let e = (0, l.e7)([b.Z], () => b.Z.getIsAlwaysOnTop(W.KJ3.ACTIVITY_POPOUT)),
+    let e = (0, l.e7)([f.Z], () => f.Z.getIsAlwaysOnTop(W.KJ3.ACTIVITY_POPOUT)),
       n = r.useCallback(e => {
-        f.hY(W.KJ3.ACTIVITY_POPOUT, e)
+        b.hY(W.KJ3.ACTIVITY_POPOUT, e)
       }, []);
     return {
       canStayOnTop: j.isPlatformEmbedded && w.ZP.supportsFeature(W.eRX.POPOUT_WINDOWS),
@@ -160,14 +160,14 @@ function D(e) {
             look: c.zxk.Looks.FILLED,
             size: c.zxk.Sizes.TINY,
             buttonText: z.NW.string(z.t["6F9ivr"])
-          }), X ? (0, o.jsx)(C.Z, {
+          }), X ? (0, o.jsx)(g.Z, {
             onClick: J,
             iconComponent: c.epB,
             label: z.NW.string(z.t.mseZsL)
           }) : null, q ? (0, o.jsx)(y.Z, {
             popoutWindowAlwaysOnTop: $,
             onToggleStayOnTop: Q
-          }) : null, (0, o.jsx)(g.Z, {
+          }) : null, (0, o.jsx)(C.Z, {
             node: ee,
             guestWindow: en,
             onClick: et

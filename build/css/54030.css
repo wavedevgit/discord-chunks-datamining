@@ -1,6 +1,6 @@
 /**
   Module ID: 54030
-  Original File Name: 73f974f9e4da3385
+  Original File Name: d3ac92e998ce0751
 **/
 .key__98feb {
     display: inline-block;
@@ -31,8 +31,24 @@
     gap: 4px
 }
 
+.nowPlayingNotificationIcon__81a05 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px
+}
+
+.gameIcon__81a05 {
+    display: inline-block
+}
+
+.bodyText__81a05,.gameIcon__81a05 {
+    vertical-align: middle
+}
+
 .bodyText__81a05 {
-    word-wrap: none;
+    flex: 1;
+    min-width: 0;
     overflow: hidden;
     text-overflow: ellipsis
 }

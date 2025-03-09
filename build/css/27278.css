@@ -1,6 +1,6 @@
 /**
   Module ID: 27278
-  Original File Name: 395e0158eccc210e
+  Original File Name: f1b5301cf7362252
 **/
 .buttonContainer__7e329 {
     display: flex;
@@ -1219,8 +1219,24 @@
     gap: 4px
 }
 
+.nowPlayingNotificationIcon__81a05 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px
+}
+
+.gameIcon__81a05 {
+    display: inline-block
+}
+
+.bodyText__81a05,.gameIcon__81a05 {
+    vertical-align: middle
+}
+
 .bodyText__81a05 {
-    word-wrap: none;
+    flex: 1;
+    min-width: 0;
     overflow: hidden;
     text-overflow: ellipsis
 }
