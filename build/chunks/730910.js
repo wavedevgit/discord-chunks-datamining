@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(215569),
   u = n(780384),
   m = n(481060),
-  p = n(410030),
-  g = n(367907),
+  g = n(410030),
+  p = n(367907),
   h = n(768762),
   f = n(626135),
   b = n(585483),
@@ -23,8 +23,8 @@ var r = n(200651),
   N = n(983135),
   v = n(8426),
   _ = n(969632),
-  O = n(570961),
-  y = n(208665),
+  y = n(570961),
+  O = n(208665),
   C = n(359191),
   I = n(84658),
   E = n(142961),
@@ -89,7 +89,7 @@ function L(e) {
   })), U = (0, o.e7)([C.Z], () => {
     let e = (0, I.lg)(x);
     return null != e && !C.Z.isEducationUpsellDismissed(e)
-  }), B = (0, p.ZP)(), F = i.useRef(null), [{
+  }), B = (0, g.ZP)(), F = i.useRef(null), [{
     spring: z
   }, H] = (0, m.q_F)(() => ({
     spring: 0
@@ -110,15 +110,15 @@ function L(e) {
     }
   }, [H]);
   let V = (0, m.dQu)(c.Z.colors.BACKGROUND_FLOATING).hex(),
-    Y = (0, m.dQu)(c.Z.unsafe_rawColors.PRIMARY_160).hex(),
-    K = (0, u.wj)(B) ? V : Y,
+    K = (0, m.dQu)(c.Z.unsafe_rawColors.PRIMARY_160).hex(),
+    Y = (0, u.wj)(B) ? V : K,
     q = z.to({
       range: [0, 1],
       output: [(0, m.dQu)(c.Z.unsafe_rawColors.WHITE_500).hex(), (0, m.dQu)(c.Z.colors.TEXT_NORMAL).hex()]
     }),
     X = z.to({
       range: [0, 1],
-      output: [K, (0, m.dQu)(c.Z.colors.STATUS_DANGER).hex()]
+      output: [Y, (0, m.dQu)(c.Z.colors.STATUS_DANGER).hex()]
     });
   if (W) {
     if (x === I.PG.DEFAULT_CHANNELS) return (0, r.jsx)(T.j, {});
@@ -127,12 +127,12 @@ function L(e) {
   }
   let Q = x === I.xh[I.xh.length - 1],
     J = async () => {
-      let e = y.Z.advancedMode;
+      let e = O.Z.advancedMode;
       if (L) try {
-        if (x === I.PG.DEFAULT_CHANNELS) await (0, j.DO)(t).then(() => e ? (0, O.rS)(t, {
+        if (x === I.PG.DEFAULT_CHANNELS) await (0, j.DO)(t).then(() => e ? (0, y.rS)(t, {
           ignoreDefaultPrompt: !0
         }) : Promise.resolve());
-        else if (x === I.PG.CUSTOMIZATION_QUESTIONS) await (0, O.rS)(t, {
+        else if (x === I.PG.CUSTOMIZATION_QUESTIONS) await (0, y.rS)(t, {
           ignoreDefaultPrompt: !0
         });
         else if (x === I.PG.HOME_SETTINGS) {
@@ -144,13 +144,13 @@ function L(e) {
       }
       return !0
     }, $ = async () => {
-      f.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, k(A({}, (0, g.hH)(s)), {
+      f.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, k(A({}, (0, p.hH)(s)), {
         step: I.PG[x],
         back: !1,
         skip: !L
       })), (0, N.Nb)((0, I.lg)(x)), await J() && (0, N.IG)(s, x)
     }, ee = async () => {
-      f.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, k(A({}, (0, g.hH)(s)), {
+      f.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, k(A({}, (0, p.hH)(s)), {
         step: I.PG[x],
         back: !0,
         skip: !1

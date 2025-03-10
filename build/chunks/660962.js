@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(780384),
   u = n(481060),
   m = n(605436),
-  p = n(663993),
-  g = n(540059),
+  g = n(663993),
+  p = n(540059),
   h = n(518738),
   f = n(786761),
   b = n(3148),
@@ -23,8 +23,8 @@ var r = n(200651),
   N = n(496675),
   v = n(764260),
   _ = n(95242),
-  O = n(541575),
-  y = n(420966),
+  y = n(541575),
+  O = n(420966),
   C = n(337344),
   I = n(275296),
   E = n(203377),
@@ -34,7 +34,7 @@ var r = n(200651),
   w = n(104978),
   R = n(179517),
   Z = n(79829);
-let D = (0, p.Un)({
+let D = (0, g.Un)({
     createPromise: () => n.e("4848").then(n.bind(n, 336231)),
     webpackId: 336231
   }),
@@ -140,10 +140,10 @@ function L(e) {
   }, m = {
     src: R,
     name: a.name
-  }, p = {
+  }, g = {
     src: Z,
     name: a.name
-  }, N = (0, h.oC)(l, a), v = (0, g.Q3)("RolePreview") ? [S.BRd.LIGHT, S.BRd.DARK, S.BRd.DARKER, S.BRd.MIDNIGHT] : [S.BRd.LIGHT, S.BRd.DARK];
+  }, N = (0, h.oC)(l, a), v = (0, p.Q3)("RolePreview") ? [S.BRd.LIGHT, S.BRd.DARK, S.BRd.DARKER, S.BRd.MIDNIGHT] : [S.BRd.LIGHT, S.BRd.DARK];
   return (0, r.jsx)(u.Rny, {
     children: (0, r.jsx)("div", {
       className: P.previewContainer,
@@ -158,7 +158,7 @@ function L(e) {
             children: (0, r.jsx)(x.Z, {
               author: c,
               message: o,
-              roleIcon: null != N ? N : (0, d.ap)(e) ? p : m,
+              roleIcon: null != N ? N : (0, d.ap)(e) ? g : m,
               isGroupStart: !0
             })
           })
@@ -200,16 +200,16 @@ function G(e) {
     locked: i,
     setSelectedSection: s
   } = e, l = (0, m.pM)(null == t ? void 0 : t.id, n.id), o = i || l, d = (0, c.e7)([N.Z], () => N.Z.canImpersonateRole(t, n)), {
-    headerHeight: p,
-    headerRef: g
+    headerHeight: g,
+    headerRef: p
   } = (0, _.Z)(0), {
     scrolledToTop: h,
     handleScroll: f
-  } = (0, y.V)();
+  } = (0, O.V)();
   return (0, r.jsx)(u.yWw, {
     className: P.scroller,
     style: {
-      scrollPaddingTop: p
+      scrollPaddingTop: g
     },
     onScroll: f,
     children: (0, r.jsxs)("div", {
@@ -218,8 +218,8 @@ function G(e) {
         className: a()(w.header, w.stickyHeader, {
           [w.stickyHeaderElevated]: !h
         }),
-        ref: g,
-        children: (0, r.jsx)(y.Z, {
+        ref: p,
+        children: (0, r.jsx)(O.Z, {
           guild: t,
           role: n,
           selectedSection: E.ZI.DISPLAY,
@@ -238,7 +238,7 @@ function G(e) {
       }), (0, r.jsx)(W, {
         role: n,
         disabled: o
-      }), (0, r.jsx)(O.Z, {
+      }), (0, r.jsx)(y.Z, {
         guild: t,
         disabled: o,
         role: n

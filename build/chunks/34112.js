@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(442837),
   u = n(481060),
   m = n(239091),
-  p = n(493544),
-  g = n(134433),
+  g = n(493544),
+  p = n(134433),
   h = n(91218),
   f = n(646892),
   b = n(741247),
@@ -23,8 +23,8 @@ var r = n(200651),
   N = n(496675),
   v = n(626135),
   _ = n(480608),
-  O = n(243730),
-  y = n(130341),
+  y = n(243730),
+  O = n(130341),
   C = n(970129),
   I = n(712181),
   E = n(203377),
@@ -76,7 +76,7 @@ function A(e) {
     renderHeader: o,
     headerHeight: c,
     query: u
-  } = e, m = (0, d.e7)([O.Z], () => O.Z.getRoleMemberCount(n.id), [n.id]), g = (0, d.e7)([N.Z], () => N.Z.getHighestRole(n), [n]), h = u.trim();
+  } = e, m = (0, d.e7)([y.Z], () => y.Z.getRoleMemberCount(n.id), [n.id]), p = (0, d.e7)([N.Z], () => N.Z.getHighestRole(n), [n]), h = u.trim();
   i.useEffect(() => {
     (0, _.E)(n.id)
   }, [n.id]);
@@ -86,7 +86,7 @@ function A(e) {
       search_type: "Roles"
     }), f.current = !0)
   }, [u]);
-  let b = i.useMemo(() => a.filter(e => (0, y.uo)(e, h)), [a, h]),
+  let b = i.useMemo(() => a.filter(e => (0, O.uo)(e, h)), [a, h]),
     x = i.useMemo(() => [...a, s], [a, s]),
     {
       draggingId: j,
@@ -104,7 +104,7 @@ function A(e) {
       return (0, r.jsx)(W, {
         role: o,
         guild: n,
-        highestRole: g,
+        highestRole: p,
         currentPosition: s,
         memberCount: null !== (i = null == m ? void 0 : m[o.id]) && void 0 !== i ? i : 0,
         onDragStart: C,
@@ -115,8 +115,8 @@ function A(e) {
         setEditRoleId: t,
         setSelectedSection: l
       }, o.id)
-    }, [b, n, g, m, C, E, T, j, a, t, l]);
-  return (0, r.jsx)(p.Xi, {
+    }, [b, n, p, m, C, E, T, j, a, t, l]);
+  return (0, r.jsx)(g.Xi, {
     sections: [Math.max(b.length, 1)],
     sectionHeight: c,
     renderSection: o,
@@ -146,18 +146,18 @@ function W(e) {
   var t, s, c;
   let {
     role: d,
-    guild: p,
+    guild: g,
     highestRole: h,
     currentPosition: x,
     memberCount: N,
     onDragStart: v,
     onDragReset: _,
-    onDragComplete: O,
-    disableHover: y,
+    onDragComplete: y,
+    disableHover: O,
     disableDrag: I,
     setEditRoleId: S,
     setSelectedSection: A
-  } = e, k = (0, C.T)(p, h, d), W = null != k, [M, G] = i.useState(!1), U = i.useMemo(() => ({
+  } = e, k = (0, C.T)(g, h, d), W = null != k, [M, G] = i.useState(!1), U = i.useMemo(() => ({
     type: D,
     item: () => (v(d.id), {
       id: d.id,
@@ -173,9 +173,9 @@ function W(e) {
         _();
         return
       }
-      O(n.roleId)
+      y(n.roleId)
     }
-  }), [d, v, _, O, W, M, x]), [{
+  }), [d, v, _, y, W, M, x]), [{
     isDragging: B
   }, F] = (0, l.c)(U), z = i.useMemo(() => ({
     accept: D,
@@ -193,17 +193,17 @@ function W(e) {
     })
   }), [W, d]), [{
     dragSourcePosition: H
-  }, V] = (0, o.L)(z), Y = i.useCallback(e => {
+  }, V] = (0, o.L)(z), K = i.useCallback(e => {
     (0, m.jW)(e, async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 741247));
       return t => (0, r.jsx)(e, Z(R({}, t), {
         role: d,
-        guild: p
+        guild: g
       }))
     })
-  }, [p, d]), K = (0, b.e)(p, d);
+  }, [g, d]), Y = (0, b.e)(g, d);
   if (B) return (0, r.jsx)("div", {
     ref: F,
     className: a()(P.roleRow, P.roleRowDragging)
@@ -218,12 +218,12 @@ function W(e) {
   }
   return (0, r.jsxs)(u.P3F, {
     className: a()(P.roleRow, {
-      [P.roleRowDisableHover]: y,
+      [P.roleRowDisableHover]: O,
       [P.containerDragBefore]: null != H && x < H,
       [P.containerDragAfter]: null != H && x > H
     }),
     onClick: q,
-    onContextMenu: Y,
+    onContextMenu: K,
     innerRef: e => F(V(e)),
     "data-dnd-name": d.name,
     "aria-label": T.NW.formatToPlainString(T.t.Vu0AcX, {
@@ -242,12 +242,12 @@ function W(e) {
       })
     }), (0, r.jsxs)("div", {
       className: a()(P.roleNameContainer, w.roleNameSpacing),
-      children: [(null === (t = d.tags) || void 0 === t ? void 0 : t.guild_connections) === null ? (0, r.jsx)(g.Z, {
+      children: [(null === (t = d.tags) || void 0 === t ? void 0 : t.guild_connections) === null ? (0, r.jsx)(p.Z, {
         className: P.roleFlowerStar,
         color: d.colorString,
         size: 24
       }) : (0, r.jsx)(L, {
-        guildId: p.id,
+        guildId: g.id,
         role: d,
         size: 24,
         className: P.roleIcon,
@@ -315,8 +315,8 @@ function W(e) {
           width: 20,
           height: 20
         }),
-        onClick: Y,
-        disabled: !K
+        onClick: K,
+        disabled: !Y
       })]
     })]
   })

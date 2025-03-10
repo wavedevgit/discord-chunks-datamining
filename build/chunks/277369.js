@@ -16,21 +16,21 @@ function d(e) {
   let {
     guildId: t,
     application: d
-  } = e, u = (0, i.e7)([a.Z], () => a.Z.getGuild(t)), m = (0, i.e7)([l.default], () => l.default.getCurrentUser()), p = (0, o.mY)();
+  } = e, u = (0, i.e7)([a.Z], () => a.Z.getGuild(t)), m = (0, i.e7)([l.default], () => l.default.getCurrentUser()), g = (0, o.mY)();
   if (null == u || !u.isOwner(m)) return null;
-  let g = d.team;
+  let p = d.team;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(s.R94, {
       type: s.R94.Types.DESCRIPTION,
-      disabled: p,
-      children: null != g ? c.NW.format(c.t.erxwWF, {
-        teamName: g.name
+      disabled: g,
+      children: null != p ? c.NW.format(c.t.erxwWF, {
+        teamName: p.name
       }) : c.NW.string(c.t.FGzLkJ)
     }), (0, r.jsx)(s.LZC, {
       size: 16
     }), (0, r.jsx)(s.zxk, {
       look: s.zxk.Looks.FILLED,
-      color: null != g ? s.zxk.Colors.PRIMARY : s.zxk.Colors.BRAND,
+      color: null != p ? s.zxk.Colors.PRIMARY : s.zxk.Colors.BRAND,
       onClick: () => {
         (0, s.ZDy)(async () => {
           let {
@@ -70,8 +70,8 @@ function d(e) {
           }
         })
       },
-      disabled: p,
-      children: null != g ? c.NW.string(c.t["/Fjq5O"]) : c.NW.string(c.t["6ih+b2"])
+      disabled: g,
+      children: null != p ? c.NW.string(c.t["/Fjq5O"]) : c.NW.string(c.t["6ih+b2"])
     })]
   })
 }

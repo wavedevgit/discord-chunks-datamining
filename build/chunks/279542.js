@@ -15,8 +15,8 @@ var r = n(200651),
   d = n(230711),
   u = n(497321),
   m = n(688465),
-  p = n(241559),
-  g = n(496675),
+  g = n(241559),
+  p = n(496675),
   h = n(246946),
   f = n(594174),
   b = n(63063),
@@ -25,8 +25,8 @@ var r = n(200651),
   N = n(999382),
   v = n(181339),
   _ = n(193544),
-  O = n(981631),
-  y = n(388032),
+  y = n(981631),
+  O = n(388032),
   C = n(403043);
 
 function I(e) {
@@ -64,7 +64,7 @@ function E(e, t) {
 function S(e) {
   let {
     guild: t
-  } = e, n = (0, o.e7)([g.Z], () => null != t && g.Z.can(O.Plq.MANAGE_GUILD, t), [t]), s = i.useCallback(async e => {
+  } = e, n = (0, o.e7)([p.Z], () => null != t && p.Z.can(y.Plq.MANAGE_GUILD, t), [t]), s = i.useCallback(async e => {
     let {
       value: n
     } = e;
@@ -75,10 +75,10 @@ function S(e) {
         verificationLevel: n
       })
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(y.NW.string(y.t["46Rs3t"]), c.ToastType.FAILURE))
+      (0, c.showToast)((0, c.createToast)(O.NW.string(O.t["46Rs3t"]), c.ToastType.FAILURE))
     }
   }, [t]), a = i.useMemo(() => {
-    let e = (0, x.IF)(null == t ? void 0 : t.hasFeature(O.oNc.COMMUNITY)).map(e => E(I({}, e), {
+    let e = (0, x.IF)(null == t ? void 0 : t.hasFeature(y.oNc.COMMUNITY)).map(e => E(I({}, e), {
       tooltipPosition: "left"
     }));
     return (0, x.LJ)(e)
@@ -90,14 +90,14 @@ function S(e) {
       children: [(0, r.jsx)(c.Text, {
         color: "header-primary",
         variant: "text-md/semibold",
-        children: y.NW.string(y.t.DpRdYG)
+        children: O.NW.string(O.t.DpRdYG)
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: y.NW.format(y.t.iuRk2t, {})
+        children: O.NW.format(O.t.iuRk2t, {})
       })]
     }), (0, r.jsx)(_.Z, {
-      changeTitle: y.NW.string(y.t.TxESJC),
+      changeTitle: O.NW.string(O.t.TxESJC),
       value: null == l ? void 0 : l.value,
       options: a,
       disabled: !n,
@@ -111,7 +111,7 @@ function T(e) {
     guild: t,
     className: n,
     withDivider: s = !0
-  } = e, l = (0, o.e7)([g.Z], () => null != t && g.Z.can(O.Plq.MANAGE_GUILD, t), [t]), d = i.useCallback(async e => {
+  } = e, l = (0, o.e7)([p.Z], () => null != t && p.Z.can(y.Plq.MANAGE_GUILD, t), [t]), d = i.useCallback(async e => {
     let {
       value: n
     } = e;
@@ -122,10 +122,10 @@ function T(e) {
         explicitContentFilter: n
       })
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(y.NW.string(y.t["46Rs3t"]), c.ToastType.FAILURE))
+      (0, c.showToast)((0, c.createToast)(O.NW.string(O.t["46Rs3t"]), c.ToastType.FAILURE))
     }
   }, [t.id]), u = i.useMemo(() => {
-    let e = (0, x.MF)(null == t ? void 0 : t.hasFeature(O.oNc.COMMUNITY)).map(e => E(I({}, e), {
+    let e = (0, x.MF)(null == t ? void 0 : t.hasFeature(y.oNc.COMMUNITY)).map(e => E(I({}, e), {
       tooltipPosition: "left"
     }));
     return (0, x.LJ)(e)
@@ -140,16 +140,16 @@ function T(e) {
         children: [(0, r.jsx)(c.Text, {
           color: "header-primary",
           variant: "text-md/semibold",
-          children: y.NW.string(y.t.Kd6OQU)
+          children: O.NW.string(O.t.Kd6OQU)
         }), (0, r.jsx)(c.Text, {
           color: "header-secondary",
           variant: "text-sm/normal",
-          children: y.NW.format(y.t.zOmxND, {
-            helpdeskArticle: b.Z.getArticleURL(O.BhN.SAFE_DIRECT_MESSAGING)
+          children: O.NW.format(O.t.zOmxND, {
+            helpdeskArticle: b.Z.getArticleURL(y.BhN.SAFE_DIRECT_MESSAGING)
           })
         })]
       }), (0, r.jsx)(_.Z, {
-        changeTitle: y.NW.string(y.t["eBd+Ul"]),
+        changeTitle: O.NW.string(O.t["eBd+Ul"]),
         value: null == m ? void 0 : m.value,
         options: u,
         disabled: !l,
@@ -159,9 +159,9 @@ function T(e) {
   })
 }
 async function P(e, t) {
-  if (e.hasFeature(O.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) === t) return;
+  if (e.hasFeature(y.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) === t) return;
   let n = e.features;
-  return t ? n.add(O.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) : n.delete(O.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY), await j.Z.saveGuild(e.id, {
+  return t ? n.add(y.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) : n.delete(y.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY), await j.Z.saveGuild(e.id, {
     features: n
   })
 }
@@ -169,7 +169,7 @@ async function P(e, t) {
 function w(e) {
   let {
     guild: t
-  } = e, n = (0, o.e7)([g.Z], () => null != t && g.Z.can(O.Plq.MANAGE_GUILD, t), [t]), s = t.hasFeature(O.oNc.COMMUNITY), a = (0, p.n2)(t.id), [l, d] = i.useState(t.hasFeature(O.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), u = i.useCallback(async e => {
+  } = e, n = (0, o.e7)([p.Z], () => null != t && p.Z.can(y.Plq.MANAGE_GUILD, t), [t]), s = t.hasFeature(y.oNc.COMMUNITY), a = (0, g.n2)(t.id), [l, d] = i.useState(t.hasFeature(y.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), u = i.useCallback(async e => {
     d(e), await P(t, e)
   }, [t]);
   return s || !a ? null : (0, r.jsxs)(r.Fragment, {
@@ -186,19 +186,19 @@ function w(e) {
           children: [(0, r.jsxs)(c.Text, {
             color: "header-primary",
             variant: "text-md/semibold",
-            children: [y.NW.string(y.t.jDarm5), (0, r.jsx)(m.Z, {
+            children: [O.NW.string(O.t.jDarm5), (0, r.jsx)(m.Z, {
               className: C.betaTag
             })]
           }), (0, r.jsx)(c.Text, {
             color: "header-secondary",
             variant: "text-sm/normal",
-            children: y.NW.string(y.t["/ee7yM"])
+            children: O.NW.string(O.t["/ee7yM"])
           })]
         })
       }), (0, r.jsx)(c.Wn, {
         messageType: c.QYI.INFO,
         textVariant: "text-xs/normal",
-        children: y.NW.string(y.t.JxO639)
+        children: O.NW.string(O.t.JxO639)
       })]
     }), (0, r.jsx)(c.$i$, {
       className: C.divider
@@ -210,7 +210,7 @@ function R(e) {
   let {
     guild: t,
     mfaLevel: n
-  } = e, s = (0, o.e7)([g.Z], () => null != t && g.Z.can(O.Plq.MANAGE_GUILD, t), [t]), a = (0, o.e7)([f.default], () => f.default.getCurrentUser()), {
+  } = e, s = (0, o.e7)([p.Z], () => null != t && p.Z.can(y.Plq.MANAGE_GUILD, t), [t]), a = (0, o.e7)([f.default], () => f.default.getCurrentUser()), {
     isGuildOwnerWithMFA: u,
     showMFAUserTooltip: m
   } = i.useMemo(() => null == a ? {
@@ -219,10 +219,10 @@ function R(e) {
   } : {
     isGuildOwnerWithMFA: t.isOwnerWithRequiredMfaLevel(a),
     showMFAUserTooltip: !a.mfaEnabled && t.isOwner(a)
-  }, [a, t]), p = n === O.BpS.ELEVATED, h = (0, l.throttle)(async e => {
+  }, [a, t]), g = n === y.BpS.ELEVATED, h = (0, l.throttle)(async e => {
     u && !m && await j.Z.updateMFALevel({
       guildId: t.id,
-      level: e ? O.BpS.ELEVATED : O.BpS.NONE,
+      level: e ? y.BpS.ELEVATED : y.BpS.NONE,
       isEnabled: !e
     })
   }, 1e3);
@@ -232,7 +232,7 @@ function R(e) {
     }), (0, r.jsxs)("div", {
       className: C.setupContainer,
       children: [(0, r.jsx)(c.j7V, {
-        value: p,
+        value: g,
         onChange: h,
         className: C.switchItem,
         disabled: !u,
@@ -242,19 +242,19 @@ function R(e) {
           children: [(0, r.jsx)(c.Text, {
             color: "header-primary",
             variant: "text-md/semibold",
-            children: y.NW.string(y.t.lbBfER)
+            children: O.NW.string(O.t.lbBfER)
           }), (0, r.jsx)(c.Text, {
             color: "header-secondary",
             variant: "text-sm/normal",
-            children: y.NW.string(y.t.REr5AA)
+            children: O.NW.string(O.t.REr5AA)
           })]
         })
       }), m && (0, r.jsx)(c.Wn, {
         messageType: c.QYI.INFO,
         textVariant: "text-xs/normal",
-        children: y.NW.format(y.t.Xz1O0d, {
+        children: O.NW.format(O.t.Xz1O0d, {
           onClick: function() {
-            d.Z.open(O.oAB.ACCOUNT)
+            d.Z.open(y.oAB.ACCOUNT)
           }
         })
       })]
@@ -268,7 +268,7 @@ function Z() {
     mfaLevel: t
   } = (0, o.cj)([N.Z], () => N.Z.getProps(), []), n = (0, o.e7)([h.Z], () => h.Z.enabled, []);
   return null == e ? null : n ? (0, r.jsx)(u.Z, {}) : (0, r.jsxs)(c.hjN, {
-    title: y.NW.string(y.t["suhY+f"]),
+    title: O.NW.string(O.t["suhY+f"]),
     tag: c.RB0.H1,
     titleClassName: C.headerContainer,
     children: [(0, r.jsx)(w, {

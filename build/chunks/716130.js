@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(603211),
   u = n(710344),
   m = n(430824),
-  p = n(570961),
-  g = n(208665),
+  g = n(570961),
+  p = n(208665),
   h = n(959508),
   f = n(290511),
   b = n(388032),
@@ -57,7 +57,7 @@ function v(e) {
     guild: t,
     prejoinOnly: n,
     postjoinOnly: s
-  } = e, c = (0, l.e7)([g.Z], () => g.Z.editedOnboardingPrompts), u = c.filter(e => e.inOnboarding), m = u.length, {
+  } = e, c = (0, l.e7)([p.Z], () => p.Z.editedOnboardingPrompts), u = c.filter(e => e.inOnboarding), m = u.length, {
     drag: h,
     drop: j,
     dragSourcePosition: N,
@@ -82,7 +82,7 @@ function v(e) {
     }),
     children: [!s && u.length < f.b3 ? (0, r.jsxs)(o.P3F, {
       className: x.addPrompt,
-      onClick: () => (0, p.tS)(t, [...c, (0, f.yZ)(!0)], !1),
+      onClick: () => (0, g.tS)(t, [...c, (0, f.yZ)(!0)], !1),
       children: [(0, r.jsx)(o.oFk, {
         size: "custom",
         color: "currentColor",
@@ -117,13 +117,13 @@ function _(e) {
     postjoinOnly: i,
     includeCount: s,
     singleColumn: a
-  } = e, d = (0, l.e7)([m.Z], () => m.Z.getGuild(t)), _ = (0, l.e7)([g.Z], () => g.Z.editedOnboardingPrompts), O = _.filter(e => e.inOnboarding), y = _.filter(e => !0 !== e.inOnboarding), C = [...O.map(e => ({
+  } = e, d = (0, l.e7)([m.Z], () => m.Z.getGuild(t)), _ = (0, l.e7)([p.Z], () => p.Z.editedOnboardingPrompts), y = _.filter(e => e.inOnboarding), O = _.filter(e => !0 !== e.inOnboarding), C = [...y.map(e => ({
     id: e.id,
     data: e
   })), {
     id: "separator",
     data: (0, f.ae)()
-  }, ...y.map(e => ({
+  }, ...O.map(e => ({
     id: e.id,
     data: e
   }))], {
@@ -147,7 +147,7 @@ function _(e) {
         })
       });
       return
-    }(0, p.tS)(d, [...n, ...r])
+    }(0, g.tS)(d, [...n, ...r])
   });
   return null == d ? null : (0, r.jsxs)(r.Fragment, {
     children: [i ? null : (0, r.jsxs)(r.Fragment, {
@@ -161,7 +161,7 @@ function _(e) {
           className: x.subtitle,
           children: b.NW.string(b.t.QvCcYW)
         })]
-      }), O.map((e, t) => (0, r.jsx)(h.Z, {
+      }), y.map((e, t) => (0, r.jsx)(h.Z, {
         guild: d,
         prompt: e,
         disableAutofocus: n,
@@ -178,17 +178,17 @@ function _(e) {
       prejoinOnly: n,
       postjoinOnly: i
     }), n ? null : (0, r.jsxs)(r.Fragment, {
-      children: [y.map((e, t) => (0, r.jsx)(h.Z, {
+      children: [O.map((e, t) => (0, r.jsx)(h.Z, {
         guild: d,
         prompt: e,
-        promptIndex: t + O.length,
-        dragIndex: t + O.length + 1,
+        promptIndex: t + y.length,
+        dragIndex: t + y.length + 1,
         onPromptDragStart: I,
         onPromptDragReset: E,
         onPromptDragComplete: S
       }, e.id)), _.length < f.YW ? (0, r.jsxs)(o.P3F, {
         className: x.addPrompt,
-        onClick: () => (0, p.tS)(d, [..._, (0, f.yZ)(!1)], !1),
+        onClick: () => (0, g.tS)(d, [..._, (0, f.yZ)(!1)], !1),
         children: [(0, r.jsx)(o.oFk, {
           size: "custom",
           color: "currentColor",

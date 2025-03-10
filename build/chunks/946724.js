@@ -10,8 +10,8 @@ var a, l = n(392711),
   d = n(866442),
   u = n(442837),
   m = n(570140),
-  p = n(561654),
-  g = n(430824),
+  g = n(561654),
+  p = n(430824),
   h = n(990492),
   f = n(823379),
   b = n(700785),
@@ -28,8 +28,8 @@ function N(e, t, n) {
 }
 let v = new Set,
   _ = j.QZA.CLOSED,
-  O = !1,
   y = !1,
+  O = !1,
   C = [],
   I = [],
   E = !1,
@@ -39,7 +39,7 @@ let v = new Set,
 
 function w() {
   if (null == r || null == C) return [];
-  let e = o()(g.Z.getRoles(r.id)).values().sortBy(e => {
+  let e = o()(p.Z.getRoles(r.id)).values().sortBy(e => {
     let {
       position: t
     } = e;
@@ -74,7 +74,7 @@ function R(e) {
 
 function Z() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-  r = x.Z.getProps().guild, O = !1, y = !1, s = void 0, v.clear(), _ = j.QZA.OPEN, I = [...C = null != r ? o()(g.Z.getRoles(r.id)).values().sortBy(e => {
+  r = x.Z.getProps().guild, y = !1, O = !1, s = void 0, v.clear(), _ = j.QZA.OPEN, I = [...C = null != r ? o()(p.Z.getRoles(r.id)).values().sortBy(e => {
     let {
       position: t
     } = e;
@@ -85,7 +85,7 @@ function Z() {
 }
 let D = o().debounce(() => {
   let e = !1;
-  !y || (y = w().length > 0) || (e = !0), [...v].forEach(t => {
+  !O || (O = w().length > 0) || (e = !0), [...v].forEach(t => {
     var n;
     o().isEqual(k(t), (n = t, I.find(e => {
       let {
@@ -93,7 +93,7 @@ let D = o().debounce(() => {
       } = e;
       return t === n
     }))) && (v.delete(t), e = !0)
-  }), 0 === v.size && (O = !1), E && o().isEqual(T, P) && (e = !0, E = !1), e && M.emitChange()
+  }), 0 === v.size && (y = !1), E && o().isEqual(T, P) && (e = !0, E = !1), e && M.emitChange()
 }, 500);
 
 function A(e, t) {
@@ -111,7 +111,7 @@ function A(e, t) {
     }
     return e
   }({}, e, t);
-  C[n] = r, C = [...C], O = !0, v.add(r.id), D()
+  C[n] = r, C = [...C], y = !0, v.add(r.id), D()
 }
 
 function k(e) {
@@ -130,7 +130,7 @@ function W(e) {
   if (null == r || t !== r.id || _ === j.QZA.SUBMITTING) return !1;
   r = x.Z.getProps().guild;
   let n = [];
-  null != r && (n = o()(g.Z.getRoles(r.id)).values().sortBy(e => {
+  null != r && (n = o()(p.Z.getRoles(r.id)).values().sortBy(e => {
     let {
       position: t
     } = e;
@@ -144,20 +144,20 @@ function W(e) {
       } = t;
       if (i === e) return r = n, !0
     }) || null == t ? v.delete(e) : n[r] = t
-  }), 0 === v.size && (O = !1), y = !1, C = [...n]
+  }), 0 === v.size && (y = !1), O = !1, C = [...n]
 }
 class L extends(a = u.ZP.Store) {
   initialize() {
-    this.waitFor(x.Z, p.Z, g.Z)
+    this.waitFor(x.Z, g.Z, p.Z)
   }
   hasChanges() {
-    return O || y || E
+    return y || O || E
   }
   get errorMessage() {
     return s
   }
   get hasSortChanges() {
-    return y
+    return O
   }
   get hasRoleConfigurationChanges() {
     return E
@@ -203,7 +203,7 @@ let M = new L(m.Z, __OVERLAY__ ? {} : {
         roles: t
       } = e;
       if (null != C && t.length !== C.length) return !1;
-      C = t.map(e => k(e)).filter(f.lm), y = !0, D()
+      C = t.map(e => k(e)).filter(f.lm), O = !0, D()
     },
     GUILD_SETTINGS_ROLES_UPDATE_PERMISSIONS: function(e) {
       let {
@@ -318,7 +318,7 @@ let M = new L(m.Z, __OVERLAY__ ? {} : {
       E = !0, S.add(r.id), P.set(r.id, n), D()
     },
     GUILD_SETTINGS_CLOSE: function() {
-      r = null, I = C = [], T.clear(), v.clear(), P.clear(), S = new Set, O = !1, y = !1, E = !1, _ = j.QZA.CLOSED
+      r = null, I = C = [], T.clear(), v.clear(), P.clear(), S = new Set, y = !1, O = !1, E = !1, _ = j.QZA.CLOSED
     },
     GUILD_ROLE_CREATE: W,
     GUILD_ROLE_UPDATE: W,

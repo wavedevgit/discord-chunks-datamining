@@ -14,7 +14,7 @@ var r = n(200651),
   u = n(596390),
   m = n(651095);
 
-function p(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +33,7 @@ function p(e) {
   return e
 }
 
-function g(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -81,7 +81,7 @@ let h = i.forwardRef(function(e, t) {
     color: o.ua7.Colors.RED,
     position: "left",
     forceOpen: u || void 0,
-    children: e => (0, r.jsxs)("div", g(p({
+    children: e => (0, r.jsxs)("div", p(g({
       ref: t,
       className: a()(m.chipletValue, {
         [m.isEditing]: d,
@@ -111,7 +111,7 @@ let h = i.forwardRef(function(e, t) {
       color: o.ua7.Colors.RED,
       position: "top",
       forceOpen: u || void 0,
-      children: e => (0, r.jsx)("span", g(p({}, e), {
+      children: e => (0, r.jsx)("span", p(g({}, e), {
         className: m.errorValue,
         children: b
       }))
@@ -126,14 +126,14 @@ function f(e) {
     value: t,
     onChange: n,
     onBlur: s,
-    onFocus: p,
-    onRemove: g,
+    onFocus: g,
+    onRemove: p,
     isSelected: f,
     isSelecting: b,
     error: x,
     forceShowErrorTooltip: j
-  } = e, N = i.useRef(null), v = i.useRef(null), [_, O] = i.useState(!1), {
-    ref: y,
+  } = e, N = i.useRef(null), v = i.useRef(null), [_, y] = i.useState(!1), {
+    ref: O,
     width: C = 0
   } = (0, c.Z)(_), {
     ref: I,
@@ -151,23 +151,23 @@ function f(e) {
     }, [n]),
     D = i.useCallback(function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-      if (t.trim().length <= 0 && g(), null != N.current && null != y.current && null != v.current) {
+      if (t.trim().length <= 0 && p(), null != N.current && null != O.current && null != v.current) {
         var n;
-        N.current.scrollTo(0, 0), N.current.setSelectionRange(0, 0), N.current.scrollLeft = 0, y.current.scrollLeft = 0, (null === (n = v.current) || void 0 === n ? void 0 : n.ref) != null && (v.current.ref.scrollLeft = 0)
+        N.current.scrollTo(0, 0), N.current.setSelectionRange(0, 0), N.current.scrollLeft = 0, O.current.scrollLeft = 0, (null === (n = v.current) || void 0 === n ? void 0 : n.ref) != null && (v.current.ref.scrollLeft = 0)
       }
-      O(!1), s(e)
-    }, [t, y, s, g]),
+      y(!1), s(e)
+    }, [t, O, s, p]),
     A = i.useCallback(e => {
       let n = t.trim().length <= 0;
       u.ye.has(e.key) ? (e.preventDefault(), e.stopPropagation(), D(!0)) : "Backspace" === e.key && n && (e.preventDefault(), e.stopPropagation(), D(!0))
     }, [D, t]),
     k = i.useCallback(e => {
       let t = e.metaKey || e.ctrlKey;
-      p(t), t ? e.preventDefault() : O(!0), e.stopPropagation()
-    }, [p]),
+      g(t), t ? e.preventDefault() : y(!0), e.stopPropagation()
+    }, [g]),
     W = i.useCallback(e => {
-      g()
-    }, [g]);
+      p()
+    }, [p]);
   return (0, r.jsx)("div", {
     className: m.chipletFlexContainer,
     children: (0, r.jsxs)("div", {
@@ -204,7 +204,7 @@ function f(e) {
             width: R > 0 ? R : "calc(".concat(t.length, "ch + 10px)")
           }
         }), (0, r.jsx)(h, {
-          ref: y,
+          ref: O,
           value: t,
           isEditing: _,
           isSelected: f,

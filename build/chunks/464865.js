@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(621319),
   u = n(44550),
   m = n(586382),
-  p = n(859481),
-  g = n(981631),
+  g = n(859481),
+  p = n(981631),
   h = n(388032),
   f = n(483057);
 
@@ -47,9 +47,9 @@ function b(e) {
       color: "text-secondary",
       className: f.description,
       children: h.NW.format(h.t.koklFB, {
-        helpCenterArticle: c.Z.getArticleURL(g.BhN.GUILD_VANITY_URL)
+        helpCenterArticle: c.Z.getArticleURL(p.BhN.GUILD_VANITY_URL)
       })
-    }), (0, r.jsx)(p.z, {
+    }), (0, r.jsx)(g.z, {
       guild: t,
       vanityURLCode: b,
       vanityURLUses: x,

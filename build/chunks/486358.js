@@ -14,8 +14,8 @@ var i = n(793030),
   d = n(496675),
   u = n(999382),
   m = n(723914),
-  p = n(30818),
-  g = n(997698),
+  g = n(30818),
+  p = n(997698),
   h = n(354031),
   f = n(335438),
   b = n(166805),
@@ -62,13 +62,13 @@ let v = function() {
         })]
       }), (0, r.jsx)("div", {
         className: N.divider
-      }), (0, r.jsx)(p.z, {
+      }), (0, r.jsx)(g.z, {
         guildId: t.id,
         defaultSettings: t.defaultMessageNotifications,
         canManageGuild: n
       }), (0, r.jsx)("div", {
         className: N.divider
-      }), (0, r.jsx)(g.L, {
+      }), (0, r.jsx)(p.L, {
         canManageGuild: n,
         guild: t
       }), !0 === n && (0, r.jsxs)(r.Fragment, {

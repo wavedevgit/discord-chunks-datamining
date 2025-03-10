@@ -14,8 +14,8 @@ var i = n(399606),
   d = n(200472),
   u = n(489028),
   m = n(277369),
-  p = n(215124),
-  g = n(999382),
+  g = n(215124),
+  p = n(999382),
   h = n(267101),
   f = n(287576),
   b = n(894610),
@@ -34,7 +34,7 @@ function N(e) {
   var t, n, l;
   let {
     guildId: h
-  } = e, N = (0, f.Z)(h), v = (0, a.f3)(), _ = (0, i.e7)([g.Z], () => g.Z.getGuild());
+  } = e, N = (0, f.Z)(h), v = (0, a.f3)(), _ = (0, i.e7)([p.Z], () => p.Z.getGuild());
   return N.loading || null == _ ? (0, r.jsx)(s.$jN, {}) : null == N.application ? (0, r.jsx)(u.Z, {
     guild: _
   }) : (0, r.jsxs)(d.Z, {
@@ -65,7 +65,7 @@ function N(e) {
       })
     }), (0, r.jsx)(s.hjN, {
       title: x.NW.string(x.t["0n7R2d"]),
-      children: (0, r.jsx)(p.Z, {
+      children: (0, r.jsx)(g.Z, {
         guildId: h,
         allPeriods: N.payoutsByPeriod
       })

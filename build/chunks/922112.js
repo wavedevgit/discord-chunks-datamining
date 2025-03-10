@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(592125),
   u = n(768581),
   m = n(8426),
-  p = n(969632),
-  g = n(388032),
+  g = n(969632),
+  p = n(388032),
   h = n(668813);
 
 function f(e) {
@@ -58,11 +58,11 @@ let x = function(e) {
     onDragReset: v
   } = e, {
     title: _,
-    channelId: O,
-    description: y
-  } = s, C = d.Z.getChannel(O), I = null;
-  null != C && (0, c.k3)(C) || (I = g.NW.string(g.t.kTdL8f));
-  let E = null == y || 0 === y.length,
+    channelId: y,
+    description: O
+  } = s, C = d.Z.getChannel(y), I = null;
+  null != C && (0, c.k3)(C) || (I = p.NW.string(p.t.kTdL8f));
+  let E = null == O || 0 === O.length,
     S = u.ZP.getResourceChannelIconURL({
       channelId: s.channelId,
       icon: s.icon
@@ -84,7 +84,7 @@ let x = function(e) {
       (0, m.XG)(s.channelId, e)
     }, [s.channelId]),
     D = i.useCallback((e, n) => {
-      let r = p.Z.getSettings();
+      let r = g.Z.getSettings();
       null != r && ((0, m.XG)(s.channelId, e), (0, m.oo)(t, r).then(() => {
         (0, m.mM)(t, e.channelId, n)
       }))
@@ -141,10 +141,10 @@ let x = function(e) {
           variant: "text-xs/medium",
           color: "text-muted",
           lineClamp: 1,
-          children: y
+          children: O
         })]
       }), (0, r.jsx)(l.ua7, {
-        text: g.NW.string(g.t.bt75u7),
+        text: p.NW.string(p.t.bt75u7),
         children: e => (0, r.jsxs)(l.zxk, b(f({}, e), {
           className: h.resourceChannelEditButton,
           innerClassName: h.resourceChannelEditButtonInner,
@@ -154,7 +154,7 @@ let x = function(e) {
             size: "md",
             color: "currentColor"
           }), (0, r.jsx)(l.nn4, {
-            children: g.NW.string(g.t.bt75u7)
+            children: p.NW.string(p.t.bt75u7)
           })]
         }))
       })]

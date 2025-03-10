@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(858457),
   u = n(273504),
   m = n(981631),
-  p = n(388032),
-  g = n(978082);
+  g = n(388032),
+  p = n(978082);
 let h = o.Z.getArticleURL(m.BhN.GUILD_AUTOMOD_REGEX);
 
 function f(e) {
@@ -24,17 +24,17 @@ function f(e) {
     errorText: i
   } = e;
   return t ? (0, r.jsx)("div", {
-    className: g.subtext,
+    className: p.subtext,
     children: (0, r.jsx)(l.Text, {
-      className: g.errorSpan,
+      className: p.errorSpan,
       variant: "text-xs/medium",
       color: "text-danger",
-      children: null != i ? i : p.NW.format(p.t.jKYAPj, {
+      children: null != i ? i : g.NW.format(g.t.jKYAPj, {
         helpArticle: h
       })
     })
   }) : (0, r.jsx)(l.Text, {
-    className: g.subtext,
+    className: p.subtext,
     variant: "text-xs/medium",
     color: "text-muted",
     children: n
@@ -72,22 +72,22 @@ function b(e) {
       erroringCharacterLength: s,
       erroringCharacterOffset: a
     }), e
-  }, {}), [x, m]), O = i.useCallback(e => {
+  }, {}), [x, m]), y = i.useCallback(e => {
     j(e, m)
-  }, [j, m]), y = i.useCallback(e => {
+  }, [j, m]), O = i.useCallback(e => {
     N(e)
   }, [N]);
   return (0, r.jsxs)("div", {
-    className: a()(g.keywordsContainer, o),
+    className: a()(p.keywordsContainer, o),
     children: [(0, r.jsx)(c.Z, {
       placeholder: "^b(a|@)d$\nw(o|0)rd(s|$)",
       initialValue: v,
-      onChangeTags: O,
-      onChangeNewTagValue: y,
+      onChangeTags: y,
+      onChangeNewTagValue: O,
       tagErrors: _,
       maxTags: u.VW
     }), (0, r.jsx)(f, {
-      text: p.NW.format(p.t["PGC/AA"], {
+      text: g.NW.format(g.t["PGC/AA"], {
         helpArticle: h
       }),
       hasErrors: x.length > 0 || null != b,

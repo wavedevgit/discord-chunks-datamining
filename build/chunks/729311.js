@@ -14,8 +14,8 @@ var r = n(200651),
   d = n(45966),
   u = n(473403),
   m = n(454585),
-  p = n(323502),
-  g = n(958832),
+  g = n(323502),
+  p = n(958832),
   h = n(324067),
   f = n(984933),
   b = n(259580),
@@ -24,8 +24,8 @@ var r = n(200651),
   N = n(889369),
   v = n(570961),
   _ = n(208665),
-  O = n(868814),
-  y = n(974513),
+  y = n(868814),
+  O = n(974513),
   C = n(2348),
   I = n(353890),
   E = n(716130),
@@ -35,11 +35,11 @@ var r = n(200651),
 function P(e) {
   let {
     guild: t
-  } = e, l = (0, s.e7)([d.Z], () => d.Z.getEnabled(t.id)), h = (0, s.e7)([g.Z], () => g.Z.hasFetched(t.id)), f = (0, O.Z)(t), b = (0, s.e7)([N.Z], () => N.Z.editedDefaultChannelIds), x = f.filter(e => !b.has(e.id)), [v, _] = i.useState(!1);
+  } = e, l = (0, s.e7)([d.Z], () => d.Z.getEnabled(t.id)), h = (0, s.e7)([p.Z], () => p.Z.hasFetched(t.id)), f = (0, y.Z)(t), b = (0, s.e7)([N.Z], () => N.Z.editedDefaultChannelIds), x = f.filter(e => !b.has(e.id)), [v, _] = i.useState(!1);
   i.useEffect(() => {
-    h || l || (0, p.S)(t.id)
+    h || l || (0, g.S)(t.id)
   }, [t.id, h, l]);
-  let y = e => {
+  let O = e => {
     (0, a.ZDy)(async () => {
       let {
         default: i
@@ -147,7 +147,7 @@ function P(e) {
             color: a.zxk.Colors.PRIMARY,
             className: T.lockedPill,
             innerClassName: T.lockedPillInner,
-            onClick: () => y(e.id),
+            onClick: () => O(e.id),
             children: [(0, r.jsx)(a.mBM, {
               size: "xs",
               color: "currentColor"
@@ -169,7 +169,7 @@ function P(e) {
 function w(e) {
   let {
     saveOnClose: t = !1
-  } = e, n = (0, s.e7)([x.Z], () => x.Z.getGuild()), l = (0, s.e7)([d.Z], () => d.Z.isLoading()), o = (0, s.e7)([f.ZP], () => f.ZP.getChannels(null == n ? void 0 : n.id)), c = (0, s.e7)([h.Z], () => h.Z.getCategories(null == n ? void 0 : n.id)), u = (0, s.e7)([_.Z], () => _.Z.advancedMode), m = i.useRef(null), [p, g] = i.useState(!1), N = i.useRef(n);
+  } = e, n = (0, s.e7)([x.Z], () => x.Z.getGuild()), l = (0, s.e7)([d.Z], () => d.Z.isLoading()), o = (0, s.e7)([f.ZP], () => f.ZP.getChannels(null == n ? void 0 : n.id)), c = (0, s.e7)([h.Z], () => h.Z.getCategories(null == n ? void 0 : n.id)), u = (0, s.e7)([_.Z], () => _.Z.advancedMode), m = i.useRef(null), [g, p] = i.useState(!1), N = i.useRef(n);
   return (i.useEffect(() => {
     N.current = n
   }), i.useEffect(() => {
@@ -191,9 +191,9 @@ function w(e) {
       className: T.channelBrowser,
       children: [(0, r.jsx)(a.P3F, {
         className: T.collapseButton,
-        onClick: () => g(e => !e),
+        onClick: () => p(e => !e),
         children: (0, r.jsx)(b.Z, {
-          direction: p ? b.Z.Directions.DOWN : b.Z.Directions.UP,
+          direction: g ? b.Z.Directions.DOWN : b.Z.Directions.UP,
           height: 16,
           width: 16
         })
@@ -205,10 +205,10 @@ function w(e) {
         variant: "text-sm/normal",
         color: "header-secondary",
         children: S.NW.string(S.t.Kq7FAQ)
-      }), (0, r.jsx)(y.Wu, {
+      }), (0, r.jsx)(O.Wu, {
         className: T.advancedModeToggle,
         guildId: n.id
-      }), p ? null : (0, r.jsxs)(r.Fragment, {
+      }), g ? null : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(P, {
           guild: n
         }), (0, r.jsx)(C.Z, {

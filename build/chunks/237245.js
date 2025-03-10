@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(863249),
   u = n(246364),
   m = n(983736),
-  p = n(571728),
-  g = n(699553),
+  g = n(571728),
+  p = n(699553),
   h = n(434404),
   f = n(999382),
   b = n(654351),
@@ -23,9 +23,9 @@ var r = n(200651),
   N = n(386885),
   v = n(981631),
   _ = n(128449),
-  O = n(388032);
+  y = n(388032);
 
-function y(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -66,7 +66,7 @@ function I(e) {
     settingsGuild: I,
     settingsMetadata: E,
     settingsProfile: S
-  } = e, T = I.id, [P, w] = i.useState(!1), [R, Z] = i.useState(null), D = I.hasFeature(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null !== (t = (0, p.A)({
+  } = e, T = I.id, [P, w] = i.useState(!1), [R, Z] = i.useState(null), D = I.hasFeature(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null !== (t = (0, g.A)({
     guildId: I.id
   })) && void 0 !== t ? t : 0, k = i.useCallback(() => {
     Z(null), h.Z.init(T, v.pNK.ACCESS)
@@ -82,7 +82,7 @@ function I(e) {
         throwErr: !0
       })
     } catch (e) {
-      throw "object" == typeof e && "message" in e ? Z(e.message) : Z(O.NW.formatToPlainString(O.t.aTVNen, {
+      throw "object" == typeof e && "message" in e ? Z(e.message) : Z(y.NW.formatToPlainString(y.t.aTVNen, {
         statusPageURL: v.yXt.STATUS
       })), e
     }
@@ -95,7 +95,7 @@ function I(e) {
   }, [T]), G = i.useCallback(async (e, t) => {
     let n = t.length > 0 ? [{
       field_type: u.QJ.TERMS,
-      label: O.NW.string(O.t["9suSIC"]),
+      label: y.NW.string(y.t["9suSIC"]),
       values: t,
       required: !0
     }] : [];
@@ -127,7 +127,7 @@ function I(e) {
             features: e
           })
         }
-        f.verificationDirty && await M([...e], !0), f.profileDirty && null != S && await (0, g.pV)(I.id, {
+        f.verificationDirty && await M([...e], !0), f.profileDirty && null != S && await (0, p.pV)(I.id, {
           visibility: S.visibility
         })
       })
@@ -147,7 +147,7 @@ function I(e) {
             preferredLocale: I.preferredLocale
           });
           try {
-            await (0, c.Vv)(y({
+            await (0, c.Vv)(O({
               guildId: I.id
             }, E))
           } catch (e) {
@@ -163,7 +163,7 @@ function I(e) {
             let {
               default: t
             } = await n.e("67376").then(n.bind(n, 207252));
-            return n => (0, r.jsx)(t, C(y({}, n), {
+            return n => (0, r.jsx)(t, C(O({}, n), {
               guildId: T,
               onConfirm: e
             }))
@@ -178,7 +178,7 @@ function I(e) {
             let {
               default: t
             } = await n.e("55009").then(n.bind(n, 826390));
-            return n => (0, r.jsx)(t, C(y({}, n), {
+            return n => (0, r.jsx)(t, C(O({}, n), {
               guildId: T,
               submittedGuildJoinRequestsCount: A,
               onConfirm: e
@@ -195,14 +195,14 @@ function I(e) {
           termRules: t = []
         } = s;
         if (t.map(e => e.value.trim()).filter(e => "" !== e).length < 1 && e) {
-          Z(O.NW.string(O.t.TCHkcX));
+          Z(y.NW.string(y.t.TCHkcX));
           return
         }
       }
       if (s.joinType === j.A.APPLY) {
         var t;
         if (!(null === (t = s.pendingVerificationFields) || void 0 === t ? void 0 : t.some(e => (0, m._C)(e)))) {
-          Z(O.NW.string(O.t.HGVrIy));
+          Z(y.NW.string(y.t.HGVrIy));
           return
         }
       }
@@ -210,8 +210,8 @@ function I(e) {
     })(() => t(() => e(U)))
   }, [D, U, s, T, A]), F = s.joinType === j.A.DISCOVERABLE && s.settingsView === N.U.ELIGIBLE_DISABLED, z = null != I.description && E.primaryCategoryId !== _.o3 && E.keywords.length > 0;
   return (0, r.jsx)(l.Z, {
-    message: F ? O.NW.string(O.t.V2G2Ym) : void 0,
-    onSaveText: F ? O.NW.string(O.t["qjtt/v"]) : void 0,
+    message: F ? y.NW.string(y.t.V2G2Ym) : void 0,
+    onSaveText: F ? y.NW.string(y.t["qjtt/v"]) : void 0,
     submitting: P,
     errorMessage: R,
     onReset: k,
@@ -247,7 +247,7 @@ function E() {
     }
   });
   return null == e || null == n ? null : e.joinType === j.A.DISCOVERABLE && e.settingsView === N.U.INELIGIBLE ? (0, r.jsx)(l.Z, {
-    message: O.NW.string(O.t.TEXwRk),
+    message: y.NW.string(y.t.TEXwRk),
     onReset: () => h.Z.init(n.id, v.pNK.ACCESS)
   }) : (0, r.jsx)(I, {
     pendingState: e,

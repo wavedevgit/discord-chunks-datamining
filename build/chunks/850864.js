@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(999382),
   u = n(8426),
   m = n(969632),
-  p = n(998164),
-  g = n(340189),
+  g = n(998164),
+  p = n(340189),
   h = n(507317),
   f = n(399614),
   b = n(387960),
@@ -23,8 +23,8 @@ var r = n(200651),
   N = n(668813),
   v = n(91716),
   _ = n(470264),
-  O = n(710043),
-  y = n(847950);
+  y = n(710043),
+  O = n(847950);
 
 function C(e) {
   let {
@@ -41,7 +41,7 @@ function C(e) {
     let e = m.Z.getSettings();
     (0, u.oo)(t.id, e)
   }, [n, t.id]);
-  let E = i.useMemo(() => (0, a.ap)(I) ? "existing" === c ? _ : y : "existing" === c ? v : O, [c, I]);
+  let E = i.useMemo(() => (0, a.ap)(I) ? "existing" === c ? _ : O : "existing" === c ? v : y, [c, I]);
   return (0, r.jsxs)("div", {
     className: N.page,
     children: [(0, r.jsxs)("div", {
@@ -77,8 +77,8 @@ function C(e) {
         })
       }), (0, r.jsx)("div", {
         className: N.section,
-        children: (0, r.jsx)(g.Z, {})
-      }), (0, r.jsx)(p.Z, {
+        children: (0, r.jsx)(p.Z, {})
+      }), (0, r.jsx)(g.Z, {
         guildId: t.id
       }), (0, r.jsx)("div", {
         className: N.sectionSeparator

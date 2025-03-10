@@ -95,7 +95,7 @@ function ea(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let es = /^https/.test((r = "https:", "https:")) ? "wss:" : "ws:",
+let es = /^https/.test((r = void 0, location.protocol)) ? "wss:" : "ws:",
   el = 200,
   ec = 20,
   eu = 500,

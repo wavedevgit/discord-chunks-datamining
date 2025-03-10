@@ -1,6 +1,6 @@
 /** Chunk was on 84335 **/
 n.d(t, {
-  Z: () => j,
+  Z: () => I,
   s: () => f
 }), n(789020);
 var r, l = n(192379),
@@ -15,7 +15,7 @@ var r, l = n(192379),
   v = n(981631),
   f = ((r = {})[r.IS_MEMBER = 0] = "IS_MEMBER", r[r.HAS_APPLICATION = 1] = "HAS_APPLICATION", r[r.APPLY_TO_JOIN = 2] = "APPLY_TO_JOIN", r[r.LURK_DISCOVERABLE = 3] = "LURK_DISCOVERABLE", r[r.JOIN_VIA_INVITE = 4] = "JOIN_VIA_INVITE", r);
 
-function j(e) {
+function I(e) {
   let {
     id: t,
     features: n
@@ -23,8 +23,8 @@ function j(e) {
     var e;
     return (null === (e = null != t ? s.ZP.getMember(t, r) : null) || void 0 === e ? void 0 : e.joinedAt) != null
   }, [t, r]), {
-    validInviteKey: j,
-    isBypassInvite: x
+    validInviteKey: I,
+    isBypassInvite: j
   } = (0, a.cj)([u.Z], () => {
     var e;
     let n = u.Z.getInviteKeyForGuildId(t),
@@ -36,10 +36,10 @@ function j(e) {
       validInviteKey: n,
       isBypassInvite: (0, d.yE)(null !== (e = r.flags) && void 0 !== e ? e : 0, i.$.IS_APPLICATION_BYPASS)
     }
-  }), b = (0, o.Z)(), h = l.useMemo(() => f ? 0 : b.includes(t) ? 1 : (null == n ? void 0 : n.includes(v.oNc.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == n ? void 0 : n.includes(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && (null != j || e.visibility === m.k.PUBLIC_WITH_RECRUITMENT) && !x ? 2 : null != j ? 4 : (null == n ? void 0 : n.includes(v.oNc.DISCOVERABLE)) ? 3 : null, [n, t, x, f, b, e.visibility, j]);
+  }), h = (0, o.Z)(), b = l.useMemo(() => f ? 0 : h.includes(t) ? 1 : (null == n ? void 0 : n.includes(v.oNc.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == n ? void 0 : n.includes(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && (null != I || e.visibility === m.k.PUBLIC_WITH_RECRUITMENT) && !j ? 2 : null != I ? 4 : (null == n ? void 0 : n.includes(v.oNc.DISCOVERABLE)) ? 3 : null, [n, t, j, f, h, e.visibility, I]);
   return {
     guildId: t,
-    ctaType: h,
-    validInviteKey: j
+    ctaType: b,
+    validInviteKey: I
   }
 }

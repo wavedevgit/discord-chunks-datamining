@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(111028),
   u = n(977258),
   m = n(637853),
-  p = n(473403),
-  g = n(216306),
+  g = n(473403),
+  p = n(216306),
   h = n(743475),
   f = n(827907),
   b = n(868814),
@@ -54,7 +54,7 @@ function _(e, t) {
   }), e
 }
 
-function O(e) {
+function y(e) {
   let {
     guild: t,
     channel: i
@@ -107,7 +107,7 @@ function O(e) {
     })]
   })
 }
-let y = i.memo(function() {
+let O = i.memo(function() {
     return (0, r.jsx)("div", {
       className: N.separator
     })
@@ -127,8 +127,8 @@ let y = i.memo(function() {
       channel: t,
       category: i,
       guild: s,
-      isFirstChannel: g,
-      isLastChannel: O,
+      isFirstChannel: p,
+      isLastChannel: y,
       tooltipDirection: I = "right"
     } = e, E = (0, f.Mf)(t.id, i.id), S = (0, f.t4)(t.id, i.id), T = (0, f.EH)(t.id, i.id), P = (0, f.lL)(s.id, i.id), w = null != (0, b.Z)(s).find(e => e.id === t.id), R = (0, m.mn)(t.id), Z = e => {
       if (!S) return e.stopPropagation(), (0, u.s)(s.id, t.id) ? (0, h.pt)(t.id) : (0, o.ZDy)(async () => {
@@ -166,8 +166,8 @@ let y = i.memo(function() {
         position: I,
         children: e => (0, r.jsxs)(o.P3F, _(v({
           className: a()(N.channelRow, {
-            [N.firstChannel]: g,
-            [N.lastChannel]: O,
+            [N.firstChannel]: p,
+            [N.lastChannel]: y,
             [N.disabled]: S
           })
         }, e), {
@@ -177,7 +177,7 @@ let y = i.memo(function() {
             className: N.channelInfo,
             children: (0, r.jsxs)("div", {
               className: N.channelName,
-              children: [(0, r.jsx)(p._W, {
+              children: [(0, r.jsx)(g._W, {
                 channel: t,
                 guild: s
               }), (0, r.jsx)(d.Z, {
@@ -227,7 +227,7 @@ let y = i.memo(function() {
             })
           })]
         }))
-      }), !O && (0, r.jsx)(y, {})]
+      }), !y && (0, r.jsx)(O, {})]
     })
   });
 
@@ -239,7 +239,7 @@ function E(e) {
     hasSidebar: a
   } = e, l = i.useCallback(e => {
     let i = t._categories[e];
-    return (0, r.jsx)(O, {
+    return (0, r.jsx)(y, {
       channel: i.channel,
       guild: n
     }, i.channel.id)
@@ -254,7 +254,7 @@ function E(e) {
       isLastChannel: t[s.channel.id].length - 1 === i,
       tooltipDirection: a ? "right" : "top"
     }, l.channel.id)
-  }, [t, n, a]), c = (0, g.tn)(n.id, t, 64);
+  }, [t, n, a]), c = (0, p.tn)(n.id, t, 64);
   return (0, r.jsx)("div", {
     className: s,
     children: c.map((e, t) => {

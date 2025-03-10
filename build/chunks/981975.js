@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(481060),
   u = n(570140),
   m = n(275759),
-  p = n(313201),
-  g = n(63063),
+  g = n(313201),
+  p = n(63063),
   h = n(243730),
   f = n(764260),
   b = n(946724),
@@ -23,8 +23,8 @@ var r = n(200651),
   N = n(420966),
   v = n(203377),
   _ = n(981631),
-  O = n(856651),
-  y = n(388032),
+  y = n(856651),
+  O = n(388032),
   C = n(85177),
   I = n(104978);
 
@@ -46,7 +46,7 @@ function E(e) {
   }
   return e
 }
-let S = (0, p.hQ)();
+let S = (0, g.hQ)();
 
 function T(e, t) {
   return t !== m.O1.AND ? Object.values(o().groupBy(e, e => "".concat(e.connectionType, ":").concat(e.applicationId))) : 0 === e.length ? [] : [
@@ -64,12 +64,12 @@ function P(e) {
     children: [(0, r.jsx)(d.X6q, {
       className: C.headerHeading,
       variant: "eyebrow",
-      children: y.NW.string(y.t.nMir29)
+      children: O.NW.string(O.t.nMir29)
     }), (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",
-      children: y.NW.format(y.t.q5f7tL, {
-        helpdeskArticleUrl: g.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
+      children: O.NW.format(O.t.q5f7tL, {
+        helpdeskArticleUrl: p.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
       })
     }), (0, r.jsx)(d.zxk, {
       disabled: n,
@@ -78,7 +78,7 @@ function P(e) {
       look: d.zxk.Looks.FILLED,
       color: d.zxk.Colors.BRAND,
       onClick: t,
-      children: y.NW.string(y.t["OSvW5+"])
+      children: O.NW.string(O.t["OSvW5+"])
     })]
   })
 }
@@ -91,7 +91,7 @@ function w(e) {
     setSelectedSection: l,
     integrations: o
   } = e, {
-    headerHeight: p,
+    headerHeight: g,
     headerRef: w
   } = (0, x.Z)(0), {
     scrolledToTop: R,
@@ -122,7 +122,7 @@ function w(e) {
       onComplete: e => M(e),
       excludedPlatformTypes: L,
       integrations: o,
-      onCompleteApplication: e => M(O.Kt, e)
+      onCompleteApplication: e => M(y.Kt, e)
     })
   }
   let U = null;
@@ -145,7 +145,7 @@ function w(e) {
         children: [(0, r.jsx)(d.oFk, {
           size: "xs",
           color: "currentColor"
-        }), y.NW.string(y.t["OSvW5+"])]
+        }), O.NW.string(O.t["OSvW5+"])]
       })
     })), U = (0, r.jsxs)(r.Fragment, {
       children: [(B = () => (0, f.d_)(n.id, []), (0, r.jsxs)(r.Fragment, {
@@ -155,7 +155,7 @@ function w(e) {
             className: C.headerTitleTextContainer,
             children: (0, r.jsx)(d.X6q, {
               variant: "eyebrow",
-              children: y.NW.string(y.t.nMir29)
+              children: O.NW.string(O.t.nMir29)
             })
           }), (0, r.jsx)(d.zxk, {
             className: C.headerTitleButton,
@@ -164,25 +164,25 @@ function w(e) {
             color: d.zxk.Colors.LINK,
             onClick: B,
             disabled: s,
-            children: y.NW.string(y.t.ntW1cX)
+            children: O.NW.string(O.t.ntW1cX)
           })]
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
-          children: y.NW.format(y.t.q5f7tL, {
-            helpdeskArticleUrl: g.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
+          children: O.NW.format(O.t.q5f7tL, {
+            helpdeskArticleUrl: p.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
           })
         })]
       })), function(e, t, n, i, s) {
         let a = T(i, m.O1.OR);
         return (0, r.jsx)(d.xJW, {
           className: C.operatorContainer,
-          title: y.NW.string(y.t.Xs7PHR),
+          title: O.NW.string(O.t.Xs7PHR),
           children: (0, r.jsx)(d.FXm, {
             options: [{
-              name: y.NW.string(y.t["W3iY5+"]),
+              name: O.NW.string(O.t["W3iY5+"]),
               value: m.O1.OR
             }, {
-              name: y.NW.string(y.t.gHXS9P),
+              name: O.NW.string(O.t.gHXS9P),
               value: m.O1.AND
             }],
             onChange: e => s(i, e.value),
@@ -258,7 +258,7 @@ function w(e) {
   return (0, r.jsx)(d.yWw, {
     className: C.scroller,
     style: {
-      scrollPaddingTop: p
+      scrollPaddingTop: g
     },
     onScroll: Z,
     children: (0, r.jsxs)("div", {
@@ -285,7 +285,7 @@ function w(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-normal",
-          children: y.NW.string(y.t["2aFeeX"])
+          children: O.NW.string(O.t["2aFeeX"])
         })]
       }) : null, U]
     })

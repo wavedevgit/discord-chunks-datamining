@@ -34,7 +34,7 @@ let o = (0, r.B)({
     }
   }, {
     id: 2,
-    label: 'Use Overlay V3, Minus "Now Playing" Nofi.',
+    label: 'Use Overlay V3, Minus "Now Playing" Notif.',
     config: {
       overlayV3tech: !0,
       overlayV3UI: !0,
@@ -46,7 +46,7 @@ let o = (0, r.B)({
     label: "Use Overlay V3 minus any activity",
     config: {
       overlayV3tech: !0,
-      overlayV3UI: !1,
+      overlayV3UI: !0,
       allowActivityWidget: !1,
       allowNowPlaying: !1
     }

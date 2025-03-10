@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(605436),
   u = n(228643),
   m = n(496675),
-  p = n(626135),
-  g = n(823379),
+  g = n(626135),
+  p = n(823379),
   h = n(243730),
   f = n(946724),
   b = n(999382),
@@ -23,8 +23,8 @@ var r = n(200651),
   N = n(660962),
   v = n(442182),
   _ = n(322816),
-  O = n(266665),
-  y = n(203377),
+  y = n(266665),
+  O = n(203377),
   C = n(981631),
   I = n(259869);
 
@@ -64,7 +64,7 @@ function E(e) {
         role: n,
         editRoleId: r
       } = W.current, i = (0, x.UT)(E), s = null !== (t = null === (e = h.Z.getRoleMemberCount(T.id)) || void 0 === e ? void 0 : e[r]) && void 0 !== t ? t : 0;
-      p.default.track(C.rMx.ROLE_PAGE_VIEWED, function(e) {
+      g.default.track(C.rMx.ROLE_PAGE_VIEWED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -94,7 +94,7 @@ function E(e) {
       (null == P ? void 0 : P.id) != null && (0, u.sE)(T.id, P.id)
     }, [T.id, null == P ? void 0 : P.id]), null == P) return null;
   switch (E) {
-    case y.ZI.DISPLAY:
+    case O.ZI.DISPLAY:
       t = (0, r.jsx)(N.ZP, {
         guild: T,
         role: P,
@@ -103,7 +103,7 @@ function E(e) {
         setSelectedSection: S
       });
       break;
-    case y.ZI.PERMISSIONS:
+    case O.ZI.PERMISSIONS:
       t = (0, r.jsx)(_.ZP, {
         guild: T,
         role: P,
@@ -112,7 +112,7 @@ function E(e) {
         initialSearchQuery: w
       });
       break;
-    case y.ZI.VERIFICATIONS:
+    case O.ZI.VERIFICATIONS:
       t = (0, r.jsx)(j.Z, {
         guild: T,
         role: P,
@@ -121,7 +121,7 @@ function E(e) {
         integrations: null != A ? A : void 0
       });
       break;
-    case y.ZI.MEMBERS:
+    case O.ZI.MEMBERS:
       t = (0, r.jsx)(v.ZP, {
         guild: T,
         role: P,
@@ -130,11 +130,11 @@ function E(e) {
       });
       break;
     default:
-      (0, g.vE)(E)
+      (0, p.vE)(E)
   }
   return (0, r.jsxs)(o.hjN, {
     className: I.page,
-    children: [(0, r.jsx)(O.Z, {
+    children: [(0, r.jsx)(y.Z, {
       guild: T,
       currentRoleId: n,
       setCurrentRoleId: s,

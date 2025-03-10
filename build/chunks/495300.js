@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(605236),
   u = n(768762),
   m = n(999382),
-  p = n(743475),
-  g = n(983135),
+  g = n(743475),
+  p = n(983135),
   h = n(570961),
   f = n(208665),
   b = n(359191),
@@ -23,8 +23,8 @@ var r = n(200651),
   N = n(729311),
   v = n(850864),
   _ = n(729995),
-  O = n(966301),
-  y = n(707076),
+  y = n(966301),
+  O = n(707076),
   C = n(213956),
   I = n(388032),
   E = n(992994);
@@ -54,7 +54,7 @@ function T(e) {
       t = f ? (0, r.jsx)(_.Z, {
         completed: !0,
         guildId: n
-      }) : (0, r.jsx)(y.Z, {});
+      }) : (0, r.jsx)(O.Z, {});
       break;
     case x.PG.SAFETY_CHECK:
       t = (0, r.jsx)(C.Z, {});
@@ -65,7 +65,7 @@ function T(e) {
       });
       break;
     case x.PG.CUSTOMIZATION_QUESTIONS:
-      t = (0, r.jsx)(O.ZP, {
+      t = (0, r.jsx)(y.ZP, {
         saveOnClose: !f
       });
       break;
@@ -85,7 +85,7 @@ function T(e) {
       [E.upsellOnTop]: S
     }),
     children: [!f && s !== x.PG.LANDING && (0, r.jsx)(P, {
-      setOnboardingStep: g.$K,
+      setOnboardingStep: p.$K,
       page: s,
       homeSettingsEnabled: !0
     }), f && s !== x.PG.LANDING && (0, r.jsx)("div", {
@@ -94,7 +94,7 @@ function T(e) {
         look: c.zxk.Looks.BLANK,
         size: c.zxk.Sizes.MIN,
         onClick: () => {
-          (0, h.NB)(), (0, p.BG)(), (0, g.$K)(x.PG.LANDING)
+          (0, h.NB)(), (0, g.BG)(), (0, p.$K)(x.PG.LANDING)
         },
         children: [(0, r.jsx)(u.Z, {
           className: E.arrow,

@@ -13,9 +13,9 @@ var r = n(200651),
   d = n(853276),
   u = n(596390),
   m = n(870472),
-  p = n(224669);
+  g = n(224669);
 
-function g(e) {
+function p(e) {
   let {
     resizableNode: t,
     onResize: n,
@@ -30,7 +30,7 @@ function g(e) {
   });
   return (0, r.jsx)("div", {
     onMouseDown: s,
-    className: p.resizeHandle
+    className: g.resizeHandle
   })
 }
 let h = i.forwardRef(function(e, t) {
@@ -41,7 +41,7 @@ let h = i.forwardRef(function(e, t) {
     onClick: o
   } = e, c = i.useRef(null), [d, m] = i.useState(u.tq);
   return (0, r.jsxs)(l.P3F, {
-    className: p.textArea,
+    className: g.textArea,
     onFocus: s,
     onBlur: a,
     onClick: o,
@@ -51,13 +51,13 @@ let h = i.forwardRef(function(e, t) {
       minHeight: d
     },
     children: [(0, r.jsx)(l.Den, {
-      className: p.innerScroller,
+      className: g.innerScroller,
       style: {
         minHeight: d - 2
       },
       ref: t,
       children: n
-    }), (0, r.jsx)(g, {
+    }), (0, r.jsx)(p, {
       resizableNode: c,
       onResize: m,
       onResizeEnd: e => {
@@ -74,13 +74,13 @@ function f(e) {
     onChangeTags: s,
     onChangeNewTagValue: c,
     tagErrors: u = {},
-    placeholder: g,
+    placeholder: p,
     className: f,
     maxTags: b
   } = e, x = i.useRef(null), j = i.useRef(null), N = i.useRef(null), v = (0, m.V)(n), {
     handlePasteEvent: _,
-    handleInputChange: O,
-    handleKeyDown: y,
+    handleInputChange: y,
+    handleKeyDown: O,
     handleContainerKeyUp: C,
     handleRemoveTag: I,
     handleTagChangeEvent: E,
@@ -128,7 +128,7 @@ function f(e) {
       } else T(e, !0), L(!0)
     }, [S, T, D, Z]);
   return (0, r.jsxs)("div", {
-    className: a()(p.mainContainer, f),
+    className: a()(g.mainContainer, f),
     ref: j,
     tabIndex: 0,
     onKeyUp: C,
@@ -146,21 +146,21 @@ function f(e) {
         error: u[e],
         forceShowErrorTooltip: !W && t === Z.length - 1
       }, t)), (0, r.jsx)("input", {
-        className: a()(p.mainTextInput, {
-          [p.isEditingOtherNodes]: W
+        className: a()(g.mainTextInput, {
+          [g.isEditingOtherNodes]: W
         }),
         ref: x,
-        onChange: O,
-        onKeyDownCapture: y,
+        onChange: y,
+        onKeyDownCapture: O,
         onPaste: _,
         onBlur: w,
-        placeholder: 0 === Z.length ? g : void 0,
+        placeholder: 0 === Z.length ? p : void 0,
         value: R
       })]
     }), null != b && (0, r.jsxs)(l.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
-      className: p.maxTags,
+      className: g.maxTags,
       children: [null !== (t = null == Z ? void 0 : Z.length) && void 0 !== t ? t : 0, "/", b]
     })]
   })

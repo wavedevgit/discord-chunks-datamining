@@ -1,7 +1,7 @@
 /** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
-  F: () => g
+  F: () => p
 });
 var r = n(200651),
   i = n(192379),
@@ -13,13 +13,13 @@ var r = n(200651),
   d = n(30513),
   u = n(486324),
   m = n(200299),
-  p = n(388032);
+  g = n(388032);
 
-function g(e) {
+function p(e) {
   let {
     guild: t,
     canManageGuild: n,
-    buttonClassName: g
+    buttonClassName: p
   } = e, {
     analyticsLocations: h
   } = (0, a.ZP)(), f = t.hasFeature(c.oNc.BANNER), b = i.useCallback(e => {
@@ -40,7 +40,7 @@ function g(e) {
   return f ? (0, r.jsx)(s.zxk, {
     disabled: !(f && n),
     color: s.zxk.Colors.BRAND,
-    className: g,
+    className: p,
     onClick: () => (0, o.mw)({
       uploadType: u.pC.GUILD_BANNER,
       maxFileSizeBytes: m.B,
@@ -51,9 +51,9 @@ function g(e) {
       },
       analyticsLocations: h
     }),
-    children: p.NW.string(p.t.yG2pUl)
+    children: g.NW.string(g.t.yG2pUl)
   }) : (0, r.jsx)(l.P, {
-    className: g,
+    className: p,
     onClick: x
   })
 }

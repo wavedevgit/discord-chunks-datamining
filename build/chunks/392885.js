@@ -11,7 +11,7 @@ var r, i, s, a = n(442837),
 let u = c.u.OVERVIEW,
   m = null;
 
-function p(e) {
+function g(e) {
   let {
     subsection: t
   } = e;
@@ -33,24 +33,24 @@ function p(e) {
       u = c.u.OVERVIEW
   }
 }
-class g extends(s = a.ZP.Store) {
+class p extends(s = a.ZP.Store) {
   getCurrentPage() {
     return u
   }
 }
-i = "GuildSettingsSafetyStore", (r = "displayName") in g ? Object.defineProperty(g, r, {
+i = "GuildSettingsSafetyStore", (r = "displayName") in p ? Object.defineProperty(p, r, {
   value: i,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : g[r] = i;
-let h = new g(l.Z, {
+}) : p[r] = i;
+let h = new p(l.Z, {
   GUILD_SETTINGS_INIT: function() {
     if (o.Z.getGuildId() === m) return !1;
     m = o.Z.getGuildId()
   },
-  GUILD_SETTINGS_SET_SECTION: p,
-  GUILD_SETTINGS_SAFETY_SET_SUBSECTION: p,
+  GUILD_SETTINGS_SET_SECTION: g,
+  GUILD_SETTINGS_SAFETY_SET_SUBSECTION: g,
   GUILD_SETTINGS_SAFETY_PAGE: function(e) {
     let {
       page: t

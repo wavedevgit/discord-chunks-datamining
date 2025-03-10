@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(425493),
   u = n(852860),
   m = n(493544),
-  p = n(585483),
-  g = n(931240),
+  g = n(585483),
+  p = n(931240),
   h = n(970606),
   f = n(389134),
   b = n(35313),
@@ -23,8 +23,8 @@ var r = n(200651),
   N = n(950279),
   v = n(796918),
   _ = n(513532),
-  O = n(741595),
-  y = n(974842),
+  y = n(741595),
+  O = n(974842),
   C = n(359380),
   I = n(308083),
   E = n(981631),
@@ -124,7 +124,7 @@ let Z = e => [{
     } = e, [l, c] = i.useState(!1), d = async () => {
       c(!0);
       try {
-        await (0, g.nr)(t), s()
+        await (0, p.nr)(t), s()
       } catch (e) {
         throw c(!1), e
       }
@@ -135,7 +135,7 @@ let Z = e => [{
       "aria-label": T.NW.string(T.t.vc5h39),
       onClick: () => {
         if (a) {
-          p.S.dispatch(E.CkL.EMPHASIZE_NOTICE);
+          g.S.dispatch(E.CkL.EMPHASIZE_NOTICE);
           return
         }(0, o.ZDy)(async () => {
           let {
@@ -213,7 +213,7 @@ let Z = e => [{
         dirty: t.dirty
       }
     }), U = i.useCallback(e => {
-      G ? p.S.dispatch(E.CkL.EMPHASIZE_NOTICE) : D(e)
+      G ? g.S.dispatch(E.CkL.EMPHASIZE_NOTICE) : D(e)
     }, [G]), B = (0, b.f)(), F = i.useCallback(e => {
       "Escape" === e.key && (e.stopPropagation(), n())
     }, [n]);
@@ -224,23 +224,23 @@ let Z = e => [{
     }), [F]), i.useEffect(() => {
       c.Z.getDetectableGames()
     }, []), i.useEffect(() => {
-      (0, g.aH)(t)
+      (0, p.aH)(t)
     }, [t]);
-    let z = i.useCallback(e => (0, g.mf)(t, {
+    let z = i.useCallback(e => (0, p.mf)(t, {
         gameApplicationIds: e
       }), [t]),
-      H = i.useCallback(e => (0, g.mf)(t, {
+      H = i.useCallback(e => (0, p.mf)(t, {
         playstyle: e
       }), [t]),
-      V = i.useCallback(e => (0, g.mf)(t, {
+      V = i.useCallback(e => (0, p.mf)(t, {
         interests: e
       }), [t]),
-      Y = i.useCallback(e => (0, g.mf)(t, e), [t]),
-      K = i.useCallback(() => {
-        G ? p.S.dispatch(E.CkL.EMPHASIZE_NOTICE) : n()
+      K = i.useCallback(e => (0, p.mf)(t, e), [t]),
+      Y = i.useCallback(() => {
+        G ? g.S.dispatch(E.CkL.EMPHASIZE_NOTICE) : n()
       }, [G, n]),
       q = async () => {
-        await (0, g.Ii)(t, W), (0, h.Af)(t)
+        await (0, p.Ii)(t, W), (0, h.Af)(t)
       }, X = i.useMemo(() => null != L && Object.values(L).some(e => null != e), [L]);
     if (null == W) return null;
     let Q = Z(L);
@@ -259,7 +259,7 @@ let Z = e => [{
         forceOpen: X,
         children: e => (0, r.jsx)(d.Z, R(w({}, e), {
           className: P.closeButton,
-          closeAction: K,
+          closeAction: Y,
           keybind: "ESC"
         }))
       }), (0, r.jsxs)("div", {
@@ -325,7 +325,7 @@ let Z = e => [{
                     includeSuggestedGames: !0
                   });
                 case I.Wy.PLAYSTYLE:
-                  return (0, r.jsx)(O.Z, {
+                  return (0, r.jsx)(y.Z, {
                     title: T.NW.string(T.t.W0h7pa),
                     description: T.NW.string(T.t.JHYekZ),
                     onUpdatePlaystyle: H,
@@ -343,20 +343,20 @@ let Z = e => [{
                 case I.Wy.INTERESTS:
                   return (0, r.jsx)(v.Z, {
                     guildId: t,
-                    handleUpdate: Y,
+                    handleUpdate: K,
                     progress: W,
                     error: L.interests
                   });
                 case I.Wy.DESCRIPTION:
                   return (0, r.jsx)(j.Z, {
                     guildId: t,
-                    handleUpdate: Y,
+                    handleUpdate: K,
                     progress: W,
                     errors: L
                   });
                 case I.Wy.CUSTOMIZE_TAG_BADGE:
-                  return (0, r.jsx)(y.Z, {
-                    handleUpdate: Y,
+                  return (0, r.jsx)(O.Z, {
+                    handleUpdate: K,
                     tag: W.tag,
                     error: L.tag,
                     badge: W.badgeKind,
@@ -374,7 +374,7 @@ let Z = e => [{
                 case I.Wy.CUSTOMIZE_BANNER:
                   return (0, r.jsx)(x.Z, {
                     guildId: t,
-                    handleUpdate: Y,
+                    handleUpdate: K,
                     progress: W
                   });
                 default:
@@ -389,7 +389,7 @@ let Z = e => [{
                 onSave: q,
                 submitting: M,
                 onReset: () => {
-                  (0, g.mf)(t, k)
+                  (0, p.mf)(t, k)
                 },
                 errorMessage: Object.values(L).find(e => null != e)
               })

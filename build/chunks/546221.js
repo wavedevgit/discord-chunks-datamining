@@ -1,7 +1,7 @@
 /** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
-  Z: () => O
+  Z: () => y
 });
 var r = n(200651);
 n(192379);
@@ -14,8 +14,8 @@ var i = n(481060),
   d = n(997519),
   u = n(146710),
   m = n(146610),
-  p = n(67152),
-  g = n(791382),
+  g = n(67152),
+  p = n(791382),
   h = n(277369),
   f = n(215124),
   b = n(981631),
@@ -38,7 +38,7 @@ function N(e) {
       children: [x.NW.string(x.t["9Ub4KS"]), " ", s]
     }), (0, r.jsx)(i.LZC, {
       size: 16
-    }), (0, r.jsx)(p.ZP, {
+    }), (0, r.jsx)(g.ZP, {
       payoutsByPeriod: t
     })]
   })
@@ -64,10 +64,10 @@ let _ = e => {
     application: o
   } = e, {
     loading: m,
-    team: p,
+    team: g,
     currentPeriod: _,
-    allPeriods: O,
-    metrics: y
+    allPeriods: y,
+    metrics: O
   } = (0, d.Z)(l, o), C = (0, u.u)(l), I = (0, c.mY)();
   return m ? (0, r.jsx)(i.$jN, {}) : (0, r.jsxs)(r.Fragment, {
     children: [C && (0, r.jsxs)(r.Fragment, {
@@ -85,25 +85,25 @@ let _ = e => {
         size: 8
       }), (0, r.jsxs)("div", {
         className: j.metricsContainer,
-        children: [(0, r.jsx)(g.Z, {
+        children: [(0, r.jsx)(p.Z, {
           label: x.NW.string(x.t.iY1jW1),
-          value: (0, a.T4)(null !== (t = y.revenue) && void 0 !== t ? t : 0, b.pKx.USD),
-          additionalContent: (0, r.jsx)(g.H, {
-            value: y.revenuePctChange,
+          value: (0, a.T4)(null !== (t = O.revenue) && void 0 !== t ? t : 0, b.pKx.USD),
+          additionalContent: (0, r.jsx)(p.H, {
+            value: O.revenuePctChange,
             isPercent: !0
           })
-        }), (0, r.jsx)(g.Z, {
+        }), (0, r.jsx)(p.Z, {
           label: x.NW.string(x.t.cXyw29),
           value: (0, r.jsxs)(r.Fragment, {
-            children: [null !== (n = y.subscribers) && void 0 !== n ? n : "-", " ", (0, r.jsx)(i.tBG, {
+            children: [null !== (n = O.subscribers) && void 0 !== n ? n : "-", " ", (0, r.jsx)(i.tBG, {
               size: "md",
               color: "currentColor",
               className: j.totalMembersIcon,
               "aria-hidden": !0
             })]
           }),
-          additionalContent: (0, r.jsx)(g.H, {
-            value: y.subscriberChange
+          additionalContent: (0, r.jsx)(p.H, {
+            value: O.subscriberChange
           })
         })]
       }), (0, r.jsx)(v, {
@@ -114,8 +114,8 @@ let _ = e => {
       title: x.NW.string(x.t["+5Rmho"]),
       className: j.formSection,
       children: (0, r.jsx)(N, {
-        payoutsByPeriod: O,
-        team: p
+        payoutsByPeriod: y,
+        team: g
       })
     }), (0, r.jsx)(i.hjN, {
       title: x.NW.string(x.t.O8cDAA),
@@ -130,13 +130,13 @@ let _ = e => {
       className: j.formSection,
       children: (0, r.jsx)(f.Z, {
         guildId: l,
-        allPeriods: O
+        allPeriods: y
       })
     })]
   })
 };
 
-function O(e) {
+function y(e) {
   return (0, r.jsx)(l.l, {
     guildId: e.guildId,
     children: (0, r.jsx)(_, function(e) {

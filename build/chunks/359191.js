@@ -1,7 +1,7 @@
 /** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => O
 }), n(47120);
 var r, i, s, a = n(442837),
   l = n(570140),
@@ -10,8 +10,8 @@ var r, i, s, a = n(442837),
   d = n(999382),
   u = n(392885),
   m = n(740903),
-  p = n(889369),
-  g = n(969632),
+  g = n(889369),
+  p = n(969632),
   h = n(208665),
   f = n(84658),
   b = n(142961),
@@ -27,9 +27,9 @@ function _(e) {
   if (d.Z.getGuildId() === v) return !1;
   N = t === x.KsC.SERVER_GUIDE ? f.PG.HOME_SETTINGS : f.PG.LANDING, v = d.Z.getGuildId()
 }
-class O extends(r = a.ZP.Store) {
+class y extends(r = a.ZP.Store) {
   initialize() {
-    this.waitFor(o.Z, p.Z, h.Z, g.Z, u.Z), this.syncWith([o.Z, p.Z, h.Z, g.Z, u.Z], () => !0)
+    this.waitFor(o.Z, g.Z, h.Z, p.Z, u.Z), this.syncWith([o.Z, g.Z, h.Z, p.Z, u.Z], () => !0)
   }
   isEducationUpsellDismissed(e) {
     return j.has(e)
@@ -40,10 +40,10 @@ class O extends(r = a.ZP.Store) {
   hasChanges() {
     if (null == v) return !1;
     let e = o.Z.isAdvancedMode(v);
-    return N === f.PG.DEFAULT_CHANNELS ? e ? p.Z.hasChanges() || h.Z.hasChanges() : p.Z.hasChanges() : N === f.PG.CUSTOMIZATION_QUESTIONS ? h.Z.hasChanges() : N === f.PG.HOME_SETTINGS && g.Z.hasChanges()
+    return N === f.PG.DEFAULT_CHANNELS ? e ? g.Z.hasChanges() || h.Z.hasChanges() : g.Z.hasChanges() : N === f.PG.CUSTOMIZATION_QUESTIONS ? h.Z.hasChanges() : N === f.PG.HOME_SETTINGS && p.Z.hasChanges()
   }
   hasConfiguredAnythingForCurrentStep() {
-    return null != v && (N === f.PG.SAFETY_CHECK || (N === f.PG.DEFAULT_CHANNELS ? p.Z.editedDefaultChannelIds.size > 0 : N === f.PG.CUSTOMIZATION_QUESTIONS ? h.Z.editedOnboardingPrompts.length > 0 : N === f.PG.HOME_SETTINGS && !(0, c.av)(g.Z.getSettings())))
+    return null != v && (N === f.PG.SAFETY_CHECK || (N === f.PG.DEFAULT_CHANNELS ? g.Z.editedDefaultChannelIds.size > 0 : N === f.PG.CUSTOMIZATION_QUESTIONS ? h.Z.editedOnboardingPrompts.length > 0 : N === f.PG.HOME_SETTINGS && !(0, c.av)(p.Z.getSettings())))
   }
   hasErrors() {
     return N === f.PG.CUSTOMIZATION_QUESTIONS && null != h.Z.errors.find(e => null != e)
@@ -58,13 +58,13 @@ class O extends(r = a.ZP.Store) {
     return null == v || !this.hasErrors() && (!(0, b.C)(v) || !this.hasChanges())
   }
 }
-s = "GuildSettingsOnboardingStore", (i = "displayName") in O ? Object.defineProperty(O, i, {
+s = "GuildSettingsOnboardingStore", (i = "displayName") in y ? Object.defineProperty(y, i, {
   value: s,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : O[i] = s;
-let y = new O(l.Z, {
+}) : y[i] = s;
+let O = new y(l.Z, {
   GUILD_SETTINGS_INIT: _,
   GUILD_SETTINGS_SET_SECTION: _,
   GUILD_SETTINGS_ONBOARDING_STEP: function(e) {

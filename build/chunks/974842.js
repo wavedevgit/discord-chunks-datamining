@@ -13,13 +13,13 @@ var r = n(200651),
   d = n(481060),
   u = n(550271),
   m = n(688298),
-  p = n(995119),
-  g = n(116175),
+  g = n(995119),
+  p = n(116175),
   h = n(308083),
   f = n(388032),
   b = n(187649),
   x = n(154662);
-let j = [g.ZD.SWORD, g.ZD.WATER_DROP, g.ZD.SKULL, g.ZD.TOADSTOOL, g.ZD.MOON, g.ZD.LIGHTNING, g.ZD.LEAF, g.ZD.HEART, g.ZD.FIRE, g.ZD.COMPASS, g.ZD.CROSSHAIRS, g.ZD.FLOWER, g.ZD.FORCE, g.ZD.GEM, g.ZD.LAVA, g.ZD.PSYCHIC, g.ZD.SMOKE, g.ZD.SNOW, g.ZD.SOUND, g.ZD.SUN, g.ZD.WIND],
+let j = [p.ZD.SWORD, p.ZD.WATER_DROP, p.ZD.SKULL, p.ZD.TOADSTOOL, p.ZD.MOON, p.ZD.LIGHTNING, p.ZD.LEAF, p.ZD.HEART, p.ZD.FIRE, p.ZD.COMPASS, p.ZD.CROSSHAIRS, p.ZD.FLOWER, p.ZD.FORCE, p.ZD.GEM, p.ZD.LAVA, p.ZD.PSYCHIC, p.ZD.SMOKE, p.ZD.SNOW, p.ZD.SOUND, p.ZD.SUN, p.ZD.WIND],
   N = e => {
     let {
       handleUpdate: t,
@@ -29,9 +29,9 @@ let j = [g.ZD.SWORD, g.ZD.WATER_DROP, g.ZD.SKULL, g.ZD.TOADSTOOL, g.ZD.MOON, g.Z
       tag: N,
       error: v,
       furthestStep: _,
-      inSettings: O
-    } = e, y = i.useMemo(() => {
-      let e = (0, g.yf)();
+      inSettings: y
+    } = e, O = i.useMemo(() => {
+      let e = (0, p.yf)();
       return {
         primary: null != s ? s : e.primary,
         secondary: null != l ? l : e.secondary
@@ -39,15 +39,15 @@ let j = [g.ZD.SWORD, g.ZD.WATER_DROP, g.ZD.SKULL, g.ZD.TOADSTOOL, g.ZD.MOON, g.Z
     }, [s, l]);
     i.useEffect(() => {
       (null == s || null == l) && t({
-        badgePrimaryColor: y.primary,
-        badgeSecondaryColor: y.secondary
+        badgePrimaryColor: O.primary,
+        badgeSecondaryColor: O.secondary
       })
-    }, [y.primary, y.secondary, t, s, l]);
+    }, [O.primary, O.secondary, t, s, l]);
     let C = i.useMemo(() => {
-        for (let e = 0; e < g.sg.length; e++)
-          if (g.sg[e].primary === y.primary && g.sg[e].secondary === y.secondary) return 1 + e;
+        for (let e = 0; e < p.sg.length; e++)
+          if (p.sg[e].primary === O.primary && p.sg[e].secondary === O.secondary) return 1 + e;
         return 0
-      }, [y.primary, y.secondary]),
+      }, [O.primary, O.secondary]),
       [I, E] = i.useState(!1),
       S = i.useCallback(() => {
         let e = j[Math.floor(Math.random() * j.length)];
@@ -58,11 +58,11 @@ let j = [g.ZD.SWORD, g.ZD.WATER_DROP, g.ZD.SKULL, g.ZD.TOADSTOOL, g.ZD.MOON, g.Z
         })
       }, [t]);
     return i.useEffect(() => {
-      _ !== h.Wy.CUSTOMIZE_TAG_BADGE || O || t({
-        brandPrimaryColor: y.primary,
-        brandSecondaryColor: y.secondary
+      _ !== h.Wy.CUSTOMIZE_TAG_BADGE || y || t({
+        brandPrimaryColor: O.primary,
+        brandSecondaryColor: O.secondary
       })
-    }, [t, y.primary, y.secondary, _, s, l, O]), (0, r.jsxs)("div", {
+    }, [t, O.primary, O.secondary, _, s, l, y]), (0, r.jsxs)("div", {
       className: x.slideContent,
       children: [(0, r.jsx)(d.X6q, {
         variant: "heading-xxl/medium",
@@ -73,7 +73,7 @@ let j = [g.ZD.SWORD, g.ZD.WATER_DROP, g.ZD.SKULL, g.ZD.TOADSTOOL, g.ZD.MOON, g.Z
         color: "header-secondary",
         className: x.subtitle,
         children: f.NW.string(f.t.Tr399P)
-      }), (0, r.jsx)(p.Z, {
+      }), (0, r.jsx)(g.Z, {
         onClick: S
       }), (0, r.jsxs)("div", {
         className: b.container,
@@ -110,8 +110,8 @@ let j = [g.ZD.SWORD, g.ZD.WATER_DROP, g.ZD.SKULL, g.ZD.TOADSTOOL, g.ZD.MOON, g.Z
             }), (0, r.jsxs)("div", {
               className: b.pickerGrid,
               children: [(0, r.jsx)(m.Z, {
-                showSecondaryColor: g.ME[n] >= 2,
-                palette: y,
+                showSecondaryColor: p.ME[n] >= 2,
+                palette: O,
                 onPrimaryColorChange: e => {
                   t({
                     badgePrimaryColor: (0, c.Rf)(e)
@@ -166,11 +166,11 @@ let j = [g.ZD.SWORD, g.ZD.WATER_DROP, g.ZD.SKULL, g.ZD.TOADSTOOL, g.ZD.MOON, g.Z
                     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
                   }), t))
                 }
-              }), g.sg.map((e, i) => (0, r.jsx)(d.P3F, {
+              }), p.sg.map((e, i) => (0, r.jsx)(d.P3F, {
                 onClick: () => {
                   t({
-                    badgePrimaryColor: g.sg[i].primary,
-                    badgeSecondaryColor: g.sg[i].secondary
+                    badgePrimaryColor: p.sg[i].primary,
+                    badgeSecondaryColor: p.sg[i].secondary
                   })
                 },
                 className: o()(b.badgeAssetContainer, {
@@ -211,8 +211,8 @@ let j = [g.ZD.SWORD, g.ZD.WATER_DROP, g.ZD.SKULL, g.ZD.TOADSTOOL, g.ZD.MOON, g.Z
               badge: n,
               width: 40,
               height: 40,
-              primaryTintColor: y.primary,
-              secondaryTintColor: y.secondary
+              primaryTintColor: O.primary,
+              secondaryTintColor: O.secondary
             })
           }), (0, r.jsx)(d.Text, {
             variant: "text-xs/medium",

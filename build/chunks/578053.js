@@ -14,8 +14,8 @@ var r = n(200651),
   d = n(471445),
   u = n(592125),
   m = n(324067),
-  p = n(699516),
-  g = n(594174),
+  g = n(699516),
+  p = n(594174),
   h = n(434404),
   f = n(388032);
 let b = "NO_CHANNEL";
@@ -23,7 +23,7 @@ let b = "NO_CHANNEL";
 function x(e) {
   return {
     value: e.id,
-    label: (0, c.F6)(e, g.default, p.Z),
+    label: (0, c.F6)(e, p.default, g.Z),
     channel: e,
     category: u.Z.getChannel(e.parent_id)
   }

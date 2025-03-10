@@ -31,7 +31,7 @@ class u extends i.PureComponent {
       maxLength: d,
       autoFocus: u,
       prefix: m,
-      disabled: p
+      disabled: g
     } = this.props;
     return (0, r.jsxs)(l.Z, {
       align: l.Z.Align.CENTER,
@@ -57,7 +57,7 @@ class u extends i.PureComponent {
           onFocus: this.handleFocus,
           onBlur: this.handleBlur,
           autoFocus: u,
-          disabled: p
+          disabled: g
         })
       })]
     })

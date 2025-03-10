@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(481060),
   u = n(726542),
   m = n(100527),
-  p = n(933557),
-  g = n(184301),
+  g = n(933557),
+  p = n(184301),
   h = n(347475),
   f = n(210887),
   b = n(598077),
@@ -23,8 +23,8 @@ var r = n(200651),
   N = n(259580),
   v = n(51144),
   _ = n(426563),
-  O = n(909746),
-  y = n(501801),
+  y = n(909746),
+  O = n(501801),
   C = n(981631),
   I = n(388032),
   E = n(152041);
@@ -89,7 +89,7 @@ class w extends i.PureComponent {
     } = this.props, {
       changes: t
     } = e;
-    return (e.actionType !== C.vB8.DELETE || e.action === C.rsA.MEMBER_BAN_ADD || e.action === C.rsA.MEMBER_KICK || e.action === C.rsA.MEMBER_PRUNE) && null != t && t.some(t => !(0, y.xO)(e, t))
+    return (e.actionType !== C.vB8.DELETE || e.action === C.rsA.MEMBER_BAN_ADD || e.action === C.rsA.MEMBER_KICK || e.action === C.rsA.MEMBER_PRUNE) && null != t && t.some(t => !(0, O.xO)(e, t))
   }
   renderTitle() {
     let {
@@ -101,7 +101,7 @@ class w extends i.PureComponent {
       user: s,
       target: a,
       options: l
-    } = e, o = O.N5(e);
+    } = e, o = y.N5(e);
     return null != o ? (0, r.jsx)("div", {
       className: E.overflowEllipsis,
       children: I.NW.format(o, {
@@ -127,7 +127,7 @@ class w extends i.PureComponent {
           children: t
         }, i),
         count: l.count,
-        channel: null == l.channel || "string" == typeof l.channel ? l.channel : (0, p.F6)(l.channel, j.default, x.Z, !0),
+        channel: null == l.channel || "string" == typeof l.channel ? l.channel : (0, g.F6)(l.channel, j.default, x.Z, !0),
         channelHook: (e, t) => (0, r.jsx)("span", {
           onContextMenu: i,
           children: e
@@ -143,7 +143,7 @@ class w extends i.PureComponent {
       guild: n,
       onContentClick: i
     } = this.props;
-    return e && null != n ? (0, r.jsx)(y.tP, {
+    return e && null != n ? (0, r.jsx)(O.tP, {
       log: t,
       guild: n,
       onContentClick: i
@@ -164,7 +164,7 @@ class w extends i.PureComponent {
       }
     } = e;
     if (null != i && null != s) return (0, r.jsx)(d.yRy, {
-      preload: () => (0, g.Z)(s, i.getAvatarURL(t, 80), {
+      preload: () => (0, p.Z)(s, i.getAvatarURL(t, 80), {
         guildId: t
       }),
       renderPopout: e => (0, r.jsx)(h.Z, T(S({}, e), {
@@ -219,7 +219,7 @@ class w extends i.PureComponent {
       variant: "text-sm/normal",
       children: [u, "—", m]
     });
-    let p = o ? s : C.dG4;
+    let g = o ? s : C.dG4;
     return (0, r.jsx)(l.mh, {
       id: t.id,
       children: s => (0, r.jsxs)("div", {
@@ -227,9 +227,9 @@ class w extends i.PureComponent {
         children: [(0, r.jsxs)(d.P3F, T(S({
           className: c,
           "aria-expanded": i,
-          onClick: p
+          onClick: g
         }, s), {
-          children: [(0, r.jsx)(y.mp, {
+          children: [(0, r.jsx)(O.mp, {
             action: t.action,
             actionType: t.actionType,
             targetType: t.targetType

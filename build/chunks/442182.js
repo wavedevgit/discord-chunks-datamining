@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(479531),
   u = n(616780),
   m = n(100527),
-  p = n(906732),
-  g = n(184301),
+  g = n(906732),
+  p = n(184301),
   h = n(347475),
   f = n(594174),
   b = n(626135),
@@ -23,8 +23,8 @@ var r = n(200651),
   N = n(946724),
   v = n(130341),
   _ = n(95242),
-  O = n(420966),
-  y = n(566476),
+  y = n(420966),
+  O = n(566476),
   C = n(203377),
   I = n(981631),
   E = n(388032),
@@ -91,7 +91,7 @@ function Z(e) {
     [s]: [t.id]
   }), [s, t.id]);
 
-  function p(e) {
+  function g(e) {
     if (e.stopPropagation(), !d) {
       if (e.shiftKey) {
         R(t, s, l);
@@ -143,13 +143,13 @@ function Z(e) {
         roleId: l
       }, e)),
       position: "left",
-      preload: () => (0, g.Z)(t.id, t.avatarURL, {
+      preload: () => (0, p.Z)(t.id, t.avatarURL, {
         guildId: s
       }),
       children: e => (0, r.jsxs)(o.P3F, w(P({}, e), {
         className: S.memberRow,
         onContextMenu: b,
-        children: [(0, r.jsx)(y.Z, {
+        children: [(0, r.jsx)(O.Z, {
           className: S.memberDetails,
           avatarURL: t.avatarURL,
           name: t.name,
@@ -165,7 +165,7 @@ function Z(e) {
               className: a()(S.removeButton, {
                 [S.removeButtonDisabled]: d
               }),
-              onClick: p,
+              onClick: g,
               children: (0, r.jsx)(o.k$p, {
                 size: "xs",
                 color: "currentColor"
@@ -218,13 +218,13 @@ function A(e) {
     roleMembers: d,
     handleAddClick: u
   } = e, {
-    analyticsLocations: g
-  } = (0, p.ZP)(m.Z.MEMBER_LIST), h = i.useMemo(() => s.trim().toLowerCase(), [s]);
+    analyticsLocations: p
+  } = (0, g.ZP)(m.Z.MEMBER_LIST), h = i.useMemo(() => s.trim().toLowerCase(), [s]);
   (0, v.rY)(t, h);
   let f = i.useMemo(() => d.filter(e => (0, v.eg)(h, e)), [d, h]),
     b = i.useMemo(() => f.sort((e, t) => e.name.localeCompare(t.name)), [f]);
-  return (0, r.jsx)(p.Gt, {
-    value: g,
+  return (0, r.jsx)(g.Gt, {
+    value: p,
     children: (0, r.jsx)(o._2F, {
       className: S.list,
       sections: [Math.max(f.length, 1)],
@@ -292,12 +292,12 @@ function W(e) {
     locked: c,
     setSelectedSection: d
   } = e, [u, m] = i.useState(""), {
-    headerHeight: p,
-    headerRef: g
+    headerHeight: g,
+    headerRef: p
   } = (0, _.Z)(0), {
     scrolledToTop: h,
     handleScroll: f
-  } = (0, O.V)(), j = s.managed || c, N = (0, v.e)(t.id, s.id), y = (0, l.e7)([x.Z], () => {
+  } = (0, y.V)(), j = s.managed || c, N = (0, v.e)(t.id, s.id), O = (0, l.e7)([x.Z], () => {
     var e, n;
     return null !== (n = null === (e = x.Z.getRoleMemberCount(t.id)) || void 0 === e ? void 0 : e[s.id]) && void 0 !== n ? n : 0
   }) > N.length, R = () => {
@@ -319,14 +319,14 @@ function W(e) {
     className: S.container,
     children: [(0, r.jsx)("div", {
       className: S.headerContainer,
-      ref: g,
+      ref: p,
       children: (0, r.jsx)("div", {
         className: T.contentWidth,
         children: (0, r.jsxs)("div", {
           className: a()(T.header, {
             [T.stickyHeaderElevated]: !h
           }),
-          children: [(0, r.jsx)(O.Z, {
+          children: [(0, r.jsx)(y.Z, {
             guild: t,
             role: s,
             selectedSection: C.ZI.MEMBERS,
@@ -336,7 +336,7 @@ function W(e) {
             setQuery: m,
             locked: j,
             handleAddClick: R
-          }), y ? (0, r.jsx)(o.Wn, {
+          }), O ? (0, r.jsx)(o.Wn, {
             className: S.searchWarning,
             messageType: o.QYI.INFO,
             children: E.NW.string(E.t.RQxHZ2)
@@ -344,7 +344,7 @@ function W(e) {
         })
       })
     }), (0, r.jsx)(A, {
-      headerHeight: p + 8,
+      headerHeight: g + 8,
       query: u,
       guildId: t.id,
       roleId: s.id,

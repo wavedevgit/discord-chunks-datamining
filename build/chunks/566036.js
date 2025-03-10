@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(383124),
   u = n(795691),
   m = n(388032),
-  p = n(636477),
-  g = n(659116);
+  g = n(636477),
+  p = n(659116);
 let h = () => null;
 
 function f(e) {
@@ -29,7 +29,7 @@ function f(e) {
   return (0, r.jsx)(l.VcW, {
     multi: !0,
     hidePills: !0,
-    wrapperClassName: p.selectWrapper,
+    wrapperClassName: g.selectWrapper,
     options: s,
     value: t,
     placeholder: m.NW.string(m.t.acyezc),
@@ -37,7 +37,7 @@ function f(e) {
     isDisabled: 20 === t.length || i,
     matchSorterOptions: a,
     clearQueryOnSelect: !0,
-    customPillContainerClassName: p.pills,
+    customPillContainerClassName: g.pills,
     renderCustomPill: h
   })
 }
@@ -49,7 +49,7 @@ function b(e) {
     disabled: i
   } = e;
   return 0 === t.length ? null : (0, r.jsx)("div", {
-    className: p.selectedGames,
+    className: g.selectedGames,
     children: t.map(e => (0, r.jsx)(d.Z, {
       applicationId: e,
       selected: !0,
@@ -76,9 +76,9 @@ function j(e) {
     })
   }, [o, d]), N = i.useRef(d), v = i.useMemo(() => (a().isEqual(new Set(d), new Set(N.current)) || (N.current = [...d]), N.current), [d]);
   return (0, r.jsxs)(l.hjN, {
-    className: g.section,
+    className: p.section,
     children: [(0, r.jsxs)("div", {
-      className: g.sectionHeader,
+      className: p.sectionHeader,
       children: [(0, r.jsx)(l.vwX, {
         children: m.NW.string(m.t.BR68vL)
       }), (0, r.jsx)(l.R94, {
@@ -86,7 +86,7 @@ function j(e) {
         children: m.NW.string(m.t.MobxiI)
       })]
     }), (0, r.jsxs)("div", {
-      className: p.sectionBody,
+      className: g.sectionBody,
       children: [(0, r.jsx)(f, {
         gameApplicationIds: d,
         handleChange: h,

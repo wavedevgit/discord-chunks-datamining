@@ -15,9 +15,9 @@ var r = n(200651),
   d = n(983135),
   u = n(208665),
   m = n(290511),
-  p = n(388032);
+  g = n(388032);
 
-function g(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -69,27 +69,27 @@ function x(e) {
     className: n
   } = e, c = (0, l.UQ)(t).advancedModeAllowed, u = (0, s.e7)([o.Z], () => o.Z.isAdvancedMode(t)), f = i.useCallback(() => {
     let e = u ? m.Un.ONBOARDING_DEFAULT : m.Un.ONBOARDING_ADVANCED;
-    u ? (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, h(g({
-      header: p.NW.string(p.t["49+ONj"]),
-      confirmText: p.NW.string(p.t.R9GHyc),
-      cancelText: p.NW.string(p.t["ETE/oK"]),
+    u ? (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, h(p({
+      header: g.NW.string(g.t["49+ONj"]),
+      confirmText: g.NW.string(g.t.R9GHyc),
+      cancelText: g.NW.string(g.t["ETE/oK"]),
       confirmButtonColor: a.zxk.Colors.BRAND,
       onConfirm: () => (0, d.Ts)(t, e)
     }, n), {
       children: (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
-        children: p.NW.string(p.t.TLkoOj)
+        children: g.NW.string(g.t.TLkoOj)
       })
-    }))) : (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, h(g({
-      header: p.NW.string(p.t.YB9xUF),
-      confirmText: p.NW.string(p.t.ts6u6u),
-      cancelText: p.NW.string(p.t["ETE/oK"]),
+    }))) : (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, h(p({
+      header: g.NW.string(g.t.YB9xUF),
+      confirmText: g.NW.string(g.t.ts6u6u),
+      cancelText: g.NW.string(g.t["ETE/oK"]),
       confirmButtonColor: a.zxk.Colors.BRAND,
       onConfirm: () => (0, d.Ts)(t, e)
     }, n), {
       children: (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
-        children: p.NW.string(p.t.BcGGVl)
+        children: g.NW.string(g.t.BcGGVl)
       })
     })))
   }, [t, u]);
@@ -100,7 +100,7 @@ function x(e) {
       children: (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-link",
-        children: u ? p.NW.string(p.t.OmpxW1) : p.NW.string(p.t.ozsQBA)
+        children: u ? g.NW.string(g.t.OmpxW1) : g.NW.string(g.t.ozsQBA)
       })
     })
   }) : null

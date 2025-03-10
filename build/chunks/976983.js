@@ -15,8 +15,8 @@ var i = n(120356),
   d = n(603211),
   u = n(107862),
   m = n(307707),
-  p = n(216701),
-  g = n(570961),
+  g = n(216701),
+  p = n(570961),
   h = n(290511),
   f = n(388032),
   b = n(597435);
@@ -60,12 +60,12 @@ function N(e) {
     prompt: N,
     singleColumn: v,
     promptIndex: _,
-    option: O,
-    hasError: y,
+    option: y,
+    hasError: O,
     onDragStart: C,
     onDragComplete: I,
     onDragReset: E
-  } = e, S = null, T = l().findIndex(N.options, e => e.id === O.id), {
+  } = e, S = null, T = l().findIndex(N.options, e => e.id === y.id), {
     drag: P,
     dragSourcePosition: w,
     drop: R,
@@ -73,17 +73,17 @@ function N(e) {
   } = (0, d.Z)({
     type: "ONBOARDING_PROMPT_OPTION_CARD-".concat(N.id),
     index: T,
-    optionId: O.id,
+    optionId: y.id,
     onDragStart: C,
     onDragComplete: I,
     onDragReset: E
   }), {
     customEmoji: D,
     unicodeEmoji: A
-  } = (0, m.Z)(null === (t = O.emoji) || void 0 === t ? void 0 : t.id, null === (i = O.emoji) || void 0 === i ? void 0 : i.name);
-  return (0, h.Oq)(O.emoji) || null != D || null != A || (S = f.NW.string(f.t["61wfmp"])), (0, r.jsxs)(o.P3F, {
+  } = (0, m.Z)(null === (t = y.emoji) || void 0 === t ? void 0 : t.id, null === (i = y.emoji) || void 0 === i ? void 0 : i.name);
+  return (0, h.Oq)(y.emoji) || null != D || null != A || (S = f.NW.string(f.t["61wfmp"])), (0, r.jsxs)(o.P3F, {
     className: s()(b.optionCard, {
-      [b.hasError]: y || null != S,
+      [b.hasError]: O || null != S,
       [b.dropIndicatorBefore]: null != w && T < w,
       [b.dropIndicatorAfter]: null != w && T > w,
       [b.singleColumn]: v
@@ -95,16 +95,16 @@ function N(e) {
       return t => (0, r.jsx)(e, j(x({}, t), {
         guild: u,
         prompt: N,
-        option: O,
+        option: y,
         index: _,
         onSave: e => {
-          (0, g.Kk)(u, N.id, {
-            options: N.options.map(t => t.id === O.id ? e : t)
+          (0, p.Kk)(u, N.id, {
+            options: N.options.map(t => t.id === y.id ? e : t)
           })
         },
         onDelete: () => {
-          (0, g.Kk)(u, N.id, {
-            options: N.options.filter(e => e.id !== O.id)
+          (0, p.Kk)(u, N.id, {
+            options: N.options.filter(e => e.id !== y.id)
           })
         }
       }))
@@ -123,9 +123,9 @@ function N(e) {
       className: b.optionCardRow,
       children: [(0, r.jsx)("div", {
         className: b.emoji,
-        children: (0, r.jsx)(p.Z, {
-          emojiId: null === (a = O.emoji) || void 0 === a ? void 0 : a.id,
-          emojiName: null === (c = O.emoji) || void 0 === c ? void 0 : c.name,
+        children: (0, r.jsx)(g.Z, {
+          emojiId: null === (a = y.emoji) || void 0 === a ? void 0 : a.id,
+          emojiName: null === (c = y.emoji) || void 0 === c ? void 0 : c.name,
           defaultComponent: null
         })
       }), (0, r.jsxs)("div", {
@@ -134,12 +134,12 @@ function N(e) {
           variant: "text-md/medium",
           color: "header-primary",
           lineClamp: 1,
-          children: O.title
-        }), "" !== O.description && (0, r.jsx)(o.Text, {
+          children: y.title
+        }), "" !== y.description && (0, r.jsx)(o.Text, {
           className: b.description,
           variant: "text-xs/normal",
           color: "header-secondary",
-          children: O.description
+          children: y.description
         })]
       })]
     }), null != S && (0, r.jsx)(o.Text, {
@@ -166,7 +166,7 @@ function v(e) {
       return n => (0, r.jsx)(e, j(x({}, n), {
         guild: t,
         prompt: i,
-        onSave: e => (0, g.Kk)(t, i.id, {
+        onSave: e => (0, p.Kk)(t, i.id, {
           options: [...i.options, e]
         }),
         onDelete: () => {},

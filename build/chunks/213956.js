@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(768762),
   u = n(430824),
   m = n(999382),
-  p = n(84613),
-  g = n(392885),
+  g = n(84613),
+  p = n(392885),
   h = n(740903),
   f = n(464610),
   b = n(733629),
@@ -27,13 +27,13 @@ function _() {
   let e;
   let t = (0, s.e7)([m.Z], () => m.Z.getGuildId()),
     n = (0, s.e7)([u.Z], () => u.Z.getGuild(t)),
-    _ = (0, s.e7)([g.Z], () => g.Z.getCurrentPage());
+    _ = (0, s.e7)([p.Z], () => p.Z.getCurrentPage());
   if (i.useEffect(() => {
       (0, o.EW)(a.z.COMMUNITY_GUILD_SETTINGS_SAFETY, {
         dismissAction: j.L.AUTO
       })
     }, []), null == n) return null;
-  let O = (0, x.Q)(n);
+  let y = (0, x.Q)(n);
   switch (_) {
     case h.u.OVERVIEW:
       e = (0, r.jsx)(f.Z, {
@@ -43,13 +43,13 @@ function _() {
     case h.u.CAPTCHA_AND_RAID_PROTECTION:
       e = (0, r.jsx)(b.Z, {
         title: N.NW.string(N.t["53eF5u"]),
-        settings: O[h.u.CAPTCHA_AND_RAID_PROTECTION]
+        settings: y[h.u.CAPTCHA_AND_RAID_PROTECTION]
       });
       break;
     case h.u.DM_AND_SPAM_PROTECTION:
       e = (0, r.jsx)(b.Z, {
         title: N.NW.string(N.t.O0SfFx),
-        settings: O[h.u.DM_AND_SPAM_PROTECTION]
+        settings: y[h.u.DM_AND_SPAM_PROTECTION]
       });
       break;
     case h.u.AUTOMOD:
@@ -60,7 +60,7 @@ function _() {
     case h.u.PERMISSIONS:
       e = (0, r.jsx)(b.Z, {
         title: N.NW.string(N.t.BXoNiY),
-        settings: O[h.u.PERMISSIONS]
+        settings: y[h.u.PERMISSIONS]
       })
   }
   return (0, r.jsxs)(r.Fragment, {
@@ -70,7 +70,7 @@ function _() {
       look: l.zxk.Looks.BLANK,
       size: l.zxk.Sizes.MIN,
       onClick: () => {
-        (0, p.K)(h.u.OVERVIEW)
+        (0, g.K)(h.u.OVERVIEW)
       },
       children: [(0, r.jsx)(d.Z, {
         className: v.__invalid_arrow,

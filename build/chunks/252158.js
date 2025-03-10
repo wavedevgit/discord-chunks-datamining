@@ -178,6 +178,9 @@ function R(e, t) {
     case v.u.STREAM_BAD_NETWORK_QUALITY:
     case v.u.STREAM_SOUNDSHARE_FAILED:
       return "".concat(t.streamKey, ":").concat(t.mediaSessionId);
+    case v.u.NOISE_CANCELLER_ERROR:
+    case v.u.SCREENSHARE_OS_NOT_SUPPORTED:
+      return "".concat(t.mediaSessionId);
     default:
       return e
   }

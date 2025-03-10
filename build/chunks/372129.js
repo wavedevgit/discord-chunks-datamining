@@ -1,7 +1,7 @@
 /** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
-  Z: () => g,
+  Z: () => p,
   _: () => m
 }), n(411104), n(653041), n(47120);
 var r = n(200651),
@@ -70,9 +70,9 @@ async function m(e, t) {
       })
     }
   }
-  n.length > 0 && p(n)
+  n.length > 0 && g(n)
 }
-let p = e => {
+let g = e => {
     (0, s.ZDy)(async () => {
       let {
         default: t
@@ -82,14 +82,14 @@ let p = e => {
       }, n))
     })
   },
-  g = e => {
+  p = e => {
     let {
       onChange: t,
       multiple: o = !0,
       disabled: c,
       className: u,
-      tabIndex: p = -1,
-      "aria-label": g,
+      tabIndex: g = -1,
+      "aria-label": p,
       filters: h,
       setLoading: f
     } = e, b = i.createRef(), x = i.useRef(null), [j, N] = i.useState(!1);
@@ -101,7 +101,7 @@ let p = e => {
       },
       _ = async e => {
         null == f || f(!0), await m(e, t), N(!0), null == f || f(!1)
-      }, O = async e => {
+      }, y = async e => {
         var t, i, a;
         if (e.stopPropagation(), e.preventDefault(), (null === (t = e.currentTarget) || void 0 === t ? void 0 : t.files) == null || (null === (a = e.currentTarget) || void 0 === a ? void 0 : null === (i = a.files) || void 0 === i ? void 0 : i.length) === 0) return;
         let l = e.currentTarget.files;
@@ -115,13 +115,13 @@ let p = e => {
         })
       };
     return (0, r.jsx)(a.Z, {
-      onChange: O,
+      onChange: y,
       filters: null != h ? h : (0, l.Zj)(),
       multiple: o,
       disabled: c,
       className: u,
-      tabIndex: p,
-      "aria-label": g,
+      tabIndex: g,
+      "aria-label": p,
       ref: b
     })
   }

@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(770270),
   u = n(70086),
   m = n(949640),
-  p = n(981631),
-  g = n(30513),
+  g = n(981631),
+  p = n(30513),
   h = n(388032),
   f = n(917188);
 
@@ -51,9 +51,9 @@ function x(e) {
     vanityURLUses: a,
     originalVanityURLCode: o,
     hasError: d
-  } = e, u = (null == t ? void 0 : t.hasFeature(p.oNc.VANITY_URL)) === !0, m = i.useCallback(() => {
+  } = e, u = (null == t ? void 0 : t.hasFeature(g.oNc.VANITY_URL)) === !0, m = i.useCallback(() => {
     (0, c.Gy)("")
-  }, []), g = i.useCallback(e => {
+  }, []), p = i.useCallback(e => {
     (0, c.Gy)(e.replace(/ /g, "-"))
   }, []);
   return null == n ? (0, r.jsx)(s.$jN, {}) : (0, r.jsxs)(s.Zbd, {
@@ -75,7 +75,7 @@ function x(e) {
     }), (0, r.jsx)(l.Z, {
       prefix: "".concat("https://discord.gg", "/"),
       value: n,
-      onChange: g,
+      onChange: p,
       maxLength: 25,
       error: d,
       disabled: !u
@@ -103,10 +103,10 @@ function j(e) {
     e.preventDefault(), e.stopPropagation(), (0, m.E6)({
       guild: t,
       analyticsLocations: c,
-      analyticsSection: p.jXE.GUILD_SETTINGS_VANITY_URL,
-      analyticsObject: p.qAy.BUTTON_CTA,
-      perks: (0, g.WW)(),
-      targetPremiumGuildTier: p.Eu4.TIER_3
+      analyticsSection: g.jXE.GUILD_SETTINGS_VANITY_URL,
+      analyticsObject: g.qAy.BUTTON_CTA,
+      perks: (0, p.WW)(),
+      targetPremiumGuildTier: g.Eu4.TIER_3
     })
   }, [c, t]);
   return (0, r.jsxs)(r.Fragment, {

@@ -17,7 +17,7 @@ var r = n(200651),
 function f(e) {
   let {
     profile: t
-  } = e, n = (0, i.e7)([c.default], () => c.default.locale), f = (0, d.M)(u.default.extractTimestamp(t.id), n), j = l.useMemo(() => {
+  } = e, n = (0, i.e7)([c.default], () => c.default.locale), f = (0, d.M)(u.default.extractTimestamp(t.id), n), I = l.useMemo(() => {
     let e = new s.ZP(t);
     return (0, r.jsx)(o.Z, {
       guild: e,
@@ -68,7 +68,7 @@ function f(e) {
             Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
           }), n))
         }
-      }), j]
+      }), I]
     }), (0, r.jsxs)("div", {
       className: v.members,
       children: [(0, r.jsxs)("div", {

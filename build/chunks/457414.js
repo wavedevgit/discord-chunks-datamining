@@ -44,7 +44,7 @@ let c = e => {
       keywordCount: t.triggerMetadata.keywordFilter.length
     })
   },
-  p = e => {
+  g = e => {
     switch (e) {
       case l.fX.KEYWORD:
         return o.NW.string(o.t.TzvaeH);
@@ -60,7 +60,7 @@ let c = e => {
         return null
     }
   },
-  g = e => {
+  p = e => {
     if (e === l.fX.KEYWORD) return o.NW.formatToPlainString(o.t.yNec2t, {})
   },
   h = e => {
@@ -82,8 +82,8 @@ function f(e, t) {
   return null != e && d(e) ? {
     headerText: null !== (n = u(e, t)) && void 0 !== n ? n : "",
     headerSubtext: null !== (i = m(e, t)) && void 0 !== i ? i : "",
-    descriptionText: null !== (s = p(e)) && void 0 !== s ? s : "",
-    descriptionSubtext: null !== (a = g(e)) && void 0 !== a ? a : "",
+    descriptionText: null !== (s = g(e)) && void 0 !== s ? s : "",
+    descriptionSubtext: null !== (a = p(e)) && void 0 !== a ? a : "",
     icon: null !== (l = h(e)) && void 0 !== l ? l : r.xPt
   } : null
 }

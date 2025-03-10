@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(866442),
   u = n(442837),
   m = n(481060),
-  p = n(650774),
-  g = n(430824),
+  g = n(650774),
+  p = n(430824),
   h = n(900681),
   f = n(175557),
   b = n(688298),
@@ -23,9 +23,9 @@ var r = n(200651),
   N = n(308083),
   v = n(388032),
   _ = n(22418),
-  O = n(154662);
+  y = n(154662);
 
-function y(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -128,7 +128,7 @@ let I = [{
       brandSecondaryColor: P,
       badgePrimaryColor: w,
       badgeSecondaryColor: R
-    } = s, Z = (0, u.e7)([g.Z], () => g.Z.getGuild(l)), D = null !== (t = (0, u.e7)([p.Z], () => p.Z.getMemberCount(l))) && void 0 !== t ? t : 0, A = i.useMemo(() => ({
+    } = s, Z = (0, u.e7)([p.Z], () => p.Z.getGuild(l)), D = null !== (t = (0, u.e7)([g.Z], () => g.Z.getMemberCount(l))) && void 0 !== t ? t : 0, A = i.useMemo(() => ({
       primary: null != T ? T : N.OH,
       secondary: null != P ? P : N.K_
     }), [T, P]), k = i.useMemo(() => {
@@ -166,7 +166,7 @@ let I = [{
     }, [n, S, U.primary, U.secondary]);
     let F = i.useMemo(() => {
       var e, t, n;
-      return C(y({}, s), {
+      return C(O({}, s), {
         id: l,
         name: null !== (e = null == Z ? void 0 : Z.name) && void 0 !== e ? e : "",
         icon: null == Z ? void 0 : Z.icon,
@@ -190,15 +190,15 @@ let I = [{
       })
     }, [s, l, Z, D, S, w, R, U]);
     return (0, r.jsxs)("div", {
-      className: O.slideContent,
+      className: y.slideContent,
       children: [(0, r.jsx)(m.X6q, {
         variant: "heading-xxl/medium",
-        className: O.title,
+        className: y.title,
         children: v.NW.string(v.t.kPwMOz)
       }), (0, r.jsx)(m.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        className: O.subtitle,
+        className: y.subtitle,
         children: v.NW.string(v.t["E+KhDA"])
       }), (0, r.jsxs)("div", {
         className: _.content,
@@ -231,7 +231,7 @@ let I = [{
                   },
                   shouldShow: W,
                   onRequestClose: () => L(!1),
-                  children: e => (0, r.jsx)(m.P3F, C(y({}, e), {
+                  children: e => (0, r.jsx)(m.P3F, C(O({}, e), {
                     onClick: () => {
                       L(e => !e)
                     },

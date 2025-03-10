@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(723047),
   u = n(727843),
   m = n(587431),
-  p = n(86126),
-  g = n(880193),
+  g = n(86126),
+  p = n(880193),
   h = n(516448),
   f = n(975331),
   b = n(231610),
@@ -28,8 +28,8 @@ function v(e) {
     allSubscriptionListings: s,
     priceTiers: v,
     loading: _,
-    error: O,
-    handlePublishTier: y,
+    error: y,
+    handlePublishTier: O,
     onDeleteEditState: C
   } = e, {
     editStateId: I
@@ -42,8 +42,8 @@ function v(e) {
   }, [s, I, v]), P = null == E, w = null !== (t = null == E ? void 0 : E.published) && void 0 !== t && t, R = null !== (n = null == E ? void 0 : E.archived) && void 0 !== n && n;
   return (0, r.jsxs)("div", {
     className: N.body,
-    children: [null != O && (0, r.jsx)(m.Z, {
-      children: O.getAnyErrorMessage()
+    children: [null != y && (0, r.jsx)(m.Z, {
+      children: y.getAnyErrorMessage()
     }), !w && !S && !R && (0, r.jsxs)("div", {
       className: N.publishListing,
       children: [(0, r.jsxs)("div", {
@@ -83,7 +83,7 @@ function v(e) {
             color: o.zxk.Colors.CUSTOM,
             wrapperClassName: j.autoWidth,
             className: a()(N.publishButton, j.autoWidth),
-            onClick: y,
+            onClick: O,
             submitting: _,
             children: x.NW.string(x.t.Lj6R5u)
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -98,11 +98,11 @@ function v(e) {
           }), t))
         }
       })]
-    }), (0, r.jsx)(g.Z, {
+    }), (0, r.jsx)(p.Z, {
       priceTiers: T
     }), (0, r.jsx)(h.Z, {
       allSubscriptionListings: s
-    }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(b.Z, {}), (0, r.jsx)(p.Z, {
+    }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(b.Z, {}), (0, r.jsx)(g.Z, {
       onDeleteEditState: C
     })]
   })

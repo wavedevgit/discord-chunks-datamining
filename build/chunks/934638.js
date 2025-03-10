@@ -17,13 +17,13 @@ function m(e) {
   let {
     profile: t,
     canManageGuild: n
-  } = e, m = t.id, p = i.useCallback(e => {
+  } = e, m = t.id, g = i.useCallback(e => {
     o.Z.updateGuild({
       description: e
     }), o.Z.updateGuildProfile(m, {
       description: e
     })
-  }, [m]), g = (0, a.e7)([c.Z], () => c.Z.getError("description"));
+  }, [m]), p = (0, a.e7)([c.Z], () => c.Z.getError("description"));
   return (0, r.jsxs)(l.hjN, {
     className: u.section,
     children: [(0, r.jsxs)("div", {
@@ -37,10 +37,10 @@ function m(e) {
     }), (0, r.jsx)(l.Kx8, {
       value: t.description,
       placeholder: d.NW.string(d.t.Nvfows),
-      onChange: p,
+      onChange: g,
       maxLength: s.Us,
       disabled: !n,
-      error: g
+      error: p
     })]
   })
 }

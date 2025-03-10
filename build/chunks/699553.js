@@ -1,9 +1,10 @@
 /** Chunk was on 84335 **/
 n.d(t, {
   CR: () => m,
-  MA: () => f,
+  MA: () => I,
   pV: () => v,
-  vb: () => j
+  vb: () => j,
+  xV: () => f
 });
 var r = n(544891),
   l = n(570140),
@@ -70,7 +71,35 @@ function v(e, t) {
     }), null
   }))
 }
-async function f(e) {
+
+function f(e, t) {
+  return u.Z.getIsUpdating(e) ? Promise.resolve(null) : (l.Z.dispatch({
+    type: "GUILD_PROFILE_UPDATE_VISIBILITY",
+    guildId: e,
+    visibility: t
+  }), r.tn.put({
+    url: d.ANM.GUILD_PROFILE_VISIBILITY(e),
+    body: {
+      visibility: t
+    },
+    rejectWithError: !1
+  }).then(t => {
+    let n = t.body.visibility;
+    return l.Z.dispatch({
+      type: "GUILD_PROFILE_UPDATE_VISIBILITY_SUCCESS",
+      guildId: e,
+      visibility: n
+    }), n
+  }).catch(t => {
+    let n = new i.Hx(t);
+    throw l.Z.dispatch({
+      type: "GUILD_PROFILE_UPDATE_VISIBILITY_FAILURE",
+      guildId: e,
+      error: n
+    }), n
+  }))
+}
+async function I(e) {
   let t = await r.tn.get({
     url: d.ANM.GUILD_TOP_GAMES(e),
     rejectWithError: !1

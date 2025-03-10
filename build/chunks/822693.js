@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(496675),
   u = n(699516),
   m = n(594174),
-  p = n(434404),
-  g = n(800223),
+  g = n(434404),
+  p = n(800223),
   h = n(981631),
   f = n(388032);
 let b = "NO_CHANNEL",
@@ -52,7 +52,7 @@ function j(e) {
       label: f.NW.string(f.t.u197b2)
     }), e
   }, [N, t, s]), _ = i.useCallback(e => {
-    j ? (0, g.c)(t, n, e !== b ? e : null) : p.Z.updateEmbed(t, n, e !== b ? e : null)
+    j ? (0, p.c)(t, n, e !== b ? e : null) : g.Z.updateEmbed(t, n, e !== b ? e : null)
   }, [t, n, j]);
   return (0, r.jsx)(l.q4e, {
     options: v,

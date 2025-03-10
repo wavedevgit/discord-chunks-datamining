@@ -19,12 +19,12 @@ function u(e) {
     className: s,
     textAreaClassName: u,
     subtitleText: m,
-    initialValue: p
-  } = e, g = i.useMemo(() => null != p ? p : [], [p]), {
+    initialValue: g
+  } = e, p = i.useMemo(() => null != g ? g : [], [g]), {
     value: h,
     onChange: f,
     errorMessage: b
-  } = (0, o.Z)(t, p, n);
+  } = (0, o.Z)(t, g, n);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: a()(d.keywordsContainer, s),
@@ -37,7 +37,7 @@ function u(e) {
         className: d.keywordsCounter,
         variant: "text-xs/normal",
         color: "text-muted",
-        children: "".concat(g.length, " / ").concat(n)
+        children: "".concat(p.length, " / ").concat(n)
       })]
     }), null != b ? (0, r.jsx)(l.Text, {
       className: a()(d.paddingTop, d.errorText),

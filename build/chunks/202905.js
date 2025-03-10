@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(65361),
   u = n(910200),
   m = n(434404),
-  p = n(600553),
-  g = n(999382),
+  g = n(600553),
+  p = n(999382),
   h = n(548522),
   f = n(651390),
   b = n(981631),
@@ -41,18 +41,18 @@ function v(e) {
   } = e, {
     guild: n,
     guildProfile: v
-  } = (0, l.cj)([g.Z], () => ({
-    guild: g.Z.getGuild(),
-    guildProfile: g.Z.getGuildProfile()
-  })), _ = null == n ? void 0 : n.id, O = (0, l.e7)([c.Z], () => c.Z.get(_)), {
-    fetchGuildProfile: y
-  } = (0, d.u)(_), C = (null == v ? void 0 : v.visibility) == null || !s.Y.VISIBLE.has(null == v ? void 0 : v.visibility), I = (null == v ? void 0 : v.visibility) === s.k.PUBLIC_WITH_RECRUITMENT, E = (0, p.Dj)({
+  } = (0, l.cj)([p.Z], () => ({
+    guild: p.Z.getGuild(),
+    guildProfile: p.Z.getGuildProfile()
+  })), _ = null == n ? void 0 : n.id, y = (0, l.e7)([c.Z], () => c.Z.get(_)), {
+    fetchGuildProfile: O
+  } = (0, d.u)(_), C = (null == v ? void 0 : v.visibility) == null || !s.Y.VISIBLE.has(null == v ? void 0 : v.visibility), I = (null == v ? void 0 : v.visibility) === s.k.PUBLIC_WITH_RECRUITMENT, E = (0, g.Dj)({
     guildId: _,
     location: "recruitment"
   });
   i.useEffect(() => {
-    null != _ && y()
-  }, [_, y]);
+    null != _ && O()
+  }, [_, O]);
   let S = i.useMemo(() => null == n || null == v ? N : v, [n, v]),
     T = i.useCallback(() => {
       (null == n ? void 0 : n.id) != null && (I ? m.Z.updateGuildProfile(n.id, {
@@ -65,7 +65,7 @@ function v(e) {
       m.Z.setSection(b.pNK.PROFILE)
     }, []);
   if (null == n) return null;
-  let w = null != t ? t : null == O ? void 0 : O.formFields;
+  let w = null != t ? t : null == y ? void 0 : y.formFields;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.X6, {
       variant: "heading-md/semibold",

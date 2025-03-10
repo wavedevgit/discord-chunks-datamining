@@ -52,7 +52,7 @@ function c(e) {
     })(Object(s)).forEach(function(e) {
       Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
     }), i))
-  }, p = e => async n => {
+  }, g = e => async n => {
     let r = t.actions.find(t => t.type === e),
       i = null != r,
       s = u[e],
@@ -70,7 +70,7 @@ function c(e) {
         triggerType: t.triggerType,
         action: null != n ? n : u[e],
         toggled: null != n,
-        onToggleAction: p(e)
+        onToggleAction: g(e)
       }, e)
     })
   })

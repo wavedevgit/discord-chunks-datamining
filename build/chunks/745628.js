@@ -17,12 +17,12 @@ let u = e => {
   let {
     guildId: u,
     handleUpdate: m,
-    progress: p,
-    errors: g
+    progress: g,
+    errors: p
   } = e, {
     wildcardDescriptors: h,
     description: f
-  } = p, b = (e, t) => {
+  } = g, b = (e, t) => {
     let n = [...h];
     n[t] = e, m({
       wildcardDescriptors: n
@@ -39,11 +39,11 @@ let u = e => {
       color: "header-secondary",
       className: d.subtitle,
       children: c.NW.string(c.t.E1L1o6)
-    }), (null == g ? void 0 : g.description) != null && (0, r.jsx)(a.Text, {
+    }), (null == p ? void 0 : p.description) != null && (0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
       color: "status-danger",
       className: d.errorText,
-      children: g.description
+      children: p.description
     }), (0, r.jsxs)("div", {
       className: d.content,
       children: [(0, r.jsxs)("div", {
@@ -72,11 +72,11 @@ let u = e => {
           color: "header-secondary",
           className: d.title,
           children: c.NW.string(c.t["2g9zfX"])
-        }), (null == g ? void 0 : g.wildcardDescriptors) != null && (0, r.jsx)(a.Text, {
+        }), (null == p ? void 0 : p.wildcardDescriptors) != null && (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "status-danger",
           className: d.errorText,
-          children: g.wildcardDescriptors
+          children: p.wildcardDescriptors
         }), (0, r.jsxs)("div", {
           className: d.wildcardRow,
           children: [(0, r.jsx)(a.oil, {
@@ -103,7 +103,7 @@ let u = e => {
         className: d.fixedWidthSidebar,
         children: (0, r.jsx)(l.Z, {
           guildId: u,
-          progress: p,
+          progress: g,
           maskTraits: !0
         })
       })]

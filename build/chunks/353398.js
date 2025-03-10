@@ -14,8 +14,8 @@ var r, i = n(200651),
   d = n(442837),
   u = n(692547),
   m = n(481060),
-  p = n(570140),
-  g = n(484614),
+  g = n(570140),
+  p = n(484614),
   h = n(852860),
   f = n(881052),
   b = n(751189),
@@ -24,8 +24,8 @@ var r, i = n(200651),
   N = n(999382),
   v = n(58346),
   _ = n(388032),
-  O = n(864517),
-  y = n(802138);
+  y = n(864517),
+  O = n(802138);
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -66,7 +66,7 @@ class I extends(r = d.ZP.Store) {
   }
 }
 C(I, "displayName", "GuildSettingsTemplateMetadataStore_");
-let E = new I(p.Z);
+let E = new I(g.Z);
 
 function S() {
   let [e, t] = s.useState(!1), n = async () => {
@@ -81,18 +81,18 @@ function S() {
 
 function T() {
   return (0, i.jsx)(m.hjN, {
-    className: y.marginBottom4,
+    className: O.marginBottom4,
     children: (0, i.jsxs)(m.y5t, {
       component: (0, i.jsx)(m.vwX, {
         tag: m.RB0.H1,
         children: _.NW.string(_.t.KUw7Sk)
       }),
       children: [(0, i.jsx)(m.R94, {
-        className: y.marginBottom20,
+        className: O.marginBottom20,
         type: m.geA.DESCRIPTION,
         children: _.NW.format(_.t.c0m8bG, {})
       }), (0, i.jsx)(w, {}), (0, i.jsx)(m.$i$, {
-        className: O.divider
+        className: y.divider
       }), (0, i.jsx)(P, {})]
     })
   })
@@ -139,7 +139,7 @@ function P() {
     variant: "text-sm/normal",
     children: t.message
   }) : (0, i.jsx)(m.$jN, {
-    className: y.marginTop40
+    className: O.marginTop40
   });
   let o = null != t && null == t.getFirstFieldErrorMessage("name") && null == t.getFirstFieldErrorMessage("description");
   return (0, i.jsxs)(i.Fragment, {
@@ -147,7 +147,7 @@ function P() {
       guild: e,
       guildTemplate: l
     }), o ? (0, i.jsx)(m.Text, {
-      className: y.marginTop8,
+      className: O.marginTop8,
       color: "text-danger",
       variant: "text-sm/normal",
       children: t.getAnyErrorMessage()
@@ -157,63 +157,63 @@ function P() {
 
 function w() {
   return (0, i.jsxs)("div", {
-    className: O.descriptionBox,
+    className: y.descriptionBox,
     children: [(0, i.jsxs)("div", {
-      className: O.descriptionSection,
+      className: y.descriptionSection,
       children: [(0, i.jsx)(m.X6q, {
         variant: "eyebrow",
         children: _.NW.string(_.t["f8u+VF"])
       }), (0, i.jsxs)("div", {
-        className: O.descriptionRow,
+        className: y.descriptionRow,
         children: [(0, i.jsx)(m.owK, {
           size: "md",
-          className: O.descriptionIcon,
+          className: y.descriptionIcon,
           color: u.Z.unsafe_rawColors.GREEN_360.css,
           secondaryColor: u.Z.unsafe_rawColors.WHITE_500.css
         }), _.NW.string(_.t.K2tn19)]
       }), (0, i.jsxs)("div", {
-        className: O.descriptionRow,
+        className: y.descriptionRow,
         children: [(0, i.jsx)(m.owK, {
           size: "md",
-          className: O.descriptionIcon,
+          className: y.descriptionIcon,
           color: u.Z.unsafe_rawColors.GREEN_360.css,
           secondaryColor: u.Z.unsafe_rawColors.WHITE_500.css
         }), _.NW.string(_.t.om5gNj)]
       }), (0, i.jsxs)("div", {
-        className: O.descriptionRow,
+        className: y.descriptionRow,
         children: [(0, i.jsx)(m.owK, {
           size: "md",
-          className: O.descriptionIcon,
+          className: y.descriptionIcon,
           color: u.Z.unsafe_rawColors.GREEN_360.css,
           secondaryColor: u.Z.unsafe_rawColors.WHITE_500.css
         }), _.NW.string(_.t["/VNqdH"])]
       })]
     }), (0, i.jsxs)("div", {
-      className: O.descriptionSection,
+      className: y.descriptionSection,
       children: [(0, i.jsx)(m.X6q, {
         variant: "eyebrow",
         children: _.NW.string(_.t["8zhJEh"])
       }), (0, i.jsxs)("div", {
-        className: O.descriptionRow,
+        className: y.descriptionRow,
         children: [(0, i.jsx)(m.k$p, {
           size: "md",
-          className: O.descriptionIcon,
+          className: y.descriptionIcon,
           color: u.Z.unsafe_rawColors.RED_400.css,
           secondaryColor: u.Z.unsafe_rawColors.WHITE_500.css
         }), _.NW.string(_.t.WOKI6u)]
       }), (0, i.jsxs)("div", {
-        className: O.descriptionRow,
+        className: y.descriptionRow,
         children: [(0, i.jsx)(m.k$p, {
           size: "md",
-          className: O.descriptionIcon,
+          className: y.descriptionIcon,
           color: u.Z.unsafe_rawColors.RED_400.css,
           secondaryColor: u.Z.unsafe_rawColors.WHITE_500.css
         }), _.NW.string(_.t.ddhDJC)]
       }), (0, i.jsxs)("div", {
-        className: O.descriptionRow,
+        className: y.descriptionRow,
         children: [(0, i.jsx)(m.k$p, {
           size: "md",
-          className: O.descriptionIcon,
+          className: y.descriptionIcon,
           color: u.Z.unsafe_rawColors.RED_400.css,
           secondaryColor: u.Z.unsafe_rawColors.WHITE_500.css
         }), _.NW.string(_.t["6Q/DHh"])]
@@ -248,7 +248,7 @@ function Z() {
     n = (0, d.e7)([E], () => E.error);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(m.xJW, {
-      className: y.marginBottom20,
+      className: O.marginBottom20,
       title: _.NW.string(_.t.z1a9R0),
       error: null == n ? void 0 : n.getFirstFieldErrorMessage("name"),
       children: (0, i.jsx)(m.oil, {
@@ -258,7 +258,7 @@ function Z() {
         maxLength: 100
       })
     }), (0, i.jsx)(m.xJW, {
-      className: y.marginBottom20,
+      className: O.marginBottom20,
       title: _.NW.string(_.t.GxirWV),
       error: null == n ? void 0 : n.getFirstFieldErrorMessage("description"),
       children: (0, i.jsx)(m.Kx8, {
@@ -281,23 +281,23 @@ function D(e) {
   }) : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(m.xJW, {
       title: _.NW.string(_.t.zGGcLy),
-      children: (0, i.jsx)(g.Z, {
+      children: (0, i.jsx)(p.Z, {
         buttonLook: m.zxk.Looks.FILLED,
         buttonColor: m.zxk.Colors.BRAND,
         value: (0, j.Z)(n.code)
       })
     }), n.isDirty && (0, i.jsx)(m.Text, {
       color: "text-warning",
-      className: y.marginTop8,
+      className: O.marginTop8,
       variant: "text-sm/normal",
       children: _.NW.string(_.t.aWsjtL)
     }), (0, i.jsxs)("div", {
-      className: l()(y.marginTop20, O.buttonContainer),
+      className: l()(O.marginTop20, y.buttonContainer),
       children: [n.isDirty && (0, i.jsx)(k, {
         guild: t,
         guildTemplate: n
       }), (0, i.jsxs)("div", {
-        className: O.rightButtonContainer,
+        className: y.rightButtonContainer,
         children: [(0, i.jsx)(W, {
           guild: t,
           guildTemplate: n
@@ -306,7 +306,7 @@ function D(e) {
         })]
       })]
     }), n.isDirty && (0, i.jsx)("div", {
-      className: O.lastSync,
+      className: y.lastSync,
       children: _.NW.format(_.t.v0AVur, {
         timestamp: new Date(n.updatedAt)
       })
@@ -350,7 +350,7 @@ function k(e) {
   };
   return (0, i.jsx)(m.zxk, {
     submitting: r,
-    className: O.button,
+    className: y.button,
     onClick: l,
     children: _.NW.string(_.t["Nw+0Y2"])
   })
@@ -372,7 +372,7 @@ function W(e) {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(m.zxk, {
       look: m.zxk.Looks.OUTLINED,
-      className: O.button,
+      className: y.button,
       color: m.zxk.Colors.RED,
       onClick: () => a(!0),
       children: _.NW.string(_.t["cN/RFB"])
@@ -389,7 +389,7 @@ function L(e) {
   } = e;
   return (0, i.jsx)(m.zxk, {
     color: m.zxk.Colors.PRIMARY,
-    className: O.button,
+    className: y.button,
     onClick: () => (0, m.ZDy)(async () => {
       let {
         default: e

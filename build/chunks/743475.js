@@ -15,8 +15,8 @@ var r = n(570140),
   d = n(889369),
   u = n(570961),
   m = n(208665),
-  p = n(290511),
-  g = n(388032);
+  g = n(290511),
+  p = n(388032);
 
 function h() {
   r.Z.dispatch({
@@ -36,10 +36,10 @@ async function b(e) {
     [h, f] = (0, l.d9)(e.id, [...t]),
     b = (0, l.kl)(e.id, t, m.Z.editedOnboardingPrompts),
     x = (0, l.kl)(e.id, t, m.Z.editedOnboardingPrompts, l.V7);
-  if (a.Z.getEnabled(e.id) && (!n && (f.length < p.md || h.length < p.X) || n && (b.length < p.md || x.length < p.X))) {
+  if (a.Z.getEnabled(e.id) && (!n && (f.length < g.md || h.length < g.X) || n && (b.length < g.md || x.length < g.X))) {
     i.Z.show({
-      title: g.NW.string(g.t.iLdiqa),
-      body: g.NW.string(g.t.JOT74e)
+      title: p.NW.string(p.t.iLdiqa),
+      body: p.NW.string(p.t.JOT74e)
     });
     return
   }
@@ -62,7 +62,7 @@ async function b(e) {
         error: t
       } = null !== (j = new s.Hx(n).getAnyErrorMessageAndField()) && void 0 !== j ? j : {};
       i.Z.show({
-        title: g.NW.string(g.t.iLdiqa),
+        title: p.NW.string(p.t.iLdiqa),
         body: [e, t].filter(c.lm).join(": ")
       }), r.Z.dispatch({
         type: "GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_FAILED"

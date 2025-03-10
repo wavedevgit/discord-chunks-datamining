@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(144991),
   u = n(496675),
   m = n(594174),
-  p = n(626135),
-  g = n(233608),
+  g = n(626135),
+  p = n(233608),
   h = n(700785),
   f = n(764260),
   b = n(631969),
@@ -23,8 +23,8 @@ var r = n(200651),
   N = n(275296),
   v = n(203377),
   _ = n(981631),
-  O = n(388032),
-  y = n(80749),
+  y = n(388032),
+  O = n(80749),
   C = n(104978);
 
 function I(e) {
@@ -71,15 +71,15 @@ function S(e) {
     [n.id]: E(I({}, n), {
       permissions: h.Hn
     })
-  }), [n]), p = i.useMemo(() => h.uB({
+  }), [n]), g = i.useMemo(() => h.uB({
     user: a,
     context: t,
     roles: u
-  }), [a, t, u]), g = !l.fS(d, p);
+  }), [a, t, u]), p = !l.fS(d, g);
   return (0, r.jsx)("div", {
-    className: y.clearButtonWrapper,
+    className: O.clearButtonWrapper,
     children: (0, r.jsx)(c.ua7, {
-      text: g ? O.NW.string(O.t["IQ/6Sk"]) : null,
+      text: p ? y.NW.string(y.t["IQ/6Sk"]) : null,
       position: "top",
       color: c.ua7.Colors.RED,
       children: e => {
@@ -88,15 +88,15 @@ function S(e) {
           onMouseLeave: i
         } = e;
         return (0, r.jsx)(c.zxk, {
-          className: y.clearButton,
+          className: O.clearButton,
           size: c.zxk.Sizes.TINY,
           look: c.zxk.Looks.LINK,
           color: c.zxk.Colors.LINK,
           onClick: () => (0, f.TY)(n.id),
           onMouseEnter: t,
           onMouseLeave: i,
-          disabled: l.fS(n.permissions, h.Hn) || g || s,
-          children: O.NW.string(O.t["UYq7+P"])
+          disabled: l.fS(n.permissions, h.Hn) || p || s,
+          children: y.NW.string(y.t["UYq7+P"])
         })
       }
     })
@@ -111,12 +111,12 @@ function T(e) {
     locked: s
   } = e;
   if (0 === i.length) return (0, r.jsxs)("div", {
-    className: y.noResultsContainer,
+    className: O.noResultsContainer,
     children: [(0, r.jsx)(b.Z, {
-      className: y.noResults
+      className: O.noResults
     }), (0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
-      children: O.NW.string(O.t.DEBGqK)
+      children: y.NW.string(y.t.DEBGqK)
     })]
   });
 
@@ -125,16 +125,16 @@ function T(e) {
       [n.id]: E(I({}, n), {
         permissions: l.Od(n.permissions, e)
       })
-    }) && O.NW.string(O.t["K+D+GB"]) : O.NW.string(O.t.nOtPMD)
+    }) && y.NW.string(y.t["K+D+GB"]) : y.NW.string(y.t.nOtPMD)
   }
   return (0, r.jsxs)("div", {
-    className: y.permissionsWrapper,
+    className: O.permissionsWrapper,
     children: [(0, r.jsx)(S, {
       guild: t,
       role: n,
       locked: s
     }), i.map((e, t) => (0, r.jsx)(d.Z, {
-      className: y.permissionsForm,
+      className: O.permissionsForm,
       spec: e,
       permissions: n.permissions,
       locked: s,
@@ -154,7 +154,7 @@ function P(e) {
     locked: s,
     setSelectedSection: l,
     initialSearchQuery: o
-  } = e, [d, u] = i.useState(null != o ? o : ""), m = i.useMemo(() => g.Z.generateGuildPermissionSpec(t), [t]).map(e => E(I({}, e), {
+  } = e, [d, u] = i.useState(null != o ? o : ""), m = i.useMemo(() => p.Z.generateGuildPermissionSpec(t), [t]).map(e => E(I({}, e), {
     permissions: e.permissions.filter(e => {
       let t = d.trimStart().toLowerCase();
       return e.title.toLowerCase().includes(t) || null != e.description && e.description.toString().toLowerCase().includes(t)
@@ -167,11 +167,11 @@ function P(e) {
     handleScroll: S
   } = (0, j.V)(), P = i.useRef(!1);
   return i.useEffect(() => {
-    !P.current && "" !== d.trimStart() && (p.default.track(_.rMx.SEARCH_STARTED, {
+    !P.current && "" !== d.trimStart() && (g.default.track(_.rMx.SEARCH_STARTED, {
       search_type: "Permissions"
     }), P.current = !0)
   }, [d]), (0, r.jsx)(c.yWw, {
-    className: y.scroller,
+    className: O.scroller,
     style: {
       scrollPaddingTop: h
     },
@@ -189,19 +189,19 @@ function P(e) {
           selectedSection: v.ZI.PERMISSIONS,
           setSelectedSection: l
         }), (0, r.jsx)("div", {
-          className: y.noticeContainer,
+          className: O.noticeContainer,
           children: (0, r.jsx)(N.Z, {
             role: n
           })
         }), (0, r.jsx)("div", {
-          className: y.searchContainer,
+          className: O.searchContainer,
           children: (0, r.jsx)(c.E1j, {
             size: c.E1j.Sizes.MEDIUM,
             query: d,
             onChange: u,
             onClear: () => u(""),
-            placeholder: O.NW.string(O.t.OLJAk5),
-            "aria-label": O.NW.string(O.t.OLJAk5)
+            placeholder: y.NW.string(y.t.OLJAk5),
+            "aria-label": y.NW.string(y.t.OLJAk5)
           })
         })]
       }), (0, r.jsx)(T, {

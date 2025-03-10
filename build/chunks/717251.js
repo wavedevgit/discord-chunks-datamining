@@ -20,21 +20,21 @@ function c(e) {
     selected: d = !1,
     subsection: u = null,
     onClick: m,
-    className: p,
-    disabled: g
+    className: g,
+    disabled: p
   } = e;
   return (0, r.jsxs)("div", {
-    className: s()(o.container, p),
+    className: s()(o.container, g),
     children: [(0, r.jsx)(a.P3F, {
       className: s()(o.clickableContainer, {
         [o.noAction]: null == m,
-        [o.disabled]: g
-      }, p),
-      onClick: g ? void 0 : m,
+        [o.disabled]: p
+      }, g),
+      onClick: p ? void 0 : m,
       children: (0, r.jsxs)("div", {
         className: s()(o.backgroundModifierContainer, o[c], {
           [o.selected]: d,
-          [o.disabled]: g,
+          [o.disabled]: p,
           [o.noAction]: null == m
         }),
         children: [(0, r.jsxs)("div", {

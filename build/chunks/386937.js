@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(477690),
   u = n(481060),
   m = n(179360),
-  p = n(129861),
-  g = n(999382),
+  g = n(129861),
+  p = n(999382),
   h = n(733683),
   f = n(237583),
   b = n(899667),
@@ -23,8 +23,8 @@ var r = n(200651),
   N = n(267642),
   v = n(624138),
   _ = n(981631),
-  O = n(388032),
-  y = n(288661);
+  y = n(388032),
+  O = n(288661);
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -104,7 +104,7 @@ class T extends i.Component {
         }
       });
     return (0, r.jsx)(h.Z, {
-      className: i > 0 ? y.progressWithSubscriptions : y.progress,
+      className: i > 0 ? O.progressWithSubscriptions : O.progress,
       progress: i,
       tiers: [s, ...l],
       initialAnimationDelay: 500,
@@ -113,15 +113,15 @@ class T extends i.Component {
   }
   renderTierNone() {
     return (0, r.jsxs)("div", {
-      className: y.tierDefaultUnlocked,
+      className: O.tierDefaultUnlocked,
       ref: this.defaultTierRef,
       children: [(0, r.jsx)(u.R94, {
         type: u.R94.Types.LABEL_BOLD,
-        children: O.NW.string(O.t["76OoX1"])
+        children: y.NW.string(y.t["76OoX1"])
       }), (0, r.jsx)(u.R94, {
         type: u.R94.Types.DESCRIPTION,
-        className: y.tierDefaultUnlockedDescription,
-        children: O.NW.string(O.t.DaYNQU)
+        className: O.tierDefaultUnlockedDescription,
+        children: y.NW.string(y.t.DaYNQU)
       })]
     })
   }
@@ -133,7 +133,7 @@ class T extends i.Component {
     } = this.props;
     return (0, r.jsxs)("div", {
       ref: this.defaultTierRef,
-      className: y.subscribers,
+      className: O.subscribers,
       children: [(0, r.jsx)(f.Z, {
         guildId: null != n ? n : void 0,
         users: e,
@@ -141,8 +141,8 @@ class T extends i.Component {
         renderMoreUsers: this.renderMoreSubscribers,
         max: 5
       }), (0, r.jsx)("div", {
-        className: y.subscriberCount,
-        children: O.NW.format(O.t["0r7snZ"], {
+        className: O.subscriberCount,
+        children: y.NW.format(y.t["0r7snZ"], {
           count: t
         })
       })]
@@ -163,9 +163,9 @@ class T extends i.Component {
     let a = (0, N.vn)(e);
     return (0, r.jsx)("div", {
       children: (0, r.jsxs)("div", {
-        className: y.content,
+        className: O.content,
         children: [this.renderProgressBar(s), (0, r.jsxs)("div", {
-          className: y.tiers,
+          className: O.tiers,
           children: [0 === i ? this.renderTierNone() : this.renderSubscribers(), s.map((n, r, i) => t({
             tier: n,
             tiers: i,
@@ -210,7 +210,7 @@ class T extends i.Component {
     }), C(this, "renderSubscriber", (e, t, n) => {
       var i;
       return null == e ? null : (0, r.jsx)(u.ua7, {
-        text: (0, r.jsx)(p.Z, {
+        text: (0, r.jsx)(g.Z, {
           user: e.user,
           nick: e.nick
         }),
@@ -218,22 +218,22 @@ class T extends i.Component {
         children: n => (0, r.jsx)(u.qEK, E(I({}, n), {
           tabIndex: -1,
           src: null != e ? e.user.getAvatarURL(this.props.guildId, 32) : null,
-          className: a()(y.avatar, t, null != t ? y.subscriberMask : null),
+          className: a()(O.avatar, t, null != t ? O.subscriberMask : null),
           size: u.EFr.SIZE_32
         }))
       }, n)
     }), C(this, "renderSubscribersPopout", () => (0, r.jsx)(u.Ttm, {
-      className: y.subscribersPopout,
+      className: O.subscribersPopout,
       children: this.props.subscribers.map(e => (0, r.jsxs)("div", {
-        className: y.subscribersPopoutUser,
+        className: O.subscribersPopoutUser,
         children: [(0, r.jsx)(u.qEK, {
           src: e.user.getAvatarURL(this.props.guildId, 32),
           "aria-label": e.user.username,
           size: u.EFr.SIZE_32,
-          className: y.avatar
+          className: O.avatar
         }), (0, r.jsx)("div", {
-          className: y.subscribersPopoutUsername,
-          children: (0, r.jsx)(p.Z, {
+          className: O.subscribersPopoutUsername,
+          children: (0, r.jsx)(g.Z, {
             user: e.user,
             nick: e.nick
           })
@@ -244,15 +244,15 @@ class T extends i.Component {
       position: "bottom",
       autoInvert: !1,
       children: t => (0, r.jsx)("div", E(I({
-        className: y.moreSubscribers
+        className: O.moreSubscribers
       }, t), {
         children: e
       }))
     }, n))
   }
 }
-let P = c.ZP.connectStores([g.Z, j.default, b.Z, x.ZP], () => {
-  let e = g.Z.getGuildId(),
+let P = c.ZP.connectStores([p.Z, j.default, b.Z, x.ZP], () => {
+  let e = p.Z.getGuildId(),
     t = null != e ? b.Z.getAppliedGuildBoostsForGuild(e) : null,
     n = o()(null != t ? t : []).uniqBy(e => e.userId),
     r = n.map(t => ({

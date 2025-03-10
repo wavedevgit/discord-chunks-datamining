@@ -405,7 +405,9 @@ class q {
       file_duration_sec: this.metadata.fileDurationSec,
       connection_type: g.Z.getType(),
       effective_connection_speed: g.Z.getEffectiveConnectionSpeed(),
-      service_provider: g.Z.getServiceProvider()
+      service_provider: g.Z.getServiceProvider(),
+      error_message: this.errorMessage,
+      error_code: this.errorCode
     }), this.playTimeSec = 0, this.playWallTimeMs = 0, this.firstPlayWaitingMs = 0, this.stallCount = 0, this.stallMs = 0, this.seekCount = 0, this.seekWaitingMs = 0, this.playbackStartTime = void 0, this.lastPlayingTime = void 0, this.moveToState("not_started")
   }
   updatePlayTime(e) {
@@ -413,7 +415,7 @@ class q {
     this.playTimeSec += Math.max((null !== (t = this.lastPlayingTime) && void 0 !== t ? t : e) - (null !== (n = this.playbackStartTime) && void 0 !== n ? n : 0), 0), this.playWallTimeMs += this.timeInState()
   }
   constructor(e) {
-    D(this, "metadata", void 0), D(this, "playTimeSec", 0), D(this, "playWallTimeMs", 0), D(this, "firstPlayWaitingMs", 0), D(this, "stallCount", 0), D(this, "stallMs", 0), D(this, "seekCount", 0), D(this, "seekWaitingMs", 0), D(this, "stateTime", performance.now()), D(this, "currentState", "not_started"), D(this, "playbackStartTime", void 0), D(this, "lastPlayingTime", void 0), D(this, "analyticsEnabled", void 0), D(this, "onWaiting", e => {
+    D(this, "metadata", void 0), D(this, "playTimeSec", 0), D(this, "playWallTimeMs", 0), D(this, "firstPlayWaitingMs", 0), D(this, "stallCount", 0), D(this, "stallMs", 0), D(this, "seekCount", 0), D(this, "seekWaitingMs", 0), D(this, "errorMessage", null), D(this, "errorCode", null), D(this, "stateTime", performance.now()), D(this, "currentState", "not_started"), D(this, "playbackStartTime", void 0), D(this, "lastPlayingTime", void 0), D(this, "analyticsEnabled", void 0), D(this, "onWaiting", e => {
       switch (this.currentState) {
         case "not_started":
           this.moveToState("not_started_waiting");
@@ -643,39 +645,50 @@ class Q extends(i = a.PureComponent) {
       hideControls: r
     })
   }
+  renderError() {
+    let {
+      error: e
+    } = this.state;
+    return null === e || "" === e ? null : (0, o.jsx)("div", {
+      className: P.errorOverlay,
+      children: (0, o.jsx)("div", {
+        className: P.errorMessage,
+        children: e
+      })
+    })
+  }
   renderVideo() {
     let {
       src: e,
       poster: t,
       forceExternal: n,
-      onError: r,
-      responsive: i,
-      mediaLayoutType: a
+      responsive: r,
+      mediaLayoutType: i
     } = this.props, {
-      playing: s,
-      fullscreen: l
-    } = this.state, c = this.getWidth(), u = this.getHeight();
+      playing: a,
+      fullscreen: s
+    } = this.state, l = this.getWidth(), c = this.getHeight();
     return n ? (0, o.jsx)(_.Z, {
       className: P.video,
       controls: !1,
-      height: u,
+      height: c,
       poster: t,
-      width: c,
-      responsive: i && !l,
-      mediaLayoutType: a,
+      width: l,
+      responsive: r && !s,
+      mediaLayoutType: i,
       playsInline: !0,
-      autoPlay: s
+      autoPlay: a
     }) : (0, o.jsx)(_.Z, {
       className: P.video,
       controls: !1,
       playsInline: !0,
-      autoPlay: s,
-      height: u,
-      responsive: i && !l,
-      mediaLayoutType: l ? C.hV.STATIC : a,
+      autoPlay: a,
+      height: c,
+      responsive: r && !s,
+      mediaLayoutType: s ? C.hV.STATIC : i,
       onClick: this.handleVideoClick,
       onEnded: this.handleEnded,
-      onError: r,
+      onError: this.handleError,
       onWaiting: this._analytics.onWaiting,
       onSeeking: this._analytics.onSeeking,
       onSeeked: this._analytics.onSeeked,
@@ -687,7 +700,7 @@ class Q extends(i = a.PureComponent) {
       poster: t,
       preload: this.state.preload,
       ref: this.mediaRef,
-      width: c,
+      width: l,
       src: e
     })
   }
@@ -834,7 +847,7 @@ class Q extends(i = a.PureComponent) {
           width: t,
           height: e
         },
-        children: [this.renderMetadata(), this.renderVideo(), (0, o.jsx)("div", {
+        children: [this.renderMetadata(), this.renderVideo(), this.renderError(), (0, o.jsx)("div", {
           className: P.playCenter,
           children: (0, o.jsx)(T.Z, {
             className: P.__invalid_playButton,
@@ -854,7 +867,7 @@ class Q extends(i = a.PureComponent) {
       onMouseMove: _ ? this.handleMouseMove : void 0,
       onKeyDown: this.handleKeyDown,
       style: this.getMediaStyle(),
-      children: [this.renderMetadata(), t === B.AUDIO ? this.renderAudio() : this.renderVideo(), this.renderControls(), t === B.VIDEO ? this.renderPlayPausePop() : null, null != u ? (0, o.jsx)("div", {
+      children: [this.renderMetadata(), t === B.AUDIO ? this.renderAudio() : this.renderVideo(), this.renderError(), this.renderControls(), t === B.VIDEO ? this.renderPlayPausePop() : null, null != u ? (0, o.jsx)("div", {
         className: l()({
           [P.overlayContentHidden]: _ || d
         }),
@@ -1020,6 +1033,13 @@ class Q extends(i = a.PureComponent) {
         let n = (e.which - A.yXg.DIGIT_0) / 10;
         t.currentTime = t.duration * n, this.setPlay(!0)
       }
+    }), D(this, "handleError", e => {
+      var t, n, r, i, o;
+      let a = e.currentTarget,
+        s = null;
+      this._analytics.errorCode = null !== (i = null === (t = a.error) || void 0 === t ? void 0 : t.code) && void 0 !== i ? i : null, this._analytics.errorMessage = null !== (o = null === (n = a.error) || void 0 === n ? void 0 : n.message) && void 0 !== o ? o : null, s = (null === (r = a.error) || void 0 === r ? void 0 : r.code) === 4 ? R.NW.string(R.t.l2TVDA) : R.NW.string(R.t.VO4o6O), this.setState({
+        error: s
+      })
     }), this._analytics = new q({
       src: e.src,
       mimeType: null === (n = e.mimeType) || void 0 === n ? void 0 : n.join("/"),
@@ -1046,7 +1066,8 @@ class Q extends(i = a.PureComponent) {
       preload: "none",
       width: Q.minWidth,
       height: Q.minHeight,
-      hovering: !1
+      hovering: !1,
+      error: null
     }
   }
 }

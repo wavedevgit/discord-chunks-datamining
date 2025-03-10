@@ -16,8 +16,8 @@ let u = e => {
       className: s,
       tags: u,
       value: m,
-      onRemoveTag: p,
-      onAddTag: g,
+      onRemoveTag: g,
+      onAddTag: p,
       onAddTagError: h,
       maxTaxLength: f,
       maxTags: b,
@@ -39,42 +39,42 @@ let u = e => {
       }
       return i
     }(e, ["className", "tags", "value", "onRemoveTag", "onAddTag", "onAddTagError", "maxTaxLength", "maxTags", "disabled", "placeholder"]);
-  let [v, _] = i.useState(null != m ? m : ""), O = u.map((e, t) => (0, r.jsxs)("span", {
+  let [v, _] = i.useState(null != m ? m : ""), y = u.map((e, t) => (0, r.jsxs)("span", {
     className: d.tag,
     children: [e, !x && (0, r.jsx)(l.P3F, {
       className: d.closeWrapper,
-      onClick: () => p(t),
+      onClick: () => g(t),
       children: (0, r.jsx)(l.Dio, {
         size: "xs",
         color: "currentColor",
         className: d.close
       })
     })]
-  }, t)), y = i.useCallback(() => {
+  }, t)), O = i.useCallback(() => {
     let e = v.trim();
     if (0 !== e.length) {
       if (null != b && u.length >= b) {
         null == h || h(c.NW.string(c.t.Xx7XeH));
         return
       }
-      g(e), _("")
+      p(e), _("")
     }
-  }, [v, b, g, h, u.length]), C = i.useCallback(e => {
+  }, [v, b, p, h, u.length]), C = i.useCallback(e => {
     switch (e.keyCode) {
       case o.yXg.BACKSPACE:
-        0 === v.length && u.length > 0 && (e.preventDefault(), e.stopPropagation(), p(u.length - 1));
+        0 === v.length && u.length > 0 && (e.preventDefault(), e.stopPropagation(), g(u.length - 1));
         break;
       case o.yXg.ENTER:
       case o.yXg.TAB:
       case o.yXg.COMMA:
-        e.preventDefault(), e.stopPropagation(), y()
+        e.preventDefault(), e.stopPropagation(), O()
     }
-  }, [y, v.length, p, u.length]);
+  }, [O, v.length, g, u.length]);
   return (0, r.jsxs)("div", {
     className: a()(s, d.inputWrapper, {
       [d.disabled]: x
     }),
-    children: [O, (0, r.jsx)(l.oil, (t = function(e) {
+    children: [y, (0, r.jsx)(l.oil, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -100,7 +100,7 @@ let u = e => {
       onChange: _,
       maxLength: f,
       disabled: x,
-      onBlur: y,
+      onBlur: O,
       placeholder: j
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

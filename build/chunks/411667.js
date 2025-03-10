@@ -20,8 +20,8 @@ function d(e) {
       resubmittingEnableRequest: d,
       resubmissionError: u,
       createEnableRequest: m,
-      resubmittedRequest: p,
-      requestRejectedNoticeText: g,
+      resubmittedRequest: g,
+      requestRejectedNoticeText: p,
       reapplyNoticeText: h
     } = (0, i.Z)(n),
     f = n.hasFeature(l.oNc.CREATOR_MONETIZABLE_RESTRICTED),
@@ -31,7 +31,7 @@ function d(e) {
     children: u.getAnyErrorMessage()
   });
   let x = null;
-  return null != g ? x = g : p ? x = o.NW.string(o.t.MyJpJS) : null != h ? (x = h, t = o.NW.string(o.t["YKw/NT"])) : b ? x = o.NW.string(o.t.e2g9sb) : f && (x = o.NW.string(o.t.rxI9sr)), null != x ? (0, r.jsx)(a.Z, {
+  return null != p ? x = p : g ? x = o.NW.string(o.t.MyJpJS) : null != h ? (x = h, t = o.NW.string(o.t["YKw/NT"])) : b ? x = o.NW.string(o.t.e2g9sb) : f && (x = o.NW.string(o.t.rxI9sr)), null != x ? (0, r.jsx)(a.Z, {
     className: c.noticeContainer,
     notice: x,
     ctaLabel: t,

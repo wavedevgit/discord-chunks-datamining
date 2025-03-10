@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(846519),
   u = n(481060),
   m = n(232567),
-  p = n(596454),
-  g = n(410030),
+  g = n(596454),
+  p = n(410030),
   h = n(623624),
   f = n(357156),
   b = n(208049),
@@ -23,8 +23,8 @@ var r = n(200651),
   N = n(747071),
   v = n(286654),
   _ = n(171368),
-  O = n(430824),
-  y = n(594174),
+  y = n(430824),
+  O = n(594174),
   C = n(15385),
   I = n(768581),
   E = n(267642),
@@ -98,7 +98,7 @@ function U(e) {
     currentTier: t,
     availableSounds: n,
     guildId: i
-  } = e, s = O.Z.getGuild(i), a = null != s ? (0, E.nL)(s) : 0;
+  } = e, s = y.Z.getGuild(i), a = null != s ? (0, E.nL)(s) : 0;
   return 0 === t ? (0, r.jsx)(r.Fragment, {
     children: D.NW.format(D.t["7E9Hd3"], {
       slots: n,
@@ -186,7 +186,7 @@ function z(e) {
     return [null !== (e = x.Z.getSoundsForGuild(t.id)) && void 0 !== e ? e : Z.Hy, x.Z.isFetchingSounds() || x.Z.isFetchingDefaultSounds()]
   }), {
     canCreateExpressions: l
-  } = (0, f.XJ)(t), o = i.useRef(null), d = (0, g.ZP)(), m = t.premiumTier, p = (0, E.yw)(t, s, m);
+  } = (0, f.XJ)(t), o = i.useRef(null), d = (0, p.ZP)(), m = t.premiumTier, g = (0, E.yw)(t, s, m);
   i.useEffect(() => {
     (0, b.w)()
   }, []);
@@ -203,7 +203,7 @@ function z(e) {
       var e;
       null === (e = o.current) || void 0 === e || e.pause()
     }, []), a) return (0, r.jsx)(u.$jN, {});
-  let O = L ? (0, r.jsx)(u.zxk, {
+  let y = L ? (0, r.jsx)(u.zxk, {
     onClick: function() {
       (0, u.ZDy)(async () => {
         let {
@@ -214,7 +214,7 @@ function z(e) {
         }))
       })
     },
-    disabled: p <= 0 || !l,
+    disabled: g <= 0 || !l,
     children: D.NW.string(D.t["/uNYPD"])
   }) : (0, r.jsx)(F, {});
   return (0, r.jsxs)(r.Fragment, {
@@ -226,7 +226,7 @@ function z(e) {
         children: D.NW.string(D.t.BohnsL)
       }), (0, r.jsx)("div", {
         className: A.buttons,
-        children: !v && O
+        children: !v && y
       })]
     }), v ? (0, r.jsxs)(u.ubH, {
       theme: d,
@@ -240,7 +240,7 @@ function z(e) {
         note: D.NW.string(D.t.ZhoSBA),
         noteClassName: A.emptyText,
         children: D.NW.string(D.t.I6P1p6)
-      }), O]
+      }), y]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.$i$, {
         className: A.divider
@@ -251,12 +251,12 @@ function z(e) {
         children: (0, r.jsx)(U, {
           guildId: t.id,
           currentTier: m,
-          availableSounds: p
+          availableSounds: g
         })
       }), (0, r.jsx)(w.Z, {
         guild: t,
         numSounds: s.length,
-        isOutOfSlots: 0 === p
+        isOutOfSlots: 0 === g
       }), (0, r.jsxs)("div", {
         className: A.soundTable,
         children: [(0, r.jsxs)("div", {
@@ -287,12 +287,12 @@ function H(e) {
     guild: o
   } = e, {
     soundId: d,
-    name: g,
+    name: p,
     user: h,
     userId: x,
     emojiId: j,
     emojiName: N
-  } = t, O = (0, c.e7)([y.default], () => null != h ? h : y.default.getUser(x), [x, h]), {
+  } = t, y = (0, c.e7)([O.default], () => null != h ? h : O.default.getUser(x), [x, h]), {
     canManageGuildExpression: C
   } = (0, f.XJ)(o), E = i.useMemo(() => C(t), [t, C]), S = null != j || null != N, [P, w] = i.useState(!1), Z = (0, v.z)(t, o.id);
   async function L() {
@@ -306,26 +306,26 @@ function H(e) {
     }
   }
   i.useEffect(() => {
-    null == O && e();
+    null == y && e();
     async function e() {
       await (0, m.PR)(x)
     }
-  }, [O, x]);
+  }, [y, x]);
   let M = i.useCallback(() => {
-      null != O && (0, _.openUserProfileModal)({
-        userId: O.id,
+      null != y && (0, _.openUserProfileModal)({
+        userId: y.id,
         guildId: o.id,
         analyticsLocation: {
           section: R.jXE.GUILD_SETTINGS_SOUNDBOARD
         }
       })
-    }, [O, o.id]),
-    G = T.ZP.useUserTag(O);
+    }, [y, o.id]),
+    G = T.ZP.useUserTag(y);
   return (0, r.jsxs)("div", {
     className: a()(A.row, {
       [A.active]: s
     }),
-    children: [S ? (0, r.jsx)(p.Z, {
+    children: [S ? (0, r.jsx)(g.Z, {
       emojiId: j,
       emojiName: N,
       className: A.emoji
@@ -342,20 +342,20 @@ function H(e) {
       children: (0, r.jsxs)(u.Text, {
         variant: "text-sm/normal",
         className: A.soundName,
-        children: [g, " ", (0, r.jsx)(u.gj8, {
+        children: [p, " ", (0, r.jsx)(u.gj8, {
           size: "md",
           color: "currentColor",
           className: A.soundPreviewIcon
         })]
       })
-    }), null != O && (0, r.jsxs)(u.P3F, {
+    }), null != y && (0, r.jsxs)(u.P3F, {
       className: A.uploader,
       onClick: M,
       children: [(0, r.jsx)(u.qEK, {
         "aria-label": G,
         size: u.EFr.SIZE_24,
         className: A.uploaderAvatar,
-        src: (0, I.ov)(O, !1, 24)
+        src: (0, I.ov)(y, !1, 24)
       }), (0, r.jsx)(u.Text, {
         variant: "text-sm/normal",
         lineClamp: 1,
@@ -387,7 +387,7 @@ function H(e) {
         onClick: function(e) {
           e.stopPropagation(), (0, u.h7j)(e => (0, r.jsx)(u.ConfirmModal, W(k({
             header: D.NW.formatToPlainString(D.t["PR/VbG"], {
-              soundName: g
+              soundName: p
             }),
             confirmText: D.NW.string(D.t.oyYWHB),
             cancelText: D.NW.string(D.t["ETE/oK"]),
@@ -396,7 +396,7 @@ function H(e) {
             children: (0, r.jsx)(u.Text, {
               variant: "text-md/normal",
               children: D.NW.format(D.t["u6+CmJ"], {
-                soundName: g
+                soundName: p
               })
             })
           })))

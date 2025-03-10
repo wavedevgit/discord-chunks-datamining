@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(236413),
   u = n(727072),
   m = n(85960),
-  p = n(65912),
-  g = n(457414),
+  g = n(65912),
+  p = n(457414),
   h = n(154502),
   f = n(295708),
   b = n(273504),
@@ -79,10 +79,10 @@ function _(e) {
     children: s
   })
 }
-let O = (e, t) => () => t(v(N({}, e), {
+let y = (e, t) => () => t(v(N({}, e), {
     enabled: !e.enabled
   })),
-  y = e => {
+  O = e => {
     e.stopPropagation(), e.preventDefault()
   },
   C = e => {
@@ -106,9 +106,9 @@ let O = (e, t) => () => t(v(N({}, e), {
     }(e, ["className", "children"]);
     return (0, r.jsx)(a.P3F, v(N({
       className: t,
-      onClick: y,
-      onMouseDown: y,
-      onMouseUp: y
+      onClick: O,
+      onMouseDown: O,
+      onMouseUp: O
     }, i), {
       children: n
     }))
@@ -120,8 +120,8 @@ function I(e) {
     rule: n,
     onChangeRule: i,
     onContextMenu: s
-  } = e, l = O(n, i), o = e => {
-    y(e), s(e)
+  } = e, l = y(n, i), o = e => {
+    O(e), s(e)
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
@@ -167,12 +167,12 @@ function S(e) {
     rule: t,
     isDefaultRule: n,
     onContextMenu: l
-  } = e, o = (0, g.w)(t.triggerType, t), {
+  } = e, o = (0, p.w)(t.triggerType, t), {
     isLoading: c,
     saveRule: m
-  } = (0, p.w)(), {
+  } = (0, g.w)(), {
     updateRule: h
-  } = (0, u.pH)(t.guildId), [f, b] = i.useState(t.enabled), O = (0, s.throttle)(async (e, n) => {
+  } = (0, u.pH)(t.guildId), [f, b] = i.useState(t.enabled), y = (0, s.throttle)(async (e, n) => {
     if (n.preventDefault(), n.stopPropagation(), !c) {
       let e = v(N({}, t), {
         enabled: !f
@@ -182,7 +182,7 @@ function S(e) {
       null != n && (h(n), b(n.enabled))
     }
   }, 300), I = e => {
-    y(e), l(e)
+    O(e), l(e)
   };
   if (null == o) return null;
   let {
@@ -225,7 +225,7 @@ function S(e) {
       className: j.actionContainer,
       children: [(0, r.jsx)(a.rsf, {
         className: j.toggle,
-        onChange: O,
+        onChange: y,
         checked: null != f && f
       }), !n && (0, r.jsx)(a.ua7, {
         text: x.NW.string(x.t.UKOtz8),
@@ -249,7 +249,7 @@ function T(e) {
   let {
     triggerType: t,
     onSetupRule: n
-  } = e, s = i.useMemo(() => (0, g.w)(t), [t]);
+  } = e, s = i.useMemo(() => (0, p.w)(t), [t]);
   if (null == s) return null;
   let {
     headerText: l,
@@ -310,11 +310,11 @@ function P(e) {
         rule: t
       }, n))
     }))
-  }, p = (0, r.jsx)(T, {
+  }, g = (0, r.jsx)(T, {
     triggerType: i,
     onSetupRule: d
   });
-  return null == t || c || (p = s ? (0, r.jsx)(I, {
+  return null == t || c || (g = s ? (0, r.jsx)(I, {
     rule: t,
     onChangeRule: u,
     onContextMenu: m
@@ -325,6 +325,6 @@ function P(e) {
   })), (0, r.jsx)(a.P3F, {
     className: j.mainContainer,
     onContextMenu: m,
-    children: p
+    children: g
   })
 }

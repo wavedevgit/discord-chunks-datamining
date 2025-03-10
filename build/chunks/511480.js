@@ -14,8 +14,8 @@ var r = n(200651),
   d = n(456268),
   u = n(134432),
   m = n(345861),
-  p = n(208567),
-  g = n(984933),
+  g = n(208567),
+  p = n(984933),
   h = n(496675),
   f = n(699516),
   b = n(594174),
@@ -24,8 +24,8 @@ var r = n(200651),
   N = n(434404),
   v = n(999382),
   _ = n(718157),
-  O = n(450474),
-  y = n(209054),
+  y = n(450474),
+  O = n(209054),
   C = n(118215),
   I = n(166184),
   E = n(96788),
@@ -112,7 +112,7 @@ class U extends i.PureComponent {
       guild: e
     } = this.props;
     if (null != e) {
-      (0, y.k)(e.id).then(() => {
+      (0, O.k)(e.id).then(() => {
         (0, E.V)(e.id)
       }), (0, d.le)(), (0, d.aC)(e.id);
       let t = await (0, j.Eg)(e.id);
@@ -198,7 +198,7 @@ class U extends i.PureComponent {
           })]
         }), (0, r.jsx)("div", {
           className: k.imageUploaderWrapper,
-          children: (0, r.jsx)(p.Z, {
+          children: (0, r.jsx)(g.Z, {
             image: e.discoverySplash,
             makeURL: t => x.ZP.getGuildDiscoverySplashURL({
               id: e.id,
@@ -307,7 +307,7 @@ class U extends i.PureComponent {
         children: [(0, r.jsx)(a.vwX, {
           className: k.formTitle,
           children: A.NW.string(A.t.oOPlPD)
-        }), (0, r.jsx)(O.Z, {
+        }), (0, r.jsx)(y.Z, {
           guild: i,
           guildMetadata: t
         })]
@@ -451,14 +451,14 @@ class U extends i.PureComponent {
     })
   }
 }
-let B = s.ZP.connectStores([v.Z, h.Z, C.ZP, g.ZP, b.default, f.Z], () => {
+let B = s.ZP.connectStores([v.Z, h.Z, C.ZP, p.ZP, b.default, f.Z], () => {
   let {
     guild: e,
     errors: t,
     submitting: n,
     guildMetadata: r
-  } = v.Z.getProps(), i = h.Z.can(D.Plq.MANAGE_GUILD, e), s = h.Z.can(D.Plq.ADMINISTRATOR, e), a = null != e ? C.ZP.getDiscoveryChecklist(e.id) : null, l = null != e ? g.ZP.getChannels(e.id) : null, o = [];
-  return null != l && l[g.sH].forEach(e => {
+  } = v.Z.getProps(), i = h.Z.can(D.Plq.MANAGE_GUILD, e), s = h.Z.can(D.Plq.ADMINISTRATOR, e), a = null != e ? C.ZP.getDiscoveryChecklist(e.id) : null, l = null != e ? p.ZP.getChannels(e.id) : null, o = [];
+  return null != l && l[p.sH].forEach(e => {
     let {
       channel: t
     } = e;

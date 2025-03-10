@@ -1,7 +1,7 @@
 /** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => O
 }), n(301563);
 var r = n(200651),
   i = n(192379),
@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(686369),
   u = n(813197),
   m = n(430824),
-  p = n(768581),
-  g = n(921948),
+  g = n(768581),
+  p = n(921948),
   h = n(434404),
   f = n(981631),
   b = n(570911),
@@ -81,7 +81,7 @@ function _(e) {
   })
 }
 
-function O(e) {
+function y(e) {
   let {
     isDiscoverable: t,
     profile: n,
@@ -90,10 +90,10 @@ function O(e) {
   } = e, o = null != n.customBanner, d = i.useMemo(() => {
     if (null == n.customBanner) return null;
     let e = n.customBanner;
-    return p.ff.test(e) ? e : p.ZP.getGuildDiscoverySplashURL({
+    return g.ff.test(e) ? e : g.ZP.getGuildDiscoverySplashURL({
       id: n.id,
       splash: n.customBanner,
-      size: 300 * (0, g.Z)()
+      size: 300 * (0, p.Z)()
     })
   }, [n]);
   if (!t) return null;
@@ -137,18 +137,18 @@ function O(e) {
   })
 }
 
-function y(e) {
+function O(e) {
   var t;
   let {
     profile: n,
     onCustomBannerChange: s,
     canManageGuild: o
-  } = e, u = (0, l.e7)([m.Z], () => m.Z.getGuild(n.id)), p = null !== (t = null == u ? void 0 : u.hasFeature(f.oNc.DISCOVERABLE)) && void 0 !== t && t, g = n.id, y = i.useCallback(e => () => {
-    h.Z.updateGuildProfile(g, {
+  } = e, u = (0, l.e7)([m.Z], () => m.Z.getGuild(n.id)), g = null !== (t = null == u ? void 0 : u.hasFeature(f.oNc.DISCOVERABLE)) && void 0 !== t && t, p = n.id, O = i.useCallback(e => () => {
+    h.Z.updateGuildProfile(p, {
       brandColorPrimary: e,
       customBanner: null
     })
-  }, [g]), C = i.useCallback(e => (!p || null == n.customBanner) && e === n.brandColorPrimary, [n, p]);
+  }, [p]), C = i.useCallback(e => (!g || null == n.customBanner) && e === n.brandColorPrimary, [n, g]);
   return (0, r.jsx)(c.hjN, {
     title: x.NW.string(x.t.BSVog4),
     children: (0, r.jsxs)("div", {
@@ -156,7 +156,7 @@ function y(e) {
       children: [(0, r.jsx)(_, {
         profile: n,
         canManageGuild: o,
-        handleClick: y(null)
+        handleClick: O(null)
       }), b.cb.map(e => {
         let {
           name: t,
@@ -168,7 +168,7 @@ function y(e) {
             "aria-disabled": !o,
             tabIndex: o ? 0 : -1,
             "aria-label": t,
-            onClick: o ? y(n) : void 0,
+            onClick: o ? O(n) : void 0,
             style: {
               background: (0, d.d)(n)
             },
@@ -182,9 +182,9 @@ function y(e) {
             })
           }))
         }, t)
-      }), (0, r.jsx)(O, {
+      }), (0, r.jsx)(y, {
         canManageGuild: o,
-        isDiscoverable: p,
+        isDiscoverable: g,
         profile: n,
         onCustomBannerChange: s
       })]

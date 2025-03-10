@@ -14,8 +14,8 @@ var r = n(200651),
   d = n(852860),
   u = n(688465),
   m = n(970061),
-  p = n(456268),
-  g = n(134432),
+  g = n(456268),
+  p = n(134432),
   h = n(813197),
   f = n(208567),
   b = n(496675),
@@ -24,8 +24,8 @@ var r = n(200651),
   N = n(434404),
   v = n(999382),
   _ = n(718157),
-  O = n(450474),
-  y = n(190287),
+  y = n(450474),
+  O = n(190287),
   C = n(465520),
   I = n(981631),
   E = n(388032),
@@ -50,7 +50,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
         null != e && (N.Z.saveGuild(e.id, {
           discoverySplash: e.discoverySplash,
           description: e.description
-        }), (0, p.Vv)({
+        }), (0, g.Vv)({
           guildId: e.id,
           primaryCategoryId: t.primaryCategoryId,
           keywords: t.keywords,
@@ -71,7 +71,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       n = (0, s.e7)([v.Z], () => v.Z.getGuild()),
       [d, P] = i.useState(!1);
     i.useEffect(() => {
-      d || null == n || ((0, p.le)(), (0, p.aC)(n.id), (0, p.i3)(n.id), P(!0))
+      d || null == n || ((0, g.le)(), (0, g.aC)(n.id), (0, g.i3)(n.id), P(!0))
     }, [n, d]);
     let {
       canManageGuild: w
@@ -117,8 +117,8 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
           discoverySplash: e
         })
       },
-      Y = e => {
-        (0, p.W1)(n.id, e), e ? (0, p.Vv)({
+      K = e => {
+        (0, g.W1)(n.id, e), e ? (0, g.Vv)({
           guildId: n.id,
           primaryCategoryId: Z.primaryCategoryId,
           keywords: Z.keywords,
@@ -129,7 +129,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
           reasonsToJoin: Z.reasonsToJoin,
           socialLinks: Z.socialLinks,
           about: Z.about
-        }) : (0, p.Vv)({
+        }) : (0, g.Vv)({
           guildId: n.id,
           primaryCategoryId: Z.primaryCategoryId,
           keywords: Z.keywords,
@@ -145,17 +145,17 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
           description: n.description
         })
       },
-      K = (e, t) => {
+      Y = (e, t) => {
         let r = [...Z.socialLinks],
           i = [...U],
           s = [...A];
-        i[t] = e, r[t] = C.z[e].baseUrl, s[t] = !0, k(s), B(i), L(s.every(e => !0 === e)), (0, p.t$)(n.id, r)
+        i[t] = e, r[t] = C.z[e].baseUrl, s[t] = !0, k(s), B(i), L(s.every(e => !0 === e)), (0, g.t$)(n.id, r)
       },
       q = (e, t) => {
         let r = [...Z.socialLinks],
           i = r[t],
           s = e;
-        0 === i.length && s.length > 1 && !1 === RegExp("^https?:").test(s) && (s = "https://" + s), !/\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(s) && (r[t] = s, (0, p.t$)(n.id, r))
+        0 === i.length && s.length > 1 && !1 === RegExp("^https?:").test(s) && (s = "https://" + s), !/\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(s) && (r[t] = s, (0, g.t$)(n.id, r))
       },
       X = e => {
         let t = [...M];
@@ -165,7 +165,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
         let i = [...U];
         i.splice(e, 1), B(i);
         let s = [...Z.socialLinks];
-        s.splice(e, 1), (0, p.t$)(n.id, s)
+        s.splice(e, 1), (0, g.t$)(n.id, s)
       },
       Q = e => {
         let {
@@ -270,7 +270,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         children: [(0, r.jsx)(l.vwX, {
                           className: S.formTitle,
                           children: E.NW.string(E.t.oOPlPD)
-                        }), (0, r.jsx)(O.Z, {
+                        }), (0, r.jsx)(y.Z, {
                           guild: n,
                           guildMetadata: Z,
                           disabled: !w
@@ -309,7 +309,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           makeURL: e => x.ZP.getGuildDiscoverySplashURL({
                             id: n.id,
                             splash: e,
-                            size: 512 * (0, g.x_)()
+                            size: 512 * (0, p.x_)()
                           }),
                           disabled: !w,
                           onChange: V,
@@ -363,7 +363,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         children: E.NW.string(E.t.esnBnZ)
                       }), (0, r.jsx)("div", {
                         className: S.reasonToJoin,
-                        children: (0, r.jsx)(y.Z, {
+                        children: (0, r.jsx)(O.Z, {
                           reasonMinLength: 10,
                           reasonMaxLength: 128,
                           guildId: n.id,
@@ -392,7 +392,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         value: Z.about,
                         placeholder: E.NW.string(E.t.TduTbm),
                         onChange: e => {
-                          (0, p.mA)(n.id, e)
+                          (0, g.mA)(n.id, e)
                         },
                         minLength: 300,
                         maxLength: 2400,
@@ -425,7 +425,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         options: F(U[t]),
                         placeholder: E.NW.string(E.t.xSALIC),
                         value: U[t],
-                        onChange: e => K(e, t),
+                        onChange: e => Y(e, t),
                         isDisabled: !w
                       }, "dropdown-" + t), (0, r.jsx)(l.oil, {
                         value: e,
@@ -460,7 +460,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       onClick: () => {
                         if (Z.socialLinks.length < 9) {
                           let e = [...Z.socialLinks];
-                          (0, p.t$)(n.id, e.concat("")), B(U.concat(""))
+                          (0, g.t$)(n.id, e.concat("")), B(U.concat(""))
                         }
                       },
                       disabled: !w || Z.socialLinks.length >= 9,
@@ -480,7 +480,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       }), (0, r.jsx)(l.zxk, {
                         size: l.zxk.Sizes.SMALL,
                         color: l.zxk.Colors.RED,
-                        onClick: () => Y(!1),
+                        onClick: () => K(!1),
                         disabled: !w,
                         children: E.NW.string(E.t["DCHd/P"])
                       })]
@@ -496,7 +496,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     title: E.NW.string(E.t["2kCyn5"]),
                     children: $,
                     buttonLabel: E.NW.string(E.t.tVK6S0),
-                    buttonCallback: () => Y(!0),
+                    buttonCallback: () => K(!0),
                     disabled: !w || !W
                   })
                 })]

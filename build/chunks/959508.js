@@ -1,7 +1,7 @@
 /** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
-  Z: () => O
+  Z: () => y
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(710344),
   u = n(637853),
   m = n(107862),
-  p = n(259580),
-  g = n(823379),
+  g = n(259580),
+  p = n(823379),
   h = n(889369),
   f = n(570961),
   b = n(208665),
@@ -26,14 +26,14 @@ let _ = {
   optionErrors: []
 };
 
-function O(e) {
+function y(e) {
   var t;
   let {
     guild: n,
     prompt: s,
     disableAutofocus: d,
     promptIndex: x,
-    dragIndex: O,
+    dragIndex: y,
     includeCount: I,
     singleColumn: E,
     onPromptDragComplete: S,
@@ -48,7 +48,7 @@ function O(e) {
     setIsDraggable: W
   } = (0, c.Z)({
     type: "ONBOARDING_PROMPT_CARD",
-    index: O,
+    index: y,
     optionId: s.id,
     onDragStart: T,
     onDragComplete: S,
@@ -56,14 +56,14 @@ function O(e) {
   }), L = (0, l.cj)([b.Z], () => {
     var e;
     return null !== (e = b.Z.errors[x]) && void 0 !== e ? e : _
-  }), [M, G] = i.useState(!1), [U, B] = i.useState(!1), F = null !== (t = L.options) && void 0 !== t ? t : L.optionErrors.filter(g.lm)[0], z = L.config, H = w && s.options.length >= j.fY, V = (0, u.kl)(n.id, Array.from(R), [s]).length - R.size, Y = i.useRef(null), K = i.useRef(x);
+  }), [M, G] = i.useState(!1), [U, B] = i.useState(!1), F = null !== (t = L.options) && void 0 !== t ? t : L.optionErrors.filter(p.lm)[0], z = L.config, H = w && s.options.length >= j.fY, V = (0, u.kl)(n.id, Array.from(R), [s]).length - R.size, K = i.useRef(null), Y = i.useRef(x);
   return (i.useEffect(() => {
-    K.current = x
+    Y.current = x
   }), i.useLayoutEffect(() => {
     setTimeout(() => {
-      if (0 === K.current && !d) {
+      if (0 === Y.current && !d) {
         var e;
-        null === (e = Y.current) || void 0 === e || e.focus()
+        null === (e = K.current) || void 0 === e || e.focus()
       }
     }, 0)
   }, [d]), M) ? (0, r.jsx)(o.tEY, {
@@ -101,8 +101,8 @@ function O(e) {
       }), (0, r.jsx)(o.P3F, {
         className: v.collapseButton,
         onClick: () => G(!1),
-        children: (0, r.jsx)(p.Z, {
-          direction: p.Z.Directions.DOWN,
+        children: (0, r.jsx)(g.Z, {
+          direction: g.Z.Directions.DOWN,
           height: 16,
           width: 16
         })
@@ -149,7 +149,7 @@ function O(e) {
       }), (0, r.jsx)(o.oil, {
         className: v.title,
         inputClassName: v.titleInput,
-        inputRef: Y,
+        inputRef: K,
         value: s.title,
         onChange: e => (0, f.Kk)(n, s.id, {
           title: e
@@ -157,7 +157,7 @@ function O(e) {
         placeholder: N.NW.string(N.t.QMCuCg),
         maxLength: j.iU,
         error: L.title
-      }), (0, r.jsx)(y, {
+      }), (0, r.jsx)(O, {
         prompt: s,
         guild: n
       }), (0, r.jsx)(o.Text, {
@@ -214,8 +214,8 @@ function O(e) {
         }), (0, r.jsx)(o.P3F, {
           className: v.collapseButton,
           onClick: () => G(!0),
-          children: (0, r.jsx)(p.Z, {
-            direction: p.Z.Directions.UP,
+          children: (0, r.jsx)(g.Z, {
+            direction: g.Z.Directions.UP,
             height: 16,
             width: 16
           })
@@ -238,7 +238,7 @@ function O(e) {
   })
 }
 
-function y(e) {
+function O(e) {
   let {
     prompt: t,
     guild: n
@@ -284,7 +284,7 @@ function C(e) {
   } = (0, m.Ug)(t.id), o = l ? j.qm : j.M$, {
     handleDragStart: c,
     handleDragReset: u,
-    handleDragComplete: p
+    handleDragComplete: g
   } = (0, d.Z)(n.options, e => (0, f.Kk)(t, n.id, {
     options: e
   }));
@@ -297,7 +297,7 @@ function C(e) {
       singleColumn: s,
       option: e,
       onDragStart: c,
-      onDragComplete: p,
+      onDragComplete: g,
       onDragReset: u,
       hasError: null != a.optionErrors[l]
     }, e.id)), n.options.length < o ? (0, r.jsx)(x.B, {

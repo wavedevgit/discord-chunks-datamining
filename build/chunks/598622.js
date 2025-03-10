@@ -14,8 +14,8 @@ var i = n(63568),
   d = n(195189),
   u = n(122051),
   m = n(3896),
-  p = n(981631),
-  g = n(388032);
+  g = n(981631),
+  p = n(388032);
 let h = e => {
   let {
     enabled: t
@@ -36,24 +36,24 @@ let h = e => {
     enabled: (0, s.Dc)(e)
   }, {
     renderComponent: () => (0, r.jsx)(d.Z, {
-      title: g.NW.string(g.t.QiONLy),
-      details: g.NW.string(g.t.dSRTMD)
+      title: p.NW.string(p.t.QiONLy),
+      details: p.NW.string(p.t.dSRTMD)
     }, "hide-suspicious-dms"),
     enabled: !0
   }, {
     renderComponent: () => (0, r.jsx)(d.Z, {
-      title: g.NW.string(g.t["f+8F8P"]),
-      details: g.NW.string(g.t.qChrIy)
+      title: p.NW.string(p.t["f+8F8P"]),
+      details: p.NW.string(p.t.qChrIy)
     }, "filter-unknown-dms"),
     enabled: !0
   }, {
     renderComponent: () => (0, r.jsx)(d.Z, {
-      title: g.NW.string(g.t.EkSAHR)
+      title: p.NW.string(p.t.EkSAHR)
     }, "outbound-links-warn"),
     enabled: !0
   }, {
     renderComponent: () => (0, r.jsx)(d.Z, {
-      title: g.NW.string(g.t["7cAQmp"])
+      title: p.NW.string(p.t["7cAQmp"])
     }, "delete-spam"),
     enabled: !0
   }].filter(e => null != e);
@@ -62,15 +62,15 @@ let h = e => {
       renderComponent: () => (0, r.jsx)(c.Z, {
         guild: e
       }, "raid-alerts"),
-      enabled: !e.hasFeature(p.oNc.RAID_ALERTS_DISABLED)
+      enabled: !e.hasFeature(g.oNc.RAID_ALERTS_DISABLED)
     }, {
       renderComponent: () => (0, r.jsx)(d.Z, {
-        title: g.NW.string(g.t.gOkFfH)
+        title: p.NW.string(p.t.gOkFfH)
       }, "captcha-suspicious-joins"),
       enabled: !0
     }, {
       renderComponent: () => (0, r.jsx)(d.Z, {
-        title: g.NW.string(g.t.r3esyM)
+        title: p.NW.string(p.t.r3esyM)
       }, "captcha-raid-joins"),
       enabled: !0
     }],
@@ -79,7 +79,7 @@ let h = e => {
       renderComponent: () => (0, r.jsx)(l.Z, {
         guild: e
       }, "guild-mfa"),
-      enabled: e.mfaLevel === p.BpS.ELEVATED
+      enabled: e.mfaLevel === g.BpS.ELEVATED
     }, {
       renderComponent: () => (0, r.jsx)(o.Z, {
         guild: e

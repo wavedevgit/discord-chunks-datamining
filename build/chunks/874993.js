@@ -1,7 +1,7 @@
 /** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => O
 }), n(47120), n(86693), n(536091), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(823379),
   u = n(63063),
   m = n(426563),
-  p = n(727072),
-  g = n(85960),
+  g = n(727072),
+  p = n(85960),
   h = n(577330),
   f = n(65912),
   b = n(51248),
@@ -23,12 +23,12 @@ var r = n(200651),
   N = n(273504),
   v = n(981631),
   _ = n(388032),
-  O = n(885189);
+  y = n(885189);
 
-function y(e) {
+function O(e) {
   var t, n;
   let {
-    guildId: y,
+    guildId: O,
     setPreventNavigation: C = () => {}
   } = e, {
     editingRule: I,
@@ -36,11 +36,11 @@ function y(e) {
   } = (0, f.V)(), {
     guild: S,
     subsection: T
-  } = (0, s.cj)([o.Z], () => o.Z.getProps()), P = null !== (n = null !== (t = null == S ? void 0 : S.id) && void 0 !== t ? t : y) && void 0 !== n ? n : v.lds, w = null != I, [R] = (0, p.RD)(P), {
+  } = (0, s.cj)([o.Z], () => o.Z.getProps()), P = null !== (n = null !== (t = null == S ? void 0 : S.id) && void 0 !== t ? t : O) && void 0 !== n ? n : v.lds, w = null != I, [R] = (0, g.RD)(P), {
     rulesByTriggerType: Z
-  } = (0, p.pH)(P), D = {
-    [g.vh.MEMBERS]: _.NW.string(_.t.sx4E5u),
-    [g.vh.CONTENT]: _.NW.string(_.t.fphZb2)
+  } = (0, g.pH)(P), D = {
+    [p.vh.MEMBERS]: _.NW.string(_.t.sx4E5u),
+    [p.vh.CONTENT]: _.NW.string(_.t.fphZb2)
   }, A = i.useMemo(() => Object.values(null != Z ? Z : {}).flat().filter(d.lm), [Z]), k = {
     isInEditMode: w,
     setEditingRule: E
@@ -64,7 +64,7 @@ function y(e) {
           return n === e
         })) || void 0 === n ? void 0 : n.name) && void 0 !== r ? r : null
       }
-      return null != t ? g.I6[t].getDefaultRuleName() : null
+      return null != t ? p.I6[t].getDefaultRuleName() : null
     }, [A]),
     M = i.useMemo(() => {
       var e, t;
@@ -73,7 +73,7 @@ function y(e) {
   i.useEffect(() => {
     C(w, (0, j.af)(M))
   }, [C, w, M]);
-  let G = (0, g.Z6)(P),
+  let G = (0, p.Z6)(P),
     U = e => (0, r.jsx)(r.Fragment, {
       children: e.map(e => {
         var t;
@@ -89,43 +89,43 @@ function y(e) {
     title: _.NW.string(_.t.uRelg4),
     tag: "h1",
     children: [(0, r.jsxs)("div", {
-      className: O.descriptionContainer,
+      className: y.descriptionContainer,
       children: [(0, r.jsxs)(l.hjN, {
         tag: "h3",
-        className: O.description,
-        titleClassName: O.descriptionHeader,
+        className: y.description,
+        titleClassName: y.descriptionHeader,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-md/medium",
           color: "header-secondary",
           children: _.NW.string(_.t.EwuSCQ)
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
-          className: O.helpUrl,
+          className: y.helpUrl,
           children: _.NW.format(_.t["B+sgGh"], {
             helpUrl: u.Z.getArticleURL(v.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
           })
         })]
       }), (0, r.jsxs)("div", {
-        className: O.descriptionAvatarContainer,
+        className: y.descriptionAvatarContainer,
         children: [(0, r.jsx)(l.qEK, {
           src: (0, m.j)(),
           size: l.EFr.SIZE_80,
           "aria-label": _.NW.string(_.t.hG1StL)
         }), (0, r.jsx)(l.IGR, {
           text: (0, r.jsxs)("div", {
-            className: O.automodBadgeText,
+            className: y.automodBadgeText,
             children: [(0, r.jsx)(l.sV5, {
               size: "xxs",
               color: "currentColor",
-              className: O.checkmarkIcon
+              className: y.checkmarkIcon
             }), (0, r.jsx)(l.Text, {
               variant: "text-xs/bold",
-              className: O.automodText,
+              className: y.automodText,
               children: _.NW.string(_.t.hG1StL)
             })]
           }),
           color: a.Z.unsafe_rawColors.BRAND_500.css,
-          className: O.textBadge
+          className: y.textBadge
         })]
       })]
     }), R ? (0, r.jsx)(h.Z, {}) : Object.entries(G).map(e => {
@@ -133,7 +133,7 @@ function y(e) {
       if (0 === n.length) return (0, r.jsx)(i.Fragment, {}, t);
       let s = null != D[t] ? (0, r.jsx)(l.hjN, {
         tag: "h3",
-        className: O.categoryHeader,
+        className: y.categoryHeader,
         children: (0, r.jsx)(l.Text, {
           variant: "text-lg/normal",
           color: "header-primary",
@@ -141,18 +141,18 @@ function y(e) {
         })
       }) : null;
       return (0, r.jsxs)("div", {
-        className: O.categoryContainer,
+        className: y.categoryContainer,
         children: [s, U(n)]
       }, t)
     }), null != S && (0, r.jsx)(c.k0, {
       guild: S,
       withDivider: !1,
-      className: O.explicitContentFilterSection
+      className: y.explicitContentFilterSection
     }), (0, r.jsx)(b.Z, {
       guildId: P,
       existingRules: A
     }), w && (0, r.jsx)("div", {
-      className: O.endSpacer
+      className: y.endSpacer
     })]
   })
 }

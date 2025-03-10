@@ -1,7 +1,7 @@
 /** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => p
 }), n(266796);
 var r = n(200651),
   i = n(120356),
@@ -13,7 +13,7 @@ var r = n(200651),
   d = n(388032),
   u = n(935921);
 let m = [o.ZD.LEAF, o.ZD.SWORD, o.ZD.HEART, o.ZD.FIRE, o.ZD.WATER_DROP, o.ZD.SKULL, o.ZD.MOON, o.ZD.LIGHTNING, o.ZD.COMPASS, o.ZD.TOADSTOOL],
-  p = [{
+  g = [{
     primary: "#ff1c90",
     secondary: "#ff7fc0"
   }, {
@@ -53,7 +53,7 @@ let m = [o.ZD.LEAF, o.ZD.SWORD, o.ZD.HEART, o.ZD.FIRE, o.ZD.WATER_DROP, o.ZD.SKU
     primary: "#222222",
     secondary: "#cccccc"
   }],
-  g = function() {
+  p = function() {
     return (0, d.j1)(c.M), (0, r.jsxs)("div", {
       className: u.leftContent,
       children: [(0, r.jsx)(a.X6q, {
@@ -104,8 +104,8 @@ let m = [o.ZD.LEAF, o.ZD.SWORD, o.ZD.HEART, o.ZD.FIRE, o.ZD.WATER_DROP, o.ZD.SKU
                 badge: m[0],
                 width: 40,
                 height: 40,
-                primaryTintColor: p[0].primary,
-                secondaryTintColor: p[0].secondary
+                primaryTintColor: g[0].primary,
+                secondaryTintColor: g[0].secondary
               })
             })
           }), (0, r.jsx)("div", {
@@ -142,7 +142,7 @@ let m = [o.ZD.LEAF, o.ZD.SWORD, o.ZD.HEART, o.ZD.FIRE, o.ZD.WATER_DROP, o.ZD.SKU
           children: d.NW.string(c.Z.zSbMdX)
         }), (0, r.jsx)("div", {
           className: u.pickerGrid,
-          children: p.map(e => {
+          children: g.map(e => {
             let {
               primary: t,
               secondary: n

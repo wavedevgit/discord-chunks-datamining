@@ -14,8 +14,8 @@ var i = n(780384),
   d = n(934961),
   u = n(568294),
   m = n(867861),
-  p = n(860790),
-  g = n(268953),
+  g = n(860790),
+  p = n(268953),
   h = n(487703),
   f = n(458050),
   b = n(334364),
@@ -129,7 +129,7 @@ function v() {
         length: 12
       }), (0, r.jsx)("img", {
         className: c.roundAvatar,
-        src: p,
+        src: g,
         alt: ""
       }), (0, r.jsx)(t, {
         horizontal: !0,
@@ -141,7 +141,7 @@ function v() {
         length: 12
       }), (0, r.jsx)("img", {
         className: c.roundAvatar,
-        src: g,
+        src: p,
         alt: ""
       })]
     })]
@@ -163,7 +163,7 @@ function _() {
   })
 }
 
-function O() {
+function y() {
   return (0, r.jsxs)("div", {
     className: c.followerBenefitCard,
     children: [(0, r.jsx)(s.Text, {
@@ -183,7 +183,7 @@ function O() {
   })
 }
 
-function y() {
+function O() {
   let e = (0, a.ZP)();
   return (0, r.jsxs)("div", {
     className: c.revenueShareBenefitCard,
@@ -219,7 +219,7 @@ function C() {
       size: 24
     }), (0, r.jsxs)("div", {
       className: c.creatorBenefitsContainer,
-      children: [(0, r.jsx)(_, {}), (0, r.jsx)(O, {}), (0, r.jsx)(y, {})]
+      children: [(0, r.jsx)(_, {}), (0, r.jsx)(y, {}), (0, r.jsx)(O, {})]
     })]
   })
 }

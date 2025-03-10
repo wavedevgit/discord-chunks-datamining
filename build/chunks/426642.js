@@ -22,7 +22,7 @@ let u = e => {
     icon: d,
     description: u,
     color: m,
-    tooltip: p
+    tooltip: g
   } = {
     0: {
       icon: a.gm1,
@@ -77,7 +77,7 @@ let u = e => {
       })]
     }), (0, i.jsx)(a.DY3, {
       position: "right",
-      text: p,
+      text: g,
       children: (0, i.jsx)(a.P4T, {
         size: "custom",
         width: 20,

@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(774078),
   u = n(15640),
   m = n(774380),
-  p = n(404270),
-  g = n(174604),
+  g = n(404270),
+  p = n(174604),
   h = n(386937),
   f = n(316350),
   b = n(899667),
@@ -23,8 +23,8 @@ var r = n(200651),
   N = n(63063),
   v = n(999382),
   _ = n(981631),
-  O = n(388032),
-  y = n(324358);
+  y = n(388032),
+  O = n(324358);
 
 function C(e) {
   let {
@@ -35,10 +35,10 @@ function C(e) {
     days: i,
     hours: s
   } = (0, d.Z)(t);
-  return n <= 0 ? null : 0 === i && 0 === s ? O.NW.format(O.t.kF0HER, {
+  return n <= 0 ? null : 0 === i && 0 === s ? y.NW.format(y.t.kF0HER, {
     tierName: r,
     numPremiumSubscriptions: n
-  }) : O.NW.format(O.t.neDJho, {
+  }) : y.NW.format(y.t.neDJho, {
     days: i,
     hours: s,
     tierName: r,
@@ -56,8 +56,8 @@ function I(e) {
   return (0, r.jsxs)(a.Wn, {
     messageType: a.QYI.WARNING,
     children: [(0, r.jsx)("div", {
-      className: y.guildBoostingGracePeriodTitle,
-      children: O.NW.format(O.t.LG7vvr, {})
+      className: O.guildBoostingGracePeriodTitle,
+      children: y.NW.format(y.t.LG7vvr, {})
     }), (0, r.jsx)(C, {
       endsAt: i,
       appliedGuildBoostsToMaintain: l,
@@ -98,25 +98,25 @@ function S() {
     children: [(0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(a.vwX, {
         tag: a.RB0.H1,
-        children: O.NW.string(O.t.nLovSU)
+        children: y.NW.string(y.t.nLovSU)
       }), null != t && null != e ? (0, r.jsx)(I, {
         appliedGuildBoosts: t,
         guildId: e.id
       }) : null, (0, r.jsx)(a.R94, {
         type: a.R94.Types.DESCRIPTION,
-        className: y.titleBlurb,
-        children: O.NW.format(O.t.hLOkp6, {
+        className: O.titleBlurb,
+        children: y.NW.format(y.t.hLOkp6, {
           helpdeskArticle: N.Z.getArticleURL(_.BhN.GUILD_SUBSCRIPTIONS)
         })
       })]
-    }), null != e && (0, r.jsx)(g.Z, {
+    }), null != e && (0, r.jsx)(p.Z, {
       guild: e
     }), (0, r.jsx)(h.Z, {
       tiers: (0, j.cP)(null != e && e.hasFeature(_.oNc.COMMUNITY) && e.maxStageVideoChannelUsers >= _.B9o),
       renderTier: E
     }), (0, r.jsx)("div", {
-      className: y.divider
-    }), n ? (0, r.jsx)(p.Z, {}) : null, n ? (0, r.jsx)(m.Z, {
+      className: O.divider
+    }), n ? (0, r.jsx)(g.Z, {}) : null, n ? (0, r.jsx)(m.Z, {
       onOpenPremiumClick: () => void x.default.track(_.rMx.PREMIUM_PROMOTION_OPENED, {
         location: {
           page: _.ZY5.GUILD_SETTINGS,

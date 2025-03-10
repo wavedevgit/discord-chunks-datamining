@@ -2,7 +2,7 @@
 "use strict";
 let r, i, o, a, s, l, c, u, d, f;
 n.d(t, {
-  Z: () => e8
+  Z: () => e9
 }), n(47120), n(789020);
 var _, p = n(392711),
   h = n.n(p),
@@ -511,7 +511,15 @@ function e5(e) {
   if (null == s || s.id !== t) return !1;
   q = n
 }
-class e7 extends(_ = E.ZP.Store) {
+
+function e7(e) {
+  let {
+    guildId: t
+  } = e;
+  if ((null == c ? void 0 : c.id) == null || !ep(c.id)) return !1;
+  t === (null == s ? void 0 : s.id) && (l = c = I.Z.getProfile(t), q = null)
+}
+class e8 extends(_ = E.ZP.Store) {
   initialize() {
     this.waitFor(C.Z, I.Z, R.default)
   }
@@ -603,12 +611,13 @@ class e7 extends(_ = E.ZP.Store) {
       guildMetadata: el,
       analyticsLocation: ei,
       isGuildMetadataLoaded: ea,
+      originalProfile: l,
       profile: c
     }
   }
 }
-U(e7, "displayName", "GuildSettingsStore");
-let e8 = new e7(y.Z, __OVERLAY__ ? {} : {
+U(e8, "displayName", "GuildSettingsStore");
+let e9 = new e8(y.Z, __OVERLAY__ ? {} : {
   GUILD_SETTINGS_INIT: em,
   GUILD_SETTINGS_OPEN: eh,
   GUILD_SETTINGS_CLOSE: eg,
@@ -640,6 +649,9 @@ let e8 = new e7(y.Z, __OVERLAY__ ? {} : {
   GUILD_PROFILE_UPDATE: e4,
   GUILD_PROFILE_UPDATE_SUCCESS: e6,
   GUILD_PROFILE_UPDATE_FAILURE: e5,
+  GUILD_PROFILE_UPDATE_VISIBILITY: e4,
+  GUILD_PROFILE_UPDATE_VISIBILITY_SUCCESS: e7,
+  GUILD_PROFILE_UPDATE_VISIBILITY_FAILURE: e5,
   USER_CONNECTIONS_UPDATE: eK,
   GUILD_INTEGRATIONS_UPDATE: eK,
   INSTANT_INVITE_REVOKE_SUCCESS: eP,

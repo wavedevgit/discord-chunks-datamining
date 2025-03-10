@@ -1,6 +1,6 @@
 /** Chunk was on 84335 **/
 n.d(t, {
-  Z: () => b
+  Z: () => h
 });
 var r = n(200651),
   l = n(192379),
@@ -15,7 +15,7 @@ var r = n(200651),
   v = n(981631),
   f = n(388032);
 
-function j(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function j(e) {
   return e
 }
 
-function x(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,60 +47,60 @@ function x(e, t) {
   }), e
 }
 
-function b(e) {
+function h(e) {
   let {
     profile: t,
     submitting: n,
-    onClick: b
+    onClick: h
   } = e, {
-    guildId: h,
-    validInviteKey: p,
-    ctaType: g
-  } = (0, m.Z)(t), y = l.useCallback(() => {
-    (0, s.X)(h), null == b || b()
-  }, [h, b]), I = l.useCallback(() => {
-    (0, c.uL)(v.Z5c.GUILD_MEMBER_VERIFICATION(h)), null == b || b()
-  }, [h, b]), O = l.useCallback(() => {
-    null != p && (a.ZP.acceptInvite({
-      inviteKey: p,
+    guildId: b,
+    validInviteKey: x,
+    ctaType: p
+  } = (0, m.Z)(t), g = l.useCallback(() => {
+    (0, s.X)(b), null == h || h()
+  }, [b, h]), y = l.useCallback(() => {
+    (0, c.uL)(v.Z5c.GUILD_MEMBER_VERIFICATION(b)), null == h || h()
+  }, [b, h]), O = l.useCallback(() => {
+    null != x && (a.ZP.acceptInvite({
+      inviteKey: x,
       context: {
         location: "guild_profile"
       }
-    }), null == b || b())
-  }, [b, p]), P = l.useCallback(() => {
-    t.visibility !== d.k.PUBLIC_WITH_RECRUITMENT && null != p ? O() : o.Z.openMemberVerificationModal(h, void 0, p), null == b || b()
-  }, [h, O, b, t.visibility, p]), N = l.useCallback(() => {
-    (0, u.Ub)(h, {
+    }), null == h || h())
+  }, [h, x]), P = l.useCallback(() => {
+    t.visibility !== d.k.PUBLIC_WITH_RECRUITMENT && null != x ? O() : o.Z.openMemberVerificationModal(b, void 0, x), null == h || h()
+  }, [b, O, h, t.visibility, x]), E = l.useCallback(() => {
+    (0, u.Ub)(b, {
       object: v.qAy.GUILD_PROFILE
-    }), null == b || b()
-  }, [h, b]), E = l.useMemo(() => ({
+    }), null == h || h()
+  }, [b, h]), N = l.useMemo(() => ({
     size: i.zxk.Sizes.SMALL,
     fullWidth: !0,
     submitting: n
   }), [n]);
-  switch (g) {
+  switch (p) {
     case m.s.IS_MEMBER:
-      return (0, r.jsx)(i.zxk, x(j({}, E), {
-        onClick: y,
+      return (0, r.jsx)(i.zxk, j(I({}, N), {
+        onClick: g,
         children: f.NW.string(f.t.KLOhbG)
       }));
     case m.s.HAS_APPLICATION:
-      return (0, r.jsx)(i.zxk, x(j({}, E), {
-        onClick: I,
+      return (0, r.jsx)(i.zxk, j(I({}, N), {
+        onClick: y,
         children: f.NW.string(f.t["4yfIDg"])
       }));
     case m.s.APPLY_TO_JOIN:
-      return (0, r.jsx)(i.zxk, x(j({}, E), {
+      return (0, r.jsx)(i.zxk, j(I({}, N), {
         onClick: P,
         children: f.NW.string(f.t["7XdMW1"])
       }));
     case m.s.LURK_DISCOVERABLE:
-      return (0, r.jsx)(i.zxk, x(j({}, E), {
-        onClick: N,
+      return (0, r.jsx)(i.zxk, j(I({}, N), {
+        onClick: E,
         children: f.NW.string(f.t.eb9gDA)
       }));
     case m.s.JOIN_VIA_INVITE:
-      return (0, r.jsx)(i.zxk, x(j({}, E), {
+      return (0, r.jsx)(i.zxk, j(I({}, N), {
         onClick: O,
         children: f.NW.string(f.t.eb9gDA)
       }));
