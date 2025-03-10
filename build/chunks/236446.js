@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => D
+  Z: () => k
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -98,7 +98,7 @@ class L extends i.PureComponent {
       children: (0, r.jsx)(m.Z, {
         guildTemplate: e
       })
-    }) : (0, r.jsx)(k, {
+    }) : (0, r.jsx)(D, {
       guildTemplate: e
     })
   }
@@ -155,7 +155,7 @@ class L extends i.PureComponent {
   }
 }
 
-function D(e) {
+function k(e) {
   let t = {
     guildTemplate: (0, c.e7)([h.Z], () => h.Z.getGuildTemplate(e.code)),
     nativeAppState: (0, c.e7)([d.Z], () => d.Z.getState(e.code)),
@@ -176,7 +176,7 @@ function D(e) {
   }({}, e, t))
 }
 
-function k(e) {
+function D(e) {
   let {
     guildTemplate: t
   } = e, {

@@ -4,8 +4,8 @@ n.d(t, {
   fO: () => C,
   qp: () => p
 }), n(47120);
-var r = n(200651),
-  l = n(192379),
+var l = n(200651),
+  r = n(192379),
   i = n(512969),
   o = n(442837),
   a = n(540059),
@@ -19,11 +19,11 @@ let h = e => {
     let {
       onClose: t,
       renderTail: n,
-      invertCoachmark: l,
+      invertCoachmark: r,
       tailLeftOffset: i = 22,
       coachmarkRef: o
     } = e;
-    return (0, r.jsx)(u.tE, {
+    return (0, l.jsx)(u.tE, {
       titleText: f.NW.string(f.t["3B4+wM"]),
       descriptionText: f.NW.format(f.t.V6DQX1, {
         quantity: 200
@@ -31,7 +31,7 @@ let h = e => {
       onClose: t,
       renderTail: n,
       tailLeftOffset: i,
-      invertCoachmark: l,
+      invertCoachmark: r,
       coachmarkRef: o
     })
   },
@@ -41,38 +41,38 @@ let h = e => {
       onClose: t,
       renderTail: n = !1,
       backgroundElementRef: E
-    } = e, f = l.useRef(null), [p, O] = l.useState(22), g = l.useRef(null), T = (0, a.Q3)("VirtualCurrency: DiscoveryOnboardingCoachmark"), I = l.useCallback(e => {
+    } = e, f = r.useRef(null), [p, g] = r.useState(22), O = r.useRef(null), T = (0, a.Q3)("VirtualCurrency: DiscoveryOnboardingCoachmark"), I = r.useCallback(e => {
       if (T) {
         let t = window.innerHeight - ((0, u.t4)() + C.COACHMARK_VERTICAL_OFFSET);
         return e.top <= t
       }
       return !0
     }, [T]), S = (0, o.e7)([c.Z], () => c.Z.getExpandedFolders().size);
-    l.useEffect(() => {
+    r.useEffect(() => {
       null !== f.current && f.current.updateElementOffsetsWithPolling()
     }, [S]);
     let N = (0, i.TH)(),
-      A = l.useCallback(() => ({
+      A = r.useCallback(() => ({
         left: 0,
         verticalOffset: C.COACHMARK_VERTICAL_OFFSET
       }), []),
-      v = l.useCallback(e => {
-        p !== e.width / 2 && O(Math.floor(e.width / 2) - 1)
+      v = r.useCallback(e => {
+        p !== e.width / 2 && g(Math.floor(e.width / 2) - 1)
       }, [p]);
-    return (0, r.jsx)(u.U_, {
+    return (0, l.jsx)(u.U_, {
       offsetControlRef: f,
       backgroundElementRef: E,
-      coachmarkRef: g,
+      coachmarkRef: O,
       calculateVisibility: I,
       calculateBaseOffsets: A,
       onGetBackgroundElementDimensions: v,
-      children: (0, r.jsx)(h, {
+      children: (0, l.jsx)(h, {
         onClose: () => {
           _.includes(N.pathname) || (0, s.uL)(d.Z5c.ME), t()
         },
         renderTail: n,
         tailLeftOffset: p,
-        coachmarkRef: g
+        coachmarkRef: O
       })
     })
   };
@@ -81,13 +81,13 @@ let p = e => {
   let {
     isVirtualCurrencyEnabled: t,
     discoveryButtonRef: n,
-    scrollToBottom: r
-  } = e, i = (0, a.Q3)("VirtualCurrency: DiscoveryOnboardingCoachmark"), o = l.useCallback(() => {
+    scrollToBottom: l
+  } = e, i = (0, a.Q3)("VirtualCurrency: DiscoveryOnboardingCoachmark"), o = r.useCallback(() => {
     if (i && null !== n.current) {
       let e = (0, u.t4)();
-      n.current.getBoundingClientRect().bottom > window.innerHeight - e && r()
+      n.current.getBoundingClientRect().bottom > window.innerHeight - e && l()
     }
-  }, [i, n, r]), {
+  }, [i, n, l]), {
     shouldShow: s,
     closeCoachmarkIfOpen: c
   } = (0, u.M)({

@@ -2,10 +2,10 @@
 n.d(t, {
   Z: () => c
 });
-var r = n(200651);
+var l = n(200651);
 n(192379);
-var l = n(120356),
-  i = n.n(l),
+var r = n(120356),
+  i = n.n(r),
   o = n(481060),
   a = n(686546),
   s = n(796171);
@@ -14,7 +14,7 @@ function c(e) {
   let {
     tooltipText: t,
     children: n,
-    onContextMenu: l,
+    onContextMenu: r,
     onClick: c,
     disabled: u,
     icon: d,
@@ -24,24 +24,24 @@ function c(e) {
     redGlow: _,
     tooltipClassName: C,
     onMouseEnter: p,
-    onMouseLeave: O,
-    "aria-label": g,
+    onMouseLeave: g,
+    "aria-label": O,
     "aria-checked": T,
     role: I,
     tooltipColor: S,
     tooltipForceOpen: N,
     tooltipContentClassName: A
-  } = e, v = "function" == typeof d ? (0, r.jsx)(d, {
+  } = e, v = "function" == typeof d ? (0, l.jsx)(d, {
     width: 20,
     height: 20,
     size: "custom",
     colorClass: null != E ? E : "",
     color: "currentColor"
   }) : d;
-  return (0, r.jsx)(o.ua7, {
+  return (0, l.jsx)(o.ua7, {
     tooltipClassName: C,
     text: t,
-    "aria-label": g,
+    "aria-label": O,
     color: S,
     tooltipContentClassName: A,
     forceOpen: N,
@@ -49,37 +49,37 @@ function c(e) {
       var t, d, {
           onClick: E,
           onMouseEnter: C,
-          onMouseLeave: g
+          onMouseLeave: O
         } = e,
         S = function(e, t) {
           if (null == e) return {};
-          var n, r, l = function(e, t) {
+          var n, l, r = function(e, t) {
             if (null == e) return {};
-            var n, r, l = {},
+            var n, l, r = {},
               i = Object.keys(e);
-            for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-            return l
+            for (l = 0; l < i.length; l++) n = i[l], t.indexOf(n) >= 0 || (r[n] = e[n]);
+            return r
           }(e, t);
           if (Object.getOwnPropertySymbols) {
             var i = Object.getOwnPropertySymbols(e);
-            for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+            for (l = 0; l < i.length; l++) n = i[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
           }
-          return l
+          return r
         }(e, ["onClick", "onMouseEnter", "onMouseLeave"]);
-      return (0, r.jsxs)(o.zxk, (t = function(e) {
+      return (0, l.jsxs)(o.zxk, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            l = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+          }))), l.forEach(function(t) {
+            var l;
+            l = n[t], t in e ? Object.defineProperty(e, t, {
+              value: l,
               enumerable: !0,
               configurable: !0,
               writable: !0
-            }) : e[t] = r
+            }) : e[t] = l
           })
         }
         return e
@@ -101,12 +101,12 @@ function c(e) {
           null == C || C(), null == p || p()
         },
         onMouseLeave: () => {
-          null == g || g(), null == O || O()
+          null == O || O(), null == g || g()
         },
-        onContextMenu: l,
+        onContextMenu: r,
         role: I,
         "aria-checked": T,
-        children: [null != n ? (0, r.jsx)(a.ZP, {
+        children: [null != n ? (0, l.jsx)(a.ZP, {
           width: 20,
           height: 20,
           mask: a.ZP.Masks.PANEL_BUTTON,
@@ -115,8 +115,8 @@ function c(e) {
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(d)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
+          var l = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, l)
         }
         return n
       })(Object(d)).forEach(function(e) {

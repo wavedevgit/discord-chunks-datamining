@@ -8,8 +8,8 @@ var o = n(200651),
   r = n(846027),
   c = n(410575),
   l = n(2052),
-  s = n(100527),
-  d = n(906732),
+  d = n(100527),
+  s = n(906732),
   _ = n(600164),
   u = n(313201),
   b = n(695346),
@@ -31,9 +31,9 @@ function k(e) {
     videoEnabled: n,
     onEnable: k,
     onClose: N
-  } = e, x = h.Z.getCameraComponent(), w = (0, u.Dt)(), E = (0, m.Z)(), A = b.qF.useSetting(), [P, y] = a.useState((0, f.P)(v.default.getCurrentUser())), L = (0, l.O)(), {
+  } = e, x = h.Z.getCameraComponent(), P = (0, u.Dt)(), w = (0, m.Z)(), E = b.qF.useSetting(), [A, y] = a.useState((0, f.P)(v.default.getCurrentUser())), L = (0, l.O)(), {
     analyticsLocations: B
-  } = (0, d.ZP)(s.Z.CAMERA_PREVIEW), R = a.useRef(null);
+  } = (0, s.ZP)(d.Z.CAMERA_PREVIEW), R = a.useRef(null);
   a.useEffect(() => {
     I.default.track(T.rMx.OPEN_MODAL, {
       type: "Camera Preview Modal"
@@ -46,7 +46,7 @@ function k(e) {
     await D(), r.Z.setVideoEnabled(!0), null == k || k()
   }, D = async () => {
     try {
-      await (0, g.wG)(P, {
+      await (0, g.wG)(A, {
         location: function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -69,22 +69,22 @@ function k(e) {
         }, L.location)
       })
     } catch (e) {}
-    await N(), (0, p.Up)(P)
+    await N(), (0, p.Up)(A)
   };
-  return (0, o.jsx)(d.Gt, {
+  return (0, o.jsx)(s.Gt, {
     value: B,
     children: (0, o.jsx)(c.Z, {
       page: T.ZY5.PREVIEW_CAMERA_MODAL,
       children: (0, o.jsxs)(i.Y0X, {
         className: O.modalRoot,
         size: i.CgR.DYNAMIC,
-        "aria-labelledby": w,
+        "aria-labelledby": P,
         transitionState: t,
         children: [(0, o.jsxs)(i.hzk, {
-          className: E ? O.contentWithVideoBackgrounds : O.content,
+          className: w ? O.contentWithVideoBackgrounds : O.content,
           scrollerRef: R,
           children: [(0, o.jsx)(i.X6q, {
-            id: w,
+            id: P,
             className: O.header,
             variant: "heading-xl/semibold",
             children: n ? S.NW.string(S.t.LAwwbW) : S.NW.string(S.t["/HITVF"])
@@ -93,7 +93,7 @@ function k(e) {
             showSmallBackgroundOptions: !0,
             hideDeviceHeader: !0,
             hideCameraSettingsLink: !0,
-            selectedBackgroundOption: P,
+            selectedBackgroundOption: A,
             onSelectBackgroundOption: y,
             hideDeviceSelector: n,
             renderCamera: e => (0, o.jsxs)("div", {
@@ -123,10 +123,10 @@ function k(e) {
           })(), (0, o.jsx)(i.XZJ, {
             size: 18,
             type: i.XZJ.Types.INVERTED,
-            value: A,
+            value: E,
             onChange: () => {
-              b.qF.updateSetting(!A), I.default.track(T.rMx.UPDATE_USER_SETTINGS_LOCAL, {
-                always_preview_video: !A
+              b.qF.updateSetting(!E), I.default.track(T.rMx.UPDATE_USER_SETTINGS_LOCAL, {
+                always_preview_video: !E
               })
             },
             children: (0, o.jsx)(i.Text, {

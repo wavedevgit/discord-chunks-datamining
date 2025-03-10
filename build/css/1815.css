@@ -1,6 +1,6 @@
 /**
   Module ID: 1815
-  Original File Name: 563d16611250bb74
+  Original File Name: 928c59cdbf019efa
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -467,7 +467,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 16px;
+    font-size: 1rem;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -2552,6 +2552,24 @@ h1.title_feb59c,h2.title_feb59c {
 .visual-refresh .micButtonParent__37e49 .buttonChevronIcon__37e49 {
     width: 16px;
     height: 16px
+}
+
+.theme-dark .iconForeground__37e49 {
+    color: hsla(0,0%,100%,.9)
+}
+
+.theme-dark .iconForeground__37e49:hover {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px)
+}
+
+.theme-light .iconForeground__37e49 {
+    color: rgba(0,0,0,.9)
+}
+
+.theme-light .iconForeground__37e49:hover {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px)
 }
 
 .wrapper__06283 {

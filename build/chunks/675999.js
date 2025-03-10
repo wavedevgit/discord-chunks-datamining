@@ -4,6 +4,6 @@ n.d(t, {
   _m: () => i,
   lr: () => o
 });
-var r, l, i = ((r = {}).GUILD_TEMPLATES = "guild-templates", r.CUSTOMIZE_GUILD = "customize-guild", r.CHANNEL_PROMPT = "channel-prompt", r.JOIN_GUILD = "join-guild", r.CREATION_INTENT = "creation-intent", r),
-  o = ((l = {}).FRIENDS = "FRIENDS", l.COMMUNITY = "COMMUNITY", l.CLAN = "CLAN", l);
+var l, r, i = ((l = {}).GUILD_TEMPLATES = "guild-templates", l.CUSTOMIZE_GUILD = "customize-guild", l.CHANNEL_PROMPT = "channel-prompt", l.JOIN_GUILD = "join-guild", l.CREATION_INTENT = "creation-intent", l),
+  o = ((r = {}).FRIENDS = "FRIENDS", r.COMMUNITY = "COMMUNITY", r.CLAN = "CLAN", r);
 let a = "create-guild"

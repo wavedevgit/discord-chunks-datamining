@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 3a3c37c335a6b4c0
+  Original File Name: 675cc0c1e0ff2735
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -1980,12 +1980,27 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     width: 16px;
     height: 16px;
     opacity: .7;
-    margin: 2px;
-    padding-right: 8px
+    margin: 2px 8px 2px 2px
 }
 
 .closeButton__972a0:focus,.closeButton__972a0:hover {
     opacity: 1
+}
+
+.closeIconPlated__972a0 {
+    color: hsla(0,0%,100%,.9)
+}
+
+.closeButtonBackgroundPlated__972a0 {
+    background-color: var(--background-modifier-selected);
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 .favoriteIcon__972a0 {
