@@ -85,18 +85,18 @@ let y = 8,
       streamParticipants: x,
       participantsVersion: I,
       pinned: S
-    } = e, C = 9 / 16 * n, N = x.map(e => ({
+    } = e, N = 9 / 16 * n, C = x.map(e => ({
       participant: e,
       key: e.user.id,
       width: n,
       locked: h,
       widgetId: t,
-      height: C,
+      height: N,
       pinned: S
-    })), Z = (0, u.Z)(n), w = l === f.C5.VERTICAL, P = 0, _ = 0, T = (0, s.Yzy)(w ? N.map((e, t) => v(O({}, e), {
+    })), Z = (0, u.Z)(n), w = l === f.C5.VERTICAL, P = 0, _ = 0, T = (0, s.Yzy)(w ? C.map((e, t) => v(O({}, e), {
       y: (P += e.height + (t > 0 ? y : 0)) - e.height,
       x: 0
-    })) : N.map((e, t) => v(O({}, e), {
+    })) : C.map((e, t) => v(O({}, e), {
       x: (_ += e.width + (t > 0 ? y : 0)) - e.width,
       y: 0
     })), {
@@ -163,8 +163,8 @@ let y = 8,
         className: g.gridItem,
         style: Object.assign({}, e, {
           width: n,
-          height: C,
-          zIndex: N.length - l
+          height: N,
+          zIndex: C.length - l
         }),
         children: E(t)
       }))

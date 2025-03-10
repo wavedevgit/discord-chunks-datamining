@@ -222,7 +222,7 @@ function U(e) {
                 applicationId: F.id,
                 location: U,
                 centerButton: !0,
-                color: "red",
+                color: "disconnect",
                 className: H ? void 0 : L.leaveActivityButton
               })
             }), H ? null : (0, r.jsx)(g.d, {

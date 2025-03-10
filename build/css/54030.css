@@ -1,6 +1,6 @@
 /**
   Module ID: 54030
-  Original File Name: 5da97bf63cedd7ee
+  Original File Name: 41d7500e00101a9f
 **/
 .key__98feb {
     display: inline-block;
@@ -104,6 +104,11 @@
     border-radius: 6px;
     border: 1px solid hsla(0,0%,100%,.08);
     background: var(--bg-base-primary)
+}
+
+.container_ab8e5c {
+    width: 100%;
+    padding-top: 12px
 }
 
 .container__2af41 {

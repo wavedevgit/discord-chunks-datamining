@@ -31,8 +31,8 @@ var i = n(200651),
   x = n(933557),
   I = n(471445),
   S = n(44315),
-  C = n(74299),
-  N = n(803647),
+  N = n(74299),
+  C = n(803647),
   Z = n(565138),
   w = n(917405),
   P = n(763296),
@@ -316,7 +316,7 @@ function eo(e) {
   }) : void 0;
   r.useEffect(() => () => b(), [a, b]);
   let S = en(l),
-    C = null == n || !d;
+    N = null == n || !d;
   return (0, i.jsx)(h.yRy, {
     renderPopout: e => {
       let {
@@ -348,7 +348,7 @@ function eo(e) {
         onContextMenu: O(n),
         onMouseEnter: j,
         onMouseLeave: x,
-        disabled: C
+        disabled: N
       })
     }
   })
@@ -361,7 +361,7 @@ function ea(e) {
     } = e,
     a = (0, o.e7)([H.default], () => H.default.getCurrentUser()),
     s = (0, D.Z)(n),
-    u = (0, o.cj)([G.Z], () => (0, C.Z)(G.Z)),
+    u = (0, o.cj)([G.Z], () => (0, N.Z)(G.Z)),
     d = (0, o.e7)([V.Z], () => V.Z.getCurrentUserActiveStream()),
     p = (0, J.g)((0, K.getPID)()),
     f = () => {
@@ -384,7 +384,7 @@ function ea(e) {
         type: Q.Qu.GO_LIVE,
         value: Q.bk.DISABLED,
         userId: z.default.getId()
-      }), (0, N.Z)(d, !1);
+      }), (0, C.Z)(d, !1);
       f()
     },
     O = e => t => {

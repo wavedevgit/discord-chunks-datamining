@@ -1,6 +1,6 @@
 /** Chunk was on 50751 **/
 n.d(t, {
-  Z: () => C
+  Z: () => N
 }), n(47120), n(230036);
 var i = n(200651),
   r = n(192379),
@@ -30,12 +30,12 @@ function S(e, t, n, i) {
   return e === b.C5.HORIZONTAL ? Math.min(Math.max((t - r) / i, 256), Math.max(16 * n / 9, 256)) : Math.min(Math.max(t, 256), Math.max((n - r) / i * 16 / 9, 256))
 }
 
-function C(e) {
+function N(e) {
   let {
     id: t,
     size: n,
-    locked: C,
-    padding: N,
+    locked: N,
+    padding: C,
     borderWidth: Z,
     opacity: w,
     horizontal: P,
@@ -43,7 +43,7 @@ function C(e) {
     anchorTop: T,
     anchorLeft: D,
     showEmpty: A = !0
-  } = e, k = 2 * N + 2 * Z, {
+  } = e, k = 2 * C + 2 * Z, {
     width: L,
     height: R
   } = {
@@ -84,7 +84,7 @@ function C(e) {
       activeStreams: e,
       participantsVersion: d.Z.getParticipantsVersion(M)
     }
-  }, [M, Y, U, H, B]), J = X.length, q = null == F || 0 === Q.size && C || 0 === J && !C, $ = P ? b.C5.HORIZONTAL : b.C5.VERTICAL, {
+  }, [M, Y, U, H, B]), J = X.length, q = null == F || 0 === Q.size && N || 0 === J && !N, $ = P ? b.C5.HORIZONTAL : b.C5.VERTICAL, {
     tileWidth: ee,
     layout: et
   } = function(e, t, n, i, l) {
@@ -115,7 +115,7 @@ function C(e) {
     height: R,
     sizeOffset: k,
     layout: et,
-    padding: N,
+    padding: C,
     participants: X.length
   };
   return (! function(e) {
@@ -220,7 +220,7 @@ function C(e) {
     s.Z.setGpuBoostRequested(E.zS.OVERLAY_VIDEO_STREAM_RENDERING, !q)
   }, [q]), (0, c.ZP)(() => () => {
     s.Z.setGpuBoostRequested(E.zS.OVERLAY_VIDEO_STREAM_RENDERING, !1)
-  }), q && C) ? null : q && !C ? A ? C ? null : (0, i.jsx)(v.E, {
+  }), q && N) ? null : q && !N ? A ? N ? null : (0, i.jsx)(v.E, {
     emptyText: j.NW.string(j.t["T6+rX1"]),
     icon: o.hGI,
     absolute: !0
@@ -233,7 +233,7 @@ function C(e) {
     children: (0, i.jsx)(y.Z, {
       widgetId: t,
       tileWidth: ee,
-      locked: C,
+      locked: N,
       layout: et,
       activeStreams: Q,
       streamParticipants: X,

@@ -24,8 +24,8 @@ var i, r = n(512722),
   x = n(246946),
   I = n(594174),
   S = n(979651),
-  C = n(974180),
-  N = n(237997),
+  N = n(974180),
+  C = n(237997),
   Z = n(70956),
   w = n(150097),
   P = n(129724),
@@ -338,8 +338,8 @@ let eg = new em(s.Z, {
       }(s, a, u);
       if (!1 !== e) return e
     }
-    if (N.default.getTextChatNotificationMode() === Y.Ypu.DISABLED || x.Z.disableNotifications || !(0, w.eF)(a, o)) return !1;
-    let c = !O.Z.isSoundDisabled(C.Ay),
+    if (C.default.getTextChatNotificationMode() === Y.Ypu.DISABLED || x.Z.disableNotifications || !(0, w.eF)(a, o)) return !1;
+    let c = !O.Z.isSoundDisabled(N.Ay),
       p = null !== (r = g.Z.getMessage(o, a.id)) && void 0 !== r ? r : (0, d.e5)(a);
     ep((0, G.Z)(s, p, u, c), {
       type: k.kL.TEXT,

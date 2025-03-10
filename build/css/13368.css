@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 14fcf68bb6fa674e
+  Original File Name: 82ef79b8a3537ad8
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -316,6 +316,11 @@
     border-radius: 6px;
     border: 1px solid hsla(0,0%,100%,.08);
     background: var(--bg-base-primary)
+}
+
+.container_ab8e5c {
+    width: 100%;
+    padding-top: 12px
 }
 
 .wrapper__00943 {

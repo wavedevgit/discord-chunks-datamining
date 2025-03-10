@@ -97,7 +97,7 @@ function S(e) {
       events: O
     } = (0, c.o)(g || n ? "disable" : "enable");
   i.useEffect(() => () => y(), [n, y]);
-  let I = E === m.IlC.POPOUT ? n ? s.O : l.A : b;
+  let I = E === m.IlC.POPOUT || g ? n ? s.O : l.A : b;
   return (0, r.jsx)(r.Fragment, {
     children: _({
       onClick: v,

@@ -6,8 +6,8 @@ t.d(n, {
 var r = t(200651),
   i = t(192379),
   o = t(481060),
-  s = t(713081),
-  a = t(535396);
+  a = t(713081),
+  s = t(535396);
 
 function l(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -35,15 +35,15 @@ function c(e) {
 }
 
 function d(e, n) {
-  let [c, d] = i.useState(!1), [u, v] = i.useState(void 0), x = i.useCallback(t => {
-    let r = t ? s.H6 : s.Th;
+  let [c, d] = i.useState(!1), [u, v] = i.useState(void 0), p = i.useCallback(t => {
+    let r = t ? a.H6 : a.Th;
     return d(!0), v(void 0), r(e, n.skuId).catch(e => {
       var n;
       throw v(null !== (n = e.body.message) && void 0 !== n ? n : void 0), e
     }).finally(() => {
       d(!1)
     })
-  }, [e, n.skuId]), p = i.useCallback(e => (e.stopPropagation(), x(!0).then(() => {
+  }, [e, n.skuId]), x = i.useCallback(e => (e.stopPropagation(), p(!0).then(() => {
     (0, o.ZDy)(async () => {
       let {
         default: e
@@ -52,11 +52,11 @@ function d(e, n) {
         powerup: n
       }, t))
     })
-  })), [x, n]), b = i.useCallback(e => (e.stopPropagation(), x(!1)), [x]);
+  })), [p, n]), b = i.useCallback(e => (e.stopPropagation(), p(!1)), [p]);
   return {
     isLoading: c,
     error: u,
-    onActivate: p,
+    onActivate: x,
     onDeactivate: b,
     onShowDeactivate: i.useCallback(i => {
       i.stopPropagation(), (0, o.ZDy)(async () => {
@@ -72,7 +72,7 @@ function d(e, n) {
     onShowMore: i.useCallback(() => {
       (0, o.ZDy)(async () => {
         switch (n.type) {
-          case a.Us.LEVEL:
+          case s.Us.LEVEL:
             let {
               default: i
             } = await t.e("99014").then(t.bind(t, 271224));
@@ -80,7 +80,7 @@ function d(e, n) {
               guildId: e,
               powerup: n
             }, t));
-          case a.Us.PERK: {
+          case s.Us.PERK: {
             let {
               default: i
             } = await t.e("78718").then(t.bind(t, 640139));

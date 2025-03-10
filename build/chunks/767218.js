@@ -6,8 +6,8 @@ t.d(n, {
 var r, i = t(200651);
 t(192379);
 var o = t(793030),
-  s = t(692547),
-  a = t(413335),
+  a = t(692547),
+  s = t(413335),
   l = t(730621),
   c = t(388032),
   d = t(255976),
@@ -22,8 +22,8 @@ function v(e) {
     className: d.container,
     children: [(0, i.jsxs)("div", {
       className: d.headerContainer,
-      children: [(0, i.jsx)(a.Z, {
-        fill: 0 !== t ? s.Z.colors.HEADER_MUTED.css : void 0
+      children: [(0, i.jsx)(s.Z, {
+        fill: 0 !== t ? a.Z.colors.HEADER_MUTED.css : void 0
       }), (0, i.jsx)(o.X6, {
         color: 0 !== t ? "header-muted" : "header-primary",
         variant: "heading-lg/semibold",

@@ -1,25 +1,25 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => p
+  Z: () => x
 });
 var r = t(200651),
   i = t(192379),
   o = t(120356),
-  s = t.n(o),
-  a = t(481060),
+  a = t.n(o),
+  s = t(481060),
   l = t(413335),
   c = t(157353),
   d = t(279604),
   u = t(730621),
   v = t(388032),
-  x = t(423839);
+  p = t(423839);
 
-function p(e) {
+function x(e) {
   let {
     className: n,
     guildId: t,
     powerup: o,
-    onError: p
+    onError: x
   } = e, {
     onActivate: b,
     isLoading: m,
@@ -27,14 +27,14 @@ function p(e) {
     onDeactivate: h
   } = (0, d.Z)(t, o), _ = (0, c.Z)(t, o);
   return i.useEffect(() => {
-    null == p || p(j)
-  }, [j, p]), (0, r.jsxs)("div", {
-    className: s()(x.container, n),
-    children: [_ && (0, r.jsx)(a.ua7, {
+    null == x || x(j)
+  }, [j, x]), (0, r.jsxs)("div", {
+    className: a()(p.container, n),
+    children: [_ && (0, r.jsx)(s.ua7, {
       text: v.NW.string(u.Z.TZsu1d),
       children: e => {
         var n, t;
-        return (0, r.jsx)(a.zxk, (n = function(e) {
+        return (0, r.jsx)(s.zxk, (n = function(e) {
           for (var n = 1; n < arguments.length; n++) {
             var t = null != arguments[n] ? arguments[n] : {},
               r = Object.keys(t);
@@ -52,8 +52,8 @@ function p(e) {
           }
           return e
         }({}, e), t = t = {
-          className: x.secondaryButton,
-          color: a.Ttl.PRIMARY,
+          className: p.secondaryButton,
+          color: s.Ttl.PRIMARY,
           "aria-label": v.NW.string(u.Z.TZsu1d),
           grow: !1,
           onClick: h,
@@ -69,8 +69,8 @@ function p(e) {
           Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(t, e))
         }), n))
       }
-    }), (0, r.jsx)(a.zxk, {
-      className: x.primaryButton,
+    }), (0, r.jsx)(s.zxk, {
+      className: p.primaryButton,
       grow: !0,
       onClick: _ ? () => {} : b,
       submitting: !_ && m,

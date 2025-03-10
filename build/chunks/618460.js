@@ -1,14 +1,14 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => a
+  Z: () => s
 }), t(47120), t(230036);
 var r = t(192379),
   i = t(442837),
   o = t(823379),
-  s = t(905128);
+  a = t(905128);
 
-function a(e) {
-  let n = (0, i.e7)([s.Z], () => s.Z.getStateForGuild(e));
+function s(e) {
+  let n = (0, i.e7)([a.Z], () => a.Z.getStateForGuild(e));
   return r.useMemo(() => {
     var e;
     if (null == n) return [];

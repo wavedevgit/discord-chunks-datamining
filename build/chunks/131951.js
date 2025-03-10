@@ -368,8 +368,8 @@ function tT() {
     }, {
       autoTrackExposure: !0
     }).signalAV1Support ? e.setExperimentFlag(ep.V8.SIGNAL_AV1, !0) : e.setExperimentFlag(ep.V8.SIGNAL_AV1_DECODE, !0): ((0, Q.isMac)() || (0, Q.isLinux)()) && e.setExperimentFlag(ep.V8.SIGNAL_AV1_DECODE, !0), (0, Q.isWindows)() && e.setExperimentFlag(ep.V8.SIGNAL_AV1_HARDWARE_DECODE, !0), ek.setHasFullbandPerformance((0, N.Z)());
-    let h = (0, D.D)("setupMediaEngine").enabled;
-    if (e.setRemoteAudioHistory(1e3 * !!h), (0, S.Z)(r)) {
+    let p = (0, D.D)("setupMediaEngine").enabled;
+    if (e.setRemoteAudioHistory(1e3 * !!p), (0, S.Z)(r)) {
       let t = I.Z.getSettings();
       e.setExperimentFlag(ep.V8.STREAMER_CLIP, t.clipsEnabled);
       let {
@@ -420,11 +420,11 @@ function tT() {
         type: "MEDIA_ENGINE_SOUNDSHARE_TRANSMITTING"
       })))
     });
-    let g = new E.V7;
+    let h = new E.V7;
     e.on(m.Sh.SoundshareTrace, e => {
       switch (e.type) {
         case "soundshare_attach_requested":
-          g.start(th, () => {
+          h.start(th, () => {
             v.Z.dispatch({
               type: "MEDIA_ENGINE_SOUNDSHARE_FAILED",
               errorMessage: "Sound Hook Failed"
@@ -435,14 +435,14 @@ function tT() {
           let t = e.reason,
             n = e.code,
             r = e.retry;
-          (null == o ? void 0 : o.desktopSource) == null || (tI(null == o ? void 0 : o.desktopSource, n, t, r), r || (g.stop(), v.Z.wait(() => v.Z.dispatch({
+          (null == o ? void 0 : o.desktopSource) == null || (tI(null == o ? void 0 : o.desktopSource, n, t, r), r || (h.stop(), v.Z.wait(() => v.Z.dispatch({
             type: "MEDIA_ENGINE_SOUNDSHARE_FAILED",
             errorMessage: t,
             errorCode: n
           }))));
           break;
         case "soundshare_state_transition":
-          4 === e.newState && (g.stop(), v.Z.wait(() => v.Z.dispatch({
+          4 === e.newState && (h.stop(), v.Z.wait(() => v.Z.dispatch({
             type: "MEDIA_ENGINE_SOUNDSHARE_TRANSMITTING"
           })))
       }
@@ -488,7 +488,7 @@ function tT() {
         code: e
       })
     }), e.on(m.Sh.SdpError, (e, t, n, r) => {
-      X.Z === p.R.CANARY && K.default.track(eu.rMx.SDP_ERROR, {
+      K.default.track(eu.rMx.SDP_ERROR, {
         operation: e,
         error: t,
         type: n,
@@ -501,7 +501,7 @@ function tT() {
         context: e.context
       })
     }), e.on(m.Sh.Destroy, () => {
-      g.stop()
+      h.stop()
     }), e.setBitRate(en.Z.bitrate), e.applyVideoQualityMode(ec.Z.mode)
   }), ek.on(m.aB.DeviceChange, (e, t, n) => {
     v.Z.dispatch({
