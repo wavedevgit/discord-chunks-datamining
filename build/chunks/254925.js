@@ -59,12 +59,12 @@ let m = [o.ZD.LEAF, o.ZD.SWORD, o.ZD.HEART, o.ZD.FIRE, o.ZD.WATER_DROP, o.ZD.SKU
       children: [(0, r.jsx)(a.X6q, {
         className: u.title,
         variant: "heading-lg/semibold",
-        children: d.NW.string(c.Z.gnwWr6)
+        children: d.NW.string(c.Z.mf2OwM)
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
         className: u.description,
-        children: d.NW.string(c.Z["1Ts7QE"])
+        children: d.NW.string(c.Z["655Un5"])
       }), (0, r.jsxs)("div", {
         className: u.enableSwitchContainer,
         children: [(0, r.jsx)("label", {
@@ -72,7 +72,7 @@ let m = [o.ZD.LEAF, o.ZD.SWORD, o.ZD.HEART, o.ZD.FIRE, o.ZD.WATER_DROP, o.ZD.SKU
           children: (0, r.jsx)(a.Text, {
             variant: "text-md/semibold",
             color: "header-primary",
-            children: d.NW.string(c.Z.ZbFyIS)
+            children: d.NW.string(c.Z["1zams7"])
           })
         }), (0, r.jsx)(a.rsf, {
           id: "enable-server-tag",
@@ -82,14 +82,14 @@ let m = [o.ZD.LEAF, o.ZD.SWORD, o.ZD.HEART, o.ZD.FIRE, o.ZD.WATER_DROP, o.ZD.SKU
         variant: "text-xs/medium",
         color: "text-muted",
         className: u.memberApplicationsInfo,
-        children: d.NW.format(c.Z.brTw0t, {
+        children: d.NW.format(c.Z.WUACVF, {
           onClick: () => {}
         })
       }), (0, r.jsxs)("div", {
         className: u.section,
         children: [(0, r.jsx)(a.vwX, {
           className: u.sectionTitle,
-          children: d.NW.string(c.Z["Wqj/DQ"])
+          children: d.NW.string(c.Z["tN+8pK"])
         }), (0, r.jsxs)("div", {
           className: u.tagContainer,
           children: [(0, r.jsx)("div", {
@@ -113,7 +113,7 @@ let m = [o.ZD.LEAF, o.ZD.SWORD, o.ZD.HEART, o.ZD.FIRE, o.ZD.WATER_DROP, o.ZD.SKU
             children: (0, r.jsx)(a.Text, {
               variant: "text-xs/medium",
               color: "text-muted",
-              children: d.NW.string(c.Z.zd5Gjo)
+              children: d.NW.string(c.Z.UbC8y8)
             })
           })]
         })]
@@ -121,7 +121,7 @@ let m = [o.ZD.LEAF, o.ZD.SWORD, o.ZD.HEART, o.ZD.FIRE, o.ZD.WATER_DROP, o.ZD.SKU
         className: u.section,
         children: [(0, r.jsx)(a.vwX, {
           className: u.sectionTitle,
-          children: d.NW.string(c.Z["4ER/6e"])
+          children: d.NW.string(c.Z.pb7lpK)
         }), (0, r.jsx)("div", {
           className: u.pickerGrid,
           children: m.map(e => (0, r.jsx)(a.P3F, {
@@ -139,7 +139,7 @@ let m = [o.ZD.LEAF, o.ZD.SWORD, o.ZD.HEART, o.ZD.FIRE, o.ZD.WATER_DROP, o.ZD.SKU
         className: u.section,
         children: [(0, r.jsx)(a.vwX, {
           className: u.sectionTitle,
-          children: d.NW.string(c.Z.OBstJi)
+          children: d.NW.string(c.Z.zSbMdX)
         }), (0, r.jsx)("div", {
           className: u.pickerGrid,
           children: p.map(e => {

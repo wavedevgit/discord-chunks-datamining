@@ -131,7 +131,7 @@ function e2(e) {
   return e
 }
 n(117240), n(801077), n(967368), n(272053), n(974180), n(574254), n(551428), n(55563), n(882029), n(959457), n(653255), n(663389), n(25990), n(778825), n(999382), n(388610), n(533947), n(277053), n(371398), n(141233), n(471073);
-let e3 = !1;
+let e4 = !1;
 (0, v.D)(), a.ZP.initialize(), e_.Z.loadServer(), eq.isPlatformEmbedded && (eX.ZP.on("USER_SETTINGS_OPEN", (e, t) => {
   eG.Z.getLayers().includes(eJ.S9g.USER_SETTINGS) || f.Z.open(null != t ? t : eJ.oAB.ACCOUNT)
 }), eX.ZP.on("LAUNCH_APPLICATION", (e, t) => {
@@ -145,7 +145,7 @@ let e3 = !1;
     }
   })
 }));
-let e4 = a.ZP.connectStores([B.Z, eM.Z, eR.default], () => ({
+let e3 = a.ZP.connectStores([B.Z, eM.Z, eR.default], () => ({
     isConnected: B.Z.isConnected(),
     defaultRoute: eM.Z.defaultRoute,
     defaultRouteFallback: eM.Z.fallbackRoute,
@@ -208,14 +208,14 @@ let e8 = [{
     let {
       match: t
     } = e;
-    return (0, r.jsx)(e4, {
+    return (0, r.jsx)(e3, {
       match: t
     })
   },
   isSessionRequired: !0
 }, {
   path: [eJ.Z5c.APP],
-  render: () => (0, r.jsx)(e4, {}),
+  render: () => (0, r.jsx)(e3, {}),
   isSessionRequired: !0
 }, {
   path: [eJ.Z5c.USERS(":id")],
@@ -509,8 +509,8 @@ class tn extends i.PureComponent {
       if (c && g && d.Z.selectGuild(r), c && u) {
         let n = eV.Z.getChannelId(f),
           o = n !== i;
-        if (!e3 || g || o || null != a) {
-          e3 = !0, p.default.selectChannel({
+        if (!e4 || g || o || null != a) {
+          e4 = !0, p.default.selectChannel({
             guildId: r,
             channelId: i,
             messageId: a

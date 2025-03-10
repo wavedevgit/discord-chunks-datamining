@@ -6,9 +6,6 @@ n.d(t, {
 let r = {
   Modules: {
     chat: {
-      RESIZE_HANDLE_WIDTH: {
-        resolve: () => 8
-      },
       INPUT_ICON_SIZE: {
         resolve(e) {
           let {
@@ -30,6 +27,9 @@ let r = {
             if ("visual-refresh" === e) return "1.5rem";
           return "1.375rem"
         }
+      },
+      RESIZE_HANDLE_WIDTH: {
+        resolve: () => 8
       }
     },
     form: {
@@ -76,16 +76,8 @@ let r = {
       VERTICAL_PADDING: {
         resolve: () => 16
       },
-      WIDTH_SMALL: {
-        resolve(e) {
-          let {
-            enabledExperiments: t
-          } = e;
-          if (0 === t.length) return 440;
-          for (let e of t)
-            if ("visual-refresh" === e) return 442;
-          return 440
-        }
+      WIDTH_LARGE: {
+        resolve: () => 800
       },
       WIDTH_MEDIUM: {
         resolve(e) {
@@ -98,8 +90,16 @@ let r = {
           return 600
         }
       },
-      WIDTH_LARGE: {
-        resolve: () => 800
+      WIDTH_SMALL: {
+        resolve(e) {
+          let {
+            enabledExperiments: t
+          } = e;
+          if (0 === t.length) return 440;
+          for (let e of t)
+            if ("visual-refresh" === e) return 442;
+          return 440
+        }
       }
     }
   }

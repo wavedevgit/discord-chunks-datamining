@@ -1,6 +1,6 @@
 /**
   Module ID: 27278
-  Original File Name: acb24405c955f87c
+  Original File Name: a175ccce310d0cc9
 **/
 .buttonContainer__7e329 {
     display: flex;
@@ -1302,7 +1302,8 @@
 .container__32c39 {
     border-top: 1px solid var(--bg-mod-strong);
     padding-top: var(--spacing-12);
-    margin-top: var(--spacing-12)
+    margin-top: var(--spacing-12);
+    width: 100%
 }
 
 .container_fb1c43 {
