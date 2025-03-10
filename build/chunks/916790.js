@@ -162,7 +162,7 @@ function E(e) {
     })]
   })
 }
-let k = [{
+let I = [{
     key: "action",
     cellClassName: y.actionColumn,
     render(e) {
@@ -185,7 +185,7 @@ let k = [{
       return "".concat(N(t.totalTime), " ms")
     }
   }],
-  I = e => {
+  k = e => {
     let {
       actionLog: t
     } = e;
@@ -219,7 +219,7 @@ function P() {
     j = a.useCallback(e => {
       x(e)
     }, []),
-    N = (0, p.c)(I, j, w),
+    N = (0, p.c)(k, j, w),
     T = a.useCallback(e => {
       m(s), b(e)
     }, [s]);
@@ -252,7 +252,7 @@ function P() {
         placeholder: "Search by action name"
       })]
     }), (0, r.jsx)(v.Z, {
-      columns: k,
+      columns: I,
       data: S,
       selectedRowKey: null == _ ? void 0 : _.id.toString(),
       onClickRow: e => g(e.actionLog)

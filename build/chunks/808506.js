@@ -506,7 +506,7 @@ function eM(e) {
   } = e;
   $ = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "193f7348466b6f0a9b20d134be9e486170144d57"), n.append("rpc", String(t)), n.append("rpc_auth_token", $), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "75fa9effab73a8971c833f4b2f10f9d35e9099ed"), n.append("rpc", String(t)), n.append("rpc_auth_token", $), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function ek(e) {
@@ -667,6 +667,9 @@ class eX extends(i = a.ZP.Store) {
   isFocusedPidOutOfProcess() {
     let e = this.getFocusedPID();
     return null != e && I.default.isOverlayOOPEnabledForPid(e)
+  }
+  isCurrentPidOutOfProcess() {
+    return I.default.isOverlayOOPEnabledForPid((0, M.getPID)())
   }
   isReady(e) {
     return T.ZP.isOverlayV3EnabledForPID(e) ? T.ZP.isReady(e) : "READY" === Y.get(e)

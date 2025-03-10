@@ -47,7 +47,7 @@ function b(e, t) {
     0 === O.size && window.addEventListener("mousemove", v), O.set(e, t)
   }
   if (g.isPlatformEmbedded) {
-    if (h.default.isFocusedPidOutOfProcess()) {
+    if (h.default.isCurrentPidOutOfProcess()) {
       let e = Array.from(O.values()).map(e => {
         let {
           zone: t

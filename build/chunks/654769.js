@@ -35,14 +35,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 let E = C.isPlatformEmbedded && (0, C.isWindows)(),
-  k = E && 10 > parseFloat(c.Z.os.release),
-  I = !0;
-if (E && !k) {
+  I = E && 10 > parseFloat(c.Z.os.release),
+  k = !0;
+if (E && !I) {
   let [e, , t] = c.Z.os.release.split(".");
-  I = parseInt(e) > 10 || parseInt(t) >= 15063
+  k = parseInt(e) > 10 || parseInt(t) >= 15063
 }
 let w = new u.Z("NotificationUtils"),
-  P = E && I || "Chrome" === s().name && 47 > parseFloat(s().version) || "Firefox" === s().name && 52 > parseFloat(s().version);
+  P = E && k || "Chrome" === s().name && 47 > parseFloat(s().version) || "Firefox" === s().name && 52 > parseFloat(s().version);
 async function Z() {
   if (void 0 === r) {
     if (null === c.Z || void 0 === c.Z ? void 0 : c.Z.features.supports("notifications")) try {
@@ -83,7 +83,7 @@ function B() {
 }
 E && (window.addEventListener("focus", B), T.ZP.on("MAIN_WINDOW_FOCUS", B));
 let M = window.Notification;
-if (k) {
+if (I) {
   let e = {};
   T.ZP.on("NOTIFICATION_CLICK", (t, n) => {
     let r = e[n];
@@ -241,7 +241,7 @@ let U = {
     return (g(c), c.onclick = () => {
       var e;
       C.isPlatformEmbedded ? T.ZP.focus() : (window.focus(), c.close()), a.omitClickTracking || j.default.track(O.rMx.NOTIFICATION_CLICKED, r), null === (e = a.onClick) || void 0 === e || e.call(a)
-    }, I) ? c : {
+    }, k) ? c : {
       close() {
         var e;
         null == c || null === (e = c.onclose) || void 0 === e || e.call(c)

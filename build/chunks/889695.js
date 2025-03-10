@@ -1,29 +1,29 @@
-/** Chunk was on 76030 **/
+/** Chunk was on 61564 **/
 n.d(t, {
-  Z: () => j
+  Z: () => N
 }), n(47120), n(653041);
 var r = n(200651),
-  i = n(192379),
-  a = n(658722),
-  o = n.n(a),
-  l = n(392711),
-  s = n.n(l),
-  c = n(149765),
-  d = n(442837),
-  u = n(481060),
-  p = n(271383),
-  m = n(430824),
-  f = n(594174),
-  h = n(700785),
-  g = n(709054),
-  _ = n(962086),
-  b = n(160404),
-  v = n(225675),
-  y = n(981631),
-  x = n(388032),
-  E = n(548969);
+  o = n(192379),
+  i = n(658722),
+  a = n.n(i),
+  c = n(392711),
+  l = n.n(c),
+  s = n(149765),
+  u = n(442837),
+  d = n(481060),
+  _ = n(271383),
+  g = n(430824),
+  b = n(594174),
+  m = n(700785),
+  f = n(709054),
+  p = n(962086),
+  h = n(160404),
+  O = n(225675),
+  C = n(981631),
+  S = n(388032),
+  v = n(548969);
 
-function O(e) {
+function I(e) {
   var t;
   return (0, r.jsx)("span", {
     style: {
@@ -33,70 +33,70 @@ function O(e) {
   })
 }
 
-function j(e) {
+function N(e) {
   let {
     guildId: t
-  } = e, n = (0, d.e7)([f.default], () => f.default.getCurrentUser()), a = (0, d.e7)([m.Z], () => m.Z.getGuild(t)), l = (0, d.e7)([m.Z], () => m.Z.getRoles(t)), {
-    impersonateType: j,
-    viewingRoles: N
-  } = (0, d.cj)([b.Z], () => ({
-    impersonateType: b.Z.getImpersonateType(t),
-    viewingRoles: b.Z.getViewingRoles(t)
-  })), C = j === v.z.SERVER_SHOP, I = (0, d.e7)([p.ZP], () => null != n ? p.ZP.getTrueMember(t, n.id) : null), [S, T] = (0, u.A7R)(null == N ? [] : g.default.keys(N)), P = i.useRef(a);
-  i.useEffect(() => {
+  } = e, n = (0, u.e7)([b.default], () => b.default.getCurrentUser()), i = (0, u.e7)([g.Z], () => g.Z.getGuild(t)), c = (0, u.e7)([g.Z], () => g.Z.getRoles(t)), {
+    impersonateType: N,
+    viewingRoles: T
+  } = (0, u.cj)([h.Z], () => ({
+    impersonateType: h.Z.getImpersonateType(t),
+    viewingRoles: h.Z.getViewingRoles(t)
+  })), x = N === O.z.SERVER_SHOP, P = (0, u.e7)([_.ZP], () => null != n ? _.ZP.getTrueMember(t, n.id) : null), [E, L] = (0, d.A7R)(null == T ? [] : f.default.keys(T)), y = o.useRef(i);
+  o.useEffect(() => {
     let e = {},
-      t = P.current;
-    if (null != t && null != j) {
-      for (let t of S) {
-        let n = l[t];
+      t = y.current;
+    if (null != t && null != N) {
+      for (let t of E) {
+        let n = c[t];
         null != n && (e[t] = n)
-      }(0, _.Zm)(t.id, {
-        type: j,
+      }(0, p.Zm)(t.id, {
+        type: N,
         roles: e
       })
     }
-  }, [S, j, l]);
-  let A = null != a && null != n && null != I ? s()(l).filter(e => -1 !== I.roles.indexOf(e.id)).sortBy(e => -e.position).first() : void 0,
-    w = i.useMemo(() => null != a && null != n ? Object.values(l).filter(e => e.id !== a.id).filter(e => {
+  }, [E, N, c]);
+  let k = null != i && null != n && null != P ? l()(c).filter(e => -1 !== P.roles.indexOf(e.id)).sortBy(e => -e.position).first() : void 0,
+    w = o.useMemo(() => null != i && null != n ? Object.values(c).filter(e => e.id !== i.id).filter(e => {
       var t;
-      return !C || (null === (t = e.tags) || void 0 === t ? void 0 : t.subscription_listing_id) != null
-    }).filter(e => (null == A ? void 0 : A.id) === e.id || h.r6(a, n.id, A, e)) : [], [a, n, C, A, l]);
-  if (null == n || null == a || null == I) return null;
-  let Z = {};
-  return (I.roles.forEach(e => {
-    let t = l[e];
-    null != t && (Z[t.id] = t)
-  }), c.e$(h.I0({
-    forceRoles: Z,
-    context: a
-  }), c.$e(y.Plq.MANAGE_GUILD, y.Plq.MANAGE_ROLES)) || a.isOwner(n.id)) ? (0, r.jsx)("div", {
-    className: E.container,
-    children: (0, r.jsx)(u.hQY, {
-      placeholder: x.NW.string(x.t.Sojqsr),
-      value: S,
-      onChange: T,
+      return !x || (null === (t = e.tags) || void 0 === t ? void 0 : t.subscription_listing_id) != null
+    }).filter(e => (null == k ? void 0 : k.id) === e.id || m.r6(i, n.id, k, e)) : [], [i, n, x, k, c]);
+  if (null == n || null == i || null == P) return null;
+  let A = {};
+  return (P.roles.forEach(e => {
+    let t = c[e];
+    null != t && (A[t.id] = t)
+  }), s.e$(m.I0({
+    forceRoles: A,
+    context: i
+  }), s.$e(C.Plq.MANAGE_GUILD, C.Plq.MANAGE_ROLES)) || i.isOwner(n.id)) ? (0, r.jsx)("div", {
+    className: v.container,
+    children: (0, r.jsx)(d.hQY, {
+      placeholder: S.NW.string(S.t.Sojqsr),
+      value: E,
+      onChange: L,
       autoFocus: !0,
       children: e => {
-        let t = w.reduce((t, n) => (o()(e.toLowerCase(), n.name.toLowerCase()) && t.push((0, r.jsxs)(u.lo1, {
+        let t = w.reduce((t, n) => (a()(e.toLowerCase(), n.name.toLowerCase()) && t.push((0, r.jsxs)(d.lo1, {
             value: n.id,
-            children: [(0, r.jsx)(u.lo1.Label, {
-              children: O(n)
-            }), (0, r.jsx)(u.lo1.Checkbox, {})]
+            children: [(0, r.jsx)(d.lo1.Label, {
+              children: I(n)
+            }), (0, r.jsx)(d.lo1.Checkbox, {})]
           }, n.id)), t), []),
-          n = l[a.getEveryoneRoleId()];
-        return null != n && t.push((0, r.jsxs)(u.lo1, {
+          n = c[i.getEveryoneRoleId()];
+        return null != n && t.push((0, r.jsxs)(d.lo1, {
           value: n.id,
           disabled: !0,
-          children: [(0, r.jsx)(u.lo1.Label, {
-            children: O(n)
-          }), (0, r.jsx)(u.lo1.Checkbox, {
+          children: [(0, r.jsx)(d.lo1.Label, {
+            children: I(n)
+          }), (0, r.jsx)(d.lo1.Checkbox, {
             checked: !0
           })]
         }, n.id)), t
       }
     })
-  }) : (0, r.jsx)(u.Text, {
+  }) : (0, r.jsx)(d.Text, {
     variant: "text-md/medium",
-    children: x.NW.string(x.t.MNSTbW)
+    children: S.NW.string(S.t.MNSTbW)
   })
 }

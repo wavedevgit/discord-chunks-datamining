@@ -1,21 +1,21 @@
-/** Chunk was on 76030 **/
-n.d(t, {
-  c: () => s
+/** Chunk was on 42856 **/
+n.d(e, {
+  c: () => u
 });
-var r = n(442837),
-  i = n(581883),
+var i = n(442837),
+  r = n(581883),
   a = n(594174),
-  o = n(981312),
-  l = n(667172);
-let s = () => {
-  let e = a.default.getCurrentUser(),
-    t = (0, r.e7)([i.Z], () => {
-      var e, t, n;
-      return null === (n = null === (t = i.Z.settings.privacy) || void 0 === t ? void 0 : null === (e = t.inappropriateConversationWarnings) || void 0 === e ? void 0 : e.value) || void 0 === n || n
+  l = n(981312),
+  o = n(667172);
+let u = () => {
+  let t = a.default.getCurrentUser(),
+    e = (0, i.e7)([r.Z], () => {
+      var t, e, n;
+      return null === (n = null === (e = r.Z.settings.privacy) || void 0 === e ? void 0 : null === (t = e.inappropriateConversationWarnings) || void 0 === t ? void 0 : t.value) || void 0 === n || n
     }),
-    n = (0, o.U)(),
-    s = (0, l.v4)({
+    n = (0, l.U)(),
+    u = (0, o.v4)({
       location: "useSafetyAlertsSettingOrDefault"
     });
-  return !!n && !!s || (n || (null == e ? void 0 : e.isStaff()) === !0) && t
+  return !!n && !!u || (n || (null == t ? void 0 : t.isStaff()) === !0) && e
 }

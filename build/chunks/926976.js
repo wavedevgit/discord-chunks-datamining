@@ -58,7 +58,7 @@ function E(e) {
   })
 }
 
-function k(e) {
+function I(e) {
   let {
     name: t,
     children: n,
@@ -92,7 +92,7 @@ function k(e) {
     })]
   })
 }
-let I = [{
+let k = [{
     id: "details",
     name: "Details",
     render: e => {
@@ -181,7 +181,7 @@ let I = [{
         }), (0, r.jsx)(E, {
           children: Object.entries(n).map(e => {
             let [t, n] = e;
-            return (0, r.jsx)(k, {
+            return (0, r.jsx)(I, {
               name: "".concat(t, ":"),
               copyValue: {
                 [t]: n || null
@@ -254,10 +254,10 @@ function R() {
     p(t, _.Z.loggedEvents)
   }, [t, p, i]);
   let [b, v] = a.useState(void 0), E = f.find(e => e.key === b), {
-    TabBar: k,
+    TabBar: I,
     renderSelectedTab: R
   } = (0, C.Z)({
-    tabs: I
+    tabs: k
   }, []);
   return (0, r.jsxs)("div", {
     ref: e,
@@ -310,7 +310,7 @@ function R() {
       className: T.subPanel,
       minHeight: 100,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300,
-      children: [(0, r.jsx)(k, {}), R({
+      children: [(0, r.jsx)(I, {}), R({
         loggedEvent: E,
         onClose: () => v(void 0)
       })]

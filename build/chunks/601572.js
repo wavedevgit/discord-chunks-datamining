@@ -1,4 +1,4 @@
-/** Chunk was on 38791 **/
+/** Chunk was on 93346 **/
 n.d(t, {
   default: () => k
 }), n(47120);
@@ -18,12 +18,12 @@ var o = n(200651),
   g = n(672339),
   m = n(898531),
   h = n(131951),
-  v = n(594174),
-  I = n(626135),
+  I = n(594174),
+  v = n(626135),
   C = n(747545),
   T = n(981631),
-  S = n(388032),
-  O = n(262474);
+  O = n(388032),
+  S = n(262474);
 
 function k(e) {
   let {
@@ -31,11 +31,11 @@ function k(e) {
     videoEnabled: n,
     onEnable: k,
     onClose: N
-  } = e, x = h.Z.getCameraComponent(), P = (0, u.Dt)(), w = (0, m.Z)(), E = b.qF.useSetting(), [A, y] = a.useState((0, f.P)(v.default.getCurrentUser())), L = (0, l.O)(), {
+  } = e, E = h.Z.getCameraComponent(), A = (0, u.Dt)(), x = (0, m.Z)(), P = b.qF.useSetting(), [w, L] = a.useState((0, f.P)(I.default.getCurrentUser())), y = (0, l.O)(), {
     analyticsLocations: B
   } = (0, s.ZP)(d.Z.CAMERA_PREVIEW), R = a.useRef(null);
   a.useEffect(() => {
-    I.default.track(T.rMx.OPEN_MODAL, {
+    v.default.track(T.rMx.OPEN_MODAL, {
       type: "Camera Preview Modal"
     })
   }, []), a.useEffect(() => {
@@ -46,7 +46,7 @@ function k(e) {
     await D(), r.Z.setVideoEnabled(!0), null == k || k()
   }, D = async () => {
     try {
-      await (0, g.wG)(A, {
+      await (0, g.wG)(w, {
         location: function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -66,41 +66,41 @@ function k(e) {
           return e
         }({
           page: T.ZY5.PREVIEW_CAMERA_MODAL
-        }, L.location)
+        }, y.location)
       })
     } catch (e) {}
-    await N(), (0, p.Up)(A)
+    await N(), (0, p.Up)(w)
   };
   return (0, o.jsx)(s.Gt, {
     value: B,
     children: (0, o.jsx)(c.Z, {
       page: T.ZY5.PREVIEW_CAMERA_MODAL,
       children: (0, o.jsxs)(i.Y0X, {
-        className: O.modalRoot,
+        className: S.modalRoot,
         size: i.CgR.DYNAMIC,
-        "aria-labelledby": P,
+        "aria-labelledby": A,
         transitionState: t,
         children: [(0, o.jsxs)(i.hzk, {
-          className: w ? O.contentWithVideoBackgrounds : O.content,
+          className: x ? S.contentWithVideoBackgrounds : S.content,
           scrollerRef: R,
           children: [(0, o.jsx)(i.X6q, {
-            id: P,
-            className: O.header,
+            id: A,
+            className: S.header,
             variant: "heading-xl/semibold",
-            children: n ? S.NW.string(S.t.LAwwbW) : S.NW.string(S.t["/HITVF"])
+            children: n ? O.NW.string(O.t.LAwwbW) : O.NW.string(O.t["/HITVF"])
           }), (0, o.jsx)(C.Z, {
             hidePreviewToggle: !0,
             showSmallBackgroundOptions: !0,
             hideDeviceHeader: !0,
             hideCameraSettingsLink: !0,
-            selectedBackgroundOption: A,
-            onSelectBackgroundOption: y,
+            selectedBackgroundOption: w,
+            onSelectBackgroundOption: L,
             hideDeviceSelector: n,
             renderCamera: e => (0, o.jsxs)("div", {
-              className: O.cameraPreview,
+              className: S.cameraPreview,
               children: [(0, o.jsx)("div", {
-                className: O.camera,
-                children: (0, o.jsx)(x, {
+                className: S.camera,
+                children: (0, o.jsx)(E, {
                   disabled: !1,
                   deviceId: e,
                   width: 368,
@@ -113,7 +113,7 @@ function k(e) {
         }), (0, o.jsxs)(i.mzw, {
           justify: _.Z.Justify.BETWEEN,
           children: [(() => {
-            let e = n ? S.NW.string(S.t.KQENho) : S.NW.string(S.t.kgIe9f);
+            let e = n ? O.NW.string(O.t.KQENho) : O.NW.string(O.t.kgIe9f);
             return (0, o.jsx)(i.zxk, {
               onClick: n ? D : W,
               size: i.zxk.Sizes.SMALL,
@@ -123,20 +123,20 @@ function k(e) {
           })(), (0, o.jsx)(i.XZJ, {
             size: 18,
             type: i.XZJ.Types.INVERTED,
-            value: E,
+            value: P,
             onChange: () => {
-              b.qF.updateSetting(!E), I.default.track(T.rMx.UPDATE_USER_SETTINGS_LOCAL, {
-                always_preview_video: !E
+              b.qF.updateSetting(!P), v.default.track(T.rMx.UPDATE_USER_SETTINGS_LOCAL, {
+                always_preview_video: !P
               })
             },
             children: (0, o.jsx)(i.Text, {
               variant: "text-sm/normal",
-              children: S.NW.string(S.t["3Ppr1t"])
+              children: O.NW.string(O.t["3Ppr1t"])
             })
           })]
         }), (0, o.jsx)(i.olH, {
           onClick: N,
-          className: O.modalClose
+          className: S.modalClose
         })]
       })
     })

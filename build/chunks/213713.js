@@ -28,12 +28,12 @@ var r = n(200651),
   O = n(780106),
   S = n(650613),
   E = n(789086),
-  k = n(206583),
-  I = n(866235),
+  I = n(206583),
+  k = n(866235),
   w = n(710662);
 let P = [{
   key: "type",
-  cellClassName: l()(I.cell, I.cellType),
+  cellClassName: l()(k.cell, k.cellType),
   render(e) {
     let {
       type: t
@@ -45,7 +45,7 @@ let P = [{
   }
 }, {
   key: "count",
-  cellClassName: l()(I.cell, I.cellCount),
+  cellClassName: l()(k.cell, k.cellCount),
   render(e) {
     let {
       entries: t
@@ -59,7 +59,7 @@ let P = [{
   }
 }, {
   key: "only?",
-  cellClassName: I.cell,
+  cellClassName: k.cell,
   render(e) {
     let {
       type: t
@@ -93,7 +93,7 @@ function Z(e) {
 
 function R() {
   var e, t;
-  let n = (0, u.e7)([T.Z], () => T.Z.getFeed(k.YN.GLOBAL_FEED)),
+  let n = (0, u.e7)([T.Z], () => T.Z.getFeed(I.YN.GLOBAL_FEED)),
     i = (0, u.e7)([T.Z], () => T.Z.getDebugImpressionCappingDisabled()),
     l = (0, u.e7)([N.Z], () => N.Z.getDebugFastImpressionCappingEnabled()),
     o = function(e) {
@@ -109,7 +109,7 @@ function R() {
     }(null == n ? void 0 : null === (e = n.entries) || void 0 === e ? void 0 : e.map(e => e.content)),
     c = (0, u.e7)([T.Z], () => {
       var e;
-      return (null === (e = T.Z.getFeedState(k.YN.GLOBAL_FEED)) || void 0 === e ? void 0 : e.loading) === !0
+      return (null === (e = T.Z.getFeedState(I.YN.GLOBAL_FEED)) || void 0 === e ? void 0 : e.loading) === !0
     }),
     [Z, R] = a.useState(""),
     L = (0, u.e7)([j.Z, x.Z], () => {
@@ -133,7 +133,7 @@ function R() {
   return (0, r.jsx)("div", {
     className: w.panel,
     children: (0, r.jsxs)(h.zJl, {
-      className: I.content,
+      className: k.content,
       children: [(0, r.jsxs)(h.hjN, {
         children: [(0, r.jsx)(h.vwX, {
           children: "Inventory"
@@ -147,7 +147,7 @@ function R() {
           onClick: function() {
             p.Z.dispatch({
               type: "CONTENT_INVENTORY_MANUAL_REFRESH",
-              feedId: k.YN.GLOBAL_FEED,
+              feedId: I.YN.GLOBAL_FEED,
               feature: d.L.INBOX
             })
           },

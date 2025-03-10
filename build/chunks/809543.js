@@ -1,4 +1,4 @@
-/** Chunk was on 76030 **/
+/** Chunk was on 39251 **/
 e.exports = {
   safetyPolicyNoticeContainer: "safetyPolicyNoticeContainer__86361",
   noticeContent: "noticeContent__86361",
