@@ -33,8 +33,8 @@ var i = n(200651),
   _ = n(681603),
   T = n(915614),
   D = n(268861),
-  k = n(690336),
-  A = n(333031),
+  A = n(690336),
+  k = n(333031),
   L = n(371651),
   R = n(610394),
   M = n(388627),
@@ -118,7 +118,7 @@ let X = r.memo(function(e) {
         r === G.AeJ.PRIMARY && t === i && n()
       },
       onContextMenu: Q,
-      children: r ? null : (0, i.jsx)(A.Z, {
+      children: r ? null : (0, i.jsx)(k.Z, {
         className: F.closeContainer,
         children: (0, i.jsx)(T.Z, {
           keybind: t,
@@ -133,7 +133,7 @@ let X = r.memo(function(e) {
       locked: t,
       focused: n
     } = e;
-    return t && n ? (0, i.jsx)(A.Z, {
+    return t && n ? (0, i.jsx)(k.Z, {
       className: F.closeContainer,
       children: (0, i.jsx)(T.Z, {
         onClick: () => d.Z.setInputLocked(!1, (0, Z.getPID)()),
@@ -184,7 +184,7 @@ function en(e) {
       keybind: null != t ? (0, N.BB)(t.shortcut, !0) : "???"
     }
   }, [n]), {
-    analyticsLocations: A
+    analyticsLocations: k
   } = (0, h.ZP)(p.Z.OVERLAY);
   return ! function(e, t) {
     let n = r.useRef({
@@ -254,7 +254,7 @@ function en(e) {
     }
     n.removeEventListener("contextmenu", K, !1), null == B && (B = Date.now(), d.Z.track(G.rMx.OVERLAY_UNLOCKED))
   }, [l, n]), (0, i.jsx)(h.Gt, {
-    value: A,
+    value: k,
     children: (0, i.jsx)(u.vWI, {
       children: C || f ? null : (0, i.jsx)(u.f6W, {
         theme: G.BRd.DARK,
@@ -264,7 +264,7 @@ function en(e) {
             locked: l,
             keybind: T,
             onClick: q
-          }), (0, i.jsx)(k.Z, {
+          }), (0, i.jsx)(A.Z, {
             className: o()({
               [F.layoutLocked]: l,
               [F.layoutUnlocked]: !l

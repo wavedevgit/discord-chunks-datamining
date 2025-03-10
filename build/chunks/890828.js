@@ -37,16 +37,16 @@ let D = e => {
       channel: t,
       voiceStates: n
     } = e;
-    return [t.name, ...n.flatMap(e => k(e))]
+    return [t.name, ...n.flatMap(e => A(e))]
   },
-  k = e => [e.userId, ... function(e) {
+  A = e => [e.userId, ... function(e) {
     let t = C.default.getUser(e.userId);
     if (null == t) return [];
     let n = t.username,
       i = (0, m.e3)(t);
     return Array.from(new Set([n, i.nick, ...Object.values(i.names)].flat().filter(Z.lm)))
   }(e)],
-  A = {
+  k = {
     searchType: O.S.FUZZY,
     sortType: O.E.JARO_WINKLER
   },
@@ -59,7 +59,7 @@ let D = e => {
     let {
       channel: t,
       query: n
-    } = e, [l] = (0, a.e7)([N.Z], () => [N.Z.getVoiceStatesForChannel(t.id), N.Z.getVoiceStateVersion()], [t.id], w.Q), [o, u] = r.useState([]), c = (0, v.c)(k, u, L);
+    } = e, [l] = (0, a.e7)([N.Z], () => [N.Z.getVoiceStatesForChannel(t.id), N.Z.getVoiceStateVersion()], [t.id], w.Q), [o, u] = r.useState([]), c = (0, v.c)(A, u, L);
     r.useEffect(() => {
       "" !== n.trim() && c(n, Object.values(l))
     }, [n, c, l]);
@@ -242,7 +242,7 @@ function U(e) {
   })], []).map(e => ({
     channel: e,
     voiceStates: Object.values(N.Z.getVoiceStatesForChannel(e.id)).filter(e => S.Z.isFriend(e.userId))
-  })), []), [c, d] = r.useState(""), [p, h] = r.useState([]), f = (0, v.c)(D, h, A), m = r.useCallback(e => {
+  })), []), [c, d] = r.useState(""), [p, h] = r.useState([]), f = (0, v.c)(D, h, k), m = r.useCallback(e => {
     l(e), n()
   }, [l, n]);
   r.useEffect(() => {

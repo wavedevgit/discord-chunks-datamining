@@ -123,7 +123,7 @@ function Z(e, t) {
     _ = Z ? w : j.NW.string(j.t["prl+ra"]),
     T = null != e && Z ? e.name : _,
     D = Z ? P : j.NW.string(j.t.R3CpPT),
-    k = null != e ? (0, i.jsx)(N, {
+    A = null != e ? (0, i.jsx)(N, {
       game: e
     }) : (0, i.jsx)("img", {
       src: n(328756),
@@ -131,7 +131,7 @@ function Z(e, t) {
       alt: ""
     });
   return C(S({
-    icon: k,
+    icon: A,
     title: T,
     body: D,
     hint: () => (0, g.Q)((0, O.P)(), j.t.e6giBQ, j.NW.string(j.t.jZkzVF)),

@@ -18,16 +18,16 @@ var r = n(200651),
   m = n(70097),
   g = n(594190),
   h = n(567409),
-  v = n(74299),
-  y = n(989941),
+  y = n(74299),
+  v = n(989941),
   I = n(199902),
   O = n(314897),
   C = n(592125),
   x = n(430824),
   P = n(131951),
-  k = n(944486),
-  L = n(449224),
-  w = n(574254),
+  w = n(944486),
+  k = n(449224),
+  L = n(574254),
   E = n(556296),
   N = n(237997),
   T = n(451478),
@@ -136,7 +136,7 @@ let eo = o.memo(function(e) {
   });
 
 function ei() {
-  if (null != w.Z.getContextMenu()) {
+  if (null != L.Z.getContextMenu()) {
     (0, u.Zy)();
     return
   }
@@ -168,7 +168,7 @@ function eu() {
       incompatibleApp: a,
       hasValidResolution: u,
       hasZeroSizeDimension: m,
-      keybind: w,
+      keybind: L,
       isPreviewingInGame: Z
     } = (0, c.cj)([F.ZP, N.default, T.Z, E.ZP], () => {
       let t = T.Z.windowSize((0, D.ZY)(e)),
@@ -210,12 +210,12 @@ function eu() {
   function() {
     let e = o.useRef(!1),
       t = (0, H.pL)(),
-      n = k.Z.getVoiceChannelId(),
+      n = w.Z.getVoiceChannelId(),
       r = C.Z.getChannel(n),
       a = null != r ? x.Z.getGuild(r.guild_id) : null,
       i = null != I.Z.getCurrentUserActiveStream(),
       c = null != n,
-      l = (0, v.Z)(P.Z) && !i && null != t,
+      l = (0, y.Z)(P.Z) && !i && null != t,
       _ = c && null != a && null != n,
       {
         showKeybindIndicators: u,
@@ -254,11 +254,11 @@ function eu() {
     }
     e.removeEventListener("contextmenu", en, !1), null == et && (et = Date.now(), s.Z.track(X.rMx.OVERLAY_UNLOCKED))
   }, [t, e]);
-  let er = (0, c.e7)([k.Z], () => k.Z.getVoiceChannelId()),
+  let er = (0, c.e7)([w.Z], () => w.Z.getVoiceChannelId()),
     eu = (0, c.e7)([C.Z], () => C.Z.getChannel(er)),
     es = (0, c.e7)([x.Z], () => null != eu ? x.Z.getGuild(eu.guild_id) : null),
     ed = (0, c.e7)([O.default], () => O.default.getId()),
-    ef = (0, c.e7)([g.ZP, L.Z], () => (0, y.Z)(g.ZP, L.Z)),
+    ef = (0, c.e7)([g.ZP, k.Z], () => (0, v.Z)(g.ZP, k.Z)),
     eb = (0, h.Ns)(null == ef ? void 0 : ef.id),
     ep = (0, c.e7)([p.Z], () => null != p.Z.getLastFeedFetchDate(q.YN.GAME_PROFILE_FEED)),
     em = (0, d.Z)(ep);
@@ -274,7 +274,7 @@ function eu() {
           children: J.NW.string(J.t.iOq96u)
         }), ee, (!t || j.has(X.O0n.TEXT_WIDGET)) && (0, r.jsx)(eo, {
           locked: t,
-          keybind: w,
+          keybind: L,
           onClick: ei
         }), u ? (0, r.jsx)(V.Z, {
           className: i()({
@@ -296,7 +296,7 @@ function eu() {
           channelId: er
         }), (0, r.jsx)(G.Z, {
           locked: M,
-          keybind: w
+          keybind: L
         }), (0, r.jsx)(B.Z, {})]
       })
     })

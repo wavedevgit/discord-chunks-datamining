@@ -140,15 +140,15 @@ let y = 8,
       },
       config: b,
       trail: 100 * (n === Z)
-    }, n !== Z ? "animate-never" : "respect-motion-settings"), D = (0, p.ee)(() => new Set(x.map(e => e.user.id)), [x, I]), k = (0, p.ee)(() => new Set(x.filter(e => j.has((0, c.V9)(e.stream))).map(e => e.user.id)), [x, j, I]);
+    }, n !== Z ? "animate-never" : "respect-motion-settings"), D = (0, p.ee)(() => new Set(x.map(e => e.user.id)), [x, I]), A = (0, p.ee)(() => new Set(x.filter(e => j.has((0, c.V9)(e.stream))).map(e => e.user.id)), [x, j, I]);
     return r.useEffect(() => {
       0 !== D.size && (0, p.zi)(m.Odu.GO_LIVE, {
         locked: d.default.isInstanceLocked(),
         shownUserIds: Array.from(D),
-        liveUserIds: Array.from(k),
+        liveUserIds: Array.from(A),
         contentInventoryIds: []
       })
-    }, [D, k]), (0, i.jsx)("div", {
+    }, [D, A]), (0, i.jsx)("div", {
       className: o()({
         [g.gridContainer]: !0,
         [g.vertical]: w,

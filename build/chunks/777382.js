@@ -49,11 +49,11 @@ function h(e, t) {
   }), e
 }
 
-function v(e) {
+function y(e) {
   return e.widget.id
 }
 
-function y(e, t, n, o) {
+function v(e, t, n, o) {
   return n === i.pJH.YEETED ? null : (0, r.jsx)(b.Z, h(g({}, t), {
     transitionState: n,
     cleanUp: o,
@@ -91,8 +91,8 @@ let I = [],
     }), [t, b]);
     return (0, r.jsx)(i.W3x, {
       items: O,
-      renderItem: y,
-      getItemKey: v,
+      renderItem: v,
+      getItemKey: y,
       wrapChildren: C
     })
   })

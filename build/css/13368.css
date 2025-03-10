@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 184412d52257ddf2
+  Original File Name: 14fcf68bb6fa674e
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -236,11 +236,52 @@
     margin-left: 0
 }
 
-.body__81a05,.nowPlayingNotification__81a05 {
+.nowPlayingNotification__81a05 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 4px
+    gap: 4px;
+    width: -moz-max-content;
+    width: max-content;
+    max-width: 100%
+}
+
+.nowPlayingNotificationAnimationWrapper__81a05 {
+    width: -moz-max-content!important;
+    width: max-content!important;
+    border-radius: 300px!important
+}
+
+.nowPlayingNotificationAnimationWrapper__81a05 {
+    left: auto;
+    right: auto;
+    background-color: var(--bg-base-tertiary);
+    opacity: .9
+}
+
+.nowPlayingNotificationContainer__81a05 {
+    width: -moz-max-content!important;
+    width: max-content!important;
+    padding: 8px 12px!important
+}
+
+.nowPlayingNotificationWrapper__81a05 {
+    width: -moz-max-content!important;
+    width: max-content!important;
+    position: relative!important;
+    overflow: visible!important
+}
+
+.body__81a05 {
+    padding-right: 2px!important
+}
+
+.body__81a05 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    padding-top: 1px
 }
 
 .nowPlayingNotificationIcon__81a05 {
@@ -251,7 +292,9 @@
 }
 
 .gameIcon__81a05 {
-    display: inline-block
+    display: inline-block;
+    margin-top: -1px;
+    border-radius: 2px
 }
 
 .bodyText__81a05,.gameIcon__81a05 {

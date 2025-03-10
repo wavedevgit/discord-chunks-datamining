@@ -42,8 +42,8 @@ function C(e) {
     pinned: _,
     anchorTop: T,
     anchorLeft: D,
-    showEmpty: k = !0
-  } = e, A = 2 * N + 2 * Z, {
+    showEmpty: A = !0
+  } = e, k = 2 * N + 2 * Z, {
     width: L,
     height: R
   } = {
@@ -109,11 +109,11 @@ function C(e) {
       layout: s,
       tileWidth: u
     }
-  }(!1, X.length, null != W ? W : L - A, null != V ? V : R - A, $), en = {
+  }(!1, X.length, null != W ? W : L - k, null != V ? V : R - k, $), en = {
     id: t,
     width: L,
     height: R,
-    sizeOffset: A,
+    sizeOffset: k,
     layout: et,
     padding: N,
     participants: X.length
@@ -220,7 +220,7 @@ function C(e) {
     s.Z.setGpuBoostRequested(E.zS.OVERLAY_VIDEO_STREAM_RENDERING, !q)
   }, [q]), (0, c.ZP)(() => () => {
     s.Z.setGpuBoostRequested(E.zS.OVERLAY_VIDEO_STREAM_RENDERING, !1)
-  }), q && C) ? null : q && !C ? k ? C ? null : (0, i.jsx)(v.E, {
+  }), q && C) ? null : q && !C ? A ? C ? null : (0, i.jsx)(v.E, {
     emptyText: j.NW.string(j.t["T6+rX1"]),
     icon: o.hGI,
     absolute: !0

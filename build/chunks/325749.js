@@ -25,10 +25,10 @@ var o = t(200651),
   I = t(592125),
   P = t(271383),
   O = t(594174),
-  j = t(358085),
-  k = t(51144),
-  w = t(998502),
-  N = t(228488),
+  w = t(358085),
+  N = t(51144),
+  j = t(998502),
+  k = t(228488),
   T = t(145597),
   Z = t(214629),
   S = t(317381),
@@ -56,7 +56,7 @@ function D(e) {
     var t;
     if (null == e) return null;
     let r = G.get(e.id),
-      a = null !== (t = null == r ? void 0 : r.nick) && void 0 !== t ? t : k.ZP.getName(e);
+      a = null !== (t = null == r ? void 0 : r.nick) && void 0 !== t ? t : N.ZP.getName(e);
     return (0, o.jsx)(c.DY3, {
       text: a,
       position: "bottom",
@@ -83,7 +83,7 @@ function D(e) {
         b.hY(W.KJ3.ACTIVITY_POPOUT, e)
       }, []);
     return {
-      canStayOnTop: j.isPlatformEmbedded && w.ZP.supportsFeature(W.eRX.POPOUT_WINDOWS),
+      canStayOnTop: w.isPlatformEmbedded && j.ZP.supportsFeature(W.eRX.POPOUT_WINDOWS),
       popoutWindowAlwaysOnTop: e,
       handleStayOnTop: n
     }
@@ -97,14 +97,14 @@ function D(e) {
       currentDocument: n,
       rootNode: t
     } = (0, E.Z)(), [o, a] = r.useState(!1), i = r.useCallback(() => {
-      null != t && o && (a(!1), (0, N.Pr)(t, n))
+      null != t && o && (a(!1), (0, k.Pr)(t, n))
     }, [t, n, o]), l = r.useCallback(() => {
-      null != t && (o ? i() : (a(!0), (0, N.Dj)(t)))
+      null != t && (o ? i() : (a(!0), (0, k.Dj)(t)))
     }, [t, o, i]), c = r.useCallback(() => {
-      null != t && !(0, N.rB)(t, n) && o && l()
+      null != t && !(0, k.rB)(t, n) && o && l()
     }, [t, n, o, l]);
-    return r.useEffect(() => (null == n || n.addEventListener(N.NO, c), () => {
-      null == n || n.removeEventListener(N.NO, c)
+    return r.useEffect(() => (null == n || n.addEventListener(k.NO, c), () => {
+      null == n || n.removeEventListener(k.NO, c)
     }), [n, c]), {
       rootNode: t,
       popoutWindow: e,
