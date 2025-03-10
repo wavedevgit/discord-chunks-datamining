@@ -1,16 +1,16 @@
 /** Chunk was on 61323 **/
 n.d(t, {
-  fw: () => i,
+  fw: () => r,
   qy: () => o,
   sJ: () => c
 });
-var a, s, l = n(544891),
-  r = n(981631),
-  i = ((a = {}).HCAPTCHA_RQDATA = "hCaptchaRqdata", a.SMITE_RQDATA = "SmiteRqdata", a.RECAPTCHA = "Recaptcha", a.RECAPTCHA_ENTERPRISE = "RecaptchaEnterprise", a),
-  c = ((s = {})[s.EASY = 1] = "EASY", s[s.MODERATE = 2] = "MODERATE", s[s.DIFFICULT = 3] = "DIFFICULT", s[s.VERY_DIFFICULT = 4] = "VERY_DIFFICULT", s);
+var a, l, s = n(544891),
+  i = n(981631),
+  r = ((a = {}).HCAPTCHA_RQDATA = "hCaptchaRqdata", a.SMITE_RQDATA = "SmiteRqdata", a.RECAPTCHA = "Recaptcha", a.RECAPTCHA_ENTERPRISE = "RecaptchaEnterprise", a),
+  c = ((l = {})[l.EASY = 1] = "EASY", l[l.MODERATE = 2] = "MODERATE", l[l.DIFFICULT = 3] = "DIFFICULT", l[l.VERY_DIFFICULT = 4] = "VERY_DIFFICULT", l);
 async function o(e, t) {
-  await l.tn.post({
-    url: r.ANM.CAPTCHA_TEST,
+  await s.tn.post({
+    url: i.ANM.CAPTCHA_TEST,
     body: {
       decider: e,
       options: t

@@ -35,8 +35,8 @@ var r = n(200651),
   R = n(781428),
   w = n(423527),
   L = n(981631),
-  k = n(188785),
-  D = n(701476),
+  D = n(188785),
+  k = n(701476),
   W = n(436620),
   B = n(388032),
   M = n(802138);
@@ -112,7 +112,7 @@ class V extends i.PureComponent {
       let {
         channel: e
       } = t;
-      null != e && ((0, v.c)(D.M5.INVITE_UNCLAIMED), null != t.guild ? i(L.Z5c.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code)) : d.ZP.transitionToInvite(t, i))
+      null != e && ((0, v.c)(k.M5.INVITE_UNCLAIMED), null != t.guild ? i(L.Z5c.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code)) : d.ZP.transitionToInvite(t, i))
     }
   }
   getInviteKey() {
@@ -121,7 +121,7 @@ class V extends i.PureComponent {
   }
   getMode() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : this.props;
-    return k.a ? F.REGISTER : e.login ? F.LOGIN : F.REGISTER
+    return D.a ? F.REGISTER : e.login ? F.LOGIN : F.REGISTER
   }
   track(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null,
@@ -262,7 +262,7 @@ class V extends i.PureComponent {
       case L.r2o.APP_NOT_OPENED:
         return this.renderContinue();
       case L.r2o.RESOLVING:
-        return k.a ? this.renderSpinner(B.NW.string(B.t.MKDeyM)) : this.renderSpinner(B.NW.string(B.t["Z+hCVV"]));
+        return D.a ? this.renderSpinner(B.NW.string(B.t.MKDeyM)) : this.renderSpinner(B.NW.string(B.t["Z+hCVV"]));
       case L.r2o.APP_OPENING:
         return this.renderSpinner(B.NW.string(B.t["Z+hCVV"]));
       case L.r2o.RESOLVED:

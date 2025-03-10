@@ -1,6 +1,6 @@
 /** Chunk was on 20565 **/
 r.d(t, {
-  Z: () => p,
+  Z: () => y,
   l: () => b
 });
 var n = r(192379),
@@ -47,17 +47,17 @@ let m = new o.Z("VirtualCurrency"),
           e()
         }, r)
       }
-    }, [o]), p = (0, n.useCallback)(() => {
+    }, [o]), y = (0, n.useCallback)(() => {
       (0, s.wH)() && (0, s.jj)()
     }, []);
     return r ? {
       rewardOrbQuantity: o,
       openIntroToOrbsClaimedCoachmark: b,
-      closeIntroToOrbsClaimedCoachmark: p
+      closeIntroToOrbsClaimedCoachmark: y
     } : {
       rewardOrbQuantity: void 0,
       openIntroToOrbsClaimedCoachmark: d.dG4,
       closeIntroToOrbsClaimedCoachmark: d.dG4
     }
   },
-  p = b
+  y = b

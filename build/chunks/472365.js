@@ -27,8 +27,8 @@ var i = t(200651),
   C = t(855981),
   A = t(55543),
   T = t(626135),
-  P = t(768581),
-  L = t(358085),
+  L = t(768581),
+  P = t(358085),
   b = t(998502),
   R = t(379164),
   W = t(590965),
@@ -38,7 +38,7 @@ var i = t(200651),
   M = t(782892),
   k = t(802138);
 
-function U() {
+function O() {
   let {
     analyticsLocations: e,
     sourceAnalyticsLocations: n
@@ -77,7 +77,7 @@ function U() {
   })
 }
 
-function O(e) {
+function U(e) {
   let {
     className: n
   } = e;
@@ -111,7 +111,7 @@ function y(e) {
       transitionState: n,
       children: (0, i.jsxs)(c.hzk, {
         className: M.errorContent,
-        children: [(0, i.jsx)(O, {
+        children: [(0, i.jsx)(U, {
           className: M.errorImage
         }), (0, i.jsx)(c.X6q, {
           id: t,
@@ -148,7 +148,7 @@ function F(e) {
     {
       invite: A,
       error: z,
-      submitting: O
+      submitting: U
     } = (0, o.cj)([W.Z], () => W.Z.getProps());
   l.useEffect(() => {
     if (null != A && null != A.guild) {
@@ -160,7 +160,7 @@ function F(e) {
     nickname: F
   } = (0, E.XW)();
   l.useEffect(() => {
-    !__OVERLAY__ && L.isPlatformEmbedded && ((0, L.isWindows)() ? b.ZP.minimize() : b.ZP.restore(), b.ZP.focus())
+    !__OVERLAY__ && P.isPlatformEmbedded && ((0, P.isWindows)() ? b.ZP.minimize() : b.ZP.restore(), b.ZP.focus())
   }, []);
   let G = (0, v.Dt)(),
     {
@@ -182,7 +182,7 @@ function F(e) {
     target_application: H
   } = A, X = null != w, Q = null != A.stage_instance, q = null == A.guild && null == A.channel && null != A.inviter;
   if (null != H) t = null == w ? void 0 : w.name, a = j.ZP.createFromServer(H).getCoverImageURL(1024);
-  else if (null != w) t = w.name, a = P.ZP.getGuildSplashURL({
+  else if (null != w) t = w.name, a = L.ZP.getGuildSplashURL({
     id: w.id,
     splash: w.splash
   });
@@ -230,7 +230,7 @@ function F(e) {
             })
           }) : null, (0, i.jsxs)("div", {
             className: M.ctas,
-            children: [J ? (0, i.jsx)(U, {}) : null, null == H ? (0, i.jsx)(c.ua7, {
+            children: [J ? (0, i.jsx)(O, {}) : null, null == H ? (0, i.jsx)(c.ua7, {
               text: J ? D.NW.string(D.t.iLyuDA) : null,
               position: "bottom",
               children: e => {
@@ -241,7 +241,7 @@ function F(e) {
                 return (0, i.jsx)(p.zx, {
                   size: p.zx.Sizes.LARGE,
                   onClick: B,
-                  submitting: O,
+                  submitting: U,
                   disabled: J,
                   color: Q ? p.zx.Colors.GREEN : p.zx.Colors.BRAND,
                   onMouseEnter: n,
@@ -265,13 +265,13 @@ function F(e) {
               children: [(0, i.jsx)(p.zx, {
                 size: p.zx.Sizes.LARGE,
                 onClick: B,
-                submitting: O,
+                submitting: U,
                 children: D.NW.string(D.t.RscU7O)
               }), (0, i.jsx)(p.zx, {
                 color: p.zx.Colors.PRIMARY,
                 size: p.zx.Sizes.LARGE,
                 onClick: B,
-                submitting: O,
+                submitting: U,
                 children: D.NW.string(D.t.eylRaW)
               })]
             }), (0, i.jsx)(x.Z, {

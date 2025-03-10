@@ -35,8 +35,8 @@ var r = n(200651),
   R = n(625054),
   w = n(645499),
   L = n(320830),
-  k = n(721751),
-  D = n(718182),
+  D = n(721751),
+  k = n(718182),
   W = n(223543),
   B = n(73906),
   M = n(299852),
@@ -98,7 +98,7 @@ let eo = (0, L.Z)(V.Z),
   ec = (0, L.Z)(G.Z),
   eu = (0, L.Z)(C.Z),
   ed = (0, L.Z)(q.Z),
-  eh = (0, L.Z)(D.Z),
+  eh = (0, L.Z)(k.Z),
   ep = (0, L.Z)(W.Z),
   eg = (0, L.Z)(X.Z),
   e_ = (0, L.Z)(b.Z),
@@ -210,7 +210,7 @@ class ej extends i.PureComponent {
     } = this.state, {
       inviteKey: n
     } = this.props;
-    return (0, r.jsxs)(k.Z, {
+    return (0, r.jsxs)(D.Z, {
       splash: e,
       children: [(0, r.jsx)(_.Z, {
         path: $.Z5c.LOGIN_HANDOFF,

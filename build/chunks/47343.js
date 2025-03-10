@@ -30,7 +30,7 @@ let v = () => {
     setMutedServer: C,
     guildId: A,
     inviteCode: T
-  } = (0, p.XW)(), P = null === (e = o.Z.getProps().invite) || void 0 === e ? void 0 : e.is_nickname_changeable, L = (0, _.m4)({
+  } = (0, p.XW)(), L = null === (e = o.Z.getProps().invite) || void 0 === e ? void 0 : e.is_nickname_changeable, P = (0, _.m4)({
     location: "InviteSettingsControls"
   });
   return (0, i.jsxs)("div", {
@@ -68,14 +68,14 @@ let v = () => {
         children: (0, i.jsx)(d.Z, {
           width: 18,
           height: 18,
-          direction: d.Z.Directions.UP
+          direction: d.Z.Directions.DOWN
         })
       })]
     }), (0, i.jsxs)("div", {
       className: r()(g.customizationSection, {
         [g.opened]: n
-      }, P ? null : g.condensed),
-      children: [P && (0, i.jsxs)("div", {
+      }, L ? null : g.condensed),
+      children: [L && (0, i.jsxs)("div", {
         className: g.serverNickname,
         children: [(0, i.jsx)(s.Text, {
           variant: "eyebrow",
@@ -95,7 +95,7 @@ let v = () => {
         title: x.NW.string(x.t.bN4m1N),
         value: E,
         onChange: S
-      }), L && (0, i.jsx)(u.Z, {
+      }), P && (0, i.jsx)(u.Z, {
         title: x.NW.string(x.t["0nZCqK"]),
         value: I,
         onChange: C

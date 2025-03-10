@@ -35,8 +35,8 @@ var r, i = n(200651),
   R = n(314897),
   w = n(117240),
   L = n(896797),
-  k = n(626135),
-  D = n(585483),
+  D = n(626135),
+  k = n(585483),
   W = n(358085),
   B = n(481153),
   M = n(588705),
@@ -106,7 +106,7 @@ class X extends(r = o.PureComponent) {
       invite: r,
       location: i
     } = this.props;
-    e && !t ? (0, _.is)() : t && this.loginOrSSO(t, i, !0), k.default.track(F.rMx.LOGIN_VIEWED, Y({
+    e && !t ? (0, _.is)() : t && this.loginOrSSO(t, i, !0), D.default.track(F.rMx.LOGIN_VIEWED, Y({
       location: null != r ? "Invite Login Page" : "Non-Invite Login Page",
       login_source: this.loginSource,
       authenticated: t
@@ -598,7 +598,7 @@ class X extends(r = o.PureComponent) {
     super(e), q(this, "loginRef", void 0), q(this, "passwordRef", void 0), q(this, "codeRef", void 0), q(this, "handleAuthToken", async e => {
       this.setState({
         errors: {}
-      }), await g.Z.loginToken(e, !1), k.default.track(F.rMx.LOGIN_SUCCESSFUL, {
+      }), await g.Z.loginToken(e, !1), D.default.track(F.rMx.LOGIN_SUCCESSFUL, {
         source: F.uRl.QR_CODE,
         login_source: this.loginSource,
         gift_code_sku_id: this.giftCodeSKUId,
@@ -634,7 +634,7 @@ class X extends(r = o.PureComponent) {
         password: t,
         undelete: n
       } = this.state;
-      null == e || e.preventDefault(), D.S.dispatch(F.CkL.WAVE_EMPHASIZE), this.setState({
+      null == e || e.preventDefault(), k.S.dispatch(F.CkL.WAVE_EMPHASIZE), this.setState({
         errors: {}
       });
       try {
@@ -695,7 +695,7 @@ class X extends(r = o.PureComponent) {
         data: n,
         ticket: r
       } = e;
-      return D.S.dispatch(F.CkL.WAVE_EMPHASIZE), g.Z.loginMFAv2({
+      return k.S.dispatch(F.CkL.WAVE_EMPHASIZE), g.Z.loginMFAv2({
         code: n,
         ticket: r,
         mfaType: t,
@@ -709,7 +709,7 @@ class X extends(r = o.PureComponent) {
         errors: {}
       });
       try {
-        if (D.S.dispatch(F.CkL.WAVE_EMPHASIZE), !await g.Z.forgotPassword(t)) return;
+        if (k.S.dispatch(F.CkL.WAVE_EMPHASIZE), !await g.Z.forgotPassword(t)) return;
         (0, h.h7j)(e => (0, i.jsx)(h.ConfirmModal, J(Y({
           header: V.NW.string(V.t.f5Pi7O),
           confirmText: V.NW.string(V.t.BddRzc),
@@ -761,7 +761,7 @@ class X extends(r = o.PureComponent) {
       } = this.props, s = null != o ? (0, c.parse)(o.search) : {};
       "" !== t && (s.email = t), null != n ? (s.mode = "register", e = F.Z5c.INVITE(n.code)) : null != r ? (s.mode = "register", e = F.Z5c.GIFT_CODE(r.code)) : null != i ? e = F.Z5c.GUILD_TEMPLATE(i.code) : null != l ? (e = F.Z5c.REGISTER, s.redirect_to = l) : e = F.Z5c.REGISTER, this.loginReset(), a(e, {
         search: (0, c.stringify)(s)
-      }), D.S.dispatch(F.CkL.WAVE_EMPHASIZE)
+      }), k.S.dispatch(F.CkL.WAVE_EMPHASIZE)
     });
     let r = null != e.location ? (0, c.parse)(e.location.search) : {};
     this.state = {

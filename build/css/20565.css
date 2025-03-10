@@ -1,6 +1,6 @@
 /**
   Module ID: 20565
-  Original File Name: 25255a0e488ff2b8
+  Original File Name: 7d0710fb3f3036e0
 **/
 .modal_cf1d1c {
     background-color: var(--black);
@@ -22,7 +22,13 @@
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.errorImage_cf1d1c {
+    width: 180px;
+    margin: 50px auto 0
 }
 
 .errorContentContainer_cf1d1c {
@@ -50,8 +56,11 @@
 }
 
 .closeBtn_cf1d1c {
-    grid-area: close-btn;
-    color: #fff
+    color: #fff!important
+}
+
+.closeBtn_cf1d1c {
+    grid-area: close-btn
 }
 
 .img_cf1d1c {

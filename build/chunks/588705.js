@@ -70,9 +70,9 @@ let S = () => (0, i.jsxs)(l.Fragment, {
         disableUser: S = !1,
         error: A,
         flatActivityCount: T = !1,
-        isRegister: P = !1
+        isRegister: L = !1
       } = e,
-      L = (0, d.WR)({
+      P = (0, d.WR)({
         location: "invite"
       }),
       {
@@ -131,7 +131,7 @@ let S = () => (0, i.jsxs)(l.Fragment, {
         username: e
       }), k = !0, o = null != A ? null : (0, i.jsx)(s.DK, {
         className: j.directInviteSubTitle,
-        children: P ? f.NW.format(f.t["6r4JiY"], {
+        children: L ? f.NW.format(f.t["6r4JiY"], {
           username: e
         }) : f.NW.format(f.t.Quj7HR, {
           username: e
@@ -167,7 +167,7 @@ let S = () => (0, i.jsxs)(l.Fragment, {
         online: c.approximate_presence_count,
         total: c.approximate_member_count,
         flat: T
-      }), L ? (0, i.jsx)(m.R, {}) : (0, i.jsx)(s.jQ, {
+      }), P ? (0, i.jsx)(m.R, {}) : (0, i.jsx)(s.jQ, {
         user: b
       })]
     })
