@@ -1,6 +1,6 @@
 /** Chunk was on 67127 **/
 n.r(t), n.d(t, {
-  default: () => d
+  default: () => f
 }), n(301563), n(757143);
 var r = n(200651),
   o = n(192379),
@@ -11,7 +11,7 @@ var r = n(200651),
   s = n(675207),
   u = n(981631);
 
-function f(e) {
+function d(e) {
   let {
     platformType: t
   } = e, n = (0, l.k6)();
@@ -39,13 +39,13 @@ function f(e) {
     platformType: t
   })
 }
-let d = function(e) {
+let f = function(e) {
   let {
     match: t
   } = e, n = t.params.type, {
     two_way_link_type: o
   } = c.parse(window.location.search);
-  return [u.ABu.XBOX, u.ABu.PLAYSTATION_STAGING, u.ABu.PLAYSTATION, u.ABu.CRUNCHYROLL].includes(n) && o === i.g.DESKTOP ? (0, r.jsx)(f, {
+  return [u.ABu.XBOX, u.ABu.PLAYSTATION_STAGING, u.ABu.PLAYSTATION, u.ABu.CRUNCHYROLL].includes(n) && o === i.g.DESKTOP ? (0, r.jsx)(d, {
     platformType: n
   }) : null
 }

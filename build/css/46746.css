@@ -1,6 +1,6 @@
 /**
   Module ID: 46746
-  Original File Name: af9ab6407ca93b0f
+  Original File Name: 215c534b7c221b53
 **/
 .card__4bb93 {
     display: flex;
@@ -1939,7 +1939,20 @@
     display: flex
 }
 
-.source_febe19:hover .sourcePreviewContainer_febe19:before {
+.source_febe19:hover:not(.selectedSource_febe19) .sourcePreviewContainer_febe19:before {
+    border-color: var(--bg-mod-strong)
+}
+
+.selectedSource_febe19 .sourcePreviewContainer_febe19:before {
+    border-color: var(--brand-500)
+}
+
+.sourcePreviewContainer_febe19 {
+    border-radius: var(--radius-md);
+    position: relative
+}
+
+.sourcePreviewContainer_febe19:before {
     content: "";
     position: absolute;
     top: -4px;
@@ -1947,12 +1960,7 @@
     left: -4px;
     right: -4px;
     border-radius: var(--radius-md);
-    border: 2px solid var(--bg-mod-strong)
-}
-
-.sourcePreviewContainer_febe19 {
-    border-radius: var(--radius-md);
-    position: relative
+    border: 2px solid transparent
 }
 
 .sourcePreviewImage_febe19 {
@@ -2057,13 +2065,16 @@
 }
 
 .root__0a8d6 {
-    display: flex;
     align-items: center;
     gap: var(--spacing-16)
 }
 
-.summary__0a8d6 {
+.root__0a8d6,.summary__0a8d6 {
     display: flex;
+    min-width: 0
+}
+
+.summary__0a8d6 {
     flex-direction: column;
     justify-content: center;
     gap: 2px
@@ -2089,10 +2100,29 @@
     color: var(--bg-mod-subtle)
 }
 
+.sourceOrPresetName__0a8d6 {
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.screenArrowIcon__0a8d6 {
+    padding: var(--spacing-8);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-strong)
+}
+
+.sourceIcon__0a8d6 {
+    width: 40px;
+    height: 40px
+}
+
 .root__7f727 {
     background-color: var(--bg-base-primary);
     height: calc(100vh - 80px);
-    max-height: 720px
+    max-height: 720px;
+    width: 800px
 }
 
 .root__7f727.nativePicker__7f727 {
@@ -2102,7 +2132,8 @@
 .footer__7f727 {
     background-color: var(--bg-surface-raised);
     border: 1px solid var(--border-subtle);
-    filter: var(--shadow-top-ledge-filter)
+    filter: var(--shadow-top-ledge-filter);
+    gap: var(--spacing-32)
 }
 
 .footer__7f727,.header__7f727 {
@@ -2127,4 +2158,9 @@
     display: flex;
     align-items: center;
     gap: var(--spacing-8)
+}
+
+.streamButton__7f727 {
+    min-width: 0;
+    padding: var(--spacing-12) var(--spacing-24)
 }

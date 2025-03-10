@@ -83,26 +83,29 @@ function Y(e) {
     members: t,
     membersOnline: n,
     isLarge: i,
-    isStacked: a
-  } = e, l = [];
-  return null != n && n > 0 && l.push((0, r.jsxs)("div", {
+    isStacked: a,
+    textColor: l
+  } = e, s = [];
+  return null != n && n > 0 && s.push((0, r.jsxs)("div", {
     className: B.statusWrapper,
     children: [(0, r.jsx)("i", {
       className: B.statusOnline
     }), (0, r.jsx)(u.Text, {
       variant: "text-xs/normal",
       className: B.count,
+      color: l,
       children: U.NW.format(U.t["LC+S+v"], {
         membersOnline: n
       })
     })]
-  }, "onlineCount")), null != t && l.push((0, r.jsxs)("div", {
+  }, "onlineCount")), null != t && s.push((0, r.jsxs)("div", {
     className: B.statusWrapper,
     children: [(0, r.jsx)("i", {
       className: B.statusOffline
     }), (0, r.jsx)(u.Text, {
       variant: "text-xs/normal",
       className: B.count,
+      color: l,
       children: U.NW.format(U.t.zRl6XV, {
         count: t
       })
@@ -112,7 +115,7 @@ function Y(e) {
       [B.large]: i,
       [B.stacked]: a
     }),
-    children: l
+    children: s
   })
 }
 
@@ -121,7 +124,8 @@ function X(e) {
     channel: t,
     guild: n,
     isStacked: i,
-    hasEnded: a
+    hasEnded: a,
+    textColor: l
   } = e;
   if (null != t && null != n) {
     let e = (0, C.KS)(t, n);
@@ -137,6 +141,7 @@ function X(e) {
       }) : null, (0, r.jsx)(I.Z, {
         children: (0, r.jsx)(u.Text, {
           variant: "text-xs/normal",
+          color: l,
           children: U.NW.format(U.t["dc+LW1"], {
             channelName: t.name,
             serverName: n.name
@@ -153,6 +158,7 @@ function X(e) {
     children: (0, r.jsx)(I.Z, {
       children: (0, r.jsx)(u.Text, {
         variant: "text-xs/normal",
+        color: l,
         children: U.NW.format(U.t.u0vaDA, {
           guildName: n.name
         })
@@ -420,7 +426,8 @@ function Q(e) {
         channel: l,
         guild: s,
         isStacked: !1,
-        hasEnded: !u
+        hasEnded: !u,
+        textColor: "none"
       }), o ? C > 0 && (0, r.jsx)(E.K, {
         activityUsers: a,
         guildId: s.id,
@@ -429,7 +436,8 @@ function Q(e) {
         members: c,
         membersOnline: d,
         isLarge: !1,
-        isStacked: !1
+        isStacked: !1,
+        textColor: "none"
       })]
     }),
     actions: I

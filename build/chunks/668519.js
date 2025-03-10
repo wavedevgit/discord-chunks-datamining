@@ -9,13 +9,22 @@ let o = (0, r.B)({
   id: "2025-01_go_live_modal_refresh",
   label: "Go Live Modal Refresh",
   defaultConfig: {
-    showRefreshedGoLiveModal: !1
+    showRefreshedGoLiveModal: !1,
+    twoClickVariant: !1
   },
   treatments: [{
     id: 1,
     label: "Show refreshed go live modal",
     config: {
-      showRefreshedGoLiveModal: !0
+      showRefreshedGoLiveModal: !0,
+      twoClickVariant: !1
+    }
+  }, {
+    id: 2,
+    label: "Show refreshed go live modal, 2 click variant",
+    config: {
+      showRefreshedGoLiveModal: !0,
+      twoClickVariant: !0
     }
   }]
 });

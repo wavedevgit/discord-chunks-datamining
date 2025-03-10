@@ -15,8 +15,8 @@ var r = n(200651),
   h = n(176940),
   m = n(388032),
   x = n(731133),
-  p = n(711597),
-  g = n(802138);
+  g = n(711597),
+  p = n(802138);
 
 function _(e) {
   let {
@@ -37,9 +37,9 @@ function _(e) {
     }(t.id, o, _));
   return null != v && i(v), (0, r.jsxs)(d.xJW, {
     title: "Capture Device",
-    className: p.modalContent,
+    className: g.modalContent,
     children: [(0, r.jsx)(d.xJW, {
-      className: g.marginTop8,
+      className: p.marginTop8,
       children: (0, r.jsxs)(f.Z, {
         children: [(0, r.jsx)("span", {
           className: x.ellipsisText,
@@ -53,11 +53,11 @@ function _(e) {
         })]
       })
     }), (0, r.jsx)(d.xJW, {
-      className: g.marginTop8,
+      className: p.marginTop8,
       title: m.NW.string(m.t.y4ooen),
       children: (0, r.jsx)(d.q4e, {
         value: v,
-        className: g.__invalid_marginaTop8,
+        className: p.__invalid_marginaTop8,
         onChange: e => {
           j(e), i(e)
         },

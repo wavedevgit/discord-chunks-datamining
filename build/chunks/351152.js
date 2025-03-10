@@ -16,8 +16,8 @@ var l = n(120356),
   h = n(496675),
   m = n(771845),
   x = n(259580),
-  p = n(102172),
-  g = n(148381),
+  g = n(102172),
+  p = n(148381),
   _ = n(388032),
   v = n(711597),
   j = n(359026);
@@ -30,7 +30,7 @@ function b(e) {
     let {
       channel: t
     } = e;
-    return (0, p.JL)(t, f.Z, h.Z)
+    return (0, g.JL)(t, f.Z, h.Z)
   }));
   return null != l && i ? (0, r.jsxs)(c.P3F, {
     onClick: () => n(t),
@@ -54,7 +54,7 @@ function C(e) {
   let {
     onSelectGuild: t
   } = e, n = (0, a.e7)([m.ZP], () => m.ZP.getGuildFolders());
-  return (0, r.jsx)(g.Z, {
+  return (0, r.jsx)(p.Z, {
     title: _.NW.string(_.t.JsqeEh),
     scrollerClassName: i()(j.guildScroller, v.marginBottom),
     children: o().flatMap(n, e => {

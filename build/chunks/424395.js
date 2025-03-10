@@ -1,15 +1,17 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Vb: () => o,
-  YI: () => a,
-  u5: () => i
+  Vb: () => a,
+  YI: () => s,
+  j1: () => l,
+  u5: () => o
 }), n(230036), n(301563);
-var r = n(389117);
+var r = n(192379),
+  i = n(389117);
 
-function i() {
+function o() {
   let e = n(415442).Z;
-  return o().filter(e => {
+  return a().filter(e => {
     let {
       enabled: t
     } = e;
@@ -17,12 +19,12 @@ function i() {
   }).map(t => {
     let {
       code: n,
-      name: i
+      name: r
     } = t;
     return {
       value: n,
-      name: i,
-      localizedName: e[(0, r.runtimeHashMessageKey)(n)]
+      name: r,
+      localizedName: e[(0, i.runtimeHashMessageKey)(n)]
     }
   }).sort((e, t) => {
     let {
@@ -34,13 +36,13 @@ function i() {
   })
 }
 
-function o() {
+function a() {
   return n(515297)
 }
 
-function a(e, t) {
+function s(e, t) {
   var n, r;
-  let i = o().filter(e => {
+  let i = a().filter(e => {
     let {
       enabled: t
     } = e;
@@ -52,6 +54,10 @@ function a(e, t) {
     return t
   });
   if (i.includes(e)) return e;
-  let a = e.split("-");
-  return i.includes(a[0]) ? a[0] : "zh" === a[0] && a.length > 1 && "Hant" === a[1] ? null !== (n = i.find(e => "zh-TW" === e)) && void 0 !== n ? n : t : null !== (r = i.find(e => e.split("-")[0] === a[0])) && void 0 !== r ? r : t
+  let o = e.split("-");
+  return i.includes(o[0]) ? o[0] : "zh" === o[0] && o.length > 1 && "Hant" === o[1] ? null !== (n = i.find(e => "zh-TW" === e)) && void 0 !== n ? n : t : null !== (r = i.find(e => e.split("-")[0] === o[0])) && void 0 !== r ? r : t
+}
+
+function l(e, t) {
+  r.useSyncExternalStore(t => e.onChange(t), () => e.isLocaleLoaded(t.currentLocale))
 }

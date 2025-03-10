@@ -2,7 +2,7 @@
 n.d(t, {
   O: () => O,
   U: () => _.Un
-}), n(653041), n(571269), n(298267), n(266796), n(47120);
+}), n(653041), n(571269), n(298267), n(266796);
 var r = n(200651),
   i = n(192379),
   a = n(373793),
@@ -131,17 +131,31 @@ function j(e) {
 function N(e) {
   let {
     app: t
-  } = e, n = [null != t.maxParticipants ? x.NW.format(x.t.z8EAJS, {
-    count: t.maxParticipants
-  }) : x.NW.string(x.t.RjceQU), ...t.tags];
-  return n.length > 0 && (0, r.jsx)(l.Text, {
-    variant: "text-xs/medium",
-    className: E.description,
-    color: "none",
-    lineClamp: 1,
-    children: n.map((e, t) => (0, r.jsx)("span", {
-      className: E.tag,
-      children: e
-    }, t))
+  } = e, {
+    tags: n,
+    maxParticipants: i
+  } = t, a = null != i ? x.NW.format(x.t.z8EAJS, {
+    count: i
+  }) : x.NW.string(x.t.RjceQU);
+  return (0, r.jsxs)(r.Fragment, {
+    children: [n.length > 0 && (0, r.jsx)(l.Text, {
+      variant: "text-xs/medium",
+      className: E.description,
+      color: "none",
+      lineClamp: 1,
+      children: n.map((e, t) => (0, r.jsx)("span", {
+        className: E.tag,
+        children: e
+      }, t))
+    }), (0, r.jsxs)(l.Text, {
+      variant: "text-xs/normal",
+      className: E.tagline,
+      color: "none",
+      lineClamp: 1,
+      children: [(0, r.jsx)(l.tBG, {
+        size: "xxs",
+        color: "currentColor"
+      }), a]
+    })]
   })
 }

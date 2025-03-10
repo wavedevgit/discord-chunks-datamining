@@ -16,8 +16,8 @@ var r = n(200651),
   h = n(74538),
   m = n(981631),
   x = n(474936),
-  p = n(388032),
-  g = n(756232);
+  g = n(388032),
+  p = n(756232);
 
 function _(e) {
   var {
@@ -41,9 +41,9 @@ function _(e) {
     o = l.useCallback(() => {
       if (null != i) {
         var e;
-        return null !== (e = (0, h.fr)(i)) && void 0 !== e ? e : p.NW.string(p.t.Y2WKTk)
+        return null !== (e = (0, h.fr)(i)) && void 0 !== e ? e : g.NW.string(g.t.Y2WKTk)
       }
-      return p.NW.string(p.t.Y2WKTk)
+      return g.NW.string(g.t.Y2WKTk)
     }, [i]);
   return (0, r.jsx)(f.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -63,8 +63,8 @@ function _(e) {
     }
     return e
   }({
-    className: s()(g.enhancedCTA, g.ctaGradientBackground),
-    iconClassName: g.premiumIcon,
+    className: s()(p.enhancedCTA, p.ctaGradientBackground),
+    iconClassName: p.premiumIcon,
     subscriptionTier: x.Si.TIER_2,
     buttonText: o(),
     size: a.zxk.Sizes.TINY,
@@ -75,12 +75,12 @@ function _(e) {
 function v() {
   let e = (0, o.e7)([c.Z], () => c.Z.useReducedMotion);
   return (0, r.jsxs)("div", {
-    className: s()(g.reverseTrialEducationBannerContainer, {
-      [g.reducedMotion]: e
+    className: s()(p.reverseTrialEducationBannerContainer, {
+      [p.reducedMotion]: e
     }),
     children: [(0, r.jsx)(a.Fmz, {
-      className: s()(g.unlockAnimation, {
-        [g.reducedMotion]: e
+      className: s()(p.unlockAnimation, {
+        [p.reducedMotion]: e
       }),
       loop: !1,
       shouldAnimate: !e,
@@ -88,8 +88,8 @@ function v() {
       importData: () => n.e("21812").then(n.t.bind(n, 741855, 19))
     }), (0, r.jsx)(a.Text, {
       variant: "text-xs/medium",
-      className: g.reverseTrialEducationText,
-      children: p.NW.format(p.t.GimLpa, {})
+      className: p.reverseTrialEducationText,
+      children: g.NW.format(g.t.GimLpa, {})
     })]
   })
 }
@@ -106,18 +106,18 @@ function j(e) {
     objectType: m.Qqv.BUY
   };
   return (0, r.jsxs)("div", {
-    className: s()(g.upsellBanner, g.enhancedBanner, {
-      [g.gradientGlow]: i
+    className: s()(p.upsellBanner, p.enhancedBanner, {
+      [p.gradientGlow]: i
     }),
     children: [(0, r.jsxs)("div", {
-      className: g.iconTextContainer,
+      className: p.iconTextContainer,
       children: [(0, r.jsx)(a.SrA, {
         size: "md",
         color: d.JX.PREMIUM_TIER_2
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
-        className: s()(g.upsellText, g.enhancedUpsellText),
-        children: null != t ? t : p.NW.format(p.t["L/zCtr"], {
+        className: s()(p.upsellText, p.enhancedUpsellText),
+        children: null != t ? t : g.NW.format(g.t["L/zCtr"], {
           onClick: () => l({
             analyticsLocation: o,
             onClose: n
@@ -125,7 +125,7 @@ function j(e) {
         })
       })]
     }), (0, r.jsx)("div", {
-      className: g.enhancedCTAs,
+      className: p.enhancedCTAs,
       children: (0, r.jsx)(_, {
         location: o
       })

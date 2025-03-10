@@ -1,95 +1,110 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => u
+  Z: () => m
 }), n(47120);
 var r = n(200651);
 n(192379);
-var l = n(268146),
-  i = n(481060),
-  s = n(615161),
-  o = n(388032),
-  a = n(154693);
+var l = n(120356),
+  i = n.n(l),
+  s = n(268146),
+  o = n(481060),
+  a = n(668519),
+  c = n(615161),
+  d = n(388032),
+  u = n(154693);
 
-function c(e) {
+function f(e) {
   let {
     source: t
   } = e;
-  return t.id.startsWith(l.vA.SCREEN) ? (0, r.jsx)(i.pzj, {
+  return t.id.startsWith(s.vA.SCREEN) ? (0, r.jsx)(o.pzj, {
     size: "xs"
-  }) : t.id.startsWith(l.vA.WINDOW) ? null != t.icon && "" !== t.icon ? (0, r.jsx)("img", {
+  }) : t.id.startsWith(s.vA.WINDOW) ? null != t.icon && "" !== t.icon ? (0, r.jsx)("img", {
     src: t.icon,
-    className: a.sourceIcon,
+    className: u.sourceIcon,
     alt: ""
-  }) : (0, r.jsx)(i.GON, {
+  }) : (0, r.jsx)(o.GON, {
     size: "xs"
-  }) : (0, r.jsx)(i.Odl, {
+  }) : (0, r.jsx)(o.Odl, {
     size: "xs"
   })
 }
 
-function d(e) {
+function h(e) {
   let {
     source: t,
-    onClick: n
+    selected: n,
+    twoClickVariant: l,
+    onClick: s
   } = e, {
-    url: l,
-    name: s
+    url: a,
+    name: c
   } = t;
-  return (0, r.jsxs)(i.P3F, {
-    onClick: () => n(t),
-    className: a.source,
+  return (0, r.jsxs)(o.P3F, {
+    onClick: () => s(t),
+    className: i()(u.source, {
+      [u.selectedSource]: n
+    }),
     children: [(0, r.jsx)("div", {
-      className: a.sourcePreviewContainer,
+      className: u.sourcePreviewContainer,
       children: (0, r.jsxs)("div", {
-        className: a.sourcePreview,
+        className: u.sourcePreview,
         children: [(0, r.jsx)("img", {
-          src: l,
-          className: a.sourcePreviewImage,
+          src: a,
+          className: u.sourcePreviewImage,
           alt: ""
-        }), (0, r.jsx)("div", {
-          className: a.sourceOverlay,
+        }), !l && (0, r.jsx)("div", {
+          className: u.sourceOverlay,
           children: (0, r.jsx)("div", {
-            className: a.sourceOverlayCTA,
-            children: (0, r.jsx)(i.Text, {
+            className: u.sourceOverlayCTA,
+            children: (0, r.jsx)(o.Text, {
               variant: "text-sm/medium",
               color: "button-filled-white-text",
-              children: o.NW.string(o.t.z7WGho)
+              children: d.NW.string(d.t.z7WGho)
             })
           })
         })]
       })
     }), (0, r.jsxs)("div", {
-      className: a.sourceNameContainer,
-      children: [(0, r.jsx)(c, {
+      className: u.sourceNameContainer,
+      children: [(0, r.jsx)(f, {
         source: t
-      }), (0, r.jsx)(i.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/medium",
-        className: a.sourceName,
-        children: s
+        className: u.sourceName,
+        children: c
       })]
     })]
   })
 }
 
-function u(e) {
+function m(e) {
   var t;
   let {
     onClick: n
-  } = e, [{
-    windowSources: o,
-    deviceSources: c,
-    screenSources: u,
-    sourceType: f,
-    fetchingSources: h
-  }] = (0, s.E_)();
-  return h ? (0, r.jsx)("div", {
-    className: a.loading,
-    children: (0, r.jsx)(i.$jN, {})
-  }) : (t = f === l.vA.WINDOW ? o : f === l.vA.SCREEN ? u : c, (0, r.jsx)("div", {
-    className: a.root,
-    children: t.map(e => (0, r.jsx)(d, {
+  } = e, {
+    twoClickVariant: l
+  } = (0, a.a)({
+    autoTrackExposure: !1,
+    location: "sourcegrid"
+  }), [{
+    windowSources: i,
+    deviceSources: d,
+    screenSources: f,
+    sourceType: m,
+    fetchingSources: x,
+    selectedSource: g
+  }] = (0, c.E_)();
+  return x ? (0, r.jsx)("div", {
+    className: u.loading,
+    children: (0, r.jsx)(o.$jN, {})
+  }) : (t = m === s.vA.WINDOW ? i : m === s.vA.SCREEN ? f : d, (0, r.jsx)("div", {
+    className: u.root,
+    children: t.map(e => (0, r.jsx)(h, {
       onClick: n,
-      source: e
+      source: e,
+      selected: (null == g ? void 0 : g.id) === e.id,
+      twoClickVariant: l
     }, e.id))
   }))
 }

@@ -15,8 +15,8 @@ var r = n(200651),
   h = n(924557),
   m = n(600164),
   x = n(436774),
-  p = n(140465),
-  g = n(774026),
+  g = n(140465),
+  p = n(774026),
   _ = n(592125),
   v = n(944486),
   j = n(594174),
@@ -162,9 +162,9 @@ function k(e) {
     location: G
   } = (0, f.O)(), B = (0, h.Zq)({
     autoTrackExposure: !1
-  }), U = (0, p.B4)({
+  }), U = (0, g.B4)({
     location: "StreamSettings"
-  }), F = j.default.getUser(null == L ? void 0 : L.hdStreamingBuyerId), z = null != L && null != L.hdStreamingUntil && new Date(L.hdStreamingUntil) > new Date && null != F, H = !D && !B, [V, J] = l.useState(!1), X = A ? N.z8 : N.WC, Y = T(P({}, G), {
+  }), z = j.default.getUser(null == L ? void 0 : L.hdStreamingBuyerId), F = null != L && null != L.hdStreamingUntil && new Date(L.hdStreamingUntil) > new Date && null != z, H = !D && !B, [V, J] = l.useState(!1), X = A ? N.z8 : N.WC, Y = T(P({}, G), {
     section: y.jXE.STREAM_SETTINGS
   }), K = (0, r.jsx)(d.hE2, {
     buttons: X.map(e => W({
@@ -214,9 +214,9 @@ function k(e) {
       message: Z.NW.string(Z.t.deDogI),
       onClose: t,
       openStreamUpsellModal: E
-    }) : null, U && (0, r.jsx)(S.c, {}), z && null != L.hdStreamingUntil && (0, r.jsx)(g.Z, {
+    }) : null, U && (0, r.jsx)(S.c, {}), F && null != L.hdStreamingUntil && (0, r.jsx)(p.Z, {
       streamingUntil: L.hdStreamingUntil,
-      user: F,
+      user: z,
       channel: L
     })]
   }) : (0, r.jsxs)(r.Fragment, {
@@ -236,9 +236,9 @@ function k(e) {
       onClose: t,
       openStreamUpsellModal: E,
       glow: V
-    }) : null, U && (0, r.jsx)(S.c, {}), z && null != L.hdStreamingUntil && (0, r.jsx)(g.Z, {
+    }) : null, U && (0, r.jsx)(S.c, {}), F && null != L.hdStreamingUntil && (0, r.jsx)(p.Z, {
       streamingUntil: null == L ? void 0 : L.hdStreamingUntil,
-      user: F,
+      user: z,
       channel: L
     })]
   });

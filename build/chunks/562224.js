@@ -1,7 +1,7 @@
 /** Chunk was on 52657 **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => O
 }), n(47120);
 var r = n(268146),
   i = n(872810),
@@ -19,32 +19,32 @@ var r = n(268146),
   g = n(537413),
   b = n(143135),
   m = n(37113),
-  O = n(761274);
-async function P(e, t) {
-  var n, P, w, E, S, y, Z, I, D, R, A, N;
-  let _ = v.default.getCurrentUser(),
-    j = f.Z.getVoiceChannelId(),
-    C = a.Z.getChannel(j),
-    W = null == C ? void 0 : C.getGuildId(),
+  w = n(761274);
+async function O(e, t) {
+  var n, O, P, E, S, y, Z, I, D, C, R, A;
+  let N = v.default.getCurrentUser(),
+    _ = f.Z.getVoiceChannelId(),
+    j = a.Z.getChannel(_),
+    W = null == j ? void 0 : j.getGuildId(),
     k = null === (n = d.Z.getGuild(W)) || void 0 === n ? void 0 : n.premiumTier;
-  if (null == _ || null == C || null == j) return [!1, "no user or channel"];
+  if (null == N || null == j || null == _) return [!1, "no user or channel"];
   let G = null;
   if (null == (G = "number" == typeof e ? l.ZP.getGameForPID(e) : e)) return [!1, "no source"];
-  if (!c.Z.getUseSystemScreensharePicker() && !await o.Z.hasPermission(O.Eu.SCREEN_RECORDING, {
+  if (!c.Z.getUseSystemScreensharePicker() && !await o.Z.hasPermission(w.Eu.SCREEN_RECORDING, {
       showAuthorizationError: !1
     })) return [!1, "no permission"];
   let {
     preset: L,
-    resolution: M,
-    fps: U,
-    soundshareEnabled: V
-  } = s.Z.getState(), x = null !== (w = null == t ? void 0 : t.preset) && void 0 !== w ? w : L, [T, H] = null !== (E = (0, g.Z)(x, _, k)) && void 0 !== E ? E : [], Y = null !== (y = null !== (S = null == t ? void 0 : t.resolution) && void 0 !== S ? S : T) && void 0 !== y ? y : M, F = null !== (I = null !== (Z = null == t ? void 0 : t.fps) && void 0 !== Z ? Z : H) && void 0 !== I ? I : U, z = null !== (D = null == t ? void 0 : t.previewDisabled) && void 0 !== D ? D : u.I0.getSetting(), B = null !== (R = null == t ? void 0 : t.soundshareEnabled) && void 0 !== R ? R : V;
-  return (0, h.Z)(x, Y, F, _, k, C) || (x = m.tI.PRESET_VIDEO, Y = m.LY.RESOLUTION_720, F = m.ws.FPS_30), u.I0.updateSetting(z), (0, i.Rc)({
+    resolution: V,
+    fps: M,
+    soundshareEnabled: U
+  } = s.Z.getState(), x = null !== (P = null == t ? void 0 : t.preset) && void 0 !== P ? P : L, [T, H] = null !== (E = (0, g.Z)(x, N, k)) && void 0 !== E ? E : [], Y = null !== (y = null !== (S = null == t ? void 0 : t.resolution) && void 0 !== S ? S : T) && void 0 !== y ? y : V, F = null !== (I = null !== (Z = null == t ? void 0 : t.fps) && void 0 !== Z ? Z : H) && void 0 !== I ? I : M, z = null !== (D = null == t ? void 0 : t.previewDisabled) && void 0 !== D ? D : u.I0.getSetting(), B = null !== (C = null == t ? void 0 : t.soundshareEnabled) && void 0 !== C ? C : U;
+  return (0, h.Z)(x, Y, F, N, k, j) || (x = m.tI.PRESET_VIDEO, Y = m.LY.RESOLUTION_720, F = m.ws.FPS_30), u.I0.updateSetting(z), (0, i.Rc)({
     preset: x,
     resolution: Y,
     frameRate: F,
     soundshareEnabled: B
-  }), (0, i.WH)(W, j, (A = function(e) {
+  }), (0, i.WH)(W, _, (R = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -74,19 +74,19 @@ async function P(e, t) {
       sourceName: e.name,
       sourceIcon: e.icon
     }
-  }(G)), N = N = {
-    audioSourceId: (null === (P = G.id) || void 0 === P ? void 0 : P.startsWith(r.vA.CAMERA)) ? c.Z.getInputDeviceId() : void 0,
+  }(G)), A = A = {
+    audioSourceId: (null === (O = G.id) || void 0 === O ? void 0 : O.startsWith(r.vA.CAMERA)) ? c.Z.getInputDeviceId() : void 0,
     sound: B,
     previewDisabled: z,
     goLiveModalDurationMs: null == t ? void 0 : t.goLiveModalDurationMs
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(A, Object.getOwnPropertyDescriptors(N)) : (function(e, t) {
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(R, Object.getOwnPropertyDescriptors(A)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var r = Object.getOwnPropertySymbols(e);
       n.push.apply(n, r)
     }
     return n
-  })(Object(N)).forEach(function(e) {
-    Object.defineProperty(A, e, Object.getOwnPropertyDescriptor(N, e))
-  }), A)), [!0, void 0]
+  })(Object(A)).forEach(function(e) {
+    Object.defineProperty(R, e, Object.getOwnPropertyDescriptor(A, e))
+  }), R)), [!0, void 0]
 }

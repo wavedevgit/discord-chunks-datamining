@@ -15,14 +15,14 @@ var r = n(200651),
   h = n(891180),
   m = n(615161),
   x = n(156582),
-  p = n(396678),
-  g = n(37113),
+  g = n(396678),
+  p = n(37113),
   _ = n(889150),
   v = n(388032),
   j = n(423719);
-let b = [g.tI.PRESET_VIDEO, g.tI.PRESET_DOCUMENTS, g.tI.PRESET_CUSTOM],
-  C = [g.LY.RESOLUTION_720, g.LY.RESOLUTION_1080, g.LY.RESOLUTION_1440, g.LY.RESOLUTION_SOURCE],
-  S = [g.ws.FPS_15, g.ws.FPS_30, g.ws.FPS_60];
+let b = [p.tI.PRESET_VIDEO, p.tI.PRESET_DOCUMENTS, p.tI.PRESET_CUSTOM],
+  C = [p.LY.RESOLUTION_720, p.LY.RESOLUTION_1080, p.LY.RESOLUTION_1440, p.LY.RESOLUTION_SOURCE],
+  S = [p.ws.FPS_15, p.ws.FPS_30, p.ws.FPS_60];
 
 function N(e) {
   let {
@@ -52,7 +52,7 @@ function y(e) {
   }, E] = (0, m.E_)(), R = (0, l.e7)([c.Z, o.Z], () => o.Z.getChannel(c.Z.getVoiceChannelId())), W = null == R ? void 0 : R.getGuildId(), k = (0, l.e7)([a.Z], () => {
     var e;
     return null != W ? null === (e = a.Z.getGuild(W)) || void 0 === e ? void 0 : e.premiumTier : null
-  }), [A, M] = null !== (t = (0, p.Z)(g.tI.PRESET_VIDEO)) && void 0 !== t ? t : [g.LY.RESOLUTION_720, g.ws.FPS_30], [L, D] = null !== (n = (0, p.Z)(g.tI.PRESET_DOCUMENTS)) && void 0 !== n ? n : [g.LY.RESOLUTION_SOURCE, g.ws.FPS_15];
+  }), [A, M] = null !== (t = (0, g.Z)(p.tI.PRESET_VIDEO)) && void 0 !== t ? t : [p.LY.RESOLUTION_720, p.ws.FPS_30], [L, D] = null !== (n = (0, g.Z)(p.tI.PRESET_DOCUMENTS)) && void 0 !== n ? n : [p.LY.RESOLUTION_SOURCE, p.ws.FPS_15];
   return (0, r.jsxs)(i.v2r, {
     "aria-label": v.NW.string(v.t["+1H47u"]),
     navId: "stream-options",
@@ -67,17 +67,17 @@ function y(e) {
         label: (0, f.L)(e),
         subtext: function(e) {
           switch (e) {
-            case g.tI.PRESET_VIDEO:
+            case p.tI.PRESET_VIDEO:
               return v.NW.format(_.Z.G5O1Mz, {
                 resolution: (0, h.M)(A),
                 frameRate: M
               });
-            case g.tI.PRESET_DOCUMENTS:
+            case p.tI.PRESET_DOCUMENTS:
               return v.NW.format(_.Z["8tcFLy"], {
                 resolution: (0, h.M)(L),
                 frameRate: D
               });
-            case g.tI.PRESET_CUSTOM:
+            case p.tI.PRESET_CUSTOM:
               return;
             default:
               throw Error("No case implemented for ".concat(e))
@@ -88,7 +88,7 @@ function y(e) {
           preset: e
         })
       }, e))
-    }), I === g.tI.PRESET_CUSTOM && (0, r.jsxs)(r.Fragment, {
+    }), I === p.tI.PRESET_CUSTOM && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(i.Clw, {}), (0, r.jsx)(i.sNh, {
         id: "resolution",
         label: v.NW.string(_.Z.IG5n0d),
@@ -96,7 +96,7 @@ function y(e) {
           group: "resolution",
           id: "stream-option-resolution-".concat(e),
           checked: P === e,
-          label: e !== g.LY.RESOLUTION_720 ? (0, r.jsx)(N, {
+          label: e !== p.LY.RESOLUTION_720 ? (0, r.jsx)(N, {
             label: (0, h.M)(e)
           }) : (0, h.M)(e),
           action: () => (function(e) {
@@ -116,7 +116,7 @@ function y(e) {
           group: "frame-rate",
           id: "stream-option-frame-rate-".concat(e),
           checked: T === e,
-          label: e === g.ws.FPS_60 ? (0, r.jsx)(N, {
+          label: e === p.ws.FPS_60 ? (0, r.jsx)(N, {
             label: "".concat(e, "fps")
           }) : "".concat(e, "fps"),
           action: () => (function(e) {

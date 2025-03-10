@@ -1,6 +1,6 @@
 /** Chunk was on 67127 **/
 n.d(t, {
-  KJ: () => f,
+  KJ: () => d,
   UV: () => u,
   vJ: () => s
 });
@@ -24,14 +24,14 @@ function u(e) {
   return (0, r.jsx)("div", {
     className: a.verifyConnectedAccount,
     children: (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(f, {
+      children: [(0, r.jsx)(d, {
         platform: o
       }), t]
     })
   })
 }
 
-function f(e) {
+function d(e) {
   let {
     platform: t,
     className: n

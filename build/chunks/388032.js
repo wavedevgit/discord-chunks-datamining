@@ -5,6 +5,7 @@ n.d(t, {
   NW: () => m,
   St: () => h,
   Vb: () => c.Vb,
+  j1: () => g,
   t: () => l.k,
   u5: () => c.u5
 }), n(47120);
@@ -104,4 +105,5 @@ let p = function(e) {
     formatToPlainString: o.stringFormatter,
     formatToMarkdownString: o.markdownFormatter,
     formatToParts: o.astFormatter
-  })
+  }),
+  g = e => (0, c.j1)(e, m)

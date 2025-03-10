@@ -54,7 +54,7 @@ let m = [o.ZD.LEAF, o.ZD.SWORD, o.ZD.HEART, o.ZD.FIRE, o.ZD.WATER_DROP, o.ZD.SKU
     secondary: "#cccccc"
   }],
   g = function() {
-    return (0, r.jsxs)("div", {
+    return (0, d.j1)(c.M), (0, r.jsxs)("div", {
       className: u.leftContent,
       children: [(0, r.jsx)(a.X6q, {
         className: u.title,

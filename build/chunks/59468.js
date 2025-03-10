@@ -17,7 +17,7 @@ async function d(e) {
   } = e, u = s.Z.getVideoDevices(), f = (0, i.Z)(s.Z.getMediaEngine(), d, {
     width: t,
     height: n
-  }), h = (0, o._)(), m = await h, x = await f, p = x.filter(e => e.id.startsWith(l.vA.SCREEN)).map(e => {
+  }), h = (0, o._)(), m = await h, x = await f, g = x.filter(e => e.id.startsWith(l.vA.SCREEN)).map(e => {
     var t, n;
     let r = e.name;
     return "Entire screen" === r ? r = a.NW.string(a.t.R4wpLC) : /^Screen \d+$/.test(r) && (r = a.NW.formatToPlainString(a.t["y/R7n5"], {
@@ -51,7 +51,7 @@ async function d(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t
-  }), g = function(e, t) {
+  }), p = function(e, t) {
     let n = {};
     return t.forEach(e => {
       n[e.id] = e
@@ -70,8 +70,8 @@ async function d(e) {
       url: o
     }
   })), {
-    windowSources: g,
-    screenSources: p,
+    windowSources: p,
+    screenSources: g,
     cameraSources: _
   }
 }

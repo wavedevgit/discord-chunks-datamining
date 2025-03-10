@@ -1,7 +1,7 @@
 /** Chunk was on 46746 **/
 n.d(t, {
   Hu: () => J,
-  oA: () => F,
+  oA: () => z,
   se: () => V
 }), n(47120), n(230036), n(653041);
 var r = n(200651),
@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(579806),
   m = n(600164),
   x = n(152708),
-  p = n(594190),
-  g = n(751571),
+  g = n(594190),
+  p = n(751571),
   _ = n(569984),
   v = n(918701),
   j = n(977156),
@@ -63,12 +63,12 @@ function B(e) {
 }
 
 function U(e) {
-  let t = (0, N.isWindows)() ? (0, P.Z)(p.ZP, S.Z) : null,
-    n = p.ZP.getRunningGames();
+  let t = (0, N.isWindows)() ? (0, P.Z)(g.ZP, S.Z) : null,
+    n = g.ZP.getRunningGames();
   return null != t && (0, Z.Z)(e.id, t.windowHandle) ? 2 : +(null != n.find(t => (0, Z.Z)(e.id, t.windowHandle)))
 }
 
-function F(e) {
+function z(e) {
   let {
     selectedSource: t,
     onChangeSelectedSource: n
@@ -76,7 +76,7 @@ function F(e) {
     enableGoLiveCaptureCard: i
   } = y.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), o = C.Z.supports(L.AN.GO_LIVE_HARDWARE), [a, h] = l.useState(null), [S, N] = l.useState(null), [w, O] = l.useState(null), P = null != w && w.length > 0, [T, R] = l.useState(c.vA.WINDOW), [k, B] = l.useState(!1), F = l.useRef(null), z = l.useRef(new u.Xp), H = (0, d.e7)([p.ZP], () => p.ZP.getRunningGames()), V = function(e, t, n) {
+  }), o = C.Z.supports(L.AN.GO_LIVE_HARDWARE), [a, h] = l.useState(null), [S, N] = l.useState(null), [w, O] = l.useState(null), P = null != w && w.length > 0, [T, R] = l.useState(c.vA.WINDOW), [k, B] = l.useState(!1), z = l.useRef(null), F = l.useRef(new u.Xp), H = (0, d.e7)([g.ZP], () => g.ZP.getRunningGames()), V = function(e, t, n) {
     let r = (0, j.Zy)({
       location: M.dr.STREAM_SOURCE_SELECT
     });
@@ -96,7 +96,7 @@ function F(e) {
     }, [r, e, t, n])
   }((0, d.e7)([_.Z], () => _.Z.quests), H, S), J = l.useMemo(() => null == S ? null : [...S].sort((e, t) => (null == V ? void 0 : V.source.id) === e.id ? -1 : (null == V ? void 0 : V.source.id) === t.id ? 1 : U(t) - U(e)), [V, S]);
   l.useEffect(() => {
-    let e = z.current;
+    let e = F.current;
     return (0, I.t)({
       width: 176,
       height: 99
@@ -122,11 +122,11 @@ function F(e) {
     }
   }, []);
   let X = l.useCallback(e => {
-      null !== e && (F.current = e, B(!e.isScrolledToTop()))
+      null !== e && (z.current = e, B(!e.isScrolledToTop()))
     }, []),
     [Y, K] = l.useState(void 0);
   l.useEffect(() => {
-    g.Z.hasPermission(A.Eu.SCREEN_RECORDING, {
+    p.Z.hasPermission(A.Eu.SCREEN_RECORDING, {
       showAuthorizationError: !1
     }).then(K)
   }, []);
@@ -199,7 +199,7 @@ function F(e) {
       ref: X,
       className: G.sourceScroller,
       onScroll: function() {
-        let e = F.current;
+        let e = z.current;
         null != e && B(!e.isScrolledToTop())
       },
       children: [T === c.vA.WINDOW && null != V && (0, r.jsx)(b.Z, {
@@ -214,7 +214,7 @@ function F(e) {
   })
 }
 
-function z(e) {
+function F(e) {
   let {
     onSelect: t
   } = e, n = l.useCallback(() => {
@@ -320,12 +320,12 @@ function V(e) {
       })
     }, [t, o]),
     x = (0, N.isMac)() && a().satisfies(null === h.Z || void 0 === h.Z ? void 0 : h.Z.os.release, k.jR),
-    p = (0, N.isMac)(),
-    [g, _] = l.useState(!1),
+    g = (0, N.isMac)(),
+    [p, _] = l.useState(!1),
     v = l.useCallback(() => {
-      _(!g)
-    }, [g]),
-    j = x ? (0, r.jsx)(z, {
+      _(!p)
+    }, [p]),
+    j = x ? (0, r.jsx)(F, {
       onSelect: t
     }) : (0, r.jsxs)("div", {
       className: G.nativePickerTypes,
@@ -341,7 +341,7 @@ function V(e) {
         name: D.NW.string(D.t["+SLJCg"]),
         text: D.NW.string(D.t.dG2A1N),
         icon: f.GON
-      }), p ? (0, r.jsx)(H, {
+      }), g ? (0, r.jsx)(H, {
         onSelect: t,
         id: "app",
         name: D.NW.string(D.t.ct7AKS),
@@ -357,7 +357,7 @@ function V(e) {
       color: "interactive-normal",
       children: D.NW.string(D.t.XyYoFR)
     }), j, 0 === n.length ? null : (0, r.jsxs)("div", {
-      className: s()(G.nativePickerCaptureSection, g ? null : G.nativePickerCollapsed),
+      className: s()(G.nativePickerCaptureSection, p ? null : G.nativePickerCollapsed),
       children: [(0, r.jsxs)(f.P3F, {
         onClick: v,
         className: G.nativePickerLabel,

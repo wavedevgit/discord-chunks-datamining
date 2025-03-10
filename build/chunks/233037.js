@@ -1,6 +1,6 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -17,12 +17,12 @@ var l = n(442837),
   m = n(388032),
   x = n(885977);
 
-function p(e) {
+function g(e) {
   let {
     selectedChannelId: t,
     guildId: n,
-    onChangeSelectedChannelId: p
-  } = e, g = (0, l.e7)([c.default], () => c.default.getCurrentUser()), _ = (0, l.e7)([o.Z, s.ZP, a.Z], () => (0, u.h_)(s.ZP.getChannels(n), o.Z, a.Z)), v = (0, l.e7)([d.ZP], () => d.ZP.getVoiceStates(n)), j = _.map(e => {
+    onChangeSelectedChannelId: g
+  } = e, p = (0, l.e7)([c.default], () => c.default.getCurrentUser()), _ = (0, l.e7)([o.Z, s.ZP, a.Z], () => (0, u.h_)(s.ZP.getChannels(n), o.Z, a.Z)), v = (0, l.e7)([d.ZP], () => d.ZP.getVoiceStates(n)), j = _.map(e => {
     var n;
     return {
       name: (0, r.jsx)(f.Z, {
@@ -31,7 +31,7 @@ function p(e) {
           let {
             user: t
           } = e;
-          return t.id !== (null == g ? void 0 : g.id)
+          return t.id !== (null == p ? void 0 : p.id)
         }).map(e => {
           let {
             user: t
@@ -55,7 +55,7 @@ function p(e) {
         let {
           value: t
         } = e;
-        return p(t)
+        return g(t)
       }
     })
   })
