@@ -1,4 +1,4 @@
-/** Chunk was on 59479 **/
+/** Chunk was on 31823 **/
 e.exports = {
   confirmModal: "confirmModal__1b38b",
   discordTag: "discordTag__1b38b",

@@ -2,23 +2,23 @@
 n.d(t, {
   h: () => d
 });
-var r = n(442837),
-  i = n(544891),
-  a = n(570140),
-  o = n(500832),
+var r = n(666572),
+  i = n(442837),
+  a = n(544891),
+  o = n(570140),
   l = n(612673),
   s = n(981631);
 async function c(e, t) {
   if (null == e || null == t) return Promise.reject();
-  if (t.type === o.e.MANAGED) {
+  if (t.type === r.e.MANAGED) {
     let {
       body: n
-    } = await i.tn.get({
+    } = await a.tn.get({
       url: s.ANM.APPLICATION_MANAGED_ACTIVITY_LINK(e, t.decodedLinkId),
       oldFormErrors: !0,
       rejectWithError: !1
     });
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "MANAGED_ACTIVITY_LINK_FETCH_SUCCESS",
       applicationId: e,
       link: n
@@ -27,9 +27,9 @@ async function c(e, t) {
   }
   return Promise.reject()
 }
-let d = (0, r.Kb)(l.Z, {
+let d = (0, i.Kb)(l.Z, {
   queryId: (e, t) => null != e && null != t ? ["custom-activity-links", e, t.encodedLinkId] : null,
-  get: (e, t) => null == e || null == t ? null : t.type === o.e.MANAGED ? l.Z.getOne(e, t.encodedLinkId) : null,
+  get: (e, t) => null == e || null == t ? null : t.type === r.e.MANAGED ? l.Z.getOne(e, t.encodedLinkId) : null,
   load: (e, t, n) => c(t, n),
-  useStateHook: r.e7
+  useStateHook: i.e7
 })

@@ -1,6 +1,6 @@
-/** Chunk was on 59479 **/
+/** Chunk was on 31823 **/
 n.d(r, {
-  Z: () => f
+  Z: () => b
 });
 var t = n(200651);
 n(192379);
@@ -51,7 +51,7 @@ function h(e) {
   })
 }
 
-function f(e, r) {
+function b(e, r) {
   let n = (0, i.e7)([c.default], () => c.default.getCurrentUser());
   return null == n || r.ownerId !== n.id || e.id === n.id ? null : (0, t.jsx)(o.sNh, {
     id: "make-dm-owner",
@@ -59,7 +59,7 @@ function f(e, r) {
     label: u.NW.string(u.t["6t3CyM"]),
     action: () => {
       (0, o.h7j)(i => {
-        var c, f;
+        var c, b;
         return (0, t.jsxs)(o.ConfirmModal, (c = function(e) {
           for (var r = 1; r < arguments.length; r++) {
             var n = null != arguments[r] ? arguments[r] : {},
@@ -83,7 +83,7 @@ function f(e, r) {
           confirmText: u.NW.string(u.t["cY+Ooa"]),
           cancelText: u.NW.string(u.t["ETE/oK"]),
           onConfirm: () => a.Z.setDMOwner(r.id, e.id)
-        }, i), f = f = {
+        }, i), b = b = {
           children: [(0, t.jsx)(h, {
             color: s.Z.unsafe_rawColors.PRIMARY_300.css
           }), (0, t.jsxs)("div", {
@@ -118,15 +118,15 @@ function f(e, r) {
               }, n)
             })
           })]
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(c, Object.getOwnPropertyDescriptors(f)) : (function(e, r) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(c, Object.getOwnPropertyDescriptors(b)) : (function(e, r) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var t = Object.getOwnPropertySymbols(e);
             n.push.apply(n, t)
           }
           return n
-        })(Object(f)).forEach(function(e) {
-          Object.defineProperty(c, e, Object.getOwnPropertyDescriptor(f, e))
+        })(Object(b)).forEach(function(e) {
+          Object.defineProperty(c, e, Object.getOwnPropertyDescriptor(b, e))
         }), c))
       })
     }

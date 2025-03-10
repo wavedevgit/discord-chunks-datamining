@@ -220,7 +220,7 @@ class R extends S.ZP {
         null != i && (0, c.jW)(e, async () => {
           let {
             default: e
-          } = await Promise.all([n.e("79695"), n.e("98783"), n.e("56826"), n.e("78001")]).then(n.bind(n, 131404));
+          } = await Promise.all([n.e("79695"), n.e("98783"), n.e("56826"), n.e("22565")]).then(n.bind(n, 131404));
           return n => (0, r.jsx)(e, D(A({}, n), {
             user: i,
             channel: t,
