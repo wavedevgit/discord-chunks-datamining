@@ -1,6 +1,6 @@
 /**
   Module ID: 3205
-  Original File Name: 0c35c122d4c41824
+  Original File Name: cbae940ef0b8a0db
 **/
 .popoutContainer_a6cedd {
     display: flex;
@@ -13771,6 +13771,106 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 
 .description_dbba93 {
     margin-top: 8px
+}
+
+.leftContent__69ef9 {
+    max-width: 352px
+}
+
+.description__69ef9,.title__69ef9 {
+    margin-bottom: var(--spacing-24)
+}
+
+.enableSwitchContainer__69ef9 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-12) var(--spacing-16);
+    margin-bottom: var(--spacing-8);
+    border-radius: var(--radius-xs);
+    background-color: var(--bg-base-secondary)
+}
+
+.memberApplicationsInfo__69ef9 {
+    margin-bottom: var(--spacing-40)
+}
+
+.sectionTitle__69ef9 {
+    margin-bottom: var(--spacing-12)
+}
+
+.section__69ef9 {
+    margin-bottom: var(--spacing-40)
+}
+
+.tagContainer__69ef9 {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.tagTooltip__69ef9 {
+    margin-left: var(--spacing-12)
+}
+
+.tagInputContainer__69ef9 {
+    display: inline-block
+}
+
+.tagInputWrapper__69ef9 {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bg-base-tertiary);
+    padding: var(--spacing-12) var(--spacing-16);
+    border-radius: var(--radius-xs);
+    border: 1px solid var(--border-subtle)
+}
+
+.tagInputWrapper__69ef9:focus-within,.tagInputWrapper__69ef9:hover {
+    border-color: var(--brand-400)
+}
+
+.tagInput__69ef9 {
+    margin-left: var(--spacing-8);
+    background-color: transparent;
+    padding: 0;
+    font-size: 24px;
+    width: 6ch
+}
+
+.pickerGrid__69ef9 {
+    display: grid;
+    grid-column-gap: 8px;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    grid-row-gap: 8px;
+    row-gap: 8px;
+    grid-template-columns: repeat(5,64px)
+}
+
+.pickerItem__69ef9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: var(--radius-xs);
+    border: 1px solid var(--border-subtle);
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: var(--bg-mod-faint);
+    transition-duration: .2s
+}
+
+.pickerItem__69ef9 .pickerItemSelected__69ef9 {
+    border-color: var(--brand-400);
+    transform: translateY(2px) scale(.98);
+    transition-duration: .2s
+}
+
+.pickerItem__69ef9:hover:not(.pickerItemSelected__69ef9) {
+    border-color: var(--border-strong)
 }
 
 .serverBoostTabItem_cbe0b4[aria-selected=true] {

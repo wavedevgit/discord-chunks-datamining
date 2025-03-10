@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(593128),
   u = n(979264),
   m = n(688465),
-  g = n(749681),
-  p = n(258971),
+  p = n(749681),
+  g = n(258971),
   h = n(676317),
   f = n(874993),
   b = n(45966),
@@ -67,8 +67,8 @@ var r = n(200651),
   ed = n(804153),
   eu = n(178387),
   em = n(993097),
-  eg = n(486358),
-  ep = n(942478),
+  ep = n(486358),
+  eg = n(942478),
   eh = n(890861),
   ef = n(708510),
   eb = n(237245),
@@ -144,13 +144,13 @@ let eP = {
         };
       case e_.pNK.TAG:
         return {
-          section: e_.pNK.TAG, impressionName: i.ImpressionNames.GUILD_SETTINGS_TAG, label: eI.NW.string(eI.t["2QmKZ2"]), ariaLabel: eI.NW.string(eI.t["2QmKZ2"]), element: ev.Z, predicate: () => !1
+          section: e_.pNK.TAG, impressionName: i.ImpressionNames.GUILD_SETTINGS_TAG, label: eI.NW.string(eI.t["2QmKZ2"]), ariaLabel: eI.NW.string(eI.t["2QmKZ2"]), element: ev.Z, predicate: () => t.canManageGuild && t.guild.hasFeature(e_.oNc.GUILD_TAGS)
         };
       case e_.pNK.ENGAGEMENT:
         return {
-          section: e_.pNK.ENGAGEMENT, impressionName: i.ImpressionNames.GUILD_SETTINGS_ENGAGEMENT, label: eI.NW.string(eI.t["6TAHb2"]), ariaLabel: eI.NW.string(eI.t["6TAHb2"]), element: eg.Z, notice: {
+          section: e_.pNK.ENGAGEMENT, impressionName: i.ImpressionNames.GUILD_SETTINGS_ENGAGEMENT, label: eI.NW.string(eI.t["6TAHb2"]), ariaLabel: eI.NW.string(eI.t["6TAHb2"]), element: ep.Z, notice: {
             stores: [A.Z],
-            element: ep.R
+            element: eg.R
           }
         };
       case e_.pNK.BOOST_PERKS:
@@ -227,12 +227,12 @@ let eP = {
       case e_.pNK.APP_DIRECTORY:
         return {
           section: e_.pNK.APP_DIRECTORY, label: eI.NW.string(eI.t.AKcFUl), ariaLabel: eI.NW.string(eI.t.AKcFUl), onClick() {
-            (0, g.transitionToGlobalDiscovery)({
+            (0, p.transitionToGlobalDiscovery)({
               tab: ey.GlobalDiscoveryTab.APPS,
               newSessionState: {
                 guildId: t.guild.id,
                 entrypoint: {
-                  name: p.xF.GUILD_SETTINGS,
+                  name: g.xF.GUILD_SETTINGS,
                   guildSettingsSection: e
                 }
               }

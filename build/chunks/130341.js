@@ -20,8 +20,8 @@ var r = n(192379),
   d = n(823379),
   u = n(892880),
   m = n(51144),
-  g = n(480608),
-  p = n(203377),
+  p = n(480608),
+  g = n(203377),
   h = n(981631);
 let f = 50,
   b = 1e3;
@@ -62,7 +62,7 @@ function j(e, t, n) {
   return r.useEffect(() => {
     i.current = n
   }), r.useEffect(() => {
-    (0, g.H)(e, t).catch(i.current)
+    (0, p.H)(e, t).catch(i.current)
   }, [e, t]), x(e, r.useCallback(e => e.roles.includes(t), [t]))
 }
 
@@ -82,13 +82,13 @@ function v(e, t) {
 
 function _(e) {
   switch (e) {
-    case p.ZI.MEMBERS:
+    case g.ZI.MEMBERS:
       return "Members";
-    case p.ZI.PERMISSIONS:
+    case g.ZI.PERMISSIONS:
       return "Permissions";
-    case p.ZI.DISPLAY:
+    case g.ZI.DISPLAY:
       return "Role Settings";
-    case p.ZI.VERIFICATIONS:
+    case g.ZI.VERIFICATIONS:
       return "Connections";
     default:
       (0, d.vE)(e)

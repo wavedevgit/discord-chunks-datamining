@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(92373),
   u = n(308083),
   m = n(388032),
-  g = n(416786),
-  p = n(154662);
+  p = n(416786),
+  g = n(154662);
 
 function h(e) {
   let {
@@ -34,14 +34,14 @@ function h(e) {
     t.has(e) ? r.delete(e) : r.add(e), s(r)
   }, [n, t, s]), v = i.useCallback(() => null, []);
   return (0, r.jsx)("div", {
-    className: g.inputContainer,
+    className: p.inputContainer,
     children: (0, r.jsxs)(l.xJW, {
       error: h,
       children: [(0, r.jsx)(l.VcW, {
         multi: !0,
         hidePills: !0,
         autoFocus: !0,
-        wrapperClassName: a()(p.input, g.input),
+        wrapperClassName: a()(g.input, p.input),
         options: f,
         value: x,
         placeholder: m.NW.string(m.t.acyezc),
@@ -49,20 +49,20 @@ function h(e) {
         isDisabled: t.size === u.cm,
         matchSorterOptions: b,
         clearQueryOnSelect: !0,
-        customPillContainerClassName: g.pills,
+        customPillContainerClassName: p.pills,
         renderCustomPill: v
       }), x.length > 0 && (0, r.jsxs)("div", {
-        className: g.gamesContainer,
+        className: p.gamesContainer,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-xs/semibold",
           color: "text-muted",
           children: m.NW.string(m.t.PgOVsL)
         }), (0, r.jsx)("div", {
-          className: g.gamesList,
+          className: p.gamesList,
           children: x.map(e => (0, r.jsx)(l.ua7, {
             text: m.NW.string(m.t.C1K2XV),
             shouldShow: n,
-            tooltipContentClassName: g.tooltip,
+            tooltipContentClassName: p.tooltip,
             children: i => {
               var s, a;
               return (0, r.jsx)("div", (s = function(e) {
@@ -85,7 +85,7 @@ function h(e) {
               }({}, i), a = a = {
                 children: (0, r.jsx)(d.Z, {
                   applicationId: e,
-                  imageContainerClassName: t.size > o ? g.clickableGame : void 0,
+                  imageContainerClassName: t.size > o ? p.clickableGame : void 0,
                   selected: !0,
                   locked: n,
                   onClick: N
@@ -116,7 +116,7 @@ function f(e) {
   } = e, {
     topGames: a,
     tryFetchTopGames: c
-  } = (0, o.I)(), u = a.get(t), [p, h] = i.useState(!1);
+  } = (0, o.I)(), u = a.get(t), [g, h] = i.useState(!1);
   i.useEffect(() => {
     h(!0), c(t).finally(() => {
       h(!1)
@@ -127,22 +127,22 @@ function f(e) {
       let t = new Set(n);
       n.has(e) ? t.delete(e) : t.add(e), s(t)
     }, [s, n]);
-  return p && null == u ? (0, r.jsx)(l.$jN, {
-    className: g.loadingSpinner
+  return g && null == u ? (0, r.jsx)(l.$jN, {
+    className: p.loadingSpinner
   }) : null == f || 0 === f.length ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("hr", {
-      className: g.separator
+      className: p.separator
     }), (0, r.jsxs)("div", {
-      className: g.gamesContainer,
+      className: p.gamesContainer,
       children: [(0, r.jsx)(l.Text, {
         variant: "text-xs/semibold",
         color: "text-muted",
         children: m.NW.string(m.t["0wEQQ0"])
       }), (0, r.jsx)("div", {
-        className: g.gamesList,
+        className: p.gamesList,
         children: f.map(e => (0, r.jsx)(d.Z, {
           applicationId: e,
-          imageContainerClassName: g.clickableGame,
+          imageContainerClassName: p.clickableGame,
           selected: n.has(e),
           onClick: b
         }, e))
@@ -162,15 +162,15 @@ let b = e => {
     includeSuggestedGames: u
   } = e, m = s.size <= o;
   return (0, r.jsxs)("div", {
-    className: a()(p.slideContent, g.container),
+    className: a()(g.slideContent, p.container),
     children: [(0, r.jsx)(l.X6q, {
       variant: "heading-xxl/medium",
-      className: p.title,
+      className: g.title,
       children: t
     }), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      className: p.subtitle,
+      className: g.subtitle,
       children: n
     }), (0, r.jsx)(h, {
       minGames: o,

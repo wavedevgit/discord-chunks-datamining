@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(481060),
   u = n(44315),
   m = n(937615),
-  g = n(817460),
-  p = n(584825),
+  p = n(817460),
+  g = n(584825),
   h = n(289393),
   f = n(723047),
   b = n(727843),
@@ -44,7 +44,7 @@ function y(e) {
     submitting: J,
     error: $,
     publishSubscriptionListing: ee
-  } = (0, p.HQ)(), et = q || J;
+  } = (0, g.HQ)(), et = q || J;
   return (0, r.jsxs)("div", {
     className: O.container,
     children: [(0, r.jsxs)("div", {
@@ -86,7 +86,7 @@ function y(e) {
           }), null != k && (0, r.jsxs)(d.Text, {
             color: "interactive-normal",
             variant: "text-sm/normal",
-            children: [(0, m.T4)(k.price, k.currency), "/", (0, g.JE)(k)]
+            children: [(0, m.T4)(k.price, k.currency), "/", (0, p.JE)(k)]
           })]
         })]
       }), D ? (0, r.jsxs)(r.Fragment, {

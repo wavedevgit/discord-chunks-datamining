@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(710344),
   u = n(637853),
   m = n(107862),
-  g = n(259580),
-  p = n(823379),
+  p = n(259580),
+  g = n(823379),
   h = n(889369),
   f = n(570961),
   b = n(208665),
@@ -56,7 +56,7 @@ function O(e) {
   }), L = (0, l.cj)([b.Z], () => {
     var e;
     return null !== (e = b.Z.errors[x]) && void 0 !== e ? e : _
-  }), [M, G] = i.useState(!1), [U, B] = i.useState(!1), F = null !== (t = L.options) && void 0 !== t ? t : L.optionErrors.filter(p.lm)[0], z = L.config, H = w && s.options.length >= j.fY, V = (0, u.kl)(n.id, Array.from(R), [s]).length - R.size, Y = i.useRef(null), K = i.useRef(x);
+  }), [M, G] = i.useState(!1), [U, B] = i.useState(!1), F = null !== (t = L.options) && void 0 !== t ? t : L.optionErrors.filter(g.lm)[0], z = L.config, H = w && s.options.length >= j.fY, V = (0, u.kl)(n.id, Array.from(R), [s]).length - R.size, Y = i.useRef(null), K = i.useRef(x);
   return (i.useEffect(() => {
     K.current = x
   }), i.useLayoutEffect(() => {
@@ -101,8 +101,8 @@ function O(e) {
       }), (0, r.jsx)(o.P3F, {
         className: v.collapseButton,
         onClick: () => G(!1),
-        children: (0, r.jsx)(g.Z, {
-          direction: g.Z.Directions.DOWN,
+        children: (0, r.jsx)(p.Z, {
+          direction: p.Z.Directions.DOWN,
           height: 16,
           width: 16
         })
@@ -214,8 +214,8 @@ function O(e) {
         }), (0, r.jsx)(o.P3F, {
           className: v.collapseButton,
           onClick: () => G(!0),
-          children: (0, r.jsx)(g.Z, {
-            direction: g.Z.Directions.UP,
+          children: (0, r.jsx)(p.Z, {
+            direction: p.Z.Directions.UP,
             height: 16,
             width: 16
           })
@@ -284,7 +284,7 @@ function C(e) {
   } = (0, m.Ug)(t.id), o = l ? j.qm : j.M$, {
     handleDragStart: c,
     handleDragReset: u,
-    handleDragComplete: g
+    handleDragComplete: p
   } = (0, d.Z)(n.options, e => (0, f.Kk)(t, n.id, {
     options: e
   }));
@@ -297,7 +297,7 @@ function C(e) {
       singleColumn: s,
       option: e,
       onDragStart: c,
-      onDragComplete: g,
+      onDragComplete: p,
       onDragReset: u,
       hasError: null != a.optionErrors[l]
     }, e.id)), n.options.length < o ? (0, r.jsx)(x.B, {

@@ -68,12 +68,12 @@ function h(e) {
     max: 5,
     showUserPopout: !1
   }));
-  let p = (0, c.KS)(t);
+  let x = (0, c.KS)(t);
   return (0, r.jsxs)("div", {
     className: i()(f.channelInfo, {
       [f.selected]: l
     }),
-    children: [(0, r.jsx)(p, {
+    children: [(0, r.jsx)(x, {
       className: f.channelIcon
     }), (0, r.jsx)("div", {
       className: f.channelName,

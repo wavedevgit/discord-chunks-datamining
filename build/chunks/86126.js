@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(584825),
   u = n(289393),
   m = n(727843),
-  g = n(14263),
-  p = n(783454),
+  p = n(14263),
+  g = n(783454),
   h = n(388032),
   f = n(174032),
   b = n(81780);
@@ -59,7 +59,7 @@ function N(e) {
     editStateId: N,
     guildId: v,
     groupListingId: _
-  } = (0, m.N)(), O = (0, l.e7)([u.Z], () => u.Z.getSubscriptionListing(N)), y = null == O ? void 0 : O.id, C = (0, g.Z)(v), I = i.useMemo(() => {
+  } = (0, m.N)(), O = (0, l.e7)([u.Z], () => u.Z.getSubscriptionListing(N)), y = null == O ? void 0 : O.id, C = (0, p.Z)(v), I = i.useMemo(() => {
     var e;
     return null != C && null != O && (null !== (e = C[O.role_id]) && void 0 !== e ? e : 0)
   }, [C, O]), E = 0 === I, S = null == y, T = null !== (t = null == O ? void 0 : O.archived) && void 0 !== t && t, {
@@ -94,7 +94,7 @@ function N(e) {
   }, {
     allowSelfRemoveMonetization: A
   } = (0, c.gX)(v);
-  return null == O ? null : (0, r.jsx)(p.Z, {
+  return null == O ? null : (0, r.jsx)(g.Z, {
     title: h.NW.string(h.t["7Si8Ul"]),
     children: T ? (0, r.jsxs)(o.hjN, {
       title: h.NW.string(h.t["2D14T0"]),

@@ -14,8 +14,8 @@ var r = n(200651),
   f = n(2052),
   h = n(924557),
   m = n(600164),
-  p = n(436774),
-  x = n(140465),
+  x = n(436774),
+  p = n(140465),
   g = n(774026),
   _ = n(592125),
   v = n(944486),
@@ -64,15 +64,13 @@ function T(e, t) {
 
 function E(e) {
   let {
-    analyticsLocation: t,
-    onClose: l
+    analyticsLocation: t
   } = e;
   (0, d.ZDy)(async () => {
     let {
       default: e
     } = await n.e("28479").then(n.bind(n, 78865));
     return n => (0, r.jsx)(e, T(P({}, n), {
-      onCloseParent: l,
       analyticsSource: t
     }))
   })
@@ -83,7 +81,7 @@ function R() {
     className: O.toolTipTextContainer,
     children: [(0, r.jsx)(d.SrA, {
       size: "md",
-      color: p.JX.PREMIUM_TIER_2,
+      color: x.JX.PREMIUM_TIER_2,
       className: O.premiumIcon
     }), (0, r.jsx)(d.Text, {
       className: O.upsellText,
@@ -106,7 +104,7 @@ function W(e) {
     } = e,
     {
       value: m,
-      label: p
+      label: x
     } = l;
   return o ? (t = (0, r.jsx)(d.DY3, {
     tooltipClassName: O.tooltip,
@@ -120,7 +118,7 @@ function W(e) {
       children: (0, r.jsx)(d.Text, {
         variant: "text-xs/bold",
         className: s()(O.selectorNitroText, O.enhancedSelectorNitroText),
-        children: p
+        children: x
       })
     })
   }), n = () => E({
@@ -133,7 +131,7 @@ function W(e) {
       className: s()(O.selectorText, {
         [O.enhancedSelectorNitroText]: a
       }),
-      children: p
+      children: x
     })
   }), n = () => u(m)), {
     content: t,
@@ -153,7 +151,7 @@ function k(e) {
     selectedResolution: i,
     selectedFPS: s,
     onResolutionChange: o,
-    onFPSChange: p,
+    onFPSChange: x,
     onPresetChange: R,
     targetGuildPremiumTier: k,
     captureDeviceSelected: A
@@ -164,9 +162,9 @@ function k(e) {
     location: G
   } = (0, f.O)(), B = (0, h.Zq)({
     autoTrackExposure: !1
-  }), U = (0, x.B4)({
+  }), U = (0, p.B4)({
     location: "StreamSettings"
-  }), z = j.default.getUser(null == L ? void 0 : L.hdStreamingBuyerId), F = null != L && null != L.hdStreamingUntil && new Date(L.hdStreamingUntil) > new Date && null != z, H = !D && !B, [V, J] = l.useState(!1), X = A ? N.z8 : N.WC, Y = T(P({}, G), {
+  }), F = j.default.getUser(null == L ? void 0 : L.hdStreamingBuyerId), z = null != L && null != L.hdStreamingUntil && new Date(L.hdStreamingUntil) > new Date && null != F, H = !D && !B, [V, J] = l.useState(!1), X = A ? N.z8 : N.WC, Y = T(P({}, G), {
     section: y.jXE.STREAM_SETTINGS
   }), K = (0, r.jsx)(d.hE2, {
     buttons: X.map(e => W({
@@ -186,7 +184,7 @@ function k(e) {
       needsPremium: !(0, C.Z)(n, i, e.value, M, k, L),
       needsDemo: U && e.value === N.ws.FPS_60,
       analyticsLocation: Y,
-      onClick: () => p(e.value),
+      onClick: () => x(e.value),
       onClose: t,
       setIsHovering: J
     }))
@@ -216,9 +214,9 @@ function k(e) {
       message: Z.NW.string(Z.t.deDogI),
       onClose: t,
       openStreamUpsellModal: E
-    }) : null, U && (0, r.jsx)(S.c, {}), F && null != L.hdStreamingUntil && (0, r.jsx)(g.Z, {
+    }) : null, U && (0, r.jsx)(S.c, {}), z && null != L.hdStreamingUntil && (0, r.jsx)(g.Z, {
       streamingUntil: L.hdStreamingUntil,
-      user: z,
+      user: F,
       channel: L
     })]
   }) : (0, r.jsxs)(r.Fragment, {
@@ -238,9 +236,9 @@ function k(e) {
       onClose: t,
       openStreamUpsellModal: E,
       glow: V
-    }) : null, U && (0, r.jsx)(S.c, {}), F && null != L.hdStreamingUntil && (0, r.jsx)(g.Z, {
+    }) : null, U && (0, r.jsx)(S.c, {}), z && null != L.hdStreamingUntil && (0, r.jsx)(g.Z, {
       streamingUntil: null == L ? void 0 : L.hdStreamingUntil,
-      user: z,
+      user: F,
       channel: L
     })]
   });

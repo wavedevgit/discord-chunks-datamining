@@ -20,8 +20,8 @@ function c(e) {
     onToggle: d,
     animateStatus: u,
     firstLine: m,
-    secondLine: g,
-    disabled: p
+    secondLine: p,
+    disabled: g
   } = e;
   return (0, r.jsxs)("div", {
     className: s()(t, o.enableContainer),
@@ -48,7 +48,7 @@ function c(e) {
         children: m
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
-        children: g
+        children: p
       })]
     }), (0, r.jsxs)("div", {
       className: o.buttonContainer,
@@ -57,11 +57,11 @@ function c(e) {
         look: a.zxk.Looks.LINK,
         size: a.zxk.Sizes.SMALL,
         onClick: c,
-        disabled: p,
+        disabled: g,
         color: a.zxk.Colors.PRIMARY,
         children: null != i ? i : l.NW.string(l.t["5U0kLy"])
       }), (0, r.jsx)(a.zxk, {
-        disabled: null == d || p,
+        disabled: null == d || g,
         size: a.zxk.Sizes.SMALL,
         color: n ? a.zxk.Colors.RED : a.zxk.Colors.BRAND,
         onClick: d,

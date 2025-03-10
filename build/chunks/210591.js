@@ -13,27 +13,27 @@ var r = n(200651),
   d = n(259580),
   u = n(293810),
   m = n(388032),
-  g = n(820279);
+  p = n(820279);
 
-function p(e) {
+function g(e) {
   let {
     checked: t,
     children: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: g.row,
+    className: p.row,
     children: [(0, r.jsx)(c.Text, {
       variant: "text-md/normal",
       color: "interactive-active",
-      className: g.rowText,
+      className: p.rowText,
       children: n
     }), t ? (0, r.jsx)(c.owK, {
       size: "md",
       color: "currentColor",
       secondaryColor: o.Z.unsafe_rawColors.WHITE_500.css,
-      className: a()(g.rowIcon, g.rowIconChecked)
+      className: a()(p.rowIcon, p.rowIconChecked)
     }) : (0, r.jsx)("div", {
-      className: a()(g.rowIcon, g.rowIconEmpty)
+      className: a()(p.rowIcon, p.rowIconEmpty)
     })]
   })
 }
@@ -59,22 +59,22 @@ function h(e) {
       } = e;
       return (0, r.jsxs)(i.Fragment, {
         children: [t > 0 && (0, r.jsx)(c.$i$, {
-          className: g.divider
+          className: p.divider
         }), (0, r.jsx)(c.vwX, {
-          className: g.categoryTitle,
+          className: p.categoryTitle,
           children: n
-        }), s.map((e, t) => (0, r.jsx)(p, {
+        }), s.map((e, t) => (0, r.jsx)(g, {
           children: e.description,
           checked: e.completed
         }, t))]
       }, t)
     }), (0, r.jsx)(c.$i$, {
-      className: g.divider
+      className: p.divider
     }), (0, r.jsx)(c.vwX, {
-      className: g.categoryTitle,
+      className: p.categoryTitle,
       children: m.NW.string(m.t.FO0AIS)
     }), b.map((e, t) => (0, r.jsx)("div", {
-      className: g.row,
+      className: p.row,
       children: (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
         children: e
@@ -82,24 +82,24 @@ function h(e) {
     }, t))]
   });
   return (0, r.jsx)("div", {
-    className: g.checklist,
+    className: p.checklist,
     children: (0, r.jsxs)("div", {
-      className: g.container,
+      className: p.container,
       children: [(0, r.jsxs)(c.P3F, {
-        className: g.headerBar,
+        className: p.headerBar,
         onClick: () => s(e => !e),
         children: [(0, r.jsx)(c.X6q, {
           variant: "heading-md/semibold",
-          className: g.headerText,
+          className: p.headerText,
           children: m.NW.string(m.t["2Xbd/P"])
         }), (0, r.jsx)(d.Z, {
           direction: n ? d.Z.Directions.DOWN : d.Z.Directions.UP,
-          className: g.headerCaret
+          className: p.headerCaret
         })]
       }), !h && (0, r.jsx)("div", {
-        className: g.progressBarOuter,
+        className: p.progressBarOuter,
         children: (0, r.jsx)(l.animated.div, {
-          className: g.progressBarInner,
+          className: p.progressBarInner,
           style: f
         })
       }), x]

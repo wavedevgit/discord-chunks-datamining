@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(846519),
   u = n(481060),
   m = n(232567),
-  g = n(596454),
-  p = n(410030),
+  p = n(596454),
+  g = n(410030),
   h = n(623624),
   f = n(357156),
   b = n(208049),
@@ -186,7 +186,7 @@ function z(e) {
     return [null !== (e = x.Z.getSoundsForGuild(t.id)) && void 0 !== e ? e : Z.Hy, x.Z.isFetchingSounds() || x.Z.isFetchingDefaultSounds()]
   }), {
     canCreateExpressions: l
-  } = (0, f.XJ)(t), o = i.useRef(null), d = (0, p.ZP)(), m = t.premiumTier, g = (0, E.yw)(t, s, m);
+  } = (0, f.XJ)(t), o = i.useRef(null), d = (0, g.ZP)(), m = t.premiumTier, p = (0, E.yw)(t, s, m);
   i.useEffect(() => {
     (0, b.w)()
   }, []);
@@ -214,7 +214,7 @@ function z(e) {
         }))
       })
     },
-    disabled: g <= 0 || !l,
+    disabled: p <= 0 || !l,
     children: D.NW.string(D.t["/uNYPD"])
   }) : (0, r.jsx)(F, {});
   return (0, r.jsxs)(r.Fragment, {
@@ -251,12 +251,12 @@ function z(e) {
         children: (0, r.jsx)(U, {
           guildId: t.id,
           currentTier: m,
-          availableSounds: g
+          availableSounds: p
         })
       }), (0, r.jsx)(w.Z, {
         guild: t,
         numSounds: s.length,
-        isOutOfSlots: 0 === g
+        isOutOfSlots: 0 === p
       }), (0, r.jsxs)("div", {
         className: A.soundTable,
         children: [(0, r.jsxs)("div", {
@@ -287,7 +287,7 @@ function H(e) {
     guild: o
   } = e, {
     soundId: d,
-    name: p,
+    name: g,
     user: h,
     userId: x,
     emojiId: j,
@@ -325,7 +325,7 @@ function H(e) {
     className: a()(A.row, {
       [A.active]: s
     }),
-    children: [S ? (0, r.jsx)(g.Z, {
+    children: [S ? (0, r.jsx)(p.Z, {
       emojiId: j,
       emojiName: N,
       className: A.emoji
@@ -342,7 +342,7 @@ function H(e) {
       children: (0, r.jsxs)(u.Text, {
         variant: "text-sm/normal",
         className: A.soundName,
-        children: [p, " ", (0, r.jsx)(u.gj8, {
+        children: [g, " ", (0, r.jsx)(u.gj8, {
           size: "md",
           color: "currentColor",
           className: A.soundPreviewIcon
@@ -387,7 +387,7 @@ function H(e) {
         onClick: function(e) {
           e.stopPropagation(), (0, u.h7j)(e => (0, r.jsx)(u.ConfirmModal, W(k({
             header: D.NW.formatToPlainString(D.t["PR/VbG"], {
-              soundName: p
+              soundName: g
             }),
             confirmText: D.NW.string(D.t.oyYWHB),
             cancelText: D.NW.string(D.t["ETE/oK"]),
@@ -396,7 +396,7 @@ function H(e) {
             children: (0, r.jsx)(u.Text, {
               variant: "text-md/normal",
               children: D.NW.format(D.t["u6+CmJ"], {
-                soundName: p
+                soundName: g
               })
             })
           })))

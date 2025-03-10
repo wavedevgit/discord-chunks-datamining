@@ -13,9 +13,9 @@ var r = n(200651),
   d = n(969632),
   u = n(430677),
   m = n(388032),
-  g = n(668813);
+  p = n(668813);
 
-function p(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,11 +50,11 @@ let f = [];
 
 function b() {
   return (0, r.jsx)("div", {
-    className: g.actionItemContainer,
+    className: p.actionItemContainer,
     children: (0, r.jsxs)("div", {
-      className: g.actionItem,
+      className: p.actionItem,
       children: [(0, r.jsx)("div", {
-        className: g.actionItemEmojiWrapper,
+        className: p.actionItemEmojiWrapper,
         children: (0, r.jsx)(a.snC, {
           size: "custom",
           color: "currentColor",
@@ -62,7 +62,7 @@ function b() {
           width: 22
         })
       }), (0, r.jsx)("div", {
-        className: g.actionItemText,
+        className: p.actionItemText,
         children: (0, r.jsx)(a.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
@@ -82,14 +82,14 @@ function x(e) {
       let {
         default: e
       } = await n.e("14653").then(n.bind(n, 380716));
-      return n => (0, r.jsx)(e, h(p({}, n), {
+      return n => (0, r.jsx)(e, h(g({}, n), {
         guildId: t,
         onSave: s
       }))
     })
   }, [t, s]);
   return (0, r.jsxs)(a.P3F, {
-    className: g.addActionItem,
+    className: p.addActionItem,
     onClick: l,
     children: [(0, r.jsx)(a.oFk, {
       size: "xs",
@@ -129,7 +129,7 @@ let j = function(e) {
     var t;
     let r = null === (t = n[e]) || void 0 === t ? void 0 : t.channelId;
     null != r && (0, c.Hr)(r)
-  }, [n]), N = n.map(e => h(p({}, e), {
+  }, [n]), N = n.map(e => h(g({}, e), {
     id: e.channelId
   })), v = i.useCallback(e => {
     (0, c.hS)(e);
@@ -141,7 +141,7 @@ let j = function(e) {
     handleDragComplete: y
   } = (0, l.Z)(N, v);
   return (0, r.jsxs)("div", {
-    className: g.section,
+    className: p.section,
     children: [n.map((e, n) => (0, r.jsx)(u.Z, {
       guildId: t,
       action: e,

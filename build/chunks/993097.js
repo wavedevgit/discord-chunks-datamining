@@ -1,7 +1,7 @@
 /** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
-  C: () => g
+  C: () => p
 });
 var r = n(200651),
   i = n(192379),
@@ -14,7 +14,7 @@ var r = n(200651),
   u = n(770270),
   m = n(203377);
 
-function g() {
+function p() {
   let {
     vanityURLCode: e,
     hasChanges: t,
@@ -24,28 +24,28 @@ function g() {
     hasChanges: d.Z.hasChanges(),
     errorDetails: d.Z.errorDetails
   })), {
-    guild: g,
-    submitting: p,
+    guild: p,
+    submitting: g,
     errors: h,
     hasChanges: f
   } = (0, s.cj)([o.Z], () => o.Z.getProps()), b = i.useMemo(() => null != n ? (0, u.i)(null == n ? void 0 : n.code) : (0, m.LG)(h), [h, n]), x = i.useCallback(async () => {
-    if (null != g && (t && await (0, c.en)(g.id, e, {
+    if (null != p && (t && await (0, c.en)(p.id, e, {
         throwErr: !0
       }), f)) {
       let e = {
-        premiumProgressBarEnabled: g.premiumProgressBarEnabled,
-        banner: g.banner,
-        splash: g.splash
+        premiumProgressBarEnabled: p.premiumProgressBarEnabled,
+        banner: p.banner,
+        splash: p.splash
       };
-      await l.Z.saveGuild(g.id, e, {
+      await l.Z.saveGuild(p.id, e, {
         throwErr: !0
       })
     }
-  }, [g, f, t, e]), j = i.useCallback(() => {
-    null != g && (l.Z.init(g.id), (0, c.H7)())
-  }, [g]);
+  }, [p, f, t, e]), j = i.useCallback(() => {
+    null != p && (l.Z.init(p.id), (0, c.H7)())
+  }, [p]);
   return (0, r.jsx)(a.Z, {
-    submitting: p,
+    submitting: g,
     errorMessage: b,
     onSave: x,
     onReset: j

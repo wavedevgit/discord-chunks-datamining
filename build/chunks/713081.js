@@ -17,10 +17,11 @@ var r = n(544891),
   c = n(535396),
   u = n(981631);
 
-function d(e) {
+function d(e, t) {
   i.Z.dispatch({
     type: "GUILD_POWERUPS_ACK_NOTIFICATION",
-    guildId: e
+    guildId: e,
+    notification: t
   })
 }
 

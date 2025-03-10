@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(584922),
   u = n(442837),
   m = n(481060),
-  g = n(239091),
-  p = n(596454),
+  p = n(239091),
+  g = n(596454),
   h = n(493773),
   f = n(607070),
   b = n(933557),
@@ -107,7 +107,7 @@ let L = "WELCOME_CHANNEL",
       });
     return i.useLayoutEffect(() => (U(B(y)), () => {
       U(null), B(null)
-    }), [U, B]), s = w ? null != P || null != o.emoji_name ? (0, r.jsx)(p.Z, {
+    }), [U, B]), s = w ? null != P || null != o.emoji_name ? (0, r.jsx)(g.Z, {
       emojiId: null == P ? void 0 : P.id,
       emojiName: null != P ? P.name : o.emoji_name,
       animated: !!(null == P ? void 0 : P.animated)
@@ -126,7 +126,7 @@ let L = "WELCOME_CHANNEL",
       ref: y,
       "data-dnd-name": o.description,
       onContextMenu: e => {
-        (0, g.jW)(e, async () => {
+        (0, p.jW)(e, async () => {
           let {
             default: e
           } = await n.e("68535").then(n.bind(n, 602320));
@@ -189,7 +189,7 @@ let L = "WELCOME_CHANNEL",
     } = e, {
       welcomeSettings: a,
       originalWelcomeSettings: l
-    } = (0, u.e7)([y.Z], () => y.Z.getSettingsProps()), c = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), [d, g] = i.useState(null), [p, b] = i.useState(!1), [x, j] = i.useState(!1), {
+    } = (0, u.e7)([y.Z], () => y.Z.getSettingsProps()), c = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), [d, p] = i.useState(null), [g, b] = i.useState(!1), [x, j] = i.useState(!1), {
       description: C,
       channels: I,
       enabled: T
@@ -224,7 +224,7 @@ let L = "WELCOME_CHANNEL",
         i = [...I];
       null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), (0, O.VP)({
         channels: i
-      })), n ? (G(i), g(null)) : g(t)
+      })), n ? (G(i), p(null)) : p(t)
     }, H = i.useRef(!1);
     (0, h.ZP)(() => (null != t && s && (0, m.ZDy)(async () => {
       let {
@@ -239,7 +239,7 @@ let L = "WELCOME_CHANNEL",
     }), () => {
       H.current = !0
     })), i.useEffect(() => () => {
-      if (H.current && p) {
+      if (H.current && g) {
         let e = [],
           n = [],
           r = !1;
@@ -254,7 +254,7 @@ let L = "WELCOME_CHANNEL",
           is_enabled: T
         })
       }
-    }, [p, I, C, T, t, H]), i.useEffect(() => () => (0, O.sm)(), []);
+    }, [g, I, C, T, t, H]), i.useEffect(() => () => (0, O.sm)(), []);
     let V = i.useCallback(() => {
       null != t && P.Z.open(t.id, R.pNK.ONBOARDING)
     }, [t]);

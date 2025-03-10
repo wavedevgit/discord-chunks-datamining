@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(906732),
   u = n(434404),
   m = n(171368),
-  g = n(430824),
-  p = n(893966),
+  p = n(430824),
+  g = n(893966),
   h = n(527379),
   f = n(305473),
   b = n(113679),
@@ -32,9 +32,9 @@ var r = n(200651),
 function S(e) {
   let {
     guildId: t
-  } = e, n = (0, l.e7)([g.Z], () => g.Z.getGuild(t)), {
+  } = e, n = (0, l.e7)([p.Z], () => p.Z.getGuild(t)), {
     analyticsLocations: s
-  } = (0, d.ZP)(c.Z.GUILD_SETTINGS_MEMBERS_PAGE), S = !1 == !!(null == n ? void 0 : n.hasFeature(y.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), T = (0, l.e7)([p.Z], () => p.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), P = i.useCallback(e => {
+  } = (0, d.ZP)(c.Z.GUILD_SETTINGS_MEMBERS_PAGE), S = !1 == !!(null == n ? void 0 : n.hasFeature(y.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), T = (0, l.e7)([g.Z], () => g.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), P = i.useCallback(e => {
     null != e && (0, m.openUserProfileModal)({
       userId: e.userId,
       guildId: e.guildId,

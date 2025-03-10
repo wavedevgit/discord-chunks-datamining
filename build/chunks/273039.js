@@ -18,23 +18,23 @@ function c(e) {
     className: c,
     buttonClassName: d,
     look: u
-  } = e, [m, g] = i.useState(!1), p = i.useCallback(() => {
-    n(), g(!1)
-  }, [n, g]);
+  } = e, [m, p] = i.useState(!1), g = i.useCallback(() => {
+    n(), p(!1)
+  }, [n, p]);
   return (0, r.jsxs)("div", {
     className: a()(o.container, c),
     onMouseEnter: () => {
       if (t) {
-        g(!0);
+        p(!0);
         return
       }
-      g(!1)
+      p(!1)
     },
     onMouseLeave: () => {
-      g(!1)
+      p(!1)
     },
     children: [s, t && m ? (0, r.jsx)(l.Z, {
-      onClick: p,
+      onClick: g,
       className: a()(o.removeButton, d),
       look: u
     }) : null]

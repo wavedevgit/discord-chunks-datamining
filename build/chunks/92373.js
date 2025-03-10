@@ -1,7 +1,7 @@
 /** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var r = n(200651),
   i = n(192379),
@@ -13,13 +13,13 @@ var r = n(200651),
   d = n(77498),
   u = n(388032),
   m = n(564918);
-let g = function(e) {
+let p = function(e) {
   let {
     applicationId: t,
     imageContainerClassName: n,
     onClick: s,
-    selected: g,
-    locked: p = !1,
+    selected: p,
+    locked: g = !1,
     otherGamesCount: h = 0
   } = e, f = (0, l.dQu)(l.TVs.colors.WHITE), {
     isFetching: b,
@@ -47,14 +47,14 @@ let g = function(e) {
     children: [(0, r.jsxs)(l.P3F, {
       onClick: N,
       className: a()(n, b ? m.gameImageLoading : void 0, m.gameImageBackground),
-      children: [g && (0, r.jsx)("div", {
+      children: [p && (0, r.jsx)("div", {
         className: m.checkBackground,
         children: (0, r.jsx)(l.owK, {
           size: "md",
           color: "currentColor",
           secondaryColor: f.hex(),
           className: a()(m.selectedGameCheck, {
-            [m.selectedGameCheckLocked]: p
+            [m.selectedGameCheckLocked]: g
           })
         })
       }), v, h > 0 && (0, r.jsx)("div", {
@@ -71,7 +71,7 @@ let g = function(e) {
       className: m.gameName,
       variant: "text-xs/normal",
       color: "header-primary",
-      children: [j, p && (0, r.jsx)(l.mBM, {
+      children: [j, g && (0, r.jsx)(l.mBM, {
         size: "xxs"
       })]
     })]

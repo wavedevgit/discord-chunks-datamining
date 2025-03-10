@@ -1,7 +1,7 @@
 /** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -33,7 +33,7 @@ function m(e) {
   return e
 }
 
-function g(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,10 +46,10 @@ function g(e, t) {
   }), e
 }
 
-function p(e) {
+function g(e) {
   let {
     guild: t
-  } = e, p = (0, i.e7)([a.Z], () => a.Z.isUploadingEmoji()), h = (0, d.Z)(t.id), f = t.getMaxRoleSubscriptionEmojiSlots() - h.length, b = (0, c.mY)();
+  } = e, g = (0, i.e7)([a.Z], () => a.Z.isUploadingEmoji()), h = (0, d.Z)(t.id), f = t.getMaxRoleSubscriptionEmojiSlots() - h.length, b = (0, c.mY)();
   return (0, r.jsxs)(s.hjN, {
     title: u.NW.string(u.t.LDT0Q0),
     disabled: b,
@@ -67,7 +67,7 @@ function p(e) {
           let {
             CreateEmojiWithRolesModal: s
           } = await n.e("9007").then(n.bind(n, 604623));
-          return n => (0, r.jsx)(s, g(m({}, n), {
+          return n => (0, r.jsx)(s, p(m({}, n), {
             data: e,
             file: i,
             guildId: t.id
@@ -75,8 +75,8 @@ function p(e) {
         })
       },
       buttonCTA: u.NW.string(u.t.AuPtoq),
-      submitting: p,
-      disabled: b || p || 0 === f
+      submitting: g,
+      disabled: b || g || 0 === f
     }), (0, r.jsx)(s.LZC, {
       size: 24
     }), (0, r.jsx)(l.L3, {
@@ -91,7 +91,7 @@ function p(e) {
           let {
             UpdateEmojiRolesModal: i
           } = await n.e("9007").then(n.bind(n, 604623));
-          return n => (0, r.jsx)(i, g(m({}, n), {
+          return n => (0, r.jsx)(i, p(m({}, n), {
             emoji: e,
             guildId: t
           }))

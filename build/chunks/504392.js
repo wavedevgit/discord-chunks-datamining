@@ -33,7 +33,7 @@ function _(e) {
       hideSearch: !0,
       toolbar: (0, r.jsx)("div", {}),
       children: [(0, r.jsx)(s.Z.Icon, {
-        icon: (0, o.GSL)(a.Z),
+        icon: a.Z,
         disabled: !0,
         "aria-label": ""
       }), (0, r.jsx)(s.Z.Title, {

@@ -17,7 +17,7 @@ async function d(e) {
   } = e, u = s.Z.getVideoDevices(), f = (0, i.Z)(s.Z.getMediaEngine(), d, {
     width: t,
     height: n
-  }), h = (0, o._)(), m = await h, p = await f, x = p.filter(e => e.id.startsWith(l.vA.SCREEN)).map(e => {
+  }), h = (0, o._)(), m = await h, x = await f, p = x.filter(e => e.id.startsWith(l.vA.SCREEN)).map(e => {
     var t, n;
     let r = e.name;
     return "Entire screen" === r ? r = a.NW.string(a.t.R4wpLC) : /^Screen \d+$/.test(r) && (r = a.NW.formatToPlainString(a.t["y/R7n5"], {
@@ -58,7 +58,7 @@ async function d(e) {
     }), e.forEach(e => {
       n[e.id] = e
     }), Object.values(n)
-  }(p.filter(e => e.id.startsWith(l.vA.WINDOW)), m), _ = [];
+  }(x.filter(e => e.id.startsWith(l.vA.WINDOW)), m), _ = [];
   return d.includes(l.vA.CAMERA) && (_ = Object.entries(u).filter(e => {
     let [t, n] = e;
     return !n.disabled
@@ -71,7 +71,7 @@ async function d(e) {
     }
   })), {
     windowSources: g,
-    screenSources: x,
+    screenSources: p,
     cameraSources: _
   }
 }

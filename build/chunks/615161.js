@@ -60,8 +60,8 @@ let m = {
     fetchingSources: !0,
     sourceApplication: void 0
   },
-  p = l.createContext(m),
-  x = l.createContext(() => {
+  x = l.createContext(m),
+  p = l.createContext(() => {
     throw Error("Using uninitialized GoLiveModalContextDispatch")
   });
 
@@ -121,9 +121,9 @@ function _(e) {
     state: n,
     children: l
   } = e;
-  return (0, r.jsx)(x.Provider, {
+  return (0, r.jsx)(p.Provider, {
     value: t,
-    children: (0, r.jsx)(p.Provider, {
+    children: (0, r.jsx)(x.Provider, {
       value: n,
       children: l
     })
@@ -136,13 +136,13 @@ function v(e) {
     preset: r,
     resolution: i,
     fps: d,
-    soundshareEnabled: p
-  } = (0, s.cj)([c.Z], () => c.Z.getState()), x = null !== (t = a.I0.useSetting()) && void 0 !== t && t, _ = null !== (n = a.eo.useSetting()) && void 0 !== n && n, [v, j] = l.useReducer(g, h(f({}, m), {
-    muteStreamAudio: !p,
+    soundshareEnabled: x
+  } = (0, s.cj)([c.Z], () => c.Z.getState()), p = null !== (t = a.I0.useSetting()) && void 0 !== t && t, _ = null !== (n = a.eo.useSetting()) && void 0 !== n && n, [v, j] = l.useReducer(g, h(f({}, m), {
+    muteStreamAudio: !x,
     preset: r,
     resolution: i,
     fps: d,
-    hidePreview: x,
+    hidePreview: p,
     notifyFriends: _,
     sourceApplication: e
   }));
@@ -160,5 +160,5 @@ function v(e) {
 }
 
 function j() {
-  return [l.useContext(p), l.useContext(x)]
+  return [l.useContext(x), l.useContext(p)]
 }

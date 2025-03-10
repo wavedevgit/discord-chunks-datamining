@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(603211),
   u = n(307707),
   m = n(734893),
-  g = n(216701),
-  p = n(592125),
+  p = n(216701),
+  g = n(592125),
   h = n(430824),
   f = n(768581),
   b = n(388032),
@@ -62,7 +62,7 @@ let v = function(e) {
     onDragStart: T,
     onDragComplete: P,
     onDragReset: w
-  } = e, R = (0, l.e7)([p.Z], () => p.Z.getChannel(C.channelId)), Z = (0, l.e7)([h.Z], () => h.Z.getGuild(y)), {
+  } = e, R = (0, l.e7)([g.Z], () => g.Z.getChannel(C.channelId)), Z = (0, l.e7)([h.Z], () => h.Z.getGuild(y)), {
     customEmoji: D,
     unicodeEmoji: A
   } = (0, u.Z)(null === (t = C.emoji) || void 0 === t ? void 0 : t.id, null === (s = C.emoji) || void 0 === s ? void 0 : s.name), k = null == C.emoji || null != D || null != A, W = f.ZP.getNewMemberActionIconURL({
@@ -127,10 +127,10 @@ let v = function(e) {
         })
       }) : (0, r.jsx)("div", {
         className: x.actionItemEmojiWrapper,
-        children: (0, r.jsx)(g.Z, {
+        children: (0, r.jsx)(p.Z, {
           emojiId: null === (v = C.emoji) || void 0 === v ? void 0 : v.id,
           emojiName: null === (_ = C.emoji) || void 0 === _ ? void 0 : _.name,
-          size: g.R.MEDIUM,
+          size: p.R.MEDIUM,
           defaultComponent: (0, r.jsx)(z, {})
         })
       }), (0, r.jsxs)("div", {

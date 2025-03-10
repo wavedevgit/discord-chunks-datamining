@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(605436),
   u = n(228643),
   m = n(496675),
-  g = n(626135),
-  p = n(823379),
+  p = n(626135),
+  g = n(823379),
   h = n(243730),
   f = n(946724),
   b = n(999382),
@@ -64,7 +64,7 @@ function E(e) {
         role: n,
         editRoleId: r
       } = W.current, i = (0, x.UT)(E), s = null !== (t = null === (e = h.Z.getRoleMemberCount(T.id)) || void 0 === e ? void 0 : e[r]) && void 0 !== t ? t : 0;
-      g.default.track(C.rMx.ROLE_PAGE_VIEWED, function(e) {
+      p.default.track(C.rMx.ROLE_PAGE_VIEWED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -130,7 +130,7 @@ function E(e) {
       });
       break;
     default:
-      (0, p.vE)(E)
+      (0, g.vE)(E)
   }
   return (0, r.jsxs)(o.hjN, {
     className: I.page,

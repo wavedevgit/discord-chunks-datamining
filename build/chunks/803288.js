@@ -14,25 +14,25 @@ var r = n(200651),
   d = n(906732),
   u = n(246946),
   m = n(63063),
-  g = n(999382),
-  p = n(621319),
+  p = n(999382),
+  g = n(621319),
   h = n(44550),
   f = n(586382),
   b = n(859481),
   x = n(981631),
   j = n(388032),
   N = n(696964);
-let v = s.ZP.connectStores([g.Z, h.Z], () => {
+let v = s.ZP.connectStores([p.Z, h.Z], () => {
   let e = h.Z.vanityURLCode,
-    t = g.Z.getGuildId();
+    t = p.Z.getGuildId();
   return {
     vanityURLCode: e,
     guildId: t,
     onReset() {
-      (0, p.H7)()
+      (0, g.H7)()
     },
     onSave() {
-      null != t && (0, p.en)(t, e)
+      null != t && (0, g.en)(t, e)
     }
   }
 })(o.Z);
@@ -74,7 +74,7 @@ class _ extends i.PureComponent {
 
 function O() {
   var e, t;
-  let n = (0, s.e7)([g.Z], () => g.Z.getGuild()),
+  let n = (0, s.e7)([p.Z], () => p.Z.getGuild()),
     i = (0, s.cj)([h.Z], () => ({
       vanityURLCode: h.Z.vanityURLCode,
       vanityURLUses: h.Z.vanityURLUses,

@@ -33,15 +33,15 @@ function d(e) {
     }
     return i
   }(e, ["action", "children", "className", "onExpandChange", "loading"]);
-  let [g, p] = i.useState(!1), h = e => {
-    p(e), null == d || d(e)
+  let [p, g] = i.useState(!1), h = e => {
+    g(e), null == d || d(e)
   };
   return (0, r.jsx)(l.zF9, {
     className: a()(c.groupContainer, s),
-    isExpanded: g,
+    isExpanded: p,
     collapsibleContent: (0, r.jsxs)("div", {
       className: c.groupCollapsedContainer,
-      children: [g && (0, r.jsx)("div", {
+      children: [p && (0, r.jsx)("div", {
         className: c.pointer
       }), n]
     }),
@@ -73,7 +73,7 @@ function d(e) {
           type: l.$jN.Type.PULSING_ELLIPSIS
         }) : t,
         onClick: e => {
-          h(!g), s(e)
+          h(!p), s(e)
         }
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);

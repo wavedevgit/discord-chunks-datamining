@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(2150),
   u = n(992249),
   m = n(717251),
-  g = n(388032),
-  p = n(514662);
+  p = n(388032),
+  g = n(514662);
 
 function h(e) {
   var t, n, s;
@@ -38,13 +38,13 @@ function h(e) {
     };
   return (0, r.jsx)(u.Z, {
     title: _ ? h : null !== (t = null == E ? void 0 : E.title) && void 0 !== t ? t : h,
-    description: _ ? "(".concat(null !== (n = null == E ? void 0 : E.title) && void 0 !== n ? n : g.NW.string(g.t.PoWNfX), ")") : null !== (s = null == E ? void 0 : E.description) && void 0 !== s ? s : "",
+    description: _ ? "(".concat(null !== (n = null == E ? void 0 : E.title) && void 0 !== n ? n : p.NW.string(p.t.PoWNfX), ")") : null !== (s = null == E ? void 0 : E.description) && void 0 !== s ? s : "",
     highlightColor: _ ? d.q.NONE : null == E ? void 0 : E.highlightColor,
     action: (0, r.jsx)(l.zxk, {
       look: l.zxk.Looks.LINK,
       size: l.zxk.Sizes.MIN,
       color: l.zxk.Colors.LINK,
-      children: g.NW.string(g.t.GEgsAw)
+      children: p.NW.string(p.t.GEgsAw)
     }),
     loading: y,
     className: x,
@@ -52,12 +52,12 @@ function h(e) {
       title: e.title,
       description: e.description,
       highlightColor: e.highlightColor,
-      className: a()(p.groupCollapsedRow, N === e.value && p.selected),
+      className: a()(g.groupCollapsedRow, N === e.value && g.selected),
       selected: N === e.value,
       action: N === e.value ? (0, r.jsx)(c.Z, {
-        className: p.radioItem
+        className: g.radioItem
       }) : (0, r.jsx)(o.Z, {
-        className: p.radioItem
+        className: g.radioItem
       }),
       onClick: () => S(e),
       disabled: e.disabled

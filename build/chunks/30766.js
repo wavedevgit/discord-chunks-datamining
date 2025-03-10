@@ -27,20 +27,20 @@ function m(e) {
     emojis: e.emojis
   }
 }
-let g = {},
-  p = 0;
+let p = {},
+  g = 0;
 class h extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(d.default)
   }
   isFetching() {
-    return p > 0
+    return g > 0
   }
   getGuild(e) {
-    return g[e]
+    return p[e]
   }
   getGuilds(e) {
-    return e.map(e => g[e]).filter(u.lm)
+    return e.map(e => p[e]).filter(u.lm)
   }
 }
 s = "DiscoverGuildsStore", (i = "displayName") in h ? Object.defineProperty(h, i, {
@@ -51,15 +51,15 @@ s = "DiscoverGuildsStore", (i = "displayName") in h ? Object.defineProperty(h, i
 }) : h[i] = s;
 let f = new h(c.Z, {
   DISCOVER_GUILDS_FETCH_START: function(e) {
-    p += 1
+    g += 1
   },
   DISCOVER_GUILDS_FETCH_SUCCESS: function(e) {
     let {
       guilds: t
     } = e;
-    p -= 1, l().map(t, m).forEach(e => g[e.id] = e)
+    g -= 1, l().map(t, m).forEach(e => p[e.id] = e)
   },
   DISCOVER_GUILDS_FETCH_FAILURE: function(e) {
-    p -= 1
+    g -= 1
   }
 })

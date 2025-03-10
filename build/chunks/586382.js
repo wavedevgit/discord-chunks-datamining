@@ -1,8 +1,8 @@
 /** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
-  hH: () => g,
-  xl: () => p,
+  hH: () => p,
+  xl: () => g,
   zA: () => m
 });
 var r = n(200651),
@@ -23,22 +23,22 @@ function u(e) {
     getPerks: u,
     targetPremiumGuildTier: m
   } = e, {
-    analyticsLocations: g
-  } = (0, s.ZP)(), p = i.useCallback(e => {
+    analyticsLocations: p
+  } = (0, s.ZP)(), g = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, l.E6)({
       guild: t,
-      analyticsLocations: g,
+      analyticsLocations: p,
       analyticsSection: o,
       analyticsObject: c,
       perks: u(),
       targetPremiumGuildTier: m
     })
-  }, [g, c, o, t, u, m]);
+  }, [p, c, o, t, u, m]);
   return (0, r.jsx)(a.Z, {
     guild: t,
     guildFeature: n,
     className: d.guildFeatureAvailabilityIndicator,
-    onClick: p
+    onClick: g
   })
 }
 
@@ -55,7 +55,7 @@ function m(e) {
   })
 }
 
-function g(e) {
+function p(e) {
   let {
     guild: t
   } = e;
@@ -68,7 +68,7 @@ function g(e) {
   })
 }
 
-function p(e) {
+function g(e) {
   let {
     guild: t
   } = e;

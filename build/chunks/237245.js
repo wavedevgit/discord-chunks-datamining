@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(863249),
   u = n(246364),
   m = n(983736),
-  g = n(571728),
-  p = n(699553),
+  p = n(571728),
+  g = n(699553),
   h = n(434404),
   f = n(999382),
   b = n(654351),
@@ -66,7 +66,7 @@ function I(e) {
     settingsGuild: I,
     settingsMetadata: E,
     settingsProfile: S
-  } = e, T = I.id, [P, w] = i.useState(!1), [R, Z] = i.useState(null), D = I.hasFeature(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null !== (t = (0, g.A)({
+  } = e, T = I.id, [P, w] = i.useState(!1), [R, Z] = i.useState(null), D = I.hasFeature(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null !== (t = (0, p.A)({
     guildId: I.id
   })) && void 0 !== t ? t : 0, k = i.useCallback(() => {
     Z(null), h.Z.init(T, v.pNK.ACCESS)
@@ -127,7 +127,7 @@ function I(e) {
             features: e
           })
         }
-        f.verificationDirty && await M([...e], !0), f.profileDirty && null != S && await (0, p.pV)(I.id, {
+        f.verificationDirty && await M([...e], !0), f.profileDirty && null != S && await (0, g.pV)(I.id, {
           visibility: S.visibility
         })
       })

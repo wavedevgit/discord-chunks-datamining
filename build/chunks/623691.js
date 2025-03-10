@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(714939),
   u = n(494831),
   m = n(981631),
-  g = n(388032),
-  p = n(785441);
+  p = n(388032),
+  g = n(785441);
 
 function h(e) {
   let {
@@ -37,12 +37,12 @@ function h(e) {
     ref: m,
     children: [(0, r.jsx)(l.vwX, {
       tag: l.RB0.H1,
-      children: g.NW.string(g.t.LPJmLy)
+      children: p.NW.string(p.t.LPJmLy)
     }), (0, r.jsx)(l.Text, {
-      className: p.description,
+      className: g.description,
       color: "header-secondary",
       variant: "text-sm/normal",
-      children: g.NW.string(g.t["1ydhVl"])
+      children: p.NW.string(p.t["1ydhVl"])
     }), (0, r.jsx)(f, {
       guild: t,
       everyoneRole: n,
@@ -72,30 +72,30 @@ function f(e) {
       query: s,
       setQuery: o
     }), (0, r.jsx)(l.Text, {
-      className: p.helpText,
+      className: g.helpText,
       color: "header-secondary",
       variant: "text-sm/normal",
-      children: g.NW.format(g.t.xkC3YW, {
+      children: p.NW.format(p.t.xkC3YW, {
         articleURL: c.Z.getArticleURL(m.BhN.PERMISSIONS_TUTORIAL)
       })
     }), (0, r.jsx)("div", {
-      className: p.rolesTable,
+      className: g.rolesTable,
       children: (0, r.jsxs)("div", {
-        className: p.tableHeader,
+        className: g.tableHeader,
         children: [(0, r.jsx)("div", {
-          className: p.dragSpacing
+          className: g.dragSpacing
         }), (0, r.jsx)(l.Text, {
-          className: a()(p.tableTitle, p.roleNameSpacing),
+          className: a()(g.tableTitle, g.roleNameSpacing),
           variant: "text-sm/normal",
-          children: g.NW.format(g.t["38N3V1"], {
+          children: p.NW.format(p.t["38N3V1"], {
             numRoles: String(i.length)
           })
         }), (0, r.jsx)(l.Text, {
-          className: a()(p.tableTitle, p.memberSpacing),
+          className: a()(g.tableTitle, g.memberSpacing),
           variant: "text-sm/normal",
-          children: g.NW.string(g.t["9Oq93t"])
+          children: p.NW.string(p.t["9Oq93t"])
         }), (0, r.jsx)("div", {
-          className: p.buttonsSpacing
+          className: g.buttonsSpacing
         })]
       })
     })]
@@ -115,22 +115,22 @@ function b(e) {
     c(!0), await o.Z.createRole(t.id), c(!1)
   };
   return (0, r.jsx)("div", {
-    className: p.__invalid_rolesList,
+    className: g.__invalid_rolesList,
     children: (0, r.jsxs)("div", {
-      className: p.searchContainer,
+      className: g.searchContainer,
       children: [(0, r.jsx)(l.E1j, {
         size: l.E1j.Sizes.MEDIUM,
         query: n,
         onChange: d,
         onClear: u,
-        placeholder: g.NW.string(g.t.Sojqsr),
-        "aria-label": g.NW.string(g.t.Sojqsr)
+        placeholder: p.NW.string(p.t.Sojqsr),
+        "aria-label": p.NW.string(p.t.Sojqsr)
       }), (0, r.jsx)(l.zxk, {
-        className: p.createButton,
+        className: g.createButton,
         size: l.zxk.Sizes.SMALL,
         onClick: m,
         submitting: a,
-        children: g.NW.string(g.t.JZZjQE)
+        children: p.NW.string(p.t.JZZjQE)
       })]
     })
   })

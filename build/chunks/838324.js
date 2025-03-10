@@ -1,7 +1,7 @@
 /** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => g
 }), n(47120);
 var r = n(200651);
 n(192379);
@@ -14,27 +14,27 @@ var i = n(442837),
   d = n(974513),
   u = n(290511),
   m = n(388032),
-  g = n(652212);
+  p = n(652212);
 
-function p(e) {
+function g(e) {
   let {
     guildId: t,
     scrollToQuestions: n
-  } = e, p = (0, i.e7)([l.Z], () => l.Z.isAdvancedMode(t)), h = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [f, b] = (0, o.VF)(t, h), [x, j] = (0, d.OA)(t, [...h]), N = p ? j.length : b.length, v = p ? x.length : f.length, _ = N < u.md, O = v >= u.X, y = j.length - b.length, C = (0, r.jsx)(a.owK, {
+  } = e, g = (0, i.e7)([l.Z], () => l.Z.isAdvancedMode(t)), h = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [f, b] = (0, o.VF)(t, h), [x, j] = (0, d.OA)(t, [...h]), N = g ? j.length : b.length, v = g ? x.length : f.length, _ = N < u.md, O = v >= u.X, y = j.length - b.length, C = (0, r.jsx)(a.owK, {
     size: "sm",
     color: s.Z.unsafe_rawColors.BRAND_500.css,
     secondaryColor: s.Z.unsafe_rawColors.WHITE_100.css,
-    className: g.icon
+    className: p.icon
   }), I = (0, r.jsx)(a.k$p, {
     size: "sm",
-    className: g.icon,
+    className: p.icon,
     color: s.Z.colors.WHITE.css,
     secondaryColor: s.Z.colors.BACKGROUND_ACCENT.css
   }), E = [Math.min(u.X, v) / u.md * 100, Math.min(u.md, N) / u.md * 100], S = !_ && O ? [s.Z.colors.TEXT_POSITIVE.css, s.Z.colors.TEXT_POSITIVE.css] : [s.Z.colors.TEXT_BRAND.css, s.Z.colors.TEXT_MUTED.css];
   return (0, r.jsxs)("div", {
-    className: g.container,
+    className: p.container,
     children: [(0, r.jsxs)("div", {
-      className: g.header,
+      className: p.header,
       children: [(0, r.jsx)(a.Text, {
         variant: "text-xs/bold",
         color: "text-brand",
@@ -53,7 +53,7 @@ function p(e) {
       percents: E,
       size: a.yGy.Sizes.XSMALL
     }), (0, r.jsxs)("div", {
-      className: g.requiredItem,
+      className: p.requiredItem,
       children: [_ ? I : C, (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
@@ -62,7 +62,7 @@ function p(e) {
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: g.requiredItem,
+      className: p.requiredItem,
       children: [O ? C : I, (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
@@ -70,26 +70,26 @@ function p(e) {
           count: u.X
         })
       })]
-    }), p && (0, r.jsxs)(r.Fragment, {
+    }), g && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: g.requiredItem,
+        className: p.requiredItem,
         children: [(0, r.jsx)(a.d3s, {
           size: "sm",
           color: s.Z.colors.WHITE.css,
           secondaryColor: s.Z.colors.BACKGROUND_ACCENT.css,
-          className: g.icon
+          className: p.icon
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
           children: m.NW.string(m.t.AyvkOD)
         })]
       }), (0, r.jsxs)("div", {
-        className: g.requiredItem,
+        className: p.requiredItem,
         children: [(0, r.jsx)(a.d3s, {
           size: "sm",
           color: s.Z.colors.WHITE.css,
           secondaryColor: s.Z.colors.BACKGROUND_ACCENT.css,
-          className: g.icon
+          className: p.icon
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
           color: "text-muted",

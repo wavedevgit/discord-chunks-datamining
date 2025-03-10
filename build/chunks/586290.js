@@ -14,8 +14,8 @@ var r = n(200651),
   f = n(537135),
   h = n(176940),
   m = n(388032),
-  p = n(731133),
-  x = n(711597),
+  x = n(731133),
+  p = n(711597),
   g = n(802138);
 
 function _(e) {
@@ -37,15 +37,15 @@ function _(e) {
     }(t.id, o, _));
   return null != v && i(v), (0, r.jsxs)(d.xJW, {
     title: "Capture Device",
-    className: x.modalContent,
+    className: p.modalContent,
     children: [(0, r.jsx)(d.xJW, {
       className: g.marginTop8,
       children: (0, r.jsxs)(f.Z, {
         children: [(0, r.jsx)("span", {
-          className: p.ellipsisText,
+          className: x.ellipsisText,
           children: t.name
         }), (0, r.jsx)(d.zxk, {
-          className: p.changeButton,
+          className: x.changeButton,
           color: d.zxk.Colors.PRIMARY,
           size: d.zxk.Sizes.SMALL,
           onClick: n,

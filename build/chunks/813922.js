@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(300453),
   u = n(620436),
   m = n(273504),
-  g = n(388032),
-  p = n(617185);
+  p = n(388032),
+  g = n(617185);
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -67,10 +67,10 @@ function b(e) {
     }))
   }, [_, v]);
   return (0, r.jsxs)("div", {
-    className: p.cardContentsContainer,
+    className: g.cardContentsContainer,
     children: [(0, r.jsxs)(d.Z, {
       step: 1,
-      header: g.NW.string(g.t["ue+tnZ"]),
+      header: p.NW.string(p.t["ue+tnZ"]),
       children: [(0, r.jsx)(o.Z, {
         onChangeText: O,
         maxWordCount: m.RH,
@@ -89,7 +89,7 @@ function b(e) {
       type: u.Z.Type.ARROW_DOWN
     }), (0, r.jsx)(d.Z, {
       step: 2,
-      header: g.NW.string(g.t["18TOiY"]),
+      header: p.NW.string(p.t["18TOiY"]),
       children: (0, r.jsx)(a.Z, {
         rule: v,
         onChangeRule: _
@@ -98,7 +98,7 @@ function b(e) {
       type: u.Z.Type.CROSS
     }), (0, r.jsx)(d.Z, {
       step: 3,
-      header: g.NW.string(g.t.u5xPPT),
+      header: p.NW.string(p.t.u5xPPT),
       children: (0, r.jsx)(c.Z, {
         rule: v,
         onChangeRule: _,

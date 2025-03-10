@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(204875),
   u = n(715796),
   m = n(411667),
-  g = n(434404),
-  p = n(962086),
+  p = n(434404),
+  g = n(962086),
   h = n(225675),
   f = n(703656),
   b = n(430824),
@@ -43,11 +43,11 @@ function S(e) {
     if (null == T) return;
     let e = b.Z.getRole(T.id, T.getEveryoneRoleId());
     if (null == e) return;
-    g.Z.close();
+    p.Z.close();
     let t = {
       [e.id]: e
     };
-    (0, p.iD)(T.id, {
+    (0, g.iD)(T.id, {
       type: h.z.SERVER_SHOP,
       roles: t,
       initialTab: "guild_products",

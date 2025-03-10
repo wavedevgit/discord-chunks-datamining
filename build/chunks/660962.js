@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(780384),
   u = n(481060),
   m = n(605436),
-  g = n(663993),
-  p = n(540059),
+  p = n(663993),
+  g = n(540059),
   h = n(518738),
   f = n(786761),
   b = n(3148),
@@ -34,7 +34,7 @@ var r = n(200651),
   w = n(104978),
   R = n(179517),
   Z = n(79829);
-let D = (0, g.Un)({
+let D = (0, p.Un)({
     createPromise: () => n.e("4848").then(n.bind(n, 336231)),
     webpackId: 336231
   }),
@@ -140,10 +140,10 @@ function L(e) {
   }, m = {
     src: R,
     name: a.name
-  }, g = {
+  }, p = {
     src: Z,
     name: a.name
-  }, N = (0, h.oC)(l, a), v = (0, p.Q3)("RolePreview") ? [S.BRd.LIGHT, S.BRd.DARK, S.BRd.DARKER, S.BRd.MIDNIGHT] : [S.BRd.LIGHT, S.BRd.DARK];
+  }, N = (0, h.oC)(l, a), v = (0, g.Q3)("RolePreview") ? [S.BRd.LIGHT, S.BRd.DARK, S.BRd.DARKER, S.BRd.MIDNIGHT] : [S.BRd.LIGHT, S.BRd.DARK];
   return (0, r.jsx)(u.Rny, {
     children: (0, r.jsx)("div", {
       className: P.previewContainer,
@@ -158,7 +158,7 @@ function L(e) {
             children: (0, r.jsx)(x.Z, {
               author: c,
               message: o,
-              roleIcon: null != N ? N : (0, d.ap)(e) ? g : m,
+              roleIcon: null != N ? N : (0, d.ap)(e) ? p : m,
               isGroupStart: !0
             })
           })
@@ -200,8 +200,8 @@ function G(e) {
     locked: i,
     setSelectedSection: s
   } = e, l = (0, m.pM)(null == t ? void 0 : t.id, n.id), o = i || l, d = (0, c.e7)([N.Z], () => N.Z.canImpersonateRole(t, n)), {
-    headerHeight: g,
-    headerRef: p
+    headerHeight: p,
+    headerRef: g
   } = (0, _.Z)(0), {
     scrolledToTop: h,
     handleScroll: f
@@ -209,7 +209,7 @@ function G(e) {
   return (0, r.jsx)(u.yWw, {
     className: P.scroller,
     style: {
-      scrollPaddingTop: g
+      scrollPaddingTop: p
     },
     onScroll: f,
     children: (0, r.jsxs)("div", {
@@ -218,7 +218,7 @@ function G(e) {
         className: a()(w.header, w.stickyHeader, {
           [w.stickyHeaderElevated]: !h
         }),
-        ref: p,
+        ref: g,
         children: (0, r.jsx)(y.Z, {
           guild: t,
           role: n,

@@ -1,7 +1,7 @@
 /** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
-  w: () => g
+  w: () => p
 });
 var r = n(200651),
   i = n(192379),
@@ -14,11 +14,11 @@ var r = n(200651),
   u = n(935653),
   m = n(449874);
 
-function g(e) {
+function p(e) {
   let {
     canManageGuild: t,
     premiumProgressBarEnabled: n
-  } = e, g = (0, l.ZP)(), p = i.useCallback(e => {
+  } = e, p = (0, l.ZP)(), g = i.useCallback(e => {
     o.Z.updateGuild({
       premiumProgressBarEnabled: e
     })
@@ -29,7 +29,7 @@ function g(e) {
       className: d.column,
       children: [(0, r.jsx)(a.j7V, {
         className: d.switch,
-        onChange: p,
+        onChange: g,
         value: n,
         hideBorder: !0,
         disabled: !t,
@@ -43,7 +43,7 @@ function g(e) {
       className: d.column,
       children: (0, r.jsx)("img", {
         alt: c.NW.string(c.t.UOJp5e),
-        src: (0, s.ap)(g) ? m : u,
+        src: (0, s.ap)(p) ? m : u,
         className: d.progressBarImage
       })
     })]

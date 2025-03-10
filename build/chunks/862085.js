@@ -20,14 +20,14 @@ function o(e) {
   if (null == u) return null;
   let {
     headerText: m,
-    descriptionText: g,
-    icon: p
+    descriptionText: p,
+    icon: g
   } = u;
   return (0, r.jsxs)("div", {
     className: l.actionContainer,
     children: [(0, r.jsx)("div", {
       className: l.actionIconContainer,
-      children: (0, r.jsx)(p, {
+      children: (0, r.jsx)(g, {
         size: "custom",
         color: "currentColor",
         className: l.actionIcon
@@ -40,7 +40,7 @@ function o(e) {
       }), (0, r.jsx)(i.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: g
+        children: p
       }), o ? (0, r.jsxs)(i.Text, {
         color: "text-muted",
         variant: "text-xs/medium",

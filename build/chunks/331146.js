@@ -1,7 +1,7 @@
 /** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
-  E: () => g
+  E: () => p
 });
 var r = n(200651);
 n(192379);
@@ -53,7 +53,7 @@ function m(e) {
   })
 }
 
-function g(e) {
+function p(e) {
   let {
     tierEmojiIds: t,
     guildId: n,

@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(111028),
   u = n(977258),
   m = n(637853),
-  g = n(473403),
-  p = n(216306),
+  p = n(473403),
+  g = n(216306),
   h = n(743475),
   f = n(827907),
   b = n(868814),
@@ -127,7 +127,7 @@ let y = i.memo(function() {
       channel: t,
       category: i,
       guild: s,
-      isFirstChannel: p,
+      isFirstChannel: g,
       isLastChannel: O,
       tooltipDirection: I = "right"
     } = e, E = (0, f.Mf)(t.id, i.id), S = (0, f.t4)(t.id, i.id), T = (0, f.EH)(t.id, i.id), P = (0, f.lL)(s.id, i.id), w = null != (0, b.Z)(s).find(e => e.id === t.id), R = (0, m.mn)(t.id), Z = e => {
@@ -166,7 +166,7 @@ let y = i.memo(function() {
         position: I,
         children: e => (0, r.jsxs)(o.P3F, _(v({
           className: a()(N.channelRow, {
-            [N.firstChannel]: p,
+            [N.firstChannel]: g,
             [N.lastChannel]: O,
             [N.disabled]: S
           })
@@ -177,7 +177,7 @@ let y = i.memo(function() {
             className: N.channelInfo,
             children: (0, r.jsxs)("div", {
               className: N.channelName,
-              children: [(0, r.jsx)(g._W, {
+              children: [(0, r.jsx)(p._W, {
                 channel: t,
                 guild: s
               }), (0, r.jsx)(d.Z, {
@@ -254,7 +254,7 @@ function E(e) {
       isLastChannel: t[s.channel.id].length - 1 === i,
       tooltipDirection: a ? "right" : "top"
     }, l.channel.id)
-  }, [t, n, a]), c = (0, p.tn)(n.id, t, 64);
+  }, [t, n, a]), c = (0, g.tn)(n.id, t, 64);
   return (0, r.jsx)("div", {
     className: s,
     children: c.map((e, t) => {

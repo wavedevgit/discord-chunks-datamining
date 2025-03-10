@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   ZP: () => h,
-  vE: () => p
+  vE: () => g
 }), n(653041);
 var r = n(223892),
   i = n(738774),
@@ -15,16 +15,16 @@ var r = n(223892),
   u = n(388032);
 let {
   getSectionDefinition: m
-} = c.Z, g = {
+} = c.Z, p = {
   HEADER: "HEADER",
   DIVIDER: "DIVIDER"
 };
 
-function p(e) {
+function g(e) {
   var t, n;
   let {
     guild: c,
-    canManageGuild: p,
+    canManageGuild: g,
     canViewAuditLog: h,
     canManageRoles: f,
     canManageWebhooks: b,
@@ -79,79 +79,79 @@ function p(e) {
   if (C) {
     let e = [];
     e.push(m(d.pNK.PROFILE, T)), e.push(m(d.pNK.TAG, T)), e.push(m(d.pNK.ENGAGEMENT, T)), e.push(m(d.pNK.BOOST_PERKS, T)), E && (e.push({
-      section: g.DIVIDER
+      section: p.DIVIDER
     }), e.push({
-      section: g.HEADER,
+      section: p.HEADER,
       label: u.NW.string(u.t.m6lkGx)
-    }), e.push(m(d.pNK.EMOJI, T)), e.push(m(d.pNK.STICKERS, T)), e.push(m(d.pNK.SOUNDBOARD, T))), (p || f || N || I) && (e.push({
-      section: g.DIVIDER
+    }), e.push(m(d.pNK.EMOJI, T)), e.push(m(d.pNK.STICKERS, T)), e.push(m(d.pNK.SOUNDBOARD, T))), (g || f || N || I) && (e.push({
+      section: p.DIVIDER
     }), e.push({
-      section: g.HEADER,
+      section: p.HEADER,
       label: u.NW.string(u.t.bMAKMD)
     }), e.push(m(d.pNK.MEMBERS, T)), e.push(m(d.pNK.ROLES, T)), e.push(m(d.pNK.INVITES, T)), e.push(m(d.pNK.ACCESS, T))), e.push({
-      section: g.DIVIDER
+      section: p.DIVIDER
     }), e.push({
-      section: g.HEADER,
+      section: p.HEADER,
       label: u.NW.string(u.t.wF3KJy)
     }), e.push(m(d.pNK.INTEGRATIONS, T)), e.push(m(d.pNK.APP_DIRECTORY, T));
     let t = !c.hasFeature(d.oNc.COMMUNITY) && ((0, s.Nb)(c.id) || (0, s.ze)(c.id));
-    (p || h || j || t) && (e.push({
-      section: g.DIVIDER
+    (g || h || j || t) && (e.push({
+      section: p.DIVIDER
     }), e.push({
-      section: g.HEADER,
+      section: p.HEADER,
       label: u.NW.string(u.t["5tbTdX"])
     }), e.push(m(d.pNK.SAFETY, T)), e.push(m(d.pNK.MODERATION, T)), e.push(m(d.pNK.AUDIT_LOG, T)), e.push(m(d.pNK.BANS, T)), e.push(m(d.pNK.GUILD_AUTOMOD, T)));
     let n = c.hasFeature(d.oNc.COMMUNITY) && v,
       r = S();
-    return (p || n || r) && (e.push({
-      section: g.DIVIDER
+    return (g || n || r) && (e.push({
+      section: p.DIVIDER
     }), e.push(m(d.pNK.COMMUNITY, T)), e.push(m(d.pNK.ONBOARDING, T)), e.push(m(d.pNK.ANALYTICS, T)), e.push(m(d.pNK.COMMUNITY_WELCOME, T)), e.push(m(d.pNK.DISCOVERY_LANDING_PAGE, T)), e.push(m(d.pNK.ROLE_SUBSCRIPTIONS, T)), e.push(m(d.pNK.GUILD_PRODUCTS, T)), e.push(m(d.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE, T))), e.push({
-      section: g.DIVIDER
+      section: p.DIVIDER
     }), e.push(m(d.pNK.GUILD_PREMIUM, T)), e.push(m(d.pNK.GUILD_TEMPLATES, T)), e.push(m(d.pNK.DELETE, T)), e.filter(o.lm)
   }
   return [{
-    section: g.HEADER,
+    section: p.HEADER,
     label: "" !== c.toString() ? c.toString() : u.NW.string(u.t["154/bG"])
   }, m(d.pNK.OVERVIEW, T), m(d.pNK.ROLES, T), m(d.pNK.EMOJI, T), m(d.pNK.STICKERS, T), m(d.pNK.SOUNDBOARD, T), m(d.pNK.WIDGET, T), m(d.pNK.GUILD_TEMPLATES, T), m(d.pNK.VANITY_URL, T), m(d.pNK.ACCESS, T), {
-    section: g.DIVIDER,
-    predicate: () => p || b || x
+    section: p.DIVIDER,
+    predicate: () => g || b || x
   }, {
-    section: g.HEADER,
+    section: p.HEADER,
     label: u.NW.string(u.t.PHjkRE),
-    predicate: () => p || b || x
+    predicate: () => g || b || x
   }, m(d.pNK.INTEGRATIONS, T), m(d.pNK.APP_DIRECTORY, T), {
-    section: g.DIVIDER,
-    predicate: () => p
+    section: p.DIVIDER,
+    predicate: () => g
   }, {
-    section: g.HEADER,
+    section: p.HEADER,
     label: u.NW.string(u.t["5tbTdX"]),
-    predicate: () => p
+    predicate: () => g
   }, m(d.pNK.SAFETY, T), m(d.pNK.MODERATION, T), m(d.pNK.GUILD_AUTOMOD, T), m(d.pNK.AUDIT_LOG, T), m(d.pNK.BANS, T), {
-    section: g.DIVIDER,
-    predicate: () => p || v
+    section: p.DIVIDER,
+    predicate: () => g || v
   }, {
-    section: g.HEADER,
+    section: p.HEADER,
     label: u.NW.string(u.t["1g9A/f"]),
-    predicate: () => !y && (p || v)
+    predicate: () => !y && (g || v)
   }, m(d.pNK.CLAN, T), m(d.pNK.COMMUNITY, T), m(d.pNK.ONBOARDING, T), m(d.pNK.ANALYTICS, T), m(d.pNK.DISCOVERY, T), m(d.pNK.DISCOVERY_LANDING_PAGE, T), m(d.pNK.COMMUNITY_WELCOME, T), {
-    section: g.DIVIDER,
+    section: p.DIVIDER,
     predicate: S
   }, {
-    section: g.HEADER,
+    section: p.HEADER,
     label: u.NW.string(u.t.mbn3bW),
     predicate: S
   }, m(d.pNK.ROLE_SUBSCRIPTIONS, T), m(d.pNK.GUILD_PRODUCTS, T), m(d.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE, T), {
-    section: g.DIVIDER
+    section: p.DIVIDER
   }, m(d.pNK.GUILD_PREMIUM, T), {
-    section: g.DIVIDER
+    section: p.DIVIDER
   }, {
-    section: g.HEADER,
+    section: p.HEADER,
     label: u.NW.string(u.t["+OecxM"])
   }, m(d.pNK.MEMBERS, T), m(d.pNK.INSTANT_INVITES, T), {
-    section: g.DIVIDER,
+    section: p.DIVIDER,
     predicate: () => O
   }, m(d.pNK.DELETE, T)].filter(o.lm)
 }
 let h = {
-  generateSections: p
+  generateSections: g
 }

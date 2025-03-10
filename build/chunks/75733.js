@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(318766),
   u = n(907040),
   m = n(273039),
-  g = n(176354),
-  p = n(434404),
+  p = n(176354),
+  g = n(434404),
   h = n(185923),
   f = n(388032),
   b = n(501968),
@@ -47,21 +47,21 @@ function v(e) {
     guildId: t,
     trait: n,
     index: s,
-    onTraitUpdate: p,
+    onTraitUpdate: g,
     disabled: f
   } = e, x = i.useCallback(() => {
-    p(t, s, {
+    g(t, s, {
       emoji: void 0
     })
-  }, [t, s, p]), N = i.useCallback(e => (n, r) => {
-    p(t, s, {
+  }, [t, s, g]), N = i.useCallback(e => (n, r) => {
+    g(t, s, {
       emoji: null != n ? n : void 0
     }), r && e()
-  }, [t, s, p]), v = i.useMemo(() => {
+  }, [t, s, g]), v = i.useMemo(() => {
     let e = n.emoji,
       t = null == e || null == e.name ? null : () => {
         var t;
-        let n = g.ZP.isCustomEmoji(e) ? e.name : e.surrogates;
+        let n = p.ZP.isCustomEmoji(e) ? e.name : e.surrogates;
         return (0, r.jsx)(o.Z, {
           animated: null !== (t = e.animated) && void 0 !== t && t,
           emojiId: e.id,
@@ -113,10 +113,10 @@ function v(e) {
       })
     })
   }, [n.emoji, f, x, N]), [_, O] = i.useState(!1), y = i.useCallback(() => O(!0), []), C = i.useCallback(() => O(!1), []), I = i.useCallback(e => {
-    p(t, s, {
+    g(t, s, {
       label: e
     })
-  }, [t, s, p]);
+  }, [t, s, g]);
   return (0, r.jsx)(l.oil, {
     "aria-disabled": f,
     disabled: f,
@@ -140,7 +140,7 @@ function O(e) {
     canManageGuild: n
   } = e, s = i.useMemo(() => t.traits, [t]), a = i.useCallback((e, t, n) => {
     let r = [...s];
-    r[t] = j({}, s[t], n), p.Z.updateGuildProfile(e, {
+    r[t] = j({}, s[t], n), g.Z.updateGuildProfile(e, {
       traits: r
     })
   }, [s]);

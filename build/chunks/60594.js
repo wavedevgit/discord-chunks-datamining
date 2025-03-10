@@ -14,8 +14,8 @@ var r = n(200651),
   f = n(481060),
   h = n(668781),
   m = n(872810),
-  p = n(410575),
-  x = n(579806),
+  x = n(410575),
+  p = n(579806),
   g = n(636449),
   _ = n(317381),
   v = n(89425),
@@ -42,8 +42,8 @@ var r = n(200651),
   G = n(998502),
   B = n(668519),
   U = n(451467),
-  z = n(537413),
-  F = n(299570),
+  F = n(537413),
+  z = n(299570),
   H = n(960861),
   V = n(989941),
   J = n(399299),
@@ -120,13 +120,13 @@ function ea(e) {
   } = e, {
     preset: eh,
     resolution: em,
-    fps: ep,
-    soundshareEnabled: ex
+    fps: ex,
+    soundshareEnabled: ep
   } = (0, d.cj)([P.Z], () => P.Z.getState()), eg = l.useRef(Date.now()), e_ = (0, d.e7)([W.Z, T.Z], () => T.Z.getChannel(W.Z.getVoiceChannelId())), ev = (0, d.e7)([y.ZP, A.Z], () => (0, D.isWindows)() ? (0, V.Z)(y.ZP, A.Z) : null), ej = (0, d.e7)([_.ZP], () => _.ZP.getCurrentEmbeddedActivity()), eb = (0, b.q)(null == ej ? void 0 : ej.applicationId), [eC, eS] = l.useState(null);
   l.useEffect(() => {
     (0, g.R)() && (async () => {
       var e;
-      eS(await (null === x.Z || void 0 === x.Z ? void 0 : null === (e = x.Z.window) || void 0 === e ? void 0 : e.getMediaSourceId("DISCORD_ACTIVITY_POPOUT")))
+      eS(await (null === p.Z || void 0 === p.Z ? void 0 : null === (e = p.Z.window) || void 0 === e ? void 0 : e.getMediaSourceId("DISCORD_ACTIVITY_POPOUT")))
     })()
   }, []);
   let eN = (0, d.e7)([k.default], () => {
@@ -138,36 +138,36 @@ function ea(e) {
       var e;
       return null != ey ? null === (e = E.Z.getGuild(ey)) || void 0 === e ? void 0 : e.premiumTier : null
     }),
-    [ew, eO] = null !== (i = (0, z.Z)(eh, eN, eZ)) && void 0 !== i ? i : [$.LY.RESOLUTION_720, $.ws.FPS_30],
+    [ew, eO] = null !== (i = (0, F.Z)(eh, eN, eZ)) && void 0 !== i ? i : [$.LY.RESOLUTION_720, $.ws.FPS_30],
     {
       lastPickerAction: eI
     } = (0, d.e7)([H.ZP], () => H.ZP.getPickerState()),
     eP = R.Z.getUseSystemScreensharePicker();
   (0, H.UB)();
-  let eT = eP && (0, D.isMac)() && c().satisfies(null === x.Z || void 0 === x.Z ? void 0 : x.Z.os.release, Q.jR),
+  let eT = eP && (0, D.isMac)() && c().satisfies(null === p.Z || void 0 === p.Z ? void 0 : p.Z.os.release, Q.jR),
     eE = [];
   ef === f.Dvm.ENTERED && eP && (0, D.isMac)() && eE.push(u.z.GO_LIVE_SYSTEM_PICKER_COACHMARK);
   let [eR, eW] = (0, N.US)(eE, void 0, !0);
-  eh !== $.tI.PRESET_CUSTOM && (em = ew, ep = eO), (0, U.Z)(eh, em, ep, eN, eZ) || (em = ew, ep = eO);
+  eh !== $.tI.PRESET_CUSTOM && (em = ew, ex = eO), (0, U.Z)(eh, em, ex, eN, eZ) || (em = ew, ex = eO);
   let ek = (0, S.Dt)(),
     [eA, eM] = l.useState((B = ea && !eT, q ? 0 : B ? 2 : 3)),
     [eL, eD] = l.useState(eT),
     [eG, eB] = l.useState(null),
-    [eU, ez] = l.useState(eT ? {
+    [eU, eF] = l.useState(eT ? {
       id: "prepicked:",
       name: er.NW.string(er.t["KKcy9/"]),
       url: ""
     } : null),
-    [eF, eH] = l.useState(null),
+    [ez, eH] = l.useState(null),
     [eV, eJ] = l.useState(eh),
     [eX, eY] = l.useState(em),
-    [eK, eq] = l.useState(ep),
-    [eQ, e$] = l.useState(ex),
+    [eK, eq] = l.useState(ex),
+    [eQ, e$] = l.useState(ep),
     [e1, e0] = l.useState(null !== (a = I.I0.getSetting()) && void 0 !== a && a),
     [e2, e5] = l.useState(null != ec ? ec : null),
     e3 = null !== (O = null == e_ ? void 0 : e_.id) && void 0 !== O ? O : eG,
     [e4, e7] = l.useState(eT ? "" : void 0);
-  async function e9() {
+  async function e8() {
     var e, t;
     s()(null != ev || null != eU || null != ej && null != eC, "got nothing to stream");
     let n = null !== (e = null == e_ ? void 0 : e_.id) && void 0 !== e ? e : eG;
@@ -194,7 +194,7 @@ function ea(e) {
       pid: d,
       sourceId: u,
       sourceName: f,
-      audioSourceId: eF,
+      audioSourceId: ez,
       sound: eQ,
       previewDisabled: e1,
       nativePickerStyleUsed: e4,
@@ -209,8 +209,8 @@ function ea(e) {
     })()
   }
 
-  function e8() {
-    e9(), eu()
+  function e9() {
+    e8(), eu()
   }
   l.useEffect(() => {
     let e = (0, D.isWindows)() ? (0, V.Z)(y.ZP, A.Z) : null,
@@ -227,20 +227,20 @@ function ea(e) {
   }, [ed]);
   let e6 = l.useCallback((e, t, n) => {
       var r;
-      let l = (0, z.Z)(e, eN, eZ),
+      let l = (0, F.Z)(e, eN, eZ),
         [i, o] = null != l ? l : [t, n];
       e !== eV && (t = i, n = o);
       let a = null !== (r = null == e_ ? void 0 : e_.id) && void 0 !== r ? r : eG;
       s()(null != a, "Received null target channel ID");
       let c = T.Z.getChannel(a);
       if (!(0, U.Z)(e, t, n, eN, eZ, c)) {
-        let [e, r] = (0, z.Z)($.tI.PRESET_VIDEO, eN, eZ);
+        let [e, r] = (0, F.Z)($.tI.PRESET_VIDEO, eN, eZ);
         t = e, n = r
       }
       n !== eK && eq(n), t !== eX && eY(t), i !== t || o !== n ? eJ($.tI.PRESET_CUSTOM) : e !== eV && eJ(e)
     }, [e_, eG, eN, eZ, eK, eX, eV]),
     te = l.useCallback(e => {
-      (0, F.t)(), (0, F.T)(null != e ? e : e4)
+      (0, z.t)(), (0, z.T)(null != e ? e : e4)
     }, [e4]);
 
   function tt(e) {
@@ -256,14 +256,14 @@ function ea(e) {
           default: e
         } = await n.e("74300").then(n.bind(n, 566852));
         return n => (0, r.jsx)(e, es(ei({}, n), {
-          handleStream: e8,
+          handleStream: e9,
           pid: t
         }))
       })
-    }() : e8()
+    }() : e9()
   }
   let tn = l.useCallback(e => {
-      ez(e), null != e && (eP && (null == e ? void 0 : e.id.startsWith("camera:")) !== !0 ? e7(e.id.split(":")[1]) : e7(void 0), eM(3), eD(!0))
+      eF(e), null != e && (eP && (null == e ? void 0 : e.id.startsWith("camera:")) !== !0 ? e7(e.id.split(":")[1]) : e7(void 0), eM(3), eD(!0))
     }, [eP]),
     tr = l.useCallback(e => {
       e5(e);
@@ -306,7 +306,7 @@ function ea(e) {
       })
     }),
     to = l.useCallback(() => {
-      eP && (0, F.t)(), eM(2)
+      eP && (0, z.t)(), eM(2)
     }, [eP]),
     ta = function(e, t, n, r) {
       switch (e) {
@@ -386,7 +386,7 @@ function ea(e) {
         children: (0, r.jsx)("div", {
           className: el.modalSize,
           children: (0, r.jsx)(Y.Hu, {
-            onSourceSelect: e8,
+            onSourceSelect: e9,
             onCancel: td,
             pickerType: e4
           })
@@ -416,7 +416,7 @@ function ea(e) {
         children: er.NW.string(er.t["13/7kZ"])
       })]
     });
-  return (0, r.jsx)(p.Z, {
+  return (0, r.jsx)(x.Z, {
     page: ee.ZY5.GO_LIVE_MODAL,
     children: (0, r.jsxs)(f.Y0X, {
       "aria-labelledby": ek,

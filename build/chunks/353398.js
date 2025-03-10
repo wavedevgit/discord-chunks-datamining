@@ -14,8 +14,8 @@ var r, i = n(200651),
   d = n(442837),
   u = n(692547),
   m = n(481060),
-  g = n(570140),
-  p = n(484614),
+  p = n(570140),
+  g = n(484614),
   h = n(852860),
   f = n(881052),
   b = n(751189),
@@ -66,7 +66,7 @@ class I extends(r = d.ZP.Store) {
   }
 }
 C(I, "displayName", "GuildSettingsTemplateMetadataStore_");
-let E = new I(g.Z);
+let E = new I(p.Z);
 
 function S() {
   let [e, t] = s.useState(!1), n = async () => {
@@ -281,7 +281,7 @@ function D(e) {
   }) : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(m.xJW, {
       title: _.NW.string(_.t.zGGcLy),
-      children: (0, i.jsx)(p.Z, {
+      children: (0, i.jsx)(g.Z, {
         buttonLook: m.zxk.Looks.FILLED,
         buttonColor: m.zxk.Colors.BRAND,
         value: (0, j.Z)(n.code)

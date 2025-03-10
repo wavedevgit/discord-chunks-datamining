@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   E6: () => m,
-  f4: () => g,
+  f4: () => p,
   mw: () => u
 });
 var r = n(200651),
@@ -84,7 +84,7 @@ function m(e) {
   })
 }
 
-function g(e, t, n, r) {
+function p(e, t, n, r) {
   let i = null == r ? void 0 : r.type,
     s = {
       page: d.ZY5.GUILD_SETTINGS,

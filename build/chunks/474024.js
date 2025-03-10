@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(314852),
   u = n(405222),
   m = n(323220),
-  g = n(434404),
-  p = n(981631),
+  p = n(434404),
+  g = n(981631),
   h = n(388032),
   f = n(44713);
 
@@ -27,14 +27,14 @@ function b(e) {
     var e;
     return (null === (e = d.Z.getProfile(b)) || void 0 === e ? void 0 : e.visibility) === u.k.PUBLIC_WITH_RECRUITMENT
   }, [b]), N = i.useCallback(() => {
-    x ? g.Z.updateGuildProfile(b, {
+    x ? p.Z.updateGuildProfile(b, {
       visibility: u.k.RESTRICTED
-    }) : g.Z.updateGuildProfile(b, {
+    }) : p.Z.updateGuildProfile(b, {
       visibility: j ? u.k.PUBLIC_WITH_RECRUITMENT : u.k.PUBLIC
     })
   }, [b, j, x]), v = i.useCallback(() => {
-    g.Z.setSection(p.pNK.ACCESS, p.KsC.ACCESS_DISCOVERABLE)
-  }, []), _ = null === (t = n.features) || void 0 === t ? void 0 : t.includes(p.oNc.DISCOVERABLE);
+    p.Z.setSection(g.pNK.ACCESS, g.KsC.ACCESS_DISCOVERABLE)
+  }, []), _ = null === (t = n.features) || void 0 === t ? void 0 : t.includes(g.oNc.DISCOVERABLE);
   return (0, r.jsxs)(c.hjN, {
     className: f.twoColumnContainer,
     children: [(0, r.jsxs)("div", {

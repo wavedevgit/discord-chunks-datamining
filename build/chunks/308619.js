@@ -18,8 +18,8 @@ function u() {
     n = (0, s.e7)([d.Z], () => d.Z.getProfileError()),
     u = (0, s.e7)([d.Z], () => d.Z.getGuildProfile()),
     m = (0, s.e7)([o.Z], () => o.Z.getIsUpdating(t)),
-    g = i.useMemo(() => null == n ? void 0 : n.getAnyErrorMessage(), [n]),
-    p = i.useCallback(() => {
+    p = i.useMemo(() => null == n ? void 0 : n.getAnyErrorMessage(), [n]),
+    g = i.useCallback(() => {
       if (null == e || null == u) return;
       let t = {
         name: u.name,
@@ -38,8 +38,8 @@ function u() {
     }, [t]);
   return (0, r.jsx)(a.Z, {
     submitting: m,
-    errorMessage: g,
-    onSave: p,
+    errorMessage: p,
+    onSave: g,
     onReset: h
   })
 }

@@ -8,8 +8,8 @@ var o = t(200651),
   i = t(704215),
   l = t(481060),
   c = t(110924),
-  s = t(40851),
-  u = t(812206),
+  u = t(40851),
+  s = t(812206),
   _ = t(243778),
   d = t(554370),
   p = t(788983),
@@ -85,13 +85,13 @@ function I(e) {
     a && c()
   }, [c, a]);
   let {
-    renderWindow: u
-  } = r.useContext(s.ZP);
+    renderWindow: s
+  } = r.useContext(u.ZP);
   return a ? (0, o.jsx)("div", {
     className: y.nuxBackground,
     children: (0, o.jsx)(f.Z, {
       eventTargetRef: {
-        current: u.document.body
+        current: s.document.body
       }
     })
   }) : n
@@ -111,15 +111,15 @@ function P() {
       channelId: n,
       guildId: t
     }
-  }), i = r.useRef(null), s = (0, c.Z)(e);
+  }), i = r.useRef(null), u = (0, c.Z)(e);
   r.useEffect(() => {
-    null != e ? clearTimeout(i.current) : null != s && null == e && (i.current = window.setTimeout(() => {
+    null != e ? clearTimeout(i.current) : null != u && null == e && (i.current = window.setTimeout(() => {
       (0, p.xv)(C.KJ3.ACTIVITY_POPOUT)
     }, 5e3))
-  }, [e, s]);
-  let _ = (0, a.e7)([u.Z], () => {
+  }, [e, u]);
+  let _ = (0, a.e7)([s.Z], () => {
       let n = null == e ? void 0 : e.applicationId;
-      return null == n ? void 0 : u.Z.getApplication(n)
+      return null == n ? void 0 : s.Z.getApplication(n)
     }),
     f = (0, b.PR)();
   return (0, o.jsx)("div", {

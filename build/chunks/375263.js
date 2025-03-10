@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(981631),
   u = n(30513),
   m = n(486324),
-  g = n(200299),
-  p = n(388032),
+  p = n(200299),
+  g = n(388032),
   h = n(669893);
 
 function f(e) {
@@ -41,10 +41,10 @@ function f(e) {
     }, b) : null,
     disabled: !x,
     onChange: N,
-    hint: p.NW.string(p.t.uPvxqK),
+    hint: g.NW.string(g.t.uPvxqK),
     onOpenImageSelectModal: () => (0, c.mw)({
       uploadType: m.pC.GUILD_BANNER,
-      maxFileSizeBytes: g.B,
+      maxFileSizeBytes: p.B,
       onComplete: e => {
         let {
           imageUri: t,

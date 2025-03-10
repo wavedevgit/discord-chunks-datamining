@@ -1,7 +1,7 @@
 /** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
-  Q: () => g,
+  Q: () => p,
   Z: () => b
 }), n(47120);
 var r = n(200651),
@@ -32,9 +32,9 @@ function m(e) {
   }
   return e
 }
-let g = "role_subscriptions_eligibility_modal";
+let p = "role_subscriptions_eligibility_modal";
 
-function p(e) {
+function g(e) {
   let {
     guild: t,
     eligibility: i,
@@ -72,7 +72,7 @@ function p(e) {
           }), s))
         }
       }, {
-        modalKey: g
+        modalKey: p
       })
     },
     size: s.zxk.Sizes.LARGE,
@@ -91,8 +91,8 @@ function h(e) {
     canSubmitAcceptance: o,
     error: u,
     loading: m,
-    submitAcceptTermsRequest: g
-  } = (0, a.Z)(t.id), [p, h] = i.useState(!1);
+    submitAcceptTermsRequest: p
+  } = (0, a.Z)(t.id), [g, h] = i.useState(!1);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.XZJ, {
       onChange: function() {
@@ -100,7 +100,7 @@ function h(e) {
       },
       size: 20,
       type: s.XZJ.Types.INVERTED,
-      value: p,
+      value: g,
       children: (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
@@ -110,9 +110,9 @@ function h(e) {
       size: 24
     }), (0, r.jsx)(s.zxk, {
       className: d.ctaButton,
-      disabled: !p || !o,
+      disabled: !g || !o,
       grow: !0,
-      onClick: g,
+      onClick: p,
       size: s.zxk.Sizes.LARGE,
       submitting: m,
       children: c.NW.string(c.t.NL5ZNT)
@@ -142,7 +142,7 @@ function f(e) {
   return c ? u ? (0, r.jsx)(o.Z, m({}, n)) : (0, r.jsx)(h, {
     guild: t,
     checkboxText: d
-  }) : (0, r.jsx)(p, {
+  }) : (0, r.jsx)(g, {
     guild: t,
     eligibility: l,
     eligibilityLoading: i,

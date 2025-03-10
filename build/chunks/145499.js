@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(2052),
   u = n(906732),
   m = n(678558),
-  g = n(852679),
-  p = n(357156),
+  p = n(852679),
+  g = n(357156),
   h = n(626135),
   f = n(267642),
   b = n(268350),
@@ -92,7 +92,7 @@ let C = (e, t) => e < (0, f.A3)(_.Eu4.NONE) ? _.Eu4.NONE : e < (0, f.A3)(_.Eu4.T
       location: n
     } = (0, d.O)(), {
       canCreateExpressions: i
-    } = (0, p.XJ)(t);
+    } = (0, g.XJ)(t);
     return (0, r.jsx)(o.zxk, {
       size: o.zxk.Sizes.SMALL,
       color: o.zxk.Colors.BRAND,
@@ -129,7 +129,7 @@ let C = (e, t) => e < (0, f.A3)(_.Eu4.NONE) ? _.Eu4.NONE : e < (0, f.A3)(_.Eu4.T
       }, [d]), s) return (0, r.jsx)(o.$jN, {});
     let w = (e, n) => {
         let r = null;
-        n === _.Eu4.TIER_1 ? r = _.Qqv.TIER_1 : n === _.Eu4.TIER_2 ? r = _.Qqv.TIER_2 : n === _.Eu4.TIER_3 && (r = _.Qqv.TIER_3), (0, g.Z)({
+        n === _.Eu4.TIER_1 ? r = _.Qqv.TIER_1 : n === _.Eu4.TIER_2 ? r = _.Qqv.TIER_2 : n === _.Eu4.TIER_3 && (r = _.Qqv.TIER_3), (0, p.Z)({
           analyticsLocations: h,
           analyticsLocation: {
             page: _.ZY5.GUILD_SETTINGS,
@@ -182,13 +182,13 @@ let C = (e, t) => e < (0, f.A3)(_.Eu4.NONE) ? _.Eu4.NONE : e < (0, f.A3)(_.Eu4.T
             onSetRef: l,
             tier: c,
             tiers: u,
-            tierIndex: g
+            tierIndex: p
           } = e,
           {
             canCreateExpressions: h,
             canManageGuildExpression: b
-          } = (0, p.Gw)(t),
-          x = u[g - 1],
+          } = (0, g.Gw)(t),
+          x = u[p - 1],
           j = null != x ? (0, f.A3)(x.tier) : 0,
           I = (0, f.A3)(c.tier, t),
           R = (0, f.ig)(c.tier),
@@ -204,8 +204,8 @@ let C = (e, t) => e < (0, f.A3)(_.Eu4.NONE) ? _.Eu4.NONE : e < (0, f.A3)(_.Eu4.T
           B = W ? Math.min(5 - (Z.length + 0) % 5, U) : 0,
           F = [];
         for (let e = 0; e < B; e++) F.push((0, r.jsx)(S, {}, "placeholder-".concat(e)));
-        let z = k === g + 1 && k > E,
-          H = W || z || g > E;
+        let z = k === p + 1 && k > E,
+          H = W || z || p > E;
         return z ? i = (0, r.jsx)(m.Z, {
           guild: t,
           size: o.zxk.Sizes.SMALL,
@@ -225,7 +225,7 @@ let C = (e, t) => e < (0, f.A3)(_.Eu4.NONE) ? _.Eu4.NONE : e < (0, f.A3)(_.Eu4.T
           tier: c,
           onSetRef: l,
           isAnimatedTo: s,
-          hasBottomMargin: g !== u.length - 1,
+          hasBottomMargin: p !== u.length - 1,
           withCardBody: !L,
           headerButton: i,
           showHeaderLockStatus: H,

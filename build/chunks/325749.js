@@ -1,6 +1,6 @@
 /** Chunk was on 27278 **/
 t.d(n, {
-  Z: () => D
+  Z: () => L
 }), t(47120);
 var o = t(200651),
   r = t(192379),
@@ -8,8 +8,8 @@ var o = t(200651),
   i = t.n(a),
   l = t(442837),
   c = t(481060),
-  s = t(13245),
-  u = t(753972),
+  u = t(13245),
+  s = t(753972),
   _ = t(812206),
   d = t(726721),
   p = t(610394),
@@ -38,41 +38,41 @@ var o = t(200651),
   W = t(981631),
   z = t(388032),
   U = t(231784);
-let L = B.u.SIZE_24;
+let D = B.u.SIZE_24;
 
-function D(e) {
+function L(e) {
   let {
     applicationId: n,
     channelId: t
-  } = e, a = (0, l.e7)([_.Z], () => _.Z.getApplication(n)), D = (0, l.e7)([S.ZP], () => S.ZP.getSelfEmbeddedActivities().get(n)), R = (0, l.e7)([I.Z], () => I.Z.getChannel(t)), M = m.Sb.useSetting(), Y = (0, l.Wu)([P.ZP], () => {
+  } = e, a = (0, l.e7)([_.Z], () => _.Z.getApplication(n)), L = (0, l.e7)([S.ZP], () => S.ZP.getSelfEmbeddedActivities().get(n)), R = (0, l.e7)([I.Z], () => I.Z.getChannel(t)), M = m.Sb.useSetting(), G = (0, l.Wu)([P.ZP], () => {
     var e;
-    return null == R || null == D ? [] : Array.from(null !== (e = D.userIds) && void 0 !== e ? e : []).map(e => P.ZP.getMember(R.guild_id, e))
-  }, [D, R]), G = r.useMemo(() => {
+    return null == R || null == L ? [] : Array.from(null !== (e = L.userIds) && void 0 !== e ? e : []).map(e => P.ZP.getMember(R.guild_id, e))
+  }, [L, R]), Y = r.useMemo(() => {
     let e = new Map;
-    return Y.forEach(n => {
+    return G.forEach(n => {
       null != n && void 0 !== n && e.set(n.userId, n)
     }), e
-  }, [Y]), H = r.useCallback((e, n) => {
+  }, [G]), H = r.useCallback((e, n) => {
     var t;
     if (null == e) return null;
-    let r = G.get(e.id),
+    let r = Y.get(e.id),
       a = null !== (t = null == r ? void 0 : r.nick) && void 0 !== t ? t : N.ZP.getName(e);
     return (0, o.jsx)(c.DY3, {
       text: a,
       position: "bottom",
       children: (0, o.jsx)("img", {
-        src: e.getAvatarURL(null == n ? void 0 : n.guild_id, L),
+        src: e.getAvatarURL(null == n ? void 0 : n.guild_id, D),
         alt: a,
         className: U.avatar
       }, e.id)
     }, e.id)
-  }, [G]), V = null == D ? void 0 : D.userIds, F = (0, l.Wu)([O.default], () => Array.from(null != V ? V : []).map(e => O.default.getUser(e)).filter(e => null != e), [V]), K = d.Z.useExperiment({
+  }, [Y]), V = null == L ? void 0 : L.userIds, K = (0, l.Wu)([O.default], () => Array.from(null != V ? V : []).map(e => O.default.getUser(e)).filter(e => null != e), [V]), F = d.Z.useExperiment({
     location: "activity_popout_overflow_menu"
   }, {
     autoTrackExposure: !0
   }).enabled, J = r.useCallback(() => {
     let e = (0, T.getPID)();
-    s.Z.setInputLocked(!p.ZP.isInputLocked(e), e)
+    u.Z.setInputLocked(!p.ZP.isInputLocked(e), e)
   }, []), X = (0, Z.PR)(), {
     canStayOnTop: q,
     popoutWindowAlwaysOnTop: $,
@@ -111,14 +111,14 @@ function D(e) {
       toggleFullScreen: l
     }
   }();
-  if (null == a || null == D) return null;
-  let eo = (0, o.jsx)(u.Z, {
+  if (null == a || null == L) return null;
+  let eo = (0, o.jsx)(s.Z, {
     application: a,
     size: 24,
     className: U.appIcon
   });
   return M && (eo = (0, o.jsx)(c.DY3, {
-    text: D.compositeInstanceId,
+    text: L.compositeInstanceId,
     position: "bottom",
     children: eo
   })), (0, o.jsx)(c.f6W, {
@@ -140,8 +140,8 @@ function D(e) {
           })
         }), (0, o.jsx)(B.Z, {
           renderIcon: !1,
-          users: F,
-          size: L,
+          users: K,
+          size: D,
           max: 6,
           className: U.userAvatars,
           renderUser: e => H(e, R)
@@ -155,11 +155,7 @@ function D(e) {
             applicationId: n,
             channel: R,
             shouldPrioritizeGroupPlusIcon: !0,
-            embeddedActivity: D,
-            iconSize: "xs",
-            look: c.zxk.Looks.FILLED,
-            size: c.zxk.Sizes.TINY,
-            buttonText: z.NW.string(z.t["6F9ivr"])
+            embeddedActivity: L
           }), X ? (0, o.jsx)(g.Z, {
             onClick: J,
             iconComponent: c.epB,
@@ -171,7 +167,7 @@ function D(e) {
             node: ee,
             guestWindow: en,
             onClick: et
-          }), K && (0, o.jsx)(c.yRy, {
+          }), F && (0, o.jsx)(c.yRy, {
             position: "bottom",
             renderPopout: e => {
               let {

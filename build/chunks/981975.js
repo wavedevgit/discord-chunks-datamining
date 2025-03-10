@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(481060),
   u = n(570140),
   m = n(275759),
-  g = n(313201),
-  p = n(63063),
+  p = n(313201),
+  g = n(63063),
   h = n(243730),
   f = n(764260),
   b = n(946724),
@@ -46,7 +46,7 @@ function E(e) {
   }
   return e
 }
-let S = (0, g.hQ)();
+let S = (0, p.hQ)();
 
 function T(e, t) {
   return t !== m.O1.AND ? Object.values(o().groupBy(e, e => "".concat(e.connectionType, ":").concat(e.applicationId))) : 0 === e.length ? [] : [
@@ -69,7 +69,7 @@ function P(e) {
       variant: "text-sm/normal",
       color: "header-secondary",
       children: y.NW.format(y.t.q5f7tL, {
-        helpdeskArticleUrl: p.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
+        helpdeskArticleUrl: g.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
       })
     }), (0, r.jsx)(d.zxk, {
       disabled: n,
@@ -91,7 +91,7 @@ function w(e) {
     setSelectedSection: l,
     integrations: o
   } = e, {
-    headerHeight: g,
+    headerHeight: p,
     headerRef: w
   } = (0, x.Z)(0), {
     scrolledToTop: R,
@@ -169,7 +169,7 @@ function w(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           children: y.NW.format(y.t.q5f7tL, {
-            helpdeskArticleUrl: p.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
+            helpdeskArticleUrl: g.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
           })
         })]
       })), function(e, t, n, i, s) {
@@ -258,7 +258,7 @@ function w(e) {
   return (0, r.jsx)(d.yWw, {
     className: C.scroller,
     style: {
-      scrollPaddingTop: g
+      scrollPaddingTop: p
     },
     onScroll: Z,
     children: (0, r.jsxs)("div", {

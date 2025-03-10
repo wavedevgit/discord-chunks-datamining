@@ -16,8 +16,8 @@ var r = n(200651),
   d = n(481060),
   u = n(167533),
   m = n(766434),
-  g = n(937615),
-  p = n(289393),
+  p = n(937615),
+  g = n(289393),
   h = n(264451),
   f = n(759178),
   b = n(462087),
@@ -133,7 +133,7 @@ let y = (e, t, n, i) => {
     } = e;
     return (0, r.jsx)("div", {
       className: _.cell,
-      children: (0, g.T4)(null != t ? t : 0, j.pKx.USD)
+      children: (0, p.T4)(null != t ? t : 0, j.pKx.USD)
     })
   },
   E = e => {
@@ -158,7 +158,7 @@ let y = (e, t, n, i) => {
     var t;
     let {
       listingId: n
-    } = e, i = (0, c.e7)([p.Z], () => p.Z.getSubscriptionListing(n)), s = null !== (t = null == i ? void 0 : i.name) && void 0 !== t ? t : "[".concat(v.NW.string(v.t["4tEmXV"]), "]");
+    } = e, i = (0, c.e7)([g.Z], () => g.Z.getSubscriptionListing(n)), s = null !== (t = null == i ? void 0 : i.name) && void 0 !== t ? t : "[".concat(v.NW.string(v.t["4tEmXV"]), "]");
     return (0, r.jsx)(C, {
       children: s
     })

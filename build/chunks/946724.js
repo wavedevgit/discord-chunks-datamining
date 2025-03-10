@@ -10,8 +10,8 @@ var a, l = n(392711),
   d = n(866442),
   u = n(442837),
   m = n(570140),
-  g = n(561654),
-  p = n(430824),
+  p = n(561654),
+  g = n(430824),
   h = n(990492),
   f = n(823379),
   b = n(700785),
@@ -39,7 +39,7 @@ let v = new Set,
 
 function w() {
   if (null == r || null == C) return [];
-  let e = o()(p.Z.getRoles(r.id)).values().sortBy(e => {
+  let e = o()(g.Z.getRoles(r.id)).values().sortBy(e => {
     let {
       position: t
     } = e;
@@ -74,7 +74,7 @@ function R(e) {
 
 function Z() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-  r = x.Z.getProps().guild, O = !1, y = !1, s = void 0, v.clear(), _ = j.QZA.OPEN, I = [...C = null != r ? o()(p.Z.getRoles(r.id)).values().sortBy(e => {
+  r = x.Z.getProps().guild, O = !1, y = !1, s = void 0, v.clear(), _ = j.QZA.OPEN, I = [...C = null != r ? o()(g.Z.getRoles(r.id)).values().sortBy(e => {
     let {
       position: t
     } = e;
@@ -130,7 +130,7 @@ function W(e) {
   if (null == r || t !== r.id || _ === j.QZA.SUBMITTING) return !1;
   r = x.Z.getProps().guild;
   let n = [];
-  null != r && (n = o()(p.Z.getRoles(r.id)).values().sortBy(e => {
+  null != r && (n = o()(g.Z.getRoles(r.id)).values().sortBy(e => {
     let {
       position: t
     } = e;
@@ -148,7 +148,7 @@ function W(e) {
 }
 class L extends(a = u.ZP.Store) {
   initialize() {
-    this.waitFor(x.Z, g.Z, p.Z)
+    this.waitFor(x.Z, p.Z, g.Z)
   }
   hasChanges() {
     return O || y || E

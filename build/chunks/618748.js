@@ -14,8 +14,8 @@ var i = n(442837),
   d = n(962086),
   u = n(225675),
   m = n(703656),
-  g = n(577275),
-  p = n(430824),
+  p = n(577275),
+  g = n(430824),
   h = n(594174),
   f = n(823379),
   b = n(730647),
@@ -41,7 +41,7 @@ function A(e) {
   let {
     application: t,
     guild: n
-  } = e, s = (0, x.YB)(n.id), a = (0, x.qi)(n.id), l = a.some(e => null != e.name && null != e.subscription_plans[0] && null != e.description && null != e.image_asset), o = (0, i.e7)([p.Z], () => p.Z.getRoles(n.id)), c = a.map(e => o[e.role_id]).some(e => null != e && 0 !== e.color), d = a.some(e => e.role_benefits.benefits.length > 0), u = null != t && n.hasFeature(P.oNc.ROLE_SUBSCRIPTIONS_ENABLED), m = [{
+  } = e, s = (0, x.YB)(n.id), a = (0, x.qi)(n.id), l = a.some(e => null != e.name && null != e.subscription_plans[0] && null != e.description && null != e.image_asset), o = (0, i.e7)([g.Z], () => g.Z.getRoles(n.id)), c = a.map(e => o[e.role_id]).some(e => null != e && 0 !== e.color), d = a.some(e => e.role_benefits.benefits.length > 0), u = null != t && n.hasFeature(P.oNc.ROLE_SUBSCRIPTIONS_ENABLED), m = [{
     title: Z.NW.string(Z.t.p2Rsdn),
     items: [{
       description: Z.NW.string(Z.t.zbO7fX),
@@ -82,7 +82,7 @@ function k(e) {
     application: t
   } = e, {
     teams: n
-  } = (0, g.Z)({
+  } = (0, p.Z)({
     refreshOnDepChange: !1
   }), i = n.find(e => {
     var n;
@@ -131,7 +131,7 @@ function L(e) {
     } = e,
     c = null != l && n.hasFeature(P.oNc.ROLE_SUBSCRIPTIONS_ENABLED),
     {
-      currentTab: g,
+      currentTab: p,
       setCurrentTab: x
     } = (0, S.dw)(),
     j = (0, b.f)(),
@@ -139,7 +139,7 @@ function L(e) {
     I = (0, v.Z)(n.id),
     R = n.isOwner(O),
     W = () => {
-      let e = p.Z.getRole(n.id, n.getEveryoneRoleId());
+      let e = g.Z.getRole(n.id, n.getEveryoneRoleId());
       if (null == e) return;
       o.Z.close();
       let t = {
@@ -153,7 +153,7 @@ function L(e) {
       }), (0, N.be)(n.id), (0, m.uL)(P.Z5c.CHANNEL(n.id, w.oC.ROLE_SUBSCRIPTIONS))
     };
   if (!j) return (0, r.jsx)(s.$jN, {});
-  switch (g) {
+  switch (p) {
     case S.ue.BASIC_INFO:
       t = (0, r.jsx)(C.Z, {
         guild: n
@@ -175,7 +175,7 @@ function L(e) {
       });
       break;
     default:
-      (0, f.vE)(g)
+      (0, f.vE)(p)
   }
   return (0, r.jsxs)("div", {
     className: D.container,
@@ -196,7 +196,7 @@ function L(e) {
         children: [(0, r.jsxs)(s.njP, {
           className: D.tabBar,
           "aria-label": Z.NW.string(Z.t["+1H47u"]),
-          selectedItem: g,
+          selectedItem: p,
           type: "top",
           look: "brand",
           onItemSelect: x,

@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(681460),
   u = n(345861),
   m = n(650774),
-  g = n(434404),
-  p = n(999382),
+  p = n(434404),
+  g = n(999382),
   h = n(718157),
   f = n(450474),
   b = n(166184),
@@ -43,15 +43,15 @@ function E(e) {
     guild: n,
     requireDescription: o
   } = e, c = i.useCallback(e => {
-    g.Z.updateGuild({
+    p.Z.updateGuild({
       discoverySplash: e
     })
   }, []), d = i.useCallback(() => {
-    g.Z.updateGuild({
+    p.Z.updateGuild({
       discoverySplash: null
     })
-  }, []), p = i.useCallback(e => {
-    g.Z.updateGuild({
+  }, []), g = i.useCallback(e => {
+    p.Z.updateGuild({
       description: e
     })
   }, []), {
@@ -117,7 +117,7 @@ function E(e) {
           className: C.editableSection,
           value: null !== (t = n.description) && void 0 !== t ? t : "",
           placeholder: y.NW.string(y.t.Nvfows),
-          onChange: p,
+          onChange: g,
           maxLength: s.Us
         })]
       })]
@@ -199,10 +199,10 @@ function T(e) {
     guildMetadata: n,
     requireTag: s,
     error: a
-  } = e, [u, m] = i.useState(null), g = i.useCallback(e => {
+  } = e, [u, m] = i.useState(null), p = i.useCallback(e => {
     let r = [...n.keywords];
     r.splice(e, 1), m(null), (0, c.zH)(t, r)
-  }, [t, n]), p = i.useCallback(e => {
+  }, [t, n]), g = i.useCallback(e => {
     let {
       keywords: r
     } = n;
@@ -211,11 +211,11 @@ function T(e) {
     let t = n.keywords.length >= _.G7;
     return {
       text: e,
-      onClick: () => p(e),
+      onClick: () => g(e),
       disabled: t,
       tooltipText: t ? y.NW.string(y.t.Xx7XeH) : void 0
     }
-  }), [n.keywords, n.primaryCategoryId, p]), f = null != a ? a : u;
+  }), [n.keywords, n.primaryCategoryId, g]), f = null != a ? a : u;
   return (0, r.jsxs)("div", {
     className: C.sectionContainer,
     children: [(0, r.jsxs)("div", {
@@ -231,8 +231,8 @@ function T(e) {
       }), (0, r.jsx)(o.Z, {
         className: C.editableSection,
         tags: n.keywords,
-        onRemoveTag: g,
-        onAddTag: p,
+        onRemoveTag: p,
+        onAddTag: g,
         onAddTagError: m,
         maxTags: _.G7,
         maxTaxLength: _._0,
@@ -300,7 +300,7 @@ function w(e) {
   let {
     preferredLocale: t
   } = e, n = i.useMemo(() => (0, O.jb)(), []), s = i.useCallback(e => {
-    g.Z.updateGuild({
+    p.Z.updateGuild({
       preferredLocale: e
     })
   }, []);
@@ -343,12 +343,12 @@ function Z(e) {
     errors: s,
     guildMetadata: l,
     guild: o
-  } = (0, a.cj)([p.Z], () => {
+  } = (0, a.cj)([g.Z], () => {
     let {
       errors: e,
       guildMetadata: t,
       guild: n
-    } = p.Z.getProps();
+    } = g.Z.getProps();
     return {
       errors: e,
       guildMetadata: t,

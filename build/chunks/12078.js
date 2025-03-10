@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(686369),
   u = n(813197),
   m = n(430824),
-  g = n(768581),
-  p = n(921948),
+  p = n(768581),
+  g = n(921948),
   h = n(434404),
   f = n(981631),
   b = n(570911),
@@ -90,10 +90,10 @@ function O(e) {
   } = e, o = null != n.customBanner, d = i.useMemo(() => {
     if (null == n.customBanner) return null;
     let e = n.customBanner;
-    return g.ff.test(e) ? e : g.ZP.getGuildDiscoverySplashURL({
+    return p.ff.test(e) ? e : p.ZP.getGuildDiscoverySplashURL({
       id: n.id,
       splash: n.customBanner,
-      size: 300 * (0, p.Z)()
+      size: 300 * (0, g.Z)()
     })
   }, [n]);
   if (!t) return null;
@@ -143,12 +143,12 @@ function y(e) {
     profile: n,
     onCustomBannerChange: s,
     canManageGuild: o
-  } = e, u = (0, l.e7)([m.Z], () => m.Z.getGuild(n.id)), g = null !== (t = null == u ? void 0 : u.hasFeature(f.oNc.DISCOVERABLE)) && void 0 !== t && t, p = n.id, y = i.useCallback(e => () => {
-    h.Z.updateGuildProfile(p, {
+  } = e, u = (0, l.e7)([m.Z], () => m.Z.getGuild(n.id)), p = null !== (t = null == u ? void 0 : u.hasFeature(f.oNc.DISCOVERABLE)) && void 0 !== t && t, g = n.id, y = i.useCallback(e => () => {
+    h.Z.updateGuildProfile(g, {
       brandColorPrimary: e,
       customBanner: null
     })
-  }, [p]), C = i.useCallback(e => (!g || null == n.customBanner) && e === n.brandColorPrimary, [n, g]);
+  }, [g]), C = i.useCallback(e => (!p || null == n.customBanner) && e === n.brandColorPrimary, [n, p]);
   return (0, r.jsx)(c.hjN, {
     title: x.NW.string(x.t.BSVog4),
     children: (0, r.jsxs)("div", {
@@ -184,7 +184,7 @@ function y(e) {
         }, t)
       }), (0, r.jsx)(O, {
         canManageGuild: o,
-        isDiscoverable: g,
+        isDiscoverable: p,
         profile: n,
         onCustomBannerChange: s
       })]

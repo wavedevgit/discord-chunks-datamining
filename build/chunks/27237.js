@@ -35,9 +35,8 @@ function _(e) {
         [j.boostContainerActive]: t
       }),
       children: (0, r.jsx)(d.Z, {
+        size: "sm",
         className: j.boost,
-        width: 16,
-        height: 16,
         fill: "white"
       })
     })]
@@ -118,12 +117,10 @@ function g(e) {
             className: j.dot,
             children: "•"
           }), (0, r.jsx)(d.Z, {
+            size: "sm",
             className: j.boost,
-            width: 16,
-            height: 16,
             fill: "white"
-          }), " ", (0, r.jsx)("span", {
-            className: j.cost,
+          }), (0, r.jsx)("span", {
             children: o.cost
           })]
         })]

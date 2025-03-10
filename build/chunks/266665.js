@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(442837),
   u = n(481060),
   m = n(239091),
-  g = n(749210),
-  p = n(493773),
+  p = n(749210),
+  g = n(493773),
   h = n(607070),
   f = n(605436),
   b = n(134433),
@@ -67,8 +67,8 @@ function R(e) {
   var t, i;
   let s, {
       guild: d,
-      role: g,
-      highestRole: p,
+      role: p,
+      highestRole: g,
       selectedItem: h,
       onClick: x,
       currentPosition: j,
@@ -77,14 +77,14 @@ function R(e) {
       onDragComplete: O,
       roleStyle: y
     } = e,
-    C = (0, _.T)(d, p, g),
-    E = (0, f.pM)(d.id, g.id),
+    C = (0, _.T)(d, g, p),
+    E = (0, f.pM)(d.id, p.id),
     R = null == C && !E,
-    Z = (null === (t = g.tags) || void 0 === t ? void 0 : t.guild_connections) !== void 0,
+    Z = (null === (t = p.tags) || void 0 === t ? void 0 : t.guild_connections) !== void 0,
     [, D] = (0, l.c)({
       type: w,
-      item: () => (N(g.id), {
-        id: g.id,
+      item: () => (N(p.id), {
+        id: p.id,
         position: j
       }),
       canDrag: () => R,
@@ -111,13 +111,13 @@ function R(e) {
         }
       },
       drop: () => ({
-        roleId: g.id
+        roleId: p.id
       })
     }),
-    W = null !== (i = g.colorString) && void 0 !== i ? i : (0, c.Rf)(I.p6O);
+    W = null !== (i = p.colorString) && void 0 !== i ? i : (0, c.Rf)(I.p6O);
   return s = Z ? (0, r.jsx)(b.Z, {
     size: 12,
-    color: g.colorString,
+    color: p.colorString,
     className: S.verifiedRoleIcon
   }) : "dot" === y ? (0, r.jsx)(u.FhE, {
     color: W,
@@ -130,7 +130,7 @@ function R(e) {
       [S.dragBefore]: null !== A && j < A,
       [S.dragAfter]: null !== A && j > A
     }),
-    id: g.id,
+    id: p.id,
     selectedItem: h,
     itemType: "side",
     onClick: x,
@@ -140,12 +140,12 @@ function R(e) {
           default: e
         } = await Promise.resolve().then(n.bind(n, 741247));
         return t => (0, r.jsx)(e, P(T({}, t), {
-          role: g,
+          role: p,
           guild: d
         }))
       })
     },
-    "aria-label": g.name,
+    "aria-label": p.name,
     clickableRef: e => {
       var t;
       return D(k(null !== (t = null == e ? void 0 : e.ref) && void 0 !== t ? t : null))
@@ -157,7 +157,7 @@ function R(e) {
       variant: "text-sm/medium",
       color: E ? "header-primary" : "interactive-active",
       lineClamp: 1,
-      children: g.name
+      children: p.name
     })]
   })
 }
@@ -182,13 +182,13 @@ function Z(e) {
       top: Math.max((r - 2) * 34, 0)
     })
   }, [o]);
-  (0, p.ZP)(() => {
+  (0, g.ZP)(() => {
     k(n)
   }), i.useEffect(() => {
     o.length > f && k(n), o.length !== f && b(o.length)
   }, [o.length, f, b, k, n]);
   let W = () => {
-    g.Z.createRole(t.id), l(C.ZI.DISPLAY)
+    p.Z.createRole(t.id), l(C.ZI.DISPLAY)
   };
   return (0, r.jsx)(x.ZP.Sidebar, {
     className: S.sidebar,

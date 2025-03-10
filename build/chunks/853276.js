@@ -14,7 +14,7 @@ var r = n(200651),
   u = n(596390),
   m = n(651095);
 
-function g(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +33,7 @@ function g(e) {
   return e
 }
 
-function p(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -81,7 +81,7 @@ let h = i.forwardRef(function(e, t) {
     color: o.ua7.Colors.RED,
     position: "left",
     forceOpen: u || void 0,
-    children: e => (0, r.jsxs)("div", p(g({
+    children: e => (0, r.jsxs)("div", g(p({
       ref: t,
       className: a()(m.chipletValue, {
         [m.isEditing]: d,
@@ -111,7 +111,7 @@ let h = i.forwardRef(function(e, t) {
       color: o.ua7.Colors.RED,
       position: "top",
       forceOpen: u || void 0,
-      children: e => (0, r.jsx)("span", p(g({}, e), {
+      children: e => (0, r.jsx)("span", g(p({}, e), {
         className: m.errorValue,
         children: b
       }))
@@ -126,8 +126,8 @@ function f(e) {
     value: t,
     onChange: n,
     onBlur: s,
-    onFocus: g,
-    onRemove: p,
+    onFocus: p,
+    onRemove: g,
     isSelected: f,
     isSelecting: b,
     error: x,
@@ -151,23 +151,23 @@ function f(e) {
     }, [n]),
     D = i.useCallback(function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-      if (t.trim().length <= 0 && p(), null != N.current && null != y.current && null != v.current) {
+      if (t.trim().length <= 0 && g(), null != N.current && null != y.current && null != v.current) {
         var n;
         N.current.scrollTo(0, 0), N.current.setSelectionRange(0, 0), N.current.scrollLeft = 0, y.current.scrollLeft = 0, (null === (n = v.current) || void 0 === n ? void 0 : n.ref) != null && (v.current.ref.scrollLeft = 0)
       }
       O(!1), s(e)
-    }, [t, y, s, p]),
+    }, [t, y, s, g]),
     A = i.useCallback(e => {
       let n = t.trim().length <= 0;
       u.ye.has(e.key) ? (e.preventDefault(), e.stopPropagation(), D(!0)) : "Backspace" === e.key && n && (e.preventDefault(), e.stopPropagation(), D(!0))
     }, [D, t]),
     k = i.useCallback(e => {
       let t = e.metaKey || e.ctrlKey;
-      g(t), t ? e.preventDefault() : O(!0), e.stopPropagation()
-    }, [g]),
+      p(t), t ? e.preventDefault() : O(!0), e.stopPropagation()
+    }, [p]),
     W = i.useCallback(e => {
-      p()
-    }, [p]);
+      g()
+    }, [g]);
   return (0, r.jsx)("div", {
     className: m.chipletFlexContainer,
     children: (0, r.jsxs)("div", {

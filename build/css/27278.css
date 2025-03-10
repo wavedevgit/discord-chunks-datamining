@@ -1,6 +1,6 @@
 /**
   Module ID: 27278
-  Original File Name: b8b9622e8fdaf38e
+  Original File Name: acb24405c955f87c
 **/
 .buttonContainer__7e329 {
     display: flex;
@@ -1467,6 +1467,10 @@
 
 .dotSpacer_c8f358 {
     padding: 0 8px 8px
+}
+
+.iconButton_c8f358 {
+    padding: 0 8px
 }
 
 .actionButtonsContainer_c8f358 {

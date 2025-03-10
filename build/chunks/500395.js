@@ -14,9 +14,9 @@ var i = n(990547),
   d = n(975464),
   u = n(388032),
   m = n(128281),
-  g = n(270395);
+  p = n(270395);
 
-function p(e) {
+function g(e) {
   let {
     config: t
   } = e, {
@@ -29,7 +29,7 @@ function p(e) {
     className: m.__invalid_ctaContainer,
     children: [(0, r.jsx)("img", {
       className: m.__invalid_heroBanner,
-      src: g,
+      src: p,
       alt: u.NW.string(u.t.Af4klJ)
     }), (0, r.jsxs)("div", {
       className: m.__invalid_ctaContent,
@@ -76,7 +76,7 @@ function h(e) {
     }
   }), o) ? (0, r.jsx)(s.$jN, {}) : (0, r.jsxs)("div", {
     className: m.__invalid_container,
-    children: [(0, r.jsx)(p, {
+    children: [(0, r.jsx)(g, {
       config: n
     }), (0, r.jsx)(d.C, {
       onboardingMarketing: u,

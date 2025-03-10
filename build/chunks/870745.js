@@ -1,6 +1,6 @@
 /** Chunk was on 27278 **/
 t.d(n, {
-  Z: () => u
+  Z: () => s
 });
 var o = t(200651),
   r = t(442837),
@@ -8,20 +8,20 @@ var o = t(200651),
   i = t(726721),
   l = t(726521),
   c = t(592125),
-  s = t(388032);
+  u = t(388032);
 
-function u(e, n, t) {
-  let u = i.Z.useExperiment({
+function s(e, n, t) {
+  let s = i.Z.useExperiment({
       location: "activity_popout_overflow_menu"
     }, {
       autoTrackExposure: !0
     }).enabled,
     _ = (0, r.e7)([c.Z], () => c.Z.getChannel(n)),
     d = null == _ ? void 0 : _.getGuildId();
-  return !1 === u ? null : (0, o.jsx)(a.sNh, {
+  return !1 === s ? null : (0, o.jsx)(a.sNh, {
     id: "report-app",
     color: "danger",
-    label: s.NW.string(s.t.NgA5vr),
+    label: u.NW.string(u.t.NgA5vr),
     action: () => (0, l.uu)({
       application: e,
       entrypoint: "activity_ui_popout",

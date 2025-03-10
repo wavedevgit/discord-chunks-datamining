@@ -14,8 +14,8 @@ var r = n(200651),
   d = n(817460),
   u = n(723047),
   m = n(528027),
-  g = n(686807),
-  p = n(157018),
+  p = n(686807),
+  g = n(157018),
   h = n(828656),
   f = n(388032),
   b = n(352375);
@@ -29,8 +29,8 @@ function x(e) {
     description: c,
     targetType: d,
     index: u,
-    dndName: g,
-    onEdit: p,
+    dndName: p,
+    onEdit: g,
     onMove: x,
     disabled: j = !1
   } = e, N = i.useRef(null), v = i.useRef(null), {
@@ -55,7 +55,7 @@ function x(e) {
       }), !j && (0, r.jsx)("div", {
         ref: v,
         className: b.dragIconWrapper,
-        "data-dnd-name": g,
+        "data-dnd-name": p,
         children: (0, r.jsx)(o.Vni, {
           size: "xs",
           color: "currentColor",
@@ -77,7 +77,7 @@ function x(e) {
       className: b.cardActions,
       children: !j && (0, r.jsx)(o.P3F, {
         className: b.cardActionButton,
-        onClick: j ? void 0 : p,
+        onClick: j ? void 0 : g,
         "aria-label": f.NW.string(f.t.Eoo8h4),
         "aria-disabled": j,
         children: (0, r.jsx)(o.vdY, {
@@ -112,11 +112,11 @@ function j(e) {
         guildId: o,
         emojiId: e.emoji_id,
         emojiName: e.emoji_name,
-        title: (0, g.Z)(e),
+        title: (0, p.Z)(e),
         description: e.description,
         targetType: m,
         index: t,
-        dndName: (0, p.Z)(e),
+        dndName: (0, g.Z)(e),
         onEdit: () => n(t),
         onMove: s,
         disabled: f

@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(239091),
   u = n(749210),
   m = n(493544),
-  g = n(479531),
-  p = n(118012),
+  p = n(479531),
+  g = n(118012),
   h = n(210887),
   f = n(246946),
   b = n(594174),
@@ -82,7 +82,7 @@ function D(e) {
       try {
         await u.Z.unbanUser(n.id, s.id), o()
       } catch (e) {
-        f(new g.Z(e)), m(!1)
+        f(new p.Z(e)), m(!1)
       }
     }
   }
@@ -92,15 +92,15 @@ function D(e) {
     children: [(0, r.jsxs)(c.xBx, {
       className: T.header,
       separator: !1,
-      children: [(0, r.jsx)(p.Z, {
-        size: p.Z.Sizes.SIZE_24,
+      children: [(0, r.jsx)(g.Z, {
+        size: g.Z.Sizes.SIZE_24,
         className: T.userUsername,
         children: N.ZP.getUserTag(s, {
           mode: "username",
           identifiable: l ? "never" : "always"
         })
-      }), l || s.isPomelo() ? null : (0, r.jsxs)(p.Z, {
-        size: p.Z.Sizes.SIZE_24,
+      }), l || s.isPomelo() ? null : (0, r.jsxs)(g.Z, {
+        size: g.Z.Sizes.SIZE_24,
         className: T.userDiscrim,
         children: ["#", s.discriminator]
       })]

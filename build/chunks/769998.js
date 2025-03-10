@@ -1,7 +1,7 @@
 /** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -14,10 +14,10 @@ var i = n(442837),
   d = n(981631),
   u = n(590433),
   m = n(388032),
-  g = n(15470);
+  p = n(15470);
 
-function p(e) {
-  var t, n, p;
+function g(e) {
+  var t, n, g;
   let {
     action: h,
     triggerType: f,
@@ -32,16 +32,16 @@ function p(e) {
     icon: E
   } = v;
   return (0, r.jsxs)("div", {
-    className: g.actionContainer,
+    className: p.actionContainer,
     children: [(0, r.jsx)("div", {
-      className: g.actionIconContainer,
+      className: p.actionIconContainer,
       children: (0, r.jsx)(E, {
         size: "md",
         color: "currentColor",
-        className: g.actionIcon
+        className: p.actionIcon
       })
     }), (0, r.jsxs)("div", {
-      className: g.actionTextContainer,
+      className: p.actionTextContainer,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-sm/semibold",
         children: C
@@ -52,13 +52,13 @@ function p(e) {
       }), x && (0, r.jsxs)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: [(n = f, null === (p = O) ? null : n === c.fX.MENTION_SPAM ? m.NW.format(m.t.i3lsKC, {
-          friendlyDurationString: p
+        children: [(n = f, null === (g = O) ? null : n === c.fX.MENTION_SPAM ? m.NW.format(m.t.i3lsKC, {
+          friendlyDurationString: g
         }) : m.NW.format(m.t.mvHxzc, {
-          friendlyDurationString: p
+          friendlyDurationString: g
         })), y && (0, r.jsx)(s.P3F, {
           onClick: N(!0),
-          className: g.editChannel,
+          className: p.editChannel,
           tag: "span",
           role: "link",
           children: m.NW.string(m.t["0B95RE"])
@@ -93,7 +93,7 @@ function p(e) {
             value: x,
             onChange: N(!1),
             disabled: !y,
-            className: g.__invalid_actionCheckbox
+            className: p.__invalid_actionCheckbox
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);

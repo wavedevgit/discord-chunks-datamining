@@ -15,8 +15,8 @@ var i = n(120356),
   d = n(603211),
   u = n(107862),
   m = n(307707),
-  g = n(216701),
-  p = n(570961),
+  p = n(216701),
+  g = n(570961),
   h = n(290511),
   f = n(388032),
   b = n(597435);
@@ -98,12 +98,12 @@ function N(e) {
         option: O,
         index: _,
         onSave: e => {
-          (0, p.Kk)(u, N.id, {
+          (0, g.Kk)(u, N.id, {
             options: N.options.map(t => t.id === O.id ? e : t)
           })
         },
         onDelete: () => {
-          (0, p.Kk)(u, N.id, {
+          (0, g.Kk)(u, N.id, {
             options: N.options.filter(e => e.id !== O.id)
           })
         }
@@ -123,7 +123,7 @@ function N(e) {
       className: b.optionCardRow,
       children: [(0, r.jsx)("div", {
         className: b.emoji,
-        children: (0, r.jsx)(g.Z, {
+        children: (0, r.jsx)(p.Z, {
           emojiId: null === (a = O.emoji) || void 0 === a ? void 0 : a.id,
           emojiName: null === (c = O.emoji) || void 0 === c ? void 0 : c.name,
           defaultComponent: null
@@ -166,7 +166,7 @@ function v(e) {
       return n => (0, r.jsx)(e, j(x({}, n), {
         guild: t,
         prompt: i,
-        onSave: e => (0, p.Kk)(t, i.id, {
+        onSave: e => (0, g.Kk)(t, i.id, {
           options: [...i.options, e]
         }),
         onDelete: () => {},

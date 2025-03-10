@@ -13,8 +13,8 @@ var r = n(200651),
   d = n.n(c),
   u = n(442837),
   m = n(692547),
-  g = n(215569),
-  p = n(481060),
+  p = n(215569),
+  g = n(481060),
   h = n(484614),
   f = n(852860),
   b = n(782568),
@@ -65,25 +65,25 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
       shouldRestrictUpdatingCreatorMonetizationSettings: F
     } = (0, j.gX)(s.id), z = F || !A;
     return (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(p.vwX, {
+      children: [(0, r.jsx)(g.vwX, {
         tag: "h1",
         children: C.NW.string(C.t.N6Tg9P)
-      }), (0, r.jsx)(p.R94, {
-        type: p.R94.Types.DESCRIPTION,
+      }), (0, r.jsx)(g.R94, {
+        type: g.R94.Types.DESCRIPTION,
         children: C.NW.string(C.t["uU/69/"])
-      }), (0, r.jsx)(p.j7V, {
+      }), (0, r.jsx)(g.j7V, {
         className: I.enableSwitch,
         value: _,
         disabled: F || !_ && !l,
         tooltipNote: _ || l ? void 0 : C.NW.string(C.t.mIgfEh),
         hideBorder: !0,
         onChange: e => P(e),
-        children: (0, r.jsx)(p.Text, {
+        children: (0, r.jsx)(g.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
           children: C.NW.string(C.t.lwvl1t)
         })
-      }), (0, r.jsxs)(p.xJW, {
+      }), (0, r.jsxs)(g.xJW, {
         title: C.NW.string(C.t.N46WOj),
         disabled: F,
         children: [(0, r.jsx)(h.Z, {
@@ -91,32 +91,32 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
           className: a()({
             [I.disabled]: F
           })
-        }), (0, r.jsx)(p.zxk, {
+        }), (0, r.jsx)(g.zxk, {
           onClick: () => (0, b.Z)(U),
           className: I.openPageButton,
           disabled: F,
           children: C.NW.string(C.t.CaOYqa)
         })]
-      }), (0, r.jsx)(p.$i$, {
+      }), (0, r.jsx)(g.$i$, {
         className: I.divider
-      }), (0, r.jsxs)(p.xJW, {
+      }), (0, r.jsxs)(g.xJW, {
         title: C.NW.string(C.t.W39uIC),
         disabled: F,
-        children: [(0, r.jsx)(p.R94, {
+        children: [(0, r.jsx)(g.R94, {
           disabled: F,
           children: C.NW.string(C.t.B6XtEx)
         }), (0, r.jsxs)("div", {
           className: I.accentColorContainer,
-          children: [(0, r.jsx)(p.zxk, {
+          children: [(0, r.jsx)(g.zxk, {
             onClick: () => null,
-            color: p.zxk.Colors.CUSTOM,
+            color: g.zxk.Colors.CUSTOM,
             style: {
               backgroundColor: "#".concat(w.toString(16).padStart(6, "0"))
             },
             className: I.buttonPreview,
             disabled: F,
             children: C.NW.string(C.t.l6iM39)
-          }), (0, r.jsx)(p.zH8, {
+          }), (0, r.jsx)(g.zH8, {
             colors: E,
             customColor: null,
             defaultColor: T,
@@ -128,15 +128,15 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
             disabled: F
           })]
         })]
-      }), (0, r.jsx)(p.$i$, {
+      }), (0, r.jsx)(g.$i$, {
         className: I.divider
-      }), (0, r.jsxs)(p.xJW, {
+      }), (0, r.jsxs)(g.xJW, {
         title: C.NW.string(C.t.k2yRvb),
         disabled: F,
-        children: [(0, r.jsx)(p.R94, {
+        children: [(0, r.jsx)(g.R94, {
           disabled: F,
           children: C.NW.string(C.t["amd99/"])
-        }), (0, r.jsx)(p.oil, {
+        }), (0, r.jsx)(g.oil, {
           value: null != Z ? Z : void 0,
           onChange: e => D("" === e ? null : e),
           error: A ? null : C.NW.string(C.t["1kL79f"]),
@@ -146,7 +146,7 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
             [I.error]: !A,
             [I.trailerInputWithCheckmark]: B || !A
           }),
-          prefixElement: A && B && (0, r.jsx)(p.owK, {
+          prefixElement: A && B && (0, r.jsx)(g.owK, {
             size: "md",
             color: m.Z.unsafe_rawColors.BRAND_500.css,
             secondaryColor: m.Z.unsafe_rawColors.WHITE_500.css,
@@ -154,15 +154,15 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
           }),
           disabled: F
         })]
-      }), (0, r.jsx)(p.$i$, {
+      }), (0, r.jsx)(g.$i$, {
         className: I.divider
-      }), (0, r.jsxs)(p.xJW, {
+      }), (0, r.jsxs)(g.xJW, {
         title: C.NW.string(C.t.AU2HU1),
         disabled: F,
-        children: [(0, r.jsx)(p.R94, {
+        children: [(0, r.jsx)(g.R94, {
           disabled: F,
           children: C.NW.string(C.t.iWBt3d)
-        }), (0, r.jsx)(p.j7V, {
+        }), (0, r.jsx)(g.j7V, {
           className: I.premiumMemberCountSwitchContainer,
           value: k,
           hideBorder: !0,
@@ -172,7 +172,7 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
             className: I.iconSwitchLabel,
             children: [(0, r.jsx)("div", {
               className: I.iconContainer,
-              children: (0, r.jsx)(p.tBG, {
+              children: (0, r.jsx)(g.tBG, {
                 size: "custom",
                 color: "currentColor",
                 width: 28,
@@ -180,11 +180,11 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
                 className: I.premiumMemberCountIcon
               })
             }), (0, r.jsxs)("div", {
-              children: [(0, r.jsx)(p.Text, {
+              children: [(0, r.jsx)(g.Text, {
                 variant: "text-md/medium",
                 color: "header-primary",
                 children: C.NW.string(C.t.hJsAPj)
-              }), (0, r.jsx)(p.Text, {
+              }), (0, r.jsx)(g.Text, {
                 variant: "text-sm/normal",
                 color: "header-secondary",
                 children: C.NW.string(C.t.hn65ER)
@@ -192,10 +192,10 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
             })]
           })
         })]
-      }), (0, r.jsx)(g.W, {
+      }), (0, r.jsx)(p.W, {
         component: "div",
         className: I.contentRegion,
-        children: M && (0, r.jsx)(p.oXn, {
+        children: M && (0, r.jsx)(g.oXn, {
           children: (0, r.jsx)(f.Z, {
             submitting: u,
             onReset: () => {
@@ -217,7 +217,7 @@ function w() {
   return null != e && t ? (0, r.jsx)(P, {
     guild: e,
     canEnable: n
-  }) : (0, r.jsx)(p.$jN, {})
+  }) : (0, r.jsx)(g.$jN, {})
 }
 
 function R() {

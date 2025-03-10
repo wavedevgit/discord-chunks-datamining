@@ -13,9 +13,9 @@ var r = n(200651),
   d = n(620436),
   u = n(273504),
   m = n(388032),
-  g = n(94575);
+  p = n(94575);
 
-function p(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,64 +54,64 @@ function f(e) {
     onChangeRule: b
   } = e, [x, j] = i.useState(null === (t = f.triggerMetadata) || void 0 === t ? void 0 : t.mentionTotalLimit), N = (0, a.a)(f.guildId, !1);
   return (0, r.jsxs)("div", {
-    className: g.cardContentsContainer,
+    className: p.cardContentsContainer,
     children: [(0, r.jsxs)(c.Z, {
       step: 1,
       header: m.NW.string(m.t.IGfuTU),
       children: [(0, r.jsxs)("div", {
-        className: g.mentionLimitContainer,
+        className: p.mentionLimitContainer,
         children: [(0, r.jsx)("div", {
-          className: g.mentionLimitIconContainer,
+          className: p.mentionLimitIconContainer,
           children: (0, r.jsx)(s.lOy, {
             size: "md",
             color: "currentColor",
-            className: g.mentionLimitIcon
+            className: p.mentionLimitIcon
           })
         }), (0, r.jsxs)("div", {
-          className: g.mentionLimitTextContainer,
+          className: p.mentionLimitTextContainer,
           children: [(0, r.jsx)(s.X6q, {
             variant: "heading-sm/semibold",
             children: m.NW.string(m.t["s/26oa"])
           }), (0, r.jsx)(s.Text, {
             color: "interactive-normal",
             variant: "text-xs/medium",
-            className: g.descriptionHint,
+            className: p.descriptionHint,
             children: m.NW.string(m.t["8uW4/P"])
           })]
         }), (0, r.jsx)("div", {
-          className: g.stepperContainer,
+          className: p.stepperContainer,
           children: (0, r.jsx)(s.FiK, {
             value: x,
             onChange: e => {
-              j(e), b(h(p({}, f), {
-                triggerMetadata: h(p({}, f.triggerMetadata), {
+              j(e), b(h(g({}, f), {
+                triggerMetadata: h(g({}, f.triggerMetadata), {
                   mentionTotalLimit: e
                 })
               }))
             },
             minValue: u.Vg,
             maxValue: u.Lg,
-            className: g.stepper
+            className: p.stepper
           })
         })]
       }), N ? (0, r.jsxs)("div", {
-        className: g.mentionLimitContainer,
+        className: p.mentionLimitContainer,
         children: [(0, r.jsx)("div", {
-          className: g.mentionLimitIconContainer,
+          className: p.mentionLimitIconContainer,
           children: (0, r.jsx)(s.S4f, {
             size: "md",
             color: "currentColor",
-            className: g.mentionLimitIcon
+            className: p.mentionLimitIcon
           })
         }), (0, r.jsxs)("div", {
-          className: g.mentionLimitTextContainer,
+          className: p.mentionLimitTextContainer,
           children: [(0, r.jsx)(s.X6q, {
             variant: "heading-sm/semibold",
             children: m.NW.string(m.t.XnuC9v)
           }), (0, r.jsx)(s.Text, {
             color: "interactive-normal",
             variant: "text-xs/medium",
-            className: g.descriptionHint,
+            className: p.descriptionHint,
             children: m.NW.string(m.t.EDBe5u)
           })]
         }), (0, r.jsx)("div", {
@@ -119,13 +119,13 @@ function f(e) {
             type: s.XZJ.Types.INVERTED,
             value: null === (n = f.triggerMetadata) || void 0 === n ? void 0 : n.mentionRaidProtectionEnabled,
             onChange: (e, t) => {
-              b(h(p({}, f), {
-                triggerMetadata: h(p({}, f.triggerMetadata), {
+              b(h(g({}, f), {
+                triggerMetadata: h(g({}, f.triggerMetadata), {
                   mentionRaidProtectionEnabled: t
                 })
               }))
             },
-            className: g.__invalid_actionCheckbox
+            className: p.__invalid_actionCheckbox
           })
         })]
       }) : null]

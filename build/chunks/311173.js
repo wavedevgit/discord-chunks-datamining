@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(858457),
   u = n(273504),
   m = n(981631),
-  g = n(388032),
-  p = n(978082);
+  p = n(388032),
+  g = n(978082);
 let h = o.Z.getArticleURL(m.BhN.GUILD_AUTOMOD_REGEX);
 
 function f(e) {
@@ -24,17 +24,17 @@ function f(e) {
     errorText: i
   } = e;
   return t ? (0, r.jsx)("div", {
-    className: p.subtext,
+    className: g.subtext,
     children: (0, r.jsx)(l.Text, {
-      className: p.errorSpan,
+      className: g.errorSpan,
       variant: "text-xs/medium",
       color: "text-danger",
-      children: null != i ? i : g.NW.format(g.t.jKYAPj, {
+      children: null != i ? i : p.NW.format(p.t.jKYAPj, {
         helpArticle: h
       })
     })
   }) : (0, r.jsx)(l.Text, {
-    className: p.subtext,
+    className: g.subtext,
     variant: "text-xs/medium",
     color: "text-muted",
     children: n
@@ -78,7 +78,7 @@ function b(e) {
     N(e)
   }, [N]);
   return (0, r.jsxs)("div", {
-    className: a()(p.keywordsContainer, o),
+    className: a()(g.keywordsContainer, o),
     children: [(0, r.jsx)(c.Z, {
       placeholder: "^b(a|@)d$\nw(o|0)rd(s|$)",
       initialValue: v,
@@ -87,7 +87,7 @@ function b(e) {
       tagErrors: _,
       maxTags: u.VW
     }), (0, r.jsx)(f, {
-      text: g.NW.format(g.t["PGC/AA"], {
+      text: p.NW.format(p.t["PGC/AA"], {
         helpArticle: h
       }),
       hasErrors: x.length > 0 || null != b,

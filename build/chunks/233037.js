@@ -1,6 +1,6 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => x
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
@@ -15,13 +15,13 @@ var l = n(442837),
   f = n(499596),
   h = n(148381),
   m = n(388032),
-  p = n(885977);
+  x = n(885977);
 
-function x(e) {
+function p(e) {
   let {
     selectedChannelId: t,
     guildId: n,
-    onChangeSelectedChannelId: x
+    onChangeSelectedChannelId: p
   } = e, g = (0, l.e7)([c.default], () => c.default.getCurrentUser()), _ = (0, l.e7)([o.Z, s.ZP, a.Z], () => (0, u.h_)(s.ZP.getChannels(n), o.Z, a.Z)), v = (0, l.e7)([d.ZP], () => d.ZP.getVoiceStates(n)), j = _.map(e => {
     var n;
     return {
@@ -45,17 +45,17 @@ function x(e) {
   });
   return (0, r.jsx)(h.Z, {
     title: m.NW.string(m.t["eg7R/v"]),
-    scrollerInnerClassName: p.channelSelectScrollerInner,
+    scrollerInnerClassName: x.channelSelectScrollerInner,
     children: (0, r.jsx)(i.FXm, {
       options: j,
       value: t,
-      itemInfoClassName: p.channelInfoWrapper,
-      itemTitleClassName: p.channelTitleWrapper,
+      itemInfoClassName: x.channelInfoWrapper,
+      itemTitleClassName: x.channelTitleWrapper,
       onChange: e => {
         let {
           value: t
         } = e;
-        return x(t)
+        return p(t)
       }
     })
   })

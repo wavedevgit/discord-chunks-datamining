@@ -15,8 +15,8 @@ var r = n(200651),
   d = n.n(c),
   u = n(772848),
   m = n(442837),
-  g = n(481060),
-  p = n(668781),
+  p = n(481060),
+  g = n(668781),
   h = n(80932),
   f = n(225433),
   b = n(327802),
@@ -83,7 +83,7 @@ let G = d().throttle(h.OQ, 1e3),
       className: a()(W.emojiRow, L.card),
       children: [(0, r.jsx)("div", {
         className: W.emojiColumn,
-        children: (0, r.jsx)(g.ua7, {
+        children: (0, r.jsx)(p.ua7, {
           text: n.available ? null : k.NW.string(k.t["KUzI7+"]),
           children: e => {
             var t, i;
@@ -108,7 +108,7 @@ let G = d().throttle(h.OQ, 1e3),
         })
       }), (0, r.jsxs)("div", {
         className: W.column,
-        children: [(0, r.jsx)(g.oil, {
+        children: [(0, r.jsx)(p.oil, {
           className: a()(W.emojiAliasInput, {
             [W.emojiAliasInputDisabled]: l
           }),
@@ -123,7 +123,7 @@ let G = d().throttle(h.OQ, 1e3),
               name: S.ZP.sanitizeEmojiName(o)
             })
           },
-          size: g.oil.Sizes.MINI,
+          size: p.oil.Sizes.MINI,
           value: o,
           maxLength: A.Yc,
           disabled: l
@@ -136,19 +136,19 @@ let G = d().throttle(h.OQ, 1e3),
         })]
       }), (0, r.jsxs)("div", {
         className: W.column,
-        children: [(0, r.jsx)(g.qEK, {
+        children: [(0, r.jsx)(p.qEK, {
           src: n.user.getAvatarURL(t, 20),
           "aria-label": u,
-          size: g.EFr.SIZE_20
-        }), (0, r.jsx)(g.R94, {
+          size: p.EFr.SIZE_20
+        }), (0, r.jsx)(p.R94, {
           className: W.emojiRowText,
           children: u
         })]
-      }), null != s && !l && (0, r.jsx)(g.P3F, {
+      }), null != s && !l && (0, r.jsx)(p.P3F, {
         "aria-label": k.NW.string(k.t.bt75u7),
         className: W.editEmojiRolesButton,
         onClick: () => s(n, t),
-        children: (0, r.jsx)(g.vdY, {
+        children: (0, r.jsx)(p.vdY, {
           size: "md",
           color: "currentColor",
           className: W.editEmojiRolesIcon
@@ -160,7 +160,7 @@ let G = d().throttle(h.OQ, 1e3),
             let {
               status: t
             } = e;
-            429 === t && p.Z.show({
+            429 === t && g.Z.show({
               title: k.NW.string(k.t.iufib2),
               body: k.NW.string(k.t["Whhv4+"])
             })
@@ -177,18 +177,18 @@ let G = d().throttle(h.OQ, 1e3),
       theme: a,
       guild: l
     } = e;
-    return t ? (0, r.jsx)(g.$jN, {
+    return t ? (0, r.jsx)(p.$jN, {
       className: W.spinner,
-      type: g.$jN.Type.SPINNING_CIRCLE
-    }) : 0 === i.length && 0 === s.length ? (0, r.jsxs)(g.ubH, {
+      type: p.$jN.Type.SPINNING_CIRCLE
+    }) : 0 === i.length && 0 === s.length ? (0, r.jsxs)(p.ubH, {
       theme: a,
       className: W.empty,
-      children: [(0, r.jsx)(g.oxh, {
+      children: [(0, r.jsx)(p.oxh, {
         darkSrc: n(458601),
         lightSrc: n(673557),
         width: 272,
         height: 212
-      }), (0, r.jsx)(g.OZU, {
+      }), (0, r.jsx)(p.OZU, {
         note: k.NW.string(k.t.RBbtMz),
         children: k.NW.string(k.t.lxsmBQ)
       })]
@@ -216,8 +216,8 @@ let G = d().throttle(h.OQ, 1e3),
       maxSlots: n,
       emojiCount: i
     } = e;
-    return (0, r.jsxs)(g.vwX, {
-      tag: g.RB0.H2,
+    return (0, r.jsxs)(p.vwX, {
+      tag: p.RB0.H2,
       className: W.title,
       children: [t, (0, r.jsxs)("span", {
         children: [" — ", k.NW.format(k.t.sgL8sL, {
@@ -235,24 +235,24 @@ let G = d().throttle(h.OQ, 1e3),
     } = e, l = i.useMemo(() => [...t].reverse(), [t]), {
       canManageGuildExpression: o
     } = (0, y.Gw)(n);
-    return 0 === t.length ? (0, r.jsx)(g.R94, {
-      type: g.geA.DESCRIPTION,
+    return 0 === t.length ? (0, r.jsx)(p.R94, {
+      type: p.geA.DESCRIPTION,
       className: W.content,
       children: k.NW.string(k.t.SpxYoa)
-    }) : (0, r.jsxs)(g.hjN, {
+    }) : (0, r.jsxs)(p.hjN, {
       className: W.content,
       children: [(0, r.jsxs)("div", {
         className: W.emojiTable,
-        children: [(0, r.jsx)(g.R94, {
-          type: g.geA.DESCRIPTION,
+        children: [(0, r.jsx)(p.R94, {
+          type: p.geA.DESCRIPTION,
           className: W.emojiColumn,
           children: k.NW.string(k.t.Z0i3Gh)
-        }), (0, r.jsx)(g.R94, {
-          type: g.geA.DESCRIPTION,
+        }), (0, r.jsx)(p.R94, {
+          type: p.geA.DESCRIPTION,
           className: W.columnLabel,
           children: k.NW.string(k.t.giajw8)
-        }), (0, r.jsx)(g.R94, {
-          type: g.geA.DESCRIPTION,
+        }), (0, r.jsx)(p.R94, {
+          type: p.geA.DESCRIPTION,
           className: W.columnLabel,
           children: k.NW.string(k.t.edavpq)
         })]
@@ -302,7 +302,7 @@ let G = d().throttle(h.OQ, 1e3),
       } = (0, y.XJ)(e),
       {
         revision: c,
-        emojis: p
+        emojis: g
       } = (0, m.cj)([R.Z], () => ({
         revision: R.Z.getEmojiRevision(e.id),
         emojis: R.Z.getEmojis(e.id)
@@ -319,10 +319,10 @@ let G = d().throttle(h.OQ, 1e3),
       null != h && h < c && G(e.id)
     }, [c, h, e.id]);
     let [L, U] = i.useMemo(() => {
-      let t = null == p ? void 0 : p.filter(t => !(0, _.Kt)(t, e.id)),
+      let t = null == g ? void 0 : g.filter(t => !(0, _.Kt)(t, e.id)),
         [n, r] = d().partition(t, e => !e.animated);
       return [n, r]
-    }, [p, e.id]), B = (0, T.y4)(e), z = Math.max(B - L.length, B - U.length), H = (n, r, i) => (0, N.G)({
+    }, [g, e.id]), B = (0, T.y4)(e), z = Math.max(B - L.length, B - U.length), H = (n, r, i) => (0, N.G)({
       data: n,
       file: r,
       image: i,
@@ -335,9 +335,9 @@ let G = d().throttle(h.OQ, 1e3),
         upload_id: t
       }), await (0, O._)(n, H), v(!0)
     }, K = () => {
-      null !== P.current && ((0, g.Mr3)(P.current), P.current = null)
+      null !== P.current && ((0, p.Mr3)(P.current), P.current = null)
     }, q = async e => {
-      P.current = await (0, g.ZDy)(async () => {
+      P.current = await (0, p.ZDy)(async () => {
         let {
           default: t
         } = await n.e("16169").then(n.bind(n, 935333));
@@ -351,59 +351,59 @@ let G = d().throttle(h.OQ, 1e3),
       children: [0 === z ? null : (0, r.jsx)(b.Z, {
         className: W.emojiUploadContainer,
         onDrop: q
-      }), (0, r.jsxs)(g.hjN, {
-        tag: g.RB0.H1,
+      }), (0, r.jsxs)(p.hjN, {
+        tag: p.RB0.H1,
         title: k.NW.string(k.t.sMOuub),
         children: [(0, r.jsx)(V, {
           guild: e,
           staticEmojiCount: L.length,
           animatedEmojiCount: U.length
-        }), (0, r.jsxs)(g.hjN, {
+        }), (0, r.jsxs)(p.hjN, {
           className: W.uploader,
-          children: [(0, r.jsx)(g.R94, {
-            type: g.geA.DESCRIPTION,
+          children: [(0, r.jsx)(p.R94, {
+            type: p.geA.DESCRIPTION,
             children: k.NW.format(k.t.TA1BR0, {
               count: B
             })
-          }), X && (0, r.jsx)(g.R94, {
-            type: g.geA.DESCRIPTION,
+          }), X && (0, r.jsx)(p.R94, {
+            type: p.geA.DESCRIPTION,
             children: k.NW.format(k.t.uMkfTk, {
               onClick: () => w.Z.open(e.id, D.pNK.ROLE_SUBSCRIPTIONS, void 0, D.KsC.ROLE_SUBSCRIPTION_EMOJI)
             })
           }), (0, r.jsxs)("div", {
-            children: [(0, r.jsx)(g.vwX, {
-              tag: g.RB0.H2,
+            children: [(0, r.jsx)(p.vwX, {
+              tag: p.RB0.H2,
               className: W.emojiUploadUploadRequirementsHeading,
               children: k.NW.string(k.t.jrXfy8)
             }), (0, r.jsxs)("ul", {
               className: W.emojiUploadUploadRequirementsList,
               children: [(0, r.jsx)("li", {
-                children: (0, r.jsx)(g.R94, {
-                  type: g.geA.DESCRIPTION,
+                children: (0, r.jsx)(p.R94, {
+                  type: p.geA.DESCRIPTION,
                   children: k.NW.string(k.t.N2qTQ0)
                 })
               }), (0, r.jsx)("li", {
-                children: (0, r.jsx)(g.R94, {
-                  type: g.geA.DESCRIPTION,
+                children: (0, r.jsx)(p.R94, {
+                  type: p.geA.DESCRIPTION,
                   children: k.NW.format(k.t.gfAXoa, {
                     maxSize: A.xG
                   })
                 })
               }), (0, r.jsx)("li", {
-                children: (0, r.jsx)(g.R94, {
-                  type: g.geA.DESCRIPTION,
+                children: (0, r.jsx)(p.R94, {
+                  type: p.geA.DESCRIPTION,
                   children: k.NW.string(k.t.rnwKPD)
                 })
               }), (0, r.jsx)("li", {
-                children: (0, r.jsx)(g.R94, {
-                  type: g.geA.DESCRIPTION,
+                children: (0, r.jsx)(p.R94, {
+                  type: p.geA.DESCRIPTION,
                   children: k.NW.string(k.t["8Vr5QU"])
                 })
               })]
             })]
-          }), (0, r.jsxs)(g.zxk, {
+          }), (0, r.jsxs)(p.zxk, {
             tabIndex: -1,
-            size: g.zxk.Sizes.MEDIUM,
+            size: p.zxk.Sizes.MEDIUM,
             onClick: () => {
               let t = (0, u.Z)();
               s(t), I.default.track(D.rMx.EMOJI_UPLOAD_STARTED, {
@@ -425,7 +425,7 @@ let G = d().throttle(h.OQ, 1e3),
             }) : null]
           })]
         }), (0, r.jsx)(F, {
-          isLoading: null == p,
+          isLoading: null == g,
           staticEmojis: L,
           animatedEmojis: U,
           guild: e,

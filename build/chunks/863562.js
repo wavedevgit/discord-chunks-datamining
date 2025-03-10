@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(51144),
   u = n(268350),
   m = n(419922),
-  g = n(388032),
-  p = n(662815);
+  p = n(388032),
+  g = n(662815);
 let h = e => {
   let {
     className: t,
@@ -61,27 +61,27 @@ let h = e => {
     forceOpen: null != j,
     text: j,
     children: () => (0, r.jsxs)("div", {
-      className: a()(p.wrapper, t, {
-        [p.wrapperDisabled]: s
+      className: a()(g.wrapper, t, {
+        [g.wrapperDisabled]: s
       }),
       children: [(0, r.jsxs)("div", {
-        className: a()(p.content, {
-          [p.contentRemoving]: b
+        className: a()(g.content, {
+          [g.contentRemoving]: b
         }),
         children: [(0, r.jsx)(m.ZP, {
-          className: p.sticker,
+          className: g.sticker,
           size: 72,
           sticker: h
         }), (0, r.jsxs)("div", {
           children: [(0, r.jsx)(l.Text, {
             color: "header-primary",
             variant: "text-xs/semibold",
-            className: p.stickerName,
+            className: g.stickerName,
             children: h.name
           }), null != h.user && (0, r.jsxs)("div", {
-            className: p.user,
+            className: g.user,
             children: [(0, r.jsx)(o.Z, {
-              className: p.userAvatar,
+              className: g.userAvatar,
               size: l.EFr.SIZE_16,
               user: h.user
             }), (0, r.jsx)(l.Text, {
@@ -91,29 +91,29 @@ let h = e => {
             })]
           })]
         }), f ? (0, r.jsxs)("div", {
-          className: p.actions,
+          className: g.actions,
           children: [(0, r.jsx)(l.P3F, {
-            className: p.action,
+            className: g.action,
             onClick: v,
-            "aria-label": g.NW.string(g.t.bt75u7),
+            "aria-label": p.NW.string(p.t.bt75u7),
             children: (0, r.jsx)(l.vdY, {
               size: "xs",
               color: "currentColor",
-              className: p.icon
+              className: g.icon
             })
           }), (0, r.jsx)(l.P3F, {
-            className: a()(p.action, p.actionRemove),
+            className: a()(g.action, g.actionRemove),
             onClick: _,
-            "aria-label": g.NW.string(g.t.N86XcH),
+            "aria-label": p.NW.string(p.t.N86XcH),
             children: (0, r.jsx)(l.Dio, {
               size: "md",
               color: "currentColor",
-              className: p.icon
+              className: g.icon
             })
           })]
         }) : null]
       }), b && (0, r.jsx)(l.$jN, {
-        className: p.spinner
+        className: g.spinner
       })]
     })
   })

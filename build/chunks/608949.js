@@ -1,12 +1,13 @@
 /** Chunk was on 53494 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r, i = n(442837),
   o = n(570140),
-  l = n(430824);
+  l = n(430824),
+  a = n(326660);
 
-function a(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -14,25 +15,26 @@ function a(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let s = {};
-class c extends(r = i.ZP.PersistedStore) {
+let c = {};
+class u extends(r = i.ZP.PersistedStore) {
   getState() {
-    return s
+    return c
   }
   initialize(e) {
-    null != e && (s = e)
+    null != e && (c = e)
   }
   getNotificationStateForGuild(e) {
-    return s[e]
+    return c[e]
   }
 }
-a(c, "displayName", "GuildPowerupsNotificationStore"), a(c, "persistKey", "GuildPowerupsNotificationStore");
-let u = new c(o.Z, {
+s(u, "displayName", "GuildPowerupsNotificationStore"), s(u, "persistKey", "GuildPowerupsNotificationStore");
+let d = new u(o.Z, {
   GUILD_POWERUPS_ACK_NOTIFICATION: function(e) {
     var t, n, r, i;
     let {
-      guildId: o
-    } = e, c = null !== (n = null === (t = l.Z.getGuild(o)) || void 0 === t ? void 0 : t.premiumSubscriberCount) && void 0 !== n ? n : 0;
+      guildId: o,
+      notification: u
+    } = e, d = null !== (n = null === (t = l.Z.getGuild(o)) || void 0 === t ? void 0 : t.premiumSubscriberCount) && void 0 !== n ? n : 0;
     r = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -40,14 +42,14 @@ let u = new c(o.Z, {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          a(e, t, n[t])
+          s(e, t, n[t])
         })
       }
       return e
-    }({}, s), i = i = {
+    }({}, c), i = i = {
       [o]: {
-        lastSeenNotification: Date.now(),
-        lastBoostCount: c
+        lastSeenWarningNotification: u.type === a.o.WARNING ? u.endsAt : Date.now(),
+        lastBoostCount: d
       }
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
@@ -58,9 +60,9 @@ let u = new c(o.Z, {
       return n
     })(Object(i)).forEach(function(e) {
       Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
-    }), s = r
+    }), c = r
   },
   GUILD_POWERUPS_RESET_NOTIFICATIONS: function() {
-    s = {}
+    c = {}
   }
 })

@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(481060),
   u = n(852860),
   m = n(999382),
-  g = n(644542),
-  p = n(923726),
+  p = n(644542),
+  g = n(923726),
   h = n(584825),
   f = n(295141),
   b = n(723047),
@@ -90,8 +90,8 @@ function E(e) {
     R(n => y(O({}, n), {
       [e]: t
     }))
-  }, A = (0, p.ss)(t), k = (0, p.Gp)(), W = i.useCallback(() => {
-    k && g.jJ.trackExposure({
+  }, A = (0, g.ss)(t), k = (0, g.Gp)(), W = i.useCallback(() => {
+    k && p.jJ.trackExposure({
       guildId: t,
       location: "b2d9de_1"
     }), k && A ? (0, d.ZDy)(async () => {
@@ -157,7 +157,7 @@ function S(e) {
     priceTiers: n
   } = I(t), i = (0, h.GG)(t), {
     maxTiers: s
-  } = (0, p.s1)(t), a = i.map(e => e.id);
+  } = (0, g.s1)(t), a = i.map(e => e.id);
   return (0, r.jsxs)(d.hjN, {
     title: v.NW.string(v.t["72+Soq"]),
     className: _.container,

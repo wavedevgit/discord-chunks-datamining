@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(434404),
   u = n(949640),
   m = n(981631),
-  g = n(30513),
-  p = n(200299),
+  p = n(30513),
+  g = n(200299),
   h = n(388032),
   f = n(908906);
 
@@ -34,7 +34,7 @@ function b(e) {
       analyticsLocations: j,
       analyticsSection: m.jXE.GUILD_INVITE_BACKGROUND,
       analyticsObject: m.qAy.UPLOAD_IMAGE,
-      perks: (0, g.o9)()
+      perks: (0, p.o9)()
     })
   }, [j, t]), _ = (0, r.jsx)(o.Z, {
     image: t.splash,
@@ -46,8 +46,8 @@ function b(e) {
     onChange: N,
     hint: h.NW.string(h.t.uPvxqK),
     enabled: x,
-    maxFileSizeBytes: p.B,
-    onFileSizeError: () => (0, l.Z)(p.B)
+    maxFileSizeBytes: g.B,
+    onFileSizeError: () => (0, l.Z)(g.B)
   });
   return b ? _ : (0, r.jsx)(s.P3F, {
     "aria-hidden": !0,

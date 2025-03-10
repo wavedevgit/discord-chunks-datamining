@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(215569),
   u = n(780384),
   m = n(481060),
-  g = n(410030),
-  p = n(367907),
+  p = n(410030),
+  g = n(367907),
   h = n(768762),
   f = n(626135),
   b = n(585483),
@@ -89,7 +89,7 @@ function L(e) {
   })), U = (0, o.e7)([C.Z], () => {
     let e = (0, I.lg)(x);
     return null != e && !C.Z.isEducationUpsellDismissed(e)
-  }), B = (0, g.ZP)(), F = i.useRef(null), [{
+  }), B = (0, p.ZP)(), F = i.useRef(null), [{
     spring: z
   }, H] = (0, m.q_F)(() => ({
     spring: 0
@@ -144,13 +144,13 @@ function L(e) {
       }
       return !0
     }, $ = async () => {
-      f.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, k(A({}, (0, p.hH)(s)), {
+      f.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, k(A({}, (0, g.hH)(s)), {
         step: I.PG[x],
         back: !1,
         skip: !L
       })), (0, N.Nb)((0, I.lg)(x)), await J() && (0, N.IG)(s, x)
     }, ee = async () => {
-      f.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, k(A({}, (0, p.hH)(s)), {
+      f.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, k(A({}, (0, g.hH)(s)), {
         step: I.PG[x],
         back: !0,
         skip: !1

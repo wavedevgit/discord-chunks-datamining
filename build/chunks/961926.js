@@ -13,9 +13,9 @@ var r = n(200651),
   d = n(620436),
   u = n(273504),
   m = n(388032),
-  g = n(617185);
+  p = n(617185);
 
-function p(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,14 +53,14 @@ function f(e) {
     rule: b,
     onChangeRule: x
   } = e, j = i.useCallback(e => {
-    x(h(p({}, b), {
-      triggerMetadata: h(p({}, b.triggerMetadata), {
+    x(h(g({}, b), {
+      triggerMetadata: h(g({}, b.triggerMetadata), {
         allowList: e
       })
     }))
   }, [x, b]);
   return (0, r.jsxs)("div", {
-    className: g.cardContentsContainer,
+    className: p.cardContentsContainer,
     children: [(0, r.jsxs)(c.Z, {
       step: 1,
       header: m.NW.string(m.t.CX5YfX),

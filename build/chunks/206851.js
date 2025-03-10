@@ -1,7 +1,7 @@
 /** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -26,14 +26,14 @@ let o = ["#1e349e", "#4d61de", "#7887e2", "#92a6e4"],
     tint: 1
   }],
   m = [.35],
-  g = [{
+  p = [{
     base: 4,
     tint: 1
   }];
 
-function p(e) {
+function g(e) {
   var t, n, {
-      width: p,
+      width: g,
       height: h,
       primaryTintColor: f,
       secondaryTintColor: b
@@ -64,7 +64,7 @@ function p(e) {
     secondaryBaseColors: c,
     secondaryTintColor: b,
     secondaryTintLuminances: m,
-    secondaryLuminanceWeights: g
+    secondaryLuminanceWeights: p
   }), {
     styleContent: v,
     containerId: _
@@ -88,7 +88,7 @@ function p(e) {
     return e
   }({}, x), n = n = {
     "aria-label": a.NW.string(a.t.nH6S2d),
-    width: p,
+    width: g,
     height: h,
     viewBox: "0 0 ".concat(s.Km, " ").concat(s.md),
     children: [(0, r.jsx)("defs", {

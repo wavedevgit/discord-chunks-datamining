@@ -1,7 +1,7 @@
 /** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
@@ -15,14 +15,14 @@ var i = n(442837),
   u = n(388032),
   m = n(15470);
 
-function g(e) {
+function p(e) {
   var t;
   let {
     action: n,
-    triggerType: g,
-    toggled: p,
+    triggerType: p,
+    toggled: g,
     onToggleAction: h
-  } = e, f = e => () => h(e), b = (0, d.c)(n.type, n, g), x = null === (t = n.metadata) || void 0 === t ? void 0 : t.channelId, j = (0, i.e7)([c.default, o.Z, l.Z], () => {
+  } = e, f = e => () => h(e), b = (0, d.c)(n.type, n, p), x = null === (t = n.metadata) || void 0 === t ? void 0 : t.channelId, j = (0, i.e7)([c.default, o.Z, l.Z], () => {
     let e = l.Z.getChannel(x);
     return null == e ? null : (0, a.F6)(e, c.default, o.Z)
   }, [x]);
@@ -50,7 +50,7 @@ function g(e) {
         color: "interactive-normal",
         variant: "text-xs/medium",
         children: v
-      }), p && (0, r.jsxs)(s.Text, {
+      }), g && (0, r.jsxs)(s.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
         children: [null != j && u.NW.format(u.t["8Sr/am"], {
@@ -66,7 +66,7 @@ function g(e) {
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(s.XZJ, {
         type: s.XZJ.Types.INVERTED,
-        value: p,
+        value: g,
         onChange: f(!1),
         className: m.__invalid_actionCheckbox
       })

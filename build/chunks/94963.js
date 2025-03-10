@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(866442),
   u = n(442837),
   m = n(481060),
-  g = n(650774),
-  p = n(430824),
+  p = n(650774),
+  g = n(430824),
   h = n(900681),
   f = n(175557),
   b = n(688298),
@@ -128,7 +128,7 @@ let I = [{
       brandSecondaryColor: P,
       badgePrimaryColor: w,
       badgeSecondaryColor: R
-    } = s, Z = (0, u.e7)([p.Z], () => p.Z.getGuild(l)), D = null !== (t = (0, u.e7)([g.Z], () => g.Z.getMemberCount(l))) && void 0 !== t ? t : 0, A = i.useMemo(() => ({
+    } = s, Z = (0, u.e7)([g.Z], () => g.Z.getGuild(l)), D = null !== (t = (0, u.e7)([p.Z], () => p.Z.getMemberCount(l))) && void 0 !== t ? t : 0, A = i.useMemo(() => ({
       primary: null != T ? T : N.OH,
       secondary: null != P ? P : N.K_
     }), [T, P]), k = i.useMemo(() => {

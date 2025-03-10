@@ -19,19 +19,19 @@ var r = n(200651),
   m = n(952567);
 
 function g(e) {
-  var t;
+  var t, n, g;
   let {
-    guild: n
-  } = e, g = (0, u.Ek)(n, "GuildPowerupsMarketingPowerupCards");
+    guild: E
+  } = e, v = (0, u.Ek)(E, "GuildPowerupsMarketingPowerupCards");
   i.useEffect(() => {
-    g && ((0, l.Sn)(n.id), (0, l.Fm)(n.id))
-  }, [g, n.id]);
-  let E = (0, d.Z)(n.id),
-    v = (0, a.e7)([c.Z], () => {
+    v && ((0, l.Sn)(E.id), (0, l.Fm)(E.id))
+  }, [v, E.id]);
+  let b = (0, d.Z)(E.id),
+    y = (0, a.e7)([c.Z], () => {
       var e;
-      return null === (e = c.Z.getStateForGuild(n.id)) || void 0 === e ? void 0 : e.unlocked
+      return null === (e = c.Z.getStateForGuild(E.id)) || void 0 === e ? void 0 : e.unlocked
     });
-  return g && null != E ? (0, r.jsxs)("div", {
+  return v && null != b && (null !== (g = null === (t = b.get(f.Us.PERK)) || void 0 === t ? void 0 : t.length) && void 0 !== g ? g : 0) !== 0 ? (0, r.jsxs)("div", {
     className: h.container,
     children: [(0, r.jsx)(o.X6, {
       variant: "heading-xxl/extrabold",
@@ -41,7 +41,7 @@ function g(e) {
       children: p.NW.string(_.Z.MYYPa2)
     }), (0, r.jsx)("div", {
       className: h.powerupsContainer,
-      children: null === (t = E.get(f.Us.PERK)) || void 0 === t ? void 0 : t.map((e, t) => (0, r.jsx)(s.Q, {
+      children: null === (n = b.get(f.Us.PERK)) || void 0 === n ? void 0 : n.map((e, t) => (0, r.jsx)(s.Q, {
         animatedCard: !0,
         heading: e.title,
         description: e.description,
@@ -50,7 +50,7 @@ function g(e) {
           quantity: e.cost
         }),
         isNewPerk: !0,
-        isEnabled: null == v ? void 0 : v.has(e.skuId)
+        isEnabled: null == y ? void 0 : y.has(e.skuId)
       }, t))
     })]
   }) : null

@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(484614),
   u = n(314852),
   m = n(65361),
-  g = n(246946),
-  p = n(330010),
+  p = n(246946),
+  g = n(330010),
   h = n(999382),
   f = n(800223),
   b = n(24318),
@@ -27,7 +27,7 @@ function v(e) {
     guildId: t
   } = e, {
     guildProfile: c,
-    fetchGuildProfile: g,
+    fetchGuildProfile: p,
     fetchStatus: v
   } = (0, m.u)(t), _ = v !== u.a.FETCHED, {
     fetchedEmbed: O,
@@ -46,10 +46,10 @@ function v(e) {
     }
   }), I = i.useMemo(() => (0, b.S)(t), [t]), E = i.useMemo(() => (0, b.a)(t), [t]), [S, T] = i.useState(!1), P = !_ && (null == c ? void 0 : c.visibility) !== s.k.PUBLIC && !y;
   i.useEffect(() => {
-    O || (0, p.R)(t)
+    O || (0, g.R)(t)
   }, [O, t]), i.useEffect(() => {
-    g()
-  }, [t, g]);
+    p()
+  }, [t, p]);
   let w = i.useCallback(async e => {
     T(!0), await (0, f.c)(t, e, C), T(!1)
   }, [C, t]);
@@ -127,7 +127,7 @@ function v(e) {
 function _(e) {
   let {
     guildId: t
-  } = e, n = (0, l.e7)([g.Z], () => g.Z.enabled);
+  } = e, n = (0, l.e7)([p.Z], () => p.Z.enabled);
   return (0, r.jsxs)(o.hjN, {
     title: j.NW.string(j.t.qlhNb2),
     children: [(0, r.jsx)(a.xv, {

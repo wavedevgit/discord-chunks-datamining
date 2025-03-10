@@ -1,7 +1,7 @@
 /** Chunk was on 3205 **/
 "use strict";
 n.d(t, {
-  M: () => g
+  M: () => p
 });
 var r = n(200651),
   i = n(192379),
@@ -14,12 +14,12 @@ let o = "".concat(60),
   u = "".concat(1800),
   m = "".concat(3600);
 
-function g(e) {
+function p(e) {
   let {
     canManageGuild: t,
     afkTimeout: n,
-    afkChannelId: g
-  } = e, p = i.useMemo(() => [{
+    afkChannelId: p
+  } = e, g = i.useMemo(() => [{
     value: o,
     label: l.NW.formatToPlainString(l.t.iXLF9f, {
       minutes: 1
@@ -51,8 +51,8 @@ function g(e) {
   }, []);
   return (0, r.jsx)(s.q4e, {
     value: null == n ? null : "".concat(n),
-    options: p,
-    isDisabled: null == g || !t,
+    options: g,
+    isDisabled: null == p || !t,
     onChange: h
   })
 }

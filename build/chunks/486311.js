@@ -24,12 +24,13 @@ function _(e) {
   let {
     guild: t,
     selected: n
-  } = e, o = i.useCallback(() => {
-    (0, p.jd)(t.id), (0, d.uL)(g.Z5c.CHANNEL(t.id, m.oC.GUILD_BOOSTS))
-  }, [t.id]), _ = (0, f.Z)(t), O = (null == _ ? void 0 : _.type) === h.o.UNREAD;
+  } = e, o = (0, f.Z)(t), _ = i.useCallback(() => {
+    null != o && (0, p.jd)(t.id, o), (0, d.uL)(g.Z5c.CHANNEL(t.id, m.oC.GUILD_BOOSTS))
+  }, [t.id, o]), O = (null == o ? void 0 : o.type) === h.o.UNREAD;
   return (0, r.jsx)(u.m, {
     id: "skill-trees-".concat(t.id),
     renderIcon: e => (0, r.jsx)(c.Z, {
+      size: "md",
       className: e
     }),
     text: (0, r.jsx)("span", {
@@ -39,17 +40,20 @@ function _(e) {
       children: v.NW.string(b.Z.yv3DJC)
     }),
     selected: n,
-    onClick: o,
+    onClick: _,
     showUnread: O,
     trailing: (() => {
-      switch (null == _ ? void 0 : _.type) {
+      switch (null == o ? void 0 : o.type) {
         case h.o.UNREAD:
           return (0, r.jsx)(a.mAB, {
-            count: _.count,
+            count: o.count,
             color: s.Z.BACKGROUND_MODIFIER_ACCENT
           });
         case h.o.WARNING:
-          return (0, r.jsx)(a.aNP, {});
+          return (0, r.jsx)(a.P4T, {
+            color: a.TVs.colors.TEXT_WARNING,
+            size: "sm"
+          });
         default:
           return
       }
