@@ -3,28 +3,28 @@ n.d(t, {
   Z: () => R
 }), n(47120);
 var r = n(200651),
-  l = n(192379),
-  a = n(442837),
+  a = n(192379),
+  l = n(442837),
   i = n(481060),
   o = n(100527),
   s = n(906732),
   c = n(807582),
   u = n(813197),
   d = n(222062),
-  f = n(530329),
-  p = n(430824),
+  p = n(530329),
+  f = n(430824),
   m = n(914010),
   g = n(594174),
   j = n(451478),
-  x = n(626135),
-  b = n(74538),
+  b = n(626135),
+  x = n(74538),
   h = n(621961),
   y = n(884858),
   O = n(981631),
   v = n(486324),
-  C = n(869783),
+  N = n(869783),
   A = n(388032),
-  N = n(768076);
+  C = n(768076);
 
 function E(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -44,7 +44,7 @@ function E(e) {
   }
   return e
 }
-let S = [{
+let P = [{
   gif: n(495682),
   png: n(458060)
 }, {
@@ -58,16 +58,16 @@ let S = [{
   png: n(690695)
 }];
 
-function P(e) {
+function S(e) {
   let {
     shouldAnimate: t = !0
-  } = e, [n, a] = l.useState(!1);
+  } = e, [n, l] = a.useState(!1);
   return (0, r.jsx)("div", {
-    className: N.gifGrid,
-    onMouseMove: () => a(!0),
-    onMouseLeave: () => a(!1),
-    children: S.map(e => (0, r.jsx)("div", {
-      className: N.gif,
+    className: C.gifGrid,
+    onMouseMove: () => l(!0),
+    onMouseLeave: () => l(!1),
+    children: P.map(e => (0, r.jsx)("div", {
+      className: C.gif,
       style: {
         backgroundImage: "url(".concat(t || n ? e.gif : e.png, ")")
       }
@@ -81,7 +81,7 @@ function w(e) {
     guild: n
   } = e;
   return null == t || null == n ? null : (0, r.jsx)("div", {
-    className: N.pillWrapper,
+    className: C.pillWrapper,
     children: (0, r.jsx)(c.Z, {
       guildFeature: t,
       guild: n,
@@ -96,21 +96,21 @@ function T(e) {
     guild: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: N.optionBoxText,
+    className: C.optionBoxText,
     children: [(0, r.jsx)(w, {
       guild: n,
       guildFeature: (0, h.C6)(t, {
         isGIF: !0
       })
     }), (0, r.jsxs)("div", {
-      className: N.optionBoxDescription,
+      className: C.optionBoxDescription,
       children: [(0, h.Kq)(t) && (0, r.jsx)(i.DY3, {
-        className: N.nitroWheelFlairContainer,
+        className: C.nitroWheelFlairContainer,
         text: A.NW.string(A.t["5AFxuL"]),
         children: (0, r.jsx)(i.SrA, {
           size: "md",
           color: "currentColor",
-          className: N.nitroWheelFlair
+          className: C.nitroWheelFlair
         })
       }), A.NW.string(A.t["xsC+//"])]
     })]
@@ -121,24 +121,24 @@ function F(e) {
   let {
     title: t,
     uploadType: n,
-    guild: l
+    guild: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: N.optionBoxText,
+    className: C.optionBoxText,
     children: [(0, r.jsx)(w, {
       guildFeature: (0, h.C6)(n, {
         isGIF: !1
       }),
-      guild: l
+      guild: a
     }), (0, r.jsxs)("div", {
-      className: N.optionBoxDescription,
+      className: C.optionBoxDescription,
       children: [n === v.pC.BANNER && (0, r.jsx)(i.DY3, {
-        className: N.nitroWheelFlairContainer,
+        className: C.nitroWheelFlairContainer,
         text: A.NW.string(A.t["5AFxuL"]),
         children: (0, r.jsx)(i.SrA, {
           size: "md",
           color: "currentColor",
-          className: N.nitroWheelFlair
+          className: C.nitroWheelFlair
         })
       }), t]
     })]
@@ -150,19 +150,19 @@ function R(e) {
     transitionState: t,
     onClose: c,
     onComplete: h,
-    uploadType: S,
+    uploadType: P,
     maxFileSizeBytes: w,
     showUpsellHeader: R,
     filters: _,
     analyticsLocation: Z,
     analyticsLocations: L = [],
-    modalSubTitle: I,
-    imageSpecifications: k,
-    modalTitle: U = A.NW.string(A.t.DToW4e),
-    uploadOptionTitle: D = A.NW.string(A.t["MsUY/f"])
-  } = e, M = (0, a.e7)([j.Z], () => j.Z.isFocused()), W = (0, a.e7)([g.default], () => g.default.getCurrentUser()), B = (0, a.e7)([m.Z], () => m.Z.getGuildId()), H = (0, a.e7)([p.Z], () => p.Z.getGuild(B)), {
+    modalSubTitle: D,
+    imageSpecifications: I,
+    modalTitle: k = A.NW.string(A.t.DToW4e),
+    uploadOptionTitle: U = A.NW.string(A.t["MsUY/f"])
+  } = e, W = (0, l.e7)([j.Z], () => j.Z.isFocused()), M = (0, l.e7)([g.default], () => g.default.getCurrentUser()), B = (0, l.e7)([m.Z], () => m.Z.getGuildId()), H = (0, l.e7)([f.Z], () => f.Z.getGuild(B)), {
     reducedMotion: z
-  } = l.useContext(i.Sfi), G = (0, i.vRw)(), V = !b.ZP.canUseAnimatedAvatar(W) && S === v.pC.AVATAR, {
+  } = a.useContext(i.Sfi), G = (0, i.vRw)(), V = !x.ZP.canUseAnimatedAvatar(M) && P === v.pC.AVATAR, {
     analyticsLocations: X
   } = (0, s.ZP)(L, o.Z.SELECT_IMAGE_MODAL);
 
@@ -178,72 +178,72 @@ function R(e) {
       isFromTenor: r
     })
   }
-  l.useEffect(() => {
-    V && x.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
+  a.useEffect(() => {
+    V && b.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
       type: O.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
       location_stack: X
-    }), x.default.track(O.rMx.OPEN_MODAL, {
+    }), b.default.track(O.rMx.OPEN_MODAL, {
       type: O.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
       location: Z
     })
   }, [V, Z, X]);
-  let Y = S === v.pC.AVATAR || S === v.pC.BANNER,
+  let Y = P === v.pC.AVATAR || P === v.pC.BANNER,
     J = (0, d.M)(!Y);
   return (0, r.jsxs)(i.Y0X, {
     transitionState: t,
     size: i.CgR.SMALL,
     children: [(0, r.jsxs)(i.xBx, {
-      className: N.modalHeader,
+      className: C.modalHeader,
       separator: !1,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)(i.vwX, {
           tag: i.RB0.H1,
-          className: N.modalTitle,
-          children: U
-        }), null != I ? (0, r.jsx)(i.Text, {
+          className: C.modalTitle,
+          children: k
+        }), null != D ? (0, r.jsx)(i.Text, {
           variant: "text-md/normal",
-          children: I
+          children: D
         }) : null]
       }), (0, r.jsx)(i.olH, {
         onClick: c,
-        className: N.modalCloseButton
+        className: C.modalCloseButton
       })]
     }), (0, r.jsxs)(i.hzk, {
-      className: N.modalContent,
+      className: C.modalContent,
       children: [(0, r.jsxs)("div", {
-        className: N.imagePickerContainer,
+        className: C.imagePickerContainer,
         children: [(0, r.jsxs)(i.P3F, {
-          className: N.optionBox,
+          className: C.optionBox,
           children: [(0, r.jsx)("div", {
-            className: N.contentCircle,
+            className: C.contentCircle,
             children: (0, r.jsx)(i.FmF, {
               size: "md",
               color: "currentColor",
-              className: N.uploadIcon
+              className: C.uploadIcon
             })
           }), (0, r.jsx)(i.Text, {
             variant: "text-sm/semibold",
             color: "interactive-normal",
             children: (0, r.jsx)(F, {
-              title: D,
-              uploadType: S,
+              title: U,
+              uploadType: P,
               guild: H
             })
           }), (0, r.jsx)(u.ZP, {
             onChange: function(e, t) {
-              if (t.type === C.m.MP4) return q({
+              if (t.type === N.m.MP4) return q({
                 imageUri: e,
                 file: t
               });
               (0, i.ZDy)(async () => {
                 let {
-                  default: l
+                  default: a
                 } = await n.e("48017").then(n.bind(n, 850085));
-                return n => (0, r.jsx)(l, E({
+                return n => (0, r.jsx)(a, E({
                   imageUri: e,
                   file: t,
                   onCrop: q,
-                  uploadType: S,
+                  uploadType: P,
                   showUpsellHeader: R,
                   allowSkip: !0,
                   analyticsPage: null == Z ? void 0 : Z.page
@@ -259,14 +259,14 @@ function R(e) {
             filters: _
           })]
         }), (0, r.jsxs)(i.P3F, {
-          className: N.optionBox,
+          className: C.optionBox,
           onClick: function() {
             (0, i.ZDy)(async () => {
               let {
                 default: e
               } = await n.e("72891").then(n.bind(n, 195297));
               return t => (0, r.jsx)(e, E({
-                uploadType: S,
+                uploadType: P,
                 onComplete: e => {
                   let {
                     imageUri: t,
@@ -286,38 +286,38 @@ function R(e) {
             })
           },
           children: [(0, r.jsxs)("div", {
-            className: N.contentCircle,
-            children: [(0, r.jsx)(P, {
-              shouldAnimate: M && !z.enabled
+            className: C.contentCircle,
+            children: [(0, r.jsx)(S, {
+              shouldAnimate: W && !z.enabled
             }), (0, r.jsx)("div", {
-              className: N.gifIconContainer,
+              className: C.gifIconContainer,
               children: (0, r.jsx)(i.OUq, {
                 size: "custom",
                 width: 29,
                 height: 29,
                 color: "currentColor",
-                className: N.gifIcon
+                className: C.gifIcon
               })
             })]
           }), (0, r.jsx)(i.Text, {
             variant: "text-sm/semibold",
             color: "interactive-normal",
             children: (0, r.jsx)(T, {
-              uploadType: S,
+              uploadType: P,
               guild: H
             })
           })]
         })]
-      }), null != k ? (0, r.jsx)(i.Text, {
-        className: N.imageSpecifications,
+      }), null != I ? (0, r.jsx)(i.Text, {
+        className: C.imageSpecifications,
         variant: "text-sm/normal",
-        children: k
-      }) : null, R && J && (0, r.jsx)(f.Z, {
-        uploadType: S,
+        children: I
+      }) : null, R && J && (0, r.jsx)(p.Z, {
+        uploadType: P,
         showUpsell: !0,
         position: "inline",
         showShadow: !1,
-        className: N.nitroUpsell
+        className: C.nitroUpsell
       })]
     })]
   })

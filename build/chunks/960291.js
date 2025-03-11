@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651);
 n(192379);
-var l = n(120356),
-  a = n.n(l),
+var a = n(120356),
+  l = n.n(a),
   i = n(53691),
   o = n(981631),
   s = n(388032),
@@ -16,18 +16,18 @@ function u(e) {
     className: t
   } = e, n = function(e, t) {
     if (null == e) return {};
-    var n, r, l = function(e, t) {
+    var n, r, a = function(e, t) {
       if (null == e) return {};
-      var n, r, l = {},
-        a = Object.keys(e);
-      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-      return l
+      var n, r, a = {},
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
+      return a
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
     }
-    return l
+    return a
   }(e, ["className"]);
   return (0, r.jsx)(i.p, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -53,6 +53,6 @@ function u(e) {
       section: o.jXE.USER_PROFILE,
       object: o.qAy.RECENT_AVATARS_UPSELL
     },
-    className: a()(c.container, t)
+    className: l()(c.container, t)
   }, n))
 }
