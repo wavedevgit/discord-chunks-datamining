@@ -31,8 +31,8 @@ function v(e) {
     channel: v
   }), [x, I] = r.useState(() => (0, d.H2)()), {
     textValue: S,
-    richValue: N
-  } = x, [C, Z] = r.useState(!1), w = r.useCallback(() => Z(!0), []), P = r.useCallback(() => Z(!1), []);
+    richValue: C
+  } = x, [N, Z] = r.useState(!1), w = r.useCallback(() => Z(!0), []), P = r.useCallback(() => Z(!1), []);
   (0, s.ZP)(() => {
     (0, a.In)(v.id, !0, !0, n, {
       section: g.jXE.OVERLAY
@@ -60,12 +60,12 @@ function v(e) {
       accessibilityLabel: j,
       channel: v,
       textValue: S,
-      richValue: N,
+      richValue: C,
       type: c.Ie.OVERLAY_INLINE_REPLY,
       allowNewLines: !1,
       onBlur: P,
       onFocus: w,
-      focused: C,
+      focused: N,
       onSubmit: D,
       onKeyDown: T,
       autoCompletePosition: "bottom",

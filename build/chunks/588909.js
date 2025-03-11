@@ -45,7 +45,7 @@ function S(e) {
   return e
 }
 
-function N(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,7 +58,7 @@ function N(e, t) {
   }), e
 }
 
-function C(e) {
+function N(e) {
   let {
     game: t
   } = e, n = (0, u.q)(t.id);
@@ -91,7 +91,7 @@ function Z(e, t) {
           let {
             default: e
           } = await Promise.all([n.e("46746"), n.e("28965")]).then(n.bind(n, 60594));
-          return t => (0, i.jsx)(e, N(S({}, t), {
+          return t => (0, i.jsx)(e, C(S({}, t), {
             selectSource: !1,
             sourcePID: (0, h.getPID)(),
             guildId: r.type === v.nc.GO_LIVE_VOICE ? r.voiceGuild.id : void 0,
@@ -123,14 +123,14 @@ function Z(e, t) {
     _ = Z ? w : j.NW.string(j.t["prl+ra"]),
     T = null != e && Z ? e.name : _,
     D = Z ? P : j.NW.string(j.t.R3CpPT),
-    A = null != e ? (0, i.jsx)(C, {
+    A = null != e ? (0, i.jsx)(N, {
       game: e
     }) : (0, i.jsx)("img", {
       src: n(328756),
       className: x.icon,
       alt: ""
     });
-  return N(S({
+  return C(S({
     icon: A,
     title: T,
     body: D,

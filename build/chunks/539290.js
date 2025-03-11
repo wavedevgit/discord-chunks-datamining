@@ -27,8 +27,8 @@ function f(e) {
     notice: f,
     ctaLabel: b,
     ctaLoading: g,
-    ctaDisabled: O,
-    ctaClassName: m,
+    ctaDisabled: m,
+    ctaClassName: O,
     onClick: h
   } = e, x = (0, a.ZP)();
   return (0, n.jsx)(u.Z, {
@@ -45,11 +45,11 @@ function f(e) {
       }), null != b && null != h && (0, n.jsx)("div", {
         className: d.ctaButtonContainer,
         children: (0, n.jsx)(l.zxk, {
-          className: i()(d.ctaButton, (0, o.wj)(x) ? void 0 : d.ctaBlackButton, m),
+          className: i()(d.ctaButton, (0, o.wj)(x) ? void 0 : d.ctaBlackButton, O),
           color: (0, o.wj)(x) ? l.zxk.Colors.WHITE : l.zxk.Colors.CUSTOM,
           size: l.PhG.MEDIUM,
           onClick: h,
-          disabled: O,
+          disabled: m,
           submitting: g,
           children: (0, n.jsx)(l.Text, {
             className: d.ctaButtonText,

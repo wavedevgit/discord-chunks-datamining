@@ -14,8 +14,8 @@ var r, i = n(200651),
   p = n(481060),
   g = n(893776),
   f = n(881052),
-  _ = n(899370),
-  m = n(224841),
+  m = n(899370),
+  _ = n(224841),
   b = n(13430),
   x = n(213609),
   N = n(882037),
@@ -191,7 +191,7 @@ class eu extends(r = o.PureComponent) {
       onRegister: c,
       usernameSuggestion: u,
       isMobileWebInviteRegistration: d
-    } = this.props, h = null != a ? a.code : null, p = null != s ? s.skuId : null, g = N.MD.getState(), _ = (0, K.Ew)(u) ? null : t === u, m = $.a ? await (0, y.K)(t) : t, b = $.a ? await (0, y.K)(n) : n;
+    } = this.props, h = null != a ? a.code : null, p = null != s ? s.skuId : null, g = N.MD.getState(), m = (0, K.Ew)(u) ? null : t === u, _ = $.a ? await (0, y.K)(t) : t, b = $.a ? await (0, y.K)(n) : n;
     V.S.dispatch(Q.CkL.WAVE_EMPHASIZE), this.setState({
       registering: !0,
       apiErrors: {}
@@ -199,12 +199,12 @@ class eu extends(r = o.PureComponent) {
     try {
       d || null == a ? await (0, I.R$)({
         email: e,
-        username: m,
+        username: _,
         globalName: b,
         consent: i,
         password: r,
         invite: h,
-        usedUsernameSuggestion: _,
+        usedUsernameSuggestion: m,
         guildTemplateCode: null == l ? void 0 : l.code,
         giftCodeSKUId: p,
         birthday: o,
@@ -213,7 +213,7 @@ class eu extends(r = o.PureComponent) {
         consent: i,
         invite: h,
         giftCodeSKUId: p,
-        usedUsernameSuggestion: _,
+        usedUsernameSuggestion: m,
         globalName: b
       }), null == c || c()
     } catch (t) {
@@ -442,8 +442,8 @@ class eu extends(r = o.PureComponent) {
       emailClientError: h,
       usernameClientError: g,
       passwordClientError: f,
-      dateOfBirthClientError: _,
-      registering: m,
+      dateOfBirthClientError: m,
+      registering: _,
       apiErrors: {
         email: x,
         username: N,
@@ -469,7 +469,7 @@ class eu extends(r = o.PureComponent) {
       }, e), {
         children: (0, i.jsx)(E.zx, {
           type: "submit",
-          submitting: m,
+          submitting: _,
           disabled: !this.hasConsent() || this.state.isRateLimited,
           children: en.NW.string(en.t["3PatS0"])
         })
@@ -496,6 +496,7 @@ class eu extends(r = o.PureComponent) {
         }),
         error: null != h ? h : ec(x),
         type: "email",
+        autoComplete: "username",
         setRef: e => {
           this.emailRef = e
         },
@@ -510,6 +511,7 @@ class eu extends(r = o.PureComponent) {
         }),
         error: ec(v),
         maxLength: et.hy,
+        autoComplete: "off",
         setRef: e => {
           this.globalNameRef = e
         },
@@ -546,6 +548,7 @@ class eu extends(r = o.PureComponent) {
             })
           },
           error: null != g ? g : ec(N),
+          autoComplete: "off",
           setRef: e => {
             this.usernameRef = e
           },
@@ -561,6 +564,7 @@ class eu extends(r = o.PureComponent) {
         }),
         error: null != f ? f : ec(I),
         type: "password",
+        autoComplete: "new-password",
         setRef: e => {
           this.passwordRef = e
         },
@@ -571,7 +575,7 @@ class eu extends(r = o.PureComponent) {
         name: "date_of_birth",
         onChange: this.handleBirthdayChange,
         ref: this.dateOfBirthRef,
-        error: null != _ ? _ : ec(C),
+        error: null != m ? m : ec(C),
         value: u,
         required: !0
       }), (0, i.jsx)(O.Z, {}), D, R, Z, A, $.a ? null : (0, i.jsx)(E.zx, {
@@ -621,7 +625,7 @@ class eu extends(r = o.PureComponent) {
       isUnderage: e,
       isMobileWebInviteRegistration: t
     } = this.props;
-    if (e || this.hasError("date_of_birth")) return (0, i.jsx)(m.Z, {});
+    if (e || this.hasError("date_of_birth")) return (0, i.jsx)(_.Z, {});
     let {
       invite: n,
       giftCode: r,
@@ -741,10 +745,10 @@ class eu extends(r = o.PureComponent) {
 }
 
 function ed(e) {
-  let t = (0, d.cj)([U.Z, G.default, _.Z, R.Z, A.Z], () => ({
+  let t = (0, d.cj)([U.Z, G.default, m.Z, R.Z, A.Z], () => ({
       consentRequired: U.Z.getAuthenticationConsentRequired(),
       authenticated: G.default.isAuthenticated(),
-      isUnderage: _.Z.isUnderageAnonymous(),
+      isUnderage: m.Z.isUnderageAnonymous(),
       country: R.Z.getCountryCode(),
       hasLoggedInAccounts: A.Z.getHasLoggedInAccounts()
     })),

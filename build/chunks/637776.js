@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => _
+  Z: () => m
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -16,10 +16,10 @@ var r = n(200651),
   g = n(388032),
   f = n(887605);
 
-function _(e) {
+function m(e) {
   let {
     location: t
-  } = e, [_, m] = i.useState(!1), {
+  } = e, [m, _] = i.useState(!1), {
     verifySuccess: b,
     verifyErrors: x,
     redirectGuildId: N
@@ -29,9 +29,9 @@ function _(e) {
     a.Z.verify(e), (0, u.e)("verify_hub_email")
   }, [t]);
   let v = () => {
-    (0, h.Z)(N), m(!0)
+    (0, h.Z)(N), _(!0)
   };
-  return _ ? (0, r.jsxs)(s.ZP, {
+  return m ? (0, r.jsxs)(s.ZP, {
     children: [(0, r.jsx)(s.Dx, {
       className: f.title,
       children: g.NW.string(g.t.csrAMD)

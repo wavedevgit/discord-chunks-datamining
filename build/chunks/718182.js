@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => m
+  Z: () => _
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -16,15 +16,15 @@ var r = n(200651),
   g = n(388032),
   f = n(802138);
 
-function _(e) {
+function m(e) {
   return n.g.location.assign(e)
 }
 
-function m(e) {
+function _(e) {
   let {
     location: t,
-    transitionTo: o = _
-  } = e, [l, m] = i.useState("submitting");
+    transitionTo: o = m
+  } = e, [l, _] = i.useState("submitting");
 
   function b() {
     return "Android" === a().os.family || "iOS" === a().os.family ? null : (0, r.jsx)(d.zx, {
@@ -36,13 +36,13 @@ function m(e) {
     (0, h.e)("authorize_ip");
     let e = (0, u.Z)(t);
     if (null == e) {
-      m("failed");
+      _("failed");
       return
     }(async () => {
       try {
-        await s.Z.authorizeIPAddress(e), m("succeeded")
+        await s.Z.authorizeIPAddress(e), _("succeeded")
       } catch (e) {
-        m("failed")
+        _("failed")
       }
     })()
   }), "failed" === l) ? (0, r.jsxs)(d.ZP, {

@@ -1,7 +1,7 @@
 /** Chunk was on 40580 **/
 "use strict";
 r.d(t, {
-  $H: () => m,
+  $H: () => O,
   GN: () => h
 });
 var n = r(200651),
@@ -18,7 +18,7 @@ var n = r(200651),
   b = r(388032),
   g = r(689589);
 
-function O(e) {
+function m(e) {
   let {
     isTabSelected: t,
     expiresAt: r,
@@ -78,7 +78,7 @@ function O(e) {
   })
 }
 
-function m(e) {
+function O(e) {
   var t, r;
   let {
     isTabSelected: s,
@@ -119,7 +119,7 @@ function x(e) {
     className: i,
     ackedClassName: a
   } = e;
-  return null != s ? (0, n.jsx)(O, {
+  return null != s ? (0, n.jsx)(m, {
     className: a,
     expiresAt: s,
     isTabSelected: t,

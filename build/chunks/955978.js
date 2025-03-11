@@ -56,8 +56,8 @@ function O(e, t, n) {
       })]
     }),
     {
-      trackView: N,
-      trackClick: C
+      trackView: C,
+      trackClick: N
     } = (0, h.R)(f.n0.NowPlayingNotification, {
       notif_type: f.n0.NowPlayingNotification,
       notif_user_id: v.id,
@@ -72,10 +72,10 @@ function O(e, t, n) {
     maxBodyLines: 1,
     disableClickableRegions: !0,
     onNotificationShow: () => {
-      N()
+      C()
     },
     onDismissClick: () => {
-      C("dismiss")
+      N("dismiss")
     }
   }
 }

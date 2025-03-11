@@ -31,8 +31,8 @@ var i = n(200651),
   x = n(933557),
   I = n(471445),
   S = n(44315),
-  N = n(74299),
-  C = n(803647),
+  C = n(74299),
+  N = n(803647),
   Z = n(565138),
   w = n(917405),
   P = n(763296),
@@ -98,7 +98,7 @@ function ei(e) {
     iconColor: l,
     tooltip: o,
     defaultColor: a = "primaryDark",
-    highlightedColor: s = "white",
+    highlightedColor: s = "primaryDark",
     popoutOpen: u,
     onClick: c,
     popoutDisabled: d,
@@ -270,6 +270,7 @@ function el(e) {
         iconComponent: f,
         tooltip: (0, O.Z)(l, o, !1),
         isToggled: a,
+        highlightedColor: a ? "red" : void 0,
         onClick: m,
         onContextMenu: g(n),
         onMouseEnter: d,
@@ -316,7 +317,7 @@ function eo(e) {
   }) : void 0;
   r.useEffect(() => () => b(), [a, b]);
   let S = en(l),
-    N = null == n || !d;
+    C = null == n || !d;
   return (0, i.jsx)(h.yRy, {
     renderPopout: e => {
       let {
@@ -341,14 +342,14 @@ function eo(e) {
         tooltip: I,
         onClick: v,
         isToggled: a,
-        highlightedColor: a ? "green" : "white",
-        defaultColor: a ? "green" : "primaryDark",
+        highlightedColor: a ? "green" : void 0,
+        defaultColor: a ? "green" : void 0,
         onPopoutClick: O(n),
         popoutOpen: r,
         onContextMenu: O(n),
         onMouseEnter: j,
         onMouseLeave: x,
-        disabled: N
+        disabled: C
       })
     }
   })
@@ -361,7 +362,7 @@ function ea(e) {
     } = e,
     a = (0, o.e7)([H.default], () => H.default.getCurrentUser()),
     s = (0, D.Z)(n),
-    u = (0, o.cj)([G.Z], () => (0, N.Z)(G.Z)),
+    u = (0, o.cj)([G.Z], () => (0, C.Z)(G.Z)),
     d = (0, o.e7)([V.Z], () => V.Z.getCurrentUserActiveStream()),
     p = (0, J.g)((0, K.getPID)()),
     f = () => {
@@ -384,7 +385,7 @@ function ea(e) {
         type: Q.Qu.GO_LIVE,
         value: Q.bk.DISABLED,
         userId: z.default.getId()
-      }), (0, C.Z)(d, !1);
+      }), (0, N.Z)(d, !1);
       f()
     },
     O = e => t => {
@@ -439,8 +440,8 @@ function ea(e) {
         onContextMenu: O(r),
         onMouseEnter: y,
         onMouseLeave: E,
-        highlightedColor: m ? "green" : "white",
-        defaultColor: m ? "green" : "primaryDark",
+        highlightedColor: m ? "green" : void 0,
+        defaultColor: m ? "green" : void 0,
         disabled: !u || !s
       })
     }
@@ -509,8 +510,8 @@ function es(e) {
             userId: z.default.getId()
           }), n(e)
         },
-        highlightedColor: b ? "green" : "white",
-        defaultColor: b ? "green" : "primaryDark",
+        highlightedColor: b ? "green" : void 0,
+        defaultColor: b ? "green" : void 0,
         onContextMenu: f,
         onMouseEnter: v,
         onMouseLeave: y,

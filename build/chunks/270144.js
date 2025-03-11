@@ -1,15 +1,14 @@
 /** Chunk was on 66711 **/
 n.d(t, {
-  CR: () => j,
-  E8: () => A,
-  Ev: () => E,
+  CR: () => I,
+  E8: () => x,
+  Ev: () => P,
   LM: () => g,
-  cr: () => N,
-  ec: () => P,
+  cr: () => Z,
+  ec: () => j,
   h6: () => h,
   jd: () => y,
-  qz: () => I,
-  sp: () => S
+  qz: () => S
 }), n(653041), n(47120), n(773603), n(789020);
 var i, l = n(192379),
   r = n(442837),
@@ -64,38 +63,28 @@ function h(e) {
     }), [a, s]);
   return i ? c.filter(e => null != e.endsAt && e.endsAt.getTime() > Math.max(null != o ? o : 0, Date.now() - 2592e6)) : []
 }
-let S = e => {
-    let [t, n] = l.useState(!1), i = l.useMemo(() => e.map(O.bZ), [e]);
-    return l.useEffect(() => {
-      n(!0), Promise.all(i.map(e => (0, f.vY)(e))).catch(() => {}).then(() => {
-        n(!1)
-      })
-    }, [i]), {
-      loading: t
-    }
-  },
-  I = () => {
-    let [e, t] = l.useState(0);
-    return l.useEffect(() => {
-      t(1), Promise.all([(0, o.p0)({
-        withSku: !0,
-        withApplication: !0,
-        entitlementType: m.qc2.APPLICATION_SUBSCRIPTION
-      }), (0, o.p0)({
-        withSku: !0,
-        withApplication: !0,
-        entitlementType: m.qc2.PURCHASE
-      })]).catch(() => {
-        t(3)
-      }).then(() => {
-        t(2)
-      })
-    }, []), {
-      loadState: e
-    }
-  };
+let S = () => {
+  let [e, t] = l.useState(0);
+  return l.useEffect(() => {
+    t(1), Promise.all([(0, o.p0)({
+      withSku: !0,
+      withApplication: !0,
+      entitlementType: m.qc2.APPLICATION_SUBSCRIPTION
+    }), (0, o.p0)({
+      withSku: !0,
+      withApplication: !0,
+      entitlementType: m.qc2.PURCHASE
+    })]).catch(() => {
+      t(3)
+    }).then(() => {
+      t(2)
+    })
+  }, []), {
+    loadState: e
+  }
+};
 
-function j(e, t) {
+function I(e, t) {
   let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
     [i, o] = l.useState([]),
     [u, s] = l.useState(!1);
@@ -108,22 +97,22 @@ function j(e, t) {
     isFetching: u
   }
 }
-let P = e => e.items;
+let j = e => e.items;
 
-function E(e, t) {
-  return x(e, t, P)
+function P(e, t) {
+  return N(e, t, j)
 }
-let Z = e => {
+let E = e => {
   var t, n;
   return null !== (n = null === (t = e.renewalMutations) || void 0 === t ? void 0 : t.items) && void 0 !== n ? n : []
 };
 
-function N(e, t) {
-  return x(e, t, Z)
+function Z(e, t) {
+  return N(e, t, E)
 }
 
-function x(e, t, n) {
-  let [i, o] = (0, r.Wu)([c.ZP, s.Z], () => null == e ? [] : A({
+function N(e, t, n) {
+  let [i, o] = (0, r.Wu)([c.ZP, s.Z], () => null == e ? [] : x({
     groupSku: e,
     SubscriptionStore: c.ZP,
     SubscriptionPlanStore: s.Z,
@@ -138,7 +127,7 @@ function x(e, t, n) {
   }, [i, o])
 }
 
-function A(e) {
+function x(e) {
   var t, n;
   let {
     groupSku: i,

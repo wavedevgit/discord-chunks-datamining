@@ -61,8 +61,8 @@ function y(e) {
     {
       currentFPS: I,
       averageFrameTime: S,
-      timeSinceLastDrop: N,
-      onResetFrameData: C,
+      timeSinceLastDrop: C,
+      onResetFrameData: N,
       droppedFramesRef: Z,
       renderedFrameCount: w,
       bufferFramecountRef: P,
@@ -76,8 +76,8 @@ function y(e) {
     L()
   }));
   let W = r.useCallback(() => {
-      C(), A(), k()
-    }, [C, A, k]),
+      N(), A(), k()
+    }, [N, A, k]),
     [V, z] = r.useState(!0),
     [U, G] = r.useState(!0),
     [F, Y] = r.useState(!0),
@@ -141,7 +141,7 @@ function y(e) {
         children: ["Dropped Frames:", " ", (0, i.jsx)(s.Text, {
           tag: "span",
           variant: "code",
-          color: N < 2 ? "text-danger" : N < 5 ? "text-warning" : "text-primary",
+          color: C < 2 ? "text-danger" : C < 5 ? "text-warning" : "text-primary",
           children: Z.current
         }), (0, i.jsxs)(s.Text, {
           tag: "span",

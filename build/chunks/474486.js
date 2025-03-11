@@ -20,8 +20,8 @@ var n = r(200651),
   f = r(780525),
   b = r(119269),
   g = r(938736),
-  O = r(227140),
-  m = r(171346),
+  m = r(227140),
+  O = r(171346),
   h = r(981631),
   x = r(921944),
   j = r(388032),
@@ -48,7 +48,7 @@ function P(e) {
   return e
 }
 
-function S(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,7 +60,7 @@ function S(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-let _ = "url(#dark-purple-gradient)",
+let S = "url(#dark-purple-gradient)",
   N = () => (0, n.jsxs)("div", {
     className: y.coachtipContent,
     children: [(0, n.jsx)(l.X6q, {
@@ -110,8 +110,8 @@ let _ = "url(#dark-purple-gradient)",
           showAnimations: !1,
           progressCircleVariation: b.Qo.NITRO_LOGO,
           ellipseOpacity: 1,
-          circleColor: _,
-          circleStroke: _,
+          circleColor: S,
+          circleStroke: S,
           progressCircleStrokeSize: 4
         }),
         position: "right",
@@ -155,7 +155,7 @@ let _ = "url(#dark-purple-gradient)",
       tooltipClassName: y.marketingBadgeTooltip,
       allowOverflow: !0,
       tooltipContentClassName: y.tooltipContent,
-      children: e => (0, n.jsx)("div", S(P({}, e), {
+      children: e => (0, n.jsx)("div", _(P({}, e), {
         children: t
       }))
     })
@@ -167,7 +167,7 @@ let _ = "url(#dark-purple-gradient)",
     } = e;
     return s.useEffect(() => {
       t && r()
-    }, [t, r]), (0, n.jsx)(O.Z, {
+    }, [t, r]), (0, n.jsx)(m.Z, {
       copy: j.NW.string(j.t.y2b7CA)
     })
   },
@@ -185,8 +185,8 @@ let _ = "url(#dark-purple-gradient)",
       tooltipClassName: null,
       allowOverflow: !0,
       tooltipContentClassName: null,
-      children: e => (0, n.jsx)("div", S(P({}, e), {
-        children: (0, n.jsx)(m.Z, {
+      children: e => (0, n.jsx)("div", _(P({}, e), {
+        children: (0, n.jsx)(O.Z, {
           copy: j.NW.string(j.t.OS9KPj),
           className: y.greyedOut
         })

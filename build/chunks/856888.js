@@ -1,63 +1,54 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => g
+  Z: () => u
 }), n(230036), n(47120);
 var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  l = n(325997),
-  o = n(78839),
-  c = n(270144),
-  d = n(851718),
-  u = n(238847),
-  m = n(388032),
-  p = n(250076);
+  l = n(78839),
+  o = n(851718),
+  c = n(388032),
+  d = n(250076);
 
-function g(e) {
+function u(e) {
   let {
     onGoBack: t
-  } = e, n = (0, s.Wu)([o.ZP], () => {
+  } = e, n = (0, s.Wu)([l.ZP], () => {
     var e, t;
-    return null !== (t = null === (e = o.ZP.getActiveApplicationSubscriptions()) || void 0 === e ? void 0 : e.slice().sort((e, t) => {
+    return null !== (t = null === (e = l.ZP.getActiveApplicationSubscriptions()) || void 0 === e ? void 0 : e.slice().sort((e, t) => {
       var n, r, i, s;
       return (null !== (i = null === (n = e.createdAt) || void 0 === n ? void 0 : n.getTime()) && void 0 !== i ? i : e.currentPeriodStart.getTime()) - (null !== (s = null === (r = t.createdAt) || void 0 === r ? void 0 : r.getTime()) && void 0 !== s ? s : t.currentPeriodStart.getTime())
     })) && void 0 !== t ? t : []
-  }), {
-    enabled: a
-  } = l.m.useExperiment({
-    location: "UserSettingsApplicationSubscriptions"
-  }), [c, u] = i.useState();
-  return null == c && (c = (0, r.jsx)(h, {
+  }), [a, u] = i.useState();
+  return null == a && (a = (0, r.jsx)(m, {
     onBack: t,
-    title: m.NW.string(m.t["DB/m9f"])
+    title: c.NW.string(c.t["DB/m9f"])
   })), (0, r.jsxs)("div", {
-    children: [c, (0, r.jsx)("div", {
-      className: p.subscriptionsContainer,
-      children: a ? (0, r.jsx)(d.Z, {
+    children: [a, (0, r.jsx)("div", {
+      className: d.subscriptionsContainer,
+      children: (0, r.jsx)(o.Z, {
         subscriptions: n,
         updateHeader: (e, t) => {
-          u((0, r.jsx)(h, {
+          u((0, r.jsx)(m, {
             title: e,
             onBack: () => {
               t(), u(void 0)
             }
           }))
         }
-      }) : (0, r.jsx)(f, {
-        subscriptions: n
       })
     })]
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     onBack: t,
     title: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: p.title,
+    className: d.title,
     children: [(0, r.jsx)(a.zxk, {
       look: a.zxk.Looks.BLANK,
       onClick: t,
@@ -70,17 +61,4 @@ function h(e) {
       children: n
     })]
   })
-}
-
-function f(e) {
-  let {
-    subscriptions: t
-  } = e, {
-    loading: n
-  } = (0, c.sp)(t), {
-    loadState: i
-  } = (0, c.qz)();
-  return n || i !== c.jd.LOADED ? (0, r.jsx)(a.$jN, {}) : t.map(e => (0, r.jsx)(u.Z, {
-    subscription: e
-  }, e.id))
 }

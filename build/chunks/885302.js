@@ -52,7 +52,7 @@ let a = (e, t) => null != t ? t : e ? .5 : .2,
     let f = (0, i.ZP)(),
       b = (0, s.ap)(f),
       g = a(b, u),
-      O = c(b, d);
+      m = c(b, d);
     return (0, n.jsxs)("svg", (t = l({
       style: {
         overflow: "visible"
@@ -114,7 +114,7 @@ let a = (e, t) => null != t ? t : e ? .5 : .2,
           cy: "57.0796",
           rx: "56.3726",
           ry: "56.3726",
-          fill: null != d ? d : O,
+          fill: null != d ? d : m,
           fillOpacity: g
         }), (0, n.jsxs)("g", {
           width: "65",

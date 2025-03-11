@@ -17,8 +17,8 @@ var s = r(120356),
   f = r(52188),
   b = r(346497),
   g = r(924540),
-  O = r(474486),
-  m = r(227140),
+  m = r(474486),
+  O = r(227140),
   h = r(351402),
   x = r(170671),
   j = r(474936),
@@ -32,20 +32,20 @@ function v(e) {
       isSelected: v
     } = e,
     P = (0, d.N)(),
-    S = (0, u.Ng)(),
-    _ = (0, b.Vi)(),
+    _ = (0, u.Ng)(),
+    S = (0, b.Vi)(),
     N = (0, o.e7)([h.Z], () => h.Z.isLocalizedPromoEnabled) && null == P && null == r,
     E = (null == P ? void 0 : P.trial_id) === j.a7,
     w = (0, c.m)({
       location: "UserSettingsPremiumLabel"
     }),
     T = (0, a.wE)(l.z.Q1_2025_MARKETING_MOMENT_OFFER_BADGE);
-  return t = !0 === w ? !0 === T ? (0, n.jsx)(O.Du, {}) : (0, n.jsx)(m.Z, {
+  return t = !0 === w ? !0 === T ? (0, n.jsx)(m.Du, {}) : (0, n.jsx)(O.Z, {
     copy: y.NW.string(y.t.OS9KPj),
     showStars: !1
-  }) : _ ? (0, n.jsx)(p.Z, {}) : null != S ? (0, n.jsx)(g.GN, {
+  }) : S ? (0, n.jsx)(p.Z, {}) : null != _ ? (0, n.jsx)(g.GN, {
     isTabSelected: v,
-    userDiscount: S,
+    userDiscount: _,
     includesAmountOff: !1
   }) : null == P || E ? null != r ? r : N ? (0, n.jsx)(f.k, {
     entryPoint: f.U.SettingsMenu
@@ -57,14 +57,14 @@ function v(e) {
   }), (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)("div", {
       className: i()(C.premiumLabel, {
-        [C.selected]: (v || N) && !_
+        [C.selected]: (v || N) && !S
       }),
       children: [s, t]
     }), (0, n.jsx)("div", {
       className: i()(C.background, {
         [C.auPromo]: N && !v,
         [C.auPromoSelected]: N && v,
-        [C.selectedBackground]: !N && !_ && v
+        [C.selectedBackground]: !N && !S && v
       })
     })]
   })
