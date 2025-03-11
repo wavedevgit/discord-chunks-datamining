@@ -34,12 +34,12 @@ function g(e) {
   }
   return e
 }
-let _ = (0, d.Mg)(c.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
-  m = {
+let f = (0, d.Mg)(c.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
+  _ = {
     START: 0,
     END: 1
   },
-  f = {
+  m = {
     friction: 10,
     tension: 130
   },
@@ -52,18 +52,18 @@ let _ = (0, d.Mg)(c.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
         clearTimeout(this.timeout), window.removeEventListener("resize", this.handleResizeDebounced)
       }
       componentWillAppear(e) {
-        this.state.shouldAnimate ? this.animateTo(m.END, e) : e()
+        this.state.shouldAnimate ? this.animateTo(_.END, e) : e()
       }
       componentWillEnter(e) {
-        this.state.shouldAnimate ? (clearTimeout(this.timeout), this.timeout = setTimeout(() => this.animateTo(m.END, e), 40)) : e()
+        this.state.shouldAnimate ? (clearTimeout(this.timeout), this.timeout = setTimeout(() => this.animateTo(_.END, e), 40)) : e()
       }
       componentWillLeave(e) {
-        this.state.shouldAnimate ? this.animateTo(m.START, e) : e()
+        this.state.shouldAnimate ? this.animateTo(_.START, e) : e()
       }
       animateTo(e, t) {
         l.Z.spring(this.anim, g({
           toValue: e
-        }, f)).start(t)
+        }, m)).start(t)
       }
       getAnimatedStyle(e) {
         return this.state.shouldAnimate ? {
@@ -100,11 +100,11 @@ let _ = (0, d.Mg)(c.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
         })
       }
       constructor(...e) {
-        super(...e), p(this, "timeout", void 0), p(this, "anim", new l.Z.Value(m.START)), p(this, "state", {
+        super(...e), p(this, "timeout", void 0), p(this, "anim", new l.Z.Value(_.START)), p(this, "state", {
           shouldAnimate: !s.tq
         }), p(this, "handleResize", () => {
-          let e = window.innerWidth > _;
-          !this.state.shouldAnimate && e && this.anim.setValue(m.END), this.setState({
+          let e = window.innerWidth > f;
+          !this.state.shouldAnimate && e && this.anim.setValue(_.END), this.setState({
             shouldAnimate: e
           })
         }), p(this, "handleResizeDebounced", a()(this.handleResize, 60))

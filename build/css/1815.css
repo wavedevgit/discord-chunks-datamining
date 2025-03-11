@@ -1,6 +1,6 @@
 /**
   Module ID: 1815
-  Original File Name: 3580ed8ad16d94d0
+  Original File Name: 1dc5dcdda111b6a1
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -1061,13 +1061,13 @@ h1.title_feb59c,h2.title_feb59c {
     background-origin: border-box
 }
 
-.container_b4f99f,.gifContainer_b4f99f {
+.assetContainer_b4f99f,.container_b4f99f {
     display: flex;
     justify-content: center;
     align-items: center
 }
 
-.gifContainer_b4f99f {
+.assetContainer_b4f99f {
     width: 208px;
     height: 74px;
     gap: 10px;
@@ -1077,7 +1077,7 @@ h1.title_feb59c,h2.title_feb59c {
     overflow: hidden
 }
 
-.gif_b4f99f {
+.orbAsset_b4f99f {
     height: 72px;
     mix-blend-mode: lighten
 }
@@ -17146,14 +17146,13 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     background-origin: border-box
 }
 
-.gifContainer__4d8b6 {
-    width: 98px;
+.orbAssetContainer__4d8b6 {
     padding: 22px 0;
     overflow: none
 }
 
-.gif__4d8b6 {
-    height: 98px;
+.orbAsset__4d8b6 {
+    height: 110px;
     mix-blend-mode: lighten
 }
 

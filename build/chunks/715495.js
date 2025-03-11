@@ -64,16 +64,20 @@ function C() {
     let t = m[e];
     null != t && c({
       src: t.url,
-      palette: t.palette
+      palette: t.palette,
+      preview: !0
     }), c(t => null == t ? {
       src: e,
-      palette: g.jD
+      palette: g.jD,
+      preview: !0
     } : j(E({}, t), {
-      src: e
+      src: e,
+      preview: !0
     }))
   }, [m]), P = (0, i.useCallback)(e => {
     c(t => null == t ? null : j(E({}, t), {
-      palette: e
+      palette: e,
+      preview: !0
     }))
   }, []), R = (0, i.useCallback)(e => {
     N(e)

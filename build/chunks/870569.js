@@ -22,16 +22,16 @@ function c(e) {
     innerClassName: f,
     className: h,
     redGlow: _,
-    tooltipClassName: C,
-    onMouseEnter: p,
-    onMouseLeave: g,
-    "aria-label": O,
+    tooltipClassName: p,
+    onMouseEnter: C,
+    onMouseLeave: O,
+    "aria-label": g,
     "aria-checked": T,
     role: I,
     tooltipColor: S,
     tooltipForceOpen: N,
     tooltipContentClassName: A
-  } = e, v = "function" == typeof d ? (0, l.jsx)(d, {
+  } = e, b = "function" == typeof d ? (0, l.jsx)(d, {
     width: 20,
     height: 20,
     size: "custom",
@@ -39,17 +39,17 @@ function c(e) {
     color: "currentColor"
   }) : d;
   return (0, l.jsx)(o.ua7, {
-    tooltipClassName: C,
+    tooltipClassName: p,
     text: t,
-    "aria-label": O,
+    "aria-label": g,
     color: S,
     tooltipContentClassName: A,
     forceOpen: N,
     children: e => {
       var t, d, {
           onClick: E,
-          onMouseEnter: C,
-          onMouseLeave: O
+          onMouseEnter: p,
+          onMouseLeave: g
         } = e,
         S = function(e, t) {
           if (null == e) return {};
@@ -98,10 +98,10 @@ function c(e) {
           null != E && E(), null != c && c(e)
         },
         onMouseEnter: () => {
-          null == C || C(), null == p || p()
+          null == p || p(), null == C || C()
         },
         onMouseLeave: () => {
-          null == O || O(), null == g || g()
+          null == g || g(), null == O || O()
         },
         onContextMenu: r,
         role: I,
@@ -110,8 +110,8 @@ function c(e) {
           width: 20,
           height: 20,
           mask: a.ZP.Masks.PANEL_BUTTON,
-          children: v
-        }) : v, n]
+          children: b
+        }) : b, n]
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(d)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

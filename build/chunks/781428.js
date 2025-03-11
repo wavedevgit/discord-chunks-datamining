@@ -14,9 +14,9 @@ var r, i = n(200651),
   h = n(481060),
   p = n(570140),
   g = n(893776),
-  _ = n(899742),
-  m = n(579806),
-  f = n(743142),
+  f = n(899742),
+  _ = n(579806),
+  m = n(743142),
   b = n(254942),
   x = n(388905),
   N = n(379760),
@@ -106,13 +106,13 @@ class X extends(r = o.PureComponent) {
       invite: r,
       location: i
     } = this.props;
-    e && !t ? (0, _.is)() : t && this.loginOrSSO(t, i, !0), D.default.track(F.rMx.LOGIN_VIEWED, Y({
+    e && !t ? (0, f.is)() : t && this.loginOrSSO(t, i, !0), D.default.track(F.rMx.LOGIN_VIEWED, Y({
       location: null != r ? "Invite Login Page" : "Non-Invite Login Page",
       login_source: this.loginSource,
       authenticated: t
     }, null != n ? (0, I.Z)(n, !1, !1) : {}), {
       flush: !0
-    }), null == m.Z && null != window.PublicKeyCredential && null != PublicKeyCredential.isConditionalMediationAvailable && PublicKeyCredential.isConditionalMediationAvailable().then(e => {
+    }), null == _.Z && null != window.PublicKeyCredential && null != PublicKeyCredential.isConditionalMediationAvailable && PublicKeyCredential.isConditionalMediationAvailable().then(e => {
       e && (0, Z.us)().then(e => {
         let {
           challenge: t,
@@ -165,7 +165,7 @@ class X extends(r = o.PureComponent) {
       if (null != n.channel) return "dm_invite";
       if (null != n.inviter) return "friend_invite"
     }
-    return null != i ? (0, f.L)(i) : null
+    return null != i ? (0, m.L)(i) : null
   }
   get giftCodeSKUId() {
     let {

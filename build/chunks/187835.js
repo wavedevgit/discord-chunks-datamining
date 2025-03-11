@@ -5,13 +5,13 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(603592),
-  l = n(388032);
+  l = n(603592),
+  o = n(388032);
 let a = "DOWNLOAD_APPS";
 
 function s() {
   let e = (0, i.s9z)(e => (0, i.DEQ)(e, a));
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(l.Z, {
     id: "app-download-button",
     onClick: () => {
       (0, i.ZDy)(async () => {
@@ -43,7 +43,7 @@ function s() {
       })
     },
     selected: e,
-    tooltip: l.NW.string(l.t.Z7jwrK),
+    tooltip: o.NW.string(o.t.Z7jwrK),
     icon: i._8t
   })
 }

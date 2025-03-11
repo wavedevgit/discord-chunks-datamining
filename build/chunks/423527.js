@@ -13,9 +13,9 @@ var r, i = n(200651),
   h = n(846519),
   p = n(481060),
   g = n(893776),
-  _ = n(881052),
-  m = n(899370),
-  f = n(224841),
+  f = n(881052),
+  _ = n(899370),
+  m = n(224841),
   b = n(13430),
   x = n(213609),
   N = n(882037),
@@ -191,7 +191,7 @@ class eu extends(r = o.PureComponent) {
       onRegister: c,
       usernameSuggestion: u,
       isMobileWebInviteRegistration: d
-    } = this.props, h = null != a ? a.code : null, p = null != s ? s.skuId : null, g = N.MD.getState(), m = (0, K.Ew)(u) ? null : t === u, f = $.a ? await (0, y.K)(t) : t, b = $.a ? await (0, y.K)(n) : n;
+    } = this.props, h = null != a ? a.code : null, p = null != s ? s.skuId : null, g = N.MD.getState(), _ = (0, K.Ew)(u) ? null : t === u, m = $.a ? await (0, y.K)(t) : t, b = $.a ? await (0, y.K)(n) : n;
     V.S.dispatch(Q.CkL.WAVE_EMPHASIZE), this.setState({
       registering: !0,
       apiErrors: {}
@@ -199,12 +199,12 @@ class eu extends(r = o.PureComponent) {
     try {
       d || null == a ? await (0, I.R$)({
         email: e,
-        username: f,
+        username: m,
         globalName: b,
         consent: i,
         password: r,
         invite: h,
-        usedUsernameSuggestion: m,
+        usedUsernameSuggestion: _,
         guildTemplateCode: null == l ? void 0 : l.code,
         giftCodeSKUId: p,
         birthday: o,
@@ -213,13 +213,13 @@ class eu extends(r = o.PureComponent) {
         consent: i,
         invite: h,
         giftCodeSKUId: p,
-        usedUsernameSuggestion: m,
+        usedUsernameSuggestion: _,
         globalName: b
       }), null == c || c()
     } catch (t) {
       if (this.setState({
           registering: !1
-        }), !(t instanceof _.Hx)) return;
+        }), !(t instanceof f.Hx)) return;
       let e = (0, v.F)(t);
       this.setState({
         apiErrors: e
@@ -441,9 +441,9 @@ class eu extends(r = o.PureComponent) {
       globalNameFocused: d,
       emailClientError: h,
       usernameClientError: g,
-      passwordClientError: _,
-      dateOfBirthClientError: m,
-      registering: f,
+      passwordClientError: f,
+      dateOfBirthClientError: _,
+      registering: m,
       apiErrors: {
         email: x,
         username: N,
@@ -469,7 +469,7 @@ class eu extends(r = o.PureComponent) {
       }, e), {
         children: (0, i.jsx)(E.zx, {
           type: "submit",
-          submitting: f,
+          submitting: m,
           disabled: !this.hasConsent() || this.state.isRateLimited,
           children: en.NW.string(en.t["3PatS0"])
         })
@@ -559,7 +559,7 @@ class eu extends(r = o.PureComponent) {
           password: e,
           passwordClientError: 0 === e.length ? en.NW.string(en.t.EkokLy) : null
         }),
-        error: null != _ ? _ : ec(I),
+        error: null != f ? f : ec(I),
         type: "password",
         setRef: e => {
           this.passwordRef = e
@@ -571,7 +571,7 @@ class eu extends(r = o.PureComponent) {
         name: "date_of_birth",
         onChange: this.handleBirthdayChange,
         ref: this.dateOfBirthRef,
-        error: null != m ? m : ec(C),
+        error: null != _ ? _ : ec(C),
         value: u,
         required: !0
       }), (0, i.jsx)(O.Z, {}), D, R, Z, A, $.a ? null : (0, i.jsx)(E.zx, {
@@ -621,7 +621,7 @@ class eu extends(r = o.PureComponent) {
       isUnderage: e,
       isMobileWebInviteRegistration: t
     } = this.props;
-    if (e || this.hasError("date_of_birth")) return (0, i.jsx)(f.Z, {});
+    if (e || this.hasError("date_of_birth")) return (0, i.jsx)(m.Z, {});
     let {
       invite: n,
       giftCode: r,
@@ -741,10 +741,10 @@ class eu extends(r = o.PureComponent) {
 }
 
 function ed(e) {
-  let t = (0, d.cj)([U.Z, G.default, m.Z, R.Z, A.Z], () => ({
+  let t = (0, d.cj)([U.Z, G.default, _.Z, R.Z, A.Z], () => ({
       consentRequired: U.Z.getAuthenticationConsentRequired(),
       authenticated: G.default.isAuthenticated(),
-      isUnderage: m.Z.isUnderageAnonymous(),
+      isUnderage: _.Z.isUnderageAnonymous(),
       country: R.Z.getCountryCode(),
       hasLoggedInAccounts: A.Z.getHasLoggedInAccounts()
     })),

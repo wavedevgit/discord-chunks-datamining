@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  o = n(239091),
-  l = n(246364),
+  l = n(239091),
+  o = n(246364),
   a = n(937111),
   s = n(914010),
   c = n(451478),
@@ -15,12 +15,12 @@ var i = n(442837),
   p = n(981631);
 
 function h(e, t) {
-  (0, o.jW)(e, async () => {
+  (0, l.jW)(e, async () => {
     let {
       default: e
     } = await n.e("6368").then(n.bind(n, 987999));
     return n => {
-      var i, o;
+      var i, l;
       return (0, r.jsx)(e, (i = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -38,17 +38,17 @@ function h(e, t) {
           })
         }
         return e
-      }({}, n), o = o = {
+      }({}, n), l = l = {
         guild: t
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(o)).forEach(function(e) {
-        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
+      })(Object(l)).forEach(function(e) {
+        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
       }), i))
     }
   })
@@ -58,19 +58,19 @@ function f(e) {
   let {
     guildNode: t,
     height: n
-  } = e, o = t.id, f = (0, i.e7)([a.Z], () => a.Z.getRequest(o)), g = (0, i.e7)([a.Z], () => a.Z.getJoinRequestGuild(o), [o]), m = (0, i.e7)([c.Z], () => c.Z.isFocused()), b = (0, i.e7)([s.Z], () => s.Z.getGuildId());
+  } = e, l = t.id, f = (0, i.e7)([a.Z], () => a.Z.getRequest(l)), g = (0, i.e7)([a.Z], () => a.Z.getJoinRequestGuild(l), [l]), m = (0, i.e7)([c.Z], () => c.Z.isFocused()), b = (0, i.e7)([s.Z], () => s.Z.getGuildId());
   return null == g ? null : (0, r.jsx)(u.Z, {
     guildNode: t,
     guild: g,
     animatable: m,
     draggable: !1,
-    selected: o === b,
+    selected: l === b,
     preloadOnClick: !1,
     contextMenu: h,
-    lowerBadge: (null == f ? void 0 : f.applicationStatus) === l.wB.REJECTED ? (0, d.jt)({
+    lowerBadge: (null == f ? void 0 : f.applicationStatus) === o.wB.REJECTED ? (0, d.jt)({
       guildJoinRequestStatus: f.applicationStatus
     }) : void 0,
-    route: p.Z5c.GUILD_MEMBER_VERIFICATION(o),
+    route: p.Z5c.GUILD_MEMBER_VERIFICATION(l),
     height: n
   })
 }

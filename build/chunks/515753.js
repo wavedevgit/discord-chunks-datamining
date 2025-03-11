@@ -18,24 +18,24 @@ var l = n(200651),
   f = n(481060),
   h = n(493683),
   _ = n(239091),
-  C = n(420660),
-  p = n(468363),
-  g = n(297369),
-  O = n(956221),
+  p = n(420660),
+  C = n(468363),
+  O = n(297369),
+  g = n(956221),
   T = n(771173),
   I = n(385499),
   S = n(570908),
   N = n(702321),
   A = n(201895),
-  v = n(43267),
-  b = n(933557),
+  b = n(43267),
+  v = n(933557),
   m = n(979264),
   P = n(163889),
   y = n(111028),
   L = n(540059),
-  D = n(853856),
-  R = n(93687),
-  Z = n(785232),
+  Z = n(853856),
+  D = n(93687),
+  R = n(785232),
   j = n(850020),
   U = n(379839),
   x = n(516817),
@@ -166,24 +166,24 @@ let ee = z.ZP.getEnableHardwareAcceleration() ? f.Xo$ : f.qEK,
       children: E,
       locationState: h,
       onClick: _,
-      className: C,
-      role: p,
-      "aria-posinset": g,
-      "aria-setsize": O,
+      className: p,
+      role: C,
+      "aria-posinset": O,
+      "aria-setsize": g,
       listItemRef: T
     } = e, I = $(e, ["route", "selected", "icon", "iconClassName", "avatarWithTextClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
     let N = (0, L.Q3)("PrivateChannelLinkButton");
     return (0, l.jsx)(P.Z, {
       className: o()(q.channel, {
         [q.fullWidth]: d.tq
-      }, C),
+      }, p),
       onClick: _,
-      role: p,
+      role: C,
       focusProps: X({
         within: !0
       }, et),
-      "aria-posinset": g,
-      "aria-setsize": O,
+      "aria-posinset": O,
+      "aria-setsize": g,
       ref: T,
       children: (0, l.jsx)(f.vjx, {
         as: "div",
@@ -220,10 +220,10 @@ function ea(e) {
     channel: i,
     isGDMFacepileEnabled: a,
     selected: d = !1,
-    user: p,
-    activities: O,
+    user: C,
+    activities: g,
     applicationStream: L,
-    voiceChannel: R,
+    voiceChannel: D,
     isTyping: j,
     status: U,
     isMobile: G,
@@ -235,7 +235,7 @@ function ea(e) {
     avatarDecorationSrc: ec,
     eventHandlers: eu
   } = (0, M.Z)({
-    user: p,
+    user: C,
     size: f.EFr.SIZE_32,
     animateOnHover: !(d || K)
   }), ed = (0, E.e7)([B.ZP], () => B.ZP.isChannelMuted(i.getGuildId(), i.id)), {
@@ -244,11 +244,11 @@ function ea(e) {
   } = (0, E.cj)([V.Z], () => ({
     ignored: V.Z.isIgnored(i.getRecipientId()),
     blocked: V.Z.isBlocked(i.getRecipientId())
-  })), eh = (0, E.e7)([k.ZP], () => k.ZP.getMentionCount(i.id) > 0), e_ = (0, b.ZP)(i), eC = (0, E.e7)([D.Z], () => D.Z.isFavorite(i.id)), ep = () => {
+  })), eh = (0, E.e7)([k.ZP], () => k.ZP.getMentionCount(i.id) > 0), e_ = (0, v.ZP)(i), ep = (0, E.e7)([Z.Z], () => Z.Z.isFavorite(i.id)), eC = () => {
     z(!0)
-  }, eg = () => {
+  }, eO = () => {
     z(!1)
-  }, eO = function(e) {
+  }, eg = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     null != e && (e.preventDefault(), e.stopPropagation()), h.Z.closePrivateChannel(i.id, d, t)
   }, eT = () => {
@@ -276,7 +276,7 @@ function ea(e) {
         default: e
       } = await Promise.all([n.e("79695"), n.e("70205"), n.e("98783"), n.e("98254"), n.e("56826"), n.e("92053")]).then(n.bind(n, 131404));
       return t => (0, l.jsx)(e, J(X({}, t), {
-        user: p,
+        user: C,
         channel: i,
         channelSelected: d
       }))
@@ -300,10 +300,10 @@ function ea(e) {
       return n => (0, l.jsx)(e, X({
         header: t,
         body: r,
-        onSubmit: eO
+        onSubmit: eg
       }, n))
     })
-  }, ev = () => i.isSystemDM() ? (0, l.jsx)("div", {
+  }, eb = () => i.isSystemDM() ? (0, l.jsx)("div", {
     className: q.subtext,
     children: (0, N.Z)(i.id) ? Q.NW.string(Q.t.FL5T09) : Q.NW.string(Q.t.NnY5lZ)
   }) : i.isMultiUserDM() ? (0, l.jsx)("div", {
@@ -311,55 +311,55 @@ function ea(e) {
     children: Q.NW.format(Q.t.CxSA5O, {
       members: i.recipients.length + 1
     })
-  }) : (0, g.Z)({
-    activities: O,
+  }) : (0, O.Z)({
+    activities: g,
     status: U,
     applicationStream: L,
-    voiceChannel: R
+    voiceChannel: D
   }) ? (0, l.jsx)(T.Z, {
     location: "PrivateChannel",
-    user: p,
-    activities: O,
-    voiceChannel: R,
+    user: C,
+    activities: g,
+    voiceChannel: D,
     applicationStream: L,
     animate: K,
     emojiClassName: ed ? q.mutedEmoji : void 0
-  }) : null, eb = () => {
+  }) : null, ev = () => {
     let e = f.EFr.SIZE_32;
-    if (i.isMultiUserDM()) return i.recipients.length >= 2 && a && null == i.icon ? (0, l.jsx)(Z.Z, {
+    if (i.isMultiUserDM()) return i.recipients.length >= 2 && a && null == i.icon ? (0, l.jsx)(R.Z, {
       "aria-hidden": !0,
       recipients: i.recipients,
       size: e,
       isTyping: j,
       status: U
     }) : (0, l.jsx)(ee, J(X({}, eu), {
-      src: (0, v.x)(i),
+      src: (0, b.x)(i),
       "aria-hidden": !0,
       size: e,
       status: j ? Y.Skl.ONLINE : U,
       isTyping: j
     }));
-    s()(null != p, "PrivateChannel.renderAvatar: Invalid prop configuration - no user or channel");
+    s()(null != C, "PrivateChannel.renderAvatar: Invalid prop configuration - no user or channel");
     let t = null;
-    return p.isSystemUser() || (t = (0, C.Z)(O) ? Y.Skl.STREAMING : U), (0, l.jsx)(ee, J(X({}, eu), {
+    return C.isSystemUser() || (t = (0, p.Z)(g) ? Y.Skl.STREAMING : U), (0, l.jsx)(ee, J(X({}, eu), {
       size: f.EFr.SIZE_32,
       src: es,
       avatarDecoration: ec,
       status: t,
       isMobile: G,
       isTyping: j,
-      "aria-label": p.username,
+      "aria-label": C.username,
       statusTooltip: !0
     }))
-  }, em = i.isMultiUserDM(), eP = i.isSystemDM(), ey = (0, w.Q)(), eL = !em && !eP && i.type === Y.d4z.DM, eD = eL && (null == p ? void 0 : p.primaryGuild) != null, eR = eL && eE, eZ = eL && ef, ej = eD ? (0, l.jsxs)(l.Fragment, {
+  }, em = i.isMultiUserDM(), eP = i.isSystemDM(), ey = (0, w.Q)(), eL = !em && !eP && i.type === Y.d4z.DM, eZ = eL && (null == C ? void 0 : C.primaryGuild) != null, eD = eL && eE, eR = eL && ef, ej = eZ ? (0, l.jsxs)(l.Fragment, {
     children: [e_, (0, l.jsx)(m.ZP, {
-      primaryGuild: null == p ? void 0 : p.primaryGuild,
-      userId: null == p ? void 0 : p.id,
+      primaryGuild: null == C ? void 0 : C.primaryGuild,
+      userId: null == C ? void 0 : C.id,
       inline: !0,
       disableGuildProfile: !0,
       className: q.clanTag
     })]
-  }) : e_, eU = null !== (t = ed || eR || eZ) && void 0 !== t && t, ex = r.useRef(null);
+  }) : e_, eU = null !== (t = ed || eD || eR) && void 0 !== t && t, ex = r.useRef(null);
   return (0, l.jsx)(u.mh, {
     id: i.id,
     children: e => {
@@ -374,8 +374,8 @@ function ea(e) {
           ringTarget: ea
         }),
         ref: ea,
-        onMouseEnter: ep,
-        onMouseLeave: eg,
+        onMouseEnter: eC,
+        onMouseLeave: eO,
         onMouseDown: eT,
         onContextMenu: eN,
         "aria-setsize": W,
@@ -408,11 +408,11 @@ function ea(e) {
           }, n), {
             children: (0, l.jsx)(S.Z, {
               ref: ex,
-              avatar: eb(),
+              avatar: ev(),
               selected: d,
               highlighted: eh,
               muted: eU,
-              subText: ev(),
+              subText: eb(),
               name: (0, l.jsx)(y.Z, {
                 tooltipClassName: q.overflowTooltip,
                 children: ej
@@ -423,9 +423,9 @@ function ea(e) {
                 verified: !0
               }) : null
             })
-          })), eC ? (0, l.jsx)(el, {}) : null, eR ? (0, l.jsx)(er, {}) : null, eZ ? (0, l.jsx)(ei, {}) : null, (0, l.jsx)(en, {
+          })), ep ? (0, l.jsx)(el, {}) : null, eD ? (0, l.jsx)(er, {}) : null, eR ? (0, l.jsx)(ei, {}) : null, (0, l.jsx)(en, {
             "aria-label": em ? Q.NW.string(Q.t["26C4oq"]) : Q.NW.string(Q.t.jsvgc3),
-            onClick: em ? eA : eO,
+            onClick: em ? eA : eg,
             onMouseDown: eI,
             nameplate: H
           })]
@@ -444,7 +444,7 @@ let es = e => {
       isStatusIndicatorEnabled: o,
       isTypingIndicatorEnabled: a,
       isFacepileEnabled: s
-    } = R.Z.useExperiment({
+    } = D.Z.useExperiment({
       location: "private_channel"
     }, {
       autoTrackExposure: !0
@@ -467,12 +467,12 @@ let es = e => {
     }, [t, c, o]),
     {
       voiceActivityStatusEnabled: d
-    } = (0, p.U)({
+    } = (0, C.U)({
       location: "PrivateChannel"
     }),
     {
       voiceChannel: f
-    } = (0, O.Z)({
+    } = (0, g.Z)({
       userId: c,
       surface: "private-channel"
     }),

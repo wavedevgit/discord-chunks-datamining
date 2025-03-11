@@ -31,8 +31,8 @@ var r = n(200651),
   k = n(556296),
   N = n(237997),
   T = n(451478),
-  A = n(585483),
-  Z = n(358085),
+  Z = n(585483),
+  A = n(358085),
   j = n(13140),
   S = n(145597),
   D = n(830917),
@@ -52,7 +52,7 @@ var r = n(200651),
   q = n(206583),
   J = n(388032),
   Q = n(329908);
-let $ = !Z.isPlatformEmbedded && !1,
+let $ = !A.isPlatformEmbedded && !1,
   ee = $ ? (0, r.jsx)(m.Z, {
     src: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzdpcnRrYXdrNzVuNjZ3NXpmeTJvNGl4Z2N4OXBsamx5aXphdHhxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/OPg2B0FPBL94H12uM0/giphy480p.mp4",
     className: Q.videoDev,
@@ -153,9 +153,9 @@ function el() {
 
 function e_(e) {
   let t = F.ZP.isInputLocked((0, S.getPID)());
-  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? A.S.dispatch(X.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? Z.S.dispatch(X.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: !1
-  }) : "keydown" === e.type.toLowerCase() && A.S.dispatch(X.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  }) : "keydown" === e.type.toLowerCase() && Z.S.dispatch(X.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: !0
   }))
 }
@@ -169,7 +169,7 @@ function eu() {
       hasValidResolution: u,
       hasZeroSizeDimension: m,
       keybind: w,
-      isPreviewingInGame: A
+      isPreviewingInGame: Z
     } = (0, c.cj)([F.ZP, N.default, T.Z, k.ZP], () => {
       let t = T.Z.windowSize((0, D.ZY)(e)),
         n = k.ZP.getOverlayKeybind(),
@@ -184,11 +184,11 @@ function eu() {
         keybind: null != n ? (0, j.BB)(n.shortcut, !0) : "???"
       }
     }, [e]),
-    Z = (0, c.e7)([N.default], () => N.default.getActiveRegions()),
+    A = (0, c.e7)([N.default], () => N.default.getActiveRegions()),
     {
       analyticsLocations: z
     } = (0, b.ZP)(f.Z.OVERLAY),
-    M = t || A;
+    M = t || Z;
   ! function(e, t) {
     let n = o.useRef({
       mount: e,
@@ -269,10 +269,10 @@ function eu() {
     children: (0, r.jsx)(_.vWI, {
       children: (0, r.jsxs)("div", {
         className: Q.overlay,
-        children: [(0, r.jsx)(G.Z, {}), A && (0, r.jsx)("header", {
+        children: [(0, r.jsx)(G.Z, {}), Z && (0, r.jsx)("header", {
           className: Q.previewingInGameHeader,
           children: J.NW.string(J.t.iOq96u)
-        }), ee, (!t || Z.has(X.O0n.TEXT_WIDGET)) && (0, r.jsx)(eo, {
+        }), ee, (!t || A.has(X.O0n.TEXT_WIDGET)) && (0, r.jsx)(eo, {
           locked: t,
           keybind: w,
           onClick: ei

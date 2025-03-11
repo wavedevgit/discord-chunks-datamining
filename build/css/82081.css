@@ -1,6 +1,6 @@
 /**
   Module ID: 82081
-  Original File Name: 2fe9b8686ebf4cfa
+  Original File Name: 07aca08d9f8f88a3
 **/
 .container__6e9b4 {
     position: relative;
@@ -30,8 +30,8 @@
     text-align: center
 }
 
-.orbIcon__6e9b4,.orbIconImg__6e9b4 {
-    height: 40px
+.orbAsset__6e9b4 {
+    height: 80px
 }
 
 .content__6e9b4 {
@@ -156,14 +156,13 @@
     background-origin: border-box
 }
 
-.gifContainer__4d8b6 {
-    width: 98px;
+.orbAssetContainer__4d8b6 {
     padding: 22px 0;
     overflow: none
 }
 
-.gif__4d8b6 {
-    height: 98px;
+.orbAsset__4d8b6 {
+    height: 110px;
     mix-blend-mode: lighten
 }
 

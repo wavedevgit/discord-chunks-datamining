@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => Z
 }), n(47120), n(653041);
 var r, i = n(200651),
-  o = n(192379),
-  l = n(120356),
-  a = n.n(l),
+  l = n(192379),
+  o = n(120356),
+  a = n.n(o),
   s = n(748780),
   c = n(442837),
   u = n(692547),
@@ -97,7 +97,7 @@ let S = {
     })
   }
 };
-class P extends o.PureComponent {
+class P extends l.PureComponent {
   renderText() {
     let {
       state: e,
@@ -124,13 +124,13 @@ class P extends o.PureComponent {
         application: r
       } = this.props, {
         stage: i,
-        progress: o,
-        total: l,
+        progress: l,
+        total: o,
         type: a
       } = n;
-      if (null == o || null == l || null == i) return null;
+      if (null == l || null == o || null == i) return null;
       let s = e[e.length - 1] / t * 1e3,
-        c = 0 !== s ? Math.max(1, (l - o) / s) : null,
+        c = 0 !== s ? Math.max(1, (o - l) / s) : null,
         u = S[a],
         d = null != u ? Object.keys(u) : [],
         {
@@ -145,7 +145,7 @@ class P extends o.PureComponent {
     })
   }
 }
-class I extends(r = o.PureComponent) {
+class I extends(r = l.PureComponent) {
   componentWillAppear(e) {
     this.state.animationScale.setValue(1), e()
   }
@@ -192,8 +192,8 @@ class I extends(r = o.PureComponent) {
         position: "right",
         "aria-label": !1,
         children: n => {
-          var r, o;
-          return (0, i.jsx)("div", (r = x({}, n), o = o = {
+          var r, l;
+          return (0, i.jsx)("div", (r = x({}, n), l = l = {
             children: (0, i.jsx)(p._3P, {
               percent: e,
               colorOverride: t ? u.Z.unsafe_rawColors.PRIMARY_500.css : null,
@@ -203,15 +203,15 @@ class I extends(r = o.PureComponent) {
                 className: j.downloadIcon
               })
             })
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(o)).forEach(function(e) {
-            Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(o, e))
+          })(Object(l)).forEach(function(e) {
+            Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
           }), r))
         }
       })
@@ -234,8 +234,8 @@ function N(e, t) {
     let {
       applicationId: r,
       branchId: i
-    } = n, o = t.getState(r, i);
-    return null != o && e.push(o), e
+    } = n, l = t.getState(r, i);
+    return null != l && e.push(l), e
   }, [])
 }
 C(I, "defaultProps", {
@@ -262,18 +262,18 @@ let Z = c.ZP.connectStores([b.Z, m.Z, h.Z], () => {
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        o = Object.keys(e);
-      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["determineOwnVisibility"]);
   return t ? (0, i.jsx)(d.W, {
-    component: o.Fragment,
+    component: l.Fragment,
     children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(I, x({}, n)) : null
   }) : (0, i.jsx)(I, x({}, n))
 })

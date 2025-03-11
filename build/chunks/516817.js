@@ -65,7 +65,7 @@ function _(e) {
     null != u.current && (a || l ? u.current.play() : u.current.pause())
   }, [a, l]);
   let d = (0, c._)(t, a);
-  return d.endsWith(".png") ? (0, r.jsx)("img", {
+  return (null == d ? void 0 : d.endsWith(".png")) || t.preview ? (0, r.jsx)("img", {
     src: d,
     className: n,
     style: o,

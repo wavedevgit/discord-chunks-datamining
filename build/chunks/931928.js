@@ -1,8 +1,8 @@
 /** Chunk was on 45847 **/
 n.d(t, {
   ED: () => h,
-  fO: () => C,
-  qp: () => p
+  fO: () => p,
+  qp: () => C
 }), n(47120);
 var l = n(200651),
   r = n(192379),
@@ -36,14 +36,14 @@ let h = e => {
     })
   },
   _ = [d.Z5c.ME, d.Z5c.COLLECTIBLES_SHOP, d.Z5c.NITRO_HOME],
-  C = e => {
+  p = e => {
     let {
       onClose: t,
       renderTail: n = !1,
       backgroundElementRef: E
-    } = e, f = r.useRef(null), [p, g] = r.useState(22), O = r.useRef(null), T = (0, a.Q3)("VirtualCurrency: DiscoveryOnboardingCoachmark"), I = r.useCallback(e => {
+    } = e, f = r.useRef(null), [C, O] = r.useState(22), g = r.useRef(null), T = (0, a.Q3)("VirtualCurrency: DiscoveryOnboardingCoachmark"), I = r.useCallback(e => {
       if (T) {
-        let t = window.innerHeight - ((0, u.t4)() + C.COACHMARK_VERTICAL_OFFSET);
+        let t = window.innerHeight - ((0, u.t4)() + p.COACHMARK_VERTICAL_OFFSET);
         return e.top <= t
       }
       return !0
@@ -54,30 +54,30 @@ let h = e => {
     let N = (0, i.TH)(),
       A = r.useCallback(() => ({
         left: 0,
-        verticalOffset: C.COACHMARK_VERTICAL_OFFSET
+        verticalOffset: p.COACHMARK_VERTICAL_OFFSET
       }), []),
-      v = r.useCallback(e => {
-        p !== e.width / 2 && g(Math.floor(e.width / 2) - 1)
-      }, [p]);
+      b = r.useCallback(e => {
+        C !== e.width / 2 && O(Math.floor(e.width / 2) - 1)
+      }, [C]);
     return (0, l.jsx)(u.U_, {
       offsetControlRef: f,
       backgroundElementRef: E,
-      coachmarkRef: O,
+      coachmarkRef: g,
       calculateVisibility: I,
       calculateBaseOffsets: A,
-      onGetBackgroundElementDimensions: v,
+      onGetBackgroundElementDimensions: b,
       children: (0, l.jsx)(h, {
         onClose: () => {
           _.includes(N.pathname) || (0, s.uL)(d.Z5c.ME), t()
         },
         renderTail: n,
-        tailLeftOffset: p,
-        coachmarkRef: O
+        tailLeftOffset: C,
+        coachmarkRef: g
       })
     })
   };
-C.COACHMARK_VERTICAL_OFFSET = 10;
-let p = e => {
+p.COACHMARK_VERTICAL_OFFSET = 10;
+let C = e => {
   let {
     isVirtualCurrencyEnabled: t,
     discoveryButtonRef: n,

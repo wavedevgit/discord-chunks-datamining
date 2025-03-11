@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  l = n.n(o),
+  l = n(120356),
+  o = n.n(l),
   a = n(481060),
   s = n(377171),
   c = n(413335),
@@ -24,9 +24,9 @@ function _(e) {
   let {
     guild: t,
     selected: n
-  } = e, o = (0, f.Z)(t), _ = i.useCallback(() => {
-    null != o && (0, p.jd)(t.id, o), (0, d.uL)(g.Z5c.CHANNEL(t.id, m.oC.GUILD_BOOSTS))
-  }, [t.id, o]), O = (null == o ? void 0 : o.type) === h.o.UNREAD;
+  } = e, l = (0, f.Z)(t), _ = i.useCallback(() => {
+    null != l && (0, p.jd)(t.id, l), (0, d.uL)(g.Z5c.CHANNEL(t.id, m.oC.GUILD_BOOSTS))
+  }, [t.id, l]), O = (null == l ? void 0 : l.type) === h.o.UNREAD;
   return (0, r.jsx)(u.m, {
     id: "skill-trees-".concat(t.id),
     renderIcon: e => (0, r.jsx)(c.Z, {
@@ -34,7 +34,7 @@ function _(e) {
       className: e
     }),
     text: (0, r.jsx)("span", {
-      className: l()({
+      className: o()({
         [y.textImportant]: O
       }),
       children: v.NW.string(b.Z.yv3DJC)
@@ -43,10 +43,10 @@ function _(e) {
     onClick: _,
     showUnread: O,
     trailing: (() => {
-      switch (null == o ? void 0 : o.type) {
+      switch (null == l ? void 0 : l.type) {
         case h.o.UNREAD:
           return (0, r.jsx)(a.mAB, {
-            count: o.count,
+            count: l.count,
             color: s.Z.BACKGROUND_MODIFIER_ACCENT
           });
         case h.o.WARNING:

@@ -19,10 +19,10 @@ function d(e) {
   } = e, h = t.entity_type === c.WX.EXTERNAL, p = i.useCallback(e => (0, l.Qt)(t, d)(e), [t, d]), g = (0, s.u)(t, n);
   if (null == g) return null;
   let {
-    IconComponent: _,
-    locationName: m
-  } = g, f = (0, r.jsxs)(r.Fragment, {
-    children: [null != _ && (0, r.jsx)(_, {
+    IconComponent: f,
+    locationName: _
+  } = g, m = (0, r.jsxs)(r.Fragment, {
+    children: [null != f && (0, r.jsx)(f, {
       size: "custom",
       color: "currentColor",
       width: 20,
@@ -32,7 +32,7 @@ function d(e) {
       color: "header-secondary",
       variant: "text-sm/normal",
       className: u.locationText,
-      children: (0, a.m)(m, !0)
+      children: (0, a.m)(_, !0)
     })]
   });
   return (0, r.jsx)("div", {
@@ -40,7 +40,7 @@ function d(e) {
     children: null != p ? (0, r.jsx)(o.P3F, {
       className: h ? u.externalLocation : u.channelLocation,
       onClick: p,
-      children: f
-    }) : f
+      children: m
+    }) : m
   })
 }

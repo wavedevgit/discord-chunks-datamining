@@ -14,9 +14,9 @@ var r = n(200651),
   h = n(409059),
   p = n(659900),
   g = n(962220),
-  _ = n(473855),
-  m = n(306453),
-  f = n(929809),
+  f = n(473855),
+  _ = n(306453),
+  m = n(929809),
   b = n(108427),
   x = n(390885),
   N = n(314897),
@@ -95,7 +95,7 @@ class L extends i.PureComponent {
     } = this.props;
     return (s()(null != e, "guild template must not be null"), e.state === S.Rj.RESOLVING) ? (0, r.jsx)(u.ZP, {
       className: Z.authBox,
-      children: (0, r.jsx)(m.Z, {
+      children: (0, r.jsx)(_.Z, {
         guildTemplate: e
       })
     }) : (0, r.jsx)(k, {
@@ -135,7 +135,7 @@ class L extends i.PureComponent {
           transitionTo: i,
           location: o,
           onRegister: () => {
-            (0, f.c)(y.M5.ORGANIC_REGISTERED_GUILD_TEMPLATE), x.Z.flowStart(T.MK.ORGANIC_GUILD_TEMPLATES, T.EW.NUF_STARTED)
+            (0, m.c)(y.M5.ORGANIC_REGISTERED_GUILD_TEMPLATE), x.Z.flowStart(T.MK.ORGANIC_GUILD_TEMPLATES, T.EW.NUF_STARTED)
           }
         });
       case S.Rj.EXPIRED:
@@ -196,7 +196,7 @@ function k(e) {
   });
   return (0, r.jsx)(C.Z, {
     className: Z.authBox,
-    children: () => [(0, r.jsx)(_.Z, {
+    children: () => [(0, r.jsx)(f.Z, {
       guildTemplate: t
     }, "template"), (0, r.jsx)("div", {
       className: Z.formContainer,

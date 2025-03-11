@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(512722),
-  l = n.n(o),
+  l = n(512722),
+  o = n.n(l),
   a = n(481060),
   s = n(24124),
   c = n(636449),
@@ -30,7 +30,7 @@ function S(e, t, n) {
   return null != e && (null != n ? n.applicationId === e.id : null != t && t.application_id === e.id && t.type === j.IIU.PLAYING && (0, u.Z)(t, j.xjy.JOIN))
 }
 let P = i.memo(function(e) {
-  let t, o, u, P, {
+  let t, l, u, P, {
       stream: I,
       canGoLive: N,
       guildId: Z,
@@ -54,7 +54,7 @@ let P = i.memo(function(e) {
     } = (0, p.ZP)(),
     B = S(L, R, D),
     U = i.useCallback(() => {
-      l()(null != R, "Received null activity"), (0, h.v)(G, h.d.INVITE), _.default.track(j.rMx.OPEN_MODAL, {
+      o()(null != R, "Received null activity"), (0, h.v)(G, h.d.INVITE), _.default.track(j.rMx.OPEN_MODAL, {
         type: "Send Join Invite",
         application_id: R.application_id,
         location: k.location
@@ -81,7 +81,7 @@ let P = i.memo(function(e) {
           default: e
         } = await Promise.all([n.e("46746"), n.e("50844")]).then(n.bind(n, 60594));
         return n => {
-          var i, o;
+          var i, l;
           return (0, r.jsx)(e, (i = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -99,36 +99,36 @@ let P = i.memo(function(e) {
               })
             }
             return e
-          }({}, n), o = o = {
+          }({}, n), l = l = {
             sourcePID: null == A ? void 0 : A.pid,
             selectSource: !1,
             guildId: t,
             analyticsLocation: j.Sbl.ACTIVITY_PANEL
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(o)).forEach(function(e) {
-            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
+          })(Object(l)).forEach(function(e) {
+            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
           }), i))
         }
       })
     }, [E, Z, A, M]),
-    H = (null != A || null == D || (0, c.R)()) && (w || N) ? (w ? (t = !1, o = () => {
+    H = (null != A || null == D || (0, c.R)()) && (w || N) ? (w ? (t = !1, l = () => {
       V(), (0, h.v)(G, h.d.STREAM, !1)
-    }, u = a.g5r, P = C.NW.string(C.t.S5anIS)) : T ? (t = !1, o = () => {
+    }, u = a.g5r, P = C.NW.string(C.t.S5anIS)) : T ? (t = !1, l = () => {
       F(), (0, h.v)(G, h.d.STREAM, !0)
     }, u = a.hGI, P = null != A ? C.NW.formatToPlainString(C.t.AB5gT0, {
       game: A.name
-    }) : C.NW.string(C.t.FeUKeH)) : (t = !0, o = null, u = a.hGI, P = null != E && (0, v.vd)(E.type) ? C.NW.string(C.t.uQn9Bw) : null != Z ? C.NW.string(C.t.fBXEoK) : C.NW.string(C.t.n3feND)), (0, r.jsx)("div", {
+    }) : C.NW.string(C.t.FeUKeH)) : (t = !0, l = null, u = a.hGI, P = null != E && (0, v.vd)(E.type) ? C.NW.string(C.t.uQn9Bw) : null != Z ? C.NW.string(C.t.fBXEoK) : C.NW.string(C.t.n3feND)), (0, r.jsx)("div", {
       className: x.panelButtonContainer,
       children: (0, r.jsx)(O.Z, {
         tooltipText: P,
         disabled: t,
-        onClick: o,
+        onClick: l,
         icon: u
       })
     })) : null,

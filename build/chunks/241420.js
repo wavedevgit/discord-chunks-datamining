@@ -1,4 +1,4 @@
-/** Chunk was on 71244 **/
+/** Chunk was on 83221 **/
 n.d(t, {
   default: () => b
 });
@@ -9,8 +9,8 @@ var i = n(481060),
   r = n(190014),
   c = n(301812),
   l = n(988043),
-  _ = n(919539),
-  d = n(526761),
+  d = n(919539),
+  _ = n(526761),
   u = n(388032),
   s = n(310037);
 
@@ -20,16 +20,16 @@ function p(e) {
   } = e;
   return (0, a.jsxs)(o.Z, {
     children: [(0, a.jsx)(l.Z, {
-      ingress: d.f4.SERVER_PRIVACY_MODAL,
+      ingress: _.f4.SERVER_PRIVACY_MODAL,
       guildId: t
-    }), (0, a.jsx)(_.Z, {
-      ingress: d.f4.SERVER_PRIVACY_MODAL,
+    }), (0, a.jsx)(d.Z, {
+      ingress: _.f4.SERVER_PRIVACY_MODAL,
       guildId: t
     }), (0, a.jsx)(c.Z, {
-      ingress: d.f4.SERVER_PRIVACY_MODAL,
+      ingress: _.f4.SERVER_PRIVACY_MODAL,
       guildId: t
     }), (0, a.jsx)(r.Z, {
-      ingress: d.f4.SERVER_PRIVACY_MODAL,
+      ingress: _.f4.SERVER_PRIVACY_MODAL,
       guildId: t
     }), (0, a.jsx)(i.Text, {
       color: "header-secondary",

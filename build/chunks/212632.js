@@ -1,6 +1,6 @@
 /** Chunk was on 45847 **/
 n.d(t, {
-  Z: () => p
+  Z: () => C
 }), n(47120);
 var l = n(200651),
   r = n(192379),
@@ -29,7 +29,7 @@ let E = 0,
   },
   _ = [s._vf.DISABLED, s._vf.TOP_LEFT, s._vf.TOP_RIGHT, s._vf.BOTTOM_LEFT, s._vf.BOTTOM_RIGHT];
 
-function C(e) {
+function p(e) {
   let {
     position: t,
     onChange: n
@@ -73,5 +73,5 @@ function C(e) {
     })]
   })
 }
-C.Positions = s._vf;
-let p = C
+p.Positions = s._vf;
+let C = p
