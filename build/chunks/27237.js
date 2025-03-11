@@ -18,9 +18,9 @@ var r = t(200651),
   b = t(730621),
   m = t(388032),
   j = t(610881),
-  h = t(709435);
+  _ = t(709435);
 
-function _(e) {
+function h(e) {
   let n, {
     active: t,
     nextActive: i,
@@ -74,15 +74,15 @@ function g(e) {
   } = e, {
     onActivate: c,
     isLoading: p,
-    error: h,
-    onShowDeactivate: _
+    error: _,
+    onShowDeactivate: h
   } = (0, x.Z)(t, o), f = (0, v.Z)(t, o), {
     disabled: g,
     reason: Z
   } = (0, u.Z)(t, o, f);
   return i.useEffect(() => {
-    null == s || s(h)
-  }, [h, s]), (0, r.jsx)(l.ua7, {
+    null == s || s(_)
+  }, [_, s]), (0, r.jsx)(l.ua7, {
     text: Z,
     shouldShow: null != Z,
     children: e => {
@@ -105,7 +105,7 @@ function g(e) {
         }
         return e
       }({}, e), i = i = {
-        onClick: f ? _ : c,
+        onClick: f ? h : c,
         fullWidth: !0,
         wrapperClassName: a()(j.button, n),
         innerClassName: j.buttonInner,
@@ -156,12 +156,12 @@ function Z(e) {
     onClick: c,
     active: d,
     className: j.card,
-    children: [(0, r.jsx)(_, {
+    children: [(0, r.jsx)(h, {
       position: n,
       active: d,
       nextActive: u
     }), (0, r.jsxs)("div", {
-      className: h.contentContainer,
+      className: _.contentContainer,
       children: [(0, r.jsx)(s.X6, {
         variant: "heading-md/bold",
         children: a.title

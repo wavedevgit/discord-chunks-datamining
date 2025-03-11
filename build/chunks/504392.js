@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => _
+  Z: () => h
 });
 var r = t(200651),
   i = t(192379),
@@ -17,9 +17,9 @@ var r = t(200651),
   b = t(730621),
   m = t(388032),
   j = t(518871);
-let h = [x.Us.LEVEL, x.Us.PERK];
+let _ = [x.Us.LEVEL, x.Us.PERK];
 
-function _(e) {
+function h(e) {
   let {
     guildId: n
   } = e;
@@ -43,7 +43,7 @@ function _(e) {
       className: j.contentContainer,
       children: [(0, r.jsx)("div", {
         className: j.powerupsContainer,
-        children: h.map(e => {
+        children: _.map(e => {
           let a = t.get(e);
           if (null != a) return (0, r.jsxs)(i.Fragment, {
             children: [(0, r.jsxs)("div", {

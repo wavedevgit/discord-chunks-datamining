@@ -23,8 +23,8 @@ function j(e) {
     powerup: t
   } = e, {
     onShowMore: o
-  } = (0, p.Z)(n, t), j = (0, d.Z)(n, t), [h, _] = i.useState(void 0);
-  return (0, p.K)(h), (0, r.jsxs)(u.Z, {
+  } = (0, p.Z)(n, t), j = (0, d.Z)(n, t), [_, h] = i.useState(void 0);
+  return (0, p.K)(_), (0, r.jsxs)(u.Z, {
     label: t.title,
     onClick: o,
     active: j,
@@ -77,7 +77,7 @@ function j(e) {
       children: (0, r.jsx)(v.Z, {
         powerup: t,
         guildId: n,
-        onError: _
+        onError: h
       })
     })]
   })
