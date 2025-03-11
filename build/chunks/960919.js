@@ -1,8 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  M: () => c,
-  Z: () => u
+  Z: () => c
 });
 var r = n(200651),
   i = n(120356),
@@ -28,5 +27,4 @@ let s = n(223640),
         alt: "Orb Icon"
       })
     })
-  },
-  u = c
+  }

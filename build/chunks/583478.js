@@ -104,62 +104,64 @@ let y = (e, t, n, r) => {
   I = e => {
     let {
       value: t,
-      className: n
-    } = e, [o, l] = (0, i.useState)(t), c = (0, i.useRef)(null), u = (0, i.useRef)(null), f = (0, i.useRef)(null);
+      onValueChange: n,
+      onValueReached: o,
+      className: l
+    } = e, [c, u] = (0, i.useState)(t), f = (0, i.useRef)(null), _ = (0, i.useRef)(null), m = (0, i.useRef)(null);
     (0, i.useEffect)(() => {
       if (null === t) return;
-      let e = null !== u.current ? t - u.current : t;
-      f.current = {
+      let e = null !== _.current ? t - _.current : t;
+      0 !== e && null !== _.current && n(e), m.current = {
         lastChangedAt: Date.now(),
         totalDelta: Math.abs(e),
         changeType: e > 0 ? "POSITIVE" : "NEGATIVE"
       }
-    }, [t]), (0, i.useEffect)(() => {
+    }, [t, n]), (0, i.useEffect)(() => {
       var e;
       if (null === t) {
-        null !== o && l(null);
+        null !== c && u(null);
         return
       }
-      if (null === o || null === u.current) {
-        l(t), u.current = t;
+      if (null === c || null === _.current) {
+        u(t), _.current = t;
         return
       }
-      if (o === t) {
-        if (!h && null !== f.current) {
+      if (c === t) {
+        if (!h && null !== m.current) {
           let e = Date.now();
           p.log("Balance Counter finished updating: ", {
-            time: e - f.current.lastChangedAt,
-            delta: o - u.current
+            time: e - m.current.lastChangedAt,
+            delta: c - _.current
           })
         }
-        u.current = t;
+        o(), _.current = t;
         return
       }
-      if (null !== c.current) return;
+      if (null !== f.current) return;
       let {
         totalDelta: n,
         changeType: r
-      } = null !== (e = f.current) && void 0 !== e ? e : {
-        totalDelta: Math.abs(t - u.current),
-        changeType: t > u.current ? "POSITIVE" : "NEGATIVE"
+      } = null !== (e = m.current) && void 0 !== e ? e : {
+        totalDelta: Math.abs(t - _.current),
+        changeType: t > _.current ? "POSITIVE" : "NEGATIVE"
       }, {
         jump: i,
         duration: a
-      } = y(n, r, t, o);
-      c.current = setTimeout(() => {
-        c.current = null, o < t ? l(o + i) : o > t && l(o - i)
+      } = y(n, r, t, c);
+      f.current = setTimeout(() => {
+        f.current = null, c < t ? u(c + i) : c > t && u(c - i)
       }, a)
-    }, [o, t, l]);
-    let _ = null === t,
-      m = null === o ? O(t) : O(o),
-      g = _ ? 0 : m;
+    }, [c, t, u, o]);
+    let g = null === t,
+      E = null === c ? O(t) : O(c),
+      v = g ? 0 : E;
     return (0, r.jsx)(s.Text, {
       variant: "text-md/semibold",
-      className: a()([d.balanceCounterText, n]),
+      className: a()(d.balanceCounterText, g ? void 0 : d.balanceCounterMargin, l),
       style: {
-        width: "calc(".concat(g, "ch + ").concat(_ ? "0px" : "8px", ")"),
-        opacity: +!_
+        width: "calc(".concat(v, "ch)"),
+        opacity: +!g
       },
-      children: o
+      children: c
     })
   }
