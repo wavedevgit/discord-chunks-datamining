@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(895924),
   y = n(311819),
   x = n(321231),
-  E = n(758199),
-  O = n(943762),
+  O = n(758199),
+  E = n(943762),
   j = n(429551),
   N = n(973616),
   C = n(314897),
@@ -126,8 +126,8 @@ let U = i.memo(function(e) {
       a = q.length,
       o = null !== (d = null == Q ? void 0 : null === (n = Q.timestamps) || void 0 === n ? void 0 : n.start) && void 0 !== d ? d : null == Q ? void 0 : Q.created_at,
       c = et ? eo : null != J ? J : M.NW.string(M.t.oQn0h4),
-      u = (0, O.r)(Q);
-    return (0, r.jsx)(E.W, {
+      u = (0, E.r)(Q);
+    return (0, r.jsx)(O.W, {
       header: j.name,
       title: c,
       iconSrc: t,
@@ -149,7 +149,7 @@ let U = i.memo(function(e) {
               start: o
             })]
           })
-        }), a > 0 && (0, r.jsx)(O.K, {
+        }), a > 0 && (0, r.jsx)(E.K, {
           activityUsers: q,
           guildId: k,
           activityText: u.text

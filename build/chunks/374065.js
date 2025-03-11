@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  KF: () => p,
+  Hn: () => p,
+  KF: () => h,
   e4: () => _,
-  g5: () => h,
+  g5: () => m,
   jy: () => f
 });
 var r = n(442837),
@@ -43,6 +44,16 @@ function _(e) {
 }
 
 function p(e) {
+  return _({
+    channelId: e,
+    ChannelStore: i.Z,
+    GuildStore: o.Z,
+    PermissionStore: a.Z,
+    VoiceStateStore: s.Z
+  })
+}
+
+function h(e) {
   return (0, r.e7)([i.Z, o.Z, a.Z, s.Z], () => _({
     channelId: e,
     ChannelStore: i.Z,
@@ -52,7 +63,7 @@ function p(e) {
   }), [e])
 }
 
-function h(e) {
+function m(e) {
   switch (e) {
     case 0:
       return d.NW.string(d.t.qJvTKS);

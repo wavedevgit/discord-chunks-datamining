@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(594174),
   y = n(626135),
   x = n(111361),
-  E = n(74538),
-  O = n(709706),
+  O = n(74538),
+  E = n(709706),
   j = n(378441),
   N = n(799143),
   C = n(358820),
@@ -83,7 +83,7 @@ function M(e) {
     onElementResize: (e, t) => {},
     onElementResizeEnd: e => {},
     orientation: u.y.VERTICAL_TOP
-  }), H = (0, s.e7)([v.default], () => (0, x.I5)(v.default.getCurrentUser())), V = (0, s.e7)([O.Z], () => O.Z.getCatalogUpdateTime()), [z, K] = i.useState(!1), [Y, X] = i.useState(!1), {
+  }), H = (0, s.e7)([v.default], () => (0, x.I5)(v.default.getCurrentUser())), V = (0, s.e7)([E.Z], () => E.Z.getCatalogUpdateTime()), [z, K] = i.useState(!1), [Y, X] = i.useState(!1), {
     activeVoice: q
   } = (0, j.o)(), Q = (0, c.q_F)({
     transform: z ? "translateY(-$8px) scale(".concat(.96, ")") : "translateY(0px) scale(1)",
@@ -177,7 +177,7 @@ function M(e) {
             children: (0, r.jsx)(g.p, {
               showUpsell: !0,
               text: k.NW.format(k.t["XMDm8/"], {
-                nitroTierName: (0, E.Px)(Z.p9.TIER_2),
+                nitroTierName: (0, O.Px)(Z.p9.TIER_2),
                 onClick: () => (0, _.i)()
               }),
               button: k.NW.string(k.t.cRCCJy),

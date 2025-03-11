@@ -44,13 +44,13 @@ function v(e) {
       embedEnabled: t,
       embedChannelId: n
     }
-  }), I = i.useMemo(() => (0, b.S)(t), [t]), E = i.useMemo(() => (0, b.a)(t), [t]), [S, T] = i.useState(!1), P = !_ && (null == c ? void 0 : c.visibility) !== s.k.PUBLIC && !O;
+  }), I = i.useMemo(() => (0, b.S)(t), [t]), E = i.useMemo(() => (0, b.a)(t), [t]), [S, T] = i.useState(!1), P = null != c && s.Y.VISIBLE.has(c.visibility), w = !_ && !P && !O;
   i.useEffect(() => {
     y || (0, p.R)(t)
   }, [y, t]), i.useEffect(() => {
     g()
   }, [t, g]);
-  let w = i.useCallback(async e => {
+  let R = i.useCallback(async e => {
     T(!0), await (0, f.c)(t, e, C), T(!1)
   }, [C, t]);
   return y ? (0, r.jsxs)("div", {
@@ -58,9 +58,9 @@ function v(e) {
       disabled: S,
       value: O,
       hideBorder: !0,
-      onChange: w,
+      onChange: R,
       children: j.NW.string(j.t.NR6hub)
-    }), P ? (0, r.jsx)(a.xv, {
+    }), w ? (0, r.jsx)(a.xv, {
       variant: "text-sm/normal",
       color: "text-secondary",
       className: N.subtext,

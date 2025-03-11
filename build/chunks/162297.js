@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(220082),
   y = n(749681),
   x = n(258971),
-  E = n(240991),
-  O = n(592125),
+  O = n(240991),
+  E = n(592125),
   j = n(496675),
   N = n(944486),
   C = n(914010),
@@ -71,7 +71,7 @@ function F(e) {
   } = i.useMemo(() => (0, g.sl)(n, {
     fakeAppIconURL: L,
     size: 56
-  }), [n]), F = i.useMemo(() => null != W ? (0, E.parseBioReact)(W) : null, [W]), [B, G] = i.useState(!1), H = i.useCallback(e => {
+  }), [n]), F = i.useMemo(() => null != W ? (0, O.parseBioReact)(W) : null, [W]), [B, G] = i.useState(!1), H = i.useCallback(e => {
     e && G(!0)
   }, []), V = (0, c.O)(H);
   i.useEffect(() => {
@@ -87,7 +87,7 @@ function F(e) {
     K = (0, S.TK)(n.id, (0, b.LD)(I, !1)),
     Y = z || K,
     X = n.isVerified && n.isDiscoverable,
-    q = (0, l.e7)([N.Z, O.Z], () => O.Z.getChannel(N.Z.getChannelId())),
+    q = (0, l.e7)([N.Z, E.Z], () => E.Z.getChannel(N.Z.getChannelId())),
     Q = (0, l.e7)([j.Z], () => (null == q ? void 0 : q.isPrivate()) || j.Z.can(Z.Plq.SEND_MESSAGES, q)),
     {
       analyticsLocations: J

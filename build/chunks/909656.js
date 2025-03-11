@@ -144,7 +144,7 @@ function k(e) {
     imageCTA: z,
     imageAriaLabel: H,
     setFilename: V
-  } = (0, O.Z)(null == l ? void 0 : l.cover_image_asset), K = (0, b.Dt)(), Y = (0, b.Dt)(), q = (0, b.Dt)();
+  } = (0, O.Z)(null == l ? void 0 : l.cover_image_asset), Y = (0, b.Dt)(), K = (0, b.Dt)(), q = (0, b.Dt)();
 
   function X(e, t) {
     o()(null != e, "Null value not allowed"), null != t && V(t.name), k(e)
@@ -181,7 +181,7 @@ function k(e) {
     }), s ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(g.hjN, {
         title: T.NW.string(T.t["PAVi+/"]),
-        titleId: K,
+        titleId: Y,
         disabled: $,
         children: [(0, r.jsx)(g.R94, {
           type: g.R94.Types.DESCRIPTION,
@@ -201,7 +201,7 @@ function k(e) {
               })
             }))), h(e)
           },
-          "aria-labelledby": K,
+          "aria-labelledby": Y,
           disabled: $
         })]
       }), (0, r.jsx)(g.$i$, {
@@ -209,7 +209,7 @@ function k(e) {
       })]
     }), (0, r.jsx)(g.hjN, {
       title: T.NW.string(T.t["1+Ho1d"]),
-      titleId: Y,
+      titleId: K,
       disabled: $,
       children: (0, r.jsx)(g.Kx8, {
         placeholder: s ? T.NW.string(T.t.SD6LRU) : T.NW.string(T.t["aVhW/f"]),
@@ -218,7 +218,7 @@ function k(e) {
         rows: 2,
         autosize: !0,
         onChange: v,
-        "aria-labelledby": Y,
+        "aria-labelledby": K,
         disabled: $
       })
     }), (0, r.jsx)(g.$i$, {

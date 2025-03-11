@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(135431),
   y = n(471518),
   x = n(370210),
-  E = n(258971),
-  O = n(981631),
+  O = n(258971),
+  E = n(981631),
   j = n(49898),
   N = n(388032),
   C = n(997408);
@@ -46,7 +46,7 @@ function I(e) {
   i.useEffect(() => {
     (0, y.gZ)(S)
   }, [S]), i.useEffect(() => {
-    M && k === x.M.FETCHED && b.default.track(O.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
+    M && k === x.M.FETCHED && b.default.track(E.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
       application_id: S,
       device_platform: a.tq ? "mobile_web" : "desktop_web",
       sender_user_id: T.author.id,
@@ -54,7 +54,7 @@ function I(e) {
       channel_id: T.channel_id
     })
   }, [M, S, null == L ? void 0 : L.id, T.channel_id, D, T.author.id, k]), i.useEffect(() => {
-    M && Z && b.default.track(O.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
+    M && Z && b.default.track(E.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
       device_platform: a.tq ? "mobile_web" : "desktop_web",
       sender_user_id: T.author.id,
       guild_id: D,
@@ -62,7 +62,7 @@ function I(e) {
     })
   }, [M, D, Z, T.author.id, T.channel_id]);
   let B = e => {
-    b.default.track(O.rMx.APP_DIRECTORY_PROFILE_EMBED_APP_INFO_CLICKED, {
+    b.default.track(E.rMx.APP_DIRECTORY_PROFILE_EMBED_APP_INFO_CLICKED, {
       application_id: S,
       device_platform: a.tq ? "mobile_web" : "desktop_web",
       clicked_section: e,
@@ -74,7 +74,7 @@ function I(e) {
       newSessionState: {
         guildId: D,
         entrypoint: {
-          name: E.xF.APPLICATION_DIRECTORY_PROFILE_EMBED
+          name: O.xF.APPLICATION_DIRECTORY_PROFILE_EMBED
         }
       }
     })

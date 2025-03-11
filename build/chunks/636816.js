@@ -26,15 +26,15 @@ function p(e) {
     guildId: t,
     location: "channel_create",
     autoTrackExposure: !0
-  }), x = g === a.a.FETCHED && C && (null == N ? void 0 : N.visibility) !== i.k.PUBLIC;
+  }), x = g !== a.a.FETCHED, I = null != N && i.Y.VISIBLE.has(N.visibility);
   r.useEffect(() => {
     m()
   }, [t, m]);
-  let I = [];
-  return (n === h.d4z.GUILD_ANNOUNCEMENT && (I.push(u.NW.format(u.t.tI7KNT, {
+  let E = [];
+  return (n !== h.d4z.GUILD_ANNOUNCEMENT || (E.push(u.NW.format(u.t.tI7KNT, {
     documentationLink: c.Z.getArticleURL(h.BhN.ANNOUNCEMENT_CHANNELS)
-  })), x && I.push(u.NW.string(u.t["2Ab4IS"]))), 0 === I.length) ? null : (0, s.jsx)(s.Fragment, {
-    children: I.map((e, t) => (0, s.jsx)(l.R94, {
+  })), x || !C || I || E.push(u.NW.string(u.t["2Ab4IS"]))), 0 === E.length) ? null : (0, s.jsx)(s.Fragment, {
+    children: E.map((e, t) => (0, s.jsx)(l.R94, {
       className: p,
       type: l.R94.Types.DESCRIPTION,
       children: e

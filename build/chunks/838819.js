@@ -45,7 +45,7 @@ var r = n(200651),
   V = n(38900),
   D = n(709999),
   U = n(373113),
-  z = n(141594),
+  z = n(681435),
   G = n(566564),
   q = n(531864),
   $ = n(302800),
@@ -257,7 +257,7 @@ let el = function(e) {
     })
   }, [ep, v, h, P, eo, ei, ed, $, D]);
   let {
-    dismissCollectiblesShopTabNewBadge: eB
+    dismissShopButtonDC: eB
   } = (0, z.Z)();
   l.useEffect(() => {
     eB(), !(0, b.un)(d.z.COLLECTIBLES_GIFTING_COACHMARK) && (0, b.EW)(d.z.COLLECTIBLES_GIFTING_COACHMARK, {

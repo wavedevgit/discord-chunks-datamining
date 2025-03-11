@@ -1,22 +1,22 @@
 /** Chunk was on 56826 **/
-n.d(t, {
-  e: () => u
+t.d(e, {
+  e: () => o
 });
-var r = n(200651);
-n(192379);
-var i = n(442837),
-  l = n(481060),
-  a = n(378712),
-  o = n(605984),
-  s = n(594174),
-  c = n(388032);
+var i = t(200651);
+t(192379);
+var r = t(442837),
+  l = t(481060),
+  s = t(378712),
+  d = t(605984),
+  a = t(594174),
+  u = t(388032);
 
-function u(e) {
-  let t = (0, i.e7)([s.default], () => s.default.getCurrentUser()),
-    n = (0, o.k)(e.id);
-  return (null == t ? void 0 : t.isStaff()) === !0 && e.isDM() && null == n ? (0, r.jsx)(l.sNh, {
+function o(n) {
+  let e = (0, r.e7)([a.default], () => a.default.getCurrentUser()),
+    t = (0, d.k)(n.id);
+  return (null == e ? void 0 : e.isStaff()) === !0 && n.isDM() && null == t ? (0, i.jsx)(l.sNh, {
     id: "mark-as-likely-ato",
-    label: c.NW.string(c.t.AWKKgY),
-    action: () => (0, a.J)(e.id)
+    label: u.NW.string(u.t.AWKKgY),
+    action: () => (0, s.J)(n.id)
   }) : null
 }

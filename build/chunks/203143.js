@@ -22,8 +22,8 @@ var r = n(512722),
   v = n(869765),
   y = n(314897),
   x = n(592125),
-  E = n(703558),
-  O = n(607744),
+  O = n(703558),
+  E = n(607744),
   j = n(375954),
   N = n(117530),
   C = n(553803),
@@ -200,7 +200,7 @@ async function U(e) {
     });
     return
   }
-  if (!O.Z.canChatInGuild(r.guild_id)) {
+  if (!E.Z.canChatInGuild(r.guild_id)) {
     u.Z.show({
       title: w.NW.string(w.t.p245ws),
       body: w.NW.string(w.t["U/uodn"])
@@ -450,7 +450,7 @@ let H = {
       duration: a,
       layout: o,
       onClose: s
-    } = e, c = N.Z.getUploads(t.id, E.d.Poll), d = r.map(e => {
+    } = e, c = N.Z.getUploads(t.id, O.d.Poll), d = r.map(e => {
       var t, n;
       let r = null == c ? void 0 : c.findIndex(t => t.id === e.localCreationAnswerId),
         i = {

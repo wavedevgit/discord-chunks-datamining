@@ -193,7 +193,7 @@ function W(e) {
     })
   }), [W, d]), [{
     dragSourcePosition: H
-  }, V] = (0, o.L)(z), K = i.useCallback(e => {
+  }, V] = (0, o.L)(z), Y = i.useCallback(e => {
     (0, m.jW)(e, async () => {
       let {
         default: e
@@ -203,7 +203,7 @@ function W(e) {
         guild: g
       }))
     })
-  }, [g, d]), Y = (0, b.e)(g, d);
+  }, [g, d]), K = (0, b.e)(g, d);
   if (B) return (0, r.jsx)("div", {
     ref: F,
     className: a()(P.roleRow, P.roleRowDragging)
@@ -223,7 +223,7 @@ function W(e) {
       [P.containerDragAfter]: null != H && x > H
     }),
     onClick: q,
-    onContextMenu: K,
+    onContextMenu: Y,
     innerRef: e => F(V(e)),
     "data-dnd-name": d.name,
     "aria-label": T.NW.formatToPlainString(T.t.Vu0AcX, {
@@ -315,8 +315,8 @@ function W(e) {
           width: 20,
           height: 20
         }),
-        onClick: K,
-        disabled: !Y
+        onClick: Y,
+        disabled: !K
       })]
     })]
   })

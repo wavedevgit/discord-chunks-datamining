@@ -56,14 +56,14 @@ function y(e) {
   }), L = (0, l.cj)([b.Z], () => {
     var e;
     return null !== (e = b.Z.errors[x]) && void 0 !== e ? e : _
-  }), [M, G] = i.useState(!1), [U, B] = i.useState(!1), F = null !== (t = L.options) && void 0 !== t ? t : L.optionErrors.filter(p.lm)[0], z = L.config, H = w && s.options.length >= j.fY, V = (0, u.kl)(n.id, Array.from(R), [s]).length - R.size, K = i.useRef(null), Y = i.useRef(x);
+  }), [M, G] = i.useState(!1), [U, B] = i.useState(!1), F = null !== (t = L.options) && void 0 !== t ? t : L.optionErrors.filter(p.lm)[0], z = L.config, H = w && s.options.length >= j.fY, V = (0, u.kl)(n.id, Array.from(R), [s]).length - R.size, Y = i.useRef(null), K = i.useRef(x);
   return (i.useEffect(() => {
-    Y.current = x
+    K.current = x
   }), i.useLayoutEffect(() => {
     setTimeout(() => {
-      if (0 === Y.current && !d) {
+      if (0 === K.current && !d) {
         var e;
-        null === (e = K.current) || void 0 === e || e.focus()
+        null === (e = Y.current) || void 0 === e || e.focus()
       }
     }, 0)
   }, [d]), M) ? (0, r.jsx)(o.tEY, {
@@ -149,7 +149,7 @@ function y(e) {
       }), (0, r.jsx)(o.oil, {
         className: v.title,
         inputClassName: v.titleInput,
-        inputRef: K,
+        inputRef: Y,
         value: s.title,
         onChange: e => (0, f.Kk)(n, s.id, {
           title: e

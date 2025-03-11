@@ -3,7 +3,7 @@
 n.d(t, {
   FT: () => H,
   L3: () => z,
-  ZP: () => K
+  ZP: () => Y
 }), n(47120), n(978209);
 var r = n(200651),
   i = n(192379),
@@ -292,7 +292,7 @@ let G = d().throttle(h.OQ, 1e3),
       }
     }))
   },
-  K = () => {
+  Y = () => {
     let e = (0, m.e7)([Z.Z], () => Z.Z.getGuild()),
       [t, s] = i.useState("");
     o()(null != e, "ConnectedGuildSettingsEmoji must be rendered within a guild context");
@@ -312,7 +312,7 @@ let G = d().throttle(h.OQ, 1e3),
       [E, S] = i.useState(!1),
       P = i.useRef(null);
     i.useEffect(() => {
-      f && Y()
+      f && K()
     }, [f]), i.useEffect(() => {
       G(e.id)
     }, [e.id]), i.useEffect(() => {
@@ -329,12 +329,12 @@ let G = d().throttle(h.OQ, 1e3),
       guildId: e.id,
       uploadId: t,
       hideErrorModal: !0
-    }), K = async n => {
+    }), Y = async n => {
       s((0, u.Z)()), I.default.track(D.rMx.EMOJI_UPLOAD_STARTED, {
         guild_id: e.id,
         upload_id: t
       }), await (0, y._)(n, H), v(!0)
-    }, Y = () => {
+    }, K = () => {
       null !== P.current && ((0, g.Mr3)(P.current), P.current = null)
     }, q = async e => {
       P.current = await (0, g.ZDy)(async () => {
@@ -342,7 +342,7 @@ let G = d().throttle(h.OQ, 1e3),
           default: t
         } = await n.e("16169").then(n.bind(n, 935333));
         return n => (0, r.jsx)(t, M({
-          processFiles: () => K(e)
+          processFiles: () => Y(e)
         }, n))
       })
     }, X = (0, j.l)(e);

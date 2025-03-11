@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(906732),
   y = n(321231),
   x = n(758199),
-  E = n(943762),
-  O = n(880251),
+  O = n(943762),
+  E = n(880251),
   j = n(208444),
   N = n(835473),
   C = n(471445),
@@ -171,10 +171,10 @@ function q(e) {
   var t, n, a;
   let l, d, {
       invite: x,
-      getAcceptInviteContext: E
+      getAcceptInviteContext: O
     } = e,
     {
-      approximate_member_count: O,
+      approximate_member_count: E,
       approximate_presence_count: j,
       target_type: C,
       target_application: I
@@ -239,10 +239,10 @@ function q(e) {
     ef = i.useCallback(() => {
       (0, p.r$)(x, "accept", ed), p.ZP.acceptInviteAndTransitionToInviteChannel({
         inviteKey: x.code,
-        context: E("Invite Button Embed"),
+        context: O("Invite Button Embed"),
         analyticsLocations: ed
       })
-    }, [x, ed, E]),
+    }, [x, ed, O]),
     eh = x.state === W.r2o.ACCEPTING,
     eg = null != ei;
   if (null == ei) {
@@ -266,7 +266,7 @@ function q(e) {
       isMember: eg,
       channel: es,
       guild: ei,
-      members: O,
+      members: E,
       membersOnline: j,
       isActivityActive: el,
       submitting: eh,
@@ -330,7 +330,7 @@ function q(e) {
             children: U.NW.string(U.t.lEvDDQ)
           })]
         }) : null, eg ? null : (0, r.jsx)(Y, {
-          members: O,
+          members: E,
           membersOnline: j,
           isLarge: L,
           isStacked: J
@@ -405,7 +405,7 @@ function Q(e) {
     id: t.id,
     icon: b,
     bot: _
-  }), y = (0, j.z)(t), N = (0, O.E)(t), C = a.length, I = i.useMemo(() => {
+  }), y = (0, j.z)(t), N = (0, E.E)(t), C = a.length, I = i.useMemo(() => {
     let e = [{
       label: o ? u ? U.NW.string(U.t.VJlc0d) : U.NW.string(U.t.RscU7O) : U.NW.string(U.t["2BP08P"]),
       submitting: p,
@@ -428,7 +428,7 @@ function Q(e) {
         isStacked: !1,
         hasEnded: !u,
         textColor: "none"
-      }), o ? C > 0 && (0, r.jsx)(E.K, {
+      }), o ? C > 0 && (0, r.jsx)(O.K, {
         activityUsers: a,
         guildId: s.id,
         activityText: U.NW.string(U.t.BMTj29)

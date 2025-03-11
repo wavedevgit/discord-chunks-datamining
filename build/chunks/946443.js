@@ -22,8 +22,8 @@ var r = n(200651),
   v = n(358085),
   y = n(143316),
   x = n(240126),
-  E = n(791914),
-  O = n(147522),
+  O = n(791914),
+  E = n(147522),
   j = n(809780),
   N = n(981631),
   C = n(388032),
@@ -98,7 +98,7 @@ function S(e) {
       className: o()(I.container, {
         [I.widerInbox]: z
       }),
-      children: [(0, r.jsx)(E.Z, {
+      children: [(0, r.jsx)(O.Z, {
         tab: u.X.UNREADS,
         setTab: w,
         badgeState: L,
@@ -115,7 +115,7 @@ function S(e) {
       [I.widerInbox]: z
     }),
     "aria-label": C.NW.string(C.t.sRUdBw),
-    children: [(0, r.jsx)(E.Z, {
+    children: [(0, r.jsx)(O.Z, {
       tab: u.X.UNREADS,
       setTab: w,
       badgeState: L,
@@ -173,7 +173,7 @@ function S(e) {
             className: I.scroller,
             children: [k ? (0, r.jsx)(T, {
               setSeenTutorial: R
-            }) : null, (0, O.Z)(B, F, Z), U === j.jd.Done ? null : (0, r.jsx)(p.$jN, {
+            }) : null, (0, E.Z)(B, F, Z), U === j.jd.Done ? null : (0, r.jsx)(p.$jN, {
               className: I.spinner
             })]
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -231,7 +231,7 @@ function P(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: I.container,
-    children: [(0, r.jsx)(E.Z, {
+    children: [(0, r.jsx)(O.Z, {
       tab: u.X.UNREADS,
       setTab: t,
       badgeState: n,

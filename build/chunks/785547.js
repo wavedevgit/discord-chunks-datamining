@@ -19,8 +19,8 @@ var r, i, a = n(200651),
   v = n(780570),
   y = n(358085),
   x = n(814225),
-  E = n(346329),
-  O = n(701560),
+  O = n(346329),
+  E = n(701560),
   j = n(981631),
   N = n(388032),
   C = n(524399);
@@ -125,7 +125,7 @@ class Z extends(r = o.Component) {
       analyticsListSort: c,
       analyticsListIndex: d
     } = this.props;
-    return (0, a.jsx)(O.Z, {
+    return (0, a.jsx)(E.Z, {
       applicationId: e.id,
       libraryApplication: e,
       fullWidth: t,
@@ -234,12 +234,12 @@ class Z extends(r = o.Component) {
         libraryApplication: e,
         source: t
       } = this.props;
-      E.installApplication(e.id, e.branchId, t)
+      O.installApplication(e.id, e.branchId, t)
     }), I(this, "handleUpdate", () => {
       let {
         libraryApplication: e
       } = this.props;
-      E.updateApplication(e.id, e.branchId)
+      O.updateApplication(e.id, e.branchId)
     }), I(this, "onClickHandlers", {
       add_to_library: this.handleAddToLibrary,
       install: this.handleInstall,

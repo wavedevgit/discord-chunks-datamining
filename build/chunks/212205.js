@@ -1,4 +1,4 @@
-/** Chunk was on 56826 **/
+/** Chunk was on 53912 **/
 n.d(t, {
   Z: () => u
 });
@@ -8,18 +8,18 @@ var i = n(442837),
   l = n(481060),
   a = n(914010),
   o = n(362658),
-  s = n(981631),
-  c = n(388032);
+  c = n(981631),
+  s = n(388032);
 
 function u(e) {
   let t = (0, i.e7)([a.Z], () => a.Z.getGuildId()),
-    u = e.type === s.d4z.GUILD_CATEGORY,
+    u = e.type === c.d4z.GUILD_CATEGORY,
     {
       isFavoritesPerk: d
     } = (0, o.z)("useChannelFavoriteSetNickname");
-  return __OVERLAY__ || t !== s.I_8 ? null : (0, r.jsx)(l.sNh, {
+  return __OVERLAY__ || t !== c.I_8 ? null : (0, r.jsx)(l.sNh, {
     id: "set-channel-nickname",
-    label: d && u ? c.NW.string(c.t.xXYKiI) : c.NW.string(c.t.dilOFx),
+    label: d && u ? s.NW.string(s.t.xXYKiI) : s.NW.string(s.t.dilOFx),
     action: function() {
       (0, l.ZDy)(async () => {
         let {
@@ -46,8 +46,8 @@ function u(e) {
             return e
           }({}, n), l = l = {
             channelId: e.id,
-            heading: d && u ? c.NW.string(c.t.xXYKiI) : c.NW.string(c.t.dilOFx),
-            formTitle: d && u ? c.NW.string(c.t.OCAkGB) : c.NW.string(c.t["621LJC"]),
+            heading: d && u ? s.NW.string(s.t.xXYKiI) : s.NW.string(s.t.dilOFx),
+            formTitle: d && u ? s.NW.string(s.t.OCAkGB) : s.NW.string(s.t["621LJC"]),
             allowReset: !(d && u)
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);

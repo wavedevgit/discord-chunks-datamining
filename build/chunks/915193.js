@@ -5,8 +5,8 @@ n.d(r, {
 var t = n(200651);
 n(192379);
 var i = n(442837),
-  s = n(692547),
-  o = n(481060),
+  o = n(692547),
+  s = n(481060),
   a = n(493683),
   d = n(129861),
   l = n(700582),
@@ -53,14 +53,14 @@ function h(e) {
 
 function b(e, r) {
   let n = (0, i.e7)([c.default], () => c.default.getCurrentUser());
-  return null == n || r.ownerId !== n.id || e.id === n.id ? null : (0, t.jsx)(o.sNh, {
+  return null == n || r.ownerId !== n.id || e.id === n.id ? null : (0, t.jsx)(s.sNh, {
     id: "make-dm-owner",
     color: "danger",
     label: u.NW.string(u.t["6t3CyM"]),
     action: () => {
-      (0, o.h7j)(i => {
+      (0, s.h7j)(i => {
         var c, b;
-        return (0, t.jsxs)(o.ConfirmModal, (c = function(e) {
+        return (0, t.jsxs)(s.ConfirmModal, (c = function(e) {
           for (var r = 1; r < arguments.length; r++) {
             var n = null != arguments[r] ? arguments[r] : {},
               t = Object.keys(n);
@@ -85,30 +85,30 @@ function b(e, r) {
           onConfirm: () => a.Z.setDMOwner(r.id, e.id)
         }, i), b = b = {
           children: [(0, t.jsx)(h, {
-            color: s.Z.unsafe_rawColors.PRIMARY_300.css
+            color: o.Z.unsafe_rawColors.PRIMARY_300.css
           }), (0, t.jsxs)("div", {
             className: m.fromToWrapper,
             children: [(0, t.jsx)("div", {
               className: m.from,
               children: (0, t.jsx)(l.Z, {
                 user: n,
-                size: o.EFr.SIZE_80
+                size: s.EFr.SIZE_80
               })
             }), (0, t.jsx)("div", {
               className: m.to,
               children: (0, t.jsx)(l.Z, {
                 user: e,
-                size: o.EFr.SIZE_80
+                size: s.EFr.SIZE_80
               })
             })]
-          }), (0, t.jsx)(o.Text, {
+          }), (0, t.jsx)(s.Text, {
             variant: "text-md/normal",
             children: u.NW.format(u.t.gsBb3N, {
               usernameHook: (r, n) => (0, t.jsx)(d.Z, {
-                usernameIcon: (0, t.jsx)(o.qEK, {
+                usernameIcon: (0, t.jsx)(s.qEK, {
                   className: m.avatarIcon,
                   src: e.getAvatarURL(void 0, 16),
-                  size: o.EFr.SIZE_16,
+                  size: s.EFr.SIZE_16,
                   "aria-hidden": !0
                 }),
                 className: m.discordTag,

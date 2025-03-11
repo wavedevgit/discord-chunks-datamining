@@ -458,7 +458,7 @@ class ea extends r.PureComponent {
       null != t && null != r && (0, u.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("56826"), n.e("22565")]).then(n.bind(n, 131404));
+        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("53912"), n.e("56826"), n.e("67196")]).then(n.bind(n, 131404));
         return n => (0, i.jsx)(e, ei(en({}, n), {
           user: r,
           channelSelected: !0,

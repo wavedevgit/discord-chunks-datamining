@@ -1,6 +1,6 @@
 /** Chunk was on 39251 **/
 n.d(t, {
-  H: () => O
+  H: () => E
 }), n(301563);
 var r = n(200651);
 n(192379);
@@ -22,10 +22,10 @@ var i = n(120356),
   v = n(5192),
   y = n(981631),
   x = n(388032),
-  E = n(971386);
+  O = n(971386);
 
-function O(e) {
-  var t, n, i, O, j, N, C, I, S, T;
+function E(e) {
+  var t, n, i, E, j, N, C, I, S, T;
   let {
     message: P,
     channel: A
@@ -34,12 +34,12 @@ function O(e) {
       rawName: t
     } = e;
     return "guild_id" === t
-  })) || void 0 === t ? void 0 : t.rawValue, Z = null === (N = P.embeds[0]) || void 0 === N ? void 0 : null === (j = N.fields) || void 0 === j ? void 0 : null === (O = j.find(e => {
+  })) || void 0 === t ? void 0 : t.rawValue, Z = null === (N = P.embeds[0]) || void 0 === N ? void 0 : null === (j = N.fields) || void 0 === j ? void 0 : null === (E = j.find(e => {
     let {
       rawName: t
     } = e;
     return "channel_id" === t
-  })) || void 0 === O ? void 0 : O.rawValue, k = (0, o.e7)([g.Z], () => g.Z.getGuild(w)), R = (0, o.e7)([h.Z], () => h.Z.getChannel(Z)), D = (0, o.e7)([_.default], () => _.default.getCurrentUser()), L = (0, o.e7)([], () => P.author.id === (null == D ? void 0 : D.id)), M = null === (C = A.recipients) || void 0 === C ? void 0 : C.find(e => e !== P.author.id), W = (0, o.e7)([_.default], () => null != M ? _.default.getUser(M) : null), F = (0, u.ZP)(P), U = (0, v._T)(A.getGuildId(), A.id, W), B = (0, o.Wu)([b.ZP], () => null != R ? b.ZP.getVoiceStatesForChannel(R) : [], [R]), G = B.some(e => e.user.id === (null == D ? void 0 : D.id)), H = null === (T = P.embeds[0]) || void 0 === T ? void 0 : null === (S = T.fields) || void 0 === S ? void 0 : null === (I = S.find(e => {
+  })) || void 0 === E ? void 0 : E.rawValue, k = (0, o.e7)([g.Z], () => g.Z.getGuild(w)), R = (0, o.e7)([h.Z], () => h.Z.getChannel(Z)), D = (0, o.e7)([_.default], () => _.default.getCurrentUser()), L = (0, o.e7)([], () => P.author.id === (null == D ? void 0 : D.id)), M = null === (C = A.recipients) || void 0 === C ? void 0 : C.find(e => e !== P.author.id), W = (0, o.e7)([_.default], () => null != M ? _.default.getUser(M) : null), F = (0, u.ZP)(P), U = (0, v._T)(A.getGuildId(), A.id, W), B = (0, o.Wu)([b.ZP], () => null != R ? b.ZP.getVoiceStatesForChannel(R) : [], [R]), G = B.some(e => e.user.id === (null == D ? void 0 : D.id)), H = null === (T = P.embeds[0]) || void 0 === T ? void 0 : null === (S = T.fields) || void 0 === S ? void 0 : null === (I = S.find(e => {
     let {
       rawName: t
     } = e;
@@ -61,7 +61,7 @@ function O(e) {
   let q = L ? x.NW.string(x.t["00XIbm"]) : x.NW.string(x.t["7CrE9/"]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsxs)("div", {
-      className: E.card,
+      className: O.card,
       children: [(0, r.jsx)(l.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
@@ -71,7 +71,7 @@ function O(e) {
         color: "header-secondary",
         children: X
       }), B.length > 0 ? (0, r.jsx)("div", {
-        className: E.participants,
+        className: O.participants,
         children: (0, r.jsx)(m.Z, {
           guildId: w,
           partySize: {
@@ -83,7 +83,7 @@ function O(e) {
           maxAvatarsShown: 5
         })
       }) : (0, r.jsx)("div", {
-        className: a()(E.participants, E.disabled),
+        className: a()(O.participants, O.disabled),
         children: (0, r.jsx)(m.Z, {
           guildId: w,
           partySize: {
@@ -96,14 +96,14 @@ function O(e) {
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: E.actions,
+      className: O.actions,
       children: [(0, r.jsxs)(l.zxk, {
         color: l.zxk.Colors.BRAND,
         onClick: () => {
           null != Z && null != w && ((0, f.uL)(y.Z5c.CHANNEL(w, Z)), c.default.selectVoiceChannel(Z))
         },
-        className: E.button,
-        innerClassName: E.buttonInner,
+        className: O.button,
+        innerClassName: O.buttonInner,
         disabled: G || !Y,
         children: [(0, r.jsx)(l.gj8, {
           size: "md",
@@ -114,7 +114,7 @@ function O(e) {
         onClick: () => {
           s.Z.sendMessage(A.id, d.ZP.parse(A, "\uD83D\uDC4B"))
         },
-        className: E.button,
+        className: O.button,
         children: q
       })]
     })]

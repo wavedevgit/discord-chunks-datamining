@@ -117,7 +117,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
           discoverySplash: e
         })
       },
-      K = e => {
+      Y = e => {
         (0, g.W1)(n.id, e), e ? (0, g.Vv)({
           guildId: n.id,
           primaryCategoryId: Z.primaryCategoryId,
@@ -145,7 +145,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
           description: n.description
         })
       },
-      Y = (e, t) => {
+      K = (e, t) => {
         let r = [...Z.socialLinks],
           i = [...U],
           s = [...A];
@@ -425,7 +425,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         options: F(U[t]),
                         placeholder: E.NW.string(E.t.xSALIC),
                         value: U[t],
-                        onChange: e => Y(e, t),
+                        onChange: e => K(e, t),
                         isDisabled: !w
                       }, "dropdown-" + t), (0, r.jsx)(l.oil, {
                         value: e,
@@ -480,7 +480,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       }), (0, r.jsx)(l.zxk, {
                         size: l.zxk.Sizes.SMALL,
                         color: l.zxk.Colors.RED,
-                        onClick: () => K(!1),
+                        onClick: () => Y(!1),
                         disabled: !w,
                         children: E.NW.string(E.t["DCHd/P"])
                       })]
@@ -496,7 +496,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     title: E.NW.string(E.t["2kCyn5"]),
                     children: $,
                     buttonLabel: E.NW.string(E.t.tVK6S0),
-                    buttonCallback: () => K(!0),
+                    buttonCallback: () => Y(!0),
                     disabled: !w || !W
                   })
                 })]

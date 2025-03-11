@@ -1,6 +1,6 @@
 /**
   Module ID: 70675
-  Original File Name: 2bbff6f76c196081
+  Original File Name: fa481b4f6ed5e9f1
 **/
 .labelWrapper_abe771 {
     display: flex;
@@ -32,6 +32,32 @@
 .inviteGuestContainer_abe771 {
     display: flex;
     align-items: center
+}
+
+.menuItem__3751b:hover .channelName__3751b {
+    color: var(--white)
+}
+
+.menuItem__3751b:hover .subtext__3751b {
+    color: var(--white)
+}
+
+.subtext__3751b {
+    display: flex;
+    align-items: center;
+    gap: 4px
+}
+
+.channelName__3751b {
+    color: var(--text-secondary)
+}
+
+:where(.visual-refresh) .menuItem__3751b:hover .channelName__3751b {
+    color: var(--header-primary)
+}
+
+:where(.visual-refresh) .menuItem__3751b:hover .subtext__3751b {
+    color: var(--header-primary)
 }
 
 .roleRow_b82947 {

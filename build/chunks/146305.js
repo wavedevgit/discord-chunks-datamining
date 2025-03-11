@@ -47,8 +47,8 @@ var r = n(200651),
   z = n(702478),
   H = n(247031),
   V = n(787561),
-  K = n(579648),
-  Y = n(511480),
+  Y = n(579648),
+  K = n(511480),
   q = n(460461),
   X = n(29605),
   Q = n(365307),
@@ -319,9 +319,9 @@ let eP = {
         };
       case e_.pNK.DISCOVERY:
         return {
-          section: e_.pNK.DISCOVERY, impressionName: i.ImpressionNames.GUILD_SETTINGS_DISCOVERY, label: eI.NW.string(eI.t.oGaVGx), element: Y.Z, notice: {
+          section: e_.pNK.DISCOVERY, impressionName: i.ImpressionNames.GUILD_SETTINGS_DISCOVERY, label: eI.NW.string(eI.t.oGaVGx), element: K.Z, notice: {
             stores: [A.Z],
-            element: Y.s
+            element: K.s
           }, predicate: () => !t.memberVerificationRolloutEnabled && t.canManageGuild && t.guild.hasFeature(e_.oNc.COMMUNITY), ariaLabel: t.guild.hasFeature(e_.oNc.DISCOVERABLE) ? eI.NW.string(eI.t.oGaVGx) : eI.NW.string(eI.t.XU0S6u)
         };
       case e_.pNK.DISCOVERY_LANDING_PAGE:
@@ -339,7 +339,7 @@ let eP = {
         };
       case e_.pNK.COMMUNITY_WELCOME:
         return {
-          section: e_.pNK.COMMUNITY_WELCOME, impressionName: i.ImpressionNames.GUILD_SETTINGS_COMMUNITY_WELCOME, label: eI.NW.string(eI.t["2rkmDg"]), ariaLabel: eI.NW.string(eI.t["2rkmDg"]), element: K.Z, notice: {
+          section: e_.pNK.COMMUNITY_WELCOME, impressionName: i.ImpressionNames.GUILD_SETTINGS_COMMUNITY_WELCOME, label: eI.NW.string(eI.t["2rkmDg"]), ariaLabel: eI.NW.string(eI.t["2rkmDg"]), element: Y.Z, notice: {
             stores: [E.Z],
             element: S.Z
           }, predicate: () => t.canManageGuild && t.guild.hasFeature(e_.oNc.COMMUNITY) && !t.welcomeScreenEmpty && !t.guild.hasFeature(e_.oNc.GUILD_SERVER_GUIDE)

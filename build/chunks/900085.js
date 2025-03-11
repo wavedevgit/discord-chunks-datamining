@@ -385,7 +385,7 @@ class K extends o.PureComponent {
           return (0, d.jW)(e, async () => {
             let {
               default: e
-            } = await Promise.all([n.e("79695"), n.e("25421"), n.e("13245")]).then(n.bind(n, 354741));
+            } = await Promise.all([n.e("79695"), n.e("53912"), n.e("99759")]).then(n.bind(n, 354741));
             return n => (0, i.jsx)(e, U(w({}, n), {
               channel: t.record,
               selected: T.Z.getChannelId() === t.record.id,

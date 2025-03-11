@@ -1,31 +1,31 @@
-/** Chunk was on 25421 **/
+/** Chunk was on 99759 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(200651),
-  i = n(192379),
+  a = n(192379),
   l = n(481060),
   o = n(493683),
-  a = n(699516),
+  i = n(699516),
   c = n(594174),
   s = n(933557),
-  u = n(388032);
+  d = n(388032);
 
-function d(e, t) {
-  let d = i.useCallback(() => {
-    let i = (0, s.F6)(e, c.default, a.Z),
-      d = u.NW.formatToPlainString(u.t.hJ5Ap6, {
-        name: i
+function u(e, t) {
+  let u = a.useCallback(() => {
+    let a = (0, s.F6)(e, c.default, i.Z),
+      u = d.NW.formatToPlainString(d.t.hJ5Ap6, {
+        name: a
       }),
-      f = u.NW.format(u.t.SSIVOj, {
-        name: i
+      b = d.NW.format(d.t.SSIVOj, {
+        name: a
       });
-    e.isManaged() && (d = u.NW.formatToPlainString(u.t.hVGjER, {
-      name: i
-    }), f = u.NW.format(u.t.IK1Qvr, {
-      name: i
+    e.isManaged() && (u = d.NW.formatToPlainString(d.t.hVGjER, {
+      name: a
+    }), b = d.NW.format(d.t.IK1Qvr, {
+      name: a
     }));
-    let O = function(n) {
+    let f = function(n) {
       let r = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
       o.Z.closePrivateChannel(e.id, t, r)
     };
@@ -51,16 +51,16 @@ function d(e, t) {
         }
         return e
       }({
-        header: d,
-        body: f,
-        onSubmit: O
+        header: u,
+        body: b,
+        onSubmit: f
       }, t))
     })
   }, [e, t]);
   return (0, r.jsx)(l.sNh, {
     id: "leave-channel",
-    label: u.NW.string(u.t["26C4oq"]),
-    action: d,
+    label: d.NW.string(d.t["26C4oq"]),
+    action: u,
     color: "danger"
   })
 }

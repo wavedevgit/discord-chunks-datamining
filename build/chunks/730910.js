@@ -110,15 +110,15 @@ function L(e) {
     }
   }, [H]);
   let V = (0, m.dQu)(c.Z.colors.BACKGROUND_FLOATING).hex(),
-    K = (0, m.dQu)(c.Z.unsafe_rawColors.PRIMARY_160).hex(),
-    Y = (0, u.wj)(B) ? V : K,
+    Y = (0, m.dQu)(c.Z.unsafe_rawColors.PRIMARY_160).hex(),
+    K = (0, u.wj)(B) ? V : Y,
     q = z.to({
       range: [0, 1],
       output: [(0, m.dQu)(c.Z.unsafe_rawColors.WHITE_500).hex(), (0, m.dQu)(c.Z.colors.TEXT_NORMAL).hex()]
     }),
     X = z.to({
       range: [0, 1],
-      output: [Y, (0, m.dQu)(c.Z.colors.STATUS_DANGER).hex()]
+      output: [K, (0, m.dQu)(c.Z.colors.STATUS_DANGER).hex()]
     });
   if (W) {
     if (x === I.PG.DEFAULT_CHANNELS) return (0, r.jsx)(T.j, {});

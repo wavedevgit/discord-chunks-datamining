@@ -235,8 +235,8 @@ let Z = e => [{
       V = i.useCallback(e => (0, p.mf)(t, {
         interests: e
       }), [t]),
-      K = i.useCallback(e => (0, p.mf)(t, e), [t]),
-      Y = i.useCallback(() => {
+      Y = i.useCallback(e => (0, p.mf)(t, e), [t]),
+      K = i.useCallback(() => {
         G ? g.S.dispatch(E.CkL.EMPHASIZE_NOTICE) : n()
       }, [G, n]),
       q = async () => {
@@ -259,7 +259,7 @@ let Z = e => [{
         forceOpen: X,
         children: e => (0, r.jsx)(d.Z, R(w({}, e), {
           className: P.closeButton,
-          closeAction: Y,
+          closeAction: K,
           keybind: "ESC"
         }))
       }), (0, r.jsxs)("div", {
@@ -343,20 +343,20 @@ let Z = e => [{
                 case I.Wy.INTERESTS:
                   return (0, r.jsx)(v.Z, {
                     guildId: t,
-                    handleUpdate: K,
+                    handleUpdate: Y,
                     progress: W,
                     error: L.interests
                   });
                 case I.Wy.DESCRIPTION:
                   return (0, r.jsx)(j.Z, {
                     guildId: t,
-                    handleUpdate: K,
+                    handleUpdate: Y,
                     progress: W,
                     errors: L
                   });
                 case I.Wy.CUSTOMIZE_TAG_BADGE:
                   return (0, r.jsx)(O.Z, {
-                    handleUpdate: K,
+                    handleUpdate: Y,
                     tag: W.tag,
                     error: L.tag,
                     badge: W.badgeKind,
@@ -374,7 +374,7 @@ let Z = e => [{
                 case I.Wy.CUSTOMIZE_BANNER:
                   return (0, r.jsx)(x.Z, {
                     guildId: t,
-                    handleUpdate: K,
+                    handleUpdate: Y,
                     progress: W
                   });
                 default:

@@ -22,8 +22,8 @@ var r = n(200651),
   v = n(570533),
   y = n(971792),
   x = n(629262),
-  E = n(761966),
-  O = n(893729),
+  O = n(761966),
+  E = n(893729),
   j = n(845970),
   N = n(882101),
   C = n(11705),
@@ -154,7 +154,7 @@ let k = e => {
         }),
         children: [(0, r.jsx)(s.LZC, {
           size: 8
-        }), (0, r.jsx)(O.Z, {
+        }), (0, r.jsx)(E.Z, {
           role: u,
           guildId: n,
           className: A.roleMessagePreview
@@ -210,7 +210,7 @@ let k = e => {
     } = e, v = (0, h.jO)(n), {
       openModal: y,
       canOpenModal: x,
-      cannotOpenReason: O,
+      cannotOpenReason: E,
       isCheckingTrialEligibility: j
     } = (0, I.Z)(v, a, d, m), k = (0, l.e7)([p.Z], () => p.Z.isSyncing), {
       activeSubscription: R,
@@ -262,9 +262,9 @@ let k = e => {
               disabled: !0,
               children: F ? P.NW.string(P.t.iKHmu7) : P.NW.string(P.t.XvAuMj)
             }) : (0, r.jsx)(s.ua7, {
-              text: x ? null : O,
-              "aria-label": null !== (t = x && O) && void 0 !== t && t,
-              children: e => (0, r.jsx)(E.Z, Z(w({}, e), {
+              text: x ? null : E,
+              "aria-label": null !== (t = x && E) && void 0 !== t && t,
+              children: e => (0, r.jsx)(O.Z, Z(w({}, e), {
                 fullWidth: !0,
                 disabled: !x || k,
                 submitting: j,

@@ -22,8 +22,8 @@ var r = n(200651),
   v = n(572004),
   y = n(601911),
   x = n(504211),
-  E = n(970321),
-  O = n(680005),
+  O = n(970321),
+  E = n(680005),
   j = n(981631),
   N = n(979007),
   C = n(388032),
@@ -33,7 +33,7 @@ function S(e) {
   let {
     appId: t,
     message: s
-  } = e, u = (0, E.R)(t), [p, f, g, _, v, O, S] = (0, a.Wu)([c.Z, h.Z, m.Z], () => {
+  } = e, u = (0, O.R)(t), [p, f, g, _, v, E, S] = (0, a.Wu)([c.Z, h.Z, m.Z], () => {
     var e;
     let n = c.Z.getApplication(t),
       r = null != n ? (0, y.y)(n, 45) : void 0,
@@ -63,7 +63,7 @@ function S(e) {
         transitionState: n.transitionState,
         onClose: n.onClose,
         appId: t,
-        guildId: O
+        guildId: E
       })
     })
   };
@@ -113,7 +113,7 @@ function T(e) {
       u = f.Z.getForSKU(h),
       p = (null == a ? void 0 : a.applicationId) === d;
     return [p ? a : null, p ? l : null, _.Z.getForSKU(h), g.Z.isFetching(h), g.Z.didFetchingSkuFail(h), u.length > 0 ? u[0] : null, i, s]
-  }, [d, v.channel_id, h]), L = (0, E.R)(null !== (l = null == T ? void 0 : T.id) && void 0 !== l ? l : "");
+  }, [d, v.channel_id, h]), L = (0, O.R)(null !== (l = null == T ? void 0 : T.id) && void 0 !== l ? l : "");
   i.useEffect(() => {
     null != S || w || Z || (0, s.km)(h)
   }, [Z, w, S, h]), i.useEffect(() => {
@@ -219,7 +219,7 @@ function T(e) {
         },
         className: I.viewDetailsButton,
         children: C.NW.string(C.t.DXYfjI)
-      }), U ? null != k ? (0, r.jsx)(O.pV, {
+      }), U ? null != k ? (0, r.jsx)(E.pV, {
         onClick: W,
         appId: T.id,
         subscriptionType: B ? "user" : "guild",
@@ -234,7 +234,7 @@ function T(e) {
       }) : (0, r.jsx)(o.zxk, {
         onClick: H,
         children: C.NW.string(C.t.uuzaAA)
-      }) : (0, r.jsx)(O.YG, {
+      }) : (0, r.jsx)(E.YG, {
         appId: T.id,
         sku: S,
         icon: (0, r.jsx)(o.EOn, {

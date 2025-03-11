@@ -47,8 +47,8 @@ var s = n(200651),
   F = n(63063),
   V = n(981631),
   H = n(71080),
-  X = n(710352),
-  Y = n(231338),
+  Y = n(710352),
+  X = n(231338),
   q = n(388032),
   K = n(592003);
 
@@ -185,7 +185,7 @@ class en extends r.PureComponent {
       case V.d4z.GUILD_STAGE_VOICE:
         return N.ewx;
       default:
-        return (0, z.zi)(t) ? N.VL1 : Y.Vq
+        return (0, z.zi)(t) ? N.VL1 : X.Vq
     }
   }
   renderHeader() {
@@ -349,7 +349,7 @@ class en extends r.PureComponent {
               className: K.radioLabelDescription,
               children: [q.NW.string(q.t.iZ5pgo), (0, s.jsx)("br", {}), q.NW.format(q.t.fjSvsL, {
                 onClick: () => {
-                  open(X.V8)
+                  open(Y.V8)
                 }
               })]
             })

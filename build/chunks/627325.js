@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(990525),
   y = n(388032),
   x = n(697993);
-let E = [51],
-  O = [y.t.OpqAoq],
+let O = [51],
+  E = [y.t.OpqAoq],
   j = () => (0, r.jsxs)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "40",
@@ -111,9 +111,9 @@ function N(e) {
       variant: "text-sm/medium",
       color: "header-muted",
       className: x.header,
-      children: y.NW.string(O[e])
+      children: y.NW.string(E[e])
     }),
-    sectionHeaderHeight: !1 === a ? void 0 : e => E[e],
+    sectionHeaderHeight: !1 === a ? void 0 : e => O[e],
     rowCount: S,
     rowHeight: 130,
     onScroll: n,
