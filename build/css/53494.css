@@ -1,6 +1,6 @@
 /**
   Module ID: 53494
-  Original File Name: e3ae2055625075c2
+  Original File Name: eda77577b28361c9
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -863,6 +863,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .enable-forced-colors button.button__67645.enabled__67645:hover,.enable-forced-colors span.button__67645.enabled__67645:hover {
     background-color: ButtonFace
+}
+
+.blur__67645:hover {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px)
 }
 
 .subtext__339d0 {

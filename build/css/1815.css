@@ -1,6 +1,6 @@
 /**
   Module ID: 1815
-  Original File Name: 79776705284540e9
+  Original File Name: c095d7fdbc5f25f7
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -2566,18 +2566,8 @@ h1.title_feb59c,h2.title_feb59c {
     color: hsla(0,0%,100%,.9)
 }
 
-.theme-dark .iconForeground__37e49:hover {
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px)
-}
-
 .theme-light .iconForeground__37e49 {
     color: rgba(0,0,0,.9)
-}
-
-.theme-light .iconForeground__37e49:hover {
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px)
 }
 
 .wrapper__06283 {

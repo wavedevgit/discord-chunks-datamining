@@ -1,6 +1,6 @@
 /**
   Module ID: 33332
-  Original File Name: 85da19e84cd389e7
+  Original File Name: b0548d8d32342db9
 **/
 @value minColumnWidth: 460px;
 
@@ -675,6 +675,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .enable-forced-colors button.button__67645.enabled__67645:hover,.enable-forced-colors span.button__67645.enabled__67645:hover {
     background-color: ButtonFace
+}
+
+.blur__67645:hover {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px)
 }
 
 .subtext__339d0 {

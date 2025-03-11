@@ -8,8 +8,8 @@ n.d(t, {
 });
 var r, i, a = n(626135),
   o = n(981631),
-  l = ((r = {}).ACTIVITY = "activity", r.APP_DISCOVERY = "app_discovery", r.OAUTH = "oauth", r),
-  s = ((i = {}).VIEW = "view", i.PLAY = "play", i.ADD_APP = "add_app", i);
+  l = ((r = {}).ACTIVITY = "activity", r.APP_DISCOVERY = "app_discovery", r.OAUTH = "oauth", r.CUSTOM_ACTIVITY_LINK = "custom_activity_link", r.ACTIVITY_INVITE = "activity_invite", r.ACTIVITY_INSTANCE = "activity_instance", r.UNKNOWN = "unknown", r),
+  s = ((i = {}).VIEW = "view", i.PLAY = "play", i.ADD_APP = "add_app", i.JOIN_SERVER = "join_server", i);
 
 function c(e, t, n, r, i) {
   a.default.track(o.rMx.APP_EMBED_CLICKED, {

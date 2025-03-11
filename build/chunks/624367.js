@@ -100,14 +100,13 @@ function k(e) {
     error: ei
   } = (0, j.h)(null == F ? void 0 : F.id, en);
   if (null == F || !1 === G) return null;
-  if (null != M && null == ei) return null == er ? null : (0, r.jsx)(S.b, {
+  if (et) return null != M && null == ei && null != er ? (0, r.jsx)(S.b, {
     application: F,
     customId: R,
     customLink: er,
     embedUrl: L,
     referrerId: D
-  });
-  if (et) return (0, r.jsx)(d.Gt, {
+  }) : (0, r.jsx)(d.Gt, {
     value: W,
     children: (0, r.jsx)(g.O, {
       app: F,

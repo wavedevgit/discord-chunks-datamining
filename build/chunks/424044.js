@@ -15,30 +15,30 @@ var r = n(200651),
   p = n(551549),
   g = n(108427),
   f = n(314897),
-  m = n(981631),
-  _ = n(388032),
+  _ = n(981631),
+  m = n(388032),
   b = n(802138);
 o.ZP.initialize();
 let x = e => {
   let {
     location: t
-  } = e, n = (0, o.e7)([f.default], () => f.default.isAuthenticated()), x = (0, o.e7)([d.Z], () => d.Z.hasLoadedExperiments), N = (0, p.oK)("RSL - Landing Page"), [v, I] = i.useState(!1), [E, C] = i.useState(_.NW.string(_.t["9exy+f"])), [j, O] = i.useState(!0), S = e => {
+  } = e, n = (0, o.e7)([f.default], () => f.default.isAuthenticated()), x = (0, o.e7)([d.Z], () => d.Z.hasLoadedExperiments), N = (0, p.oK)("RSL - Landing Page"), [v, I] = i.useState(!1), [E, C] = i.useState(m.NW.string(m.t["9exy+f"])), [j, O] = i.useState(!0), S = e => {
     switch (e) {
-      case m.evJ.INVALID_FORM_BODY:
-      case m.evJ.DSA_RSL_REPORT_NOT_FOUND:
-        C(_.NW.string(_.t.bzXDfX));
+      case _.evJ.INVALID_FORM_BODY:
+      case _.evJ.DSA_RSL_REPORT_NOT_FOUND:
+        C(m.NW.string(m.t.bzXDfX));
         break;
-      case m.evJ.DSA_RSL_ALREADY_REQUESTED:
-        C(_.NW.string(_.t.rV00ws));
+      case _.evJ.DSA_RSL_ALREADY_REQUESTED:
+        C(m.NW.string(m.t.rV00ws));
         break;
-      case m.evJ.DSA_RSL_LIMITED_TIME:
-        C(_.NW.string(_.t["0dI29v"]));
+      case _.evJ.DSA_RSL_LIMITED_TIME:
+        C(m.NW.string(m.t["0dI29v"]));
         break;
-      case m.evJ.DSA_RSL_REPORT_INELIGIBLE:
-        C(_.NW.string(_.t["RGa/GR"]));
+      case _.evJ.DSA_RSL_REPORT_INELIGIBLE:
+        C(m.NW.string(m.t["RGa/GR"]));
         break;
       default:
-        C(_.NW.string(_.t["0QLzfn"]))
+        C(m.NW.string(m.t["0QLzfn"]))
     }
   };
   return i.useEffect(() => {
@@ -52,7 +52,7 @@ let x = e => {
       var t, n;
       try {
         let n = null != e ? await (0, h.hs)(e) : void 0;
-        null != n ? C(_.NW.string(_.t.e6mZMj)) : S(null === (t = n.body) || void 0 === t ? void 0 : t.code)
+        null != n ? C(m.NW.string(m.t.e6mZMj)) : S(null === (t = n.body) || void 0 === t ? void 0 : t.code)
       } catch (e) {
         S(null === (n = e.body) || void 0 === n ? void 0 : n.code)
       } finally {

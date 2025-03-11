@@ -1,6 +1,6 @@
 /**
   Module ID: 70871
-  Original File Name: e7bb4eb4ad60c434
+  Original File Name: 7fa22a8850e0cc1c
 **/
 .modalContent__7dffe {
     display: flex;
@@ -10,11 +10,11 @@
 
 .avatarContainer__7dffe {
     margin: var(--spacing-16) 0;
-    align-self: center;
-    width: 120px;
-    height: 120px
+    align-self: center
 }
 
 .avatar__7dffe,.avatarContainer__7dffe {
-    border-radius: var(--radius-round)
+    border-radius: var(--radius-round);
+    width: 120px;
+    height: 120px
 }

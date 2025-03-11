@@ -1,6 +1,6 @@
 /**
   Module ID: 66371
-  Original File Name: 81625b68a75068c5
+  Original File Name: a4379b902b74cbb8
 **/
 .hoverRoll__0263c {
     display: inline-block;
@@ -106,6 +106,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .enable-forced-colors button.button__67645.enabled__67645:hover,.enable-forced-colors span.button__67645.enabled__67645:hover {
     background-color: ButtonFace
+}
+
+.blur__67645:hover {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px)
 }
 
 .subtext__339d0 {

@@ -147,15 +147,16 @@ function eJ(e) {
     handleMouseLeave: l,
     renderNameTag: o,
     nameplate: c,
-    hovered: d
-  } = e, u = (0, G.Q3)("RTC Avatar"), {
-    coloredIconsEnabled: m
+    hovered: d,
+    isSpeaking: u
+  } = e, m = (0, G.Q3)("RTC Avatar"), {
+    coloredIconsEnabled: p
   } = (0, ed.Z)({
     location: "RTC Avatar"
-  }), p = (0, P.Z)(null == i ? void 0 : i.avatarDecoration), g = (0, eA.NZ)({
-    avatarDecoration: p,
+  }), g = (0, P.Z)(null == i ? void 0 : i.avatarDecoration), h = (0, eA.NZ)({
+    avatarDecoration: g,
     size: (0, R.y9)(f.EFr.SIZE_32)
-  }), h = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE), b = (0, X.A)(c);
+  }), b = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE), N = (0, X.A)(c);
   return null == i ? null : (0, r.jsx)(_.Z, {
     object: eM.qAy.AVATAR,
     children: (0, r.jsx)(f.yRy, {
@@ -186,18 +187,19 @@ function eJ(e) {
         withMutualFriends: !1
       }),
       children: e => (0, r.jsxs)(f.P3F, ez(eH({
-        style: b
+        style: N
       }, e), {
         "aria-label": eV.NW.string(eV.t["3Uj+2t"]),
-        className: a()(eG.avatarWrapper, !u && m && eG.experiment),
+        className: a()(eG.avatarWrapper, !m && p && eG.experiment),
         children: [(0, r.jsx)(J.Z, {
           nameplate: c,
           hovered: d,
-          reverse: !0
+          isSpeaking: u,
+          account: !0
         }), (0, r.jsx)(eY, {
-          size: u ? f.EFr["SIZE_".concat(h)] : f.EFr.SIZE_32,
-          src: i.getAvatarURL(void 0, u ? h - 4 : 32, !1),
-          avatarDecoration: g,
+          size: m ? f.EFr["SIZE_".concat(b)] : f.EFr.SIZE_32,
+          src: i.getAvatarURL(void 0, m ? b - 4 : 32, !1),
+          avatarDecoration: h,
           "aria-label": i.username,
           status: n ? eM.Skl.STREAMING : s,
           isSpeaking: t,
@@ -295,11 +297,14 @@ class eQ extends i.PureComponent {
   renderAvatarWithPopout() {
     let {
       hovered: e
-    } = this.state;
+    } = this.state, {
+      speaking: t
+    } = this.props;
     return (0, r.jsx)(eJ, ez(eH({}, this.props), {
       hovered: e,
       handleMouseLeave: this.handleMouseLeave,
-      renderNameTag: this.renderNameTag
+      renderNameTag: this.renderNameTag,
+      isSpeaking: t
     }))
   }
   renderNameZone() {
@@ -746,19 +751,20 @@ function e1(e) {
     }) : u === c.z.SOUNDBOARD_VOLUME_EDUCATION ? () => (0, r.jsx)(ea.Z, {
       markAsDismissed: m
     }) : u === c.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK ? () => (0, r.jsx)(eo.Z, {}) : () => (0, r.jsx)(r.Fragment, {}),
-    children: () => (0, r.jsx)(eW.Z, eH({
+    children: () => (0, r.jsx)(eW.Z, ez(eH({
       tooltipText: null != t ? eV.NW.formatToPlainString(eV.t.Gzh6ZG, {
         webBuildOverride: t.id
       }) : eV.NW.string(eV.t.cduTBA),
       onClick: i,
       onContextMenu: s,
-      iconForeground: l,
       icon: (0, r.jsx)(o, {
         size: "refresh_sm",
         color: "currentColor",
         className: l
       })
-    }, d.events))
+    }, d.events), {
+      blurOnHover: !0
+    }))
   })
 }
 
@@ -841,7 +847,9 @@ function e2(e) {
         onClick: _,
         onContextMenu: V,
         role: "switch",
-        className: U ? eG.micButtonWithMenu : void 0,
+        className: a()({
+          [eG.micButtonWithMenu]: U
+        }),
         redGlow: j && L,
         "aria-label": eV.NW.string(eV.t["w4m94+"]),
         "aria-checked": j,
@@ -887,7 +895,7 @@ function e2(e) {
             children: (0, r.jsx)(eb.B, {
               onCTA: () => F(!0),
               canBeShown: !s,
-              children: (e, t) => (0, r.jsx)(eW.Z, eH({
+              children: (e, t) => (0, r.jsx)(eW.Z, ez(eH({
                 tooltipForceOpen: z,
                 tooltipColor: z ? f.FGA.GREEN : void 0,
                 tooltipContentClassName: z ? eG.voiceFilterWarning : void 0,
@@ -916,7 +924,9 @@ function e2(e) {
                 onClick: e => {
                   null == t || t(), n(e), F(!G)
                 }
-              }, i))
+              }, i), {
+                blurOnHover: !0
+              }))
             })
           })
         }
@@ -974,7 +984,8 @@ function e6(e) {
       redGlow: N && d,
       "aria-label": eV.NW.string(eV.t.wjcRFR),
       "aria-checked": d,
-      disabled: s
+      disabled: s,
+      blurOnHover: !0
     })
   })
 }

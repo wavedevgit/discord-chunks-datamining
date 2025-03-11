@@ -15,8 +15,8 @@ var r = n(200651),
   p = n(126399),
   g = n(521379),
   f = n(765717),
-  m = n(267394),
-  _ = n(761305),
+  _ = n(267394),
+  m = n(761305),
   b = n(698177),
   x = n(353926),
   N = n(409059),
@@ -102,9 +102,9 @@ let eo = (0, L.Z)(V.Z),
   ep = (0, L.Z)(W.Z),
   eg = (0, L.Z)(X.Z),
   ef = (0, L.Z)(b.Z),
-  em = (0, L.Z)(J.Z),
-  e_ = (0, L.Z)(M.Z),
-  eb = (0, L.Z)(_.Z),
+  e_ = (0, L.Z)(J.Z),
+  em = (0, L.Z)(M.Z),
+  eb = (0, L.Z)(m.Z),
   ex = (0, L.Z)(I.Z),
   eN = (0, L.Z)(B.Z),
   ev = (0, L.Z)(K.Z),
@@ -182,7 +182,7 @@ class ej extends i.PureComponent {
     let {
       invite: t
     } = await h.ZP.resolveInvite(e, $.Usc.INVITE);
-    null != t && ((0, m.A)(t), null != t.type && et.xf.has(t.type) && h.ZP.openNativeAppModal(e))
+    null != t && ((0, _.A)(t), null != t.type && et.xf.has(t.type) && h.ZP.openNativeAppModal(e))
   }
   resolveGuildTemplate() {
     let {
@@ -296,7 +296,7 @@ class ej extends i.PureComponent {
         render: e => (0, r.jsx)(ef, er({}, e))
       }), (0, r.jsx)(f.Z, {
         path: $.Z5c.DISABLE_EMAIL_NOTIFICATIONS,
-        render: e => (0, r.jsx)(e_, er({}, e))
+        render: e => (0, r.jsx)(em, er({}, e))
       }), (0, r.jsx)(f.Z, {
         path: $.Z5c.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
         render: e => (0, r.jsx)(eb, er({}, e))
@@ -305,12 +305,12 @@ class ej extends i.PureComponent {
         render: e => (0, r.jsx)(eh, er({}, e))
       }), (0, r.jsx)(f.Z, {
         path: $.Z5c.REJECT_IP,
-        render: e => (0, r.jsx)(em, er({
+        render: e => (0, r.jsx)(e_, er({
           source: $.Z5c.REJECT_IP
         }, e))
       }), (0, r.jsx)(f.Z, {
         path: $.Z5c.REJECT_MFA,
-        render: e => (0, r.jsx)(em, er({
+        render: e => (0, r.jsx)(e_, er({
           source: $.Z5c.REJECT_MFA
         }, e))
       }), (0, r.jsx)(f.Z, {
@@ -318,7 +318,7 @@ class ej extends i.PureComponent {
         render: e => (0, r.jsx)(ep, er({}, e))
       }), (0, r.jsx)(f.Z, {
         path: $.Z5c.RESET,
-        render: e => (0, r.jsx)(em, er({
+        render: e => (0, r.jsx)(e_, er({
           source: $.Z5c.RESET
         }, e))
       }), (0, r.jsx)(f.Z, {

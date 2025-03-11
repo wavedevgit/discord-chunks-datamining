@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: efcef4304730663a
+  Original File Name: 8411a63740e42da0
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -1872,6 +1872,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .enable-forced-colors button.button__67645.enabled__67645:hover,.enable-forced-colors span.button__67645.enabled__67645:hover {
     background-color: ButtonFace
+}
+
+.blur__67645:hover {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px)
 }
 
 .subtext__339d0 {

@@ -38,6 +38,7 @@ function v(e, t) {
   }, []), P = (C || I || S) && T, A = n || P;
   return r.useMemo(() => A ? {
     label: b.NW.string(b.t["HO/oXl"]),
+    trackingArea: h.j_.VIEW,
     onClick() {
       if (null == t || t(h.j_.VIEW), P) {
         (0, o.X)(e.id);
@@ -54,6 +55,7 @@ function v(e, t) {
     }
   } : O ? {
     label: b.NW.string(b.t.NgXl3N),
+    trackingArea: h.j_.ADD_APP,
     onClick() {
       null == t || t(h.j_.ADD_APP), (0, f.LO)({
         applicationId: e.id,

@@ -15,8 +15,8 @@ var r = n(200651),
   p = n(899370),
   g = n(267394),
   f = n(388905),
-  m = n(639946),
-  _ = n(792766),
+  _ = n(639946),
+  m = n(792766),
   b = n(362762),
   x = n(978684),
   N = n(264229),
@@ -208,10 +208,10 @@ class V extends i.PureComponent {
     let {
       invite: e
     } = this.props;
-    return null != e.stage_instance && null != e.guild ? (0, r.jsx)(_.Z, {
+    return null != e.stage_instance && null != e.guild ? (0, r.jsx)(m.Z, {
       stageInstance: e.stage_instance,
       guild: e.guild
-    }) : null != e.guild_scheduled_event ? (0, r.jsx)(m.r, {
+    }) : null != e.guild_scheduled_event ? (0, r.jsx)(_.r, {
       channel: e.channel,
       guildScheduledEvent: e.guild_scheduled_event
     }) : (0, r.jsx)(Z.Z, {
@@ -224,7 +224,7 @@ class V extends i.PureComponent {
     } = this.props;
     return (null != e.stage_instance || null != e.guild_scheduled_event) && null != e.guild ? (0, r.jsx)(f.ZP, {
       className: M.marginTop20,
-      children: (0, r.jsx)(_.y, {
+      children: (0, r.jsx)(m.y, {
         guild: e.guild,
         onlineCount: e.approximate_presence_count
       })

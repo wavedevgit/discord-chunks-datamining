@@ -15,8 +15,8 @@ function i(e) {
   return btoa(n).replace(/\+/g, "-").replace(/\//g, "_").replace(/=/g, "")
 }
 n.d(t, {
-  U2: () => _,
-  wz: () => m
+  U2: () => m,
+  wz: () => _
 });
 var o = "copy",
   a = "convert";
@@ -130,10 +130,10 @@ var g = {
     clientExtensionResults: s(p, e => e.getClientExtensionResults())
   };
 
-function m(e) {
+function _(e) {
   return l(r, g, e)
 }
-async function _(e) {
+async function m(e) {
   let t = await navigator.credentials.get(e);
   return t.toJSON = () => l(i, f, t), t
 }

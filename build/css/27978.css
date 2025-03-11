@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: e8576199982f2ed5
+  Original File Name: a93e9a5e9b990f4b
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -1800,6 +1800,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .enable-forced-colors button.button__67645.enabled__67645:hover,.enable-forced-colors span.button__67645.enabled__67645:hover {
     background-color: ButtonFace
+}
+
+.blur__67645:hover {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px)
 }
 
 .subtext__339d0 {

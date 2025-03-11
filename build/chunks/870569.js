@@ -30,8 +30,9 @@ function c(e) {
     role: I,
     tooltipColor: S,
     tooltipForceOpen: N,
-    tooltipContentClassName: A
-  } = e, b = "function" == typeof d ? (0, l.jsx)(d, {
+    tooltipContentClassName: A,
+    blurOnHover: b
+  } = e, v = "function" == typeof d ? (0, l.jsx)(d, {
     width: 20,
     height: 20,
     size: "custom",
@@ -92,7 +93,8 @@ function c(e) {
         className: i()(s.button, h, {
           [s.redGlow]: _,
           [s.disabled]: u,
-          [s.enabled]: !u
+          [s.enabled]: !u,
+          [s.blur]: b
         }),
         onClick: e => {
           null != E && E(), null != c && c(e)
@@ -110,8 +112,8 @@ function c(e) {
           width: 20,
           height: 20,
           mask: a.ZP.Masks.PANEL_BUTTON,
-          children: b
-        }) : b, n]
+          children: v
+        }) : v, n]
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(d)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
