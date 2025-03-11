@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  u: () => h
+  u: () => f
 });
 var r = n(200651),
   i = n(192379),
@@ -12,13 +12,14 @@ var r = n(200651),
   d = n(933970),
   u = n(340453),
   m = n(292352),
-  p = n(388032),
-  g = n(944921);
+  p = n(635357),
+  g = n(388032),
+  h = n(944921);
 
-function h(e) {
+function f(e) {
   let {
     user: t
-  } = e, s = (0, l.e7)([c.default], () => c.default.getCurrentUser()), h = i.useCallback(() => {
+  } = e, s = (0, l.e7)([c.default], () => c.default.getCurrentUser()), f = i.useCallback(() => {
     a()(void 0 !== s, "User must be logged in to accept a link request"), (0, o.ZDy)(async () => {
       let {
         default: e
@@ -59,19 +60,19 @@ function h(e) {
     })
   }, [s, t]);
   return (0, r.jsxs)("div", {
-    className: g.container,
+    className: h.container,
     children: [(0, r.jsx)("div", {
-      className: g.details,
+      className: h.details,
       children: (0, r.jsx)(u.Z, {
         otherUser: t,
         status: m.ne.ACTIVE
       })
     }), (0, r.jsx)("div", {
-      className: g.actions,
+      className: h.actions,
       children: (0, r.jsx)(d.Z, {
         icon: o.Dio,
-        tooltip: p.NW.string(p.t.l20ZZm),
-        onClick: h
+        tooltip: g.NW.string(p.Z.l20ZZm),
+        onClick: f
       })
     })]
   })

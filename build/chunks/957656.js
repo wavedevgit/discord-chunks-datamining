@@ -1,15 +1,16 @@
 /** Chunk was on 69015 **/
 t.d(r, {
-  Z: () => d
+  Z: () => u
 });
 var n = t(200651);
 t(192379);
 var o = t(481060),
   s = t(198952),
   c = t(329242),
-  i = t(388032),
-  l = t(797843);
-let a = e => {
+  i = t(635357),
+  l = t(388032),
+  a = t(797843);
+let d = e => {
   var r, t, {
       children: s,
       className: c
@@ -61,70 +62,70 @@ let a = e => {
     Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(t, e))
   }), r))
 };
-a.ButtonFooter = e => {
+d.ButtonFooter = e => {
   let {
     children: r
   } = e;
   return (0, n.jsx)("div", {
-    className: l.footer,
+    className: a.footer,
     children: r
   })
-}, a.Header = e => {
+}, d.Header = e => {
   let {
     icon: r,
     currentUser: t,
     otherUser: i,
-    header: a
+    header: l
   } = e;
   return (0, n.jsxs)("div", {
-    className: l.header,
+    className: a.header,
     children: [(0, n.jsx)(s.Z, {
       currentUser: t,
       otherUser: i,
       children: r
     }), (0, n.jsxs)("div", {
-      className: l.heading,
+      className: a.heading,
       children: [(0, n.jsx)(o.X6q, {
         variant: "text-lg/bold",
-        children: a
+        children: l
       }), (0, n.jsx)(c.Z, {
         user: i
       })]
     })]
   })
-}, a.Content = e => {
+}, d.Content = e => {
   let {
     children: r
   } = e;
   return (0, n.jsx)("div", {
-    className: l.content,
+    className: a.content,
     children: r
   })
-}, a.Notice = e => {
+}, d.Notice = e => {
   let {
     notice: r
   } = e;
   return (0, n.jsxs)("div", {
-    className: l.notice,
+    className: a.notice,
     children: [(0, n.jsx)(o.Text, {
       variant: "eyebrow",
       color: "header-primary",
-      children: i.NW.string(i.t.cXgKMD)
+      children: l.NW.string(i.Z.cXgKMD)
     }), (0, n.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",
       children: r
     })]
   })
-}, a.Error = e => {
+}, d.Error = e => {
   let {
     error: r,
     onDismiss: t
   } = e;
   return null == r ? null : (0, n.jsx)(o.kzN, {
-    className: l.error,
+    className: a.error,
     onDismiss: t,
     children: r
   })
 };
-let d = a
+let u = d

@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -9,10 +9,11 @@ var i = n(120356),
   a = n(481060),
   l = n(785681),
   o = n(231994),
-  c = n(388032),
-  d = n(241260),
-  u = n(802138);
-let m = e => {
+  c = n(635357),
+  d = n(388032),
+  u = n(241260),
+  m = n(802138);
+let p = e => {
     let {
       header: t,
       description: n,
@@ -20,15 +21,15 @@ let m = e => {
       inModal: l
     } = e;
     return (0, r.jsxs)("div", {
-      className: s()(d.row, u.marginBottom8, {
-        [d.inModal]: l
+      className: s()(u.row, m.marginBottom8, {
+        [u.inModal]: l
       }),
       children: [(0, r.jsx)("div", {
-        className: d.iconContainer,
+        className: u.iconContainer,
         children: i
       }), (0, r.jsxs)("div", {
         children: [(0, r.jsx)(a.Text, {
-          className: d.header,
+          className: u.header,
           variant: "text-sm/bold",
           color: "header-primary",
           children: t
@@ -40,19 +41,19 @@ let m = e => {
       })]
     })
   },
-  p = e => {
+  g = e => {
     let {
       inModal: t
-    } = e, n = (0, l.o)(c.NW.string(c.t.Sm8Gq6), c.NW.string(c.t.YU7aaW)), i = (0, l.o)(c.NW.string(c.t["TCzk/f"]), c.NW.string(c.t["2OqtJC"])), s = (0, l.o)(c.NW.string(c.t.ASf7XF), c.NW.string(c.t["82y87e"])), u = (0, l.o)(c.NW.string(c.t["0QDVFB"]), c.NW.string(c.t["1xBHHR"]));
+    } = e, n = (0, l.o)(d.NW.string(c.Z.Sm8Gq6), d.NW.string(c.Z.YU7aaW)), i = (0, l.o)(d.NW.string(c.Z["TCzk/f"]), d.NW.string(c.Z["2OqtJC"])), s = (0, l.o)(d.NW.string(c.Z.ASf7XF), d.NW.string(c.Z["82y87e"])), m = (0, l.o)(d.NW.string(c.Z["0QDVFB"]), d.NW.string(c.Z["1xBHHR"]));
     return (0, r.jsxs)("div", {
       children: [(0, r.jsx)(a.Text, {
-        className: d.groupHeader,
+        className: u.groupHeader,
         variant: "text-xxs/bold",
         color: "header-secondary",
         children: n
-      }), (0, r.jsx)(m, {
-        header: c.NW.string(c.t["/zMYZW"]),
-        description: c.NW.string(c.t.DxFKkZ),
+      }), (0, r.jsx)(p, {
+        header: d.NW.string(c.Z["/zMYZW"]),
+        description: d.NW.string(c.Z.DxFKkZ),
         icon: (0, r.jsx)(a.iFz, {
           size: "custom",
           width: 20,
@@ -60,9 +61,9 @@ let m = e => {
           color: a.TVs.colors.TEXT_PRIMARY.css
         }),
         inModal: t
-      }), (0, r.jsx)(m, {
-        header: c.NW.string(c.t["44NEx8"]),
-        description: c.NW.string(c.t.WrY56O),
+      }), (0, r.jsx)(p, {
+        header: d.NW.string(c.Z["44NEx8"]),
+        description: d.NW.string(c.Z.WrY56O),
         icon: (0, r.jsx)(a.dRF, {
           size: "custom",
           width: 20,
@@ -70,9 +71,9 @@ let m = e => {
           color: a.TVs.colors.TEXT_PRIMARY.css
         }),
         inModal: t
-      }), (0, r.jsx)(m, {
-        header: c.NW.string(c.t["Z3G+8v"]),
-        description: c.NW.string(c.t.KBgAra),
+      }), (0, r.jsx)(p, {
+        header: d.NW.string(c.Z["Z3G+8v"]),
+        description: d.NW.string(c.Z.KBgAra),
         icon: (0, r.jsx)(o.Z, {
           width: 20,
           height: 20,
@@ -80,13 +81,13 @@ let m = e => {
         }),
         inModal: t
       }), (0, r.jsx)(a.Text, {
-        className: d.groupHeader,
+        className: u.groupHeader,
         variant: "text-xxs/bold",
         color: "header-secondary",
         children: i
-      }), (0, r.jsx)(m, {
+      }), (0, r.jsx)(p, {
         header: s,
-        description: u,
+        description: m,
         icon: (0, r.jsx)(a.Dio, {
           size: "custom",
           width: 20,

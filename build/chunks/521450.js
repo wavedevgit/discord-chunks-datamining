@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => _
+  Z: () => E
 });
 var r = n(200651),
   i = n(192379),
@@ -16,10 +16,11 @@ var r = n(200651),
   g = n(695346),
   h = n(981631),
   f = n(930441),
-  b = n(388032),
-  N = n(302859),
-  x = n(802138);
-let _ = () => {
+  b = n(635357),
+  N = n(388032),
+  x = n(302859),
+  _ = n(802138);
+let E = () => {
   let e = g.Ex.useSetting(),
     {
       categories: t,
@@ -28,20 +29,20 @@ let _ = () => {
   return i.useEffect(() => {
     null == n && (0, m.Y7)()
   }, [n]), (0, r.jsxs)("div", {
-    className: N.container,
+    className: x.container,
     children: [(0, r.jsx)(d.Text, {
       variant: "eyebrow",
       color: "text-muted",
-      children: b.NW.string(b.t.USIXU1)
+      children: N.NW.string(b.Z.USIXU1)
     }), (0, r.jsx)(d.j7V, {
-      className: a()(x.marginTop8, x.marginBottom20),
+      className: a()(_.marginTop8, _.marginBottom20),
       value: e,
-      note: b.NW.string(b.t["5MdB3t"]),
+      note: N.NW.string(b.Z["5MdB3t"]),
       hideBorder: !0,
       onChange: g.Ex.updateSetting,
-      children: b.NW.string(b.t.zkEceX)
+      children: N.NW.string(b.Z.zkEceX)
     }), e ? (0, r.jsx)(d.Zbd, {
-      className: N.enableCard,
+      className: x.enableCard,
       type: d.Zbd.Types.CUSTOM,
       outline: !0,
       children: (0, r.jsxs)(o.k, {
@@ -50,7 +51,7 @@ let _ = () => {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/semibold",
             color: "text-normal",
-            children: b.NW.string(b.t.xAVm7O)
+            children: N.NW.string(b.Z.xAVm7O)
           })
         }), (0, r.jsx)(d.P3F, {
           children: (0, r.jsx)(l.rU, {
@@ -61,23 +62,23 @@ let _ = () => {
                 scrollRestoration: !1
               }
             },
-            children: b.NW.string(b.t.cUIXFR)
+            children: N.NW.string(b.Z.cUIXFR)
           })
         }), (0, r.jsx)(d.G2e, {
           icon: d.ZSh,
-          className: N.arrow,
+          className: x.arrow,
           disableColor: !0
         })]
       })
     }) : null, (0, r.jsx)(d.j7V, {
-      className: a()(x.marginTop20, x.marginBottom20),
+      className: a()(_.marginTop20, _.marginBottom20),
       value: !!t[f.$Z.FAMILY_CENTER_DIGEST],
-      note: b.NW.string(b.t["y34S4+"]),
+      note: N.NW.string(b.Z["y34S4+"]),
       hideBorder: !0,
       onChange: function(e) {
         (0, m.pR)(f.$Z.FAMILY_CENTER_DIGEST, e)
       },
-      children: b.NW.string(b.t.irvJKS)
+      children: N.NW.string(b.Z.irvJKS)
     })]
   })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 n.r(t), n.d(t, {
-  default: () => R,
-  useAppSidebarState: () => L
+  default: () => D,
+  useAppSidebarState: () => w
 });
 var r = n(200651),
   i = n(192379),
@@ -32,12 +32,13 @@ var r = n(200651),
   j = n(981631),
   A = n(741764),
   Z = n(388032),
-  x = n(963981);
-let L = (0, o.U)(() => ({
+  x = n(635357),
+  L = n(963981);
+let w = (0, o.U)(() => ({
   isOpen: !0
 }));
 
-function w() {
+function R() {
   let e;
   let t = (0, l.TH)(),
     n = (0, a.e7)([y.Z], () => y.Z.getChannelId()),
@@ -52,7 +53,7 @@ function w() {
     guild: c,
     size: f.Z.Sizes.MINI,
     active: !0,
-    className: x.guildIcon
+    className: L.guildIcon
   }), e = c.name) : null != o && (o.isDM() || o.isGroupDM()) ? (e = Z.NW.string(Z.t.YUU0RE), d = (0, r.jsx)(s.gw7, {
     size: "xs"
   })) : t.pathname.startsWith(j.Z5c.GLOBAL_DISCOVERY) ? (e = Z.NW.string(Z.t["4nEZLi"]), d = (0, r.jsx)(s.Jmo, {
@@ -63,10 +64,10 @@ function w() {
     size: "xs"
   })) : t.pathname.startsWith(j.Z5c.FRIENDS) ? (e = Z.NW.string(Z.t.TdEu5e), d = (0, r.jsx)(s.iFz, {
     size: "xs"
-  })) : t.pathname.startsWith(j.Z5c.FAMILY_CENTER) && (e = Z.NW.string(Z.t.RZqaJi), d = (0, r.jsx)(s.BFJ, {
+  })) : t.pathname.startsWith(j.Z5c.FAMILY_CENTER) && (e = Z.NW.string(x.Z.RZqaJi), d = (0, r.jsx)(s.BFJ, {
     size: "xs"
   })), null != e && "" !== e && (0, r.jsxs)("div", {
-    className: x.title,
+    className: L.title,
     children: [d, (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       lineClamp: 1,
@@ -74,12 +75,12 @@ function w() {
     })]
   })
 }
-let R = i.memo(function() {
+let D = i.memo(function() {
   i.useLayoutEffect(() => {
     S.ZP.setMinimumSize(A.J, A.N)
   }, []);
   let e = (0, p.TH)("AppTitleBar"),
-    t = !L(e => e.isOpen) && e,
+    t = !w(e => e.isOpen) && e,
     {
       hasBugReporterAccess: n
     } = u.Z.useExperiment({
@@ -97,15 +98,15 @@ let R = i.memo(function() {
       className: e,
       leading: t && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(s.P3F, {
-          className: x.button,
+          className: L.button,
           onClick: () => {
-            L.setState({
-              isOpen: !L.getState().isOpen
+            w.setState({
+              isOpen: !w.getState().isOpen
             })
           },
-          children: (0, r.jsx)(D, {})
+          children: (0, r.jsx)(k, {})
         }), (0, r.jsx)(s.P3F, {
-          className: x.button,
+          className: L.button,
           onClick: () => {
             c.Z.open(j.oAB.ACCOUNT)
           },
@@ -115,29 +116,29 @@ let R = i.memo(function() {
           })
         })]
       }),
-      title: (0, r.jsx)(w, {}),
+      title: (0, r.jsx)(R, {}),
       trailing: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.Z, {
           canShowReminder: !0,
-          className: x.button
+          className: L.button
         }), (0, r.jsx)(E.Z, {
-          className: x.button
+          className: L.button
         }), n ? (0, r.jsx)(m.Z, {
-          className: x.button
+          className: L.button
         }) : (0, r.jsx)(g.Z, {
-          className: x.button
+          className: L.button
         }), (0, r.jsx)(b.Z, {
-          className: x.button
+          className: L.button
         })]
       })
     })
   })
 });
 
-function D() {
+function k() {
   return (0, r.jsxs)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
-    className: x.icon,
+    className: L.icon,
     width: "24",
     height: "24",
     viewBox: "0 0 24 24",

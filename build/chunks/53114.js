@@ -160,32 +160,34 @@ class y extends o.Z {
     return e
   }
   getCodecUsageStats(e, t) {
-    var n, r, i, o, a, s, l, c, u, d;
-    let _ = this.asymmetricCodecUpdates > this.symmetricCodecUpdates,
-      p = new Map;
+    var n, r, i, o, a, s, l, c, u, d, _, p;
+    let h = this.asymmetricCodecUpdates > this.symmetricCodecUpdates,
+      m = new Map;
     if ("sender" === e || "streamer" === e) {
       let e = this.getEncoderUsageStats();
       if (e.size > 0) {
         let t = [...e.keys()].sort()[0];
-        p = e.get(t)
+        m = e.get(t)
       }
       return {
-        codec_asymmetric_session: _,
-        codec_h264_encode_duration_sec: null !== (n = p.get(f.u7.H264)) && void 0 !== n ? n : 0,
-        codec_h265_encode_duration_sec: null !== (r = p.get(f.u7.H265)) && void 0 !== r ? r : 0,
-        codec_vp8_encode_duration_sec: null !== (i = p.get(f.u7.VP8)) && void 0 !== i ? i : 0,
-        codec_vp9_encode_duration_sec: null !== (o = p.get(f.u7.VP9)) && void 0 !== o ? o : 0,
-        codec_av1_encode_duration_sec: null !== (a = p.get(f.u7.AV1)) && void 0 !== a ? a : 0
+        codec_asymmetric_session: h,
+        codec_h264_encode_duration_sec: null !== (n = m.get(f.u7.H264)) && void 0 !== n ? n : 0,
+        codec_h265_encode_duration_sec: null !== (r = m.get(f.u7.H265)) && void 0 !== r ? r : 0,
+        codec_vp8_encode_duration_sec: null !== (i = m.get(f.u7.VP8)) && void 0 !== i ? i : 0,
+        codec_vp9_encode_duration_sec: null !== (o = m.get(f.u7.VP9)) && void 0 !== o ? o : 0,
+        codec_av1_encode_duration_sec: null !== (a = m.get(f.u7.AV1)) && void 0 !== a ? a : 0,
+        codec_unknown_encode_duration_sec: null !== (s = m.get(f.u7.UNKNOWN)) && void 0 !== s ? s : 0
       }
     } {
       let e = this.getDecoderUsageStats();
-      return e.has(t) && (p = e.get(t)), {
-        codec_asymmetric_session: _,
-        codec_h264_decode_duration_sec: null !== (s = p.get(f.u7.H264)) && void 0 !== s ? s : 0,
-        codec_h265_decode_duration_sec: null !== (l = p.get(f.u7.H265)) && void 0 !== l ? l : 0,
-        codec_vp8_decode_duration_sec: null !== (c = p.get(f.u7.VP8)) && void 0 !== c ? c : 0,
-        codec_vp9_decode_duration_sec: null !== (u = p.get(f.u7.VP9)) && void 0 !== u ? u : 0,
-        codec_av1_decode_duration_sec: null !== (d = p.get(f.u7.AV1)) && void 0 !== d ? d : 0
+      return e.has(t) && (m = e.get(t)), {
+        codec_asymmetric_session: h,
+        codec_h264_decode_duration_sec: null !== (l = m.get(f.u7.H264)) && void 0 !== l ? l : 0,
+        codec_h265_decode_duration_sec: null !== (c = m.get(f.u7.H265)) && void 0 !== c ? c : 0,
+        codec_vp8_decode_duration_sec: null !== (u = m.get(f.u7.VP8)) && void 0 !== u ? u : 0,
+        codec_vp9_decode_duration_sec: null !== (d = m.get(f.u7.VP9)) && void 0 !== d ? d : 0,
+        codec_av1_decode_duration_sec: null !== (_ = m.get(f.u7.AV1)) && void 0 !== _ ? _ : 0,
+        codec_unknown_decode_duration_sec: null !== (p = m.get(f.u7.UNKNOWN)) && void 0 !== p ? p : 0
       }
     }
   }

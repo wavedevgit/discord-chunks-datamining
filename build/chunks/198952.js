@@ -1,28 +1,29 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => u,
-  r: () => d
+  Z: () => m,
+  r: () => u
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
   s = n(518950),
   a = n(998502),
-  l = n(388032),
-  o = n(760398);
-let c = a.ZP.getEnableHardwareAcceleration() ? i.Xo$ : i.qEK,
-  d = e => {
+  l = n(635357),
+  o = n(388032),
+  c = n(760398);
+let d = a.ZP.getEnableHardwareAcceleration() ? i.Xo$ : i.qEK,
+  u = e => {
     var t, n;
     let {
       user: a,
-      avatarSize: d = i.EFr.SIZE_48
+      avatarSize: c = i.EFr.SIZE_48
     } = e, {
       avatarSrc: u,
       avatarDecorationSrc: m,
       eventHandlers: p
     } = (0, s.Z)({
       user: a,
-      size: d
+      size: c
     });
     return (0, r.jsx)("div", (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -42,12 +43,11 @@ let c = a.ZP.getEnableHardwareAcceleration() ? i.Xo$ : i.qEK,
       }
       return e
     }({}, p), n = n = {
-      children: (0, r.jsx)(c, {
-        className: o.__invalid_avatar,
+      children: (0, r.jsx)(d, {
         src: u,
         avatarDecoration: m,
-        size: d,
-        "aria-label": l.NW.formatToPlainString(l.t.kFj4h4, {
+        size: c,
+        "aria-label": o.NW.formatToPlainString(l.Z.kFj4h4, {
           name: a.username
         })
       })
@@ -62,19 +62,19 @@ let c = a.ZP.getEnableHardwareAcceleration() ? i.Xo$ : i.qEK,
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   },
-  u = e => {
+  m = e => {
     let {
       currentUser: t,
       otherUser: n,
       children: i
     } = e;
     return (0, r.jsx)("div", {
-      className: o.avatarPairContainer,
+      className: c.avatarPairContainer,
       children: (0, r.jsxs)("div", {
-        className: o.avatarPair,
-        children: [(0, r.jsx)(d, {
+        className: c.avatarPair,
+        children: [(0, r.jsx)(u, {
           user: t
-        }), i, (0, r.jsx)(d, {
+        }), i, (0, r.jsx)(u, {
           user: n
         })]
       })

@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => u
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -9,18 +9,19 @@ var i = n(481060),
   a = n(503899),
   l = n(292352),
   o = n(981631),
-  c = n(388032),
-  d = n(825307);
+  c = n(635357),
+  d = n(388032),
+  u = n(825307);
 
-function u() {
+function m() {
   return (0, r.jsxs)(i.zxk, {
-    innerClassName: d.qrCodeButtonContent,
+    innerClassName: u.qrCodeButtonContent,
     size: i.zxk.Sizes.LARGE,
     onClick: () => {
       (0, i.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("62729"), n.e("90688")]).then(n.bind(n, 978305));
+        } = await Promise.all([n.e("53419"), n.e("90688")]).then(n.bind(n, 978305));
         return t => (0, r.jsx)(e, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -43,6 +44,6 @@ function u() {
         action: l.YC.ShowQRCodeModal
       })
     },
-    children: [(0, r.jsx)(a.Z, {}), c.NW.string(c.t.Ta9byc)]
+    children: [(0, r.jsx)(a.Z, {}), d.NW.string(c.Z.Ta9byc)]
   })
 }
