@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 28b9166eced13fe7
+  Original File Name: 764b335ad987eb3c
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -3211,16 +3211,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .premiumIcon_f73e93.fullPrice_f73e93 {
     margin-right: 2px
-}
-
-.externalProductWrapper__320c6 {
-    width: 100%;
-    height: 252px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -o-object-fit: contain;
-    object-fit: contain
 }
 
 .priceTag_cb53f6 {

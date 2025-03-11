@@ -15,8 +15,8 @@ var r = n(200651),
   p = n(314897),
   g = n(701190),
   f = n(626135),
-  _ = n(768581),
-  m = n(823379),
+  m = n(768581),
+  _ = n(823379),
   b = n(264229),
   x = n(230224),
   N = n(617730),
@@ -82,7 +82,7 @@ let y = e => {
     case I.r2o.RESOLVING:
       return 0;
     default:
-      (0, m.vE)(n)
+      (0, _.vE)(n)
   }
 };
 
@@ -204,7 +204,7 @@ function R(e) {
     guild: i
   } = null != t ? t : {}, o = {};
   if ((null == i ? void 0 : i.splash) != null) {
-    let e = _.ZP.getGuildSplashURL({
+    let e = m.ZP.getGuildSplashURL({
       id: i.id,
       splash: i.splash
     });

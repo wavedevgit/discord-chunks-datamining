@@ -1,24 +1,25 @@
-/** Chunk was on 99277 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  KO: () => s,
+  KO: () => l,
   X2: () => u,
   o0: () => c,
-  xJ: () => a
+  xJ: () => s
 });
 var r = n(317257),
   i = n(388032),
   o = n(223640),
-  l = n(406449);
-let a = "1342211853484429445",
-  s = {
+  a = n(406449);
+let s = "1342211853484429445",
+  l = {
     "1333912750274904064": {
-      asset: l.Z
+      asset: a.Z
     },
-    [a]: {
+    [s]: {
       asset: o
     }
   },
-  c = e => e in s,
+  c = e => e in l,
   u = () => ({
     id: r.l.ORB_PROFILE_BADGE,
     icon: o,

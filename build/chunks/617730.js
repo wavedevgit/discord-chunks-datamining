@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => m
+  Z: () => _
 });
 var r = n(200651);
 n(192379);
@@ -46,7 +46,7 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = e => {
+let m = e => {
   let {
     state: t
   } = e;
@@ -59,19 +59,19 @@ let _ = e => {
   }
 };
 
-function m(e) {
+function _(e) {
   let {
     invite: t,
     onAcceptInvite: n,
-    disableUser: m = !1
+    disableUser: _ = !1
   } = e;
   if (null == t) return null;
   let b = null != t.guild ? new l.ZP(t.guild) : null,
     x = null != t.channel ? (0, a.jD)(t.channel) : null,
     N = null != t.target_application ? new o.ZP(t.target_application) : null,
-    v = m || null == t.inviter ? null : new s.Z(t.inviter),
+    v = _ || null == t.inviter ? null : new s.Z(t.inviter),
     I = !(null != t.approximate_member_count && t.approximate_member_count > c.mx || null != b && b.hasFeature(d.oNc.COMMUNITY)) && null != v && (0, c.WT)(t),
-    E = _(t),
+    E = m(t),
     C = {
       invite: t,
       user: v,
