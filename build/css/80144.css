@@ -1,6 +1,6 @@
 /**
   Module ID: 80144
-  Original File Name: ff7daf3acecb2f5e
+  Original File Name: 4a0a8417a03d2176
 **/
 .row__19fd1 {
     align-items: center;
@@ -102,4 +102,10 @@
     display: flex;
     align-items: center;
     gap: var(--spacing-4)
+}
+
+.modalClose_a2e66b {
+    position: absolute;
+    right: var(--spacing-16);
+    top: var(--spacing-16)
 }

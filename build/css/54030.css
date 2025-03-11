@@ -1,6 +1,6 @@
 /**
   Module ID: 54030
-  Original File Name: 36a11bc916420131
+  Original File Name: 0dc994eba95e713b
 **/
 .key__98feb {
     display: inline-block;
@@ -799,11 +799,18 @@
     font-size: 14px
 }
 
+.tabBarContainer_fe7ab2 {
+    display: flex;
+    align-items: center;
+    width: 100%
+}
+
 .tabBar_fe7ab2 {
     border-bottom: 1px solid var(--background-tertiary);
     background: var(--background-secondary);
     height: 36px;
-    flex-shrink: 0
+    flex-shrink: 0;
+    width: 95%
 }
 
 .tabBar_fe7ab2,.tabItem_fe7ab2 {
@@ -835,12 +842,16 @@
     border-bottom-color: var(--control-brand-foreground)
 }
 
+.menu_fe7ab2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 5%;
+    height: 100%
+}
+
 .overflowChevron_fe7ab2 {
-    display: inline-block;
-    padding: 0 6px 2px;
-    height: 16px;
-    position: relative;
-    top: -10px
+    height: 100%;
+    position: relative
 }
 
 .table_fe7ab2,.tableContainer_fe7ab2 {

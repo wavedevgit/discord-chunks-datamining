@@ -72,72 +72,78 @@ function h(e) {
     })
   }, [t, x, i, n]);
   return (0, r.jsxs)("div", {
-    className: u.tabBar,
-    ref: l,
-    children: [t.map(e => {
-      let {
-        id: t,
-        name: a
-      } = e;
-      if (!x.includes(t)) return (0, r.jsx)(m, {
-        id: t,
-        selected: n === t,
-        ref: e => {
-          var n, r, a;
-          let i = null !== (r = null === (n = p.current.get(t)) || void 0 === n ? void 0 : n.width) && void 0 !== r ? r : 0;
-          p.current.set(t, {
-            node: e,
-            width: null !== (a = null == e ? void 0 : e.getBoundingClientRect().width) && void 0 !== a ? a : i
-          })
-        },
-        onClick: n !== t ? () => i(t) : void 0,
-        children: a
-      }, t)
-    }).filter(c.lm), x.length > 0 && (0, r.jsx)(o.yRy, {
-      layerContext: d.O$,
-      renderPopout: g,
-      position: "bottom",
-      align: "right",
-      spacing: 0,
-      children: e => {
-        var t, n;
-        return (0, r.jsx)(o.zxk, (t = function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-              }) : e[t] = r
+    className: u.tabBarContainer,
+    children: [(0, r.jsx)("div", {
+      className: u.tabBar,
+      ref: l,
+      children: t.map(e => {
+        let {
+          id: t,
+          name: a
+        } = e;
+        if (!x.includes(t)) return (0, r.jsx)(m, {
+          id: t,
+          selected: n === t,
+          ref: e => {
+            var n, r, a;
+            let i = null !== (r = null === (n = p.current.get(t)) || void 0 === n ? void 0 : n.width) && void 0 !== r ? r : 0;
+            p.current.set(t, {
+              node: e,
+              width: null !== (a = null == e ? void 0 : e.getBoundingClientRect().width) && void 0 !== a ? a : i
             })
-          }
-          return e
-        }({}, e), n = n = {
-          className: u.overflowChevron,
-          size: o.zxk.Sizes.ICON,
-          look: o.zxk.Looks.BLANK,
-          children: (0, r.jsx)(s.Z, {
-            className: u.__invalid_overflowIcon,
-            width: 16,
-            height: 16
-          })
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-          var n = Object.keys(e);
-          if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-          }
-          return n
-        })(Object(n)).forEach(function(e) {
-          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-        }), t))
-      }
+          },
+          onClick: n !== t ? () => i(t) : void 0,
+          children: a
+        }, t)
+      }).filter(c.lm)
+    }), (0, r.jsx)("div", {
+      className: u.menu,
+      children: x.length > 0 && (0, r.jsx)(o.yRy, {
+        layerContext: d.O$,
+        renderPopout: g,
+        position: "bottom",
+        align: "right",
+        spacing: 0,
+        children: e => {
+          var t, n;
+          return (0, r.jsx)(o.zxk, (t = function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var n = null != arguments[t] ? arguments[t] : {},
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
+                  enumerable: !0,
+                  configurable: !0,
+                  writable: !0
+                }) : e[t] = r
+              })
+            }
+            return e
+          }({}, e), n = n = {
+            className: u.overflowChevron,
+            size: o.zxk.Sizes.ICON,
+            look: o.zxk.Looks.BLANK,
+            children: (0, r.jsx)(s.Z, {
+              className: u.__invalid_overflowIcon,
+              width: 16,
+              height: 16
+            })
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+            var n = Object.keys(e);
+            if (Object.getOwnPropertySymbols) {
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
+            }
+            return n
+          })(Object(n)).forEach(function(e) {
+            Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+          }), t))
+        }
+      })
     })]
   })
 }

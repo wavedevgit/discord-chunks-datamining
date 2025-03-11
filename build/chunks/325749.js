@@ -9,8 +9,8 @@ var o = t(200651),
   l = t(442837),
   c = t(481060),
   u = t(13245),
-  s = t(753972),
-  _ = t(812206),
+  _ = t(753972),
+  s = t(812206),
   d = t(726721),
   p = t(610394),
   f = t(522474),
@@ -31,20 +31,20 @@ var o = t(200651),
   k = t(228488),
   T = t(145597),
   Z = t(214629),
-  S = t(317381),
-  B = t(884338),
+  B = t(317381),
+  S = t(884338),
   A = t(473179),
   E = t(932174),
   W = t(981631),
   z = t(388032),
   U = t(231784);
-let D = B.u.SIZE_24;
+let D = S.u.SIZE_24;
 
 function L(e) {
   let {
     applicationId: n,
     channelId: t
-  } = e, a = (0, l.e7)([_.Z], () => _.Z.getApplication(n)), L = (0, l.e7)([S.ZP], () => S.ZP.getSelfEmbeddedActivities().get(n)), R = (0, l.e7)([I.Z], () => I.Z.getChannel(t)), M = m.Sb.useSetting(), G = (0, l.Wu)([P.ZP], () => {
+  } = e, a = (0, l.e7)([s.Z], () => s.Z.getApplication(n)), L = (0, l.e7)([B.ZP], () => B.ZP.getSelfEmbeddedActivities().get(n)), R = (0, l.e7)([I.Z], () => I.Z.getChannel(t)), M = m.Sb.useSetting(), G = (0, l.Wu)([P.ZP], () => {
     var e;
     return null == R || null == L ? [] : Array.from(null !== (e = L.userIds) && void 0 !== e ? e : []).map(e => P.ZP.getMember(R.guild_id, e))
   }, [L, R]), Y = r.useMemo(() => {
@@ -112,7 +112,7 @@ function L(e) {
     }
   }();
   if (null == a || null == L) return null;
-  let eo = (0, o.jsx)(s.Z, {
+  let eo = (0, o.jsx)(_.Z, {
     application: a,
     size: 24,
     className: U.appIcon
@@ -138,7 +138,7 @@ function L(e) {
             color: "text-muted",
             children: "."
           })
-        }), (0, o.jsx)(B.Z, {
+        }), (0, o.jsx)(S.Z, {
           renderIcon: !1,
           users: K,
           size: D,

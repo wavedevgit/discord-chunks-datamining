@@ -4,7 +4,7 @@ n.d(t, {
   $j: () => p,
   Eo: () => c,
   Fr: () => i,
-  Kj: () => a,
+  Kj: () => o,
   Kr: () => f,
   RF: () => l,
   XA: () => u,
@@ -14,8 +14,7 @@ var r = n(481060),
   i = function(e) {
     return e.HERO_BANNER_STATIC = "hero_banner", e.HERO_BANNER_ANIMATED = "hero_banner_animated", e.HERO_LOGO = "hero_logo", e.FEATURED_BLOCK = "featured_block", e.CATEGORY_BANNER_STATIC = "category_banner", e.CATEGORY_BANNER_ANIMATED = "category_banner_animated", e.UPSELL_BANNER = "upsell_banner", e.UPSELL_BANNER_POPOUT = "upsell_popout", e.PDP_BACKGROUND = "pdp_bg", e.PDP_LOGO = "pdp_logo", e.COLLECTED_MODAL_BG = "collected_modal_bg", e
   }({});
-let o = ".DS_Store",
-  a = {
+let o = {
     "hero_banner.jpg": "hero_banner",
     "hero_banner_animated.webm": "hero_banner_animated",
     "hero_logo.png": "hero_logo",
@@ -28,12 +27,13 @@ let o = ".DS_Store",
     "pdp_logo.png": "pdp_logo",
     "collected_modal_bg.jpg": "collected_modal_bg"
   },
+  a = ".DS_Store",
   s = async e => {
     let t = [];
     if (e.isFile) {
       let n = e,
         r = await new Promise(e => n.file(e));
-      r.name !== o && t.push(r)
+      r.name !== a && t.push(r)
     } else if (e.isDirectory) {
       let n = e.createReader(),
         r = await new Promise(e => n.readEntries(e)),

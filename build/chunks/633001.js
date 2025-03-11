@@ -119,7 +119,7 @@ function R(e) {
   })
 }
 
-function A(e) {
+function L(e) {
   let {
     trackedGame: t
   } = e, n = (0, s.e7)([h.ZP], () => h.ZP.getGameForPID(t.pid)), a = (0, s.e7)([g.Z], () => g.Z.getGameForPID(t.pid));
@@ -195,7 +195,7 @@ function A(e) {
   })
 }
 
-function L(e) {
+function A(e) {
   let {
     pid: t
   } = e, n = (0, s.cj)([v.default], () => v.default.getOverlayPIDStatuses()), a = (0, s.cj)([x.default], () => x.default.getTrackedGames()), i = (0, s.e7)([v.default], () => v.default.isInputLocked(t), [t]), l = (0, s.e7)([v.default], () => v.default.DEV_isInputLockedV3(t), [t]), o = (0, s.e7)([v.default], () => v.default.DEV_isInputLocked(t), [t]), d = (0, s.e7)([v.default], () => v.default.isReady(t), [t]);
@@ -292,15 +292,15 @@ function B() {
     value: m.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION
   }].map(e => w(k({}, e), {
     label: "".concat(e.label, " ").concat(S === e.value ? "(current)" : "")
-  })), F = (0, s.cj)([x.default], () => x.default.getTrackedGames()), G = (0, s.e7)([v.default], () => v.default.getFocusedPID()), W = (0, s.e7)([v.default], () => v.default.isFocusedPidOutOfProcess()), U = (0, C.getPID)(), H = (0, s.e7)([x.default], () => x.default.isOverlayOOPEnabledForPid(U), [U]), V = (0, s.e7)([h.ZP], () => h.ZP.getRunningGames());
+  })), F = (0, s.cj)([x.default], () => x.default.getTrackedGames()), G = (0, s.e7)([v.default], () => v.default.getFocusedPID()), W = (0, s.e7)([v.default], () => v.default.isFocusedPidOutOfProcess()), U = (0, C.getPID)(), V = (0, s.e7)([x.default], () => x.default.isOverlayOOPEnabledForPid(U), [U]), H = (0, s.e7)([h.ZP], () => h.ZP.getRunningGames());
   a.useEffect(() => {
     Z(e => {
       for (let t of Object.keys(F)) e[Number(t)] = F[Number(t)];
       return e
     })
   }, [F]);
-  let [X, Y] = a.useState({}), J = a.useRef();
-  a.useEffect(() => (J.current = setInterval(async () => {
+  let [X, Y] = a.useState({}), K = a.useRef();
+  a.useEffect(() => (K.current = setInterval(async () => {
     let e = h.ZP.getRunningGames(),
       t = [],
       n = Date.now();
@@ -317,21 +317,21 @@ function B() {
         timestamp: i
       }]), e
     }, k({}, e)))
-  }, 10 * y.Z.Millis.SECOND), () => clearInterval(J.current)), []);
-  let K = e => {
+  }, 10 * y.Z.Millis.SECOND), () => clearInterval(K.current)), []);
+  let J = e => {
       u.Z.setRenderDebugMode(!b.ZP.hasRenderDebugMode(e), e)
     },
     q = () => {
-      K(p.G.ClickZones)
+      J(p.G.ClickZones)
     },
     $ = () => {
-      K(p.G.WidgetAreas)
+      J(p.G.WidgetAreas)
     },
     Q = () => {
-      K(p.G.DisabledGPUBoost)
+      J(p.G.DisabledGPUBoost)
     },
     ee = () => {
-      K(p.G.ForceGPUBoost)
+      J(p.G.ForceGPUBoost)
     },
     et = e => {
       var t, n;
@@ -341,7 +341,7 @@ function B() {
       var t, n;
       return null !== (n = null === (t = P[e]) || void 0 === t ? void 0 : t.fullscreenType) && void 0 !== n ? n : "Unknown"
     },
-    er = V.filter(e => null == F[e.pid]);
+    er = H.filter(e => null == F[e.pid]);
   return (0, r.jsx)(c.w0Z, {
     children: (0, r.jsxs)("div", {
       className: l()(I.panel, E.panel),
@@ -497,7 +497,7 @@ function B() {
               variant: "text-sm/normal",
               color: "text-normal",
               children: "No running games"
-            }), Object.values(F).map(e => (0, r.jsx)(A, {
+            }), Object.values(F).map(e => (0, r.jsx)(L, {
               trackedGame: e
             }, e.pid))]
           })
@@ -508,7 +508,7 @@ function B() {
           variant: "text-sm/normal",
           color: "text-normal",
           children: "No tracked game times"
-        }), Object.values(F).map(e => (0, r.jsx)(L, {
+        }), Object.values(F).map(e => (0, r.jsx)(A, {
           pid: e.pid
         }, e.pid)), (0, r.jsxs)("div", {
           children: [(0, r.jsxs)(c.Text, {
@@ -526,7 +526,7 @@ function B() {
           }), (0, r.jsxs)(c.Text, {
             variant: "text-sm/normal",
             color: "text-secondary",
-            children: ["isOOPEnabledForPid: ", H ? "Yes" : "No"]
+            children: ["isOOPEnabledForPid: ", V ? "Yes" : "No"]
           })]
         })]
       }), (0, r.jsx)(c.ua7, {

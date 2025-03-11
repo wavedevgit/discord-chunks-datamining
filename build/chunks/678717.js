@@ -35,8 +35,8 @@ var g = n(392750),
   P = n(735959),
   Z = n(246992),
   R = n(496025),
-  A = n(442954),
-  L = n(633001),
+  L = n(442954),
+  A = n(633001),
   D = n(702904),
   B = n(178821),
   M = n(958328),
@@ -45,12 +45,12 @@ var g = n(392750),
   G = n(384207),
   W = n(264603),
   U = n(678639),
-  H = n(351930),
-  V = n(771751),
+  V = n(351930),
+  H = n(771751),
   X = n(596768),
   Y = n(56706),
-  J = n(621060),
-  K = n(388032),
+  K = n(621060),
+  J = n(388032),
   q = n(320316),
   $ = n(710662);
 
@@ -119,7 +119,7 @@ function ee() {
       }), e.push({
         id: "overlay",
         name: "Overlay v3",
-        render: () => (0, r.jsx)(L.Z, {})
+        render: () => (0, r.jsx)(A.Z, {})
       }), e.push({
         id: "slayer_sdk",
         name: "Slayer SDK",
@@ -159,7 +159,7 @@ function ee() {
       }), e.push({
         id: "modals",
         name: "Modals",
-        render: () => (0, r.jsx)(A.Z, {})
+        render: () => (0, r.jsx)(L.Z, {})
       }), e.push({
         id: "affinity",
         name: "Affinity",
@@ -179,7 +179,7 @@ function ee() {
       }), window.GLOBAL_ENV.RELEASE_CHANNEL.startsWith("staging") && (e.push({
         id: "trials",
         name: "Trials",
-        render: () => (0, r.jsx)(V.Z, {})
+        render: () => (0, r.jsx)(H.Z, {})
       }), e.push({
         id: "payments",
         name: "Payments",
@@ -187,7 +187,7 @@ function ee() {
       }), e.push({
         id: "subscriptions",
         name: "Subscriptions",
-        render: () => (0, r.jsx)(H.Z, {})
+        render: () => (0, r.jsx)(V.Z, {})
       }), e.push({
         id: "billing",
         name: "Billing",
@@ -210,7 +210,7 @@ function ee() {
       TabBar: n,
       renderSelectedTab: i,
       selectedTabId: l
-    } = (0, J.Z)({
+    } = (0, K.Z)({
       tabs: t,
       initialSelectedTabId: null !== (e = b.Z.lastOpenTabId) && void 0 !== e ? e : void 0,
       onChangeTab: e => {
@@ -230,7 +230,7 @@ function ee() {
       className: $.headerBar,
       toolbar: (0, r.jsx)(h.ZP.Icon, {
         icon: c.Dio,
-        tooltip: K.NW.string(K.t.cpT0Cg),
+        tooltip: J.NW.string(J.t.cpT0Cg),
         onClick: f.SO
       }),
       children: [(0, r.jsx)(h.ZP.Icon, {

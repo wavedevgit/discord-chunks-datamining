@@ -9,8 +9,8 @@ var o = t(200651),
   l = t(481060),
   c = t(110924),
   u = t(40851),
-  s = t(812206),
-  _ = t(243778),
+  _ = t(812206),
+  s = t(243778),
   d = t(554370),
   p = t(788983),
   f = t(546247),
@@ -31,7 +31,7 @@ function I(e) {
     openNewUserExperienceModal: c
   } = function() {
     let e = [i.z.ACTIVITY_POPOUT_NUX_MODAL],
-      [n, a] = (0, _.US)(e);
+      [n, a] = (0, s.US)(e);
     return {
       showsNewUserExperience: n === i.z.ACTIVITY_POPOUT_NUX_MODAL,
       openNewUserExperienceModal: r.useCallback(() => {
@@ -85,13 +85,13 @@ function I(e) {
     a && c()
   }, [c, a]);
   let {
-    renderWindow: s
+    renderWindow: _
   } = r.useContext(u.ZP);
   return a ? (0, o.jsx)("div", {
     className: y.nuxBackground,
     children: (0, o.jsx)(f.Z, {
       eventTargetRef: {
-        current: s.document.body
+        current: _.document.body
       }
     })
   }) : n
@@ -117,14 +117,14 @@ function P() {
       (0, p.xv)(C.KJ3.ACTIVITY_POPOUT)
     }, 5e3))
   }, [e, u]);
-  let _ = (0, a.e7)([s.Z], () => {
+  let s = (0, a.e7)([_.Z], () => {
       let n = null == e ? void 0 : e.applicationId;
-      return null == n ? void 0 : s.Z.getApplication(n)
+      return null == n ? void 0 : _.Z.getApplication(n)
     }),
     f = (0, b.PR)();
   return (0, o.jsx)("div", {
     className: y.container,
-    children: null == e || null == _ ? (0, o.jsx)(l.$jN, {
+    children: null == e || null == s ? (0, o.jsx)(l.$jN, {
       className: y.iframe
     }) : (0, o.jsx)("div", {
       className: y.loadedContentContainer,
@@ -133,7 +133,7 @@ function P() {
         children: [(0, o.jsx)("div", {
           className: y.headerContainer,
           children: (0, o.jsx)(g.Z, {
-            applicationId: _.id,
+            applicationId: s.id,
             channelId: n
           })
         }), (0, o.jsx)("div", {
@@ -143,7 +143,7 @@ function P() {
               channelId: n,
               guildId: t,
               embeddedActivity: e,
-              application: _
+              application: s
             })
           })
         }), f ? (0, o.jsx)(d.Z, {

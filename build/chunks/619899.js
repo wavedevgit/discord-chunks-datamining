@@ -96,6 +96,7 @@ let p = (0, r.U)(e => ({
         let i = URL.createObjectURL(n),
           o = a({}, e.assets);
         return o[t] = {
+          type: t,
           name: n.name,
           src: i
         }, l(a({}, e), {

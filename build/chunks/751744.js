@@ -11,18 +11,18 @@ var o = n(200651),
   c = n(331692),
   d = n(103879),
   x = n(236289),
-  m = n(800530),
-  u = n(388032),
+  u = n(800530),
+  m = n(388032),
   h = n(330960);
 let f = [{
-    title: u.NW.string(u.t["1+E7LC"]),
-    description: u.NW.string(u.t.BXiat7)
+    title: m.NW.string(m.t["1+E7LC"]),
+    description: m.NW.string(m.t.BXiat7)
   }, {
-    title: u.NW.string(u.t.iMQXtL),
-    description: u.NW.string(u.t.oQ0vws)
+    title: m.NW.string(m.t.iMQXtL),
+    description: m.NW.string(m.t.oQ0vws)
   }, {
-    title: u.NW.string(u.t["oY/z1d"]),
-    description: u.NW.string(u.t.wtj02d)
+    title: m.NW.string(m.t["oY/z1d"]),
+    description: m.NW.string(m.t.wtj02d)
   }],
   N = function(e) {
     let {
@@ -36,7 +36,8 @@ let f = [{
     return i.useEffect(() => {
       "" !== N && l.Z.showAgeVerification({
         webviewUrl: N,
-        onComplete: j
+        onComplete: j,
+        useV1: !0
       })
     }, [N, j]), (0, o.jsxs)(s.Y0X, {
       transitionState: n,
@@ -47,11 +48,11 @@ let f = [{
           className: h.header,
           children: [(0, o.jsx)(s.X6q, {
             variant: "heading-xl/bold",
-            children: u.NW.string(u.t["9SDLnp"])
+            children: m.NW.string(m.t["9SDLnp"])
           }), (0, o.jsx)(s.X6q, {
             variant: "heading-md/normal",
             color: "header-secondary",
-            children: u.NW.string(u.t["yvx///"])
+            children: m.NW.string(m.t["yvx///"])
           })]
         }), (0, o.jsx)("div", {
           className: h.listContent,
@@ -77,24 +78,24 @@ let f = [{
             variant: "text-sm/semibold",
             className: h.optionEyebrow,
             color: "header-secondary",
-            children: u.NW.string(u.t.WPwp1d)
+            children: m.NW.string(m.t.WPwp1d)
           }), (0, o.jsx)("div", {
             className: h.table,
             children: (0, o.jsx)(a.ZP, {
-              title: u.NW.string(u.t.N9WJMD),
-              description: u.NW.string(u.t["NHq38/"]),
-              buttonText: u.NW.string(u.t["9iy4lJ"]),
+              title: m.NW.string(m.t.N9WJMD),
+              description: m.NW.string(m.t["NHq38/"]),
+              buttonText: m.NW.string(m.t["9iy4lJ"]),
               buttonColor: s.zxk.Colors.PRIMARY,
               titleVariant: "text-md/medium",
-              onButtonPress: () => window.open(m.sQ.AGE_VERIFICATION_LINK, "_blank")
+              onButtonPress: () => window.open(u.sQ.AGE_VERIFICATION_LINK, "_blank")
             })
           }), (0, o.jsx)("div", {
             className: h.learnMore,
             children: (0, o.jsx)(s.X6q, {
               variant: "heading-sm/medium",
               color: "text-secondary",
-              children: u.NW.format(u.t.ZbWsOD, {
-                learnMoreLink: m.sQ.LEARN_MORE_UU_APPEAL_LINK
+              children: m.NW.format(m.t.ZbWsOD, {
+                learnMoreLink: u.sQ.LEARN_MORE_UU_APPEAL_LINK
               })
             })
           })]
@@ -104,13 +105,13 @@ let f = [{
         children: [(0, o.jsx)(s.zxk, {
           onClick: d.FN,
           submitting: b,
-          children: u.NW.string(u.t["54b8V1"])
+          children: m.NW.string(m.t["54b8V1"])
         }), (0, o.jsx)(s.zxk, {
           color: s.zxk.Colors.TRANSPARENT,
           look: s.zxk.Looks.BLANK,
           onClick: _,
           className: h.cancelButton,
-          children: u.NW.string(u.t.dKacJy)
+          children: m.NW.string(m.t.dKacJy)
         })]
       })]
     })

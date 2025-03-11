@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 764b335ad987eb3c
+  Original File Name: efcef4304730663a
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -20,11 +20,18 @@
     font-size: 14px
 }
 
+.tabBarContainer_fe7ab2 {
+    display: flex;
+    align-items: center;
+    width: 100%
+}
+
 .tabBar_fe7ab2 {
     border-bottom: 1px solid var(--background-tertiary);
     background: var(--background-secondary);
     height: 36px;
-    flex-shrink: 0
+    flex-shrink: 0;
+    width: 95%
 }
 
 .tabBar_fe7ab2,.tabItem_fe7ab2 {
@@ -56,12 +63,16 @@
     border-bottom-color: var(--control-brand-foreground)
 }
 
+.menu_fe7ab2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 5%;
+    height: 100%
+}
+
 .overflowChevron_fe7ab2 {
-    display: inline-block;
-    padding: 0 6px 2px;
-    height: 16px;
-    position: relative;
-    top: -10px
+    height: 100%;
+    position: relative
 }
 
 .table_fe7ab2,.tableContainer_fe7ab2 {
@@ -5280,6 +5291,33 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-top: 12px
 }
 
+.container_ccfb90 {
+    padding: 16px;
+    max-width: 480px
+}
+
+.modalHeader_ccfb90 {
+    justify-content: center;
+    margin-bottom: 8px
+}
+
+.modalContent_ccfb90 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.instructionsList_ccfb90 {
+    margin-left: 16px
+}
+
+.instructionsList_ccfb90 li {
+    color: var(--text-secondary);
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-bottom: 8px
+}
+
 .uploadArea_dae93f {
     position: absolute;
     top: 0;
@@ -5398,19 +5436,28 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin: 8px 0
 }
 
-.assetSelectorContainer__77347,.previewToggleContainer__77347 {
+.previewToggleContainer__77347,.uploadInstructionsContainer__77347 {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 8px
 }
 
-.assetSelector__77347 {
-    flex: 3
+.uploadedFileListItem__77347 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px
 }
 
-.removeAssetButton__77347 {
-    flex: 1
+.ignoredFileListItem__77347 {
+    margin-left: 24px;
+    padding: 4px 0;
+    list-style-type: disc
+}
+
+.removeFileButtonInnerContents__77347 {
+    height: 24px
 }
 
 .panel__6dc2e {

@@ -105,11 +105,11 @@ function T(e) {
     return t === w
   })) || void 0 === t ? void 0 : t.label) && void 0 !== n ? n : "Unknown";
   null != Z && (R = "".concat(R, " from @").concat(Z.username));
-  let A = null != I,
-    L = null != I && new Date(I).getTime() < Date.now(),
+  let L = null != I,
+    A = null != I && new Date(I).getTime() < Date.now(),
     D = (null == P ? void 0 : P.sku_id) === b.Si.TIER_0,
     B = async () => {
-      T(!0), A ? await M({
+      T(!0), L ? await M({
         expiresAt: null
       }) : await (0, d.a)(u), x(), T(!1)
     }, M = async e => {
@@ -148,7 +148,7 @@ function T(e) {
     }
   }, [_, j]);
   let z = "Active";
-  return A && (z = "Acknowledged"), L && (z = "Expired"), (0, r.jsxs)("div", {
+  return L && (z = "Acknowledged"), A && (z = "Expired"), (0, r.jsxs)("div", {
     className: l()(g.card, D ? g.gradientWrapperTier0 : g.gradientWrapperTier2),
     children: [(0, r.jsxs)("div", {
       className: l()(g.row, g.nameRow),
@@ -231,8 +231,8 @@ function T(e) {
       children: [(0, r.jsx)(c.P3F, {
         onClick: B,
         className: l()(g.badge, g.clickable, {
-          [g.acked]: A,
-          [g.expired]: L
+          [g.acked]: L,
+          [g.expired]: A
         }),
         children: (0, r.jsx)(c.Text, {
           variant: "eyebrow",

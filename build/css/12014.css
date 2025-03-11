@@ -1,6 +1,6 @@
 /**
   Module ID: 12014
-  Original File Name: 9b4d9a6dbcfeeed6
+  Original File Name: f1556055abeea9b3
 **/
 .root__10a0c {
     min-width: -moz-fit-content;
@@ -23,4 +23,10 @@
 .cancelButton__10a0c {
     align-self: flex-end;
     color: var(--interactive-normal)
+}
+
+.footer__10a0c {
+    display: flex;
+    justify-content: space-between;
+    width: 100%
 }
