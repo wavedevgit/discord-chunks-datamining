@@ -36,9 +36,9 @@ function s(e) {
     } = await Promise.all([n.e("17938"), n.e("54433"), n.e("27860")]).then(n.bind(n, 7305));
     return n => {
       var x, O, {
-          onClose: E
+          onClose: j
         } = n,
-        j = function(e, t) {
+        E = function(e, t) {
           if (null == e) return {};
           var n, r, i = function(e, t) {
             if (null == e) return {};
@@ -76,10 +76,10 @@ function s(e) {
                 })
               }
               return e
-            }({}, j), O = O = {
+            }({}, E), O = O = {
               initialPlanId: t,
               onClose: e => {
-                E(), null == u || u(e)
+                j(), null == u || u(e)
               },
               analyticsLocations: f,
               analyticsObject: p,

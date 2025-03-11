@@ -1,6 +1,6 @@
 /** Chunk was on 39251 **/
 n.d(t, {
-  Z: () => E
+  Z: () => j
 }), n(789020), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -23,9 +23,9 @@ var r = n(200651),
   x = n(388032),
   O = n(651873);
 
-function E(e) {
-  var t, E;
-  let j, N, C, {
+function j(e) {
+  var t, j;
+  let E, N, C, {
       onTransitionToInviteChannel: I,
       onAcceptInstantInvite: S,
       guild: T,
@@ -46,7 +46,7 @@ function E(e) {
     U = null != M && M.isGuildVocal(),
     B = null != M && M.isGuildStageVoice(),
     G = (0, h.yE)(null !== (t = P.flags) && void 0 !== t ? t : 0, a.$.IS_GUEST_INVITE),
-    H = null !== (E = null == T ? void 0 : T.hasFeature(y.oNc.HUB)) && void 0 !== E && E,
+    H = null !== (j = null == T ? void 0 : T.hasFeature(y.oNc.HUB)) && void 0 !== j && j,
     V = (0, d.h)(),
     z = null == T ? void 0 : T.id,
     {
@@ -104,7 +104,7 @@ function E(e) {
     })
   })), U ? (N = (0, r.jsx)(m.Z.Channel, {
     channel: M
-  }), j = (0, r.jsxs)("span", {
+  }), E = (0, r.jsxs)("span", {
     className: O.infoTitle,
     children: [x.NW.format(x.t["2wimj4"], {
       guildName: T.name
@@ -115,10 +115,10 @@ function E(e) {
         isBannerVisible: !1
       })
     })]
-  })) : null != R && R >= 5 || null != D && D > 0 ? j = (0, r.jsx)(m.Z.Data, {
+  })) : null != R && R >= 5 || null != D && D > 0 ? E = (0, r.jsx)(m.Z.Data, {
     members: R,
     membersOnline: D
-  }) : F && (j = (0, r.jsx)(m.Z.Channel, {
+  }) : F && (E = (0, r.jsx)(m.Z.Channel, {
     channel: M,
     guild: T
   })), (0, r.jsxs)(m.Z, {
@@ -135,7 +135,7 @@ function E(e) {
         }), (0, r.jsx)(m.Z.Info, {
           title: N,
           onClick: Q,
-          children: j
+          children: E
         })]
       }), (0, r.jsx)(m.Z.Button, {
         onClick: J,

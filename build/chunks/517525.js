@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => M
 }), n(47120);
 var r = n(200651),
-  l = n(192379),
-  i = n(120356),
-  o = n.n(i),
+  i = n(192379),
+  l = n(120356),
+  o = n.n(l),
   a = n(642128),
   s = n(468194),
   c = n(442837),
@@ -85,7 +85,7 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
     clamp: !0
   },
   k = e => {
-    let t, i, {
+    let t, l, {
         participant: a,
         isUpsellEnabled: s,
         shape: d,
@@ -106,17 +106,17 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
       t = !1
     }
     try {
-      i = (0, E.tR)(R)
+      l = (0, E.tR)(R)
     } catch (e) {
-      i = !1
+      l = !1
     }
-    let D = t || i,
+    let D = t || l,
       {
         location: k
       } = (0, m.O)(),
       M = (0, c.e7)([b.default], () => b.default.getCurrentUser()),
       L = s && !y.ZP.isPremium(M, x.p9.TIER_1) && !y.ZP.canStreamQuality(y.ZP.StreamQuality.MID, M),
-      W = l.useCallback(() => {
+      W = i.useCallback(() => {
         L && D && (0, f.ZDy)(async () => {
           let {
             default: e
@@ -126,14 +126,14 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
           }))
         })
       }, [L, D, k]);
-    if (l.useEffect(() => {
+    if (i.useEffect(() => {
         !P && D && (g.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
           type: x.cd.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
-          has_premium_stream_resolution: i,
+          has_premium_stream_resolution: l,
           location_stack: T
         }), N(!0))
-      }, [t, i, D, P, N, T]), null == R) return null;
+      }, [t, l, D, P, N, T]), null == R) return null;
     let F = (0, r.jsx)(f.ua7, {
       text: A ? j.NW.string(j.t.q8TiVl) : D ? j.NW.string(j.t.IHgpEh) : j.NW.string(j.t.vLb0VV),
       position: "bottom",
@@ -168,14 +168,14 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
     let {
       participant: t,
       showQuality: n,
-      isUpsellEnabled: i = !0,
+      isUpsellEnabled: l = !0,
       size: s,
       className: c,
       premiumIndicator: u
-    } = e, [d, m] = l.useState(!1), p = (0, E.Wc)(t), {
+    } = e, [d, m] = i.useState(!1), p = (0, E.Wc)(t), {
       reducedMotion: b
-    } = l.useContext(f.Sfi), g = n && null != p;
-    l.useEffect(() => {
+    } = i.useContext(f.Sfi), g = n && null != p;
+    i.useEffect(() => {
       (0, v.Z)(t.stream.ownerId, t.user.getAvatarURL(t.stream.guildId, 80), {
         dispatchWait: !0
       })
@@ -195,11 +195,11 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
     return (e => {
       let {
         className: n,
-        popoutProps: l
+        popoutProps: i
       } = e;
       return (0, r.jsxs)("div", w(Z({
         className: o()(C.streamQualityIndicator, n)
-      }, l), {
+      }, i), {
         children: [y((e, n) => n ? (0, r.jsx)(a.animated.div, {
           style: e,
           children: (0, r.jsx)(k, {
@@ -207,7 +207,7 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
             participant: t,
             size: s,
             shape: f.Dv2.ROUND_LEFT,
-            isUpsellEnabled: i,
+            isUpsellEnabled: l,
             didTrackUpsellViewed: d,
             setDidTrackUpsellViewed: m,
             premiumIndicator: u

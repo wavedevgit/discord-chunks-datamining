@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: c6921baeb6cbbd4a
+  Original File Name: 2a358f2230ceff10
 **/
 .container__46ab5 {
     text-align: center;
@@ -6715,9 +6715,8 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
     opacity: 1
 }
 
-.tideButton__4ed1a {
-    background: linear-gradient(-8deg,rgba(13,243,243,.3) -15.16%,rgba(13,174,243,.5) 9.84%,rgba(43,45,49,0) 50%);
-    background-clip: content-box
+.visual-refresh .marketingButtonBackgroundImage__4ed1a {
+    transform: translateY(4px)
 }
 
 .countDown__61bcd {

@@ -3,8 +3,8 @@ n.d(t, {
   j: () => a
 });
 var r = n(200651),
-  l = n(192379),
-  i = n(709014);
+  i = n(192379),
+  l = n(709014);
 let o = {
     all: {
       name: "all",
@@ -13,25 +13,25 @@ let o = {
     }
   },
   a = () => {
-    let e = l.useRef(null),
-      t = l.useCallback(() => {
+    let e = i.useRef(null),
+      t = i.useCallback(() => {
         null != e.current && e.current.play("all")
       }, []),
-      a = l.useCallback(() => {
+      a = i.useCallback(() => {
         null != e.current && e.current.play("all")
       }, []);
     return {
       events: {
         onClick: t,
         onMouseEnter: a,
-        onMouseLeave: l.useCallback(() => {
+        onMouseLeave: i.useCallback(() => {
           null != e.current && e.current.stopIfPlaying("all")
         }, [])
       },
       play: t,
-      Component: l.useCallback(t => {
-        var l, a;
-        return (0, r.jsx)(i.L, (l = function(e) {
+      Component: i.useCallback(t => {
+        var i, a;
+        return (0, r.jsx)(l.L, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -52,7 +52,7 @@ let o = {
           src: () => n.e("66944").then(n.t.bind(n, 166174, 19)),
           ref: e,
           markers: o
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
@@ -60,8 +60,8 @@ let o = {
           }
           return n
         })(Object(a)).forEach(function(e) {
-          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
-        }), l))
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+        }), i))
       }, [])
     }
   }

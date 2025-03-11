@@ -22,8 +22,8 @@ var r = n(200651),
   y = n(55935),
   x = n(655354),
   O = n(809780),
-  E = n(981631),
-  j = n(388032),
+  j = n(981631),
+  E = n(388032),
   N = n(660056);
 let C = {
   left: 4,
@@ -107,7 +107,7 @@ function S(e) {
     location: "20e3b0_1"
   }, {
     autoTrackExposure: !1
-  }), x = g.jU.useSetting(), C = (0, s.e7)([b.Z], () => b.Z.can(E.Plq.CREATE_INSTANT_INVITE, a)), S = (0, m.P1)(a), T = !1, P = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), A = null !== (n = null === (t = v.default.getUser(_.default.getId())) || void 0 === t ? void 0 : t.hasFlag(E.xW$.SPAMMER)) && void 0 !== n && n, w = [];
+  }), x = g.jU.useSetting(), C = (0, s.e7)([b.Z], () => b.Z.can(j.Plq.CREATE_INSTANT_INVITE, a)), S = (0, m.P1)(a), T = !1, P = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), A = null !== (n = null === (t = v.default.getUser(_.default.getId())) || void 0 === t ? void 0 : t.hasFlag(j.xW$.SPAMMER)) && void 0 !== n && n, w = [];
   if (!i.collapsed) {
     let e = null,
       t = null,
@@ -135,7 +135,7 @@ function S(e) {
       color: c.zxk.Colors.LINK,
       look: c.zxk.Looks.LINK,
       onClick: e => l(e, n[n.length - 1].id),
-      children: [j.NW.string(j.t["9OB9ho"]), " ›"]
+      children: [E.NW.string(E.t["9OB9ho"]), " ›"]
     }, "view-all")), 0 === w.length && (w = [(0, r.jsx)(c.$jN, {}, "spinner")])
   }
   return T && S && d.Z.trackExposure({

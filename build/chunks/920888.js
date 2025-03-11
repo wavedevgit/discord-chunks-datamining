@@ -54,12 +54,12 @@ function y(e, t) {
 }
 let x = (e, t) => null == e && null == t || e === t,
   O = (e, t) => e.findIndex(e => x(e.emoji.id, null == t ? void 0 : t.id) && x(e.emoji.name, null == t ? void 0 : t.name)),
-  E = (e, t) => {
+  j = (e, t) => {
     if (null == t) return e;
     let n = O(e, t);
     return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
   };
-class j extends i.PureComponent {
+class E extends i.PureComponent {
   static getDerivedStateFromProps(e, t) {
     let n = e.message.reactions.length;
     return 0 === t.reactionsCount && n > 0 ? {
@@ -81,15 +81,15 @@ class j extends i.PureComponent {
       channel: y,
       className: x,
       forceAddReactions: O,
-      reactionClassName: E,
-      useChatFontScaling: j,
+      reactionClassName: j,
+      useChatFontScaling: E,
       forceHideReactionCreates: N,
       remainingReactions: C,
       combinedReactions: I,
       visibleReactionsCount: S
     } = this.props, {
       disableTransitionAppear: T
-    } = this.state, P = j ? _ : g, A = S > 0;
+    } = this.state, P = E ? _ : g, A = S > 0;
     if (!A && !O) return null;
     let {
       canShowImprovedReactionButton: w
@@ -121,14 +121,14 @@ class j extends i.PureComponent {
         isGuest: a,
         isPendingMember: b,
         isForumToolbar: v,
-        useChatFontScaling: j,
-        className: E,
+        useChatFontScaling: E,
+        className: j,
         emojiSize: w ? "reactionLarge" : "reaction"
       }), C > 0 && (0, r.jsx)(s.P3F, {
         onClick: t => {
           t.stopPropagation(), (0, f.op)(y, e)
         },
-        className: o()(P.reaction, E, P.remainingReactions),
+        className: o()(P.reaction, j, P.remainingReactions),
         "aria-label": h.NW.string(h.t.lfIHs7),
         children: (0, r.jsxs)(s.Text, {
           className: P.reactionInner,
@@ -140,7 +140,7 @@ class j extends i.PureComponent {
         type: d.O.NORMAL,
         message: e,
         channel: y,
-        useChatFontScaling: j,
+        useChatFontScaling: E,
         isHovered: this.state.isHovered,
         className: o()({
           [P.forceShow]: Z
@@ -167,7 +167,7 @@ let N = e => {
     visibleReactionsCount: s
   } = i.useMemo(() => {
     let e = [],
-      r = E(t.reactions, a),
+      r = j(t.reactions, a),
       i = null != n && n < r.length ? r.slice(0, n) : r,
       o = r.length - i.length,
       l = r.length;
@@ -183,7 +183,7 @@ let N = e => {
       remainingReactions: o
     }
   }, [a, n, t.reactions]);
-  return (0, r.jsx)(j, y(v({}, e), {
+  return (0, r.jsx)(E, y(v({}, e), {
     visibleReactionsCount: s,
     combinedReactions: o,
     remainingReactions: l

@@ -23,8 +23,8 @@ var r = n(200651),
   y = n(143316),
   x = n(240126),
   O = n(791914),
-  E = n(147522),
-  j = n(809780),
+  j = n(147522),
+  E = n(809780),
   N = n(981631),
   C = n(388032),
   I = n(869496);
@@ -38,7 +38,7 @@ function S(e) {
     setSeenTutorial: R,
     closePopout: D,
     badgeState: L
-  } = e, M = i.useRef(null), [W, F] = (0, j.ZP)(M), {
+  } = e, M = i.useRef(null), [W, F] = (0, E.ZP)(M), {
     loadState: U,
     channels: B
   } = W, {
@@ -169,11 +169,11 @@ function S(e) {
               M.current = e, i.current = null !== (t = null == e ? void 0 : e.getScrollerNode()) && void 0 !== t ? t : null
             }
           }, a), n = n = {
-            onScroll: U === j.jd.Done ? void 0 : G,
+            onScroll: U === E.jd.Done ? void 0 : G,
             className: I.scroller,
             children: [k ? (0, r.jsx)(T, {
               setSeenTutorial: R
-            }) : null, (0, E.Z)(B, F, Z), U === j.jd.Done ? null : (0, r.jsx)(p.$jN, {
+            }) : null, (0, j.Z)(B, F, Z), U === E.jd.Done ? null : (0, r.jsx)(p.$jN, {
               className: I.spinner
             })]
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

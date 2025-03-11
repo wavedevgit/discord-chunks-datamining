@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => k
 }), n(47120);
 var r = n(200651),
-  l = n(192379),
-  i = n(392711),
-  o = n.n(i),
+  i = n(192379),
+  l = n(392711),
+  o = n.n(l),
   a = n(642128),
   s = n(818405),
   c = n(587158),
@@ -52,30 +52,30 @@ let R = o().throttle(() => {
 function A(e) {
   var t, n;
   let {
-    error: i,
+    error: l,
     onLock: o,
     onReload: s,
     onDisable: c,
     onCrashDisabled: u
-  } = e, m = l.useMemo(() => new a.SpringValue(1), []), h = l.useRef(null), [b, g] = l.useState(!1), [O, S] = l.useState(!1), x = (0, d.e7)([y.default], () => y.default.getCurrentUser());
+  } = e, m = i.useMemo(() => new a.SpringValue(1), []), h = i.useRef(null), [b, g] = i.useState(!1), [O, S] = i.useState(!1), x = (0, d.e7)([y.default], () => y.default.getCurrentUser());
   (0, v.ZP)(() => (h.current = setTimeout(j, T), p.Z.track(P.rMx.NOTIFICATION_VIEWED, {
     notif_type: w.n0.OverlayCrashed
   }), () => {
     null != h.current && clearTimeout(h.current)
   }));
-  let j = l.useCallback(() => {
+  let j = i.useCallback(() => {
       m.set(0), null != h.current && clearTimeout(h.current), h.current = null, null == o || o(), null == u || u()
     }, [m, o, u]),
-    _ = l.useCallback(e => {
+    _ = i.useCallback(e => {
       !O && (S(!0), null == o || o(), p.Z.track(P.rMx.NOTIFICATION_CLICKED, {
         notif_type: w.n0.OverlayCrashed,
         action_type: "reload"
       }, !0), e.stopPropagation(), setTimeout(() => null == s ? void 0 : s(), 200))
     }, [o, s, O]),
-    R = l.useCallback(e => {
+    R = i.useCallback(e => {
       e.stopPropagation(), e.shiftKey ? (g(!0), null != h.current && clearTimeout(h.current)) : g(!1)
     }, [g]),
-    A = l.useCallback(e => {
+    A = i.useCallback(e => {
       e.stopPropagation(), null == o || o(), null == c || c()
     }, [c, o]),
     D = (0, d.e7)([C.ZP], () => C.ZP.getFocusedRunningGame()),
@@ -89,14 +89,14 @@ function A(e) {
         children: [(0, r.jsx)(f.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
-          children: i.message
+          children: l.message
         }), (0, r.jsx)(f.Text, {
           variant: "text-xxs/normal",
           color: "text-secondary",
           children: (0, r.jsx)("code", {
             className: I.code,
             children: (0, r.jsx)("pre", {
-              children: i.stack
+              children: l.stack
             })
           })
         })]
@@ -130,7 +130,7 @@ function A(e) {
     wrapperClassName: I.errorNotificationWrapper
   })
 }
-class D extends l.PureComponent {
+class D extends i.PureComponent {
   componentDidCatch(e, t) {
     let n = (0, g.s1)().location;
     this.setState({
@@ -139,7 +139,7 @@ class D extends l.PureComponent {
     });
     let r = (0, x.getPID)();
     p.Z.setOverlayCrashed(r, e), p.Z.setInputLocked(!0, r);
-    let l = S.Z.captureCrash(e, {
+    let i = S.Z.captureCrash(e, {
       extra: t
     });
     p.Z.track(P.rMx.APP_CRASHED, {
@@ -147,7 +147,7 @@ class D extends l.PureComponent {
       extra: t,
       error_message: e.message,
       error_stack: e.stack,
-      sentry_issue_id: l,
+      sentry_issue_id: i,
       error_level: "fatal"
     }), R(), this.pid = r
   }
@@ -157,9 +157,9 @@ class D extends l.PureComponent {
       className: t
     } = this.props, {
       error: n,
-      showError: l
+      showError: i
     } = this.state;
-    return null != n ? l ? (0, r.jsx)(j.Z, {
+    return null != n ? i ? (0, r.jsx)(j.Z, {
       className: I.errorClickNotification,
       children: (0, r.jsx)(A, {
         error: n,

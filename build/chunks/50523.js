@@ -27,8 +27,8 @@ function O(e) {
   var t, n;
   let {
     application: O,
-    customId: E,
-    customLink: j,
+    customId: j,
+    customLink: E,
     embedUrl: N,
     referrerId: C
   } = e, I = null == O ? void 0 : null === (t = O.bot) || void 0 === t ? void 0 : t.id, S = (0, c.ms)({
@@ -43,7 +43,7 @@ function O(e) {
     if (null == w) return;
     let e = b.ZP.getEmbeddedActivitiesForChannel(w).filter(e => e.applicationId === O.id);
     return e.length > 0 ? e[0].compositeInstanceId : void 0
-  }), R = (0, i.e7)([b.ZP], () => b.ZP.getCurrentEmbeddedActivity()), D = (0, v.Z)(), L = Z === y.jy.CAN_LAUNCH, M = null != E ? E : j.custom_id, W = null != C ? C : j.referrer_id, F = [];
+  }), R = (0, i.e7)([b.ZP], () => b.ZP.getCurrentEmbeddedActivity()), D = (0, v.Z)(), L = Z === y.jy.CAN_LAUNCH, M = null != j ? j : E.custom_id, W = null != C ? C : E.referrer_id, F = [];
   L && F.push({
     label: null == k ? x.NW.string(x.t.cnBQPD) : x.NW.string(x.t.VJlc0d),
     trackingArea: p.j_.PLAY,
@@ -61,7 +61,7 @@ function O(e) {
     },
     disabledReason: null != k && (null == R ? void 0 : R.compositeInstanceId) === k ? x.NW.string(x.t.wJNK8P) : void 0
   }), P && F.push({
-    label: null != j.primary_cta ? j.primary_cta : x.NW.string(x.t.JeK1Wl),
+    label: null != E.primary_cta ? E.primary_cta : x.NW.string(x.t.JeK1Wl),
     trackingArea: p.j_.PLAY,
     onClick() {
       (0, s.W)({
@@ -84,10 +84,10 @@ function O(e) {
       bot: O.bot
     }),
     info: (0, r.jsx)("div", {
-      children: j.description
+      children: E.description
     }),
-    staticBannerSrc: (0, h.xF)(O.id, j.asset_id, 512),
-    title: j.title,
+    staticBannerSrc: (0, h.xF)(O.id, E.asset_id, 512),
+    title: E.title,
     trackingConfig: {
       id: O.id,
       linkType: d.U.CUSTOM_ACTIVITY_LINK,

@@ -23,8 +23,8 @@ var i = n(666572),
   y = n(914010),
   x = n(624138),
   O = n(135431),
-  E = n(566620),
-  j = n(365415),
+  j = n(566620),
+  E = n(365415),
   N = n(574952),
   C = n(147865),
   I = n(778569),
@@ -68,7 +68,7 @@ function k(e) {
     names: ["embedded_cover"]
   }), Q = null !== (x = null == F ? void 0 : F.id) && void 0 !== x ? x : "0", J = (0, O.TK)(Q, (0, m.PL)(!0, !1)), $ = (0, O.TK)(Q, (0, m.LD)(U, !1)), ee = async () => {
     if ((null == F ? void 0 : F.id) != null) {
-      if (K)(0, E.G6)({
+      if (K)(0, j.G6)({
         channelId: null != H ? H : void 0,
         applicationId: F.id,
         isStart: null == V,
@@ -98,7 +98,7 @@ function k(e) {
   }), en = (0, i._)(M), {
     data: er,
     error: ei
-  } = (0, j.h)(null == F ? void 0 : F.id, en);
+  } = (0, E.h)(null == F ? void 0 : F.id, en);
   if (null == F || !1 === G) return null;
   if (et) return null != M && null == ei && null != er ? (0, r.jsx)(S.b, {
     application: F,

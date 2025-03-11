@@ -38,9 +38,9 @@ var r = n(5148),
   y = n(634523),
   x = n.n(y),
   O = n(302648),
-  E = n.n(O);
+  j = n.n(O);
 
-function j(e, t, n, i) {
+function E(e, t, n, i) {
   let a = i.getCurrentContent(),
     o = null;
   null != e && (o = (a = a.createEntity(...e)).getLastCreatedEntityKey());
@@ -92,7 +92,7 @@ function C(e, t) {
 function I(e, t) {
   switch (e) {
     case "transpose-characters":
-      return E()(t);
+      return j()(t);
     case "move-selection-to-start-of-block":
       return _()(t);
     case "move-selection-to-end-of-block":
@@ -130,14 +130,14 @@ function T(e, t) {
           start: a,
           end: o
         } = e, l = e.getFullMatch();
-        !n.processed && (n.type === i && n.start === a && n.text === l ? (n.processed = !0, r = !0) : (a >= n.start && a < n.end || o > n.start && o <= n.end) && (n.processed = !0, t = j(null, n.start, n.end, t)))
+        !n.processed && (n.type === i && n.start === a && n.text === l ? (n.processed = !0, r = !0) : (a >= n.start && a < n.end || o > n.start && o <= n.end) && (n.processed = !0, t = E(null, n.start, n.end, t)))
       }), r) return;
     let i = n[e.type];
-    t = j([e.type, null != i && i.mutable ? "MUTABLE" : "IMMUTABLE", {
+    t = E([e.type, null != i && i.mutable ? "MUTABLE" : "IMMUTABLE", {
       token: e
     }], e.start, e.end, t)
   }), o.forEach(e => {
-    e.processed || (t = j(null, e.start, e.end, t))
+    e.processed || (t = E(null, e.start, e.end, t))
   }), t
 }
 

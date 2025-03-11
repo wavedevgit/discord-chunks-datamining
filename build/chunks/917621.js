@@ -22,9 +22,9 @@ var r = n(200651),
   y = n(981631),
   x = n(616922),
   O = n(388032),
-  E = n(705166);
+  j = n(705166);
 
-function j(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -40,7 +40,7 @@ function N(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      j(e, t, n[t])
+      E(e, t, n[t])
     })
   }
   return e
@@ -67,11 +67,11 @@ function I(e) {
     renderUserPopout: a
   } = e;
   return t.unknownUser ? (0, r.jsx)("div", {
-    className: E.partyMember,
+    className: j.partyMember,
     children: (0, r.jsx)(s.qEK, {
       src: t.user.getAvatarURL(i, (0, s.pxk)(s.EFr.SIZE_24)),
       size: s.EFr.SIZE_24,
-      className: o()(E.partyAvatar, n),
+      className: o()(j.partyAvatar, n),
       "aria-label": t.user.username
     })
   }) : (0, r.jsx)(s.yRy, {
@@ -85,12 +85,12 @@ function I(e) {
       return (0, r.jsx)(s.ua7, {
         text: null !== (a = t.nick) && void 0 !== a ? a : g.ZP.getName(t.user),
         children: a => (0, r.jsx)(s.P3F, C(N({
-          className: E.partyMemberKnown
+          className: j.partyMemberKnown
         }, a, e), {
           children: (0, r.jsx)(s.qEK, {
             src: t.user.getAvatarURL(i, (0, s.pxk)(s.EFr.SIZE_24)),
             size: s.EFr.SIZE_24,
-            className: o()(E.partyAvatar, n),
+            className: o()(j.partyAvatar, n),
             "aria-label": t.user.username
           })
         }))
@@ -212,19 +212,19 @@ class S extends i.PureComponent {
         return O.NW.string(O.t["2Gbof3"])
     }
     return !a || i || this.isEmbeddedActivityApplication() || e !== y.mFx.JOIN ? this.isActionType(y.mFx.LISTEN) || this.isActionType(y.mFx.WATCH) ? null != l && null != l.details && null != l.state && (0, v.Z)(l) ? [(0, r.jsx)("div", {
-      className: E.details,
+      className: j.details,
       children: (0, r.jsx)(s.eee, {
-        className: E.textLink,
+        className: j.textLink,
         onClick: this.handleOpenSpotifyTrack,
         children: l.details
       })
     }, "details"), (0, r.jsx)("div", {
-      className: E.state,
+      className: j.state,
       children: O.NW.format(O.t.uU9le3, {
         artists: l.state,
         artistsHook: (e, t) => null != l.state ? (0, r.jsx)(d.Z, {
           artists: l.state,
-          linkClassName: E.textLink,
+          linkClassName: j.textLink,
           canOpen: null != l.sync_id,
           onOpenSpotifyArtist: this.handleOpenSpotifyArtist
         }, t) : null
@@ -249,7 +249,7 @@ class S extends i.PureComponent {
       renderSpotifyJoinButton: c,
       renderCustomButton: d
     } = this.props, u = {
-      className: E.actionButton,
+      className: j.actionButton,
       size: s.zxk.Sizes.SMALL
     }, p = null != d ? d(u) : null;
     return null != p ? p : !this.isDeadInvite() && this.isActionType(y.mFx.LISTEN) && null != a && null != l && null != o && (0, x.Ps)(a) ? c(C(N({}, u), {
@@ -281,7 +281,7 @@ class S extends i.PureComponent {
   }
   renderMoreUsers(e, t, n) {
     return (0, r.jsx)("div", {
-      className: E.moreUsers,
+      className: j.moreUsers,
       children: e
     }, n)
   }
@@ -305,7 +305,7 @@ class S extends i.PureComponent {
     for (; s.length < d;) s.push(null);
     return (0, r.jsx)(p.Z, {
       guildId: i,
-      className: E.partyMembers,
+      className: j.partyMembers,
       users: s,
       max: o > 0 ? Math.min(o, 6) : 6,
       renderUser: this.renderUser,
@@ -320,11 +320,11 @@ class S extends i.PureComponent {
       activity: i
     } = this.props, a = this.isActionType(y.mFx.JOIN) || this.isActionType(y.mFx.JOIN_REQUEST), d = this.isDeadInvite(), u = null;
     null == t || null == i || a ? !a && d && (u = (0, r.jsx)("div", {
-      className: E.artworkSpotifySessionEnded
+      className: j.artworkSpotifySessionEnded
     })) : u = (0, r.jsx)("img", {
       alt: "",
       src: t,
-      className: (0, h.l)(E, "artwork", this.getActionableMode())
+      className: (0, h.l)(j, "artwork", this.getActionableMode())
     });
     let p = null != i && null != u && null != i.assets && null != i.assets.large_text && "" !== i.assets.large_text && !d && (0, v.Z)(i) ? i.assets.large_text : null,
       m = null != p ? (0, r.jsx)(s.ua7, {
@@ -343,44 +343,44 @@ class S extends i.PureComponent {
         }
       }) : u;
     return (0, r.jsxs)("div", {
-      className: o()(E.invite, e),
+      className: o()(j.invite, e),
       children: [(0, r.jsx)("div", {
-        className: E.coverImageWrapper,
+        className: j.coverImageWrapper,
         children: (0, r.jsx)("div", {
-          className: o()((0, h.l)(E, "coverImage", this.getActionableMode()), null != u ? E.blurred : null),
+          className: o()((0, h.l)(j, "coverImage", this.getActionableMode()), null != u ? j.blurred : null),
           style: {
             backgroundImage: null != t ? "url('".concat(t, "')") : void 0
           }
         })
       }), (0, r.jsxs)(c.Z, {
-        className: E.fullHeight,
+        className: j.fullHeight,
         children: [(0, r.jsxs)(c.Z, {
           direction: c.Z.Direction.VERTICAL,
           children: [(0, r.jsx)("div", {
-            className: E.header,
+            className: j.header,
             children: this.renderHeaderText()
           }), (0, r.jsx)(c.Z.Child, {
-            className: E.partyStatus,
+            className: j.partyStatus,
             children: this.renderPartyStatus()
           }), (0, r.jsxs)(c.Z, {
             align: c.Z.Align.END,
             children: [(0, r.jsxs)(c.Z, {
               align: c.Z.Align.CENTER,
-              className: E.actionAndParty,
+              className: j.actionAndParty,
               basis: 0,
               style: {
                 marginRight: 0
               },
               children: [this.renderActionButton(), this.renderParty()]
             }), null == u && a ? (0, r.jsx)("div", {
-              className: E.name,
+              className: j.name,
               children: n
             }) : null]
           })]
         }), m]
       }), (0, r.jsx)(s.eee, {
         href: f.Z.getArticleURL(this.getHelpdeskArticleURL()),
-        className: E.helpIcon,
+        className: j.helpIcon,
         children: (0, r.jsx)(s.idN, {
           color: l.Z.unsafe_rawColors.PRIMARY_300.css,
           size: "xxs"
@@ -389,47 +389,47 @@ class S extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), j(this, "handleJoin", () => {
+    super(...e), E(this, "handleJoin", () => {
       let {
         onJoin: e
       } = this.props;
       null == e || e()
-    }), j(this, "handleInvite", () => {
+    }), E(this, "handleInvite", () => {
       let {
         onInvite: e
       } = this.props;
       null == e || e()
-    }), j(this, "handleSync", () => {
+    }), E(this, "handleSync", () => {
       let {
         onSync: e
       } = this.props;
       null == e || e()
-    }), j(this, "handleDownloadApp", () => {
+    }), E(this, "handleDownloadApp", () => {
       let {
         onDownloadApp: e
       } = this.props;
       null == e || e()
-    }), j(this, "handleOpenSpotifyTrack", () => {
+    }), E(this, "handleOpenSpotifyTrack", () => {
       let {
         activity: e,
         onOpenSpotifyTrack: t
       } = this.props;
       null != e && (null == t || t(e))
-    }), j(this, "handleOpenSpotifyArtist", e => {
+    }), E(this, "handleOpenSpotifyArtist", e => {
       let {
         activity: t,
         onOpenSpotifyArtist: n,
         message: r
       } = this.props;
       null != t && null != r && (null == n || n(t, r.author.id, e))
-    }), j(this, "handleOpenSpotifyAlbum", () => {
+    }), E(this, "handleOpenSpotifyAlbum", () => {
       let {
         activity: e,
         onOpenSpotifyAlbum: t,
         message: n
       } = this.props;
       null != e && null != n && (null == t || t(e, n.author.id))
-    }), j(this, "renderUser", (e, t, n) => {
+    }), E(this, "renderUser", (e, t, n) => {
       let {
         renderUserPopout: i,
         guildId: a
@@ -440,7 +440,7 @@ class S extends i.PureComponent {
         className: t,
         guildId: a
       }, n) : (0, r.jsx)("div", {
-        className: o()(E.partyMemberEmpty, t)
+        className: o()(j.partyMemberEmpty, t)
       }, n)
     })
   }

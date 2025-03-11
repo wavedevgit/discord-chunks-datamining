@@ -34,8 +34,8 @@ function u(e) {
   }, {
     disable: !_ || !m,
     autoTrackExposure: !0
-  }).enabled, E = (0, o.O)(x, 0, O);
+  }).enabled, j = (0, o.O)(x, 0, O);
   return r.useEffect(() => () => {
     c.Z.handleMessageLostVisibility(b)
-  }, [b]), E
+  }, [b]), j
 }

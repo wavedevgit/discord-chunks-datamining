@@ -1,6 +1,6 @@
 /** Chunk was on 39251 **/
 n.d(t, {
-  Z: () => E
+  Z: () => j
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -60,14 +60,14 @@ let x = (0, u.Mg)(a.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
       is_custom: (0, m.z)(e.type)
     })
   },
-  E = e => {
+  j = e => {
     let {
       renderableSticker: t,
       channel: n,
       isInteracting: a
     } = e, [s, u] = i.useState(!0), [m, g] = i.useState(String(Date.now())), [_] = (0, p.XW)(t, a), {
-      analyticsLocations: E
-    } = (0, c.ZP)(l.Z.STICKER_MESSAGE), j = (0, r.jsxs)("span", {
+      analyticsLocations: j
+    } = (0, c.ZP)(l.Z.STICKER_MESSAGE), E = (0, r.jsxs)("span", {
       className: b.stickerName,
       children: [(0, r.jsx)(o.B7q, {
         size: "xs",
@@ -76,7 +76,7 @@ let x = (0, u.Mg)(a.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
       }), (null != _ ? _ : t).name]
     });
     return (0, r.jsx)(c.Gt, {
-      value: E,
+      value: j,
       children: (0, r.jsx)(o.yRy, {
         align: "center",
         animation: o.yRy.Animation.TRANSLATE,
@@ -95,7 +95,7 @@ let x = (0, u.Mg)(a.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
           } = e;
           return (0, r.jsx)(o.ua7, y(v({}, d.b_), {
             shouldShow: s,
-            text: (0, d.Y)(j),
+            text: (0, d.Y)(E),
             "aria-label": !1,
             onTooltipShow: () => {
               O(_)

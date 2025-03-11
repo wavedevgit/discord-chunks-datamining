@@ -1,6 +1,6 @@
 /** Chunk was on 39251 **/
 n.d(t, {
-  Z: () => E
+  Z: () => j
 }), n(47120), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -23,11 +23,11 @@ var r = n(200651),
   x = n(388032),
   O = n(700457);
 
-function E(e) {
+function j(e) {
   let {
     guild: t,
     invite: n
-  } = e, a = i.useRef(null), [E, j] = i.useState(!0), [N, C] = i.useState(!1), I = n.state === y.r2o.ACCEPTING, S = null != t, {
+  } = e, a = i.useRef(null), [j, E] = i.useState(!0), [N, C] = i.useState(!1), I = n.state === y.r2o.ACCEPTING, S = null != t, {
     analyticsLocations: T
   } = (0, p.ZP)(u.Z.INVITE_EMBED), P = (0, l.e7)([d.Z], () => d.Z.useReducedMotion);
   i.useLayoutEffect(() => {
@@ -40,21 +40,21 @@ function E(e) {
     }, [n, T, S]),
     w = (0, m.PC)(n),
     Z = i.useCallback(() => {
-      N && E && j(!1)
-    }, [E, N]),
+      N && j && E(!1)
+    }, [j, N]),
     k = i.useCallback(() => {
-      N && (E || j(!0))
-    }, [E, N]),
+      N && (j || E(!0))
+    }, [j, N]),
     R = i.useMemo(() => {
       var e;
       return N && (null === (e = a.current) || void 0 === e ? void 0 : e.clientHeight) != null ? {
-        height: E ? 328 : a.current.clientHeight + 20 + 65,
+        height: j ? 328 : a.current.clientHeight + 20 + 65,
         transition: P ? void 0 : "height 0.2s ease"
       } : {}
-    }, [E, N, P]);
+    }, [j, N, P]);
   return null == w ? (0, r.jsx)(v.Z, {}) : (0, r.jsxs)(s.P3F, {
     className: o()(O.guildInviteContainer, {
-      [O.clickable]: N && E
+      [O.clickable]: N && j
     }),
     onClick: Z,
     style: R,
@@ -80,7 +80,7 @@ function E(e) {
           profile: w
         })]
       })]
-    }), N && !E ? (0, r.jsx)(s.zxk, {
+    }), N && !j ? (0, r.jsx)(s.zxk, {
       look: s.zxk.Looks.LINK,
       color: s.zxk.Colors.TRANSPARENT,
       size: s.zxk.Sizes.NONE,
@@ -94,7 +94,7 @@ function E(e) {
       })
     }) : null, (0, r.jsxs)("div", {
       className: O.footer,
-      children: [N && E ? (0, r.jsx)("div", {
+      children: [N && j ? (0, r.jsx)("div", {
         className: O.gradient
       }) : null, (0, r.jsxs)("div", {
         className: O.footerContent,

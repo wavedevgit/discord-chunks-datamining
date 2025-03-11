@@ -62,12 +62,12 @@ let x = {
     tension: 700,
     clamp: !0
   },
-  E = {
+  j = {
     mass: 1,
     friction: 28,
     tension: 500
   },
-  j = {
+  E = {
     mass: 1,
     friction: 28,
     tension: 800
@@ -140,14 +140,14 @@ function N(e) {
         opacity: 1
       } : [{
         translateY: -4,
-        config: y(v({}, j), {
+        config: y(v({}, E), {
           restVelocity: .5
         })
       }, {
         translateY: 0,
-        config: j
+        config: E
       }],
-      config: E,
+      config: j,
       delay: L ? 100 - 50 * e : 150 + 50 * e
     }), "respect-motion-settings", [n]),
     U = (0, c.Yzy)(null == N ? void 0 : N.iconURL, {
@@ -184,16 +184,16 @@ function N(e) {
         translateX: 0,
         translateY: 0,
         delay: null == a ? 100 : 275,
-        config: null == a ? E : O
+        config: null == a ? j : O
       },
       leave: {
         opacity: 0,
         translateX: 40 * (null != n),
         translateY: 16 * (null == n),
         delay: L ? 200 : 150,
-        config: null == a ? E : O
+        config: null == a ? j : O
       },
-      config: E
+      config: j
     }, "respect-motion-settings"),
     G = _.NW.string(I ? _.t.esVyo6 : _.t.UQqFCA);
   return (0, r.jsxs)(l.animated.div, {

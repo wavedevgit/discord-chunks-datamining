@@ -20,8 +20,8 @@ var r, i, a = n(200651),
   y = n(358085),
   x = n(814225),
   O = n(346329),
-  E = n(701560),
-  j = n(981631),
+  j = n(701560),
+  E = n(981631),
   N = n(388032),
   C = n(524399);
 
@@ -61,18 +61,18 @@ function T(e, t) {
 }
 var P = ((i = P || {}).PLAY = "play", i.NOW_PLAYING = "now_playing", i.INSTALL = "install", i.UPDATE = "update", i.PAUSED = "paused", i.LOCATE = "locate", i.UNINSTALLING = "uninstalling", i.QUEUED = "queued", i.DOWNLOADING = "downloading", i.UNSUPPORTED_OS = "unsupported_os", i.ADD_TO_LIBRARY = "add_to_library", i.PREORDER_WAIT = "preorder_wait", i);
 let A = Object.freeze({
-    [j.apO.PLAY]: "play",
-    [j.apO.INSTALL]: "install",
-    [j.apO.UPDATE]: "update",
-    [j.apO.PAUSE]: "downloading",
-    [j.apO.MOVE_UP]: "queued",
-    [j.apO.RESUME]: "paused"
+    [E.apO.PLAY]: "play",
+    [E.apO.INSTALL]: "install",
+    [E.apO.UPDATE]: "update",
+    [E.apO.PAUSE]: "downloading",
+    [E.apO.MOVE_UP]: "queued",
+    [E.apO.RESUME]: "paused"
   }),
   w = () => [N.NW.string(N.t.r9wmKi), N.NW.string(N.t["6CpimZ"]), N.NW.string(N.t.ysbNDQ), N.NW.string(N.t.TLnXx8), N.NW.string(N.t.Qi8mnZ), N.NW.string(N.t.yvMu3d), N.NW.string(N.t.PnNUZ2), N.NW.string(N.t.hU2TEB), N.NW.string(N.t.YyY519), N.NW.string(N.t.PbHJb2)];
 class Z extends(r = o.Component) {
   get analyticsLocation() {
     return T(S({}, this.props.analyticsContext.location), {
-      object: j.qAy.BUTTON_CTA
+      object: E.qAy.BUTTON_CTA
     })
   }
   getText(e) {
@@ -110,7 +110,7 @@ class Z extends(r = o.Component) {
     if (e.isHidden()) return "add_to_library";
     if (e.isPreorder()) return "preorder_wait";
     let r = null != n ? A[n] : null;
-    return null != r ? r : null != t && t.type === j.vxO.UNINSTALLING ? "uninstalling" : (0, y.isWeb)() ? "play" : "unsupported_os"
+    return null != r ? r : null != t && t.type === E.vxO.UNINSTALLING ? "uninstalling" : (0, y.isWeb)() ? "play" : "unsupported_os"
   }
   renderPlayButton() {
     let {
@@ -125,7 +125,7 @@ class Z extends(r = o.Component) {
       analyticsListSort: c,
       analyticsListIndex: d
     } = this.props;
-    return (0, a.jsx)(E.Z, {
+    return (0, a.jsx)(j.Z, {
       applicationId: e.id,
       libraryApplication: e,
       fullWidth: t,
@@ -173,7 +173,7 @@ class Z extends(r = o.Component) {
     if (e) return null;
     let n = v.KJ(t);
     if (null == n) return null;
-    let r = n.type === j.vxO.UNINSTALLING ? c.Exd.INDETERMINATE : v.xI(Number(n.progress), Number(n.total));
+    let r = n.type === E.vxO.UNINSTALLING ? c.Exd.INDETERMINATE : v.xI(Number(n.progress), Number(n.total));
     return (0, a.jsx)(c.Exd, {
       percent: r,
       size: c.Exd.Sizes.XSMALL,
@@ -225,7 +225,7 @@ class Z extends(r = o.Component) {
         let {
           libraryApplication: e
         } = this.props;
-        await d.h(e.id, e.branchId, e.getFlags() & ~j.eHb.HIDDEN), (0, m.uL)(j.Z5c.APPLICATION_LIBRARY)
+        await d.h(e.id, e.branchId, e.getFlags() & ~E.eHb.HIDDEN), (0, m.uL)(E.Z5c.APPLICATION_LIBRARY)
       } catch (e) {
         new p.Z("LibraryApplicationButton").error(e)
       }

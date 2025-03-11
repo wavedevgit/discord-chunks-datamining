@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => x
 }), n(47120);
 var r = n(200651),
-  l = n(192379),
-  i = n(120356),
-  o = n.n(i),
+  i = n(192379),
+  l = n(120356),
+  o = n.n(l),
   a = n(642128),
   s = n(442837),
   c = n(481060),
@@ -23,11 +23,11 @@ var r = n(200651),
 function y(e) {
   e.currentTarget.scrollTo(0, 0)
 }
-let E = l.memo(function(e) {
+let E = i.memo(function(e) {
   let {
     maxBodyLines: t,
     expand: n = !1,
-    onNotificationShow: i,
+    onNotificationShow: l,
     onDismissClick: u,
     onConfirmClick: m,
     onCancelClick: h,
@@ -44,23 +44,23 @@ let E = l.memo(function(e) {
     containerRef: I,
     className: _,
     wrapperClassName: R
-  } = e, [T, A] = l.useState(!1), D = n || T || N === v._1z.FOCUSED, k = (0, s.e7)([p.ZP], () => p.ZP.isInputLocked((0, d.getPID)()));
-  l.useEffect(() => {
-    null == i || i()
-  }, [i]);
-  let M = l.useCallback(e => {
+  } = e, [T, A] = i.useState(!1), D = n || T || N === v._1z.FOCUSED, k = (0, s.e7)([p.ZP], () => p.ZP.isInputLocked((0, d.getPID)()));
+  i.useEffect(() => {
+    null == l || l()
+  }, [l]);
+  let M = i.useCallback(e => {
       e.stopPropagation(), null == u || u(e)
     }, [u]),
-    L = l.useCallback(e => {
+    L = i.useCallback(e => {
       e.stopPropagation(), null == m || m(e)
     }, [m]),
-    W = l.useCallback(e => {
+    W = i.useCallback(e => {
       e.stopPropagation(), null == h || h(e)
     }, [h]),
-    F = l.useCallback(() => {
+    F = i.useCallback(() => {
       A(!0)
     }, []),
-    U = l.useCallback(() => {
+    U = i.useCallback(() => {
       A(!1)
     }, []);
   return (0, r.jsxs)(r.Fragment, {
@@ -152,8 +152,8 @@ function O(e) {
     springs: {
       opacity: t,
       scale: n,
-      transform: l,
-      height: i
+      transform: i,
+      height: l
     },
     index: s,
     children: c,
@@ -166,9 +166,9 @@ function O(e) {
       pointerEvents: u && 0 !== s ? "none" : "auto",
       zIndex: Math.max(5 - s, 0),
       opacity: t,
-      transform: l.to(e => "translate3d(0, ".concat(e, "px, 0)")),
+      transform: i.to(e => "translate3d(0, ".concat(e, "px, 0)")),
       scale: n.to([0, 1], [.7, 1]),
-      height: i,
+      height: l,
       maxWidth: 0 === s ? void 0 : "100%"
     },
     children: c
@@ -189,7 +189,7 @@ function S(e) {
 function x(e) {
   var t, n;
   let {
-    notification: i,
+    notification: l,
     index: o,
     locked: a,
     transitionState: s,
@@ -205,17 +205,17 @@ function x(e) {
       renderFooter: g,
       animationWrapperClassName: y
     }
-  } = i, x = l.useCallback(() => {
+  } = l, x = i.useCallback(() => {
     f(d)
-  }, [f, d]), j = l.useCallback(e => {
+  }, [f, d]), j = i.useCallback(e => {
     u.Z.updateNotificationStatus(d), null == m || m(e, d)
-  }, [d, m]), C = l.useCallback(e => {
+  }, [d, m]), C = i.useCallback(e => {
     null == p || p(e, d)
-  }, [p, d]), Z = l.useCallback(e => {
+  }, [p, d]), Z = i.useCallback(e => {
     null == v || v(e, d)
-  }, [v, d]), w = l.useCallback(e => {
+  }, [v, d]), w = i.useCallback(e => {
     null == b || b(e, d)
-  }, [b, d]), P = l.useCallback((e, t) => null == g ? void 0 : g(e, d, t), [g, d]), {
+  }, [b, d]), P = i.useCallback((e, t) => null == g ? void 0 : g(e, d, t), [g, d]), {
     props: {
       onNotificationShow: N,
       onDismissClick: I,
@@ -226,24 +226,24 @@ function x(e) {
       disableClickableRegions: D = !1
     },
     status: k
-  } = i, M = function(e, t) {
+  } = l, M = function(e, t) {
     if (null == e) return {};
-    var n, r, l = function(e, t) {
+    var n, r, i = function(e, t) {
       if (null == e) return {};
-      var n, r, l = {},
-        i = Object.keys(e);
-      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-      return l
+      var n, r, i = {},
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
-    return l
-  }(i.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick", "disableClickableRegions"]), {
+    return i
+  }(l.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick", "disableClickableRegions"]), {
     ref: L,
     springs: W
-  } = (0, h.X4)(i.id, s, c);
+  } = (0, h.X4)(l.id, s, c);
   return (0, r.jsx)(O, {
     transitionState: s,
     springs: W,
@@ -272,7 +272,7 @@ function x(e) {
       }({}, M), n = n = {
         title: "function" == typeof M.title ? M.title(j) : M.title,
         containerRef: L,
-        notificationId: i.id,
+        notificationId: l.id,
         onNotificationShow: 0 === o ? x : void 0,
         onDismissClick: j,
         onNotificationClick: null != p ? C : void 0,

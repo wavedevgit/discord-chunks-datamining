@@ -23,8 +23,8 @@ var i = n(120356),
   y = n(592125),
   x = n(430824),
   O = n(158776),
-  E = n(306680),
-  j = n(594174),
+  j = n(306680),
+  E = n(594174),
   N = n(388032),
   C = n(568010);
 let I = {
@@ -110,7 +110,7 @@ function P(e) {
   let {
     channel: t,
     gotoChannel: n
-  } = e, i = (0, l.e7)([j.default], () => t.isDM() ? j.default.getUser(t.getRecipientId()) : null), a = null == i ? (0, m.x)(t) : i.getAvatarURL(void 0, 40);
+  } = e, i = (0, l.e7)([E.default], () => t.isDM() ? E.default.getUser(t.getRecipientId()) : null), a = null == i ? (0, m.x)(t) : i.getAvatarURL(void 0, 40);
   return (0, r.jsx)(s.P3F, {
     onClick: n,
     tabIndex: -1,
@@ -144,7 +144,7 @@ function w(e) {
     channel: t,
     gotoChannel: n,
     mentionCount: i
-  } = e, o = (0, l.e7)([x.Z], () => x.Z.getGuild(t.guild_id)), c = (0, l.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), d = (0, l.e7)([E.ZP], () => E.ZP.getIsMentionLowImportance(t.id)), u = (0, h.KS)(t, o), p = (0, f.ZP)(t, !1), m = null == c ? null == o ? void 0 : o.name : "".concat(null == o ? void 0 : o.name, " › ").concat(c.name), _ = t.isMultiUserDM() ? N.NW.formatToPlainString(N.t.CxSA5O, {
+  } = e, o = (0, l.e7)([x.Z], () => x.Z.getGuild(t.guild_id)), c = (0, l.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), d = (0, l.e7)([j.ZP], () => j.ZP.getIsMentionLowImportance(t.id)), u = (0, h.KS)(t, o), p = (0, f.ZP)(t, !1), m = null == c ? null == o ? void 0 : o.name : "".concat(null == o ? void 0 : o.name, " › ").concat(c.name), _ = t.isMultiUserDM() ? N.NW.formatToPlainString(N.t.CxSA5O, {
     members: t.recipients.length + 1
   }) : t.isPrivate() ? (0, r.jsx)(Z, {
     channel: t
@@ -195,8 +195,8 @@ function Z(e) {
     status: i,
     activities: a,
     applicationStream: o
-  } = (0, l.cj)([j.default, O.Z, v.Z], () => {
-    let e = j.default.getUser(t.getRecipientId());
+  } = (0, l.cj)([E.default, O.Z, v.Z], () => {
+    let e = E.default.getUser(t.getRecipientId());
     return {
       user: e,
       status: null != e ? O.Z.getStatus(e.id) : null,

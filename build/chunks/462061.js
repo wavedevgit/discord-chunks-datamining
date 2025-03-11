@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => _
 });
 var r = n(200651),
-  l = n(192379),
-  i = n(120356),
-  o = n.n(i),
+  i = n(192379),
+  l = n(120356),
+  o = n.n(l),
   a = n(442837),
   s = n(481060),
   c = n(475179),
@@ -82,7 +82,7 @@ function _(e) {
   let {
     participant: t,
     channel: n,
-    inCall: i,
+    inCall: l,
     width: s,
     paused: b,
     selected: I,
@@ -109,17 +109,17 @@ function _(e) {
     channel: n,
     selectedParticipant: ee,
     user: F
-  }, en = l.useRef(et);
-  return (l.useEffect(() => {
+  }, en = i.useRef(et);
+  return (i.useEffect(() => {
     en.current = et
-  }), l.useEffect(() => {
+  }), i.useEffect(() => {
     let {
       channel: e,
       selectedParticipant: t,
       user: n
     } = en.current;
     e.isGuildStageVoice() && !Y && (null == t ? void 0 : t.id) === n.id && c.Z.selectParticipant(e.id, null)
-  }, [Y]), i && !G && !D && Y && !I && null != L && E.Z.supports(C.AN.VIDEO)) ? (0, r.jsx)(p.Z, {
+  }, [Y]), l && !G && !D && Y && !I && null != L && E.Z.supports(C.AN.VIDEO)) ? (0, r.jsx)(p.Z, {
     onResize: R,
     wrapperClassName: w.videoWrapper,
     className: w.content,

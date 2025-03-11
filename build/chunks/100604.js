@@ -52,8 +52,8 @@ class _ {
       x = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : i.Z,
       {
         snapshotIndex: O,
-        parentMessage: E,
-        messageSnapshot: j
+        parentMessage: j,
+        messageSnapshot: E
       } = this,
       {
         useOldIcon: N
@@ -71,10 +71,10 @@ class _ {
       snapshotIndex: O,
       useOldIcon: N
     };
-    let I = (0, u.Xf)(j.message.timestamp),
+    let I = (0, u.Xf)(E.message.timestamp),
       S = h.getChannel(this.parentMessage.channel_id);
-    if (null != S && S.guild_id === (null === (e = E.messageReference) || void 0 === e ? void 0 : e.guild_id)) {
-      let e = h.getChannel(null === (n = E.messageReference) || void 0 === n ? void 0 : n.channel_id);
+    if (null != S && S.guild_id === (null === (e = j.messageReference) || void 0 === e ? void 0 : e.guild_id)) {
+      let e = h.getChannel(null === (n = j.messageReference) || void 0 === n ? void 0 : n.channel_id);
       if (null == e) {
         let e = y.getGuild(S.guild_id);
         return null == e ? {
@@ -104,7 +104,7 @@ class _ {
         useOldIcon: N
       }
     }
-    let T = null === (t = E.messageReference) || void 0 === t ? void 0 : t.guild_id;
+    let T = null === (t = j.messageReference) || void 0 === t ? void 0 : t.guild_id;
     if (null == T) return {
       snapshotIndex: O,
       useOldIcon: N

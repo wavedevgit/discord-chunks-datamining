@@ -22,9 +22,9 @@ var r = n(200651),
   y = n(981631),
   x = n(388032),
   O = n(648485),
-  E = n(215921);
+  j = n(215921);
 
-function j(e) {
+function E(e) {
   let {
     onClick: t
   } = e;
@@ -35,7 +35,7 @@ function j(e) {
       size: "xs",
       color: "currentColor"
     }),
-    className: E.controlButton,
+    className: j.controlButton,
     onClick: t
   })
 }
@@ -48,7 +48,7 @@ function N(e) {
   } = e, {
     initialized: c,
     items: x,
-    loading: E,
+    loading: j,
     loadMore: N
   } = (0, m.y6)(), C = (0, l.e7)([d.Z], () => d.Z.localItems), I = (0, h.Us)({
     location: "ForYou"
@@ -69,7 +69,7 @@ function N(e) {
       setTab: t,
       badgeState: n,
       closePopout: a,
-      children: A ? (0, r.jsx)(j, {
+      children: A ? (0, r.jsx)(E, {
         onClick: () => {
           null != T && (g.d$.updateSetting(T.id), _.default.track(y.rMx.NOTIFICATION_CENTER_ACTION, {
             action_type: u.ud.MARK_ALL_READ
@@ -79,7 +79,7 @@ function N(e) {
     }), (0, r.jsx)(f.Z, {
       initialized: c,
       items: S,
-      loading: E,
+      loading: j,
       loadMore: N
     })]
   })

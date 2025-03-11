@@ -63,8 +63,8 @@ function f(e) {
     disabled: y,
     dangerous: x,
     separator: O,
-    sparkle: E,
-    showNewBadge: j,
+    sparkle: j,
+    showNewBadge: E,
     buttonClassName: N,
     children: C
   } = e, I = m(e, ["label", "ariaLabel", "tooltipText", "tooltipColor", "icon", "iconProps", "onClick", "onTooltipShow", "onTooltipHide", "disabled", "dangerous", "separator", "sparkle", "showNewBadge", "buttonClassName", "children"]);
@@ -114,7 +114,7 @@ function f(e) {
           }, g)) : null, null != C ? (0, r.jsx)("div", {
             className: a()(u.icon, u.buttonContent),
             children: C
-          }) : null, E && (0, r.jsx)(o.K1N, {}), j && (0, r.jsx)(o.IGR, {
+          }) : null, j && (0, r.jsx)(o.K1N, {}), E && (0, r.jsx)(o.IGR, {
             text: d.NW.string(d.t.y2b7CA),
             color: l.Z.BG_BRAND,
             className: u.newBadge

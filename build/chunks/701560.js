@@ -42,7 +42,7 @@ function O(e) {
   return e
 }
 
-function E(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,9 +54,9 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class j extends(r = a.PureComponent) {
+class E extends(r = a.PureComponent) {
   get analyticsLocation() {
-    return E(O({}, this.props.analyticsContext.location), {
+    return j(O({}, this.props.analyticsContext.location), {
       object: b.qAy.BUTTON_CTA
     })
   }
@@ -145,7 +145,7 @@ class j extends(r = a.PureComponent) {
         let {
           default: e
         } = await n.e("53195").then(n.bind(n, 918306));
-        return n => (0, i.jsx)(e, E(O({}, n), {
+        return n => (0, i.jsx)(e, j(O({}, n), {
           libraryApplication: t,
           onPlay: this.handleClick
         }))
@@ -175,7 +175,7 @@ function N(e) {
     applicationId: t,
     libraryApplication: n
   } = e, r = (0, u.O)(), [a, o] = (0, s.Wu)([f.Z, m.Z, h.Z], () => [f.Z.isConnected(t) || m.Z.isLaunchable(t) || null != n && h.Z.isLaunchable(n.id, n.branchId), m.Z.launchingGames.has(t)], [t, n]), l = (0, s.e7)([p.ZP], () => new Set(p.ZP.getRunningVerifiedApplicationIds()).has(t), [t]), c = (0, s.e7)([h.Z], () => null != n ? h.Z.getState(n.id, n.branchId) : null, [n]);
-  return (0, i.jsx)(j, E(O({}, e), {
+  return (0, i.jsx)(E, j(O({}, e), {
     analyticsContext: r,
     isLaunchable: a,
     isLaunching: o,
@@ -183,7 +183,7 @@ function N(e) {
     dispatchState: c
   }))
 }
-x(j, "defaultProps", {
+x(E, "defaultProps", {
   fullWidth: !1,
   size: c.zxk.Sizes.LARGE,
   tooltipPosition: "top",

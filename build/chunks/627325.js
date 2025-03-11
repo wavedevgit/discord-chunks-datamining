@@ -22,8 +22,8 @@ var r = n(200651),
   y = n(388032),
   x = n(697993);
 let O = [51],
-  E = [y.t.OpqAoq],
-  j = () => (0, r.jsxs)("svg", {
+  j = [y.t.OpqAoq],
+  E = () => (0, r.jsxs)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "40",
     height: "40",
@@ -69,7 +69,7 @@ function N(e) {
     })]
   }) : s ? (0, r.jsxs)("div", {
     className: x.iconMessage,
-    children: [(0, r.jsx)(j, {}), (0, r.jsx)(m.X6q, {
+    children: [(0, r.jsx)(E, {}), (0, r.jsx)(m.X6q, {
       variant: "heading-md/normal",
       color: "header-muted",
       children: y.NW.string(y.t.DpZNJy)
@@ -111,7 +111,7 @@ function N(e) {
       variant: "text-sm/medium",
       color: "header-muted",
       className: x.header,
-      children: y.NW.string(E[e])
+      children: y.NW.string(j[e])
     }),
     sectionHeaderHeight: !1 === a ? void 0 : e => O[e],
     rowCount: S,

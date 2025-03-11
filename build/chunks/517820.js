@@ -22,8 +22,8 @@ var r = n(200651),
   y = n(226192),
   x = n(36459),
   O = n(434404),
-  E = n(518950),
-  j = n(347475),
+  j = n(518950),
+  E = n(347475),
   N = n(592125),
   C = n(271383),
   I = n(594174),
@@ -166,7 +166,7 @@ function B(e) {
     avatarSrc: d,
     avatarDecorationSrc: u,
     eventHandlers: p
-  } = (0, E.Z)({
+  } = (0, j.Z)({
     user: o,
     guildId: l,
     size: 12
@@ -194,7 +194,7 @@ function B(e) {
             children: k.NW.string(k.t.qlFrXV)
           }), (0, r.jsx)(f.yRy, {
             renderPopout: function(e) {
-              return null == o ? (0, r.jsx)(r.Fragment, {}) : (0, r.jsx)(j.Z, L(D({}, e), {
+              return null == o ? (0, r.jsx)(r.Fragment, {}) : (0, r.jsx)(E.Z, L(D({}, e), {
                 userId: o.id,
                 user: o,
                 guildId: l,
@@ -248,8 +248,8 @@ function G(e) {
     raidType: h,
     resolvedReason: g
   } = (0, v.FL)(n), x = (0, p.e7)([N.Z], () => N.Z.getChannel(n.channel_id), [n.channel_id]), O = null !== (t = null == x ? void 0 : x.guild_id) && void 0 !== t ? t : null, {
-    shouldShowIncidentActions: E
-  } = (0, _.mI)(O), j = (0, T.sR)(n.author.id, n.channel_id), C = i.useCallback(() => {
+    shouldShowIncidentActions: j
+  } = (0, _.mI)(O), E = (0, T.sR)(n.author.id, n.channel_id), C = i.useCallback(() => {
     let e = null == x ? void 0 : x.guild_id;
     null != e && (0, y.kW)(n.id, e)
   }, [n.id, x]), I = h === u.$.DM_RAID, S = I ? f.P4T : f.b6m;
@@ -294,11 +294,11 @@ function G(e) {
         dateTime: l.toLocaleString(k.NW.currentLocale, b.pQ)
       })
     }) : null,
-    footerButtons: E ? (0, r.jsxs)("div", {
+    footerButtons: j ? (0, r.jsxs)("div", {
       className: R.dotSeparatedRow,
       children: [(0, r.jsx)(f.zxk, {
         onClick: e => {
-          j(e)
+          E(e)
         },
         color: f.zxk.Colors.LINK,
         look: f.zxk.Looks.LINK,

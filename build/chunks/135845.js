@@ -25,11 +25,11 @@ function x(e) {
   let t, n, a, {
       invite: x,
       currentUserId: O,
-      guild: E,
-      onTransitionToInviteChannel: j,
+      guild: j,
+      onTransitionToInviteChannel: E,
       onAcceptInstantInvite: N
     } = e,
-    C = null == E ? void 0 : E.id,
+    C = null == j ? void 0 : j.id,
     I = (0, l.e7)([h.Z], () => h.Z.getGuildId()),
     S = (0, l.e7)([f.Z], () => null != x && null != x.target_user ? f.Z.getActiveStreamForUser(x.target_user.id, C) : null, [x, C]),
     T = (0, l.e7)([f.Z], () => null != x && null != x.target_user ? f.Z.getStreamForUser(x.target_user.id, C) : null, [x, C]),
@@ -48,12 +48,12 @@ function x(e) {
     D = x.state === _.r2o.ACCEPTING,
     L = i.useCallback(() => {
       let e = "noop";
-      A ? (j(), e = "transition") : (N(), e = "accept"), (0, s.r$)(x, e, P)
-    }, [x, P, A, j, N]),
-    M = null != E;
-  if (null == E) {
+      A ? (E(), e = "transition") : (N(), e = "accept"), (0, s.r$)(x, e, P)
+    }, [x, P, A, E, N]),
+    M = null != j;
+  if (null == j) {
     if (null == x.guild) return (0, r.jsx)(g.Z, {});
-    E = new m.ZP(x.guild)
+    j = new m.ZP(x.guild)
   }
   let W = null != x.channel ? (0, p.jD)(x.channel) : null;
   M && !w ? a = R ? v.NW.string(v.t.oBLoZG) : v.NW.formatToPlainString(v.t["0QJmAw"], {
@@ -61,10 +61,10 @@ function x(e) {
   }) : (t = v.NW.string(v.t["I6JG4+"]), n = u.Z.Button.Colors.GREEN, A && (t = v.NW.string(v.t["Q1W99/"]), n = u.Z.Button.Colors.PRIMARY), a = R ? v.NW.string(v.t["4hyaHh"]) : v.NW.formatToPlainString(v.t.QmlLEh, {
     name: k.username
   }));
-  let F = I === E.id && null != W ? (0, r.jsx)(u.Z.Channel, {
+  let F = I === j.id && null != W ? (0, r.jsx)(u.Z.Channel, {
     channel: W
   }) : v.NW.formatToPlainString(v.t.u0vaDA, {
-    guildName: E.name
+    guildName: j.name
   });
   return (0, r.jsxs)(u.Z, {
     children: [(0, r.jsx)(u.Z.Header, {
@@ -73,7 +73,7 @@ function x(e) {
       children: [(0, r.jsxs)("div", {
         className: y.headerLine,
         children: [(0, r.jsx)(u.Z.Icon, {
-          guild: E,
+          guild: j,
           onClick: M && w ? L : void 0
         }), (0, r.jsx)(u.Z.Info, {
           title: a,

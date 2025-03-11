@@ -22,8 +22,8 @@ var r = n(200651),
   y = n(493892),
   x = n(901461),
   O = n(739566),
-  E = n(443877),
-  j = n(492593),
+  j = n(443877),
+  E = n(492593),
   N = n(938353),
   C = n(25015),
   I = n(689674),
@@ -84,7 +84,7 @@ let F = i.memo(function e(t) {
     treatSpam: V
   } = t, z = k.OBS.has(s.type) ? s.messageReference : void 0, K = (0, l.e7)([m.Z], () => m.Z.getMessageByReference(z)), Y = (0, l.e7)([h.Z], () => s.type === k.uaV.THREAD_STARTER_MESSAGE && K.state === m.Y.LOADED ? h.Z.getChannel(K.message.channel_id) : null), X = f.x4.useSetting(), q = f.RS.useSetting(), Q = f.NA.useSetting(), J = f.QK.useSetting(), $ = (0, d.A)((null !== (n = s.editedTimestamp) && void 0 !== n ? n : s.timestamp).valueOf()), ee = (0, u.Z)(null == a ? void 0 : a.id), {
     disableReactionCreates: et
-  } = (0, E.Z)(a), {
+  } = (0, j.Z)(a), {
     content: en,
     hasSpoilerEmbeds: er
   } = (0, C.Z)(s, {
@@ -107,7 +107,7 @@ let F = i.memo(function e(t) {
     compact: Z,
     count: 1,
     collapsedReason: i
-  }) : (0, r.jsx)(j.Z, {
+  }) : (0, r.jsx)(E.Z, {
     compact: Z,
     className: o()(D, {
       [L.ephemeral]: (0, v.Pv)(s),
@@ -162,7 +162,7 @@ function U(e) {
     compact: i,
     collapsedReason: a
   } = e;
-  return (0, r.jsx)(j.Z, {
+  return (0, r.jsx)(E.Z, {
     className: t,
     compact: i,
     role: "group",

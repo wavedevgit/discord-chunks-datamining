@@ -25,7 +25,7 @@ function b(e) {
     guildScheduledEvent: y,
     guild: x,
     channel: O,
-    isMember: E
+    isMember: j
   } = (0, a.cj)([f.ZP, u.Z, c.Z, d.ZP, p.default], () => {
     var e, t;
     let r = null !== (t = f.ZP.getGuildScheduledEvent(b)) && void 0 !== t ? t : void 0,
@@ -44,7 +44,7 @@ function b(e) {
     guild: x,
     channel: O,
     guildScheduledEvent: y,
-    isMember: E,
+    isMember: j,
     onAcceptInstantInvite: _.dG,
     onTransitionToInviteChannel: function() {
       if ((0, l.n)(n)) {

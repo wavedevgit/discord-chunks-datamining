@@ -21,8 +21,8 @@ var r, i = n(200651),
   y = n(768419),
   x = n(456432),
   O = n(347475),
-  E = n(789407),
-  j = n(598077),
+  j = n(789407),
+  E = n(598077),
   N = n(757266),
   C = n(831506),
   I = n(271383),
@@ -89,7 +89,7 @@ class H extends(r = a.PureComponent) {
       let t = (0, p.Z)(e, n.id);
       if (null != t) return t
     }
-    return null == n || n instanceof E.ZP ? null : k.ZP.getApplicationIconURL({
+    return null == n || n instanceof j.ZP ? null : k.ZP.getApplicationIconURL({
       id: n.id,
       icon: null != t ? t.coverImage : n.coverImage,
       size: W.cc
@@ -295,7 +295,7 @@ let V = o.ZP.connectStores([y.Z, C.Z, T.Z, P.Z, N.Z, w.Z, S.Z, b.Z, Z.Z, A.defau
         n = null != t ? t.nick : null,
         r = A.default.getUser(e),
         i = null == r;
-      return null == r && (r = new j.Z({
+      return null == r && (r = new E.Z({
         discriminator: "0005"
       })), {
         user: r,

@@ -34,8 +34,8 @@ function v(e) {
   }, {
     autoTrackExposure: !1
   }), {
-    enabled: E,
-    inInbox: j
+    enabled: j,
+    inInbox: E
   } = u.Z.useExperiment({
     location: "RecentsPopout"
   }), N = (0, f.Us)({
@@ -101,14 +101,14 @@ function v(e) {
             color: s.Z.STATUS_DANGER,
             className: b.iconBadge
           }) : null]
-        }) : null, E && j ? (0, r.jsx)(o.njP.Item, {
+        }) : null, j && E ? (0, r.jsx)(o.njP.Item, {
           "aria-label": _.NW.string(_.t["2pAkDA"]),
           id: a.X.BOOKMARKS,
           className: b.tab,
           children: 0 === S ? _.NW.string(_.t["2pAkDA"]) : _.NW.formatToPlainString(_.t.I4fryM, {
             count: S
           })
-        }) : null, O && !E ? (0, r.jsx)(o.njP.Item, {
+        }) : null, O && !j ? (0, r.jsx)(o.njP.Item, {
           "aria-label": "todos",
           id: a.X.TODOS,
           className: b.tab,

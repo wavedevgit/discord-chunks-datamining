@@ -23,8 +23,8 @@ var r = n(200651),
   y = n(758199),
   x = n(914498),
   O = n(172109),
-  E = n(880251),
-  j = n(208444),
+  j = n(880251),
+  E = n(208444),
   N = n(388032),
   C = n(390101);
 
@@ -47,7 +47,7 @@ function I(e) {
     staticBannerSrc: Z,
     videoBannerSrc: k,
     bannerAspectRatio: R
-  } = (0, E.E)(t), D = (0, o.e7)([g.default], () => null != h ? h : g.default.getId(), [h]), {
+  } = (0, j.E)(t), D = (0, o.e7)([g.default], () => null != h ? h : g.default.getId(), [h]), {
     analyticsLocations: L
   } = (0, u.ZP)(d.Z.APP_MESSAGE_EMBED), {
     currentChannelId: M,
@@ -60,7 +60,7 @@ function I(e) {
     },
     applicationId: t.id,
     botUserId: null == I ? void 0 : I.id
-  }), H = null != P && A && G, V = (0, j.z)(t), z = i.useMemo(() => {
+  }), H = null != P && A && G, V = (0, E.z)(t), z = i.useMemo(() => {
     let e = [];
     return U && e.push({
       label: null == W ? N.NW.string(N.t.cnBQPD) : N.NW.string(N.t.VJlc0d),

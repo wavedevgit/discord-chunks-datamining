@@ -22,8 +22,8 @@ var r = n(200651),
   y = n(321231),
   x = n(758199),
   O = n(943762),
-  E = n(914498),
-  j = n(208444),
+  j = n(914498),
+  E = n(208444),
   N = n(429551),
   C = n(973616),
   I = n(314897),
@@ -114,7 +114,7 @@ let B = i.memo(function(e) {
     enabled: es
   } = y.G.useExperiment({
     location: "EmbeddedActivityInstanceEmbed"
-  }), ec = (0, j.z)(ee, () => {
+  }), ec = (0, E.z)(ee, () => {
     A.default.track(L.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
       application_id: N.id,
       channel_id: Z,
@@ -137,7 +137,7 @@ let B = i.memo(function(e) {
       u = (0, O.r)(J),
       p = [{
         label: en ? W.NW.string(W.t.RscU7O) : W.NW.string(W.t.VJlc0d),
-        trackingArea: E.j_.PLAY,
+        trackingArea: j.j_.PLAY,
         onClick: eo,
         disabledReason: e,
         submitting: ea
@@ -173,7 +173,7 @@ let B = i.memo(function(e) {
       actions: p,
       trackingConfig: {
         id: N.id,
-        linkType: E.Un.ACTIVITY_INSTANCE
+        linkType: j.Un.ACTIVITY_INSTANCE
       }
     })
   }

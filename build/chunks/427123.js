@@ -19,16 +19,16 @@ var r, i, a, o = n(392711),
 let y = "DetectedOffPlatformPremiumPerksStore",
   x = {},
   O = {},
-  E = [];
+  j = [];
 
-function j() {
+function E() {
   let e = !1;
   for (let {
       skuId: t,
       applicationId: n
     }
     of l().values(O)) {
-    if (E.includes(t)) continue;
+    if (j.includes(t)) continue;
     let r = f.Z.getApplication(n);
     if (null == r) {
       f.Z.isFetchingApplication(n) || f.Z.didFetchingApplicationFail(n) || m.ZP.fetchApplication(n);
@@ -49,7 +49,7 @@ function j() {
 class N extends(r = s.ZP.Store) {
   initialize() {
     var e;
-    this.waitFor(h.ZP, b.Z, _.Z), E = null !== (e = c.K.get(y)) && void 0 !== e ? e : E
+    this.waitFor(h.ZP, b.Z, _.Z), j = null !== (e = c.K.get(y)) && void 0 !== e ? e : j
   }
   getDetectedOffPlatformPremiumPerks() {
     return l().values(x)
@@ -65,16 +65,16 @@ let C = new N(d.Z, {
   LOGOUT: function() {
     x = {}, O = {}
   },
-  SKU_FETCH_SUCCESS: j,
-  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: j,
-  ENTITLEMENT_CREATE: j,
-  APPLICATION_FETCH_SUCCESS: j,
+  SKU_FETCH_SUCCESS: E,
+  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: E,
+  ENTITLEMENT_CREATE: E,
+  APPLICATION_FETCH_SUCCESS: E,
   DETECTED_OFF_PLATFORM_PREMIUM_PERKS_DISMISS: function(e) {
     let {
       skuId: t
     } = e;
-    if (delete x[t], E.includes(t)) return !1;
-    E.push(t), c.K.set(y, E)
+    if (delete x[t], j.includes(t)) return !1;
+    j.push(t), c.K.set(y, j)
   },
   RUNNING_GAMES_CHANGE: function() {
     let e = !1;
@@ -88,10 +88,10 @@ let C = new N(d.Z, {
             skuId: n,
             applicationId: r
           }
-          of v.Lg6) !(r !== t || E.includes(n)) && null == O[n] && (_.Z.applicationIdsFetched.has(r) || _.Z.applicationIdsFetching.has(r) || null != _.Z.getForSku(n) || u.yD(r), O[n] = {
+          of v.Lg6) !(r !== t || j.includes(n)) && null == O[n] && (_.Z.applicationIdsFetched.has(r) || _.Z.applicationIdsFetching.has(r) || null != _.Z.getForSku(n) || u.yD(r), O[n] = {
           skuId: n,
           applicationId: r
         }, e = !0);
-    return e && j(), e
+    return e && E(), e
   }
 })

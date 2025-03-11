@@ -22,8 +22,8 @@ var r = n(200651),
   y = n(701190),
   x = n(411198),
   O = n(610699),
-  E = n(313876),
-  j = n(778333),
+  j = n(313876),
+  E = n(778333),
   N = n(949981),
   C = n(680668),
   I = n(508273),
@@ -107,7 +107,7 @@ function k(e) {
       });
       break;
     case w.r2o.ERROR:
-      z = (0, r.jsx)(E.Z, {
+      z = (0, r.jsx)(j.Z, {
         author: n,
         inviteError: D
       });
@@ -124,7 +124,7 @@ function k(e) {
           });
           break;
         case f.wx.FRIEND:
-          z = (0, r.jsx)(j.Z, {
+          z = (0, r.jsx)(E.Z, {
             invite: M,
             author: n,
             getAcceptInviteContext: k

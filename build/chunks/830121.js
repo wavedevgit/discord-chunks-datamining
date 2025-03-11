@@ -139,7 +139,7 @@ function er(e) {
         url: e
       }))
     };
-    if ((null == i ? void 0 : i.match(A)) != null) {
+    if ((null == i ? void 0 : i.match(A)) != null && ("https:" === r.protocol || "http:" === r.protocol)) {
       let e = (0, v.mb)(i.substring(1), r.search);
       y.Z.getInvite(e), u(S.g.INVITE, e)
     }(null == l ? void 0 : l.match(A)) != null && u(S.g.TEMPLATE, l.substring(1));
