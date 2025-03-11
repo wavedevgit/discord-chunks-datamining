@@ -272,22 +272,23 @@ let eS = {
       }),
       {
         displayPrices: eN,
-        checkoutEligiblePrices: ek
+        checkoutEligiblePrices: ek,
+        isOrbExclusive: eS
       } = (0, eP.Ip)({
         product: y,
         isPremiumUser: N,
         tab: w
       }),
-      eS = eC && v,
+      ey = eC && v,
       {
-        redeemVirtualCurrency: ey,
-        isSubmitting: eE,
-        error: eL
+        redeemVirtualCurrency: eE,
+        isSubmitting: eL,
+        error: eZ
       } = (0, E.f)(),
       {
-        balance: eZ
+        balance: eA
       } = (0, E.A)(),
-      eA = i.useCallback(() => (0, I.Z)({
+      eR = i.useCallback(() => (0, I.Z)({
         skuId: y.skuId,
         analyticsLocations: O,
         variantsReturnStyle: eb,
@@ -296,7 +297,7 @@ let eS = {
     i.useEffect(() => {
       if (null != es) return (0, h.cV)(es), () => (0, h.cV)(void 0)
     }, [es]);
-    let eR = e => (0, r.jsx)(_.Z, {
+    let eB = e => (0, r.jsx)(_.Z, {
         subscriptionTier: ew.Si.TIER_2,
         fullWidth: !0,
         buttonText: e,
@@ -312,12 +313,12 @@ let eS = {
         }
       }),
       {
-        firstAvatarDecoration: eB,
-        firstProfileEffect: eW
+        firstAvatarDecoration: eW,
+        firstProfileEffect: eD
       } = (0, G.k)(y),
-      eD = y.type === d.Z.BUNDLE ? eI.NW.formatToPlainString(eI.t["jM8/7+"], {
-        avatarDecorationName: null !== (t = null == eB ? void 0 : eB.name) && void 0 !== t ? t : "",
-        profileEffectName: null !== (n = null == eW ? void 0 : eW.name) && void 0 !== n ? n : ""
+      eF = y.type === d.Z.BUNDLE ? eI.NW.formatToPlainString(eI.t["jM8/7+"], {
+        avatarDecorationName: null !== (t = null == eW ? void 0 : eW.name) && void 0 !== t ? t : "",
+        profileEffectName: null !== (n = null == eD ? void 0 : eD.name) && void 0 !== n ? n : ""
       }) : y.summary;
     return (0, r.jsxs)("div", {
       className: e_.collectibleInfoContainer,
@@ -331,14 +332,14 @@ let eS = {
         product: null != S ? S : y,
         user: o
       }), (0, r.jsxs)("div", {
-        children: [null == eL ? null : (0, r.jsxs)("div", {
+        children: [null == eZ ? null : (0, r.jsxs)("div", {
           className: e_.errorMessageLine,
           children: [(0, r.jsx)(f.P4T, {
             size: "xs",
             color: "white"
           }), (0, r.jsx)(f.Text, {
             variant: "text-xs/medium",
-            children: eL.message
+            children: eZ.message
           })]
         }), (0, r.jsxs)("div", {
           className: e_.description,
@@ -351,7 +352,7 @@ let eS = {
             children: ex
           }), (0, r.jsx)(f.Text, {
             variant: "text-sm/normal",
-            children: eD
+            children: eF
           }), A.isPurchased || A.isPartiallyOwnedBundle ? (0, r.jsx)(Q.U, {
             className: e_.priceTag,
             isPartiallyPurchased: B
@@ -359,7 +360,7 @@ let eS = {
             variant: "text-md/semibold",
             className: e_.priceTag,
             children: eI.NW.string(eI.t.rt69oq)
-          }) : eC ? eS ? (0, r.jsx)(eu.Z, {
+          }) : eC ? ey ? (0, r.jsx)(eu.Z, {
             orbPrice: ek[0]
           }) : (0, r.jsx)(ed.Z, {
             displayPrices: eN,
@@ -382,7 +383,7 @@ let eS = {
           children: (0, r.jsxs)("div", {
             className: e_.primaryButtons,
             children: [(() => {
-              if (ee && !N && !eo) return eR(eI.NW.string(eI.t.sEAnVF));
+              if (ee && !N && !eo) return eB(eI.NW.string(eI.t.sEAnVF));
               if (R) return (0, r.jsx)(f.zxk, {
                 className: e_.button,
                 look: f.zxk.Looks.FILLED,
@@ -405,17 +406,17 @@ let eS = {
                 },
                 children: eI.NW.string(eI.t.zp6caG)
               });
-              let e = eS && (null == eZ || 0 === ek.length || eZ < ek[0].amount);
+              let e = ey && (null == eA || 0 === ek.length || eA < ek[0].amount);
               return (0, r.jsx)(f.zxk, {
                 className: l()(e_.button, {
                   [e_.enabledButton]: !e
                 }),
                 innerClassName: e_.buttonInner,
                 look: f.zxk.Looks.FILLED,
-                submitting: eE,
+                submitting: eL,
                 disabled: e,
                 onClick: () => {
-                  eS ? ey(y.skuId, e => {
+                  ey ? eE(y.skuId, e => {
                     var t;
                     x(!0), (0, F.qg)({
                       variantsReturnStyle: eb,
@@ -428,21 +429,21 @@ let eS = {
                       },
                       itemConsumed: null === (t = e[0]) || void 0 === t ? void 0 : t.consumed
                     })
-                  }) : eA()
+                  }) : eR()
                 },
-                children: eS ? eI.NW.format(eI.t.kAgx5O, {
+                children: ey ? eI.NW.format(eI.t.kAgx5O, {
                   orbPrice: ek.length > 0 ? ek[0].amount : 1 / 0,
                   orbIconHook: () => (0, r.jsx)(Z.Z, {})
                 }) : (0, z.x6)(y) ? eI.NW.string(eI.t.V1AWw8) : y.type === d.Z.PROFILE_EFFECT ? eI.NW.string(eI.t.kAeDcH) : eI.NW.string(eI.t.AQ0Ven)
               })
-            })(), !ee && !eo && !u.tq && (0, r.jsx)(er.Z, {
+            })(), !ee && !eo && !u.tq && !eS && (0, r.jsx)(er.Z, {
               product: y,
               onSuccess: x,
               disableCustomColor: !0
             })]
           })
-        }), !eS || ek.length <= 1 ? null : (0, r.jsx)(f.P3F, {
-          onClick: eA,
+        }), !ey || ek.length <= 1 ? null : (0, r.jsx)(f.P3F, {
+          onClick: eR,
           className: e_.payWithFiatLink,
           children: (0, r.jsx)(f.Text, {
             variant: "text-xxs/normal",

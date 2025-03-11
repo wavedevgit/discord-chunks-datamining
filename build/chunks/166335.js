@@ -104,6 +104,7 @@ function h(e) {
     backgroundElements: h,
     smallText: !0,
     footerClassName: p.footer,
-    subscribeButtonClassname: p.subscribeButton
+    subscribeButtonClassname: p.subscribeButton,
+    showBetaBadge: !0
   }, i))
 }

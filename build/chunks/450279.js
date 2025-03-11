@@ -131,7 +131,8 @@ function u(e, t, n, i, a) {
       codec: l(a),
       bytesReceived: e.bytesReceived,
       packetsReceived: e.packetsReceived,
-      packetsLost: e.packetsLost
+      packetsLost: e.packetsLost,
+      nackCount: e.nackCount
     };
     if ("audio" === e.kind) {
       let t = void 0 !== e.jitterBufferDelay && void 0 !== e.jitterBufferEmittedCount ? Math.round(1e3 * e.jitterBufferDelay / e.jitterBufferEmittedCount) : 0;
@@ -155,7 +156,6 @@ function u(e, t, n, i, a) {
         frameRateDecode: e.framesPerSecond,
         averageDecodeTime: null == e.framesDecoded || null == e.totalDecodeTime ? void 0 : (1e3 * e.totalDecodeTime / e.framesDecoded).toFixed(1),
         firCount: e.firCount,
-        nackCount: e.nackCount,
         pliCount: e.pliCount,
         freezeCount: e.freezeCount,
         pauseCount: e.pauseCount,

@@ -1,6 +1,6 @@
 /**
   Module ID: 39251
-  Original File Name: 4105d9c2eb92ddaf
+  Original File Name: 241316335bb23f41
 **/
 .image__04666 {
     width: 100%;
@@ -128,7 +128,7 @@
 .subscribeButton_cd8d1b {
     border-radius: var(--radius-sm);
     border: 1px solid hsla(0,3%,53.9%,.1);
-    background: linear-gradient(90deg,#19175c,#5968f0 49.5%,#db00a4);
+    background: linear-gradient(90deg,#19175c,#5968f0 49.5%,#db00a4) no-repeat;
     display: flex;
     min-width: 80px;
     padding: 20px 16px;
