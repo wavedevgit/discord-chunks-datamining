@@ -23,6 +23,7 @@ function d(e, t, n) {
       var o;
       let [a] = e.recipients.map(t.getUser).filter(s.lm);
       if (null == a) return "???";
+      if (a.isProvisional && null != a.globalName) return a.globalName;
       let d = n.getNickname(a.id),
         _ = null !== (o = null != d ? d : l.ZP.getName(a)) && void 0 !== o ? o : "???";
       return r ? "@".concat(_) : _;

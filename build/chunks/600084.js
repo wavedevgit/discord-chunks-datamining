@@ -134,7 +134,7 @@ function F(e) {
     }), (0, r.jsxs)(T.Z, {
       channel: p,
       user: I,
-      children: [null != I && (0, r.jsx)(o.X6q, {
+      children: [null != I && !I.isProvisional && (0, r.jsx)(o.X6q, {
         variant: "heading-xl/medium",
         className: B.marginBottom20,
         children: A

@@ -18,7 +18,8 @@ let f = {
   XSMALL: d.xsmall,
   SMALL: d.small,
   MEDIUM: d.medium,
-  LARGE: d.large
+  LARGE: d.large,
+  XLARGE: d.xlarge
 };
 
 function _(e) {

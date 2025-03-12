@@ -1,7 +1,8 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  K: () => c,
-  Z: () => d
+  KE: () => d,
+  KT: () => c,
+  ZP: () => u
 }), t(47120), t(773603);
 var r = t(200651),
   i = t(192379),
@@ -35,13 +36,37 @@ function c(e) {
 }
 
 function d(e, n) {
-  let [c, d] = i.useState(!1), [u, v] = i.useState(void 0), p = i.useCallback(t => {
+  (0, o.ZDy)(async () => {
+    switch (n.type) {
+      case s.Us.LEVEL:
+        let {
+          default: i
+        } = await t.e("99014").then(t.bind(t, 271224));
+        return t => (0, r.jsx)(i, l({
+          guildId: e,
+          powerup: n
+        }, t));
+      case s.Us.PERK: {
+        let {
+          default: i
+        } = await t.e("78718").then(t.bind(t, 640139));
+        return t => (0, r.jsx)(i, l({
+          guildId: e,
+          powerup: n
+        }, t))
+      }
+    }
+  })
+}
+
+function u(e, n) {
+  let [s, c] = i.useState(!1), [u, v] = i.useState(void 0), p = i.useCallback(t => {
     let r = t ? a.H6 : a.Th;
-    return d(!0), v(void 0), r(e, n.skuId).catch(e => {
+    return c(!0), v(void 0), r(e, n.skuId).catch(e => {
       var n;
       throw v(null !== (n = e.body.message) && void 0 !== n ? n : void 0), e
     }).finally(() => {
-      d(!1)
+      c(!1)
     })
   }, [e, n.skuId]), x = i.useCallback(e => (e.stopPropagation(), p(!0).then(() => {
     (0, o.ZDy)(async () => {
@@ -54,7 +79,7 @@ function d(e, n) {
     })
   })), [p, n]), b = i.useCallback(e => (e.stopPropagation(), p(!1)), [p]);
   return {
-    isLoading: c,
+    isLoading: s,
     error: u,
     onActivate: x,
     onDeactivate: b,
@@ -70,27 +95,7 @@ function d(e, n) {
       })
     }, [e, n]),
     onShowMore: i.useCallback(() => {
-      (0, o.ZDy)(async () => {
-        switch (n.type) {
-          case s.Us.LEVEL:
-            let {
-              default: i
-            } = await t.e("99014").then(t.bind(t, 271224));
-            return t => (0, r.jsx)(i, l({
-              guildId: e,
-              powerup: n
-            }, t));
-          case s.Us.PERK: {
-            let {
-              default: i
-            } = await t.e("78718").then(t.bind(t, 640139));
-            return t => (0, r.jsx)(i, l({
-              guildId: e,
-              powerup: n
-            }, t))
-          }
-        }
-      })
+      d(e, n)
     }, [e, n])
   }
 }

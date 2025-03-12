@@ -14,7 +14,7 @@ function a(e) {
       color: o = "currentColor",
       foreground: i
     } = e,
-    d = function(e, t) {
+    c = function(e, t) {
       if (null == e) return {};
       var n, r, l = function(e, t) {
         if (null == e) return {};
@@ -46,7 +46,7 @@ function a(e) {
       })
     }
     return e
-  }({}, (0, l.Z)(d)), n = n = {
+  }({}, (0, l.Z)(c)), n = n = {
     width: a,
     height: s,
     viewBox: "0 0 124 24",

@@ -61,7 +61,7 @@ function p(e) {
         [_.pronouns]: T,
         [_.bot]: null != N
       }),
-      children: [S((0, r.jsx)(s.Z, {
+      children: [!t.isProvisional && S((0, r.jsx)(s.Z, {
         user: t,
         usernameIcon: i,
         forceUsername: !0,

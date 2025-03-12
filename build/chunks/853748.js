@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  $: () => p
+  $: () => m
 }), n(653041);
 var r = n(200651),
   l = n(192379),
@@ -9,14 +9,14 @@ var r = n(200651),
   s = n.n(a),
   o = n(642128),
   i = n(873546),
-  d = n(481060),
-  c = n(774078),
+  c = n(481060),
+  d = n(774078),
   u = n(388032),
   g = n(546277),
-  h = n(781385),
-  f = n(585616);
+  f = n(781385),
+  h = n(585616);
 
-function m(e) {
+function p(e) {
   let {
     endDate: t
   } = e, {
@@ -24,12 +24,12 @@ function m(e) {
     hours: l,
     minutes: a,
     seconds: s
-  } = (0, c.Z)(t), o = function(e, t, n, r) {
+  } = (0, d.Z)(t), o = function(e, t, n, r) {
     let l = (e, t) => "".concat(e.toString().padStart(2, "0")).concat(t),
       a = [];
     return e > 0 && a.push(l(e, u.NW.string(u.t.QJyuxc))), (t > 0 || a.length > 0) && a.push(l(t, u.NW.string(u.t["1LyF1t"]))), (n > 0 || a.length > 0) && a.push(l(n, u.NW.string(u.t.n7dksL))), a.push(l(r, u.NW.string(u.t["6m/6nJ"]))), a.join(":")
   }(n, l, a, s);
-  return (0, r.jsx)(d.Text, {
+  return (0, r.jsx)(c.Text, {
     variant: "heading-md/medium",
     className: g.countdown,
     tag: "div",
@@ -40,13 +40,13 @@ function m(e) {
     })
   })
 }
-let p = l.memo(function(e) {
+let m = l.memo(function(e) {
   let {
     unpublishedAt: t,
     isVisible: n,
     displayOptions: l,
     isFullScreen: a
-  } = e, c = (0, d.q_F)({
+  } = e, d = (0, c.q_F)({
     transform: "translateX(-50%) ".concat(n ? "translateY(-75%)" : "translateY(0%)"),
     opacity: +!!n,
     config: {
@@ -74,8 +74,8 @@ let p = l.memo(function(e) {
         })
       }
       return e
-    }({}, l.style, c),
-    children: [(0, r.jsx)(d.Text, {
+    }({}, l.style, d),
+    children: [(0, r.jsx)(c.Text, {
       variant: "text-md/medium",
       className: g.countdownLabel,
       children: l.label()
@@ -84,15 +84,15 @@ let p = l.memo(function(e) {
       className: g.countdownIcon,
       alt: "",
       "aria-hidden": !0
-    }), (0, r.jsx)(m, {
+    }), (0, r.jsx)(p, {
       endDate: t
     }), (0, r.jsx)("img", {
-      src: h.Z,
+      src: f.Z,
       className: s()(g.sparkles, g.left),
       alt: "",
       "aria-hidden": !0
     }), (0, r.jsx)("img", {
-      src: f.Z,
+      src: h.Z,
       className: s()(g.sparkles, g.right),
       alt: "",
       "aria-hidden": !0

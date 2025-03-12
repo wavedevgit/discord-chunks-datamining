@@ -158,7 +158,7 @@ class A extends i.PureComponent {
             userIgnored: g.Z.isIgnored(e.id)
           }),
           hovered: t,
-          showAccountIdentifier: !a
+          showAccountIdentifier: !a && !e.isProvisional
         }), (0, r.jsxs)("div", {
           className: C.actions,
           children: [null != c && (0, r.jsx)(d.Z, {

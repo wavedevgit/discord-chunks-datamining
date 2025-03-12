@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   K: () => g,
-  Z: () => h
+  Z: () => f
 });
 var r = n(200651);
 n(192379);
@@ -11,11 +11,11 @@ var l = n(120356),
   s = n(577852),
   o = n(134442),
   i = n(219574),
-  d = n(661252);
-let c = () => 4 * Math.random() + 8,
-  u = [c(), c(), c()],
+  c = n(661252);
+let d = () => 4 * Math.random() + 8,
+  u = [d(), d(), d()],
   g = () => (0, r.jsx)("div", {
-    className: a()(i.skeleton, d.shopCard),
+    className: a()(i.skeleton, c.shopCard),
     children: (0, r.jsxs)("div", {
       className: i.cardBody,
       children: [(0, r.jsx)("div", {
@@ -29,7 +29,7 @@ let c = () => 4 * Math.random() + 8,
       })]
     })
   }),
-  h = () => (0, r.jsx)("div", {
+  f = () => (0, r.jsx)("div", {
     className: s.skeletons,
     children: u.map(e => (0, r.jsxs)("div", {
       className: s.cardsContainer,

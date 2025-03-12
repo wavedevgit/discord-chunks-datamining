@@ -36,7 +36,7 @@ function m(e) {
     onDeactivate: f,
     error: x,
     isLoading: j
-  } = (0, s.Z)(m, b), {
+  } = (0, s.ZP)(m, b), {
     onClose: O
   } = p, _ = o.useCallback(e => {
     f(e).then(() => {

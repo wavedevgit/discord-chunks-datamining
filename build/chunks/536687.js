@@ -207,7 +207,7 @@ function k(e) {
                 disabled: (null === (l = R.userStatus) || void 0 === l ? void 0 : l.completedAt) == null,
                 ctaLabel: j,
                 onClick: () => {
-                  (0, g.xN)(R.config) && k()
+                  ((0, g.xN)(R.config) || (0, g.Bg)(R.config)) && k()
                 }
               })]
             })]

@@ -297,7 +297,7 @@ let eo = e => {
         })
       });
     if (0 === eK.length) return null;
-    let e2 = () => eC || d.tq || eX ? null : eO ? (0, r.jsx)(ec, {
+    let e2 = () => eC || d.tq || eX || t.type === m.Z.NAMEPLATE ? null : eO ? (0, r.jsx)(ec, {
       onClick: e0
     }) : (0, r.jsx)(M.Z, {
       product: t,
