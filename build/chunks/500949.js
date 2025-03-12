@@ -42,19 +42,19 @@ var r, a, i = n(192379),
   j = n(940172),
   y = n(81011),
   C = n(981613),
-  N = n(762399),
-  T = n(232112),
+  T = n(762399),
+  N = n(232112),
   O = n(53796),
   S = n(723757),
-  E = n(375924),
-  I = n(596136),
-  k = n(341901),
-  w = n(856308),
+  k = n(375924),
+  E = n(596136),
+  w = n(341901),
+  I = n(856308),
   P = n(665352),
   Z = n(394900),
   R = n(661105),
-  L = n(525169),
-  A = n(433517),
+  A = n(525169),
+  L = n(433517),
   D = n(190558),
   B = n(231338);
 
@@ -108,14 +108,14 @@ let F = {
     Lab_D65: j.Z,
     Luv: y.Z,
     OKLCH: C.Z,
-    OKLab: N.Z,
-    P3: T.Z,
+    OKLab: T.Z,
+    P3: N.Z,
     ProPhoto: O.Z,
     REC_2020: S.Z,
-    REC_2100_HLG: E.Z,
-    REC_2100_PQ: I.Z,
-    XYZ_D50: k.Z,
-    XYZ_D65: w.Z
+    REC_2100_HLG: k.Z,
+    REC_2100_PQ: E.Z,
+    XYZ_D50: w.Z,
+    XYZ_D65: I.Z
   },
   G = Object.fromEntries(Object.keys(F).map(e => [e, e]));
 Object.values(F).forEach(e => P.Z.register(e));
@@ -125,11 +125,11 @@ let {
 
 function V(e, t) {
   let [n, r] = i.useState(() => {
-    let n = A.K.get(e);
+    let n = L.K.get(e);
     return null != n ? n : t
   });
   return i.useEffect(() => {
-    A.K.set(e, n)
+    L.K.set(e, n)
   }, [e, n]), [n, r]
 }
 
@@ -216,18 +216,18 @@ function ea(e) {
     darkness: a,
     lightness: i,
     easingStrength: o = 1
-  } = e, s = F[e.colorSpace], c = (0, R.Z)(n, s), d = (0, L.CD)(c, "white", 1 - a, {
+  } = e, s = F[e.colorSpace], c = (0, R.Z)(n, s), d = (0, A.CD)(c, "white", 1 - a, {
     space: s,
     outputSpace: l.Z
-  }), u = (0, L.CD)(c, "black", 1 - i, {
+  }), u = (0, A.CD)(c, "black", 1 - i, {
     space: s,
     outputSpace: l.Z
-  }), m = Math.floor(r / 2), h = r - m, p = (0, L.w6)(d, c, {
+  }), m = Math.floor(r / 2), h = r - m, p = (0, A.w6)(d, c, {
     steps: m,
     outputSpace: s,
     space: s,
     progression: e => e ** o
-  }), x = (0, L.w6)(u, c, {
+  }), x = (0, A.w6)(u, c, {
     steps: h,
     outputSpace: s,
     space: s,

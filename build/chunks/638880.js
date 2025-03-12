@@ -24,7 +24,9 @@ var r = n(115911),
   y = n(701488);
 
 function O(e) {
-  return (0, c.C)(() => I(e))
+  return (0, c.C)((0, c.R)({
+    isContextless: e.isContextlessActivity
+  }), () => I(e))
 }
 async function I(e) {
   let t, {

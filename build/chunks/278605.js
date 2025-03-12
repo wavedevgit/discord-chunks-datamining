@@ -1,19 +1,19 @@
-/** Chunk was on 40580 **/
+/** Chunk was on 9710 **/
 "use strict";
-r.d(t, {
+s.d(t, {
   ah: () => i,
   xP: () => o
 });
-var n = r(818083),
-  s = r(987338);
-let i = (0, n.B)({
+var r = s(818083),
+  n = s(987338);
+let i = (0, r.B)({
   kind: "user",
   id: "2024-11_marketing_page_v2_experiment",
   label: "Marketing Page V2 Experiment",
   defaultConfig: {
     enabled: !1
   },
-  commonTriggerPoint: s.$P.CONNECTION_OPEN,
+  commonTriggerPoint: n.$P.CONNECTION_OPEN,
   treatments: [{
     id: 0,
     label: "User see current marketing page",

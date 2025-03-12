@@ -1,4 +1,4 @@
-/** Chunk was on 84441 **/
+/** Chunk was on 76949 **/
 n.d(t, {
   Z: () => X
 }), n(411104), n(47120), n(301563), n(733860);
@@ -32,8 +32,8 @@ var r, i = n(200651),
   x = n(415795),
   j = n(670512),
   D = n(558631),
-  L = n(981631),
-  k = n(388032),
+  k = n(981631),
+  L = n(388032),
   M = n(567508);
 
 function Z(e, t, n) {
@@ -74,12 +74,12 @@ let V = () => (0, i.jsxs)("div", {
   className: M.emptyState,
   children: [(0, i.jsx)("div", {
     className: M.emptyStateNote,
-    children: k.NW.string(k.t.bpbATE)
+    children: L.NW.string(L.t.bpbATE)
   }), (0, i.jsx)("div", {
     className: M.emptyStateCTA,
     children: (0, i.jsx)(u.eee, {
-      href: P.Z.getArticleURL(L.BhN.QUICK_SWITCHER_TUTORIAL),
-      children: k.NW.string(k.t["4iPfEB"])
+      href: P.Z.getArticleURL(k.BhN.QUICK_SWITCHER_TUTORIAL),
+      children: L.NW.string(L.t["4iPfEB"])
     })
   })]
 });
@@ -193,7 +193,7 @@ class K extends o.PureComponent {
     return (0, i.jsx)(u.tEY, {
       children: (0, i.jsx)("input", {
         className: M.input,
-        "aria-label": k.NW.string(k.t.ZvKwYW),
+        "aria-label": L.NW.string(L.t.ZvKwYW),
         ref: this.inputRef,
         type: "text",
         role: "combobox",
@@ -201,7 +201,7 @@ class K extends o.PureComponent {
         "aria-expanded": r,
         "aria-activedescendant": r ? this.getRowId(e) : void 0,
         "aria-autocomplete": "list",
-        placeholder: k.NW.string(k.t.Vtvewc),
+        placeholder: L.NW.string(L.t.Vtvewc),
         onChange: this.handleInputChange,
         onKeyDown: this.handleKeyDown,
         value: this.state.query,
@@ -222,7 +222,7 @@ class K extends o.PureComponent {
     return 0 === t.length && e.length > 0 ? (0, i.jsx)(V, {}) : 0 === t.length ? null : (0, i.jsx)(u._2F, {
       innerId: this._listId,
       innerRole: "listbox",
-      "aria-label": k.NW.string(k.t.Wef5Dg),
+      "aria-label": L.NW.string(L.t.Wef5Dg),
       ref: this.scrollerRef,
       sectionHeight: 0,
       rowHeight: 34,
@@ -234,7 +234,7 @@ class K extends o.PureComponent {
     })
   }
   focusNode(e) {
-    v.S.dispatch(L.CkL.QUICKSWITCHER_RESULT_FOCUS, {
+    v.S.dispatch(k.CkL.QUICKSWITCHER_RESULT_FOCUS, {
       node: e
     })
   }
@@ -247,12 +247,12 @@ class K extends o.PureComponent {
         [M.hasContent]: this.state.query.length > 0
       }),
       type: h.Z.Types.INLINE,
-      children: k.NW.format(k.t.wukqXV, {
-        userSymbolHook: (e, t) => Y(t, E.xQ.USER, k.NW.string(k.t.GQRCGh)),
-        textChannelSymbolHook: (e, t) => Y(t, E.xQ.TEXT_CHANNEL, k.NW.string(k.t.wrwhub)),
-        voiceChannelSymbolHook: (e, t) => Y(t, E.xQ.VOICE_CHANNEL, k.NW.string(k.t["jz+hJi"])),
-        guildSymbolHook: (e, t) => Y(t, E.xQ.GUILD, k.NW.string(k.t.WuwCWl)),
-        helpdeskArticle: P.Z.getArticleURL(L.BhN.QUICK_SWITCHER_TUTORIAL)
+      children: L.NW.format(L.t.wukqXV, {
+        userSymbolHook: (e, t) => Y(t, E.xQ.USER, L.NW.string(L.t.GQRCGh)),
+        textChannelSymbolHook: (e, t) => Y(t, E.xQ.TEXT_CHANNEL, L.NW.string(L.t.wrwhub)),
+        voiceChannelSymbolHook: (e, t) => Y(t, E.xQ.VOICE_CHANNEL, L.NW.string(L.t["jz+hJi"])),
+        guildSymbolHook: (e, t) => Y(t, E.xQ.GUILD, L.NW.string(L.t.WuwCWl)),
+        helpdeskArticle: P.Z.getArticleURL(k.BhN.QUICK_SWITCHER_TUTORIAL)
       })
     })
   }
@@ -269,7 +269,7 @@ class K extends o.PureComponent {
   }
   render() {
     return (0, i.jsx)(u.Y0X, {
-      "aria-label": k.NW.string(k.t.ZvKwYW),
+      "aria-label": L.NW.string(L.t.ZvKwYW),
       size: u.CgR.DYNAMIC,
       transitionState: this.props.transitionState,
       className: a()(M.container, s.tq && M.mobileContainer),
@@ -321,10 +321,10 @@ class K extends o.PureComponent {
             o = I.Z.getGuild(r.getGuildId());
           if (null == o) return;
           switch (r.type) {
-            case L.d4z.GUILD_TEXT:
-            case L.d4z.GUILD_ANNOUNCEMENT:
-            case L.d4z.GUILD_FORUM:
-            case L.d4z.GUILD_MEDIA:
+            case k.d4z.GUILD_TEXT:
+            case k.d4z.GUILD_ANNOUNCEMENT:
+            case k.d4z.GUILD_FORUM:
+            case k.d4z.GUILD_MEDIA:
               return (0, d.jW)(e, async () => {
                 let {
                   default: e
@@ -335,8 +335,8 @@ class K extends o.PureComponent {
                   onSelect: R.Cp
                 }))
               });
-            case L.d4z.GUILD_VOICE:
-            case L.d4z.GUILD_STAGE_VOICE:
+            case k.d4z.GUILD_VOICE:
+            case k.d4z.GUILD_STAGE_VOICE:
               return (0, d.jW)(e, async () => {
                 let {
                   default: e
@@ -347,9 +347,9 @@ class K extends o.PureComponent {
                   onSelect: R.Cp
                 }))
               });
-            case L.d4z.ANNOUNCEMENT_THREAD:
-            case L.d4z.PUBLIC_THREAD:
-            case L.d4z.PRIVATE_THREAD:
+            case k.d4z.ANNOUNCEMENT_THREAD:
+            case k.d4z.PUBLIC_THREAD:
+            case k.d4z.PRIVATE_THREAD:
               return (0, d.jW)(e, async () => {
                 let {
                   default: e
@@ -359,7 +359,7 @@ class K extends o.PureComponent {
                   onSelect: R.Cp
                 }))
               });
-            case L.d4z.GUILD_STORE:
+            case k.d4z.GUILD_STORE:
               return (0, d.jW)(e, async () => {
                 let {
                   default: e
@@ -370,7 +370,7 @@ class K extends o.PureComponent {
                   onSelect: R.Cp
                 }))
               });
-            case L.d4z.GUILD_DIRECTORY:
+            case k.d4z.GUILD_DIRECTORY:
               return (0, d.jW)(e, async () => {
                 let {
                   default: e
@@ -554,7 +554,7 @@ class K extends o.PureComponent {
             id: this.getRowId(t),
             children: n.record.type === f.Ky.SETTINGS && (0, i.jsx)("div", {
               className: M.miscContainer,
-              children: k.NW.string(k.t["3D5yo6"])
+              children: L.NW.string(L.t["3D5yo6"])
             })
           }, "".concat(n.type, "-").concat(n.record.id));
         default:
@@ -582,9 +582,9 @@ function X(e) {
       }
     }).filter(e => "" !== e.title && null != e.path);
     e.unshift({
-      title: k.NW.string(k.t["3D5yo6"]),
-      searchableTitles: [k.NW.string(k.t["3D5yo6"])],
-      path: L.Z5c.SETTINGS("account")
+      title: L.NW.string(L.t["3D5yo6"]),
+      searchableTitles: [L.NW.string(L.t["3D5yo6"])],
+      path: k.Z5c.SETTINGS("account")
     }), (0, y.gF)(e)
   }, [l, r]), (0, i.jsx)(K, w({}, t, e))
 }

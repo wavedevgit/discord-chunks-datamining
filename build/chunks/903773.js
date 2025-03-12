@@ -1,23 +1,23 @@
-/** Chunk was on 40580 **/
+/** Chunk was on 9710 **/
 "use strict";
-r.d(t, {
+s.d(t, {
   Z: () => o
 });
-var n = r(200651);
-r(192379);
-var s = r(481060),
-  i = r(696936);
+var r = s(200651);
+s(192379);
+var n = s(481060),
+  i = s(696936);
 
 function o(e) {
   let {
     children: t,
-    className: r,
+    className: s,
     color: o = i.W.YELLOW
   } = e;
-  return (0, n.jsx)(i.Z, {
-    className: r,
+  return (0, r.jsx)(i.Z, {
+    className: s,
     color: o,
-    icon: s.P4T,
+    icon: n.P4T,
     children: t
   })
 }

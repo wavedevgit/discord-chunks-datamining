@@ -1,10 +1,10 @@
-/** Chunk was on 84441 **/
+/** Chunk was on 81604 **/
 let r;
 n.d(t, {
   Z: () => u
 });
-var i, o = n(442837),
-  l = n(570140);
+var i, l = n(442837),
+  o = n(570140);
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -17,7 +17,7 @@ function a(e, t, n) {
 let s = {
   lastGuildDismissedTime: {}
 };
-class c extends(i = o.ZP.DeviceSettingsStore) {
+class c extends(i = l.ZP.DeviceSettingsStore) {
   initialize() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : s;
     r = e
@@ -30,7 +30,7 @@ class c extends(i = o.ZP.DeviceSettingsStore) {
   }
 }
 a(c, "displayName", "ApplicationSubscriptionChannelNoticeStore"), a(c, "persistKey", "ApplicationSubscriptionChannelNoticeStore");
-let u = new c(l.Z, {
+let u = new c(o.Z, {
   APPLICATION_SUBSCRIPTIONS_CHANNEL_NOTICE_DISMISSED: function(e) {
     let {
       guildId: t

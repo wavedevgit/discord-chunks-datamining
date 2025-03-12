@@ -1,4 +1,4 @@
-/** Chunk was on 84441 **/
+/** Chunk was on 76949 **/
 n.d(t, {
   BP: () => eh,
   ZP: () => eb
@@ -34,8 +34,8 @@ var r = n(200651),
   x = n(937995),
   j = n(456631),
   D = n(274459),
-  L = n(314897),
-  k = n(857192),
+  k = n(314897),
+  L = n(857192),
   M = n(77498),
   Z = n(131951),
   w = n(158776),
@@ -139,7 +139,7 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
       pulseSpeakingIndicator: ex = !1,
       forceIdle: ej = !1,
       inOverlayPopout: eD = !1
-    } = e, eL = i.useContext(x.h9) || ej, [ek, eM] = i.useState(!1), eZ = A.Sb.useSetting(), ew = (0, a.e7)([k.default], () => k.default.isStreamInfoOverlayEnabled), [eU, eV] = i.useState(!1), eF = (0, a.e7)([L.default], () => L.default.getId()), eG = (0, a.e7)([U.default], () => U.default.getCurrentUser()), eW = F.type === en.fO.ACTIVITY ? null : null === (t = F.user) || void 0 === t ? void 0 : t.id, [eB] = (0, E.Z)(F.type === en.fO.ACTIVITY ? [F.applicationId] : []), eH = (0, a.e7)([O.Z], () => O.Z.getEnabled()), ez = (0, a.e7)([Z.Z], () => null != eW && Z.Z.isLocalVideoDisabled(eW, (0, f.Z)(F.type)), [eW, F.type]), eY = (0, a.e7)([Z.Z], () => null != eW ? Z.Z.getVideoToggleState(eW, (0, f.Z)(F.type)) : et.ZUi.NONE, [eW, F.type]), eK = eY === et.ZUi.AUTO_PROBING, {
+    } = e, ek = i.useContext(x.h9) || ej, [eL, eM] = i.useState(!1), eZ = A.Sb.useSetting(), ew = (0, a.e7)([L.default], () => L.default.isStreamInfoOverlayEnabled), [eU, eV] = i.useState(!1), eF = (0, a.e7)([k.default], () => k.default.getId()), eG = (0, a.e7)([U.default], () => U.default.getCurrentUser()), eW = F.type === en.fO.ACTIVITY ? null : null === (t = F.user) || void 0 === t ? void 0 : t.id, [eB] = (0, E.Z)(F.type === en.fO.ACTIVITY ? [F.applicationId] : []), eH = (0, a.e7)([O.Z], () => O.Z.getEnabled()), ez = (0, a.e7)([Z.Z], () => null != eW && Z.Z.isLocalVideoDisabled(eW, (0, f.Z)(F.type)), [eW, F.type]), eY = (0, a.e7)([Z.Z], () => null != eW ? Z.Z.getVideoToggleState(eW, (0, f.Z)(F.type)) : et.ZUi.NONE, [eW, F.type]), eK = eY === et.ZUi.AUTO_PROBING, {
       speaking: eX,
       ringing: eq,
       hasVideo: eQ
@@ -189,9 +189,9 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
     let e4 = (0, P.o)(F, eG),
       e1 = (0, v.lL)("CallTile", !0, eG, e4),
       e3 = (0, a.e7)([j.Z], () => F.type === en.fO.USER && null != eW ? j.Z.getEffectForUserId(eW) : null),
-      e2 = (0, a.e7)([V.Z], () => V.Z.getVoicePlatformForChannel(eb.id, null != eW ? eW : et.lds)),
+      e6 = (0, a.e7)([V.Z], () => V.Z.getVoicePlatformForChannel(eb.id, null != eW ? eW : et.lds)),
       {
-        simplifiedSettingsEnabled: e6
+        simplifiedSettingsEnabled: e2
       } = (0, H.Z)({
         location: "CallTile"
       }),
@@ -255,7 +255,7 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
           selected: eC,
           width: eg,
           focused: ey,
-          idle: eL,
+          idle: ek,
           premiumIndicator: e1.enabled
         }), t_ = el.NW.formatToPlainString(el.t.gHPz3d, {
           streamerName: F.user.username
@@ -316,7 +316,7 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
     }
     let tp = i.useRef(null),
       tE = F.type === en.fO.STREAM ? c.pzj : c.Odl,
-      tf = e6 ? ef : em;
+      tf = e2 ? ef : em;
     return (0, r.jsx)(d.Z, {
       section: et.jXE.VOICE_CHANNEL_TILE,
       children: (0, r.jsxs)("div", {
@@ -342,7 +342,7 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
             className: l()(ea.tile, {
               [ea.noBorder]: eT,
               [ea.noInteraction]: null == $,
-              [ea.idle]: eL
+              [ea.idle]: ek
             }),
             noBorder: eT,
             style: eE,
@@ -351,7 +351,7 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
               "aria-label": t_,
               className: ea.tileChild,
               onDoubleClick: ts,
-              onContextMenu: e => tc(e, e6 && F.type === en.fO.STREAM),
+              onContextMenu: e => tc(e, e2 && F.type === en.fO.STREAM),
               onClick: ta,
               onMouseDown: eu,
               onKeyDown: e_,
@@ -390,8 +390,8 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
                 participantType: F.type,
                 hasVideo: null != eQ && eQ
               }, eJ), {
-                idle: eL,
-                platform: e2,
+                idle: ek,
+                platform: e6,
                 title: (0, z.Z)(eb, F),
                 blocked: ev,
                 ignored: eP,
@@ -418,7 +418,7 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
             currentUserId: eF,
             participant: F
           }), (0, r.jsx)(C.Z, {
-            isFiring: ek,
+            isFiring: eL,
             callTileRef: tp.current
           })]
         })]
@@ -652,7 +652,7 @@ let em = i.memo(e => {
     platform: P,
     application: R,
     secureFramesVerified: A
-  } = e, x = null, j = null, D = null, L = (0, $.K)(p), k = (0, $.N)(p), M = (0, a.e7)([Z.Z], () => null != S && Z.Z.isLocalVideoAutoDisabled(S, (0, f.Z)(T)), [S, T]), w = (0, c.bWb)().enabled;
+  } = e, x = null, j = null, D = null, k = (0, $.K)(p), L = (0, $.N)(p), M = (0, a.e7)([Z.Z], () => null != S && Z.Z.isLocalVideoAutoDisabled(S, (0, f.Z)(T)), [S, T]), w = (0, c.bWb)().enabled;
   if (!C) {
     if (i && T === en.fO.STREAM && E && !O) x = (0, r.jsx)(c.ua7, {
       text: el.NW.string(el.t.YqAjX1),
@@ -672,7 +672,7 @@ let em = i.memo(e => {
         }))
       }
     });
-    else if (i || T !== en.fO.STREAM || !E || L || O) {
+    else if (i || T !== en.fO.STREAM || !E || k || O) {
       if (w) {
         let e;
         u ? e = c.Vm4 : o ? e = c.v0G : n ? e = c.wE8 : i ? e = c.v0G : t && (e = c.nRN), x = null != e ? (0, r.jsx)(e, {
@@ -777,7 +777,7 @@ let em = i.memo(e => {
       className: l()(ea.overlayBottom, {
         [ea.small]: p < 195
       }),
-      children: [k ? (0, r.jsx)("div", {}) : (0, r.jsxs)(c.Text, {
+      children: [L ? (0, r.jsx)("div", {}) : (0, r.jsxs)(c.Text, {
         className: l()(ea.overlayTitle, {
           [ea.idle]: d
         }),

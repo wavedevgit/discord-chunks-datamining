@@ -1,238 +1,241 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ds: () => j,
-  YB: () => M,
-  of: () => U,
-  q5: () => k
+  Ds: () => U,
+  YB: () => k,
+  of: () => G,
+  q5: () => j
 });
 var r = n(200651);
 n(192379);
 var i = n(120356),
   o = n.n(i),
-  a = n(442837),
-  s = n(481060),
-  l = n(846027),
-  c = n(40851),
-  u = n(906732),
-  d = n(835473),
-  f = n(221888),
-  _ = n(522651),
-  p = n(600164),
-  h = n(788983),
-  m = n(189771),
-  g = n(560688),
-  E = n(618158),
-  v = n(922745),
-  b = n(871499),
-  y = n(402113),
-  O = n(800965),
-  I = n(157813),
-  S = n(25827),
-  T = n(131951),
-  N = n(636449),
-  A = n(884338),
-  C = n(349619),
-  R = n(981631),
-  P = n(231338),
-  w = n(388032),
-  D = n(49039),
-  L = n(54329);
+  a = n(115911),
+  s = n(442837),
+  l = n(481060),
+  c = n(846027),
+  u = n(40851),
+  d = n(906732),
+  f = n(835473),
+  _ = n(221888),
+  p = n(522651),
+  h = n(600164),
+  m = n(788983),
+  g = n(189771),
+  E = n(560688),
+  v = n(618158),
+  b = n(922745),
+  y = n(871499),
+  O = n(402113),
+  I = n(800965),
+  S = n(157813),
+  T = n(25827),
+  N = n(131951),
+  A = n(636449),
+  C = n(884338),
+  R = n(349619),
+  P = n(981631),
+  w = n(231338),
+  D = n(388032),
+  L = n(49039),
+  x = n(54329);
 
-function x(e) {
+function M(e) {
   let {
     onClick: t,
     isExpanded: n
   } = e;
-  return (0, r.jsx)(b.Z, {
-    iconClassName: o()(D.arrowIcon, {
-      [D.arrowIconExpanded]: n
+  return (0, r.jsx)(y.Z, {
+    iconClassName: o()(L.arrowIcon, {
+      [L.arrowIconExpanded]: n
     }),
     onClick: t,
-    iconComponent: s.CJ0,
-    label: n ? w.NW.string(w.t["2TiKgY"]) : w.NW.string(w.t.oN8bqa)
-  })
-}
-
-function M(e) {
-  var t, n;
-  let {
-    channel: i,
-    applicationId: o,
-    onMouseDown: s,
-    onMouseMove: b,
-    onMouseLeave: I,
-    onJumpToChannel: A,
-    idle: w,
-    selectedParticipant: x,
-    embeddedActivity: M
-  } = e, k = (0, c.bp)() === R.IlC.POPOUT, j = (0, a.e7)([T.Z], () => T.Z.isVideoEnabled()), U = (0, a.e7)([T.Z], () => Object.values(T.Z.getVideoDevices())[0]), G = !1 === (null === (t = null == U ? void 0 : U.disabled) || void 0 === t || t), B = (0, d.Z)([o])[0], V = (0, m.Z)(i), {
-    parentAnalyticsLocation: F
-  } = (0, u.ZP)(), Z = e => {
-    (0, _.v)(F, _.d.CAMERA, e), l.Z.setVideoEnabled(e)
-  }, H = () => {
-    G ? Z(!0) : (0, g.Z)()
-  }, W = () => {
-    (0, _.v)(F, _.d.POPOUT, !0), (0, C.Z)(() => h.hP(i))
-  };
-  return (0, r.jsxs)("div", {
-    className: L.videoControls,
-    onMouseMove: b,
-    onMouseDown: s,
-    onMouseLeave: I,
-    children: [(0, r.jsx)("div", {
-      className: L.topControls,
-      children: (0, r.jsx)(v.r, {
-        idle: w,
-        title: null !== (n = null == B ? void 0 : B.name) && void 0 !== n ? n : i.name,
-        onJumpToChannel: A,
-        preventIdleComponent: E.Z
-      })
-    }), (0, r.jsxs)("div", {
-      className: L.bottomControls,
-      children: [(0, r.jsxs)(p.Z, {
-        grow: 0,
-        shrink: 1,
-        basis: "50%",
-        align: p.Z.Align.CENTER,
-        children: [(0, r.jsx)(S.C, {
-          className: D.leftPipIcon,
-          enabled: j,
-          cameraUnavailable: !G,
-          hasPermission: V,
-          onChange: Z,
-          onCameraUnavailable: H
-        }), (0, r.jsx)(E.Z, {
-          children: (0, r.jsx)(f.Z, {
-            channelId: i.id,
-            guildId: i.getGuildId(),
-            className: L.__invalid_leftTrayIcon,
-            participant: x,
-            compact: !0
-          })
-        })]
-      }), (0, r.jsxs)(p.Z, {
-        grow: 0,
-        shrink: 1,
-        justify: p.Z.Justify.END,
-        basis: "50%",
-        align: p.Z.Align.CENTER,
-        children: [k || (0, N.R)() ? null : (0, r.jsx)(O.Z, {
-          className: D.rightPipIcon,
-          popoutOpen: !1,
-          onOpenPopout: W,
-          onClosePopout: P.Vq
-        }), (0, r.jsx)(y.Z, {
-          applicationId: o,
-          location: M.location,
-          className: D.rightPipIcon
-        })]
-      })]
-    })]
+    iconComponent: l.CJ0,
+    label: n ? D.NW.string(D.t["2TiKgY"]) : D.NW.string(D.t.oN8bqa)
   })
 }
 
 function k(e) {
-  var t;
+  var t, n;
   let {
-    channel: n,
-    applicationId: i,
-    onMouseDown: a,
-    onMouseMove: l,
-    onMouseLeave: c,
-    onJumpToChannel: u,
-    idle: f,
-    users: _,
-    embeddedActivity: p
-  } = e, h = (0, d.Z)([i])[0];
-  return (0, r.jsxs)(s.P3F, {
-    className: o()(L.videoControls, L.videoControlsTextActivity),
-    onMouseMove: l,
-    onMouseDown: a,
-    onMouseLeave: c,
-    onDoubleClick: u,
+    channel: i,
+    applicationId: o,
+    onMouseDown: l,
+    onMouseMove: y,
+    onMouseLeave: S,
+    onJumpToChannel: C,
+    idle: D,
+    selectedParticipant: M,
+    embeddedActivity: k
+  } = e, j = (0, u.bp)() === P.IlC.POPOUT, U = (0, s.e7)([N.Z], () => N.Z.isVideoEnabled()), G = (0, s.e7)([N.Z], () => Object.values(N.Z.getVideoDevices())[0]), B = !1 === (null === (t = null == G ? void 0 : G.disabled) || void 0 === t || t), V = (0, f.Z)([o])[0], F = (0, g.Z)(i), {
+    parentAnalyticsLocation: Z
+  } = (0, d.ZP)(), H = e => {
+    (0, p.v)(Z, p.d.CAMERA, e), c.Z.setVideoEnabled(e)
+  }, W = () => {
+    B ? H(!0) : (0, E.Z)()
+  }, Y = () => {
+    (0, p.v)(Z, p.d.POPOUT, !0), (0, R.Z)(() => m.hP(i))
+  };
+  return (0, r.jsxs)("div", {
+    className: x.videoControls,
+    onMouseMove: y,
+    onMouseDown: l,
+    onMouseLeave: S,
     children: [(0, r.jsx)("div", {
-      className: L.topControls,
-      children: (0, r.jsx)(v.r, {
-        idle: f,
-        title: null !== (t = null == h ? void 0 : h.name) && void 0 !== t ? t : n.name,
-        onJumpToChannel: u,
-        preventIdleComponent: E.Z
+      className: x.topControls,
+      children: (0, r.jsx)(b.r, {
+        idle: D,
+        title: null !== (n = null == V ? void 0 : V.name) && void 0 !== n ? n : i.name,
+        onJumpToChannel: C,
+        preventIdleComponent: v.Z
       })
     }), (0, r.jsxs)("div", {
-      className: L.bottomControls,
-      children: [(0, r.jsx)(A.Z, {
-        renderIcon: !1,
-        users: _,
-        size: 24,
-        max: 3,
-        className: D.__invalid_userSummaryContainer
-      }), (0, r.jsx)(y.Z, {
-        applicationId: i,
-        location: p.location,
-        iconClassName: D.leaveActivityIcon,
-        isActive: !0
+      className: x.bottomControls,
+      children: [(0, r.jsxs)(h.Z, {
+        grow: 0,
+        shrink: 1,
+        basis: "50%",
+        align: h.Z.Align.CENTER,
+        children: [(0, r.jsx)(T.C, {
+          className: L.leftPipIcon,
+          enabled: U,
+          cameraUnavailable: !B,
+          hasPermission: F,
+          onChange: H,
+          onCameraUnavailable: W
+        }), (0, r.jsx)(v.Z, {
+          children: (0, r.jsx)(_.Z, {
+            channelId: i.id,
+            guildId: i.getGuildId(),
+            className: x.__invalid_leftTrayIcon,
+            participant: M,
+            compact: !0
+          })
+        })]
+      }), (0, r.jsxs)(h.Z, {
+        grow: 0,
+        shrink: 1,
+        justify: h.Z.Justify.END,
+        basis: "50%",
+        align: h.Z.Align.CENTER,
+        children: [j || (0, A.R)({
+          isContextless: k.location.kind === a.X.CONTEXTLESS
+        }) ? null : (0, r.jsx)(I.Z, {
+          className: L.rightPipIcon,
+          popoutOpen: !1,
+          onOpenPopout: Y,
+          onClosePopout: w.Vq
+        }), (0, r.jsx)(O.Z, {
+          applicationId: o,
+          location: k.location,
+          className: L.rightPipIcon
+        })]
       })]
     })]
   })
 }
 
 function j(e) {
+  var t;
+  let {
+    channel: n,
+    applicationId: i,
+    onMouseDown: a,
+    onMouseMove: s,
+    onMouseLeave: c,
+    onJumpToChannel: u,
+    idle: d,
+    users: _,
+    embeddedActivity: p
+  } = e, h = (0, f.Z)([i])[0];
+  return (0, r.jsxs)(l.P3F, {
+    className: o()(x.videoControls, x.videoControlsTextActivity),
+    onMouseMove: s,
+    onMouseDown: a,
+    onMouseLeave: c,
+    onDoubleClick: u,
+    children: [(0, r.jsx)("div", {
+      className: x.topControls,
+      children: (0, r.jsx)(b.r, {
+        idle: d,
+        title: null !== (t = null == h ? void 0 : h.name) && void 0 !== t ? t : n.name,
+        onJumpToChannel: u,
+        preventIdleComponent: v.Z
+      })
+    }), (0, r.jsxs)("div", {
+      className: x.bottomControls,
+      children: [(0, r.jsx)(C.Z, {
+        renderIcon: !1,
+        users: _,
+        size: 24,
+        max: 3,
+        className: L.__invalid_userSummaryContainer
+      }), (0, r.jsx)(O.Z, {
+        applicationId: i,
+        location: p.location,
+        iconClassName: L.leaveActivityIcon,
+        isActive: !0
+      })]
+    })]
+  })
+}
+
+function U(e) {
   let {
     channelId: t,
     participantsOpen: n,
     showToggleParticipants: i
   } = e;
-  return i ? (0, r.jsx)(I.Z, {
+  return i ? (0, r.jsx)(S.Z, {
     channelId: t,
     isParticipantsOpen: n,
-    className: D.participantsButton
+    className: L.participantsButton
   }) : null
 }
 
-function U(e) {
+function G(e) {
   var t;
   let {
     onMouseDown: n,
     onMouseMove: i,
     onMouseLeave: a,
-    showControls: l,
+    showControls: s,
     applicationId: c,
     channel: u,
-    onJumpToChannel: f,
+    onJumpToChannel: d,
     onToggleHeight: _,
     isExpanded: p,
     hideExpandedButton: h,
     embeddedActivity: m
-  } = e, g = (0, d.Z)([c])[0];
+  } = e, g = (0, f.Z)([c])[0];
   return (0, r.jsx)("div", {
-    className: D.pipHeader,
+    className: L.pipHeader,
     onMouseMove: i,
     onMouseDown: n,
     onMouseLeave: a,
     children: (0, r.jsxs)("div", {
-      className: o()(L.topControls, D.pipHeaderContent, {
-        [D.pipHeaderContentOpen]: l
+      className: o()(x.topControls, L.pipHeaderContent, {
+        [L.pipHeaderContentOpen]: s
       }),
-      children: [!l && (0, r.jsx)(s.xhG, {
+      children: [!s && (0, r.jsx)(l.xhG, {
         size: "xxs",
         color: "currentColor",
-        className: D.menuIcon
-      }), l && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(v.r, {
-          idle: !l,
+        className: L.menuIcon
+      }), s && (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(b.r, {
+          idle: !s,
           title: null !== (t = null == g ? void 0 : g.name) && void 0 !== t ? t : u.name,
-          onJumpToChannel: f,
-          preventIdleComponent: E.Z
+          onJumpToChannel: d,
+          preventIdleComponent: v.Z
         }), (0, r.jsxs)("div", {
-          className: D.pipHeaderButtonsRight,
-          children: [h ? null : (0, r.jsx)(x, {
+          className: L.pipHeaderButtonsRight,
+          children: [h ? null : (0, r.jsx)(M, {
             isExpanded: p,
             onClick: _
-          }), (0, r.jsx)(y.Z, {
+          }), (0, r.jsx)(O.Z, {
             applicationId: c,
             location: m.location,
-            iconClassName: D.leaveActivityIcon
+            iconClassName: L.leaveActivityIcon
           })]
         })]
       })]

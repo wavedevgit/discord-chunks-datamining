@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => w
+  Z: () => I
 }), n(47120), n(566702);
 var r = n(200651),
   a = n(192379),
@@ -24,10 +24,10 @@ var r = n(200651),
   y = n(159185),
   C = n(710662);
 
-function N(e) {
+function T(e) {
   return parseFloat(e.toFixed(3))
 }
-let T = [{
+let N = [{
   key: "store",
   cellClassName: y.actionColumn,
   render(e) {
@@ -43,7 +43,7 @@ let T = [{
     let {
       trace: t
     } = e;
-    return "".concat(N(t.time), " ms")
+    return "".concat(T(t.time), " ms")
   }
 }];
 
@@ -56,7 +56,7 @@ function O(e) {
   })), [t]);
   return (0, r.jsx)(d.zJl, {
     children: (0, r.jsx)(v.Z, {
-      columns: T,
+      columns: N,
       data: n
     })
   })
@@ -81,7 +81,7 @@ let S = [{
           })
         }), (0, r.jsxs)(_.Z9, {
           name: "Total Time",
-          children: [N(n.totalTime), " ms"]
+          children: [T(n.totalTime), " ms"]
         })]
       }), (0, r.jsx)(d.zJl, {
         className: y.inspectorContainer,
@@ -104,7 +104,7 @@ let S = [{
   }
 }];
 
-function E(e) {
+function k(e) {
   let {
     actionLog: t,
     initialHeight: n
@@ -162,7 +162,7 @@ function E(e) {
     })]
   })
 }
-let I = [{
+let E = [{
     key: "action",
     cellClassName: y.actionColumn,
     render(e) {
@@ -182,10 +182,10 @@ let I = [{
       let {
         actionLog: t
       } = e;
-      return "".concat(N(t.totalTime), " ms")
+      return "".concat(T(t.totalTime), " ms")
     }
   }],
-  k = {
+  w = {
     searchType: h.S.REGEX,
     searchStringGenerator: e => {
       let {
@@ -195,7 +195,7 @@ let I = [{
     }
   };
 
-function w() {
+function I() {
   let e = a.useRef(null),
     [t, n] = a.useState(""),
     i = function(e) {
@@ -219,12 +219,12 @@ function w() {
     j = a.useCallback(e => {
       x(e)
     }, []);
-  (0, p.BO)(t, f ? c : s, j, k);
-  let N = a.useCallback(e => {
+  (0, p.BO)(t, f ? c : s, j, w);
+  let T = a.useCallback(e => {
       m(s), b(e)
     }, [s]),
-    T = t.trim().length > 0,
-    O = a.useMemo(() => T ? h : f ? c : s, [s, h, T, f, c]);
+    N = t.trim().length > 0,
+    O = a.useMemo(() => N ? h : f ? c : s, [s, h, N, f, c]);
   return (0, r.jsxs)("div", {
     ref: e,
     className: l()(C.panel, y.panel),
@@ -235,7 +235,7 @@ function w() {
         className: y.pausedEvents,
         children: (0, r.jsx)(d.rsf, {
           checked: !f,
-          onChange: e => N(!e)
+          onChange: e => T(!e)
         })
       }), (0, r.jsx)(d.E1j, {
         className: y.searchBar,
@@ -245,11 +245,11 @@ function w() {
         placeholder: "Search by action name"
       })]
     }), (0, r.jsx)(v.Z, {
-      columns: I,
+      columns: E,
       data: O,
       selectedRowKey: null == _ ? void 0 : _.id.toString(),
       onClickRow: e => g(e.actionLog)
-    }), null != _ && (0, r.jsx)(E, {
+    }), null != _ && (0, r.jsx)(k, {
       actionLog: _,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300
     })]

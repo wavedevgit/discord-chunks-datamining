@@ -1,28 +1,28 @@
-/** Chunk was on 40580 **/
+/** Chunk was on 9710 **/
 "use strict";
-r.d(t, {
+s.d(t, {
   Z: () => a
 });
-var n = r(200651);
-r(192379);
-var s = r(120356),
-  i = r.n(s),
-  o = r(481060),
-  l = r(688911);
+var r = s(200651);
+s(192379);
+var n = s(120356),
+  i = s.n(n),
+  o = s(481060),
+  l = s(688911);
 
 function a(e) {
   let {
     copy: t,
-    className: r
+    className: s
   } = e;
-  return (0, n.jsxs)("div", {
-    className: i()(l.badgeContainer, r),
-    children: [(0, n.jsx)("div", {
+  return (0, r.jsxs)("div", {
+    className: i()(l.badgeContainer, s),
+    children: [(0, r.jsx)("div", {
       className: l.timer,
-      children: (0, n.jsx)(o.T39, {
+      children: (0, r.jsx)(o.T39, {
         size: "sm"
       })
-    }), (0, n.jsx)(o.Text, {
+    }), (0, r.jsx)(o.Text, {
       variant: "eyebrow",
       className: l.newBadge,
       children: t

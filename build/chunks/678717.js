@@ -24,19 +24,19 @@ var g = n(392750),
   j = n(592197),
   y = n(806240),
   C = n(789654),
-  N = n(719672),
-  T = n(691867),
+  T = n(719672),
+  N = n(691867),
   O = n(916790),
   S = n(645973),
-  E = n(903502),
-  I = n(912072),
-  k = n(272193),
-  w = n(685560),
+  k = n(903502),
+  E = n(912072),
+  w = n(272193),
+  I = n(685560),
   P = n(735959),
   Z = n(246992),
   R = n(496025),
-  L = n(442954),
-  A = n(633001),
+  A = n(442954),
+  L = n(633001),
   D = n(702904),
   B = n(178821),
   M = n(958328),
@@ -115,11 +115,11 @@ function ee() {
       }), e.push({
         id: "feedback",
         name: "Feedback",
-        render: () => (0, r.jsx)(E.Z, {})
+        render: () => (0, r.jsx)(k.Z, {})
       }), e.push({
         id: "overlay",
         name: "Overlay v3",
-        render: () => (0, r.jsx)(A.Z, {})
+        render: () => (0, r.jsx)(L.Z, {})
       }), e.push({
         id: "slayer_sdk",
         name: "Slayer SDK",
@@ -135,11 +135,11 @@ function ee() {
       }), e.push({
         id: "design_toggles",
         name: "Design Toggles",
-        render: () => (0, r.jsx)(T.Z, {})
+        render: () => (0, r.jsx)(N.Z, {})
       }), e.push({
         id: "overlays",
         name: "Dev Overlays",
-        render: () => (0, r.jsx)(I.Z, {
+        render: () => (0, r.jsx)(E.Z, {
           devSettingsCategory: _.zU.OVERLAYS
         })
       }), e.push({
@@ -149,7 +149,7 @@ function ee() {
       }), e.push({
         id: "reporting",
         name: "Reporting",
-        render: () => (0, r.jsx)(I.Z, {
+        render: () => (0, r.jsx)(E.Z, {
           devSettingsCategory: _.zU.REPORTING
         })
       }), e.push({
@@ -159,7 +159,7 @@ function ee() {
       }), e.push({
         id: "modals",
         name: "Modals",
-        render: () => (0, r.jsx)(L.Z, {})
+        render: () => (0, r.jsx)(A.Z, {})
       }), e.push({
         id: "affinity",
         name: "Affinity",
@@ -171,7 +171,7 @@ function ee() {
       }), e.push({
         id: "dcf",
         name: "DCF",
-        render: () => (0, r.jsx)(N.Z, {})
+        render: () => (0, r.jsx)(T.Z, {})
       }), e.push({
         id: "potions",
         name: "Potions",
@@ -195,7 +195,7 @@ function ee() {
       })), e.push({
         id: "gifting_intent",
         name: "Gifting Intent",
-        render: () => (0, r.jsx)(k.Z, {})
+        render: () => (0, r.jsx)(w.Z, {})
       }), e.push({
         id: "voice_filters",
         name: "Voice Filters",
@@ -203,7 +203,7 @@ function ee() {
       }), e.push({
         id: "skill_trees",
         name: "Skill Trees",
-        render: () => (0, r.jsx)(w.Z, {})
+        render: () => (0, r.jsx)(I.Z, {})
       }), e
     }, []),
     {

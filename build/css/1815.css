@@ -1,6 +1,6 @@
 /**
   Module ID: 1815
-  Original File Name: 305f051cf2b49dce
+  Original File Name: b5544f84d844717e
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -467,7 +467,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 16px;
+    font-size: 1rem;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -4401,24 +4401,6 @@ h1.title_feb59c,h2.title_feb59c {
     }
 }
 
-.redeemedCircle_a61c56,.standardCircle_a61c56 {
-    display: inline-block;
-    border-radius: 50%;
-    padding: 2px
-}
-
-.redeemedCircle_a61c56 {
-    background: linear-gradient(var(--premium-tier-2-pink),var(--premium-tier-2-pink-for-gradients-2))
-}
-
-.standardCircle_a61c56 {
-    background: linear-gradient(90deg,rgba(180,115,245,.3),rgba(226,146,170,.3))
-}
-
-.convertedCircleGlow_a61c56 {
-    box-shadow: 0 0 7px 4px var(--premium-tier-2-pink-for-gradients-2)
-}
-
 .expandedProgressBarContainer_a61c56 {
     min-height: 260px;
     border-radius: 8px;
@@ -4446,7 +4428,7 @@ h1.title_feb59c,h2.title_feb59c {
     border: 1px solid var(--premium-tier-2-pink-for-gradients-2)
 }
 
-.containerWithGlowWithBanner_a61c56,.containerWithGlowWithoutBanner_a61c56,.containerWithoutGlow_a61c56 {
+.containerWithGlowWithoutBanner_a61c56,.containerWithoutGlow_a61c56 {
     min-height: 260px;
     border-radius: 8px;
     max-width: 989px
@@ -4457,12 +4439,8 @@ h1.title_feb59c,h2.title_feb59c {
     margin-left: 16px
 }
 
-.containerWithGlowWithBanner_a61c56,.containerWithGlowWithoutBanner_a61c56 {
+.containerWithGlowWithoutBanner_a61c56 {
     box-shadow: 0 0 25px 6px rgba(231,66,225,.3)
-}
-
-.containerWithGlowWithBanner_a61c56 {
-    padding-top: .1px
 }
 
 .containerWithGlowOnSettingsPage_a61c56 {
@@ -4570,26 +4548,8 @@ h1.title_feb59c,h2.title_feb59c {
     border-radius: 8px 8px 0 0
 }
 
-.bannerWithContainerOutline_a61c56 {
-    top: -41px;
-    width: calc(100% - 30px);
-    left: -1px
-}
-
 .containerWithBanner_a61c56 {
     border-radius: 0 0 8px 8px
-}
-
-.marginWithBanner_a61c56 {
-    margin-top: 5rem
-}
-
-.settingsBanner_a61c56 {
-    width: 100%
-}
-
-.settingsBannerAllRedeemed_a61c56 {
-    width: calc(100% + 2px)
 }
 
 .referralInfoContent_a61c56 {
@@ -4612,11 +4572,6 @@ h1.title_feb59c,h2.title_feb59c {
 .referralCountdownDays_a61c56 {
     color: var(--premium-tier-2-purple);
     margin-bottom: 10px
-}
-
-.content_a61c56 {
-    border-radius: 50%;
-    padding: 2px
 }
 
 .fill_a61c56 {
@@ -4658,7 +4613,7 @@ h1.title_feb59c,h2.title_feb59c {
     max-width: 120px
 }
 
-.theme-light .content_a61c56,.theme-light .expandedProgressBarContainer_a61c56 {
+.theme-light .expandedProgressBarContainer_a61c56 {
     background: rgba(235,237,239,.7)
 }
 
@@ -4677,10 +4632,6 @@ h1.title_feb59c,h2.title_feb59c {
 
 .theme-dark .expandedProgressBarContainer_a61c56 {
     background: rgba(35,36,40,.5)
-}
-
-.theme-dark .content_a61c56 {
-    background: hsl(var(--primary-660-hsl)/.5)
 }
 
 .theme-dark .userAvatarProgressBarUnitNum_a61c56 {

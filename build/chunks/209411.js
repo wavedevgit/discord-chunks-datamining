@@ -13,10 +13,10 @@ var r = n(200651),
   d = n(743142),
   h = n(893607),
   p = n(703656),
-  g = n(314897),
-  f = n(781428),
-  m = n(981631),
-  _ = n(176505);
+  f = n(314897),
+  g = n(781428),
+  _ = n(981631),
+  m = n(176505);
 
 function b(e) {
   var t, n;
@@ -24,9 +24,9 @@ function b(e) {
       if (function(e) {
           var t;
           let n = (0, a.LX)(e, {
-            path: m.Z5c.CHANNEL(h.Hw.guildId(), h.Hw.channelId())
+            path: _.Z5c.CHANNEL(h.Hw.guildId(), h.Hw.channelId())
           });
-          return (null == n ? void 0 : null === (t = n.params) || void 0 === t ? void 0 : t.channelId) === _.oC.ROLE_SUBSCRIPTIONS
+          return (null == n ? void 0 : null === (t = n.params) || void 0 === t ? void 0 : t.channelId) === m.oC.ROLE_SUBSCRIPTIONS
         }(t)) p.dL(t);
       else {
         var n;
@@ -36,17 +36,17 @@ function b(e) {
     {
       isAuthenticated: x,
       loginStatus: N
-    } = (0, l.cj)([g.default], () => ({
-      isAuthenticated: g.default.isAuthenticated(),
-      loginStatus: g.default.getLoginStatus()
+    } = (0, l.cj)([f.default], () => ({
+      isAuthenticated: f.default.isAuthenticated(),
+      loginStatus: f.default.getLoginStatus()
     })),
     {
       location: v,
       redirectTo: I
     } = e,
-    [E, C] = i.useState(x);
+    [E, j] = i.useState(x);
 
-  function j(e) {
+  function C(e) {
     let {
       handoffKey: t,
       handoffToken: n,
@@ -56,7 +56,7 @@ function b(e) {
       handoffKey: t,
       handoffToken: n,
       handoffSource: r
-    }), C(!1)
+    }), j(!1)
   }
   return ((0, u.ZP)(() => {
     if (null != v) {
@@ -67,19 +67,19 @@ function b(e) {
       if (null != e && null != t) {
         let n = null != I ? (0, d.L)(I) : void 0;
         E ? s.Z.logout(null).finally(() => {
-          j({
+          C({
             handoffKey: e,
             handoffToken: t,
             handoffSource: n
           })
-        }) : j({
+        }) : C({
           handoffKey: e,
           handoffToken: t,
           handoffSource: n
         })
       }
     }
-  }), E || N === m.u34.LOGGING_IN) ? (0, r.jsx)(f.q, {}) : (0, r.jsx)(f.Z, (t = function(e) {
+  }), E || N === _.u34.LOGGING_IN) ? (0, r.jsx)(g.q, {}) : (0, r.jsx)(g.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

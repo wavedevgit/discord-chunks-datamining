@@ -23,17 +23,17 @@ var r = n(200651),
   j = n(77498),
   y = n(823379),
   C = n(550532),
-  N = n(71585),
-  T = n(146282),
+  T = n(71585),
+  N = n(146282),
   O = n(780106),
   S = n(650613),
-  E = n(789086),
-  I = n(206583),
-  k = n(866235),
-  w = n(710662);
+  k = n(789086),
+  E = n(206583),
+  w = n(866235),
+  I = n(710662);
 let P = [{
   key: "type",
-  cellClassName: l()(k.cell, k.cellType),
+  cellClassName: l()(w.cell, w.cellType),
   render(e) {
     let {
       type: t
@@ -45,7 +45,7 @@ let P = [{
   }
 }, {
   key: "count",
-  cellClassName: l()(k.cell, k.cellCount),
+  cellClassName: l()(w.cell, w.cellCount),
   render(e) {
     let {
       entries: t
@@ -59,7 +59,7 @@ let P = [{
   }
 }, {
   key: "only?",
-  cellClassName: k.cell,
+  cellClassName: w.cell,
   render(e) {
     let {
       type: t
@@ -74,7 +74,7 @@ function Z(e) {
   var t, n;
   let {
     type: a
-  } = e, i = (0, u.e7)([T.Z], () => T.Z.getFilters()), l = null !== (n = null == i ? void 0 : null === (t = i.types) || void 0 === t ? void 0 : t.has(a)) && void 0 !== n && n;
+  } = e, i = (0, u.e7)([N.Z], () => N.Z.getFilters()), l = null !== (n = null == i ? void 0 : null === (t = i.types) || void 0 === t ? void 0 : t.has(a)) && void 0 !== n && n;
   return (0, r.jsx)(h.XZJ, {
     value: l,
     onClick: function() {
@@ -93,9 +93,9 @@ function Z(e) {
 
 function R() {
   var e, t;
-  let n = (0, u.e7)([T.Z], () => T.Z.getFeed(I.YN.GLOBAL_FEED)),
-    i = (0, u.e7)([T.Z], () => T.Z.getDebugImpressionCappingDisabled()),
-    l = (0, u.e7)([N.Z], () => N.Z.getDebugFastImpressionCappingEnabled()),
+  let n = (0, u.e7)([N.Z], () => N.Z.getFeed(E.YN.GLOBAL_FEED)),
+    i = (0, u.e7)([N.Z], () => N.Z.getDebugImpressionCappingDisabled()),
+    l = (0, u.e7)([T.Z], () => T.Z.getDebugFastImpressionCappingEnabled()),
     o = function(e) {
       let t = s().groupBy(e, e => e.content_type);
       return Object.keys(t).map(e => {
@@ -107,17 +107,17 @@ function R() {
         }
       })
     }(null == n ? void 0 : null === (e = n.entries) || void 0 === e ? void 0 : e.map(e => e.content)),
-    c = (0, u.e7)([T.Z], () => {
+    c = (0, u.e7)([N.Z], () => {
       var e;
-      return (null === (e = T.Z.getFeedState(I.YN.GLOBAL_FEED)) || void 0 === e ? void 0 : e.loading) === !0
+      return (null === (e = N.Z.getFeedState(E.YN.GLOBAL_FEED)) || void 0 === e ? void 0 : e.loading) === !0
     }),
     [Z, R] = a.useState(""),
-    A = (0, u.e7)([j.Z, x.Z], () => {
+    L = (0, u.e7)([j.Z, x.Z], () => {
       var e, t, n;
       return parseInt(Z) > 0 ? Z : null !== (n = null === (e = j.Z.getGameByName(Z)) || void 0 === e ? void 0 : e.id) && void 0 !== n ? n : null === (t = x.Z.getApplicationByName(Z)) || void 0 === t ? void 0 : t.id
     }, [Z]),
     D = (0, v.Z)({
-      applicationId: A,
+      applicationId: L,
       location: "DevToolsContentInventory",
       source: g.m1.DevTools
     }),
@@ -131,9 +131,9 @@ function R() {
     M = (0, f.Z)(B).filter(y.lm),
     z = (0, u.e7)([C.Z], () => C.Z.getFakeGameToShow());
   return (0, r.jsx)("div", {
-    className: w.panel,
+    className: I.panel,
     children: (0, r.jsxs)(h.zJl, {
-      className: k.content,
+      className: w.content,
       children: [(0, r.jsxs)(h.hjN, {
         children: [(0, r.jsx)(h.vwX, {
           children: "Inventory"
@@ -142,12 +142,12 @@ function R() {
           data: o
         }), (0, r.jsx)(h.LZC, {
           size: 8
-        }), (0, r.jsx)(E.Z, {}), (0, r.jsx)(h.zxk, {
+        }), (0, r.jsx)(k.Z, {}), (0, r.jsx)(h.zxk, {
           fullWidth: !0,
           onClick: function() {
             p.Z.dispatch({
               type: "CONTENT_INVENTORY_MANUAL_REFRESH",
-              feedId: I.YN.GLOBAL_FEED,
+              feedId: E.YN.GLOBAL_FEED,
               feature: d.L.INBOX
             })
           },
@@ -205,13 +205,13 @@ function R() {
           onKeyDown: e => {
             "Enter" === e.key && (Z === e.currentTarget.value ? null == D || D(e) : R(e.currentTarget.value))
           },
-          error: Z.length > 0 && null == D ? "No game profile for ".concat(null != A ? A : Z + " - try by id", ".") : void 0,
+          error: Z.length > 0 && null == D ? "No game profile for ".concat(null != L ? L : Z + " - try by id", ".") : void 0,
           style: null != D ? {
             border: "1px solid green"
           } : {}
         }), (0, r.jsx)("ul", {
           children: M.map(e => (0, r.jsx)("li", {
-            children: (0, r.jsx)(L, {
+            children: (0, r.jsx)(A, {
               application: e
             })
           }, "follow-game-".concat(e.id)))
@@ -241,7 +241,7 @@ function R() {
     })
   })
 }
-let L = e => {
+let A = e => {
   let {
     application: t
   } = e, n = (0, v.Z)({

@@ -1,21 +1,20 @@
-/** Chunk was on 40580 **/
-"use strict";
-r.d(t, {
-  N: () => s
+/** Chunk was on 1815 **/
+n.d(t, {
+  N: () => i
 });
-var n = r(520540);
+var r = n(520540);
 
-function s(e) {
+function i(e) {
   let {
     enabled: t,
-    eligibleToFetch: r
-  } = n.g.useExperiment({
+    eligibleToFetch: n
+  } = r.g.useExperiment({
     location: e
   }, {
     autoTrackExposure: !1
   });
   return {
     enabled: t,
-    eligibleToFetch: r
+    eligibleToFetch: n
   }
 }

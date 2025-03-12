@@ -62,10 +62,6 @@ let g = () => {
         return {
           duration: 1, percentage: 25
         };
-      case p.n5:
-        return {
-          duration: 1, percentage: 40
-        };
       default:
         return
     }

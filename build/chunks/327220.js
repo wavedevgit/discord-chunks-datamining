@@ -1,16 +1,16 @@
-/** Chunk was on 84441 **/
+/** Chunk was on 81604 **/
 n.d(t, {
   Z: () => a
 }), n(47120);
 var r = n(192379),
   i = n(442837),
-  o = n(592125),
-  l = n(9156);
+  l = n(592125),
+  o = n(9156);
 
 function a(e) {
-  let t = (0, i.e7)([o.Z], () => o.Z.getPrivateChannelsVersion()),
-    n = (0, i.e7)([o.Z], () => o.Z.getMutableDMsByUserIds(), [t]),
-    a = (0, i.e7)([l.ZP], () => l.ZP.getMutedChannels(null)),
+  let t = (0, i.e7)([l.Z], () => l.Z.getPrivateChannelsVersion()),
+    n = (0, i.e7)([l.Z], () => l.Z.getMutableDMsByUserIds(), [t]),
+    a = (0, i.e7)([o.ZP], () => o.ZP.getMutedChannels(null)),
     s = r.useMemo(() => {
       let e = new Set;
       for (let t in n) {

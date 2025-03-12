@@ -1,4 +1,4 @@
-/** Chunk was on 84441 **/
+/** Chunk was on 76949 **/
 n.d(t, {
   Z: () => E
 }), n(47120);
@@ -37,8 +37,8 @@ let E = i.forwardRef(function(e, t) {
     maxWidth: x = 280,
     hideDismissButton: j = !1,
     pointerClassName: D,
-    dismissIconClassName: L,
-    dismissIcon: k,
+    dismissIconClassName: k,
+    dismissIcon: L,
     onDismissIconClick: M
   } = e, Z = T ? a.zxk.Sizes.LARGE : a.zxk.Sizes.MAX, [w, U] = i.useState(!1), {
     ref: V,
@@ -64,10 +64,10 @@ let E = i.forwardRef(function(e, t) {
         [p.contentNoArt]: null == E || I,
         [p.contentPremium]: C || A
       }),
-      children: [null != k && (0, r.jsx)(a.P3F, {
+      children: [null != L && (0, r.jsx)(a.P3F, {
         onClick: M,
-        className: L,
-        children: k
+        className: k,
+        children: L
       }), (0, r.jsxs)("div", {
         className: l()(E, I ? p.artInline : p.artAbsolute),
         children: [S && (0, r.jsx)(u.Z, {

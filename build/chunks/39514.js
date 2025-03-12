@@ -13,18 +13,18 @@ var r = n(200651),
   d = n(978085),
   h = n(232567),
   p = n(388905),
-  g = n(362762),
-  f = n(108427),
-  m = n(314897),
-  _ = n(896797),
+  f = n(362762),
+  g = n(108427),
+  _ = n(314897),
+  m = n(896797),
   b = n(82142),
   x = n(283595),
   N = n(55563),
   v = n(669079),
   I = n(63063),
   E = n(51144),
-  C = n(481153),
-  j = n(781428),
+  j = n(481153),
+  C = n(781428),
   O = n(423527),
   S = n(981631),
   y = n(388032),
@@ -45,7 +45,7 @@ class A extends i.PureComponent {
       authenticated: e,
       isResolved: t
     } = this.props;
-    e && this.handleAuthenticated(), t || this.resolveGiftCode(), (0, f.e)("gift_code")
+    e && this.handleAuthenticated(), t || this.resolveGiftCode(), (0, g.e)("gift_code")
   }
   componentDidUpdate(e) {
     let {
@@ -170,7 +170,7 @@ class A extends i.PureComponent {
   renderAuthenticated(e, t) {
     let n = this.getErrorMessage(e);
     return (0, r.jsxs)(p.ZP, {
-      children: [(0, r.jsx)(C.Z, {
+      children: [(0, r.jsx)(j.Z, {
         giftCode: e
       }), (0, r.jsx)(p.zx, {
         disabled: null != n,
@@ -212,7 +212,7 @@ class A extends i.PureComponent {
         let e = this.state.currentUser;
         return c || null == e ? this.renderSpinner(y.NW.string(y.t.bYb2nZ)) : this.requiresVerification && null != e ? this.renderVerification(e) : this.renderAuthenticated(i, e)
       }
-      return "login" === this.getMode() ? (0, r.jsx)(j.Z, {
+      return "login" === this.getMode() ? (0, r.jsx)(C.Z, {
         giftCodeSKU: t,
         giftCode: i,
         transitionTo: l,
@@ -279,7 +279,7 @@ class A extends i.PureComponent {
     })
   }
 }
-let Z = l.ZP.connectStores([b.Z, x.Z, m.default, N.Z, _.Z, g.Z], e => {
+let Z = l.ZP.connectStores([b.Z, x.Z, _.default, N.Z, m.Z, f.Z], e => {
   let t = e.match.params.giftCode,
     n = b.Z.get(t),
     r = null != n ? N.Z.get(n.skuId) : null;
@@ -287,11 +287,11 @@ let Z = l.ZP.connectStores([b.Z, x.Z, m.default, N.Z, _.Z, g.Z], e => {
     giftCode: n,
     sku: r,
     libraryApplication: null != r && (null == n ? void 0 : n.entitlementBranches) != null ? v.z2(n.entitlementBranches, r, x.Z) : null,
-    authenticated: m.default.isAuthenticated(),
-    defaultRoute: _.Z.defaultRoute,
+    authenticated: _.default.isAuthenticated(),
+    defaultRoute: m.Z.defaultRoute,
     isResolved: b.Z.getIsResolved(t),
     isAccepting: b.Z.getIsAccepting(t),
     libraryApplicationsFetched: x.Z.fetched,
-    nativeAppState: g.Z.getState(t)
+    nativeAppState: f.Z.getState(t)
   }
 })(A)

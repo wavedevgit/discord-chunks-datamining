@@ -1,11 +1,11 @@
-/** Chunk was on 84441 **/
+/** Chunk was on 81604 **/
 n.d(t, {
   Z: () => u
 });
-var r, i, o, l = n(442837),
+var r, i, l, o = n(442837),
   a = n(570140);
 let s = [];
-class c extends(o = l.ZP.Store) {
+class c extends(l = o.ZP.Store) {
   getEligibleGuildsForNagActivate() {
     return s
   }

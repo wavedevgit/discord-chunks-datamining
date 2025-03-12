@@ -1,26 +1,25 @@
-/** Chunk was on 40580 **/
-"use strict";
-r.d(t, {
+/** Chunk was on 1815 **/
+n.d(t, {
   G: () => c,
-  Q: () => a
+  Q: () => o
 });
-var n = r(192379),
-  s = r(442837),
-  i = r(232567),
-  o = r(594174),
-  l = r(276444);
-let a = 3;
+var r = n(192379),
+  i = n(442837),
+  s = n(232567),
+  a = n(594174),
+  l = n(276444);
+let o = 3;
 
 function c() {
-  let e = (0, s.Wu)([l.Z], () => l.Z.getSentUserIds()),
-    t = (0, s.Wu)([o.default], () => e.map(e => o.default.getUser(e)).filter(e => null != e));
-  return n.useEffect(() => {
+  let e = (0, i.Wu)([l.Z], () => l.Z.getSentUserIds()),
+    t = (0, i.Wu)([a.default], () => e.map(e => a.default.getUser(e)).filter(e => null != e));
+  return r.useEffect(() => {
     e.forEach(e => {
-      (0, i.PR)(e)
+      (0, s.PR)(e)
     })
   }, [e]), {
     referralSentUsers: t,
-    hasSentAllReferrals: e.length === a,
-    refreshAt: (0, s.e7)([l.Z], () => l.Z.getRefreshAt())
+    hasSentAllReferrals: e.length === o,
+    refreshAt: (0, i.e7)([l.Z], () => l.Z.getRefreshAt())
   }
 }

@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => _
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -15,7 +15,7 @@ var i = n(481060),
   h = n(388032),
   p = n(291102);
 
-function g(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function g(e) {
   return e
 }
 
-function f(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,7 +46,7 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = e => {
+let _ = e => {
   let {
     state: t
   } = e;
@@ -59,20 +59,20 @@ let m = e => {
   }
 };
 
-function _(e) {
+function m(e) {
   let {
     invite: t,
     onAcceptInvite: n,
-    disableUser: _ = !1
+    disableUser: m = !1
   } = e;
   if (null == t) return null;
   let b = null != t.guild ? new l.ZP(t.guild) : null,
     x = null != t.channel ? (0, a.jD)(t.channel) : null,
     N = null != t.target_application ? new o.ZP(t.target_application) : null,
-    v = _ || null == t.inviter ? null : new s.Z(t.inviter),
+    v = m || null == t.inviter ? null : new s.Z(t.inviter),
     I = !(null != t.approximate_member_count && t.approximate_member_count > c.mx || null != b && b.hasFeature(d.oNc.COMMUNITY)) && null != v && (0, c.WT)(t),
-    E = m(t),
-    C = {
+    E = _(t),
+    j = {
       invite: t,
       user: v,
       guild: b,
@@ -90,11 +90,11 @@ function _(e) {
       application: N,
       guild: b,
       user: I || (0, c.X7)(t) ? v : null
-    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, f(g({}, C), {
+    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, g(f({}, j), {
       showBigUserIcon: I
-    })), (0, r.jsx)(c.UM, f(g({}, C), {
+    })), (0, r.jsx)(c.UM, g(f({}, j), {
       showBigUserIcon: I
-    })), (0, r.jsx)(c.V6, g({}, C)), (0, r.jsx)(i.zxk, {
+    })), (0, r.jsx)(c.V6, f({}, j)), (0, r.jsx)(i.zxk, {
       onClick: n,
       submitting: E,
       className: p.acceptButton,

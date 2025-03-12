@@ -1,14 +1,14 @@
-/** Chunk was on 40580 **/
+/** Chunk was on 9710 **/
 "use strict";
-r.d(t, {
+s.d(t, {
   Z: () => f
-}), r(47120);
-var n = r(200651),
-  s = r(192379),
-  i = r(780384),
-  o = r(410030),
-  l = r(119269),
-  a = r(65254);
+}), s(47120);
+var r = s(200651),
+  n = s(192379),
+  i = s(780384),
+  o = s(410030),
+  l = s(119269),
+  a = s(65254);
 let c = "url(#gradient)",
   u = (e, t) => {
     switch (e) {
@@ -45,97 +45,97 @@ let c = "url(#gradient)",
   f = e => {
     let {
       percentage: t = 0,
-      children: r,
+      children: s,
       animationClassName: c,
       initialPercentage: f = 0,
       progressCircleStrokeSize: b = 2,
       progressCircleVariation: g,
-      progressCircleStroke: m
-    } = e, O = 43 + b / 2, h = 2 * Math.PI * O, [x, j] = s.useState(f);
-    s.useEffect(() => {
+      progressCircleStroke: O
+    } = e, x = 43 + b / 2, m = 2 * Math.PI * x, [h, j] = n.useState(f);
+    n.useEffect(() => {
       let e = setTimeout(() => {
         j(t)
       }, 200);
       return () => clearTimeout(e)
     }, [t]);
     let y = (0, o.ZP)(),
-      C = (0, i.ap)(y),
-      v = d(g),
-      P = u(g, C),
-      _ = null != m ? m : p(C, g);
-    return (0, n.jsxs)("div", {
+      v = (0, i.ap)(y),
+      C = d(g),
+      P = u(g, v),
+      S = null != O ? O : p(v, g);
+    return (0, r.jsxs)("div", {
       className: a.circleContainer,
-      children: [(0, n.jsxs)("svg", {
+      children: [(0, r.jsxs)("svg", {
         viewBox: "0 0 100 100",
         className: a.circleSVG,
-        children: [(0, n.jsx)("circle", {
+        children: [(0, r.jsx)("circle", {
           className: g === l.Qo.NITRO_GEM || g === l.Qo.AVATAR_DECO ? a.baseProgressCircle : void 0,
           fill: "transparent",
           strokeWidth: b,
-          r: "".concat(O),
+          r: "".concat(x),
           cx: "50%",
           cy: "50%",
-          stroke: v,
+          stroke: C,
           strokeOpacity: P
-        }), (0, n.jsx)("circle", {
-          stroke: _,
+        }), (0, r.jsx)("circle", {
+          stroke: S,
           strokeWidth: b,
           strokeLinecap: "round",
-          strokeDasharray: "".concat(h, " ").concat(h),
+          strokeDasharray: "".concat(m, " ").concat(m),
           className: c,
           style: {
-            strokeDashoffset: (1 - x / 100) * h
+            strokeDashoffset: (1 - h / 100) * m
           },
-          r: "".concat(O),
+          r: "".concat(x),
           cx: "50%",
           cy: "50%"
         })]
-      }), (0, n.jsxs)("svg", {
+      }), (0, r.jsxs)("svg", {
         width: "0",
         height: "0",
-        children: [(0, n.jsxs)("linearGradient", {
+        children: [(0, r.jsxs)("linearGradient", {
           id: "gradient",
           x1: "0%",
           y1: "0%",
           x2: "100%",
           y2: "100%",
-          children: [(0, n.jsx)("stop", {
+          children: [(0, r.jsx)("stop", {
             offset: "0%",
             style: {
               stopColor: "#FFBDF2"
             }
-          }), (0, n.jsx)("stop", {
+          }), (0, r.jsx)("stop", {
             offset: "100%",
             style: {
               stopColor: "#E742E1"
             }
           })]
-        }), (0, n.jsxs)("linearGradient", {
+        }), (0, r.jsxs)("linearGradient", {
           id: "gradient_nitro_logo",
           x1: "2.99995",
           y1: "67.6298",
           x2: "132.55",
           y2: "67.6298",
           gradientUnits: "userSpaceOnUse",
-          children: [(0, n.jsx)("stop", {
+          children: [(0, r.jsx)("stop", {
             stopColor: "#F9A0E8"
-          }), (0, n.jsx)("stop", {
+          }), (0, r.jsx)("stop", {
             offset: "1",
             stopColor: "#E742E1"
           })]
-        }), (0, n.jsxs)("linearGradient", {
+        }), (0, r.jsxs)("linearGradient", {
           id: "dark-purple-gradient",
           x1: "0%",
           y1: "0%",
           x2: "100%",
           y2: "0%",
-          children: [(0, n.jsx)("stop", {
+          children: [(0, r.jsx)("stop", {
             offset: "0%",
             style: {
               stopColor: "#241731",
               stopOpacity: 1
             }
-          }), (0, n.jsx)("stop", {
+          }), (0, r.jsx)("stop", {
             offset: "100%",
             style: {
               stopColor: "#241731",
@@ -143,9 +143,9 @@ let c = "url(#gradient)",
             }
           })]
         })]
-      }), (0, n.jsx)("div", {
+      }), (0, r.jsx)("div", {
         className: a.childrenContainer,
-        children: r
+        children: s
       })]
     })
   }

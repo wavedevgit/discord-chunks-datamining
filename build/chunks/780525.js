@@ -1,15 +1,15 @@
-/** Chunk was on 40580 **/
+/** Chunk was on 9710 **/
 "use strict";
-r.d(t, {
-  Lk: () => s,
-  Ps: () => n,
+s.d(t, {
+  Lk: () => n,
+  Ps: () => r,
   We: () => a,
   _H: () => i,
   e: () => o,
   xB: () => l
 });
-let n = "https://support.discord.com/hc/articles/29488603380887",
-  s = "2025-03-18T23:59:59Z",
+let r = "https://support.discord.com/hc/articles/29488603380887",
+  n = "2025-03-18T23:59:59Z",
   i = "2025-04-17T23:59:59Z",
   o = {
     skuId: "1336506386296864839",

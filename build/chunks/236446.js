@@ -13,18 +13,18 @@ var r = n(200651),
   d = n(362762),
   h = n(409059),
   p = n(659900),
-  g = n(962220),
-  f = n(473855),
-  m = n(306453),
-  _ = n(929809),
+  f = n(962220),
+  g = n(473855),
+  _ = n(306453),
+  m = n(929809),
   b = n(108427),
   x = n(390885),
   N = n(314897),
   v = n(896797),
   I = n(954824),
   E = n(781428),
-  C = n(163671),
-  j = n(423527),
+  j = n(163671),
+  C = n(423527),
   O = n(981631),
   S = n(58346),
   y = n(701476),
@@ -48,7 +48,7 @@ class L extends i.PureComponent {
     (0, b.e)("guildTemplate"), P.KO || I.Z.launch("discord://" + O.Z5c.GUILD_TEMPLATE(this.props.code), () => void 0)
   }
   componentDidUpdate(e) {
-    this.props.code !== e.code && g.Z.resolveGuildTemplate(this.props.code)
+    this.props.code !== e.code && f.Z.resolveGuildTemplate(this.props.code)
   }
   renderButton(e, t) {
     return P.KO ? (0, r.jsx)(u.zx, {
@@ -95,7 +95,7 @@ class L extends i.PureComponent {
     } = this.props;
     return (s()(null != e, "guild template must not be null"), e.state === S.Rj.RESOLVING) ? (0, r.jsx)(u.ZP, {
       className: Z.authBox,
-      children: (0, r.jsx)(m.Z, {
+      children: (0, r.jsx)(_.Z, {
         guildTemplate: e
       })
     }) : (0, r.jsx)(k, {
@@ -130,12 +130,12 @@ class L extends i.PureComponent {
           transitionTo: i,
           location: o
         });
-        return (0, r.jsx)(j.Z, {
+        return (0, r.jsx)(C.Z, {
           guildTemplate: e,
           transitionTo: i,
           location: o,
           onRegister: () => {
-            (0, _.c)(y.M5.ORGANIC_REGISTERED_GUILD_TEMPLATE), x.Z.flowStart(T.MK.ORGANIC_GUILD_TEMPLATES, T.EW.NUF_STARTED)
+            (0, m.c)(y.M5.ORGANIC_REGISTERED_GUILD_TEMPLATE), x.Z.flowStart(T.MK.ORGANIC_GUILD_TEMPLATES, T.EW.NUF_STARTED)
           }
         });
       case S.Rj.EXPIRED:
@@ -194,9 +194,9 @@ function k(e) {
       children: A.NW.string(A.t.xr59t7)
     })]
   });
-  return (0, r.jsx)(C.Z, {
+  return (0, r.jsx)(j.Z, {
     className: Z.authBox,
-    children: () => [(0, r.jsx)(f.Z, {
+    children: () => [(0, r.jsx)(g.Z, {
       guildTemplate: t
     }, "template"), (0, r.jsx)("div", {
       className: Z.formContainer,

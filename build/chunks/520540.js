@@ -1,12 +1,11 @@
-/** Chunk was on 40580 **/
-"use strict";
-r.d(t, {
-  g: () => o,
-  p: () => i
+/** Chunk was on 1815 **/
+n.d(t, {
+  g: () => a,
+  p: () => s
 });
-var n, s = r(818083),
-  i = ((n = {})[n.VARIANT_1 = 0] = "VARIANT_1", n[n.VARIANT_2 = 1] = "VARIANT_2", n);
-let o = (0, s.B)({
+var r, i = n(818083),
+  s = ((r = {})[r.VARIANT_1 = 0] = "VARIANT_1", r[r.VARIANT_2 = 1] = "VARIANT_2", r);
+let a = (0, i.B)({
   kind: "user",
   id: "2024-03_referral_program_sender",
   label: "Referral Program Sender Experience",

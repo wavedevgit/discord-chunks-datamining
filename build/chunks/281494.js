@@ -1,14 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  C$: () => g,
+  C$: () => m,
   Fe: () => d,
   Fz: () => f,
-  IB: () => b,
-  Ve: () => E,
-  bq: () => h,
-  iF: () => m,
-  jy: () => v
+  IB: () => v,
+  Ve: () => g,
+  iF: () => h,
+  jy: () => E
 }), n(47120), n(26686), n(653041);
 var r = n(544891),
   i = n(570140);
@@ -51,24 +50,8 @@ class _ {
     l(this, "cache", void 0), l(this, "expiration", void 0), this.cache = new Map, this.expiration = Date.now() + u
   }
 }
-let p = new _,
-  h = () => (i.Z.dispatch({
-    type: "BILLING_GET_REFERRAL_INCENTIVE_STATUS_START"
-  }), r.tn.get({
-    url: s.ANM.GET_REFERRAL_INCENTIVE_ELIGIBILITY,
-    oldFormErrors: !0,
-    rejectWithError: !1
-  }).then(e => {
-    i.Z.dispatch({
-      type: "BILLING_GET_REFERRAL_INCENTIVE_STATUS_SUCCESS",
-      isUserEligibleForIncentive: null != e.body ? e.body.is_eligible_for_incentive : null
-    })
-  }, () => {
-    i.Z.dispatch({
-      type: "BILLING_GET_REFERRAL_INCENTIVE_STATUS_FAIL"
-    })
-  }));
-async function m(e, t, n) {
+let p = new _;
+async function h(e, t, n) {
   let i = JSON.stringify({
     index: e,
     searchQuery: t
@@ -92,37 +75,34 @@ async function m(e, t, n) {
   };
   return p.set(i, u), u
 }
-let g = () => (i.Z.dispatch({
+let m = () => (i.Z.dispatch({
     type: "BILLING_REFERRALS_REMAINING_FETCH_START"
   }), r.tn.get({
     url: s.ANM.GET_REFERRALS_REMAINING,
     oldFormErrors: !0,
     rejectWithError: !1
   }).then(e => {
-    var t, n, r;
-    let o = new Map;
+    var t, n;
+    let r = new Map;
     if (null != e.body && null != e.body.recipient_status)
       for (let t in e.body.recipient_status) {
         let n = e.body.recipient_status[t];
-        o.set(t, n)
+        r.set(t, n)
       }
     i.Z.dispatch({
       type: "BILLING_REFERRALS_REMAINING_FETCH_SUCCESS",
       referrals_remaining: null != e.body && null != e.body.referrals_remaining ? e.body.referrals_remaining : 0,
       sent_user_ids: null != e.body && null != e.body.sent_user_ids ? e.body.sent_user_ids : [],
-      refresh_at: null !== (r = null === (t = e.body) || void 0 === t ? void 0 : t.refresh_at) && void 0 !== r ? r : null,
-      recipient_status: o,
-      has_eligible_friends: e.body.has_eligible_friends,
-      isUserEligibleForIncentive: e.body.is_eligible_for_incentive,
-      isUserQualifiedForIncentive: e.body.is_qualified_for_incentive,
-      userReferralIncentiveState: null === (n = e.body) || void 0 === n ? void 0 : n.referral_incentive_status
+      refresh_at: null !== (n = null === (t = e.body) || void 0 === t ? void 0 : t.refresh_at) && void 0 !== n ? n : null,
+      recipient_status: r,
+      has_eligible_friends: e.body.has_eligible_friends
     })
   }, () => {
     i.Z.dispatch({
       type: "BILLING_REFERRALS_REMAINING_FETCH_FAIL"
     })
   })),
-  E = e => (i.Z.dispatch({
+  g = e => (i.Z.dispatch({
     type: "BILLING_CREATE_REFERRAL_PREVIEW_START",
     recipientId: e
   }), r.tn.post({
@@ -141,7 +121,7 @@ let g = () => (i.Z.dispatch({
       recipientId: e
     })
   }));
-async function v(e) {
+async function E(e) {
   let t = [],
     n = new Map;
   for (let i of e) try {
@@ -161,7 +141,7 @@ async function v(e) {
     userTrialOffers: t
   }), n
 }
-async function b(e) {
+async function v(e) {
   try {
     var t;
     let n = await r.tn.get({

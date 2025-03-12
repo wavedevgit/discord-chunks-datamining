@@ -23,8 +23,8 @@ var r = n(200651),
   j = n(621060),
   y = n(388032),
   C = n(871133),
-  N = n(710662);
-let T = [{
+  T = n(710662);
+let N = [{
     key: "id",
     cellClassName: C.eventColumn,
     render(e) {
@@ -69,7 +69,7 @@ let T = [{
       } = e, u = d()(o);
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)(p.ZP, {
-          className: l()(N.headerBar, C.subPanelHeaderBar),
+          className: l()(T.headerBar, C.subPanelHeaderBar),
           children: [(0, r.jsx)(p.ZP.Icon, {
             icon: m.IeX,
             tooltip: t
@@ -137,7 +137,7 @@ function S() {
     renderSelectedTab: _
   } = (0, j.Z)({
     tabs: O
-  }, []), S = (0, u.e7)([f.Z], () => f.Z.trackTriggers), E = a.useCallback(e => {
+  }, []), S = (0, u.e7)([f.Z], () => f.Z.trackTriggers), k = a.useCallback(e => {
     h.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
       enabled: e
@@ -145,7 +145,7 @@ function S() {
   }, []);
   return (0, r.jsxs)("div", {
     ref: n,
-    className: l()(N.panel, C.panel),
+    className: l()(T.panel, C.panel),
     children: [(0, r.jsxs)("div", {
       className: C.toolbar,
       children: [(0, r.jsx)("div", {
@@ -153,7 +153,7 @@ function S() {
         className: C.triggersEnable,
         children: (0, r.jsx)(m.rsf, {
           checked: S,
-          onChange: E,
+          onChange: k,
           className: C.__invalid_toolbarSwitch
         })
       }), (0, r.jsx)(m.zxk, {
@@ -177,7 +177,7 @@ function S() {
         placeholder: "Search by experiment id"
       })]
     }), (0, r.jsx)(v.Z, {
-      columns: T,
+      columns: N,
       data: o,
       selectedRowKey: c,
       onClickRow: e => d(e.key)

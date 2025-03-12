@@ -129,8 +129,8 @@ function v(e) {
     colorSpace: v,
     easingStrength: j = 1,
     useP3ColorSpace: C,
-    steps: N = 26
-  } = t, T = (0, h.XM)(t), O = (0, h.W6)(T, c);
+    steps: T = 26
+  } = t, N = (0, h.XM)(t), O = (0, h.W6)(N, c);
   return (0, r.jsxs)(d.hjN, {
     className: p.paletteSettings,
     children: [(0, r.jsxs)("div", {
@@ -148,7 +148,7 @@ function v(e) {
         children: c
       }), (0, r.jsx)(d.P3F, {
         onClick: function() {
-          let e = Object.entries(T).reduce((e, t) => {
+          let e = Object.entries(N).reduce((e, t) => {
             let [n, r] = t;
             return e[n] = {
               value: (0, i.Z)((0, l.Z)(r, h.HW.sRGB), {
@@ -260,10 +260,10 @@ function v(e) {
           children: "Use P3 Color Space"
         })
       }), (0, r.jsx)(d.xJW, {
-        title: "Steps (".concat(N, ")"),
+        title: "Steps (".concat(T, ")"),
         children: (0, r.jsx)(d.iRW, {
           onValueRender: () => null,
-          initialValue: N,
+          initialValue: T,
           minValue: (0, h.A0)(c).length,
           maxValue: 100,
           onValueChange: e => (0, h.YC)(c, Math.round(e), n),
@@ -274,7 +274,7 @@ function v(e) {
         children: (0, r.jsx)("div", {
           className: p.paletteOverrides,
           "data-columnar": g,
-          children: Object.entries(T).map((e, n) => {
+          children: Object.entries(N).map((e, n) => {
             let [a, c] = e, u = (0, h.HI)(c), m = (0, o.Z)((0, s.Z)("black"), c) > 4.5 ? "black" : "white", p = O[a];
             return (0, r.jsxs)("div", {
               style: {

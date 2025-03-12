@@ -1,7 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  ZP: () => i,
-  eP: () => r
+  ZP: () => i
 });
 let r = (0, n(818083).B)({
     kind: "user",

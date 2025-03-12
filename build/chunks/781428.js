@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 n.d(t, {
   Z: () => $,
-  q: () => Q
+  q: () => X
 }), n(26686), n(301563);
 var r, i = n(200651),
   o = n(192379),
@@ -13,18 +13,18 @@ var r, i = n(200651),
   d = n(442837),
   h = n(481060),
   p = n(570140),
-  g = n(893776),
-  f = n(899742),
-  m = n(579806),
-  _ = n(743142),
+  f = n(893776),
+  g = n(899742),
+  _ = n(579806),
+  m = n(743142),
   b = n(254942),
   x = n(388905),
   N = n(379760),
   v = n(600164),
   I = n(100159),
   E = n(473855),
-  C = n(124860),
-  j = n(86779),
+  j = n(124860),
+  C = n(86779),
   O = n(726745),
   S = n(913583),
   y = n(144114),
@@ -83,12 +83,12 @@ function J(e, t) {
   }), e
 }
 
-function Q() {
+function X() {
   return (0, i.jsx)(x.ZP, {
     children: (0, i.jsx)(h.$jN, {})
   })
 }
-class X extends(r = o.PureComponent) {
+class Q extends(r = o.PureComponent) {
   static getDerivedStateFromProps(e) {
     let {
       handoffAvailable: t,
@@ -106,13 +106,13 @@ class X extends(r = o.PureComponent) {
       invite: r,
       location: i
     } = this.props;
-    e && !t ? (0, f.is)() : t && this.loginOrSSO(t, i, !0), D.default.track(F.rMx.LOGIN_VIEWED, Y({
+    e && !t ? (0, g.is)() : t && this.loginOrSSO(t, i, !0), D.default.track(F.rMx.LOGIN_VIEWED, Y({
       location: null != r ? "Invite Login Page" : "Non-Invite Login Page",
       login_source: this.loginSource,
       authenticated: t
     }, null != n ? (0, I.Z)(n, !1, !1) : {}), {
       flush: !0
-    }), null == m.Z && null != window.PublicKeyCredential && null != PublicKeyCredential.isConditionalMediationAvailable && PublicKeyCredential.isConditionalMediationAvailable().then(e => {
+    }), null == _.Z && null != window.PublicKeyCredential && null != PublicKeyCredential.isConditionalMediationAvailable && PublicKeyCredential.isConditionalMediationAvailable().then(e => {
       e && (0, Z.us)().then(e => {
         let {
           challenge: t,
@@ -122,7 +122,7 @@ class X extends(r = o.PureComponent) {
           errors: {}
         }), p.Z.dispatch({
           type: "PASSWORDLESS_START"
-        }), g.Z.loginWebAuthn({
+        }), f.Z.loginWebAuthn({
           ticket: n,
           credential: JSON.stringify(e),
           source: this.loginSource,
@@ -135,7 +135,7 @@ class X extends(r = o.PureComponent) {
           if ("AbortError" !== e.name) throw e
         })
       }).catch(() => {})
-    }), g.Z.getLocationMetadata(), (0, A.e)("login")
+    }), f.Z.getLocationMetadata(), (0, A.e)("login")
   }
   componentDidUpdate(e, t) {
     let {
@@ -165,7 +165,7 @@ class X extends(r = o.PureComponent) {
       if (null != n.channel) return "dm_invite";
       if (null != n.inviter) return "friend_invite"
     }
-    return null != i ? (0, _.L)(i) : null
+    return null != i ? (0, m.L)(i) : null
   }
   get giftCodeSKUId() {
     let {
@@ -180,7 +180,7 @@ class X extends(r = o.PureComponent) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
     e && null != t && (this.setState({
       redirecting: !0
-    }), n ? g.Z.verifySSOToken().then(() => this.transitionSSO(t)) : this.transitionSSO(t))
+    }), n ? f.Z.verifySSOToken().then(() => this.transitionSSO(t)) : this.transitionSSO(t))
   }
   transitionSSO(e) {
     let {
@@ -471,7 +471,7 @@ class X extends(r = o.PureComponent) {
         className: e,
         expanded: !0,
         children: this.renderDefaultForm(!0)
-      }), t && (0, i.jsx)(j.Z, {})]
+      }), t && (0, i.jsx)(C.Z, {})]
     })
   }
   renderGuildTemplate(e) {
@@ -493,7 +493,7 @@ class X extends(r = o.PureComponent) {
       style: {
         padding: 0
       },
-      children: (0, i.jsx)(C.Cd, {
+      children: (0, i.jsx)(j.Cd, {
         mfaFinish: this.handleTokenSubmitMFA,
         mfaChallenge: e,
         onEarlyClose: () => {
@@ -565,7 +565,7 @@ class X extends(r = o.PureComponent) {
       checkingHandoff: a,
       redirecting: l
     } = this.state;
-    if (l || a) return (0, i.jsx)(Q, {});
+    if (l || a) return (0, i.jsx)(X, {});
     if (o) return this.renderHandOffAvailable();
     if (e && a) return this.renderHandOffContinue();
     switch (r) {
@@ -598,7 +598,7 @@ class X extends(r = o.PureComponent) {
     super(e), q(this, "loginRef", void 0), q(this, "passwordRef", void 0), q(this, "codeRef", void 0), q(this, "handleAuthToken", async e => {
       this.setState({
         errors: {}
-      }), await g.Z.loginToken(e, !1), D.default.track(F.rMx.LOGIN_SUCCESSFUL, {
+      }), await f.Z.loginToken(e, !1), D.default.track(F.rMx.LOGIN_SUCCESSFUL, {
         source: F.uRl.QR_CODE,
         login_source: this.loginSource,
         gift_code_sku_id: this.giftCodeSKUId,
@@ -607,7 +607,7 @@ class X extends(r = o.PureComponent) {
     }), q(this, "loginReset", () => {
       this.setState({
         errors: {}
-      }), g.Z.loginReset()
+      }), f.Z.loginReset()
     }), q(this, "setLoginRef", e => {
       this.loginRef = e
     }), q(this, "setPasswordRef", e => {
@@ -638,7 +638,7 @@ class X extends(r = o.PureComponent) {
         errors: {}
       });
       try {
-        await g.Z.login({
+        await f.Z.login({
           login: this.getFullLogin(),
           password: t,
           undelete: n,
@@ -661,7 +661,7 @@ class X extends(r = o.PureComponent) {
         let {
           token: n
         } = await y.Z.verifyPhone(t, e, !1);
-        await g.Z.authorizeIPAddress(n), this.handleLogin()
+        await f.Z.authorizeIPAddress(n), this.handleLogin()
       } catch (e) {
         null != e.body && null != e.body.message && this.setState({
           phoneVerifyError: e.body.message
@@ -695,7 +695,7 @@ class X extends(r = o.PureComponent) {
         data: n,
         ticket: r
       } = e;
-      return k.S.dispatch(F.CkL.WAVE_EMPHASIZE), g.Z.loginMFAv2({
+      return k.S.dispatch(F.CkL.WAVE_EMPHASIZE), f.Z.loginMFAv2({
         code: n,
         ticket: r,
         mfaType: t,
@@ -709,7 +709,7 @@ class X extends(r = o.PureComponent) {
         errors: {}
       });
       try {
-        if (k.S.dispatch(F.CkL.WAVE_EMPHASIZE), !await g.Z.forgotPassword(t)) return;
+        if (k.S.dispatch(F.CkL.WAVE_EMPHASIZE), !await f.Z.forgotPassword(t)) return;
         (0, h.h7j)(e => (0, i.jsx)(h.ConfirmModal, J(Y({
           header: V.NW.string(V.t.f5Pi7O),
           confirmText: V.NW.string(V.t.BddRzc),
@@ -732,7 +732,7 @@ class X extends(r = o.PureComponent) {
     }), q(this, "handleResendCode", () => {
       y.Z.resendCode(this.getFullLogin())
     }), q(this, "handleReset", e => {
-      null != e && e.preventDefault(), g.Z.loginReset(), this.setState({
+      null != e && e.preventDefault(), f.Z.loginReset(), this.setState({
         password: "",
         loginPrefix: "",
         login: "",
@@ -780,7 +780,7 @@ class X extends(r = o.PureComponent) {
     }
   }
 }
-q(X, "defaultProps", {
+q(Q, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
 let $ = function(e) {
@@ -795,5 +795,5 @@ let $ = function(e) {
     country: T.Z.getCountryCode(),
     hasLoggedInAccounts: O.Z.getHasLoggedInAccounts()
   }));
-  return (0, i.jsx)(X, Y({}, e, t))
+  return (0, i.jsx)(Q, Y({}, e, t))
 }

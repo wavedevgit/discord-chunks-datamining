@@ -46,5 +46,6 @@ function c(e) {
 }
 
 function u(e) {
-  return (0, i.yE)(e.flags, o.udG.CONTEXTLESS_ACTIVITY) && l()
+  var t;
+  return (0, i.yE)(null !== (t = e.flags) && void 0 !== t ? t : 0, o.udG.CONTEXTLESS_ACTIVITY) && l()
 }

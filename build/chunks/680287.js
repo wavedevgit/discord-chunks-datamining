@@ -1,11 +1,11 @@
-/** Chunk was on 84441 **/
+/** Chunk was on 81604 **/
 n.d(t, {
-  Z: () => d
+  Z: () => E
 }), n(653041), n(789020);
 var r = n(544891),
   i = n(881052),
-  o = n(687294),
-  l = n(476326),
+  l = n(687294),
+  o = n(476326),
   a = n(45251),
   s = n(861990),
   c = n(388032);
@@ -28,7 +28,7 @@ function u(e) {
   }
   return e
 }
-class d extends o.Z {
+class E extends l.Z {
   async uploadFiles(e, t) {
     let {
       addFilesTo: n
@@ -39,7 +39,7 @@ class d extends o.Z {
     let r = new AbortController;
     try {
       if (this.files = e, this._aborted || (this._handleStart(() => r.abort()), !await this.compressAndCheckFileSize())) return;
-      this.setUploadingTextForUI(), await (0, o.$)(this.files, !0, this._recomputeProgress.bind(this))
+      this.setUploadingTextForUI(), await (0, l.$)(this.files, !0, this._recomputeProgress.bind(this))
     } catch (e) {
       this._handleException(e)
     }
@@ -51,58 +51,58 @@ class d extends o.Z {
     }
   }
   async _createMessage(e, t, n) {
-    var o, c, d, _;
-    let p;
-    let E = [];
+    var l, c, E, d;
+    let _;
+    let N = [];
     if ((this.files.forEach((e, t) => {
         let n = (0, s.B)(e, t);
-        e.item.platform === l.ow.WEB && E.push(u({}, n))
-      }), null != n && null != t) ? p = this._addAttachmentsToPayload(t, n, E) : (d = u({}, t), _ = _ = {
-        attachments: E
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(d, Object.getOwnPropertyDescriptors(_)) : (function(e, t) {
+        e.item.platform === o.ow.WEB && N.push(u({}, n))
+      }), null != n && null != t) ? _ = this._addAttachmentsToPayload(t, n, N) : (E = u({}, t), d = d = {
+        attachments: N
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(E, Object.getOwnPropertyDescriptors(d)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(_)).forEach(function(e) {
-        Object.defineProperty(d, e, Object.getOwnPropertyDescriptor(_, e))
-      }), p = d), null != p.scheduled_timestamp) {
+      })(Object(d)).forEach(function(e) {
+        Object.defineProperty(E, e, Object.getOwnPropertyDescriptor(d, e))
+      }), _ = E), null != _.scheduled_timestamp) {
       try {
         let e = await (0, a.PV)({
-          channelId: p.channel_id,
-          scheduledTimestamp: p.scheduled_timestamp,
+          channelId: _.channel_id,
+          scheduledTimestamp: _.scheduled_timestamp,
           messageSendData: {
-            channelId: p.channel_id,
-            content: p.content,
-            flags: p.flags,
-            nonce: p.nonce,
-            message_reference: p.message_reference,
-            allowed_mentions: p.allowed_mentions,
+            channelId: _.channel_id,
+            content: _.content,
+            flags: _.flags,
+            nonce: _.nonce,
+            message_reference: _.message_reference,
+            allowed_mentions: _.allowed_mentions,
             tts: !1
           },
-          attachments: E
+          attachments: N
         });
         return this._handleComplete(e.body), e.body
       } catch (e) {
         if (this._raiseEndpointErrors) throw new i.Hx(e);
         this._handleError({
-          code: null == e ? void 0 : null === (o = e.body) || void 0 === o ? void 0 : o.code,
+          code: null == e ? void 0 : null === (l = e.body) || void 0 === l ? void 0 : l.code,
           body: null == e ? void 0 : e.body
         })
       }
       return
     }
-    let f = {
+    let I = {
         url: this._url,
-        body: p,
+        body: _,
         signal: e,
         rejectWithError: !1
       },
-      m = "POST" === this._method ? r.tn.post : r.tn.patch;
+      O = "POST" === this._method ? r.tn.post : r.tn.patch;
     try {
-      let e = await m(f);
+      let e = await O(I);
       return this._handleComplete(e.body), e.body
     } catch (e) {
       if (this._raiseEndpointErrors) throw new i.Hx(e);

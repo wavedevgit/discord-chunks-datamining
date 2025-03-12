@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 8411a63740e42da0
+  Original File Name: 414918f4916d9fcf
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -2716,25 +2716,20 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .coachTipContainer__83ef9 {
-    display: flex;
     flex-direction: row;
-    gap: 8px;
-    align-items: center
+    gap: 8px
 }
 
-.coachmarkArt__83ef9 {
-    position: absolute;
-    left: 0;
-    top: -110px
+.coachTipContainer__83ef9,.exitIcon__83ef9 {
+    display: flex;
+    align-items: center
 }
 
 .exitIcon__83ef9 {
     position: absolute;
     right: 15px;
     top: 15px;
-    display: flex;
     justify-content: center;
-    align-items: center;
     border-radius: 50%;
     width: 25px;
     height: 25px;
@@ -2757,10 +2752,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     max-width: 160px
 }
 
-.incentiveCoachtipContent__83ef9 {
-    padding-top: 60px
-}
-
 .marketingBadgeTooltip__83ef9 {
     max-width: 100%;
     margin-left: 10px;
@@ -2771,23 +2762,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding: 2px 10px
 }
 
-.incentiveTooltipPointer__83ef9 {
-    border-right: 6px solid #6b355f
-}
-
-.incentiveCoachtipContainer__83ef9 {
-    padding-bottom: 40px;
-    padding-top: 20px;
-    background: linear-gradient(180deg,#894c7c,#4b1840 105.13%),#5865f2;
-    background: linear-gradient(180deg,#894c7c,#4b1840 105.13%),var(--brand-500,#5865f2)
-}
-
 .icon__83ef9 {
     scale: 1.6
-}
-
-.incentiveIcon__83ef9 {
-    scale: .7
 }
 
 .trialBadgeBackground__83ef9 {

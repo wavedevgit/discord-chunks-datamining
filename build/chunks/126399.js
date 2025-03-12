@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => g
+  Z: () => f
 }), n(47120);
 var r = n(544891),
   i = n(570140),
@@ -75,4 +75,4 @@ class p extends u.Z {
     }) : this[t] = n
   }
 }
-let g = new p
+let f = new p

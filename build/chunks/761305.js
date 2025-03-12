@@ -12,11 +12,11 @@ var r, i = n(200651),
   d = n(896797),
   h = n(129293),
   p = n(388905),
-  g = n(981631),
-  f = n(388032),
-  m = n(802138);
+  f = n(981631),
+  g = n(388032),
+  _ = n(802138);
 
-function _(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,7 +30,7 @@ class b extends(r = o.PureComponent) {
     let e = (0, h.Z)(this.props.location),
       t = (0, a.parse)(this.props.location.search);
     s.tn.post({
-      url: g.ANM.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
+      url: f.ANM.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
       body: {
         token: e,
         pixel_uuid: t.hash,
@@ -68,24 +68,24 @@ class b extends(r = o.PureComponent) {
     } = this.state;
     return (0, i.jsxs)(p.ZP, {
       children: [(0, i.jsx)(p.Dx, {
-        className: m.marginBottom8,
-        children: f.NW.string(f.t.Z33eiI)
+        className: _.marginBottom8,
+        children: g.NW.string(g.t.Z33eiI)
       }), (0, i.jsx)(p.DK, {
-        children: f.NW.format(f.t.NRWtfH, {
+        children: g.NW.format(g.t.NRWtfH, {
           guildName: n.name
         })
       }), (0, i.jsx)(p.zx, {
-        className: m.marginTop40,
+        className: _.marginTop40,
         onClick: () => t(e),
-        children: f.NW.string(f.t.fIv16O)
+        children: g.NW.string(g.t.fIv16O)
       }), (0, i.jsx)(p.zx, {
-        className: m.marginTop8,
+        className: _.marginTop8,
         color: p.zx.Colors.LINK,
         look: p.zx.Looks.LINK,
         onClick: () => {
-          t(g.Z5c.USER_GUILD_NOTIFICATION_SETTINGS(n.id))
+          t(f.Z5c.USER_GUILD_NOTIFICATION_SETTINGS(n.id))
         },
-        children: f.NW.string(f.t["cGmT/P"])
+        children: g.NW.string(g.t["cGmT/P"])
       })]
     })
   }
@@ -97,16 +97,16 @@ class b extends(r = o.PureComponent) {
     return (0, i.jsxs)(p.ZP, {
       children: [(0, i.jsx)(p.Ee, {
         src: n(105020),
-        className: m.marginBottom20
+        className: _.marginBottom20
       }), (0, i.jsx)(p.Dx, {
-        className: m.marginBottom8,
-        children: f.NW.string(f.t.ox9hIS)
+        className: _.marginBottom8,
+        children: g.NW.string(g.t.ox9hIS)
       }), (0, i.jsx)(p.DK, {
-        children: f.NW.string(f.t["/dcuR0"])
+        children: g.NW.string(g.t["/dcuR0"])
       }), (0, i.jsx)(p.zx, {
-        className: m.marginTop40,
+        className: _.marginTop40,
         onClick: () => t(e),
-        children: f.NW.string(f.t.fIv16O)
+        children: g.NW.string(g.t.fIv16O)
       })]
     })
   }
@@ -118,14 +118,14 @@ class b extends(r = o.PureComponent) {
     return e ? this.renderBusy() : t ? this.renderSuccess() : this.renderError()
   }
   constructor(...e) {
-    super(...e), _(this, "state", {
+    super(...e), m(this, "state", {
       busy: !0,
       success: !1,
       guild: null
     })
   }
 }
-_(b, "defaultProps", {
+m(b, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
 let x = l.ZP.connectStores([d.Z], () => ({

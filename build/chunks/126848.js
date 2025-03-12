@@ -1,70 +1,70 @@
-/** Chunk was on 40580 **/
+/** Chunk was on 9710 **/
 "use strict";
-r.d(t, {
-  Z: () => v
+s.d(t, {
+  Z: () => C
 });
-var n = r(200651);
-r(192379);
-var s = r(120356),
-  i = r.n(s),
-  o = r(442837),
-  l = r(704215),
-  a = r(605236),
-  c = r(351367),
-  u = r(104494),
-  d = r(639119),
-  p = r(655525),
-  f = r(52188),
-  b = r(346497),
-  g = r(924540),
-  m = r(474486),
-  O = r(227140),
-  h = r(351402),
-  x = r(170671),
-  j = r(474936),
-  y = r(388032),
-  C = r(663407);
+var r = s(200651);
+s(192379);
+var n = s(120356),
+  i = s.n(n),
+  o = s(442837),
+  l = s(704215),
+  a = s(605236),
+  c = s(351367),
+  u = s(104494),
+  d = s(639119),
+  p = s(655525),
+  f = s(52188),
+  b = s(346497),
+  g = s(924540),
+  O = s(474486),
+  x = s(227140),
+  m = s(351402),
+  h = s(170671),
+  j = s(474936),
+  y = s(388032),
+  v = s(663407);
 
-function v(e) {
+function C(e) {
   let t, {
-      decoration: r,
-      label: s,
-      isSelected: v
+      decoration: s,
+      label: n,
+      isSelected: C
     } = e,
     P = (0, d.N)(),
-    _ = (0, u.Ng)(),
-    S = (0, b.Vi)(),
-    N = (0, o.e7)([h.Z], () => h.Z.isLocalizedPromoEnabled) && null == P && null == r,
+    S = (0, u.Ng)(),
+    w = (0, b.Vi)(),
+    _ = (0, o.e7)([m.Z], () => m.Z.isLocalizedPromoEnabled) && null == P && null == s,
     E = (null == P ? void 0 : P.trial_id) === j.a7,
-    w = (0, c.m)({
+    N = (0, c.m)({
       location: "UserSettingsPremiumLabel"
     }),
     T = (0, a.wE)(l.z.Q1_2025_MARKETING_MOMENT_OFFER_BADGE);
-  return t = !0 === w ? !0 === T ? (0, n.jsx)(m.Du, {}) : (0, n.jsx)(O.Z, {
+  return t = !0 === N ? !0 === T ? (0, r.jsx)(O.Du, {}) : (0, r.jsx)(x.Z, {
     copy: y.NW.string(y.t.OS9KPj),
     showStars: !1
-  }) : S ? (0, n.jsx)(p.Z, {}) : null != _ ? (0, n.jsx)(g.GN, {
-    isTabSelected: v,
-    userDiscount: _,
+  }) : w ? (0, r.jsx)(p.Z, {}) : null != S ? (0, r.jsx)(g.GN, {
+    isTabSelected: C,
+    userDiscount: S,
     includesAmountOff: !1
-  }) : null == P || E ? null != r ? r : N ? (0, n.jsx)(f.k, {
+  }) : null == P || E ? null != s ? s : _ ? (0, r.jsx)(f.k, {
     entryPoint: f.U.SettingsMenu
-  }) : (0, n.jsx)(x.Z, {
-    isSelected: v
-  }) : (0, n.jsx)(g.$H, {
-    isTabSelected: v,
+  }) : (0, r.jsx)(h.Z, {
+    isSelected: C
+  }) : (0, r.jsx)(g.$H, {
+    isTabSelected: C,
     trialOffer: P
-  }), (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsxs)("div", {
-      className: i()(C.premiumLabel, {
-        [C.selected]: (v || N) && !S
+  }), (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)("div", {
+      className: i()(v.premiumLabel, {
+        [v.selected]: (C || _) && !w
       }),
-      children: [s, t]
-    }), (0, n.jsx)("div", {
-      className: i()(C.background, {
-        [C.auPromo]: N && !v,
-        [C.auPromoSelected]: N && v,
-        [C.selectedBackground]: !N && !S && v
+      children: [n, t]
+    }), (0, r.jsx)("div", {
+      className: i()(v.background, {
+        [v.auPromo]: _ && !C,
+        [v.auPromoSelected]: _ && C,
+        [v.selectedBackground]: !_ && !w && C
       })
     })]
   })

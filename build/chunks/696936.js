@@ -1,15 +1,15 @@
-/** Chunk was on 40580 **/
+/** Chunk was on 9710 **/
 "use strict";
-r.d(t, {
+s.d(t, {
   W: () => a,
   Z: () => c
 });
-var n = r(200651);
-r(192379);
-var s = r(120356),
-  i = r.n(s),
-  o = r(481060),
-  l = r(723539);
+var r = s(200651);
+s(192379);
+var n = s(120356),
+  i = s.n(n),
+  o = s(481060),
+  l = s(723539);
 let a = {
   RED: l.redMessageBlock,
   YELLOW: l.yellowMessageBlock,
@@ -19,25 +19,25 @@ let a = {
 function c(e) {
   let {
     color: t,
-    icon: r,
-    children: s,
+    icon: s,
+    children: n,
     className: a
   } = e;
-  return (0, n.jsx)(o.kzN, {
-    icon: e => (0, n.jsx)(r, function(e) {
+  return (0, r.jsx)(o.kzN, {
+    icon: e => (0, r.jsx)(s, function(e) {
       for (var t = 1; t < arguments.length; t++) {
-        var r = null != arguments[t] ? arguments[t] : {},
-          n = Object.keys(r);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(r, e).enumerable
-        }))), n.forEach(function(t) {
-          var n;
-          n = r[t], t in e ? Object.defineProperty(e, t, {
-            value: n,
+        var s = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(s);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(s).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(s, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = s[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
             enumerable: !0,
             configurable: !0,
             writable: !0
-          }) : e[t] = n
+          }) : e[t] = r
         })
       }
       return e
@@ -47,6 +47,6 @@ function c(e) {
     }, e)),
     iconClassName: l.messageBlockIcon,
     className: i()(t, a),
-    children: s
+    children: n
   })
 }

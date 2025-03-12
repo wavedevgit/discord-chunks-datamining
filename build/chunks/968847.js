@@ -3,7 +3,7 @@ n.d(t, {
   Z: () => B,
   x: () => x
 }), n(47120);
-var r, i, l, o, a = n(392711),
+var r, i, o, l, a = n(392711),
   s = n.n(a),
   c = n(442837),
   u = n(570140),
@@ -56,9 +56,9 @@ function T(e) {
   var t, n, r;
   let {
     guildChannels: i
-  } = j.Z.getGuildWithoutChangingGuildActionRows(e), l = i.getChannels(null !== (t = N[e]) && void 0 !== t ? t : []);
-  if (null == l || 0 === l.length) return !1;
-  let o = null,
+  } = j.Z.getGuildWithoutChangingGuildActionRows(e), o = i.getChannels(null !== (t = N[e]) && void 0 !== t ? t : []);
+  if (null == o || 0 === o.length) return !1;
+  let l = null,
     a = null,
     c = null,
     u = null,
@@ -67,7 +67,7 @@ function T(e) {
     h = !1,
     f = i.getCategoryFromSection(i.voiceChannelsSectionNumber),
     g = null !== (n = null == f ? void 0 : f.getShownChannelIds()) && void 0 !== n ? n : [],
-    [m, v, y] = i.getSlicedChannels(l);
+    [m, v, y] = i.getSlicedChannels(o);
   for (let e = 0; e < v.length; e++) {
     let t = v[e];
     if ((Z(t.id) || s().some(t.threadIds, Z)) && (p = !1), (w(t.id) || s().some(t.threadIds, w)) && (d = !1), g.includes(t.id) && (h = !0), !p && !d && h) break
@@ -79,7 +79,7 @@ function T(e) {
   if (p || d)
     for (let e = m.length - 1; e >= 0; e--) {
       let t = m[e];
-      (Z(t.id) || s().some(t.threadIds, Z)) && (null == a && (a = t.id), O = !0), (w(t.id) || s().some(t.threadIds, w)) && (null == o && (o = t.id), _ += b.ZP.getMentionCount(t.id), _ += s().sumBy(t.threadIds, b.ZP.getMentionCount))
+      (Z(t.id) || s().some(t.threadIds, Z)) && (null == a && (a = t.id), O = !0), (w(t.id) || s().some(t.threadIds, w)) && (null == l && (l = t.id), _ += b.ZP.getMentionCount(t.id), _ += s().sumBy(t.threadIds, b.ZP.getMentionCount))
     }
   if (p || d)
     for (let e = 0; e < y.length; e++) {
@@ -105,7 +105,7 @@ function T(e) {
   }), d && _ > 0 ? T = {
     mode: "mentions",
     mentionCount: _,
-    targetChannelId: o
+    targetChannelId: l
   } : p && O && (T = {
     mode: "unread",
     mentionCount: 0,
@@ -169,12 +169,12 @@ class G extends(r = c.ZP.Store) {
     return null !== (t = I[e]) && void 0 !== t ? t : P
   }
 }
-o = "ChannelListUnreadsStore", (l = "displayName") in G ? Object.defineProperty(G, l, {
-  value: o,
+l = "ChannelListUnreadsStore", (o = "displayName") in G ? Object.defineProperty(G, o, {
+  value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : G[l] = o;
+}) : G[o] = l;
 let B = new G(u.Z, {
   UPDATE_CHANNEL_LIST_DIMENSIONS: function(e) {
     let {
