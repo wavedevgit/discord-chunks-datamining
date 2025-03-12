@@ -54,6 +54,6 @@ function c(e, t, n, r, i) {
     l = n || r;
   if (i) return t === a.BR.LIGHT ? "linear-gradient(90deg, ".concat(s, "1A 0%, ").concat(s, "4D 100%)") : "linear-gradient(90deg, ".concat(s, "1A 0%, ").concat(s, "66 100%)");
   let c = n ? "var(--background-modifier-hover)" : r ? "var(--background-modifier-selected)" : "".concat(s, "00"),
-    u = "".concat(s).concat(l ? "80" : "33");
+    u = "".concat(s).concat(l ? "80" : "1A");
   return "linear-gradient(90deg, ".concat(c, " 0%, ").concat(u, " 100%)")
 }

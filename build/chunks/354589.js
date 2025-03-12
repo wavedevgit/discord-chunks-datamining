@@ -16,10 +16,10 @@ var i = n(442837),
   h = n(167675),
   b = n(737013),
   p = n(607783),
-  f = n(299206),
-  Z = n(819403),
-  x = n(163612),
-  g = n(944486),
+  g = n(299206),
+  f = n(819403),
+  Z = n(163612),
+  x = n(944486),
   j = n(777658),
   v = n(858488),
   _ = n(44652),
@@ -60,10 +60,10 @@ let z = (0, d.Z)((0, a.Z)(function(e) {
     guildId: null
   }), X = (0, P.Z)(n, null, d), {
     enabled: Y
-  } = x.Z.useExperiment({
+  } = Z.Z.useExperiment({
     guildId: null == a ? void 0 : a.guild_id,
     location: "GroupDMUserContextMenu"
-  }), H = (0, i.e7)([g.Z], () => g.Z.getVoiceChannelId()), K = Y ? H : a.id, V = (0, U.Z)(n, K), $ = (0, E.Z)(n.id, d), ee = (0, w.Z)({
+  }), H = (0, i.e7)([x.Z], () => x.Z.getVoiceChannelId()), K = Y ? H : a.id, V = (0, U.Z)(n, K), $ = (0, E.Z)(n.id, d), ee = (0, w.Z)({
     user: n,
     context: d
   }), er = (0, O.Z)({
@@ -91,10 +91,10 @@ let z = (0, d.Z)((0, a.Z)(function(e) {
   }), eb = (0, k.Z)({
     user: n,
     location: "GroupDMUserContextMenu"
-  }), ep = (0, f.Z)({
+  }), ep = (0, g.Z)({
     id: n.id,
     label: G.NW.string(G.t["/AXYnJ"])
-  }), ef = (0, R.Z)(n.id), eZ = (0, h.Z)(n.id), ex = (0, m.Z)(a.id), eg = (0, Z.Z)(n), ej = (0, b.Z)(n.id), ev = (0, N.Z)({
+  }), eg = (0, R.Z)(n.id), ef = (0, h.Z)(n.id), eZ = (0, m.Z)(a.id), ex = (0, f.Z)(n), ej = (0, b.Z)(n.id), ev = (0, N.Z)({
     commandType: l.yU.USER,
     commandTargetId: n.id,
     channel: a,
@@ -109,9 +109,9 @@ let z = (0, d.Z)((0, a.Z)(function(e) {
     onInteraction: F,
     children: [!eO && (0, t.jsxs)(t.Fragment, {
       children: [(0, t.jsx)(o.kSQ, {
-        children: eg
+        children: ex
       }), (0, t.jsxs)(o.kSQ, {
-        children: [L && J, u && X, $, ee, !eN && V, L && er, L && en, ef]
+        children: [L && J, u && X, $, ee, !eN && V, L && er, L && en, eg]
       }), A && (0, t.jsx)(o.kSQ, {
         children: et
       }), eI && (0, t.jsxs)(o.kSQ, {
@@ -121,7 +121,7 @@ let z = (0, d.Z)((0, a.Z)(function(e) {
       }), (0, t.jsxs)(o.kSQ, {
         children: [A && eo, A && es, A && ea, ev, L && ed, ec, eu, em, L && eb, L && eh, A && ej]
       }), z && (0, t.jsxs)(o.kSQ, {
-        children: [ex, eZ]
+        children: [eZ, ef]
       })]
     }), (0, t.jsx)(o.kSQ, {
       children: ep

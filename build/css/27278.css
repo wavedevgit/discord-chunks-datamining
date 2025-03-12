@@ -1,6 +1,6 @@
 /**
   Module ID: 27278
-  Original File Name: f56192d6b8ec2b43
+  Original File Name: 7c05fabd00308f3c
 **/
 .buttonContainer__7e329 {
     display: flex;
@@ -1435,11 +1435,16 @@
 }
 
 .container_c8f358 {
+    --custom-activity-popout-header-height: 48px;
+    --custom-activity-popout-header-background-color: var(--black);
     justify-content: space-between;
-    background-color: #000;
+    background-color: var(--black);
+    background-color: var(--custom-activity-popout-header-background-color);
     min-height: 48px;
+    min-height: var(--custom-activity-popout-header-height);
     max-height: 48px;
-    padding: 0 16px
+    max-height: var(--custom-activity-popout-header-height);
+    padding: 0 var(--spacing-32)
 }
 
 .container_c8f358,.headerSection_c8f358 {
@@ -1449,18 +1454,19 @@
 }
 
 .headerSectionLeft_c8f358 {
-    flex: 1;
-    padding-left: 16px
+    flex: 0 1 auto;
+    min-width: 0;
+    overflow: hidden
 }
 
 .headerSectionRight_c8f358 {
     flex: 0;
-    gap: 4px;
-    padding-right: 8px
+    height: var(--custom-activity-popout-header-height);
+    position: relative
 }
 
 .appIcon_c8f358 {
-    margin-right: 8px;
+    margin-right: var(--spacing-8);
     border-radius: var(--radius-sm)
 }
 
@@ -1473,23 +1479,36 @@
     border-radius: 50%
 }
 
-.userAvatars_c8f358 {
-    flex: 1
-}
-
 .dotSpacer_c8f358 {
-    padding: 0 8px 8px
+    padding: 0 var(--spacing-8) var(--spacing-8)
 }
 
 .iconButton_c8f358 {
-    padding: 0 8px
+    padding: 0 var(--spacing-8)
 }
 
 .actionButtonsContainer_c8f358 {
     display: flex;
     flex-direction: row;
-    gap: 16px;
-    margin: 0 8px
+    gap: var(--spacing-16);
+    margin-left: var(--spacing-16)
+}
+
+.applicationName_c8f358 {
+    min-width: 24px;
+    flex: 0 1 auto
+}
+
+.fade_c8f358 {
+    --custom-activity-popout-header-fade-width: var(--spacing-16);
+    pointer-events: none;
+    background: linear-gradient(90deg,transparent,var(--custom-activity-popout-header-background-color));
+    position: absolute;
+    left: calc(var(--spacing-16)*-1);
+    left: calc(var(--custom-activity-popout-header-fade-width)*-1);
+    width: var(--spacing-16);
+    width: var(--custom-activity-popout-header-fade-width);
+    height: var(--custom-activity-popout-header-height)
 }
 
 .container__0b406 {

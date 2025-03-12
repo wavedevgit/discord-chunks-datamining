@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: 8778c15b220a5c1b
+  Original File Name: 77f29279655e7e38
 **/
 .container__98cbd {
     width: 220px;
@@ -310,12 +310,24 @@
     margin-right: 6px
 }
 
-.textContainer_df65b5 {
+.row_df65b5 {
     display: flex;
-    padding: 6px 0;
+    flex-direction: row
+}
+
+.systemMessageContainer_df65b5 {
+    display: flex;
     align-items: center;
-    gap: var(--spacing-8);
-    margin-left: 0
+    margin-left: 0;
+    gap: var(--spacing-4);
+    width: 100%
+}
+
+.systemMessageContent_df65b5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%
 }
 
 .iconContainer_df65b5 {
@@ -328,6 +340,18 @@
 
 .icon_df65b5 {
     color: var(--guild-boosting-pink)
+}
+
+.timestamp_df65b5 {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-muted)
+}
+
+.boostMessage_df65b5 {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-4)
 }
 
 .container__2281b {

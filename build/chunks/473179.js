@@ -13,13 +13,13 @@ function c(e) {
     onClose: n,
     onSelect: t,
     application: c,
-    channelId: u
-  } = e, _ = (0, a.Z)(c, u, i.IlC.POPOUT);
+    channelId: _
+  } = e, u = (0, a.Z)(c, _, i.IlC.POPOUT);
   return (0, o.jsx)(r.v2r, {
     navId: "activity-popout-overflow-popout",
     onClose: n,
     onSelect: t,
     "aria-label": l.NW.string(l.t.SS9Y6O),
-    children: _
+    children: u
   })
 }

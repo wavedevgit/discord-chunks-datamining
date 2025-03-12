@@ -29,17 +29,17 @@ function h(e) {
     icon: v
   } = e, x = f.Z.getGuild(t), y = d.default.getId(), E = (0, i.e7)([b.default], () => b.default.getUser(h)), C = (0, i.e7)([g.ZP], () => g.ZP.isGuestOrLurker(t, h), [t, h]);
   (0, i.e7)([Z.Z], () => Z.Z.getGuildVersion(t), [t]);
-  let S = r.useMemo(() => ({
+  let _ = r.useMemo(() => ({
     [t]: [h]
   }), [t, h]);
-  (0, o.$)(S);
-  let _ = P === p.IlC.POPOUT,
+  (0, o.$)(_);
+  let S = P === p.IlC.POPOUT,
     I = (0, s.Z)({
       guild: x,
       analyticsLocation: N
     }),
     T = (0, u.Aq)();
-  if (null == x || _) return null;
+  if (null == x || S) return null;
   let W = y === h && (Z.Z.can(p.Plq.CHANGE_NICKNAME, x) || Z.Z.can(p.Plq.MANAGE_NICKNAMES, x)),
     w = y === h,
     U = Z.Z.canManageUser(p.Plq.MANAGE_NICKNAMES, h, x);

@@ -1,6 +1,6 @@
 /**
   Module ID: 29618
-  Original File Name: 8bb237544eda4287
+  Original File Name: bfecc761dc19e180
 **/
 .labelWrapper_abe771 {
     display: flex;
@@ -34,6 +34,20 @@
     align-items: center
 }
 
+@keyframes outgoing-call-pulse__3751b {
+    0% {
+        opacity: .2
+    }
+
+    50% {
+        opacity: .9
+    }
+
+    to {
+        opacity: .2
+    }
+}
+
 .menuItem__3751b:hover .channelName__3751b {
     color: var(--white)
 }
@@ -46,6 +60,11 @@
     display: flex;
     align-items: center;
     gap: 4px
+}
+
+.ringing__3751b {
+    opacity: .3;
+    animation: outgoing-call-pulse__3751b 1s ease-out infinite
 }
 
 .channelName__3751b {

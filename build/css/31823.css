@@ -1,6 +1,6 @@
 /**
   Module ID: 31823
-  Original File Name: 1d54a62488c04e55
+  Original File Name: a945cb93cdcd8552
 **/
 .confirmModal__1b38b {
     display: flex;
@@ -48,6 +48,20 @@
     z-index: 1
 }
 
+@keyframes outgoing-call-pulse__3751b {
+    0% {
+        opacity: .2
+    }
+
+    50% {
+        opacity: .9
+    }
+
+    to {
+        opacity: .2
+    }
+}
+
 .menuItem__3751b:hover .channelName__3751b {
     color: var(--white)
 }
@@ -60,6 +74,11 @@
     display: flex;
     align-items: center;
     gap: 4px
+}
+
+.ringing__3751b {
+    opacity: .3;
+    animation: outgoing-call-pulse__3751b 1s ease-out infinite
 }
 
 .channelName__3751b {

@@ -20,13 +20,14 @@ function c(e) {
     contentClassName: d,
     iconClassName: u,
     iconContainerClassName: p,
-    compact: m = !1
+    timestampClassName: m,
+    compact: f = !1
   } = e;
   return (0, r.jsxs)("div", {
     className: a()(o, {
       [s.container]: !0,
-      [s.compact]: m,
-      [s.cozy]: !m
+      [s.compact]: f,
+      [s.cozy]: !f
     }),
     children: [null != n && (0, r.jsx)("div", {
       className: a()(s.iconContainer, p),
@@ -43,7 +44,8 @@ function c(e) {
     }), (0, r.jsxs)("div", {
       className: a()(d, s.content),
       children: [c, null != i && (0, r.jsx)(l.Z, {
-        timestamp: i
+        timestamp: i,
+        className: m
       })]
     })]
   })

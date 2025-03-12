@@ -1,6 +1,6 @@
 /**
   Module ID: 67196
-  Original File Name: f07bbec2d4ab998d
+  Original File Name: bc35e2ae392f6bbb
 **/
 .label__33095 {
     gap: var(--spacing-8)
@@ -65,6 +65,20 @@
     white-space: normal
 }
 
+@keyframes outgoing-call-pulse__3751b {
+    0% {
+        opacity: .2
+    }
+
+    50% {
+        opacity: .9
+    }
+
+    to {
+        opacity: .2
+    }
+}
+
 .menuItem__3751b:hover .channelName__3751b {
     color: var(--white)
 }
@@ -77,6 +91,11 @@
     display: flex;
     align-items: center;
     gap: 4px
+}
+
+.ringing__3751b {
+    opacity: .3;
+    animation: outgoing-call-pulse__3751b 1s ease-out infinite
 }
 
 .channelName__3751b {

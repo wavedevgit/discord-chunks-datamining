@@ -5,17 +5,17 @@ t.d(n, {
 var r = t(200651),
   i = t(192379),
   o = t(442837),
-  a = t(481060),
-  s = t(413335),
+  s = t(481060),
+  a = t(413335),
   l = t(984370),
   c = t(713081),
   d = t(905128),
   u = t(111360),
-  v = t(27237),
-  p = t(51859),
-  x = t(953478),
-  b = t(460608),
-  m = t(279604),
+  p = t(27237),
+  v = t(51859),
+  m = t(953478),
+  x = t(460608),
+  b = t(279604),
   j = t(535396),
   _ = t(730621),
   f = t(388032),
@@ -40,14 +40,14 @@ function Z(e) {
     var e;
     if (null == t) return;
     let r = null == C ? void 0 : null === (e = C.get) || void 0 === e ? void 0 : e.call(C, t);
-    null == r || N.current || ((0, m.KE)(n, r), N.current = !0)
+    null == r || N.current || ((0, b.KE)(n, r), N.current = !0)
   }, [n, t, C]), null == Z) ? null : (0, r.jsxs)("div", {
     className: h.container,
     children: [(0, r.jsxs)(l.Z, {
       hideSearch: !0,
       toolbar: (0, r.jsx)("div", {}),
       children: [(0, r.jsx)(l.Z.Icon, {
-        icon: s.Z,
+        icon: a.Z,
         disabled: !0,
         "aria-label": ""
       }), (0, r.jsx)(l.Z.Title, {
@@ -62,10 +62,10 @@ function Z(e) {
           if (null != t) return (0, r.jsxs)(i.Fragment, {
             children: [(0, r.jsxs)("div", {
               className: h.powerupTextContainer,
-              children: [(0, r.jsx)(a.X6q, {
+              children: [(0, r.jsx)(s.X6q, {
                 variant: "heading-lg/semibold",
                 children: f.NW.string(_.Z["TXY/b2"])
-              }), (0, r.jsx)(a.Text, {
+              }), (0, r.jsx)(s.Text, {
                 variant: "text-sm/medium",
                 children: f.NW.string(_.Z.aJv4PD)
               })]
@@ -74,14 +74,14 @@ function Z(e) {
               children: t.map((e, i) => {
                 switch (e.type) {
                   case j.Us.LEVEL:
-                    return (0, r.jsx)(v.ZP, {
+                    return (0, r.jsx)(p.ZP, {
                       guildId: n,
                       index: i,
                       powerup: e,
                       nextPowerup: t[i + 1]
                     }, "powerup-".concat(e.skuId));
                   case j.Us.PERK:
-                    return (0, r.jsx)(p.Z, {
+                    return (0, r.jsx)(v.Z, {
                       guildId: n,
                       powerup: e
                     }, "powerup-".concat(e.skuId))
@@ -92,9 +92,9 @@ function Z(e) {
         })
       }), (0, r.jsxs)("div", {
         className: h.sidebarContainer,
-        children: [(0, r.jsx)(x.Z, {
+        children: [(0, r.jsx)(m.Z, {
           guildId: n
-        }), (0, r.jsx)(b.Z, {
+        }), (0, r.jsx)(x.Z, {
           guildId: n
         })]
       })]

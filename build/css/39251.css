@@ -1,6 +1,6 @@
 /**
   Module ID: 39251
-  Original File Name: 4af306e2801cb21e
+  Original File Name: f85d2de5e4fa7969
 **/
 .image__04666 {
     width: 100%;
@@ -1646,23 +1646,15 @@
 
 @keyframes outgoing-call-pulse__07f91 {
     0% {
-        opacity: .05
+        opacity: .2
     }
 
-    11.56% {
+    50% {
         opacity: .9
     }
 
-    39.02% {
-        opacity: .05
-    }
-
-    39.04% {
-        opacity: .9
-    }
-
-    66.48% {
-        opacity: .05
+    to {
+        opacity: .2
     }
 }
 
@@ -1938,7 +1930,7 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .ringing__07f91 {
     opacity: .3;
-    animation: outgoing-call-pulse__07f91 2.5s ease-out infinite
+    animation: outgoing-call-pulse__07f91 1s ease-out infinite
 }
 
 .guestSuffix__07f91 {

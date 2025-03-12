@@ -6,17 +6,17 @@ var r = t(200651);
 t(192379);
 var i = t(793030),
   o = t(442837),
-  a = t(481060),
-  s = t(678558),
+  s = t(481060),
+  a = t(678558),
   l = t(413335),
   c = t(430824),
   d = t(63063),
   u = t(317169),
-  v = t(639660),
-  p = t(767218),
-  x = t(981631),
-  b = t(730621),
-  m = t(388032),
+  p = t(639660),
+  v = t(767218),
+  m = t(981631),
+  x = t(730621),
+  b = t(388032),
   j = t(785947);
 
 function _(e) {
@@ -33,37 +33,37 @@ function _(e) {
       className: j.headerContainer,
       children: [(0, r.jsx)(i.xv, {
         variant: "eyebrow",
-        children: m.NW.string(b.Z.hjvcLC)
+        children: b.NW.string(x.Z.hjvcLC)
       }), (0, r.jsx)(i.xv, {
         className: j.learnMore,
         variant: "text-xs/semibold",
-        children: m.NW.format(b.Z.fXE30d, {
-          helpDeskArticle: d.Z.getArticleURL(x.BhN.GUILD_BOOSTING_FAQ)
+        children: b.NW.format(x.Z.fXE30d, {
+          helpDeskArticle: d.Z.getArticleURL(m.BhN.GUILD_BOOSTING_FAQ)
         })
       })]
     }), (0, r.jsxs)("div", {
       className: j.contentContainer,
-      children: [(0, r.jsx)(p.Z, {
+      children: [(0, r.jsx)(v.Z, {
         count: _,
-        type: p.b.AVAILABLE
-      }), (0, r.jsx)(p.Z, {
+        type: v.b.AVAILABLE
+      }), (0, r.jsx)(v.Z, {
         count: f,
-        type: p.b.SPENT
-      }), (0, r.jsx)(p.Z, {
+        type: v.b.SPENT
+      }), (0, r.jsx)(v.Z, {
         count: h,
-        type: p.b.TOTAL
+        type: v.b.TOTAL
       })]
-    }), (0, r.jsx)(v.Z, {
+    }), (0, r.jsx)(p.Z, {
       guildId: n
-    }), (0, r.jsx)(s.Z, {
+    }), (0, r.jsx)(a.Z, {
       className: j.boostButton,
       guild: t,
       analyticsLocation: {
-        page: x.ZY5.GUILD_POWERUPS_OVERVIEW,
-        section: x.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
+        page: m.ZY5.GUILD_POWERUPS_OVERVIEW,
+        section: m.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
       },
-      color: a.Ttl.CUSTOM,
-      size: a.PhG.LARGE,
+      color: s.Ttl.CUSTOM,
+      size: s.PhG.LARGE,
       icon: (0, r.jsx)(l.Z, {
         className: j.boostButtonIcon
       })

@@ -7,8 +7,8 @@ t.d(n, {
 var r = t(200651),
   i = t(192379),
   o = t(481060),
-  a = t(713081),
-  s = t(535396);
+  s = t(713081),
+  a = t(535396);
 
 function l(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -38,7 +38,7 @@ function c(e) {
 function d(e, n) {
   (0, o.ZDy)(async () => {
     switch (n.type) {
-      case s.Us.LEVEL:
+      case a.Us.LEVEL:
         let {
           default: i
         } = await t.e("99014").then(t.bind(t, 271224));
@@ -46,7 +46,7 @@ function d(e, n) {
           guildId: e,
           powerup: n
         }, t));
-      case s.Us.PERK: {
+      case a.Us.PERK: {
         let {
           default: i
         } = await t.e("78718").then(t.bind(t, 640139));
@@ -60,15 +60,15 @@ function d(e, n) {
 }
 
 function u(e, n) {
-  let [s, c] = i.useState(!1), [u, v] = i.useState(void 0), p = i.useCallback(t => {
-    let r = t ? a.H6 : a.Th;
-    return c(!0), v(void 0), r(e, n.skuId).catch(e => {
+  let [a, c] = i.useState(!1), [u, p] = i.useState(void 0), v = i.useCallback(t => {
+    let r = t ? s.H6 : s.Th;
+    return c(!0), p(void 0), r(e, n.skuId).catch(e => {
       var n;
-      throw v(null !== (n = e.body.message) && void 0 !== n ? n : void 0), e
+      throw p(null !== (n = e.body.message) && void 0 !== n ? n : void 0), e
     }).finally(() => {
       c(!1)
     })
-  }, [e, n.skuId]), x = i.useCallback(e => (e.stopPropagation(), p(!0).then(() => {
+  }, [e, n.skuId]), m = i.useCallback(e => (e.stopPropagation(), v(!0).then(() => {
     (0, o.ZDy)(async () => {
       let {
         default: e
@@ -77,12 +77,12 @@ function u(e, n) {
         powerup: n
       }, t))
     })
-  })), [p, n]), b = i.useCallback(e => (e.stopPropagation(), p(!1)), [p]);
+  })), [v, n]), x = i.useCallback(e => (e.stopPropagation(), v(!1)), [v]);
   return {
-    isLoading: s,
+    isLoading: a,
     error: u,
-    onActivate: x,
-    onDeactivate: b,
+    onActivate: m,
+    onDeactivate: x,
     onShowDeactivate: i.useCallback(i => {
       i.stopPropagation(), (0, o.ZDy)(async () => {
         let {

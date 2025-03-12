@@ -1,6 +1,6 @@
 /**
   Module ID: 31649
-  Original File Name: 5379524d00804a3c
+  Original File Name: 4658893048edb3fb
 **/
 .formGroup__9b8f6 {
     margin-bottom: 20px
@@ -243,4 +243,17 @@
 
 .invisibleStatusNotice__7fd1c {
     margin-top: 10px
+}
+
+.needInspiration__7fd1c {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 10px;
+    color: var(--interactive-normal);
+    cursor: pointer
+}
+
+.needInspiration__7fd1c:hover {
+    color: var(--interactive-hover)
 }

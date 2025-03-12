@@ -11,8 +11,8 @@ var o = t(200651),
 function c(e) {
   var n, t, c;
   let {
-    channelId: u,
-    guildId: _,
+    channelId: _,
+    guildId: u,
     embeddedActivity: s,
     application: d
   } = e, p = {
@@ -22,7 +22,7 @@ function c(e) {
     referrer_id: s.referrerId,
     custom_id: s.customId
   };
-  return null != _ && "" !== _ && (p.guild_id = _), null != u && "" !== u && (p.channel_id = u), (0, o.jsx)(a.J, {
+  return null != u && "" !== u && (p.guild_id = u), null != _ && "" !== _ && (p.channel_id = _), (0, o.jsx)(a.J, {
     allowPopups: (0, r.h)(d),
     referrerPolicy: i.um.has(s.applicationId) ? "no-referrer" : "origin",
     url: s.url,

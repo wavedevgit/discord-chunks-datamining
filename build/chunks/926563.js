@@ -1,6 +1,6 @@
 /** Chunk was on 31649 **/
 n.d(t, {
-  Z: () => S
+  Z: () => b
 });
 var r = n(200651);
 n(192379);
@@ -17,12 +17,12 @@ var a = n(481060),
   p = n(228168),
   h = n(885833);
 
-function S(e) {
+function b(e) {
   let {
     user: t,
     previewText: n,
-    previewEmoji: S,
-    previewStatus: b,
+    previewEmoji: b,
+    previewStatus: S,
     placeHolderText: j,
     transitionState: g
   } = e, v = (0, i.ZP)(t.id);
@@ -42,7 +42,7 @@ function S(e) {
           user: t,
           displayProfile: v,
           profileType: p.y0.BITE_SIZE,
-          previewStatus: b,
+          previewStatus: S,
           className: h.avatar
         })
       }), (0, r.jsx)(m.Z, {
@@ -50,7 +50,7 @@ function S(e) {
         user: t,
         profileType: p.y0.BITE_SIZE,
         previewText: n,
-        previewEmoji: S,
+        previewEmoji: b,
         placeholderText: j,
         hasEntered: g === a.Dvm.ENTERED
       })]

@@ -63,7 +63,7 @@ function h(e, t) {
   if (__OVERLAY__ || null == v || null == h || !x) return null;
   let E = f.Z.getHighestRole(h),
     C = Object.values(N).filter(e => !(0, u.pM)(h.id, e.id)),
-    S = y && !O ? C.map(n => {
+    _ = y && !O ? C.map(n => {
       let r = n.managed || !f.Z.isRoleHigher(h, E, n),
         i = -1 !== v.indexOf(n.id);
       return r && !i ? null : (0, l.jsx)(a.S89, {
@@ -79,11 +79,11 @@ function h(e, t) {
       id: e.id,
       label: () => m(e, j)
     }, e.id));
-  return 0 === S.filter(Z.lm).length ? null : n ? S : (0, l.jsx)(a.sNh, {
+  return 0 === _.filter(Z.lm).length ? null : n ? _ : (0, l.jsx)(a.sNh, {
     id: "roles",
     label: p.NW.formatToPlainString(p.t.PCs0oq, {
-      numRoles: S.length
+      numRoles: _.length
     }),
-    children: S
+    children: _
   })
 }
