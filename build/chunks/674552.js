@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  l = n(481060),
+  l = n.n(i),
+  o = n(481060),
   a = n(44315),
   s = n(246364),
   c = n(460562),
@@ -17,15 +17,15 @@ var i = n(120356),
   d = n(384185);
 
 function p(e, t) {
-  return (0, r.jsx)(l.mAB, {
+  return (0, r.jsx)(o.mAB, {
     count: e,
     color: t
   })
 }
 
 function h() {
-  return (0, r.jsx)(l.G2e, {
-    icon: (0, l.GSL)(c.Z),
+  return (0, r.jsx)(o.G2e, {
+    icon: (0, o.GSL)(c.Z),
     disableColor: !0,
     className: d.unavailableBadge
   })
@@ -36,23 +36,23 @@ function f(e) {
     audio: n,
     video: r,
     screenshare: i,
-    isCurrentUserConnected: o,
+    isCurrentUserConnected: l,
     liveStage: a,
     activeEvent: s,
     activity: c
   } = e;
-  if (s) t = l.Que;
-  else if (a) t = l.ewx;
-  else if (c) t = l.nG3;
-  else if (i) t = l.pzj;
-  else if (r) t = l.Odl;
+  if (s) t = o.Que;
+  else if (a) t = o.ewx;
+  else if (c) t = o.nG3;
+  else if (i) t = o.pzj;
+  else if (r) t = o.Odl;
   else {
     if (!n) return null;
-    t = l.gj8
+    t = o.gj8
   }
   return m({
     icon: t,
-    isCurrentUserConnected: o
+    isCurrentUserConnected: l
   })
 }
 
@@ -62,13 +62,13 @@ function g(e) {
   } = e, [n, r] = function(e) {
     switch (e) {
       case s.wB.SUBMITTED:
-        return [void 0, l.T39];
+        return [void 0, o.T39];
       case s.wB.REJECTED:
-        return [u.Ilk.RED_400, l.Dio];
+        return [u.Ilk.RED_400, o.Dio];
       case s.wB.APPROVED:
-        return [u.Ilk.GREEN_360, l.dz2];
+        return [u.Ilk.GREEN_360, o.dz2];
       default:
-        return [void 0, l.vdY]
+        return [void 0, o.vdY]
     }
   }(t);
   return m({
@@ -87,7 +87,7 @@ function m(e) {
   } : {
     color: (0, a.Lq)(n)
   };
-  return (0, r.jsx)(l.G2e, function(e) {
+  return (0, r.jsx)(o.G2e, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -106,7 +106,7 @@ function m(e) {
     return e
   }({
     icon: t,
-    className: o()(d.iconBadge, {
+    className: l()(d.iconBadge, {
       [d.isCurrentUserConnected]: i
     })
   }, s))

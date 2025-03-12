@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => I
+  Z: () => w
 }), n(47120), n(566702);
 var r = n(200651),
   a = n(192379),
@@ -185,7 +185,7 @@ let E = [{
       return "".concat(T(t.totalTime), " ms")
     }
   }],
-  w = {
+  I = {
     searchType: h.S.REGEX,
     searchStringGenerator: e => {
       let {
@@ -195,7 +195,7 @@ let E = [{
     }
   };
 
-function I() {
+function w() {
   let e = a.useRef(null),
     [t, n] = a.useState(""),
     i = function(e) {
@@ -219,7 +219,7 @@ function I() {
     j = a.useCallback(e => {
       x(e)
     }, []);
-  (0, p.BO)(t, f ? c : s, j, w);
+  (0, p.BO)(t, f ? c : s, j, I);
   let T = a.useCallback(e => {
       m(s), b(e)
     }, [s]),

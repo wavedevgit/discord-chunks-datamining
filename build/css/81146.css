@@ -1,6 +1,6 @@
 /**
   Module ID: 81146
-  Original File Name: efed148097bde0fc
+  Original File Name: 40f401ff35cec4cd
 **/
 .fallback_b789ab {
     box-sizing: border-box;
@@ -411,6 +411,10 @@
 
 .message__5126c {
     padding-right: 48px!important
+}
+
+.visual-refresh .message__5126c {
+    padding-right: var(--space-xl)!important
 }
 
 .visual-refresh .message__5126c {

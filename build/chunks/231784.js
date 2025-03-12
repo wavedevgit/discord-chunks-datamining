@@ -9,5 +9,6 @@ e.exports = {
   dotSpacer: "dotSpacer_c8f358",
   actionButtonsContainer: "actionButtonsContainer_c8f358",
   applicationName: "applicationName_c8f358",
-  fade: "fade_c8f358"
+  fade: "fade_c8f358",
+  inviteButtonIcon: "inviteButtonIcon_c8f358"
 }

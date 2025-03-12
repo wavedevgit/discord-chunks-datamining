@@ -5,7 +5,7 @@ n.d(t, {
 var i, r = n(442837),
   l = n(570140);
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -13,7 +13,7 @@ function o(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let s = {
+let o = {
     enable_recently_active: "Enable recently active channels",
     theme_setting_in_account_sheet: "Show theme settings in the Account action sheet",
     mobile_profile_effect_debug_controls: "mobile_profile_effect_debug_controls",
@@ -30,7 +30,7 @@ class u extends(i = r.ZP.DeviceSettingsStore) {
     }
   }
   initialize(e) {
-    for (var t in s) {
+    for (var t in o) {
       var n, i;
       let r = null !== (i = null == e ? void 0 : null === (n = e.toggleStates) || void 0 === n ? void 0 : n[t]) && void 0 !== i && i;
       a[t] = r
@@ -49,11 +49,11 @@ class u extends(i = r.ZP.DeviceSettingsStore) {
   allWithDescriptions() {
     return Object.entries(a).map(e => {
       let [t, n] = e;
-      return [t, n, s[t]]
+      return [t, n, o[t]]
     })
   }
 }
-o(u, "displayName", "DevToolsDesignTogglesStore"), o(u, "persistKey", "DevToolsDesignTogglesStore");
+s(u, "displayName", "DevToolsDesignTogglesStore"), s(u, "persistKey", "DevToolsDesignTogglesStore");
 let d = new u(l.Z, {
   DEV_TOOLS_DESIGN_TOGGLE_SET: function(e) {
     a[e.toggle] = e.value

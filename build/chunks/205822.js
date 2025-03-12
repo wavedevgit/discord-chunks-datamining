@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(200651),
   r = n(192379),
   l = n(120356),
-  o = n.n(l),
-  s = n(481060),
+  s = n.n(l),
+  o = n(481060),
   a = n(710845),
   u = n(310752),
   d = n(531643),
@@ -27,19 +27,19 @@ let g = new a.Z("UploadArea");
 function v() {
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)("div", {
-      className: o()(p.sparkleWhite, h.sparkleOne)
+      className: s()(p.sparkleWhite, h.sparkleOne)
     }), (0, i.jsx)("div", {
-      className: o()(p.sparkleWhite, h.sparkleTwo)
+      className: s()(p.sparkleWhite, h.sparkleTwo)
     }), (0, i.jsx)("div", {
-      className: o()(p.lightWhite, h.lightOne)
+      className: s()(p.lightWhite, h.lightOne)
     }), (0, i.jsx)("div", {
-      className: o()(p.lightWhite, h.lightTwo)
+      className: s()(p.lightWhite, h.lightTwo)
     }), (0, i.jsx)("div", {
-      className: o()(p.crossWhite, h.crossOne)
+      className: s()(p.crossWhite, h.crossOne)
     }), (0, i.jsx)("div", {
-      className: o()(p.crossWhite, h.crossTwo)
+      className: s()(p.crossWhite, h.crossTwo)
     }), (0, i.jsx)("div", {
-      className: o()(p.popWhite, h.popOne)
+      className: s()(p.popWhite, h.popOne)
     })]
   })
 }
@@ -62,7 +62,7 @@ class C extends r.Component {
     } = this.props;
     return (0, i.jsx)("div", {
       ref: this.elementDOMRef,
-      className: o()(l, h.uploadArea, {
+      className: s()(l, h.uploadArea, {
         [h.droppable]: this.state.isDragging,
         [h.uploadModalIn]: this.state.isOverZone
       }),
@@ -119,7 +119,7 @@ class C extends r.Component {
       if (!this.preventUnwantedDrop(e)) return !1;
       let r = e.dataTransfer;
       if (null != r) {
-        if (r.dropEffect = "copy", (0, s.nfh)(d.A) && (0, s.Mr3)(d.A), e.stopPropagation(), e.preventDefault(), null === (t = (n = this.props).onDragOver) || void 0 === t || t.call(n, e), !this.state.isDragging) {
+        if (r.dropEffect = "copy", (0, o.nfh)(d.A) && (0, o.Mr3)(d.A), e.stopPropagation(), e.preventDefault(), null === (t = (n = this.props).onDragOver) || void 0 === t || t.call(n, e), !this.state.isDragging) {
           let e = null === (i = this.elementDOMRef.current) || void 0 === i ? void 0 : i.ownerDocument.defaultView;
           (null != e && r.types instanceof e.DOMStringList && r.types.contains("application/x-moz-file") || -1 !== r.types.indexOf("Files")) && this.setState(e => e.isDragging ? {} : {
             isDragging: !0

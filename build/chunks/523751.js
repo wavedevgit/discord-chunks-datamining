@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => U
 });
 var r = n(200651),
   i = n(192379),
@@ -14,22 +14,23 @@ var r = n(200651),
   d = n(353093),
   f = n(979264),
   _ = n(436774),
-  p = n(623624),
-  h = n(297700),
-  m = n(210887),
-  g = n(271383),
-  E = n(594174),
-  v = n(665786),
-  b = n(697725),
-  y = n(267642),
-  O = n(284363),
-  I = n(854218),
-  S = n(682947),
-  T = n(981631),
-  N = n(388032),
-  A = n(574360);
+  p = n(540059),
+  h = n(623624),
+  m = n(297700),
+  g = n(210887),
+  E = n(271383),
+  v = n(594174),
+  b = n(665786),
+  y = n(697725),
+  O = n(267642),
+  I = n(284363),
+  S = n(854218),
+  T = n(682947),
+  N = n(981631),
+  A = n(388032),
+  C = n(574360);
 
-function C(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -38,20 +39,20 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      C(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
 }
 
-function P(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,41 +63,59 @@ function P(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
+function D(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = {
-  [O.Q.STAFF]: {
+
+function L(e, t) {
+  if (null == e) return {};
+  var n, r, i = x(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function x(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+let M = {
+  [I.Q.STAFF]: {
     IconComponent: u.Ymb,
     foregroundDarkColor: l.Z.unsafe_rawColors.WHITE_400.css,
     foregroundLightColor: l.Z.unsafe_rawColors.WHITE_400.css,
     backgroundDarkColor: l.Z.unsafe_rawColors.GREEN_360.css,
     backgroundLightColor: l.Z.unsafe_rawColors.GREEN_360.css
   },
-  [O.Q.VERIFIED_AND_PARTNERED]: {
+  [I.Q.VERIFIED_AND_PARTNERED]: {
     IconComponent: u.kmB,
     foregroundDarkColor: l.Z.unsafe_rawColors.WHITE_400.css,
     foregroundLightColor: l.Z.unsafe_rawColors.WHITE_400.css,
     backgroundDarkColor: l.Z.unsafe_rawColors.GREEN_360.css,
     backgroundLightColor: l.Z.unsafe_rawColors.GREEN_360.css
   },
-  [O.Q.VERIFIED]: {
+  [I.Q.VERIFIED]: {
     IconComponent: u.kmB,
     foregroundDarkColor: l.Z.unsafe_rawColors.WHITE_400.css,
     foregroundLightColor: l.Z.unsafe_rawColors.WHITE_400.css,
     backgroundDarkColor: l.Z.unsafe_rawColors.GREEN_360.css,
     backgroundLightColor: l.Z.unsafe_rawColors.GREEN_360.css
   },
-  [O.Q.PARTNERED]: {
-    IconComponent: (0, u.GSL)(v.Z),
+  [I.Q.PARTNERED]: {
+    IconComponent: (0, u.GSL)(b.Z),
     foregroundDarkColor: l.Z.unsafe_rawColors.WHITE_400.css,
     foregroundLightColor: l.Z.unsafe_rawColors.WHITE_400.css,
     backgroundDarkColor: l.Z.unsafe_rawColors.BRAND_500.css,
     backgroundLightColor: l.Z.unsafe_rawColors.BRAND_500.css
   },
-  [O.Q.COMMUNITY]: {
+  [I.Q.COMMUNITY]: {
     IconComponent: u.tvw,
     foregroundDarkColor: l.Z.unsafe_rawColors.PRIMARY_500.css,
     foregroundLightColor: l.Z.unsafe_rawColors.WHITE_400.css,
@@ -106,7 +125,7 @@ let D = {
     premiumForegroundColor: l.Z.unsafe_rawColors.WHITE_400.css,
     sizeAdjustment: 2
   },
-  [O.Q.DISCOVERABLE]: {
+  [I.Q.DISCOVERABLE]: {
     IconComponent: u.enf,
     foregroundDarkColor: l.Z.unsafe_rawColors.PRIMARY_500.css,
     foregroundLightColor: l.Z.unsafe_rawColors.WHITE_400.css,
@@ -116,33 +135,33 @@ let D = {
     premiumForegroundColor: l.Z.unsafe_rawColors.WHITE_400.css,
     sizeAdjustment: 2
   },
-  [O.Q.CLAN]: {},
-  [O.Q.NONE]: {}
+  [I.Q.CLAN]: {},
+  [I.Q.NONE]: {}
 };
 
-function L(e) {
+function k(e) {
   let {
     guildTraits: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: A.tooltipPremiumFooterContainer,
+    className: C.tooltipPremiumFooterContainer,
     children: [(0, r.jsxs)("div", {
-      className: a()(A.tooltipPremiumFooterSegment, A.tooltipPremiumFooterTierSegment),
-      children: [(0, r.jsx)(b.Z, {
+      className: a()(C.tooltipPremiumFooterSegment, C.tooltipPremiumFooterTierSegment),
+      children: [(0, r.jsx)(y.Z, {
         width: 18,
         height: 18,
-        className: A.gemIcon
+        className: C.gemIcon
       }), (0, r.jsx)(u.Text, {
         variant: "text-xs/semibold",
         color: "always-white",
-        children: y.nW(t.premiumTier)
+        children: O.nW(t.premiumTier)
       })]
     }), (0, r.jsx)("div", {
-      className: A.tooltipPremiumFooterSegment,
+      className: C.tooltipPremiumFooterSegment,
       children: (0, r.jsx)(u.Text, {
         variant: "text-xs/semibold",
         color: "always-white",
-        children: N.NW.format(N.t["dR/SVF"], {
+        children: A.NW.format(A.t["dR/SVF"], {
           count: t.premiumSubscriberCount
         })
       })
@@ -150,7 +169,7 @@ function L(e) {
   })
 }
 
-function x(e) {
+function j(e) {
   let {
     badgeType: t,
     guildTraits: n
@@ -158,10 +177,10 @@ function x(e) {
     tooltipTitle: i,
     tooltipSubtitle: o,
     tooltipDescription: a
-  } = (0, S.G)(t, n.visibility);
+  } = (0, T.G)(t, n.visibility);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: A.tooltipBodyContainer,
+      className: C.tooltipBodyContainer,
       children: [(0, r.jsx)(u.Text, {
         color: "interactive-active",
         variant: "text-xs/bold",
@@ -175,106 +194,108 @@ function x(e) {
         variant: "text-xs/medium",
         children: a
       }) : null]
-    }), n.premium ? (0, r.jsx)(L, {
+    }), n.premium ? (0, r.jsx)(k, {
       guildTraits: n
     }) : null]
   })
 }
 
-function M(e) {
-  let t, n, {
-      guild: o,
-      tooltipColor: l = u.ua7.Colors.BRAND,
-      tooltipPosition: _,
-      className: v,
-      flowerStarClassName: b,
-      iconClassName: y,
-      badgeStrokeColor: S,
-      badgeColor: N,
-      size: C = 16,
-      disableBoostClick: P,
-      "aria-label": L = !1
+function U(e) {
+  let t, n;
+  var o, l, {
+      guild: _,
+      tooltipColor: b = u.ua7.Colors.BRAND,
+      tooltipPosition: y,
+      className: O,
+      flowerStarClassName: T,
+      iconClassName: A,
+      badgeStrokeColor: R,
+      badgeColor: w,
+      disableBoostClick: x,
+      "aria-label": k = !1
     } = e,
-    M = (0, s.e7)([E.default, g.ZP], () => {
-      let e = E.default.getCurrentUser();
-      return g.ZP.isMember(null == o ? void 0 : o.id, null == e ? void 0 : e.id)
+    U = L(e, ["guild", "tooltipColor", "tooltipPosition", "className", "flowerStarClassName", "iconClassName", "badgeStrokeColor", "badgeColor", "disableBoostClick", "aria-label"]);
+  let G = (0, p.Q3)("GuildBadgeV2"),
+    B = null !== (o = U.size) && void 0 !== o ? o : G ? 18 : 16,
+    V = (0, s.e7)([v.default, E.ZP], () => {
+      let e = v.default.getCurrentUser();
+      return E.ZP.isMember(null == _ ? void 0 : _.id, null == e ? void 0 : e.id)
     }),
-    k = (0, s.e7)([m.Z], () => m.Z.theme),
-    j = (0, I.XX)(o),
-    U = (0, O.i)(j),
-    G = i.useMemo(() => j.premium && M && !P, [P, j.premium, M]),
-    B = i.useCallback(e => {
-      G && (e.stopPropagation(), e.preventDefault(), (0, p.f)({
-        guildId: o.id,
+    F = (0, s.e7)([g.Z], () => g.Z.theme),
+    Z = (0, S.XX)(_),
+    H = (0, I.i)(Z),
+    W = i.useMemo(() => Z.premium && V && !x, [x, Z.premium, V]),
+    Y = i.useCallback(e => {
+      W && (e.stopPropagation(), e.preventDefault(), (0, h.f)({
+        guildId: _.id,
         location: {
-          section: T.jXE.GUILD_HEADER,
-          object: T.qAy.BOOST_GEM_ICON
+          section: N.jXE.GUILD_HEADER,
+          object: N.qAy.BOOST_GEM_ICON
         }
       }))
-    }, [G, o.id]);
-  if (U === O.Q.NONE) return null;
-  if (U === O.Q.CLAN) {
-    var V;
-    let e = (0, d.ky)(o.id, null === (V = o.profile) || void 0 === V ? void 0 : V.badge, C);
+    }, [W, _.id]);
+  if (H === I.Q.NONE) return null;
+  if (H === I.Q.CLAN) {
+    let e = (0, d.ky)(_.id, null === (l = _.profile) || void 0 === l ? void 0 : l.badge, B);
     return null == e ? null : (0, r.jsx)(u.ua7, {
-      color: l,
-      position: _,
-      "aria-label": L,
-      text: (0, r.jsx)(x, {
-        badgeType: U,
-        guildTraits: j
+      color: b,
+      position: y,
+      "aria-label": k,
+      text: (0, r.jsx)(j, {
+        badgeType: H,
+        guildTraits: Z
       }),
-      tooltipContentClassName: A.tooltipRemovePadding,
-      children: t => (0, r.jsx)(u.P3F, w(R({}, t), {
-        onClick: B,
-        className: a()(A.clanBadgeContainer, v),
+      tooltipContentClassName: C.tooltipRemovePadding,
+      children: t => (0, r.jsx)(u.P3F, D(P({}, t), {
+        onClick: Y,
+        className: a()(C.clanBadgeContainer, O),
         children: (0, r.jsx)(f.KQ, {
           src: e,
-          size: C
+          size: B
         })
       }))
     })
   }
   let {
-    IconComponent: F,
-    backgroundDarkColor: Z,
-    backgroundLightColor: H,
-    foregroundDarkColor: W,
-    foregroundLightColor: Y,
-    premiumBackgroundColor: K,
-    premiumForegroundColor: z,
-    sizeAdjustment: q
-  } = D[U];
-  if (null == F) return null;
-  j.premium && (t = z, n = K);
-  let Q = (0, c.wj)(k) ? W : Y,
-    X = (0, c.wj)(k) ? Z : H;
-  t = null != t ? t : Q, n = null != n ? n : X;
-  let J = Math.floor(.75 * C) - (null != q ? q : 0);
+    IconComponent: K,
+    backgroundDarkColor: z,
+    backgroundLightColor: q,
+    foregroundDarkColor: Q,
+    foregroundLightColor: X,
+    premiumBackgroundColor: J,
+    premiumForegroundColor: $,
+    sizeAdjustment: ee
+  } = M[H];
+  if (null == K) return null;
+  Z.premium && (t = $, n = J);
+  let et = (0, c.wj)(F) ? Q : X,
+    en = (0, c.wj)(F) ? z : q;
+  t = null != t ? t : et, n = null != n ? n : en;
+  let er = Math.floor(.75 * B) - (null != ee ? ee : 0);
   return (0, r.jsx)(u.ua7, {
-    color: l,
-    position: _,
-    "aria-label": L,
-    text: (0, r.jsx)(x, {
-      badgeType: U,
-      guildTraits: j
+    color: b,
+    position: y,
+    "aria-label": k,
+    text: (0, r.jsx)(j, {
+      badgeType: H,
+      guildTraits: Z
     }),
-    tooltipContentClassName: A.tooltipRemovePadding,
+    tooltipContentClassName: C.tooltipRemovePadding,
     children: e => (0, r.jsx)(u.P3F, {
-      onClick: B,
-      tabIndex: G ? 0 : -1,
-      children: (0, r.jsx)(h.Z, w(R({}, e), {
-        className: v,
-        flowerStarClassName: b,
+      onClick: Y,
+      tabIndex: W ? 0 : -1,
+      children: (0, r.jsx)(m.Z, D(P({}, e), {
+        className: O,
+        flowerStarClassName: T,
         allowFullSizedIcon: !0,
-        color: null != n ? n : N,
-        stroke: S,
-        size: C,
-        children: (0, r.jsx)(F, {
+        color: null != n ? n : w,
+        stroke: R,
+        size: B,
+        children: (0, r.jsx)(K, {
           size: "custom",
-          width: J,
-          height: J,
-          className: y,
+          width: er,
+          height: er,
+          className: A,
           color: null != t ? t : "currentColor"
         })
       }))

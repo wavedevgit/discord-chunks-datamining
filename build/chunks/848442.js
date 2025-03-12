@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  l = n(399606),
+  l = n.n(i),
+  o = n(399606),
   a = n(704215),
   s = n(433517),
   c = n(481060),
@@ -66,10 +66,10 @@ function w(e) {
     guildId: t,
     selected: n,
     handleClick: i
-  } = e, u = (0, f.RF)(t, "guild_shop_channel_row"), g = (0, l.e7)([_.Z], () => _.Z.getGuild(t)), x = (null == g ? void 0 : g.hasFeature(C.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === !0, w = "false" === s.K.get(S.tM, "false"), E = (0, l.e7)([d.Z], () => d.Z.useReducedMotion);
+  } = e, u = (0, f.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([_.Z], () => _.Z.getGuild(t)), x = (null == g ? void 0 : g.hasFeature(C.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === !0, w = "false" === s.K.get(S.tM, "false"), E = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
   return (0, r.jsx)(j.m, {
     id: "shop-".concat(t),
-    className: o()(I.previewChannelRow, {
+    className: l()(I.previewChannelRow, {
       [I.selected]: n,
       [I.phantomPreview]: w
     }),
@@ -77,7 +77,7 @@ function w(e) {
     renderIcon: e => (0, r.jsx)(m.Z, {
       width: 20,
       height: 20,
-      className: o()([e, I.shopIcon])
+      className: l()([e, I.shopIcon])
     }),
     text: P.NW.string(P.t.al5EXF),
     selected: n,
@@ -116,13 +116,13 @@ function E(e) {
   let {
     guild: t,
     selected: i
-  } = e, o = (0, g.g)(t, "guild_shop_channel_row"), l = () => {
+  } = e, l = (0, g.g)(t, "guild_shop_channel_row"), o = () => {
     s.K.set(S.tM, "true"), (0, v.uL)(C.Z5c.CHANNEL(t.id, x.oC.GUILD_SHOP))
   };
-  return o ? (0, r.jsx)(w, {
+  return l ? (0, r.jsx)(w, {
     guildId: t.id,
     selected: i,
-    handleClick: l
+    handleClick: o
   }) : (0, r.jsx)(j.m, {
     id: "shop-".concat(t.id),
     renderIcon: e => (0, r.jsx)(m.Z, {
@@ -132,7 +132,7 @@ function E(e) {
     }),
     text: P.NW.string(P.t.al5EXF),
     selected: i,
-    onClick: l,
+    onClick: o,
     onContextMenu: e => {
       null != t && (0, u.jW)(e, async () => {
         let {

@@ -30,8 +30,8 @@ var g = n(392750),
   S = n(645973),
   k = n(903502),
   E = n(912072),
-  w = n(272193),
-  I = n(685560),
+  I = n(272193),
+  w = n(685560),
   P = n(735959),
   Z = n(246992),
   R = n(496025),
@@ -39,8 +39,8 @@ var g = n(392750),
   L = n(633001),
   D = n(702904),
   B = n(178821),
-  M = n(958328),
-  z = n(315384),
+  z = n(958328),
+  M = n(315384),
   F = n(514866),
   G = n(384207),
   W = n(264603),
@@ -155,7 +155,7 @@ function ee() {
       }), e.push({
         id: "permissions",
         name: "Permissions",
-        render: () => (0, r.jsx)(M.Z, {})
+        render: () => (0, r.jsx)(z.Z, {})
       }), e.push({
         id: "modals",
         name: "Modals",
@@ -175,7 +175,7 @@ function ee() {
       }), e.push({
         id: "potions",
         name: "Potions",
-        render: () => (0, r.jsx)(z.Z, {})
+        render: () => (0, r.jsx)(M.Z, {})
       }), window.GLOBAL_ENV.RELEASE_CHANNEL.startsWith("staging") && (e.push({
         id: "trials",
         name: "Trials",
@@ -195,7 +195,7 @@ function ee() {
       })), e.push({
         id: "gifting_intent",
         name: "Gifting Intent",
-        render: () => (0, r.jsx)(w.Z, {})
+        render: () => (0, r.jsx)(I.Z, {})
       }), e.push({
         id: "voice_filters",
         name: "Voice Filters",
@@ -203,7 +203,7 @@ function ee() {
       }), e.push({
         id: "skill_trees",
         name: "Skill Trees",
-        render: () => (0, r.jsx)(I.Z, {})
+        render: () => (0, r.jsx)(w.Z, {})
       }), e
     }, []),
     {

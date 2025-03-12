@@ -9,14 +9,14 @@ var r = n(200651),
   s = n.n(a),
   o = n(442837),
   i = n(481060),
-  c = n(425493),
-  d = n(410030),
+  d = n(425493),
+  c = n(410030),
   u = n(984370),
   g = n(341907),
   f = n(822857),
   h = n(775451),
-  p = n(594174),
-  m = n(471731),
+  m = n(594174),
+  p = n(471731),
   b = n(335131),
   C = n(215023),
   _ = n(388032),
@@ -46,18 +46,18 @@ function k(e) {
     onClose: a,
     selectedTab: k,
     handleTransition: j
-  } = e, S = (0, d.ZP)(), y = (0, o.e7)([p.default], () => p.default.getCurrentUser()), O = (null == y ? void 0 : y.isStaff()) || (null == y ? void 0 : y.isStaffPersonal()) || !1, {
+  } = e, S = (0, c.ZP)(), y = (0, o.e7)([m.default], () => m.default.getCurrentUser()), O = (null == y ? void 0 : y.isStaff()) || (null == y ? void 0 : y.isStaffPersonal()) || !1, {
     enabled: E
   } = (0, f.W)({
     location: "collectibles_shop_header_bar"
-  }), T = [{
+  }), I = [{
     tab: C.AW.HOME,
     displayText: _.NW.string(_.t.ijDDw8)
   }, {
     tab: C.AW.CATALOG,
     displayText: _.NW.string(_.t.xFcotb)
   }];
-  return E && T.push({
+  return E && I.push({
     tab: C.AW.ORBS,
     displayText: _.NW.string(_.t.q6uIys)
   }), (0, r.jsx)(i.f6W, {
@@ -68,13 +68,13 @@ function k(e) {
       }),
       innerClassname: E ? v.headerBarInner : void 0,
       toolbar: t || !O ? null : (0, r.jsx)(l.Fragment, {}),
-      children: [(0, r.jsx)(m.Z, {
+      children: [(0, r.jsx)(p.Z, {
         className: v.discordLogo
       }), (0, r.jsx)(u.Z.Title, {
         children: _.NW.string(_.t.pWG4zc)
       }), (0, r.jsx)("div", {
         className: v.tabs,
-        children: T.map(e => {
+        children: I.map(e => {
           let {
             tab: t,
             displayText: n
@@ -93,7 +93,7 @@ function k(e) {
           className: v.balanceWidgetMenu,
           ctaText: _.NW.string(_.t["H57f4+"]),
           ctaOnClick: () => (0, g.navigateToQuestHome)()
-        }), t && (0, r.jsx)(c.Z, {
+        }), t && (0, r.jsx)(d.Z, {
           closeAction: n ? b.DR : a,
           keybind: "ESC"
         })]

@@ -1,6 +1,6 @@
 /**
   Module ID: 54082
-  Original File Name: e7387de24920e5f6
+  Original File Name: 968f5f9a9eccac53
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -944,7 +944,8 @@ strong {
 }
 
 :where(.visual-refresh) .list_c3cd7d {
-    padding-left: calc(28px + var(--space-xs) + var(--space-xs) - var(--space-xs))
+    padding-left: calc(28px + var(--space-xs) + var(--space-xs) - var(--space-xs));
+    padding-bottom: var(--space-xs)
 }
 
 :where(.visual-refresh) .collapsed_c3cd7d.list_c3cd7d {
@@ -5018,7 +5019,8 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .visual-refresh .attachButton__0923f {
     height: var(--custom-channel-textarea-text-area-height);
-    color: var(--interactive-normal)
+    color: var(--interactive-normal);
+    padding: var(--space-12) var(--space-md)
 }
 
 .visual-refresh .attachButton__0923f:hover {
@@ -5036,8 +5038,8 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .visual-refresh-chat-input .attachButton__0923f {
     height: auto;
-    padding: var(--space-4) var(--space-16);
-    padding-right: var(--space-12);
+    padding: var(--space-4) var(--space-12) var(--space-4) var(--space-md);
+    padding-left: calc(var(--custom-message-margin-horizontal) - var(--space-xs) + var(--custom-chat-aligned-icon-offset));
     margin-left: calc(var(--space-16)*-1);
     border-radius: 0
 }
@@ -6842,6 +6844,11 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 .header__34c2c {
     box-shadow: var(--elevation-low);
     border-top-color: transparent
+}
+
+.visual-refresh .container__34c2c {
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm)
 }
 
 .addReactButton__34c2c,.buttonInner__34c2c {
@@ -9852,8 +9859,9 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .visual-refresh .title_f75fb0 {
-    padding-left: 20px;
-    padding-right: calc(var(--space-8) + 1px)
+    padding-top: var(--space-8);
+    padding-left: calc(var(--custom-message-margin-horizontal) - var(--space-4) + var(--custom-chat-aligned-icon-offset) - 1px);
+    padding-right: var(--space-xs)
 }
 
 .visual-refresh .chatContent_f75fb0 {
@@ -9874,9 +9882,9 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .visual-refresh-chat-input .channelBottomBarArea_f75fb0 {
-    margin-left: var(--space-8);
-    margin-right: calc(var(--space-8) + 1px);
-    margin-bottom: var(--space-8)
+    margin-left: var(--space-xs);
+    margin-right: var(--space-xs);
+    margin-bottom: var(--space-xs)
 }
 
 .visual-refresh-chat-input .channelTextArea_f75fb0,.visual-refresh-chat-input .form_f75fb0 {

@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => j
+  Z: () => E
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -9,18 +9,17 @@ var r = n(200651),
   l = n(119617),
   o = n(481060),
   c = n(975298),
-  d = n(410154),
-  u = n(695349),
-  m = n(314684),
-  p = n(687362),
-  g = n(675619),
-  h = n(119850),
-  f = n(32173),
-  b = n(391110),
-  N = n(75077),
-  x = n(320319),
-  _ = n(730313);
-let E = e => {
+  d = n(695349),
+  u = n(314684),
+  m = n(687362),
+  p = n(675619),
+  g = n(119850),
+  h = n(32173),
+  f = n(391110),
+  b = n(75077),
+  N = n(320319),
+  x = n(730313);
+let _ = e => {
     let {
       showAllPerksButton: t,
       leftAlignHeaders: n,
@@ -29,107 +28,106 @@ let E = e => {
     } = e, a = (0, r.jsx)(o.X6q, {
       variant: "heading-xxl/extrabold",
       color: "header-primary",
-      className: null != s ? s : _.heading,
+      className: null != s ? s : x.heading,
       children: i
     });
     return null == t ? a : n ? (0, r.jsxs)("div", {
-      className: _.sectionHeader,
+      className: x.sectionHeader,
       children: [a, null != t && (0, r.jsx)("div", {
-        className: _.showAllPerksButton,
+        className: x.showAllPerksButton,
         children: t
       })]
     }) : (0, r.jsx)("div", {
-      className: _.container,
+      className: x.container,
       children: (0, r.jsx)("div", {
-        className: _.sectionHeaderSeeAll,
+        className: x.sectionHeaderSeeAll,
         children: a
       })
     })
   },
-  j = e => {
+  E = e => {
     var t;
     let {
       className: n,
-      variant: s = b.R0.PERKS_DISCOVERABILITY,
-      noBackground: j = !1,
-      leftAlignHeaders: C = !1,
-      showAllPerksButton: O,
-      headerClassname: v,
-      isFullScreen: S = !0,
-      shouldAutoScroll: T = !1
-    } = e, I = i.useRef(null), y = (0, m.Er)(), A = (0, p.v)(y), P = (0, d.ZP)("perks-discoverability"), R = s === b.R0.WHATS_NEW, D = (0, m.IY)(), Z = (0, h.x)();
+      variant: s = f.R0.PERKS_DISCOVERABILITY,
+      noBackground: E = !1,
+      leftAlignHeaders: j = !1,
+      showAllPerksButton: C,
+      headerClassname: O,
+      isFullScreen: v = !0,
+      shouldAutoScroll: S = !1
+    } = e, T = i.useRef(null), I = (0, u.Er)(), y = (0, m.v)(I), A = s === f.R0.WHATS_NEW, P = (0, u.IY)(), R = (0, g.x)();
     i.useEffect(() => {
-      R && !A && (D(), Z())
-    }, [D, Z, R, A]);
-    let w = () => {
-        R && A && D()
+      A && !y && (P(), R())
+    }, [P, R, A, y]);
+    let D = () => {
+        A && y && P()
       },
-      k = A && R;
-    (0, g.r)({
-      ref: I,
-      shouldScroll: k || T,
-      onScrollEnd: w,
-      onCleanup: w
+      Z = y && A;
+    (0, p.r)({
+      ref: T,
+      shouldScroll: Z || S,
+      onScrollEnd: D,
+      onCleanup: D
     });
-    let W = (0, N.Op)(R),
-      L = (0, f.Z)(),
-      B = (0, N.mN)(),
+    let w = (0, b.Op)(A),
+      k = (0, h.Z)(),
+      W = (0, b.mN)(),
       {
-        fractionalState: M
+        fractionalState: L
       } = (0, c.Z)(),
-      U = (0, u.W)(),
-      V = (0, N.sP)({
-        perksCards: L,
+      B = (0, d.W)(),
+      M = (0, b.sP)({
+        perksCards: k,
         variant: s,
-        shopMarketingVariation: P,
-        isFullScreen: S,
-        showTenureCard: null == y ? void 0 : y.showCard,
-        isPremiumSubscriber: B,
-        fractionalState: M,
-        isInReverseTrial: U
+        isFullScreen: v,
+        showTenureCard: null == I ? void 0 : I.showCard,
+        isPremiumSubscriber: W,
+        fractionalState: L,
+        isInReverseTrial: B
       }),
-      G = V.some(e => null != e.pillText),
-      [F, H] = i.useState(null),
-      z = i.useRef(new l.qA);
+      U = M.some(e => null != e.pillText),
+      [V, G] = i.useState(null),
+      F = i.useRef(new l.qA);
     return (0, r.jsxs)(r.Fragment, {
-      children: [(null == L ? void 0 : null === (t = L.tenureRewardCollectible) || void 0 === t ? void 0 : t.name) === f.u.TENURE_REWARD_COLLECTIBLE && (0, r.jsx)(l.O_, {
-        ref: H,
-        className: _.confettiCanvas,
-        environment: z.current
+      children: [(null == k ? void 0 : null === (t = k.tenureRewardCollectible) || void 0 === t ? void 0 : t.name) === h.u.TENURE_REWARD_COLLECTIBLE && (0, r.jsx)(l.O_, {
+        ref: G,
+        className: x.confettiCanvas,
+        environment: F.current
       }), (0, r.jsxs)("div", {
-        ref: I,
-        className: a()(_.section, {
-          [_.centerAlignSection]: !C,
-          [_.leftAlignSection]: C
+        ref: T,
+        className: a()(x.section, {
+          [x.centerAlignSection]: !j,
+          [x.leftAlignSection]: j
         }, n),
-        children: [(0, r.jsx)(E, {
-          showAllPerksButton: O,
-          leftAlignHeaders: C,
-          title: W.title,
-          headerClassname: v
+        children: [(0, r.jsx)(_, {
+          showAllPerksButton: C,
+          leftAlignHeaders: j,
+          title: w.title,
+          headerClassname: O
         }), (0, r.jsx)(o.Text, {
           variant: "text-lg/normal",
           color: "header-primary",
-          className: a()(_.subtitle, {
-            [_.subtitle]: null == O || C,
-            [_.subtitleWithButton]: null != O && !C,
-            [_.fullWidth]: R || C,
-            [_.moreSubtitleMargin]: G,
-            [_.leftAlignSubtitle]: C,
-            [_.centerAlignSubtitle]: !C
+          className: a()(x.subtitle, {
+            [x.subtitle]: null == C || j,
+            [x.subtitleWithButton]: null != C && !j,
+            [x.fullWidth]: A || j,
+            [x.moreSubtitleMargin]: U,
+            [x.leftAlignSubtitle]: j,
+            [x.centerAlignSubtitle]: !j
           }),
-          children: W.subtitle
-        }), !C && null != O && (0, r.jsx)("div", {
-          className: _.showAllPerksButtonCenter,
-          children: O
+          children: w.subtitle
+        }), !j && null != C && (0, r.jsx)("div", {
+          className: x.showAllPerksButtonCenter,
+          children: C
         }), (0, r.jsx)("div", {
           className: a()({
-            [_.cardContainer]: S,
-            [_.cardContainerNarrowWidth]: !S
+            [x.cardContainer]: v,
+            [x.cardContainerNarrowWidth]: !v
           }),
-          children: V.map((e, t) => {
+          children: M.map((e, t) => {
             var n, i;
-            return (0, r.jsx)(x.Z, (n = function(e) {
+            return (0, r.jsx)(N.Z, (n = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   r = Object.keys(n);
@@ -147,9 +145,9 @@ let E = e => {
               }
               return e
             }({
-              confettiCanvas: e.name === f.u.TENURE_REWARD_COLLECTIBLE ? F : void 0
+              confettiCanvas: e.name === h.u.TENURE_REWARD_COLLECTIBLE ? V : void 0
             }, e), i = i = {
-              forceShadow: j
+              forceShadow: E
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

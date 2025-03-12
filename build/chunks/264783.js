@@ -28,8 +28,11 @@ function s() {
       return t;
     case i.Pi.COZY:
       return "cozy";
+    case i.Pi.DEFAULT:
+      return "default";
     case i.Pi.COMPACT:
+      return "compact";
     default:
-      return "compact"
+      return "default"
   }
 }

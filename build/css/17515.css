@@ -1,6 +1,6 @@
 /**
   Module ID: 17515
-  Original File Name: 5b029e0597e77861
+  Original File Name: 449ffc60fc4e3fda
 **/
 @value minColumnWidth: 460px;
 
@@ -2844,12 +2844,12 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-right: 4px
 }
 
-.visual-refresh .guildIconContainer__85d16 {
-    margin-right: var(--space-12)
-}
-
 .guildIconV2Container__85d16 {
     margin-right: 8px
+}
+
+.visual-refresh .guildIconContainer__85d16,.visual-refresh .guildIconV2Container__85d16 {
+    margin-right: var(--space-xs)
 }
 
 .guildBadge__85d16 .boostedGuildIconGem__85d16 {
@@ -2878,11 +2878,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .boostedGuildTierIconBackgroundWithVisibleBanner__85d16 {
     color: var(--interactive-active)
-}
-
-.visual-refresh .guildBadgeIcon__85d16 {
-    width: 20px!important;
-    height: 20px!important
 }
 
 .container__86ab2 {

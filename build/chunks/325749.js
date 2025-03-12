@@ -6,11 +6,11 @@ var o = t(200651),
   r = t(192379),
   a = t(120356),
   i = t.n(a),
-  l = t(442837),
-  c = t(481060),
-  _ = t(13245),
+  c = t(442837),
+  l = t(481060),
+  s = t(13245),
   u = t(753972),
-  s = t(812206),
+  _ = t(812206),
   d = t(111028),
   p = t(726721),
   f = t(610394),
@@ -30,8 +30,8 @@ var o = t(200651),
   j = t(51144),
   k = t(998502),
   T = t(228488),
-  Z = t(145597),
-  B = t(214629),
+  B = t(145597),
+  Z = t(214629),
   S = t(317381),
   A = t(884338),
   W = t(473179),
@@ -45,20 +45,20 @@ function R(e) {
   let {
     applicationId: n,
     channelId: t
-  } = e, a = (0, l.e7)([s.Z], () => s.Z.getApplication(n)), R = (0, l.e7)([S.ZP], () => S.ZP.getSelfEmbeddedActivities().get(n)), M = (0, l.e7)([P.Z], () => P.Z.getChannel(t)), G = h.Sb.useSetting(), Y = (0, l.Wu)([N.ZP], () => {
+  } = e, a = (0, c.e7)([_.Z], () => _.Z.getApplication(n)), R = (0, c.e7)([S.ZP], () => S.ZP.getSelfEmbeddedActivities().get(n)), M = (0, c.e7)([P.Z], () => P.Z.getChannel(t)), Y = h.Sb.useSetting(), G = (0, c.Wu)([N.ZP], () => {
     var e;
     return null == M || null == R ? [] : Array.from(null !== (e = R.userIds) && void 0 !== e ? e : []).map(e => N.ZP.getMember(M.guild_id, e))
   }, [R, M]), H = r.useMemo(() => {
     let e = new Map;
-    return Y.forEach(n => {
+    return G.forEach(n => {
       null != n && void 0 !== n && e.set(n.userId, n)
     }), e
-  }, [Y]), V = r.useCallback((e, n) => {
+  }, [G]), V = r.useCallback((e, n) => {
     var t;
     if (null == e) return null;
     let r = H.get(e.id),
       a = null !== (t = null == r ? void 0 : r.nick) && void 0 !== t ? t : j.ZP.getName(e);
-    return (0, o.jsx)(c.DY3, {
+    return (0, o.jsx)(l.DY3, {
       text: a,
       position: "bottom",
       children: (0, o.jsx)("img", {
@@ -67,19 +67,19 @@ function R(e) {
         className: L.avatar
       }, e.id)
     }, e.id)
-  }, [H]), K = null == R ? void 0 : R.userIds, F = (0, l.Wu)([O.default], () => Array.from(null != K ? K : []).map(e => O.default.getUser(e)).filter(e => null != e), [K]), J = p.Z.useExperiment({
+  }, [H]), F = null == R ? void 0 : R.userIds, K = (0, c.Wu)([O.default], () => Array.from(null != F ? F : []).map(e => O.default.getUser(e)).filter(e => null != e), [F]), J = p.Z.useExperiment({
     location: "activity_popout_overflow_menu"
   }, {
     autoTrackExposure: !0
   }).enabled, X = r.useCallback(() => {
-    let e = (0, Z.getPID)();
-    _.Z.setInputLocked(!f.ZP.isInputLocked(e), e)
-  }, []), q = (0, B.PR)(), {
+    let e = (0, B.getPID)();
+    s.Z.setInputLocked(!f.ZP.isInputLocked(e), e)
+  }, []), q = (0, Z.PR)(), {
     canStayOnTop: $,
     popoutWindowAlwaysOnTop: Q,
     handleStayOnTop: ee
   } = function() {
-    let e = (0, l.e7)([b.Z], () => b.Z.getIsAlwaysOnTop(z.KJ3.ACTIVITY_POPOUT)),
+    let e = (0, c.e7)([b.Z], () => b.Z.getIsAlwaysOnTop(z.KJ3.ACTIVITY_POPOUT)),
       n = r.useCallback(e => {
         m.hY(z.KJ3.ACTIVITY_POPOUT, e)
       }, []);
@@ -99,17 +99,17 @@ function R(e) {
       rootNode: t
     } = (0, E.Z)(), [o, a] = r.useState(!1), i = r.useCallback(() => {
       null != t && o && (a(!1), (0, T.Pr)(t, n))
-    }, [t, n, o]), l = r.useCallback(() => {
+    }, [t, n, o]), c = r.useCallback(() => {
       null != t && (o ? i() : (a(!0), (0, T.Dj)(t)))
-    }, [t, o, i]), c = r.useCallback(() => {
-      null != t && !(0, T.rB)(t, n) && o && l()
-    }, [t, n, o, l]);
-    return r.useEffect(() => (null == n || n.addEventListener(T.NO, c), () => {
-      null == n || n.removeEventListener(T.NO, c)
-    }), [n, c]), {
+    }, [t, o, i]), l = r.useCallback(() => {
+      null != t && !(0, T.rB)(t, n) && o && c()
+    }, [t, n, o, c]);
+    return r.useEffect(() => (null == n || n.addEventListener(T.NO, l), () => {
+      null == n || n.removeEventListener(T.NO, l)
+    }), [n, l]), {
       rootNode: t,
       popoutWindow: e,
-      toggleFullScreen: l
+      toggleFullScreen: c
     }
   }();
   if (null == a || null == R) return null;
@@ -118,17 +118,17 @@ function R(e) {
     size: 24,
     className: L.appIcon
   });
-  return G && (er = (0, o.jsx)(c.DY3, {
+  return Y && (er = (0, o.jsx)(l.DY3, {
     text: R.compositeInstanceId,
     position: "bottom",
     children: er
-  })), (0, o.jsx)(c.f6W, {
+  })), (0, o.jsx)(l.f6W, {
     theme: z.BRd.DARK,
     children: e => (0, o.jsxs)("div", {
       className: i()(L.container, e),
       children: [(0, o.jsxs)("div", {
         className: i()(L.headerSection, L.headerSectionLeft),
-        children: [er, (0, o.jsx)(c.Text, {
+        children: [er, (0, o.jsx)(l.Text, {
           variant: "text-md/normal",
           color: "header-primary",
           className: L.applicationName,
@@ -137,14 +137,14 @@ function R(e) {
           })
         }), (0, o.jsx)("div", {
           className: L.dotSpacer,
-          children: (0, o.jsx)(c.Text, {
+          children: (0, o.jsx)(l.Text, {
             variant: "text-md/normal",
             color: "text-muted",
             children: "."
           })
         }), (0, o.jsx)(A.Z, {
           renderIcon: !1,
-          users: F,
+          users: K,
           size: D,
           max: 6,
           renderUser: e => V(e, M)
@@ -160,10 +160,14 @@ function R(e) {
             applicationId: n,
             channel: M,
             shouldPrioritizeGroupPlusIcon: !0,
-            embeddedActivity: R
+            embeddedActivity: R,
+            iconClassName: L.inviteButtonIcon,
+            look: l.zxk.Looks.FILLED,
+            size: l.zxk.Sizes.TINY,
+            buttonText: U.NW.string(U.t["6F9ivr"])
           }), q ? (0, o.jsx)(C.Z, {
             onClick: X,
-            iconComponent: c.epB,
+            iconComponent: l.epB,
             label: U.NW.string(U.t.mseZsL)
           }) : null, $ ? (0, o.jsx)(I.Z, {
             popoutWindowAlwaysOnTop: Q,
@@ -172,7 +176,7 @@ function R(e) {
             node: en,
             guestWindow: et,
             onClick: eo
-          }), J && (0, o.jsx)(c.yRy, {
+          }), J && (0, o.jsx)(l.yRy, {
             position: "bottom",
             renderPopout: e => {
               let {

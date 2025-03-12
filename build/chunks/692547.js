@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => w
 }), n(47120), n(757143), n(301563);
 var r = n(688619),
   i = n.n(r),
@@ -30,14 +30,15 @@ let {
 } = h.V, {
   Modules: O
 } = f.V, {
-  Layout: I
-} = d.V, S = l()(E, e => i()(e)), T = {
+  Layout: I,
+  Space: S
+} = d.VV, T = l()(E, e => i()(e)), N = {
   themes: m,
   modules: O,
   colors: l()(g, (e, t) => {
     let n = t;
     return {
-      css: R(n),
+      css: P(n),
       resolve(t) {
         let r = e[t.theme],
           i = r.raw,
@@ -48,27 +49,27 @@ let {
             let r = null === (s = v[n]) || void 0 === s ? void 0 : null === (a = s[e]) || void 0 === a ? void 0 : a[t.theme];
             null != r && (i = null !== (l = r.raw) && void 0 !== l ? l : i, o = null !== (c = r.opacity) && void 0 !== c ? c : o)
           }
-        if (1 === o) return T.unsafe_rawColors[i].resolve(t);
+        if (1 === o) return N.unsafe_rawColors[i].resolve(t);
         {
-          let e = S[i];
-          return 0 !== e.alpha() && 1 !== o && (e = e.alpha(o)), N(e, t.saturation)
+          let e = T[i];
+          return 0 !== e.alpha() && 1 !== o && (e = e.alpha(o)), A(e, t.saturation)
         }
       }
     }
   }),
   unsafe_rawColors: l()(E, (e, t) => {
     let n = t,
-      r = S[n];
+      r = T[n];
     return {
-      css: R(n),
+      css: P(n),
       resolve(e) {
         var t;
-        return N(r, null !== (t = null == e ? void 0 : e.saturation) && void 0 !== t ? t : 1)
+        return A(r, null !== (t = null == e ? void 0 : e.saturation) && void 0 !== t ? t : 1)
       }
     }
   }),
   shadows: l()(b, (e, t) => ({
-    css: R(t),
+    css: P(t),
     resolve: t => ({
       boxShadow: e[t.theme].boxShadow,
       filter: e[t.theme].filter,
@@ -77,46 +78,55 @@ let {
   })),
   radii: _.w,
   spacing: l()(y, e => "".concat(e, "px")),
-  layout: l()(I, e => "number" == typeof e ? "".concat(e, "px") : e)
+  layout: l()(I, e => "number" == typeof e ? "".concat(e, "px") : e),
+  space: l()(S, e => ({
+    css: e.css,
+    resolve(t) {
+      let {
+        density: n
+      } = t;
+      return e.resolve(n)
+    }
+  }))
 };
 
-function N(e, t) {
+function A(e, t) {
   return {
     spring() {
       let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-      return A(e, t, n).hex("rgba")
+      return C(e, t, n).hex("rgba")
     },
     hsl() {
       let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-      return A(e, t, n).css("hsl")
+      return C(e, t, n).css("hsl")
     },
     hex() {
       let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-      return A(e, t, n).hex()
+      return C(e, t, n).hex()
     },
     int() {
       let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-        r = A(e, t, n),
+        r = C(e, t, n),
         i = r.num();
       return 1 !== r.alpha() ? i << 8 | Math.round(255 * r.alpha()) : i
     }
   }
 }
 
-function A(e, t, n) {
+function C(e, t, n) {
   var r;
   let i = a()(null !== (r = n.opacity) && void 0 !== r ? r : 1, 0, 1),
     o = e;
   return 1 !== t && (o = o.set("hsl.s", o.get("hsl.s") * t)), 1 !== i && (o = o.alpha(o.alpha() * i)), o
 }
 
-function C(e) {
+function R(e) {
   return e.toLowerCase().replace(/_/g, "-")
 }
 
-function R(e, t) {
-  let n = null != t ? C(t) : null,
-    r = C(e);
+function P(e, t) {
+  let n = null != t ? R(t) : null,
+    r = R(e);
   return "var(--".concat([n, r].filter(Boolean).join("-"), ")")
 }
-let P = T
+let w = N

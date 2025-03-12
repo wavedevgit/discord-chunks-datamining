@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => T
 }), n(47120);
 var r = n(200651),
   l = n(192379),
@@ -9,14 +9,14 @@ var r = n(200651),
   s = n.n(a),
   o = n(685816),
   i = n(442837),
-  c = n(481060),
-  d = n(782568),
+  d = n(481060),
+  c = n(782568),
   u = n(607070),
   g = n(70097),
   f = n(594174),
   h = n(451478),
-  p = n(381585),
-  m = n(597688),
+  m = n(381585),
+  p = n(597688),
   b = n(884697),
   C = n(937510),
   _ = n(823941),
@@ -28,7 +28,7 @@ var r = n(200651),
   y = n(215023),
   O = n(388032),
   E = n(39532);
-let T = {
+let I = {
     rankedSkuIds: [],
     name: "",
     unpublishedAt: void 0,
@@ -42,7 +42,7 @@ let T = {
   },
   B = e => {
     var t, n, r, l;
-    return null == e ? T : {
+    return null == e ? I : {
       rankedSkuIds: null !== (t = e.heroRanking) && void 0 !== t ? t : [],
       name: e.name,
       unpublishedAt: e.unpublishedAt,
@@ -60,14 +60,14 @@ let T = {
       categoryStoreListingId: e.storeListingId
     }
   },
-  I = e => {
+  T = e => {
     let {
       isLoading: t,
       handleTransition: n,
       category: a,
       heroBlock: o,
       tab: b
-    } = e, _ = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), I = (0, i.e7)([h.Z], () => h.Z.isFocused()), w = (0, i.e7)([f.default], () => f.default.getCurrentUser()), L = (0, S.u)(), P = l.useMemo(() => null != o ? o : B(a), [o, a]), {
+    } = e, _ = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), T = (0, i.e7)([h.Z], () => h.Z.isFocused()), w = (0, i.e7)([f.default], () => f.default.getCurrentUser()), L = (0, S.u)(), P = l.useMemo(() => null != o ? o : B(a), [o, a]), {
       bannerOverride: N,
       heroLogo: Z,
       heroBannerStatic: A,
@@ -75,7 +75,7 @@ let T = {
     } = (0, j.hr)(P), W = null == N ? void 0 : N.heroBanner, R = l.useMemo(() => L(P.rankedSkuIds), [t, L, P.rankedSkuIds]), F = (0, C.l)(R).slice(0, 4), M = b === y.AW.ORBS ? O.NW.string(O.t.qQq91t) : O.NW.formatToPlainString(O.t.wvKYCg, {
       category_name: P.name
     }), V = (0, k.n)(null == o ? void 0 : o.categorySkuId);
-    return null != w && (t || P !== T) ? (0, r.jsxs)("div", {
+    return null != w && (t || P !== I) ? (0, r.jsxs)("div", {
       className: s()(E.heroBlock, {
         [E.responsiveHero]: V.responsive
       }),
@@ -84,7 +84,7 @@ let T = {
         style: null != V.backgroundStyle ? {
           background: V.backgroundStyle
         } : void 0,
-        children: [null != H && !_ && I ? (0, r.jsx)(g.Z, {
+        children: [null != H && !_ && T ? (0, r.jsx)(g.Z, {
           className: E.bannerVideoBackground,
           src: H,
           autoPlay: !0,
@@ -117,7 +117,7 @@ let T = {
             className: E.heroHeaderBadgeLogoSummaryContainer
           }) : (0, r.jsxs)("div", {
             className: E.heroHeaderBadgeLogoSummaryContainer,
-            children: [null != P.unpublishedAt && (0, r.jsx)(c.IGR, {
+            children: [null != P.unpublishedAt && (0, r.jsx)(d.IGR, {
               disableColor: !0,
               text: O.NW.string(O.t["h/uBCQ"]),
               className: E.limitedTimeBadge
@@ -127,12 +127,12 @@ let T = {
                 className: E.heroHeaderLogo,
                 src: Z,
                 alt: P.name
-              }), null != P.title && (0, r.jsx)(c.X6q, {
+              }), null != P.title && (0, r.jsx)(d.X6q, {
                 variant: "heading-xxl/bold",
                 color: "always-white",
                 className: E.title,
                 children: P.title
-              }), (0, r.jsx)(c.Text, {
+              }), (0, r.jsx)(d.Text, {
                 variant: b === y.AW.ORBS ? "text-lg/medium" : "text-md/normal",
                 className: b === y.AW.ORBS ? E.orbsSubHeaderText : (null == N ? void 0 : N.showDarkBannerText) ? E.subHeaderTextDark : E.subHeaderText,
                 children: P.summary
@@ -140,11 +140,11 @@ let T = {
             })]
           }), !t && (0, r.jsx)("div", {
             className: E.heroHeaderButtonContainer,
-            children: (0, r.jsx)(c.zxk, {
+            children: (0, r.jsx)(d.zxk, {
               className: E.heroHeaderButton,
-              color: c.Ttl.WHITE,
+              color: d.Ttl.WHITE,
               onClick: () => {
-                b === y.AW.ORBS ? (0, d.Z)("https://support.discord.com/") : n("shop latest category hero", P.categorySkuId)
+                b === y.AW.ORBS ? (0, c.Z)("https://support.discord.com/") : n("shop latest category hero", P.categorySkuId)
               },
               children: M
             })
@@ -155,8 +155,8 @@ let T = {
             children: [void 0, void 0, void 0, void 0].map((e, t) => (0, r.jsx)(v.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {
             children: F.map((e, t) => {
-              let n = m.Z.getCategoryForProduct(e.skuId);
-              return null == e || null == n ? null : (0, r.jsx)(p.k0, {
+              let n = p.Z.getCategoryForProduct(e.skuId);
+              return null == e || null == n ? null : (0, r.jsx)(m.k0, {
                 newValue: {
                   tilePosition: t,
                   pageSection: "top 4",

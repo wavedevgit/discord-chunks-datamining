@@ -1,11 +1,11 @@
 /** Chunk was on 81288 **/
 n.d(t, {
   Tq: () => r,
-  cy: () => i,
+  cy: () => o,
   i3: () => a
 });
-var o = n(818083);
-let i = (0, o.B)({
+var i = n(818083);
+let o = (0, i.B)({
   kind: "user",
   id: "2025-01_recent_avatars",
   label: "Recent Avatars",
@@ -26,15 +26,15 @@ function r(e) {
     location: t,
     autoTrackExposure: n = !0
   } = e, {
-    enabled: o
-  } = i.useExperiment({
+    enabled: i
+  } = o.useExperiment({
     location: t
   }, {
     autoTrackExposure: n
   });
-  return o
+  return i
 }
-let a = (0, o.B)({
+let a = (0, i.B)({
   kind: "user",
   id: "2025-02_improved_image_upload_flow",
   label: "Improved Image Upload Flow",

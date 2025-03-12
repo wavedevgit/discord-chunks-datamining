@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 334f372b6b742ea4
+  Original File Name: 01fbf8ffac36353d
 **/
 .container__46ab5 {
     text-align: center;
@@ -1986,10 +1986,7 @@
 }
 
 .visual-refresh .dropdownButton__2637a {
-    color: var(--icon-tertiary);
-    width: 20px;
-    height: 20px;
-    padding: 6px
+    color: var(--icon-tertiary)
 }
 
 .enable-forced-colors .container__2637a {
@@ -4826,10 +4823,10 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
     background: var(--bg-overlay-floating,var(--background-base-low));
     border-radius: var(--radius-sm);
     border: 1px solid var(--border-faint);
-    left: var(--spacing-8);
-    bottom: var(--spacing-8);
+    left: var(--space-xs);
+    bottom: var(--space-xs);
     justify-content: space-between;
-    width: calc(100% - var(--spacing-16));
+    width: calc(100% - var(--space-xs)*2);
     box-sizing: border-box
 }
 

@@ -17,8 +17,8 @@ var n = r(200651),
   g = r(5192),
   b = r(810568),
   _ = r(388032),
-  O = r(455692),
-  h = r(869429);
+  h = r(455692),
+  O = r(869429);
 let y = e => {
   let {
     entry: t,
@@ -91,7 +91,7 @@ let y = e => {
         }
         return e
       }({}, e), a = a = {
-        className: O.profileEntryCard,
+        className: h.profileEntryCard,
         children: (0, n.jsx)(s.tEY, {
           offset: {
             top: 4,
@@ -101,15 +101,15 @@ let y = e => {
           },
           children: (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)("img", {
-              className: O.avatar,
+              className: h.avatar,
               src: P,
               alt: _.NW.formatToPlainString(_.t.IzVXxc, {
                 userName: x
               })
             }), (0, n.jsx)("div", {
-              className: O.playerInfo,
+              className: h.playerInfo,
               children: (0, n.jsxs)("div", {
-                className: i()(h.column, h.gapXs),
+                className: i()(O.column, O.gapXs),
                 children: [(0, n.jsx)(s.Text, {
                   variant: "text-md/medium",
                   color: "text-primary",
@@ -123,7 +123,7 @@ let y = e => {
                 })]
               })
             }), (0, n.jsx)("div", {
-              className: O.reactions,
+              className: h.reactions,
               children: (0, n.jsx)(s.n$P, {
                 size: "sm"
               })

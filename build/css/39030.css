@@ -1,6 +1,6 @@
 /**
   Module ID: 39030
-  Original File Name: c923708e2badd27d
+  Original File Name: 2bf9694cf2f4c880
 **/
 .container__1ce5d {
     position: relative
@@ -100,6 +100,10 @@
 
 .message__5126c {
     padding-right: 48px!important
+}
+
+.visual-refresh .message__5126c {
+    padding-right: var(--space-xl)!important
 }
 
 .visual-refresh .message__5126c {

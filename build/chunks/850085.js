@@ -13,8 +13,8 @@ var i = n(200651),
   d = n(488499),
   h = n(222062),
   g = n(530329),
-  _ = n(626135),
-  m = n(197712),
+  m = n(626135),
+  _ = n(197712),
   p = n(511004),
   f = n(486324),
   b = n(981631),
@@ -43,7 +43,7 @@ let C = e => {
   }), [P, k] = r.useState(!1), [M, D] = r.useState(1), [S, L] = r.useState({
     x: 0,
     y: 0
-  }), [Z, G] = r.useState(null), [U, W] = r.useState(!1), {
+  }), [G, Z] = r.useState(null), [U, W] = r.useState(!1), {
     analyticsLocations: V
   } = (0, c.ZP)(s.Z.IMAGE_CROPPING_MODAL), z = (0, u.Q3)("ImageCroppingNModal"), H = r.useRef({
     x: 0,
@@ -52,7 +52,7 @@ let C = e => {
   r.useEffect(() => {
     (0, p.Z)()
   }, []), r.useEffect(() => {
-    Y && y && _.default.track(b.rMx.OPEN_MODAL, {
+    Y && y && m.default.track(b.rMx.OPEN_MODAL, {
       type: b.jXE.CROP_GIF_MODAL,
       location: {
         page: v
@@ -87,9 +87,9 @@ let C = e => {
       }
     },
     q = r.useCallback((e, t, n) => {
-      H.current = (0, m.U$)(e, t, n), null != F.current && (F.current.style.transform = "translate3d(".concat(H.current.x, "px, ").concat(H.current.y, "px, 0)"))
+      H.current = (0, _.U$)(e, t, n), null != F.current && (F.current.style.transform = "translate3d(".concat(H.current.x, "px, ").concat(H.current.y, "px, 0)"))
     }, [F]),
-    $ = r.useCallback(() => {
+    Q = r.useCallback(() => {
       if (null == F.current || M > 1) return;
       let {
         width: e,
@@ -97,20 +97,20 @@ let C = e => {
       } = F.current.getBoundingClientRect(), {
         width: n,
         height: i
-      } = (0, m.Es)(T, e, t, z), r = (0, m.AK)(T, n, i, t, z);
-      G({
+      } = (0, _.Es)(T, e, t, z), r = (0, _.AK)(T, n, i, t, z);
+      Z({
         width: n,
         height: i
-      }), O(r), B((0, m.kH)(n, i, r))
+      }), O(r), B((0, _.kH)(n, i, r))
     }, [z, T, M]),
-    J = r.useCallback(e => {
+    $ = r.useCallback(e => {
       let {
         x: t,
         y: n
       } = H.current;
       if (P && (e.clientX !== t || e.clientY !== n)) q(e.clientX - S.x, e.clientY - S.y, j)
     }, [j, P, S, q]),
-    Q = () => {
+    J = () => {
       k(!1)
     },
     ee = () => {
@@ -127,7 +127,7 @@ let C = e => {
         let {
           result: r,
           cancelFn: o
-        } = await (0, m.$p)({
+        } = await (0, _.$p)({
           file: t,
           image: n,
           cropDimensions: I,
@@ -149,19 +149,19 @@ let C = e => {
         file: t
       }), W(!1), R()
     };
-  r.useEffect(() => (window.addEventListener("mouseup", Q), window.addEventListener("resize", $), () => {
-    window.removeEventListener("mouseup", Q), window.removeEventListener("resize", $)
-  }), [$]), r.useEffect(() => () => {
+  r.useEffect(() => (window.addEventListener("mouseup", J), window.addEventListener("resize", Q), () => {
+    window.removeEventListener("mouseup", J), window.removeEventListener("resize", Q)
+  }), [Q]), r.useEffect(() => () => {
     null != X.current && X.current()
   }, []), r.useEffect(() => {
-    if (P) return window.addEventListener("mousemove", J), () => window.removeEventListener("mousemove", J)
-  }, [J, P]);
+    if (P) return window.addEventListener("mousemove", $), () => window.removeEventListener("mousemove", $)
+  }, [$, P]);
   let en = T === f.pC.AVATAR || T === f.pC.BANNER,
     ei = (0, h.M)(!en);
   return (0, i.jsx)(c.Gt, {
     value: V,
     children: (0, i.jsxs)(l.Y0X, {
-      onAnimationEnd: $,
+      onAnimationEnd: Q,
       transitionState: C,
       size: l.CgR.MEDIUM,
       children: [y && !ei && (0, i.jsx)(d.Z, {
@@ -200,16 +200,16 @@ let C = e => {
               }
               return e
             }({
-              opacity: +(null != Z),
+              opacity: +(null != G),
               transform: "translate3d(".concat(H.current.x, "px, ").concat(H.current.y, "px, 0px)")
             }, (() => {
-              if (null == Z) return {};
-              let e = Z.width / Z.height,
-                t = ee() && e > f.MY ? I.height / Z.height : 1;
+              if (null == G) return {};
+              let e = G.width / G.height,
+                t = ee() && e > f.MY ? I.height / G.height : 1;
               return {
-                width: Z.width * M * t,
-                minWidth: Z.width * M * t,
-                height: Z.height * M * t
+                width: G.width * M * t,
+                minWidth: G.width * M * t,
+                height: G.height * M * t
               }
             })()),
             className: U ? x.imageDisabled : x.imageEnabled,
@@ -226,7 +226,7 @@ let C = e => {
           }), (0, i.jsx)("div", {
             className: T === f.pC.AVATAR ? x.overlayAvatar : x.overlayBanner,
             style: {
-              opacity: +(null != Z),
+              opacity: +(null != G),
               width: I.width,
               height: I.height
             }
@@ -243,11 +243,11 @@ let C = e => {
             maxValue: 2,
             keyboardStep: .025,
             asValueChanges: e => {
-              if (null == Z) return;
+              if (null == G) return;
               let {
                 width: t,
                 height: n
-              } = Z, i = (0, m.kH)(t * e, n * e, I), {
+              } = G, i = (0, _.kH)(t * e, n * e, I), {
                 x: r,
                 y: a
               } = H.current;

@@ -10,8 +10,8 @@ n.d(t, {
 var i = n(570140),
   r = n(63568),
   l = n(434404),
-  o = n(703656),
-  s = n(430824),
+  s = n(703656),
+  o = n(430824),
   a = n(241559),
   u = n(327999),
   d = n(981631),
@@ -64,8 +64,8 @@ async function g(e, t) {
 
 function v(e) {
   let t = (0, a.lv)(e),
-    n = s.Z.getGuild(e);
-  return !!t && null != n && ((0, r.K2)(e, "Guild Sidebar") && n.hasFeature(d.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) || n.hasFeature(d.oNc.COMMUNITY) || n.hasFeature(d.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) ? (0, o.uL)(d.Z5c.CHANNEL(e, c.oC.MEMBER_SAFETY)) : l.Z.open(n.id, d.pNK.MEMBERS), !0)
+    n = o.Z.getGuild(e);
+  return !!t && null != n && ((0, r.K2)(e, "Guild Sidebar") && n.hasFeature(d.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) || n.hasFeature(d.oNc.COMMUNITY) || n.hasFeature(d.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) ? (0, s.uL)(d.Z5c.CHANNEL(e, c.oC.MEMBER_SAFETY)) : l.Z.open(n.id, d.pNK.MEMBERS), !0)
 }
 async function C(e, t) {
   let n = await (0, u._2)(e, t);

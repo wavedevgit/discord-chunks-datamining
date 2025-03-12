@@ -1,6 +1,6 @@
 /**
   Module ID: 27278
-  Original File Name: 78c79bead5eada52
+  Original File Name: 5a0e9b952ddce692
 **/
 .buttonContainer__7e329 {
     display: flex;
@@ -1522,6 +1522,11 @@
     width: var(--spacing-16);
     width: var(--custom-activity-popout-header-fade-width);
     height: var(--custom-activity-popout-header-height)
+}
+
+.inviteButtonIcon_c8f358 {
+    width: 16px;
+    height: 16px
 }
 
 .container__0b406 {

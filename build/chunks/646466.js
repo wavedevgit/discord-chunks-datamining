@@ -36,28 +36,41 @@ let u = () => (0, i.ZDy)(async () => {
     modalKey: l.c,
     onCloseRequest: () => (0, i.Mr3)(l.c)
   }),
-  m = () => {
+  m = e => {
     let {
-      assets: e,
-      deleteAsset: t
-    } = (0, o.N)(), n = a.useMemo(() => Object.values(e).map(e => ({
+      handleClearIgnoredFiles: t
+    } = e, {
+      assets: n,
+      deleteAsset: l,
+      clearAssets: s
+    } = (0, o.N)(), c = a.useMemo(() => Object.values(n).map(e => ({
       label: e.name,
       value: e.type
-    })), [e]), l = a.useCallback(e => t(e), [t]);
-    return 0 === n.length ? null : (0, r.jsxs)(r.Fragment, {
+    })), [n]), u = a.useCallback(e => l(e), [l]), m = a.useCallback(() => {
+      s(), t()
+    }, [s, t]);
+    return 0 === c.length ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(i.LZC, {
         size: 16
-      }), (0, r.jsx)(i.X6q, {
-        variant: "heading-lg/bold",
-        children: "Uploaded Assets"
+      }), (0, r.jsxs)("div", {
+        className: d.headingContainer,
+        children: [(0, r.jsx)(i.X6q, {
+          variant: "heading-lg/bold",
+          children: "Uploaded Assets"
+        }), (0, r.jsx)(i.zxk, {
+          look: i.zxk.Looks.FILLED,
+          size: i.zxk.Sizes.TINY,
+          onClick: m,
+          children: "Clear"
+        })]
       }), (0, r.jsx)("ul", {
-        children: n.map(e => (0, r.jsxs)("li", {
+        children: c.map(e => (0, r.jsxs)("li", {
           className: d.uploadedFileListItem,
           children: [(0, r.jsx)(i.zxk, {
             innerClassName: d.removeFileButtonInnerContents,
             look: i.zxk.Looks.BLANK,
             size: i.zxk.Sizes.ICON,
-            onClick: () => l(e.value),
+            onClick: () => u(e.value),
             children: (0, r.jsx)(i.Dio, {
               color: i.TVs.colors.TEXT_DANGER
             })
@@ -71,14 +84,23 @@ let u = () => (0, i.ZDy)(async () => {
   },
   h = e => {
     let {
-      ignoredFiles: t
+      ignoredFiles: t,
+      handleClearIgnoredFiles: n
     } = e;
     return 0 === t.length ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(i.LZC, {
         size: 16
-      }), (0, r.jsx)(i.X6q, {
-        variant: "heading-lg/bold",
-        children: "Ignored Files"
+      }), (0, r.jsxs)("div", {
+        className: d.headingContainer,
+        children: [(0, r.jsx)(i.X6q, {
+          variant: "heading-lg/bold",
+          children: "Ignored Files"
+        }), (0, r.jsx)(i.zxk, {
+          look: i.zxk.Looks.FILLED,
+          size: i.zxk.Sizes.TINY,
+          onClick: n,
+          children: "Clear"
+        })]
       }), (0, r.jsx)("ul", {
         children: t.map((e, t) => (0, r.jsx)("li", {
           className: d.ignoredFileListItem,
@@ -103,8 +125,8 @@ let u = () => (0, i.ZDy)(async () => {
       }
       n(a, e)
     }, [n]), f = a.useCallback(async e => {
-      (await (0, c.RF)(e)).forEach(e => (0, c.ZK)(e, x, c.Eo)), p(!0)
-    }, [x, p]);
+      t([]), (await (0, c.RF)(e)).forEach(e => (0, c.ZK)(e, x, c.Eo)), p(!0)
+    }, [x, p]), b = a.useCallback(() => t([]), []);
     return (0, r.jsxs)("div", {
       className: d.container,
       children: [(0, r.jsx)(s.L, {
@@ -131,8 +153,11 @@ let u = () => (0, i.ZDy)(async () => {
           variant: "text-md/normal",
           children: "Enable Preview"
         })]
-      }), (0, r.jsx)(m, {}), (0, r.jsx)(h, {
-        ignoredFiles: e
+      }), (0, r.jsx)(m, {
+        handleClearIgnoredFiles: b
+      }), (0, r.jsx)(h, {
+        ignoredFiles: e,
+        handleClearIgnoredFiles: b
       })]
     })
   }

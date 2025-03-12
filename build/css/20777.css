@@ -1,6 +1,6 @@
 /**
   Module ID: 20777
-  Original File Name: 1401a35a6f837659
+  Original File Name: 6c087dc5036d74c4
 **/
 .icon__2894c {
     display: block;
@@ -294,6 +294,10 @@
     min-height: 32px
 }
 
+.visual-refresh .basicChannelRowLink__2ea32 {
+    min-height: 24px
+}
+
 .linkTop__2ea32 {
     justify-content: center
 }
@@ -314,7 +318,7 @@
 
 .name__2ea32 {
     font-size: 16px;
-    line-height: 20px;
+    line-height: var(--channels-name-line-height);
     font-weight: 500;
     flex: 1 1 auto
 }
@@ -425,6 +429,10 @@
     }
 }
 
+:where(.visual-refresh) .wrapper__2ea32 {
+    margin-left: var(--space-xs)
+}
+
 :where(.visual-refresh) .link__2ea32 {
     padding: var(--space-xxs) var(--space-xs);
     border-radius: var(--radius-sm)
@@ -465,8 +473,7 @@
 }
 
 :where(.visual-refresh) .name__2ea32 {
-    color: var(--text-tertiary);
-    line-height: 24px
+    color: var(--text-tertiary)
 }
 
 :where(.visual-refresh) .icon__2ea32 {
@@ -674,12 +681,12 @@
     margin-right: 4px
 }
 
-.visual-refresh .guildIconContainer__85d16 {
-    margin-right: var(--space-12)
-}
-
 .guildIconV2Container__85d16 {
     margin-right: 8px
+}
+
+.visual-refresh .guildIconContainer__85d16,.visual-refresh .guildIconV2Container__85d16 {
+    margin-right: var(--space-xs)
 }
 
 .guildBadge__85d16 .boostedGuildIconGem__85d16 {
@@ -708,11 +715,6 @@
 
 .boostedGuildTierIconBackgroundWithVisibleBanner__85d16 {
     color: var(--interactive-active)
-}
-
-.visual-refresh .guildBadgeIcon__85d16 {
-    width: 20px!important;
-    height: 20px!important
 }
 
 .container_fea832 {

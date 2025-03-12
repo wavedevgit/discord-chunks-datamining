@@ -2,9 +2,9 @@
 n.d(t, {
   Z: () => l
 });
-var o = n(200651);
+var i = n(200651);
 n(192379);
-var i = n(180781),
+var o = n(180781),
   r = n(321867),
   a = n(486324);
 
@@ -16,10 +16,10 @@ function l(e) {
     isGIF: c,
     banner: s
   } = e;
-  return [a.pC.BANNER, a.pC.AVATAR].includes(t) && c ? (0, o.jsx)(r.Z, {
+  return [a.pC.BANNER, a.pC.AVATAR].includes(t) && c ? (0, i.jsx)(r.Z, {
     analyticsSection: l,
     type: t
-  }) : t === a.pC.GUILD_BANNER ? (0, o.jsx)(i.Z, {
+  }) : t === a.pC.GUILD_BANNER ? (0, i.jsx)(o.Z, {
     analyticsSection: l,
     analyticsPage: n,
     isGIF: c,

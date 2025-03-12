@@ -6,11 +6,11 @@ var o = t(200651),
   r = t(192379),
   a = t(442837),
   i = t(704215),
-  l = t(481060),
-  c = t(110924),
-  _ = t(40851),
+  c = t(481060),
+  l = t(110924),
+  s = t(40851),
   u = t(812206),
-  s = t(243778),
+  _ = t(243778),
   d = t(554370),
   p = t(788983),
   f = t(546247),
@@ -28,14 +28,14 @@ function I(e) {
     children: n
   } = e, {
     showsNewUserExperience: a,
-    openNewUserExperienceModal: c
+    openNewUserExperienceModal: l
   } = function() {
     let e = [i.z.ACTIVITY_POPOUT_NUX_MODAL],
-      [n, a] = (0, s.US)(e);
+      [n, a] = (0, _.US)(e);
     return {
       showsNewUserExperience: n === i.z.ACTIVITY_POPOUT_NUX_MODAL,
       openNewUserExperienceModal: r.useCallback(() => {
-        (0, l.ZDy)(async () => {
+        (0, c.ZDy)(async () => {
           let {
             default: e
           } = await t.e("49077").then(t.bind(t, 97761));
@@ -74,19 +74,19 @@ function I(e) {
             }), t))
           }
         }, {
-          contextKey: l.u1M,
+          contextKey: c.u1M,
           onCloseRequest: () => {},
-          backdropStyle: l.fCB.SUBTLE
+          backdropStyle: c.fCB.SUBTLE
         })
       }, [a])
     }
   }();
   r.useEffect(() => {
-    a && c()
-  }, [c, a]);
+    a && l()
+  }, [l, a]);
   let {
     renderWindow: u
-  } = r.useContext(_.ZP);
+  } = r.useContext(s.ZP);
   return a ? (0, o.jsx)("div", {
     className: y.nuxBackground,
     children: (0, o.jsx)(f.Z, {
@@ -111,20 +111,20 @@ function P() {
       channelId: n,
       guildId: t
     }
-  }), i = r.useRef(null), _ = (0, c.Z)(e);
+  }), i = r.useRef(null), s = (0, l.Z)(e);
   r.useEffect(() => {
-    null != e ? clearTimeout(i.current) : null != _ && null == e && (i.current = window.setTimeout(() => {
+    null != e ? clearTimeout(i.current) : null != s && null == e && (i.current = window.setTimeout(() => {
       (0, p.xv)(C.KJ3.ACTIVITY_POPOUT)
     }, 5e3))
-  }, [e, _]);
-  let s = (0, a.e7)([u.Z], () => {
+  }, [e, s]);
+  let _ = (0, a.e7)([u.Z], () => {
       let n = null == e ? void 0 : e.applicationId;
       return null == n ? void 0 : u.Z.getApplication(n)
     }),
     f = (0, b.PR)();
   return (0, o.jsx)("div", {
     className: y.container,
-    children: null == e || null == s ? (0, o.jsx)(l.$jN, {
+    children: null == e || null == _ ? (0, o.jsx)(c.$jN, {
       className: y.iframe
     }) : (0, o.jsx)("div", {
       className: y.loadedContentContainer,
@@ -133,7 +133,7 @@ function P() {
         children: [(0, o.jsx)("div", {
           className: y.headerContainer,
           children: (0, o.jsx)(g.Z, {
-            applicationId: s.id,
+            applicationId: _.id,
             channelId: n
           })
         }), (0, o.jsx)("div", {
@@ -143,7 +143,7 @@ function P() {
               channelId: n,
               guildId: t,
               embeddedActivity: e,
-              application: s
+              application: _
             })
           })
         }), f ? (0, o.jsx)(d.Z, {

@@ -36,19 +36,19 @@ function S(e, t, n) {
 }
 let k = C.isPlatformEmbedded && (0, C.isWindows)(),
   E = k && 10 > parseFloat(c.Z.os.release),
-  w = !0;
+  I = !0;
 if (k && !E) {
   let [e, , t] = c.Z.os.release.split(".");
-  w = parseInt(e) > 10 || parseInt(t) >= 15063
+  I = parseInt(e) > 10 || parseInt(t) >= 15063
 }
-let I = new u.Z("NotificationUtils"),
-  P = k && w || "Chrome" === s().name && 47 > parseFloat(s().version) || "Firefox" === s().name && 52 > parseFloat(s().version);
+let w = new u.Z("NotificationUtils"),
+  P = k && I || "Chrome" === s().name && 47 > parseFloat(s().version) || "Firefox" === s().name && 52 > parseFloat(s().version);
 async function Z() {
   if (void 0 === r) {
     if (null === c.Z || void 0 === c.Z ? void 0 : c.Z.features.supports("notifications")) try {
       r = await N.ZP.invoke("NOTIFICATIONS_GET_SETTINGS")
     } catch (e) {
-      I.warn("Fetching native notification settings failed with error: ", e), r = null
+      w.warn("Fetching native notification settings failed with error: ", e), r = null
     } else r = null
   }
   return r
@@ -71,7 +71,7 @@ async function L(e) {
     });
     return
   } catch (e) {
-    I.warn("Native notification sound failed with error: ", e)
+    w.warn("Native notification sound failed with error: ", e)
   }(0, h.GN)(e, t, void 0, n)
 }
 let D = l().throttle(L, 1e3, {
@@ -82,7 +82,7 @@ function B() {
   N.ZP.flashFrame(!1)
 }
 k && (window.addEventListener("focus", B), N.ZP.on("MAIN_WINDOW_FOCUS", B));
-let M = window.Notification;
+let z = window.Notification;
 if (E) {
   let e = {};
   N.ZP.on("NOTIFICATION_CLICK", (t, n) => {
@@ -99,34 +99,34 @@ if (E) {
       body: n,
       icon: r
     }) {
-      S(this, "id", M._id++), S(this, "title", void 0), S(this, "body", void 0), S(this, "icon", void 0), S(this, "onshow", function() {}), S(this, "onclick", function() {}), S(this, "onclose", function() {}), this.title = t, this.body = n, this.icon = r, setImmediate(() => this.onshow()), e[this.id] = this, N.ZP.send("NOTIFICATION_SHOW", {
+      S(this, "id", z._id++), S(this, "title", void 0), S(this, "body", void 0), S(this, "icon", void 0), S(this, "onshow", function() {}), S(this, "onclick", function() {}), S(this, "onclose", function() {}), this.title = t, this.body = n, this.icon = r, setImmediate(() => this.onshow()), e[this.id] = this, N.ZP.send("NOTIFICATION_SHOW", {
         id: this.id,
         title: this.title,
         body: this.body,
         icon: this.icon
       })
     }
-  }, S(a, "permission", "granted"), S(a, "_id", 0), M = a
+  }, S(a, "permission", "granted"), S(a, "_id", 0), z = a
 }
-let z = {};
+let M = {};
 if (null === c.Z || void 0 === c.Z ? void 0 : c.Z.features.supports("notifications")) try {
   N.ZP.on("NOTIFICATIONS_RECEIVED_RESPONSE", (e, t, n) => {
-    if ("dismiss" === t) delete z[n];
+    if ("dismiss" === t) delete M[n];
     else {
       var r, a, i;
-      let e = z[n];
+      let e = M[n];
       (null == e ? void 0 : null === (r = e.options) || void 0 === r ? void 0 : r.omitClickTracking) || j.default.track(O.rMx.NOTIFICATION_CLICKED, null == e ? void 0 : e.trackingProps), null == e || null === (i = e.options) || void 0 === i || null === (a = i.onClick) || void 0 === a || a.call(i)
     }
   }), N.ZP.invoke("NOTIFICATIONS_REMOVE_ALL_NOTIFICATIONS")
 } catch (e) {
-  I.warn("Native notification setup failed with error: ", e)
+  w.warn("Native notification setup failed with error: ", e)
 }
 async function F() {
   if (null === c.Z || void 0 === c.Z ? void 0 : c.Z.features.supports("notifications")) {
     var e;
     return (null === (e = await Z()) || void 0 === e ? void 0 : e.authorizationStatus) === "authorized"
   }
-  return null != M && "granted" === M.permission
+  return null != z && "granted" === z.permission
 }
 
 function G(e) {
@@ -150,9 +150,9 @@ let U = {
       });
       return
     } catch (e) {
-      I.warn("Native notification authorization failed with error: ", e)
+      w.warn("Native notification authorization failed with error: ", e)
     }
-    null != M && M.requestPermission(async () => {
+    null != z && z.requestPermission(async () => {
       null != e && e(await F())
     })
   },
@@ -207,7 +207,7 @@ let U = {
       null != s && (i.senderIdentifier = s, null != l && (i.senderDisplayName = y.ZP.getName(l, o, v.default.getUser(s))));
       try {
         let e = await N.ZP.invoke("NOTIFICATIONS_SEND_NOTIFICATION", i);
-        z[e] = {
+        M[e] = {
           options: a,
           trackingProps: r
         };
@@ -216,13 +216,13 @@ let U = {
             try {
               N.ZP.invoke("NOTIFICATIONS_REMOVE_NOTIFICATIONS", [e])
             } catch (e) {
-              I.warn("Native notification removal failed with error: ", e)
+              w.warn("Native notification removal failed with error: ", e)
             }
           }
         };
         return g(t), t
       } catch (e) {
-        I.warn("Native notification failed with error: ", e)
+        w.warn("Native notification failed with error: ", e)
       }
     }
     null != a.sound && p && G(a.sound, null !== (s = a.volume) && void 0 !== s ? s : 1, a.soundpack);
@@ -234,14 +234,14 @@ let U = {
     };
     k && b.Z.taskbarFlash && N.ZP.flashFrame(!0);
     try {
-      c = new M(t, S)
+      c = new z(t, S)
     } catch (e) {
       return null
     }
     return (g(c), c.onclick = () => {
       var e;
       C.isPlatformEmbedded ? N.ZP.focus() : (window.focus(), c.close()), a.omitClickTracking || j.default.track(O.rMx.NOTIFICATION_CLICKED, r), null === (e = a.onClick) || void 0 === e || e.call(a)
-    }, w) ? c : {
+    }, I) ? c : {
       close() {
         var e;
         null == c || null === (e = c.onclose) || void 0 === e || e.call(c)

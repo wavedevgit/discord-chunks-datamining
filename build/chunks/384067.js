@@ -9,8 +9,8 @@ var r = n(200651),
   s = n.n(a),
   o = n(622535),
   i = n(481060),
-  c = n(597688),
-  d = n(297651),
+  d = n(597688),
+  c = n(297651),
   u = n(215023),
   g = n(388032),
   f = n(39532);
@@ -20,9 +20,9 @@ let h = e => {
     wideBannerBlock: n,
     handleTransition: a,
     tab: h
-  } = e, p = null === (t = c.Z.getCategoryByStoreListingId(n.categoryStoreListingId)) || void 0 === t ? void 0 : t.skuId, m = l.useRef(null), [b, C] = l.useState();
+  } = e, m = null === (t = d.Z.getCategoryByStoreListingId(n.categoryStoreListingId)) || void 0 === t ? void 0 : t.skuId, p = l.useRef(null), [b, C] = l.useState();
   l.useEffect(() => {
-    let e = m.current;
+    let e = p.current;
     if (null == e) return;
     let t = () => {
       e.naturalWidth > 0 && e.naturalHeight > 0 && C(1080 * (e.naturalHeight / e.naturalWidth))
@@ -31,10 +31,10 @@ let h = e => {
       e.onload = null
     }
   }, []);
-  let _ = null != p ? p : "",
+  let _ = null != m ? m : "",
     {
       handleCardVisibilityChange: v
-    } = (0, d.E)(_, "home", "marketing wide banner"),
+    } = (0, c.E)(_, "home", "marketing wide banner"),
     x = n.bannerUrl;
   return null == x ? null : (0, r.jsx)(o.$, {
     onChange: v,
@@ -44,7 +44,7 @@ let h = e => {
       children: [(0, r.jsx)("div", {
         className: f.wideBannerBackgroundImg,
         children: (0, r.jsx)("img", {
-          ref: m,
+          ref: p,
           src: x,
           alt: n.title,
           style: {

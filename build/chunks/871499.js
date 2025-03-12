@@ -101,7 +101,10 @@ function A(e) {
     forceTooltipOpen: N = !1,
     buttonRef: A,
     grow: C,
-    "aria-label": R
+    "aria-label": R,
+    look: P,
+    buttonText: w,
+    size: D
   } = e;
   return (0, r.jsx)(m.Z, {
     children: (0, r.jsx)(l.ua7, {
@@ -117,9 +120,9 @@ function A(e) {
           onMouseEnter: O,
           onMouseLeave: T
         } = e, N = S(e, ["onClick", "onContextMenu", "onMouseEnter", "onMouseLeave"]);
-        return (0, r.jsx)(l.zxk, I(y({
-          look: l.zxk.Looks.BLANK,
-          size: l.zxk.Sizes.NONE,
+        return (0, r.jsxs)(l.zxk, I(y({
+          look: null != P ? P : l.zxk.Looks.BLANK,
+          size: null != D ? D : l.zxk.Sizes.NONE,
           onKeyDown: e => {
             null == i || i(e)
           },
@@ -142,7 +145,9 @@ function A(e) {
             null == T || T(), null == c || c(e)
           },
           disabled: E,
-          innerClassName: v.lineHeightReset,
+          innerClassName: a()(v.lineHeightReset, {
+            [v.buttonInnerWithText]: null != w
+          }),
           className: a()({
             [v.active]: b
           }, d),
@@ -151,14 +156,15 @@ function A(e) {
           grow: C,
           "aria-label": R
         }, N), {
-          children: (0, r.jsx)(h, {
+          children: [(0, r.jsx)(h, {
             size: s.Z.md,
-            className: a()(v.controlIcon, _, {
+            className: a()(_, {
+              [v.controlIcon]: null == w,
               [v.themeable]: g,
               [v.active]: b
             }),
             color: p
-          })
+          }), w]
         }))
       }
     })

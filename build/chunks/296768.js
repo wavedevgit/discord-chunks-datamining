@@ -17,8 +17,8 @@ var n = r(200651),
   g = r(839392),
   b = r(774073),
   _ = r(426482),
-  O = r(644941),
-  h = r(388032),
+  h = r(644941),
+  O = r(388032),
   y = r(869429),
   v = r(214680);
 
@@ -53,7 +53,7 @@ let x = e => {
       return (0, n.jsx)(u.P3F, (i = j({}, e), l = l = {
         className: v.similarGameImageClickable,
         onClick: async () => {
-          a(m.as.ClickSimilarGame, t.applicationId), (0, u.ZDy)(() => Promise.resolve(e => (0, n.jsx)(O.default, j({
+          a(m.as.ClickSimilarGame, t.applicationId), (0, u.ZDy)(() => Promise.resolve(e => (0, n.jsx)(h.default, j({
             applicationId: t.applicationId,
             source: m.m1.SimilarGames
           }, e)))), await new Promise(e => setTimeout(e, 10)), r()
@@ -106,7 +106,7 @@ function P(e) {
       className: y.sectionHeader,
       variant: "text-md/semibold",
       color: "header-primary",
-      children: h.NW.string(h.t["6rLyQE"])
+      children: O.NW.string(O.t["6rLyQE"])
     }), (0, n.jsx)("div", {
       className: v.similarGames,
       style: {},

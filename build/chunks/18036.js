@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120);
 var i, r = n(442837),
   l = n(570140),
-  o = n(592125),
-  s = n(944486),
+  s = n(592125),
+  o = n(944486),
   a = n(9156);
 
 function u(e, t, n) {
@@ -21,9 +21,9 @@ let d = {},
   h = {};
 
 function p() {
-  let e = s.Z.getChannelId();
+  let e = o.Z.getChannelId();
   if (null == e) return;
-  let t = o.Z.getChannel(e);
+  let t = s.Z.getChannel(e);
   if (null == t || null == t.guild_id) return;
   let n = t.guild_id;
   if (null == h[e] && (h[e] = 0), t.isThread() || a.ZP.isOptInEnabled(n) && !a.ZP.isChannelOrParentOptedIn(n, t.id)) {
@@ -39,7 +39,7 @@ function p() {
 class f extends(i = r.ZP.PersistedStore) {
   initialize(e) {
     var t, n;
-    if (this.syncWith([s.Z], p), null == e) return;
+    if (this.syncWith([o.Z], p), null == e) return;
     let {
       suggestedChannels: i,
       dismissedSuggestions: r,

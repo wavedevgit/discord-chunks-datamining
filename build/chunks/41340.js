@@ -98,7 +98,7 @@ function g(e) {
       body: a,
       rejectWithError: !1
     }), v()
-  }, w = async () => {
+  }, I = async () => {
     try {
       await o.tn.post({
         url: "/debug/subscriptions/".concat(g.id, "/transition"),
@@ -114,9 +114,9 @@ function g(e) {
       O(e.body.message)
     }
     v()
-  }, I = (null === (t = p.GP[g.planIdFromItems]) || void 0 === t ? void 0 : t.premiumType) === p.p9.TIER_0, P = null === (n = g.metadata) || void 0 === n ? void 0 : n.ended_at, Z = null != P ? new Date(P).toISOString().substring(0, 10) : "";
+  }, w = (null === (t = p.GP[g.planIdFromItems]) || void 0 === t ? void 0 : t.premiumType) === p.p9.TIER_0, P = null === (n = g.metadata) || void 0 === n ? void 0 : n.ended_at, Z = null != P ? new Date(P).toISOString().substring(0, 10) : "";
   return (0, r.jsxs)("div", {
-    className: l()(f.card, I ? f.gradientWrapperTier0 : f.gradientWrapperTier2),
+    className: l()(f.card, w ? f.gradientWrapperTier0 : f.gradientWrapperTier2),
     children: [(0, r.jsxs)(s.Text, {
       variant: "text-md/normal",
       children: ["Type: ", (() => {
@@ -205,7 +205,7 @@ function g(e) {
           className: x.formSection,
           children: [(0, r.jsx)(s.zxk, {
             size: s.zxk.Sizes.SMALL,
-            onClick: e => w(),
+            onClick: e => I(),
             children: "Renew Subscription"
           }), null !== N && (0, r.jsx)(s.kzN, {
             className: x.error,

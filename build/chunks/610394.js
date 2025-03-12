@@ -358,7 +358,7 @@ function eh(e, t, n, r) {
 }
 
 function em() {
-  if (null == V ? X.storeClickZones() : X.refreshClickZones(), x.info("Flushing focus with pid", V), null != V) {
+  if (null == V ? X.storeClickZones() : X.refreshClickZones(), null != V) {
     let e = Y[V] === s.gl.OutOfProcessLimitedInteraction;
     if (e !== Z) {
       Z = e;

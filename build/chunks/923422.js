@@ -31,8 +31,8 @@ let Z = (0, s.Z)(function(e) {
     onInteraction: s
   } = e, [u, Z] = i.useState(!1), w = (0, y.Z)(), k = (0, h.Z)(), E = (0, j.Z)(), N = (0, f.Z)(), D = (0, S.Z)(), C = (0, m.Z)(), W = (0, O.Z)(), I = (0, v.Z)(), {
     analyticsLocations: B
-  } = (0, d.ZP)(), R = i.useMemo(() => (0, b.j)(), []);
-  async function T() {
+  } = (0, d.ZP)(), T = i.useMemo(() => (0, b.j)(), []);
+  async function A() {
     try {
       Z(!0), await (0, p.bF)(), window.location.reload(!0)
     } catch (e) {
@@ -61,7 +61,7 @@ let Z = (0, s.Z)(function(e) {
           return null
       }
     },
-    M = (0, g.VO)().filter(e => {
+    R = (0, g.VO)().filter(e => {
       let {
         section: t
       } = e;
@@ -75,7 +75,7 @@ let Z = (0, s.Z)(function(e) {
       "aria-label": x.NW.string(x.t.opYYHh),
       onSelect: r,
       onInteraction: s,
-      children: [M.map(e => {
+      children: [R.map(e => {
         var t, r;
         let {
           section: i,
@@ -121,11 +121,11 @@ let Z = (0, s.Z)(function(e) {
         })(Object(r)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
         }), t), s)
-      }), e.user.isStaff() && R.length > 0 ? (0, n.jsx)(o.sNh, {
+      }), e.user.isStaff() && T.length > 0 ? (0, n.jsx)(o.sNh, {
         label: "Build Overrides",
         id: "build_overrides",
         children: (0, n.jsx)(o.kSQ, {
-          children: R.map(e => (0, n.jsx)(o.k5B, {
+          children: T.map(e => (0, n.jsx)(o.k5B, {
             id: "input-".concat(e.payload),
             group: "build_overrides",
             label: e.id,
@@ -140,7 +140,7 @@ let Z = (0, s.Z)(function(e) {
           id: "clear-build-override",
           disabled: u,
           label: x.NW.string(x.t["/Nz9ra"]),
-          action: T,
+          action: A,
           color: "danger"
         })
       }) : null]

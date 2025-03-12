@@ -1,6 +1,6 @@
 /**
   Module ID: 1815
-  Original File Name: b5544f84d844717e
+  Original File Name: 3d90b59bd658f966
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -2504,9 +2504,9 @@ h1.title_feb59c,h2.title_feb59c {
     background: initial;
     justify-content: space-between;
     min-height: var(--custom-rtc-account-height);
-    padding: var(--space-8);
+    padding: var(--space-xs);
     box-sizing: border-box;
-    gap: var(--space-8);
+    gap: var(--space-xs);
     margin-left: -1px;
     height: auto
 }

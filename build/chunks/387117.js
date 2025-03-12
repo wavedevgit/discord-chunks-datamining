@@ -5,7 +5,74 @@ n.d(t, {
 }), n(47120);
 let r = {
   Modules: {
+    channels: {
+      NAME_LINE_HEIGHT: {
+        resolve(e) {
+          let {
+            enabledExperiments: t,
+            density: n
+          } = e;
+          if (0 === t.length) return 20;
+          for (let e of t)
+            if ("visual-refresh" === e) switch (n) {
+              case "compact":
+              default:
+                return 20;
+              case "default":
+                return 24;
+              case "cozy":
+                return 28
+            }
+          return 20
+        }
+      },
+      SPINE_INVERTED_OFFSET_TOP: {
+        resolve(e) {
+          let {
+            enabledExperiments: t,
+            density: n
+          } = e;
+          if (0 === t.length) return 8;
+          for (let e of t)
+            if ("visual-refresh" === e) switch (n) {
+              case "compact":
+                return 2;
+              case "default":
+                return 6;
+              case "cozy":
+                return 9;
+              default:
+                return 8
+            }
+          return 8
+        }
+      },
+      SPINE_OFFSET_LEFT: {
+        resolve(e) {
+          let {
+            enabledExperiments: t,
+            density: n
+          } = e;
+          if (0 === t.length) return 22;
+          for (let e of t)
+            if ("visual-refresh" === e) switch (n) {
+              case "compact":
+                return 20;
+              case "default":
+                return 24;
+              case "cozy":
+                return 28;
+              default:
+                return 22
+            }
+          return 22
+        }
+      }
+    },
     chat: {
+      AVATAR_SIZE: {
+        resolve: () => 40
+      },
       INPUT_ICON_SIZE: {
         resolve(e) {
           let {
@@ -20,11 +87,20 @@ let r = {
       MARKUP_LINE_HEIGHT: {
         resolve(e) {
           let {
-            enabledExperiments: t
+            enabledExperiments: t,
+            density: n
           } = e;
           if (0 === t.length) return "1.375rem";
           for (let e of t)
-            if ("visual-refresh" === e) return "1.5rem";
+            if ("visual-refresh" === e) switch (n) {
+              case "compact":
+                return "1.35rem";
+              case "default":
+              default:
+                return "1.375rem";
+              case "cozy":
+                return "1.4rem"
+            }
           return "1.375rem"
         }
       },

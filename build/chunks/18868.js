@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  L: () => f
+  L: () => b
 }), n(47120);
 var r = n(200651),
   a = n(192379),
@@ -47,24 +47,27 @@ let h = new c.Z("ShopAssetsPreviewUploadArea"),
     })
   },
   f = e => {
+    e.stopPropagation(), e.preventDefault()
+  },
+  b = e => {
     let {
       className: t,
       onDrop: n
-    } = e, [i, c] = a.useState(!1), p = a.useRef(null), f = a.useCallback(e => {
+    } = e, [i, c] = a.useState(!1), p = a.useRef(null), b = a.useCallback(e => {
       for (let t of e) try {
         if (null == t || !t.isFile && !t.isDirectory) return h.warn("Dropped item is not a file or directory"), !1
       } catch (e) {
         return h.error("Error validating file:", e), !1
       }
       return !0
-    }, []), b = a.useCallback(e => {
-      e.stopPropagation(), e.preventDefault(), c(!0);
-      let t = e.dataTransfer;
-      null != t && (t.dropEffect = "copy", (0, o.nfh)(d.A) && (0, o.Mr3)(d.A))
-    }, []), _ = a.useCallback(() => {
-      c(!1)
-    }, []), g = a.useCallback(async e => {
-      e.preventDefault(), e.stopPropagation(), c(!1);
+    }, []), _ = a.useCallback(e => {
+      f(e), (0, o.Mr3)(d.A), null != e.dataTransfer && (e.dataTransfer.dropEffect = "copy")
+    }, []), g = a.useCallback(e => {
+      f(e), c(!0)
+    }, []), v = a.useCallback(e => {
+      f(e), c(!1)
+    }, []), j = a.useCallback(async e => {
+      f(e), c(!1);
       let t = e.dataTransfer;
       if (null == t) {
         x();
@@ -74,29 +77,24 @@ let h = new c.Z("ShopAssetsPreviewUploadArea"),
         var t;
         return null !== (t = e.webkitGetAsEntry()) && void 0 !== t ? t : e.getAsEntry()
       })).then(e => e.filter(e => null != e));
-      if (0 === r.length || !f(r)) {
+      if (0 === r.length || !b(r)) {
         x();
         return
       }
       h.info("[DEBUG] file system entries: ".concat(r.length)), n(r)
-    }, [n, f]);
-    return a.useEffect(() => {
-      var e;
-      let t = null === (e = p.current) || void 0 === e ? void 0 : e.ownerDocument.body;
-      if (null != t) return t.addEventListener("dragover", b, !1), () => t.removeEventListener("dragover", b, !1)
-    }, [b]), (0, r.jsx)("div", {
+    }, [n, b]);
+    return (0, r.jsx)("div", {
       ref: p,
-      className: l()(t, m.uploadArea, {
-        [m.droppable]: i
-      }),
-      onDragLeave: _,
-      onDragEnd: _,
-      onDrop: g,
-      children: (0, r.jsxs)("div", {
-        className: m.uploadModal,
-        children: [(0, r.jsx)("div", {
-          className: m.bgScale
-        }), (0, r.jsxs)("div", {
+      className: l()(t, m.uploadArea),
+      onDragEnter: g,
+      onDragOver: _,
+      onDragLeave: v,
+      onDrop: j,
+      children: (0, r.jsx)("div", {
+        className: l()(m.uploadModal, {
+          [m.droppable]: i
+        }),
+        children: (0, r.jsxs)("div", {
           className: m.inner,
           children: [(0, r.jsx)(s.Z, {
             icons: u.J6
@@ -109,7 +107,7 @@ let h = new c.Z("ShopAssetsPreviewUploadArea"),
               children: "Upload files"
             })
           })]
-        })]
+        })
       })
     })
   }

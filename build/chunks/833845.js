@@ -1,15 +1,15 @@
 /** Chunk was on 53494 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 });
 var r = n(442837),
   i = n(314897),
-  o = n(88751);
+  l = n(88751);
 
-function l(e) {
+function o(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-  return (0, r.cj)([o.ZP, i.default], () => {
+  return (0, r.cj)([l.ZP, i.default], () => {
     let n = i.default.getId();
-    return o.ZP.getPermissionsForUser(n, e, t)
+    return l.ZP.getPermissionsForUser(n, e, t)
   }, [e, t])
 }

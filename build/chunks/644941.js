@@ -17,8 +17,8 @@ var n = r(200651),
   g = r(168551),
   b = r(485267),
   _ = r(561308),
-  O = r(669764),
-  h = r(706454),
+  h = r(669764),
+  O = r(706454),
   y = r(768581),
   v = r(814225),
   j = r(709054),
@@ -72,7 +72,7 @@ function B(e) {
       return t[e]
     }
     return ""
-  }, [r]), m = null == o ? void 0 : o.getIconURL(160, y.$k ? "webp" : "png"), g = j.default.extractTimestamp(o.id), b = s()().diff(s()(g), "days") <= W.G, O = l.some(e => (0, _.ig)(e) === c.o.GLOBAL), h = null !== (t = r.name) && void 0 !== t ? t : null == o ? void 0 : o.name;
+  }, [r]), m = null == o ? void 0 : o.getIconURL(160, y.$k ? "webp" : "png"), g = j.default.extractTimestamp(o.id), b = s()().diff(s()(g), "days") <= W.G, h = l.some(e => (0, _.ig)(e) === c.o.GLOBAL), O = null !== (t = r.name) && void 0 !== t ? t : null == o ? void 0 : o.name;
   return (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)("div", {
       className: R.gameArtHero,
@@ -101,7 +101,7 @@ function B(e) {
         children: (0, n.jsxs)("div", {
           children: [(0, n.jsx)(d.X6q, {
             variant: "heading-xl/bold",
-            children: h
+            children: O
           }), (0, n.jsxs)("div", {
             className: i()(R.row, R.gapSm),
             children: [null != m && (0, n.jsx)("img", {
@@ -109,7 +109,7 @@ function B(e) {
               src: m,
               height: 16,
               alt: Z.NW.formatToPlainString(Z.t["nh+jWl"], {
-                game: h
+                game: O
               })
             }), (0, n.jsx)(d.Text, {
               variant: "text-sm/semibold",
@@ -119,7 +119,7 @@ function B(e) {
               variant: "eyebrow",
               className: R.newBadge,
               children: Z.NW.string(Z.t.y2b7CA)
-            }), O && (0, n.jsxs)(n.Fragment, {
+            }), h && (0, n.jsxs)(n.Fragment, {
               children: [(0, n.jsx)(d.Text, {
                 variant: "text-sm/medium",
                 children: " \xb7 "
@@ -210,10 +210,10 @@ let F = e => e.filter(N.z6).slice(0, 5),
       appContext: y
     } = e, {
       clientThemesClassName: v
-    } = (0, g.ZP)(), j = (0, u.e7)([h.default], () => h.default.locale), N = a.useMemo(() => (0, x.fP)(), []), w = (0, u.Wu)([E.Z], () => {
+    } = (0, g.ZP)(), j = (0, u.e7)([O.default], () => O.default.locale), N = a.useMemo(() => (0, x.fP)(), []), w = (0, u.Wu)([E.Z], () => {
       var e;
       return (null !== (e = E.Z.getSimilarGames(r)) && void 0 !== e ? e : []).slice(0, 25)
-    }), [C, S] = a.useState(null), T = (0, I.Ns)(r), [A, k] = a.useState(null), M = (0, m.q)(r), D = (0, u.e7)([O.Z], () => O.Z.getGame(r)), L = null !== (t = null == D ? void 0 : D.name) && void 0 !== t ? t : null == M ? void 0 : M.name, W = (e, t) => {
+    }), [C, S] = a.useState(null), T = (0, I.Ns)(r), [A, k] = a.useState(null), M = (0, m.q)(r), D = (0, u.e7)([h.Z], () => h.Z.getGame(r)), L = null !== (t = null == D ? void 0 : D.name) && void 0 !== t ? t : null == M ? void 0 : M.name, W = (e, t) => {
       var n;
       (0, x.UE)({
         gameName: null != L ? L : "",

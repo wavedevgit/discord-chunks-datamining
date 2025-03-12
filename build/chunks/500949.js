@@ -48,8 +48,8 @@ var r, a, i = n(192379),
   S = n(723757),
   k = n(375924),
   E = n(596136),
-  w = n(341901),
-  I = n(856308),
+  I = n(341901),
+  w = n(856308),
   P = n(665352),
   Z = n(394900),
   R = n(661105),
@@ -58,7 +58,7 @@ var r, a, i = n(192379),
   D = n(190558),
   B = n(231338);
 
-function M(e) {
+function z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -77,7 +77,7 @@ function M(e) {
   return e
 }
 
-function z(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -114,8 +114,8 @@ let F = {
     REC_2020: S.Z,
     REC_2100_HLG: k.Z,
     REC_2100_PQ: E.Z,
-    XYZ_D50: w.Z,
-    XYZ_D65: I.Z
+    XYZ_D50: I.Z,
+    XYZ_D65: w.Z
   },
   G = Object.fromEntries(Object.keys(F).map(e => [e, e]));
 Object.values(F).forEach(e => P.Z.register(e));
@@ -148,7 +148,7 @@ function X(e) {
 function Y(e, t, n, r, a) {
   return {
     name: t,
-    colors: z(M({}, e.colors), {
+    colors: M(z({}, e.colors), {
       [a]: {
         color: n,
         opacity: r
@@ -159,7 +159,7 @@ function Y(e, t, n, r, a) {
 }
 
 function K(e) {
-  return z(M({}, e), {
+  return M(z({}, e), {
     highlight: !e.highlight
   })
 }
@@ -246,55 +246,55 @@ function ea(e) {
 }
 
 function ei(e, t, n) {
-  n(n => null == n.scales.find(t => t.name === e) ? n : z(M({}, n), {
+  n(n => null == n.scales.find(t => t.name === e) ? n : M(z({}, n), {
     scales: n.scales.map(n => n.name === e ? t(n) : n)
   }))
 }
 
 function el(e, t, n) {
-  ei(e, e => z(M({}, e), {
+  ei(e, e => M(z({}, e), {
     darkness: t
   }), n)
 }
 
 function eo(e, t, n) {
-  ei(e, e => z(M({}, e), {
+  ei(e, e => M(z({}, e), {
     lightness: t
   }), n)
 }
 
 function es(e, t, n) {
-  ei(e, e => z(M({}, e), {
+  ei(e, e => M(z({}, e), {
     base: t
   }), n)
 }
 
 function ec(e, t, n) {
-  ei(e, e => z(M({}, e), {
+  ei(e, e => M(z({}, e), {
     colorSpace: t
   }), n)
 }
 
 function ed(e, t, n) {
-  ei(e, e => z(M({}, e), {
+  ei(e, e => M(z({}, e), {
     easingStrength: t
   }), n)
 }
 
 function eu(e, t, n) {
-  ei(e, e => z(M({}, e), {
+  ei(e, e => M(z({}, e), {
     showColumnarPalettePreview: t
   }), n)
 }
 
 function em(e, t, n) {
-  ei(e, e => z(M({}, e), {
+  ei(e, e => M(z({}, e), {
     useP3ColorSpace: t
   }), n)
 }
 
 function eh(e, t, n) {
-  ei(e, e => z(M({}, e), {
+  ei(e, e => M(z({}, e), {
     steps: t
   }), n)
 }

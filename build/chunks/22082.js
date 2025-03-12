@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => P
 }), n(47120);
-var i, r, l, o = n(442837),
-  s = n(570140),
+var i, r, l, s = n(442837),
+  o = n(570140),
   a = n(45114),
   u = n(897473),
   d = n(581883),
@@ -25,7 +25,7 @@ function I(e, t) {
   let n = _[e];
   if (null != n && null != t && n.has(t)) {
     var i;
-    !C.ZP.isOptInEnabled(e) || (null === (i = h.Z.getChannel(t)) || void 0 === i ? void 0 : i.isThread()) || null != v.ZP.ackMessageId(t) || s.Z.wait(() => (0, a.In)(t, !0, !0, m.default.atPreviousMillisecond(t)))
+    !C.ZP.isOptInEnabled(e) || (null === (i = h.Z.getChannel(t)) || void 0 === i ? void 0 : i.isThread()) || null != v.ZP.ackMessageId(t) || o.Z.wait(() => (0, a.In)(t, !0, !0, m.default.atPreviousMillisecond(t)))
   }
 }
 
@@ -49,7 +49,7 @@ function N() {
     _[e] = new Set([...t].filter(t => !C.ZP.isChannelOrParentOptedIn(e, t)))
   })
 }
-class T extends(i = o.ZP.Store) {
+class T extends(i = s.ZP.Store) {
   initialize() {
     this.waitFor(p.ZP, c.default, f.ZP, C.ZP, v.ZP, d.Z), this.syncWith([C.ZP], N)
   }
@@ -70,7 +70,7 @@ l = "NewChannelsStore", (r = "displayName") in T ? Object.defineProperty(T, r, {
   configurable: !0,
   writable: !0
 }) : T[r] = l;
-let P = new T(s.Z, {
+let P = new T(o.Z, {
   BULK_CLEAR_RECENTS: function(e) {
     let {
       guildId: t,

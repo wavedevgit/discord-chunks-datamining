@@ -1,6 +1,6 @@
 /**
   Module ID: 61260
-  Original File Name: e6db1a792cfec42b
+  Original File Name: 22d240373ca41e00
 **/
 .ephemeral__5126c {
     position: relative;
@@ -88,6 +88,10 @@
 
 .message__5126c {
     padding-right: 48px!important
+}
+
+.visual-refresh .message__5126c {
+    padding-right: var(--space-xl)!important
 }
 
 .visual-refresh .message__5126c {

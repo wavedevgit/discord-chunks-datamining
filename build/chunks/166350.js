@@ -4,7 +4,7 @@ n.d(t, {
   NR: () => a,
   Ob: () => i,
   ZI: () => s,
-  m1: () => c,
+  m1: () => d,
   uc: () => o
 });
 var r = n(987170),
@@ -79,7 +79,7 @@ let a = (0, r.Z)({
       }
     }]
   }),
-  c = (0, r.Z)({
+  d = (0, r.Z)({
     kind: "user",
     id: "2024-07_ctp_collectibles_shop_open_uneven_buckets",
     label: "CTP collectibles shop open - A/A test - Uneven buckets",

@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 414918f4916d9fcf
+  Original File Name: 2fe129a1b582329e
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -4055,12 +4055,12 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-right: 4px
 }
 
-.visual-refresh .guildIconContainer__85d16 {
-    margin-right: var(--space-12)
-}
-
 .guildIconV2Container__85d16 {
     margin-right: 8px
+}
+
+.visual-refresh .guildIconContainer__85d16,.visual-refresh .guildIconV2Container__85d16 {
+    margin-right: var(--space-xs)
 }
 
 .guildBadge__85d16 .boostedGuildIconGem__85d16 {
@@ -4089,11 +4089,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .boostedGuildTierIconBackgroundWithVisibleBanner__85d16 {
     color: var(--interactive-active)
-}
-
-.visual-refresh .guildBadgeIcon__85d16 {
-    width: 20px!important;
-    height: 20px!important
 }
 
 .container__86ab2 {
@@ -5305,14 +5300,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     left: 0;
     width: 100%;
     height: 100%;
-    visibility: hidden;
-    background: hsl(var(--black-500-hsl)/.8);
     font-size: 30px;
-    color: var(--white-500);
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;
     z-index: 2000
 }
 
@@ -5320,27 +5311,18 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     pointer-events: none
 }
 
-.uploadArea_dae93f.droppable_dae93f {
+.uploadModal_dae93f {
+    display: flex;
+    position: relative;
+    width: 310px;
+    height: 190px;
+    background: var(--brand-500);
+    opacity: 0
+}
+
+.uploadModal_dae93f.droppable_dae93f {
     visibility: visible;
     opacity: 1
-}
-
-.uploadModal_dae93f {
-    width: 310px;
-    height: 170px;
-    display: flex;
-    position: relative
-}
-
-.uploadModal_dae93f .bgScale_dae93f {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 10px;
-    background: var(--brand-500)
 }
 
 .uploadModal_dae93f .inner_dae93f {
@@ -5411,6 +5393,12 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     display: flex;
     flex-direction: column;
     height: 100%
+}
+
+.headingContainer__77347 {
+    display: flex;
+    flex-direction: row;
+    gap: 12px
 }
 
 .previewToggleContainer__77347 {

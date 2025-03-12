@@ -1,6 +1,6 @@
 /** Chunk was on 81146 **/
 r.d(t, {
-  Z: () => h
+  Z: () => O
 }), r(47120), r(301563);
 var n = r(200651),
   a = r(192379),
@@ -17,14 +17,14 @@ var n = r(200651),
   g = r(981631),
   b = r(388032),
   _ = r(869429),
-  O = r(689723);
+  h = r(689723);
 
-function h(e) {
+function O(e) {
   let {
     detectedGame: t,
     trackClick: r,
     onInviteResolved: o,
-    closeModal: h
+    closeModal: O
   } = e, [y, v] = a.useState(), j = (0, s.e7)([p.Z], () => {
     var e, t;
     return (null == y ? void 0 : null === (e = y.guild) || void 0 === e ? void 0 : e.id) != null && p.Z.isMember(null == y ? void 0 : null === (t = y.guild) || void 0 === t ? void 0 : t.id)
@@ -63,13 +63,13 @@ function h(e) {
     }), (0, n.jsxs)("div", {
       className: i()(_.row, _.gapMd),
       children: [(0, n.jsx)("img", {
-        className: O.guildIcon,
+        className: h.guildIcon,
         src: P,
         alt: b.NW.formatToPlainString(b.t.xm6W9P, {
           guildName: y.guild.name
         })
       }), (0, n.jsxs)("div", {
-        className: O.inviteInfo,
+        className: h.inviteInfo,
         children: [(0, n.jsx)(c.Text, {
           variant: "text-sm/normal",
           children: y.guild.name
@@ -83,7 +83,7 @@ function h(e) {
     }), (0, n.jsx)(c.zxk, {
       color: c.Ttl.PRIMARY,
       onClick: () => {
-        h(), r(m.as.JoinOfficialServer), u.Z.dispatch({
+        O(), r(m.as.JoinOfficialServer), u.Z.dispatch({
           type: "INVITE_MODAL_OPEN",
           invite: y,
           code: y.code,

@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: b54edae22c13fdd1
+  Original File Name: d02fcd7c73f5ee5f
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -3154,6 +3154,10 @@
     min-height: 32px
 }
 
+.visual-refresh .basicChannelRowLink__2ea32 {
+    min-height: 24px
+}
+
 .linkTop__2ea32 {
     justify-content: center
 }
@@ -3174,7 +3178,7 @@
 
 .name__2ea32 {
     font-size: 16px;
-    line-height: 20px;
+    line-height: var(--channels-name-line-height);
     font-weight: 500;
     flex: 1 1 auto
 }
@@ -3285,6 +3289,10 @@
     }
 }
 
+:where(.visual-refresh) .wrapper__2ea32 {
+    margin-left: var(--space-xs)
+}
+
 :where(.visual-refresh) .link__2ea32 {
     padding: var(--space-xxs) var(--space-xs);
     border-radius: var(--radius-sm)
@@ -3325,8 +3333,7 @@
 }
 
 :where(.visual-refresh) .name__2ea32 {
-    color: var(--text-tertiary);
-    line-height: 24px
+    color: var(--text-tertiary)
 }
 
 :where(.visual-refresh) .icon__2ea32 {

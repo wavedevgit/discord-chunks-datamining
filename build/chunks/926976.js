@@ -92,7 +92,7 @@ function E(e) {
     })]
   })
 }
-let w = [{
+let I = [{
     id: "details",
     name: "Details",
     render: e => {
@@ -198,10 +198,10 @@ let w = [{
       })
     }
   }],
-  I = {
+  w = {
     events: {
       label: "Events",
-      filter: e => Object.entries(I).filter(e => {
+      filter: e => Object.entries(w).filter(e => {
         let [t] = e;
         return "events" !== t
       }).map(t => {
@@ -239,7 +239,7 @@ function Z() {
   let e = a.useRef(null),
     [t, n] = a.useState(""),
     i = (0, d.e7)([_.Z], () => _.Z.loggedEventsVersion),
-    [o, s] = a.useState(() => Object.keys(I)),
+    [o, s] = a.useState(() => Object.keys(w)),
     [c, m] = a.useState(_.Z.loggedEvents),
     h = a.useCallback(e => {
       m(e)
@@ -247,7 +247,7 @@ function Z() {
   (0, x.BO)(t, _.Z.loggedEvents, h, P, [i]);
   let p = c.filter(e => {
       for (let t of o)
-        if (I[t].filter(e)) return !0;
+        if (w[t].filter(e)) return !0;
       return !1
     }),
     [f, b] = a.useState(void 0),
@@ -256,7 +256,7 @@ function Z() {
       TabBar: k,
       renderSelectedTab: E
     } = (0, C.Z)({
-      tabs: w
+      tabs: I
     }, []);
   return (0, r.jsxs)("div", {
     ref: e,
@@ -280,7 +280,7 @@ function Z() {
         className: N.toolbarDivider
       }), (0, r.jsx)("div", {
         className: N.filters,
-        children: Object.entries(I).map(e => {
+        children: Object.entries(w).map(e => {
           let [t, n] = e;
           return (0, r.jsx)(u.P3F, {
             className: l()(N.filter, o.includes(t) && N.activeFilter),

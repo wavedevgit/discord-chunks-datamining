@@ -5,24 +5,24 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  l = n(979790);
+  l = n.n(i),
+  o = n(979790);
 let a = () => (0, r.jsx)("div", {
-    className: l.spacer
+    className: o.spacer
   }),
   s = () => (0, r.jsx)("div", {
-    className: l.category
+    className: o.category
   }),
   c = e => {
     let {
       width: t
     } = e;
     return (0, r.jsxs)("div", {
-      className: l.channel,
+      className: o.channel,
       children: [(0, r.jsx)("div", {
-        className: l.channelIcon
+        className: o.channelIcon
       }), (0, r.jsx)("div", {
-        className: l.channelName,
+        className: o.channelName,
         style: {
           width: "".concat(t, "px")
         }
@@ -34,8 +34,8 @@ let a = () => (0, r.jsx)("div", {
       withBannerPadding: t
     } = e;
     return (0, r.jsxs)("div", {
-      className: o()(l.container, {
-        [l.bannerPadding]: t
+      className: l()(o.container, {
+        [o.bannerPadding]: t
       }),
       children: [(0, r.jsx)(s, {}), (0, r.jsx)(c, {
         width: 100

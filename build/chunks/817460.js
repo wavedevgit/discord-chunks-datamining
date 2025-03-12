@@ -1,7 +1,7 @@
 /** Chunk was on 30806 **/
 n.d(t, {
-  JE: () => s,
-  ab: () => o,
+  JE: () => o,
+  ab: () => s,
   iG: () => a,
   lL: () => d,
   rC: () => u
@@ -10,11 +10,11 @@ var i = n(293810),
   r = n(474936),
   l = n(388032);
 
-function o(e) {
+function s(e) {
   return "roles" in e ? "emoji-".concat(e.id) : "".concat(e.ref_type, "-").concat(e.emoji_id, "-").concat(e.name, "-").concat(e.ref_id)
 }
 
-function s(e) {
+function o(e) {
   let {
     interval: t,
     interval_count: n

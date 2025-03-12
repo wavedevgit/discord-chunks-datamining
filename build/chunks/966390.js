@@ -17,8 +17,8 @@ var n = r(481060),
   g = r(539573),
   b = r(786761),
   _ = r(3148),
-  O = r(48854),
-  h = r(785359),
+  h = r(48854),
+  O = r(785359),
   y = r(79390),
   v = r(980463),
   j = r(992970),
@@ -91,7 +91,7 @@ async function W(e) {
   null != G && (H.content = null == G ? void 0 : G.content), null != N.Z.getPendingReply(W) && (H.type = k.uaV.REPLY, H.message_reference = B.messageReference, H.allowed_mentions = B.allowedMentions, (0, I.A6)(W));
   let [Q, z] = (0, w.Z)(H.content);
   Q && (H.content = z, H.flags = (0, T.pj)(null !== (r = H.flags) && void 0 !== r ? r : 0, k.iLy.SUPPRESS_NOTIFICATIONS));
-  let Y = null !== (n = B.nonce) && void 0 !== n ? n : (0, O.r)(),
+  let Y = null !== (n = B.nonce) && void 0 !== n ? n : (0, h.r)(),
     X = (0, _.ZP)({
       channelId: W,
       content: H.content,
@@ -124,7 +124,7 @@ async function W(e) {
         channelId: W,
         file: e,
         messageRecord: p
-      }), (0, h.x)({
+      }), (0, O.x)({
         fileItems: e.items,
         failureCode: t,
         errorMessage: null == n ? void 0 : n.msg
@@ -245,7 +245,7 @@ let Z = {
           type: "UPLOAD_FAIL",
           channelId: r,
           file: t
-        }), (0, h.x)({
+        }), (0, O.x)({
           fileItems: t.items,
           failureCode: d
         }), d === k.evJ.EXPLICIT_CONTENT) {

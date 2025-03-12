@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  l = n.n(o),
+  l = n(120356),
+  o = n.n(l),
   a = n(999153),
   s = n(642128),
   c = n(91192),
@@ -31,7 +31,7 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
     let {
       folderNode: t,
       setNodeRef: n,
-      selected: o,
+      selected: l,
       expanded: s,
       mediaState: u,
       mentionCount: g = 0,
@@ -96,21 +96,21 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       config: {
         duration: P
       }
-    }), eo = i.useCallback(e => null == n ? void 0 : n(U, e), [n, U]), el = (0, r.jsxs)(O.H, {
+    }), el = i.useCallback(e => null == n ? void 0 : n(U, e), [n, U]), eo = (0, r.jsxs)(O.H, {
       children: [(0, r.jsx)(b.Z, {
         disabled: K || s,
         hovered: H,
-        selected: o,
+        selected: l,
         unread: Z,
         className: S.pill
       }), (0, r.jsx)(j.Z, {
         text: ee,
         disabled: A,
-        selected: o,
+        selected: l,
         disableWrapper: !0,
         children: (0, r.jsx)("div", {
           ref: T ? J : void 0,
-          className: l()(x.folderIcon, {
+          className: o()(x.folderIcon, {
             [S.wobble]: !K && Y && !s
           }),
           "data-dnd-name": ee,
@@ -140,15 +140,15 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       }) : null]
     });
     return (0, r.jsxs)("div", {
-      ref: eo,
-      className: l()(x.wrapper, s && x.isExpanded),
+      ref: el,
+      className: o()(x.wrapper, s && x.isExpanded),
       "data-drop-hovering": Y,
       children: [!K && s && (0, r.jsx)("span", {
-        className: l()(x.expandedFolderBackground, {
+        className: o()(x.expandedFolderBackground, {
           [x.collapsed]: !s,
           [x.hover]: Q
         })
-      }), el, ei((e, t, n) => {
+      }), eo, ei((e, t, n) => {
         let {
           key: i
         } = n;

@@ -115,13 +115,15 @@ let p = (0, r.U)(e => ({
           } = r,
           o = c(r, [t].map(f));
         return l(a({}, e), {
-          assets: o
+          assets: o,
+          previewEnabled: Object.keys(o).length > 0
         })
       })
     }),
     clearAssets: () => (0, i.j)(() => {
       e(e => (Object.values(e.assets).forEach(e => URL.revokeObjectURL(e.src)), {
-        assets: {}
+        assets: {},
+        previewEnabled: !1
       }))
     })
   })),

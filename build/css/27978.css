@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 55ee7ef0ffd78334
+  Original File Name: b9cabcf0d2da7223
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -3969,12 +3969,12 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-right: 4px
 }
 
-.visual-refresh .guildIconContainer__85d16 {
-    margin-right: var(--space-12)
-}
-
 .guildIconV2Container__85d16 {
     margin-right: 8px
+}
+
+.visual-refresh .guildIconContainer__85d16,.visual-refresh .guildIconV2Container__85d16 {
+    margin-right: var(--space-xs)
 }
 
 .guildBadge__85d16 .boostedGuildIconGem__85d16 {
@@ -4003,11 +4003,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .boostedGuildTierIconBackgroundWithVisibleBanner__85d16 {
     color: var(--interactive-active)
-}
-
-.visual-refresh .guildBadgeIcon__85d16 {
-    width: 20px!important;
-    height: 20px!important
 }
 
 .container__86ab2 {

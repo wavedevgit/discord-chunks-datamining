@@ -1,6 +1,6 @@
 /**
   Module ID: 78846
-  Original File Name: fb573ee321740312
+  Original File Name: 83ec625ed055a206
 **/
 @use postcss-pxtorem;
 
@@ -114,19 +114,18 @@
 }
 
 .cozy_c19a55 .messageSpine_c19a55:before,.cozy_c19a55 .repliedMessageClickableSpine_c19a55 {
-    --avatar-size: 40px;
     --gutter: var(--custom-message-margin-horizontal)
 }
 
 .a11y-font-scaled-down .cozy_c19a55 .messageSpine_c19a55:before,.a11y-font-scaled-down .cozy_c19a55 .repliedMessageClickableSpine_c19a55 {
-    --avatar-size: 2.5rem;
+    --chat-avatar-size: 2.5rem;
     --wrapper-padding-left: 4.5rem;
     --avatar-position-left: 1rem;
-    --gutter: calc(var(--wrapper-padding-left) - var(--avatar-position-left) - var(--avatar-size))
+    --gutter: calc(var(--wrapper-padding-left) - var(--avatar-position-left) - var(--chat-avatar-size))
 }
 
 .compact_c19a55 .messageSpine_c19a55:before,.compact_c19a55 .repliedMessageClickableSpine_c19a55 {
-    --avatar-size: var(--timestamp-width);
+    --chat-avatar-size: var(--timestamp-width);
     --gutter: var(--custom-message-meta-space)
 }
 
@@ -139,7 +138,7 @@
     top: 50%;
     right: 100%;
     bottom: 0;
-    left: calc(var(--avatar-size)/2*-1 + var(--gutter)*-1);
+    left: calc(var(--chat-avatar-size)/2*-1 + var(--gutter)*-1);
     margin: calc(2px*-1/2) var(--reply-spacing) calc(var(--custom-message-spacing-vertical-container-cozy) - 4px) calc(2px*-1/2);
     margin: calc(var(--spine-width)*-1/2) var(--reply-spacing) calc(var(--custom-message-spacing-vertical-container-cozy) - 4px) calc(var(--spine-width)*-1/2);
     border-left: 2px solid var(--spine-default);
@@ -449,8 +448,8 @@
     position: absolute;
     left: var(--custom-message-margin-horizontal);
     margin-top: calc(4px - var(--custom-message-spacing-vertical-container-cozy));
-    width: 40px;
-    height: 40px;
+    width: var(--chat-avatar-size);
+    height: var(--chat-avatar-size);
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
@@ -773,6 +772,11 @@
     width: 2rem;
     left: 2.2rem;
     top: 3rem
+}
+
+.visual-refresh .cozy_c19a55.hasThread_c19a55:after {
+    left: calc(var(--custom-message-margin-horizontal) + var(--chat-avatar-size)/2 - 1px);
+    width: calc(var(--custom-message-margin-left-content-cozy) - var(--custom-message-margin-horizontal) - var(--chat-avatar-size)/2 - var(--space-4))
 }
 
 .font-size-12 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-14 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-15 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-16 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-18 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-20 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-24 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after {

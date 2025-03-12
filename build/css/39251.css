@@ -1,6 +1,6 @@
 /**
   Module ID: 39251
-  Original File Name: c82eccd87e992b30
+  Original File Name: 18e8e244244ae9cc
 **/
 .image__04666 {
     width: 100%;
@@ -10799,6 +10799,10 @@ html .progress__61462 {
     width: 4.5rem
 }
 
+.visual-refresh .cozy__235ca .iconContainer__235ca {
+    width: var(--custom-message-margin-left-content-cozy)!important
+}
+
 .compact__235ca .iconContainer__235ca {
     position: relative;
     width: auto;
@@ -12930,6 +12934,10 @@ html .progress__61462 {
     padding: 16px 16px 0
 }
 
+.visual-refresh .header_ab6641 {
+    padding: var(--space-md) var(--space-md) 0
+}
+
 .headerTitle_ab6641 {
     display: flex;
     align-items: center
@@ -13032,6 +13040,14 @@ html .progress__61462 {
 .widerInbox__95796 {
     width: 50vw;
     max-width: 750px
+}
+
+.visual-refresh .recentMentionsPopout__95796 {
+    max-height: 70vh
+}
+
+.visual-refresh .widerInbox__95796 {
+    width: 560px
 }
 
 .scroller__95796 {
@@ -13200,6 +13216,10 @@ html .progress__61462 {
 
 .row__6fddf:hover {
     background-color: var(--background-message-hover)
+}
+
+.visual-refresh .row__6fddf {
+    padding: var(--space-xs) var(--space-sm)
 }
 
 .visual-refresh .row__6fddf:hover {
@@ -14617,8 +14637,18 @@ html .progress__61462 {
     line-height: 26px
 }
 
-.visual-refresh .search__97492 .DraftEditor-editorContainer {
+.visual-refresh .search__97492 .DraftEditor-editorContainer,.visual-refresh.density-compact .searchBar__97492 {
     height: 28px
+}
+
+.visual-refresh.density-compact .search__97492 .DraftEditor-root {
+    height: 100%;
+    padding: 0 var(--space-4);
+    line-height: 22px
+}
+
+.visual-refresh.density-compact .search__97492 .DraftEditor-editorContainer {
+    height: 24px
 }
 
 .full-motion .searchBar__97492 {

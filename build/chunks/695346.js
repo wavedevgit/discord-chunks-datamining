@@ -525,4 +525,4 @@ let ek = (0, c.Zc)("appearance", "timestampHourCycle", e => null != e ? e : i.hg
 (0, c.Zc)("appearance", "launchPadMode", e => null != e ? e : i.l1.LAUNCH_PAD_DISABLED, e => e), (0, c.Zc)("appearance", "swipeRightToLeftMode", e => null != e ? e : i.n9.SWIPE_RIGHT_TO_LEFT_UNSET, e => e);
 let ej = (0, c.Zc)("userContent", "lastReceivedChangelogId", e => null != e ? e : "0", e => e),
   eU = (0, c.Zc)("safetySettings", "ignoreProfileSpeedbumpDisabled", e => null != e && e, e => e),
-  eG = (0, c.Zc)("appearance", "uiDensity", e => e === i.Pi.UNSET_UI_DENSITY ? i.Pi.COMPACT : null != e ? e : i.Pi.COMPACT, e => e)
+  eG = (0, c.Zc)("appearance", "uiDensity", e => e === i.Pi.UNSET_UI_DENSITY ? i.Pi.DEFAULT : null != e ? e : i.Pi.DEFAULT, e => e)

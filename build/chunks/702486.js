@@ -31,7 +31,7 @@ let o = (e, t, n, r) => {
       i = (0, a.h)(o, 5e3, [], {
         trailing: !0
       }),
-      c = r.useCallback(() => {
+      d = r.useCallback(() => {
         var r;
         let l = null === (r = n.current) || void 0 === r ? void 0 : r.getScrollerNode();
         null != l && i(e, s.current, t, {
@@ -43,7 +43,7 @@ let o = (e, t, n, r) => {
       }, [i, e, t]);
     return {
       scrollerRef: n,
-      scrollHandler: c,
+      scrollHandler: d,
       sessionId: s.current
     }
   }

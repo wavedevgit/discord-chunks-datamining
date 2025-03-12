@@ -2,13 +2,13 @@
 n.d(t, {
   Z: () => p
 });
-var i, r, l, o = n(442837),
-  s = n(570140),
+var i, r, l, s = n(442837),
+  o = n(570140),
   a = n(131704),
   u = n(592125);
 let d = {},
   c = {};
-class h extends(l = o.ZP.Store) {
+class h extends(l = s.ZP.Store) {
   getTemplates(e) {
     return d[e]
   }
@@ -26,7 +26,7 @@ r = "GuildRoleSubscriptionTierTemplatesStore", (i = "displayName") in h ? Object
   configurable: !0,
   writable: !0
 }) : h[i] = r;
-let p = new h(s.Z, {
+let p = new h(o.Z, {
   GUILD_ROLE_SUBSCRIPTIONS_STASH_TEMPLATE_CHANNELS: function(e) {
     let {
       selectedTemplate: t,

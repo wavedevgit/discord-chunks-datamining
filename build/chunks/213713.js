@@ -29,11 +29,11 @@ var r = n(200651),
   S = n(650613),
   k = n(789086),
   E = n(206583),
-  w = n(866235),
-  I = n(710662);
+  I = n(866235),
+  w = n(710662);
 let P = [{
   key: "type",
-  cellClassName: l()(w.cell, w.cellType),
+  cellClassName: l()(I.cell, I.cellType),
   render(e) {
     let {
       type: t
@@ -45,7 +45,7 @@ let P = [{
   }
 }, {
   key: "count",
-  cellClassName: l()(w.cell, w.cellCount),
+  cellClassName: l()(I.cell, I.cellCount),
   render(e) {
     let {
       entries: t
@@ -59,7 +59,7 @@ let P = [{
   }
 }, {
   key: "only?",
-  cellClassName: w.cell,
+  cellClassName: I.cell,
   render(e) {
     let {
       type: t
@@ -128,12 +128,12 @@ function R() {
       let [t] = e;
       return t
     }),
-    M = (0, f.Z)(B).filter(y.lm),
-    z = (0, u.e7)([C.Z], () => C.Z.getFakeGameToShow());
+    z = (0, f.Z)(B).filter(y.lm),
+    M = (0, u.e7)([C.Z], () => C.Z.getFakeGameToShow());
   return (0, r.jsx)("div", {
-    className: I.panel,
+    className: w.panel,
     children: (0, r.jsxs)(h.zJl, {
-      className: w.content,
+      className: I.content,
       children: [(0, r.jsxs)(h.hjN, {
         children: [(0, r.jsx)(h.vwX, {
           children: "Inventory"
@@ -210,7 +210,7 @@ function R() {
             border: "1px solid green"
           } : {}
         }), (0, r.jsx)("ul", {
-          children: M.map(e => (0, r.jsx)("li", {
+          children: z.map(e => (0, r.jsx)("li", {
             children: (0, r.jsx)(A, {
               application: e
             })
@@ -227,7 +227,7 @@ function R() {
             label: e,
             value: e
           })),
-          isSelected: e => e === z,
+          isSelected: e => e === M,
           select: function(e) {
             p.Z.dispatch({
               type: "CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING",

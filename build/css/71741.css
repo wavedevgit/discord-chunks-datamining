@@ -1,6 +1,6 @@
 /**
   Module ID: 71741
-  Original File Name: bedd712448672e0f
+  Original File Name: 29ee713e800cd856
 **/
 .boostedGuildIconGem__97677 {
     transition: color .1s linear;
@@ -31,12 +31,12 @@
     margin-right: 4px
 }
 
-.visual-refresh .guildIconContainer__85d16 {
-    margin-right: var(--space-12)
-}
-
 .guildIconV2Container__85d16 {
     margin-right: 8px
+}
+
+.visual-refresh .guildIconContainer__85d16,.visual-refresh .guildIconV2Container__85d16 {
+    margin-right: var(--space-xs)
 }
 
 .guildBadge__85d16 .boostedGuildIconGem__85d16 {
@@ -65,11 +65,6 @@
 
 .boostedGuildTierIconBackgroundWithVisibleBanner__85d16 {
     color: var(--interactive-active)
-}
-
-.visual-refresh .guildBadgeIcon__85d16 {
-    width: 20px!important;
-    height: 20px!important
 }
 
 .header__6e6ad {
