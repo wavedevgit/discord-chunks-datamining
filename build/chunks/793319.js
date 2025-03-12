@@ -547,6 +547,7 @@ let eR = function(e) {
                 })
               })
             },
+            ignoreModalClicks: eg,
             align: "center",
             position: "top",
             animation: p.yRy.Animation.FADE,
@@ -677,6 +678,7 @@ let eR = function(e) {
               })
             })
           },
+          ignoreModalClicks: eg,
           align: "center",
           position: "top",
           animation: p.yRy.Animation.FADE,
@@ -761,6 +763,7 @@ let eR = function(e) {
               })
             })
           },
+          ignoreModalClicks: eg,
           align: "center",
           position: "top",
           animation: p.yRy.Animation.FADE,

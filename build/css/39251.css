@@ -1,6 +1,6 @@
 /**
   Module ID: 39251
-  Original File Name: b33b0b92b9dbfc2c
+  Original File Name: 4af306e2801cb21e
 **/
 .image__04666 {
     width: 100%;
@@ -56,85 +56,6 @@
 
 .menu__43313 {
     max-height: 70vh
-}
-
-.header_cd8d1b {
-    padding: 0 50px
-}
-
-.art_cd8d1b {
-    max-width: 100%
-}
-
-.artContainer_cd8d1b {
-    margin: 24px 38px;
-    width: 320px;
-    padding-left: var(--modal-horizontal-padding);
-    padding-right: var(--modal-horizontal-padding)
-}
-
-.modal_cd8d1b {
-    background: #222226;
-    position: relative;
-    overflow: hidden
-}
-
-.blur0_cd8d1b {
-    width: 701px;
-    height: 399px;
-    border-radius: 701px;
-    background: #222226;
-    filter: blur(55px);
-    right: -151px;
-    bottom: 16px
-}
-
-.blur0_cd8d1b,.blur1_cd8d1b {
-    z-index: -1;
-    position: absolute
-}
-
-.blur1_cd8d1b {
-    width: 555px;
-    height: 353px;
-    transform: rotate(-21deg);
-    left: -259px;
-    top: -264px;
-    border-radius: 555px;
-    background: #23246f
-}
-
-.blur1_cd8d1b,.blur2_cd8d1b {
-    opacity: .6;
-    filter: blur(150px)
-}
-
-.blur2_cd8d1b {
-    z-index: -1;
-    width: 420px;
-    height: 267px;
-    position: absolute;
-    right: -243px;
-    top: -175px;
-    border-radius: 420px;
-    background: #5865f2
-}
-
-.footer_cd8d1b {
-    background-color: #222226;
-    padding: 24px
-}
-
-.subscribeButton_cd8d1b {
-    border-radius: var(--radius-sm);
-    border: 1px solid hsla(0,3%,53.9%,.1);
-    background: var(--custom-premium-colors-premium-gradient-tier-2) no-repeat;
-    display: flex;
-    min-width: 80px;
-    padding: 20px 16px;
-    justify-content: center;
-    align-items: center;
-    gap: var(--space-4)
 }
 
 .upsellOuter__50e68 {
