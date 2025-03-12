@@ -112,11 +112,13 @@ class b extends i.Z {
     var t;
     let {
       modelId: n,
-      voiceFilterId: r
+      voiceFilterId: r,
+      error: i
     } = e;
     l.default.track(_.rMx.VOICE_FILTER_DOWNLOAD_ATTEMPTED, {
       active_voice_filter_id: null !== (t = s.Z.getActiveVoiceFilter()) && void 0 !== t ? t : null,
       success: !1,
+      canceled: null != i && "USER_CANCELED_DOWNLOAD" in i,
       voice_filter_id: r,
       model_id: n
     })
