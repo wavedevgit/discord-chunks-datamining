@@ -22,7 +22,7 @@ function _(e) {
     content: s,
     isSpeaking: u,
     account: _
-  } = e, h = (0, d.p)(t, n, o, s, _), m = (0, l.i)(u, 2e3), g = (0, c.C)(n, o, m), [E, v] = (0, i.useState)(t), [b, y] = (0, i.useState)(!1);
+  } = e, h = (0, d.p)(t, n, o, s, _), m = (0, l.i)(u, 2e3), g = (0, c.C)(n, o, m), [E, v] = (0, i.useState)(t), [b, y] = (0, i.useState)(!1), [O, I] = (0, i.useState)(!1);
   if ((0, i.useEffect)(() => {
       if (null == E || null != t || b) null != t && (v(t), y(!1));
       else {
@@ -33,17 +33,18 @@ function _(e) {
         return () => clearTimeout(e)
       }
     }, [t, E, b]), null == t) return null;
-  let O = null != t ? t : E;
-  return null == O ? null : (0, r.jsx)("div", {
+  let S = null != t ? t : E;
+  return null == S ? null : (0, r.jsx)("div", {
     className: a()(f.container, {
       [f.containerExit]: b,
-      [f.accountContainer]: _
+      [f.accountContainer]: _,
+      [f.fadeIn]: O && !b
     }),
-    style: {
+    style: O ? {
       background: h.background
-    },
+    } : void 0,
     children: (0, r.jsx)(p, {
-      nameplate: O,
+      nameplate: S,
       className: a()(f.img, {
         [f.hover]: n,
         [f.selected]: o,
@@ -51,7 +52,8 @@ function _(e) {
       }),
       style: h,
       animate: g,
-      loop: !!(n || u)
+      loop: !!(n || u),
+      onLoad: () => I(!0)
     })
   })
 }
@@ -62,20 +64,23 @@ function p(e) {
     className: n,
     style: o,
     animate: a,
-    loop: l
-  } = e, c = (0, i.useRef)(null);
+    loop: l,
+    onLoad: c
+  } = e, d = (0, i.useRef)(null);
   i.useEffect(() => {
-    null != c.current && (a ? c.current.play() : c.current.pause())
-  }, [a]);
-  let d = (0, u._)(t, a);
-  return (null == d ? void 0 : d.endsWith(".png")) || t.preview ? (0, r.jsx)("img", {
-    src: d,
+    null != d.current && (a || l ? d.current.play() : d.current.pause())
+  }, [a, l]);
+  let f = (0, u._)(t, a);
+  return (null == f ? void 0 : f.endsWith(".png")) || t.preview ? (0, r.jsx)("img", {
+    src: f,
     className: n,
     style: o,
-    alt: t.imgAlt
+    alt: t.imgAlt,
+    onLoad: c
   }) : (0, r.jsx)(s.Z, {
-    src: d,
-    ref: c,
+    onLoadedData: c,
+    src: f,
+    ref: d,
     playsInline: !0,
     loop: l,
     controls: !1,

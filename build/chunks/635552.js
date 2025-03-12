@@ -19,7 +19,7 @@ let u = 6e3,
     } = e, [_, p] = r.useState(!1), {
       firstAvatarDecoration: h,
       firstProfileEffect: m
-    } = (0, l.R)(t), g = (0, s.x6)(t) ? c.NW.string(c.t.tf1ZZ2) : t.type === i.Z.AVATAR_DECORATION ? c.NW.string(c.t.zOA4a2) : c.NW.string(c.t.SWm2am);
+    } = (0, l.R)(t), g = (0, s.x6)(t) ? c.NW.string(c.t.tf1ZZ2) : t.type === i.Z.AVATAR_DECORATION ? c.NW.string(c.t.zOA4a2) : t.type === i.Z.NAMEPLATE ? c.NW.string(c.t.gOzMv7) : c.NW.string(c.t.SWm2am);
     return {
       handleUseNow: r.useCallback(async () => {
         p(!0);
@@ -35,6 +35,12 @@ let u = 6e3,
               profile_effect_id: m.id
             };
             await (0, a.Z)(e)
+          }
+          if (t.type === i.Z.NAMEPLATE) {
+            let e = {
+              nameplate: t.items[0]
+            };
+            await (0, o.Mn)(e)
           } {
             let {
               ToastPosition: e,
@@ -54,7 +60,7 @@ let u = 6e3,
         } finally {
           p(!1)
         }
-      }, [h, m, d, g, f]),
+      }, [h, m, t, d, g, f]),
       isApplying: _
     }
   }

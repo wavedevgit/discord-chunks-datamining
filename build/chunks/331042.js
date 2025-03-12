@@ -333,7 +333,7 @@ let er = 880,
     }), {
       firstAvatarDecoration: I,
       firstProfileEffect: S
-    } = (0, M.R)(n), N = (0, P.x6)(n) ? null != I && null != S : null != I || null != S, A = i.useMemo(() => null != l ? l : V.xJ === n.skuId ? X.NW.string(Q.Z.nvaTQk) : g ? X.NW.format(new Date < z.a$ ? X.t.BhGU09 : X.t.Jfv5Qk, {
+    } = (0, M.R)(n), N = (0, P.x6)(n) ? null != I && null != S : null != I || null != S || n.type === u.Z.NAMEPLATE, A = i.useMemo(() => null != l ? l : V.xJ === n.skuId ? X.NW.string(Q.Z.nvaTQk) : g ? X.NW.format(new Date < z.a$ ? X.t.BhGU09 : X.t.Jfv5Qk, {
       purchased_item: h,
       suggested_item: m
     }) : p && !f ? X.NW.string(X.t["1xr2SU"]) : X.NW.format(X.t.YNaxMj, {
