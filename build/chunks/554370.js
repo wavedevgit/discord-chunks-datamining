@@ -25,16 +25,16 @@ var i = n(200651),
   x = n(237997),
   I = n(451478),
   S = n(585483),
-  C = n(358085),
-  N = n(13140),
+  N = n(358085),
+  C = n(13140),
   Z = n(145597),
   w = n(830917),
   P = n(32300),
   _ = n(681603),
   T = n(915614),
   D = n(268861),
-  A = n(690336),
-  k = n(333031),
+  k = n(690336),
+  A = n(333031),
   L = n(371651),
   R = n(610394),
   M = n(388627),
@@ -44,7 +44,7 @@ var i = n(200651),
   U = n(757744),
   G = n(981631),
   F = n(734811);
-let Y = !C.isPlatformEmbedded && !1,
+let Y = !N.isPlatformEmbedded && !1,
   H = Y ? (0, i.jsx)(f.Z, {
     src: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzdpcnRrYXdrNzVuNjZ3NXpmeTJvNGl4Z2N4OXBsamx5aXphdHhxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/OPg2B0FPBL94H12uM0/giphy480p.mp4",
     className: F.videoDev,
@@ -54,11 +54,11 @@ let Y = !C.isPlatformEmbedded && !1,
   }) : null,
   B = null;
 
-function K(e) {
+function Q(e) {
   e.preventDefault()
 }
 
-function Q(e) {
+function K(e) {
   (0, c.jW)(e, async () => {
     let {
       default: e
@@ -117,8 +117,8 @@ let X = r.memo(function(e) {
         } = e;
         r === G.AeJ.PRIMARY && t === i && n()
       },
-      onContextMenu: Q,
-      children: r ? null : (0, i.jsx)(k.Z, {
+      onContextMenu: K,
+      children: r ? null : (0, i.jsx)(A.Z, {
         className: F.closeContainer,
         children: (0, i.jsx)(T.Z, {
           keybind: t,
@@ -133,7 +133,7 @@ let X = r.memo(function(e) {
       locked: t,
       focused: n
     } = e;
-    return t && n ? (0, i.jsx)(k.Z, {
+    return t && n ? (0, i.jsx)(A.Z, {
       className: F.closeContainer,
       children: (0, i.jsx)(T.Z, {
         onClick: () => d.Z.setInputLocked(!1, (0, Z.getPID)()),
@@ -170,7 +170,7 @@ function en(e) {
     locked: l,
     focused: c,
     incompatibleApp: f,
-    hasZeroSizeDimension: C,
+    hasZeroSizeDimension: N,
     keybind: T
   } = (0, a.cj)([R.ZP, x.default, I.Z, b.ZP], () => {
     let e = I.Z.windowSize((0, w.ZY)(n)),
@@ -181,10 +181,10 @@ function en(e) {
       focused: i === Z.DEV_PID ? x.default.isFocused(i) : R.ZP.isFocused((0, Z.getPID)()),
       incompatibleApp: x.default.incompatibleApp,
       hasZeroSizeDimension: 0 === e.height || 0 === e.width,
-      keybind: null != t ? (0, N.BB)(t.shortcut, !0) : "???"
+      keybind: null != t ? (0, C.BB)(t.shortcut, !0) : "???"
     }
   }, [n]), {
-    analyticsLocations: k
+    analyticsLocations: A
   } = (0, h.ZP)(p.Z.OVERLAY);
   return ! function(e, t) {
     let n = r.useRef({
@@ -242,29 +242,29 @@ function en(e) {
     if (S.S.dispatch(G.CkL.OVERLAY_V3_SHOW_WIDGETS, {
         show: !0
       }), l) {
-      if ((0, s.Ay)(u.u1M), n.addEventListener("contextmenu", K, !1), null != B) {
+      if ((0, s.Ay)(u.u1M), n.addEventListener("contextmenu", Q, !1), null != B) {
         let e = Date.now() - B;
         d.Z.track(G.rMx.OVERLAY_LOCKED, {
           unlocked_duration: e
         }), B = null
       }
       return () => {
-        n.removeEventListener("contextmenu", K, !1)
+        n.removeEventListener("contextmenu", Q, !1)
       }
     }
-    n.removeEventListener("contextmenu", K, !1), null == B && (B = Date.now(), d.Z.track(G.rMx.OVERLAY_UNLOCKED))
+    n.removeEventListener("contextmenu", Q, !1), null == B && (B = Date.now(), d.Z.track(G.rMx.OVERLAY_UNLOCKED))
   }, [l, n]), (0, i.jsx)(h.Gt, {
-    value: k,
+    value: A,
     children: (0, i.jsx)(u.vWI, {
-      children: C || f ? null : (0, i.jsx)(u.f6W, {
-        theme: G.BRd.DARK,
+      children: N || f ? null : (0, i.jsx)(u.f6W, {
+        theme: G.BRd.MIDNIGHT,
         children: e => (0, i.jsxs)("div", {
           className: o()(F.overlay, e),
           children: [!t && H, (0, i.jsx)(X, {
             locked: l,
             keybind: T,
             onClick: q
-          }), (0, i.jsx)(A.Z, {
+          }), (0, i.jsx)(k.Z, {
             className: o()({
               [F.layoutLocked]: l,
               [F.layoutUnlocked]: !l

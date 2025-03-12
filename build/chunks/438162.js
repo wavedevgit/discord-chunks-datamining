@@ -25,8 +25,8 @@ var r = n(200651),
   C = n(592125),
   x = n(430824),
   P = n(131951),
-  E = n(944486),
-  L = n(449224),
+  L = n(944486),
+  E = n(449224),
   w = n(574254),
   k = n(556296),
   N = n(237997),
@@ -210,7 +210,7 @@ function eu() {
   function() {
     let e = o.useRef(!1),
       t = (0, H.pL)(),
-      n = E.Z.getVoiceChannelId(),
+      n = L.Z.getVoiceChannelId(),
       r = C.Z.getChannel(n),
       a = null != r ? x.Z.getGuild(r.guild_id) : null,
       i = null != I.Z.getCurrentUserActiveStream(),
@@ -254,11 +254,11 @@ function eu() {
     }
     e.removeEventListener("contextmenu", en, !1), null == et && (et = Date.now(), s.Z.track(X.rMx.OVERLAY_UNLOCKED))
   }, [t, e]);
-  let er = (0, c.e7)([E.Z], () => E.Z.getVoiceChannelId()),
+  let er = (0, c.e7)([L.Z], () => L.Z.getVoiceChannelId()),
     eu = (0, c.e7)([C.Z], () => C.Z.getChannel(er)),
     es = (0, c.e7)([x.Z], () => null != eu ? x.Z.getGuild(eu.guild_id) : null),
     ed = (0, c.e7)([O.default], () => O.default.getId()),
-    ef = (0, c.e7)([g.ZP, L.Z], () => (0, v.Z)(g.ZP, L.Z)),
+    ef = (0, c.e7)([g.ZP, E.Z], () => (0, v.Z)(g.ZP, E.Z)),
     eb = (0, h.Ns)(null == ef ? void 0 : ef.id),
     ep = (0, c.e7)([p.Z], () => null != p.Z.getLastFeedFetchDate(q.YN.GAME_PROFILE_FEED)),
     em = (0, d.Z)(ep);

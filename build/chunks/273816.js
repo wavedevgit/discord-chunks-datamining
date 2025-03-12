@@ -61,28 +61,28 @@ function y(e) {
     {
       currentFPS: I,
       averageFrameTime: S,
-      timeSinceLastDrop: C,
-      onResetFrameData: N,
+      timeSinceLastDrop: N,
+      onResetFrameData: C,
       droppedFramesRef: Z,
       renderedFrameCount: w,
       bufferFramecountRef: P,
       frameCheckerEffect: _
     } = (0, c.d6)(!0, j, !0),
-    [T, D, A] = (0, c.ZF)(y),
-    [k, L] = (0, c.Y5)(T, _, b),
+    [T, D, k] = (0, c.ZF)(y),
+    [A, L] = (0, c.Y5)(T, _, b),
     R = performance.now() - x.current < c.MC,
     M = D(S, P.current);
-  (0, u.ZP)(() => (k(), () => {
+  (0, u.ZP)(() => (A(), () => {
     L()
   }));
   let W = r.useCallback(() => {
-      N(), A(), k()
-    }, [N, A, k]),
+      C(), k(), A()
+    }, [C, k, A]),
     [V, z] = r.useState(!0),
     [U, G] = r.useState(!0),
     [F, Y] = r.useState(!0),
     [H, B] = r.useState(!0),
-    [K, Q] = r.useState(!0);
+    [Q, K] = r.useState(!0);
   return t && !n ? null : (0, i.jsxs)("div", {
     className: o()(g.panelGroup, !l && g.rightAligned),
     children: [(V || !t) && (0, i.jsxs)("div", {
@@ -141,7 +141,7 @@ function y(e) {
         children: ["Dropped Frames:", " ", (0, i.jsx)(s.Text, {
           tag: "span",
           variant: "code",
-          color: C < 2 ? "text-danger" : C < 5 ? "text-warning" : "text-primary",
+          color: N < 2 ? "text-danger" : N < 5 ? "text-warning" : "text-primary",
           children: Z.current
         }), (0, i.jsxs)(s.Text, {
           tag: "span",
@@ -171,14 +171,14 @@ function y(e) {
           children: w.current.toFixed(0)
         })]
       })]
-    }), (K || !t) && (0, i.jsxs)("div", {
+    }), (Q || !t) && (0, i.jsxs)("div", {
       className: g.measurement,
       children: [!t && (0, i.jsx)("div", {
         className: g.measurementCheckbox,
         children: (0, i.jsx)(s.XZJ, {
           size: 16,
-          value: K,
-          onChange: (e, t) => Q(t)
+          value: Q,
+          onChange: (e, t) => K(t)
         })
       }), (0, i.jsx)(s.ua7, {
         position: "left",

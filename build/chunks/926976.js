@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => R
+  Z: () => Z
 }), n(47120), n(26686);
 var r = n(200651),
   a = n(192379),
@@ -224,18 +224,18 @@ let k = [{
       filter: e => e.event.startsWith("network_action")
     }
   },
-  P = e => {
-    let {
-      event: t,
-      properties: n
-    } = e;
-    return null != n.location ? [t, n.location] : t
-  },
-  Z = {
-    searchType: p.S.REGEX
+  P = {
+    searchType: p.S.REGEX,
+    searchStringGenerator: e => {
+      let {
+        event: t,
+        properties: n
+      } = e;
+      return null != n.location ? [t, n.location] : t
+    }
   };
 
-function R() {
+function Z() {
   let e = a.useRef(null),
     [t, n] = a.useState(""),
     i = (0, d.e7)([_.Z], () => _.Z.loggedEventsVersion),
@@ -243,22 +243,21 @@ function R() {
     [c, m] = a.useState(_.Z.loggedEvents),
     h = a.useCallback(e => {
       m(e)
-    }, []),
-    p = (0, x.c)(P, h, Z),
-    f = c.filter(e => {
+    }, []);
+  (0, x.BO)(t, _.Z.loggedEvents, h, P, [i]);
+  let p = c.filter(e => {
       for (let t of o)
         if (w[t].filter(e)) return !0;
       return !1
-    });
-  a.useEffect(() => {
-    p(t, _.Z.loggedEvents)
-  }, [t, p, i]);
-  let [b, v] = a.useState(void 0), E = f.find(e => e.key === b), {
-    TabBar: I,
-    renderSelectedTab: R
-  } = (0, C.Z)({
-    tabs: k
-  }, []);
+    }),
+    [f, b] = a.useState(void 0),
+    v = p.find(e => e.key === f),
+    {
+      TabBar: E,
+      renderSelectedTab: I
+    } = (0, C.Z)({
+      tabs: k
+    }, []);
   return (0, r.jsxs)("div", {
     ref: e,
     className: l()(O.panel, T.panel),
@@ -303,16 +302,16 @@ function R() {
       })
     }), (0, r.jsx)(y.Z, {
       columns: S,
-      data: f,
-      selectedRowKey: b,
-      onClickRow: e => v(e.key)
-    }), null != E && (0, r.jsxs)(j.Z, {
+      data: p,
+      selectedRowKey: f,
+      onClickRow: e => b(e.key)
+    }), null != v && (0, r.jsxs)(j.Z, {
       className: T.subPanel,
       minHeight: 100,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300,
-      children: [(0, r.jsx)(I, {}), R({
-        loggedEvent: E,
-        onClose: () => v(void 0)
+      children: [(0, r.jsx)(E, {}), I({
+        loggedEvent: v,
+        onClose: () => b(void 0)
       })]
     })]
   })

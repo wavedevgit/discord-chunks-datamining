@@ -25,8 +25,8 @@ var i = n(200651),
   x = n(314897),
   I = n(131951),
   S = n(594174),
-  C = n(5192),
-  N = n(444295),
+  N = n(5192),
+  C = n(444295),
   Z = n(1226),
   w = n(981631),
   P = n(388032),
@@ -64,7 +64,7 @@ function D(e, t) {
   }), e
 }
 
-function A(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
@@ -80,7 +80,7 @@ function A(e, t) {
   return r
 }
 
-function k(e) {
+function A(e) {
   let {
     participant: t
   } = e, n = t.user.id, l = (0, a.e7)([I.Z], () => {
@@ -96,13 +96,13 @@ function k(e) {
     children: e => {
       var {
         onClick: n
-      } = e, r = A(e, ["onClick"]);
+      } = e, r = k(e, ["onClick"]);
       return (0, i.jsx)(u.P3F, D(T({}, r), {
         className: _.controlAction,
         onClick: e => {
-          e.stopPropagation(), (0, N.Ws)(w.Odu.GO_LIVE, {
-            type: N.Qu.AUDIO,
-            value: p ? N.bk.ENABLED : N.bk.DISABLED,
+          e.stopPropagation(), (0, C.Ws)(w.Odu.GO_LIVE, {
+            type: C.Qu.AUDIO,
+            value: p ? C.bk.ENABLED : C.bk.DISABLED,
             userId: t.user.id
           }), null == n || n(), h()
         },
@@ -120,9 +120,9 @@ function k(e) {
 
 function L(e, t, r) {
   return l => {
-    (0, N.Ws)(w.Odu.GO_LIVE, {
-      type: N.Qu.GO_LIVE,
-      value: N.bk.SETTINGS_OPENED,
+    (0, C.Ws)(w.Odu.GO_LIVE, {
+      type: C.Qu.GO_LIVE,
+      value: C.bk.SETTINGS_OPENED,
       userId: e.user.id
     }), l.stopPropagation(), null == r || r(), (0, d.jW)(l, async () => {
       let {
@@ -162,9 +162,9 @@ function R(e) {
             null === (t = e.onClick) || void 0 === t || t.call(e), (0, h.rn)(n.stream, {
               forceMultiple: !0,
               noFocus: !0
-            }), r(), (0, N.Ws)(w.Odu.GO_LIVE, {
-              type: N.Qu.GO_LIVE,
-              value: N.bk.ENABLED,
+            }), r(), (0, C.Ws)(w.Odu.GO_LIVE, {
+              type: C.Qu.GO_LIVE,
+              value: C.bk.ENABLED,
               userId: n.user.id
             })
           },
@@ -191,16 +191,16 @@ function R(e) {
             variant: "text-md/medium",
             color: "always-white",
             className: _.controlUserName,
-            children: C.ZP.getName(n.stream.guildId, n.stream.channelId, s)
+            children: N.ZP.getName(n.stream.guildId, n.stream.channelId, s)
           }), (0, i.jsx)(O.ZP, {
             primaryGuild: c.primaryGuild,
             userId: c.id,
             containerClassName: _.guildTag,
             inline: !1,
             onShowProfile: () => {
-              (0, N.Ws)(w.Odu.GO_LIVE, {
-                type: N.Qu.GO_LIVE,
-                value: N.bk.GUILD_PROFILE_OPENED,
+              (0, C.Ws)(w.Odu.GO_LIVE, {
+                type: C.Qu.GO_LIVE,
+                value: C.bk.GUILD_PROFILE_OPENED,
                 userId: n.user.id
               })
             }
@@ -209,14 +209,14 @@ function R(e) {
       }), (0, i.jsx)("div", {
         className: _.controlActions,
         children: t && (0, i.jsxs)(i.Fragment, {
-          children: [(0, i.jsx)(k, {
+          children: [(0, i.jsx)(A, {
             participant: n
           }), (0, i.jsx)(u.ua7, {
             text: P.NW.string(P.t["3D5yo6"]),
             children: e => {
               var {
                 onClick: t
-              } = e, r = A(e, ["onClick"]);
+              } = e, r = k(e, ["onClick"]);
               return (0, i.jsx)(u.P3F, D(T({}, r), {
                 className: _.controlAction,
                 onClick: L(n, l, t),

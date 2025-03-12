@@ -34,12 +34,12 @@ var o = t(200651),
   B = t(214629),
   S = t(317381),
   A = t(884338),
-  E = t(473179),
-  W = t(932174),
+  W = t(473179),
+  E = t(932174),
   z = t(981631),
   U = t(388032),
-  D = t(231784);
-let L = A.u.SIZE_24;
+  L = t(231784);
+let D = A.u.SIZE_24;
 
 function R(e) {
   let {
@@ -62,9 +62,9 @@ function R(e) {
       text: a,
       position: "bottom",
       children: (0, o.jsx)("img", {
-        src: e.getAvatarURL(null == n ? void 0 : n.guild_id, L),
+        src: e.getAvatarURL(null == n ? void 0 : n.guild_id, D),
         alt: a,
-        className: D.avatar
+        className: L.avatar
       }, e.id)
     }, e.id)
   }, [H]), K = null == R ? void 0 : R.userIds, F = (0, l.Wu)([O.default], () => Array.from(null != K ? K : []).map(e => O.default.getUser(e)).filter(e => null != e), [K]), J = p.Z.useExperiment({
@@ -97,7 +97,7 @@ function R(e) {
       popoutWindow: e,
       currentDocument: n,
       rootNode: t
-    } = (0, W.Z)(), [o, a] = r.useState(!1), i = r.useCallback(() => {
+    } = (0, E.Z)(), [o, a] = r.useState(!1), i = r.useCallback(() => {
       null != t && o && (a(!1), (0, T.Pr)(t, n))
     }, [t, n, o]), l = r.useCallback(() => {
       null != t && (o ? i() : (a(!0), (0, T.Dj)(t)))
@@ -116,7 +116,7 @@ function R(e) {
   let er = (0, o.jsx)(u.Z, {
     application: a,
     size: 24,
-    className: D.appIcon
+    className: L.appIcon
   });
   return G && (er = (0, o.jsx)(c.DY3, {
     text: R.compositeInstanceId,
@@ -125,18 +125,18 @@ function R(e) {
   })), (0, o.jsx)(c.f6W, {
     theme: z.BRd.DARK,
     children: e => (0, o.jsxs)("div", {
-      className: i()(D.container, e),
+      className: i()(L.container, e),
       children: [(0, o.jsxs)("div", {
-        className: i()(D.headerSection, D.headerSectionLeft),
+        className: i()(L.headerSection, L.headerSectionLeft),
         children: [er, (0, o.jsx)(c.Text, {
           variant: "text-md/normal",
           color: "header-primary",
-          className: D.applicationName,
+          className: L.applicationName,
           children: (0, o.jsx)(d.Z, {
             children: a.name
           })
         }), (0, o.jsx)("div", {
-          className: D.dotSpacer,
+          className: L.dotSpacer,
           children: (0, o.jsx)(c.Text, {
             variant: "text-md/normal",
             color: "text-muted",
@@ -145,16 +145,16 @@ function R(e) {
         }), (0, o.jsx)(A.Z, {
           renderIcon: !1,
           users: F,
-          size: L,
+          size: D,
           max: 6,
           renderUser: e => V(e, M)
         })]
       }), (0, o.jsxs)("div", {
-        className: i()(D.headerSection, D.headerSectionRight),
+        className: i()(L.headerSection, L.headerSectionRight),
         children: [(0, o.jsx)("div", {
-          className: D.fade
+          className: L.fade
         }), (0, o.jsxs)("div", {
-          className: D.actionButtonsContainer,
+          className: L.actionButtonsContainer,
           children: [(0, o.jsx)(y.Z, {
             appContext: z.IlC.POPOUT,
             applicationId: n,
@@ -179,7 +179,7 @@ function R(e) {
                 closePopout: n
               } = e;
               return (0, o.jsx)(v.Z, {
-                children: (0, o.jsx)(E.Z, {
+                children: (0, o.jsx)(W.Z, {
                   application: a,
                   channelId: t,
                   onClose: n

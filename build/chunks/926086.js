@@ -48,10 +48,10 @@ function m(e) {
   }, 100), () => {
     clearInterval(y.current)
   }), []);
-  let C = () => {
+  let N = () => {
       a(Date.now()), b(e => e + 1)
     },
-    N = l > 0 && m - l < 1e3,
+    C = l > 0 && m - l < 1e3,
     Z = (0, c.Yzy)(O > 0 && O < m && m - O < j, {
       from: {
         opacity: 0
@@ -73,9 +73,9 @@ function m(e) {
       style: e,
       className: h.clickZoneDebugContainer,
       children: (0, i.jsx)(p.Z, {
-        className: o()(h.clickZone, N && h.clickBackground),
+        className: o()(h.clickZone, C && h.clickBackground),
         children: (0, i.jsx)(c.P3F, {
-          onClick: C,
+          onClick: N,
           className: h.clickable,
           children: (0, i.jsxs)(c.Text, {
             variant: "text-md/semibold",

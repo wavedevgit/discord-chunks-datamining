@@ -1,6 +1,6 @@
 /**
   Module ID: 27278
-  Original File Name: 7c05fabd00308f3c
+  Original File Name: 73fc16c93b24c4f7
 **/
 .buttonContainer__7e329 {
     display: flex;
@@ -924,15 +924,18 @@
 
 .recentChannelsMenu__711d3 {
     width: 360px;
-    background: var(--bg-surface-overlay);
+    background: rgba(0,0,0,.9);
     border-radius: 16px;
     padding: 8px
 }
 
 .recentChannelsMenuHeader__711d3 {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    padding: 0 12px
+    padding: 0 12px;
+    flex: 1;
+    margin-bottom: 2px
 }
 
 .channelMenuSubContainer__711d3 {
@@ -954,8 +957,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     background: var(--bg-surface-overlay)
 }
 
@@ -973,10 +976,12 @@
     min-width: 0;
     width: calc(100% - 16px);
     overflow: hidden;
+    height: 48px;
     border-radius: 8px;
-    padding: 12px 12px 12px 0;
+    padding: 6px 6px 6px 0;
+    margin-bottom: 2px;
     cursor: pointer;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     background-color: transparent;
     transition: border-color .1s ease-in-out
 }
@@ -990,7 +995,7 @@
 }
 
 .channelItemContainer__711d3.channelItemConnected__711d3 {
-    border: 1px solid var(--status-positive)
+    border: 2px solid var(--status-positive)
 }
 
 .searchBarContainer__711d3 {
@@ -998,8 +1003,9 @@
 }
 
 .searchBar__711d3 {
-    background-color: var(--bg-mod-strong)!important;
-    border-radius: 12px!important
+    background-color: var(--bg-mod-subtle)!important;
+    border-radius: 12px!important;
+    border-color: var(--border-strong)!important
 }
 
 .emptyChannelItem__711d3 {
@@ -1045,11 +1051,18 @@
 .channelItemAvatars__711d3 {
     display: flex;
     align-items: center;
-    gap: 4px
+    gap: 4px;
+    padding-right: 4px
 }
 
 .channelList__711d3 {
     max-height: 360px
+}
+
+.channelListWrapper__711d3 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px
 }
 
 .toggleIconContainer__46219 {

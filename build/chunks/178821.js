@@ -6,8 +6,8 @@ r.d(t, {
   ZP: () => I,
   d6: () => y,
   m8: () => w,
-  nU: () => E,
-  tO: () => p
+  nU: () => S,
+  tO: () => f
 }), r(47120);
 var n = r(200651),
   a = r(192379),
@@ -51,8 +51,8 @@ function h(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-let p = 1e3 / 60,
-  f = 1e3 / 30,
+let f = 1e3 / 60,
+  p = 1e3 / 30,
   g = 5e3,
   b = 1e3 / 60 * 3,
   j = Math.ceil(3e3 / (1e3 / 60));
@@ -124,17 +124,17 @@ function y(e, t) {
         m = a - c.current;
       if (c.current = a, t.current && !r) return;
       if (s.current -= n.current[o.current], n.current[o.current] = m, s.current += m, i.current < j && (i.current += 1), o.current = (o.current + 1) % j, m > b) {
-        let t = 0 === i.current ? p : s.current / i.current,
-          r = Math.min(2 * p, t),
-          n = Math.floor(m / (e ? r : p));
+        let t = 0 === i.current ? f : s.current / i.current,
+          r = Math.min(2 * f, t),
+          n = Math.floor(m / (e ? r : f));
         n > 0 && (d.current = performance.now()), l.current += n
       }
-      let x = 0 === i.current ? p : s.current / i.current;
+      let x = 0 === i.current ? f : s.current / i.current;
       u.current += m / x
     }, [e, t, r]),
     h = 0 === i.current ? 0 : s.current / i.current;
   return {
-    currentFPS: 0 === h ? 0 : p / h * 60,
+    currentFPS: 0 === h ? 0 : f / h * 60,
     averageFrameTime: h,
     timeSinceLastDrop: (performance.now() - d.current) / 1e3,
     droppedFramesRef: l,
@@ -163,18 +163,18 @@ function k(e) {
     currentFPS: s,
     averageFrameTime: o,
     timeSinceLastDrop: m,
-    onResetFrameData: f,
+    onResetFrameData: p,
     droppedFramesRef: b,
     renderedFrameCount: j,
     bufferFramecountRef: k,
     frameCheckerEffect: R
-  } = y(r, c), [O, S, E] = T(t), [I, F] = v(O, R), P = performance.now() - l.current < g, N = S(o, k.current);
+  } = y(r, c), [O, E, S] = T(t), [I, F] = v(O, R), P = performance.now() - l.current < g, N = E(o, k.current);
   (0, i.ZP)(() => (I(), () => {
     F()
   }));
   let C = a.useCallback(() => {
-    f(), E(), I()
-  }, [f, E, I]);
+    p(), S(), I()
+  }, [p, S, I]);
   return (0, n.jsxs)("div", {
     className: d.panelGroup,
     children: [(0, n.jsxs)(u.Text, {
@@ -228,7 +228,7 @@ function k(e) {
       children: ["Frame Times (~3sec):", " ", (0, n.jsxs)(u.Text, {
         tag: "span",
         variant: "text-md/semibold",
-        color: o > 1.1 * p ? "text-warning" : "text-secondary",
+        color: o > 1.1 * f ? "text-warning" : "text-secondary",
         children: [o.toFixed(2), "ms"]
       })]
     }), (0, n.jsx)(u.ua7, {
@@ -278,7 +278,7 @@ function R(e) {
   a.useEffect(() => {
     let e = setInterval(() => {
       s(t.dispatcher.getIsRequestIdleCallbackEnabled())
-    }, f);
+    }, p);
     return i.current = e, () => {
       null != i.current && clearInterval(i.current)
     }
@@ -381,7 +381,7 @@ function O(e) {
   })
 }
 
-function S(e) {
+function E(e) {
   let {
     socket: t
   } = e, r = t.dispatcher.getSchedulerTelemetry(), [c, s] = a.useState(r.isTelemetryEnabled), [i, o] = a.useState(r.isTelemetryEnabled), m = e => {
@@ -461,12 +461,12 @@ function S(e) {
   })
 }
 
-function E() {
+function S() {
   let [, e] = a.useState({});
   a.useEffect(() => {
     let t = setInterval(() => {
       e({})
-    }, f);
+    }, p);
     return () => {
       clearInterval(t)
     }
@@ -476,7 +476,7 @@ function E() {
 function I() {
   let e = (0, s.e7)([o.Z], () => o.Z.getSocket()),
     [t, r] = a.useState(!1);
-  return E(), (0, n.jsx)("div", {
+  return S(), (0, n.jsx)("div", {
     className: l()(m.panel, d.panel),
     children: (0, n.jsxs)(u.zJl, {
       className: d.panel,
@@ -489,7 +489,7 @@ function I() {
         onToggleAverageFrameTime: r
       }), (0, n.jsx)(O, {
         socket: e
-      }), (0, n.jsx)(S, {
+      }), (0, n.jsx)(E, {
         socket: e
       })]
     })

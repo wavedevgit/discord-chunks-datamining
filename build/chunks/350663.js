@@ -85,18 +85,18 @@ let y = 8,
       streamParticipants: x,
       participantsVersion: I,
       pinned: S
-    } = e, C = 9 / 16 * n, N = x.map(e => ({
+    } = e, N = 9 / 16 * n, C = x.map(e => ({
       participant: e,
       key: e.user.id,
       width: n,
       locked: h,
       widgetId: t,
-      height: C,
+      height: N,
       pinned: S
-    })), Z = (0, u.Z)(n), w = l === f.C5.VERTICAL, P = 0, _ = 0, T = (0, s.Yzy)(w ? N.map((e, t) => v(O({}, e), {
+    })), Z = (0, u.Z)(n), w = l === f.C5.VERTICAL, P = 0, _ = 0, T = (0, s.Yzy)(w ? C.map((e, t) => v(O({}, e), {
       y: (P += e.height + (t > 0 ? y : 0)) - e.height,
       x: 0
-    })) : N.map((e, t) => v(O({}, e), {
+    })) : C.map((e, t) => v(O({}, e), {
       x: (_ += e.width + (t > 0 ? y : 0)) - e.width,
       y: 0
     })), {
@@ -140,15 +140,15 @@ let y = 8,
       },
       config: b,
       trail: 100 * (n === Z)
-    }, n !== Z ? "animate-never" : "respect-motion-settings"), D = (0, p.ee)(() => new Set(x.map(e => e.user.id)), [x, I]), A = (0, p.ee)(() => new Set(x.filter(e => j.has((0, c.V9)(e.stream))).map(e => e.user.id)), [x, j, I]);
+    }, n !== Z ? "animate-never" : "respect-motion-settings"), D = (0, p.ee)(() => new Set(x.map(e => e.user.id)), [x, I]), k = (0, p.ee)(() => new Set(x.filter(e => j.has((0, c.V9)(e.stream))).map(e => e.user.id)), [x, j, I]);
     return r.useEffect(() => {
       0 !== D.size && (0, p.zi)(m.Odu.GO_LIVE, {
         locked: d.default.isInstanceLocked(),
         shownUserIds: Array.from(D),
-        liveUserIds: Array.from(A),
+        liveUserIds: Array.from(k),
         contentInventoryIds: []
       })
-    }, [D, A]), (0, i.jsx)("div", {
+    }, [D, k]), (0, i.jsx)("div", {
       className: o()({
         [g.gridContainer]: !0,
         [g.vertical]: w,
@@ -163,8 +163,8 @@ let y = 8,
         className: g.gridItem,
         style: Object.assign({}, e, {
           width: n,
-          height: C,
-          zIndex: N.length - l
+          height: N,
+          zIndex: C.length - l
         }),
         children: E(t)
       }))

@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => P
+  Z: () => w
 }), n(47120), n(566702);
 var r = n(200651),
   a = n(192379),
@@ -185,17 +185,17 @@ let I = [{
       return "".concat(N(t.totalTime), " ms")
     }
   }],
-  k = e => {
-    let {
-      actionLog: t
-    } = e;
-    return t.name
-  },
-  w = {
-    searchType: h.S.REGEX
+  k = {
+    searchType: h.S.REGEX,
+    searchStringGenerator: e => {
+      let {
+        actionLog: t
+      } = e;
+      return t.name
+    }
   };
 
-function P() {
+function w() {
   let e = a.useRef(null),
     [t, n] = a.useState(""),
     i = function(e) {
@@ -218,20 +218,13 @@ function P() {
     [_, g] = a.useState(),
     j = a.useCallback(e => {
       x(e)
-    }, []),
-    N = (0, p.c)(k, j, w),
-    T = a.useCallback(e => {
+    }, []);
+  (0, p.BO)(t, f ? c : s, j, k);
+  let N = a.useCallback(e => {
       m(s), b(e)
-    }, [s]);
-  a.useEffect(() => {
-    if (f) {
-      N(t, null != c ? c : s);
-      return
-    }
-    N(t, s)
-  }, [f, t, N, s, c]);
-  let O = t.trim().length > 0,
-    S = a.useMemo(() => O ? h : f ? c : s, [s, h, O, f, c]);
+    }, [s]),
+    T = t.trim().length > 0,
+    O = a.useMemo(() => T ? h : f ? c : s, [s, h, T, f, c]);
   return (0, r.jsxs)("div", {
     ref: e,
     className: l()(C.panel, y.panel),
@@ -242,7 +235,7 @@ function P() {
         className: y.pausedEvents,
         children: (0, r.jsx)(d.rsf, {
           checked: !f,
-          onChange: e => T(!e)
+          onChange: e => N(!e)
         })
       }), (0, r.jsx)(d.E1j, {
         className: y.searchBar,
@@ -253,7 +246,7 @@ function P() {
       })]
     }), (0, r.jsx)(v.Z, {
       columns: I,
-      data: S,
+      data: O,
       selectedRowKey: null == _ ? void 0 : _.id.toString(),
       onClickRow: e => g(e.actionLog)
     }), null != _ && (0, r.jsx)(E, {

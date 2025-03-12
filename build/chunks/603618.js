@@ -26,16 +26,16 @@ var i = n(200651),
   x = n(656709),
   I = n(567409),
   S = n(225559),
-  C = n(703656),
-  N = n(93127),
+  N = n(703656),
+  C = n(93127),
   Z = n(814443),
   w = n(752048),
   P = n(409057),
   _ = n(199902),
   T = n(592125),
   D = n(293273),
-  A = n(158776),
-  k = n(699516),
+  k = n(158776),
+  A = n(699516),
   L = n(594174),
   R = n(801077),
   M = n(237997),
@@ -67,7 +67,7 @@ function B(e) {
   return e
 }
 
-function K(e, t) {
+function Q(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -80,7 +80,7 @@ function K(e, t) {
   }), e
 }
 
-function Q(e) {
+function K(e) {
   let {
     entry: t,
     currentUserActivity: n,
@@ -107,7 +107,7 @@ function Q(e) {
             var i;
             let e = await f.Z.getOrEnsurePrivateChannel(a.id),
               n = null !== (i = T.Z.getChannel(e)) && void 0 !== i ? i : null;
-            o()(null != n, "Send channel must be defined"), (0, C.uL)(F.Z5c.CHANNEL(n.guild_id, n.id)), (0, v.i)(F.IlC.OVERLAY, !0), !0 === t.extra.fake_inventory_item ? await (0, x.k)({
+            o()(null != n, "Send channel must be defined"), (0, N.uL)(F.Z5c.CHANNEL(n.guild_id, n.id)), (0, v.i)(F.IlC.OVERLAY, !0), !0 === t.extra.fake_inventory_item ? await (0, x.k)({
               channel: n,
               content: Y.NW.formatToPlainString(Y.t.UVBA9v, {
                 gameName: t.extra.game_name
@@ -138,7 +138,7 @@ function Q(e) {
       if (null == a) return;
       let t = await f.Z.getOrEnsurePrivateChannel(a.id),
         n = null !== (e = T.Z.getChannel(t)) && void 0 !== e ? e : null;
-      o()(null != n, "Send channel must be defined"), (0, C.uL)(F.Z5c.CHANNEL(n.guild_id, n.id)), (0, v.i)(F.IlC.OVERLAY, !0), (0, U.Ws)(F.Odu.ACTIVITY, {
+      o()(null != n, "Send channel must be defined"), (0, N.uL)(F.Z5c.CHANNEL(n.guild_id, n.id)), (0, v.i)(F.IlC.OVERLAY, !0), (0, U.Ws)(F.Odu.ACTIVITY, {
         type: U.Qu.REDIRECT,
         value: U.bk.CHAT,
         userId: a.id
@@ -153,7 +153,7 @@ function Q(e) {
   return (0, i.jsx)(d.ua7, {
     text: j,
     "aria-label": j,
-    children: e => (0, i.jsx)(d.zxk, K(B({}, e), {
+    children: e => (0, i.jsx)(d.zxk, Q(B({}, e), {
       submitting: "sending" === s,
       onClick: h ? b : E,
       className: H.inviteButton,
@@ -179,7 +179,7 @@ function X(e) {
   let {
     entry: n,
     currentUserActivity: l
-  } = e, o = (0, c.e7)([L.default], () => L.default.getUser(n.author_id)), a = null !== (t = null == l ? void 0 : l.application_id) && void 0 !== t ? t : n.extra.application_id, s = (0, c.e7)([A.Z], () => null != o ? A.Z.getApplicationActivity(o.id, a) : null, [a, o]), [u, h] = r.useState("unsent");
+  } = e, o = (0, c.e7)([L.default], () => L.default.getUser(n.author_id)), a = null !== (t = null == l ? void 0 : l.application_id) && void 0 !== t ? t : n.extra.application_id, s = (0, c.e7)([k.Z], () => null != o ? k.Z.getApplicationActivity(o.id, a) : null, [a, o]), [u, h] = r.useState("unsent");
   if (!(null != s && (0, y.Z)(s, F.xjy.JOIN))) return null;
   let f = async e => {
     if (null != o && "unsent" === u) {
@@ -203,7 +203,7 @@ function X(e) {
   return (0, i.jsx)(d.ua7, {
     text: m,
     "aria-label": m,
-    children: e => (0, i.jsx)(d.zxk, K(B({}, e), {
+    children: e => (0, i.jsx)(d.zxk, Q(B({}, e), {
       submitting: "sending" === u,
       onClick: f,
       className: H.inviteButton,
@@ -232,12 +232,12 @@ function J(e) {
   } = e, l = (0, c.e7)([L.default], () => L.default.getUser(t.author_id)), o = (0, c.e7)([_.Z], () => null != l ? _.Z.getAnyStreamForUser(l.id) : null, [l]), {
     isMobileOnline: a,
     status: s
-  } = (0, c.cj)([A.Z], () => null == l ? {
+  } = (0, c.cj)([k.Z], () => null == l ? {
     isMobileOnline: void 0,
     status: void 0
   } : {
-    isMobileOnline: A.Z.isMobileOnline(l.id),
-    status: A.Z.getStatus(l.id)
+    isMobileOnline: k.Z.isMobileOnline(l.id),
+    status: k.Z.getStatus(l.id)
   }, [l]);
   return null == l ? null : (0, i.jsxs)("div", {
     className: H.row,
@@ -269,7 +269,7 @@ function J(e) {
       entry: t,
       currentUserActivity: n,
       idx: r
-    }), (0, i.jsx)(Q, {
+    }), (0, i.jsx)(K, {
       entry: t,
       currentUserActivity: n,
       idx: r
@@ -325,10 +325,10 @@ function ee(e) {
     userAffinityThresholdV2: l = .0029
   } = e, o = (0, I.Ns)(t);
   (0, O.ZP)(() => {
-    (0, N.W)(), (0, N._)()
+    (0, C.W)(), (0, C._)()
   });
   let d = (0, c.e7)([D.Z], () => null == t ? null : D.Z.getApplicationActivity(t), [t]),
-    p = (0, c.Wu)([R.Z, k.Z, Z.Z, w.Z], () => {
+    p = (0, c.Wu)([R.Z, A.Z, Z.Z, w.Z], () => {
       if (null == t) return [];
       let e = R.Z.nowPlayingCards,
         n = {
@@ -344,7 +344,7 @@ function ee(e) {
       }, []).filter(e => {
         var t;
         let i = e.activityUser.id,
-          r = k.Z.isFriend(i);
+          r = A.Z.isFriend(i);
         return !! function(e, t, n) {
           let {
             v1: i
@@ -405,7 +405,7 @@ function ee(e) {
 
 function et(e) {
   let t = ee(e);
-  return (0, i.jsx)($, K(B({}, t), {
+  return (0, i.jsx)($, Q(B({}, t), {
     className: e.className
   }))
 }

@@ -60,8 +60,8 @@ let I = r.memo(function(e) {
     renderTitle: l,
     renderButtons: I,
     resizeValidation: S,
-    className: C,
-    dragContainerClassName: N
+    className: N,
+    dragContainerClassName: C
   } = e, Z = c.Z.getWidgetConfig(t.type), w = (0, a.e7)([d.default], () => d.default.isLocked((0, f.getPID)())), P = (0, y.Z)(), _ = (0, a.e7)([p.Z], () => p.Z.windowSize((0, m.ZY)(P))), T = r.useCallback((e, t, n, i, r) => {
     let l = p.Z.windowSize((0, m.ZY)((0, y.i)())),
       o = (0, h.jL)(n, l),
@@ -87,8 +87,8 @@ let I = r.memo(function(e) {
   }, []), D = r.useCallback(e => {
     (0, s.Os)(e)
   }, []), {
-    id: A,
-    pinned: k,
+    id: k,
+    pinned: A,
     zIndex: L,
     size: R,
     anchor: M
@@ -97,7 +97,7 @@ let I = r.memo(function(e) {
     resizeX: U,
     resizeY: G,
     dragAnywhere: F
-  } = null != Z ? Z : {}, Y = k || !w, H = r.useMemo(() => ({
+  } = null != Z ? Z : {}, Y = A || !w, H = r.useMemo(() => ({
     minX: 0,
     minY: 0,
     maxX: _.width,
@@ -105,22 +105,22 @@ let I = r.memo(function(e) {
   }), [_]), B = r.useCallback(e => n(x(j({}, e), {
     widget: t,
     dragging: null != e.dragOperation,
-    className: C
-  })), [t, n, C]), K = r.useCallback(e => null != l || null != I ? (0, i.jsxs)("div", {
+    className: N
+  })), [t, n, N]), Q = r.useCallback(e => null != l || null != I ? (0, i.jsxs)("div", {
     className: b.extrasContainer,
     children: [null == l ? void 0 : l(t), null == I ? void 0 : I(t, e)]
-  }) : null, [t, l, I]), Q = (0, a.e7)([v.ZP], () => v.ZP.hasRenderDebugMode(O.G.WidgetAreas)), X = r.useMemo(() => {
+  }) : null, [t, l, I]), K = (0, a.e7)([v.ZP], () => v.ZP.hasRenderDebugMode(O.G.WidgetAreas)), X = r.useMemo(() => {
     if (null != S) return e => S(x(j({}, e), {
       widget: t
     }))
   }, [S, t]);
   return (0, i.jsx)(g.Z, {
     className: o()({
-      [b.debug]: Q,
-      [b.debugUnpinned]: Q && !k,
-      [b.debugPinned]: Q && k
-    }, N),
-    id: A,
+      [b.debug]: K,
+      [b.debugUnpinned]: K && !A,
+      [b.debugPinned]: K && A
+    }, C),
+    id: k,
     size: W,
     anchor: V,
     container: H,
@@ -140,7 +140,7 @@ let I = r.memo(function(e) {
     onUpdate: T,
     onClick: D,
     targetWindow: P,
-    renderExtras: K,
+    renderExtras: Q,
     resizeValidation: X,
     children: B
   })
