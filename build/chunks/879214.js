@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(182567),
   m = n(963249),
   p = n(594174),
-  g = n(74538),
+  g = n(111361),
   h = n(821629),
   f = n(114625),
   b = n(711896),
@@ -25,7 +25,7 @@ let j = e => {
   let {
     isFullScreen: t,
     analyticsLocations: n
-  } = e, i = (0, l.e7)([p.default], () => p.default.getCurrentUser()), j = (0, l.e7)([c.Z], () => c.Z.useReducedMotion), C = g.ZP.isPremiumExactly(i, x.p9.TIER_1), O = new Date(N.Lk);
+  } = e, i = (0, l.e7)([p.default], () => p.default.getCurrentUser()), j = (0, l.e7)([c.Z], () => c.Z.useReducedMotion), C = (0, g.M5)(i, x.p9.TIER_0) || (0, g.M5)(i, x.p9.TIER_1), O = new Date(N.Lk);
   return (0, r.jsx)(u.O, {
     newLocations: [d.Z.PREMIUM_MARKETING_PAGE_BANNER],
     children: (0, r.jsx)("div", {
