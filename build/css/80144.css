@@ -1,6 +1,6 @@
 /**
   Module ID: 80144
-  Original File Name: 4a0a8417a03d2176
+  Original File Name: ec72d7e13874a5e1
 **/
 .row__19fd1 {
     align-items: center;
@@ -108,4 +108,13 @@
     position: absolute;
     right: var(--spacing-16);
     top: var(--spacing-16)
+}
+
+html:not(.visual-refresh) .modalFooter_a2e66b {
+    padding-left: var(--spacing-32);
+    padding-right: var(--spacing-32)
+}
+
+.learnMoreButton_a2e66b {
+    padding-left: 0
 }
