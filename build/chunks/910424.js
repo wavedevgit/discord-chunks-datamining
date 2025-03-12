@@ -1,4 +1,4 @@
-/** Chunk was on 88936 **/
+/** Chunk was on 86546 **/
 n.d(t, {
   Z: () => v
 }), n(47120);
@@ -17,9 +17,9 @@ var l = n(442837),
   m = n(915863),
   g = n(981631),
   y = n(388032),
-  b = n(913009);
+  O = n(913009);
 
-function O(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -82,7 +82,7 @@ function v(e) {
     look: v
   };
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(m.Z, h(O({
+    children: [(0, r.jsxs)(m.Z, h(b({
       disabled: t || Z || !I,
       onClick: () => T(!1)
     }, C), {
@@ -90,22 +90,22 @@ function v(e) {
       children: [(0, r.jsx)(i.hGI, {
         size: "md",
         color: "currentColor",
-        className: b.streamIcon
+        className: O.streamIcon
       }), w]
     }), "play"), N && !Z ? (0, r.jsx)(i.ua7, {
       text: y.NW.string(y.t.wCrzur),
-      children: e => (0, r.jsx)(m.Z, h(O(h(O({}, e), {
+      children: e => (0, r.jsx)(m.Z, h(b(h(b({}, e), {
         onClick: () => {
           var t;
           null === (t = e.onClick) || void 0 === t || t.call(e), T(!0)
         }
       }), C), {
-        className: b.iconButton,
-        size: b.iconButtonSize,
+        className: O.iconButton,
+        size: O.iconButtonSize,
         children: (0, r.jsx)(i.OgY, {
           size: "xs",
           color: "currentColor",
-          className: b.iconSize
+          className: O.iconSize
         })
       }))
     }) : null]

@@ -12,17 +12,17 @@ var i = n(192379),
   c = n(318885),
   d = n(592125),
   u = n(984933),
-  p = n(271383),
-  h = n(430824),
-  f = n(496675),
-  v = n(944486),
+  h = n(271383),
+  p = n(430824),
+  v = n(496675),
+  f = n(944486),
   m = n(914010),
-  E = n(594174),
-  y = n(237997),
-  O = n(145597),
-  _ = n(981631);
+  y = n(594174),
+  O = n(237997),
+  E = n(145597),
+  g = n(981631);
 
-function g(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -51,28 +51,28 @@ class Z extends i.Component {
       postableChannelCount: o
     } = this.props;
     if (null != t && (t !== e.selectedGuild || i && !e.isMemberPending)) {
-      var u, p;
-      (0, c.Q)(_.rMx.GUILD_VIEWED, (u = g({}, i ? {
+      var u, h;
+      (0, c.Q)(g.rMx.GUILD_VIEWED, (u = _({}, i ? {
         is_pending: i,
         preview_enabled: r
-      } : {}), p = p = {
+      } : {}), h = h = {
         postable_channels: o
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(p)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(h)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var i = Object.getOwnPropertySymbols(e);
           n.push.apply(n, i)
         }
         return n
-      })(Object(p)).forEach(function(e) {
-        Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(p, e))
-      }), u)), (0, s.a)(_.rMx.GUILD_VIEWED_CLICKSTREAM, {
+      })(Object(h)).forEach(function(e) {
+        Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(h, e))
+      }), u)), (0, s.a)(g.rMx.GUILD_VIEWED_CLICKSTREAM, {
         guildId: t
       })
     }
     if (null != n && n !== e.selectedChannel) {
       let e = (0, a.K)(d.Z.getChannel(n), !0);
-      (0, c.Q)(_.rMx.CHANNEL_OPENED, g({}, e, (0, l.$H)(n))), (0, s.a)(_.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+      (0, c.Q)(g.rMx.CHANNEL_OPENED, _({}, e, (0, l.$H)(n))), (0, s.a)(g.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: n
       })
     }
@@ -81,25 +81,25 @@ class Z extends i.Component {
     return null
   }
 }
-let b = o.ZP.connectStores([m.Z, v.Z, h.Z, E.default, y.default, u.ZP, f.Z, p.ZP], () => {
+let b = o.ZP.connectStores([m.Z, f.Z, p.Z, y.default, O.default, u.ZP, v.Z, h.ZP], () => {
   var e, t, n;
   let i = m.Z.getGuildId(),
-    o = v.Z.getChannelId(i),
-    l = h.Z.getGuild(i),
-    a = E.default.getCurrentUser(),
+    o = f.Z.getChannelId(i),
+    l = p.Z.getGuild(i),
+    a = y.default.getCurrentUser(),
     s = null !== (t = u.ZP.getChannels(null == l ? void 0 : l.id)[u.sH]) && void 0 !== t ? t : [],
     c = s.length > 0 ? s.filter(e => {
       let {
         channel: t
       } = e;
-      return f.Z.can(r.$e(_.Plq.SEND_MESSAGES, _.Plq.VIEW_CHANNEL), t)
+      return v.Z.can(r.$e(g.Plq.SEND_MESSAGES, g.Plq.VIEW_CHANNEL), t)
     }).length : 0,
-    d = null != a && null != i && null !== (n = null === (e = p.ZP.getMember(i, a.id)) || void 0 === e ? void 0 : e.isPending) && void 0 !== n && n;
+    d = null != a && null != i && null !== (n = null === (e = h.ZP.getMember(i, a.id)) || void 0 === e ? void 0 : e.isPending) && void 0 !== n && n;
   return {
     selectedGuild: i,
     selectedChannel: o,
-    locked: y.default.isLocked((0, O.getPID)()),
-    hasPreviewEnabled: null == l ? void 0 : l.features.has(_.oNc.PREVIEW_ENABLED),
+    locked: O.default.isLocked((0, E.getPID)()),
+    hasPreviewEnabled: null == l ? void 0 : l.features.has(g.oNc.PREVIEW_ENABLED),
     isMemberPending: d,
     postableChannelCount: c
   }

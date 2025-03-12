@@ -1,4 +1,4 @@
-/** Chunk was on 88936 **/
+/** Chunk was on 86546 **/
 n.d(t, {
   ZP: () => D,
   eJ: () => C,
@@ -18,8 +18,8 @@ var r = n(200651),
   m = n(795318),
   g = n(194082),
   y = n(282256),
-  b = n(925329),
-  O = n(880395),
+  O = n(925329),
+  b = n(880395),
   h = n(221241),
   v = n(592125),
   j = n(574254),
@@ -77,8 +77,8 @@ function _(e) {
     video: p,
     isStreaming: m,
     disabled: y,
-    isWatching: b,
-    iconClassName: O,
+    isWatching: O,
+    iconClassName: b,
     embeddedApplication: h,
     otherClientSessionType: v,
     voicePlatform: j,
@@ -91,7 +91,7 @@ function _(e) {
   if (f || y) return null;
   let W = [],
     M = (0, r.jsx)(k, {
-      iconClassName: O,
+      iconClassName: b,
       mute: n,
       localMute: l,
       serverMute: s,
@@ -104,7 +104,7 @@ function _(e) {
     children: (0, r.jsx)(a.Amn, {
       size: "md",
       color: "currentColor",
-      className: o()(T.icon, O),
+      className: o()(T.icon, b),
       colorClass: T.strikethrough
     })
   }, "video")) : W.push((0, r.jsx)(a.DY3, {
@@ -113,13 +113,13 @@ function _(e) {
     children: (0, r.jsx)(a.Odl, {
       size: "md",
       color: "currentColor",
-      className: o()(T.icon, O)
+      className: o()(T.icon, b)
     })
   }, "video"))), D && W.push((0, r.jsx)(a.DY3, {
     className: T.iconSpacing,
     text: Z.NW.string(Z.t.HFwRpq),
     children: (0, r.jsx)(a.P4T, {
-      className: o()(T.icon, O),
+      className: o()(T.icon, b),
       color: a.TVs.colors.STATUS_WARNING_BACKGROUND
     })
   }, "disconnected")), null != h && W.push((0, r.jsx)(a.DY3, {
@@ -128,25 +128,25 @@ function _(e) {
     children: (0, r.jsx)(a.nG3, {
       size: "md",
       color: "currentColor",
-      className: o()(T.icon, O)
+      className: o()(T.icon, b)
     })
   }, "activity")), v === A.YE.XBOX || j === x.wR.XBOX ? W.push((0, r.jsx)("div", {
     className: T.iconSpacing,
     children: (0, r.jsx)(P.Z, {
-      className: o()(T.icon, O)
+      className: o()(T.icon, b)
     })
   }, "xbox")) : (v === A.YE.PLAYSTATION || j === x.wR.PLAYSTATION) && W.push((0, r.jsx)("div", {
     className: T.iconSpacing,
     children: (0, r.jsx)(S.Z, {
-      className: o()(T.icon, O)
+      className: o()(T.icon, b)
     })
-  }, "playstation")), b && W.push((0, r.jsx)(a.DY3, {
+  }, "playstation")), O && W.push((0, r.jsx)(a.DY3, {
     className: T.iconSpacing,
     text: Z.NW.string(Z.t.JH1SJy),
     children: (0, r.jsx)(a.tEF, {
       size: "xs",
       color: "currentColor",
-      className: o()(T.icon, O)
+      className: o()(T.icon, b)
     })
   }, "watch")), m && W.push((0, r.jsx)("div", {
     className: o()(T.iconSpacing, T.liveIconSpacing),
@@ -164,7 +164,7 @@ function _(e) {
       className: T.iconGroup,
       children: (0, r.jsx)(L, {
         application: E,
-        iconClassName: O,
+        iconClassName: b,
         guildId: w,
         channelId: C,
         userId: _.id
@@ -181,7 +181,7 @@ let D = function(e) {
       disabled: d = !1,
       isOverlay: g = !1
     } = e,
-    b = function(e, t) {
+    O = function(e, t) {
       if (null == e) return {};
       var n, r, l = function(e, t) {
         if (null == e) return {};
@@ -211,14 +211,14 @@ let D = function(e) {
     guildId: R,
     nick: F,
     isGuest: G,
-    flipped: V,
-    className: Y,
+    flipped: Y,
+    className: V,
     overlap: B,
     "aria-label": z,
     ringing: H,
     user: J,
     channelId: Q
-  } = b, {
+  } = O, {
     parentAnalyticsLocation: X
   } = (0, f.ZP)(), K = (0, c.bp)(), q = null != Q ? v.Z.getChannel(Q) : null, {
     simplifiedSettingsEnabled: $
@@ -232,7 +232,7 @@ let D = function(e) {
       };
     return j.Z.addChangeListener(t), () => j.Z.removeChangeListener(t)
   }, []), (0, r.jsx)(a.kL8, {
-    className: o()(Y, {
+    className: o()(V, {
       [T.voiceUser]: !0,
       [T.overlap]: B,
       [T.selected]: u,
@@ -261,7 +261,7 @@ let D = function(e) {
     "aria-label": null !== (t = null != z ? z : F) && void 0 !== t ? t : J.username,
     children: (0, r.jsxs)("div", {
       className: o()(T.content, {
-        [T.flipped]: V
+        [T.flipped]: Y
       }),
       children: [L && !W ? (0, r.jsx)(a.ua7, {
         text: Z.NW.string(Z.t.BVK71t),
@@ -316,14 +316,14 @@ let D = function(e) {
         }), e)) : null
       }(), (0, r.jsx)(_, w({
         disabled: d
-      }, b)), $ && (W ? null : (0, r.jsx)(a.DY3, {
+      }, O)), $ && (W ? null : (0, r.jsx)(a.DY3, {
         text: Z.NW.string(Z.t["+1H47u"]),
         children: (0, r.jsx)(a.P3F, {
           className: o()(T.optionsButton, {
             [T.optionsActive]: ee
           }),
           onClick: function(e) {
-            null != R && null != q && ((0, p.v)(X, p.d.MORE), et(!0), (0, O.D)(e, J, q, {
+            null != R && null != q && ((0, p.v)(X, p.d.MORE), et(!0), (0, b.D)(e, J, q, {
               context: K
             }, (e, t) => {
               (0, m.o)({
@@ -369,10 +369,10 @@ function L(e) {
     className: T.iconSpacing,
     children: (0, r.jsx)("div", {
       ref: m,
-      children: (0, r.jsx)(b.Z, {
+      children: (0, r.jsx)(O.Z, {
         className: o()(T.icon, n),
         game: t,
-        size: b.Z.Sizes.XSMALL,
+        size: O.Z.Sizes.XSMALL,
         onMouseEnter: () => {
           d.ZP.trackWithMetadata(I.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_HOVERED, {
             channel_id: c,

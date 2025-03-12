@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(906732),
   y = n(321231),
   x = n(758199),
-  O = n(943762),
-  j = n(914498),
+  j = n(943762),
+  O = n(914498),
   E = n(880251),
   N = n(208444),
   C = n(835473),
@@ -172,10 +172,10 @@ function Q(e) {
   var t, n, a;
   let l, d, {
       invite: x,
-      getAcceptInviteContext: O
+      getAcceptInviteContext: j
     } = e,
     {
-      approximate_member_count: j,
+      approximate_member_count: O,
       approximate_presence_count: E,
       target_type: N,
       target_application: I
@@ -240,10 +240,10 @@ function Q(e) {
     ef = i.useCallback(() => {
       (0, p.r$)(x, "accept", ed), p.ZP.acceptInviteAndTransitionToInviteChannel({
         inviteKey: x.code,
-        context: O("Invite Button Embed"),
+        context: j("Invite Button Embed"),
         analyticsLocations: ed
       })
-    }, [x, ed, O]),
+    }, [x, ed, j]),
     eh = x.state === F.r2o.ACCEPTING,
     eg = null != ei;
   if (null == ei) {
@@ -264,7 +264,7 @@ function Q(e) {
     isMember: eg,
     channel: es,
     guild: ei,
-    members: j,
+    members: O,
     membersOnline: E,
     isActivityActive: el,
     submitting: eh,
@@ -328,7 +328,7 @@ function Q(e) {
             children: B.NW.string(B.t.lEvDDQ)
           })]
         }) : null, eg ? null : (0, r.jsx)(X, {
-          members: j,
+          members: O,
           membersOnline: E,
           isLarge: L,
           isStacked: Q
@@ -407,7 +407,7 @@ function J(e) {
   }), C = (0, N.z)(t), I = (0, E.E)(t), S = a.length, T = i.useMemo(() => {
     let e = [{
       label: o ? u ? B.NW.string(B.t.VJlc0d) : B.NW.string(B.t.RscU7O) : B.NW.string(B.t["2BP08P"]),
-      trackingArea: o ? j.j_.PLAY : j.j_.JOIN_SERVER,
+      trackingArea: o ? O.j_.PLAY : O.j_.JOIN_SERVER,
       submitting: p,
       disabledReason: m && null != f ? f : void 0,
       onClick: h
@@ -428,7 +428,7 @@ function J(e) {
         isStacked: !1,
         hasEnded: !u,
         textColor: "none"
-      }), o ? S > 0 && (0, r.jsx)(O.K, {
+      }), o ? S > 0 && (0, r.jsx)(j.K, {
         activityUsers: a,
         guildId: s.id,
         activityText: B.NW.string(B.t.BMTj29)
@@ -443,7 +443,7 @@ function J(e) {
     actions: T,
     trackingConfig: {
       id: t.id,
-      linkType: j.Un.ACTIVITY_INVITE,
+      linkType: O.Un.ACTIVITY_INVITE,
       onView: g
     }
   }))

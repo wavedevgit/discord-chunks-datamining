@@ -26,8 +26,8 @@ function O(e, t, n) {
     b = o.Z.getApplication(t),
     j = a.ZP.getRunningGames().find(e => e.id === t),
     x = null !== (O = null == j ? void 0 : j.name) && void 0 !== O ? O : null == b ? void 0 : b.name,
-    I = (0, p.oY)(null == E ? void 0 : E.guild_id, null == E ? void 0 : E.id, v),
-    S = (0, i.jsxs)("div", {
+    S = (0, p.oY)(null == E ? void 0 : E.guild_id, null == E ? void 0 : E.id, v),
+    I = (0, i.jsxs)("div", {
       className: g.nowPlayingNotification,
       children: [(0, i.jsx)("div", {
         className: g.nowPlayingNotificationIcon,
@@ -43,7 +43,7 @@ function O(e, t, n) {
           color: "interactive-normal",
           className: g.bodyText,
           children: m.NW.format(m.t["q7/rgo"], {
-            username: null != I ? I : v.username,
+            username: null != S ? S : v.username,
             gameName: x,
             gameIcon: () => null != b || null != j ? (0, i.jsx)(s.Z, {
               game: b,
@@ -56,8 +56,8 @@ function O(e, t, n) {
       })]
     }),
     {
-      trackView: N,
-      trackClick: C
+      trackView: C,
+      trackClick: N
     } = (0, h.R)(f.n0.NowPlayingNotification, {
       notif_type: f.n0.NowPlayingNotification,
       notif_user_id: v.id,
@@ -65,17 +65,17 @@ function O(e, t, n) {
       activity_name: null != x ? x : n.name
     });
   return {
-    body: S,
+    body: I,
     className: g.nowPlayingNotificationContainer,
     wrapperClassName: g.nowPlayingNotificationWrapper,
     animationWrapperClassName: g.nowPlayingNotificationAnimationWrapper,
     maxBodyLines: 1,
     disableClickableRegions: !0,
     onNotificationShow: () => {
-      N()
+      C()
     },
     onDismissClick: () => {
-      C("dismiss")
+      N("dismiss")
     }
   }
 }

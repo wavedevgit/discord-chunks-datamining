@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(313201),
   y = n(592125),
   x = n(984933),
-  O = n(768119),
-  j = n(944486),
+  j = n(768119),
+  O = n(944486),
   E = n(585483),
   N = n(72006),
   C = n(405656),
@@ -225,7 +225,7 @@ class D extends i.PureComponent {
         this.focusEditor();
         return
       }
-      let n = j.Z.getChannelId(),
+      let n = O.Z.getChannelId(),
         r = y.Z.getChannel(n);
       if ((null == r ? void 0 : r.isThread()) && (r = y.Z.getChannel(null == r ? void 0 : r.parent_id)), null == r || r.isPrivate()) {
         this.focusEditor();
@@ -376,19 +376,19 @@ class D extends i.PureComponent {
     }), C.WU()
   }
 }
-let L = d.ZP.connectStores([_.Z, O.Z], () => {
+let L = d.ZP.connectStores([_.Z, j.Z], () => {
   var e;
-  let t = O.Z.getCurrentSearchId(),
-    n = O.Z.getSearchType(),
-    r = null != t && O.Z.isSearching(t),
-    i = null != t && null !== (e = O.Z.getEditorState(t)) && void 0 !== e ? e : N.nR(I.Jl(h.ZP)),
+  let t = j.Z.getCurrentSearchId(),
+    n = j.Z.getSearchType(),
+    r = null != t && j.Z.isSearching(t),
+    i = null != t && null !== (e = j.Z.getEditorState(t)) && void 0 !== e ? e : N.nR(I.Jl(h.ZP)),
     a = _.Z.keyboardModeEnabled;
   return {
     searchId: t,
     searchType: n,
     isSearching: r,
     editorState: i,
-    hasResults: O.Z.hasResults(t),
+    hasResults: j.Z.hasResults(t),
     keyboardModeEnabled: a
   }
 })(D)

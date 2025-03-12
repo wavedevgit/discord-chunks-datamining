@@ -1,6 +1,6 @@
 /** Chunk was on 39251 **/
 n.d(t, {
-  Z: () => j
+  Z: () => O
 }), n(789020), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -21,10 +21,10 @@ var r = n(200651),
   v = n(358595),
   y = n(981631),
   x = n(388032),
-  O = n(651873);
+  j = n(651873);
 
-function j(e) {
-  var t, j;
+function O(e) {
+  var t, O;
   let E, N, C, {
       onTransitionToInviteChannel: I,
       onAcceptInstantInvite: S,
@@ -46,7 +46,7 @@ function j(e) {
     U = null != M && M.isGuildVocal(),
     B = null != M && M.isGuildStageVoice(),
     G = (0, h.yE)(null !== (t = P.flags) && void 0 !== t ? t : 0, a.$.IS_GUEST_INVITE),
-    H = null !== (j = null == T ? void 0 : T.hasFeature(y.oNc.HUB)) && void 0 !== j && j,
+    H = null !== (O = null == T ? void 0 : T.hasFeature(y.oNc.HUB)) && void 0 !== O && O,
     V = (0, d.h)(),
     z = null == T ? void 0 : T.id,
     {
@@ -77,7 +77,7 @@ function j(e) {
     isStream: !1
   });
   return N = (0, r.jsxs)("span", {
-    className: O.infoTitle,
+    className: j.infoTitle,
     children: [(0, r.jsx)(u.Z, {
       guildId: T.id,
       name: T.name,
@@ -87,7 +87,7 @@ function j(e) {
         guild: T
       })
     }), (0, r.jsx)("span", {
-      className: O.infoBadge,
+      className: j.infoBadge,
       children: (0, r.jsx)(p.Z, {
         guild: T,
         isBannerVisible: !1,
@@ -95,21 +95,21 @@ function j(e) {
       })
     })]
   }), G && (C = (0, r.jsx)(o.DY3, {
-    className: O.tooltipContainer,
+    className: j.tooltipContainer,
     text: x.NW.string(x.t["/FeTKy"]),
     children: (0, r.jsx)(o.d3s, {
       size: "md",
       color: "currentColor",
-      className: O.infoIcon
+      className: j.infoIcon
     })
   })), U ? (N = (0, r.jsx)(m.Z.Channel, {
     channel: M
   }), E = (0, r.jsxs)("span", {
-    className: O.infoTitle,
+    className: j.infoTitle,
     children: [x.NW.format(x.t["2wimj4"], {
       guildName: T.name
     }), (0, r.jsx)("span", {
-      className: O.infoBadge,
+      className: j.infoBadge,
       children: (0, r.jsx)(p.Z, {
         guild: T,
         isBannerVisible: !1
@@ -129,7 +129,7 @@ function j(e) {
       extra: C
     }), (0, r.jsxs)(m.Z.Body, {
       children: [(0, r.jsxs)("div", {
-        className: O.headerLine,
+        className: j.headerLine,
         children: [(0, r.jsx)(m.Z.Icon, {
           guild: T
         }), (0, r.jsx)(m.Z.Info, {
@@ -145,7 +145,7 @@ function j(e) {
       })]
     }), T.hasFeature(y.oNc.HUB) && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: O.separator
+        className: j.separator
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",

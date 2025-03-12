@@ -30,28 +30,28 @@ function m(e) {
   } = d.ZP.useState(e => ({
     timeToLiveMs: e.timeToLiveMs,
     reappearTimeMs: e.reappearTimeMs
-  }), s()), I = {
+  }), s()), S = {
     timeToLiveMs: j,
     reappearTimeMs: x
-  }, S = r.useRef(I);
+  }, I = r.useRef(S);
   r.useEffect(() => {
-    S.current = I
+    I.current = S
   }), r.useEffect(() => (y.current = setInterval(() => {
     let e = Date.now();
     g(e), v(t => {
       if (0 === t) return e;
       let n = e - t,
-        i = S.current.timeToLiveMs,
-        r = i + S.current.reappearTimeMs;
+        i = I.current.timeToLiveMs,
+        r = i + I.current.reappearTimeMs;
       return n > i ? t + r : t
     })
   }, 100), () => {
     clearInterval(y.current)
   }), []);
-  let N = () => {
+  let C = () => {
       a(Date.now()), b(e => e + 1)
     },
-    C = l > 0 && m - l < 1e3,
+    N = l > 0 && m - l < 1e3,
     Z = (0, c.Yzy)(O > 0 && O < m && m - O < j, {
       from: {
         opacity: 0
@@ -73,9 +73,9 @@ function m(e) {
       style: e,
       className: h.clickZoneDebugContainer,
       children: (0, i.jsx)(p.Z, {
-        className: o()(h.clickZone, C && h.clickBackground),
+        className: o()(h.clickZone, N && h.clickBackground),
         children: (0, i.jsx)(c.P3F, {
-          onClick: N,
+          onClick: C,
           className: h.clickable,
           children: (0, i.jsxs)(c.Text, {
             variant: "text-md/semibold",

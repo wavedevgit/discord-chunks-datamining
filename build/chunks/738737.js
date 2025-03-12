@@ -35,8 +35,8 @@ function s(e) {
       STEPS: l
     } = await Promise.all([n.e("17938"), n.e("3743")]).then(n.bind(n, 7305));
     return n => {
-      var x, O, {
-          onClose: j
+      var x, j, {
+          onClose: O
         } = n,
         E = function(e, t) {
           if (null == e) return {};
@@ -76,10 +76,10 @@ function s(e) {
                 })
               }
               return e
-            }({}, E), O = O = {
+            }({}, E), j = j = {
               initialPlanId: t,
               onClose: e => {
-                j(), null == u || u(e)
+                O(), null == u || u(e)
               },
               analyticsLocations: f,
               analyticsObject: p,
@@ -92,15 +92,15 @@ function s(e) {
               trialId: c,
               trialFooterMessageOverride: d,
               reviewWarningMessage: v
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(x, Object.getOwnPropertyDescriptors(O)) : (function(e, t) {
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(x, Object.getOwnPropertyDescriptors(j)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
                 var r = Object.getOwnPropertySymbols(e);
                 n.push.apply(n, r)
               }
               return n
-            })(Object(O)).forEach(function(e) {
-              Object.defineProperty(x, e, Object.getOwnPropertyDescriptor(O, e))
+            })(Object(j)).forEach(function(e) {
+              Object.defineProperty(x, e, Object.getOwnPropertyDescriptor(j, e))
             }), x))
           })
         })

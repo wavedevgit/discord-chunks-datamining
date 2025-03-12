@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(311819),
   y = n(321231),
   x = n(758199),
-  O = n(943762),
-  j = n(914498),
+  j = n(943762),
+  O = n(914498),
   E = n(208444),
   N = n(429551),
   C = n(973616),
@@ -134,10 +134,10 @@ let B = i.memo(function(e) {
       a = Q.length,
       o = null !== (d = null == J ? void 0 : null === (n = J.timestamps) || void 0 === n ? void 0 : n.start) && void 0 !== d ? d : null == J ? void 0 : J.created_at,
       c = en ? el : null != $ ? $ : W.NW.string(W.t.oQn0h4),
-      u = (0, O.r)(J),
+      u = (0, j.r)(J),
       p = [{
         label: en ? W.NW.string(W.t.RscU7O) : W.NW.string(W.t.VJlc0d),
-        trackingArea: j.j_.PLAY,
+        trackingArea: O.j_.PLAY,
         onClick: eo,
         disabledReason: e,
         submitting: ea
@@ -164,7 +164,7 @@ let B = i.memo(function(e) {
               start: o
             })]
           })
-        }), a > 0 && (0, r.jsx)(O.K, {
+        }), a > 0 && (0, r.jsx)(j.K, {
           activityUsers: Q,
           guildId: R,
           activityText: u.text
@@ -173,7 +173,7 @@ let B = i.memo(function(e) {
       actions: p,
       trackingConfig: {
         id: N.id,
-        linkType: j.Un.ACTIVITY_INSTANCE
+        linkType: O.Un.ACTIVITY_INSTANCE
       }
     })
   }

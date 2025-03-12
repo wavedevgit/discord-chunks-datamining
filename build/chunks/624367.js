@@ -22,8 +22,8 @@ var i = n(666572),
   v = n(258971),
   y = n(914010),
   x = n(624138),
-  O = n(135431),
-  j = n(566620),
+  j = n(135431),
+  O = n(566620),
   E = n(365415),
   N = n(574952),
   C = n(147865),
@@ -66,9 +66,9 @@ function k(e) {
     applicationId: k,
     size: Z,
     names: ["embedded_cover"]
-  }), Q = null !== (x = null == F ? void 0 : F.id) && void 0 !== x ? x : "0", J = (0, O.TK)(Q, (0, m.PL)(!0, !1)), $ = (0, O.TK)(Q, (0, m.LD)(U, !1)), ee = async () => {
+  }), Q = null !== (x = null == F ? void 0 : F.id) && void 0 !== x ? x : "0", J = (0, j.TK)(Q, (0, m.PL)(!0, !1)), $ = (0, j.TK)(Q, (0, m.LD)(U, !1)), ee = async () => {
     if ((null == F ? void 0 : F.id) != null) {
-      if (K)(0, j.G6)({
+      if (K)(0, O.G6)({
         channelId: null != H ? H : void 0,
         applicationId: F.id,
         isStart: null == V,

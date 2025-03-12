@@ -1,7 +1,7 @@
 /** Chunk was on 63141 **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => h
 }), n(47120);
 var i = n(200651),
   r = n(192379),
@@ -13,15 +13,15 @@ var i = n(200651),
   d = n(63198),
   u = n(215916);
 
-function p(e) {
+function h(e) {
   let {
     locked: t
-  } = e, [n, p] = (0, a.US)(t ? [] : [o.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX], void 0, !0);
+  } = e, [n, h] = (0, a.US)(t ? [] : [o.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX], void 0, !0);
   return (r.useEffect(() => {
     if (!t && n === o.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX) return () => {
-      n === o.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX && p(s.L.AUTO_DISMISS)
+      n === o.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX && h(s.L.AUTO_DISMISS)
     }
-  }, [t, p, n]), t || n !== o.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX) ? null : (0, i.jsx)("div", {
+  }, [t, h, n]), t || n !== o.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX) ? null : (0, i.jsx)("div", {
     className: d.overlayInprocessBackgroundNux,
     children: (0, i.jsxs)("div", {
       className: d.mainContainer,

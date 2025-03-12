@@ -1,10 +1,10 @@
-/** Chunk was on 14093 **/
+/** Chunk was on 94458 **/
 n.d(t, {
   Z: () => I
 }), n(627494), n(757143), n(301563);
 var r = n(200651),
-  l = n(192379),
-  a = n(317261),
+  a = n(192379),
+  l = n(317261),
   i = n(423875),
   o = n(442837),
   s = n(18323),
@@ -16,20 +16,20 @@ var r = n(200651),
   h = n(319604),
   f = n(31074),
   g = n(206295),
-  v = n(278399),
-  x = n(297781),
+  x = n(278399),
+  v = n(297781),
   y = n(591853),
   j = n(410441),
   P = n(981631),
   O = n(616922),
   b = n(388032);
 let C = (e, t, n, r) => {
-    let l = function(e) {
-        if (e === a._.WEEK) return b.t.SjOZfn
+    let a = function(e) {
+        if (e === l._.WEEK) return b.t.SjOZfn
       }(r),
       i = m.ZP.getName(t.guild_id, t.id, n),
       o = e.extra.artist.name;
-    return b.NW.formatToMarkdownString(l, {
+    return b.NW.formatToMarkdownString(a, {
       artist: o,
       userName: i
     }).replaceAll("*", "")
@@ -42,29 +42,29 @@ let C = (e, t, n, r) => {
     let {
       channel: t,
       entry: n,
-      onReaction: a,
+      onReaction: l,
       onVoiceChannelPreview: m
     } = e, {
       parent_title: I,
       provider: w,
       image_url: E
-    } = n.extra.media, Z = n.extra.artist.name, S = (0, o.e7)([c.default], () => c.default.getUser(n.author_id)), {
+    } = n.extra.media, S = n.extra.artist.name, Z = (0, o.e7)([c.default], () => c.default.getUser(n.author_id)), {
       primaryColor: T,
       secondaryColor: A
-    } = (0, g.Z)(E), _ = (0, p.Nq)(n), k = l.useCallback(() => {
-      if (null == t || null == S || !(0, d.Hi)(_, v.y9)) return;
-      let e = C(n, t, S, _);
+    } = (0, g.Z)(E), _ = (0, p.Nq)(n), k = a.useCallback(() => {
+      if (null == t || null == Z || !(0, d.Hi)(_, x.y9)) return;
+      let e = C(n, t, Z, _);
       return (0, h.CR)({
-        user: S,
+        user: Z,
         channel: t,
         mediaImageSrc: E,
-        artist: Z,
+        artist: S,
         description: e,
         colors: [T, A],
         badges: (0, h.UU)(n)
       })
-    }, [E, Z, t, n, T, _, A, S]), R = (0, f.Z)(P.ABu.SPOTIFY);
-    if (null == S || !(0, d.Hi)(_, v.y9)) return null;
+    }, [E, S, t, n, T, _, A, Z]), R = (0, f.Z)(P.ABu.SPOTIFY);
+    if (null == Z || !(0, d.Hi)(_, x.y9)) return null;
     let D = () => {
       let e = O.Hw.ALBUM,
         t = s.Z.isProtocolRegistered() ? O.C7.PLAYER_OPEN(e, n.extra.media.external_parent_id) : O.C7.WEB_OPEN(e, n.extra.media.external_parent_id);
@@ -88,21 +88,21 @@ let C = (e, t, n, r) => {
         }) : null,
         userDescription: b.t.CcVI1d,
         title: I,
-        subtitle: Z,
-        badges: (0, r.jsx)(x.Gk, {
-          location: x.Gt.POPOUT,
-          children: v.Ho.map((e, t) => (0, r.jsx)(e, {
+        subtitle: S,
+        badges: (0, r.jsx)(v.Gk, {
+          location: v.Gt.POPOUT,
+          children: x.Ho.map((e, t) => (0, r.jsx)(e, {
             entry: n
           }, t))
         })
       }), (0, r.jsx)(y.St, {
         children: (0, r.jsx)(y.WT, {
-          onReaction: a,
+          onReaction: l,
           onVoiceChannelPreview: m,
-          user: S,
+          user: Z,
           channel: t,
           generateReactionImage: k,
-          reactionImageAltText: N(n, S),
+          reactionImageAltText: N(n, Z),
           entry: n
         })
       })]

@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 4bf31086ae3115a2
+  Original File Name: b54edae22c13fdd1
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -3691,8 +3691,8 @@
 
 .buttonSection_a83780 {
     padding: 4px;
-    background: var(--bg-mod-strong);
-    border: 1px solid var(--border-subtle);
+    background: var(--bg-mod-subtle);
+    border: 1px solid var(--border-faint);
     border-radius: 12px
 }
 

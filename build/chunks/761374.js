@@ -1,6 +1,6 @@
 /** Chunk was on 50751 **/
 n.d(t, {
-  Z: () => N
+  Z: () => C
 }), n(47120), n(230036);
 var i = n(200651),
   r = n(192379),
@@ -23,19 +23,19 @@ var i = n(200651),
   b = n(340101),
   j = n(388032),
   x = n(336412);
-let I = [];
+let S = [];
 
-function S(e, t, n, i) {
+function I(e, t, n, i) {
   let r = (i - 1) * y.z;
   return e === b.C5.HORIZONTAL ? Math.min(Math.max((t - r) / i, 256), Math.max(16 * n / 9, 256)) : Math.min(Math.max(t, 256), Math.max((n - r) / i * 16 / 9, 256))
 }
 
-function N(e) {
+function C(e) {
   let {
     id: t,
     size: n,
-    locked: N,
-    padding: C,
+    locked: C,
+    padding: N,
     borderWidth: Z,
     opacity: w,
     horizontal: P,
@@ -43,7 +43,7 @@ function N(e) {
     anchorTop: T,
     anchorLeft: D,
     showEmpty: k = !0
-  } = e, A = 2 * C + 2 * Z, {
+  } = e, A = 2 * N + 2 * Z, {
     width: L,
     height: R
   } = {
@@ -63,7 +63,7 @@ function N(e) {
     streamParticipants: X
   } = (0, l.cj)([h.Z, d.Z], () => {
     if (null == M) return {
-      streamParticipants: I,
+      streamParticipants: S,
       participantsVersion: -1,
       activeStreams: new Set
     };
@@ -84,13 +84,13 @@ function N(e) {
       activeStreams: e,
       participantsVersion: d.Z.getParticipantsVersion(M)
     }
-  }, [M, Y, U, H, B]), J = X.length, q = null == F || 0 === K.size && N || 0 === J && !N, $ = P ? b.C5.HORIZONTAL : b.C5.VERTICAL, {
+  }, [M, Y, U, H, B]), J = X.length, q = null == F || 0 === K.size && C || 0 === J && !C, $ = P ? b.C5.HORIZONTAL : b.C5.VERTICAL, {
     tileWidth: ee,
     layout: et
   } = function(e, t, n, i, l) {
     let o = function(e, t, n, i) {
-        let r = S(b.C5.HORIZONTAL, e, t, n),
-          l = S(b.C5.VERTICAL, e, t, n);
+        let r = I(b.C5.HORIZONTAL, e, t, n),
+          l = I(b.C5.VERTICAL, e, t, n);
         switch (i) {
           case b.C5.VERTICAL:
             return l;
@@ -100,7 +100,7 @@ function N(e) {
         let o = (9 * l / 16 + y.z) * n - y.z;
         return e > 16 * t / 9 ? r : o <= t ? l : 9 * r / 16 <= t ? r : l
       }(n, i, t, l),
-      a = S(b.C5.VERTICAL, n, i, t),
+      a = I(b.C5.VERTICAL, n, i, t),
       s = null != l ? l : o === a ? b.C5.VERTICAL : b.C5.HORIZONTAL,
       [u, c] = r.useState(o);
     return r.useEffect(() => {
@@ -115,7 +115,7 @@ function N(e) {
     height: R,
     sizeOffset: A,
     layout: et,
-    padding: C,
+    padding: N,
     participants: X.length
   };
   return (! function(e) {
@@ -220,7 +220,7 @@ function N(e) {
     s.Z.setGpuBoostRequested(E.zS.OVERLAY_VIDEO_STREAM_RENDERING, !q)
   }, [q]), (0, c.ZP)(() => () => {
     s.Z.setGpuBoostRequested(E.zS.OVERLAY_VIDEO_STREAM_RENDERING, !1)
-  }), q && N) ? null : q && !N ? k ? N ? null : (0, i.jsx)(v.E, {
+  }), q && C) ? null : q && !C ? k ? C ? null : (0, i.jsx)(v.E, {
     emptyText: j.NW.string(j.t["T6+rX1"]),
     icon: o.hGI,
     absolute: !0
@@ -233,7 +233,7 @@ function N(e) {
     children: (0, i.jsx)(y.Z, {
       widgetId: t,
       tileWidth: ee,
-      locked: N,
+      locked: C,
       layout: et,
       activeStreams: K,
       streamParticipants: X,

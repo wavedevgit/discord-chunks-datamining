@@ -1,4 +1,4 @@
-/** Chunk was on 88936 **/
+/** Chunk was on 86546 **/
 n.d(t, {
   P: () => j,
   Z: () => S
@@ -18,9 +18,9 @@ var l = n(442837),
   m = n(979651),
   g = n(153066),
   y = n(981631),
-  b = n(539967);
+  O = n(539967);
 
-function O(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -65,7 +65,7 @@ function v(e) {
     actionColor: f
   } = e;
   return (0, r.jsx)(s.Z, {
-    className: (0, g.l)(b, "actions", t),
+    className: (0, g.l)(O, "actions", t),
     type: t,
     source: n,
     activity: l,
@@ -86,7 +86,7 @@ let j = a.Z.Types,
       useStoreStream: i = !0,
       showActions: s = !0,
       hideHeader: g = !1,
-      showChannelDetails: b = !1
+      showChannelDetails: O = !1
     } = e, j = function(e, t) {
       if (null == e) return {};
       var n, r, l = function(e, t) {
@@ -113,15 +113,15 @@ let j = a.Z.Types,
       }),
       E = (0, l.e7)([p.Z], () => null != P ? p.Z.getGuild(P.guildId) : null),
       I = (0, l.e7)([c.Z], () => null != t ? null != t.application_id ? c.Z.getApplication(t.application_id) : c.Z.getApplicationByName(t.name) : null);
-    return (null == t ? void 0 : t.type) === y.IIU.HANG_STATUS ? null : (0, r.jsx)(a.Z, h(O({}, j), {
+    return (null == t ? void 0 : t.type) === y.IIU.HANG_STATUS ? null : (0, r.jsx)(a.Z, h(b({}, j), {
       activity: t,
       user: n,
       application: I,
       hideHeader: g,
       activityGuild: null != N ? N : E,
-      showChannelDetails: b,
-      channel: b ? S : void 0,
-      renderActions: s ? () => (0, r.jsx)(v, h(O({}, j), {
+      showChannelDetails: O,
+      channel: O ? S : void 0,
+      renderActions: s ? () => (0, r.jsx)(v, h(b({}, j), {
         applicationStream: P,
         activity: t,
         user: n

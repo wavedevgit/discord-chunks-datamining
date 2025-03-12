@@ -31,7 +31,7 @@ function f(e) {
 }
 
 function h(e) {
-  var t, n, r, h, g, _, b, v, y, x, O, j, E, N, C;
+  var t, n, r, h, g, _, b, v, y, x, j, O, E, N, C;
   let {
     item: I,
     renderApplication: S
@@ -47,10 +47,10 @@ function h(e) {
         count: k
       });
     case u.O7.MOBILE_NATIVE_UPDATE_AVAILABLE:
-      let R = null !== (O = null === (x = I.local_id) || void 0 === x ? void 0 : x.split("_").pop()) && void 0 !== O ? O : "unknown";
+      let R = null !== (j = null === (x = I.local_id) || void 0 === x ? void 0 : x.split("_").pop()) && void 0 !== j ? j : "unknown";
       return "Update to build ".concat(R, " available!");
     case u.DY.FRIEND_SUGGESTION_CREATED:
-      return l.Z.getRelationshipType(T), p.OGo.PENDING_OUTGOING, null !== (j = I.body) && void 0 !== j ? j : "";
+      return l.Z.getRelationshipType(T), p.OGo.PENDING_OUTGOING, null !== (O = I.body) && void 0 !== O ? O : "";
     case u.DY.GUILD_SCHEDULED_EVENT_STARTED:
       let D = I.guild_scheduled_event_id,
         L = null != D ? a.ZP.getGuildScheduledEvent(D) : null,

@@ -70,7 +70,8 @@ function m(e, t) {
     },
     stopIfPlaying: e => {
       null == N.current || w || T.current !== e || (N.current.resetSegments(!0), N.current.setSegment(y[e].start, y[e].start), N.current.stop())
-    }
+    },
+    getDuration: e => null == N.current ? null : N.current.getDuration(e)
   }), [w, C, y]), i.useEffect(() => {
     null == O && p().then(e => I(e.default))
   }, [O, p]), i.useEffect(() => (Promise.resolve().then(n.t.bind(n, 500923, 23)).then(e => {

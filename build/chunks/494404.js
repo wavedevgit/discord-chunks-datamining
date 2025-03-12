@@ -23,8 +23,8 @@ var r = n(200651),
   v = n(210887),
   y = n(592125),
   x = n(375954),
-  O = n(496675),
-  j = n(933429),
+  j = n(496675),
+  O = n(933429),
   E = n(451478),
   N = n(626135),
   C = n(585483),
@@ -144,12 +144,12 @@ class k extends i.PureComponent {
     })
   }
 }
-let R = d.ZP.connectStores([O.Z], e => {
+let R = d.ZP.connectStores([j.Z], e => {
   let {
     channel: t
   } = e;
   return {
-    canManageMessages: null != t && O.Z.can(I.Plq.MANAGE_MESSAGES, t)
+    canManageMessages: null != t && j.Z.can(I.Plq.MANAGE_MESSAGES, t)
   }
 })(k);
 
@@ -165,9 +165,9 @@ function D(e) {
     renderItem: b,
     getProTip: y,
     scrollerClassName: x,
-    className: O,
+    className: j,
     listName: w
-  } = e, Z = i.useRef(null), k = (0, f.Z)(w, Z), R = (0, d.e7)([j.ZP], () => j.ZP.hasNotice()), D = (0, d.e7)([E.Z], () => E.Z.windowSize()), L = (0, g.Q3)("ItemsPopout");
+  } = e, Z = i.useRef(null), k = (0, f.Z)(w, Z), R = (0, d.e7)([O.ZP], () => O.ZP.hasNotice()), D = (0, d.e7)([E.Z], () => E.Z.windowSize()), L = (0, g.Q3)("ItemsPopout");
   i.useEffect(() => {
     N.default.track(I.rMx.OPEN_POPOUT, {
       type: t
@@ -240,7 +240,7 @@ function D(e) {
   R && (H.maxHeight -= 40), L && (H.maxHeight -= 48);
   let V = null != p && a;
   return (0, r.jsx)("div", {
-    className: o()(O, T.messagesPopoutWrap),
+    className: o()(j, T.messagesPopoutWrap),
     style: H,
     onClick: A,
     onDoubleClick: A,
@@ -320,8 +320,8 @@ function L(e) {
     renderHeader: h,
     renderEmptyState: g,
     renderMessage: v,
-    getProTip: O,
-    scrollerClassName: j,
+    getProTip: j,
+    scrollerClassName: O,
     className: E,
     onCloseMessage: N,
     listName: C
@@ -366,7 +366,7 @@ function L(e) {
   })), [o, a]);
   return (0, r.jsx)(D, {
     className: E,
-    scrollerClassName: j,
+    scrollerClassName: O,
     items: w,
     loading: s,
     analyticsName: t,
@@ -374,7 +374,7 @@ function L(e) {
     renderHeader: h,
     hasMore: l,
     loadMore: c,
-    getProTip: O,
+    getProTip: j,
     renderItem: function(e) {
       let {
         message: t,

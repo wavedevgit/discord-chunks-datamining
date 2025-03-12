@@ -23,10 +23,10 @@ var i = n(200651),
   b = n(444295),
   j = n(906037),
   x = n(804570),
-  I = n(501787),
-  S = n(981631),
-  N = n(65154),
-  C = n(388032),
+  S = n(501787),
+  I = n(981631),
+  C = n(65154),
+  N = n(388032),
   Z = n(989424);
 
 function w(e) {
@@ -73,7 +73,7 @@ function _(e) {
 
 function T(e) {
   let {
-    context: t = N.Yn.DEFAULT,
+    context: t = C.Yn.DEFAULT,
     participants: l,
     locked: o,
     channel: a,
@@ -82,7 +82,7 @@ function T(e) {
     shouldDisplay: d
   } = e, p = (e, r) => {
     let l = e.user;
-    (0, b.Ws)(S.Odu.VIDEO, {
+    (0, b.Ws)(I.Odu.VIDEO, {
       type: b.Qu.CAMERA,
       value: b.bk.SETTINGS_OPENED,
       userId: null == l ? void 0 : l.id
@@ -94,7 +94,7 @@ function T(e) {
         user: l,
         mediaEngineContext: t,
         onWatchStream: () => {
-          (0, b.Ws)(S.Odu.VIDEO, {
+          (0, b.Ws)(I.Odu.VIDEO, {
             type: b.Qu.GO_LIVE,
             value: b.bk.ENABLED,
             userId: null == l ? void 0 : l.id
@@ -107,7 +107,7 @@ function T(e) {
     return null === (t = e.user) || void 0 === t ? void 0 : t.id
   })), [l]);
   return r.useEffect(() => {
-    d && (0, b.zi)(S.Odu.VIDEO, {
+    d && (0, b.zi)(I.Odu.VIDEO, {
       locked: E.default.isInstanceLocked(),
       shownUserIds: Array.from(h),
       liveUserIds: Array.from(h),
@@ -138,7 +138,7 @@ function T(e) {
 
 function D(e) {
   let {
-    context: t = N.Yn.DEFAULT,
+    context: t = C.Yn.DEFAULT,
     participants: n,
     participantsVersion: l,
     locked: a,
@@ -179,7 +179,7 @@ function D(e) {
   }) : h ? a ? null : (0, i.jsx)("div", {
     ref: f,
     children: (0, i.jsx)(x.E, {
-      emptyText: C.NW.string(C.t["aTiM4+"]),
+      emptyText: N.NW.string(N.t["aTiM4+"]),
       icon: s.Odl,
       absolute: !0
     })
@@ -202,9 +202,9 @@ function k(e) {
       participantTileWidth: E,
       visibleParticipants: b
     } = (0, g.ZB)(u ? null != f ? f : e.width : null != m ? m : e.height, o, {
-      tileWidth: I.vZ,
-      tileMinWidth: I.mo,
-      tileMargin: I.F$,
+      tileWidth: S.vZ,
+      tileMinWidth: S.mo,
+      tileMargin: S.F$,
       limit: 8,
       cropSelfVideo: !0,
       version: s

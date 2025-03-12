@@ -22,8 +22,8 @@ let p = e => {
       initialized: v,
       loading: y,
       items: x,
-      hasMore: O,
-      cursor: j,
+      hasMore: j,
+      cursor: O,
       errored: E
     } = (0, i.cj)([c.Z], () => ({
       initialized: c.Z.initialized,
@@ -55,8 +55,8 @@ let p = e => {
       })
     }, [v, h, t, m, N, C, f]);
     let S = r.useCallback(async e => {
-      !g.current && v && O && null != j && (e || !E) && (g.current = !0, b(!0), await (0, s.jk)({
-        after: j,
+      !g.current && v && j && null != O && (e || !E) && (g.current = !0, b(!0), await (0, s.jk)({
+        after: O,
         with_mentions: m,
         roles_filter: N,
         everyone_filter: C,
@@ -64,12 +64,12 @@ let p = e => {
       }, () => {
         g.current = !1
       }), b(!1))
-    }, [v, O, j, E, m, N, C]);
+    }, [v, j, O, E, m, N, C]);
     return {
       initialized: v,
       loading: y,
       items: x,
-      hasMore: O,
+      hasMore: j,
       loadMore: S,
       loadingMore: _,
       setReadNotifItemToAcked: e => {

@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(594174),
   y = n(626135),
   x = n(111361),
-  O = n(74538),
-  j = n(709706),
+  j = n(74538),
+  O = n(709706),
   E = n(378441),
   N = n(799143),
   C = n(358820),
@@ -87,7 +87,7 @@ function W(e) {
   });
   (0, R.j1)(k.M);
   let V = (0, s.e7)([v.default], () => (0, x.I5)(v.default.getCurrentUser())),
-    z = (0, s.e7)([j.Z], () => j.Z.getCatalogUpdateTime()),
+    z = (0, s.e7)([O.Z], () => O.Z.getCatalogUpdateTime()),
     [K, Y] = i.useState(!1),
     [X, q] = i.useState(!1),
     {
@@ -188,7 +188,7 @@ function W(e) {
             children: (0, r.jsx)(g.p, {
               showUpsell: !0,
               text: R.NW.format(R.t["XMDm8/"], {
-                nitroTierName: (0, O.Px)(Z.p9.TIER_2),
+                nitroTierName: (0, j.Px)(Z.p9.TIER_2),
                 onClick: () => (0, _.i)()
               }),
               button: R.NW.string(R.t.cRCCJy),

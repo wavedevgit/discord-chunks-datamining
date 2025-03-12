@@ -1,6 +1,6 @@
-/** Chunk was on 23150 **/
+/** Chunk was on 81146 **/
 r.d(t, {
-  Z: () => R
+  Z: () => Z
 }), r(47120), r(789020);
 var n = r(481060),
   a = r(570140),
@@ -33,9 +33,9 @@ var n = r(481060),
   T = r(630388),
   A = r(226351),
   k = r(981631),
-  D = r(388032);
+  M = r(388032);
 
-function M(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -70,8 +70,8 @@ async function W(e) {
   var t, r, n, d;
   let p, {
       channelId: W,
-      uploads: R,
-      draftType: Z,
+      uploads: Z,
+      draftType: R,
       parsedMessage: G,
       options: B = {},
       raiseEndpointErrors: K = !1
@@ -103,7 +103,7 @@ async function W(e) {
       poll: (0, y.x9)(B.poll)
     });
   return H.nonce = Y, U.on("start", e => {
-    p = (0, b.e5)(L(M({}, X), {
+    p = (0, b.e5)(L(D({}, X), {
       id: e.id
     })), a.Z.dispatch({
       type: "UPLOAD_START",
@@ -139,12 +139,12 @@ async function W(e) {
         },
         n = null == p ? null : {
           type: u.$V.SEND,
-          message: L(M({}, p), {
+          message: L(D({}, p), {
             channelId: W
           })
         };
       (0, s.openUploadError)({
-        title: D.NW.string(D.t.B3vFdX),
+        title: M.NW.string(M.t.B3vFdX),
         help: (0, g.uF)(n, e)
       });
       return
@@ -157,14 +157,14 @@ async function W(e) {
       else {
         var d;
         (0, s.openUploadError)({
-          title: D.NW.string(D.t.B3vFdX),
-          help: null !== (d = null == r ? void 0 : r.message) && void 0 !== d ? d : D.NW.string(D.t.zMEjJi)
+          title: M.NW.string(M.t.B3vFdX),
+          help: null !== (d = null == r ? void 0 : r.message) && void 0 !== d ? d : M.NW.string(M.t.zMEjJi)
         })
       }
-      "" !== H.content && "" === C.Z.getDraft(W, Z) && o.Z.saveDraft(W, H.content, Z), 0 === S.Z.getUploadCount(W, Z) && l.Z.setUploads({
+      "" !== H.content && "" === C.Z.getDraft(W, R) && o.Z.saveDraft(W, H.content, R), 0 === S.Z.getUploadCount(W, R) && l.Z.setUploads({
         channelId: W,
-        uploads: R,
-        draftType: Z
+        uploads: Z,
+        draftType: R
       })
     }
   }), U.on("complete", (e, t) => {
@@ -180,9 +180,9 @@ async function W(e) {
       name: r.name,
       id: r.id
     }, void 0, !0, j.LL.MessageSent))
-  }), null == B || null === (t = B.confettiPotionData) || void 0 === t || t.callback(), await U.uploadFiles(R, H), F.resolve(), F.promise
+  }), null == B || null === (t = B.confettiPotionData) || void 0 === t || t.callback(), await U.uploadFiles(Z, H), F.resolve(), F.promise
 }
-let R = {
+let Z = {
   instantBatchUpload: function(e) {
     let {
       channelId: t,
@@ -192,7 +192,7 @@ let R = {
       filesMetadata: o = []
     } = e, i = Array.from(r).map((e, r) => {
       let n = null != o ? o[r] : {};
-      return new d.n(M({
+      return new d.n(D({
         file: e,
         platform: p.ow.WEB,
         isThumbnail: a
@@ -252,8 +252,8 @@ let R = {
         i.Z.sendExplicitMediaClydeError(r, null == p ? void 0 : p.attachments, m.UU.EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED);
         return
       }(0, s.openUploadError)({
-        title: D.NW.string(D.t.B3vFdX),
-        help: D.NW.format(D.t.gIlRx8, {
+        title: M.NW.string(M.t.B3vFdX),
+        help: M.NW.format(M.t.gIlRx8, {
           onClick: () => {
             (0, n.Mr3)(s.A), e({
               channelId: r,

@@ -1,11 +1,11 @@
-/** Chunk was on 14093 **/
+/** Chunk was on 94458 **/
 n.d(t, {
   Z: () => i
 });
 var r = n(512722),
-  l = n.n(r);
+  a = n.n(r);
 
-function a(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -18,11 +18,11 @@ class i {
     this.exporter = e
   }
   export (e) {
-    l()(null != this.exporter, "DiscordCanvas: Exporting the canvas requires a valid DiscordCanvasExporter to be initialized.");
+    a()(null != this.exporter, "DiscordCanvas: Exporting the canvas requires a valid DiscordCanvasExporter to be initialized.");
     let t = this.canvas.getCanvasForExport();
-    return l()(null != t, "DiscordCanvas: Couldn't get a canvas for export."), this.exporter.exportCanvas(t, e)
+    return a()(null != t, "DiscordCanvas: Couldn't get a canvas for export."), this.exporter.exportCanvas(t, e)
   }
   constructor(e, t) {
-    a(this, "canvas", void 0), a(this, "exporter", void 0), this.canvas = e, this.exporter = t
+    l(this, "canvas", void 0), l(this, "exporter", void 0), this.canvas = e, this.exporter = t
   }
 }

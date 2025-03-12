@@ -22,10 +22,10 @@ var i, r = n(512722),
   b = n(944486),
   j = n(885110),
   x = n(246946),
-  I = n(594174),
-  S = n(979651),
-  N = n(974180),
-  C = n(237997),
+  S = n(594174),
+  I = n(979651),
+  C = n(974180),
+  N = n(237997),
   Z = n(70956),
   w = n(150097),
   P = n(129724),
@@ -198,7 +198,7 @@ function eh() {
         return null != n && Date.now() - n < ea
       }(l)) return !1;
     let o = b.Z.getVoiceChannelId(),
-      a = null === (i = S.Z.getDiscoverableVoiceStateForUser(e)) || void 0 === i ? void 0 : i.channelId;
+      a = null === (i = I.Z.getDiscoverableVoiceStateForUser(e)) || void 0 === i ? void 0 : i.channelId;
     if (null != o && null != a && o === a) return !1;
     let s = (0, L.pL)();
     return null != s && s.id === r && (! function(e, t) {
@@ -260,7 +260,7 @@ function ef(e) {
 }
 class em extends(i = a.ZP.Store) {
   initialize() {
-    this.waitFor(m.Z, I.default, v.Z), this.syncWith([v.Z], eh)
+    this.waitFor(m.Z, S.default, v.Z), this.syncWith([v.Z], eh)
   }
   getNotifications() {
     return et
@@ -309,7 +309,7 @@ let eg = new em(s.Z, {
     let {
       channelId: o,
       message: a
-    } = e, s = m.Z.getChannel(o), u = I.default.getUser(null === (t = a.author) || void 0 === t ? void 0 : t.id);
+    } = e, s = m.Z.getChannel(o), u = S.default.getUser(null === (t = a.author) || void 0 === t ? void 0 : t.id);
     if (null == s || null == u) return !1;
     if ((null === (n = a.activity) || void 0 === n ? void 0 : n.type) === Y.mFx.JOIN || (null === (i = a.activity) || void 0 === i ? void 0 : i.type) === Y.mFx.JOIN_REQUEST) {
       if (!(0, w.eF)(a, o, !0, !0)) return !1;
@@ -338,8 +338,8 @@ let eg = new em(s.Z, {
       }(s, a, u);
       if (!1 !== e) return e
     }
-    if (C.default.getTextChatNotificationMode() === Y.Ypu.DISABLED || x.Z.disableNotifications || !(0, w.eF)(a, o)) return !1;
-    let c = !O.Z.isSoundDisabled(N.Ay),
+    if (N.default.getTextChatNotificationMode() === Y.Ypu.DISABLED || x.Z.disableNotifications || !(0, w.eF)(a, o)) return !1;
+    let c = !O.Z.isSoundDisabled(C.Ay),
       p = null !== (r = g.Z.getMessage(o, a.id)) && void 0 !== r ? r : (0, d.e5)(a);
     ep((0, G.Z)(s, p, u, c), {
       type: A.kL.TEXT,

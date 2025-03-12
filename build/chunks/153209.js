@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(791914),
   y = n(981631),
   x = n(388032),
-  O = n(648485),
-  j = n(215921);
+  j = n(648485),
+  O = n(215921);
 
 function E(e) {
   let {
@@ -35,7 +35,7 @@ function E(e) {
       size: "xs",
       color: "currentColor"
     }),
-    className: j.controlButton,
+    className: O.controlButton,
     onClick: t
   })
 }
@@ -48,7 +48,7 @@ function N(e) {
   } = e, {
     initialized: c,
     items: x,
-    loading: j,
+    loading: O,
     loadMore: N
   } = (0, m.y6)(), C = (0, l.e7)([d.Z], () => d.Z.localItems), I = (0, h.Us)({
     location: "ForYou"
@@ -61,8 +61,8 @@ function N(e) {
     return !1
   }, [T, P, S]);
   return (0, r.jsxs)("div", {
-    className: o()(O.container, {
-      [O.widerInbox]: I
+    className: o()(j.container, {
+      [j.widerInbox]: I
     }),
     children: [(0, r.jsx)(v.Z, {
       tab: s.X.FOR_YOU,
@@ -79,7 +79,7 @@ function N(e) {
     }), (0, r.jsx)(f.Z, {
       initialized: c,
       items: S,
-      loading: j,
+      loading: O,
       loadMore: N
     })]
   })

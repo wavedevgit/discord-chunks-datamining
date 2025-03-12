@@ -23,10 +23,10 @@ var i = n(200651),
   b = n(556296),
   j = n(808506),
   x = n(237997),
-  I = n(451478),
-  S = n(585483),
-  N = n(358085),
-  C = n(13140),
+  S = n(451478),
+  I = n(585483),
+  C = n(358085),
+  N = n(13140),
   Z = n(145597),
   w = n(830917),
   P = n(32300),
@@ -44,7 +44,7 @@ var i = n(200651),
   U = n(757744),
   G = n(981631),
   F = n(734811);
-let Y = !N.isPlatformEmbedded && !1,
+let Y = !C.isPlatformEmbedded && !1,
   H = Y ? (0, i.jsx)(f.Z, {
     src: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzdpcnRrYXdrNzVuNjZ3NXpmeTJvNGl4Z2N4OXBsamx5aXphdHhxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/OPg2B0FPBL94H12uM0/giphy480p.mp4",
     className: F.videoDev,
@@ -156,9 +156,9 @@ function ee() {
 
 function et(e) {
   let t = R.ZP.isInputLocked((0, Z.getPID)());
-  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? S.S.dispatch(G.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? I.S.dispatch(G.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: !0
-  }) : "keydown" === e.type.toLowerCase() && S.S.dispatch(G.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  }) : "keydown" === e.type.toLowerCase() && I.S.dispatch(G.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: !1
   }))
 }
@@ -170,10 +170,10 @@ function en(e) {
     locked: l,
     focused: c,
     incompatibleApp: f,
-    hasZeroSizeDimension: N,
+    hasZeroSizeDimension: C,
     keybind: T
-  } = (0, a.cj)([R.ZP, x.default, I.Z, b.ZP], () => {
-    let e = I.Z.windowSize((0, w.ZY)(n)),
+  } = (0, a.cj)([R.ZP, x.default, S.Z, b.ZP], () => {
+    let e = S.Z.windowSize((0, w.ZY)(n)),
       t = b.ZP.getOverlayKeybind(),
       i = (0, Z.getPID)();
     return {
@@ -181,7 +181,7 @@ function en(e) {
       focused: i === Z.DEV_PID ? x.default.isFocused(i) : R.ZP.isFocused((0, Z.getPID)()),
       incompatibleApp: x.default.incompatibleApp,
       hasZeroSizeDimension: 0 === e.height || 0 === e.width,
-      keybind: null != t ? (0, C.BB)(t.shortcut, !0) : "???"
+      keybind: null != t ? (0, N.BB)(t.shortcut, !0) : "???"
     }
   }, [n]), {
     analyticsLocations: A
@@ -239,7 +239,7 @@ function en(e) {
       }), d.Z.overlayMounted(...o)
     }, [a, s, u, t, n, l, c])
   }(), r.useEffect(() => {
-    if (S.S.dispatch(G.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+    if (I.S.dispatch(G.CkL.OVERLAY_V3_SHOW_WIDGETS, {
         show: !0
       }), l) {
       if ((0, s.Ay)(u.u1M), n.addEventListener("contextmenu", Q, !1), null != B) {
@@ -256,7 +256,7 @@ function en(e) {
   }, [l, n]), (0, i.jsx)(h.Gt, {
     value: A,
     children: (0, i.jsx)(u.vWI, {
-      children: N || f ? null : (0, i.jsx)(u.f6W, {
+      children: C || f ? null : (0, i.jsx)(u.f6W, {
         theme: G.BRd.MIDNIGHT,
         children: e => (0, i.jsxs)("div", {
           className: o()(F.overlay, e),

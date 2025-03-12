@@ -1,4 +1,4 @@
-/** Chunk was on 54082 **/
+/** Chunk was on 81146 **/
 e.exports = {
   menuIcon: "menuIcon__62974"
 }

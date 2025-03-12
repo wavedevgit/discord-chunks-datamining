@@ -1,10 +1,10 @@
 /** Chunk was on 39251 **/
 n.d(t, {
-  RB: () => j,
+  RB: () => O,
   VH: () => y,
   Vi: () => E,
   Vu: () => N,
-  q7: () => O
+  q7: () => j
 });
 var r = n(692547),
   i = n(497089),
@@ -54,7 +54,7 @@ let v = {
         return "NOTIFICATION_CENTER"
     }
   },
-  O = e => {
+  j = e => {
     switch (e.type) {
       case "lifecycle_item":
         return x(e);
@@ -70,7 +70,7 @@ let v = {
         return "NOTIFICATION_CENTER"
     }
   },
-  j = e => "icHighlight" === e ? "TOP_MESSAGES" : "NOTIFICATION_CENTER",
+  O = e => "icHighlight" === e ? "TOP_MESSAGES" : "NOTIFICATION_CENTER",
   E = e => {
     switch (e) {
       case i.DY.GO_LIVE_PUSH:

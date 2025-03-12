@@ -24,9 +24,9 @@ var r = n(704215),
   b = n(701488),
   j = n(388032),
   x = n(563797),
-  I = n(101646);
+  S = n(101646);
 
-function S(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -45,7 +45,7 @@ function S(e) {
   return e
 }
 
-function N(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,7 +58,7 @@ function N(e, t) {
   }), e
 }
 
-function C(e) {
+function N(e) {
   let {
     game: t
   } = e, n = (0, u.q)(t.id);
@@ -91,7 +91,7 @@ function Z(e, t) {
           let {
             default: e
           } = await Promise.all([n.e("46746"), n.e("28965")]).then(n.bind(n, 60594));
-          return t => (0, i.jsx)(e, N(S({}, t), {
+          return t => (0, i.jsx)(e, C(I({}, t), {
             selectSource: !1,
             sourcePID: (0, h.getPID)(),
             guildId: r.type === v.nc.GO_LIVE_VOICE ? r.voiceGuild.id : void 0,
@@ -107,7 +107,7 @@ function Z(e, t) {
       (0, f.Rb)("welcomeNotification").allowActivityWidget && (b.renderFooter = () => (0, i.jsx)(m.lX, {
         gamingId: null == e ? void 0 : e.id,
         maxUserShowCount: 5,
-        className: I.container
+        className: S.container
       }), b.onNotificationShow = () => {
         a.Z.track(y.rMx.OVERLAY_GAME_INVITE_NOTIFICATION_SHOWN, {
           user_ids: r.entries.map(e => e.author_id),
@@ -123,14 +123,14 @@ function Z(e, t) {
     _ = Z ? w : j.NW.string(j.t["prl+ra"]),
     T = null != e && Z ? e.name : _,
     D = Z ? P : j.NW.string(j.t.R3CpPT),
-    k = null != e ? (0, i.jsx)(C, {
+    k = null != e ? (0, i.jsx)(N, {
       game: e
     }) : (0, i.jsx)("img", {
       src: n(328756),
       className: x.icon,
       alt: ""
     });
-  return N(S({
+  return C(I({
     icon: k,
     title: T,
     body: D,

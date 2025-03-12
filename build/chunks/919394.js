@@ -1,10 +1,10 @@
-/** Chunk was on 14093 **/
+/** Chunk was on 94458 **/
 n.d(t, {
-  SO: () => x
+  SO: () => v
 }), n(653041), n(266796), n(512722);
 var r = n(913527),
-  l = n.n(r),
-  a = n(705512);
+  a = n.n(r),
+  l = n(705512);
 n(812206);
 var i = n(55e3);
 n(220082);
@@ -51,7 +51,7 @@ let f = (e, t) => (function(e) {
         text: t
       }],
       r = u.default.extractTimestamp(e.extra.application_id);
-    if (7 >= l()().diff(l()(r), "days") && n.push({
+    if (7 >= a()().diff(a()(r), "days") && n.push({
         iconPath: p.As,
         text: h.NW.string(h.t.vYuyWV)
       }), (0, d.Ol)(e) && n.push({
@@ -65,7 +65,7 @@ let f = (e, t) => (function(e) {
           days: t
         })
       })
-    }(0, d.ig)(e) === a.o.GLOBAL && n.push({
+    }(0, d.ig)(e) === l.o.GLOBAL && n.push({
       iconPath: p.Op,
       text: h.NW.string(h.t.kAlUs7)
     });
@@ -96,12 +96,12 @@ let f = (e, t) => (function(e) {
     }
     return n
   },
-  v = (e, t) => {
+  x = (e, t) => {
     let {
       timestamp: n,
       colors: r,
-      description: l,
-      entry: a,
+      description: a,
+      entry: l,
       numAvatars: s
     } = t, c = r.map((e, t) => ({
       color: e,
@@ -143,13 +143,13 @@ let f = (e, t) => (function(e) {
       family: p.I8,
       weight: p.Ue,
       truncate: o.GX.Wrap
-    }), e.drawText(l, {
+    }), e.drawText(a, {
       x: p.Iq,
       y: 64,
       h: 32,
       w: p.kC
     }, !0);
-    let u = g(a, n);
+    let u = g(l, n);
     (0, m.J)({
       canvas: e,
       badges: u,
@@ -157,22 +157,22 @@ let f = (e, t) => (function(e) {
       maxWidth: p.kC
     })
   },
-  x = async e => {
+  v = async e => {
     let {
       applicationImageSrc: t,
       entry: n,
       avatarSrcs: r,
-      description: l,
-      timestamp: a,
+      description: a,
+      timestamp: l,
       colors: i,
       channelId: c
     } = e, u = n.extra.game_name, d = f(r, t);
     return await (0, s.f)({
       assetsToLoad: d,
-      drawImage: e => v(e, {
-        timestamp: a,
+      drawImage: e => x(e, {
+        timestamp: l,
         colors: i,
-        description: l,
+        description: a,
         entry: n,
         numAvatars: r.length
       }),

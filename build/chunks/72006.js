@@ -37,8 +37,8 @@ var r = n(5148),
   v = n.n(b),
   y = n(634523),
   x = n.n(y),
-  O = n(302648),
-  j = n.n(O);
+  j = n(302648),
+  O = n.n(j);
 
 function E(e, t, n, i) {
   let a = i.getCurrentContent(),
@@ -92,7 +92,7 @@ function C(e, t) {
 function I(e, t) {
   switch (e) {
     case "transpose-characters":
-      return j()(t);
+      return O()(t);
     case "move-selection-to-start-of-block":
       return _()(t);
     case "move-selection-to-end-of-block":

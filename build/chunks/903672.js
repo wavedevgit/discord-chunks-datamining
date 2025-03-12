@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(731290),
   y = n(944486),
   x = n(455199),
-  O = n(655354),
-  j = n(999671),
+  j = n(655354),
+  O = n(999671),
   E = n(324081),
   N = n(240126),
   C = n(791914),
@@ -53,7 +53,7 @@ function w(e) {
   } = e, h = (0, l.e7)([b.Z, y.Z], () => b.Z.getChannel(y.Z.getChannelId())), {
     messages: _,
     hasMore: v,
-    loading: O,
+    loading: j,
     guildFilter: E,
     roleFilter: N,
     everyoneFilter: P
@@ -82,7 +82,7 @@ function w(e) {
     setTab: t,
     badgeState: a,
     closePopout: c,
-    children: (0, r.jsx)(j.Z, {})
+    children: (0, r.jsx)(O.Z, {})
   }), [!0, t, a, c]);
   return (0, r.jsx)(u.ZP, {
     className: o()(T.recentMentionsPopout, {
@@ -96,7 +96,7 @@ function w(e) {
     },
     channel: h,
     messages: _,
-    loading: O,
+    loading: j,
     hasMore: v,
     analyticsName: "Recent Mentions",
     loadMore: function() {
@@ -147,7 +147,7 @@ function k(e) {
       }) : null
     }), (0, r.jsxs)("div", {
       className: T.messageContainer,
-      children: [(0, r.jsx)(O.Z, {
+      children: [(0, r.jsx)(j.Z, {
         className: T.jumpMessageButton,
         onJump: n
       }), (0, r.jsx)(h.Z, {

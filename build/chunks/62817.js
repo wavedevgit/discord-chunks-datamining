@@ -1,9 +1,9 @@
-/** Chunk was on 14093 **/
+/** Chunk was on 94458 **/
 n.d(t, {
   Z: () => y
 }), n(301563), n(47120), n(177593);
-var r, l = n(442837),
-  a = n(570140),
+var r, a = n(442837),
+  l = n(570140),
   i = n(375954);
 
 function o(e, t, n) {
@@ -41,14 +41,14 @@ function g(e, t) {
   return null != n && (u[e] = n.filter(e => e.id !== t), delete d[t], delete m[t], n.length !== u[e].length)
 }
 
-function v(e, t) {
+function x(e, t) {
   let n = u[e];
   if (null == n) return !1;
   u[e] = n.map(e => e.id === t.id ? s({}, e, t) : e);
   let r = m[t.id];
   null != r && null != p[r.id] && (p[r.id] = s({}, p[r.id], t))
 }
-class x extends(r = l.ZP.Store) {
+class v extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(i.Z)
   }
@@ -66,8 +66,8 @@ class x extends(r = l.ZP.Store) {
     if (null != e) return h[e]
   }
 }
-o(x, "displayName", "UploadStore");
-let y = new x(a.Z, {
+o(v, "displayName", "UploadStore");
+let y = new v(l.Z, {
   CONNECTION_OPEN: function() {
     h = {}
   },
@@ -77,18 +77,18 @@ let y = new x(a.Z, {
   UPLOAD_START: function(e) {
     var t, n, r;
     let {
-      channelId: l,
-      file: a,
+      channelId: a,
+      file: l,
       uploader: i,
       message: o
     } = e;
     if (i._aborted || i._errored) return;
-    let h = null !== (t = u[l]) && void 0 !== t ? t : c;
-    d[a.id] = i, u[l] = [...h, a], m[a.id] = o;
+    let h = null !== (t = u[a]) && void 0 !== t ? t : c;
+    d[l.id] = i, u[a] = [...h, l], m[l.id] = o;
     let {
       items: f
-    } = a;
-    null != f && (p[o.id] = (n = s({}, a), r = r = {
+    } = l;
+    null != f && (p[o.id] = (n = s({}, l), r = r = {
       items: f
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
@@ -106,14 +106,14 @@ let y = new x(a.Z, {
       channelId: t,
       file: n
     } = e;
-    v(t, n)
+    x(t, n)
   },
   UPLOAD_PROGRESS: function(e) {
     let {
       channelId: t,
       file: n
     } = e;
-    v(t, n)
+    x(t, n)
   },
   UPLOAD_COMPLETE: function(e) {
     let {
@@ -152,7 +152,7 @@ let y = new x(a.Z, {
       channelId: t,
       file: n
     } = e, r = m[n.id];
-    null != r && r.nonce, v(t, n)
+    null != r && r.nonce, x(t, n)
   },
   UPLOAD_RESTORE_FAILED_UPLOAD: function(e) {
     let {

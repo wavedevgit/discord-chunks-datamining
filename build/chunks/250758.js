@@ -19,7 +19,7 @@ var r, i, a, o = n(442837),
 let y = {},
   x = {};
 
-function O(e) {
+function j(e) {
   let {
     searchId: t,
     query: n,
@@ -30,7 +30,7 @@ function O(e) {
   } = e, l = x[t];
   return null == l && (l = {
     results: [],
-    context: c.Z.getSearchContext(j.bind(null, t))
+    context: c.Z.getSearchContext(O.bind(null, t))
   }, x[t] = l), {
     query: null != n ? n : "",
     mode: null != r ? r : {
@@ -44,7 +44,7 @@ function O(e) {
   }
 }
 
-function j(e, t) {
+function O(e, t) {
   let {
     results: n
   } = t, r = x[e], i = y[e];
@@ -74,7 +74,7 @@ function j(e, t) {
   } = i, {
     autocompletes: p
   } = i;
-  p = C(e, c), y[e] = O({
+  p = C(e, c), y[e] = j({
     searchId: e,
     query: s,
     mode: c,
@@ -196,7 +196,7 @@ function S(e) {
     cursorScope: a,
     autocompletes: o
   } = t;
-  y[e] = O({
+  y[e] = j({
     searchId: e,
     query: n,
     mode: r,
@@ -215,7 +215,7 @@ function T() {
     tokens: r,
     cursorScope: i
   } = y[e];
-  y[e] = O({
+  y[e] = j({
     searchId: e,
     query: t,
     mode: n,
@@ -230,7 +230,7 @@ class P extends(r = o.ZP.Store) {
   }
   getState(e) {
     var t;
-    return null !== (t = y[e]) && void 0 !== t ? t : O({
+    return null !== (t = y[e]) && void 0 !== t ? t : j({
       searchId: e
     })
   }
@@ -264,7 +264,7 @@ let A = new P(l.Z, {
           guild: r
         }), n = s.autocompletes, d = !1) : (c.context.clearQuery(), n = C(r, l))
       }
-      return y[r] = O({
+      return y[r] = j({
         searchId: r,
         query: o,
         mode: l,

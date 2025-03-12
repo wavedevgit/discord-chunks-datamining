@@ -26,11 +26,11 @@ function b(e, t, n, b) {
   var j;
   let {
     icon: x,
-    title: I,
-    body: S
+    title: S,
+    body: I
   } = (0, c.Xi)(e, t, n), {
-    trackView: N,
-    trackClick: C
+    trackView: C,
+    trackClick: N
   } = (0, O.R)(v.n0.TextChat, {
     notif_type: v.n0.TextChat,
     notif_user_id: null === (j = t.author) || void 0 === j ? void 0 : j.id,
@@ -42,31 +42,31 @@ function b(e, t, n, b) {
   });
   return {
     icon: x,
-    title: I,
+    title: S,
     body: t.content.length > 0 ? (0, o.ZP)(t, {
       noStyleAndInteraction: !0,
       formatInline: !0,
       hideSimpleEmbedContent: !1
-    }).content : S,
+    }).content : I,
     hint: (e, t) => e && !t ? null : (0, g.Q)((0, O.P)(), E.t.ykjOAA, E.NW.string(E.t.jZkzVF)),
     maxBodyLines: 2,
     renderFooter: (n, r, l) => n && !l ? (0, i.jsx)(m.Z, {
       id: r,
       replyToMessageId: t.id,
       channel: e,
-      onSend: () => C("send")
+      onSend: () => N("send")
     }) : null,
     onNotificationShow: () => {
-      b && (0, s.GN)(u.Ay, u.yk), N()
+      b && (0, s.GN)(u.Ay, u.yk), C()
     },
     onNotificationClick: () => {
       let n = (0, h.getPID)();
       (0, l.In)(e.id, !0, !0, t.id, {
         section: y.jXE.OVERLAY
-      }), f.ZP.isInputLocked(n) ? (C("unlock"), r.Z.setInputLocked(!1, n)) : (C("jump"), (0, a.uL)(y.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
+      }), f.ZP.isInputLocked(n) ? (N("unlock"), r.Z.setInputLocked(!1, n)) : (N("jump"), (0, a.uL)(y.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
     },
     onDismissClick: () => {
-      C("dismiss")
+      N("dismiss")
     }
   }
 }

@@ -151,6 +151,13 @@ function T() {
       }), (0, r.jsx)(s.zx, {
         onClick: () => x(t),
         children: "Set Balance"
+      }), (0, r.jsx)("div", {
+        className: O.interactivePillContainer,
+        children: (0, r.jsx)(N.A4, {
+          balance: g,
+          balanceWidgetMode: S,
+          onClick: () => I()
+        })
       }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         style: {

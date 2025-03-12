@@ -62,8 +62,8 @@ function f(e) {
     onTooltipHide: v,
     disabled: y,
     dangerous: x,
-    separator: O,
-    sparkle: j,
+    separator: j,
+    sparkle: O,
     showNewBadge: E,
     buttonClassName: N,
     children: C
@@ -114,7 +114,7 @@ function f(e) {
           }, g)) : null, null != C ? (0, r.jsx)("div", {
             className: a()(u.icon, u.buttonContent),
             children: C
-          }) : null, j && (0, r.jsx)(o.K1N, {}), E && (0, r.jsx)(o.IGR, {
+          }) : null, O && (0, r.jsx)(o.K1N, {}), E && (0, r.jsx)(o.IGR, {
             text: d.NW.string(d.t.y2b7CA),
             color: l.Z.BG_BRAND,
             className: u.newBadge
@@ -128,7 +128,7 @@ function f(e) {
           return n
         })(Object(c)).forEach(function(e) {
           Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(c, e))
-        }), i)), O && (0, r.jsx)(s.Z0, {})]
+        }), i)), j && (0, r.jsx)(s.Z0, {})]
       })
     }
   })

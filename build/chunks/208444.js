@@ -25,14 +25,14 @@ function v(e, t) {
     customInstallUrl: v,
     installParams: y,
     integrationTypesConfig: x
-  } = e, O = (0, f.Eb)({
+  } = e, j = (0, f.Eb)({
     customInstallUrl: v,
     installParams: y,
     integrationTypesConfig: x
-  }), j = (0, a.e7)([m.Z], () => {
+  }), O = (0, a.e7)([m.Z], () => {
     var e;
     return null !== (e = m.Z.getGuildId()) && void 0 !== e ? e : void 0
-  }), E = (0, l.PL)(!0, !1), N = (0, l.LD)(j, !1), C = (0, f.TK)(e.id, E), I = (0, f.TK)(e.id, N), S = O && null != x && i.Y.USER_INSTALL in x, T = (0, a.e7)([d.Z, u.Z, p.Z], () => {
+  }), E = (0, l.PL)(!0, !1), N = (0, l.LD)(O, !1), C = (0, f.TK)(e.id, E), I = (0, f.TK)(e.id, N), S = j && null != x && i.Y.USER_INSTALL in x, T = (0, a.e7)([d.Z, u.Z, p.Z], () => {
     let e = d.Z.getChannel(p.Z.getChannelId());
     return null != e && (e.isPrivate() || u.Z.can(g.Plq.SEND_MESSAGES, e))
   }, []), P = (C || I || S) && T, A = n || P;
@@ -53,7 +53,7 @@ function v(e, t) {
         }
       })
     }
-  } : O ? {
+  } : j ? {
     label: b.NW.string(b.t.NgXl3N),
     trackingArea: h.j_.ADD_APP,
     onClick() {
@@ -62,9 +62,9 @@ function v(e, t) {
         customInstallUrl: v,
         installParams: y,
         integrationTypesConfig: x,
-        guildId: j,
+        guildId: O,
         source: "app_message_embed"
       })
     }
-  } : void 0, [e.id, P, A, v, y, x, O, t, j])
+  } : void 0, [e.id, P, A, v, y, x, j, t, O])
 }

@@ -1,6 +1,6 @@
 /**
   Module ID: 54030
-  Original File Name: 9198f1f4f86a4c38
+  Original File Name: 86f544ac0a0b5adb
 **/
 .key__98feb {
     display: inline-block;
@@ -1299,8 +1299,8 @@
 
 .buttonSection_a83780 {
     padding: 4px;
-    background: var(--bg-mod-strong);
-    border: 1px solid var(--border-subtle);
+    background: var(--bg-mod-subtle);
+    border: 1px solid var(--border-faint);
     border-radius: 12px
 }
 

@@ -1,6 +1,6 @@
 /**
   Module ID: 39251
-  Original File Name: f85d2de5e4fa7969
+  Original File Name: c82eccd87e992b30
 **/
 .image__04666 {
     width: 100%;
@@ -4401,6 +4401,11 @@ html .progress__61462 {
 
 .primaryButton__98ba8:hover {
     background-color: var(--primary-230)
+}
+
+.wrapper__748d7 {
+    display: flex;
+    gap: 4px
 }
 
 .description__1f7ec {
@@ -9324,11 +9329,6 @@ html .progress__61462 {
 
 .custom-theme-background .container__9271d {
     background-color: var(--bg-mod-subtle)
-}
-
-.wrapper__748d7 {
-    display: flex;
-    gap: 4px
 }
 
 .container_c44293 {

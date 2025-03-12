@@ -21,8 +21,8 @@ var r = n(200651),
   v = n(471518),
   y = n(370210),
   x = n(258971),
-  O = n(981631),
-  j = n(49898),
+  j = n(981631),
+  O = n(49898),
   E = n(388032),
   N = n(997408);
 
@@ -42,7 +42,7 @@ function C(e) {
   }), [D, L] = i.useState(!1), M = i.useCallback(e => {
     e && L(!0)
   }, []), W = (0, c.O)(M), F = i.useCallback(() => {
-    _.default.track(O.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
+    _.default.track(j.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
       application_id: I,
       device_platform: a.tq ? "mobile_web" : "desktop_web",
       sender_user_id: S.author.id,
@@ -55,7 +55,7 @@ function C(e) {
   }, [I]), i.useEffect(() => {
     D && Z === y.M.FETCHED && F()
   }, [D, Z, F]), i.useEffect(() => {
-    D && w && _.default.track(O.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
+    D && w && _.default.track(j.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
       device_platform: a.tq ? "mobile_web" : "desktop_web",
       sender_user_id: S.author.id,
       guild_id: R,
@@ -63,14 +63,14 @@ function C(e) {
     })
   }, [D, R, w, S.author.id, S.channel_id]);
   let U = e => {
-    _.default.track(O.rMx.APP_DIRECTORY_PROFILE_EMBED_APP_INFO_CLICKED, {
+    _.default.track(j.rMx.APP_DIRECTORY_PROFILE_EMBED_APP_INFO_CLICKED, {
       application_id: I,
       device_platform: a.tq ? "mobile_web" : "desktop_web",
       clicked_section: e,
       guild_id: R,
       channel_id: S.channel_id
     }), (0, p.transitionToGlobalDiscovery)({
-      tab: j.GlobalDiscoveryTab.APPS,
+      tab: O.GlobalDiscoveryTab.APPS,
       applicationId: I,
       newSessionState: {
         guildId: R,
