@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 t.d(n, {
   Z: () => Z
-});
+}), t(266796);
 var r = t(200651),
   i = t(192379),
   o = t(442837),
@@ -13,8 +13,8 @@ var r = t(200651),
   u = t(111360),
   p = t(27237),
   v = t(51859),
-  m = t(953478),
-  x = t(460608),
+  x = t(953478),
+  m = t(460608),
   b = t(279604),
   j = t(535396),
   _ = t(730621),
@@ -59,15 +59,31 @@ function Z(e) {
         className: h.powerupsContainer,
         children: g.map(e => {
           let t = Z.get(e);
-          if (null != t) return (0, r.jsxs)(i.Fragment, {
+          if (null == t) return;
+          let {
+            title: o,
+            description: a
+          } = function(e) {
+            switch (e) {
+              case j.Us.LEVEL:
+                return {
+                  title: f.NW.string(_.Z["TXY/b2"]), description: f.NW.string(_.Z.aJv4PD)
+                };
+              case j.Us.PERK:
+                return {
+                  title: f.NW.string(_.Z.TV3Vm5), description: f.NW.string(_.Z.NHjM1t)
+                }
+            }
+          }(e);
+          return (0, r.jsxs)(i.Fragment, {
             children: [(0, r.jsxs)("div", {
               className: h.powerupTextContainer,
               children: [(0, r.jsx)(s.X6q, {
                 variant: "heading-lg/semibold",
-                children: f.NW.string(_.Z["TXY/b2"])
+                children: o
               }), (0, r.jsx)(s.Text, {
                 variant: "text-sm/medium",
-                children: f.NW.string(_.Z.aJv4PD)
+                children: a
               })]
             }), (0, r.jsx)("div", {
               className: h.powerupContainer,
@@ -92,9 +108,9 @@ function Z(e) {
         })
       }), (0, r.jsxs)("div", {
         className: h.sidebarContainer,
-        children: [(0, r.jsx)(m.Z, {
+        children: [(0, r.jsx)(x.Z, {
           guildId: n
-        }), (0, r.jsx)(x.Z, {
+        }), (0, r.jsx)(m.Z, {
           guildId: n
         })]
       })]

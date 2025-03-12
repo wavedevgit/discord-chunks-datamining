@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => m
+  Z: () => x
 });
 var r = t(200651),
   i = t(192379),
@@ -14,24 +14,36 @@ var r = t(200651),
   p = t(388032),
   v = t(423839);
 
-function m(e) {
+function x(e) {
   let {
     className: n,
     guildId: t,
     powerup: o,
-    onError: m
+    onError: x
   } = e, {
-    onActivate: x,
+    onActivate: m,
     isLoading: b,
     error: j,
-    onDeactivate: _
+    onShowDeactivate: _
   } = (0, d.ZP)(t, o), f = (0, c.Z)(t, o);
   return i.useEffect(() => {
-    null == m || m(j)
-  }, [j, m]), (0, r.jsxs)("div", {
+    null == x || x(j)
+  }, [j, x]), (0, r.jsxs)("div", {
     className: s()(v.container, n),
     children: [f && (0, r.jsx)(a.ua7, {
-      text: p.NW.string(u.Z.TZsu1d),
+      "aria-label": p.NW.string(u.Z.TZsu1d),
+      text: (0, r.jsxs)("div", {
+        className: v.tooltipContainer,
+        children: [(0, r.jsx)(a.Text, {
+          variant: "text-xs/semibold",
+          children: p.NW.string(u.Z.TZsu1d)
+        }), (0, r.jsx)(a.Text, {
+          variant: "text-xs/medium",
+          children: p.NW.formatToPlainString(u.Z["5HQUzM"], {
+            boostCount: o.cost
+          })
+        })]
+      }),
       children: e => {
         var n, t;
         return (0, r.jsx)(a.zxk, (n = function(e) {
@@ -72,7 +84,7 @@ function m(e) {
     }), (0, r.jsx)(a.zxk, {
       className: v.primaryButton,
       grow: !0,
-      onClick: f ? () => {} : x,
+      onClick: f ? () => {} : m,
       submitting: !f && b,
       children: f ? p.NW.string(u.Z["g5Ds6+"]) : p.NW.string(u.Z.gSxlHR)
     })]

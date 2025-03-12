@@ -287,8 +287,8 @@ function M(e) {
       contextKey: H
     })
   }, [null == E ? void 0 : E.page, H, Y, h, d]), K = a.useCallback(() => {
-    l(), (0, P.Z)(p)
-  }, [p, l]), $ = a.useCallback(() => {
+    (0, P.Z)(p)
+  }, [p]), $ = a.useCallback(() => {
     (0, s.ZDy)(async () => {
       let {
         default: e
@@ -372,8 +372,7 @@ function M(e) {
         }) : null]
       }), ee ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(x.Z, {
-          onComplete: Y,
-          onClose: l
+          onComplete: Y
         }), Q && (0, r.jsx)(b.Z, {
           className: R.premiumUpsell,
           showUpsell: !0,

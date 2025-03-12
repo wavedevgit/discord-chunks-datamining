@@ -13,8 +13,8 @@ var r = t(200651),
   u = t(838968),
   p = t(969867),
   v = t(279604),
-  m = t(730621),
-  x = t(388032),
+  x = t(730621),
+  m = t(388032),
   b = t(709435);
 
 function j(e) {
@@ -45,7 +45,7 @@ function j(e) {
             [b.active]: j
           }),
           variant: "text-xs/semibold",
-          children: x.NW.string(m.Z.j2jUjY)
+          children: m.NW.string(x.Z.j2jUjY)
         })]
       }), (0, r.jsx)(a.xv, {
         className: b.description,
@@ -68,7 +68,7 @@ function j(e) {
           }), (0, r.jsx)(a.xv, {
             color: "text-positive",
             variant: "text-sm/bold",
-            children: x.NW.string(m.Z.FFLkm5)
+            children: m.NW.string(x.Z.FFLkm5)
           })]
         })]
       })]

@@ -74,7 +74,8 @@ let l = {
         link_id: e.string().max(64)
       })),
       response: e => e.object({
-        success: e.boolean().required()
+        success: e.boolean().required(),
+        didCopyLink: e.boolean().required()
       })
     },
     [i.Q5.GET_RELATIONSHIPS]: {

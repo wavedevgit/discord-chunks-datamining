@@ -68,7 +68,7 @@ function u(e, n) {
     }).finally(() => {
       c(!1)
     })
-  }, [e, n.skuId]), m = i.useCallback(e => (e.stopPropagation(), v(!0).then(() => {
+  }, [e, n.skuId]), x = i.useCallback(e => (e.stopPropagation(), v(!0).then(() => {
     (0, o.ZDy)(async () => {
       let {
         default: e
@@ -77,12 +77,12 @@ function u(e, n) {
         powerup: n
       }, t))
     })
-  })), [v, n]), x = i.useCallback(e => (e.stopPropagation(), v(!1)), [v]);
+  })), [v, n]), m = i.useCallback(e => (e.stopPropagation(), v(!1)), [v]);
   return {
     isLoading: a,
     error: u,
-    onActivate: m,
-    onDeactivate: x,
+    onActivate: x,
+    onDeactivate: m,
     onShowDeactivate: i.useCallback(i => {
       i.stopPropagation(), (0, o.ZDy)(async () => {
         let {
