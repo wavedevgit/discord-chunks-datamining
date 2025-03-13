@@ -4,13 +4,13 @@ n.d(t, {
 });
 var r, a, l, i = n(442837),
   o = n(570140);
-let s = {
+let s = () => ({
     isFetching: !1,
     lastFetchedAt: null,
     error: null
-  },
+  }),
   c = [],
-  u = s;
+  u = s();
 class d extends(l = i.ZP.Store) {
   get isFetching() {
     return u.isFetching
@@ -58,6 +58,6 @@ let p = new d(o.Z, {
     c = c.filter(e => e.id !== t)
   },
   LOGOUT: function() {
-    c = [], u = s
+    c = [], u = s()
   }
 })

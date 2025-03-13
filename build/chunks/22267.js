@@ -28,15 +28,18 @@ let v = e => {
     className: v,
     isHighlighted: b,
     showStatus: y,
-    showWumpus: O
-  } = e, I = (0, a.e7)([f.Z], () => (0, s.wj)(f.Z.theme)), S = null != n ? (0, h.EU)(n) : i, T = (0, a.e7)([_.Z], () => _.Z.getStatus(t.id));
+    showWumpus: O,
+    isPurchased: I = !1
+  } = e, S = (0, a.e7)([f.Z], () => (0, s.wj)(f.Z.theme)), T = null != n ? (0, h.EU)(n) : i, N = (0, a.e7)([_.Z], () => _.Z.getStatus(t.id));
   return (0, r.jsxs)("div", {
-    className: o()(v, g.nameplatePreview),
+    className: o()(v, g.nameplatePreview, {
+      [g.nameplatePurchased]: I && !b
+    }),
     style: {
-      color: I ? "white" : "black"
+      color: S ? "white" : "black"
     },
-    children: [null != S && (0, r.jsx)(d.Z, {
-      nameplate: S,
+    children: [null != T && (0, r.jsx)(d.Z, {
+      nameplate: T,
       hovered: b
     }), (0, r.jsxs)("div", {
       className: g.overlayContainer,
@@ -47,7 +50,7 @@ let v = e => {
             user: t,
             guildId: null,
             avatarSize: l.EFr.SIZE_32,
-            status: y ? T : void 0,
+            status: y ? N : void 0,
             "aria-hidden": !0
           }),
           name: p.ZP.getName(null, null, t),

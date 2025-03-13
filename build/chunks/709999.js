@@ -191,7 +191,8 @@ let eo = e => {
       user: t,
       isDarkTheme: n,
       nameplate: i,
-      isHighlighted: s
+      isHighlighted: s,
+      isPurchased: a
     } = e;
     return (0, r.jsx)("div", {
       className: ei.nameplatePreviewRootContainer,
@@ -207,7 +208,8 @@ let eo = e => {
           className: ei.nameplatePreviewSampleItem,
           isHighlighted: s,
           showWumpus: !s,
-          showStatus: !0
+          showStatus: !0,
+          isPurchased: a
         }), (0, r.jsx)(em, {
           isDarkTheme: n
         }), (0, r.jsx)(em, {
@@ -354,7 +356,8 @@ let eo = e => {
               user: n,
               isDarkTheme: ey,
               nameplate: eI,
-              isHighlighted: ef
+              isHighlighted: ef,
+              isPurchased: eL
             })).with(m.Z.BUNDLE, () => (0, r.jsx)(Y.d, {
               product: t,
               user: n,
