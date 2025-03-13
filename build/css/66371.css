@@ -1,6 +1,6 @@
 /**
   Module ID: 66371
-  Original File Name: 3572484ed7314f0e
+  Original File Name: e39e7a2f28379390
 **/
 .hoverRoll__0263c {
     display: inline-block;
@@ -1646,6 +1646,13 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     align-self: center
 }
 
+.ctaButton__6e9b4 {
+    width: 100%;
+    height: 40px;
+    margin-top: 12px;
+    border-radius: 8px
+}
+
 .tail__6e9b4 {
     position: absolute;
     display: flex;
@@ -1709,4 +1716,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=3572484ed7314f0e.css.map*/
+/*# sourceMappingURL=e39e7a2f28379390.css.map*/

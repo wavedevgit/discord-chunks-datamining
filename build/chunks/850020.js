@@ -16,7 +16,7 @@ function d(e) {
     user: n,
     privateChannel: d,
     forceHide: u = !1
-  } = e, p = (0, s.D)(t), m = null == n ? void 0 : n.nameplate, [f, h] = (0, r.useState)(void 0), [g, _] = (0, r.useState)(null), b = (0, i.e7)([a.Z], () => {
+  } = e, p = (0, s.DW)(t), m = null == n ? void 0 : n.nameplate, [f, h] = (0, r.useState)(void 0), [g, _] = (0, r.useState)(null), b = (0, i.e7)([a.Z], () => {
     if (null == n) return !1;
     let e = a.Z.getStatus(n.id);
     return !new Set([c.Sk.OFFLINE, c.Sk.INVISIBLE, c.Sk.UNKNOWN]).has(e)

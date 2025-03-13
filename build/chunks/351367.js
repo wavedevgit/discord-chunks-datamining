@@ -28,18 +28,24 @@ function b(e) {
     location: t
   } = e, [s, c] = r.useState(null), b = u.t.useExperiment({
     location: t
-  }), g = (0, n.e7)([o.ZP], () => o.ZP.getMostRecentPremiumTypeSubscription()), O = (0, n.e7)([l.Z], () => l.Z.hasFetchedOffer()), x = (0, n.e7)([o.ZP], () => o.ZP.hasFetchedMostRecentPremiumTypeSubscription()), m = (0, n.e7)([i.default], () => i.default.getCurrentUser()), h = (null == m ? void 0 : m.hadPremiumSubscription()) && !x, j = !(0, a.I5)(m) && !O;
+  }), [g, O] = (0, n.Wu)([o.ZP], () => [o.ZP.getMostRecentPremiumTypeSubscription(), o.ZP.getPreviousPremiumTypeSubscription()]), x = (0, n.e7)([l.Z], () => l.Z.hasFetchedOffer()), [m, h] = (0, n.Wu)([o.ZP], () => [o.ZP.hasFetchedMostRecentPremiumTypeSubscription(), o.ZP.hasFetchedPreviousPremiumTypeSubscription()]), j = (0, n.e7)([i.default], () => i.default.getCurrentUser()), y = (null == j ? void 0 : j.hasHadPremium()) && !m && !h, v = !(0, a.I5)(j) && !x;
   return r.useEffect(() => {
     if (!1 === b.enabled) {
       c(!1);
       return
     }
-    if (!h && !j) {
+    if (!y && !v) {
       if (null === g) {
-        (0, a.I5)(m, d.p9.TIER_2) ? c(!1): c(!0);
+        (0, a.I5)(j, d.p9.TIER_2) ? c(!1): c(!0);
         return
       }
-      g.isPaused ? c(!0) : g.isEnded ? l.Z.hasAnyUnexpiredOffer() || l.Z.hasAnyUnexpiredDiscountOffer() || p(g) ? c(!1) : c(!0) : g.isActive ? c(f(g)) : c(!1)
+      if (g.isPaused) c(!0);
+      else if (g.isEnded) l.Z.hasAnyUnexpiredOffer() || l.Z.hasAnyUnexpiredDiscountOffer() || p(g) ? c(!1) : c(!0);
+      else if (g.isActive) {
+        let e = f(g),
+          t = null == O || !p(O);
+        c(e && t)
+      } else c(!1)
     }
-  }, [b.enabled, g, h, j, m]), s
+  }, [b.enabled, g, O, y, v, j]), s
 }

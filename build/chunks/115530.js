@@ -2,10 +2,10 @@
 n.d(t, {
   Z: () => s
 });
-var l = n(200651);
+var r = n(200651);
 n(192379);
-var r = n(120356),
-  i = n.n(r),
+var l = n(120356),
+  i = n.n(l),
   o = n(481060),
   a = n(177303);
 
@@ -14,7 +14,7 @@ function s(e) {
     children: t,
     className: n
   } = e;
-  return (0, l.jsx)(o.Text, {
+  return (0, r.jsx)(o.Text, {
     color: "none",
     className: i()(a.title, n),
     variant: "text-sm/medium",

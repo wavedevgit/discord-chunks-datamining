@@ -1,9 +1,9 @@
 /** Chunk was on 45847 **/
 n.d(t, {
-  Z: () => C
+  Z: () => _
 }), n(47120);
-var l = n(200651),
-  r = n(192379),
+var r = n(200651),
+  l = n(192379),
   i = n(120356),
   o = n.n(i),
   a = n(481060),
@@ -13,7 +13,7 @@ var l = n(200651),
   d = n(802138);
 let E = 0,
   f = () => "notification-position-selector-".concat(E++),
-  h = e => {
+  p = e => {
     switch (e) {
       case s._vf.TOP_LEFT:
         return c.NW.string(c.t.xlchpa);
@@ -27,24 +27,24 @@ let E = 0,
         return c.NW.string(c.t.AlY4ZW)
     }
   },
-  _ = [s._vf.DISABLED, s._vf.TOP_LEFT, s._vf.TOP_RIGHT, s._vf.BOTTOM_LEFT, s._vf.BOTTOM_RIGHT];
+  h = [s._vf.DISABLED, s._vf.TOP_LEFT, s._vf.TOP_RIGHT, s._vf.BOTTOM_LEFT, s._vf.BOTTOM_RIGHT];
 
-function p(e) {
+function C(e) {
   let {
     position: t,
     onChange: n
-  } = e, [i] = r.useState(() => f()), E = t === s._vf.DISABLED ? c.NW.string(c.t.R6LxVV) : c.NW.formatToPlainString(c.t.XXHDMz, {
-    position: h(t)
+  } = e, [i] = l.useState(() => f()), E = t === s._vf.DISABLED ? c.NW.string(c.t.R6LxVV) : c.NW.formatToPlainString(c.t.XXHDMz, {
+    position: p(t)
   });
-  return (0, l.jsxs)("div", {
-    children: [(0, l.jsx)(a.tEY, {
+  return (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(a.tEY, {
       within: !0,
       offset: -2,
-      children: (0, l.jsx)("div", {
+      children: (0, r.jsx)("div", {
         className: o()(u.wrapper, {
           [u.disabledSelected]: t === s._vf.DISABLED
         }),
-        children: _.map(e => (0, l.jsxs)("label", {
+        children: h.map(e => (0, r.jsxs)("label", {
           className: o()({
             [u.selected]: e === t,
             [u.disabled]: e === s._vf.DISABLED,
@@ -53,11 +53,11 @@ function p(e) {
             [u.bottomRight]: e === s._vf.BOTTOM_RIGHT,
             [u.bottomLeft]: e === s._vf.BOTTOM_LEFT
           }),
-          children: [h(e), e === s._vf.DISABLED ? (0, l.jsx)(a.t6m, {
+          children: [p(e), e === s._vf.DISABLED ? (0, r.jsx)(a.t6m, {
             size: "md",
             color: "currentColor",
             className: u.disabledIcon
-          }) : null, (0, l.jsx)("input", {
+          }) : null, (0, r.jsx)("input", {
             type: "radio",
             name: i,
             value: e,
@@ -66,12 +66,12 @@ function p(e) {
           })]
         }, e))
       })
-    }), (0, l.jsx)(a.R94, {
+    }), (0, r.jsx)(a.R94, {
       type: a.geA.DESCRIPTION,
       className: d.marginTop8,
       children: E
     })]
   })
 }
-p.Positions = s._vf;
-let C = p
+C.Positions = s._vf;
+let _ = C

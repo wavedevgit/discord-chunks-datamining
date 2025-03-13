@@ -72,8 +72,8 @@ let G = "NitroTabButton",
         return i
       }(e, ["selected", "route", "locationState"]);
     let q = (0, o.e7)([f.default], () => f.default.getCurrentUser()),
-      X = (0, o.e7)([m.ZP], () => m.ZP.getPremiumTypeSubscription()),
-      Q = (0, _.Qo)(q, X),
+      Q = (0, o.e7)([m.ZP], () => m.ZP.getPremiumTypeSubscription()),
+      X = (0, _.Qo)(q, Q),
       J = (0, l.JA)("nitro"),
       $ = (0, C.N)(),
       ee = (0, I.Ng)(),
@@ -168,7 +168,7 @@ let G = "NitroTabButton",
       onClick: () => {
         eu === a.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL && ed(k.L.TAKE_ACTION), b.default.track(D.rMx.NITRO_TAB_VISITED, {
           badge_decorator: V,
-          has_premium: Q
+          has_premium: X
         }), null != eh && ef(k.L.USER_DISMISS)
       }
     }, K, J), H = H = {

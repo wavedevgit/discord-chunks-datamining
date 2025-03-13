@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 4921a8886af57d57
+  Original File Name: 991b60dacee0e5f7
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -5214,6 +5214,13 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     align-self: center
 }
 
+.ctaButton__6e9b4 {
+    width: 100%;
+    height: 40px;
+    margin-top: 12px;
+    border-radius: 8px
+}
+
 .tail__6e9b4 {
     position: absolute;
     display: flex;
@@ -5536,4 +5543,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 0
 }
 
-/*# sourceMappingURL=4921a8886af57d57.css.map*/
+/*# sourceMappingURL=991b60dacee0e5f7.css.map*/

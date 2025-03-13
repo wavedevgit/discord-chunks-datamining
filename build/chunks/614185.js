@@ -1,37 +1,43 @@
-/** Chunk was on 81604 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  D: () => o,
-  E: () => l
+  C7: () => s,
+  DW: () => a,
+  Ec: () => o
 });
 var r = n(818083),
   i = n(987338);
-let l = (0, r.B)({
+let o = (0, r.B)({
     kind: "user",
     id: "2025-02_name_plate_experiment",
     label: "Nameplates Experiment",
     commonTriggerPoint: i.$P.CONNECTION_OPEN,
     defaultConfig: {
-      canSee: !1,
-      canBuy: !1
+      canSee: !1
     },
     treatments: [{
       id: 1,
       label: "Can see",
       config: {
         canSee: !0,
-        canBuy: !1
+        defaultPaletteOpacity: "33"
       }
     }, {
       id: 2,
-      label: "Can see and buy",
+      label: "Can see and default palette opacity 10%",
       config: {
         canSee: !0,
-        canBuy: !0
+        defaultPaletteOpacity: "1A"
       }
     }]
   }),
-  o = e => l.useExperiment({
+  a = e => o.useExperiment({
     location: e
   }, {
     autoTrackExposure: !1
-  }).canSee
+  }).canSee,
+  s = e => o.useExperiment({
+    location: e
+  }, {
+    autoTrackExposure: !1
+  }).defaultPaletteOpacity

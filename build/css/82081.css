@@ -1,6 +1,6 @@
 /**
   Module ID: 82081
-  Original File Name: 84180dc703b394a5
+  Original File Name: 16cfa71cfe2254ca
 **/
 .container__6e9b4 {
     position: relative;
@@ -65,6 +65,13 @@
 
 .closeButtonIcon__6e9b4 {
     align-self: center
+}
+
+.ctaButton__6e9b4 {
+    width: 100%;
+    height: 40px;
+    margin-top: 12px;
+    border-radius: 8px
 }
 
 .tail__6e9b4 {
@@ -195,4 +202,4 @@
     gap: 20px
 }
 
-/*# sourceMappingURL=84180dc703b394a5.css.map*/
+/*# sourceMappingURL=16cfa71cfe2254ca.css.map*/

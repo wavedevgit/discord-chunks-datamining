@@ -1,6 +1,6 @@
 /**
   Module ID: 36252
-  Original File Name: 56aa0a5e4ab41938
+  Original File Name: b0c8cdc6c52bdf8e
 **/
 @value minColumnWidth: 460px;
 
@@ -4017,6 +4017,13 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     align-self: center
 }
 
+.ctaButton__6e9b4 {
+    width: 100%;
+    height: 40px;
+    margin-top: 12px;
+    border-radius: 8px
+}
+
 .tail__6e9b4 {
     position: absolute;
     display: flex;
@@ -4115,4 +4122,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-right: auto
 }
 
-/*# sourceMappingURL=56aa0a5e4ab41938.css.map*/
+/*# sourceMappingURL=b0c8cdc6c52bdf8e.css.map*/

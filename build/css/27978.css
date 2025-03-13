@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: cdeebd81b5733553
+  Original File Name: ec98b07991cd9ec8
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -5128,6 +5128,13 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     align-self: center
 }
 
+.ctaButton__6e9b4 {
+    width: 100%;
+    height: 40px;
+    margin-top: 12px;
+    border-radius: 8px
+}
+
 .tail__6e9b4 {
     position: absolute;
     display: flex;
@@ -5863,4 +5870,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100px
 }
 
-/*# sourceMappingURL=cdeebd81b5733553.css.map*/
+/*# sourceMappingURL=ec98b07991cd9ec8.css.map*/

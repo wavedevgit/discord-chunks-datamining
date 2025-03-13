@@ -194,7 +194,7 @@ function k(e) {
         variant: "text-sm/normal",
         className: P.text,
         children: R.NW.format(R.t["jzW5/P"], {
-          helpCenterLink: O.Z.getArticleURL(N.BhN.NITRO),
+          helpCenterLink: O.Z.getArticleURL(N.BhN.FRACTIONAL_PREMIUM_ABOUT),
           duration: t,
           date: s
         })
@@ -252,7 +252,7 @@ function j(e) {
           variant: "text-sm/normal",
           className: P.text,
           children: R.NW.format(R.t.KnH4jo, {
-            helpCenterLink: O.Z.getArticleURL(N.BhN.NITRO),
+            helpCenterLink: O.Z.getArticleURL(N.BhN.FRACTIONAL_PREMIUM_ABOUT),
             duration: t
           })
         }), (0, r.jsx)(c.zxk, {
