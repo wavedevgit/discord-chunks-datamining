@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(481060),
   u = n(410575),
   f = n(2052),
-  h = n(924557),
-  m = n(600164),
+  m = n(924557),
+  h = n(600164),
   x = n(436774),
   g = n(140465),
   p = n(774026),
@@ -100,10 +100,10 @@ function W(e) {
       analyticsLocation: c,
       onClick: u,
       onClose: f,
-      setIsHovering: h
+      setIsHovering: m
     } = e,
     {
-      value: m,
+      value: h,
       label: x
     } = l;
   return o ? (t = (0, r.jsx)(d.DY3, {
@@ -113,8 +113,8 @@ function W(e) {
     text: (0, r.jsx)(R, {}),
     children: (0, r.jsx)("div", {
       className: O.textContainer,
-      onMouseEnter: () => h(!0),
-      onMouseLeave: () => h(!1),
+      onMouseEnter: () => m(!0),
+      onMouseLeave: () => m(!1),
       children: (0, r.jsx)(d.Text, {
         variant: "text-xs/bold",
         className: s()(O.selectorNitroText, O.enhancedSelectorNitroText),
@@ -133,7 +133,7 @@ function W(e) {
       }),
       children: x
     })
-  }), n = () => u(m)), {
+  }), n = () => u(h)), {
     content: t,
     className: s()(O.selectorButton, {
       [O.selectorButtonSelected]: i,
@@ -160,7 +160,7 @@ function k(e) {
     return a()(null != e, "StreamSettings: user cannot be undefined"), e
   }), L = (0, c.e7)([v.Z, _.Z], () => _.Z.getChannel(v.Z.getVoiceChannelId())), D = b.ZP.canStreamQuality(b.U2.MID, M), {
     location: G
-  } = (0, f.O)(), B = (0, h.Zq)({
+  } = (0, f.O)(), B = (0, m.Zq)({
     autoTrackExposure: !1
   }), U = (0, g.B4)({
     location: "StreamSettings"
@@ -198,7 +198,7 @@ function k(e) {
     value: N.tI.PRESET_CUSTOM,
     label: Z.NW.string(Z.t["+eOtrK"])
   }], $ = n === N.tI.PRESET_DOCUMENTS ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(m.Z, {
+    children: [(0, r.jsx)(h.Z, {
       children: (0, r.jsx)(d.xJW, {
         title: Z.NW.string(Z.t.rHyPXl),
         titleClassName: w.formItemTitleSlim,
@@ -220,7 +220,7 @@ function k(e) {
       channel: L
     })]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(m.Z, {
+    children: [(0, r.jsxs)(h.Z, {
       children: [(0, r.jsx)(d.xJW, {
         title: Z.NW.string(Z.t.rHyPXl),
         className: O.settingsGroup,

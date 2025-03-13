@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(812206),
   u = n(605436),
   f = n(600164),
-  h = n(594190),
-  m = n(925329),
+  m = n(594190),
+  h = n(925329),
   x = n(565138),
   g = n(977059),
   p = n(695346),
@@ -51,7 +51,7 @@ function H(e) {
     selectSource: n,
     sourceChanged: l,
     onChangeSource: i
-  } = e, s = (0, o.e7)([h.ZP, y.Z], () => (0, I.isWindows)() ? (0, T.Z)(h.ZP, y.Z) : null), c = (0, o.e7)([d.Z], () => (null == s ? void 0 : s.id) != null ? d.Z.getApplication(s.id) : null), u = (0, o.e7)([h.ZP], () => h.ZP.getRunningGames()), f = (0, o.Wu)([d.Z], () => u.map(e => null != e.id ? d.Z.getApplication(e.id) : null).filter(w.lm), [u]), x = null;
+  } = e, s = (0, o.e7)([m.ZP, y.Z], () => (0, I.isWindows)() ? (0, T.Z)(m.ZP, y.Z) : null), c = (0, o.e7)([d.Z], () => (null == s ? void 0 : s.id) != null ? d.Z.getApplication(s.id) : null), u = (0, o.e7)([m.ZP], () => m.ZP.getRunningGames()), f = (0, o.Wu)([d.Z], () => u.map(e => null != e.id ? d.Z.getApplication(e.id) : null).filter(w.lm), [u]), x = null;
   if (null != t ? x = t.name : null != s && (x = s.name), null == x) return null;
   let g = (0, L.Z)(s, t, u),
     p = l ? f.find(e => {
@@ -66,9 +66,9 @@ function H(e) {
     className: F.modalContent,
     titleClassName: F.formItemTitleVerySlim,
     children: (0, r.jsxs)(A.Z, {
-      children: [null != p ? (0, r.jsx)(m.Z, {
+      children: [null != p ? (0, r.jsx)(h.Z, {
         game: p,
-        size: m.Z.Sizes.XSMALL,
+        size: h.Z.Sizes.XSMALL,
         className: z.selectedIcon
       }) : (0, r.jsx)(_, {
         className: z.selectedIcon
@@ -212,8 +212,8 @@ function q(e) {
     selectedResolution: a,
     sourceChanged: d,
     selectedGuildId: f,
-    targetGuildPremiumTier: h,
-    selectSource: m,
+    targetGuildPremiumTier: m,
+    selectSource: h,
     selectGuild: x,
     sound: p,
     previewDisabled: j,
@@ -245,7 +245,7 @@ function q(e) {
       onChangeAudioDevice: A
     }) : (0, r.jsxs)("div", {
       children: [(0, r.jsx)(H, {
-        selectSource: m,
+        selectSource: h,
         sourceChanged: d,
         onChangeSource: T,
         selectedSource: t
@@ -287,7 +287,7 @@ function q(e) {
       selectedPreset: s,
       selectedFPS: n,
       selectedResolution: a,
-      targetGuildPremiumTier: h,
+      targetGuildPremiumTier: m,
       onClose: b,
       onFPSChange: y,
       onResolutionChange: Z,

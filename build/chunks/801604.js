@@ -13,8 +13,8 @@ var l = n(481060),
   d = n(615161),
   u = n(565574),
   f = n(396678),
-  h = n(889150),
-  m = n(388032),
+  m = n(889150),
+  h = n(388032),
   x = n(63770);
 
 function g() {
@@ -68,7 +68,7 @@ function _() {
         className: x.sourceOrPresetName,
         variant: "text-md/semibold",
         color: "header-primary",
-        children: y ? null !== (t = null == v ? void 0 : v.name) && void 0 !== t ? t : m.NW.string(h.Z["hJMA+/"]) : S
+        children: y ? null !== (t = null == v ? void 0 : v.name) && void 0 !== t ? t : h.NW.string(m.Z["hJMA+/"]) : S
       }), (0, r.jsxs)(l.Text, {
         className: x.summaryDetail,
         variant: "text-xs/medium",
@@ -81,9 +81,9 @@ function _() {
               color: "currentColor"
             }), S]
           }), (0, r.jsx)(g, {})]
-        }), m.NW.format(h.Z["7A4ZyM"], {
+        }), h.NW.format(m.Z["7A4ZyM"], {
           resolution: N
-        }), (0, r.jsx)(g, {}), m.NW.format(h.Z.CmJX8P, {
+        }), (0, r.jsx)(g, {}), h.NW.format(m.Z.CmJX8P, {
           frameRate: C
         }), _ && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(g, {}), (0, r.jsxs)("span", {
@@ -92,7 +92,7 @@ function _() {
               className: x.mutedIcon,
               size: "xxs",
               color: "currentColor"
-            }), m.NW.string(h.Z.FzMGWV)]
+            }), h.NW.string(m.Z.FzMGWV)]
           })]
         })]
       })]

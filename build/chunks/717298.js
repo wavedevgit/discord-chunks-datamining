@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(435935),
   u = n(268146),
   f = n(442837),
-  h = n(481060),
-  m = n(668781),
+  m = n(481060),
+  h = n(668781),
   x = n(579806),
   g = n(89425),
   p = n(100527),
@@ -65,16 +65,16 @@ function z(e) {
       let e = [{
         name: B.NW.string(B.t.tHoi7u),
         value: u.vA.WINDOW,
-        icon: h.GON
+        icon: m.GON
       }, {
         name: B.NW.string(B.t.MhJ43N),
         value: u.vA.CAMERA,
-        icon: h.Odl
+        icon: m.Odl
       }];
       return J || e.splice(1, 0, {
         name: B.NW.string(B.t.slM8rK),
         value: u.vA.SCREEN,
-        icon: h.pzj
+        icon: m.pzj
       }), e
     }, [J]),
     {
@@ -91,7 +91,7 @@ function z(e) {
         goLiveModalDurationMs: performance.now() - F.current
       });
       if (t) return n();
-      "no permission" === r && m.Z.show({
+      "no permission" === r && h.Z.show({
         title: B.NW.string(B.t["X+mXen"]),
         body: B.NW.string(B.t.MIJCzs)
       }), n()
@@ -111,7 +111,7 @@ function z(e) {
   return (0, r.jsx)(E.Yw, {
     state: H,
     dispatch: V,
-    children: (0, r.jsxs)(h.Y0X, {
+    children: (0, r.jsxs)(m.Y0X, {
       impression: {
         impressionName: c.ImpressionNames.GO_LIVE_MODAL,
         impressionProperties: {
@@ -121,15 +121,15 @@ function z(e) {
         }
       },
       className: s()(U.root, J && U.nativePicker),
-      size: h.CgR.LARGE,
+      size: m.CgR.LARGE,
       transitionState: i,
       children: [null != o ? (0, r.jsx)(T.Z, {
         onSelectChannel: ee
       }) : (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(h.xBx, {
+        children: [(0, r.jsx)(m.xBx, {
           separator: !1,
           className: U.header,
-          children: (0, r.jsx)(h.sY7, {
+          children: (0, r.jsx)(m.sY7, {
             className: U.segmentedControl,
             value: Q,
             look: "pill",
@@ -145,7 +145,7 @@ function z(e) {
             },
             options: q
           })
-        }), (0, r.jsx)(h.hzk, {
+        }), (0, r.jsx)(m.hzk, {
           className: U.content,
           children: J && Q !== u.vA.CAMERA ? (0, r.jsx)(R.Z, {
             onSourceSelect: et
@@ -161,7 +161,7 @@ function z(e) {
         })]
       }), Y && (0, r.jsx)(A.Z, {
         onClose: n
-      }), (0, r.jsxs)(h.mzw, {
+      }), (0, r.jsxs)(m.mzw, {
         className: U.footer,
         separator: !1,
         justify: d.k.Justify.BETWEEN,
@@ -169,14 +169,14 @@ function z(e) {
         direction: d.k.Direction.HORIZONTAL,
         children: [(0, r.jsx)(M.Z, {}), (0, r.jsxs)("div", {
           className: U.rightButtonGroup,
-          children: [J && Q !== u.vA.CAMERA && (0, r.jsx)(h.zxk, {
-            size: h.zxk.Sizes.LARGE,
+          children: [J && Q !== u.vA.CAMERA && (0, r.jsx)(m.zxk, {
+            size: m.zxk.Sizes.LARGE,
             onClick: () => {
               (0, O.t)(), (0, O.T)("")
             },
             children: B.NW.string(B.t.FiBjwc)
-          }), z && (0, r.jsx)(h.zxk, {
-            size: h.zxk.Sizes.LARGE,
+          }), z && (0, r.jsx)(m.zxk, {
+            size: m.zxk.Sizes.LARGE,
             className: U.streamButton,
             disabled: null == H.selectedSource,
             onClick: () => null != H.selectedSource && $(H.selectedSource),

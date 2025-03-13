@@ -1,6 +1,6 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => m
+  Z: () => h
 }), n(47120);
 var r = n(200651);
 n(192379);
@@ -30,7 +30,7 @@ function f(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     source: t,
     selected: n,
@@ -78,7 +78,7 @@ function h(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   var t;
   let {
     onClick: n
@@ -91,16 +91,16 @@ function m(e) {
     windowSources: i,
     deviceSources: d,
     screenSources: f,
-    sourceType: m,
+    sourceType: h,
     fetchingSources: x,
     selectedSource: g
   }] = (0, c.E_)();
   return x ? (0, r.jsx)("div", {
     className: u.loading,
     children: (0, r.jsx)(o.$jN, {})
-  }) : (t = m === s.vA.WINDOW ? i : m === s.vA.SCREEN ? f : d, (0, r.jsx)("div", {
+  }) : (t = h === s.vA.WINDOW ? i : h === s.vA.SCREEN ? f : d, (0, r.jsx)("div", {
     className: u.root,
-    children: t.map(e => (0, r.jsx)(h, {
+    children: t.map(e => (0, r.jsx)(m, {
       onClick: n,
       source: e,
       selected: (null == g ? void 0 : g.id) === e.id,

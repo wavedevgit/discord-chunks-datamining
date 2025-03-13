@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(594174),
   u = n(451467),
   f = n(672811),
-  h = n(891180),
-  m = n(615161),
+  m = n(891180),
+  h = n(615161),
   x = n(156582),
   g = n(396678),
   p = n(37113),
@@ -49,7 +49,7 @@ function y(e) {
     preset: I,
     resolution: P,
     fps: T
-  }, E] = (0, m.E_)(), R = (0, l.e7)([c.Z, o.Z], () => o.Z.getChannel(c.Z.getVoiceChannelId())), W = null == R ? void 0 : R.getGuildId(), k = (0, l.e7)([a.Z], () => {
+  }, E] = (0, h.E_)(), R = (0, l.e7)([c.Z, o.Z], () => o.Z.getChannel(c.Z.getVoiceChannelId())), W = null == R ? void 0 : R.getGuildId(), k = (0, l.e7)([a.Z], () => {
     var e;
     return null != W ? null === (e = a.Z.getGuild(W)) || void 0 === e ? void 0 : e.premiumTier : null
   }), [A, M] = null !== (t = (0, g.Z)(p.tI.PRESET_VIDEO)) && void 0 !== t ? t : [p.LY.RESOLUTION_720, p.ws.FPS_30], [L, D] = null !== (n = (0, g.Z)(p.tI.PRESET_DOCUMENTS)) && void 0 !== n ? n : [p.LY.RESOLUTION_SOURCE, p.ws.FPS_15];
@@ -69,12 +69,12 @@ function y(e) {
           switch (e) {
             case p.tI.PRESET_VIDEO:
               return v.NW.format(_.Z.G5O1Mz, {
-                resolution: (0, h.M)(A),
+                resolution: (0, m.M)(A),
                 frameRate: M
               });
             case p.tI.PRESET_DOCUMENTS:
               return v.NW.format(_.Z["8tcFLy"], {
-                resolution: (0, h.M)(L),
+                resolution: (0, m.M)(L),
                 frameRate: D
               });
             case p.tI.PRESET_CUSTOM:
@@ -97,8 +97,8 @@ function y(e) {
           id: "stream-option-resolution-".concat(e),
           checked: P === e,
           label: e !== p.LY.RESOLUTION_720 ? (0, r.jsx)(N, {
-            label: (0, h.M)(e)
-          }) : (0, h.M)(e),
+            label: (0, m.M)(e)
+          }) : (0, m.M)(e),
           action: () => (function(e) {
             if (!(0, u.Z)(I, e, T, d.default.getCurrentUser(), k)) return j(), (0, x.E)({
               analyticsLocation: s.Z.GO_LIVE_MODAL_SETTINGS_SELECTION

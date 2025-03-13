@@ -1,6 +1,6 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => h
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -14,13 +14,13 @@ var l = n(120356),
   u = n(388032),
   f = n(68440);
 
-function h(e) {
+function m(e) {
   let {
     channel: t,
     users: n,
     selected: l = !1
-  } = e, h = (0, a.ZP)(t), m = null;
-  null != n && n.length > 0 && (m = (0, r.jsx)(o.Z, {
+  } = e, m = (0, a.ZP)(t), h = null;
+  null != n && n.length > 0 && (h = (0, r.jsx)(o.Z, {
     guildId: t.guild_id,
     className: f.voiceUserList,
     users: n,
@@ -77,7 +77,7 @@ function h(e) {
       className: f.channelIcon
     }), (0, r.jsx)("div", {
       className: f.channelName,
-      children: h
-    }), m]
+      children: m
+    }), h]
   })
 }

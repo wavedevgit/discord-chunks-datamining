@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(481060),
   u = n(687058),
   f = n(537135),
-  h = n(176940),
-  m = n(388032),
+  m = n(176940),
+  h = n(388032),
   x = n(731133),
   g = n(711597),
   p = n(802138);
@@ -25,7 +25,7 @@ function _(e) {
     onChangeAudioDevice: i
   } = e;
   s()(null != t, "Camera capture device cannot be null");
-  let o = (0, h.Z)(),
+  let o = (0, m.Z)(),
     _ = (0, u.Z)(),
     [v, j] = l.useState(function(e, t, n) {
       if (null != t && null != n) {
@@ -49,12 +49,12 @@ function _(e) {
           color: d.zxk.Colors.PRIMARY,
           size: d.zxk.Sizes.SMALL,
           onClick: n,
-          children: m.NW.string(m.t.GEgsAw)
+          children: h.NW.string(h.t.GEgsAw)
         })]
       })
     }), (0, r.jsx)(d.xJW, {
       className: p.marginTop8,
-      title: m.NW.string(m.t.y4ooen),
+      title: h.NW.string(h.t.y4ooen),
       children: (0, r.jsx)(d.q4e, {
         value: v,
         className: p.__invalid_marginaTop8,

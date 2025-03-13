@@ -1,6 +1,6 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => m
+  Z: () => h
 });
 var r, l, i = n(200651),
   s = n(192379),
@@ -18,7 +18,7 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 var f = ((r = f || {}).WRAP = "wrap", r.STACK = "stack", r);
-class h extends(l = s.PureComponent) {
+class m extends(l = s.PureComponent) {
   renderChildren() {
     let e;
     let {
@@ -51,9 +51,9 @@ class h extends(l = s.PureComponent) {
     })
   }
 }
-u(h, "Layout", f), u(h, "defaultProps", {
+u(m, "Layout", f), u(m, "defaultProps", {
   children: [],
   layout: "wrap",
   columns: 4
 });
-let m = h
+let h = m

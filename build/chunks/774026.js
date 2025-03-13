@@ -1,6 +1,6 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => m
+  Z: () => h
 });
 var r = n(200651);
 n(192379);
@@ -13,24 +13,24 @@ var l = n(913527),
   d = n(63063),
   u = n(981631),
   f = n(388032),
-  h = n(867552);
+  m = n(867552);
 
-function m(e) {
+function h(e) {
   var t;
   let {
     streamingUntil: n,
     user: l,
-    channel: m
-  } = e, x = (0, o.JZ)(l, m), g = (0, a.l)({
+    channel: h
+  } = e, x = (0, o.JZ)(l, h), g = (0, a.l)({
     user: l,
-    channelId: m.id,
-    guildId: m.guild_id,
+    channelId: h.id,
+    guildId: h.guild_id,
     messageId: void 0
   })(x), p = i()(n).diff(i()(), "hours");
   return p <= 0 ? null : (0, r.jsxs)("div", {
-    className: h.attribution,
+    className: m.attribution,
     children: [(0, r.jsx)(c.Z, {
-      className: h.img
+      className: m.img
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsx)(s.X6, {
         variant: "heading-sm/bold",

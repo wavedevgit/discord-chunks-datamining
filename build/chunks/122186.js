@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(436774),
   u = n(639119),
   f = n(197115),
-  h = n(74538),
-  m = n(981631),
+  m = n(74538),
+  h = n(981631),
   x = n(474936),
   g = n(388032),
   p = n(756232);
@@ -41,7 +41,7 @@ function _(e) {
     o = l.useCallback(() => {
       if (null != i) {
         var e;
-        return null !== (e = (0, h.fr)(i)) && void 0 !== e ? e : g.NW.string(g.t.Y2WKTk)
+        return null !== (e = (0, m.fr)(i)) && void 0 !== e ? e : g.NW.string(g.t.Y2WKTk)
       }
       return g.NW.string(g.t.Y2WKTk)
     }, [i]);
@@ -101,9 +101,9 @@ function j(e) {
     openStreamUpsellModal: l,
     glow: i = !1
   } = e, o = {
-    section: m.jXE.STREAM_SETTINGS,
-    object: m.qAy.PREMIUM_UPSELL_BANNER,
-    objectType: m.Qqv.BUY
+    section: h.jXE.STREAM_SETTINGS,
+    object: h.qAy.PREMIUM_UPSELL_BANNER,
+    objectType: h.Qqv.BUY
   };
   return (0, r.jsxs)("div", {
     className: s()(p.upsellBanner, p.enhancedBanner, {

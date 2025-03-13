@@ -18,10 +18,10 @@ function f(e) {
     scrollerClassName: n,
     scrollerInnerClassName: i,
     children: f
-  } = e, h = l.useRef(null), [m, x] = l.useState(!1), [g, p] = l.useState(!1), _ = l.useCallback(() => {
+  } = e, m = l.useRef(null), [h, x] = l.useState(!1), [g, p] = l.useState(!1), _ = l.useCallback(() => {
     let {
       current: e
-    } = h;
+    } = m;
     null != e && (x(!e.isScrolledToTop()), p(!e.isScrolledToBottom()))
   }, []);
   return (0, a.Ng)(() => _()), (0, r.jsxs)(r.Fragment, {
@@ -31,12 +31,12 @@ function f(e) {
         className: d.formItemTitle,
         children: t
       }), (0, r.jsx)(c.Z, {
-        separator: m
+        separator: h
       })]
     }), (0, r.jsx)("div", {
       className: n,
       children: (0, r.jsx)(o.Den, {
-        ref: h,
+        ref: m,
         className: s()(u.scrollerInner, i, {
           [u.bottomSeparator]: g
         }),

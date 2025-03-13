@@ -1,27 +1,31 @@
 /** Chunk was on web.js **/
 "use strict";
+let r;
 n.d(t, {
-  UB: () => C,
-  Uc: () => v,
-  ZP: () => j,
-  kE: () => R
+  UB: () => D,
+  Uc: () => I,
+  ZP: () => H,
+  kE: () => L
 });
-var r, i = n(192379),
-  o = n(442837),
-  a = n(570140),
-  s = n(872810),
-  l = n(998594),
-  c = n(592125),
-  u = n(430824),
-  d = n(131951),
-  f = n(496675),
-  _ = n(944486),
-  p = n(102172),
-  h = n(74299),
-  m = n(299570),
-  g = n(65154);
+var i, o = n(192379),
+  a = n(442837),
+  s = n(570140),
+  l = n(872810),
+  c = n(998594),
+  u = n(592125),
+  d = n(430824),
+  f = n(131951),
+  _ = n(496675),
+  p = n(944486),
+  h = n(102172),
+  m = n(74299),
+  g = n(692417),
+  E = n(783443),
+  v = n(299570),
+  b = n(65154),
+  y = n(388032);
 
-function E(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,116 +33,143 @@ function E(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-var v = function(e) {
+var I = function(e) {
   return e[e.Present = 0] = "Present", e[e.Update = 1] = "Update", e[e.Cancel = 2] = "Cancel", e[e.Error = 3] = "Error", e
 }({});
-let b = !1,
-  y = 0,
-  O = 0,
-  I = !1,
-  S = {};
-
-function T() {
-  return d.Z.supports(g.AN.NATIVE_SCREENSHARE_PICKER)
-}
-
-function N() {
-  return d.Z.getUseSystemScreensharePicker()
-}
-
-function A() {
-  let e = N() && (O > 0 || b && 0 === y);
-  if (e !== I) {
-    var t, n;
-    I = e, null === (n = d.Z.getMediaEngine()) || void 0 === n || null === (t = n.setNativeDesktopVideoSourcePickerActive) || void 0 === t || t.call(n, I)
-  }
-}
-
-function C() {
-  return (0, i.useEffect)(() => (y++, A(), () => {
-    0 == --y && A()
-  }), [])
-}
+let S = !1,
+  T = 0,
+  N = 0,
+  A = !1,
+  C = {};
 
 function R() {
-  return (0, i.useEffect)(() => (O++, A(), () => {
-    --O, A()
-  }), [])
+  return f.Z.supports(b.AN.NATIVE_SCREENSHARE_PICKER)
 }
 
 function P() {
-  let e = c.Z.getChannel(_.Z.getVoiceChannelId());
-  return b = null != e && (0, h.Z)(d.Z) && (0, p.JL)(e, u.Z, f.Z, !1), A(), !1
+  return f.Z.getUseSystemScreensharePicker()
 }
-class w extends(r = o.ZP.Store) {
-  initialize() {
-    this.syncWith([d.Z, _.Z, c.Z, u.Z, f.Z], P), l.Z.subscribe({
-      location: "NativeScreenSharePickerStore_initialize"
-    }, A), P()
-  }
-  supported() {
-    return T()
-  }
-  enabled() {
-    return N()
-  }
-  releasePickerStream() {
-    (0, m.t)()
-  }
-  getPickerState() {
-    return S
+
+function w() {
+  let e = P() && (N > 0 || S && 0 === T);
+  if (e !== A) {
+    var t, n;
+    A = e, null === (n = f.Z.getMediaEngine()) || void 0 === n || null === (t = n.setNativeDesktopVideoSourcePickerActive) || void 0 === t || t.call(n, A)
   }
 }
 
-function D(e) {
-  let {
-    existing: t
-  } = e;
-  if (S = {
-      lastPickerAction: 1
-    }, 0 === y && !t) {
-    let e = c.Z.getChannel(_.Z.getVoiceChannelId());
-    null != e && (0, h.Z)(d.Z) && (0, p.JL)(e, u.Z, f.Z, !1) && (0, s.WH)(e.getGuildId(), e.id, {
-      sourceId: "prepicked:0",
-      nativePickerStyleUsed: S.lastPresentedPickerStyle
-    })
-  }
+function D() {
+  return (0, o.useEffect)(() => (T++, w(), () => {
+    0 == --T && w()
+  }), [])
 }
 
 function L() {
-  S = {
+  return (0, o.useEffect)(() => (N++, w(), () => {
+    --N, w()
+  }), [])
+}
+
+function x() {
+  let e = u.Z.getChannel(p.Z.getVoiceChannelId());
+  return S = null != e && (0, m.Z)(f.Z) && (0, h.JL)(e, d.Z, _.Z, !1), w(), !1
+}
+
+function M() {
+  return null != r ? (0, E.Z)(r) : null
+}
+
+function k() {
+  return null != r ? (0, g.Z)(r) : null
+}
+
+function j() {
+  var e;
+  return {
+    sourceId: "prepicked:0",
+    nativePickerStyleUsed: C.lastPresentedPickerStyle,
+    sourceName: null !== (e = M()) && void 0 !== e ? e : y.NW.string(y.t["KKcy9/"])
+  }
+}
+class U extends(i = a.ZP.Store) {
+  initialize() {
+    this.syncWith([f.Z, p.Z, u.Z, d.Z, _.Z], x), c.Z.subscribe({
+      location: "NativeScreenSharePickerStore_initialize"
+    }, w), x()
+  }
+  supported() {
+    return R()
+  }
+  enabled() {
+    return P()
+  }
+  releasePickerStream() {
+    (0, v.t)()
+  }
+  getPickerState() {
+    return C
+  }
+  getLastPickedContent() {
+    return r
+  }
+  getLastPickedContentTitle() {
+    return M()
+  }
+  getLastPickedContentPID() {
+    return k()
+  }
+  getStreamStartOptions() {
+    return j()
+  }
+}
+
+function G(e) {
+  let {
+    existing: t,
+    content: n
+  } = e;
+  if (C = {
+      lastPickerAction: 1
+    }, r = n, 0 === T && !t) {
+    let e = u.Z.getChannel(p.Z.getVoiceChannelId());
+    null != e && (0, m.Z)(f.Z) && (0, h.JL)(e, d.Z, _.Z, !1) && (0, l.WH)(e.getGuildId(), e.id, j())
+  }
+}
+
+function B() {
+  C = {
     lastPickerAction: 2
   }
 }
 
-function x(e) {
+function V(e) {
   let {
     error: t
   } = e;
-  S = {
+  C = {
     lastPickerAction: 3,
     lastPickerError: t
   }
 }
 
-function M(e) {
+function F(e) {
   let {
     style: t
   } = e;
-  S = {
+  C = {
     lastPickerAction: 0,
     lastPresentedPickerStyle: t
   }
 }
 
-function k() {
-  S = {}
+function Z() {
+  C = {}
 }
-E(w, "displayName", "NativeScreenSharePickerStore");
-let j = new w(a.Z, {
-  NATIVE_SCREEN_SHARE_PICKER_UPDATE: D,
-  NATIVE_SCREEN_SHARE_PICKER_CANCEL: L,
-  NATIVE_SCREEN_SHARE_PICKER_ERROR: x,
-  NATIVE_SCREEN_SHARE_PICKER_PRESENT: M,
-  NATIVE_SCREEN_SHARE_PICKER_RELEASE: k
+O(U, "displayName", "NativeScreenSharePickerStore");
+let H = new U(s.Z, {
+  NATIVE_SCREEN_SHARE_PICKER_UPDATE: G,
+  NATIVE_SCREEN_SHARE_PICKER_CANCEL: B,
+  NATIVE_SCREEN_SHARE_PICKER_ERROR: V,
+  NATIVE_SCREEN_SHARE_PICKER_PRESENT: F,
+  NATIVE_SCREEN_SHARE_PICKER_RELEASE: Z
 })

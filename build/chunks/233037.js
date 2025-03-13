@@ -13,8 +13,8 @@ var l = n(442837),
   d = n(938475),
   u = n(102172),
   f = n(499596),
-  h = n(148381),
-  m = n(388032),
+  m = n(148381),
+  h = n(388032),
   x = n(885977);
 
 function g(e) {
@@ -43,8 +43,8 @@ function g(e) {
       value: e.id
     }
   });
-  return (0, r.jsx)(h.Z, {
-    title: m.NW.string(m.t["eg7R/v"]),
+  return (0, r.jsx)(m.Z, {
+    title: h.NW.string(h.t["eg7R/v"]),
     scrollerInnerClassName: x.channelSelectScrollerInner,
     children: (0, r.jsx)(i.FXm, {
       options: j,

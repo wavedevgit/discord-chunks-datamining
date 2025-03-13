@@ -578,8 +578,8 @@ class O extends a.Z {
       this.emit(s.aB.VideoInputInitialized, e)
     }), m(this, "handleAudioInputInitialization", e => {
       this.emit(s.aB.AudioInputInitialized, e)
-    }), m(this, "handleNativeScreenSharePickerUpdate", e => {
-      this.emit(s.aB.NativeScreenSharePickerUpdate, e)
+    }), m(this, "handleNativeScreenSharePickerUpdate", (e, t) => {
+      this.emit(s.aB.NativeScreenSharePickerUpdate, e, t)
     }), m(this, "handleNativeScreenSharePickerCancel", e => {
       this.emit(s.aB.NativeScreenSharePickerCancel, e)
     }), m(this, "handleNativeScreenSharePickerError", e => {

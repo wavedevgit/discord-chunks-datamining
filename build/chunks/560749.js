@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(823385),
   u = n(601565),
   f = n(131704),
-  h = n(592125),
-  m = n(580005),
+  m = n(592125),
+  h = n(580005),
   x = n(984933),
   g = n(430824),
   p = n(496675),
@@ -74,23 +74,23 @@ function O(e) {
     searchOptions: {
       frecencyBoosters: !0
     }
-  }), j = (0, i.Wu)([_.Z, x.ZP, h.Z, g.Z, p.Z], () => {
+  }), j = (0, i.Wu)([_.Z, x.ZP, m.Z, g.Z, p.Z], () => {
     let e = [],
       t = _.Z.getGuildId();
     if (null == t) return e;
     for (let n of x.ZP.getVocalChannelIds(t)) {
-      let t = h.Z.getChannel(n);
+      let t = m.Z.getChannel(n);
       null != t && (0, C.JL)(t, g.Z, p.Z) && e.push(t)
     }
     return e
-  }), O = (0, i.Wu)([d.Z, h.Z, m.Z, g.Z, p.Z], () => {
+  }), O = (0, i.Wu)([d.Z, m.Z, h.Z, g.Z, p.Z], () => {
     let e = [],
       t = new Set;
     for (let n of d.Z.getChannelHistory()) {
-      let r = h.Z.getChannel(n);
+      let r = m.Z.getChannel(n);
       (null == r ? void 0 : r.type) === S.d4z.GUILD_VOICE && (0, C.JL)(r, g.Z, p.Z) && (t.add(r.id), e.push(r))
     }
-    for (let n of m.Z.getFrequentlyWithoutFetchingLatest()) n instanceof f.Sf && n.type === S.d4z.GUILD_VOICE && !t.has(n.id) && (0, C.JL)(n, g.Z, p.Z) && (t.add(n.id), e.push(n));
+    for (let n of h.Z.getFrequentlyWithoutFetchingLatest()) n instanceof f.Sf && n.type === S.d4z.GUILD_VOICE && !t.has(n.id) && (0, C.JL)(n, g.Z, p.Z) && (t.add(n.id), e.push(n));
     return e
   }), I = l.useMemo(() => {
     let e = new Set(O.map(e => e.id)),

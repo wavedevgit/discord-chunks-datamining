@@ -14,8 +14,8 @@ var r = n(200651),
   d = n(442837),
   u = n(846519),
   f = n(481060),
-  h = n(579806),
-  m = n(600164),
+  m = n(579806),
+  h = n(600164),
   x = n(152708),
   g = n(594190),
   p = n(751571),
@@ -76,7 +76,7 @@ function z(e) {
     enableGoLiveCaptureCard: i
   } = y.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), o = C.Z.supports(L.AN.GO_LIVE_HARDWARE), [a, h] = l.useState(null), [S, N] = l.useState(null), [w, O] = l.useState(null), P = null != w && w.length > 0, [T, R] = l.useState(c.vA.WINDOW), [k, B] = l.useState(!1), z = l.useRef(null), F = l.useRef(new u.Xp), H = (0, d.e7)([g.ZP], () => g.ZP.getRunningGames()), V = function(e, t, n) {
+  }), o = C.Z.supports(L.AN.GO_LIVE_HARDWARE), [a, m] = l.useState(null), [S, N] = l.useState(null), [w, O] = l.useState(null), P = null != w && w.length > 0, [T, R] = l.useState(c.vA.WINDOW), [k, B] = l.useState(!1), z = l.useRef(null), F = l.useRef(new u.Xp), H = (0, d.e7)([g.ZP], () => g.ZP.getRunningGames()), V = function(e, t, n) {
     let r = (0, j.Zy)({
       location: M.dr.STREAM_SOURCE_SELECT
     });
@@ -106,7 +106,7 @@ function z(e) {
         windowSources: n,
         cameraSources: r
       } = e;
-      h(t), N(n), O(r)
+      m(t), N(n), O(r)
     }), e.start(1e3, async () => {
       let {
         screenSources: e,
@@ -116,7 +116,7 @@ function z(e) {
         width: 176,
         height: 99
       });
-      h(e), N(t), O(n)
+      m(e), N(t), O(n)
     }), () => {
       e.stop()
     }
@@ -145,10 +145,10 @@ function z(e) {
     variant: "text-md/normal",
     color: "text-danger",
     children: [D.NW.string(D.t["kW5h/f"]), (0, r.jsx)("br", {}), D.NW.string(D.t["5Jvu1d"])]
-  }) : (0, r.jsx)(m.Z, {
+  }) : (0, r.jsx)(h.Z, {
     className: G.spinner,
-    justify: m.Z.Justify.CENTER,
-    align: m.Z.Align.CENTER,
+    justify: h.Z.Justify.CENTER,
+    align: h.Z.Align.CENTER,
     children: (0, r.jsx)(f.$jN, {})
   });
   let Q = q.map(e => {
@@ -308,7 +308,7 @@ function V(e) {
       e.stop()
     }
   }, []);
-  let m = l.useCallback(e => {
+  let h = l.useCallback(e => {
       var n;
       let {
         value: r
@@ -319,7 +319,7 @@ function V(e) {
         url: ""
       })
     }, [t, o]),
-    x = (0, N.isMac)() && a().satisfies(null === h.Z || void 0 === h.Z ? void 0 : h.Z.os.release, k.jR),
+    x = (0, N.isMac)() && a().satisfies(null === m.Z || void 0 === m.Z ? void 0 : m.Z.os.release, k.jR),
     g = (0, N.isMac)(),
     [p, _] = l.useState(!1),
     v = l.useCallback(() => {
@@ -373,7 +373,7 @@ function V(e) {
         })]
       }), (0, r.jsx)(f.FXm, {
         className: G.nativePickerCaptureList,
-        onChange: m,
+        onChange: h,
         radioItemClassName: G.nativePickerRadioItem,
         options: n.map(e => {
           let [t, n] = e;
@@ -399,7 +399,7 @@ function J(e) {
     lastPickerError: o
   } = (0, T.Z)(t, n);
   return l.useEffect(() => {
-    (0, N.isLinux)() || (0, N.isMac)() && a().satisfies(null === h.Z || void 0 === h.Z ? void 0 : h.Z.os.release, k.jR) ? (0, w.T)(i) : (0, w.t)()
+    (0, N.isLinux)() || (0, N.isMac)() && a().satisfies(null === m.Z || void 0 === m.Z ? void 0 : m.Z.os.release, k.jR) ? (0, w.T)(i) : (0, w.t)()
   }, [i]), s === O.Uc.Error ? (0, r.jsx)(f.Text, {
     className: G.errorMessage,
     variant: "text-md/normal",
