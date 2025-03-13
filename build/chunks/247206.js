@@ -1,27 +1,28 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Cm: () => q,
+  Cm: () => Q,
   HH: () => x,
   Hc: () => Y,
   IV: () => K,
   KP: () => j,
-  Ks: () => $,
+  Ks: () => ee,
   OP: () => W,
   Pq: () => H,
+  QN: () => z,
   Sv: () => G,
   Tw: () => U,
   UU: () => F,
   Yy: () => V,
   aP: () => Z,
-  bR: () => J,
+  bR: () => $,
   l4: () => D,
   lJ: () => k,
-  m8: () => ee,
+  m8: () => et,
   oh: () => B,
   tG: () => C,
   vx: () => L,
-  xx: () => z,
+  xx: () => q,
   zj: () => M
 }), n(789020);
 var r = n(286379),
@@ -302,6 +303,35 @@ function z(e) {
     messageId: t,
     channelId: n,
     numOfAttachments: r,
+    numOfEmbeds: i,
+    numOfGoreAttachments: o,
+    numOfExplicitAttachments: a,
+    numOfGoreEmbeds: s,
+    numOfExplicitEmbeds: l
+  } = e, c = a > 0 || l > 0, u = o > 0 || s > 0;
+  if (null == n || null == t || !c && !u) return;
+  let f = d.Z.getChannel(n);
+  p.default.track(v.rMx.REDACTABLE_MESSAGE_LOADED, {
+    message_id: t,
+    channel_id: n,
+    channel_type: null == f ? void 0 : f.type,
+    guild_id: null == f ? void 0 : f.guild_id,
+    num_of_attachments: r,
+    num_of_gore_attachments: o,
+    num_of_explicit_attachments: a,
+    num_of_embeds: i,
+    num_of_gore_embeds: s,
+    num_of_explicit_embeds: l,
+    has_redactable_explicit: c,
+    has_redactable_gore: u
+  })
+}
+
+function q(e) {
+  let {
+    messageId: t,
+    channelId: n,
+    numOfAttachments: r,
     numOfExplicitAttachments: i,
     numOfEmbeds: o,
     numOfExplicitEmbeds: a
@@ -320,11 +350,11 @@ function z(e) {
   })
 }
 
-function q(e) {
+function Q(e) {
   let {
     attachments: t,
     embeds: n
-  } = Q(e), r = X(e);
+  } = X(e), r = J(e);
   return e = e.merge({
     attachments: t,
     embeds: n,
@@ -332,14 +362,14 @@ function q(e) {
   })
 }
 
-function Q(e) {
+function X(e) {
   return {
     attachments: e.attachments.map(e => (null == e.content_scan_version && (e.content_scan_version = -1), e)),
     embeds: e.embeds.map(e => (null == e.contentScanVersion && (e.contentScanVersion = -1), e))
   }
 }
 
-function X(e) {
+function J(e) {
   let {
     messageSnapshots: t
   } = e;
@@ -349,7 +379,7 @@ function X(e) {
     } = e, {
       attachments: n,
       embeds: r
-    } = Q(t);
+    } = X(t);
     return t = t.merge({
       attachments: n,
       embeds: r
@@ -358,15 +388,15 @@ function X(e) {
     })
   })
 }
-let J = (e, t) => null != e && null != t && (e <= E.LN || t <= E.iE);
+let $ = (e, t) => null != e && null != t && (e <= E.LN || t <= E.iE);
 
-function $() {
+function ee() {
   let e = (0, g.G7)("explicit_media_redaction_utils"),
     t = (0, o.sf)();
   return e && t
 }
 
-function ee() {
+function et() {
   let e = (0, g.UQ)("explicit_media_redaction_utils"),
     t = (0, o.L5)();
   return e && t

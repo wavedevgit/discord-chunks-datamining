@@ -308,6 +308,10 @@ let j = {
     throttlePeriod: 1e3,
     throttleKeys: e => [e.channel_id]
   },
+  [p.rMx.REDACTABLE_MESSAGE_LOADED]: {
+    throttlePeriod: P,
+    throttleKeys: e => [e.channel_id, e.message_id]
+  },
   [p.rMx.OPEN_MODAL]: e => e.type === p.jXE.MEDIA_VIEWER ? {
     throttlePeriod: A,
     throttleKeys: e => [e.type]
