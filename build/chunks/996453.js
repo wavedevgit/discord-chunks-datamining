@@ -28,14 +28,14 @@ function g(e) {
     isSlideReady: j,
     hasFooter: N = !0,
     isCommunity: b = !1
-  } = e, [L, I] = i.useState(u.Z.getGuildNameSuggestion()), [y, v] = i.useState(null), [Z, S] = i.useState(!1), [T, k] = i.useState(null), E = !!(null === (t = d.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff()), [O, B] = i.useState(E), M = (0, c.Dt)(), H = i.useRef(null);
+  } = e, [L, I] = i.useState(u.Z.getGuildNameSuggestion()), [y, v] = i.useState(null), [Z, S] = i.useState(!1), [T, E] = i.useState(null), k = !!(null === (t = d.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff()), [O, B] = i.useState(k), M = (0, c.Dt)(), H = i.useRef(null);
   i.useEffect(() => {
     var e;
     j && (null === (e = H.current) || void 0 === e || e.focus())
   }, [j]);
   let D = i.useCallback(async e => {
       if (e.preventDefault(), null != n) {
-        S(!0), k(null);
+        S(!0), E(null);
         try {
           if (null != f) f(L, y);
           else {
@@ -43,7 +43,7 @@ function g(e) {
             l.Z.transitionToGuildSync(e.id), null == _ || _(e.id)
           }
         } catch (e) {
-          k(e)
+          E(e)
         }
         S(!1)
       }
@@ -107,7 +107,7 @@ function g(e) {
               inputRef: H,
               id: M
             })]
-          }), E && (0, s.jsx)(r.j7V, {
+          }), k && (0, s.jsx)(r.j7V, {
             hideBorder: !0,
             value: O,
             onChange: e => B(e),

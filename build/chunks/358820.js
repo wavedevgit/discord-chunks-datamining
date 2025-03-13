@@ -91,9 +91,16 @@ function O(e) {
       analyticsContext: t
     }))
   }).catch(t => {
-    (null == t ? void 0 : t.USER_CANCELED_DOWNLOAD) ? b.info("User canceled the download for Voice Filter dependency", e): b.error("Failed to fetch voice filter model", g({
+    (null == t ? void 0 : t.USER_CANCELED_DOWNLOAD) ? b.info("User canceled the download for Voice Filter dependency", e): (b.error("Failed to fetch voice filter model", g({
       reason: t
-    }, e)), a.Z.dispatch(v(g({
+    }, e)), d.Z.captureMessage("Failed to fetch voice filter model", {
+      tags: {
+        modelId: r
+      },
+      extra: {
+        reason: t
+      }
+    })), a.Z.dispatch(v(g({
       type: "VOICE_FILTER_DOWNLOAD_FAILED"
     }, e), {
       error: t

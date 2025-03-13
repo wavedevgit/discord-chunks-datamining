@@ -1,8 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Hu: () => _,
-  m3: () => f,
+  Hu: () => f,
   wt: () => d
 }), n(47120);
 var r = n(442837),
@@ -66,20 +65,6 @@ function d(e) {
 }
 
 function f(e) {
-  let {
-    location: t,
-    guildId: n
-  } = e, {
-    isTester: r
-  } = c.getCurrentConfig({
-    location: t
-  }, {
-    autoTrackExposure: !1
-  });
-  return r && (null == n || !l.has(n))
-}
-
-function _(e) {
   let {
     location: t,
     autoTrackExposure: n

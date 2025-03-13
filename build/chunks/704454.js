@@ -88,7 +88,7 @@ function s(e) {
     autoTrackExposure: !1
   }), {
     enabled: n
-  } = i.useExperiment({
+  } = o.useExperiment({
     location: e
   }, {
     autoTrackExposure: !1

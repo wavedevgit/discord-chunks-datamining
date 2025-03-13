@@ -4,8 +4,8 @@ t.d(l, {
   o: () => x
 }), t(47120);
 var n, i = t(259443),
-  r = t(379649),
-  s = t(314897),
+  s = t(379649),
+  r = t(314897),
   a = t(592125),
   o = t(866960),
   c = t(19780),
@@ -25,7 +25,7 @@ var f = ((n = {}).SELF_VIDEO = "self_video", n.SELF_STREAM = "self_stream", n.RE
 let v = new Map;
 class x {
   onSpinnerStarted() {
-    null == this.spinnerVisibleStart && (this.spinnerVisibleStart = (0, r.zO)())
+    null == this.spinnerVisibleStart && (this.spinnerVisibleStart = (0, s.zO)())
   }
   trackSpinnerDuration(e, l, t) {
     if (null == this.spinnerVisibleStart) return;
@@ -34,14 +34,14 @@ class x {
         let t = (null !== (l = v.get(e)) && void 0 !== l ? l : 0) + 1;
         return v.set(e, t), t
       }(t),
-      i = (0, r.zO)() - this.spinnerVisibleStart;
+      i = (0, s.zO)() - this.spinnerVisibleStart;
     if (this.spinnerVisibleStart = null, i < 0) {
       this.logger.warn("spinner duration is negative: ".concat(i, " ms\n        [").concat(e, ", count for stream: ").concat(n, "]"));
       return
     }
     this.logger.info("spinner visible for ".concat(i, " ms\n      [").concat(e, ", count for stream: ").concat(n, "]"));
     let p = c.Z.getGuildId(),
-      f = u.Z.getUserVoiceChannelId(p, s.default.getId()),
+      f = u.Z.getUserVoiceChannelId(p, r.default.getId()),
       x = function(e) {
         if (null != e) {
           if (e.isGuildVoice()) return "guild_voice";

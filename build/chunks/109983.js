@@ -15,22 +15,24 @@ function a(e) {
     onClick: a,
     autoFocus: o
   } = e;
-  return (0, s.jsxs)("button", {
-    className: r.container,
-    onClick: a,
-    autoFocus: o,
-    children: [(0, s.jsx)("img", {
-      className: r.icon,
-      alt: "",
-      src: t
-    }), (0, s.jsx)(i.Text, {
-      className: r.text,
-      variant: "text-md/bold",
-      children: n
-    }), (0, s.jsx)("img", {
-      className: r.arrow,
-      alt: "",
-      src: l
-    })]
+  return (0, s.jsx)(i.tEY, {
+    children: (0, s.jsxs)("button", {
+      className: r.container,
+      onClick: a,
+      autoFocus: o,
+      children: [(0, s.jsx)("img", {
+        className: r.icon,
+        alt: "",
+        src: t
+      }), (0, s.jsx)(i.Text, {
+        className: r.text,
+        variant: "text-md/bold",
+        children: n
+      }), (0, s.jsx)("img", {
+        className: r.arrow,
+        alt: "",
+        src: l
+      })]
+    })
   })
 }

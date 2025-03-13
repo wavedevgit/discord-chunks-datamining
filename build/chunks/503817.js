@@ -1,7 +1,6 @@
 /** Chunk was on 31649 **/
 n.d(t, {
-  DX: () => a,
-  hM: () => l
+  DX: () => a
 });
 let r = (0, n(818083).B)({
   kind: "user",
@@ -38,22 +37,4 @@ function a(e) {
     autoTrackExposure: n
   });
   return a.enabledWithStatusSelection || a.enabledWithoutSatusSelection
-}
-
-function l(e) {
-  let {
-    location: t,
-    autoTrackExposure: n = !0
-  } = e, {
-    enabledWithStatusSelection: a,
-    enabledWithoutSatusSelection: l
-  } = r.useExperiment({
-    location: t
-  }, {
-    autoTrackExposure: n
-  });
-  return {
-    enabledWithStatusSelection: a,
-    enabledWithoutSatusSelection: l
-  }
 }

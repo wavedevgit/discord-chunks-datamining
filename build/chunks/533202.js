@@ -27,7 +27,7 @@ function f(e) {
     directoryGuildName: j,
     directoryGuildId: N,
     currentCategoryId: b
-  } = e, [L, I] = i.useState(f), [y, v] = i.useState(null), [Z, S] = i.useState(null), [T, k] = i.useState(null), [E, O] = i.useState(null), [B, M] = i.useState(null), [H, D] = i.useState(""), [w, G] = i.useState(null != b ? b : g.AR.UNCATEGORIZED), [U, R] = i.useState(!1), {
+  } = e, [L, I] = i.useState(f), [y, v] = i.useState(null), [Z, S] = i.useState(null), [T, E] = i.useState(null), [k, O] = i.useState(null), [B, M] = i.useState(null), [H, D] = i.useState(""), [w, G] = i.useState(null != b ? b : g.AR.UNCATEGORIZED), [U, R] = i.useState(!1), {
     availableGuilds: W,
     addedGuilds: A,
     loading: P
@@ -39,7 +39,7 @@ function f(e) {
     let e = B;
     if (!U) {
       if (null == T || null == Z) return;
-      let t = await a.Z.createGuildFromTemplate(T, E, Z);
+      let t = await a.Z.createGuildFromTemplate(T, k, Z);
       M(e = new c.ZP(t))
     }
     null != e && (await d.bF(t, e.id, H, w), I(g.VX.CONFIRMATION))
@@ -93,7 +93,7 @@ function f(e) {
             children: (0, s.jsx)(o.Z, {
               guildTemplate: Z,
               onHubGuildInfoSet: (e, t) => {
-                k(e), O(t), I(g.VX.CUSTOMIZE_EXISTING_GUILD)
+                E(e), O(t), I(g.VX.CUSTOMIZE_EXISTING_GUILD)
               },
               onClose: _,
               onBack: () => I(g.VX.GUILD_TEMPLATES),

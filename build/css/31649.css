@@ -1,6 +1,6 @@
 /**
   Module ID: 31649
-  Original File Name: 63f8d8187507a286
+  Original File Name: 6d22eb232d657ec7
 **/
 .formGroup__9b8f6 {
     margin-bottom: 20px
@@ -192,15 +192,6 @@
     color: var(--interactive-normal)
 }
 
-.statusOptionItem__7fd1c {
-    display: flex;
-    align-items: center
-}
-
-.statusIcon__7fd1c {
-    margin-right: 8px
-}
-
 .header__7fd1c {
     position: relative;
     display: flex;
@@ -241,10 +232,6 @@
     align-items: center
 }
 
-.invisibleStatusNotice__7fd1c {
-    margin-top: 10px
-}
-
 .needInspiration__7fd1c {
     display: flex;
     align-items: center;
@@ -258,4 +245,4 @@
     color: var(--interactive-hover)
 }
 
-/*# sourceMappingURL=63f8d8187507a286.css.map*/
+/*# sourceMappingURL=6d22eb232d657ec7.css.map*/
