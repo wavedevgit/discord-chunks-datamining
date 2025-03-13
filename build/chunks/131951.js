@@ -611,6 +611,14 @@ function tA() {
       code: t,
       device_name: n
     })
+  }), eU.on(m.aB.VideoCodecError, e => {
+    let t = "encode" === e.mode;
+    (0, A.kr)(t ? A.u.VIDEO_ENCODE_ERROR : A.u.VIDEO_DECODE_ERROR, {
+      videoCodec: e.codecStandard,
+      videoEncoder: t ? e.implName : null,
+      videoDecoder: t ? null : e.implName,
+      errorMessage: e.message
+    })
   }), eU.setOnVideoContainerResized((e, t, n) => {
     v.Z.wait(() => v.Z.dispatch({
       type: "VIDEO_SIZE_UPDATE",

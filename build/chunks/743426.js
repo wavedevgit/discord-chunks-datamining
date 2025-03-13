@@ -547,7 +547,7 @@ class O extends a.Z {
     return 0 === this.connections.size
   }
   constructor() {
-    var e, t, n, r, i, a, c;
+    var e, t, n, r, i, a, c, p;
     super(), e = this, m(this, "Video", _.Z), m(this, "Camera", f.Z), m(this, "videoInputDeviceId", h.Av), m(this, "connections", new Set), m(this, "lastVoiceActivity", -1), m(this, "audioSubsystem", "standard"), m(this, "audioLayer", ""), m(this, "deviceChangeGeneration", 0), m(this, "consecutiveWatchdogFailures", 0), m(this, "codecSurvey", null), m(this, "logger", new o.Yd("MediaEngineNative")), m(this, "handleDeviceChange", function() {
       let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
         n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
@@ -586,13 +586,15 @@ class O extends a.Z {
       this.emit(s.aB.NativeScreenSharePickerError, e)
     }), m(this, "handleAudioDeviceModuleErrorCallback", (e, t) => {
       -100 !== e && this.emit(s.aB.AudioDeviceModuleError, "RustAudioDeviceModule", e, t)
+    }), m(this, "handleVideoCodecErrorCallback", e => {
+      this.emit(s.aB.VideoCodecError, e)
     });
-    let p = (0, d.zS)();
-    p.setDeviceChangeCallback(this.handleDeviceChange), p.setVolumeChangeCallback(this.handleVolumeChange), p.setOnVoiceCallback(this.handleVoiceActivity), null === (t = p.setVideoInputInitializationCallback) || void 0 === t || t.call(p, this.handleVideoInputInitialization), null === (n = p.setAudioInputInitializationCallback) || void 0 === n || n.call(p, this.handleAudioInputInitialization), p.setTransportOptions({
+    let g = (0, d.zS)();
+    g.setDeviceChangeCallback(this.handleDeviceChange), g.setVolumeChangeCallback(this.handleVolumeChange), g.setOnVoiceCallback(this.handleVoiceActivity), null === (t = g.setVideoInputInitializationCallback) || void 0 === t || t.call(g, this.handleVideoInputInitialization), null === (n = g.setAudioInputInitializationCallback) || void 0 === n || n.call(g, this.handleAudioInputInitialization), g.setTransportOptions({
       idleJitterBufferFlush: !0,
       ducking: !1
-    }), null === (r = p.setNativeScreenSharePickerCallbacks) || void 0 === r || r.call(p, this.handleNativeScreenSharePickerUpdate, this.handleNativeScreenSharePickerCancel, this.handleNativeScreenSharePickerError), null === (i = p.setAudioDeviceModuleErrorCallback) || void 0 === i || i.call(p, this.handleAudioDeviceModuleErrorCallback), this.on("removeListener", this.handleRemoveListener), this.on("newListener", this.handleNewListener), null != (0, d.zS)().getAudioSubsystem ? (0, d.zS)().getAudioSubsystem((e, t) => {
+    }), null === (r = g.setNativeScreenSharePickerCallbacks) || void 0 === r || r.call(g, this.handleNativeScreenSharePickerUpdate, this.handleNativeScreenSharePickerCancel, this.handleNativeScreenSharePickerError), null === (i = g.setAudioDeviceModuleErrorCallback) || void 0 === i || i.call(g, this.handleAudioDeviceModuleErrorCallback), null === (a = g.setVideoCodecErrorCallback) || void 0 === a || a.call(g, this.handleVideoCodecErrorCallback), this.on("removeListener", this.handleRemoveListener), this.on("newListener", this.handleNewListener), null != (0, d.zS)().getAudioSubsystem ? (0, d.zS)().getAudioSubsystem((e, t) => {
       this.audioSubsystem = e, this.audioLayer = t
-    }) : null != (0, d.zS)().getUseLegacyAudioDevice && (this.audioSubsystem = (0, d.zS)().getUseLegacyAudioDevice() ? h.iA.LEGACY : h.iA.STANDARD), null != p.pingVoiceThread && "undefined" != typeof window && "canary" === window.GLOBAL_ENV.RELEASE_CHANNEL && this.watchdogTick(), null != p.setActiveSinksChangeCallback && p.setActiveSinksChangeCallback(this.handleActiveSinksChange), null === (a = p.setLoopbackPlaybackGainMultiplier) || void 0 === a || a.call(p, h.Jk), null === (c = p.setVoiceFiltersFailedCallback) || void 0 === c || c.call(p, e => this.emit(s.aB.VoiceFiltersFailed, e)), (0, l.Z)(this)
+    }) : null != (0, d.zS)().getUseLegacyAudioDevice && (this.audioSubsystem = (0, d.zS)().getUseLegacyAudioDevice() ? h.iA.LEGACY : h.iA.STANDARD), null != g.pingVoiceThread && "undefined" != typeof window && "canary" === window.GLOBAL_ENV.RELEASE_CHANNEL && this.watchdogTick(), null != g.setActiveSinksChangeCallback && g.setActiveSinksChangeCallback(this.handleActiveSinksChange), null === (c = g.setLoopbackPlaybackGainMultiplier) || void 0 === c || c.call(g, h.Jk), null === (p = g.setVoiceFiltersFailedCallback) || void 0 === p || p.call(g, e => this.emit(s.aB.VoiceFiltersFailed, e)), (0, l.Z)(this)
   }
 }
