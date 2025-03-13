@@ -220,7 +220,7 @@ function C(e) {
     s.Z.setGpuBoostRequested(E.zS.OVERLAY_VIDEO_STREAM_RENDERING, !q)
   }, [q]), (0, c.ZP)(() => () => {
     s.Z.setGpuBoostRequested(E.zS.OVERLAY_VIDEO_STREAM_RENDERING, !1)
-  }), q && C) ? null : q && !C ? k ? C ? null : (0, i.jsx)(v.E, {
+  }), (q || !_) && C) ? null : q && !C ? k ? C ? null : (0, i.jsx)(v.E, {
     emptyText: j.NW.string(j.t["T6+rX1"]),
     icon: o.hGI,
     absolute: !0
