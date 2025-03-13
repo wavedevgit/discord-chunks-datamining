@@ -572,6 +572,12 @@ let j = {
     } = this.getDiscordUtils();
     return null != e && e()
   },
+  AcquireGlobalLock(e) {
+    let {
+      acquireGlobalLock: t
+    } = this.getDiscordUtils();
+    if (null != t) return t(e)
+  },
   isModuleVersionAtLeast(e, t) {
     var n, r, i;
     let o = [...null != T ? T : [0, 0, 0]];

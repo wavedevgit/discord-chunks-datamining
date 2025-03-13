@@ -34,8 +34,8 @@ var r, i = n(200651),
   R = n(541692),
   w = n(986197),
   L = n(135200),
-  D = n(219496),
-  k = n(794099),
+  k = n(219496),
+  D = n(794099),
   W = n(807369),
   B = n(180529),
   M = n(108427),
@@ -462,7 +462,7 @@ class eu extends(r = o.PureComponent) {
     } = this.props, {
       subText: A,
       consentText: Z
-    } = this.renderConsentComponents(), R = this.renderErrorMessage(), D = (0, i.jsx)(p.ua7, {
+    } = this.renderConsentComponents(), R = this.renderErrorMessage(), k = (0, i.jsx)(p.ua7, {
       text: !c && C ? en.NW.string(en.t.AY4IVF) : null,
       children: e => (0, i.jsx)("div", el(ea({
         className: ei.marginTop20
@@ -474,7 +474,7 @@ class eu extends(r = o.PureComponent) {
           children: en.NW.string(en.t["3PatS0"])
         })
       }))
-    }), k = async () => {
+    }), D = async () => {
       this.setState({
         usernameFocused: !0
       }), y && a.length > 0 && !L.Z.wasRegistrationSuggestionFetched(a) && await w.Z.fetchSuggestionsRegistration(a)
@@ -534,7 +534,7 @@ class eu extends(r = o.PureComponent) {
         onBlur: () => this.setState({
           usernameFocused: !1
         }),
-        onFocus: k,
+        onFocus: D,
         tabIndex: -1,
         children: [(0, i.jsx)(E.II, {
           label: en.NW.string(en.t.TWzdWl),
@@ -578,7 +578,7 @@ class eu extends(r = o.PureComponent) {
         error: null != _ ? _ : ec(j),
         value: u,
         required: !0
-      }), (0, i.jsx)(O.Z, {}), D, R, Z, A, $.a ? null : (0, i.jsx)(E.zx, {
+      }), (0, i.jsx)(O.Z, {}), k, R, Z, A, $.a ? null : (0, i.jsx)(E.zx, {
         look: S ? E.zx.Looks.FILLED : E.zx.Looks.LINK,
         color: S ? E.zx.Colors.PRIMARY : E.zx.Colors.LINK,
         onClick: this.handleGotoLogin,
@@ -752,7 +752,7 @@ function ed(e) {
       country: R.Z.getCountryCode(),
       hasLoggedInAccounts: A.Z.getHasLoggedInAccounts()
     })),
-    n = (0, k.F4)(),
+    n = (0, D.F4)(),
     r = (0, d.e7)([L.Z], () => L.Z.registrationUsernameSuggestion()),
     [a, l] = o.useState(Q.EW.FULL);
   return (0, x.Z)({
@@ -781,14 +781,14 @@ function eh(e) {
     u = (0, W.a)(n, a, !0),
     d = a && n.length > 0;
   return t = d ? (0, c.EQ)(u).with({
-    type: D.K.ERROR,
+    type: k.K.ERROR,
     message: c.P.select()
   }, e => (0, i.jsx)(p.Text, {
     className: er.messageNegative,
     variant: "text-sm/normal",
     children: e
   })).with({
-    type: D.K.AVAILABLE,
+    type: k.K.AVAILABLE,
     message: c.P.select()
   }, e => (0, i.jsx)(p.Text, {
     className: er.messagePositive,
@@ -810,7 +810,7 @@ function eh(e) {
     color: "text-normal",
     children: en.NW.string(en.t.z7c4bG)
   }), (0, i.jsx)(B.Z, {
-    show: d && (null == u ? void 0 : u.type) === D.K.ERROR || l,
+    show: d && (null == u ? void 0 : u.type) === k.K.ERROR || l,
     top: -12,
     bottom: 20,
     children: t

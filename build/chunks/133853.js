@@ -1,41 +1,41 @@
-/** Chunk was on 69773 **/
-n.d(t, {
+/** Chunk was on 86383 **/
+i.d(e, {
   Z: () => p
-}), n(47120);
-var a, r = n(200651),
-  o = n(192379),
-  l = n(120356),
-  i = n.n(l),
-  s = n(748780),
-  c = n(481060),
-  d = n(981631),
-  u = n(744417);
+}), i(47120);
+var s, n = i(200651),
+  a = i(192379),
+  h = i(120356),
+  r = i.n(h),
+  o = i(748780),
+  l = i(481060),
+  d = i(981631),
+  c = i(744417);
 
-function f(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
+function u(t, e, i) {
+  return e in t ? Object.defineProperty(t, e, {
+    value: i,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : e[t] = n, e
+  }) : t[e] = i, t
 }
-class p extends(a = o.Component) {
+class p extends(s = a.Component) {
   componentDidMount() {
     this.props.show && this.animate(1)
   }
-  componentDidUpdate(e) {
-    e.show !== this.props.show && this.animate(+!!this.props.show)
+  componentDidUpdate(t) {
+    t.show !== this.props.show && this.animate(+!!this.props.show)
   }
   getAnimatedStyle() {
     let {
-      anim: e
+      anim: t
     } = this, {
-      reducedMotion: t
+      reducedMotion: e
     } = this.context;
     return {
-      opacity: e,
-      transform: t.enabled ? void 0 : [{
-        translateY: e.interpolate({
+      opacity: t,
+      transform: e.enabled ? void 0 : [{
+        translateY: t.interpolate({
           inputRange: [0, 1],
           outputRange: ["-100px", "0px"]
         })
@@ -45,22 +45,22 @@ class p extends(a = o.Component) {
     }
   }
   render() {
-    return (0, r.jsx)(s.Z.a, {
+    return (0, n.jsx)(o.Z.a, {
       href: d.Z5c.INDEX,
       target: "_blank",
       rel: "noopener",
-      className: i()(u.logo, this.props.className),
+      className: r()(c.logo, this.props.className),
       style: this.getAnimatedStyle()
     })
   }
-  constructor(...e) {
-    super(...e), f(this, "anim", new s.Z.Value(0)), f(this, "animate", e => {
-      s.Z.spring(this.anim, {
-        toValue: e,
+  constructor(...t) {
+    super(...t), u(this, "anim", new o.Z.Value(0)), u(this, "animate", t => {
+      o.Z.spring(this.anim, {
+        toValue: t,
         friction: 10,
         tension: 100
       }).start()
     })
   }
 }
-f(p, "contextType", c.Sfi)
+u(p, "contextType", l.Sfi)

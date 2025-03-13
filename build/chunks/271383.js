@@ -654,7 +654,7 @@ function eC(e) {
     location: t,
     participants: n
   } = e, r = (0, u.jS)(t);
-  return null != r && eg(r, n)
+  return null == r && (r = (0, u.hu)(t)), null != r && eg(r, n)
 }
 class eR extends(r = s.ZP.Store) {
   initialize() {

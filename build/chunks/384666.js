@@ -5,15 +5,15 @@ n.d(t, {
 var r = n(200651),
   o = n(192379),
   i = n(593473),
-  c = n(512969),
-  l = n(489863),
+  l = n(512969),
+  c = n(489863),
   s = n(787025),
   a = n(397394),
   u = n(388032);
 
 function d() {
   let e;
-  let t = (0, c.TH)(),
+  let t = (0, l.TH)(),
     [n, d] = o.useState(!1),
     [h, p] = o.useState(!1);
   return o.useEffect(() => {
@@ -21,7 +21,7 @@ function d() {
       let e = (0, i.parse)(t.search);
       try {
         var n;
-        await (0, l.g)(null !== (n = e.token) && void 0 !== n ? n : ""), d(!0)
+        await (0, c.g)(null !== (n = e.token) && void 0 !== n ? n : ""), d(!0)
       } catch (e) {
         p(!0)
       }

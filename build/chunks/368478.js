@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => _
 }), n(47120), n(789020);
 var r = n(192379),
-  i = n(442837),
-  l = n(774226),
+  i = n(252258),
+  l = n(442837),
   o = n(317381),
   a = n(122613),
   s = n(16609),
@@ -25,22 +25,22 @@ function _(e) {
     primaryEntryPointCommand: n,
     application: a,
     showAppLauncherPopup: c = !1
-  } = e, [h, _] = r.useState(!1), C = (0, i.e7)([o.ZP], () => o.ZP.getCurrentEmbeddedActivity()), v = (0, l.GK)(a), y = c ? b.t.cpT0Cg : b.t["0hKkS0"], x = r.useMemo(() => null != n ? (0, p.XZ)(n.displayName) : b.NW.string(b.t["3xjX0d"]), [n]), j = void 0 !== a.flags && (0, m.yE)(a.flags, g.udG.EMBEDDED), O = null != C && C.applicationId === a.id && (v || (0, s.pY)(C.location) === t.channel.id), {
-    analyticsLocations: E
-  } = (0, d.ZP)(u.Z.APP_DMS_ENTRY_POINT_COMMAND_BUTTON), N = null != t.channel.recipients ? t.channel.recipients[0] : void 0;
+  } = e, [h, _] = r.useState(!1), C = (0, l.e7)([o.ZP], () => o.ZP.getCurrentEmbeddedActivity()), v = c ? b.t.cpT0Cg : b.t["0hKkS0"], y = r.useMemo(() => null != n ? (0, p.XZ)(n.displayName) : b.NW.string(b.t["3xjX0d"]), [n]), x = void 0 !== a.flags && (0, m.yE)(a.flags, g.udG.EMBEDDED), j = null != C && C.applicationId === a.id && (C.location.kind === i.E.CONTEXTLESS || (0, s.pY)(C.location) === t.channel.id), {
+    analyticsLocations: O
+  } = (0, d.ZP)(u.Z.APP_DMS_ENTRY_POINT_COMMAND_BUTTON), E = null != t.channel.recipients ? t.channel.recipients[0] : void 0;
   return {
     isExecutingLaunchInteraction: h,
     buttonText: (0, f.ms)({
       context: t,
       applicationId: a.id,
-      botUserId: N
-    }) && j ? O ? b.NW.string(b.t["Hi1/aW"]) : null != x ? x : b.NW.string(b.t.zKX8Nj) : b.NW.string(y),
-    hasActiveMatchingEmbeddedActivity: O,
-    isEmbeddedApp: j,
+      botUserId: E
+    }) && x ? j ? b.NW.string(b.t["Hi1/aW"]) : null != y ? y : b.NW.string(b.t.zKX8Nj) : b.NW.string(v),
+    hasActiveMatchingEmbeddedActivity: j,
+    isEmbeddedApp: x,
     currentEmbeddedActivity: C,
-    channelRecipientUserId: N,
+    channelRecipientUserId: E,
     setIsExecutingLaunchInteraction: _,
-    analyticsLocations: E
+    analyticsLocations: O
   }
 }
 
