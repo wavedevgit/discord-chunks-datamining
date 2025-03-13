@@ -1,6 +1,6 @@
 /**
   Module ID: 20777
-  Original File Name: 38cfb6bb7cb41066
+  Original File Name: 6e3318030c68be71
 **/
 .icon__2894c {
     display: block;
@@ -449,7 +449,7 @@
 }
 
 :where(.visual-refresh) .unread__2ea32 {
-    left: calc(var(--space-8)*-1 + 1px)
+    left: calc(var(--space-xs)*-1 + 1px)
 }
 
 :where(.visual-refresh) .typeThread__2ea32.wrapper__2ea32 {
@@ -2405,4 +2405,4 @@
     background-image: url(/assets/436b5a86429f186a.svg)
 }
 
-/*# sourceMappingURL=38cfb6bb7cb41066.css.map*/
+/*# sourceMappingURL=6e3318030c68be71.css.map*/

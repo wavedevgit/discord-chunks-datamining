@@ -85,24 +85,7 @@ let r = {
         }
       },
       MARKUP_LINE_HEIGHT: {
-        resolve(e) {
-          let {
-            enabledExperiments: t,
-            density: n
-          } = e;
-          if (0 === t.length) return "1.375rem";
-          for (let e of t)
-            if ("visual-refresh" === e) switch (n) {
-              case "compact":
-                return "1.35rem";
-              case "default":
-              default:
-                return "1.375rem";
-              case "cozy":
-                return "1.4rem"
-            }
-          return "1.375rem"
-        }
+        resolve: () => "1.375rem"
       },
       RESIZE_HANDLE_WIDTH: {
         resolve: () => 8

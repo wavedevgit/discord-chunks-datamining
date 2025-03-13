@@ -19,8 +19,8 @@ var r = t(200651),
   x = t(1585),
   _ = t(125988),
   C = t(44315),
-  b = t(160404),
-  j = t(240991),
+  j = t(160404),
+  b = t(240991),
   v = t(703656),
   N = t(687158),
   y = t(287008),
@@ -91,13 +91,13 @@ function ee(e) {
     user: o,
     size: (0, x.y9)(Q),
     onlyAnimateOnHover: !p
-  }), C = (0, d.e7)([I.ZP], () => I.ZP.getSelfMember(a.id)), b = (0, d.Wu)([I.ZP], () => I.ZP.getMemberRoleWithPendingUpdates(a.id, o.id)), v = (0, d.e7)([Z.Z], () => Z.Z.getRoles(a.id)), w = s()(b).filter(e => v.hasOwnProperty(e)).map(e => v[e]).orderBy("position", "desc").value(), P = (0, N.ZP)(o.id, a.id);
+  }), C = (0, d.e7)([I.ZP], () => I.ZP.getSelfMember(a.id)), j = (0, d.Wu)([I.ZP], () => I.ZP.getMemberRoleWithPendingUpdates(a.id, o.id)), v = (0, d.e7)([Z.Z], () => Z.Z.getRoles(a.id)), w = s()(j).filter(e => v.hasOwnProperty(e)).map(e => v[e]).orderBy("position", "desc").value(), P = (0, N.ZP)(o.id, a.id);
   (0, f.ZP)(() => {
     (0, O.Z)(o.id, o.getAvatarURL(a.id, (0, m.pxk)(Q)), {
       guildId: a.id
     })
   });
-  let E = (0, j.parseBioReact)(null == P ? void 0 : P.bio),
+  let E = (0, b.parseBioReact)(null == P ? void 0 : P.bio),
     B = T.ZP.getEnableHardwareAcceleration() ? m.Xo$ : m.qEK;
   return (0, r.jsxs)("div", {
     className: V.profile,
@@ -186,8 +186,8 @@ function en(e) {
       children: e
     }, n)
   }), {
-    handleSelectOption: b
-  } = (0, D.Z)(a.id), j = t.options.map(e => K({
+    handleSelectOption: j
+  } = (0, D.Z)(a.id), b = t.options.map(e => K({
     value: e.id
   }, e)), v = t.options.filter(e => g.includes(e.id)).map(e => e.id);
   return (0, r.jsxs)("div", {
@@ -208,12 +208,12 @@ function en(e) {
         children: "*"
       }) : null]
     }), (0, r.jsx)(U.Z, {
-      options: j,
+      options: b,
       value: v,
       onChange: e => {
         let n = e.find(e => !g.includes(e.id)),
           r = e.map(e => e.id);
-        if (null != n) b(t, n, !0), t.singleSelect && t.options.forEach(e => c.delete(e.id)), c.add(n.id);
+        if (null != n) j(t, n, !0), t.singleSelect && t.options.forEach(e => c.delete(e.id)), c.add(n.id);
         else {
           let e = g.filter(e => !r.includes(e)),
             n = t.options.filter(n => e.includes(n.id));
@@ -224,7 +224,7 @@ function en(e) {
             return
           }
           n.forEach(e => {
-            b(t, e, !1), c.delete(e.id)
+            j(t, e, !1), c.delete(e.id)
           })
         }
         u(new Set(c)), s(null)
@@ -258,15 +258,15 @@ function et(e) {
       children: e
     }, n)
   }), {
-    handleSelectOption: b
-  } = (0, D.Z)(a.id), j = (e, n) => {
+    handleSelectOption: j
+  } = (0, D.Z)(a.id), b = (e, n) => {
     if (!n && 1 === g.length && t.required) {
       s({
         type: $
       });
       return
     }
-    b(t, e, null != n && n), t.singleSelect && n && t.options.forEach(e => c.delete(e.id)), n ? c.add(e.id) : c.delete(e.id), u(new Set(c)), s(null)
+    j(t, e, null != n && n), t.singleSelect && n && t.options.forEach(e => c.delete(e.id)), n ? c.add(e.id) : c.delete(e.id), u(new Set(c)), s(null)
   };
   return (0, r.jsxs)("div", {
     className: V.prompt,
@@ -291,7 +291,7 @@ function et(e) {
         hideMemberCount: !0,
         guildId: a.id,
         option: e,
-        onSelect: n => j(e, n),
+        onSelect: n => b(e, n),
         selected: g.includes(e.id),
         canBeNew: !t.isNew
       }, e.id))
@@ -312,15 +312,15 @@ function er(e) {
     (0, v.uL)(F.Z5c.CHANNEL(n, z.oC.CHANNEL_BROWSER)), null == t || t()
   }, [n, t]), x = (0, d.e7)([w.ZP], () => w.ZP.hasUnread(n, q.W.GUILD_ONBOARDING_QUESTION)), {
     onboardingPromptsRaw: _,
-    newOnboardingPrompts: j,
+    newOnboardingPrompts: b,
     onboardingPromptsWithNewAnswers: N,
     newAnswersCount: y,
     onboardingPrompts: O
   } = (0, L.Z)(n);
   l.useEffect(() => {
-    (null == o ? void 0 : o.id) != null && !b.Z.isFullServerPreview(o.id) && (A.Z.shouldFetchPrompts(o.id) || x) && (0, k.eM)(o.id)
+    (null == o ? void 0 : o.id) != null && !j.Z.isFullServerPreview(o.id) && (A.Z.shouldFetchPrompts(o.id) || x) && (0, k.eM)(o.id)
   }, [null == o ? void 0 : o.id, x]), l.useEffect(() => {
-    if ((null == o ? void 0 : o.id) != null && !b.Z.isFullServerPreview(o.id)) return () => {
+    if ((null == o ? void 0 : o.id) != null && !j.Z.isFullServerPreview(o.id)) return () => {
       (0, h.Ju)(o.id, q.W.GUILD_ONBOARDING_QUESTION, A.Z.ackIdForGuild(o.id)), B.Z.updateOnboardingResponses(o.id)
     }
   }, [null == o ? void 0 : o.id]);
@@ -371,16 +371,16 @@ function er(e) {
     fade: !0,
     children: [(0, r.jsxs)("div", {
       className: V.pageBody,
-      children: [(j.length > 0 || N.length > 0) && (0, r.jsxs)(r.Fragment, {
+      children: [(b.length > 0 || N.length > 0) && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           children: (0, r.jsx)(m.X6q, {
             variant: "heading-md/semibold",
             color: "header-primary",
             children: X.NW.format(X.t.iB5Gqa, {
-              count: j.length + y
+              count: b.length + y
             })
           })
-        }), j.map(I), N.map(I), (0, r.jsx)("div", {
+        }), b.map(I), N.map(I), (0, r.jsx)("div", {
           className: V.sectionSeparator
         })]
       }), O.length > 0 && (0, r.jsxs)(r.Fragment, {

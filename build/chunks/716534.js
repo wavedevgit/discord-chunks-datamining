@@ -189,11 +189,8 @@ function Z(e) {
       isPremium: em,
       multiMonthPlans: [],
       currentSubscription: e_,
-      isGift: eO,
-      isEligibleForTrial: ec,
-      defaultPlanId: eh,
-      defaultToMonthlyPlan: !1
-    }), [ep, e_, eO, eh, em, ec]),
+      defaultPlanId: eh
+    }), [ep, e_, eh, em]),
     eX = (0, v.$g)(eK, ew, eC),
     eJ = i.useMemo(() => ec && null != ew ? ew : eb && null != eL ? eL : void 0, [eb, ec, ew, eL]);
   if (null != eB);

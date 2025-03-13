@@ -19,8 +19,8 @@ var r = t(200651),
   x = t(442336),
   _ = t(910611),
   C = t(41776),
-  b = t(703656),
-  j = t(6025),
+  j = t(703656),
+  b = t(6025),
   v = t(592125),
   N = t(703558),
   y = t(731290),
@@ -88,7 +88,7 @@ function A(e) {
   }, "notifications")), V.push((0, r.jsx)(g.ZP.Icon, {
     icon: i.Dio,
     tooltip: S.NW.string(S.t.cpT0Cg),
-    onClick: () => j.Z.closeChannelSidebar(A)
+    onClick: () => b.Z.closeChannelSidebar(A)
   }, "close")), !W.isNSFW() || U && H) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
       channel: W,
@@ -115,9 +115,9 @@ function A(e) {
         handleClick: () => {
           let e = I.Z.getMessages(W.id);
           if (D) {
-            (0, b.uL)(E.Z5c.CHANNEL(W.guild_id, W.id)), (0, h.C3)(W.guild_id, null);
+            (0, j.uL)(E.Z5c.CHANNEL(W.guild_id, W.id)), (0, h.C3)(W.guild_id, null);
             return
-          }(0, b.XU)(W.guild_id, W.id, e.jumpTargetId)
+          }(0, j.XU)(W.guild_id, W.id, e.jumpTargetId)
         }
       })
     }), (0, r.jsx)("div", {

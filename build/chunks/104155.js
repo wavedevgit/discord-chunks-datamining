@@ -1,6 +1,6 @@
 /** Chunk was on 58121 **/
 t.d(n, {
-  I: () => j,
+  I: () => b,
   Z: () => v
 }), t(47120), t(301563);
 var r = t(200651),
@@ -20,9 +20,9 @@ var r = t(200651),
   x = t(981631),
   _ = t(176505),
   C = t(388032),
-  b = t(322773);
+  j = t(322773);
 
-function j(e) {
+function b(e) {
   let {
     channelId: n
   } = e;
@@ -39,7 +39,7 @@ function j(e) {
 function v(e) {
   let {
     guildId: n
-  } = e, [o, s] = l.useState(""), j = (0, a.e7)([m.Z], () => m.Z.getGuild(n)), v = (0, a.e7)([u.ZP], () => u.ZP.getChannels(n)), N = (0, a.e7)([d.Z], () => d.Z.getCategories(n)), y = (0, f.Fo)(n, N, v, o), O = (0, a.e7)([h.Z], () => h.Z.canWithPartialContext(x.Plq.MANAGE_CHANNELS, {
+  } = e, [o, s] = l.useState(""), b = (0, a.e7)([m.Z], () => m.Z.getGuild(n)), v = (0, a.e7)([u.ZP], () => u.ZP.getChannels(n)), N = (0, a.e7)([d.Z], () => d.Z.getCategories(n)), y = (0, f.Fo)(n, N, v, o), O = (0, a.e7)([h.Z], () => h.Z.canWithPartialContext(x.Plq.MANAGE_CHANNELS, {
     guildId: n
   })), I = (0, a.e7)([c.ZP], () => null != c.ZP.getCurrentSidebarChannelId(_.oC.CHANNEL_BROWSER)), Z = l.useCallback(() => s(""), [s]), w = l.useCallback(() => {
     (0, i.ZDy)(async () => {
@@ -81,12 +81,12 @@ function v(e) {
       }
     })
   }, [n]);
-  return null == j ? null : (0, r.jsxs)("div", {
-    className: b.pageBody,
+  return null == b ? null : (0, r.jsxs)("div", {
+    className: j.pageBody,
     children: [(0, r.jsxs)("div", {
-      className: b.header,
+      className: j.header,
       children: [(0, r.jsx)(i.E1j, {
-        className: b.search,
+        className: j.search,
         size: i.E1j.Sizes.MEDIUM,
         query: o,
         onChange: e => {
@@ -97,20 +97,20 @@ function v(e) {
         onClear: Z,
         placeholder: C.NW.string(C.t.s5MnmJ)
       }), O ? (0, r.jsxs)(i.zxk, {
-        className: b.createButton,
-        innerClassName: b.createButtonInner,
+        className: j.createButton,
+        innerClassName: j.createButtonInner,
         onClick: w,
         children: [(0, r.jsx)(i.qJs, {
           size: "sm",
           color: "currentColor",
-          className: b.createIcon
+          className: j.createIcon
         }), C.NW.string(C.t.CumH4u)]
       }) : null]
     }), (0, r.jsx)(g.Z, {
-      className: b.browser,
+      className: j.browser,
       channels: v,
       categories: y,
-      guild: j,
+      guild: b,
       hasSidebar: I
     })]
   })

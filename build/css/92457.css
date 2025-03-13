@@ -1,6 +1,6 @@
 /**
   Module ID: 92457
-  Original File Name: 00b062e5adba2054
+  Original File Name: ae9848df09d39680
 **/
 .actionButton__5d9ef {
     margin-left: auto
@@ -544,6 +544,10 @@
     margin-bottom: var(--spacing-32)
 }
 
+.container__8f3cb:has(:empty.upsellsContainer__8f3cb) {
+    display: none
+}
+
 .header__8f3cb {
     margin-bottom: var(--spacing-8);
     color: var(--header-secondary)
@@ -684,4 +688,4 @@
     max-height: max(200px, min(calc(100vh - 80px), 660px))
 }
 
-/*# sourceMappingURL=00b062e5adba2054.css.map*/
+/*# sourceMappingURL=ae9848df09d39680.css.map*/

@@ -25,13 +25,13 @@ function _(e) {
     selected: a,
     onSelect: _,
     hideMemberCount: C,
-    canBeNew: b
-  } = e, j = (0, d.wj)((0, h.ZP)()), [v, N] = l.useState(!1), y = v && !C, O = l.useRef(null), {
+    canBeNew: j
+  } = e, b = (0, d.wj)((0, h.ZP)()), [v, N] = l.useState(!1), y = v && !C, O = l.useRef(null), {
     reducedMotion: I
   } = l.useContext(u.Sfi), Z = (0, s.e7)([p.ZP], () => {
     var e, n, r, l;
     return (null === (e = t.emoji) || void 0 === e ? void 0 : e.id) != null && null !== (l = null === (n = p.ZP.getCustomEmojiById(null === (r = t.emoji) || void 0 === r ? void 0 : r.id)) || void 0 === n ? void 0 : n.animated) && void 0 !== l && l
-  }), w = (0, f.Z)(n, 1e3), P = null == w || null == t.roleIds ? 0 : Math.max(...t.roleIds.map(e => w[e])), E = b && !a && t.isUnseen, S = (0, u.q_F)({
+  }), w = (0, f.Z)(n, 1e3), P = null == w || null == t.roleIds ? 0 : Math.max(...t.roleIds.map(e => w[e])), E = j && !a && t.isUnseen, S = (0, u.q_F)({
     transform: a || I.enabled ? "scale(1)" : "scale(0.7)",
     opacity: +!!a,
     config: {
@@ -42,7 +42,7 @@ function _(e) {
       color: B.spring()
     },
     color: T.spring({
-      opacity: j ? .5 : .25
+      opacity: b ? .5 : .25
     }),
     config: {
       duration: 300

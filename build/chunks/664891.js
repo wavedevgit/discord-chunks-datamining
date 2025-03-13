@@ -87,11 +87,8 @@ function U(e) {
       isPremium: $,
       multiMonthPlans: [],
       currentSubscription: o,
-      isGift: et,
-      isEligibleForTrial: !1,
-      defaultPlanId: J,
-      defaultToMonthlyPlan: !1
-    }), [X, o, J, $, et]);
+      defaultPlanId: J
+    }), [X, o, J, $]);
   n = z || ec ? M.NW.string(M.t.nyzoFR) : (0, S.PV)(D) ? (0, S.W_)(o, er) : M.NW.formatToPlainString(M.t["sBpy9/"], {
     planName: er.name
   });

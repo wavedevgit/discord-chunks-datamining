@@ -1,6 +1,6 @@
 /**
   Module ID: 53494
-  Original File Name: 9d0380aea381f10b
+  Original File Name: 6d9f29f538687ebc
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -1435,6 +1435,13 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     background-color: var(--red-430)
 }
 
+.visual-refresh .mention__3b95d {
+    box-sizing: border-box;
+    opacity: 1;
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-high)
+}
+
 .icon__3b95d,.text__3b95d {
     display: block
 }
@@ -2111,7 +2118,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 .wrapper_ef3116 {
     overflow: hidden;
     display: flex;
-    width: 72px;
+    width: var(--custom-guild-list-width);
     flex-direction: column;
     flex-shrink: 0;
     position: relative;
@@ -2178,7 +2185,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding: 8px;
     height: 40px;
     pointer-events: none;
-    width: 72px;
+    width: var(--custom-guild-list-width);
     box-sizing: border-box
 }
 
@@ -2188,6 +2195,14 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .unreadMentionsIndicatorBottom_ef3116 {
     padding-bottom: 8px
+}
+
+.visual-refresh .unreadMentionsIndicatorBottom_ef3116,.visual-refresh .unreadMentionsIndicatorTop_ef3116 {
+    height: auto
+}
+
+.visual-refresh .unreadMentionsIndicatorBottom_ef3116 {
+    padding-bottom: var(--space-xs)
 }
 
 .unreadMentionsBar_ef3116:before {
@@ -2216,7 +2231,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .unreadMentionsFixedFooter_ef3116 {
-    bottom: 72px
+    bottom: var(--custom-guild-list-width)
 }
 
 .discoveryIcon_ef3116 {
@@ -3594,6 +3609,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 .visual-refresh .bar__7aaec {
     opacity: 1;
     margin-top: 0;
+    margin-bottom: var(--space-xs);
     background-color: var(--background-surface-highest);
     border: 1px solid var(--border-normal)
 }
@@ -3620,9 +3636,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .visual-refresh .bottom__7aaec {
-    --custom-unread-bar-offset: min(var(--space-xs),var(--space-8));
-    bottom: calc(0 + min(var(--space-xs),var(--space-8)));
-    bottom: calc(var(--custom-app-panels-height, 0) + var(--custom-unread-bar-offset))
+    bottom: calc(0 + var(--space-xs));
+    bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs))
 }
 
 .container__8ce85 {
@@ -5256,4 +5271,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=9d0380aea381f10b.css.map*/
+/*# sourceMappingURL=6d9f29f538687ebc.css.map*/

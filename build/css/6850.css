@@ -1,6 +1,6 @@
 /**
   Module ID: 6850
-  Original File Name: e15d38a986b11214
+  Original File Name: b3aafd91a6b4c183
 **/
 .questionContainer__0a749 {
     margin-top: 24px
@@ -1212,6 +1212,10 @@
 
 .memberRowContainer__71c22:first-child td:after {
     content: none
+}
+
+.visual-refresh .memberRowContainer__71c22 td {
+    padding: var(--space-xs)
 }
 
 .xsmallCol__71c22 {
@@ -2483,6 +2487,10 @@
     padding: 12px 0
 }
 
+.visual-refresh .pageSizeSelection_e8f197 {
+    padding: var(--space-sm) 0
+}
+
 .pageLabel_e8f197 strong {
     font-weight: 400;
     color: var(--text-normal)
@@ -2530,18 +2538,22 @@
 
 .searchHeaderContainer__98d1c {
     padding: 8px 16px;
-    flex-direction: row
-}
-
-.searchHeader__98d1c,.searchHeaderContainer__98d1c {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 8px
 }
 
+.visual-refresh .searchHeaderContainer__98d1c {
+    padding: var(--space-xs) var(--space-sm)
+}
+
 .searchHeader__98d1c {
     flex: 1;
-    flex-direction: row
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px
 }
 
 .searchInput__98d1c {
@@ -2592,4 +2604,4 @@
     margin-left: 4px
 }
 
-/*# sourceMappingURL=e15d38a986b11214.css.map*/
+/*# sourceMappingURL=b3aafd91a6b4c183.css.map*/

@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => k
+  Z: () => W
 }), n(47120);
 var r, i = n(200651),
   s = n(192379),
@@ -23,13 +23,14 @@ var r, i = n(200651),
   j = n(78839),
   C = n(74538),
   O = n(807160),
-  v = n(474936),
-  S = n(231338),
-  T = n(388032),
-  I = n(891978),
-  y = n(778170);
+  v = n(981631),
+  S = n(474936),
+  T = n(231338),
+  I = n(388032),
+  y = n(891978),
+  A = n(778170);
 
-function A(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -38,20 +39,20 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
 }
 
-function R(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,7 +65,7 @@ function R(e, t) {
   }), e
 }
 
-function D(e) {
+function Z(e) {
   let {
     payments: t,
     locale: n,
@@ -104,8 +105,8 @@ function D(e) {
           }
           return i
         }(e, ["ref"]);
-        return (0, i.jsx)(N.Z, R(P({
-          className: l()(I.verticalFit, I.paginator),
+        return (0, i.jsx)(N.Z, D(R({
+          className: l()(y.verticalFit, y.paginator),
           currentPageIndex: c,
           onChangePage: x,
           numPages: a,
@@ -113,10 +114,10 @@ function D(e) {
           ref: t
         }, s), {
           children: (0, i.jsx)(m.Den, {
-            className: I.bottomDivider,
+            className: y.bottomDivider,
             ref: o,
             children: f.map((e, t) => (0, i.jsx)(O.Z, {
-              className: l()(I.paymentRow, I.bottomDivider),
+              className: l()(y.paymentRow, y.bottomDivider),
               payment: e,
               locale: n,
               compactMode: r
@@ -127,7 +128,7 @@ function D(e) {
     })
   })
 }
-class Z extends(r = s.PureComponent) {
+class w extends(r = s.PureComponent) {
   get numPages() {
     return Math.max(Math.ceil(this.props.payments.length / 10), 1)
   }
@@ -138,16 +139,16 @@ class Z extends(r = s.PureComponent) {
   }
   renderPremiumExternalSubscription(e) {
     return c()(null != e.paymentGateway, "Expected payment gateway when rendering for external subscription"), (0, i.jsxs)(m.Zbd, {
-      className: I.externalRow,
+      className: y.externalRow,
       children: [(0, i.jsx)("div", {
-        className: I.externalRowHeader,
-        children: T.NW.format(T.t["6mIX6u"], {
-          paymentGatewayName: S.Vz[e.paymentGateway]
+        className: y.externalRowHeader,
+        children: I.NW.format(I.t["6mIX6u"], {
+          paymentGatewayName: T.Vz[e.paymentGateway]
         })
       }), (0, i.jsx)("div", {
-        className: I.externalRowBody,
-        children: T.NW.format(T.t.eG0uZG, {
-          paymentGatewayName: S.Vz[e.paymentGateway],
+        className: y.externalRowBody,
+        children: I.NW.format(I.t.eG0uZG, {
+          paymentGatewayName: T.Vz[e.paymentGateway],
           billingHistoryLink: (0, C.JE)(e.paymentGateway, "BILLING_HISTORY")
         })
       })]
@@ -161,25 +162,25 @@ class Z extends(r = s.PureComponent) {
       locale: r
     } = this.props, s = null != n && n.isPurchasedExternally;
     return 0 !== t.length || s ? (0, i.jsxs)("div", {
-      className: I.verticalFit,
+      className: y.verticalFit,
       children: [null != n && s ? this.renderPremiumExternalSubscription(n) : null, t.length > 0 ? (0, i.jsxs)("div", {
-        className: l()(I.paymentPane, I.verticalFit),
+        className: l()(y.paymentPane, y.verticalFit),
         children: [e ? null : (0, i.jsx)("div", {
-          className: l()(I.paymentRow, I.bottomDivider),
+          className: l()(y.paymentRow, y.bottomDivider),
           children: (0, i.jsxs)(x.Z, {
-            className: I.paymentRowHeader,
+            className: y.paymentRowHeader,
             children: [(0, i.jsx)("div", {
-              className: y.date,
-              children: T.NW.string(T.t["5t11BQ"])
+              className: A.date,
+              children: I.NW.string(I.t["5t11BQ"])
             }), (0, i.jsx)("div", {
-              className: I.paymentRowHeaderDescription,
-              children: T.NW.string(T.t.yAAPb2)
+              className: y.paymentRowHeaderDescription,
+              children: I.NW.string(I.t.yAAPb2)
             }), (0, i.jsx)("div", {
-              className: y.amount,
-              children: T.NW.string(T.t["6MqHXV"])
+              className: A.amount,
+              children: I.NW.string(I.t["6MqHXV"])
             })]
           })
-        }), (0, i.jsx)(D, {
+        }), (0, i.jsx)(Z, {
           compactMode: e,
           locale: r,
           payments: t,
@@ -189,43 +190,44 @@ class Z extends(r = s.PureComponent) {
     }) : null
   }
   constructor(...e) {
-    super(...e), A(this, "scrollerRef", s.createRef())
+    super(...e), P(this, "scrollerRef", s.createRef())
   }
 }
 
-function w(e) {
+function k(e) {
   var t;
   let n = e.skuId,
     r = null === (t = e.subscription) || void 0 === t ? void 0 : t.items[0].planId;
-  return !(null == n || null == r || Object.values(v.Si).includes(n) || (0, C.PV)(r))
+  return !(null == n || null == r || Object.values(S.Si).includes(n) || (0, C.PV)(r))
 }
 
-function k(e) {
+function W(e) {
   let t = (0, u.e7)([_.Z], () => _.Z.getPayments()),
     n = (0, u.e7)([j.ZP], () => j.ZP.getPremiumTypeSubscription()),
-    r = s.useMemo(() => new Set(t.filter(w).map(e => {
+    r = s.useMemo(() => new Set(t.filter(k).map(e => {
       let {
         subscription: t
       } = e;
       return null == t ? void 0 : t.items[0].planId
     })), [t]),
-    a = s.useMemo(() => new Set(t.filter(w).map(e => {
+    a = s.useMemo(() => new Set(t.filter(k).map(e => {
       let {
         skuId: t
       } = e;
       return t
     })), [t]),
     l = (0, u.Wu)([E.Z], () => E.Z.getPlanIdsForSkus(Array.from(a))),
-    o = s.useCallback(() => l.length === r.size, [l, r]);
+    o = s.useCallback(() => l.length === r.size, [l, r]),
+    c = s.useMemo(() => t.filter(e => e.currency !== v.pKx.DISCORD_ORB), [t]);
   return s.useEffect(() => {
     o() || g.Z.wait(() => {
       a.forEach(e => (0, f.GZ)(e, void 0, void 0, !0, void 0))
     })
-  }, [o, a]), (0, i.jsx)(Z, R(P({}, e), {
-    payments: t,
+  }, [o, a]), (0, i.jsx)(w, D(R({}, e), {
+    payments: c,
     subscription: n
   }))
 }
-A(Z, "defaultProps", {
+P(w, "defaultProps", {
   compactMode: !1
 })

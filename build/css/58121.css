@@ -1,6 +1,6 @@
 /**
   Module ID: 58121
-  Original File Name: 8e6aa9dbd244a185
+  Original File Name: bbcfaa97c9983068
 **/
 .coverContainer__2f300 {
     height: 640px;
@@ -632,12 +632,20 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
     padding: 24px 0 8px
 }
 
+.visual-refresh .categoryRow_e4503a {
+    padding: var(--space-md) 0 var(--space-xs)
+}
+
 .uncategorized_e4503a {
     padding: 0 0 8px
 }
 
 .categoryText_e4503a {
     text-transform: uppercase
+}
+
+.visual-refresh .categoryText_e4503a {
+    text-transform: none
 }
 
 .categoryText_e4503a,.channelText_e4503a {
@@ -678,6 +686,10 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 
 .channelRow_e4503a:hover:not(.disabled_e4503a) {
     background-color: var(--background-secondary)
+}
+
+.visual-refresh .channelRow_e4503a {
+    padding: var(--space-xs) var(--space-sm)
 }
 
 .firstChannel_e4503a {
@@ -760,6 +772,10 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
     margin-right: 8px
 }
 
+.visual-refresh .channelName_e4503a {
+    gap: var(--space-xs)
+}
+
 .separator_e4503a {
     height: 1px;
     background-color: var(--background-modifier-accent);
@@ -834,7 +850,8 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 
 .visual-refresh .header__41ed7 {
     margin-left: var(--spacing-8);
-    margin-right: var(--spacing-24)
+    margin-right: var(--spacing-24);
+    margin-bottom: var(--space-md)
 }
 
 .createButton__41ed7 {
@@ -1312,4 +1329,4 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
     height: calc(var(--custom-channel-header-height) + 1px)
 }
 
-/*# sourceMappingURL=8e6aa9dbd244a185.css.map*/
+/*# sourceMappingURL=bbcfaa97c9983068.css.map*/

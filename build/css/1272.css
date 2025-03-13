@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: a26abf8e1e367e31
+  Original File Name: 203ca3f75de7a09c
 **/
 .container__74da2 {
     position: relative;
@@ -4317,6 +4317,10 @@
     display: none
 }
 
+.visual-refresh.theme-midnight .tabBody__133bf {
+    border-left: 1px solid var(--border-subtle)
+}
+
 @media (max-width:1200px) {
     .nowPlayingColumn__133bf {
         display: none
@@ -8574,4 +8578,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=a26abf8e1e367e31.css.map*/
+/*# sourceMappingURL=203ca3f75de7a09c.css.map*/

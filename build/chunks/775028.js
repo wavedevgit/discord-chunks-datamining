@@ -19,8 +19,8 @@ var r = t(200651),
   x = t(454585),
   _ = t(22082),
   C = t(703656),
-  b = t(6025),
-  j = t(922482),
+  j = t(6025),
+  b = t(922482),
   v = t(601070),
   N = t(216306),
   y = t(163),
@@ -89,7 +89,7 @@ function A(e) {
     children: [(0, r.jsx)(d.Text, {
       className: E.categoryText,
       color: "text-muted",
-      variant: "text-xs/semibold",
+      variant: "text-sm/medium",
       lineClamp: 1,
       children: l.name
     }), "null" !== l.id && !s && (0, r.jsxs)(d.P3F, {
@@ -181,7 +181,7 @@ let R = l.memo(function() {
       }, "topic")), [t.map((e, n) => [e, (0, r.jsx)(D, {
         index: n
       }, "subtitle-separator-".concat(n))])].flat(2).slice(0, -1)
-    }(n, H), q = e => ((e.stopPropagation(), B.has(n.type) || e.shiftKey) ? (0, C.XU)(a.id, n.id) : n.isGuildStageVoice() || n.isGuildVoice() ? (0, j.Cq)(n) : b.Z.openChannelAsSidebar({
+    }(n, H), q = e => ((e.stopPropagation(), B.has(n.type) || e.shiftKey) ? (0, C.XU)(a.id, n.id) : n.isGuildStageVoice() || n.isGuildVoice() ? (0, b.Cq)(n) : j.Z.openChannelAsSidebar({
       guildId: n.guild_id,
       channelId: n.id,
       baseChannelId: w.oC.CHANNEL_BROWSER

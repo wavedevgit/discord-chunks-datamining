@@ -39,8 +39,8 @@ function S(e) {
       paymentSourceId: T,
       selectedPlan: Z,
       selectedSkuId: O,
-      step: k,
-      updatedSubscription: w,
+      step: w,
+      updatedSubscription: k,
       startingPremiumSubscriptionPlanIdRef: U
     } = (0, f.JL)(),
     {
@@ -62,7 +62,7 @@ function S(e) {
     V = (0, d.a5)(Z),
     Q = (0, d.tK)(null == D ? void 0 : D.skuId),
     q = A && null != D && V;
-  s()(null != Z, "Expected plan to selected"), s()(null != O, "Expected selectedSkuId"), s()(null != k, "Step should be set");
+  s()(null != Z, "Expected plan to selected"), s()(null != O, "Expected selectedSkuId"), s()(null != w, "Step should be set");
   let J = i.useCallback(() => {
     S(), null == E || E()
   }, [S, E]);
@@ -76,7 +76,7 @@ function S(e) {
     null != X && null != X.reminderNotice && K && (0, a.wH)(o.z.GIFTING_PROMOTION_REMINDER, X.dismissibleContentVersion, {
       dismissAction: g.L.INDIRECT_ACTION
     })
-  }, [X, K]), l = null != b ? b(Z, J, w) : null != v ? (0, r.jsx)(u.VY, {}) : A ? (0, r.jsx)(u.TB, {
+  }, [X, K]), l = null != b ? b(Z, J, k) : null != v ? (0, r.jsx)(u.VY, {}) : A ? (0, r.jsx)(u.TB, {
     planId: Z.id,
     onClose: J
   }) : U.current === Z.id ? (0, r.jsx)(u.ZP, {
