@@ -2,7 +2,7 @@
 n.d(t, {
   Z: () => p
 }), n(47120);
-var r, a = n(200651),
+var a, r = n(200651),
   o = n(192379),
   l = n(120356),
   i = n.n(l),
@@ -19,7 +19,7 @@ function f(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class p extends(r = o.Component) {
+class p extends(a = o.Component) {
   componentDidMount() {
     this.props.show && this.animate(1)
   }
@@ -45,7 +45,7 @@ class p extends(r = o.Component) {
     }
   }
   render() {
-    return (0, a.jsx)(s.Z.a, {
+    return (0, r.jsx)(s.Z.a, {
       href: d.Z5c.INDEX,
       target: "_blank",
       rel: "noopener",

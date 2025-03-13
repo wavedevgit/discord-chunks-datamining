@@ -99,19 +99,19 @@ function D(e) {
   }), M = (0, l.e7)([h.default], () => {
     var e;
     return null !== (e = h.default.getCurrentUser()) && void 0 !== e ? e : null
-  }), R = (0, _.a)(), [L, U] = a.useState(null !== (t = null == R ? void 0 : R.state) && void 0 !== t ? t : ""), [H, Y] = a.useState(null !== (n = null == R ? void 0 : R.emoji) && void 0 !== n ? n : null), [F, V] = a.useState((0, v.Z)()), [q, G] = a.useState((0, g.Z)()), X = a.useRef(null);
+  }), R = (0, _.a)(), [L, U] = a.useState(null !== (t = null == R ? void 0 : R.state) && void 0 !== t ? t : ""), [H, Y] = a.useState(null !== (n = null == R ? void 0 : R.emoji) && void 0 !== n ? n : null), [F, V] = a.useState((0, v.Z)()), [q, G] = a.useState((0, g.Z)()), K = a.useRef(null);
   a.useEffect(() => {
     b.default.track(C.rMx.OPEN_MODAL, {
       type: u.Z.CUSTOM_STATUS_MODAL,
       location_stack: W
     })
   }, [W]), (0, s.ZP)(() => {
-    if (null != X.current) {
-      let e = X.current;
+    if (null != K.current) {
+      let e = K.current;
       e.focus(), e.setSelection(L.length, L.length)
     }
   });
-  let K = e => {
+  let X = e => {
       null != e && Y(null != e.id ? {
         id: e.id,
         name: e.name,
@@ -175,7 +175,7 @@ function D(e) {
                 return (0, r.jsx)(d.Z, {
                   closePopout: t,
                   onSelectEmoji: (e, n) => {
-                    K(e), n && t()
+                    X(e), n && t()
                   },
                   pickerIntention: y.Hz.STATUS,
                   onNavigateAway: B
@@ -210,7 +210,7 @@ function D(e) {
               "Enter" === e.key && Q()
             },
             className: I.input,
-            inputRef: X
+            inputRef: K
           }), (L.length > 0 || null != H) && (0, r.jsx)("div", {
             className: I.clearButtonWrapper,
             children: (0, r.jsx)(i.zxk, {

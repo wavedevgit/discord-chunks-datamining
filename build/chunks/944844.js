@@ -2,16 +2,16 @@
 n.d(t, {
   t: () => p
 }), n(411104);
-var r = n(192379),
-  a = n(512722),
-  o = n.n(a),
+var a = n(192379),
+  r = n(512722),
+  o = n.n(r),
   l = n(478677),
   i = n(457330),
   s = n(275759),
   c = n(489863),
   d = n(497350);
 async function u(e, t, n) {
-  var r, a, c, u;
+  var a, r, c, u;
   let p = (0, d.B)(e);
   if (null == p) throw await f(n, 1, "authorize"), Error("Unsupported client_id for two way link");
   let h = null;
@@ -24,7 +24,7 @@ async function u(e, t, n) {
     });
     h = e.url
   } catch (e) {
-    throw await f(n, null !== (a = null == e ? void 0 : null === (r = e.body) || void 0 === r ? void 0 : r.code) && void 0 !== a ? a : 0, "authorize"), Error("error during two way authorize")
+    throw await f(n, null !== (r = null == e ? void 0 : null === (a = e.body) || void 0 === a ? void 0 : a.code) && void 0 !== r ? r : 0, "authorize"), Error("error during two way authorize")
   }
   let x = null;
   try {
@@ -52,22 +52,22 @@ async function f(e, t, n) {
 }
 
 function p(e, t, n) {
-  return r.useCallback(async (r, a) => {
-    if (!a) {
+  return a.useCallback(async (a, r) => {
+    if (!r) {
       try {
-        await (0, c.tR)(r.userCode, "denied")
+        await (0, c.tR)(a.userCode, "denied")
       } catch (e) {}
       e();
       return
     }
-    if (null == r.twoWayLinkCode) try {
-      await (0, c.tR)(r.userCode, "granted"), n(r)
+    if (null == a.twoWayLinkCode) try {
+      await (0, c.tR)(a.userCode, "granted"), n(a)
     } catch (e) {
-      t(r)
+      t(a)
     } else try {
-      await u(r.clientId, r.twoWayLinkCode, r.userCode), n(r)
+      await u(a.clientId, a.twoWayLinkCode, a.userCode), n(a)
     } catch (e) {
-      t(r)
+      t(a)
     }
   }, [e, t, n])
 }

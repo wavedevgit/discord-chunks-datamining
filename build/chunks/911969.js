@@ -24,7 +24,7 @@ var r = function(e) {
     return e[e.ROLE = 0] = "ROLE", e[e.MEMBER = 1] = "MEMBER", e
   }({}),
   i = function(e) {
-    return e[e.UNVERIFIED = 1] = "UNVERIFIED", e[e.VERIFIED_TEEN = 2] = "VERIFIED_TEEN", e[e.VERIFIED_ADULT = 3] = "VERIFIED_ADULT", e
+    return e[e.UNVERIFIED = 1] = "UNVERIFIED", e[e.VERIFIED_TEEN = 2] = "VERIFIED_TEEN", e[e.VERIFIED_ADULT = 3] = "VERIFIED_ADULT", e[e.CLIENT_ONLY_PENDING = 99999] = "CLIENT_ONLY_PENDING", e
   }({}),
   o = function(e) {
     return e.IOS = "ios", e.ANDROID = "android", e.WEB = "web", e

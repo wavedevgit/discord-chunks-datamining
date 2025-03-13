@@ -2,20 +2,20 @@
 n.d(t, {
   M: () => k,
   U_: () => I,
-  VK: () => A,
-  t4: () => y,
+  VK: () => P,
+  t4: () => C,
   tE: () => T
 }), n(47120), n(266796);
 var r = n(200651),
-  o = n(192379),
-  a = n(120356),
-  s = n.n(a),
-  i = n(442837),
+  a = n(192379),
+  o = n(120356),
+  i = n.n(o),
+  s = n(442837),
   c = n(704215),
   l = n(481060),
-  b = n(607070),
-  u = n(70097),
-  d = n(605236),
+  d = n(607070),
+  b = n(70097),
+  u = n(605236),
   f = n(930153),
   m = n(822857),
   p = n(622562),
@@ -35,7 +35,7 @@ function x() {
   }).apply(this, arguments)
 }
 
-function C(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,7 +54,7 @@ function C(e) {
   return e
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,7 +66,7 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = () => (0, f.Lk)(document.body.style.getPropertyValue("--custom-app-panels-height"), 56) + 8,
+let C = () => (0, f.Lk)(document.body.style.getPropertyValue("--custom-app-panels-height"), 56) + 8,
   N = {
     discover: c.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK,
     shop: c.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK
@@ -76,24 +76,24 @@ let y = () => (0, f.Lk)(document.body.style.getPropertyValue("--custom-app-panel
       onboardingCoachmarkType: t,
       prevCoachmarksDismissed: n = !0,
       onShowCoachmarkHandler: r
-    } = e, a = (0, d.wE)(c.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL), {
-      enabled: s
+    } = e, o = (0, u.wE)(c.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL), {
+      enabled: i
     } = (0, m.W)({
       location: "virtual_currency_onboarding_coachmark"
-    }), i = (0, d.wE)(N[t]), l = s && a && n && !i, b = o.useCallback(() => {
-      i || (0, d.EW)(N[t], {
+    }), s = (0, u.wE)(N[t]), l = i && o && n && !s, d = a.useCallback(() => {
+      s || (0, u.EW)(N[t], {
         forceTrack: !0,
         dismissAction: O.L.USER_DISMISS
       })
-    }, [i, t]), [u, f] = o.useState(!1);
-    return o.useEffect(() => {
-      l ? u || (void 0 !== r && r(), f(!0)) : u && f(!1)
-    }, [l, r, u]), {
-      shouldShow: u,
-      closeCoachmarkIfOpen: b
+    }, [s, t]), [b, f] = a.useState(!1);
+    return a.useEffect(() => {
+      l ? b || (void 0 !== r && r(), f(!0)) : b && f(!1)
+    }, [l, r, b]), {
+      shouldShow: b,
+      closeCoachmarkIfOpen: d
     }
   },
-  w = e => (0, r.jsx)(l.zxk, v(C({}, e), {
+  w = e => (0, r.jsx)(l.zxk, y(v({}, e), {
     "aria-label": h.NW.string(h.t.cpT0Cg),
     look: l.zxk.Looks.BLANK,
     size: l.zxk.Sizes.NONE,
@@ -104,22 +104,22 @@ let y = () => (0, f.Lk)(document.body.style.getPropertyValue("--custom-app-panel
       className: _.closeButtonIcon
     })
   })),
-  A = e => {
+  P = e => {
     let {
       invertTail: t,
       leftOffset: n,
-      rightOffset: o
+      rightOffset: a
     } = e;
     return (0, r.jsxs)("div", {
-      className: s()(_.tail, t ? _.tailPositionInverted : _.tailPositionNormal),
+      className: i()(_.tail, t ? _.tailPositionInverted : _.tailPositionNormal),
       style: {
         left: n,
-        right: o
+        right: a
       },
       children: [(0, r.jsx)("div", {
         className: _.tailSpine
       }), (0, r.jsx)("div", {
-        className: s()(_.tailTargetOuter, t ? _.tailTargetPositionInverted : _.tailTargetPositionNormal),
+        className: i()(_.tailTargetOuter, t ? _.tailTargetPositionInverted : _.tailTargetPositionNormal),
         children: (0, r.jsx)("svg", {
           xmlns: "http://www.w3.org/2000/svg",
           width: "8",
@@ -136,11 +136,11 @@ let y = () => (0, f.Lk)(document.body.style.getPropertyValue("--custom-app-panel
       })]
     })
   },
-  P = () => (0, i.e7)([b.Z], () => b.Z.useReducedMotion) ? (0, r.jsx)("img", {
+  A = () => (0, s.e7)([d.Z], () => d.Z.useReducedMotion) ? (0, r.jsx)("img", {
     src: g.Z,
     className: _.orbAsset,
     alt: "Orb"
-  }) : (0, r.jsxs)(u.Z, {
+  }) : (0, r.jsxs)(b.Z, {
     autoPlay: !0,
     loop: !0,
     className: _.orbAsset,
@@ -157,18 +157,18 @@ let y = () => (0, f.Lk)(document.body.style.getPropertyValue("--custom-app-panel
     let {
       titleText: t,
       descriptionText: n,
-      onClose: o,
-      tailLeftOffset: a = 22,
-      renderTail: s,
-      invertCoachmark: i = !1,
+      onClose: a,
+      tailLeftOffset: o = 22,
+      renderTail: i,
+      invertCoachmark: s = !1,
       iconComponent: c,
-      coachmarkRef: b
+      coachmarkRef: d
     } = e;
     return (0, r.jsxs)("div", {
       className: _.container,
-      ref: b,
+      ref: d,
       children: [(0, r.jsx)(w, {
-        onClick: o
+        onClick: a
       }), c, (0, r.jsxs)("div", {
         className: _.content,
         children: [(0, r.jsx)(l.X6q, {
@@ -180,9 +180,9 @@ let y = () => (0, f.Lk)(document.body.style.getPropertyValue("--custom-app-panel
           className: _.description,
           children: n
         })]
-      }), s && (0, r.jsx)(A, {
-        leftOffset: a,
-        invertTail: i
+      }), i && (0, r.jsx)(P, {
+        leftOffset: o,
+        invertTail: s
       })]
     })
   },
@@ -191,8 +191,8 @@ let y = () => (0, f.Lk)(document.body.style.getPropertyValue("--custom-app-panel
       if (null == e) throw TypeError("Cannot destructure " + e);
       return e
     }(e));
-    return (0, r.jsx)(E, C({
-      iconComponent: (0, r.jsx)(P, {})
+    return (0, r.jsx)(E, v({
+      iconComponent: (0, r.jsx)(A, {})
     }, t))
   };
 
@@ -200,50 +200,50 @@ function I(e) {
   let {
     calculateVisibility: t,
     backgroundElementRef: n,
-    calculateBaseOffsets: a,
-    offsetControlRef: s,
-    children: i,
+    calculateBaseOffsets: o,
+    offsetControlRef: i,
+    children: s,
     key: c,
     coachmarkRef: l,
-    onGetBackgroundElementDimensions: b
-  } = e, [u, d] = o.useState(!1), [f, m] = o.useState(!0), O = o.useCallback(e => {
+    onGetBackgroundElementDimensions: d
+  } = e, [b, u] = a.useState(!1), [f, m] = a.useState(!0), O = a.useCallback(e => {
     let n = t(e);
     n !== f && m(n)
-  }, [f, t]), h = o.useCallback(e => {
+  }, [f, t]), h = a.useCallback(e => {
     O(e);
     let t = e.top < window.innerHeight / 2;
-    t !== u && d(t)
-  }, [u, O]), _ = o.useCallback(e => {
-    let t = a(e),
+    t !== b && u(t)
+  }, [b, O]), _ = a.useCallback(e => {
+    let t = o(e),
       {
         verticalOffset: n
       } = t,
       r = function(e, t) {
         if (null == e) return {};
-        var n, r, o = function(e, t) {
+        var n, r, a = function(e, t) {
           if (null == e) return {};
-          var n, r, o = {},
-            a = Object.keys(e);
-          for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
-          return o
+          var n, r, a = {},
+            o = Object.keys(e);
+          for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
+          return a
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var a = Object.getOwnPropertySymbols(e);
-          for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+          var o = Object.getOwnPropertySymbols(e);
+          for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
         }
-        return o
+        return a
       }(t, ["verticalOffset"]);
-    return (void 0 !== b && b(e), u) ? v(C({}, r), {
+    return (void 0 !== d && d(e), b) ? y(v({}, r), {
       top: e.height + n
-    }) : void 0 !== l && null !== l.current ? v(C({}, r), {
+    }) : void 0 !== l && null !== l.current ? y(v({}, r), {
       top: -l.current.offsetHeight - n
-    }) : v(C({}, r), {
+    }) : y(v({}, r), {
       bottom: e.height + n
     })
-  }, [u, a, b, l]);
+  }, [b, o, d, l]);
   return (0, r.jsx)(p.E, {
     backgroundElementRef: n,
-    offsetControlRef: s,
+    offsetControlRef: i,
     style: {
       visibility: f ? "visible" : "hidden"
     },
@@ -253,8 +253,8 @@ function I(e) {
       left: 0
     },
     onGetBoundingRect: h,
-    children: o.Children.map(i, e => o.cloneElement(e, {
-      invertCoachmark: u
+    children: a.Children.map(s, e => a.cloneElement(e, {
+      invertCoachmark: b
     }))
   }, c)
 }

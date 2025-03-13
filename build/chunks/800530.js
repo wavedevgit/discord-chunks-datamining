@@ -6,20 +6,20 @@ n.d(t, {
   EY: () => x,
   I5: () => I,
   JQ: () => h,
-  RY: () => T,
-  Sv: () => C,
+  RY: () => C,
+  Sv: () => T,
   TX: () => k,
   ZW: () => p,
   bK: () => S,
-  n0: () => A,
+  n0: () => L,
   o6: () => P,
   oE: () => b,
   qS: () => O,
-  s: () => L,
+  s: () => A,
   sQ: () => N,
   wo: () => u
 });
-var o, i, r, s, l, a, c, _ = n(990547),
+var o, i, s, r, l, a, c, _ = n(990547),
   d = n(981631);
 
 function E(e, t, n) {
@@ -37,8 +37,8 @@ E(m, "CLASSIFICATION_ID", "classification_id"), E(m, "INCIDENT_TIMESTAMP", "inci
 var u = ((o = {}).POLICY_VIOLATION_DETAIL = "policy_violation_detail", o.LEARN_MORE_LINK = "learn_more_link", o);
 class I {}
 E(I, "ICON_TYPE", "icon_type"), E(I, "HEADER", "header"), E(I, "BODY", "body"), E(I, "CTAS", "ctas"), E(I, "TIMESTAMP", "timestamp"), E(I, "THEME", "theme"), E(I, "CLIENT_VERSION_MESSAGE", "client_version_message"), E(I, "LEARN_MORE_LINK", "learn_more_link"), E(I, "CLASSIFICATION_ID", "classification_id");
-var A = ((i = {})[i.ViewViolationDetail = 0] = "ViewViolationDetail", i[i.ViewViolationsDropdown = 1] = "ViewViolationsDropdown", i[i.ClickLetUsKnow = 2] = "ClickLetUsKnow", i[i.ClickAgeVerificationLink = 3] = "ClickAgeVerificationLink", i[i.ClickSpamWebformLink = 4] = "ClickSpamWebformLink", i[i.ClickLearnMoreLink = 5] = "ClickLearnMoreLink", i[i.ClickCommunityGuidelinesLink = 6] = "ClickCommunityGuidelinesLink", i[i.ClickWarningSystemHelpcenterLink = 7] = "ClickWarningSystemHelpcenterLink", i),
-  L = ((r = {})[r.SystemDM = 0] = "SystemDM", r[r.StandingTab = 1] = "StandingTab", r[r.AppealIngestion = 2] = "AppealIngestion", r);
+var L = ((i = {})[i.ViewViolationDetail = 0] = "ViewViolationDetail", i[i.ViewViolationsDropdown = 1] = "ViewViolationsDropdown", i[i.ClickLetUsKnow = 2] = "ClickLetUsKnow", i[i.ClickAgeVerificationLink = 3] = "ClickAgeVerificationLink", i[i.ClickSpamWebformLink = 4] = "ClickSpamWebformLink", i[i.ClickLearnMoreLink = 5] = "ClickLearnMoreLink", i[i.ClickCommunityGuidelinesLink = 6] = "ClickCommunityGuidelinesLink", i[i.ClickWarningSystemHelpcenterLink = 7] = "ClickWarningSystemHelpcenterLink", i),
+  A = ((s = {})[s.SystemDM = 0] = "SystemDM", s[s.StandingTab = 1] = "StandingTab", s[s.AppealIngestion = 2] = "AppealIngestion", s);
 Object.freeze({
   SPEED_BUMP: d.jXE.APPEAL_INGESTION_SPEED_BUMP,
   COLLECT_SIGNAL: d.jXE.APPEAL_INGESTION_COLLECT_SIGNAL,
@@ -47,9 +47,9 @@ Object.freeze({
   THANKS: d.jXE.APPEAL_INGESTION_THANKS,
   SPAM: d.jXE.APPEAL_INGESTION_SPAM
 });
-var S = ((s = {})[s.DIDNT_VIOLATE_POLICY = 0] = "DIDNT_VIOLATE_POLICY", s[s.TOO_STRICT_UNFAIR = 1] = "TOO_STRICT_UNFAIR", s[s.DONT_AGREE_PENALTY = 2] = "DONT_AGREE_PENALTY", s[s.SOMETHING_ELSE = 3] = "SOMETHING_ELSE", s);
-let T = [0, 1, 2, 3],
-  C = 372,
+var S = ((r = {})[r.DIDNT_VIOLATE_POLICY = 0] = "DIDNT_VIOLATE_POLICY", r[r.TOO_STRICT_UNFAIR = 1] = "TOO_STRICT_UNFAIR", r[r.DONT_AGREE_PENALTY = 2] = "DONT_AGREE_PENALTY", r[r.SOMETHING_ELSE = 3] = "SOMETHING_ELSE", r);
+let C = [0, 1, 2, 3],
+  T = 372,
   x = 279,
   p = {
     impression_group: _.ImpressionGroups.APPEAL_INGESTION

@@ -1,11 +1,11 @@
 /** Chunk was on 80144 **/
 n.d(t, {
-  default: () => L
+  default: () => A
 }), n(266796);
 var o = n(200651),
   i = n(192379),
-  r = n(772848),
-  s = n(481060),
+  s = n(772848),
+  r = n(481060),
   l = n(600164),
   a = n(138201),
   c = n(63063),
@@ -16,37 +16,37 @@ var o = n(200651),
   m = n(981631),
   u = n(800530),
   I = n(388032),
-  A = n(165145);
-let L = function(e) {
+  L = n(165145);
+let A = function(e) {
   let {
     transitionState: t,
     entryPoint: n,
-    onClose: L
+    onClose: A
   } = e, {
     loading: S,
-    initiateAgeVerification: T
-  } = (0, E.WD)(L), C = i.useMemo(() => (0, r.Z)(), []);
+    initiateAgeVerification: C
+  } = (0, E.WD)(A), T = i.useMemo(() => (0, s.Z)(), []);
   return i.useEffect(() => {
-    (0, d.lA)(C, d.d_.PRIMARY, n)
-  }, [C, n]), (0, o.jsxs)(s.Y0X, {
+    (0, d.lA)(T, d.d_.PRIMARY, n)
+  }, [T, n]), (0, o.jsxs)(r.Y0X, {
     transitionState: t,
-    className: A.root,
-    children: [(0, o.jsxs)(s.hzk, {
-      className: A.content,
+    className: L.root,
+    children: [(0, o.jsxs)(r.hzk, {
+      className: L.content,
       children: [(0, o.jsxs)("div", {
-        className: A.headersContainer,
-        children: [(0, o.jsx)(s.X6q, {
+        className: L.headersContainer,
+        children: [(0, o.jsx)(r.X6q, {
           variant: "heading-xl/bold",
           children: I.NW.string(I.t["FQ+YOD"])
-        }), (0, o.jsx)(s.X6q, {
+        }), (0, o.jsx)(r.X6q, {
           variant: "heading-md/medium",
           color: "text-normal",
           children: I.NW.string(I.t.Cc41tb)
-        }), (0, o.jsx)(s.olH, {
-          className: A.modalClose,
-          onClick: L
+        }), (0, o.jsx)(r.olH, {
+          className: L.modalClose,
+          onClick: A
         })]
-      }), (0, N.u)(C).map((e, t) => {
+      }), (0, N.u)(T).map((e, t) => {
         let {
           title: n,
           description: i
@@ -57,48 +57,48 @@ let L = function(e) {
           listType: "numbered",
           index: t
         }, t)
-      }), (0, o.jsx)(s.Text, {
+      }), (0, o.jsx)(r.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
-        className: A.requestContainer,
+        className: L.requestContainer,
         children: I.NW.format(I.t.TYfgw8, {
           handleOnRequestHook: () => {
-            _.Z.openUrl(u.sQ.APPEALS_LINK), (0, d.x3)(C, d.d_.PRIMARY, d.sU.MANUAL_REVIEW_REQUEST)
+            _.Z.openUrl(u.sQ.APPEALS_LINK), (0, d.x3)(T, d.d_.PRIMARY, d.sU.MANUAL_REVIEW_REQUEST)
           }
         })
       })]
-    }), (0, o.jsxs)(s.mzw, {
+    }), (0, o.jsxs)(r.mzw, {
       justify: l.Z.Justify.BETWEEN,
       direction: l.Z.Direction.HORIZONTAL,
-      className: A.modalFooter,
-      children: [(0, o.jsxs)(s.zxk, {
-        innerClassName: A.button,
-        color: s.zxk.Colors.LINK,
-        look: s.zxk.Looks.LINK,
-        className: A.learnMoreButton,
+      className: L.modalFooter,
+      children: [(0, o.jsxs)(r.zxk, {
+        innerClassName: L.button,
+        color: r.zxk.Colors.LINK,
+        look: r.zxk.Looks.LINK,
+        className: L.learnMoreButton,
         onClick: () => {
-          _.Z.openUrl(c.Z.getArticleURL(m.BhN.TIGGER_PAWTECT_UK_AND_AUS_ONLY_LEARN_MORE)), (0, d.x3)(C, d.d_.PRIMARY, d.sU.LEARN_MORE)
+          _.Z.openUrl(c.Z.getArticleURL(m.BhN.TIGGER_PAWTECT_UK_AND_AUS_ONLY_LEARN_MORE)), (0, d.x3)(T, d.d_.PRIMARY, d.sU.LEARN_MORE)
         },
-        children: [(0, o.jsx)(s.Text, {
+        children: [(0, o.jsx)(r.Text, {
           variant: "text-sm/semibold",
           color: "currentColor",
           children: I.NW.string(I.t.mXpKND)
-        }), (0, o.jsx)(s.Gr1, {
+        }), (0, o.jsx)(r.Gr1, {
           size: "xs",
           color: "currentColor"
         })]
-      }), (0, o.jsxs)(s.zxk, {
-        innerClassName: A.button,
-        color: s.zxk.Colors.BRAND,
+      }), (0, o.jsxs)(r.zxk, {
+        innerClassName: L.button,
+        color: r.zxk.Colors.BRAND,
         onClick: () => {
-          (0, d.x3)(C, d.d_.PRIMARY, d.sU.GET_STARTED), T()
+          (0, d.x3)(T, d.d_.PRIMARY, d.sU.GET_STARTED), C()
         },
         submitting: S,
-        children: [(0, o.jsx)(s.Text, {
+        children: [(0, o.jsx)(r.Text, {
           variant: "text-sm/semibold",
           color: "always-white",
           children: I.NW.string(I.t.VLbVho)
-        }), (0, o.jsx)(s.Gr1, {
+        }), (0, o.jsx)(r.Gr1, {
           size: "xs",
           color: "currentColor"
         })]

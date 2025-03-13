@@ -218,7 +218,8 @@ function et(e) {
     channel_type: E.type,
     source: null == W ? void 0 : W.source,
     command_context_type: (0, d.Vh)(E, r),
-    invite_inviter_id: f
+    invite_inviter_id: f,
+    interaction_id: null == W ? void 0 : W.interactionId
   }), T.default.track(F.rMx.ACTIVITY_IFRAME_MOUNT, {
     location_stack: null == W ? void 0 : W.locations,
     channel_id: E.id,
@@ -241,10 +242,10 @@ function en(e) {
 }
 class er extends c.Z {
   _initialize() {
-    I.Z.addChangeListener(this.handleSelectedChannelUpdate), N.S.subscribe(F.CkL.RELEASE_ACTIVITY_WEB_VIEW, this.handleActivityWebViewRelease), N.S.subscribe(F.CkL.OPEN_EMBEDDED_ACTIVITY, et), a.Z.subscribe("EMBEDDED_ACTIVITY_LAUNCH_START", $), a.Z.subscribe("EMBEDDED_ACTIVITY_LAUNCH_SUCCESS", this.handleActivityLaunchSuccess), a.Z.subscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), a.Z.subscribe("EMBEDDED_ACTIVITY_CLOSE", ee), a.Z.subscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), a.Z.subscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), a.Z.subscribe("CALL_DELETE", this.handleCallDelete), a.Z.subscribe("RTC_CONNECTION_STATE", this.handleRTCConnectionState), a.Z.subscribe("GUILD_DELETE", this.handleGuildDelete), a.Z.subscribe("CHANNEL_DELETE", this.handleChannelDelete), a.Z.subscribe("INTERACTION_QUEUE", this.handleInteractionQueue), a.Z.subscribe("INTERACTION_SUCCESS", this.handleInteractionSuccess), a.Z.subscribe("INTERACTION_FAILURE", this.handleInteractionFailure)
+    I.Z.addChangeListener(this.handleSelectedChannelUpdate), N.S.subscribe(F.CkL.RELEASE_ACTIVITY_WEB_VIEW, this.handleActivityWebViewRelease), N.S.subscribe(F.CkL.OPEN_EMBEDDED_ACTIVITY, et), a.Z.subscribe("EMBEDDED_ACTIVITY_LAUNCH_START", $), a.Z.subscribe("EMBEDDED_ACTIVITY_LAUNCH_SUCCESS", this.handleActivityLaunchSuccess), a.Z.subscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), a.Z.subscribe("EMBEDDED_ACTIVITY_CLOSE", ee), a.Z.subscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), a.Z.subscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), a.Z.subscribe("CALL_DELETE", this.handleCallDelete), a.Z.subscribe("RTC_CONNECTION_STATE", this.handleRTCConnectionState), a.Z.subscribe("GUILD_DELETE", this.handleGuildDelete), a.Z.subscribe("CHANNEL_DELETE", this.handleChannelDelete), a.Z.subscribe("INTERACTION_QUEUE", this.handleInteractionQueue), a.Z.subscribe("INTERACTION_CREATE", this.handleInteractionCreate), a.Z.subscribe("INTERACTION_SUCCESS", this.handleInteractionSuccess), a.Z.subscribe("INTERACTION_FAILURE", this.handleInteractionFailure)
   }
   _terminate() {
-    I.Z.removeChangeListener(this.handleSelectedChannelUpdate), N.S.unsubscribe(F.CkL.RELEASE_ACTIVITY_WEB_VIEW, this.handleActivityWebViewRelease), N.S.unsubscribe(F.CkL.OPEN_EMBEDDED_ACTIVITY, et), a.Z.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_START", $), a.Z.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_SUCCESS", this.handleActivityLaunchSuccess), a.Z.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), a.Z.unsubscribe("EMBEDDED_ACTIVITY_CLOSE", ee), a.Z.unsubscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), a.Z.unsubscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), a.Z.unsubscribe("CALL_DELETE", this.handleCallDelete), a.Z.unsubscribe("RTC_CONNECTION_STATE", this.handleRTCConnectionState), a.Z.unsubscribe("GUILD_DELETE", this.handleGuildDelete), a.Z.unsubscribe("CHANNEL_DELETE", this.handleChannelDelete), a.Z.unsubscribe("INTERACTION_QUEUE", this.handleInteractionQueue), a.Z.unsubscribe("INTERACTION_SUCCESS", this.handleInteractionSuccess), a.Z.unsubscribe("INTERACTION_FAILURE", this.handleInteractionFailure)
+    I.Z.removeChangeListener(this.handleSelectedChannelUpdate), N.S.unsubscribe(F.CkL.RELEASE_ACTIVITY_WEB_VIEW, this.handleActivityWebViewRelease), N.S.unsubscribe(F.CkL.OPEN_EMBEDDED_ACTIVITY, et), a.Z.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_START", $), a.Z.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_SUCCESS", this.handleActivityLaunchSuccess), a.Z.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), a.Z.unsubscribe("EMBEDDED_ACTIVITY_CLOSE", ee), a.Z.unsubscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), a.Z.unsubscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), a.Z.unsubscribe("CALL_DELETE", this.handleCallDelete), a.Z.unsubscribe("RTC_CONNECTION_STATE", this.handleRTCConnectionState), a.Z.unsubscribe("GUILD_DELETE", this.handleGuildDelete), a.Z.unsubscribe("CHANNEL_DELETE", this.handleChannelDelete), a.Z.unsubscribe("INTERACTION_QUEUE", this.handleInteractionQueue), a.Z.unsubscribe("INTERACTION_CREATE", this.handleInteractionCreate), a.Z.unsubscribe("INTERACTION_SUCCESS", this.handleInteractionSuccess), a.Z.unsubscribe("INTERACTION_FAILURE", this.handleInteractionFailure)
   }
   constructor(...e) {
     super(...e), H(this, "handleSelectedChannelUpdate", () => {
@@ -480,6 +481,16 @@ class er extends c.Z {
           locations: e
         }) && (z[t] = n.applicationId)
       }
+    }), H(this, "handleInteractionCreate", e => {
+      let {
+        nonce: t,
+        interactionId: n
+      } = e;
+      if (null == t) return;
+      let r = z[t];
+      if (null == r) return;
+      let i = K[r];
+      null != i && (i.interactionId = n)
     }), H(this, "handleInteractionSuccess", e => {
       let {
         nonce: t

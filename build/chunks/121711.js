@@ -96,7 +96,7 @@ let k = function() {
           onTabSelect: n
         }), (0, r.jsx)(N.V9, {
           cardAlignment: N.ek.END,
-          ctaText: R.NW.string(R.t.iEw2Nz),
+          ctaText: R.NW.string(R.t["J+vlIS"]),
           ctaOnClick: () => {
             (0, u.mK)({
               openInLayer: !1,

@@ -2,9 +2,9 @@
 n.d(t, {
   e: () => s
 });
-var r = n(200651);
+var a = n(200651);
 n(192379);
-var a = n(314897),
+var r = n(314897),
   o = n(449934),
   l = n(857458),
   i = n(981631);
@@ -16,22 +16,22 @@ function s(e, t) {
   };
 
   function d(n) {
-    return !(0, o.$8)() && a.default.getLoginStatus() !== i.u34.LOGGING_IN && a.default.allowLogoutRedirect() ? null != t ? (0, r.jsx)(t, {
-      renderRedirect: (0, r.jsx)(l.Z, {})
-    }) : (0, r.jsx)(l.Z, {}) : (0, r.jsx)(e, function(e) {
+    return !(0, o.$8)() && r.default.getLoginStatus() !== i.u34.LOGGING_IN && r.default.allowLogoutRedirect() ? null != t ? (0, a.jsx)(t, {
+      renderRedirect: (0, a.jsx)(l.Z, {})
+    }) : (0, a.jsx)(l.Z, {}) : (0, a.jsx)(e, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          a = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        }))), a.forEach(function(t) {
+          var a;
+          a = n[t], t in e ? Object.defineProperty(e, t, {
+            value: a,
             enumerable: !0,
             configurable: !0,
             writable: !0
-          }) : e[t] = r
+          }) : e[t] = a
         })
       }
       return e

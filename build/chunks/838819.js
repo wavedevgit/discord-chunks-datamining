@@ -37,8 +37,8 @@ var r = n(200651),
   N = n(298228),
   Z = n(937510),
   A = n(309956),
-  H = n(853748),
-  W = n(426171),
+  W = n(853748),
+  H = n(426171),
   R = n(823941),
   F = n(752053),
   M = n(963102),
@@ -178,7 +178,7 @@ function el(e) {
       initialItemCardRef: a,
       isPremiumUser: n,
       isGiftEasterEggEnabled: o
-    }), null != p && null != t.unpublishedAt && (0, r.jsx)(H.$, {
+    }), null != p && null != t.unpublishedAt && (0, r.jsx)(W.$, {
       unpublishedAt: t.unpublishedAt,
       isVisible: h,
       displayOptions: p,
@@ -200,13 +200,13 @@ let ea = function(e) {
     analyticsLocations: x
   } = (0, m.ZP)([...v, h.Z.COLLECTIBLES_SHOP]), {
     sessionId: Z,
-    scrollerRef: H,
+    scrollerRef: W,
     scrollHandler: R
   } = (0, p._)(X.rMx.COLLECTIBLES_SHOP_SCROLLED, f), {
     selectedTab: z,
     transitionState: K,
     transitionToTab: en
-  } = (0, A.B)(H, a, n), [er, ea] = l.useState(!1), es = (0, L.R)("CollectiblesShop"), [eo, ei] = l.useState(Q.IV), [ed, ec] = l.useState(), [eu, eg] = l.useState(), {
+  } = (0, A.B)(W, a, n), [er, ea] = l.useState(!1), es = (0, L.R)("CollectiblesShop"), [eo, ei] = l.useState(Q.IV), [ed, ec] = l.useState(), [eu, eg] = l.useState(), {
     closeIntroToOrbsClaimedCoachmark: ef
   } = (0, j.Z)({
     location: "CollectiblesShop"
@@ -236,7 +236,7 @@ let ea = function(e) {
   let eO = (0, N.O)(e_),
     eE = l.useRef(null),
     [eI, eB] = l.useState(!1);
-  (0, W.Kp)({
+  (0, H.Kp)({
     isFetchingCategories: ev,
     isLayer: eh,
     initialItemCardRef: eE
@@ -285,7 +285,7 @@ let ea = function(e) {
     {
       setCategoryRef: eL,
       handleScrollToCategory: eP
-    } = (0, W.xV)(H.current),
+    } = (0, H.xV)(W.current),
     {
       reducedMotion: eN
     } = l.useContext(u.Sfi),
@@ -297,11 +297,11 @@ let ea = function(e) {
       null === (e = eA.current) || void 0 === e || e.focus()
     }
   }, [n]);
-  let eH = l.useCallback(async (e, t, r) => {
+  let eW = l.useCallback(async (e, t, r) => {
       let l = r && !n && !eN.enabled;
       eg(e), ec(t), await en(Q.AW.CATALOG, l), t && eP(t)
     }, [eP, n, eN.enabled, en]),
-    eW = (0, i.e7)([T.Z], () => {
+    eH = (0, i.e7)([T.Z], () => {
       var e;
       return null === (e = T.Z.getCategory(ed)) || void 0 === e ? void 0 : e.name
     });
@@ -310,7 +310,7 @@ let ea = function(e) {
     children: (0, r.jsxs)(B.k0, {
       newValue: {
         sessionId: Z,
-        pageCategory: eW
+        pageCategory: eH
       },
       children: [(0, r.jsx)("div", {
         className: et.shop,
@@ -318,10 +318,10 @@ let ea = function(e) {
         tabIndex: -1,
         children: (0, r.jsx)(u.Den, {
           className: et.shopScroll,
-          ref: H,
+          ref: W,
           onScroll: () => {
-            if (R(), null != H.current) {
-              let e = H.current.getDistanceFromBottom();
+            if (R(), null != W.current) {
+              let e = W.current.getDistanceFromBottom();
               eo >= es ? ea(e < 20) : e <= 200 && ei(eo + Q.IV)
             }
           },
@@ -343,7 +343,7 @@ let ea = function(e) {
                 case Q.AW.ORBS:
                   return (0, r.jsx)(q.Z, {
                     isFullScreen: n,
-                    handleTransition: eH,
+                    handleTransition: eW,
                     numVisibleItems: eo,
                     tab: e
                   });

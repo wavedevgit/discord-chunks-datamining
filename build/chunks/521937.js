@@ -2,8 +2,8 @@
 n.d(t, {
   v: () => x
 }), n(47120), n(301563);
-var r = n(200651),
-  a = n(192379),
+var a = n(200651),
+  r = n(192379),
   o = n(120356),
   l = n.n(o),
   i = n(593473),
@@ -19,32 +19,32 @@ function x(e) {
   let {
     onUserCodeAccepted: t,
     usePrefilledCode: n
-  } = e, [o, x] = a.useState(() => {
+  } = e, [o, x] = r.useState(() => {
     let {
       user_code: e
     } = i.parse(window.location.search);
     return n && null != e ? e : ""
-  }), v = (0, s.TH)(), m = a.useCallback(() => {
-    (0, d.c$)(v)
-  }, [v]), {
+  }), m = (0, s.TH)(), v = r.useCallback(() => {
+    (0, d.c$)(m)
+  }, [m]), {
     manualSubmit: b,
     error: C,
     submitting: _
-  } = (0, u.c)(o, t, m);
-  return (0, r.jsxs)("div", {
+  } = (0, u.c)(o, t, v);
+  return (0, a.jsxs)("div", {
     className: h.content,
-    children: [(0, r.jsxs)("div", {
+    children: [(0, a.jsxs)("div", {
       className: h.innerContent,
-      children: [(0, r.jsx)(c.X6q, {
+      children: [(0, a.jsx)(c.X6q, {
         variant: "heading-xl/extrabold",
         className: h.text,
         children: p.NW.string(p.t.KYPNUl)
-      }), (0, r.jsx)(c.Text, {
+      }), (0, a.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "header-secondary",
         className: h.text,
         children: p.NW.string(p.t.xRHk7e)
-      }), (0, r.jsx)(c.oil, {
+      }), (0, a.jsx)(c.oil, {
         placeholder: p.NW.formatToPlainString(p.t["0tbz6+"], {
           number: f.A.USER_CODE_LENGTH
         }),
@@ -59,13 +59,13 @@ function x(e) {
         onChange: x,
         error: C
       })]
-    }), (0, r.jsx)(c.zxk, {
+    }), (0, a.jsx)(c.zxk, {
       fullWidth: !0,
       color: c.zxk.Colors.BRAND,
       onClick: b,
       submitting: _,
       disabled: o.length !== f.A.USER_CODE_LENGTH,
-      children: (0, r.jsx)(c.Text, {
+      children: (0, a.jsx)(c.Text, {
         variant: "text-md/medium",
         children: p.NW.string(p.t["3PatS0"])
       })

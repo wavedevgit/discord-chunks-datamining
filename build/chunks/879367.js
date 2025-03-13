@@ -1,60 +1,66 @@
 /** Chunk was on 12014 **/
-o.d(e, {
-  default: () => i
+a.d(e, {
+  default: () => d
 });
-var a = o(200651),
-  s = o(192379),
-  c = o(481060),
-  n = o(388032),
-  r = o(826180);
-let i = function(t) {
+var o = a(200651),
+  s = a(192379),
+  c = a(481060),
+  n = a(81643),
+  r = a(469775),
+  l = a(388032),
+  i = a(826180);
+let d = function(t) {
   let {
     onClose: e,
-    onComplete: o,
-    transitionState: i,
-    webviewUrl: l,
-    useV1: d = !1
-  } = t, k = s.useCallback(() => {
-    e(), o()
-  }, [o, e]), N = s.useCallback(t => {
-    if ("" !== l && "string" == typeof t.data) try {
+    onComplete: a,
+    transitionState: d,
+    webviewUrl: k,
+    useV1: N = !1
+  } = t, u = s.useCallback(() => {
+    a(), e()
+  }, [a, e]), x = s.useCallback(() => {
+    (0, c.nfh)(r.z) && u()
+  }, [u]);
+  (0, n.F5)(x);
+  let f = s.useCallback(t => {
+    if ("" !== k && "string" == typeof t.data) try {
       var e = JSON.parse(t.data);
-      "AGE_CHECK_COMPLETE" === e.status && k()
+      "AGE_CHECK_COMPLETE" === e.status && u()
     } catch (t) {}
-  }, [l, k]);
-  return s.useEffect(() => (window.addEventListener("message", N), () => {
-    window.removeEventListener("message", N)
-  }), [N]), (0, a.jsx)(c.Y0X, {
-    transitionState: i,
-    className: r.root,
-    children: (0, a.jsxs)(c.hzk, {
-      className: r.content,
-      children: [d && (0, a.jsx)(c.X6q, {
+  }, [k, u]);
+  return s.useEffect(() => (window.addEventListener("message", f), () => {
+    window.removeEventListener("message", f)
+  }), [f]), (0, o.jsx)(c.Y0X, {
+    transitionState: d,
+    className: i.root,
+    children: (0, o.jsxs)(c.hzk, {
+      className: i.content,
+      children: [N && (0, o.jsx)(c.X6q, {
         variant: "heading-xl/bold",
-        children: n.NW.string(n.t.tYNaXF)
-      }), (0, a.jsx)("iframe", {
+        children: l.NW.string(l.t.tYNaXF)
+      }), (0, o.jsx)("iframe", {
         id: "frame",
-        src: l,
-        className: r.iframe,
+        src: k,
+        className: i.iframe,
         allow: "camera; microphone"
-      }), d ? (0, a.jsx)(c.zxk, {
+      }), N ? (0, o.jsx)(c.zxk, {
         color: c.zxk.Colors.TRANSPARENT,
         look: c.zxk.Looks.BLANK,
         onClick: e,
-        className: r.cancelButton,
-        children: n.NW.string(n.t["4gTnU1"])
-      }) : (0, a.jsxs)("div", {
-        className: r.footer,
-        children: [(0, a.jsx)(c.zxk, {
+        className: i.cancelButton,
+        children: l.NW.string(l.t["4gTnU1"])
+      }) : (0, o.jsxs)("div", {
+        className: i.footer,
+        children: [(0, o.jsx)(c.zxk, {
           color: c.zxk.Colors.TRANSPARENT,
           look: c.zxk.Looks.BLANK,
           onClick: e,
-          className: r.cancelButton,
-          children: n.NW.string(n.t["4gTnU1"])
-        }), (0, a.jsx)(c.zxk, {
+          className: i.cancelButton,
+          children: l.NW.string(l.t["4gTnU1"])
+        }), (0, o.jsx)(c.zxk, {
           color: c.zxk.Colors.BRAND,
-          onClick: k,
-          children: n.NW.string(n.t.XYt3Ag)
+          onClick: u,
+          children: l.NW.string(l.t.XYt3Ag)
         })]
       })]
     })

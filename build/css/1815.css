@@ -1,6 +1,6 @@
 /**
   Module ID: 1815
-  Original File Name: 22cb6ee6b5f7490b
+  Original File Name: 22b3ef5232c7c752
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -467,7 +467,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 16px;
+    font-size: 1rem;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -1052,13 +1052,11 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .container_b4f99f {
-    width: 240px;
+    width: 254px;
     padding: 16px;
+    box-sizing: border-box;
     flex-direction: column;
-    gap: 14px;
-    background: var(--primary-700);
-    background-size: cover;
-    background-origin: border-box
+    background: var(--bg-surface-overlay)
 }
 
 .assetContainer_b4f99f,.container_b4f99f {
@@ -1068,24 +1066,20 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .assetContainer_b4f99f {
-    width: 208px;
-    height: 74px;
-    gap: 10px;
+    height: 86px;
     flex-shrink: 0;
-    border-radius: 8px;
-    background: #131313;
-    overflow: hidden
+    margin-bottom: 12px
 }
 
 .orbAsset_b4f99f {
-    height: 72px;
-    mix-blend-mode: lighten
+    height: 86px
 }
 
 .ctaButton_b4f99f {
-    width: 208px;
-    height: 32px;
-    border-radius: 8px
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin-bottom: 16px
 }
 
 .sectionDivider_b4f99f {
@@ -1096,8 +1090,19 @@ h1.title_feb59c,h2.title_feb59c {
     margin: 0 -12px
 }
 
+.linkContainer_b4f99f {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.linkPreText_b4f99f {
+    color: var(--text-normal)
+}
+
 .learnMoreLink_b4f99f {
-    color: var(--text-link);
+    color: var(--focus-primary);
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -1109,31 +1114,12 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .baseCardOutline__1ab14 {
-    border-radius: 16px;
-    border: 1px solid rgba(108, 111, 124, 0.12);
-    border: 1px solid var(--custom-virtual-currency-border-subtle);
-    box-shadow: 0 12px 24px 0 rgba(0,0,0,.4)
-}
-
-.coachmarkTitle__1ab14 {
-    color: --header-primary;
-    color: var(--plum-3,--header-primary);
-    font-size: 18px;
-    line-height: 20px
-}
-
-.coachmarkDescription__1ab14,.coachmarkTitle__1ab14 {
-    text-align: center;
-    font-style: normal;
-    font-weight: 500
-}
-
-.coachmarkDescription__1ab14 {
-    align-self: stretch;
-    color: --header-secondary;
-    color: var(--plum-9,--header-secondary);
-    font-size: 14px;
-    line-height: 18px
+    border-radius: 12px;
+    border: 1px solid rgba(108,111,124,.12);
+    border: 1px solid var(--border-border-subtle,rgba(108,111,124,.12));
+    box-shadow: 0 12px 64px 0 rgba(0,0,0,.32);
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px)
 }
 
 .container__44ee9 {
@@ -17116,26 +17102,18 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
 }
 
 .container__4d8b6 {
-    width: 250px;
     position: relative;
+    width: 250px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 24px;
-    background: var(--primary-700);
-    background-size: cover;
-    background-origin: border-box
-}
-
-.orbAssetContainer__4d8b6 {
-    padding: 22px 0;
-    overflow: none
+    background: var(--bg-surface-overlay)
 }
 
 .orbAsset__4d8b6 {
-    height: 110px;
-    mix-blend-mode: lighten
+    height: 110px
 }
 
 .centerContent__4d8b6 {
@@ -17145,21 +17123,46 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
 }
 
 .contentContainer__4d8b6 {
+    margin-top: 12px;
+    gap: 12px
+}
+
+.contentContainer__4d8b6,.textContainer__4d8b6 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    padding: 0 16px
+    align-items: center
+}
+
+.coachmarkTitle__4d8b6 {
+    margin-bottom: 4px
+}
+
+.coachmarkDescription__4d8b6 {
+    line-height: 18px;
+    color: var(--header-secondary);
+    align-self: stretch;
+    text-align: center
 }
 
 .ctaButton__4d8b6 {
-    width: 218px;
-    height: 32px;
+    width: 100%;
+    height: 40px;
     border-radius: 8px
 }
 
+.theme-light .link__4d8b6 {
+    color: var(--neutral-100)
+}
+
 .link__4d8b6 {
-    color: #d8dbed
+    color: var(--neutral-1);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: .14px;
+    padding: 12px 0
 }
 
 .coachmarkModalContainer__4d8b6 {
@@ -17188,4 +17191,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=22cb6ee6b5f7490b.css.map*/
+/*# sourceMappingURL=22b3ef5232c7c752.css.map*/

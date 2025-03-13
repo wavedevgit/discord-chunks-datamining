@@ -90,9 +90,9 @@ function k(e) {
         className: v.alignedRightContent,
         children: [E && (0, r.jsx)(h.V9, {
           cardAlignment: h.V9.CardAlignment.END,
-          className: v.balanceWidgetMenu,
-          ctaText: _.NW.string(_.t["H57f4+"]),
-          ctaOnClick: () => (0, g.navigateToQuestHome)()
+          ctaText: _.NW.string(_.t.VC4Mq6),
+          ctaOnClick: () => (0, g.navigateToQuestHome)(),
+          className: v.balanceWidgetMenu
         }), t && (0, r.jsx)(d.Z, {
           closeAction: n ? b.DR : a,
           keybind: "ESC"

@@ -153,6 +153,7 @@ function I(e) {
             guildId: t,
             onClose: O.dG4
           }),
+          closeOnScroll: !0,
           children: e => {
             var {
               onClick: t
@@ -174,6 +175,7 @@ function I(e) {
             guildId: t,
             onClose: O.dG4
           }),
+          closeOnScroll: !0,
           children: e => {
             var {
               onClick: t
@@ -204,6 +206,7 @@ function I(e) {
           guildId: t,
           onClose: O.dG4
         }),
+        closeOnScroll: !0,
         children: e => {
           var {
             onClick: t
@@ -264,6 +267,7 @@ function I(e) {
               onClose: n
             })
           },
+          closeOnScroll: !0,
           children: t => (0, r.jsx)(Z, {
             label: N.NW.string(N.t["7V375+"]),
             "aria-label": N.NW.string(N.t["2cRO3d"]),

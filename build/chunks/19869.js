@@ -58,7 +58,7 @@ function T() {
     }), (0, r.jsx)(E.E_, {
       label: "Balance Widget Menu",
       children: (0, r.jsx)(b.V9, {
-        ctaText: C.NW.string(C.t["H57f4+"]),
+        ctaText: C.NW.string(C.t["J+vlIS"]),
         ctaOnClick: j.dG4,
         isCoachmarkEnabled: !1
       })

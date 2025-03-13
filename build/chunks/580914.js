@@ -71,8 +71,8 @@ let I = {
       bannerOverride: N,
       heroLogo: Z,
       heroBannerStatic: A,
-      heroBannerAnimated: H
-    } = (0, j.hr)(P), W = null == N ? void 0 : N.heroBanner, R = l.useMemo(() => L(P.rankedSkuIds), [t, L, P.rankedSkuIds]), F = (0, C.l)(R).slice(0, 4), M = b === y.AW.ORBS ? O.NW.string(O.t.qQq91t) : O.NW.formatToPlainString(O.t.wvKYCg, {
+      heroBannerAnimated: W
+    } = (0, j.hr)(P), H = null == N ? void 0 : N.heroBanner, R = l.useMemo(() => L(P.rankedSkuIds), [t, L, P.rankedSkuIds]), F = (0, C.l)(R).slice(0, 4), M = b === y.AW.ORBS ? O.NW.string(O.t.qQq91t) : O.NW.formatToPlainString(O.t.wvKYCg, {
       category_name: P.name
     }), V = (0, k.n)(null == o ? void 0 : o.categorySkuId);
     return null != w && (t || P !== I) ? (0, r.jsxs)("div", {
@@ -84,9 +84,9 @@ let I = {
         style: null != V.backgroundStyle ? {
           background: V.backgroundStyle
         } : void 0,
-        children: [null != H && !_ && T ? (0, r.jsx)(g.Z, {
+        children: [null != W && !_ && T ? (0, r.jsx)(g.Z, {
           className: E.bannerVideoBackground,
-          src: H,
+          src: W,
           autoPlay: !0,
           loop: !0
         }) : (0, r.jsx)("div", {
@@ -96,17 +96,17 @@ let I = {
           }
         }), (0, r.jsx)("div", {
           className: s()(E.bannerShadow, E.left, {
-            [E.darker]: null == W ? void 0 : W.darker
+            [E.darker]: null == H ? void 0 : H.darker
           }),
-          style: (null == W ? void 0 : W.gradientLeft) != null ? {
-            background: null == W ? void 0 : W.gradientLeft
+          style: (null == H ? void 0 : H.gradientLeft) != null ? {
+            background: null == H ? void 0 : H.gradientLeft
           } : void 0
         }), (0, r.jsx)("div", {
           className: s()(E.bannerShadow, E.right, {
-            [E.darker]: null == W ? void 0 : W.darker
+            [E.darker]: null == H ? void 0 : H.darker
           }),
-          style: (null == W ? void 0 : W.gradientRight) != null ? {
-            background: null == W ? void 0 : W.gradientRight
+          style: (null == H ? void 0 : H.gradientRight) != null ? {
+            background: null == H ? void 0 : H.gradientRight
           } : void 0
         })]
       }), (0, r.jsxs)("div", {

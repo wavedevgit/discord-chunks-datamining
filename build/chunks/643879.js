@@ -77,7 +77,10 @@ function h(e) {
       hour: "numeric",
       minute: "numeric"
     });
-  return "".concat(r, ", ").concat(i)
+  return u.NW.formatToPlainString(n === s.q.EDITED_ARCHIVED_ASSET ? u.t.eC2sZm : u.t["DYil9/"], {
+    name: r,
+    dateTime: i
+  })
 }
 
 function m(e) {
