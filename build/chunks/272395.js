@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  H: () => s,
-  J: () => a
+  H3: () => l,
+  JN: () => a,
+  tc: () => s
 });
 var r = n(818083),
   i = n(984134);
@@ -42,6 +43,25 @@ function a(e) {
 }
 
 function s(e) {
+  let {
+    location: t,
+    autoTrackExposure: n = !0
+  } = e, {
+    isInHoldout: r
+  } = i.h.getCurrentConfig({
+    location: t
+  }, {
+    autoTrackExposure: n
+  });
+  return o.getCurrentConfig({
+    location: t
+  }, {
+    disable: r,
+    autoTrackExposure: n
+  }).avErrorUIEnabled
+}
+
+function l(e) {
   o.trackExposure({
     location: e
   })

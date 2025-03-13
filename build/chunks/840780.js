@@ -8,7 +8,7 @@ var r = n(200651),
   o = n.n(l),
   a = n(512722),
   s = n.n(a),
-  c = n(115911),
+  c = n(252258),
   u = n(442837),
   d = n(704215),
   p = n(481060),
@@ -200,7 +200,7 @@ class ey extends i.PureComponent {
         start: i.connectedSince
       },
       g = (0, y.R)({
-        isContextless: i.location.kind === c.X.CONTEXTLESS
+        isContextless: i.location.kind === c.E.CONTEXTLESS
       }),
       m = a;
     null != s && null != l ? (e = eu.Z5c.CHANNEL(s.id, l.id), m = "".concat(m, " / ").concat(s.name)) : null != l && (e = eu.Z5c.CHANNEL(eu.ME, l.id));
@@ -303,7 +303,7 @@ class ey extends i.PureComponent {
         embeddedActivity: n
       } = this.props;
       s()(null != t, "Channel is null during navigation click"), s()(null != n, "Activity null during navigation click"), g.Z.channelListScrollTo(null !== (e = t.guild_id) && void 0 !== e ? e : eu.ME, t.id), !(0, y.R)({
-        isContextless: n.location.kind === c.X.CONTEXTLESS
+        isContextless: n.location.kind === c.E.CONTEXTLESS
       }) && ((0, H.vd)(t.type) && f.Z.selectParticipant(t.id, (0, P.gN)({
         applicationId: n.applicationId,
         instanceId: n.compositeInstanceId
@@ -350,7 +350,7 @@ let e_ = (0, b.Z)(function(e) {
     N = (0, u.e7)([Z.Z], () => Z.Z.getFakeGameData()),
     w = (0, u.e7)([j.ZP], () => j.ZP.getCurrentEmbeddedActivity()),
     D = (0, _.Z0)() && null != w && (0, y.R)({
-      isContextless: w.location.kind === c.X.CONTEXTLESS
+      isContextless: w.location.kind === c.E.CONTEXTLESS
     }),
     M = (0, u.e7)([J.Z], () => (0, k.Z)(J.Z) && (0, el.isWindows)()),
     G = (0, u.e7)([$.Z], () => null != o ? $.Z.findActivity(o, e => e.type === eu.IIU.PLAYING) : null),
@@ -366,7 +366,7 @@ let e_ = (0, b.Z)(function(e) {
         embeddedActivity: t
       } = e, n = [], r = (0, E.wE)(d.z.ACTIVITY_POPOUT_NUX_MODAL), i = (0, u.e7)([ei.Z], () => ei.Z.isFocused());
       (0, y.R)({
-        isContextless: (null == t ? void 0 : t.location.kind) === c.X.CONTEXTLESS
+        isContextless: (null == t ? void 0 : t.location.kind) === c.E.CONTEXTLESS
       }) && r && i && n.push(d.z.ACTIVITY_POPOUT_NUX_QUICK_REFOCUS_TOOLTIP);
       let [l, o] = (0, T.US)(n);
       return {

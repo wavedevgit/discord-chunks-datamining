@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => f
 });
 var r = n(24917),
-  i = n(115911),
-  l = n(106351),
+  i = n(106351),
+  l = n(252258),
   o = n(243814),
   a = n(45792),
   s = n(566620),
@@ -35,17 +35,17 @@ let f = {
         errorCode: h.lT.NO_ELIGIBLE_ACTIVITY
       }, "No eligible activity for application. Ensure an activity was set using setActivity.");
       switch (f.kind) {
-        case i.X.GUILD_CHANNEL:
-        case i.X.GUILD_CHANNEL_MESSAGE:
+        case l.E.GUILD_CHANNEL:
+        case l.E.GUILD_CHANNEL_MESSAGE:
           t = (0, d.T)().channel;
           break;
-        case i.X.PRIVATE_CHANNEL:
-        case i.X.PRIVATE_CHANNEL_MESSAGE:
+        case l.E.PRIVATE_CHANNEL:
+        case l.E.PRIVATE_CHANNEL_MESSAGE:
           let g = u.Z.getChannel(f.channel_id);
           if (null == g) throw new r.O({
             errorCode: h.lT.INVALID_CHANNEL
           }, "Invalid channel");
-          if (g.type === l.d.DM) throw new r.O({
+          if (g.type === i.d.DM) throw new r.O({
             errorCode: h.lT.INVALID_CHANNEL
           }, "Cannot send invite to a DM");
           t = g;

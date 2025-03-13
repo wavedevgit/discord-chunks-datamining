@@ -22,7 +22,11 @@ function u(e) {
     onClose: l,
     pendingBadges: u,
     shouldOpenBadgeTooltip: d
-  } = e, f = (0, a.Z)(t), _ = i.useMemo(() => null == u ? f : [...f, ...u], [f, u]);
+  } = e, f = (0, a.Z)(t), _ = i.useMemo(() => {
+    if (null == u) return f;
+    let e = new Set(f.map(e => e.id));
+    return [...f, ...u.filter(t => !e.has(t.id))]
+  }, [f, u]);
   return 0 === _.length ? null : (0, r.jsx)(r.Fragment, {
     children: (0, o.chunk)(_, c[n]).map(e => (0, r.jsx)(s.Z, {
       badges: e,

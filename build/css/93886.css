@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 2fe129a1b582329e
+  Original File Name: 8ff3fcb42e619653
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -5326,32 +5326,26 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .uploadModal_dae93f .inner_dae93f {
-    flex: 1;
-    color: var(--white-500);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     border: 2px dashed hsl(var(--white-500-hsl)/.4);
     border-radius: 6px;
     width: 100%
 }
 
-.uploadModal_dae93f .inner_dae93f .title_dae93f {
-    font-size: 20px;
-    font-weight: 700;
-    padding: 0 8px;
-    width: 100%;
-    text-align: center;
-    box-sizing: border-box
+.uploadModal_dae93f .inner_dae93f .instructions_dae93f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    text-align: center
 }
 
-.uploadModal_dae93f .inner_dae93f .instructions_dae93f {
-    text-align: center;
-    font-size: 12px;
-    line-height: 16px;
-    margin-top: 4px;
-    margin-left: 4px
+.uploadModal_dae93f .inner_dae93f .questionIcon_dae93f {
+    margin: 0 4px;
+    vertical-align: top
 }
 
 @keyframes uploadModalShake_dae93f {
@@ -5378,7 +5372,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding: 10px;
     border-radius: 4px;
     box-sizing: border-box;
-    height: auto
+    opacity: 1
 }
 
 .full-motion .errorModal_dae93f {

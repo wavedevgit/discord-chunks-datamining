@@ -98,22 +98,20 @@ let x = (e, t, n) => (0, s.wj)(e) ? t : n,
       location: _
     }, {
       autoTrackExposure: !1
-    }), m = !o && !u, p = v();
+    }), m = v();
     return null != n.collectibleDeco && a({
       card: n.collectibleDeco
     }), null != n.tenureBadge && a({
       card: n.tenureBadge
     }), null != n.tenureRewardCollectible && !0 === i && a({
       card: n.tenureRewardCollectible
-    }), null != n.shyProject && a({
-      card: n.shyProject
-    }), r && p ? (0 === t.length && l(), a({
+    }), r && m ? (0 === t.length && l(), a({
       card: n.newAppStylesUpdateJune2024
     }), a({
       card: n.serverProfiles
-    })) : r && !p && (m || null != n.shyProject ? m && a({
+    })) : r && !m && (o || u || a({
       card: n.referralProgram
-    }) : l(), a({
+    }), a({
       card: n.newAppStylesUpdateJune2024
     }), a({
       card: n.serverProfiles

@@ -3,7 +3,7 @@
 n.d(t, {
   k: () => v
 });
-var r = n(115911),
+var r = n(252258),
   i = n(668781),
   o = n(728345),
   a = n(835873),
@@ -91,7 +91,7 @@ async function v(e) {
       sectionName: b,
       inviterUserId: y,
       instanceId: O.compositeInstanceId,
-      isContextlessActivity: O.location.kind === r.X.CONTEXTLESS
+      isContextlessActivity: O.location.kind === r.E.CONTEXTLESS
     })
   }
   E({

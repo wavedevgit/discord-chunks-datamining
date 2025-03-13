@@ -13,7 +13,7 @@ var r, i = n(200651),
   l = n(192379),
   o = n(120356),
   a = n.n(o),
-  s = n(115911),
+  s = n(252258),
   c = n(442837),
   u = n(481060),
   d = n(2052),
@@ -155,7 +155,7 @@ function V(e) {
             analyticsLocations: S,
             componentId: I,
             instanceId: O.compositeInstanceId,
-            isContextlessActivity: O.location.kind === s.X.CONTEXTLESS
+            isContextlessActivity: O.location.kind === s.E.CONTEXTLESS
           })
         },
         submitting: L,

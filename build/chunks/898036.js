@@ -4,7 +4,7 @@ n.d(t, {
   ZW: () => m,
   Zw: () => g
 }), n(789020);
-var r = n(115911),
+var r = n(252258),
   i = n(570140),
   l = n(728345),
   o = n(812206),
@@ -61,6 +61,6 @@ function m(e) {
   } = e;
   t |= f.xjy.CONTEXTLESS;
   let i = u.Z.getChannelId();
-  return null != i && n.location.kind === r.X.CONTEXTLESS && n.location.starting_channel_id === i && (t |= f.xjy.PARTY_PRIVACY_VOICE_CHANNEL), t
+  return null != i && n.location.kind === r.E.CONTEXTLESS && n.location.starting_channel_id === i && (t |= f.xjy.PARTY_PRIVACY_VOICE_CHANNEL), t
 }
 let b = [1, 0]

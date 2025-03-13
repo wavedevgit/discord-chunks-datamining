@@ -4,7 +4,7 @@ n.d(t, {
 }), n(47120), n(411104), n(789020);
 var r = n(200651);
 n(192379);
-var i = n(115911),
+var i = n(252258),
   l = n(243814),
   o = n(45792),
   a = n(481060),
@@ -248,7 +248,7 @@ let B = {
           let n;
           let r = m.ZP.getCurrentEmbeddedActivity();
           if ((0, f.R)({
-              isContextless: (null == r ? void 0 : r.location.kind) === i.X.CONTEXTLESS
+              isContextless: (null == r ? void 0 : r.location.kind) === i.E.CONTEXTLESS
             })) n = N.Z.getWindow(G.KJ3.ACTIVITY_POPOUT);
           else {
             var l;

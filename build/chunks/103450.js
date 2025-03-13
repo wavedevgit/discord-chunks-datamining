@@ -4,7 +4,7 @@ n.d(t, {
   e: () => B
 }), n(47120);
 var r = n(192379),
-  i = n(115911),
+  i = n(252258),
   o = n(442837),
   a = n(278323),
   s = n(224706),
@@ -68,7 +68,7 @@ function B(e) {
       location: n
     } = e;
     return (t === (null == V ? void 0 : V.application_id) || t === (null == F ? void 0 : F.applicationId)) && (0, p.pY)(n) === $
-  })), en = (0, o.e7)([L.Z], () => null != V && null != V.application_id && L.Z.getState(V.application_id, j.mFx.JOIN) === j.OcF.LOADING), er = (0, y.q)(q), ei = ((0, g.Z)(V, j.xjy.CONTEXTLESS) || (null == F ? void 0 : F.location.kind) === i.X.CONTEXTLESS) && Q, eo = (0, m.s5)({
+  })), en = (0, o.e7)([L.Z], () => null != V && null != V.application_id && L.Z.getState(V.application_id, j.mFx.JOIN) === j.OcF.LOADING), er = (0, y.q)(q), ei = ((0, g.Z)(V, j.xjy.CONTEXTLESS) || (null == F ? void 0 : F.location.kind) === i.E.CONTEXTLESS) && Q, eo = (0, m.s5)({
     userId: Z.id,
     activity: V,
     channelId: $,
@@ -90,7 +90,7 @@ function B(e) {
   }) : eo === m.Fw.CAN_JOIN), el = (0, o.e7)([d.ZP], () => {
     if (Array.from(d.ZP.getSelfEmbeddedActivities().values()).some(e => e.applicationId === (null == F ? void 0 : F.applicationId) && e.location.id === (null == F ? void 0 : F.location.id))) return !0;
     let e = d.ZP.getCurrentEmbeddedActivity();
-    return null != e && e.applicationId === (null == V ? void 0 : V.application_id) && e.location.kind === i.X.CONTEXTLESS
+    return null != e && e.applicationId === (null == V ? void 0 : V.application_id) && e.location.kind === i.E.CONTEXTLESS
   }), ec = (0, c.O)();
   if (Q && null == F && (null == V || !(0, g.Z)(V, j.xjy.CONTEXTLESS))) return null;
   let eu = !M.isPlatformEmbedded;

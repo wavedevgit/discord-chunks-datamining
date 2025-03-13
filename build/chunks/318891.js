@@ -6,7 +6,7 @@ n.d(t, {
   ZP: () => C,
   jy: () => S
 });
-var i = n(115911),
+var i = n(252258),
   o = n(570140),
   a = n(519938),
   s = n(317770),
@@ -26,7 +26,7 @@ var i = n(115911),
 
 function y(e, t, n) {
   if ((0, m.R)({
-      isContextless: t.location.kind === i.X.CONTEXTLESS
+      isContextless: t.location.kind === i.E.CONTEXTLESS
     }) || d.Z.isOpen(n)) return !1;
   if (null != r) {
     let e = r;

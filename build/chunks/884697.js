@@ -17,6 +17,7 @@ n.d(t, {
   f_: () => T,
   iC: () => x,
   mO: () => G,
+  ne: () => X,
   qS: () => v,
   ql: () => S,
   rN: () => A,
@@ -237,4 +238,12 @@ let E = e => (null == e ? void 0 : e.premiumType) != null,
       available: n.filter(e => !o.has(e.id)),
       purchased: r
     }
+  },
+  X = e => {
+    let {
+      product: t,
+      isPartiallyOwnedBundle: n,
+      isPurchased: r
+    } = e;
+    return !n && !(f.xJ === (null == t ? void 0 : t.skuId) && r)
   }

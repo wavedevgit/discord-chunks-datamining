@@ -2,7 +2,7 @@
 n.d(t, {
   Z: () => P
 }), n(47120), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(789020);
-var r = n(115911),
+var r = n(252258),
   i = n(45792),
   l = n(230711),
   o = n(782568),
@@ -62,7 +62,7 @@ let C = new Set([y.Fu, y.JT]),
             t = e.toString();
           if (m.isPlatformEmbedded) {
             let e = (0, a.R)({
-              isContextless: (null == i ? void 0 : i.location.kind) === r.X.CONTEXTLESS
+              isContextless: (null == i ? void 0 : i.location.kind) === r.E.CONTEXTLESS
             }) ? v.KJ3.ACTIVITY_POPOUT : null;
             h.Z.focus(e, !0)
           }

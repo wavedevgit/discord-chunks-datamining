@@ -4,7 +4,7 @@ i.d(e, {
 }), i(47120), i(653041);
 var n = i(200651);
 i(192379);
-var l = i(115911),
+var l = i(252258),
   o = i(442837),
   a = i(481060),
   d = i(278323),
@@ -191,7 +191,7 @@ function M(t, e) {
         locationObject: tn.location,
         analyticsLocations: M,
         instanceId: e.compositeInstanceId,
-        isContextlessActivity: e.location.kind === l.X.CONTEXTLESS
+        isContextlessActivity: e.location.kind === l.E.CONTEXTLESS
       })
     }, tc = [];
   return null == q || q.forEach(i => {

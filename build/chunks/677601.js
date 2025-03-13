@@ -9,7 +9,7 @@ var r = n(200651),
   a = n(512722),
   s = n.n(a),
   c = n(990547),
-  u = n(115911),
+  u = n(252258),
   d = n(442837),
   p = n(704215),
   h = n(846519),
@@ -526,7 +526,7 @@ class eX extends i.PureComponent {
         null != t && (0, Y.uL)((0, ex.LY)(t)), G.hP(e)
       };
       null == t || (0, I.R)({
-        isContextless: t.location.kind === u.X.CONTEXTLESS
+        isContextless: t.location.kind === u.E.CONTEXTLESS
       }) ? n() : (0, T.Z)(n)
     }), eV(this, "handleStayOnTop", e => {
       (0, eD.v)(A.Z.VOICE_CONTROL_TRAY, eD.d.STAY_ON_TOP, e), G.hY(eH.KJ3.CHANNEL_CALL_POPOUT, e)

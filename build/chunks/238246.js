@@ -9,7 +9,7 @@ var r, i = n(200651),
   s = n(512722),
   c = n.n(s),
   u = n(568611),
-  d = n(115911),
+  d = n(252258),
   f = n(731965),
   m = n(442837),
   p = n(481060),
@@ -251,7 +251,7 @@ class en extends(r = l.Component) {
       else {
         if (!Y.isPlatformEmbedded) return;
         (0, E.R)({
-          isContextless: this.props.connectedEmbeddedActivity.location.kind === d.X.CONTEXTLESS
+          isContextless: this.props.connectedEmbeddedActivity.location.kind === d.E.CONTEXTLESS
         }) ? t(): (e.returnValue = X.NW.string(X.t["bST/Y2"]), (0, S.Z)(() => {
           t()
         }))

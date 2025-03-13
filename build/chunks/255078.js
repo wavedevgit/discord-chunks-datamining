@@ -129,6 +129,10 @@ class h extends o.Z {
   get isEnded() {
     return this.status === c.O0b.ENDED
   }
+  get endedAt() {
+    var e;
+    return this.status !== c.O0b.ENDED ? null : (null === (e = this.metadata) || void 0 === e ? void 0 : e.ended_at) != null ? new Date(this.metadata.ended_at) : this.currentPeriodEnd
+  }
   get isActive() {
     return this.status === c.O0b.ACTIVE
   }

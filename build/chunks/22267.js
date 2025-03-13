@@ -38,24 +38,35 @@ let v = e => {
     children: [null != S && (0, r.jsx)(d.Z, {
       nameplate: S,
       hovered: b
-    }), O ? (0, r.jsx)(c.Z, {
-      avatar: (0, r.jsx)(l.qEK, {
-        src: E,
-        size: l.EFr.SIZE_32,
-        "aria-label": m.NW.string(m.t.cqpybG)
-      }),
-      name: m.NW.string(m.t.cqpybG),
-      selected: !1
-    }) : (0, r.jsx)(c.Z, {
-      avatar: (0, r.jsx)(u.Z, {
-        user: t,
-        guildId: null,
-        avatarSize: l.EFr.SIZE_32,
-        status: y ? T : void 0,
-        "aria-hidden": !0
-      }),
-      name: p.ZP.getName(null, null, t),
-      selected: !1
+    }), (0, r.jsxs)("div", {
+      className: g.overlayContainer,
+      children: [(0, r.jsx)("div", {
+        className: o()(g.avatarContainer, !O && g.avatarVisible),
+        children: (0, r.jsx)(c.Z, {
+          avatar: (0, r.jsx)(u.Z, {
+            user: t,
+            guildId: null,
+            avatarSize: l.EFr.SIZE_32,
+            status: y ? T : void 0,
+            "aria-hidden": !0
+          }),
+          name: p.ZP.getName(null, null, t),
+          innerClassName: g.avatarWithTextInnerClassName,
+          selected: !1
+        })
+      }), (0, r.jsx)("div", {
+        className: o()(g.avatarContainer, O && g.avatarVisible),
+        children: (0, r.jsx)(c.Z, {
+          avatar: (0, r.jsx)(l.qEK, {
+            src: E,
+            size: l.EFr.SIZE_32,
+            "aria-label": m.NW.string(m.t.cqpybG)
+          }),
+          name: m.NW.string(m.t.cqpybG),
+          innerClassName: g.avatarWithTextInnerClassName,
+          selected: !1
+        })
+      })]
     })]
   })
 }

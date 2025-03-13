@@ -9,7 +9,7 @@ var r = n(200651),
   o = n(642128),
   a = n(209739),
   c = n.n(a),
-  d = n(115911),
+  d = n(252258),
   u = n(442837),
   f = n(704215),
   h = n(481060),
@@ -123,7 +123,7 @@ function ec(e) {
     resolution: ex,
     fps: eg,
     soundshareEnabled: ep
-  } = (0, u.cj)([T.Z], () => T.Z.getState()), e_ = l.useRef(Date.now()), ev = (0, u.e7)([k.Z, E.Z], () => E.Z.getChannel(k.Z.getVoiceChannelId())), ej = (0, u.e7)([Z.ZP, M.Z], () => (0, G.isWindows)() ? (0, J.Z)(Z.ZP, M.Z) : null), eb = (0, u.e7)([v.ZP], () => v.ZP.getCurrentEmbeddedActivity()), eC = (null == eb ? void 0 : eb.location.kind) === d.X.CONTEXTLESS, eS = (0, C.q)(null == eb ? void 0 : eb.applicationId), [eN, ey] = l.useState(null);
+  } = (0, u.cj)([T.Z], () => T.Z.getState()), e_ = l.useRef(Date.now()), ev = (0, u.e7)([k.Z, E.Z], () => E.Z.getChannel(k.Z.getVoiceChannelId())), ej = (0, u.e7)([Z.ZP, M.Z], () => (0, G.isWindows)() ? (0, J.Z)(Z.ZP, M.Z) : null), eb = (0, u.e7)([v.ZP], () => v.ZP.getCurrentEmbeddedActivity()), eC = (null == eb ? void 0 : eb.location.kind) === d.E.CONTEXTLESS, eS = (0, C.q)(null == eb ? void 0 : eb.applicationId), [eN, ey] = l.useState(null);
   l.useEffect(() => {
     (0, _.R)({
       isContextless: eC

@@ -5,7 +5,7 @@ n.d(t, {
   ZP: () => eA,
   i6: () => w
 }), n(47120), n(653041), n(51350);
-var i, o = n(115911),
+var i, o = n(252258),
   a = n(442837),
   s = n(570140),
   l = n(911969),
@@ -276,7 +276,7 @@ function eo(e) {
     embeddedActivity: L,
     inviterUserId: A
   }), (0, m.R)({
-    isContextless: c.kind === o.X.CONTEXTLESS
+    isContextless: c.kind === o.E.CONTEXTLESS
   }) ? (q = S.Ez.ACTIVITY_POPOUT_WINDOW, s.Z.wait(() => {
     s.Z.dispatch({
       type: "ACTIVITY_POPOUT_WINDOW_OPEN"

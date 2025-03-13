@@ -5,7 +5,7 @@ n.d(t, {
 }), n(47120);
 var r = n(200651);
 n(192379);
-var i = n(115911),
+var i = n(252258),
   o = n(481060),
   a = n(570140),
   s = n(468026),
@@ -83,7 +83,7 @@ class y extends f.Z {
         showFeedback: r
       })
     }), (0, u.R)({
-      isContextless: t.kind === i.X.CONTEXTLESS
+      isContextless: t.kind === i.E.CONTEXTLESS
     }) && (0, c.xv)(m.KJ3.ACTIVITY_POPOUT)
   }
   hidePIPEmbed(e) {

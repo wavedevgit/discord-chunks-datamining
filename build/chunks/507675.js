@@ -13,8 +13,9 @@ function s(e) {
   let {
     mainText: t,
     supportingText: n,
-    children: s,
-    size: l
+    errorCodeText: s,
+    children: l,
+    size: c
   } = e;
   return (0, r.jsxs)(i.Z, {
     className: a.root,
@@ -24,7 +25,8 @@ function s(e) {
     children: [(0, r.jsx)(o.Z, {
       header: t,
       description: n,
-      size: l
-    }), s]
+      errorCodeMessage: s,
+      size: c
+    }), l]
   })
 }

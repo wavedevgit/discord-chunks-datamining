@@ -1,6 +1,6 @@
 /**
   Module ID: 39251
-  Original File Name: 18e8e244244ae9cc
+  Original File Name: ed5274bc740285dc
 **/
 .image__04666 {
     width: 100%;
@@ -2271,9 +2271,12 @@ span.clanTag__07f91.isOverlay__07f91 {
     border-radius: 8px
 }
 
+.button_cb3698.loopbackEnabled_cb3698 {
+    background: hsla(0,0%,100%,.08)
+}
+
 .button_cb3698:hover {
-    border-radius: 8px;
-    background: hsla(0,0%,100%,.08);
+    background: hsla(0,0%,100%,.1);
     opacity: 1
 }
 

@@ -1,6 +1,6 @@
 /**
   Module ID: 2026
-  Original File Name: 20480aee975a3a52
+  Original File Name: b686b783b284dfe8
 **/
 .buttonContent_a83ec9 {
     width: 24px;
@@ -48,6 +48,10 @@
 .lightText__12f17 {
     color: var(--white-500);
     border-color: var(--white-500)
+}
+
+.container_c368fe {
+    pointer-events: none
 }
 
 .priceLine__794a8 {

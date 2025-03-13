@@ -3,7 +3,7 @@
 n.d(t, {
   Z: () => O
 });
-var r = n(115911),
+var r = n(252258),
   i = n(812206),
   o = n(592125),
   a = n(944486),
@@ -56,7 +56,7 @@ async function I(e) {
   if (!(0, u.sq)() && (null == j || G && !j.isPrivate() || null == c)) return Promise.resolve(!1);
   let V = f.ZP.getCurrentEmbeddedActivity();
   (null == V ? void 0 : V.applicationId) != null && (t = i.Z.getApplication(null == V ? void 0 : V.applicationId));
-  let F = (null == V ? void 0 : V.location.kind) === r.X.CONTEXTLESS;
+  let F = (null == V ? void 0 : V.location.kind) === r.E.CONTEXTLESS;
   if ((F || a.Z.getVoiceChannelId() === c) && null != V && V.applicationId === n && (F || (0, h.pY)(V.location) === a.Z.getVoiceChannelId())) return (0, b.Z)(U, V.location), Promise.resolve(!0);
   let Z = await (0, m.Z)(n, c),
     H = (0, u.Kb)(Z);

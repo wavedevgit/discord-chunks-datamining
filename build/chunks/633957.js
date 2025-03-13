@@ -4,7 +4,7 @@ n.d(t, {
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
-  a = n(115911),
+  a = n(252258),
   o = n(442837),
   l = n(846519),
   s = n(481060),
@@ -108,7 +108,7 @@ let B = i.memo(function(e) {
       analyticsLocations: B,
       componentId: ei,
       instanceId: null == K ? void 0 : K.compositeInstanceId,
-      isContextlessActivity: (null == K ? void 0 : K.location.kind) === a.X.CONTEXTLESS
+      isContextlessActivity: (null == K ? void 0 : K.location.kind) === a.E.CONTEXTLESS
     })
   }, el = er.disabled ? W.NW.string(W.t.JBnc7O) : W.NW.string(W.t.cX9uLS), {
     enabled: es

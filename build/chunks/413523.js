@@ -7,7 +7,7 @@ n.d(t, {
   sI: () => w
 }), n(301563), n(47120), n(653041);
 var r = n(392711),
-  i = n(115911),
+  i = n(252258),
   o = n(759174),
   a = n(586902),
   s = n(636449),
@@ -170,7 +170,7 @@ class D {
     {
       let e = (0, r.uniqBy)([...n, o], e => e.compositeInstanceId);
       return (null === (t = o.participants) || void 0 === t ? void 0 : t.some(e => e.sessionId === d.default.getSessionId())) && (0, s.R)({
-        isContextless: o.location.kind === i.X.CONTEXTLESS
+        isContextless: o.location.kind === i.E.CONTEXTLESS
       }) ? e.filter(e => e.applicationId !== o.applicationId && e.compositeInstanceId !== o.compositeInstanceId) : e
     }
   }

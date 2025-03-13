@@ -17,7 +17,7 @@ function u(e) {
     className: n
   } = e, u = (0, o.Z)(t), d = null == u ? void 0 : u.message, {
     avErrorUIEnabled: f
-  } = (0, l.J)({
+  } = (0, l.JN)({
     location: "StreamWarning"
   }), m = f ? function(e) {
     if (null != e) {

@@ -252,7 +252,9 @@ function N(e) {
           className: b.buttonWrapper,
           style: F[0],
           children: (0, r.jsx)(c.P3F, y(v({
-            className: b.button,
+            className: o()(b.button, {
+              [b.loopbackEnabled]: I
+            }),
             "aria-hidden": R,
             focusProps: {
               enabled: k
