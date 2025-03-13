@@ -18,8 +18,8 @@ function u(e) {
     otherUser: a,
     status: u
   } = e, m = (0, l.j_)(a.id, u), {
-    avatarSrc: p,
-    avatarDecorationSrc: g,
+    avatarSrc: g,
+    avatarDecorationSrc: p,
     eventHandlers: h
   } = (0, s.Z)({
     user: a,
@@ -47,8 +47,8 @@ function u(e) {
     }({}, h), n = n = {
       children: (0, r.jsx)(d, {
         className: c.avatar,
-        src: p,
-        avatarDecoration: g,
+        src: g,
+        avatarDecoration: p,
         size: i.EFr.SIZE_40,
         "aria-label": a.username
       })

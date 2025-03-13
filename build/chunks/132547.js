@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(906732),
   u = n(464824),
   m = n(214852),
-  p = n(626135),
-  g = n(533525),
+  g = n(626135),
+  p = n(533525),
   h = n(314684),
   f = n(794484),
   b = n(536844),
-  N = n(342414),
-  x = n(615042),
+  x = n(342414),
+  N = n(615042),
   _ = n(391110),
   E = n(71363),
   j = n(781800),
@@ -27,7 +27,7 @@ var r = n(200651),
   v = n(951084),
   S = n(865215);
 let T = () => {
-  (0, m.z)(u.X), (0, x.u)();
+  (0, m.z)(u.X), (0, N.u)();
   let e = i.useRef(null),
     [t, n] = i.useState(!1),
     {
@@ -35,7 +35,7 @@ let T = () => {
     } = (0, d.ZP)(c.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
     [T, I] = i.useState(!1);
   (0, h.FM)();
-  let y = (0, g.b)("SubscriberNitroHome"),
+  let y = (0, p.b)("SubscriberNitroHome"),
     A = "true" === new URLSearchParams(window.location.search).get("autoScroll");
   return window.history.replaceState({}, "", window.location.pathname), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.yWw, {
@@ -45,7 +45,7 @@ let T = () => {
         className: v.container,
         children: (0, r.jsxs)(d.Gt, {
           value: s,
-          children: [(0, r.jsx)(N.Z, {
+          children: [(0, r.jsx)(x.Z, {
             className: v.heroHeading,
             location: _.MQ.HOME
           }), (0, r.jsx)(f.Z, {
@@ -75,7 +75,7 @@ let T = () => {
             className: v.footerSpacing
           }), (0, r.jsx)(l.$, {
             onChange: e => {
-              e && !T && (p.default.track(C.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+              e && !T && (g.default.track(C.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                 location_stack: s
               }), I(!0))
             },

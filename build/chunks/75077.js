@@ -3,8 +3,8 @@ n.d(t, {
   Dp: () => h,
   Gw: () => b,
   Op: () => C,
-  gx: () => x,
-  iG: () => N,
+  gx: () => N,
+  iG: () => x,
   mN: () => O,
   oo: () => f,
   sP: () => j
@@ -19,57 +19,57 @@ var r = n(278074),
   d = n(575595),
   u = n(391110),
   m = n(474936),
-  p = n(735825),
-  g = n(388032);
+  g = n(735825),
+  p = n(388032);
 let h = e => {
     switch (e) {
-      case p.EB.PENDING:
-        return g.NW.string(g.t["9o4F4+"]);
-      case p.EB.REDEEMABLE:
-      case p.EB.REDEEMED:
-        return g.NW.string(g.t["3R9pPD"]);
+      case g.EB.PENDING:
+        return p.NW.string(p.t["9o4F4+"]);
+      case g.EB.REDEEMABLE:
+      case g.EB.REDEEMED:
+        return p.NW.string(p.t["3R9pPD"]);
       default:
         return ""
     }
   },
   f = e => {
     switch (e) {
-      case p.EB.PENDING:
-        return g.NW.string(g.t.nlcs6O);
-      case p.EB.REDEEMABLE:
-      case p.EB.REDEEMED:
-        return g.NW.string(g.t.F915ra);
+      case g.EB.PENDING:
+        return p.NW.string(p.t.nlcs6O);
+      case g.EB.REDEEMABLE:
+      case g.EB.REDEEMED:
+        return p.NW.string(p.t.F915ra);
       default:
         return
     }
   },
   b = e => {
     switch (e) {
-      case p.EB.PENDING:
-        return g.NW.string(g.t.LAFMBQ);
-      case p.EB.REDEEMABLE:
-      case p.EB.REDEEMED:
-        return g.NW.string(g.t["4cCWPT"]);
+      case g.EB.PENDING:
+        return p.NW.string(p.t.LAFMBQ);
+      case g.EB.REDEEMABLE:
+      case g.EB.REDEEMED:
+        return p.NW.string(p.t["4cCWPT"]);
       default:
         return
     }
   };
 
-function N(e, t) {
+function x(e, t) {
   switch (e) {
-    case p.EB.PENDING:
-      return null != t ? g.NW.formatToPlainString(g.t.a1eKDg, {
+    case g.EB.PENDING:
+      return null != t ? p.NW.formatToPlainString(p.t.a1eKDg, {
         days: t
       }) : "";
-    case p.EB.REDEEMABLE:
-      return g.NW.string(g.t.B9eJyc);
-    case p.EB.REDEEMED:
-      return g.NW.string(g.t.hpy7PD);
+    case g.EB.REDEEMABLE:
+      return p.NW.string(p.t.B9eJyc);
+    case g.EB.REDEEMED:
+      return p.NW.string(p.t.hpy7PD);
     default:
       return ""
   }
 }
-let x = (e, t, n) => (0, s.wj)(e) ? t : n,
+let N = (e, t, n) => (0, s.wj)(e) ? t : n,
   _ = "getWhatsNewRow",
   E = e => {
     let {
@@ -181,14 +181,14 @@ let x = (e, t, n) => (0, s.wj)(e) ? t : n,
       n = null != t ? o.ZP.getPremiumPlanItem(t) : null,
       r = (null != n ? o.ZP.getSkuIdForPlan(n.planId) : null) === m.Si.TIER_2;
     return e ? r ? {
-      title: g.NW.string(g.t.Aw5DRk),
-      subtitle: g.NW.string(g.t.aHdO6u)
+      title: p.NW.string(p.t.Aw5DRk),
+      subtitle: p.NW.string(p.t.aHdO6u)
     } : {
-      title: g.NW.string(g.t.N30YEx),
-      subtitle: g.NW.string(g.t.GTUdNT)
+      title: p.NW.string(p.t.N30YEx),
+      subtitle: p.NW.string(p.t.GTUdNT)
     } : {
-      title: g.NW.string(g.t["Uh3+CA"]),
-      subtitle: g.NW.string(g.t["5TFEXl"])
+      title: p.NW.string(p.t["Uh3+CA"]),
+      subtitle: p.NW.string(p.t["5TFEXl"])
     }
   },
   O = () => {

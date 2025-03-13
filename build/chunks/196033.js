@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  W: () => p
+  W: () => g
 });
 var r = n(192379),
   i = n(115434),
@@ -12,11 +12,11 @@ var r = n(192379),
   d = n(388032),
   u = n(786792),
   m = n(161594);
-let p = () => {
+let g = () => {
   let e = (0, o.z)(c.Fr.UPSELL_BANNER),
     t = (0, o.z)(c.Fr.UPSELL_BANNER_POPOUT),
     n = (0, a.e7)([l.Z], () => l.Z.getMarketingBySurface(i.K.EDIT_PROFILE_SETTINGS)),
-    p = r.useMemo(() => null != n ? n : {
+    g = r.useMemo(() => null != n ? n : {
       asset: u,
       popoutAsset: m,
       title: d.NW.string(d.t["4Emkur"]),
@@ -43,10 +43,10 @@ let p = () => {
         })
       }
       return e
-    }({}, p), r = r = {
+    }({}, g), r = r = {
       type: s.Z.BANNER,
-      asset: null != e ? e : p.asset,
-      popoutAsset: null != t ? t : p.popoutAsset
+      asset: null != e ? e : g.asset,
+      popoutAsset: null != t ? t : g.popoutAsset
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -57,5 +57,5 @@ let p = () => {
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
     }), n
-  }, [e, t, p])
+  }, [e, t, g])
 }

@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(607070),
   u = n(100527),
   m = n(906732),
-  p = n(975298),
-  g = n(626135),
+  g = n(975298),
+  p = n(626135),
   h = n(695349),
   f = n(103433),
   b = n(166021),
-  N = n(32173),
-  x = n(391110),
+  x = n(32173),
+  N = n(391110),
   _ = n(75077),
   E = n(981631),
   j = n(388032),
@@ -32,7 +32,7 @@ let v = e => {
       isFullScreen: T
     } = e,
     I = i.useRef(null),
-    y = Object.entries((0, N.Z)()).reduce((e, t) => {
+    y = Object.entries((0, x.Z)()).reduce((e, t) => {
       let [n, r] = t;
       return !1 !== r.canReveal && "upcomingDropUntimed" !== r.name && (e[n] = r), e
     }, {}),
@@ -44,7 +44,7 @@ let v = e => {
     Z = (0, _.mN)(),
     {
       fractionalState: w
-    } = (0, p.Z)(),
+    } = (0, g.Z)(),
     k = (0, h.W)();
   return Z ? (t = j.NW.string(j.t["+vt7w8"]), n = j.NW.string(j.t.LgHbnJ)) : (t = j.NW.string(j.t.LgHbnJ), n = j.NW.string(j.t["+vt7w8"])), (0, r.jsx)(c.yWw, {
     className: a()(C.allPerksScroller, {
@@ -59,8 +59,8 @@ let v = e => {
         children: [(0, r.jsx)(f.Z, {
           className: C.heroHeading,
           onBackClick: () => {
-            v(!1), g.default.track(E.rMx.NITRO_HOME_NAVIGATION, {
-              current_component: x.MQ.SEE_ALL,
+            v(!1), p.default.track(E.rMx.NITRO_HOME_NAVIGATION, {
+              current_component: N.MQ.SEE_ALL,
               next_component: S,
               interaction_component: "Back Button"
             })
@@ -76,13 +76,13 @@ let v = e => {
             className: C.cardCarousel,
             cards: (0, _.sP)({
               perksCards: y,
-              variant: x.R0.CARD_CAROUSEL_FIRST_ROW,
+              variant: N.R0.CARD_CAROUSEL_FIRST_ROW,
               isPremiumSubscriber: Z,
               isFullScreen: T,
               fractionalState: w,
               isInReverseTrial: k
             }),
-            cardType: x.R0.CARD_CAROUSEL_FIRST_ROW
+            cardType: N.R0.CARD_CAROUSEL_FIRST_ROW
           }), (0, r.jsx)(c.X6q, {
             variant: "heading-xxl/extrabold",
             color: "header-primary",
@@ -92,13 +92,13 @@ let v = e => {
             className: C.cardCarousel,
             cards: (0, _.sP)({
               perksCards: y,
-              variant: x.R0.CARD_CAROUSEL_SECOND_ROW,
+              variant: N.R0.CARD_CAROUSEL_SECOND_ROW,
               isPremiumSubscriber: Z,
               isFullScreen: T,
               fractionalState: w,
               isInReverseTrial: k
             }),
-            cardType: x.R0.CARD_CAROUSEL_SECOND_ROW
+            cardType: N.R0.CARD_CAROUSEL_SECOND_ROW
           }), (0, r.jsx)(c.X6q, {
             variant: "heading-xxl/extrabold",
             color: "header-primary",
@@ -108,19 +108,19 @@ let v = e => {
             className: C.cardCarousel,
             cards: (0, _.sP)({
               perksCards: y,
-              variant: x.R0.CARD_CAROUSEL_THIRD_ROW,
+              variant: N.R0.CARD_CAROUSEL_THIRD_ROW,
               isPremiumSubscriber: Z,
               isFullScreen: T,
               fractionalState: w,
               isInReverseTrial: k
             }),
-            cardType: x.R0.CARD_CAROUSEL_THIRD_ROW
+            cardType: N.R0.CARD_CAROUSEL_THIRD_ROW
           })]
         }), (0, r.jsx)("div", {
           className: C.footerSpacing
         }), (0, r.jsx)(o.$, {
           onChange: e => {
-            e && !P && (g.default.track(E.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+            e && !P && (p.default.track(E.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
               location_stack: A
             }), R(!0))
           },

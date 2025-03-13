@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(1585),
   u = n(580747),
   m = n(345861),
-  p = n(150039),
-  g = n(993413),
+  g = n(150039),
+  p = n(993413),
   h = n(388032),
   f = n(309277);
 
@@ -24,7 +24,7 @@ function b(e) {
     className: s,
     sectionTitle: m,
     forcedDivider: b = !1,
-    withTutorial: x = !1,
+    withTutorial: N = !1,
     isTryItOutFlow: _ = !1
   } = e, {
     analyticsLocations: E
@@ -33,12 +33,12 @@ function b(e) {
     guildAvatarDecoration: O,
     pendingAvatarDecoration: v,
     pendingErrors: S
-  } = (0, p.$U)(t, n), T = (0, u.Z)("enable_avatar_decoration_uploads"), I = i.useCallback(() => (0, d.ps)({
+  } = (0, g.$U)(t, n), T = (0, u.Z)("enable_avatar_decoration_uploads"), I = i.useCallback(() => (0, d.ps)({
     analyticsLocations: E,
     isTryItOutFlow: _,
     guild: n
-  }), [E, _, n]), y = _ || void 0 !== v ? null != v : (j ? O : C) != null, A = x ? l.gtL : l.zxk;
-  return (0, r.jsxs)(g.Z, {
+  }), [E, _, n]), y = _ || void 0 !== v ? null != v : (j ? O : C) != null, A = N ? l.gtL : l.zxk;
+  return (0, r.jsxs)(p.Z, {
     className: s,
     forcedDivider: b,
     hasBackground: !0,
@@ -50,7 +50,7 @@ function b(e) {
         size: l.zxk.Sizes.SMALL,
         onClick: I,
         className: a()({
-          [f.buttonHighlighted]: x
+          [f.buttonHighlighted]: N
         }),
         children: h.NW.string(h.t["Tna/TU"])
       }), y && (0, r.jsx)(l.zxk, {
@@ -59,16 +59,16 @@ function b(e) {
         look: l.zxk.Looks.LINK,
         size: l.zxk.Sizes.SMALL,
         onClick: function() {
-          (0, p.PO)(null == n ? void 0 : n.id, null)
+          (0, g.PO)(null == n ? void 0 : n.id, null)
         },
         children: (0, c.ad)(t, n) ? h.NW.string(h.t["GsW4/v"]) : h.NW.string(h.t.GReZ6O)
       })]
-    }), t.isStaff() && T && (0, r.jsx)(N, {
+    }), t.isStaff() && T && (0, r.jsx)(x, {
       user: t
     })]
   })
 }
-let N = e => {
+let x = e => {
   let {
     user: t
   } = e;

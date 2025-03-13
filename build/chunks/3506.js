@@ -13,13 +13,13 @@ var i = n(512722),
   d = n(660216),
   u = n(13245),
   m = n(825209),
-  p = n(887278),
-  g = n(594190),
+  g = n(887278),
+  p = n(594190),
   h = n(212632),
   f = n(444295),
   b = n(809357),
-  N = n(371651),
-  x = n(957148),
+  x = n(371651),
+  N = n(957148),
   _ = n(556296),
   E = n(808506),
   j = n(237997),
@@ -68,7 +68,7 @@ function P(e) {
   } = e, {
     oopEnabled: i,
     legacyEnabled: a
-  } = (0, o.cj)([N.default], () => N.default.getGlobalEnabledStatus()), {
+  } = (0, o.cj)([x.default], () => x.default.getGlobalEnabledStatus()), {
     avatarSizeMode: E,
     displayNameMode: O,
     displayUserMode: P,
@@ -84,7 +84,7 @@ function P(e) {
     shouldShowKeybindIndicators: j.default.showKeybindIndicators
   })), w = (0, o.e7)([_.ZP], () => _.ZP.getOverlayKeybind()), k = (0, b.Z)({
     location: "overlay_user_settings"
-  }), W = (0, p.$1)();
+  }), W = (0, g.$1)();
   return ! function() {
     let e = y(I);
     l().isEqual(e, I) || (C.default.track(v.rMx.OVERLAY_SETTINGS_UPDATED, e), I = e)
@@ -107,8 +107,8 @@ function P(e) {
             onChange: function(e) {
               var t, n;
               u.Z.setEnabled(e, i);
-              let r = null !== (n = null === (t = g.ZP.getCurrentGameForAnalytics()) || void 0 === t ? void 0 : t.id) && void 0 !== n ? n : null;
-              (0, f.ou)(e, f.AE.LEGACY, r), !e && a && (0, x.l)(f.AE.LEGACY, r)
+              let r = null !== (n = null === (t = p.ZP.getCurrentGameForAnalytics()) || void 0 === t ? void 0 : t.id) && void 0 !== n ? n : null;
+              (0, f.ou)(e, f.AE.LEGACY, r), !e && a && (0, N.l)(f.AE.LEGACY, r)
             },
             children: S.NW.string(S.t.vSP6c3)
           })

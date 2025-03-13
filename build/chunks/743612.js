@@ -15,20 +15,20 @@ let o = e => {
     shouldShowElement: d,
     cardVariantStyleInfo: u,
     description: m,
-    titleClassName: p = "",
-    subtitle: g = "",
+    titleClassName: g = "",
+    subtitle: p = "",
     subtitleClassName: h
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-xl/extrabold",
-      className: s()(l.cardHeading, p),
+      className: s()(l.cardHeading, g),
       children: c
-    }), "" !== g && (null == d || d(null == u ? void 0 : u.subtitle)) && (0, r.jsxs)("div", {
+    }), "" !== p && (null == d || d(null == u ? void 0 : u.subtitle)) && (0, r.jsxs)("div", {
       className: h,
       children: [(0, r.jsx)(a.Text, {
         variant: null !== (i = null == u ? void 0 : null === (t = u.subtitle) || void 0 === t ? void 0 : t.textVariant) && void 0 !== i ? i : "text-sm/normal",
-        children: g
+        children: p
       }), null != m && (0, r.jsx)(a.Text, {
         variant: null !== (o = null == u ? void 0 : null === (n = u.description) || void 0 === n ? void 0 : n.textVariant) && void 0 !== o ? o : "text-sm/normal",
         children: (0, r.jsxs)(r.Fragment, {

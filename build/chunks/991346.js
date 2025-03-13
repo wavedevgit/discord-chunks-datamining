@@ -16,13 +16,13 @@ var r = n(192379),
   d = n(706140),
   u = n(402234),
   m = n(319828),
-  p = n(592204),
-  g = n(610697),
+  g = n(592204),
+  p = n(610697),
   h = n(880257),
   f = n(631885),
   b = n(223639),
-  N = n(160913),
-  x = n(725727),
+  x = n(160913),
+  N = n(725727),
   _ = n(977156),
   E = n(922611),
   j = n(921157),
@@ -78,8 +78,8 @@ function M(e) {
 
 function U() {
   var e, t, n, a;
-  let P = (0, x.YO)().length,
-    k = (0, N.U)(),
+  let P = (0, N.YO)().length,
+    k = (0, x.U)(),
     W = (0, i.e7)([I.Z], () => I.Z.getProps().impressionSource),
     B = (0, f.gU)(),
     M = (0, w.bC)(),
@@ -97,7 +97,7 @@ function U() {
     shouldMergeGameSettings: F
   } = A.b.useExperiment({
     location: "settings"
-  }), H = (0, p.Xo)({
+  }), H = (0, g.Xo)({
     location: "settings"
   }), z = null !== (n = null === (e = y.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff()) && void 0 !== n && n, Y = (0, O.y0)({
     location: "settings"
@@ -111,7 +111,7 @@ function U() {
     location: "UserSettingsInventory"
   }, {
     autoTrackExposure: !0
-  }), Q = (0, i.e7)([S.Z], () => S.Z.hasLibraryApplication()), $ = (0, i.e7)([v.default], () => v.default.hasTOTPEnabled()), ee = R.Sb.useSetting(), et = (0, g.Z)(), {
+  }), Q = (0, i.e7)([S.Z], () => S.Z.hasLibraryApplication()), $ = (0, i.e7)([v.default], () => v.default.hasTOTPEnabled()), ee = R.Sb.useSetting(), et = (0, p.Z)(), {
     hypeSquadRemoved: en
   } = m.Z.useExperiment({
     location: "settings"

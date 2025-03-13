@@ -13,14 +13,14 @@ var i = n(120356),
   d = n(70097),
   u = n(198758),
   m = n(803812),
-  p = n(477154),
-  g = n(230114);
+  g = n(477154),
+  p = n(230114);
 let h = () => {
     let e = (0, l.e7)([c.Z], () => c.Z.useReducedMotion);
     return (0, r.jsx)("div", {
       className: u.assetContainer,
       children: e ? (0, r.jsx)("img", {
-        src: p.Z,
+        src: g.Z,
         className: u.orbAsset,
         alt: "Orb"
       }) : (0, r.jsxs)(d.Z, {
@@ -28,10 +28,10 @@ let h = () => {
         loop: !0,
         className: u.orbAsset,
         children: [(0, r.jsx)("source", {
-          src: g.Z,
+          src: p.Z,
           type: "video/webm"
         }), (0, r.jsx)("img", {
-          src: p.Z,
+          src: g.Z,
           className: u.orbAsset,
           alt: "Orb"
         })]

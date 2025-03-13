@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  I: () => x
+  I: () => N
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -13,27 +13,27 @@ var i = n(722770),
   d = n(70956),
   u = n(51144),
   m = n(246133),
-  p = n(981631),
-  g = n(388032),
+  g = n(981631),
+  p = n(388032),
   h = n(652480);
 let f = [{
   duration: 30 * d.Z.Millis.MINUTE,
-  label: () => g.NW.string(g.t.RxJGbG)
+  label: () => p.NW.string(p.t.RxJGbG)
 }, {
   duration: d.Z.Millis.HOUR,
-  label: () => g.NW.string(g.t.UMWBZm)
+  label: () => p.NW.string(p.t.UMWBZm)
 }, {
   duration: 3 * d.Z.Millis.HOUR,
-  label: () => g.NW.string(g.t.QmYWtr)
+  label: () => p.NW.string(p.t.QmYWtr)
 }, {
   duration: 8 * d.Z.Millis.HOUR,
-  label: () => g.NW.string(g.t.EpAXPD)
+  label: () => p.NW.string(p.t.EpAXPD)
 }, {
   duration: d.Z.Millis.DAY,
-  label: () => g.NW.string(g.t["755t4u"])
+  label: () => p.NW.string(p.t["755t4u"])
 }, {
   duration: void 0,
-  label: () => g.NW.string(g.t["46dqJS"])
+  label: () => p.NW.string(p.t["46dqJS"])
 }];
 
 function b(e) {
@@ -83,11 +83,11 @@ function b(e) {
     },
     action: () => (0, m.Z)(t, n, void 0, a ? d.Z.Millis.DAY : void 0),
     dontCloseOnAction: !0,
-    children: t !== p.Skl.ONLINE ? l : void 0
+    children: t !== g.Skl.ONLINE ? l : void 0
   })
 }
 
-function N(e, t, n) {
+function x(e, t, n) {
   return (0, r.jsx)(s.sNh, {
     id: e,
     keepItemStyles: !0,
@@ -116,7 +116,7 @@ function N(e, t, n) {
   })
 }
 
-function x(e) {
+function N(e) {
   let {
     expiringStatus: t,
     defaultClickExpire: n
@@ -124,9 +124,9 @@ function x(e) {
     location: "AccountProfilePopout"
   }), d = c.Cr.useSetting(), u = (0, l.p)(), m = o.e.useExperiment({
     location: "AccountProfilePopout"
-  }).allowQuietMode || u, x = c.fv.useSetting(), _ = e === p.Skl.DND, E = t => {
-    let n = null != d && "0" !== d ? g.NW.formatToPlainString(g.t.BWD8fn, {
-      endTime: new Date(Number(d)).toLocaleString(g.NW.currentLocale, {
+  }).allowQuietMode || u, N = c.fv.useSetting(), _ = e === g.Skl.DND, E = t => {
+    let n = null != d && "0" !== d ? p.NW.formatToPlainString(p.t.BWD8fn, {
+      endTime: new Date(Number(d)).toLocaleString(p.NW.currentLocale, {
         month: "numeric",
         day: "numeric",
         hour: "numeric",
@@ -135,10 +135,10 @@ function x(e) {
     }) : void 0;
     if (e === t && null != n) return n;
     switch (t) {
-      case p.Skl.DND:
-        return m ? g.NW.string(g.t.day5Aw) : g.NW.string(g.t.U9Vv19);
-      case p.Skl.INVISIBLE:
-        return g.NW.string(g.t.MqanVF);
+      case g.Skl.DND:
+        return m ? p.NW.string(p.t.day5Aw) : p.NW.string(p.t.U9Vv19);
+      case g.Skl.INVISIBLE:
+        return p.NW.string(p.t.MqanVF);
       default:
         return
     }
@@ -159,22 +159,22 @@ function x(e) {
     })
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [N(p.Skl.ONLINE, e), (0, r.jsx)(s.Clw, {}, "menu-separator-statuses"), t ? b({
-      status: p.Skl.IDLE,
+    children: [x(g.Skl.ONLINE, e), (0, r.jsx)(s.Clw, {}, "menu-separator-statuses"), t ? b({
+      status: g.Skl.IDLE,
       currentStatus: e,
-      description: E(p.Skl.IDLE),
+      description: E(g.Skl.IDLE),
       defaultClickExpire: n
-    }) : N(p.Skl.IDLE, e, E(p.Skl.IDLE)), t ? b({
-      status: p.Skl.DND,
+    }) : x(g.Skl.IDLE, e, E(g.Skl.IDLE)), t ? b({
+      status: g.Skl.DND,
       currentStatus: e,
-      description: E(p.Skl.DND),
+      description: E(g.Skl.DND),
       defaultClickExpire: n
-    }) : N(p.Skl.DND, e, E(p.Skl.DND)), t ? b({
-      status: p.Skl.INVISIBLE,
+    }) : x(g.Skl.DND, e, E(g.Skl.DND)), t ? b({
+      status: g.Skl.INVISIBLE,
       currentStatus: e,
-      description: E(p.Skl.INVISIBLE),
+      description: E(g.Skl.INVISIBLE),
       defaultClickExpire: n
-    }) : N(p.Skl.INVISIBLE, e, E(p.Skl.INVISIBLE)), m || u ? (0, r.jsxs)(r.Fragment, {
+    }) : x(g.Skl.INVISIBLE, e, E(g.Skl.INVISIBLE)), m || u ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.Clw, {}, "menu-separator-statuses"), (0, r.jsx)(s.sNh, {
         id: "quiet-mode",
         "aria-label": "focus mode",
@@ -188,20 +188,20 @@ function x(e) {
             className: h.icon
           }), (0, r.jsxs)("div", {
             className: h.focusModeTitle,
-            children: [g.NW.string(g.t.gJRnwM), (0, r.jsx)(s.IGR, {
-              text: u ? g.NW.string(g.t.ApAu9f) : _ ? g.NW.string(g.t.gH3Fra) : g.NW.string(g.t["64pl8/"]),
+            children: [p.NW.string(p.t.gJRnwM), (0, r.jsx)(s.IGR, {
+              text: u ? p.NW.string(p.t.ApAu9f) : _ ? p.NW.string(p.t.gH3Fra) : p.NW.string(p.t["64pl8/"]),
               color: u ? i.Z.BRAND_500 : _ ? i.Z.RED_400 : i.Z.PRIMARY_500
             })]
           }), (0, r.jsx)("div", {
             className: h.description,
-            children: u && null != x && "0" !== x ? g.NW.formatToPlainString(g.t.BWD8fn, {
-              endTime: new Date(Number(x)).toLocaleString(g.NW.currentLocale, {
+            children: u && null != N && "0" !== N ? p.NW.formatToPlainString(p.t.BWD8fn, {
+              endTime: new Date(Number(N)).toLocaleString(p.NW.currentLocale, {
                 month: "numeric",
                 day: "numeric",
                 hour: "numeric",
                 minute: "2-digit"
               })
-            }) : g.NW.string(g.t["Br1q+/"])
+            }) : p.NW.string(p.t["Br1q+/"])
           })]
         }),
         action: () => {

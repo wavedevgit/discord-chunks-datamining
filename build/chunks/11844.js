@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(709586),
   u = n(267642),
   m = n(981631),
-  p = n(388032),
-  g = n(194072);
+  g = n(388032),
+  p = n(194072);
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -55,7 +55,7 @@ let b = function() {
       fractionalState: b
     } = (0, l.Z)();
 
-  function N(n) {
+  function x(n) {
     null != e.current && (0, s.Mr3)(e.current), (0, c.u)({
       analyticsLocation: {
         page: m.ZY5.GUILD_BOOSTING_USER_SETTINGS,
@@ -67,13 +67,13 @@ let b = function() {
       guild: n
     })
   }
-  async function x() {
+  async function N() {
     e.current = await (0, s.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 719228));
       return t => (0, r.jsx)(e, f(h({}, t), {
-        onSelectGuild: N
+        onSelectGuild: x
       }))
     }, {
       onCloseRequest: () => {
@@ -85,24 +85,24 @@ let b = function() {
     fractionalState: b
   });
   return (0, r.jsxs)("div", {
-    className: g.wrapper,
+    className: p.wrapper,
     children: [(0, r.jsx)(d.Z, {
-      className: g.boostIcon,
+      className: p.boostIcon,
       width: 16,
       height: 16
     }), (0, r.jsx)(s.Text, {
-      className: g.copy,
+      className: p.copy,
       color: "header-secondary",
       variant: "text-sm/medium",
-      children: p.NW.format(p.t.kqC5vr, {
+      children: g.NW.format(g.t.kqC5vr, {
         boostAnyGuildHook: (e, t) => {
           let n = null != _,
             i = (0, r.jsx)(s.zxk, {
-              className: g.cta,
+              className: p.cta,
               disabled: n,
               color: s.zxk.Colors.LINK,
               look: s.zxk.Looks.LINK,
-              onClick: n ? void 0 : x,
+              onClick: n ? void 0 : N,
               children: e
             }, t);
           return n ? (0, r.jsx)(o.Z, {

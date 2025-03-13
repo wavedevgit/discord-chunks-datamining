@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(481060),
   u = n(570140),
   m = n(809206),
-  p = n(497321),
-  g = n(634894),
+  g = n(497321),
+  p = n(634894),
   h = n(100527),
   f = n(906732),
   b = n(475977),
-  N = n(605236),
-  x = n(957730),
+  x = n(605236),
+  N = n(957730),
   _ = n(53691),
   E = n(267717),
   j = n(296810),
@@ -72,7 +72,7 @@ function M() {
       image: V
     }),
     H = (0, l.e7)([y.Z], () => y.Z.showNotice()),
-    z = Z.dN.useSetting() && null != U ? x.ZP.parse(void 0, U).content : U,
+    z = Z.dN.useSetting() && null != U ? N.ZP.parse(void 0, U).content : U,
     Y = R.ZP.canUsePremiumProfileCustomization(n),
     {
       analyticsLocations: K
@@ -81,19 +81,19 @@ function M() {
     let e = (0, T.Tq)({
         location: "UserSettingsProfileCustomization"
       }),
-      t = (0, N.wE)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),
+      t = (0, x.wE)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),
       n = e && !t;
     i.useEffect(() => {
-      n && (0, N.EW)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE, {
+      n && (0, x.EW)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE, {
         forceTrack: !0
       })
     }, [n])
   }(), i.useEffect(() => () => u.Z.wait(m.W3), []);
   let q = "UserSettingsProfileCustomization";
-  (0, g.j)({
+  (0, p.j)({
     location: q + " auto on",
     autoTrackExposure: !0
-  }), (0, g.j)({
+  }), (0, p.j)({
     location: q + " auto off",
     autoTrackExposure: !1
   });
@@ -102,7 +102,7 @@ function M() {
   } = D.b.useExperiment({
     location: "profile customization"
   }), $ = !Y, ee = i.useRef(null);
-  return s ? (0, r.jsx)(p.Z, {}) : (0, r.jsxs)(f.Gt, {
+  return s ? (0, r.jsx)(g.Z, {}) : (0, r.jsxs)(f.Gt, {
     value: K,
     children: [(0, r.jsx)(b.Z, {}), (0, r.jsx)(j.Z, {
       profilePreview: (0, r.jsx)(C.Z, (e = function(e) {

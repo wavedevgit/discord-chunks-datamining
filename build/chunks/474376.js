@@ -13,13 +13,13 @@ var i = n(442837),
   d = n(598077),
   u = n(246946),
   m = n(594174),
-  p = n(626135),
-  g = n(51144),
+  g = n(626135),
+  p = n(51144),
   h = n(480387),
   f = n(726745),
   b = n(251423),
-  N = n(383832),
-  x = n(981631),
+  x = n(383832),
+  N = n(981631),
   _ = n(388032),
   E = n(853759);
 
@@ -32,9 +32,9 @@ function j(e) {
       multiAccountUsers: O
     } = (0, b.L)(),
     v = e => {
-      e !== (null == t ? void 0 : t.id) && (p.default.track(x.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
+      e !== (null == t ? void 0 : t.id) && (g.default.track(N.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
         location: {
-          section: x.jXE.USER_PROFILE
+          section: N.jXE.USER_PROFILE
         }
       }), h.yD(e))
     },
@@ -61,7 +61,7 @@ function j(e) {
               children: [(0, r.jsx)(a.Text, {
                 className: E.userMenuText,
                 variant: "text-sm/normal",
-                children: g.ZP.getUserTag(s, {
+                children: p.ZP.getUserTag(s, {
                   mode: "username",
                   identifiable: n ? "never" : "always"
                 })
@@ -72,19 +72,19 @@ function j(e) {
               })]
             }), o && (0, r.jsx)(a.owK, {
               size: "sm",
-              color: (0, l.Lq)(t ? x.Ilk.WHITE_500 : x.Ilk.BRAND_500),
-              secondaryColor: (0, l.Lq)(t && j || t && !C && !j ? x.Ilk.BRAND_500 : x.Ilk.WHITE_500),
+              color: (0, l.Lq)(t ? N.Ilk.WHITE_500 : N.Ilk.BRAND_500),
+              secondaryColor: (0, l.Lq)(t && j || t && !C && !j ? N.Ilk.BRAND_500 : N.Ilk.WHITE_500),
               className: E.activeIcon
             }), c && (0, r.jsx)(a.P4T, {
-              color: (0, l.Lq)(x.Ilk.RED_400),
-              secondaryColor: (0, l.Lq)(t && j || t && !C && !j ? x.Ilk.BRAND_500 : x.Ilk.WHITE_500),
+              color: (0, l.Lq)(N.Ilk.RED_400),
+              secondaryColor: (0, l.Lq)(t && j || t && !C && !j ? N.Ilk.BRAND_500 : N.Ilk.WHITE_500),
               size: "xs",
               className: E.activeIcon
             })]
           })
         },
         action: () => {
-          null == e || e(), c ? (0, N.Z)() : v(s.id)
+          null == e || e(), c ? (0, x.Z)() : v(s.id)
         }
       }, s.id)
     });
@@ -93,7 +93,7 @@ function j(e) {
       id: "manage-accounts",
       label: _.NW.string(_.t.WbFpq6),
       action: () => {
-        null == e || e(), (0, N.Z)()
+        null == e || e(), (0, x.Z)()
       }
     })]
   })), S

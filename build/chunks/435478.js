@@ -33,7 +33,7 @@ function m(e) {
   return e
 }
 
-function p(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,7 +46,7 @@ function p(e, t) {
   }), e
 }
 
-function g(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -69,12 +69,12 @@ function h(e) {
     icon: c,
     hint: h,
     renderSubmenu: f
-  } = e, b = g(e, ["id", "label", "icon", "hint", "renderSubmenu"]);
-  let N = (0, a.JA)(t),
+  } = e, b = p(e, ["id", "label", "icon", "hint", "renderSubmenu"]);
+  let x = (0, a.JA)(t),
     {
-      onFocus: x
-    } = N,
-    _ = g(N, ["onFocus"]),
+      onFocus: N
+    } = x,
+    _ = p(x, ["onFocus"]),
     {
       id: E
     } = (0, a.f$)(),
@@ -85,7 +85,7 @@ function h(e) {
       C(e === t)
     })
   }, [t, E, O]);
-  let v = e => (0, r.jsxs)(d.kF, p(m({}, e, _, b), {
+  let v = e => (0, r.jsxs)(d.kF, g(m({}, e, _, b), {
     role: "button",
     look: o.zxk.Looks.BLANK,
     innerClassName: u.menuItemInner,
@@ -94,7 +94,7 @@ function h(e) {
     fullWidth: !0,
     onMouseEnter: () => {
       var t;
-      null == e || null === (t = e.onMouseEnter) || void 0 === t || t.call(e), x()
+      null == e || null === (t = e.onMouseEnter) || void 0 === t || t.call(e), N()
     },
     children: [(0, r.jsx)(c, {
       size: "xs",
@@ -127,8 +127,8 @@ function f(e) {
       children: e => {
         var {
           ref: t
-        } = e, s = g(e, ["ref"]);
-        return (0, r.jsx)("div", p(m({}, s), {
+        } = e, s = p(e, ["ref"]);
+        return (0, r.jsx)("div", g(m({}, s), {
           ref: t,
           onMouseLeave: () => i.setFocus(null),
           children: n

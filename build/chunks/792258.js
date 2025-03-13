@@ -13,8 +13,8 @@ var i = n(120356),
   d = n(914788),
   u = n(981631),
   m = n(635357),
-  p = n(388032),
-  g = n(295210);
+  g = n(388032),
+  p = n(295210);
 let h = [18, 18, 16, 16, 14, 12, 10],
   f = e => {
     let {
@@ -24,36 +24,36 @@ let h = [18, 18, 16, 16, 14, 12, 10],
     let i = n.hasFeature(u.oNc.VERIFIED) || n.hasFeature(u.oNc.PARTNERED),
       f = n.toString(),
       b = n.getIconURL(40, !0),
-      N = null,
-      x = h[h.length - 1];
+      x = null,
+      N = h[h.length - 1];
     if (null == n.icon && null != f) {
       var _;
-      x = null !== (_ = h[(N = (0, a.Zg)(f)).length - 1]) && void 0 !== _ ? _ : h[h.length - 1]
+      N = null !== (_ = h[(x = (0, a.Zg)(f)).length - 1]) && void 0 !== _ ? _ : h[h.length - 1]
     }
     return (0, r.jsxs)("div", {
-      className: g.container,
+      className: p.container,
       children: [(0, r.jsxs)("div", {
         style: {
-          fontSize: x
+          fontSize: N
         },
-        children: [null != N ? (0, r.jsx)("div", {
-          className: s()(g.childWrapper, g.acronym),
+        children: [null != x ? (0, r.jsx)("div", {
+          className: s()(p.childWrapper, p.acronym),
           "aria-hidden": !0,
-          children: N
+          children: x
         }) : null, null != b ? (0, r.jsx)(o.qEK, {
           src: n.getIconURL(40, !0),
           size: o.EFr.SIZE_40,
           "aria-hidden": !0
         }) : null]
       }), (0, r.jsxs)("div", {
-        className: g.descriptors,
+        className: p.descriptors,
         children: [(0, r.jsxs)("div", {
-          className: g.header,
+          className: p.header,
           children: [i ? (0, r.jsx)(c.Z, {
             guild: n,
             tooltipPosition: "bottom",
             tooltipColor: o.ua7.Colors.PRIMARY,
-            className: g.guildBadge
+            className: p.guildBadge
           }) : null, (0, r.jsx)(o.Text, {
             variant: "text-md/semibold",
             children: n.toString()
@@ -61,7 +61,7 @@ let h = [18, 18, 16, 16, 14, 12, 10],
         }), void 0 !== n.approximateMemberCount ? (0, r.jsx)(o.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: p.NW.format(m.Z["5JmNgo"], {
+          children: g.NW.format(m.Z["5JmNgo"], {
             members: n.approximateMemberCount
           })
         }) : null]

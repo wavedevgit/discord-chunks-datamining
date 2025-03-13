@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(58385),
   u = n(889989),
   m = n(937615),
-  p = n(624138),
-  g = n(150414),
+  g = n(624138),
+  p = n(150414),
   h = n(993553),
   f = n(960700);
 
@@ -24,9 +24,9 @@ function b(e) {
     className: s
   } = e, {
     applicationId: b,
-    benefits: N,
-    description: x
-  } = n, _ = i.useMemo(() => null == n.thumbnail ? null : (0, g.q)(b, n.thumbnail, 256), [b, n.thumbnail]), {
+    benefits: x,
+    description: N
+  } = n, _ = i.useMemo(() => null == n.thumbnail ? null : (0, p.q)(b, n.thumbnail, 256), [b, n.thumbnail]), {
     data: E
   } = (0, d.X)(n.skuId), j = i.useMemo(() => {
     if (null == E || 0 === E.length) return null;
@@ -54,15 +54,15 @@ function b(e) {
         })]
       }), t]
     }),
-    children: [!(0, p.Ew)(x) && (0, r.jsx)("div", {
+    children: [!(0, g.Ew)(N) && (0, r.jsx)("div", {
       className: f.description,
       children: (0, r.jsx)(h.Z, {
         variant: "text-sm/medium",
-        children: x
+        children: N
       })
-    }), null != N && N.length > 0 && (0, r.jsx)("div", {
+    }), null != x && x.length > 0 && (0, r.jsx)("div", {
       className: f.benefits,
-      children: N.map(e => {
+      children: x.map(e => {
         let {
           id: t,
           name: n,

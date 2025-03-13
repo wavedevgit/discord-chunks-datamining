@@ -13,13 +13,13 @@ var i = n(120356),
   d = n(631885),
   u = n(568671),
   m = n(292352),
-  p = n(635357),
-  g = n(388032),
+  g = n(635357),
+  p = n(388032),
   h = n(684553),
   f = n(828859),
   b = n(633488),
-  N = n(361848);
-let x = () => {
+  x = n(361848);
+let N = () => {
     let e = (0, d.mq)(m.ne.ACTIVE),
       t = (0, c.Z)(),
       {
@@ -31,16 +31,16 @@ let x = () => {
         fullWidth: !1,
         size: a.PhG.LARGE,
         onClick: () => n(m.dG.REQUESTS),
-        children: g.NW.string(g.t.LhlgY2)
+        children: p.NW.string(p.t.LhlgY2)
       }) : (0, r.jsx)(u.Z, {})
     })
   },
   _ = () => {
     let e = (0, c.Z)(),
-      t = (0, l.o)(g.NW.string(p.Z.T7GyW1), g.NW.string(p.Z.goKE2d)),
-      n = (0, l.o)(g.NW.format(p.Z.MXjDSk, {
+      t = (0, l.o)(p.NW.string(g.Z.T7GyW1), p.NW.string(g.Z.goKE2d)),
+      n = (0, l.o)(p.NW.format(g.Z.MXjDSk, {
         articleLink: "https://support.discord.com/hc/articles/14155060633623"
-      }), g.NW.format(p.Z.EMCf6u, {
+      }), p.NW.format(g.Z.EMCf6u, {
         articleLink: "https://support.discord.com/hc/articles/14155043715735"
       }));
     return (0, r.jsxs)("div", {
@@ -60,12 +60,12 @@ let x = () => {
               children: n
             })]
           })
-        }), (0, r.jsx)(x, {})]
+        }), (0, r.jsx)(N, {})]
       }), (0, r.jsx)("div", {
         className: h.headerImage,
         children: (0, r.jsx)("img", {
-          src: e ? b : N,
-          alt: g.NW.string(p.Z.ffg6xc)
+          src: e ? b : x,
+          alt: p.NW.string(g.Z.ffg6xc)
         })
       })]
     })

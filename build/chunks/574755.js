@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(441167),
   u = n(695346),
   m = n(131951),
-  p = n(924557),
-  g = n(435064),
+  g = n(924557),
+  p = n(435064),
   h = n(779618),
   f = n(39604),
   b = n(703288),
-  N = n(491758),
-  x = n(233685),
+  x = n(491758),
+  N = n(233685),
   _ = n(388032),
   E = n(678519),
   j = n(107248),
@@ -36,9 +36,9 @@ function O(e) {
     autoTrackExposure: !1
   }), {
     analyticsLocations: S
-  } = (0, o.ZP)(), T = (0, p.Go)(), {
+  } = (0, o.ZP)(), T = (0, g.Go)(), {
     viewerClipsEnabled: I
-  } = (0, s.cj)([g.Z], () => g.Z.getSettings()), y = (0, h.Z)(m.Z);
+  } = (0, s.cj)([p.Z], () => p.Z.getSettings()), y = (0, h.Z)(m.Z);
   return i.useEffect(() => {
     (0, c.EW)(a.z.CLIPS_SETTINGS_BETA_TAG)
   }), (0, r.jsxs)(o.Gt, {
@@ -52,7 +52,7 @@ function O(e) {
       }) : null,
       children: T && (0, r.jsxs)("form", {
         onSubmit: e => e.preventDefault(),
-        children: [(0, r.jsx)(N.Z, {}), (0, r.jsx)(x.Z, {})]
+        children: [(0, r.jsx)(x.Z, {}), (0, r.jsx)(N.Z, {})]
       })
     }), T && (0, r.jsx)(l.$i$, {}), (0, r.jsxs)(l.hjN, {
       className: n || T ? C.marginTop20 : t,

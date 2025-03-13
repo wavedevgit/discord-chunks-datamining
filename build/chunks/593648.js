@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(524437),
   u = n(481060),
   m = n(668781),
-  p = n(292556),
-  g = n(87051),
+  g = n(292556),
+  p = n(87051),
   h = n(419363),
   f = n(818083),
   b = n(688465),
-  N = n(487419),
-  x = n(197344),
+  x = n(487419),
+  N = n(197344),
   _ = n(476756),
   E = n(734934),
   j = n(223683),
@@ -123,7 +123,7 @@ function K(e) {
     t.stopPropagation(), t.preventDefault(), null != l.current && l.current.stop(), l.current = (0, y.GN)(e)
   }, []), d = i.useCallback((e, n) => {
     let r = t.filter(t => t !== e);
-    n || r.push(e), p.default.setDisabledSounds(r)
+    n || r.push(e), g.default.setDisabledSounds(r)
   }, [t]);
   i.useEffect(() => () => {
     var e;
@@ -197,11 +197,11 @@ function K(e) {
       label: U.NW.string(U.t.CP3DCw),
       sound: "reconnect"
     }],
-    g = null != x.Z.useHolidaySoundpack();
+    p = null != N.Z.useHolidaySoundpack();
   return (0, r.jsx)(I.F, {
     setting: L.s6.NOTIFICATIONS_SOUNDS,
     children: (0, r.jsxs)(u.hjN, {
-      children: [g ? (0, r.jsxs)(r.Fragment, {
+      children: [p ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(u.vwX, {
           className: G.marginBottom20,
           children: U.NW.string(U.t.fgSHf3)
@@ -212,12 +212,12 @@ function K(e) {
       }), (0, r.jsx)(u.j7V, {
         note: U.NW.string(U.t["7oXUio"]),
         value: s,
-        onChange: p.default.setNotifyMessagesInSelectedChannel,
+        onChange: g.default.setNotifyMessagesInSelectedChannel,
         children: U.NW.string(U.t.lF5GGR)
       }), (0, r.jsx)(u.j7V, {
         note: U.NW.string(U.t["+B0XLC"]),
         value: n,
-        onChange: p.default.toggleDisableAllSounds,
+        onChange: g.default.toggleDisableAllSounds,
         children: U.NW.string(U.t["2ZhCOT"])
       }), m.map(e => {
         let {
@@ -239,7 +239,7 @@ function K(e) {
 }
 
 function q() {
-  let e = (0, c.e7)([N.Z], () => N.Z.getGuildAlertSettings()),
+  let e = (0, c.e7)([x.Z], () => x.Z.getGuildAlertSettings()),
     [t, n] = i.useState(null),
     s = Z.default.keys(e).map(t => {
       let n = e[t];
@@ -315,13 +315,13 @@ class X extends i.PureComponent {
       var n;
       n = "UserSettingsModal", R.Z.requestPermission(e => {
         let t = e ? B.$Ab.ENABLED : B.$Ab.BLOCKED;
-        p.default.setPermissionsState(t, n)
+        g.default.setPermissionsState(t, n)
       })
-    } else p.default.setDesktopType(t)
+    } else g.default.setDesktopType(t)
   }
   handleTTSChange(e) {
     let t = e.value;
-    p.default.setTTSType(t)
+    g.default.setTTSType(t)
   }
   render() {
     let {
@@ -333,7 +333,7 @@ class X extends i.PureComponent {
       disableAllSounds: l,
       notifyMessagesInSelectedChannel: c,
       focusMode: d
-    } = this.props, m = D.isPlatformEmbedded && (0, D.isWindows)(), p = o().range(1, 11).map(e => ({
+    } = this.props, m = D.isPlatformEmbedded && (0, D.isWindows)(), g = o().range(1, 11).map(e => ({
       value: 60 * e,
       label: U.NW.formatToPlainString(U.t.iXLF9f, {
         minutes: e
@@ -378,7 +378,7 @@ class X extends i.PureComponent {
           children: [(0, r.jsx)(u.q4e, {
             value: t,
             onChange: w.CM.updateSetting,
-            options: p
+            options: g
           }), (0, r.jsx)(u.R94, {
             type: u.geA.DESCRIPTION,
             className: G.marginTop8,
@@ -398,9 +398,9 @@ class X extends i.PureComponent {
   }
   constructor(...e) {
     super(...e), F(this, "handleToggleShowUnreadBadge", () => {
-      p.default.setDisableUnreadBadge(!this.props.disableUnreadBadge)
+      g.default.setDisableUnreadBadge(!this.props.disableUnreadBadge)
     }), F(this, "handleToggleShowFlash", () => {
-      p.default.setTaskbarFlash(!this.props.taskbarFlash)
+      g.default.setTaskbarFlash(!this.props.taskbarFlash)
     }), F(this, "renderTTS", () => {
       if (!h.Zh) return null;
       let e = [{
@@ -462,7 +462,7 @@ function Q() {
       className: G.marginBottom20,
       value: t,
       onChange: e => {
-        g.Z.setAccountFlag(M.c.MENTION_ON_ALL_MESSAGES, e)
+        p.Z.setAccountFlag(M.c.MENTION_ON_ALL_MESSAGES, e)
       },
       note: "Increments the mention count when receiving a message in a channel set to 'All Messages'",
       children: "Mention on all messages?"
@@ -504,7 +504,7 @@ function $() {
         disabled: s || n,
         note: "Turns on the new notification system",
         onChange: e => {
-          g.Z.setAccountFlag(M.c.USE_NEW_NOTIFICATIONS, e)
+          p.Z.setAccountFlag(M.c.USE_NEW_NOTIFICATIONS, e)
         },
         children: U.NW.string(U.t.z21l8P)
       })
@@ -537,7 +537,7 @@ function $() {
               hideBorder: !0,
               value: n,
               onChange: e => {
-                g.Z.setAccountFlag(M.c.USE_NEW_NOTIFICATIONS, e)
+                p.Z.setAccountFlag(M.c.USE_NEW_NOTIFICATIONS, e)
               },
               children: "Toggle new system on/off"
             })

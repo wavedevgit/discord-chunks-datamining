@@ -57,7 +57,7 @@ var m = function(e) {
     return e[e.PRELOADED_USER_SETTINGS = 1] = "PRELOADED_USER_SETTINGS", e[e.FRECENCY_AND_FAVORITES_SETTINGS = 2] = "FRECENCY_AND_FAVORITES_SETTINGS", e[e.TEST_SETTINGS = 3] = "TEST_SETTINGS", e
   }({}),
   g = function(e) {
-    return e.USER_SETTINGS_PRIVACY_SAFETY = "user_settings_privacy_safety", e.SERVER_PRIVACY_MODAL = "server_privacy_modal", e
+    return e.USER_SETTINGS_PRIVACY_SAFETY = "user_settings_privacy_safety", e.USER_SETTINGS_ACTIVITY_PRIVACY = "user_settings_activity_privacy", e.SERVER_PRIVACY_MODAL = "server_privacy_modal", e
   }({}),
   E = function(e) {
     return e[e.INFREQUENT_USER_ACTION = 0] = "INFREQUENT_USER_ACTION", e[e.FREQUENT_USER_ACTION = 10] = "FREQUENT_USER_ACTION", e[e.SLOW_USER_ACTION = 20] = "SLOW_USER_ACTION", e[e.AUTOMATED = 30] = "AUTOMATED", e[e.DAILY = 86400] = "DAILY", e

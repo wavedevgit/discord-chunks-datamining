@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => x
+  Z: () => N
 });
 var r = n(200651),
   i = n(192379),
@@ -12,19 +12,19 @@ var r = n(200651),
   d = n(626135),
   u = n(74538),
   m = n(150039),
-  p = n(993413),
-  g = n(504983),
+  g = n(993413),
+  p = n(504983),
   h = n(981631),
   f = n(474936),
   b = n(388032),
-  N = n(669228);
+  x = n(669228);
 
-function x(e) {
+function N(e) {
   let {
     user: t,
     guild: n,
     className: s,
-    sectionTitle: x,
+    sectionTitle: N,
     forcedDivider: _ = !1,
     withTutorial: E = !1,
     showBorder: j = !1,
@@ -48,25 +48,25 @@ function x(e) {
   }, [S, T]);
   let P = null != n,
     R = E ? l.gtL : l.zxk;
-  return (0, r.jsx)(p.Z, {
+  return (0, r.jsx)(g.Z, {
     forcedDivider: _,
-    borderType: g.Y.PREMIUM,
+    borderType: p.Y.PREMIUM,
     hasBackground: !0,
-    title: x,
+    title: N,
     showBorder: j,
     errors: y,
     className: s,
     children: (0, r.jsxs)("div", {
-      className: N.buttonsContainer,
+      className: x.buttonsContainer,
       children: [(0, r.jsx)(R, {
         size: l.zxk.Sizes.SMALL,
         onClick: A,
         className: a()({
-          [N.buttonHighlighted]: E
+          [x.buttonHighlighted]: E
         }),
         children: b.NW.string(b.t["0nEVoK"])
       }), (C || void 0 !== I ? null != I : null != v) && (0, r.jsx)(l.zxk, {
-        className: N.removeButton,
+        className: x.removeButton,
         color: l.zxk.Colors.PRIMARY,
         look: l.zxk.Looks.LINK,
         size: l.zxk.Sizes.SMALL,

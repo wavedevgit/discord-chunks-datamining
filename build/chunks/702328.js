@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(481060),
   u = n(634894),
   m = n(410030),
-  p = n(607070),
-  g = n(100527),
+  g = n(607070),
+  p = n(100527),
   h = n(906732),
   f = n(70097),
   b = n(464824),
-  N = n(214852),
-  x = n(594174),
+  x = n(214852),
+  N = n(594174),
   _ = n(78839),
   E = n(626135),
   j = n(526167),
@@ -66,7 +66,7 @@ var r = n(200651),
   ed = n(181960),
   eu = n(313199),
   em = n(821969);
-let ep = e => {
+let eg = e => {
     let {
       isFullscreen: t,
       selectedPremiumType: n
@@ -75,7 +75,7 @@ let ep = e => {
       className: t ? es.perkCardsContainerSpacingFullscreen : es.perkCardsContainerSpacingSettings
     })
   },
-  eg = e => {
+  ep = e => {
     let {
       isFullscreen: t,
       inOfferExperience: n
@@ -128,16 +128,16 @@ let ep = e => {
       isFullscreen: W,
       entrypoint: U
     } = e;
-    (0, N.z)(b.X);
+    (0, x.z)(b.X);
     let G = U === et.EZ.ApplicationStoreHome,
       F = i.useRef(null),
       H = i.useRef(null),
-      ee = (0, l.e7)([p.Z], () => p.Z.useReducedMotion),
+      ee = (0, l.e7)([g.Z], () => g.Z.useReducedMotion),
       ef = (0, m.ZP)(),
       eb = (0, c.wj)(ef),
-      eN = x.default.getCurrentUser(),
-      ex = (0, C.I5)(eN),
-      e_ = (0, v.xP)("PremiumMarketingHome") && !ex && G,
+      ex = N.default.getCurrentUser(),
+      eN = (0, C.I5)(ex),
+      e_ = (0, v.xP)("PremiumMarketingHome") && !eN && G,
       [eE, ej] = i.useState(!1),
       [eC, eO] = i.useState(!1),
       [ev, eS] = i.useState(!1),
@@ -162,7 +162,7 @@ let ep = e => {
       ez = null === (n = (0, S.Z)()) || void 0 === n ? void 0 : n.billingSettingsMarketingBanner,
       {
         analyticsLocations: eY
-      } = (0, h.ZP)(g.Z.PREMIUM_MARKETING),
+      } = (0, h.ZP)(p.Z.PREMIUM_MARKETING),
       eK = "PremiumMarketingHome";
     (0, u.j)({
       location: eK + " auto on",
@@ -241,7 +241,7 @@ let ep = e => {
             [es.zIndex1]: eV
           }),
           isFullscreen: W
-        }), !e_ && (0, r.jsx)(eg, {
+        }), !e_ && (0, r.jsx)(ep, {
           isFullscreen: W,
           inOfferExperience: eV
         }), !W && eW ? (0, r.jsx)(D.Z, {
@@ -311,7 +311,7 @@ let ep = e => {
           hasRenderedOnce: eA,
           isMarketingPageV2Enabled: e_,
           isReducedMotion: ee
-        }), !e_ && (0, r.jsx)(ep, {
+        }), !e_ && (0, r.jsx)(eg, {
           isFullscreen: W
         }), e_ && eq, (0, r.jsxs)("div", {
           className: es.planComparisonTableContainer,

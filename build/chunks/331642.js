@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(74538),
   u = n(242291),
   m = n(830253),
-  p = n(792165),
-  g = n(409673),
+  g = n(792165),
+  p = n(409673),
   h = n(603074),
   f = n(388032),
   b = n(10314);
 
-function N(e) {
+function x(e) {
   let {
     onSelect: t
   } = e, [n, a] = i.useState(!1), o = (0, s.e7)([c.default], () => c.default.getCurrentUser()), u = d.ZP.canUseCustomCallSounds(o);
@@ -42,14 +42,14 @@ function N(e) {
           channel: null,
           onClose: t,
           onSelect: m,
-          gridNotice: u ? null : (0, r.jsx)(p.o, {}),
+          gridNotice: u ? null : (0, r.jsx)(g.o, {}),
           analyticsSource: "call sounds edit setting"
         })
       })
     },
     children: e => {
       var t, i;
-      return (0, r.jsx)(g.hU, (t = function(e) {
+      return (0, r.jsx)(p.hU, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -90,7 +90,7 @@ function N(e) {
   })
 }
 
-function x(e) {
+function N(e) {
   let {
     sound: t
   } = e, {
@@ -99,7 +99,7 @@ function x(e) {
     emojiName: t.emojiName,
     soundName: t.name
   });
-  return (0, r.jsx)(g.hU, {
+  return (0, r.jsx)(p.hU, {
     onClick: n,
     text: i,
     children: (0, r.jsx)(l.gj8, {
@@ -137,7 +137,7 @@ function _(e) {
             children: e
           })
         }) : t.name
-      }), s ? (0, r.jsx)(x, {
+      }), s ? (0, r.jsx)(N, {
         sound: t
       }) : (0, r.jsx)(l.gj8, {
         size: "md",
@@ -146,9 +146,9 @@ function _(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: b.container,
-      children: [(0, r.jsx)(N, {
+      children: [(0, r.jsx)(x, {
         onSelect: i
-      }), s && !n && (0, r.jsx)(g.hU, {
+      }), s && !n && (0, r.jsx)(p.hU, {
         onClick: () => i(null),
         text: f.NW.string(f.t.jmtcGB),
         children: (0, r.jsx)(l.XHJ, {

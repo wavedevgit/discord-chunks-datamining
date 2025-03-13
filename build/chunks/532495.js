@@ -13,13 +13,13 @@ var i = n(512722),
   d = n(328783),
   u = n(295474),
   m = n(309351),
-  p = n(150039),
-  g = n(126631),
+  g = n(150039),
+  p = n(126631),
   h = n(433411),
   f = n(532432),
   b = n(349177),
-  N = n(872736),
-  x = n(818420),
+  x = n(872736),
+  N = n(818420),
   _ = n(134795),
   E = n(610966),
   j = n(513901),
@@ -91,8 +91,8 @@ function Z() {
     }),
     q = (0, u.gS)(),
     X = P.ZP.canUsePremiumProfileCustomization(L),
-    J = (0, p.GH)(M, L.avatar),
-    Q = (0, p.f$)(V, null == B ? void 0 : B.banner),
+    J = (0, g.GH)(M, L.avatar),
+    Q = (0, g.f$)(V, null == B ? void 0 : B.banner),
     $ = "DefaultCustomizationSections";
   (0, o.j)({
     location: $ + " auto on",
@@ -130,7 +130,7 @@ function Z() {
     }, "avatar"), (0, r.jsx)(h.Z, {
       user: L,
       sectionTitle: R.NW.string(R.t["7v0T9P"])
-    }, "decoration"), es && (0, r.jsx)(x.Z, {
+    }, "decoration"), es && (0, r.jsx)(N.Z, {
       user: L
     }), (0, r.jsx)(j.Z, {
       user: L,
@@ -153,15 +153,15 @@ function Z() {
       savedUserColor: null == B ? void 0 : B.accentColor,
       pendingColor: H,
       setPendingAccentColor: S.CM
-    }, "color"), (0, r.jsx)(g.Z, {
+    }, "color"), (0, r.jsx)(p.Z, {
       sectionTitle: R.NW.string(R.t.NepzEx),
       errors: er,
-      onBioChange: e => (0, p.xQ)(e, null == B ? void 0 : B.bio),
+      onBioChange: e => (0, g.xQ)(e, null == B ? void 0 : B.bio),
       pendingBio: G,
       currentBio: null !== (W = null == B ? void 0 : B.bio) && void 0 !== W ? W : ""
     }, "bio"), ei.length > 0 && (0, r.jsx)(d.Z, {
       availableClans: ei
-    }), null != et && (0, r.jsx)(N.Z, {
+    }), null != et && (0, r.jsx)(x.Z, {
       legacyUsername: et
     }, "legacy_username")]
   })

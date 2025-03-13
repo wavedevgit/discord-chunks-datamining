@@ -12,37 +12,37 @@ var r = n(200651),
   d = n(481060),
   u = n(37234),
   m = n(960412),
-  p = n(151662),
-  g = n(695346),
+  g = n(151662),
+  p = n(695346),
   h = n(981631),
   f = n(930441),
   b = n(635357),
-  N = n(388032),
-  x = n(302859),
+  x = n(388032),
+  N = n(302859),
   _ = n(802138);
 let E = () => {
-  let e = g.Ex.useSetting(),
+  let e = p.Ex.useSetting(),
     {
       categories: t,
       initialized: n
-    } = (0, c.cj)([p.Z], () => p.Z.getEmailSettings());
+    } = (0, c.cj)([g.Z], () => g.Z.getEmailSettings());
   return i.useEffect(() => {
     null == n && (0, m.Y7)()
   }, [n]), (0, r.jsxs)("div", {
-    className: x.container,
+    className: N.container,
     children: [(0, r.jsx)(d.Text, {
       variant: "eyebrow",
       color: "text-muted",
-      children: N.NW.string(b.Z.USIXU1)
+      children: x.NW.string(b.Z.USIXU1)
     }), (0, r.jsx)(d.j7V, {
       className: a()(_.marginTop8, _.marginBottom20),
       value: e,
-      note: N.NW.string(b.Z["5MdB3t"]),
+      note: x.NW.string(b.Z["5MdB3t"]),
       hideBorder: !0,
-      onChange: g.Ex.updateSetting,
-      children: N.NW.string(b.Z.zkEceX)
+      onChange: p.Ex.updateSetting,
+      children: x.NW.string(b.Z.zkEceX)
     }), e ? (0, r.jsx)(d.Zbd, {
-      className: x.enableCard,
+      className: N.enableCard,
       type: d.Zbd.Types.CUSTOM,
       outline: !0,
       children: (0, r.jsxs)(o.k, {
@@ -51,7 +51,7 @@ let E = () => {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/semibold",
             color: "text-normal",
-            children: N.NW.string(b.Z.xAVm7O)
+            children: x.NW.string(b.Z.xAVm7O)
           })
         }), (0, r.jsx)(d.P3F, {
           children: (0, r.jsx)(l.rU, {
@@ -62,23 +62,23 @@ let E = () => {
                 scrollRestoration: !1
               }
             },
-            children: N.NW.string(b.Z.cUIXFR)
+            children: x.NW.string(b.Z.cUIXFR)
           })
         }), (0, r.jsx)(d.G2e, {
           icon: d.ZSh,
-          className: x.arrow,
+          className: N.arrow,
           disableColor: !0
         })]
       })
     }) : null, (0, r.jsx)(d.j7V, {
       className: a()(_.marginTop20, _.marginBottom20),
       value: !!t[f.$Z.FAMILY_CENTER_DIGEST],
-      note: N.NW.string(b.Z["y34S4+"]),
+      note: x.NW.string(b.Z["y34S4+"]),
       hideBorder: !0,
       onChange: function(e) {
         (0, m.pR)(f.$Z.FAMILY_CENTER_DIGEST, e)
       },
-      children: N.NW.string(b.Z.irvJKS)
+      children: x.NW.string(b.Z.irvJKS)
     })]
   })
 }

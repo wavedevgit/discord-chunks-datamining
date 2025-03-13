@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(880257),
   u = n(631885),
   m = n(933970),
-  p = n(340453),
-  g = n(292352),
+  g = n(340453),
+  p = n(292352),
   h = n(635357),
   f = n(388032),
   b = n(944921);
 
-function N(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function N(e) {
   return e
 }
 
-function x(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,7 +58,7 @@ function _(e) {
       let {
         default: e
       } = await n.e("59716").then(n.bind(n, 275370));
-      return n => (0, r.jsx)(e, x(N({}, n), {
+      return n => (0, r.jsx)(e, N(x({}, n), {
         currentUser: E,
         otherUser: t
       }))
@@ -68,7 +68,7 @@ function _(e) {
       let {
         default: e
       } = await n.e("958").then(n.bind(n, 4526));
-      return n => (0, r.jsx)(e, x(N({}, n), {
+      return n => (0, r.jsx)(e, N(x({}, n), {
         currentUser: E,
         otherUser: t
       }))
@@ -78,7 +78,7 @@ function _(e) {
       let {
         default: e
       } = await n.e("69015").then(n.bind(n, 247265));
-      return n => (0, r.jsx)(e, x(N({}, n), {
+      return n => (0, r.jsx)(e, N(x({}, n), {
         currentUser: E,
         otherUser: t
       }))
@@ -88,9 +88,9 @@ function _(e) {
     className: b.container,
     children: [(0, r.jsx)("div", {
       className: b.details,
-      children: (0, r.jsx)(p.Z, {
+      children: (0, r.jsx)(g.Z, {
         otherUser: t,
-        status: g.ne.PENDING
+        status: p.ne.PENDING
       })
     }), (0, r.jsx)("div", {
       className: b.actions,

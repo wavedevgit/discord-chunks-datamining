@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -14,7 +14,7 @@ var i = n(442837),
   u = n(436858),
   m = n(275554);
 
-function p() {
+function g() {
   let e = (0, i.e7)([a.Z], () => a.Z.useReducedMotion);
   return (0, r.jsx)(o.O3, {
     children: (0, r.jsxs)(s.mzw, {

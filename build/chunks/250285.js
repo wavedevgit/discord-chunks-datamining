@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -12,16 +12,16 @@ var r = n(200651),
   d = n(906732),
   u = n(171368),
   m = n(981631),
-  p = n(88814);
-let g = e => {
+  g = n(88814);
+let p = e => {
   let {
     userId: t,
     children: n,
     isLast: s,
-    className: g
+    className: p
   } = e, [h, f] = i.useState(!1), {
     analyticsLocations: b
-  } = (0, d.ZP)(), N = i.useCallback(() => {
+  } = (0, d.ZP)(), x = i.useCallback(() => {
     (0, u.openUserProfileModal)({
       userId: t,
       sourceAnalyticsLocations: b,
@@ -29,7 +29,7 @@ let g = e => {
         section: m.jXE.FAMILY_CENTER
       }
     })
-  }, [t, b]), x = () => {
+  }, [t, b]), N = () => {
     f(!0)
   }, _ = () => {
     f(!1)
@@ -64,13 +64,13 @@ let g = e => {
           style: {
             opacity: 1
           },
-          className: a()(p.rowItem, g, {
-            [p.last]: s,
-            [p.active]: h
+          className: a()(g.rowItem, p, {
+            [g.last]: s,
+            [g.active]: h
           }),
-          onMouseEnter: x,
+          onMouseEnter: N,
           onMouseLeave: _,
-          onClick: N
+          onClick: x
         }, e), i = i = {
           children: n(h)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

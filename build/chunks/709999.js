@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => eg,
+  Z: () => ep,
   d: () => em
 }), n(47120), n(627341);
 var r = n(200651),
@@ -13,13 +13,13 @@ var r = n(200651),
   d = n(873546),
   u = n(180650),
   m = n(979554),
-  p = n(399606),
-  g = n(622535),
+  g = n(399606),
+  p = n(622535),
   h = n(481060),
   f = n(727637),
   b = n(607070),
-  N = n(100527),
-  x = n(906732),
+  x = n(100527),
+  N = n(906732),
   _ = n(693728),
   E = n(333867),
   j = n(197115),
@@ -186,7 +186,7 @@ let eo = e => {
       doNotAnimate: !0
     })
   },
-  ep = e => {
+  eg = e => {
     let {
       user: t,
       isDarkTheme: n,
@@ -216,7 +216,7 @@ let eo = e => {
       })
     })
   },
-  eg = 12633 == n.j ? function(e) {
+  ep = 12633 == n.j ? function(e) {
     let {
       product: t,
       user: n,
@@ -227,9 +227,9 @@ let eo = e => {
       tab: z
     } = e, {
       analyticsLocations: K
-    } = (0, x.ZP)([...C ? [N.Z.COLLECTIBLES_SHOP_HOME_SCREEN] : [], N.Z.COLLECTIBLES_SHOP_CARD]), el = i.useRef(null), em = (0, f.Z)(el), [eg, eh] = i.useState(!1), ef = em || eg, eb = (0, Q.f)(t), {
-      previewingVariantIndex: eN
-    } = eb, ex = (0, w.T)(t), e_ = (0, p.e7)([b.Z], () => b.Z.useReducedMotion), eE = T.ZP.canUseCollectibles(n), ej = i.useMemo(() => (0, P.BH)(t, eE), [t, eE]), eC = (0, P.G1)(t), eO = (0, P.rN)(t), [ev, eS, eT] = (0, p.Wu)([y.Z], () => [y.Z.isClaiming === t.skuId, null != y.Z.isClaiming && y.Z.isClaiming !== t.skuId, y.Z.purchases]), eI = (0, J.o)(t, eT, eN), ey = (0, p.e7)([O.Z], () => (0, h.wjy)(O.Z.theme)), eA = (0, P.Yq)(t.skuId), eP = s.skuId === u.T.ANIME_V3 && (0, P.WW)(t.skuId), {
+    } = (0, N.ZP)([...C ? [x.Z.COLLECTIBLES_SHOP_HOME_SCREEN] : [], x.Z.COLLECTIBLES_SHOP_CARD]), el = i.useRef(null), em = (0, f.Z)(el), [ep, eh] = i.useState(!1), ef = em || ep, eb = (0, Q.f)(t), {
+      previewingVariantIndex: ex
+    } = eb, eN = (0, w.T)(t), e_ = (0, g.e7)([b.Z], () => b.Z.useReducedMotion), eE = T.ZP.canUseCollectibles(n), ej = i.useMemo(() => (0, P.BH)(t, eE), [t, eE]), eC = (0, P.G1)(t), eO = (0, P.rN)(t), [ev, eS, eT] = (0, g.Wu)([y.Z], () => [y.Z.isClaiming === t.skuId, null != y.Z.isClaiming && y.Z.isClaiming !== t.skuId, y.Z.purchases]), eI = (0, J.o)(t, eT, ex), ey = (0, g.e7)([O.Z], () => (0, h.wjy)(O.Z.theme)), eA = (0, P.Yq)(t.skuId), eP = s.skuId === u.T.ANIME_V3 && (0, P.WW)(t.skuId), {
       hoverVariant: eR
     } = (0, R.E)("CollectiblesShopTallCard"), eD = s.skuId === u.T.STORM && "1268362891946627103" === t.skuId, eZ = (0, D.hv)("CollectiblesShopTallCard"), ew = (0, A.o)(t, eT), ek = (0, X.W)(t, ew), eW = (0, P.XM)(ek, eE, !1), {
       isPurchased: eL,
@@ -238,7 +238,7 @@ let eo = e => {
       product: ek,
       isPartiallyOwnedBundle: eB,
       isPurchased: eL
-    }), eU = null !== eN ? eN : ew, [eV, eG] = i.useState(!1), {
+    }), eU = null !== ex ? ex : ew, [eV, eG] = i.useState(!1), {
       enabled: eF
     } = (0, v.W)({
       location: "collectibles_shop_tall_card"
@@ -288,8 +288,8 @@ let eo = e => {
           tab: z
         })
       },
-      e0 = e$(N.Z.COLLECTIBLES_SHOP_CARD),
-      e1 = e$(N.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON),
+      e0 = e$(x.Z.COLLECTIBLES_SHOP_CARD),
+      e1 = e$(x.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON),
       e2 = () => (0, r.jsx)("div", {
         className: ei.hoverUpsellContainer,
         children: (0, r.jsx)(j.Z, {
@@ -312,7 +312,7 @@ let eo = e => {
       disableCustomColor: !0,
       tooltipDelay: 250
     });
-    return (0, P.x6)(t) && null != ej && ej.discountPercentage < 0 ? null : (0, r.jsx)(g.$, {
+    return (0, P.x6)(t) && null != ej && ej.discountPercentage < 0 ? null : (0, r.jsx)(p.$, {
       onChange: eH,
       threshold: 0,
       children: (0, r.jsx)(h.tEY, {
@@ -350,7 +350,7 @@ let eo = e => {
               isStormMysteryItem: eD,
               isHighlighted: ef,
               isPurchased: eL
-            }))).with(m.Z.NAMEPLATE, () => (0, r.jsx)(ep, {
+            }))).with(m.Z.NAMEPLATE, () => (0, r.jsx)(eg, {
               user: n,
               isDarkTheme: ey,
               nameplate: eI,
@@ -399,7 +399,7 @@ let eo = e => {
             children: [(0, r.jsx)(h.Text, {
               variant: "text-lg/bold",
               className: ei.productName,
-              children: ex
+              children: eN
             }), t.type === m.Z.VARIANTS_GROUP ? (0, r.jsx)(H.P, {
               variantGroupProduct: t,
               previewingVariantIndexProps: eb,

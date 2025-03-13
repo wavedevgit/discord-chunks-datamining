@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => N
+  Z: () => x
 });
 var r = n(200651);
 n(192379);
@@ -13,25 +13,25 @@ var i = n(120356),
   d = n(220082),
   u = n(687158),
   m = n(576635),
-  p = n(74538),
-  g = n(193528),
+  g = n(74538),
+  p = n(193528),
   h = n(993413),
   f = n(388032),
   b = n(779281);
 
-function N(e) {
+function x(e) {
   let {
     user: t,
     pendingAvatarSrc: n,
     pendingColors: i,
     onThemeColorsChange: a,
-    preventDisabled: N,
-    guildId: x,
+    preventDisabled: x,
+    guildId: N,
     className: _,
     showPremiumIcon: E = !0,
     showResetThemeButton: j = !1,
     forcedDivider: C
-  } = e, O = (0, u.ZP)(t.id, x), {
+  } = e, O = (0, u.ZP)(t.id, N), {
     primaryColor: v,
     secondaryColor: S
   } = (0, m.Z)({
@@ -39,14 +39,14 @@ function N(e) {
     displayProfile: O,
     pendingThemeColors: i,
     isPreview: !0
-  }), T = p.ZP.canUsePremiumProfileCustomization(t), I = null != n ? n : t.getAvatarURL(x, 80), y = (0, c.dQu)(o.Z.unsafe_rawColors.PRIMARY_530).hex(), A = (0, d.Cf)(I, y, !1);
+  }), T = g.ZP.canUsePremiumProfileCustomization(t), I = null != n ? n : t.getAvatarURL(N, 80), y = (0, c.dQu)(o.Z.unsafe_rawColors.PRIMARY_530).hex(), A = (0, d.Cf)(I, y, !1);
   if (null == v || null == S) return null;
   let P = e => {
     a(l()(e, null == O ? void 0 : O.themeColors) ? void 0 : e)
   };
   return (0, r.jsx)(h.Z, {
     title: f.NW.string(f.t.DMeO2d),
-    disabled: !T && !N,
+    disabled: !T && !x,
     className: s()(b.__invalid_profileThemesSection, _),
     showPremiumIcon: E,
     forcedDivider: C,
@@ -54,7 +54,7 @@ function N(e) {
       className: b.sectionContainer,
       children: [(0, r.jsx)("div", {
         className: b.sparkleContainer,
-        children: (0, r.jsx)(g.Z, {
+        children: (0, r.jsx)(p.Z, {
           onChange: e => P([e, S]),
           color: v,
           suggestedColors: A,
@@ -69,7 +69,7 @@ function N(e) {
         })
       }), (0, r.jsx)("div", {
         className: b.sparkleContainer,
-        children: (0, r.jsx)(g.Z, {
+        children: (0, r.jsx)(p.Z, {
           onChange: e => P([v, e]),
           color: S,
           suggestedColors: A,
@@ -82,7 +82,7 @@ function N(e) {
             children: f.NW.string(f.t["8elvy8"])
           })
         })
-      }), j && null != x && (0, r.jsx)(c.zxk, {
+      }), j && null != N && (0, r.jsx)(c.zxk, {
         className: b.resetButton,
         color: c.zxk.Colors.PRIMARY,
         look: c.zxk.Looks.LINK,

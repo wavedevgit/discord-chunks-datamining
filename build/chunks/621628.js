@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(481060),
   u = n(600164),
   m = n(118012),
-  p = n(675478),
-  g = n(581883),
+  g = n(675478),
+  p = n(581883),
   h = n(883904),
   f = n(68985),
   b = n(211644),
-  N = n(804501),
-  x = n(152862),
+  x = n(804501),
+  N = n(152862),
   _ = n(802138);
 
 function E(e) {
@@ -30,7 +30,7 @@ function E(e) {
     isDismissed: a,
     handleToggleDismissState: l,
     recurringDismissibleContentInfo: c
-  } = (0, N.x)(s, t), u = "";
+  } = (0, x.x)(s, t), u = "";
   if (null == c || void 0 === c.lastDismissedVersion && void 0 === c.lastDismissedAtMs) u = "";
   else if (void 0 !== c.lastDismissedVersion && 0 !== c.lastDismissedVersion) u = "last_dismissed_version: ".concat(c.lastDismissedVersion);
   else if (void 0 !== c.lastDismissedAtMs) {
@@ -77,10 +77,10 @@ function C() {
       dailyCapOverridden: f.Z.dailyCapOverridden,
       newUserMinAgeRequiredOverridden: f.Z.newUserMinAgeRequiredOverridden
     })),
-    [N, E] = i.useState(""),
-    C = null !== (e = (0, l.e7)([g.Z], () => {
+    [x, E] = i.useState(""),
+    C = null !== (e = (0, l.e7)([p.Z], () => {
       var e;
-      return null === (e = g.Z.settings.userContent) || void 0 === e ? void 0 : e.dismissedContents
+      return null === (e = p.Z.settings.userContent) || void 0 === e ? void 0 : e.dismissedContents
     })) && void 0 !== e ? e : new Uint8Array,
     [O, v] = function(e, t) {
       let [n, r] = i.useState(() => {
@@ -100,8 +100,8 @@ function C() {
       })
     },
     T = t.map(e => o.z[e]),
-    I = O.filter(e => e.toLowerCase().includes(N.toLowerCase())).filter(e => !T.includes(e)),
-    y = Object.keys(o.z).filter(e => !T.includes(e)).filter(e => !O.includes(e)).filter(e => e.toLowerCase().includes(N.toLowerCase())).sort((e, t) => e.localeCompare(t));
+    I = O.filter(e => e.toLowerCase().includes(x.toLowerCase())).filter(e => !T.includes(e)),
+    y = Object.keys(o.z).filter(e => !T.includes(e)).filter(e => !O.includes(e)).filter(e => e.toLowerCase().includes(x.toLowerCase())).sort((e, t) => e.localeCompare(t));
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(d.hjN, {
       title: "Dismissible Content Fatigue",
@@ -135,16 +135,16 @@ function C() {
       children: [(0, r.jsx)(d.E1j, {
         className: _.marginBottom20,
         size: d.E1j.Sizes.LARGE,
-        query: N,
+        query: x,
         onChange: E,
         onClear: () => E("")
       }), (0, r.jsxs)(d.xJW, {
-        className: x.buttonsContainer,
+        className: N.buttonsContainer,
         children: [(0, r.jsx)(d.zxk, {
-          onClick: p.sr,
+          onClick: g.sr,
           children: "Clear All Dismissed Contents"
         }), (0, r.jsx)(d.zxk, {
-          onClick: p.bE,
+          onClick: g.bE,
           children: "Check All Dismissed Contents"
         })]
       }), t.length > 0 ? (0, r.jsxs)("div", {

@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => N,
+  Z: () => x,
   _: () => h
 });
 var r, i = n(200651),
@@ -12,19 +12,19 @@ var r, i = n(200651),
   d = n(393238),
   u = n(162168),
   m = n(624138),
-  p = n(612586);
-let g = (0, m.Mg)(c.Z.GRADIENT_PROGRESS_NOTCH_WIDTH);
+  g = n(612586);
+let p = (0, m.Mg)(c.Z.GRADIENT_PROGRESS_NOTCH_WIDTH);
 var h = ((r = {}).BLACK = "BLACK", r.GRAY = "GRAY", r);
 let f = {
-  BLACK: p.black,
-  GRAY: p.gray
+  BLACK: g.black,
+  GRAY: g.gray
 };
 
 function b(e) {
-  return Math.round(e / g) * g
+  return Math.round(e / p) * p
 }
 
-function N(e) {
+function x(e) {
   let {
     notchBackground: t,
     progress: n,
@@ -33,29 +33,29 @@ function N(e) {
     className: c,
     children: m
   } = e, {
-    ref: g,
+    ref: p,
     width: h
-  } = (0, d.Z)(), N = s.useMemo(() => null != h ? b(h) : 0, [h]), x = s.useMemo(() => {
-    let e = Math.abs(b(N * (100 - Math.max(0, Math.min(100, n))) / 100) - N);
+  } = (0, d.Z)(), x = s.useMemo(() => null != h ? b(h) : 0, [h]), N = s.useMemo(() => {
+    let e = Math.abs(b(x * (100 - Math.max(0, Math.min(100, n))) / 100) - x);
     return {
       transform: "translateX(".concat(e, "px)")
     }
-  }, [n, N]), _ = s.useMemo(() => ({
-    width: "".concat(N, "px"),
+  }, [n, x]), _ = s.useMemo(() => ({
+    width: "".concat(x, "px"),
     background: n <= 0 ? "none" : "linear-gradient(to right, ".concat(r, ", ").concat(a, ")")
-  }), [a, r, n, N]);
+  }), [a, r, n, x]);
   return (0, i.jsxs)("div", {
-    className: p.wrapper,
-    ref: g,
+    className: g.wrapper,
+    ref: p,
     children: [(0, i.jsxs)("div", {
-      className: l()(p.container, c),
+      className: l()(g.container, c),
       style: _,
       children: [(0, i.jsx)("div", {
-        className: p.progress,
-        style: x
-      }), 0 !== N && (0, i.jsx)(u.Z, {
-        width: N,
-        className: l()(p.notches, f[t])
+        className: g.progress,
+        style: N
+      }), 0 !== x && (0, i.jsx)(u.Z, {
+        width: x,
+        className: l()(g.notches, f[t])
       })]
     }), m]
   })

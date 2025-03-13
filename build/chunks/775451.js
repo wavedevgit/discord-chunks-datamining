@@ -13,13 +13,13 @@ var r = n(200651),
   d = n(906732),
   u = n(335131),
   m = n(341907),
-  p = n(23547),
-  g = n(790542),
+  g = n(23547),
+  p = n(790542),
   h = n(317257),
   f = n(120786),
   b = n(970815),
-  N = n(82856),
-  x = n(981631),
+  x = n(82856),
+  N = n(981631),
   _ = n(215023),
   E = n(388032),
   j = n(577956);
@@ -39,24 +39,24 @@ let C = {
       className: I
     } = e, {
       balance: y
-    } = (0, g.A)(), [A, P] = i.useState(h.b.DEFAULT), [R, D] = i.useState(!1), [Z, w] = i.useState(!1), k = (0, l.TH)(), {
+    } = (0, p.A)(), [A, P] = i.useState(h.b.DEFAULT), [R, D] = i.useState(!1), [Z, w] = i.useState(!1), k = (0, l.TH)(), {
       analyticsLocations: W
     } = (0, d.ZP)(c.Z.VIRTUAL_CURRENCY_BALANCE_WIDGET), L = i.useRef(null), {
       shouldOpen: B
-    } = (0, N.lJ)({
+    } = (0, x.lJ)({
       backgroundElementRef: L
     }), {
       shouldOpen: M
-    } = (0, p.Mm)({
+    } = (0, g.Mm)({
       backgroundElementRef: L,
       isCoachmarkEnabled: O,
-      onCloseCallback: x.dG4,
-      onClickPill: x.dG4,
+      onCloseCallback: N.dG4,
+      onClickPill: N.dG4,
       linkOnClick: () => {
         (0, m.navigateToQuestHome)()
       },
       ctaOnClick: () => {
-        k.pathname !== x.Z5c.COLLECTIBLES_SHOP && (0, u.mK)({
+        k.pathname !== N.Z5c.COLLECTIBLES_SHOP && (0, u.mK)({
           openInLayer: !1,
           tab: _.AW.ORBS,
           analyticsLocations: W,
@@ -66,8 +66,8 @@ let C = {
     }), U = M || B;
     i.useEffect(() => {
       if (!O) return;
-      let e = (0, p.wH)();
-      (0, N.Pe)() || e || U ? (w(!0), D(!1)) : w(!1)
+      let e = (0, g.wH)();
+      (0, x.Pe)() || e || U ? (w(!0), D(!1)) : w(!1)
     }, [O, U]);
     let V = i.useCallback(() => {
         let e = !R;

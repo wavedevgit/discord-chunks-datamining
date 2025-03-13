@@ -1,0 +1,58 @@
+/**
+  Module ID: 83909
+  Original File Name: ef8bce25c12dfac6
+**/
+.content_b97ca2 {
+    padding: 24px
+}
+
+.header_b97ca2 {
+    text-align: center
+}
+
+.notes_b97ca2 {
+    margin: 32px 0
+}
+
+.note_b97ca2 {
+    display: flex;
+    align-items: center;
+    gap: 16px
+}
+
+.noteDivider_b97ca2 {
+    margin: 16px 0
+}
+
+.linksContainer_b97ca2 {
+    background-color: var(--bg-mod-faint);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    margin-top: 4px
+}
+
+.link_b97ca2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 16px;
+    cursor: pointer
+}
+
+.link_b97ca2:hover {
+    background-color: var(--background-accent)
+}
+
+.linkDivider_b97ca2 {
+    width: auto;
+    margin: 0 16px
+}
+
+.buttonsContainer_b97ca2 {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    margin-top: 24px
+}
+
+/*# sourceMappingURL=ef8bce25c12dfac6.css.map*/

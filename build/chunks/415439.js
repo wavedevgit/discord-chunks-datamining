@@ -15,22 +15,22 @@ var r = n(442837),
   d = n(87005),
   u = n(895924),
   m = n(812236),
-  p = n(740492),
-  g = n(973616),
+  g = n(740492),
+  p = n(973616),
   h = n(592125),
   f = n(626135),
   b = n(823379),
-  N = n(728345),
-  x = n(812206),
+  x = n(728345),
+  N = n(812206),
   _ = n(981631);
 async function E(e, t, n) {
   t(e.id);
   let r = e.bot;
   if (null == r) try {
     var s;
-    if (r = null === (s = x.Z.getApplication(e.id)) || void 0 === s ? void 0 : s.bot, null == r) {
-      let t = await (0, N.UM)(e.id);
-      e = t, r = g.ZP.createFromServer(t).bot
+    if (r = null === (s = N.Z.getApplication(e.id)) || void 0 === s ? void 0 : s.bot, null == r) {
+      let t = await (0, x.UM)(e.id);
+      e = t, r = p.ZP.createFromServer(t).bot
     }
   } catch (e) {
     t(void 0);
@@ -83,7 +83,7 @@ function j(e, t) {
 }
 
 function C() {
-  let e = (0, r.e7)([p.ZP], () => p.ZP.showPlayAgain),
+  let e = (0, r.e7)([g.ZP], () => g.ZP.showPlayAgain),
     {
       frecentApps: t
     } = O();

@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(933970),
   u = n(340453),
   m = n(292352),
-  p = n(635357),
-  g = n(388032),
+  g = n(635357),
+  p = n(388032),
   h = n(944921);
 
 function f(e) {
@@ -71,7 +71,7 @@ function f(e) {
       className: h.actions,
       children: (0, r.jsx)(d.Z, {
         icon: o.Dio,
-        tooltip: g.NW.string(p.Z.l20ZZm),
+        tooltip: p.NW.string(g.Z.l20ZZm),
         onClick: f
       })
     })]

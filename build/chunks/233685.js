@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
@@ -14,7 +14,7 @@ var i = n(442837),
   u = n(107248),
   m = n(938839);
 
-function p() {
+function g() {
   let e = (0, i.e7)([l.Z], () => l.Z.getSettings().storageLocation),
     t = async () => {
       let e = await a.Z.fileManager.showOpenDialog({

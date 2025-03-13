@@ -17,12 +17,12 @@ function m() {
   let t = (0, i.e7)([l.Z], () => l.Z.getStatus()),
     n = null !== (e = (0, o.u5)(t)) && void 0 !== e ? e : "",
     m = t === c.Sk.INVISIBLE || t === c.Sk.OFFLINE,
-    p = (0, a.Vm)({
+    g = (0, a.Vm)({
       location: "AccountProfilePopoutMenuItemStatusLabel"
     });
   return (0, r.jsxs)("div", {
     className: u.container,
-    children: [n, n.length > 0 && p && m && (0, r.jsx)(s.ua7, {
+    children: [n, n.length > 0 && g && m && (0, r.jsx)(s.ua7, {
       text: d.NW.string(d.t.L99HQk),
       children: e => (0, r.jsx)(s.P4T, function(e) {
         for (var t = 1; t < arguments.length; t++) {

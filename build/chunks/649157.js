@@ -15,7 +15,7 @@ var r = n(200651),
 function m() {
   let e = (0, s.e7)([o.default], () => o.default.locale),
     [t, m] = i.useState(e),
-    [p] = i.useState(() => (0, c.u5)().map(e => {
+    [g] = i.useState(() => (0, c.u5)().map(e => {
       var t, i;
       let s;
       try {
@@ -70,7 +70,7 @@ function m() {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
       }), t
     })),
-    g = i.useCallback(e => {
+    p = i.useCallback(e => {
       let {
         value: t
       } = e;
@@ -83,8 +83,8 @@ function m() {
       children: (0, r.jsx)(a.xJW, {
         title: c.NW.string(c.t["mx+sp6"]),
         children: (0, r.jsx)(a.FXm, {
-          onChange: g,
-          options: p,
+          onChange: p,
+          options: g,
           value: t
         })
       })

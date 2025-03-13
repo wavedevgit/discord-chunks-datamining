@@ -13,13 +13,13 @@ var i = n(921801),
   d = n(122897),
   u = n(821035),
   m = n(694569),
-  p = n(394655),
-  g = n(540204),
+  g = n(394655),
+  p = n(540204),
   h = n(546957),
   f = n(893996),
   b = n(273927),
-  N = n(864239),
-  x = n(190014),
+  x = n(864239),
+  N = n(190014),
   _ = n(301812),
   E = n(988043),
   j = n(919539),
@@ -32,14 +32,14 @@ let S = () => (0, r.jsx)(f.Z, {
     children: (0, r.jsxs)(h.Z, {
       children: [(0, r.jsx)(i.F, {
         setting: C.s6.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
-        children: (0, r.jsx)(g.Z, {})
-      }), (0, r.jsx)(E.Z, {}), (0, r.jsx)(j.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(x.Z, {})]
+        children: (0, r.jsx)(p.Z, {})
+      }), (0, r.jsx)(E.Z, {}), (0, r.jsx)(j.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(N.Z, {})]
     })
   }),
   T = () => (0, r.jsxs)(f.Z, {
     title: v.NW.string(v.t.xVRG4O),
     webSetting: C.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-    children: [(0, r.jsx)(u.P, {}), (0, r.jsx)(d.Z, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(c.Z, {}), (0, r.jsx)(l.Z, {}), (0, r.jsx)(N.Z, {})]
+    children: [(0, r.jsx)(u.P, {}), (0, r.jsx)(d.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(c.Z, {}), (0, r.jsx)(l.Z, {}), (0, r.jsx)(x.Z, {})]
   }),
   I = () => (0, r.jsxs)(f.Z, {
     title: v.NW.string(v.t["1Qn8iY"]),

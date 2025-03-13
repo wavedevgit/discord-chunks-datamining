@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(415795),
   u = n(592125),
   m = n(984933),
-  p = n(430824),
-  g = n(914010),
+  g = n(430824),
+  p = n(914010),
   h = n(727785),
   f = n(388032),
   b = n(855688);
 
-function N(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function N(e) {
   return e
 }
 
-function x(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -103,9 +103,9 @@ function T(e) {
     o.current = s
   });
   let [d, u] = i.useState(null !== (n = null === (t = s.params) || void 0 === t ? void 0 : t.channelId) && void 0 !== n ? n : void 0), m = i.useCallback(() => {
-    (0, a.ZDy)(async () => e => (0, r.jsx)(I, x(N({}, e), {
+    (0, a.ZDy)(async () => e => (0, r.jsx)(I, N(x({}, e), {
       onSelect: e => {
-        u(e), l.Z.setKeybind(x(N({}, o.current), {
+        u(e), l.Z.setKeybind(N(x({}, o.current), {
           params: {
             channelId: e
           }
@@ -140,8 +140,8 @@ function I(e) {
     transitionState: t,
     onClose: n,
     onSelect: l
-  } = e, c = i.useId(), N = i.useRef(null), {
-    mouseFocusEnabled: x,
+  } = e, c = i.useId(), x = i.useRef(null), {
+    mouseFocusEnabled: N,
     enableMouseFocus: _,
     disableMouseFocus: C
   } = function() {
@@ -167,8 +167,8 @@ function I(e) {
     autocompleterBeforeCreateSearchContext: j
   }), A = function(e) {
     let t = "" !== e,
-      n = (0, s.Wu)([m.ZP, u.Z, g.Z], () => {
-        let e = g.Z.getGuildId();
+      n = (0, s.Wu)([m.ZP, u.Z, p.Z], () => {
+        let e = p.Z.getGuildId();
         if (t || null == e) return [];
         let n = [];
         for (let t of m.ZP.getVocalChannelIds(e)) {
@@ -193,7 +193,7 @@ function I(e) {
   i.useEffect(() => {
     let {
       current: e
-    } = N;
+    } = x;
     null == e || e.isItemVisible(0, P, !0) || e.scrollToIndex({
       section: 0,
       row: P
@@ -255,7 +255,7 @@ function I(e) {
         innerId: c,
         innerRole: "listbox",
         "aria-label": f.NW.string(f.t["+N3fW1"]),
-        ref: N,
+        ref: x,
         sections: [D],
         renderRow: function(e) {
           let {
@@ -267,13 +267,13 @@ function I(e) {
           })();
           if (null == i) return null;
           let s = null != i.parent_id ? u.Z.getChannel(i.parent_id) : void 0,
-            a = p.Z.getGuild(i.guild_id);
+            a = g.Z.getGuild(i.guild_id);
           return (0, r.jsx)(d.$W, {
             id: i.id,
             channel: i,
             category: s,
             focused: P === t,
-            onMouseEnter: () => x.current && R(t),
+            onMouseEnter: () => N.current && R(t),
             onClick: () => {
               l(i.id), n()
             },
@@ -303,12 +303,12 @@ function y(e) {
     channel: n,
     category: i,
     guild: l
-  } = (0, s.cj)([u.Z, p.Z], () => {
+  } = (0, s.cj)([u.Z, g.Z], () => {
     let e = null != t ? u.Z.getChannel(t) : void 0;
     return null != e ? {
       channel: e,
       category: null != e.parent_id ? u.Z.getChannel(e.parent_id) : void 0,
-      guild: null != e.guild_id ? p.Z.getGuild(e.guild_id) : void 0
+      guild: null != e.guild_id ? g.Z.getGuild(e.guild_id) : void 0
     } : {
       channel: void 0,
       category: void 0,

@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  z: () => p
+  z: () => g
 });
 var r = n(200651),
   i = n(120356),
@@ -53,17 +53,17 @@ let u = {
     lg: "md"
   };
 
-function p(e) {
+function g(e) {
   var {
     role: t = "button",
     variant: n = "primary",
     size: i = "md",
-    text: p,
-    icon: g,
+    text: g,
+    icon: p,
     iconPosition: h = "end",
     iconOpticalOffsetMargin: f = 0,
     focusProps: b
-  } = e, N = function(e, t) {
+  } = e, x = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -79,8 +79,8 @@ function p(e) {
     return i
   }(e, ["role", "variant", "size", "text", "icon", "iconPosition", "iconOpticalOffsetMargin", "focusProps"]);
 
-  function x() {
-    if (null == g) return;
+  function N() {
+    if (null == p) return;
     let e = function() {
       if (0 === f) return {};
       switch (h) {
@@ -95,7 +95,7 @@ function p(e) {
       }
       return {}
     }();
-    return (0, r.jsx)(g, {
+    return (0, r.jsx)(p, {
       color: "currentColor",
       style: e,
       size: m[i]
@@ -105,15 +105,15 @@ function p(e) {
     children: (0, r.jsxs)("button", d(c({
       role: t,
       className: s()(o.button, o[i], o[n])
-    }, N), {
-      children: [null != g && "start" === h && (0, r.jsx)(x, {}), (0, r.jsx)(l.x, {
+    }, x), {
+      children: [null != p && "start" === h && (0, r.jsx)(N, {}), (0, r.jsx)(l.x, {
         tag: "span",
         variant: u[i],
         color: "none",
         className: o.text,
         lineClamp: 1,
-        children: p
-      }), null != g && "end" === h && (0, r.jsx)(x, {})]
+        children: g
+      }), null != p && "end" === h && (0, r.jsx)(N, {})]
     }))
   }))
 }

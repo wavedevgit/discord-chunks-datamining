@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(931240),
   u = n(353093),
   m = n(170871),
-  p = n(981631),
-  g = n(388032),
+  g = n(981631),
+  p = n(388032),
   h = n(569848);
 let f = (0, l.hQ)(),
   b = i.memo(function(e) {
@@ -28,7 +28,7 @@ let f = (0, l.hQ)(),
         label: t.name,
         value: t.id
       }), e
-    }, []), [t]), N = i.useCallback(e => {
+    }, []), [t]), x = i.useCallback(e => {
       var t, i;
       if (null == e) return null;
       let s = n.get(e.value);
@@ -42,27 +42,27 @@ let f = (0, l.hQ)(),
         guildIcon: s.icon,
         guildIconSize: 32
       })
-    }, [n]), x = i.useCallback(e => {
+    }, [n]), N = i.useCallback(e => {
       let t = e[0];
       return null == t ? null : (0, r.jsx)(r.Fragment, {
-        children: N(t)
+        children: x(t)
       })
-    }, [N]), _ = i.useCallback(e => (0, d.nE)(e, !0, p.Sbl.USER_SETTINGS), []), E = i.useCallback(e => e === l, [l]), j = i.useCallback(e => e, []), C = i.useCallback(() => (0, d.nE)(null, !1), []);
+    }, [x]), _ = i.useCallback(e => (0, d.nE)(e, !0, g.Sbl.USER_SETTINGS), []), E = i.useCallback(e => e === l, [l]), j = i.useCallback(e => e, []), C = i.useCallback(() => (0, d.nE)(null, !1), []);
     return (0, r.jsxs)(o.Z, {
-      title: g.NW.string(g.t.umdfaG),
+      title: p.NW.string(p.t.umdfaG),
       titleId: f,
       children: [(0, r.jsx)(a.Text, {
         className: h.subtitle,
         variant: "text-sm/normal",
-        children: g.NW.string(g.t.Mrf7fX)
+        children: p.NW.string(p.t.Mrf7fX)
       }), (0, r.jsx)(a.PhF, {
         className: h.select,
         optionClassName: h.selectPopout,
         isSelected: E,
         options: b,
         select: _,
-        renderOptionValue: x,
-        renderOptionLabel: N,
+        renderOptionValue: N,
+        renderOptionLabel: x,
         serialize: j,
         clear: C,
         clearable: null != l

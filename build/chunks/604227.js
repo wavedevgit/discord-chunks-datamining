@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 }), n(47120), n(757143), n(301563), n(653041);
 var r = n(200651);
 n(192379);
@@ -14,15 +14,15 @@ var i = n(525654),
   u = n(388032),
   m = n(532111);
 
-function p() {
-  var e, t, n, i, p;
-  let g = window.GLOBAL_ENV.RELEASE_CHANNEL,
-    h = "377444",
-    f = "d313db982921a1f8deef81705123558abc85dbdd".substring(0, 7),
+function g() {
+  var e, t, n, i, g;
+  let p = window.GLOBAL_ENV.RELEASE_CHANNEL,
+    h = "377456",
+    f = "d9fd9deee6e86d2cb0d100b045a6d1d59d214a00".substring(0, 7),
     b = null === l.Z || void 0 === l.Z ? void 0 : l.Z.remoteApp.getVersion(),
-    N = null === l.Z || void 0 === l.Z ? void 0 : null === (e = (t = l.Z.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t),
-    x = null === l.Z || void 0 === l.Z ? void 0 : null === (n = (i = l.Z.remoteApp).getAppArch) || void 0 === n ? void 0 : n.call(i),
-    _ = null === (p = o.C.getCurrentBuildOverride().overrides) || void 0 === p ? void 0 : p.discord_web,
+    x = null === l.Z || void 0 === l.Z ? void 0 : null === (e = (t = l.Z.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t),
+    N = null === l.Z || void 0 === l.Z ? void 0 : null === (n = (i = l.Z.remoteApp).getAppArch) || void 0 === n ? void 0 : n.call(i),
+    _ = null === (g = o.C.getCurrentBuildOverride().overrides) || void 0 === g ? void 0 : g.discord_web,
     E = function() {
       var e;
       let t = null === s() || void 0 === s() ? void 0 : null === (e = s().os) || void 0 === e ? void 0 : e.toString();
@@ -31,8 +31,8 @@ function p() {
         [r, i, a] = d.ZP.parsedOSRelease;
       return t.includes("Windows 10") && void 0 !== a && a >= 22e3 && (t = t.replace("Windows 10", "Windows 11")), t.includes("OS X 10.15.7") && void 0 !== r && r >= 20 && (t = "macOS ".concat(r - 9)), "".concat(t, " (").concat(n, ")")
     }(),
-    j = [g, h, "(".concat(f, ")")];
-  return null != b && (j.push("Host ".concat(b)), null != x && j.push(x.toLowerCase()), null != N && j.push("(".concat(N, ")"))), j.push("Build Override: ".concat(null != _ ? _.id : "N/A")), null != E && j.push(E), (0, r.jsx)(c.Z, {
+    j = [p, h, "(".concat(f, ")")];
+  return null != b && (j.push("Host ".concat(b)), null != N && j.push(N.toLowerCase()), null != x && j.push("(".concat(x, ")"))), j.push("Build Override: ".concat(null != _ ? _.id : "N/A")), null != E && j.push(E), (0, r.jsx)(c.Z, {
     copyValue: j.join(" "),
     text: u.NW.string(u.t["9Al4QU"]),
     "aria-label": !1,
@@ -65,7 +65,7 @@ function p() {
             className: m.line,
             variant: "text-xs/normal",
             color: "text-muted",
-            children: [g, " ", h, " ", (0, r.jsxs)("span", {
+            children: [p, " ", h, " ", (0, r.jsxs)("span", {
               className: m.versionHash,
               children: ["(", f, ")"]
             })]
@@ -84,11 +84,11 @@ function p() {
               className: m.line,
               variant: "text-xs/normal",
               color: "text-muted",
-              children: ["Host ", b, " ", null != x ? (0, r.jsxs)("span", {
+              children: ["Host ", b, " ", null != N ? (0, r.jsxs)("span", {
                 className: m.appArch,
-                children: [x.toLowerCase(), " "]
-              }) : null, null != N ? (0, r.jsxs)("span", {
-                children: ["(", N, ")"]
+                children: [N.toLowerCase(), " "]
+              }) : null, null != x ? (0, r.jsxs)("span", {
+                children: ["(", x, ")"]
               }) : null]
             }), " "]
           }) : null, null != E ? (0, r.jsx)(a.Text, {

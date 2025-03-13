@@ -13,8 +13,8 @@ var i = n(120356),
   d = n(985754),
   u = n(222727),
   m = n(318747),
-  p = n(409100),
-  g = n(474936),
+  g = n(409100),
+  p = n(474936),
   h = n(981631),
   f = n(174541);
 let b = function(e) {
@@ -23,13 +23,13 @@ let b = function(e) {
     smallGap: n
   } = e, i = t.countryCode, b = (0, a.e7)([o.default], () => o.default.locale);
   (0, u.U)(h.jXE.SETTINGS_PREMIUM_BANNER, i);
-  let N = (0, a.e7)([c.ZP], () => c.ZP.getPremiumTypeSubscription()),
+  let x = (0, a.e7)([c.ZP], () => c.ZP.getPremiumTypeSubscription()),
     {
-      localizedPricingBannerHeader: x,
+      localizedPricingBannerHeader: N,
       localizedPricingBannerBody: _
     } = (0, d.vB)({
       localizedPricingPromo: t,
-      subscription: N,
+      subscription: x,
       userLocale: b
     }),
     E = i.toLowerCase() + "Banner";
@@ -43,7 +43,7 @@ let b = function(e) {
     }), (0, r.jsx)(l.X6q, {
       className: f.bannerHeading,
       variant: "heading-xl/semibold",
-      children: x
+      children: N
     }), (0, r.jsx)("div", {
       className: f.textContainer,
       children: (0, r.jsx)(l.Text, {
@@ -54,13 +54,13 @@ let b = function(e) {
       })
     }), (0, r.jsxs)("div", {
       className: f.ctaButtonContainer,
-      children: [(0, r.jsx)(p.Z, {
+      children: [(0, r.jsx)(g.Z, {
         forceInverted: !0,
         className: f.ctaButton,
-        subscriptionTier: g.Si.TIER_2
+        subscriptionTier: p.Si.TIER_2
       }), (0, r.jsx)(m.Z, {
         forceWhite: !0,
-        subscriptionTier: g.Si.TIER_2,
+        subscriptionTier: p.Si.TIER_2,
         className: f.ctaButton
       })]
     })]

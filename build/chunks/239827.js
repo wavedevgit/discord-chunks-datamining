@@ -15,8 +15,8 @@ let d = i.forwardRef(function(e, t) {
       numPages: d,
       onChangePage: u,
       children: m,
-      className: p,
-      showPageCount: g = !0
+      className: g,
+      showPageCount: p = !0
     } = e,
     h = function(e, t) {
       if (null == e) return {};
@@ -53,7 +53,7 @@ let d = i.forwardRef(function(e, t) {
     }
     return e
   }({
-    className: a()(c.__invalid_paginator, p),
+    className: a()(c.__invalid_paginator, g),
     ref: t
   }, h), i = i = {
     children: [m, (0, r.jsxs)("div", {
@@ -70,7 +70,7 @@ let d = i.forwardRef(function(e, t) {
           className: c.pageButtonIcon,
           "aria-label": o.NW.string(o.t.vgfxaG)
         })
-      }), g ? (0, r.jsx)("div", {
+      }), p ? (0, r.jsx)("div", {
         className: c.pageIndicator,
         children: o.NW.format(o.t.MtpIws, {
           currentPage: s + 1,

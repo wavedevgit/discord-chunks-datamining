@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -12,7 +12,7 @@ var r = n(200651),
   d = n(584825),
   u = n(931547),
   m = n(388032);
-let p = e => {
+let g = e => {
   let [t, n] = i.useState(!1), [r, s] = i.useState(null);
   return {
     resetRenewalMutation: async t => {
@@ -30,7 +30,7 @@ let p = e => {
   }
 };
 
-function g(e) {
+function p(e) {
   let {
     groupListingId: t,
     subscription: n,
@@ -38,14 +38,14 @@ function g(e) {
   } = e, {
     analyticsLocations: l
   } = (0, c.ZP)(o.Z.PENDING_PLAN_CHANGE_NOTICE), {
-    resetRenewalMutation: g,
+    resetRenewalMutation: p,
     submitting: h,
     error: f
-  } = p(l), b = (0, d._k)(t, {
+  } = g(l), b = (0, d._k)(t, {
     includeSoftDeleted: !0
   }), {
-    currentListing: N,
-    nextListing: x
+    currentListing: x,
+    nextListing: N
   } = i.useMemo(() => {
     if ((null == n ? void 0 : n.renewalMutations) == null) return {
       currentListing: void 0,
@@ -58,16 +58,16 @@ function g(e) {
       nextListing: b.find(e => e.subscription_plans[0].id === t)
     }
   }, [n, b]);
-  if (null == n || null == N || null == x) return null;
+  if (null == n || null == x || null == N) return null;
   let _ = a()(n.currentPeriodEnd).format("MMM DD, YYYY");
   return (0, r.jsx)(u.Z, {
     message: m.NW.format(m.t.chw89f, {
-      currentListing: N.name,
-      nextListing: x.name,
+      currentListing: x.name,
+      nextListing: N.name,
       changeDate: _
     }),
     error: null == f ? void 0 : f.message,
-    onClick: () => g(n),
+    onClick: () => p(n),
     submitting: h,
     ctaMessage: m.NW.string(m.t.De4wIy),
     className: s

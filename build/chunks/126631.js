@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => N
+  Z: () => x
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(131704),
   u = n(993413),
   m = n(981631),
-  p = n(388032),
-  g = n(253182);
+  g = n(388032),
+  p = n(253182);
 let h = (0, c.hQ)(),
   f = (0, d.kt)({
     id: "1",
@@ -21,37 +21,37 @@ let h = (0, c.hQ)(),
   }),
   b = (0, c.hQ)();
 
-function N(e) {
+function x(e) {
   let {
     sectionTitle: t,
     errors: n,
     onBioChange: c,
     pendingBio: d,
-    placeholder: N,
-    currentBio: x,
+    placeholder: x,
+    currentBio: N,
     disabled: _ = !1
-  } = e, [E, j] = i.useState(null != d ? d : x), [C, O] = i.useState((0, l.JM)(E)), v = i.useRef(!1);
+  } = e, [E, j] = i.useState(null != d ? d : N), [C, O] = i.useState((0, l.JM)(E)), v = i.useRef(!1);
   return i.useEffect(() => {
     if (void 0 === d) {
-      let e = (0, l.JM)(x);
-      j(x), O(e)
+      let e = (0, l.JM)(N);
+      j(N), O(e)
     }
-  }, [d, x]), (0, r.jsxs)(u.Z, {
+  }, [d, N]), (0, r.jsxs)(u.Z, {
     title: t,
     titleId: h,
-    description: p.NW.string(p.t.Bbw6AQ),
+    description: g.NW.string(g.t.Bbw6AQ),
     errors: n,
     disabled: _,
     children: [(0, r.jsx)(o.Z, {
       "aria-describedby": b,
       "aria-labelledby": h,
-      className: g.bioTextAreaContainer,
-      innerClassName: g.bioTextArea,
+      className: p.bioTextAreaContainer,
+      innerClassName: p.bioTextArea,
       maxCharacterCount: m.tPV,
       onChange: function(e, t, n) {
         t !== E && (j(t), O(n), c(t))
       },
-      placeholder: N,
+      placeholder: x,
       channel: f,
       textValue: E,
       richValue: C,
@@ -73,7 +73,7 @@ function N(e) {
       }
     }), (0, r.jsx)(s.nn4, {
       id: b,
-      children: p.NW.format(p.t["+DFxLS"], {
+      children: g.NW.format(g.t["+DFxLS"], {
         maxLength: m.tPV
       })
     })]

@@ -12,10 +12,10 @@ var r = n(200651),
   d = n(823379),
   u = n(997950),
   m = n(816108),
-  p = n(388032),
-  g = n(658162);
+  g = n(388032),
+  p = n(658162);
 let h = {
-  label: () => p.NW.string(p.t["32u1Dw"]),
+  label: () => g.NW.string(g.t["32u1Dw"]),
   value: u.Th
 };
 
@@ -23,16 +23,16 @@ function f() {
   let {
     selectedGuildId: e,
     setSelectedGuildId: t
-  } = (0, u.xu)(), n = (0, s.e7)([c.ZP], () => c.ZP.getFlattenedGuildIds()), p = (0, s.e7)([o.Z], () => o.Z.getGuilds()), {
+  } = (0, u.xu)(), n = (0, s.e7)([c.ZP], () => c.ZP.getFlattenedGuildIds()), g = (0, s.e7)([o.Z], () => o.Z.getGuilds()), {
     hideGuildOptions: f,
     hideGlobalOption: b
-  } = (0, m.b)(), N = n[0];
+  } = (0, m.b)(), x = n[0];
   i.useEffect(() => {
-    (!b || !f) && (e === u.Th && e !== N && b && t(N), e !== u.Th && f && t(u.Th))
-  }, [e, t, b, f, N]);
-  let x = i.useMemo(() => {
+    (!b || !f) && (e === u.Th && e !== x && b && t(x), e !== u.Th && f && t(u.Th))
+  }, [e, t, b, f, x]);
+  let N = i.useMemo(() => {
       let e = f ? [] : n.map(e => {
-        let t = p[e];
+        let t = g[e];
         return null == t ? null : {
           label: t.name,
           value: t.id
@@ -71,31 +71,31 @@ function f() {
         }), t))
       }
       return e
-    }, [f, n, b, p]),
+    }, [f, n, b, g]),
     _ = i.useCallback(e => {
       let t = (null == e ? void 0 : e.label) === h.label() && (null == e ? void 0 : e.value) === h.value;
       return null == e || "" === e.value || t ? (0, r.jsx)("div", {
-        className: g.clydeIconContainer,
+        className: p.clydeIconContainer,
         children: (0, r.jsx)(a.gw7, {
           size: "sm",
           color: "white",
           "aria-hidden": !0,
-          className: g.guildSelectOptionIcon
+          className: p.guildSelectOptionIcon
         })
       }) : (0, r.jsx)(l.Z, {
-        className: g.guildSelectOptionIcon,
-        guild: p[e.value],
+        className: p.guildSelectOptionIcon,
+        guild: g[e.value],
         size: l.Z.Sizes.SMALLER,
         active: !0
       })
-    }, [p]);
+    }, [g]);
   return (0, r.jsx)(a.VcW, {
-    wrapperClassName: g.searchableSelect,
+    wrapperClassName: p.searchableSelect,
     onChange: e => {
       t(e)
     },
     value: e,
-    options: x,
+    options: N,
     renderOptionPrefix: _
   })
 }

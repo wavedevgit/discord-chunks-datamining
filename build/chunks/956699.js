@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(442837),
   u = n(692547),
   m = n(481060),
-  p = n(570140),
-  g = n(661111),
+  g = n(570140),
+  p = n(661111),
   h = n(179658),
   f = n(491428),
   b = n(225433),
-  N = n(484614),
-  x = n(615287),
+  x = n(484614),
+  N = n(615287),
   _ = n(386506),
   E = n(865427),
   j = n(802098),
@@ -465,7 +465,7 @@ class $ extends i.Component {
       allowLoggedOut: o,
       experiments: c,
       experimentsError: d
-    } = this.state, u = M.S6.find(t => t.value === e), p = s.map(e => ({
+    } = this.state, u = M.S6.find(t => t.value === e), g = s.map(e => ({
       label: e,
       value: e
     }));
@@ -514,7 +514,7 @@ class $ extends i.Component {
           className: G.marginBottom20,
           children: (0, r.jsx)(m.q4e, {
             value: null,
-            options: p,
+            options: g,
             onChange: this.handleRemoveAllowedVersion,
             isDisabled: 0 === s.length
           })
@@ -606,7 +606,7 @@ class $ extends i.Component {
           children: [(0, r.jsx)(O.Z.Child, {
             wrap: !0,
             basis: "75%",
-            children: (0, r.jsx)(N.Z, {
+            children: (0, r.jsx)(x.Z, {
               value: n
             })
           }), (0, r.jsx)(m.zxk, {
@@ -867,7 +867,7 @@ function en() {
     t = (0, d.e7)([y.default], () => y.default.getForcedRenderMode()),
     [n, s] = i.useState(!1),
     [a, l] = i.useState(""),
-    o = e || t === x.R5.OUT_OF_PROCESS_V2 || t === x.R5.OUT_OF_PROCESS_V3 || t === x.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION;
+    o = e || t === N.R5.OUT_OF_PROCESS_V2 || t === N.R5.OUT_OF_PROCESS_V3 || t === N.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION;
   return (i.useEffect(() => {
     (async () => {
       l(await (0, Z.getOverlayURL)())
@@ -897,7 +897,7 @@ function en() {
         setting: L.s6.DEVELOPER_OPTIONS_CLEAR_CACHES,
         children: (0, r.jsx)(m.zxk, {
           onClick: () => {
-            p.Z.dispatch({
+            g.Z.dispatch({
               type: "CLEAR_CACHES",
               reason: "Requested by user",
               preventWritingCachesAgainThisSession: !0,
@@ -991,8 +991,8 @@ let er = d.ZP.connectStores([R.default], () => ({
     layoutDebuggingEnabled: c,
     isSourceMapsEnabled: d,
     isAnalyticsDebuggerEnabled: u,
-    isIdleStatusIndicatorEnabled: p,
-    onlyShowPreviewAppCollections: g,
+    isIdleStatusIndicatorEnabled: g,
+    onlyShowPreviewAppCollections: p,
     disableAppCollectionsCache: f,
     preventPopoutClose: b
   } = e;
@@ -1075,7 +1075,7 @@ let er = d.ZP.connectStores([R.default], () => ({
         }), (0, r.jsx)(P.F, {
           setting: L.s6.DEVELOPER_OPTIONS_IDLE_STATUS_INDICATOR,
           children: (0, r.jsx)(m.j7V, {
-            value: p,
+            value: g,
             note: "Displays a floating idle status indicator",
             onChange: e => (0, h.y)({
               idleStatusIndicatorEnabled: e
@@ -1105,7 +1105,7 @@ let er = d.ZP.connectStores([R.default], () => ({
         }), (0, r.jsx)(P.F, {
           setting: L.s6.DEVELOPER_OPTIONS_PREVIEW_UNPUBLISHED_COLLECTIONS,
           children: (0, r.jsx)(m.j7V, {
-            value: g,
+            value: p,
             note: "Only show application collections (e.g. in App Directory, App Launcher in text) that have the 'preview' active state. This disables application collections cache, too, so you can see collections updates immediately.",
             onChange: e => (0, h.y)({
               onlyShowPreviewAppCollections: e
@@ -1188,7 +1188,7 @@ function es() {
           onChange: s
         }), (0, r.jsx)(m.zxk, {
           onClick: () => {
-            "" === n ? g.Z.setChangelogOverride(null) : g.Z.setChangelogOverride(n)
+            "" === n ? p.Z.setChangelogOverride(null) : p.Z.setChangelogOverride(n)
           },
           disabled: t === n,
           children: "Update Changelog"

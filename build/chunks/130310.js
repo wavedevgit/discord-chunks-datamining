@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -13,7 +13,7 @@ var i = n(120356),
   d = n(388032),
   u = n(241260),
   m = n(802138);
-let p = e => {
+let g = e => {
     let {
       header: t,
       description: n,
@@ -41,7 +41,7 @@ let p = e => {
       })]
     })
   },
-  g = e => {
+  p = e => {
     let {
       inModal: t
     } = e, n = (0, l.o)(d.NW.string(c.Z.Sm8Gq6), d.NW.string(c.Z.YU7aaW)), i = (0, l.o)(d.NW.string(c.Z["TCzk/f"]), d.NW.string(c.Z["2OqtJC"])), s = (0, l.o)(d.NW.string(c.Z.ASf7XF), d.NW.string(c.Z["82y87e"])), m = (0, l.o)(d.NW.string(c.Z["0QDVFB"]), d.NW.string(c.Z["1xBHHR"]));
@@ -51,7 +51,7 @@ let p = e => {
         variant: "text-xxs/bold",
         color: "header-secondary",
         children: n
-      }), (0, r.jsx)(p, {
+      }), (0, r.jsx)(g, {
         header: d.NW.string(c.Z["/zMYZW"]),
         description: d.NW.string(c.Z.DxFKkZ),
         icon: (0, r.jsx)(a.iFz, {
@@ -61,7 +61,7 @@ let p = e => {
           color: a.TVs.colors.TEXT_PRIMARY.css
         }),
         inModal: t
-      }), (0, r.jsx)(p, {
+      }), (0, r.jsx)(g, {
         header: d.NW.string(c.Z["44NEx8"]),
         description: d.NW.string(c.Z.WrY56O),
         icon: (0, r.jsx)(a.dRF, {
@@ -71,7 +71,7 @@ let p = e => {
           color: a.TVs.colors.TEXT_PRIMARY.css
         }),
         inModal: t
-      }), (0, r.jsx)(p, {
+      }), (0, r.jsx)(g, {
         header: d.NW.string(c.Z["Z3G+8v"]),
         description: d.NW.string(c.Z.KBgAra),
         icon: (0, r.jsx)(o.Z, {
@@ -85,7 +85,7 @@ let p = e => {
         variant: "text-xxs/bold",
         color: "header-secondary",
         children: i
-      }), (0, r.jsx)(p, {
+      }), (0, r.jsx)(g, {
         header: s,
         description: m,
         icon: (0, r.jsx)(a.Dio, {

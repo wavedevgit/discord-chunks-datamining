@@ -13,16 +13,16 @@ var i = n(120356),
   d = n(735825),
   u = n(194511),
   m = n(721239),
-  p = n(557634),
-  g = n(992429);
+  g = n(557634),
+  p = n(992429);
 let h = e => {
   var t;
   let n, i, {
       title: h,
       titleClassName: f,
       buttonClassName: b,
-      perkImage: N,
-      isCarousel: x,
+      perkImage: x,
+      isCarousel: N,
       onCtaClick: _,
       perkComponent: E,
       subtitle: j = "",
@@ -36,13 +36,13 @@ let h = e => {
     y = (null == I ? void 0 : I.nitroTenureStatus) === d.EB.REDEEMABLE;
   switch (null == I ? void 0 : I.nitroTenureStatus) {
     case d.EB.REDEEMABLE:
-      n = g, i = "unlocked icon";
+      n = p, i = "unlocked icon";
       break;
     case d.EB.PENDING:
       n = m, i = "locked icon";
       break;
     case d.EB.REDEEMED:
-      n = p, i = "thumbs up icon";
+      n = g, i = "thumbs up icon";
       break;
     default:
       n = void 0, i = ""
@@ -58,14 +58,14 @@ let h = e => {
       titleClassName: f,
       subtitle: j,
       subtitleClassName: v
-    }), null != N && (0, r.jsxs)("div", {
+    }), null != x && (0, r.jsxs)("div", {
       className: s()(u.relative, {
-        [u.cardImage]: !x
+        [u.cardImage]: !N
       }),
       children: [(0, r.jsx)("img", {
-        src: N,
+        src: x,
         alt: "",
-        className: x ? A ? u.carouselCardImageGrayscale : u.carouselCardImage : ""
+        className: N ? A ? u.carouselCardImageGrayscale : u.carouselCardImage : ""
       }), A ? (0, r.jsx)("div", {
         className: u.imageOverlayTextContainer,
         children: (0, r.jsx)(a.Text, {

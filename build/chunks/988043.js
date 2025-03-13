@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(976978),
   u = n(695346),
   m = n(639814),
-  p = n(838436),
-  g = n(51331),
+  g = n(838436),
+  p = n(51331),
   h = n(922628),
   f = n(703115),
   b = n(526761),
-  N = n(726985),
-  x = n(736530),
+  x = n(726985),
+  N = n(736530),
   _ = n(981631),
   E = n(388032);
 
@@ -56,16 +56,16 @@ function j(e) {
       }
     })
   };
-  return (0, r.jsx)(p.U, {
-    setting: N.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
-    children: n === x.T ? (0, r.jsx)(g.Z, {
+  return (0, r.jsx)(g.U, {
+    setting: x.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
+    children: n === N.T ? (0, r.jsx)(p.Z, {
       title: E.NW.string(E.t.RAQUSE),
       note: E.NW.string(E.t.wbYDfX),
       value: !C,
       onChange: e => {
         S(!e)
       }
-    }) : (0, r.jsx)(g.Z, {
+    }) : (0, r.jsx)(p.Z, {
       title: E.NW.string(E.t.RAQUSE),
       note: b ? E.NW.string(E.t.V0ka0d) : E.NW.string(E.t.G7c3Xl),
       value: !j,

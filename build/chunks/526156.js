@@ -18,22 +18,22 @@ let d = e => {
     parentSetting: d,
     panelClassName: u,
     defaultTabIndex: m,
-    onTabChange: p
+    onTabChange: g
   } = e, {
-    viewableTabs: g,
+    viewableTabs: p,
     filteredTab: h
-  } = (0, o.a)(n, d), f = null != m ? n[m] : null, b = null !== (t = null != f ? f : h) && void 0 !== t ? t : g[0];
+  } = (0, o.a)(n, d), f = null != m ? n[m] : null, b = null !== (t = null != f ? f : h) && void 0 !== t ? t : p[0];
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.njP, {
       className: c.tabBar,
       selectedItem: b.setting,
       onItemSelect: e => {
-        l.Z.setSection(i, e), null == p || p(e)
+        l.Z.setSection(i, e), null == g || g(e)
       },
       orientation: "horizontal",
       type: "top",
       look: "brand",
-      children: g.map(e => (0, r.jsx)(a.njP.Item, {
+      children: p.map(e => (0, r.jsx)(a.njP.Item, {
         className: c.tab,
         id: e.setting,
         "aria-label": e.title,

@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => N
+  Z: () => x
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(388032),
   m = n(249129);
 
-function p(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,7 +21,7 @@ function p(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let g = {
+let p = {
     [d.gkr.HOUSE_1]: m.membershipDialogHouse1,
     [d.gkr.HOUSE_2]: m.membershipDialogHouse2,
     [d.gkr.HOUSE_3]: m.membershipDialogHouse3
@@ -41,7 +41,7 @@ let g = {
     [d.gkr.HOUSE_2]: u.NW.string(u.t.VNPE6u),
     [d.gkr.HOUSE_3]: u.NW.string(u.t.KNfiTU)
   })[e];
-class N extends i.Component {
+class x extends i.Component {
   render() {
     let {
       houseMembership: e,
@@ -54,7 +54,7 @@ class N extends i.Component {
         houseName: (0, c.X8)(e)
       });
       return (0, r.jsx)("div", {
-        className: a()(m.membershipDialog, g[e]),
+        className: a()(m.membershipDialog, p[e]),
         children: (0, r.jsxs)("div", {
           className: m.membershipDialogContent,
           children: [(0, r.jsxs)(o.Z, {
@@ -128,7 +128,7 @@ class N extends i.Component {
     })
   }
   constructor(...e) {
-    super(...e), p(this, "handleJoinHypeSquadClick", () => {
+    super(...e), g(this, "handleJoinHypeSquadClick", () => {
       (0, l.ZDy)(async () => {
         let {
           default: e
@@ -140,7 +140,7 @@ class N extends i.Component {
             "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
             }))), r.forEach(function(t) {
-              p(e, t, n[t])
+              g(e, t, n[t])
             })
           }
           return e

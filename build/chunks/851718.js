@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -31,7 +31,7 @@ function m(e) {
   return e
 }
 
-function p(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -44,35 +44,35 @@ function p(e, t) {
   }), e
 }
 
-function g(e) {
+function p(e) {
   let {
     subscriptions: t,
     updateHeader: n
-  } = e, [g, h] = i.useState({
+  } = e, [p, h] = i.useState({
     route: c.j.HOME
   }), {
     route: f
-  } = g, b = () => {
+  } = p, b = () => {
     h({
       route: c.j.HOME
     })
-  }, N = e => {
+  }, x = e => {
     h(m({
       route: c.j.SWITCH_APP_PLANS
     }, e)), n(u.NW.string(u.t.VFqtkJ), b)
-  }, [x, _] = i.useState({});
+  }, [N, _] = i.useState({});
   i.useEffect(() => {
     for (let n of t) {
       var e;
       let t = null === (e = n.items[0]) || void 0 === e ? void 0 : e.planId;
-      null != t && (_(e => p(m({}, e), {
+      null != t && (_(e => g(m({}, e), {
         [n.id]: o.G.LOADING
       })), (0, a.vY)(t).then(() => {
-        _(e => p(m({}, e), {
+        _(e => g(m({}, e), {
           [n.id]: o.G.DONE
         }))
       }).catch(() => {
-        _(e => p(m({}, e), {
+        _(e => g(m({}, e), {
           [n.id]: o.G.ERROR
         }))
       }))
@@ -88,15 +88,15 @@ function g(e) {
           var t;
           return (0, r.jsx)(o.Z, {
             subscription: e,
-            navigateToSwitchPlan: N,
-            loadingState: j ? o.G.LOADING : null !== (t = x[e.id]) && void 0 !== t ? t : o.G.LOADING
+            navigateToSwitchPlan: x,
+            loadingState: j ? o.G.LOADING : null !== (t = N[e.id]) && void 0 !== t ? t : o.G.LOADING
           }, e.id)
         })
       });
     case c.j.SWITCH_APP_PLANS:
       let {
         route: C
-      } = g, O = function(e, t) {
+      } = p, O = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
           if (null == e) return {};
@@ -110,8 +110,8 @@ function g(e) {
           for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
         }
         return i
-      }(g, ["route"]);
-      return (0, r.jsx)(d.Z, p(m({}, O), {
+      }(p, ["route"]);
+      return (0, r.jsx)(d.Z, g(m({}, O), {
         navigateToHome: b
       }));
     default:

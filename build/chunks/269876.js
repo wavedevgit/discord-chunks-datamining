@@ -12,28 +12,28 @@ var r = n(200651),
   d = n(692547),
   u = n(481060),
   m = n(846027),
-  p = n(313201),
-  g = n(131951),
+  g = n(313201),
+  p = n(131951),
   h = n(65154),
   f = n(388032),
   b = n(896753),
-  N = n(473845),
-  x = n(612064),
+  x = n(473845),
+  N = n(612064),
   _ = n(802138);
-let E = (0, p.hQ)();
+let E = (0, g.hQ)();
 
 function j() {
   let [e, t] = i.useState(-100), [n, s] = i.useState(!1), {
     threshold: j,
     autoThreshold: C
-  } = (0, l.cj)([g.Z], () => g.Z.getModeOptions()), {
+  } = (0, l.cj)([p.Z], () => p.Z.getModeOptions()), {
     inputMode: O,
     automaticVADSupported: v,
     isEnabled: S
-  } = (0, l.cj)([g.Z], () => ({
-    inputMode: g.Z.getMode(),
-    automaticVADSupported: g.Z.supports(h.AN.AUTOMATIC_VAD),
-    isEnabled: g.Z.isEnabled()
+  } = (0, l.cj)([p.Z], () => ({
+    inputMode: p.Z.getMode(),
+    automaticVADSupported: p.Z.supports(h.AN.AUTOMATIC_VAD),
+    isEnabled: p.Z.isEnabled()
   }));
 
   function T(e, n) {
@@ -49,9 +49,9 @@ function j() {
   i.useEffect(() => {
     let e = new c.V7;
     return e.start(1e3, () => {
-      g.Z.getMediaEngine().on(o.aB.VoiceActivity, T), e.stop()
+      p.Z.getMediaEngine().on(o.aB.VoiceActivity, T), e.stop()
     }), () => {
-      g.Z.getMediaEngine().removeListener(o.aB.VoiceActivity, T), e.stop()
+      p.Z.getMediaEngine().removeListener(o.aB.VoiceActivity, T), e.stop()
     }
   }, []);
   let y = (0, r.jsx)("section", {
@@ -68,7 +68,7 @@ function j() {
       },
       "aria-labelledby": E,
       children: (0, r.jsxs)("div", {
-        className: a()(b.sliderBar, b.microphone, b.inputSensitivityBar, N.bar),
+        className: a()(b.sliderBar, b.microphone, b.inputSensitivityBar, x.bar),
         children: [(0, r.jsx)("div", {
           className: a()(b.fill, b.inputSensitivityBarFill),
           style: {
@@ -98,9 +98,9 @@ function j() {
     title: f.NW.string(f.t["sqUm+v"]),
     titleId: E,
     className: b.sensitivity,
-    children: [v && (0, r.jsx)(p.FG, {
+    children: [v && (0, r.jsx)(g.FG, {
       children: e => (0, r.jsxs)("div", {
-        className: a()(x.horizontal, _.marginBottom4),
+        className: a()(N.horizontal, _.marginBottom4),
         children: [(0, r.jsx)(u.vwX, {
           tag: u.RB0.H3,
           className: _.marginReset,

@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(442837),
   u = n(481060),
   m = n(607070),
-  p = n(994868);
-let g = {
+  g = n(994868);
+let p = {
   mass: 10,
   tension: 550,
   friction: 140
@@ -33,20 +33,20 @@ function h(e) {
     })
   }, 20), [n, s]);
   i.useEffect(() => (window.addEventListener("mousemove", f), () => window.removeEventListener("mousemove", f)), [f]);
-  let [b, N] = (0, u.q_F)(() => ({
+  let [b, x] = (0, u.q_F)(() => ({
     x: 0,
     y: 0,
-    config: g
+    config: p
   }));
   return i.useEffect(() => {
-    N({
+    x({
       x: l.x,
       y: l.y
     })
-  }, [l.x, l.y, N]), (0, r.jsx)(c.animated.div, {
+  }, [l.x, l.y, x]), (0, r.jsx)(c.animated.div, {
     style: {
       transform: (0, c.to)([b.x, b.y], (e, t) => "translate3d(".concat(e, "px, ").concat(t, "px, 0)"))
     },
-    className: a()(p.background, t)
+    className: a()(g.background, t)
   })
 }

@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(205822),
   u = n(329013),
   m = n(594174),
-  p = n(396821),
-  g = n(780771),
+  g = n(396821),
+  p = n(780771),
   h = n(4242),
   f = n(996746),
   b = n(711325),
-  N = n(852630),
-  x = n(731994),
+  x = n(852630),
+  N = n(731994),
   _ = n(276107);
 
 function E(e) {
@@ -55,12 +55,12 @@ function j(e, t) {
 
 function C() {
   var e;
-  let [t, n] = (0, i.useState)(!1), [s, a] = (0, i.useState)(!1), [l, c] = (0, i.useState)(null), m = (0, p.ZP)(e => e.toolsCache), {
+  let [t, n] = (0, i.useState)(!1), [s, a] = (0, i.useState)(!1), [l, c] = (0, i.useState)(null), m = (0, g.ZP)(e => e.toolsCache), {
     setToolsCache: f,
-    removeToolsCache: N
-  } = (0, p.L3)(), {
+    removeToolsCache: x
+  } = (0, g.L3)(), {
     setImgCache: C
-  } = (0, p.W_)(), A = (0, i.useCallback)(e => {
+  } = (0, g.W_)(), A = (0, i.useCallback)(e => {
     let t = m[e];
     null != t && c({
       src: t.url,
@@ -68,7 +68,7 @@ function C() {
       preview: !0
     }), c(t => null == t ? {
       src: e,
-      palette: g.jD,
+      palette: p.jD,
       preview: !0
     } : j(E({}, t), {
       src: e,
@@ -80,8 +80,8 @@ function C() {
       preview: !0
     }))
   }, []), R = (0, i.useCallback)(e => {
-    N(e)
-  }, [N]);
+    x(e)
+  }, [x]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: _.controls,
@@ -141,12 +141,12 @@ function C() {
         }), (0, r.jsx)(d.Z, {
           title: "upload image",
           description: "upload the background",
-          icons: x.pA,
+          icons: N.pA,
           onDrop: async e => {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
               r = await n.arrayBuffer();
-            C(t, t, (0, h.xh)(r)), f(t, t, g.jD)
+            C(t, t, (0, h.xh)(r)), f(t, t, p.jD)
           }
         }), (0, r.jsx)("div", {
           className: _.uploadedArea,
@@ -163,7 +163,7 @@ function C() {
         }), (0, r.jsx)(S, {
           label: "gradient override",
           onChange: e => P({
-            name: g._j,
+            name: p._j,
             darkBackground: e,
             lightBackground: e
           })
@@ -297,17 +297,17 @@ function I(e) {
         className: _.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
-      }), (0, r.jsx)(N.Z, {
+      }), (0, r.jsx)(x.Z, {
         nameplate: t
       }), (0, r.jsx)(o.Text, {
         className: _.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"
       }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(N.Z, {
+        children: [(0, r.jsx)(x.Z, {
           selected: !0,
           nameplate: t
-        }), (0, r.jsx)(N.Z, {
+        }), (0, r.jsx)(x.Z, {
           selected: !0
         })]
       })]

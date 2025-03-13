@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  J2: () => g,
+  J2: () => p,
   _h: () => h
 });
 var r = n(388032),
@@ -13,8 +13,8 @@ var r = n(388032),
   d = n(808236),
   u = n(265665),
   m = n(181793),
-  p = n(338430);
-let g = [{
+  g = n(338430);
+let p = [{
   presetName: "above_the_clouds",
   presetBackgroundUrl: c.Z,
   themeColors: [752280, 9215590],
@@ -39,7 +39,7 @@ let g = [{
   avatarDecorationSkuId: "1144058844004233369"
 }, {
   presetName: "neon_space",
-  presetBackgroundUrl: p.Z,
+  presetBackgroundUrl: g.Z,
   themeColors: [6094952, 1007678],
   bannerImageUrl: o.Z
 }];

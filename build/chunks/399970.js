@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(600164),
   u = n(313201),
   m = n(695103),
-  p = n(388032),
-  g = n(977426),
+  g = n(388032),
+  p = n(977426),
   h = n(802138);
 let f = /^\d+$|^$/;
 
@@ -23,8 +23,8 @@ function b(e) {
     transitionState: n
   } = e, {
     authorizedApplicationId: b,
-    authorizationError: N,
-    authorizing: x
+    authorizationError: x,
+    authorizing: N
   } = (0, s.cj)([m.Z], () => ({
     authorizedApplicationId: m.Z.testModeApplicationId,
     authorizationError: m.Z.error,
@@ -58,19 +58,19 @@ function b(e) {
         id: S,
         tag: "h1",
         className: h.marginReset,
-        children: p.NW.string(p.t.f8fzk5)
+        children: g.NW.string(g.t.f8fzk5)
       }), (0, r.jsx)(a.olH, {
         onClick: t
       })]
     }), (0, r.jsxs)(a.hzk, {
-      className: g.modalContent,
+      className: p.modalContent,
       children: [(0, r.jsx)(a.R94, {
         className: h.marginBottom20,
         type: a.R94.Types.DESCRIPTION,
-        children: p.NW.string(p.t.a6Vilp)
-      }), null == N ? null : (0, r.jsx)(a.kzN, {
+        children: g.NW.string(g.t.a6Vilp)
+      }), null == x ? null : (0, r.jsx)(a.kzN, {
         className: h.marginBottom20,
-        children: N
+        children: x
       }), (0, r.jsx)("form", {
         onSubmit: e => {
           e.preventDefault(), A()
@@ -79,31 +79,31 @@ function b(e) {
           direction: d.Z.Direction.VERTICAL,
           align: d.Z.Align.START,
           children: [(0, r.jsx)(a.xJW, {
-            className: g.inputWrapper,
-            title: p.NW.string(p.t.P6TzgI),
+            className: p.inputWrapper,
+            title: g.NW.string(g.t.P6TzgI),
             required: !0,
             children: (0, r.jsx)(a.oil, {
               value: _,
               maxLength: 19,
-              error: T ? null : p.NW.string(p.t.gPNgKC),
+              error: T ? null : g.NW.string(g.t.gPNgKC),
               onChange: function(e) {
                 E(e)
               },
-              disabled: x
+              disabled: N
             })
           }), (0, r.jsx)(a.xJW, {
-            className: g.inputWrapper,
-            title: p.NW.string(p.t["/GTqXF"]),
+            className: p.inputWrapper,
+            title: g.NW.string(g.t["/GTqXF"]),
             children: (0, r.jsx)(a.q4e, {
               isDisabled: !T || "" === _,
               value: O,
               options: [{
                 value: "localhost",
-                label: p.NW.string(p.t["+Y9Y6u"]),
+                label: g.NW.string(g.t["+Y9Y6u"]),
                 key: "localhost"
               }, {
                 value: "proxy",
-                label: p.NW.string(p.t.uaksyc),
+                label: g.NW.string(g.t.uaksyc),
                 key: "proxy"
               }],
               onChange: function(e) {
@@ -112,21 +112,21 @@ function b(e) {
               placeholder: "URL Origin Type"
             })
           }), "localhost" !== O ? null : (0, r.jsx)(a.xJW, {
-            className: g.inputWrapper,
-            title: p.NW.string(p.t.fF4zxs),
+            className: p.inputWrapper,
+            title: g.NW.string(g.t.fF4zxs),
             required: !0,
             children: (0, r.jsx)(a.oil, {
               value: j,
               maxLength: 5,
               onChange: e => C(e),
-              disabled: x
+              disabled: N
             })
           }), (0, r.jsx)(a.zxk, {
-            submitting: x,
+            submitting: N,
             type: "submit",
             disabled: !T || 0 === _.length || "localhost" === O && 0 === j.length,
             color: y ? a.zxk.Colors.RED : a.zxk.Colors.GREEN,
-            children: y ? p.NW.string(p.t.d6TR3N) : p.NW.string(p.t.qwuK5O)
+            children: y ? g.NW.string(g.t.d6TR3N) : g.NW.string(g.t.qwuK5O)
           })]
         })
       })]

@@ -13,13 +13,13 @@ var r, i = n(230711),
   d = n(981631),
   u = n(526761),
   m = n(388032),
-  p = n(509614),
-  g = n(880511),
+  g = n(509614),
+  p = n(880511),
   h = n(985443),
   f = n(612253),
   b = n(832287),
-  N = n(872532),
-  x = n(91342),
+  x = n(872532),
+  N = n(91342),
   _ = n(181708),
   E = n(821721),
   j = n(158897),
@@ -42,15 +42,15 @@ let w = () => {
         name: "emojis",
         title: m.NW.string(m.t.zY5PPT),
         description: m.NW.string(m.t.R5Xag4),
-        previewImage: p,
-        videoUrl: e ? x.ZP : _.ZP,
+        previewImage: g,
+        videoUrl: e ? N.ZP : _.ZP,
         isCompact: !0
       },
       noLimits: {
         name: "noLimits",
         title: m.NW.string(m.t["6b3ydH"]),
         description: m.NW.string(m.t["Y+IJys"]),
-        previewImage: g,
+        previewImage: p,
         videoUrl: e ? C.ZP : O.ZP,
         isCompact: !0
       }
@@ -67,24 +67,24 @@ let w = () => {
         openWithoutBackstack: !0,
         analyticsLocations: t
       })
-    }, p = (0, o.rO)(), g = c.Z.getArticleURL(d.BhN.REFERRAL_PROGRAM), x = {
+    }, g = (0, o.rO)(), p = c.Z.getArticleURL(d.BhN.REFERRAL_PROGRAM), N = {
       serverProfiles: {
         name: "serverProfiles",
         title: m.NW.string(m.t.I9TYMj),
         description: m.NW.string(m.t.HMSHeH),
         descriptionCta: m.NW.string(m.t.jVcuVV),
         onClick: n,
-        previewImage: N,
-        videoUrl: p ? I.ZP : y.ZP
+        previewImage: x,
+        videoUrl: g ? I.ZP : y.ZP
       },
       referralProgram: {
         name: "referralProgram",
         title: m.NW.string(m.t.tPY4o6),
         description: m.NW.format(m.t.jRPQUF, {
-          learnMoreLink: g
+          learnMoreLink: p
         }),
         previewImage: S.Z,
-        videoUrl: p ? v.ZP : T.ZP
+        videoUrl: g ? v.ZP : T.ZP
       },
       newAppStyles: {
         name: "newAppStyles",
@@ -93,7 +93,7 @@ let w = () => {
         descriptionCta: m.NW.string(m.t.jVcuVV),
         onClick: r,
         previewImage: b,
-        videoUrl: p ? E.ZP : j.ZP
+        videoUrl: g ? E.ZP : j.ZP
       }
     }, _ = {
       showYourStyle: {
@@ -103,7 +103,7 @@ let w = () => {
         descriptionCta: m.NW.string(m.t.jVcuVV),
         previewImage: f,
         onClick: n,
-        videoUrl: p ? A.Z : P.Z
+        videoUrl: g ? A.Z : P.Z
       },
       yourSpace: {
         name: "yourSpace",
@@ -112,8 +112,8 @@ let w = () => {
         descriptionCta: m.NW.string(m.t.jVcuVV),
         previewImage: h,
         onClick: r,
-        videoUrl: p ? R.Z : D.Z
+        videoUrl: g ? R.Z : D.Z
       }
     };
-    return e ? _ : x
+    return e ? _ : N
   }

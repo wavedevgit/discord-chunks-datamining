@@ -16,7 +16,7 @@ function u(e) {
       children: u,
       lineClamp: m = 2
     } = e,
-    p = function(e, t) {
+    g = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -31,14 +31,14 @@ function u(e) {
       }
       return i
     }(e, ["children", "lineClamp"]);
-  let [g, h] = i.useState(!1), [f, b] = i.useState(null), N = null != f && (0, r.jsx)("button", {
+  let [p, h] = i.useState(!1), [f, b] = i.useState(null), x = null != f && (0, r.jsx)("button", {
     className: d.button,
     onClick: () => h(e => !e),
     children: (0, r.jsxs)(o.Text, {
       className: d.seeMore,
       variant: "text-sm/medium",
       color: "text-brand",
-      children: [g ? c.NW.string(c.t["JQX/PT"]) : c.NW.string(c.t.Fbrd8P), g ? (0, r.jsx)(l.u, {
+      children: [p ? c.NW.string(c.t["JQX/PT"]) : c.NW.string(c.t.Fbrd8P), p ? (0, r.jsx)(l.u, {
         color: s.Z.colors.TEXT_BRAND,
         size: "xs"
       }) : (0, r.jsx)(a.C, {
@@ -46,22 +46,22 @@ function u(e) {
         size: "xs"
       })]
     })
-  }), [x, _] = i.useState(null), E = i.useCallback(() => {
-    if (null == x) return;
+  }), [N, _] = i.useState(null), E = i.useCallback(() => {
+    if (null == N) return;
     let {
       scrollHeight: e,
       clientHeight: t
-    } = x;
+    } = N;
     e > t && b({
       truncatedHeight: t,
       expandedHeight: e
     })
-  }, [x]);
+  }, [N]);
   i.useEffect(() => {
     requestAnimationFrame(E)
   }, [E, u, m]);
   let j = "auto";
-  return null != f && (j = g ? "".concat(f.expandedHeight, "px") : "".concat(f.truncatedHeight, "px")), (0, r.jsxs)("div", {
+  return null != f && (j = p ? "".concat(f.expandedHeight, "px") : "".concat(f.truncatedHeight, "px")), (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.Text, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -79,9 +79,9 @@ function u(e) {
         })
       }
       return e
-    }({}, p), n = n = {
+    }({}, g), n = n = {
       className: d.content,
-      lineClamp: g ? void 0 : m,
+      lineClamp: p ? void 0 : m,
       ref: _,
       style: {
         height: j
@@ -96,6 +96,6 @@ function u(e) {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t)), N]
+    }), t)), x]
   })
 }

@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -13,8 +13,8 @@ var i = n(120356),
   d = n(388032),
   u = n(918997),
   m = n(828859),
-  p = n(128216);
-let g = () => {
+  g = n(128216);
+let p = () => {
   let e = (0, l.o)(d.NW.string(c.Z.i4XFEB), d.NW.string(c.Z.eHQZuL));
   return (0, r.jsxs)("div", {
     className: s()(u.container, m.box, m),
@@ -34,7 +34,7 @@ let g = () => {
     }), (0, r.jsx)("div", {
       className: u.artContainer,
       children: (0, r.jsx)("img", {
-        src: p,
+        src: g,
         alt: d.NW.string(c.Z.o4pfFB)
       })
     })]

@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(281598),
   u = n(451593),
   m = n(694539),
-  p = n(146181);
-let g = e => {
+  g = n(146181);
+let p = e => {
     var t, n, i;
     let {
       effect: s,
@@ -22,17 +22,17 @@ let g = e => {
       deleteConfig: c
     } = (0, u.E)();
     return (0, r.jsxs)(o.P3F, {
-      className: p.previewCard,
+      className: g.previewCard,
       onClick: () => {
         l(s)
       },
       children: [(0, r.jsx)("div", {
-        className: p.previewCardImage,
+        className: g.previewCardImage,
         style: {
           backgroundImage: "url(".concat(null === (i = s.config) || void 0 === i ? void 0 : null === (n = i.effects) || void 0 === n ? void 0 : null === (t = n[0]) || void 0 === t ? void 0 : t.base64, ")")
         }
       }), (0, r.jsxs)("div", {
-        className: a()(p.previewCardFooter, p.row),
+        className: a()(g.previewCardFooter, g.row),
         children: [(0, r.jsx)(o.Text, {
           variant: "text-md/bold",
           children: s.name
@@ -70,19 +70,19 @@ function f() {
     }(0, d.Kr)(e.currentTarget.files, f, d.Eo)
   }, [f]);
   return (0, r.jsxs)("div", {
-    className: p.root,
+    className: g.root,
     children: [null == n && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: p.col,
+        className: g.col,
         children: [(0, r.jsx)("div", {
-          className: p.section,
+          className: g.section,
           children: (0, r.jsx)(o.X6q, {
             variant: "heading-lg/bold",
             children: "Profile Effects"
           })
         }), (0, r.jsx)("div", {
-          className: p.grid,
-          children: Object.values(e).map(e => (0, r.jsx)(g, {
+          className: g.grid,
+          children: Object.values(e).map(e => (0, r.jsx)(p, {
             effect: e,
             onClick: e => {
               s(e)
@@ -90,9 +90,9 @@ function f() {
           }, e.id))
         })]
       }), (0, r.jsxs)("div", {
-        className: a()(p.row, p.end, p.section),
+        className: a()(g.row, g.end, g.section),
         children: [(0, r.jsxs)("div", {
-          className: p.uploadButton,
+          className: g.uploadButton,
           children: [(0, r.jsx)(o.Text, {
             variant: "text-md/normal",
             color: "always-white",

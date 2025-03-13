@@ -12,13 +12,13 @@ var r = n(200651),
   d = n(780384),
   u = n(481060),
   m = n(153867),
-  p = n(230711),
-  g = n(493773),
+  g = n(230711),
+  p = n(493773),
   h = n(714338),
   f = n(857595),
   b = n(607070),
-  N = n(627845),
-  x = n(514361),
+  x = n(627845),
+  N = n(514361),
   _ = n(600164),
   E = n(313201),
   j = n(530035),
@@ -123,7 +123,7 @@ let K = {
   },
   ee = () => {
     let e = (0, C.Q3)("ThemeTitle"),
-      t = (0, l.e7)([x.Z], () => x.Z.isPreview),
+      t = (0, l.e7)([N.Z], () => N.Z.isPreview),
       {
         enabled: n
       } = y.Z.useExperiment({
@@ -292,9 +292,9 @@ class et extends i.Component {
       children: (0, r.jsx)(u.R94, {
         type: u.R94.Types.DEFAULT,
         className: G.forcedColorsWarning,
-        children: (0, N.b)() ? V.NW.format(V.t.Jae48P, {
+        children: (0, x.b)() ? V.NW.format(V.t.Jae48P, {
           onClick: () => {
-            p.Z.open(B.oAB.ACCESSIBILITY)
+            g.Z.open(B.oAB.ACCESSIBILITY)
           }
         }) : V.NW.string(V.t.AUMSZG)
       })
@@ -465,7 +465,7 @@ class et extends i.Component {
         className: F.marginTop20,
         children: V.NW.format(V.t["5LEQdX"], {
           onAccessibilityClick() {
-            p.Z.open(B.oAB.ACCESSIBILITY)
+            g.Z.open(B.oAB.ACCESSIBILITY)
           }
         })
       })]
@@ -629,7 +629,7 @@ class en extends et {
         className: G.a11yCallout,
         children: V.NW.format(V.t["5LEQdX"], {
           onAccessibilityClick() {
-            p.Z.open(B.oAB.ACCESSIBILITY)
+            g.Z.open(B.oAB.ACCESSIBILITY)
           }
         })
       });
@@ -654,10 +654,10 @@ function ei() {
     i = w.L1.useSetting(),
     s = w.hg.useSetting(),
     a = w.YC.useSetting();
-  (0, g.ZP)(() => {
+  (0, p.ZP)(() => {
     er(o.z.CLIENT_THEMES_SETTINGS_BADGE), er(o.z.DEKSTOP_CUSTOM_APP_ICON_BADGE), er(o.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK)
   });
-  let c = (0, l.cj)([D.Z, Z.ZP, b.Z, P.default, x.Z], () => {
+  let c = (0, l.cj)([D.Z, Z.ZP, b.Z, P.default, N.Z], () => {
       var e, t;
       return {
         theme: D.Z.theme,
@@ -669,13 +669,13 @@ function ei() {
         messageGroupSpacing: b.Z.messageGroupSpacing,
         displayCompactAvatars: Z.ZP.displayCompactAvatars,
         isStaff: null !== (t = null === (e = P.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff) && void 0 !== t && t,
-        gradientPreset: x.Z.gradientPreset
+        gradientPreset: N.Z.gradientPreset
       }
     }),
     d = (0, C.nm)("UserSettingsAppearance"),
     u = (0, C.o9)("UserSettingsAppearance"),
     m = (0, C.Q3)("UserSettingsAppearance"),
-    p = j.i.useExperiment({
+    g = j.i.useExperiment({
       location: "appearance_settings"
     }, {
       autoTrackExposure: !0
@@ -687,7 +687,7 @@ function ei() {
     timestampHourCycle: s,
     isRefreshEnabled: m,
     isRefreshExperimentEnabled: u,
-    enableCompactMode: p,
+    enableCompactMode: g,
     density: a,
     canOptOutOfRefresh: d
   }, c))

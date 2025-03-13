@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 }), n(47120);
 var r = n(710845),
   i = n(314897),
@@ -44,13 +44,13 @@ function m(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = new r.Z("Guilds"),
-  g = new class {
+let g = new r.Z("Guilds"),
+  p = new class {
     async getAsync(e) {
       let t = performance.now(),
         n = await c.Z.guilds(e).getMany(),
         r = performance.now();
-      return p.verbose("loaded in ".concat(r - t, "ms (guilds: ").concat(n.length, ")")), n
+      return g.verbose("loaded in ".concat(r - t, "ms (guilds: ").concat(n.length, ")")), n
     }
     async getOneAsync(e, t) {
       return await c.Z.guilds(e).get(t)

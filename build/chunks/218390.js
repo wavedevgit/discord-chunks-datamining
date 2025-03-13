@@ -13,13 +13,13 @@ var r = n(200651),
   d = n(622535),
   u = n(780384),
   m = n(481060),
-  p = n(570140),
-  g = n(355467),
+  g = n(570140),
+  p = n(355467),
   h = n(37234),
   f = n(821849),
   b = n(230711),
-  N = n(497321),
-  x = n(634894),
+  x = n(497321),
+  N = n(634894),
   _ = n(410030),
   E = n(607070),
   j = n(100527),
@@ -62,7 +62,7 @@ function et(e) {
     isDiscountApplied: n,
     activeDiscountInfo: i,
     theme: s
-  } = e, a = null != t.trialId, l = t.planIdFromItems === Y.Xh.PREMIUM_YEAR_TIER_2, c = n || a, d = null != t.trialEndsAt ? o()(t.trialEndsAt).diff(o()(), "d") : 0, p = Y.GP[t.planIdFromItems], g = w.ZP.formatPriceString(w.ZP.getDefaultPrice(p.id), p.interval);
+  } = e, a = null != t.trialId, l = t.planIdFromItems === Y.Xh.PREMIUM_YEAR_TIER_2, c = n || a, d = null != t.trialEndsAt ? o()(t.trialEndsAt).diff(o()(), "d") : 0, g = Y.GP[t.planIdFromItems], p = w.ZP.formatPriceString(w.ZP.getDefaultPrice(g.id), g.interval);
   if (c) {
     var h, f, b;
     return (0, r.jsxs)(r.Fragment, {
@@ -78,13 +78,13 @@ function et(e) {
         className: X.trialHeader,
         children: a ? q.NW.format(q.t["2CGBrq"], {
           remainingTime: d,
-          price: g
+          price: p
         }) : l ? q.NW.format(q.t["+qqh6u"], {
           percent: null !== (h = null == i ? void 0 : i.percentage) && void 0 !== h ? h : Y.Bo,
-          regularPrice: g
+          regularPrice: p
         }) : q.NW.formatToPlainString(q.t["3Ziutb"], {
           percent: null !== (f = null == i ? void 0 : i.percentage) && void 0 !== f ? f : Y.M_,
-          regularPrice: g,
+          regularPrice: p,
           numMonths: null !== (b = null == i ? void 0 : i.duration) && void 0 !== b ? b : Y.rt
         })
       })]
@@ -93,7 +93,7 @@ function et(e) {
   return (0, r.jsx)(F.Z, {
     variant: void 0,
     subscriptionTier: Y.Si.TIER_2,
-    interval: p.interval
+    interval: g.interval
   })
 }
 
@@ -109,10 +109,10 @@ function en() {
     o = null !== i && null !== i.planIdFromItems;
   if (!o && s === Y.a$.NONE) return null;
   let d = s !== Y.a$.NONE && !l,
-    p = null !== i && null != i.trialId;
+    g = null !== i && null != i.trialId;
   return (0, r.jsxs)("div", {
     className: a()(X.tierCard, {
-      [X.withTier2Rim]: e || p
+      [X.withTier2Rim]: e || g
     }),
     children: [(0, r.jsxs)("div", {
       className: X.tierInfo,
@@ -296,21 +296,21 @@ let es = function() {
     b = null == h ? void 0 : h.countryCode,
     _ = (0, c.e7)([A.Z], () => A.Z.enabled),
     E = "PremiumManagementSettings";
-  (0, x.j)({
+  (0, N.j)({
     location: E + " auto on",
     autoTrackExposure: !0
-  }), (0, x.j)({
+  }), (0, N.j)({
     location: E + " auto off",
     autoTrackExposure: !1
   }), (0, U.B)(E);
   let y = (0, M.b)(E);
   i.useEffect(() => {
-    p.Z.wait(async () => {
-      _ || e || await Promise.all([g.jg(), g.tZ(), (0, f.Y2)(b, null, K.JjL.DISCOVERY)]), o(!1)
+    g.Z.wait(async () => {
+      _ || e || await Promise.all([p.jg(), p.tZ(), (0, f.Y2)(b, null, K.JjL.DISCOVERY)]), o(!1)
     })
   }, [b, _, e]);
   let [R, Z] = i.useState(!1);
-  if (_) return (0, r.jsx)(N.Z, {});
+  if (_) return (0, r.jsx)(x.Z, {});
   if (e) return (0, r.jsx)(T.c8, {});
   let w = s && null !== n && a,
     k = u !== Y.a$.NONE;

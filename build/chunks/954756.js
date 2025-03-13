@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -12,16 +12,16 @@ var r = n(200651),
   d = n(25990),
   u = n(647699),
   m = n(155433),
-  p = n(388032);
+  g = n(388032);
 
-function g() {
+function p() {
   let e = (0, s.e7)([d.Z], () => d.Z.getIsSubmitDisabled()),
     t = (0, s.e7)([d.Z], () => d.Z.getErrors()),
-    [n, g] = i.useState(!1),
-    h = i.useMemo(() => (null == t ? void 0 : t.message) != null ? null == t ? void 0 : t.message : Object.keys(null != t ? t : {}).length > 0 ? p.NW.string(p.t["84MExs"]) : null, [t]),
+    [n, p] = i.useState(!1),
+    h = i.useMemo(() => (null == t ? void 0 : t.message) != null ? null == t ? void 0 : t.message : Object.keys(null != t ? t : {}).length > 0 ? g.NW.string(g.t["84MExs"]) : null, [t]),
     f = i.useCallback(async () => {
       var e, t, n;
-      g(!0);
+      p(!0);
       let r = d.Z.getAllPending(),
         i = (0, o.ED)(r),
         s = (0, o.g9)(r),
@@ -34,7 +34,7 @@ function g() {
         let e = await (0, c.Z)(s);
         l = l && null !== (n = null == e ? void 0 : e.ok) && void 0 !== n && n, (null == e ? void 0 : e.ok) ? (0, c.pG)() : (0, u.r)()
       }
-      l && (0, a.b9)(), g(!1)
+      l && (0, a.b9)(), p(!1)
     }, []),
     b = i.useCallback(() => {
       (0, a.W3)()

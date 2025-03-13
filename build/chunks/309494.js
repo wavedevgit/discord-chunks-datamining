@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
@@ -13,9 +13,9 @@ var i = n(120356),
   d = n(785717),
   u = n(475413),
   m = n(388032),
-  p = n(304690);
+  g = n(304690);
 
-function g(e) {
+function p(e) {
   let {
     user: t,
     isHovering: n
@@ -53,13 +53,13 @@ function g(e) {
         }
         return e
       }({}, e), i = i = {
-        className: s()(p.hover, {
-          [p.visible]: n
+        className: s()(g.hover, {
+          [g.visible]: n
         }),
-        innerClassName: p.hover,
+        innerClassName: g.hover,
         look: a.zxk.Looks.BLANK,
         size: a.zxk.Sizes.NONE,
-        color: p.hoverColor,
+        color: g.hoverColor,
         themeColor: "none",
         grow: !1,
         "aria-label": m.NW.string(m.t.y5MwJy),

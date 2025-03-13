@@ -19,13 +19,13 @@ var r = n(192379),
   d = n(335131),
   u = n(1870),
   m = n(228624),
-  p = n(605236),
-  g = n(706140),
+  g = n(605236),
+  p = n(706140),
   h = n(243778),
   f = n(594174),
   b = n(580130),
-  N = n(626135),
-  x = n(823379),
+  x = n(626135),
+  N = n(823379),
   _ = n(111361),
   E = n(595878),
   j = n(944880),
@@ -77,7 +77,7 @@ function A() {
       let t = (0, a.e7)([b.Z], () => {
           var e;
           return null !== (e = b.Z.getForApplication(v.CL)) && void 0 !== e ? e : R
-        }, [], x.OL),
+        }, [], N.OL),
         n = (0, a.e7)([f.default], () => {
           let e = f.default.getCurrentUser();
           return null != e && (0, _.M5)(e, v.p9.TIER_2)
@@ -90,7 +90,7 @@ function A() {
       let e = (0, a.e7)([b.Z], () => {
         var e;
         return null !== (e = b.Z.getForApplication(T.XAJ)) && void 0 !== e ? e : R
-      }, [], x.OL);
+      }, [], N.OL);
       return (0, O.Cl)(S.qY, e)
     }(),
     c = l && null != o && (0, O.C3)(o.skuId, i),
@@ -185,10 +185,10 @@ let R = new Set,
   k = () => {
     let e = A(),
       t = r.useMemo(() => D(e), [e]),
-      [n] = (0, g.cv)(t),
+      [n] = (0, p.cv)(t),
       i = r.useRef(!1);
     return r.useCallback(() => {
-      null != e && !0 === e.showNotification && (n === l.z.TENURE_REWARD_REDEEMABLE || n === l.z.TENURE_REWARD_PENDING) && ((0, p.EW)(n), n === l.z.TENURE_REWARD_PENDING && !1 === i.current && (N.default.track(T.rMx.USER_NITRO_TENURE_REWARD_ACKNOWLEDGED, {
+      null != e && !0 === e.showNotification && (n === l.z.TENURE_REWARD_REDEEMABLE || n === l.z.TENURE_REWARD_PENDING) && ((0, g.EW)(n), n === l.z.TENURE_REWARD_PENDING && !1 === i.current && (x.default.track(T.rMx.USER_NITRO_TENURE_REWARD_ACKNOWLEDGED, {
         user_tenure_reward_id: null == e ? void 0 : e.tenureRewardStatusId,
         tenure_reward_id: e.tenureRewardSkuId,
         reward_type: null == e ? void 0 : e.tenureRewardType,
