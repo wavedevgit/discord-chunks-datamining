@@ -1,6 +1,6 @@
 /**
   Module ID: 94805
-  Original File Name: 9851a47760454ab9
+  Original File Name: 02a9e88494d7dcee
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -1238,3 +1238,5 @@ div:has(>div>.container_f792fa) {
 .visual-refresh .container_f792fa {
     background-color: var(--bg-base-tertiary)!important
 }
+
+/*# sourceMappingURL=02a9e88494d7dcee.css.map*/
