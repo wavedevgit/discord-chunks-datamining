@@ -1,6 +1,6 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
-  Z: () => b
+  Z: () => x
 }), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -15,18 +15,18 @@ var r = n(200651),
   g = n(624138),
   p = n(150414),
   h = n(993553),
-  f = n(960700);
+  f = n(205861);
 
-function b(e) {
+function x(e) {
   let {
     cta: t,
     storeListing: n,
     className: s
   } = e, {
-    applicationId: b,
-    benefits: x,
+    applicationId: x,
+    benefits: b,
     description: N
-  } = n, _ = i.useMemo(() => null == n.thumbnail ? null : (0, p.q)(b, n.thumbnail, 256), [b, n.thumbnail]), {
+  } = n, _ = i.useMemo(() => null == n.thumbnail ? null : (0, p.q)(x, n.thumbnail, 256), [x, n.thumbnail]), {
     data: E
   } = (0, d.X)(n.skuId), j = i.useMemo(() => {
     if (null == E || 0 === E.length) return null;
@@ -60,9 +60,9 @@ function b(e) {
         variant: "text-sm/medium",
         children: N
       })
-    }), null != x && x.length > 0 && (0, r.jsx)("div", {
+    }), null != b && b.length > 0 && (0, r.jsx)("div", {
       className: f.benefits,
-      children: x.map(e => {
+      children: b.map(e => {
         let {
           id: t,
           name: n,
@@ -71,7 +71,7 @@ function b(e) {
         } = e;
         return (0, r.jsx)(o.Gm, {
           header: n,
-          icon: (0, u.n)(b, s),
+          icon: (0, u.n)(x, s),
           description: i
         }, t)
       })

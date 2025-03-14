@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   Z: () => g
 }), n(266796);
@@ -12,7 +12,7 @@ var i = n(120356),
   c = n(55935),
   d = n(955204),
   u = n(674680),
-  m = n(791134);
+  m = n(532304);
 
 function g(e) {
   let {
@@ -27,8 +27,8 @@ function g(e) {
       hideDescriptionUntilUnlock: h,
       onAction: f
     } = i,
-    b = h && !a,
-    x = a ? "header-primary" : "text-muted",
+    x = h && !a,
+    b = a ? "header-primary" : "text-muted",
     N = a ? "header-secondary" : "text-muted",
     _ = l()(n),
     E = null != f && a,
@@ -54,12 +54,12 @@ function g(e) {
         children: (0, c.Y4)(_)
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
-        color: x,
+        color: b,
         children: g()
       }), (0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
         color: N,
-        children: b ? "?????" : p()
+        children: x ? "?????" : p()
       })]
     })]
   })

@@ -1,9 +1,9 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   Nv: () => N,
   pd: () => f,
   uX: () => _,
-  wk: () => b
+  wk: () => x
 });
 var r = n(350483),
   i = n(220444),
@@ -39,7 +39,7 @@ let g = (e, t) => {
       }), !1
     }
   },
-  b = {
+  x = {
     binds: ["alt+shift+up"],
     comboKeysBindGlobal: !0,
     action() {
@@ -54,12 +54,12 @@ let g = (e, t) => {
       }), !1
     }
   },
-  x = (e, t) => o.ZP.getMentionCount(t) > 0,
+  b = (e, t) => o.ZP.getMentionCount(t) > 0,
   N = {
     binds: ["mod+shift+alt+down"],
     comboKeysBindGlobal: !0,
     action: () => ((0, r.Z)(1, {
-      channelPredicate: x,
+      channelPredicate: b,
       ensureChatIsVisible: h,
       withVoiceChannels: !0
     }), !1)
@@ -68,7 +68,7 @@ let g = (e, t) => {
     binds: ["mod+shift+alt+up"],
     comboKeysBindGlobal: !0,
     action: () => ((0, r.Z)(-1, {
-      channelPredicate: x,
+      channelPredicate: b,
       ensureChatIsVisible: h,
       withVoiceChannels: !0
     }), !1)

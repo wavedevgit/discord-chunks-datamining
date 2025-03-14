@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   Z: () => _
 }), n(47120);
@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(695346),
   h = n(399970),
   f = n(726985),
-  b = n(981631),
-  x = n(388032);
+  x = n(981631),
+  b = n(388032);
 
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -49,14 +49,14 @@ function _() {
     (0, a.h7j)(t => {
       var n, i;
       return (0, r.jsx)(a.ConfirmModal, (n = N({
-        header: x.NW.string(x.t.aqpAvr),
-        confirmText: x.NW.string(x.t.BddRzc),
-        cancelText: x.NW.string(x.t["ETE/oK"]),
+        header: b.NW.string(b.t.aqpAvr),
+        confirmText: b.NW.string(b.t.BddRzc),
+        cancelText: b.NW.string(b.t["ETE/oK"]),
         onConfirm: () => m.ZP.setEnableHardwareAcceleration(e)
       }, t), i = i = {
         children: (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
-          children: x.NW.string(x.t.uDP3Ky)
+          children: b.NW.string(b.t.uDP3Ky)
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
@@ -72,48 +72,48 @@ function _() {
   }, []);
   return (0, r.jsxs)(a.hjN, {
     tag: a.RB0.H1,
-    title: x.NW.string(x.t["8/udY2"]),
+    title: b.NW.string(b.t["8/udY2"]),
     children: [(0, r.jsx)(d.F, {
       setting: f.s6.SETTINGS_ADVANCED_DEVELOPER_MODE,
       children: (0, r.jsx)(a.j7V, {
         value: n,
         onChange: p.Sb.updateSetting,
-        note: x.NW.format(x.t["CY6q/f"], {
-          apiDocsUrl: b.EYA.API_DOCS
+        note: b.NW.format(b.t["CY6q/f"], {
+          apiDocsUrl: x.EYA.API_DOCS
         }),
-        children: x.NW.string(x.t.ObIb1d)
+        children: b.NW.string(b.t.ObIb1d)
       })
     }), (0, r.jsx)(d.F, {
       setting: f.s6.SETTINGS_ADVANCED_HARDWARE_ACCELERATION,
       children: (0, r.jsx)(a.j7V, {
         value: e,
         onChange: v,
-        note: x.NW.string(x.t.Afc7l5),
-        children: x.NW.string(x.t["eOC/Fx"])
+        note: b.NW.string(b.t.Afc7l5),
+        children: b.NW.string(b.t["eOC/Fx"])
       })
     }), (0, r.jsx)(d.F, {
       setting: f.s6.SETTINGS_ADVANCED_SHOW_GAME_LIBRARY,
       children: (0, r.jsx)(a.j7V, {
         value: !t,
         onChange: j,
-        note: x.NW.string(x.t["8mYp39"]),
-        children: x.NW.string(x.t.fi3UQE)
+        note: b.NW.string(b.t["8mYp39"]),
+        children: b.NW.string(b.t.fi3UQE)
       })
     }), (0, r.jsx)(d.F, {
       setting: f.s6.SETTINGS_ADVANCED_APPLICATION_TEST_MODE,
       children: (0, r.jsx)(a.j7V, {
         value: null != _,
-        note: x.NW.string(x.t["52hMnJ"]),
+        note: b.NW.string(b.t["52hMnJ"]),
         onChange: C,
-        children: x.NW.string(x.t.erOqlp)
+        children: b.NW.string(b.t.erOqlp)
       })
     }), (0, r.jsx)(d.F, {
       setting: f.s6.SETTINGS_ADVANCED_SHOW_PLAY_AGAIN,
       children: (0, r.jsx)(a.j7V, {
         value: E,
-        note: x.NW.string(x.t["B/qU4O"]),
+        note: b.NW.string(b.t["B/qU4O"]),
         onChange: O,
-        children: x.NW.string(x.t.qDZryM)
+        children: b.NW.string(b.t.qDZryM)
       })
     })]
   })

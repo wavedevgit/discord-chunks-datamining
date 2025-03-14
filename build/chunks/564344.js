@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   Z: () => S
 });
@@ -16,15 +16,15 @@ var r = n(200651),
   p = n(216045),
   h = n(839469),
   f = n(25990),
-  b = n(594174),
-  x = n(585483),
+  x = n(594174),
+  b = n(585483),
   N = n(16703),
   _ = n(785145),
   E = n(981631),
   j = n(526761),
   C = n(726985),
   O = n(388032),
-  v = n(198270);
+  v = n(566420);
 
 function S() {
   c.Z.useExperiment({
@@ -34,7 +34,7 @@ function S() {
     t = (0, N.Z)(),
     n = (0, s.e7)([u.Z, f.Z], () => u.Z.showNotice() || f.Z.showNotice()),
     S = null != e ? e : t,
-    T = (0, s.e7)([b.default], () => b.default.getCurrentUser()),
+    T = (0, s.e7)([x.default], () => x.default.getCurrentUser()),
     {
       subsection: I,
       setSubsection: y
@@ -50,10 +50,10 @@ function S() {
   function D(t) {
     if (I !== t) {
       if (n) {
-        x.S.dispatch(E.CkL.SHAKE_APP, {
+        b.S.dispatch(E.CkL.SHAKE_APP, {
           duration: 300,
           intensity: l.$x
-        }), x.S.dispatch(E.CkL.EMPHASIZE_NOTICE);
+        }), b.S.dispatch(E.CkL.EMPHASIZE_NOTICE);
         return
       }
       t === j.NB.GUILD && null == e && null != S && (0, d.Fq)(S, A), y(t)

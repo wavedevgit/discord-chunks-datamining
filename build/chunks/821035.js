@@ -1,6 +1,6 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
-  P: () => x
+  P: () => b
 }), n(733860);
 var r = n(200651);
 n(192379);
@@ -17,14 +17,14 @@ var i = n(524437),
   p = n(726985),
   h = n(981631),
   f = n(388032),
-  b = n(535721);
+  x = n(173251);
 
-function x() {
+function b() {
   var e;
   let t = null === (e = (0, d.Z)()) || void 0 === e || e,
     {
       explicitContentGuilds: n,
-      explicitContentFriendDm: x,
+      explicitContentFriendDm: b,
       explicitContentNonFriendDm: N
     } = (0, c.B)(),
     _ = e => {
@@ -59,10 +59,10 @@ function x() {
     }), (0, r.jsx)(s.xJW, {
       tag: s.RB0.H3,
       title: f.NW.string(f.t["6k0AgI"]),
-      titleClassName: b.selectItemTitle,
+      titleClassName: x.selectItemTitle,
       children: (0, r.jsx)(s.q4e, {
         options: E,
-        value: x,
+        value: b,
         onChange: e => _({
           explicitContentFriendDm: e
         })
@@ -70,7 +70,7 @@ function x() {
     }), (0, r.jsx)(s.xJW, {
       tag: s.RB0.H3,
       title: f.NW.string(f.t.D2EGSk),
-      titleClassName: b.selectItemTitle,
+      titleClassName: x.selectItemTitle,
       children: (0, r.jsx)(s.q4e, {
         options: E,
         value: N,
@@ -81,7 +81,7 @@ function x() {
     }), t && (0, r.jsx)(s.xJW, {
       tag: s.RB0.H3,
       title: f.NW.string(f.t["FP+a4+"]),
-      titleClassName: b.selectItemTitle,
+      titleClassName: x.selectItemTitle,
       children: (0, r.jsx)(s.q4e, {
         options: j,
         value: n,

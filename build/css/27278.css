@@ -1,6 +1,6 @@
 /**
   Module ID: 27278
-  Original File Name: fe717a22c12fe31d
+  Original File Name: 48ea6c87ca0c2a70
 **/
 .buttonContainer__7e329 {
     display: flex;
@@ -34,11 +34,10 @@
 }
 
 .button__7e329:active,.button__7e329:hover {
-    color: var(--interactive-hover);
     background-color: rgba(28,29,35,.8)
 }
 
-.button__7e329:active .keybind__7e329,.button__7e329:hover .keybind__7e329 {
+.button__7e329:active,.button__7e329:active .keybind__7e329,.button__7e329:hover,.button__7e329:hover .keybind__7e329 {
     color: var(--interactive-hover)
 }
 
@@ -717,11 +716,7 @@
     border-bottom-color: var(--brand-500)
 }
 
-.tabItem_fe7ab2:active {
-    border-bottom-color: var(--control-brand-foreground)
-}
-
-.tabItem_fe7ab2.selected_fe7ab2 {
+.tabItem_fe7ab2.selected_fe7ab2,.tabItem_fe7ab2:active {
     border-bottom-color: var(--control-brand-foreground)
 }
 
@@ -986,11 +981,7 @@
     transition: border-color .1s ease-in-out
 }
 
-.channelItemContainer__711d3:hover {
-    background-color: var(--bg-mod-strong)
-}
-
-.channelItemContainer__711d3.channelItemHighlighted__711d3 {
+.channelItemContainer__711d3.channelItemHighlighted__711d3,.channelItemContainer__711d3:hover {
     background-color: var(--bg-mod-strong)
 }
 
@@ -1424,16 +1415,14 @@
 .layoutLocked_eb35c5 {
     position: absolute;
     top: 0;
-    left: 0;
-    pointer-events: none
+    left: 0
 }
 
-.layoutLocked_eb35c5>* {
+.layoutLocked_eb35c5,.layoutLocked_eb35c5>*,.layoutUnlocked_eb35c5 {
     pointer-events: none
 }
 
 .layoutUnlocked_eb35c5 {
-    pointer-events: none
 }
 
 .layoutUnlocked_eb35c5>* {
@@ -1573,4 +1562,4 @@
     height: 100%
 }
 
-/*# sourceMappingURL=fe717a22c12fe31d.css.map*/
+/*# sourceMappingURL=48ea6c87ca0c2a70.css.map*/

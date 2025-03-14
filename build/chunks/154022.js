@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   Z: () => Y
 }), n(47120);
@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(607070),
   h = n(627845),
   f = n(600164),
-  b = n(313201),
-  x = n(786761),
+  x = n(313201),
+  b = n(786761),
   N = n(3148),
   _ = n(739566),
   E = n(753206),
@@ -36,8 +36,8 @@ var r = n(200651),
   Z = n(611480),
   w = n(653477),
   k = n(388032),
-  W = n(289552),
-  L = n(802138),
+  W = n(344455),
+  L = n(467025),
   B = n(328756);
 
 function M(e) {
@@ -71,9 +71,9 @@ function U(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let V = (0, b.hQ)(),
-  G = (0, b.hQ)(),
-  F = (0, b.hQ)(),
+let V = (0, x.hQ)(),
+  G = (0, x.hQ)(),
+  F = (0, x.hQ)(),
   H = o().debounce(e => {
     (0, g.o2)(e)
   }, 250),
@@ -135,7 +135,7 @@ function Y(e) {
 function K() {
   let e = I.jU.useSetting(),
     [t] = i.useState(() => {
-      let e = (0, x.e5)(U(M({}, (0, N.ZP)({
+      let e = (0, b.e5)(U(M({}, (0, N.ZP)({
         channelId: "1337",
         content: k.NW.formatToPlainString(k.t.bB80LC, {
           previewLink: "https://discord.com/accessibility"

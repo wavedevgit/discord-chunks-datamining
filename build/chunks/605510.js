@@ -1,5 +1,9 @@
-/** Chunk was on 2026 **/
-e.exports = {
-  priceLine: "priceLine__794a8",
-  orbText: "orbText__794a8"
-}
+/** Chunk was on web.js **/
+"use strict";
+var r = {
+  root: "root_fccfdf",
+  pill: "pill_fccfdf",
+  expandButton: "expandButton_fccfdf pill_fccfdf",
+  collapseButton: "collapseButton_fccfdf pill_fccfdf"
+};
+e.exports = r

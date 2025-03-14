@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   default: () => W
 }), n(411104), n(47120);
@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(906732),
   h = n(600164),
   f = n(374649),
-  b = n(431369),
-  x = n(55610),
+  x = n(431369),
+  b = n(55610),
   N = n(653798),
   _ = n(311821),
   E = n(42818),
@@ -31,7 +31,7 @@ var r = n(200651),
   y = n(474936),
   A = n(231338),
   P = n(388032),
-  R = n(38205);
+  R = n(870603);
 
 function D(e) {
   let {
@@ -62,7 +62,7 @@ function D(e) {
         }) : P.NW.format(P.t.otHdfX, {
           endDate: t.currentPeriodEnd
         })
-      }), (0, r.jsx)(x.Z, {
+      }), (0, r.jsx)(b.Z, {
         fromBoostCancelModal: !0
       })]
     }), t.isPurchasedExternally ? null : (0, r.jsxs)(o.mzw, {
@@ -96,11 +96,11 @@ function w(e) {
     premiumSubscription: a,
     guildBoostSlotId: c,
     onBack: d,
-    onNext: x,
+    onNext: b,
     onClose: j
   } = e, [O, v] = i.useState(!1), [A, D] = i.useState(null), [w, k] = i.useMemo(() => {
     try {
-      return [(0, b.g)(a, -1), !1]
+      return [(0, x.g)(a, -1), !1]
     } catch (e) {
       return [
         [], !0
@@ -198,7 +198,7 @@ function w(e) {
         disabled: O,
         onClick: async () => {
           try {
-            v(!0), D(null), await Z(a, w, M, c), x()
+            v(!0), D(null), await Z(a, w, M, c), b()
           } catch (t) {
             let e = t instanceof u.HF ? t : new u.HF(t, t.code);
             D(P.NW.string(e.code === m.SM.BILLING_PAUSE_INVALID_UPDATE ? P.t.dq4vq6 : P.t["5mlOCQ"])), v(!1)

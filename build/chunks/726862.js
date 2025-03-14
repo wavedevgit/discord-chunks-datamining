@@ -8,7 +8,7 @@ n(192379);
 var a = n(466377),
   i = n(481060),
   l = n(281598),
-  o = n(454510);
+  o = n(227266);
 let s = "shop-assets-preview-instructions-modal",
   c = e => {
     let {

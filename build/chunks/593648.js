@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   Z: () => en
 }), n(653041), n(47120);
@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(87051),
   h = n(419363),
   f = n(818083),
-  b = n(688465),
-  x = n(487419),
+  x = n(688465),
+  b = n(487419),
   N = n(197344),
   _ = n(476756),
   E = n(734934),
@@ -41,8 +41,8 @@ var r = n(200651),
   B = n(981631),
   M = n(468788),
   U = n(388032),
-  V = n(23898),
-  G = n(802138);
+  V = n(469937),
+  G = n(467025);
 
 function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -239,7 +239,7 @@ function K(e) {
 }
 
 function q() {
-  let e = (0, c.e7)([x.Z], () => x.Z.getGuildAlertSettings()),
+  let e = (0, c.e7)([b.Z], () => b.Z.getGuildAlertSettings()),
     [t, n] = i.useState(null),
     s = Z.default.keys(e).map(t => {
       let n = e[t];
@@ -253,7 +253,7 @@ function q() {
     children: [(0, r.jsxs)(u.X6q, {
       variant: "heading-lg/semibold",
       className: a()(V.titleWithBeta, G.marginBottom20),
-      children: [U.NW.string(U.t.D9yVAA), (0, r.jsx)(b.Z, {})]
+      children: [U.NW.string(U.t.D9yVAA), (0, r.jsx)(x.Z, {})]
     }), (0, r.jsx)(u.R94, {
       type: u.geA.DESCRIPTION,
       className: G.marginBottom20,

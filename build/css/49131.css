@@ -1,6 +1,6 @@
 /**
   Module ID: 49131
-  Original File Name: ec42c2809239033f
+  Original File Name: 8b73088c5961a587
 **/
 .container_c6ad88 {
     background-color: var(--background-primary);
@@ -336,11 +336,10 @@
 }
 
 .cta__93db4 {
-    margin-top: 16px;
-    color: var(--text-brand)
+    margin-top: 16px
 }
 
-.cta__93db4:hover {
+.cta__93db4,.cta__93db4:hover {
     color: var(--text-brand)
 }
 
@@ -1834,11 +1833,7 @@
     color: var(--interactive-hover)
 }
 
-.forumPostFormButton_d9be46:active {
-    color: var(--interactive-active)
-}
-
-.forumPostFormButtonActive_d9be46 {
+.forumPostFormButton_d9be46:active,.forumPostFormButtonActive_d9be46 {
     color: var(--interactive-active)
 }
 
@@ -2001,11 +1996,10 @@
 .container__9a337:active {
     background-color: var(--background-modifier-active);
     box-shadow: var(--elevation-high);
-    transform: translateY(-2px);
-    border-color: var(--background-modifier-active)
+    transform: translateY(-2px)
 }
 
-.container__9a337:active .dots__9a337 {
+.container__9a337:active,.container__9a337:active .dots__9a337 {
     border-color: var(--background-modifier-active)
 }
 
@@ -2228,4 +2222,4 @@
     color: var(--text-link)
 }
 
-/*# sourceMappingURL=ec42c2809239033f.css.map*/
+/*# sourceMappingURL=8b73088c5961a587.css.map*/

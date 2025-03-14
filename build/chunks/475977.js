@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   Z: () => h
 });
@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(981631),
   m = n(474936),
   g = n(388032),
-  p = n(698555);
+  p = n(799218);
 let h = () => {
   let {
     analyticsLocations: e
@@ -21,17 +21,17 @@ let h = () => {
     asset: n,
     popoutAsset: h,
     title: f,
-    body: b,
-    version: x,
+    body: x,
+    version: b,
     revertTextColor: N
   } = (0, d.W)();
   return i.useEffect(() => {
     o.default.track(u.rMx.PREMIUM_UPSELL_VIEWED, {
       type: m.cd.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
       location_stack: e,
-      version: x
+      version: b
     })
-  }, [e, x]), (0, r.jsxs)("div", {
+  }, [e, b]), (0, r.jsxs)("div", {
     ref: t,
     className: p.container,
     style: {
@@ -56,7 +56,7 @@ let h = () => {
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: N ? "redesign-button-overlay-text" : "currentColor",
-        children: b
+        children: x
       })]
     }), (0, r.jsx)(s.zxk, {
       onClick: () => {

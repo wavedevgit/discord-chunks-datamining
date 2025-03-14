@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 991b60dacee0e5f7
+  Original File Name: 4b2a59250e07ef1e
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -55,11 +55,7 @@
     border-bottom-color: var(--brand-500)
 }
 
-.tabItem_fe7ab2:active {
-    border-bottom-color: var(--control-brand-foreground)
-}
-
-.tabItem_fe7ab2.selected_fe7ab2 {
+.tabItem_fe7ab2.selected_fe7ab2,.tabItem_fe7ab2:active {
     border-bottom-color: var(--control-brand-foreground)
 }
 
@@ -5543,4 +5539,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 0
 }
 
-/*# sourceMappingURL=991b60dacee0e5f7.css.map*/
+/*# sourceMappingURL=4b2a59250e07ef1e.css.map*/

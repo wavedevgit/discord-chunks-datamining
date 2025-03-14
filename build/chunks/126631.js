@@ -1,6 +1,6 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
-  Z: () => x
+  Z: () => b
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -13,21 +13,21 @@ var r = n(200651),
   u = n(993413),
   m = n(981631),
   g = n(388032),
-  p = n(253182);
+  p = n(808846);
 let h = (0, c.hQ)(),
   f = (0, d.kt)({
     id: "1",
     type: m.d4z.DM
   }),
-  b = (0, c.hQ)();
+  x = (0, c.hQ)();
 
-function x(e) {
+function b(e) {
   let {
     sectionTitle: t,
     errors: n,
     onBioChange: c,
     pendingBio: d,
-    placeholder: x,
+    placeholder: b,
     currentBio: N,
     disabled: _ = !1
   } = e, [E, j] = i.useState(null != d ? d : N), [C, O] = i.useState((0, l.JM)(E)), v = i.useRef(!1);
@@ -43,7 +43,7 @@ function x(e) {
     errors: n,
     disabled: _,
     children: [(0, r.jsx)(o.Z, {
-      "aria-describedby": b,
+      "aria-describedby": x,
       "aria-labelledby": h,
       className: p.bioTextAreaContainer,
       innerClassName: p.bioTextArea,
@@ -51,7 +51,7 @@ function x(e) {
       onChange: function(e, t, n) {
         t !== E && (j(t), O(n), c(t))
       },
-      placeholder: x,
+      placeholder: b,
       channel: f,
       textValue: E,
       richValue: C,
@@ -72,7 +72,7 @@ function x(e) {
         })
       }
     }), (0, r.jsx)(s.nn4, {
-      id: b,
+      id: x,
       children: g.NW.format(g.t["+DFxLS"], {
         maxLength: m.tPV
       })

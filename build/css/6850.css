@@ -1,6 +1,6 @@
 /**
   Module ID: 6850
-  Original File Name: b3aafd91a6b4c183
+  Original File Name: 80c536155a205c37
 **/
 .questionContainer__0a749 {
     margin-top: 24px
@@ -159,14 +159,7 @@
     border: 1px solid var(--background-modifier-accent)
 }
 
-.fieldBackground_d48a51 {
-    background-color: var(--background-secondary);
-    border: 1px solid var(--background-tertiary);
-    border-radius: 4px;
-    opacity: 1
-}
-
-.fieldBackground_d48a51:hover:not(:focus) {
+.fieldBackground_d48a51,.fieldBackground_d48a51:hover:not(:focus) {
     background-color: var(--background-secondary);
     border: 1px solid var(--background-tertiary);
     border-radius: 4px;
@@ -1169,11 +1162,7 @@
     cursor: pointer
 }
 
-.memberRowContainer__71c22:hover .addRoleContainer__71c22 {
-    opacity: 1
-}
-
-.memberRowContainer__71c22.selected__71c22 .addRoleContainer__71c22 {
+.memberRowContainer__71c22.selected__71c22 .addRoleContainer__71c22,.memberRowContainer__71c22:hover .addRoleContainer__71c22 {
     opacity: 1
 }
 
@@ -1202,11 +1191,7 @@
     padding: 4px
 }
 
-.memberRowContainer__71c22:hover td:after {
-    opacity: 0
-}
-
-.memberRowContainer__71c22:hover+.memberRowContainer__71c22 td:after {
+.memberRowContainer__71c22:hover+.memberRowContainer__71c22 td:after,.memberRowContainer__71c22:hover td:after {
     opacity: 0
 }
 
@@ -1598,11 +1583,10 @@
 }
 
 .customLabelContainer_c2c6a6:hover {
-    background-color: var(--brand-560);
-    color: var(--interactive-hover)
+    background-color: var(--brand-560)
 }
 
-.customLabelContainer_c2c6a6:hover .radioSelection_c2c6a6 {
+.customLabelContainer_c2c6a6:hover,.customLabelContainer_c2c6a6:hover .radioSelection_c2c6a6 {
     color: var(--interactive-hover)
 }
 
@@ -2604,4 +2588,4 @@
     margin-left: 4px
 }
 
-/*# sourceMappingURL=b3aafd91a6b4c183.css.map*/
+/*# sourceMappingURL=80c536155a205c37.css.map*/

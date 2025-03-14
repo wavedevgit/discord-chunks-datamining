@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   Z: () => Z
 }), n(653041), n(627341);
@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(401786),
   h = n(450468),
   f = n(98278),
-  b = n(594174),
-  x = n(78839),
+  x = n(594174),
+  b = n(78839),
   N = n(267642),
   _ = n(63063),
   E = n(74538),
@@ -27,7 +27,7 @@ var r = n(200651),
   v = n(981631),
   S = n(474936),
   T = n(388032),
-  I = n(169472);
+  I = n(45863);
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -145,9 +145,9 @@ let Z = function(e) {
   let {
     guildBoostSlots: s,
     fractionalPremiumState: p
-  } = e, h = (0, o.e7)([x.ZP], () => x.ZP.getPremiumTypeSubscription()), C = (null == h ? void 0 : h.isPausedOrPausePending) === !0, {
+  } = e, h = (0, o.e7)([b.ZP], () => b.ZP.getPremiumTypeSubscription()), C = (null == h ? void 0 : h.isPausedOrPausePending) === !0, {
     fractionalState: O
-  } = (0, u.Z)(), Z = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), w = (0, o.e7)([b.default], () => b.default.getCurrentUser()), k = O === S.a$.FP_SUB_PAUSED, W = O !== S.a$.NONE, L = C && !k, {
+  } = (0, u.Z)(), Z = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), w = (0, o.e7)([x.default], () => x.default.getCurrentUser()), k = O === S.a$.FP_SUB_PAUSED, W = O !== S.a$.NONE, L = C && !k, {
     appliedGuildBoostSlots: B,
     unappliedGuildBoostSlots: M,
     numActiveGuildBoostSlots: U,

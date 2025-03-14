@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   Z: () => X
 }), n(47120);
@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(279837),
   h = n(952306),
   f = n(299206),
-  b = n(295474),
-  x = n(144114),
+  x = n(295474),
+  b = n(144114),
   N = n(918505),
   _ = n(332473),
   E = n(921801),
@@ -38,7 +38,7 @@ var r = n(200651),
   k = n(815660),
   W = n(801461),
   L = n(388032),
-  B = n(736513);
+  B = n(747162);
 
 function M(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -78,9 +78,9 @@ function G(e) {
   let {
     className: l,
     user: o
-  } = e, c = i.useRef(null), m = (0, N.o9)(), g = (0, _.b)(), p = (0, b.gS)(), h = null !== (s = null == p ? void 0 : null === (t = p.nick) || void 0 === t ? void 0 : t[0]) && void 0 !== s ? s : null, [f, x] = i.useState(!1);
+  } = e, c = i.useRef(null), m = (0, N.o9)(), g = (0, _.b)(), p = (0, x.gS)(), h = null !== (s = null == p ? void 0 : null === (t = p.nick) || void 0 === t ? void 0 : t[0]) && void 0 !== s ? s : null, [f, b] = i.useState(!1);
   i.useEffect(() => {
-    x(null != c.current && c.current.scrollWidth > c.current.clientWidth)
+    b(null != c.current && c.current.scrollWidth > c.current.clientWidth)
   }, [o.username]);
   let E = !o.isClaimed(),
     j = m && !o.isPomelo() && !o.hasVerifiedEmailOrPhone() || E,
@@ -147,14 +147,14 @@ function G(e) {
           if (g) {
             let {
               default: e
-            } = await Promise.all([n.e("85342"), n.e("23396")]).then(n.bind(n, 193049));
+            } = await Promise.all([n.e("85342"), n.e("34706")]).then(n.bind(n, 193049));
             return t => (0, r.jsx)(e, M({
               source: W.Kq.USER_SETTINGS_EDIT
             }, t))
           } {
             let {
               default: e
-            } = await Promise.all([n.e("75492"), n.e("84956"), n.e("42758")]).then(n.bind(n, 2702));
+            } = await Promise.all([n.e("75492"), n.e("53370"), n.e("42758")]).then(n.bind(n, 2702));
             return t => (0, r.jsx)(e, M({}, t))
           }
         }),
@@ -169,7 +169,7 @@ function F(e) {
   let {
     user: s,
     className: l
-  } = e, o = (0, b.gS)(), c = null !== (n = null == o ? void 0 : null === (t = o.nick) || void 0 === t ? void 0 : t[0]) && void 0 !== n ? n : null, m = A.ZP.getGlobalName(s), g = i.useRef(null), [p, h] = i.useState(!1);
+  } = e, o = (0, x.gS)(), c = null !== (n = null == o ? void 0 : null === (t = o.nick) || void 0 === t ? void 0 : t[0]) && void 0 !== n ? n : null, m = A.ZP.getGlobalName(s), g = i.useRef(null), [p, h] = i.useState(!1);
   return i.useEffect(() => {
     h(null != g.current && g.current.scrollWidth > g.current.clientWidth)
   }, [m]), (0, r.jsxs)("div", {
@@ -249,7 +249,7 @@ function z(e) {
       handleClick: () => (0, u.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("9343"), n.e("19855")]).then(n.bind(n, 642298));
+        } = await Promise.all([n.e("9343"), n.e("44801")]).then(n.bind(n, 642298));
         return t => (0, r.jsx)(e, M({}, t))
       })
     };
@@ -270,7 +270,7 @@ function z(e) {
         handleClick: () => (0, u.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("9343"), n.e("19855")]).then(n.bind(n, 642298));
+          } = await Promise.all([n.e("9343"), n.e("44801")]).then(n.bind(n, 642298));
           return t => (0, r.jsx)(e, M({}, t))
         })
       }
@@ -355,7 +355,7 @@ function Y(e) {
             title: L.NW.string(L.t["3CTiKi"]),
             children: s.hasFlag(w.xW$.MFA_SMS) ? L.NW.string(L.t.jrhJys) : void 0,
             actionText: L.NW.string(L.t.N86XcH),
-            handleSubmit: e => x.Z.removePhone(e, x.L.USER_SETTINGS_UPDATE)
+            handleSubmit: e => b.Z.removePhone(e, b.L.USER_SETTINGS_UPDATE)
           })))
         },
         children: L.NW.string(L.t.N86XcH)
@@ -370,7 +370,7 @@ function Y(e) {
               default: e
             } = await Promise.resolve().then(n.bind(n, 607018));
             return t => (0, r.jsx)(e, M({
-              reason: x.L.USER_SETTINGS_UPDATE
+              reason: b.L.USER_SETTINGS_UPDATE
             }, t))
           }, {
             modalKey: k.M

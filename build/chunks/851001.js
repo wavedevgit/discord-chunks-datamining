@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   Z: () => C
 }), n(47120);
@@ -16,9 +16,9 @@ var r = n(200651),
   p = n(639119),
   h = n(635921),
   f = n(474936),
-  b = n(869783),
-  x = n(388032),
-  N = n(761675),
+  x = n(869783),
+  b = n(388032),
+  N = n(412470),
   _ = n(839526),
   E = n(4046),
   j = n(423741);
@@ -42,7 +42,7 @@ let C = e => {
         className: N.footerHeader,
         variant: "display-md",
         color: "header-primary",
-        children: x.NW.string(x.t.lEw32t)
+        children: b.NW.string(b.t.lEw32t)
       }), (0, r.jsx)(h.PK, {
         subscriptionTier: null !== (n = null == y ? void 0 : null === (t = y.subscription_trial) || void 0 === t ? void 0 : t.sku_id) && void 0 !== n ? n : I,
         inOfferExperience: A,
@@ -62,7 +62,7 @@ let C = e => {
           ref: R,
           children: (0, r.jsx)("source", {
             src: P ? _.Z : j.Z,
-            type: P ? b.m.MP4 : b.m.WEBM
+            type: P ? x.m.MP4 : x.m.WEBM
           })
         })
       }), (0, r.jsx)("div", {

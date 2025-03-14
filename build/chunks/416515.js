@@ -1,6 +1,8 @@
-/** Chunk was on 67753 **/
-e.exports = {
-  content: "content_b96ca2",
-  header: "header_b96ca2",
-  footer: "footer_b96ca2"
-}
+/** Chunk was on web.js **/
+"use strict";
+var r = {
+  seasonalGiftBoxHeaderIcon: "seasonalGiftBoxHeaderIcon_ae16b8",
+  container: "container_ae16b8",
+  closeButton: "closeButton_ae16b8"
+};
+e.exports = r

@@ -1,4 +1,4 @@
-/** Chunk was on 76977 **/
+/** Chunk was on 38229 **/
 var t = "\ud800-\udfff",
   n = "\\u2700-\\u27bf",
   i = "a-z\\xdf-\\xf6\\xf8-\\xff",

@@ -1,6 +1,6 @@
 /**
   Module ID: 62104
-  Original File Name: 72fafd0e5cb05e3a
+  Original File Name: 4c917a527b420296
 **/
 .root__66e7e {
     border-radius: 8px;
@@ -102,10 +102,7 @@
 }
 
 .emojiContainer__5c58b.selected__5c58b .emoji__5c58b,.emojiContainer__5c58b:hover .emoji__5c58b {
-    filter: none
-}
-
-.emojiContainer__5c58b.selected__5c58b .emoji__5c58b,.emojiContainer__5c58b:hover .emoji__5c58b {
+    filter: none;
     opacity: 1
 }
 
@@ -185,4 +182,4 @@
     margin-bottom: 0
 }
 
-/*# sourceMappingURL=72fafd0e5cb05e3a.css.map*/
+/*# sourceMappingURL=4c917a527b420296.css.map*/

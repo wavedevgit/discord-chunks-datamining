@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   Z: () => T
 }), n(47120), n(610138), n(216116), n(78328), n(815648), n(301563);
@@ -10,21 +10,21 @@ var r = n(200651),
   o = n(481060),
   c = n(100527),
   d = n(906732),
-  u = n(464824),
+  u = n(433811),
   m = n(214852),
   g = n(626135),
   p = n(533525),
   h = n(314684),
   f = n(794484),
-  b = n(536844),
-  x = n(342414),
+  x = n(536844),
+  b = n(342414),
   N = n(615042),
   _ = n(391110),
   E = n(71363),
   j = n(781800),
   C = n(981631),
   O = n(388032),
-  v = n(951084),
+  v = n(890354),
   S = n(865215);
 let T = () => {
   (0, m.z)(u.X), (0, N.u)();
@@ -45,7 +45,7 @@ let T = () => {
         className: v.container,
         children: (0, r.jsxs)(d.Gt, {
           value: s,
-          children: [(0, r.jsx)(x.Z, {
+          children: [(0, r.jsx)(b.Z, {
             className: v.heroHeading,
             location: _.MQ.HOME
           }), (0, r.jsx)(f.Z, {
@@ -64,7 +64,7 @@ let T = () => {
               setIsAllPerksVisible: n,
               previousComponent: _.MQ.HOME
             })
-          }), (0, r.jsx)(b.Z, {
+          }), (0, r.jsx)(x.Z, {
             className: v.giftNitro,
             location: c.Z.PREMIUM_MARKETING_GIFT_SECTION,
             analyticsLocation: {

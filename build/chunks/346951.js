@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   Z: () => m
 });
@@ -8,7 +8,7 @@ var r = n(200651),
   a = n(707558),
   l = n(577720),
   o = n(388032),
-  c = n(665485);
+  c = n(168953);
 let d = () => [{
   icon: c.perkNewsletter,
   title: o.NW.string(o.t.vURCf3),

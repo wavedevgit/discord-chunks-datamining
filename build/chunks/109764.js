@@ -1,30 +1,30 @@
-/** Chunk was on 22356 **/
-n.d(e, {
-  Z: () => h
+/** Chunk was on 42834 **/
+n.d(t, {
+  Z: () => f
 });
 var i = n(200651);
 n(192379);
 var r = n(852229),
   a = n(399606),
   l = n(481060),
-  s = n(228392),
-  o = n(592125),
-  d = n(934415),
+  o = n(228392),
+  d = n(592125),
+  u = n(934415),
   c = n(981631),
-  u = n(388032);
+  s = n(388032);
 
-function h(t, e, n) {
-  let h = (0, a.e7)([o.Z], () => o.Z.getChannel(t.parent_id));
+function f(e, t, n) {
+  let f = (0, a.e7)([d.Z], () => d.Z.getChannel(e.parent_id));
   return (0, i.jsx)(l.sNh, {
     id: "channel-copy-link",
-    label: u.NW.string(u.t.WqhZsr),
+    label: s.NW.string(s.t.WqhZsr),
     action: () => {
-      t.isForumPost() && (0, s.B)({
-        postId: t.id,
+      e.isForumPost() && (0, o.B)({
+        postId: e.id,
         location: {
           section: c.jXE.CONTEXT_MENU
         }
-      }), (0, r.J)((0, d.EO)(t, h, e, n))
+      }), (0, r.J)((0, u.EO)(e, f, t, n))
     }
   })
 }

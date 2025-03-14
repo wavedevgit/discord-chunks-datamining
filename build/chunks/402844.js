@@ -1,9 +1,8 @@
-/** Chunk was on 88505 **/
+/** Chunk was on 3173 **/
 e.exports = {
-  modal: "modal__5fa9f",
-  content: "content__5fa9f",
-  image: "image__5fa9f",
-  title: "title__5fa9f",
-  description: "description__5fa9f",
-  formItem: "formItem__5fa9f"
+  banner: "banner__19627",
+  potion: "potion__19627",
+  actionButton: "actionButton__19627",
+  x: "x__19627",
+  subsection: "subsection__19627"
 }

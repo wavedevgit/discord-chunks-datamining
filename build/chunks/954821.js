@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   h: () => _
 }), n(47120), n(266796);
@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(305342),
   h = n(293810),
   f = n(388032),
-  b = n(314516);
-let x = e => {
+  x = n(781853);
+let b = e => {
     let [t, n] = i.useState(!1), [r, s] = i.useState(null);
     return {
       cancelSubscription: async t => {
@@ -48,7 +48,7 @@ let x = e => {
       cancelSubscription: v,
       error: S,
       submitting: T
-    } = x(O), I = async () => {
+    } = b(O), I = async () => {
       await v(N.id) && _()
     }, y = o.role_benefits.benefits.filter(e => e.ref_type === h.Qs.CHANNEL), A = o.role_benefits.benefits.filter(e => e.ref_type === h.Qs.INTANGIBLE), P = a()(N.currentPeriodEnd).format("MMMM Do, YYYY"), R = f.NW.formatToPlainString(f.t.KsMRPz, {
       numChannels: y.length,
@@ -57,38 +57,38 @@ let x = e => {
     });
     return (0, r.jsxs)(l.Y0X, {
       transitionState: n,
-      className: b.__invalid_modal,
+      className: x.__invalid_modal,
       "aria-labelledby": E,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)("img", {
           src: C,
           alt: "",
-          className: b.headerImage
+          className: x.headerImage
         }), (0, r.jsx)(l.olH, {
           withCircleBackground: !0,
-          className: b.closeButton,
+          className: x.closeButton,
           onClick: _
         })]
       }), null != S ? (0, r.jsx)(l.kzN, {
         children: S.message
       }) : null, (0, r.jsxs)(l.hzk, {
-        className: b.content,
+        className: x.content,
         children: [(0, r.jsx)(l.X6q, {
           id: E,
           variant: "text-md/medium",
-          className: b.title,
+          className: x.title,
           children: f.NW.string(f.t.O6l5tL)
         }), (0, r.jsx)(l.Text, {
-          className: b.description,
+          className: x.description,
           variant: "text-sm/normal",
           children: R
         }), (0, r.jsx)(p.c, {
           listingId: o.id,
           guildId: i.guild_id,
-          className: b.benefits
+          className: x.benefits
         })]
       }), (0, r.jsxs)(l.mzw, {
-        className: b.footer,
+        className: x.footer,
         children: [(0, r.jsx)(l.zxk, {
           color: l.zxk.Colors.RED,
           onClick: I,
@@ -97,7 +97,7 @@ let x = e => {
         }), (0, r.jsx)(l.zxk, {
           look: l.zxk.Looks.LINK,
           color: l.zxk.Colors.WHITE,
-          className: b.goBackButton,
+          className: x.goBackButton,
           onClick: _,
           children: f.NW.string(f.t.EP6EPT)
         })]

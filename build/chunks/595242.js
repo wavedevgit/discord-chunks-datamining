@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   Z: () => _
 });
@@ -16,14 +16,14 @@ var r = n(200651),
   p = n(899667),
   h = n(853872),
   f = n(78839),
-  b = n(783739),
-  x = n(981631),
-  N = n(778893);
+  x = n(783739),
+  b = n(981631),
+  N = n(232198);
 
 function _() {
   i.useEffect(() => {
     c.Z.wait(() => {
-      d.jg(), d.tZ(), (0, u.X8)(), (0, m.Y2)(null, null, x.JjL.DISCOVERY), (0, u.tH)(!0)
+      d.jg(), d.tZ(), (0, u.X8)(), (0, m.Y2)(null, null, b.JjL.DISCOVERY), (0, u.tH)(!0)
     })
   }, []);
   let {
@@ -39,7 +39,7 @@ function _() {
       className: N.background
     }), (0, r.jsx)("div", {
       className: N.content,
-      children: (0, r.jsx)(b.Z, {
+      children: (0, r.jsx)(x.Z, {
         premiumSubscription: t
       })
     })]

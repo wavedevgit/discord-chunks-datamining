@@ -1,6 +1,6 @@
 /**
   Module ID: 28102
-  Original File Name: 71aeea83b0d37e74
+  Original File Name: 334a936310e6e515
 **/
 .wrapper__889ee {
     width: auto
@@ -13,11 +13,7 @@
     cursor: crosshair
 }
 
-.saturation__889ee>div {
-    border-radius: 3px
-}
-
-.saturation__889ee>div>div {
+.saturation__889ee>div,.saturation__889ee>div>div {
     border-radius: 3px
 }
 
@@ -51,4 +47,4 @@
     forced-color-adjust: none
 }
 
-/*# sourceMappingURL=71aeea83b0d37e74.css.map*/
+/*# sourceMappingURL=334a936310e6e515.css.map*/

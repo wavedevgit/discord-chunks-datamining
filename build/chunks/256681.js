@@ -1,14 +1,8 @@
-/** Chunk was on web.js **/
-"use strict";
-var r = {
-  tier2Animation: "tier2Animation__387d4",
-  panningAnimation: "panningAnimation__387d4",
-  panningAnimationInner: "panningAnimationInner__387d4",
-  tier2Background: "tier2Background__387d4 panningAnimationInner__387d4",
-  tier2Foreground: "tier2Foreground__387d4 panningAnimationInner__387d4",
-  guildWrapper: "guildWrapper__387d4",
-  guildBackground: "guildBackground__387d4",
-  guildStar: "guildStar__387d4",
-  sequencedAnimation: "sequencedAnimation__387d4"
-};
-e.exports = r
+/** Chunk was on 36485 **/
+e.exports = {
+  card: "card_dc2e44",
+  caret: "caret_dc2e44",
+  feature: "feature_dc2e44",
+  featureIcon: "featureIcon_dc2e44",
+  clickable: "clickable_dc2e44"
+}

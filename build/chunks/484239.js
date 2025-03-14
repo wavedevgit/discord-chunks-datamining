@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   Z: () => h
 });
@@ -11,7 +11,7 @@ var i = n(120356),
   o = n(404615),
   c = n(743612),
   d = n(735825),
-  u = n(194511),
+  u = n(541762),
   m = n(721239),
   g = n(557634),
   p = n(992429);
@@ -20,8 +20,8 @@ let h = e => {
   let n, i, {
       title: h,
       titleClassName: f,
-      buttonClassName: b,
-      perkImage: x,
+      buttonClassName: x,
+      perkImage: b,
       isCarousel: N,
       onCtaClick: _,
       perkComponent: E,
@@ -58,12 +58,12 @@ let h = e => {
       titleClassName: f,
       subtitle: j,
       subtitleClassName: v
-    }), null != x && (0, r.jsxs)("div", {
+    }), null != b && (0, r.jsxs)("div", {
       className: s()(u.relative, {
         [u.cardImage]: !N
       }),
       children: [(0, r.jsx)("img", {
-        src: x,
+        src: b,
         alt: "",
         className: N ? A ? u.carouselCardImageGrayscale : u.carouselCardImage : ""
       }), A ? (0, r.jsx)("div", {
@@ -77,7 +77,7 @@ let h = e => {
     }), null != E && (0, r.jsxs)("div", {
       className: u.cardIllustrationNoHover,
       children: [E, 0 !== C.length && null != _ && (0, r.jsx)(a.zxk, {
-        className: b,
+        className: x,
         disabled: !y,
         fullWidth: !0,
         onClick: _,

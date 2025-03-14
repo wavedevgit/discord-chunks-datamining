@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   Z: () => N
 });
@@ -16,36 +16,36 @@ var i = n(399606),
   g = n(946690),
   p = n(456771),
   h = n(292352),
-  f = n(635357),
-  b = n(388032),
-  x = n(28472);
+  f = n(155517),
+  x = n(388032),
+  b = n(79876);
 let N = () => {
   let e = (0, c.mq)(h.ne.ACTIVE),
     t = (0, o.c)(),
     n = (0, i.e7)([a.default], () => a.default.getCurrentUser()),
-    N = (0, l.o)(b.NW.string(f.Z["5RZ8Tk"]), b.NW.string(f.Z.bmhCnJ)),
-    _ = (0, l.o)(b.NW.string(f.Z.XKnFFh), b.NW.string(f.Z["68zfxM"])),
-    E = (0, l.o)(b.NW.string(f.Z["Rm/6a2"]), b.NW.string(f.Z["1xPTwM"])),
+    N = (0, l.o)(x.NW.string(f.Z["5RZ8Tk"]), x.NW.string(f.Z.bmhCnJ)),
+    _ = (0, l.o)(x.NW.string(f.Z.XKnFFh), x.NW.string(f.Z["68zfxM"])),
+    E = (0, l.o)(x.NW.string(f.Z["Rm/6a2"]), x.NW.string(f.Z["1xPTwM"])),
     j = (0, s.bWb)().enabled;
   return void 0 === n ? null : (0, r.jsxs)("div", {
-    className: x.container,
+    className: b.container,
     children: [(0, r.jsx)("div", {
-      className: x.banner,
+      className: b.banner,
       children: (0, r.jsx)(d.Z, {})
     }), (0, r.jsxs)("div", {
-      className: x.featureCards,
+      className: b.featureCards,
       children: [(0, r.jsx)(g.Z, {
-        iconClassName: x.chatCheckIcon,
+        iconClassName: b.chatCheckIcon,
         icon: s.eQA,
-        header: b.NW.string(f.Z["001l3t"]),
+        header: x.NW.string(f.Z["001l3t"]),
         description: N
       }), (0, r.jsx)(g.Z, {
         icon: s.tEF,
-        header: b.NW.string(f.Z.yipAeH),
+        header: x.NW.string(f.Z.yipAeH),
         description: _
       }), (0, r.jsx)(g.Z, {
         icon: j ? s.IkH : (0, s.GSL)(p.Z),
-        header: b.NW.string(f.Z.hhOuMT),
+        header: x.NW.string(f.Z.hhOuMT),
         description: E
       })]
     }), 0 === e.length ? (0, r.jsx)(m.Z, {}) : null, void 0 !== t && e.length > 0 ? (0, r.jsx)(u.Z, {

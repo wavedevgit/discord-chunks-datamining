@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   Z: () => g
 });
@@ -12,7 +12,7 @@ var i = n(120356),
   c = n(197115),
   d = n(474936),
   u = n(388032),
-  m = n(153594);
+  m = n(728847);
 let g = e => {
   var {
     className: t,
@@ -36,8 +36,8 @@ let g = e => {
   }(e, ["className", "forceWhite", "giftMessage", "subscriptionTier"]);
   let h = (0, o.ZP)(),
     f = (0, a.wj)(h) || n,
-    b = f ? l.Ttl.WHITE : l.Ttl.BRAND,
-    x = g === d.Si.TIER_0 ? u.NW.string(u.t.rk4Uu7) : u.NW.string(u.t.Ve9Ge3);
+    x = f ? l.Ttl.WHITE : l.Ttl.BRAND,
+    b = g === d.Si.TIER_0 ? u.NW.string(u.t.rk4Uu7) : u.NW.string(u.t.Ve9Ge3);
   return (0, r.jsx)(c.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -57,9 +57,9 @@ let g = e => {
     return e
   }({
     isGift: !0,
-    color: b,
+    color: x,
     look: l.iLD.OUTLINED,
-    buttonText: x,
+    buttonText: b,
     giftMessage: i,
     className: s()(t, m.giftButton, f ? m.buttonWhite : m.buttonBrand),
     subscriptionTier: g

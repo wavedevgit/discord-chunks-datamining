@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   Z: () => A
 });
@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(131951),
   h = n(556296),
   f = n(924557),
-  b = n(435064),
-  x = n(894694),
+  x = n(435064),
+  b = n(894694),
   N = n(779618),
   _ = n(39604),
   E = n(442334),
@@ -26,9 +26,9 @@ var r = n(200651),
   O = n(37113),
   v = n(526761),
   S = n(388032),
-  T = n(513279),
-  I = n(107248),
-  y = n(802138);
+  T = n(413699),
+  I = n(520386),
+  y = n(467025);
 
 function A() {
   let e = (0, l.e7)([p.Z], () => p.Z.getHardwareEncoding()),
@@ -38,10 +38,10 @@ function A() {
       decoupledClipsEnabled: s,
       clipsLength: A,
       clipsQuality: P
-    } = (0, l.cj)([b.Z], () => b.Z.getSettings()),
-    R = (0, l.e7)([b.Z], () => b.Z.getHardwareClassification()),
+    } = (0, l.cj)([x.Z], () => x.Z.getSettings()),
+    R = (0, l.e7)([x.Z], () => x.Z.getHardwareClassification()),
     D = (0, l.e7)([h.ZP], () => h.ZP.getKeybindForAction(C.kg4.SAVE_CLIP, !0)),
-    Z = b.Z.isDecoupledGameClippingEnabled(),
+    Z = x.Z.isDecoupledGameClippingEnabled(),
     w = (0, N.Z)(p.Z),
     {
       showClipsHeaderEntrypoint: k
@@ -151,7 +151,7 @@ function A() {
             scrollPosition: v.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
           })
         })
-      }), R === x.x.BELOW_MINIMUM ? (0, r.jsx)(g.Z, {
+      }), R === b.x.BELOW_MINIMUM ? (0, r.jsx)(g.Z, {
         look: g.z.WARNING,
         className: I.formItem,
         children: S.NW.string(S.t.SIxrIC)

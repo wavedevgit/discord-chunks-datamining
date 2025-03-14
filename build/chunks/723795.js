@@ -1,4 +1,4 @@
-/** Chunk was on 93757 **/
+/** Chunk was on 25625 **/
 n.d(t, {
   default: () => q
 }), n(47120);
@@ -22,7 +22,7 @@ var i = n(200651),
   y = n(44272),
   g = n(308083),
   v = n(388032),
-  j = n(141494);
+  j = n(132979);
 let B = {
     mass: 1,
     tension: 600,

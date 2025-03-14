@@ -1,4 +1,4 @@
-/** Chunk was on 54082 **/
+/** Chunk was on 3173 **/
 n.d(t, {
   Z: () => g
 }), n(47120);
@@ -12,7 +12,7 @@ var r = n(200651),
   u = n(570140),
   d = n(596454),
   p = n(607070),
-  h = n(492842);
+  h = n(463120);
 let f = [h.emoji1, h.emoji2, h.emoji3, h.emoji4],
   m = i.memo(function(e) {
     var t;

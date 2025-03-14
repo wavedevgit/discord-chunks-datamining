@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   Z: () => h
 });
@@ -12,7 +12,7 @@ var i = n(120356),
   c = n(787528),
   d = n(474936),
   u = n(388032),
-  m = n(87501);
+  m = n(510826);
 let g = (e, t) => {
     if ((null == e ? void 0 : e.status) === o.Vq.EARNED) {
       var n;
@@ -68,11 +68,11 @@ let g = (e, t) => {
         id: d,
         badgeVersion: h,
         nameUnformatted: f,
-        tenureReqNumMonths: b,
-        hasWideArt: x
+        tenureReqNumMonths: x,
+        hasWideArt: b
       } = t,
       N = u.NW.string(f),
-      _ = (0, l.q)(d, b);
+      _ = (0, l.q)(d, x);
     return 1 === h ? (0, r.jsxs)("div", {
       className: s()(m.container, p(d)),
       children: [(0, r.jsx)("div", {}), " ", (0, r.jsx)("img", {
@@ -97,7 +97,7 @@ let g = (e, t) => {
         alt: N,
         className: s()(m.badgeImage, m.badgeImageV2, {
           [m.upcomingBadge]: t.status === o.Vq.UPCOMING,
-          [m.wide]: x
+          [m.wide]: b
         })
       }), (0, r.jsxs)("div", {
         className: m.textColumn,

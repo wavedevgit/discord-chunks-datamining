@@ -1,14 +1,14 @@
-/** Chunk was on 98806 **/
+/** Chunk was on 85885 **/
 n.d(t, {
   Z: () => d
 });
 var r = n(200651);
 n(192379);
-var a = n(120356),
-  i = n.n(a),
-  l = n(388032),
-  o = n(798426),
-  c = n(296507),
+var i = n(120356),
+  l = n.n(i),
+  c = n(388032),
+  a = n(926466),
+  o = n(296507),
   s = n(866402);
 
 function d(e) {
@@ -17,15 +17,15 @@ function d(e) {
     children: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: i()(o.container, t),
+    className: l()(a.container, t),
     children: [(0, r.jsx)("img", {
-      alt: l.NW.string(l.t.VoB8OT),
+      alt: c.NW.string(c.t.VoB8OT),
       src: s,
-      className: i()(o.sparkleIcon, o.sparkleBottom)
+      className: l()(a.sparkleIcon, a.sparkleBottom)
     }), n, (0, r.jsx)("img", {
-      alt: l.NW.string(l.t.VoB8OT),
-      src: c,
-      className: i()(o.sparkleIcon, o.sparkleTop)
+      alt: c.NW.string(c.t.VoB8OT),
+      src: o,
+      className: l()(a.sparkleIcon, a.sparkleTop)
     })]
   })
 }

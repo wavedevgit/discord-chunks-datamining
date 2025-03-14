@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   Z: () => m
 });
@@ -10,7 +10,7 @@ var r = n(200651),
   o = n(643879),
   c = n(25990),
   d = n(921813),
-  u = n(784596);
+  u = n(803774);
 
 function m(e) {
   var t;
@@ -22,8 +22,8 @@ function m(e) {
     reducedMotion: h
   } = i.useContext(a.Sfi), {
     pendingAvatarV2: f,
-    pendingBanner: b,
-    pendingThemeColors: x,
+    pendingBanner: x,
+    pendingThemeColors: b,
     pendingPronouns: N,
     pendingBio: _,
     tryItOutThemeColors: E,
@@ -57,9 +57,9 @@ function m(e) {
     user: m,
     pendingPronouns: N,
     pendingBio: _,
-    pendingBanner: null !== (t = null != C ? C : b) && void 0 !== t ? t : n(466045),
+    pendingBanner: null !== (t = null != C ? C : x) && void 0 !== t ? t : n(466045),
     pendingAvatar: S,
-    pendingThemeColors: null != E ? E : x,
+    pendingThemeColors: null != E ? E : b,
     pendingAvatarDecoration: T,
     pendingProfileEffectId: v,
     avatarClassName: null != j || null != f || h.enabled ? void 0 : u.spinningAvatar,

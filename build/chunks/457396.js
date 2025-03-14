@@ -39,7 +39,7 @@ var r = n(200651),
   D = n(981631),
   k = n(921944),
   M = n(388032),
-  U = n(607359);
+  U = n(252910);
 let G = "NitroTabButton",
   W = e => {
     let {

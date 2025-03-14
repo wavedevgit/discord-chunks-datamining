@@ -29,8 +29,8 @@ var r = n(200651),
   S = n(650613),
   k = n(789086),
   E = n(206583),
-  I = n(866235),
-  w = n(710662);
+  I = n(466867),
+  w = n(744850);
 let P = [{
   key: "type",
   cellClassName: l()(I.cell, I.cellType),

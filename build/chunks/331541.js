@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   Z: () => Y
 });
@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(300284),
   h = n(680295),
   f = n(785717),
-  b = n(687158),
-  x = n(899007),
+  x = n(687158),
+  b = n(899007),
   N = n(648052),
   _ = n(867176),
   E = n(537006),
@@ -43,8 +43,8 @@ var r = n(200651),
   U = n(981631),
   V = n(228168),
   G = n(388032),
-  F = n(652480),
-  H = n(231930);
+  F = n(334485),
+  H = n(882706);
 
 function z(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -70,7 +70,7 @@ function Y(e) {
     currentUser: t,
     onClose: n,
     setPopoutRef: Y
-  } = e, K = __OVERLAY__, q = (0, b.ZP)(t.id), {
+  } = e, K = __OVERLAY__, q = (0, x.ZP)(t.id), {
     analyticsLocations: X
   } = (0, m.ZP)(u.Z.ACCOUNT_PROFILE_POPOUT), J = (0, f.ZB)({
     layout: "SIMPLIFIED_ACCOUNT_POPOUT",
@@ -114,7 +114,7 @@ function Y(e) {
               user: t,
               displayProfile: q,
               profileType: V.y0.BITE_SIZE
-            }), (0, r.jsx)(x.Z, {
+            }), (0, r.jsx)(b.Z, {
               user: t,
               displayProfile: q,
               profileType: V.y0.BITE_SIZE,

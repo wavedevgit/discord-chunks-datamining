@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 5820623814fa9634
+  Original File Name: f2abefb4d0369e2d
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -906,11 +906,10 @@
 }
 
 .button__7e329:active,.button__7e329:hover {
-    color: var(--interactive-hover);
     background-color: rgba(28,29,35,.8)
 }
 
-.button__7e329:active .keybind__7e329,.button__7e329:hover .keybind__7e329 {
+.button__7e329:active,.button__7e329:active .keybind__7e329,.button__7e329:hover,.button__7e329:hover .keybind__7e329 {
     color: var(--interactive-hover)
 }
 
@@ -1718,11 +1717,7 @@
     padding: 4px 6px
 }
 
-.experimentOverlayTitle__2f4f7.idle__2f4f7 {
-    opacity: 0
-}
-
-.experimentOverlayTitle__2f4f7:empty {
+.experimentOverlayTitle__2f4f7.idle__2f4f7,.experimentOverlayTitle__2f4f7:empty {
     opacity: 0
 }
 
@@ -2337,11 +2332,7 @@
     border-bottom-color: var(--brand-500)
 }
 
-.tabItem_fe7ab2:active {
-    border-bottom-color: var(--control-brand-foreground)
-}
-
-.tabItem_fe7ab2.selected_fe7ab2 {
+.tabItem_fe7ab2.selected_fe7ab2,.tabItem_fe7ab2:active {
     border-bottom-color: var(--control-brand-foreground)
 }
 
@@ -3266,13 +3257,7 @@
     color: var(--interactive-hover)
 }
 
-.notInteractive__2ea32.modeConnected__2ea32 .name__2ea32,.notInteractive__2ea32.modeSelected__2ea32 .name__2ea32 {
-    color: var(--interactive-active);
-    font-weight: 500;
-    font-weight: var(--font-weight-semibold-1x-light-theme,500)
-}
-
-.modeConnected__2ea32 .name__2ea32,.modeConnected__2ea32:hover .name__2ea32,.modeSelected__2ea32 .name__2ea32,.modeSelected__2ea32:hover .name__2ea32,.modeUnreadImportant__2ea32 .name__2ea32,.modeUnreadImportant__2ea32:hover .name__2ea32 {
+.modeConnected__2ea32 .name__2ea32,.modeConnected__2ea32:hover .name__2ea32,.modeSelected__2ea32 .name__2ea32,.modeSelected__2ea32:hover .name__2ea32,.modeUnreadImportant__2ea32 .name__2ea32,.modeUnreadImportant__2ea32:hover .name__2ea32,.notInteractive__2ea32.modeConnected__2ea32 .name__2ea32,.notInteractive__2ea32.modeSelected__2ea32 .name__2ea32 {
     color: var(--interactive-active);
     font-weight: 500;
     font-weight: var(--font-weight-semibold-1x-light-theme,500)
@@ -3510,11 +3495,7 @@
     transition: border-color .1s ease-in-out
 }
 
-.channelItemContainer__711d3:hover {
-    background-color: var(--bg-mod-strong)
-}
-
-.channelItemContainer__711d3.channelItemHighlighted__711d3 {
+.channelItemContainer__711d3.channelItemHighlighted__711d3,.channelItemContainer__711d3:hover {
     background-color: var(--bg-mod-strong)
 }
 
@@ -5096,11 +5077,7 @@ div.clanTagBadgeContainer__07f91 {
     flex-shrink: 0
 }
 
-.optionsButton__07f91:hover {
-    background: var(--bg-overlay-active,var(--background-modifier-active))
-}
-
-.optionsActive__07f91 {
+.optionsActive__07f91,.optionsButton__07f91:hover {
     background: var(--bg-overlay-active,var(--background-modifier-active))
 }
 
@@ -5512,20 +5489,18 @@ span.clanTag__07f91.isOverlay__07f91 {
 .layoutLocked_eb35c5 {
     position: absolute;
     top: 0;
-    left: 0;
-    pointer-events: none
+    left: 0
 }
 
-.layoutLocked_eb35c5>* {
+.layoutLocked_eb35c5,.layoutLocked_eb35c5>*,.layoutUnlocked_eb35c5 {
     pointer-events: none
 }
 
 .layoutUnlocked_eb35c5 {
-    pointer-events: none
 }
 
 .layoutUnlocked_eb35c5>* {
     pointer-events: auto
 }
 
-/*# sourceMappingURL=5820623814fa9634.css.map*/
+/*# sourceMappingURL=f2abefb4d0369e2d.css.map*/

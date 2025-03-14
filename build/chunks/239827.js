@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   Z: () => d
 });
@@ -8,7 +8,7 @@ var r = n(200651),
   a = n.n(s),
   l = n(481060),
   o = n(388032),
-  c = n(856909);
+  c = n(212402);
 let d = i.forwardRef(function(e, t) {
   var n, i, {
       currentPageIndex: s,
@@ -34,7 +34,7 @@ let d = i.forwardRef(function(e, t) {
       return i
     }(e, ["currentPageIndex", "numPages", "onChangePage", "children", "className", "showPageCount"]);
   let f = s <= 0,
-    b = s >= d - 1;
+    x = s >= d - 1;
   return (0, r.jsxs)("div", (n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -83,10 +83,10 @@ let d = i.forwardRef(function(e, t) {
         })
       }), (0, r.jsx)(l.P3F, {
         className: a()(c.pageButtonNext, {
-          [c.disabled]: b
+          [c.disabled]: x
         }),
-        tabIndex: b ? -1 : 0,
-        onClick: b ? void 0 : () => u(s + 1),
+        tabIndex: x ? -1 : 0,
+        onClick: x ? void 0 : () => u(s + 1),
         children: (0, r.jsx)(l.Fbu, {
           size: "md",
           color: "currentColor",

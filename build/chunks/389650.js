@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   Z: () => F
 }), n(266796), n(47120), n(653041);
@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(825209),
   h = n(721383),
   f = n(612226),
-  b = n(714338),
-  x = n(924557),
+  x = n(714338),
+  b = n(924557),
   N = n(600164),
   _ = n(74299),
   E = n(365023),
@@ -32,9 +32,9 @@ var r = n(200651),
   A = n(981631),
   P = n(420212),
   R = n(388032),
-  D = n(937830),
-  Z = n(951565),
-  w = n(802138);
+  D = n(707647),
+  Z = n(834030),
+  w = n(467025);
 
 function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -86,7 +86,7 @@ class V extends i.PureComponent {
     let {
       keybind: e
     } = this.props, t = T.BB(e.shortcut);
-    return b.Z.hasBind(t) ? (0, r.jsx)(u.R94, {
+    return x.Z.hasBind(t) ? (0, r.jsx)(u.R94, {
       className: D.keybindMessage,
       type: u.geA.DESCRIPTION,
       style: {
@@ -410,7 +410,7 @@ function F() {
   let e = (0, c.e7)([C.ZP], () => C.ZP.getState()),
     t = (0, c.e7)([j.Z], () => (0, _.Z)(j.Z)),
     n = (0, c.e7)([O.default], () => O.default.isSupported()),
-    i = (0, x.Go)();
+    i = (0, b.Go)();
   return (0, r.jsx)(G, {
     keybinds: e,
     canGoLive: t,

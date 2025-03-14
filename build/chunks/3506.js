@@ -1,4 +1,4 @@
-/** Chunk was on 1815 **/
+/** Chunk was on 80437 **/
 n.d(t, {
   Z: () => P
 });
@@ -17,8 +17,8 @@ var i = n(512722),
   p = n(594190),
   h = n(212632),
   f = n(444295),
-  b = n(809357),
-  x = n(371651),
+  x = n(809357),
+  b = n(371651),
   N = n(957148),
   _ = n(556296),
   E = n(808506),
@@ -28,7 +28,7 @@ n(63063);
 var O = n(13140),
   v = n(981631),
   S = n(388032),
-  T = n(720447);
+  T = n(848996);
 let I = y(null);
 
 function y(e) {
@@ -68,7 +68,7 @@ function P(e) {
   } = e, {
     oopEnabled: i,
     legacyEnabled: a
-  } = (0, o.cj)([x.default], () => x.default.getGlobalEnabledStatus()), {
+  } = (0, o.cj)([b.default], () => b.default.getGlobalEnabledStatus()), {
     avatarSizeMode: E,
     displayNameMode: O,
     displayUserMode: P,
@@ -82,7 +82,7 @@ function P(e) {
     notificationPositionMode: j.default.getNotificationPositionMode(),
     textChatNotificationMode: j.default.getTextChatNotificationMode(),
     shouldShowKeybindIndicators: j.default.showKeybindIndicators
-  })), w = (0, o.e7)([_.ZP], () => _.ZP.getOverlayKeybind()), k = (0, b.Z)({
+  })), w = (0, o.e7)([_.ZP], () => _.ZP.getOverlayKeybind()), k = (0, x.Z)({
     location: "overlay_user_settings"
   }), W = (0, g.$1)();
   return ! function() {

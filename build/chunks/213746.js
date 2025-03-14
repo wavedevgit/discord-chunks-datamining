@@ -1,4 +1,4 @@
-/** Chunk was on 37697 **/
+/** Chunk was on 56033 **/
 n.d(t, {
   Z: () => j
 }), n(301563), n(789020);
@@ -19,7 +19,7 @@ var r = n(200651),
   f = n(979007),
   b = n(981631),
   v = n(388032),
-  x = n(323300);
+  x = n(170923);
 
 function C(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -119,7 +119,7 @@ function I(e) {
         return void(0, o.ZDy)(async () => {
           let {
             ItemDetailsModal: e
-          } = await Promise.all([n.e("97349"), n.e("10115")]).then(n.bind(n, 147496));
+          } = await Promise.all([n.e("97349"), n.e("25480")]).then(n.bind(n, 147496));
           return n => (0, r.jsx)(e, C({
             appId: t,
             skuId: a
@@ -135,7 +135,7 @@ function I(e) {
         return e = (0, m.KW)(c.flags) ? "user" : "guild", void(0, o.ZDy)(async () => {
           let {
             SubscriptionDetailsModal: i
-          } = await Promise.all([n.e("97349"), n.e("32717")]).then(n.bind(n, 519896));
+          } = await Promise.all([n.e("97349"), n.e("51906")]).then(n.bind(n, 519896));
           return n => (0, r.jsx)(i, C({
             appId: t,
             subscriptionType: e,
