@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => N
 }), n(47120), n(653041);
@@ -53,13 +53,13 @@ function y(e, t) {
   }), e
 }
 let x = (e, t) => null == e && null == t || e === t,
-  j = (e, t) => e.findIndex(e => x(e.emoji.id, null == t ? void 0 : t.id) && x(e.emoji.name, null == t ? void 0 : t.name)),
+  E = (e, t) => e.findIndex(e => x(e.emoji.id, null == t ? void 0 : t.id) && x(e.emoji.name, null == t ? void 0 : t.name)),
   O = (e, t) => {
     if (null == t) return e;
-    let n = j(e, t);
+    let n = E(e, t);
     return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
   };
-class E extends i.PureComponent {
+class j extends i.PureComponent {
   static getDerivedStateFromProps(e, t) {
     let n = e.message.reactions.length;
     return 0 === t.reactionsCount && n > 0 ? {
@@ -80,24 +80,24 @@ class E extends i.PureComponent {
       isForumToolbar: v,
       channel: y,
       className: x,
-      forceAddReactions: j,
+      forceAddReactions: E,
       reactionClassName: O,
-      useChatFontScaling: E,
+      useChatFontScaling: j,
       forceHideReactionCreates: N,
       remainingReactions: C,
       combinedReactions: I,
       visibleReactionsCount: S
     } = this.props, {
       disableTransitionAppear: T
-    } = this.state, P = E ? _ : g, A = S > 0;
-    if (!A && !j) return null;
+    } = this.state, P = j ? _ : g, A = S > 0;
+    if (!A && !E) return null;
     let {
       canShowImprovedReactionButton: w
     } = c.Z.getCurrentConfig({
       location: "message_reactions"
     }, {
       autoTrackExposure: !0
-    }), Z = j || A;
+    }), Z = E || A;
     return (0, r.jsxs)(l.W, {
       component: "div",
       className: o()(P.reactions, x, {
@@ -121,7 +121,7 @@ class E extends i.PureComponent {
         isGuest: a,
         isPendingMember: b,
         isForumToolbar: v,
-        useChatFontScaling: E,
+        useChatFontScaling: j,
         className: O,
         emojiSize: w ? "reactionLarge" : "reaction"
       }), C > 0 && (0, r.jsx)(s.P3F, {
@@ -140,7 +140,7 @@ class E extends i.PureComponent {
         type: d.O.NORMAL,
         message: e,
         channel: y,
-        useChatFontScaling: E,
+        useChatFontScaling: j,
         isHovered: this.state.isHovered,
         className: o()({
           [P.forceShow]: Z
@@ -183,7 +183,7 @@ let N = e => {
       remainingReactions: o
     }
   }, [a, n, t.reactions]);
-  return (0, r.jsx)(E, y(v({}, e), {
+  return (0, r.jsx)(j, y(v({}, e), {
     visibleReactionsCount: s,
     combinedReactions: o,
     remainingReactions: l

@@ -1,6 +1,6 @@
 /**
   Module ID: 76030
-  Original File Name: 4105d9c2eb92ddaf
+  Original File Name: 3c13fef27d5bb380
 **/
 .image__04666 {
     width: 100%;
@@ -56,85 +56,6 @@
 
 .menu__43313 {
     max-height: 70vh
-}
-
-.header_cd8d1b {
-    padding: 0 50px
-}
-
-.art_cd8d1b {
-    max-width: 100%
-}
-
-.artContainer_cd8d1b {
-    margin: 24px 38px;
-    width: 320px;
-    padding-left: var(--modal-horizontal-padding);
-    padding-right: var(--modal-horizontal-padding)
-}
-
-.modal_cd8d1b {
-    background: #222226;
-    position: relative;
-    overflow: hidden
-}
-
-.blur0_cd8d1b {
-    width: 701px;
-    height: 399px;
-    border-radius: 701px;
-    background: #222226;
-    filter: blur(55px);
-    right: -151px;
-    bottom: 16px
-}
-
-.blur0_cd8d1b,.blur1_cd8d1b {
-    z-index: -1;
-    position: absolute
-}
-
-.blur1_cd8d1b {
-    width: 555px;
-    height: 353px;
-    transform: rotate(-21deg);
-    left: -259px;
-    top: -264px;
-    border-radius: 555px;
-    background: #23246f
-}
-
-.blur1_cd8d1b,.blur2_cd8d1b {
-    opacity: .6;
-    filter: blur(150px)
-}
-
-.blur2_cd8d1b {
-    z-index: -1;
-    width: 420px;
-    height: 267px;
-    position: absolute;
-    right: -243px;
-    top: -175px;
-    border-radius: 420px;
-    background: #5865f2
-}
-
-.footer_cd8d1b {
-    background-color: #222226;
-    padding: 24px
-}
-
-.subscribeButton_cd8d1b {
-    border-radius: var(--radius-sm);
-    border: 1px solid hsla(0,3%,53.9%,.1);
-    background: linear-gradient(90deg,#19175c,#5968f0 49.5%,#db00a4);
-    display: flex;
-    min-width: 80px;
-    padding: 20px 16px;
-    justify-content: center;
-    align-items: center;
-    gap: var(--space-4)
 }
 
 .upsellOuter__50e68 {
@@ -1725,23 +1646,15 @@
 
 @keyframes outgoing-call-pulse__07f91 {
     0% {
-        opacity: .05
+        opacity: .2
     }
 
-    11.56% {
+    50% {
         opacity: .9
     }
 
-    39.02% {
-        opacity: .05
-    }
-
-    39.04% {
-        opacity: .9
-    }
-
-    66.48% {
-        opacity: .05
+    to {
+        opacity: .2
     }
 }
 
@@ -1959,11 +1872,7 @@ div.clanTagBadgeContainer__07f91 {
     flex-shrink: 0
 }
 
-.optionsButton__07f91:hover {
-    background: var(--bg-overlay-active,var(--background-modifier-active))
-}
-
-.optionsActive__07f91 {
+.optionsActive__07f91,.optionsButton__07f91:hover {
     background: var(--bg-overlay-active,var(--background-modifier-active))
 }
 
@@ -2017,7 +1926,7 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .ringing__07f91 {
     opacity: .3;
-    animation: outgoing-call-pulse__07f91 2.5s ease-out infinite
+    animation: outgoing-call-pulse__07f91 1s ease-out infinite
 }
 
 .guestSuffix__07f91 {
@@ -2358,9 +2267,12 @@ span.clanTag__07f91.isOverlay__07f91 {
     border-radius: 8px
 }
 
+.button_cb3698.loopbackEnabled_cb3698 {
+    background: hsla(0,0%,100%,.08)
+}
+
 .button_cb3698:hover {
-    border-radius: 8px;
-    background: hsla(0,0%,100%,.08);
+    background: hsla(0,0%,100%,.1);
     opacity: 1
 }
 
@@ -4490,6 +4402,11 @@ html .progress__61462 {
     background-color: var(--primary-230)
 }
 
+.wrapper__748d7 {
+    display: flex;
+    gap: 4px
+}
+
 .description__1f7ec {
     padding-top: 2px
 }
@@ -5878,11 +5795,7 @@ html .progress__61462 {
     gap: var(--spacing-4)
 }
 
-.accessory__09bc1:hover {
-    color: var(--interactive-hover)
-}
-
-.accessory__09bc1:hover .accessoryText__09bc1 {
+.accessory__09bc1:hover,.accessory__09bc1:hover .accessoryText__09bc1 {
     color: var(--interactive-hover)
 }
 
@@ -6575,18 +6488,12 @@ html .progress__61462 {
 }
 
 .progressBar_ef0e9b:after {
-    background-color: currentColor;
-    border-radius: 4px;
     content: "";
-    height: 100%;
     opacity: .2;
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 100%
 }
 
-.progressBarFill_ef0e9b {
+.progressBar_ef0e9b:after,.progressBarFill_ef0e9b {
     background-color: currentColor;
     border-radius: 4px;
     height: 100%;
@@ -9413,11 +9320,6 @@ html .progress__61462 {
     background-color: var(--bg-mod-subtle)
 }
 
-.wrapper__748d7 {
-    display: flex;
-    gap: 4px
-}
-
 .container_c44293 {
     height: 100%;
     background: var(--background-secondary);
@@ -9716,10 +9618,6 @@ html .progress__61462 {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
-}
-
-.inviteContainer_a4b24e {
-    justify-self: auto
 }
 
 .infoWrapper_a4b24e {
@@ -10888,6 +10786,10 @@ html .progress__61462 {
 
 .font-size-12 .cozy__235ca .iconContainer__235ca,.font-size-14 .cozy__235ca .iconContainer__235ca,.font-size-15 .cozy__235ca .iconContainer__235ca,.font-size-16 .cozy__235ca .iconContainer__235ca {
     width: 4.5rem
+}
+
+.visual-refresh .cozy__235ca .iconContainer__235ca {
+    width: var(--custom-message-margin-left-content-cozy)!important
 }
 
 .compact__235ca .iconContainer__235ca {
@@ -12643,11 +12545,7 @@ html .progress__61462 {
     color: var(--interactive-hover)
 }
 
-.closeIcon__45690:active {
-    color: var(--interactive-active)
-}
-
-.visual-refresh .closeIcon__45690:hover {
+.closeIcon__45690:active,.visual-refresh .closeIcon__45690:hover {
     color: var(--interactive-active)
 }
 
@@ -13021,6 +12919,10 @@ html .progress__61462 {
     padding: 16px 16px 0
 }
 
+.visual-refresh .header_ab6641 {
+    padding: var(--space-md) var(--space-md) 0
+}
+
 .headerTitle_ab6641 {
     display: flex;
     align-items: center
@@ -13123,6 +13025,14 @@ html .progress__61462 {
 .widerInbox__95796 {
     width: 50vw;
     max-width: 750px
+}
+
+.visual-refresh .recentMentionsPopout__95796 {
+    max-height: 70vh
+}
+
+.visual-refresh .widerInbox__95796 {
+    width: 560px
 }
 
 .scroller__95796 {
@@ -13291,6 +13201,10 @@ html .progress__61462 {
 
 .row__6fddf:hover {
     background-color: var(--background-message-hover)
+}
+
+.visual-refresh .row__6fddf {
+    padding: var(--space-xs) var(--space-sm)
 }
 
 .visual-refresh .row__6fddf:hover {
@@ -14708,8 +14622,18 @@ html .progress__61462 {
     line-height: 26px
 }
 
-.visual-refresh .search__97492 .DraftEditor-editorContainer {
+.visual-refresh .search__97492 .DraftEditor-editorContainer,.visual-refresh.density-compact .searchBar__97492 {
     height: 28px
+}
+
+.visual-refresh.density-compact .search__97492 .DraftEditor-root {
+    height: 100%;
+    padding: 0 var(--space-4);
+    line-height: 22px
+}
+
+.visual-refresh.density-compact .search__97492 .DraftEditor-editorContainer {
+    height: 24px
 }
 
 .full-motion .searchBar__97492 {
@@ -15038,3 +14962,5 @@ html .progress__61462 {
     gap: 8px;
     margin-right: 8px
 }
+
+/*# sourceMappingURL=3c13fef27d5bb380.css.map*/

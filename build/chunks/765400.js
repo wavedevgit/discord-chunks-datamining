@@ -1,14 +1,14 @@
-/** Chunk was on 73628 **/
-r.d(t, {
+/** Chunk was on 76030 **/
+n.d(t, {
   v: () => l
 });
-var A = r(200651);
-r(192379);
-var n = r(481060),
-  o = r(388032),
-  a = r(826201);
-let l = () => (0, A.jsx)(n.IGR, {
-  color: n.TVs.unsafe_rawColors.YELLOW_300.css,
-  text: o.NW.string(o.t.vosPk5),
-  className: a.draftBadge
+var r = n(200651);
+n(192379);
+var i = n(481060),
+  a = n(388032),
+  o = n(826201);
+let l = () => (0, r.jsx)(i.IGR, {
+  color: i.TVs.unsafe_rawColors.YELLOW_300.css,
+  text: a.NW.string(a.t.vosPk5),
+  className: o.draftBadge
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => b,
   y: () => _
@@ -104,9 +104,9 @@ let g = e => {
     let {
       topic: y,
       speaker_count: x,
-      participant_count: j
-    } = n, O = null !== (t = n.members) && void 0 !== t ? t : [], E = _ ? O.slice(0, 3) : O, N = x - E.length;
-    return _ && (N += O.length - E.length), (0, r.jsxs)("div", {
+      participant_count: E
+    } = n, O = null !== (t = n.members) && void 0 !== t ? t : [], j = _ ? O.slice(0, 3) : O, N = x - j.length;
+    return _ && (N += O.length - j.length), (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         className: h.flex,
         children: [(0, r.jsxs)("div", {
@@ -133,7 +133,7 @@ let g = e => {
           }), (0, r.jsx)(l.X6q, {
             className: o()(h.__invalid_label, h.listeners),
             variant: "heading-sm/semibold",
-            children: j
+            children: E
           })]
         })]
       }), _ && (0, r.jsxs)("div", {
@@ -165,9 +165,9 @@ let g = e => {
         className: o()(h.members, {
           [h.embed]: _
         }),
-        children: [E.length > 0 && (0, r.jsxs)("div", {
+        children: [j.length > 0 && (0, r.jsxs)("div", {
           className: h.speakers,
-          children: [E.map(e => (0, r.jsx)(g, {
+          children: [j.map(e => (0, r.jsx)(g, {
             speaker: e,
             guildId: v.id,
             isEmbed: _

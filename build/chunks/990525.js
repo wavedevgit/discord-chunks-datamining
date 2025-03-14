@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   J: () => y
 }), n(47120);
@@ -45,14 +45,14 @@ let y = e => {
   } = e, {
     activeVoice: y,
     mostRecentlyRequestedVoiceId: x
-  } = (0, h.o)(), j = (0, f.z)(t.id), O = t.id === y, E = !t.available && !t.temporarilyAvailable, N = t.temporarilyAvailable && !n && !O, C = !O && t.id === x, [I, S] = i.useState(!1);
+  } = (0, h.o)(), E = (0, f.z)(t.id), O = t.id === y, j = !t.available && !t.temporarilyAvailable, N = t.temporarilyAvailable && !n && !O, C = !O && t.id === x, [I, S] = i.useState(!1);
   i.useEffect(() => {
     let e = C ? setTimeout(() => S(C), 200) : void 0;
     return () => {
       clearTimeout(e), S(!1)
     }
   }, [C]);
-  let T = null == j ? void 0 : j.previewSoundURLs,
+  let T = null == E ? void 0 : E.previewSoundURLs,
     [P, A] = i.useState(0),
     {
       isPlaying: w,
@@ -64,10 +64,10 @@ let y = e => {
     }),
     D = b[t.styleKey],
     L = i.useCallback(() => {
-      n || !E ? ((0, p.v6)(y === t.id ? null : t.id, a), N && u.default.track(g.rMx.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, v({
+      n || !j ? ((0, p.v6)(y === t.id ? null : t.id, a), N && u.default.track(g.rMx.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, v({
         voice_filter_id: t.id
       }, (0, m.w)(a)))) : (0, c.i)()
-    }, [n, E, y, t.id, a, N]),
+    }, [n, j, y, t.id, a, N]),
     M = i.useCallback(() => {
       u.default.track(g.rMx.VOICE_FILTER_PREVIEW_PLAYED, v({
         voice_filter_id: t.id
@@ -75,11 +75,11 @@ let y = e => {
         volume: .5
       }), (.25 > Math.random() || P > 0) && null != T && A(e => (e + 1) % T.length)
     }, [a, Z, P, T, t.id]),
-    W = null != j ? _.NW.string(j.name) : "";
+    W = null != E ? _.NW.string(E.name) : "";
   return (0, r.jsxs)("div", {
     className: o()(b.filter, D, {
       [b.selected]: O,
-      [b.locked]: E && !O
+      [b.locked]: j && !O
     }),
     children: [(0, r.jsxs)(s.P3F, {
       className: b.selector,
@@ -94,7 +94,7 @@ let y = e => {
           children: [(0, r.jsx)("img", {
             className: b.thumbnail,
             alt: "",
-            src: null == j ? void 0 : j.iconURL,
+            src: null == E ? void 0 : E.iconURL,
             draggable: !1
           }), (0, r.jsx)("div", {
             className: b.insetBorder
@@ -107,7 +107,7 @@ let y = e => {
             colorClass: b.checkmark,
             secondaryColor: l.Z.unsafe_rawColors.WHITE_500.css
           })
-        }), E && !O && (0, r.jsx)("div", {
+        }), j && !O && (0, r.jsx)("div", {
           className: o()([b.iconCircle, b.lockedCircle]),
           children: (0, r.jsx)(s.mBM, {
             size: "custom",

@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => x
 });
@@ -24,9 +24,9 @@ var r = n(200651),
 function x(e) {
   let t, n, a, {
       invite: x,
-      currentUserId: j,
+      currentUserId: E,
       guild: O,
-      onTransitionToInviteChannel: E,
+      onTransitionToInviteChannel: j,
       onAcceptInstantInvite: N
     } = e,
     C = null == O ? void 0 : O.id,
@@ -44,12 +44,12 @@ function x(e) {
     target_user: k
   } = x;
   o()(Z === b.Iq.STREAM && null != k, "invalid streaming invite");
-  let R = j === k.id,
+  let R = E === k.id,
     D = x.state === _.r2o.ACCEPTING,
     L = i.useCallback(() => {
       let e = "noop";
-      A ? (E(), e = "transition") : (N(), e = "accept"), (0, s.r$)(x, e, P)
-    }, [x, P, A, E, N]),
+      A ? (j(), e = "transition") : (N(), e = "accept"), (0, s.r$)(x, e, P)
+    }, [x, P, A, j, N]),
     M = null != O;
   if (null == O) {
     if (null == x.guild) return (0, r.jsx)(g.Z, {});

@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => O
 }), n(789020), n(47120);
@@ -21,11 +21,11 @@ var r = n(200651),
   v = n(358595),
   y = n(981631),
   x = n(388032),
-  j = n(651873);
+  E = n(651873);
 
 function O(e) {
   var t, O;
-  let E, N, C, {
+  let j, N, C, {
       onTransitionToInviteChannel: I,
       onAcceptInstantInvite: S,
       guild: T,
@@ -77,7 +77,7 @@ function O(e) {
     isStream: !1
   });
   return N = (0, r.jsxs)("span", {
-    className: j.infoTitle,
+    className: E.infoTitle,
     children: [(0, r.jsx)(u.Z, {
       guildId: T.id,
       name: T.name,
@@ -87,7 +87,7 @@ function O(e) {
         guild: T
       })
     }), (0, r.jsx)("span", {
-      className: j.infoBadge,
+      className: E.infoBadge,
       children: (0, r.jsx)(p.Z, {
         guild: T,
         isBannerVisible: !1,
@@ -95,30 +95,30 @@ function O(e) {
       })
     })]
   }), G && (C = (0, r.jsx)(o.DY3, {
-    className: j.tooltipContainer,
+    className: E.tooltipContainer,
     text: x.NW.string(x.t["/FeTKy"]),
     children: (0, r.jsx)(o.d3s, {
       size: "md",
       color: "currentColor",
-      className: j.infoIcon
+      className: E.infoIcon
     })
   })), U ? (N = (0, r.jsx)(m.Z.Channel, {
     channel: M
-  }), E = (0, r.jsxs)("span", {
-    className: j.infoTitle,
+  }), j = (0, r.jsxs)("span", {
+    className: E.infoTitle,
     children: [x.NW.format(x.t["2wimj4"], {
       guildName: T.name
     }), (0, r.jsx)("span", {
-      className: j.infoBadge,
+      className: E.infoBadge,
       children: (0, r.jsx)(p.Z, {
         guild: T,
         isBannerVisible: !1
       })
     })]
-  })) : null != R && R >= 5 || null != D && D > 0 ? E = (0, r.jsx)(m.Z.Data, {
+  })) : null != R && R >= 5 || null != D && D > 0 ? j = (0, r.jsx)(m.Z.Data, {
     members: R,
     membersOnline: D
-  }) : F && (E = (0, r.jsx)(m.Z.Channel, {
+  }) : F && (j = (0, r.jsx)(m.Z.Channel, {
     channel: M,
     guild: T
   })), (0, r.jsxs)(m.Z, {
@@ -129,13 +129,13 @@ function O(e) {
       extra: C
     }), (0, r.jsxs)(m.Z.Body, {
       children: [(0, r.jsxs)("div", {
-        className: j.headerLine,
+        className: E.headerLine,
         children: [(0, r.jsx)(m.Z.Icon, {
           guild: T
         }), (0, r.jsx)(m.Z.Info, {
           title: N,
           onClick: Q,
-          children: E
+          children: j
         })]
       }), (0, r.jsx)(m.Z.Button, {
         onClick: J,
@@ -145,7 +145,7 @@ function O(e) {
       })]
     }), T.hasFeature(y.oNc.HUB) && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: j.separator
+        className: E.separator
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",

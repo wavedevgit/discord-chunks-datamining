@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => S
 });
@@ -22,9 +22,9 @@ var i = n(120356),
   v = n(199902),
   y = n(592125),
   x = n(430824),
-  j = n(158776),
+  E = n(158776),
   O = n(306680),
-  E = n(594174),
+  j = n(594174),
   N = n(388032),
   C = n(568010);
 let I = {
@@ -110,7 +110,7 @@ function P(e) {
   let {
     channel: t,
     gotoChannel: n
-  } = e, i = (0, l.e7)([E.default], () => t.isDM() ? E.default.getUser(t.getRecipientId()) : null), a = null == i ? (0, m.x)(t) : i.getAvatarURL(void 0, 40);
+  } = e, i = (0, l.e7)([j.default], () => t.isDM() ? j.default.getUser(t.getRecipientId()) : null), a = null == i ? (0, m.x)(t) : i.getAvatarURL(void 0, 40);
   return (0, r.jsx)(s.P3F, {
     onClick: n,
     tabIndex: -1,
@@ -195,12 +195,12 @@ function Z(e) {
     status: i,
     activities: a,
     applicationStream: o
-  } = (0, l.cj)([E.default, j.Z, v.Z], () => {
-    let e = E.default.getUser(t.getRecipientId());
+  } = (0, l.cj)([j.default, E.Z, v.Z], () => {
+    let e = j.default.getUser(t.getRecipientId());
     return {
       user: e,
-      status: null != e ? j.Z.getStatus(e.id) : null,
-      activities: null != e ? j.Z.getActivities(e.id) : null,
+      status: null != e ? E.Z.getStatus(e.id) : null,
+      activities: null != e ? E.Z.getActivities(e.id) : null,
       applicationStream: null != e ? v.Z.getAnyStreamForUser(e.id) : null
     }
   }), {

@@ -44,6 +44,8 @@ function c(e, t, n) {
       return l.NW.formatToPlainString(l.t.FOptFR, {
         username: f
       });
+    case s.w.TIGGER_PAWTECT_ERROR:
+      return l.NW.string(l.t.c6kn6O);
     case s.w.GENERIC_ERROR:
       return l.NW.string(l.t.zBpoc3);
     default:

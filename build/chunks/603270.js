@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   F: () => T,
   P: () => S
@@ -22,9 +22,9 @@ var r = n(200651),
   v = n(572004),
   y = n(601911),
   x = n(504211),
-  j = n(970321),
+  E = n(970321),
   O = n(680005),
-  E = n(981631),
+  j = n(981631),
   N = n(979007),
   C = n(388032),
   I = n(968136);
@@ -33,7 +33,7 @@ function S(e) {
   let {
     appId: t,
     message: s
-  } = e, u = (0, j.R)(t), [p, f, g, _, v, O, S] = (0, a.Wu)([c.Z, h.Z, m.Z], () => {
+  } = e, u = (0, E.R)(t), [p, f, g, _, v, O, S] = (0, a.Wu)([c.Z, h.Z, m.Z], () => {
     var e;
     let n = c.Z.getApplication(t),
       r = null != n ? (0, y.y)(n, 45) : void 0,
@@ -73,20 +73,20 @@ function S(e) {
       appName: p.name
     }),
     description: w,
-    link: "".concat(location.protocol, "//").concat(location.host).concat(E.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(p.id, N.GlobalDiscoveryAppsSections.STORE)),
+    link: "".concat(location.protocol, "//").concat(location.host).concat(j.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(p.id, N.GlobalDiscoveryAppsSections.STORE)),
     onLinkCopy: () => {
       (0, x.X)(t, x.B.STORE_EMBED)
     },
     iconSrc: S,
     onIconClick: () => {
-      Z(), b.default.track(E.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
+      Z(), b.default.track(j.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
         application_id: t,
         area: "app_icon"
       })
     },
     children: (0, r.jsx)(o.zxk, {
       onClick: () => {
-        Z(), b.default.track(E.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
+        Z(), b.default.track(j.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
           application_id: t,
           area: "open_store_button"
         })
@@ -113,7 +113,7 @@ function T(e) {
       u = f.Z.getForSKU(h),
       p = (null == a ? void 0 : a.applicationId) === d;
     return [p ? a : null, p ? l : null, _.Z.getForSKU(h), g.Z.isFetching(h), g.Z.didFetchingSkuFail(h), u.length > 0 ? u[0] : null, i, s]
-  }, [d, v.channel_id, h]), L = (0, j.R)(null !== (l = null == T ? void 0 : T.id) && void 0 !== l ? l : "");
+  }, [d, v.channel_id, h]), L = (0, E.R)(null !== (l = null == T ? void 0 : T.id) && void 0 !== l ? l : "");
   i.useEffect(() => {
     null != S || w || Z || (0, s.km)(h)
   }, [Z, w, S, h]), i.useEffect(() => {
@@ -128,7 +128,7 @@ function T(e) {
       initialSubscribeForGuild: R
     });
   if (!L || null == T || null == S) return null;
-  let U = S.type === E.epS.SUBSCRIPTION,
+  let U = S.type === j.epS.SUBSCRIPTION,
     B = !!U && (0, u.KW)(S.flags),
     G = () => {
       (0, o.ZDy)(async () => {
@@ -184,7 +184,7 @@ function T(e) {
     }) : null == A ? void 0 : null === (t = A.description) || void 0 === t ? void 0 : t.trim();
   "" === V && (V = void 0);
   let z = () => {
-    b.default.track(E.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+    b.default.track(j.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
       application_id: T.id,
       sku_id: S.id,
       area: "purchase_button"
@@ -194,13 +194,13 @@ function T(e) {
     appName: T.name,
     title: S.name,
     description: V,
-    link: "".concat(location.protocol, "//").concat(location.host).concat(E.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(T.id, N.GlobalDiscoveryAppsSections.STORE)),
+    link: "".concat(location.protocol, "//").concat(location.host).concat(j.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(T.id, N.GlobalDiscoveryAppsSections.STORE)),
     onLinkCopy: () => {
       (0, x.X)(T.id, x.B.SKU_EMBED, h)
     },
     iconSrc: D,
     onIconClick: () => {
-      G(), b.default.track(E.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+      G(), b.default.track(j.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
         application_id: T.id,
         sku_id: S.id,
         area: "app_icon"
@@ -211,7 +211,7 @@ function T(e) {
       children: [(0, r.jsx)(o.zxk, {
         color: o.Ttl.CUSTOM,
         onClick: () => {
-          H(), b.default.track(E.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+          H(), b.default.track(j.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
             application_id: T.id,
             sku_id: S.id,
             area: "view_details"

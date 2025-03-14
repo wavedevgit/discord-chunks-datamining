@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   _: () => w
 }), n(230036), n(47120);
@@ -21,9 +21,9 @@ var r = n(200651),
   v = n(618857),
   y = n(695346),
   x = n(23750),
-  j = n(592125),
+  E = n(592125),
   O = n(594174),
-  E = n(823379),
+  j = n(823379),
   N = n(324081),
   C = n(240126),
   I = n(791914),
@@ -134,7 +134,7 @@ function k(e) {
     scheduledMessages: t
   } = e, n = i.useMemo(() => t.reduce((e, t) => {
     var n, r;
-    let i = j.Z.getChannel(t.scheduledMessage.channelId);
+    let i = E.Z.getChannel(t.scheduledMessage.channelId);
     return null == i || (e[i.id] = {
       channel: i,
       scheduledMessages: [...null !== (r = null === (n = e[i.id]) || void 0 === n ? void 0 : n.scheduledMessages) && void 0 !== r ? r : [], t]
@@ -205,7 +205,7 @@ let R = i.memo(function(e) {
           isError: !0, stateMessage: T.NW.string(T.t.j8uIfH)
         };
       default:
-        (0, E.vE)(e)
+        (0, j.vE)(e)
     }
   }(t.state), u = i.useCallback(() => {
     (0, g.gD)(t.scheduledMessageId).then(() => {

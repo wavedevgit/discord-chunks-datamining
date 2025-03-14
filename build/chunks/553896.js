@@ -1,34 +1,34 @@
 /** Chunk was on 89839 **/
-t.d(a, {
-  q: () => n
-}), t(291175), t(848572);
-var s = t(474936),
-  d = t(388032);
-let n = (e, a) => {
+a.d(t, {
+  q: () => i
+}), a(291175), a(848572);
+var n = a(474936),
+  r = a(388032);
+let i = (e, t) => {
   switch (e) {
-    case s.JN.PREMIUM_TENURE_1_MONTH:
-    case s.JN.PREMIUM_TENURE_3_MONTH:
-    case s.JN.PREMIUM_TENURE_6_MONTH:
-    case s.w7.PREMIUM_TENURE_1_MONTH:
-    case s.w7.PREMIUM_TENURE_3_MONTH:
-    case s.w7.PREMIUM_TENURE_6_MONTH:
-      return d.NW.formatToPlainString(d.t.erUSmJ, {
-        months: a
+    case n.JN.PREMIUM_TENURE_1_MONTH:
+    case n.JN.PREMIUM_TENURE_3_MONTH:
+    case n.JN.PREMIUM_TENURE_6_MONTH:
+    case n.w7.PREMIUM_TENURE_1_MONTH:
+    case n.w7.PREMIUM_TENURE_3_MONTH:
+    case n.w7.PREMIUM_TENURE_6_MONTH:
+      return r.NW.formatToPlainString(r.t.erUSmJ, {
+        months: t
       });
-    case s.JN.PREMIUM_TENURE_12_MONTH:
-    case s.JN.PREMIUM_TENURE_24_MONTH:
-    case s.JN.PREMIUM_TENURE_36_MONTH:
-    case s.JN.PREMIUM_TENURE_60_MONTH:
-    case s.w7.PREMIUM_TENURE_12_MONTH:
-    case s.w7.PREMIUM_TENURE_24_MONTH:
-    case s.w7.PREMIUM_TENURE_36_MONTH:
-    case s.w7.PREMIUM_TENURE_60_MONTH:
-      return d.NW.formatToPlainString(d.t.IfYQVF, {
-        years: a / 12
+    case n.JN.PREMIUM_TENURE_12_MONTH:
+    case n.JN.PREMIUM_TENURE_24_MONTH:
+    case n.JN.PREMIUM_TENURE_36_MONTH:
+    case n.JN.PREMIUM_TENURE_60_MONTH:
+    case n.w7.PREMIUM_TENURE_12_MONTH:
+    case n.w7.PREMIUM_TENURE_24_MONTH:
+    case n.w7.PREMIUM_TENURE_36_MONTH:
+    case n.w7.PREMIUM_TENURE_60_MONTH:
+      return r.NW.formatToPlainString(r.t.IfYQVF, {
+        years: t / 12
       });
-    case s.JN.PREMIUM_TENURE_72_MONTH:
-    case s.w7.PREMIUM_TENURE_72_MONTH:
-      return d.NW.formatToPlainString(d.t.IfYQVF, {
+    case n.JN.PREMIUM_TENURE_72_MONTH:
+    case n.w7.PREMIUM_TENURE_72_MONTH:
+      return r.NW.formatToPlainString(r.t.IfYQVF, {
         years: "6+"
       });
     default:

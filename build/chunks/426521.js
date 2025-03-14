@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   U: () => W
 }), n(301563);
@@ -21,9 +21,9 @@ var r = n(200651),
   v = n(591759),
   y = n(833592),
   x = n(497089),
-  j = n(178480),
+  E = n(178480),
   O = n(418316),
-  E = n(382865),
+  j = n(382865),
   N = n(526146),
   C = n(400565),
   I = n(148789),
@@ -172,7 +172,7 @@ let M = i.memo(function(e) {
       applicationId: a.applicationId
     }));
     let g = null != a.local_id,
-      E = (0, O.Z)({
+      j = (0, O.Z)({
         item: a,
         renderApplication: e => (0, r.jsx)(L, {
           applicationId: e
@@ -185,7 +185,7 @@ let M = i.memo(function(e) {
         focusProps: {
           offset: 4
         },
-        "aria-label": E,
+        "aria-label": j,
         onClick: f,
         children: [p ? null : (0, r.jsx)("div", {
           className: A.unread
@@ -198,7 +198,7 @@ let M = i.memo(function(e) {
           }), (0, r.jsx)(o.Text, {
             variant: "text-md/normal",
             color: p ? "text-muted" : "text-normal",
-            children: "string" != typeof E ? E : u.Z.parse(E)
+            children: "string" != typeof j ? j : u.Z.parse(j)
           }), (null === (t = a.message) || void 0 === t ? void 0 : t.content) != null ? (0, r.jsx)(k, {
             item: a
           }) : null, null != a.callout ? (0, r.jsx)(R, {
@@ -206,7 +206,7 @@ let M = i.memo(function(e) {
           }) : null, (0, r.jsx)(o.Text, {
             variant: "text-xs/medium",
             color: p ? "text-muted" : "header-secondary",
-            children: (0, j.a3)(b.default.extractTimestamp(a.id))
+            children: (0, E.a3)(b.default.extractTimestamp(a.id))
           }), h]
         })]
       }), g ? null : (0, r.jsx)(S.z, {
@@ -218,7 +218,7 @@ let M = i.memo(function(e) {
     let {
       items: t
     } = e, n = f.d$.useSetting();
-    return (0, E.c)(t), (0, r.jsx)(r.Fragment, {
+    return (0, j.c)(t), (0, r.jsx)(r.Fragment, {
       children: t.map(e => (0, r.jsx)(M, {
         item: e,
         ackedBeforeId: n

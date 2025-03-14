@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => N
 }), n(47120), n(266796);
@@ -21,9 +21,9 @@ var r = n(200651),
   v = n(76535),
   y = n(866104),
   x = n(886176),
-  j = n(981631),
+  E = n(981631),
   O = n(388032),
-  E = n(952626);
+  j = n(952626);
 
 function N(e) {
   var t;
@@ -37,7 +37,7 @@ function N(e) {
   } = (0, f.eD)(n), S = (0, f.ue)(n, {
     publishedOnly: !0
   }), T = i.useCallback(async () => {
-    b.default.track(j.rMx.GUILD_SHOP_EMBED_CLICKED, function(e) {
+    b.default.track(E.rMx.GUILD_SHOP_EMBED_CLICKED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -54,7 +54,7 @@ function N(e) {
         })
       }
       return e
-    }({}, (0, u.hH)(n))), await (0, h.Z)(j.Z5c.SERVER_SHOP(n))
+    }({}, (0, u.hH)(n))), await (0, h.Z)(E.Z5c.SERVER_SHOP(n))
   }, [n]);
   (0, p.Z)({
     type: l.ImpressionTypes.VIEW,
@@ -64,16 +64,16 @@ function N(e) {
   });
   let P = S.length > 0 ? new Date(Math.min(...S.map(e => Date.parse(e.published_at)))) : void 0;
   return N || !I ? (0, r.jsx)("div", {
-    className: o()(E.guildShopEmbed, E.spinnerContainer),
+    className: o()(j.guildShopEmbed, j.spinnerContainer),
     children: (0, r.jsx)(d.$jN, {})
   }) : null == a || null == C ? null : (0, r.jsxs)("div", {
-    className: E.guildShopEmbed,
+    className: j.guildShopEmbed,
     children: [(0, r.jsx)(y.Z, {
       coverImageAsset: null !== (t = C.cover_image_asset) && void 0 !== t ? t : null
     }), (0, r.jsx)(d.LZC, {
       size: 16
     }), (0, r.jsxs)("div", {
-      className: E.serverShopLabel,
+      className: j.serverShopLabel,
       children: [(0, r.jsx)(x.Z, {
         height: "16px",
         width: "16px",
@@ -81,7 +81,7 @@ function N(e) {
       }), (0, r.jsx)(d.X6q, {
         variant: "heading-sm/semibold",
         color: "interactive-normal",
-        className: E.serverShopLabelText,
+        className: j.serverShopLabelText,
         children: O.NW.string(O.t.al5EXF)
       })]
     }), (0, r.jsx)(d.LZC, {
@@ -104,11 +104,11 @@ function N(e) {
     }), (0, r.jsx)(g.Z, {}), (0, r.jsx)(d.LZC, {
       size: 16
     }), (0, r.jsxs)("div", {
-      className: E.guildShopEmbedFooter,
+      className: j.guildShopEmbedFooter,
       children: [(0, r.jsx)(m.Z, {
         guild: a
       }), (0, r.jsxs)("ul", {
-        className: E.guildShopSummary,
+        className: j.guildShopSummary,
         children: [(0, r.jsx)("li", {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/normal",
@@ -127,10 +127,10 @@ function N(e) {
           })
         })]
       }), (0, r.jsx)(d.zxk, {
-        className: E.guildShopEmbedCta,
+        className: j.guildShopEmbedCta,
         onClick: T,
         children: (0, r.jsxs)("div", {
-          className: E.guildShopEmbedCtaContent,
+          className: j.guildShopEmbedCtaContent,
           children: [(0, r.jsx)(x.Z, {
             height: "18px",
             width: "18px"

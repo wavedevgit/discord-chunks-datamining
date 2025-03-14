@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => Q
 }), n(653041), n(47120), n(13667), n(390547), n(301563), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648);
@@ -21,9 +21,9 @@ var r = n(200651),
   v = n(906732),
   y = n(321231),
   x = n(758199),
-  j = n(943762),
+  E = n(943762),
   O = n(914498),
-  E = n(880251),
+  j = n(880251),
   N = n(208444),
   C = n(835473),
   I = n(471445),
@@ -172,11 +172,11 @@ function Q(e) {
   var t, n, a;
   let l, d, {
       invite: x,
-      getAcceptInviteContext: j
+      getAcceptInviteContext: E
     } = e,
     {
       approximate_member_count: O,
-      approximate_presence_count: E,
+      approximate_presence_count: j,
       target_type: N,
       target_application: I
     } = x;
@@ -240,10 +240,10 @@ function Q(e) {
     ef = i.useCallback(() => {
       (0, p.r$)(x, "accept", ed), p.ZP.acceptInviteAndTransitionToInviteChannel({
         inviteKey: x.code,
-        context: j("Invite Button Embed"),
+        context: E("Invite Button Embed"),
         analyticsLocations: ed
       })
-    }, [x, ed, j]),
+    }, [x, ed, E]),
     eh = x.state === F.r2o.ACCEPTING,
     eg = null != ei;
   if (null == ei) {
@@ -265,7 +265,7 @@ function Q(e) {
     channel: es,
     guild: ei,
     members: O,
-    membersOnline: E,
+    membersOnline: j,
     isActivityActive: el,
     submitting: eh,
     isDisabled: e_,
@@ -329,7 +329,7 @@ function Q(e) {
           })]
         }) : null, eg ? null : (0, r.jsx)(X, {
           members: O,
-          membersOnline: E,
+          membersOnline: j,
           isLarge: L,
           isStacked: Q
         }), (0, r.jsxs)("div", {
@@ -404,7 +404,7 @@ function J(e) {
     id: t.id,
     icon: v,
     bot: b
-  }), C = (0, N.z)(t), I = (0, E.E)(t), S = a.length, T = i.useMemo(() => {
+  }), C = (0, N.z)(t), I = (0, j.E)(t), S = a.length, T = i.useMemo(() => {
     let e = [{
       label: o ? u ? B.NW.string(B.t.VJlc0d) : B.NW.string(B.t.RscU7O) : B.NW.string(B.t["2BP08P"]),
       trackingArea: o ? O.j_.PLAY : O.j_.JOIN_SERVER,
@@ -428,7 +428,7 @@ function J(e) {
         isStacked: !1,
         hasEnded: !u,
         textColor: "none"
-      }), o ? S > 0 && (0, r.jsx)(j.K, {
+      }), o ? S > 0 && (0, r.jsx)(E.K, {
         activityUsers: a,
         guildId: s.id,
         activityText: B.NW.string(B.t.BMTj29)

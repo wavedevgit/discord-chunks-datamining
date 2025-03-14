@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   K: () => C
 }), n(47120), n(627341);
@@ -40,7 +40,7 @@ function x(e) {
   return e
 }
 
-function j(e) {
+function E(e) {
   let {
     percentage: t,
     label: n,
@@ -49,12 +49,12 @@ function j(e) {
   } = e, s = (0, p.Dt)(), {
     channelId: c,
     messageId: d
-  } = (0, b.pE)(), [g, _] = i.useState(""), [v, j] = i.useState(!1), O = "" !== g && v, E = i.useCallback(() => {
+  } = (0, b.pE)(), [g, _] = i.useState(""), [v, E] = i.useState(!1), O = "" !== g && v, j = i.useCallback(() => {
     _((0, h.e1)(d, c, o))
   }, [d, c, o]), N = i.useCallback(() => {
-    E(), j(!0)
-  }, [E]), C = i.useCallback(() => {
-    j(!1)
+    j(), E(!0)
+  }, [j]), C = i.useCallback(() => {
+    E(!1)
   }, []), I = i.useCallback(() => {
     (0, f.n)({
       channelId: c,
@@ -63,10 +63,10 @@ function j(e) {
     })
   }, [c, d, o]);
   i.useEffect(() => {
-    if (v) return m.Z.addReactChangeListener(E), () => {
-      m.Z.removeReactChangeListener(E)
+    if (v) return m.Z.addReactChangeListener(j), () => {
+      m.Z.removeReactChangeListener(j)
     }
-  }, [v, E]);
+  }, [v, j]);
   let S = (0, r.jsx)(u.Text, {
     variant: "text-xs/semibold",
     color: "none",
@@ -146,7 +146,7 @@ function O(e) {
   })
 }
 
-function E(e) {
+function j(e) {
   let {
     answersInteraction: t,
     isSelected: n,
@@ -208,12 +208,12 @@ function N(e) {
       children: t.pollMedia.text
     }), t.didSelfVote && (0, r.jsx)(l.T, {
       children: v.NW.string(v.t["8DAM+/"])
-    }), a && (0, r.jsx)(j, {
+    }), a && (0, r.jsx)(E, {
       percentage: t.votesPercentage,
       label: t.votes,
       canShowVoterDetails: s,
       answerId: t.answerId
-    }), (0, r.jsx)(E, {
+    }), (0, r.jsx)(j, {
       answersInteraction: i,
       isSelected: c,
       didSelfVote: d,

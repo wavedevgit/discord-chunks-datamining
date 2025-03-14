@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => k
 });
@@ -21,9 +21,9 @@ var r = n(200651),
   v = n(430824),
   y = n(701190),
   x = n(411198),
-  j = n(610699),
+  E = n(610699),
   O = n(313876),
-  E = n(778333),
+  j = n(778333),
   N = n(949981),
   C = n(680668),
   I = n(508273),
@@ -124,7 +124,7 @@ function k(e) {
           });
           break;
         case f.wx.FRIEND:
-          z = (0, r.jsx)(E.Z, {
+          z = (0, r.jsx)(j.Z, {
             invite: M,
             author: n,
             getAcceptInviteContext: k
@@ -163,7 +163,7 @@ function k(e) {
             });
             break
           }
-          if ((0, f.P1)(M) && (z = (0, r.jsx)(j.Z, {
+          if ((0, f.P1)(M) && (z = (0, r.jsx)(E.Z, {
               invite: M,
               getAcceptInviteContext: k
             })), F) {

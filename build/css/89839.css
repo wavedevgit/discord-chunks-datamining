@@ -1,7 +1,15 @@
 /**
   Module ID: 89839
-  Original File Name: 293226c92ba76ac4
+  Original File Name: e56b093f1a9119f2
 **/
+.brandShine__9497e {
+    color: hsl(var(--brand-500-hsl)/.1)!important
+}
+
+.freeTrialText__9497e {
+    text-transform: capitalize
+}
+
 .container_a92dc5 {
     display: flex;
     align-items: center;
@@ -121,4 +129,4 @@
     max-width: 100px
 }
 
-/*# sourceMappingURL=293226c92ba76ac4.css.map*/
+/*# sourceMappingURL=e56b093f1a9119f2.css.map*/

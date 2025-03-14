@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => C
 }), n(47120), n(653041);
@@ -18,16 +18,16 @@ var r, i, a, o = n(392711),
   v = n(981631);
 let y = "DetectedOffPlatformPremiumPerksStore",
   x = {},
-  j = {},
+  E = {},
   O = [];
 
-function E() {
+function j() {
   let e = !1;
   for (let {
       skuId: t,
       applicationId: n
     }
-    of l().values(j)) {
+    of l().values(E)) {
     if (O.includes(t)) continue;
     let r = f.Z.getApplication(n);
     if (null == r) {
@@ -63,12 +63,12 @@ a = "DetectedOffPlatformPremiumPerksStore", (i = "displayName") in N ? Object.de
 }) : N[i] = a;
 let C = new N(d.Z, {
   LOGOUT: function() {
-    x = {}, j = {}
+    x = {}, E = {}
   },
-  SKU_FETCH_SUCCESS: E,
-  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: E,
-  ENTITLEMENT_CREATE: E,
-  APPLICATION_FETCH_SUCCESS: E,
+  SKU_FETCH_SUCCESS: j,
+  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: j,
+  ENTITLEMENT_CREATE: j,
+  APPLICATION_FETCH_SUCCESS: j,
   DETECTED_OFF_PLATFORM_PREMIUM_PERKS_DISMISS: function(e) {
     let {
       skuId: t
@@ -88,10 +88,10 @@ let C = new N(d.Z, {
             skuId: n,
             applicationId: r
           }
-          of v.Lg6) !(r !== t || O.includes(n)) && null == j[n] && (_.Z.applicationIdsFetched.has(r) || _.Z.applicationIdsFetching.has(r) || null != _.Z.getForSku(n) || u.yD(r), j[n] = {
+          of v.Lg6) !(r !== t || O.includes(n)) && null == E[n] && (_.Z.applicationIdsFetched.has(r) || _.Z.applicationIdsFetching.has(r) || null != _.Z.getForSku(n) || u.yD(r), E[n] = {
           skuId: n,
           applicationId: r
         }, e = !0);
-    return e && E(), e
+    return e && j(), e
   }
 })

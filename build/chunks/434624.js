@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   l: () => _
 }), n(47120);
@@ -26,9 +26,9 @@ let g = i.memo(function(e) {
         me_burst: v,
         burst_count: y,
         burst_colors: x,
-        readOnly: j,
+        readOnly: E,
         isLurking: O,
-        isGuest: E,
+        isGuest: j,
         isPendingMember: N,
         type: C,
         emojiSize: I
@@ -57,7 +57,7 @@ let g = i.memo(function(e) {
     return (0, r.jsxs)("div", {
       className: o()(A.reaction, A.reactionInner, g, {
         [A.reactionMe]: T,
-        [A.reactionReadOnly]: j && !O && !N && !E
+        [A.reactionReadOnly]: E && !O && !N && !j
       }),
       style: k,
       children: [(0, r.jsx)(s.Z, {

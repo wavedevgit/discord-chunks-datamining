@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => V
 }), n(47120), n(301563);
@@ -20,9 +20,9 @@ var r, i = n(200651),
   v = n(952164),
   y = n(768419),
   x = n(456432),
-  j = n(347475),
+  E = n(347475),
   O = n(789407),
-  E = n(598077),
+  j = n(598077),
   N = n(757266),
   C = n(831506),
   I = n(271383),
@@ -190,7 +190,7 @@ class H extends(r = a.PureComponent) {
         message: a,
         analyticsLocations: o
       } = this.props;
-      return null == n ? null : (0, i.jsx)(j.Z, B(U({}, t), {
+      return null == n ? null : (0, i.jsx)(E.Z, B(U({}, t), {
         userId: e.id,
         guildId: null != r ? r : void 0,
         channelId: n,
@@ -295,7 +295,7 @@ let V = o.ZP.connectStores([y.Z, C.Z, T.Z, P.Z, N.Z, w.Z, S.Z, b.Z, Z.Z, A.defau
         n = null != t ? t.nick : null,
         r = A.default.getUser(e),
         i = null == r;
-      return null == r && (r = new E.Z({
+      return null == r && (r = new j.Z({
         discriminator: "0005"
       })), {
         user: r,

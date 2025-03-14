@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   y: () => N
 }), n(47120), n(266796);
@@ -56,7 +56,7 @@ let x = {
     tension: 500,
     clamp: !0
   },
-  j = {
+  E = {
     mass: 1,
     friction: 28,
     tension: 700,
@@ -67,7 +67,7 @@ let x = {
     friction: 28,
     tension: 500
   },
-  E = {
+  j = {
     mass: 1,
     friction: 28,
     tension: 800
@@ -140,12 +140,12 @@ function N(e) {
         opacity: 1
       } : [{
         translateY: -4,
-        config: y(v({}, E), {
+        config: y(v({}, j), {
           restVelocity: .5
         })
       }, {
         translateY: 0,
-        config: E
+        config: j
       }],
       config: O,
       delay: L ? 100 - 50 * e : 150 + 50 * e
@@ -184,14 +184,14 @@ function N(e) {
         translateX: 0,
         translateY: 0,
         delay: null == a ? 100 : 275,
-        config: null == a ? O : j
+        config: null == a ? O : E
       },
       leave: {
         opacity: 0,
         translateX: 40 * (null != n),
         translateY: 16 * (null == n),
         delay: L ? 200 : 150,
-        config: null == a ? O : j
+        config: null == a ? O : E
       },
       config: O
     }, "respect-motion-settings"),

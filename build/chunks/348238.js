@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   $3: () => V,
   Go: () => B,
@@ -36,9 +36,9 @@ var r = n(200651),
   v = n(585483),
   y = n(5967),
   x = n(630388),
-  j = n(358085),
+  E = n(358085),
   O = n(51144),
-  E = n(91047),
+  j = n(91047),
   N = n(50284),
   C = n(981631),
   I = n(388032);
@@ -117,7 +117,7 @@ function M(e, t, a, l) {
   } = e, p = (0, x.yE)(u, C.iLy.EPHEMERAL), m = (0, c.bp)();
   return i.useCallback((e, t) => {
     if (p) return;
-    if (!j.isPlatformEmbedded) {
+    if (!E.isPlatformEmbedded) {
       let t = e.target;
       if ("A" === t.tagName && "" !== t.textContent || null == window.getSelection) return;
       let n = window.getSelection();
@@ -180,7 +180,7 @@ function W(e, t) {
   return i.useCallback(n => {
     let r = b.default.getUser(e),
       i = h.Z.getChannel(t);
-    null != r && null != i && (n.stopPropagation(), (0, E.Pv)(n, r, i))
+    null != r && null != i && (n.stopPropagation(), (0, j.Pv)(n, r, i))
   }, [e, t])
 }
 
@@ -188,7 +188,7 @@ function F(e, t, n) {
   return i.useCallback(r => {
     let i = b.default.getUser(e),
       a = h.Z.getChannel(t);
-    null != i && null != a && (r.stopPropagation(), (0, E._j)(r, {
+    null != i && null != a && (r.stopPropagation(), (0, j._j)(r, {
       user: i,
       channel: a,
       moderationAlertId: n
@@ -200,7 +200,7 @@ function U(e, t) {
   return i.useCallback(n => {
     let r = b.default.getUser(e),
       i = h.Z.getChannel(t);
-    null != r && null != i && (n.stopPropagation(), (0, E.xS)(n, r, i.guild_id))
+    null != r && null != i && (n.stopPropagation(), (0, j.xS)(n, r, i.guild_id))
   }, [e, t])
 }
 
@@ -250,14 +250,14 @@ function G(e) {
   let x = i.useCallback(e => {
       s && (0, f.T6)(), b || (v.S.dispatchKeyed(C.LPv.ANIMATE_CHAT_AVATAR, h, !0), _(e), y(!0))
     }, [b, h, s, _]),
-    j = i.useCallback(() => {
+    E = i.useCallback(() => {
       v.S.dispatchKeyed(C.LPv.ANIMATE_CHAT_AVATAR, h, !1), y(!1)
     }, [h]);
   return {
     hasHovered: g.current,
     isHovered: b,
     handleMouseEnter: x,
-    handleMouseLeave: j
+    handleMouseLeave: E
   }
 }
 

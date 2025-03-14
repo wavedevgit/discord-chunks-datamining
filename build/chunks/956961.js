@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => I
 }), n(47120);
@@ -21,9 +21,9 @@ var r = n(200651),
   v = n(655354),
   y = n(324081),
   x = n(791914),
-  j = n(981631),
+  E = n(981631),
   O = n(388032),
-  E = n(841097),
+  j = n(841097),
   N = n(26593);
 let C = {
   offset: {
@@ -38,13 +38,13 @@ function I(e) {
     closePopout: n
   } = e, a = (0, c.e7)([g.Z], () => g.Z.getMessageReminders()), [o, l] = i.useState(!1), s = i.useMemo(() => a.filter(e => null == e.saveData.dueAt || e.saveData.dueAt < new Date), [a]), p = o ? a : s;
   return (0, r.jsxs)("div", {
-    className: E.container,
+    className: j.container,
     children: [(0, r.jsx)(x.Z, {
       tab: d.X.TODOS,
       setTab: t,
       closePopout: n
     }), (0, r.jsxs)("div", {
-      className: E.headerText,
+      className: j.headerText,
       children: [(0, r.jsx)(u.X6q, {
         variant: "heading-lg/bold",
         children: o ? O.NW.string(O.t["0KeMAw"]) : O.NW.string(O.t.j5ZHEB)
@@ -76,7 +76,7 @@ function S(e) {
     l = i.message,
     d = (0, c.e7)([b.Z], () => b.Z.getChannel(a.channelId)),
     g = () => {
-      (0, f.uL)(j.Z5c.CHANNEL(null == d ? void 0 : d.getGuildId(), a.channelId, a.messageId))
+      (0, f.uL)(E.Z5c.CHANNEL(null == d ? void 0 : d.getGuildId(), a.channelId, a.messageId))
     },
     x = null;
   return (null != a.dueAt && (a.dueAt > new Date ? (t = "text-muted", x = O.NW.formatToPlainString(O.t.H4gnX1, {
@@ -89,11 +89,11 @@ function S(e) {
       channel: d,
       gotoChannel: g,
       children: (0, r.jsxs)("div", {
-        className: E.reminderActions,
+        className: j.reminderActions,
         children: [null != i.saveData.notes && i.saveData.notes.length > 0 ? (0, r.jsxs)(u.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          className: E.notes,
+          className: j.notes,
           selectable: !0,
           children: [(0, r.jsx)(u.aAW, {
             size: "xxs",
@@ -143,7 +143,7 @@ function S(e) {
                 }), n))
               }
             }),
-            className: E.clock,
+            className: j.clock,
             children: (0, r.jsx)(u.T39, {
               size: "custom",
               width: 20,
@@ -155,7 +155,7 @@ function S(e) {
           text: O.NW.string(O.t["1GzslZ"]),
           children: (0, r.jsx)(u.P3F, {
             onClick: () => (0, h.x)(a),
-            className: E.delete,
+            className: j.delete,
             children: (0, r.jsx)(u.XHJ, {
               size: "custom",
               width: 20,
@@ -166,7 +166,7 @@ function S(e) {
         })]
       })
     }), (0, r.jsxs)("div", {
-      className: o()(N.messageContainer, E.unloadedMessage),
+      className: o()(N.messageContainer, j.unloadedMessage),
       children: [(0, r.jsx)(v.Z, {
         className: N.jumpMessageButton,
         onJump: g

@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => O
 }), n(47120);
@@ -51,7 +51,7 @@ function y(e, t) {
   }), e
 }
 let x = (0, u.Mg)(a.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
-  j = e => {
+  E = e => {
     null != e && s.ZP.trackWithMetadata(g.rMx.EXPRESSION_TOOLTIP_VIEWED, {
       type: _.cd.STICKER_IN_MESSAGE_HOVER,
       expression_id: e.id,
@@ -67,7 +67,7 @@ let x = (0, u.Mg)(a.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
       isInteracting: a
     } = e, [s, u] = i.useState(!0), [m, g] = i.useState(String(Date.now())), [_] = (0, p.XW)(t, a), {
       analyticsLocations: O
-    } = (0, c.ZP)(l.Z.STICKER_MESSAGE), E = (0, r.jsxs)("span", {
+    } = (0, c.ZP)(l.Z.STICKER_MESSAGE), j = (0, r.jsxs)("span", {
       className: b.stickerName,
       children: [(0, r.jsx)(o.B7q, {
         size: "xs",
@@ -95,10 +95,10 @@ let x = (0, u.Mg)(a.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
           } = e;
           return (0, r.jsx)(o.ua7, y(v({}, d.b_), {
             shouldShow: s,
-            text: (0, d.Y)(E),
+            text: (0, d.Y)(j),
             "aria-label": !1,
             onTooltipShow: () => {
-              j(_)
+              E(_)
             },
             children: e => (0, r.jsx)(o.P3F, y(v({}, e), {
               className: b.clickableSticker,

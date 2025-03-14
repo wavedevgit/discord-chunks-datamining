@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   As: () => B,
   ZP: () => Q,
@@ -22,9 +22,9 @@ var r, i, a = n(192379),
   v = n(344185),
   y = n(569471),
   x = n(723170),
-  j = n(675478),
+  E = n(675478),
   O = n(581883),
-  E = n(131704),
+  j = n(131704),
   N = n(592125),
   C = n(984933),
   I = n(731290),
@@ -227,9 +227,9 @@ class V extends o.EventEmitter {
         collapsedChannels: i,
         loadState: a
       } = this.state, o = d().findIndex(r, e => e.channelId === t), l = r[o], s = !l.collapsed;
-      i[t] = s, (0, j.BU)(n, t, e => {
+      i[t] = s, (0, E.BU)(n, t, e => {
         e.collapsedInInbox = s
-      }, j.fy.FREQUENT_USER_ACTION), this.setState({
+      }, E.fy.FREQUENT_USER_ACTION), this.setState({
         scrollToChannelIndex: o,
         collapsedChannels: i,
         loadState: "done" !== a || s || l.isFullyLoaded ? a : "loaded",
@@ -324,7 +324,7 @@ function K() {
 function Y(e, t, n, r) {
   if (null == r) return;
   let i = N.Z.getChannel(r);
-  if (null == i || !E.Ec.has(i.type) && Z.ZP.isGuildOrCategoryOrChannelMuted(n, i.id)) return;
+  if (null == i || !j.Ec.has(i.type) && Z.ZP.isGuildOrCategoryOrChannelMuted(n, i.id)) return;
   if (i.isPrivate()) {
     if (0 === A.ZP.getMentionCount(r)) return
   } else if (!(0, _.d)(i) && 0 === A.ZP.getMentionCount(r)) return;

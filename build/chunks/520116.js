@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => S
 }), n(653041);
@@ -21,9 +21,9 @@ var r = n(200651),
   v = n(594174),
   y = n(55935),
   x = n(655354),
-  j = n(809780),
+  E = n(809780),
   O = n(981631),
-  E = n(388032),
+  j = n(388032),
   N = n(660056);
 let C = {
   left: 4,
@@ -111,7 +111,7 @@ function S(e) {
   if (!i.collapsed) {
     let e = null,
       t = null,
-      n = i.messages.slice(0, j.hC);
+      n = i.messages.slice(0, E.hC);
     n.forEach(n => {
       if (!(0, u.Z)(n, C)) {
         if (!P && (null == e || !e.isSame(n.timestamp, "day"))) {
@@ -131,11 +131,11 @@ function S(e) {
           gotoChannel: l
         }, n.id))
       }
-    }), i.messages.length >= j.hC && w.push((0, r.jsxs)(c.zxk, {
+    }), i.messages.length >= E.hC && w.push((0, r.jsxs)(c.zxk, {
       color: c.zxk.Colors.LINK,
       look: c.zxk.Looks.LINK,
       onClick: e => l(e, n[n.length - 1].id),
-      children: [E.NW.string(E.t["9OB9ho"]), " ›"]
+      children: [j.NW.string(j.t["9OB9ho"]), " ›"]
     }, "view-all")), 0 === w.length && (w = [(0, r.jsx)(c.$jN, {}, "spinner")])
   }
   return T && S && d.Z.trackExposure({

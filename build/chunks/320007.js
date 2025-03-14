@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => b
 });
@@ -30,9 +30,9 @@ function b(e) {
     autoTrackExposure: !1
   }), {
     hasClips: x,
-    hasNewClips: j,
+    hasNewClips: E,
     lastClipsSession: O,
-    remindersEnabled: E,
+    remindersEnabled: j,
     hasAnyClipAnimations: N
   } = (0, a.cj)([p.Z], () => ({
     hasClips: p.Z.hasClips(),
@@ -73,7 +73,7 @@ function b(e) {
     })
   }
   return (i.useEffect(() => (N ? P() : A(), () => A()), [N, P, A]), y && v && x) ? (0, r.jsxs)(r.Fragment, {
-    children: [null != I && t && E && C && !(0, o.$sL)() && !T && (0, r.jsx)(h.Z, {
+    children: [null != I && t && j && C && !(0, o.$sL)() && !T && (0, r.jsx)(h.Z, {
       clipIconRef: I,
       lastClipsSession: O,
       onOpenClipsGallery: w
@@ -82,7 +82,7 @@ function b(e) {
       children: (0, r.jsx)(l.JO, {
         className: b,
         icon: o.AlX,
-        showBadge: j,
+        showBadge: E,
         tooltip: _.NW.string(_.t.MXaLEB),
         onClick: w
       })

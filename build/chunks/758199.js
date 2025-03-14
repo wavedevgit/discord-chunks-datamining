@@ -1,7 +1,7 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   W: () => O,
-  u: () => j
+  u: () => E
 }), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(47120);
 var r, i = n(200651),
   a = n(192379),
@@ -48,14 +48,14 @@ function x(e) {
   }
   return e
 }
-var j = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
+var E = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
 
 function O(e) {
   var t, n, r, o;
   let {
-    title: j,
+    title: E,
     header: O,
-    info: E,
+    info: j,
     staticBannerSrc: N,
     videoBannerSrc: C,
     bannerAspectRatio: I = 0,
@@ -147,8 +147,8 @@ function O(e) {
             variant: "text-md/semibold",
             color: "none",
             lineClamp: 1,
-            children: j
-          }), E]
+            children: E
+          }), j]
         }), null == O && M]
       }), P.length > 0 && (0, i.jsx)("div", {
         className: v.actionWrapper,

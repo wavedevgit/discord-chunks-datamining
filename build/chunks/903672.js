@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => w
 });
@@ -21,9 +21,9 @@ var r = n(200651),
   v = n(731290),
   y = n(944486),
   x = n(455199),
-  j = n(655354),
+  E = n(655354),
   O = n(999671),
-  E = n(324081),
+  j = n(324081),
   N = n(240126),
   C = n(791914),
   I = n(981631),
@@ -53,8 +53,8 @@ function w(e) {
   } = e, h = (0, l.e7)([b.Z, y.Z], () => b.Z.getChannel(y.Z.getChannelId())), {
     messages: _,
     hasMore: v,
-    loading: j,
-    guildFilter: E,
+    loading: E,
+    guildFilter: j,
     roleFilter: N,
     everyoneFilter: P
   } = (0, l.cj)([x.Z], () => ({
@@ -66,13 +66,13 @@ function w(e) {
     everyoneFilter: x.Z.everyoneFilter
   })), w = (0, g.Us)({
     location: "RecentMentions"
-  }), k = (0, m.Z)(E), D = (0, m.Z)(N), L = (0, m.Z)(P);
+  }), k = (0, m.Z)(j), D = (0, m.Z)(N), L = (0, m.Z)(P);
   i.useEffect(() => {
     if (!x.Z.hasLoadedEver) {
       A(h, !0);
       return
-    }(null != k && E !== k || null != D && N !== D || null != L && P !== L) && A(h, !0)
-  }, [k, E, D, N, L, P, h, !0]), (0, p.ZP)(() => {
+    }(null != k && j !== k || null != D && N !== D || null != L && P !== L) && A(h, !0)
+  }, [k, j, D, N, L, P, h, !0]), (0, p.ZP)(() => {
     (null == _ ? void 0 : _.some(f.k5)) && (d.Z.clearMentions(), A(h, !0))
   }), i.useEffect(() => () => {
     d.Z.truncateMentions(I.DJj)
@@ -96,7 +96,7 @@ function w(e) {
     },
     channel: h,
     messages: _,
-    loading: j,
+    loading: E,
     hasMore: v,
     analyticsName: "Recent Mentions",
     loadMore: function() {
@@ -132,7 +132,7 @@ function k(e) {
     l = !!a.isNSFW() && !o;
   return (0, r.jsxs)("div", {
     className: T.container,
-    children: [(0, r.jsx)(E.Z, {
+    children: [(0, r.jsx)(j.Z, {
       channel: a,
       gotoChannel: n,
       children: null != i ? (0, r.jsx)(c.M0o, {
@@ -147,7 +147,7 @@ function k(e) {
       }) : null
     }), (0, r.jsxs)("div", {
       className: T.messageContainer,
-      children: [(0, r.jsx)(j.Z, {
+      children: [(0, r.jsx)(E.Z, {
         className: T.jumpMessageButton,
         onJump: n
       }), (0, r.jsx)(h.Z, {

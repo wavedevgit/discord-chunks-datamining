@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => L
 }), n(301563), n(757143);
@@ -21,9 +21,9 @@ var r = n(200651),
   v = n(313201),
   y = n(592125),
   x = n(984933),
-  j = n(768119),
+  E = n(768119),
   O = n(944486),
-  E = n(585483),
+  j = n(585483),
   N = n(72006),
   C = n(405656),
   I = n(181389),
@@ -47,7 +47,7 @@ let k = (0, v.hQ)(),
 class D extends i.PureComponent {
   componentDidMount() {
     var e, t;
-    E.S.subscribe(P.CkL.PERFORM_SEARCH, this.search), E.S.subscribe(P.CkL.SET_SEARCH_QUERY, this.handleSetSearchQuery), E.S.subscribe(P.CkL.FOCUS_SEARCH, this.handleFocusSearch), null === (t = this._editorRef) || void 0 === t || null === (e = t.editor) || void 0 === e || e.setAttribute("aria-haspopup", "listbox")
+    j.S.subscribe(P.CkL.PERFORM_SEARCH, this.search), j.S.subscribe(P.CkL.SET_SEARCH_QUERY, this.handleSetSearchQuery), j.S.subscribe(P.CkL.FOCUS_SEARCH, this.handleFocusSearch), null === (t = this._editorRef) || void 0 === t || null === (e = t.editor) || void 0 === e || e.setAttribute("aria-haspopup", "listbox")
   }
   componentDidUpdate(e) {
     let {
@@ -61,7 +61,7 @@ class D extends i.PureComponent {
     }
   }
   componentWillUnmount() {
-    E.S.unsubscribe(P.CkL.PERFORM_SEARCH, this.search), E.S.unsubscribe(P.CkL.SET_SEARCH_QUERY, this.handleSetSearchQuery), E.S.unsubscribe(P.CkL.FOCUS_SEARCH, this.handleFocusSearch)
+    j.S.unsubscribe(P.CkL.PERFORM_SEARCH, this.search), j.S.unsubscribe(P.CkL.SET_SEARCH_QUERY, this.handleSetSearchQuery), j.S.unsubscribe(P.CkL.FOCUS_SEARCH, this.handleFocusSearch)
   }
   tokenize(e) {
     let t = C.kG(N.Sq(e)).filter(e => e.type !== f.ZP.NON_TOKEN_TYPE);
@@ -376,19 +376,19 @@ class D extends i.PureComponent {
     }), C.WU()
   }
 }
-let L = d.ZP.connectStores([_.Z, j.Z], () => {
+let L = d.ZP.connectStores([_.Z, E.Z], () => {
   var e;
-  let t = j.Z.getCurrentSearchId(),
-    n = j.Z.getSearchType(),
-    r = null != t && j.Z.isSearching(t),
-    i = null != t && null !== (e = j.Z.getEditorState(t)) && void 0 !== e ? e : N.nR(I.Jl(h.ZP)),
+  let t = E.Z.getCurrentSearchId(),
+    n = E.Z.getSearchType(),
+    r = null != t && E.Z.isSearching(t),
+    i = null != t && null !== (e = E.Z.getEditorState(t)) && void 0 !== e ? e : N.nR(I.Jl(h.ZP)),
     a = _.Z.keyboardModeEnabled;
   return {
     searchId: t,
     searchType: n,
     isSearching: r,
     editorState: i,
-    hasResults: j.Z.hasResults(t),
+    hasResults: E.Z.hasResults(t),
     keyboardModeEnabled: a
   }
 })(D)

@@ -164,6 +164,8 @@ let m = () => (0, i.ZDy)(async () => {
       }), (0, r.jsx)(p, {
         ignoredFiles: e,
         handleClearIgnoredFiles: _
+      }), (0, r.jsx)(i.LZC, {
+        size: 16
       })]
     })
   }

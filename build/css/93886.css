@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 4b2a59250e07ef1e
+  Original File Name: 49804ded5f3d5917
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -5306,8 +5306,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     font-size: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    z-index: 2000
+    justify-content: center
 }
 
 .uploadArea_dae93f * {
@@ -5427,11 +5426,12 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .panel__6dc2e {
+    position: relative;
     display: flex;
     flex-direction: column;
     height: 100%;
     padding: 12px;
-    gap: 20px
+    overflow-y: auto
 }
 
 .panel__777bf {
@@ -5539,4 +5539,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 0
 }
 
-/*# sourceMappingURL=4b2a59250e07ef1e.css.map*/
+/*# sourceMappingURL=49804ded5f3d5917.css.map*/

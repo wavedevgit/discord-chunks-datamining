@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => z
 });
@@ -21,9 +21,9 @@ var r = n(200651),
   v = n(825829),
   y = n(226192),
   x = n(36459),
-  j = n(434404),
+  E = n(434404),
   O = n(518950),
-  E = n(347475),
+  j = n(347475),
   N = n(592125),
   C = n(271383),
   I = n(594174),
@@ -194,7 +194,7 @@ function B(e) {
             children: k.NW.string(k.t.qlFrXV)
           }), (0, r.jsx)(f.yRy, {
             renderPopout: function(e) {
-              return null == o ? (0, r.jsx)(r.Fragment, {}) : (0, r.jsx)(E.Z, L(D({}, e), {
+              return null == o ? (0, r.jsx)(r.Fragment, {}) : (0, r.jsx)(j.Z, L(D({}, e), {
                 userId: o.id,
                 user: o,
                 guildId: l,
@@ -247,9 +247,9 @@ function G(e) {
     dmsSent: d,
     raidType: h,
     resolvedReason: g
-  } = (0, v.FL)(n), x = (0, p.e7)([N.Z], () => N.Z.getChannel(n.channel_id), [n.channel_id]), j = null !== (t = null == x ? void 0 : x.guild_id) && void 0 !== t ? t : null, {
+  } = (0, v.FL)(n), x = (0, p.e7)([N.Z], () => N.Z.getChannel(n.channel_id), [n.channel_id]), E = null !== (t = null == x ? void 0 : x.guild_id) && void 0 !== t ? t : null, {
     shouldShowIncidentActions: O
-  } = (0, _.mI)(j), E = (0, T.sR)(n.author.id, n.channel_id), C = i.useCallback(() => {
+  } = (0, _.mI)(E), j = (0, T.sR)(n.author.id, n.channel_id), C = i.useCallback(() => {
     let e = null == x ? void 0 : x.guild_id;
     null != e && (0, y.kW)(n.id, e)
   }, [n.id, x]), I = h === u.$.DM_RAID, S = I ? f.P4T : f.b6m;
@@ -298,7 +298,7 @@ function G(e) {
       className: R.dotSeparatedRow,
       children: [(0, r.jsx)(f.zxk, {
         onClick: e => {
-          E(e)
+          j(e)
         },
         color: f.zxk.Colors.LINK,
         look: f.zxk.Looks.LINK,
@@ -392,7 +392,7 @@ function H(e) {
         })
       }), (0, r.jsx)(M, {}), (0, r.jsx)(f.zxk, {
         onClick: function() {
-          null != o && j.Z.open(o, w.pNK.GUILD_AUTOMOD, void 0, w.KsC.AUTOMOD_MENTION_SPAM)
+          null != o && E.Z.open(o, w.pNK.GUILD_AUTOMOD, void 0, w.KsC.AUTOMOD_MENTION_SPAM)
         },
         color: f.zxk.Colors.LINK,
         look: f.zxk.Looks.LINK,

@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => N
 }), n(47120);
@@ -21,10 +21,10 @@ var r = n(200651),
   v = n(305248),
   y = n(520116),
   x = n(981631),
-  j = n(388032),
+  E = n(388032),
   O = n(764972);
 
-function E(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -80,7 +80,7 @@ let N = i.memo(function(e) {
     return (0, r.jsx)(l.animated.div, {
       ref: a,
       style: f,
-      children: (0, r.jsx)(C, E({}, e))
+      children: (0, r.jsx)(C, j({}, e))
     })
   }),
   C = i.memo(function(e) {
@@ -114,7 +114,7 @@ let N = i.memo(function(e) {
           channelState: t,
           children: [(0, r.jsx)(_.Z, {
             channel: l
-          }), (0, r.jsx)(I, E({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(S, E({}, e))]
+          }), (0, r.jsx)(I, j({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(S, j({}, e))]
         }),
         children: t.collapsed ? null : "messages" === t.type ? (0, r.jsx)(y.Z, {
           channel: t,
@@ -138,7 +138,7 @@ function I(e) {
   } = e, o = (0, m.Z)() && null != t.guildId;
   return (0, r.jsx)(c.M0o, {
     className: O.markReadButton,
-    tooltip: o ? j.NW.string(j.t["5lLMhI"]) : j.NW.string(j.t.e6RscX),
+    tooltip: o ? E.NW.string(E.t["5lLMhI"]) : E.NW.string(E.t.e6RscX),
     color: c.YX$.TERTIARY,
     icon: o ? (0, r.jsx)(c.W6s, {
       size: "xs",
@@ -174,10 +174,10 @@ function S(e) {
     })
   }
   return (0, r.jsx)(c.ua7, {
-    text: j.NW.string(j.t.iTcumZ),
+    text: E.NW.string(E.t.iTcumZ),
     children: e => {
       var n, i;
-      return (0, r.jsx)(c.P3F, (n = E({}, e), i = i = {
+      return (0, r.jsx)(c.P3F, (n = j({}, e), i = i = {
         className: o()(O.collapseButton, {
           [O.collapsed]: t.collapsed
         }),

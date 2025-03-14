@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => N
 }), n(266796);
@@ -37,7 +37,7 @@ function x() {
   })
 }
 
-function j(e) {
+function E(e) {
   let t, {
     hasNoVotes: n,
     victorEmoji: i
@@ -137,7 +137,7 @@ function O(e) {
   })
 }
 
-function E(e) {
+function j(e) {
   let {
     className: t,
     data: n,
@@ -161,7 +161,7 @@ function E(e) {
     className: o()(y.container, {
       [y.containerWithImage]: c
     }, t),
-    children: [(0, r.jsx)(j, {
+    children: [(0, r.jsx)(E, {
       hasNoVotes: "NO_VOTES" === l.type,
       victorEmoji: n.victorEmoji
     }), (0, r.jsx)(O, function(e) {
@@ -203,7 +203,7 @@ function N(e) {
     channel: a,
     compact: o,
     disableInteraction: d = !1
-  } = e, u = n.embeds[0], p = i.useMemo(() => (0, g.Z)(u), [u]), _ = (0, l.aF)(null !== (t = null == p ? void 0 : p.questionText) && void 0 !== t ? t : "", b.Dv), x = (0, m.ZP)(n), j = (0, f.l)({
+  } = e, u = n.embeds[0], p = i.useMemo(() => (0, g.Z)(u), [u]), _ = (0, l.aF)(null !== (t = null == p ? void 0 : p.questionText) && void 0 !== t ? t : "", b.Dv), x = (0, m.ZP)(n), E = (0, f.l)({
     user: n.author,
     channelId: a.id,
     guildId: a.guild_id,
@@ -225,11 +225,11 @@ function N(e) {
       compact: o,
       children: v.NW.format(v.t["VJcK4+"], {
         username: x.nick,
-        usernameHook: j(x),
+        usernameHook: E(x),
         title: _,
         titleOnClick: N
       })
-    }), (0, r.jsx)(E, {
+    }), (0, r.jsx)(j, {
       className: y.embed,
       data: p,
       onClickPollLink: d ? void 0 : N

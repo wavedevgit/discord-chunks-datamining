@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   ZP: () => q
 }), n(566702), n(301563), n(47120);
@@ -21,9 +21,9 @@ var r = n(200651),
   v = n(999650),
   y = n(933557),
   x = n(471445),
-  j = n(592125),
+  E = n(592125),
   O = n(271383),
-  E = n(699516),
+  j = n(699516),
   N = n(250758),
   C = n(944486),
   I = n(914010),
@@ -103,8 +103,8 @@ let B = p()("2015-05-15").local(),
       children: s
     });
     let c = T.default.getUser(l.id),
-      d = j.Z.getChannel(e),
-      u = (null == d ? void 0 : d.isPrivate()) ? E.Z.getNickname(l.id) : null,
+      d = E.Z.getChannel(e),
+      u = (null == d ? void 0 : d.isPrivate()) ? j.Z.getNickname(l.id) : null,
       p = null !== (a = null !== (i = O.ZP.getNick(e, l.id)) && void 0 !== i ? i : u) && void 0 !== a ? a : Z.ZP.getName(l),
       m = null !== (o = null == c ? void 0 : c.getAvatarURL(e, 20)) && void 0 !== o ? o : l.getAvatarURL(null == d ? void 0 : d.guild_id, 20);
     return [(0, r.jsx)("img", {
@@ -129,17 +129,17 @@ let B = p()("2015-05-15").local(),
     if (null == i) return (0, r.jsx)("strong", {
       children: a
     });
-    let o = j.Z.getChannel(i.parent_id),
+    let o = E.Z.getChannel(i.parent_id),
       l = (0, x.KS)(i);
     return (0, r.jsxs)("div", {
       className: L.resultChannel,
       children: [null != l ? (0, r.jsx)(l, {
         className: L.searchResultChannelIcon
       }) : null, (0, r.jsx)("strong", {
-        children: (0, y.F6)(i, T.default, E.Z)
+        children: (0, y.F6)(i, T.default, j.Z)
       }), null != o ? (0, r.jsx)("span", {
         className: L.searchResultChannelCategory,
-        children: (0, y.F6)(o, T.default, E.Z)
+        children: (0, y.F6)(o, T.default, j.Z)
       }) : null]
     })
   },

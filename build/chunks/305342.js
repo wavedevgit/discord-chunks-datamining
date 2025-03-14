@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => M,
   c: () => D
@@ -22,9 +22,9 @@ var r = n(200651),
   v = n(570533),
   y = n(971792),
   x = n(629262),
-  j = n(761966),
+  E = n(761966),
   O = n(893729),
-  E = n(845970),
+  j = n(845970),
   N = n(882101),
   C = n(11705),
   I = n(81273),
@@ -86,7 +86,7 @@ let k = e => {
         className: A.benefitsList,
         "aria-labelledby": h,
         children: c.map((e, t) => (0, r.jsx)("li", {
-          children: (0, r.jsx)(E.Z, {
+          children: (0, r.jsx)(j.Z, {
             guildId: a,
             benefit: e
           }, (0, f.ab)(e))
@@ -211,7 +211,7 @@ let k = e => {
       openModal: y,
       canOpenModal: x,
       cannotOpenReason: O,
-      isCheckingTrialEligibility: E
+      isCheckingTrialEligibility: j
     } = (0, I.Z)(v, a, d, m), k = (0, l.e7)([p.Z], () => p.Z.isSyncing), {
       activeSubscription: R,
       activeSubscriptionListing: M
@@ -264,10 +264,10 @@ let k = e => {
             }) : (0, r.jsx)(s.ua7, {
               text: x ? null : O,
               "aria-label": null !== (t = x && O) && void 0 !== t && t,
-              children: e => (0, r.jsx)(j.Z, Z(w({}, e), {
+              children: e => (0, r.jsx)(E.Z, Z(w({}, e), {
                 fullWidth: !0,
                 disabled: !x || k,
-                submitting: E,
+                submitting: j,
                 onClick: y,
                 onlyShineOnHover: !0,
                 children: P.NW.string(P.t.fM5Zsb)

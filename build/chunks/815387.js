@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => eZ
 }), n(411104);
@@ -21,9 +21,9 @@ var r = n(200651),
   v = n(345114),
   y = n(924301),
   x = n(225890),
-  j = n(434404),
+  E = n(434404),
   O = n(507435),
-  E = n(504733),
+  j = n(504733),
   N = n(563959),
   C = n(703656),
   I = n(471253),
@@ -75,9 +75,9 @@ var r = n(200651),
   ev = n(296571),
   ey = n(587737),
   ex = n(482239),
-  ej = n(328749),
+  eE = n(328749),
   eO = n(4305),
-  eE = n(910548),
+  ej = n(910548),
   eN = n(981631),
   eC = n(70722),
   eI = n(388032),
@@ -126,7 +126,7 @@ function eP(e) {
     messageId: t.id,
     stopPropagation: !0
   });
-  return (0, r.jsx)(eE.ZP, {
+  return (0, r.jsx)(ej.ZP, {
     message: t,
     compact: o,
     guild: d,
@@ -406,7 +406,7 @@ let ew = Object.freeze({
         message: t,
         compact: n,
         onClick: () => {
-          null != l && j.Z.open(l, eN.pNK.DISCOVERY)
+          null != l && E.Z.open(l, eN.pNK.DISCOVERY)
         }
       })
     },
@@ -473,7 +473,7 @@ let ew = Object.freeze({
         onContextMenuThread: p
       })
     },
-    [eN.uaV.THREAD_STARTER_MESSAGE]: ej.Z,
+    [eN.uaV.THREAD_STARTER_MESSAGE]: eE.Z,
     [eN.uaV.GUILD_INVITE_REMINDER]: function(e) {
       let {
         message: t,
@@ -661,7 +661,7 @@ let ew = Object.freeze({
         usernameHook: a
       })
     },
-    [eN.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION]: E.Z,
+    [eN.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION]: j.Z,
     [eN.uaV.PRIVATE_CHANNEL_INTEGRATION_ADDED]: N.P,
     [eN.uaV.PRIVATE_CHANNEL_INTEGRATION_REMOVED]: N.e,
     [eN.uaV.PREMIUM_REFERRAL]: void 0,

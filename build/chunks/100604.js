@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   r: () => _
 });
@@ -51,9 +51,9 @@ class _ {
       y = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : o.Z,
       x = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : i.Z,
       {
-        snapshotIndex: j,
+        snapshotIndex: E,
         parentMessage: O,
-        messageSnapshot: E
+        messageSnapshot: j
       } = this,
       {
         useOldIcon: N
@@ -68,31 +68,31 @@ class _ {
         location: "MessageForward"
       });
     if (!C) return {
-      snapshotIndex: j,
+      snapshotIndex: E,
       useOldIcon: N
     };
-    let I = (0, u.Xf)(E.message.timestamp),
+    let I = (0, u.Xf)(j.message.timestamp),
       S = h.getChannel(this.parentMessage.channel_id);
     if (null != S && S.guild_id === (null === (e = O.messageReference) || void 0 === e ? void 0 : e.guild_id)) {
       let e = h.getChannel(null === (n = O.messageReference) || void 0 === n ? void 0 : n.channel_id);
       if (null == e) {
         let e = y.getGuild(S.guild_id);
         return null == e ? {
-          snapshotIndex: j,
+          snapshotIndex: E,
           useOldIcon: N
         } : {
-          snapshotIndex: j,
+          snapshotIndex: E,
           footerInfo: g(e, I),
           useOldIcon: N
         }
       }
       if (!v.can(e.accessPermissions, e)) return {
-        snapshotIndex: j,
+        snapshotIndex: E,
         useOldIcon: N
       };
       let t = (0, r.F6)(e, _, b, !0);
       return {
-        snapshotIndex: j,
+        snapshotIndex: E,
         footerInfo: {
           originLabel: t,
           timestampLabel: I,
@@ -106,15 +106,15 @@ class _ {
     }
     let T = null === (t = O.messageReference) || void 0 === t ? void 0 : t.guild_id;
     if (null == T) return {
-      snapshotIndex: j,
+      snapshotIndex: E,
       useOldIcon: N
     };
     let P = null !== (d = y.getGuild(T)) && void 0 !== d ? d : x.getGuild(T);
     return null == P ? {
-      snapshotIndex: j,
+      snapshotIndex: E,
       useOldIcon: N
     } : {
-      snapshotIndex: j,
+      snapshotIndex: E,
       footerInfo: g(P, I),
       useOldIcon: N
     }

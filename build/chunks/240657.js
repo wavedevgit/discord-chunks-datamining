@@ -1,36 +1,36 @@
-/** Chunk was on 73628 **/
-r.d(t, {
-  Z: () => d
+/** Chunk was on 76030 **/
+n.d(t, {
+  Z: () => u
 });
-var A = r(200651),
-  n = r(192379),
-  o = r(120356),
-  a = r.n(o),
-  l = r(481060),
-  i = r(741914),
-  s = r(508852),
-  c = r(509045);
+var r = n(200651),
+  i = n(192379),
+  a = n(120356),
+  o = n.n(a),
+  l = n(481060),
+  s = n(741914),
+  c = n(508852),
+  d = n(509045);
 
-function d(e) {
+function u(e) {
   let {
     color: t,
-    className: r,
-    variant: o,
-    text: d,
-    lineClamp: u
-  } = e, f = (0, l.xSt)(), g = n.useMemo(() => null == d ? null : (0, i.Z)(d, !0, {
-    allowHeading: null == u,
-    allowList: null == u,
-    initialHeaderLevel: f
-  }), [d, u, f]);
-  return (0, A.jsx)(l.Text, {
-    className: a()(r, c.markup, {
-      [s.lineClamp2Plus]: null != u && u > 1,
-      [s.lineClamp1]: 1 === u
+    className: n,
+    variant: a,
+    text: u,
+    lineClamp: p
+  } = e, m = (0, l.xSt)(), f = i.useMemo(() => null == u ? null : (0, s.Z)(u, !0, {
+    allowHeading: null == p,
+    allowList: null == p,
+    initialHeaderLevel: m
+  }), [u, p, m]);
+  return (0, r.jsx)(l.Text, {
+    className: o()(n, d.markup, {
+      [c.lineClamp2Plus]: null != p && p > 1,
+      [c.lineClamp1]: 1 === p
     }),
     color: t,
-    variant: o,
-    lineClamp: u,
-    children: g
+    variant: a,
+    lineClamp: p,
+    children: f
   })
 }

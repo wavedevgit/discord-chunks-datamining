@@ -58,7 +58,7 @@ function k(e) {
   })
 }
 
-function E(e) {
+function w(e) {
   let {
     name: t,
     children: n,
@@ -92,7 +92,7 @@ function E(e) {
     })]
   })
 }
-let I = [{
+let E = [{
     id: "details",
     name: "Details",
     render: e => {
@@ -181,7 +181,7 @@ let I = [{
         }), (0, r.jsx)(k, {
           children: Object.entries(n).map(e => {
             let [t, n] = e;
-            return (0, r.jsx)(E, {
+            return (0, r.jsx)(w, {
               name: "".concat(t, ":"),
               copyValue: {
                 [t]: n || null
@@ -198,10 +198,10 @@ let I = [{
       })
     }
   }],
-  w = {
+  I = {
     events: {
       label: "Events",
-      filter: e => Object.entries(w).filter(e => {
+      filter: e => Object.entries(I).filter(e => {
         let [t] = e;
         return "events" !== t
       }).map(t => {
@@ -239,7 +239,7 @@ function Z() {
   let e = a.useRef(null),
     [t, n] = a.useState(""),
     i = (0, d.e7)([_.Z], () => _.Z.loggedEventsVersion),
-    [o, s] = a.useState(() => Object.keys(w)),
+    [o, s] = a.useState(() => Object.keys(I)),
     [c, m] = a.useState(_.Z.loggedEvents),
     h = a.useCallback(e => {
       m(e)
@@ -247,16 +247,16 @@ function Z() {
   (0, x.BO)(t, _.Z.loggedEvents, h, P, [i]);
   let p = c.filter(e => {
       for (let t of o)
-        if (w[t].filter(e)) return !0;
+        if (I[t].filter(e)) return !0;
       return !1
     }),
     [f, b] = a.useState(void 0),
     v = p.find(e => e.key === f),
     {
       TabBar: k,
-      renderSelectedTab: E
+      renderSelectedTab: w
     } = (0, C.Z)({
-      tabs: I
+      tabs: E
     }, []);
   return (0, r.jsxs)("div", {
     ref: e,
@@ -280,7 +280,7 @@ function Z() {
         className: N.toolbarDivider
       }), (0, r.jsx)("div", {
         className: N.filters,
-        children: Object.entries(w).map(e => {
+        children: Object.entries(I).map(e => {
           let [t, n] = e;
           return (0, r.jsx)(u.P3F, {
             className: l()(N.filter, o.includes(t) && N.activeFilter),
@@ -309,7 +309,7 @@ function Z() {
       className: N.subPanel,
       minHeight: 100,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300,
-      children: [(0, r.jsx)(k, {}), E({
+      children: [(0, r.jsx)(k, {}), w({
         loggedEvent: v,
         onClose: () => b(void 0)
       })]

@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => w
+  Z: () => I
 }), n(47120), n(566702);
 var r = n(200651),
   a = n(192379),
@@ -162,7 +162,7 @@ function k(e) {
     })]
   })
 }
-let E = [{
+let w = [{
     key: "action",
     cellClassName: y.actionColumn,
     render(e) {
@@ -185,7 +185,7 @@ let E = [{
       return "".concat(T(t.totalTime), " ms")
     }
   }],
-  I = {
+  E = {
     searchType: h.S.REGEX,
     searchStringGenerator: e => {
       let {
@@ -195,7 +195,7 @@ let E = [{
     }
   };
 
-function w() {
+function I() {
   let e = a.useRef(null),
     [t, n] = a.useState(""),
     i = function(e) {
@@ -219,7 +219,7 @@ function w() {
     j = a.useCallback(e => {
       x(e)
     }, []);
-  (0, p.BO)(t, f ? c : s, j, I);
+  (0, p.BO)(t, f ? c : s, j, E);
   let T = a.useCallback(e => {
       m(s), b(e)
     }, [s]),
@@ -245,7 +245,7 @@ function w() {
         placeholder: "Search by action name"
       })]
     }), (0, r.jsx)(v.Z, {
-      columns: E,
+      columns: w,
       data: O,
       selectedRowKey: null == _ ? void 0 : _.id.toString(),
       onClickRow: e => g(e.actionLog)

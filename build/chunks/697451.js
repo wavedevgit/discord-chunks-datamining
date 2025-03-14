@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => W
 });
@@ -21,9 +21,9 @@ var r = n(200651),
   v = n(581364),
   y = n(592180),
   x = n(347475),
-  j = n(598077),
+  E = n(598077),
   O = n(768581),
-  E = n(585483),
+  j = n(585483),
   N = n(55935),
   C = n(739566),
   I = n(421399),
@@ -102,7 +102,7 @@ function D(e, t, n, i, a) {
     onUserContextMenu: v,
     onClickTargetAvatar: y,
     onTargetUserContextMenu: x,
-    onPopoutRequestClose: j
+    onPopoutRequestClose: E
   } = e;
   if (p && 1 === n) return null;
   if (p && null == d.activityInstance || f || h) return (0, r.jsx)("div", {
@@ -111,7 +111,7 @@ function D(e, t, n, i, a) {
       className: w.commandIcon
     })
   });
-  let E = null !== (c = O.ZP.getGuildMemberAvatarURL({
+  let j = null !== (c = O.ZP.getGuildMemberAvatarURL({
       avatar: null !== (l = i.guildMemberAvatar) && void 0 !== l ? l : void 0,
       userId: t.id,
       guildId: null !== (s = null == m ? void 0 : m.guild_id) && void 0 !== s ? s : ""
@@ -139,7 +139,7 @@ function D(e, t, n, i, a) {
     })({
       user: t,
       guildId: m.guild_id,
-      guildAvatar: E,
+      guildAvatar: j,
       onClick: 1 === n ? y : b,
       onContextMenu: 1 === n ? x : v
     }),
@@ -148,7 +148,7 @@ function D(e, t, n, i, a) {
     renderPopout: a,
     shouldShow: C,
     position: "right",
-    onRequestClose: j,
+    onRequestClose: E,
     children: N
   }) : N()
 }
@@ -203,7 +203,7 @@ function W(e) {
     channel: l,
     messageId: a.id,
     interactionData: a.interactionData
-  }))), [l, a.id, a.interactionData]), R = (0, v.t0)(a), W = (null == R ? void 0 : R.type) === p.B8.APPLICATION_COMMAND && null != R.target_user ? new j.Z(R.target_user) : null, F = (null == R ? void 0 : R.type) === p.B8.APPLICATION_COMMAND && null != a.messageReference && null != e.renderTargetMessage, U = (0, C.Sw)(null === (t = a.interaction) || void 0 === t ? void 0 : t.user, l), B = (0, C.Sw)(W, l), G = i.useMemo(() => e.compact ? (0, T.Z)((0, N.vc)(d()(), "LT")) : null, [e.compact]), H = (0, m.NX)(l.id), V = a.interaction;
+  }))), [l, a.id, a.interactionData]), R = (0, v.t0)(a), W = (null == R ? void 0 : R.type) === p.B8.APPLICATION_COMMAND && null != R.target_user ? new E.Z(R.target_user) : null, F = (null == R ? void 0 : R.type) === p.B8.APPLICATION_COMMAND && null != a.messageReference && null != e.renderTargetMessage, U = (0, C.Sw)(null === (t = a.interaction) || void 0 === t ? void 0 : t.user, l), B = (0, C.Sw)(W, l), G = i.useMemo(() => e.compact ? (0, T.Z)((0, N.vc)(d()(), "LT")) : null, [e.compact]), H = (0, m.NX)(l.id), V = a.interaction;
   if (null == V || null == U) return null;
   let z = () => {
     let t = D(e, V.user, 0, U, e => O(e, V.user, [g.Z.AVATAR])),
@@ -271,7 +271,7 @@ function W(e) {
               return (0, r.jsx)(u.P3F, k(Z({}, n), {
                 tag: "span",
                 onClick: () => {
-                  E.S.dispatchToLastSubscribed(P.CkL.OPEN_APP_LAUNCHER, {
+                  j.S.dispatchToLastSubscribed(P.CkL.OPEN_APP_LAUNCHER, {
                     applicationId: i.applicationId
                   })
                 },

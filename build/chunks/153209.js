@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => N
 }), n(47120), n(230036);
@@ -21,10 +21,10 @@ var r = n(200651),
   v = n(791914),
   y = n(981631),
   x = n(388032),
-  j = n(648485),
+  E = n(648485),
   O = n(215921);
 
-function E(e) {
+function j(e) {
   let {
     onClick: t
   } = e;
@@ -61,15 +61,15 @@ function N(e) {
     return !1
   }, [T, P, S]);
   return (0, r.jsxs)("div", {
-    className: o()(j.container, {
-      [j.widerInbox]: I
+    className: o()(E.container, {
+      [E.widerInbox]: I
     }),
     children: [(0, r.jsx)(v.Z, {
       tab: s.X.FOR_YOU,
       setTab: t,
       badgeState: n,
       closePopout: a,
-      children: A ? (0, r.jsx)(E, {
+      children: A ? (0, r.jsx)(j, {
         onClick: () => {
           null != T && (g.d$.updateSetting(T.id), _.default.track(y.rMx.NOTIFICATION_CENTER_ACTION, {
             action_type: u.ud.MARK_ALL_READ

@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => B
 }), n(47120), n(653041);
@@ -21,9 +21,9 @@ var r = n(200651),
   v = n(311819),
   y = n(321231),
   x = n(758199),
-  j = n(943762),
+  E = n(943762),
   O = n(914498),
-  E = n(208444),
+  j = n(208444),
   N = n(429551),
   C = n(973616),
   I = n(314897),
@@ -114,7 +114,7 @@ let B = i.memo(function(e) {
     enabled: es
   } = y.G.useExperiment({
     location: "EmbeddedActivityInstanceEmbed"
-  }), ec = (0, E.z)(ee, () => {
+  }), ec = (0, j.z)(ee, () => {
     A.default.track(L.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
       application_id: N.id,
       channel_id: Z,
@@ -134,7 +134,7 @@ let B = i.memo(function(e) {
       a = Q.length,
       o = null !== (d = null == J ? void 0 : null === (n = J.timestamps) || void 0 === n ? void 0 : n.start) && void 0 !== d ? d : null == J ? void 0 : J.created_at,
       c = en ? el : null != $ ? $ : W.NW.string(W.t.oQn0h4),
-      u = (0, j.r)(J),
+      u = (0, E.r)(J),
       p = [{
         label: en ? W.NW.string(W.t.RscU7O) : W.NW.string(W.t.VJlc0d),
         trackingArea: O.j_.PLAY,
@@ -164,7 +164,7 @@ let B = i.memo(function(e) {
               start: o
             })]
           })
-        }), a > 0 && (0, r.jsx)(j.K, {
+        }), a > 0 && (0, r.jsx)(E.K, {
           activityUsers: Q,
           guildId: R,
           activityText: u.text

@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => w
 });
@@ -21,9 +21,9 @@ var r = n(200651),
   v = n(453687),
   y = n(25015),
   x = n(689674),
-  j = n(438075),
+  E = n(438075),
   O = n(963550),
-  E = n(845080),
+  j = n(845080),
   N = n(295790),
   C = n(145807),
   I = n(56744),
@@ -119,12 +119,12 @@ let w = i.memo(function(e) {
     disableInteraction: G,
     childrenRepliedMessage: (0, I.Z)(i, D, Y, X, a),
     childrenExecutedCommand: (0, C.Z)(i, D, a),
-    childrenHeader: (0, E.Z)(A(P({}, e), {
+    childrenHeader: (0, j.Z)(A(P({}, e), {
       guildId: D.guild_id,
       author: Q,
       roleIcon: $
     })),
-    childrenAccessories: e.hideAccessories ? void 0 : (0, j.Q)(e, K),
+    childrenAccessories: e.hideAccessories ? void 0 : (0, E.Q)(e, K),
     childrenMessageContent: (0, O.Z)(e, z),
     childrenSystemMessage: (0, N.Z)(A(P({}, e), {
       disableInteraction: G

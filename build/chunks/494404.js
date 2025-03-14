@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   ZP: () => L,
   h4: () => w,
@@ -23,9 +23,9 @@ var r = n(200651),
   v = n(210887),
   y = n(592125),
   x = n(375954),
-  j = n(496675),
+  E = n(496675),
   O = n(933429),
-  E = n(451478),
+  j = n(451478),
   N = n(626135),
   C = n(585483),
   I = n(981631),
@@ -144,12 +144,12 @@ class k extends i.PureComponent {
     })
   }
 }
-let R = d.ZP.connectStores([j.Z], e => {
+let R = d.ZP.connectStores([E.Z], e => {
   let {
     channel: t
   } = e;
   return {
-    canManageMessages: null != t && j.Z.can(I.Plq.MANAGE_MESSAGES, t)
+    canManageMessages: null != t && E.Z.can(I.Plq.MANAGE_MESSAGES, t)
   }
 })(k);
 
@@ -165,9 +165,9 @@ function D(e) {
     renderItem: b,
     getProTip: y,
     scrollerClassName: x,
-    className: j,
+    className: E,
     listName: w
-  } = e, Z = i.useRef(null), k = (0, f.Z)(w, Z), R = (0, d.e7)([O.ZP], () => O.ZP.hasNotice()), D = (0, d.e7)([E.Z], () => E.Z.windowSize()), L = (0, g.Q3)("ItemsPopout");
+  } = e, Z = i.useRef(null), k = (0, f.Z)(w, Z), R = (0, d.e7)([O.ZP], () => O.ZP.hasNotice()), D = (0, d.e7)([j.Z], () => j.Z.windowSize()), L = (0, g.Q3)("ItemsPopout");
   i.useEffect(() => {
     N.default.track(I.rMx.OPEN_POPOUT, {
       type: t
@@ -240,7 +240,7 @@ function D(e) {
   R && (H.maxHeight -= 40), L && (H.maxHeight -= 48);
   let V = null != p && a;
   return (0, r.jsx)("div", {
-    className: o()(j, T.messagesPopoutWrap),
+    className: o()(E, T.messagesPopoutWrap),
     style: H,
     onClick: A,
     onDoubleClick: A,
@@ -320,9 +320,9 @@ function L(e) {
     renderHeader: h,
     renderEmptyState: g,
     renderMessage: v,
-    getProTip: j,
+    getProTip: E,
     scrollerClassName: O,
-    className: E,
+    className: j,
     onCloseMessage: N,
     listName: C
   } = e, P = (0, d.e7)([x.Z], () => {
@@ -365,7 +365,7 @@ function L(e) {
     channel: a
   })), [o, a]);
   return (0, r.jsx)(D, {
-    className: E,
+    className: j,
     scrollerClassName: O,
     items: w,
     loading: s,
@@ -374,7 +374,7 @@ function L(e) {
     renderHeader: h,
     hasMore: l,
     loadMore: c,
-    getProTip: j,
+    getProTip: E,
     renderItem: function(e) {
       let {
         message: t,

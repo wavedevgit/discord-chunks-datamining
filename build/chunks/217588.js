@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => G
 }), n(266796), n(47120);
@@ -21,9 +21,9 @@ var r = n(200651),
   v = n(197115),
   y = n(430824),
   x = n(594174),
-  j = n(626135),
+  E = n(626135),
   O = n(74538),
-  E = n(453070),
+  j = n(453070),
   N = n(926491),
   C = n(378233),
   I = n(419922),
@@ -79,7 +79,7 @@ let D = (e, t) => t ? A.NW.format(A.t.auckX1, {
   };
 
 function M(e) {
-  j.default.track(T.rMx.PREMIUM_PROMOTION_OPENED, {
+  E.default.track(T.rMx.PREMIUM_PROMOTION_OPENED, {
     location_page: null != e.guild_id ? T.ZY5.GUILD_CHANNEL : T.ZY5.DM_CHANNEL,
     location_section: T.jXE.STICKER_POPOUT
   }), (0, b.z)()
@@ -122,8 +122,8 @@ let F = e => {
       sticker: n,
       stickerPack: c
     });
-    (0, E.Pq)(n.pack_id);
-    let f = (0, E.Sd)(a),
+    (0, j.Pq)(n.pack_id);
+    let f = (0, j.Sd)(a),
       h = {
         refreshPositionKey: o,
         channel: a
@@ -140,7 +140,7 @@ let F = e => {
       let {
         channel: e
       } = g.current;
-      j.default.track(T.rMx.OPEN_POPOUT, k({
+      E.default.track(T.rMx.OPEN_POPOUT, k({
         type: T.jXE.STICKER_POPOUT,
         guild_id: e.getGuildId(),
         sticker_pack_id: n.pack_id
@@ -185,7 +185,7 @@ let F = e => {
         closePopout: m,
         refreshPositionKey: b
       } = e,
-      [E, N] = i.useState(null),
+      [j, N] = i.useState(null),
       [C, S] = i.useState(!1),
       D = x.default.getCurrentUser(),
       L = O.ZP.canUseCustomStickersEverywhere(D),
@@ -218,7 +218,7 @@ let F = e => {
       })()
     }, [n.id, U]);
     let q = n.guild_id === a.getGuildId(),
-      Q = null != E,
+      Q = null != j,
       J = !1,
       $ = "Custom Sticker Popout";
     L ? t = U ? q ? A.NW.string(A.t.fZ0DiI) : A.NW.string(A.t["1f6D9v"]) : Q ? A.NW.string(A.t.yHmoR0) : A.NW.string(A.t.vZaScH) : U ? (t = q ? A.NW.string(A.t.jNphpq) : A.NW.string(A.t.lyD5ZW), J = !0, $ = "Custom Sticker Popout (Upsell)") : Q ? (t = A.NW.string(A.t.IuXYcn), J = !0, $ = "Custom Sticker Popout (Upsell)") : (t = A.NW.format(A.t.hGWuxc, {
@@ -232,17 +232,17 @@ let F = e => {
         refreshPositionKey: e
       } = X.current;
       e()
-    }, [C, E]), (0, d.ZP)(() => {
-      j.default.track(T.rMx.OPEN_POPOUT, k({
+    }, [C, j]), (0, d.ZP)(() => {
+      E.default.track(T.rMx.OPEN_POPOUT, k({
         type: $
       }, K))
     }), C) ? (0, r.jsxs)(_.W_, {
       className: Z.popoutContent,
       children: [(() => {
         let e = async () => {
-          if (null == E || U) return;
+          if (null == j || U) return;
           m();
-          let e = E.id;
+          let e = j.id;
           try {
             await c.Z.joinGuild(e), c.Z.transitionToGuildSync(e)
           } catch (e) {}
@@ -259,7 +259,7 @@ let F = e => {
             fullWidth: !0,
             buttonText: A.NW.string(A.t["gl/XHB"]),
             onSubscribeModalClose: t => t ? e() : m(),
-            postSuccessGuild: U || null == E ? void 0 : E,
+            postSuccessGuild: U || null == j ? void 0 : j,
             premiumModalAnalyticsLocation: z
           }), ee && (0, r.jsx)(s.zxk, {
             size: s.zxk.Sizes.SMALL,
@@ -269,11 +269,11 @@ let F = e => {
             children: A.NW.string(A.t.riu2R0)
           })]
         })
-      })(), (null != F || null != E) && (() => {
+      })(), (null != F || null != j) && (() => {
         var e;
         if (!Q && !U) return;
-        let t = (null !== (e = null == E ? void 0 : E.stickers) && void 0 !== e ? e : []).slice(0, 13).filter(e => e.id !== n.id).slice(0, 12),
-          i = null != E ? f.JO.createFromDiscoverableGuild(E) : f.JO.createFromGuildRecord(F);
+        let t = (null !== (e = null == j ? void 0 : j.stickers) && void 0 !== e ? e : []).slice(0, 13).filter(e => e.id !== n.id).slice(0, 12),
+          i = null != j ? f.JO.createFromDiscoverableGuild(j) : f.JO.createFromGuildRecord(F);
         return (0, r.jsxs)("div", {
           className: Z.guildSection,
           children: [(0, r.jsx)(s.vwX, {
@@ -385,7 +385,7 @@ let G = e => {
     channel: n,
     closePopout: i,
     refreshPositionKey: a
-  } = e, [o, l] = (0, E.XW)(t, !0);
+  } = e, [o, l] = (0, j.XW)(t, !0);
   return null != o && (0, C.jl)(o) ? (0, r.jsx)(F, {
     sticker: o,
     closePopout: i,

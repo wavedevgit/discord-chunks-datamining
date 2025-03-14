@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => y
 }), n(653041);
@@ -26,18 +26,18 @@ function y(e) {
       author: a,
       currentUserId: y,
       onTransitionToInviteChannel: x,
-      onAcceptInstantInvite: j
+      onAcceptInstantInvite: E
     } = e,
     O = y === a.id,
-    E = n.state === _.r2o.ACCEPTING,
+    j = n.state === _.r2o.ACCEPTING,
     N = (0, l.e7)([m.Z], () => null != n.channel ? m.Z.getChannel(n.channel.id) : null, [n]);
   o()(null == N || N.isPrivate(), "must be a private channel");
   let {
     analyticsLocations: C
   } = (0, d.ZP)(c.Z.INVITE_EMBED), I = null != N, S = i.useCallback(() => {
     let e = "noop";
-    I ? (x(), e = "transition") : (j(), e = "accept"), (0, s.r$)(n, e, C)
-  }, [n, C, I, x, j]);
+    I ? (x(), e = "transition") : (E(), e = "accept"), (0, s.r$)(n, e, C)
+  }, [n, C, I, x, E]);
   if (null == N) {
     if (null == n.channel) return (0, r.jsx)(g.Z, {});
     N = (0, p.jD)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
@@ -73,7 +73,7 @@ function y(e) {
         })]
       }), (0, r.jsx)(u.Z.Button, {
         onClick: S,
-        submitting: E,
+        submitting: j,
         isDisabled: I,
         color: A,
         children: P

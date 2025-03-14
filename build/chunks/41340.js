@@ -64,7 +64,7 @@ function g(e) {
   } = e, [j, y] = a.useState(!1), [C, T] = a.useState(!1), [N, O] = a.useState(null), S = e => (null == e && (e = g.status), e in b) ? b[e] : "Unknown status ".concat(e), k = e => {
     let t = new Date(e);
     return u.default.fromTimestamp(t.getTime())
-  }, E = async e => {
+  }, w = async e => {
     let {
       status: t = g.status,
       premiumStreakStart: n,
@@ -98,7 +98,7 @@ function g(e) {
       body: a,
       rejectWithError: !1
     }), v()
-  }, I = async () => {
+  }, E = async () => {
     try {
       await o.tn.post({
         url: "/debug/subscriptions/".concat(g.id, "/transition"),
@@ -114,9 +114,9 @@ function g(e) {
       O(e.body.message)
     }
     v()
-  }, w = (null === (t = p.GP[g.planIdFromItems]) || void 0 === t ? void 0 : t.premiumType) === p.p9.TIER_0, P = null === (n = g.metadata) || void 0 === n ? void 0 : n.ended_at, Z = null != P ? new Date(P).toISOString().substring(0, 10) : "";
+  }, I = (null === (t = p.GP[g.planIdFromItems]) || void 0 === t ? void 0 : t.premiumType) === p.p9.TIER_0, P = null === (n = g.metadata) || void 0 === n ? void 0 : n.ended_at, Z = null != P ? new Date(P).toISOString().substring(0, 10) : "";
   return (0, r.jsxs)("div", {
-    className: l()(f.card, w ? f.gradientWrapperTier0 : f.gradientWrapperTier2),
+    className: l()(f.card, I ? f.gradientWrapperTier0 : f.gradientWrapperTier2),
     children: [(0, r.jsxs)(s.Text, {
       variant: "text-md/normal",
       children: ["Type: ", (() => {
@@ -194,7 +194,7 @@ function g(e) {
             serialize: e => S(e),
             isSelected: e => e === g.status,
             options: _,
-            select: e => E({
+            select: e => w({
               status: e
             }),
             popoutLayerContext: m.O$
@@ -205,7 +205,7 @@ function g(e) {
           className: x.formSection,
           children: [(0, r.jsx)(s.zxk, {
             size: s.zxk.Sizes.SMALL,
-            onClick: e => I(),
+            onClick: e => E(),
             children: "Renew Subscription"
           }), null !== N && (0, r.jsx)(s.kzN, {
             className: x.error,
@@ -219,7 +219,7 @@ function g(e) {
           children: (0, r.jsx)("input", {
             type: "date",
             value: null === (i = g.premiumSince) || void 0 === i ? void 0 : i.toISOString().substring(0, 10),
-            onChange: e => E({
+            onChange: e => w({
               premiumStreakStart: e.target.value
             })
           })
@@ -230,7 +230,7 @@ function g(e) {
           children: (0, r.jsx)("input", {
             type: "date",
             value: Z,
-            onChange: e => E({
+            onChange: e => w({
               endedAt: e.target.value
             })
           })

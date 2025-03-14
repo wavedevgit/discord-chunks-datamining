@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   O: () => k,
   U: () => S.Un
@@ -22,9 +22,9 @@ var r = n(200651),
   v = n(314897),
   y = n(699516),
   x = n(914010),
-  j = n(594174),
+  E = n(594174),
   O = n(768581),
-  E = n(135431),
+  j = n(135431),
   N = n(506895),
   C = n(758199),
   I = n(943762),
@@ -46,12 +46,12 @@ function k(e) {
   } = e, {
     name: _,
     bot: b
-  } = t = (0, T.O)(t), y = null == b ? void 0 : b.id, x = (0, m.ye)(t), j = O.ZP.getApplicationIconURL({
+  } = t = (0, T.O)(t), y = null == b ? void 0 : b.id, x = (0, m.ye)(t), E = O.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     bot: b
   }), {
-    staticBannerSrc: E,
+    staticBannerSrc: j,
     videoBannerSrc: I,
     bannerAspectRatio: Z
   } = (0, P.E)(t), k = (0, l.e7)([v.default], () => null != s ? s : v.default.getId(), [s]), {
@@ -105,10 +105,10 @@ function k(e) {
   });
   return (0, r.jsx)(C.W, {
     title: _,
-    staticBannerSrc: E,
+    staticBannerSrc: j,
     videoBannerSrc: I,
     bannerAspectRatio: Z,
-    iconSrc: j,
+    iconSrc: E,
     embedUrl: n,
     info: Y,
     actions: K,
@@ -126,7 +126,7 @@ function R(e) {
   var t, n, o;
   let {
     app: c
-  } = e, d = (0, E.Eb)({
+  } = e, d = (0, j.Eb)({
     customInstallUrl: c.customInstallUrl,
     installParams: c.installParams,
     integrationTypesConfig: c.integrationTypesConfig
@@ -170,11 +170,11 @@ function D(e) {
   } = t, c = (0, l.e7)([x.Z], () => {
     var e;
     return null !== (e = x.Z.getGuildId()) && void 0 !== e ? e : void 0
-  }, []), d = (0, _.Ns)(t.id), u = (0, l.Wu)([j.default, y.Z], () => {
+  }, []), d = (0, _.Ns)(t.id), u = (0, l.Wu)([E.default, y.Z], () => {
     let e = [];
     for (let [t, n] of d.entries()) {
       if (t >= 5) break;
-      let r = j.default.getUser(n.author_id),
+      let r = E.default.getUser(n.author_id),
         i = y.Z.isFriend(n.author_id);
       null != r && i && e.push(r)
     }

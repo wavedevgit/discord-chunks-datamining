@@ -28,12 +28,12 @@ var r = n(200651),
   O = n(780106),
   S = n(650613),
   k = n(789086),
-  E = n(206583),
-  I = n(866235),
-  w = n(710662);
+  w = n(206583),
+  E = n(866235),
+  I = n(710662);
 let P = [{
   key: "type",
-  cellClassName: l()(I.cell, I.cellType),
+  cellClassName: l()(E.cell, E.cellType),
   render(e) {
     let {
       type: t
@@ -45,7 +45,7 @@ let P = [{
   }
 }, {
   key: "count",
-  cellClassName: l()(I.cell, I.cellCount),
+  cellClassName: l()(E.cell, E.cellCount),
   render(e) {
     let {
       entries: t
@@ -59,7 +59,7 @@ let P = [{
   }
 }, {
   key: "only?",
-  cellClassName: I.cell,
+  cellClassName: E.cell,
   render(e) {
     let {
       type: t
@@ -93,7 +93,7 @@ function Z(e) {
 
 function R() {
   var e, t;
-  let n = (0, u.e7)([N.Z], () => N.Z.getFeed(E.YN.GLOBAL_FEED)),
+  let n = (0, u.e7)([N.Z], () => N.Z.getFeed(w.YN.GLOBAL_FEED)),
     i = (0, u.e7)([N.Z], () => N.Z.getDebugImpressionCappingDisabled()),
     l = (0, u.e7)([T.Z], () => T.Z.getDebugFastImpressionCappingEnabled()),
     o = function(e) {
@@ -109,7 +109,7 @@ function R() {
     }(null == n ? void 0 : null === (e = n.entries) || void 0 === e ? void 0 : e.map(e => e.content)),
     c = (0, u.e7)([N.Z], () => {
       var e;
-      return (null === (e = N.Z.getFeedState(E.YN.GLOBAL_FEED)) || void 0 === e ? void 0 : e.loading) === !0
+      return (null === (e = N.Z.getFeedState(w.YN.GLOBAL_FEED)) || void 0 === e ? void 0 : e.loading) === !0
     }),
     [Z, R] = a.useState(""),
     L = (0, u.e7)([j.Z, x.Z], () => {
@@ -131,9 +131,9 @@ function R() {
     z = (0, f.Z)(B).filter(y.lm),
     M = (0, u.e7)([C.Z], () => C.Z.getFakeGameToShow());
   return (0, r.jsx)("div", {
-    className: w.panel,
+    className: I.panel,
     children: (0, r.jsxs)(h.zJl, {
-      className: I.content,
+      className: E.content,
       children: [(0, r.jsxs)(h.hjN, {
         children: [(0, r.jsx)(h.vwX, {
           children: "Inventory"
@@ -147,7 +147,7 @@ function R() {
           onClick: function() {
             p.Z.dispatch({
               type: "CONTENT_INVENTORY_MANUAL_REFRESH",
-              feedId: E.YN.GLOBAL_FEED,
+              feedId: w.YN.GLOBAL_FEED,
               feature: d.L.INBOX
             })
           },

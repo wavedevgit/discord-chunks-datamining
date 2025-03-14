@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   l: () => W
 }), n(47120);
@@ -21,9 +21,9 @@ var r = n(200651),
   v = n(594174),
   y = n(626135),
   x = n(111361),
-  j = n(74538),
+  E = n(74538),
   O = n(709706),
-  E = n(378441),
+  j = n(378441),
   N = n(799143),
   C = n(358820),
   I = n(448697),
@@ -92,7 +92,7 @@ function W(e) {
     [X, q] = i.useState(!1),
     {
       activeVoice: Q
-    } = (0, E.o)(),
+    } = (0, j.o)(),
     J = (0, c.q_F)({
       transform: K ? "translateY(-$8px) scale(".concat(.96, ")") : "translateY(0px) scale(1)",
       config: {
@@ -188,7 +188,7 @@ function W(e) {
             children: (0, r.jsx)(g.p, {
               showUpsell: !0,
               text: R.NW.format(R.t["XMDm8/"], {
-                nitroTierName: (0, j.Px)(Z.p9.TIER_2),
+                nitroTierName: (0, E.Px)(Z.p9.TIER_2),
                 onClick: () => (0, _.i)()
               }),
               button: R.NW.string(R.t.cRCCJy),

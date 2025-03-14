@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => W
 }), n(47120), n(266796);
@@ -21,9 +21,9 @@ var r = n(200651),
   v = n(220082),
   y = n(749681),
   x = n(258971),
-  j = n(240991),
+  E = n(240991),
   O = n(592125),
-  E = n(496675),
+  j = n(496675),
   N = n(944486),
   C = n(914010),
   I = n(768581),
@@ -71,7 +71,7 @@ function F(e) {
   } = i.useMemo(() => (0, g.sl)(n, {
     fakeAppIconURL: L,
     size: 56
-  }), [n]), F = i.useMemo(() => null != W ? (0, j.parseBioReact)(W) : null, [W]), [B, G] = i.useState(!1), H = i.useCallback(e => {
+  }), [n]), F = i.useMemo(() => null != W ? (0, E.parseBioReact)(W) : null, [W]), [B, G] = i.useState(!1), H = i.useCallback(e => {
     e && G(!0)
   }, []), V = (0, c.O)(H), z = i.useCallback(() => {
     (0, h.h)({
@@ -90,7 +90,7 @@ function F(e) {
     X = K || Y,
     q = n.isVerified && n.isDiscoverable,
     Q = (0, l.e7)([N.Z, O.Z], () => O.Z.getChannel(N.Z.getChannelId())),
-    J = (0, l.e7)([E.Z], () => (null == Q ? void 0 : Q.isPrivate()) || E.Z.can(Z.Plq.SEND_MESSAGES, Q)),
+    J = (0, l.e7)([j.Z], () => (null == Q ? void 0 : Q.isPrivate()) || j.Z.can(Z.Plq.SEND_MESSAGES, Q)),
     {
       analyticsLocations: $
     } = (0, f.ZP)(p.Z.APP_OAUTH2_LINK_EMBED),

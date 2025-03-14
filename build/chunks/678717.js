@@ -29,9 +29,9 @@ var g = n(392750),
   O = n(916790),
   S = n(645973),
   k = n(903502),
-  E = n(912072),
-  I = n(272193),
-  w = n(685560),
+  w = n(912072),
+  E = n(272193),
+  I = n(685560),
   P = n(735959),
   Z = n(246992),
   R = n(496025),
@@ -139,7 +139,7 @@ function ee() {
       }), e.push({
         id: "overlays",
         name: "Dev Overlays",
-        render: () => (0, r.jsx)(E.Z, {
+        render: () => (0, r.jsx)(w.Z, {
           devSettingsCategory: _.zU.OVERLAYS
         })
       }), e.push({
@@ -149,7 +149,7 @@ function ee() {
       }), e.push({
         id: "reporting",
         name: "Reporting",
-        render: () => (0, r.jsx)(E.Z, {
+        render: () => (0, r.jsx)(w.Z, {
           devSettingsCategory: _.zU.REPORTING
         })
       }), e.push({
@@ -195,7 +195,7 @@ function ee() {
       })), e.push({
         id: "gifting_intent",
         name: "Gifting Intent",
-        render: () => (0, r.jsx)(I.Z, {})
+        render: () => (0, r.jsx)(E.Z, {})
       }), e.push({
         id: "voice_filters",
         name: "Voice Filters",
@@ -203,7 +203,7 @@ function ee() {
       }), e.push({
         id: "skill_trees",
         name: "Skill Trees",
-        render: () => (0, r.jsx)(w.Z, {})
+        render: () => (0, r.jsx)(I.Z, {})
       }), e
     }, []),
     {

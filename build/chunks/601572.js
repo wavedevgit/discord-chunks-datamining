@@ -1,4 +1,4 @@
-/** Chunk was on 36252 **/
+/** Chunk was on 50037 **/
 n.d(t, {
   default: () => k
 }), n(47120);
@@ -31,7 +31,7 @@ function k(e) {
     videoEnabled: n,
     onEnable: k,
     onClose: w
-  } = e, x = h.Z.getCameraComponent(), y = (0, u.Dt)(), N = (0, m.Z)(), A = b.qF.useSetting(), [P, B] = a.useState((0, f.P)(v.default.getCurrentUser())), E = (0, l.O)(), {
+  } = e, x = h.Z.getCameraComponent(), y = (0, u.Dt)(), N = (0, m.Z)(), P = b.qF.useSetting(), [A, B] = a.useState((0, f.P)(v.default.getCurrentUser())), E = (0, l.O)(), {
     analyticsLocations: L
   } = (0, s.ZP)(d.Z.CAMERA_PREVIEW), R = a.useRef(null);
   a.useEffect(() => {
@@ -46,7 +46,7 @@ function k(e) {
     await Z(), r.Z.setVideoEnabled(!0), null == k || k()
   }, Z = async () => {
     try {
-      await (0, g.wG)(P, {
+      await (0, g.wG)(A, {
         location: function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -69,7 +69,7 @@ function k(e) {
         }, E.location)
       })
     } catch (e) {}
-    await w(), (0, p.Up)(P)
+    await w(), (0, p.Up)(A)
   };
   return (0, o.jsx)(s.Gt, {
     value: L,
@@ -93,7 +93,7 @@ function k(e) {
             showSmallBackgroundOptions: !0,
             hideDeviceHeader: !0,
             hideCameraSettingsLink: !0,
-            selectedBackgroundOption: P,
+            selectedBackgroundOption: A,
             onSelectBackgroundOption: B,
             hideDeviceSelector: n,
             renderCamera: e => (0, o.jsxs)("div", {
@@ -123,10 +123,10 @@ function k(e) {
           })(), (0, o.jsx)(i.XZJ, {
             size: 18,
             type: i.XZJ.Types.INVERTED,
-            value: A,
+            value: P,
             onChange: () => {
-              b.qF.updateSetting(!A), I.default.track(T.rMx.UPDATE_USER_SETTINGS_LOCAL, {
-                always_preview_video: !A
+              b.qF.updateSetting(!P), I.default.track(T.rMx.UPDATE_USER_SETTINGS_LOCAL, {
+                always_preview_video: !P
               })
             },
             children: (0, o.jsx)(i.Text, {

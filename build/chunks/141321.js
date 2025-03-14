@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => v
 });
@@ -24,13 +24,13 @@ function v(e) {
     onOpen: t,
     onClose: n,
     className: v
-  } = e, y = (0, a.e7)([m.default], () => m.default.getCurrentUser()), x = (0, l.Q3)("RecentsButton"), j = i.useRef(null), O = (0, a.e7)([p.ZP], () => (null == y ? void 0 : y.id) != null && p.ZP.getMentionCount(y.id, g.W.NOTIFICATION_CENTER) > 0), {
-    enabled: E
+  } = e, y = (0, a.e7)([m.default], () => m.default.getCurrentUser()), x = (0, l.Q3)("RecentsButton"), E = i.useRef(null), O = (0, a.e7)([p.ZP], () => (null == y ? void 0 : y.id) != null && p.ZP.getMentionCount(y.id, g.W.NOTIFICATION_CENTER) > 0), {
+    enabled: j
   } = c.Z.useExperiment({
     location: "RecentsButton"
   }, {
     autoTrackExposure: !1
-  }), N = (0, a.e7)([s.Z], () => E && s.Z.getUnseenInviteCount() > 0), C = (0, o.dQu)(o.TVs.modules.chat.INPUT_ICON_SIZE);
+  }), N = (0, a.e7)([s.Z], () => j && s.Z.getUnseenInviteCount() > 0), C = (0, o.dQu)(o.TVs.modules.chat.INPUT_ICON_SIZE);
   return (0, r.jsx)(f.k, {
     onOpen: t,
     onClose: n,
@@ -42,10 +42,10 @@ function v(e) {
     children: (e, t, n, i) => {
       var a, l;
       return (0, r.jsxs)("div", {
-        ref: j,
+        ref: E,
         className: b.recentsIcon,
-        children: [E && (0, r.jsx)(h.Z, {
-          inboxIconRef: j,
+        children: [j && (0, r.jsx)(h.Z, {
+          inboxIconRef: E,
           recentsPopoutShown: t
         }), (0, r.jsx)(u.U, {
           location: "inbox-button",

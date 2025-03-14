@@ -47,9 +47,9 @@ var r, a, i = n(192379),
   O = n(53796),
   S = n(723757),
   k = n(375924),
-  E = n(596136),
-  I = n(341901),
-  w = n(856308),
+  w = n(596136),
+  E = n(341901),
+  I = n(856308),
   P = n(665352),
   Z = n(394900),
   R = n(661105),
@@ -113,9 +113,9 @@ let F = {
     ProPhoto: O.Z,
     REC_2020: S.Z,
     REC_2100_HLG: k.Z,
-    REC_2100_PQ: E.Z,
-    XYZ_D50: I.Z,
-    XYZ_D65: w.Z
+    REC_2100_PQ: w.Z,
+    XYZ_D50: E.Z,
+    XYZ_D65: I.Z
   },
   G = Object.fromEntries(Object.keys(F).map(e => [e, e]));
 Object.values(F).forEach(e => P.Z.register(e));

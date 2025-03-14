@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => F
 });
@@ -21,9 +21,9 @@ var r = n(200651),
   v = n(786761),
   y = n(493892),
   x = n(901461),
-  j = n(739566),
+  E = n(739566),
   O = n(443877),
-  E = n(492593),
+  j = n(492593),
   N = n(938353),
   C = n(25015),
   I = n(689674),
@@ -93,7 +93,7 @@ let F = i.memo(function e(t) {
     allowHeading: $,
     allowLinks: !0,
     previewLinkTarget: !0
-  }), ei = (0, j.ZP)(s), ea = (0, l.e7)([h.Z], () => s.hasFlag(k.iLy.HAS_THREAD) && h.Z.getChannel(_.default.castMessageIdAsChannelId(s.id))), eo = s.type === k.uaV.THREAD_STARTER_MESSAGE && K.state === m.Y.LOADED && null != Y, el = !eo && void 0 === i, es = (0, I.Z)({
+  }), ei = (0, E.ZP)(s), ea = (0, l.e7)([h.Z], () => s.hasFlag(k.iLy.HAS_THREAD) && h.Z.getChannel(_.default.castMessageIdAsChannelId(s.id))), eo = s.type === k.uaV.THREAD_STARTER_MESSAGE && K.state === m.Y.LOADED && null != Y, el = !eo && void 0 === i, es = (0, I.Z)({
     message: s,
     channel: a,
     enabled: el
@@ -107,7 +107,7 @@ let F = i.memo(function e(t) {
     compact: Z,
     count: 1,
     collapsedReason: i
-  }) : (0, r.jsx)(E.Z, {
+  }) : (0, r.jsx)(j.Z, {
     compact: Z,
     className: o()(D, {
       [L.ephemeral]: (0, v.Pv)(s),
@@ -162,7 +162,7 @@ function U(e) {
     compact: i,
     collapsedReason: a
   } = e;
-  return (0, r.jsx)(E.Z, {
+  return (0, r.jsx)(j.Z, {
     className: t,
     compact: i,
     role: "group",

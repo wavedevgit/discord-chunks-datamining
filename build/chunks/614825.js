@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => P
 }), n(266796), n(47120);
@@ -21,9 +21,9 @@ var r = n(200651),
   v = n(63063),
   y = n(74538),
   x = n(276444),
-  j = n(786397),
+  E = n(786397),
   O = n(474936),
-  E = n(981631),
+  j = n(981631),
   N = n(388032),
   C = n(370321);
 
@@ -67,7 +67,7 @@ class T extends i.Component {
       trialOffer: r
     } = this.props;
     return e && !n && void 0 === r.redeemed_at ? N.NW.format(N.t.LwCwT0, {
-      helpdeskArticle: v.Z.getArticleURL(E.BhN.REFERRAL_PROGRAM)
+      helpdeskArticle: v.Z.getArticleURL(j.BhN.REFERRAL_PROGRAM)
     }) : t ? null : N.NW.string(N.t.lQLlOT)
   }
   renderActions(e, t, n) {
@@ -81,7 +81,7 @@ class T extends i.Component {
         this.handleStartTrial(o, s)
       },
       color: u.zxk.Colors.BRAND
-    }, d = l.id !== o.user_id || (0, y.I5)(l) || !l.verified || (0, j.B)(o), p = this.renderExpirationDate(e, t, n);
+    }, d = l.id !== o.user_id || (0, y.I5)(l) || !l.verified || (0, E.B)(o), p = this.renderExpirationDate(e, t, n);
     return c.disabled = d, (0, r.jsxs)("div", {
       className: C.buttonContainer,
       children: [(0, r.jsx)("div", {
@@ -151,7 +151,7 @@ class T extends i.Component {
       trialOffer: e,
       currentUser: t,
       recipientHasNitro: n
-    } = this.props, i = (0, j.B)(e), a = t.id === e.referrer_id;
+    } = this.props, i = (0, E.B)(e), a = t.id === e.referrer_id;
     return (0, r.jsxs)("div", {
       className: o()(C.tile, C.container),
       children: [(0, r.jsx)("div", {

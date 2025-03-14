@@ -113,44 +113,45 @@ let D = function(e) {
     isTrialCTA: D,
     buttonText: L,
     buttonTextClassName: x,
-    iconClassName: M,
-    postSuccessGuild: k,
-    onSubscribeModalClose: j,
-    premiumModalAnalyticsLocation: U,
-    showIcon: G = !0,
-    disableShine: B,
-    applicationId: V,
-    giftMessage: F,
-    overrideDisabledButtonText: Z,
-    shinyButtonClassName: H,
-    showGradient: W = !1,
-    confirmationFooter: Y,
-    planSelectBanner: K
-  } = e, z = R(e, ["isGift", "subscriptionTier", "onClick", "size", "className", "isTrialCTA", "buttonText", "buttonTextClassName", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "giftMessage", "overrideDisabledButtonText", "shinyButtonClassName", "showGradient", "confirmationFooter", "planSelectBanner"]);
-  let q = (0, a.e7)([h.default], () => h.default.getCurrentUser()),
-    Q = (0, a.e7)([g.Z], () => g.Z.isFocused()),
-    X = (0, a.e7)([m.ZP], () => m.ZP.getPremiumTypeSubscription()),
+    subscribeButtonText: M,
+    iconClassName: k,
+    postSuccessGuild: j,
+    onSubscribeModalClose: U,
+    premiumModalAnalyticsLocation: G,
+    showIcon: B = !0,
+    disableShine: V,
+    applicationId: F,
+    giftMessage: Z,
+    overrideDisabledButtonText: H,
+    shinyButtonClassName: W,
+    showGradient: Y = !1,
+    confirmationFooter: K,
+    planSelectBanner: z
+  } = e, q = R(e, ["isGift", "subscriptionTier", "onClick", "size", "className", "isTrialCTA", "buttonText", "buttonTextClassName", "subscribeButtonText", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "giftMessage", "overrideDisabledButtonText", "shinyButtonClassName", "showGradient", "confirmationFooter", "planSelectBanner"]);
+  let Q = (0, a.e7)([h.default], () => h.default.getCurrentUser()),
+    X = (0, a.e7)([g.Z], () => g.Z.isFocused()),
+    J = (0, a.e7)([m.ZP], () => m.ZP.getPremiumTypeSubscription()),
     {
-      analyticsLocations: J
+      analyticsLocations: $
     } = (0, c.ZP)(),
-    $ = (0, b.N)(),
-    ee = !t && null != $ && null != i && y.nG[$.trial_id].skus.includes(i),
+    ee = (0, b.N)(),
+    et = !t && null != ee && null != i && y.nG[ee.trial_id].skus.includes(i),
     {
-      fractionalState: et
+      fractionalState: en
     } = (0, u.Z)({
       forceFetch: !1
     }),
-    en = e => {
+    er = e => {
       var o;
-      if (e.preventDefault(), null == q) {
+      if (e.preventDefault(), null == Q) {
         (0, _.uL)(O.Z5c.LOGIN);
         return
       }
-      if (null == T || T(e), (null == X ? void 0 : X.status) === O.O0b.ACCOUNT_HOLD) {
-        (0, d.A3)(), l.Z.open(O.oAB.PREMIUM), null == j || j(!1);
+      if (null == T || T(e), (null == J ? void 0 : J.status) === O.O0b.ACCOUNT_HOLD) {
+        (0, d.A3)(), l.Z.open(O.oAB.PREMIUM), null == U || U(!1);
         return
       }
-      if (!q.isClaimed()) {
+      if (!Q.isClaimed()) {
         (0, s.ZDy)(async () => {
           let {
             default: e
@@ -166,7 +167,7 @@ let D = function(e) {
         });
         return
       }
-      if (!q.verified) {
+      if (!Q.verified) {
         (0, s.ZDy)(async () => {
           let {
             default: e
@@ -182,24 +183,24 @@ let D = function(e) {
         });
         return
       }
-      let a = ee ? null === (o = $.subscription_trial) || void 0 === o ? void 0 : o.id : null,
+      let a = et ? null === (o = ee.subscription_trial) || void 0 === o ? void 0 : o.id : null,
         c = O.Qqv.BUY;
       null != a ? c = O.Qqv.TRIAL : t && (c = O.Qqv.GIFT), (0, f.Z)({
         isGift: t,
         initialPlanId: null,
         subscriptionTier: i,
-        analyticsLocations: J,
+        analyticsLocations: $,
         analyticsObject: N({
           object: O.qAy.BUTTON_CTA,
           objectType: c
-        }, U),
+        }, G),
         trialId: a,
-        postSuccessGuild: k,
-        onClose: j,
-        applicationId: V,
-        giftMessage: F,
-        confirmationFooter: Y,
-        planSelectBanner: K
+        postSuccessGuild: j,
+        onClose: U,
+        applicationId: F,
+        giftMessage: Z,
+        confirmationFooter: K,
+        planSelectBanner: z
       })
     };
   if (D) return (0, r.jsxs)(s.zxk, C(N({
@@ -207,9 +208,9 @@ let D = function(e) {
     className: P,
     innerClassName: S.premiumSubscribeButton,
     color: s.zxk.Colors.BRAND_INVERTED,
-    onClick: en
-  }, z), {
-    children: [G && (0, r.jsx)(s.SrA, {
+    onClick: er
+  }, q), {
+    children: [B && (0, r.jsx)(s.SrA, {
       size: "md",
       color: "currentColor",
       className: S.premiumIcon
@@ -223,8 +224,8 @@ let D = function(e) {
     className: P,
     innerClassName: S.giftButton,
     color: s.zxk.Colors.PRIMARY,
-    onClick: en
-  }, z), {
+    onClick: er
+  }, q), {
     children: [(0, r.jsx)(s.OgN, {
       size: "md",
       color: "currentColor",
@@ -234,47 +235,47 @@ let D = function(e) {
       children: null != L ? L : I.NW.string(I.t.PEjaCw)
     })]
   }));
-  let er = I.NW.string(I.t["2pG5GR"]),
-    ei = null != X ? (0, E.Af)(X) : null,
-    eo = null != ei ? E.ZP.getPremiumType(ei.planId) : null == q ? void 0 : q.premiumType,
-    ea = i === y.Si.TIER_2 && null != eo && [y.p9.TIER_0, y.p9.TIER_1].includes(eo);
-  ea && (er = I.NW.string(I.t.IJI7ys));
-  let es = null != X && E.ZP.isSwitchingPlansDisabled(X) || null != X && (0, v.o)("PremiumSubscribeButton", q, et),
-    el = null != X && X.status !== O.O0b.ACCOUNT_HOLD && !(0, p.Q0)(X.planId) && !ea || es,
-    ec = el ? null != Z ? Z : w({
+  let ei = null != M ? M : I.NW.string(I.t["2pG5GR"]),
+    eo = null != J ? (0, E.Af)(J) : null,
+    ea = null != eo ? E.ZP.getPremiumType(eo.planId) : null == Q ? void 0 : Q.premiumType,
+    es = i === y.Si.TIER_2 && null != ea && [y.p9.TIER_0, y.p9.TIER_1].includes(ea);
+  es && (ei = I.NW.string(I.t.IJI7ys));
+  let el = null != J && E.ZP.isSwitchingPlansDisabled(J) || null != J && (0, v.o)("PremiumSubscribeButton", Q, en),
+    ec = null != J && J.status !== O.O0b.ACCOUNT_HOLD && !(0, p.Q0)(J.planId) && !es || el,
+    eu = ec ? null != H ? H : w({
       ctaSubscriptionSkuId: i,
-      currentPremiumType: eo,
-      isSwitchingDisabled: es,
-      subscription: X
+      currentPremiumType: ea,
+      isSwitchingDisabled: el,
+      subscription: J
     }) : null;
 
-  function eu(e) {
+  function ed(e) {
     var t, n;
     return (0, r.jsxs)(s.gtL, C(N({
-      disabled: el,
-      onClick: en,
+      disabled: ec,
+      onClick: er,
       innerClassName: S.premiumSubscribeButton,
       color: i === y.Si.TIER_1 ? s.zxk.Colors.PRIMARY : s.zxk.Colors.GREEN,
       size: A,
-      className: H,
+      className: W,
       wrapperClassName: o()({
-        [S.tier2Gradient]: W && i === y.Si.TIER_2,
-        [S.tier1Gradient]: W && i === y.Si.TIER_1
+        [S.tier2Gradient]: Y && i === y.Si.TIER_2,
+        [S.tier1Gradient]: Y && i === y.Si.TIER_1
       }, P),
-      pauseAnimation: !Q || B
-    }, z, e), {
-      children: [G && (0, r.jsx)(s.SrA, {
+      pauseAnimation: !X || V
+    }, q, e), {
+      children: [B && (0, r.jsx)(s.SrA, {
         size: "md",
         color: "currentColor",
-        className: o()(S.premiumIcon, M)
+        className: o()(S.premiumIcon, k)
       }), (0, r.jsx)("span", {
         className: o()(S.buttonText, x),
-        children: null !== (n = null !== (t = null == ec ? void 0 : ec.disabledButtonText) && void 0 !== t ? t : L) && void 0 !== n ? n : er
+        children: null !== (n = null !== (t = null == eu ? void 0 : eu.disabledButtonText) && void 0 !== t ? t : L) && void 0 !== n ? n : ei
       })]
     }))
   }
-  return (null == ec ? void 0 : ec.disabledButtonTooltipText) != null ? (0, r.jsx)(s.ua7, {
-    text: ec.disabledButtonTooltipText,
-    children: eu
-  }) : eu()
+  return (null == eu ? void 0 : eu.disabledButtonTooltipText) != null ? (0, r.jsx)(s.ua7, {
+    text: eu.disabledButtonTooltipText,
+    children: ed
+  }) : ed()
 }

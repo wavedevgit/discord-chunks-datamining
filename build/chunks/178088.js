@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   k: () => S
 }), n(47120);
@@ -21,9 +21,9 @@ var r = n(200651),
   v = n(400445),
   y = n(153209),
   x = n(956961),
-  j = n(903672),
+  E = n(903672),
   O = n(711165),
-  E = n(946443),
+  j = n(946443),
   N = n(264233),
   C = n(981631),
   I = n(388032);
@@ -112,7 +112,7 @@ function S(e) {
             setTab: D,
             badgeState: T,
             closePopout: W
-          }) : R === l.X.MENTIONS ? (0, r.jsx)(j.Z, {
+          }) : R === l.X.MENTIONS ? (0, r.jsx)(E.Z, {
             setTab: D,
             onJump: z,
             badgeState: T,
@@ -133,12 +133,12 @@ function S(e) {
             setTab: D,
             closePopout: W
           }) : (0, r.jsx)(a.SV, {
-            fallback: (0, r.jsx)(E.h, {
+            fallback: (0, r.jsx)(j.h, {
               setTab: D,
               closePopout: W,
               badgeState: T
             }),
-            children: (0, r.jsx)(E.Z, {
+            children: (0, r.jsx)(j.Z, {
               setTab: D,
               onJump: z,
               showTutorial: L,

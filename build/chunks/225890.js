@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => b
 }), n(47120), n(301563);
@@ -24,7 +24,7 @@ function b(e) {
   } = e, [n, b, v] = t.split("-"), {
     guildScheduledEvent: y,
     guild: x,
-    channel: j,
+    channel: E,
     isMember: O
   } = (0, a.cj)([f.ZP, u.Z, c.Z, d.ZP, p.default], () => {
     var e, t;
@@ -42,7 +42,7 @@ function b(e) {
     (null == y ? void 0 : y.id) == null && h.Z.fetchGuildEvent(n, b), m.Z.getGuildEventUserCounts(n, b, null != v ? [v] : []), m.Z.getGuildEventsForCurrentUser(n)
   }, [b, n, null == y ? void 0 : y.id, v]), (0, r.jsx)(g.ZP, {
     guild: x,
-    channel: j,
+    channel: E,
     guildScheduledEvent: y,
     isMember: O,
     onAcceptInstantInvite: _.dG,
@@ -50,7 +50,7 @@ function b(e) {
       if ((0, l.n)(n)) {
         (0, o.hk)(n);
         return
-      }(null == j ? void 0 : j.isGuildStageVoice()) ? (0, s.Cq)(j) : (null == j ? void 0 : j.isGuildVoice()) && h.Z.joinVoiceEvent(j.guild_id, j.id)
+      }(null == E ? void 0 : E.isGuildStageVoice()) ? (0, s.Cq)(E) : (null == E ? void 0 : E.isGuildVoice()) && h.Z.joinVoiceEvent(E.guild_id, E.id)
     },
     recurrenceId: v
   })

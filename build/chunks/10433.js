@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   Z: () => C
 }), n(47120);
@@ -21,9 +21,9 @@ var r = n(200651),
   v = n(471518),
   y = n(370210),
   x = n(258971),
-  j = n(981631),
+  E = n(981631),
   O = n(49898),
-  E = n(388032),
+  j = n(388032),
   N = n(997408);
 
 function C(e) {
@@ -42,7 +42,7 @@ function C(e) {
   }), [D, L] = i.useState(!1), M = i.useCallback(e => {
     e && L(!0)
   }, []), W = (0, c.O)(M), F = i.useCallback(() => {
-    _.default.track(j.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
+    _.default.track(E.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
       application_id: I,
       device_platform: a.tq ? "mobile_web" : "desktop_web",
       sender_user_id: S.author.id,
@@ -55,7 +55,7 @@ function C(e) {
   }, [I]), i.useEffect(() => {
     D && Z === y.M.FETCHED && F()
   }, [D, Z, F]), i.useEffect(() => {
-    D && w && _.default.track(j.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
+    D && w && _.default.track(E.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
       device_platform: a.tq ? "mobile_web" : "desktop_web",
       sender_user_id: S.author.id,
       guild_id: R,
@@ -63,7 +63,7 @@ function C(e) {
     })
   }, [D, R, w, S.author.id, S.channel_id]);
   let U = e => {
-    _.default.track(j.rMx.APP_DIRECTORY_PROFILE_EMBED_APP_INFO_CLICKED, {
+    _.default.track(E.rMx.APP_DIRECTORY_PROFILE_EMBED_APP_INFO_CLICKED, {
       application_id: I,
       device_platform: a.tq ? "mobile_web" : "desktop_web",
       clicked_section: e,
@@ -89,7 +89,7 @@ function C(e) {
   if (w) return (0, r.jsxs)(m.Z, {
     containerRef: W,
     children: [(0, r.jsx)(m.Z.Header, {
-      text: E.NW.string(E.t.j4KtLS)
+      text: j.NW.string(j.t.j4KtLS)
     }), (0, r.jsx)(m.Z.Body, {
       children: (0, r.jsxs)("div", {
         className: N.invalidBody,
@@ -97,8 +97,8 @@ function C(e) {
           expired: !0
         }), (0, r.jsx)(m.Z.Info, {
           expired: !0,
-          title: E.NW.string(E.t.NaQLEx),
-          children: E.NW.string(E.t["0H5OT0"])
+          title: j.NW.string(j.t.NaQLEx),
+          children: j.NW.string(j.t["0H5OT0"])
         })]
       })
     })]
@@ -106,7 +106,7 @@ function C(e) {
   if (null == A || Z === y.M.FETCHING) return (0, r.jsxs)(m.Z, {
     containerRef: W,
     children: [(0, r.jsx)(m.Z.Header, {
-      text: E.NW.string(E.t.m9hXGR)
+      text: j.NW.string(j.t.m9hXGR)
     }), (0, r.jsx)(m.Z.Body, {
       resolving: !0
     })]
@@ -125,7 +125,7 @@ function C(e) {
   return (0, r.jsxs)(m.Z, {
     containerRef: W,
     children: [(0, r.jsx)(m.Z.Header, {
-      text: E.NW.string(E.t.KC1oZ2)
+      text: j.NW.string(j.t.KC1oZ2)
     }), (0, r.jsxs)(m.Z.Body, {
       children: [(0, r.jsxs)("div", {
         className: N.applicationInfoContainer,
@@ -147,7 +147,7 @@ function C(e) {
               width: 16,
               height: 16,
               className: N.guildCountIcon
-            }), E.NW.format(E.t["6IW6Wl"], {
+            }), j.NW.format(j.t["6IW6Wl"], {
               guildCount: B.format(G)
             })]
           })
@@ -164,7 +164,7 @@ function C(e) {
           })
         },
         color: m.Z.Button.Colors.GREEN,
-        children: E.NW.string(E.t.NgXl3N)
+        children: j.NW.string(j.t.NgXl3N)
       })]
     })]
   })

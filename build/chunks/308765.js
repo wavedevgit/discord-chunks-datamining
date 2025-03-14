@@ -232,9 +232,9 @@ let i = {
     actions: ["VOICE_CHANNEL_SELECT", "LOGOUT", "STAGE_MUSIC_MUTE", "STAGE_MUSIC_PLAY", "VOICE_STATE_UPDATES", "AUDIO_SET_OUTPUT_VOLUME", "AUDIO_TOGGLE_SELF_DEAF"],
     inlineRequire: () => n(485287).ZP
   },
-  SubscriptionRemindersManager: {
+  SubscriptionManager: {
     actions: ["POST_CONNECTION_OPEN"],
-    inlineRequire: () => n(177082).Z
+    inlineRequire: () => n(892264).Z
   },
   VoiceFiltersCatalogManager: {
     actions: ["POST_CONNECTION_OPEN", "VOICE_FILTER_CATALOG_FETCH_SUCCESS", "VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME"],

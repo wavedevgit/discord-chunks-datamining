@@ -1,4 +1,4 @@
-/** Chunk was on 39251 **/
+/** Chunk was on 76030 **/
 n.d(t, {
   y6: () => m
 }), n(47120);
@@ -22,9 +22,9 @@ let p = e => {
       initialized: v,
       loading: y,
       items: x,
-      hasMore: j,
+      hasMore: E,
       cursor: O,
-      errored: E
+      errored: j
     } = (0, i.cj)([c.Z], () => ({
       initialized: c.Z.initialized,
       loading: c.Z.loading,
@@ -44,8 +44,8 @@ let p = e => {
     }, [t, v]);
     let I = (0, o.Z)();
     r.useEffect(() => () => {
-      p ? !I() && (E || x.length > 100) && (0, s.jF)() : n && x.length > 100 && (0, s.jF)()
-    }, [n, x, p, I, E]), r.useEffect(() => {
+      p ? !I() && (j || x.length > 100) && (0, s.jF)() : n && x.length > 100 && (0, s.jF)()
+    }, [n, x, p, I, j]), r.useEffect(() => {
       let e = h && t;
       (!v || e) && (0, s.jk)({
         limit: null != f ? f : m ? 8 : 20,
@@ -55,7 +55,7 @@ let p = e => {
       })
     }, [v, h, t, m, N, C, f]);
     let S = r.useCallback(async e => {
-      !g.current && v && j && null != O && (e || !E) && (g.current = !0, b(!0), await (0, s.jk)({
+      !g.current && v && E && null != O && (e || !j) && (g.current = !0, b(!0), await (0, s.jk)({
         after: O,
         with_mentions: m,
         roles_filter: N,
@@ -64,18 +64,18 @@ let p = e => {
       }, () => {
         g.current = !1
       }), b(!1))
-    }, [v, j, O, E, m, N, C]);
+    }, [v, E, O, j, m, N, C]);
     return {
       initialized: v,
       loading: y,
       items: x,
-      hasMore: j,
+      hasMore: E,
       loadMore: S,
       loadingMore: _,
       setReadNotifItemToAcked: e => {
         e.acked || (e.acked = !0)
       },
-      errored: E
+      errored: j
     }
   },
   m = () => {
