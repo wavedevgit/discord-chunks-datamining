@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: ec98b07991cd9ec8
+  Original File Name: 1515b1580dc53a4c
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -970,12 +970,11 @@
 }
 
 .footer__7c901 {
-    justify-content: space-between;
-    padding-left: 8px
+    justify-content: space-between
 }
 
-.visual-refresh .content__7c901,.visual-refresh .footer__7c901 {
-    padding: 0 var(--space-32) var(--space-32) var(--space-32)
+html:not(.visual-refresh) .footer__7c901 {
+    padding-left: var(--space-8)
 }
 
 .listItemContainer__7c901 {
@@ -5870,4 +5869,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100px
 }
 
-/*# sourceMappingURL=ec98b07991cd9ec8.css.map*/
+/*# sourceMappingURL=1515b1580dc53a4c.css.map*/

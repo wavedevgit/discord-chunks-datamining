@@ -1,6 +1,6 @@
 /**
   Module ID: 3205
-  Original File Name: d7496e7ffae6d8b4
+  Original File Name: 54f264eb68e57c83
 **/
 .popoutContainer_a6cedd {
     display: flex;
@@ -4720,6 +4720,19 @@ div:has(>div>.modal_d7831d) {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
+}
+
+.emojiRow_e7d73e .emojiAliasInputContainer_e7d73e {
+    display: flex
+}
+
+.emojiRow_e7d73e .emojiAliasInputContainer_e7d73e:after,.emojiRow_e7d73e .emojiAliasInputContainer_e7d73e:before {
+    content: ":";
+    margin: 0 -5px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    z-index: 1
 }
 
 .emojiRow_e7d73e:focus-within .emojiAliasInput_e7d73e .emojiInput_e7d73e,.emojiRow_e7d73e:hover .emojiAliasInput_e7d73e .emojiInput_e7d73e {
@@ -13850,4 +13863,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=d7496e7ffae6d8b4.css.map*/
+/*# sourceMappingURL=54f264eb68e57c83.css.map*/

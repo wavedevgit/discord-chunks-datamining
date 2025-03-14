@@ -50,14 +50,14 @@ function E(e) {
   let R = (0, l.e7)([m.Z], () => m.Z.getHighestRole(T), [T]),
     Z = (0, l.e7)([m.Z], () => !m.Z.isRoleHigher(T, R, P)),
     D = i.useRef(null),
-    A = (0, l.e7)([b.Z], () => b.Z.getProps().integrations),
-    k = {
+    k = (0, l.e7)([b.Z], () => b.Z.getProps().integrations),
+    A = {
       role: P,
       editRoleId: n
     },
-    W = i.useRef(k);
+    W = i.useRef(A);
   if (i.useEffect(() => {
-      W.current = k
+      W.current = A
     }), i.useEffect(() => {
       var e, t;
       let {
@@ -118,7 +118,7 @@ function E(e) {
         role: P,
         locked: Z,
         setSelectedSection: S,
-        integrations: null != A ? A : void 0
+        integrations: null != k ? k : void 0
       });
       break;
     case O.ZI.MEMBERS:

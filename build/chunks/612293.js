@@ -70,7 +70,7 @@ function C(e) {
   } = (0, p.yV)(), d = a.find(e => {
     var t, r;
     return e.skuId === (null == n ? void 0 : null === (r = n.collectibles) || void 0 === r ? void 0 : null === (t = r.nameplate) || void 0 === t ? void 0 : t.skuId)
-  }), [g, h] = (0, i.useState)(null != d ? d : null), [f, x] = (0, i.useState)(null != d), E = (0, i.useCallback)(() => {
+  }), [g, h] = (0, i.useState)(null != d ? d : void 0), [f, x] = (0, i.useState)(null != d), E = (0, i.useCallback)(() => {
     t(), (0, m.mK)({
       analyticsLocations: [u.Z.USER_SETTINGS_NAMEPLATE_MODAL],
       analyticsSource: u.Z.USER_SETTINGS_NAMEPLATE_MODAL,
@@ -123,7 +123,7 @@ function C(e) {
           children: N.NW.string(N.t.ABkyQk)
         })
       }) : (0, r.jsx)(o.zxk, {
-        disabled: null == g,
+        disabled: void 0 === g,
         onClick: () => {
           (0, c.KP)(g), t()
         },
@@ -140,8 +140,8 @@ function O(e) {
     available: i,
     purchased: s,
     onShop: a
-  } = e;
-  return null == (0, l.e7)([b.default], () => b.default.getCurrentUser()) ? null : (0, r.jsxs)(o.u2D, {
+  } = e, c = (0, l.e7)([b.default], () => b.default.getCurrentUser());
+  return null == c ? null : (0, r.jsxs)(o.u2D, {
     className: _.inventory,
     children: [(0, r.jsx)(o.Text, {
       className: _.inventoryTitle,
@@ -152,7 +152,7 @@ function O(e) {
       className: _.inventoryControls,
       children: [(0, r.jsxs)(o.P3F, {
         className: _.inventoryControlsButton,
-        onClick: () => n(null),
+        onClick: () => n(null == c.nameplate ? void 0 : null),
         children: [(0, r.jsx)(o.t6m, {}), (0, r.jsx)(o.Text, {
           variant: "text-xs/semibold",
           children: N.NW.string(N.t["3i+W8/"])

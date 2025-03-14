@@ -1,6 +1,6 @@
 /**
   Module ID: 28202
-  Original File Name: 0c049f7298cbef01
+  Original File Name: 324728657e333f9f
 **/
 .header__7c901 {
     padding: 24px 16px 0;
@@ -40,12 +40,11 @@
 }
 
 .footer__7c901 {
-    justify-content: space-between;
-    padding-left: 8px
+    justify-content: space-between
 }
 
-.visual-refresh .content__7c901,.visual-refresh .footer__7c901 {
-    padding: 0 var(--space-32) var(--space-32) var(--space-32)
+html:not(.visual-refresh) .footer__7c901 {
+    padding-left: var(--space-8)
 }
 
 .listItemContainer__7c901 {
@@ -91,4 +90,4 @@
     color: var(--interactive-normal)
 }
 
-/*# sourceMappingURL=0c049f7298cbef01.css.map*/
+/*# sourceMappingURL=324728657e333f9f.css.map*/

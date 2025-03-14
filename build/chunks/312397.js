@@ -36,8 +36,8 @@ var r = n(200651),
   R = n(63063),
   Z = n(434404),
   D = n(999382),
-  A = n(67734),
-  k = n(375263),
+  k = n(67734),
+  A = n(375263),
   W = n(586382),
   L = n(594980),
   M = n(515025),
@@ -446,7 +446,7 @@ class ee extends i.PureComponent {
             children: Y.NW.format(Y.t.vBcWUl, {
               articleURL: R.Z.getArticleURL(H.BhN.GUILD_BANNER_SPLASH)
             })
-          }), (0, r.jsx)(A.F, {
+          }), (0, r.jsx)(k.F, {
             guild: e,
             canManageGuild: t,
             buttonClassName: K.marginTop16
@@ -454,7 +454,7 @@ class ee extends i.PureComponent {
         }), (0, r.jsx)(N.Z.Child, {
           wrap: !0,
           basis: "50%",
-          children: (0, r.jsx)(k.O, {
+          children: (0, r.jsx)(A.O, {
             guild: e,
             canManageGuild: t
           })

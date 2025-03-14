@@ -43,8 +43,8 @@ function y(e) {
     dropdownsAllowed: w
   } = (0, m.Ug)(n.id), R = (0, l.e7)([h.Z], () => h.Z.editedDefaultChannelIds), Z = w ? j.qm : j.M$, {
     drag: D,
-    dragSourcePosition: A,
-    drop: k,
+    dragSourcePosition: k,
+    drop: A,
     setIsDraggable: W
   } = (0, c.Z)({
     type: "ONBOARDING_PROMPT_CARD",
@@ -73,11 +73,11 @@ function y(e) {
       onBlur: () => B(!1),
       onMouseLeave: () => B(!1),
       className: a()(v.container, {
-        [v.dropIndicatorBefore]: null != A && x < A,
-        [v.dropIndicatorAfter]: null != A && x > A,
+        [v.dropIndicatorBefore]: null != k && x < k,
+        [v.dropIndicatorAfter]: null != k && x > k,
         [v.containerFocused]: U
       }),
-      ref: e => D(k(e)),
+      ref: e => D(A(e)),
       children: [(0, r.jsx)("div", {
         className: v.dragContainer,
         onMouseEnter: () => W(!0),
@@ -125,11 +125,11 @@ function y(e) {
       onFocus: () => B(!0),
       onBlur: () => B(!1),
       className: a()(v.container, {
-        [v.dropIndicatorBefore]: null != A && x < A,
-        [v.dropIndicatorAfter]: null != A && x > A,
+        [v.dropIndicatorBefore]: null != k && x < k,
+        [v.dropIndicatorAfter]: null != k && x > k,
         [v.containerFocused]: U
       }),
-      ref: e => D(k(e)),
+      ref: e => D(A(e)),
       children: [(0, r.jsx)("div", {
         className: v.dragContainer,
         onMouseEnter: () => W(!0),

@@ -157,11 +157,11 @@ function f(e) {
       }
       y(!1), s(e)
     }, [t, O, s, p]),
-    A = i.useCallback(e => {
+    k = i.useCallback(e => {
       let n = t.trim().length <= 0;
       u.ye.has(e.key) ? (e.preventDefault(), e.stopPropagation(), D(!0)) : "Backspace" === e.key && n && (e.preventDefault(), e.stopPropagation(), D(!0))
     }, [D, t]),
-    k = i.useCallback(e => {
+    A = i.useCallback(e => {
       let t = e.metaKey || e.ctrlKey;
       g(t), t ? e.preventDefault() : y(!0), e.stopPropagation()
     }, [g]),
@@ -182,7 +182,7 @@ function f(e) {
       children: [(0, r.jsxs)(o.P3F, {
         tag: "div",
         onBlur: () => D(!1),
-        onClick: k,
+        onClick: A,
         ignoreKeyPress: !0,
         onMouseEnter: () => P(!0),
         onMouseLeave: () => P(!1),
@@ -198,7 +198,7 @@ function f(e) {
           }),
           ref: N,
           onChange: Z,
-          onKeyDownCapture: A,
+          onKeyDownCapture: k,
           value: t,
           style: {
             width: R > 0 ? R : "calc(".concat(t.length, "ch + 10px)")

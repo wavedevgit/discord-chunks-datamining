@@ -114,8 +114,8 @@ function D(e, t) {
     W = null != L ? L.ownerId : t.userId,
     Y = null != L ? null == M ? void 0 : M.getVoiceParticipantType() : Z ? "sender" : "receiver";
   y = null != t.streamKey && null != L ? Z ? null == M ? void 0 : null === (o = M.getOutboundStats()) || void 0 === o ? void 0 : o.find(e => e.quality === v.y7) : null == M ? void 0 : M.getInboundStats(L.ownerId) : Z ? null !== (b = i().maxBy(null !== (a = null == M ? void 0 : M.getOutboundStats()) && void 0 !== a ? a : [], e => e.num_frames)) && void 0 !== b ? b : null : null != t.userId ? null == M ? void 0 : M.getInboundStats(t.userId) : null, (0, p.q)().then(n => {
-    var r, i, o, a, s, l, c, u, p, g, v, b, P, w, k, K, z, q, Q, X, J, $, ee, et, en, er, ei, eo, ea, es, el, ec, eu, ed, ef, e_, ep, eh, em, eg, eE, ev, eb, ey;
-    let eO = {
+    var r, i, o, a, s, l, c, u, p, g, v, b, P, w, k, K, z, q, Q, X, J, $, ee, et, en, er, ei, eo, ea, es, el, ec, eu, ed, ef, e_, ep, eh, em, eg, eE, ev, eb, ey, eO, eI, eS, eT, eN;
+    let eA = {
       error_name: e.valueOf(),
       error_code: O.errorCode,
       error_severity: O.severity,
@@ -158,14 +158,19 @@ function D(e, t) {
       gpu_brand: null !== (ep = null == n ? void 0 : n.gpu_brand) && void 0 !== ep ? ep : null,
       gpu_count: null !== (eh = null == n ? void 0 : n.gpu_count) && void 0 !== eh ? eh : null,
       gpu_memory: null !== (em = null == n ? void 0 : n.gpu_memory) && void 0 !== em ? em : null,
-      cpu_usage: null !== (eg = m.Z.getCurrentCPUUsagePercent()) && void 0 !== eg ? eg : null,
-      memory_usage: null !== (eE = m.Z.getCurrentMemoryUsageKB()) && void 0 !== eE ? eE : null,
+      gpu_device_vendor_id: null !== (eg = null == n ? void 0 : n.gpu_device_vendor_id) && void 0 !== eg ? eg : null,
+      gpu_device_device_id: null !== (eE = null == n ? void 0 : n.gpu_device_device_id) && void 0 !== eE ? eE : null,
+      gpu_device_sub_sys_id: null !== (ev = null == n ? void 0 : n.gpu_device_sub_sys_id) && void 0 !== ev ? ev : null,
+      gpu_device_revision: null !== (eb = null == n ? void 0 : n.gpu_device_revision) && void 0 !== eb ? eb : null,
+      gpu_driver_version: null !== (ey = null == n ? void 0 : n.gpu_driver_version) && void 0 !== ey ? ey : null,
+      cpu_usage: null !== (eO = m.Z.getCurrentCPUUsagePercent()) && void 0 !== eO ? eO : null,
+      memory_usage: null !== (eI = m.Z.getCurrentMemoryUsageKB()) && void 0 !== eI ? eI : null,
       outbound_bitrate_estimate: S(H),
       inbound_bitrate_estimate: T(H),
       hardware_enabled: d.Z.getHardwareEncoding(),
-      audio_input_device_name: null !== (ev = t.audioInputDeviceName) && void 0 !== ev ? ev : null === (s = d.Z.getInputDevices()[d.Z.getInputDeviceId()]) || void 0 === s ? void 0 : s.name,
-      audio_output_device_name: null !== (eb = t.audioOutputDeviceName) && void 0 !== eb ? eb : null === (l = d.Z.getOutputDevices()[d.Z.getOutputDeviceId()]) || void 0 === l ? void 0 : l.name,
-      video_device_name: null !== (ey = t.videoDeviceName) && void 0 !== ey ? ey : null === (c = d.Z.getVideoDevices()[d.Z.getVideoDeviceId()]) || void 0 === c ? void 0 : c.name,
+      audio_input_device_name: null !== (eS = t.audioInputDeviceName) && void 0 !== eS ? eS : null === (s = d.Z.getInputDevices()[d.Z.getInputDeviceId()]) || void 0 === s ? void 0 : s.name,
+      audio_output_device_name: null !== (eT = t.audioOutputDeviceName) && void 0 !== eT ? eT : null === (l = d.Z.getOutputDevices()[d.Z.getOutputDeviceId()]) || void 0 === l ? void 0 : l.name,
+      video_device_name: null !== (eN = t.videoDeviceName) && void 0 !== eN ? eN : null === (c = d.Z.getVideoDevices()[d.Z.getVideoDeviceId()]) || void 0 === c ? void 0 : c.name,
       audio_subsystem: d.Z.getMediaEngine().getAudioSubsystem(),
       automatic_audio_subsystem: d.Z.getSettings().automaticAudioSubsystem,
       audio_layer: d.Z.getMediaEngine().getAudioLayer(),
@@ -180,7 +185,7 @@ function D(e, t) {
       input_volume: d.Z.getInputVolume(),
       output_volume: d.Z.getOutputVolume()
     };
-    h.default.track(E.rMx.AV_ERROR_REPORTED, eO)
+    h.default.track(E.rMx.AV_ERROR_REPORTED, eA)
   })
 }
 

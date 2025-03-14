@@ -1,4 +1,4 @@
-/** Chunk was on 20777 **/
+/** Chunk was on 94289 **/
 n.d(t, {
   Z: () => _
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   l = n(192379),
   a = n(525654),
   i = n.n(a),
-  o = n(748780),
-  s = n(94783);
+  s = n(748780),
+  o = n(94783);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -38,7 +38,7 @@ class u extends l.Component {
       x: e,
       y: t
     } = this.state;
-    "Firefox" !== i().name && (o.Z.animate(e, {
+    "Firefox" !== i().name && (s.Z.animate(e, {
       loop: !0,
       toValueMin: -74,
       toValueMax: 95,
@@ -46,7 +46,7 @@ class u extends l.Component {
       friction: 5,
       tension: 1,
       shouldLoop: this.shouldLoop
-    }), o.Z.animate(t, {
+    }), s.Z.animate(t, {
       loop: !0,
       toValueMin: -59,
       toValueMax: 75,
@@ -61,11 +61,11 @@ class u extends l.Component {
   }
   render() {
     return (0, r.jsxs)("div", {
-      className: s.searchIndexAnimation,
+      className: o.searchIndexAnimation,
       children: [(0, r.jsx)("div", {
-        className: s.searchIndexBackground
+        className: o.searchIndexBackground
       }), (0, r.jsxs)("svg", {
-        className: s.searchIndexForeground,
+        className: o.searchIndexForeground,
         width: "320",
         height: "280",
         children: [(0, r.jsx)("defs", {
@@ -83,9 +83,9 @@ class u extends l.Component {
             children: [(0, r.jsx)("mask", {
               id: "search-index-foreground-mask-b",
               fill: "#fff",
-              children: (0, r.jsx)(o.Z.use, {
+              children: (0, r.jsx)(s.Z.use, {
                 style: c(this.state),
-                className: s.mask,
+                className: o.mask,
                 xlinkHref: "#search-index-foreground-mask-a"
               })
             }), (0, r.jsxs)("g", {
@@ -347,8 +347,8 @@ class u extends l.Component {
                 strokeLinejoin: "round"
               })]
             })]
-          }), (0, r.jsxs)(o.Z.g, {
-            className: s.magnifyingGlass,
+          }), (0, r.jsxs)(s.Z.g, {
+            className: o.magnifyingGlass,
             style: c(this.state),
             children: [(0, r.jsx)("path", {
               fill: "#C9D2F0",
@@ -393,8 +393,8 @@ class u extends l.Component {
   }
   constructor(...e) {
     super(...e), E(this, "state", {
-      x: new o.Z.Value(0),
-      y: new o.Z.Value(0)
+      x: new s.Z.Value(0),
+      y: new s.Z.Value(0)
     }), E(this, "_isMounted", !1), E(this, "shouldLoop", () => this._isMounted)
   }
 }

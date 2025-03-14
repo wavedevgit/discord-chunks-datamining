@@ -1,6 +1,6 @@
 /**
   Module ID: 7011
-  Original File Name: dad96834e4c3d0c6
+  Original File Name: 40f47e832d82d7b0
 **/
 .header__7c901 {
     padding: 24px 16px 0;
@@ -40,12 +40,11 @@
 }
 
 .footer__7c901 {
-    justify-content: space-between;
-    padding-left: 8px
+    justify-content: space-between
 }
 
-.visual-refresh .content__7c901,.visual-refresh .footer__7c901 {
-    padding: 0 var(--space-32) var(--space-32) var(--space-32)
+html:not(.visual-refresh) .footer__7c901 {
+    padding-left: var(--space-8)
 }
 
 .listItemContainer__7c901 {
@@ -369,4 +368,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=dad96834e4c3d0c6.css.map*/
+/*# sourceMappingURL=40f47e832d82d7b0.css.map*/

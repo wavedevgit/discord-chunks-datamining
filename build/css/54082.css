@@ -1,6 +1,6 @@
 /**
   Module ID: 54082
-  Original File Name: 50d16183815457bd
+  Original File Name: 4eb0021c03deb5ab
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -10210,59 +10210,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     height: 18px
 }
 
-.container__4f074 {
-    display: flex;
-    flex: 1 1 auto;
-    position: relative
-}
-
-.container__4f074,.container__4f074 *,.input__4f074 {
-    box-sizing: border-box
-}
-
-.input__4f074 {
-    font-size: 16px;
-    line-height: 32px;
-    height: 32px;
-    padding: 0 6px;
-    border: none;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: pre;
-    border-radius: 3px;
-    -webkit-app-region: no-drag;
-    background: transparent;
-    color: var(--text-normal)
-}
-
-.input__4f074:focus,.outer__4f074:hover .input__4f074 {
-    box-shadow: inset 0 0 0 1px var(--background-tertiary)
-}
-
-.input__4f074:focus {
-    background-color: var(--background-secondary)
-}
-
-.visual-refresh .input__4f074 {
-    border-radius: var(--radius-sm)
-}
-
-.visual-refresh .outer__4f074:hover .input__4f074 {
-    outline: 1px solid var(--border-strong);
-    background-color: var(--background-mod-subtle);
-    box-shadow: none
-}
-
-.visual-refresh .input__4f074:focus,.visual-refresh .outer__4f074:hover .input__4f074:focus {
-    background-color: var(--input-background);
-    outline: 1px solid var(--border-normal);
-    box-shadow: none
-}
-
-.visual-refresh.full-motion .input__4f074 {
-    transition: background-color .2s ease
-}
-
 .container__754bd {
     flex: 1 1 auto;
     display: flex;
@@ -15445,4 +15392,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=50d16183815457bd.css.map*/
+/*# sourceMappingURL=4eb0021c03deb5ab.css.map*/
