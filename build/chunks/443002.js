@@ -24,7 +24,7 @@ var r = n(200651),
   y = n(383881),
   O = n(981631),
   I = n(388032),
-  S = n(862814);
+  S = n(37325);
 let T = function(e) {
   let {
     analyticsLocation: t,

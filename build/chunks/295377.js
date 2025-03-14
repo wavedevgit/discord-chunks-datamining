@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => P
 }), n(47120), n(266796);
@@ -16,13 +16,13 @@ var r = n(200651),
   p = n(626135),
   h = n(358085),
   f = n(88658),
-  x = n(660243),
-  b = n(981631),
+  b = n(660243),
+  x = n(981631),
   N = n(703115),
   _ = n(526761),
-  E = n(162003),
+  E = n(329720),
   j = n(388032),
-  C = n(92267);
+  C = n(100737);
 
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -47,9 +47,9 @@ function v(e) {
   var t, n;
   let {
     guildId: l
-  } = e, g = (0, c.Q3)("GuildItem"), h = (0, a.e7)([m.Z], () => m.Z.getGuild(l)), x = (0, a.e7)([u.Z], () => u.Z.getMemberCount(l)), v = !d.SE.useSetting().includes(l), S = (0, o.dQu)(o.TVs.modules.guildbar.AVATAR_SIZE), T = (0, s.Ie)(null != l ? l : b.lds), I = i.useCallback(e => {
+  } = e, g = (0, c.Q3)("GuildItem"), h = (0, a.e7)([m.Z], () => m.Z.getGuild(l)), b = (0, a.e7)([u.Z], () => u.Z.getMemberCount(l)), v = !d.SE.useSetting().includes(l), S = (0, o.dQu)(o.TVs.modules.guildbar.AVATAR_SIZE), T = (0, s.Ie)(null != l ? l : x.lds), I = i.useCallback(e => {
     let t = (0, f._o)();
-    e ? t.delete(l) : t.add(l), d.SE.updateSetting([...t]), p.default.track(b.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+    e ? t.delete(l) : t.add(l), d.SE.updateSetting([...t]), p.default.track(x.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: N.Y.RESTRICT_GUILD_ACTIVITY_STATUS_TOGGLE,
       ingress: _.f4.USER_SETTINGS_ACTIVITY_PRIVACY,
       guild_id: l
@@ -90,7 +90,7 @@ function v(e) {
         variant: "text-xs/normal",
         className: C.guildSubtitle,
         children: j.NW.formatToPlainString(E.Z.obBqMj, {
-          count: null != x ? x : 0
+          count: null != b ? b : 0
         })
       })]
     }), (0, r.jsx)("div", {
@@ -178,7 +178,7 @@ function T() {
   return (0, r.jsx)(o.hjN, {
     tag: o.RB0.H5,
     title: j.NW.string(E.Z["+RndDg"]),
-    children: (0, r.jsx)(x.r, {})
+    children: (0, r.jsx)(b.r, {})
   })
 }
 
@@ -240,8 +240,8 @@ function A() {
     children: (0, r.jsx)(o.ToO, {
       type: o.ToO.Types.PRIMARY,
       body: j.NW.format(j.t.xvCsx8, {
-        termsLink: b.EYA.TERMS,
-        privacyLink: b.EYA.PRIVACY
+        termsLink: x.EYA.TERMS,
+        privacyLink: x.EYA.PRIVACY
       })
     })
   })

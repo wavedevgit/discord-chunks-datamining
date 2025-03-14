@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => ef
 }), n(47120);
@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(100527),
   h = n(906732),
   f = n(70097),
-  x = n(433811),
-  b = n(214852),
+  b = n(464824),
+  x = n(214852),
   N = n(594174),
   _ = n(78839),
   E = n(626135),
@@ -58,7 +58,7 @@ var r = n(200651),
   en = n(981631),
   er = n(869783),
   ei = n(388032),
-  es = n(719056),
+  es = n(658249),
   ea = n(499317),
   el = n(865215),
   eo = n(735035),
@@ -128,15 +128,15 @@ let eg = e => {
       isFullscreen: W,
       entrypoint: U
     } = e;
-    (0, b.z)(x.X);
+    (0, x.z)(b.X);
     let G = U === et.EZ.ApplicationStoreHome,
       F = i.useRef(null),
       H = i.useRef(null),
       ee = (0, l.e7)([g.Z], () => g.Z.useReducedMotion),
       ef = (0, m.ZP)(),
-      ex = (0, c.wj)(ef),
-      eb = N.default.getCurrentUser(),
-      eN = (0, C.I5)(eb),
+      eb = (0, c.wj)(ef),
+      ex = N.default.getCurrentUser(),
+      eN = (0, C.I5)(ex),
       e_ = (0, v.xP)("PremiumMarketingHome") && !eN && G,
       [eE, ej] = i.useState(!1),
       [eC, eO] = i.useState(!1),
@@ -186,7 +186,7 @@ let eg = e => {
             variant: e_ ? k.NN.MARKETING_PAGE_V2 : k.NN.DEFAULT,
             showWumpus: !e_,
             tier0CTAButton: e_ ? (0, r.jsx)(J.Z, {
-              forceInverted: ex && !e_,
+              forceInverted: eb && !e_,
               showIcon: !1,
               subscriptionTier: et.Si.TIER_0,
               className: es.marginTopForButtons,
@@ -226,7 +226,7 @@ let eg = e => {
       eX = (0, r.jsxs)("div", {
         className: a()(es.container, {
           [es.settingsContainer]: !W,
-          [es.containerBackground]: e_ && ex
+          [es.containerBackground]: e_ && eb
         }),
         "data-cy": "tier-0-marketing-page",
         children: [e_ && (0, r.jsx)("div", {
@@ -259,7 +259,7 @@ let eg = e => {
               subscriptionTier: ew,
               isFullscreen: W || eV,
               entrypoint: U,
-              isDarkMode: ex
+              isDarkMode: eb
             }) : (0, r.jsx)(V.ZP, {
               subscriptionTier: ew,
               isFullscreen: W || eV,
@@ -273,7 +273,7 @@ let eg = e => {
                 [es.noTopPaddingOverride]: null != eR
               }),
               entrypoint: U,
-              isDarkMode: ex
+              isDarkMode: eb
             })
           }), !e_ && !0 === eF && (0, r.jsx)(A.W, {
             isFullScreen: W,
@@ -363,7 +363,7 @@ let eg = e => {
           },
           children: (0, r.jsx)(q.Z, {
             isFooterVisible: eC,
-            isDarkMode: ex,
+            isDarkMode: eb,
             isReducedMotion: ee
           })
         })]

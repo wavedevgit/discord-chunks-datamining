@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => ei
 }), n(47120), n(733860);
@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(493773),
   h = n(714338),
   f = n(857595),
-  x = n(607070),
-  b = n(627845),
+  b = n(607070),
+  x = n(627845),
   N = n(514361),
   _ = n(600164),
   E = n(313201),
@@ -42,8 +42,8 @@ var r = n(200651),
   M = n(921944),
   U = n(959517),
   V = n(388032),
-  G = n(910472),
-  F = n(467025);
+  G = n(658749),
+  F = n(802138);
 
 function H(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -292,7 +292,7 @@ class et extends i.Component {
       children: (0, r.jsx)(u.R94, {
         type: u.R94.Types.DEFAULT,
         className: G.forcedColorsWarning,
-        children: (0, b.b)() ? V.NW.format(V.t.Jae48P, {
+        children: (0, x.b)() ? V.NW.format(V.t.Jae48P, {
           onClick: () => {
             g.Z.open(B.oAB.ACCESSIBILITY)
           }
@@ -657,16 +657,16 @@ function ei() {
   (0, p.ZP)(() => {
     er(o.z.CLIENT_THEMES_SETTINGS_BADGE), er(o.z.DEKSTOP_CUSTOM_APP_ICON_BADGE), er(o.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK)
   });
-  let c = (0, l.cj)([D.Z, Z.ZP, x.Z, P.default, N.Z], () => {
+  let c = (0, l.cj)([D.Z, Z.ZP, b.Z, P.default, N.Z], () => {
       var e, t;
       return {
         theme: D.Z.theme,
-        useForcedColors: x.Z.useForcedColors,
+        useForcedColors: b.Z.useForcedColors,
         useSystemTheme: Z.ZP.useSystemTheme,
         darkSidebar: D.Z.darkSidebar,
-        fontSize: x.Z.fontSize,
-        zoom: x.Z.zoom,
-        messageGroupSpacing: x.Z.messageGroupSpacing,
+        fontSize: b.Z.fontSize,
+        zoom: b.Z.zoom,
+        messageGroupSpacing: b.Z.messageGroupSpacing,
         displayCompactAvatars: Z.ZP.displayCompactAvatars,
         isStaff: null !== (t = null === (e = P.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff) && void 0 !== t && t,
         gradientPreset: N.Z.gradientPreset

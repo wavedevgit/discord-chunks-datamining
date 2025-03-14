@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => W
 }), n(266796), n(627341);
@@ -16,17 +16,17 @@ var r = n(200651),
   p = n(880257),
   h = n(631885),
   f = n(895328),
-  x = n(568671),
-  b = n(419821),
+  b = n(568671),
+  x = n(419821),
   N = n(367515),
   _ = n(250285),
   E = n(292352),
   j = n(134612),
-  C = n(155517),
+  C = n(635357),
   O = n(388032),
-  v = n(807661),
-  S = n(597685),
-  T = n(467025),
+  v = n(828859),
+  S = n(635312),
+  T = n(802138),
   I = n(926895);
 
 function y(e) {
@@ -121,7 +121,7 @@ function P() {
         children: O.NW.format(C.Z.yMnoDg, {
           link: "https://support.discord.com/hc/articles/14155060633623"
         })
-      }), e ? null : (0, r.jsx)(x.Z, {})]
+      }), e ? null : (0, r.jsx)(b.Z, {})]
     }), (0, r.jsx)("img", {
       className: S.bannerArt,
       src: I,
@@ -143,7 +143,7 @@ function R(e) {
     return null == a ? null : (0, r.jsx)(_.Z, {
       userId: a.id,
       isLast: l,
-      children: () => t === E.ne.ACTIVE ? (0, r.jsx)(b.u, {
+      children: () => t === E.ne.ACTIVE ? (0, r.jsx)(x.u, {
         user: a
       }) : (0, r.jsx)(N.B, {
         user: a

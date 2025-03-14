@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => p
 }), n(47120);
@@ -12,7 +12,7 @@ var r = n(200651),
   d = n(906732),
   u = n(171368),
   m = n(981631),
-  g = n(230076);
+  g = n(88814);
 let p = e => {
   let {
     userId: t,
@@ -20,16 +20,16 @@ let p = e => {
     isLast: s,
     className: p
   } = e, [h, f] = i.useState(!1), {
-    analyticsLocations: x
-  } = (0, d.ZP)(), b = i.useCallback(() => {
+    analyticsLocations: b
+  } = (0, d.ZP)(), x = i.useCallback(() => {
     (0, u.openUserProfileModal)({
       userId: t,
-      sourceAnalyticsLocations: x,
+      sourceAnalyticsLocations: b,
       analyticsLocation: {
         section: m.jXE.FAMILY_CENTER
       }
     })
-  }, [t, x]), N = () => {
+  }, [t, b]), N = () => {
     f(!0)
   }, _ = () => {
     f(!1)
@@ -70,7 +70,7 @@ let p = e => {
           }),
           onMouseEnter: N,
           onMouseLeave: _,
-          onClick: b
+          onClick: x
         }, e), i = i = {
           children: n(h)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

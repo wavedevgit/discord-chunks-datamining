@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   B: () => _
 });
@@ -14,11 +14,11 @@ var r = n(200651),
   m = n(933970),
   g = n(340453),
   p = n(292352),
-  h = n(155517),
+  h = n(635357),
   f = n(388032),
-  x = n(78648);
+  b = n(944921);
 
-function b(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,7 +58,7 @@ function _(e) {
       let {
         default: e
       } = await n.e("59716").then(n.bind(n, 275370));
-      return n => (0, r.jsx)(e, N(b({}, n), {
+      return n => (0, r.jsx)(e, N(x({}, n), {
         currentUser: E,
         otherUser: t
       }))
@@ -68,7 +68,7 @@ function _(e) {
       let {
         default: e
       } = await n.e("958").then(n.bind(n, 4526));
-      return n => (0, r.jsx)(e, N(b({}, n), {
+      return n => (0, r.jsx)(e, N(x({}, n), {
         currentUser: E,
         otherUser: t
       }))
@@ -78,36 +78,36 @@ function _(e) {
       let {
         default: e
       } = await n.e("69015").then(n.bind(n, 247265));
-      return n => (0, r.jsx)(e, N(b({}, n), {
+      return n => (0, r.jsx)(e, N(x({}, n), {
         currentUser: E,
         otherUser: t
       }))
     })
   }, [E, t]);
   return (0, r.jsxs)("div", {
-    className: x.container,
+    className: b.container,
     children: [(0, r.jsx)("div", {
-      className: x.details,
+      className: b.details,
       children: (0, r.jsx)(g.Z, {
         otherUser: t,
         status: p.ne.PENDING
       })
     }), (0, r.jsx)("div", {
-      className: x.actions,
+      className: b.actions,
       children: s ? (0, r.jsx)(m.Z, {
         icon: o.Dio,
-        className: x.__invalid_actionDeny,
+        className: b.__invalid_actionDeny,
         tooltip: f.NW.string(h.Z.e5iHmZ),
         onClick: O
       }) : (0, r.jsxs)(r.Fragment, {
         children: [_ ? null : (0, r.jsx)(m.Z, {
           icon: o.dz2,
-          className: x.__invalid_actionAccept,
+          className: b.__invalid_actionAccept,
           tooltip: f.NW.string(h.Z.krWQZG),
           onClick: j
         }), (0, r.jsx)(m.Z, {
           icon: o.Dio,
-          className: x.__invalid_actionDeny,
+          className: b.__invalid_actionDeny,
           tooltip: f.NW.string(h.Z.bBDeND),
           onClick: C
         })]

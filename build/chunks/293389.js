@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => L
 }), n(47120);
@@ -16,18 +16,18 @@ var r = n(200651),
   p = n(320724),
   h = n(297700),
   f = n(77498),
-  x = n(283595),
-  b = n(626135),
+  b = n(283595),
+  x = n(626135),
   N = n(251625),
   _ = n(358085),
   E = n(210887),
   j = n(981631),
   C = n(388032),
-  O = n(752472),
-  v = n(235077),
-  S = n(214919),
-  T = n(834030),
-  I = n(467025);
+  O = n(362952),
+  v = n(423308),
+  S = n(612064),
+  T = n(951565),
+  I = n(802138);
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -116,7 +116,7 @@ function Z(e) {
     rawGame: n,
     nowPlaying: s = !1,
     isOverride: p
-  } = e, N = (0, l.cj)([g.ZP, f.Z, x.Z], () => (0, g.FZ)(n, [g.ZP, f.Z, x.Z])), [_, E] = i.useState(!1), [v, I] = i.useState(null !== (t = N.name) && void 0 !== t ? t : "???"), P = a()(S.flexCenter, {
+  } = e, N = (0, l.cj)([g.ZP, f.Z, b.Z], () => (0, g.FZ)(n, [g.ZP, f.Z, b.Z])), [_, E] = i.useState(!1), [v, I] = i.useState(null !== (t = N.name) && void 0 !== t ? t : "???"), P = a()(S.flexCenter, {
     [O.game]: !s,
     [O.activeGame]: s,
     [T.card]: !s,
@@ -130,7 +130,7 @@ function Z(e) {
   function Z() {
     if (_) return;
     let e = null != N.id ? f.Z.getDetectableGame(N.id) : null;
-    b.default.track(j.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
+    x.default.track(j.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
       application_id: null == e ? void 0 : e.id,
       game_name: N.name
     }), (0, c.showToast)((0, c.createToast)(C.NW.formatToPlainString(C.t["6klMOj"], {

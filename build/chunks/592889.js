@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => S
 }), n(47120);
@@ -16,14 +16,14 @@ var r = n(200651),
   p = n(906732),
   h = n(975298),
   f = n(600164),
-  x = n(210887),
-  b = n(301766),
+  b = n(210887),
+  x = n(301766),
   N = n(509545),
   _ = n(74538),
   E = n(937615),
   j = n(474936),
   C = n(388032),
-  O = n(343119);
+  O = n(332550);
 
 function v(e) {
   let {
@@ -32,7 +32,7 @@ function v(e) {
     transitionState: i,
     onClose: s,
     analyticsLocation: a
-  } = e, l = (0, c.e7)([x.Z], () => x.Z.theme), {
+  } = e, l = (0, c.e7)([b.Z], () => b.Z.theme), {
     analyticsLocations: h
   } = (0, p.ZP)(g.Z.SUBSCRIPTION_CANCEL_DOWNGRADE_MODAL);
   async function j() {
@@ -59,7 +59,7 @@ function v(e) {
       })]
     }), (0, r.jsx)(u.hzk, {
       className: O.modalBody,
-      children: (0, b.Q0)(t.planId) ? C.NW.format(C.t.GMp54O, {
+      children: (0, x.Q0)(t.planId) ? C.NW.format(C.t.GMp54O, {
         downgradedPlan: _.ZP.getDisplayName(n.planId),
         existingRate: T
       }) : C.NW.format(C.t["vx/NZ2"], {

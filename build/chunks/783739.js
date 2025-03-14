@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => T
 });
@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(771845),
   h = n(594174),
   f = n(314884),
-  x = n(74538),
-  b = n(199778),
+  b = n(74538),
+  x = n(199778),
   N = n(296533),
   _ = n(901750),
   E = n(112863),
@@ -25,12 +25,12 @@ var r = n(200651),
   C = n(912152),
   O = n(615603),
   v = n(474936),
-  S = n(925470);
+  S = n(482397);
 
 function T(e) {
   let {
     premiumSubscription: t
-  } = e, n = (0, s.e7)([f.Z], () => f.Z.boostSlots), T = i.useMemo(() => Object.values(n), [n]), I = (0, s.e7)([h.default], () => h.default.getCurrentUser()), y = x.ZP.isPremium(I, v.p9.TIER_2), A = (0, s.e7)([g.Z], () => g.Z.affinities), P = (0, s.e7)([p.ZP], () => p.ZP.getFlattenedGuildIds()), R = A.length > 0 || P.length > 0, D = T.length > 0, Z = i.useMemo(() => T.filter(e => null != e.premiumGuildSubscription), [T]), w = Z.length > 0, k = T.length > Z.length, W = (0, s.e7)([m.Z], () => m.Z.getCurrentUserAppliedBoosts()), {
+  } = e, n = (0, s.e7)([f.Z], () => f.Z.boostSlots), T = i.useMemo(() => Object.values(n), [n]), I = (0, s.e7)([h.default], () => h.default.getCurrentUser()), y = b.ZP.isPremium(I, v.p9.TIER_2), A = (0, s.e7)([g.Z], () => g.Z.affinities), P = (0, s.e7)([p.ZP], () => p.ZP.getFlattenedGuildIds()), R = A.length > 0 || P.length > 0, D = T.length > 0, Z = i.useMemo(() => T.filter(e => null != e.premiumGuildSubscription), [T]), w = Z.length > 0, k = T.length > Z.length, W = (0, s.e7)([m.Z], () => m.Z.getCurrentUserAppliedBoosts()), {
     fractionalState: L
   } = (0, a.Z)({
     forceFetch: !0
@@ -48,7 +48,7 @@ function T(e) {
       hasBoostPerk: V,
       hasGuildAffinitiesOrInGuild: R,
       subscriptionIsPausedOrPausePending: M
-    }), (0, r.jsx)(b.Z, {
+    }), (0, r.jsx)(x.Z, {
       hide: k,
       containerClassName: S.FPContainer,
       pillClassName: S.FPPill,

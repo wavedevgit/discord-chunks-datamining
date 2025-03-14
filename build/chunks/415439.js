@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   BV: () => j,
   FW: () => C,
@@ -19,8 +19,8 @@ var r = n(442837),
   p = n(973616),
   h = n(592125),
   f = n(626135),
-  x = n(823379),
-  b = n(728345),
+  b = n(823379),
+  x = n(728345),
   N = n(812206),
   _ = n(981631);
 async function E(e, t, n) {
@@ -29,7 +29,7 @@ async function E(e, t, n) {
   if (null == r) try {
     var s;
     if (r = null === (s = N.Z.getApplication(e.id)) || void 0 === s ? void 0 : s.bot, null == r) {
-      let t = await (0, b.UM)(e.id);
+      let t = await (0, x.UM)(e.id);
       e = t, r = p.ZP.createFromServer(t).bot
     }
   } catch (e) {
@@ -103,7 +103,7 @@ function O() {
     includeAuthorizedAppsAndFetch: !1
   });
   return {
-    frecentApps: e.map(e => e.application).filter(x.lm),
+    frecentApps: e.map(e => e.application).filter(b.lm),
     loading: t
   }
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => g
 }), n(47120);
@@ -11,7 +11,7 @@ var r = n(200651),
   c = n(219039),
   d = n(979264),
   u = n(308083),
-  m = n(52009);
+  m = n(754053);
 
 function g(e) {
   let {
@@ -22,8 +22,8 @@ function g(e) {
     guildId: p,
     guildName: h,
     guildIcon: f,
-    guildIconSize: x,
-    memberCount: b
+    guildIconSize: b,
+    memberCount: x
   } = e, N = i.useRef(null), [_, E] = i.useState(!1);
   return i.useEffect(() => {
     let e = N.current;
@@ -36,7 +36,7 @@ function g(e) {
         guildId: p,
         guildName: h,
         guildIcon: f,
-        iconSize: x,
+        iconSize: b,
         className: m.guildPrefixIcon,
         animate: !1
       }), (0, r.jsxs)("div", {
@@ -80,8 +80,8 @@ function g(e) {
               Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
             }), t))
           }
-        }), null != b && (0, r.jsx)(c.Z, {
-          count: b
+        }), null != x && (0, r.jsx)(c.Z, {
+          count: x
         })]
       })]
     }), (0, r.jsx)("div", {

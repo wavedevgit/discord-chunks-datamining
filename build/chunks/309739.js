@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => B
 }), n(47120), n(566702);
@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(410030),
   h = n(726542),
   f = n(116841),
-  x = n(295377),
-  b = n(921801),
+  b = n(295377),
+  x = n(921801),
   N = n(553795),
   _ = n(430824),
   E = n(63063),
@@ -29,8 +29,8 @@ var r = n(200651),
   T = n(726985),
   I = n(981631),
   y = n(388032),
-  A = n(992847),
-  P = n(467025);
+  A = n(107310),
+  P = n(802138);
 
 function R(e) {
   let t = () => {
@@ -100,7 +100,7 @@ function D() {
       value: d.E5.OFF,
       label: y.NW.string(y.t.MIgNPD)
     }];
-  return (0, r.jsx)(b.F, {
+  return (0, r.jsx)(x.F, {
     setting: T.s6.ACTIVITY_PRIVACY_STATUS,
     children: (0, r.jsxs)(m.hjN, {
       children: [(0, r.jsx)(m.vwX, {
@@ -144,7 +144,7 @@ function D() {
 function Z() {
   let e = S.cP.useSetting(),
     t = S.Ou.useSetting();
-  return (0, r.jsx)(b.F, {
+  return (0, r.jsx)(x.F, {
     setting: T.s6.ACTIVITY_PRIVACY_RICH_PRESENCE,
     children: (0, r.jsxs)(m.hjN, {
       className: P.marginBottom40,
@@ -168,7 +168,7 @@ function Z() {
 }
 
 function w() {
-  return (0, r.jsx)(b.F, {
+  return (0, r.jsx)(x.F, {
     setting: T.s6.ACTIVITY_PRIVACY_TOS,
     children: (0, r.jsx)(m.hjN, {
       className: P.marginBottom40,
@@ -246,7 +246,7 @@ function L() {
       let e = n.trim().toLowerCase();
       return "" === e ? t : t.filter(t => o()(e, h.Z.get(t.type).name.toLowerCase()))
     }, [t, n]);
-  return 0 === t.length ? null : (0, r.jsx)(b.F, {
+  return 0 === t.length ? null : (0, r.jsx)(x.F, {
     setting: T.s6.ACTIVITY_PRIVACY_STATUS_DISPLAY,
     children: (0, r.jsxs)(m.hjN, {
       className: P.marginBottom40,
@@ -277,7 +277,7 @@ function B(e) {
   }), {
     showPerGuildActivityStatusSetting: s
   } = (0, f.c)("activity privacy tab");
-  return s ? (0, r.jsx)(x.Z, {}) : (0, r.jsxs)(m.hjN, {
+  return s ? (0, r.jsx)(b.Z, {}) : (0, r.jsxs)(m.hjN, {
     className: t,
     tag: m.RB0.H1,
     title: n ? y.NW.string(y.t.Cq98yM) : null,

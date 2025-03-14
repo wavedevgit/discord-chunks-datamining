@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => P
 }), n(47120), n(411104);
@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(925329),
   h = n(981632),
   f = n(314897),
-  x = n(82142),
-  b = n(246946),
+  b = n(82142),
+  x = n(246946),
   N = n(509545),
   _ = n(55563),
   E = n(259580),
@@ -26,7 +26,7 @@ var r = n(200651),
   O = n(296848),
   v = n(474936),
   S = n(388032),
-  T = n(682918);
+  T = n(264634);
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -249,19 +249,19 @@ class A extends i.PureComponent {
     })
   }
 }
-let P = l.ZP.connectStores([_.Z, b.Z, x.Z, m.Z, N.Z, f.default], e => {
+let P = l.ZP.connectStores([_.Z, x.Z, b.Z, m.Z, N.Z, f.default], e => {
   let {
     skuId: t,
     subscriptionPlanId: n,
     giftStyle: r
   } = e, i = _.Z.get(t);
   if (null == i) throw Error("SKU was unavailable while rendering gift.");
-  let s = x.Z.getForGifterSKUAndPlan(f.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === r);
+  let s = b.Z.getForGifterSKUAndPlan(f.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === r);
   return {
     sku: i,
-    hideCodes: b.Z.enabled,
-    isFetching: x.Z.getUserGiftCodesFetchingForSKUAndPlan(t, n),
-    loadedAt: x.Z.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
+    hideCodes: x.Z.enabled,
+    isFetching: b.Z.getUserGiftCodesFetchingForSKUAndPlan(t, n),
+    loadedAt: b.Z.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
     application: m.Z.getApplication(i.applicationId),
     subscriptionPlan: null != n ? (0, O.oE)(n) : null,
     giftCodes: s

@@ -1,6 +1,6 @@
 /**
   Module ID: 59644
-  Original File Name: 4929b25ad2969ee6
+  Original File Name: 43c1713ddf8442cf
 **/
 .partnerBranding__83420 {
     align-items: center;
@@ -119,18 +119,12 @@
 }
 
 .progressBar_ef0e9b:after {
-    background-color: currentColor;
-    border-radius: 4px;
     content: "";
-    height: 100%;
     opacity: .2;
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 100%
 }
 
-.progressBarFill_ef0e9b {
+.progressBar_ef0e9b:after,.progressBarFill_ef0e9b {
     background-color: currentColor;
     border-radius: 4px;
     height: 100%;
@@ -998,4 +992,4 @@
     margin-top: 0
 }
 
-/*# sourceMappingURL=4929b25ad2969ee6.css.map*/
+/*# sourceMappingURL=43c1713ddf8442cf.css.map*/

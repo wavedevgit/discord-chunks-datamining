@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => I
 });
@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(390954),
   h = n(89057),
   f = n(921801),
-  x = n(246946),
-  b = n(594174),
+  b = n(246946),
+  x = n(594174),
   N = n(351402),
   _ = n(853872),
   E = n(78839),
@@ -25,7 +25,7 @@ var r = n(200651),
   C = n(726985),
   O = n(981631),
   v = n(388032),
-  S = n(811624);
+  S = n(700292);
 class T extends i.PureComponent {
   componentDidMount() {
     c.Z.wait(() => {
@@ -87,12 +87,12 @@ class T extends i.PureComponent {
 }
 
 function I() {
-  let e = (0, l.cj)([j.default, N.Z, _.Z, b.default, x.Z, E.ZP], () => {
+  let e = (0, l.cj)([j.default, N.Z, _.Z, x.default, b.Z, E.ZP], () => {
     let e = E.ZP.getPremiumTypeSubscription(),
-      t = b.default.getCurrentUser();
+      t = x.default.getCurrentUser();
     return a()(null != t, "UserSettingsBilling: currentUser cannot be undefined"), {
       locale: j.default.locale,
-      hide: x.Z.enabled,
+      hide: b.Z.enabled,
       isClaimed: t.isClaimed(),
       isVerified: t.verified,
       premiumSubscription: e,

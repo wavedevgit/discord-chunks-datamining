@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => p
 });
@@ -10,7 +10,7 @@ var r = n(200651),
   o = n(981631),
   c = n(474936),
   d = n(388032),
-  u = n(294116);
+  u = n(724958);
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -50,8 +50,8 @@ function p(e) {
     onClose: p,
     hasCancelableGuildBoostSlot: h,
     premiumSubscription: f,
-    onSelect: x,
-    fractionalState: b
+    onSelect: b,
+    fractionalState: x
   } = e, N = {
     transfer: {
       label: null != t.premiumGuildSubscription ? d.NW.string(d.t["PR0n//"]) : d.NW.string(d.t["+fmEYG"]),
@@ -75,18 +75,18 @@ function p(e) {
       break;
     case o.O0b.PAUSE_PENDING:
     case o.O0b.PAUSED:
-      b === c.a$.NONE && (N.transfer.disabled = !0, N.transfer.subtext = d.NW.string(d.t.LiLRRU)), N.cancel.subtext = d.NW.string(d.t["1ywaWF"]), N.cancel.disabled = !0, N.uncancel.disabled = !0
+      x === c.a$.NONE && (N.transfer.disabled = !0, N.transfer.subtext = d.NW.string(d.t.LiLRRU)), N.cancel.subtext = d.NW.string(d.t["1ywaWF"]), N.cancel.disabled = !0, N.uncancel.disabled = !0
   }
-  b !== c.a$.NONE && (N.cancel.subtext = d.NW.string(d.t.dq4vq6), N.cancel.disabled = !0, N.uncancel.disabled = !0);
-  let _ = i.useMemo(() => f.isPausedOrPausePending && b === c.a$.NONE ? (0, r.jsx)(s.sNh, {
+  x !== c.a$.NONE && (N.cancel.subtext = d.NW.string(d.t.dq4vq6), N.cancel.disabled = !0, N.uncancel.disabled = !0);
+  let _ = i.useMemo(() => f.isPausedOrPausePending && x === c.a$.NONE ? (0, r.jsx)(s.sNh, {
     id: "manage-subscription",
     label: d.NW.string(d.t.obRG6e),
     action: () => a.Z.open(o.oAB.SUBSCRIPTIONS),
     iconLeft: s.WGR,
     className: u.manageSubscription
-  }) : null, [b, f]);
+  }) : null, [x, f]);
   return (0, r.jsxs)(s.v2r, {
-    onSelect: x,
+    onSelect: b,
     navId: "subscription-context",
     variant: "fixed",
     "aria-label": d.NW.string(d.t.ogxXGh),

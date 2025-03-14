@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => E
 }), n(266796);
@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(831964),
   h = n(981631),
   f = n(869783),
-  x = n(388032),
-  b = n(172543);
+  b = n(388032),
+  x = n(743413);
 
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -42,7 +42,7 @@ let _ = e => {
       name: t,
       title: n,
       description: s,
-      descriptionCta: x,
+      descriptionCta: b,
       previewImage: N,
       videoUrl: _,
       shouldLoadVideo: E,
@@ -54,25 +54,25 @@ let _ = e => {
       let t;
       switch (e) {
         case p.dm.EMOJIS:
-          t = b.emojisBackground;
+          t = x.emojisBackground;
           break;
         case p.dm.REFERRAL_PROGRAM:
-          t = b.referralProgramBackground;
+          t = x.referralProgramBackground;
           break;
         case p.dm.NO_LIMITS:
-          t = b.noLimitsBackground;
+          t = x.noLimitsBackground;
           break;
         case p.dm.NEW_APP_STYLES:
-          t = b.newStylesBackground;
+          t = x.newStylesBackground;
           break;
         case p.dm.YOUR_SPACE:
-          t = b.yourSpaceBackground;
+          t = x.yourSpaceBackground;
           break;
         case p.dm.SERVER_PROFILES:
-          t = b.serverProfilesBackground;
+          t = x.serverProfilesBackground;
           break;
         case p.dm.SHOW_YOUR_STYLE:
-          t = b.yourStyleBackground
+          t = x.yourStyleBackground
       }
       return t
     }(t), A = (0, d.ZP)(), P = (0, o.wj)(A), R = P ? c.Ttl.WHITE : c.Ttl.BRAND, D = (0, l.debounce)(() => {
@@ -85,30 +85,30 @@ let _ = e => {
       null == T.current || O || (I.current = T.current.currentTime, T.current.pause())
     }, k = () => (0, r.jsxs)("div", {
       className: a()({
-        [b.whatsNewTextBoxOuter]: !C,
-        [b.compactTextBox]: C
+        [x.whatsNewTextBoxOuter]: !C,
+        [x.compactTextBox]: C
       }),
       children: [(0, r.jsx)(c.X6q, {
         variant: "heading-xxl/extrabold",
         color: "header-primary",
         className: a()({
-          [b.whatsNewBoxHeader]: !C,
-          [b.compactBoxHeader]: C
+          [x.whatsNewBoxHeader]: !C,
+          [x.compactBoxHeader]: C
         }),
         children: n
       }), (0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "text-muted",
-        className: b.whatsNewBoxDescription,
+        className: x.whatsNewBoxDescription,
         children: s
-      }), null != x && null != v && (0, r.jsx)(c.zxk, {
+      }), null != b && null != v && (0, r.jsx)(c.zxk, {
         look: c.iLD.OUTLINED,
         color: R,
-        className: a()(b.whatsNewBoxButton, P ? b.whatsNewBoxButtonWhite : b.whatsNewBoxButtonBrand),
+        className: a()(x.whatsNewBoxButton, P ? x.whatsNewBoxButtonWhite : x.whatsNewBoxButtonBrand),
         onClick: () => {
           D(), v()
         },
-        children: x
+        children: b
       })]
     }), W = e => {
       let {
@@ -116,8 +116,8 @@ let _ = e => {
       } = e;
       return (0, r.jsx)("div", {
         className: a()({
-          [b.whatsNewArtContainer]: !C,
-          [b.compactBoxArtContainer]: C
+          [x.whatsNewArtContainer]: !C,
+          [x.compactBoxArtContainer]: C
         }),
         children: (0, r.jsx)(u.Z, {
           playsInline: !0,
@@ -126,9 +126,9 @@ let _ = e => {
           poster: N,
           loop: !0,
           className: a()({
-            [b.perkBoxVideo]: !C,
-            [b.leftSideArt]: t && !C,
-            [b.compactBoxVideo]: C
+            [x.perkBoxVideo]: !C,
+            [x.leftSideArt]: t && !C,
+            [x.compactBoxVideo]: C
           }),
           ref: T,
           children: (0, r.jsx)("source", {
@@ -140,8 +140,8 @@ let _ = e => {
     }, L = j % 2 == 0;
     return (0, r.jsx)("div", {
       className: a()(y, {
-        [b.whatsNewBoxContainer]: !C,
-        [b.compactBoxContainer]: C
+        [x.whatsNewBoxContainer]: !C,
+        [x.compactBoxContainer]: C
       }),
       onMouseEnter: Z,
       onFocus: Z,
@@ -166,24 +166,24 @@ let _ = e => {
       isReducedMotion: s
     } = e, l = Object.values((0, p.ZP)(i)), o = i ? Object.values((0, p.__)()) : null;
     return (0, r.jsxs)("div", {
-      className: a()(b.boxBackdrop, t),
+      className: a()(x.boxBackdrop, t),
       children: [(0, r.jsx)(c.X6q, {
-        className: b.whatsNewHeader,
+        className: x.whatsNewHeader,
         variant: "display-md",
         color: "header-primary",
-        children: i ? x.NW.string(x.t.EnzW2N) : x.NW.string(x.t.LRmNAg)
+        children: i ? b.NW.string(b.t.EnzW2N) : b.NW.string(b.t.LRmNAg)
       }), l.map((e, t) => (0, r.jsx)(_, N({
         shouldLoadVideo: n,
         isReducedMotion: s,
         index: t
       }, e), e.name)), null != o && (0, r.jsxs)("div", {
-        className: b.compactBoxOuterContainer,
+        className: x.compactBoxOuterContainer,
         children: [o.map((e, t) => (0, r.jsx)(_, N({
           shouldLoadVideo: n,
           isReducedMotion: s,
           index: t
         }, e), e.name)), (0, r.jsx)("div", {
-          className: b.whatsNewSideGradient
+          className: x.whatsNewSideGradient
         })]
       })]
     })

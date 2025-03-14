@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => j
 }), n(47120);
@@ -16,10 +16,10 @@ var r = n(200651),
   p = n(304761),
   h = n(865427),
   f = n(358085),
-  x = n(210887),
-  b = n(981631),
+  b = n(210887),
+  x = n(981631),
   N = n(388032),
-  _ = n(145389);
+  _ = n(658570);
 let E = [{
   label: "Latin alphabet",
   value: "aBcDeFgHiJkLmNoPqRsTuVwXyZ"
@@ -47,8 +47,8 @@ function j() {
   let [e, t] = i.useState(Math.round(window.outerWidth / window.innerWidth * 100)), {
     platformZoom: n,
     theme: s
-  } = (0, l.cj)([x.Z, g.Z], () => ({
-    theme: x.Z.theme,
+  } = (0, l.cj)([b.Z, g.Z], () => ({
+    theme: b.Z.theme,
     platformZoom: g.Z.zoom
   })), [j, C] = i.useState("upright"), O = ["normal", "medium", "semibold", "bold", "extrabold"], v = new Map([
     ["normal", 400],
@@ -129,10 +129,10 @@ function j() {
             orientation: "horizontal",
             options: [{
               name: N.NW.string(N.t.b8Cei4),
-              value: b.BRd.DARK
+              value: x.BRd.DARK
             }, {
               name: N.NW.string(N.t.K2sFfn),
-              value: b.BRd.LIGHT
+              value: x.BRd.LIGHT
             }],
             onChange: e => {
               (0, d.ZI)({

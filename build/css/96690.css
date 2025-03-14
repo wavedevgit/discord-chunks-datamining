@@ -1,6 +1,6 @@
 /**
   Module ID: 96690
-  Original File Name: c724d1ae2a034881
+  Original File Name: a8af1cabb0766aa4
 **/
 .container__270b2 {
     flex-direction: row;
@@ -175,11 +175,7 @@
     align-items: center
 }
 
-.button__6cf35 {
-    margin-left: 8px
-}
-
-.button__6cf35+.button__6cf35 {
+.button__6cf35,.button__6cf35+.button__6cf35 {
     margin-left: 8px
 }
 
@@ -445,4 +441,4 @@
     margin-top: 8px
 }
 
-/*# sourceMappingURL=c724d1ae2a034881.css.map*/
+/*# sourceMappingURL=a8af1cabb0766aa4.css.map*/

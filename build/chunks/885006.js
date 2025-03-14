@@ -1,23 +1,23 @@
-/** Chunk was on 69773 **/
-n.d(t, {
-  Z: () => r
-}), n(47120);
-var a = n(192379);
+/** Chunk was on 81146 **/
+r.d(t, {
+  Z: () => a
+}), r(47120);
+var n = r(192379);
 
-function r() {
+function a() {
   var e, t;
   arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-  let [n, r] = a.useState({
+  let [r, a] = n.useState({
     width: null !== (e = window.innerWidth) && void 0 !== e ? e : 1080,
     height: null !== (t = window.innerHeight) && void 0 !== t ? t : 1080
   });
-  return a.useLayoutEffect(() => {
+  return n.useLayoutEffect(() => {
     function e() {
-      r({
+      a({
         width: window.innerWidth,
         height: window.innerHeight
       })
     }
     return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
-  }, []), n
+  }, []), r
 }

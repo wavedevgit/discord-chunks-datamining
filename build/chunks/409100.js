@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => f
 });
@@ -13,7 +13,7 @@ var i = n(780384),
   d = n(197115),
   u = n(474936),
   m = n(388032),
-  g = n(246018);
+  g = n(459411);
 let p = e => {
     let {
       showTrialCTA: t,
@@ -38,8 +38,8 @@ let p = e => {
       forceInverted: t,
       subscriptionTier: n,
       hasActivePromotion: f = !1,
-      isPersistentCTA: x = !1,
-      useShorterCTA: b = !1,
+      isPersistentCTA: b = !1,
+      useShorterCTA: x = !1,
       confirmationFooter: N,
       planSelectBanner: _
     } = e, E = function(e, t) {
@@ -68,11 +68,11 @@ let p = e => {
       T = (0, o.Ng)(),
       I = null != v && n === v.sku_id,
       y = (null == O ? void 0 : O.trial_id) === u.a7,
-      A = f ? m.NW.string(m.t.J61px8) : null != T ? h(n, b, x, T.discount.amount) : p({
+      A = f ? m.NW.string(m.t.J61px8) : null != T ? h(n, x, b, T.discount.amount) : p({
         showTrialCTA: I,
         subscriptionTier: n,
         trialDurationCopy: S,
-        isPersistentCTA: x,
+        isPersistentCTA: b,
         shouldShowReferralTrialCopy: y,
         subscriptionTrial: v
       });

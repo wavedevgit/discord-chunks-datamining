@@ -1,6 +1,6 @@
 /**
   Module ID: 25496
-  Original File Name: a30c17d25b97d597
+  Original File Name: 8d6c86a88943f283
 **/
 .container__270b2 {
     flex-direction: row;
@@ -110,11 +110,7 @@
     align-items: center
 }
 
-.button__6cf35 {
-    margin-left: 8px
-}
-
-.button__6cf35+.button__6cf35 {
+.button__6cf35,.button__6cf35+.button__6cf35 {
     margin-left: 8px
 }
 
@@ -1202,4 +1198,4 @@
     background-color: initial
 }
 
-/*# sourceMappingURL=a30c17d25b97d597.css.map*/
+/*# sourceMappingURL=8d6c86a88943f283.css.map*/

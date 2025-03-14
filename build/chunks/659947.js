@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => T
 }), n(653041), n(47120);
@@ -16,9 +16,9 @@ var r = n(200651),
   p = n(914010),
   h = n(727785),
   f = n(388032),
-  x = n(736256);
+  b = n(855688);
 
-function b(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -84,11 +84,11 @@ function v() {
 
 function S() {
   return (0, r.jsx)("div", {
-    className: x.voiceListSearchEmpty,
+    className: b.voiceListSearchEmpty,
     children: (0, r.jsx)(a.Text, {
       variant: "text-md/medium",
       color: "text-muted",
-      className: x.noVoiceChannelSelected,
+      className: b.noVoiceChannelSelected,
       children: f.NW.string(f.t.zHjCd3)
     })
   })
@@ -103,9 +103,9 @@ function T(e) {
     o.current = s
   });
   let [d, u] = i.useState(null !== (n = null === (t = s.params) || void 0 === t ? void 0 : t.channelId) && void 0 !== n ? n : void 0), m = i.useCallback(() => {
-    (0, a.ZDy)(async () => e => (0, r.jsx)(I, N(b({}, e), {
+    (0, a.ZDy)(async () => e => (0, r.jsx)(I, N(x({}, e), {
       onSelect: e => {
-        u(e), l.Z.setKeybind(N(b({}, o.current), {
+        u(e), l.Z.setKeybind(N(x({}, o.current), {
           params: {
             channelId: e
           }
@@ -115,11 +115,11 @@ function T(e) {
   }, []);
   return (0, r.jsx)(a.hjN, {
     title: f.NW.string(f.t.q4JpMz),
-    className: x.channelIdSection,
+    className: b.channelIdSection,
     children: (0, r.jsxs)(c.Z, {
       align: c.Z.Align.STRETCH,
       children: [(0, r.jsx)("div", {
-        className: x.selectedVoiceChannel,
+        className: b.selectedVoiceChannel,
         children: (0, r.jsx)(y, {
           channelId: d
         })
@@ -140,7 +140,7 @@ function I(e) {
     transitionState: t,
     onClose: n,
     onSelect: l
-  } = e, c = i.useId(), b = i.useRef(null), {
+  } = e, c = i.useId(), x = i.useRef(null), {
     mouseFocusEnabled: N,
     enableMouseFocus: _,
     disableMouseFocus: C
@@ -193,7 +193,7 @@ function I(e) {
   i.useEffect(() => {
     let {
       current: e
-    } = b;
+    } = x;
     null == e || e.isItemVisible(0, P, !0) || e.scrollToIndex({
       section: 0,
       row: P
@@ -209,14 +209,14 @@ function I(e) {
       if ((null == t ? void 0 : t.type) === h.h8.VOICE_CHANNEL) return t.record.id
     })();
   return (0, r.jsx)("div", {
-    className: x.voiceModalContainer,
+    className: b.voiceModalContainer,
     onMouseMove: _,
     children: (0, r.jsxs)(a.Y0X, {
       transitionState: t,
       size: a.CgR.MEDIUM,
-      className: x.voiceModalRootContainer,
+      className: b.voiceModalRootContainer,
       children: [(0, r.jsx)("div", {
-        className: x.inputWrapper,
+        className: b.inputWrapper,
         children: (0, r.jsx)(a.oil, {
           value: T,
           onChange: I,
@@ -255,7 +255,7 @@ function I(e) {
         innerId: c,
         innerRole: "listbox",
         "aria-label": f.NW.string(f.t["+N3fW1"]),
-        ref: b,
+        ref: x,
         sections: [D],
         renderRow: function(e) {
           let {
@@ -279,7 +279,7 @@ function I(e) {
             },
             onFocus: () => R(t),
             children: null != a ? (0, r.jsx)("div", {
-              className: x.guildName,
+              className: b.guildName,
               children: a.name
             }) : null
           }, i.id)
@@ -288,7 +288,7 @@ function I(e) {
         renderFooter: O,
         sectionHeight: 0,
         rowHeight: 34,
-        className: x.voiceChannelList,
+        className: b.voiceChannelList,
         listHeaderHeight: 8,
         footerHeight: 16
       })]
@@ -318,7 +318,7 @@ function y(e) {
   return null == n ? (0, r.jsx)(a.Text, {
     variant: "text-md/medium",
     color: "text-muted",
-    className: x.noVoiceChannelSelected,
+    className: b.noVoiceChannelSelected,
     children: f.NW.string(f.t["/fYIKy"])
   }) : (0, r.jsx)(d.$W, {
     channel: n,
@@ -329,7 +329,7 @@ function y(e) {
     onMouseEnter: _,
     focused: !1,
     children: null != l ? (0, r.jsx)("div", {
-      className: x.guildName,
+      className: b.guildName,
       children: l.name
     }) : null
   })

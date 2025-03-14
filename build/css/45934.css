@@ -1,6 +1,6 @@
 /**
   Module ID: 45934
-  Original File Name: 98bf39f7949b14bb
+  Original File Name: 200957487e80981a
 **/
 .closeButton__47998 {
     position: absolute;
@@ -937,11 +937,7 @@
     filter: drop-shadow(var(--elevation-medium))
 }
 
-.avatar_c19a55.clickable_c19a55:active {
-    transform: translateY(1px)
-}
-
-.avatar_c19a55.clickable_c19a55:active+.avatarDecoration_c19a55 {
+.avatar_c19a55.clickable_c19a55:active,.avatar_c19a55.clickable_c19a55:active+.avatarDecoration_c19a55 {
     transform: translateY(1px)
 }
 
@@ -1048,11 +1044,7 @@
     white-space: nowrap
 }
 
-.mouse-mode .wrapper_c19a55:hover .timestampVisibleOnHover_c19a55 {
-    opacity: 1
-}
-
-.keyboard-mode .wrapper_c19a55:focus .timestampVisibleOnHover_c19a55 {
+.keyboard-mode .wrapper_c19a55:focus .timestampVisibleOnHover_c19a55,.mouse-mode .wrapper_c19a55:hover .timestampVisibleOnHover_c19a55 {
     opacity: 1
 }
 
@@ -1469,4 +1461,4 @@
     border-radius: 8px
 }
 
-/*# sourceMappingURL=98bf39f7949b14bb.css.map*/
+/*# sourceMappingURL=200957487e80981a.css.map*/

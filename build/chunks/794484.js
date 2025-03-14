@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => E
 }), n(47120);
@@ -16,9 +16,9 @@ var r = n(200651),
   p = n(119850),
   h = n(32173),
   f = n(391110),
-  x = n(75077),
-  b = n(320319),
-  N = n(380302);
+  b = n(75077),
+  x = n(320319),
+  N = n(730313);
 let _ = e => {
     let {
       showAllPerksButton: t,
@@ -70,14 +70,14 @@ let _ = e => {
       onScrollEnd: D,
       onCleanup: D
     });
-    let w = (0, x.Op)(A),
+    let w = (0, b.Op)(A),
       k = (0, h.Z)(),
-      W = (0, x.mN)(),
+      W = (0, b.mN)(),
       {
         fractionalState: L
       } = (0, c.Z)(),
       B = (0, d.W)(),
-      M = (0, x.sP)({
+      M = (0, b.sP)({
         perksCards: k,
         variant: s,
         isFullScreen: v,
@@ -127,7 +127,7 @@ let _ = e => {
           }),
           children: M.map((e, t) => {
             var n, i;
-            return (0, r.jsx)(b.Z, (n = function(e) {
+            return (0, r.jsx)(x.Z, (n = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   r = Object.keys(n);

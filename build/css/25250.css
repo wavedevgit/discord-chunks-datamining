@@ -1,6 +1,6 @@
 /**
   Module ID: 25250
-  Original File Name: e0d77bc5a5dba695
+  Original File Name: e84e684846209b37
 **/
 .labelWrapper_abe771 {
     display: flex;
@@ -63,11 +63,7 @@
     }
 }
 
-.menuItem__3751b:hover .channelName__3751b {
-    color: var(--white)
-}
-
-.menuItem__3751b:hover .subtext__3751b {
+.menuItem__3751b:hover .channelName__3751b,.menuItem__3751b:hover .subtext__3751b {
     color: var(--white)
 }
 
@@ -86,11 +82,7 @@
     color: var(--text-secondary)
 }
 
-:where(.visual-refresh) .menuItem__3751b:hover .channelName__3751b {
-    color: var(--header-primary)
-}
-
-:where(.visual-refresh) .menuItem__3751b:hover .subtext__3751b {
+:where(.visual-refresh) .menuItem__3751b:hover .channelName__3751b,:where(.visual-refresh) .menuItem__3751b:hover .subtext__3751b {
     color: var(--header-primary)
 }
 
@@ -114,4 +106,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=e0d77bc5a5dba695.css.map*/
+/*# sourceMappingURL=e84e684846209b37.css.map*/

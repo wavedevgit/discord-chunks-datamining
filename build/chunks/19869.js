@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   O: () => S
 }), n(47120);
@@ -16,15 +16,15 @@ var r = n(200651),
   p = n(52647),
   h = n(317257),
   f = n(120786),
-  x = n(775451),
-  b = n(970815),
+  b = n(775451),
+  x = n(970815),
   N = n(720463),
   _ = n(931928),
   E = n(450272),
   j = n(981631),
   C = n(388032),
-  O = n(113773),
-  v = n(675104);
+  O = n(747431),
+  v = n(701905);
 
 function S() {
   return (0, r.jsxs)("div", {
@@ -57,7 +57,7 @@ function T() {
       children: "Balance Widget Components"
     }), (0, r.jsx)(E.E_, {
       label: "Balance Widget Menu",
-      children: (0, r.jsx)(x.V9, {
+      children: (0, r.jsx)(b.V9, {
         ctaText: C.NW.string(C.t["J+vlIS"]),
         ctaOnClick: j.dG4,
         isCoachmarkEnabled: !1
@@ -118,20 +118,20 @@ function T() {
       })]
     }), (0, r.jsxs)(E.E_, {
       label: "Balance Widget Pill",
-      children: [(0, r.jsx)(b.A4, {
+      children: [(0, r.jsx)(x.A4, {
         balance: 150,
         balanceWidgetMode: h.b.DEFAULT
-      }), (0, r.jsx)(b.A4, {
+      }), (0, r.jsx)(x.A4, {
         balance: 150,
         balanceWidgetMode: h.b.HIGHLIGHTED
-      }), (0, r.jsx)(b.A4, {
+      }), (0, r.jsx)(x.A4, {
         balance: 150,
         balanceWidgetMode: h.b.SELECTED
-      }), (0, r.jsx)(b.A4, {
+      }), (0, r.jsx)(x.A4, {
         balance: 0,
         balanceWidgetMode: h.b.DEFAULT,
         showNotificationBadge: !0
-      }), (0, r.jsx)(b.A4, {
+      }), (0, r.jsx)(x.A4, {
         balance: null,
         balanceWidgetMode: h.b.DEFAULT
       })]
@@ -153,7 +153,7 @@ function T() {
         children: "Set Balance"
       }), (0, r.jsx)("div", {
         className: O.interactivePillContainer,
-        children: (0, r.jsx)(b.A4, {
+        children: (0, r.jsx)(x.A4, {
           balance: p,
           balanceWidgetMode: S,
           onClick: () => I()
@@ -177,7 +177,7 @@ function T() {
         children: "Simulate Loading State"
       }), (0, r.jsx)("div", {
         className: O.interactivePillContainer,
-        children: (0, r.jsx)(b.A4, {
+        children: (0, r.jsx)(x.A4, {
           balance: p,
           balanceWidgetMode: S,
           onClick: () => I()

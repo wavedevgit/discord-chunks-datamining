@@ -1,6 +1,6 @@
 /**
   Module ID: 17397
-  Original File Name: a54eba5c84966819
+  Original File Name: b6293dc7d5f0f022
 **/
 @use postcss-pxtorem;
 
@@ -514,11 +514,7 @@
     filter: drop-shadow(var(--elevation-medium))
 }
 
-.avatar_c19a55.clickable_c19a55:active {
-    transform: translateY(1px)
-}
-
-.avatar_c19a55.clickable_c19a55:active+.avatarDecoration_c19a55 {
+.avatar_c19a55.clickable_c19a55:active,.avatar_c19a55.clickable_c19a55:active+.avatarDecoration_c19a55 {
     transform: translateY(1px)
 }
 
@@ -625,11 +621,7 @@
     white-space: nowrap
 }
 
-.mouse-mode .wrapper_c19a55:hover .timestampVisibleOnHover_c19a55 {
-    opacity: 1
-}
-
-.keyboard-mode .wrapper_c19a55:focus .timestampVisibleOnHover_c19a55 {
+.keyboard-mode .wrapper_c19a55:focus .timestampVisibleOnHover_c19a55,.mouse-mode .wrapper_c19a55:hover .timestampVisibleOnHover_c19a55 {
     opacity: 1
 }
 
@@ -1080,4 +1072,4 @@
     margin: 36px 24px
 }
 
-/*# sourceMappingURL=a54eba5c84966819.css.map*/
+/*# sourceMappingURL=b6293dc7d5f0f022.css.map*/

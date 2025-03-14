@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => H
 }), n(266796), n(47120);
@@ -16,13 +16,13 @@ var r = n(200651),
   p = n(57562),
   h = n(955204),
   f = n(64078),
-  x = n(351780),
-  b = n(954794),
+  b = n(351780),
+  x = n(954794),
   N = n(112843),
   _ = n(524484),
   E = n(981631),
   j = n(388032),
-  C = n(375888);
+  C = n(259622);
 
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -413,7 +413,7 @@ function V(e) {
   let {
     onChangePage: t,
     setShowEnableAnimation: n
-  } = e, s = (0, a.cj)([x.Z], () => x.Z.getState()), [l, c] = i.useState({
+  } = e, s = (0, a.cj)([b.Z], () => b.Z.getState()), [l, c] = i.useState({
     x: 0,
     y: 0
   }), d = (0, N.Z)();
@@ -445,13 +445,13 @@ function V(e) {
         })
       }
     },
-    b = e => {
+    x = e => {
       c({
         x: e.clientX,
         y: e.clientY
       })
     };
-  return i.useEffect(() => (window.addEventListener("mousemove", b), () => window.removeEventListener("mousemove", b)), []), (0, r.jsxs)(r.Fragment, {
+  return i.useEffect(() => (window.addEventListener("mousemove", x), () => window.removeEventListener("mousemove", x)), []), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.X6q, {
       variant: "heading-lg/semibold",
       className: C.title,
@@ -486,7 +486,7 @@ let G = (e, t, n) => {
           setShowEnableAnimation: n
         });
       case 1:
-        return (0, r.jsx)(b.Z, {
+        return (0, r.jsx)(x.Z, {
           onBackClick: i(0)
         });
       default:

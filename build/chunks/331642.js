@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => _
 }), n(47120);
@@ -16,9 +16,9 @@ var r = n(200651),
   p = n(409673),
   h = n(603074),
   f = n(388032),
-  x = n(390416);
+  b = n(10314);
 
-function b(e) {
+function x(e) {
   let {
     onSelect: t
   } = e, [n, a] = i.useState(!1), o = (0, s.e7)([c.default], () => c.default.getCurrentUser()), u = d.ZP.canUseCustomCallSounds(o);
@@ -74,7 +74,7 @@ function b(e) {
         children: (0, r.jsx)(l.vdY, {
           size: "md",
           color: "currentColor",
-          className: x.secondaryIcon
+          className: b.secondaryIcon
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
@@ -105,7 +105,7 @@ function N(e) {
     children: (0, r.jsx)(l.gj8, {
       size: "md",
       color: "currentColor",
-      className: x.secondaryIconActive
+      className: b.secondaryIconActive
     })
   })
 }
@@ -117,17 +117,17 @@ function _(e) {
     onSelect: i
   } = e, s = null != t, c = null == t ? void 0 : t.emojiId, d = null == t ? void 0 : t.emojiName, u = s && (null != d || null != c);
   return (0, r.jsxs)("div", {
-    className: x.soundButtonSettingContainer,
+    className: b.soundButtonSettingContainer,
     children: [(0, r.jsxs)("div", {
-      className: x.container,
+      className: b.container,
       children: [u && (0, r.jsx)(o.Z, {
         emojiId: c,
         emojiName: d,
-        className: x.emoji
+        className: b.emoji
       }), (0, r.jsx)(l.Text, {
         variant: "text-xs/medium",
         color: "header-primary",
-        className: x.soundText,
+        className: b.soundText,
         children: null == t ? f.NW.string(f.t.PoWNfX) : n ? f.NW.format(f.t.B6HU6O, {
           soundName: t.name,
           subtextHook: e => (0, r.jsx)(l.Text, {
@@ -142,11 +142,11 @@ function _(e) {
       }) : (0, r.jsx)(l.gj8, {
         size: "md",
         color: "currentColor",
-        className: x.secondaryIconDisabled
+        className: b.secondaryIconDisabled
       })]
     }), (0, r.jsxs)("div", {
-      className: x.container,
-      children: [(0, r.jsx)(b, {
+      className: b.container,
+      children: [(0, r.jsx)(x, {
         onSelect: i
       }), s && !n && (0, r.jsx)(p.hU, {
         onClick: () => i(null),
@@ -154,7 +154,7 @@ function _(e) {
         children: (0, r.jsx)(l.XHJ, {
           size: "md",
           color: a.Z.unsafe_rawColors.RED_400.css,
-          className: x.secondaryIcon
+          className: b.secondaryIcon
         })
       })]
     })]

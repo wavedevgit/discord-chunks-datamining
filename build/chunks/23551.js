@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => h
 });
@@ -14,7 +14,7 @@ var i = n(120356),
   u = n(231757),
   m = n(626135),
   g = n(981631),
-  p = n(826320);
+  p = n(227890);
 let h = e => {
   let {
     disabled: t = !1,
@@ -22,9 +22,9 @@ let h = e => {
     className: i,
     innerClassName: h,
     onConnect: f
-  } = e, x = (0, o.ZP)(), b = c.Z.get((0, d.rR)(n));
+  } = e, b = (0, o.ZP)(), x = c.Z.get((0, d.rR)(n));
   return (0, r.jsx)(l.ua7, {
-    text: b.name,
+    text: x.name,
     children: e => {
       let {
         onMouseEnter: o,
@@ -40,7 +40,7 @@ let h = e => {
             type: "button",
             disabled: t,
             style: {
-              backgroundImage: "url('".concat((0, a.wj)(x) ? b.icon.darkSVG : b.icon.lightSVG, "')")
+              backgroundImage: "url('".concat((0, a.wj)(b) ? x.icon.darkSVG : x.icon.lightSVG, "')")
             },
             onClick: null != f ? f : () => (function(e) {
               let t = c.Z.get(e);
@@ -53,7 +53,7 @@ let h = e => {
                 platform_type: t.type
               })
             })(n),
-            "aria-label": b.name
+            "aria-label": x.name
           })
         })
       })

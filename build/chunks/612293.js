@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   default: () => j,
   f: () => E
@@ -17,10 +17,10 @@ var r = n(200651),
   p = n(884697),
   h = n(709999),
   f = n(22267),
-  x = n(594174),
-  b = n(981631),
+  b = n(594174),
+  x = n(981631),
   N = n(388032),
-  _ = n(341696);
+  _ = n(964021);
 let E = () => {
   (0, o.ZDy)(async () => {
     let {
@@ -64,13 +64,13 @@ function j(e) {
 function C(e) {
   let {
     onClose: t
-  } = e, n = (0, l.e7)([x.default], () => x.default.getCurrentUser()), {
+  } = e, n = (0, l.e7)([b.default], () => b.default.getCurrentUser()), {
     available: s,
     purchased: a
   } = (0, p.yV)(), d = a.find(e => {
     var t, r;
     return e.skuId === (null == n ? void 0 : null === (r = n.collectibles) || void 0 === r ? void 0 : null === (t = r.nameplate) || void 0 === t ? void 0 : t.skuId)
-  }), [g, h] = (0, i.useState)(null != d ? d : null), [f, b] = (0, i.useState)(null != d), E = (0, i.useCallback)(() => {
+  }), [g, h] = (0, i.useState)(null != d ? d : null), [f, x] = (0, i.useState)(null != d), E = (0, i.useCallback)(() => {
     t(), (0, m.mK)({
       analyticsLocations: [u.Z.USER_SETTINGS_NAMEPLATE_MODAL],
       analyticsSource: u.Z.USER_SETTINGS_NAMEPLATE_MODAL,
@@ -94,7 +94,7 @@ function C(e) {
       children: [(0, r.jsx)(O, {
         selected: g,
         onSelect: (e, t) => {
-          h(e), b(null != t && t)
+          h(e), x(null != t && t)
         },
         available: s,
         purchased: a,
@@ -141,7 +141,7 @@ function O(e) {
     purchased: s,
     onShop: a
   } = e;
-  return null == (0, l.e7)([x.default], () => x.default.getCurrentUser()) ? null : (0, r.jsxs)(o.u2D, {
+  return null == (0, l.e7)([b.default], () => b.default.getCurrentUser()) ? null : (0, r.jsxs)(o.u2D, {
     className: _.inventory,
     children: [(0, r.jsx)(o.Text, {
       className: _.inventoryTitle,
@@ -196,7 +196,7 @@ function v(e) {
     isPurchased: n = !1,
     isSelected: s = !1,
     onClick: c
-  } = e, d = (0, l.e7)([x.default], () => x.default.getCurrentUser()), [u, m] = (0, i.useState)(!1);
+  } = e, d = (0, l.e7)([b.default], () => b.default.getCurrentUser()), [u, m] = (0, i.useState)(!1);
   return null == d ? null : (0, r.jsxs)(o.P3F, {
     className: a()(_.nameplateItem, {
       [_.selected]: s
@@ -222,7 +222,7 @@ function S(e) {
   let {
     selectedNameplate: t,
     purchased: n
-  } = e, i = (0, l.e7)([x.default], () => x.default.getCurrentUser()), s = (0, l.e7)([g.Z], () => g.Z.getProduct(null == t ? void 0 : t.skuId)), a = (0, d.ZP)() !== b.BRd.LIGHT;
+  } = e, i = (0, l.e7)([b.default], () => b.default.getCurrentUser()), s = (0, l.e7)([g.Z], () => g.Z.getProduct(null == t ? void 0 : t.skuId)), a = (0, d.ZP)() !== x.BRd.LIGHT;
   return null == i ? null : (0, r.jsx)("div", {
     className: _.preview,
     children: n || null == t ? (0, r.jsx)(T, {

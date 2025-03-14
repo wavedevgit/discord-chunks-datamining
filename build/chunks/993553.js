@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => u
 }), n(47120);
@@ -9,7 +9,7 @@ var r = n(200651),
   l = n(865824),
   o = n(481060),
   c = n(388032),
-  d = n(489486);
+  d = n(395360);
 
 function u(e) {
   var t, n, {
@@ -31,7 +31,7 @@ function u(e) {
       }
       return i
     }(e, ["children", "lineClamp"]);
-  let [p, h] = i.useState(!1), [f, x] = i.useState(null), b = null != f && (0, r.jsx)("button", {
+  let [p, h] = i.useState(!1), [f, b] = i.useState(null), x = null != f && (0, r.jsx)("button", {
     className: d.button,
     onClick: () => h(e => !e),
     children: (0, r.jsxs)(o.Text, {
@@ -52,7 +52,7 @@ function u(e) {
       scrollHeight: e,
       clientHeight: t
     } = N;
-    e > t && x({
+    e > t && b({
       truncatedHeight: t,
       expandedHeight: e
     })
@@ -96,6 +96,6 @@ function u(e) {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t)), b]
+    }), t)), x]
   })
 }

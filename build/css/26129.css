@@ -1,6 +1,6 @@
 /**
   Module ID: 26129
-  Original File Name: 6726db46adbb8d2e
+  Original File Name: dc951019c9f4dc60
 **/
 .loadingWrapper__5a143 {
     display: flex;
@@ -77,11 +77,7 @@
     }
 }
 
-.menuItem__3751b:hover .channelName__3751b {
-    color: var(--white)
-}
-
-.menuItem__3751b:hover .subtext__3751b {
+.menuItem__3751b:hover .channelName__3751b,.menuItem__3751b:hover .subtext__3751b {
     color: var(--white)
 }
 
@@ -100,11 +96,7 @@
     color: var(--text-secondary)
 }
 
-:where(.visual-refresh) .menuItem__3751b:hover .channelName__3751b {
-    color: var(--header-primary)
-}
-
-:where(.visual-refresh) .menuItem__3751b:hover .subtext__3751b {
+:where(.visual-refresh) .menuItem__3751b:hover .channelName__3751b,:where(.visual-refresh) .menuItem__3751b:hover .subtext__3751b {
     color: var(--header-primary)
 }
 
@@ -118,4 +110,4 @@
     margin-right: 4px
 }
 
-/*# sourceMappingURL=6726db46adbb8d2e.css.map*/
+/*# sourceMappingURL=dc951019c9f4dc60.css.map*/

@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => f
 });
@@ -14,7 +14,7 @@ var i = n(120356),
   u = n(594174),
   m = n(418632),
   g = n(388032),
-  p = n(709818);
+  p = n(611588);
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -42,8 +42,8 @@ function f(e) {
     className: a
   } = e, {
     isClaimed: f,
-    isVerified: x,
-    hasEmail: b
+    isVerified: b,
+    hasEmail: x
   } = (0, o.cj)([u.default], () => {
     let e = u.default.getCurrentUser();
     return l()(null != e, "EmailNotice: currentUser cannot be undefined"), {
@@ -57,11 +57,11 @@ function f(e) {
     (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("9343"), n.e("44801")]).then(n.bind(n, 642298));
+      } = await Promise.all([n.e("9343"), n.e("19855")]).then(n.bind(n, 642298));
       return t => (0, r.jsx)(e, h({}, t))
     })
   }
-  return f && x ? null : (0, r.jsx)(c.Zbd, {
+  return f && b ? null : (0, r.jsx)(c.Zbd, {
     className: s()(p.wrapper, a),
     children: (0, r.jsxs)(d.Z, {
       align: d.Z.Align.CENTER,
@@ -76,7 +76,7 @@ function f(e) {
         }), (0, r.jsxs)(d.Z, {
           justify: d.Z.Justify.CENTER,
           className: p.content,
-          children: [f ? b ? (0, r.jsx)(d.Z.Child, {
+          children: [f ? x ? (0, r.jsx)(d.Z.Child, {
             grow: 0,
             shrink: 0,
             children: (0, r.jsx)(m.Z, {})
@@ -101,7 +101,7 @@ function f(e) {
               },
               children: g.NW.string(g.t.fiNVio)
             })
-          }), f && b ? (0, r.jsx)(d.Z.Child, {
+          }), f && x ? (0, r.jsx)(d.Z.Child, {
             grow: 0,
             shrink: 0,
             children: (0, r.jsx)(c.zxk, {

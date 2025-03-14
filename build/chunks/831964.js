@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   ZP: () => k,
   __: () => w,
@@ -17,8 +17,8 @@ var r, i = n(230711),
   p = n(880511),
   h = n(985443),
   f = n(612253),
-  x = n(832287),
-  b = n(872532),
+  b = n(832287),
+  x = n(872532),
   N = n(91342),
   _ = n(181708),
   E = n(821721),
@@ -74,7 +74,7 @@ let w = () => {
         description: m.NW.string(m.t.HMSHeH),
         descriptionCta: m.NW.string(m.t.jVcuVV),
         onClick: n,
-        previewImage: b,
+        previewImage: x,
         videoUrl: g ? I.ZP : y.ZP
       },
       referralProgram: {
@@ -92,7 +92,7 @@ let w = () => {
         description: m.NW.string(m.t.HC5wVV),
         descriptionCta: m.NW.string(m.t.jVcuVV),
         onClick: r,
-        previewImage: x,
+        previewImage: b,
         videoUrl: g ? E.ZP : j.ZP
       }
     }, _ = {

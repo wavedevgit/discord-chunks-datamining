@@ -1,18 +1,18 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 66063 **/
 n.d(t, {
-  Z: () => h
+  Z: () => m
 }), n(47120), n(653041);
-var r = n(200651),
-  i = n(192379),
-  s = n(921738),
-  a = n.n(s),
-  l = n(213005),
-  o = n(455279),
-  c = n(358085),
-  d = n(998502),
+var i = n(200651),
+  s = n(192379),
+  r = n(921738),
+  l = n.n(r),
+  o = n(213005),
+  a = n(455279),
+  d = n(358085),
+  h = n(998502),
   u = n(981631);
 
-function m(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -20,8 +20,8 @@ function m(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let g = c.isPlatformEmbedded && null != d.ZP.getDiscordUtils().inputCaptureRegisterElement;
-class p extends i.PureComponent {
+let p = d.isPlatformEmbedded && null != h.ZP.getDiscordUtils().inputCaptureRegisterElement;
+class g extends s.PureComponent {
   componentDidMount() {
     this._mounted = !0
   }
@@ -34,7 +34,7 @@ class p extends i.PureComponent {
     })
   }
   cleanUp() {
-    c.isPlatformEmbedded && null != this.gs && (this.gs.destroy(), this.gs = null)
+    d.isPlatformEmbedded && null != this.gs && (this.gs.destroy(), this.gs = null)
   }
   handleComboChange(e) {
     let {
@@ -42,7 +42,7 @@ class p extends i.PureComponent {
     } = this.state, {
       onChange: n
     } = this.props;
-    t === o.c.RECORDING && (null != n && n(e), this.setState({
+    t === a.c.RECORDING && (null != n && n(e), this.setState({
       codes: e
     }))
   }
@@ -50,47 +50,47 @@ class p extends i.PureComponent {
     let e, t;
     let {
       codes: n,
-      mode: i
+      mode: s
     } = this.state, {
-      disabled: s
+      disabled: r
     } = this.props;
-    return g ? (t = d.ZP.getDiscordUtils().inputCaptureRegisterElement, e = this.handleNativeChange) : c.isPlatformEmbedded || (e = this.handleComboKeys), (0, r.jsx)(o.Z, {
-      disabled: s,
+    return p ? (t = h.ZP.getDiscordUtils().inputCaptureRegisterElement, e = this.handleNativeChange) : d.isPlatformEmbedded || (e = this.handleComboKeys), (0, i.jsx)(a.Z, {
+      disabled: r,
       value: n,
-      mode: i,
+      mode: s,
       onClick: this.toggleRecordMode,
       onChange: e,
       registerNativeRecorder: t,
-      disableOnClickWhileRecording: g
+      disableOnClickWhileRecording: p
     })
   }
   constructor(e) {
-    super(e), m(this, "_input", void 0), m(this, "gs", void 0), m(this, "_mounted", !1), m(this, "recordStart", () => {
-      c.isPlatformEmbedded && !g && (this.gs = new l.Z, this.gs.on("change", this.handleGSChange)), this.setState({
-        mode: o.c.RECORDING
+    super(e), c(this, "_input", void 0), c(this, "gs", void 0), c(this, "_mounted", !1), c(this, "recordStart", () => {
+      d.isPlatformEmbedded && !p && (this.gs = new o.Z, this.gs.on("change", this.handleGSChange)), this.setState({
+        mode: a.c.RECORDING
       })
-    }), m(this, "recordEnd", () => {
+    }), c(this, "recordEnd", () => {
       this.cleanUp(), this.setState({
-        mode: o.c.DEFAULT
+        mode: a.c.DEFAULT
       })
-    }), m(this, "toggleRecordMode", () => {
-      this.state.mode === o.c.DEFAULT ? this.recordStart() : this.recordEnd()
-    }), m(this, "handleComboKeys", (e, t, n) => {
+    }), c(this, "toggleRecordMode", () => {
+      this.state.mode === a.c.DEFAULT ? this.recordStart() : this.recordEnd()
+    }), c(this, "handleComboKeys", (e, t, n) => {
       if (n.preventDefault(), "keydown" === n.type) {
-        let e = t.map(e => [u.MoX.KEYBOARD_KEY, a()(e), u.CgE.BROWSER]),
+        let e = t.map(e => [u.MoX.KEYBOARD_KEY, l()(e), u.CgE.BROWSER]),
           {
-            keyCode: r
+            keyCode: i
           } = n;
         null == e.find(e => {
           let [, t] = e;
-          return r === t
-        }) && e.push([u.MoX.KEYBOARD_KEY, r, u.CgE.BROWSER]), this.handleComboChange(e)
+          return i === t
+        }) && e.push([u.MoX.KEYBOARD_KEY, i, u.CgE.BROWSER]), this.handleComboChange(e)
       }
-    }), m(this, "handleGSChange", e => {
+    }), c(this, "handleGSChange", e => {
       if (!1 === this._mounted) return;
       let t = [...e.combo];
       this.handleComboChange(t)
-    }), m(this, "handleNativeChange", e => {
+    }), c(this, "handleNativeChange", e => {
       e.length > 0 && this.handleComboChange(e), this.recordEnd()
     });
     let {
@@ -98,8 +98,8 @@ class p extends i.PureComponent {
     } = e;
     this.state = {
       codes: t,
-      mode: o.c.DEFAULT
+      mode: a.c.DEFAULT
     }
   }
 }
-let h = p
+let m = g

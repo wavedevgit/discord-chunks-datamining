@@ -1,6 +1,6 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => b
+  Z: () => x
 });
 var r = n(200651);
 n(192379);
@@ -17,15 +17,15 @@ var i = n(120356),
   p = n(193528),
   h = n(993413),
   f = n(388032),
-  x = n(250016);
+  b = n(779281);
 
-function b(e) {
+function x(e) {
   let {
     user: t,
     pendingAvatarSrc: n,
     pendingColors: i,
     onThemeColorsChange: a,
-    preventDisabled: b,
+    preventDisabled: x,
     guildId: N,
     className: _,
     showPremiumIcon: E = !0,
@@ -46,21 +46,21 @@ function b(e) {
   };
   return (0, r.jsx)(h.Z, {
     title: f.NW.string(f.t.DMeO2d),
-    disabled: !T && !b,
-    className: s()(x.__invalid_profileThemesSection, _),
+    disabled: !T && !x,
+    className: s()(b.__invalid_profileThemesSection, _),
     showPremiumIcon: E,
     forcedDivider: C,
     children: (0, r.jsxs)("div", {
-      className: x.sectionContainer,
+      className: b.sectionContainer,
       children: [(0, r.jsx)("div", {
-        className: x.sparkleContainer,
+        className: b.sparkleContainer,
         children: (0, r.jsx)(p.Z, {
           onChange: e => P([e, S]),
           color: v,
           suggestedColors: A,
           showEyeDropper: !0,
           label: (0, r.jsx)(c.Text, {
-            className: x.colorSwatchLabel,
+            className: b.colorSwatchLabel,
             color: "header-secondary",
             variant: "text-xs/normal",
             "aria-hidden": !0,
@@ -68,14 +68,14 @@ function b(e) {
           })
         })
       }), (0, r.jsx)("div", {
-        className: x.sparkleContainer,
+        className: b.sparkleContainer,
         children: (0, r.jsx)(p.Z, {
           onChange: e => P([v, e]),
           color: S,
           suggestedColors: A,
           showEyeDropper: !0,
           label: (0, r.jsx)(c.Text, {
-            className: x.colorSwatchLabel,
+            className: b.colorSwatchLabel,
             color: "header-secondary",
             variant: "text-xs/normal",
             "aria-hidden": !0,
@@ -83,7 +83,7 @@ function b(e) {
           })
         })
       }), j && null != N && (0, r.jsx)(c.zxk, {
-        className: x.resetButton,
+        className: b.resetButton,
         color: c.zxk.Colors.PRIMARY,
         look: c.zxk.Looks.LINK,
         size: c.zxk.Sizes.SMALL,

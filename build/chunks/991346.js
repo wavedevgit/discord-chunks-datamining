@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Gj: () => G,
   Pt: () => V,
@@ -20,8 +20,8 @@ var r = n(192379),
   p = n(610697),
   h = n(880257),
   f = n(631885),
-  x = n(223639),
-  b = n(160913),
+  b = n(223639),
+  x = n(160913),
   N = n(725727),
   _ = n(977156),
   E = n(922611),
@@ -84,7 +84,7 @@ function U(e) {
 function V() {
   var e, t, n, a;
   let S = (0, N.YO)().length,
-    R = (0, b.U)(),
+    R = (0, x.U)(),
     W = (0, i.e7)([y.Z], () => y.Z.getProps().impressionSource),
     L = (0, f.gU)(),
     M = (0, k.bC)(),
@@ -112,7 +112,7 @@ function V() {
     location: B.dr.USER_SETTINGS_SEARCH_GIFT_INVENTORY
   }), {
     enabled: J
-  } = x.Z.useExperiment({
+  } = b.Z.useExperiment({
     location: "UserSettingsInventory"
   }, {
     autoTrackExposure: !0

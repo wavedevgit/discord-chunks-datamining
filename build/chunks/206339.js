@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   Z: () => w
 }), n(47120);
@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(230711),
   h = n(410030),
   f = n(454585),
-  x = n(163684),
-  b = n(178100),
+  b = n(163684),
+  x = n(178100),
   N = n(518638),
   _ = n(725727),
   E = n(454982),
@@ -32,7 +32,7 @@ var r = n(200651),
   A = n(981631),
   P = n(474936),
   R = n(388032),
-  D = n(352069);
+  D = n(516876);
 
 function Z(e) {
   let t, {
@@ -44,10 +44,10 @@ function Z(e) {
     [c, u] = i.useState(!1),
     [m, g] = i.useState(!1),
     p = () => u(e => !e),
-    x = (0, h.ZP)(),
-    _ = (0, N.Pz)(n.id, x),
+    b = (0, h.ZP)(),
+    _ = (0, N.Pz)(n.id, b),
     j = null != s,
-    C = (0, b.Z)(n, j);
+    C = (0, x.Z)(n, j);
   j && c ? t = R.NW.format(R.t.pkxVx8, {
     endDate: C,
     onClickDetails: p
@@ -165,18 +165,18 @@ let w = function() {
     })
   }, []);
   let {
-    promotionsLoaded: b,
+    promotionsLoaded: x,
     activeOutboundPromotions: N,
     claimedEndedOutboundPromotions: E,
     claimedOutboundPromotionCodeMap: w,
     addClaimedOutboundPromotionCode: k
-  } = (0, _.lG)(), W = N.length + E.length > 0, L = x.g.useExperiment({
+  } = (0, _.lG)(), W = N.length + E.length > 0, L = b.g.useExperiment({
     location: "EntitlementGifts"
   }, {
     autoTrackExposure: !1,
     disable: s
   }).enabled && W;
-  return h && b ? (0, r.jsxs)(r.Fragment, {
+  return h && x ? (0, r.jsxs)(r.Fragment, {
     children: [function() {
       var e;
       let t = n.find(e => e.giftCodeBatchId === P.m8 && !e.consumed),

@@ -1,4 +1,4 @@
-/** Chunk was on 33975 **/
+/** Chunk was on 81146 **/
 r.d(t, {
   default: () => H
 }), r(47120), r(26686);
@@ -38,7 +38,7 @@ var n = r(200651),
   L = r(978313),
   W = r(206583),
   Z = r(388032),
-  R = r(554394);
+  R = r(869429);
 let G = () => (0, n.jsxs)("div", {
   className: R.gameBadge,
   children: [(0, n.jsx)(d.YqE, {
