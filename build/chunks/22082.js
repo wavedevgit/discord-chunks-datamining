@@ -2,15 +2,15 @@
 n.d(t, {
   Z: () => P
 }), n(47120);
-var i, r, l, s = n(442837),
-  o = n(570140),
+var i, r, l, o = n(442837),
+  s = n(570140),
   a = n(45114),
   u = n(897473),
   d = n(581883),
   c = n(314897),
   h = n(592125),
-  p = n(984933),
-  f = n(271383),
+  f = n(984933),
+  p = n(271383),
   g = n(430824),
   v = n(306680),
   C = n(9156),
@@ -25,15 +25,15 @@ function I(e, t) {
   let n = _[e];
   if (null != n && null != t && n.has(t)) {
     var i;
-    !C.ZP.isOptInEnabled(e) || (null === (i = h.Z.getChannel(t)) || void 0 === i ? void 0 : i.isThread()) || null != v.ZP.ackMessageId(t) || o.Z.wait(() => (0, a.In)(t, !0, !0, m.default.atPreviousMillisecond(t)))
+    !C.ZP.isOptInEnabled(e) || (null === (i = h.Z.getChannel(t)) || void 0 === i ? void 0 : i.isThread()) || null != v.ZP.ackMessageId(t) || s.Z.wait(() => (0, a.In)(t, !0, !0, m.default.atPreviousMillisecond(t)))
   }
 }
 
 function y(e) {
   var t;
   if (null != _[e]) return;
-  let n = p.ZP.getChannels(e)[p.sH].map(e => e.channel.id),
-    i = null === (t = f.ZP.getMember(e, c.default.getId())) || void 0 === t ? void 0 : t.joinedAt;
+  let n = f.ZP.getChannels(e)[f.sH].map(e => e.channel.id),
+    i = null === (t = p.ZP.getMember(e, c.default.getId())) || void 0 === t ? void 0 : t.joinedAt;
   if (null == i) return;
   _[e] = new Set;
   let r = new Date(i).getTime();
@@ -49,9 +49,9 @@ function N() {
     _[e] = new Set([...t].filter(t => !C.ZP.isChannelOrParentOptedIn(e, t)))
   })
 }
-class T extends(i = s.ZP.Store) {
+class T extends(i = o.ZP.Store) {
   initialize() {
-    this.waitFor(p.ZP, c.default, f.ZP, C.ZP, v.ZP, d.Z), this.syncWith([C.ZP], N)
+    this.waitFor(f.ZP, c.default, p.ZP, C.ZP, v.ZP, d.Z), this.syncWith([C.ZP], N)
   }
   getNewChannelIds(e) {
     var t;
@@ -70,7 +70,7 @@ l = "NewChannelsStore", (r = "displayName") in T ? Object.defineProperty(T, r, {
   configurable: !0,
   writable: !0
 }) : T[r] = l;
-let P = new T(o.Z, {
+let P = new T(s.Z, {
   BULK_CLEAR_RECENTS: function(e) {
     let {
       guildId: t,

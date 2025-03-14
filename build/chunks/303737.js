@@ -11,44 +11,44 @@ n.d(t, {
 var i = n(991637),
   r = n.n(i),
   l = n(399606),
-  s = n(570140),
-  o = n(333848),
+  o = n(570140),
+  s = n(333848),
   a = n(592125),
   u = n(923726),
   d = n(289393),
   c = n(944537),
   h = n(144507),
-  p = n(853439),
-  f = n(981631),
+  f = n(853439),
+  p = n(981631),
   g = n(176505);
 r().shim();
 let v = {};
 
 function C(e) {
   let t = (0, l.e7)([a.Z], () => a.Z.getChannel(e)),
-    n = (0, l.e7)([p.Z], () => p.Z.getChannel(e));
+    n = (0, l.e7)([f.Z], () => f.Z.getChannel(e));
   return null != t ? t : n
 }
 
 function E(e, t, n) {
   let i = (0, l.e7)([d.Z], () => d.Z.getSubscriptionListingsForGuild(e)),
     r = (0, c.n)(t => t.editStateIdsForGroup[e]),
-    s = (0, c.n)(e => e.listings);
+    o = (0, c.n)(e => e.listings);
   if (void 0 === n || void 0 === t) return null;
-  let o = i.filter(e => !e.soft_deleted && !e.archived).map(e => e.subscription_plans[0].price),
+  let s = i.filter(e => !e.soft_deleted && !e.archived).map(e => e.subscription_plans[0].price),
     a = [];
   void 0 !== r && r.forEach(e => {
-    let t = s[e],
+    let t = o[e],
       n = null == t ? void 0 : t.priceTier;
     null != n && a.push(n)
   });
-  let u = new Set(a.concat(o));
+  let u = new Set(a.concat(s));
   if (!u.has(n)) return null;
   let h = t.indexOf(n);
   if (-1 === h) return null;
-  let p = [];
-  for (let e = h + 1; e < t.length && (u.has(t[e]) || p.push(t[e]), 3 !== p.length); e++);
-  return p
+  let f = [];
+  for (let e = h + 1; e < t.length && (u.has(t[e]) || f.push(t[e]), 3 !== f.length); e++);
+  return f
 }
 
 function m(e) {
@@ -59,12 +59,12 @@ function m(e) {
     var t;
     let r = null === (t = n[e]) || void 0 === t ? void 0 : t.channelBenefits;
     null == r || r.forEach(e => {
-      null != p.Z.getChannel(e.ref_id) && i.add(e.ref_id)
+      null != f.Z.getChannel(e.ref_id) && i.add(e.ref_id)
     })
   });
   let r = [];
   for (let t of i) {
-    let n = p.Z.getChannel(t);
+    let n = f.Z.getChannel(t);
     if (null != n) {
       let t = n.set("guild_id", e);
       r.push(t)
@@ -77,7 +77,7 @@ function O(e) {
   let t = m(e);
   v[e] = t, t.forEach(e => {
     let t = e.set("flags", g.zZ.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL);
-    s.Z.dispatch({
+    o.Z.dispatch({
       type: "CHANNEL_CREATE",
       channel: t
     })
@@ -87,7 +87,7 @@ function O(e) {
 function S(e) {
   var t;
   (null !== (t = v[e]) && void 0 !== t ? t : m(e)).forEach(e => {
-    s.Z.dispatch({
+    o.Z.dispatch({
       type: "CHANNEL_DELETE",
       channel: e
     })
@@ -97,8 +97,8 @@ async function _(e, t) {
   let n = [],
     i = [];
   t.forEach(t => {
-    let r = p.Z.getChannel(t.ref_id);
-    null != r && (n.push(o.Z.createRoleSubscriptionTemplateChannel(e, r.name, r.type, r.topic)), i.push(r))
+    let r = f.Z.getChannel(t.ref_id);
+    null != r && (n.push(s.Z.createRoleSubscriptionTemplateChannel(e, r.name, r.type, r.topic)), i.push(r))
   }), 0 !== n.length && (await Promise.allSettled(n)).forEach((n, r) => {
     let l = i[r].id;
     if ("fulfilled" === n.status) {
@@ -126,38 +126,38 @@ function b(e, t) {
     templateCategory: null,
     hasChangeFromTemplate: null
   };
-  let s = p.Z.getTemplateWithCategory(t, l);
-  if (null == s) return {
+  let o = f.Z.getTemplateWithCategory(t, l);
+  if (null == o) return {
     templateCategory: null,
     hasChangeFromTemplate: null
   };
-  let o = s.listings[0];
-  if ((null == r ? void 0 : r.name) !== o.name || (null == r ? void 0 : r.description) !== o.description || (null == r ? void 0 : r.priceTier) !== o.price_tier || (null == r ? void 0 : r.image) !== o.image || (null == r ? void 0 : r.roleColor) !== o.role_color || (null == r ? void 0 : null === (n = r.channelBenefits) || void 0 === n ? void 0 : n.length) !== o.channels.length || (null == r ? void 0 : null === (i = r.intangibleBenefits) || void 0 === i ? void 0 : i.length) !== o.additional_perks.length) return {
-    templateCategory: s.category,
+  let s = o.listings[0];
+  if ((null == r ? void 0 : r.name) !== s.name || (null == r ? void 0 : r.description) !== s.description || (null == r ? void 0 : r.priceTier) !== s.price_tier || (null == r ? void 0 : r.image) !== s.image || (null == r ? void 0 : r.roleColor) !== s.role_color || (null == r ? void 0 : null === (n = r.channelBenefits) || void 0 === n ? void 0 : n.length) !== s.channels.length || (null == r ? void 0 : null === (i = r.intangibleBenefits) || void 0 === i ? void 0 : i.length) !== s.additional_perks.length) return {
+    templateCategory: o.category,
     hasChangeFromTemplate: !0
   };
-  for (let e = 0; e < o.channels.length; e++) {
+  for (let e = 0; e < s.channels.length; e++) {
     let t = r.channelBenefits[e],
-      n = o.channels[e];
+      n = s.channels[e];
     if (t.name !== n.name || t.description !== n.description || t.emoji_name !== n.emoji_name) return {
-      templateCategory: s.category,
+      templateCategory: o.category,
       hasChangeFromTemplate: !0
     }
   }
-  for (let e = 0; e < o.additional_perks.length; e++) {
+  for (let e = 0; e < s.additional_perks.length; e++) {
     let t = r.intangibleBenefits[e],
-      n = o.additional_perks[e];
+      n = s.additional_perks[e];
     if (t.name !== n.name || t.description !== n.description || t.emoji_name !== n.emoji_name) return {
-      templateCategory: s.category,
+      templateCategory: o.category,
       hasChangeFromTemplate: !0
     }
   }
   return {
-    templateCategory: s.category,
+    templateCategory: o.category,
     hasChangeFromTemplate: !1
   }
 }
 
 function I(e) {
-  return (0, h.H2)(e) && e.hasFeature(f.oNc.ROLE_SUBSCRIPTIONS_ENABLED) && (0, u.$F)() && (0, u.hQ)(e.id)
+  return (0, h.H2)(e) && e.hasFeature(p.oNc.ROLE_SUBSCRIPTIONS_ENABLED) && (0, u.$F)() && (0, u.hQ)(e.id)
 }

@@ -1,17 +1,17 @@
 /** Chunk was on 30806 **/
 n.d(t, {
   Dr: () => g,
-  YO: () => p,
+  YO: () => f,
   _X: () => v,
-  _o: () => f,
+  _o: () => p,
   nb: () => C,
   zO: () => h
 });
 var i = n(570140),
   r = n(63568),
   l = n(434404),
-  s = n(703656),
-  o = n(430824),
+  o = n(703656),
+  s = n(430824),
   a = n(241559),
   u = n(327999),
   d = n(981631),
@@ -23,14 +23,14 @@ async function h(e) {
   })
 }
 
-function p(e) {
+function f(e) {
   i.Z.dispatch({
     type: "MEMBER_SAFETY_NEW_MEMBER_TIMESTAMP_REFRESH",
     guildId: e
   })
 }
 
-function f(e, t) {
+function p(e, t) {
   var {
     continuationToken: n
   } = t, r = function(e, t) {
@@ -64,8 +64,8 @@ async function g(e, t) {
 
 function v(e) {
   let t = (0, a.lv)(e),
-    n = o.Z.getGuild(e);
-  return !!t && null != n && ((0, r.K2)(e, "Guild Sidebar") && n.hasFeature(d.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) || n.hasFeature(d.oNc.COMMUNITY) || n.hasFeature(d.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) ? (0, s.uL)(d.Z5c.CHANNEL(e, c.oC.MEMBER_SAFETY)) : l.Z.open(n.id, d.pNK.MEMBERS), !0)
+    n = s.Z.getGuild(e);
+  return !!t && null != n && ((0, r.K2)(e, "Guild Sidebar") && n.hasFeature(d.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) || n.hasFeature(d.oNc.COMMUNITY) || n.hasFeature(d.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) ? (0, o.uL)(d.Z5c.CHANNEL(e, c.oC.MEMBER_SAFETY)) : l.Z.open(n.id, d.pNK.MEMBERS), !0)
 }
 async function C(e, t) {
   let n = await (0, u._2)(e, t);

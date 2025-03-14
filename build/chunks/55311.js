@@ -1,15 +1,15 @@
 /** Chunk was on 88712 **/
 r.d(t, {
-  Z: () => a
+  Z: () => s
 });
 var n = r(200651);
 r(192379);
 var i = r(481060),
   l = r(846027),
   o = r(468026),
-  c = r(388032);
+  a = r(388032);
 
-function a(e, t) {
+function s(e, t) {
   if (e) {
     (0, i.h7j)(e => {
       var t, r;
@@ -31,8 +31,8 @@ function a(e, t) {
         }
         return e
       }({}, e), r = r = {
-        title: c.NW.string(c.t.QZ7WSU),
-        body: c.NW.string(c.t.Tl9JpK)
+        title: a.NW.string(a.t.QZ7WSU),
+        body: a.NW.string(a.t.Tl9JpK)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

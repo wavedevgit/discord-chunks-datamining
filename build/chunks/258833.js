@@ -110,7 +110,7 @@ class S extends r.Z {
       }
       if (null == e) return;
       let n = _.Z.getGuildRingingUsers(e),
-        r = E(this, I).difference(n);
+        r = new Set([...E(this, I)].filter(e => !n.has(e)));
       r.size > 0 && (r.forEach(e => {
         E(this, I).delete(e)
       }), this._handleRing(E(this, I).size > 0, null))

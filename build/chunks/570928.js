@@ -5,10 +5,10 @@ r.d(t, {
 var n, i = r(200651),
   l = r(192379),
   o = r(120356),
-  c = r.n(o),
-  a = r(392806);
+  a = r.n(o),
+  s = r(392806);
 
-function u(e, t, r) {
+function c(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
     value: r,
     enumerable: !0,
@@ -16,7 +16,7 @@ function u(e, t, r) {
     writable: !0
   }) : e[t] = r, e
 }
-class s extends(n = l.PureComponent) {
+class u extends(n = l.PureComponent) {
   render() {
     var e, t;
     let r = this.props,
@@ -24,7 +24,7 @@ class s extends(n = l.PureComponent) {
         tag: n,
         children: l,
         hoverText: o,
-        className: s,
+        className: u,
         forceHover: d
       } = r,
       p = function(e, t) {
@@ -49,20 +49,20 @@ class s extends(n = l.PureComponent) {
         "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
           return Object.getOwnPropertyDescriptor(r, e).enumerable
         }))), n.forEach(function(t) {
-          u(e, t, r[t])
+          c(e, t, r[t])
         })
       }
       return e
     }({}, p), t = t = {
-      className: c()(s, a.hoverRoll, {
-        [a.disabled]: null == o,
-        [a.forceHover]: d
+      className: a()(u, s.hoverRoll, {
+        [s.disabled]: null == o,
+        [s.forceHover]: d
       }),
       children: [(0, i.jsx)(n, {
-        className: a.hovered,
+        className: s.hovered,
         children: o
       }), (0, i.jsx)(n, {
-        className: a.default,
+        className: s.default,
         children: l
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
@@ -77,8 +77,8 @@ class s extends(n = l.PureComponent) {
     }), e))
   }
 }
-u(s, "defaultProps", {
+c(u, "defaultProps", {
   tag: "div",
   forceHover: !1
 });
-let d = s
+let d = u

@@ -1,11 +1,11 @@
 /** Chunk was on 30806 **/
 n.d(t, {
-  Z: () => p
+  Z: () => f
 }), n(47120);
 var i, r = n(442837),
   l = n(570140),
-  s = n(709054),
-  o = n(592125);
+  o = n(709054),
+  s = n(592125);
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -19,13 +19,13 @@ let u = {},
   d = u;
 
 function c() {
-  s.default.keys(d).forEach(e => {
-    null == o.Z.getChannel(e) && delete d[e]
+  o.default.keys(d).forEach(e => {
+    null == s.Z.getChannel(e) && delete d[e]
   })
 }
 class h extends(i = r.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(o.Z), d = null != e ? e : u
+    this.waitFor(s.Z), d = null != e ? e : u
   }
   getState() {
     return d
@@ -38,7 +38,7 @@ class h extends(i = r.ZP.PersistedStore) {
   }
 }
 a(h, "displayName", "CollapsedVoiceChannelStore"), a(h, "persistKey", "collapsedChannels");
-let p = new h(l.Z, {
+let f = new h(l.Z, {
   CONNECTION_OPEN: c,
   OVERLAY_INITIALIZE: c,
   CHANNEL_COLLAPSE: function(e) {

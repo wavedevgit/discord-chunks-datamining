@@ -1,18 +1,18 @@
 /** Chunk was on 30806 **/
 n.d(t, {
-  NB: () => s,
+  NB: () => o,
   ar: () => d,
   fG: () => u,
-  kg: () => o,
+  kg: () => s,
   pM: () => a
 }), n(566702), n(266796);
 var i = n(881052);
 n(496675);
 var r = n(981631),
   l = n(388032);
-let s = "_role";
+let o = "_role";
 
-function o(e) {
+function s(e) {
   if (!(e >= 0)) switch (-e) {
     case r.evJ.ENTITY_TOO_LARGE:
       return l.NW.string(l.t.YbdEFB);
@@ -38,7 +38,7 @@ function a(e) {
       body: {
         message: "Invalid form body",
         errors: {
-          [s]: {
+          [o]: {
             _errors: [{
               code: "",
               message: n
@@ -57,13 +57,13 @@ function u(e) {
     name: i,
     priceTier: r,
     description: l,
-    image: s,
-    imageName: o,
+    image: o,
+    imageName: s,
     isImageChanged: a,
     newRoleParams: u,
     hasUnsavedAttachmentChanges: d
   } = e, c = {};
-  (null == n ? void 0 : n.name) !== i && "" !== i.trim() && (c.name = i), (null !== (t = null == n ? void 0 : n.description) && void 0 !== t ? t : "") !== l && (c.description = l), (null == n ? void 0 : n.price_tier) !== r && null != r && (c.priceTier = r), null != u && "" !== u.name.trim() ? c.createNewRole = !0 : null === u && (c.unlinkRole = !0), s.startsWith("data:") && (a || null == n && (Object.keys(c).length > 0 || d)) && (c.image = s, c.imageName = o);
+  (null == n ? void 0 : n.name) !== i && "" !== i.trim() && (c.name = i), (null !== (t = null == n ? void 0 : n.description) && void 0 !== t ? t : "") !== l && (c.description = l), (null == n ? void 0 : n.price_tier) !== r && null != r && (c.priceTier = r), null != u && "" !== u.name.trim() ? c.createNewRole = !0 : null === u && (c.unlinkRole = !0), o.startsWith("data:") && (a || null == n && (Object.keys(c).length > 0 || d)) && (c.image = o, c.imageName = s);
   let h = Object.keys(c).length > 0 || d;
   return {
     changes: c,

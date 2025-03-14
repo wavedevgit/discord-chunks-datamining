@@ -41,13 +41,13 @@ function O(e) {
       let e = async e => {
         let t = e.split("/").pop();
         if (null != t) {
-          if (null != y && y.code === t) return;
+          if (null != y && y.code.toLowerCase() === t.toLowerCase()) return;
           let e = await (0, d.Z)(t);
           !0 !== e.banned && (v(e.invite), null != e.invite && (null == o || o(e.invite)))
         }
       };
       null != x && e(x.url)
-    }, [x, o, y]), null == y || null == y.guild || !y.guild.features.includes("VERIFIED") && !y.guild.features.includes("PARTNER")) return null;
+    }, [x, o, y]), null == y || null == y.guild || !y.guild.features.includes(g.oNc.VERIFIED) && !y.guild.features.includes(g.oNc.PARTNERED)) return null;
   let P = f.ZP.getGuildIconURL({
     id: y.guild.id,
     icon: y.guild.icon,

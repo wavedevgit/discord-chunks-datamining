@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 4591134639d677db
+  Original File Name: 05988f5a55c90bb1
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -4957,32 +4957,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     opacity: .24
 }
 
-.voiceUser_adebba {
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    opacity: .4
-}
-
-.voiceUser_adebba+.voiceUser_adebba {
-    margin-top: var(--spacing-8)
-}
-
-.voiceUser_adebba.flipped_adebba {
-    flex-direction: row-reverse
-}
-
-.voiceUser_adebba.flipped_adebba .avatar_adebba {
-    margin-left: -3px;
-    margin-right: 0
-}
-
-.voiceUser_adebba.flipped_adebba .username_adebba {
-    margin-left: 0;
-    margin-right: var(--spacing-4)
-}
-
 .effect_adebba {
     position: absolute
 }
@@ -4994,6 +4968,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding: var(--spacing-4) var(--spacing-8);
     justify-content: center;
     align-items: center;
+    margin-left: var(--spacing-4);
     border-radius: var(--radius-lg);
     opacity: .8;
     flex-shrink: 1;
@@ -5007,7 +4982,43 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     white-space: nowrap
 }
 
-.clanTag_adebba,.username_adebba {
+.username_adebba.streaming_adebba {
+    padding-right: var(--spacing-4)
+}
+
+.voiceUser_adebba {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    opacity: .4
+}
+
+.voiceUser_adebba+.voiceUser_adebba {
+    margin-top: var(--spacing-8)
+}
+
+.voiceUser_adebba.flipped_adebba {
+    flex-direction: row;
+    justify-content: flex-end
+}
+
+.voiceUser_adebba.flipped_adebba .avatar_adebba {
+    margin-left: 0;
+    margin-right: 0
+}
+
+.voiceUser_adebba.flipped_adebba .username_adebba {
+    margin-left: 0;
+    padding-left: var(--spacing-4);
+    margin-right: var(--spacing-4)
+}
+
+.voiceUser_adebba.flipped_adebba .voiceIcons_adebba {
+    margin-right: var(--spacing-4)!important
+}
+
+.clanTag_adebba {
     margin-left: var(--spacing-4)
 }
 
@@ -5905,4 +5916,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100px
 }
 
-/*# sourceMappingURL=4591134639d677db.css.map*/
+/*# sourceMappingURL=05988f5a55c90bb1.css.map*/

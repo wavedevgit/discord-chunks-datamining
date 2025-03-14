@@ -1,11 +1,11 @@
 /** Chunk was on 30806 **/
 n.d(t, {
-  X: () => s
+  X: () => o
 });
 var i = n(544891),
   r = n(881052),
   l = n(981631);
-let s = async (e, t) => {
+let o = async (e, t) => {
   try {
     return (await i.tn.get({
       url: l.ANM.PRICE_TIERS,

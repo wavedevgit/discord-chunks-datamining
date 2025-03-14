@@ -33,8 +33,8 @@ var n = r(200651),
   T = r(891949),
   A = r(252547),
   k = r(484527),
-  M = r(131033),
-  D = r(296768),
+  D = r(131033),
+  M = r(296768),
   L = r(978313),
   W = r(206583),
   Z = r(388032),
@@ -155,7 +155,7 @@ function K(e) {
     }), (0, n.jsx)(T.Z, {
       detectedGame: r,
       trackAction: d
-    }), (0, n.jsx)(D.Z, {
+    }), (0, n.jsx)(M.Z, {
       applicationId: a.id,
       onClose: c,
       trackAction: d,
@@ -192,7 +192,7 @@ function U(e) {
       }), (0, n.jsx)(S.Z, {
         detectedGame: t,
         trackClick: o
-      }), (0, n.jsx)(M.Z, {
+      }), (0, n.jsx)(D.Z, {
         detectedGame: t
       })]
     })]
@@ -213,7 +213,7 @@ let F = e => e.filter(N.z6).slice(0, 5),
     } = (0, g.ZP)(), j = (0, u.e7)([O.default], () => O.default.locale), N = a.useMemo(() => (0, x.fP)(), []), w = (0, u.Wu)([E.Z], () => {
       var e;
       return (null !== (e = E.Z.getSimilarGames(r)) && void 0 !== e ? e : []).slice(0, 25)
-    }), [C, S] = a.useState(null), T = (0, I.Ns)(r), [A, k] = a.useState(null), M = (0, m.q)(r), D = (0, u.e7)([h.Z], () => h.Z.getGame(r)), L = null !== (t = null == D ? void 0 : D.name) && void 0 !== t ? t : null == M ? void 0 : M.name, W = (e, t) => {
+    }), [C, S] = a.useState(null), T = (0, I.Ns)(r), [A, k] = a.useState(null), D = (0, m.q)(r), M = (0, u.e7)([h.Z], () => h.Z.getGame(r)), L = null !== (t = null == M ? void 0 : M.name) && void 0 !== t ? t : null == D ? void 0 : D.name, W = (e, t) => {
       var n;
       (0, x.UE)({
         gameName: null != L ? L : "",
@@ -233,10 +233,10 @@ let F = e => e.filter(N.z6).slice(0, 5),
         authorId: l
       }), (0, b.Jn)()
     }), (0, m.Z)(w), a.useEffect(() => {
-      j.startsWith("en") || (null == D ? void 0 : D.summaryLocalized) != null || p.Z.getDetectableGamesSupplemental([r], {
+      j.startsWith("en") || (null == M ? void 0 : M.summaryLocalized) != null || p.Z.getDetectableGamesSupplemental([r], {
         forceFetch: !0
       })
-    }, [r, null == D ? void 0 : D.summaryLocalized, j]), a.useEffect(() => {
+    }, [r, null == M ? void 0 : M.summaryLocalized, j]), a.useEffect(() => {
       (async () => {
         if (0 === w.length) {
           S(null);
@@ -267,15 +267,15 @@ let F = e => e.filter(N.z6).slice(0, 5),
         similarGames: F(w),
         officialGuildId: null == A ? void 0 : null === (e = A.guild) || void 0 === e ? void 0 : e.id
       })
-    }), null == D || null == M) ? null : (0, n.jsx)(d.Y0X, {
+    }), null == M || null == D) ? null : (0, n.jsx)(d.Y0X, {
       transitionState: s,
       size: d.CgR.DYNAMIC,
       className: i()(v, R.gameProfileModal),
       children: (0, n.jsxs)(d.Ttm, {
         orientation: "auto",
         children: [(0, n.jsx)(B, {
-          detectedGame: D,
-          application: M,
+          detectedGame: M,
+          application: D,
           entries: T,
           viewId: N,
           trackAction: W
@@ -283,8 +283,8 @@ let F = e => e.filter(N.z6).slice(0, 5),
           children: (0, n.jsxs)("div", {
             className: i()(R.content, R.mainContent),
             children: [(0, n.jsx)(K, {
-              detectedGame: D,
-              application: M,
+              detectedGame: M,
+              application: D,
               entries: T,
               officialGuildInvite: A,
               similarGames: w,
@@ -293,7 +293,7 @@ let F = e => e.filter(N.z6).slice(0, 5),
               viewId: N,
               trackAction: W
             }), (0, n.jsx)(U, {
-              detectedGame: D,
+              detectedGame: M,
               setOfficialGuildInvite: k,
               trackAction: W,
               onClose: c,

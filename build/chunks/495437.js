@@ -1,14 +1,14 @@
 /** Chunk was on 30806 **/
 n.d(t, {
-  EB: () => s,
+  EB: () => o,
   Je: () => a,
-  cf: () => o,
+  cf: () => s,
   mh: () => u
 });
 var i = n(570140),
   r = n(881052),
   l = n(824389);
-let s = async e => {
+let o = async e => {
   i.Z.dispatch({
     type: "GUILD_PRODUCTS_FETCH",
     guildId: e
@@ -26,7 +26,7 @@ let s = async e => {
       guildId: e
     })
   }
-}, o = async (e, t) => {
+}, s = async (e, t) => {
   i.Z.dispatch({
     type: "GUILD_PRODUCT_FETCH",
     productId: t

@@ -1,18 +1,18 @@
 /** Chunk was on 88712 **/
 r.d(t, {
-  Z: () => c,
-  o: () => a
+  Z: () => a,
+  o: () => s
 });
 var n = r(442837),
   i = r(522474),
   l = r(658785),
   o = r(981631);
 
-function c(e) {
+function a(e) {
   let {
     location: t,
     options: r
-  } = e, n = a(), {
+  } = e, n = s(), {
     showKeybindIndicators: i
   } = l.Z.useExperiment({
     location: t
@@ -20,6 +20,6 @@ function c(e) {
   return i && n
 }
 
-function a() {
+function s() {
   return !(0, n.e7)([i.Z], () => i.Z.getWindowVisible(o.KJ3.ACTIVITY_POPOUT))
 }

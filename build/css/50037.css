@@ -1,6 +1,6 @@
 /**
   Module ID: 50037
-  Original File Name: 50005c299401a6ca
+  Original File Name: 197a9491c31e3a1b
 **/
 @value minColumnWidth: 460px;
 
@@ -3847,32 +3847,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     opacity: .24
 }
 
-.voiceUser_adebba {
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    opacity: .4
-}
-
-.voiceUser_adebba+.voiceUser_adebba {
-    margin-top: var(--spacing-8)
-}
-
-.voiceUser_adebba.flipped_adebba {
-    flex-direction: row-reverse
-}
-
-.voiceUser_adebba.flipped_adebba .avatar_adebba {
-    margin-left: -3px;
-    margin-right: 0
-}
-
-.voiceUser_adebba.flipped_adebba .username_adebba {
-    margin-left: 0;
-    margin-right: var(--spacing-4)
-}
-
 .effect_adebba {
     position: absolute
 }
@@ -3884,6 +3858,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding: var(--spacing-4) var(--spacing-8);
     justify-content: center;
     align-items: center;
+    margin-left: var(--spacing-4);
     border-radius: var(--radius-lg);
     opacity: .8;
     flex-shrink: 1;
@@ -3897,7 +3872,43 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     white-space: nowrap
 }
 
-.clanTag_adebba,.username_adebba {
+.username_adebba.streaming_adebba {
+    padding-right: var(--spacing-4)
+}
+
+.voiceUser_adebba {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    opacity: .4
+}
+
+.voiceUser_adebba+.voiceUser_adebba {
+    margin-top: var(--spacing-8)
+}
+
+.voiceUser_adebba.flipped_adebba {
+    flex-direction: row;
+    justify-content: flex-end
+}
+
+.voiceUser_adebba.flipped_adebba .avatar_adebba {
+    margin-left: 0;
+    margin-right: 0
+}
+
+.voiceUser_adebba.flipped_adebba .username_adebba {
+    margin-left: 0;
+    padding-left: var(--spacing-4);
+    margin-right: var(--spacing-4)
+}
+
+.voiceUser_adebba.flipped_adebba .voiceIcons_adebba {
+    margin-right: var(--spacing-4)!important
+}
+
+.clanTag_adebba {
     margin-left: var(--spacing-4)
 }
 
@@ -4158,4 +4169,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-right: auto
 }
 
-/*# sourceMappingURL=50005c299401a6ca.css.map*/
+/*# sourceMappingURL=197a9491c31e3a1b.css.map*/

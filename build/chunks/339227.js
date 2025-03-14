@@ -287,8 +287,7 @@ function M(e, t, n) {
     i = {
       returnMentionIds: !0,
       disableAutoBlockNewlines: !0,
-      guildId: t,
-      isSlate: !0
+      guildId: t
     },
     o = n ? w : P,
     a = n ? x : L,

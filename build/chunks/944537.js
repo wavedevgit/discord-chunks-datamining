@@ -6,7 +6,7 @@ n.d(t, {
 var i, r = n(15729),
   l = n(731965);
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -25,7 +25,7 @@ function s(e) {
   return e
 }
 
-function o(e, t) {
+function s(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -41,14 +41,14 @@ var a = ((i = {})[i.ALL_CHANNELS_ACCESS = 0] = "ALL_CHANNELS_ACCESS", i[i.SOME_C
 let u = (0, r.U)(e => ({
   listings: {},
   setListing: (t, n) => (0, l.j)(() => e(e => ({
-    listings: o(s({}, e.listings), {
+    listings: s(o({}, e.listings), {
       [t]: n(e.listings[t])
     })
   }))),
   editStateIdsForGroup: {},
   setEditStateIdsForGroup: (t, n) => (0, l.j)(() => {
     e(e => ({
-      editStateIdsForGroup: o(s({}, e.editStateIdsForGroup), {
+      editStateIdsForGroup: s(o({}, e.editStateIdsForGroup), {
         [t]: n(e.editStateIdsForGroup[t])
       })
     }))

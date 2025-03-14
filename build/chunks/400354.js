@@ -1,6 +1,6 @@
 /** Chunk was on 88712 **/
 r.d(t, {
-  l: () => c
+  l: () => a
 });
 var n = r(200651),
   i = r(192379),
@@ -27,31 +27,31 @@ let o = {
       duration: 70
     }
   },
-  c = e => {
+  a = e => {
     let t = i.useRef(null),
-      c = i.useRef(e);
-    c.current = e;
-    let a = i.useMemo(() => () => {
+      a = i.useRef(e);
+    a.current = e;
+    let s = i.useMemo(() => () => {
         null != t.current && t.current.play(e)
       }, [e]),
-      u = i.useCallback(() => {
+      c = i.useCallback(() => {
         if (null == t.current) return;
         let r = "deafen" === e ? "hover_undeafened" : "hover_deafened";
         t.current.play(r)
       }, [e]);
     return {
       events: {
-        onClick: a,
-        onMouseEnter: u,
+        onClick: s,
+        onMouseEnter: c,
         onMouseLeave: i.useCallback(() => {
           if (null == t.current) return;
           let r = "deafen" === e ? "hover_undeafened" : "hover_deafened";
           t.current.stopIfPlaying(r)
         }, [e])
       },
-      play: a,
+      play: s,
       Component: i.useCallback(e => {
-        var i, a;
+        var i, s;
         return (0, n.jsx)(l.L, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
@@ -69,20 +69,20 @@ let o = {
             })
           }
           return e
-        }({}, e), a = a = {
+        }({}, e), s = s = {
           src: () => r.e("68449").then(r.t.bind(r, 406785, 19)),
           ref: t,
-          initialAnimation: c.current,
+          initialAnimation: a.current,
           markers: o
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var n = Object.getOwnPropertySymbols(e);
             r.push.apply(r, n)
           }
           return r
-        })(Object(a)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+        })(Object(s)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
         }), i))
       }, [])
     }

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120);
 var i, r = n(442837),
   l = n(570140),
-  s = n(592125),
-  o = n(944486),
+  o = n(592125),
+  s = n(944486),
   a = n(9156);
 
 function u(e, t, n) {
@@ -20,10 +20,10 @@ let d = {},
   c = {},
   h = {};
 
-function p() {
-  let e = o.Z.getChannelId();
+function f() {
+  let e = s.Z.getChannelId();
   if (null == e) return;
-  let t = s.Z.getChannel(e);
+  let t = o.Z.getChannel(e);
   if (null == t || null == t.guild_id) return;
   let n = t.guild_id;
   if (null == h[e] && (h[e] = 0), t.isThread() || a.ZP.isOptInEnabled(n) && !a.ZP.isChannelOrParentOptedIn(n, t.id)) {
@@ -36,10 +36,10 @@ function p() {
   }
   if ((null == c[n] || !c[n].has(e)) && h[e] > 50) return d[n].add(e), !0
 }
-class f extends(i = r.ZP.PersistedStore) {
+class p extends(i = r.ZP.PersistedStore) {
   initialize(e) {
     var t, n;
-    if (this.syncWith([o.Z], p), null == e) return;
+    if (this.syncWith([s.Z], f), null == e) return;
     let {
       suggestedChannels: i,
       dismissedSuggestions: r,
@@ -62,8 +62,8 @@ class f extends(i = r.ZP.PersistedStore) {
     }
   }
 }
-u(f, "displayName", "FavoritesSuggestionStore"), u(f, "persistKey", "FavoritesSuggestionStore");
-let g = new f(l.Z, {
+u(p, "displayName", "FavoritesSuggestionStore"), u(p, "persistKey", "FavoritesSuggestionStore");
+let g = new p(l.Z, {
   DISMISS_FAVORITE_SUGGESTION: function(e) {
     let {
       guildId: t,

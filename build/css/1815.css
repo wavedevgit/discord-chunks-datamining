@@ -1,6 +1,6 @@
 /**
   Module ID: 1815
-  Original File Name: fd047231ce54ccad
+  Original File Name: 1f817a8eabd3fcfa
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -9868,7 +9868,7 @@ html .invoiceCancelRow_b9f95d {
     top: -4px;
     right: -4px;
     border-radius: 50%;
-    background: var(--background-accent);
+    background: var(--background-secondary);
     width: 24px;
     height: 24px;
     display: flex;
@@ -17169,4 +17169,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=fd047231ce54ccad.css.map*/
+/*# sourceMappingURL=1f817a8eabd3fcfa.css.map*/
