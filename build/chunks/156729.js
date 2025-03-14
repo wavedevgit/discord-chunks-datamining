@@ -15,8 +15,8 @@ var r, i = n(200651),
   p = n(46141),
   h = n(351402),
   f = n(823379),
-  x = n(464179),
-  b = n(211667),
+  b = n(464179),
+  x = n(211667),
   N = n(244526),
   _ = n(388032),
   E = n(84768);
@@ -88,8 +88,8 @@ class S extends(r = s.PureComponent) {
         className: E.sectionHeader,
         variant: "text-sm/normal",
         children: _.NW.string(_.t["50Auo6"])
-      }), (0, i.jsx)(x.ZP, O(C({}, e), {
-        mode: x.ZP.Modes.EDIT,
+      }), (0, i.jsx)(b.ZP, O(C({}, e), {
+        mode: b.ZP.Modes.EDIT,
         layout: r,
         onBillingAddressChange: this.handleAddressUpdate,
         error: t
@@ -109,7 +109,7 @@ class S extends(r = s.PureComponent) {
         className: E.sectionHeader,
         variant: "text-sm/normal",
         children: _.NW.string(_.t.Fo2YPz)
-      }), (0, i.jsx)(b.Z, {
+      }), (0, i.jsx)(x.Z, {
         expirationDate: n,
         onCardInfoChange: this.handleExpirationDateUpdate,
         error: this.props.updateError

@@ -17,8 +17,8 @@ var r = n(200651),
   p = n(355467),
   h = n(37234),
   f = n(821849),
-  x = n(230711),
-  b = n(497321),
+  b = n(230711),
+  x = n(497321),
   N = n(634894),
   _ = n(410030),
   E = n(607070),
@@ -64,7 +64,7 @@ function et(e) {
     theme: s
   } = e, a = null != t.trialId, l = t.planIdFromItems === Y.Xh.PREMIUM_YEAR_TIER_2, c = n || a, d = null != t.trialEndsAt ? o()(t.trialEndsAt).diff(o()(), "d") : 0, g = Y.GP[t.planIdFromItems], p = w.ZP.formatPriceString(w.ZP.getDefaultPrice(g.id), g.interval);
   if (c) {
-    var h, f, x;
+    var h, f, b;
     return (0, r.jsxs)(r.Fragment, {
       children: [(a || !l) && (0, r.jsx)(G.Cy, {
         text: a ? q.NW.string(q.t.qYKftb) : q.NW.string(q.t.EyjDRE),
@@ -85,7 +85,7 @@ function et(e) {
         }) : q.NW.formatToPlainString(q.t["3Ziutb"], {
           percent: null !== (f = null == i ? void 0 : i.percentage) && void 0 !== f ? f : Y.M_,
           regularPrice: p,
-          numMonths: null !== (x = null == i ? void 0 : i.duration) && void 0 !== x ? x : Y.rt
+          numMonths: null !== (b = null == i ? void 0 : i.duration) && void 0 !== b ? b : Y.rt
         })
       })]
     })
@@ -173,7 +173,7 @@ function en() {
           D.default.track(K.rMx.PREMIUM_SETTINGS_INTERACTED, {
             cta_type: "to_subscriptions_button",
             target: "subscriptions settings"
-          }), x.Z.open(K.oAB.SUBSCRIPTIONS)
+          }), b.Z.open(K.oAB.SUBSCRIPTIONS)
         },
         children: (0, r.jsx)(m.Text, {
           className: X.__invalid_managePlanButtonCTA,
@@ -293,7 +293,7 @@ let es = function() {
       forceFetch: !0
     }),
     h = (0, B.n)(),
-    x = null == h ? void 0 : h.countryCode,
+    b = null == h ? void 0 : h.countryCode,
     _ = (0, c.e7)([A.Z], () => A.Z.enabled),
     E = "PremiumManagementSettings";
   (0, N.j)({
@@ -306,11 +306,11 @@ let es = function() {
   let y = (0, M.b)(E);
   i.useEffect(() => {
     g.Z.wait(async () => {
-      _ || e || await Promise.all([p.jg(), p.tZ(), (0, f.Y2)(x, null, K.JjL.DISCOVERY)]), o(!1)
+      _ || e || await Promise.all([p.jg(), p.tZ(), (0, f.Y2)(b, null, K.JjL.DISCOVERY)]), o(!1)
     })
-  }, [x, _, e]);
+  }, [b, _, e]);
   let [R, Z] = i.useState(!1);
-  if (_) return (0, r.jsx)(b.Z, {});
+  if (_) return (0, r.jsx)(x.Z, {});
   if (e) return (0, r.jsx)(T.c8, {});
   let w = s && null !== n && a,
     k = u !== Y.a$.NONE;

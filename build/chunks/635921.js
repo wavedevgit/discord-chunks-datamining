@@ -19,8 +19,8 @@ var i = n(120356),
   p = n(104494),
   h = n(639119),
   f = n(105759),
-  x = n(346497),
-  b = n(422034),
+  b = n(346497),
+  x = n(422034),
   N = n(206127),
   _ = n(710220),
   E = n(318747),
@@ -98,7 +98,7 @@ let y = e => {
     isDarkMode: A
   } = e, {
     analyticsLocations: P
-  } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_HERO_CTA), R = (0, g._O)(), D = (0, p.Ng)(), Z = (0, p.Wp)(D, C.Si.TIER_2) ? C.Si.TIER_2 : void 0, w = (0, h.N)(), k = (0, m.Nx)(), W = (0, x.Vi)(), L = (0, a.e7)([u.Z], () => u.Z.affinities), B = (0, f.Z)(), M = y === C.EZ.ApplicationStoreHome && null != B, U = L.length > 0;
+  } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_HERO_CTA), R = (0, g._O)(), D = (0, p.Ng)(), Z = (0, p.Wp)(D, C.Si.TIER_2) ? C.Si.TIER_2 : void 0, w = (0, h.N)(), k = (0, m.Nx)(), W = (0, b.Vi)(), L = (0, a.e7)([u.Z], () => u.Z.affinities), B = (0, f.Z)(), M = y === C.EZ.ApplicationStoreHome && null != B, U = L.length > 0;
   return (0, r.jsx)(c.Gt, {
     value: P,
     children: (0, r.jsxs)("div", {
@@ -117,7 +117,7 @@ let y = e => {
           referrer: B
         }) : U ? (0, r.jsx)("div", {
           className: v.affinityDescription,
-          children: (0, r.jsx)(b.Z, {
+          children: (0, r.jsx)(x.Z, {
             textColor: "always-white",
             smallerText: !i
           })

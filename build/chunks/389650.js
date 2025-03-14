@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(825209),
   h = n(721383),
   f = n(612226),
-  x = n(714338),
-  b = n(924557),
+  b = n(714338),
+  x = n(924557),
   N = n(600164),
   _ = n(74299),
   E = n(365023),
@@ -86,7 +86,7 @@ class V extends i.PureComponent {
     let {
       keybind: e
     } = this.props, t = T.BB(e.shortcut);
-    return x.Z.hasBind(t) ? (0, r.jsx)(u.R94, {
+    return b.Z.hasBind(t) ? (0, r.jsx)(u.R94, {
       className: D.keybindMessage,
       type: u.geA.DESCRIPTION,
       style: {
@@ -410,7 +410,7 @@ function F() {
   let e = (0, c.e7)([C.ZP], () => C.ZP.getState()),
     t = (0, c.e7)([j.Z], () => (0, _.Z)(j.Z)),
     n = (0, c.e7)([O.default], () => O.default.isSupported()),
-    i = (0, b.Go)();
+    i = (0, x.Go)();
   return (0, r.jsx)(G, {
     keybinds: e,
     canGoLive: t,

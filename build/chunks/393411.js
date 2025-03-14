@@ -18,8 +18,8 @@ var i = n(120356),
   p = n(710845),
   h = n(963249),
   f = n(301766),
-  x = n(594174),
-  b = n(509545),
+  b = n(594174),
+  x = n(509545),
   N = n(931331),
   _ = n(754347),
   E = n(122289),
@@ -203,7 +203,7 @@ let z = function(e) {
     analyticsLocation: H
   } = e, z = "subscription_header", {
     analyticsLocations: Y
-  } = (0, m.ZP)(u.Z.SUBSCRIPTION_HEADER), K = (0, o.e7)([x.default], () => x.default.getCurrentUser()), {
+  } = (0, m.ZP)(u.Z.SUBSCRIPTION_HEADER), K = (0, o.e7)([b.default], () => b.default.getCurrentUser()), {
     fractionalState: q
   } = (0, g.Z)({
     forceFetch: !1
@@ -242,7 +242,7 @@ let z = function(e) {
     },
     el = () => {
       if (null != i && null != i.premiumPlanIdFromItems) {
-        let e = b.Z.get(i.premiumPlanIdFromItems);
+        let e = x.Z.get(i.premiumPlanIdFromItems);
         if (null == e) {
           B.info("Plan not fetched for plan id: ".concat(i.premiumPlanIdFromItems));
           return

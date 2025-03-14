@@ -1,63 +1,63 @@
-/** Chunk was on 55849 **/
+/** Chunk was on 55166 **/
 n.d(t, {
-  Z: () => p
+  Z: () => f
 });
-var r, a, l, i = n(442837),
-  o = n(570140);
-let s = () => ({
+var i, r, o, a = n(442837),
+  l = n(570140);
+let c = () => ({
     isFetching: !1,
     lastFetchedAt: null,
     error: null
   }),
-  c = [],
-  u = s();
-class d extends(l = i.ZP.Store) {
+  d = [],
+  s = c();
+class _ extends(o = a.ZP.Store) {
   get isFetching() {
-    return u.isFetching
+    return s.isFetching
   }
   get fetchError() {
-    return u.error
+    return s.error
   }
   get shouldFetch() {
     var e;
-    return Date.now() - (null !== (e = u.lastFetchedAt) && void 0 !== e ? e : 0) > 3e5 && !u.isFetching
+    return Date.now() - (null !== (e = s.lastFetchedAt) && void 0 !== e ? e : 0) > 3e5 && !s.isFetching
   }
   getAvatars() {
-    return c
+    return d
   }
 }
-a = "RecentAvatarsStore", (r = "displayName") in d ? Object.defineProperty(d, r, {
-  value: a,
+r = "RecentAvatarsStore", (i = "displayName") in _ ? Object.defineProperty(_, i, {
+  value: r,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : d[r] = a;
-let p = new d(o.Z, {
+}) : _[i] = r;
+let f = new _(l.Z, {
   RECENT_AVATARS_FETCH_START: function() {
-    u.isFetching = !0, u.error = null
+    s.isFetching = !0, s.error = null
   },
   RECENT_AVATARS_FETCH_SUCCESS: function(e) {
     let {
       avatars: t
     } = e;
-    c = t, u.isFetching = !1, u.lastFetchedAt = Date.now()
+    d = t, s.isFetching = !1, s.lastFetchedAt = Date.now()
   },
   RECENT_AVATARS_FETCH_FAILURE: function(e) {
     let {
       error: t
     } = e;
-    u.isFetching = !1, u.error = t
+    s.isFetching = !1, s.error = t
   },
   RECENT_AVATARS_UPDATE: function() {
-    u.lastFetchedAt = 0
+    s.lastFetchedAt = 0
   },
   RECENT_AVATAR_DELETE: function(e) {
     let {
       avatarId: t
     } = e;
-    c = c.filter(e => e.id !== t)
+    d = d.filter(e => e.id !== t)
   },
   LOGOUT: function() {
-    c = [], u = s()
+    d = [], s = c()
   }
 })

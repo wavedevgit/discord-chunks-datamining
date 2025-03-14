@@ -27,8 +27,8 @@ function g(e) {
       hideDescriptionUntilUnlock: h,
       onAction: f
     } = i,
-    x = h && !a,
-    b = a ? "header-primary" : "text-muted",
+    b = h && !a,
+    x = a ? "header-primary" : "text-muted",
     N = a ? "header-secondary" : "text-muted",
     _ = l()(n),
     E = null != f && a,
@@ -54,12 +54,12 @@ function g(e) {
         children: (0, c.Y4)(_)
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
-        color: b,
+        color: x,
         children: g()
       }), (0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
         color: N,
-        children: x ? "?????" : p()
+        children: b ? "?????" : p()
       })]
     })]
   })

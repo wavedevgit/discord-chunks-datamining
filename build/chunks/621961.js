@@ -1,23 +1,23 @@
 /** Chunk was on 55849 **/
 n.d(t, {
-  C6: () => l,
+  C6: () => a,
   GY: () => o,
   Kq: () => i
 });
 var r = n(981631),
-  a = n(486324);
+  l = n(486324);
 
-function l(e, t) {
+function a(e, t) {
   let {
     isGIF: n
   } = t;
-  if (e === a.pC.GUILD_BANNER) return n ? r.oNc.ANIMATED_BANNER : r.oNc.BANNER
+  if (e === l.pC.GUILD_BANNER) return n ? r.oNc.ANIMATED_BANNER : r.oNc.BANNER
 }
 
 function i(e) {
-  return e === a.pC.AVATAR || e === a.pC.BANNER
+  return e === l.pC.AVATAR || e === l.pC.BANNER
 }
 
 function o(e) {
-  return e === a.pC.BANNER
+  return e === l.pC.BANNER
 }

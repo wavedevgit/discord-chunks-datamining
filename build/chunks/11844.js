@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => x
+  Z: () => b
 });
 var r = n(200651),
   i = n(192379),
@@ -46,16 +46,16 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = function() {
+let b = function() {
   let e = i.useRef(null),
     {
       analyticsLocations: t
     } = (0, a.ZP)(),
     {
-      fractionalState: x
+      fractionalState: b
     } = (0, l.Z)();
 
-  function b(n) {
+  function x(n) {
     null != e.current && (0, s.Mr3)(e.current), (0, c.u)({
       analyticsLocation: {
         page: m.ZY5.GUILD_BOOSTING_USER_SETTINGS,
@@ -73,7 +73,7 @@ let x = function() {
         default: e
       } = await Promise.resolve().then(n.bind(n, 719228));
       return t => (0, r.jsx)(e, f(h({}, t), {
-        onSelectGuild: b
+        onSelectGuild: x
       }))
     }, {
       onCloseRequest: () => {
@@ -82,7 +82,7 @@ let x = function() {
     })
   }
   let _ = (0, u.aq)({
-    fractionalState: x
+    fractionalState: b
   });
   return (0, r.jsxs)("div", {
     className: p.wrapper,

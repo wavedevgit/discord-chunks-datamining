@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => x
+  Z: () => b
 }), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -17,16 +17,16 @@ var r = n(200651),
   h = n(993553),
   f = n(960700);
 
-function x(e) {
+function b(e) {
   let {
     cta: t,
     storeListing: n,
     className: s
   } = e, {
-    applicationId: x,
-    benefits: b,
+    applicationId: b,
+    benefits: x,
     description: N
-  } = n, _ = i.useMemo(() => null == n.thumbnail ? null : (0, p.q)(x, n.thumbnail, 256), [x, n.thumbnail]), {
+  } = n, _ = i.useMemo(() => null == n.thumbnail ? null : (0, p.q)(b, n.thumbnail, 256), [b, n.thumbnail]), {
     data: E
   } = (0, d.X)(n.skuId), j = i.useMemo(() => {
     if (null == E || 0 === E.length) return null;
@@ -60,9 +60,9 @@ function x(e) {
         variant: "text-sm/medium",
         children: N
       })
-    }), null != b && b.length > 0 && (0, r.jsx)("div", {
+    }), null != x && x.length > 0 && (0, r.jsx)("div", {
       className: f.benefits,
-      children: b.map(e => {
+      children: x.map(e => {
         let {
           id: t,
           name: n,
@@ -71,7 +71,7 @@ function x(e) {
         } = e;
         return (0, r.jsx)(o.Gm, {
           header: n,
-          icon: (0, u.n)(x, s),
+          icon: (0, u.n)(b, s),
           description: i
         }, t)
       })

@@ -17,8 +17,8 @@ var r = n(200651),
   p = n(622535),
   h = n(481060),
   f = n(727637),
-  x = n(607070),
-  b = n(100527),
+  b = n(607070),
+  x = n(100527),
   N = n(906732),
   _ = n(693728),
   E = n(333867),
@@ -230,9 +230,9 @@ let ec = e => {
       tab: Y
     } = e, {
       analyticsLocations: q
-    } = (0, N.ZP)([...C ? [b.Z.COLLECTIBLES_SHOP_HOME_SCREEN] : [], b.Z.COLLECTIBLES_SHOP_CARD]), eo = i.useRef(null), eg = (0, f.Z)(eo), [eh, ef] = i.useState(!1), ex = eg || eh, eb = (0, $.f)(t), {
+    } = (0, N.ZP)([...C ? [x.Z.COLLECTIBLES_SHOP_HOME_SCREEN] : [], x.Z.COLLECTIBLES_SHOP_CARD]), eo = i.useRef(null), eg = (0, f.Z)(eo), [eh, ef] = i.useState(!1), eb = eg || eh, ex = (0, $.f)(t), {
       previewingVariantIndex: eN
-    } = eb, e_ = (0, k.T)(t), eE = (0, g.e7)([x.Z], () => x.Z.useReducedMotion), ej = T.ZP.canUseCollectibles(n), eC = i.useMemo(() => (0, P.BH)(t, ej), [t, ej]), eO = (0, P.G1)(t), ev = (0, P.rN)(t), [eS, eT, eI] = (0, g.Wu)([y.Z], () => [y.Z.isClaiming === t.skuId, null != y.Z.isClaiming && y.Z.isClaiming !== t.skuId, y.Z.purchases]), ey = (0, Q.o)(t, eI, eN), eA = (0, g.e7)([O.Z], () => (0, h.wjy)(O.Z.theme)), eP = (0, P.Yq)(t.skuId), eR = s.skuId === u.T.ANIME_V3 && (0, P.WW)(t.skuId), {
+    } = ex, e_ = (0, k.T)(t), eE = (0, g.e7)([b.Z], () => b.Z.useReducedMotion), ej = T.ZP.canUseCollectibles(n), eC = i.useMemo(() => (0, P.BH)(t, ej), [t, ej]), eO = (0, P.G1)(t), ev = (0, P.rN)(t), [eS, eT, eI] = (0, g.Wu)([y.Z], () => [y.Z.isClaiming === t.skuId, null != y.Z.isClaiming && y.Z.isClaiming !== t.skuId, y.Z.purchases]), ey = (0, Q.o)(t, eI, eN), eA = (0, g.e7)([O.Z], () => (0, h.wjy)(O.Z.theme)), eP = (0, P.Yq)(t.skuId), eR = s.skuId === u.T.ANIME_V3 && (0, P.WW)(t.skuId), {
       hoverVariant: eD
     } = (0, R.E)("CollectiblesShopTallCard"), eZ = s.skuId === u.T.STORM && "1268362891946627103" === t.skuId, ew = (0, Z.hv)("CollectiblesShopTallCard"), ek = (0, A.o)(t, eI), eW = (0, J.W)(t, ek), eL = (0, P.XM)(eW, ej, !1), {
       isPurchased: eB,
@@ -291,8 +291,8 @@ let ec = e => {
           tab: Y
         })
       },
-      e2 = e1(b.Z.COLLECTIBLES_SHOP_CARD),
-      e6 = e1(b.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON),
+      e2 = e1(x.Z.COLLECTIBLES_SHOP_CARD),
+      e6 = e1(x.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON),
       e3 = () => (0, r.jsx)("div", {
         className: es.hoverUpsellContainer,
         children: (0, r.jsx)(j.Z, {
@@ -321,9 +321,9 @@ let ec = e => {
       children: (0, r.jsx)(h.tEY, {
         children: (0, r.jsxs)(h.kL8, {
           className: a()(eA ? es.shopCardDark : es.shopCard, {
-            [es.partiallyOwned]: eM && !ex,
+            [es.partiallyOwned]: eM && !eb,
             [es.shopCardAnimation]: !eE && eD !== R.D.NO_MOVEMENT,
-            [eA ? es.shopCardDarkHighlighted : es.shopCardHighlighted]: ex,
+            [eA ? es.shopCardDarkHighlighted : es.shopCardHighlighted]: eb,
             [es.mysteryShopCard]: eZ
           }),
           ref: eo,
@@ -344,33 +344,33 @@ let ec = e => {
           }), (0, r.jsx)("div", {
             className: es.preview,
             children: (0, c.EQ)(t.type).with(m.Z.PROFILE_EFFECT, () => (0, r.jsx)(eu, {
-              isHighlighted: ex,
+              isHighlighted: eb,
               profileEffectId: ey.id,
               isPurchased: eB
             })).with(m.Z.AVATAR_DECORATION, () => (o()(ey.type === m.Z.AVATAR_DECORATION, "ts-match already checked the type"), (0, r.jsx)(em, {
               item: ey,
               user: n,
               isStormMysteryItem: eZ,
-              isHighlighted: ex,
+              isHighlighted: eb,
               isPurchased: eB
             }))).with(m.Z.NAMEPLATE, () => (0, r.jsx)(ep, {
               user: n,
               isDarkTheme: eA,
               nameplate: ey,
-              isHighlighted: ex,
+              isHighlighted: eb,
               isPurchased: eB
             })).with(m.Z.BUNDLE, () => (0, r.jsx)(K.d, {
               product: t,
               user: n,
               isPurchased: eB,
-              isHighlighted: ex
+              isHighlighted: eb
             })).with(m.Z.VARIANTS_GROUP, () => {
               if (null == t.variants || 0 === t.variants.length) return null;
               let e = t.variants[eV];
               return null == e ? null : (0, c.EQ)(e.type).with(m.Z.PROFILE_EFFECT, () => {
                 let [t] = e.items;
                 return (0, r.jsx)(eu, {
-                  isHighlighted: ex,
+                  isHighlighted: eb,
                   profileEffectId: t.id,
                   isPurchased: eB && !eG
                 })
@@ -380,7 +380,7 @@ let ec = e => {
                   item: t,
                   user: n,
                   isStormMysteryItem: eZ,
-                  isHighlighted: ex,
+                  isHighlighted: eb,
                   isPurchased: eB
                 })
               }).otherwise(() => null)
@@ -406,10 +406,10 @@ let ec = e => {
               children: e_
             }), t.type === m.Z.VARIANTS_GROUP ? (0, r.jsx)(z.P, {
               variantGroupProduct: t,
-              previewingVariantIndexProps: eb,
+              previewingVariantIndexProps: ex,
               setIsHoveringOnSwitch: eF,
               purchases: eI,
-              minimal: !ex,
+              minimal: !eb,
               alternativeBackgroundColor: (null == ey ? void 0 : ey.type) === m.Z.PROFILE_EFFECT
             }) : null, (0, r.jsxs)("div", {
               className: es.detailsWrapper,

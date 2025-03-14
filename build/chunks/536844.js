@@ -23,13 +23,13 @@ let p = e => {
     analyticsLocation: h
   } = e, {
     analyticsLocations: f
-  } = (0, l.ZP)(p), x = (0, o.rK)(), {
-    enabled: b
+  } = (0, l.ZP)(p), b = (0, o.rK)(), {
+    enabled: x
   } = o.RO.useExperiment({
     location: "GiftNitro"
   }, {
-    autoTrackExposure: x
-  }), N = b && x;
+    autoTrackExposure: b
+  }), N = x && b;
   return (0, r.jsx)(l.Gt, {
     value: f,
     children: (0, r.jsxs)("div", {

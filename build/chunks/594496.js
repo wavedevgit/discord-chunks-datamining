@@ -17,8 +17,8 @@ var i = n(512722),
   p = n(513901),
   h = n(451392),
   f = n(906364),
-  x = n(643879),
-  b = n(621853),
+  b = n(643879),
+  x = n(621853),
   N = n(271383),
   _ = n(594174),
   E = n(74538),
@@ -98,14 +98,14 @@ function R(e) {
       errors: O.Z.getErrors(),
       guild: O.Z.getGuild()
     }
-  }), G = (0, x.SD)({
+  }), G = (0, b.SD)({
     userId: Z.id,
     image: w
   }), F = null != D ? D : V;
   s()(null != F, "guild should not be null");
   let H = (0, o.gS)(F.id),
     z = (0, a.e7)([N.ZP], () => null == F.id ? null : N.ZP.getMember(F.id, Z.id)),
-    Y = (0, a.e7)([b.Z], () => b.Z.getGuildMemberProfile(Z.id, F.id)),
+    Y = (0, a.e7)([x.Z], () => x.Z.getGuildMemberProfile(Z.id, F.id)),
     K = E.ZP.canUsePremiumProfileCustomization(Z),
     q = (0, c.GH)(w, null == z ? void 0 : z.avatar),
     X = (0, c.f$)(W, null == Y ? void 0 : Y.banner),

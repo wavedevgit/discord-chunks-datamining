@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(58765),
   h = n(429789),
   f = n(726763),
-  x = n(208113),
-  b = n(894939),
+  b = n(208113),
+  x = n(894939),
   N = n(710808),
   _ = n(625205),
   E = n(325808),
@@ -93,7 +93,7 @@ function U() {
       })
     }), (0, r.jsx)(c.F, {
       setting: w.s6.VOICE_AND_VIDEO_SOUNDS,
-      children: (0, r.jsx)(b.Z, {})
+      children: (0, r.jsx)(x.Z, {})
     }), (0, r.jsxs)(c.F, {
       setting: w.s6.VOICE_AND_VIDEO_VIDEO,
       children: [(0, r.jsx)("div", {
@@ -113,7 +113,7 @@ function U() {
         children: [(0, r.jsx)(f.Z, {}), (0, r.jsx)(A.Z, {}), (0, r.jsx)(c.F, {
           setting: w.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
           children: (0, r.jsx)(P.Z, {})
-        }), (0, r.jsx)(T.Z, {}), (0, r.jsx)(C.Z, {}), (0, r.jsx)(h.Z, {}), k && (0, r.jsx)(v.Z, {}), (0, r.jsx)(x.Z, {}), (0, r.jsx)(O.Z, {}), (0, r.jsx)(S.Z, {}), (0, r.jsx)(I.Z, {
+        }), (0, r.jsx)(T.Z, {}), (0, r.jsx)(C.Z, {}), (0, r.jsx)(h.Z, {}), k && (0, r.jsx)(v.Z, {}), (0, r.jsx)(b.Z, {}), (0, r.jsx)(O.Z, {}), (0, r.jsx)(S.Z, {}), (0, r.jsx)(I.Z, {
           refreshStyles: !0
         }), (0, r.jsx)(a.$i$, {
           className: B.marginBottom40

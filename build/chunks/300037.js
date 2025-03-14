@@ -17,8 +17,8 @@ var i = n(120356),
   p = n(267642),
   h = n(981631),
   f = n(474936),
-  x = n(388032),
-  b = n(935908);
+  b = n(388032),
+  x = n(935908);
 let N = function(e) {
   let {
     className: t,
@@ -28,39 +28,39 @@ let N = function(e) {
     fractionalState: _
   } = (0, o.Z)(), E = _ === f.a$.FP_ONLY;
   return null == N ? (0, r.jsx)("div", {
-    className: s()(t, b.guildContainer),
+    className: s()(t, x.guildContainer),
     children: (0, r.jsx)("div", {
-      className: b.guildInfoContainer,
+      className: x.guildInfoContainer,
       children: (0, r.jsx)(l.Text, {
         variant: "text-lg/bold",
-        children: x.NW.string(x.t["6Kwwur"])
+        children: b.NW.string(b.t["6Kwwur"])
       })
     })
   }) : (0, r.jsxs)("div", {
-    className: s()(t, b.guildContainer),
+    className: s()(t, x.guildContainer),
     children: [(0, r.jsx)(c.Z, {
-      className: b.__invalid_guildIcon,
+      className: x.__invalid_guildIcon,
       guild: N,
       size: c.Z.Sizes.LARGER
     }), (0, r.jsxs)("div", {
-      className: b.guildInfoContainer,
+      className: x.guildInfoContainer,
       children: [(0, r.jsx)(l.Text, {
         variant: "text-lg/bold",
         children: N.name
       }), (0, r.jsxs)("div", {
-        className: b.guildBoostStatsContainer,
+        className: x.guildBoostStatsContainer,
         children: [(0, r.jsx)(g.Z, {
-          className: b.guildBoostBadge,
+          className: x.guildBoostBadge,
           width: 16,
           height: 16
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/bold",
           color: "text-muted",
-          children: x.NW.format(x.t["pob/cH"], {
+          children: b.NW.format(b.t["pob/cH"], {
             subscriptions: N.premiumSubscriberCount
           })
         }), (0, r.jsx)("div", {
-          className: b.separator
+          className: x.separator
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/bold",
           color: "text-muted",
@@ -80,7 +80,7 @@ let N = function(e) {
       pauseAnimation: !0,
       size: l.zxk.Sizes.MEDIUM,
       color: l.zxk.Colors.PRIMARY,
-      buttonText: x.NW.string(x.t.aBHecH),
+      buttonText: b.NW.string(b.t.aBHecH),
       disabled: E
     }) : (0, r.jsx)(l.zxk, {
       color: l.zxk.Colors.PRIMARY,
@@ -94,7 +94,7 @@ let N = function(e) {
       },
       size: l.zxk.Sizes.MEDIUM,
       disabled: E,
-      children: x.NW.string(x.t.KLOhbG)
+      children: b.NW.string(b.t.KLOhbG)
     })]
   })
 }

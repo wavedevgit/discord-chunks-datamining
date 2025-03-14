@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(976978),
   h = n(695346),
   f = n(639814),
-  x = n(838436),
-  b = n(51331),
+  b = n(838436),
+  x = n(51331),
   N = n(922628),
   _ = n(703115),
   E = n(526761),
@@ -66,10 +66,10 @@ function S(e) {
       }
     }))
   }
-  return (0, r.jsx)(x.U, {
+  return (0, r.jsx)(b.U, {
     setting: j.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
     scrollPosition: E.FY.MESSAGE_REQUESTS_V2,
-    children: n === C.T ? (0, r.jsx)(b.Z, {
+    children: n === C.T ? (0, r.jsx)(x.Z, {
       title: v.NW.string(v.t["3o2ojo"]),
       value: !T && !y,
       onChange: e => D(e, !1),
@@ -77,7 +77,7 @@ function S(e) {
       note: v.NW.format(v.t.wkm9a2, {
         helpdeskArticle: d.Z.getArticleURL(O.BhN.MESSAGE_REQUESTS)
       })
-    }) : (0, r.jsx)(b.Z, {
+    }) : (0, r.jsx)(x.Z, {
       title: v.NW.string(v.t["3o2ojo"]),
       value: !A,
       onChange: e => D(e, !0),

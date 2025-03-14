@@ -1,10 +1,10 @@
 /** Chunk was on 55849 **/
 n.d(t, {
-  Z: () => R
+  Z: () => _
 }), n(47120);
 var r = n(200651),
-  a = n(192379),
-  l = n(442837),
+  l = n(192379),
+  a = n(442837),
   i = n(481060),
   o = n(100527),
   s = n(906732),
@@ -18,13 +18,13 @@ var r = n(200651),
   j = n(451478),
   b = n(626135),
   x = n(74538),
-  h = n(621961),
-  y = n(884858),
+  y = n(621961),
+  h = n(884858),
   O = n(981631),
   v = n(486324),
   N = n(869783),
-  A = n(388032),
-  C = n(768076);
+  C = n(388032),
+  A = n(768076);
 
 function E(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -58,16 +58,16 @@ let P = [{
   png: n(690695)
 }];
 
-function S(e) {
+function w(e) {
   let {
     shouldAnimate: t = !0
-  } = e, [n, l] = a.useState(!1);
+  } = e, [n, a] = l.useState(!1);
   return (0, r.jsx)("div", {
-    className: C.gifGrid,
-    onMouseMove: () => l(!0),
-    onMouseLeave: () => l(!1),
+    className: A.gifGrid,
+    onMouseMove: () => a(!0),
+    onMouseLeave: () => a(!1),
     children: P.map(e => (0, r.jsx)("div", {
-      className: C.gif,
+      className: A.gif,
       style: {
         backgroundImage: "url(".concat(t || n ? e.gif : e.png, ")")
       }
@@ -75,13 +75,13 @@ function S(e) {
   })
 }
 
-function w(e) {
+function S(e) {
   let {
     guildFeature: t,
     guild: n
   } = e;
   return null == t || null == n ? null : (0, r.jsx)("div", {
-    className: C.pillWrapper,
+    className: A.pillWrapper,
     children: (0, r.jsx)(c.Z, {
       guildFeature: t,
       guild: n,
@@ -96,75 +96,75 @@ function T(e) {
     guild: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: C.optionBoxText,
-    children: [(0, r.jsx)(w, {
+    className: A.optionBoxText,
+    children: [(0, r.jsx)(S, {
       guild: n,
-      guildFeature: (0, h.C6)(t, {
+      guildFeature: (0, y.C6)(t, {
         isGIF: !0
       })
     }), (0, r.jsxs)("div", {
-      className: C.optionBoxDescription,
-      children: [(0, h.Kq)(t) && (0, r.jsx)(i.DY3, {
-        className: C.nitroWheelFlairContainer,
-        text: A.NW.string(A.t["5AFxuL"]),
+      className: A.optionBoxDescription,
+      children: [(0, y.Kq)(t) && (0, r.jsx)(i.DY3, {
+        className: A.nitroWheelFlairContainer,
+        text: C.NW.string(C.t["5AFxuL"]),
         children: (0, r.jsx)(i.SrA, {
           size: "md",
           color: "currentColor",
-          className: C.nitroWheelFlair
+          className: A.nitroWheelFlair
         })
-      }), A.NW.string(A.t["xsC+//"])]
-    })]
-  })
-}
-
-function F(e) {
-  let {
-    title: t,
-    uploadType: n,
-    guild: a
-  } = e;
-  return (0, r.jsxs)("div", {
-    className: C.optionBoxText,
-    children: [(0, r.jsx)(w, {
-      guildFeature: (0, h.C6)(n, {
-        isGIF: !1
-      }),
-      guild: a
-    }), (0, r.jsxs)("div", {
-      className: C.optionBoxDescription,
-      children: [n === v.pC.BANNER && (0, r.jsx)(i.DY3, {
-        className: C.nitroWheelFlairContainer,
-        text: A.NW.string(A.t["5AFxuL"]),
-        children: (0, r.jsx)(i.SrA, {
-          size: "md",
-          color: "currentColor",
-          className: C.nitroWheelFlair
-        })
-      }), t]
+      }), C.NW.string(C.t["xsC+//"])]
     })]
   })
 }
 
 function R(e) {
   let {
+    title: t,
+    uploadType: n,
+    guild: l
+  } = e;
+  return (0, r.jsxs)("div", {
+    className: A.optionBoxText,
+    children: [(0, r.jsx)(S, {
+      guildFeature: (0, y.C6)(n, {
+        isGIF: !1
+      }),
+      guild: l
+    }), (0, r.jsxs)("div", {
+      className: A.optionBoxDescription,
+      children: [n === v.pC.BANNER && (0, r.jsx)(i.DY3, {
+        className: A.nitroWheelFlairContainer,
+        text: C.NW.string(C.t["5AFxuL"]),
+        children: (0, r.jsx)(i.SrA, {
+          size: "md",
+          color: "currentColor",
+          className: A.nitroWheelFlair
+        })
+      }), t]
+    })]
+  })
+}
+
+function _(e) {
+  let {
     transitionState: t,
     onClose: c,
-    onComplete: h,
+    onComplete: y,
     uploadType: P,
-    maxFileSizeBytes: w,
-    showUpsellHeader: R,
-    filters: _,
-    analyticsLocation: Z,
-    analyticsLocations: L = [],
+    maxFileSizeBytes: S,
+    showUpsellHeader: _,
+    filters: F,
+    analyticsLocation: L,
+    analyticsLocations: Z = [],
     modalSubTitle: D,
-    imageSpecifications: I,
-    modalTitle: k = A.NW.string(A.t.DToW4e),
-    uploadOptionTitle: U = A.NW.string(A.t["MsUY/f"])
-  } = e, W = (0, l.e7)([j.Z], () => j.Z.isFocused()), M = (0, l.e7)([g.default], () => g.default.getCurrentUser()), B = (0, l.e7)([m.Z], () => m.Z.getGuildId()), H = (0, l.e7)([f.Z], () => f.Z.getGuild(B)), {
+    imageSpecifications: k,
+    modalTitle: W = C.NW.string(C.t.DToW4e),
+    uploadOptionTitle: I = C.NW.string(C.t["MsUY/f"])
+  } = e, U = (0, a.e7)([j.Z], () => j.Z.isFocused()), M = (0, a.e7)([g.default], () => g.default.getCurrentUser()), B = (0, a.e7)([m.Z], () => m.Z.getGuildId()), H = (0, a.e7)([f.Z], () => f.Z.getGuild(B)), {
     reducedMotion: z
-  } = a.useContext(i.Sfi), G = (0, i.vRw)(), V = !x.ZP.canUseAnimatedAvatar(M) && P === v.pC.AVATAR, {
+  } = l.useContext(i.Sfi), G = (0, i.vRw)(), V = !x.ZP.canUseAnimatedAvatar(M) && P === v.pC.AVATAR, {
     analyticsLocations: X
-  } = (0, s.ZP)(L, o.Z.SELECT_IMAGE_MODAL);
+  } = (0, s.ZP)(Z, o.Z.SELECT_IMAGE_MODAL);
 
   function q(e) {
     let {
@@ -172,60 +172,60 @@ function R(e) {
       file: n,
       isFromTenor: r = !1
     } = e;
-    c(), h({
+    c(), y({
       imageUri: t,
       file: n,
       isFromTenor: r
     })
   }
-  a.useEffect(() => {
+  l.useEffect(() => {
     V && b.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
       type: O.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
       location_stack: X
     }), b.default.track(O.rMx.OPEN_MODAL, {
       type: O.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
-      location: Z
+      location: L
     })
-  }, [V, Z, X]);
+  }, [V, L, X]);
   let Y = P === v.pC.AVATAR || P === v.pC.BANNER,
     J = (0, d.M)(!Y);
   return (0, r.jsxs)(i.Y0X, {
     transitionState: t,
     size: i.CgR.SMALL,
     children: [(0, r.jsxs)(i.xBx, {
-      className: C.modalHeader,
+      className: A.modalHeader,
       separator: !1,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)(i.vwX, {
           tag: i.RB0.H1,
-          className: C.modalTitle,
-          children: k
+          className: A.modalTitle,
+          children: W
         }), null != D ? (0, r.jsx)(i.Text, {
           variant: "text-md/normal",
           children: D
         }) : null]
       }), (0, r.jsx)(i.olH, {
         onClick: c,
-        className: C.modalCloseButton
+        className: A.modalCloseButton
       })]
     }), (0, r.jsxs)(i.hzk, {
-      className: C.modalContent,
+      className: A.modalContent,
       children: [(0, r.jsxs)("div", {
-        className: C.imagePickerContainer,
+        className: A.imagePickerContainer,
         children: [(0, r.jsxs)(i.P3F, {
-          className: C.optionBox,
+          className: A.optionBox,
           children: [(0, r.jsx)("div", {
-            className: C.contentCircle,
+            className: A.contentCircle,
             children: (0, r.jsx)(i.FmF, {
               size: "md",
               color: "currentColor",
-              className: C.uploadIcon
+              className: A.uploadIcon
             })
           }), (0, r.jsx)(i.Text, {
             variant: "text-sm/semibold",
             color: "interactive-normal",
-            children: (0, r.jsx)(F, {
-              title: U,
+            children: (0, r.jsx)(R, {
+              title: I,
               uploadType: P,
               guild: H
             })
@@ -237,29 +237,29 @@ function R(e) {
               });
               (0, i.ZDy)(async () => {
                 let {
-                  default: a
+                  default: l
                 } = await n.e("48017").then(n.bind(n, 850085));
-                return n => (0, r.jsx)(a, E({
+                return n => (0, r.jsx)(l, E({
                   imageUri: e,
                   file: t,
                   onCrop: q,
                   uploadType: P,
-                  showUpsellHeader: R,
+                  showUpsellHeader: _,
                   allowSkip: !0,
-                  analyticsPage: null == Z ? void 0 : Z.page
+                  analyticsPage: null == L ? void 0 : L.page
                 }, n))
               }, {
                 contextKey: G
               })
             },
-            maxFileSizeBytes: w,
+            maxFileSizeBytes: S,
             onFileSizeError: function() {
-              c(), (0, y.Z)(w)
+              c(), (0, h.Z)(S)
             },
-            filters: _
+            filters: F
           })]
         }), (0, r.jsxs)(i.P3F, {
-          className: C.optionBox,
+          className: A.optionBox,
           onClick: function() {
             (0, i.ZDy)(async () => {
               let {
@@ -278,25 +278,25 @@ function R(e) {
                     isFromTenor: !0
                   })
                 },
-                showUpsellHeader: R,
-                analyticsPage: null == Z ? void 0 : Z.page
+                showUpsellHeader: _,
+                analyticsPage: null == L ? void 0 : L.page
               }, t))
             }, {
               contextKey: G
             })
           },
           children: [(0, r.jsxs)("div", {
-            className: C.contentCircle,
-            children: [(0, r.jsx)(S, {
-              shouldAnimate: W && !z.enabled
+            className: A.contentCircle,
+            children: [(0, r.jsx)(w, {
+              shouldAnimate: U && !z.enabled
             }), (0, r.jsx)("div", {
-              className: C.gifIconContainer,
+              className: A.gifIconContainer,
               children: (0, r.jsx)(i.OUq, {
                 size: "custom",
                 width: 29,
                 height: 29,
                 color: "currentColor",
-                className: C.gifIcon
+                className: A.gifIcon
               })
             })]
           }), (0, r.jsx)(i.Text, {
@@ -308,16 +308,16 @@ function R(e) {
             })
           })]
         })]
-      }), null != I ? (0, r.jsx)(i.Text, {
-        className: C.imageSpecifications,
+      }), null != k ? (0, r.jsx)(i.Text, {
+        className: A.imageSpecifications,
         variant: "text-sm/normal",
-        children: I
-      }) : null, R && J && (0, r.jsx)(p.Z, {
+        children: k
+      }) : null, _ && J && (0, r.jsx)(p.Z, {
         uploadType: P,
         showUpsell: !0,
         position: "inline",
         showShadow: !1,
-        className: C.nitroUpsell
+        className: A.nitroUpsell
       })]
     })]
   })
