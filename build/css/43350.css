@@ -1,13 +1,11 @@
 /**
   Module ID: 43350
-  Original File Name: 13b0dc7a4b47af48
+  Original File Name: 445c991191c50f4a
 **/
-.spacing__837b7 {
-    margin-bottom: 20px
-}
-
 .modalContent__837b7 {
-    padding-bottom: 20px
+    display: flex;
+    flex-direction: column;
+    gap: 20px
 }
 
 .banReasonOtherClickable__837b7 {
@@ -31,7 +29,6 @@
 }
 
 .radioItemStyles__837b7 {
-    margin-bottom: 4px;
     background-color: var(--background-secondary-alt)
 }
 
@@ -57,4 +54,20 @@
     border-radius: 4px
 }
 
-/*# sourceMappingURL=13b0dc7a4b47af48.css.map*/
+html:not(.visual-refresh) .modalContent__837b7 {
+    padding-bottom: 20px
+}
+
+.visual-refresh .banReasonOtherClickable__837b7 {
+    margin-top: var(--spacing-4);
+    padding: var(--spacing-12) var(--spacing-16);
+    color: var(--text-primary);
+    border-radius: var(--radius-sm)
+}
+
+.visual-refresh .banReasonOtherClickable__837b7,.visual-refresh .radioItemStyles__837b7 {
+    background-color: var(--background-surface-highest);
+    border: 1px solid var(--border-faint)
+}
+
+/*# sourceMappingURL=445c991191c50f4a.css.map*/
