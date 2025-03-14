@@ -41,7 +41,7 @@ function N(e) {
   } = (0, f.KZ)(), C = null == N ? void 0 : N.guildId, A = (0, o.e7)([d.Z], () => null != C ? d.Z.getGuild(C) : null), w = (0, o.e7)([u.Z], () => u.Z.getGuildId()), L = (0, s.Y)({
     userId: n.id,
     location: "UserProfileModalInfo"
-  }), R = (0, o.e7)([a.default], () => a.default.locale), M = (0, m.Z)(n.id), U = (0, b.Z)(n.id), B = (0, p.kc)({
+  }), M = (0, o.e7)([a.default], () => a.default.locale), R = (0, m.Z)(n.id), U = (0, b.Z)(n.id), B = (0, p.kc)({
     location: "UserProfileModalInfo"
   }) ? O.NW.string(O.t["mQKv+v"]) : O.NW.string(O.t.PbMNh4);
   return (0, r.jsxs)(i.zJl, {
@@ -70,22 +70,22 @@ function N(e) {
         guildId: null == N ? void 0 : N.guildId,
         tooltipDelay: _.vB
       })
-    }), M.length > 0 && (0, r.jsx)(h.Z, {
+    }), R.length > 0 && (0, r.jsx)(h.Z, {
       heading: O.NW.string(O.t["3fe7U1"]),
       scrollIntoView: P === _.Tb.CONNECTIONS,
       children: (0, r.jsx)(g.OA, {
-        connectedAccounts: M,
+        connectedAccounts: R,
         className: Z.connections,
         userId: n.id,
         theme: S,
-        locale: R
+        locale: M
       })
     }), U.length > 0 && (0, r.jsx)(h.Z, {
       heading: O.NW.string(O.t.PHjkRE),
       children: U.map(e => (0, r.jsx)(g.tH, {
         className: Z.appsConnections,
         applicationRoleConnection: e,
-        locale: R,
+        locale: M,
         onApplicationClicked: () => {
           T({
             action: "PRESS_APP_CONNECTION"

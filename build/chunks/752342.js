@@ -40,8 +40,8 @@ function E(e) {
     sessionId: A,
     initialSection: w,
     initialSubsection: L,
-    transitionState: R,
-    onClose: M,
+    transitionState: M,
+    onClose: R,
     sourceAnalyticsLocations: U = []
   } = e, B = E === Z.ME ? void 0 : E, D = (0, a.ZP)(n.id, B), {
     analyticsLocations: W
@@ -59,7 +59,7 @@ function E(e) {
     children: (0, r.jsx)(c.Mt, {
       value: F,
       children: (0, r.jsx)(o.Y0X, {
-        transitionState: R,
+        transitionState: M,
         className: P.root,
         hideShadow: !0,
         "aria-label": N.NW.string(N.t["3N/J2t"]),
@@ -72,7 +72,7 @@ function E(e) {
             children: (0, r.jsx)(g.Z, {
               user: n,
               guildId: B,
-              onCloseProfile: M
+              onCloseProfile: R
             })
           }), (0, r.jsxs)("header", {
             children: [(0, r.jsx)(f.Z, {
@@ -91,17 +91,17 @@ function E(e) {
                 location: "BotUserProfileModal",
                 user: n,
                 profileType: O.y0.FULL_SIZE,
-                hasEntered: R === o.Dvm.ENTERED,
-                onCloseProfile: M
+                hasEntered: M === o.Dvm.ENTERED,
+                onCloseProfile: R
               }), (0, r.jsxs)("div", {
                 className: P.headerButtons,
                 children: [(0, r.jsx)(h.c, {
                   userId: n.id,
-                  onClose: M,
+                  onClose: R,
                   className: P.messageTextButton
                 }), (0, r.jsx)(h.v, {
                   userId: n.id,
-                  onClose: M,
+                  onClose: R,
                   tooltipContainerClassName: P.messageIconButton
                 }), (0, r.jsx)(y.Z, {
                   user: n,
@@ -125,7 +125,7 @@ function E(e) {
               tags: (0, r.jsx)(u.Z, {
                 displayProfile: D,
                 profileType: O.y0.FULL_SIZE,
-                onClose: M
+                onClose: R
               })
             }), (0, r.jsx)(b.Z.Overlay, {
               className: P.overlay,
@@ -137,7 +137,7 @@ function E(e) {
                 items: k,
                 initialSection: null != w ? w : O.oh.BOT_INFO,
                 initialSubsection: L,
-                onClose: M
+                onClose: R
               })
             })]
           })]

@@ -95,37 +95,39 @@ let x = 1.25,
 function B(e) {
   let {
     profileType: t,
-    onCloseProfile: i
+    onCloseProfile: i,
+    prompt: o
   } = e, {
-    analyticsLocations: o
+    analyticsLocations: s
   } = (0, p.ZP)(), {
-    trackUserProfileAction: s
-  } = (0, E.KZ)(), l = {
+    trackUserProfileAction: l
+  } = (0, E.KZ)(), c = {
     [A.biteSize]: t === T.y0.BITE_SIZE,
     [A.fullSize]: t === T.y0.FULL_SIZE,
     [A.panel]: t === T.y0.PANEL
-  }, c = () => {
-    s({
+  }, d = () => {
+    l({
       action: "PRESS_ADD_CUSTOM_STATUS"
     }), null == i || i(), (0, u.ZDy)(async () => {
       let {
         default: e
       } = await n.e("31649").then(n.bind(n, 475613));
       return t => (0, r.jsx)(e, w(R({}, t), {
-        sourceAnalyticsLocations: o,
-        location: "UserProfileCustomStatusBubble"
+        sourceAnalyticsLocations: s,
+        location: "UserProfileCustomStatusBubble",
+        prompt: o
       }))
     })
-  };
+  }, f = null != o ? o : N.NW.string(N.t.evw0o6);
   return (0, r.jsx)(u.P3F, {
-    className: a()(A.container, A.editable, l),
+    className: a()(A.container, A.editable, c),
     "aria-label": N.NW.string(N.t["zrpF/f"]),
-    onClick: c,
+    onClick: d,
     focusProps: {
       ringClassName: A.ring
     },
     children: (0, r.jsx)("div", {
-      className: a()(A.outer, l),
+      className: a()(A.outer, c),
       children: (0, r.jsxs)("span", {
         className: a()(A.inner, A.clickable),
         children: [(0, r.jsx)(u.oFk, {
@@ -135,7 +137,7 @@ function B(e) {
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
           className: A.addStatusPrompt,
-          children: N.NW.string(N.t.evw0o6)
+          children: f
         })]
       })
     })
@@ -374,57 +376,59 @@ function H(e) {
       onCloseProfile: a,
       previewText: s,
       previewEmoji: c,
-      placeholderText: u
+      placeholderText: u,
+      prompt: d
     } = e,
-    d = D(e, ["location", "user", "onCloseProfile", "previewText", "previewEmoji", "placeholderText"]);
-  let f = (0, l.e7)([g.default], () => g.default.getId() === o.id),
-    m = (0, h.Z)(o.id),
+    f = D(e, ["location", "user", "onCloseProfile", "previewText", "previewEmoji", "placeholderText", "prompt"]);
+  let m = (0, l.e7)([g.default], () => g.default.getId() === o.id),
+    E = (0, h.Z)(o.id),
     {
-      analyticsLocations: E
+      analyticsLocations: b
     } = (0, p.ZP)(_.Z.PROFILE_CUSTOM_STATUS),
-    b = (0, v.T)({
+    y = (0, v.T)({
       location: i
     }),
-    y = !f && !o.bot && b;
+    O = !m && !o.bot && y;
   if (null != s || null != c) {
     let e = null != c ? c : null,
       t = null != s && "" !== s ? s : null;
     return (0, r.jsx)(p.Gt, {
-      value: E,
+      value: b,
       children: (0, r.jsx)(V, R({
         emoji: e,
         text: t,
         placeholderText: u
-      }, d))
+      }, f))
     })
   }
-  let O = null !== (t = null == m ? void 0 : m.emoji) && void 0 !== t ? t : null,
-    I = null !== (n = null == m ? void 0 : m.state) && void 0 !== n ? n : null,
-    S = null != I && "" !== I ? I : null;
-  return null != O || null != S || f ? null == O && null == S ? (0, r.jsx)(p.Gt, {
-    value: E,
+  let I = null !== (t = null == E ? void 0 : E.emoji) && void 0 !== t ? t : null,
+    S = null !== (n = null == E ? void 0 : E.state) && void 0 !== n ? n : null,
+    T = null != S && "" !== S ? S : null;
+  return null != I || null != T || m ? null == I && null == T ? (0, r.jsx)(p.Gt, {
+    value: b,
     children: (0, r.jsx)(B, R({
-      onCloseProfile: a
-    }, d))
-  }) : y ? (0, r.jsx)(p.Gt, {
-    value: E,
+      onCloseProfile: a,
+      prompt: d
+    }, f))
+  }) : O ? (0, r.jsx)(p.Gt, {
+    value: b,
     children: (0, r.jsx)(Z, R({
       user: o,
-      emoji: O,
-      text: S
-    }, d))
-  }) : f ? (0, r.jsx)(p.Gt, {
-    value: E,
+      emoji: I,
+      text: T
+    }, f))
+  }) : m ? (0, r.jsx)(p.Gt, {
+    value: b,
     children: (0, r.jsx)(F, R({
-      emoji: O,
-      text: S,
+      emoji: I,
+      text: T,
       onCloseProfile: a
-    }, d))
+    }, f))
   }) : (0, r.jsx)(p.Gt, {
-    value: E,
+    value: b,
     children: (0, r.jsx)(V, R({
-      emoji: O,
-      text: S
-    }, d))
+      emoji: I,
+      text: T
+    }, f))
   }) : null
 }

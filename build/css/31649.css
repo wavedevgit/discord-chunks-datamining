@@ -1,6 +1,6 @@
 /**
   Module ID: 31649
-  Original File Name: 6d22eb232d657ec7
+  Original File Name: e2435596b853b4a2
 **/
 .formGroup__9b8f6 {
     margin-bottom: 20px
@@ -133,19 +133,19 @@
     left: 16px
 }
 
-.formGroup__7fd1c {
+.formGroup_dbc4b7 {
     margin-bottom: 20px
 }
 
-.inputContainer__7fd1c {
+.inputContainer_dbc4b7 {
     position: relative
 }
 
-.emojiButton__7fd1c.fullOpacity__7fd1c {
+.emojiButton_dbc4b7.fullOpacity_dbc4b7 {
     opacity: 1
 }
 
-.emojiButtonContainer__7fd1c {
+.emojiButtonContainer_dbc4b7 {
     display: flex;
     position: absolute;
     left: 0;
@@ -155,17 +155,17 @@
     height: 100%
 }
 
-.emoji__7fd1c {
+.emoji_dbc4b7 {
     width: 22px;
     height: 22px
 }
 
-.input__7fd1c {
+.input_dbc4b7 {
     padding-left: 42px;
     padding-right: 36px
 }
 
-.clearButtonWrapper__7fd1c {
+.clearButtonWrapper_dbc4b7 {
     max-height: 50px;
     height: 100%;
     position: absolute;
@@ -174,56 +174,56 @@
     display: flex
 }
 
-.clearButton__7fd1c {
+.clearButton_dbc4b7 {
     opacity: .6
 }
 
-.full-motion .clearButton__7fd1c {
+.full-motion .clearButton_dbc4b7 {
     transition: opacity .2s ease-in-out
 }
 
-.clearButton__7fd1c:focus,.clearButton__7fd1c:hover {
+.clearButton_dbc4b7:focus,.clearButton_dbc4b7:hover {
     opacity: 1
 }
 
-.clearIcon__7fd1c {
+.clearIcon_dbc4b7 {
     width: 16px;
     height: 16px;
     color: var(--interactive-normal)
 }
 
-.header__7fd1c {
+.header_dbc4b7 {
     position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: center
 }
 
-.headerTitle__7fd1c {
+.headerTitle_dbc4b7 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     text-align: center
 }
 
-.headerCloseButton__7fd1c {
+.headerCloseButton_dbc4b7 {
     flex-shrink: 0;
     padding: 0;
     margin-right: -8px
 }
 
-.footer__7fd1c {
+.footer_dbc4b7 {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between
 }
 
-.clearAfterSelectContainer__7fd1c {
+.clearAfterSelectContainer_dbc4b7 {
     margin-left: -12px
 }
 
-.profilePreview__7fd1c {
+.profilePreview_dbc4b7 {
     margin-top: 8px;
     margin-bottom: 36px;
     width: 100%;
@@ -232,7 +232,7 @@
     align-items: center
 }
 
-.needInspiration__7fd1c {
+.needInspiration_dbc4b7 {
     display: flex;
     align-items: center;
     gap: 4px;
@@ -241,8 +241,8 @@
     cursor: pointer
 }
 
-.needInspiration__7fd1c:hover {
+.needInspiration_dbc4b7:hover {
     color: var(--interactive-hover)
 }
 
-/*# sourceMappingURL=6d22eb232d657ec7.css.map*/
+/*# sourceMappingURL=e2435596b853b4a2.css.map*/

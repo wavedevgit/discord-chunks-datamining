@@ -1,6 +1,7 @@
-/** Chunk was on 31649 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  p: () => a
+  p: () => i
 });
 let r = (0, n(818083).B)({
   kind: "user",
@@ -18,16 +19,16 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function a(e) {
+function i(e) {
   let {
     location: t,
     autoTrackExposure: n = !0
   } = e, {
-    enabled: a
+    enabled: i
   } = r.useExperiment({
     location: t
   }, {
     autoTrackExposure: n
   });
-  return a
+  return i
 }

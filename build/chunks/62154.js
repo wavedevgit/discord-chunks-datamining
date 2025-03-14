@@ -43,7 +43,7 @@ function x(e) {
     originApplicationId: s.Z.getOriginApplicationId(t.id)
   })), A = (0, l.vh)(t.id), w = (0, i.wn)({
     location: "UserProfileModalBody"
-  }), L = t.id === x.id, R = (0, a.I5)(x), M = c.ZP.useName(null == Z ? void 0 : Z.guildId, O, t), U = (0, y.Z)({
+  }), L = t.id === x.id, M = (0, a.I5)(x), R = c.ZP.useName(null == Z ? void 0 : Z.guildId, O, t), U = (0, y.Z)({
     user: t,
     currentUser: x,
     guildId: _,
@@ -54,7 +54,7 @@ function x(e) {
     children: [(0, r.jsx)(v.Z, {
       user: t,
       profileType: I.y0.FULL_SIZE,
-      nickname: M,
+      nickname: R,
       pronouns: null == Z ? void 0 : Z.pronouns,
       nicknameVariant: "heading-xl/bold",
       nicknameIcons: (0, r.jsx)(f.Z, {
@@ -88,7 +88,7 @@ function x(e) {
       user: t,
       source: b.t.MODAL
     }), L && (0, r.jsx)(u.Z, {
-      isPremiumUser: R,
+      isPremiumUser: M,
       onInteraction: S
     }), (0, r.jsx)(m.Z.Overlay, {
       className: j.overlay,

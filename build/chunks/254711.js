@@ -573,7 +573,7 @@ let L = n(227419).Z,
     }, {
       name: "duration",
       displayName: "duration",
-      type: f.jw.STRING,
+      type: f.jw.INTEGER,
       get description() {
         return C.NW.string(C.t.SNqN1d)
       },

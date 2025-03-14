@@ -52,24 +52,24 @@ function g(e) {
   } = (0, a.Z)(n, {
     fetch: n.id !== (null == t ? void 0 : t.id),
     type: "modal"
-  }), w = null == C ? void 0 : C.length, L = null == A ? void 0 : A.length, R = (0, u.Z)({
+  }), w = null == C ? void 0 : C.length, L = null == A ? void 0 : A.length, M = (0, u.Z)({
     user: n,
     location: m.Sbl.PROFILE_MODAL_TABS
-  }), M = [{
+  }), R = [{
     section: b.oh.USER_INFO,
     text: v.NW.string(v.t.jGoPJS)
   }];
-  return !E && (S || (I || h) && null == _ && null == N && null != Z) ? M.push({
+  return !E && (S || (I || h) && null == _ && null == N && null != Z) ? R.push({
     section: b.oh.ACTIVITY,
     text: v.NW.string(v.t.chq59f)
-  }) : (T || null == O && y === b.Tb.RECENT_ACTIVITY) && M.push({
+  }) : (T || null == O && y === b.Tb.RECENT_ACTIVITY) && R.push({
     section: b.oh.ACTIVITY,
     text: v.NW.string(v.t.chq59f)
-  }), !P && R && (M.push({
+  }), !P && M && (R.push({
     section: b.oh.MUTUAL_FRIENDS,
     text: (0, f.Z)(w)
-  }), M.push({
+  }), R.push({
     section: b.oh.MUTUAL_GUILDS,
     text: (0, p.Z)(L)
-  })), M
+  })), R
 }

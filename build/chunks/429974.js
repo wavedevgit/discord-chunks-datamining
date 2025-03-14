@@ -73,36 +73,38 @@ async function O(e) {
       friendToken: N,
       analyticsLocation: A,
       showGuildProfile: C = !0,
-      appContext: R
+      appContext: R,
+      customStatusPrompt: P
     } = e,
-    P = E(e, ["userId", "section", "subsection", "guildId", "channelId", "friendToken", "analyticsLocation", "showGuildProfile", "appContext"]);
-  let w = d.default.getUser(v);
-  if (null == w) return;
-  let D = _.Z.getUserProfile(v),
-    L = c.Z.getPrimaryActivity(v),
-    x = c.Z.getStatus(v),
-    M = c.Z.isMobileOnline(v),
+    w = E(e, ["userId", "section", "subsection", "guildId", "channelId", "friendToken", "analyticsLocation", "showGuildProfile", "appContext", "customStatusPrompt"]);
+  let D = d.default.getUser(v);
+  if (null == D) return;
+  let L = _.Z.getUserProfile(v),
+    x = c.Z.getPrimaryActivity(v),
+    M = c.Z.getStatus(v),
+    k = c.Z.isMobileOnline(v),
     {
-      party: k,
-      assets: j,
-      application_id: U
-    } = null != L ? L : {},
-    G = null != U ? l.Z.getApplication(U) : null,
-    B = M ? p.j28.ONLINE_MOBILE : p.j28.ONLINE_DESKTOP,
-    V = x === p.Skl.ONLINE ? B : x;
+      party: j,
+      assets: U,
+      application_id: G
+    } = null != x ? x : {},
+    B = null != G ? l.Z.getApplication(G) : null,
+    V = k ? p.j28.ONLINE_MOBILE : p.j28.ONLINE_DESKTOP,
+    F = M === p.Skl.ONLINE ? V : M;
   b = await (0, i.ZDy)(async () => {
     let {
       default: e
     } = await Promise.all([n.e("94989"), n.e("82412"), n.e("62880"), n.e("81818")]).then(n.bind(n, 533835));
     return t => (0, r.jsx)(e, g({
-      user: w,
+      user: D,
       guildId: S,
       friendToken: N,
       initialSection: O,
       initialSubsection: I,
       channelId: T,
-      showGuildProfile: C
-    }, t, P))
+      showGuildProfile: C,
+      customStatusPrompt: P
+    }, t, w))
   }, {
     modalKey: y(v, C ? S : void 0),
     contextKey: (0, i.VnL)(null != R ? R : p.IlC.APP)
@@ -111,18 +113,18 @@ async function O(e) {
     guild_id: S,
     channel_id: T,
     other_user_id: v,
-    application_id: null !== (o = null == L ? void 0 : L.application_id) && void 0 !== o ? o : null,
-    application_name: null == L ? void 0 : L.name,
-    sku_id: null !== (a = null == G ? void 0 : G.primarySkuId) && void 0 !== a ? a : null,
+    application_id: null !== (o = null == x ? void 0 : x.application_id) && void 0 !== o ? o : null,
+    application_name: null == x ? void 0 : x.name,
+    sku_id: null !== (a = null == B ? void 0 : B.primarySkuId) && void 0 !== a ? a : null,
     is_friend: u.Z.isFriend(v),
-    has_images: !!(null !== (m = null == j ? void 0 : j.large_image) && void 0 !== m ? m : null == j ? void 0 : j.small_image),
-    party_max: null == k ? void 0 : null === (t = k.size) || void 0 === t ? void 0 : t[1],
-    party_id: null == k ? void 0 : k.id,
-    party_platform: (0, h.Ps)(null == k ? void 0 : k.id) ? p.ABu.SPOTIFY : null,
-    game_platform: (0, s.Z)(L),
-    profile_user_status: V,
-    profile_has_nitro_customization: (null == D ? void 0 : D.banner) != null,
-    profile_has_profile_effect: (null == D ? void 0 : D.profileEffectId) != null
+    has_images: !!(null !== (m = null == U ? void 0 : U.large_image) && void 0 !== m ? m : null == U ? void 0 : U.small_image),
+    party_max: null == j ? void 0 : null === (t = j.size) || void 0 === t ? void 0 : t[1],
+    party_id: null == j ? void 0 : j.id,
+    party_platform: (0, h.Ps)(null == j ? void 0 : j.id) ? p.ABu.SPOTIFY : null,
+    game_platform: (0, s.Z)(x),
+    profile_user_status: F,
+    profile_has_nitro_customization: (null == L ? void 0 : L.banner) != null,
+    profile_has_profile_effect: (null == L ? void 0 : L.profileEffectId) != null
   }, null == A ? null : (0, f.expandLocation)(A)))
 }
 

@@ -52,11 +52,11 @@ function O(e) {
     userId: n.id,
     guildId: Z,
     surface: "user-profile-modal-activity"
-  }), R = (0, o.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), M = n.id === t.id, U = (0, o.e7)([a.Z, c.Z], () => {
-    let e = M ? a.Z.getStatus() : c.Z.getStatus(n.id);
+  }), M = (0, o.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), R = n.id === t.id, U = (0, o.e7)([a.Z, c.Z], () => {
+    let e = R ? a.Z.getStatus() : c.Z.getStatus(n.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
   }), B = T.length > 0 || null != A, D = (E || S) && null == A && null == L && null != w, W = C.length > 0;
-  return !U && (B || D) || W || !R ? (0, r.jsxs)(i.zJl, {
+  return !U && (B || D) || W || !M ? (0, r.jsxs)(i.zJl, {
     className: x.scroller,
     fade: !0,
     children: [!U && (B || D) ? (0, r.jsxs)(b.Z, {
@@ -80,7 +80,7 @@ function O(e) {
       }, "live-".concat(o)))]
     }) : null, W ? (0, r.jsx)(b.Z, {
       heading: j.NW.string(j.t.M0zgnZ),
-      subheading: M ? j.NW.format(j.t["4bk9Ag"], {
+      subheading: R ? j.NW.format(j.t["4bk9Ag"], {
         learnMoreHook: (e, n) => (0, r.jsx)(i.eee, {
           href: d.Z.getArticleURL(h.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e

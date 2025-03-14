@@ -39,14 +39,14 @@ function S(e) {
     sessionId: A,
     transitionState: w,
     onClose: L,
-    sourceAnalyticsLocations: R = []
-  } = e, M = t === O.ME ? void 0 : t, U = (0, f.ZP)(n.id, M), {
+    sourceAnalyticsLocations: M = []
+  } = e, R = t === O.ME ? void 0 : t, U = (0, f.ZP)(n.id, R), {
     analyticsLocations: B
-  } = (0, c.ZP)([...R, s.Z.SIMPLIFIED_PROFILE_MODAL]), D = (0, u.ZB)({
+  } = (0, c.ZP)([...M, s.Z.SIMPLIFIED_PROFILE_MODAL]), D = (0, u.ZB)({
     layout: "SIMPLIFIED_MODAL",
     userId: n.id,
     sourceSessionId: A,
-    guildId: M,
+    guildId: R,
     channelId: S,
     messageId: T,
     roleId: C
@@ -80,7 +80,7 @@ function S(e) {
               children: (0, r.jsx)(p.Z, {
                 user: n,
                 displayProfile: U,
-                guildId: M,
+                guildId: R,
                 channelId: S,
                 profileType: _.y0.FULL_SIZE
               })
@@ -90,7 +90,7 @@ function S(e) {
             children: [(0, r.jsx)(h.Z, {
               user: n,
               profileType: _.y0.FULL_SIZE,
-              nickname: d.ZP.getName(M, S, n),
+              nickname: d.ZP.getName(R, S, n),
               pronouns: null == U ? void 0 : U.pronouns,
               nicknameVariant: "heading-xl/bold",
               tags: (0, r.jsx)(b.Z, {
@@ -127,7 +127,7 @@ function S(e) {
                     heading: Z.NW.string(Z.t["A//N4u"]),
                     children: (0, r.jsx)(g.Z, {
                       userId: n.id,
-                      guildId: M,
+                      guildId: R,
                       tooltipDelay: _.vB
                     })
                   })]

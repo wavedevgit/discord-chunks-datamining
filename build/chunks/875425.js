@@ -1,15 +1,15 @@
 /** Chunk was on 31649 **/
 n.d(t, {
   Df: () => o,
-  FO: () => l,
+  FO: () => i,
   Q9: () => u,
-  s0: () => i,
+  s0: () => l,
   wS: () => s
 });
 var r = n(231338),
   a = n(388032);
-let i = 128,
-  l = Object.freeze({
+let l = 128,
+  i = Object.freeze({
     MINUTES_30: 18e5,
     HOURS_1: 36e5,
     HOURS_4: 144e5,
@@ -30,46 +30,46 @@ let i = 128,
     label: () => a.NW.string(a.t.bg24HB)
   }],
   s = [{
-    value: l.TODAY,
+    value: i.TODAY,
     label: () => a.NW.string(a.t.GQmLra)
   }, {
-    value: l.HOURS_4,
+    value: i.HOURS_4,
     label: () => a.NW.formatToPlainString(a.t.Rea2gY, {
       hours: 4
     })
   }, {
-    value: l.HOURS_1,
+    value: i.HOURS_1,
     label: () => a.NW.formatToPlainString(a.t.Rea2gY, {
       hours: 1
     })
   }, {
-    value: l.MINUTES_30,
+    value: i.MINUTES_30,
     label: () => a.NW.formatToPlainString(a.t.TS3eJS, {
       minutes: 30
     })
   }, {
-    value: l.DONT_CLEAR,
+    value: i.DONT_CLEAR,
     label: () => a.NW.string(a.t.bRn8cn)
   }],
   u = [{
-    value: l.TODAY,
+    value: i.TODAY,
     label: () => a.NW.string(a.t.TOEOaW)
   }, {
-    value: l.HOURS_4,
+    value: i.HOURS_4,
     label: () => a.NW.formatToPlainString(a.t.Yizuvb, {
       hours: 4
     })
   }, {
-    value: l.HOURS_1,
+    value: i.HOURS_1,
     label: () => a.NW.formatToPlainString(a.t.Yizuvb, {
       hours: 1
     })
   }, {
-    value: l.MINUTES_30,
+    value: i.MINUTES_30,
     label: () => a.NW.formatToPlainString(a.t["/XUoq6"], {
       minutes: 30
     })
   }, {
-    value: l.DONT_CLEAR,
+    value: i.DONT_CLEAR,
     label: () => a.NW.string(a.t.bRn8cn)
   }]
