@@ -16,9 +16,15 @@ let c = {
       asset: n(406449).Z
     },
     [a.xJ]: {
-      renderAsset: () => (0, r.jsx)(o.Z, {
-        className: s.orbProfileBadgeAsset
-      })
+      renderAsset: e => {
+        let {
+          animationState: t = "always"
+        } = e;
+        return (0, r.jsx)(o.Z, {
+          animationState: t,
+          className: s.orbProfileBadgeAsset
+        })
+      }
     }
   },
   u = e => e in c,

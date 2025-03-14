@@ -62,7 +62,10 @@ let p = e => {
     })
   },
   b = (e, t, n, b, x) => {
-    let N = {
+    let N = (0, o.r)({
+        location: "useGetPlanComparisonTableRows"
+      }).enabled,
+      _ = {
         0: {
           label: (0, r.jsx)(p, {
             text: m.NW.string(m.t["09yRKy"])
@@ -320,7 +323,7 @@ let p = e => {
           column2: (0, r.jsx)(f, {
             includes: !0
           }),
-          withBottomBorder: !1
+          withBottomBorder: N
         },
         23: {
           label: (0, r.jsx)(p, {
@@ -335,10 +338,7 @@ let p = e => {
           withBottomBorder: !1
         }
       },
-      _ = x === d.a$.FP_ONLY,
-      E = [N[0], N[1], N[2], N[3], N[4], N[5], N[6], ..._ ? [] : [N[7]], N[8], N[9], N[10], N[11], ..._ ? [] : [N[12]], N[13], N[14], N[15], N[16], N[17]],
-      j = (0, o.r)({
-        location: "useGetPlanComparisonTableRows"
-      }).enabled;
-    return (0, c.V)() && (j && (N[22].withBottomBorder = !0), E.push(N[22])), j && E.push(N[23]), E
+      E = x === d.a$.FP_ONLY,
+      j = [_[0], _[1], _[2], _[3], _[4], _[5], _[6], ...E ? [] : [_[7]], _[8], _[9], _[10], _[11], ...E ? [] : [_[12]], _[13], _[14], _[15], _[16], _[17]];
+    return (0, c.V)() && j.push(_[22]), N && j.push(_[23]), j
   }

@@ -1,6 +1,6 @@
 /**
   Module ID: 10165
-  Original File Name: 2aea8f2a31e5e914
+  Original File Name: e346d31a15c19449
 **/
 .header_cd8d1b {
     padding: 0 50px
@@ -18,67 +18,18 @@
 }
 
 .modal_cd8d1b {
-    background: #222226;
     position: relative;
-    overflow: hidden
+    overflow: hidden;
+    background: radial-gradient(100% 100% at 50% 100%,var(--background-primary) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--bg-modal-gradient-lavender-end),var(--bg-modal-gradient-lavender-start))
 }
 
-.blur0_cd8d1b {
-    z-index: -1;
-    width: 743px;
-    height: 464px;
-    bottom: -77px;
-    border-radius: 701px;
-    filter: blur(55px);
-    position: absolute;
-    right: -151px;
-    background: var(--background-primary)
-}
-
-.theme-dark .blur0_cd8d1b {
-    width: 701px;
-    height: 399px;
-    bottom: 16px;
-    background: #222226
-}
-
-.blur1_cd8d1b {
-    width: 555px;
-    height: 353px;
-    transform: rotate(-21deg);
-    left: -259px;
-    top: -264px;
-    border-radius: 555px;
-    background: #23246f
-}
-
-.blur1_cd8d1b,.blur2_cd8d1b {
-    z-index: -1;
-    position: absolute;
-    opacity: .6;
-    filter: blur(150px)
-}
-
-.blur2_cd8d1b {
-    width: 420px;
-    height: 267px;
-    right: -243px;
-    top: -175px;
-    border-radius: 420px;
-    background: #5865f2
+.modal_cd8d1b .footer_cd8d1b {
+    box-shadow: none
 }
 
 .footer_cd8d1b {
-    background-color: #222226;
+    background: transparent;
     padding: 24px
-}
-
-.theme-light .footer_cd8d1b {
-    box-shadow: none!important
-}
-
-.theme-light .footer_cd8d1b {
-    background-color: transparent
 }
 
 .subscribeButton_cd8d1b {
@@ -93,4 +44,4 @@
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=2aea8f2a31e5e914.css.map*/
+/*# sourceMappingURL=e346d31a15c19449.css.map*/

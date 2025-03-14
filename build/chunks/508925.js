@@ -12,19 +12,22 @@ var r = n(200651),
 let c = e => {
   let {
     product: t,
-    className: n
-  } = e, i = t.skuId, c = s.KO[i];
-  if (null != c) {
+    animationState: n,
+    className: i
+  } = e, c = t.skuId, u = s.KO[c];
+  if (null != u) {
     let {
       size: e
     } = a.ny6[a.EFr.SIZE_152];
     return (0, r.jsxs)("div", {
-      className: o()(l.externalProductWrapper, n),
-      children: [void 0 !== c.asset && (0, r.jsx)("img", {
-        src: c.asset,
+      className: o()(l.externalProductWrapper, i),
+      children: [void 0 !== u.asset && (0, r.jsx)("img", {
+        src: u.asset,
         alt: t.name,
         height: e
-      }), void 0 !== c.renderAsset && c.renderAsset()]
+      }), void 0 !== u.renderAsset && u.renderAsset({
+        animationState: n
+      })]
     })
   }
   return null
