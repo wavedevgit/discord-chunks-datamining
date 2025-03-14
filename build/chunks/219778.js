@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  n: () => s
+  n: () => o
 });
 var r = n(192379);
 let l = {
@@ -14,7 +14,7 @@ let l = {
     responsive: !1,
     backgroundStyle: void 0
   },
-  s = e => (0, r.useMemo)(() => {
+  o = e => (0, r.useMemo)(() => {
     let t = null != e ? l[e] : null;
     return null != t ? function(e) {
       for (var t = 1; t < arguments.length; t++) {

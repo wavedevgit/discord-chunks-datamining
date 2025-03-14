@@ -1,6 +1,6 @@
-/** Chunk was on 20885 **/
+/** Chunk was on 95617 **/
 n.d(t, {
-  T: () => s,
+  T: () => a,
   v: () => c
 });
 var r = n(200651);
@@ -26,16 +26,16 @@ function l(e) {
   }
   return e
 }
-let a = "collectibles shop product details modal",
-  s = e => {
+let s = "collectibles shop product details modal",
+  a = e => {
     let {
       product: t,
-      category: s,
+      category: a,
       shouldCheckoutWithOrbs: u,
       analyticsSource: d,
-      analyticsLocations: _,
-      returnRef: p,
-      tab: E
+      analyticsLocations: h,
+      returnRef: b,
+      tab: p
     } = e;
     u && (0, o.S6)(), (0, i.ZDy)(async () => {
       let {
@@ -45,12 +45,12 @@ let a = "collectibles shop product details modal",
         var i, o;
         return (0, r.jsx)(e, (i = l({}, n), o = o = {
           product: t,
-          category: s,
+          category: a,
           shouldCheckoutWithOrbs: u,
           analyticsSource: d,
-          analyticsLocations: _,
-          returnRef: p,
-          tab: E
+          analyticsLocations: h,
+          returnRef: b,
+          tab: p
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -63,7 +63,7 @@ let a = "collectibles shop product details modal",
         }), i))
       }
     }, l({
-      modalKey: a
+      modalKey: s
     }, u ? {
       onCloseRequest() {
         c(), (0, o.vp)()
@@ -71,5 +71,5 @@ let a = "collectibles shop product details modal",
     } : {}))
   },
   c = () => {
-    (0, i.Mr3)(a)
+    (0, i.Mr3)(s)
   }

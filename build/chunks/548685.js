@@ -6,15 +6,15 @@ n.d(t, {
 var r = n(200651),
   l = n(192379),
   a = n(120356),
-  s = n.n(a),
-  o = n(442837),
+  o = n.n(a),
+  s = n(442837),
   i = n(481060),
-  d = n(594174),
-  c = n(381585),
+  c = n(594174),
+  d = n(381585),
   u = n(597688),
   g = n(937510),
-  f = n(38900),
-  h = n(709999),
+  h = n(38900),
+  f = n(709999),
   m = n(957058),
   p = n(215023),
   b = n(388032),
@@ -26,40 +26,38 @@ let _ = e => {
     handleTransition: a,
     numVisibleItems: _,
     tab: v
-  } = e, x = (0, o.e7)([d.default], () => d.default.getCurrentUser()), k = l.createRef(), j = (0, m.u)(), S = l.useMemo(() => j(n), [t, j, n]), y = (0, g.l)(S);
-  return null == x ? null : (0, r.jsxs)("div", {
-    className: s()(C.row, C.between, C.section, C.popularPicksSection),
+  } = e, k = (0, s.e7)([c.default], () => c.default.getCurrentUser()), x = l.createRef(), j = (0, m.u)(), S = l.useMemo(() => j(n), [t, j, n]), y = (0, g.l)(S);
+  return null == k ? null : (0, r.jsxs)("div", {
+    className: o()(C.popularPicksSection, C.centeredSection),
     children: [(0, r.jsxs)("div", {
-      className: C.popularPicksHeader,
+      className: C.blockHeader,
       children: [(0, r.jsx)(i.X6q, {
         variant: "heading-lg/semibold",
         children: b.NW.string(b.t.ivaAAw)
-      }), v === p.AW.HOME && (0, r.jsxs)(i.P3F, {
-        className: C.shopAll,
+      }), v === p.AW.HOME && (0, r.jsx)(i.zxk, {
+        color: i.Ttl.PRIMARY,
+        look: i.iLD.FILLED,
         onClick: () => a("shop all top"),
-        children: [(0, r.jsx)(i.dRF, {}), (0, r.jsx)(i.Text, {
-          variant: "text-sm/medium",
-          children: b.NW.string(b.t.xFcotb)
-        })]
+        children: b.NW.string(b.t.xFcotb)
       })]
     }), (0, r.jsx)("div", {
       className: C.feed,
-      ref: k,
+      ref: x,
       children: t ? (0, r.jsx)(r.Fragment, {
-        children: [...Array(12)].map((e, t) => (0, r.jsx)(f.K, {}, t + 1))
+        children: [...Array(12)].map((e, t) => (0, r.jsx)(h.K, {}, t + 1))
       }) : (0, r.jsx)(r.Fragment, {
         children: y.slice(0, _).map((e, t) => {
           let n = u.Z.getCategoryForProduct(e.skuId);
-          return null == e || null == n ? null : (0, r.jsx)(c.k0, {
+          return null == e || null == n ? null : (0, r.jsx)(d.k0, {
             newValue: {
               tilePosition: t,
               pageSection: "popular picks",
               categoryPosition: 2
             },
-            children: (0, r.jsx)(h.Z, {
+            children: (0, r.jsx)(f.Z, {
               product: e,
               category: n,
-              user: x,
+              user: k,
               tab: v,
               isInFeedView: !0
             }, e.skuId)

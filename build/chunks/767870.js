@@ -125,7 +125,7 @@ function m(e) {
     showAfterTimestamp: n.valueOf(),
     cooldownDurationMs: 0
   }), _ = (0, a.Z)(i, c);
-  return p && (_ = _.toUpperCase()), (0, r.jsxs)("div", {
+  return "" === _ ? null : (p && (_ = _.toUpperCase()), (0, r.jsxs)("div", {
     className: l()(t, d.countDown),
     children: [m ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(g, {
@@ -139,5 +139,5 @@ function m(e) {
       text: _,
       colorOptions: b === o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL ? u.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : u.VE.PREMIUM_TIER_2_GREY_FILL
     })]
-  })
+  }))
 }

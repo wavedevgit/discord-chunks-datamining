@@ -3,7 +3,8 @@
 n.r(t), n.d(t, {
   WebAudioAPISound: () => S,
   WebAudioSound: () => I,
-  playGiftSound: () => y
+  playGiftSound: () => y,
+  voiceSinkId: () => m
 }), n(47120), n(301563), n(411104);
 var r = n(392711),
   i = n.n(r),

@@ -1,12 +1,12 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => s
+  Z: () => o
 }), n(301563);
 var r = n(593473),
   l = n(512969),
   a = n(215023);
-let s = () => {
+let o = () => {
   let e = (0, l.TH)(),
     {
       tab: t

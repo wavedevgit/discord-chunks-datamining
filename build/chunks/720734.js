@@ -825,9 +825,7 @@ function e6(e) {
     value: M,
     children: (0, r.jsxs)("div", {
       ref: C,
-      className: a()(eF.micButtonParent, {
-        [eF.buttonSpace]: L
-      }),
+      className: eF.micButtonParent,
       children: [(0, r.jsx)(eL.Z, {
         tooltipText: B,
         tooltipColor: u,

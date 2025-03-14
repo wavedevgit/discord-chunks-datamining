@@ -1,6 +1,6 @@
 /**
   Module ID: 1815
-  Original File Name: 22b3ef5232c7c752
+  Original File Name: c4f959aee9898564
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -467,7 +467,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 1rem;
+    font-size: 16px;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -2407,7 +2407,8 @@ h1.title_feb59c,h2.title_feb59c {
 
 .micButtonParent__37e49 {
     display: flex;
-    flex: direct
+    flex: direct;
+    margin-right: 4px
 }
 
 .micButtonParent__37e49 .buttonChevron__37e49 {
@@ -2434,10 +2435,6 @@ h1.title_feb59c,h2.title_feb59c {
 .micButtonParent__37e49:hover>button:hover {
     color: var(--interactive-hover);
     background-color: var(--background-modifier-selected)
-}
-
-.buttonSpace__37e49 {
-    margin-right: 4px
 }
 
 .voiceFilterWarning__37e49 {
@@ -2526,6 +2523,10 @@ h1.title_feb59c,h2.title_feb59c {
     bottom: -1px
 }
 
+.visual-refresh .micButtonParent__37e49 {
+    margin-right: 0
+}
+
 .visual-refresh .micButtonParent__37e49:hover>button:hover {
     background-color: var(--button-secondary-background-hover)
 }
@@ -2539,8 +2540,7 @@ h1.title_feb59c,h2.title_feb59c {
     width: 16px;
     margin-left: 1px;
     border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    margin-right: 4px
+    border-bottom-left-radius: 0
 }
 
 .visual-refresh .micButtonParent__37e49 .buttonChevronIcon__37e49 {
@@ -17191,4 +17191,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=22b3ef5232c7c752.css.map*/
+/*# sourceMappingURL=c4f959aee9898564.css.map*/
