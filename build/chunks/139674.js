@@ -2,7 +2,7 @@
 "use strict";
 let r, i;
 n.d(t, {
-  Z: () => v
+  Z: () => b
 });
 var o, a = n(442837),
   s = n(433517),
@@ -69,6 +69,6 @@ class E extends(o = a.ZP.Store) {
   }
 }
 p(E, "displayName", "BlockedDomainStore");
-let v = new E(l.Z, {
+let b = new E(l.Z, {
   BLOCKED_DOMAIN_LIST_FETCHED: g
 })

@@ -5,7 +5,7 @@ n.d(t, {
   Fq: () => u,
   HP: () => c,
   ID: () => g,
-  IO: () => b,
+  IO: () => v,
   It: () => d,
   Re: () => f,
   W3: () => O,
@@ -16,7 +16,7 @@ n.d(t, {
   pG: () => y,
   sr: () => E,
   xn: () => p,
-  z5: () => v
+  z5: () => b
 }), n(411104);
 var r = n(544891),
   i = n(570140);
@@ -145,14 +145,14 @@ function E(e) {
   })
 }
 
-function v(e) {
+function b(e) {
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_THEME_COLORS",
     themeColors: e
   })
 }
 
-function b() {
+function v() {
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES"
   })

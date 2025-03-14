@@ -80,8 +80,8 @@ class m extends i.Component {
         naturalWidth: m,
         naturalHeight: g,
         playable: E,
-        downloadable: v = !0,
-        volume: b,
+        downloadable: b = !0,
+        volume: v,
         autoPlay: y,
         autoMute: O,
         responsive: I,
@@ -127,7 +127,7 @@ class m extends i.Component {
           width: a,
           height: c,
           responsive: I,
-          volume: b,
+          volume: v,
           autoPlay: null != y && y,
           autoMute: null != O && O,
           type: s.ZP.Types.VIDEO,
@@ -147,7 +147,7 @@ class m extends i.Component {
           onControlsShow: D,
           onControlsHide: L,
           mimeType: T,
-          downloadable: v
+          downloadable: b
         })
       }
     }))

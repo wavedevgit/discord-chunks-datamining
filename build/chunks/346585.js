@@ -1,11 +1,11 @@
-/** Chunk was on 69423 **/
+/** Chunk was on 98697 **/
 n.d(t, {
   IE: () => N,
-  K9: () => g,
-  NX: () => h,
+  K9: () => O,
+  NX: () => m,
   R_: () => b,
   e$: () => p,
-  ti: () => O,
+  ti: () => g,
   zV: () => _
 }), n(757143), n(301563), n(47120), n(627341);
 var r = n(913527),
@@ -34,15 +34,15 @@ function p(e) {
 }
 let E = ["@", "#", ":"],
   f = ["```", "discord", "hypesquad", "system message", "system mesage", "sustem message", "sustem mesage", "clyde"],
-  m = ["discordtag", "everyone", "here", "discord nitro", "discord", "snowsgiving"];
+  h = ["discordtag", "everyone", "here", "discord nitro", "discord", "snowsgiving"];
 
-function h(e) {
+function m(e) {
   var t;
   let n = e.username.toLowerCase();
   if ((t = u.kt, n.split("").filter(e => !t.includes(e.charCodeAt(0))).join("")).length < 2) return !0;
   for (let e of E)
     if (n.includes(e)) return !0;
-  for (let e of m)
+  for (let e of h)
     if (n === e.toLowerCase()) return !0;
   for (let e of f)
     if (n.includes(e.toLowerCase())) return !0;
@@ -53,7 +53,7 @@ function b(e) {
   return e.toLowerCase().replace(/\s/g, "").replace("@", "")
 }
 
-function g(e) {
+function O(e) {
   let t = a.default.extractTimestamp(e);
   try {
     return i()(new Date(t)).format("MMM DD, YYYY")
@@ -61,7 +61,7 @@ function g(e) {
   return null
 }
 
-function O(e) {
+function g(e) {
   return (0, o.EQ)(e).with({
     rateLimited: !0
   }, () => ({

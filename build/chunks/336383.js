@@ -50,13 +50,13 @@ function E(e, t) {
   return n
 }
 
-function v(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function b(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -80,7 +80,7 @@ let O = i.forwardRef(function(e, t) {
     subsection: o,
     onAction: m,
     onClose: E
-  } = e, y = b(e, ["children", "className", "subsection", "onAction", "onClose"]);
+  } = e, y = v(e, ["children", "className", "subsection", "onAction", "onClose"]);
   let {
     profileType: O
   } = (0, d.z)(), {
@@ -88,7 +88,7 @@ let O = i.forwardRef(function(e, t) {
   } = (0, l.ZP)(), {
     context: S
   } = (0, c.KZ)();
-  return O === _.y0.FULL_SIZE || (null == S ? void 0 : S.userId) == null ? (0, r.jsx)(u.Z.Overlay, v(g({
+  return O === _.y0.FULL_SIZE || (null == S ? void 0 : S.userId) == null ? (0, r.jsx)(u.Z.Overlay, b(g({
     ref: t,
     className: a()(h.card, i)
   }, y), {
@@ -105,7 +105,7 @@ let O = i.forwardRef(function(e, t) {
         subsection: o
       }, S)), null == E || E()
     },
-    children: (0, r.jsx)(u.Z.Overlay, v(g({
+    children: (0, r.jsx)(u.Z.Overlay, b(g({
       ref: t,
       className: a()(h.card, i)
     }, y), {

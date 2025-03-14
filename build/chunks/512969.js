@@ -90,13 +90,13 @@ var g = function(e) {
     }, t
   }(i.Component),
   E = {},
-  v = 1e4,
-  b = 0;
+  b = 1e4,
+  v = 0;
 
 function y(e) {
   if (E[e]) return E[e];
   var t = u().compile(e);
-  return b < v && (E[e] = t, b++), t
+  return v < b && (E[e] = t, v++), t
 }
 
 function O(e, t) {

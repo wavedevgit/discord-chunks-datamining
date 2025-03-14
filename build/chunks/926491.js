@@ -39,7 +39,7 @@ function E(e) {
   return e
 }
 
-function v(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,8 +50,8 @@ function v(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -177,7 +177,7 @@ function B(e) {
   !d.Z.isLurking(t.id) && (G(t), 1 === y && null == t.stickers && null != t.stickerUpdates && (y = 0))
 }
 
-function V(e) {
+function F(e) {
   var t;
   let {
     guild: n
@@ -186,7 +186,7 @@ function V(e) {
     null != S && S.delete(e.id), I.delete(e.id)
   }), C.delete(n.id), C = new Map(C)
 }
-let F = () => {
+let V = () => {
     y = 0, T = [], I.clear(), O.clear(), S = null, C.clear(), C = new Map(C), A = !1, N = null
   },
   Z = () => {
@@ -234,7 +234,7 @@ let F = () => {
     } = e, i = e => {
       let t;
       let n = I.get(e.id);
-      return null != n && (0, m.J8)(n) && (t = null != n.user ? n.user : void 0), b(E({}, e), {
+      return null != n && (0, m.J8)(n) && (t = null != n.user ? n.user : void 0), v(E({}, e), {
         user: t
       })
     };
@@ -293,8 +293,8 @@ let X = new Q(a.Z, {
   BACKGROUND_SYNC: U,
   CONNECTION_OPEN: j,
   GUILD_CREATE: B,
-  GUILD_DELETE: V,
-  LOGOUT: F,
+  GUILD_DELETE: F,
+  LOGOUT: V,
   STICKER_PACKS_FETCH_START: Z,
   STICKER_PACKS_FETCH_SUCCESS: H,
   STICKER_PACK_FETCH_SUCCESS: W,

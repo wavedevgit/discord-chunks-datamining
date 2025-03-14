@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   C3: () => E,
-  O3: () => v,
+  O3: () => b,
   ZP: () => g
 });
 var r = n(200651),
@@ -54,31 +54,31 @@ function g(e) {
     isLargeModal: g,
     stepProps: E
   } = m(e), {
-    step: v,
-    stepConfigs: b,
+    step: b,
+    stepConfigs: v,
     setBodyNode: y,
     setFooterNode: O,
     setModalOverlayNode: I,
     setReadySlideId: S
-  } = (0, d.JL)(), T = b.find(e => e.key === v);
+  } = (0, d.JL)(), T = v.find(e => e.key === b);
   i.useEffect(() => {
     I(null)
-  }, [v, I]), l()(null != T, "Unknown step for current payment flow.");
+  }, [b, I]), l()(null != T, "Unknown step for current payment flow.");
   let N = null !== (c = null == T ? void 0 : null === (t = T.options) || void 0 === t ? void 0 : t.hideSlider) && void 0 !== c && c,
     A = null == T ? void 0 : null === (n = T.options) || void 0 === n ? void 0 : n.bodyClassName,
     C = null == T ? void 0 : null === (o = T.options) || void 0 === o ? void 0 : o.sliderBodyClassName;
   return void 0 !== g && g && (C = _.sliderBodyLarge), (0, r.jsxs)(r.Fragment, {
-    children: [null === (p = null == T ? void 0 : null === (s = T.options) || void 0 === s ? void 0 : s.renderHeader) || void 0 === p || p ? h : null, T.renderStep(E), null == v || N ? null : (0, r.jsxs)(r.Fragment, {
+    children: [null === (p = null == T ? void 0 : null === (s = T.options) || void 0 === s ? void 0 : s.renderHeader) || void 0 === p || p ? h : null, T.renderStep(E), null == b || N ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.hzk, {
         className: a()(A, _.body, _.noRoundedCorners, {
-          [_.reviewStep]: v === f.h8.REVIEW
+          [_.reviewStep]: b === f.h8.REVIEW
         }),
         children: (0, r.jsx)(u.MyZ, {
-          activeSlide: v,
+          activeSlide: b,
           centered: !1,
           onSlideReady: e => S(e),
-          width: v === f.h8.ADD_PAYMENT_STEPS ? 408 : void 0,
-          children: b.filter(e => null != e.key).map(e => (0, r.jsx)(u.Mi4, {
+          width: b === f.h8.ADD_PAYMENT_STEPS ? 408 : void 0,
+          children: v.filter(e => null != e.key).map(e => (0, r.jsx)(u.Mi4, {
             id: e.key,
             children: (0, r.jsx)("form", {
               className: a()(_.sliderBody, C),
@@ -105,7 +105,7 @@ function E(e) {
   return null == n ? null : c.createPortal(t, n)
 }
 
-function v(e) {
+function b(e) {
   let {
     children: t
   } = e, {

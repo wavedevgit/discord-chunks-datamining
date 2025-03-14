@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => v
 });
 var r = n(200651);
 n(192379);
@@ -20,13 +20,13 @@ var i = n(120356),
   m = n(388032),
   g = n(367856);
 let E = "https://cdn.discordapp.com/assets/22_211_SuperReactions_GTM_Hero_v09.mp4",
-  v = 32;
+  b = 32;
 
-function b(e) {
+function v(e) {
   var t, n;
   let {
     onDismiss: i
-  } = e, b = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), y = m.NW.string(m.t["eikz4+"]), O = (0, d.N)(), I = (0, u.Ng)(), S = (null == O ? void 0 : O.subscription_trial) != null || null != I, T = {
+  } = e, v = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), y = m.NW.string(m.t["eikz4+"]), O = (0, d.N)(), I = (0, u.Ng)(), S = (null == O ? void 0 : O.subscription_trial) != null || null != I, T = {
     object: p.qAy.BUTTON_CTA,
     section: p.jXE.SUPER_REACTION_PICKER
   };
@@ -50,7 +50,7 @@ function b(e) {
           }),
           src: E,
           loop: !0,
-          autoPlay: !b,
+          autoPlay: !v,
           muted: !0,
           controls: !0
         })
@@ -69,8 +69,8 @@ function b(e) {
             size: "custom",
             color: "currentColor",
             className: g.nitroWheel,
-            width: v,
-            height: v
+            width: b,
+            height: b
           }), (0, r.jsx)(s.X6q, {
             className: g.headerText,
             variant: "heading-xl/bold",

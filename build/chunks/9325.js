@@ -6,21 +6,21 @@ var r = n(200651),
   i = n(192379),
   o = n(442837),
   a = n(481060),
-  l = n(388905),
-  s = n(409059),
+  s = n(388905),
+  l = n(409059),
   c = n(962220),
   u = n(306453),
   d = n(108427),
   h = n(314897),
   p = n(626135),
-  f = n(587444),
-  g = n(981631),
+  g = n(587444),
+  m = n(981631),
   _ = n(58346),
-  m = n(388032),
+  f = n(388032),
   b = n(802138);
 
 function x(e, t, n) {
-  e.preventDefault(), p.default.track(g.rMx.GUILD_TEMPLATE_APP_OPENED, {
+  e.preventDefault(), p.default.track(m.rMx.GUILD_TEMPLATE_APP_OPENED, {
     guild_template_code: t,
     guild_template_name: n.name,
     guild_template_description: n.description,
@@ -34,23 +34,23 @@ function x(e, t, n) {
 function N(e) {
   let {
     code: t
-  } = e, n = (0, o.e7)([s.Z], () => s.Z.getGuildTemplate(t));
+  } = e, n = (0, o.e7)([l.Z], () => l.Z.getGuildTemplate(t));
   return (i.useEffect(() => {
     (0, d.e)("guild_template_mobile")
-  }, []), null == n || n.state === _.Rj.RESOLVING) ? (0, r.jsx)(l.ZP, {
+  }, []), null == n || n.state === _.Rj.RESOLVING) ? (0, r.jsx)(s.ZP, {
     children: (0, r.jsx)(a.$jN, {})
-  }) : n.state === _.Rj.RESOLVED ? (0, r.jsxs)(l.ZP, {
+  }) : n.state === _.Rj.RESOLVED ? (0, r.jsxs)(s.ZP, {
     children: [(0, r.jsx)(u.Z, {
       guildTemplate: n,
       tall: !0
-    }), (0, r.jsx)(l.zx, {
+    }), (0, r.jsx)(s.zx, {
       onClick: e => x(e, t, n),
       className: b.marginTop20,
-      children: m.NW.string(m.t["a3Gl+f"])
+      children: f.NW.string(f.t["a3Gl+f"])
     })]
-  }) : (0, r.jsx)(f.Z, {
-    text: m.NW.string(m.t["e/rZ2t"]),
-    buttonCta: m.NW.string(m.t.HAvYn5),
+  }) : (0, r.jsx)(g.Z, {
+    text: f.NW.string(f.t["e/rZ2t"]),
+    buttonCta: f.NW.string(f.t.HAvYn5),
     onClick: e => x(e, t, n)
   })
 }

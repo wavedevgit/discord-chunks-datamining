@@ -6,7 +6,7 @@ n.d(t, {
   ND: () => f,
   WC: () => p,
   aW: () => s,
-  af: () => v,
+  af: () => b,
   k0: () => E,
   km: () => g,
   no: () => d,
@@ -173,7 +173,7 @@ let p = [_(720), _(1080), _(1440), _(0, () => o.NW.string(o.t.XjXqzs))],
   }),
   g = [_(480, () => m(480)), _(720, () => m(720)), _(1080, () => m(1080)), _(1440, () => m(1440)), _(0, () => m(0))],
   E = [_(15), _(30), _(60)],
-  v = [_(15, () => o.NW.formatToPlainString(o.t["bW+JCQ"], {
+  b = [_(15, () => o.NW.formatToPlainString(o.t["bW+JCQ"], {
     value: 15
   })), _(30, () => o.NW.formatToPlainString(o.t["bW+JCQ"], {
     value: 30

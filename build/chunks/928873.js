@@ -189,14 +189,14 @@ class E {
   }
 }
 
-function v(e, t) {
+function b(e, t) {
   let n = e.alpha,
     r = (1 - n) * t.red + n * e.red,
     i = (1 - n) * t.green + n * e.green;
   return new E(r, i, (1 - n) * t.blue + n * e.blue, e.alpha + t.alpha * (1 - e.alpha))
 }
 
-function b(e, t) {
+function v(e, t) {
   if (null == e) return "var(--focus-primary)";
   let {
     saturation: n
@@ -213,7 +213,7 @@ function y(e) {
       t.push(e)
     }
   }
-  return t.push(new E(255, 255, 255, 1)), t.reduce(v)
+  return t.push(new E(255, 255, 255, 1)), t.reduce(b)
 }
 let O = "--__adaptive-focus-ring-color",
   I = "--__adaptive-focus-ring-radius";
@@ -305,7 +305,7 @@ class N {
       t = {
         ...this.makePositionFromDOMRect(this.targetElement.getBoundingClientRect()),
         zIndex: null != (e = this.zIndex) ? e : this.getNextZIndexForAncestry(this.targetAncestry),
-        [O]: b(n, this.themeOptions),
+        [O]: v(n, this.themeOptions),
         [I]: this.getBorderRadius(this.targetAncestry)
       }
     }
@@ -401,8 +401,8 @@ function G(e) {
     g = o.useContext(C),
     E = o.Children.only(_),
     {
-      onBlur: v,
-      onFocus: b,
+      onBlur: b,
+      onFocus: v,
       ...y
     } = E.props,
     O = o.useMemo(() => ({
@@ -441,12 +441,12 @@ function G(e) {
     }
   }, [t, O, r, g, a, s]);
   let I = o.useCallback(e => {
-      g.hide(), p.current = !1, m(!1), null == v || v(e)
-    }, [v, g]),
+      g.hide(), p.current = !1, m(!1), null == b || b(e)
+    }, [b, g]),
     S = o.useCallback(e => {
       let n = null == s ? void 0 : s.current;
-      e.currentTarget === e.target ? (p.current = !0, g.showElement(null != n ? n : e.currentTarget, O)) : (m(!0), t && g.showElement(null != n ? n : e.currentTarget, O)), null == b || b(e)
-    }, [s, t, b, g, O]);
+      e.currentTarget === e.target ? (p.current = !0, g.showElement(null != n ? n : e.currentTarget, O)) : (m(!0), t && g.showElement(null != n ? n : e.currentTarget, O)), null == v || v(e)
+    }, [s, t, v, g, O]);
   return n && null == a && null == r ? o.cloneElement(E, {
     ...y,
     className: d(y.className, p.current ? c : void 0, h ? u : void 0),

@@ -37,9 +37,9 @@ function E(e) {
     paymentId: r
   } = t;
   if (n !== l.ZP.ErrorCodes.CONFIRMATION_REQUIRED && n !== l.ZP.ErrorCodes.AUTHENTICATION_REQUIRED) return p = !1, !1;
-  p || (p = !0, h = r, n === l.ZP.ErrorCodes.AUTHENTICATION_REQUIRED && v(r))
+  p || (p = !0, h = r, n === l.ZP.ErrorCodes.AUTHENTICATION_REQUIRED && b(r))
 }
-async function v(e) {
+async function b(e) {
   if (null == e) return;
   let {
     error: t
@@ -54,7 +54,7 @@ async function v(e) {
   }
 }
 
-function b(e) {
+function v(e) {
   let {
     error: t
   } = e;
@@ -102,7 +102,7 @@ let I = new O(o.Z, {
   PREMIUM_PAYMENT_UPDATE_FAIL: E,
   SKU_PURCHASE_FAIL: E,
   GIFT_CODE_REDEEM_FAILURE: E,
-  PAYMENT_AUTHENTICATION_ERROR: b,
+  PAYMENT_AUTHENTICATION_ERROR: v,
   PAYMENT_UPDATE: y,
   BILLING_PAYMENT_FETCH_SUCCESS: y
 })

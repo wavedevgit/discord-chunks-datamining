@@ -20,8 +20,8 @@ var i = n(392711),
   m = n(569545),
   g = n(960861),
   E = n(803647),
-  v = n(70722),
-  b = n(981631);
+  b = n(70722),
+  v = n(981631);
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -52,11 +52,11 @@ let I = (0, i.debounce)(l.xc, 1e3),
           videoState: t
         } = e, n = u.Z.getCurrentUserActiveStream();
         if (null != n) {
-          let e = t === b.FQ1.PAUSED;
+          let e = t === v.FQ1.PAUSED;
           (0, l.tK)(n, e)
         }
       }), a.Z.subscribe("STREAM_DELETE", e => {
-        e.reason === b.si2.STREAM_FULL && ((0, l.aP)(e.streamKey, !1), (0, o.ZDy)(async () => {
+        e.reason === v.si2.STREAM_FULL && ((0, l.aP)(e.streamKey, !1), (0, o.ZDy)(async () => {
           let {
             default: e
           } = await n.e("63757").then(n.bind(n, 309690));
@@ -97,7 +97,7 @@ let I = (0, i.debounce)(l.xc, 1e3),
         } = (0, m.my)(n);
         if (null == i || null == r || r !== (null === (t = p.default.getCurrentUser()) || void 0 === t ? void 0 : t.id)) return;
         let o = f.Z.getMemberCount(i);
-        null != o && !(o < 2) && !(o > v.tB) && c.eo.getSetting() && I(n)
+        null != o && !(o < 2) && !(o > b.tB) && c.eo.getSetting() && I(n)
       })
     }
   }

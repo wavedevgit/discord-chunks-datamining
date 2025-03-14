@@ -43,15 +43,15 @@ let E = {
     lazyLoaded: !1,
     editInfo: (0, h.JC)()
   },
-  v = {
+  b = {
     ProtoClass: c.ji,
     proto: c.ji.create(),
     lazyLoaded: !0,
     editInfo: (0, h.JC)()
   },
-  b = {
+  v = {
     [h.yP.PRELOADED_USER_SETTINGS]: E,
-    [h.yP.FRECENCY_AND_FAVORITES_SETTINGS]: v
+    [h.yP.FRECENCY_AND_FAVORITES_SETTINGS]: b
   },
   y = !1;
 
@@ -65,7 +65,7 @@ function O(e) {
     isDirty: r,
     cleanupFuncs: i
   } = (0, p.xt)(E.proto, _.Z[h.yP.PRELOADED_USER_SETTINGS]);
-  r && N(E), E.proto = n, o()("string" != typeof E.proto, "UserSettingsProto cannot be a string"), E.editInfo.triggeredMigrations = r, E.editInfo.cleanupFuncs = i, E.editInfo.loaded = !0, Object.values(b).forEach(e => {
+  r && N(E), E.proto = n, o()("string" != typeof E.proto, "UserSettingsProto cannot be a string"), E.editInfo.triggeredMigrations = r, E.editInfo.cleanupFuncs = i, E.editInfo.loaded = !0, Object.values(v).forEach(e => {
     e.lazyLoaded && (e.editInfo.loaded = !1, e.editInfo.loading = !1)
   }), T()
 }
@@ -75,13 +75,13 @@ function I() {
 }
 
 function S() {
-  T(), Object.values(b).forEach(e => {
+  T(), Object.values(v).forEach(e => {
     e.proto = e.ProtoClass.create(), e.editInfo = (0, h.JC)()
   })
 }
 
 function T() {
-  Object.values(b).forEach(e => {
+  Object.values(v).forEach(e => {
     if (null != e.editInfo.timeout) {
       var t, n;
       clearTimeout(e.editInfo.timeout), e.editInfo.timeout = void 0, e.editInfo.timeoutDelay = Number.MAX_SAFE_INTEGER, e.editInfo.rateLimited = !1, e.editInfo.offlineEditDataVersion = null !== (n = null === (t = e.proto.versions) || void 0 === t ? void 0 : t.dataVersion) && void 0 !== n ? n : 0
@@ -111,7 +111,7 @@ function C(e) {
     local: a
   } = e;
   y = !a;
-  let s = b[n];
+  let s = v[n];
   i && N(s), r ? (s.proto = (0, p.re)(s.ProtoClass, s.proto, t), o()("string" != typeof s.proto, "UserSettingsProto cannot be a string")) : (s.proto = t, o()("string" != typeof s.proto, "UserSettingsProto cannot be a string"), s.editInfo.loaded = !0, s.editInfo.loading = !1)
 }
 
@@ -123,7 +123,7 @@ function R(e) {
     }
   } = e;
   o()(!__OVERLAY__, "this cannot run in the overlay");
-  let r = b[t];
+  let r = v[t];
   return r.editInfo = g({}, r.editInfo, n), !1
 }
 
@@ -135,7 +135,7 @@ function P(e) {
 }
 
 function w(e) {
-  null != e && s().forEach(b, (t, n) => {
+  null != e && s().forEach(v, (t, n) => {
     var r, i;
     let a = e[Number(n)];
     if (null == a) return;
@@ -157,7 +157,7 @@ class D extends(r = l.ZP.PersistedStore) {
     return this.computeState()
   }
   computeState() {
-    return s().mapValues(b, e => {
+    return s().mapValues(v, e => {
       let t = {
         proto: (0, p.xU)(e.ProtoClass, e.proto)
       };
@@ -165,19 +165,19 @@ class D extends(r = l.ZP.PersistedStore) {
     })
   }
   hasLoaded(e) {
-    return b[e].editInfo.loaded
+    return v[e].editInfo.loaded
   }
   get settings() {
     return E.proto
   }
   get frecencyWithoutFetchingLatest() {
-    return v.proto
+    return b.proto
   }
   get wasMostRecentUpdateFromServer() {
     return y
   }
   getFullState() {
-    return b
+    return v
   }
   getGuildFolders() {
     var e;

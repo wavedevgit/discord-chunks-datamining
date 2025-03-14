@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => b
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -54,18 +54,18 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = function(e) {
+let b = function(e) {
   let {
     onCardInfoChange: t,
     error: n
-  } = e, o = i.useRef(t), [h, g] = i.useState(!1), [v, b] = i.useState({}), [y, O] = i.useState({
+  } = e, o = i.useRef(t), [h, g] = i.useState(!1), [b, v] = i.useState({}), [y, O] = i.useState({
     name: "",
     country: "",
     postalCode: ""
   }), [I, S] = i.useState({}), [T, N] = i.useState({});
 
   function A(e, t) {
-    !!v[e] !== t && b(n => E(m({}, n), {
+    !!b[e] !== t && v(n => E(m({}, n), {
       [e]: t
     }))
   }
@@ -79,11 +79,11 @@ let v = function(e) {
     N(C())
   }
   i.useEffect(() => {
-    let e = v.cardNumber && v.cardExpiry && v.cardCvc && 0 === Object.keys(C(!0)).length;
+    let e = b.cardNumber && b.cardExpiry && b.cardCvc && 0 === Object.keys(C(!0)).length;
     o.current({
       name: y.name
     }, !!e)
-  }, [v, y, C]);
+  }, [b, y, C]);
   let P = [{
     fields: [{
       name: "cardNumber",

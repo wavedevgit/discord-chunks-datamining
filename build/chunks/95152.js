@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(998502),
   g = n(981631),
   E = n(388032),
-  v = n(720513),
-  b = n(802138);
+  b = n(720513),
+  v = n(802138);
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -95,8 +95,8 @@ function A(e) {
   return (0, r.jsx)("img", {
     ref: h,
     src: l,
-    className: a()(v.icon, {
-      [v.image]: !d
+    className: a()(b.icon, {
+      [b.image]: !d
     }),
     "aria-hidden": !0,
     alt: "",
@@ -115,8 +115,8 @@ class C extends i.Component {
     return this.props.upload.item.platform !== u.ow.WEB ? null : this.props.upload.isImage ? (0, r.jsx)(A, {
       file: this.props.upload.item.file
     }) : (0, r.jsx)("div", {
-      className: a()(v.icon, {
-        [v[null !== (e = this.props.upload.classification) && void 0 !== e ? e : ""]]: !0
+      className: a()(b.icon, {
+        [b[null !== (e = this.props.upload.classification) && void 0 !== e ? e : ""]]: !0
       })
     })
   }
@@ -151,36 +151,36 @@ class R extends i.Component {
       "aria-label": E.NW.string(E.t["3AS4UF"]),
       size: s.CgR.DYNAMIC,
       transitionState: t,
-      className: v.uploadModal,
+      className: b.uploadModal,
       children: [(0, r.jsxs)("div", {
-        className: v.inner,
+        className: b.inner,
         children: [(0, r.jsxs)("div", {
-          className: a()(v.file, {
-            [v.expandable]: e.isImage
+          className: a()(b.file, {
+            [b.expandable]: e.isImage
           }),
           children: [(0, r.jsx)(C, {
             upload: e
           }), (0, r.jsxs)("div", {
-            className: v.description,
+            className: b.description,
             children: [(0, r.jsx)("div", {
-              className: v.filename,
+              className: b.filename,
               children: e.showLargeMessageDialog ? E.NW.formatToPlainString(E.t.QWQxtL, {
                 maxLength: n
               }) : e.filename
             }), e.showLargeMessageDialog ? (0, r.jsx)("div", {
-              className: v.subtitle,
+              className: b.subtitle,
               children: E.NW.string(E.t.Plcu09)
             }) : null]
           })]
         }), (0, r.jsxs)("div", {
-          className: v.comment,
+          className: b.comment,
           children: [(0, r.jsx)("div", {
-            className: v.label,
+            className: b.label,
             children: (0, r.jsx)("span", {
               children: E.NW.string(E.t.ILJuBg)
             })
           }), (0, r.jsx)(s.oil, {
-            className: a()(v.channelTextAreaUpload, b.marginTop8),
+            className: a()(b.channelTextAreaUpload, v.marginTop8),
             value: this.state.filename,
             onChange: e => this.setState({
               filename: e
@@ -190,12 +190,12 @@ class R extends i.Component {
             }
           }), e.isImage ? (0, r.jsxs)(i.Fragment, {
             children: [(0, r.jsx)("div", {
-              className: v.label,
+              className: b.label,
               children: (0, r.jsx)("span", {
                 children: E.NW.string(E.t.eOB2eX)
               })
             }), (0, r.jsx)(s.oil, {
-              className: a()(v.channelTextAreaUpload, b.marginTop8),
+              className: a()(b.channelTextAreaUpload, v.marginTop8),
               placeholder: E.NW.string(E.t.RNH1jo),
               value: this.state.description,
               onChange: e => this.setState({
@@ -206,7 +206,7 @@ class R extends i.Component {
               }
             })]
           }) : null, !0 !== o && (0, r.jsx)(s.XZJ, {
-            className: b.marginBottom20,
+            className: v.marginBottom20,
             value: l,
             onChange: (e, t) => this.setState({
               hasSpoiler: t
@@ -218,9 +218,9 @@ class R extends i.Component {
           })]
         })]
       }), (0, r.jsx)("div", {
-        className: v.footer,
+        className: b.footer,
         children: (0, r.jsxs)("div", {
-          className: a()(v.hasSpoilers, v.footerRightAlign),
+          className: a()(b.hasSpoilers, b.footerRightAlign),
           children: [(0, r.jsx)(s.zxk, {
             type: "button",
             look: s.zxk.Looks.LINK,

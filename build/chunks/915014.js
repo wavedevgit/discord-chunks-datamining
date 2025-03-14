@@ -24,9 +24,9 @@ function h(e) {
   } = e, {
     mutualFriends: h,
     mutualGuilds: m
-  } = (0, l.Z)(t), g = null != h && h.length > 0, E = null != m && m.length > 0, v = g && E ? "text-xs/normal" : "text-sm/normal";
+  } = (0, l.Z)(t), g = null != h && h.length > 0, E = null != m && m.length > 0, b = g && E ? "text-xs/normal" : "text-sm/normal";
   if (!g && !E) return null;
-  let b = () => g ? (0, r.jsxs)(i.P3F, {
+  let v = () => g ? (0, r.jsxs)(i.P3F, {
       className: _.section,
       onClick: () => null == n ? void 0 : n(d.oh.MUTUAL_FRIENDS),
       children: [(0, r.jsx)(o.Z, {
@@ -42,7 +42,7 @@ function h(e) {
         disableUsernameTooltip: !0
       }), (0, r.jsx)(i.Text, {
         className: _.text,
-        variant: v,
+        variant: b,
         color: "interactive-normal",
         children: (0, c.Z)(h.length)
       })]
@@ -67,13 +67,13 @@ function h(e) {
         disableGuildNameTooltip: !0
       }), (0, r.jsx)(i.Text, {
         className: _.text,
-        variant: v,
+        variant: b,
         color: "interactive-normal",
         children: (0, u.Z)(m.length)
       })]
     }) : null;
   return (0, r.jsxs)("div", {
     className: _.mutuals,
-    children: [b(), y(), O()]
+    children: [v(), y(), O()]
   })
 }

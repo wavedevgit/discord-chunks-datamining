@@ -1,6 +1,6 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => C
+  Z: () => S
 }), n(13667), n(390547);
 var r = n(200651);
 n(192379);
@@ -16,8 +16,8 @@ var l = n(120356),
   m = n(496675),
   h = n(771845),
   x = n(259580),
-  g = n(102172),
-  p = n(148381),
+  p = n(102172),
+  g = n(148381),
   _ = n(388032),
   v = n(711597),
   j = n(359026);
@@ -30,7 +30,7 @@ function b(e) {
     let {
       channel: t
     } = e;
-    return (0, g.JL)(t, f.Z, m.Z)
+    return (0, p.JL)(t, f.Z, m.Z)
   }));
   return null != l && i ? (0, r.jsxs)(c.P3F, {
     onClick: () => n(t),
@@ -50,11 +50,11 @@ function b(e) {
   }) : null
 }
 
-function C(e) {
+function S(e) {
   let {
     onSelectGuild: t
   } = e, n = (0, a.e7)([h.ZP], () => h.ZP.getGuildFolders());
-  return (0, r.jsx)(p.Z, {
+  return (0, r.jsx)(g.Z, {
     title: _.NW.string(_.t.JsqeEh),
     scrollerClassName: i()(j.guildScroller, v.marginBottom),
     children: o().flatMap(n, e => {

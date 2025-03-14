@@ -1,6 +1,7 @@
 /** Chunk was on 53494 **/
 n.d(t, {
-  a: () => o
+  a: () => o,
+  s: () => a
 });
 var r = n(818083),
   i = n(984134);
@@ -45,5 +46,13 @@ function o(e) {
   }, {
     disable: r,
     autoTrackExposure: n
+  })
+}
+
+function a(e) {
+  !i.h.getCurrentConfig({
+    location: e
+  }).isInHoldout && l.trackExposure({
+    location: e
   })
 }

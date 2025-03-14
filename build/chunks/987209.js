@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   KB: () => O,
-  wD: () => b
+  wD: () => v
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -20,14 +20,14 @@ var r = n(200651),
   m = n(388032);
 let g = h.Cj.STANDARD_BOX,
   E = void 0,
-  [v, b, y] = (0, f.Z)();
+  [b, v, y] = (0, f.Z)();
 
 function O(e) {
   let {
     isGift: t = !1,
     giftRecipient: n,
     giftMessage: f,
-    giftStyle: b,
+    giftStyle: v,
     giftingOrigin: y,
     children: O
   } = e, {
@@ -37,8 +37,8 @@ function O(e) {
   } = c.O.useExperiment({
     location: "gift card"
   }), L = E;
-  P && (L = w ? h.Cj.SEASONAL_STANDARD_BOX : null != b ? b : g, D && (L = h.Cj.NITROWEEN_STANDARD));
-  let [x, M] = i.useState(L), k = (0, d.iE)(), [j, U] = i.useState(), [G, B] = i.useState(t && (0, _.MY)(S) === _.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == f ? m.NW.string(m.t.ZkOo1d) : f), [V, F] = i.useState(void 0), [Z, H] = i.useState(void 0), W = (0, _.E5)(I, t), [Y, K] = i.useState(!1), [z, q] = i.useState(!1), [Q, X] = i.useState(), J = i.useCallback(e => {
+  P && (L = w ? h.Cj.SEASONAL_STANDARD_BOX : null != v ? v : g, D && (L = h.Cj.NITROWEEN_STANDARD));
+  let [x, M] = i.useState(L), k = (0, d.iE)(), [j, U] = i.useState(), [G, B] = i.useState(t && (0, _.MY)(S) === _.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == f ? m.NW.string(m.t.ZkOo1d) : f), [F, V] = i.useState(void 0), [Z, H] = i.useState(void 0), W = (0, _.E5)(I, t), [Y, K] = i.useState(!1), [z, q] = i.useState(!1), [Q, X] = i.useState(), J = i.useCallback(e => {
     let {
       onSubscriptionConfirmation: t
     } = e;
@@ -48,7 +48,7 @@ function O(e) {
       q(!1), X(e), K(!0)
     })
   }, [S, W, q, K, X]), $ = (0, u.x8)(), ee = (0, o.Wu)([a.Z], () => a.Z.recommendedGiftSkuIds);
-  return (0, r.jsx)(v.Provider, {
+  return (0, r.jsx)(b.Provider, {
     value: {
       isGift: t,
       giftCode: W,
@@ -59,8 +59,8 @@ function O(e) {
       setGiftRecipientError: A,
       validatingGiftRecipient: C,
       setValidatingGiftRecipient: R,
-      soundEffect: V,
-      setSoundEffect: F,
+      soundEffect: F,
+      setSoundEffect: V,
       emojiConfetti: Z,
       setEmojiConfetti: H,
       customGiftMessage: G,

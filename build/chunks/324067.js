@@ -33,11 +33,11 @@ function g() {
 }
 let E = g();
 
-function v(e, t) {
+function b(e, t) {
   e.index = t
 }
 
-function b(e) {
+function v(e) {
   let t = u.ZP.getChannels(e),
     n = g(),
     r = e => {
@@ -58,11 +58,11 @@ function b(e) {
       channel: t,
       index: -1
     }), n[t.id] = []
-  }), t[u.sH].forEach(r), t[u.Zb].forEach(r), (0, a.Z)(n._categories, n).forEach(v), h[e] = n, n
+  }), t[u.sH].forEach(r), t[u.Zb].forEach(r), (0, a.Z)(n._categories, n).forEach(b), h[e] = n, n
 }
 
 function y() {
-  h = {}, null != p && b(p)
+  h = {}, null != p && v(p)
 }
 
 function O(e) {
@@ -71,7 +71,7 @@ function O(e) {
       id: t
     }
   } = e;
-  h[t] = void 0, p === t && b(t)
+  h[t] = void 0, p === t && v(t)
 }
 
 function I(e) {
@@ -90,7 +90,7 @@ function S(e) {
     }
   } = e;
   if (null == t) return !1;
-  h[t] = void 0, p === t && b(t)
+  h[t] = void 0, p === t && v(t)
 }
 
 function T(e) {
@@ -100,7 +100,7 @@ function T(e) {
   for (let {
       guild_id: e
     }
-    of t) null != e && (h[e] = void 0, n = !0, p === e && b(e));
+    of t) null != e && (h[e] = void 0, n = !0, p === e && v(e));
   return n
 }
 
@@ -110,25 +110,25 @@ function N(e) {
     user: n
   } = e;
   if (l.default.getId() !== n.id) return !1;
-  h[t] = void 0, t === p && b(t)
+  h[t] = void 0, t === p && v(t)
 }
 
 function A() {
   if (null == p) return !1;
-  b(p)
+  v(p)
 }
 
 function C(e) {
   let {
     guildId: t
   } = e;
-  h[t] = void 0, t === p && b(t)
+  h[t] = void 0, t === p && v(t)
 }
 
 function R(e, t) {
   if (m = t, null == e || null == e.getGuildId()) return !1;
   let n = e.getGuildId();
-  return null != n && (h[n] = void 0, n === p && b(n), !0)
+  return null != n && (h[n] = void 0, n === p && v(n), !0)
 }
 
 function P(e) {
@@ -156,16 +156,16 @@ function D(e) {
     guildId: t
   } = e;
   if (p = null != t ? t : null, null == t || null != h[t]) return !1;
-  b(t)
+  v(t)
 }
 
 function L() {
-  b(f.I_8)
+  v(f.I_8)
 }
 
 function x(e) {
   let t = h[e];
-  return null != t ? t : b(e)
+  return null != t ? t : v(e)
 }
 class M extends(r = i.ZP.Store) {
   initialize() {

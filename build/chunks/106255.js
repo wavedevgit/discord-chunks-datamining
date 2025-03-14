@@ -6,7 +6,7 @@ n.d(t, {
   GT: () => E,
   MR: () => _,
   Wb: () => g,
-  Xs: () => v,
+  Xs: () => b,
   YE: () => u,
   _k: () => c,
   kG: () => f,
@@ -69,6 +69,6 @@ function E() {
   return i.Z.getTenureRewardStatusForRewardId(a.Ft.FREE_AVATAR_DECO_1_MONTH)
 }
 
-function v(e) {
+function b(e) {
   if (e === a.Ft.FREE_AVATAR_DECO_1_MONTH) return a.nW.AVATAR_DECO
 }

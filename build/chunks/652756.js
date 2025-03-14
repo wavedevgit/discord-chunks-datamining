@@ -54,10 +54,10 @@ function u(e, t, n, o, s) {
     m = o.anchorY,
     g = c(u, t, _, p),
     E = g.dragPreviewWidth,
-    v = g.dragPreviewHeight,
-    b = function() {
-      var e = new i.I([0, .5, 1], [f.y, f.y / p * v, f.y + v - p]).interpolate(m);
-      return (0, r.G)() && u && (e += (window.devicePixelRatio - 1) * v), e
+    b = g.dragPreviewHeight,
+    v = function() {
+      var e = new i.I([0, .5, 1], [f.y, f.y / p * b, f.y + b - p]).interpolate(m);
+      return (0, r.G)() && u && (e += (window.devicePixelRatio - 1) * b), e
     },
     y = function() {
       return new i.I([0, .5, 1], [f.x, f.x / _ * E, f.x + E - _]).interpolate(h)
@@ -67,6 +67,6 @@ function u(e, t, n, o, s) {
     S = 0 === I || I;
   return {
     x: 0 === O || O ? O : y(),
-    y: S ? I : b()
+    y: S ? I : v()
   }
 }

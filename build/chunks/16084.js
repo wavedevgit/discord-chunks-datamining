@@ -33,7 +33,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function v(e) {
   return e
 }
 
-function b(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,7 +58,7 @@ function b(e, t) {
 }
 
 function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -147,11 +147,11 @@ async function N(e, t, n) {
     expectedCurrency: u,
     analyticsLoadId: h,
     isGift: E,
-    giftInfoOptions: b,
+    giftInfoOptions: v,
     subscriptionPlanId: O,
     loadId: I,
     countryCode: S
-  } = v({}, T, n);
+  } = b({}, T, n);
   o.Z.wait(() => {
     o.Z.dispatch({
       type: "SKU_PURCHASE_START",
@@ -173,7 +173,7 @@ async function N(e, t, n) {
         let t = await (0, m.EH)(r.type);
         e.return_url = (0, i.K0)() + g.ANM.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(r.type, null != t ? t : "", "success")
       }
-      null != l && (e.expected_amount = l), null != u && (e.expected_currency = u), e.gift_info_options = b, null != S && (e.country_code = S), e.purchase_token = (0, p.d)()
+      null != l && (e.expected_amount = l), null != u && (e.expected_currency = u), e.gift_info_options = v, null != S && (e.country_code = S), e.purchase_token = (0, p.d)()
     }
     let n = await i.tn.post({
       url: g.ANM.STORE_SKU_PURCHASE(t),
@@ -190,7 +190,7 @@ async function N(e, t, n) {
       libraryApplications: null != n.body.library_applications ? n.body.library_applications.filter(_.lm) : [],
       entitlements: n.body.entitlements,
       giftCode: n.body.gift_code
-    }), y(v({}, n.body), {
+    }), y(b({}, n.body), {
       redirectConfirmation: !1
     })
   } catch (i) {
@@ -220,7 +220,7 @@ async function A() {
         oldFormErrors: !0,
         rejectWithError: !1
       });
-    return v({}, t.body)
+    return b({}, t.body)
   } catch (e) {
     throw e instanceof a.HF ? e : new a.HF(e)
   }

@@ -20,7 +20,7 @@ var r = n(200651),
   g = n(506071),
   E = n(149203);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,14 +29,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -87,7 +87,7 @@ function N(e) {
       emojiId: f,
       emojiName: p,
       channelId: g,
-      messageId: v,
+      messageId: b,
       animated: y,
       size: S = "default",
       isInteracting: N = !1,
@@ -102,19 +102,19 @@ function N(e) {
   let [x, M] = i.useState(!1), [k, j] = i.useState(void 0), U = i.useRef(), {
     triggerAnimation: G,
     untriggerAnimation: B
-  } = i.useContext(u.Rm), V = _.Yk.useSetting(), F = T(), Z = null == w ? V : w, H = E.kV[S], W = i.useRef(null), Y = i.useMemo(() => {
+  } = i.useContext(u.Rm), F = _.Yk.useSetting(), V = T(), Z = null == w ? F : w, H = E.kV[S], W = i.useRef(null), Y = i.useMemo(() => {
     if (null != o) return o;
     if (null != f) {
       let e = !0 === A && Z;
       return h.ZP.getEmojiURL({
         id: f,
-        animated: F && !0 === y && (e || x || !0 === N),
+        animated: V && !0 === y && (e || x || !0 === N),
         size: H
       })
     }
     if (null != p) return m.ZP.getURL(p);
     throw Error("Unknown Src for Emoji")
-  }, [y, Z, f, p, H, F, x, N, A, o]), K = i.useCallback(() => {
+  }, [y, Z, f, p, H, V, x, N, A, o]), K = i.useCallback(() => {
     null != Y && (U.current = (0, d.po)(Y, e => {
       e || j(Date.now())
     }))
@@ -128,7 +128,7 @@ function N(e) {
     } : {
       "data-name": p
     };
-    return b(O(b({}, L), {
+    return v(O(v({}, L), {
       className: a()("emoji", c, {
         jumboable: "jumbo" === S,
         reactionLarge: "reactionLarge" === S
@@ -153,16 +153,16 @@ function N(e) {
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.aO, {
       channelId: g,
-      messageId: v,
+      messageId: b,
       emojiName: p,
-      disable: !1 === Z || !1 === V,
+      disable: !1 === Z || !1 === F,
       emojiRef: J
-    }), P ? (0, r.jsx)("img", O(b({}, Q), {
+    }), P ? (0, r.jsx)("img", O(v({}, Q), {
       ref: X,
       src: Y,
       alt: null !== (t = null != s ? s : p) && void 0 !== t ? t : void 0,
       draggable: !1
-    }), k) : (0, r.jsx)("div", O(b({}, Q), {
+    }), k) : (0, r.jsx)("div", O(v({}, Q), {
       ref: X,
       role: "img",
       "aria-label": null !== (n = null != s ? s : p) && void 0 !== n ? n : void 0,
@@ -185,12 +185,12 @@ function A(e) {
   } = t(), {
     disableAnimations: a
   } = i.useContext(c.G);
-  return (0, r.jsx)(N, O(b({}, e), {
+  return (0, r.jsx)(N, O(v({}, e), {
     registerAnimatedElementRef: o,
     shouldAnimate: n && !a
   }))
 }
 
 function C(e) {
-  return null == e.emojiId && null == e.emojiName && null == e.src ? null : e.animated && void 0 === e.shouldAnimate ? (0, r.jsx)(A, b({}, e)) : (0, r.jsx)(N, b({}, e))
+  return null == e.emojiId && null == e.emojiName && null == e.src ? null : e.animated && void 0 === e.shouldAnimate ? (0, r.jsx)(A, v({}, e)) : (0, r.jsx)(N, v({}, e))
 }

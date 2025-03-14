@@ -90,13 +90,13 @@ function E(e) {
   })
 }
 
-function v(e) {
+function b(e) {
   return h(e.invite.code, t => {
     t.state = s.r2o.RESOLVED, t.inviter = e.invite.inviter
   })
 }
 
-function b(e) {
+function v(e) {
   e.invites.forEach(e => h(e.code, e => {
     e.state = s.r2o.EXPIRED
   }))
@@ -163,8 +163,8 @@ let R = new C(o.Z, {
   INVITE_RESOLVE_SUCCESS: g,
   INVITE_RESOLVE_FAILURE: y,
   INSTANT_INVITE_REVOKE_SUCCESS: y,
-  FRIEND_INVITE_CREATE_SUCCESS: v,
-  FRIEND_INVITE_REVOKE_SUCCESS: b,
+  FRIEND_INVITE_CREATE_SUCCESS: b,
+  FRIEND_INVITE_REVOKE_SUCCESS: v,
   INSTANT_INVITE_CREATE_SUCCESS: E,
   INVITE_ACCEPT: O,
   INVITE_ACCEPT_SUCCESS: I,

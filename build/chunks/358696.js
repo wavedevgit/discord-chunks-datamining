@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  E: () => v,
+  E: () => b,
   J: () => m
 });
 var r = n(200651);
@@ -85,25 +85,25 @@ function E(e) {
   })
 }
 
-function v(e) {
+function b(e) {
   var t, n;
   let {
     image: i,
     smallImage: d,
     aspectRatio: _,
     onClick: m,
-    size: v,
-    className: b
+    size: b,
+    className: v
   } = e, {
     imageSize: y,
     smallImageSize: O,
     mask: I
-  } = g[v];
+  } = g[b];
   if (null == i) return (0, r.jsx)(l.f, {
     src: void 0,
     alt: c.NW.string(c.t["2B/phI"]),
     size: y,
-    className: o()(u.contentImage, h[null != _ ? _ : "default"], b),
+    className: o()(u.contentImage, h[null != _ ? _ : "default"], v),
     constrain: "width"
   });
   let S = (0, r.jsx)(l.f, {
@@ -114,7 +114,7 @@ function v(e) {
     constrain: "width"
   });
   return (0, r.jsxs)("div", {
-    className: o()(u.imagePosition, b),
+    className: o()(u.imagePosition, v),
     children: [(0, r.jsx)(a.ua7, {
       text: i.text,
       children: e => (0, r.jsx)(E, {

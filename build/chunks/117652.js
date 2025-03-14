@@ -20,8 +20,8 @@ var i = n(442837),
   m = n(311821),
   g = n(251660),
   E = n(594174),
-  v = n(855775),
-  b = n(626135),
+  b = n(855775),
+  v = n(626135),
   y = n(937615),
   O = n(987209),
   I = n(563132),
@@ -103,8 +103,8 @@ function M(e) {
     selectedSkuId: U,
     setSelectedSkuId: G,
     selectedSkuPricePreview: B,
-    paymentSourceId: V,
-    skuPricePreviewsById: F
+    paymentSourceId: F,
+    skuPricePreviewsById: V
   } = (0, I.JL)(), Z = (0, i.e7)([E.default], () => E.default.getCurrentUser()), {
     enabled: H,
     giftRecommendationAlgorithm: W
@@ -116,21 +116,21 @@ function M(e) {
     j(!0), null != m && S(), await (0, c.B1)(e.id, t) || S(C.NW.string(C.t["4kgVqa"])), j(!1)
   };
   (0, a.ZP)(() => {
-    null != U && null != D && (b.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+    null != U && null != D && (v.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
       sku_id: U
     }), z(D, U))
   });
   let q = e => {
-      b.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+      v.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
         sku_id: e
       }), null != D && z(D, e), G(e)
     },
     Q = e => {
-      let t = F[e],
+      let t = V[e],
         n = null;
       if (null != t) {
         var i;
-        n = null != V && null !== (i = t[V]) && void 0 !== i ? i : t[v.c]
+        n = null != F && null !== (i = t[F]) && void 0 !== i ? i : t[b.c]
       }
       if (null == n) return;
       let o = (0, y.T4)(n.amount, n.currency);

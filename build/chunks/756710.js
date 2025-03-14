@@ -62,20 +62,20 @@ function h(e) {
     action: m,
     dontCloseOnActionIfHoldingShiftKey: g,
     dontCloseOnAction: E,
-    onClose: v
-  } = e, b = i.useRef(null);
+    onClose: b
+  } = e, v = i.useRef(null);
   i.useEffect(() => {
-    o && (0, l.F)(b)
+    o && (0, l.F)(v)
   }, [o]);
   let y = i.useCallback(e => {
       if (null == m) return !1;
-      e.shiftKey && g || E || v(), e.persist(), requestAnimationFrame(() => m(e))
-    }, [m, v, g, E]),
+      e.shiftKey && g || E || b(), e.persist(), requestAnimationFrame(() => m(e))
+    }, [m, b, g, E]),
     O = _ ? a()(u.item, c._[n], {
       [u.focused]: o
     }) : u.customItem;
   return (0, r.jsx)(s.P, p(f({
-    innerRef: b,
+    innerRef: v,
     className: O,
     onClick: d ? void 0 : y,
     "aria-disabled": d

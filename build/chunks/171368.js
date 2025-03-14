@@ -42,8 +42,8 @@ async function h(e) {
     friendToken: m,
     showGuildProfile: g,
     analyticsLocation: E,
-    sourceAnalyticsLocations: v,
-    appContext: b,
+    sourceAnalyticsLocations: b,
+    appContext: v,
     customStatusPrompt: y = null
   } = e, O = c.default.getUser(t);
   p(t), null == O ? await (0, a.In)(t, {
@@ -74,8 +74,8 @@ async function h(e) {
     friendToken: m,
     showGuildProfile: g,
     analyticsLocation: E,
-    sourceAnalyticsLocations: v,
-    appContext: b
+    sourceAnalyticsLocations: b,
+    appContext: v
   })
 }
 

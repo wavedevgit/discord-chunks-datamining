@@ -45,7 +45,7 @@ function E(e) {
   return e
 }
 
-function v(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,8 +56,8 @@ function v(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -155,7 +155,7 @@ let y = e => {
       action: s,
       section: l
     } = e;
-    u.default.track(h.rMx.USER_PROFILE_ACTION, b(E({}, (0, r.hH)(t), (0, r.JS)(n), S(e), T(e)), {
+    u.default.track(h.rMx.USER_PROFILE_ACTION, v(E({}, (0, r.hH)(t), (0, r.JS)(n), S(e), T(e)), {
       location_stack: a,
       profile_action: s,
       profile_section: l,
@@ -176,7 +176,7 @@ let y = e => {
       outbox: d,
       voiceChannelId: f
     } = e;
-    u.default.track(h.rMx.USER_PROFILE_ACTIVITY_ACTION, b(E({}, (0, r.hH)(t), (0, r.JS)(n), S(e), T(e)), {
+    u.default.track(h.rMx.USER_PROFILE_ACTIVITY_ACTION, v(E({}, (0, r.hH)(t), (0, r.JS)(n), S(e), T(e)), {
       location_stack: i,
       activity_action: o,
       activity_display: a,
@@ -209,7 +209,7 @@ let y = e => {
       analyticsLocations: i,
       badge: o
     } = e;
-    u.default.track(h.rMx.USER_PROFILE_BADGE_PRESSED, b(E({}, (0, r.hH)(t), (0, r.JS)(n), S(e), T(e)), {
+    u.default.track(h.rMx.USER_PROFILE_BADGE_PRESSED, v(E({}, (0, r.hH)(t), (0, r.JS)(n), S(e), T(e)), {
       location_stack: i,
       badge: o
     }))
@@ -221,7 +221,7 @@ let y = e => {
       analyticsLocations: i,
       badge: o
     } = e;
-    u.default.track(h.rMx.USER_PROFILE_BADGE_HOVERED, b(E({}, (0, r.hH)(t), (0, r.JS)(n), S(e), T(e)), {
+    u.default.track(h.rMx.USER_PROFILE_BADGE_HOVERED, v(E({}, (0, r.hH)(t), (0, r.JS)(n), S(e), T(e)), {
       location_stack: i,
       badge: o
     }))

@@ -19,18 +19,18 @@ let h = 200,
   m = 250,
   g = 36,
   E = 660,
-  v = [f.Eu4.NONE, f.Eu4.TIER_1, f.Eu4.TIER_2, f.Eu4.TIER_3];
+  b = [f.Eu4.NONE, f.Eu4.TIER_1, f.Eu4.TIER_2, f.Eu4.TIER_3];
 
-function b(e) {
+function v(e) {
   let {
     fillFactor: t,
     guildBoostCount: n,
     premiumTier: r,
     isRevealed: o,
     useReducedMotion: a
-  } = e, [l, c] = i.useState(a ? r : -1), [u, _] = i.useState(0 === n), [p, m] = i.useState(!1), v = i.useRef(!0);
+  } = e, [l, c] = i.useState(a ? r : -1), [u, _] = i.useState(0 === n), [p, m] = i.useState(!1), b = i.useRef(!0);
 
-  function b(e) {
+  function v(e) {
     let {
       widthFactor: t
     } = e;
@@ -54,18 +54,18 @@ function b(e) {
       friction: 7,
       clamp: !0
     },
-    onChange: b,
+    onChange: v,
     onStart: () => {
       _(!1)
     },
     onRest: () => {
       _(!0), r === f.Eu4.TIER_3 && (m(!0), window.setTimeout(() => {
-        v.current && m(!1)
+        b.current && m(!1)
       }, h))
     }
   });
   return i.useEffect(() => () => {
-    v.current = !1
+    b.current = !1
   }, []), {
     isProgressBarAnimationComplete: u,
     progressBarFillWidthFactor: y,
@@ -84,7 +84,7 @@ function y(e) {
     setShouldFireConfetti: P,
     shouldFireConfetti: w,
     tierMarkerAnimationPosition: D
-  } = b({
+  } = v({
     fillFactor: t.premiumTier === f.Eu4.TIER_3 ? 1 : T * (A - N) + N,
     isRevealed: s || n,
     useReducedMotion: n,
@@ -123,7 +123,7 @@ function y(e) {
       }), (0, r.jsx)("div", {
         className: p.progressBarTrack
       })]
-    }), v.map(e => (0, r.jsx)(d.Z, {
+    }), b.map(e => (0, r.jsx)(d.Z, {
       confettiTriggerRef: y,
       guild: t,
       isProgressBarAnimationComplete: R,

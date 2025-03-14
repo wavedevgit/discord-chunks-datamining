@@ -19,8 +19,8 @@ var r = n(477660),
   m = n(624138),
   g = n(699450),
   E = n(594199),
-  v = n(981631),
-  b = n(388032);
+  b = n(981631),
+  v = n(388032);
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -95,8 +95,8 @@ function A(e, t) {
 function C(e, t) {
   let n = {
     type: "channel",
-    content: [D(e.roleSubscriptionGated ? e.name : b.NW.string(b.t["/YzI6+"]))],
-    channelType: e.roleSubscriptionGated ? e.type : v.d4z.UNKNOWN,
+    content: [D(e.roleSubscriptionGated ? e.name : v.NW.string(v.t["/YzI6+"]))],
+    channelType: e.roleSubscriptionGated ? e.type : b.d4z.UNKNOWN,
     iconType: "locked"
   };
   return {
@@ -173,13 +173,13 @@ function D(e) {
 }
 
 function L(e) {
-  return null != e ? w(e) : D("#".concat(b.NW.string(b.t.J90oLS)))
+  return null != e ? w(e) : D("#".concat(v.NW.string(v.t.J90oLS)))
 }
 
 function x() {
   return A({
-    name: b.NW.string(b.t.zLZPmp).toLowerCase(),
-    type: v.d4z.UNKNOWN,
+    name: v.NW.string(v.t.zLZPmp).toLowerCase(),
+    type: b.d4z.UNKNOWN,
     iconType: "text"
   }, "italics")
 }
@@ -246,7 +246,7 @@ function j(e, t, n, r) {
     },
     o = u.Z.getGuild(e.guildId);
   if (null == o) return e.isDm ? S(O({}, i), {
-    guildId: v.ME,
+    guildId: b.ME,
     inContent: [A(e)],
     content: [R(!1)]
   }) : L(r);

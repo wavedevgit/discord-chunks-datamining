@@ -1,6 +1,6 @@
-/** Chunk was on 69423 **/
+/** Chunk was on 98697 **/
 n.d(t, {
-  Z: () => T
+  Z: () => C
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -15,18 +15,18 @@ var r = n(200651),
   p = n(5192),
   E = n(873128),
   f = n(246627),
-  m = n(709737),
-  h = n(69589),
+  h = n(709737),
+  m = n(69589),
   b = n(531501),
-  g = n(981631),
-  O = n(701488),
+  O = n(981631),
+  g = n(701488),
   N = n(388032),
   I = n(466722);
 
-function C(e) {
+function T(e) {
   let {
     application: t
-  } = e, n = t.getIconURL(O.Si.LARGE), i = null == n ? null : (0, r.jsx)("img", {
+  } = e, n = t.getIconURL(g.Si.LARGE), i = null == n ? null : (0, r.jsx)("img", {
     className: I.gameIcon,
     src: n,
     "aria-hidden": !0,
@@ -42,9 +42,9 @@ function C(e) {
   })
 }
 
-function T(e) {
-  var t, n, b, O, I;
-  let T, {
+function C(e) {
+  var t, n, b, g, I;
+  let C, {
       selected: y,
       channel: v,
       entry: P
@@ -60,25 +60,25 @@ function T(e) {
     } = (0, f.Z)({
       guildId: R,
       leaderboardId: P.extra.leaderboard_id,
-      intervalStart: null !== (O = null == A ? void 0 : A.interval_start) && void 0 !== O ? O : ""
+      intervalStart: null !== (g = null == A ? void 0 : A.interval_start) && void 0 !== g ? g : ""
     }),
-    j = (0, o.e7)([u.default], () => u.default.getId()),
-    [D, k] = i.useMemo(() => {
-      let e = x.find(e => e.userId === j),
+    D = (0, o.e7)([u.default], () => u.default.getId()),
+    [j, L] = i.useMemo(() => {
+      let e = x.find(e => e.userId === D),
         t = x[0],
         n = null != e ? e : t,
         r = null == A ? void 0 : A.users.find(e => e.user_id === (null == n ? void 0 : n.userId));
       return [n, r]
-    }, [A, x, j]),
-    L = (0, o.e7)([d.default], () => d.default.getUser(null == D ? void 0 : D.userId)),
-    M = p.ZP.getName(R, void 0, L);
+    }, [A, x, D]),
+    k = (0, o.e7)([d.default], () => d.default.getUser(null == j ? void 0 : j.userId)),
+    M = p.ZP.getName(R, void 0, k);
   ! function(e) {
     let {
       leaderboard: t,
       guildId: n
     } = e, r = null == t ? void 0 : t.leaderboard_id;
     i.useEffect(() => {
-      null != r && _.default.track(g.rMx.LEADERBOARD_MEMBERLIST_CARD_VIEWED, {
+      null != r && _.default.track(O.rMx.LEADERBOARD_MEMBERLIST_CARD_VIEWED, {
         leaderboard_id: r,
         guild_id: n
       })
@@ -89,16 +89,16 @@ function T(e) {
   });
   let Z = (0, a.q)(null == A ? void 0 : null === (t = A.settings) || void 0 === t ? void 0 : t.application_id);
   if (null == A || null == Z) return null;
-  if (0 === A.users.length || null == D || null == L) return (0, r.jsx)(S, {
+  if (0 === A.users.length || null == j || null == k) return (0, r.jsx)(S, {
     application: Z,
     selected: y
   });
   let {
-    sort_by_statistic_id: w
-  } = A.guild_settings, U = null !== (I = null == k ? void 0 : null === (b = k.statistics) || void 0 === b ? void 0 : null === (n = b[w]) || void 0 === n ? void 0 : n.value) && void 0 !== I ? I : 0, {
+    sort_by_statistic_id: U
+  } = A.guild_settings, w = null !== (I = null == L ? void 0 : null === (b = L.statistics) || void 0 === b ? void 0 : null === (n = b[U]) || void 0 === n ? void 0 : n.value) && void 0 !== I ? I : 0, {
     currentRank: V
-  } = D;
-  return T = D.userId === j ? N.NW.formatToPlainString(N.t["eU+JxM"], {
+  } = j;
+  return C = j.userId === D ? N.NW.formatToPlainString(N.t["eU+JxM"], {
     rank: V
   }) : N.NW.formatToPlainString(N.t["8BLSQ0"], {
     rank: V,
@@ -106,21 +106,21 @@ function T(e) {
   }), (0, r.jsxs)(c.Zb, {
     selected: y,
     children: [(0, r.jsxs)(c.e$, {
-      children: [(0, r.jsx)(C, {
+      children: [(0, r.jsx)(T, {
         application: Z
       }), (0, r.jsx)(l.LZC, {
         size: 2
       }), (0, r.jsx)(c.ll, {
-        children: T
+        children: C
       }), (0, r.jsx)(s.Gk, {
         location: s.Gt.CARD,
-        children: (0, r.jsx)(m.DC, {
-          value: U,
-          statisticId: w
+        children: (0, r.jsx)(h.DC, {
+          value: w,
+          statisticId: U
         })
       })]
-    }), (0, r.jsx)(h.Z, {
-      user: L,
+    }), (0, r.jsx)(m.Z, {
+      user: k,
       rank: V
     })]
   })
@@ -134,7 +134,7 @@ function S(e) {
   return (0, r.jsxs)(c.Zb, {
     selected: t,
     children: [(0, r.jsxs)(c.e$, {
-      children: [(0, r.jsx)(C, {
+      children: [(0, r.jsx)(T, {
         application: n
       }), (0, r.jsx)(l.LZC, {
         size: 2
@@ -142,7 +142,7 @@ function S(e) {
         children: N.NW.string(N.t["t+b0DA"])
       }), (0, r.jsx)(s.Gk, {
         location: s.Gt.CARD,
-        children: (0, r.jsx)(m.ZR, {
+        children: (0, r.jsx)(h.ZR, {
           text: N.NW.string(N.t.zX8HUl)
         })
       })]

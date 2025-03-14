@@ -1,4 +1,4 @@
-/** Chunk was on 76030 **/
+/** Chunk was on 59160 **/
 n.r(e.exports = {
   ellipsis: "ellipsis__2ef49",
   headerContainer: "headerContainer__2ef49",

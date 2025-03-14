@@ -20,8 +20,8 @@ var r = n(200651),
   m = n(782763),
   g = n(567949),
   E = n(552781),
-  v = n(952567),
-  b = n(807159);
+  b = n(952567),
+  v = n(807159);
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,7 +71,7 @@ function T(e) {
     isNewPerk: d,
     animatedCard: _,
     isEnabled: h
-  } = e, [g, E] = i.useState(!1), [v, b] = i.useState(!1), y = _ && v, I = {
+  } = e, [g, E] = i.useState(!1), [b, v] = i.useState(!1), y = _ && b, I = {
     tension: 400,
     friction: 30
   }, T = (0, c.q_F)({
@@ -98,8 +98,8 @@ function T(e) {
       [m.animatedTopPerksCard]: _,
       [m.animate]: g
     }),
-    onMouseEnter: () => b(!0),
-    onMouseLeave: () => b(!1),
+    onMouseEnter: () => v(!0),
+    onMouseLeave: () => v(!1),
     children: [(0, r.jsx)("div", {
       className: m.intObserver,
       ref: P
@@ -186,7 +186,7 @@ let N = function(e) {
       children: [(0, r.jsx)(T, {
         description: p.NW.string(p.t.HTvLGh),
         heading: p.NW.string(p.t.IpRQw8),
-        imgSrc: v,
+        imgSrc: b,
         label: i ? p.NW.string(h.Z.na6fmJ) : void 0
       }), (0, r.jsx)(T, {
         description: p.NW.string(p.t.wOYbTk),
@@ -196,7 +196,7 @@ let N = function(e) {
       }), (0, r.jsx)(T, {
         description: p.NW.string(p.t.yCjoUF),
         heading: p.NW.string(p.t["/bX4Ji"]),
-        imgSrc: b,
+        imgSrc: v,
         label: i ? p.NW.string(h.Z["8AEGEx"]) : void 0
       })]
     })]

@@ -128,7 +128,7 @@ function E(e, t, n) {
   return "#".concat(i(0)).concat(i(8)).concat(i(4))
 }
 
-function v(e) {
+function b(e) {
   let t, n, r, i, o;
   var a = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(e);
   if (null == a) return null;
@@ -149,7 +149,7 @@ function v(e) {
   }
 }
 
-function b(e, t, n) {
+function v(e, t, n) {
   return _(E(e, t, n))
 }
 d(c({}, {
@@ -203,7 +203,7 @@ function A(e) {
       r: e,
       g: t,
       b: r
-    } = b(a, s, l);
+    } = v(a, s, l);
     n.push([e, t, r])
   }
   return n
@@ -304,7 +304,7 @@ function x(e) {
     var t;
     return {
       hex: e,
-      hsv: null !== (t = v(e)) && void 0 !== t ? t : {
+      hsv: null !== (t = b(e)) && void 0 !== t ? t : {
         h: 0,
         s: 0,
         v: 0

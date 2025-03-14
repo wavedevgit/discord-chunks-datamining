@@ -3,7 +3,7 @@
 n.d(t, {
   FU: () => y,
   eH: () => O,
-  wG: () => b
+  wG: () => v
 }), n(66153), n(970173), n(520712), n(268111), n(941497), n(32026), n(480839), n(744285), n(492257), n(873817), n(610885), n(126298);
 var r = n(512722),
   i = n.n(r),
@@ -59,7 +59,7 @@ function E(e, t, n, r, i) {
     }
   })
 }
-async function v(e, t, n) {
+async function b(e, t, n) {
   let r, i = !1;
   if (null == n) return E(e, t, o.zZ.NONE);
   if (n === p.f7) return E(e, t, o.zZ.BACKGROUND_BLUR);
@@ -84,12 +84,12 @@ async function v(e, t, n) {
     (0, c.Nm)()
   }
 }
-async function b(e, t) {
+async function v(e, t) {
   let {
     track: n = !0,
     location: r
   } = t;
-  await v(o.TO.CAMERA_BACKGROUND_LIVE, {
+  await b(o.TO.CAMERA_BACKGROUND_LIVE, {
     type: o.W$.INPUT_DEVICE
   }, e), n && (0, d.Bh)(e, r, "Enabled")
 }
@@ -98,7 +98,7 @@ async function y(e, t, n) {
     track: r = !0,
     location: i
   } = n;
-  (0, c.GS)(), await v(o.TO.CAMERA_BACKGROUND_PREVIEW, {
+  (0, c.GS)(), await b(o.TO.CAMERA_BACKGROUND_PREVIEW, {
     type: o.W$.STREAM,
     streamId: t
   }, e), r && (0, d.Bh)(e, i, "Preview")
@@ -108,7 +108,7 @@ function O() {
   let e = a.default.getCurrentUser();
   if (null == e) return;
   let t = (0, l.P)(e);
-  (0, _.Z)() && !u.Z.hasBeenApplied && null != t && b(t, {
+  (0, _.Z)() && !u.Z.hasBeenApplied && null != t && v(t, {
     track: !1
   }).catch(h.dG4)
 }

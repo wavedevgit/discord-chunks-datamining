@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Xv: () => y,
-  mh: () => b,
+  mh: () => v,
   wL: () => E
 }), n(47120);
 var r = n(200651),
@@ -80,17 +80,17 @@ function E(e) {
   return l()(null != t, "Unexpected missing parent container"), t
 }
 
-function v(e, t) {
+function b(e, t) {
   let [n] = e;
   return null == n ? null : c.createPortal(i.Children.only(t), n)
 }
-let b = e => {
+let v = e => {
   let {
     layerContext: t,
     children: n
   } = e;
   return (0, r.jsx)(t.Consumer, {
-    children: e => v(e, n)
+    children: e => b(e, n)
   })
 };
 
@@ -103,7 +103,7 @@ function y(e) {
       LayerContainer: e => (0, r.jsx)(g, p({
         layerContext: t
       }, e)),
-      Layer: e => (0, r.jsx)(b, p({
+      Layer: e => (0, r.jsx)(v, p({
         layerContext: t
       }, e)),
       layerContext: t

@@ -25,8 +25,8 @@ let h = "GameStoreReportedGames",
   m = 0x80000000,
   g = f.Z.Millis.DAY,
   E = new c.Z,
-  v = {},
   b = {},
+  v = {},
   y = null !== (i = s.K.get(h)) && void 0 !== i ? i : {},
   O = "",
   I = null;
@@ -64,9 +64,9 @@ function T(e) {
 
 function N(e) {
   let t = e instanceof d.ZP ? T(e) : e;
-  for (let n of (E.set(e.id, t), v[e.name.toLowerCase()] = t, e.aliases)) v[n.toLowerCase()] = t;
+  for (let n of (E.set(e.id, t), b[e.name.toLowerCase()] = t, e.aliases)) b[n.toLowerCase()] = t;
   if ((0, _.isDesktop)())
-    for (let n of e.executables) b[n.name] = t
+    for (let n of e.executables) v[n.name] = t
 }
 
 function A(e) {
@@ -115,7 +115,7 @@ class w extends(o = a.ZP.PersistedStore) {
   getGameByName(e) {
     if (null == e) return null;
     let t = e.toLowerCase();
-    return Object.prototype.hasOwnProperty.call(v, t) ? v[t] : null
+    return Object.prototype.hasOwnProperty.call(b, t) ? b[t] : null
   }
   isGameInDatabase(e) {
     return null != this.getGameByName(e.name) || void 0 !== e.nativeProcessObserverId && (e.nativeProcessObserverId & m) == 0
@@ -136,7 +136,7 @@ class w extends(o = a.ZP.PersistedStore) {
     return !0 !== r && (null == I || Date.now() >= I + g)
   }
   getGameByExecutable(e) {
-    return b[e]
+    return v[e]
   }
   getGameByGameData(e) {
     var t, n;

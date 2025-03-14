@@ -27,7 +27,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function v(e) {
   return e
 }
 
-function b(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -146,7 +146,7 @@ function G(e) {
     defaultWidth: s,
     defaultHeight: l,
     defaultAlwaysOnTop: c = !1
-  } = n, u = b(n, ["defaultWidth", "defaultHeight", "defaultAlwaysOnTop"]), d = c, f = I[t];
+  } = n, u = v(n, ["defaultWidth", "defaultHeight", "defaultAlwaysOnTop"]), d = c, f = I[t];
   if (null != f) {
     let {
       width: e,
@@ -155,7 +155,7 @@ function G(e) {
       y: r,
       alwaysOnTop: i
     } = f;
-    d = null != i ? i : c, u = v({
+    d = null != i ? i : c, u = b({
       width: null != e && 0 !== e ? e : s,
       height: null != t && 0 !== t ? t : l,
       left: n,
@@ -170,14 +170,14 @@ function B(e) {
   C.has(e) && (U(e), C.delete(e), q.emitChange())
 }
 
-function V(e) {
+function F(e) {
   let t = T[e];
   null != t && (t.closed || x(e), M(e), setTimeout(() => {
     Z(t)
   }, 100), q.emitChange())
 }
 
-function F(e) {
+function V(e) {
   let {
     data: t
   } = e;
@@ -187,7 +187,7 @@ function F(e) {
     case g.l9w.LOADED:
       return B(n.key);
     case g.l9w.UNLOADED:
-      return V(n.key)
+      return F(n.key)
   }
 }
 
@@ -230,7 +230,7 @@ function K(e) {
 }
 class z extends(r = c.ZP.PersistedStore) {
   initialize(e) {
-    window.addEventListener("message", F), window.addEventListener("beforeunload", W), I = null != e ? e : {}
+    window.addEventListener("message", V), window.addEventListener("beforeunload", W), I = null != e ? e : {}
   }
   getWindow(e) {
     return T[e]
@@ -265,7 +265,7 @@ class z extends(r = c.ZP.PersistedStore) {
     return null != T[e] && null != N[e] && null != A[e]
   }
   unmountWindow(e) {
-    return this.isWindowFullyInitialized(e) || O.warn("Attempted to unmount partially initialized window ".concat(e)), V(e)
+    return this.isWindowFullyInitialized(e) || O.warn("Attempted to unmount partially initialized window ".concat(e)), F(e)
   }
 }
 E(z, "displayName", "PopoutWindowStore"), E(z, "persistKey", "PopoutWindowStore");

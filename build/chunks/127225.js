@@ -78,7 +78,7 @@ var m = 0,
   g = Symbol.for("__REACT_DND_CONTEXT_INSTANCE__"),
   E = (0, i.memo)(function(e) {
     var t = e.children,
-      n = l(v(p(e, s)), 2),
+      n = l(b(p(e, s)), 2),
       o = n[0],
       c = n[1];
     return (0, i.useEffect)(function() {
@@ -96,13 +96,13 @@ var m = 0,
     }), void 0)
   });
 
-function v(e) {
+function b(e) {
   return "manager" in e ? [{
     dragDropManager: e.manager
-  }, !1] : [b(e.backend, e.context, e.options, e.debugMode), !e.context]
+  }, !1] : [v(e.backend, e.context, e.options, e.debugMode), !e.context]
 }
 
-function b(e) {
+function v(e) {
   var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : y(),
     n = arguments.length > 2 ? arguments[2] : void 0,
     r = arguments.length > 3 ? arguments[3] : void 0,

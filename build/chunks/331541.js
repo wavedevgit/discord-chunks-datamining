@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(429467),
   h = n(734934),
   f = n(300284),
-  b = n(680295),
-  x = n(785717),
+  x = n(680295),
+  b = n(785717),
   N = n(687158),
   _ = n(899007),
   E = n(648052),
@@ -74,7 +74,7 @@ function q(e) {
     setPopoutRef: q
   } = e, X = __OVERLAY__, J = (0, N.ZP)(t.id), {
     analyticsLocations: Q
-  } = (0, m.ZP)(u.Z.ACCOUNT_PROFILE_POPOUT), $ = (0, x.ZB)({
+  } = (0, m.ZP)(u.Z.ACCOUNT_PROFILE_POPOUT), $ = (0, b.ZB)({
     layout: "SIMPLIFIED_ACCOUNT_POPOUT",
     userId: t.id
   }), {
@@ -105,7 +105,7 @@ function q(e) {
     };
   return (0, r.jsx)(m.Gt, {
     value: Q,
-    children: (0, r.jsx)(x.Mt, {
+    children: (0, r.jsx)(b.Mt, {
       value: $,
       children: (0, r.jsx)(o.VqE, {
         ref: ee,
@@ -133,7 +133,7 @@ function q(e) {
               onCloseProfile: n,
               prompt: ed ? eu : null
             })]
-          }), (null == J ? void 0 : J.profileEffectId) != null && (0, r.jsx)(b.Z, {
+          }), (null == J ? void 0 : J.profileEffectId) != null && (0, r.jsx)(x.Z, {
             profileEffectId: null == J ? void 0 : J.profileEffectId,
             isHovering: et
           }), (0, r.jsxs)(o.Ttm, {

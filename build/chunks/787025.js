@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   G: () => E,
-  j: () => v
+  j: () => b
 });
 var r = n(200651);
 n(192379);
@@ -92,7 +92,7 @@ function E(e) {
   })
 }
 
-function v(e) {
+function b(e) {
   var {
     children: t,
     footer: n,

@@ -93,8 +93,8 @@ function s(e) {
       }
     },
     E = g(/:/, "operator"),
-    v = g(/\bof\b/, "keyword"),
-    b = {
+    b = g(/\bof\b/, "keyword"),
+    v = {
       begin: [/(^|\s+)/, /type/, /\s+/, u],
       beginScope: {
         2: "keyword",
@@ -196,13 +196,13 @@ function s(e) {
     },
     contains: [n, {
       variants: [P, R, C, N, T, S, w]
-    }, c, d, b, {
+    }, c, d, v, {
       scope: "meta",
       begin: /\[</,
       end: />\]/,
       relevance: 2,
       contains: [d, N, T, S, w, I]
-    }, v, E, y, O, I, _, h]
+    }, b, E, y, O, I, _, h]
   }
 }
 e.exports = s

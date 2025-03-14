@@ -35,12 +35,12 @@ async function E(e) {
   return (0, a.N)().decodeAudioData(r)
 }
 
-function v(e) {
+function b(e) {
   let t = g.get(e);
   return null == t && (t = E(e), g.set(e, t)), t
 }
 
-function b(e, t) {
+function v(e, t) {
   return !!t.startsWith(e) && null != t.substring(e.length).match(h)
 }
 
@@ -61,7 +61,7 @@ async function O() {
     }
     let s = t.filter(e => "audiooutput" === e.kind && "communications" !== e.deviceId),
       l = s[r];
-    if (b(a.name, null !== (e = null == l ? void 0 : l.label) && void 0 !== e ? e : "")) {
+    if (v(a.name, null !== (e = null == l ? void 0 : l.label) && void 0 !== e ? e : "")) {
       m = l.deviceId;
       return
     }
@@ -191,7 +191,7 @@ let I = class {
     async ensureAudio() {
       if (null == this._ensureAudioPromise) {
         let e = Math.min(c.Z.getOutputVolume() / 100 * this._volume, 1);
-        this._ensureAudioPromise = v(this.name).then(t => {
+        this._ensureAudioPromise = b(this.name).then(t => {
           if (null == t) return Promise.reject(Error("Failed to load audio: ".concat(this.name)));
           if (this._audioContext = (0, a.N)(), this._gain = new GainNode(this._audioContext), this._gain.gain.value = e, u.isPlatformEmbedded) {
             var n, r;

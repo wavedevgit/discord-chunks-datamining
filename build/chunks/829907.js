@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  DH: () => N,
+  DH: () => A,
+  H8: () => T,
   HD: () => d,
-  PD: () => A,
+  PD: () => C,
   P_: () => g,
   X8: () => f,
   hj: () => I,
-  qT: () => C,
+  qT: () => R,
   qc: () => S,
   sS: () => m,
   tY: () => _
@@ -80,10 +81,10 @@ function E(e, t) {
   } = c.ZP.GetWindowFullscreenTypeExtraByPid(e, t.name);
   return u.info("QUNS for ".concat(t.name, ": ").concat(n)), n === i.Ng.QUNS_RUNNING_D3D_FULL_SCREEN
 }
-let v = {
+let b = {
     "1314682894106497096": (e, t, n) => E(e, t) ? i.Jx.FULLSCREEN : n
   },
-  b = {
+  v = {
     "762434991303950386": e => !0,
     "367827983903490050": e => !0
   },
@@ -97,7 +98,7 @@ async function I(e) {
   if (null == i || null == i.name) return r;
   let o = null === (t = l.Z.getGameByName(i.name)) || void 0 === t ? void 0 : t.id;
   if (null == o) return r;
-  let s = v[o];
+  let s = b[o];
   return null != s ? s(e, i, r) : r
 }
 
@@ -105,24 +106,29 @@ function S(e) {
   var t;
   let n = null === (t = l.Z.getGameByName(e.name)) || void 0 === t ? void 0 : t.id;
   if (null == n) return !1;
-  let r = b[n];
+  let r = v[n];
   return null != r && r(e)
 }
-let T = new Set([i.Jx.UNKNOWN, i.Jx.FULLSCREEN]);
 
-function N(e, t, n) {
+function T(e) {
+  let t = a.ZP.getGameForPID(e);
+  return null != t && null != t.name && S(t)
+}
+let N = new Set([i.Jx.UNKNOWN, i.Jx.FULLSCREEN]);
+
+function A(e, t, n) {
   if (e.overlayMethod !== r.gl.OutOfProcess && e.overlayMethod !== r.gl.OutOfProcessLimitedInteraction) return !1;
   if (!n) return !0;
   switch (t) {
     case i.Jx.UNKNOWN:
-      return T.has(e.previousFullscreenType);
+      return N.has(e.previousFullscreenType);
     case i.Jx.FULLSCREEN:
       return !0
   }
   return !1
 }
 
-function A(e, t, n) {
+function C(e, t, n) {
   if (e.overlayMethod !== r.gl.Hook || !n) return !1;
   switch (t) {
     case i.Jx.UNKNOWN:
@@ -133,7 +139,7 @@ function A(e, t, n) {
   return !0
 }
 
-function C(e) {
+function R(e) {
   return null == e ? {
     source: s.d.DEFAULT,
     enabledOOP: !1,

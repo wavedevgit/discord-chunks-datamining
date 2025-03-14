@@ -27,8 +27,8 @@ let p = r.v.LEAGUE_OF_LEGENDS_WEEKLY,
   m = 5,
   g = 9e5,
   E = new Map,
-  v = new Set,
-  b = new Map;
+  b = new Set,
+  v = new Map;
 
 function y(e, t) {
   return "".concat(e, ":").concat(t)
@@ -37,7 +37,7 @@ function y(e, t) {
 function O(e, t) {
   var n;
   let r = y(e, t);
-  if (v.has(r) || (null !== (n = b.get(r)) && void 0 !== n ? n : 0) > h) return !1;
+  if (b.has(r) || (null !== (n = v.get(r)) && void 0 !== n ? n : 0) > h) return !1;
   if (l.Z.getGuildId() !== e) return;
   if (!(0, f.NM)({
       guildId: e,
@@ -72,8 +72,8 @@ async function T(e) {
   } = e;
   if (!(O(t, n) || r)) return;
   let o = y(t, n);
-  if (!v.has(o)) try {
-    v.add(o);
+  if (!b.has(o)) try {
+    b.add(o);
     let e = await (0, u.pV)({
         guildId: t,
         leaderboardId: n,
@@ -98,11 +98,11 @@ async function T(e) {
       type: "SET_GUILD_LEADERBOARD",
       leaderboardResponse: e,
       intervalOffset: 0
-    }), b.delete(o), v.delete(o), S()
+    }), v.delete(o), b.delete(o), S()
   } catch (i) {
     var a;
-    let e = (null !== (a = b.get(o)) && void 0 !== a ? a : 0) + 1;
-    if (b.set(o, e), !O(t, n)) return;
+    let e = (null !== (a = v.get(o)) && void 0 !== a ? a : 0) + 1;
+    if (v.set(o, e), !O(t, n)) return;
     let r = 1e3 * Math.pow(m, e);
     E.set(o, setTimeout(() => T({
       guildId: t,
@@ -117,7 +117,7 @@ function N() {
 }
 
 function A() {
-  I(), E = new Map, v = new Set, b = new Map, N()
+  I(), E = new Map, b = new Set, v = new Map, N()
 }
 class C extends o.Z {
   fetchLeaderboard(e) {

@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(430824),
   g = n(267642),
   E = n(981631),
-  v = n(30513),
-  b = n(388032),
+  b = n(30513),
+  v = n(388032),
   y = n(702419);
 let O = e => {
   let {
@@ -51,7 +51,7 @@ let O = e => {
         analyticsLocations: T,
         analyticsSourceLocation: S,
         guild: N,
-        perks: (0, v.hC)()
+        perks: (0, b.hC)()
       })
     };
     return (0, r.jsxs)("div", {
@@ -64,14 +64,14 @@ let O = e => {
         color: "interactive-normal",
         className: y.body,
         variant: "text-sm/normal",
-        children: b.NW.format(b.t.AXWla2, {
+        children: v.NW.format(v.t.AXWla2, {
           count: (0, g.A3)(E.Eu4.TIER_1)
         })
       }), (0, r.jsx)(l.zxk, {
         look: l.zxk.Looks.LINK,
         color: l.zxk.Colors.LINK,
         onClick: e,
-        children: b.NW.string(b.t["Gb+BJC"])
+        children: v.NW.string(v.t["Gb+BJC"])
       })]
     })
   } {
@@ -90,12 +90,12 @@ let O = e => {
         color: "interactive-normal",
         className: y.body,
         variant: "text-sm/normal",
-        children: b.NW.string(b.t.S83wgo)
+        children: v.NW.string(v.t.S83wgo)
       }), (0, r.jsx)(l.zxk, {
         look: l.zxk.Looks.LINK,
         color: l.zxk.Colors.LINK,
         onClick: e,
-        children: b.NW.string(b.t.bwNjur)
+        children: v.NW.string(v.t.bwNjur)
       })]
     })
   }

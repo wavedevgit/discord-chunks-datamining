@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(880257),
   h = n(631885),
   f = n(895328),
-  b = n(568671),
-  x = n(419821),
+  x = n(568671),
+  b = n(419821),
   N = n(367515),
   _ = n(250285),
   E = n(292352),
@@ -121,7 +121,7 @@ function P() {
         children: O.NW.format(C.Z.yMnoDg, {
           link: "https://support.discord.com/hc/articles/14155060633623"
         })
-      }), e ? null : (0, r.jsx)(b.Z, {})]
+      }), e ? null : (0, r.jsx)(x.Z, {})]
     }), (0, r.jsx)("img", {
       className: S.bannerArt,
       src: I,
@@ -143,7 +143,7 @@ function R(e) {
     return null == a ? null : (0, r.jsx)(_.Z, {
       userId: a.id,
       isLast: l,
-      children: () => t === E.ne.ACTIVE ? (0, r.jsx)(x.u, {
+      children: () => t === E.ne.ACTIVE ? (0, r.jsx)(b.u, {
         user: a
       }) : (0, r.jsx)(N.B, {
         user: a

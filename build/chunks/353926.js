@@ -41,7 +41,7 @@ function E(e) {
   return e
 }
 
-function v(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,8 +52,8 @@ function v(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -88,9 +88,9 @@ function G(e) {
   }
 }
 let B = h.qO.map(e => G(e)),
-  V = 6048e5;
+  F = 6048e5;
 
-function F(e, t) {
+function V(e, t) {
   return e || B.includes(t)
 }
 
@@ -117,7 +117,7 @@ let Y = Date.now(),
 
 function z(e, t) {
   let n = C[e];
-  return !(null == n || (K ? n.time < Y : Date.now() - n.time > V)) && n.hash === t
+  return !(null == n || (K ? n.time < Y : Date.now() - n.time > F)) && n.hash === t
 }
 
 function q(e, t) {
@@ -173,7 +173,7 @@ function Q(e) {
     null != o && (e.context_guild_id = o.guildId);
     let f = u ? m.rMx.EXPERIMENT_USER_TRIGGERED_FALLBACK : m.rMx.EXPERIMENT_USER_TRIGGERED;
     if (c) {
-      let t = b(E({}, e), {
+      let t = v(E({}, e), {
         assignment_fingerprint: n.fingerprint,
         current_session_id: d.default.getSessionId(),
         current_fingerprint: d.default.getFingerprint(),
@@ -207,7 +207,7 @@ function Q(e) {
         holdout_bucket: n.holdoutBucket
       };
     if (c) {
-      let e = b(E({}, o), {
+      let e = v(E({}, o), {
         assignment_fingerprint: n.fingerprint,
         current_session_id: d.default.getSessionId(),
         current_fingerprint: d.default.getFingerprint(),
@@ -318,7 +318,7 @@ function et(e) {
       override: 0 === l,
       hashResult: null != u ? u : -1,
       aaMode: 1 === d,
-      triggerDebuggingEnabled: F(1 === f, t),
+      triggerDebuggingEnabled: V(1 === f, t),
       assignmentSource: r,
       sessionId: i,
       loadedFromCache: a,
@@ -338,7 +338,7 @@ function et(e) {
       holdoutName: null != d ? d : null,
       holdoutControlBucket: null != f ? f : null,
       aaMode: 1 === _,
-      triggerDebuggingEnabled: F(1 === p, t),
+      triggerDebuggingEnabled: V(1 === p, t),
       assignmentSource: r,
       sessionId: i,
       loadedFromCache: a,
@@ -454,7 +454,7 @@ function ea(e) {
     serializedExperimentStore: t,
     user: n
   } = e;
-  !j && Z(n) && (j = !0), A = t.hasLoadedExperiments, C = t.trackedExposureExperiments, D = t.loadedUserExperiments, M = t.userExperimentOverrides, k = t.guildExperimentOverrides, w = b(E({}, w), {
+  !j && Z(n) && (j = !0), A = t.hasLoadedExperiments, C = t.trackedExposureExperiments, D = t.loadedUserExperiments, M = t.userExperimentOverrides, k = t.guildExperimentOverrides, w = v(E({}, w), {
     source: t.assignmentSource,
     sessionId: t.assignmentSessionId,
     fingerprint: t.assignmentFingerprint
@@ -469,7 +469,7 @@ function el(e) {
   let {
     isSwitchingAccount: t
   } = e;
-  s.K.remove(y), t || (s.K.remove(O), s.K.remove(I), s.K.remove(S), M = {}, k = {}), D = {}, w = b(E({}, w), {
+  s.K.remove(y), t || (s.K.remove(O), s.K.remove(I), s.K.remove(S), M = {}, k = {}), D = {}, w = v(E({}, w), {
     rawUserExperiments: []
   }), C = {}, A = !1
 }
@@ -484,7 +484,7 @@ function eu() {
   let t = e.e,
     n = Date.now(),
     r = !1;
-  for (let e in t) n - t[e].time > V && (delete t[e], r = !0);
+  for (let e in t) n - t[e].time > F && (delete t[e], r = !0);
   return r && e_(t), t
 }
 
@@ -578,7 +578,7 @@ function eh(e) {
     skipCleanup: o
   } = e, a = null != i ? i : null === (t = P[n]) || void 0 === t ? void 0 : t.type;
   if (null == a) return !1;
-  if (null == r ? (M = E({}, M), delete M[n], k = E({}, k), delete k[n]) : "user" === a ? M = b(E({}, M), {
+  if (null == r ? (M = E({}, M), delete M[n], k = E({}, k), delete k[n]) : "user" === a ? M = v(E({}, M), {
       [n]: {
         type: a,
         revision: 1,
@@ -586,7 +586,7 @@ function eh(e) {
         bucket: r,
         override: !0
       }
-    }) : k = b(E({}, k), {
+    }) : k = v(E({}, k), {
       [n]: {
         type: a,
         revision: 1,

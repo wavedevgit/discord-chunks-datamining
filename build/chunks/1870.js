@@ -35,10 +35,10 @@ let d = new Map,
   E = e => {
     r = e.skuId, o = void 0
   },
-  v = e => {
+  b = e => {
     null == e.purchases || 0 === e.purchases.length ? f = d : (0, s.isEqual)([...f.values()], e.purchases) || (f = new Map(e.purchases.map(e => [e.skuId, e]))), r = void 0, o = void 0
   },
-  b = e => {
+  v = e => {
     let {
       error: t,
       skuId: n
@@ -77,7 +77,7 @@ let I = new O(c.Z, {
   COLLECTIBLES_PURCHASES_FETCH_SUCCESS: g,
   COLLECTIBLES_PURCHASES_FETCH_FAILURE: m,
   COLLECTIBLES_CLAIM: E,
-  COLLECTIBLES_CLAIM_SUCCESS: v,
-  COLLECTIBLES_CLAIM_FAILURE: b,
+  COLLECTIBLES_CLAIM_SUCCESS: b,
+  COLLECTIBLES_CLAIM_FAILURE: v,
   LOGOUT: y
 })

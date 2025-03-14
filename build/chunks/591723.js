@@ -85,7 +85,7 @@ function E(e) {
   }
 }
 
-function v(e) {
+function b(e) {
   switch (e[0]) {
     case "S":
       return a.t.SOURCE;
@@ -96,7 +96,7 @@ function v(e) {
   }
 }
 
-function b(e, t) {
+function v(e, t) {
   var n = e.entries(),
     r = !1;
   do {
@@ -128,7 +128,7 @@ var y = function() {
   }, {
     key: "containsHandler",
     value: function(e) {
-      return b(this.dragSources, e) || b(this.dropTargets, e)
+      return v(this.dragSources, e) || v(this.dropTargets, e)
     }
   }, {
     key: "getSource",
@@ -154,12 +154,12 @@ var y = function() {
   }, {
     key: "isSourceId",
     value: function(e) {
-      return v(e) === a.t.SOURCE
+      return b(e) === a.t.SOURCE
     }
   }, {
     key: "isTargetId",
     value: function(e) {
-      return v(e) === a.t.TARGET
+      return b(e) === a.t.TARGET
     }
   }, {
     key: "removeSource",

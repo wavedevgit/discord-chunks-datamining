@@ -1,4 +1,4 @@
-/** Chunk was on 69423 **/
+/** Chunk was on 98697 **/
 n.d(t, {
   Z: () => b
 }), n(653041), n(47120), n(266796);
@@ -34,7 +34,7 @@ let E = {
       src: n(977706)
     })]
   }, "symbol");
-class m extends i.PureComponent {
+class h extends i.PureComponent {
   componentDidMount() {
     this.setState({
       animating: !0
@@ -146,7 +146,7 @@ class m extends i.PureComponent {
     })
   }
 }
-class h extends i.PureComponent {
+class m extends i.PureComponent {
   componentDidMount() {
     this.setTimeout(() => {
       this.setState({
@@ -177,7 +177,7 @@ class h extends i.PureComponent {
     }), p(this, "removeExplosion", e => {
       let t = this.children,
         n = t.findIndex(t => {
-          if (t.type !== m) return !1;
+          if (t.type !== h) return !1;
           let n = t.props;
           return null != n.componentId && n.componentId === e
         });
@@ -188,7 +188,7 @@ class h extends i.PureComponent {
         n = window.innerHeight / 2 >> 0;
       if (this.state.explosions < 8) {
         let i = "expl-".concat(this.state.explosions);
-        e.push((0, r.jsx)(m, {
+        e.push((0, r.jsx)(h, {
           componentId: i,
           top: s().random(n - 100, n + 100, !1),
           left: s().random(t - 200, t + 200, !1),
@@ -204,4 +204,4 @@ class h extends i.PureComponent {
     })
   }
 }
-let b = h
+let b = m

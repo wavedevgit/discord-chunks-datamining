@@ -33,9 +33,9 @@ var r = n(149765),
 n(51144);
 var g = n(981631),
   E = n(474936),
-  v = n(388032);
+  b = n(388032);
 let {
-  GUILD_VOICE: b,
+  GUILD_VOICE: v,
   GUILD_CATEGORY: y,
   GUILD_STAGE_VOICE: O
 } = g.d4z;
@@ -46,7 +46,7 @@ function I(e, t) {
 
 function S(e, t, n) {
   let i = h.Hn;
-  return ((0, c.r8)(t) || t === y) && (i = r.IH(i, g.Plq.VIEW_CHANNEL)), I(t, b) && (i = r.IH(i, g.Plq.VIEW_CHANNEL), i = r.IH(i, g.Plq.CONNECT)), {
+  return ((0, c.r8)(t) || t === y) && (i = r.IH(i, g.Plq.VIEW_CHANNEL)), I(t, v) && (i = r.IH(i, g.Plq.VIEW_CHANNEL), i = r.IH(i, g.Plq.CONNECT)), {
     id: e,
     type: n,
     allow: h.Hn,
@@ -56,7 +56,7 @@ function S(e, t, n) {
 
 function T(e, t, n) {
   let i = h.Hn;
-  return ((0, c.r8)(t) || t === y) && (i = r.IH(i, g.Plq.VIEW_CHANNEL)), (I(t, b) || I(t, O)) && (i = r.IH(i, g.Plq.VIEW_CHANNEL), i = r.IH(i, g.Plq.CONNECT)), {
+  return ((0, c.r8)(t) || t === y) && (i = r.IH(i, g.Plq.VIEW_CHANNEL)), (I(t, v) || I(t, O)) && (i = r.IH(i, g.Plq.VIEW_CHANNEL), i = r.IH(i, g.Plq.CONNECT)), {
     id: e,
     type: n,
     deny: h.Hn,
@@ -145,25 +145,25 @@ function x(e) {
   } = e;
   switch (t) {
     case g.d4z.DM:
-      return v.NW.string(v.t.jN2DfX);
+      return b.NW.string(b.t.jN2DfX);
     case g.d4z.GROUP_DM:
-      return v.NW.string(v.t["e5y+go"]);
+      return b.NW.string(b.t["e5y+go"]);
     case g.d4z.GUILD_TEXT:
-      return v.NW.string(v.t.Pnajj4);
+      return b.NW.string(b.t.Pnajj4);
     case g.d4z.GUILD_FORUM:
-      return v.NW.string(v.t.GbryDQ);
+      return b.NW.string(b.t.GbryDQ);
     case g.d4z.GUILD_MEDIA:
-      return v.NW.string(v.t.seKITE);
+      return b.NW.string(b.t.seKITE);
     case g.d4z.GUILD_VOICE:
-      return v.NW.string(v.t.BVZqJi);
+      return b.NW.string(b.t.BVZqJi);
     case g.d4z.GUILD_STAGE_VOICE:
-      return v.NW.string(v.t.EErMzM);
+      return b.NW.string(b.t.EErMzM);
     case g.d4z.GUILD_ANNOUNCEMENT:
-      return v.NW.string(v.t.l1dkSE);
+      return b.NW.string(b.t.l1dkSE);
     case g.d4z.GUILD_STORE:
-      return v.NW.string(v.t["P1/Erq"]);
+      return b.NW.string(b.t["P1/Erq"]);
     case g.d4z.GUILD_CATEGORY:
-      return v.NW.string(v.t.vHCZws);
+      return b.NW.string(b.t.vHCZws);
     default:
       return null
   }

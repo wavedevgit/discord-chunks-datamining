@@ -19,17 +19,17 @@ function a(e, t, n, a, s, l) {
   for (var m = c; ++f < d;) {
     var g = e[_ = u[f]],
       E = t[_];
-    if (a) var v = c ? a(E, g, _, t, e, l) : a(g, E, _, e, t, l);
-    if (!(void 0 === v ? g === E || s(g, E, n, a, l) : v)) {
+    if (a) var b = c ? a(E, g, _, t, e, l) : a(g, E, _, e, t, l);
+    if (!(void 0 === b ? g === E || s(g, E, n, a, l) : b)) {
       h = !1;
       break
     }
     m || (m = "constructor" == _)
   }
   if (h && !m) {
-    var b = e.constructor,
+    var v = e.constructor,
       y = t.constructor;
-    b != y && "constructor" in e && "constructor" in t && !("function" == typeof b && b instanceof b && "function" == typeof y && y instanceof y) && (h = !1)
+    v != y && "constructor" in e && "constructor" in t && !("function" == typeof v && v instanceof v && "function" == typeof y && y instanceof y) && (h = !1)
   }
   return l.delete(e), l.delete(t), h
 }

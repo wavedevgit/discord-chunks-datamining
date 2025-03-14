@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => V
+  Z: () => F
 }), n(242167), n(970173), n(520712), n(268111), n(941497), n(32026), n(480839), n(744285), n(492257), n(873817), n(610885), n(126298), n(411104), n(773603);
 var i = n(512722),
   o = n.n(i),
@@ -19,8 +19,8 @@ var i = n(512722),
   m = n(695346),
   g = n(199902),
   E = n(314897),
-  v = n(358085),
-  b = n(998502),
+  b = n(358085),
+  v = n(998502),
   y = n(569545),
   O = n(70722),
   I = n(981631),
@@ -67,7 +67,7 @@ async function j(e, t) {
     enabled: n
   } = (0, h.R)({
     location: "uploadStreamPreviews"
-  }), i = (0, v.isWeb)() && m.I0.getSetting() || g.Z.getIsActiveStreamPreviewDisabled(t);
+  }), i = (0, b.isWeb)() && m.I0.getSetting() || g.Z.getIsActiveStreamPreviewDisabled(t);
   if (n && i) return;
   let a = () => j(e, t);
   if (!R) try {
@@ -78,9 +78,9 @@ async function j(e, t) {
         type: "STREAM_PREVIEW_FETCH_SUCCESS",
         streamKey: t,
         previewURL: r
-      }), v.isPlatformEmbedded) {
+      }), b.isPlatformEmbedded) {
       let e = E.default.getToken();
-      o()(null != e, "Auth token was null while sending screenshot."), await b.ZP.makeChunkedRequest(I.ANM.STREAM_PREVIEW(t), {
+      o()(null != e, "Auth token was null while sending screenshot."), await v.ZP.makeChunkedRequest(I.ANM.STREAM_PREVIEW(t), {
         thumbnail: r
       }, {
         method: "POST",
@@ -103,7 +103,7 @@ async function j(e, t) {
 
 function U(e, t) {
   let n = 0;
-  return (v.isPlatformEmbedded ? B : G)(e, e => {
+  return (b.isPlatformEmbedded ? B : G)(e, e => {
     if (new Uint32Array(e.data.buffer).some(e => 0 !== e)) return !0;
     if (++n > t) throw Error("Timed out awaiting non-black frame after ".concat(t, " frames"));
     return !1
@@ -152,7 +152,7 @@ function B(e, t) {
     i || u.Z.removeSink(e, A)
   })
 }
-let V = {
+let F = {
   init() {
     _.Z.subscribe("CONNECTION_OPEN", x), _.Z.subscribe("LOGOUT", x), _.Z.subscribe("STREAM_DELETE", x), _.Z.subscribe("RTC_CONNECTION_VIDEO", e => {
       let {

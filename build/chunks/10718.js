@@ -3,7 +3,7 @@
 n.d(t, {
   Hf: () => O,
   JT: () => S,
-  Nk: () => b,
+  Nk: () => v,
   Qm: () => N,
   VB: () => y,
   Xq: () => E,
@@ -76,7 +76,7 @@ function E(e, t, n) {
       return (null === (t = e.descriptor.application) || void 0 === t ? void 0 : t.id) === n
     });
     if (null != e) {
-      let n = v(e, t);
+      let n = b(e, t);
       return {
         application: e.descriptor.application,
         command: n
@@ -84,7 +84,7 @@ function E(e, t, n) {
     }
   } else
     for (let e of u) {
-      let n = v(e, t);
+      let n = b(e, t);
       if (null != n) return {
         application: e.descriptor.application,
         command: n
@@ -96,7 +96,7 @@ function E(e, t, n) {
   }
 }
 
-function v(e, t) {
+function b(e, t) {
   var n, r, i;
   if (null == t) return;
   if (null != e.commands[t]) return e.commands[t];
@@ -111,7 +111,7 @@ function v(e, t) {
   }) : void 0
 }
 
-function b(e, t, n) {
+function v(e, t, n) {
   var r, i, o, a, s, c, u, d;
   let f = l.ZP.getUserState(),
     _ = l.ZP.getContextState(e),
@@ -150,33 +150,33 @@ function I(e) {
     descriptors: p,
     commands: m,
     sectionedCommands: E,
-    loading: v
+    loading: b
   } = (0, l.JK)(t, d, n, g(h({}, a), {
     allowFetch: c
-  })), [b, y] = r.useState(null), O = r.useMemo(() => {
+  })), [v, y] = r.useState(null), O = r.useMemo(() => {
     var e;
     return C(null !== (e = a.placeholderCount) && void 0 !== e ? e : 0, n.commandTypes[0])
   }, [n.commandTypes, a.placeholderCount]);
   return r.useMemo(() => {
     let e = {
-      loading: v,
+      loading: b,
       commands: m,
       activeSections: p,
       commandsByActiveSection: E,
-      filteredSectionId: b,
+      filteredSectionId: v,
       hasMoreAfter: !1,
-      placeholders: v ? O : [],
+      placeholders: b ? O : [],
       sectionDescriptors: p,
       filterSection: e => {
         y(e)
       },
       scrollDown: _.dG4
     };
-    if (null != b) {
-      let t = E.find(e => e.section.id === b);
+    if (null != v) {
+      let t = E.find(e => e.section.id === v);
       e.activeSections = null != t ? [t.section] : [], e.commandsByActiveSection = null != t ? [t] : []
     }
-    if (v) {
+    if (b) {
       let t = E[0];
       if (null != t) e.commandsByActiveSection = [{
         section: t.section,
@@ -192,7 +192,7 @@ function I(e) {
       e.commands = [...m, ...O]
     }
     return e
-  }, [m, p, b, E, v, O])
+  }, [m, p, v, E, b, O])
 }
 
 function S(e, t, n) {

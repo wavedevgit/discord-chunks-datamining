@@ -20,7 +20,7 @@ var r = n(200651),
   g = n(231103),
   E = n(223223);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,14 +29,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -54,7 +54,7 @@ let y = e => {
       avatarDecorationOverride: t,
       size: (0, u.y9)(c.EFr.SIZE_40)
     });
-    return null == t ? n : (0, r.jsx)("img", b({
+    return null == t ? n : (0, r.jsx)("img", v({
       src: o,
       alt: t.label,
       className: g.avatarDecoration

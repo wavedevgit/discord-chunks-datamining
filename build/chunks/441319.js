@@ -21,8 +21,8 @@ var r = n(997945),
   m = n(818143),
   g = n(666475),
   E = n(591304),
-  v = n(73375),
-  b = n(328664),
+  b = n(73375),
+  v = n(328664),
   y = n(328259),
   O = n(19009),
   I = n(234912),
@@ -49,7 +49,7 @@ function P() {
     isPremium: !0
   }, {
     id: r.Ru.MANGA,
-    iconSource: b,
+    iconSource: v,
     isPremium: !0,
     name: i.NW.string(i.t.hGBbFx)
   }, {
@@ -139,7 +139,7 @@ function P() {
     name: i.NW.string(i.t.Mfoe3t)
   }, {
     id: r.Ru.IN_RAINBOWS,
-    iconSource: v,
+    iconSource: b,
     isPremium: !0,
     name: i.NW.string(i.t.yxJB9P)
   }, {

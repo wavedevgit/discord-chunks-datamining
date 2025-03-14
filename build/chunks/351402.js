@@ -23,12 +23,12 @@ let _ = !1,
   m = !1,
   g = !1,
   E = null,
-  v = null,
-  b = !1,
+  b = null,
+  v = !1,
   y = !1;
 
 function O() {
-  r = void 0, o = void 0, i = void 0, b = !1, a = null, v = null, E = null
+  r = void 0, o = void 0, i = void 0, v = !1, a = null, b = null, E = null
 }
 
 function I() {
@@ -51,11 +51,11 @@ function A(e) {
   let {
     error: t
   } = e;
-  h = !1, v = t
+  h = !1, b = t
 }
 
 function C() {
-  v = null
+  b = null
 }
 
 function R() {
@@ -118,11 +118,11 @@ function B(e) {
   i = t
 }
 
-function V() {
-  i = null, b = !0
+function F() {
+  i = null, v = !0
 }
 
-function F(e) {
+function V(e) {
   let {
     localizedPricingPromo: t
   } = e;
@@ -161,7 +161,7 @@ class W extends(s = l.ZP.Store) {
     return E
   }
   get removeSourceError() {
-    return v
+    return b
   }
   get ipCountryCodeLoaded() {
     return void 0 !== i
@@ -176,7 +176,7 @@ class W extends(s = l.ZP.Store) {
     return null != i ? i : d.OMz
   }
   get ipCountryCodeHasError() {
-    return b
+    return v
   }
   get paymentSourcesFetchRequest() {
     return r
@@ -219,8 +219,8 @@ let Y = new W(c.Z, {
   BILLING_SUBSCRIPTION_CANCEL_SUCCESS: U,
   BILLING_IP_COUNTRY_CODE_FETCH_START: G,
   BILLING_SET_IP_COUNTRY_CODE: B,
-  BILLING_IP_COUNTRY_CODE_FAILURE: V,
-  BILLING_SET_LOCALIZED_PRICING_PROMO: F,
+  BILLING_IP_COUNTRY_CODE_FAILURE: F,
+  BILLING_SET_LOCALIZED_PRICING_PROMO: V,
   BILLING_LOCALIZED_PRICING_PROMO_FAILURE: Z,
   LOGOUT: O,
   CONNECTION_OPEN: H

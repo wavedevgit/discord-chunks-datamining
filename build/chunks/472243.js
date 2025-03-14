@@ -21,7 +21,7 @@ var i = n(120356),
   g = n(388032),
   E = n(553645);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -61,14 +61,14 @@ function O(e, t) {
 }
 
 function I(e) {
-  var t, n, i, v;
+  var t, n, i, b;
   let {
     type: y,
     textValue: I,
     maxCharacterCount: S,
     showRemainingCharsAfterCount: T,
     className: N
-  } = e, A = (0, a.e7)([f.default], () => _.ZP.canUseIncreasedMessageLength(f.default.getCurrentUser())), C = (0, u.Z)(), R = null != S ? S : C, P = null !== (v = null != T ? T : S) && void 0 !== v ? v : C / 10, w = I.length, D = null != y.upsellLongMessages && (null != w ? w : 0) > h.J6R && A, L = null != y.upsellLongMessages && !A, x = (null === (n = (0, d.N)()) || void 0 === n ? void 0 : null === (t = n.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === m.Si.TIER_2, M = R - w, k = M > P, j = M < 0 && x, U = 0 === M ? g.NW.string(g.t.tU6YQ0) : M > 0 ? g.NW.formatToPlainString(g.t.qH8uFR, {
+  } = e, A = (0, a.e7)([f.default], () => _.ZP.canUseIncreasedMessageLength(f.default.getCurrentUser())), C = (0, u.Z)(), R = null != S ? S : C, P = null !== (b = null != T ? T : S) && void 0 !== b ? b : C / 10, w = I.length, D = null != y.upsellLongMessages && (null != w ? w : 0) > h.J6R && A, L = null != y.upsellLongMessages && !A, x = (null === (n = (0, d.N)()) || void 0 === n ? void 0 : null === (t = n.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === m.Si.TIER_2, M = R - w, k = M > P, j = M < 0 && x, U = 0 === M ? g.NW.string(g.t.tU6YQ0) : M > 0 ? g.NW.formatToPlainString(g.t.qH8uFR, {
     count: M
   }) : g.NW.string(g.t.YSRIqa), {
     analyticsLocations: G
@@ -86,7 +86,7 @@ function I(e) {
             maxLength: R
           }),
           position: "top",
-          children: e => (0, r.jsx)(s.SrA, b({
+          children: e => (0, r.jsx)(s.SrA, v({
             size: "md",
             color: "currentColor",
             className: E.premiumFlair
@@ -94,7 +94,7 @@ function I(e) {
         }) : null, k || j ? null : (0, r.jsx)(s.ua7, {
           text: U,
           position: "top",
-          children: e => (0, r.jsx)(s.Text, O(b({
+          children: e => (0, r.jsx)(s.Text, O(v({
             variant: "text-sm/semibold",
             tabularNumbers: !0,
             "aria-hidden": !0

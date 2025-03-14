@@ -81,14 +81,14 @@ function g(e) {
     let i = _({}, n(g())),
       a = e.getBoundingClientRect();
     return void 0 !== i.top && (i.top = m(a.top + i.top, null == d ? void 0 : d.top)), void 0 !== i.left && (i.left = m(a.left + i.left, null == d ? void 0 : d.left)), void 0 !== i.right && (i.right = m(window.innerWidth - a.right + i.right, null == d ? void 0 : d.right)), void 0 !== i.bottom && (i.bottom = m(window.innerHeight - a.bottom + i.bottom, null == d ? void 0 : d.bottom)), o(a), i
-  }, [n, r, g, d, t, o]), v = i.useCallback(() => {
+  }, [n, r, g, d, t, o]), b = i.useCallback(() => {
     let e = E();
     return (0, s.isEqual)(e, f) || p(e), e
   }, [E, f]);
   i.useEffect(() => {
-    v()
-  }, [v]);
-  let b = (0, c.Z)(h),
+    b()
+  }, [b]);
+  let v = (0, c.Z)(h),
     y = i.useRef(null),
     O = i.useRef(0),
     I = i.useCallback(() => {
@@ -97,22 +97,22 @@ function g(e) {
           clearInterval(y.current), y.current = null, O.current = 0;
           return
         }
-        v(), O.current++
+        b(), O.current++
       }, 200))
-    }, [v]);
+    }, [b]);
   i.useEffect(() => {
-    b && !h && I()
-  }, [v, I, h, b]);
+    v && !h && I()
+  }, [b, I, h, v]);
   let S = i.useMemo(() => (0, s.debounce)(() => {
-    v()
-  }, a), [v, a]);
+    b()
+  }, a), [b, a]);
   return i.useEffect(() => (window.addEventListener("resize", S), () => {
     window.removeEventListener("resize", S)
   }), [S]), {
     offsets: f,
     getElementDimensions: g,
     getElementOffsets: E,
-    updateElementOffsets: v,
+    updateElementOffsets: b,
     updateElementOffsetsWithPolling: I
   }
 }

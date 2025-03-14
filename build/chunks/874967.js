@@ -40,9 +40,9 @@ function E(e) {
   return e
 }
 
-function v(e, t) {
+function b(e, t) {
   if (null == e) return {};
-  var n, r, i = b(e, t);
+  var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -50,7 +50,7 @@ function v(e, t) {
   return i
 }
 
-function b(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -120,14 +120,14 @@ class O extends i.PureComponent {
           {
             onClick: t
           } = e;
-        t(v(e, ["onClick"]))
+        t(b(e, ["onClick"]))
       }
     }), g(this, "handleClick", () => {
       let e = this.props,
         {
           onClick: t
         } = e;
-      t(v(e, ["onClick"]))
+      t(b(e, ["onClick"]))
     })
   }
 }

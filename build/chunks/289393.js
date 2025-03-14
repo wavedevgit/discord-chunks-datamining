@@ -41,8 +41,8 @@ function h(e) {
 let m = new s.h(e => [f(e.guild_id), ...e.subscription_listings_ids.map(_)], e => e.id),
   g = new s.h(e => [p(e.application_id), h(e.subscription_plans[0].id)], e => e.id),
   E = {},
-  v = new Set,
-  b = {},
+  b = new Set,
+  v = {},
   y = {},
   O = {},
   I = {},
@@ -62,14 +62,14 @@ function A(e) {
 }
 
 function C() {
-  m.clear(), g.clear(), E = {}, v.clear(), b = {}, y = {}, O = {}, I = {}, S.clear()
+  m.clear(), g.clear(), E = {}, b.clear(), v = {}, y = {}, O = {}, I = {}, S.clear()
 }
 
 function R(e) {
   let {
     settings: t
   } = e;
-  b[t.guild_id] = t
+  v[t.guild_id] = t
 }
 
 function P(e) {
@@ -88,7 +88,7 @@ function w(e) {
     subscriptionTrials: i
   } = e;
   for (let e of (E[t] = 2, n)) N(e);
-  for (let e of (b[t] = r, i)) y[e.id] = e
+  for (let e of (v[t] = r, i)) y[e.id] = e
 }
 
 function D(e) {
@@ -116,7 +116,7 @@ function M(e) {
   let {
     planId: t
   } = e;
-  v.add(t)
+  b.add(t)
 }
 
 function k(e) {
@@ -155,14 +155,14 @@ function B(e) {
   y[t.id] = t
 }
 
-function V(e) {
+function F(e) {
   let {
     guildId: t
   } = e;
   I[t] = 1
 }
 
-function F(e) {
+function V(e) {
   let {
     guildId: t,
     restrictions: n
@@ -190,7 +190,7 @@ class Y extends(r = a.ZP.Store) {
     return null !== (t = E[e]) && void 0 !== t ? t : 0
   }
   getDidFetchListingForSubscriptionPlanId(e) {
-    return v.has(e)
+    return b.has(e)
   }
   getSubscriptionGroupListing(e) {
     return m.get(e)
@@ -215,7 +215,7 @@ class Y extends(r = a.ZP.Store) {
     return o()(t.length <= 1, "Found multiple listings for plan"), t[0]
   }
   getSubscriptionSettings(e) {
-    return b[e]
+    return v[e]
   }
   getSubscriptionTrial(e) {
     return y[e]
@@ -246,8 +246,8 @@ let K = new Y(l.Z, {
   GUILD_ROLE_SUBSCRIPTIONS_UPDATE_LISTING: U,
   GUILD_ROLE_SUBSCRIPTIONS_DELETE_LISTING: G,
   GUILD_ROLE_SUBSCRIPTIONS_UPDATE_SUBSCRIPTION_TRIAL: B,
-  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS: V,
-  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: F,
+  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS: F,
+  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: V,
   GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_FAILURE: Z,
   GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_ABORTED: H
 })

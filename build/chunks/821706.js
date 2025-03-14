@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  PE: () => b,
+  PE: () => v,
   l: () => y,
   pM: () => E
 });
@@ -96,7 +96,7 @@ function E(e) {
   })
 }
 
-function v(e) {
+function b(e) {
   var {
     user: t,
     analyticsLocation: n
@@ -115,7 +115,7 @@ function v(e) {
   })
 }
 
-function b(e) {
+function v(e) {
   let {
     user: t,
     relationshipType: n,
@@ -139,7 +139,7 @@ function b(e) {
         return d.NW.string(d.t["6QQCQ0"])
     }
   }, [n]);
-  return (0, r.jsx)(v, {
+  return (0, r.jsx)(b, {
     icon: l,
     tooltipText: c,
     shouldShowTooltip: s,
@@ -166,7 +166,7 @@ function y(e) {
     hasOutgoingPendingGameFriends: i,
     hasIncomingPendingGameFriends: o
   });
-  return (0, r.jsx)(v, {
+  return (0, r.jsx)(b, {
     tooltipText: l,
     tooltipPosition: "left",
     tooltipAlign: "top",

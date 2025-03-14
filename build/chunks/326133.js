@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(314910),
   g = n(549006),
   E = n(430824),
-  v = n(436896),
-  b = n(590921),
+  b = n(436896),
+  v = n(590921),
   y = n(606992),
   O = n(51062),
   I = n(918559),
@@ -94,18 +94,18 @@ let w = 490,
       type: j,
       editorHeight: U,
       onVisibilityChange: G
-    } = e, B = (0, h.Dt)(), V = (0, l.e7)([E.Z], () => {
+    } = e, B = (0, h.Dt)(), F = (0, l.e7)([E.Z], () => {
       var e;
       return null !== (e = E.Z.getGuild(k.guild_id)) && void 0 !== e ? e : null
-    }, [k.guild_id]), F = i.useRef(), [Z, H, W] = (0, O.Z)(C(N({}, e), {
-      guild: V
-    }), t, F), Y = (null === (n = j.autocomplete) || void 0 === n ? void 0 : n.forceChatLayer) ? g.ZP : m.ZP, K = (0, _.DJ)(Z.selectedIndex);
-    (0, p.KR)(B, Z.isVisible, K), v.Z.trackExposure({
+    }, [k.guild_id]), V = i.useRef(), [Z, H, W] = (0, O.Z)(C(N({}, e), {
+      guild: F
+    }), t, V), Y = (null === (n = j.autocomplete) || void 0 === n ? void 0 : n.forceChatLayer) ? g.ZP : m.ZP, K = (0, _.DJ)(Z.selectedIndex);
+    (0, p.KR)(B, Z.isVisible, K), b.Z.trackExposure({
       location: "6e9811_1"
     });
     let {
       usePopoutAutocomplete: z
-    } = v.Z.useExperiment({
+    } = b.Z.useExperiment({
       location: "6e9811_2"
     }, {
       autoTrackExposure: !1
@@ -126,7 +126,7 @@ let w = 490,
       results: Z.query.results,
       selectedIndex: Z.selectedIndex,
       channel: k,
-      guild: V,
+      guild: F,
       query: Z.query.queryText,
       options: Z.query.options,
       onHover: e => H.onResultHover(e),
@@ -140,7 +140,7 @@ let w = 490,
         [S.autocompleteTop]: Q
       },
       ee = w;
-    null != q && (ee = (null === (T = j.autocomplete) || void 0 === T ? void 0 : T.small) ? x : (null === (A = Z.query) || void 0 === A ? void 0 : A.type) === b.eq.EMOJIS_AND_STICKERS ? D : L), ee = Math.min(window.innerHeight - M, ee);
+    null != q && (ee = (null === (T = j.autocomplete) || void 0 === T ? void 0 : T.small) ? x : (null === (A = Z.query) || void 0 === A ? void 0 : A.type) === v.eq.EMOJIS_AND_STICKERS ? D : L), ee = Math.min(window.innerHeight - M, ee);
     let et = (0, r.jsx)(_.ZP, {
       id: B,
       className: a()(S.autocomplete, $),
@@ -157,7 +157,7 @@ let w = 490,
               id: B,
               ref: e => {
                 var n;
-                t.current = null !== (n = null == e ? void 0 : e.getScrollerNode()) && void 0 !== n ? n : null, F.current = e
+                t.current = null !== (n = null == e ? void 0 : e.getScrollerNode()) && void 0 !== n ? n : null, V.current = e
               }
             }, n), {
               className: S.scroller,

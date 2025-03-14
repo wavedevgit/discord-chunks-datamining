@@ -33,7 +33,7 @@ var r = n(512722),
   g = n(526761),
   E = n(981631);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -41,7 +41,7 @@ function v(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let b = 5e3,
+let v = 5e3,
   y = "UserSettingsProtoLastWriteTimes",
   O = Date.now();
 
@@ -208,7 +208,7 @@ class S {
       editInfo: e
     } = this.getEditInfo();
     i()(null != e.protoToSave, "protoToSave cannot be null"), i()(null != e.offlineEditDataVersion, "offlineEditDataVersion cannot be null"), i()(null == e.timeout, "timeout must not be set already");
-    let t = b + Math.floor(Math.random() * b),
+    let t = v + Math.floor(Math.random() * v),
       n = setTimeout(this.persistChanges, t);
     this.dispatchChanges({
       timeout: n,
@@ -216,7 +216,7 @@ class S {
     })
   }
   constructor(e, t) {
-    v(this, "ProtoClass", void 0), v(this, "type", void 0), v(this, "logger", void 0), v(this, "beforeSendCallbacks", void 0), v(this, "lastSendTime", void 0), v(this, "persistChanges", void 0), this.ProtoClass = e, this.type = t, this.beforeSendCallbacks = [], this.lastSendTime = 0, this.persistChanges = async () => {
+    b(this, "ProtoClass", void 0), b(this, "type", void 0), b(this, "logger", void 0), b(this, "beforeSendCallbacks", void 0), b(this, "lastSendTime", void 0), b(this, "persistChanges", void 0), this.ProtoClass = e, this.type = t, this.beforeSendCallbacks = [], this.lastSendTime = 0, this.persistChanges = async () => {
       i()(!__OVERLAY__, "this cannot run in the overlay"), this.logger.log("Persisting proto");
       let {
         editInfo: e

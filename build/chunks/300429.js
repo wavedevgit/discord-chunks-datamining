@@ -61,14 +61,14 @@ function E(e, t) {
   return 0 === t ? c.Z.can(u.Plq.MANAGE_CHANNELS, e) || c.Z.can(u.Plq.MANAGE_MESSAGES, e) : c.Z.can(u.Plq.MANAGE_THREADS, e)
 }
 
-function v(e) {
+function b(e) {
   let {
     channelId: t
   } = e;
   return g(t, 0)
 }
 
-function b(e) {
+function v(e) {
   let {
     file: t
   } = e, n = l.Z.getChannel(t.channelId);
@@ -128,9 +128,9 @@ d(T, "displayName", "SlowmodeStore");
 let N = new T(a.Z, {
   SLOWMODE_RESET_COOLDOWN: y,
   SLOWMODE_SET_COOLDOWN: O,
-  UPLOAD_START: v,
-  UPLOAD_FAIL: b,
-  UPLOAD_CANCEL_REQUEST: b,
+  UPLOAD_START: b,
+  UPLOAD_FAIL: v,
+  UPLOAD_CANCEL_REQUEST: v,
   CHANNEL_UPDATES: I,
   LOGOUT: S
 })

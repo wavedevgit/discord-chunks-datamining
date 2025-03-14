@@ -57,21 +57,21 @@ function g(e) {
     theme: t,
     primaryColor: n,
     secondaryColor: i
-  } = e, [_, g] = (0, s.Wu)([c.Z], () => [c.Z.desaturateUserColors, c.Z.syncProfileThemeWithUserTheme]), E = (0, f.fq)(t), v = (0, f.wu)(t, n, g), b = (0, f.lM)(t, n), y = (0, f.e4)(t, i), O = g ? null == E ? void 0 : E.overlaySyncedWithUserTheme : null == E ? void 0 : E.overlay;
+  } = e, [_, g] = (0, s.Wu)([c.Z], () => [c.Z.desaturateUserColors, c.Z.syncProfileThemeWithUserTheme]), E = (0, f.fq)(t), b = (0, f.wu)(t, n, g), v = (0, f.lM)(t, n), y = (0, f.e4)(t, i), O = g ? null == E ? void 0 : E.overlaySyncedWithUserTheme : null == E ? void 0 : E.overlay;
   return {
     profileThemeStyle: (0, r.useMemo)(() => {
-      if (null == n || null == i || null == E || null == v || null == b || null == y || null == O) return m;
+      if (null == n || null == i || null == E || null == b || null == v || null == y || null == O) return m;
       let e = (e, t) => (0, a.ho)(e, _, null, t);
       return p({
         "--profile-gradient-primary-color": e(n),
         "--profile-gradient-secondary-color": e(i),
         "--profile-gradient-overlay-color": O,
         "--profile-gradient-button-color": e((0, f.ZB)(n)),
-        "--profile-avatar-border-color": e(v),
+        "--profile-avatar-border-color": e(b),
         "--profile-body-background-color": E.sectionBox,
         "--profile-body-background-hover": E.profileBodyBackgroundHover,
-        "--profile-body-divider-color": e(b, E.dividerOpacity),
-        "--profile-body-border-color": e(b, .12),
+        "--profile-body-divider-color": e(v, E.dividerOpacity),
+        "--profile-body-border-color": e(v, .12),
         "--profile-message-input-border-color": e(y),
         "--profile-note-background-color": E.noteBackgroundColor,
         "--profile-role-pill-background-color": E.rolePillBackgroundColor,
@@ -83,7 +83,7 @@ function g(e) {
         isDarkTheme: (0, l.wjy)(t),
         textMixAmount: 25
       }))
-    }, [n, i, E, v, b, y, O, t, _]),
+    }, [n, i, E, b, v, y, O, t, _]),
     profileThemeClassName: o()((0, l.QeD)(t), {
       [d.e3]: null != n,
       [h]: null != n

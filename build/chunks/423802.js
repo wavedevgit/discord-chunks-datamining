@@ -169,7 +169,7 @@ function m(e, t) {
 
 function g(e, t) {
   for (var n = [], r = 0, i = t.length; r < i; r++)
-    for (var o = t[r], a = v(o), s = h(e, o), l = 0, c = s.length; l < c; l++) n.push({
+    for (var o = t[r], a = b(o), s = h(e, o), l = 0, c = s.length; l < c; l++) n.push({
       itemValue: s[l],
       attributes: a
     });
@@ -180,6 +180,6 @@ var E = {
   minRanking: -1 / 0
 };
 
-function v(e) {
+function b(e) {
   return "string" == typeof e ? E : (0, r.Z)({}, E, e)
 }

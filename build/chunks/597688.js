@@ -24,13 +24,13 @@ function h(e, t, n) {
 let m = new Map,
   g = new Map,
   E = new Map,
-  v = new Map,
-  b = [],
+  b = new Map,
+  v = [],
   y = m,
   O = g,
   I = E,
-  S = v,
-  T = b,
+  S = b,
+  T = v,
   N = null,
   A = !1,
   C = new Set,
@@ -64,7 +64,7 @@ let m = new Map,
     let {
       error: t
     } = e;
-    y = m, O = g, T = b, A = !1, C = new Set, r = t, o = Date.now()
+    y = m, O = g, T = v, A = !1, C = new Set, r = t, o = Date.now()
   },
   j = e => {
     if (0 === e.categories.length) y = m, O = g;
@@ -84,7 +84,7 @@ let m = new Map,
   },
   G = (e, t) => {
     if (0 === e.length) {
-      T = b;
+      T = v;
       return
     }
     switch (N) {
@@ -96,13 +96,13 @@ let m = new Map,
         break;
       case d.u.NONE:
       default:
-        T = b
+        T = v
     }
   },
   B = () => {
-    y = m, O = g, T = b, i = void 0, A = !1, C = new Set, r = void 0, o = void 0, w = {}
+    y = m, O = g, T = v, i = void 0, A = !1, C = new Set, r = void 0, o = void 0, w = {}
   },
-  V = () => {
+  F = () => {
     if (!u.Z.hasLoadedExperiments) return;
     let {
       giftRecommendationAlgorithm: e
@@ -113,9 +113,9 @@ let m = new Map,
     });
     e !== N && (i = void 0), N = e
   };
-class F extends(a = l.ZP.Store) {
+class V extends(a = l.ZP.Store) {
   initialize() {
-    this.syncWith([f.default], B), this.syncWith([u.Z], V)
+    this.syncWith([f.default], B), this.syncWith([u.Z], F)
   }
   get isFetchingCategories() {
     return A
@@ -167,8 +167,8 @@ class F extends(a = l.ZP.Store) {
     return this.getCategory(null == t ? void 0 : t.categorySkuId)
   }
 }
-h(F, "displayName", "CollectiblesCategoryStore");
-let Z = new F(c.Z, {
+h(V, "displayName", "CollectiblesCategoryStore");
+let Z = new V(c.Z, {
   COLLECTIBLES_CATEGORIES_FETCH: M,
   COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: j,
   COLLECTIBLES_CATEGORIES_FETCH_FAILURE: k,

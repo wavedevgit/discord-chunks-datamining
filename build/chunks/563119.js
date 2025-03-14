@@ -51,12 +51,12 @@ function E(e, t) {
   return n
 }
 
-function v(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = "game_console_alert_modal",
+let v = "game_console_alert_modal",
   y = "game_console_ptt_alert_modal",
   O = {
     maybeShowPTTAlert(e) {
@@ -70,7 +70,7 @@ let b = "game_console_alert_modal",
         let n = () => {
             (0, l.EW)(i.z.CONSOLE_PTT_DISABLE_ALERT), e()
           },
-          s = e => (0, r.jsx)(a.default, v(g({}, e), {
+          s = e => (0, r.jsx)(a.default, b(g({}, e), {
             title: t,
             body: p.NW.string(p.t.bL21zs),
             onConfirm: n,
@@ -90,7 +90,7 @@ let b = "game_console_alert_modal",
       } = e, c = (0, r.jsx)(d.t, {
         body: n,
         errorCodeMessage: i,
-        dismissCallback: () => (0, o.Mr)(b)
+        dismissCallback: () => (0, o.Mr)(v)
       });
 
       function p() {
@@ -102,13 +102,13 @@ let b = "game_console_alert_modal",
           platform_type: l
         }))
       }
-      let h = e => (0, r.jsx)(a.default, v(g({}, e), {
+      let h = e => (0, r.jsx)(a.default, b(g({}, e), {
         title: t,
         body: c,
         onConfirm: p
       }));
-      (0, o.nf)(b) ? (0, o.o)(b, h) : (0, o.h7)(h, {
-        modalKey: b
+      (0, o.nf)(v) ? (0, o.o)(v, h) : (0, o.h7)(h, {
+        modalKey: v
       })
     }
   }

@@ -32,7 +32,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function v(e) {
   return e
 }
 
-function b(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,7 +57,7 @@ function b(e, t) {
 }
 
 function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -94,7 +94,7 @@ function I(e) {
     text: t,
     children: e => (0, r.jsxs)("div", {
       className: g.themeSelectionContainer,
-      children: [(0, r.jsx)(u.P3F, y(v({}, e, _), {
+      children: [(0, r.jsx)(u.P3F, y(b({}, e, _), {
         tabIndex: null != l ? l : _.tabIndex,
         className: o()(g.themeSelection, {
           [g.selected]: s
@@ -120,7 +120,7 @@ function S(e) {
     theme: t,
     isSelected: n,
     onSelect: i
-  } = e, _ = (0, s.e7)([f.Z], () => f.Z.systemPrefersColorScheme), E = e => (0, c.ap)(e) ? l.Z.unsafe_rawColors.PRIMARY_600.css : l.Z.unsafe_rawColors.WHITE_500.css, v = (0, d.Q3)("DefaultThemeSelection"), b = (0, a.EQ)({
+  } = e, _ = (0, s.e7)([f.Z], () => f.Z.systemPrefersColorScheme), E = e => (0, c.ap)(e) ? l.Z.unsafe_rawColors.PRIMARY_600.css : l.Z.unsafe_rawColors.WHITE_500.css, b = (0, d.Q3)("DefaultThemeSelection"), v = (0, a.EQ)({
     theme: t,
     systemPrefersColorScheme: _
   }).with({
@@ -134,12 +134,12 @@ function S(e) {
     theme: h.BRd.DARKER
   }, () => g.darkerIcon).with({
     theme: h.BRd.MIDNIGHT
-  }, () => g.midnightIcon).otherwise(() => g.darkIcon), y = (0, a.EQ)(t).with(h.BRd.LIGHT, () => m.NW.string(m.t.K2sFfn)).with(h.BRd.DARK, () => v ? m.NW.string(m.t.GEaO9P) : m.NW.string(m.t.b8Cei4)).with(h.BRd.DARKER, () => m.NW.string(m.t.b8Cei4)).with(h.BRd.MIDNIGHT, () => m.NW.string(m.t.pQwSpa)).with("system", () => m.NW.string(m.t["7rOU6u"])).exhaustive(), O = (0, u.bWb)().enabled;
+  }, () => g.midnightIcon).otherwise(() => g.darkIcon), y = (0, a.EQ)(t).with(h.BRd.LIGHT, () => m.NW.string(m.t.K2sFfn)).with(h.BRd.DARK, () => b ? m.NW.string(m.t.GEaO9P) : m.NW.string(m.t.b8Cei4)).with(h.BRd.DARKER, () => m.NW.string(m.t.b8Cei4)).with(h.BRd.MIDNIGHT, () => m.NW.string(m.t.pQwSpa)).with("system", () => m.NW.string(m.t["7rOU6u"])).exhaustive(), O = (0, u.bWb)().enabled;
   return (0, r.jsx)(I, {
     onSelect: i,
     isSelected: n,
     name: y,
-    className: o()(g.defaultThemeSelection, b),
+    className: o()(g.defaultThemeSelection, v),
     children: "system" === t && (0, r.jsx)("div", {
       className: g.iconWrapper,
       children: O ? (0, r.jsx)(u.DuK, {

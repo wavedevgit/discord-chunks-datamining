@@ -14,19 +14,19 @@ var r = n(620014),
   h = Object.prototype.hasOwnProperty;
 
 function m(e, t, n, m, g, E) {
-  var v = l(e),
-    b = l(t),
-    y = v ? _ : s(e),
-    O = b ? _ : s(t);
+  var b = l(e),
+    v = l(t),
+    y = b ? _ : s(e),
+    O = v ? _ : s(t);
   y = y == f ? p : y, O = O == f ? p : O;
   var I = y == p,
     S = O == p,
     T = y == O;
   if (T && c(e)) {
     if (!c(t)) return !1;
-    v = !0, I = !1
+    b = !0, I = !1
   }
-  if (T && !I) return E || (E = new r), v || u(e) ? i(e, t, n, m, g, E) : o(e, t, y, n, m, g, E);
+  if (T && !I) return E || (E = new r), b || u(e) ? i(e, t, n, m, g, E) : o(e, t, y, n, m, g, E);
   if (!(n & d)) {
     var N = I && h.call(e, "__wrapped__"),
       A = S && h.call(t, "__wrapped__");

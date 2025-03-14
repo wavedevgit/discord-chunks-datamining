@@ -68,7 +68,7 @@ async function E(e) {
   }
 }
 
-function v() {
+function b() {
   return Object.values(a.Z.getGuilds()).some(e => e.hasFeature(u.oNc.LEADERBOARD_ENABLED) && (0, c.NM)({
     guildId: e.id,
     location: "LeagueOfLegendsLifecycleManager.handleDependantStoreChanges",
@@ -76,7 +76,7 @@ function v() {
   }))
 }
 
-function b(e) {
+function v(e) {
   s.default.track(u.rMx.LEAGUE_OF_LEGENDS_MATCH_DATA_NOT_FETCHING, {
     reason: e
   })
@@ -86,10 +86,10 @@ class y extends i.Z {
     let {
       removed: t
     } = e;
-    if (v() && m(t)) {
+    if (b() && m(t)) {
       let e = g();
       if ("string" == typeof e) {
-        b(e);
+        v(e);
         return
       }
       E({
@@ -101,7 +101,7 @@ class y extends i.Z {
   handleDependantStoreChanges() {
     let e = g(),
       t = "string" != typeof e,
-      n = v() && t;
+      n = b() && t;
     _.isStarted() && !n ? _.stop() : !_.isStarted() && n && E({
       riotConnectionId: e.riotConnection.id,
       lolConnectionId: e.lolConnection.id,

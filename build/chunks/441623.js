@@ -27,7 +27,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function v(e) {
   }
   return e
 }
-let b = 5,
+let v = 5,
   y = 15,
   O = 7,
   I = 6048e5,
@@ -108,7 +108,7 @@ function L() {
         r = d.Z.getUserAffinity(t),
         i = null != n ? n.affinity : 0;
       return (null != r ? r.affinity : 0) - i
-    }), C = new Set(A.slice(0, b))
+    }), C = new Set(A.slice(0, v))
   }
 }
 
@@ -143,11 +143,11 @@ function B(e) {
   Z(t)
 }
 
-function V() {
+function F() {
   N.friendsTabBadgeLastDismissedTime = Date.now()
 }
 
-function F(e) {
+function V(e) {
   let {
     recipientUserId: t
   } = e;
@@ -208,11 +208,11 @@ function q(e) {
         friendsSince: n
       }
     }
-  }), C = new Set(A.slice(0, b))
+  }), C = new Set(A.slice(0, v))
 }
 class Q extends(r = l.ZP.PersistedStore) {
   initialize(e) {
-    N = T(), null != e && (N.friendsTabBadgeLastDismissedTime = e.friendsTabBadgeLastDismissedTime, N.lastShownFriendsListGiftIntents = Array.from(e.lastShownFriendsListGiftIntents), N.messageGiftIntentLastShownMap = v({}, e.messageGiftIntentLastShownMap)), this.syncWith([_.Z, d.Z, f.Z, u.Z], L), H()
+    N = T(), null != e && (N.friendsTabBadgeLastDismissedTime = e.friendsTabBadgeLastDismissedTime, N.lastShownFriendsListGiftIntents = Array.from(e.lastShownFriendsListGiftIntents), N.messageGiftIntentLastShownMap = b({}, e.messageGiftIntentLastShownMap)), this.syncWith([_.Z, d.Z, f.Z, u.Z], L), H()
   }
   getState() {
     return N
@@ -261,8 +261,8 @@ let X = new Q(c.Z, {
   LOGOUT: U,
   MESSAGE_GIFT_INTENT_SHOWN: B,
   FRIENDS_LIST_GIFT_INTENTS_SHOWN: G,
-  FRIENDS_TAB_BADGE_DISMISS: V,
-  GIFT_INTENT_FLOW_PURCHASED_GIFT: F,
+  FRIENDS_TAB_BADGE_DISMISS: F,
+  GIFT_INTENT_FLOW_PURCHASED_GIFT: V,
   DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: W,
   DEV_TOOLS_GIFT_MESSAGE_COOLDOWN_RESET: Y,
   DEV_TOOLS_FRIENDS_TAB_BADGE_COOLDOWN_RESET: K,

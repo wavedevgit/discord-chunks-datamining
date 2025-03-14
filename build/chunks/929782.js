@@ -32,7 +32,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function v(e) {
   return e
 }
 
-function b(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,7 +57,7 @@ function b(e, t) {
 }
 
 function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -68,14 +68,14 @@ function I() {
     let {
       default: e
     } = await n.e("74023").then(n.bind(n, 431583));
-    return t => (0, r.jsx)(e, v({
+    return t => (0, r.jsx)(e, b({
       source: "Unsupported Browser"
     }, t))
   })
 }
 
 function S() {
-  return !l.Z.isSupported() && ((0, i.h7j)(e => (0, r.jsx)(i.ConfirmModal, y(v({
+  return !l.Z.isSupported() && ((0, i.h7j)(e => (0, r.jsx)(i.ConfirmModal, y(b({
     header: g.NW.string(g.t.ilMTy8),
     confirmText: g.NW.string(g.t.BK8LKy),
     cancelText: g.NW.string(g.t["ETE/oK"]),

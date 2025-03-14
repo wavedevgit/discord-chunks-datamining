@@ -63,13 +63,13 @@ function E(e) {
   h = f({}, h), delete h[e]
 }
 
-function v(e, t) {
+function b(e, t) {
   r.pathLabels = p(f({}, r.pathLabels), {
     [e]: t
   })
 }
 
-function b(e) {
+function v(e) {
   if (null == r.pathLabels[e]) return !1;
   r.pathLabels = f({}, r.pathLabels), delete r.pathLabels[e]
 }
@@ -121,7 +121,7 @@ function T(e) {
   } = e;
   if (!r.installationPaths.has(t) || r.defaultInstallationPath === t) return !1;
   let n = new Set(r.installationPaths);
-  n.delete(t), r.installationPaths = n, E(t), b(t)
+  n.delete(t), r.installationPaths = n, E(t), v(t)
 }
 
 function N(e) {
@@ -131,7 +131,7 @@ function N(e) {
     isDefault: i
   } = e;
   if (!r.installationPaths.has(t)) return !1;
-  null != n && "" !== n && r.pathLabels[t] !== n && v(t, n), i && r.defaultInstallationPath !== t && (r.defaultInstallationPath = t)
+  null != n && "" !== n && r.pathLabels[t] !== n && b(t, n), i && r.defaultInstallationPath !== t && (r.defaultInstallationPath = t)
 }
 
 function A(e) {

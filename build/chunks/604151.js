@@ -41,19 +41,19 @@ function g(e) {
 let E = function(e, t) {
   let m = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     E = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-    v = u.Z.getChannel(e),
-    b = p.Z.getCurrentClientVoiceChannelId(null != t ? t : null) === e,
-    y = null != v ? f.Z.getCheck(v.guild_id) : null;
-  if (!(null != t && (0, o.n)(t)) && (null == y || y.canChat || (0, a.jU)(v))) {
-    if (null != v && !b) {
-      let e = (0, h.rY)(v, p.Z, d.Z);
-      if (e && v.isGuildStageVoice() && (0, s.xJ)(v.id)) {
+    b = u.Z.getChannel(e),
+    v = p.Z.getCurrentClientVoiceChannelId(null != t ? t : null) === e,
+    y = null != b ? f.Z.getCheck(b.guild_id) : null;
+  if (!(null != t && (0, o.n)(t)) && (null == y || y.canChat || (0, a.jU)(b))) {
+    if (null != b && !v) {
+      let e = (0, h.rY)(b, p.Z, d.Z);
+      if (e && b.isGuildStageVoice() && (0, s.xJ)(b.id)) {
         (0, r.ZD)(async () => {
           let {
             default: e
           } = await n.e("46398").then(n.bind(n, 523794));
           return t => e(g({
-            channel: v
+            channel: b
           }, t))
         });
         return

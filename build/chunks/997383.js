@@ -19,8 +19,8 @@ var r = n(392711),
   m = n(483360),
   g = n(892880),
   E = n(591759),
-  v = n(279779),
-  b = n(620490),
+  b = n(279779),
+  v = n(620490),
   y = n(727785),
   O = n(981631);
 
@@ -104,7 +104,7 @@ function D(e, t) {
 }
 class L {
   createSearchContext() {
-    null == this.userSearchContext && (this.userSearchContext = v.Z.getSearchContext(this.parseUserResults, this._limit))
+    null == this.userSearchContext && (this.userSearchContext = b.Z.getSearchContext(this.parseUserResults, this._limit))
   }
   setLimit(e) {
     let {
@@ -281,7 +281,7 @@ class L {
         this._userResults.length > this._limit && (this._userResults.length = this._limit), this.updateAllResults()
       }
     }), I(this, "updateAllResults", () => {
-      clearTimeout(this._asyncTimeout), this.results = i()([...this._userResults, ...this._groupDMResults, ...this._textChannelResults, ...this._voiceChannelResults, ...this._guildResults, ...this._linkResults, ...this._inAppNavigations]).uniqBy(e => "".concat(e.type, "-").concat(e.record.id)).sort(b.Z).value(), this.onResultsChange(this.results, this.query)
+      clearTimeout(this._asyncTimeout), this.results = i()([...this._userResults, ...this._groupDMResults, ...this._textChannelResults, ...this._voiceChannelResults, ...this._guildResults, ...this._linkResults, ...this._inAppNavigations]).uniqBy(e => "".concat(e.type, "-").concat(e.record.id)).sort(v.Z).value(), this.onResultsChange(this.results, this.query)
     }), this.onResultsChange = e, this.setOptions(r, !0), this._limit = n, this.createSearchContext(), this.setResultTypes(t)
   }
 }

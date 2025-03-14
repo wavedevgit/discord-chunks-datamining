@@ -73,7 +73,7 @@ async function m() {
 }
 
 function g(e, t, n) {
-  var i, o, a, s, l, c, u, f, _, p, h, m, g, E, v, b, y, O, I;
+  var i, o, a, s, l, c, u, f, _, p, h, m, g, E, b, v, y, O, I;
 
   function S(e) {
     return (null == n ? void 0 : n.storedInformation) != null && 1 === n.storedInformation[e]
@@ -112,8 +112,8 @@ function g(e, t, n) {
   let A = null == n ? void 0 : n.minidumpInformation;
   return d({
     electron_crash_reporter_did_crash: e,
-    minidump_exception_type: null !== (v = null == A ? void 0 : A.exceptionString) && void 0 !== v ? v : null,
-    minidump_exception_module_name: null !== (b = null == A ? void 0 : A.exceptionModuleName) && void 0 !== b ? b : null,
+    minidump_exception_type: null !== (b = null == A ? void 0 : A.exceptionString) && void 0 !== b ? b : null,
+    minidump_exception_module_name: null !== (v = null == A ? void 0 : A.exceptionModuleName) && void 0 !== v ? v : null,
     minidump_relative_crash_address: null !== (y = null == A ? void 0 : A.relativeCrashAddress) && void 0 !== y ? y : null,
     minidump_exception_module_version: null !== (O = null == A ? void 0 : A.exceptionModuleVersion) && void 0 !== O ? O : null,
     minidump_exception_module_code_id: null !== (I = null == A ? void 0 : A.exceptionModuleCodeId) && void 0 !== I ? I : null

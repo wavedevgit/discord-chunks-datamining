@@ -26,8 +26,8 @@ let h = e => {
     profileEffectClassName: g
   } = e, {
     firstProfileEffect: E,
-    firstAvatarDecoration: v
-  } = (0, u.R)(t), b = (0, l.ZP)(), y = (0, a.ap)(b);
+    firstAvatarDecoration: b
+  } = (0, u.R)(t), v = (0, l.ZP)(), y = (0, a.ap)(v);
   return (0, r.jsxs)("div", {
     className: f.container,
     children: [null != E ? (0, r.jsx)("div", {
@@ -39,10 +39,10 @@ let h = e => {
         forCollectedModal: m,
         removeSetHeight: !0
       })
-    }) : null, null != v ? (0, r.jsx)("div", {
+    }) : null, null != b ? (0, r.jsx)("div", {
       className: f.avatarDecorationPreview,
       children: (0, r.jsx)(d.R, {
-        item: v,
+        item: b,
         user: h,
         avatarSize: s.EFr.SIZE_120,
         isPurchased: n,

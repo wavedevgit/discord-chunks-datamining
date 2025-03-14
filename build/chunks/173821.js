@@ -91,15 +91,15 @@ var _ = function(e) {
         var g = r = t + m * u / 2,
           E = this._tension * (this._toValue - n) - this._friction * r;
         n = e + h * u / 2, r = t + m * u / 2;
-        var v = (f + 2 * (p + m) + E) / 6;
-        e += (d + 2 * (_ + h) + g) / 6 * u, t += v * u
+        var b = (f + 2 * (p + m) + E) / 6;
+        e += (d + 2 * (_ + h) + g) / 6 * u, t += b * u
       }
       if (this._lastTime = o, this._lastPosition = e, this._lastVelocity = t, this._onUpdate(e), this.__active) {
-        var b = !1;
-        this._overshootClamping && 0 !== this._tension && (b = this._startPosition < this._toValue ? e > this._toValue : e < this._toValue);
+        var v = !1;
+        this._overshootClamping && 0 !== this._tension && (v = this._startPosition < this._toValue ? e > this._toValue : e < this._toValue);
         var y = Math.abs(t) <= this._restSpeedThreshold,
           O = !0;
-        if (0 !== this._tension && (O = Math.abs(this._toValue - e) <= this._restDisplacementThreshold), b || y && O) {
+        if (0 !== this._tension && (O = Math.abs(this._toValue - e) <= this._restDisplacementThreshold), v || y && O) {
           0 !== this._tension && this._onUpdate(this._toValue), this.__debouncedOnEnd({
             finished: !0
           });

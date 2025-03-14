@@ -17,8 +17,8 @@ var n = "function" == typeof Symbol && Symbol.for,
   m = n ? Symbol.for("react.lazy") : 60116,
   g = n ? Symbol.for("react.block") : 60121,
   E = n ? Symbol.for("react.fundamental") : 60117,
-  v = n ? Symbol.for("react.responder") : 60118,
-  b = n ? Symbol.for("react.scope") : 60119;
+  b = n ? Symbol.for("react.responder") : 60118,
+  v = n ? Symbol.for("react.scope") : 60119;
 
 function y(e) {
   if ("object" == typeof e && null !== e) {
@@ -79,5 +79,5 @@ t.AsyncMode = u, t.ConcurrentMode = d, t.ContextConsumer = c, t.ContextProvider 
 }, t.isSuspense = function(e) {
   return y(e) === _
 }, t.isValidElementType = function(e) {
-  return "string" == typeof e || "function" == typeof e || e === o || e === d || e === s || e === a || e === _ || e === p || "object" == typeof e && null !== e && (e.$$typeof === m || e.$$typeof === h || e.$$typeof === l || e.$$typeof === c || e.$$typeof === f || e.$$typeof === E || e.$$typeof === v || e.$$typeof === b || e.$$typeof === g)
+  return "string" == typeof e || "function" == typeof e || e === o || e === d || e === s || e === a || e === _ || e === p || "object" == typeof e && null !== e && (e.$$typeof === m || e.$$typeof === h || e.$$typeof === l || e.$$typeof === c || e.$$typeof === f || e.$$typeof === E || e.$$typeof === b || e.$$typeof === v || e.$$typeof === g)
 }, t.typeOf = y

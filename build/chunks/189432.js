@@ -56,19 +56,19 @@ function g(e, t) {
 
 function E(e, t, n) {
   var p, m, E;
-  let v = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {
+  let b = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {
     modViewPanel: f.k.INFO
   };
   if (!(0, d.Y)(e)) return Promise.resolve();
-  let b = null !== (p = v.modViewPanel) && void 0 !== p ? p : f.k.INFO,
-    y = null !== (m = v.sourceLocation) && void 0 !== m ? m : r.Z.MEMBER_SAFETY_PAGE,
+  let v = null !== (p = b.modViewPanel) && void 0 !== p ? p : f.k.INFO,
+    y = null !== (m = b.sourceLocation) && void 0 !== m ? m : r.Z.MEMBER_SAFETY_PAGE,
     O = c.Z.getCurrentlySelectedChannelId(),
     I = null != O ? s.Z.getChannel(O) : null;
   if (null == I || I.getGuildId() !== e) {
     let t = l.ZP.getDefaultChannel(e);
     null == t || t.isNSFW() || (0, i.uL)(_.Z5c.CHANNEL(e, t.id))
   }
-  return (0, u.q)(e, t, b, y), o.Z.openGuildSidebar({
+  return (0, u.q)(e, t, v, y), o.Z.openGuildSidebar({
     guildId: e,
     baseChannelId: n,
     sidebarType: a.jL.GUILD_MEMBER_MOD_VIEW,
@@ -76,8 +76,8 @@ function E(e, t, n) {
       type: a.Ff.GUILD_MEMBER_MOD_VIEW,
       userId: t,
       guildId: e
-    }, v), {
-      modViewPanel: null !== (E = v.modViewPanel) && void 0 !== E ? E : f.k.INFO
+    }, b), {
+      modViewPanel: null !== (E = b.modViewPanel) && void 0 !== E ? E : f.k.INFO
     })
   })
 }

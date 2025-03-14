@@ -63,12 +63,12 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = Object.keys(u.jn),
-  b = new Set([p.rMx.QUEST_CONTENT_VIEWED, p.rMx.QUEST_CONTENT_CLICKED]);
+let b = Object.keys(u.jn),
+  v = new Set([p.rMx.QUEST_CONTENT_VIEWED, p.rMx.QUEST_CONTENT_CLICKED]);
 
 function y(e) {
   var t;
-  return null !== (t = v.find(t => u.jn[t] === e)) && void 0 !== t ? t : ""
+  return null !== (t = b.find(t => u.jn[t] === e)) && void 0 !== t ? t : ""
 }
 
 function O(e) {
@@ -107,7 +107,7 @@ function T(e) {
     }) && a.Z.getLayers().includes(p.S9g.USER_SETTINGS)) return;
   let f = m({}, I(u), r);
   if (o.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", n, f), u.preview) return;
-  let h = b.has(n);
+  let h = v.has(n);
   if (l) return i.ZP.trackWithMetadata(n, f, h);
   s.default.track(n, f, {
     flush: h

@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, o, a, s, l, c, u, d, f, _, p, h, m, g, E, v;
+let r, i, o, a, s, l, c, u, d, f, _, p, h, m, g, E, b;
 n.d(t, {
   Z: () => es
 });
-var b, y = n(979554),
+var v, y = n(979554),
   O = n(442837),
   I = n(570140),
   S = n(981631);
@@ -101,14 +101,14 @@ function B(e) {
   c = t
 }
 
-function V(e) {
+function F(e) {
   let {
     bio: t
   } = e;
   u = t
 }
 
-function F(e) {
+function V(e) {
   let {
     pronouns: t
   } = e;
@@ -168,7 +168,7 @@ function Q(e) {
   let {
     banner: t
   } = e;
-  v = t
+  b = t
 }
 
 function X(e) {
@@ -179,7 +179,7 @@ function X(e) {
       avatarDecoration: r
     }
   } = e;
-  p = t, v = n, g = r
+  p = t, b = n, g = r
 }
 
 function J() {
@@ -203,7 +203,7 @@ function en() {
 }
 
 function er() {
-  h = void 0, m = void 0, g = void 0, E = void 0, v = void 0, p = void 0
+  h = void 0, m = void 0, g = void 0, E = void 0, b = void 0, p = void 0
 }
 
 function ei() {
@@ -213,7 +213,7 @@ function ei() {
 function eo() {
   ee(), er(), R()
 }
-class ea extends(b = O.ZP.Store) {
+class ea extends(v = O.ZP.Store) {
   getFormState() {
     return N
   }
@@ -290,7 +290,7 @@ class ea extends(b = O.ZP.Store) {
     return E
   }
   getTryItOutBanner() {
-    return v
+    return b
   }
   getAllTryItOut() {
     return {
@@ -299,7 +299,7 @@ class ea extends(b = O.ZP.Store) {
       tryItOutAvatarV2: m,
       tryItOutAvatarDecoration: g,
       tryItOutProfileEffectId: E,
-      tryItOutBanner: v
+      tryItOutBanner: b
     }
   }
 }
@@ -321,8 +321,8 @@ let es = new ea(I.Z, {
   USER_SETTINGS_ACCOUNT_SET_SINGLE_TRY_IT_OUT_COLLECTIBLES_ITEM: G,
   USER_SETTINGS_ACCOUNT_SET_PENDING_PROFILE_EFFECT_ID: U,
   USER_SETTINGS_ACCOUNT_SET_PENDING_BANNER: B,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_BIO: V,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_PRONOUNS: F,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_BIO: F,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_PRONOUNS: V,
   USER_SETTINGS_ACCOUNT_SET_PENDING_ACCENT_COLOR: Z,
   USER_SETTINGS_ACCOUNT_SET_PENDING_THEME_COLORS: H,
   USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR: Y,

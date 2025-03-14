@@ -26,16 +26,16 @@ function p(e) {
     nicknameIcons: m,
     pronouns: g,
     className: E,
-    isTryItOut: v,
-    onOpenProfile: b,
+    isTryItOut: b,
+    onOpenProfile: v,
     nicknameVariant: y = "heading-lg/bold",
     pronounsVariant: O = "text-sm/medium"
   } = e, I = {
     [_.biteSize]: n === d.y0.BITE_SIZE,
     [_.fullSize]: n === d.y0.FULL_SIZE,
     [_.panel]: n === d.y0.PANEL
-  }, S = e => null == b ? e : (0, r.jsx)(a.P3F, {
-    onClick: b,
+  }, S = e => null == v ? e : (0, r.jsx)(a.P3F, {
+    onClick: v,
     className: _.clickableUsername,
     children: e
   }), T = null != g && g.length > 0, N = (0, l.D)(t);
@@ -65,7 +65,7 @@ function p(e) {
         user: t,
         usernameIcon: i,
         forceUsername: !0,
-        forcePomelo: v,
+        forcePomelo: b,
         className: _.userTag,
         usernameClass: _.userTagUsername,
         discriminatorClass: _.userTagDiscriminator,

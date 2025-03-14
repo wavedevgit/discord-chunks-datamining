@@ -1,4 +1,4 @@
-/** Chunk was on 54082 **/
+/** Chunk was on 78114 **/
 e.exports = {
   emojiWrapper: "emojiWrapper__21d2d",
   emoji: "emoji__21d2d",

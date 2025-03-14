@@ -56,11 +56,11 @@ function E(e) {
   })
 }
 
-function v() {
+function b() {
   h = !0
 }
 
-function b() {
+function v() {
   h = p
 }
 class y extends(r = i.ZP.Store) {
@@ -86,6 +86,6 @@ let O = new y(o.Z, {
   IMPERSONATE_UPDATE: g,
   IMPERSONATE_STOP: g,
   VOICE_STATE_UPDATES: E,
-  AUDIO_TOGGLE_SELF_MUTE: b,
-  PERMISSION_CLEAR_VAD_WARNING: v
+  AUDIO_TOGGLE_SELF_MUTE: v,
+  PERMISSION_CLEAR_VAD_WARNING: b
 })

@@ -28,7 +28,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function v(e) {
   return e
 }
 
-function b(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,7 +53,7 @@ function b(e, t) {
 }
 
 function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -67,11 +67,11 @@ function O(e) {
       isRefreshChatInputEnabled: d,
       isRefreshEnabled: f
     } = e,
-    [E, b] = i.useState(!1);
+    [E, v] = i.useState(!1);
   if (i.useEffect(() => {
       function e() {
-        b(!0), setTimeout(() => {
-          b(!1)
+        v(!0), setTimeout(() => {
+          v(!1)
         }, 1e3)
       }
       return _.S.subscribe(h.CkL.EMPHASIZE_SLOWMODE_COOLDOWN, e), () => {
@@ -92,7 +92,7 @@ function O(e) {
   } else t = s ? d ? m.NW.string(m.t["8+NidX"]) : m.NW.string(m.t.SSzXvb) : d ? "" : m.NW.string(m.t.Icu3bW);
   return (0, r.jsx)(l.ua7, {
     text: O,
-    children: e => (0, r.jsx)("div", y(v({
+    children: e => (0, r.jsx)("div", y(b({
       className: g.cooldownWrapper
     }, e), {
       children: (0, r.jsxs)(l.Text, {

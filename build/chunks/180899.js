@@ -1,39 +1,39 @@
-/** Chunk was on 98806 **/
+/** Chunk was on 44584 **/
 n.d(t, {
   Z: () => c
 }), n(47120);
 var r = n(192379),
-  a = n(512722),
-  i = n.n(a),
-  l = n(157925),
-  o = n(765305);
+  i = n(512722),
+  l = n.n(i),
+  o = n(157925),
+  a = n(765305);
 
 function c(e) {
   let {
     stageInstance: t,
     defaultStep: n,
-    error: a,
+    error: i,
     onSave: c
-  } = e, [s, d] = r.useState(n), [u, _] = r.useState(), [m, b] = r.useState(null);
+  } = e, [s, d] = r.useState(n), [u, h] = r.useState(), [g, _] = r.useState(null);
   return r.useEffect(() => {
-    null != a && d(l.lv.STAGE_CHANNEL_SETTINGS)
-  }, [a]), {
+    null != i && d(o.lv.STAGE_CHANNEL_SETTINGS)
+  }, [i]), {
     modalStep: s,
     setModalStep: d,
-    readySlide: m,
+    readySlide: g,
     handleSlideReady: function(e) {
-      return b(e)
+      return _(e)
     },
     savedOptions: u,
     handleSettingsSave: function(e) {
-      if (_(e), e.privacyLevel === o.j8.PUBLIC && (null == t ? void 0 : t.privacy_level) !== o.j8.PUBLIC) {
-        d(l.lv.PUBLIC_STAGE_PREVIEW);
+      if (h(e), e.privacyLevel === a.j8.PUBLIC && (null == t ? void 0 : t.privacy_level) !== a.j8.PUBLIC) {
+        d(o.lv.PUBLIC_STAGE_PREVIEW);
         return
       }
       c(e)
     },
     handleDelayedSave: function() {
-      i()(null != u, "Must have some saved options."), c(u)
+      l()(null != u, "Must have some saved options."), c(u)
     }
   }
 }

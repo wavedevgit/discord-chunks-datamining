@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(652853),
   g = n(228168),
   E = n(981631),
-  v = n(388032),
-  b = n(937349),
+  b = n(388032),
+  v = n(937349),
   y = n(425637),
   O = n(685741);
 let I = 200,
@@ -56,21 +56,21 @@ function N(e) {
     dismissibleContentType: B
   } = C ? {
     asset: O,
-    assetClassName: b.profileImage,
-    className: b.profileCoachmark,
-    content: v.NW.string(v.t.HEGlIC),
-    header: v.NW.string(v.t["R/RaKy"]),
+    assetClassName: v.profileImage,
+    className: v.profileCoachmark,
+    content: b.NW.string(b.t.HEGlIC),
+    header: b.NW.string(b.t["R/RaKy"]),
     spacing: T,
     dismissibleContentType: s.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ALL
   } : {
     asset: y,
     assetClassName: void 0,
-    className: b.activityCoachmark,
-    content: v.NW.string(v.t.LQ32TU),
-    header: v.NW.string(v.t.XDBiPT),
+    className: v.activityCoachmark,
+    content: b.NW.string(b.t.LQ32TU),
+    header: b.NW.string(b.t.XDBiPT),
     spacing: S,
     dismissibleContentType: s.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ACTIVITY
-  }, V = (0, u.N)(s.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), F = D && !V ? [B] : [], [Z, H] = (0, d.US)(F);
+  }, F = (0, u.N)(s.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), V = D && !F ? [B] : [], [Z, H] = (0, d.US)(V);
   return (0, r.jsx)(l.yRy, {
     align: "center",
     position: t === g.n_.AVATAR ? "left" : "right",
@@ -91,7 +91,7 @@ function N(e) {
             src: x,
             className: M
           }),
-          buttonCTA: v.NW.string(v.t["+IrDzM"]),
+          buttonCTA: b.NW.string(b.t["+IrDzM"]),
           buttonLayout: f._F.STACKED,
           buttonProps: {
             color: l.Ttl.BRAND_INVERTED,
@@ -104,7 +104,7 @@ function N(e) {
             children: j
           }),
           header: U,
-          headerClassName: b.tooltipHeader,
+          headerClassName: v.tooltipHeader,
           markAsDismissed: H,
           onClick: n
         })

@@ -27,7 +27,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function v(e) {
   return e
 }
 
-function b(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,7 +52,7 @@ function b(e, t) {
 }
 
 function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -189,12 +189,12 @@ function B(e) {
   return null != t.guild_id && null != t.parent_id && (t.guild_id in O && t.parent_id in O[t.guild_id] && (delete O[t.guild_id][t.parent_id], n = !0), t.guild_id in I && t.parent_id in I[t.guild_id] && (delete I[t.guild_id][t.parent_id], n = !0), t.guild_id in N && t.parent_id in N[t.guild_id] && (_.default.keys(N[t.guild_id][t.parent_id]).forEach(J), delete N[t.guild_id][t.parent_id], n = !0), t.guild_id in S && t.parent_id in S[t.guild_id] && (delete S[t.guild_id][t.parent_id], n = !0), t.guild_id in T && t.parent_id in T[t.guild_id] && (delete T[t.guild_id][t.parent_id], n = !0), n && M(t.guild_id, t.parent_id)), n
 }
 
-function V(e) {
+function F(e) {
   let t = c.Z.getChannel(e.id);
   return !!(null != t && p.Z.isActive(e.guildId, t.parent_id, e.id)) && k(t.guild_id, t.parent_id, t.id)
 }
 
-function F(e) {
+function V(e) {
   let t = c.Z.getChannel(e.channelId);
   if (null == t) Z();
   else {
@@ -270,7 +270,7 @@ function Y(e) {
 }
 
 function K(e) {
-  F(e), z()
+  V(e), z()
 }
 
 function z() {
@@ -316,14 +316,14 @@ function $(e, t, n, r) {
     parent_id: a,
     id: s
   } = t;
-  null != i && null != a && null != s && (i in e || (e[i] = {}), a in e[i] || (e[i][a] = {}), r && (e[i] = y(v({}, e[i]), {
-    [a]: v({}, e[i][a])
+  null != i && null != a && null != s && (i in e || (e[i] = {}), a in e[i] || (e[i][a] = {}), r && (e[i] = y(b({}, e[i]), {
+    [a]: b({}, e[i][a])
   })), null === n ? (delete e[i][a][s], o().isEmpty(e[i][a]) && delete e[i][a]) : e[i][a][s] = n)
 }
 
 function ee(e, t, n, r) {
-  null != t && null != n && null != r && en(e, t, n, r) && (e[t] = y(v({}, e[t]), {
-    [n]: v({}, e[t][n])
+  null != t && null != n && null != r && en(e, t, n, r) && (e[t] = y(b({}, e[t]), {
+    [n]: b({}, e[t][n])
   }), delete e[t][n][r], o().isEmpty(e[t][n]) && delete e[t][n])
 }
 
@@ -424,15 +424,15 @@ let ec = new el(s.Z, {
   THREAD_DELETE: j,
   CHANNEL_UPDATES: U,
   CHANNEL_DELETE: B,
-  THREAD_MEMBER_UPDATE: V,
-  THREAD_MEMBERS_UPDATE: V,
-  LOAD_MESSAGES_SUCCESS: F,
-  MESSAGE_CREATE: F,
-  MESSAGE_DELETE: F,
-  MESSAGE_DELETE_BULK: F,
-  MESSAGE_ACK: F,
-  CHANNEL_ACK: F,
-  CHANNEL_LOCAL_ACK: F,
+  THREAD_MEMBER_UPDATE: F,
+  THREAD_MEMBERS_UPDATE: F,
+  LOAD_MESSAGES_SUCCESS: V,
+  MESSAGE_CREATE: V,
+  MESSAGE_DELETE: V,
+  MESSAGE_DELETE_BULK: V,
+  MESSAGE_ACK: V,
+  CHANNEL_ACK: V,
+  CHANNEL_LOCAL_ACK: V,
   CHANNEL_SELECT: K,
   PASSIVE_UPDATE_V2: H,
   WINDOW_FOCUS: Z,

@@ -59,10 +59,10 @@ function E(e) {
   let {
     affinities: n
   } = e;
-  _.userAffinities = null !== (t = n.user_affinities) && void 0 !== t ? t : [], _.lastFetched = Date.now(), v(), u = !1
+  _.userAffinities = null !== (t = n.user_affinities) && void 0 !== t ? t : [], _.lastFetched = Date.now(), b(), u = !1
 }
 
-function v() {
+function b() {
   let e = new Map(_.userAffinities.filter(e => {
       let {
         user_id: t
@@ -75,9 +75,9 @@ function v() {
     affinityUserIds: t
   }
 }
-class b extends(r = i.ZP.PersistedStore) {
+class v extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(a.Z), null != e && (_.userAffinities = e.userAffinities, _.lastFetched = e.lastFetched, v()), this.syncWith([a.Z], v)
+    this.waitFor(a.Z), null != e && (_.userAffinities = e.userAffinities, _.lastFetched = e.lastFetched, b()), this.syncWith([a.Z], b)
   }
   needsRefresh() {
     return !u && Date.now() - _.lastFetched > c
@@ -101,8 +101,8 @@ class b extends(r = i.ZP.PersistedStore) {
     return p.affinityUserIds
   }
 }
-s(b, "displayName", "UserAffinitiesStore"), s(b, "persistKey", "UserAffinitiesStore"), s(b, "migrations", [e => null]);
-let y = new b(o.Z, {
+s(v, "displayName", "UserAffinitiesStore"), s(v, "persistKey", "UserAffinitiesStore"), s(v, "migrations", [e => null]);
+let y = new v(o.Z, {
   LOAD_USER_AFFINITIES_SUCCESS: E,
   LOAD_USER_AFFINITIES: g,
   LOAD_USER_AFFINITIES_FAILURE: m,

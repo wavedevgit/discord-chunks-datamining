@@ -16,8 +16,8 @@ var r = n(161581),
   m = n(339399),
   g = n(144748),
   E = n(276321),
-  v = n(537443).f,
-  b = n(692994),
+  b = n(537443).f,
+  v = n(692994),
   y = n(175440),
   O = n(865312),
   I = n(644659),
@@ -38,8 +38,8 @@ var r = n(161581),
   U = j && j[C],
   G = Object.prototype,
   B = r.Array,
-  V = r.RangeError,
-  F = i(b),
+  F = r.RangeError,
+  V = i(v),
   Z = i([].reverse),
   H = m.pack,
   W = m.unpack,
@@ -73,7 +73,7 @@ var r = n(161581),
     var i = D(e),
       o = h(n),
       a = !!r;
-    if (o + t > i.byteLength) throw V(P);
+    if (o + t > i.byteLength) throw F(P);
     var s = i.bytes,
       l = o + i.byteOffset,
       c = y(s, l, l + t);
@@ -84,7 +84,7 @@ var r = n(161581),
       s = h(n),
       l = r(+i),
       c = !!o;
-    if (s + t > a.byteLength) throw V(P);
+    if (s + t > a.byteLength) throw F(P);
     for (var u = a.bytes, d = s + a.byteOffset, f = 0; f < t; f++) u[d + f] = l[c ? f : t - f - 1]
   };
 if (a) {
@@ -99,7 +99,7 @@ if (a) {
     (M = function(e) {
       return f(this, k), new x(h(e))
     })[C] = k;
-    for (var en, er = v(x), ei = 0; er.length > ei;)(en = er[ei++]) in M || l(M, en, x[en]);
+    for (var en, er = b(x), ei = 0; er.length > ei;)(en = er[ei++]) in M || l(M, en, x[en]);
     k.constructor = M
   } else et && T && l(x, "name", N);
   E && g(U) !== G && E(U, G);
@@ -120,7 +120,7 @@ if (a) {
   var t = h(e);
   L(this, {
     type: N,
-    bytes: F(B(t), 0),
+    bytes: V(B(t), 0),
     byteLength: t
   }), o || (this.byteLength = t, this.detached = !1)
 })[C], U = (j = function(e, t, n) {
@@ -128,8 +128,8 @@ if (a) {
   var r = w(e),
     i = r.byteLength,
     a = _(t);
-  if (a < 0 || a > i) throw V("Wrong offset");
-  if (n = void 0 === n ? i - a : p(n), a + n > i) throw V(R);
+  if (a < 0 || a > i) throw F("Wrong offset");
+  if (n = void 0 === n ? i - a : p(n), a + n > i) throw F(R);
   L(this, {
     type: A,
     buffer: e,

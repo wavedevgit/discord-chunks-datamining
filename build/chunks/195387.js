@@ -25,18 +25,18 @@ function g(e) {
     guildId: n,
     channelId: g,
     onClose: E,
-    appContext: v,
-    shouldShowTooltip: b
+    appContext: b,
+    shouldShowTooltip: v
   } = e, {
     newestAnalyticsLocation: y
   } = (0, s.ZP)(), O = (0, i.e7)([d.default], () => d.default.getId() === (null == t ? void 0 : t.id)), I = (0, c.m)(null != n ? n : null), S = (0, i.e7)([f.Z], () => null != g ? g : f.Z.getChannelId(n, !0), [g, n]);
   return null == n || !I || O ? null : (0, r.jsx)(_.oY, {
     action: "PRESS_MOD_VIEW",
     icon: o.HI3,
-    shouldShowTooltip: b,
+    shouldShowTooltip: v,
     tooltipText: m.NW.string(m.t.kj3tz8),
     onClick: () => {
-      u.Z.close(), (0, a.i)(v), (0, l.r)(n, t.id, null != S ? S : p.oC.MEMBER_SAFETY, {
+      u.Z.close(), (0, a.i)(b), (0, l.r)(n, t.id, null != S ? S : p.oC.MEMBER_SAFETY, {
         modViewPanel: h.k.INFO,
         sourceLocation: y
       }), null == E || E()

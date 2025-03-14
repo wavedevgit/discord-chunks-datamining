@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(184301),
   g = n(347475),
   E = n(592125),
-  v = n(271383),
-  b = n(430824),
+  b = n(271383),
+  v = n(430824),
   y = n(699516),
   O = n(594174),
   I = n(5192),
@@ -116,13 +116,13 @@ function w(e) {
         guildId: M
       }))
     })
-  }, j = S.ZP.useName(L), U = (0, l.e7)([E.Z, v.ZP, y.Z], () => I.ZP.getNickname(M, o, L)), G = b.Z.getGuild(M), B = (0, _.Ib)(G, x) && i === T.fL ? T.jM : null;
+  }, j = S.ZP.useName(L), U = (0, l.e7)([E.Z, b.ZP, y.Z], () => I.ZP.getNickname(M, o, L)), G = v.Z.getGuild(M), B = (0, _.Ib)(G, x) && i === T.fL ? T.jM : null;
   if (null == L) return (0, r.jsx)(P, {
     userId: p,
     className: t,
     children: N
   });
-  let V = e => (0, r.jsx)(h.Z, R(A({
+  let F = e => (0, r.jsx)(h.Z, R(A({
     className: t,
     onContextMenu: k,
     color: B
@@ -131,7 +131,7 @@ function w(e) {
   }));
   return C ? (0, r.jsx)(f.Gt, {
     value: D,
-    children: V()
+    children: F()
   }) : (0, r.jsx)(f.Gt, {
     value: D,
     children: (0, r.jsx)(c.yRy, {
@@ -145,7 +145,7 @@ function w(e) {
         channelId: o
       }, e))),
       position: s.tq ? "top" : "right",
-      children: e => V(e)
+      children: e => F(e)
     })
   })
 }

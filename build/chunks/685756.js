@@ -56,8 +56,8 @@ let m = 3,
   g = 8;
 
 function E() {}
-let v = 20 * c.Z.Millis.SECOND,
-  b = 3,
+let b = 20 * c.Z.Millis.SECOND,
+  v = 3,
   y = +c.Z.Millis.MINUTE,
   O = .25,
   I = .1,
@@ -125,7 +125,7 @@ class D extends a.Z {
     this.logger.info("[CONNECT] ".concat(this.url)), null !== this.webSocket && (this.logger.error("Connect called with already existing websocket"), this.cleanupWebSocket(e => e.close(4e3))), this.connectionStartTime = Date.now(), this.helloTimeout = setTimeout(() => {
       let e = Date.now() - this.connectionStartTime;
       this.handleClose(!1, 0, "The connection timed out after ".concat(e, " ms - did not receive OP_HELLO in time."))
-    }, v);
+    }, b);
     let e = this.webSocket = new WebSocket("".concat(this.url, "?v=").concat(g));
     e.binaryType = "arraybuffer", e.onopen = () => {
       1 === this.connectionState ? this.emit("connect") : 5 === this.connectionState && this.doResumeOrClose(), this.connectionState = 4;
@@ -287,7 +287,7 @@ class D extends a.Z {
   }
   handleClose(e, t, n) {
     if (this.connectionState = 0, e = e || !1, this.cleanupWebSocket(), 4004 === t || 4015 === t || 4011 === t || 4006 === t) return this.disconnect(e, t, n);
-    if (this.backoff.fails > b) this.logger.warn("[WS CLOSED] Backoff exceed. Resetting."), this.disconnect(e, t, n);
+    if (this.backoff.fails > v) this.logger.warn("[WS CLOSED] Backoff exceed. Resetting."), this.disconnect(e, t, n);
     else {
       let r = this.backoff.fail(() => this.reconnect(e, t, n));
       this.logger.warn("[WS CLOSED] (clean: ".concat(e.toString(), ", code: ").concat(t, ", reason: ").concat(n, ") retrying in ").concat((r / 1e3).toFixed(2), " seconds."))

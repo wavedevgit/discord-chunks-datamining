@@ -4,7 +4,7 @@ n.d(t, {
   $0: () => P,
   AN: () => j,
   Ct: () => A,
-  EQ: () => V,
+  EQ: () => F,
   Ej: () => S,
   ME: () => m,
   O1: () => O,
@@ -19,10 +19,10 @@ n.d(t, {
   do: () => U,
   g7: () => w,
   g_: () => p,
-  hs: () => v,
+  hs: () => b,
   j4: () => R,
   ks: () => Z,
-  lX: () => b,
+  lX: () => v,
   m_: () => h,
   qH: () => L,
   tj: () => E,
@@ -50,7 +50,7 @@ function f(e, t) {
   try {
     let n = d[t.premiumType];
     if (null == n) return u.warn("Cannot find the corresponding SKU to the user's premium type ".concat(t.premiumType)), !1;
-    let r = F[n];
+    let r = V[n];
     if (null == r) return u.warn("Cannot find the corresponding product catalog entry to the user's SKU ".concat(n, " and premium type ").concat(t.premiumType)), !1;
     return r.skuFeatures.includes(e)
   } catch (e) {
@@ -69,8 +69,8 @@ let p = new _(r.q.ANIMATED_EMOJIS),
   m = new _(r.q.STICKERS_EVERYWHERE),
   g = new _(r.q.SOUNDBOARD_EVERYWHERE),
   E = new _(r.q.CUSTOM_CALL_SOUNDS),
-  v = new _(r.q.PREMIUM_VOICE_FILTERS),
-  b = new _(r.q.ANIMATED_AVATAR),
+  b = new _(r.q.PREMIUM_VOICE_FILTERS),
+  v = new _(r.q.ANIMATED_AVATAR),
   y = new _(r.q.CUSTOM_DISCRIMINATOR),
   O = new _(r.q.PREMIUM_GUILD_MEMBER_PROFILE),
   I = new _("profileBadges"),
@@ -92,11 +92,11 @@ new a.Z(r.q.INCREASED_FILE_UPLOAD_SIZE, o.h);
 let U = new _(r.q.INCREASED_GUILD_LIMIT),
   G = new _(r.q.INCREASED_MESSAGE_LENGTH),
   B = new _("increasedVideoUploadQuality"),
-  V = new _("uploadLargeFiles"),
-  F = Object.freeze({
-    [c.Si.TIER_0]: new l.Z(c.Si.TIER_0, [p, h, m, I, j, B, V, A]),
-    [c.Si.TIER_1]: new l.Z(c.Si.TIER_1, [p, h, b, y, I, R, w, x, B, V, A]),
-    [c.Si.TIER_2]: new l.Z(c.Si.TIER_2, [p, h, m, g, E, b, y, O, I, S, C, R, P, w, D, x, M, k, j, U, G, B, V, A, T, L, v, N])
+  F = new _("uploadLargeFiles"),
+  V = Object.freeze({
+    [c.Si.TIER_0]: new l.Z(c.Si.TIER_0, [p, h, m, I, j, B, F, A]),
+    [c.Si.TIER_1]: new l.Z(c.Si.TIER_1, [p, h, v, y, I, R, w, x, B, F, A]),
+    [c.Si.TIER_2]: new l.Z(c.Si.TIER_2, [p, h, m, g, E, v, y, O, I, S, C, R, P, w, D, x, M, k, j, U, G, B, F, A, T, L, b, N])
   });
 
 function Z(e, t) {

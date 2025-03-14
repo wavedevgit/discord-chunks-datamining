@@ -1,4 +1,4 @@
-/** Chunk was on 69423 **/
+/** Chunk was on 98697 **/
 n.d(t, {
   Z: () => I
 }), n(653041), n(47120);
@@ -16,11 +16,11 @@ var i = n(120356),
   p = n(246364),
   E = n(983736),
   f = n(937111),
-  m = n(981631),
-  h = n(176505),
+  h = n(981631),
+  m = n(176505),
   b = n(388032),
-  g = n(276332),
-  O = n(361275);
+  O = n(276332),
+  g = n(361275);
 
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -44,15 +44,15 @@ let I = () => {
   var e, t;
   let i = (0, a.e7)([u.Z], () => u.Z.getGuildId(), []),
     I = (0, a.e7)([c.Z], () => c.Z.getGuild(i), [i]),
-    C = (0, a.e7)([f.Z], () => null != i ? f.Z.getRequest(i) : null, [i]),
-    T = (0, l.TH)(),
-    S = (null === (e = (0, l.LX)(T.pathname, m.Z5c.CHANNEL(null == I ? void 0 : I.id, h.oC.GUILD_ONBOARDING))) || void 0 === e ? void 0 : e.isExact) === !0;
+    T = (0, a.e7)([f.Z], () => null != i ? f.Z.getRequest(i) : null, [i]),
+    C = (0, l.TH)(),
+    S = (null === (e = (0, l.LX)(C.pathname, h.Z5c.CHANNEL(null == I ? void 0 : I.id, m.oC.GUILD_ONBOARDING))) || void 0 === e ? void 0 : e.isExact) === !0;
   if (null == I || !(0, E.Dc)(I) || S) return null;
-  let y = null !== (t = null == C ? void 0 : C.applicationStatus) && void 0 !== t ? t : p.wB.STARTED,
+  let y = null !== (t = null == T ? void 0 : T.applicationStatus) && void 0 !== t ? t : p.wB.STARTED,
     v = null,
     P = null,
     R = null,
-    A = [g.notice, O.notice];
+    A = [O.notice, g.notice];
   switch (y) {
     case p.wB.SUBMITTED:
       v = b.NW.string(b.t["5iLvS0"]), P = b.NW.string(b.t.mqtdmZ), R = () => {
@@ -92,7 +92,7 @@ let I = () => {
             guildId: I.id
           }, t))
         })
-      }, A.push(g.error);
+      }, A.push(O.error);
       break;
     default:
       v = b.NW.string(b.t.G5YKXF), P = b.NW.string(b.t["r8/DT0"]), R = () => {
@@ -102,11 +102,11 @@ let I = () => {
   return (0, r.jsxs)("div", {
     className: o()(...A),
     children: [(0, r.jsx)(s.Text, {
-      className: g.header,
+      className: O.header,
       variant: "text-sm/normal",
       children: v
     }), (0, r.jsx)(s.zxk, {
-      className: g.button,
+      className: O.button,
       look: s.zxk.Looks.OUTLINED,
       color: s.zxk.Colors.WHITE,
       size: s.zxk.Sizes.NONE,

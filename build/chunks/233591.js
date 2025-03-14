@@ -16,8 +16,8 @@ var r = n(581031),
   m = 35,
   g = RangeError,
   E = r(p.exec),
-  v = Math.floor,
-  b = String.fromCharCode,
+  b = Math.floor,
+  v = String.fromCharCode,
   y = r("".charCodeAt),
   O = r([].join),
   I = r([].push),
@@ -39,8 +39,8 @@ var r = n(581031),
   },
   R = function(e, t, n) {
     var r = 0;
-    for (e = n ? v(e / c) : e >> 1, e += v(e / t); e > m * s >> 1;) e = v(e / m), r += o;
-    return v(r + (m + 1) * e / (e + l))
+    for (e = n ? b(e / c) : e >> 1, e += b(e / t); e > m * s >> 1;) e = b(e / m), r += o;
+    return b(r + (m + 1) * e / (e + l))
   },
   P = function(e) {
     var t, n, r = [],
@@ -48,14 +48,14 @@ var r = n(581031),
       c = d,
       _ = 0,
       p = u;
-    for (t = 0; t < e.length; t++)(n = e[t]) < 128 && I(r, b(n));
+    for (t = 0; t < e.length; t++)(n = e[t]) < 128 && I(r, v(n));
     var m = r.length,
       E = m;
     for (m && I(r, f); E < l;) {
       var y = i;
       for (t = 0; t < e.length; t++)(n = e[t]) >= c && n < y && (y = n);
       var S = E + 1;
-      if (y - c > v((i - _) / S)) throw g(h);
+      if (y - c > b((i - _) / S)) throw g(h);
       for (_ += (y - c) * S, c = y, t = 0; t < e.length; t++) {
         if ((n = e[t]) < c && ++_ > i) throw g(h);
         if (n === c) {
@@ -64,9 +64,9 @@ var r = n(581031),
             if (T < P) break;
             var w = T - P,
               D = o - P;
-            I(r, b(C(P + w % D))), T = v(w / D), N += o
+            I(r, v(C(P + w % D))), T = b(w / D), N += o
           }
-          I(r, b(C(T))), p = R(_, S, E === m), _ = 0, E++
+          I(r, v(C(T))), p = R(_, S, E === m), _ = 0, E++
         }
       }
       _++, c++

@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  OZ: () => b,
-  ox: () => v,
+  OZ: () => v,
+  ox: () => b,
   ub: () => y
 });
 var r = n(200651),
@@ -58,7 +58,7 @@ let {
   Provider: g,
   Consumer: E
 } = i.createContext(u.BRd.DARK);
-class v extends i.PureComponent {
+class b extends i.PureComponent {
   render() {
     let {
       lightSrc: e,
@@ -84,7 +84,7 @@ class v extends i.PureComponent {
     })
   }
 }
-let b = e => {
+let v = e => {
   let {
     children: t,
     className: n,

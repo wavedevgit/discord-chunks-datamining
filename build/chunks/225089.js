@@ -24,8 +24,8 @@ function f(e) {
     isTryItOutFlow: h,
     disabledInputs: m,
     onUpsellClick: g
-  } = e, E = _ || (null == n ? void 0 : n.canUsePremiumProfileCustomization) || !1, v = E ? i.vdY : i.SrA, b = (0, o.M)(E), y = () => {
-    if (!E && !b) {
+  } = e, E = _ || (null == n ? void 0 : n.canUsePremiumProfileCustomization) || !1, b = E ? i.vdY : i.SrA, v = (0, o.M)(E), y = () => {
+    if (!E && !v) {
       null == g || g();
       return
     }(0, s.$r)(l.pC.BANNER, f, h)
@@ -40,13 +40,13 @@ function f(e) {
     children: !m && (0, r.jsxs)(i.P3F, {
       onClick: y,
       className: d.clickable,
-      children: [(0, r.jsx)(v, {
+      children: [(0, r.jsx)(b, {
         size: "xs",
         color: "white"
       }), (0, r.jsx)(i.X6q, {
         variant: "text-sm/medium",
         color: "always-white",
-        children: E || b ? u.NW.string(u.t.N0bC3N) : u.NW.string(u.t.O1sT5u)
+        children: E || v ? u.NW.string(u.t.N0bC3N) : u.NW.string(u.t.O1sT5u)
       })]
     })
   })

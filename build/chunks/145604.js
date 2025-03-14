@@ -58,7 +58,7 @@ function q(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Q(e) {
+function X(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -70,7 +70,7 @@ function Q(e) {
   }
   return e
 }
-class X extends i.PureComponent {
+class Q extends i.PureComponent {
   componentDidMount() {
     let {
       selectedChannelId: e,
@@ -78,7 +78,7 @@ class X extends i.PureComponent {
       isNSFWChannel: n,
       isTextInVoice: r
     } = this.props;
-    t && null != e && ((0, u.yw)(K.rMx.CHANNEL_OPENED, Q({}, (0, u.$H)(e))), (0, p.a)(K.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+    t && null != e && ((0, u.yw)(K.rMx.CHANNEL_OPENED, X({}, (0, u.$H)(e))), (0, p.a)(K.rMx.CHANNEL_OPENED_CLICKSTREAM, {
       channelId: e
     }), r && (0, u.yw)(K.rMx.TEXT_IN_VOICE_OPENED, {
       channel_is_nsfw: n
@@ -97,7 +97,7 @@ class X extends i.PureComponent {
       runningGamePid: V,
       selectedChannelId: B,
       selectedGuildId: q,
-      connected: X,
+      connected: Q,
       homeLink: J,
       friendsTabSection: $,
       isNSFWChannel: ee,
@@ -112,7 +112,7 @@ class X extends i.PureComponent {
         n = null != t ? t.name : "",
         r = P.Z.getStageInstanceByChannel(e.voiceChannelId),
         i = N.ZP.getActiveEventByChannel(e.voiceChannelId);
-      F.default.track(K.rMx.LEAVE_VOICE_CHANNEL, Q({
+      F.default.track(K.rMx.LEAVE_VOICE_CHANNEL, X({
         channel_id: e.voiceChannelId,
         channel_type: e.voiceChannelType,
         channel_bitrate: e.voiceChannelBitrate,
@@ -132,12 +132,12 @@ class X extends i.PureComponent {
         t = null != e ? e.name : "",
         n = P.Z.getStageInstanceByChannel(E),
         r = N.ZP.getActiveEventByChannel(E);
-      (0, u.yw)(K.rMx.CHANNEL_OPENED, Q({}, (0, u.$H)(E))), (0, p.a)(K.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+      (0, u.yw)(K.rMx.CHANNEL_OPENED, X({}, (0, u.$H)(E))), (0, p.a)(K.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: E
       });
       let i = null,
         l = H.default.getFocusedPID();
-      null == l || S.default.getOverlayMethod(l) === a.gl.Disabled || (H.default.isInstanceLocked() ? i = K.ADE.OVERLAY_LOCKED_ACTIVATED : H.default.isInstanceLocked() || (i = H.default.isPinned(K.Odu.TEXT) ? K.ADE.OVERLAY_UNLOCKED_PINNED : K.ADE.OVERLAY_UNLOCKED)), F.default.track(K.rMx.JOIN_VOICE_CHANNEL, Q({
+      null == l || S.default.getOverlayMethod(l) === a.gl.Disabled || (H.default.isInstanceLocked() ? i = K.ADE.OVERLAY_LOCKED_ACTIVATED : H.default.isInstanceLocked() || (i = H.default.isPinned(K.Odu.TEXT) ? K.ADE.OVERLAY_UNLOCKED_PINNED : K.ADE.OVERLAY_UNLOCKED)), F.default.track(K.rMx.JOIN_VOICE_CHANNEL, X({
         location: i,
         channel_id: E,
         channel_type: y,
@@ -206,15 +206,15 @@ class X extends i.PureComponent {
       let e = "none",
         t = [k ? "screen" : null, w ? "camera" : null].filter(Y.lm),
         n = null;
-      k ? (e = "screen", n = (0, f.t)()) : w && (e = "camera"), F.default.track(K.rMx.VIDEO_INPUT_TOGGLED, Q({
+      k ? (e = "screen", n = (0, f.t)()) : w && (e = "camera"), F.default.track(K.rMx.VIDEO_INPUT_TOGGLED, X({
         video_input_type: e,
         video_toggle_source: __OVERLAY__ ? "overlay" : "app",
         enabled_inputs: t,
         preview_enabled: j.qF.getSetting()
       }, n, this.getGameMetadata(), (0, u.AB)(E)))
     }
-    if (X && null != q && (q !== e.selectedGuildId || !e.connected || et && !e.isMemberPending)) {
-      let e = (l = Q({}, et ? {
+    if (Q && null != q && (q !== e.selectedGuildId || !e.connected || et && !e.isMemberPending)) {
+      let e = (l = X({}, et ? {
         is_pending: et,
         preview_enabled: en
       } : {}), c = c = {
@@ -235,12 +235,12 @@ class X extends i.PureComponent {
       (0, u.yw)(K.rMx.GUILD_VIEWED, e), (0, p.a)(K.rMx.GUILD_VIEWED_CLICKSTREAM, {
         guildId: q
       })
-    } else X && null == q && J === K.Z5c.FRIENDS && (!e.connected || $ !== e.friendsTabSection || J !== e.homeLink) ? (0, h.Z)({
+    } else Q && null == q && J === K.Z5c.FRIENDS && (!e.connected || $ !== e.friendsTabSection || J !== e.homeLink) ? (0, h.Z)({
       tab_opened: $
-    }) : !X || null != q || J !== K.Z5c.MESSAGE_REQUESTS || e.connected && J === e.homeLink || this.isMessageRequestsInitialized || (this.isMessageRequestsInitialized = !0, F.default.track(K.rMx.MESSAGE_REQUESTS_INITIALIZED, {
+    }) : !Q || null != q || J !== K.Z5c.MESSAGE_REQUESTS || e.connected && J === e.homeLink || this.isMessageRequestsInitialized || (this.isMessageRequestsInitialized = !0, F.default.track(K.rMx.MESSAGE_REQUESTS_INITIALIZED, {
       num_message_requests: el
     }));
-    if (X && null != B && (!e.connected || B !== e.selectedChannelId || q !== e.selectedGuildId)) {
+    if (Q && null != B && (!e.connected || B !== e.selectedChannelId || q !== e.selectedGuildId)) {
       let t = e.selectedChannelId,
         n = A.Z.getChannel(t),
         r = L.Z.getGuild(null == n ? void 0 : n.getGuildId());
@@ -250,14 +250,14 @@ class X extends i.PureComponent {
             var t;
             return (0, z.yE)(e.flags, K.iLy.IS_CROSSPOST) && (null === (t = e.messageReference) || void 0 === t ? void 0 : t.guild_id) === "667560445975986187"
           });
-        F.default.track(K.rMx.ACK_COMMUNITY_MESSAGES, Q({
+        F.default.track(K.rMx.ACK_COMMUNITY_MESSAGES, X({
           last_message_id: null == l ? void 0 : l.id,
           last_message_reference_message_id: null == l ? void 0 : null === (i = l.messageReference) || void 0 === i ? void 0 : i.message_id,
           messages_loaded: e.hasFetched
         }, (0, u.v_)(n), (0, u.hH)(r.id)))
       }
       let l = (0, d.K)(A.Z.getChannel(B), !0);
-      (0, u.yw)(K.rMx.CHANNEL_OPENED, Q({}, l, (0, u.$H)(B))), (0, p.a)(K.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+      (0, u.yw)(K.rMx.CHANNEL_OPENED, X({}, l, (0, u.$H)(B))), (0, p.a)(K.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: B
       }), ei && (0, u.yw)(K.rMx.TEXT_IN_VOICE_OPENED, {
         channel_is_nsfw: ee
@@ -309,5 +309,5 @@ function J() {
     isTextInVoice: i,
     numMessageRequests: S
   };
-  return (0, r.jsx)(X, Q({}, T))
+  return (0, r.jsx)(Q, X({}, T))
 }

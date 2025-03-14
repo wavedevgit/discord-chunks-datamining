@@ -2,7 +2,7 @@
 n.d(t, {
   Z: () => _
 }), n(653041), n(47120);
-var r, a, i, l = n(772848),
+var r, a, l, i = n(772848),
   o = n(756647),
   s = n(442837),
   c = n(570140),
@@ -10,10 +10,10 @@ var r, a, i, l = n(772848),
   u = n(906467);
 let m = 0,
   h = [],
-  p = 0,
-  x = [],
-  f = !1;
-class b extends(r = s.ZP.Store) {
+  x = 0,
+  p = [],
+  b = !1;
+class f extends(r = s.ZP.Store) {
   initialize() {
     this.waitFor(u.Z)
   }
@@ -21,22 +21,22 @@ class b extends(r = s.ZP.Store) {
     return h
   }
   get loggedEventsVersion() {
-    return p
-  }
-  get loggedTriggers() {
     return x
   }
+  get loggedTriggers() {
+    return p
+  }
   get trackTriggers() {
-    return f
+    return b
   }
 }
-i = "AnalyticsLogStore", (a = "displayName") in b ? Object.defineProperty(b, a, {
-  value: i,
+l = "AnalyticsLogStore", (a = "displayName") in f ? Object.defineProperty(f, a, {
+  value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : b[a] = i;
-let _ = new b(c.Z, {
+}) : f[a] = l;
+let _ = new f(c.Z, {
   TRACK: function(e) {
     let {
       event: t,
@@ -49,7 +49,7 @@ let _ = new b(c.Z, {
       properties: n,
       fingerprint: null != r ? (0, o.s)(r) : d.default.getId(),
       timestamp: new Date
-    }), p++, h.length > 500 && (h = h.slice(-Math.floor(250)))
+    }), x++, h.length > 500 && (h = h.slice(-Math.floor(250)))
   },
   TRACK_TRIGGER: function(e) {
     let {
@@ -57,27 +57,27 @@ let _ = new b(c.Z, {
       descriptor: n,
       exposureType: r,
       excluded: a,
-      location: i,
+      location: l,
       previouslyTracked: o
     } = e;
-    u.Z.isDeveloper && f && (x = [...x, {
-      key: (0, l.Z)(),
+    u.Z.isDeveloper && b && (p = [...p, {
+      key: (0, i.Z)(),
       experimentId: t,
       descriptor: n,
       exposureType: r,
       excluded: a,
-      location: i,
+      location: l,
       previouslyTracked: o,
       timestamp: new Date
-    }]).length > 500 && x.shift()
+    }]).length > 500 && p.shift()
   },
   SET_TRACK_TRIGGERS: function(e) {
     let {
       enabled: t
     } = e;
-    f = t
+    b = t
   },
   ANALYTICS_LOG_CLEAR: function() {
-    h = [], p++, x = []
+    h = [], x++, p = []
   }
 })

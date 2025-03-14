@@ -20,8 +20,8 @@ var r = n(200651),
   m = n(530618),
   g = n(70097),
   E = n(454585),
-  v = n(164946),
-  b = n(369111),
+  b = n(164946),
+  v = n(369111),
   y = n(25990),
   O = n(594174),
   I = n(960048),
@@ -78,7 +78,7 @@ function U(e, t) {
 
 function G() {
   let e = y.Z.getAllPending(),
-    t = (0, v.ED)(e);
+    t = (0, b.ED)(e);
   return (0, d.Mn)(t).finally(d.si)
 }
 
@@ -86,7 +86,7 @@ function B(e) {
   let {
     product: t,
     isFetching: n
-  } = (0, h.T)(e), {} = (0, b.Z)({}), r = i.useMemo(() => {
+  } = (0, h.T)(e), {} = (0, v.Z)({}), r = i.useMemo(() => {
     if (null == t || n) return null;
     let e = t.items.find(e => e.type === l.Z.AVATAR_DECORATION);
     return null == e ? null : e
@@ -96,7 +96,7 @@ function B(e) {
   return [r, o]
 }
 
-function V(e) {
+function F(e) {
   var t;
   let {
     transitionState: n,
@@ -107,7 +107,7 @@ function V(e) {
     decoration: p,
     onUseNow: h,
     preview: g
-  } = e, E = i.useRef(null), [v, b] = i.useState(null), y = i.useRef(new s.qA), I = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), T = (0, c.e7)([O.default], () => O.default.getCurrentUser()), A = i.useMemo(() => (0, C.fh)(l, C.eC.HERO), [l]), R = (null === (t = l.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, [w, L] = i.useState(!0 === g || R ? "claimed" : "loading");
+  } = e, E = i.useRef(null), [b, v] = i.useState(null), y = i.useRef(new s.qA), I = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), T = (0, c.e7)([O.default], () => O.default.getCurrentUser()), A = i.useMemo(() => (0, C.fh)(l, C.eC.HERO), [l]), R = (null === (t = l.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, [w, L] = i.useState(!0 === g || R ? "claimed" : "loading");
   i.useEffect(() => {
     R || !0 === g || (0, S.QB)(l.id, N.y$.CROSS_PLATFORM, d).then(() => L("claimed")).catch(() => L("error"))
   }, [l, d, R, g]);
@@ -120,7 +120,7 @@ function V(e) {
     G = !I && !R && "claimed" === w;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.O_, {
-      ref: b,
+      ref: v,
       className: x.confettiCanvas,
       environment: y.current
     }), (0, r.jsx)("div", {
@@ -151,14 +151,14 @@ function V(e) {
       })
     }), G && (0, r.jsx)(m.Z, {
       confettiTarget: E.current,
-      confettiCanvas: v,
+      confettiCanvas: b,
       sprites: D.CA,
       colors: D.Br
     })]
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     quest: t
   } = e, n = i.useMemo(() => (0, C.fh)(t, C.eC.LOGO_TYPE, "dark"), [t]), o = R.r.build(t.config).defaultRewardRedemptionInstructionsByPlatform[N.y$.CROSS_PLATFORM];
@@ -235,7 +235,7 @@ function Z(e) {
           submitting: a,
           onClick: l,
           children: L.NW.string(L.t.MAS7uL)
-        }), (0, A.zK)(t, w.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, r.jsx)(F, {
+        }), (0, A.zK)(t, w.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, r.jsx)(V, {
           quest: t
         })]
       })
@@ -258,7 +258,7 @@ function H(e) {
     onClose: s,
     analyticsLocations: [],
     initialSelectedDecoration: d
-  }) : (0, r.jsx)(V, {
+  }) : (0, r.jsx)(F, {
     onClose: s,
     transitionState: l,
     quest: o,

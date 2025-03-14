@@ -22,7 +22,7 @@ function u(e) {
     eventTargetRef: _
   } = e, p = i.useContext(s.Sfi), h = d(), [m, g] = i.useState(void 0), {
     rive: E,
-    RiveComponent: v
+    RiveComponent: b
   } = (0, a.useRive)({
     eventTarget: null == _ ? void 0 : _.current,
     src: t,
@@ -39,19 +39,19 @@ function u(e) {
       autoplay: n
     }), E.setupRiveListeners())
   }, [E, n, m]);
-  let b = i.useRef(0);
+  let v = i.useRef(0);
   return i.useEffect(() => {
     if (null == E) return;
     E.play();
     let e = t => {
-      null != t.data && "number" == typeof t.data && (b.current = t.data, t.data > 0 && (p.reducedMotion.enabled && E.isPlaying && E.pause(), E.off(a.EventType.Advance, e)))
+      null != t.data && "number" == typeof t.data && (v.current = t.data, t.data > 0 && (p.reducedMotion.enabled && E.isPlaying && E.pause(), E.off(a.EventType.Advance, e)))
     };
     return E.on(a.EventType.Advance, e), () => {
       E.off(a.EventType.Advance, e)
     }
   }, [E, p.reducedMotion.enabled]), i.useEffect(() => {
-    null != E && (E.isPlaying && !h && b.current > 0 ? E.pause() : E.isPaused && h && E.play())
-  }, [E, h]), (0, r.jsx)(v, {
+    null != E && (E.isPlaying && !h && v.current > 0 ? E.pause() : E.isPaused && h && E.play())
+  }, [E, h]), (0, r.jsx)(b, {
     className: o,
     style: f
   })

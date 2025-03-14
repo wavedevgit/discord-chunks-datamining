@@ -79,14 +79,14 @@ function E(e) {
   f.disableUnreadBadge = t
 }
 
-function v(e) {
+function b(e) {
   let {
     taskbarFlash: t
   } = e;
   f.taskbarFlash = t
 }
 
-function b(e) {
+function v(e) {
   let {
     notify: t
   } = e;
@@ -150,6 +150,6 @@ let I = new O(o.Z, {
   NOTIFICATIONS_TOGGLE_ALL_DISABLED: m,
   NOTIFICATIONS_SET_PERMISSION_STATE: y,
   NOTIFICATIONS_SET_DISABLE_UNREAD_BADGE: E,
-  NOTIFICATIONS_SET_TASKBAR_FLASH: v,
-  NOTIFICATIONS_SET_NOTIFY_MESSAGES_IN_SELECTED_CHANNEL: b
+  NOTIFICATIONS_SET_TASKBAR_FLASH: b,
+  NOTIFICATIONS_SET_NOTIFY_MESSAGES_IN_SELECTED_CHANNEL: v
 })

@@ -54,11 +54,11 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = {
+let b = {
     mass: 1,
     tension: 250
   },
-  b = {
+  v = {
     X: {
       TOP: "M5.13231 6.72963L6.7233 5.13864L14.855 13.2704L13.264 14.8614L5.13231 6.72963Z",
       BOTTOM: "M13.2704 5.13864L14.8614 6.72963L6.72963 14.8614L5.13864 13.2704L13.2704 5.13864Z"
@@ -77,8 +77,8 @@ function y(e, t, n, i) {
   let o = e.to({
       output: [t, n]
     }),
-    a = i ? [b.X.TOP, b.X.TOP, b.CHECK.TOP, b.CHECK.TOP] : [b.X.TOP, b.BAR.TOP, b.BAR.TOP, b.CHECK.TOP],
-    l = i ? [b.X.BOTTOM, b.X.BOTTOM, b.CHECK.BOTTOM, b.CHECK.BOTTOM] : [b.X.BOTTOM, b.BAR.BOTTOM, b.BAR.BOTTOM, b.CHECK.BOTTOM];
+    a = i ? [v.X.TOP, v.X.TOP, v.CHECK.TOP, v.CHECK.TOP] : [v.X.TOP, v.BAR.TOP, v.BAR.TOP, v.CHECK.TOP],
+    l = i ? [v.X.BOTTOM, v.X.BOTTOM, v.CHECK.BOTTOM, v.CHECK.BOTTOM] : [v.X.BOTTOM, v.BAR.BOTTOM, v.BAR.BOTTOM, v.CHECK.BOTTOM];
   return (0, r.jsxs)("svg", {
     viewBox: "0 0 20 20",
     fill: "none",
@@ -104,7 +104,7 @@ let O = function(e) {
     checked: o,
     disabled: h,
     className: g,
-    focusProps: b,
+    focusProps: v,
     innerRef: O
   } = e, {
     reducedMotion: I
@@ -112,7 +112,7 @@ let O = function(e) {
     state: P,
     opacity: w
   } = (0, f.q_F)({
-    config: v,
+    config: b,
     opacity: h ? A ? .5 : .3 : 1,
     state: T ? o ? .7 : .3 : +!!o
   }, "animate-always");
@@ -129,7 +129,7 @@ let O = function(e) {
     var t;
     !h && T && !e.repeat && (N(!1), "Enter" === e.key && (null === (t = S.current) || void 0 === t || t.click()))
   }
-  return (0, r.jsx)(u.t, E(m({}, b), {
+  return (0, r.jsx)(u.t, E(m({}, v), {
     within: !0,
     offset: -2,
     children: (0, r.jsxs)(s.animated.div, {

@@ -1,6 +1,7 @@
-/** Chunk was on 94805 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  h: () => a
+  h: () => i
 });
 let r = (0, n(818083).B)({
   kind: "user",
@@ -18,7 +19,7 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function a() {
+function i() {
   let {
     enabled: e
   } = r.useExperiment({

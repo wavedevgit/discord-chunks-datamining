@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Q: () => v
+  Q: () => b
 });
 var r = n(200651),
   i = n(120356),
@@ -71,7 +71,7 @@ function E(e, t) {
   return i
 }
 
-function v(e) {
+function b(e) {
   var {
     role: t = "button",
     variant: n = "default",
@@ -79,8 +79,8 @@ function v(e) {
     lineClamp: _ = 1,
     text: h,
     icon: E,
-    iconPosition: v = "end",
-    external: b,
+    iconPosition: b = "end",
+    external: v,
     focusProps: y
   } = e, O = g(e, ["role", "variant", "textVariant", "lineClamp", "text", "icon", "iconPosition", "external", "focusProps"]);
 
@@ -92,19 +92,19 @@ function v(e) {
       size: e
     })
   }
-  return b && (E = a.G), (0, r.jsx)(s.t, m(p({}, y), {
+  return v && (E = a.G), (0, r.jsx)(s.t, m(p({}, y), {
     children: (0, r.jsxs)("button", m(p({
       role: t,
       className: o()(f.linkButton, f[n])
     }, O), {
-      children: [null != E && "start" === v && (0, r.jsx)(I, {}), (0, r.jsx)(c.x, {
+      children: [null != E && "start" === b && (0, r.jsx)(I, {}), (0, r.jsx)(c.x, {
         tag: "span",
         variant: i,
         color: "none",
         lineClamp: _,
         className: f.text,
         children: h
-      }), null != E && "end" === v && (0, r.jsx)(I, {}), b && (0, r.jsx)(l.n, {
+      }), null != E && "end" === b && (0, r.jsx)(I, {}), v && (0, r.jsx)(l.n, {
         children: d.NW.string(u.Z.cgdAs7)
       })]
     }))

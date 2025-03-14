@@ -20,8 +20,8 @@ var r, i = n(200651),
   m = n(933557),
   g = n(471445),
   E = n(511618),
-  v = n(887120),
-  b = n(926491),
+  b = n(887120),
+  v = n(926491),
   y = n(378233),
   O = n(695346),
   I = n(430824),
@@ -99,8 +99,8 @@ function G(e) {
 function B(e) {
   return "autocomplete-".concat(e, "-title")
 }
-let V = o.createContext(null);
-class F extends o.PureComponent {
+let F = o.createContext(null);
+class V extends o.PureComponent {
   isSelectable() {
     return this.selectable
   }
@@ -166,7 +166,7 @@ class F extends o.PureComponent {
     }
   }
 }
-class Z extends F {
+class Z extends V {
   renderContent() {
     let {
       text: e,
@@ -209,7 +209,7 @@ function W(e) {
     title: t,
     className: n,
     children: r
-  } = e, a = o.useContext(V);
+  } = e, a = o.useContext(F);
   return (0, i.jsx)("div", {
     className: D.base,
     children: (0, i.jsxs)(d.X6q, {
@@ -220,7 +220,7 @@ function W(e) {
     })
   })
 }
-class Y extends F {
+class Y extends V {
   renderContent() {
     let {
       className: e
@@ -233,7 +233,7 @@ class Y extends F {
     super(...e), L(this, "layoutClass", D.dividerContainer), L(this, "selectable", !1)
   }
 }
-class K extends F {
+class K extends V {
   renderContent() {
     var e;
     let {
@@ -267,7 +267,7 @@ class K extends F {
     })
   }
 }
-class z extends F {
+class z extends V {
   renderContent() {
     let {
       role: e,
@@ -295,7 +295,7 @@ class z extends F {
     })
   }
 }
-class q extends F {
+class q extends V {
   renderContent() {
     let {
       channel: e,
@@ -316,7 +316,7 @@ class q extends F {
     })
   }
 }
-class Q extends F {
+class Q extends V {
   renderContent() {
     let {
       command: e
@@ -339,7 +339,7 @@ class Q extends F {
     })
   }
 }
-class X extends F {
+class X extends V {
   isSelectable() {
     return this.props.command.inputType !== _.iw.PLACEHOLDER
   }
@@ -363,7 +363,7 @@ class X extends F {
     })
   }
 }
-class J extends F {
+class J extends V {
   renderContent() {
     let {
       emoji: e,
@@ -397,7 +397,7 @@ class J extends F {
     super(...e), L(this, "layoutClass", s()(D.autocompleteRowVertical, D.autocompleteRowVerticalSmall))
   }
 }
-class $ extends F {
+class $ extends V {
   renderContent() {
     var e, t;
     let n;
@@ -409,7 +409,7 @@ class $ extends F {
     } = this.props, {
       hovered: l
     } = this.state;
-    return (0, y.jl)(s) ? n = null === (e = b.Z.getStickerPack(s.pack_id)) || void 0 === e ? void 0 : e.name : (0, y.J8)(s) && (n = null === (t = I.Z.getGuild(s.guild_id)) || void 0 === t ? void 0 : t.name), (0, i.jsxs)(C.RX, {
+    return (0, y.jl)(s) ? n = null === (e = v.Z.getStickerPack(s.pack_id)) || void 0 === e ? void 0 : e.name : (0, y.J8)(s) && (n = null === (t = I.Z.getGuild(s.guild_id)) || void 0 === t ? void 0 : t.name), (0, i.jsxs)(C.RX, {
       children: [(0, i.jsx)(C.Tw, {
         children: o(s, l || !0 === a)
       }), (0, i.jsxs)(C.z5, {
@@ -429,7 +429,7 @@ class $ extends F {
     super(...e), L(this, "layoutClass", s()(D.autocompleteRowVertical, D.autocompleteRowVerticalSmall))
   }
 }
-class ee extends F {
+class ee extends V {
   renderContent() {
     let {
       width: e,
@@ -447,16 +447,16 @@ class ee extends F {
     super(...e), L(this, "layoutClass", D.autocompleteRowHorizontal)
   }
 }
-class et extends F {
+class et extends V {
   renderContent() {
     return (0, i.jsx)(E.Z, {
       emojis: this.props.emojis
     })
   }
 }
-class en extends F {
+class en extends V {
   renderContent() {
-    return (0, i.jsx)(v.Z, x({}, this.props))
+    return (0, i.jsx)(b.Z, x({}, this.props))
   }
 }
 class er extends(r = o.PureComponent) {
@@ -469,7 +469,7 @@ class er extends(r = o.PureComponent) {
         id: a
       } = e,
       l = j(e, ["children", "className", "innerClassName", "id"]);
-    return o.Children.count(t) > 0 ? (0, i.jsx)(V.Provider, {
+    return o.Children.count(t) > 0 ? (0, i.jsx)(F.Provider, {
       value: {
         id: null != a ? a : ""
       },

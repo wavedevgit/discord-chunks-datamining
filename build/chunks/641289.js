@@ -32,10 +32,10 @@ let a = e => r(/\b/, e, /\w$/.test(e) ? /\b/ : /\B/),
   m = o(h, /[\u0300-\u036F]/, /[\u1DC0-\u1DFF]/, /[\u20D0-\u20FF]/, /[\uFE00-\uFE0F]/, /[\uFE20-\uFE2F]/),
   g = r(h, m, "*"),
   E = o(/[a-zA-Z_]/, /[\u00A8\u00AA\u00AD\u00AF\u00B2-\u00B5\u00B7-\u00BA]/, /[\u00BC-\u00BE\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u00FF]/, /[\u0100-\u02FF\u0370-\u167F\u1681-\u180D\u180F-\u1DBF]/, /[\u1E00-\u1FFF]/, /[\u200B-\u200D\u202A-\u202E\u203F-\u2040\u2054\u2060-\u206F]/, /[\u2070-\u20CF\u2100-\u218F\u2460-\u24FF\u2776-\u2793]/, /[\u2C00-\u2DFF\u2E80-\u2FFF]/, /[\u3004-\u3007\u3021-\u302F\u3031-\u303F\u3040-\uD7FF]/, /[\uF900-\uFD3D\uFD40-\uFDCF\uFDF0-\uFE1F\uFE30-\uFE44]/, /[\uFE47-\uFEFE\uFF00-\uFFFD]/),
-  v = o(E, /\d/, /[\u0300-\u036F\u1DC0-\u1DFF\u20D0-\u20FF\uFE20-\uFE2F]/),
-  b = r(E, v, "*"),
-  y = r(/[A-Z]/, v, "*"),
-  O = ["attached", "autoclosure", r(/convention\(/, o("swift", "block", "c"), /\)/), "discardableResult", "dynamicCallable", "dynamicMemberLookup", "escaping", "freestanding", "frozen", "GKInspectable", "IBAction", "IBDesignable", "IBInspectable", "IBOutlet", "IBSegueAction", "inlinable", "main", "nonobjc", "NSApplicationMain", "NSCopying", "NSManaged", r(/objc\(/, b, /\)/), "objc", "objcMembers", "propertyWrapper", "requires_stored_property_inits", "resultBuilder", "Sendable", "testable", "UIApplicationMain", "unchecked", "unknown", "usableFromInline", "warn_unqualified_access"],
+  b = o(E, /\d/, /[\u0300-\u036F\u1DC0-\u1DFF\u20D0-\u20FF\uFE20-\uFE2F]/),
+  v = r(E, b, "*"),
+  y = r(/[A-Z]/, b, "*"),
+  O = ["attached", "autoclosure", r(/convention\(/, o("swift", "block", "c"), /\)/), "discardableResult", "dynamicCallable", "dynamicMemberLookup", "escaping", "freestanding", "frozen", "GKInspectable", "IBAction", "IBDesignable", "IBInspectable", "IBOutlet", "IBSegueAction", "inlinable", "main", "nonobjc", "NSApplicationMain", "NSCopying", "NSManaged", r(/objc\(/, v, /\)/), "objc", "objcMembers", "propertyWrapper", "requires_stored_property_inits", "resultBuilder", "Sendable", "testable", "UIApplicationMain", "unchecked", "unknown", "usableFromInline", "warn_unqualified_access"],
   I = ["iOS", "iOSApplicationExtension", "macOS", "macOSApplicationExtension", "macCatalyst", "macCatalystApplicationExtension", "watchOS", "watchOSApplicationExtension", "tvOS", "tvOSApplicationExtension", "swift"];
 
 function S(e) {
@@ -137,16 +137,16 @@ function S(e) {
       className: "string",
       variants: [U(), U("#"), U("##"), U("###"), G(), G("#"), G("##"), G("###")]
     },
-    V = [e.BACKSLASH_ESCAPE, {
+    F = [e.BACKSLASH_ESCAPE, {
       begin: /\[/,
       end: /\]/,
       relevance: 0,
       contains: [e.BACKSLASH_ESCAPE]
     }],
-    F = {
+    V = {
       begin: /\/[^\s](?=[^/\n]*\/)/,
       end: /\//,
-      contains: V
+      contains: F
     },
     Z = e => {
       let t = r(e, /\//),
@@ -154,7 +154,7 @@ function S(e) {
       return {
         begin: t,
         end: n,
-        contains: [...V, {
+        contains: [...F, {
           scope: "comment",
           begin: `#(?!.*${n})`,
           end: /$/
@@ -163,17 +163,17 @@ function S(e) {
     },
     H = {
       scope: "regexp",
-      variants: [Z("###"), Z("##"), Z("#"), F]
+      variants: [Z("###"), Z("##"), Z("#"), V]
     },
     W = {
-      match: r(/`/, b, /`/)
+      match: r(/`/, v, /`/)
     },
     Y = [W, {
       className: "variable",
       match: /\$\d+/
     }, {
       className: "variable",
-      match: `\\$${v}+`
+      match: `\\$${b}+`
     }],
     K = [{
       match: /(@|#(un)?)available/,
@@ -191,14 +191,14 @@ function S(e) {
       match: r(/@/, o(...O), n(o(/\(/, /\s+/)))
     }, {
       scope: "meta",
-      match: r(/@/, b)
+      match: r(/@/, v)
     }],
     z = {
       match: n(/\b[A-Z]/),
       relevance: 0,
       contains: [{
         className: "type",
-        match: r(/(AV|CA|CF|CG|CI|CL|CM|CN|CT|MK|MP|MTK|MTL|NS|SCN|SK|UI|WK|XC)/, v, "+")
+        match: r(/(AV|CA|CF|CG|CI|CL|CM|CN|CT|MK|MP|MTK|MTL|NS|SCN|SK|UI|WK|XC)/, b, "+")
       }, {
         className: "type",
         match: y,
@@ -227,7 +227,7 @@ function S(e) {
       relevance: 0,
       keywords: A,
       contains: ["self", {
-        match: r(b, /\s*:/),
+        match: r(v, /\s*:/),
         keywords: "_|0",
         relevance: 0
       }, ...h, H, ...C, ...R, ...w, x, B, ...Y, ...K, z]
@@ -243,7 +243,7 @@ function S(e) {
       end: /\)/,
       keywords: A,
       contains: [{
-        begin: o(n(r(b, /\s*:/)), n(r(b, /\s+/, b, /\s*:/))),
+        begin: o(n(r(v, /\s*:/)), n(r(v, /\s+/, v, /\s*:/))),
         end: /:/,
         relevance: 0,
         contains: [{
@@ -251,14 +251,14 @@ function S(e) {
           match: /\b_\b/
         }, {
           className: "params",
-          match: b
+          match: v
         }]
       }, ...h, ...C, ...w, x, B, ...K, z, Q],
       endsParent: !0,
       illegal: /["']/
     },
     $ = {
-      match: [/(func|macro)/, /\s+/, o(W.match, b, g)],
+      match: [/(func|macro)/, /\s+/, o(W.match, v, g)],
       className: {
         1: "keyword",
         3: "title.function"
@@ -307,7 +307,7 @@ function S(e) {
       }
     },
     eo = {
-      begin: [/(struct|protocol|class|extension|enum|actor)/, /\s+/, b, /\s*/],
+      begin: [/(struct|protocol|class|extension|enum|actor)/, /\s+/, v, /\s*/],
       beginScope: {
         1: "keyword",
         3: "title.class"

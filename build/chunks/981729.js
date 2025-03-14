@@ -22,7 +22,7 @@ var r, i = n(200651),
   g = n(314910),
   E = n(82778);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,14 +31,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -129,7 +129,7 @@ let D = e => {
       animationStyle: p,
       disableTooltipPointerEvents: h = !1,
       allowOverflow: m = !1,
-      tooltipPointerClassName: v
+      tooltipPointerClassName: b
     } = e, y = "".concat("string" == typeof a ? a : "", ":").concat(r);
     return (0, i.jsx)(g.W5, {
       disablePointerEvents: h,
@@ -150,12 +150,12 @@ let D = e => {
           className: s()(E.tooltip, P[null != t ? t : r], P[o], {
             [E.tooltipDisablePointerEvents]: h
           }, u),
-          style: b({}, p, d),
+          style: v({}, p, d),
           children: [(0, i.jsx)("div", {
-            className: s()(E.tooltipPointer, E.tooltipPointerBg, v),
+            className: s()(E.tooltipPointer, E.tooltipPointerBg, b),
             style: w(null != t ? t : r, n, _)
           }), (0, i.jsx)("div", {
-            className: s()(E.tooltipPointer, v),
+            className: s()(E.tooltipPointer, b),
             style: w(null != t ? t : r, n, _)
           }), (0, i.jsx)("div", {
             className: s()(E.tooltipContent, {
@@ -195,7 +195,7 @@ let D = e => {
       enter: M,
       leave: s.enabled ? x : L,
       onRest: n
-    }, "animate-always")((e, t) => t ? (0, i.jsx)(D, b({
+    }, "animate-always")((e, t) => t ? (0, i.jsx)(D, v({
       animationStyle: e,
       targetElementRef: r
     }, a)) : null)
@@ -264,8 +264,8 @@ class j extends(r = o.Component) {
       clickableOnMobile: _,
       hideOnClick: p,
       tooltipPointerClassName: h
-    } = this.props, m = (u.tq || u.Em) && !0 === _ && p, g = !1 !== c && !m || !0 === c, E = this.shouldShowTooltip(this.props, this.state) && this.hasDomElement, v = null;
-    return v = e instanceof Function ? E ? e() : null : e, (0, i.jsx)(k, {
+    } = this.props, m = (u.tq || u.Em) && !0 === _ && p, g = !1 !== c && !m || !0 === c, E = this.shouldShowTooltip(this.props, this.state) && this.hasDomElement, b = null;
+    return b = e instanceof Function ? E ? e() : null : e, (0, i.jsx)(k, {
       disableTooltipPointerEvents: g,
       targetElementRef: this.domElementRef,
       tooltipStyle: s,
@@ -280,7 +280,7 @@ class j extends(r = o.Component) {
       onAnimationRest: d,
       onNonAccessibleClick: m ? this.handleClick : void 0,
       allowOverflow: f,
-      children: v
+      children: b
     })
   }
   show() {
@@ -308,25 +308,25 @@ class j extends(r = o.Component) {
     }
   }
   constructor(...e) {
-    super(...e), v(this, "showTimeout", new f.V7), v(this, "domElementRef", o.createRef()), v(this, "hasDomElement", !1), v(this, "state", {
+    super(...e), b(this, "showTimeout", new f.V7), b(this, "domElementRef", o.createRef()), b(this, "hasDomElement", !1), b(this, "state", {
       shouldShowTooltip: !1
-    }), v(this, "handleMouseEnter", () => {
+    }), b(this, "handleMouseEnter", () => {
       (u.tq || u.Em) && !0 === this.props.clickableOnMobile || this.show()
-    }), v(this, "handleMouseLeave", () => {
+    }), b(this, "handleMouseLeave", () => {
       (u.tq || u.Em) && !0 === this.props.clickableOnMobile || this.hide()
-    }), v(this, "handleFocus", () => {
+    }), b(this, "handleFocus", () => {
       m.Z.keyboardModeEnabled && this.show()
-    }), v(this, "handleBlur", () => {
+    }), b(this, "handleBlur", () => {
       this.hide()
-    }), v(this, "handleClick", () => {
+    }), b(this, "handleClick", () => {
       let e = this.hasDomElement;
       e && this.props.hideOnClick ? this.hide() : !e && (u.tq || u.Em) && !0 === this.props.clickableOnMobile && this.show()
-    }), v(this, "handleContextMenu", () => {
+    }), b(this, "handleContextMenu", () => {
       this.hide()
     })
   }
 }
-v(j, "Colors", T), v(j, "defaultProps", {
+b(j, "Colors", T), b(j, "defaultProps", {
   hideOnClick: !0,
   position: "top",
   color: "primary",
@@ -342,8 +342,8 @@ let U = e => {
     className: n,
     element: r = "div"
   } = e, a = I(e, ["children", "className", "element"]);
-  return (0, i.jsx)(j, O(b({}, a), {
-    children: e => o.createElement(r, null != n ? O(b({}, e), {
+  return (0, i.jsx)(j, O(v({}, a), {
+    children: e => o.createElement(r, null != n ? O(v({}, e), {
       className: n
     }) : e, t)
   }))

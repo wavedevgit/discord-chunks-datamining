@@ -6,7 +6,7 @@ n.d(t, {
   NK: () => Z,
   OP: () => S,
   Sw: () => W,
-  ZP: () => F,
+  ZP: () => V,
   ge: () => H,
   hU: () => U,
   nY: () => I,
@@ -30,7 +30,7 @@ var h = n(313889),
   g = n(981631),
   E = n(388032);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -39,14 +39,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -210,9 +210,9 @@ function j(e, t) {
     if (null != e) return e
   }
   let m = p.Z.can(g.Plq.VIEW_CHANNEL, t),
-    v = M(t, m),
-    b = null != t && m ? n : g.VqG,
-    y = k(e, v, n);
+    b = M(t, m),
+    v = null != t && m ? n : g.VqG,
+    y = k(e, b, n);
   return null != y ? y : null != h ? _ === a.y.MODAL && null != i ? f !== o.P.BLOCKED ? E.NW.format(E.t["4xL9Sk"], {
     applicationName: h,
     interactionUserHook: i,
@@ -223,20 +223,20 @@ function j(e, t) {
     integrationOwnerHook: r
   }) : f !== o.P.BLOCKED ? E.NW.format(E.t.AXQufH, {
     applicationName: h,
-    channelName: v,
-    channelHook: b,
+    channelName: b,
+    channelHook: v,
     integrationOwnerHook: r
   }) : E.NW.format(E.t.s3tjMD, {
     applicationName: h,
-    channelName: v,
-    channelHook: b,
+    channelName: b,
+    channelHook: v,
     integrationOwnerHook: r
   }) : f !== o.P.BLOCKED ? E.NW.format(E.t.IZg0VV, {
-    channelName: v,
-    channelHook: b
+    channelName: b,
+    channelHook: v
   }) : E.NW.format(E.t.lOIOSE, {
-    channelName: v,
-    channelHook: b
+    channelName: b,
+    channelHook: v
   })
 }
 
@@ -281,7 +281,7 @@ function B(e) {
   }
 }
 
-function V(e) {
+function F(e) {
   let t = A(e, s.G.CHANNEL_ID),
     n = A(e, s.G.ALERT_ACTIONS_EXECUTION),
     r = (0, h.t)(n);
@@ -305,10 +305,10 @@ function V(e) {
   }
 }
 
-function F(e) {
-  let t = r.useMemo(() => V(e), [e]),
+function V(e) {
+  let t = r.useMemo(() => F(e), [e]),
     n = (0, f.e7)([_.Z], () => _.Z.getChannel(t.embedChannelId), [t.embedChannelId]);
-  return O(b({}, t), {
+  return O(v({}, t), {
     embedChannel: n
   })
 }
@@ -317,7 +317,7 @@ function Z(e) {
   if (null == e) return null;
   let {
     alertActionsExecution: t
-  } = V(e);
+  } = F(e);
   return null != t ? t : null
 }
 

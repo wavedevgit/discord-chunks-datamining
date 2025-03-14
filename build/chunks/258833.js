@@ -41,11 +41,11 @@ function E(e, t) {
   return h(e, n)
 }
 
-function v(e, t, n) {
+function b(e, t, n) {
   p(e, t), t.set(e, n)
 }
 
-function b(e, t, n) {
+function v(e, t, n) {
   var r = g(e, t, "set");
   return m(e, r, n), n
 }
@@ -65,7 +65,7 @@ class S extends r.Z {
     this.stores = new Map().set(a.Z, this.handleRingUpdate).set(l.Z, this.handleRingUpdate).set(u.Z, this.handleRingUpdate).set(d.Z, this.handleRingUpdate).set(_.Z, this.handleChannelRTCStoreChange).set(o.Z, this.handleSoundpackUpdate)
   }
   constructor(...e) {
-    super(...e), v(this, I, {
+    super(...e), b(this, I, {
       writable: !0,
       value: new Set
     }), y(this, "actions", {
@@ -105,7 +105,7 @@ class S extends r.Z {
         t = E(this, I).size > 0;
       if (!t) return;
       if (null == e && t) {
-        b(this, I, new Set), this._handleRing(E(this, I).size > 0, null);
+        v(this, I, new Set), this._handleRing(E(this, I).size > 0, null);
         return
       }
       if (null == e) return;

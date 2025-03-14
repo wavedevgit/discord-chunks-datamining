@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(697426),
   g = n(526617),
   E = n(474936),
-  v = n(388032),
-  b = n(13774);
+  b = n(388032),
+  v = n(13774);
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -90,11 +90,11 @@ function R(e) {
   } = e, s = T(e, ["icon", "isSelected", "onClick", "listItemProps"]);
   return (0, r.jsx)(c.P3F, S(O({}, o, s), {
     onClick: i,
-    className: a()(b.categoryIcon, {
-      [b.selected]: n
+    className: a()(v.categoryIcon, {
+      [v.selected]: n
     }),
     children: (0, r.jsx)(t, {
-      className: b.categoryIconIcon,
+      className: v.categoryIconIcon,
       color: "currentColor"
     })
   }))
@@ -125,7 +125,7 @@ function P(e, t, n, i, o, a) {
       }), e.key);
     case m.bg.GUILD:
       return (0, r.jsx)(c.P3F, S(O({}, o, i), {
-        className: b.category,
+        className: v.category,
         onClick: t,
         children: (0, r.jsx)(u.Z, {
           guild: e.categoryInfo.guild,
@@ -148,33 +148,33 @@ function P(e, t, n, i, o, a) {
 function w(e) {
   switch (e.categoryInfo.type) {
     case m.bg.FAVORITES:
-      return v.NW.string(v.t.k8fFjo);
+      return b.NW.string(b.t.k8fFjo);
     case m.bg.RECENTLY_HEARD:
-      return v.NW.string(v.t["8i/+SE"]);
+      return b.NW.string(b.t["8i/+SE"]);
     case m.bg.FREQUENTLY_USED:
-      return v.NW.string(v.t["+cGVV1"]);
+      return b.NW.string(b.t["+cGVV1"]);
     case m.bg.GUILD:
       return (0, r.jsx)(_.K, {
         guild: e.categoryInfo.guild,
         includeActivity: !1
       });
     case m.bg.DEFAULTS:
-      return v.NW.string(v.t.Rtvk9f)
+      return b.NW.string(b.t.Rtvk9f)
   }
 }
 
 function D(e) {
   switch (e.categoryInfo.type) {
     case m.bg.FAVORITES:
-      return v.NW.string(v.t.k8fFjo);
+      return b.NW.string(b.t.k8fFjo);
     case m.bg.RECENTLY_HEARD:
-      return v.NW.string(v.t["8i/+SE"]);
+      return b.NW.string(b.t["8i/+SE"]);
     case m.bg.FREQUENTLY_USED:
-      return v.NW.string(v.t["+cGVV1"]);
+      return b.NW.string(b.t["+cGVV1"]);
     case m.bg.GUILD:
       return e.categoryInfo.guild.name;
     case m.bg.DEFAULTS:
-      return v.NW.string(v.t.Rtvk9f)
+      return b.NW.string(b.t.Rtvk9f)
   }
 }
 
@@ -202,7 +202,7 @@ function x(e) {
     listPadding: a = A,
     guildId: s,
     inExpressionPicker: c
-  } = e, u = i.useRef(null), _ = (0, l.e7)([p.default], () => p.default.getCurrentUser()), m = (0, h.I5)(_, E.p9.TIER_2), v = i.useCallback((e, t, n, i) => {
+  } = e, u = i.useRef(null), _ = (0, l.e7)([p.default], () => p.default.getCurrentUser()), m = (0, h.I5)(_, E.p9.TIER_2), b = i.useCallback((e, t, n, i) => {
     let a = o && (0, g.O)(e.categoryInfo, m, s);
     return (0, r.jsx)(L, {
       category: e,
@@ -213,13 +213,13 @@ function x(e) {
     })
   }, [s, o, m]);
   return (0, r.jsx)(f.Z, {
-    className: c ? b.expressionPickerCategoryList : b.categoryList,
+    className: c ? v.expressionPickerCategoryList : v.categoryList,
     categoryListRef: u,
     expressionsListRef: t,
     store: d.Wq,
     categories: n,
     listPadding: a,
-    renderCategoryListItem: v,
+    renderCategoryListItem: b,
     rowCount: n.length,
     categoryHeight: C
   })

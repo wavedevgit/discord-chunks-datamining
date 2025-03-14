@@ -21,7 +21,7 @@ var r = n(200651),
   g = n(186917),
   E = n(687322);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -52,14 +52,14 @@ let y = e => {
       autoPlay: c = !0,
       restartMethod: h,
       urlQueryString: g,
-      profileEffectConfig: v,
-      noBorderRadius: b = !1,
+      profileEffectConfig: b,
+      noBorderRadius: v = !1,
       introDelay: y = u.lG
     } = e, O = i.useRef(null), [I, S] = i.useState([]);
-    (0, m.Z)(v);
+    (0, m.Z)(b);
     let [T, N] = i.useState(0), [A, C] = i.useState(0), {
       accessibilityLabel: R
-    } = v, [P, w] = i.useState(-y), {
+    } = b, [P, w] = i.useState(-y), {
       stop: D,
       reset: L,
       ticking: x
@@ -69,8 +69,8 @@ let y = e => {
     i.useEffect(() => {
       M.current = y
     }), i.useEffect(() => {
-      w(-M.current), S((0, _.H)(v.effects))
-    }, [v]), i.useEffect(() => {
+      w(-M.current), S((0, _.H)(b.effects))
+    }, [b]), i.useEffect(() => {
       let e = 0,
         t = 1 / 0;
       I.forEach(n => {
@@ -80,20 +80,20 @@ let y = e => {
     }, [C, I]);
     let [k, j] = i.useState(!1);
     return i.useEffect(() => {
-      !0 === c || s || (D(), w(0)), !s && k && x.current && (D(), w(0)), o && s && !x.current && (L(), v.animationType === d.Q.PERSISTENT ? w(h === d.j.FromStart ? 0 : T) : w(0))
-    }, [s, k, T, o, D, L, x, v.animationType, c, h]), (0, r.jsx)("div", {
+      !0 === c || s || (D(), w(0)), !s && k && x.current && (D(), w(0)), o && s && !x.current && (L(), b.animationType === d.Q.PERSISTENT ? w(h === d.j.FromStart ? 0 : T) : w(0))
+    }, [s, k, T, o, D, L, x, b.animationType, c, h]), (0, r.jsx)("div", {
       ref: O,
       className: a()(E.profileEffects, {
         [E.hovered]: s && l
       }),
       children: (0, r.jsx)("div", {
-        className: b ? E.innerNoRadius : E.inner,
+        className: v ? E.innerNoRadius : E.inner,
         children: I.map((e, i) => {
-          if (!x.current && v.animationType === d.Q.PERSISTENT && null != v.staticFrameSrc && 0 === i && !0 === c) {
+          if (!x.current && b.animationType === d.Q.PERSISTENT && null != b.staticFrameSrc && 0 === i && !0 === c) {
             var o, a, s, l;
             let {
               staticFrameSrc: n
-            } = v;
+            } = b;
             return (0, r.jsx)("img", {
               className: E.effect,
               style: {
@@ -106,7 +106,7 @@ let y = e => {
           }
           return (0, r.jsx)(p.Z, {
             layerConfig: e,
-            animationType: v.animationType,
+            animationType: b.animationType,
             ticking: x.current,
             time: P,
             accessibilityLabel: R,
@@ -166,7 +166,7 @@ let y = e => {
       noBorderRadius: e.noBorderRadius,
       isHovering: e.isHovering,
       useOpacityOnHover: e.useOpacityOnHover
-    }) : o ? (0, r.jsx)(y, b({
+    }) : o ? (0, r.jsx)(y, v({
       profileEffectConfig: f
     }, e)) : (0, r.jsx)(h.Z, {
       profileEffectConfig: f,

@@ -58,8 +58,8 @@ function g(e) {
   let o, _, h, {
       className: g,
       activeCommand: E,
-      activeOption: v,
-      optionStates: b,
+      activeOption: b,
+      optionStates: v,
       channelId: y
     } = e,
     O = i.useCallback(e => {
@@ -86,9 +86,9 @@ function g(e) {
       })
     }, [y]);
   if (null == E) return null;
-  if (null != v) {
-    let e = b[v.name].lastValidationResult;
-    o = v.displayName, _ = v.displayDescription, h = (null == e ? void 0 : e.success) ? null : null == e ? void 0 : e.error
+  if (null != b) {
+    let e = v[b.name].lastValidationResult;
+    o = b.displayName, _ = b.displayDescription, h = (null == e ? void 0 : e.success) ? null : null == e ? void 0 : e.error
   } else o = "".concat(u.GI).concat(E.displayName), _ = E.displayDescription, h = null;
   return (0, r.jsxs)("div", {
     className: a()(g, f.bar),

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Fe: () => y,
-  Ih: () => b,
+  Ih: () => v,
   Lz: () => O
 }), n(47120);
 var r = n(192379),
@@ -43,12 +43,12 @@ function E(e) {
   }
 }
 
-function v(e, t) {
+function b(e, t) {
   return (0, i.cj)([u.Z, s.default], () => (0, _.Z)(u.Z, s.default, t, e), [e, t])
 }
 
-function b(e, t, n) {
-  let i = v(e, t),
+function v(e, t, n) {
+  let i = b(e, t),
     {
       notPlayable: o,
       isCurrentUser: a,
@@ -74,7 +74,7 @@ function b(e, t, n) {
 
 function y(e, t, n, i) {
   let o = null != i ? i : c.ZP.getName(t),
-    a = v(e, t),
+    a = b(e, t),
     {
       notPlayable: s,
       syncingWithUser: l,
@@ -84,11 +84,11 @@ function y(e, t, n, i) {
     {
       loading: h,
       startLoading: g,
-      clearLoading: b
+      clearLoading: v
     } = E(a),
     y = r.useCallback(() => {
-      g(), (0, p.Z)(a, m.kG.USER_ACTIVITY_SYNC, n).catch(b)
-    }, [a, n, g, b]);
+      g(), (0, p.Z)(a, m.kG.USER_ACTIVITY_SYNC, n).catch(v)
+    }, [a, n, g, v]);
   return {
     label: (0, d.Z)(a, m.kG.USER_ACTIVITY_SYNC),
     tooltip: (0, f.Z)(a, m.kG.USER_ACTIVITY_SYNC, o),
@@ -100,7 +100,7 @@ function y(e, t, n, i) {
 }
 
 function O(e, t, n) {
-  let i = v(e, t),
+  let i = b(e, t),
     {
       notPlayable: o,
       syncingWithUser: a,

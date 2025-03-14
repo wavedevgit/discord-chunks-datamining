@@ -30,12 +30,12 @@ function u(e) {
     image: g,
     canAnimate: m,
     size: u
-  }) : void 0, v = void 0 !== _ ? _ : E, b = (0, i.e7)([s.ZP], () => null != n && null != t ? s.ZP.getMember(n, t.id) : null);
+  }) : void 0, b = void 0 !== _ ? _ : E, v = (0, i.e7)([s.ZP], () => null != n && null != t ? s.ZP.getMember(n, t.id) : null);
   return {
-    avatarSrc: r.useMemo(() => null != t ? (0, o.SG)(v, b, t, {
+    avatarSrc: r.useMemo(() => null != t ? (0, o.SG)(b, v, t, {
       canAnimate: m,
       size: u
-    }) : void 0, [v, b, t, m, u]),
+    }) : void 0, [b, v, t, m, u]),
     isAvatarAnimating: m,
     eventHandlers: {
       onMouseEnter: p,

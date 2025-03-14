@@ -1,29 +1,30 @@
-/** Chunk was on 68241 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  R: () => o
+  R: () => c
 });
 var r = n(200651);
 n(192379);
-var l = n(120356),
-  s = n.n(l),
+var i = n(120356),
+  o = n.n(i),
   a = n(686546),
-  i = n(624138),
-  c = n(243676);
+  s = n(624138),
+  l = n(243676);
 
-function o(e) {
+function c(e) {
   let {
     guildName: t,
     iconSize: n,
-    className: l
-  } = e, o = (0, i.Zg)(t);
+    className: i
+  } = e, c = (0, s.Zg)(t);
   return (0, r.jsx)(a.ZP, {
     mask: a.ZP.Masks.CLAN_ICON,
     width: n,
     height: n,
-    className: l,
+    className: i,
     children: (0, r.jsx)("div", {
-      className: s()(c.guildIconImage, c.acronym),
-      children: o
+      className: o()(l.guildIconImage, l.acronym),
+      children: c
     })
   })
 }

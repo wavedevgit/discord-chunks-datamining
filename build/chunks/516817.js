@@ -23,18 +23,18 @@ function p(e) {
     content: s,
     isSpeaking: u,
     placement: p
-  } = e, m = (0, d.p)(t, n, o, s, p), g = (0, l.i)(u, 2e3), E = (0, c.C)(n, o, g), [v, b] = (0, i.useState)(t), [y, O] = (0, i.useState)(!1), [I, S] = (0, i.useState)(!1);
+  } = e, m = (0, d.p)(t, n, o, s, p), g = (0, l.i)(u, 2e3), E = (0, c.C)(n, o, g, p === f.i.ACCOUNT), [b, v] = (0, i.useState)(t), [y, O] = (0, i.useState)(!1), [I, S] = (0, i.useState)(!1);
   if ((0, i.useEffect)(() => {
-      if (null == v || null != t || y) null != t && (b(t), O(!1));
+      if (null == b || null != t || y) null != t && (v(t), O(!1));
       else {
         O(!0);
         let e = setTimeout(() => {
-          O(!1), b(null)
+          O(!1), v(null)
         }, 400);
         return () => clearTimeout(e)
       }
-    }, [t, v, y]), null == t) return null;
-  let T = null != t ? t : v;
+    }, [t, b, y]), null == t) return null;
+  let T = null != t ? t : b;
   return null == T ? null : (0, r.jsx)("div", {
     className: a()(_.container, {
       [_.containerExit]: y,
@@ -55,7 +55,7 @@ function p(e) {
         maskImage: m.maskImage
       },
       animate: E,
-      loop: !!(n || u),
+      loop: !0 === E && !!(n || g),
       onLoad: () => S(!0)
     })
   })

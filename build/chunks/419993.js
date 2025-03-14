@@ -26,8 +26,8 @@ function E(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let v = (0, l.Z)(),
-  b = (0, l.Z)(),
+let b = (0, l.Z)(),
+  v = (0, l.Z)(),
   y = (0, l.Z)(),
   O = 10,
   I = 7.23;
@@ -105,7 +105,7 @@ class S extends(r = o.Component) {
   renderErrorMessage() {
     let e = this.getErrorMessage();
     return null == e ? null : (0, i.jsx)(f.x, {
-      id: v,
+      id: b,
       variant: "text-xs/normal",
       color: "text-danger",
       className: h.errorMessage,
@@ -123,7 +123,7 @@ class S extends(r = o.Component) {
       maxLength: u,
       allowOverflow: f,
       spellCheck: E,
-      resizeable: v,
+      resizeable: b,
       className: O,
       id: I,
       rows: S,
@@ -147,7 +147,7 @@ class S extends(r = o.Component) {
             className: s()(m.inputDefault, h.textArea, g.scrollbarDefault, O, {
               [m.error]: w,
               [m.disabled]: n,
-              [h.resizeable]: v
+              [h.resizeable]: b
             }),
             "aria-labelledby": D,
             "aria-describedby": L,
@@ -173,7 +173,7 @@ class S extends(r = o.Component) {
             ref: R
           })
         }), null != l && (0, i.jsx)(d.n, {
-          id: b,
+          id: v,
           children: p.NW.format(p.t["bmQU//"], {
             minLength: l
           })
@@ -195,7 +195,7 @@ class S extends(r = o.Component) {
         minLength: n,
         error: r
       } = this.props, i = [], o = null === (e = this.context) || void 0 === e ? void 0 : e.errorId;
-      return null != o && i.push(o), null != r ? i.push(v) : (null != t && i.push(y), null != n && i.push(b)), i.length > 0 ? i.join(" ") : void 0
+      return null != o && i.push(o), null != r ? i.push(b) : (null != t && i.push(y), null != n && i.push(v)), i.length > 0 ? i.join(" ") : void 0
     }), E(this, "onChange", e => {
       let {
         onChange: t,

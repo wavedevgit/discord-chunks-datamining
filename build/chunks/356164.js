@@ -116,7 +116,7 @@ function E(e) {
   }).handleSearchFailure(i)
 }
 
-function v(e) {
+function b(e) {
   let {
     ignoreQueries: t
   } = e, n = new Set(t);
@@ -124,7 +124,7 @@ function v(e) {
     null != e.query && (n.has(e.query) || c.delete(t))
   })
 }
-class b extends(r = i.ZP.Store) {
+class v extends(r = i.ZP.Store) {
   getGuild(e) {
     return u.get(e)
   }
@@ -156,11 +156,11 @@ class b extends(r = i.ZP.Store) {
     })
   }
 }
-l(b, "displayName", "GlobalDiscoveryServersSearchResultsStore");
-let y = new b(o.Z, {
+l(v, "displayName", "GlobalDiscoveryServersSearchResultsStore");
+let y = new v(o.Z, {
   CONNECTION_OPEN: h,
   GLOBAL_DISCOVERY_SERVERS_SEARCH_START: m,
   GLOBAL_DISCOVERY_SERVERS_SEARCH_SUCCESS: g,
   GLOBAL_DISCOVERY_SERVERS_SEARCH_FAILURE: E,
-  GLOBAL_DISCOVERY_SERVERS_SEARCH_CLEAR: v
+  GLOBAL_DISCOVERY_SERVERS_SEARCH_CLEAR: b
 })

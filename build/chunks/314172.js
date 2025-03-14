@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => v
 });
 var r = n(200651);
 n(192379);
@@ -51,19 +51,19 @@ function E(e, t) {
   return n
 }
 
-function v(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function b(e) {
+function v(e) {
   let {
     guild: t,
     guildMember: n,
     numRoles: m,
     highestRole: E,
-    onAddRole: b,
+    onAddRole: v,
     buttonRef: y
   } = e, O = (0, i.e7)([c.Z], () => c.Z.roleStyle);
   if (!(0, i.e7)([d.Z], () => d.Z.can(_.Plq.MANAGE_ROLES, t))) return null;
@@ -79,7 +79,7 @@ function b(e) {
         guild: t,
         roleStyle: O,
         roleFilter: I,
-        onSelect: b,
+        onSelect: v,
         onClose: n
       })
     },
@@ -87,7 +87,7 @@ function b(e) {
       text: p.NW.string(p.t.icyMgY),
       "aria-label": !1,
       shouldShow: m > 0,
-      children: (0, r.jsxs)(f.kF, v(g({
+      children: (0, r.jsxs)(f.kF, b(g({
         className: h.button,
         color: o.zx.Colors.CUSTOM,
         themeColor: "none",

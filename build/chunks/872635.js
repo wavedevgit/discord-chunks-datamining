@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   I: () => E,
-  Z: () => v
+  Z: () => b
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -30,7 +30,7 @@ function E(e) {
   } = e, c = null === (t = n.current) || void 0 === t ? void 0 : t.getSlateEditor();
   return null == c ? null : (0, r.jsxs)("div", {
     className: g.buttons,
-    children: [(0, r.jsx)(b, {
+    children: [(0, r.jsx)(v, {
       slateEditor: c,
       markdownSyntax: "bold",
       children: (0, r.jsx)(l.mY4, {
@@ -38,7 +38,7 @@ function E(e) {
         color: "currentColor",
         className: a()(g.icon, o)
       })
-    }), (0, r.jsx)(b, {
+    }), (0, r.jsx)(v, {
       slateEditor: c,
       markdownSyntax: "italics",
       children: (0, r.jsx)(l.h32, {
@@ -46,7 +46,7 @@ function E(e) {
         color: "currentColor",
         className: a()(g.icon, o)
       })
-    }), (0, r.jsx)(b, {
+    }), (0, r.jsx)(v, {
       slateEditor: c,
       markdownSyntax: "strikethrough",
       children: (0, r.jsx)(l.dwl, {
@@ -64,7 +64,7 @@ function E(e) {
         color: "currentColor",
         className: a()(g.icon, o)
       })
-    }), (0, r.jsx)(b, {
+    }), (0, r.jsx)(v, {
       slateEditor: c,
       markdownSyntax: "inlineCode",
       children: (0, r.jsx)(l.nF$, {
@@ -74,7 +74,7 @@ function E(e) {
         color: "currentColor",
         className: a()(g.icon, o)
       })
-    }), (0, r.jsx)(b, {
+    }), (0, r.jsx)(v, {
       slateEditor: c,
       markdownSyntax: "spoiler",
       children: (0, r.jsx)(l.tEF, {
@@ -85,22 +85,22 @@ function E(e) {
     })]
   })
 }
-let v = i.forwardRef(function(e, t) {
+let b = i.forwardRef(function(e, t) {
   var n;
   let {
     editorRef: o,
     containerRef: a,
     options: l
-  } = e, f = i.useRef(null), [_, p] = i.useState(!1), m = i.useRef(), v = i.useContext(c.ZP), b = i.useCallback(() => {
+  } = e, f = i.useRef(null), [_, p] = i.useState(!1), m = i.useRef(), b = i.useContext(c.ZP), v = i.useCallback(() => {
     p(!1), clearTimeout(m.current)
   }, []), y = i.useCallback(e => {
     var t;
-    let n = v.renderWindow;
-    e.target instanceof n.Node && (null === (t = f.current) || void 0 === t ? void 0 : t.contains(e.target)) || b()
-  }, [v, b]), I = i.useCallback(e => {
-    let t = v.renderWindow;
+    let n = b.renderWindow;
+    e.target instanceof n.Node && (null === (t = f.current) || void 0 === t ? void 0 : t.contains(e.target)) || v()
+  }, [b, v]), I = i.useCallback(e => {
+    let t = b.renderWindow;
     if (e.target instanceof t.Element) {
-      if (0 !== e.button) b();
+      if (0 !== e.button) v();
       else {
         var n;
         let r = e.target instanceof t.Node && (null === (n = f.current) || void 0 === n ? void 0 : n.contains(e.target));
@@ -111,16 +111,16 @@ let v = i.forwardRef(function(e, t) {
           p(r || null != n && null != i && i.contains(n))
         }, 100)
       }
-    } else b()
-  }, [v, a, b]);
+    } else v()
+  }, [b, a, v]);
   i.useImperativeHandle(t, () => ({
-    hide: b
-  }), [b]), i.useEffect(() => {
-    let e = v.renderWindow;
-    return e.document.addEventListener("keydown", b), e.document.addEventListener("mousedown", y), e.document.addEventListener("mouseup", I), e.addEventListener("focus", b), e.addEventListener("blur", b), () => {
-      e.document.removeEventListener("keydown", b), e.document.removeEventListener("mousedown", y), e.document.removeEventListener("mouseup", I), e.removeEventListener("focus", b), e.removeEventListener("blur", b), clearTimeout(m.current)
+    hide: v
+  }), [v]), i.useEffect(() => {
+    let e = b.renderWindow;
+    return e.document.addEventListener("keydown", v), e.document.addEventListener("mousedown", y), e.document.addEventListener("mouseup", I), e.addEventListener("focus", v), e.addEventListener("blur", v), () => {
+      e.document.removeEventListener("keydown", v), e.document.removeEventListener("mousedown", y), e.document.removeEventListener("mouseup", I), e.removeEventListener("focus", v), e.removeEventListener("blur", v), clearTimeout(m.current)
     }
-  }, [v, b, y, I]);
+  }, [b, v, y, I]);
   let {
     x: S,
     y: T
@@ -147,11 +147,11 @@ let v = i.forwardRef(function(e, t) {
     m.setStart(c.anchorNode, c.anchorOffset), m.setEnd(c.focusNode, c.focusOffset);
     let g = m.getBoundingClientRect(),
       E = d.x === p.x,
-      v = E ? g.x : Math.min(d.x, p.x),
-      b = E ? g.x + g.width : Math.max(d.x, p.x),
+      b = E ? g.x : Math.min(d.x, p.x),
+      v = E ? g.x + g.width : Math.max(d.x, p.x),
       y = null !== (r = null === (n = a.current) || void 0 === n ? void 0 : null === (t = n.getBoundingClientRect()) || void 0 === t ? void 0 : t.y) && void 0 !== r ? r : 0;
     return {
-      x: v + (b - v) / 2,
+      x: b + (v - b) / 2,
       y: Math.max(y, Math.min(p.y, d.y))
     }
   }, [a, _, o]), [N, A] = i.useState(0), [C, R] = i.useState(0);
@@ -186,7 +186,7 @@ let v = i.forwardRef(function(e, t) {
   })
 });
 
-function b(e) {
+function v(e) {
   let {
     slateEditor: t,
     markdownSyntax: n,

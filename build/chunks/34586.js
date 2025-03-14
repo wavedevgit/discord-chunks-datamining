@@ -1,19 +1,19 @@
-/** Chunk was on 94289 **/
-n.d(t, {
-  E: () => s
+/** Chunk was on 15814 **/
+r.d(t, {
+  E: () => o
 });
-var r = n(442837),
-  l = n(650774),
-  a = n(206583),
-  i = n(981631);
+var n = r(442837),
+  l = r(650774),
+  i = r(206583),
+  a = r(981631);
 
-function s(e) {
-  return (0, r.e7)([l.Z], () => {
+function o(e) {
+  return (0, n.e7)([l.Z], () => {
     if (null == e) return;
     let t = l.Z.getMemberCount(e.id),
-      n = e.hasFeature(i.oNc.ACTIVITY_FEED_ENABLED_BY_USER),
-      r = e.hasFeature(i.oNc.ACTIVITY_FEED_DISABLED_BY_USER),
-      s = null != t && t < a.k4;
-    return n || r ? n : s
+      r = e.hasFeature(a.oNc.ACTIVITY_FEED_ENABLED_BY_USER),
+      n = e.hasFeature(a.oNc.ACTIVITY_FEED_DISABLED_BY_USER),
+      o = null != t && t < i.k4;
+    return r || n ? r : o
   })
 }

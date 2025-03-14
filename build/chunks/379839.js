@@ -79,6 +79,6 @@ function g(e) {
   if (o === s.i.ACCOUNT) return n === c.BR.LIGHT ? "linear-gradient(90deg, ".concat(h).concat(u, " 0%, ").concat(h).concat(f, " 100%)") : "linear-gradient(90deg, ".concat(h).concat(u, " 0%, ").concat(h).concat(_, " 100%)");
   let g = a && o === s.i.CHANNEL ? "var(--bg-overlay-selected, var(--background-mod-subtle))" : "var(--background-modifier-selected)",
     E = r ? "var(--background-modifier-hover)" : i ? g : "".concat(h, "00"),
-    v = "".concat(h).concat(m ? n !== c.BR.LIGHT ? p : f : d);
-  return "linear-gradient(90deg, ".concat(E, " 0%, ").concat(v, " 100%)")
+    b = "".concat(h).concat(m ? n !== c.BR.LIGHT ? p : f : d);
+  return "linear-gradient(90deg, ".concat(E, " 0%, ").concat(b, " 100%)")
 }

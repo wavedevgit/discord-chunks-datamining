@@ -113,12 +113,12 @@ function E(e, t) {
   t(window.confirm(e))
 }
 
-function v() {
+function b() {
   var e = window.navigator.userAgent;
   return (-1 === e.indexOf("Android 2.") && -1 === e.indexOf("Android 4.0") || -1 === e.indexOf("Mobile Safari") || -1 !== e.indexOf("Chrome") || -1 !== e.indexOf("Windows Phone")) && window.history && "pushState" in window.history
 }
 
-function b() {
+function v() {
   return -1 === window.navigator.userAgent.indexOf("Trident")
 }
 
@@ -143,8 +143,8 @@ function T() {
 function N(e) {
   void 0 === e && (e = {}), g || (0, a.Z)(!1);
   var t = window.history,
-    n = v(),
-    i = !b(),
+    n = b(),
+    i = !v(),
     o = e,
     l = o.forceRefresh,
     c = void 0 !== l && l,
@@ -199,7 +199,7 @@ function N(e) {
       n = U.indexOf(t.key); - 1 === n && (n = 0);
     var r = U.indexOf(e.key); - 1 === r && (r = 0);
     var i = n - r;
-    i && (x = !0, F(i))
+    i && (x = !0, V(i))
   }
   var j = C(T()),
     U = [j.key];
@@ -234,7 +234,7 @@ function N(e) {
     })
   }
 
-  function V(e, r) {
+  function F(e, r) {
     var i = "REPLACE",
       o = p(e, r, R(), Q.location);
     P.confirmTransitionTo(o, i, h, function(e) {
@@ -258,16 +258,16 @@ function N(e) {
     })
   }
 
-  function F(e) {
+  function V(e) {
     t.go(e)
   }
 
   function Z() {
-    F(-1)
+    V(-1)
   }
 
   function H() {
-    F(1)
+    V(1)
   }
   var W = 0;
 
@@ -298,8 +298,8 @@ function N(e) {
     location: j,
     createHref: G,
     push: B,
-    replace: V,
-    go: F,
+    replace: F,
+    go: V,
     goBack: Z,
     goForward: H,
     block: z,
@@ -357,11 +357,11 @@ function L(e) {
     c = void 0 === l ? "slash" : l,
     f = e.basename ? d(s(e.basename)) : "",
     h = C[c],
-    v = h.encodePath,
-    b = h.decodePath;
+    b = h.encodePath,
+    v = h.decodePath;
 
   function O() {
-    var e = b(P());
+    var e = v(P());
     return f && (e = u(e, f)), p(e)
   }
   var I = m();
@@ -378,7 +378,7 @@ function L(e) {
 
   function x() {
     var e = P(),
-      t = v(e);
+      t = b(e);
     if (e !== t) D(t);
     else {
       var n = O(),
@@ -409,24 +409,24 @@ function L(e) {
     i && (T = !0, H(i))
   }
   var j = P(),
-    U = v(j);
+    U = b(j);
   j !== U && D(U);
   var G = O(),
     B = [_(G)];
 
-  function V(e) {
+  function F(e) {
     var t = document.querySelector("base"),
       n = "";
-    return t && t.getAttribute("href") && (n = R(window.location.href)), n + "#" + v(f + _(e))
+    return t && t.getAttribute("href") && (n = R(window.location.href)), n + "#" + b(f + _(e))
   }
 
-  function F(e, t) {
+  function V(e, t) {
     var n = "PUSH",
       r = p(e, void 0, void 0, J.location);
     I.confirmTransitionTo(r, n, o, function(e) {
       if (e) {
         var t = _(r),
-          i = v(f + t),
+          i = b(f + t),
           o = P() !== i;
         if (o) {
           N = t, w(i);
@@ -447,7 +447,7 @@ function L(e) {
     I.confirmTransitionTo(r, n, o, function(e) {
       if (e) {
         var t = _(r),
-          i = v(f + t),
+          i = b(f + t),
           o = P() !== i;
         o && (N = t, D(i));
         var a = B.indexOf(_(J.location)); - 1 !== a && (B[a] = t), S({
@@ -496,8 +496,8 @@ function L(e) {
     length: t.length,
     action: "POP",
     location: G,
-    createHref: V,
-    push: F,
+    createHref: F,
+    push: V,
     replace: Z,
     go: H,
     goBack: W,
@@ -537,7 +537,7 @@ function M(e) {
     }),
     E = _;
 
-  function v(e, t) {
+  function b(e, t) {
     var r = "PUSH",
       i = p(e, t, f(), A.location);
     u.confirmTransitionTo(i, r, n, function(e) {
@@ -555,7 +555,7 @@ function M(e) {
     })
   }
 
-  function b(e, t) {
+  function v(e, t) {
     var r = "REPLACE",
       i = p(e, t, f(), A.location);
     u.confirmTransitionTo(i, r, n, function(e) {
@@ -606,8 +606,8 @@ function M(e) {
     index: h,
     entries: g,
     createHref: E,
-    push: v,
-    replace: b,
+    push: b,
+    replace: v,
     go: y,
     goBack: O,
     goForward: I,

@@ -22,7 +22,7 @@ var r = n(759174),
   g = n(590415),
   E = n(974609);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,14 +31,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -108,11 +108,11 @@ class R {
   _getParticipantsForUser(e, t) {
     var n, r, i;
     let s;
-    let v = [],
+    let b = [],
       y = f.Z.getVoiceStateForChannel(this.channelId, e);
-    if (null == y) return v;
+    if (null == y) return b;
     let I = d.default.getUser(e);
-    if (null == I) return null != this.guildId && m.Z.isPublic(this.channelId) && l.Z.requestMember(this.guildId, e), v;
+    if (null == I) return null != this.guildId && m.Z.isPublic(this.channelId) && l.Z.requestMember(this.guildId, e), b;
     let S = null != t ? t[0] : null,
       T = null != this.guildId ? c.ZP.getMember(this.guildId, e) : null,
       N = null !== (n = null == T ? void 0 : T.nick) && void 0 !== n ? n : p.ZP.getName(this.guildId, this.channelId, I),
@@ -130,22 +130,22 @@ class R {
         isFriend: u.Z.isFriend(I.id),
         connectedOn: null !== (r = null == S ? void 0 : S.connectedOn) && void 0 !== r ? r : Date.now()
       },
-      C = O(b({}, A), {
+      C = O(v({}, A), {
         type: "VOICE",
         id: I.id,
         rtsState: (0, g.gf)(y)
       });
-    v.push(C);
+    b.push(C);
     let R = null !== (i = a.Z.getStreamForUser(e, this.guildId)) && void 0 !== i ? i : a.Z.getActiveStreamForUser(e, this.guildId);
     if (null != R && R.channelId === this.channelId) {
       let e = (0, o.V9)(R);
-      s = O(b({}, A), {
+      s = O(v({}, A), {
         id: e,
         type: "STREAM",
         rtsState: g.xO.NONE
-      }), v.push(s)
+      }), b.push(s)
     }
-    return v
+    return b
   }
   updateParticipant(e) {
     let t = this.participants[e],
@@ -183,6 +183,6 @@ class R {
   }
   constructor(e) {
     var t;
-    v(this, "channelId", void 0), v(this, "guildId", void 0), v(this, "participants", {}), v(this, "_participantsIndex", new r.h(C, T)), v(this, "_requestToSpeakIndex", new r.h(() => [], N)), this.channelId = e, this.guildId = null === (t = s.Z.getChannel(e)) || void 0 === t ? void 0 : t.getGuildId()
+    b(this, "channelId", void 0), b(this, "guildId", void 0), b(this, "participants", {}), b(this, "_participantsIndex", new r.h(C, T)), b(this, "_requestToSpeakIndex", new r.h(() => [], N)), this.channelId = e, this.guildId = null === (t = s.Z.getChannel(e)) || void 0 === t ? void 0 : t.getGuildId()
   }
 }

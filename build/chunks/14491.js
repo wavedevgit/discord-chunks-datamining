@@ -58,13 +58,13 @@ function p(e) {
     }, g));
     null != n && ((0, l.JG)(n), null == f || f())
   }
-  let v = "copy-app-link-".concat(t.id);
+  let b = "copy-app-link-".concat(t.id);
   return (0, r.jsx)(o.sNh, {
-    id: v,
+    id: b,
     label: n,
     action: E,
     icon: p ? void 0 : i.x,
     iconLeft: p ? i.x : void 0,
     focusedClassName: h
-  }, v)
+  }, b)
 }

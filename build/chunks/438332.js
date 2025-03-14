@@ -85,12 +85,12 @@ function E(e) {
   })
 }
 
-function v() {
+function b() {
   for (let e in h) p.lastSeenNewlyAddedEmojiIds[e] = h[e]
 }
 
-function b() {
-  p = _, v()
+function v() {
+  p = _, b()
 }
 class y extends(r = a.ZP.PersistedStore) {
   initialize(e) {
@@ -131,7 +131,7 @@ let O = new y(s.Z, {
   LOGOUT: m,
   NEWLY_ADDED_EMOJI_SEEN_ACKNOWLEDGED: g,
   NEWLY_ADDED_EMOJI_SEEN_PENDING: E,
-  NEWLY_ADDED_EMOJI_SEEN_UPDATED: v,
-  CLEAR_CACHES: b,
-  CONNECTION_CLOSED: v
+  NEWLY_ADDED_EMOJI_SEEN_UPDATED: b,
+  CLEAR_CACHES: v,
+  CONNECTION_CLOSED: b
 })

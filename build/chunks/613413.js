@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => b
 }), n(47120), n(26686);
 var r = n(200651),
   i = n(192379),
@@ -36,16 +36,16 @@ function E(e, t) {
   return i
 }
 
-function v() {
+function b() {
   let {
     debugTrackedData: e,
     impressions: t
   } = (0, h.Xo)(e => ({
     debugTrackedData: e.debugTrackedData,
     impressions: e.impressions
-  }), s.X), n = (0, l.e7)([f.default], () => f.default.isAnalyticsDebuggerEnabled), o = (0, l.e7)([d.Z], () => d.Z.isDeveloper), [E, v] = i.useState(!1), b = null != e ? e : {}, {
+  }), s.X), n = (0, l.e7)([f.default], () => f.default.isAnalyticsDebuggerEnabled), o = (0, l.e7)([d.Z], () => d.Z.isDeveloper), [E, b] = i.useState(!1), v = null != e ? e : {}, {
     name: y
-  } = b, O = g(b, ["name"]), I = null != y;
+  } = v, O = g(v, ["name"]), I = null != y;
   return o && n ? (0, r.jsx)(u.ZP, {
     children: (0, r.jsxs)("div", {
       className: a()(m.container, {
@@ -55,7 +55,7 @@ function v() {
       children: [(0, r.jsx)(c.P3F, {
         className: m.minimizeButton,
         onClick: () => {
-          v(!E)
+          b(!E)
         },
         children: E ? (0, r.jsx)(_.Z, {}) : (0, r.jsx)(p.Z, {})
       }), (0, r.jsxs)("div", {

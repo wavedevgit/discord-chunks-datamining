@@ -20,8 +20,8 @@ var r = n(200651),
   m = n(63063),
   g = n(937615),
   E = n(980463),
-  v = n(328908),
-  b = n(992970),
+  b = n(328908),
+  v = n(992970),
   y = n(317951),
   O = n(287941),
   I = n(235894),
@@ -136,17 +136,17 @@ function B(e) {
     message: n,
     onRedeem: o,
     buttonUseState: s
-  } = e, c = null != n, f = c && (0, I.Uw)(n), _ = (0, v.Qj)(t.id, c), {
+  } = e, c = null != n, f = c && (0, I.Uw)(n), _ = (0, b.Qj)(t.id, c), {
     price: h,
     fetchingPrice: m,
     error: g
   } = (0, T.R2)(y.D1), {
-    entitlement: b,
+    entitlement: v,
     fetchedEntitlement: O,
     error: S
   } = (0, T.t6)(y.D1), A = g || S, {
     analyticsLocations: C
-  } = (0, d.ZP)([u.Z.CONFETTI_POTION_MODAL]), R = null != b && !b.consumed, P = m || !O;
+  } = (0, d.ZP)([u.Z.CONFETTI_POTION_MODAL]), R = null != v && !v.consumed, P = m || !O;
   (0, i.useEffect)(() => () => {
     A && (0, E.SN)(y.D1)
   }, [A, c]);
@@ -165,15 +165,15 @@ function B(e) {
     }, [w, C]),
     L = (0, i.useCallback)(() => R ? w() : D(), [w, D, R]),
     x = (0, i.useMemo)(() => {
-      if (null != b) {
+      if (null != v) {
         if ("apply" === s) return 3;
-        if (b.type === N.qc2.DEVELOPER_GIFT) return 1;
+        if (v.type === N.qc2.DEVELOPER_GIFT) return 1;
         if (R) return 2
       }
       return 0
-    }, [b, R, s]),
+    }, [v, R, s]),
     M = (0, i.useMemo)(() => 0 === x ? 1 : f ? 2 : 3 * (null == _), [f, _, x]);
-  return (0, r.jsx)(V, {
+  return (0, r.jsx)(F, {
     channel: t,
     buttonPurchaseState: x,
     buttonDisabledState: M,
@@ -184,7 +184,7 @@ function B(e) {
     isReaction: c
   })
 }
-let V = e => {
+let F = e => {
     let {
       channel: t,
       buttonPurchaseState: n,
@@ -212,12 +212,12 @@ let V = e => {
         y: i,
         w: o,
         h: a
-      }, !0, b.LL.ConfettiPreview)
+      }, !0, v.LL.ConfettiPreview)
     }, [c]), l) ? (0, r.jsx)(z, {}) : null == a ? (0, r.jsx)(K, {}) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: R.modal,
         ref: d,
-        children: (0, r.jsx)(F, {
+        children: (0, r.jsx)(V, {
           channel: t,
           selectedEmoji: c,
           isReaction: u
@@ -230,7 +230,7 @@ let V = e => {
       })]
     })
   },
-  F = e => {
+  V = e => {
     let {
       channel: t,
       selectedEmoji: n,
@@ -278,7 +278,7 @@ let V = e => {
       isReaction: o
     } = e, [a, s] = (0, i.useState)(!1), u = (0, i.useCallback)(() => {
       s(!1)
-    }, []), d = (0, i.useCallback)(e => (0, v.t0)(e, t.id, o), [o, t.id]), {
+    }, []), d = (0, i.useCallback)(e => (0, b.t0)(e, t.id, o), [o, t.id]), {
       emojiName: f,
       selectionText: _
     } = (0, i.useMemo)(() => null == n ? {

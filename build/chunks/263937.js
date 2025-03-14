@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => v
 }), n(47120);
 var r, i = n(442837),
   o = n(433517),
@@ -77,7 +77,7 @@ function E() {
   }
   return t
 }
-class v extends(r = i.ZP.PersistedStore) {
+class b extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     u = null != e ? e : {}, this.syncWith([s.Z], _)
   }
@@ -92,12 +92,12 @@ class v extends(r = i.ZP.PersistedStore) {
     return u[e]
   }
 }
-l(v, "displayName", "UserSettingsOverridesStore"), l(v, "persistKey", "UserSettingsOverridesStore"), l(v, "migrations", [() => {
+l(b, "displayName", "UserSettingsOverridesStore"), l(b, "persistKey", "UserSettingsOverridesStore"), l(b, "migrations", [() => {
   var e;
   let t = null !== (e = o.K.get("UserSettingsStoreOverrides")) && void 0 !== e ? e : {};
   return o.K.remove("UserSettingsStoreOverrides"), t
 }]);
-let b = new v(a.Z, {
+let v = new b(a.Z, {
   USER_SETTINGS_PROTO_UPDATE: E,
   USER_SETTINGS_OVERRIDE_APPLY: m,
   USER_SETTINGS_OVERRIDE_CLEAR: g,

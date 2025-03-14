@@ -26,23 +26,23 @@ let f = {},
   m = null,
   g = "lastChangeLogDate",
   E = null,
-  v = null,
-  b = new Set;
+  b = null,
+  v = new Set;
 
 function y(e) {
   let {
     key: t
   } = e;
-  if (b.has(t)) return !1;
-  (b = new Set(b)).add(t)
+  if (v.has(t)) return !1;
+  (v = new Set(v)).add(t)
 }
 
 function O(e) {
   let {
     key: t
   } = e;
-  if (!b.has(t)) return !1;
-  (b = new Set(b)).delete(t)
+  if (!v.has(t)) return !1;
+  (v = new Set(v)).delete(t)
 }
 
 function I(e) {
@@ -88,7 +88,7 @@ function A(e) {
   let {
     changelogDate: t
   } = e;
-  v = new Date(t), o.K.set(g, t)
+  b = new Date(t), o.K.set(g, t)
 }
 
 function C() {
@@ -99,7 +99,7 @@ class R extends(r = i.ZP.Store) {
     this.waitFor(s.default, c.Z), this.syncWith([s.default], () => !0), this.syncWith([c.Z], C);
     let e = o.K.get(g);
     if (null != e) try {
-      v = new Date(e)
+      b = new Date(e)
     } catch (e) {
       o.K.remove(g)
     }
@@ -128,18 +128,18 @@ class R extends(r = i.ZP.Store) {
     return E
   }
   lastSeenChangelogDate() {
-    return v
+    return b
   }
   getStateForDebugging() {
     return {
       changelogConfig: m,
       loadedChangelogs: _,
       lastSeenChangelogId: E,
-      lastSeenChangelogDate: v
+      lastSeenChangelogDate: b
     }
   }
   isLocked() {
-    return b.size > 0
+    return v.size > 0
   }
 }
 d(R, "displayName", "ChangelogStore");

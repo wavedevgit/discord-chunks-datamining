@@ -19,8 +19,8 @@ var r = n(664751),
   m = n(77498),
   g = n(283595),
   E = n(417363),
-  v = n(626135),
-  b = n(630388),
+  b = n(626135),
+  v = n(630388),
   y = n(877481),
   O = n(358085),
   I = n(573261),
@@ -121,8 +121,8 @@ async function M(e) {
     analyticsLocations: f = [],
     joinUserId: _,
     joinSessionId: m,
-    secret: v,
-    activity: b
+    secret: b,
+    activity: v
   } = e;
   if (i) return await (0, c.Z)({
     applicationId: t,
@@ -133,9 +133,9 @@ async function M(e) {
     analyticsLocations: f,
     joinUserId: _,
     joinSessionId: m,
-    secret: v,
+    secret: b,
     instanceId: void 0,
-    isContextlessActivity: (0, u.Z)(b, A.xjy.EMBEDDED) && (0, u.Z)(b, A.xjy.CONTEXTLESS)
+    isContextlessActivity: (0, u.Z)(v, A.xjy.EMBEDDED) && (0, u.Z)(v, A.xjy.CONTEXTLESS)
   }) ? 0 : Promise.resolve();
   if (h.Z.isConnected(t)) return Promise.resolve();
   let O = null;
@@ -185,7 +185,7 @@ let k = {
     l.Z.dispatch({
       type: "RUNNING_GAME_ADD_OVERRIDE",
       pid: e
-    }), v.default.track(A.rMx.RUNNING_GAME_OVERRIDE_ADDED, {
+    }), b.default.track(A.rMx.RUNNING_GAME_OVERRIDE_ADDED, {
       game_name: t
     })
   },
@@ -195,10 +195,10 @@ let k = {
       let e = g.Z.getActiveLibraryApplication(r.id);
       if (null != e) {
         let r = e.getFlags(),
-          i = b.yE(r, A.eHb.OVERLAY_DISABLED);
-        t && i !== t && (r = b.x9(r, A.eHb.OVERLAY_DISABLED));
-        let o = b.yE(r, A.eHb.OVERLAY_V3_DISABLED);
-        null != n && n !== o && (r = b.x9(r, A.eHb.OVERLAY_V3_DISABLED)), T.h(e.id, e.branchId, r);
+          i = v.yE(r, A.eHb.OVERLAY_DISABLED);
+        t && i !== t && (r = v.x9(r, A.eHb.OVERLAY_DISABLED));
+        let o = v.yE(r, A.eHb.OVERLAY_V3_DISABLED);
+        null != n && n !== o && (r = v.x9(r, A.eHb.OVERLAY_V3_DISABLED)), T.h(e.id, e.branchId, r);
         return
       }
     }

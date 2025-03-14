@@ -1,7 +1,5 @@
-/** Chunk was on 84335 **/
-n.d(t, {
-  M: () => r
-});
+/** Chunk was on web.js **/
+"use strict";
 
 function r(e, t) {
   if (null == e || "" === e) return null;
@@ -11,3 +9,6 @@ function r(e, t) {
     month: "short"
   })
 }
+n.d(t, {
+  M: () => r
+})

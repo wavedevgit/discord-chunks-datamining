@@ -20,8 +20,8 @@ var r = n(200651),
   m = n(687158),
   g = n(471879),
   E = n(502762),
-  v = n(848780),
-  b = n(907179),
+  b = n(848780),
+  v = n(907179),
   y = n(475413),
   O = n(228168),
   I = n(388032),
@@ -58,11 +58,11 @@ function C(e) {
     channelId: a,
     messageId: f,
     roleId: _,
-    onViewBlockedProfileClick: v,
-    newAnalyticsLocations: b = []
+    onViewBlockedProfileClick: b,
+    newAnalyticsLocations: v = []
   } = e, {
     analyticsLocations: N
-  } = (0, u.ZP)([...b, c.Z.BLOCKED_PROFILE_POPOUT]), C = (0, p.ZB)({
+  } = (0, u.ZP)([...v, c.Z.BLOCKED_PROFILE_POPOUT]), C = (0, p.ZB)({
     layout: "BLOCKED_PROFILE_POPOUT",
     userId: t.id,
     guildId: n,
@@ -115,7 +115,7 @@ function C(e) {
                 autoFocus: !0,
                 fullWidth: !1,
                 onClick: () => {
-                  null == v || v(), (0, h.pQ)(A({
+                  null == b || b(), (0, h.pQ)(A({
                     action: "VIEW_BLOCKED_PROFILE",
                     analyticsLocations: N
                   }, C))
@@ -190,7 +190,7 @@ function R(e) {
                 })]
               }), (0, r.jsxs)(l.Kqy, {
                 align: "center",
-                children: [(0, r.jsx)(b.Z, {
+                children: [(0, r.jsx)(v.Z, {
                   isBlocked: w,
                   onClick: () => {
                     null == R || R(), (0, h.pQ)(A({
@@ -198,7 +198,7 @@ function R(e) {
                       analyticsLocations: D
                     }, L))
                   }
-                }), (0, r.jsx)(v.Z, {
+                }), (0, r.jsx)(b.Z, {
                   userId: t.id,
                   onClick: () => {
                     null == R || R(), (0, h.pQ)(A({

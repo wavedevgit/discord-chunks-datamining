@@ -20,8 +20,8 @@ var r = n(200651),
   m = n(1561),
   g = n(481060),
   E = n(384275),
-  v = n(493683),
-  b = n(239091),
+  b = n(493683),
+  v = n(239091),
   y = n(87051),
   O = n(230711),
   I = n(497321),
@@ -42,8 +42,8 @@ var r = n(200651),
   U = n(944486),
   G = n(246946),
   B = n(9156),
-  V = n(768581),
-  F = n(585483),
+  F = n(768581),
+  V = n(585483),
   Z = n(49012),
   H = n(621600),
   W = n(709054),
@@ -283,22 +283,22 @@ let ec = e => {
           children: o.description
         })
       })
-    }, v = (0, w.Z)({
+    }, b = (0, w.Z)({
       id: o.id,
       label: ee.NW.string(ee.t["+NP/b2"])
     }), y = i.useMemo(() => {
-      if (null != v) return e => {
-        (0, b.jW)(e, async () => {
+      if (null != b) return e => {
+        (0, v.jW)(e, async () => {
           let {
             default: e
           } = await n.e("78040").then(n.bind(n, 599382));
           return t => (0, r.jsx)(e, ea(ei({}, t), {
-            items: [v]
+            items: [b]
           }))
         })
       }
-    }, [v]), O = () => {
-      let e = V.ZP.getApplicationIconURL({
+    }, [b]), O = () => {
+      let e = F.ZP.getApplicationIconURL({
           id: o.id,
           icon: o.icon
         }),
@@ -368,10 +368,10 @@ let ec = e => {
       disclosures: d,
       locale: p,
       id: E
-    } = e, b = o.id, O = i.useMemo(() => M.ZP.createFromServer(o), [o]), I = (0, _.e7)([q.Z], () => {
+    } = e, v = o.id, O = i.useMemo(() => M.ZP.createFromServer(o), [o]), I = (0, _.e7)([q.Z], () => {
       var e, t, n, r;
-      return null === (r = q.Z.settings.applications) || void 0 === r ? void 0 : null === (n = r.appSettings) || void 0 === n ? void 0 : null === (t = n[b]) || void 0 === t ? void 0 : null === (e = t.appDmSettings) || void 0 === e ? void 0 : e.dmDisabled
-    }, [b]), S = o.bot, T = (0, _.e7)([j.Z], () => j.Z.getDMFromUserId(null == S ? void 0 : S.id)), N = (0, _.e7)([B.ZP], () => null == T ? null : B.ZP.isChannelMuted(null, T)), [A, R] = i.useState(!1), [w, L] = i.useState(!1), k = D.Z.useExperiment({
+      return null === (r = q.Z.settings.applications) || void 0 === r ? void 0 : null === (n = r.appSettings) || void 0 === n ? void 0 : null === (t = n[v]) || void 0 === t ? void 0 : null === (e = t.appDmSettings) || void 0 === e ? void 0 : e.dmDisabled
+    }, [v]), S = o.bot, T = (0, _.e7)([j.Z], () => j.Z.getDMFromUserId(null == S ? void 0 : S.id)), N = (0, _.e7)([B.ZP], () => null == T ? null : B.ZP.isChannelMuted(null, T)), [A, R] = i.useState(!1), [w, L] = i.useState(!1), k = D.Z.useExperiment({
       location: "Authorized Applications"
     }, {
       autoTrackExposure: !0
@@ -470,8 +470,8 @@ let ec = e => {
           })]
         })
       }
-    }), F = () => {
-      let e = V.ZP.getApplicationIconURL({
+    }), V = () => {
+      let e = F.ZP.getApplicationIconURL({
           id: o.id,
           icon: o.icon
         }),
@@ -508,9 +508,9 @@ let ec = e => {
       })
     }, Z = e => {
       z.hW.updateAsync("applications", t => {
-        b in t.appSettings ? null == t.appSettings[b].appDmSettings ? t.appSettings[b].appDmSettings = h.c$.create({
+        v in t.appSettings ? null == t.appSettings[v].appDmSettings ? t.appSettings[v].appDmSettings = h.c$.create({
           dmDisabled: !e
-        }) : t.appSettings[b].appDmSettings.dmDisabled = !e : t.appSettings[b] = h.dp.create({
+        }) : t.appSettings[v].appDmSettings.dmDisabled = !e : t.appSettings[v] = h.dp.create({
           appDmSettings: h.c$.create({
             dmDisabled: !e
           })
@@ -518,7 +518,7 @@ let ec = e => {
       }, z.fy.INFREQUENT_USER_ACTION)
     }, Y = i.useCallback(async () => {
       if (u()(null != S, "dm channel mute setting requires having a bot user"), null == T) {
-        let e = await v.Z.ensurePrivateChannel(S.id);
+        let e = await b.Z.ensurePrivateChannel(S.id);
         y.Z.updateChannelOverrideSettings(null, e, {
           muted: !1
         }, H.ZB.Unmuted);
@@ -587,7 +587,7 @@ let ec = e => {
     return (0, r.jsx)("div", {
       className: a()(et.authedAppV2, en.marginBottom8),
       children: (0, r.jsx)(g.y5t, {
-        component: F(),
+        component: V(),
         children: (0, r.jsxs)("div", {
           className: et.appDetailsContainer,
           children: [G(), U(), K(), $()]
@@ -622,7 +622,7 @@ let ec = e => {
           id: t,
           application: n
         } = e;
-        E.Z.delete(t), F.S.safeDispatch($.CkL.HIDE_APP_LAUNCHER_BUTTON_APP_INSTALLED_EDUCATION, {
+        E.Z.delete(t), V.S.safeDispatch($.CkL.HIDE_APP_LAUNCHER_BUTTON_APP_INSTALLED_EDUCATION, {
           applicationId: n.id
         });
         let r = a.get(n.id);
@@ -642,7 +642,7 @@ let ec = e => {
       m = () => {
         p("")
       },
-      v = () => (0, r.jsx)("div", {
+      b = () => (0, r.jsx)("div", {
         className: et.searchContainer,
         children: (0, r.jsx)(g.E1j, {
           size: g.E1j.Sizes.MEDIUM,
@@ -653,7 +653,7 @@ let ec = e => {
           "aria-label": ee.NW.string(ee.t["5prvKS"])
         })
       }),
-      b = (e, t) => (0, r.jsxs)(es, {
+      v = (e, t) => (0, r.jsxs)(es, {
         className: et.__invalid_marginTop20,
         children: [(0, r.jsx)(g.oxh, {
           darkSrc: n(701972),
@@ -672,10 +672,10 @@ let ec = e => {
       O = () => null == t || null == y ? (0, r.jsx)(g.$jN, {
         className: en.marginTop20,
         type: g.$jN.Type.SPINNING_CIRCLE
-      }) : 0 === t.length ? b(ee.NW.string(ee.t.CpPv5u), ee.NW.string(ee.t["E+SM6e"])) : 0 === y.length ? (0, r.jsxs)(r.Fragment, {
-        children: [v(), b(null, ee.NW.string(ee.t.EVWFNj))]
+      }) : 0 === t.length ? v(ee.NW.string(ee.t.CpPv5u), ee.NW.string(ee.t["E+SM6e"])) : 0 === y.length ? (0, r.jsxs)(r.Fragment, {
+        children: [b(), v(null, ee.NW.string(ee.t.EVWFNj))]
       }) : (0, r.jsxs)(r.Fragment, {
-        children: [v(), y.sort((e, t) => Number(t.id) - Number(e.id)).map(e => u ? (0, r.jsx)(ep, ei({
+        children: [b(), y.sort((e, t) => Number(t.id) - Number(e.id)).map(e => u ? (0, r.jsx)(ep, ei({
           locale: o,
           onDelete: () => d(e),
           selectedChannelId: null == s ? void 0 : s.id,

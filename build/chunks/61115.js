@@ -21,7 +21,7 @@ var r = n(200651),
   g = n(942172),
   E = n(677486);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -69,7 +69,7 @@ function T(e) {
     transitionState: o,
     onClose: a,
     onSubmit: f
-  } = e, p = (0, _.B4)(t), [v, y] = i.useState(0), [T, A] = (0, l.q_F)(() => ({
+  } = e, p = (0, _.B4)(t), [b, y] = i.useState(0), [T, A] = (0, l.q_F)(() => ({
     from: {
       width: "0%"
     },
@@ -77,7 +77,7 @@ function T(e) {
       duration: I
     }
   })), R = e => {
-    f(), y(1), null != p && d.default.track(h.rMx.QUEST_SURVEY_SUBMITTED, O(b({}, C(p, n)), {
+    f(), y(1), null != p && d.default.track(h.rMx.QUEST_SURVEY_SUBMITTED, O(v({}, C(p, n)), {
       choice: e.text,
       choice_id: e.key
     }))
@@ -93,7 +93,7 @@ function T(e) {
     size: l.CgR.DYNAMIC,
     className: g.modalRoot,
     children: (0, r.jsxs)(l.MyZ, {
-      activeSlide: v,
+      activeSlide: b,
       width: S,
       onSlideReady: P,
       children: [(0, r.jsxs)(l.Mi4, {
@@ -179,7 +179,7 @@ function A(e) {
     let {
       default: i
     } = await Promise.resolve().then(n.bind(n, 61115));
-    return n => (0, r.jsx)(i, O(b({}, n, e), {
+    return n => (0, r.jsx)(i, O(v({}, n, e), {
       onSubmit: () => {
         t = !0
       }
@@ -187,7 +187,7 @@ function A(e) {
   }, {
     onCloseCallback: () => {
       let n = p.Z.getQuest(e.questId);
-      null != n && d.default.track(h.rMx.QUEST_SURVEY_DISMISSED, O(b({}, C(n, e.survey)), {
+      null != n && d.default.track(h.rMx.QUEST_SURVEY_DISMISSED, O(v({}, C(n, e.survey)), {
         submitted: t
       }))
     }

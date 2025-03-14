@@ -18,8 +18,8 @@ var i, o = n(392711),
   m = n(592125),
   g = n(703558),
   E = n(984933),
-  v = n(271383),
-  b = n(430824),
+  b = n(271383),
+  v = n(430824),
   y = n(496675),
   O = n(306680),
   I = n(944486),
@@ -48,12 +48,12 @@ let w = "seenQSTutorial",
   U = null,
   G = [],
   B = null,
-  V = 0,
-  F = [],
+  F = 0,
+  V = [],
   Z = [];
 
 function H() {
-  j = b.Z.getGuildCount() >= 3 || a().size(m.Z.getMutablePrivateChannels()) >= 20, F = []
+  j = v.Z.getGuildCount() >= 3 || a().size(m.Z.getMutablePrivateChannels()) >= 20, V = []
 }
 
 function W(e) {
@@ -144,7 +144,7 @@ function K() {
 function z(e, t) {
   switch (U) {
     case u.h8.USER: {
-      let t = b.Z.getGuild(S.Z.getGuildId());
+      let t = v.Z.getGuild(S.Z.getGuildId());
       e.unshift((0, u.o6)(null != t ? R.NW.formatToPlainString(R.t.FREzQk, {
         name: t.name
       }) : R.NW.string(R.t.XFYW1t))), G = e;
@@ -165,7 +165,7 @@ function z(e, t) {
     default:
       G = e
   }
-  if (t !== B) B = t, V = Math.max(t.length, V), M = (0, u.gJ)(u.a8.DOWN, -1, G);
+  if (t !== B) B = t, F = Math.max(t.length, F), M = (0, u.gJ)(u.a8.DOWN, -1, G);
   else {
     let e = G[M];
     null != e && e.type === u.h8.HEADER && (M = (0, u.gJ)(u.a8.DOWN, M, G))
@@ -182,7 +182,7 @@ function q(e) {
   null != o && a.add("guild:".concat(o)), r = null != r ? r : new u.ZP(J, x, null != i ? L : D, {
     frecencyBoosters: !0,
     blacklist: a
-  }), B = null, V = n.length, U = i, r.search(n)
+  }), B = null, F = n.length, U = i, r.search(n)
 }
 
 function Q(e) {
@@ -204,11 +204,11 @@ function X(e, t) {
 }
 
 function J(e, t) {
-  !X(e = "" === (t = t.trim()).trim() ? K() : e, F) && (F = e, z(e, t))
+  !X(e = "" === (t = t.trim()).trim() ? K() : e, V) && (V = e, z(e, t))
 }
 
 function $() {
-  B = null, V = 0, F = [], null != r && (r.destroy(), r = null)
+  B = null, F = 0, V = [], null != r && (r.destroy(), r = null)
 }
 
 function ee(e) {
@@ -248,7 +248,7 @@ function en() {
 class er extends(i = s.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    this.waitFor(v.ZP, b.Z, m.Z), this.syncWith([p.Z], () => !0), k = l.K.get(w) || !1, Z = null !== (t = null == e ? void 0 : e.channelHistory) && void 0 !== t ? t : []
+    this.waitFor(b.ZP, v.Z, m.Z), this.syncWith([p.Z], () => !0), k = l.K.get(w) || !1, Z = null !== (t = null == e ? void 0 : e.channelHistory) && void 0 !== t ? t : []
   }
   getState() {
     return {
@@ -282,7 +282,7 @@ class er extends(i = s.ZP.PersistedStore) {
       results: G,
       selectedIndex: M,
       seenTutorial: k,
-      maxQueryLength: V
+      maxQueryLength: F
     }
   }
 }

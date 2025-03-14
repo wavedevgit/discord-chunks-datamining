@@ -6,17 +6,17 @@ var r = n(200651),
   i = n(192379),
   o = n(990547),
   a = n(442837),
-  l = n(481060),
-  s = n(893776),
+  s = n(481060),
+  l = n(893776),
   c = n(232567),
   u = n(388905),
   d = n(353926),
   h = n(82554),
   p = n(726521),
-  f = n(185625),
-  g = n(314897),
+  g = n(185625),
+  m = n(314897),
   _ = n(63063),
-  m = n(981631),
+  f = n(981631),
   b = n(388032),
   x = n(354689),
   N = n(802138);
@@ -40,7 +40,7 @@ function v(e) {
   return e
 }
 
-function I(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,59 +53,59 @@ function I(e, t) {
   }), e
 }
 a.ZP.initialize();
-let E = e => {
+let I = e => {
     let {
       title: t,
       menuType: i
     } = e, a = () => {
-      (0, l.ZDy)(async () => {
+      (0, s.ZDy)(async () => {
         let {
           default: e
         } = await n.e("93288").then(n.bind(n, 396410));
-        return t => (0, r.jsx)(e, I(v({}, t), {
-          onSuccess: s,
+        return t => (0, r.jsx)(e, E(v({}, t), {
+          onSuccess: l,
           headerText: b.NW.string(b.t.ZLRYGR),
           confirmButtonText: b.NW.string(b.t.PDTjLC),
-          confirmButtonColor: l.zxk.Colors.BRAND,
+          confirmButtonColor: s.zxk.Colors.BRAND,
           impressionName: o.ImpressionNames.URF_ENTER_EMAIL
         }))
       })
-    }, s = e => {
+    }, l = e => {
       let t = async () => {
-        await (0, f.yL)(i, e)
-      }, a = async t => await (0, f.RV)(i, e, t), s = e => {
+        await (0, g.yL)(i, e)
+      }, a = async t => await (0, g.RV)(i, e, t), l = e => {
         let t = null == e ? void 0 : e.token;
         i === h.BM.MESSAGE ? (0, p.eE)(t) : i === h.BM.USER && (0, p.JM)(t)
       };
-      t(), (0, l.ZDy)(async () => {
+      t(), (0, s.ZDy)(async () => {
         let {
           default: e
         } = await n.e("94566").then(n.bind(n, 965072));
-        return n => (0, r.jsx)(e, I(v({}, n), {
+        return n => (0, r.jsx)(e, E(v({}, n), {
           onFormSubmit: a,
           onResend: t,
-          onSuccess: s,
+          onSuccess: l,
           headerText: b.NW.string(b.t.H3Q7U1),
           confirmButtonText: b.NW.string(b.t["13ofGh"]),
-          confirmButtonColor: l.zxk.Colors.BRAND,
+          confirmButtonColor: s.zxk.Colors.BRAND,
           impressionName: o.ImpressionNames.URF_CONFIRM_EMAIL_CODE
         }))
       })
     };
     return (0, r.jsx)("div", {
       className: x.buttonColumn,
-      children: (0, r.jsx)(l.zxk, {
+      children: (0, r.jsx)(s.zxk, {
         className: N.__invalid_reportButton,
         fullWidth: !0,
-        color: l.zxk.Colors.BRAND,
+        color: s.zxk.Colors.BRAND,
         onClick: () => a(),
         children: t
       })
     })
   },
   j = () => {
-    let [e, t] = i.useState(!0), [n, o] = i.useState(!1), p = (0, a.e7)([g.default], () => g.default.isAuthenticated()), v = (0, a.e7)([d.Z], () => d.Z.hasLoadedExperiments), I = () => {
-      (0, f.qJ)().then(() => {
+    let [e, t] = i.useState(!0), [n, o] = i.useState(!1), p = (0, a.e7)([m.default], () => m.default.isAuthenticated()), v = (0, a.e7)([d.Z], () => d.Z.hasLoadedExperiments), E = () => {
+      (0, g.qJ)().then(() => {
         t(!1), o(!0)
       }).catch(() => {
         t(!1), o(!1)
@@ -114,13 +114,13 @@ let E = e => {
     return i.useEffect(() => {
       p ? (t(!0), c.k({
         withAnalyticsToken: !0
-      }).then(() => I()).catch(() => t(!1))) : I()
+      }).then(() => E()).catch(() => t(!1))) : E()
     }, [p]), i.useEffect(() => {
       (async () => {
-        v || (await s.Z.getLocationMetadata(), s.Z.getExperiments())
+        v || (await l.Z.getLocationMetadata(), l.Z.getExperiments())
       })()
     }, [v]), e || !v ? (0, r.jsx)(u.ZP, {
-      children: (0, r.jsx)(l.$jN, {})
+      children: (0, r.jsx)(s.$jN, {})
     }) : n && (0, r.jsxs)(u.ZP, {
       children: [(0, r.jsx)(u.Dx, {
         className: N.marginBottom8,
@@ -128,14 +128,14 @@ let E = e => {
       }), (0, r.jsx)(u.DK, {
         className: N.marginBottom8,
         children: b.NW.format(b.t["532l+v"], {
-          supportURL: _.Z.getArticleURL(m.BhN.COPYRIGHT_AND_IP_POLICY)
+          supportURL: _.Z.getArticleURL(f.BhN.COPYRIGHT_AND_IP_POLICY)
         })
       }), (0, r.jsxs)("div", {
         className: x.container,
-        children: [(0, r.jsx)(E, {
+        children: [(0, r.jsx)(I, {
           title: b.NW.string(b.t.fuqnBA),
           menuType: h.BM.MESSAGE
-        }), (0, r.jsx)(E, {
+        }), (0, r.jsx)(I, {
           title: b.NW.string(b.t.F4jrRU),
           menuType: h.BM.USER
         })]

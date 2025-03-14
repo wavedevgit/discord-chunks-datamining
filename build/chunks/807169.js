@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Hs: () => g,
-  Vh: () => b,
+  Vh: () => v,
   k: () => m,
   ny: () => y
 });
@@ -26,14 +26,14 @@ function m(e, t) {
   let h = null != (_ = e instanceof c.Sf && e.isThread() && null !== (i = d.Z.getChannel(e.parent_id)) && void 0 !== i ? i : e) ? y(_) : void 0,
     m = l.xM.getSetting(),
     g = u.default.getId(),
-    b = null !== (o = null === (n = p.default.getCurrentUser()) || void 0 === n ? void 0 : n.nsfwAllowed) && void 0 !== o && o,
+    v = null !== (o = null === (n = p.default.getCurrentUser()) || void 0 === n ? void 0 : n.nsfwAllowed) && void 0 !== o && o,
     O = null != h && null !== (a = null === (r = f.ZP.getMember(h, g)) || void 0 === r ? void 0 : r.roles) && void 0 !== a ? a : [],
     I = s.Z.isViewingRoles(h),
     {
       computedPermissions: S,
       hasBaseAccessPermissions: T,
       hasSendMessagesPermission: N
-    } = v(_, e instanceof c.Sf && e.isThread());
+    } = b(_, e instanceof c.Sf && e.isThread());
   return {
     context: _,
     userId: g,
@@ -43,7 +43,7 @@ function m(e, t) {
     computedPermissions: S,
     hasBaseAccessPermissions: T,
     hasSendMessagesPermission: N,
-    allowNsfw: E(_, b, m)
+    allowNsfw: E(_, v, m)
   }
 }
 
@@ -72,7 +72,7 @@ function g(e, t) {
       computedPermissions: r,
       hasBaseAccessPermissions: i,
       hasSendMessagesPermission: o
-    } = v(n, e instanceof c.Sf && e.isThread());
+    } = b(n, e instanceof c.Sf && e.isThread());
     return {
       context: n,
       userId: _,
@@ -91,7 +91,7 @@ function E(e, t, n) {
   return !!t && (!(e instanceof c.Sf) || (null != e.guild_id ? e.nsfw : n))
 }
 
-function v(e, t) {
+function b(e, t) {
   let n, r;
   if (e instanceof c.Sf && e.isPrivate() || null == e) return {
     computedPermissions: i.vB(0),
@@ -106,7 +106,7 @@ function v(e, t) {
   }
 }
 
-function b(e, t) {
+function v(e, t) {
   return e instanceof c.Sf && (null == e ? void 0 : e.guild_id) == null ? (null == e ? void 0 : e.type) === h.d4z.DM && (null == e ? void 0 : e.getRecipientId()) === t ? a.D.BOT_DM : a.D.PRIVATE_CHANNEL : a.D.GUILD
 }
 

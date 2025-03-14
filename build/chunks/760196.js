@@ -26,8 +26,8 @@ function m(e) {
     pendingReply: g,
     pendingScheduledMessage: E
   } = e, {
-    activeCommandOption: v,
-    activeCommandOptionStates: b
+    activeCommandOption: b,
+    activeCommandOptionStates: v
   } = (0, o.cj)([a.Z], () => ({
     activeCommandOption: a.Z.getActiveOption(t.id),
     activeCommandOptionStates: a.Z.getOptionStates(t.id)
@@ -41,8 +41,8 @@ function m(e) {
       className: h.newMemberActionBar
     })), null != m && e.push((0, r.jsx)(s.Z, {
       activeCommand: m,
-      activeOption: null != v ? v : null,
-      optionStates: b,
+      activeOption: null != b ? b : null,
+      optionStates: v,
       channelId: t.id
     })), null != g && e.push((0, r.jsx)(p.Z, {
       reply: g,
@@ -55,7 +55,7 @@ function m(e) {
       stacked: e,
       floating: i
     }
-  }, [m, v, b, t, g, y, n, O, E])
+  }, [m, b, v, t, g, y, n, O, E])
 }
 
 function g(e) {

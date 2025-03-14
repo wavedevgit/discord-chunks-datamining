@@ -22,8 +22,8 @@ if (i && l(_) && (!("description" in p) || void 0 !== _().description)) {
   f(m, _), m.prototype = p, p.constructor = m;
   var g = "Symbol(description detection)" === String(_("description detection")),
     E = a(p.valueOf),
-    v = a(p.toString),
-    b = /^Symbol\((.*)\)[^)]+$/,
+    b = a(p.toString),
+    v = /^Symbol\((.*)\)[^)]+$/,
     y = a("".replace),
     O = a("".slice);
   d(p, "description", {
@@ -31,8 +31,8 @@ if (i && l(_) && (!("description" in p) || void 0 !== _().description)) {
     get: function() {
       var e = E(this);
       if (s(h, e)) return "";
-      var t = v(e),
-        n = g ? O(t, 7, -1) : y(t, b, "$1");
+      var t = b(e),
+        n = g ? O(t, 7, -1) : y(t, v, "$1");
       return "" === n ? void 0 : n
     }
   }), r({

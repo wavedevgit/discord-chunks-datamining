@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  k: () => v
+  k: () => b
 });
 var r = n(252258),
   i = n(668781),
@@ -63,15 +63,15 @@ function E(e) {
       })
   }
 }
-async function v(e) {
+async function b(e) {
   let {
     channelId: t,
     applicationId: n,
     launchId: i,
     inputApplication: a,
     analyticsLocations: g,
-    launchingComponentId: v,
-    sectionName: b,
+    launchingComponentId: b,
+    sectionName: v,
     inviterUserId: y
   } = e, O = _.ZP.getEmbeddedActivitiesForChannel(t).find(e => e.applicationId === n && (null == i || e.launchId === i)), I = a;
   if (null == I) {
@@ -87,8 +87,8 @@ async function v(e) {
       activityChannelId: t,
       locationObject: {},
       analyticsLocations: g,
-      componentId: v,
-      sectionName: b,
+      componentId: b,
+      sectionName: v,
       inviterUserId: y,
       instanceId: O.compositeInstanceId,
       isContextlessActivity: O.location.kind === r.E.CONTEXTLESS

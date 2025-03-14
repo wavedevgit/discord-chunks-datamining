@@ -20,8 +20,8 @@ var r = n(200651),
   m = n(100527),
   g = n(906732),
   E = n(1585),
-  v = n(333867),
-  b = n(286961),
+  b = n(333867),
+  v = n(286961),
   y = n(300284),
   O = n(876917),
   I = n(642619),
@@ -42,8 +42,8 @@ var r = n(200651),
   U = n(141011),
   G = n(372654),
   B = n(508925),
-  V = n(616066),
-  F = n(216541),
+  F = n(616066),
+  V = n(216541),
   Z = n(22267),
   H = n(58201),
   W = n(794324),
@@ -110,7 +110,7 @@ let en = 880,
     })).with(u.Z.AVATAR_DECORATION, () => (s()(i.type === u.Z.AVATAR_DECORATION, "ts-match already checked the type"), null != o && o.type === u.Z.AVATAR_DECORATION) ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
         className: X.avatarDecorationPairOne,
-        children: (0, r.jsx)(V.R, {
+        children: (0, r.jsx)(F.R, {
           item: i,
           user: a,
           avatarSize: _.EFr.SIZE_120,
@@ -119,7 +119,7 @@ let en = 880,
         })
       }), (0, r.jsx)("div", {
         className: X.avatarDecorationPairTwo,
-        children: (0, r.jsx)(V.R, {
+        children: (0, r.jsx)(F.R, {
           item: o,
           avatarSize: _.EFr.SIZE_120,
           isPurchased: !1
@@ -127,7 +127,7 @@ let en = 880,
       })]
     }) : (0, r.jsx)("div", {
       className: X.avatarDecoration,
-      children: (0, r.jsx)(V.R, {
+      children: (0, r.jsx)(F.R, {
         item: i,
         user: a,
         avatarSize: _.EFr.SIZE_120,
@@ -143,7 +143,7 @@ let en = 880,
       })
     })).with(u.Z.BUNDLE, () => (0, r.jsx)("div", {
       className: X.bundlePreview,
-      children: (0, r.jsx)(F.d, {
+      children: (0, r.jsx)(V.d, {
         product: t,
         user: a,
         isPurchased: !1,
@@ -237,8 +237,8 @@ let en = 880,
       overrideTitle: c,
       overrideDescription: p,
       selectedVariantIndex: E,
-      shouldShowPromotionalExperience: v,
-      itemConsumed: b = !0
+      shouldShowPromotionalExperience: b,
+      itemConsumed: v = !0
     } = e, y = (0, w.o)("CollectiblesCollectedModal"), O = (0, H.W)(t, E), I = (0, f.e7)([N.default], () => {
       var e, t;
       return null !== (t = null === (e = N.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff()) && void 0 !== t && t
@@ -259,7 +259,7 @@ let en = 880,
         let e = Q.NW.formatToPlainString(Q.t.fYmir6, {
           days: 3
         });
-        return b ? (0, r.jsx)(S.j, {
+        return v ? (0, r.jsx)(S.j, {
           duration: e,
           onClose: n
         }) : (0, r.jsx)(S.h, {
@@ -270,7 +270,7 @@ let en = 880,
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
           className: X.bannerContainer,
-          children: [v ? (0, r.jsx)("div", {
+          children: [b ? (0, r.jsx)("div", {
             className: X.promotionalBanner
           }) : (0, r.jsx)(U.Z, {
             asset: L,
@@ -290,7 +290,7 @@ let en = 880,
           overrideTitle: c,
           overrideDescription: p,
           selectedVariantIndex: E,
-          shouldShowPromotionalExperience: v
+          shouldShowPromotionalExperience: b
         }), (0, r.jsx)(_.olH, {
           onClick: n,
           className: X.modalCloseButton,
@@ -322,7 +322,7 @@ let en = 880,
       overrideTitle: l,
       overrideDescription: d,
       shouldShowPromotionalExperience: f
-    } = e, p = (0, D.ed)("CollectiblesCollectedModal"), h = (0, x.k)(n), m = (0, x.k)(o), g = null != o, E = (0, b.Z)(), v = null == E ? void 0 : null === (t = E.giftPurchaseConfirmation) || void 0 === t ? void 0 : t.rewardCollectedText(), {
+    } = e, p = (0, D.ed)("CollectiblesCollectedModal"), h = (0, x.k)(n), m = (0, x.k)(o), g = null != o, E = (0, v.Z)(), b = null == E ? void 0 : null === (t = E.giftPurchaseConfirmation) || void 0 === t ? void 0 : t.rewardCollectedText(), {
       handleUseNow: y,
       isApplying: O
     } = (0, L.W)({
@@ -340,7 +340,7 @@ let en = 880,
     }), [l, n.skuId, g, p, f, h, m]), C = i.useMemo(() => null != d ? d : K.xJ === n.skuId ? Q.NW.string(q.Z.UnPGio) : g ? Q.NW.format(new Date < K.a$ ? Q.t["1jBC0t"] : Q.t.qSrp39, {
       purchased_item: h,
       suggested_item: m
-    }) : (0, c.EQ)(null == n ? void 0 : n.type).with(u.Z.BUNDLE, () => Q.NW.string(Q.t.zJPoLy)).with(u.Z.PROFILE_EFFECT, () => Q.NW.string(Q.t.f9M1YG)).otherwise(() => f && null != v ? v : Q.NW.string(Q.t["44b50t"])), [d, n.skuId, null == n ? void 0 : n.type, g, h, m, f, v]), R = i.useMemo(() => K.xJ === n.skuId ? (0, r.jsxs)("div", {
+    }) : (0, c.EQ)(null == n ? void 0 : n.type).with(u.Z.BUNDLE, () => Q.NW.string(Q.t.zJPoLy)).with(u.Z.PROFILE_EFFECT, () => Q.NW.string(Q.t.f9M1YG)).otherwise(() => f && null != b ? b : Q.NW.string(Q.t["44b50t"])), [d, n.skuId, null == n ? void 0 : n.type, g, h, m, f, b]), R = i.useMemo(() => K.xJ === n.skuId ? (0, r.jsxs)("div", {
       className: X.buttonRows,
       children: [(0, r.jsx)(ec, {
         text: Q.NW.string(q.Z.yfwZu7),
@@ -392,7 +392,7 @@ let en = 880,
       product: n,
       analyticsLocations: o
     } = e, a = (0, D.hv)("CollectiblesShopGiftButton"), s = i.useCallback(e => {
-      e.stopPropagation(), (0, v.Z)({
+      e.stopPropagation(), (0, b.Z)({
         skuId: n.skuId,
         isGift: !0,
         giftingOrigin: z.Wt.SHOP_PAGE,
@@ -451,10 +451,10 @@ let en = 880,
       overrideDescription: c,
       shouldShowPromotionalExperience: u,
       itemConsumed: d
-    } = e, p = (0, f.e7)([C.Z], () => C.Z.purchases), h = (0, R.o)(n, p), m = (0, H.W)(n, h), g = i.useRef(new o.qA), [E, v] = i.useState(null), b = (0, Y.UY)(m.skuId);
+    } = e, p = (0, f.e7)([C.Z], () => C.Z.purchases), h = (0, R.o)(n, p), m = (0, H.W)(n, h), g = i.useRef(new o.qA), [E, b] = i.useState(null), v = (0, Y.UY)(m.skuId);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.O_, {
-        ref: v,
+        ref: b,
         className: X.confettiCanvas,
         environment: g.current
       }), (0, r.jsxs)(_.Y0X, {
@@ -462,10 +462,10 @@ let en = 880,
         transitionState: t,
         size: _.CgR.DYNAMIC,
         className: X.modalRoot,
-        children: [null != b && (0, r.jsx)("img", {
-          src: b.imageSrc,
+        children: [null != v && (0, r.jsx)("img", {
+          src: v.imageSrc,
           className: X.customConfetti,
-          style: b.style,
+          style: v.style,
           alt: "",
           "aria-hidden": "true"
         }), (0, r.jsx)(_.hzk, {
@@ -475,7 +475,7 @@ let en = 880,
             product: m,
             onClose: a,
             confettiCanvas: E,
-            hideConfetti: null != b,
+            hideConfetti: null != v,
             analyticsLocations: s,
             overrideTitle: l,
             overrideDescription: c,

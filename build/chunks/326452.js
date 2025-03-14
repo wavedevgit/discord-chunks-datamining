@@ -55,7 +55,7 @@ function g(e, t) {
 
 function E(e, t) {
   if (null == e) return {};
-  var n, r, i = v(e, t);
+  var n, r, i = b(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -63,14 +63,14 @@ function E(e, t) {
   return i
 }
 
-function v(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let b = Object.freeze({
+let v = Object.freeze({
     SMALL: _.small,
     MEDIUM: _.medium,
     LARGE: _.large
@@ -81,7 +81,7 @@ let b = Object.freeze({
       onClear: n,
       className: r,
       isLoading: a,
-      size: c = b.SMALL
+      size: c = v.SMALL
     } = e;
     return (0, i.jsx)(l.P, {
       className: s()(r, _.iconLayout, c, {
@@ -120,7 +120,7 @@ let b = Object.freeze({
       })
     })
   };
-y.Sizes = b;
+y.Sizes = v;
 class O extends(r = o.PureComponent) {
   focus() {
     let {
@@ -147,8 +147,8 @@ class O extends(r = o.PureComponent) {
         onKeyUp: d,
         onKeyPress: p,
         isLoading: m,
-        size: v,
-        disabled: b,
+        size: b,
+        disabled: v,
         onChange: O,
         onBlur: I,
         onFocus: S,
@@ -162,8 +162,8 @@ class O extends(r = o.PureComponent) {
       focusTarget: this.inputRef,
       ringTarget: this.containerRef,
       children: (0, i.jsx)("div", g(h({
-        className: s()(o, _.container, v, {
-          [_.disabled]: b
+        className: s()(o, _.container, b, {
+          [_.disabled]: v
         }),
         ref: this.containerRef
       }, R), {
@@ -179,13 +179,13 @@ class O extends(r = o.PureComponent) {
             onKeyUp: d,
             onKeyPress: p,
             placeholder: a,
-            disabled: b,
+            disabled: v,
             autoFocus: n,
             autoComplete: T,
             "aria-label": C,
             ref: this.inputRef
           })), !A && (0, i.jsx)(y, {
-            size: v,
+            size: b,
             hasContent: t.length > 0,
             onClear: r,
             className: l,
@@ -204,8 +204,8 @@ class O extends(r = o.PureComponent) {
     })
   }
 }
-p(O, "Sizes", b), p(O, "defaultProps", {
-  size: b.SMALL,
+p(O, "Sizes", v), p(O, "defaultProps", {
+  size: v.SMALL,
   isLoading: !1,
   disabled: !1
 })

@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(314884),
   g = n(709586),
   E = n(267642),
-  v = n(74538),
-  b = n(678558),
+  b = n(74538),
+  v = n(678558),
   y = n(981631),
   O = n(474936),
   I = n(388032),
@@ -111,7 +111,7 @@ let T = function(e) {
         threshold: .9,
         children: (0, r.jsx)("div", {
           className: a()(S.guildBoostCta, S.guildBoostCtaBoostWrapper),
-          children: (0, r.jsx)(b.Z, {
+          children: (0, r.jsx)(v.Z, {
             className: S.guildBoostCtaBoost,
             innerClassName: a()(S.__invalid_guildBoostCtaContent, S.guildBoostCtaBoostContent),
             buttonShineClassName: S.guildBoostCtaBoostShine,
@@ -128,7 +128,7 @@ let T = function(e) {
             fullWidth: !0
           })
         })
-      }), v.ZP.hasFreeBoosts(T) || v.ZP.isPremium(T, O.p9.TIER_2) ? (0, r.jsxs)(c.zxk, {
+      }), b.ZP.hasFreeBoosts(T) || b.ZP.isPremium(T, O.p9.TIER_2) ? (0, r.jsxs)(c.zxk, {
         className: a()(S.guildBoostCta, S.guildBoostCtaSecondary),
         innerClassName: a()(S.__invalid_guildBoostCtaContent, S.guildBoostCtaGiftContent),
         look: c.zxk.Looks.OUTLINED,

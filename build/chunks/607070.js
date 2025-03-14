@@ -69,7 +69,7 @@ function E(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let v = {
+let b = {
     fontSize: d.yqN.FONT_SIZE_DEFAULT,
     zoom: d.yqN.ZOOM_DEFAULT,
     keyboardModeEnabled: !1,
@@ -93,7 +93,7 @@ let v = {
     syncProfileThemeWithUserTheme: !1,
     hideGuildTags: !1
   },
-  b = v,
+  v = b,
   y = {
     12: "font-size-12",
     14: "font-size-14",
@@ -110,111 +110,111 @@ function O(e) {
 
 function I(e) {
   let t = O(e.fontSize);
-  if (t > d.yqN.FONT_SIZE_MAX || t < d.yqN.FONT_SIZE_MIN || b.fontSize === t) return !1;
-  (b = p({}, b)).fontSize = t
+  if (t > d.yqN.FONT_SIZE_MAX || t < d.yqN.FONT_SIZE_MIN || v.fontSize === t) return !1;
+  (v = p({}, v)).fontSize = t
 }
 
 function S(e) {
-  if (e.zoom < d.yqN.ZOOM_MIN || e.zoom > d.yqN.ZOOM_MAX || b.zoom === e.zoom) return !1;
-  (b = p({}, b)).zoom = e.zoom, u.Z.setZoomFactor(b.zoom)
+  if (e.zoom < d.yqN.ZOOM_MIN || e.zoom > d.yqN.ZOOM_MAX || v.zoom === e.zoom) return !1;
+  (v = p({}, v)).zoom = e.zoom, u.Z.setZoomFactor(v.zoom)
 }
 
 function T() {
-  let e = b.fontSize !== d.yqN.FONT_SIZE_DEFAULT,
-    t = b.zoom !== d.yqN.ZOOM_DEFAULT;
+  let e = v.fontSize !== d.yqN.FONT_SIZE_DEFAULT,
+    t = v.zoom !== d.yqN.ZOOM_DEFAULT;
   if (!e && !t) return !1;
-  (b = p({}, b)).fontSize !== d.yqN.FONT_SIZE_DEFAULT && (b.fontSize = d.yqN.FONT_SIZE_DEFAULT), b.zoom !== d.yqN.ZOOM_DEFAULT && (b.zoom = d.yqN.ZOOM_DEFAULT, u.Z.setZoomFactor(b.zoom))
+  (v = p({}, v)).fontSize !== d.yqN.FONT_SIZE_DEFAULT && (v.fontSize = d.yqN.FONT_SIZE_DEFAULT), v.zoom !== d.yqN.ZOOM_DEFAULT && (v.zoom = d.yqN.ZOOM_DEFAULT, u.Z.setZoomFactor(v.zoom))
 }
 
 function N() {
-  if (b.keyboardModeEnabled) return !1;
-  (b = p({}, b)).keyboardModeEnabled = !0
+  if (v.keyboardModeEnabled) return !1;
+  (v = p({}, v)).keyboardModeEnabled = !0
 }
 
 function A() {
-  if (!b.keyboardModeEnabled) return !1;
-  (b = p({}, b)).keyboardModeEnabled = !1
+  if (!v.keyboardModeEnabled) return !1;
+  (v = p({}, v)).keyboardModeEnabled = !1
 }
 
 function C() {
-  (b = p({}, b)).colorblindMode = !b.colorblindMode
+  (v = p({}, v)).colorblindMode = !v.colorblindMode
 }
 
 function R() {
-  (b = p({}, b)).lowContrastMode = !b.lowContrastMode
+  (v = p({}, v)).lowContrastMode = !v.lowContrastMode
 }
 
 function P(e) {
-  b.syncForcedColors = e.syncForcedColors
+  v.syncForcedColors = e.syncForcedColors
 }
 
 function w(e) {
-  (b = p({}, b)).saturation = e.saturation
+  (v = p({}, v)).saturation = e.saturation
 }
 
 function D() {
-  (b = p({}, b)).desaturateUserColors = !b.desaturateUserColors
+  (v = p({}, v)).desaturateUserColors = !v.desaturateUserColors
 }
 
 function L(e) {
-  b.roleStyle = e.roleStyle
+  v.roleStyle = e.roleStyle
 }
 
 function x() {
-  (b = p({}, b)).submitButtonEnabled = !b.submitButtonEnabled
+  (v = p({}, v)).submitButtonEnabled = !v.submitButtonEnabled
 }
 
 function M() {
-  (b = p({}, b)).syncProfileThemeWithUserTheme = !b.syncProfileThemeWithUserTheme
+  (v = p({}, v)).syncProfileThemeWithUserTheme = !v.syncProfileThemeWithUserTheme
 }
 
 function k(e) {
-  if (b.systemPrefersReducedMotion === e.systemPrefersReducedMotion) return !1;
-  b = m(p({}, b), {
+  if (v.systemPrefersReducedMotion === e.systemPrefersReducedMotion) return !1;
+  v = m(p({}, v), {
     systemPrefersReducedMotion: e.systemPrefersReducedMotion
   })
 }
 
 function j(e) {
-  if (b.systemPrefersCrossfades === e.systemPrefersCrossfades) return !1;
-  b = m(p({}, b), {
+  if (v.systemPrefersCrossfades === e.systemPrefersCrossfades) return !1;
+  v = m(p({}, v), {
     systemPrefersCrossfades: e.systemPrefersCrossfades
   })
 }
 
 function U(e) {
-  if (b.prefersReducedMotion === e.prefersReducedMotion) return !1;
-  b = m(p({}, b), {
+  if (v.prefersReducedMotion === e.prefersReducedMotion) return !1;
+  v = m(p({}, v), {
     prefersReducedMotion: e.prefersReducedMotion
   })
 }
 
 function G(e) {
-  if (b.systemPrefersContrast === e.systemPrefersContrast) return !1;
-  b = m(p({}, b), {
+  if (v.systemPrefersContrast === e.systemPrefersContrast) return !1;
+  v = m(p({}, v), {
     systemPrefersContrast: e.systemPrefersContrast
   })
 }
 
 function B(e) {
-  b = m(p({}, b), {
+  v = m(p({}, v), {
     alwaysShowLinkDecorations: e.alwaysShowLinkDecorations
   })
 }
 
-function V(e) {
+function F(e) {
   var t;
-  return b = m(p({}, b), {
+  return v = m(p({}, v), {
     systemForcedColors: null !== (t = e.systemForcedColors) && void 0 !== t ? t : "none"
   }), !0
 }
 
-function F() {
-  b.forcedColorsModalSeen = !0
+function V() {
+  v.forcedColorsModalSeen = !0
 }
 
 function Z() {
-  b = m(p({}, b), {
+  v = m(p({}, v), {
     keyboardNavigationExplainerModalSeen: !0
   })
 }
@@ -223,7 +223,7 @@ function H(e) {
   let {
     messageGroupSpacing: t
   } = e;
-  b = m(p({}, b), {
+  v = m(p({}, v), {
     messageGroupSpacing: t
   })
 }
@@ -232,7 +232,7 @@ function W(e) {
   let {
     contrast: t
   } = e;
-  b = m(p({}, b), {
+  v = m(p({}, v), {
     contrast: t
   })
 }
@@ -241,25 +241,25 @@ function Y(e) {
   let {
     hideTags: t
   } = e;
-  b = m(p({}, b), {
+  v = m(p({}, v), {
     hideGuildTags: t
   })
 }
 class K extends(r = i.ZP.DeviceSettingsStore) {
   initialize(e) {
-    this.waitFor(c.Z), isNaN((b = p({}, v, null != e ? e : null)).fontSize) && (b.fontSize = d.yqN.FONT_SIZE_DEFAULT), 0 > f.fP.indexOf(null != b.messageGroupSpacing ? b.messageGroupSpacing : -1) && (b.messageGroupSpacing = null)
+    this.waitFor(c.Z), isNaN((v = p({}, b, null != e ? e : null)).fontSize) && (v.fontSize = d.yqN.FONT_SIZE_DEFAULT), 0 > f.fP.indexOf(null != v.messageGroupSpacing ? v.messageGroupSpacing : -1) && (v.messageGroupSpacing = null)
   }
   get fontScale() {
-    return b.fontSize / d.yqN.FONT_SIZE_DEFAULT * 100
+    return v.fontSize / d.yqN.FONT_SIZE_DEFAULT * 100
   }
   get fontSize() {
-    return b.fontSize
+    return v.fontSize
   }
   get isFontScaledUp() {
-    return b.fontSize > d.yqN.FONT_SIZE_DEFAULT
+    return v.fontSize > d.yqN.FONT_SIZE_DEFAULT
   }
   get isFontScaledDown() {
-    return b.fontSize < d.yqN.FONT_SIZE_DEFAULT
+    return v.fontSize < d.yqN.FONT_SIZE_DEFAULT
   }
   get fontScaleClass() {
     var e;
@@ -267,40 +267,40 @@ class K extends(r = i.ZP.DeviceSettingsStore) {
     return this.isFontScaledUp ? "a11y-font-scaled-up ".concat(t) : this.isFontScaledDown ? "a11y-font-scaled-down ".concat(t) : "".concat(t)
   }
   get zoom() {
-    return b.zoom
+    return v.zoom
   }
   get isZoomedIn() {
-    return b.zoom > d.yqN.ZOOM_DEFAULT
+    return v.zoom > d.yqN.ZOOM_DEFAULT
   }
   get isZoomedOut() {
-    return b.zoom < d.yqN.ZOOM_DEFAULT
+    return v.zoom < d.yqN.ZOOM_DEFAULT
   }
   get keyboardModeEnabled() {
-    return b.keyboardModeEnabled
+    return v.keyboardModeEnabled
   }
   get colorblindMode() {
-    return b.colorblindMode
+    return v.colorblindMode
   }
   get lowContrastMode() {
-    return b.lowContrastMode
+    return v.lowContrastMode
   }
   get saturation() {
-    return b.saturation
+    return v.saturation
   }
   get contrast() {
-    return b.contrast
+    return v.contrast
   }
   get desaturateUserColors() {
-    return b.desaturateUserColors
+    return v.desaturateUserColors
   }
   get forcedColorsModalSeen() {
-    return b.forcedColorsModalSeen
+    return v.forcedColorsModalSeen
   }
   get keyboardNavigationExplainerModalSeen() {
-    return b.keyboardNavigationExplainerModalSeen
+    return v.keyboardNavigationExplainerModalSeen
   }
   get messageGroupSpacing() {
-    return null != b.messageGroupSpacing ? b.messageGroupSpacing : l.jU.getSetting() ? f.c8 : f.pq
+    return null != v.messageGroupSpacing ? v.messageGroupSpacing : l.jU.getSetting() ? f.c8 : f.pq
   }
   get isMessageGroupSpacingIncreased() {
     let e = l.jU.getSetting() ? f.c8 : f.pq;
@@ -311,53 +311,53 @@ class K extends(r = i.ZP.DeviceSettingsStore) {
     return this.messageGroupSpacing < e
   }
   get isSubmitButtonEnabled() {
-    return b.submitButtonEnabled
+    return v.submitButtonEnabled
   }
   get syncProfileThemeWithUserTheme() {
-    return b.syncProfileThemeWithUserTheme
+    return v.syncProfileThemeWithUserTheme
   }
   get systemPrefersReducedMotion() {
-    return b.systemPrefersReducedMotion
+    return v.systemPrefersReducedMotion
   }
   get rawPrefersReducedMotion() {
-    return b.prefersReducedMotion
+    return v.prefersReducedMotion
   }
   get useReducedMotion() {
-    switch (b.prefersReducedMotion) {
+    switch (v.prefersReducedMotion) {
       case "no-preference":
         return !1;
       case "reduce":
         return !0;
       default:
-        return "reduce" === b.systemPrefersReducedMotion
+        return "reduce" === v.systemPrefersReducedMotion
     }
   }
   get systemForcedColors() {
-    return b.systemForcedColors
+    return v.systemForcedColors
   }
   get syncForcedColors() {
-    return b.syncForcedColors
+    return v.syncForcedColors
   }
   get useForcedColors() {
-    return !!b.syncForcedColors && "active" === b.systemForcedColors
+    return !!v.syncForcedColors && "active" === v.systemForcedColors
   }
   get systemPrefersContrast() {
-    return b.systemPrefersContrast
+    return v.systemPrefersContrast
   }
   get systemPrefersCrossfades() {
-    return b.systemPrefersCrossfades
+    return v.systemPrefersCrossfades
   }
   get alwaysShowLinkDecorations() {
-    return b.alwaysShowLinkDecorations
+    return v.alwaysShowLinkDecorations
   }
   get roleStyle() {
-    return b.roleStyle
+    return v.roleStyle
   }
   get hideTags() {
-    return b.hideGuildTags
+    return v.hideGuildTags
   }
   getUserAgnosticState() {
-    return b
+    return v
   }
 }
 _(K, "displayName", "AccessibilityStore"), _(K, "persistKey", "AccessibilityStore"), _(K, "migrations", [() => {
@@ -426,7 +426,7 @@ let z = new K(s.Z, {
   ACCESSIBILITY_LOW_CONTRAST_TOGGLE: R,
   ACCESSIBILITY_SET_SATURATION: w,
   ACCESSIBILITY_DESATURATE_ROLES_TOGGLE: D,
-  ACCESSIBILITY_SYSTEM_COLOR_PREFERENCES_CHANGED: V,
+  ACCESSIBILITY_SYSTEM_COLOR_PREFERENCES_CHANGED: F,
   ACCESSIBILITY_SYSTEM_PREFERS_CONTRAST_CHANGED: G,
   ACCESSIBILITY_SYSTEM_PREFERS_REDUCED_MOTION_CHANGED: k,
   ACCESSIBILITY_SYSTEM_PREFERS_CROSSFADES_CHANGED: j,
@@ -434,7 +434,7 @@ let z = new K(s.Z, {
   ACCESSIBILITY_SET_SYNC_FORCED_COLORS: P,
   ACCESSIBILITY_SET_ALWAYS_SHOW_LINK_DECORATIONS: B,
   ACCESSIBILITY_SET_ROLE_STYLE: L,
-  ACCESSIBILITY_FORCED_COLORS_MODAL_SEEN: F,
+  ACCESSIBILITY_FORCED_COLORS_MODAL_SEEN: V,
   KEYBOARD_NAVIGATION_EXPLAINER_MODAL_SEEN: Z,
   ACCESSIBILITY_SET_MESSAGE_GROUP_SPACING: H,
   ACCESSIBILITY_SUBMIT_BUTTON_TOGGLE: x,

@@ -54,9 +54,9 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = 200;
+let b = 200;
 
-function b(e, t, n) {
+function v(e, t, n) {
   return (0, r.jsx)(u.Z, {
     className: p.option,
     name: e.displayName,
@@ -95,16 +95,16 @@ function y(e) {
       variant: "text-sm/normal",
       children: e.displayName
     }, e.name))
-  }), f = a.map(e => b(e, null == n ? void 0 : n[e.name], o)), h = l.length > 0 ? (0, r.jsxs)(r.Fragment, {
+  }), f = a.map(e => v(e, null == n ? void 0 : n[e.name], o)), h = l.length > 0 ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.X6q, {
       className: p.optionalHeader,
       variant: "heading-deprecated-12/semibold",
       children: _.NW.string(_.t["5C107O"])
-    }), l.map(e => b(e, null == n ? void 0 : n[e.name], o))]
+    }), l.map(e => v(e, null == n ? void 0 : n[e.name], o))]
   }) : null, g = u.length > 0 ? (0, r.jsx)(s.ua7, {
     text: d,
     "aria-label": !1,
-    delay: v,
+    delay: b,
     children: e => (0, r.jsx)(c.Z, E(m({
       className: p.optionalCount,
       color: c.Z.Colors.MUTED
@@ -134,8 +134,8 @@ function O(e) {
       showImage: m,
       optionStates: g,
       onOptionClick: E,
-      section: v,
-      isSelectable: b = !0
+      section: b,
+      isSelectable: v = !0
     } = e,
     O = i.useMemo(() => {
       var e;
@@ -143,13 +143,13 @@ function O(e) {
     }, [u, c]),
     I = null != u ? null == g ? void 0 : g[u] : null;
   s = null != I && (null === (t = I.lastValidationResult) || void 0 === t ? void 0 : t.success) === !1 ? null !== (n = I.lastValidationResult.error) && void 0 !== n ? n : "" : null;
-  let S = m && null != v ? (0, d.ky)(v) : null;
+  let S = m && null != b ? (0, d.ky)(b) : null;
   return (0, r.jsxs)("div", {
-    className: a()(p.wrapper, b ? null : p.disabled),
+    className: a()(p.wrapper, v ? null : p.disabled),
     children: [null != S ? (0, r.jsx)(S, {
       className: p.image,
       channel: _,
-      section: v,
+      section: b,
       width: 32,
       height: 32
     }) : null, (0, r.jsxs)("div", {
@@ -170,7 +170,7 @@ function O(e) {
       })]
     }), (0, r.jsx)(l.dY, {
       className: p.source,
-      children: null == v ? void 0 : v.name
+      children: null == b ? void 0 : b.name
     })]
   })
 }

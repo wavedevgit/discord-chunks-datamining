@@ -6,17 +6,17 @@ var r = n(200651),
   i = n(192379),
   o = n(593473),
   a = n(512969),
-  l = n(442837),
-  s = n(893776),
+  s = n(442837),
+  l = n(893776),
   c = n(899742),
   u = n(493773),
   d = n(743142),
   h = n(893607),
   p = n(703656),
-  f = n(314897),
-  g = n(781428),
+  g = n(314897),
+  m = n(781428),
   _ = n(981631),
-  m = n(176505);
+  f = n(176505);
 
 function b(e) {
   var t, n;
@@ -26,7 +26,7 @@ function b(e) {
           let n = (0, a.LX)(e, {
             path: _.Z5c.CHANNEL(h.Hw.guildId(), h.Hw.channelId())
           });
-          return (null == n ? void 0 : null === (t = n.params) || void 0 === t ? void 0 : t.channelId) === m.oC.ROLE_SUBSCRIPTIONS
+          return (null == n ? void 0 : null === (t = n.params) || void 0 === t ? void 0 : t.channelId) === f.oC.ROLE_SUBSCRIPTIONS
         }(t)) p.dL(t);
       else {
         var n;
@@ -36,15 +36,15 @@ function b(e) {
     {
       isAuthenticated: x,
       loginStatus: N
-    } = (0, l.cj)([f.default], () => ({
-      isAuthenticated: f.default.isAuthenticated(),
-      loginStatus: f.default.getLoginStatus()
+    } = (0, s.cj)([g.default], () => ({
+      isAuthenticated: g.default.isAuthenticated(),
+      loginStatus: g.default.getLoginStatus()
     })),
     {
       location: v,
-      redirectTo: I
+      redirectTo: E
     } = e,
-    [E, j] = i.useState(x);
+    [I, j] = i.useState(x);
 
   function C(e) {
     let {
@@ -65,8 +65,8 @@ function b(e) {
         handoff_token: t
       } = (0, o.parse)(v.search);
       if (null != e && null != t) {
-        let n = null != I ? (0, d.L)(I) : void 0;
-        E ? s.Z.logout(null).finally(() => {
+        let n = null != E ? (0, d.L)(E) : void 0;
+        I ? l.Z.logout(null).finally(() => {
           C({
             handoffKey: e,
             handoffToken: t,
@@ -79,7 +79,7 @@ function b(e) {
         })
       }
     }
-  }), E || N === _.u34.LOGGING_IN) ? (0, r.jsx)(g.q, {}) : (0, r.jsx)(g.Z, (t = function(e) {
+  }), I || N === _.u34.LOGGING_IN) ? (0, r.jsx)(m.q, {}) : (0, r.jsx)(m.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

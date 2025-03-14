@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(698305),
   g = n(510659),
   E = n(810097),
-  v = n(652853),
-  b = n(228168),
+  b = n(652853),
+  v = n(228168),
   y = n(420212),
   O = n(388032),
   I = n(734273);
@@ -36,18 +36,18 @@ let S = (0, f.kt)({
       sourceDetails: i
     } = e;
     switch (r) {
-      case b.n_.ACTIVITY:
+      case v.n_.ACTIVITY:
         let o = O.NW.formatToPlainString(O.t.WmvMCg, {
             username: n
           }),
           a = "\n> ".concat(i);
         return null != i ? "".concat(E.jd).concat(o, "*").concat(a, "\n").concat(t) : "".concat(E.jd).concat(o, "*\n").concat(t);
-      case b.n_.AVATAR:
+      case v.n_.AVATAR:
         let s = O.NW.formatToPlainString(O.t.lpaBsL, {
           username: n
         });
         return "".concat(E.jd).concat(s, "*\n").concat(t);
-      case b.n_.STATUS:
+      case v.n_.STATUS:
         let l = O.NW.formatToPlainString(O.t.lFXgFR, {
             username: n
           }),
@@ -59,11 +59,11 @@ let S = (0, f.kt)({
   },
   N = e => {
     switch (e) {
-      case b.n_.ACTIVITY:
+      case v.n_.ACTIVITY:
         return O.t.Qn081N;
-      case b.n_.AVATAR:
+      case v.n_.AVATAR:
         return O.t.xGNPFB;
-      case b.n_.STATUS:
+      case v.n_.STATUS:
         return O.t.g9BTCA;
       default:
         (0, _.vE)(e)
@@ -88,17 +88,17 @@ function A(e) {
     setInteractionToast: D
   } = (0, g.Xo)(), {
     primaryColor: L
-  } = (0, v.z)(), [x, M] = i.useState(""), [k, j] = i.useState((0, u.JM)(x)), U = i.useRef(!1), G = i.useRef(null), B = i.useCallback(e => {
+  } = (0, b.z)(), [x, M] = i.useState(""), [k, j] = i.useState((0, u.JM)(x)), U = i.useRef(!1), G = i.useRef(null), B = i.useCallback(e => {
     e.key === y.vn.ESCAPE && (e.stopPropagation(), w())
   }, [w]);
   i.useEffect(() => {
     null == E || E(null == G ? void 0 : G.current)
   }, [G, E]);
-  let V = async e => {
+  let F = async e => {
     if (null == e) return;
-    f === b.n_.AVATAR ? C({
+    f === v.n_.AVATAR ? C({
       action: "SEND_REPLY_AVATAR"
-    }) : f === b.n_.STATUS ? C({
+    }) : f === v.n_.STATUS ? C({
       action: "SEND_REPLY_CUSTOM_STATUS"
     }) : C({
       action: "SEND_REPLY_ACTIVITY"
@@ -120,21 +120,21 @@ function A(e) {
         entry: P
       })
     } catch (e) {}
-    D(b.P.REPLY)
-  }, F = {
-    [I.biteSize]: s === b.y0.BITE_SIZE,
-    [I.panel]: s === b.y0.PANEL,
-    [I.fullSize]: s === b.y0.FULL_SIZE
+    D(v.P.REPLY)
+  }, V = {
+    [I.biteSize]: s === v.y0.BITE_SIZE,
+    [I.panel]: s === v.y0.PANEL,
+    [I.fullSize]: s === v.y0.FULL_SIZE
   }, Z = {
-    [I.status]: f === b.n_.STATUS,
-    [I.avatar]: f === b.n_.AVATAR,
-    [I.activity]: f === b.n_.ACTIVITY
+    [I.status]: f === v.n_.STATUS,
+    [I.avatar]: f === v.n_.AVATAR,
+    [I.activity]: f === v.n_.ACTIVITY
   };
   return (0, r.jsx)(l.V, {
     ref: G,
     onKeyDown: B,
     children: (0, r.jsx)("div", {
-      className: a()(I.container, F, Z, {
+      className: a()(I.container, V, Z, {
         [I.customProfileTheme]: null != L
       }),
       children: (0, r.jsx)(d.Z, {
@@ -166,7 +166,7 @@ function A(e) {
             shouldRefocus: !1
           };
           try {
-            return await V(n), w(), null == R || R(), {
+            return await F(n), w(), null == R || R(), {
               shouldClear: !0,
               shouldRefocus: !1
             }

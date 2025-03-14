@@ -22,12 +22,12 @@ var r = n(512722),
   m = n(944486),
   g = n(979651),
   E = n(585483),
-  v = n(124368),
-  b = n(981631),
+  b = n(124368),
+  v = n(981631),
   y = n(176505);
 
 function O(e, t, n) {
-  c.UI.dispatch(b.CkL.POPOUT_CLOSE);
+  c.UI.dispatch(v.CkL.POPOUT_CLOSE);
   let r = !a().isEmpty(g.Z.getVoiceStatesForChannel(e.id));
   if (t || !p.vF.getSetting() || __OVERLAY__ || r) {
     s.Z.dispatch({
@@ -40,21 +40,21 @@ function O(e, t, n) {
   }
   i()(null != e.parent_id, "all threads must have parents");
   let o = m.Z.getChannelId();
-  e.parent_id === o || (0, y.ME)(o) || (0, _.Kh)(e.parent_id), (0, f.uL)(b.Z5c.CHANNEL_THREAD_VIEW((0, d.e)(e), (0, y.ME)(o) ? y.oC.GUILD_HOME : e.parent_id, e.id), e.isForumPost() ? {
-    source: v.on.FORUM
+  e.parent_id === o || (0, y.ME)(o) || (0, _.Kh)(e.parent_id), (0, f.uL)(v.Z5c.CHANNEL_THREAD_VIEW((0, d.e)(e), (0, y.ME)(o) ? y.oC.GUILD_HOME : e.parent_id, e.id), e.isForumPost() ? {
+    source: b.on.FORUM
   } : void 0), setTimeout(() => {
-    E.S.dispatch(b.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+    E.S.dispatch(v.CkL.FOCUS_CHANNEL_TEXT_AREA, {
       channelId: e.id
     })
   }, 0)
 }
 
 function I(e, t, n) {
-  if (i()(!e.isForumLikeChannel(), "cannot open thread creation sidebar in forums"), i()(!__OVERLAY__, "Cannot create threads in the overlay."), (0, u.yw)(b.rMx.THREAD_CREATION_STARTED, {
+  if (i()(!e.isForumLikeChannel(), "cannot open thread creation sidebar in forums"), i()(!__OVERLAY__, "Cannot create threads in the overlay."), (0, u.yw)(v.rMx.THREAD_CREATION_STARTED, {
       location: n,
       channel_id: e.id,
       guild_id: e.guild_id
-    }), c.UI.dispatch(b.CkL.POPOUT_CLOSE), m.Z.getChannelId() !== e.id && (0, _.Kh)(e.id), "" === h.Z.getDraft(e.id, h.d.FirstThreadMessage)) {
+    }), c.UI.dispatch(v.CkL.POPOUT_CLOSE), m.Z.getChannelId() !== e.id && (0, _.Kh)(e.id), "" === h.Z.getDraft(e.id, h.d.FirstThreadMessage)) {
     let t = h.Z.getDraft(e.id, h.d.ChannelMessage);
     l.Z.saveDraft(e.id, "", h.d.ChannelMessage), l.Z.saveDraft(e.id, t, h.d.FirstThreadMessage)
   }
@@ -69,7 +69,7 @@ function I(e, t, n) {
 }
 
 function S(e, t) {
-  (0, f.uL)(b.Z5c.CHANNEL(e, (0, y.ME)(t) ? y.oC.GUILD_HOME : t)), s.Z.dispatch({
+  (0, f.uL)(v.Z5c.CHANNEL(e, (0, y.ME)(t) ? y.oC.GUILD_HOME : t)), s.Z.dispatch({
     type: "SIDEBAR_CLOSE",
     baseChannelId: t
   })

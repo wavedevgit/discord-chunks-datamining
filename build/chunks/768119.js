@@ -51,13 +51,13 @@ function E(e) {
   return e === _.aib.DMS ? _.aib.DMS : e === _.I_8 ? _.aib.FAVORITES : null != f.Z.getGuild(e) ? _.aib.GUILD : null != d.Z.getChannel(e) ? _.aib.CHANNEL : null
 }
 
-function v(e, t) {
+function b(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null;
   if (null == e) return n;
   let r = m[e];
   return null == r ? n : t(r)
 }
-let b = "SearchStore",
+let v = "SearchStore",
   y = "tokenized",
   O = !1,
   I = {},
@@ -140,7 +140,7 @@ function C(e) {
   } = e;
   if ("string" != typeof r || "" === (r = r.trim())) return;
   let i = I[n] = null !== (t = I[n]) && void 0 !== t ? t : [],
-    o = i.indexOf(r); - 1 !== o ? (i.splice(o, 1), i.unshift(r)) : null != i[0] && "" !== i[0] && r.startsWith(i[0]) ? i[0] = r : o < 0 && i.unshift(r), i.length > 5 && i.splice(5, i.length), s.K.set(b, {
+    o = i.indexOf(r); - 1 !== o ? (i.splice(o, 1), i.unshift(r)) : null != i[0] && "" !== i[0] && r.startsWith(i[0]) ? i[0] = r : o < 0 && i.unshift(r), i.length > 5 && i.splice(5, i.length), s.K.set(v, {
     history: I
   })
 }
@@ -191,7 +191,7 @@ function M(e) {
   let {
     searchId: t
   } = e;
-  null == t ? (s.K.remove(b), I = {}) : (delete I[t], s.K.set(b, {
+  null == t ? (s.K.remove(v), I = {}) : (delete I[t], s.K.set(v, {
     history: I
   }))
 }
@@ -201,7 +201,7 @@ function k(e) {
     searchId: t,
     query: n
   } = e;
-  null != I[t] && (I[t] = I[t].filter(e => e !== n), s.K.set(b, {
+  null != I[t] && (I[t] = I[t].filter(e => e !== n), s.K.set(v, {
     history: I
   }))
 }
@@ -227,18 +227,18 @@ function G() {
 }
 
 function B() {
-  s.K.remove(b), I = {}
+  s.K.remove(v), I = {}
 }
 
-function V() {
+function F() {
   return null != S && w({
     searchId: S
   })
 }
-class F extends(r = a.ZP.Store) {
+class V extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(f.Z, d.Z);
-    let e = s.K.get(b);
+    let e = s.K.get(v);
     (null == e ? void 0 : e.history) != null && (I = j(e.history)), O = !!s.K.get(y)
   }
   getCurrentSearchId() {
@@ -252,63 +252,63 @@ class F extends(r = a.ZP.Store) {
     return O
   }
   getSearchType(e) {
-    return v(null != e ? e : S, e => e.searchType)
+    return b(null != e ? e : S, e => e.searchType)
   }
   getRawResults(e) {
-    return v(e, e => e.rawResults)
+    return b(e, e => e.rawResults)
   }
   hasResults(e) {
-    return null != v(e, e => e.rawResults)
+    return null != b(e, e => e.rawResults)
   }
   isIndexing(e) {
-    return v(e, e => e.isIndexing) || !1
+    return b(e, e => e.isIndexing) || !1
   }
   isHistoricalIndexing(e) {
-    return v(e, e => e.isHistoricalIndexing) || !1
+    return b(e, e => e.isHistoricalIndexing) || !1
   }
   isSearching(e) {
-    return v(e, e => e.isSearching) || !1
+    return b(e, e => e.isSearching) || !1
   }
   getAnalyticsId(e) {
-    return v(e, e => e.analyticsId)
+    return b(e, e => e.analyticsId)
   }
   getResultsBlocked(e) {
-    return v(e, e => e.resultsBlocked)
+    return b(e, e => e.resultsBlocked)
   }
   getDocumentsIndexedCount(e) {
-    return v(e, e => e.documentsIndexed)
+    return b(e, e => e.documentsIndexed)
   }
   getSearchFetcher(e) {
-    return v(e, e => e.searchFetcher)
+    return b(e, e => e.searchFetcher)
   }
   getTotalResults(e) {
     var t;
-    return null !== (t = v(e, e => e.totalResults)) && void 0 !== t ? t : 0
+    return null !== (t = b(e, e => e.totalResults)) && void 0 !== t ? t : 0
   }
   getEditorState(e) {
-    return v(e, e => e.editorState)
+    return b(e, e => e.editorState)
   }
   getHistory(e) {
     return I[e]
   }
   getOffset(e) {
     var t;
-    return null !== (t = v(e, e => e.offset)) && void 0 !== t ? t : 0
+    return null !== (t = b(e, e => e.offset)) && void 0 !== t ? t : 0
   }
   getQuery(e) {
-    return v(e, e => e.query)
+    return b(e, e => e.query)
   }
   hasError(e) {
     var t;
-    return null !== (t = v(e, e => e.hasError)) && void 0 !== t && t
+    return null !== (t = b(e, e => e.hasError)) && void 0 !== t && t
   }
   shouldShowBlockedResults(e) {
     var t;
-    return null !== (t = v(e, e => e.showBlockedResults, !1)) && void 0 !== t && t
+    return null !== (t = b(e, e => e.showBlockedResults, !1)) && void 0 !== t && t
   }
   shouldShowNoResultsAlt(e) {
     var t;
-    return null !== (t = v(e, e => e.showNoResultsAlt, !1)) && void 0 !== t && t
+    return null !== (t = b(e, e => e.showNoResultsAlt, !1)) && void 0 !== t && t
   }
   getResultsState(e) {
     return {
@@ -324,8 +324,8 @@ class F extends(r = a.ZP.Store) {
     }
   }
 }
-p(F, "displayName", "SearchStore");
-let Z = new F(l.Z, {
+p(V, "displayName", "SearchStore");
+let Z = new V(l.Z, {
   SEARCH_START: A,
   SEARCH_INDEXING: R,
   SEARCH_FINISH: P,
@@ -335,7 +335,7 @@ let Z = new F(l.Z, {
   SEARCH_SET_SHOW_BLOCKED_RESULTS: U,
   SEARCH_SCREEN_OPEN: x,
   CHANNEL_SELECT: L,
-  CHANNEL_TOGGLE_MEMBERS_SECTION: V,
+  CHANNEL_TOGGLE_MEMBERS_SECTION: F,
   SEARCH_CLEAR_HISTORY: M,
   SEARCH_REMOVE_HISTORY: k,
   SEARCH_ADD_HISTORY: C,

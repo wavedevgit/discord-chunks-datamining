@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(329520),
   g = n(868781),
   E = n(122943),
-  v = n(556638),
-  b = n(981631),
+  b = n(556638),
+  v = n(981631),
   y = n(905035);
 
 function O(e) {
@@ -48,7 +48,7 @@ function O(e) {
         let {
           type: t
         } = e;
-        return t === b.IIU.CUSTOM_STATUS
+        return t === v.IIU.CUSTOM_STATUS
       });
       if (null == r) return null;
       let i = null !== (t = null === (e = r.state) || void 0 === e ? void 0 : e.trim()) && void 0 !== t ? t : null;
@@ -71,7 +71,7 @@ function O(e) {
         let {
           type: t
         } = e;
-        return t !== b.IIU.CUSTOM_STATUS && t !== b.IIU.HANG_STATUS
+        return t !== v.IIU.CUSTOM_STATUS && t !== v.IIU.HANG_STATUS
       });
       return null != e ? (0, r.jsx)(g.Z, {
         activity: e,
@@ -113,7 +113,7 @@ function O(e) {
     children: [U(), (0, r.jsx)(s.xv, {
       variant: "text-".concat(T, "/normal"),
       className: a()(y.text, y.dot, I),
-      children: v.l
+      children: b.l
     }), G(), A && (0, r.jsx)(p.Z, {})]
   })
 }

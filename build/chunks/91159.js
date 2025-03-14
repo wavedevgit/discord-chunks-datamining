@@ -33,7 +33,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function v(e) {
   return e
 }
 
-function b(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,7 +58,7 @@ function b(e, t) {
 }
 
 function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -110,12 +110,12 @@ function A(e, t) {
     _ = e => (0, d.yE)(e, m.iN.ALL_MESSAGES) ? f.$R[g.bL.ALL_MESSAGES] : (0, d.yE)(e, m.iN.ONLY_MENTIONS) ? f.$R[g.bL.ONLY_MENTIONS] : (0, d.yE)(e, m.iN.NO_MESSAGES) ? f.$R[g.bL.NO_MESSAGES] : f.$R[g.bL.NULL],
     h = null !== (n = p.Z.flags(e.id)) && void 0 !== n ? n : 0,
     E = _(h),
-    b = p.Z.isMuted(e.id),
+    v = p.Z.isMuted(e.id),
     I = (0, f.sK)(p.Z.getMuteConfig(e.id)),
     {
       can_send_message: S
     } = i,
-    T = y(v({}, O(i, ["can_send_message"])), {
+    T = y(b({}, O(i, ["can_send_message"])), {
       channel_id: e.id,
       guild_id: o,
       parent_id: a,
@@ -125,8 +125,8 @@ function A(e, t) {
       old_thread_notification_setting: E,
       new_thread_notification_setting: null != t.flags ? _(t.flags) : E,
       parent_notification_setting: l.channel_message_notification_settings,
-      old_thread_is_muted: b,
-      new_thread_is_muted: null !== (r = t.muted) && void 0 !== r ? r : b,
+      old_thread_is_muted: v,
+      new_thread_is_muted: null !== (r = t.muted) && void 0 !== r ? r : v,
       old_thread_muted_until: I,
       new_thread_muted_until: null != t.mute_config ? (0, f.sK)(t.mute_config) : I
     });

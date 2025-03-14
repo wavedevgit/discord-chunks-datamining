@@ -1,4 +1,4 @@
-/** Chunk was on 69423 **/
+/** Chunk was on 98697 **/
 n.d(t, {
   Z: () => E
 }), n(47120);
@@ -19,15 +19,15 @@ let E = i.forwardRef(function(e, t) {
     header: o,
     artClassName: E,
     headerClassName: f,
-    contentClassName: m,
-    tryItText: h,
+    contentClassName: h,
+    tryItText: m,
     dismissText: b,
-    onTryFeature: g,
-    onClose: O,
+    onTryFeature: O,
+    onClose: g,
     className: N,
     inlineArt: I = !1,
-    isPremiumFeature: C = !1,
-    shouldUseHorizontalButtons: T = !1,
+    isPremiumFeature: T = !1,
+    shouldUseHorizontalButtons: C = !1,
     showGIFTag: S = !1,
     dismissibleContent: y,
     position: v = "top",
@@ -35,39 +35,40 @@ let E = i.forwardRef(function(e, t) {
     art: R,
     isPremiumEarlyAccess: A = !1,
     maxWidth: x = 280,
-    hideDismissButton: j = !1,
-    pointerClassName: D,
-    dismissIconClassName: k,
-    dismissIcon: L,
-    onDismissIconClick: M
-  } = e, Z = T ? a.zxk.Sizes.LARGE : a.zxk.Sizes.MAX, [w, U] = i.useState(!1), {
-    ref: V,
-    width: F
+    hideDismissButton: D = !1,
+    pointerClassName: j,
+    dismissIconClassName: L,
+    dismissIcon: k,
+    onDismissIconClick: M,
+    tryItButtonColor: Z
+  } = e, U = C ? a.zxk.Sizes.LARGE : a.zxk.Sizes.MAX, [w, V] = i.useState(!1), {
+    ref: F,
+    width: G
   } = (0, s.Z)();
 
-  function G(e) {
+  function W(e) {
     (0, c.EW)(y, {
       dismissAction: e
     })
   }
   return i.useEffect(() => {
     var e, t;
-    let n = (null !== (t = null === (e = V.current) || void 0 === e ? void 0 : e.scrollWidth) && void 0 !== t ? t : 0) + 64;
-    !w && n > x && U(!0)
-  }, [w, F, V, x]), i.useEffect(() => {
+    let n = (null !== (t = null === (e = F.current) || void 0 === e ? void 0 : e.scrollWidth) && void 0 !== t ? t : 0) + 64;
+    !w && n > x && V(!0)
+  }, [w, G, F, x]), i.useEffect(() => {
     (0, c.kk)(y)
   }, [y]), (0, r.jsx)("div", {
     className: N,
     ref: t,
     children: (0, r.jsxs)("div", {
-      className: l()(p.content, m, {
+      className: l()(p.content, h, {
         [p.contentNoArt]: null == E || I,
-        [p.contentPremium]: C || A
+        [p.contentPremium]: T || A
       }),
-      children: [null != L && (0, r.jsx)(a.P3F, {
+      children: [null != k && (0, r.jsx)(a.P3F, {
         onClick: M,
-        className: k,
-        children: L
+        className: L,
+        children: k
       }), (0, r.jsxs)("div", {
         className: l()(E, I ? p.artInline : p.artAbsolute),
         children: [S && (0, r.jsx)(u.Z, {
@@ -76,10 +77,10 @@ let E = i.forwardRef(function(e, t) {
       }), (0, r.jsxs)("div", {
         className: p.body,
         children: [(0, r.jsxs)(a.X6q, {
-          className: l()(C ? p.headerWithPremiumIcon : p.header, f),
+          className: l()(T ? p.headerWithPremiumIcon : p.header, f),
           variant: "heading-md/bold",
           color: "always-white",
-          children: [C && !A ? (0, r.jsx)(a.SrA, {
+          children: [T && !A ? (0, r.jsx)(a.SrA, {
             size: "md",
             color: "currentColor",
             className: p.premiumIcon
@@ -102,38 +103,38 @@ let E = i.forwardRef(function(e, t) {
           children: n
         }) : n]
       }), (0, r.jsx)("div", {
-        ref: V,
-        className: w || !T ? p.buttonContainerVertical : p.buttonContainerHorizontal,
-        children: null != g ? (0, r.jsxs)(r.Fragment, {
+        ref: F,
+        className: w || !C ? p.buttonContainerVertical : p.buttonContainerHorizontal,
+        children: null != O ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.zxk, {
             className: p.button,
-            size: Z,
+            size: U,
             onClick: e => {
-              null == O || O(e), g(e), G(d.L.PRIMARY)
+              null == g || g(e), O(e), W(d.L.PRIMARY)
             },
-            color: C || A ? a.zxk.Colors.BRAND_INVERTED : a.zxk.Colors.WHITE,
-            children: null != h ? h : _.NW.string(_.t.IHf1RE)
-          }), !j && (0, r.jsx)(a.zxk, {
+            color: null != Z ? Z : T || A ? a.zxk.Colors.BRAND_INVERTED : a.zxk.Colors.WHITE,
+            children: null != m ? m : _.NW.string(_.t.IHf1RE)
+          }), !D && (0, r.jsx)(a.zxk, {
             className: p.button,
-            size: Z,
+            size: U,
             onClick: e => {
-              null == O || O(e), G(d.L.DISMISS)
+              null == g || g(e), W(d.L.DISMISS)
             },
-            color: C || A ? a.zxk.Colors.WHITE : a.zxk.Colors.BRAND,
-            look: C || A ? a.zxk.Looks.LINK : a.zxk.Looks.FILLED,
+            color: T || A ? a.zxk.Colors.WHITE : a.zxk.Colors.BRAND,
+            look: T || A ? a.zxk.Looks.LINK : a.zxk.Looks.FILLED,
             children: null != b ? b : _.NW.string(_.t.om7Ovr)
           })]
         }) : (0, r.jsx)(a.zxk, {
           className: p.button,
           size: a.zxk.Sizes.MAX,
           onClick: e => {
-            null == O || O(e), G(d.L.PRIMARY)
+            null == g || g(e), W(d.L.PRIMARY)
           },
           color: a.zxk.Colors.WHITE,
           children: _.NW.string(_.t.HU2IR0)
         })
       }), (0, r.jsx)("div", {
-        className: l()(p.pointer, D, {
+        className: l()(p.pointer, j, {
           [p.bottomPointer]: "top" === v,
           [p.centerLeftPointer]: "right" === v && "center" === P,
           [p.topLeftPointer]: "right" === v && "top" === P

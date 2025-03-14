@@ -26,8 +26,8 @@ let p = {
       m = void 0 === h || h,
       g = n.altAxis,
       E = void 0 !== g && g,
-      v = n.boundary,
-      b = n.rootBoundary,
+      b = n.boundary,
+      v = n.rootBoundary,
       y = n.altBoundary,
       O = n.padding,
       I = n.tether,
@@ -35,8 +35,8 @@ let p = {
       T = n.tetherOffset,
       N = void 0 === T ? 0 : T,
       A = (0, u.Z)(t, {
-        boundary: v,
-        rootBoundary: b,
+        boundary: b,
+        rootBoundary: v,
         padding: O,
         altBoundary: y
       }),
@@ -65,12 +65,12 @@ let p = {
       };
     if (L) {
       if (m) {
-        var B, V = "y" === w ? r.we : r.t$,
-          F = "y" === w ? r.I : r.F2,
+        var B, F = "y" === w ? r.we : r.t$,
+          V = "y" === w ? r.I : r.F2,
           Z = "y" === w ? "height" : "width",
           H = L[w],
-          W = H + A[V],
-          Y = H - A[F],
+          W = H + A[F],
+          Y = H - A[V],
           K = S ? -M[Z] / 2 : 0,
           z = R === r.BL ? x[Z] : M[Z],
           q = R === r.BL ? -M[Z] : -x[Z],
@@ -80,8 +80,8 @@ let p = {
             height: 0
           },
           J = t.modifiersData["arrow#persistent"] ? t.modifiersData["arrow#persistent"].padding : (0, f.Z)(),
-          $ = J[V],
-          ee = J[F],
+          $ = J[F],
+          ee = J[V],
           et = (0, s.u)(0, x[Z], X[Z]),
           en = P ? x[Z] / 2 - K - et - $ - j.mainAxis : z - et - $ - j.mainAxis,
           er = P ? -x[Z] / 2 + K + et + ee + j.mainAxis : q + et + ee + j.mainAxis,
@@ -102,9 +102,9 @@ let p = {
           em = e_ - A[ef],
           eg = -1 !== [r.we, r.t$].indexOf(C),
           eE = null != (eu = null == U ? void 0 : U[D]) ? eu : 0,
-          ev = eg ? eh : e_ - x[ep] - M[ep] - eE + j.altAxis,
-          eb = eg ? e_ + x[ep] + M[ep] - eE - j.altAxis : em,
-          ey = S && eg ? (0, s.q)(ev, e_, eb) : (0, s.u)(S ? ev : eh, e_, S ? eb : em);
+          eb = eg ? eh : e_ - x[ep] - M[ep] - eE + j.altAxis,
+          ev = eg ? e_ + x[ep] + M[ep] - eE - j.altAxis : em,
+          ey = S && eg ? (0, s.q)(eb, e_, ev) : (0, s.u)(S ? eb : eh, e_, S ? ev : em);
         L[D] = ey, G[D] = ey - e_
       }
       t.modifiersData[p] = G

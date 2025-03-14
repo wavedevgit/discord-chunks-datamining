@@ -20,8 +20,8 @@ var i = n(120356),
   m = n(430824),
   g = n(323038),
   E = n(960870),
-  v = n(139793),
-  b = n(652853),
+  b = n(139793),
+  v = n(652853),
   y = n(336383),
   O = n(194811),
   I = n(373826),
@@ -41,7 +41,7 @@ function w(e) {
     onClose: w
   } = e, {
     profileType: D
-  } = (0, b.z)(), L = {
+  } = (0, v.z)(), L = {
     [P.fullSize]: D === C.y0.FULL_SIZE
   }, {
     analyticsLocations: x
@@ -53,10 +53,10 @@ function w(e) {
     voiceChannelId: n.id,
     user: t,
     analyticsLocations: x
-  }), k = (0, v.Z)({
+  }), k = (0, b.Z)({
     userId: t.id,
     onAction: M
-  }), j = (0, s.e7)([m.Z], () => m.Z.getGuild(n.guild_id)), U = (0, g.Z)(n), G = (0, f.ZP)(n), B = () => n.isDM() || n.isGroupDM() ? R.NW.string(R.t["9FaEzs"]) : n.isGuildStageVoice() ? R.NW.string(R.t.QygGCA) : R.NW.string(R.t.msxteH), V = () => {
+  }), j = (0, s.e7)([m.Z], () => m.Z.getGuild(n.guild_id)), U = (0, g.Z)(n), G = (0, f.ZP)(n), B = () => n.isDM() || n.isGroupDM() ? R.NW.string(R.t["9FaEzs"]) : n.isGuildStageVoice() ? R.NW.string(R.t.QygGCA) : R.NW.string(R.t.msxteH), F = () => {
     let e = e => {
         e.stopPropagation(), null == M || M({
           action: "OPEN_VOICE_CHANNEL"
@@ -93,7 +93,7 @@ function w(e) {
         })]
       })
     })
-  }, F = () => (0, r.jsx)("div", {
+  }, V = () => (0, r.jsx)("div", {
     className: o()(P.actions, L),
     children: (0, r.jsx)(N.Z, {
       channel: n,
@@ -122,9 +122,9 @@ function w(e) {
           children: [(0, r.jsx)(S.Z, {
             users: U,
             channel: n
-          }), V(), D === C.y0.FULL_SIZE && F()]
+          }), F(), D === C.y0.FULL_SIZE && V()]
         })
-      }), D !== C.y0.FULL_SIZE && F()]
+      }), D !== C.y0.FULL_SIZE && V()]
     })
   })
 }

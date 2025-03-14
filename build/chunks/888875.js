@@ -20,7 +20,7 @@ var r = n(392711),
   g = n(526761),
   E = n(674563);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -28,7 +28,7 @@ function v(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let b = 10 + Math.random() * (10 * _.Z.Millis.SECOND),
+let v = 10 + Math.random() * (10 * _.Z.Millis.SECOND),
   y = 2 * _.Z.Millis.HOUR + Math.floor(Math.random() * (10 * _.Z.Millis.MINUTE)),
   O = null,
   I = !1;
@@ -72,7 +72,7 @@ class S extends a.Z {
     })
   }
   constructor(...e) {
-    super(...e), v(this, "actions", {
+    super(...e), b(this, "actions", {
       POST_CONNECTION_OPEN: T,
       CONNECTION_RESUMED: T,
       CONNECTION_CLOSED: A,
@@ -82,7 +82,7 @@ class S extends a.Z {
 }
 
 function T() {
-  I = !0, R(b, !0)
+  I = !0, R(v, !0)
 }
 
 function N(e) {

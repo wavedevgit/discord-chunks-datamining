@@ -18,10 +18,10 @@ n.d(t, {
   GN: () => ed,
   Gd: () => to,
   Jg: () => eI,
-  K: () => ev,
+  K: () => eb,
   KM: () => eP,
   Kr: () => ep,
-  LM: () => eb,
+  LM: () => ev,
   Nj: () => eN,
   OG: () => e6,
   PM: () => el,
@@ -32,9 +32,9 @@ n.d(t, {
   WP: () => J,
   Xh: () => eo,
   Xv: () => eg,
-  ZZ: () => F,
+  ZZ: () => V,
   Zp: () => ts,
-  _D: () => V,
+  _D: () => F,
   _j: () => e5,
   _p: () => tn,
   b7: () => eW,
@@ -83,8 +83,8 @@ var h = n(572004),
   m = n(70956),
   g = n(630388),
   E = n(823379),
-  v = n(49012),
-  b = n(960048),
+  b = n(49012),
+  v = n(960048),
   y = n(617136),
   O = n(272008),
   I = n(569984),
@@ -152,16 +152,16 @@ function U(e) {
 let G = e => e.application_id === P.Ev || e.platform === R.M7m.XBOX,
   B = e => e.platform === R.M7m.PS4 || e.platform === R.M7m.PS5;
 
-function V(e, t) {
+function F(e, t) {
   if (null == e) return !1;
   let n = e.name.toLowerCase(),
     r = N.r.build(t.config).application.name.toLowerCase();
   return G(e) || B(e) ? n === r : null != e.application_id && Z(e.application_id, t)
 }
 
-function F(e, t) {
+function V(e, t) {
   for (let [n, r] of e)
-    if (V(t, r) && !Y(r)) return r
+    if (F(t, r) && !Y(r)) return r
 }
 
 function Z(e, t) {
@@ -463,12 +463,12 @@ function eE(e) {
   return e.rewardsConfig.rewards.some(e => e.type === c.w.IN_GAME)
 }
 
-function ev(e) {
+function eb(e) {
   var t;
   return null !== (t = e.rewardsConfig.rewards.find(e => e.type === c.w.IN_GAME)) && void 0 !== t ? t : null
 }
 
-function eb(e) {
+function ev(e) {
   let t = e.rewardsConfig.rewards.find(e => e.type === c.w.VIRTUAL_CURRENCY);
   return null == t ? void 0 : t.orbQuantity
 }
@@ -478,7 +478,7 @@ function ey(e, t) {
 }
 
 function eO(e, t) {
-  b.Z.captureException(e, M(L({}, t), {
+  v.Z.captureException(e, M(L({}, t), {
     tags: M(L({}, null == t ? void 0 : t.tags), {
       app_context: "quests"
     })
@@ -488,7 +488,7 @@ function eO(e, t) {
 function eI(e, t) {
   if (null == t || null == e) return null;
   for (let n of t) {
-    let t = F(e, n);
+    let t = V(e, n);
     if (null != t) return t
   }
   return null
@@ -552,7 +552,7 @@ function eD(e) {
 
 function eL(e, t) {
   let n = N.r.build(e.config).application.link;
-  (0, v.q)({
+  (0, b.q)({
     href: n,
     onConfirm: () => {
       (0, y._3)({
@@ -601,7 +601,7 @@ let ex = (e, t) => {
     let o = Math.min(r * eG, eU(e, t));
     return Math.max((0, i.floor)(o, 2), 0)
   },
-  eV = e => {
+  eF = e => {
     var t, n;
     let {
       quest: r,
@@ -622,7 +622,7 @@ let ex = (e, t) => {
       taskType: l
     }
   },
-  eF = e => a.T.ALL.has(e) ? e : null,
+  eV = e => a.T.ALL.has(e) ? e : null,
   eZ = e => {
     var t, n;
     let {
@@ -635,14 +635,14 @@ let ex = (e, t) => {
           o = null == t ? void 0 : null === (r = t.heartbeat) || void 0 === r ? void 0 : r.lastBeatAt;
         return null != i && null != o ? new Date(i).valueOf() > new Date(o).valueOf() ? -1 : 1 : null == i && null == o && (null == e ? void 0 : e.updatedAt) != null && (null == t ? void 0 : t.updatedAt) != null ? new Date(e.updatedAt).valueOf() > new Date(t.updatedAt).valueOf() ? -1 : 1 : null != i && null == o ? -1 : 1
       }).filter(E.lm)) {
-      let t = eF(e.eventName);
-      if (null != t && (null == i ? void 0 : i.has(t))) return eV({
+      let t = eV(e.eventName);
+      if (null != t && (null == i ? void 0 : i.has(t))) return eF({
         quest: r,
         taskType: t,
         includeTaskTypes: i
       })
     }
-    return eV({
+    return eF({
       quest: r,
       includeTaskTypes: i
     })
@@ -656,16 +656,16 @@ let ex = (e, t) => {
   } : eq(e) ? eZ({
     quest: e,
     includeTaskTypes: null != t ? t : e$(e) ? a.T.CONSOLE : a.T.ALL
-  }) : eQ(e) ? eV({
+  }) : eQ(e) ? eF({
     quest: e,
     taskType: a.X.WATCH_VIDEO
-  }) : eR(e) ? eV({
+  }) : eR(e) ? eF({
     quest: e,
     taskType: a.X.PLAY_ON_DESKTOP
-  }) : eC(e) ? eV({
+  }) : eC(e) ? eF({
     quest: e,
     taskType: a.X.PLAY_ACTIVITY
-  }) : eV({
+  }) : eF({
     quest: e,
     taskType: a.X.STREAM_ON_DESKTOP
   });

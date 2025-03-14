@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(867176),
   g = n(502762),
   E = n(952124),
-  v = n(544989),
-  b = n(4517),
+  b = n(544989),
+  v = n(4517),
   y = n(171368),
   O = n(895697),
   I = n(161572),
@@ -71,10 +71,10 @@ function R(e) {
     channelId: R,
     messageId: P,
     roleId: w
-  }), U = (0, p.ZP)(t.id, A), G = (0, o.e7)([d.Z], () => null != A ? d.Z.getGuild(A) : null), B = (0, o.e7)([u.ZP], () => null != A ? u.ZP.getMember(A, t.id) : null), V = i.useRef(null), F = (0, s.Z)(V);
+  }), U = (0, p.ZP)(t.id, A), G = (0, o.e7)([d.Z], () => null != A ? d.Z.getGuild(A) : null), B = (0, o.e7)([u.ZP], () => null != A ? u.ZP.getMember(A, t.id) : null), F = i.useRef(null), V = (0, s.Z)(F);
   i.useEffect(() => {
-    null == L || L(null == V ? void 0 : V.current)
-  }, [V, L]);
+    null == L || L(null == F ? void 0 : F.current)
+  }, [F, L]);
   let Z = e => {
       null == D || D(), (0, y.openUserProfileModal)(C({
         sourceAnalyticsLocations: k
@@ -96,13 +96,13 @@ function R(e) {
       value: j,
       shouldTrackViewOnMount: null == B || null != B.fullProfileLoadedTimestamp,
       children: (0, r.jsx)(a.VqE, {
-        ref: V,
+        ref: F,
         "aria-label": t.username,
         children: (0, r.jsxs)(g.Z, {
           user: t,
           displayProfile: U,
           profileType: S.y0.BITE_SIZE,
-          children: [(0, r.jsx)(v.Z, {
+          children: [(0, r.jsx)(b.Z, {
             profileType: S.y0.BITE_SIZE,
             children: (0, r.jsx)(E.Z, {
               user: t,
@@ -124,7 +124,7 @@ function R(e) {
               channelId: R,
               profileType: S.y0.BITE_SIZE,
               onOpenProfile: x ? void 0 : Z
-            }), (0, r.jsx)(b.Z, {
+            }), (0, r.jsx)(v.Z, {
               location: "BotUserProfilePopout",
               user: t,
               profileType: S.y0.BITE_SIZE,
@@ -135,7 +135,7 @@ function R(e) {
             currentUser: n,
             displayProfile: U,
             guild: G,
-            isHovering: F,
+            isHovering: V,
             onOpenProfile: x ? void 0 : Z,
             channelId: R,
             onClose: D

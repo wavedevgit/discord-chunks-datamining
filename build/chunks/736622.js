@@ -215,7 +215,7 @@ function E(e) {
   return Object.assign({}, g, e)
 }
 
-function v(e) {
+function b(e) {
   var t = e.riveLoaded,
     n = void 0 !== t && t,
     i = e.canvasElem,
@@ -233,14 +233,14 @@ function v(e) {
     p = _.height,
     h = _.width,
     g = f[1],
-    v = r.useState({
+    b = r.useState({
       height: 0,
       width: 0
     }),
-    b = v[0],
-    y = b.height,
-    O = b.width,
-    I = v[1],
+    v = b[0],
+    y = v.height,
+    O = v.width,
+    I = b[1],
     S = r.useState(!0),
     T = S[0],
     N = S[1],
@@ -299,7 +299,7 @@ function v(e) {
     })
   }, [i])
 }
-var b, y = function() {
+var v, y = function() {
     function e() {}
     return e.prototype.observe = function() {}, e.prototype.unobserve = function() {}, e.prototype.disconnect = function() {}, e
   }(),
@@ -321,7 +321,7 @@ var b, y = function() {
     }, e
   }(),
   S = function() {
-    return b || (b = new I), b
+    return v || (v = new I), v
   };
 
 function T(e) {
@@ -372,7 +372,7 @@ function N(e, t) {
         f.startRendering(), f.resizeToCanvas()
       }
     }, [f, m]);
-  v({
+  b({
     riveLoaded: !!f,
     canvasElem: s,
     containerRef: c,
@@ -380,7 +380,7 @@ function N(e, t) {
     onCanvasHasResized: g,
     artboardBounds: null == f ? void 0 : f.bounds
   });
-  var b = r.useCallback(function(e) {
+  var v = r.useCallback(function(e) {
     null === e && s && (s.height = 0, s.width = 0), l(e)
   }, []);
   r.useEffect(function() {
@@ -440,13 +440,13 @@ function N(e, t) {
   var C = r.useCallback(function(e) {
     return o.default.createElement(T, a({
       setContainerRef: y,
-      setCanvasRef: b
+      setCanvasRef: v
     }, e))
-  }, [b, y]);
+  }, [v, y]);
   return {
     canvas: s,
     container: c.current,
-    setCanvasRef: b,
+    setCanvasRef: v,
     setContainerRef: y,
     rive: f,
     RiveComponent: C
@@ -468,7 +468,7 @@ t.default = function(e) {
     m = void 0 !== h && h,
     g = e.children,
     E = s(e, ["src", "artboard", "animations", "stateMachines", "layout", "useOffscreenRenderer", "shouldDisableRiveListeners", "shouldResizeCanvasToContainer", "automaticallyHandleEvents", "children"]),
-    v = N({
+    b = N({
       src: t,
       artboard: n,
       animations: r,
@@ -481,8 +481,8 @@ t.default = function(e) {
       useOffscreenRenderer: u,
       shouldResizeCanvasToContainer: p
     }).RiveComponent;
-  return o.default.createElement(v, a({}, E), g)
-}, t.useResizeCanvas = v, t.useRive = N, t.useRiveFile = function(e) {
+  return o.default.createElement(b, a({}, E), g)
+}, t.useResizeCanvas = b, t.useRive = N, t.useRiveFile = function(e) {
   var t = this,
     n = r.useState(null),
     o = n[0],

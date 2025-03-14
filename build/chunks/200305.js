@@ -1,479 +1,479 @@
-/** Chunk was on 81038 **/
-i.d(t, {
-  Y: () => V,
-  Z: () => Z
-}), i(47120), i(978209), i(266796);
-var n = i(200651),
-  l = i(192379),
-  r = i(120356),
-  s = i.n(r),
-  a = i(442837),
-  o = i(481060),
-  u = i(893776),
-  d = i(809206),
-  c = i(607070),
-  m = i(600164),
-  f = i(339085),
-  E = i(565138),
-  g = i(650774),
-  h = i(271383),
-  v = i(594174),
-  N = i(626135),
-  I = i(768581),
-  p = i(944163),
-  _ = i(246364),
-  j = i(983736),
-  y = i(187565),
-  S = i(990488),
-  x = i(592286),
-  b = i(981631),
-  O = i(388032),
-  T = i(983372),
-  A = i(419851),
-  C = i(296507),
-  P = i(866402),
-  D = i(246403);
+/** Chunk was on 80026 **/
+t.d(l, {
+  Y: () => z,
+  Z: () => _
+}), t(47120), t(978209), t(266796);
+var n = t(200651),
+  r = t(192379),
+  s = t(120356),
+  i = t.n(s),
+  a = t(442837),
+  o = t(481060),
+  d = t(893776),
+  c = t(809206),
+  u = t(607070),
+  m = t(600164),
+  x = t(339085),
+  h = t(565138),
+  v = t(650774),
+  j = t(271383),
+  g = t(594174),
+  N = t(626135),
+  f = t(768581),
+  p = t(944163),
+  b = t(246364),
+  y = t(983736),
+  O = t(187565),
+  w = t(990488),
+  k = t(592286),
+  C = t(981631),
+  W = t(388032),
+  E = t(983372),
+  P = t(419851),
+  I = t(296507),
+  S = t(866402),
+  F = t(246403);
 
-function L(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var i = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(i);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(i).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(i, e).enumerable
-    }))), n.forEach(function(t) {
+function Z(e) {
+  for (var l = 1; l < arguments.length; l++) {
+    var t = null != arguments[l] ? arguments[l] : {},
+      n = Object.keys(t);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(t, e).enumerable
+    }))), n.forEach(function(l) {
       var n;
-      n = i[t], t in e ? Object.defineProperty(e, t, {
+      n = t[l], l in e ? Object.defineProperty(e, l, {
         value: n,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = n
+      }) : e[l] = n
     })
   }
   return e
 }
 
-function R(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var i = Object.keys(e);
+function T(e, l) {
+  return l = null != l ? l : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(l)) : (function(e, l) {
+    var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var n = Object.getOwnPropertySymbols(e);
-      i.push.apply(i, n)
+      t.push.apply(t, n)
     }
-    return i
-  })(Object(t)).forEach(function(i) {
-    Object.defineProperty(e, i, Object.getOwnPropertyDescriptor(t, i))
+    return t
+  })(Object(l)).forEach(function(t) {
+    Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(l, t))
   }), e
 }
-let F = e => {
+let M = e => {
     let {
-      headerId: t,
-      email: i,
-      password: l,
-      setEmail: r,
-      setPassword: s,
+      headerId: l,
+      email: t,
+      password: r,
+      setEmail: s,
+      setPassword: i,
       emailError: a,
-      passwordError: u
+      passwordError: d
     } = e;
     return (0, n.jsxs)("div", {
-      className: T.content,
+      className: E.content,
       children: [(0, n.jsx)("div", {
-        className: T.applicationIconContainer,
+        className: E.applicationIconContainer,
         children: (0, n.jsx)("img", {
-          alt: O.NW.string(O.t.ewGfjo),
-          src: A,
-          className: T.applicationIcon
+          alt: W.NW.string(W.t.ewGfjo),
+          src: P,
+          className: E.applicationIcon
         })
       }), (0, n.jsx)(o.X6q, {
-        id: t,
+        id: l,
         variant: "heading-xl/semibold",
-        className: T.header,
-        children: O.NW.string(O.t.MhcDLy)
+        className: E.header,
+        children: W.NW.string(W.t.MhcDLy)
       }), (0, n.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: O.NW.string(O.t.SPlaR0)
+        children: W.NW.string(W.t.SPlaR0)
       }), (0, n.jsx)("hr", {
-        className: T.divider
+        className: E.divider
       }), (0, n.jsx)(o.xJW, {
-        title: O.NW.string(O.t.dI4d4e),
-        className: T.formItem,
+        title: W.NW.string(W.t.dI4d4e),
+        className: E.formItem,
         children: (0, n.jsx)(o.oil, {
-          value: i,
+          value: t,
           error: a,
-          onChange: r,
+          onChange: s,
           autoFocus: !0
         })
       }), (0, n.jsx)(o.xJW, {
-        title: O.NW.string(O.t["CIGa+/"]),
-        className: T.formItem,
+        title: W.NW.string(W.t["CIGa+/"]),
+        className: E.formItem,
         children: (0, n.jsx)(o.oil, {
           type: "password",
-          value: l,
-          error: u,
-          onChange: s
+          value: r,
+          error: d,
+          onChange: i
         })
       })]
     })
   },
-  w = e => {
+  D = e => {
     let {
-      headerId: t,
-      email: i
+      headerId: l,
+      email: t
     } = e;
     return (0, n.jsxs)("div", {
-      className: T.content,
+      className: E.content,
       children: [(0, n.jsx)("img", {
-        alt: O.NW.string(O.t.wNAbl5),
-        src: D,
-        className: T.applicationIcon
+        alt: W.NW.string(W.t.wNAbl5),
+        src: F,
+        className: E.applicationIcon
       }), (0, n.jsx)(o.X6q, {
-        id: t,
+        id: l,
         variant: "heading-xl/semibold",
-        className: T.header,
-        children: O.NW.format(O.t.v01XgI, {
-          email: i
+        className: E.header,
+        children: W.NW.format(W.t.v01XgI, {
+          email: t
         })
       }), (0, n.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: O.NW.string(O.t["/Hw5aW"])
+        children: W.NW.string(W.t["/Hw5aW"])
       }), (0, n.jsx)(o.zxk, {
-        className: T.resendButton,
+        className: E.resendButton,
         size: o.zxk.Sizes.NONE,
         look: o.zxk.Looks.LINK,
-        onClick: () => u.Z.verifyResend(),
-        children: O.NW.string(O.t["MLk/mJ"])
+        onClick: () => d.Z.verifyResend(),
+        children: W.NW.string(W.t["MLk/mJ"])
       })]
     })
   },
-  V = e => {
-    var t;
+  z = e => {
+    var l;
     let {
-      guildId: i,
-      formState: l,
-      updateFormState: r,
-      isPreview: s = !1,
+      guildId: t,
+      formState: r,
+      updateFormState: s,
+      isPreview: i = !1,
       disableVerification: o = !1
-    } = e, u = (0, a.e7)([p.Z], () => p.Z.get(i));
-    if (null == u) return null;
-    let d = null !== (t = null != l ? l : null == u ? void 0 : u.formFields) && void 0 !== t ? t : [],
-      c = s ? S.W : S.r;
-    return (0, n.jsx)(c, {
-      guildId: i,
-      formFields: d,
-      updateFormFields: r,
+    } = e, d = (0, a.e7)([p.Z], () => p.Z.get(t));
+    if (null == d) return null;
+    let c = null !== (l = null != r ? r : null == d ? void 0 : d.formFields) && void 0 !== l ? l : [],
+      u = i ? w.W : w.r;
+    return (0, n.jsx)(u, {
+      guildId: t,
+      formFields: c,
+      updateFormFields: s,
       disableVerification: o
     })
   },
-  M = () => i.e("43841").then(i.t.bind(i, 737848, 19)).then(e => {
+  L = () => t.e("43841").then(t.t.bind(t, 737848, 19)).then(e => {
     let {
-      default: t
+      default: l
     } = e;
-    return t
+    return l
   }),
-  G = e => {
+  R = e => {
     let {
-      headerId: t,
-      guildId: i,
-      formState: l,
-      updateFormState: r,
+      headerId: l,
+      guildId: t,
+      formState: r,
+      updateFormState: s,
       useReducedMotion: a,
-      disableVerification: u,
-      isPreview: d = !1
+      disableVerification: d,
+      isPreview: c = !1
     } = e;
     return (0, n.jsxs)("div", {
-      className: T.content,
+      className: E.content,
       children: [(0, n.jsxs)("div", {
-        className: T.animationAndSparklesContainer,
+        className: E.animationAndSparklesContainer,
         children: [(0, n.jsx)("img", {
-          alt: O.NW.string(O.t.VoB8OT),
-          src: P,
-          className: s()(T.sparkleIcon, T.sparkleBottom)
+          alt: W.NW.string(W.t.VoB8OT),
+          src: S,
+          className: i()(E.sparkleIcon, E.sparkleBottom)
         }), (0, n.jsx)(o.Fmz, {
-          importData: M,
+          importData: L,
           shouldAnimate: !a,
-          className: T.animation
+          className: E.animation
         }), (0, n.jsx)("img", {
-          alt: O.NW.string(O.t.VoB8OT),
-          src: C,
-          className: s()(T.sparkleIcon, T.sparkleTop)
+          alt: W.NW.string(W.t.VoB8OT),
+          src: I,
+          className: i()(E.sparkleIcon, E.sparkleTop)
         })]
       }), (0, n.jsx)(o.X6q, {
-        id: t,
+        id: l,
         variant: "heading-xl/semibold",
-        className: T.header,
-        children: O.NW.string(O.t.DrEECw)
+        className: E.header,
+        children: W.NW.string(W.t.DrEECw)
       }), (0, n.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        className: T.subheader,
-        children: O.NW.string(O.t["7D3C5u"])
+        className: E.subheader,
+        children: W.NW.string(W.t["7D3C5u"])
       }), (0, n.jsx)("hr", {
-        className: T.divider
-      }), (0, n.jsx)(V, {
-        guildId: i,
-        formState: l,
-        updateFormState: r,
-        isPreview: d,
-        disableVerification: u
+        className: E.divider
+      }), (0, n.jsx)(z, {
+        guildId: t,
+        formState: r,
+        updateFormState: s,
+        isPreview: c,
+        disableVerification: d
       })]
     })
   },
-  Z = e => {
-    var t, i;
+  _ = e => {
+    var l, t;
     let {
-      verificationForm: r,
-      headerId: u,
-      guildId: S,
-      onClose: A,
-      onComplete: C,
-      isPreview: P = !1
-    } = e, D = null == r ? void 0 : r.guild, V = (0, y.N0)(S, D, P), M = null == r ? void 0 : r.formFields.some(e => e.field_type !== _.QJ.TERMS), Z = (0, a.e7)([v.default], () => v.default.getCurrentUser()), k = null == Z ? void 0 : Z.verified, B = null == Z ? void 0 : Z.isPhoneVerified(), W = (0, a.e7)([f.ZP], () => f.ZP.getGuildEmoji(S)), {
-      storeMemberCount: U,
-      storeOnlineCount: z
-    } = (0, a.cj)([g.Z], () => ({
-      storeMemberCount: g.Z.getMemberCount(S),
-      storeOnlineCount: g.Z.getOnlineCount(S)
-    })), [H, q] = l.useState(null !== (t = null == r ? void 0 : r.formFields) && void 0 !== t ? t : []), [J, Y] = l.useState(!1), [K, X] = l.useState(null), [Q, $] = l.useState(""), [ee, et] = l.useState(""), [ei, en] = l.useState(null), [el, er] = l.useState(null), es = null !== (i = null == V ? void 0 : V.hasFeature(b.oNc.CLAN)) && void 0 !== i && i, {
+      verificationForm: s,
+      headerId: d,
+      guildId: w,
+      onClose: P,
+      onComplete: I,
+      isPreview: S = !1
+    } = e, F = null == s ? void 0 : s.guild, z = (0, O.N0)(w, F, S), L = null == s ? void 0 : s.formFields.some(e => e.field_type !== b.QJ.TERMS), _ = (0, a.e7)([g.default], () => g.default.getCurrentUser()), A = null == _ ? void 0 : _.verified, V = null == _ ? void 0 : _.isPhoneVerified(), B = (0, a.e7)([x.ZP], () => x.ZP.getGuildEmoji(w)), {
+      storeMemberCount: X,
+      storeOnlineCount: q
+    } = (0, a.cj)([v.Z], () => ({
+      storeMemberCount: v.Z.getMemberCount(w),
+      storeOnlineCount: v.Z.getOnlineCount(w)
+    })), [G, H] = r.useState(null !== (l = null == s ? void 0 : s.formFields) && void 0 !== l ? l : []), [J, U] = r.useState(!1), [K, Y] = r.useState(null), [Q, $] = r.useState(""), [ee, el] = r.useState(""), [et, en] = r.useState(null), [er, es] = r.useState(null), ei = null !== (t = null == z ? void 0 : z.hasFeature(C.oNc.CLAN)) && void 0 !== t && t, {
       emojisToRender: ea,
       remainingEmojis: eo,
-      numGuildEmoji: eu
-    } = l.useMemo(() => {
+      numGuildEmoji: ed
+    } = r.useMemo(() => {
       var e;
-      let t = [...null !== (e = 0 === W.length ? null == D ? void 0 : D.emojis : W) && void 0 !== e ? e : []].reverse(),
-        i = 0,
-        n = t.length;
-      return n > 12 && null != t && (i = Math.min(n - (t = t.slice(0, 11)).length, 99)), {
-        emojisToRender: t,
-        remainingEmojis: i,
+      let l = [...null !== (e = 0 === B.length ? null == F ? void 0 : F.emojis : B) && void 0 !== e ? e : []].reverse(),
+        t = 0,
+        n = l.length;
+      return n > 12 && null != l && (t = Math.min(n - (l = l.slice(0, 11)).length, 99)), {
+        emojisToRender: l,
+        remainingEmojis: t,
         numGuildEmoji: n
       }
-    }, [D, W]), ed = null != U ? U : null == D ? void 0 : D.approximate_member_count, ec = null != z ? z : null == D ? void 0 : D.approximate_presence_count, em = null != M && M, {
-      currentStep: ef,
-      setCurrentStep: eE
-    } = (0, y.k3)(Z, em);
-    (0, y.lk)(H), l.useEffect(() => {
-      null != r && q(r.formFields)
-    }, [r]), l.useEffect(() => {
-      null != S && N.default.track(b.rMx.OPEN_MODAL, {
-        type: x.N4,
-        guild_id: S
+    }, [F, B]), ec = null != X ? X : null == F ? void 0 : F.approximate_member_count, eu = null != q ? q : null == F ? void 0 : F.approximate_presence_count, em = null != L && L, {
+      currentStep: ex,
+      setCurrentStep: eh
+    } = (0, O.k3)(_, em);
+    (0, O.lk)(G), r.useEffect(() => {
+      null != s && H(s.formFields)
+    }, [s]), r.useEffect(() => {
+      null != w && N.default.track(C.rMx.OPEN_MODAL, {
+        type: k.N4,
+        guild_id: w
       })
-    }, [S]);
-    let eg = l.useMemo(() => {
-        if (H.some(e => !(0, j.OA)(e))) return !0;
-        if (em || (null == Z ? void 0 : Z.isStaff())) return !1;
-        switch (null == V ? void 0 : V.verificationLevel) {
-          case b.sFg.VERY_HIGH:
-            return !B;
-          case b.sFg.LOW:
-          case b.sFg.MEDIUM:
-          case b.sFg.HIGH:
-            return !k && !B;
-          case b.sFg.NONE:
+    }, [w]);
+    let ev = r.useMemo(() => {
+        if (G.some(e => !(0, y.OA)(e))) return !0;
+        if (em || (null == _ ? void 0 : _.isStaff())) return !1;
+        switch (null == z ? void 0 : z.verificationLevel) {
+          case C.sFg.VERY_HIGH:
+            return !V;
+          case C.sFg.LOW:
+          case C.sFg.MEDIUM:
+          case C.sFg.HIGH:
+            return !A && !V;
+          case C.sFg.NONE:
           default:
             return !1
         }
-      }, [H, V, em, Z, B, k]),
-      eh = (0, a.e7)([c.Z], () => c.Z.useReducedMotion);
-    if (null == V) return null;
-    let ev = async () => {
-      Y(!0), en(null), er(null);
+      }, [G, z, em, _, V, A]),
+      ej = (0, a.e7)([u.Z], () => u.Z.useReducedMotion);
+    if (null == z) return null;
+    let eg = async () => {
+      U(!0), en(null), es(null);
       try {
-        await (0, d.S2)({
+        await (0, c.S2)({
           email: Q,
           password: ee
-        }), Y(!1), eE(1)
-      } catch (i) {
-        var e, t;
-        en(null == i ? void 0 : null === (e = i.body) || void 0 === e ? void 0 : e.email), er(null == i ? void 0 : null === (t = i.body) || void 0 === t ? void 0 : t.password)
+        }), U(!1), eh(1)
+      } catch (t) {
+        var e, l;
+        en(null == t ? void 0 : null === (e = t.body) || void 0 === e ? void 0 : e.email), es(null == t ? void 0 : null === (l = t.body) || void 0 === l ? void 0 : l.password)
       } finally {
-        Y(!1)
+        U(!1)
       }
     }, eN = async () => {
-      Y(!0), X(null);
-      let e = null != Z ? h.ZP.getMember(S, Z.id) : null;
+      U(!0), Y(null);
+      let e = null != _ ? j.ZP.getMember(w, _.id) : null;
       if (null != e && !e.isPending) {
-        null == A || A(!0);
+        null == P || P(!0);
         return
       }
       try {
-        await (null == C ? void 0 : C(R(L({}, null != r ? r : p.t), {
-          formFields: H
-        }))), null == A || A(!0)
+        await (null == I ? void 0 : I(T(Z({}, null != s ? s : p.t), {
+          formFields: G
+        }))), null == P || P(!0)
       } catch (n) {
-        var t, i;
+        var l, t;
         let e = null == n ? void 0 : n.body;
-        (null == e ? void 0 : null === (t = e.errors) || void 0 === t ? void 0 : t.version) != null || (null == e ? void 0 : null === (i = e.errors) || void 0 === i ? void 0 : i.form_fields) != null ? X(O.NW.string(O.t.PD09Sk)) : X(null == e ? void 0 : e.message)
+        (null == e ? void 0 : null === (l = e.errors) || void 0 === l ? void 0 : l.version) != null || (null == e ? void 0 : null === (t = e.errors) || void 0 === t ? void 0 : t.form_fields) != null ? Y(W.NW.string(W.t.PD09Sk)) : Y(null == e ? void 0 : e.message)
       } finally {
-        Y(!1)
+        U(!1)
       }
     };
     return (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsxs)(m.Z, {
         direction: m.Z.Direction.VERTICAL,
         justify: m.Z.Justify.BETWEEN,
-        className: T.guildSidebar,
+        className: E.guildSidebar,
         shrink: 0,
         children: [(0, n.jsxs)("div", {
-          children: [(0, n.jsx)(E.Z, {
-            guild: V,
+          children: [(0, n.jsx)(h.Z, {
+            guild: z,
             active: !0,
-            className: s()(T.guildIcon, {
-              [T.guildIconNoIcon]: null == V.icon
+            className: i()(E.guildIcon, {
+              [E.guildIconNoIcon]: null == z.icon
             })
           }), (0, n.jsx)(o.X6q, {
             variant: "heading-lg/semibold",
-            className: T.guildName,
-            children: null == V ? void 0 : V.name
+            className: E.guildName,
+            children: null == z ? void 0 : z.name
           }), (0, n.jsx)(o.Text, {
-            className: T.guildDescription,
+            className: E.guildDescription,
             variant: "text-sm/normal",
             color: "header-secondary",
-            children: null == r ? void 0 : r.description
+            children: null == s ? void 0 : s.description
           }), null != ea && ea.length > 0 ? (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)("hr", {
-              className: T.divider
+              className: E.divider
             }), (0, n.jsx)(o.vwX, {
-              children: O.NW.format(O.t.KHLg5e, {
-                emojis: eu
+              children: W.NW.format(W.t.KHLg5e, {
+                emojis: ed
               })
             }), (0, n.jsxs)("div", {
-              className: T.emojisContainer,
+              className: E.emojisContainer,
               children: [ea.map(e => {
-                let t = I.ZP.getEmojiURL({
+                let l = f.ZP.getEmojiURL({
                   id: e.id,
                   animated: !1,
                   size: 24
                 });
                 return (0, n.jsx)(o.ua7, {
                   text: ":".concat(e.name, ":"),
-                  children: e => (0, n.jsx)("img", R(L({}, e), {
+                  children: e => (0, n.jsx)("img", T(Z({}, e), {
                     width: 24,
                     height: 24,
-                    src: t,
-                    className: T.emoji,
+                    src: l,
+                    className: E.emoji,
                     alt: ""
                   }))
                 }, e.id)
               }), null != eo && eo > 0 ? (0, n.jsx)(o.X6q, {
                 variant: "heading-deprecated-12/semibold",
-                className: T.emoji,
+                className: E.emoji,
                 color: "header-secondary",
                 children: "+".concat(eo)
               }) : null]
             })]
           }) : null]
         }), (0, n.jsxs)("div", {
-          children: [null != ec && (0, n.jsxs)(m.Z, {
+          children: [null != eu && (0, n.jsxs)(m.Z, {
             align: m.Z.Align.CENTER,
-            className: T.onlineCount,
+            className: E.onlineCount,
             children: [(0, n.jsx)("div", {
-              className: T.dotOnline
+              className: E.dotOnline
             }), (0, n.jsx)(o.Text, {
               variant: "text-sm/normal",
-              children: O.NW.format(O.t["Oj3M6+"], {
-                membersOnline: ec
+              children: W.NW.format(W.t["Oj3M6+"], {
+                membersOnline: eu
               })
             })]
-          }), null != ed && (0, n.jsxs)(m.Z, {
+          }), null != ec && (0, n.jsxs)(m.Z, {
             align: m.Z.Align.CENTER,
             children: [(0, n.jsx)("div", {
-              className: T.dotMembers
+              className: E.dotMembers
             }), (0, n.jsx)(o.Text, {
               variant: "text-sm/normal",
-              children: O.NW.format(O.t.LM4ufX, {
-                members: ed
+              children: W.NW.format(W.t.LM4ufX, {
+                members: ec
               })
             })]
           })]
         })]
       }), (0, n.jsxs)("div", {
-        className: T.modal,
+        className: E.modal,
         children: [(0, n.jsx)(o.hzk, {
-          className: T.modalContent,
+          className: E.modalContent,
           children: (0, n.jsx)(o.qBt, {
-            className: s()(T.sequencer, {
-              [T.centerContent]: 2 !== ef
+            className: i()(E.sequencer, {
+              [E.centerContent]: 2 !== ex
             }),
             steps: [0, 1, 2],
-            step: ef,
+            step: ex,
             children: (() => {
-              switch (ef) {
+              switch (ex) {
                 case 0:
-                  return (0, n.jsx)(F, {
-                    headerId: u,
+                  return (0, n.jsx)(M, {
+                    headerId: d,
                     email: Q,
                     password: ee,
                     setEmail: $,
-                    setPassword: et,
-                    emailError: ei,
-                    passwordError: el
+                    setPassword: el,
+                    emailError: et,
+                    passwordError: er
                   });
                 case 1:
-                  return (0, n.jsx)(w, {
-                    headerId: u,
+                  return (0, n.jsx)(D, {
+                    headerId: d,
                     email: Q
                   });
                 case 2:
-                  return (0, n.jsx)(G, {
-                    headerId: u,
-                    guildId: S,
-                    formState: H,
-                    updateFormState: q,
-                    isPreview: P,
-                    useReducedMotion: eh,
+                  return (0, n.jsx)(R, {
+                    headerId: d,
+                    guildId: w,
+                    formState: G,
+                    updateFormState: H,
+                    isPreview: S,
+                    useReducedMotion: ej,
                     disableVerification: em
                   })
               }
             })()
           })
         }), (() => {
-          switch (ef) {
+          switch (ex) {
             case 0:
               return (0, n.jsxs)(o.mzw, {
-                className: T.footer,
+                className: E.footer,
                 children: [(0, n.jsx)(o.zxk, {
-                  className: T.submitButton,
+                  className: E.submitButton,
                   type: "submit",
                   submitting: J,
-                  onClick: ev,
+                  onClick: eg,
                   disabled: 0 === Q.length || 0 === ee.length,
-                  children: O.NW.string(O.t.PDTjLC)
+                  children: W.NW.string(W.t.PDTjLC)
                 }), (0, n.jsx)(o.Text, {
                   variant: "text-xs/normal",
                   color: "header-secondary",
-                  children: O.NW.string(O.t["9GPiR0"])
+                  children: W.NW.string(W.t["9GPiR0"])
                 })]
               });
             case 1:
               return null;
             case 2:
               return (0, n.jsxs)(o.mzw, {
-                className: T.footer,
+                className: E.footer,
                 children: [(0, n.jsx)(o.zxk, {
-                  className: T.submitButton,
+                  className: E.submitButton,
                   type: "submit",
                   submitting: J,
                   onClick: eN,
                   color: o.zxk.Colors.GREEN,
-                  disabled: null == C || eg,
-                  children: O.NW.string(O.t.geKm7u)
+                  disabled: null == I || ev,
+                  children: W.NW.string(W.t.geKm7u)
                 }), null != K && (0, n.jsx)(o.Text, {
                   variant: "text-xs/normal",
                   color: "text-danger",
                   children: K
-                }), null == K && M && (0, n.jsxs)("div", {
-                  className: T.disclaimerFooter,
+                }), null == K && L && (0, n.jsxs)("div", {
+                  className: E.disclaimerFooter,
                   children: [(0, n.jsx)(o.Text, {
                     color: "header-secondary",
                     variant: "text-xs/normal",
-                    children: O.NW.string(O.t["+fPCTU"])
-                  }), es && (0, n.jsx)(o.Text, {
+                    children: W.NW.string(W.t["+fPCTU"])
+                  }), ei && (0, n.jsx)(o.Text, {
                     color: "header-secondary",
                     variant: "text-xs/normal",
-                    children: O.NW.string(O.t.VjgH0d)
+                    children: W.NW.string(W.t.VjgH0d)
                   })]
                 })]
               })

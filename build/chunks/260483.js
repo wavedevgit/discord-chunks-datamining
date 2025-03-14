@@ -69,14 +69,14 @@ function E(e) {
   f = {}, e.guilds.forEach(h)
 }
 
-function v(e) {
+function b(e) {
   let {
     threadMembers: t
   } = e;
   f = d({}, t)
 }
 
-function b(e) {
+function v(e) {
   let {
     guild: t
   } = e;
@@ -172,8 +172,8 @@ class w extends(r = a.ZP.Store) {
 u(w, "displayName", "ThreadMembersStore");
 let D = new w(s.Z, {
   CONNECTION_OPEN: E,
-  OVERLAY_INITIALIZE: v,
-  GUILD_CREATE: b,
+  OVERLAY_INITIALIZE: b,
+  GUILD_CREATE: v,
   GUILD_DELETE: y,
   CHANNEL_DELETE: T,
   THREAD_CREATE: O,

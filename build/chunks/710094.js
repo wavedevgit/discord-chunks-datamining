@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(987209),
   g = n(563132),
   E = n(409813),
-  v = n(107998),
-  b = n(809144),
+  b = n(107998),
+  v = n(809144),
   y = n(698708),
   O = n(844068),
   I = n(614223),
@@ -45,8 +45,8 @@ function D(e) {
       analyticsData: U,
       analyticsLocation: G,
       referralTrialOfferId: B,
-      initialPlanId: V,
-      subscriptionTier: F,
+      initialPlanId: F,
+      subscriptionTier: V,
       handleClose: Z
     } = e,
     {
@@ -83,10 +83,10 @@ function D(e) {
       claimableRewards: eE
     } = (0, m.wD)(),
     {
-      planSelectBanner: ev
-    } = (0, v.zb)();
+      planSelectBanner: eb
+    } = (0, b.zb)();
   a()(null != ea, "Step should be set");
-  let eb = i.useRef(null),
+  let ev = i.useRef(null),
     [ey, eO] = (0, s.Z)(!1, w);
   (0, p.t)();
   let eI = null !== (n = null != L ? L : B) && void 0 !== n ? n : null,
@@ -97,7 +97,7 @@ function D(e) {
       user_trial_offer_id: null == eT ? void 0 : eT.id
     };
   i.useEffect(() => {
-    null != X && null != eb.current && eb.current.scrollIntoView({
+    null != X && null != ev.current && ev.current.scrollIntoView({
       behavior: "smooth"
     })
   }, [X]);
@@ -117,7 +117,7 @@ function D(e) {
     eM = null == eN ? void 0 : null === (t = eN.discount) || void 0 === t ? void 0 : t.plan_ids,
     ek = !eh && null != eN && null != eM && null != ee && eM.includes(ee.id),
     ej = eh && (0, h.pO)(eg),
-    eU = null == V && null == F && eu === R.GZ.SUBSCRIPTION,
+    eU = null == F && null == V && eu === R.GZ.SUBSCRIPTION,
     eG = (0, I.Kp)({
       isTrial: ex,
       isGift: eh,
@@ -125,19 +125,19 @@ function D(e) {
       startedPaymentFlowWithPaymentSources: ef.current
     }),
     eB = eh && eu === R.GZ.ONE_TIME,
-    eV = eB || (eG ? eU && el : el),
-    eF = (0, c.id)(ee, eh, eE),
+    eF = eB || (eG ? eU && el : el),
+    eV = (0, c.id)(ee, eh, eE),
     eZ = i.useCallback(() => {
       if (eG) {
         D(E.h8.SKU_SELECT);
         return
       }
-      if (eF) {
+      if (eV) {
         D(E.h8.SELECT_FREE_SKU);
         return
       }
       return eB ? D(E.h8.GIFT_CUSTOMIZATION) : D(E.h8.PLAN_SELECT)
-    }, [D, eG, eB, eF]),
+    }, [D, eG, eB, eV]),
     eH = !1;
   return eu === R.GZ.ONE_TIME ? (eH = null != J, o = (0, r.jsx)(S.Z, {
     hasLegalTermsFlash: ey,
@@ -185,12 +185,12 @@ function D(e) {
     purchaseState: es,
     handleClose: Z
   }))), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(b.P, {
+    children: [(0, r.jsx)(v.P, {
       giftMessage: em
     }), !ej && (0, r.jsx)(T.Z, {
       isEligibleForTrial: ex
     }), (0, r.jsxs)(A.C3, {
-      children: [null != ev && ev, (0, r.jsx)(O.Z, {}), (0, r.jsx)(y.Z, {}), o]
+      children: [null != eb && eb, (0, r.jsx)(O.Z, {}), (0, r.jsx)(y.Z, {}), o]
     }), (0, r.jsx)(A.O3, {
       children: (0, r.jsx)(N.Z, {
         premiumSubscription: null != H ? H : null,
@@ -209,7 +209,7 @@ function D(e) {
         planGroup: k,
         purchaseTokenAuthState: $,
         openInvoiceId: j,
-        backButtonEligible: eV,
+        backButtonEligible: eF,
         metadata: eA,
         isTrial: ex,
         disablePurchase: eH

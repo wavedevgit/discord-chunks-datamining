@@ -5,10 +5,10 @@ n.d(t, {
   B5: () => R,
   Do: () => w,
   GX: () => k,
-  HR: () => F,
+  HR: () => V,
   Hr: () => C,
   Je: () => N,
-  Js: () => v,
+  Js: () => b,
   KR: () => P,
   MO: () => U,
   N3: () => j,
@@ -22,10 +22,10 @@ n.d(t, {
   nE: () => G,
   nH: () => I,
   qs: () => E,
-  qz: () => V,
+  qz: () => F,
   ws: () => x,
   xI: () => M,
-  zI: () => b
+  zI: () => v
 }), n(566702);
 var r = n(367907),
   i = n(731429),
@@ -97,7 +97,7 @@ function E(e) {
   }))
 }
 
-function v(e) {
+function b(e) {
   let {
     guildId: t,
     channelId: n,
@@ -112,7 +112,7 @@ function v(e) {
   }))
 }
 
-function b(e) {
+function v(e) {
   let {
     guildId: t,
     channelId: n
@@ -183,9 +183,9 @@ function S(e) {
     p = null === (t = u.template) || void 0 === t ? void 0 : t.trim(),
     m = s.Z.getDraft(c, s.d.FirstThreadMessage),
     E = null == m || 0 === m.length || (null == m ? void 0 : m.trim()) === p,
-    v = (null == d ? void 0 : d.appliedTags) == null || (null == d ? void 0 : null === (n = d.appliedTags) || void 0 === n ? void 0 : n.size) === 0,
-    b = (null == d ? void 0 : d.name) == null || (null == d ? void 0 : null === (o = d.name) || void 0 === o ? void 0 : null === (i = o.trim()) || void 0 === i ? void 0 : i.length) === 0;
-  (!E || !v || !b) && r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_NEW_POST_DRAFT_CREATED, g(h({}, (0, f.xl)({
+    b = (null == d ? void 0 : d.appliedTags) == null || (null == d ? void 0 : null === (n = d.appliedTags) || void 0 === n ? void 0 : n.size) === 0,
+    v = (null == d ? void 0 : d.name) == null || (null == d ? void 0 : null === (o = d.name) || void 0 === o ? void 0 : null === (i = o.trim()) || void 0 === i ? void 0 : i.length) === 0;
+  (!E || !b || !v) && r.ZP.trackWithMetadata(_.rMx.FORUM_CHANNEL_NEW_POST_DRAFT_CREATED, g(h({}, (0, f.xl)({
     channelId: c
   })), {
     guild_id: l,
@@ -383,7 +383,7 @@ function B(e) {
   })
 }
 
-function V() {
+function F() {
   r.ZP.trackWithMetadata(_.rMx.OPEN_MODAL, {
     type: "Forum Channel Upsell Modal",
     location: {
@@ -392,7 +392,7 @@ function V() {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     guildId: t,
     channelId: n

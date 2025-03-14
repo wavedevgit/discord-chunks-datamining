@@ -1,13 +1,13 @@
-/** Chunk was on 7755 **/
+/** Chunk was on 58173 **/
 n.d(t, {
-  Z: () => I
+  Z: () => C
 }), n(47120);
 var r = n(200651),
   l = n(192379),
-  i = n(120356),
-  o = n.n(i),
-  a = n(481060),
-  s = n(100527),
+  o = n(120356),
+  i = n.n(o),
+  s = n(481060),
+  a = n(100527),
   c = n(522651),
   u = n(72416),
   d = n(476221),
@@ -16,7 +16,7 @@ var r = n(200651),
   p = n(981631),
   g = n(341259);
 
-function v(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,25 +25,25 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function N(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
 }
 let O = {
-    [p.IE4.UNKNOWN]: a.ua7.Colors.BLACK,
-    [p.IE4.BAD]: a.ua7.Colors.RED,
-    [p.IE4.AVERAGE]: a.ua7.Colors.YELLOW,
-    [p.IE4.FINE]: a.ua7.Colors.GREEN
+    [p.IE4.UNKNOWN]: s.ua7.Colors.BLACK,
+    [p.IE4.BAD]: s.ua7.Colors.RED,
+    [p.IE4.AVERAGE]: s.ua7.Colors.YELLOW,
+    [p.IE4.FINE]: s.ua7.Colors.GREEN
   },
-  y = {
+  N = {
     [p.QKv.CONNECTED]: g.rtcConnectionStatusConnected,
     [p.QKv.CONNECTING]: g.rtcConnectionStatusConnecting,
     [p.QKv.ERROR]: g.rtcConnectionStatusError
@@ -57,7 +57,7 @@ let O = {
 class m extends l.PureComponent {
   renderPopoutTarget(e) {
     let t = this.props.channelId;
-    return null == t ? e({}) : (0, r.jsx)(a.yRy, {
+    return null == t ? e({}) : (0, r.jsx)(s.yRy, {
       renderPopout: this.renderPopout(t),
       position: "top",
       children: e
@@ -70,23 +70,23 @@ class m extends l.PureComponent {
       channelId: n
     } = this.props, {
       connectionStatus: l,
-      connectionStatusText: i
+      connectionStatusText: o
     } = d.Z.getStatus(t, e);
     return this.renderPopoutTarget(e => {
       let {
         onClick: t
       } = e;
-      return (0, r.jsx)(a.zxk, {
-        look: a.zxk.Looks.BLANK,
-        size: a.zxk.Sizes.NONE,
+      return (0, r.jsx)(s.zxk, {
+        look: s.zxk.Looks.BLANK,
+        size: s.zxk.Sizes.NONE,
         onClick: e => {
-          (0, c.v)(s.Z.RTC_PANEL, c.d.CONNECTION_STATUS), null == t || t(e)
+          (0, c.v)(a.Z.RTC_PANEL, c.d.CONNECTION_STATUS), null == t || t(e)
         },
         children: (0, r.jsx)(f.Z, {
-          text: i,
+          text: o,
           textVariant: this.props.connectionStatusTextVariant,
           hasVideo: this.props.hasVideo,
-          className: y[l],
+          className: N[l],
           hasConnectedChannel: null != n
         })
       })
@@ -98,21 +98,21 @@ class m extends l.PureComponent {
       quality: t,
       smallPing: n,
       lastPing: l,
-      state: i,
-      className: s,
+      state: o,
+      className: a,
       children: c
     } = this.props;
-    return i === p.hes.RTC_CONNECTED && (e = (0, r.jsx)(a.ua7, {
+    return o === p.hes.RTC_CONNECTED && (e = (0, r.jsx)(s.ua7, {
       text: t !== p.IE4.UNKNOWN && null != l ? "".concat(l.toFixed(0), " ms") : null,
       color: O[t],
-      children: e => (0, r.jsx)(x, N({
+      children: e => (0, r.jsx)(x, v({
         quality: t,
         smallPing: n
       }, e))
     })), (0, r.jsxs)("div", {
       className: g.rtcConnectionStatusWrapper,
       children: [(0, r.jsxs)("div", {
-        className: o()(g.rtcConnectionStatus, b[t], s),
+        className: i()(g.rtcConnectionStatus, b[t], a),
         children: [e, (0, r.jsx)("div", {
           className: g.labelWrapper,
           children: this.renderStatus()
@@ -121,9 +121,9 @@ class m extends l.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), v(this, "renderPopout", e => t => {
+    super(...e), y(this, "renderPopout", e => t => {
       var n, l;
-      return (0, r.jsx)(h.Z, (n = N({}, t), l = l = {
+      return (0, r.jsx)(h.Z, (n = v({}, t), l = l = {
         channelId: e
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
@@ -148,34 +148,34 @@ function x(e) {
     var n, r, l = function(e, t) {
       if (null == e) return {};
       var n, r, l = {},
-        i = Object.keys(e);
-      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+        o = Object.keys(e);
+      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
       return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+      var o = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
     return l
   }(e, ["quality", "smallPing"]);
-  if (!(0, a.bWb)().enabled) return (0, r.jsx)(u.Z, {
-    className: o()(g.ping, {
+  if (!(0, s.bWb)().enabled) return (0, r.jsx)(u.Z, {
+    className: i()(g.ping, {
       [g.smallPing]: n
     }),
     foreground: g.pingForeground
   });
   {
     let e = {
-      [p.IE4.FINE]: a.B_b,
-      [p.IE4.AVERAGE]: a.hLg,
-      [p.IE4.BAD]: a.mbS,
-      [p.IE4.UNKNOWN]: a._3e
+      [p.IE4.FINE]: s.B_b,
+      [p.IE4.AVERAGE]: s.hLg,
+      [p.IE4.BAD]: s.mbS,
+      [p.IE4.UNKNOWN]: s._3e
     } [t];
-    return (0, r.jsx)(e, N({
-      className: o()(g.ping, {
+    return (0, r.jsx)(e, v({
+      className: i()(g.ping, {
         [g.smallPing]: n
       })
     }, l))
   }
 }
-let I = m
+let C = m

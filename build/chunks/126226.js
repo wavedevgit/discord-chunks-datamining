@@ -21,8 +21,8 @@ var i = n(693789),
   m = n(588468),
   g = n(496675),
   E = n(226951),
-  v = n(877565),
-  b = n(590921),
+  b = n(877565),
+  v = n(590921),
   y = n(665692),
   O = n(689079),
   I = n(388032),
@@ -70,16 +70,16 @@ function R(e) {
 let P = {
   sentinel: y.GI,
   stores: [f.Z, c.ZP, g.Z],
-  matches: (e, t, n, r, i) => i.commands !== b.L8.DISABLED && null == f.Z.getActiveCommand(e.id) && (r || i.commands !== b.L8.OLD_BUILT_INS),
+  matches: (e, t, n, r, i) => i.commands !== v.L8.DISABLED && null == f.Z.getActiveCommand(e.id) && (r || i.commands !== v.L8.OLD_BUILT_INS),
   queryResults(e, t, n, r, i) {
-    if (0 === n.length && r.commands !== b.L8.OLD_BUILT_INS) return A;
-    if (r.commands === b.L8.OLD_BUILT_INS) {
+    if (0 === n.length && r.commands !== v.L8.OLD_BUILT_INS) return A;
+    if (r.commands === v.L8.OLD_BUILT_INS) {
       let r = (0, l.Kh)([a.yU.CHAT], !1, !1),
         i = RegExp("^".concat(E.Z.escape(n)), "i"),
         o = (0, p.Dd)(r, i, {
           channel: e,
           guild: t
-        }, b.AQ),
+        }, v.AQ),
         s = l.Tm[O.bi.BUILT_IN];
       return 0 === o.length ? A : {
         results: {
@@ -101,8 +101,8 @@ let P = {
         commandTypes: [a.yU.CHAT],
         text: o.text
       }, {
-        limit: b.AQ,
-        placeholderCount: b.YP,
+        limit: v.AQ,
+        placeholderCount: v.YP,
         scoreMethod: d.p.COMMAND_OR_APPLICATION,
         allowFetch: i
       });
@@ -115,7 +115,7 @@ let P = {
     }
     return 0 === f.length ? A : {
       results: {
-        entries: f.slice(0, b.AQ).map(e => ({
+        entries: f.slice(0, v.AQ).map(e => ({
           command: e,
           section: null == c ? void 0 : c.find(t => t.id === e.applicationId)
         }))
@@ -133,8 +133,8 @@ let P = {
       options: s,
       onHover: l,
       onClick: c
-    } = e, u = (0, h.hV)(o, a), d = s.commands === b.L8.OLD_BUILT_INS;
-    return (0, v.HI)({
+    } = e, u = (0, h.hV)(o, a), d = s.commands === v.L8.OLD_BUILT_INS;
+    return (0, b.HI)({
       query: u.text,
       selectedIndex: n,
       autocompletes: t,
@@ -186,7 +186,7 @@ let P = {
       section: u
     } = t[n];
     if (c.inputType === _.iw.PLACEHOLDER) return null;
-    if (i.commands === b.L8.OLD_BUILT_INS) i.insertText(R(c));
+    if (i.commands === v.L8.OLD_BUILT_INS) i.insertText(R(c));
     else {
       let e = a;
       null == e && (e = l ? _.Vh.QUERY : _.Vh.DISCOVERY), s.Po({
@@ -198,7 +198,7 @@ let P = {
       })
     }
     return {
-      type: b.z2.COMMAND
+      type: v.z2.COMMAND
     }
   }
 }

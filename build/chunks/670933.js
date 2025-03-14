@@ -113,18 +113,18 @@ function E(e, t, n) {
   var i = (t - 1) * 7 + n + 1 - (r.getUTCDay() || 7);
   return r.setUTCDate(r.getUTCDate() + i), r
 }
-var v = [31, null, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+var b = [31, null, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-function b(e) {
+function v(e) {
   return e % 400 == 0 || e % 4 == 0 && e % 100 != 0
 }
 
 function y(e, t, n) {
-  return t >= 0 && t <= 11 && n >= 1 && n <= (v[t] || (b(e) ? 29 : 28))
+  return t >= 0 && t <= 11 && n >= 1 && n <= (b[t] || (v(e) ? 29 : 28))
 }
 
 function O(e, t) {
-  return t >= 1 && t <= (b(e) ? 366 : 365)
+  return t >= 1 && t <= (v(e) ? 366 : 365)
 }
 
 function I(e, t, n) {

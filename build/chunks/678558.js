@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(267642),
   g = n(879892),
   E = n(981631),
-  v = n(474936),
-  b = n(388032),
+  b = n(474936),
+  v = n(388032),
   y = n(402469);
 
 function O(e, t, n) {
@@ -99,8 +99,8 @@ let C = e => {
     fractionalState: G
   } = (0, d.Z)(), B = (0, _.W)();
   p.Z.hasFetched || (0, l.X8)();
-  let V = (0, m.vx)(p.Z.boostSlots),
-    F = null != S ? Math.max((0, m.KK)(o, S), 1) : 1,
+  let F = (0, m.vx)(p.Z.boostSlots),
+    V = null != S ? Math.max((0, m.KK)(o, S), 1) : 1,
     Z = (0, m.aq)({
       fractionalState: G
     }),
@@ -110,7 +110,7 @@ let C = e => {
         analyticsLocation: t,
         analyticsSourceLocation: n,
         guild: o,
-        numberOfBoostsToAdd: F,
+        numberOfBoostsToAdd: V,
         onClose: A,
         closeLayer: C,
         inPopout: k,
@@ -119,9 +119,9 @@ let C = e => {
       }), U(!1)
     }, W = h.ZP.getPremiumTypeSubscription(), Y = (0, r.jsxs)("div", {
       className: y.button,
-      children: [L, null != O ? O : b.NW.string(b.t.gKmQ1N)]
+      children: [L, null != O ? O : v.NW.string(v.t.gKmQ1N)]
     });
-  return ((null == W ? void 0 : W.isPausedOrPausePending) && (G === v.a$.NONE || 0 === V.length) && (Y = (0, r.jsxs)("div", {
+  return ((null == W ? void 0 : W.isPausedOrPausePending) && (G === b.a$.NONE || 0 === F.length) && (Y = (0, r.jsxs)("div", {
     className: y.button,
     children: [(0, r.jsx)(s.mBM, {
       size: "xs",

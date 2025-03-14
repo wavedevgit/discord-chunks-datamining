@@ -1,9 +1,9 @@
-/** Chunk was on 93886 **/
+/** Chunk was on 20875 **/
 n.d(t, {
-  Z: () => i
+  Z: () => l
 });
-var r = n(818083);
-let a = (0, r.B)({
+var o = n(818083);
+let e = (0, o.B)({
   kind: "user",
   id: "2024-08_reaction_push_notifications_user",
   label: "In App Notifications for Reactions",
@@ -34,7 +34,7 @@ let a = (0, r.B)({
     }
   }]
 });
-(0, r.B)({
+(0, o.B)({
   kind: "guild",
   id: "2024-08_reaction_push_notifications_guild",
   label: "In App Notifications for Reactions (Guild)",
@@ -49,4 +49,4 @@ let a = (0, r.B)({
     }
   }]
 });
-let i = a
+let l = e

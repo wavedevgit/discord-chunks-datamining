@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  k: () => b
+  k: () => v
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -104,12 +104,12 @@ let h = 1e3 / 60,
     }
   },
   E = ["#FFFFFF"],
-  v = [n(123353), ...(0, l.Z)(["snowflake"])];
+  b = [n(123353), ...(0, l.Z)(["snowflake"])];
 
-function b(e) {
+function v(e) {
   let {
     children: t
-  } = e, [n, l] = i.useState(!1), d = (0, a.bp)(), [_, b] = i.useState(null), {
+  } = e, [n, l] = i.useState(!1), d = (0, a.bp)(), [_, v] = i.useState(null), {
     confettiCanvas: y
   } = i.useContext(s.h), O = (0, o.uR)(y, _), I = i.useMemo(() => ({
     triggerAnimation: () => l(!0),
@@ -138,9 +138,9 @@ function b(e) {
   }, [n, S]), d === u.IlC.OVERLAY) ? t : (0, r.jsxs)(c.Rm.Provider, {
     value: I,
     children: [t, (0, r.jsx)(o.Ji, {
-      ref: b,
+      ref: v,
       colors: E,
-      sprites: v,
+      sprites: b,
       spriteWidth: m,
       spriteHeight: m
     })]

@@ -81,7 +81,7 @@ function E(e) {
   delete u[t.id], delete f[t.id]
 }
 
-function v(e) {
+function b(e) {
   var t;
   let {
     guildId: n,
@@ -93,7 +93,7 @@ function v(e) {
   return -1 !== o && (i.resourceChannels[o] = s({}, r), !0)
 }
 
-function b(e) {
+function v(e) {
   var t;
   let {
     guildId: n,
@@ -156,7 +156,7 @@ let O = new y(o.Z, {
   GUILD_HOME_SETTINGS_FETCH_FAIL: m,
   GUILD_HOME_SETTINGS_UPDATE_SUCCESS: p,
   GUILD_HOME_SETTINGS_TOGGLE_ENABLED: g,
-  GUILD_RESOURCE_CHANNEL_UPDATE_SUCCESS: v,
-  GUILD_NEW_MEMBER_ACTION_UPDATE_SUCCESS: b,
+  GUILD_RESOURCE_CHANNEL_UPDATE_SUCCESS: b,
+  GUILD_NEW_MEMBER_ACTION_UPDATE_SUCCESS: v,
   GUILD_DELETE: E
 })

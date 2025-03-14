@@ -71,32 +71,32 @@ function E(e, t) {
     numDatapoints: a
   }
 }
-let v = (0, i.oH)((e, t, n) => ({
+let b = (0, i.oH)((e, t, n) => ({
   message: e,
   errorType: t,
   avError: n
 }));
 
-function b(e, t) {
+function v(e, t) {
   if ("streamer" === e.type) {
-    if (100 * e.packetLossRate > _) return v(s.NW.string(s.t["1f1LHh"]), "Packet Loss", r.u.STREAM_SEND_HIGH_PACKET_LOSS);
-    if (e.frameRate <= g(t)) return v(s.NW.string(s.t["1f1LHh"]), "Frame Rate Encode", r.u.STREAM_SEND_LOW_FPS)
+    if (100 * e.packetLossRate > _) return b(s.NW.string(s.t["1f1LHh"]), "Packet Loss", r.u.STREAM_SEND_HIGH_PACKET_LOSS);
+    if (e.frameRate <= g(t)) return b(s.NW.string(s.t["1f1LHh"]), "Frame Rate Encode", r.u.STREAM_SEND_LOW_FPS)
   } else {
-    if (100 * e.packetLossRate > _) return v(s.NW.string(s.t.BcOif3), "Packet Loss", r.u.STREAM_VIEW_HIGH_PACKET_LOSS);
-    if (e.frameRate <= g(t)) return v(s.NW.string(s.t.BcOif3), "Frame Rate Decode", r.u.STREAM_VIEW_LOW_FPS)
+    if (100 * e.packetLossRate > _) return b(s.NW.string(s.t.BcOif3), "Packet Loss", r.u.STREAM_VIEW_HIGH_PACKET_LOSS);
+    if (e.frameRate <= g(t)) return b(s.NW.string(s.t.BcOif3), "Frame Rate Decode", r.u.STREAM_VIEW_LOW_FPS)
   }
   return null
 }
 
 function y(e, t, n, i) {
-  if (n) return v(s.NW.string(s.t["9lcycn"]), "Soundshare Failed", r.u.STREAM_SOUNDSHARE_FAILED);
+  if (n) return b(s.NW.string(s.t["9lcycn"]), "Soundshare Failed", r.u.STREAM_SOUNDSHARE_FAILED);
   if (null != t) {
     let e = E(t, p),
       n = E(t, h);
     if (n.numDatapoints >= m) {
       var o;
-      return null !== (o = b(e, null == i ? void 0 : i.maxFrameRate)) && void 0 !== o ? o : b(n, null == i ? void 0 : i.maxFrameRate)
+      return null !== (o = v(e, null == i ? void 0 : i.maxFrameRate)) && void 0 !== o ? o : v(n, null == i ? void 0 : i.maxFrameRate)
     }
   }
-  return e === a.IE4.BAD ? v(s.NW.string(s.t.Ic588P), "Bad Connection", r.u.STREAM_BAD_NETWORK_QUALITY) : null
+  return e === a.IE4.BAD ? b(s.NW.string(s.t.Ic588P), "Bad Connection", r.u.STREAM_BAD_NETWORK_QUALITY) : null
 }

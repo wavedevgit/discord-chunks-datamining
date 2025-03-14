@@ -32,9 +32,9 @@ function a(e) {
 }
 
 function s(e) {
-  var t, n, r, i, o, a, s, l, c, u, d, f, _, p, h, m, g, E, v, b, y;
+  var t, n, r, i, o, a, s, l, c, u, d, f, _, p, h, m, g, E, b, v, y;
   let O = (null !== (u = null == e ? void 0 : e.headerBytes) && void 0 !== u ? u : 0) + (null !== (d = null == e ? void 0 : e.payloadBytes) && void 0 !== d ? d : 0) + (null !== (f = null == e ? void 0 : e.paddingBytes) && void 0 !== f ? f : 0);
-  return (null !== (_ = null == e ? void 0 : null === (t = e.fec) || void 0 === t ? void 0 : t.headerBytes) && void 0 !== _ ? _ : 0) + (null !== (p = null == e ? void 0 : null === (n = e.fec) || void 0 === n ? void 0 : n.payloadBytes) && void 0 !== p ? p : 0) + (null !== (h = null == e ? void 0 : null === (r = e.fec) || void 0 === r ? void 0 : r.paddingBytes) && void 0 !== h ? h : 0) + (null !== (m = null == e ? void 0 : null === (i = e.retransmitted) || void 0 === i ? void 0 : i.headerBytes) && void 0 !== m ? m : 0) + (null !== (g = null == e ? void 0 : null === (o = e.retransmitted) || void 0 === o ? void 0 : o.payloadBytes) && void 0 !== g ? g : 0) + (null !== (E = null == e ? void 0 : null === (a = e.retransmitted) || void 0 === a ? void 0 : a.paddingBytes) && void 0 !== E ? E : 0) + (null !== (v = null == e ? void 0 : null === (s = e.transmitted) || void 0 === s ? void 0 : s.headerBytes) && void 0 !== v ? v : 0) + (null !== (b = null == e ? void 0 : null === (l = e.transmitted) || void 0 === l ? void 0 : l.payloadBytes) && void 0 !== b ? b : 0) + (null !== (y = null == e ? void 0 : null === (c = e.transmitted) || void 0 === c ? void 0 : c.paddingBytes) && void 0 !== y ? y : 0) + O
+  return (null !== (_ = null == e ? void 0 : null === (t = e.fec) || void 0 === t ? void 0 : t.headerBytes) && void 0 !== _ ? _ : 0) + (null !== (p = null == e ? void 0 : null === (n = e.fec) || void 0 === n ? void 0 : n.payloadBytes) && void 0 !== p ? p : 0) + (null !== (h = null == e ? void 0 : null === (r = e.fec) || void 0 === r ? void 0 : r.paddingBytes) && void 0 !== h ? h : 0) + (null !== (m = null == e ? void 0 : null === (i = e.retransmitted) || void 0 === i ? void 0 : i.headerBytes) && void 0 !== m ? m : 0) + (null !== (g = null == e ? void 0 : null === (o = e.retransmitted) || void 0 === o ? void 0 : o.payloadBytes) && void 0 !== g ? g : 0) + (null !== (E = null == e ? void 0 : null === (a = e.retransmitted) || void 0 === a ? void 0 : a.paddingBytes) && void 0 !== E ? E : 0) + (null !== (b = null == e ? void 0 : null === (s = e.transmitted) || void 0 === s ? void 0 : s.headerBytes) && void 0 !== b ? b : 0) + (null !== (v = null == e ? void 0 : null === (l = e.transmitted) || void 0 === l ? void 0 : l.payloadBytes) && void 0 !== v ? v : 0) + (null !== (y = null == e ? void 0 : null === (c = e.transmitted) || void 0 === c ? void 0 : c.paddingBytes) && void 0 !== y ? y : 0) + O
 }
 
 function l(e) {
@@ -61,7 +61,7 @@ function u(e) {
 }
 
 function d(e, t) {
-  var n, i, o, a, c, u, d, f, _, p, h, m, g, E, v, b, y, O, I, S, T, N, A, C, R, P, w, D;
+  var n, i, o, a, c, u, d, f, _, p, h, m, g, E, b, v, y, O, I, S, T, N, A, C, R, P, w, D;
   let L = e.substreams.find(e => !e.isRTX && !e.isFlexFEC);
   if (null == L) return;
   let x = e.substreams.reduce((e, t) => e + s(t.rtpStats), 0),
@@ -124,8 +124,8 @@ function d(e, t) {
     bandwidthLimitedFrameRate: e.bwLimitedFrameRate,
     freezeCount: null === (g = L.encoderQualityStats) || void 0 === g ? void 0 : g.freezeCount,
     totalFreezesDuration: null === (E = L.encoderQualityStats) || void 0 === E ? void 0 : E.totalFreezesDuration,
-    totalFramesDuration: null === (v = L.encoderQualityStats) || void 0 === v ? void 0 : v.totalFramesDuration,
-    videoEntropy: null === (b = L.encoderQualityStats) || void 0 === b ? void 0 : b.interFrameEntropy
+    totalFramesDuration: null === (b = L.encoderQualityStats) || void 0 === b ? void 0 : b.totalFramesDuration,
+    videoEntropy: null === (v = L.encoderQualityStats) || void 0 === v ? void 0 : v.interFrameEntropy
   }
 }
 
@@ -198,14 +198,14 @@ function _(e, t, n, i) {
   let m = null,
     g = null,
     E = "string" == typeof t ? JSON.parse(t) : t,
-    v = [];
+    b = [];
   if (null != E.outbound) {
     let {
       audio: e,
       video: t,
       videos: i
     } = E.outbound;
-    if (null != e && (g = (null != g ? g : 0) + e.bytesSent, v.push({
+    if (null != e && (g = (null != g ? g : 0) + e.bytesSent, b.push({
         type: "audio",
         ssrc: e.ssrc,
         sinkWant: (0, r.f)(n, e.ssrc, !1),
@@ -235,14 +235,14 @@ function _(e, t, n, i) {
         pttQueueLatencyMicrosSamples: e.pttQueueLatencyMicrosSamples
       })), null != i) i.forEach(e => {
       let t = d(e, n);
-      null != t && (g = (null != g ? g : 0) + t.bytesSent, v.push(t))
+      null != t && (g = (null != g ? g : 0) + t.bytesSent, b.push(t))
     });
     else if (null != t) {
       let e = d(t, n);
-      null != e && (g = (null != g ? g : 0) + e.bytesSent, v.push(e))
+      null != e && (g = (null != g ? g : 0) + e.bytesSent, b.push(e))
     }
   }
-  let b = {};
+  let v = {};
   null != E.inbound && E.inbound.forEach(e => {
     let {
       id: t,
@@ -251,7 +251,7 @@ function _(e, t, n, i) {
       videos: d,
       playout: _
     } = e;
-    if (b[t] = [], null != l && (m = (null != m ? m : 0) + l.bytesReceived, b[t].push(o({
+    if (v[t] = [], null != l && (m = (null != m ? m : 0) + l.bytesReceived, v[t].push(o({
         type: "audio",
         ssrc: l.ssrc,
         sinkWant: (0, r.f)(n, l.ssrc, !1),
@@ -308,14 +308,14 @@ function _(e, t, n, i) {
       let r = f(e, n, i, _);
       if (null != r) {
         let n = s(e.rtpStats);
-        m = (null != m ? m : 0) + n, b[t].push(r)
+        m = (null != m ? m : 0) + n, v[t].push(r)
       }
     });
     else if (null != c) {
       let e = f(c, n, i, _);
       if (null != e) {
         let n = s(c.rtpStats);
-        m = (null != m ? m : 0) + n, b[t].push(e)
+        m = (null != m ? m : 0) + n, v[t].push(e)
       }
     }
   });
@@ -342,8 +342,8 @@ function _(e, t, n, i) {
     clips: O,
     audioDevice: N,
     rtp: {
-      inbound: b,
-      outbound: v
+      inbound: v,
+      outbound: b
     }
   }
 }

@@ -70,8 +70,8 @@ function E(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let v = [16, 8, 8, 8],
-  b = 32,
+let b = [16, 8, 8, 8],
+  v = 32,
   y = 4,
   O = 8;
 
@@ -87,7 +87,7 @@ function I(e) {
   } = e, S = i.useRef(null), T = i.useCallback((e, t) => {
     var n;
     let r = 2 * y;
-    return (null === (n = o[t + 1]) || void 0 === n ? void 0 : n.type) === u.Qi.BUILT_IN && (r += O), b + r
+    return (null === (n = o[t + 1]) || void 0 === n ? void 0 : n.type) === u.Qi.BUILT_IN && (r += O), v + r
   }, [o]), N = i.useCallback((e, t) => {
     var n;
     return t ? (null === (n = o[e + 1]) || void 0 === n ? void 0 : n.type) === u.Qi.BUILT_IN ? 0 : 2 * y : 0 === e ? 0 : 2 * y
@@ -96,8 +96,8 @@ function I(e) {
     if (null == i) return;
     let a = (0, d.ky)(i),
       l = i.type === u.Qi.BUILT_IN ? y : 0,
-      c = b - 2 * l,
-      v = (0, r.jsx)(a, {
+      c = v - 2 * l,
+      b = (0, r.jsx)(a, {
         channel: n,
         section: i,
         isSelected: null != h ? i.id === h : _ === t,
@@ -122,7 +122,7 @@ function I(e) {
               E(i), null == t || t()
             }
           }, n), {
-            children: v
+            children: b
           }))
         }
       }), O ? (0, r.jsx)("hr", {
@@ -141,7 +141,7 @@ function I(e) {
       renderCategoryListItem: A,
       rowCount: o.length,
       categoryHeight: T,
-      listPadding: v,
+      listPadding: b,
       getScrollOffsetForIndex: N
     })
   })

@@ -116,7 +116,7 @@ function _(e) {
         g = null == l.trackExposureOptions ? void 0 : (0, i.Z)(null !== (a = l.trackExposureOptions) && void 0 !== a ? a : {}),
         E = null !== (s = null == h ? void 0 : h.triggerDebuggingEnabled) && void 0 !== s && s,
         [
-          [v, b, y], O
+          [b, v, y], O
         ] = (0, r.useState)(() => {
           let n = null == h || u ? c.NZ.NOT_ELIGIBLE : h.bucket;
           return [f(e, n, t, h), n, null == h ? -1 : h.revision]
@@ -124,11 +124,11 @@ function _(e) {
         I = (0, i.Z)(n);
       return (0, r.useEffect)(() => {
         !u && (p || E) && null == e.commonTriggerPoint && _(I, g, !1 === p)
-      }, [u, p, I, g, b, y, E]), (0, r.useEffect)(() => m(I, (e, t, n) => {
+      }, [u, p, I, g, v, y, E]), (0, r.useEffect)(() => m(I, (e, t, n) => {
         O(r => r[0] === e && r[1] === t && r[2] === n ? r : [e, t, n])
       }, {
         disable: u
-      }), [u, I]), v
+      }), [u, I]), b
     },
     subscribe: m,
     trackExposure: p,

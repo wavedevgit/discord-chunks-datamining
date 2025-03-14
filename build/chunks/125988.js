@@ -22,8 +22,8 @@ let f = e => {
     showPending: h = !1,
     showTryItOut: m = !1,
     avatarDecorationOverride: g
-  } = e, [E, v] = r.useState(!1), {
-    canAnimate: b
+  } = e, [E, b] = r.useState(!1), {
+    canAnimate: v
   } = (0, o.j)(E, p), y = (0, i.e7)([s.ZP], () => null != f && null != n ? s.ZP.getMember(f, n.id) : null), [O, I] = (0, i.Wu)([l.default], () => {
     var e;
     return [null === (e = l.default.getCurrentUser()) || void 0 === e ? void 0 : e.id, l.default.getUser(null == n ? void 0 : n.id)]
@@ -34,16 +34,16 @@ let f = e => {
     guildId: f
   }), N = h && void 0 !== T && void 0 !== O && O === (null == n ? void 0 : n.id), A = null != f && null === T, C = (0, u.Z)(N ? A ? null == I ? void 0 : I.avatarDecoration : null != T ? T : S : null != S ? S : null == I ? void 0 : I.avatarDecoration), R = r.useMemo(() => (0, c.NZ)({
     avatarDecoration: void 0 !== g ? g : C,
-    canAnimate: b,
+    canAnimate: v,
     size: _
-  }), [C, b, _, g]);
+  }), [C, v, _, g]);
   return {
     avatarPlaceholderSrc: d,
     avatarDecorationSrc: R,
-    isAvatarDecorationAnimating: b,
+    isAvatarDecorationAnimating: v,
     eventHandlers: {
-      onMouseEnter: r.useCallback(() => v(!0), []),
-      onMouseLeave: r.useCallback(() => v(!1), [])
+      onMouseEnter: r.useCallback(() => b(!0), []),
+      onMouseLeave: r.useCallback(() => b(!1), [])
     }
   }
 }

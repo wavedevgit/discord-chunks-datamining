@@ -45,8 +45,8 @@ function d(e) {
     nonce: m,
     poll: g,
     changelogId: E,
-    giftingPrompt: v,
-    state: b
+    giftingPrompt: b,
+    state: v
   } = e, y = [];
   if (d === c.uaV.REPLY && (i()(null != f, "Replies must have a message reference"), null == _ || _.replied_user)) {
     let e = o.Z.getMessageByReference(f);
@@ -66,7 +66,7 @@ function d(e) {
     mention_roles: [],
     mention_everyone: !1,
     timestamp: new Date().toISOString(),
-    state: b || c.yb.SENDING,
+    state: v || c.yb.SENDING,
     tts: r,
     message_reference: f,
     message_snapshots: [],
@@ -74,7 +74,7 @@ function d(e) {
     nonce: m,
     poll: g,
     changelog_id: E,
-    gifting_prompt: v
+    gifting_prompt: b
   }
 }
 

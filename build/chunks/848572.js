@@ -6,7 +6,7 @@ n.d(t, {
   SI: () => A,
   Vq: () => E,
   a1: () => y,
-  j_: () => b,
+  j_: () => v,
   y3: () => I
 });
 var r = n(913527),
@@ -62,11 +62,11 @@ function g(e, t) {
 var E = function(e) {
   return e.UPCOMING = "upcoming", e.EARNED = "earned", e
 }({});
-let v = () => {
+let b = () => {
     let e = (0, o.e7)([l.default], () => l.default.getCurrentUser());
     return (0, f.l)(null == e ? void 0 : e.id)
   },
-  b = () => {
+  v = () => {
     let {
       isBadgeVersion2: e
     } = (0, d.D)();
@@ -82,7 +82,7 @@ let v = () => {
     return y(null == e ? void 0 : e.id)
   },
   I = () => {
-    let e = b(),
+    let e = v(),
       t = (0, o.e7)([l.default], () => l.default.getCurrentUser()),
       n = (0, o.e7)([c.ZP], () => c.ZP.getPremiumTypeSubscription());
     if (!(0, u.M5)(t, _.p9.TIER_2) || null == n || null == n.premiumSince) return null;
@@ -98,7 +98,7 @@ let v = () => {
     }, null)
   },
   S = () => {
-    let e = v(),
+    let e = b(),
       t = (0, o.e7)([c.ZP], () => c.ZP.getPremiumTypeSubscription());
     return null == e || null == t || null == t.premiumSince ? null : (0, a.RZ)(e, t.premiumSince)
   },
@@ -106,7 +106,7 @@ let v = () => {
     let {
       enabled: e,
       version: t
-    } = (0, d.D)(), n = O(), r = b();
+    } = (0, d.D)(), n = O(), r = v();
     if (!e || 2 !== t || null == n || null == r) return null;
     let o = i()().diff(n, "days"),
       a = r[0],

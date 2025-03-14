@@ -19,8 +19,8 @@ var r, i = n(392711),
   m = n(853856),
   g = n(131704),
   E = n(823379),
-  v = n(709054),
-  b = n(314897),
+  b = n(709054),
+  v = n(314897),
   y = n(430824),
   O = n(594174),
   I = n(981631);
@@ -76,8 +76,8 @@ let C = new h.Z("ChannelStore"),
   U = {},
   G = new Set,
   B = {},
-  V = 0,
-  F = {},
+  F = 0,
+  V = {},
   Z = 0,
   H = 0,
   W = !1;
@@ -95,7 +95,7 @@ class Y {
     if (0 === t.length) return null;
     let n = c.Z.database();
     if (null == n || !t.some(e => !G.has(e))) return null;
-    let r = V;
+    let r = F;
     return (0, u.gs)("loadChannels", async () => {
       let e = t.map(e => {
           if (G.has(e)) return null;
@@ -112,7 +112,7 @@ class Y {
         i = e.map(e => e.promise);
       try {
         let t = await Promise.all(i);
-        if (V !== r) return C.fileOnly("lastResetTime has changed, skipping loads for " + e.map(e => e.guildId)), null;
+        if (F !== r) return C.fileOnly("lastResetTime has changed, skipping loads for " + e.map(e => e.guildId)), null;
         let n = t.filter(e => !G.has(e.guildId));
         await l.Z.dispatch({
           type: "LOAD_CHANNELS",
@@ -151,7 +151,7 @@ function z(e, t, n) {
 
 function q(e) {
   if (C.fileOnly("Deleting guild channels for ".concat(e)), null != w[e]) {
-    for (let t of v.default.keys(w[e])) delete P[t];
+    for (let t of b.default.keys(w[e])) delete P[t];
     delete w[e]
   }
 }
@@ -163,11 +163,11 @@ function Q(e) {
 
 function X(e) {
   var t, n, r, i;
-  return z(e, 1, "getChannel"), null !== (i = null !== (r = null !== (n = null !== (t = P[e]) && void 0 !== t ? t : D[e]) && void 0 !== n ? n : x[e]) && void 0 !== r ? r : U[e]) && void 0 !== i ? i : F[e]
+  return z(e, 1, "getChannel"), null !== (i = null !== (r = null !== (n = null !== (t = P[e]) && void 0 !== t ? t : D[e]) && void 0 !== n ? n : x[e]) && void 0 !== r ? r : U[e]) && void 0 !== i ? i : V[e]
 }
 
 function J(e) {
-  e.isPrivate() ? (delete F[e.id], $(e)) : e.isThread() ? ee(e) : g.oj.has(e.type) && en(e)
+  e.isPrivate() ? (delete V[e.id], $(e)) : e.isThread() ? ee(e) : g.oj.has(e.type) && en(e)
 }
 
 function $(e) {
@@ -209,7 +209,7 @@ function er(e) {
 
 function ei(e) {
   let t = w;
-  for (let n of (M = {}, P = {}, w = {}, x = {}, j = {}, F = {}, B = {}, V = Date.now(), L = e.initialPrivateChannels, e.initialPrivateChannels.forEach($), e.guilds)) "partial" === n.dataMode && (o().forEach(t[n.id], et), C.fileOnly("Restoring guild channels for ".concat(n.id, " #:").concat(eL(n.id)))), eo(n);
+  for (let n of (M = {}, P = {}, w = {}, x = {}, j = {}, V = {}, B = {}, F = Date.now(), L = e.initialPrivateChannels, e.initialPrivateChannels.forEach($), e.guilds)) "partial" === n.dataMode && (o().forEach(t[n.id], et), C.fileOnly("Restoring guild channels for ".concat(n.id, " #:").concat(eL(n.id)))), eo(n);
   eP()
 }
 
@@ -258,7 +258,7 @@ function el(e) {
 }
 
 function ec() {
-  C.fileOnly("initializeClear()"), M = {}, P = {}, w = {}, j = {}, D = {}, F = {}, x = {}, G = new Set, B = {}, V = Date.now()
+  C.fileOnly("initializeClear()"), M = {}, P = {}, w = {}, j = {}, D = {}, V = {}, x = {}, G = new Set, B = {}, F = Date.now()
 }
 
 function eu(e) {
@@ -340,7 +340,7 @@ function eE(e) {
   })
 }
 
-function ev(e) {
+function eb(e) {
   let {
     threads: t
   } = e;
@@ -349,7 +349,7 @@ function ev(e) {
   })
 }
 
-function eb(e) {
+function ev(e) {
   if ("basicPermissions" in e || e.type !== I.d4z.DM) return;
   let t = e.getRecipientId();
   M[t] === e.id && delete M[t]
@@ -367,7 +367,7 @@ function eO(e) {
     channel: r
   } = e, i = null !== (n = null !== (t = P[r.id]) && void 0 !== t ? t : D[r.id]) && void 0 !== n ? n : x[r.id];
   if (null == i) return !1;
-  ey(i), eb(i)
+  ey(i), ev(i)
 }
 
 function eI(e) {
@@ -380,7 +380,7 @@ function eS(e) {
 
 function eT(e) {
   let t = X(e.channelId),
-    n = b.default.getId();
+    n = v.default.getId();
   return null != t && !!t.isPrivate() && (J(t.addRecipient(e.user.id, e.nick, n)), !0)
 }
 
@@ -407,8 +407,8 @@ function eC(e) {
   n.forEach(eR), null == r || r.forEach(e => {
     let t = (0, g.q_)(e),
       n = null != X(e.id),
-      r = null != F[e.id];
-    t.isPrivate() && (!n || r) ? F[t.id] = t : n || J(t)
+      r = null != V[e.id];
+    t.isPrivate() && (!n || r) ? V[t.id] = t : n || J(t)
   })
 }
 
@@ -445,7 +445,7 @@ class eD extends(r = s.ZP.Store) {
   }
   getChannelIds(e) {
     var t, n;
-    return (K(e, 0, "getChannelIds"), null == e) ? v.default.keys(D) : v.default.keys(null !== (n = null !== (t = f.Z.getGuildBasicChannels(e)) && void 0 !== t ? t : w[e]) && void 0 !== n ? n : R)
+    return (K(e, 0, "getChannelIds"), null == e) ? b.default.keys(D) : b.default.keys(null !== (n = null !== (t = f.Z.getGuildBasicChannels(e)) && void 0 !== t ? t : w[e]) && void 0 !== n ? n : R)
   }
   getMutablePrivateChannels() {
     return D
@@ -459,7 +459,7 @@ class eD extends(r = s.ZP.Store) {
     return K(e, 1, "getMutableGuildChannelsForGuild"), null !== (t = w[e]) && void 0 !== t ? t : R
   }
   getSortedPrivateChannels() {
-    return o()(D).values().sort((e, t) => v.default.compare(e.lastMessageId, t.lastMessageId)).reverse().value()
+    return o()(D).values().sort((e, t) => b.default.compare(e.lastMessageId, t.lastMessageId)).reverse().value()
   }
   getDMFromUserId(e) {
     if (null != e) return M[e]
@@ -471,7 +471,7 @@ class eD extends(r = s.ZP.Store) {
     return M
   }
   getDMUserIds() {
-    return v.default.keys(M)
+    return b.default.keys(M)
   }
   getPrivateChannelsVersion() {
     return k
@@ -488,9 +488,9 @@ class eD extends(r = s.ZP.Store) {
   }
   getDebugInfo() {
     return {
-      loadedGuildIds: Array.from(G).sort(v.default.compare),
-      pendingGuildLoads: Object.keys(B).sort(v.default.compare),
-      guildSizes: Object.keys(w).sort(v.default.compare).map(e => "".concat(e, ": ").concat(eL(e)))
+      loadedGuildIds: Array.from(G).sort(b.default.compare),
+      pendingGuildLoads: Object.keys(B).sort(b.default.compare),
+      guildSizes: Object.keys(w).sort(b.default.compare).map(e => "".concat(e, ": ").concat(eL(e)))
     }
   }
 }
@@ -514,11 +514,11 @@ let ex = new eD(l.Z, {
   CHANNEL_PERMISSIONS_DELETE_OVERWRITE_SUCCESS: em,
   GUILD_CREATE: eI,
   GUILD_DELETE: eS,
-  LOAD_ARCHIVED_THREADS_SUCCESS: ev,
+  LOAD_ARCHIVED_THREADS_SUCCESS: eb,
   LOAD_CHANNELS: el,
   LOAD_MESSAGES_AROUND_SUCCESS: eA,
   LOAD_MESSAGES_SUCCESS: eA,
-  LOAD_THREADS_SUCCESS: ev,
+  LOAD_THREADS_SUCCESS: eb,
   LOGOUT: ew,
   OVERLAY_INITIALIZE: ed,
   SEARCH_FINISH: eC,

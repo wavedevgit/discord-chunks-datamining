@@ -47,7 +47,7 @@ function c(e, t) {
 }
 
 function u(e, t) {
-  var n, a, l, u, d, f, _, p, h, m, g, E, v, b, y, O;
+  var n, a, l, u, d, f, _, p, h, m, g, E, b, v, y, O;
   let I = null === (n = t.powerup_metadata) || void 0 === n ? void 0 : n.category_type;
   if (null == I) return;
   let S = null === (a = t.sku) || void 0 === a ? void 0 : a.powerup_metadata;
@@ -69,7 +69,7 @@ function u(e, t) {
         S = t.sku.dependent_sku_id;
       for (; null != S;) {
         let t = e.find(e => S === e.sku.id);
-        a += null !== (v = null == t ? void 0 : null === (f = t.sku) || void 0 === f ? void 0 : null === (d = f.powerup_metadata) || void 0 === d ? void 0 : null === (u = d.guild_features) || void 0 === u ? void 0 : u.additional_emoji_slots) && void 0 !== v ? v : 0, O += null !== (b = null == t ? void 0 : null === (h = t.sku) || void 0 === h ? void 0 : null === (p = h.powerup_metadata) || void 0 === p ? void 0 : null === (_ = p.guild_features) || void 0 === _ ? void 0 : _.additional_sound_slots) && void 0 !== b ? b : 0, I += null !== (y = null == t ? void 0 : null === (E = t.sku) || void 0 === E ? void 0 : null === (g = E.powerup_metadata) || void 0 === g ? void 0 : null === (m = g.guild_features) || void 0 === m ? void 0 : m.additional_sticker_slots) && void 0 !== y ? y : 0, S = null == t ? void 0 : t.sku.dependent_sku_id
+        a += null !== (b = null == t ? void 0 : null === (f = t.sku) || void 0 === f ? void 0 : null === (d = f.powerup_metadata) || void 0 === d ? void 0 : null === (u = d.guild_features) || void 0 === u ? void 0 : u.additional_emoji_slots) && void 0 !== b ? b : 0, O += null !== (v = null == t ? void 0 : null === (h = t.sku) || void 0 === h ? void 0 : null === (p = h.powerup_metadata) || void 0 === p ? void 0 : null === (_ = p.guild_features) || void 0 === _ ? void 0 : _.additional_sound_slots) && void 0 !== v ? v : 0, I += null !== (y = null == t ? void 0 : null === (E = t.sku) || void 0 === E ? void 0 : null === (g = E.powerup_metadata) || void 0 === g ? void 0 : null === (m = g.guild_features) || void 0 === m ? void 0 : m.additional_sticker_slots) && void 0 !== y ? y : 0, S = null == t ? void 0 : t.sku.dependent_sku_id
       }
       return s({
         type: i.Us.LEVEL,

@@ -88,31 +88,31 @@ function m(e) {
   r.useLayoutEffect(() => {
     E.current = m
   }, [m]);
-  let [v, b] = r.useReducer(i.Z, {
+  let [b, v] = r.useReducer(i.Z, {
     items: n,
     focusPath: s,
     focusIndex: -1
-  }), y = r.useMemo(() => (0, a.P2)(b, 30), [b]);
+  }), y = r.useMemo(() => (0, a.P2)(v, 30), [v]);
   r.useEffect(() => {
-    b({
+    v({
       type: i.B.UPDATE_ITEMS,
       items: n
     })
   }, [n]);
   let {
     focusPath: O
-  } = v, [I, S] = r.useState(!1), [T, N] = r.useState(!1), [{
+  } = b, [I, S] = r.useState(!1), [T, N] = r.useState(!1), [{
     onItemFocusMemoizer: A,
     onItemMouseEnterMemoizer: C
   }] = r.useState(() => ({
     onItemFocusMemoizer: new a.$o(e => () => {
-      S(!0), b({
+      S(!0), v({
         type: i.B.SET_FOCUS_PATH,
         path: e.split(d)
       })
     }),
     onItemMouseEnterMemoizer: new a.$o(e => () => {
-      N(!1), b({
+      N(!1), v({
         type: i.B.SET_FOCUS_PATH,
         path: e.split(d)
       })
@@ -147,7 +147,7 @@ function m(e) {
   }, [I]), w = r.useCallback(e => {
     e.target !== e.currentTarget && !e.currentTarget.contains(e.relatedTarget) && I && S(!1)
   }, [I]), D = r.useCallback(() => {
-    b({
+    v({
       type: i.B.SET_FOCUS_PATH,
       path: []
     }), S(!1)
@@ -168,10 +168,10 @@ function m(e) {
       role: "menu",
       tabIndex: -1,
       "aria-activedescendant": L(n) ? (0, a.qR)(t, O.join(d)) : void 0,
-      focusIndex: v.focusIndex,
+      focusIndex: b.focusIndex,
       isUsingKeyboardNavigation: T
     }
-  }, [t, O, L, v.focusIndex, T]), k = r.useCallback(e => {
+  }, [t, O, L, b.focusIndex, T]), k = r.useCallback(e => {
     let {
       path: n,
       hasSubmenu: r = !1,

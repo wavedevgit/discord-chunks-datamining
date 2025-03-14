@@ -74,13 +74,13 @@ function u(e) {
     default:
       t = r.Ec.has(n.type) ? d > 0 ? l.t["ZL7+Iy"] : u ? l.t.YlVvmZ : l.t["0nZpiI"] : d > 0 ? l.t.g8ONMz : u ? l.t.smf1CQ : l.t.s0JADg
   }
-  let v = [l.NW.formatToPlainString(t, {
+  let b = [l.NW.formatToPlainString(t, {
       channelName: m,
       mentionCount: d
     })],
-    b = c({
+    v = c({
       isSubscriptionGated: p,
       needSubscriptionToAccess: h
     });
-  return null != b && v.push(b), v.join(", ")
+  return null != v && b.push(v), b.join(", ")
 }

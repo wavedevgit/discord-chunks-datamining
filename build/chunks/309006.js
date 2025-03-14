@@ -32,8 +32,8 @@ let m = i.forwardRef(function(e, t) {
   let {
     sound: n,
     containerDimensions: h
-  } = e, m = (0, s.e7)([d.default], () => d.default.getCurrentUser()), g = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), [E, v] = i.useState([]), b = E.length < p, y = (null == n ? void 0 : n.emojiId) != null || (null == n ? void 0 : n.emojiName) != null, O = i.useCallback(() => {
-    if (!g && b && y && null != m) {
+  } = e, m = (0, s.e7)([d.default], () => d.default.getCurrentUser()), g = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), [E, b] = i.useState([]), v = E.length < p, y = (null == n ? void 0 : n.emojiId) != null || (null == n ? void 0 : n.emojiName) != null, O = i.useCallback(() => {
+    if (!g && v && y && null != m) {
       var e;
       let t = (0, c._r)({
           id: n.emojiId,
@@ -51,14 +51,14 @@ let m = i.forwardRef(function(e, t) {
           url: t,
           userId: m.id
         };
-      v(e => [...e, l])
+      b(e => [...e, l])
     }
-  }, [g, b, y, m, n]);
+  }, [g, v, y, m, n]);
   i.useImperativeHandle(t, () => ({
     addAnimation: O
   }));
   let I = i.useCallback(e => {
-    v(t => {
+    b(t => {
       let n = [...t],
         r = n.findIndex(t => t.id === e);
       return n.splice(r, 1), n

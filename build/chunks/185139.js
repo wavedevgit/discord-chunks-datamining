@@ -20,8 +20,8 @@ var h = n(122289),
   m = n(70956),
   g = n(981631),
   E = n(388032),
-  v = n(137635);
-let b = new Set([p.h8.SKU_SELECT, p.h8.AWAITING_AUTHENTICATION, p.h8.AWAITING_PURCHASE_TOKEN_AUTH, p.h8.CONFIRM]);
+  b = n(137635);
+let v = new Set([p.h8.SKU_SELECT, p.h8.AWAITING_AUTHENTICATION, p.h8.AWAITING_PURCHASE_TOKEN_AUTH, p.h8.CONFIRM]);
 
 function y(e) {
   let {
@@ -64,43 +64,43 @@ function y(e) {
     options: g.OBo,
     stripe: k,
     children: [O, (0, r.jsxs)("div", {
-      className: s()("paymentModalContent", v.content),
+      className: s()("paymentModalContent", b.content),
       children: [S && n !== p.h8.CONFIRM ? (0, r.jsx)(u.Z, {
-        className: v.paymentNote,
+        className: b.paymentNote,
         iconSize: u.Z.Sizes.SMALL,
         icon: c.OgN,
         color: null == T ? u.Z.Colors.PRIMARY : u.Z.Colors.SECONDARY,
         children: T
       }) : null, N ? null : (0, r.jsx)("div", {
-        className: v.breadcrumbsWrapper,
+        className: b.breadcrumbsWrapper,
         children: (0, r.jsx)(c.OoM, {
           activeId: p.Ck.has(n) ? U : n,
-          breadcrumbs: t.filter(e => !p.Ck.has(e) && !b.has(e)).map(e => ({
+          breadcrumbs: t.filter(e => !p.Ck.has(e) && !v.has(e)).map(e => ({
             id: e,
             label: (0, p.DJ)(e)
           }))
         })
       }), (0, r.jsxs)("div", {
-        className: v.bodyWrapper,
+        className: b.bodyWrapper,
         children: [null == x ? null : (0, r.jsx)("div", {
-          className: v.errorBlockWrapper,
+          className: b.errorBlockWrapper,
           children: (0, r.jsx)(c.kzN, {
             ref: R,
             children: M
           })
         }), A ? (0, r.jsx)(c.$jN, {
-          className: v.loadingBlock
+          className: b.loadingBlock
         }) : (0, r.jsx)(c.qBt, {
-          className: v.sequencer,
-          staticClassName: v.sequencerStatic,
-          animatedNodeClassName: v.sequencerAnimatedNode,
+          className: b.sequencer,
+          staticClassName: b.sequencerStatic,
+          animatedNodeClassName: b.sequencerAnimatedNode,
           fillParent: !0,
           step: n,
           steps: t,
           sideMargin: 20,
           children: (0, r.jsx)(c.h21, {
             onScroll: w,
-            className: s()(v.scroller, D),
+            className: s()(b.scroller, D),
             children: a
           })
         })]

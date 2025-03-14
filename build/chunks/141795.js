@@ -20,9 +20,9 @@ var r = n(392711),
   m = n(861990),
   g = n(476326),
   E = n(983544),
-  v = n(981631);
+  b = n(981631);
 
-function b(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -38,7 +38,7 @@ function y(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -67,7 +67,7 @@ var N = function(e) {
 }({});
 class A {
   constructor() {
-    b(this, "numChunks", void 0), b(this, "totalRequestCount", void 0), b(this, "timing", {}), b(this, "compressAndExtractDisabled", void 0), b(this, "fileAlreadyPrepped", void 0), b(this, "imageCompressionQuality", void 0), b(this, "videoCompressionQuality", void 0), b(this, "convertedMimeType", void 0), b(this, "sourceMediaWidth", void 0), b(this, "sourceMediaHeight", void 0), b(this, "sourceMediaFormat", void 0), b(this, "sourceVideoBitrate", void 0), b(this, "sourceVideoFramerate", void 0), b(this, "videoDurationMs", void 0), b(this, "sourceVideoProfile", void 0), b(this, "sourceVideoLevel", void 0), b(this, "targetVideoWidth", void 0), b(this, "targetVideoHeight", void 0), b(this, "targetVideoBitrate", void 0), b(this, "targetVideoCodec", void 0), b(this, "targetVideoFramerate", void 0), b(this, "targetVideoIsHdr", void 0), b(this, "hevcIsSupported", void 0), b(this, "progressUpdateGranularity", void 0)
+    v(this, "numChunks", void 0), v(this, "totalRequestCount", void 0), v(this, "timing", {}), v(this, "compressAndExtractDisabled", void 0), v(this, "fileAlreadyPrepped", void 0), v(this, "imageCompressionQuality", void 0), v(this, "videoCompressionQuality", void 0), v(this, "convertedMimeType", void 0), v(this, "sourceMediaWidth", void 0), v(this, "sourceMediaHeight", void 0), v(this, "sourceMediaFormat", void 0), v(this, "sourceVideoBitrate", void 0), v(this, "sourceVideoFramerate", void 0), v(this, "videoDurationMs", void 0), v(this, "sourceVideoProfile", void 0), v(this, "sourceVideoLevel", void 0), v(this, "targetVideoWidth", void 0), v(this, "targetVideoHeight", void 0), v(this, "targetVideoBitrate", void 0), v(this, "targetVideoCodec", void 0), v(this, "targetVideoFramerate", void 0), v(this, "targetVideoIsHdr", void 0), v(this, "hevcIsSupported", void 0), v(this, "progressUpdateGranularity", void 0)
   }
 }
 class C extends g.ZP {
@@ -236,11 +236,11 @@ class C extends g.ZP {
     let r = await T.getUploadPayload(this),
       i = (0, E.F)(this.item.target);
     if (null == r.filename || "" === r.filename || 0 === this.currentSize) {
-      S.error("File does not have a filename or size is 0.", JSON.stringify(r)), this.handleError(v.evJ.INVALID_FILE_ASSET);
+      S.error("File does not have a filename or size is 0.", JSON.stringify(r)), this.handleError(b.evJ.INVALID_FILE_ASSET);
       return
     }
     if ((null !== (e = this.currentSize) && void 0 !== e ? e : 0) > i.getMaxFileSize(this.channelId)) {
-      this.handleError(v.evJ.ENTITY_TOO_LARGE);
+      this.handleError(b.evJ.ENTITY_TOO_LARGE);
       return
     }
     if (l.ZP.get("upload_fail_50") && .5 > Math.random()) {
@@ -262,7 +262,7 @@ class C extends g.ZP {
       this.setResponseUrl(e.body.attachments[0].upload_url), this.setUploadedFilename(e.body.attachments[0].upload_filename)
     } catch (r) {
       let e = null !== (n = null == r ? void 0 : null === (t = r.body) || void 0 === t ? void 0 : t.code) && void 0 !== n ? n : r.status;
-      e !== v.evJ.ENTITY_TOO_LARGE && (S.error("Requesting upload url failed with code ".concat(null != e ? e : JSON.stringify(r.body), " for ").concat(this.id)), h.Z.captureException(r)), this.handleError(e);
+      e !== b.evJ.ENTITY_TOO_LARGE && (S.error("Requesting upload url failed with code ".concat(null != e ? e : JSON.stringify(r.body), " for ").concat(this.id)), h.Z.captureException(r)), this.handleError(e);
       return
     }
     try {
@@ -348,7 +348,7 @@ class C extends g.ZP {
   }
   trackUploadStart() {
     var e;
-    f.default.track(v.rMx.ATTACHMENT_UPLOAD_STARTED, {
+    f.default.track(b.rMx.ATTACHMENT_UPLOAD_STARTED, {
       file_size: this.currentSize,
       mime_type: null !== (e = this.mimeType) && void 0 !== e ? e : "unknown",
       video_upload_quality: u.ZP.videoUploadQuality,
@@ -363,7 +363,7 @@ class C extends g.ZP {
   trackUploadFinished(e) {
     var t, n, r, i, o;
     let a = null != this.startTime ? performance.now() - this.startTime : -1;
-    f.default.track(v.rMx.ATTACHMENT_UPLOAD_FINISHED, {
+    f.default.track(b.rMx.ATTACHMENT_UPLOAD_FINISHED, {
       duration_ms: a,
       file_size: this.currentSize,
       pre_compression_file_size: this.preCompressionSize,
@@ -407,6 +407,6 @@ class C extends g.ZP {
   }
   constructor(e, t, n, r) {
     var i, o, a, s;
-    super(e, n), b(this, "RESUME_INCOMPLETE_CODES", [308]), b(this, "status", "NOT_STARTED"), b(this, "channelId", void 0), b(this, "responseUrl", void 0), b(this, "currentSize", void 0), b(this, "preCompressionSize", void 0), b(this, "postCompressionSize", void 0), b(this, "loaded", 0), b(this, "reactNativeFileIndex", void 0), b(this, "error", void 0), b(this, "reactNativeFilePrepped", !1), b(this, "startTime", void 0), b(this, "uploadAnalytics", new A), b(this, "_abortController", void 0), b(this, "_xhr", void 0), b(this, "_aborted", !1), this.channelId = t, this.preCompressionSize = null !== (a = null === (i = e.file) || void 0 === i ? void 0 : i.size) && void 0 !== a ? a : 0, this.currentSize = null !== (s = null === (o = e.file) || void 0 === o ? void 0 : o.size) && void 0 !== s ? s : 0, this.reactNativeFileIndex = r, this._abortController = new AbortController
+    super(e, n), v(this, "RESUME_INCOMPLETE_CODES", [308]), v(this, "status", "NOT_STARTED"), v(this, "channelId", void 0), v(this, "responseUrl", void 0), v(this, "currentSize", void 0), v(this, "preCompressionSize", void 0), v(this, "postCompressionSize", void 0), v(this, "loaded", 0), v(this, "reactNativeFileIndex", void 0), v(this, "error", void 0), v(this, "reactNativeFilePrepped", !1), v(this, "startTime", void 0), v(this, "uploadAnalytics", new A), v(this, "_abortController", void 0), v(this, "_xhr", void 0), v(this, "_aborted", !1), this.channelId = t, this.preCompressionSize = null !== (a = null === (i = e.file) || void 0 === i ? void 0 : i.size) && void 0 !== a ? a : 0, this.currentSize = null !== (s = null === (o = e.file) || void 0 === o ? void 0 : o.size) && void 0 !== s ? s : 0, this.reactNativeFileIndex = r, this._abortController = new AbortController
   }
 }

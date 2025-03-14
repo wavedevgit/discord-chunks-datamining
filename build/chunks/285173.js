@@ -1,32 +1,32 @@
-/** Chunk was on 94289 **/
-n.d(t, {
-  Z: () => o
+/** Chunk was on 15814 **/
+r.d(t, {
+  Z: () => s
 });
-var r = n(200651),
-  l = n(192379),
-  a = n(481060),
-  i = n(412899),
-  s = n(231338);
+var n = r(200651),
+  l = r(192379),
+  i = r(481060),
+  a = r(412899),
+  o = r(231338);
 
-function o(e) {
+function s(e) {
   var t;
   let {
-    guildId: n,
-    role: o,
-    className: E,
+    guildId: r,
+    role: s,
+    className: h,
     canRemove: c = !1,
-    onRemove: u = s.dG
-  } = e, _ = (0, a.dQu)(a.TVs.unsafe_rawColors.PRIMARY_300).hex(), d = null !== (t = null == o ? void 0 : o.colorString) && void 0 !== t ? t : _, A = l.useMemo(() => ({
+    onRemove: v = o.dG
+  } = e, u = (0, i.dQu)(i.TVs.unsafe_rawColors.PRIMARY_300).hex(), d = null !== (t = null == s ? void 0 : s.colorString) && void 0 !== t ? t : u, E = l.useMemo(() => ({
     backgroundColor: "".concat(d, "27")
   }), [d]);
-  return null == o ? null : (0, r.jsx)(a.P3F, {
-    children: (0, r.jsx)(i.UB, {
-      className: E,
-      style: A,
-      role: o,
-      guildId: n,
+  return null == s ? null : (0, n.jsx)(i.P3F, {
+    children: (0, n.jsx)(a.UB, {
+      className: h,
+      style: E,
+      role: s,
+      guildId: r,
       canRemove: c,
-      onRemove: u
+      onRemove: v
     })
   })
 }

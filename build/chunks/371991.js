@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => v,
+  ZP: () => b,
   tS: () => g,
   x3: () => E
 }), n(47120);
@@ -60,7 +60,7 @@ let E = e => {
       children: f
     })
   },
-  v = e => {
+  b = e => {
     var t, n;
     let {
       entry: i,

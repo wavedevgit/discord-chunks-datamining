@@ -19,8 +19,8 @@ var r = n(512722),
   m = n(997653),
   g = n(384136),
   E = n(740197),
-  v = n(548820),
-  b = n(579237),
+  b = n(548820),
+  v = n(579237),
   y = n(582168),
   O = n(825040),
   I = n(65154),
@@ -122,7 +122,7 @@ class A extends l.Z {
   }
   async _enable() {
     if (this.enabled) return;
-    await this.getAudioContext().audioWorklet.addModule(v);
+    await this.getAudioContext().audioWorklet.addModule(b);
     let e = new h.Z(this.getAudioContext());
     e.on("permission", this.handleAudioPermission);
     try {
@@ -219,7 +219,7 @@ class A extends l.Z {
   }
   setExperimentalAdm(e) {}
   setLoopback(e, t) {
-    e && null == this.loopback ? (this.enable(), this.loopback = new b.Z(this.getAudioContext(), this.sourceId, this.sinkId), this.loopback.setNoiseCancellation(t.noiseCancellation)) : e || null == this.loopback || (this.loopback.stop(), this.loopback = null)
+    e && null == this.loopback ? (this.enable(), this.loopback = new v.Z(this.getAudioContext(), this.sourceId, this.sinkId), this.loopback.setNoiseCancellation(t.noiseCancellation)) : e || null == this.loopback || (this.loopback.stop(), this.loopback = null)
   }
   getLoopback() {
     return null != this.loopback

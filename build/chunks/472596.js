@@ -1,82 +1,82 @@
-/** Chunk was on 94289 **/
-n.d(t, {
-  RE: () => _,
-  RN: () => A,
-  po: () => N,
+/** Chunk was on 15814 **/
+r.d(t, {
+  RE: () => u,
+  RN: () => E,
+  po: () => p,
   vN: () => d,
-  xb: () => I,
-  zq: () => T
+  xb: () => M,
+  zq: () => f
 });
-var r, l = n(192379),
-  a = n(399606),
-  i = n(906732),
-  s = n(171368),
-  o = n(430824),
-  E = n(594174),
-  c = n(91047),
-  u = n(981631);
-let _ = (e, t) => {
+var n, l = r(192379),
+  i = r(399606),
+  a = r(906732),
+  o = r(171368),
+  s = r(430824),
+  h = r(594174),
+  c = r(91047),
+  v = r(981631);
+let u = (e, t) => {
   let {
-    guildId: n,
-    userId: r,
+    guildId: r,
+    userId: n,
     colorRoleId: l
   } = e;
-  (0, s.openUserProfileModal)({
-    userId: r,
-    guildId: n,
+  (0, o.openUserProfileModal)({
+    userId: n,
+    guildId: r,
     sourceAnalyticsLocations: t,
     roleId: l,
     analyticsLocation: {
-      section: u.jXE.MEMBER_SAFETY_PAGE,
-      object: u.qAy.ACTIONED_BY_USER
+      section: v.jXE.MEMBER_SAFETY_PAGE,
+      object: v.qAy.ACTIONED_BY_USER
     }
   })
 };
 
-function d(e, t, n, r) {
+function d(e, t, r, n) {
   let {
-    analyticsLocations: a
-  } = (0, i.ZP)();
+    analyticsLocations: i
+  } = (0, a.ZP)();
   return l.useCallback(l => {
     if (null == e) return;
-    let i = E.default.getUser(e.userId);
-    null != i && (l.stopPropagation(), (0, c.nm)(l, {
-      user: i,
-      guildId: e.guildId,
-      analyticsLocations: null != n ? [n] : a,
-      onCloseContextMenu: r,
-      isViewOnly: t
-    }))
-  }, [e, a, r, n, t])
-}
-
-function A(e, t, n) {
-  let {
-    analyticsLocations: r
-  } = (0, i.ZP)();
-  return l.useCallback(l => {
-    if (null == e) return;
-    let a = E.default.getUser(e.userId);
-    null != a && (l.stopPropagation(), (0, c._j)(l, {
+    let a = h.default.getUser(e.userId);
+    null != a && (l.stopPropagation(), (0, c.nm)(l, {
       user: a,
       guildId: e.guildId,
-      analyticsLocations: null != t ? [t] : r,
+      analyticsLocations: null != r ? [r] : i,
       onCloseContextMenu: n,
+      isViewOnly: t
+    }))
+  }, [e, i, n, r, t])
+}
+
+function E(e, t, r) {
+  let {
+    analyticsLocations: n
+  } = (0, a.ZP)();
+  return l.useCallback(l => {
+    if (null == e) return;
+    let i = h.default.getUser(e.userId);
+    null != i && (l.stopPropagation(), (0, c._j)(l, {
+      user: i,
+      guildId: e.guildId,
+      analyticsLocations: null != t ? [t] : n,
+      onCloseContextMenu: r,
       showTransferOwnershipItem: !0
     }))
-  }, [e, n, r, t])
+  }, [e, r, n, t])
 }
 
-function T(e) {
-  return (0, a.e7)([o.Z], () => {
+function f(e) {
+  return (0, i.e7)([s.Z], () => {
     var t;
     if (null == e) return null;
-    let n = o.Z.getGuild(e.guildId);
-    return null == n || null == e.highestRoleId ? null : null !== (t = o.Z.getRole(n.id, e.highestRoleId)) && void 0 !== t ? t : null
+    let r = s.Z.getGuild(e.guildId);
+    return null == r || null == e.highestRoleId ? null : null !== (t = s.Z.getRole(r.id, e.highestRoleId)) && void 0 !== t ? t : null
   }, [e])
 }
-var N = ((r = {})[r.LOADING = 0] = "LOADING", r[r.SUCCESS_STILL_INDEXING = 1] = "SUCCESS_STILL_INDEXING", r[r.SUCCESS_EMPTY = 2] = "SUCCESS_EMPTY", r[r.SUCCESS_FULL = 3] = "SUCCESS_FULL", r);
+var p = ((n = {})[n.LOADING = 0] = "LOADING", n[n.SUCCESS_STILL_INDEXING = 1] = "SUCCESS_STILL_INDEXING", n[n.SUCCESS_EMPTY = 2] = "SUCCESS_EMPTY", n[n.SUCCESS_FULL = 3] = "SUCCESS_FULL", n);
 
-function I(e, t, n) {
-  return t ? 0 : e ? 1 : n <= 0 ? 2 : 3
+function M(e, t, r) {
+  return t ? 0 : e ? 1 : r <= 0 ? 2 : 3
 }

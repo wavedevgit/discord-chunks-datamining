@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   o = n(120356),
   a = n.n(o),
-  l = n(536285),
-  s = n(857458),
+  s = n(536285),
+  l = n(857458),
   c = n(388905),
   u = n(703656),
   d = n(388032),
@@ -17,21 +17,21 @@ let p = function(e) {
     match: t,
     location: n,
     attemptDeepLink: o
-  } = e, [p, f] = i.useState(0);
+  } = e, [p, g] = i.useState(0);
   i.useEffect(() => {
-    l.default.once("connected", () => {
-      f(1)
-    }), l.default.once("disconnected", () => {
-      (0, u.uL)((0, s.M)())
-    }), l.default.connect()
+    s.default.once("connected", () => {
+      g(1)
+    }), s.default.once("disconnected", () => {
+      (0, u.uL)((0, l.M)())
+    }), s.default.connect()
   }, []), i.useEffect(() => {
     if (0 !== p) return;
-    let e = setTimeout(() => (0, u.uL)((0, s.M)()), 3e3);
+    let e = setTimeout(() => (0, u.uL)((0, l.M)()), 3e3);
     return () => clearTimeout(e)
   }, [p]);
-  let g = i.useCallback(async (e, t) => {
+  let m = i.useCallback(async (e, t) => {
     try {
-      f(2), await o(e, t), f(3)
+      g(2), await o(e, t), g(3)
     } catch (e) {
       console.error("Error opening deeplink", e)
     }
@@ -47,13 +47,13 @@ let p = function(e) {
           children: d.NW.string(d.t.SXCxyc)
         }), (0, r.jsx)(c.zx, {
           className: h.marginTop40,
-          onClick: () => g(t, n),
+          onClick: () => m(t, n),
           children: d.NW.string(d.t.UQvCf3)
         }), (0, r.jsx)(c.zx, {
           className: a()(h.marginTop8, h.marginCenterHorz),
           color: c.zx.Colors.LINK,
           look: c.zx.Looks.LINK,
-          onClick: () => (0, u.uL)((0, s.M)()),
+          onClick: () => (0, u.uL)((0, l.M)()),
           children: d.NW.string(d.t["2ixEBg"])
         })]
       });

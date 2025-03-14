@@ -51,8 +51,8 @@ class p extends(r = o.PureComponent) {
       onVolumeShow: g,
       onVolumeHide: E
     } = this.props, {
-      hovered: v,
-      focused: b,
+      hovered: b,
+      focused: v,
       dragging: y
     } = this.state, O = l.gj8;
     return f || m === p ? O = l.OyP : m < h / 2 && (O = l.X2j), (0, i.jsxs)("div", {
@@ -78,7 +78,7 @@ class p extends(r = o.PureComponent) {
       onKeyDown: this.handleKeyDown,
       children: [(0, i.jsx)("div", {
         className: s()(d.volumeButtonSlider, r, {
-          [d.sliderVisible]: v || b || y
+          [d.sliderVisible]: b || v || y
         }),
         onMouseEnter: () => {
           clearTimeout(this._hoverTimeout), this.setState({

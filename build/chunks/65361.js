@@ -1,20 +1,21 @@
-/** Chunk was on 84335 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  u: () => o
+  u: () => s
 });
 var r = n(192379),
-  l = n(442837),
-  i = n(699553),
+  i = n(442837),
+  o = n(699553),
   a = n(314852);
 
-function o(e) {
-  let t = (0, l.e7)([a.Z], () => a.Z.getProfile(e)),
-    n = (0, l.e7)([a.Z], () => a.Z.getFetchStatus(e));
+function s(e) {
+  let t = (0, i.e7)([a.Z], () => a.Z.getProfile(e)),
+    n = (0, i.e7)([a.Z], () => a.Z.getFetchStatus(e));
   return {
     guildProfile: t,
     fetchGuildProfile: r.useCallback(async function() {
       let t = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-      return await (0, i.CR)(e, t)
+      return await (0, o.CR)(e, t)
     }, [e]),
     fetchStatus: n
   }

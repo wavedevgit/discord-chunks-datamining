@@ -30,7 +30,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function v(e) {
   return e
 }
 
-function b(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,7 +55,7 @@ function b(e, t) {
 }
 
 function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -84,7 +84,7 @@ let I = {
       confettiTriggerRef: n,
       guild: i,
       isProgressBarAnimationComplete: E,
-      setConfettiCount: b,
+      setConfettiCount: v,
       setShouldFireConfetti: S,
       tier: T,
       tierMarkerAnimationPosition: N
@@ -145,7 +145,7 @@ let I = {
         })
       }),
       shouldShow: T !== p.Eu4.NONE,
-      children: e => (0, r.jsxs)(U, y(v({
+      children: e => (0, r.jsxs)(U, y(b({
         className: o()(g.progressBarMarker, {
           [g.progressBarMarkerUnlocked]: w,
           [g.progressBarMarkerLocked]: j,
@@ -160,7 +160,7 @@ let I = {
           className: g.boostedTierIconBackground
         }), w && T === p.Eu4.TIER_3 ? (0, r.jsx)(_.m, {
           confettiTriggerRef: n,
-          setConfettiCount: b,
+          setConfettiCount: v,
           setShouldFireConfetti: S,
           children: M
         }) : M, (0, r.jsxs)(s.Text, {

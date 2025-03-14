@@ -40,11 +40,11 @@ function E(e) {
   return e
 }
 
-function v() {
+function b() {
   (0, i.GN)("mention3", void 0, void 0, void 0, h.w.VOICE)
 }
 
-function b() {
+function v() {
   let e = u.Z.getInputDevices()[u.Z.getInputDeviceId()];
   return null != e ? e.name : ""
 }
@@ -201,7 +201,7 @@ let O = {
           n = u.Z.getMediaEngine().getAudioLayer(),
           r = d.Z.getVoiceChannelId(),
           o = null != r ? c.Z.getChannel(r) : null,
-          a = b();
+          a = v();
         f.default.track(p.rMx.VOICE_ACTIVATION_MODE_CHANGED, {
           mode: e,
           location_stack: i,
@@ -215,7 +215,7 @@ let O = {
           n = u.Z.getMediaEngine().getAudioLayer(),
           r = d.Z.getVoiceChannelId(),
           o = null != r ? c.Z.getChannel(r) : null,
-          s = b();
+          s = v();
         f.default.track(p.rMx.VOICE_ACTIVITY_THRESHOLD_CHANGED, {
           location_stack: i,
           voice_channel_type: null == o ? void 0 : o.type,
@@ -274,7 +274,7 @@ let O = {
       }), r.Z.dispatch({
         type: "AUDIO_SET_INPUT_DEVICE",
         id: e
-      }), v())
+      }), b())
     },
     setOutputDevice(e) {
       let {
@@ -287,7 +287,7 @@ let O = {
       }), r.Z.dispatch({
         type: "AUDIO_SET_OUTPUT_DEVICE",
         id: e
-      }), v())
+      }), b())
     },
     setVideoDevice(e) {
       let {

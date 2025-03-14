@@ -21,8 +21,8 @@ var i = n(252258),
   m = n(636449),
   g = n(317381),
   E = n(719296),
-  v = n(958185),
-  b = n(981631);
+  b = n(958185),
+  v = n(981631);
 
 function y(e, t, n) {
   if ((0, m.R)({
@@ -32,7 +32,7 @@ function y(e, t, n) {
     let e = r;
     o.Z.wait(() => a.xv(e))
   }
-  o.Z.wait(() => a.bA(n, b.NYg.EMBED_IFRAME, {
+  o.Z.wait(() => a.bA(n, v.NYg.EMBED_IFRAME, {
     channel: e
   })), r = n
 }
@@ -54,7 +54,7 @@ function S(e) {
 
 function T() {
   let e = g.ZP.getConnectedActivityChannelId(),
-    t = g.ZP.getSelfEmbeddedActivityForChannel(null != e ? e : b.lds),
+    t = g.ZP.getSelfEmbeddedActivityForChannel(null != e ? e : v.lds),
     n = c.Z.getChannel(e);
   if (null == e || null == n || null == t) return O();
   {
@@ -64,7 +64,7 @@ function T() {
 }
 
 function N() {
-  return (0, v.Z)({
+  return (0, b.Z)({
     LayerStore: u.Z,
     PopoutWindowStore: l.Z
   }) ? I() : S()

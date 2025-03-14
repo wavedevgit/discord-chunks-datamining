@@ -16,8 +16,8 @@ var r = n(147018),
   m = n(892725),
   g = n(33995),
   E = n(905145),
-  v = n(644659),
-  b = n(325008),
+  b = n(644659),
+  v = n(325008),
   y = n(992051),
   O = "DOMException",
   I = "DATA_CLONE_ERR",
@@ -31,8 +31,8 @@ var r = n(147018),
   }(),
   N = T && T.prototype,
   A = S.prototype,
-  C = v.set,
-  R = v.getterFor(O),
+  C = b.set,
+  R = b.getterFor(O),
   P = "stack" in S(O),
   w = function(e) {
     return f(g, e) && g[e].m ? g[e].c : 0
@@ -48,7 +48,7 @@ var r = n(147018),
         name: n,
         message: t,
         code: r
-      }), b || (this.name = n, this.message = t, this.code = r), P) {
+      }), v || (this.name = n, this.message = t, this.code = r), P) {
       var i = S(t);
       i.name = O, c(this, "stack", l(1, E(i.stack, 1)))
     }
@@ -66,7 +66,7 @@ var r = n(147018),
       return R(this)[e]
     })
   };
-b && (d(L, "code", M("code")), d(L, "message", M("message")), d(L, "name", M("name"))), c(L, "constructor", l(1, D));
+v && (d(L, "code", M("code")), d(L, "message", M("message")), d(L, "name", M("name"))), c(L, "constructor", l(1, D));
 var k = a(function() {
     return !(new T instanceof S)
   }),
@@ -85,14 +85,14 @@ r({
 }, {
   DOMException: B ? D : T
 });
-var V = o(O),
-  F = V.prototype;
-for (var Z in j && (y || T === V) && u(F, "toString", h), U && b && T === V && d(F, "code", x(function() {
+var F = o(O),
+  V = F.prototype;
+for (var Z in j && (y || T === F) && u(V, "toString", h), U && v && T === F && d(V, "code", x(function() {
     return w(p(this).name)
   })), g)
   if (f(g, Z)) {
     var H = g[Z],
       W = H.s,
       Y = l(6, H.c);
-    f(V, W) || c(V, W, Y), f(F, W) || c(F, W, Y)
+    f(F, W) || c(F, W, Y), f(V, W) || c(V, W, Y)
   }

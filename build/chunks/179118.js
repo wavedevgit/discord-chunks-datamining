@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(522489),
   g = n(717401),
   E = n(286961),
-  v = n(93127),
-  b = n(814443),
+  b = n(93127),
+  v = n(814443),
   y = n(590783),
   O = n(699516),
   I = n(246946),
@@ -46,17 +46,17 @@ function M(e) {
     onClose: d,
     hasSentMessage: f,
     giftRecipient: h,
-    giftMessageError: v,
-    isSendingMessage: b
+    giftMessageError: b,
+    isSendingMessage: v
   } = e, [O, S] = i.useState(u.kO8.Modes.DEFAULT), M = (0, c.e7)([I.Z], () => I.Z.enabled), j = f || null != l && null != h, U = (null == o ? void 0 : o.productLine) === P.POd.COLLECTIBLES, G = (0, E.Z)(), {
     selectedGiftingPromotionReward: B
-  } = (0, R.wD)(), V = null == G ? void 0 : G.giftPurchaseConfirmation, F = (0, g.tK)(null == B ? void 0 : B.skuId), Z = (0, g.a5)(s) && null != F && null != V, H = () => null != s ? s.skuId : null != o ? o.id : null, W = () => {
+  } = (0, R.wD)(), F = null == G ? void 0 : G.giftPurchaseConfirmation, V = (0, g.tK)(null == B ? void 0 : B.skuId), Z = (0, g.a5)(s) && null != V && null != F, H = () => null != s ? s.skuId : null != o ? o.id : null, W = () => {
     let e;
-    return null != v ? D.NW.string(D.t.qB8ayc) : null == s ? null : (e = s.interval === w.rV.MONTH ? j ? Z ? V.monthGiftText : D.t["4ZJ+7e"] : D.t["P+z55e"] : j ? Z ? V.yearGiftText : D.t.p0pZXF : D.t.bXqk3t, D.NW.format(e, {
+    return null != b ? D.NW.string(D.t.qB8ayc) : null == s ? null : (e = s.interval === w.rV.MONTH ? j ? Z ? F.monthGiftText : D.t["4ZJ+7e"] : D.t["P+z55e"] : j ? Z ? F.yearGiftText : D.t.p0pZXF : D.t.bXqk3t, D.NW.format(e, {
       skuName: (0, A.aq)(s.id),
       intervalCount: s.intervalCount
     }))
-  }, Y = () => null != h || f && null == v ? D.NW.string(D.t.zOmK9P) : null != v ? D.NW.string(D.t.d1lrmZ) : D.NW.string(D.t["/s1xR0"]), K = (e, t) => {
+  }, Y = () => null != h || f && null == b ? D.NW.string(D.t.zOmK9P) : null != b ? D.NW.string(D.t.d1lrmZ) : D.NW.string(D.t["/s1xR0"]), K = (e, t) => {
     null != o && (0, N.dM)(new y.Z({
       code: t,
       maxUses: 1
@@ -111,7 +111,7 @@ function M(e) {
         autoTrackExposure: !1,
         disable: __BILLING_STANDALONE__ || e !== N.xr.CUSTOM_STYLE
       }),
-      i = !n && null == v;
+      i = !n && null == b;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: L.blurb,
@@ -140,7 +140,7 @@ function M(e) {
       children: W()
     })]
   });
-  return b ? (0, r.jsxs)("div", {
+  return v ? (0, r.jsxs)("div", {
     className: L.confirmation,
     children: [null != n ? (0, r.jsx)(p.Z, {
       game: n,
@@ -166,7 +166,7 @@ function M(e) {
         [L.headerCustomGifting]: null != l && !U
       }),
       children: Y()
-    }), f && null != h && null == v || j ? Q() : q()]
+    }), f && null != h && null == b || j ? Q() : q()]
   })
 }
 let k = e => {
@@ -175,14 +175,14 @@ let k = e => {
     onClose: n
   } = e;
   i.useEffect(() => {
-    f.Z.fetchRelationships(), (0, v.W)()
+    f.Z.fetchRelationships(), (0, b.W)()
   }, []);
   let [o, a] = i.useState(), [s, p] = i.useState(!1), [m, g] = i.useState(!1), {
     userAffinities: E,
     isLoading: y
-  } = (0, c.cj)([b.Z], () => ({
-    userAffinities: b.Z.getUserAffinitiesUserIds(),
-    isLoading: b.Z.getFetching()
+  } = (0, c.cj)([v.Z], () => ({
+    userAffinities: v.Z.getUserAffinitiesUserIds(),
+    isLoading: v.Z.getFetching()
   })), I = Array.from(E.values()), T = (0, c.e7)([O.Z], () => O.Z.getFriendIDs()), N = l().difference(T, I), A = [...I, ...N], R = (0, c.e7)([S.default], () => S.default.filter(e => A.includes(e.id) && !e.bot), [A]);
   if (null == R || 0 === R.length) return null;
   let P = l().sortBy(R, e => A.indexOf(e.id));

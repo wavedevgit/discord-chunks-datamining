@@ -16,9 +16,9 @@ var r = n(545576),
 e.exports = function(e, t, n, m) {
   var g = "stackTraceLimit",
     E = m ? 2 : 1,
-    v = e.split("."),
-    b = v[v.length - 1],
-    y = r.apply(null, v);
+    b = e.split("."),
+    v = b[b.length - 1],
+    y = r.apply(null, b);
   if (y) {
     var O = y.prototype;
     if (!h && i(O, "cause") && delete O.cause, !n) return y;
@@ -28,10 +28,10 @@ e.exports = function(e, t, n, m) {
           r = m ? new y(e) : new y;
         return void 0 !== n && o(r, "message", n), _(r, S, r.stack, 2), this && a(O, this) && u(r, this, S), arguments.length > E && f(r, arguments[E]), r
       });
-    if (S.prototype = O, "Error" !== b ? s ? s(S, I) : l(S, I, {
+    if (S.prototype = O, "Error" !== v ? s ? s(S, I) : l(S, I, {
         name: !0
       }) : p && g in y && (c(S, y, g), c(S, y, "prepareStackTrace")), l(S, y), !h) try {
-      O.name !== b && o(O, "name", b), O.constructor = S
+      O.name !== v && o(O, "name", v), O.constructor = S
     } catch (e) {}
     return S
   }

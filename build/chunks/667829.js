@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(476326),
   g = n(998698),
   E = n(710845),
-  v = n(117530),
-  b = n(459273),
+  b = n(117530),
+  v = n(459273),
   y = n(403182),
   O = n(541716),
   I = n(752305),
@@ -207,7 +207,7 @@ class j extends i.Component {
       channel: m,
       type: g,
       fontSize: E,
-      useSlate: v,
+      useSlate: b,
       spellcheckEnabled: y,
       useNewSlashCommands: S,
       canOnlyUseTextCommands: A,
@@ -220,20 +220,20 @@ class j extends i.Component {
       "aria-labelledby": G,
       accessibilityLabel: B
     } = this.props, {
-      submitting: V,
-      popup: F
+      submitting: F,
+      popup: V
     } = this.state, Z = {
       channel: m,
       className: a()(R, P.textArea, {
-        [P.textAreaSlate]: v,
-        [P.textAreaDisabled]: u || V
+        [P.textAreaSlate]: b,
+        [P.textAreaDisabled]: u || F
       }),
       id: w,
       placeholder: this.getPlaceholder(),
       required: L,
       accessibilityLabel: B,
       disabled: u || !1,
-      submitting: V,
+      submitting: F,
       isEdit: g === O.Ie.EDIT,
       onFocus: this.handleFocus,
       onBlur: this.handleBlur,
@@ -259,15 +259,15 @@ class j extends i.Component {
       useNewSlashCommands: S,
       disableAutoFocus: f.tq || null !== (n = g.disableAutoFocus) && void 0 !== n && n,
       disableEnterToSubmit: null !== (i = null === (e = g.submit) || void 0 === e ? void 0 : e.disableEnterToSubmit) && void 0 !== i && i,
-      "aria-controls": null !== (o = F.id) && void 0 !== o ? o : void 0,
+      "aria-controls": null !== (o = V.id) && void 0 !== o ? o : void 0,
       "aria-haspopup": "listbox",
-      "aria-expanded": null !== F.id || void 0,
-      "aria-activedescendant": null !== (s = F.activeDescendant) && void 0 !== s ? s : void 0,
+      "aria-expanded": null !== V.id || void 0,
+      "aria-activedescendant": null !== (s = V.activeDescendant) && void 0 !== s ? s : void 0,
       "aria-invalid": l.length > M,
       "aria-describedby": U,
       "aria-labelledby": G,
       "aria-autocomplete": "list"
-    }, H = v ? (0, r.jsx)(N.Z, x(D({
+    }, H = b ? (0, r.jsx)(N.Z, x(D({
       ref: this.ref
     }, Z), {
       type: g,
@@ -280,10 +280,10 @@ class j extends i.Component {
       value: u ? "" : l
     }));
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(b.d9, {
+      children: [(0, r.jsx)(v.d9, {
         event: C.CkL.INSERT_TEXT,
         handler: this.handleInsertText
-      }), (0, r.jsx)(b.d9, {
+      }), (0, r.jsx)(v.d9, {
         event: C.CkL.CLEAR_TEXT,
         handler: this.handleClearText
       }), H]
@@ -379,7 +379,7 @@ class j extends i.Component {
             c = null,
             u = g.Z.getActiveOption(t.id);
           null != (c = (null == u ? void 0 : u.type) === h.jw.ATTACHMENT ? u : null === (o = s.options) || void 0 === o ? void 0 : o.find(e => {
-            if (e.type === h.jw.ATTACHMENT) return null == v.Z.getUpload(t.id, e.name, l)
+            if (e.type === h.jw.ATTACHMENT) return null == b.Z.getUpload(t.id, e.name, l)
           })) && p.Z.setFile({
             channelId: t.id,
             id: c.name,

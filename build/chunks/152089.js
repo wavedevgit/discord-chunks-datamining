@@ -29,8 +29,8 @@ function u(e) {
     hideMentionDescription: m,
     hidePersonalInformation: g,
     type: E,
-    emojiIntention: v,
-    editorRef: b,
+    emojiIntention: b,
+    editorRef: v,
     onSendMessage: y,
     onSendSticker: O,
     setValue: I
@@ -49,19 +49,19 @@ function u(e) {
     hideMentionDescription: !0 === m,
     hidePersonalInformation: !0 === g,
     chatInputType: E,
-    emojiIntention: v,
+    emojiIntention: b,
     sendMessage: y,
     sendSticker: O,
     insertText: (e, t) => {
       var n;
-      null === (n = b.current) || void 0 === n || n.insertAutocomplete(e, null != t ? t : e)
+      null === (n = v.current) || void 0 === n || n.insertAutocomplete(e, null != t ? t : e)
     },
     replaceText: (e, t) => {
       I(e, null != t ? t : (0, o.JM)(e))
     },
     getCommandOptionValues: () => {
       var e;
-      return null === (e = b.current) || void 0 === e ? void 0 : e.getCommandOptionValues()
+      return null === (e = v.current) || void 0 === e ? void 0 : e.getCommandOptionValues()
     }
   };
   if (null != n) {
@@ -98,8 +98,8 @@ function f(e) {
     optionText: f
   } = e, _ = null;
   for (let e of s.R) {
-    var p, h, m, g, E, v;
-    let b = s.W[e];
+    var p, h, m, g, E, b;
+    let v = s.W[e];
     if (e === l.eq.GIFS || e === l.eq.CHOICES) {
       if (r.commands === l.L8.OLD_BUILT_INS) {
         if (d({
@@ -112,7 +112,7 @@ function f(e) {
           })) {
           _ = {
             type: e,
-            typeInfo: b,
+            typeInfo: v,
             query: u
           };
           break
@@ -126,7 +126,7 @@ function f(e) {
           options: r
         })) return {
         type: e,
-        typeInfo: b,
+        typeInfo: v,
         query: f
       }
     } else if (e === l.eq.STICKERS) {
@@ -139,7 +139,7 @@ function f(e) {
           options: r
         })) return {
         type: e,
-        typeInfo: b,
+        typeInfo: v,
         query: f
       }
     } else if (e === l.eq.COMMANDS && r.commands !== l.L8.OLD_BUILT_INS) {
@@ -153,8 +153,8 @@ function f(e) {
         })) {
         _ = {
           type: e,
-          typeInfo: b,
-          query: u.substring(null !== (h = null === (p = b.sentinel) || void 0 === p ? void 0 : p.length) && void 0 !== h ? h : 0)
+          typeInfo: v,
+          query: u.substring(null !== (h = null === (p = v.sentinel) || void 0 === p ? void 0 : p.length) && void 0 !== h ? h : 0)
         };
         break
       }
@@ -169,7 +169,7 @@ function f(e) {
         })) {
         _ = {
           type: e,
-          typeInfo: b,
+          typeInfo: v,
           query: u
         };
         break
@@ -185,8 +185,8 @@ function f(e) {
         })) {
         _ = {
           type: e,
-          typeInfo: b,
-          query: i.substring(null !== (g = null === (m = b.sentinel) || void 0 === m ? void 0 : m.length) && void 0 !== g ? g : 0)
+          typeInfo: v,
+          query: i.substring(null !== (g = null === (m = v.sentinel) || void 0 === m ? void 0 : m.length) && void 0 !== g ? g : 0)
         };
         break
       }
@@ -200,8 +200,8 @@ function f(e) {
       })) {
       _ = {
         type: e,
-        typeInfo: b,
-        query: i.substring(null !== (v = null === (E = b.sentinel) || void 0 === E ? void 0 : E.length) && void 0 !== v ? v : 0)
+        typeInfo: v,
+        query: i.substring(null !== (b = null === (E = v.sentinel) || void 0 === E ? void 0 : E.length) && void 0 !== b ? b : 0)
       };
       break
     }

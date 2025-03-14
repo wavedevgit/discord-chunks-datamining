@@ -20,7 +20,7 @@ var i, o = n(392711),
   g = n(709054),
   E = n(882252);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -28,7 +28,7 @@ function v(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let b = [],
+let v = [],
   y = null,
   O = null,
   I = new Set,
@@ -37,8 +37,8 @@ let b = [],
   N = [],
   A = !1,
   C = [],
-  R = a().chain(b),
-  P = a().chain(b),
+  R = a().chain(v),
+  P = a().chain(v),
   w = new Set,
   D = new Set;
 
@@ -67,7 +67,7 @@ function k(e) {
 }
 
 function j() {
-  N = [], r = null, O = null, I = new Set, S = s.z.LATEST_ACTIVITY, T = 0, C = [], R = a().chain(b), P = a().chain(b), D.clear(), w.clear()
+  N = [], r = null, O = null, I = new Set, S = s.z.LATEST_ACTIVITY, T = 0, C = [], R = a().chain(v), P = a().chain(v), D.clear(), w.clear()
 }
 
 function U() {
@@ -103,7 +103,7 @@ function B(e) {
   r = null == i ? null : i
 }
 
-function V(e) {
+function F(e) {
   var t;
   let {
     guildId: n
@@ -114,7 +114,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     channel: t
   } = e;
@@ -207,16 +207,16 @@ class z extends(i = l.ZP.Store) {
     return r
   }
 }
-v(z, "displayName", "ForumActivePostStore");
+b(z, "displayName", "ForumActivePostStore");
 let q = new z(c.Z, {
   CONNECTION_OPEN: U,
   OVERLAY_INITIALIZE: U,
   GUILD_CREATE: U,
   CHANNEL_SELECT: U,
   CHANNEL_DELETE: W,
-  THREAD_LIST_SYNC: V,
+  THREAD_LIST_SYNC: F,
   THREAD_CREATE: Z,
-  THREAD_UPDATE: F,
+  THREAD_UPDATE: V,
   THREAD_DELETE: H,
   RESORT_THREADS: Y,
   CHANNEL_ACK: K

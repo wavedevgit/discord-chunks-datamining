@@ -65,8 +65,8 @@ let p = e => {
     primaryDisabled: m,
     primarySubmitting: g,
     onPrimary: E,
-    secondaryText: v,
-    onSecondary: b
+    secondaryText: b,
+    onSecondary: v
   } = e, y = () => {
     if (null == d || null == p) return null;
     let e = 2 === d ? i.gtL : i.zxk,
@@ -92,11 +92,11 @@ let p = e => {
         className: l.primaryIcon
       }), p]
     }))
-  }, O = () => null == v ? null : (0, r.jsx)(i.zxk, {
+  }, O = () => null == b ? null : (0, r.jsx)(i.zxk, {
     color: i.zxk.Colors.PRIMARY,
     look: i.zxk.Looks.LINK,
-    onClick: b,
-    children: v
+    onClick: v,
+    children: b
   }), I = () => null == t ? null : (0, r.jsx)(i.zxk, {
     className: l.back,
     color: i.zxk.Colors.PRIMARY,

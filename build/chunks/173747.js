@@ -19,7 +19,7 @@ var r, i = n(392711),
   g = n(780570),
   E = n(804739);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,7 +27,7 @@ function v(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let b = new Set,
+let v = new Set,
   y = {},
   O = new Set,
   I = {},
@@ -82,7 +82,7 @@ function M(e) {
   let {
     branchId: t
   } = e;
-  b.add(t)
+  v.add(t)
 }
 
 function k(e) {
@@ -92,7 +92,7 @@ function k(e) {
     locale: r,
     build: i
   } = e;
-  b.delete(n);
+  v.delete(n);
   let o = i.manifests.map(e => {
       let {
         id: t
@@ -113,7 +113,7 @@ function j(e) {
   let {
     branchId: t
   } = e;
-  b.delete(t), O.add(t)
+  v.delete(t), O.add(t)
 }
 
 function U(e) {
@@ -138,7 +138,7 @@ function B(e) {
   null == I[t] && delete I[t]
 }
 
-function V(e) {
+function F(e) {
   let {
     branches: t
   } = e, n = {};
@@ -160,7 +160,7 @@ function V(e) {
   P(A)
 }
 
-function F() {
+function V() {
   P(C)
 }
 
@@ -194,7 +194,7 @@ class W extends(r = a.ZP.Store) {
     return O.has(t)
   }
   isFetching(e, t) {
-    return b.has(t)
+    return v.has(t)
   }
   needsToFetchBuildSize(e) {
     return !I.hasOwnProperty(e)
@@ -203,7 +203,7 @@ class W extends(r = a.ZP.Store) {
     return I[e]
   }
 }
-v(W, "displayName", "ApplicationBuildStore");
+b(W, "displayName", "ApplicationBuildStore");
 let Y = new W(l.Z, {
   CONNECTION_OPEN: w,
   GAMES_DATABASE_UPDATE: L,
@@ -213,8 +213,8 @@ let Y = new W(l.Z, {
   APPLICATION_BUILD_SIZE_FETCH_START: U,
   APPLICATION_BUILD_SIZE_FETCH_SUCCESS: G,
   APPLICATION_BUILD_SIZE_FETCH_FAIL: B,
-  APPLICATION_BRANCHES_FETCH_SUCCESS: V,
-  APPLICATION_BRANCHES_FETCH_FAIL: F,
+  APPLICATION_BRANCHES_FETCH_SUCCESS: F,
+  APPLICATION_BRANCHES_FETCH_FAIL: V,
   CONNECTION_CLOSED: Z,
   LOGOUT: Z,
   SKU_PURCHASE_SUCCESS: H

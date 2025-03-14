@@ -34,7 +34,7 @@ let {
   PROJECT_ENV: m,
   ASSET_ENDPOINT: g,
   CDN_HOST: E
-} = window.GLOBAL_ENV, v = Object.values(d.og), b = decodeURIComponent(_.ANM.STICKER_ASSET("[\\d]+", "(".concat(v.join("|"), ")"))), y = RegExp("(".concat(location.protocol).concat(g, "|").concat(location.protocol).concat(h, ")(").concat(b, ")"), "ig"), O = RegExp("".concat(location.protocol).concat(p, "(").concat(b, ")"), "ig"), I = e => {
+} = window.GLOBAL_ENV, b = Object.values(d.og), v = decodeURIComponent(_.ANM.STICKER_ASSET("[\\d]+", "(".concat(b.join("|"), ")"))), y = RegExp("(".concat(location.protocol).concat(g, "|").concat(location.protocol).concat(h, ")(").concat(v, ")"), "ig"), O = RegExp("".concat(location.protocol).concat(p, "(").concat(v, ")"), "ig"), I = e => {
   if (null != e.cover_sticker_id) {
     let t = e.stickers.find(t => t.id === e.cover_sticker_id);
     if (null != t) return t

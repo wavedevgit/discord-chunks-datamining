@@ -25,8 +25,8 @@ var r = n(200651),
   m = n(769654),
   g = n(592125),
   E = n(496675),
-  v = n(944486),
-  b = n(626135),
+  b = n(944486),
+  v = n(626135),
   y = n(585483),
   O = n(591759),
   I = n(787025),
@@ -131,7 +131,7 @@ function M(e) {
   } = e, o = w(e, ["guild", "application"]);
   let a = T.NW.string(T.t.se5gLi);
   i.useEffect(() => {
-    b.default.track(S.rMx.OAUTH2_AUTHORIZE_SUCCESS_VIEWED, {
+    v.default.track(S.rMx.OAUTH2_AUTHORIZE_SUCCESS_VIEWED, {
       application_id: null == n ? void 0 : n.id
     })
   }, [null == n ? void 0 : n.id]);
@@ -163,23 +163,23 @@ function k(e) {
   let {
     onClose: o
   } = w(e, ["guild", "application"]), a = i.useCallback(() => {
-    (null == t ? void 0 : t.id) != null && ((0, m.X)(null == t ? void 0 : t.id), null == o || o(), b.default.track(S.rMx.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED, {
+    (null == t ? void 0 : t.id) != null && ((0, m.X)(null == t ? void 0 : t.id), null == o || o(), v.default.track(S.rMx.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED, {
       application_id: null == n ? void 0 : n.id,
       guild_id: null == t ? void 0 : t.id
     }))
   }, [o, null == n ? void 0 : n.id, null == t ? void 0 : t.id]), s = p.z8.getField("entrypoint"), l = i.useCallback(() => {
-    null == o || o(), b.default.track(S.rMx.OAUTH2_AUTHORIZE_SUCCESS_CLOSE_CLICKED, {
+    null == o || o(), v.default.track(S.rMx.OAUTH2_AUTHORIZE_SUCCESS_CLOSE_CLICKED, {
       application_id: null == n ? void 0 : n.id
     })
   }, [o, null == n ? void 0 : n.id]), u = window.location.pathname.startsWith(S.Z5c.APPLICATION_DIRECTORY), d = i.useCallback(() => {
     (null == n ? void 0 : n.id) != null && (null == o || o(), null != s && (0, h.uL)(""), setImmediate(() => {
       y.S.dispatchToLastSubscribed(S.CkL.OPEN_APP_LAUNCHER, {
         applicationId: n.id
-      }), b.default.track(S.rMx.OAUTH2_AUTHORIZE_SUCCESS_OPEN_APP_CLICKED, {
+      }), v.default.track(S.rMx.OAUTH2_AUTHORIZE_SUCCESS_OPEN_APP_CLICKED, {
         application_id: n.id
       })
     }))
-  }, [null == n ? void 0 : n.id, o, s]), _ = (0, c.e7)([v.Z, g.Z], () => g.Z.getChannel(v.Z.getChannelId())), O = (0, c.e7)([E.Z], () => E.Z.can(S.Plq.SEND_MESSAGES, _)), I = null != t, A = null == t && O && (!u || null != s);
+  }, [null == n ? void 0 : n.id, o, s]), _ = (0, c.e7)([b.Z, g.Z], () => g.Z.getChannel(b.Z.getChannelId())), O = (0, c.e7)([E.Z], () => E.Z.can(S.Plq.SEND_MESSAGES, _)), I = null != t, A = null == t && O && (!u || null != s);
   return null != t || null != o ? (0, r.jsxs)("div", {
     className: N.buttonsContainer,
     children: [null != o ? I || A ? (0, r.jsx)(f.zxk, {

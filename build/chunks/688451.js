@@ -54,11 +54,11 @@ function d(e, t) {
 }
 
 function f(e) {
-  return V && e instanceof Map
+  return F && e instanceof Map
 }
 
 function _(e) {
-  return F && e instanceof Set
+  return V && e instanceof Set
 }
 
 function p(e) {
@@ -96,12 +96,12 @@ function E(e) {
   return null == e || "object" != typeof e || Object.isFrozen(e)
 }
 
-function v(e) {
+function b(e) {
   var t = X[e];
   return t || r(18, e), t
 }
 
-function b(e, t) {
+function v(e, t) {
   X[e] || (X[e] = t)
 }
 
@@ -110,7 +110,7 @@ function y() {
 }
 
 function O(e, t) {
-  t && (v("Patches"), e.u = [], e.s = [], e.v = t)
+  t && (b("Patches"), e.u = [], e.s = [], e.v = t)
 }
 
 function I(e) {
@@ -140,7 +140,7 @@ function A(e, t) {
   t._ = t.p.length;
   var n = t.p[0],
     i = void 0 !== e && e !== n;
-  return t.h.O || v("ES5").S(t, e, i), i ? (n[Y].P && (I(t), r(4)), o(e) && (e = C(t, e), t.l || P(t, e)), t.u && v("Patches").M(n[Y].t, e, t.u, t.s)) : e = C(t, n, []), I(t), t.u && t.v(t.u, t.s), e !== H ? e : void 0
+  return t.h.O || b("ES5").S(t, e, i), i ? (n[Y].P && (I(t), r(4)), o(e) && (e = C(t, e), t.l || P(t, e)), t.u && b("Patches").M(n[Y].t, e, t.u, t.s)) : e = C(t, n, []), I(t), t.u && t.v(t.u, t.s), e !== H ? e : void 0
 }
 
 function C(e, t, n) {
@@ -158,7 +158,7 @@ function C(e, t, n) {
       s = !1;
     3 === r.i && (o = new Set(i), i.clear(), s = !0), a(o, function(t, o) {
       return R(e, r, i, t, o, n, s)
-    }), P(e, i, !1), n && e.u && v("Patches").N(r, n, e.u, e.s)
+    }), P(e, i, !1), n && e.u && b("Patches").N(r, n, e.u, e.s)
   }
   return r.o
 }
@@ -202,7 +202,7 @@ function x(e) {
 }
 
 function M(e, t, n) {
-  var r = f(t) ? v("MapSet").F(t, n) : _(t) ? v("MapSet").T(t, n) : e.O ? function(e, t) {
+  var r = f(t) ? b("MapSet").F(t, n) : _(t) ? b("MapSet").T(t, n) : e.O ? function(e, t) {
     var n = Array.isArray(e),
       r = {
         i: +!!n,
@@ -224,7 +224,7 @@ function M(e, t, n) {
       s = a.revoke,
       l = a.proxy;
     return r.k = l, r.j = s, l
-  }(t, n) : v("ES5").J(t, n);
+  }(t, n) : b("ES5").J(t, n);
   return (n ? n.A : y()).p.push(r), r
 }
 
@@ -235,7 +235,7 @@ function k(e) {
       var n, r = t[Y],
         i = s(t);
       if (r) {
-        if (!r.P && (r.i < 4 || !v("ES5").K(r))) return r.t;
+        if (!r.P && (r.i < 4 || !b("ES5").K(r))) return r.t;
         r.I = !0, n = j(t, i), r.I = !1
       } else n = j(t, i);
       return a(n, function(t, i) {
@@ -260,8 +260,8 @@ n.d(t, {
   mv: () => i
 });
 var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
-  V = "undefined" != typeof Map,
-  F = "undefined" != typeof Set,
+  F = "undefined" != typeof Map,
+  V = "undefined" != typeof Set,
   Z = "undefined" != typeof Proxy && void 0 !== Proxy.revocable && "undefined" != typeof Reflect,
   H = B ? Symbol.for("immer-nothing") : ((U = {})["immer-nothing"] = !0, U),
   W = B ? Symbol.for("immer-draftable") : "__$immer_draftable",
@@ -377,7 +377,7 @@ var ee = new(function() {
           if (void 0 === (a = n(e)) && (a = e), a === H && (a = void 0), t.D && m(a, !0), i) {
             var f = [],
               _ = [];
-            v("Patches").M(e, a, f, _), i(f, _)
+            b("Patches").M(e, a, f, _), i(f, _)
           }
           return a
         }
@@ -419,7 +419,7 @@ var ee = new(function() {
         }
       }
       n > -1 && (t = t.slice(n + 1));
-      var o = v("Patches").$;
+      var o = b("Patches").$;
       return i(e) ? o(e, t) : this.produce(e, function(e) {
         return o(e, t)
       })

@@ -20,8 +20,8 @@ var i = n(120356),
   m = n(541716),
   g = n(379357),
   E = n(358696),
-  v = n(649700),
-  b = n(810568),
+  b = n(649700),
+  v = n(810568),
   y = n(168524),
   O = n(769654),
   I = n(960870),
@@ -42,8 +42,8 @@ var i = n(120356),
   U = n(228168),
   G = n(981631),
   B = n(701488),
-  V = n(388032),
-  F = n(203396);
+  F = n(388032),
+  V = n(203396);
 
 function Z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -100,13 +100,13 @@ function K(e) {
   } = (0, _.ZP)(f.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
     profileType: J
   } = (0, A.z)(), $ = {
-    [F.fullSize]: J === U.y0.FULL_SIZE
-  }, ee = (0, v.Z)({
+    [V.fullSize]: J === U.y0.FULL_SIZE
+  }, ee = (0, b.Z)({
     activity: i,
     user: t
   }), et = (0, y.Z)(H({
     location: "UserProfileActivityCard",
-    source: b.m1.UserProfile,
+    source: v.m1.UserProfile,
     trackEntryPointImpression: !0
   }, (0, j.nK)({
     user: t,
@@ -145,7 +145,7 @@ function K(e) {
       image: ea,
       smallImage: es,
       size: E.J.SIZE_60,
-      className: F.clickableImage,
+      className: V.clickableImage,
       aspectRatio: e,
       onClick: e => {
         en({
@@ -156,11 +156,11 @@ function K(e) {
   }, eu = () => {
     var e;
     return (0, d.Z)(i) && null != K ? (0, r.jsxs)("div", {
-      className: F.voiceChannelText,
+      className: V.voiceChannelText,
       children: [(0, r.jsx)(s.gj8, {
         size: "xxs",
         color: s.TVs.colors.TEXT_NORMAL,
-        className: F.voiceIcon
+        className: V.voiceIcon
       }), (0, r.jsx)(D.Z, {
         variant: "heading-sm/semibold",
         text: K.name
@@ -174,7 +174,7 @@ function K(e) {
     })
   }, ed = () => (0, d.Z)(i) && null != W ? (0, r.jsx)(D.Z, {
     variant: "text-xs/normal",
-    text: V.NW.formatToPlainString(V.t["hq/Qzc"], {
+    text: F.NW.formatToPlainString(F.t["hq/Qzc"], {
       guildName: W.name
     }),
     onClick: () => {
@@ -197,27 +197,27 @@ function K(e) {
   }, e_ = () => {
     var e, t, n, o;
     return (null === (e = i.party) || void 0 === e ? void 0 : e.size) == null && i.application_id === B.Zc ? (0, r.jsxs)("div", {
-      className: F.gameState,
+      className: V.gameState,
       children: [(0, r.jsx)(D.Z, {
         variant: "text-xs/normal",
         text: i.state
       }), (0, r.jsx)(D.Z, {
         variant: "text-xs/normal",
-        text: V.NW.formatToPlainString(V.t["u//9Bw"], {
+        text: F.NW.formatToPlainString(F.t["u//9Bw"], {
           count: "0",
           max: null !== (o = null == Z ? void 0 : Z.getMaxParticipants()) && void 0 !== o ? o : 0
         })
       })]
     }) : (0, c.Z)(i) && (null === (t = i.party) || void 0 === t ? void 0 : t.size) != null && (null === (n = i.party) || void 0 === n ? void 0 : n.size.length) >= 2 ? (0, r.jsxs)("div", {
-      className: F.gameState,
+      className: V.gameState,
       children: [(0, r.jsx)(D.Z, {
         variant: "text-xs/normal",
         text: i.state
       }), (0, r.jsx)(D.Z, {
         variant: "text-xs/normal",
-        text: 0 === i.party.size[1] ? V.NW.formatToPlainString(V.t.IM4J4e, {
+        text: 0 === i.party.size[1] ? F.NW.formatToPlainString(F.t.IM4J4e, {
           count: i.party.size[0]
-        }) : V.NW.formatToPlainString(V.t["u//9Bw"], {
+        }) : F.NW.formatToPlainString(F.t["u//9Bw"], {
           count: i.party.size[0],
           max: i.party.size[1]
         })
@@ -239,7 +239,7 @@ function K(e) {
   }, eh = () => null == el ? (0, r.jsxs)("div", {
     children: [eu(), ed(), ef()]
   }) : (0, r.jsxs)(s.P3F, {
-    className: F.clickableText,
+    className: V.clickableText,
     onClick: e => {
       en({
         action: "PRESS_TEXT"
@@ -253,7 +253,7 @@ function K(e) {
     onAction: en,
     onClose: q
   }), eg = () => t.id === n.id ? null : (0, r.jsx)("div", {
-    className: o()(F.actions, $),
+    className: o()(V.actions, $),
     children: (0, r.jsx)(C.Z, {
       activity: i,
       user: t,
@@ -265,7 +265,7 @@ function K(e) {
     value: X,
     children: (0, r.jsxs)(P.Z, {
       ref: er,
-      className: o()(F.card, z),
+      className: o()(V.card, z),
       onAction: en,
       onClose: q,
       children: [(0, r.jsx)(w.Z, Y(H({}, eo), {
@@ -278,15 +278,15 @@ function K(e) {
           appContext: Q
         })
       })), (0, r.jsxs)("div", {
-        className: F.body,
+        className: V.body,
         children: [(0, r.jsxs)("div", {
-          className: o()(F.content, $),
+          className: o()(V.content, $),
           children: [!t.bot && ec(), (0, r.jsxs)("div", {
-            className: F.details,
+            className: V.details,
             children: [eh(), !t.bot && (0, r.jsx)(R.Z, {
               user: t,
               activity: i,
-              className: F.badges
+              className: V.badges
             }), ep()]
           }), J === U.y0.FULL_SIZE && eg()]
         }), em()]

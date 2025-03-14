@@ -65,25 +65,25 @@ function g(e, t) {
 }
 
 function E(e, t) {
-  let n = b(e),
+  let n = v(e),
     r = y(e);
   return null != n && null != r && (h[e] = p(f({}, n), {
     message: (0, a.wi)(r, t)
   }), !0)
 }
 
-function v(e, t) {
+function b(e, t) {
   let n = y(e);
   return (null == n ? void 0 : n.id) === t && (delete h[e], !0)
 }
 
-function b(e) {
+function v(e) {
   return h[e]
 }
 
 function y(e) {
   var t;
-  return null === (t = b(e)) || void 0 === t ? void 0 : t.message
+  return null === (t = v(e)) || void 0 === t ? void 0 : t.message
 }
 
 function O() {
@@ -108,7 +108,7 @@ function T(e) {
 }
 
 function N(e) {
-  return v(e.channelId, e.id)
+  return b(e.channelId, e.id)
 }
 
 function A(e) {

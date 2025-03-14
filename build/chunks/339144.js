@@ -75,7 +75,7 @@ let I = i.memo(function(e) {
       let e = null != T && (0, y.vd)(T.type) ? T : null,
         t = null != e ? e.getGuildId() : w;
       if (G && null != D && null != _.Z.getVoiceChannelId()) {
-        (0, b.Z)(D.pid);
+        (0, m.s)("Activity Panel"), (0, b.Z)(D.pid);
         return
       }(0, s.ZDy)(async () => {
         let {

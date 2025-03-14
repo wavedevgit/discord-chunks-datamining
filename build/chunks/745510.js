@@ -70,7 +70,7 @@ function m(e) {
     baseConfig: c,
     addClickListener: d,
     removeClickListener: m
-  } = e, g = (0, o.uR)(n, l), E = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), v = i.useMemo(() => E ? p : {
+  } = e, g = (0, o.uR)(n, l), E = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), b = i.useMemo(() => E ? p : {
     confettiCanvas: n,
     cannon: g,
     createConfetti: (e, t) => g.createConfetti(u({}, c, e), t),
@@ -105,7 +105,7 @@ function m(e) {
     removeClickListener: m
   }, [d, c, g, n, E, m]);
   return (0, r.jsx)(h.Provider, {
-    value: v,
+    value: b,
     children: t
   })
 }

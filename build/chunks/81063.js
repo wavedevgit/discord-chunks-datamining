@@ -45,9 +45,9 @@ let d = "mp",
       serialize: e => e
     }
   },
-  v = {};
+  b = {};
 
-function b(e) {
+function v(e) {
   return Date.now() - e > f
 }
 async function y(e) {
@@ -67,7 +67,7 @@ async function y(e) {
 
 function O(e) {
   let t = s.Z.getApplicationAssets(e);
-  return null == t || b(t.lastUpdated) ? y(e) : Promise.resolve(t)
+  return null == t || v(t.lastUpdated) ? y(e) : Promise.resolve(t)
 }
 
 function I(e, t) {
@@ -97,7 +97,7 @@ async function T(e) {
   return null == t ? void 0 : t.assets
 }
 async function N(e, t) {
-  let n = t.filter(e => null != e && !Object.prototype.hasOwnProperty.call(v, e) && null == v[e]);
+  let n = t.filter(e => null != e && !Object.prototype.hasOwnProperty.call(b, e) && null == b[e]);
   if (0 === n.length) return;
   let {
     body: r
@@ -113,7 +113,7 @@ async function N(e, t) {
       url: e,
       external_asset_path: t
     }
-    of r) v[e] = t
+    of r) b[e] = t
 }
 
 function A(e, t) {
@@ -122,7 +122,7 @@ function A(e, t) {
     for (let r = 0; r < e.length; r++) {
       let i = e[r];
       if (null == i) continue;
-      let o = Object.prototype.hasOwnProperty.call(v, i) ? v[i] : void 0;
+      let o = Object.prototype.hasOwnProperty.call(b, i) ? b[i] : void 0;
       null != o && (t[r] = I(d, o), n++)
     }
   return n === e.length

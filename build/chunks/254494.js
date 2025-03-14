@@ -45,8 +45,8 @@ let d = e => {
       getScrollOffsetForIndex: m,
       categoryHeight: g,
       onScroll: E,
-      renderCategoryListItem: v,
-      rowCountBySection: b,
+      renderCategoryListItem: b,
+      rowCountBySection: v,
       renderSection: y
     } = e, O = c.useStore(e => e.activeCategoryIndex);
     d({
@@ -64,7 +64,7 @@ let d = e => {
           null === (r = n.current) || void 0 === r || r.scrollToSectionTop(e)
         }
       }, [n, c]),
-      S = i.useCallback(e => v(o[e], e, () => I(e), O === e), [O, o, I, v]),
+      S = i.useCallback(e => b(o[e], e, () => I(e), O === e), [O, o, I, b]),
       T = i.useMemo(() => "function" == typeof g ? e => g(o[e], e) : g, [o, g]);
     return (0, r.jsxs)("div", {
       className: a()(u.wrapper, _),
@@ -76,7 +76,7 @@ let d = e => {
         rowCount: h,
         rowHeight: T,
         hideScrollbar: !0,
-        rowCountBySection: b,
+        rowCountBySection: v,
         renderSection: y
       }), null == f ? void 0 : f(I)]
     })

@@ -90,7 +90,7 @@ let h = {
     WRAP: l.wrap,
     WRAP_REVERSE: l.wrapReverse
   },
-  v = e => {
+  b = e => {
     var {
       children: t,
       className: n,
@@ -116,7 +116,7 @@ let h = {
       children: t
     }))
   },
-  b = e => {
+  v = e => {
     var {
       children: t,
       className: n,
@@ -126,19 +126,19 @@ let h = {
       wrap: c = E.NO_WRAP,
       shrink: d = 1,
       grow: p = 1,
-      basis: v = "auto",
-      style: b
+      basis: b = "auto",
+      style: v
     } = e, y = _(e, ["children", "className", "direction", "justify", "align", "wrap", "shrink", "grow", "basis", "style"]);
     return (0, r.jsx)("div", f(u({
       style: u({
         flexShrink: d,
         flexGrow: p,
-        flexBasis: v
-      }, b),
+        flexBasis: b
+      }, v),
       className: a()(s.flex, i, o, l, c, n)
     }, y), {
       children: t
     }))
   };
-b.Child = v, b.Direction = h, b.Align = g, b.Justify = m, b.Wrap = E;
-let y = b
+v.Child = b, v.Direction = h, v.Align = g, v.Justify = m, v.Wrap = E;
+let y = v

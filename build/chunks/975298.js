@@ -24,7 +24,7 @@ function E() {
     forceFetch: e
   } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
     forceFetch: !1
-  }, t = (0, l.e7)([d.default], () => d.default.getCurrentUser()), n = (0, l.Wu)([_.Z], () => _.Z.getFractionalPremium(!1)), i = (0, l.Wu)([_.Z], () => _.Z.getUnactivatedFractionalPremiumUnits()), a = (0, l.e7)([f.ZP], () => f.ZP.getPremiumTypeSubscription()), [E, v] = r.useState({
+  }, t = (0, l.e7)([d.default], () => d.default.getCurrentUser()), n = (0, l.Wu)([_.Z], () => _.Z.getFractionalPremium(!1)), i = (0, l.Wu)([_.Z], () => _.Z.getUnactivatedFractionalPremiumUnits()), a = (0, l.e7)([f.ZP], () => f.ZP.getPremiumTypeSubscription()), [E, b] = r.useState({
     fractionalState: g.a$.NONE,
     startsAt: s()(0),
     endsAt: s()(0),
@@ -37,7 +37,7 @@ function E() {
     }))
   }), r.useEffect(() => {
     if (null == t || 0 === n.length && 0 === i.length) {
-      v(e => e.endsAt.isSame(s()(0)) && e.fractionalState === g.a$.NONE ? e : {
+      b(e => e.endsAt.isSame(s()(0)) && e.fractionalState === g.a$.NONE ? e : {
         fractionalState: g.a$.NONE,
         startsAt: s()(0),
         endsAt: s()(0),
@@ -58,7 +58,7 @@ function E() {
     }
     let r = e.length > 0,
       l = r ? g.a$.FP_ONLY : g.a$.NONE;
-    null != a && a.status === m.O0b.PAUSED && (l = g.a$.FP_SUB_PAUSED), v({
+    null != a && a.status === m.O0b.PAUSED && (l = g.a$.FP_SUB_PAUSED), b({
       fractionalState: l,
       startsAt: r ? s()(e[0].startsAt) : s()(0),
       endsAt: r ? s()((0, h.N1)(e[0].endsAt, i)) : s()(0),

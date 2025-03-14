@@ -26,9 +26,9 @@ function h(e) {
     className: g,
     onClose: E
   } = e, {
-    live: v,
-    stream: b
-  } = (0, c.Z)(t.id), [y] = v, {
+    live: b,
+    stream: v
+  } = (0, c.Z)(t.id), [y] = b, {
     voiceChannel: O
   } = (0, u.Z)({
     userId: t.id,
@@ -46,7 +46,7 @@ function h(e) {
   } = (0, l.o)({
     location: "UserProfileFeaturedActivity"
   }), A = T || N;
-  return S || null == b ? S || null == y ? A && !S && null != O ? (0, r.jsx)(_.Z, {
+  return S || null == v ? S || null == y ? A && !S && null != O ? (0, r.jsx)(_.Z, {
     user: t,
     voiceChannel: O,
     className: g,
@@ -62,7 +62,7 @@ function h(e) {
     location: "UserProfileFeaturedActivity",
     user: t,
     currentUser: n,
-    stream: b,
+    stream: v,
     profileGuildId: null == h ? void 0 : h.guildId,
     className: g,
     onClose: E

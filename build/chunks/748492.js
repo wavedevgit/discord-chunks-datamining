@@ -23,8 +23,8 @@ var i = n(120356),
   m = n(788983),
   g = n(189771),
   E = n(560688),
-  v = n(618158),
-  b = n(922745),
+  b = n(618158),
+  v = n(922745),
   y = n(871499),
   O = n(402113),
   I = n(800965),
@@ -67,7 +67,7 @@ function k(e) {
     idle: D,
     selectedParticipant: M,
     embeddedActivity: k
-  } = e, j = (0, u.bp)() === P.IlC.POPOUT, U = (0, s.e7)([N.Z], () => N.Z.isVideoEnabled()), G = (0, s.e7)([N.Z], () => Object.values(N.Z.getVideoDevices())[0]), B = !1 === (null === (t = null == G ? void 0 : G.disabled) || void 0 === t || t), V = (0, f.Z)([o])[0], F = (0, g.Z)(i), {
+  } = e, j = (0, u.bp)() === P.IlC.POPOUT, U = (0, s.e7)([N.Z], () => N.Z.isVideoEnabled()), G = (0, s.e7)([N.Z], () => Object.values(N.Z.getVideoDevices())[0]), B = !1 === (null === (t = null == G ? void 0 : G.disabled) || void 0 === t || t), F = (0, f.Z)([o])[0], V = (0, g.Z)(i), {
     parentAnalyticsLocation: Z
   } = (0, d.ZP)(), H = e => {
     (0, p.v)(Z, p.d.CAMERA, e), c.Z.setVideoEnabled(e)
@@ -83,11 +83,11 @@ function k(e) {
     onMouseLeave: S,
     children: [(0, r.jsx)("div", {
       className: x.topControls,
-      children: (0, r.jsx)(b.r, {
+      children: (0, r.jsx)(v.r, {
         idle: D,
-        title: null !== (n = null == V ? void 0 : V.name) && void 0 !== n ? n : i.name,
+        title: null !== (n = null == F ? void 0 : F.name) && void 0 !== n ? n : i.name,
         onJumpToChannel: C,
-        preventIdleComponent: v.Z
+        preventIdleComponent: b.Z
       })
     }), (0, r.jsxs)("div", {
       className: x.bottomControls,
@@ -100,10 +100,10 @@ function k(e) {
           className: L.leftPipIcon,
           enabled: U,
           cameraUnavailable: !B,
-          hasPermission: F,
+          hasPermission: V,
           onChange: H,
           onCameraUnavailable: W
-        }), (0, r.jsx)(v.Z, {
+        }), (0, r.jsx)(b.Z, {
           children: (0, r.jsx)(_.Z, {
             channelId: i.id,
             guildId: i.getGuildId(),
@@ -156,11 +156,11 @@ function j(e) {
     onDoubleClick: u,
     children: [(0, r.jsx)("div", {
       className: x.topControls,
-      children: (0, r.jsx)(b.r, {
+      children: (0, r.jsx)(v.r, {
         idle: d,
         title: null !== (t = null == h ? void 0 : h.name) && void 0 !== t ? t : n.name,
         onJumpToChannel: u,
-        preventIdleComponent: v.Z
+        preventIdleComponent: b.Z
       })
     }), (0, r.jsxs)("div", {
       className: x.bottomControls,
@@ -222,11 +222,11 @@ function G(e) {
         color: "currentColor",
         className: L.menuIcon
       }), s && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(b.r, {
+        children: [(0, r.jsx)(v.r, {
           idle: !s,
           title: null !== (t = null == g ? void 0 : g.name) && void 0 !== t ? t : u.name,
           onJumpToChannel: d,
-          preventIdleComponent: v.Z
+          preventIdleComponent: b.Z
         }), (0, r.jsxs)("div", {
           className: L.pipHeaderButtonsRight,
           children: [h ? null : (0, r.jsx)(M, {

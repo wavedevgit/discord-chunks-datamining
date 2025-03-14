@@ -5,7 +5,7 @@ n.d(t, {
   Jv: () => p,
   M0: () => h,
   Qj: () => m,
-  VO: () => v,
+  VO: () => b,
   YO: () => E
 }), n(474991), n(398202), n(301563);
 var r = n(592125),
@@ -65,7 +65,7 @@ function E(e) {
   return !!e.isPrivate() || o.Z.can(s.Plq.VIEW_CHANNEL, e)
 }
 
-function v(e) {
+function b(e) {
   let {
     guildId: t,
     channelId: n

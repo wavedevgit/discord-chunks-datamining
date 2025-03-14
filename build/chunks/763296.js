@@ -26,8 +26,8 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 let E = new Map,
-  v = new Map,
-  b = new Set,
+  b = new Map,
+  v = new Set,
   y = 0,
   O = 0,
   I = new Set,
@@ -35,11 +35,11 @@ let E = new Map,
   T = !1;
 
 function N() {
-  E.clear(), v.clear(), S.clear(), T = !1, O = 0, y = 0
+  E.clear(), b.clear(), S.clear(), T = !1, O = 0, y = 0
 }
 
 function A() {
-  v.clear(), S.clear()
+  b.clear(), S.clear()
 }
 
 function C() {
@@ -105,8 +105,8 @@ function k(e) {
   let {
     soundId: i,
     userId: o
-  } = e, a = (null !== (n = v.get(i)) && void 0 !== n ? n : 0) + 1, s = (null !== (r = S.get(o)) && void 0 !== r ? r : 0) + 1;
-  v.set(i, a), S.set(o, s), o !== (null === (t = u.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) && (T = !0)
+  } = e, a = (null !== (n = b.get(i)) && void 0 !== n ? n : 0) + 1, s = (null !== (r = S.get(o)) && void 0 !== r ? r : 0) + 1;
+  b.set(i, a), S.set(o, s), o !== (null === (t = u.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) && (T = !0)
 }
 
 function j(e) {
@@ -114,8 +114,8 @@ function j(e) {
   let {
     soundId: r,
     userId: i
-  } = e, o = (null !== (t = v.get(r)) && void 0 !== t ? t : 0) - 1, a = (null !== (n = S.get(i)) && void 0 !== n ? n : 0) - 1;
-  o <= 0 ? v.delete(r) : v.set(r, o), a <= 0 ? S.delete(i) : S.set(i, a)
+  } = e, o = (null !== (t = b.get(r)) && void 0 !== t ? t : 0) - 1, a = (null !== (n = S.get(i)) && void 0 !== n ? n : 0) - 1;
+  o <= 0 ? b.delete(r) : b.set(r, o), a <= 0 ? S.delete(i) : S.set(i, a)
 }
 let U = o().debounce(e => {
   d.default.track(h.rMx.UPDATE_SOUNDBOARD_SETTINGS, {
@@ -135,11 +135,11 @@ function G(e) {
 function B(e) {
   var t, n;
   let r = null !== (n = null == e ? void 0 : null === (t = e.audioContextSettings) || void 0 === t ? void 0 : t.user) && void 0 !== n ? n : {};
-  for (let [e, t] of Object.entries(r)) t.soundboardMuted ? b.add(e) : b.delete(e);
-  for (let e of b.keys()) null == r[e] && b.delete(e)
+  for (let [e, t] of Object.entries(r)) t.soundboardMuted ? v.add(e) : v.delete(e);
+  for (let e of v.keys()) null == r[e] && v.delete(e)
 }
 
-function V(e) {
+function F(e) {
   let {
     settings: t
   } = e, {
@@ -152,18 +152,18 @@ function V(e) {
   } else n === m.yP.PRELOADED_USER_SETTINGS && B(r)
 }
 
-function F(e) {
+function V(e) {
   let {
     userId: t
   } = e;
-  b.has(t) ? b.delete(t) : b.add(t)
+  v.has(t) ? v.delete(t) : v.add(t)
 }
 
 function Z(e) {
   let {
     soundboardStoreState: t
   } = e;
-  E = new Map(_.default.entries(t.soundboardSounds)), I = new Set(t.favoritedSoundIds), b = new Set(t.localSoundboardMutes)
+  E = new Map(_.default.entries(t.soundboardSounds)), I = new Set(t.favoritedSoundIds), v = new Set(t.localSoundboardMutes)
 }
 class H extends(r = a.ZP.Store) {
   initialize() {
@@ -173,7 +173,7 @@ class H extends(r = a.ZP.Store) {
     return {
       soundboardSounds: Object.fromEntries(E),
       favoritedSoundIds: Array.from(I),
-      localSoundboardMutes: Array.from(b)
+      localSoundboardMutes: Array.from(v)
     }
   }
   getSounds() {
@@ -209,7 +209,7 @@ class H extends(r = a.ZP.Store) {
     return null != t && t > 0
   }
   isPlayingSound(e) {
-    return null != v.get(e)
+    return null != b.get(e)
   }
   isFavoriteSound(e) {
     return I.has(e)
@@ -218,7 +218,7 @@ class H extends(r = a.ZP.Store) {
     return I
   }
   isLocalSoundboardMuted(e) {
-    return b.has(e)
+    return v.has(e)
   }
   hasHadOtherUserPlaySoundInSession() {
     return T
@@ -238,12 +238,12 @@ let W = new H(s.Z, {
   GUILD_SOUNDBOARD_SOUND_PLAY_END: j,
   USER_SOUNDBOARD_SET_VOLUME: G,
   VOICE_CHANNEL_SELECT: A,
-  USER_SETTINGS_PROTO_UPDATE: V,
+  USER_SETTINGS_PROTO_UPDATE: F,
   SOUNDBOARD_FETCH_DEFAULT_SOUNDS: x,
   SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS: M,
   SOUNDBOARD_SOUNDS_RECEIVED: R,
   GUILD_DELETE: P,
-  AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: F,
+  AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: V,
   OVERLAY_INITIALIZE: Z,
   GUILD_SOUNDBOARD_SOUNDS_UPDATE: D
 })

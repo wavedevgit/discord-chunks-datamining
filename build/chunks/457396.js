@@ -72,9 +72,9 @@ let W = "NitroTabButton",
         }
         return i
       }(e, ["selected", "route", "locationState"]);
-    let Q = (0, o.e7)([f.default], () => f.default.getCurrentUser()),
-      X = (0, o.e7)([m.ZP], () => m.ZP.getPremiumTypeSubscription()),
-      J = (0, _.Qo)(Q, X),
+    let X = (0, o.e7)([f.default], () => f.default.getCurrentUser()),
+      Q = (0, o.e7)([m.ZP], () => m.ZP.getPremiumTypeSubscription()),
+      J = (0, _.Qo)(X, Q),
       $ = (0, l.JA)("nitro"),
       ee = (0, S.N)(),
       et = (0, C.Ng)(),
@@ -194,7 +194,7 @@ let W = "NitroTabButton",
       Object.defineProperty(H, e, Object.getOwnPropertyDescriptor(F, e))
     }), H));
     if (!0 == (!0 === em && !0 === e_ && !1 === eE)) {
-      let e = _.ZP.isPremiumExactly(Q, D.p9.TIER_1) ? U.NW.string(U.t.tI65aW) : U.NW.string(U.t.toA0Ly);
+      let e = _.ZP.isPremiumExactly(X, D.p9.TIER_1) ? U.NW.string(U.t.tI65aW) : U.NW.string(U.t.toA0Ly);
       return (0, r.jsx)(x.s, {
         children: () => ev,
         description: e

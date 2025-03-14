@@ -24,8 +24,8 @@ function E(e) {
     id: t,
     user: n,
     application: E,
-    bot: v,
-    accountScopes: b,
+    bot: b,
+    accountScopes: v,
     showLogout: y,
     location: O,
     scopes: I
@@ -46,11 +46,11 @@ function E(e) {
     children: [(0, r.jsxs)(l.x, {
       variant: "text-lg/bold",
       color: "header-primary",
-      children: [E.name, null != v ? (0, r.jsx)(c.Z, {
+      children: [E.name, null != b ? (0, r.jsx)(c.Z, {
         className: g.botTag,
-        verified: null != v.public_flags && (0, d.yE)(v.public_flags, p.xW$.VERIFIED_BOT)
+        verified: null != b.public_flags && (0, d.yE)(b.public_flags, p.xW$.VERIFIED_BOT)
       }) : null]
-    }), b.length > 0 ? (0, r.jsx)(l.x, {
+    }), v.length > 0 ? (0, r.jsx)(l.x, {
       variant: "text-md/normal",
       color: "header-secondary",
       children: m.NW.string(m.t.jFbDnJ)
@@ -59,7 +59,7 @@ function E(e) {
       color: "header-secondary",
       children: m.NW.string(m.t["X+Fdpq"])
     })]
-  }), [b.length, E, v, I]);
+  }), [v.length, E, b, I]);
   return (0, r.jsxs)("header", {
     id: t,
     className: g.header,

@@ -38,11 +38,11 @@ let h = 10 * c.Z.Millis.SECOND,
   m = 1.5 * c.Z.Millis.SECOND,
   g = 5,
   E = {},
-  v = Object.freeze({});
+  b = Object.freeze({});
 
-function b(e) {
+function v(e) {
   var t;
-  return null !== (t = E[e]) && void 0 !== t ? t : v
+  return null !== (t = E[e]) && void 0 !== t ? t : b
 }
 
 function y(e) {
@@ -117,7 +117,7 @@ function T(e) {
   let {
     channelId: t,
     userId: n
-  } = e, r = p({}, b(t));
+  } = e, r = p({}, v(t));
   clearTimeout(r[n]), r[n] = S(t, n), E[t] = r
 }
 
@@ -150,15 +150,15 @@ function C() {
 }
 
 function R(e) {
-  let t = b(e);
-  return t === v ? 0 : Object.keys(t).length
+  let t = v(e);
+  return t === b ? 0 : Object.keys(t).length
 }
 class P extends(i = o.ZP.Store) {
   getTypingUsers(e) {
-    return b(e)
+    return v(e)
   }
   isTyping(e, t) {
-    return null != b(e)[t]
+    return null != v(e)[t]
   }
 }
 _(P, "displayName", "TypingStore");

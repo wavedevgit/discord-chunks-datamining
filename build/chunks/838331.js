@@ -42,7 +42,7 @@ function E(e) {
   return e
 }
 
-function v(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,8 +53,8 @@ function v(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -111,7 +111,7 @@ function R(e) {
     onChange: c,
     className: u,
     listClassName: g,
-    "aria-label": v,
+    "aria-label": b,
     multiSelect: O = !1,
     autoFocus: T = !1,
     maxVisibleItems: N = 5,
@@ -129,14 +129,14 @@ function R(e) {
   let U = n(w),
     G = 0 === U.length,
     B = i.useId(),
-    V = i.useCallback(() => new Promise(e => {
+    F = i.useCallback(() => new Promise(e => {
       let t = j.current;
       if (null == t) return e();
       t.scrollToTop({
         callback: () => requestAnimationFrame(() => e())
       })
     }), []),
-    F = i.useCallback(() => new Promise(e => {
+    V = i.useCallback(() => new Promise(e => {
       let t = j.current;
       if (null == t) return e();
       t.scrollToTop({
@@ -155,8 +155,8 @@ function R(e) {
       id: B,
       isEnabled: !0,
       useVirtualFocus: !0,
-      scrollToStart: V,
-      scrollToEnd: F,
+      scrollToStart: F,
+      scrollToEnd: V,
       setFocus: Z
     }),
     W = P ? d.Tv : d.lW;
@@ -171,7 +171,7 @@ function R(e) {
         return (0, r.jsxs)("div", {
           ref: n,
           role: "combobox",
-          "aria-label": v,
+          "aria-label": b,
           "aria-expanded": L,
           "aria-controls": L ? k : void 0,
           "aria-owns": k,
@@ -211,7 +211,7 @@ function R(e) {
                 setSelected: c,
                 itemToString: R
               },
-              children: (0, r.jsx)(W, b(E({}, s), {
+              children: (0, r.jsx)(W, v(E({}, s), {
                 style: {
                   maxHeight: N * (S + 6)
                 },
@@ -254,14 +254,14 @@ function w(e) {
     selected: _,
     setSelected: p,
     itemToString: h
-  } = i.useContext(C), g = h(n), v = f === g, O = null !== (t = null == d ? void 0 : d.selected) && void 0 !== t ? t : _.has(n), S = (0, l.JA)(g);
-  return (0, r.jsx)(u.P, b(E({
+  } = i.useContext(C), g = h(n), b = f === g, O = null !== (t = null == d ? void 0 : d.selected) && void 0 !== t ? t : _.has(n), S = (0, l.JA)(g);
+  return (0, r.jsx)(u.P, v(E({
     tag: "li",
     id: g,
     onClick: () => s ? null : p(n),
     [I]: n,
     className: a()(m.item, {
-      [m.focused]: v,
+      [m.focused]: b,
       [c]: O,
       [m.disabled]: s
     })

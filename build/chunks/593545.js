@@ -40,7 +40,7 @@ function E(e) {
   return e
 }
 
-function v(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,8 +51,8 @@ function v(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -138,7 +138,7 @@ function S(e) {
   });
   return (0, r.jsx)(l.ua7, {
     text: "".concat(t ? p.NW.string(p.t.iTcumZ) : p.NW.string(p.t.dcl9MT), " (").concat(a, ")"),
-    children: e => (0, r.jsxs)(l.P3F, b(E({}, e), {
+    children: e => (0, r.jsxs)(l.P3F, v(E({}, e), {
       className: h.toggleExpandSection,
       onClick: () => {
         n(!t)
@@ -159,19 +159,19 @@ function T(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.ua7, {
       text: o,
-      children: e => (0, r.jsx)("span", b(E({}, e), {
+      children: e => (0, r.jsx)("span", v(E({}, e), {
         className: a()(h.downloadSection, h.attachmentName),
         children: n
       }))
     }), (0, r.jsx)(l.ua7, {
       text: o,
-      children: e => (0, r.jsx)("span", b(E({}, e), {
+      children: e => (0, r.jsx)("span", v(E({}, e), {
         className: a()(h.downloadSection, h.formattedSize),
         children: (0, _.IC)(i)
       }))
     }), (0, r.jsx)(l.ua7, {
       text: "".concat(p.NW.string(p.t["1WjMbG"]), " ").concat(o),
-      children: e => (0, r.jsx)(l.eee, b(E({}, e), {
+      children: e => (0, r.jsx)(l.eee, v(E({}, e), {
         className: h.downloadSection,
         href: t,
         target: "_blank",
@@ -219,7 +219,7 @@ function N(e) {
     },
     children: e => (0, r.jsx)(l.ua7, {
       text: p.NW.string(p.t.utm4qq),
-      children: t => (0, r.jsx)(l.nF$, b(E({
+      children: t => (0, r.jsx)(l.nF$, v(E({
         size: "md",
         color: "currentColor"
       }, t, e), {
@@ -232,7 +232,7 @@ function N(e) {
 function A(e) {
   return (0, r.jsx)(l.ua7, {
     text: p.NW.string(p.t["0PQYk5"]),
-    children: t => (0, r.jsx)(l.P3F, b(E({}, t), {
+    children: t => (0, r.jsx)(l.P3F, v(E({}, t), {
       className: h.openFullPreviewSection,
       onClick: () => {
         (0, l.h7j)(t => (0, r.jsx)(R, E({}, e, t)))
@@ -258,15 +258,15 @@ function C(e) {
     setLanguage: m,
     bytesLeft: g,
     className: E
-  } = e, v = null == s ? void 0 : s.split("\n"), b = null !== (t = null == v ? void 0 : v.length) && void 0 !== t ? t : 0, y = c ? 100 : 6, O = 0 === g, C = "";
-  O && c && b > y ? C = "\n..." : O || (C = "..."), "" !== C && (O ? C += " " + p.NW.formatToPlainString(p.t.DQnFp6, {
-    lines: b - y
+  } = e, b = null == s ? void 0 : s.split("\n"), v = null !== (t = null == b ? void 0 : b.length) && void 0 !== t ? t : 0, y = c ? 100 : 6, O = 0 === g, C = "";
+  O && c && v > y ? C = "\n..." : O || (C = "..."), "" !== C && (O ? C += " " + p.NW.formatToPlainString(p.t.DQnFp6, {
+    lines: v - y
   }) : C += " " + p.NW.formatToPlainString(p.t["1+gGcH"], {
     formattedBytes: (0, _.IC)(g)
   }));
-  let R = (null == v ? void 0 : v.slice(0, y).join("\n")) + C,
+  let R = (null == b ? void 0 : b.slice(0, y).join("\n")) + C,
     P = (0, u.yx)(R),
-    w = c || y < b;
+    w = c || y < v;
   return (0, r.jsxs)("div", {
     className: a()(E, h.container),
     children: [(0, r.jsx)("div", {
@@ -288,7 +288,7 @@ function C(e) {
           expanded: c,
           setExpanded: d,
           isWholeFile: O,
-          numLines: b
+          numLines: v
         }), (0, r.jsx)(A, {
           url: n,
           fileName: i,
@@ -368,9 +368,9 @@ let P = i.memo(function(e) {
   } = e, [f, _] = i.useState(!1), [p, m] = i.useState(n.split(".").slice(-1)[0]), {
     fileContents: g,
     bytesLeft: E,
-    hadError: v
+    hadError: b
   } = O(t, s);
-  return v ? (0, r.jsx)(c.Z, {
+  return b ? (0, r.jsx)(c.Z, {
     url: t,
     fileName: n,
     fileSize: o,

@@ -57,22 +57,22 @@ function m() {
 }
 
 function g() {
-  __OVERLAY__ || (clearTimeout(p), p = setTimeout(() => v({}), h))
+  __OVERLAY__ || (clearTimeout(p), p = setTimeout(() => b({}), h))
 }
 async function E(e, t) {
   null == e || e === l.ME ? await r.tn.patch({
     url: l.ANM.USER_GUILD_SETTINGS(l.ME),
     body: t,
     rejectWithError: !1
-  }) : await v(null != t ? {
+  }) : await b(null != t ? {
     [null != e ? e : l.ME]: t
   } : {})
 }
-async function v(e) {
+async function b(e) {
   clearTimeout(p);
   let t = 0 !== Object.keys(e).length,
     n = o.Z.getCollapsedCategories(),
-    i = b();
+    i = v();
   for (let r in i) {
     let i = a.Z.getChannel(r);
     null != i && null != i.guild_id && (i.guild_id in e || (e[i.guild_id] = {}), null == e[i.guild_id].channel_overrides && (e[i.guild_id].channel_overrides = {}), e[i.guild_id].channel_overrides[i.id] = f(u({}, e[i.guild_id].channel_overrides[i.id]), {
@@ -88,7 +88,7 @@ async function v(e) {
   })).body) : []
 }
 
-function b() {
+function v() {
   let e = {},
     t = o.Z.getCollapsedCategories();
   for (let n in t) t[n] !== _[n] && (e[n] = !0);
@@ -108,7 +108,7 @@ class O extends i.Z {
       CATEGORY_EXPAND_ALL: g,
       POST_CONNECTION_OPEN: m,
       USER_GUILD_SETTINGS_FULL_UPDATE: y
-    }), c(this, "saveUserGuildSettings", E), c(this, "saveUserGuildSettingsBulk", v)
+    }), c(this, "saveUserGuildSettings", E), c(this, "saveUserGuildSettingsBulk", b)
   }
 }
 let I = new O

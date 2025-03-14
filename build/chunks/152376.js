@@ -26,7 +26,7 @@ var r = n(392711),
   g = n(981631),
   E = n(526761);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -35,14 +35,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -77,19 +77,19 @@ function I(e, t, n, r) {
     d = {
       flags: (0, h.mB)(i, E.ic.OPT_IN_ENABLED, n)
     },
-    v = {
+    b = {
       channel_overrides: {
         [t]: d
       }
     };
   u.Z.saveUserGuildSettingsBulk({
-    [e]: v
+    [e]: b
   }), o.Z.dispatch({
     type: "USER_GUILD_SETTINGS_CHANNEL_UPDATE",
     guildId: e,
     channelId: t,
     settings: d
-  }), (0, m.jz)(e, t, d, a, m.UE.optedIn(n), r), P(e), p.default.track(g.rMx.CHANNEL_LIST_UPDATED, O(b({}, (0, s.hH)(e), (0, s.v_)(f.Z.getChannel(t))), {
+  }), (0, m.jz)(e, t, d, a, m.UE.optedIn(n), r), P(e), p.default.track(g.rMx.CHANNEL_LIST_UPDATED, O(v({}, (0, s.hH)(e), (0, s.v_)(f.Z.getChannel(t))), {
     action_type: n ? "add" : "remove",
     location: r
   }))
@@ -125,7 +125,7 @@ function S(e, t, n, r) {
     guildId: e,
     channelId: t,
     settings: d
-  }), (0, m.jz)(e, t, d, a, m.UE.optedIn(n), r), P(e), p.default.track(g.rMx.CHANNEL_LIST_UPDATED, O(b({}, (0, s.hH)(e), (0, s.v_)(f.Z.getChannel(t))), {
+  }), (0, m.jz)(e, t, d, a, m.UE.optedIn(n), r), P(e), p.default.track(g.rMx.CHANNEL_LIST_UPDATED, O(v({}, (0, s.hH)(e), (0, s.v_)(f.Z.getChannel(t))), {
     action_type: n ? "add" : "remove",
     location: r
   }))
@@ -166,11 +166,11 @@ function A(e, t) {
     a.Z.updateGuildAndChannelNotificationSettings(e, {
       flags: t,
       channel_overrides: i
-    }, m.ZB.OptedIn), p.default.track(g.rMx.CHANNEL_LIST_UPDATED, O(b({}, (0, s.hH)(e)), {
+    }, m.ZB.OptedIn), p.default.track(g.rMx.CHANNEL_LIST_UPDATED, O(v({}, (0, s.hH)(e)), {
       action_type: "add_many_and_enable_guild",
       location: r
     }))
-  } else a.Z.updateChannelOverrideSettingsBulk(e, i, m.ZB.OptedIn), p.default.track(g.rMx.CHANNEL_LIST_UPDATED, O(b({}, (0, s.hH)(e)), {
+  } else a.Z.updateChannelOverrideSettingsBulk(e, i, m.ZB.OptedIn), p.default.track(g.rMx.CHANNEL_LIST_UPDATED, O(v({}, (0, s.hH)(e)), {
     action_type: "add_many",
     location: r
   }))
@@ -186,7 +186,7 @@ function C(e, t, n) {
   let r = _.ZP.getGuildFlags(e);
   a.Z.updateGuildNotificationSettings(e, {
     flags: (0, h.mB)(r, E.vc.OPT_IN_CHANNELS_ON, t)
-  }, m.UE.optedIn(t)), p.default.track(g.rMx.CHANNEL_LIST_UPDATED, O(b({}, (0, s.hH)(e)), {
+  }, m.UE.optedIn(t)), p.default.track(g.rMx.CHANNEL_LIST_UPDATED, O(v({}, (0, s.hH)(e)), {
     action_type: t ? "guild_enabled" : "guild_disabled",
     location: n
   }))
@@ -197,7 +197,7 @@ function R(e, t, n, r) {
   let i = _.ZP.getChannelIdFlags(e, t);
   !(0, h.yE)(i, E.ic.OPT_IN_ENABLED) && n && (i = (0, h.mB)(i, E.ic.OPT_IN_ENABLED, !0)), a.Z.updateChannelOverrideSettings(e, t, {
     flags: (0, h.mB)(i, E.ic.FAVORITED, n)
-  }, m.UE.favorited(n)), p.default.track(g.rMx.CHANNEL_LIST_UPDATED, O(b({}, (0, s.hH)(e)), {
+  }, m.UE.favorited(n)), p.default.track(g.rMx.CHANNEL_LIST_UPDATED, O(v({}, (0, s.hH)(e)), {
     action_type: n ? "favorited" : "unfavorited",
     location: r
   }))

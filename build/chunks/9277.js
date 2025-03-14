@@ -19,9 +19,9 @@ var r = n(200651),
   m = n(981631),
   g = n(957825),
   E = n(388032),
-  v = n(25675);
+  b = n(25675);
 
-function b(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -37,7 +37,7 @@ function y(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -64,9 +64,9 @@ function S(e, t) {
   let {
     disabled: n,
     type: o
-  } = e, [b, O] = i.useState(!1), S = (0, l.e7)([_.Z], () => {
+  } = e, [v, O] = i.useState(!1), S = (0, l.e7)([_.Z], () => {
     var e, t;
-    return b && Object.values(null !== (t = null === (e = _.Z.frecencyWithoutFetchingLatest.favoriteGifs) || void 0 === e ? void 0 : e.gifs) && void 0 !== t ? t : {}).length <= 2
+    return v && Object.values(null !== (t = null === (e = _.Z.frecencyWithoutFetchingLatest.favoriteGifs) || void 0 === e ? void 0 : e.gifs) && void 0 !== t ? t : {}).length <= 2
   }), [T, N, A] = (0, f.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), C = i.useRef(0), R = i.useCallback(() => {
     O(!0), clearTimeout(C.current), C.current = setTimeout(() => {
       O(!1), C.current = 0
@@ -92,17 +92,17 @@ function S(e, t) {
     forceOpen: !0,
     children: e => (0, r.jsx)("div", I(y({
       ref: t,
-      className: a()(g.CT, v.buttonContainer)
+      className: a()(g.CT, b.buttonContainer)
     }, e), {
       children: (0, r.jsx)(h.Z, {
-        innerClassName: v.button,
+        innerClassName: b.button,
         onMouseEnter: D.onMouseEnter,
         onMouseLeave: D.onMouseLeave,
         onClick: () => {
           P(), L()
         },
         isActive: M,
-        pulse: b,
+        pulse: v,
         "aria-label": E.NW.string(E.t.PtVpk5),
         "aria-expanded": M,
         "aria-haspopup": "dialog",

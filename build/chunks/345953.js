@@ -20,7 +20,7 @@ var r = n(392711),
   g = n(675478),
   E = n(65154);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,14 +29,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -108,7 +108,7 @@ function P() {
         modifiedAt: a,
         soundboardMuted: !1
       };
-      for (let [e, t] of Object.entries(r.localVolumes)) s[e] = O(b({
+      for (let [e, t] of Object.entries(r.localVolumes)) s[e] = O(v({
         muted: !1,
         modifiedAt: a
       }, s[e]), {
@@ -195,21 +195,21 @@ function B(e) {
   n !== f.default.getId() && M(t, n, _.Z.isLocalMute(n, t))
 }
 
-function V(e) {
+function F(e) {
   let {
     context: t,
     userId: n
   } = e;
   n !== f.default.getId() && k(t, n, d.Z.isLocalSoundboardMuted(n))
 }
-class F extends l.Z {
+class V extends l.Z {
   constructor(...e) {
-    super(...e), v(this, "actions", {
+    super(...e), b(this, "actions", {
       POST_CONNECTION_OPEN: D,
       AUDIO_SET_LOCAL_VOLUME: G,
       AUDIO_TOGGLE_LOCAL_MUTE: B,
-      AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: V
+      AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: F
     })
   }
 }
-let Z = new F
+let Z = new V

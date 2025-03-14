@@ -132,7 +132,7 @@ function t(e) {
       begin: /@\B/,
       relevance: 0
     },
-    v = {
+    b = {
       className: "function",
       begin: /\[.*\]\s*[\w]+[ ]??\(/,
       end: /$/,
@@ -147,14 +147,14 @@ function t(e) {
         endsParent: !0
       })]
     },
-    b = [v, f, a, e.NUMBER_MODE, c, u, _, s, l, E],
+    v = [b, f, a, e.NUMBER_MODE, c, u, _, s, l, E],
     y = {
       begin: /\[/,
       end: /\]/,
       excludeBegin: !0,
       excludeEnd: !0,
       relevance: 0,
-      contains: [].concat("self", b, {
+      contains: [].concat("self", v, {
         begin: "(" + t.join("|") + ")",
         className: "built_in",
         relevance: 0
@@ -164,12 +164,12 @@ function t(e) {
         relevance: 0
       })
     };
-  return v.contains.unshift(y), {
+  return b.contains.unshift(y), {
     name: "PowerShell",
     aliases: ["pwsh", "ps", "ps1"],
     case_insensitive: !0,
     keywords: i,
-    contains: b.concat(p, h, m, g, y)
+    contains: v.concat(p, h, m, g, y)
   }
 }
 e.exports = t

@@ -1,35 +1,35 @@
-/** Chunk was on 98806 **/
+/** Chunk was on 44584 **/
 n.d(t, {
-  default: () => f
+  default: () => p
 });
 var r = n(200651),
-  a = n(192379),
-  i = n(442837),
-  l = n(481060),
-  o = n(313201),
+  i = n(192379),
+  l = n(442837),
+  o = n(481060),
+  a = n(313201),
   c = n(430824),
   s = n(427679),
   d = n(939863),
   u = n(540186),
-  _ = n(609776),
-  m = n(289584),
-  b = n(180899),
-  h = n(157925),
-  g = n(388032),
+  h = n(609776),
+  g = n(289584),
+  _ = n(180899),
+  m = n(157925),
+  b = n(388032),
   x = n(448930);
 
-function p(e) {
+function f(e) {
   let {
     guild: t,
     channel: n,
-    stageInstance: a,
-    headerId: i,
-    onClose: o,
+    stageInstance: i,
+    headerId: l,
+    onClose: a,
     loading: c,
     error: s,
     onSave: u,
-    defaultOptions: m,
-    isSlideReady: b
+    defaultOptions: g,
+    isSlideReady: _
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -37,7 +37,7 @@ function p(e) {
       children: [(0, r.jsx)(d.Z, {
         children: (0, r.jsx)("div", {
           className: x.stageIconBackground,
-          children: (0, r.jsx)(l.ewx, {
+          children: (0, r.jsx)(o.ewx, {
             size: "custom",
             color: "currentColor",
             width: 32,
@@ -45,77 +45,77 @@ function p(e) {
             className: x.stageIcon
           })
         })
-      }), (0, r.jsx)(l.X6q, {
-        id: i,
+      }), (0, r.jsx)(o.X6q, {
+        id: l,
         variant: "heading-xl/semibold",
         color: "header-primary",
         className: x.headerTitle,
-        children: null == a ? g.NW.string(g.t.DDF0cH) : g.NW.string(g.t.YPdQOj)
-      }), (0, r.jsx)(l.Text, {
+        children: null == i ? b.NW.string(b.t.DDF0cH) : b.NW.string(b.t.YPdQOj)
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         className: x.headerSubtitle,
-        children: null == a ? g.NW.string(g.t.bqQIwc) : g.NW.string(g.t["I+9bLy"])
+        children: null == i ? b.NW.string(b.t.bqQIwc) : b.NW.string(b.t["I+9bLy"])
       })]
-    }), (0, r.jsx)(_.Z, {
+    }), (0, r.jsx)(h.Z, {
       guild: t,
       channel: n,
       onSave: u,
       error: s,
       loading: c,
-      onClose: o,
-      defaultOptions: m,
-      isSlideReady: b
+      onClose: a,
+      defaultOptions: g,
+      isSlideReady: _
     })]
   })
 }
 
-function f(e) {
+function p(e) {
   var t, n, {
       channel: d,
-      onClose: _,
-      transitionState: g
+      onClose: h,
+      transitionState: b
     } = e,
-    f = function(e, t) {
+    p = function(e, t) {
       if (null == e) return {};
-      var n, r, a = function(e, t) {
+      var n, r, i = function(e, t) {
         if (null == e) return {};
-        var n, r, a = {},
-          i = Object.keys(e);
-        for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
-        return a
+        var n, r, i = {},
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
-      return a
+      return i
     }(e, ["channel", "onClose", "transitionState"]);
-  let v = (0, o.Dt)(),
-    N = (0, i.e7)([c.Z], () => c.Z.getGuild(d.guild_id)),
-    j = a.useMemo(() => s.Z.getStageInstanceByChannel(d.id), [d.id]),
+  let v = (0, a.Dt)(),
+    N = (0, l.e7)([c.Z], () => c.Z.getGuild(d.guild_id)),
+    j = i.useMemo(() => s.Z.getStageInstanceByChannel(d.id), [d.id]),
     {
       loading: I,
-      error: C,
+      error: O,
       onSave: y
-    } = (0, m.Z)(d, _),
+    } = (0, g.Z)(d, h),
     {
-      modalStep: O,
-      setModalStep: S,
-      readySlide: E,
+      modalStep: C,
+      setModalStep: E,
+      readySlide: S,
       handleSlideReady: T,
-      savedOptions: P,
-      handleSettingsSave: w,
+      savedOptions: w,
+      handleSettingsSave: P,
       handleDelayedSave: k
-    } = (0, b.Z)({
+    } = (0, _.Z)({
       stageInstance: j,
-      defaultStep: h.lv.STAGE_CHANNEL_SETTINGS,
-      error: C,
+      defaultStep: m.lv.STAGE_CHANNEL_SETTINGS,
+      error: O,
       onSave: y
     });
-  return (a.useEffect(() => {
-    null == N && _()
-  }, [N, _]), null == N) ? null : (0, r.jsx)(l.Y0X, (t = function(e) {
+  return (i.useEffect(() => {
+    null == N && h()
+  }, [N, h]), null == N) ? null : (0, r.jsx)(o.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -133,44 +133,44 @@ function f(e) {
     }
     return e
   }({
-    transitionState: g,
+    transitionState: b,
     "aria-labelledby": v
-  }, f), n = n = {
-    size: l.CgR.SMALL,
-    children: (0, r.jsxs)(l.MyZ, {
-      activeSlide: O,
+  }, p), n = n = {
+    size: o.CgR.SMALL,
+    children: (0, r.jsxs)(o.MyZ, {
+      activeSlide: C,
       width: 440,
       onSlideReady: T,
-      children: [(0, r.jsx)(l.Mi4, {
-        id: h.lv.STAGE_CHANNEL_SETTINGS,
+      children: [(0, r.jsx)(o.Mi4, {
+        id: m.lv.STAGE_CHANNEL_SETTINGS,
         children: (0, r.jsx)("div", {
           className: x.slideContainer,
-          children: (0, r.jsx)(p, {
+          children: (0, r.jsx)(f, {
             guild: N,
             channel: d,
             stageInstance: j,
             headerId: v,
-            onClose: _,
+            onClose: h,
             loading: I,
-            error: C,
-            onSave: w,
-            defaultOptions: P,
-            isSlideReady: E === h.lv.STAGE_CHANNEL_SETTINGS
+            error: O,
+            onSave: P,
+            defaultOptions: w,
+            isSlideReady: S === m.lv.STAGE_CHANNEL_SETTINGS
           })
         })
-      }), (0, r.jsx)(l.Mi4, {
-        id: h.lv.PUBLIC_STAGE_PREVIEW,
+      }), (0, r.jsx)(o.Mi4, {
+        id: m.lv.PUBLIC_STAGE_PREVIEW,
         children: (0, r.jsx)("div", {
           className: x.slideContainer,
           children: (0, r.jsx)(u.Z, {
             headerId: v,
             guild: N,
             channel: d,
-            stageData: P,
+            stageData: w,
             loading: I,
             onNext: k,
-            onCancel: _,
-            onBack: () => S(h.lv.STAGE_CHANNEL_SETTINGS)
+            onCancel: h,
+            onBack: () => E(m.lv.STAGE_CHANNEL_SETTINGS)
           })
         })
       })]

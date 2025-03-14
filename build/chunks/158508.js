@@ -41,7 +41,7 @@ function E(e) {
   return e
 }
 
-function v(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,8 +52,8 @@ function v(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -70,7 +70,7 @@ function O(e) {
     user: t,
     guildId: l,
     channelId: g,
-    onBlock: v,
+    onBlock: b,
     onIgnore: O,
     onUnignore: I,
     location: S = "ContextMenu",
@@ -103,12 +103,12 @@ function O(e) {
         let {
           default: e
         } = await Promise.all([n.e("97652"), n.e("89540")]).then(n.bind(n, 240515));
-        return n => (0, r.jsx)(e, b(E({}, n), {
+        return n => (0, r.jsx)(e, v(E({}, n), {
           guildId: l,
           channelId: g,
           user: t,
           onIgnore: O,
-          onBlock: v,
+          onBlock: b,
           location: S
         }))
       }, {

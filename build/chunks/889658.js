@@ -47,7 +47,7 @@ class i {
     let r = this.options.loose,
       i = r ? u[d.HYPHENRANGELOOSE] : u[d.HYPHENRANGE];
     l("hyphen replace", e = e.replace(i, P(this.options.includePrerelease))), l("comparator trim", e = e.replace(u[d.COMPARATORTRIM], f)), l("tilde trim", e = e.replace(u[d.TILDETRIM], _)), l("caret trim", e = e.replace(u[d.CARETTRIM], p));
-    let a = e.split(" ").map(e => b(e, this.options)).join(" ").split(/\s+/).map(e => R(e, this.options));
+    let a = e.split(" ").map(e => v(e, this.options)).join(" ").split(/\s+/).map(e => R(e, this.options));
     r && (a = a.filter(e => (l("loose invalid filter", e, this.options), !!e.match(u[d.COMPARATORLOOSE])))), l("range list", a);
     let c = new Map;
     for (let e of a.map(e => new s(e, this.options))) {
@@ -60,7 +60,7 @@ class i {
   }
   intersects(e, t) {
     if (!(e instanceof i)) throw TypeError("a Range is required");
-    return this.set.some(n => v(n, t) && e.set.some(e => v(e, t) && n.every(n => e.every(e => n.intersects(e, t)))))
+    return this.set.some(n => b(n, t) && e.set.some(e => b(e, t) && n.every(n => e.every(e => n.intersects(e, t)))))
   }
   test(e) {
     if (!e) return !1;
@@ -93,14 +93,14 @@ let o = new(n(147567)),
   } = n(942177),
   g = e => "<0.0.0-0" === e.value,
   E = e => "" === e.value,
-  v = (e, t) => {
+  b = (e, t) => {
     let n = !0,
       r = e.slice(),
       i = r.pop();
     for (; n && r.length;) n = r.every(e => i.intersects(e, t)), i = r.pop();
     return n
   },
-  b = (e, t) => (l("comp", e, t), l("caret", e = S(e, t)), l("tildes", e = O(e, t)), l("xrange", e = N(e, t)), l("stars", e = C(e, t)), e),
+  v = (e, t) => (l("comp", e, t), l("caret", e = S(e, t)), l("tildes", e = O(e, t)), l("xrange", e = N(e, t)), l("stars", e = C(e, t)), e),
   y = e => !e || "x" === e.toLowerCase() || "*" === e,
   O = (e, t) => e.trim().split(/\s+/).map(e => I(e, t)).join(" "),
   I = (e, t) => {

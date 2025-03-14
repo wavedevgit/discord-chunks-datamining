@@ -40,7 +40,7 @@ function E(e) {
   return e
 }
 
-function v(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,8 +51,8 @@ function v(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -63,7 +63,7 @@ function y(e) {
     channel: i
   } = e, {
     analyticsLocations: g
-  } = (0, l.ZP)(s.Z.GIFT_BUTTON), v = (0, f.Ft)(i), {
+  } = (0, l.ZP)(s.Z.GIFT_BUTTON), b = (0, f.Ft)(i), {
     Component: y,
     events: O,
     play: I
@@ -76,7 +76,7 @@ function y(e) {
   }), T = (0, c.Q3)("ChannelPremiumGiftButton"), N = i.type === p.d4z.DM;
   if (t) return null;
   let A = () => {
-    S && N && null != v ? (0, a.ZDy)(async () => {
+    S && N && null != b ? (0, a.ZDy)(async () => {
       let {
         default: e
       } = await n.e("59207").then(n.bind(n, 435626));
@@ -88,11 +88,11 @@ function y(e) {
           objectType: p.Qqv.GIFT
         },
         analyticsLocations: g,
-        giftRecipient: v
+        giftRecipient: b
       }, t))
     }) : (0, u.Z)({
       isGift: !0,
-      giftRecipient: null === v ? void 0 : v,
+      giftRecipient: null === b ? void 0 : b,
       initialPlanId: null,
       analyticsLocations: g,
       analyticsObject: {
@@ -105,7 +105,7 @@ function y(e) {
   };
   return (0, r.jsx)(a.ua7, {
     text: h.NW.string(h.t.sWtWDQ),
-    children: e => (0, r.jsx)(_.Z, b(E(b(E({}, e), {
+    children: e => (0, r.jsx)(_.Z, v(E(v(E({}, e), {
       innerClassName: m.button,
       isActive: !1,
       "aria-label": h.NW.string(h.t.Z1RnTk),

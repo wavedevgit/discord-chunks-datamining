@@ -25,13 +25,13 @@ function p(e) {
     pendingAvatar: m,
     pendingNickname: g,
     pendingGlobalName: E,
-    pendingBio: v,
-    pendingPronouns: b,
+    pendingBio: b,
+    pendingPronouns: v,
     isTryItOutFlow: y,
     hideBioSection: O,
     pendingBadges: I,
     shouldOpenBadgeTooltip: S
-  } = e, T = (0, i.e7)([c.ZP], () => null == h ? null : c.ZP.getMember(h.id, n.id)), N = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), A = null == p ? void 0 : null === (t = p.getPreviewBio(v)) || void 0 === t ? void 0 : t.value, C = null != b ? b : null == p ? void 0 : p.pronouns, R = (0, d.Ly)({
+  } = e, T = (0, i.e7)([c.ZP], () => null == h ? null : c.ZP.getMember(h.id, n.id)), N = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), A = null == p ? void 0 : null === (t = p.getPreviewBio(b)) || void 0 === t ? void 0 : t.value, C = null != v ? v : null == p ? void 0 : p.pronouns, R = (0, d.Ly)({
     pendingNickname: g,
     pendingGlobalName: E,
     user: n,

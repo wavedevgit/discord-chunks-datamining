@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => v
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -208,7 +208,7 @@ function E(e) {
   }
 }
 
-function v(e) {
+function b(e) {
   let {
     currentTier: t
   } = e, n = E(t);
@@ -225,14 +225,14 @@ function v(e) {
     })
   })
 }
-let b = function(e) {
+let v = function(e) {
   let t = (0, c.ZP)(),
     [n, o] = i.useState(null),
     {
       className: d,
       guild: p,
       hideHeading: E,
-      hideTier0: b
+      hideTier0: v
     } = e;
 
   function y(e) {
@@ -250,7 +250,7 @@ let b = function(e) {
       children: f.NW.string(f.t["9GGb9v"])
     }), (0, r.jsxs)("div", {
       className: _.tableWrapper,
-      children: [null != p && (0, r.jsx)(v, {
+      children: [null != p && (0, r.jsx)(b, {
         currentTier: p.premiumTier
       }), (0, r.jsxs)("table", {
         className: _.table,
@@ -262,7 +262,7 @@ let b = function(e) {
             children: [(0, r.jsx)(m, {
               className: _.tableRowHeading,
               children: f.NW.string(f.t.F5MY0t)
-            }), !b && (0, r.jsx)(m, {
+            }), !v && (0, r.jsx)(m, {
               tier: u.Eu4.NONE,
               children: f.NW.string(f.t.mx8j2t)
             }), (0, r.jsx)(m, {
@@ -313,7 +313,7 @@ let b = function(e) {
                     })
                   })
                 })
-              }), !b && (0, r.jsx)(g, {
+              }), !v && (0, r.jsx)(g, {
                 textVariant: "text-md/normal",
                 value: e.getTier0Value()
               }), (0, r.jsx)(g, {

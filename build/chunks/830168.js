@@ -33,11 +33,11 @@ function E(e) {
   return h.log("Native Dispatch error", t), new a.Z(t)
 }
 
-function v(e, t) {
+function b(e, t) {
   "" !== e && E(e)
 }
 
-function b(e) {
+function v(e) {
   let {
     properties: t
   } = e;
@@ -66,7 +66,7 @@ let y = {
       var c;
       let u = {
           environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-          build_number: "378415"
+          build_number: "378464"
         },
         d = l.default.getCurrentUser();
       null != d && (u.user_id = d.id, u.user_name = d.tag, null != d.email && (u.email = d.email));
@@ -101,7 +101,7 @@ let y = {
       }, e => {
         s(E(e))
       }, e => {
-        b(JSON.parse(e))
+        v(JSON.parse(e))
       })
     })
   },
@@ -128,7 +128,7 @@ let y = {
       build_id: o,
       manifest_ids: a,
       install_path: s
-    }), v)
+    }), b)
   },
   setCurrentTask(e, t, n, r, i) {
     let o = g();
@@ -139,7 +139,7 @@ let y = {
       action: n,
       user_id: r,
       user_token: i
-    }), v), !0)
+    }), b), !0)
   },
   setCredentials(e, t) {
     let n = g();
@@ -147,7 +147,7 @@ let y = {
       command: "SetCredentials",
       user_id: e,
       user_token: t
-    }), v)
+    }), b)
   },
   cancel(e, t) {
     let n = g();
@@ -155,7 +155,7 @@ let y = {
       command: "Cancel",
       application_id: e,
       branch_id: t
-    }), v)
+    }), b)
   },
   uninstall(e, t) {
     let n = g();
@@ -163,19 +163,19 @@ let y = {
       command: "Uninstall",
       application_id: e,
       branch_id: t
-    }), v)
+    }), b)
   },
   pause() {
     let e = g();
     null != e && e.command(JSON.stringify({
       command: "Pause"
-    }), v)
+    }), b)
   },
   resume() {
     let e = g();
     null != e && e.command(JSON.stringify({
       command: "Resume"
-    }), v)
+    }), b)
   },
   queryDirectory(e, t) {
     let n = g();

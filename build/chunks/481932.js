@@ -26,17 +26,17 @@ function _(e) {
   } = (0, o.ZP)(), m = (0, a.wn)({
     location: "useFriendRequestButtonTooltip"
   }), g = (0, i.e7)([s.default], () => s.default.getId() === t.id), E = (0, i.e7)([l.Z], () => l.Z.getRelationshipType(t.id)), {
-    gameFriends: v,
-    hasOutgoingPendingGameFriends: b,
+    gameFriends: b,
+    hasOutgoingPendingGameFriends: v,
     hasIncomingPendingGameFriends: y
   } = (0, u.H)({
     userId: t.id
-  }), O = v.length > 0 || b || y;
+  }), O = b.length > 0 || v || y;
   if (null == t || t.bot || g || E === f.OGo.BLOCKED) return null;
   if (E === f.OGo.NONE && m && O) return _ === d.y0.FULL_SIZE ? null : (0, r.jsx)(c.l, {
     user: t,
-    gameFriends: v,
-    hasOutgoingPendingGameFriends: b,
+    gameFriends: b,
+    hasOutgoingPendingGameFriends: v,
     hasIncomingPendingGameFriends: y,
     analyticsLocation: h,
     shouldShowTooltip: p

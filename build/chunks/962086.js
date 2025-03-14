@@ -33,7 +33,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function v(e) {
   return e
 }
 
-function b(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,13 +58,13 @@ function b(e, t) {
 }
 
 function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function O(e, t) {
-  _.default.track(m.rMx.VIEW_AS_ROLES_SELECTED, y(v({
+  _.default.track(m.rMx.VIEW_AS_ROLES_SELECTED, y(b({
     num_roles: Object.keys(t.roles).length
   }, (0, i.hH)(e)), {
     is_viewing_as_member: t.type === h.z.NEW_MEMBER
@@ -77,14 +77,14 @@ function O(e, t) {
 
 function I(e, t) {
   let n = p.Z.getData(e);
-  null != n && n.type === t.type && (_.default.track(m.rMx.VIEW_AS_ROLES_SELECTED, y(v({
+  null != n && n.type === t.type && (_.default.track(m.rMx.VIEW_AS_ROLES_SELECTED, y(b({
     num_roles: Object.keys(n.roles).length
   }, (0, i.hH)(e)), {
     is_viewing_as_member: n.type === h.z.NEW_MEMBER
   })), r.Z.dispatch({
     type: "IMPERSONATE_UPDATE",
     guildId: e,
-    data: v({}, n, t)
+    data: b({}, n, t)
   }), T(e))
 }
 
@@ -135,7 +135,7 @@ function C(e, t) {
 }
 
 function R(e, t) {
-  I(e, v({
+  I(e, b({
     type: h.z.NEW_MEMBER
   }, t))
 }

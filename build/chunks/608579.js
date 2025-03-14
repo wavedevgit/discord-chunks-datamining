@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(409813),
   g = n(107998),
   E = n(791785),
-  v = n(961830),
-  b = n(742956),
+  b = n(961830),
+  v = n(742956),
   y = n(346790),
   O = n(49308),
   I = n(117652),
@@ -85,39 +85,39 @@ function L(e) {
     analyticsLocations: G,
     returnRef: B
   } = e, {
-    analyticsLocations: V
-  } = (0, d.ZP)([...G, u.Z.COLLECTIBLES_PAYMENT_MODAL]), F = i.useRef(new s.qA), [Z, H] = i.useState(null), [W, Y] = i.useState(!1), K = i.useMemo(() => (0, N.UY)(x), [x]), z = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), q = null != x ? [x] : z, Q = null !== (t = q[0]) && void 0 !== t ? t : null, X = null != x && _.Rm.has(x), J = i.useCallback(() => {
+    analyticsLocations: F
+  } = (0, d.ZP)([...G, u.Z.COLLECTIBLES_PAYMENT_MODAL]), V = i.useRef(new s.qA), [Z, H] = i.useState(null), [W, Y] = i.useState(!1), K = i.useMemo(() => (0, N.UY)(x), [x]), z = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), q = null != x ? [x] : z, Q = null !== (t = q[0]) && void 0 !== t ? t : null, X = null != x && _.Rm.has(x), J = i.useCallback(() => {
     Y(!0), null == o || o()
   }, [o]), $ = i.useCallback(e => {
     Y(!1), n(e), c.Z.dispatch({
       type: "SKU_PURCHASE_MODAL_CLOSE",
       error: null
     })
-  }, [n]), ee = (e, t, n) => M ? (0, r.jsx)(b.Z, {
+  }, [n]), ee = (e, t, n) => M ? (0, r.jsx)(v.Z, {
     step: n,
     onClose: () => t(!1),
     giftingOrigin: U
   }) : (0, r.jsx)(S.Z, {
     step: n,
     onClose: () => t(!1)
-  }), et = i.useMemo(() => [v.WA, ...M ? [I.Dd] : [], y.n, ...v.yp, v.wo, {
+  }), et = i.useMemo(() => [b.WA, ...M ? [I.Dd] : [], y.n, ...b.yp, b.wo, {
     key: m.h8.CONFIRM,
     renderStep: e => (0, r.jsx)(O.x, D(P({}, e), {
       confettiCanvas: Z,
-      analyticsLocations: V,
+      analyticsLocations: F,
       hideConfetti: null != K
     })),
     options: {
       bodyClassName: C.modalOverrideBody,
       sliderBodyClassName: C.modalOverrideSliderBody
     }
-  }], [V, Z, K, M]);
+  }], [F, Z, K, M]);
   return (0, r.jsxs)(d.Gt, {
-    value: V,
+    value: F,
     children: [(0, r.jsx)(s.O_, {
       ref: H,
       className: C.confettiCanvas,
-      environment: F.current
+      environment: V.current
     }), null != K && (0, r.jsx)("img", {
       src: K.imageSrc,
       className: a()(C.customConfetti, {
@@ -146,7 +146,7 @@ function L(e) {
             applicationId: T.XAJ,
             skuId: Q,
             initialPlanId: null,
-            analyticsLocations: V,
+            analyticsLocations: F,
             transitionState: w,
             renderHeader: ee,
             returnRef: B,

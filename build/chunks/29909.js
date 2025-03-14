@@ -61,16 +61,16 @@ let E = i.memo(function(e) {
     url: p,
     format: m,
     className: E
-  } = e, [v, b] = i.useState(!1), y = (0, c.hb)((0, l.iy)(p)), O = y ? f.NW.string(f.t["5/NS7+"]) : f.NW.string(f.t.nIH0v7), I = y ? s.r7p : s.vxU;
+  } = e, [b, v] = i.useState(!1), y = (0, c.hb)((0, l.iy)(p)), O = y ? f.NW.string(f.t["5/NS7+"]) : f.NW.string(f.t.nIH0v7), I = y ? s.r7p : s.vxU;
   i.useEffect(() => {
-    if (!v) return;
+    if (!b) return;
     let e = setTimeout(() => {
-      b(!1)
+      v(!1)
     }, 500);
     return () => clearTimeout(e)
-  }, [v]);
+  }, [b]);
   let S = e => {
-    e.preventDefault(), e.stopPropagation(), b(!0), y ? (0, l.PF)(p) : ((0, l.uL)({
+    e.preventDefault(), e.stopPropagation(), v(!0), y ? (0, l.PF)(p) : ((0, l.uL)({
       url: p,
       src: o,
       width: t,
@@ -83,7 +83,7 @@ let E = i.memo(function(e) {
     children: e => (0, r.jsx)(s.P3F, g(h({}, e), {
       className: a()(E, _.gifFavoriteButton, {
         [_.selected]: y,
-        [_.showPulse]: v
+        [_.showPulse]: b
       }),
       onMouseDown: e => e.preventDefault(),
       onClick: S,

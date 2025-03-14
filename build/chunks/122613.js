@@ -80,15 +80,15 @@ async function E(e) {
     onExecutedCallback: m,
     referrerId: g,
     customId: E,
-    inviterUserId: v
-  } = e, b = (0, d.Z)(), y = i.default.getCurrentUser();
+    inviterUserId: b
+  } = e, v = (0, d.Z)(), y = i.default.getCurrentUser();
   return null == a ? (o.S.dispatch(f.CkL.SHOW_ACTIVITIES_CHANNEL_SELECTOR, {
     applicationId: t.id
   }), !1) : null != r.Z.getChannel(a) && null != y && null != t && (l.tZ(t.id), await (0, c.G6)({
     channelId: a,
     applicationId: t.id,
     isStart: !0,
-    embeddedActivitiesManager: b,
+    embeddedActivitiesManager: v,
     componentId: u,
     commandOrigin: _,
     sectionName: p,
@@ -99,6 +99,6 @@ async function E(e) {
     referrerId: g,
     customId: E,
     instanceId: void 0,
-    inviterUserId: v
+    inviterUserId: b
   }))
 }

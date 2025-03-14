@@ -18,8 +18,8 @@ var r, i = n(348327),
   m = n(581883),
   g = n(199902),
   E = n(272053),
-  v = n(77498),
-  b = n(981631);
+  b = n(77498),
+  v = n(981631);
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -53,7 +53,7 @@ function T() {
   e.push(...n);
   let r = E.Z.getStream();
   null != r && e.push(O({
-    type: b.IIU.STREAMING
+    type: v.IIU.STREAMING
   }, r));
   let i = new Set;
   s().forEach(S, t => {
@@ -68,9 +68,9 @@ function T() {
   if (null != a && null != a.name && !m) {
     var y, T;
     e.push({
-      type: b.IIU.PLAYING,
+      type: v.IIU.PLAYING,
       name: a.name,
-      application_id: null !== (T = a.id) && void 0 !== T ? T : null === (y = v.Z.getGameByName(a.name)) || void 0 === y ? void 0 : y.id,
+      application_id: null !== (T = a.id) && void 0 !== T ? T : null === (y = b.Z.getGameByName(a.name)) || void 0 === y ? void 0 : y.id,
       timestamps: {
         start: a.start
       }
@@ -78,7 +78,7 @@ function T() {
   }
   let N = p.Z.getActivity();
   null != N && e.push(O({
-    type: b.IIU.LISTENING
+    type: v.IIU.LISTENING
   }, N)), o()(I, e) || (I = e)
 }
 
@@ -111,7 +111,7 @@ function R(e) {
 }
 class P extends(r = l.ZP.Store) {
   initialize() {
-    this.waitFor(f.ZP, u.ZP, E.Z, g.Z, p.Z, m.Z, v.Z), this.syncWith([_.Z], () => T())
+    this.waitFor(f.ZP, u.ZP, E.Z, g.Z, p.Z, m.Z, b.Z), this.syncWith([_.Z], () => T())
   }
   getActivities() {
     return I
@@ -123,7 +123,7 @@ class P extends(r = l.ZP.Store) {
     return this.findActivity(t => t.application_id === e)
   }
   getCustomStatusActivity() {
-    return this.findActivity(e => e.type === b.IIU.CUSTOM_STATUS)
+    return this.findActivity(e => e.type === v.IIU.CUSTOM_STATUS)
   }
   findActivity(e) {
     return I.find(e)

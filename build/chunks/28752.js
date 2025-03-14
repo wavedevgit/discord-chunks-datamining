@@ -81,9 +81,9 @@ function E(e) {
         src: _,
         className: f.appIcon,
         rendersPlaceholder: !0
-      }), (0, r.jsx)(b, {
-        application: t
       }), (0, r.jsx)(v, {
+        application: t
+      }), (0, r.jsx)(b, {
         application: t
       })]
     }), (0, r.jsx)("ul", {
@@ -120,7 +120,7 @@ function E(e) {
   })
 }
 
-function v(e) {
+function b(e) {
   let {
     application: t
   } = e, n = t.description;
@@ -135,7 +135,7 @@ function v(e) {
   })
 }
 
-function b(e) {
+function v(e) {
   let {
     application: t
   } = e, n = t.name, i = (0, s.vJ)(t);
@@ -186,18 +186,18 @@ function O(e) {
     }, [h, p]),
     {
       ref: E,
-      isTransitioning: v,
-      onTransitionEnd: b
+      isTransitioning: b,
+      onTransitionEnd: v
     } = (0, c.Z)(m({
       isExpanded: o
     }, g)),
-    O = o || v;
+    O = o || b;
   return (0, r.jsxs)("div", {
     className: f.descriptionContainer,
     children: [(0, r.jsx)("div", {
       ref: E,
       className: f.overflowHidden,
-      onTransitionEnd: b,
+      onTransitionEnd: v,
       children: (0, r.jsx)(a.Text, {
         ref: u,
         className: _.markup,

@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(899007),
   g = n(648052),
   E = n(867176),
-  v = n(280885),
-  b = n(502762),
+  b = n(280885),
+  v = n(502762),
   y = n(530),
   O = n(679332),
   I = n(544989),
@@ -75,17 +75,17 @@ function P(e) {
   i.useEffect(() => {
     null == D || D(null == G ? void 0 : G.current)
   }, [G, D]);
-  let V = () => {
+  let F = () => {
       null == L || L(), (0, S.openUserProfileModal)(R({
         sourceAnalyticsLocations: j
       }, U))
     },
-    F = !x && (0, c.Z)(t.id),
-    Z = () => F ? (0, r.jsx)(o.sNh, {
+    V = !x && (0, c.Z)(t.id),
+    Z = () => V ? (0, r.jsx)(o.sNh, {
       id: "view-profile",
       label: N.NW.string(N.t["+Xp3ho"]),
       action: () => {
-        V(), (0, p.pQ)(R({
+        F(), (0, p.pQ)(R({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: j
         }, U))
@@ -98,7 +98,7 @@ function P(e) {
       children: (0, r.jsxs)(o.VqE, {
         ref: G,
         "aria-label": t.username,
-        children: [(0, r.jsxs)(b.Z, {
+        children: [(0, r.jsxs)(v.Z, {
           user: t,
           displayProfile: k,
           profileType: T.y0.BITE_SIZE,
@@ -121,7 +121,7 @@ function P(e) {
               guildId: n,
               channelId: C,
               profileType: T.y0.BITE_SIZE,
-              onOpenProfile: F ? V : void 0
+              onOpenProfile: V ? F : void 0
             }), t.isClyde() && (0, r.jsx)(u.Z, {
               className: A.headerTag
             })]
@@ -132,13 +132,13 @@ function P(e) {
               user: t,
               profileType: T.y0.BITE_SIZE,
               nickname: f.ZP.getName(n, C, t),
-              onOpenProfile: F ? V : void 0,
+              onOpenProfile: V ? F : void 0,
               tags: (0, r.jsx)(g.Z, {
                 displayProfile: k,
                 profileType: T.y0.BITE_SIZE,
                 onClose: L
               })
-            }), (0, r.jsx)(v.Z, {
+            }), (0, r.jsx)(b.Z, {
               userId: t.id,
               userBio: null == k ? void 0 : k.bio,
               setLineClamp: !1,

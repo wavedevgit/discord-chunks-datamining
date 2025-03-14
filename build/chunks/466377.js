@@ -26,8 +26,8 @@ var r = n(200651),
   m = n(742746),
   g = n(147479),
   E = n(481060),
-  v = n(600164),
-  b = n(602091),
+  b = n(600164),
+  v = n(602091),
   y = n(231338),
   O = n(388032),
   I = n(518732);
@@ -110,12 +110,12 @@ function L(e) {
       className: m,
       fullscreenOnMobile: g = !0,
       hideShadow: E = !1,
-      onAnimationEnd: v = y.dG,
+      onAnimationEnd: b = y.dG,
       returnRef: O,
       animation: S = "default"
     } = e,
     N = C(e, ["transitionState", "children", "size", "role", "className", "fullscreenOnMobile", "hideShadow", "onAnimationEnd", "returnRef", "animation"]);
-  let R = n === b.Dv.ENTERING || n === b.Dv.ENTERED,
+  let R = n === v.Dv.ENTERING || n === v.Dv.ENTERED,
     {
       reducedMotion: P
     } = i.useContext(d.S),
@@ -127,7 +127,7 @@ function L(e) {
         easing: c.Z.Easing.out(c.Z.Easing.quad),
         clamp: !0
       },
-      onRest: v
+      onRest: b
     }, "animate-always"),
     L = i.useRef(null),
     x = null != N["aria-label"],
@@ -138,7 +138,7 @@ function L(e) {
       headerId: j,
       headerIdIsManaged: M
     }), [j, M]);
-  return (0, r.jsx)(b.zM.Provider, {
+  return (0, r.jsx)(v.zM.Provider, {
     value: U,
     children: (0, r.jsx)(_.V, A(T({
       className: I.focusLock,
@@ -168,14 +168,14 @@ function x(e) {
   let {
     headerId: c,
     headerIdIsManaged: u
-  } = i.useContext(b.zM);
-  return (0, r.jsx)(v.Z, {
+  } = i.useContext(v.zM);
+  return (0, r.jsx)(b.Z, {
     grow: 0,
     shrink: 0,
-    direction: null !== (t = e.direction) && void 0 !== t ? t : v.Z.Direction.HORIZONTAL,
-    justify: null !== (n = e.justify) && void 0 !== n ? n : v.Z.Justify.START,
-    align: null !== (o = e.align) && void 0 !== o ? o : v.Z.Align.CENTER,
-    wrap: null !== (s = e.wrap) && void 0 !== s ? s : v.Z.Wrap.NO_WRAP,
+    direction: null !== (t = e.direction) && void 0 !== t ? t : b.Z.Direction.HORIZONTAL,
+    justify: null !== (n = e.justify) && void 0 !== n ? n : b.Z.Justify.START,
+    align: null !== (o = e.align) && void 0 !== o ? o : b.Z.Align.CENTER,
+    wrap: null !== (s = e.wrap) && void 0 !== s ? s : b.Z.Wrap.NO_WRAP,
     className: a()(I.header, e.className, {
       [I.separator]: null === (l = e.separator) || void 0 === l || l
     }),
@@ -214,13 +214,13 @@ function k(e) {
 
 function j(e) {
   var t, n, i, o, s;
-  return (0, r.jsx)(v.Z, {
+  return (0, r.jsx)(b.Z, {
     grow: 0,
     shrink: 0,
-    direction: null !== (t = e.direction) && void 0 !== t ? t : v.Z.Direction.HORIZONTAL_REVERSE,
-    justify: null !== (n = e.justify) && void 0 !== n ? n : v.Z.Justify.START,
-    align: null !== (i = e.align) && void 0 !== i ? i : v.Z.Align.STRETCH,
-    wrap: null !== (o = e.wrap) && void 0 !== o ? o : v.Z.Wrap.NO_WRAP,
+    direction: null !== (t = e.direction) && void 0 !== t ? t : b.Z.Direction.HORIZONTAL_REVERSE,
+    justify: null !== (n = e.justify) && void 0 !== n ? n : b.Z.Justify.START,
+    align: null !== (i = e.align) && void 0 !== i ? i : b.Z.Align.STRETCH,
+    wrap: null !== (o = e.wrap) && void 0 !== o ? o : b.Z.Wrap.NO_WRAP,
     className: a()(I.footer, e.className, {
       [I.footerSeparator]: null === (s = e.separator) || void 0 === s || s
     }),

@@ -3,7 +3,7 @@
 n.d(t, {
   AH: () => S,
   Ag: () => x,
-  CS: () => b,
+  CS: () => v,
   EW: () => D,
   OR: () => L,
   QB: () => T,
@@ -38,8 +38,8 @@ var r = n(990547),
   m = n(566078),
   g = n(981631),
   E = n(388032);
-let v = 5;
-async function b(e) {
+let b = 5;
+async function v(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
   try {
     let n = (await i.tn.post({
@@ -55,7 +55,7 @@ async function b(e) {
       user_status: n.quest_user_status
     });
     else if (null != n.error_hints_v2 && n.error_hints_v2.length > 0) return {
-      errorHints: n.error_hints_v2.slice(0, v)
+      errorHints: n.error_hints_v2.slice(0, b)
     }
   } catch (r) {
     var n;

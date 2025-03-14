@@ -21,7 +21,7 @@ var i = n(278074),
   g = n(938211),
   E = n(241822);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -74,7 +74,7 @@ function S(e) {
   });
   return (0, r.jsx)("div", {
     className: g.giftMainAnimationWrapper,
-    children: (0, r.jsx)(I, O(b({}, i), {
+    children: (0, r.jsx)(I, O(v({}, i), {
       avatarDecoration: n,
       src: o,
       className: g.avatar,

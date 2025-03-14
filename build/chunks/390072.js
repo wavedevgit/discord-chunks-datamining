@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   o = n(481060),
   a = n(725436),
-  l = n(11868),
-  s = n(217804),
+  s = n(11868),
+  l = n(217804),
   c = n(765305),
   u = n(786414);
 
@@ -16,13 +16,13 @@ function d(e) {
     guildScheduledEvent: t,
     channel: n,
     onClose: d
-  } = e, h = t.entity_type === c.WX.EXTERNAL, p = i.useCallback(e => (0, l.Qt)(t, d)(e), [t, d]), f = (0, s.u)(t, n);
-  if (null == f) return null;
+  } = e, h = t.entity_type === c.WX.EXTERNAL, p = i.useCallback(e => (0, s.Qt)(t, d)(e), [t, d]), g = (0, l.u)(t, n);
+  if (null == g) return null;
   let {
-    IconComponent: g,
+    IconComponent: m,
     locationName: _
-  } = f, m = (0, r.jsxs)(r.Fragment, {
-    children: [null != g && (0, r.jsx)(g, {
+  } = g, f = (0, r.jsxs)(r.Fragment, {
+    children: [null != m && (0, r.jsx)(m, {
       size: "custom",
       color: "currentColor",
       width: 20,
@@ -40,7 +40,7 @@ function d(e) {
     children: null != p ? (0, r.jsx)(o.P3F, {
       className: h ? u.externalLocation : u.channelLocation,
       onClick: p,
-      children: m
-    }) : m
+      children: f
+    }) : f
   })
 }

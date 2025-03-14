@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  l: () => b
+  l: () => v
 });
 var i, o = n(200651),
   a = n(192379),
@@ -69,8 +69,8 @@ function g(e, t) {
   return i
 }
 let E = "\n  visibility:hidden;\n  overflow:hidden;\n  position:absolute;\n  z-index:-1000;\n  top:0;\n  right:0;\n",
-  v = ["letter-spacing", "line-height", "padding-top", "padding-bottom", "font-family", "font-weight", "font-size", "text-transform", "width", "padding-left", "padding-right", "border-width", "box-sizing"];
-class b extends(i = a.PureComponent) {
+  b = ["letter-spacing", "line-height", "padding-top", "padding-bottom", "font-family", "font-weight", "font-size", "text-transform", "width", "padding-left", "padding-right", "border-width", "box-sizing"];
+class v extends(i = a.PureComponent) {
   componentDidMount() {
     var e, t;
     null === (e = (t = this.props).onResize) || void 0 === e || e.call(t, void 0), Promise.resolve().then(() => this.calculateSize())
@@ -117,7 +117,7 @@ class b extends(i = a.PureComponent) {
       r = parseFloat(t.getPropertyValue("padding-bottom")) + parseFloat(t.getPropertyValue("padding-top")),
       i = parseFloat(t.getPropertyValue("border-bottom-width")) + parseFloat(t.getPropertyValue("border-top-width"));
     return {
-      sizingStyle: v.map(e => "".concat(e, ":").concat(t.getPropertyValue(e))).join(";"),
+      sizingStyle: b.map(e => "".concat(e, ":").concat(t.getPropertyValue(e))).join(";"),
       paddingSize: r,
       borderSize: i,
       boxSizing: n
@@ -185,7 +185,7 @@ class b extends(i = a.PureComponent) {
     }
   }
 }
-f(b, "defaultProps", {
+f(v, "defaultProps", {
   autoFocus: !1,
   disabled: !1,
   autoCorrect: "off"

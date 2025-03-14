@@ -20,8 +20,8 @@ var i = n(120356),
   m = n(649700),
   g = n(810568),
   E = n(168524),
-  v = n(769654),
-  b = n(960870),
+  b = n(769654),
+  v = n(960870),
   y = n(139793),
   O = n(994746),
   I = n(273284),
@@ -42,8 +42,8 @@ var i = n(120356),
   U = n(386019),
   G = n(553375),
   B = n(228168),
-  V = n(981631),
-  F = n(701488),
+  F = n(981631),
+  V = n(701488),
   Z = n(388032),
   H = n(203396);
 
@@ -101,7 +101,7 @@ function K(e) {
     user: n,
     activity: W,
     entry: ei
-  }))), ea = (0, b.Z)({
+  }))), ea = (0, v.Z)({
     display: "live",
     user: n,
     activity: W,
@@ -163,7 +163,7 @@ function K(e) {
       guildName: z.name
     }),
     onClick: () => {
-      (0, v.X)(z.id), ea({
+      (0, b.X)(z.id), ea({
         action: "OPEN_VOICE_GUILD"
       }), null == J || J()
     }
@@ -175,13 +175,13 @@ function K(e) {
     variant: "text-xs/normal"
   }), eh = () => {
     var e;
-    return W.type === V.IIU.WATCHING ? null : (0, u.Z)(W) ? em() : (0, r.jsx)(x.Z, {
+    return W.type === F.IIU.WATCHING ? null : (0, u.Z)(W) ? em() : (0, r.jsx)(x.Z, {
       text: null === (e = W.assets) || void 0 === e ? void 0 : e.large_text,
       variant: "text-xs/normal"
     })
   }, em = () => {
     var e, t, n, i;
-    return (null === (e = W.party) || void 0 === e ? void 0 : e.size) == null && W.application_id === F.Zc ? (0, r.jsxs)("div", {
+    return (null === (e = W.party) || void 0 === e ? void 0 : e.size) == null && W.application_id === V.Zc ? (0, r.jsxs)("div", {
       className: H.gameState,
       children: [(0, r.jsx)(x.Z, {
         variant: "text-xs/normal",
@@ -231,13 +231,13 @@ function K(e) {
       }), ed(e)
     },
     children: [e_(), ep(), eh()]
-  }), ev = () => null == z || null == q ? null : (0, r.jsx)(M.Z, {
+  }), eb = () => null == z || null == q ? null : (0, r.jsx)(M.Z, {
     user: n,
     guild: z,
     channel: q,
     onAction: ea,
     onClose: J
-  }), eb = () => n.id === i.id ? null : (0, r.jsx)("div", {
+  }), ev = () => n.id === i.id ? null : (0, r.jsx)("div", {
     className: o()(H.actions, et),
     children: (0, r.jsx)(P.Z, {
       activity: W,
@@ -298,9 +298,9 @@ function K(e) {
                     activity: W,
                     className: H.badges
                   }), eg()]
-                }), ee === B.y0.FULL_SIZE && eb()]
-              }), ev()]
-            }), ee !== B.y0.FULL_SIZE && eb()]
+                }), ee === B.y0.FULL_SIZE && ev()]
+              }), eb()]
+            }), ee !== B.y0.FULL_SIZE && ev()]
           })
         })
       })

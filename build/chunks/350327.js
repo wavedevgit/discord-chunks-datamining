@@ -2,14 +2,14 @@
 "use strict";
 n.d(t, {
   CM: () => O,
-  Cf: () => b,
+  Cf: () => v,
   ID: () => y,
   US: () => T,
   Xz: () => N,
   Z: () => m,
   c_: () => S,
   f4: () => A,
-  g_: () => v,
+  g_: () => b,
   ho: () => E,
   pG: () => g,
   rf: () => C,
@@ -106,17 +106,17 @@ function g() {
 }
 
 function E(e) {
-  (null == e ? void 0 : e.startsWith("https:")) === !0 ? fetch(e).then(e => e.blob()).then(e => (0, u.fD)(e)).then(e => v(e)) : null != e && v(e)
+  (null == e ? void 0 : e.startsWith("https:")) === !0 ? fetch(e).then(e => e.blob()).then(e => (0, u.fD)(e)).then(e => b(e)) : null != e && b(e)
 }
 
-function v(e) {
+function b(e) {
   i.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_BANNER",
     banner: e
   })
 }
 
-function b(e) {
+function v(e) {
   i.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_BIO",
     bio: e

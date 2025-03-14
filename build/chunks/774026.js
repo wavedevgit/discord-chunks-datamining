@@ -21,13 +21,13 @@ function h(e) {
     streamingUntil: n,
     user: l,
     channel: h
-  } = e, x = (0, o.JZ)(l, h), g = (0, a.l)({
+  } = e, x = (0, o.JZ)(l, h), p = (0, a.l)({
     user: l,
     channelId: h.id,
     guildId: h.guild_id,
     messageId: void 0
-  })(x), p = i()(n).diff(i()(), "hours");
-  return p <= 0 ? null : (0, r.jsxs)("div", {
+  })(x), g = i()(n).diff(i()(), "hours");
+  return g <= 0 ? null : (0, r.jsxs)("div", {
     className: m.attribution,
     children: [(0, r.jsx)(c.Z, {
       className: m.img
@@ -40,8 +40,8 @@ function h(e) {
         variant: "text-sm/medium",
         children: f.NW.format(f.t.NZDuBg, {
           actorName: null !== (t = l.globalName) && void 0 !== t ? t : l.username,
-          actorHook: g,
-          num: p,
+          actorHook: p,
+          num: g,
           helpCenterLink: d.Z.getArticleURL(u.BhN.HD_STREAMING_POTION)
         })
       })]

@@ -19,8 +19,8 @@ var i = n(512969),
   m = n(131704),
   g = n(433355),
   E = n(592125),
-  v = n(430824),
-  b = n(306680),
+  b = n(430824),
+  v = n(306680),
   y = n(944486),
   O = n(914010),
   I = n(70956),
@@ -72,7 +72,7 @@ function P(e) {
     focusTargetId: null
   }), f.Z.commit(h));
   let m = i;
-  if (!o || p.Z.isConnected() || h.loadingMore ? h.loadingMore || h.ready && !h.cached ? null != r ? m = !0 : l && R.log("Skipping fetch because no other conditions matched") : null == t || null != v.Z.getGuild(t) ? m = !0 : l && R.log("Skipping fetch we are connected and have loaded messages") : m = !0, (0, _.Z)(n) && b.ZP.hasUnread(n) && (m = !0), m) {
+  if (!o || p.Z.isConnected() || h.loadingMore ? h.loadingMore || h.ready && !h.cached ? null != r ? m = !0 : l && R.log("Skipping fetch because no other conditions matched") : null == t || null != b.Z.getGuild(t) ? m = !0 : l && R.log("Skipping fetch we are connected and have loaded messages") : m = !0, (0, _.Z)(n) && v.ZP.hasUnread(n) && (m = !0), m) {
     if (f.Z.commit(h.mutate({
         loadingMore: !0
       })), null != r) c.Z.jumpToMessage({
@@ -94,7 +94,7 @@ function P(e) {
         isPreload: o,
         skipLocalFetch: s
       });
-      if (!((null == d ? void 0 : d.isThread()) && b.ZP.hasTrackedUnread(d.id)) || h.ready) return c.Z.fetchMessages({
+      if (!((null == d ? void 0 : d.isThread()) && v.ZP.hasTrackedUnread(d.id)) || h.ready) return c.Z.fetchMessages({
         channelId: n,
         limit: T.AQB,
         isPreload: o,
@@ -104,7 +104,7 @@ function P(e) {
         }
       });
       {
-        let e = b.ZP.getTrackedAckMessageId(d.id);
+        let e = v.ZP.getTrackedAckMessageId(d.id);
         return R.log("Jumping to most recent message in thread ".concat(d.id, " - ").concat(e)), c.Z.fetchMessages({
           channelId: n,
           limit: T.AQB,
@@ -124,7 +124,7 @@ let w = 90 * I.Z.Millis.DAY,
   D = "viewedThreadIds";
 
 function L(e) {
-  if (b.ZP.hasOpenedThread(e)) return !1;
+  if (v.ZP.hasOpenedThread(e)) return !1;
   if (null == r) {
     var t;
     r = null !== (t = a.K.get(D, {})) && void 0 !== t ? t : {}
@@ -228,7 +228,7 @@ function B(e) {
   }), U(t, n))
 }
 
-function V(e) {
+function F(e) {
   let {
     channel: t,
     messageId: n
@@ -240,7 +240,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     response: t
   } = e;
@@ -316,12 +316,12 @@ class K extends d.Z {
       OVERLAY_INITIALIZE: x,
       CHANNEL_SELECT: k,
       VOICE_CHANNEL_SELECT: j,
-      THREAD_CREATE: V,
+      THREAD_CREATE: F,
       THREAD_LIST_SYNC: () => M(),
-      CHANNEL_CREATE: V,
+      CHANNEL_CREATE: F,
       CHANNEL_PRELOAD: B,
       GUILD_CREATE: () => M(),
-      MESSAGE_END_EDIT: F,
+      MESSAGE_END_EDIT: V,
       LOAD_MESSAGES_SUCCESS: H,
       UPLOAD_FAIL: W,
       CHANNEL_DELETE: () => M(),

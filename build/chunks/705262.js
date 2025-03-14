@@ -21,8 +21,8 @@ var r = n(200651),
   m = n(540059),
   g = n(98278),
   E = n(639119),
-  v = n(311476),
-  b = n(165583),
+  b = n(311476),
+  v = n(165583),
   y = n(587446),
   O = n(210887),
   I = n(740492),
@@ -80,11 +80,11 @@ function G(e, t) {
 var B = function(e) {
   return e.EDITOR = "EDITOR", e.SETTINGS = "SETTINGS", e
 }({});
-let V = Object.freeze({
+let F = Object.freeze({
     EDITOR: D.fy.SLOW_USER_ACTION,
     SETTINGS: D.fy.INFREQUENT_USER_ACTION
   }),
-  F = i.createContext({}),
+  V = i.createContext({}),
   Z = e => {
     let {
       isPersisted: t,
@@ -105,7 +105,7 @@ let V = Object.freeze({
       isCoachmark: i
     } = e, o = (0, m.Q3)("GradientSelectorsTitle"), {
       enabled: a
-    } = v.Z.useExperiment({
+    } = b.Z.useExperiment({
       location: "GradientSelectorsTitle"
     }, {
       autoTrackExposure: !1,
@@ -148,7 +148,7 @@ let V = Object.freeze({
       isCoachmark: a
     } = e, l = (null === (n = (0, E.N)()) || void 0 === n ? void 0 : null === (t = n.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === P.Si.TIER_2, {
       enabled: c
-    } = v.Z.useExperiment({
+    } = b.Z.useExperiment({
       location: "GradientSelectorsTitle"
     }, {
       autoTrackExposure: !1,
@@ -202,8 +202,8 @@ let V = Object.freeze({
       isCoachmark: a
     } = e, {
       type: s
-    } = i.useContext(F), [c] = (0, l.Wu)([N.Z], () => [N.Z.isPreview]), u = (null === (n = (0, E.N)()) || void 0 === n ? void 0 : null === (t = n.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === P.Si.TIER_2;
-    return "EDITOR" === s && c && u ? (0, r.jsx)(b.ZP, {
+    } = i.useContext(V), [c] = (0, l.Wu)([N.Z], () => [N.Z.isPreview]), u = (null === (n = (0, E.N)()) || void 0 === n ? void 0 : null === (t = n.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === P.Si.TIER_2;
+    return "EDITOR" === s && c && u ? (0, r.jsx)(v.ZP, {
       type: P.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       subscriptionTier: P.Si.TIER_2,
       children: x.NW.format(x.t.G8yQXl, {
@@ -231,18 +231,18 @@ let V = Object.freeze({
     } = e, {
       type: o,
       delay: a
-    } = i.useContext(F), {
+    } = i.useContext(V), {
       analyticsLocations: s
     } = (0, p.ZP)(_.Z.CLIENT_THEMES_THEME_SELECTOR), [h, m] = (0, l.Wu)([N.Z], () => {
       var e;
       return [N.Z.isPreview, null === (e = N.Z.gradientPreset) || void 0 === e ? void 0 : e.id]
-    }), [g, E] = i.useState(!1), [b, y] = i.useState(-1), O = (0, l.e7)([f.Z], () => f.Z.useReducedMotion);
+    }), [g, E] = i.useState(!1), [v, y] = i.useState(-1), O = (0, l.e7)([f.Z], () => f.Z.useReducedMotion);
     i.useEffect(() => {
-      (b === C.XV.length - 2 && "EDITOR" === o || m === c.Us.EASTER_EGG) && E(!0)
-    }, [b, o, m]);
+      (v === C.XV.length - 2 && "EDITOR" === o || m === c.Us.EASTER_EGG) && E(!0)
+    }, [v, o, m]);
     let {
       enabled: I
-    } = v.Z.useExperiment({
+    } = b.Z.useExperiment({
       location: "useGradientSelectors"
     }, {
       autoTrackExposure: !1
@@ -275,7 +275,7 @@ let V = Object.freeze({
           theme: e.theme,
           useSystemTheme: h ? w.K.OFF : void 0
         }, a), null != t) {
-        if (g && E(!1), t <= b || 0 === t) {
+        if (g && E(!1), t <= v || 0 === t) {
           y(0);
           return
         }
@@ -347,7 +347,7 @@ let V = Object.freeze({
       hideSystemSelector: n = !1
     } = e, {
       delay: o
-    } = i.useContext(F), {
+    } = i.useContext(V), {
       analyticsLocations: a
     } = (0, p.ZP)(_.Z.CLIENT_THEMES_THEME_SELECTOR), [s, c, u] = (0, l.Wu)([O.Z, I.ZP, N.Z], () => [O.Z.theme, null == N.Z.gradientPreset, I.ZP.useSystemTheme === w.K.ON]), f = e => {
       (0, T.xs)(), Z({
@@ -437,9 +437,9 @@ let V = Object.freeze({
       labelledBy: o
     }), s = i.useMemo(() => ({
       type: t,
-      delay: V[t]
+      delay: F[t]
     }), [t]);
-    return (0, r.jsx)(F.Provider, {
+    return (0, r.jsx)(V.Provider, {
       value: s,
       children: (0, r.jsx)("div", G(j({}, a), {
         className: M.__invalid_container,

@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => x,
+  Z: () => b,
   _: () => h
 });
 var r, i = n(200651),
@@ -20,11 +20,11 @@ let f = {
   GRAY: g.gray
 };
 
-function b(e) {
+function x(e) {
   return Math.round(e / p) * p
 }
 
-function x(e) {
+function b(e) {
   let {
     notchBackground: t,
     progress: n,
@@ -35,15 +35,15 @@ function x(e) {
   } = e, {
     ref: p,
     width: h
-  } = (0, d.Z)(), x = s.useMemo(() => null != h ? b(h) : 0, [h]), N = s.useMemo(() => {
-    let e = Math.abs(b(x * (100 - Math.max(0, Math.min(100, n))) / 100) - x);
+  } = (0, d.Z)(), b = s.useMemo(() => null != h ? x(h) : 0, [h]), N = s.useMemo(() => {
+    let e = Math.abs(x(b * (100 - Math.max(0, Math.min(100, n))) / 100) - b);
     return {
       transform: "translateX(".concat(e, "px)")
     }
-  }, [n, x]), _ = s.useMemo(() => ({
-    width: "".concat(x, "px"),
+  }, [n, b]), _ = s.useMemo(() => ({
+    width: "".concat(b, "px"),
     background: n <= 0 ? "none" : "linear-gradient(to right, ".concat(r, ", ").concat(a, ")")
-  }), [a, r, n, x]);
+  }), [a, r, n, b]);
   return (0, i.jsxs)("div", {
     className: g.wrapper,
     ref: p,
@@ -53,8 +53,8 @@ function x(e) {
       children: [(0, i.jsx)("div", {
         className: g.progress,
         style: N
-      }), 0 !== x && (0, i.jsx)(u.Z, {
-        width: x,
+      }), 0 !== b && (0, i.jsx)(u.Z, {
+        width: b,
         className: l()(g.notches, f[t])
       })]
     }), m]

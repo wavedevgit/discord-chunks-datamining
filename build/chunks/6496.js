@@ -25,9 +25,9 @@ var r = n(683860),
   m = n(702225),
   g = n(981631),
   E = n(176505),
-  v = n(124368);
+  b = n(124368);
 
-function b(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -43,7 +43,7 @@ function y(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -73,9 +73,9 @@ function S(e) {
 function T(e) {
   switch (e) {
     case r.z.CREATION_DATE:
-      return v.SX.CREATION_DATE;
+      return b.SX.CREATION_DATE;
     case r.z.LATEST_ACTIVITY:
-      return v.SX.LATEST_ACTIVITY;
+      return b.SX.LATEST_ACTIVITY;
     default:
       throw Error("Unexpected sort order ".concat(e))
   }

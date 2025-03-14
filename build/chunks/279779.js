@@ -20,7 +20,7 @@ var r = n(392711),
   g = n(51144),
   E = n(981631);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -28,7 +28,7 @@ function v(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let b = 10;
+let v = 10;
 
 function y(e) {
   if (null == e || d.Z.isBlockedOrIgnored(e.id)) return null;
@@ -102,8 +102,8 @@ class T {
       payload: this._currentQuery
     })) : this._subscribed || this.subscribe())
   }
-  constructor(e, t, n = b) {
-    v(this, "_worker", void 0), v(this, "_uuid", void 0), v(this, "_callback", void 0), v(this, "_limit", void 0), v(this, "_currentQuery", void 0), v(this, "_nextQuery", void 0), v(this, "_subscribed", void 0), v(this, "handleMessages", e => {
+  constructor(e, t, n = v) {
+    b(this, "_worker", void 0), b(this, "_uuid", void 0), b(this, "_callback", void 0), b(this, "_limit", void 0), b(this, "_currentQuery", void 0), b(this, "_nextQuery", void 0), b(this, "_subscribed", void 0), b(this, "handleMessages", e => {
       let t = e.data;
       null != t && "USER_RESULTS" === t.type && t.uuid === this._uuid && (!1 !== this._currentQuery && this._callback(t.payload), null != this._currentQuery && (this._currentQuery = null), this._setNextQuery())
     }), this._worker = e, this._uuid = (0, o.Z)(), this._callback = t, this._limit = n, this._currentQuery = null, this._nextQuery = null, this._subscribed = !1, this.subscribe()
@@ -148,7 +148,7 @@ class N extends a.Z {
     }
   }
   getSearchContext(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : b;
+    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : v;
     this.initialize();
     let {
       _worker: n
@@ -157,7 +157,7 @@ class N extends a.Z {
     return new T(n, e, t)
   }
   constructor(...e) {
-    super(...e), v(this, "_worker", void 0), v(this, "actions", {
+    super(...e), b(this, "_worker", void 0), b(this, "actions", {
       LOGOUT: () => this._handleLogout(),
       POST_CONNECTION_OPEN: () => this._handleConnectionOpen(),
       CONNECTION_OPEN_SUPPLEMENTAL: e => this._handleConnectionOpenSupplemental(e),
@@ -174,9 +174,9 @@ class N extends a.Z {
       CHANNEL_UPDATES: e => this._handleDMUpdates(e),
       CHANNEL_RECIPIENT_ADD: e => this._handleRecipientChanges(e),
       PASSIVE_UPDATE_V2: e => this._handlePassiveUpdateV2(e)
-    }), v(this, "_handleLogout", () => {
+    }), b(this, "_handleLogout", () => {
       this.rebootWebworker()
-    }), v(this, "_handleConnectionOpen", () => {
+    }), b(this, "_handleConnectionOpen", () => {
       setTimeout(() => {
         let e = f.default.getCurrentUser();
         if (null == e) return;
@@ -197,7 +197,7 @@ class N extends a.Z {
           }
         this.updateUsers(Object.values(n), "connection_open")
       }, 3e3)
-    }), v(this, "_handleConnectionOpenSupplemental", e => {
+    }), b(this, "_handleConnectionOpenSupplemental", e => {
       let {
         guilds: t
       } = e;
@@ -218,7 +218,7 @@ class N extends a.Z {
           });
         this.updateUsers([...e, ...n], "connection_open_supplemental")
       }, 3e3)
-    }), v(this, "_handleOverlayInitialize", e => {
+    }), b(this, "_handleOverlayInitialize", e => {
       let {
         users: t,
         guildMembers: n
@@ -234,43 +234,43 @@ class N extends a.Z {
           }
       }
       this.updateUsers(Array.from(r.values()), "overlay_initialize"), r.clear()
-    }), v(this, "_handleCurrentUserUpdate", e => {
+    }), b(this, "_handleCurrentUserUpdate", e => {
       let {
         user: t
       } = e, n = y(t);
       null != n && this.updateUsers([n], "current_user_update")
-    }), v(this, "_handleGuildCreate", e => {
+    }), b(this, "_handleGuildCreate", e => {
       let {
         guild: t
       } = e, {
         members: n
       } = t;
       this.updateUsers(S(n, t.id), "guild_create")
-    }), v(this, "_handleGuildMembersChunkBatch", e => {
+    }), b(this, "_handleGuildMembersChunkBatch", e => {
       let {
         chunks: t
       } = e, n = [];
       for (let e of t) n.push(...S(e.members, e.guildId));
       this.updateUsers(n, "guild_members_chunk_batch")
-    }), v(this, "_handleGuildMemberUpdate", e => {
+    }), b(this, "_handleGuildMemberUpdate", e => {
       let {
         guildId: t,
         user: n,
         nick: r
       } = e, i = y(n);
       null != i && (O(i, t, r), this.updateUsers([i], "guild_member_update"))
-    }), v(this, "_handlePassiveUpdateV2", e => {
+    }), b(this, "_handlePassiveUpdateV2", e => {
       this.updateUsers(S(e.members, e.guildId), "passive_update_v2")
-    }), v(this, "_handleRelationshipAdd", e => {
+    }), b(this, "_handleRelationshipAdd", e => {
       let t = y(e.relationship.user);
       this.updateUsers([t], "relationship_add")
-    }), v(this, "_handleRelationshipUpdate", e => {
+    }), b(this, "_handleRelationshipUpdate", e => {
       let t = y(f.default.getUser(e.relationship.id));
       this.updateUsers([t], "relationship_update")
-    }), v(this, "_handleRelationshipRemove", e => {
+    }), b(this, "_handleRelationshipRemove", e => {
       let t = y(f.default.getUser(e.relationship.id));
       this.updateUsers([t], "relationship_remove")
-    }), v(this, "_handleDMCreate", e => {
+    }), b(this, "_handleDMCreate", e => {
       let {
         channel: {
           id: t
@@ -279,7 +279,7 @@ class N extends a.Z {
       if (0 === n.length) return;
       let r = y(f.default.getCurrentUser());
       O(r, t), n.push(r), this.updateUsers(n, "dm_create")
-    }), v(this, "_handleDMUpdates", e => {
+    }), b(this, "_handleDMUpdates", e => {
       let {
         channels: t
       } = e;
@@ -289,7 +289,7 @@ class N extends a.Z {
         let n = y(f.default.getCurrentUser());
         O(n, e.id), t.push(n), this.updateUsers(t, "dm_updates")
       }
-    }), v(this, "_handleRecipientChanges", e => {
+    }), b(this, "_handleRecipientChanges", e => {
       let {
         channelId: t,
         user: n,

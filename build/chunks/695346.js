@@ -24,7 +24,7 @@ n.d(t, {
   R_: () => ew,
   Rt: () => eU,
   SE: () => eN,
-  Sb: () => eb,
+  Sb: () => ev,
   Sh: () => ex,
   T4: () => C,
   UP: () => eo,
@@ -39,13 +39,13 @@ n.d(t, {
   _j: () => eD,
   bh: () => $,
   bm: () => er,
-  cC: () => b,
+  cC: () => v,
   cP: () => U,
   co: () => ec,
   d$: () => M,
   d4: () => N,
   dN: () => h,
-  eR: () => v,
+  eR: () => b,
   eo: () => L,
   ev: () => q,
   fq: () => E,
@@ -61,7 +61,7 @@ n.d(t, {
   kJ: () => Z,
   kU: () => X,
   l4: () => ej,
-  mX: () => F,
+  mX: () => V,
   nc: () => em,
   qF: () => w,
   rN: () => eg,
@@ -72,7 +72,7 @@ n.d(t, {
   x4: () => e_,
   xM: () => en,
   xq: () => K,
-  zA: () => V
+  zA: () => F
 }), n(47120);
 var r = n(442837),
   i = n(524437),
@@ -110,13 +110,13 @@ let h = (0, c.Zc)("textAndImages", "useLegacyChatInput", e => {
   }, e => o.D5.create({
     value: e
   })),
-  v = (0, c.Zc)("textAndImages", "includeSoundmojiInAutocomplete", e => {
+  b = (0, c.Zc)("textAndImages", "includeSoundmojiInAutocomplete", e => {
     var t;
     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
   }, e => o.D5.create({
     value: e
   })),
-  b = (0, c.Zc)("textAndImages", "renderSpoilers", e => {
+  v = (0, c.Zc)("textAndImages", "renderSpoilers", e => {
     var t;
     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t ? t : f.A2N.ON_CLICK
   }, e => o.Gm.create({
@@ -197,8 +197,8 @@ let O = (0, c.Zc)("notifications", "reactionNotifications", e => null != e ? e :
     value: e
   })),
   B = [],
-  V = (0, c.Zc)("privacy", "messageRequestRestrictedGuildIds", e => null != e ? e : B, e => e),
-  F = (0, c.Zc)("privacy", "defaultMessageRequestRestricted", e => null == e ? void 0 : e.value, e => o.D5.create({
+  F = (0, c.Zc)("privacy", "messageRequestRestrictedGuildIds", e => null != e ? e : B, e => e),
+  V = (0, c.Zc)("privacy", "defaultMessageRequestRestricted", e => null == e ? void 0 : e.value, e => o.D5.create({
     value: e
   })),
   Z = (0, c.Zc)("privacy", "nonSpamRetrainingOptIn", e => null == e ? void 0 : e.value, e => null == e ? void 0 : o.D5.create({
@@ -380,11 +380,11 @@ let el = new Set(Object.values(f.Skl)),
 (0, c.Zc)("appearance", "channelListLayout", e => null != e && eE.has(e.value) ? e.value : a.l.COZY, e => o.Gm.create({
   value: e
 }));
-let ev = new Set([a.Z.ALL, a.Z.UNREADS, a.Z.NONE]);
-(0, c.Zc)("appearance", "messagePreviews", e => null != e && ev.has(e.value) ? e.value : a.Z.ALL, e => o.Gm.create({
+let eb = new Set([a.Z.ALL, a.Z.UNREADS, a.Z.NONE]);
+(0, c.Zc)("appearance", "messagePreviews", e => null != e && eb.has(e.value) ? e.value : a.Z.ALL, e => o.Gm.create({
   value: e
 }));
-let eb = (0, c.KM)((0, c.Zc)("appearance", "developerMode", e => null != e && e, e => e), "appearance", "developerMode"),
+let ev = (0, c.KM)((0, c.Zc)("appearance", "developerMode", e => null != e && e, e => e), "appearance", "developerMode"),
   ey = (0, c.Zc)("appearance", "clientThemeSettings", e => {
     var t;
     return {

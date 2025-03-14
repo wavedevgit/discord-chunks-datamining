@@ -57,7 +57,7 @@ function g(e, t) {
 
 function E(e, t) {
   if (null == e) return {};
-  var n, r, i = v(e, t);
+  var n, r, i = b(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -65,23 +65,23 @@ function E(e, t) {
   return i
 }
 
-function v(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let b = "MMM D, YYYY";
+let v = "MMM D, YYYY";
 
 function y(e) {
   let {
     value: t,
     onSelect: n,
-    dateFormat: i = b,
+    dateFormat: i = v,
     minDate: p,
     maxDate: m,
-    disabled: v = !1
+    disabled: b = !1
   } = e, y = (0, d.Q3)("DateInput");
 
   function O(e) {
@@ -111,11 +111,11 @@ function y(e) {
       } = e, a = E(e, ["onClick"]);
       return (0, r.jsx)(s.P, g(h({}, a), {
         className: o()(_.inputDefault, f.container, {
-          [_.disabled]: v,
-          [f.disabled]: v
+          [_.disabled]: b,
+          [f.disabled]: b
         }),
-        onClick: v ? void 0 : n,
-        "aria-disabled": v,
+        onClick: b ? void 0 : n,
+        "aria-disabled": b,
         children: (0, r.jsxs)("div", {
           className: f.content,
           children: [(0, r.jsx)("div", {

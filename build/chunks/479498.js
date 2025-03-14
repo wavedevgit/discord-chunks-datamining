@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  k: () => v
+  k: () => b
 }), n(47120);
 var r, i = n(200651),
   o = n(192379),
@@ -156,7 +156,7 @@ f(E, "defaultProps", {
   pauseWhileUnfocused: !0,
   pause: !1
 });
-let v = e => {
+let b = e => {
   var {
     componentRef: t,
     ignoreReducedMotion: n = !1

@@ -2,8 +2,8 @@
 "use strict";
 let r;
 n.d(t, {
-  I: () => v,
-  Z: () => V
+  I: () => b,
+  Z: () => F
 }), n(47120), n(230036), n(978209);
 var i, o = n(392711),
   a = n.n(o),
@@ -27,8 +27,8 @@ function E(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let v = 25,
-  b = !1,
+let b = 25,
+  v = !1,
   y = !0,
   O = !1,
   I = !1,
@@ -38,7 +38,7 @@ let v = 25,
   A = 0;
 
 function C() {
-  b = !1, y = !0, O = !1, I = !1, S = null, T = s.z.LATEST_ACTIVITY, r = new Set, A = 0, N = []
+  v = !1, y = !0, O = !1, I = !1, S = null, T = s.z.LATEST_ACTIVITY, r = new Set, A = 0, N = []
 }
 
 function R(e, t) {
@@ -46,7 +46,7 @@ function R(e, t) {
 }
 
 function P(e) {
-  e.channelId === S && e.sortOrder === T && (0, h.OL)(e.tagFilter, r) || C(), S = e.channelId, T = e.sortOrder, r = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), b = !0, y = !1
+  e.channelId === S && e.sortOrder === T && (0, h.OL)(e.tagFilter, r) || C(), S = e.channelId, T = e.sortOrder, r = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), v = !0, y = !1
 }
 
 function w(e) {
@@ -61,7 +61,7 @@ function w(e) {
     hasMoreThreads: e.hasMore,
     filterTagIds: Array.from(e.tagFilter),
     sortOrder: e.sortOrder
-  }), L(), O = e.hasMore, A = e.offset + v, b = !1, y = !1
+  }), L(), O = e.hasMore, A = e.offset + b, v = !1, y = !1
 }
 
 function D(e) {
@@ -86,7 +86,7 @@ function L() {
 
 function x(e) {
   if (e.channelId !== S || e.sortOrder !== T || !(0, h.OL)(e.tagFilter, r)) return !1;
-  b = !1, I = !0, y = !1
+  v = !1, I = !0, y = !1
 }
 
 function M(e) {
@@ -118,7 +118,7 @@ class B extends(i = l.ZP.Store) {
     this.waitFor(_.Z, g.Z, p.ZP)
   }
   get canLoadMore() {
-    return O && !b && !I
+    return O && !v && !I
   }
   get nextOffset() {
     return A
@@ -127,14 +127,14 @@ class B extends(i = l.ZP.Store) {
     return y
   }
   isLoading(e, t, n) {
-    return S === e && T === t && (0, h.OL)(r, n) ? b : (C(), !1)
+    return S === e && T === t && (0, h.OL)(r, n) ? v : (C(), !1)
   }
   getThreads(e, t, n) {
     return S === e && T === t && (0, h.OL)(r, n) ? N : G
   }
 }
 E(B, "displayName", "ArchivedThreadsStore");
-let V = new B(c.Z, {
+let F = new B(c.Z, {
   CONNECTION_OPEN: C,
   THREAD_DELETE: j,
   THREAD_UPDATE: U,

@@ -20,8 +20,8 @@ var i = n(990547),
   m = n(981631),
   g = n(176505),
   E = n(388032),
-  v = n(567818);
-let b = () => {
+  b = n(567818);
+let v = () => {
   let e = (0, l.ZP)();
   return (0, a.ap)(e) ? n(537381) : n(341048)
 };
@@ -31,7 +31,7 @@ function y(e) {
     onClose: t,
     guildId: n,
     emojiId: a
-  } = e, l = b(), {
+  } = e, l = v(), {
     analyticsLocations: y
   } = (0, u.ZP)(c.Z.GUILD_ROLE_SUBSCRIPTION_EMOJI_PICKER_UPSELL);
   (0, d.Z)({
@@ -55,39 +55,39 @@ function y(e) {
     }),
     N = S ? E.NW.string(E.t.PjZ7DQ) : E.NW.string(E.t.p8FG1N);
   return (0, r.jsxs)("div", {
-    className: v.container,
+    className: b.container,
     children: [(0, r.jsx)("div", {
-      className: v.background
+      className: b.background
     }), (0, r.jsxs)("div", {
-      className: v.content,
+      className: b.content,
       children: [(0, r.jsx)(s.zxk, {
         look: s.zxk.Looks.BLANK,
         size: s.zxk.Sizes.ICON,
-        className: v.closeButton,
+        className: b.closeButton,
         onClick: t,
         children: (0, r.jsx)(s.Dio, {
           size: "xs",
           color: "currentColor",
           "aria-label": E.NW.string(E.t.cpT0Cg),
-          className: v.closeButtonIcon
+          className: b.closeButtonIcon
         })
       }), (0, r.jsx)("img", {
         alt: "",
         src: l,
-        className: v.upsellImage
+        className: b.upsellImage
       }), (0, r.jsx)(s.LZC, {
         size: 22
       }), (0, r.jsx)(s.X6q, {
         color: "header-primary",
         variant: "heading-lg/extrabold",
-        className: v.header,
+        className: b.header,
         children: E.NW.string(E.t.cBjkc3)
       }), (0, r.jsx)(s.LZC, {
         size: 4
       }), (0, r.jsx)(s.Text, {
         color: "header-secondary",
         variant: "text-md/normal",
-        className: v.description,
+        className: b.description,
         children: T
       }), (0, r.jsx)(s.LZC, {
         size: 24

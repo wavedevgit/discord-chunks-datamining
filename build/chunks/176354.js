@@ -23,12 +23,12 @@ let h = 2097152,
   g = new Set([...m, p.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE, p.Z5.ROLE_SUBSCRIPTION_UNAVAILABLE]),
   E = new Set([p.Z5.DISALLOW_CUSTOM, p.Z5.DISALLOW_EXTERNAL, p.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE, p.Z5.ONLY_GUILD_EMOJIS_ALLOWED]);
 
-function v(e) {
+function b(e) {
   return e.type === i.B.GUILD || null != e.guildId
 }
 
-function b(e, t) {
-  return null != e && null != t && (!v(e) || t === e.guildId)
+function v(e, t) {
+  return null != e && null != t && (!b(e) || t === e.guildId)
 }
 
 function y(e) {
@@ -39,14 +39,14 @@ function y(e) {
     intention: c,
     forceIncludeExternalGuilds: u
   } = e;
-  if (!v(t)) return null;
+  if (!b(t)) return null;
   if (c === p.Hz.GUILD_PROFILE) return p.Z5.DISALLOW_CUSTOM;
   let d = null != n && (0, a.zi)(n.type),
     h = null != n && (0, a.bw)(n.type),
-    m = b(t, i),
+    m = v(t, i),
     g = s.Z.can(_.Plq.USE_EXTERNAL_EMOJIS, n);
   if (c === p.Hz.COMMUNITY_CONTENT) return m && null != t.guildId && t.available ? null : p.Z5.DISALLOW_EXTERNAL;
-  if (!(0, p.Gt)(c) && !b(t, i) && !u || (d || h) && !m && !g) return p.Z5.DISALLOW_EXTERNAL;
+  if (!(0, p.Gt)(c) && !v(t, i) && !u || (d || h) && !m && !g) return p.Z5.DISALLOW_EXTERNAL;
   if (null != t.id && !t.available) return p.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE;
   let E = l.default.getCurrentUser();
   return f.ZP.canUseEmojisEverywhere(E) || m || c !== p.Hz.STATUS && t.managed ? (0, o.Fv)(t, null != i ? i : void 0) ? (0, r.Ol)(t.guildId) ? p.Z5.ROLE_SUBSCRIPTION_UNAVAILABLE : p.Z5.ROLE_SUBSCRIPTION_LOCKED : !t.animated || f.ZP.canUseAnimatedEmojis(E) || (0, o.yH)(t) ? null : p.Z5.PREMIUM_LOCKED : p.Z5.PREMIUM_LOCKED
@@ -77,9 +77,9 @@ let I = {
   },
   filterUnsupportedEmojis: u.Z.filterUnsupportedEmojis,
   getURL: u.Z.getURL,
-  isInternalEmojiForGuildId: b,
+  isInternalEmojiForGuildId: v,
   getEmojiUnavailableReason: y,
-  isCustomEmoji: v,
+  isCustomEmoji: b,
   getEmojiUnavailableReasons(e) {
     let {
       categoryEmojis: t,

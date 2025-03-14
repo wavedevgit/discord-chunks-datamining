@@ -17,8 +17,8 @@ var s = n(399606),
   p = n(832149),
   h = n(300284),
   f = n(341907),
-  b = n(703656),
-  x = n(547972),
+  x = n(703656),
+  b = n(547972),
   N = n(131951),
   _ = n(594174),
   E = n(78839),
@@ -71,8 +71,8 @@ var s = n(399606),
   ep = n(698173),
   eh = n(926262),
   ef = n(482668),
-  eb = n(21504),
-  ex = n(371435),
+  ex = n(21504),
+  eb = n(371435),
   eN = n(83663),
   e_ = ((r = {}).CLIENT_THEMES = "clientThemes", r.CLIPS = "clips", r.COLLECTIBLE_DECO = "collectibleDeco", r.EARLY_ACCESS = "earlyAccess", r.ENTRANCE_SOUNDS = "entranceSounds", r.PROFILES = "profiles", r.REMIXING = "remixing", r.SERVER_BOOSTS = "serverBoosts", r.GREY_SERVER_BOOSTS = "greyServerBoosts", r.SPECIAL_MEMBER_PRICING = "specialMemberPricing", r.SPECIAL_MEMBER_PRICING_SEE_ALL_VARIANT = "specialMemberPricingSeeAllVariant", r.SPECIAL_SHOP_PERKS = "specialShopPerks", r.UNLIMITED_SUPER_REACTIONS = "unlimitedSuperReactions", r.SUPER_REACTIONS = "superReactions", r.UPCOMING_DROP_UNTIMED = "upcomingDropUntimed", r.CUSTOM_APP_ICONS = "customAppIcons", r.MORE_EMOJI_POWER = "moreEmojiPower", r.CUSTOM_SOUNDS_EVERYWHERE = "customSoundsEverywhere", r.SPECIAL_STICKER_ACCESS = "specialStickerAccess", r.LARGE_UPLOADS = "largeUploads", r.HD_VIDEO = "hdVideo", r.BADGE = "badge", r.GREY_BADGE = "greyBadge", r.ENTRANCE_SOUNDS_SEE_ALL_VARIATION = "entranceSoundsSeeAllVariation", r.EARLY_ACCESS_SEE_ALL_VARIATION = "earlyAccessSeeAllVariant", r.TENURE_REWARD_COLLECTIBLE = "tenureRewardCollectible", r.REFERRAL_PROGRAM = "referralProgram", r.NEW_APP_STYLES_UPDATE_JUNE_2024 = "newAppStylesUpdateJune2024", r.SERVER_PROFILES = "serverProfiles", r.TENURE_BADGE = "tenureBadge", r.PERMADECOS = "permadecos", r);
 let eE = () => {
@@ -103,7 +103,7 @@ let eE = () => {
       analyticsLocations: e
     })
   }, eB = () => {
-    (0, b.uL)(B.Z5c.COLLECTIBLES_SHOP)
+    (0, x.uL)(B.Z5c.COLLECTIBLES_SHOP)
   }, eM = () => {
     l.Z.open(B.oAB.APPEARANCE, null, {
       scrollPosition: M.h1.CUSTOM_APP_ICONS
@@ -131,7 +131,7 @@ let eE = () => {
       descriptionCta: eP ? V.NW.string(V.t.jVcuVV) : V.NW.string(V.t.hvVgAQ),
       pillText: V.NW.string(V.t.EYxi0t),
       onCtaClick: eP ? () => {
-        (0, x.Z)(U.Z.CLIPS, {
+        (0, b.Z)(U.Z.CLIPS, {
           openWithoutBackstack: !0,
           analyticsLocations: e
         })
@@ -252,7 +252,7 @@ let eE = () => {
       title: V.NW.string(V.t["NyDu//"]),
       subtitle: V.NW.string(V.t["4pEwXF"]),
       descriptionCta: V.NW.string(V.t.jVcuVV),
-      perkImage: ex.Z,
+      perkImage: eb.Z,
       imageOverlayText: V.NW.string(V.t.lcYttb)
     },
     specialMemberPricing: eS ? {
@@ -500,7 +500,7 @@ let eE = () => {
       termsLink: S.Ps
     }),
     perkComponent: (0, i.jsx)(Z.Z, {
-      image: r ? eb.Z : ef.Z,
+      image: r ? ex.Z : ef.Z,
       cta: V.NW.string(V.t.s0w7a2),
       onClick: () => {
         (0, a.ZDy)(async () => {

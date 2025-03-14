@@ -12,7 +12,7 @@ n.d(t, {
   iF: () => S,
   kl: () => N,
   mn: () => T,
-  p3: () => v,
+  p3: () => b,
   wC: () => E
 }), n(789020), n(47120), n(653041), n(86693), n(536091);
 var r = n(442837),
@@ -48,14 +48,14 @@ function E(e) {
   return n && r && i
 }
 
-function v(e, t) {
+function b(e, t) {
   var n;
   if (null == e || !e.hasFeature(p.oNc.GUILD_ONBOARDING) || null == t || null == t.joinedAt || new Date(t.joinedAt) < m) return !1;
   let r = null !== (n = t.flags) && void 0 !== n ? n : 0;
   return u.yE(r, h.q.STARTED_ONBOARDING) && !u.yE(r, h.q.COMPLETED_ONBOARDING)
 }
 
-function b(e, t, n) {
+function v(e, t, n) {
   let r = new Set;
   e.forEach(e => {
     e.options.forEach(e => {
@@ -70,7 +70,7 @@ function b(e, t, n) {
 }
 
 function y(e, t, n) {
-  return b(t, n, s.ZP.getChannels(e)[s.sH].map(e => {
+  return v(t, n, s.ZP.getChannels(e)[s.sH].map(e => {
     let {
       channel: t
     } = e;
@@ -79,7 +79,7 @@ function y(e, t, n) {
 }
 
 function O(e, t, n) {
-  return b(t, n, (0, r.e7)([s.ZP], () => s.ZP.getChannels(e))[s.sH].map(e => {
+  return v(t, n, (0, r.e7)([s.ZP], () => s.ZP.getChannels(e))[s.sH].map(e => {
     let {
       channel: t
     } = e;

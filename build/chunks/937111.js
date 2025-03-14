@@ -70,7 +70,7 @@ function E(e) {
   (0, l.d3)(r) ? m(n): d[n] = r
 }
 
-function v(e) {
+function b(e) {
   let {
     guildId: t,
     request: n
@@ -82,7 +82,7 @@ function v(e) {
   (0, l.d3)(r) ? m(t): d[t] = r
 }
 
-function b(e) {
+function v(e) {
   let {
     guildId: t
   } = e;
@@ -218,9 +218,9 @@ class R extends(r = i.ZP.Store) {
 c(R, "displayName", "UserGuildJoinRequestStore");
 let P = new R(o.Z, {
   CONNECTION_OPEN: g,
-  GUILD_JOIN_REQUEST_UPDATE: v,
-  GUILD_JOIN_REQUEST_CREATE: v,
-  GUILD_JOIN_REQUEST_DELETE: b,
+  GUILD_JOIN_REQUEST_UPDATE: b,
+  GUILD_JOIN_REQUEST_CREATE: b,
+  GUILD_JOIN_REQUEST_DELETE: v,
   USER_GUILD_JOIN_REQUEST_UPDATE: E,
   GUILD_DELETE: y,
   USER_JOIN_REQUEST_GUILDS_FETCH: I,

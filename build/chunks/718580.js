@@ -56,9 +56,9 @@ function E(e, t) {
   }), e
 }
 
-function v(e, t) {
+function b(e, t) {
   if (null == e) return {};
-  var n, r, i = b(e, t);
+  var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -66,7 +66,7 @@ function v(e, t) {
   return i
 }
 
-function b(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -101,9 +101,9 @@ function S(e) {
 function T(e) {
   var t, n, h, {
       contentDisplay: g,
-      fadeInOut: b = !1
+      fadeInOut: v = !1
     } = e,
-    S = v(e, ["contentDisplay", "fadeInOut"]);
+    S = b(e, ["contentDisplay", "fadeInOut"]);
   let T = {},
     {
       analyticsLocations: N
@@ -164,9 +164,9 @@ function T(e) {
       n === A && null != S.onSlideReady && S.onSlideReady(n)
     }
   }, null == C ? "animate-never" : "respect-motion-settings"), B = (0, p.Z)(R), {
-    width: V,
-    centered: F = !0
-  } = S, Z = s.tq ? "100%" : U.width.to(e => "string" == typeof e ? e : Math.round(e)), H = s.tq ? "100%" : U.height.to(e => Math.round(e)), W = s.tq ? {} : F ? {
+    width: F,
+    centered: V = !0
+  } = S, Z = s.tq ? "100%" : U.width.to(e => "string" == typeof e ? e : Math.round(e)), H = s.tq ? "100%" : U.height.to(e => Math.round(e)), W = s.tq ? {} : V ? {
     transform: "translate3d(0, -50%, 0) scale(1.0, 1.0)",
     top: "50%"
   } : {
@@ -193,11 +193,11 @@ function T(e) {
           display: g,
           flexDirection: "column",
           backfaceVisibility: "hidden",
-          width: s.tq ? "100%" : V
+          width: s.tq ? "100%" : F
         }, W, P.enabled ? a : m({
           left: e.value.to(I("left", B)),
           right: e.value.to(I("right", B))
-        }, b && a)),
+        }, v && a)),
         children: T[t].children
       }, i)
     })

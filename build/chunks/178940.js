@@ -40,9 +40,9 @@ function E(e) {
   return e
 }
 
-function v(e, t) {
+function b(e, t) {
   if (null == e) return {};
-  var n, r, i = b(e, t);
+  var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -50,7 +50,7 @@ function v(e, t) {
   return i
 }
 
-function b(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -93,15 +93,15 @@ class T extends(r = o.PureComponent) {
         lineHeight: "".concat(c, "px")
       },
       children: l
-    }) : null, v = d ? "span" : "label", b = this.props.disabled ? m.inputDisabled : this.props.readOnly ? m.inputReadonly : m.inputDefault;
-    return (0, i.jsxs)(v, {
+    }) : null, b = d ? "span" : "label", v = this.props.disabled ? m.inputDisabled : this.props.readOnly ? m.inputReadonly : m.inputDefault;
+    return (0, i.jsxs)(b, {
       className: s()(e ? m.checkboxWrapperDisabled : m.checkboxWrapper, S[r], o, {
         [m.row]: "row" === _,
         [m.checked]: n
       }),
       children: [u ? g : null, !d && (0, i.jsx)(f.t, {
         children: (0, i.jsx)("input", {
-          className: s()(a, b),
+          className: s()(a, v),
           type: "checkbox",
           onClick: p,
           onChange: e || t ? h.dG4 : this.handleChange,
@@ -197,7 +197,7 @@ function A(e) {
 function C(e) {
   var {
     isVisualRefreshEnabled: t
-  } = e, n = v(e, ["isVisualRefreshEnabled"]);
+  } = e, n = b(e, ["isVisualRefreshEnabled"]);
   return t ? (0, i.jsx)(_.kSu, E({}, n)) : (0, i.jsx)(_.dz2, E({}, n))
 }
 g(T, "Types", y), g(T, "Shapes", I), g(T, "Aligns", O), g(T, "defaultProps", {

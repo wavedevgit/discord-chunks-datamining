@@ -49,8 +49,8 @@ let p = () => (0, r.jsx)("img", {
       showNotificationBadge: f,
       onClick: g,
       onMouseDown: E,
-      className: v
-    } = e, [b, y] = (0, i.useState)(!1), O = (0, i.useMemo)(() => m(o, b), [o, b]), [I, S] = (0, i.useState)(!1), [T, N] = (0, i.useState)(!1), [A, C] = (0, i.useState)(.9 * u.D2), R = null === n;
+      className: b
+    } = e, [v, y] = (0, i.useState)(!1), O = (0, i.useMemo)(() => m(o, v), [o, v]), [I, S] = (0, i.useState)(!1), [T, N] = (0, i.useState)(!1), [A, C] = (0, i.useState)(.9 * u.D2), R = null === n;
     (0, i.useEffect)(() => {
       R && !I && (S(!0), setTimeout(() => {
         N(!0)
@@ -83,7 +83,7 @@ let p = () => (0, r.jsx)("img", {
         onMouseLeave: () => y(!1),
         id: h,
         ref: t,
-        className: a()(d.container, O, v, {
+        className: a()(d.container, O, b, {
           [d.containerLoading]: P
         }),
         children: [(0, r.jsx)("div", {

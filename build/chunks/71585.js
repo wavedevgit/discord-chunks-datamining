@@ -41,9 +41,9 @@ let c = 2592e6,
   m = 0,
   g = !1,
   E = !1,
-  v = 1e3;
+  b = 1e3;
 
-function b() {
+function v() {
   let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
   if (!e && Date.now() < m) return;
   let t = 0,
@@ -54,7 +54,7 @@ function b() {
     else break
   }
   t > 0 && (_.itemImpressions = _.itemImpressions.slice(t)), _.itemImpressions.length > d && (_.itemImpressions = _.itemImpressions.slice(-d));
-  let r = E ? v : u,
+  let r = E ? b : u,
     i = new Set,
     o = new Set,
     a = Date.now() - r,
@@ -67,15 +67,15 @@ function y(e) {
   let {
     itemIds: t
   } = e;
-  g || b();
+  g || v();
   let n = Date.now(),
     r = !1;
   for (let e of t) h.has(e) || (_.itemImpressions.push([e, n]), r = !0);
-  return b(r), r
+  return v(r), r
 }
 
 function O() {
-  _.itemImpressions = [], b(!0)
+  _.itemImpressions = [], v(!0)
 }
 
 function I() {
@@ -97,7 +97,7 @@ class N extends(r = i.ZP.PersistedStore) {
     return _
   }
   getImpressionCappedItemIds() {
-    return b(), p
+    return v(), p
   }
   getDebugFastImpressionCappingEnabled() {
     return E

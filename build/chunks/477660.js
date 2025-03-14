@@ -47,14 +47,14 @@
               if (null != m)
                 for (var g = 0; g < m.length; g++) {
                   var E = m[g],
-                    v = e[E],
-                    b = v.order;
-                  if (b > _) break;
+                    b = e[E],
+                    v = b.order;
+                  if (v > _) break;
                   var y = null == r.prevCapture ? "" : r.prevCapture[0],
-                    O = v.match(t, r, y);
+                    O = b.match(t, r, y);
                   if (O) {
-                    var I = v.quality ? v.quality(O, r, y) : 0;
-                    (b < _ || I > f) && (l = E, c = v, u = O, f = I, _ = b)
+                    var I = b.quality ? b.quality(O, r, y) : 0;
+                    (v < _ || I > f) && (l = E, c = b, u = O, f = I, _ = v)
                   }
                 }
             }
@@ -139,13 +139,13 @@
     E = function(e) {
       return e.replace(g, "$1")
     },
-    v = function(e, t, n) {
+    b = function(e, t, n) {
       var r = n.inline || !1;
       n.inline = !0;
       var i = e(t, n);
       return n.inline = r, i
     },
-    b = function(e, t, n) {
+    v = function(e, t, n) {
       var r = n.inline || !1;
       n.inline = !1;
       var i = e(t + "\n\n", n);
@@ -153,7 +153,7 @@
     },
     y = function(e, t, n) {
       return {
-        content: v(t, e[1], n)
+        content: b(t, e[1], n)
       }
     },
     O = function() {
@@ -269,7 +269,7 @@
         parse: function(e, t, n) {
           return {
             level: e[1].length,
-            content: v(t, e[2].trim(), n)
+            content: b(t, e[2].trim(), n)
           }
         },
         react: function(e, t, n) {
@@ -295,7 +295,7 @@
           return {
             type: "heading",
             level: "=" === e[2] ? 1 : 2,
-            content: v(t, e[1], n)
+            content: b(t, e[1], n)
           }
         },
         react: null,
@@ -805,13 +805,13 @@
         }
       }
     },
-    V = function(e, t) {
+    F = function(e, t) {
       return t || "undefined" == typeof console || console.warn("simple-markdown ruleOutput should take 'react' or 'html' as the second argument."),
         function(n, r, i) {
           return e[n.type][t](n, r, i)
         }
     },
-    F = function(e) {
+    V = function(e) {
       var t = function(n, r) {
         if (r = r || {}, !Array.isArray(n)) return e(n, t, r);
         for (var i = r.key, o = [], a = null, s = 0; s < n.length; s++) {
@@ -871,8 +871,8 @@
     inlineRegex: a,
     blockRegex: s,
     anyScopeRegex: l,
-    parseInline: v,
-    parseBlock: b,
+    parseInline: b,
+    parseBlock: v,
     markdownToReact: X,
     markdownToHtml: function(e, t) {
       return Q(Y(e, t), t)
@@ -890,8 +890,8 @@
     htmlTag: d,
     reactElement: u,
     defaultRawParse: W,
-    ruleOutput: V,
-    reactFor: F,
+    ruleOutput: F,
+    reactFor: V,
     htmlFor: Z,
     defaultParse: function() {
       return "undefined" != typeof console && console.warn("defaultParse is deprecated, please use `defaultImplicitParse`"), z.apply(null, arguments)

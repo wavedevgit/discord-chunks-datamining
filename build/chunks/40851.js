@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Aq: () => v,
+  Aq: () => b,
   GB: () => m,
   J5: () => _,
   Su: () => p,
   UI: () => c,
   Wu: () => g,
-  ZP: () => b,
+  ZP: () => v,
   bp: () => E,
   g0: () => h
 }), n(47120);
@@ -78,7 +78,7 @@ function E() {
   return i.useContext(u).appContext
 }
 
-function v() {
+function b() {
   return i.useContext(u).windowDispatch
 }
-let b = u
+let v = u

@@ -26,8 +26,8 @@ let d = 5,
   m = new Set,
   g = !1,
   E = new Set,
-  v = new Set,
-  b = new Map,
+  b = new Set,
+  v = new Map,
   y = 0,
   O = null,
   I = [],
@@ -37,7 +37,7 @@ let d = 5,
   A = null;
 
 function C() {
-  f = null, _ = new Map, p = new Set, m = new Set, g = !1, E = new Set, v = new Set, b = new Map, y = 0, O = null, I = [], S = !1, T = 0, N = !1, A = null, h = new Map
+  f = null, _ = new Map, p = new Set, m = new Set, g = !1, E = new Set, b = new Set, v = new Map, y = 0, O = null, I = [], S = !1, T = 0, N = !1, A = null, h = new Map
 }
 let R = () => !0;
 
@@ -88,14 +88,14 @@ function k(e) {
   let {
     userTrialOffer: t
   } = e;
-  (0, l.C$)(), b.set(t.id, t), p.add(t.user_id)
+  (0, l.C$)(), v.set(t.id, t), p.add(t.user_id)
 }
 
 function j(e) {
   let {
     userTrialOffers: t
   } = e;
-  for (let e of ((0, l.C$)(), t)) b.set(e.id, e), p.add(e.user_id)
+  for (let e of ((0, l.C$)(), t)) v.set(e.id, e), p.add(e.user_id)
 }
 
 function U(e) {
@@ -106,24 +106,24 @@ function G(e) {
   let {
     userTrialOffer: t
   } = e;
-  null != t && (E.delete(t.id), v.add(t.id), b.set(t.id, t))
+  null != t && (E.delete(t.id), b.add(t.id), v.set(t.id, t))
 }
 
 function B(e) {
   let {
     userTrialOfferId: t
   } = e;
-  E.delete(t), v.add(t)
+  E.delete(t), b.add(t)
 }
 
-function V(e) {
+function F(e) {
   let {
     message: t
   } = e;
   H(t)
 }
 
-function F(e) {
+function V(e) {
   let {
     messages: t
   } = e;
@@ -141,7 +141,7 @@ function Z(e) {
 function H(e) {
   let t = e.type === i.u.PREMIUM_REFERRAL ? e.content : null;
   if (null == t) return !1;
-  v.has(t) || E.has(t) || (U(t), a.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
+  b.has(t) || E.has(t) || (U(t), a.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
 }
 
 function W() {
@@ -182,7 +182,7 @@ class z extends(r = o.ZP.Store) {
     return _.has(e) || m.has(e) || (0, l.Ve)(e), _.get(e) || !1
   }
   getRelevantUserTrialOffer(e) {
-    return b.get(e)
+    return v.get(e)
   }
   isResolving(e) {
     return E.has(e)
@@ -203,7 +203,7 @@ class z extends(r = o.ZP.Store) {
     return A
   }
   getAllRelevantReferralTrialOffers() {
-    return Array.from(b.values())
+    return Array.from(v.values())
   }
   getRecipientStatus() {
     return h
@@ -225,8 +225,8 @@ let q = new z(a.Z, {
   REFERRALS_FETCH_ELIGIBLE_USER_START: W,
   REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: Y,
   REFERRALS_FETCH_ELIGIBLE_USER_FAIL: K,
-  LOAD_MESSAGES_SUCCESS: F,
-  MESSAGE_CREATE: V,
-  LOAD_MESSAGES_AROUND_SUCCESS: F,
+  LOAD_MESSAGES_SUCCESS: V,
+  MESSAGE_CREATE: F,
+  LOAD_MESSAGES_AROUND_SUCCESS: V,
   LOGOUT: C
 })

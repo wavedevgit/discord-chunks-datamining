@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(598804),
   g = n(675478),
   E = n(819758),
-  v = n(626135),
-  b = n(392552),
+  b = n(626135),
+  v = n(392552),
   y = n(784222),
   O = n(926243),
   I = n(149203),
@@ -99,8 +99,8 @@ let L = e => {
     rowIndex: U,
     allowAnimatedEmoji: G,
     showEmojiFavoriteTooltip: B,
-    channelGuildId: V,
-    category: F,
+    channelGuildId: F,
+    category: V,
     selectedItemClassName: Z,
     channelId: H,
     messageId: W,
@@ -109,7 +109,7 @@ let L = e => {
     handleScrollUpOnSectionCollapse: z
   } = e, {
     enabled: q
-  } = b.Z.useExperiment({
+  } = v.Z.useExperiment({
     location: "EmojiPicker"
   }, {
     autoTrackExposure: !1
@@ -137,10 +137,10 @@ let L = e => {
             ref: m,
             tabIndex: g,
             onFocus: E
-          } = h, v = w(h, ["ref", "tabIndex", "onFocus"]), b = ea.rowIndex === _ && ea.columnIndex === p, y = () => {
+          } = h, b = w(h, ["ref", "tabIndex", "onFocus"]), v = ea.rowIndex === _ && ea.columnIndex === p, y = () => {
             k.current || j.current || D(e)
           };
-          return (0, i.createElement)("li", P(C({}, v), {
+          return (0, i.createElement)("li", P(C({}, b), {
             key: t
           }), (0, r.jsx)(l.tEY, {
             children: (0, r.jsx)("button", {
@@ -149,8 +149,8 @@ let L = e => {
               className: a()(N.emojiItem, {
                 [N.emojiItemLarge]: ed,
                 [N.emojiItemMedium]: ef,
-                [N.emojiItemSelected]: b && !f,
-                [null != Z ? Z : ""]: b,
+                [N.emojiItemSelected]: v && !f,
+                [null != Z ? Z : ""]: v,
                 [N.showPulse]: el === t
               }),
               onFocus: null != E ? E : y,
@@ -172,7 +172,7 @@ let L = e => {
             t.stopPropagation(), k.current || j.current || (A(e, {
               isFinalSelection: !0,
               toggleFavorite: !1
-            }), (0, d.D)(e.guildId), e.sectionCollapsedToThreeRows || z(), v.default.track(S.rMx.EMOJI_PICKER_THREE_ROW_COLLAPSE_TOGGLED, {
+            }), (0, d.D)(e.guildId), e.sectionCollapsedToThreeRows || z(), b.default.track(S.rMx.EMOJI_PICKER_THREE_ROW_COLLAPSE_TOGGLED, {
               collapsed: e.sectionCollapsedToThreeRows,
               guild_id: e.guildId
             }))
@@ -225,7 +225,7 @@ let L = e => {
             selectedItemClassName: Z,
             onSelect: A,
             onInspect: D,
-            channelGuildId: V,
+            channelGuildId: F,
             getEmojiItemProps: x,
             isMediumSize: ef,
             isLargeSize: ed,
@@ -250,7 +250,7 @@ let L = e => {
       ref: eu,
       children: e.map(e_)
     }));
-  if (F === I.UX.SOUNDMOJI) return (0, r.jsx)("ul", {
+  if (V === I.UX.SOUNDMOJI) return (0, r.jsx)("ul", {
     className: N.emojiListRow,
     ref: eu,
     children: (0, r.jsx)(m.Z, {
@@ -258,7 +258,7 @@ let L = e => {
       onSelectSoundmoji: R
     })
   });
-  if (F !== I.En.TOP_GUILD_EMOJI) return ep(t);
+  if (V !== I.En.TOP_GUILD_EMOJI) return ep(t);
   let eh = t.filter(e => {
       if (q && e.type === y.ld.CREATE_EMOJI) return !0;
       let t = e;

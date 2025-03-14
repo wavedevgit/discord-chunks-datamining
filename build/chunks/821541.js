@@ -78,7 +78,7 @@ let m = i.forwardRef(function(e, t) {
       style: f,
       className: h,
       children: m
-    } = e, v = p(e, ["as", "gap", "direction", "align", "justify", "padding", "style", "className", "children"]);
+    } = e, b = p(e, ["as", "gap", "direction", "align", "justify", "padding", "style", "className", "children"]);
     return (0, r.jsx)(n, _(d({
       ref: t,
       "data-align": s,
@@ -88,7 +88,7 @@ let m = i.forwardRef(function(e, t) {
       style: d(_(d({}, f), {
         gap: g(i)
       }), E(u))
-    }, v), {
+    }, b), {
       children: m
     }))
   }),

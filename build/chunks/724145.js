@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(906732),
   g = n(639119),
   E = n(197115),
-  v = n(587446),
-  b = n(594174),
+  b = n(587446),
+  v = n(594174),
   y = n(626135),
   O = n(74538),
   I = n(238302),
@@ -36,7 +36,7 @@ let D = () => (0, r.jsx)("div", {
     className: w.editorHeader,
     children: (0, r.jsxs)("div", {
       className: w.bannerUpsell,
-      children: [(0, r.jsx)(v.Z, {
+      children: [(0, r.jsx)(b.Z, {
         className: w.premiumIcon
       }), (0, r.jsx)(u.X6q, {
         variant: "heading-md/bold",
@@ -74,7 +74,7 @@ let D = () => (0, r.jsx)("div", {
       markAsDismissed: a
     } = e, {
       analyticsLocations: s
-    } = (0, m.ZP)(h.Z.CLIENT_THEMES_EDITOR), [f, _] = (0, l.Wu)([b.default, S.Z], () => [S.Z.gradientPreset, O.ZP.isPremium(b.default.getCurrentUser())]), p = (0, g.N)(), v = (0, O.Rt)({
+    } = (0, m.ZP)(h.Z.CLIENT_THEMES_EDITOR), [f, _] = (0, l.Wu)([v.default, S.Z], () => [S.Z.gradientPreset, O.ZP.isPremium(v.default.getCurrentUser())]), p = (0, g.N)(), b = (0, O.Rt)({
       intervalType: null == p ? void 0 : null === (t = p.subscription_trial) || void 0 === t ? void 0 : t.interval,
       intervalCount: null == p ? void 0 : null === (n = p.subscription_trial) || void 0 === n ? void 0 : n.interval_count
     }), y = e => {
@@ -89,7 +89,7 @@ let D = () => (0, r.jsx)("div", {
     };
     return (0, r.jsx)(E.Z, {
       size: u.zxk.Sizes.MEDIUM,
-      buttonText: _ ? P.NW.string(P.t.IJI7ys) : (null == p ? void 0 : null === (i = p.subscription_trial) || void 0 === i ? void 0 : i.sku_id) === R.Si.TIER_2 ? v : P.NW.string(P.t.mr4K7O),
+      buttonText: _ ? P.NW.string(P.t.IJI7ys) : (null == p ? void 0 : null === (i = p.subscription_trial) || void 0 === i ? void 0 : i.sku_id) === R.Si.TIER_2 ? b : P.NW.string(P.t.mr4K7O),
       subscriptionTier: R.Si.TIER_2,
       onSubscribeModalClose: y
     })

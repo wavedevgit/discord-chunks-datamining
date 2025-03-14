@@ -38,8 +38,8 @@ var p = function() {
   E = Object.getPrototypeOf || (g ? function(e) {
     return e.__proto__
   } : null),
-  v = {},
-  b = "undefined" != typeof Uint8Array && E ? E(Uint8Array) : r,
+  b = {},
+  v = "undefined" != typeof Uint8Array && E ? E(Uint8Array) : r,
   y = {
     __proto__: null,
     "%AggregateError%": "undefined" == typeof AggregateError ? r : AggregateError,
@@ -47,10 +47,10 @@ var p = function() {
     "%ArrayBuffer%": "undefined" == typeof ArrayBuffer ? r : ArrayBuffer,
     "%ArrayIteratorPrototype%": m && E ? E([][Symbol.iterator]()) : r,
     "%AsyncFromSyncIteratorPrototype%": r,
-    "%AsyncFunction%": v,
-    "%AsyncGenerator%": v,
-    "%AsyncGeneratorFunction%": v,
-    "%AsyncIteratorPrototype%": v,
+    "%AsyncFunction%": b,
+    "%AsyncGenerator%": b,
+    "%AsyncGeneratorFunction%": b,
+    "%AsyncIteratorPrototype%": b,
     "%Atomics%": "undefined" == typeof Atomics ? r : Atomics,
     "%BigInt%": "undefined" == typeof BigInt ? r : BigInt,
     "%BigInt64Array%": "undefined" == typeof BigInt64Array ? r : BigInt64Array,
@@ -69,7 +69,7 @@ var p = function() {
     "%Float64Array%": "undefined" == typeof Float64Array ? r : Float64Array,
     "%FinalizationRegistry%": "undefined" == typeof FinalizationRegistry ? r : FinalizationRegistry,
     "%Function%": d,
-    "%GeneratorFunction%": v,
+    "%GeneratorFunction%": b,
     "%Int8Array%": "undefined" == typeof Int8Array ? r : Int8Array,
     "%Int16Array%": "undefined" == typeof Int16Array ? r : Int16Array,
     "%Int32Array%": "undefined" == typeof Int32Array ? r : Int32Array,
@@ -98,7 +98,7 @@ var p = function() {
     "%Symbol%": m ? Symbol : r,
     "%SyntaxError%": l,
     "%ThrowTypeError%": h,
-    "%TypedArray%": b,
+    "%TypedArray%": v,
     "%TypeError%": c,
     "%Uint8Array%": "undefined" == typeof Uint8Array ? r : Uint8Array,
     "%Uint8ClampedArray%": "undefined" == typeof Uint8ClampedArray ? r : Uint8ClampedArray,
@@ -206,7 +206,7 @@ var I = function e(t) {
     var n, r = e;
     if (N(S, r) && (r = "%" + (n = S[r])[0] + "%"), N(y, r)) {
       var i = y[r];
-      if (i === v && (i = I(r)), void 0 === i && !t) throw new c("intrinsic " + e + " exists, but is not available. Please file an issue!");
+      if (i === b && (i = I(r)), void 0 === i && !t) throw new c("intrinsic " + e + " exists, but is not available. Please file an issue!");
       return {
         alias: n,
         name: r,

@@ -76,11 +76,11 @@ function E(e) {
   })
 }
 
-function v(e) {
+function b(e) {
   return o().sortBy(e, ["position", "id"])
 }
 
-function b(e) {
+function v(e) {
   return o().sortBy(e, ["position", "id"])
 }
 
@@ -92,7 +92,7 @@ function y(e) {
   } = e, i = g({
     surface: n,
     activeState: r
-  }), o = v(t.map(e => (e.application_directory_collection_items = b(e.application_directory_collection_items), e)));
+  }), o = b(t.map(e => (e.application_directory_collection_items = v(e.application_directory_collection_items), e)));
   p = d(c({}, p), {
     [i]: o
   }), h = d(c({}, h), {

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => v
 }), n(47120), n(789020);
 var r = n(147913),
   i = n(703656),
@@ -27,7 +27,7 @@ function m(e, t, n) {
 }
 let g = null,
   E = null;
-class v extends r.Z {
+class b extends r.Z {
   constructor(...e) {
     super(...e), m(this, "actions", {
       GUILD_DELETE: e => this.handleGuildDelete(e),
@@ -64,4 +64,4 @@ class v extends r.Z {
     })
   }
 }
-let b = new v
+let v = new b

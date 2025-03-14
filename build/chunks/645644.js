@@ -19,8 +19,8 @@ var r = n(772848),
   m = n(237997),
   g = n(626135),
   E = n(998502),
-  v = n(145597),
-  b = n(830917),
+  b = n(145597),
+  v = n(830917),
   y = n(554174),
   O = n(938038),
   I = n(981631),
@@ -390,8 +390,8 @@ class j {
       },
       g = (0, f.b6)(this.game),
       E = (0, d.G8)(this.game),
-      v = null !== (r = this.overlayMethodStats) && void 0 !== r ? r : this.buildOverlayMethodStats(_, this.game),
-      b = null != v.any_other_method ? s.gl[v.any_other_method] : null,
+      b = null !== (r = this.overlayMethodStats) && void 0 !== r ? r : this.buildOverlayMethodStats(_, this.game),
+      v = null != b.any_other_method ? s.gl[b.any_other_method] : null,
       y = g.enabledLegacy || g.enabledOOP;
     return {
       usage: C(N(C(N({
@@ -425,9 +425,9 @@ class j {
         rtc_connection_duration: this.rtcConnectionTimer.elapsed().asMilliseconds(),
         mute_toggled_count: this.muteToggledCount,
         overlay_successfully_shown: this._successfullyShown
-      }), v), {
-        original_method: s.gl[v.original_method],
-        any_other_method: b
+      }), b), {
+        original_method: s.gl[b.original_method],
+        any_other_method: v
       }),
       notifications: this.notificationAnalytics.getCounterAnalytics(this.uuid)
     }
@@ -484,7 +484,7 @@ function U(e) {
 }
 
 function G(e) {
-  if (e.pid === v.DEV_PID) return;
+  if (e.pid === b.DEV_PID) return;
   let t = j.getByPid(e.pid);
   if (w.verbose("OVERLAY_SET_INPUT_LOCKED", t), null == t) {
     w.error("OVERLAY_SET_INPUT_LOCKED: Unable to find game", e, j.debug);
@@ -504,7 +504,7 @@ function B(e) {
   n.notificationAnalytics.increment(e.notificationType, e.action)
 }
 
-function V(e) {
+function F(e) {
   var t;
   if (w.verbose("OVERLAY_WIDGET_CHANGED", e), null == e.gameName && null == e.gameId) return;
   let n = j.getByName(null !== (t = e.gameName) && void 0 !== t ? t : e.gameId);
@@ -516,8 +516,8 @@ function V(e) {
   null != r && (r.initialized || (r.initialized = !0, r.pinned = e.pinned), r.pinned !== e.pinned && ++r.pinnedToggledCount, r.pinned = e.pinned, r.visibleDuration.toggle(e.visible))
 }
 
-function F(e) {
-  if (w.verbose("OVERLAY_FOCUSED", e), j.gameSetAllUnfocused(), null == e.pid || e.pid === v.DEV_PID) return;
+function V(e) {
+  if (w.verbose("OVERLAY_FOCUSED", e), j.gameSetAllUnfocused(), null == e.pid || e.pid === b.DEV_PID) return;
   let t = j.getByPid(e.pid);
   if (null == t) {
     w.error("OVERLAY_FOCUSED: Game not found", e, j.debug);
@@ -528,7 +528,7 @@ function F(e) {
 
 function Z(e) {
   var t;
-  if (w.verbose("SOUNDBOARD_SET_OVERLAY_ENABLED", e), e.pid === v.DEV_PID) return;
+  if (w.verbose("SOUNDBOARD_SET_OVERLAY_ENABLED", e), e.pid === b.DEV_PID) return;
   let n = j.getByPid(e.pid);
   if (null == n) {
     w.error("SOUNDBOARD_SET_OVERLAY_ENABLED: Game not found", e, j.debug);
@@ -564,12 +564,12 @@ function Y(e) {
 
 function K(e) {
   let t = (0, y.Z)();
-  null != t && t !== v.DEV_PID && (w.verbose("AUDIO_TOGGLE_SELF_MUTE", e), j.handleMuteToggled())
+  null != t && t !== b.DEV_PID && (w.verbose("AUDIO_TOGGLE_SELF_MUTE", e), j.handleMuteToggled())
 }
 
 function z(e) {
   w.verbose("WINDOW_FOCUS", e);
-  let t = (0, b.UU)();
+  let t = (0, v.UU)();
   if (e.windowId !== t) {
     w.verbose("WINDOW_FOCUS: Not main window", {
       action: e,
@@ -581,7 +581,7 @@ function z(e) {
 }
 
 function q(e) {
-  if (e.pid === v.DEV_PID) return;
+  if (e.pid === b.DEV_PID) return;
   let t = j.getByPid(e.pid);
   if (null == t) {
     w.error("OVERLAY_SUCCESSFULLY_SHOWN: Game not found", e, j.debug);
@@ -658,10 +658,10 @@ class $ extends c.Z {
       MESSAGE_ACKED: J.handleMessageAcked,
       MESSAGE_CREATE: J.handleMessageCreate
     } : {
-      OVERLAY_FOCUSED: F,
+      OVERLAY_FOCUSED: V,
       OVERLAY_NOTIFICATION_EVENT: B,
       OVERLAY_SET_INPUT_LOCKED: G,
-      OVERLAY_WIDGET_CHANGED: V,
+      OVERLAY_WIDGET_CHANGED: F,
       OVERLAY_MESSAGE_EVENT_ACTION: H,
       RUNNING_GAMES_CHANGE: U,
       SOUNDBOARD_SET_OVERLAY_ENABLED: Z,

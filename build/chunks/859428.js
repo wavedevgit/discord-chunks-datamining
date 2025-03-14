@@ -1,6 +1,6 @@
-/** Chunk was on 69423 **/
+/** Chunk was on 98697 **/
 n.d(t, {
-  Z: () => g
+  Z: () => O
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -15,33 +15,33 @@ var r = n(200651),
   p = n(900849),
   E = n(41776),
   f = n(981631),
-  m = n(388032),
-  h = n(773711),
+  h = n(388032),
+  m = n(773711),
   b = n(361275);
-let g = () => {
+let O = () => {
   let e = (0, a.e7)([_.Z], () => _.Z.getGuildId(), []),
     t = (0, a.e7)([d.Z], () => d.Z.getGuild(e), [e]),
     n = (0, a.e7)([E.Z], () => E.Z.getHistorySnapshot(), []),
-    [o, g] = i.useState(!1);
+    [o, O] = i.useState(!1);
   if (null == t) return null;
-  let O = async () => {
-    g(!0);
+  let g = async () => {
+    O(!0);
     try {
       p.mT(t.id), await c.Z.joinGuild(t.id, {
         source: f.vtS.NOTICE_BAR
       })
     } catch (e) {
-      g(!1)
+      O(!1)
     }
   };
   return (0, r.jsxs)("div", {
-    className: l()(h.notice, b.notice),
+    className: l()(m.notice, b.notice),
     children: [(0, r.jsxs)(s.zxk, {
       look: s.zxk.Looks.OUTLINED,
       color: s.zxk.Colors.WHITE,
       size: s.zxk.Sizes.NONE,
-      className: l()(h.button, h.back),
-      innerClassName: h.iconButton,
+      className: l()(m.button, m.back),
+      innerClassName: m.iconButton,
       onClick: () => {
         let e = (0, u.s1)();
         null != n && null != n.location ? (0, u.dL)(function(e) {
@@ -66,20 +66,20 @@ let g = () => {
       children: [(0, r.jsx)(s.whL, {
         size: "xs",
         color: "currentColor",
-        className: h.arrow
-      }), m.NW.string(m.t["13/7kZ"])]
+        className: m.arrow
+      }), h.NW.string(h.t["13/7kZ"])]
     }), (0, r.jsx)(s.Text, {
-      className: h.header,
+      className: m.header,
       variant: "text-sm/normal",
-      children: m.NW.string(m.t["N/y2WF"])
+      children: h.NW.string(h.t["N/y2WF"])
     }), (0, r.jsx)(s.zxk, {
-      className: h.button,
+      className: m.button,
       look: s.zxk.Looks.OUTLINED,
       color: s.zxk.Colors.WHITE,
       size: s.zxk.Sizes.NONE,
       submitting: o,
-      onClick: O,
-      children: m.NW.format(m.t.uHN7n5, {
+      onClick: g,
+      children: h.NW.format(h.t.uHN7n5, {
         guild: t.name
       })
     })]

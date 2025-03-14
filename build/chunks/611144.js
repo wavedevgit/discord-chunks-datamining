@@ -126,14 +126,14 @@ function E(e, t) {
   })
 }
 
-function v(e, t) {
+function b(e, t) {
   return s(o({}, e), {
     focusedX: 0,
     focusedY: 0
   })
 }
 
-function b(e, t) {
+function v(e, t) {
   let n = e.columnCounts.length - 1;
   return s(o({}, e), {
     focusedX: e.columnCounts[n] - 1,
@@ -156,9 +156,9 @@ function y(e, t) {
     case r.Us.NAVIGATE_INLINE_END:
       return E(e, t);
     case r.Us.NAVIGATE_START:
-      return v(e, t);
-    case r.Us.NAVIGATE_END:
       return b(e, t);
+    case r.Us.NAVIGATE_END:
+      return v(e, t);
     case "UPDATE_COLUMN_COUNTS":
       return d(e, t);
     case "SET_FOCUSED_POSITION":

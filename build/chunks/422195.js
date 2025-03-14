@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => V
+  Z: () => F
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(624138),
   g = n(453070),
   E = n(926491),
-  v = n(373228),
-  b = n(378233),
+  b = n(373228),
+  v = n(378233),
   y = n(419922),
   O = n(981631),
   I = n(957825),
@@ -85,9 +85,9 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
     } = e, _ = (0, c.O)(), m = (0, f.Iu)(e => "" !== e.searchQuery), g = i.useCallback((e, o, s) => {
       var c, d;
       let f;
-      let g = (null === (c = n[0]) || void 0 === c ? void 0 : c.type) === v.Ih.FAVORITE,
+      let g = (null === (c = n[0]) || void 0 === c ? void 0 : c.type) === b.Ih.FAVORITE,
         N = +!!g,
-        C = (null === (d = n[N]) || void 0 === d ? void 0 : d.type) === v.Ih.RECENT,
+        C = (null === (d = n[N]) || void 0 === d ? void 0 : d.type) === b.Ih.RECENT,
         P = n.length > 0,
         D = n.length;
       if (0 === o && g) return (0, r.jsx)("div", {
@@ -133,11 +133,11 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
       let x = t === o,
         M = n[o],
         k = n[o + 1],
-        j = null != k && M.type === v.Ih.GUILD && k.type !== v.Ih.GUILD,
-        U = M.type === v.Ih.PACK,
+        j = null != k && M.type === b.Ih.GUILD && k.type !== b.Ih.GUILD,
+        U = M.type === b.Ih.PACK,
         G = "",
         B = null;
-      if (M.type === v.Ih.GUILD || M.type === v.Ih.EMPTY_GUILD_UPSELL) {
+      if (M.type === b.Ih.GUILD || M.type === b.Ih.EMPTY_GUILD_UPSELL) {
         let e = p.Z.getGuild(M.id);
         null != e && (f = e.id, G = e.name, B = (0, r.jsx)(u.Z, {
           guild: e,
@@ -148,7 +148,7 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
         null != e && (G = e.name, B = (0, r.jsx)(y.ZP, {
           disableAnimation: !x || m,
           size: w,
-          sticker: (0, b.Zt)(e)
+          sticker: (0, v.Zt)(e)
         }))
       }
       return (0, r.jsxs)(i.Fragment, {
@@ -167,7 +167,7 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
                 [T.firstPartyCategorySelected]: !m && x && U
               }),
               onClick: () => {
-                M.type === v.Ih.PACK && h.default.track(O.rMx.EXPRESSION_PICKER_CATEGORY_SELECTED, {
+                M.type === b.Ih.PACK && h.default.track(O.rMx.EXPRESSION_PICKER_CATEGORY_SELECTED, {
                   location: null == _ ? void 0 : _.location,
                   tab: I.X1.STICKER,
                   sticker_pack_id: M.id,
@@ -188,7 +188,7 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
       rowHeight: i.useCallback((e, t) => {
         let r = n[t],
           i = n[t + 1];
-        return w + (null != i && r.type === v.Ih.GUILD && i.type !== v.Ih.GUILD ? U : D)
+        return w + (null != i && r.type === b.Ih.GUILD && i.type !== b.Ih.GUILD ? U : D)
       }, [n]),
       onScroll: i.useCallback(e => {
         var t;
@@ -197,7 +197,7 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
       }, [s, o, d])
     }
   },
-  V = e => {
+  F = e => {
     let {
       stickersListRef: t,
       channel: n
@@ -208,21 +208,21 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
       hasFirstPartyStickerPacks: E
     } = i.useMemo(() => {
       var e, t;
-      let n = f.filter(e => e.type === v.Ih.GUILD).length,
-        r = n + +((null === (e = f[0]) || void 0 === e ? void 0 : e.type) === v.Ih.RECENT) + +((null === (t = f[0]) || void 0 === t ? void 0 : t.type) === v.Ih.FAVORITE),
+      let n = f.filter(e => e.type === b.Ih.GUILD).length,
+        r = n + +((null === (e = f[0]) || void 0 === e ? void 0 : e.type) === b.Ih.RECENT) + +((null === (t = f[0]) || void 0 === t ? void 0 : t.type) === b.Ih.FAVORITE),
         i = r * (w + D) - D + U;
       return {
         firstStandardStickerCategoryIndex: r + 1,
         firstStandardStickerCategoryOffsetTop: i,
         guildCategoryCount: n,
-        hasFirstPartyStickerPacks: null != f.find(e => e.type === v.Ih.PACK)
+        hasFirstPartyStickerPacks: null != f.find(e => e.type === b.Ih.PACK)
       }
     }, [f]);
     i.useLayoutEffect(() => {
       c(m >= G)
     }, [m]);
     let {
-      renderCategoryListItem: b,
+      renderCategoryListItem: v,
       rowHeight: y,
       onScroll: O
     } = B({
@@ -242,7 +242,7 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
       store: d.ZN,
       listPadding: k,
       onScroll: O,
-      renderCategoryListItem: b,
+      renderCategoryListItem: v,
       rowCount: f.length,
       categories: f,
       categoryHeight: y,

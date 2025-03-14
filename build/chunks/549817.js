@@ -19,8 +19,8 @@ var r = n(392711),
   m = n(626135),
   g = n(630388),
   E = n(823379),
-  v = n(960048),
-  b = n(709054),
+  b = n(960048),
+  v = n(709054),
   y = n(45966),
   O = n(637853),
   I = n(816436),
@@ -93,7 +93,7 @@ function w(e) {
       prompts_seen: t.body.onboarding_prompts_seen,
       options_seen: t.body.onboarding_responses_seen
     })
-  }).catch(e => v.Z.captureException(e)) : o.tn.put({
+  }).catch(e => b.Z.captureException(e)) : o.tn.put({
     url: S.ANM.GUILD_ONBOARDING_RESPONSES(e),
     body: {
       onboarding_responses: i.map(e => e.id),
@@ -110,7 +110,7 @@ function w(e) {
       options_seen: t.body.onboarding_responses_seen
     })
   }).catch(t => {
-    v.Z.captureException(Error("Failed to update onboarding responses for guild ".concat(e, ": ").concat(t.statusCode), {
+    b.Z.captureException(Error("Failed to update onboarding responses for guild ".concat(e, ": ").concat(t.statusCode), {
       cause: t
     }))
   })
@@ -153,9 +153,9 @@ let L = {
       o = (0, O.dX)(r),
       a = y.Z.getEnabled(e) ? y.Z.getDefaultChannelIds(e) : [],
       [c, f] = (0, O.Ee)(e, t, a),
-      v = [...o, ...a],
-      A = v.map(e => _.Z.getChannel(e)).filter(E.lm),
-      R = (0, I.v)(e, new Set(v), A, !0).length,
+      b = [...o, ...a],
+      A = b.map(e => _.Z.getChannel(e)).filter(E.lm),
+      R = (0, I.v)(e, new Set(b), A, !0).length,
       D = null == n ? [] : n.options.map(e => e.id);
     if (m.default.track(S.rMx.GUILD_ONBOARDING_STEP_COMPLETED, P(C({}, (0, l.hH)(e)), {
         step: t.length - 1,
@@ -168,8 +168,8 @@ let L = {
         channels_granted: R,
         guild_onboarding_covered_channel_ids: c.map(e => e.id),
         guild_onboarding_uncovered_channel_ids: f.map(e => e.id)
-      })), (0, s.Ju)(e, N.W.GUILD_ONBOARDING_QUESTION, b.default.fromTimestamp(Date.now())), w(e, !0), d.Z.isFullServerPreview(e)) {
-      (0, u.zS)(e, v, []), (0, u.aq)(e, {
+      })), (0, s.Ju)(e, N.W.GUILD_ONBOARDING_QUESTION, v.default.fromTimestamp(Date.now())), w(e, !0), d.Z.isFullServerPreview(e)) {
+      (0, u.zS)(e, b, []), (0, u.aq)(e, {
         optInEnabled: !0
       }), (0, u.og)(e, Array.from(i));
       let t = h.default.getCurrentUser();

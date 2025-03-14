@@ -19,8 +19,8 @@ var r = n(392711),
   m = n(592125),
   g = n(984933),
   E = n(271383),
-  v = n(430824),
-  b = n(496675),
+  b = n(430824),
+  v = n(496675),
   y = n(699516),
   O = n(246946),
   I = n(594174),
@@ -153,8 +153,8 @@ function j(e) {
 let U = u.Z.RULES,
   G = d.ZP,
   B = /^<@!?(\d+)>/,
-  V = /^<@&(\d+)>/,
-  F = /^<#(\d+)>/,
+  F = /^<@&(\d+)>/,
+  V = /^<#(\d+)>/,
   Z = /^<a?:(\w+):(\d+)>/,
   H = /(@everyone|@here|@Clyde)\b/,
   W = {
@@ -164,8 +164,8 @@ let U = u.Z.RULES,
     inlineCode: k(U.inlineCode),
     codeBlock: k(U.codeBlock),
     rawUserMention: j(B),
-    rawRoleMention: j(V),
-    rawChannelMention: j(F),
+    rawRoleMention: j(F),
+    rawChannelMention: j(V),
     rawEmoji: j(Z),
     mention: {
       match(e, t, n) {
@@ -282,13 +282,13 @@ let U = u.Z.RULES,
       }
     },
     roleMention: {
-      match: a().anyScopeRegex(V),
+      match: a().anyScopeRegex(F),
       parse(e, t, n) {
         let {
           guild: r
         } = n;
         if (null != r) {
-          let t = v.Z.getRoles(r.id)[e[1]];
+          let t = b.Z.getRoles(r.id)[e[1]];
           if (null != t) return {
             content: "@".concat(t.name)
           }
@@ -299,7 +299,7 @@ let U = u.Z.RULES,
       }
     },
     channel: {
-      match: a().anyScopeRegex(F),
+      match: a().anyScopeRegex(V),
       parse(e) {
         let t = m.Z.getChannel(e[1]);
         return {
@@ -396,8 +396,8 @@ function X(e, t, n) {
 function J(e) {
   let t;
   let n = null == e ? void 0 : e.getGuildId(),
-    r = null != n ? v.Z.getGuild(n) : null,
-    o = b.Z.can(A.Plq.MENTION_EVERYONE, e);
+    r = null != n ? b.Z.getGuild(n) : null,
+    o = v.Z.can(A.Plq.MENTION_EVERYONE, e);
   t = (null == e ? void 0 : e.isPrivate()) ? e.recipients.map(e => ({
     userId: e,
     nick: null
@@ -420,7 +420,7 @@ function J(e) {
         text: r.tag
       }), e
     }, [])),
-    s = i()(null != r ? v.Z.getRoles(r.id) : {}).values().filter(e => {
+    s = i()(null != r ? b.Z.getRoles(r.id) : {}).values().filter(e => {
       let {
         mentionable: t
       } = e;
@@ -496,7 +496,7 @@ let ee = {
   unparse(e, t, n) {
     let r = m.Z.getChannel(t),
       o = null != r ? r.getGuildId() : null,
-      s = null != o ? v.Z.getGuild(o) : null,
+      s = null != o ? b.Z.getGuild(o) : null,
       l = n ? Y : i().omit(Y, ["spoiler", "timestamp"]),
       u = n ? $ : c.ZP.translateSurrogatesToInlineEmoji,
       d = a().parserFor(l),

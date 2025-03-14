@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(819640),
   g = n(594174),
   E = n(70956),
-  v = n(709054),
-  b = n(51144),
+  b = n(709054),
+  v = n(51144),
   y = n(443603),
   O = n(981631),
   I = n(921944),
@@ -127,15 +127,15 @@ function x(e) {
     channel: E
   } = e, {
     analyticsLocations: y
-  } = (0, u.ZP)(c.Z.GIFT_BUTTON), [S, N] = i.useState(!1), A = (0, o.e7)([m.Z], () => !(null === m.Z || void 0 === m.Z ? void 0 : m.Z.hasLayers())), C = (0, o.e7)([g.default], () => g.default.getCurrentUser()), R = null != C ? v.default.age(C.id) : 0, {
+  } = (0, u.ZP)(c.Z.GIFT_BUTTON), [S, N] = i.useState(!1), A = (0, o.e7)([m.Z], () => !(null === m.Z || void 0 === m.Z ? void 0 : m.Z.hasLayers())), C = (0, o.e7)([g.default], () => g.default.getCurrentUser()), R = null != C ? b.default.age(C.id) : 0, {
     giftBoxAnimation: P,
     trinketsAnimation: x
-  } = null !== (t = null == n ? void 0 : n.chatGiftIcon) && void 0 !== t ? t : {}, M = (0, p.u)(), k = void 0 !== M && !s && A && R >= L, [j, U] = (0, f.XR)(k ? a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), G = null != j, B = S || G, V = (0, b.Ft)(E);
+  } = null !== (t = null == n ? void 0 : n.chatGiftIcon) && void 0 !== t ? t : {}, M = (0, p.u)(), k = void 0 !== M && !s && A && R >= L, [j, U] = (0, f.XR)(k ? a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), G = null != j, B = S || G, F = (0, v.Ft)(E);
   if (s) return null;
-  let F = () => {
+  let V = () => {
       (0, _.Z)({
         isGift: !0,
-        giftRecipient: null == V ? void 0 : V,
+        giftRecipient: null == F ? void 0 : F,
         initialPlanId: null,
         analyticsLocations: y,
         analyticsObject: {
@@ -147,7 +147,7 @@ function x(e) {
       })
     },
     Z = () => {
-      N(!1), U(I.L.TAKE_ACTION), F()
+      N(!1), U(I.L.TAKE_ACTION), V()
     },
     H = void 0 !== P ? (0, r.jsx)(w, {
       config: P,
@@ -168,7 +168,7 @@ function x(e) {
     },
     children: void 0 !== M && G ? (0, r.jsx)(h.Z, {
       onComplete: () => N(!1),
-      onCheckItOutClick: F,
+      onCheckItOutClick: V,
       markAsDismissed: U,
       config: M,
       children: H

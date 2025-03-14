@@ -22,8 +22,8 @@ var r = n(200651),
   m = n(240479),
   g = n(710111),
   E = n(388032),
-  v = n(680052),
-  b = n(553481);
+  b = n(680052),
+  v = n(553481);
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -70,14 +70,14 @@ function T() {
     onVolumeChange: t
   } = (0, h.Z)();
   return (0, r.jsxs)(c.P3F, {
-    className: v.sliderContainer,
+    className: b.sliderContainer,
     onClick: e => e.stopPropagation(),
     children: [(0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
       children: E.NW.string(E.t["2JbvKy"])
     }), (0, r.jsx)(c.iRW, {
       onValueChange: t,
-      className: v.slider,
+      className: b.slider,
       initialValue: (0, f.P)(e),
       maxValue: 100
     })]
@@ -94,26 +94,26 @@ function N(e) {
   return n || o || t.guildId === g.X8 || t.guildId === a || !i ? (0, r.jsx)(c.IGR, {
     text: "BETA",
     color: s.Z.BG_BRAND,
-    className: v.betaBadge
+    className: b.betaBadge
   }) : (0, r.jsxs)("div", {
-    className: v.infoNitroContainer,
+    className: b.infoNitroContainer,
     children: [(0, r.jsx)("div", {
-      className: v.infoNitroBackground
+      className: b.infoNitroBackground
     }), (0, r.jsxs)("div", {
-      className: v.infoNitroTextContainer,
+      className: b.infoNitroTextContainer,
       children: [(0, r.jsx)(c.SrA, {
         size: "xxs",
         color: "white",
-        className: v.infoNitroIcon
+        className: b.infoNitroIcon
       }), (0, r.jsx)(c.Text, {
         variant: "text-xs/medium",
         color: "always-white",
-        className: v.infoNitroText,
+        className: b.infoNitroText,
         children: E.NW.string(E.t["BMw+7O"])
       }), (0, r.jsx)(c.IGR, {
         text: "BETA",
         color: s.Z.BG_BRAND,
-        className: v.infoNitroBadge
+        className: b.infoNitroBadge
       })]
     })]
   })
@@ -124,23 +124,23 @@ function A(e) {
     sound: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(v.infoContainer, v.infoTooltip),
+    className: a()(b.infoContainer, b.infoTooltip),
     children: [(0, r.jsx)(N, {
       sound: t
     }), (0, r.jsxs)("div", {
-      className: v.infoSoundContainer,
+      className: b.infoSoundContainer,
       children: [(0, r.jsxs)("div", {
-        className: v.infoSoundInnerContainer,
+        className: b.infoSoundInnerContainer,
         children: [(0, r.jsx)(c.KY1, {
           size: "sm",
-          className: v.infoSoundIcon
+          className: b.infoSoundIcon
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
           children: t.name
         })]
       }), (0, r.jsx)("div", {
-        className: v.infoSoundInnerContainer,
+        className: b.infoSoundInnerContainer,
         children: (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           children: E.NW.string(E.t.D6eYmZ)
@@ -199,7 +199,7 @@ function C(e) {
       }, t, e), {
         "aria-label": o,
         onClick: h,
-        className: a()(b.secondaryButtonRefresh, u),
+        className: a()(v.secondaryButtonRefresh, u),
         children: s
       }))
     })
@@ -221,7 +221,7 @@ function R(e) {
       children: (0, r.jsx)(c.gj8, {
         size: "md",
         color: "currentColor",
-        className: b.secondaryIcon
+        className: v.secondaryIcon
       })
     }), (0, r.jsx)(C, {
       setTooltipShowing: i,
@@ -234,7 +234,7 @@ function R(e) {
       children: (0, r.jsx)(c.d3s, {
         size: "md",
         color: "currentColor",
-        className: b.secondaryIcon
+        className: v.secondaryIcon
       })
     })]
   })

@@ -26,17 +26,17 @@ function f(e) {
     onClickOutside: p
   } = e, h = i.useCallback((e, t) => {
     null == s || s(a()(e), t)
-  }, [s]), m = i.useMemo(() => t.toDate(), [t]), g = i.useMemo(() => null == o ? void 0 : o.toDate(), [o]), E = i.useMemo(() => null == n ? void 0 : n.toDate(), [n]), v = (0, c.e7)([u.default], () => u.default.locale), b = i.useRef(null), y = i.useCallback(e => {
+  }, [s]), m = i.useMemo(() => t.toDate(), [t]), g = i.useMemo(() => null == o ? void 0 : o.toDate(), [o]), E = i.useMemo(() => null == n ? void 0 : n.toDate(), [n]), b = (0, c.e7)([u.default], () => u.default.locale), v = i.useRef(null), y = i.useCallback(e => {
     let t = e.currentTarget;
     t.classList.contains("react-datepicker__day") && setTimeout(() => {
       var e, n;
-      if (null === (e = b.current) || void 0 === e ? void 0 : e.contains(t)) return;
-      let r = null === (n = b.current) || void 0 === n ? void 0 : n.querySelector('.react-datepicker__day[tabindex="0"]');
+      if (null === (e = v.current) || void 0 === e ? void 0 : e.contains(t)) return;
+      let r = null === (n = v.current) || void 0 === n ? void 0 : n.querySelector('.react-datepicker__day[tabindex="0"]');
       null != r && r.focus()
     }, 100)
   }, []);
   return (0, r.jsx)("div", {
-    ref: b,
+    ref: v,
     className: d.calendarPicker,
     children: (0, r.jsx)(l(), {
       calendarClassName: f,
@@ -45,7 +45,7 @@ function f(e) {
       autoFocus: _,
       fixedHeight: !0,
       inline: !0,
-      locale: v,
+      locale: b,
       maxDate: g,
       minDate: E,
       onKeyDown: y,

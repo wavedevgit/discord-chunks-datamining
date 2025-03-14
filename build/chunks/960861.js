@@ -21,8 +21,8 @@ var i, o = n(192379),
   m = n(74299),
   g = n(692417),
   E = n(783443),
-  v = n(299570),
-  b = n(65154),
+  b = n(299570),
+  v = n(65154),
   y = n(388032);
 
 function O(e, t, n) {
@@ -43,7 +43,7 @@ let S = !1,
   C = {};
 
 function R() {
-  return f.Z.supports(b.AN.NATIVE_SCREENSHARE_PICKER)
+  return f.Z.supports(v.AN.NATIVE_SCREENSHARE_PICKER)
 }
 
 function P() {
@@ -104,7 +104,7 @@ class U extends(i = a.ZP.Store) {
     return P()
   }
   releasePickerStream() {
-    (0, v.t)()
+    (0, b.t)()
   }
   getPickerState() {
     return C
@@ -142,7 +142,7 @@ function B() {
   }
 }
 
-function V(e) {
+function F(e) {
   let {
     error: t
   } = e;
@@ -152,7 +152,7 @@ function V(e) {
   }
 }
 
-function F(e) {
+function V(e) {
   let {
     style: t
   } = e;
@@ -169,7 +169,7 @@ O(U, "displayName", "NativeScreenSharePickerStore");
 let H = new U(s.Z, {
   NATIVE_SCREEN_SHARE_PICKER_UPDATE: G,
   NATIVE_SCREEN_SHARE_PICKER_CANCEL: B,
-  NATIVE_SCREEN_SHARE_PICKER_ERROR: V,
-  NATIVE_SCREEN_SHARE_PICKER_PRESENT: F,
+  NATIVE_SCREEN_SHARE_PICKER_ERROR: F,
+  NATIVE_SCREEN_SHARE_PICKER_PRESENT: V,
   NATIVE_SCREEN_SHARE_PICKER_RELEASE: Z
 })

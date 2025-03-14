@@ -19,10 +19,10 @@ var r = n(474936),
   m = n(2563),
   g = n(634071),
   E = n(175185),
-  v = n(557821);
-let b = {
+  b = n(557821);
+let v = {
     [r.JN.PREMIUM_TENURE_1_MONTH]: o,
-    [r.JN.PREMIUM_TENURE_3_MONTH]: v,
+    [r.JN.PREMIUM_TENURE_3_MONTH]: b,
     [r.JN.PREMIUM_TENURE_6_MONTH]: f,
     [r.JN.PREMIUM_TENURE_12_MONTH]: h,
     [r.JN.PREMIUM_TENURE_24_MONTH]: s,
@@ -38,4 +38,4 @@ let b = {
     [r.w7.PREMIUM_TENURE_60_MONTH]: m,
     [r.w7.PREMIUM_TENURE_72_MONTH]: _
   },
-  y = e => b[e]
+  y = e => v[e]

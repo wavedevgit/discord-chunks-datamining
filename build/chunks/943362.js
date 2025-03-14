@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => v
 });
 var r = n(200651);
 n(192379);
@@ -51,24 +51,24 @@ function E(e, t) {
   return n
 }
 
-function v(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function b(e) {
+function v(e) {
   return {
     react(t, i, m) {
       let E = m.noStyleAndInteraction ? void 0 : async n => {
         let r = await (0, d.B_)(t.attachmentUrl);
         e.shouldStopPropagation && (null == n || n.stopPropagation()), c.Z.trackLinkClicked(r), e.shouldCloseDefaultModals && (0, a.pTH)(), (0, l.Z)(r)
-      }, b = m.noStyleAndInteraction ? _.dG4 : e => {
+      }, v = m.noStyleAndInteraction ? _.dG4 : e => {
         (0, s.jW)(e, async () => {
           let {
             default: e
           } = await n.e("98466").then(n.bind(n, 151578));
-          return n => (0, r.jsx)(e, v(g({}, n), {
+          return n => (0, r.jsx)(e, b(g({}, n), {
             attachmentUrl: t.attachmentUrl,
             attachmentName: t.attachmentName
           }))
@@ -78,7 +78,7 @@ function b(e) {
         role: "link",
         href: t.attachmentUrl,
         onClick: E,
-        onContextMenu: b,
+        onContextMenu: v,
         className: "attachmentLink",
         children: [(0, r.jsx)(a.Ujz, {
           size: "xs",

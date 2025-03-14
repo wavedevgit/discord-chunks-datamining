@@ -1,5 +1,6 @@
-/** Chunk was on 98806 **/
-e.exports = {
+/** Chunk was on web.js **/
+"use strict";
+var r = {
   container: "container__80da8",
   gameIcon: "gameIcon__80da8",
   gameIconImage: "gameIconImage__80da8",
@@ -12,4 +13,5 @@ e.exports = {
   gameActivityLevel: "gameActivityLevel__80da8",
   gameActivityLevelInner: "gameActivityLevelInner__80da8",
   favoriteGameContainer: "favoriteGameContainer__80da8"
-}
+};
+e.exports = r

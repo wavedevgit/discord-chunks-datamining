@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => b,
+  Z: () => v,
   q: () => y
 }), n(627341), n(653041);
 var r = n(278074),
@@ -77,11 +77,11 @@ let E = e => (0, r.EQ)(e).with({
   }, e => u.Z.fromServer(e)).with({
     type: i.Z.NAMEPLATE
   }, e => c.Z.fromServer(e)).otherwise(() => null),
-  v = e => null != e ? e.reduce((e, t) => {
+  b = e => null != e ? e.reduce((e, t) => {
     let n = E(t);
     return null != n && e.push(n), e
   }, []) : [];
-class b extends l.Z {
+class v extends l.Z {
   static fromServer(e) {
     var {
       type: t,
@@ -91,12 +91,12 @@ class b extends l.Z {
       bundled_products: o,
       variants: l
     } = e, c = m(e, ["type", "premium_type", "category_sku_id", "prices", "bundled_products", "variants"]);
-    return new b(h(_({}, super.fromServer(c)), {
+    return new v(h(_({}, super.fromServer(c)), {
       type: t,
       premiumType: n === d.WND ? null : n,
       categorySkuId: r,
       prices: (0, s.l)(i),
-      items: v(c.items),
+      items: b(c.items),
       bundledProducts: null == o ? void 0 : o.map(a.Z.fromServer),
       variants: null == l ? void 0 : l.map(y.fromServer),
       googleSkuIds: c.google_sku_ids
@@ -106,7 +106,7 @@ class b extends l.Z {
     super(e), f(this, "prices", void 0), f(this, "type", void 0), f(this, "premiumType", void 0), f(this, "items", void 0), f(this, "categorySkuId", void 0), f(this, "bundledProducts", void 0), f(this, "variants", void 0), f(this, "variantGroupStoreListingId", void 0), f(this, "googleSkuIds", void 0), this.summary = e.summary, this.type = e.type, this.premiumType = e.premiumType, this.items = e.items, this.categorySkuId = e.categorySkuId, this.prices = e.prices, this.bundledProducts = e.bundledProducts, this.googleSkuIds = e.googleSkuIds, this.variants = e.variants
   }
 }
-class y extends b {
+class y extends v {
   static fromServer(e) {
     var {
       base_variant_name: t,

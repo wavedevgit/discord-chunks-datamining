@@ -20,8 +20,8 @@ var r = n(200651),
   m = n(639119),
   g = n(197115),
   E = n(302945),
-  v = n(474936),
-  b = n(981631),
+  b = n(474936),
+  v = n(981631),
   y = n(388032),
   O = n(260248),
   I = function(e) {
@@ -44,15 +44,15 @@ function S(e) {
   i.useEffect(() => {
     !w && S && c.MH()
   }, [w, S]), i.useEffect(() => {
-    _.default.track(b.rMx.PREMIUM_UPSELL_VIEWED, N), null == C || C()
+    _.default.track(v.rMx.PREMIUM_UPSELL_VIEWED, N), null == C || C()
   }, [C, N]);
   let D = P.length > 1 && S,
     L = () => 2 === t ? O.hasTabParentContainer : 1 === t ? O.hasParentContainer : O.noParentContainer,
     x = () => {
-      _.default.track(b.rMx.PREMIUM_PROMOTION_OPENED, {
+      _.default.track(v.rMx.PREMIUM_PROMOTION_OPENED, {
         location_section: T,
-        location_object: b.qAy.NAVIGATION_LINK
-      }), null == R || R(), (0, d.Z)(), A(), (0, u.xf)(), (0, f.uL)(b.Z5c.APPLICATION_STORE)
+        location_object: v.qAy.NAVIGATION_LINK
+      }), null == R || R(), (0, d.Z)(), A(), (0, u.xf)(), (0, f.uL)(v.Z5c.APPLICATION_STORE)
     },
     M = (0, m.N)(),
     k = i.useCallback(() => {
@@ -104,9 +104,9 @@ function S(e) {
           showGradient: !0,
           premiumModalAnalyticsLocation: {
             section: T,
-            object: b.qAy.BUTTON_CTA
+            object: v.qAy.BUTTON_CTA
           },
-          subscriptionTier: v.Si.TIER_2,
+          subscriptionTier: b.Si.TIER_2,
           size: l.zxk.Sizes.SMALL,
           color: l.zxk.Colors.CUSTOM,
           onClick: () => {

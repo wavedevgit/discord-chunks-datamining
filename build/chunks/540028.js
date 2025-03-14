@@ -21,7 +21,7 @@ var i = n(442837),
   g = n(388032),
   E = n(54329);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -69,21 +69,21 @@ function I(e) {
     onSelect: E
   } = e;
   n && t();
-  let v = (0, i.e7)([c.ZP], () => c.ZP.getSelfEmbeddedActivityForChannel(p)),
-    b = (0, i.e7)([_.Z], () => _.Z.pipWindow),
+  let b = (0, i.e7)([c.ZP], () => c.ZP.getSelfEmbeddedActivityForChannel(p)),
+    v = (0, i.e7)([_.Z], () => _.Z.pipWindow),
     y = (0, i.e7)([d.Z], () => d.Z.getSelectedParticipant(p)),
     O = (0, i.e7)([d.Z], () => d.Z.getStreamParticipants(p));
 
   function I(e) {
-    (null == b ? void 0 : b.id) !== e.pipWindow.id && (0, l.k3)(e.pipWindow.id);
+    (null == v ? void 0 : v.id) !== e.pipWindow.id && (0, l.k3)(e.pipWindow.id);
     let t = e.participant;
     null != t && t.type !== m.fO.ACTIVITY && s.Z.selectParticipant(p, t.id)
   }
 
   function S(e) {
-    if (e.pipWindow.component === h.NYg.EMBED_IFRAME && null != v) {
+    if (e.pipWindow.component === h.NYg.EMBED_IFRAME && null != b) {
       var t;
-      let e = null === (t = u.Z.getApplication(v.applicationId)) || void 0 === t ? void 0 : t.name;
+      let e = null === (t = u.Z.getApplication(b.applicationId)) || void 0 === t ? void 0 : t.name;
       return null == e ? g.NW.string(g.t["8raC1N"]) : g.NW.formatToPlainString(g.t["a9+V+f"], {
         activityName: e
       })
@@ -98,7 +98,7 @@ function I(e) {
       t = o.find(e => e.component === h.NYg.VIDEO);
     return null != t && O.forEach(n => {
       let r = f.Z.getActiveStreamForApplicationStream(n.stream),
-        i = n.id === (null == y ? void 0 : y.id) && (null == b ? void 0 : b.id) === t.id;
+        i = n.id === (null == y ? void 0 : y.id) && (null == v ? void 0 : v.id) === t.id;
       null == r || i || e.push({
         pipWindow: t,
         participant: n,
@@ -137,12 +137,12 @@ let S = function(e) {
   }), c = 1 === s.length && s[0].component === h.NYg.EMBED_IFRAME || 0 === l.length, u = 1 === s.length && l.length <= 1;
   return c || u ? null : (0, r.jsx)(a.yRy, {
     position: "bottom",
-    renderPopout: e => (0, r.jsx)(I, b({
+    renderPopout: e => (0, r.jsx)(I, v({
       voiceChannelId: t,
       pipWindows: s,
       idle: n
     }, e)),
-    children: e => (0, r.jsx)(a.P3F, O(b({
+    children: e => (0, r.jsx)(a.P3F, O(v({
       className: E.menuIcon
     }, e), {
       children: (0, r.jsx)(a.Huf, {

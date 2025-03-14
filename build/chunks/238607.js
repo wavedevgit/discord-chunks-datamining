@@ -21,7 +21,7 @@ var i = n(442837),
   g = n(981631),
   E = n(388032);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -64,7 +64,7 @@ function I(e) {
   let {
     user: t,
     activity: n,
-    onAction: v,
+    onAction: b,
     onClose: y
   } = e, {
     newestAnalyticsLocation: I
@@ -81,7 +81,7 @@ function I(e) {
     themeColor: "none",
     fullWidth: !0,
     onClick: e => {
-      e.stopPropagation(), null == y || y(), null == v || v({
+      e.stopPropagation(), null == y || y(), null == b || b({
         action: "PRESS_PLAY_BUTTON"
       }), (null == T ? void 0 : T.isVocal()) ? (0, d.Z)({
         context: {
@@ -106,28 +106,28 @@ function I(e) {
   } = N;
   return D ? (0, r.jsx)(o.ua7, {
     text: P,
-    children: e => (0, r.jsx)(m.tG, O(b({}, e), {
+    children: e => (0, r.jsx)(m.tG, O(v({}, e), {
       icon: o.YVR,
       text: R,
       disabled: !w,
       submitting: A,
       fullWidth: !0,
       onClick: e => {
-        e.stopPropagation(), null == v || v({
+        e.stopPropagation(), null == b || b({
           action: "PRESS_JOIN_BUTTON"
         }), C()
       }
     }))
   }) : (0, r.jsx)(o.ua7, {
     text: P,
-    children: e => (0, r.jsx)(m.tG, O(b({}, e), {
+    children: e => (0, r.jsx)(m.tG, O(v({}, e), {
       icon: o.iWm,
       text: R,
       disabled: !w,
       submitting: A,
       fullWidth: !0,
       onClick: e => {
-        e.stopPropagation(), null == v || v({
+        e.stopPropagation(), null == b || b({
           action: "PRESS_ASK_TO_JOIN_BUTTON"
         }), C()
       }

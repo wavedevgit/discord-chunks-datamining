@@ -1,11 +1,11 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => p
+  Z: () => x
 }), n(47120), n(653041);
 var r = n(200651),
   a = n(192379),
-  i = n(120356),
-  l = n.n(i),
+  l = n(120356),
+  i = n.n(l),
   o = n(481060),
   s = n(424625),
   c = n(823379),
@@ -15,16 +15,16 @@ let m = a.forwardRef(function(e, t) {
   let {
     id: n,
     selected: a,
-    onClick: i,
+    onClick: l,
     children: s
   } = e;
   return (0, r.jsx)(o.P3F, {
-    className: l()(u.tabItem, {
+    className: i()(u.tabItem, {
       [u.selected]: a
     }),
     "data-tab-id": n,
     innerRef: t,
-    onClick: i,
+    onClick: l,
     children: s
   })
 });
@@ -33,21 +33,21 @@ function h(e) {
   let {
     tabs: t,
     selectedTabId: n,
-    onSelectTab: i
-  } = e, l = a.useRef(null), h = a.useRef(0), p = a.useRef(new Map), [x, f] = a.useState([]), b = a.useCallback(() => {
-    var e, r, a, i;
-    if (null == l.current) return;
+    onSelectTab: l
+  } = e, i = a.useRef(null), h = a.useRef(0), x = a.useRef(new Map), [p, b] = a.useState([]), f = a.useCallback(() => {
+    var e, r, a, l;
+    if (null == i.current) return;
     let o = [],
-      s = l.current.getBoundingClientRect().width;
+      s = i.current.getBoundingClientRect().width;
     if (s !== h.current) {
-      for (let l of (h.current = s, s -= null !== (r = null === (e = p.current.get(n)) || void 0 === e ? void 0 : e.width) && void 0 !== r ? r : 0, t)) l.id !== n && (s -= null !== (i = null === (a = p.current.get(l.id)) || void 0 === a ? void 0 : a.width) && void 0 !== i ? i : 0) < 0 && o.push(l.id);
-      f(o)
+      for (let i of (h.current = s, s -= null !== (r = null === (e = x.current.get(n)) || void 0 === e ? void 0 : e.width) && void 0 !== r ? r : 0, t)) i.id !== n && (s -= null !== (l = null === (a = x.current.get(i.id)) || void 0 === a ? void 0 : a.width) && void 0 !== l ? l : 0) < 0 && o.push(i.id);
+      b(o)
     }
   }, [t, n]), _ = a.useRef(null);
-  a.useEffect(() => (_.current = new ResizeObserver(() => b()), null != l.current && _.current.observe(l.current), () => {
+  a.useEffect(() => (_.current = new ResizeObserver(() => f()), null != i.current && _.current.observe(i.current), () => {
     var e;
     null === (e = _.current) || void 0 === e || e.disconnect()
-  }), [b]);
+  }), [f]);
   let g = a.useCallback(e => {
     let {
       closePopout: a
@@ -63,42 +63,42 @@ function h(e) {
           id: t,
           name: a
         } = e;
-        return x.includes(t) && n !== t ? (0, r.jsx)(o.sNh, {
+        return p.includes(t) && n !== t ? (0, r.jsx)(o.sNh, {
           id: t,
           label: a,
-          action: () => i(t)
+          action: () => l(t)
         }, t) : null
       }).filter(c.lm)
     })
-  }, [t, x, i, n]);
+  }, [t, p, l, n]);
   return (0, r.jsxs)("div", {
     className: u.tabBarContainer,
     children: [(0, r.jsx)("div", {
       className: u.tabBar,
-      ref: l,
+      ref: i,
       children: t.map(e => {
         let {
           id: t,
           name: a
         } = e;
-        if (!x.includes(t)) return (0, r.jsx)(m, {
+        if (!p.includes(t)) return (0, r.jsx)(m, {
           id: t,
           selected: n === t,
           ref: e => {
             var n, r, a;
-            let i = null !== (r = null === (n = p.current.get(t)) || void 0 === n ? void 0 : n.width) && void 0 !== r ? r : 0;
-            p.current.set(t, {
+            let l = null !== (r = null === (n = x.current.get(t)) || void 0 === n ? void 0 : n.width) && void 0 !== r ? r : 0;
+            x.current.set(t, {
               node: e,
-              width: null !== (a = null == e ? void 0 : e.getBoundingClientRect().width) && void 0 !== a ? a : i
+              width: null !== (a = null == e ? void 0 : e.getBoundingClientRect().width) && void 0 !== a ? a : l
             })
           },
-          onClick: n !== t ? () => i(t) : void 0,
+          onClick: n !== t ? () => l(t) : void 0,
           children: a
         }, t)
       }).filter(c.lm)
     }), (0, r.jsx)("div", {
       className: u.menu,
-      children: x.length > 0 && (0, r.jsx)(o.yRy, {
+      children: p.length > 0 && (0, r.jsx)(o.yRy, {
         layerContext: d.O$,
         renderPopout: g,
         position: "bottom",
@@ -148,8 +148,8 @@ function h(e) {
   })
 }
 
-function p(e, t) {
-  var n, i, l;
+function x(e, t) {
+  var n, l, i;
   let {
     tabs: o,
     initialSelectedTabId: s,
@@ -163,7 +163,7 @@ function p(e, t) {
         u(e), null == c || c(e)
       }
     }), [d, u, c, ...t]),
-    renderSelectedTab: null !== (l = null === (i = o.find(e => e.id === d)) || void 0 === i ? void 0 : i.render) && void 0 !== l ? l : () => null,
+    renderSelectedTab: null !== (i = null === (l = o.find(e => e.id === d)) || void 0 === l ? void 0 : l.render) && void 0 !== i ? i : () => null,
     selectedTabId: d
   }
 }

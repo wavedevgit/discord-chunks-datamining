@@ -155,20 +155,20 @@ class p extends r.EventEmitter {
     let {
       results: g,
       metadata: E
-    } = f.queryResults(this.props.channel, this.props.guild, _, i, p), v = 0;
-    for (let e of Object.values(g)) Array.isArray(e) && (v += e.length);
-    let b = !0 === g.isLoading,
-      y = this.shouldShow(v, b, f),
+    } = f.queryResults(this.props.channel, this.props.guild, _, i, p), b = 0;
+    for (let e of Object.values(g)) Array.isArray(e) && (b += e.length);
+    let v = !0 === g.isLoading,
+      y = this.shouldShow(b, v, f),
       O = this.state.selectedIndex;
-    !y || b ? O = null : null != O && O >= v && (O = v - 1), y && !this.state.isVisible && (0, o.a7)(d, this.props.channel, E), this.setState({
+    !y || v ? O = null : null != O && O >= b && (O = b - 1), y && !this.state.isVisible && (0, o.a7)(d, this.props.channel, E), this.setState({
       query: {
         type: d,
         typeInfo: f,
         queryText: _,
         results: g,
-        resultCount: v,
+        resultCount: b,
         options: i,
-        isLoading: b
+        isLoading: v
       },
       isVisible: y,
       selectedIndex: O

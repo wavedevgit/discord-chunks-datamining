@@ -32,11 +32,11 @@ var r = n(161581),
       }), e = 0; e < 516; e++)
       if (n[e] !== r[e]) return !0
   }),
-  v = function(e) {
+  b = function(e) {
     return function(t, n) {
       return void 0 !== e ? +e(t, n) || 0 : n != n ? -1 : t != t ? 1 : 0 === t && 0 === n ? 1 / t > 0 && 1 / n < 0 ? 1 : -1 : t > n
     }
   };
 p("sort", function(e) {
-  return (void 0 !== e && a(e), E) ? m(this, e) : s(_(this), v(e))
+  return (void 0 !== e && a(e), E) ? m(this, e) : s(_(this), b(e))
 }, !E || g)

@@ -55,8 +55,8 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = 300,
-  b = e => (0, s.ZDy)(async () => {
+let b = 300,
+  v = e => (0, s.ZDy)(async () => {
     let {
       default: t
     } = await n.e("31649").then(n.bind(n, 475613));
@@ -75,10 +75,10 @@ function y(e) {
     analyticsLocations: h
   } = (0, c.ZP)(), {
     trackUserProfileAction: m
-  } = (0, f.KZ)(), [g, E] = (0, a.Wu)([l.Z], () => [l.Z.useReducedMotion, l.Z.keyboardModeEnabled]), y = !n || g || E ? 0 : v, O = () => {
+  } = (0, f.KZ)(), [g, E] = (0, a.Wu)([l.Z], () => [l.Z.useReducedMotion, l.Z.keyboardModeEnabled]), y = !n || g || E ? 0 : b, O = () => {
     m({
       action: "PRESS_EDIT_CUSTOM_STATUS"
-    }), b(h), null == i || i()
+    }), v(h), null == i || i()
   }, I = () => {
     m({
       action: "PRESS_CLEAR_CUSTOM_STATUS"

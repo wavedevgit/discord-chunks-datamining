@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(74538),
   g = n(790527),
   E = n(474936),
-  v = n(981631),
-  b = n(388032),
+  b = n(981631),
+  v = n(388032),
   y = n(292897);
 
 function O(e, t, n) {
@@ -70,7 +70,7 @@ function N(e) {
   let O = (0, o.e7)([d.default], () => d.default.getCurrentUser()),
     T = (0, o.e7)([c.Z], () => c.Z.theme),
     N = (0, o.e7)([u.Z], () => u.Z.getGuildId()),
-    A = T === v.BRd.LIGHT ? "light" : "dark",
+    A = T === b.BRd.LIGHT ? "light" : "dark",
     C = (0, r.jsx)("img", {
       className: y.art,
       alt: "File Upload Nitro Perk",
@@ -85,7 +85,7 @@ function N(e) {
     P = (0, p.iL)({
       guildId: N,
       onClick: () => {
-        window.open(h.Z.getArticleURL(v.BhN.NITRO_FAQ), "_blank")
+        window.open(h.Z.getArticleURL(b.BhN.NITRO_FAQ), "_blank")
       }
     }),
     w = (0, r.jsx)("div", {
@@ -97,28 +97,28 @@ function N(e) {
     });
 
   function D() {
-    (0, s.Z)(), t(), f.default.track(v.rMx.PREMIUM_PROMOTION_OPENED, {
-      location_section: v.jXE.FILE_UPLOAD_UPSELL_MODAL,
-      location_object: v.qAy.NAVIGATION_LINK
-    }), (0, l.uL)(v.Z5c.APPLICATION_STORE)
+    (0, s.Z)(), t(), f.default.track(b.rMx.PREMIUM_PROMOTION_OPENED, {
+      location_section: b.jXE.FILE_UPLOAD_UPSELL_MODAL,
+      location_object: b.qAy.NAVIGATION_LINK
+    }), (0, l.uL)(b.Z5c.APPLICATION_STORE)
   }
   return (0, r.jsx)(g.Z, I({
     artElement: C,
     artContainerClassName: y.artContainer,
     enableArtBoxShadow: !1,
     type: E.cd.UPLOAD_ERROR_UPSELL,
-    title: b.NW.string(b.t["9C+41t"]),
+    title: v.NW.string(v.t["9C+41t"]),
     body: w,
-    context: b.NW.formatToPlainString(b.t.q5fTZm, {
+    context: v.NW.formatToPlainString(v.t.q5fTZm, {
       maxSize: R
     }),
     glowUp: P,
     analyticsLocation: {
-      section: v.jXE.FILE_UPLOAD_POPOUT
+      section: b.jXE.FILE_UPLOAD_POPOUT
     },
     onClose: t,
     subscriptionTier: E.Si.TIER_2,
-    secondaryCTA: b.NW.string(b.t.ZnqyZ2),
+    secondaryCTA: v.NW.string(v.t.ZnqyZ2),
     onSecondaryClick: D,
     showEnhancedUpsell: !0
   }, n))

@@ -53,8 +53,8 @@ let _ = "no_payment_source",
   m = null,
   g = null,
   E = null,
-  v = {},
-  b = null,
+  b = {},
+  v = null,
   y = !1,
   O = null,
   I = !1,
@@ -65,11 +65,11 @@ let _ = "no_payment_source",
   C = new Set;
 
 function R(e) {
-  null != r && null != b ? r(b) : null != i && i(e), r = null, i = null
+  null != r && null != v ? r(v) : null != i && i(e), r = null, i = null
 }
 
 function P(e) {
-  R(), p = e.skuId, m = e.applicationId, S = e.isIAP, g = e.analyticsLocation, A = e.context, N = e.isGift, T = !0, I = !1, r = e.resolve, i = e.reject, O = null, b = null, E = e.promotionId
+  R(), p = e.skuId, m = e.applicationId, S = e.isIAP, g = e.analyticsLocation, A = e.context, N = e.isGift, T = !0, I = !1, r = e.resolve, i = e.reject, O = null, v = null, E = e.promotionId
 }
 
 function w(e) {
@@ -92,8 +92,8 @@ function L(e) {
     paymentSourceId: n,
     price: r
   } = e;
-  v = f(u({}, v), {
-    [t]: f(u({}, v[t]), {
+  b = f(u({}, b), {
+    [t]: f(u({}, b[t]), {
       [null != n ? n : _]: r
     })
   }), C.delete(t)
@@ -115,7 +115,7 @@ function k(e) {
     entitlements: t,
     giftCode: n
   } = e;
-  y = !1, b = t, h = n
+  y = !1, v = t, h = n
 }
 
 function j(e) {
@@ -141,11 +141,11 @@ function B() {
   O = null
 }
 
-function V(e) {
+function F(e) {
   N = e.isGift
 }
 
-function F(e) {
+function V(e) {
   let {
     locked: t
   } = e;
@@ -154,7 +154,7 @@ function F(e) {
 }
 class Z extends(o = a.ZP.Store) {
   getPricesForSku(e) {
-    return v[e]
+    return b[e]
   }
   isOpen() {
     let e = __OVERLAY__ ? l.IlC.OVERLAY : l.IlC.APP;
@@ -206,7 +206,7 @@ let H = new Z(s.Z, {
   SKU_PURCHASE_FAIL: U,
   SKU_PURCHASE_SHOW_CONFIRMATION_STEP: G,
   SKU_PURCHASE_CLEAR_ERROR: B,
-  SKU_PURCHASE_UPDATE_IS_GIFT: V,
-  OVERLAY_SET_INPUT_LOCKED: F,
+  SKU_PURCHASE_UPDATE_IS_GIFT: F,
+  OVERLAY_SET_INPUT_LOCKED: V,
   GIFT_CODE_CREATE: j
 })

@@ -17,12 +17,12 @@ function o(e, t) {
       m = n[3],
       g = n[4],
       E = n[5],
-      v = n[6],
-      b = n[7];
+      b = n[6],
+      v = n[7];
     s && (r.push(s), s = "");
     var y = null != h && null != p && p !== h,
-      O = "+" === v || "*" === v,
-      I = "?" === v || "*" === v,
+      O = "+" === b || "*" === b,
+      I = "?" === b || "*" === b,
       S = n[2] || l,
       T = g || E;
     r.push({
@@ -32,8 +32,8 @@ function o(e, t) {
       optional: I,
       repeat: O,
       partial: y,
-      asterisk: !!b,
-      pattern: T ? d(T) : b ? ".*" : "[^" + u(S) + "]+?"
+      asterisk: !!v,
+      pattern: T ? d(T) : v ? ".*" : "[^" + u(S) + "]+?"
     })
   }
   return a < e.length && (s += e.substr(a)), s && r.push(s), r

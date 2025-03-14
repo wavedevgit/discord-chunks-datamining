@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => v
 }), n(47120);
 var r, i = n(442837),
   o = n(570140);
@@ -101,7 +101,7 @@ function E(e) {
   if (null == d[t]) return !1;
   delete d[t]
 }
-class v extends(r = i.ZP.Store) {
+class b extends(r = i.ZP.Store) {
   getCompletedActions(e) {
     return null == e ? null : d[e]
   }
@@ -116,8 +116,8 @@ class v extends(r = i.ZP.Store) {
     }
   }
 }
-a(v, "displayName", "GuildOnboardingMemberActionStore");
-let b = new v(o.Z, {
+a(b, "displayName", "GuildOnboardingMemberActionStore");
+let v = new b(o.Z, {
   GUILD_NEW_MEMBER_ACTIONS_FETCH_START: h,
   GUILD_NEW_MEMBER_ACTIONS_FETCH_SUCCESS: p,
   GUILD_NEW_MEMBER_ACTIONS_FETCH_FAIL: m,

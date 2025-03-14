@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(750881),
   g = n(194082),
   E = n(318374),
-  v = n(449605),
-  b = n(102172),
+  b = n(449605),
+  v = n(102172),
   y = n(359110),
   O = n(769654),
   I = n(922482),
@@ -41,8 +41,8 @@ var r = n(200651),
   U = n(336383),
   G = n(194811),
   B = n(373826),
-  V = n(315324),
-  F = n(788858),
+  F = n(315324),
+  V = n(788858),
   Z = n(599864),
   H = n(386019),
   W = n(228168),
@@ -89,10 +89,10 @@ function J(e) {
   }), ep = (0, D.Z)({
     userId: t.id,
     onAction: e_
-  }), [eh, em] = (0, b.wq)(ec), {
+  }), [eh, em] = (0, v.wq)(ec), {
     previewUrl: eg,
     isLoading: eE
-  } = (0, v.Z)(o.guildId, o.channelId, o.ownerId), ev = (0, s.e7)([N.Z], () => null != ec && N.Z.canBasicChannel(Y.S7T.CONNECT, ec)), eb = (0, s.e7)([C.Z], () => C.Z.getRelationshipType(t.id));
+  } = (0, b.Z)(o.guildId, o.channelId, o.ownerId), eb = (0, s.e7)([N.Z], () => null != ec && N.Z.canBasicChannel(Y.S7T.CONNECT, ec)), ev = (0, s.e7)([C.Z], () => C.Z.getRelationshipType(t.id));
   i.useEffect(() => {
     if (es) {
       var e;
@@ -100,11 +100,11 @@ function J(e) {
         activity_user_id: t.id,
         discoverable: null === (e = o.discoverable) || void 0 === e || e,
         surface: "user-profile-stream-activity-card",
-        relationship_type: eb,
+        relationship_type: ev,
         treatment: ea && !1 === o.discoverable ? m.h9.HIDE : m.h9.SHOW
       })
     }
-  }, [t, eb, ea, es, o]);
+  }, [t, ev, ea, es, o]);
   let ey = (0, d.Z)(eE ? null : eg),
     eO = eE || null == eg ? ey : eg;
   if (null == el || null == ec || ea && !1 === o.discoverable || null === et) return null;
@@ -131,10 +131,10 @@ function J(e) {
             className: q.overlayText,
             variant: "text-sm/medium",
             color: "always-white",
-            children: (0, b.P9)(em)
+            children: (0, v.P9)(em)
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/medium",
-            children: ev ? K.NW.string(K.t.uQZTBQ) : K.NW.string(K.t.pgUTZG)
+            children: eb ? K.NW.string(K.t.uQZTBQ) : K.NW.string(K.t.pgUTZG)
           })]
         })]
       }) : (0, r.jsxs)(l.P3F, {
@@ -151,7 +151,7 @@ function J(e) {
             className: q.overlayText,
             variant: "text-sm/medium",
             color: "always-white",
-            children: (0, b.P9)(em)
+            children: (0, v.P9)(em)
           }), (0, r.jsx)(l.gw7, {
             size: "xs",
             color: "currentColor",
@@ -179,7 +179,7 @@ function J(e) {
             variant: "heading-sm/semibold",
             color: "text-normal",
             className: z.voiceChannelHeading,
-            children: [(0, r.jsx)(F.Z, {
+            children: [(0, r.jsx)(V.Z, {
               channel: ec,
               size: "xxs",
               color: l.TVs.colors.TEXT_NORMAL,
@@ -200,7 +200,7 @@ function J(e) {
           users: eu,
           guildId: el.id,
           channelId: ec.id,
-          maxUsers: V.W,
+          maxUsers: F.W,
           size: l.EFr.SIZE_16,
           onClick: e => {
             null == e || e.stopPropagation(), null == e_ || e_({
@@ -214,7 +214,7 @@ function J(e) {
         })]
       })
     },
-    eT = () => et === W.y0.FULL_SIZE ? null : (0, r.jsx)(V.Z, {
+    eT = () => et === W.y0.FULL_SIZE ? null : (0, r.jsx)(F.Z, {
       user: t,
       guild: el,
       channel: ec,

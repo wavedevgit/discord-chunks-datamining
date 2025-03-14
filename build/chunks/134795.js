@@ -23,21 +23,21 @@ function m(e) {
     disabled: p = !1,
     showPremiumIcon: h = !0,
     isTryItOutFlow: f = !1,
-    forcedDivider: b,
-    withHighlight: x = !1
-  } = e, N = x ? a.gtL : a.zxk;
+    forcedDivider: x,
+    withHighlight: b = !1
+  } = e, N = b ? a.gtL : a.zxk;
   return (0, r.jsx)(o.Z, {
     className: g,
     title: d.NW.string(d.t.Vgdusr),
     showPremiumIcon: h,
     errors: n,
     disabled: p,
-    forcedDivider: b,
+    forcedDivider: x,
     children: (0, r.jsxs)("div", {
       className: u.buttonsContainer,
       children: [(0, r.jsx)(N, {
         className: s()({
-          [u.buttonHighlighted]: x
+          [u.buttonHighlighted]: b
         }),
         size: a.zxk.Sizes.SMALL,
         onClick: () => (0, l.$r)(c.pC.BANNER, m, f, void 0),

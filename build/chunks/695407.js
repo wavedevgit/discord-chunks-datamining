@@ -82,7 +82,7 @@ let m = i.forwardRef(function(e, t) {
     activate: () => !1
   }), []);
   let E = h(n, a, o),
-    v = e => {
+    b = e => {
       o(e.currentTarget.value), null == p || p(c.U.SEARCH)
     };
   return (0, r.jsx)(l.t, {
@@ -103,7 +103,7 @@ let m = i.forwardRef(function(e, t) {
         ref: g,
         className: _.input,
         value: n,
-        onChange: v,
+        onChange: b,
         "aria-label": d,
         placeholder: u,
         disabled: s

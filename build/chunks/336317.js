@@ -16,8 +16,8 @@ let r = function() {
       onerror: function() {
         this.parentNode && this.parentNode.replaceChild(l(this.alt, !1), this)
       },
-      parse: v,
-      replace: b,
+      parse: b,
+      replace: v,
       test: y
     },
     t = {
@@ -57,8 +57,8 @@ let r = function() {
   }
 
   function _(e, t) {
-    for (var r, i, o, a, s, c, u, _, p, h, m, g, E, v = d(e, []), b = v.length; b--;) {
-      for (o = !1, a = document.createDocumentFragment(), c = (s = v[b]).nodeValue, _ = 0; u = n.exec(c);) {
+    for (var r, i, o, a, s, c, u, _, p, h, m, g, E, b = d(e, []), v = b.length; v--;) {
+      for (o = !1, a = document.createDocumentFragment(), c = (s = b[v]).nodeValue, _ = 0; u = n.exec(c);) {
         if ((p = u.index) !== _ && a.appendChild(l(c.slice(_, p), !0)), g = f(m = u[0]), _ = p + m.length, E = t.callback(g, t), g && E) {
           for (i in (h = new Image).onerror = t.onerror, h.setAttribute("draggable", "false"), r = t.attributes(m, g)) r.hasOwnProperty(i) && 0 !== i.indexOf("on") && !h.hasAttribute(i) && h.setAttribute(i, r[i]);
           h.className = t.className, h.alt = m, h.src = E, o = !0, a.appendChild(h)
@@ -71,7 +71,7 @@ let r = function() {
   }
 
   function p(e, t) {
-    return b(e, function(e) {
+    return v(e, function(e) {
       var n, r, i = e,
         o = f(e),
         a = t.callback(o, t);
@@ -100,7 +100,7 @@ let r = function() {
     return t < 65536 ? s(t) : s(55296 + ((t -= 65536) >> 10), 56320 + (1023 & t))
   }
 
-  function v(t, n) {
+  function b(t, n) {
     return n && "function" != typeof n || (n = {
       callback: n
     }), ("string" == typeof t ? p : _)(t, {
@@ -114,7 +114,7 @@ let r = function() {
     })
   }
 
-  function b(e, t) {
+  function v(e, t) {
     return String(e).replace(n, t)
   }
 

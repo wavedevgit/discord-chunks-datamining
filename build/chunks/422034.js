@@ -58,7 +58,7 @@ function m(e) {
   }) : "", [p]);
   if (0 === p.length) return null;
 
-  function v() {
+  function b() {
     return t || c ? (0, r.jsx)(l.Text, {
       variant: c ? "text-sm/normal" : "text-lg/medium",
       color: o,
@@ -78,7 +78,7 @@ function m(e) {
       children: h
     }), (0, r.jsx)("div", {
       className: _.textContainer,
-      children: (0, r.jsx)(v, {})
+      children: (0, r.jsx)(b, {})
     })]
   })
 }

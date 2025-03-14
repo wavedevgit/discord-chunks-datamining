@@ -41,9 +41,9 @@ var s = function() {
       if (g * E <= 0) h.push(0);
       else {
         i = f[m];
-        var v = f[m + 1],
-          b = i + v;
-        h.push(3 * b / ((b + v) / g + (b + i) / E))
+        var b = f[m + 1],
+          v = i + b;
+        h.push(3 * v / ((v + b) / g + (v + i) / E))
       }
     }
     h.push(_[_.length - 1]);

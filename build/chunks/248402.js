@@ -49,14 +49,14 @@ function E() {
   }
   i !== e && (i = e, t && O.emitChange())
 }
-let v = s().debounce(E, 300);
+let b = s().debounce(E, 300);
 
-function b() {
-  return v(), !1
+function v() {
+  return b(), !1
 }
 class y extends(o = l.ZP.Store) {
   initialize() {
-    this.waitFor(u.Z, _.default, h.Z, f.Z, p.Z), this.syncWith([u.Z, f.Z], b)
+    this.waitFor(u.Z, _.default, h.Z, f.Z, p.Z), this.syncWith([u.Z, f.Z], v)
   }
   getSpeaker(e) {
     return r !== e && (r = e, E(!1)), null != i ? i : _.default.getId()
@@ -64,6 +64,6 @@ class y extends(o = l.ZP.Store) {
 }
 g(y, "displayName", "VideoSpeakerStore");
 let O = new y(c.Z, {
-    AUDIO_SET_LOCAL_VIDEO_DISABLED: b
+    AUDIO_SET_LOCAL_VIDEO_DISABLED: v
   }),
   I = O

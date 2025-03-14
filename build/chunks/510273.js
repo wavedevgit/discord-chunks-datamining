@@ -1,17 +1,17 @@
-/** Chunk was on 95617 **/
+/** Chunk was on 98697 **/
 n.d(t, {
-  Z: () => b
+  Z: () => p
 }), n(266796);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
   l = n.n(o),
-  s = n(481060),
-  a = n(955204),
+  a = n(481060),
+  s = n(955204),
   c = n(818765),
   u = n(674680),
   d = n(309008);
-let h = e => {
+let _ = e => {
   let {
     color: t
   } = e;
@@ -63,19 +63,19 @@ let h = e => {
   })
 };
 
-function b(e) {
+function p(e) {
   let {
     achievement: t,
     unlocked: n
   } = e, {
     name: o,
-    description: b,
-    rarity: p,
+    description: p,
+    rarity: E,
     hideDescriptionUntilUnlock: f,
-    onAction: g
+    onAction: h
   } = t, {
-    color: O
-  } = (0, a.F7)(p);
+    color: m
+  } = (0, s.F7)(E);
   i.useEffect(() => {
     let e = setTimeout(() => {
       c.Z.playAchievementUnlockSound()
@@ -84,12 +84,12 @@ function b(e) {
       clearTimeout(e)
     }
   }, []);
-  let v = null != g && n,
-    m = v ? s.P3F : "div";
-  return (0, r.jsxs)(m, {
-    className: l()(d.container, v && d.actionable),
+  let b = null != h && n,
+    O = b ? a.P3F : "div";
+  return (0, r.jsxs)(O, {
+    className: l()(d.container, b && d.actionable),
     onClick: () => {
-      v && g()
+      b && h()
     },
     children: [(0, r.jsx)("div", {
       className: d.iconContainer,
@@ -100,19 +100,19 @@ function b(e) {
       })
     }), (0, r.jsxs)("div", {
       className: d.__invalid_nameContainer,
-      children: [(0, r.jsx)(s.Text, {
+      children: [(0, r.jsx)(a.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: o()
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-xs/medium",
         color: "header-secondary",
-        children: f && !n ? "?????" : b()
+        children: f && !n ? "?????" : p()
       })]
     }), (0, r.jsx)("div", {
       className: d.flair,
-      children: (0, r.jsx)(h, {
-        color: O
+      children: (0, r.jsx)(_, {
+        color: m
       })
     })]
   })

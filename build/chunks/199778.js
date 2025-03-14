@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => v
 });
 var r = n(200651);
 n(192379);
@@ -51,13 +51,13 @@ function E(e, t) {
   return n
 }
 
-function v(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function b(e) {
+function v(e) {
   let {
     hide: t,
     pillClassName: n,
@@ -65,8 +65,8 @@ function b(e) {
     isInReverseTrial: m
   } = e, {
     fractionalState: E,
-    endsAt: b
-  } = (0, l.Z)(), y = (0, s.Z)(b, s.a.LONG_TIME_LEFT);
+    endsAt: v
+  } = (0, l.Z)(), y = (0, s.Z)(v, s.a.LONG_TIME_LEFT);
   if (!0 === t || E === _.a$.NONE) return null;
   let O = m ? void 0 : p.NW.format(p.t["4RgA6O"], {
     helpCenterLink: d.Z.getArticleURL(f.BhN.FRACTIONAL_PREMIUM_ABOUT)
@@ -76,7 +76,7 @@ function b(e) {
     "aria-label": null == O ? void 0 : O.toString(),
     tooltipClassName: h.tooltip,
     className: o()(h.unavailableCounterContainer, i),
-    children: e => (0, r.jsxs)("div", v(g({}, e), {
+    children: e => (0, r.jsxs)("div", b(g({}, e), {
       className: o()(h.unavailableCounterPill, n),
       children: [(0, r.jsx)(a.Text, {
         variant: "text-sm/bold",

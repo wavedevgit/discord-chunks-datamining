@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B4: () => ev,
+  B4: () => eb,
   B6: () => z,
   Bd: () => eh,
   DU: () => ea,
@@ -27,7 +27,7 @@ n.d(t, {
   pe: () => q,
   qI: () => ey,
   qb: () => eE,
-  sf: () => eb,
+  sf: () => ev,
   t5: () => er,
   tP: () => K,
   uA: () => en,
@@ -52,8 +52,8 @@ var r = n(192379),
   m = n(594174),
   g = n(70956),
   E = n(63063),
-  v = n(930153),
-  b = n(358085),
+  b = n(930153),
+  v = n(358085),
   y = n(74538),
   O = n(617136),
   I = n(915750),
@@ -114,7 +114,7 @@ function B(e, t, n) {
   return e.localeCompare(t) * r
 }
 
-function V(e) {
+function F(e) {
   let t = r.useRef([]);
   return r.useMemo(() => {
     if (0 === e.length) return [];
@@ -124,7 +124,7 @@ function V(e) {
   }, [e])
 }
 
-function F(e) {
+function V(e) {
   let t = r.useMemo(() => e.filter(e => {
       var t, n;
       let r = (null === (t = e.userStatus) || void 0 === t ? void 0 : t.completedAt) != null,
@@ -153,7 +153,7 @@ function H(e) {
     isFetchingCurrentQuests: n
   } = U({
     fetchPolicy: "cache-and-network"
-  }), r = new Map(t.map(e => [e.id, e])), i = V(t), o = F(t), a = [], s = [];
+  }), r = new Map(t.map(e => [e.id, e])), i = F(t), o = V(t), a = [], s = [];
   for (let t of a = "all" === e ? i : o) {
     let e = r.get(t);
     null != e && s.push(e)
@@ -482,7 +482,7 @@ function ep(e) {
     r = et(e),
     i = null != r ? r.completedRatio : n,
     o = 100 * i,
-    a = null != r ? "".concat(null == r ? void 0 : r.progress, "/").concat(null == r ? void 0 : r.target) : (0, v.T3)(t, i, {
+    a = null != r ? "".concat(null == r ? void 0 : r.progress, "/").concat(null == r ? void 0 : r.target) : (0, b.T3)(t, i, {
       roundingMode: "floor"
     });
   return {
@@ -572,18 +572,18 @@ function eE(e) {
     d = s.T.DESKTOP.has(i.taskType) && i.percentComplete > 0,
     f = 0 === i.percentComplete,
     _ = l && !c && !a && u && (d || f && o === N.LI.DESKTOP),
-    p = (0, b.isWeb)() && _ && !(0, A.Gd)(e),
-    h = (0, b.isMac)() && i.taskType === s.X.STREAM_ON_DESKTOP && _,
+    p = (0, v.isWeb)() && _ && !(0, A.Gd)(e),
+    h = (0, v.isMac)() && i.taskType === s.X.STREAM_ON_DESKTOP && _,
     m = [];
   return h && m.push(M.NW.string(M.t.MFGxFB)), p && m.push(M.NW.string(M.t.BV6xDg)), m
 }
 
-function ev(e) {
+function eb(e) {
   var t;
   return null !== (t = (0, d.e7)([T.Z], () => T.Z.quests).get(e)) && void 0 !== t ? t : null
 }
 
-function eb(e) {
+function ev(e) {
   let t = (0, d.e7)([T.Z], () => T.Z.getQuest(e), [e]);
   return o()(null != t, "Unknown quest ID ".concat(e)), t
 }
@@ -620,7 +620,7 @@ function eO(e) {
     [o] = eg(e, i);
   if ((null === (t = e.userStatus) || void 0 === t ? void 0 : t.completedAt) != null) return M.NW.string(M.t["ij5E//"]);
   if ((null === (n = e.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null && i.percentComplete > 0) {
-    let e = (0, v.T3)(r, i.percentComplete, {
+    let e = (0, b.T3)(r, i.percentComplete, {
       roundingMode: "floor"
     });
     return M.NW.formatToPlainString(M.t.lVZaXF, {

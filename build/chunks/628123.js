@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(406128),
   g = n(797614),
   E = n(703656),
-  v = n(626135),
-  b = n(960048),
+  b = n(626135),
+  v = n(960048),
   y = n(998502),
   O = n(981631),
   I = n(388032),
@@ -75,10 +75,10 @@ class C extends i.PureComponent {
       info: t
     });
     let r = (0, u.e)(),
-      i = b.Z.captureCrash(e, {
+      i = v.Z.captureCrash(e, {
         extra: t
       });
-    v.default.track(O.rMx.APP_CRASHED, {
+    b.default.track(O.rMx.APP_CRASHED, {
       path: n.pathname,
       extra: t,
       error_message: e.message,

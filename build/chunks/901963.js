@@ -19,9 +19,9 @@ var r = n(200651),
   m = n(981631),
   g = n(474936),
   E = n(388032),
-  v = n(619629);
-let b = "premiumRetentionEmojiPickerNotice",
-  y = l.K.get(b),
+  b = n(619629);
+let v = "premiumRetentionEmojiPickerNotice",
+  y = l.K.get(v),
   O = e => {
     let {
       closePopout: t,
@@ -41,13 +41,13 @@ let b = "premiumRetentionEmojiPickerNotice",
     if (y === N) return null;
     let A = p.ZP.getPremiumType(I.planId) === g.p9.TIER_0 ? f.JX.PREMIUM_TIER_0 : p.ZP.getPremiumType(I.planId) === g.p9.TIER_1 ? f.JX.PREMIUM_TIER_1 : f.JX.PREMIUM_TIER_2;
     return (0, r.jsxs)("div", {
-      className: v.premiumRetentionNotice,
+      className: b.premiumRetentionNotice,
       children: [(0, r.jsx)(c.SrA, {
         size: "md",
-        className: v.premiumRetentionNoticeIcon,
+        className: b.premiumRetentionNoticeIcon,
         color: A
       }), (0, r.jsxs)("div", {
-        className: v.premiumRetentionNoticeContent,
+        className: b.premiumRetentionNoticeContent,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-xs/normal",
           children: E.NW.format(E.t.bTMjiI, {
@@ -64,12 +64,12 @@ let b = "premiumRetentionEmojiPickerNotice",
         })]
       }), (0, r.jsx)(c.P3F, {
         onClick: () => {
-          l.K.set(b, N), y = N, O(!0)
+          l.K.set(v, N), y = N, O(!0)
         },
         children: (0, r.jsx)(c.Dio, {
           size: "md",
           color: "currentColor",
-          className: v.premiumRetentionNoticeClose
+          className: b.premiumRetentionNoticeClose
         })
       })]
     })

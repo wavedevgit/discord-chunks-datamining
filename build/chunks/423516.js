@@ -1,14 +1,14 @@
-/** Chunk was on 7755 **/
+/** Chunk was on 58173 **/
 n.d(t, {
   Z: () => h
 });
 var r = n(200651);
 n(192379);
 var l = n(120356),
-  i = n.n(l),
-  o = n(481060),
-  a = n(570928),
-  s = n(540059),
+  o = n.n(l),
+  i = n(481060),
+  s = n(570928),
+  a = n(540059),
   c = n(977059),
   u = n(388032),
   d = n(850224);
@@ -19,19 +19,19 @@ let h = function(e) {
     text: l,
     hasConnectedChannel: h,
     textVariant: f = "text-md/medium"
-  } = e, p = (0, s.Q3)("RTCConnectionStatusText"), {
+  } = e, p = (0, a.Q3)("RTCConnectionStatusText"), {
     enabled: g
   } = (0, c.S)({
     location: "RTCConnectionStatusText"
-  }), v = n ? u.NW.string(u.t.IlHdW1) : u.NW.string(u.t.WsOisr);
-  return (0, r.jsx)(a.Z, {
-    className: i()(t, g ? d.hoverableStatus : d.status),
-    hoverText: g && h ? p ? (0, r.jsx)(o.Text, {
+  }), y = n ? u.NW.string(u.t.IlHdW1) : u.NW.string(u.t.WsOisr);
+  return (0, r.jsx)(s.Z, {
+    className: o()(t, g ? d.hoverableStatus : d.status),
+    hoverText: g && h ? p ? (0, r.jsx)(i.Text, {
       variant: f,
       color: "currentColor",
-      children: v
-    }) : v : null,
-    children: p ? (0, r.jsx)(o.Text, {
+      children: y
+    }) : y : null,
+    children: p ? (0, r.jsx)(i.Text, {
       variant: f,
       color: "currentColor",
       children: l

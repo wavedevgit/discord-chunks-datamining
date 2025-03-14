@@ -75,14 +75,14 @@ let p = i.forwardRef(function(e, t) {
       required: m = !1,
       style: g,
       title: E,
-      error: v,
-      titleId: b
+      error: b,
+      titleId: v
     } = e,
     y = f(e, ["children", "disabled", "className", "titleClassName", "tag", "required", "style", "title", "error", "titleId"]);
   let O = i.useId(),
     I = i.useId(),
-    S = null != b ? b : O,
-    T = null != v ? null !== (n = y.errorId) && void 0 !== n ? n : I : void 0,
+    S = null != v ? v : O,
+    T = null != b ? null !== (n = y.errorId) && void 0 !== n ? n : I : void 0,
     [N, A] = i.useState(void 0),
     [C, R] = i.useState(void 0),
     P = void 0 !== C;
@@ -93,18 +93,18 @@ let p = i.forwardRef(function(e, t) {
     children: (0, r.jsx)(o.ol, {
       titleId: S,
       errorId: T,
-      error: null != v ? v : void 0,
+      error: null != b ? b : void 0,
       isFocused: N,
       setIsFocused: A,
       hasValue: C,
       setHasValue: R,
       children: (0, r.jsxs)("div", {
         className: P ? s.fieldWrapper : void 0,
-        children: [null != E || null != v ? (0, r.jsx)(a.v, d(c({
+        children: [null != E || null != b ? (0, r.jsx)(a.v, d(c({
           tag: h,
           disabled: u,
           required: m,
-          error: v,
+          error: b,
           className: p,
           id: S,
           errorId: T

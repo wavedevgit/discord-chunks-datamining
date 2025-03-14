@@ -40,9 +40,9 @@
 
   function E() {}
 
-  function v() {}
-
   function b() {}
+
+  function v() {}
   var y = {};
   y[a] = function() {
     return this
@@ -50,7 +50,7 @@
   var O = Object.getPrototypeOf,
     I = O && O(O(D([])));
   I && I !== r && i.call(I, a) && (y = I);
-  var S = b.prototype = E.prototype = Object.create(y);
+  var S = v.prototype = E.prototype = Object.create(y);
 
   function T(e) {
     ["next", "throw", "return"].forEach(function(t) {
@@ -187,11 +187,11 @@
       done: !0
     }
   }
-  v.prototype = S.constructor = b, b.constructor = v, b[l] = v.displayName = "GeneratorFunction", u.isGeneratorFunction = function(e) {
+  b.prototype = S.constructor = v, v.constructor = b, v[l] = b.displayName = "GeneratorFunction", u.isGeneratorFunction = function(e) {
     var t = "function" == typeof e && e.constructor;
-    return !!t && (t === v || "GeneratorFunction" === (t.displayName || t.name))
+    return !!t && (t === b || "GeneratorFunction" === (t.displayName || t.name))
   }, u.mark = function(e) {
-    return Object.setPrototypeOf ? Object.setPrototypeOf(e, b) : (e.__proto__ = b, l in e || (e[l] = "GeneratorFunction")), e.prototype = Object.create(S), e
+    return Object.setPrototypeOf ? Object.setPrototypeOf(e, v) : (e.__proto__ = v, l in e || (e[l] = "GeneratorFunction")), e.prototype = Object.create(S), e
   }, u.awrap = function(e) {
     return {
       __await: e

@@ -40,7 +40,7 @@ let h = new o.h(p, e => "".concat(e.since)),
   g = 0,
   E = 0;
 
-function v() {
+function b() {
   let e = 0,
     t = 0,
     n = 0;
@@ -58,7 +58,7 @@ function v() {
   }), m = e, g = t, E = n
 }
 
-function b(e) {
+function v(e) {
   h.set(d(e.id, e.applicationId), e)
 }
 
@@ -68,16 +68,16 @@ function y(e, t) {
 
 function O(e) {
   h.clear(), e.gameRelationships.forEach(e => {
-    b(u(e))
-  }), v()
+    v(u(e))
+  }), b()
 }
 
 function I(e) {
-  b(e.gameRelationship), v()
+  v(e.gameRelationship), b()
 }
 
 function S(e) {
-  y(e.userId, e.applicationId), v()
+  y(e.userId, e.applicationId), b()
 }
 class T extends(r = i.ZP.Store) {
   initialize() {

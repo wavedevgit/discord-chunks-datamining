@@ -1,16 +1,16 @@
-/** Chunk was on 94289 **/
-n.d(t, {
-  Es: () => u,
-  RM: () => s,
+/** Chunk was on 15814 **/
+r.d(t, {
+  Es: () => v,
+  RM: () => o,
   VP: () => c,
-  Xb: () => o,
-  sm: () => E,
-  y0: () => i
-}), n(266796);
-var r = n(544891),
-  l = n(570140),
-  a = n(981631);
-let i = function(e) {
+  Xb: () => s,
+  sm: () => h,
+  y0: () => a
+}), r(266796);
+var n = r(544891),
+  l = r(570140),
+  i = r(981631);
+let a = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     l.Z.dispatch({
       type: "WELCOME_SCREEN_VIEW",
@@ -18,13 +18,13 @@ let i = function(e) {
       isLurking: t
     })
   },
-  s = async e => {
+  o = async e => {
     l.Z.dispatch({
       type: "WELCOME_SCREEN_FETCH_START"
     });
     try {
-      let t = await r.tn.get({
-        url: a.ANM.GUILD_WELCOME_SCREEN(e),
+      let t = await n.tn.get({
+        url: i.ANM.GUILD_WELCOME_SCREEN(e),
         oldFormErrors: !0,
         rejectWithError: !0
       });
@@ -38,11 +38,11 @@ let i = function(e) {
         type: "WELCOME_SCREEN_FETCH_FAIL"
       })
     }
-  }, o = () => {
+  }, s = () => {
     l.Z.dispatch({
       type: "WELCOME_SCREEN_SETTINGS_RESET"
     })
-  }, E = () => {
+  }, h = () => {
     l.Z.dispatch({
       type: "WELCOME_SCREEN_SETTINGS_CLEAR"
     })
@@ -51,13 +51,13 @@ let i = function(e) {
       type: "WELCOME_SCREEN_SETTINGS_UPDATE",
       settings: e
     })
-  }, u = async (e, t) => {
+  }, v = async (e, t) => {
     l.Z.dispatch({
       type: "WELCOME_SCREEN_SUBMIT"
     });
     try {
-      let n = await r.tn.patch({
-        url: a.ANM.GUILD_WELCOME_SCREEN(e),
+      let r = await n.tn.patch({
+        url: i.ANM.GUILD_WELCOME_SCREEN(e),
         body: {
           description: t.description,
           welcome_channels: t.channels,
@@ -69,7 +69,7 @@ let i = function(e) {
       l.Z.dispatch({
         type: "WELCOME_SCREEN_SUBMIT_SUCCESS",
         guildId: e,
-        welcomeScreen: n.body
+        welcomeScreen: r.body
       })
     } catch (e) {
       l.Z.dispatch({

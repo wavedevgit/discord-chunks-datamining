@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(686546),
   g = n(28546),
   E = n(285651),
-  v = n(926491),
-  b = n(373228),
+  b = n(926491),
+  v = n(373228),
   y = n(378233),
   O = n(419922),
   I = n(490095),
@@ -92,8 +92,8 @@ function j(e, t) {
 let U = 4,
   G = (0, u.Mg)(d.Z.EXPRESSION_SUGGESTIONS_CONTAINER_PADDING),
   B = (0, u.Mg)(d.Z.EXPRESSION_SUGGESTIONS_STICKER_SUGGESTION_SIZE),
-  V = 2 * B + (0, u.Mg)(d.Z.EXPRESSION_SUGGESTIONS_STICKER_SUGGESTION_MARGIN) + 2 * G,
-  F = () => Promise.resolve();
+  F = 2 * B + (0, u.Mg)(d.Z.EXPRESSION_SUGGESTIONS_STICKER_SUGGESTION_MARGIN) + 2 * G,
+  V = () => Promise.resolve();
 
 function Z(e) {
   let {
@@ -151,8 +151,8 @@ function H(e) {
   }, [a]), _ = (0, l.ZP)({
     id: "expression-suggestions-stickers",
     isEnabled: !0,
-    scrollToStart: F,
-    scrollToEnd: F,
+    scrollToStart: V,
+    scrollToEnd: V,
     orientation: c.hy.HORIZONTAL,
     setFocus: f,
     useVirtualFocus: !0
@@ -192,7 +192,7 @@ let W = i.memo(function(e) {
     onSelectSticker: c,
     stickerIconVisible: u = !1,
     submitButtonVisible: d = !1
-  } = e, m = i.useContext(h.ZP), [O, I] = i.useState(null), [D, x] = i.useState(!1), [j, U] = i.useState(null), G = (0, g.Iu)(e => null != e.activeView), B = i.useRef(null), [F, W] = i.useState(""), [Y, K] = i.useState(""), [z, q] = i.useState(!1), [Q, X] = i.useState(!1), J = (0, N.Z)(F, D, o), {
+  } = e, m = i.useContext(h.ZP), [O, I] = i.useState(null), [D, x] = i.useState(!1), [j, U] = i.useState(null), G = (0, g.Iu)(e => null != e.activeView), B = i.useRef(null), [V, W] = i.useState(""), [Y, K] = i.useState(""), [z, q] = i.useState(!1), [Q, X] = i.useState(!1), J = (0, N.Z)(V, D, o), {
     analyticsLocations: $
   } = (0, p.ZP)(_.Z.EXPRESSION_SUGGESTIONS), {
     handleTextChange: ee,
@@ -246,9 +246,9 @@ let W = i.memo(function(e) {
         if (T.default.track(R.rMx.AUTO_SUGGEST_EXPRESSION_SELECTED, {
             sticker_id: e.id,
             suggestion_trigger: Y
-          }), t === E.eb.SENDABLE) x(!0), c(e, b.V0.EXPRESSION_SUGGESTIONS), et.cancel(), W("");
+          }), t === E.eb.SENDABLE) x(!0), c(e, v.V0.EXPRESSION_SUGGESTIONS), et.cancel(), W("");
         else if ((0, y.jl)(e)) {
-          let t = v.Z.getStickerPack(e.pack_id);
+          let t = b.Z.getStickerPack(e.pack_id);
           null != t && (0, S.Z)({
             stickerPack: t,
             analyticsLocations: $
@@ -260,8 +260,8 @@ let W = i.memo(function(e) {
     el = i.useRef([]),
     ec = i.useRef(!1);
   i.useEffect(() => {
-    eo && (el.current = J), eo !== ec.current && (m.emit(eo ? "sticker-suggestions-shown" : "sticker-suggestions-hidden"), eo && ((0, A.Tk)(F), K(F))), ec.current = eo
-  }, [m, eo, J, F]);
+    eo && (el.current = J), eo !== ec.current && (m.emit(eo ? "sticker-suggestions-shown" : "sticker-suggestions-hidden"), eo && ((0, A.Tk)(V), K(V))), ec.current = eo
+  }, [m, eo, J, V]);
   let eu = !eo,
     ed = eo ? J : el.current;
   return (0, r.jsx)(p.Gt, {
@@ -276,7 +276,7 @@ let W = i.memo(function(e) {
       }),
       innerRef: B,
       style: {
-        minWidth: V
+        minWidth: F
       },
       onClick: () => {
         var e;
@@ -330,7 +330,7 @@ let W = i.memo(function(e) {
             children: [(0, r.jsx)(f.Text, {
               className: w.descriptionText,
               style: {
-                maxWidth: V
+                maxWidth: F
               },
               variant: "text-sm/normal",
               children: null != j ? P.NW.format(P.t["5gglIi"], {

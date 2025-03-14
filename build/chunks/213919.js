@@ -3,9 +3,9 @@
 let r, i;
 n.r(t), n.d(t, {
   encryptAndStoreTokens: () => T,
-  getToken: () => b,
+  getToken: () => v,
   hideToken: () => O,
-  init: () => v,
+  init: () => b,
   removeToken: () => S,
   setToken: () => y,
   showToken: () => I
@@ -54,7 +54,7 @@ function E(e) {
   return (null == c ? void 0 : c.isEncryptionAvailable()) && !e.startsWith(s) ? "".concat(s).concat(c.encryptString(e)) : e
 }
 
-function v() {
+function b() {
   if (h) return;
   i = o.K.get(a.B1), _ = o.K.get(a.XM) || {};
   let {
@@ -73,8 +73,8 @@ function v() {
   })), h = !0
 }
 
-function b(e) {
-  return (v(), null != e) ? f[e] : r
+function v(e) {
+  return (b(), null != e) ? f[e] : r
 }
 
 function y(e, t) {

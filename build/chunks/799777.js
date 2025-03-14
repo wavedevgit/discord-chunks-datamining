@@ -36,7 +36,7 @@ function E(e) {
   n && (m = !0, g()), r = t
 }
 
-function v(e) {
+function b(e) {
   let {
     direction: t,
     key: n
@@ -46,7 +46,7 @@ function v(e) {
     sortKey: h
   })
 }
-class b extends(i = s.ZP.Store) {
+class v extends(i = s.ZP.Store) {
   initialize() {
     var e;
     let t = null !== (e = l.K.get(f)) && void 0 !== e ? e : {};
@@ -65,9 +65,9 @@ class b extends(i = s.ZP.Store) {
     return m
   }
 }
-d(b, "displayName", "GameLibraryViewStore");
-let y = new b(c.Z, {
-    LIBRARY_TABLE_SORT_UPDATE: v,
+d(v, "displayName", "GameLibraryViewStore");
+let y = new v(c.Z, {
+    LIBRARY_TABLE_SORT_UPDATE: b,
     LIBRARY_TABLE_ACTIVE_ROW_ID_UPDATE: E
   }),
   O = y

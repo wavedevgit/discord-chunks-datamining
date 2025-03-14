@@ -83,15 +83,15 @@ var m = p(function(e, t) {
   E = function(e) {
     return e
   },
-  v = o.forwardRef;
+  b = o.forwardRef;
 
-function b() {
+function v() {
   for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
   return t.filter(function(e) {
     return e
   }).join(" ")
 }
-void 0 === v && (v = E), v(function(e, t) {
+void 0 === b && (b = E), b(function(e, t) {
   var n = e["aria-current"],
     i = void 0 === n ? "page" : n,
     a = e.activeClassName,
@@ -120,7 +120,7 @@ void 0 === v && (v = E), v(function(e, t) {
         strict: I
       }) : null,
       P = !!(m ? m(R, n) : R),
-      w = P ? b(p, u) : p,
+      w = P ? v(p, u) : p,
       D = P ? (0, s.Z)({}, S, {}, _) : S,
       L = (0, s.Z)({
         "aria-current": P && i || null,
@@ -128,6 +128,6 @@ void 0 === v && (v = E), v(function(e, t) {
         style: D,
         to: a
       }, A);
-    return E !== v ? L.ref = t || N : L.innerRef = N, o.createElement(g, L)
+    return E !== b ? L.ref = t || N : L.innerRef = N, o.createElement(g, L)
   })
 })

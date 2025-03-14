@@ -77,7 +77,7 @@ function E(e) {
   }, [e]), i.useCallback(() => t.current, [])
 }
 
-function v(e) {
+function b(e) {
   let t = i.useRef(e);
   return i.useEffect(() => {
     t.current = e
@@ -94,7 +94,7 @@ function v(e) {
   }, [])
 }
 
-function b(e) {
+function v(e) {
   let {
     renderSection: t,
     renderRow: n,
@@ -178,8 +178,8 @@ function O(e, t, n, o) {
       wrapSection: U,
       getAnchorId: G,
       paddingTop: B,
-      paddingBottom: V,
-      fade: F = !1,
+      paddingBottom: F,
+      fade: V = !1,
       customTheme: Z = !1,
       chunkSize: H,
       style: W,
@@ -222,7 +222,7 @@ function O(e, t, n, o) {
       sidebarHeight: P,
       listHeaderHeight: w,
       paddingTop: B,
-      paddingBottom: V,
+      paddingBottom: F,
       chunkSize: H,
       getScrollerState: ea,
       getAnchorId: G
@@ -255,14 +255,14 @@ function O(e, t, n, o) {
       resizeObserver: f,
       listenerMap: l
     });
-    let ev = E(ec),
-      eb = v(N);
+    let eb = E(ec),
+      ev = b(N);
     i.useImperativeHandle(p, () => _({
       getScrollerNode: () => ei.current,
       getScrollerState: ea,
-      getItems: ev,
-      getSectionRowFromIndex: eb
-    }, (0, u.rH)(ei, ea, ed, ep)), [ei, ea, eb, ev, ed, ep]);
+      getItems: eb,
+      getSectionRowFromIndex: ev
+    }, (0, u.rH)(ei, ea, ed, ep)), [ei, ea, ev, eb, ed, ep]);
     let ey = i.useCallback(e => {
       eg(1), null == ee.current ? er(!0) : clearTimeout(ee.current), ee.current = setTimeout(() => {
         ee.current = null, er(!1)
@@ -282,7 +282,7 @@ function O(e, t, n, o) {
       onScroll: ey,
       className: a()(g, {
         [e]: !0,
-        [t]: F,
+        [t]: V,
         [n]: Z,
         [d.scrolling]: en
       }),
@@ -301,7 +301,7 @@ function O(e, t, n, o) {
         ref: et,
         children: (0, r.jsx)(c.J, {
           containerRef: et,
-          children: b({
+          children: v({
             items: ec,
             renderListHeader: k,
             stickyListHeader: j,

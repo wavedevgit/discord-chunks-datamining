@@ -13,8 +13,8 @@ var c, u = n(442837),
   m = n(139656),
   g = n(783443),
   E = n(855403),
-  v = n(314897),
-  b = n(592125),
+  b = n(314897),
+  v = n(592125),
   y = n(430824),
   O = n(131951),
   I = n(496675),
@@ -94,14 +94,14 @@ function B() {
   return e
 }
 
-function V(e) {
+function F(e) {
   let {
     applicationStreamState: t
   } = e;
   i = t.streamsByUserAndGuild, r = new Map(t.activeStreams), o = t.rtcStreams, a = t.streamerActiveStreamMetadatas
 }
 
-function F(e) {
+function V(e) {
   let {
     voiceStates: t
   } = e;
@@ -122,8 +122,8 @@ function F(e) {
       discoverable: s
     }), !0;
     {
-      let t = v.default.getSessionId();
-      return n === v.default.getId() && o !== t && null != S.Z.getChannelId() ? e : U(n, r) || e
+      let t = b.default.getSessionId();
+      return n === b.default.getId() && o !== t && null != S.Z.getChannelId() ? e : U(n, r) || e
     }
   }, !1)
 }
@@ -134,7 +134,7 @@ function Z(e) {
   } = e, n = (0, p.my)(t);
   r.delete(t), r.set(t, D(P({}, n), {
     state: A.jm8.CONNECTING
-  })), n.ownerId === v.default.getId() && (x[n.channelId] = !1)
+  })), n.ownerId === b.default.getId() && (x[n.channelId] = !1)
 }
 
 function H(e) {
@@ -152,7 +152,7 @@ function H(e) {
     streamType: n,
     guildId: i,
     channelId: o,
-    ownerId: v.default.getId()
+    ownerId: b.default.getId()
   });
   (null == d ? void 0 : d.startsWith("prepicked:")) && null == c && (c = s);
   let g = null !== (t = (null == d ? void 0 : d.startsWith("prepicked:")) && null != l ? l : null != c ? _.ZP.getGameForPID(c) : null != d ? _.ZP.getRunningGames().find(e => (0, E.Z)(d, e.windowHandle)) : null) && void 0 !== t ? t : null;
@@ -167,7 +167,7 @@ function H(e) {
     streamType: n,
     guildId: i,
     channelId: o,
-    ownerId: v.default.getId(),
+    ownerId: b.default.getId(),
     state: A.jm8.CONNECTING
   })
 }
@@ -241,7 +241,7 @@ function Q(e) {
   } = e;
   L = t, Array.from(r.values()).forEach(e => {
     (0, p.V9)(e) !== L && e.state === A.jm8.ENDED && G((0, p.V9)(e))
-  }), null != t && (0, p.DB)(t) && t.includes(v.default.getId()) && (x[n] = !1)
+  }), null != t && (0, p.DB)(t) && t.includes(b.default.getId()) && (x[n] = !1)
 }
 
 function X(e) {
@@ -309,7 +309,7 @@ function ee(e) {
     channelId: t,
     selfStreamHidden: n
   } = e;
-  (0, p.DB)(L) && (null == L ? void 0 : L.includes(v.default.getId())) && !1 === x[t] && !0 === n && (L = null), x[t] = n
+  (0, p.DB)(L) && (null == L ? void 0 : L.includes(b.default.getId())) && !1 === x[t] && !0 === n && (L = null), x[t] = n
 }
 
 function et(e) {
@@ -320,13 +320,13 @@ function et(e) {
 }
 
 function en(e, t) {
-  let n = b.Z.getBasicChannel(t);
+  let n = v.Z.getBasicChannel(t);
   return e === C.lo.CALL || null != n && I.Z.canBasicChannel(A.S7T.VIEW_CHANNEL, n)
 }
 
 function er(e) {
   if (en(e.streamType, e.channelId)) return !0;
-  let t = b.Z.getBasicChannel(e.channelId);
+  let t = v.Z.getBasicChannel(e.channelId);
   return null != t && (0, h.p9)(t, N.Z, y.Z, I.Z, f.Z)[0]
 }
 k();
@@ -365,8 +365,8 @@ class ei extends(c = u.ZP.PersistedStore) {
   }
   getCurrentUserActiveStream() {
     let e = T.Z.getVoiceChannelId(),
-      t = b.Z.getChannel(e);
-    return null == t ? null : this.getActiveStreamForUser(v.default.getId(), t.getGuildId())
+      t = v.Z.getChannel(e);
+    return null == t ? null : this.getActiveStreamForUser(b.default.getId(), t.getGuildId())
   }
   getActiveStreamForUser(e, t) {
     var n;
@@ -376,9 +376,9 @@ class ei extends(c = u.ZP.PersistedStore) {
   getStreamerActiveStreamMetadata() {
     var e;
     let t = T.Z.getVoiceChannelId(),
-      n = b.Z.getChannel(t);
+      n = v.Z.getChannel(t);
     if (null == n) return null;
-    let r = this.getActiveStreamForUser(v.default.getId(), n.getGuildId());
+    let r = this.getActiveStreamForUser(b.default.getId(), n.getGuildId());
     return null == r ? null : null !== (e = a[(0, p.V9)(r)]) && void 0 !== e ? e : null
   }
   getStreamerActiveStreamMetadataForStream(e) {
@@ -444,8 +444,8 @@ class ei extends(c = u.ZP.PersistedStore) {
 R(ei, "displayName", "ApplicationStreamingStore"), R(ei, "persistKey", "ApplicationStreamingStore");
 let eo = new ei(d.Z, {
   NATIVE_SCREEN_SHARE_PICKER_UPDATE: Y,
-  OVERLAY_INITIALIZE: V,
-  VOICE_STATE_UPDATES: F,
+  OVERLAY_INITIALIZE: F,
+  VOICE_STATE_UPDATES: V,
   STREAM_WATCH: Z,
   STREAM_START: H,
   STREAM_STOP: K,

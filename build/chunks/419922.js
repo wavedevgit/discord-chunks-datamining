@@ -20,8 +20,8 @@ var r = n(200651),
   m = n(506071),
   g = n(453070),
   E = n(373228),
-  v = n(378233),
-  b = n(388032),
+  b = n(378233),
+  v = n(388032),
   y = n(552119);
 let O = e => e.preventDefault(),
   I = .7,
@@ -45,7 +45,7 @@ function C(e, t) {
 
 function R(e) {
   let t = "description" in e && null != e.description ? "".concat(e.name, ", ").concat(e.description) : e.name;
-  return b.NW.formatToPlainString(b.t.rk6pOz, {
+  return v.NW.formatToPlainString(v.t.rk6pOz, {
     stickerName: t
   })
 }
@@ -78,7 +78,7 @@ let P = e => {
           className: y.errorText,
           color: "header-secondary",
           variant: "text-sm/normal",
-          children: b.NW.string(b.t.tWYWJy)
+          children: v.NW.string(v.t.tWYWJy)
         })]
       }) : t, l && i && (0, r.jsx)("div", {
         className: y.loadingIndicator
@@ -100,7 +100,7 @@ let P = e => {
       onError: m
     } = e, g = i.useRef(null), E = i.useRef(null), [O, I] = i.useState(!0), [S, T] = i.useState(!1), N = i.useRef(!1);
     N.current = t && u;
-    let A = null == s ? (0, v.Q6)(a) : s;
+    let A = null == s ? (0, b.Q6)(a) : s;
     return (l()(null != A, "Unable to determine sticker asset URL. Sticker ID: ".concat(a.id)), i.useEffect(() => {
       if (null == g.current || null == A) return;
       let e = Math.min(2, (0, p.x_)());
@@ -133,7 +133,7 @@ let P = e => {
     }, [a, t, u]), null == A) ? null : (0, r.jsx)("div", {
       role: "img",
       className: d,
-      "aria-label": S ? b.NW.string(b.t.yEvsKy) : R(a),
+      "aria-label": S ? v.NW.string(v.t.yEvsKy) : R(a),
       ref: _,
       children: (0, r.jsx)(P, {
         hasError: S,
@@ -159,13 +159,13 @@ let P = e => {
       positionRef: u,
       withLoadingIndicator: f,
       fileUri: _
-    } = e, [p, h] = i.useState(!1), [m, g] = i.useState(!0), [E, b] = i.useState(!1), S = i.useRef(null), T = i.useRef(null), N = null != _ ? _ : (0, v.Q6)(n, {
+    } = e, [p, h] = i.useState(!1), [m, g] = i.useState(!0), [E, v] = i.useState(!1), S = i.useRef(null), T = i.useRef(null), N = null != _ ? _ : (0, b.Q6)(n, {
       isPreview: !t || !p || !o,
       size: s
     }), A = i.useCallback(() => {
       g(!1)
     }, []), w = i.useCallback(() => {
-      b(!0)
+      v(!0)
     }, []);
     return (i.useEffect(() => {
       if (null != S.current) {
@@ -225,13 +225,13 @@ let P = e => {
       },
       leave: g,
       config: N
-    }), v = i.useRef(null), b = (0, f.q_F)({
-      ref: v,
+    }), b = i.useRef(null), v = (0, f.q_F)({
+      ref: b,
       transform: a || p ? "translateY(0)" : "translateY(-25px)",
       opacity: +!!a,
       config: A
     }, "animate-always");
-    return (0, c.useChain)(a ? [m, v] : [v, m], a ? [0, .0625] : [0, 0]), E((e, i) => i && (0, r.jsx)(h.W5, {
+    return (0, c.useChain)(a ? [m, b] : [b, m], a ? [0, .0625] : [0, 0]), E((e, i) => i && (0, r.jsx)(h.W5, {
       className: y.positionedLayer,
       fixed: !0,
       align: "center",
@@ -254,7 +254,7 @@ let P = e => {
           })
         }), o && (0, r.jsx)(c.animated.div, {
           className: y.overlayLabelWrapper,
-          style: b,
+          style: v,
           children: (0, r.jsx)(f.Text, {
             variant: "text-sm/medium",
             className: y.overlayLabel,
@@ -279,13 +279,13 @@ let P = e => {
       assetData: _,
       fileUri: p,
       onError: h
-    } = e, v = (0, m.n)(), b = (0, g.t$)(t) && !n, y = i.useRef(null);
+    } = e, b = (0, m.n)(), v = (0, g.t$)(t) && !n, y = i.useRef(null);
     if (null == u) return null;
     let O = u.format_type === E.u3.LOTTIE ? w : D;
     return (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(O, {
-        shouldAnimate: b,
-        isFocused: v,
+        shouldAnimate: v,
+        isFocused: b,
         size: c,
         sticker: u,
         className: d,

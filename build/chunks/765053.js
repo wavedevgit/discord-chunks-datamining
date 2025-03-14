@@ -60,12 +60,12 @@ var m = {
   E = {
     type: ["application/ld+json"]
   },
-  v = {
+  b = {
     charset: "",
     name: ["robots", "description"],
     property: ["og:type", "og:title", "og:url", "og:image", "og:image:alt", "og:description", "twitter:url", "twitter:title", "twitter:description", "twitter:image", "twitter:image:alt", "twitter:card", "twitter:site"]
   },
-  b = Object.keys(m).map(function(e) {
+  v = Object.keys(m).map(function(e) {
     return m[e]
   }),
   y = {
@@ -278,7 +278,7 @@ var m = {
         var t = e.linkTags,
           n = e.scriptTags,
           r = e.encode,
-          i = w(e.metaTags, v),
+          i = w(e.metaTags, b),
           o = w(t, g),
           a = w(n, E);
         return {
@@ -314,7 +314,7 @@ var m = {
     }
   },
   B = [],
-  V = function(e, t) {
+  F = function(e, t) {
     var n = this;
     void 0 === t && (t = "undefined" != typeof document), this.instances = [], this.value = {
       setHelmet: function(e) {
@@ -346,7 +346,7 @@ var m = {
       titleAttributes: {}
     }))
   },
-  F = r.createContext({}),
+  V = r.createContext({}),
   Z = o().shape({
     setHelmet: o().func,
     helmetInstances: o().shape({
@@ -359,10 +359,10 @@ var m = {
   W = function(e) {
     function t(n) {
       var r;
-      return (r = e.call(this, n) || this).helmetData = new V(r.props.context, t.canUseDOM), r
+      return (r = e.call(this, n) || this).helmetData = new F(r.props.context, t.canUseDOM), r
     }
     return _(t, e), t.prototype.render = function() {
-      return r.createElement(F.Provider, {
+      return r.createElement(V.Provider, {
         value: this.helmetData.value
       }, this.props.children)
     }, t
@@ -546,9 +546,9 @@ var X = ["children"],
         n = f({}, n, ((r = {})[t] = e[t], r))
       }), n
     }, n.warnOnInvalidChildren = function(e, t) {
-      return c()(b.some(function(t) {
+      return c()(v.some(function(t) {
         return e.type === t
-      }), "function" == typeof e.type ? "You may be attempting to nest <Helmet> components within each other, which is not allowed. Refer to our API for more information." : "Only elements types " + b.join(", ") + " are allowed. Helmet does not support rendering <" + e.type + "> elements. Refer to our API for more information."), c()(!t || "string" == typeof t || Array.isArray(t) && !t.some(function(e) {
+      }), "function" == typeof e.type ? "You may be attempting to nest <Helmet> components within each other, which is not allowed. Refer to our API for more information." : "Only elements types " + v.join(", ") + " are allowed. Helmet does not support rendering <" + e.type + "> elements. Refer to our API for more information."), c()(!t || "string" == typeof t || Array.isArray(t) && !t.some(function(e) {
         return "string" != typeof e
       }), "Helmet expects a string as a child of <" + e.type + ">. Did you forget to wrap your children in braces? ( <" + e.type + ">{``}</" + e.type + "> ) Refer to our API for more information."), !0
     }, n.mapChildrenToProps = function(e, t) {
@@ -595,10 +595,10 @@ var X = ["children"],
         n = h(e, J),
         i = f({}, n),
         o = n.helmetData;
-      return t && (i = this.mapChildrenToProps(t, i)), !o || o instanceof V || (o = new V(o.context, o.instances)), o ? r.createElement(Q, f({}, i, {
+      return t && (i = this.mapChildrenToProps(t, i)), !o || o instanceof F || (o = new F(o.context, o.instances)), o ? r.createElement(Q, f({}, i, {
         context: o.value,
         helmetData: void 0
-      })) : r.createElement(F.Consumer, null, function(e) {
+      })) : r.createElement(V.Consumer, null, function(e) {
         return r.createElement(Q, f({}, i, {
           context: e
         }))

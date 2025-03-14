@@ -90,10 +90,10 @@ class E extends(r = l.PureComponent) {
   }
 }
 h(E, "Scenes", m);
-var v = function(e) {
+var b = function(e) {
   return e.NORMAL = "normal", e.SPEED_START = "speed_start", e.SPEED_LOOP = "speed_loop", e.FINISH = "finish", e.IDLE = "idle", e
-}(v || {});
-let b = {
+}(b || {});
+let v = {
   normal: {
     BEG: 0,
     END: 600,
@@ -148,7 +148,7 @@ class y extends(i = l.PureComponent) {
       className: u()(p.sequencedAnimation, e),
       importData: this.importDefault,
       nextScene: i ? "idle" : t,
-      sceneSegments: b,
+      sceneSegments: v,
       onScenePlay: n,
       onSceneComplete: r,
       pauseWhileUnfocused: o,
@@ -156,7 +156,7 @@ class y extends(i = l.PureComponent) {
     })
   }
 }
-h(y, "Scenes", v);
+h(y, "Scenes", b);
 var O = function(e) {
   return e.IDLE_ENTRY = "idle_entry", e.IDLE_LOOP = "idle_loop", e.BOOST_START = "boost_start", e.BOOST_LOOP = "boost_loop", e.BOOST_END = "boost_end", e.VICTORY = "victory", e.ERROR = "error", e
 }(O || {});

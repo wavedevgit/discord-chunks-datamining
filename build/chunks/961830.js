@@ -75,11 +75,11 @@ let g = {
       renderHeader: !0
     }
   },
-  v = {
+  b = {
     key: o.h8.AWAITING_PURCHASE_TOKEN_AUTH,
     renderStep: () => (0, r.jsx)(l.Z, {})
   },
-  b = {
+  v = {
     key: o.h8.AWAITING_AUTHENTICATION,
     renderStep: () => (0, r.jsx)(s.Z, {}),
     options: {
@@ -97,4 +97,4 @@ let g = {
     key: o.h8.CONFIRM,
     renderStep: e => (0, r.jsx)(c.w, p({}, e))
   },
-  I = [v, b]
+  I = [b, v]

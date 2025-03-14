@@ -20,8 +20,8 @@ var r = n(392711),
   m = n(131951),
   g = n(866960),
   E = n(19780),
-  v = n(936349),
-  b = n(704806),
+  b = n(936349),
+  v = n(704806),
   y = n(626135),
   O = n(756315),
   I = n(569545),
@@ -163,8 +163,8 @@ class M extends s.Z {
       let e = E.transport.inboundBitrateEstimate;
       null != e && e < 1e8 && (this._bandwidthSamples.push(e), this._bandwidthSamples.length > w && this._bandwidthSamples.shift(), this._bandwidthSamples.length === w && ((p = i().mean(this._bandwidthSamples)) > L ? g = "HQ" : p < D && (g = "LQ")))
     }
-    let v = null !== (o = null === (r = this._goLiveQualityManager) || void 0 === r ? void 0 : r.isDowngraded()) && void 0 !== o && o;
-    if ("HQ" === g && v ? (this.logger.info("Attempting to upgrade to HQ simulcast stream, bandwidth estimate: ".concat(p)), null === (a = this._goLiveQualityManager) || void 0 === a || a.setGoLiveStreamDowngraded(!1)) : "LQ" === g && !v && m && (this.logger.info("Attempting to downgrade to LQ simulcast stream, bandwidth estimate: ".concat(p)), null === (s = this._goLiveQualityManager) || void 0 === s || s.setGoLiveStreamDowngraded(!0)), h) {
+    let b = null !== (o = null === (r = this._goLiveQualityManager) || void 0 === r ? void 0 : r.isDowngraded()) && void 0 !== o && o;
+    if ("HQ" === g && b ? (this.logger.info("Attempting to upgrade to HQ simulcast stream, bandwidth estimate: ".concat(p)), null === (a = this._goLiveQualityManager) || void 0 === a || a.setGoLiveStreamDowngraded(!1)) : "LQ" === g && !b && m && (this.logger.info("Attempting to downgrade to LQ simulcast stream, bandwidth estimate: ".concat(p)), null === (s = this._goLiveQualityManager) || void 0 === s || s.setGoLiveStreamDowngraded(!0)), h) {
       let e = !(null === (l = this._goLiveQualityManager) || void 0 === l ? void 0 : l.senderSupportsSimulcast()) || (null === (c = this._goLiveQualityManager) || void 0 === c ? void 0 : c.isDowngraded()) === !1;
       null === (u = this._videoQuality) || void 0 === u || u.setViewedSimulcastQuality(e);
       let t = null !== (_ = null === (d = this._goLiveQualityManager) || void 0 === d ? void 0 : d.isOneToOneCall()) && void 0 !== _ && _,
@@ -184,19 +184,19 @@ class M extends s.Z {
         var r;
         null === (r = this._connection) || void 0 === r || r.on(o.Sh.ScreenshareFinish, (e, t, n, r, i, o, a, s, l, c, u, d, p, h, m, g) => {
           let E = this.getMediaSessionId(),
-            v = this.getRTCConnectionId(),
+            b = this.getRTCConnectionId(),
             O = this.getGoLiveSource();
-          (0, b.q)().then(b => {
+          (0, v.q)().then(v => {
             var I, S, A;
             let R = null;
-            if (null != b) {
+            if (null != v) {
               let {
                 cpu_brand: e,
                 cpu_vendor: t,
                 cpu_memory: n,
                 gpu_brand: r,
                 gpu_memory: i
-              } = b;
+              } = v;
               R = {
                 cpu_brand: e,
                 cpu_vendor: t,
@@ -229,7 +229,7 @@ class M extends s.Z {
               total_frames: P,
               desktop_capturer_type: u,
               media_session_id: E,
-              rtc_connection_id: v,
+              rtc_connection_id: b,
               context: N.Yn.STREAM,
               screens: d,
               windows: p,
@@ -283,7 +283,7 @@ class M extends s.Z {
     } = this.analyticsContext, {
       ownerId: i,
       guildId: o
-    } = this._streamContext, a = v.Z.getRegion(E.Z.getHostname()), {
+    } = this._streamContext, a = b.Z.getRegion(E.Z.getHostname()), {
       gameName: s,
       gameId: l,
       exe: c,

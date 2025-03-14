@@ -39,7 +39,7 @@ function E(e) {
   return e
 }
 
-function v(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,8 +50,8 @@ function v(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -109,7 +109,7 @@ function N() {
 }
 
 function A(e) {
-  return b(E({}, e), {
+  return v(E({}, e), {
     kind: "notification-center-item",
     message: null != e.message ? (0, c.e5)(e.message) : void 0,
     applicationId: null != e.application ? e.application.id : void 0
@@ -178,7 +178,7 @@ function w(e) {
 }
 
 function D(e, t) {
-  y.notifCenterItems = y.notifCenterItems.map(n => e.includes(n.id) ? b(E({}, n), {
+  y.notifCenterItems = y.notifCenterItems.map(n => e.includes(n.id) ? v(E({}, n), {
     acked: t
   }) : n).filter(O)
 }
@@ -242,7 +242,7 @@ function G(e) {
       null != t && (y.notifCenterLocalItems = [...y.notifCenterLocalItems, (0, h.mH)(t, l, e)])
     }
   }
-  r !== m.OGo.FRIEND || null == t.user || o || (y.notifCenterLocalItems = y.notifCenterLocalItems.map(e => j(e, p.O7.INCOMING_FRIEND_REQUESTS, t.user.id) ? b(E({}, e), {
+  r !== m.OGo.FRIEND || null == t.user || o || (y.notifCenterLocalItems = y.notifCenterLocalItems.map(e => j(e, p.O7.INCOMING_FRIEND_REQUESTS, t.user.id) ? v(E({}, e), {
     acked: !0,
     forceUnacked: !1,
     local_id: "incoming_friend_requests_accepted_".concat(a.id, "_").concat(e.id),
@@ -254,7 +254,7 @@ function B(e) {
   y.notifCenterLocalItems = y.notifCenterLocalItems.filter(t => !j(t, p.O7.INCOMING_FRIEND_REQUESTS, e.relationship.id) && !j(t, p.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED, e.relationship.id))
 }
 
-function V(e) {
+function F(e) {
   let {
     gameRelationship: t
   } = e;
@@ -273,7 +273,7 @@ function V(e) {
     null != i && null != e && (y.notifCenterLocalItems = [...y.notifCenterLocalItems, (0, h.LF)(e, i, o)])
   } else {
     if (r !== m.OGo.FRIEND) return !1;
-    y.notifCenterLocalItems = y.notifCenterLocalItems.map(e => U(e, p.O7.INCOMING_GAME_FRIEND_REQUESTS, n, o) ? b(E({}, e), {
+    y.notifCenterLocalItems = y.notifCenterLocalItems.map(e => U(e, p.O7.INCOMING_GAME_FRIEND_REQUESTS, n, o) ? v(E({}, e), {
       acked: !0,
       forceUnacked: !1,
       local_id: "incoming_game_friend_requests_accepted_".concat(n, "_").concat(e.id),
@@ -282,7 +282,7 @@ function V(e) {
   }
 }
 
-function F(e) {
+function V(e) {
   let {
     userId: t,
     applicationId: n
@@ -297,7 +297,7 @@ function Z(e) {
   let {
     item_enum: t
   } = e;
-  y.notifCenterItems = y.notifCenterItems.map(e => e.item_enum === t ? b(E({}, e), {
+  y.notifCenterItems = y.notifCenterItems.map(e => e.item_enum === t ? v(E({}, e), {
     completed: !0,
     acked: !0
   }) : e).filter(O)
@@ -311,7 +311,7 @@ function H(e) {
 }
 
 function W(e) {
-  (0, l.Z2)(e) && (y.notifCenterItems = y.notifCenterItems.map(t => t.type === p.DY.GUILD_SCHEDULED_EVENT_STARTED && t.guild_scheduled_event_id === e.id ? b(E({}, t), {
+  (0, l.Z2)(e) && (y.notifCenterItems = y.notifCenterItems.map(t => t.type === p.DY.GUILD_SCHEDULED_EVENT_STARTED && t.guild_scheduled_event_id === e.id ? v(E({}, t), {
     disable_action: !0
   }) : t))
 }
@@ -328,11 +328,11 @@ function Y(e) {
 class K extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     if (this.waitFor(f.default, d.Z, a.Z), null != e) {
-      let t = e => b(E({}, e), {
+      let t = e => v(E({}, e), {
           message: null != e.message ? new u.ZP(e.message) : void 0
         }),
         n = e.notifCenterItems.map(t);
-      n.length > 0 && (y = b(E({}, y), {
+      n.length > 0 && (y = v(E({}, y), {
         initialized: !0,
         isDataStale: !0,
         notifCenterItems: [],
@@ -341,10 +341,10 @@ class K extends(r = i.ZP.PersistedStore) {
     }
   }
   getState() {
-    let e = e => b(E({}, e), {
+    let e = e => v(E({}, e), {
       message: null != e.message ? e.message.toJS() : void 0
     });
-    return b(E({}, y), {
+    return v(E({}, y), {
       notifCenterItems: y.notifCenterItems.map(e),
       staleNotifCenterItems: y.staleNotifCenterItems.map(e)
     })
@@ -396,8 +396,8 @@ let z = new K(o.Z, {
   RELATIONSHIP_ADD: G,
   RELATIONSHIP_UPDATE: G,
   RELATIONSHIP_REMOVE: B,
-  GAME_RELATIONSHIP_ADD: V,
-  GAME_RELATIONSHIP_REMOVE: F,
+  GAME_RELATIONSHIP_ADD: F,
+  GAME_RELATIONSHIP_REMOVE: V,
   NOTIFICATION_CENTER_ITEM_COMPLETED: Z,
   SET_RECENT_MENTIONS_FILTER: () => S(),
   MOBILE_NATIVE_UPDATE_CHECK_FINISHED: Y

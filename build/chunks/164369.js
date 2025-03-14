@@ -39,8 +39,8 @@ function _(e) {
     hours: p * _.hours
   });
   _.minutes = Math.abs((0, s.Z)(n, E));
-  var v = (0, i.Z)(E, {
+  var b = (0, i.Z)(E, {
     minutes: p * _.minutes
   });
-  return _.seconds = Math.abs((0, c.Z)(n, v)), _
+  return _.seconds = Math.abs((0, c.Z)(n, b)), _
 }

@@ -53,10 +53,10 @@ function g(e, t) {
   }), e
 }
 let E = [l.yU.CHAT, l.yU.PRIMARY_ENTRY_POINT],
-  v = {
+  b = {
     pendingUsages: []
   },
-  b = new c.ZP({
+  v = new c.ZP({
     computeBonus: () => 100,
     computeWeight: e => e <= 3 ? 100 : e <= 15 ? 70 : e <= 30 ? 50 : e <= 45 ? 30 : e <= 80 ? 10 : 1,
     lookupKey: e => e,
@@ -72,7 +72,7 @@ function y(e) {
     wasSaved: n
   } = e;
   if (t !== _.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) return !1;
-  v.pendingUsages = []
+  b.pendingUsages = []
 }
 
 function O(e) {
@@ -92,38 +92,38 @@ function I(e) {
 }
 
 function S(e) {
-  v.pendingUsages.push({
+  b.pendingUsages.push({
     key: e,
     timestamp: Date.now()
-  }), b.track(e), b.compute()
+  }), v.track(e), v.compute()
 }
 
 function T() {
   var e, t;
   let n = null !== (t = null === (e = d.Z.frecencyWithoutFetchingLatest.applicationFrecency) || void 0 === e ? void 0 : e.applications) && void 0 !== t ? t : {};
-  b.overwriteHistory(o().mapValues(n, e => g(h({}, e), {
+  v.overwriteHistory(o().mapValues(n, e => g(h({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
-  })), v.pendingUsages)
+  })), b.pendingUsages)
 }
 class N extends(r = a.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (v = e), this.waitFor(u.ZP), this.syncWith([d.Z], T)
+    null != e && (b = e), this.waitFor(u.ZP), this.syncWith([d.Z], T)
   }
   getState() {
-    return v
+    return b
   }
   hasPendingUsage() {
-    return v.pendingUsages.length > 0
+    return b.pendingUsages.length > 0
   }
   getApplicationFrecencyWithoutLoadingLatest() {
-    return b
+    return v
   }
   getScoreWithoutLoadingLatest(e) {
     var t;
-    return null !== (t = b.getScore(e)) && void 0 !== t ? t : 0
+    return null !== (t = v.getScore(e)) && void 0 !== t ? t : 0
   }
   getTopApplicationsWithoutLoadingLatest() {
-    return b.frequently
+    return v.frequently
   }
 }
 p(N, "displayName", "ApplicationFrecencyStore"), p(N, "persistKey", "ApplicationFrecency");

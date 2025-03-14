@@ -87,7 +87,7 @@ function E(e) {
   delete p[t], delete h[t]
 }
 
-function v(e) {
+function b(e) {
   var t;
   let {
     channelId: n,
@@ -95,7 +95,7 @@ function v(e) {
   } = e;
   (null === (t = p[n]) || void 0 === t ? void 0 : t.messageId) === r && (delete p[n], delete h[n])
 }
-class b extends(r = i.ZP.Store) {
+class v extends(r = i.ZP.Store) {
   isEditing(e, t) {
     var n;
     return (null === (n = p[e]) || void 0 === n ? void 0 : n.messageId) === t
@@ -123,10 +123,10 @@ class b extends(r = i.ZP.Store) {
     return h[e]
   }
 }
-u(b, "displayName", "EditMessageStore");
-let y = new b(o.Z, {
+u(v, "displayName", "EditMessageStore");
+let y = new v(o.Z, {
   MESSAGE_START_EDIT: m,
   MESSAGE_UPDATE_EDIT: g,
   MESSAGE_END_EDIT: E,
-  MESSAGE_DELETE: v
+  MESSAGE_DELETE: b
 })

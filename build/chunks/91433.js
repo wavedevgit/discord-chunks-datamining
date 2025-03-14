@@ -25,8 +25,8 @@ function m(e) {
     applicationId: m,
     friendToken: g,
     isGameRelationship: E = !1,
-    className: v
-  } = e, b = f.ZP.getName(n, o, t), {
+    className: b
+  } = e, v = f.ZP.getName(n, o, t), {
     trackUserProfileAction: y
   } = (0, _.KZ)(), {
     newestAnalyticsLocation: O
@@ -49,11 +49,11 @@ function m(e) {
     })
   }, [S, E, y]), A = null != m, C = (0, c.q)(m);
   return A && null == C ? null : (0, r.jsxs)("div", {
-    className: a()(h.container, v),
+    className: a()(h.container, b),
     children: [A ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       children: p.NW.format(E ? p.t.syHjLC : p.t.V15uUF, {
-        username: b,
+        username: v,
         applicationIcon: () => (0, r.jsx)(u.Z, {
           className: h.gameIcon,
           game: C,
@@ -64,7 +64,7 @@ function m(e) {
     }) : (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       children: p.NW.format(p.t.uIomX1, {
-        username: b
+        username: v
       })
     }), (0, r.jsxs)("div", {
       className: h.buttonContainer,

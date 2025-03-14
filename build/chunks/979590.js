@@ -26,7 +26,7 @@
       o = null,
       l = !1,
       c = !1;
-    return "string" == typeof e && (e = K(e)), "object" == typeof e && (Y(e.r) && Y(e.g) && Y(e.b) ? (t = d(e.r, e.g, e.b), l = !0, c = "%" === String(e.r).substr(-1) ? "prgb" : "rgb") : Y(e.h) && Y(e.s) && Y(e.v) ? (r = F(e.s), i = F(e.v), t = h(e.h, r, i), l = !0, c = "hsv") : Y(e.h) && Y(e.s) && Y(e.l) && (r = F(e.s), o = F(e.l), t = _(e.h, r, o), l = !0, c = "hsl"), e.hasOwnProperty("a") && (n = e.a)), n = M(n), {
+    return "string" == typeof e && (e = K(e)), "object" == typeof e && (Y(e.r) && Y(e.g) && Y(e.b) ? (t = d(e.r, e.g, e.b), l = !0, c = "%" === String(e.r).substr(-1) ? "prgb" : "rgb") : Y(e.h) && Y(e.s) && Y(e.v) ? (r = V(e.s), i = V(e.v), t = h(e.h, r, i), l = !0, c = "hsv") : Y(e.h) && Y(e.s) && Y(e.l) && (r = V(e.s), o = V(e.l), t = _(e.h, r, o), l = !0, c = "hsl"), e.hasOwnProperty("a") && (n = e.a)), n = M(n), {
       ok: l,
       format: e.format || c,
       r: a(255, s(t.r, 0)),
@@ -133,26 +133,26 @@
   }
 
   function m(e, t, n, r) {
-    var i = [V(o(e).toString(16)), V(o(t).toString(16)), V(o(n).toString(16))];
+    var i = [F(o(e).toString(16)), F(o(t).toString(16)), F(o(n).toString(16))];
     return r && i[0].charAt(0) == i[0].charAt(1) && i[1].charAt(0) == i[1].charAt(1) && i[2].charAt(0) == i[2].charAt(1) ? i[0].charAt(0) + i[1].charAt(0) + i[2].charAt(0) : i.join("")
   }
 
   function g(e, t, n, r, i) {
-    var a = [V(o(e).toString(16)), V(o(t).toString(16)), V(o(n).toString(16)), V(Z(r))];
+    var a = [F(o(e).toString(16)), F(o(t).toString(16)), F(o(n).toString(16)), F(Z(r))];
     return i && a[0].charAt(0) == a[0].charAt(1) && a[1].charAt(0) == a[1].charAt(1) && a[2].charAt(0) == a[2].charAt(1) && a[3].charAt(0) == a[3].charAt(1) ? a[0].charAt(0) + a[1].charAt(0) + a[2].charAt(0) + a[3].charAt(0) : a.join("")
   }
 
   function E(e, t, n, r) {
-    return [V(Z(r)), V(o(e).toString(16)), V(o(t).toString(16)), V(o(n).toString(16))].join("")
+    return [F(Z(r)), F(o(e).toString(16)), F(o(t).toString(16)), F(o(n).toString(16))].join("")
   }
 
-  function v(e, t) {
+  function b(e, t) {
     t = 0 === t ? 0 : t || 10;
     var n = c(e).toHsl();
     return n.s -= t / 100, n.s = j(n.s), c(n)
   }
 
-  function b(e, t) {
+  function v(e, t) {
     t = 0 === t ? 0 : t || 10;
     var n = c(e).toHsl();
     return n.s += t / 100, n.s = j(n.s), c(n)
@@ -388,10 +388,10 @@
       return this._applyModification(S, arguments)
     },
     desaturate: function() {
-      return this._applyModification(v, arguments)
+      return this._applyModification(b, arguments)
     },
     saturate: function() {
-      return this._applyModification(b, arguments)
+      return this._applyModification(v, arguments)
     },
     greyscale: function() {
       return this._applyModification(y, arguments)
@@ -423,7 +423,7 @@
   }, c.fromRatio = function(e, t) {
     if ("object" == typeof e) {
       var n = {};
-      for (var r in e) e.hasOwnProperty(r) && ("a" === r ? n[r] = e[r] : n[r] = F(e[r]));
+      for (var r in e) e.hasOwnProperty(r) && ("a" === r ? n[r] = e[r] : n[r] = V(e[r]));
       e = n
     }
     return c(e, t)
@@ -659,11 +659,11 @@
     return "string" == typeof e && -1 != e.indexOf("%")
   }
 
-  function V(e) {
+  function F(e) {
     return 1 == e.length ? "0" + e : "" + e
   }
 
-  function F(e) {
+  function V(e) {
     return e <= 1 && (e = 100 * e + "%"), e
   }
 

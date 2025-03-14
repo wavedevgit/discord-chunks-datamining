@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  EM: () => v,
+  EM: () => b,
   PR: () => g,
   Tt: () => O,
   ZD: () => N,
@@ -97,16 +97,16 @@ function E(e) {
   }
 }
 
-function v(e) {
+function b(e) {
   let t = u(l({}, _, e), {
     id: f++
   });
   return t.count = Math.max(t.count, t.messages.length), p.setState(e => ({
     flashQueue: [...e.flashQueue, t]
-  })), () => b(t.id)
+  })), () => v(t.id)
 }
 
-function b(e) {
+function v(e) {
   p.setState(t => ({
     flashQueue: t.flashQueue.filter(t => t.id !== e)
   }))
@@ -139,12 +139,12 @@ function S() {
       return
     }
     if (document.hasFocus() && t.onlyWhenBlurred) {
-      b(t.id), o(!1);
+      v(t.id), o(!1);
       return
     }
     let e = setInterval(() => {
       if (a.current >= t.count) {
-        b(t.id), o(!1);
+        v(t.id), o(!1);
         return
       }
       o(e => !e || (a.current += 1, !1))

@@ -40,12 +40,12 @@ let h = {
   g = new Set,
   E = !1;
 
-function v() {
+function b() {
   o = null
 }
 
-function b() {
-  r = null, i = null, g = new Set, m.applicationId = null, m.originURL = null, v()
+function v() {
+  r = null, i = null, g = new Set, m.applicationId = null, m.originURL = null, b()
 }
 
 function y(e) {
@@ -125,7 +125,7 @@ let N = new T(l.Z, {
   DEVELOPER_TEST_MODE_AUTHORIZATION_SUCCESS: O,
   DEVELOPER_TEST_MODE_AUTHORIZATION_FAIL: I,
   OVERLAY_INITIALIZE: S,
-  DEVELOPER_TEST_MODE_RESET_ERROR: v,
-  LOGOUT: b,
-  DEVELOPER_TEST_MODE_RESET: b
+  DEVELOPER_TEST_MODE_RESET_ERROR: b,
+  LOGOUT: v,
+  DEVELOPER_TEST_MODE_RESET: v
 })

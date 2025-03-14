@@ -1,17 +1,17 @@
-/** Chunk was on 7755 **/
+/** Chunk was on 58173 **/
 n.d(t, {
   Z: () => f
 });
-var r, l, i, o = n(442837),
-  a = n(570140),
-  s = n(981631);
+var r, l, o, i = n(442837),
+  s = n(570140),
+  a = n(981631);
 let c = {};
 
 function u(e) {
   let t = c[e = null != e ? e : "null"];
   return null == t && (t = c[e] = {
-    state: s.hes.DISCONNECTED,
-    quality: s.IE4.UNKNOWN,
+    state: a.hes.DISCONNECTED,
+    quality: a.IE4.UNKNOWN,
     pings: [],
     hostname: null,
     lossRate: null
@@ -22,14 +22,14 @@ function d(e, t, n) {
   let r = c[e = null != e ? e : "null"];
   return null != r ? t(r) : n
 }
-class h extends(i = o.ZP.Store) {
+class h extends(o = i.ZP.Store) {
   getConnectionState(e) {
     return d(e, e => {
       let {
         state: t
       } = e;
       return t
-    }, s.hes.DISCONNECTED)
+    }, a.hes.DISCONNECTED)
   }
   getQuality(e) {
     return d(e, e => {
@@ -37,7 +37,7 @@ class h extends(i = o.ZP.Store) {
         quality: t
       } = e;
       return t
-    }, s.IE4.UNKNOWN)
+    }, a.IE4.UNKNOWN)
   }
   getHostname(e) {
     return d(e, e => {
@@ -79,7 +79,7 @@ l = "OverlayRTCConnectionStore", (r = "displayName") in h ? Object.definePropert
   configurable: !0,
   writable: !0
 }) : h[r] = l;
-let f = new h(a.Z, {
+let f = new h(s.Z, {
   OVERLAY_INITIALIZE: function(e) {
     c = e.rtcConnectionStates
   },

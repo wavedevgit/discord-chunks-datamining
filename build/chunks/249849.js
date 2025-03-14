@@ -1,31 +1,30 @@
-/** Chunk was on web.js **/
-"use strict";
-n.d(t, {
+/** Chunk was on 15814 **/
+r.d(t, {
   s: () => a
 });
-var r = n(688619),
-  i = n.n(r);
+var n = r(688619),
+  l = r.n(n);
 
-function o(e, t, n) {
-  if (!i().valid(t)) return e.map(() => "#000000");
-  let r = i()(t),
-    o = r.luminance();
-  return e.map((e, t) => r.luminance((e * n[t].base + o * n[t].tint) / (n[t].base + n[t].tint)).hex())
+function i(e, t, r) {
+  if (!l().valid(t)) return e.map(() => "#000000");
+  let n = l()(t),
+    i = n.luminance();
+  return e.map((e, t) => n.luminance((e * r[t].base + i * r[t].tint) / (r[t].base + r[t].tint)).hex())
 }
 
 function a(e) {
   let {
     primaryBaseColors: t,
-    primaryTintColor: n,
-    primaryTintLuminances: r,
-    primaryLuminanceWeights: i,
+    primaryTintColor: r,
+    primaryTintLuminances: n,
+    primaryLuminanceWeights: l,
     secondaryBaseColors: a,
-    secondaryTintColor: s,
-    secondaryTintLuminances: l,
-    secondaryLuminanceWeights: c
-  } = e, u = null != n ? o(r, n, i) : t, d = [];
-  return null != a && null != l && null != c && (d = null != s ? o(l, s, c) : a), {
-    primaryColorsTransformed: u,
-    secondaryColorsTransformed: d
+    secondaryTintColor: o,
+    secondaryTintLuminances: s,
+    secondaryLuminanceWeights: h
+  } = e, c = null != r ? i(n, r, l) : t, v = [];
+  return null != a && null != s && null != h && (v = null != o ? i(s, o, h) : a), {
+    primaryColorsTransformed: c,
+    secondaryColorsTransformed: v
   }
 }

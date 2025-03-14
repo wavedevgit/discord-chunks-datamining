@@ -10,10 +10,10 @@ n.d(t, {
   ZP: () => en,
   aN: () => M,
   ay: () => J,
-  ff: () => v,
+  ff: () => b,
   gT: () => C,
   ov: () => w,
-  pK: () => b,
+  pK: () => v,
   pU: () => er,
   rI: () => z,
   tp: () => j,
@@ -69,8 +69,8 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = /^data:/,
-  b = (r = n(426563).Z).DEFAULT_AVATARS,
+let b = /^data:/,
+  v = (r = n(426563).Z).DEFAULT_AVATARS,
   y = r.DEFAULT_PROVISIONAL_AVATARS;
 r.DEFAULT_GROUP_DM_AVATARS;
 let O = r.canUseWebp(),
@@ -112,7 +112,7 @@ function C(e) {
 
 function R(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    r = n ? y : b;
+    r = n ? y : v;
   if (null == e && null == t) return r[0];
   let i = (0, c.Lk)(t, 0);
   return i > 0 ? r[i % I] : null != e ? r[o()(e).shiftRight(22).mod(r.length).toJSNumber()] : r[0]
@@ -128,7 +128,7 @@ function P(e) {
   if (o && t !== _.fL) {
     let e = r.BOT_AVATARS[n];
     if (e) return e;
-    if (null == n && "0000" === i) return b[0]
+    if (null == n && "0000" === i) return v[0]
   }
   return A({
     endpoint: f.ANM.AVATAR,
@@ -259,7 +259,7 @@ function B(e) {
   return t = (null != c ? "".concat(location.protocol, "//").concat(c, "/banners/").concat(n, "/").concat(r, ".").concat(s) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.GUILD_BANNER(n, r, s)) + "?size=".concat(o), "jpg" === s && (t += "&quality=lossless"), t
 }
 
-function V(e) {
+function F(e) {
   let t, {
     id: n,
     homeHeader: r
@@ -270,7 +270,7 @@ function V(e) {
   return (null != o ? "".concat(location.protocol, "//").concat(o, "/home-headers/").concat(n, "/").concat(r, ".png") : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.GUILD_HOME_HEADER(n, r)) + "?size=".concat(i)
 }
 
-function F(e) {
+function V(e) {
   let t, {
     id: n,
     splash: r,
@@ -283,7 +283,7 @@ function F(e) {
 }
 
 function Z(e) {
-  return et(F(e))
+  return et(V(e))
 }
 
 function H(e) {
@@ -457,10 +457,10 @@ let en = {
   getGuildIconURL: H,
   getGuildSplashURL: U,
   getGuildSplashSource: G,
-  getGuildDiscoverySplashURL: F,
+  getGuildDiscoverySplashURL: V,
   getGuildDiscoverySplashSource: Z,
   getGuildBannerURL: B,
-  getGuildHomeHeaderURL: V,
+  getGuildHomeHeaderURL: F,
   getResourceChannelIconURL: function e(e) {
     let {
       channelId: t,
@@ -502,7 +502,7 @@ let en = {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     return et(B(e, t))
   },
-  getGuildHomeHeaderSource: e => et(V(e)),
+  getGuildHomeHeaderSource: e => et(F(e)),
   getChannelIconSource: e => et(Q(e)),
   getApplicationIconSource: e => et(Y(e)),
   makeSource: et,
@@ -519,5 +519,5 @@ let en = {
 };
 
 function er(e) {
-  return null != e && v.test(e)
+  return null != e && b.test(e)
 }

@@ -74,7 +74,7 @@ let E = {
         onHover: g,
         onClick: E
       } = e,
-      v = a.map((e, t) => (0, r.jsx)(o.ZP.User, {
+      b = a.map((e, t) => (0, r.jsx)(o.ZP.User, {
         guildId: p.guild_id,
         onClick: E,
         onHover: g,
@@ -85,7 +85,7 @@ let E = {
         status: e.status,
         hidePersonalInformation: m.hidePersonalInformation
       }, e.user.id)),
-      b = s.map((e, t) => (0, r.jsx)(o.ZP.Generic, {
+      v = s.map((e, t) => (0, r.jsx)(o.ZP.Generic, {
         onClick: E,
         onHover: g,
         selected: _ === t + a.length,
@@ -108,7 +108,7 @@ let E = {
         titleWithoutQuery: n,
         query: h,
         getQuery: e => "".concat(d.ME).concat(e)
-      }), v, a.length > 0 && s.length > 0 ? (0, r.jsx)(o.ZP.Divider, {}) : null, b, a.length > 0 && l.length > 0 || s.length > 0 && l.length > 0 ? (0, r.jsx)(o.ZP.Divider, {}) : null, y]
+      }), b, a.length > 0 && s.length > 0 ? (0, r.jsx)(o.ZP.Divider, {}) : null, v, a.length > 0 && l.length > 0 || s.length > 0 && l.length > 0 ? (0, r.jsx)(o.ZP.Divider, {}) : null, y]
     }, "mentions")
   },
   onSelect(e) {

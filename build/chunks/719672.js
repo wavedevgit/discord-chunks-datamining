@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var a = n(913527),
-  i = n.n(a),
-  l = n(442837),
+  l = n.n(a),
+  i = n(442837),
   o = n(704215),
   s = n(481060),
   c = n(713284),
@@ -14,8 +14,8 @@ var a = n(913527),
   u = n(211644),
   m = n(675478),
   h = n(681619),
-  p = n(793272);
-let x = e => {
+  x = n(793272);
+let p = e => {
     switch (e) {
       case c.D.DC_DISMISSED:
         return "DISMISS:";
@@ -27,7 +27,7 @@ let x = e => {
         return "UNKNOWN TYPE:"
     }
   },
-  f = [{
+  b = [{
     key: "events",
     render(e) {
       let {
@@ -37,7 +37,7 @@ let x = e => {
       return "".concat(t, " ").concat(o.z[n])
     }
   }],
-  b = [{
+  f = [{
     key: "candidates",
     render(e) {
       let {
@@ -48,18 +48,18 @@ let x = e => {
   }];
 
 function _() {
-  let e = (0, l.e7)([c.Z], () => c.Z.getDCFEvents()),
+  let e = (0, i.e7)([c.Z], () => c.Z.getDCFEvents()),
     t = (0, u.ZP)(e => e.candidates),
     n = (0, u.ZP)(e => e.lastWinnerTime),
-    a = void 0 !== n ? i()(n).fromNow() : "n/a",
+    a = void 0 !== n ? l()(n).fromNow() : "n/a",
     o = e.map(e => {
       let {
         eventType: t,
         dismissibleContent: n
       } = e;
       return {
-        key: x(t) + n.toString(),
-        event: x(t),
+        key: p(t) + n.toString(),
+        event: p(t),
         dismissibleContent: n
       }
     }),
@@ -68,34 +68,34 @@ function _() {
       dismissibleContent: e
     }));
   return (0, r.jsxs)("div", {
-    className: p.panelContainer,
+    className: x.panelContainer,
     children: [(0, r.jsxs)("div", {
-      className: p.buttonContainer,
+      className: x.buttonContainer,
       children: [(0, r.jsx)(s.zxk, {
-        className: p.button,
+        className: x.button,
         onClick: () => (0, d.EG)(),
         children: "Reset Daily Cap"
       }), (0, r.jsx)(s.zxk, {
-        className: p.button,
+        className: x.button,
         onClick: m.sr,
         children: "Clear All Dismissed Contents"
       }), (0, r.jsx)(s.zxk, {
-        className: p.button,
+        className: x.button,
         onClick: m.bE,
         children: "Check All Dismissed Contents"
       })]
     }), (0, r.jsx)("br", {}), (0, r.jsxs)("div", {
-      className: p.info,
+      className: x.info,
       children: ["Last winner time: ", a]
     }), (0, r.jsx)("br", {}), (0, r.jsx)("div", {
-      className: p.candidatesTableContainer,
+      className: x.candidatesTableContainer,
       children: (0, r.jsx)(h.Z, {
-        className: p.candidatesTable,
-        columns: b,
+        className: x.candidatesTable,
+        columns: f,
         data: _
       })
     }), (0, r.jsx)("br", {}), (0, r.jsx)(h.Z, {
-      columns: f,
+      columns: b,
       data: o
     })]
   })

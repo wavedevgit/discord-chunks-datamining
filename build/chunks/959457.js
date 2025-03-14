@@ -17,8 +17,8 @@ var o, a = n(512722),
   m = n(687516),
   g = n(139656),
   E = n(358085),
-  v = n(199902),
-  b = n(314897),
+  b = n(199902),
+  v = n(314897),
   y = n(131951),
   O = n(158776),
   I = n(19780),
@@ -88,7 +88,7 @@ function B() {
   r = null, i = null, j()
 }
 
-function V(e) {
+function F(e) {
   let {
     streamType: t,
     guildId: n,
@@ -102,7 +102,7 @@ function V(e) {
     streamType: t,
     guildId: n,
     channelId: r,
-    ownerId: b.default.getId()
+    ownerId: v.default.getId()
   });
   if (A[u] = i, c().forEach(L, e => {
       let {
@@ -122,7 +122,7 @@ function V(e) {
   null != l ? w[u] = l : delete w[u]
 }
 
-function F(e) {
+function V(e) {
   let {
     appContext: t,
     streamKey: n
@@ -285,8 +285,8 @@ class en extends(o = u.ZP.Store) {
   getStatsHistory(e, t, n) {
     if (!(0, g.Z)(y.Z) || null == t) return null;
     if (n) {
-      let n = v.Z.getActiveStreamForUser(t, e);
-      if (null == n || 0 === v.Z.getViewerIds(n).length) return null
+      let n = b.Z.getActiveStreamForUser(t, e);
+      if (null == n || 0 === b.Z.getViewerIds(n).length) return null
     }
     return x.map(e => n ? $(e.rtp.outbound) : ee(e.rtp.inbound[t]))
   }
@@ -356,8 +356,8 @@ let er = new en(f.Z, !y.Z.isSupported() || __OVERLAY__ ? {} : {
   RTC_CONNECTION_LOSS_RATE: q,
   RTC_CONNECTION_UPDATE_ID: Q,
   RTC_CONNECTION_SECURE_FRAMES_UPDATE: q,
-  STREAM_START: V,
-  STREAM_STOP: F,
+  STREAM_START: F,
+  STREAM_STOP: V,
   STREAM_CREATE: Z,
   STREAM_SERVER_UPDATE: H,
   STREAM_UPDATE: Y,

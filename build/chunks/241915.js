@@ -39,8 +39,8 @@ function g(e) {
   return e
 }
 let E = 200,
-  v = 22,
-  b = 40,
+  b = 22,
+  v = 40,
   y = 80,
   O = 132,
   I = 80,
@@ -58,7 +58,7 @@ let E = 200,
   };
 
 function N(e, t) {
-  let n = Math.round(e / b) * b;
+  let n = Math.round(e / v) * v;
   return (0, l.clamp)(n, t.minWidth, t.maxWidth)
 }
 
@@ -71,7 +71,7 @@ function A(e) {
     position: l
   } = e, c = (0, u.Z)({
     minDimension: a.minWidth,
-    maxDimension: a.maxWidth + b / 2,
+    maxDimension: a.maxWidth + v / 2,
     resizableDomNodeRef: t,
     onElementResize: n,
     onElementResizeEnd: r,
@@ -93,7 +93,7 @@ class C extends(r = o.PureComponent) {
     if (null != this.props.width && null != this.props.resizeConfig && e.width !== this.props.width) {
       var t, n;
       let r = null !== (n = null !== (t = this._width) && void 0 !== t ? t : e.width) && void 0 !== n ? n : this.props.width;
-      this._width = this.props.width, null != this._innerDivRef.current && (Math.abs(r - this._width) > b && (this._innerDivRef.current.style.transition = "none"), this._innerDivRef.current.style.width = "".concat(this.props.width, "px"))
+      this._width = this.props.width, null != this._innerDivRef.current && (Math.abs(r - this._width) > v && (this._innerDivRef.current.style.transition = "none"), this._innerDivRef.current.style.width = "".concat(this.props.width, "px"))
     }(e.edgeOffsetTop !== this.props.edgeOffsetTop || e.edgeOffsetLeft !== this.props.edgeOffsetLeft || e.edgeOffsetBottom !== this.props.edgeOffsetBottom || e.edgeOffsetRight !== this.props.edgeOffsetRight || e.maxX !== this.props.maxX || e.maxY !== this.props.maxY || e.dockedRect !== this.props.dockedRect || e.roundCorners !== this.props.roundCorners) && (this.ensureIsInPosition(), this.ensureWidth())
   }
   componentWillUnmount() {
@@ -114,7 +114,7 @@ class C extends(r = o.PureComponent) {
       maxX: a,
       maxY: s,
       dockedRect: l
-    } = this.props, u = Math.round(n), d = Math.round(s - i - this._boundHeight), p = Math.round(r), h = Math.round(a - o - this._boundWidth), m = (0, f.getPlatform)() !== f.PlatformTypes.WEB && this.inPopout ? v : 0;
+    } = this.props, u = Math.round(n), d = Math.round(s - i - this._boundHeight), p = Math.round(r), h = Math.round(a - o - this._boundWidth), m = (0, f.getPlatform)() !== f.PlatformTypes.WEB && this.inPopout ? b : 0;
     if (null != l) {
       var g, E;
       return {

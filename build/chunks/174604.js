@@ -23,7 +23,7 @@ function E(e) {
   let {
     guild: t,
     themeResponsive: n = !0
-  } = e, o = (0, f.Ek)(t, "GuildBoostingMarketing"), [E, v] = (0, c.q_F)(() => ({
+  } = e, o = (0, f.Ek)(t, "GuildBoostingMarketing"), [E, b] = (0, c.q_F)(() => ({
     scale: .8,
     opacity: 0,
     config: {
@@ -33,14 +33,14 @@ function E(e) {
   }));
   i.useEffect(() => {
     let e = setTimeout(() => {
-      v({
+      b({
         scale: 1,
         opacity: 1
       })
     }, 300);
     return () => clearTimeout(e)
-  }, [v]);
-  let b = i.useCallback(() => {
+  }, [b]);
+  let v = i.useCallback(() => {
     (0, u.xf)(), (0, d.uL)(_.Z5c.CHANNEL(t.id, p.oC.GUILD_BOOSTS))
   }, [t.id]);
   return o ? (0, r.jsxs)(s.animated.div, {
@@ -75,7 +75,7 @@ function E(e) {
       })]
     }), (0, r.jsx)(c.zxk, {
       className: g.button,
-      onClick: b,
+      onClick: v,
       children: m.NW.string(h.Z.E5V5KC)
     })]
   }) : null

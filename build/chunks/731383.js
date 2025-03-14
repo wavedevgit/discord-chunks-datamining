@@ -45,7 +45,7 @@ var r = n(728804),
     return "string" == typeof e || "number" == typeof e || "boolean" == typeof e || "symbol" == typeof e || "bigint" == typeof e
   },
   h = {},
-  m = function e(t, n, o, a, s, c, d, f, m, g, E, v, b, y, O, I) {
+  m = function e(t, n, o, a, s, c, d, f, m, g, E, b, v, y, O, I) {
     for (var S, T = t, N = I, A = 0, C = !1; void 0 !== (N = N.get(h)) && !C;) {
       var R = N.get(t);
       if (A += 1, void 0 !== R) {
@@ -57,10 +57,10 @@ var r = n(728804),
     if ("function" == typeof f ? T = f(n, T) : T instanceof Date ? T = E(T) : "comma" === o && l(T) && (T = i.maybeMap(T, function(e) {
         return e instanceof Date ? E(e) : e
       })), null === T) {
-      if (s) return d && !y ? d(n, _.encoder, O, "key", v) : n;
+      if (s) return d && !y ? d(n, _.encoder, O, "key", b) : n;
       T = ""
     }
-    if (p(T) || i.isBuffer(T)) return d ? [b(y ? n : d(n, _.encoder, O, "key", v)) + "=" + b(d(T, _.encoder, O, "value", v))] : [b(n) + "=" + b(String(T))];
+    if (p(T) || i.isBuffer(T)) return d ? [v(y ? n : d(n, _.encoder, O, "key", b)) + "=" + v(d(T, _.encoder, O, "value", b))] : [v(n) + "=" + v(String(T))];
     var P = [];
     if (void 0 === T) return P;
     if ("comma" === o && l(T)) y && d && (T = i.maybeMap(T, d)), S = [{
@@ -78,7 +78,7 @@ var r = n(728804),
         var k = l(T) ? "function" == typeof o ? o(D, x) : D : D + (g ? "." + x : "[" + x + "]");
         I.set(t, A);
         var j = r();
-        j.set(h, I), u(P, e(M, k, o, a, s, c, "comma" === o && y && l(T) ? null : d, f, m, g, E, v, b, y, O, j))
+        j.set(h, I), u(P, e(M, k, o, a, s, c, "comma" === o && y && l(T) ? null : d, f, m, g, E, b, v, y, O, j))
       }
     }
     return P
@@ -128,7 +128,7 @@ e.exports = function(e, t) {
     var E = n[h];
     (!c.skipNulls || null !== a[E]) && u(d, m(a[E], E, f, _, c.strictNullHandling, c.skipNulls, c.encode ? c.encoder : null, c.filter, c.sort, c.allowDots, c.serializeDate, c.format, c.formatter, c.encodeValuesOnly, c.charset, p))
   }
-  var v = d.join(c.delimiter),
-    b = !0 === c.addQueryPrefix ? "?" : "";
-  return c.charsetSentinel && ("iso-8859-1" === c.charset ? b += "utf8=%26%2310003%3B&" : b += "utf8=%E2%9C%93&"), v.length > 0 ? b + v : ""
+  var b = d.join(c.delimiter),
+    v = !0 === c.addQueryPrefix ? "?" : "";
+  return c.charsetSentinel && ("iso-8859-1" === c.charset ? v += "utf8=%26%2310003%3B&" : v += "utf8=%E2%9C%93&"), b.length > 0 ? v + b : ""
 }

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  b: () => b
+  b: () => v
 });
 var r = n(200651),
   i = n(192379),
@@ -19,13 +19,13 @@ var r = n(200651),
   m = n(981631),
   g = n(231338),
   E = n(65154),
-  v = n(388032);
+  b = n(388032);
 
-function b(e) {
+function v(e) {
   let {
     stream: t,
     handleGoLive: n,
-    showReportOption: b = !1,
+    showReportOption: v = !1,
     disableChangeWindows: y = !1,
     simplified: O = !1,
     appContext: I = m.IlC.APP
@@ -73,36 +73,36 @@ function b(e) {
   }, [S, T]);
   if (null == t) return (0, r.jsx)(a.sNh, {
     id: "share-your-screen",
-    label: v.NW.string(v.t.fjBNo6),
+    label: b.NW.string(b.t.fjBNo6),
     icon: a.hGI,
     action: n
   });
   let M = _.isPlatformEmbedded ? (0, r.jsx)(a.sNh, {
       id: "stream-settings",
-      label: v.NW.string(v.t.ytAD9f),
+      label: b.NW.string(b.t.ytAD9f),
       children: R
     }) : null,
     k = D ? (0, r.jsx)(a.S89, {
       id: "stream-settings-audio-enable",
-      label: O ? v.NW.string(v.t.af2Tw8) : v.NW.string(v.t.ZJEHt7),
+      label: O ? b.NW.string(b.t.af2Tw8) : b.NW.string(b.t.ZJEHt7),
       checked: T,
       action: x
     }) : null,
     j = N && !y ? (0, r.jsx)(a.sNh, {
       id: "change-windows",
-      label: O ? v.NW.string(v.t.eAktHh) : v.NW.string(v.t.qntSam),
+      label: O ? b.NW.string(b.t.eAktHh) : b.NW.string(b.t.qntSam),
       icon: a.hGI,
       action: L
     }) : null,
     U = (0, r.jsx)(a.sNh, {
       id: "stop-streaming",
-      label: v.NW.string(v.t.S5anIS),
+      label: b.NW.string(b.t.S5anIS),
       icon: a.g5r,
       action: () => (0, c.Z)(t)
     });
   return O ? (0, r.jsxs)(r.Fragment, {
     children: [U, j, M, k]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [M, b ? P : null, k, j, U]
+    children: [M, v ? P : null, k, j, U]
   })
 }

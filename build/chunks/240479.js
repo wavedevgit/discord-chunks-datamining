@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(430824),
   g = n(197115),
   E = n(125900),
-  v = n(767434),
-  b = n(474936),
+  b = n(767434),
+  v = n(474936),
   y = n(981631),
   O = n(710111),
   I = n(388032),
@@ -36,18 +36,18 @@ function T(e) {
       await c.Z.joinGuild(t), c.Z.transitionToGuildSync(t)
     } catch (e) {}
   }, [n, t]);
-  return o === v.y.GET_NITRO ? (0, r.jsx)(g.Z, {
+  return o === b.y.GET_NITRO ? (0, r.jsx)(g.Z, {
     fullWidth: !0,
     showGradient: !0,
     premiumModalAnalyticsLocation: {
       section: y.jXE.PREMIUM_SOUNDMOJI_GUILD_INFO_POPOUT
     },
-    subscriptionTier: b.Si.TIER_2,
+    subscriptionTier: v.Si.TIER_2,
     size: l.zxk.Sizes.SMALL,
     color: l.zxk.Colors.CUSTOM,
     onClick: n,
     buttonText: I.NW.string(I.t.pj0XBA)
-  }) : o === v.y.JOIN_GUILD ? (0, r.jsx)(l.zxk, {
+  }) : o === b.y.JOIN_GUILD ? (0, r.jsx)(l.zxk, {
     size: l.zxk.Sizes.SMALL,
     fullWidth: !0,
     onClick: a,
@@ -61,9 +61,9 @@ function N(e) {
     channel: n,
     closePopout: c,
     refreshPosition: g
-  } = e, b = t.guildId === O.X8, y = (0, s.e7)([m.Z], () => m.Z.getGuild(t.guildId)), N = !b && null != y, [A, C] = i.useState(), R = (0, E.V2)({
+  } = e, v = t.guildId === O.X8, y = (0, s.e7)([m.Z], () => m.Z.getGuild(t.guildId)), N = !v && null != y, [A, C] = i.useState(), R = (0, E.V2)({
     location: "SoundmojiGuildInfo"
-  }), P = b || N || null != A || !R, [w, D] = i.useState(!P);
+  }), P = v || N || null != A || !R, [w, D] = i.useState(!P);
   i.useEffect(() => {
     !P && (D(!0), (0, _.xU)(t.soundId, t.guildId).then(e => {
       C(e)
@@ -74,7 +74,7 @@ function N(e) {
   let {
     buttonType: L,
     description: x
-  } = (0, v.Z)(t, n, N, A), M = L === v.y.JOIN_GUILD, k = !b && w, j = i.useMemo(() => N ? u.JO.createFromGuildRecord(y) : null != A ? u.JO.createFromDiscoverableGuild(A) : void 0, [y, N, A]);
+  } = (0, b.Z)(t, n, N, A), M = L === b.y.JOIN_GUILD, k = !v && w, j = i.useMemo(() => N ? u.JO.createFromGuildRecord(y) : null != A ? u.JO.createFromDiscoverableGuild(A) : void 0, [y, N, A]);
   return k ? (0, r.jsx)(f.SE, {}) : (0, r.jsxs)("div", {
     className: S.infoContainer,
     children: [(0, r.jsxs)(f.W_, {

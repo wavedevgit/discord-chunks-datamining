@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(681837),
   g = n(91433),
   E = n(944043),
-  v = n(502762),
-  b = n(530),
+  b = n(502762),
+  v = n(530),
   y = n(827313),
   O = n(420654),
   I = n(116854),
@@ -48,11 +48,11 @@ function R(e) {
     originApplicationId: c.Z.getOriginApplicationId(t.id)
   })), U = (0, s.vh)(t.id), G = (0, a.wn)({
     location: "UserProfilePopoutBody"
-  }), B = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), V = t.id === n.id, F = (0, f.I5)(n);
+  }), B = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), F = t.id === n.id, V = (0, f.I5)(n);
   return (0, r.jsxs)(o.Ttm, {
     fade: !0,
     className: C.body,
-    children: [(0, r.jsx)(b.Z, {
+    children: [(0, r.jsx)(v.Z, {
       user: t,
       profileType: N.y0.BITE_SIZE,
       onOpenProfile: D,
@@ -76,14 +76,14 @@ function R(e) {
           onOpenProfile: D
         })]
       })
-    }), k === A.OGo.PENDING_INCOMING && (0, r.jsx)(v.Z.Overlay, {
+    }), k === A.OGo.PENDING_INCOMING && (0, r.jsx)(b.Z.Overlay, {
       children: (0, r.jsx)(g.Z, {
         user: t,
         guildId: null == P ? void 0 : P.id,
         channelId: L,
         applicationId: G ? j : void 0
       })
-    }), G && U.map(e => (0, r.jsx)(v.Z.Overlay, {
+    }), G && U.map(e => (0, r.jsx)(b.Z.Overlay, {
       children: (0, r.jsx)(g.Z, {
         user: t,
         isGameRelationship: !0,
@@ -93,7 +93,7 @@ function R(e) {
     }, e.applicationId)), (0, r.jsx)(E.Z, {
       user: t,
       source: E.t.POPOUT
-    }), !V && (0, r.jsx)(T.Z, {
+    }), !F && (0, r.jsx)(T.Z, {
       user: t,
       onOpenProfile: e => null == D ? void 0 : D({
         section: e
@@ -106,8 +106,8 @@ function R(e) {
       bio: null == R ? void 0 : R.bio,
       hidePersonalInformation: B,
       onClose: x
-    }), V && (0, r.jsx)(p.Z, {
-      isPremiumUser: F,
+    }), F && (0, r.jsx)(p.Z, {
+      isPremiumUser: V,
       onInteraction: x,
       className: C.upsell
     }), (0, r.jsx)(h.Z, {

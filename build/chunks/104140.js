@@ -19,7 +19,7 @@ var r, i = n(200651),
   g = n(540059),
   E = n(604280);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -28,14 +28,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -138,17 +138,17 @@ let T = 108e5,
 function B(e, t) {
   let n = "".concat(e, "-").concat(t);
   if (G.has(n)) return G.get(n);
-  let r = V(e, t);
+  let r = F(e, t);
   return G.set(n, r), r
 }
 
-function V(e, t) {
+function F(e, t) {
   return U ? (0, l.interpolate)(j(e), k(t), {
     maxSegmentLength: 1.5
-  }) : F
+  }) : V
 }
 
-function F(e) {
+function V(e) {
   return e.toString()
 }
 class Z extends o.Component {
@@ -180,7 +180,7 @@ class Z extends o.Component {
     })
   }
   constructor(...e) {
-    super(...e), v(this, "timeoutId", void 0)
+    super(...e), b(this, "timeoutId", void 0)
   }
 }
 
@@ -210,7 +210,7 @@ function W(e) {
     u = L(l),
     d = x(u),
     f = M(s);
-  return s ? (0, i.jsx)(K, O(b({}, a), {
+  return s ? (0, i.jsx)(K, O(v({}, a), {
     rounded: o,
     isVisualRefreshEnabled: !0,
     baseViewBoxSize: c,
@@ -220,7 +220,7 @@ function W(e) {
     selected: t,
     lowerBadgeSize: n,
     highlight: r
-  })) : (0, i.jsx)(Y, O(b({}, a), {
+  })) : (0, i.jsx)(Y, O(v({}, a), {
     selected: t,
     lowerBadgeSize: n,
     highlight: r,
@@ -378,9 +378,9 @@ class Y extends o.Component {
       badgeMaskSize: p,
       badgeMaskStroke: m,
       isVisualRefreshEnabled: g,
-      isFolder: v
+      isFolder: b
     } = this.props, {
-      maskId: b,
+      maskId: v,
       lowerBadgeMask: y,
       upperBadgeMask: O,
       focused: I,
@@ -411,11 +411,11 @@ class Y extends o.Component {
         }, "foreign-object")
       }, "svg")
     }, "wrapper");
-    let N = "".concat(b, "-upper_badge_masks"),
-      R = "".concat(b, "-lower_badge_masks"),
-      P = "".concat(b, "-blob_mask"),
-      w = "".concat(b, "-stroke_mask"),
-      D = "".concat(b, "-highlight_mask"),
+    let N = "".concat(v, "-upper_badge_masks"),
+      R = "".concat(v, "-lower_badge_masks"),
+      P = "".concat(v, "-blob_mask"),
+      w = "".concat(v, "-stroke_mask"),
+      D = "".concat(v, "-highlight_mask"),
       L = (null == a ? void 0 : a.width) != null ? a.width : A,
       x = (null == a ? void 0 : a.height) != null ? a.height : A,
       M = {
@@ -424,7 +424,7 @@ class Y extends o.Component {
         x: g ? -4 : 0,
         y: g ? -4 : 0
       },
-      k = g && v ? 20 : p;
+      k = g && b ? 20 : p;
     return (0, i.jsxs)("div", {
       className: s()(t, E.wrapper),
       style: l,
@@ -465,7 +465,7 @@ class Y extends o.Component {
             transform: this.getBadgePositionInterpolation(y, 1, L + m)
           }) : null]
         }), (0, i.jsxs)("mask", {
-          id: b,
+          id: v,
           fill: "black",
           x: 0,
           y: 0,
@@ -526,7 +526,7 @@ class Y extends o.Component {
           className: E.highlight,
           mask: "url(#".concat(w, ")")
         }), (0, i.jsx)("foreignObject", {
-          mask: "url(#".concat(b, ")"),
+          mask: "url(#".concat(v, ")"),
           x: 0,
           y: 0,
           className: n,
@@ -549,20 +549,20 @@ class Y extends o.Component {
     }, "wrapper")
   }
   constructor(...e) {
-    super(...e), v(this, "timeout", new p.V7), v(this, "state", {
+    super(...e), b(this, "timeout", new p.V7), b(this, "state", {
       renderComplex: !1,
       hasRenderedBadge: !1,
       maskId: (0, f.Z)(),
       focused: !1
-    }), v(this, "interpolator", B(this.props.baseViewBoxSize, this.props.viewBoxSize)), v(this, "handleTimeout", () => {
+    }), b(this, "interpolator", B(this.props.baseViewBoxSize, this.props.viewBoxSize)), b(this, "handleTimeout", () => {
       this.timeout.stop(), this.setState({
         renderComplex: !1
       })
-    }), v(this, "handleFocus", () => {
+    }), b(this, "handleFocus", () => {
       this.setState({
         focused: !0
       })
-    }), v(this, "handleBlur", () => {
+    }), b(this, "handleBlur", () => {
       this.setState({
         focused: !1
       })
@@ -585,10 +585,10 @@ function K(e) {
     upperBadge: h,
     lowerBadge: m,
     rounded: g = !1
-  } = e, [v, b] = o.useState(!1), y = () => {
-    b(!0)
+  } = e, [b, v] = o.useState(!1), y = () => {
+    v(!0)
   }, O = () => {
-    b(!1)
+    v(!1)
   }, I = null != h, S = null != m, T = o.useId(), N = "".concat(T, "-upper_badge_masks"), R = "".concat(T, "-lower_badge_masks"), P = "".concat(T, "-blob_mask"), w = "".concat(T, "-stroke_mask"), D = "".concat(T, "-highlight_mask"), L = (null == u ? void 0 : u.width) != null ? u.width : A, x = (null == u ? void 0 : u.height) != null ? u.height : A, M = {
     width: n + 8,
     height: n + 8,
@@ -672,7 +672,7 @@ function K(e) {
           href: "#".concat(R),
           fill: "black"
         }) : null]
-      }) : null, v ? (0, i.jsxs)(i.Fragment, {
+      }) : null, b ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("g", {
           className: E.focusStroke,
           mask: "url(#".concat(w, ")"),

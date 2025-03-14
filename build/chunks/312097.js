@@ -59,21 +59,21 @@ function h(e) {
     } = e,
     g = _(e, ["location", "contextKey"]);
   let E = (0, o.Kc)(h),
-    v = null === (d = g.items[null !== (p = g.startingIndex) && void 0 !== p ? p : 0]) || void 0 === d ? void 0 : null === (t = d.sourceMetadata) || void 0 === t ? void 0 : t.message,
-    b = a.Z.getChannel(null == v ? void 0 : v.channel_id);
+    b = null === (d = g.items[null !== (p = g.startingIndex) && void 0 !== p ? p : 0]) || void 0 === d ? void 0 : null === (t = d.sourceMetadata) || void 0 === t ? void 0 : t.message,
+    v = a.Z.getChannel(null == b ? void 0 : b.channel_id);
   (0, l.fS)({
-    guildId: null == b ? void 0 : b.guild_id,
-    channelId: null == b ? void 0 : b.id,
-    channelType: null == b ? void 0 : b.type,
+    guildId: null == v ? void 0 : v.guild_id,
+    channelId: null == v ? void 0 : v.id,
+    channelType: null == v ? void 0 : v.type,
     numMediaItems: g.items.length,
     source: h,
     hasMediaOptions: !g.shouldHideMediaOptions
   }), s.default.track(c.rMx.OPEN_MODAL, {
     type: c.jXE.MEDIA_VIEWER,
     source: h,
-    guild_id: null == b ? void 0 : b.guild_id,
-    channel_id: null == b ? void 0 : b.id,
-    channel_type: null == b ? void 0 : b.type
+    guild_id: null == v ? void 0 : v.guild_id,
+    channel_id: null == v ? void 0 : v.id,
+    channel_type: null == v ? void 0 : v.type
   }), (0, i.ZDy)(async () => {
     let {
       default: e

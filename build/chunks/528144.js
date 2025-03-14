@@ -71,7 +71,7 @@ let _ = Object.freeze({
       onContextMenu: m,
       style: g,
       title: E,
-      uppercase: v
+      uppercase: b
     } = e;
     return (0, r.jsx)(a.H, {
       role: null != h ? "button" : void 0,
@@ -83,7 +83,7 @@ let _ = Object.freeze({
         [l]: !0,
         [s.selectable]: c,
         [s.muted]: n,
-        [s.uppercase]: v
+        [s.uppercase]: b
       }),
       title: E,
       style: null != p ? f(u({}, g), {

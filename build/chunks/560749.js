@@ -1,6 +1,6 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => O
+  Z: () => I
 }), n(301563), n(653041), n(47120), n(308318), n(230036);
 var r = n(200651),
   l = n(192379),
@@ -15,15 +15,15 @@ var r = n(200651),
   m = n(592125),
   h = n(580005),
   x = n(984933),
-  g = n(430824),
-  p = n(496675),
+  p = n(430824),
+  g = n(496675),
   _ = n(914010),
   v = n(594174),
   j = n(938475),
   b = n(823379),
-  C = n(102172),
-  N = n(981631),
-  S = n(889150),
+  S = n(102172),
+  C = n(981631),
+  N = n(889150),
   y = n(388032),
   Z = n(358476);
 
@@ -31,7 +31,7 @@ function w(e) {
   let {
     result: t,
     onSelectChannel: n
-  } = e, l = (0, i.e7)([g.Z], () => g.Z.getGuild(t.record.guild_id)), o = (0, i.Wu)([j.ZP, v.default], () => j.ZP.getVoiceStatesForChannel(t.record).map(e => v.default.getUser(e.user.id)).filter(b.lm));
+  } = e, l = (0, i.e7)([p.Z], () => p.Z.getGuild(t.record.guild_id)), o = (0, i.Wu)([j.ZP, v.default], () => j.ZP.getVoiceStatesForChannel(t.record).map(e => v.default.getUser(e.user.id)).filter(b.lm));
   return (0, r.jsxs)(s.P3F, {
     className: Z.channelResult,
     onClick: () => n(t.record.id),
@@ -63,7 +63,7 @@ function w(e) {
   })
 }
 
-function O(e) {
+function I(e) {
   let {
     onSelectChannel: t
   } = e, {
@@ -74,29 +74,29 @@ function O(e) {
     searchOptions: {
       frecencyBoosters: !0
     }
-  }), j = (0, i.Wu)([_.Z, x.ZP, m.Z, g.Z, p.Z], () => {
+  }), j = (0, i.Wu)([_.Z, x.ZP, m.Z, p.Z, g.Z], () => {
     let e = [],
       t = _.Z.getGuildId();
     if (null == t) return e;
     for (let n of x.ZP.getVocalChannelIds(t)) {
       let t = m.Z.getChannel(n);
-      null != t && (0, C.JL)(t, g.Z, p.Z) && e.push(t)
+      null != t && (0, S.JL)(t, p.Z, g.Z) && e.push(t)
     }
     return e
-  }), O = (0, i.Wu)([d.Z, m.Z, h.Z, g.Z, p.Z], () => {
+  }), I = (0, i.Wu)([d.Z, m.Z, h.Z, p.Z, g.Z], () => {
     let e = [],
       t = new Set;
     for (let n of d.Z.getChannelHistory()) {
       let r = m.Z.getChannel(n);
-      (null == r ? void 0 : r.type) === N.d4z.GUILD_VOICE && (0, C.JL)(r, g.Z, p.Z) && (t.add(r.id), e.push(r))
+      (null == r ? void 0 : r.type) === C.d4z.GUILD_VOICE && (0, S.JL)(r, p.Z, g.Z) && (t.add(r.id), e.push(r))
     }
-    for (let n of h.Z.getFrequentlyWithoutFetchingLatest()) n instanceof f.Sf && n.type === N.d4z.GUILD_VOICE && !t.has(n.id) && (0, C.JL)(n, g.Z, p.Z) && (t.add(n.id), e.push(n));
+    for (let n of h.Z.getFrequentlyWithoutFetchingLatest()) n instanceof f.Sf && n.type === C.d4z.GUILD_VOICE && !t.has(n.id) && (0, S.JL)(n, p.Z, g.Z) && (t.add(n.id), e.push(n));
     return e
-  }), I = l.useMemo(() => {
-    let e = new Set(O.map(e => e.id)),
+  }), T = l.useMemo(() => {
+    let e = new Set(I.map(e => e.id)),
       t = new Set(j.map(e => e.id));
-    return [...j.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? -1 : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, a.Z)(e.id)).filter(b.lm), ...O.filter(e => !t.has(e.id)).map(e => (0, a.Z)(e.id)).filter(b.lm)]
-  }, [O, j]), P = "" !== c ? v : I;
+    return [...j.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? -1 : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, a.Z)(e.id)).filter(b.lm), ...I.filter(e => !t.has(e.id)).map(e => (0, a.Z)(e.id)).filter(b.lm)]
+  }, [I, j]), E = "" !== c ? v : T;
   return (0, r.jsxs)("div", {
     className: Z.root,
     children: [(0, r.jsx)(s.E1j, {
@@ -113,26 +113,46 @@ function O(e) {
         resultTypes: [o.h8.VOICE_CHANNEL]
       }),
       autoFocus: !0
-    }), (0, r.jsx)(s.aVo, {
+    }), E.length > 0 ? (0, r.jsx)(s.aVo, {
       renderListHeader: function() {
         return (0, r.jsx)(s.Text, {
           variant: "text-xs/semibold",
           color: "text-muted",
-          children: y.NW.string(S.Z.FZ9Fl5)
+          children: y.NW.string(N.Z.FZ9Fl5)
         })
       },
-      sections: [P.length],
+      sections: [E.length],
       sectionHeight: 0,
       rowHeight: 48,
       renderRow: function(e) {
         let {
           rowIndex: n
-        } = e, l = P[n];
+        } = e, l = E[n];
         return (0, r.jsx)(w, {
           result: l,
           onSelectChannel: t
         }, l.record.id)
       }
+    }) : (0, r.jsx)(O, {})]
+  })
+}
+
+function O() {
+  return (0, r.jsxs)("div", {
+    className: Z.emptyState,
+    children: [(0, r.jsx)(s._Ve, {
+      className: Z.emptyIcon,
+      size: "md",
+      color: s.TVs.colors.ICON_MUTED
+    }), (0, r.jsx)(s.Text, {
+      className: Z.emptyHeader,
+      variant: "text-lg/medium",
+      color: "header-primary",
+      children: y.NW.string(N.Z.sWGfr6)
+    }), (0, r.jsx)(s.Text, {
+      variant: "text-sm/medium",
+      color: "text-secondary",
+      children: y.NW.string(N.Z.nBRtt7)
     })]
   })
 }

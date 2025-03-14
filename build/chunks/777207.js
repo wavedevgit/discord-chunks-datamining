@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  x: () => v
+  x: () => b
 }), n(977457);
 var r = n(200651),
   i = n(192379),
@@ -70,7 +70,7 @@ function g(e, t) {
   return i
 }
 let E = Object.fromEntries(Object.keys(c.Z.colors).map(e => [l()(e), e])),
-  v = i.forwardRef(function(e, t) {
+  b = i.forwardRef(function(e, t) {
     let n;
     var i, {
         variant: o,
@@ -79,8 +79,8 @@ let E = Object.fromEntries(Object.keys(c.Z.colors).map(e => [l()(e), e])),
         className: f,
         lineClamp: p,
         color: g,
-        tabularNumbers: v = !1,
-        scaleFontToUserSetting: b = !1
+        tabularNumbers: b = !1,
+        scaleFontToUserSetting: v = !1
       } = e,
       y = m(e, ["variant", "tag", "selectable", "className", "lineClamp", "color", "tabularNumbers", "scaleFontToUserSetting"]);
     let O = s,
@@ -110,8 +110,8 @@ let E = Object.fromEntries(Object.keys(c.Z.colors).map(e => [l()(e), e])),
       className: a()({
         [u.defaultColor]: void 0 === g,
         [u.selectable]: l,
-        [u.tabularNumbers]: v,
-        [d.fontScaling]: b
+        [u.tabularNumbers]: b,
+        [d.fontScaling]: v
       }, I, d[o], f)
     }, y), {
       style: Object.values(T).filter(Boolean).length > 0 ? T : void 0,

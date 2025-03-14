@@ -1,4 +1,4 @@
-/** Chunk was on 30806 **/
+/** Chunk was on 3849 **/
 n.d(t, {
   Z: () => E
 });
@@ -24,9 +24,9 @@ function E(e) {
     guildId: n,
     role: l,
     theme: E,
-    content: m = v.NW.string(v.t["6OSasb"]),
-    className: O
-  } = e, S = (0, s.e7)([f.default], () => f.default.getCurrentUser()), _ = p.ZP.useName(n, null, S), b = (0, u.Kz)(l), I = r.useMemo(() => {
+    content: _ = v.NW.string(v.t["6OSasb"]),
+    className: S
+  } = e, m = (0, s.e7)([f.default], () => f.default.getCurrentUser()), O = p.ZP.useName(n, null, m), I = (0, u.Kz)(l), y = r.useMemo(() => {
     var e, t;
     return (0, d.e5)((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -47,12 +47,12 @@ function E(e) {
       return e
     }({}, (0, c.ZP)({
       channelId: "0",
-      content: m,
+      content: _,
       tts: void 0,
       type: void 0,
       messageReference: void 0,
       allowedMentions: void 0,
-      author: S
+      author: m
     })), t = t = {
       state: g.yb.SENT,
       id: "0"
@@ -66,19 +66,19 @@ function E(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [S, m]), y = {
-    nick: _,
+  }, [m, _]), b = {
+    nick: O,
     colorString: null !== (t = l.colorString) && void 0 !== t ? t : void 0
   };
   return (0, i.jsx)(a.f6W, {
     theme: E,
     children: e => (0, i.jsx)("div", {
-      className: o()(e, C.container, O),
+      className: o()(e, C.container, S),
       children: (0, i.jsx)(h.Z, {
         hideTimestamp: !0,
-        author: y,
-        roleIcon: b,
-        message: I,
+        author: b,
+        roleIcon: I,
+        message: y,
         isGroupStart: !0,
         disableInteraction: !0
       })

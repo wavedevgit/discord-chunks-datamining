@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => b
+  Z: () => v
 }), n(47120);
 var i, o = n(392711),
   a = n.n(o),
@@ -70,7 +70,7 @@ function E(e) {
   } = e;
   delete p(t)[n]
 }
-class v extends(i = s.ZP.Store) {
+class b extends(i = s.ZP.Store) {
   isFetching(e, t) {
     return null != f[_(e, t)]
   }
@@ -84,8 +84,8 @@ class v extends(i = s.ZP.Store) {
     return r
   }
 }
-u(v, "displayName", "WebhooksStore");
-let b = new v(l.Z, {
+u(b, "displayName", "WebhooksStore");
+let v = new b(l.Z, {
   WEBHOOKS_UPDATE: h,
   WEBHOOKS_FETCHING: m,
   WEBHOOK_CREATE: g,

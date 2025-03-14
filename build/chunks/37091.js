@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => v
 });
 var r, i = n(442837),
   o = n(570140);
@@ -102,7 +102,7 @@ function E(e) {
   } = e, o = null !== (t = f[i]) && void 0 !== t ? t : {};
   delete o[n], delete o[r]
 }
-class v extends(r = i.ZP.DeviceSettingsStore) {
+class b extends(r = i.ZP.DeviceSettingsStore) {
   initialize() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : u;
     _ = e.enabled
@@ -124,8 +124,8 @@ class v extends(r = i.ZP.DeviceSettingsStore) {
     }
   }
 }
-a(v, "persistKey", "HighFiveStore");
-let b = new v(o.Z, {
+a(b, "persistKey", "HighFiveStore");
+let v = new b(o.Z, {
   HIGH_FIVE_QUEUE: p,
   HIGH_FIVE_REMOVE: h,
   HIGH_FIVE_SET_ENABLED: m,

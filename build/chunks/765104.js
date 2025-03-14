@@ -15,8 +15,8 @@ var s, l = n(392711),
   m = n(592125),
   g = n(430824),
   E = n(306680),
-  v = n(944486),
-  b = n(9156),
+  b = n(944486),
+  v = n(9156),
   y = n(594174),
   O = n(70956),
   I = n(709054),
@@ -79,7 +79,7 @@ let P = {},
 function B() {
   k = h.Z.getProps().results.filter(e => e.type === _.h8.TEXT_CHANNEL && 0 === e.record.type).map(e => e.record.id)
 }
-class V extends(s = u.ZP.PersistedStore) {
+class F extends(s = u.ZP.PersistedStore) {
   getState() {
     return {
       shouldShowTopicsBar: r
@@ -87,7 +87,7 @@ class V extends(s = u.ZP.PersistedStore) {
   }
   initialize(e) {
     var t;
-    r = null === (t = null == e ? void 0 : e.shouldShowTopicsBar) || void 0 === t || t, this.waitFor(m.Z, y.default, v.Z, g.Z, p.Z), this.syncWith([h.Z], B)
+    r = null === (t = null == e ? void 0 : e.shouldShowTopicsBar) || void 0 === t || t, this.waitFor(m.Z, y.default, b.Z, g.Z, p.Z), this.syncWith([h.Z], B)
   }
   allSummaries() {
     return P
@@ -153,7 +153,7 @@ class V extends(s = u.ZP.PersistedStore) {
     } = e, o = [];
     return t && (o = o.concat(k)), n && (o = o.concat(L.map(e => e.channel_id))), r && (o = o.filter(e => {
       let t = m.Z.getChannel(e);
-      return null != t && !b.ZP.isChannelMuted(t.guild_id, e) && E.ZP.hasUnread(e)
+      return null != t && !v.ZP.isChannelMuted(t.guild_id, e) && E.ZP.hasUnread(e)
     })), (o = o.filter(e => {
       let t = m.Z.getChannel(e);
       return (0, f.Lp)(t, !1, !1)
@@ -164,12 +164,12 @@ class V extends(s = u.ZP.PersistedStore) {
   }
 }
 
-function F(e, t, n, r) {
+function V(e, t, n, r) {
   let i = null == t || t < n;
   return !(null == e || e > r) && !i
 }
-N(V, "persistKey", "SummaryStore");
-let Z = new V(d.Z, {
+N(F, "persistKey", "SummaryStore");
+let Z = new F(d.Z, {
   CONNECTION_OPEN: () => !1,
   CHANNEL_SELECT(e) {
     let {
@@ -256,14 +256,14 @@ let Z = new V(d.Z, {
     }
   },
   UPDATE_VISIBLE_MESSAGES(e) {
-    let t = v.Z.getChannelId();
+    let t = b.Z.getChannelId();
     if (null != t) {
       if (null != i && i.channelId === t && null != i.summaryId) {
         let e = P[i.channelId];
         o = null == e ? void 0 : e.findIndex(e => e.id === (null == i ? void 0 : i.summaryId))
       } else {
         var n;
-        o = null === (n = P[t]) || void 0 === n ? void 0 : n.findIndex(t => F(e.topVisibleMessage, e.bottomVisibleMessage, t.startId, t.endId))
+        o = null === (n = P[t]) || void 0 === n ? void 0 : n.findIndex(t => V(e.topVisibleMessage, e.bottomVisibleMessage, t.startId, t.endId))
       }
     }
   },

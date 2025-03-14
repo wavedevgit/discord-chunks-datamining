@@ -43,7 +43,7 @@ var E = function(e) {
   return e.EMBED = "embed", e.ATTACHMENT = "attachment", e
 }({});
 
-function v(e) {
+function b(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : a.x4.getSetting();
   if (!t) return [];
   let n = null == e ? void 0 : e.attachments;
@@ -87,8 +87,8 @@ function v(e) {
   }).filter(d.lm)
 }
 
-function b(e) {
-  return v(e, a.x4.useSetting())
+function v(e) {
+  return b(e, a.x4.useSetting())
 }
 
 function y(e, t) {
@@ -137,18 +137,18 @@ function O(e, t) {
 }
 
 function I(e, t) {
-  return [...b(e), ...y(e, t)]
+  return [...v(e), ...y(e, t)]
 }
 
 function S(e, t) {
   var n, r;
-  let i = b(e),
+  let i = v(e),
     o = y(e, t);
   return null !== (r = null !== (n = i[0]) && void 0 !== n ? n : o[0]) && void 0 !== r ? r : null
 }
 
 function T(e, t) {
-  let n = b(e),
+  let n = v(e),
     r = y(e, t);
   return null == n[0] && null != r[0]
 }

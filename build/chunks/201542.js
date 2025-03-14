@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(347312),
   g = n(981631),
   E = n(388032),
-  v = n(667259);
-let b = i.lazy(() => n.e("89792").then(n.bind(n, 711635)));
+  b = n(667259);
+let v = i.lazy(() => n.e("89792").then(n.bind(n, 711635)));
 
 function y(e) {
   let {
@@ -30,7 +30,7 @@ function y(e) {
   } = e, o = null == n ? "--:--" : t ? (0, d.yv)(Math.ceil(n - i)) : (0, d.yv)(Math.ceil(n));
   return (0, r.jsx)(l.Text, {
     variant: "text-sm/normal",
-    className: v.duration,
+    className: b.duration,
     tabularNumbers: !0,
     children: o
   })
@@ -86,7 +86,7 @@ let S = i.memo(function(e) {
     [M, k] = i.useState(!1),
     [j, U] = i.useState(!1),
     [G, B] = i.useState(!1),
-    [V, F] = i.useState(!1),
+    [F, V] = i.useState(!1),
     [Z, H] = i.useState("none"),
     [W, Y] = i.useState(() => "function" == typeof o ? o() : o),
     K = i.useRef(void 0),
@@ -102,7 +102,7 @@ let S = i.memo(function(e) {
     }, []),
     X = i.useCallback(() => {
       U(!1), null == K.current && (K.current = setTimeout(() => {
-        F(!1), K.current = void 0
+        V(!1), K.current = void 0
       }, 500))
     }, []),
     J = i.useCallback(() => {
@@ -131,14 +131,14 @@ let S = i.memo(function(e) {
       let t = P.current;
       if (null == L || null == t) return;
       let n = e * L;
-      D(n), t.currentTime = n, F(!0), clearTimeout(K.current), K.current = void 0
+      D(n), t.currentTime = n, V(!0), clearTimeout(K.current), K.current = void 0
     }, [L]);
   i.useEffect(() => {
-    !V && j && F(!0)
-  }, [j, V]);
+    !F && j && V(!0)
+  }, [j, F]);
   let eo = i.useRef(null),
     ea = {
-      played: V,
+      played: F,
       currentTime: w,
       onPause: C,
       onPlay: A
@@ -168,9 +168,9 @@ let S = i.memo(function(e) {
   let el = j ? l.fpf : l.o1U,
     ec = j ? E.NW.string(E.t.ZcgDJS) : E.NW.string(E.t.RscU7O);
   "Safari" === platform.name ? t = (0, r.jsx)(i.Suspense, {
-    children: (0, r.jsx)(b, {
+    children: (0, r.jsx)(v, {
       ref: P,
-      className: v.audioElement,
+      className: b.audioElement,
       src: n,
       preload: Z,
       playing: j && !G,
@@ -182,7 +182,7 @@ let S = i.memo(function(e) {
     })
   }) : t = (0, r.jsx)(u.Z, {
     ref: P,
-    className: v.audioElement,
+    className: b.audioElement,
     controls: !1,
     preload: Z,
     onEnded: J,
@@ -200,24 +200,24 @@ let S = i.memo(function(e) {
       enabled: ed
     } = (0, l.bWb)();
   return (0, r.jsxs)("div", {
-    className: a()(v.container, {
-      [v.playing]: j
+    className: a()(b.container, {
+      [b.playing]: j
     }),
     onMouseEnter: q,
     children: [(0, r.jsx)("div", {
-      className: v.rippleContainer,
+      className: b.rippleContainer,
       children: (0, r.jsx)("div", {
-        className: a()(v.ripple, {
-          [v.reducedMotion]: eu
+        className: a()(b.ripple, {
+          [b.reducedMotion]: eu
         })
       })
     }), (0, r.jsx)(l.P3F, {
-      className: v.playButtonContainer,
+      className: b.playButtonContainer,
       onClick: z,
       "aria-label": ec,
       children: (0, r.jsx)(el, {
-        className: a()(v.playIcon, {
-          [v.oldPlayIconSpacing]: !ed && !j
+        className: a()(b.playIcon, {
+          [b.oldPlayIconSpacing]: !ed && !j
         }),
         size: "custom",
         color: "currentColor",
@@ -225,24 +225,24 @@ let S = i.memo(function(e) {
         height: 18
       })
     }), (0, r.jsx)(m.Z, {
-      className: v.waveform,
+      className: b.waveform,
       waveform: g,
       currentTime: w,
       duration: null != L ? L : 1,
       playing: j,
-      played: V,
+      played: F,
       onDrag: ei,
       onDragStart: en,
       onDragEnd: er
     }), (0, r.jsx)(y, {
-      played: V,
+      played: F,
       currentTime: w,
       duration: L
     }), (0, r.jsx)(f.Z, {
-      className: v.volumeButton,
-      iconClassName: v.volumeButtonIcon,
+      className: b.volumeButton,
+      iconClassName: b.volumeButtonIcon,
       iconColor: "currentColor",
-      sliderWrapperClassName: v.volumeSlider,
+      sliderWrapperClassName: b.volumeSlider,
       muted: M,
       value: (0, h.P)(W, 1),
       minValue: 0,

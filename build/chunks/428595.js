@@ -19,8 +19,8 @@ var r = n(392711),
   m = n(444758),
   g = n(723454),
   E = n(772096),
-  v = n(800927),
-  b = n(143223),
+  b = n(800927),
+  v = n(143223),
   y = n(945884),
   O = n(594199),
   I = n(97734),
@@ -96,11 +96,11 @@ function B(e) {
     title: void 0
   }
 }
-let V = e => {
+let F = e => {
     let t = u.Z.getChannel(e);
     return null == t ? void 0 : t.getGuildId()
   },
-  F = e => null != e.guildId ? d.Z.getGuild(e.guildId) : null != e.channelId ? d.Z.getGuild(V(e.channelId)) : null,
+  V = e => null != e.guildId ? d.Z.getGuild(e.guildId) : null != e.channelId ? d.Z.getGuild(F(e.channelId)) : null,
   Z = {
     newline: a().defaultRules.newline,
     paragraph: a().defaultRules.paragraph,
@@ -209,7 +209,7 @@ let V = e => {
           type: "roleMention",
           id: i
         };
-        let o = F(n),
+        let o = V(n),
           a = null != o ? d.Z.getRole(o.id, i) : null;
         return null == a ? {
           type: "text",
@@ -235,7 +235,7 @@ let V = e => {
       requiredFirstCharacters: ["<", "@"],
       match(e, t) {
         let n = /^<@!?(\d+)>|^(@(?:everyone|here|Clyde))/.exec(e);
-        return null != n && ("@Clyde" !== n[0] || (0, s.gJ)(F(t), u.Z.getChannel(t.channelId))) ? n : null
+        return null != n && ("@Clyde" !== n[0] || (0, s.gJ)(V(t), u.Z.getChannel(t.channelId))) ? n : null
       },
       parse(e, t, n) {
         let r, i;
@@ -252,7 +252,7 @@ let V = e => {
           var l;
           r = null !== (l = _.ZP.getNickname(a.getGuildId(), n.channelId, o)) && void 0 !== l ? l : p.ZP.getName(o)
         }
-        null == o && "@Clyde" === e[0] && (0, s.gJ)(F(n), a) && (i = R.fL);
+        null == o && "@Clyde" === e[0] && (0, s.gJ)(V(n), a) && (i = R.fL);
         let c = e[1],
           d = null != c && A.Xyh.test(c.trim()),
           h = d && n.unknownUserMentionPlaceholder ? "@".concat(P.NW.string(P.t.sKdZ6e)) : e[0];
@@ -285,7 +285,7 @@ let V = e => {
     channelOrMessageUrl: m.Z.channelOrMessageUrl,
     mediaPostLink: m.Z.mediaPostLink,
     attachmentLink: h.Z.attachmentLink,
-    shopLink: b.Z.shopLink,
+    shopLink: v.Z.shopLink,
     commandMention: {
       order: a().defaultRules.text.order,
       requiredFirstCharacters: ["<"],
@@ -371,7 +371,7 @@ let V = e => {
       match: e => A.PEY.exec(e),
       parse(e, t, n) {
         var r;
-        let [, i, o] = e, a = (0, S.l)(i), s = (0, S.W)(i, o, null === (r = F(n)) || void 0 === r ? void 0 : r.id);
+        let [, i, o] = e, a = (0, S.l)(i), s = (0, S.W)(i, o, null === (r = V(n)) || void 0 === r ? void 0 : r.id);
 
         function l(e) {
           return null == e ? null : [{
@@ -385,13 +385,13 @@ let V = e => {
           itemContent: l(s),
           itemId: o,
           id: i,
-          guildId: V(n.channelId),
+          guildId: F(n.channelId),
           channelId: i
         }
       }
     },
     heading: g.Z,
-    list: v.Z,
+    list: b.Z,
     subtext: y.Z
   },
   H = (0, N.Z)([Z, I.Z]),

@@ -87,7 +87,7 @@ function t(e) {
       starts: m
     },
     E = [u, h, s, l, c, d, p, _, a, f, o],
-    v = {
+    b = {
       beginKeywords: r,
       keywords: {
         $pattern: n,
@@ -102,7 +102,7 @@ function t(e) {
         endsParent: !0
       }].concat(E)
     };
-  return h.contains = [v, g, m], m.contains = E, _.contains = E, {
+  return h.contains = [b, g, m], m.contains = E, _.contains = E, {
     name: "Clojure",
     aliases: ["clj", "edn"],
     illegal: /\S/,

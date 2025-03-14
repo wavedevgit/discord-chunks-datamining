@@ -28,7 +28,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function v(e) {
   return e
 }
 
-function b(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,7 +53,7 @@ function b(e, t) {
 }
 
 function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -170,7 +170,7 @@ class N extends(r = o.PureComponent) {
       }),
       shouldShow: !0 === o && null != l,
       fixed: !0,
-      renderPopout: e => (c()(null != l, "UserSummaryItem.render - renderPopout: popoutUserId cannot be null"), (0, i.jsx)(_.Z, y(v(y(v({}, this.props), {
+      renderPopout: e => (c()(null != l, "UserSummaryItem.render - renderPopout: popoutUserId cannot be null"), (0, i.jsx)(_.Z, y(b(y(b({}, this.props), {
         user: p && null != d ? d : void 0
       }), e), {
         userId: l,
@@ -179,7 +179,7 @@ class N extends(r = o.PureComponent) {
       onRequestClose: () => this.setState({
         popoutUserId: null
       }),
-      children: n => (0, i.jsxs)("div", y(v({
+      children: n => (0, i.jsxs)("div", y(b({
         className: s()(e, g.container, T(t)),
         ref: this._ref
       }, n), {

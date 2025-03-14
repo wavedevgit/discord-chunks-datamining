@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  v: () => v
+  v: () => b
 }), n(47120);
 var r = n(200651);
 n(192379);
@@ -62,8 +62,8 @@ function E(e) {
     stickers: f,
     uploads: h,
     channel: E,
-    restrictMentions: v,
-    respectCooldown: b,
+    restrictMentions: b,
+    respectCooldown: v,
     userCanUsePremiumMessageLength: y,
     resolve: O
   } = e;
@@ -88,7 +88,7 @@ function E(e) {
     return
   }
   if (null != E) {
-    if (null != E.getGuildId() && b && l.Z.getSlowmodeCooldownGuess(E.id) > 0) {
+    if (null != E.getGuildId() && v && l.Z.getSlowmodeCooldownGuess(E.id) > 0) {
       O({
         valid: !1,
         failureReason: _.zYc.SLOWMODE_COOLDOWN
@@ -102,7 +102,7 @@ function E(e) {
           animation: r
         }
         of d.$) {
-        let i = e(u, E, v);
+        let i = e(u, E, b);
         if (!1 !== i) {
           n({
             analyticsType: t,
@@ -139,7 +139,7 @@ function E(e) {
   })
 }
 
-function v(e) {
+function b(e) {
   let {
     openWarningPopout: t,
     type: n,

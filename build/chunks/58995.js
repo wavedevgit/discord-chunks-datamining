@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(599659),
   g = n(282925),
   E = n(819640),
-  v = n(594174),
-  b = n(70956),
+  b = n(594174),
+  v = n(70956),
   y = n(709054),
   O = n(51144),
   I = n(443603),
@@ -68,7 +68,7 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = b.Z.Millis.DAYS_30;
+let L = v.Z.Millis.DAYS_30;
 
 function x(e) {
   let {
@@ -120,14 +120,14 @@ function M(e) {
     channel: n
   } = e, {
     analyticsLocations: o
-  } = (0, f.ZP)(d.Z.GIFT_BUTTON), [a, u] = i.useState(!1), b = (0, s.e7)([E.Z], () => !(null === E.Z || void 0 === E.Z ? void 0 : E.Z.hasLayers())), R = (0, s.e7)([v.default], () => v.default.getCurrentUser()), w = null != R ? y.default.age(R.id) : 0, M = !t && b && w >= L, {
+  } = (0, f.ZP)(d.Z.GIFT_BUTTON), [a, u] = i.useState(!1), v = (0, s.e7)([E.Z], () => !(null === E.Z || void 0 === E.Z ? void 0 : E.Z.hasLayers())), R = (0, s.e7)([b.default], () => b.default.getCurrentUser()), w = null != R ? y.default.age(R.id) : 0, M = !t && v && w >= L, {
     enabled: k
   } = m.O.useExperiment({
     location: "gift-button"
   }), j = [];
   k && M && j.push(l.z.NITROWEEN_COACHMARKS);
-  let [U, G] = (0, p.US)(j), B = null != U, V = (0, O.Ft)(n), {
-    Component: F,
+  let [U, G] = (0, p.US)(j), B = null != U, F = (0, O.Ft)(n), {
+    Component: V,
     events: Z,
     play: H
   } = (0, c.$)();
@@ -135,7 +135,7 @@ function M(e) {
   let W = () => {
     (0, h.Z)({
       isGift: !0,
-      giftRecipient: null == V ? void 0 : V,
+      giftRecipient: null == F ? void 0 : F,
       giftMessage: N.NW.string(N.t["rX/m/f"]),
       initialPlanId: null,
       analyticsLocations: o,
@@ -170,7 +170,7 @@ function M(e) {
       }
     }, Z), {
       children: (0, r.jsx)(x, {
-        animatedIconComponent: F,
+        animatedIconComponent: V,
         hovered: a,
         isCoachmarkDismissed: !B
       })

@@ -21,8 +21,8 @@ var r = n(200651),
   m = n(40851),
   g = n(198620),
   E = n(29909),
-  v = n(591759),
-  b = n(132748),
+  b = n(591759),
+  v = n(132748),
   y = n(981631),
   O = n(388032),
   I = n(526276);
@@ -91,7 +91,7 @@ function M(e) {
 }
 
 function k(e) {
-  let t = v.Z.toURLSafe(e);
+  let t = b.Z.toURLSafe(e);
   return null != t && M(t) ? (t.searchParams.set("animated", "true"), t.toString()) : e
 }
 class j extends i.PureComponent {
@@ -282,7 +282,7 @@ class U extends i.PureComponent {
       getCoordsMap: this.getCoordsMap,
       onFocus: this.handleFocus,
       onSelect: this.handleSelect,
-      children: (0, r.jsx)(b.Z, {
+      children: (0, r.jsx)(v.Z, {
         desiredItemWidth: 200,
         maxColumns: 8,
         children: this.renderContent

@@ -60,17 +60,17 @@ let m = 1728e5,
     userDiscounts: void 0,
     isFetching: !1
   },
-  v = E;
+  b = E;
 
-function b() {
-  v.isFetching = !0
+function v() {
+  b.isFetching = !0
 }
 
 function y(e) {
   let {
     userTrialOffer: t
   } = e;
-  null != t ? v.userTrialOffers[t.trial_id] = t : N(), v.userOffersLastFetchedAtDate = Date.now(), v.isFetching = !1
+  null != t ? b.userTrialOffers[t.trial_id] = t : N(), b.userOffersLastFetchedAtDate = Date.now(), b.isFetching = !1
 }
 
 function O(e) {
@@ -79,18 +79,18 @@ function O(e) {
     userDiscount: n,
     userDiscountOffer: r
   } = e;
-  null == t && null == n && null == r && N(), null != t ? (v.userTrialOffers[t.trial_id] = t, v.userDiscountOffers = {}) : null != n ? (v.userDiscountOffers[n.discount_id] = n, v.userTrialOffers = {}) : null != r && (v.userDiscountOffers[r.discount_id] = r, v.userTrialOffers = {}), v.userOffersLastFetchedAtDate = Date.now(), v.isFetching = !1
+  null == t && null == n && null == r && N(), null != t ? (b.userTrialOffers[t.trial_id] = t, b.userDiscountOffers = {}) : null != n ? (b.userDiscountOffers[n.discount_id] = n, b.userTrialOffers = {}) : null != r && (b.userDiscountOffers[r.discount_id] = r, b.userTrialOffers = {}), b.userOffersLastFetchedAtDate = Date.now(), b.isFetching = !1
 }
 
 function I() {
-  N(), v.userOffersLastFetchedAtDate = Date.now(), v.isFetching = !1
+  N(), b.userOffersLastFetchedAtDate = Date.now(), b.isFetching = !1
 }
 
 function S(e) {
   let {
     userTrialOffer: t
   } = e;
-  null != t ? v.userTrialOffers[t.trial_id] = t : v.userTrialOffers = {}, v.userOffersLastFetchedAtDate = Date.now()
+  null != t ? b.userTrialOffers[t.trial_id] = t : b.userTrialOffers = {}, b.userOffersLastFetchedAtDate = Date.now()
 }
 
 function T(e) {
@@ -99,21 +99,21 @@ function T(e) {
     userDiscount: n,
     userDiscountOffer: r
   } = e;
-  null != t ? v.userTrialOffers[t.trial_id] = t : v.userTrialOffers = {}, null != n ? v.userDiscountOffers[n.discount_id] = n : null != r ? v.userDiscountOffers[r.discount_id] = r : v.userDiscountOffers = {}, v.userOffersLastFetchedAtDate = Date.now()
+  null != t ? b.userTrialOffers[t.trial_id] = t : b.userTrialOffers = {}, null != n ? b.userDiscountOffers[n.discount_id] = n : null != r ? b.userDiscountOffers[r.discount_id] = r : b.userDiscountOffers = {}, b.userOffersLastFetchedAtDate = Date.now()
 }
 
 function N() {
-  v.userTrialOffers = {}, v.userDiscountOffers = {}, v.userOffersLastFetchedAtDate = void 0, v.userAnnualOfferLastFetchedAtDate = void 0, v.isFetching = !1
+  b.userTrialOffers = {}, b.userDiscountOffers = {}, b.userOffersLastFetchedAtDate = void 0, b.userAnnualOfferLastFetchedAtDate = void 0, b.isFetching = !1
 }
 let A = () => !0;
 
 function C() {
-  return null != u.ZP.getPremiumTypeSubscription() && (v.userDiscountOffers = {}, v.userTrialOffers = {}, !0)
+  return null != u.ZP.getPremiumTypeSubscription() && (b.userDiscountOffers = {}, b.userTrialOffers = {}, !0)
 }
 
 function R() {
   let e = l.default.getCurrentUser();
-  !(0, c.I5)(e) && Object.keys(v.userDiscountOffers).length > 0 && (0, s.T)("UserOfferStore", !0)
+  !(0, c.I5)(e) && Object.keys(b.userDiscountOffers).length > 0 && (0, s.T)("UserOfferStore", !0)
 }
 
 function P() {
@@ -123,77 +123,77 @@ function P() {
   let n = a.Z.getAllRelevantReferralTrialOffers().filter(e => e.user_id === t);
   if (n.length > 0) {
     let e = n[0];
-    return v.userTrialOffers[e.trial_id] = e, !0
+    return b.userTrialOffers[e.trial_id] = e, !0
   }
   return !1
 }
 class w extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    v = null != e ? e : E, this.waitFor(l.default), this.syncWith([l.default], A), this.syncWith([u.ZP], C), this.syncWith([a.Z], P)
+    b = null != e ? e : E, this.waitFor(l.default), this.syncWith([l.default], A), this.syncWith([u.ZP], C), this.syncWith([a.Z], P)
   }
   getUserTrialOffer(e) {
-    if (null !== e) return v.userTrialOffers[e]
+    if (null !== e) return b.userTrialOffers[e]
   }
   getUserDiscountOffer(e) {
-    if (null !== e) return v.userDiscountOffers[e]
+    if (null !== e) return b.userDiscountOffers[e]
   }
   getAnyOfUserTrialOfferId(e) {
     for (let t of e)
-      if (null != v.userTrialOffers[t]) return t;
+      if (null != b.userTrialOffers[t]) return t;
     return null
   }
   hasFetchedOffer() {
-    return null != v.userOffersLastFetchedAtDate
+    return null != b.userOffersLastFetchedAtDate
   }
   shouldFetchOffer() {
     var e;
-    let t = v.userOffersLastFetchedAtDate,
-      n = null !== (e = v.isFetching) && void 0 !== e && e;
+    let t = b.userOffersLastFetchedAtDate,
+      n = null !== (e = b.isFetching) && void 0 !== e && e;
     return null == t ? !n : !n && Date.now() - m > t
   }
   shouldFetchReferralOffer(e) {
     var t;
-    let n = v.userOffersLastFetchedAtDate,
-      r = null !== (t = v.isFetching) && void 0 !== t && t;
+    let n = b.userOffersLastFetchedAtDate,
+      r = null !== (t = b.isFetching) && void 0 !== t && t;
     if (null == n) return !r;
     let i = Date.now() - g > n,
       o = (null != e ? e : 0) > n;
     return !r && (i || o)
   }
   shouldFetchAnnualOffer() {
-    let e = v.userAnnualOfferLastFetchedAtDate;
+    let e = b.userAnnualOfferLastFetchedAtDate;
     return null == e || Date.now() - m > e
   }
   getAlmostExpiringTrialOffers(e) {
     let t = Object.values(d.nG).map(e => e.id),
       n = l.default.getCurrentUser();
-    return (0, c.I5)(n) ? [] : Object.values(v.userTrialOffers).filter(n => t.includes(n.trial_id) && null != n.expires_at && null != n.subscription_trial && e.includes(n.subscription_trial.sku_id) && Date.parse(n.expires_at) < Date.now() + d.ff)
+    return (0, c.I5)(n) ? [] : Object.values(b.userTrialOffers).filter(n => t.includes(n.trial_id) && null != n.expires_at && null != n.subscription_trial && e.includes(n.subscription_trial.sku_id) && Date.parse(n.expires_at) < Date.now() + d.ff)
   }
   getAcknowledgedOffers(e) {
     let t = l.default.getCurrentUser();
-    return (0, c.I5)(t) ? [] : Object.values(v.userTrialOffers).filter(t => e.includes(t.trial_id) && null != t.expires_at)
+    return (0, c.I5)(t) ? [] : Object.values(b.userTrialOffers).filter(t => e.includes(t.trial_id) && null != t.expires_at)
   }
   getUnacknowledgedDiscountOffers() {
     var e;
     let t = l.default.getCurrentUser();
-    return (0, c.I5)(t) ? [] : Object.values(null !== (e = v.userDiscountOffers) && void 0 !== e ? e : {}).filter(e => null == e.expires_at && !d.ee.includes(e.discount_id))
+    return (0, c.I5)(t) ? [] : Object.values(null !== (e = b.userDiscountOffers) && void 0 !== e ? e : {}).filter(e => null == e.expires_at && !d.ee.includes(e.discount_id))
   }
   getUnacknowledgedOffers(e) {
     let t = l.default.getCurrentUser();
-    return (0, c.I5)(t) ? [] : Object.values(v.userTrialOffers).filter(t => e.includes(t.trial_id) && null == t.expires_at)
+    return (0, c.I5)(t) ? [] : Object.values(b.userTrialOffers).filter(t => e.includes(t.trial_id) && null == t.expires_at)
   }
   hasAnyUnexpiredOffer() {
-    return Object.values(v.userTrialOffers).some(e => null == e.expires_at || Date.parse(e.expires_at) > Date.now())
+    return Object.values(b.userTrialOffers).some(e => null == e.expires_at || Date.parse(e.expires_at) > Date.now())
   }
   hasAnyUnexpiredDiscountOffer() {
-    return Object.values(v.userDiscountOffers).some(e => null == e.expires_at || Date.parse(e.expires_at) > Date.now())
+    return Object.values(b.userDiscountOffers).some(e => null == e.expires_at || Date.parse(e.expires_at) > Date.now())
   }
   getReferrer(e) {
     var t;
-    return null == e ? null : null === (t = v.userTrialOffers[e]) || void 0 === t ? void 0 : t.referrer
+    return null == e ? null : null === (t = b.userTrialOffers[e]) || void 0 === t ? void 0 : t.referrer
   }
   getState() {
-    return v
+    return b
   }
   forceReset() {
     N()
@@ -214,7 +214,7 @@ f(w, "displayName", "UserOfferStore"), f(w, "persistKey", "UserOfferStore"), f(w
   }) : e
 }]);
 let D = new w(o.Z, {
-  BILLING_USER_OFFER_FETCH_START: b,
+  BILLING_USER_OFFER_FETCH_START: v,
   BILLING_USER_TRIAL_OFFER_FETCH_SUCCESS: y,
   BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS: S,
   BILLING_USER_OFFER_FETCH_SUCCESS: O,

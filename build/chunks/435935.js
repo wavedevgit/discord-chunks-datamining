@@ -78,12 +78,12 @@ let g = {
     BETWEEN: c.flexJustifyBetween,
     AROUND: c.flexJustifyAround
   },
-  v = {
+  b = {
     NO_WRAP: c.flexNowrap,
     WRAP: c.flexWrap,
     WRAP_REVERSE: c.flexWrapReverse
   },
-  b = {
+  v = {
     START: c.flexAlignStart,
     END: c.flexAlignEnd,
     CENTER: c.flexAlignCenter,
@@ -145,24 +145,24 @@ class I extends(i = a.PureComponent) {
         gutter: g
       } = e,
       E = h(e, ["children", "className", "direction", "justify", "align", "wrap", "shrink", "grow", "basis", "style", "gutter"]),
-      v = f({
+      b = f({
         flexShrink: c,
         flexGrow: d,
         flexBasis: _
       }, m);
     return (0, o.jsx)("div", p(f({
-      style: v,
+      style: b,
       className: l()(u.flex, r, i, a, s, g, n)
     }, E), {
       children: t
     }))
   }
 }
-d(I, "Child", O), d(I, "Direction", g), d(I, "Align", b), d(I, "Justify", E), d(I, "Wrap", v), d(I, "Gutter", y), d(I, "defaultProps", {
+d(I, "Child", O), d(I, "Direction", g), d(I, "Align", v), d(I, "Justify", E), d(I, "Wrap", b), d(I, "Gutter", y), d(I, "defaultProps", {
   direction: g.HORIZONTAL,
   justify: E.START,
-  align: b.STRETCH,
-  wrap: v.WRAP,
+  align: v.STRETCH,
+  wrap: b.WRAP,
   shrink: 1,
   grow: 1,
   basis: "auto",

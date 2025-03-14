@@ -36,7 +36,7 @@ let T = (0, i.memo)(function(e) {
   } = (0, p.Z)(), B = (0, h.ZP)(), H = (0, E.B6)(null === (t = A.userStatus) || void 0 === t ? void 0 : t.claimedAt, {
     month: "numeric",
     day: "numeric"
-  }), F = null !== (P = null === (n = A.userStatus) || void 0 === n ? void 0 : n.claimedTier) && void 0 !== P ? P : 0, z = A.config.rewards[F], Y = (null == z ? void 0 : z.type) === s.w.FRACTIONAL_PREMIUM, K = (null == z ? void 0 : z.type) === s.w.COLLECTIBLE, q = null == z ? void 0 : null === (T = z.collectibleProduct) || void 0 === T ? void 0 : null === (l = T.items) || void 0 === l ? void 0 : l[0], Q = (null == q ? void 0 : q.type) === a.Z.AVATAR_DECORATION ? q : null;
+  }), F = null !== (P = null === (n = A.userStatus) || void 0 === n ? void 0 : n.claimedTier) && void 0 !== P ? P : 0, z = A.config.rewards[F], Y = (null == z ? void 0 : z.type) === s.w.FRACTIONAL_PREMIUM, K = (null == z ? void 0 : z.type) === s.w.COLLECTIBLE, q = null == z ? void 0 : null === (T = z.collectibleProduct) || void 0 === T ? void 0 : null === (l = T.items) || void 0 === l ? void 0 : l[0], X = (null == q ? void 0 : q.type) === a.Z.AVATAR_DECORATION ? q : null;
   (0, p.P)(k, e => {
     let {
       height: t
@@ -47,7 +47,7 @@ let T = (0, i.memo)(function(e) {
       i = U.current.getBoundingClientRect();
     w((r.top - n.top - i.height) / 2)
   });
-  let X = (0, u.wj)(B),
+  let Q = (0, u.wj)(B),
     J = (0, i.useMemo)(() => null != A.config.cosponsorMetadata, [A]),
     $ = (0, i.useMemo)(() => (0, N.fh)(A, N.eC.REWARD), [A]),
     ee = Z ? V + 8 : 0,
@@ -92,14 +92,14 @@ let T = (0, i.memo)(function(e) {
       className: o()(S.container, {
         [S.hovered]: Z
       }),
-      children: [null != G && K && null != Q && (0, r.jsx)("div", {
+      children: [null != G && K && null != X && (0, r.jsx)("div", {
         ref: U,
         className: S.decoWrapper,
         style: {
           top: L
         },
         children: (0, r.jsx)(f.Z, {
-          avatarDecorationOverride: Q,
+          avatarDecorationOverride: X,
           user: G,
           guildId: null
         })
@@ -120,8 +120,8 @@ let T = (0, i.memo)(function(e) {
         onError: () => er($.url)
       }), (0, r.jsx)("div", {
         className: o()(S.overlay, {
-          [S.darkThemeGradient]: X,
-          [S.lightThemeGradient]: !X
+          [S.darkThemeGradient]: Q,
+          [S.lightThemeGradient]: !Q
         })
       }), (0, r.jsx)("div", {
         ref: M,
@@ -148,9 +148,9 @@ let T = (0, i.memo)(function(e) {
           })
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
-          color: X ? "text-muted" : "always-white",
+          color: Q ? "text-muted" : "always-white",
           style: {
-            opacity: X ? 1 : .75
+            opacity: Q ? 1 : .75
           },
           children: C.NW.format(C.t.kXVcV1, {
             reward: z.name,

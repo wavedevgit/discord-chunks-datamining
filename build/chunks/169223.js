@@ -21,7 +21,7 @@ var i = n(481060),
   g = n(531578),
   E = n(981631);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -64,7 +64,7 @@ class I extends m.Z {
     c.Z.init()
   }
   constructor(...e) {
-    super(...e), v(this, "actions", {
+    super(...e), b(this, "actions", {
       VOICE_CHANNEL_SHOW_FEEDBACK: e => this.handleVoiceChannelFeedback(e),
       STREAM_CLOSE: e => this.handleStreamClose(e),
       VIDEO_BACKGROUND_SHOW_FEEDBACK: e => this.handleVideoBackgroundShowFeedback(e),
@@ -72,7 +72,7 @@ class I extends m.Z {
       IN_APP_REPORTS_SHOW_FEEDBACK: e => this.handleInAppReportsFeedback(e),
       USER_DM_MUTE_SHOW_FEEDBACK: e => this.handleUserDmMuteFeedback(e),
       BLOCK_USER_SHOW_FEEDBACK: () => this.handleBlockUserFeedback()
-    }), v(this, "handleVoiceChannelFeedback", e => {
+    }), b(this, "handleVoiceChannelFeedback", e => {
       let {
         analyticsData: t
       } = e;
@@ -81,17 +81,17 @@ class I extends m.Z {
           let {
             default: e
           } = await n.e("96888").then(n.bind(n, 988645));
-          return n => (0, r.jsx)(e, O(b({}, n), {
+          return n => (0, r.jsx)(e, O(v({}, n), {
             analyticsData: t
           }))
         })
       })
-    }), v(this, "handleStreamClose", e => {
+    }), b(this, "handleStreamClose", e => {
       var t, o;
       let {
         streamKey: a,
         canShowFeedback: c
-      } = e, u = (0, s.my)(a), f = (0, l.L2)(u, _.Z), p = null !== (o = h.Z.getVideoStats(a)) && void 0 !== o ? o : {}, m = b({
+      } = e, u = (0, s.my)(a), f = (0, l.L2)(u, _.Z), p = null !== (o = h.Z.getVideoStats(a)) && void 0 !== o ? o : {}, m = v({
         media_session_id: h.Z.getMediaSessionId(a),
         rtc_connection_id: h.Z.getRtcConnectionId(a),
         stream_region: h.Z.getRegion(a),
@@ -103,7 +103,7 @@ class I extends m.Z {
           let {
             default: e
           } = await n.e("23657").then(n.bind(n, 142402));
-          return t => (0, r.jsx)(e, O(b({
+          return t => (0, r.jsx)(e, O(v({
             stream: u,
             streamApplication: f,
             isStreamer: u.ownerId === d.default.getId()
@@ -112,7 +112,7 @@ class I extends m.Z {
           }))
         })
       })
-    }), v(this, "handleVideoBackgroundShowFeedback", e => {
+    }), b(this, "handleVideoBackgroundShowFeedback", e => {
       let {
         analyticsData: t
       } = e;
@@ -121,12 +121,12 @@ class I extends m.Z {
           let {
             default: e
           } = await n.e("11495").then(n.bind(n, 801320));
-          return n => (0, r.jsx)(e, O(b({}, n), {
+          return n => (0, r.jsx)(e, O(v({}, n), {
             analyticsData: t
           }))
         })
       })
-    }), v(this, "handleActivityClose", e => {
+    }), b(this, "handleActivityClose", e => {
       let {
         applicationId: t,
         location: s,
@@ -140,7 +140,7 @@ class I extends m.Z {
           let {
             default: e
           } = await n.e("4413").then(n.bind(n, 450634));
-          return t => (0, r.jsx)(e, O(b({}, t), {
+          return t => (0, r.jsx)(e, O(v({}, t), {
             activityApplication: c,
             channel: _,
             embeddedActivityLocation: s,
@@ -150,7 +150,7 @@ class I extends m.Z {
           contextKey: m
         })
       })
-    }), v(this, "handleInAppReportsFeedback", e => {
+    }), b(this, "handleInAppReportsFeedback", e => {
       let {
         reportId: t,
         reportType: o
@@ -160,13 +160,13 @@ class I extends m.Z {
           let {
             default: e
           } = await n.e("72135").then(n.bind(n, 442173));
-          return n => (0, r.jsx)(e, O(b({}, n), {
+          return n => (0, r.jsx)(e, O(v({}, n), {
             reportId: t,
             reportType: o
           }))
         })
       })
-    }), v(this, "handleUserDmMuteFeedback", e => {
+    }), b(this, "handleUserDmMuteFeedback", e => {
       let {
         channel: t
       } = e;
@@ -175,18 +175,18 @@ class I extends m.Z {
           let {
             default: e
           } = await n.e("10620").then(n.bind(n, 408561));
-          return n => (0, r.jsx)(e, O(b({}, n), {
+          return n => (0, r.jsx)(e, O(v({}, n), {
             channel: t
           }))
         })
       })
-    }), v(this, "handleBlockUserFeedback", () => {
+    }), b(this, "handleBlockUserFeedback", () => {
       this.possiblyShowFeedbackModal(g.nw.BLOCK_USER, () => {
         (0, i.ZDy)(async () => {
           let {
             default: e
           } = await n.e("87995").then(n.bind(n, 180970));
-          return t => (0, r.jsx)(e, b({}, t))
+          return t => (0, r.jsx)(e, v({}, t))
         })
       })
     })

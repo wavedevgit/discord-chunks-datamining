@@ -88,7 +88,7 @@ function E(e) {
   }
 }
 
-function v(e) {
+function b(e) {
   if (null == m.limitedTimeVoices) {
     h.warn("No limited time voices available to update");
     return
@@ -96,7 +96,7 @@ function v(e) {
   m.limitedTimeVoices.current_set_end = e.toISOString(), m.limitedTimeVoices.next_set_start = e.toISOString(), m.limitedTimeVoices.next_set_end = (0, i.default)(e, 2).toISOString(), S()
 }
 
-function b(e) {
+function v(e) {
   return Object.entries(e).sort((e, t) => g(e[1]) - g(t[1])).map(e => {
     let [t] = e;
     return t
@@ -121,7 +121,7 @@ function y(e) {
     available: o,
     temporarilyAvailable: r.currentSet.includes(e)
   }));
-  return m.voiceFilters = n, m.sortedVoiceFilters = b(m.voiceFilters), m.catalogLastFetchTime = new Date, !0
+  return m.voiceFilters = n, m.sortedVoiceFilters = v(m.voiceFilters), m.catalogLastFetchTime = new Date, !0
 }
 
 function O() {
@@ -174,7 +174,7 @@ function S() {
   let e = E(m.limitedTimeVoices);
   m.catalogUpdateTime = e.catalogUpdateTime, Object.keys(m.voiceFilters).forEach(t => {
     m.voiceFilters[t].temporarilyAvailable = e.currentSet.includes(t)
-  }), m.sortedVoiceFilters = b(m.voiceFilters)
+  }), m.sortedVoiceFilters = v(m.voiceFilters)
 }
 
 function T(e) {
@@ -223,7 +223,7 @@ function R(e) {
   let {
     timeInSeconds: t
   } = e;
-  v((0, o.Z)(new Date, t))
+  b((0, o.Z)(new Date, t))
 }
 
 function P(e) {

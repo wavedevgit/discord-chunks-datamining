@@ -22,8 +22,8 @@ let m = e => {
       body: m,
       cancelText: g,
       className: E,
-      confirmColor: v,
-      confirmText: b = p.NW.string(p.t.BddRzc),
+      confirmColor: b,
+      confirmText: v = p.NW.string(p.t.BddRzc),
       secondaryConfirmText: y,
       onCancel: O,
       onClose: I,
@@ -51,13 +51,13 @@ let m = e => {
     onClick: w,
     className: h.secondaryButton,
     children: g
-  })), null != b && "" !== b && (n = (0, r.jsx)(a.zx, {
+  })), null != v && "" !== v && (n = (0, r.jsx)(a.zx, {
     type: "submit",
-    color: v,
+    color: b,
     size: P,
     className: o()(h.primaryButton, null != t ? h.gutter : null),
     autoFocus: !0,
-    children: b
+    children: v
   })), null != y && "" !== y && (i = (0, r.jsx)(s.P, {
     onClick: L,
     className: h.minorContainer,

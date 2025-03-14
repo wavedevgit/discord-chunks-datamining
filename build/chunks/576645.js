@@ -7,13 +7,13 @@ n.d(t, {
   R2: () => L,
   T$: () => w,
   Uu: () => k,
-  ZC: () => F,
+  ZC: () => V,
   Zm: () => D,
   bK: () => j,
   mx: () => U,
   t6: () => x,
   tv: () => B,
-  vY: () => V
+  vY: () => F
 }), n(47120);
 var r = n(192379),
   i = n(525654),
@@ -31,8 +31,8 @@ var r = n(192379),
   m = n(959457),
   g = n(594174),
   E = n(451478),
-  v = n(626135),
-  b = n(980463),
+  b = n(626135),
+  v = n(980463),
   y = n(823961),
   O = n(317951),
   I = n(111810),
@@ -84,7 +84,7 @@ let C = 35e5,
 function L(e) {
   let [t, n, i] = (0, s.Wu)([y.Z], () => [y.Z.isFetchingPrice(e), y.Z.getPrice(e), y.Z.getErrored(e)]);
   return (0, r.useEffect)(() => {
-    t || null != n || i || (0, b.Gq)(e)
+    t || null != n || i || (0, v.Gq)(e)
   }, [t, n, i, e]), {
     price: n,
     fetchingPrice: t,
@@ -96,7 +96,7 @@ function x(e) {
   let t = (0, I.V1)("Utils.tsx"),
     [n, i, o, a, l] = (0, s.Wu)([y.Z], () => [y.Z.isEntitlementFetched(e), y.Z.fetchPotionCount(e), y.Z.isEntitlementFetching(e), y.Z.getEntitlement(e), y.Z.getErrored(e)]);
   return (0, r.useEffect)(() => {
-    n || o || !t || (0, b.gA)(e)
+    n || o || !t || (0, v.gA)(e)
   }, [n, o, e, t]), {
     entitlement: a,
     numPotions: i,
@@ -125,7 +125,7 @@ function k(e) {
     let t = f.Z.getCurrentUserActiveStream();
     if (null != t && t.channelId === e.id) {
       let e = p.Z.getState().goLiveSource;
-      (0, b.x8)(null == e ? void 0 : e.quality);
+      (0, v.x8)(null == e ? void 0 : e.quality);
       let t = (0, u.s_)(A.LY.RESOLUTION_1440, A.ws.FPS_60, e);
       l.Z.setGoLiveSource(t)
     }
@@ -141,7 +141,7 @@ function j() {
 }
 
 function U(e) {
-  v.default.track(N.rMx.CONSUMABLE_HD_STREAMING_ENTRYPOINT, {
+  b.default.track(N.rMx.CONSUMABLE_HD_STREAMING_ENTRYPOINT, {
     location: e
   })
 }
@@ -156,16 +156,16 @@ function B(e, t, n, r) {
   return !t && null == n && ("" !== e || null != r && r.length > 0)
 }
 
-function V(e) {
+function F(e) {
   if (null != e) return {
     message_emoji: {
       id: e.emoji.id,
-      name: (0, b.zI)(e.emoji)
+      name: (0, v.zI)(e.emoji)
     }
   }
 }
 
-function F(e) {
+function V(e) {
   if (null == e || null == e.potions || 0 === e.potions.length) return null;
   for (let r of e.potions) {
     var t, n;

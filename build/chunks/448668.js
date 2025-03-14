@@ -1,4 +1,4 @@
-/** Chunk was on 76030 **/
+/** Chunk was on 70420 **/
 e.exports = {
   textPrimary: "textPrimary__8e577",
   textSecondary: "textSecondary__8e577",

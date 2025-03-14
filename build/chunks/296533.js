@@ -17,8 +17,8 @@ var r = n(200651),
   p = n(74538),
   h = n(709054),
   f = n(357956),
-  b = n(275909),
-  x = n(300037),
+  x = n(275909),
+  b = n(300037),
   N = n(981631),
   _ = n(474936),
   E = n(388032),
@@ -99,22 +99,22 @@ function O(e) {
     hasCancelableGuildBoostSlot: u,
     showAltText: m,
     isLastGuildBoostSlot: p
-  } = e, h = (0, a.e7)([o.Z], () => o.Z.useReducedMotion), x = i.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), N = i.useMemo(() => null != x && x > new Date, [x]), _ = (0, g.tl)(n), {
+  } = e, h = (0, a.e7)([o.Z], () => o.Z.useReducedMotion), b = i.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), N = i.useMemo(() => null != b && b > new Date, [b]), _ = (0, g.tl)(n), {
     fractionalState: O
   } = (0, c.Z)();
   return (0, r.jsxs)("div", {
     className: j.boostContainer,
     children: [(0, r.jsxs)("div", {
       className: j.boostInnerContainer,
-      children: [(0, r.jsx)(b.Z, {
+      children: [(0, r.jsx)(x.Z, {
         isCanceled: _,
         hasCooldown: N,
         useReducedMotion: h
       }), (0, r.jsx)("div", {
         className: j.boostDescriptionContainer,
-        children: null != x && N && !_ ? (0, r.jsx)(f.Z, {
+        children: null != b && N && !_ ? (0, r.jsx)(f.Z, {
           className: j.boostDescriptionInnerContainer,
-          cooldown: x.getTime()
+          cooldown: b.getTime()
         }) : (0, r.jsx)(C, {
           guildTier: t,
           guildBoostSlot: n,
@@ -191,7 +191,7 @@ function v(e) {
   } = e, o = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]);
   return (0, r.jsxs)("div", {
     className: j.appliedBoostContainer,
-    children: [(0, r.jsx)(x.Z, {
+    children: [(0, r.jsx)(b.Z, {
       guildId: t,
       boostingVariant: !1
     }), n.map((e, t) => (0, r.jsx)(O, {
@@ -226,7 +226,7 @@ function S(e) {
   }, i);
   return (0, r.jsxs)("div", {
     className: j.appliedBoostContainer,
-    children: [(0, r.jsx)(x.Z, {
+    children: [(0, r.jsx)(b.Z, {
       guildId: t,
       boostingVariant: !1
     }), n.map((e, t) => (0, r.jsx)(O, {

@@ -80,8 +80,8 @@ function g(e) {
     textClassName: m,
     disablePopout: g,
     ignoreModalClicks: E,
-    onClick: v,
-    onContextMenu: b,
+    onClick: b,
+    onContextMenu: v,
     onPopoutRequestOpen: y,
     onPopoutRequestClose: O
   } = e;
@@ -108,9 +108,9 @@ function g(e) {
         className: o()(u.userListItem, _, {
           [u.popoutDisabled]: g
         }),
-        onContextMenu: b,
+        onContextMenu: v,
         onClick: e => {
-          i(e), null == v || v(e)
+          i(e), null == b || b(e)
         },
         children: [(0, r.jsx)(a.qEK, {
           src: t.getAvatarURL(n, (0, a.pxk)(a.EFr.SIZE_24)),

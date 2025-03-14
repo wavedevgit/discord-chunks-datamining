@@ -33,12 +33,12 @@ function _(e) {
       treatment: p && !1 === g.discoverable ? o.h9.HIDE : o.h9.SHOW
     })
   }, [g, h, p, E, _, t]);
-  let v = null == m ? void 0 : m.channelId,
-    b = (0, i.e7)([a.Z], () => {
-      if (null != v) return a.Z.getChannel(v)
+  let b = null == m ? void 0 : m.channelId,
+    v = (0, i.e7)([a.Z], () => {
+      if (null != b) return a.Z.getChannel(b)
     });
-  return (0, i.e7)([s.Z], () => (null == b ? void 0 : b.isPrivate()) || s.Z.can(f.Pl.VIEW_CHANNEL, b)) ? {
+  return (0, i.e7)([s.Z], () => (null == v ? void 0 : v.isPrivate()) || s.Z.can(f.Pl.VIEW_CHANNEL, v)) ? {
     voiceState: m,
-    voiceChannel: b
+    voiceChannel: v
   } : {}
 }

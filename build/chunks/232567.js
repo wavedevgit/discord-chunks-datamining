@@ -3,9 +3,9 @@
 n.d(t, {
   In: () => y,
   Lr: () => E,
-  PR: () => b,
+  PR: () => v,
   k: () => g,
-  mB: () => v
+  mB: () => b
 }), n(789020);
 var r = n(512722),
   i = n.n(r),
@@ -78,7 +78,7 @@ function E() {
   }).then(() => !0, () => !1)
 }
 
-function v(e, t) {
+function b(e, t) {
   let n = d.default.getCurrentUser();
   i()(null != n, "setFlag: user cannot be undefined");
   let r = t ? n.flags | e : n.flags & ~e;
@@ -92,7 +92,7 @@ function v(e, t) {
   })
 }
 
-function b(e) {
+function v(e) {
   let t = d.default.getUser(e);
   return null != t ? Promise.resolve(t) : s.tn.get({
     url: _.ANM.USER(e),

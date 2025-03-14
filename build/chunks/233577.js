@@ -20,8 +20,8 @@ var i = n(570140),
   m = n(590921),
   g = n(981631),
   E = n(388032);
-let v = 8,
-  b = {
+let b = 8,
+  v = {
     results: {
       command: null,
       stickers: []
@@ -44,11 +44,11 @@ let O = {
   queryResults(e, t, n, r) {
     var i;
     let o = null === (i = a.Z.getActiveCommand(e.id)) || void 0 === i ? void 0 : i.untranslatedName;
-    if (null == o) return b;
+    if (null == o) return v;
     let s = [];
     (0, u.$p)();
     let l = p.ZP.queryStickers([n], !0, [e, (e, t) => t === c.eb.SENDABLE]),
-      d = Math.max(v);
+      d = Math.max(b);
     return {
       results: {
         command: o,

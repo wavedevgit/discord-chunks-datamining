@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(82295),
   g = n(818083),
   E = n(14263),
-  v = n(480608),
-  b = n(124072),
+  b = n(480608),
+  v = n(124072),
   y = n(184301),
   O = n(347475),
   I = n(592125),
@@ -172,14 +172,14 @@ function j(e) {
       return null == e ? null : T.Z.getRole(o, e)
     }, [o, n, _]),
     g = null == n ? null : null == d ? void 0 : d[n],
-    v = i.useMemo(() => null != h ? p.map(e => (0, r.jsx)(k, {
+    b = i.useMemo(() => null != h ? p.map(e => (0, r.jsx)(k, {
       member: e,
       guildId: o,
       channelId: s,
       role: h
     }, e.userId)) : [], [s, o, h, p]);
   if (null == h) return null;
-  let b = null == g ? h.name : C.NW.formatToPlainString(C.t.CuAQkJ, {
+  let v = null == g ? h.name : C.NW.formatToPlainString(C.t.CuAQkJ, {
     title: h.name,
     count: g
   });
@@ -193,16 +193,16 @@ function j(e) {
         className: R.roleHeader,
         "aria-label": C.NW.formatToPlainString(C.t.UaqbkZ, {
           title: h.name,
-          count: v.length
+          count: b.length
         }),
         children: (0, r.jsx)("span", {
           "aria-hidden": !0,
-          children: b
+          children: v
         })
-      }), v, null == g || g <= v.length ? null : (0, r.jsx)(m.Z, {
+      }), b, null == g || g <= b.length ? null : (0, r.jsx)(m.Z, {
         className: R.roleHeader,
         children: C.NW.formatToPlainString(C.t["9oMmZG"], {
-          count: g - v.length
+          count: g - b.length
         })
       })]
     })
@@ -220,7 +220,7 @@ function U(e) {
     inlinePreview: d = !1
   } = e, {
     analyticsLocations: f
-  } = (0, h.ZP)(p.Z.ROLE_MENTION), m = (0, l.e7)([_.Z], () => _.Z.roleStyle), g = null != t && 0 !== t && !d, E = g && "dot" === m, y = e => (0, r.jsxs)(b.Z, x(D({
+  } = (0, h.ZP)(p.Z.ROLE_MENTION), m = (0, l.e7)([_.Z], () => _.Z.roleStyle), g = null != t && 0 !== t && !d, E = g && "dot" === m, y = e => (0, r.jsxs)(v.Z, x(D({
     className: R.roleMention,
     color: "username" === m && g ? t : null
   }, e), {
@@ -244,7 +244,7 @@ function U(e) {
     value: f,
     children: (0, r.jsx)(c.yRy, {
       preload: async () => {
-        null != n && await (0, v.H)(a, n)
+        null != n && await (0, b.H)(a, n)
       },
       renderPopout: e => (0, r.jsx)(j, {
         guildId: a,

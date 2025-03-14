@@ -24,8 +24,8 @@ var r = n(192379),
   m = n(888369),
   g = n(430824),
   E = n(771845),
-  v = n(9156),
-  b = n(626135),
+  b = n(9156),
+  v = n(626135),
   y = n(630388),
   O = n(823379),
   I = n(960048),
@@ -85,7 +85,7 @@ function U(e, t) {
   let l = (0, a.Wu)([g.Z], () => Object.values(g.Z.getGuilds())),
     c = r.useCallback(() => {
       let r = {};
-      for (let i of l) r[i.id] = V(i, n, e, t, o[i.id]);
+      for (let i of l) r[i.id] = F(i, n, e, t, o[i.id]);
       return r
     }, [l, n, e, t, o]),
     [u, d] = r.useState(() => c());
@@ -97,7 +97,7 @@ function U(e, t) {
       }))
     }, []),
     setThresholds: i,
-    getDebug: () => F(Object.values(u), t)
+    getDebug: () => V(Object.values(u), t)
   }
 }
 
@@ -113,18 +113,18 @@ function B() {
     t = {};
   for (let i of e) {
     var n, r;
-    let e = null !== (r = (null !== (n = v.ZP.getAllSettings().userGuildSettings[i.id]) && void 0 !== n ? n : {}).flags) && void 0 !== r ? r : 0;
+    let e = null !== (r = (null !== (n = b.ZP.getAllSettings().userGuildSettings[i.id]) && void 0 !== n ? n : {}).flags) && void 0 !== r ? r : 0;
     e = (0, y.mB)(e, D.vc.UNREADS_ALL_MESSAGES, !0), e = (0, y.mB)(e, D.vc.UNREADS_ONLY_MENTIONS, !1), t[i.id] = {
       flags: e
     }
   }
-  Y(t), b.default.track(P.rMx.NOTIFICATION_MIGRATION_COMPLETED, {
+  Y(t), v.default.track(P.rMx.NOTIFICATION_MIGRATION_COMPLETED, {
     auto_migrated: !0,
     num_unread_guids_after: e.filter(e => m.default.hasUnread(e.id)).length
   })
 }
 
-function V(e, t, n, r, i) {
+function F(e, t, n, r, i) {
   var o;
   let [a, s, l] = p.Z.hasConsented(P.pjP.PERSONALIZATION) ? (0, A.q)(e, t, n, r, !0) : (0, A.A)(e, n), c = null !== (o = n.filter(t => t.guild_id === e.id)[0]) && void 0 !== o ? o : {}, u = (0, N.Z)(e, null != i ? i : a, c, r, t);
   return {
@@ -135,11 +135,11 @@ function V(e, t, n, r, i) {
     overrideMode: i,
     messagePain: c.messages === R.XR.High,
     visitsALot: s,
-    muted: v.ZP.isMuted(e.id) && !v.ZP.isTemporarilyMuted(e.id)
+    muted: b.ZP.isMuted(e.id) && !b.ZP.isTemporarilyMuted(e.id)
   }
 }
 
-function F(e, t) {
+function V(e, t) {
   let n = t.reduce((e, t) => {
       var n;
       return e + Number(null !== (n = t.num_year_opens) && void 0 !== n ? n : 0)
@@ -190,7 +190,7 @@ function Z(e) {
   }
 }
 async function H(e, t) {
-  if (v.ZP.useNewNotifications) {
+  if (b.ZP.useNewNotifications) {
     c.Z.show({
       title: "Info",
       body: "It looks like you are already using the new notifications system so skipping saving any changes this time because that will almost certainly mess up your account!"
@@ -202,7 +202,7 @@ async function H(e, t) {
     let t = {};
     for (let n of Object.values(e)) {
       var r, i;
-      let e = null !== (r = v.ZP.getAllSettings().userGuildSettings[n.guildId]) && void 0 !== r ? r : {},
+      let e = null !== (r = b.ZP.getAllSettings().userGuildSettings[n.guildId]) && void 0 !== r ? r : {},
         o = {};
       for (let t of n.actions) null === (i = t.apply) || void 0 === i || i.call(t, o, e);
       t[n.guildId] = o
@@ -239,10 +239,10 @@ function W(e) {
     }),
     n = {
       num_unread_guilds_before: S.default.keys(e).filter(e => m.default.hasUnread(e)).length,
-      unmuted_server_ids: t.filter(e => v.ZP.isMuted(e.plan.guildId)).map(e => e.plan.guildId)
+      unmuted_server_ids: t.filter(e => b.ZP.isMuted(e.plan.guildId)).map(e => e.plan.guildId)
     };
   return () => {
-    b.default.track(P.rMx.NOTIFICATION_MIGRATION_COMPLETED, j(M({}, n), {
+    v.default.track(P.rMx.NOTIFICATION_MIGRATION_COMPLETED, j(M({}, n), {
       auto_migrated: !0,
       pre_selected_server_ids: Object.values(e).filter(e => e.mode === R.AR.UseGreyDot).map(e => e.guildId),
       final_selected_server_ids: t.map(e => e.plan.guildId),
@@ -294,8 +294,8 @@ function q() {
   })
 }
 async function Q() {
-  s.K.set("turnedOffNewNotifications", !0), b.default.track(P.rMx.NOTIFICATION_MIGRATION_OPTOUT, {
-    num_guilds_with_new_setting: Object.values(g.Z.getGuilds()).filter(e => v.ZP.resolveGuildUnreadSetting(e) === w.i.ONLY_MENTIONS).length
+  s.K.set("turnedOffNewNotifications", !0), v.default.track(P.rMx.NOTIFICATION_MIGRATION_OPTOUT, {
+    num_guilds_with_new_setting: Object.values(g.Z.getGuilds()).filter(e => b.ZP.resolveGuildUnreadSetting(e) === w.i.ONLY_MENTIONS).length
   });
   let e = await (0, T.Tn)(),
     t = o().sortBy(e, e => new Date(e.recorded_at).getTime());

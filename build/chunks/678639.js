@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120), n(230036);
 var r = n(200651),
   a = n(192379),
-  i = n(120356),
-  l = n.n(i),
+  l = n(120356),
+  i = n.n(l),
   o = n(442837),
   s = n(481060),
   c = n(665149),
@@ -13,33 +13,33 @@ var r = n(200651),
   u = n(484036),
   m = n(681619),
   h = n(621060),
-  p = n(710662),
-  x = n(579581);
+  x = n(710662),
+  p = n(579581);
 
-function f(e, t) {
+function b(e, t) {
   return e.store.getName().localeCompare(t.store.getName())
 }
 
-function b(e) {
+function f(e) {
   let {
     store: t,
     dataGetter: n
-  } = e, [i, l] = a.useState(n(t));
+  } = e, [l, i] = a.useState(n(t));
   return a.useEffect(() => {
-    let e = () => l(n(t));
+    let e = () => i(n(t));
     return e(), t.addChangeListener(e), () => {
       t.removeChangeListener(e)
     }
   }, [t, n]), (0, r.jsx)(s.zJl, {
-    className: x.inspectorContainer,
+    className: p.inspectorContainer,
     children: (0, r.jsx)(d.Z, {
-      data: i
+      data: l
     })
   })
 }
 let _ = [{
     key: "name",
-    cellClassName: x.__invalid_eventColumn,
+    cellClassName: p.__invalid_eventColumn,
     render(e) {
       let {
         store: t
@@ -55,11 +55,11 @@ let _ = [{
         store: t
       } = e;
       return null == t.__getLocalVars ? (0, r.jsxs)("div", {
-        className: x.inspectorContainer,
+        className: p.inspectorContainer,
         children: ["Store is missing ", (0, r.jsx)("code", {
           children: "__getLocalVars"
         }), " method."]
-      }) : (0, r.jsx)(b, {
+      }) : (0, r.jsx)(f, {
         store: t,
         dataGetter: e => e.__getLocalVars()
       })
@@ -71,7 +71,7 @@ let _ = [{
       let {
         store: t
       } = e;
-      return (0, r.jsx)(b, {
+      return (0, r.jsx)(f, {
         store: t,
         dataGetter: e => e
       })
@@ -84,23 +84,23 @@ function v(e) {
     initialHeight: n
   } = e, {
     TabBar: a,
-    renderSelectedTab: i
+    renderSelectedTab: l
   } = (0, h.Z)({
     tabs: g
   }, []);
   return (0, r.jsxs)(u.Z, {
-    className: x.subPanel,
+    className: p.subPanel,
     minHeight: 100,
     initialHeight: n,
     children: [(0, r.jsx)(a, {}), (0, r.jsxs)(c.ZP, {
-      className: l()(p.headerBar, x.subPanelHeaderBar),
+      className: i()(x.headerBar, p.subPanelHeaderBar),
       children: [(0, r.jsx)(c.ZP.Icon, {
         icon: s.lO_,
         tooltip: t.getName()
       }), (0, r.jsx)(c.ZP.Title, {
         children: t.getName()
       })]
-    }), i({
+    }), l({
       store: t
     })]
   })
@@ -109,25 +109,25 @@ function v(e) {
 function j() {
   let e = a.useRef(null),
     [t, n] = a.useState(""),
-    i = o.yh.getAll(),
-    c = a.useMemo(() => i.map(e => ({
+    l = o.yh.getAll(),
+    c = a.useMemo(() => l.map(e => ({
       key: e._dispatchToken,
       store: e
-    })).sort(f), [i]).filter(e => (function(e, t) {
+    })).sort(b), [l]).filter(e => (function(e, t) {
       let {
         store: n
       } = e;
       return n.getName().toLowerCase().includes(t.toLowerCase())
     })(e, t)),
     [d, u] = a.useState(),
-    h = i.find(e => e._dispatchToken === d);
+    h = l.find(e => e._dispatchToken === d);
   return (0, r.jsxs)("div", {
     ref: e,
-    className: l()(p.panel, x.panel),
+    className: i()(x.panel, p.panel),
     children: [(0, r.jsx)("div", {
-      className: x.toolbar,
+      className: p.toolbar,
       children: (0, r.jsx)(s.E1j, {
-        className: x.searchBar,
+        className: p.searchBar,
         size: s.E1j.Sizes.SMALL,
         query: t,
         onChange: n,

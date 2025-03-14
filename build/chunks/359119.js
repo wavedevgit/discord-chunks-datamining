@@ -73,13 +73,13 @@ function E(e) {
   g(e.channel)
 }
 
-function v(e) {
+function b(e) {
   e.channels.forEach(e => {
     g(e)
   })
 }
 
-function b(e) {
+function v(e) {
   let {
     channel: t
   } = e;
@@ -152,8 +152,8 @@ class A extends r.ZP.Store {
 }
 let C = new A(i.Z, {
   CHANNEL_CREATE: E,
-  CHANNEL_DELETE: b,
-  CHANNEL_UPDATES: v,
+  CHANNEL_DELETE: v,
+  CHANNEL_UPDATES: b,
   CONNECTION_OPEN: T,
   CONNECTION_OPEN_SUPPLEMENTAL: T,
   CHANNEL_SAFETY_WARNING_FEEDBACK: y,

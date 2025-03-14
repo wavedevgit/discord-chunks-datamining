@@ -1,6 +1,6 @@
-/** Chunk was on 95617 **/
+/** Chunk was on 98697 **/
 n.d(t, {
-  Z: () => b
+  Z: () => p
 });
 var r, i = n(442837),
   o = n(570140);
@@ -13,21 +13,21 @@ function l(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let s = 12 * n(70956).Z.Millis.HOUR,
-  a = {
+let a = 12 * n(70956).Z.Millis.HOUR,
+  s = {
     profileThemesRelevanceExceeded: null,
     savedAt: null
   },
   c = {
     hasFetchedRelevance: !1
   },
-  u = a,
+  u = s,
   d = c;
-class h extends(r = i.ZP.PersistedStore) {
+class _ extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    d = c, u = a;
+    d = c, u = s;
     let t = new Date;
-    null != e && null != e.savedAt && t.getTime() - e.savedAt < s && (u = e)
+    null != e && null != e.savedAt && t.getTime() - e.savedAt < a && (u = e)
   }
   get hasFetchedRelevance() {
     return d.hasFetchedRelevance
@@ -39,8 +39,8 @@ class h extends(r = i.ZP.PersistedStore) {
     return u
   }
 }
-l(h, "displayName", "PerksRelevanceStore"), l(h, "persistKey", "PerksRelevanceStore");
-let b = new h(o.Z, {
+l(_, "displayName", "PerksRelevanceStore"), l(_, "persistKey", "PerksRelevanceStore");
+let p = new _(o.Z, {
   BILLING_PERKS_RELEVANCE_FETCH_START: function() {
     d.hasFetchedRelevance = !0
   },
@@ -52,6 +52,6 @@ let b = new h(o.Z, {
   },
   BILLING_PERKS_RELEVANCE_FETCH_FAIL: function() {},
   LOGOUT: function() {
-    d = c, u = a
+    d = c, u = s
   }
 })

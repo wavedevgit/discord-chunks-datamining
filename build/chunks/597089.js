@@ -1,5 +1,6 @@
-/** Chunk was on 98806 **/
-e.exports = {
+/** Chunk was on web.js **/
+"use strict";
+var r = {
   header: "header__99f53",
   members: "members__99f53",
   memberCount: "memberCount__99f53",
@@ -9,4 +10,5 @@ e.exports = {
   nameContainer: "nameContainer__99f53",
   guildName: "guildName__99f53",
   guildBadge: "guildBadge__99f53"
-}
+};
+e.exports = r

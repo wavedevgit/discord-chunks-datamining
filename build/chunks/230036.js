@@ -16,8 +16,8 @@ var r = n(147018),
   m = n(361270),
   g = [],
   E = i(g.sort),
-  v = i(g.push),
-  b = u(function() {
+  b = i(g.push),
+  v = u(function() {
     g.sort(void 0)
   }),
   y = u(function() {
@@ -64,7 +64,7 @@ var r = n(147018),
 r({
   target: "Array",
   proto: !0,
-  forced: b || !y || !O || !I
+  forced: v || !y || !O || !I
 }, {
   sort: function(e) {
     void 0 !== e && o(e);
@@ -72,7 +72,7 @@ r({
     if (I) return void 0 === e ? E(r) : E(r, e);
     var i = [],
       c = s(r);
-    for (n = 0; n < c; n++) n in r && v(i, r[n]);
+    for (n = 0; n < c; n++) n in r && b(i, r[n]);
     for (d(i, S(e)), t = s(i), n = 0; n < t;) r[n] = i[n++];
     for (; n < c;) l(r, n++);
     return r

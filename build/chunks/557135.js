@@ -21,7 +21,7 @@ var i = n(481060),
   g = n(981631),
   E = n(110223);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -54,7 +54,7 @@ let O = {
     let {
       channel: t,
       connected: s,
-      needSubscriptionToAccess: v,
+      needSubscriptionToAccess: b,
       locked: O = !1,
       routeDirectlyToChannel: I = !1,
       bypassChangeModal: S,
@@ -72,19 +72,19 @@ let O = {
         let {
           default: i
         } = await n.e("65045").then(n.bind(n, 143782));
-        return n => (0, r.jsx)(i, b({
+        return n => (0, r.jsx)(i, v({
           channel: t,
           onConfirm: () => e(this.handleVoiceConnect({
             channel: t,
             connected: s,
-            needSubscriptionToAccess: v,
+            needSubscriptionToAccess: b,
             routeDirectlyToChannel: I,
             locked: O,
             bypassChangeModal: !0
           }))
         }, n))
       })
-    }) : (O || s || o.default.selectVoiceChannel(t.id), !__OVERLAY__ && (s || R || v || I) && y(t, N), !0) : new Promise(e => {
+    }) : (O || s || o.default.selectVoiceChannel(t.id), !__OVERLAY__ && (s || R || b || I) && y(t, N), !0) : new Promise(e => {
       (0, i.ZDy)(async () => {
         let {
           default: i
@@ -103,7 +103,7 @@ let O = {
             onJoin: () => e(this.handleVoiceConnect({
               channel: t,
               connected: s,
-              needSubscriptionToAccess: v,
+              needSubscriptionToAccess: b,
               routeDirectlyToChannel: I,
               locked: O,
               bypassChangeModal: !0,

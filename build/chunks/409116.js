@@ -1,4 +1,4 @@
-/** Chunk was on 95617 **/
+/** Chunk was on 98697 **/
 n.d(t, {
   F: () => d
 }), n(757143), n(301563);
@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   o = n.n(i),
   l = n(481060),
-  s = n(937615),
-  a = n(884697),
+  a = n(937615),
+  s = n(884697),
   c = n(182528);
 let u = e => e.length > 5 ? e.replace(/\.00$/, "") : e,
   d = e => {
@@ -19,21 +19,21 @@ let u = e => e.length > 5 ? e.replace(/\.00$/, "") : e,
         currency: i
       },
       renderPrice: d,
-      icon: h,
-      className: b,
-      discount: p = a.f_,
+      icon: _,
+      className: p,
+      discount: E = s.f_,
       variant: f = "heading-md/semibold"
-    } = e, g = u((0, s.T4)(n, i)), O = p !== a.f_ && p.discountPercentage >= 5 ? (0, r.jsxs)(r.Fragment, {
-      children: [g, (0, r.jsx)(l.X6q, {
+    } = e, h = u((0, a.T4)(n, i)), m = E !== s.f_ && E.discountPercentage >= 5 ? (0, r.jsxs)(r.Fragment, {
+      children: [h, (0, r.jsx)(l.X6q, {
         variant: f,
         color: "text-positive",
         className: c.discount,
-        children: " (-".concat(p.discountPercentage, "%)")
+        children: " (-".concat(E.discountPercentage, "%)")
       })]
-    }) : g;
+    }) : h;
     return (0, r.jsxs)(l.X6q, {
       variant: f,
-      className: o()(c.container, b),
-      children: [h, null !== (t = null == d ? void 0 : d(O)) && void 0 !== t ? t : O]
+      className: o()(c.container, p),
+      children: [_, null !== (t = null == d ? void 0 : d(m)) && void 0 !== t ? t : m]
     })
   }

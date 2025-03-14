@@ -3,7 +3,7 @@
 n.d(t, {
   YO: () => E,
   lG: () => g,
-  mq: () => v
+  mq: () => b
 }), n(47120);
 var r = n(192379),
   i = n(442837),
@@ -31,7 +31,7 @@ function g() {
     n = (0, c._O)(),
     g = (0, i.e7)([s.Z], () => s.Z.hasAnyUnexpiredOffer()),
     E = (0, u.W)(),
-    [v, b] = r.useState(!1),
+    [b, v] = r.useState(!1),
     [y, O] = r.useState([]);
   r.useEffect(() => {
     (null != e || E) && o.Z.wait(() => _.ZP.markOutboundPromotionsSeen())
@@ -58,9 +58,9 @@ function g() {
   }, [e, T, E]), r.useEffect(() => {
     o.Z.wait(() => {
       (0, f.t8)().then(e => {
-        O(e), b(!0)
+        O(e), v(!0)
       }).catch(() => {
-        O([]), b(!0)
+        O([]), v(!0)
       })
     })
   }, []);
@@ -78,7 +78,7 @@ function g() {
       return t
     }));
   return {
-    promotionsLoaded: v && (!T || null != e || E),
+    promotionsLoaded: b && (!T || null != e || E),
     activeOutboundPromotions: A,
     claimedEndedOutboundPromotions: y.filter(e => {
       let {
@@ -103,7 +103,7 @@ function E() {
   }), [n, e]).filter(e => (0, f.ZC)(e))
 }
 
-function v() {
+function b() {
   return {
     promotion: (0, i.e7)([p.Z], () => p.Z.bogoPromotion)
   }

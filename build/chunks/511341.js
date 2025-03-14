@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(185923),
   g = n(420212),
   E = n(231338),
-  v = n(388032),
-  b = n(178708);
+  b = n(388032),
+  v = n(178708);
 let y = e => {
   let {
     emoji: t,
@@ -30,18 +30,18 @@ let y = e => {
   } = e, o = ":".concat(t.name, ":");
   switch (r) {
     case h.n_.ACTIVITY:
-      let a = v.NW.formatToPlainString(v.t.EUFEJi, {
+      let a = b.NW.formatToPlainString(b.t.EUFEJi, {
           username: n
         }),
         s = "\n> ".concat(i);
       return null != i ? "".concat(_.jd).concat(a, "*").concat(s, "\n").concat(o) : "".concat(_.jd).concat(a, "*\n").concat(o);
     case h.n_.AVATAR:
-      let l = v.NW.formatToPlainString(v.t.E6H15u, {
+      let l = b.NW.formatToPlainString(b.t.E6H15u, {
         username: n
       });
       return "".concat(_.jd).concat(l, "*\n").concat(o);
     case h.n_.STATUS:
-      let u = v.NW.formatToPlainString(v.t.XPQgLy, {
+      let u = b.NW.formatToPlainString(b.t.XPQgLy, {
           username: n
         }),
         d = "\n> ".concat(i);
@@ -57,7 +57,7 @@ function O(e) {
     guildId: n,
     entry: c,
     sourceType: _,
-    sourceDetails: v,
+    sourceDetails: b,
     setPopoutRef: O,
     onAction: I,
     onClose: S
@@ -90,7 +90,7 @@ function O(e) {
       emoji: e,
       username: u.ZP.getName(t),
       sourceType: _,
-      sourceDetails: v
+      sourceDetails: b
     });
     N(null);
     try {
@@ -106,7 +106,7 @@ function O(e) {
     N(h.P.REACT)
   };
   return (0, r.jsx)(s.Z, {
-    headerClassName: R ? b.noBoxShadowMargin : void 0,
+    headerClassName: R ? v.noBoxShadowMargin : void 0,
     guildId: null != n ? n : void 0,
     closePopout: E.dG,
     onSelectEmoji: async (e, t) => {

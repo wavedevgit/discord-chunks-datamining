@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   A8: () => u,
-  D5: () => b,
+  D5: () => v,
   Gm: () => O,
   T4: () => m,
   r1: () => f,
@@ -290,7 +290,7 @@ class g extends s.C {
   }
 }
 let E = new g;
-class v extends s.C {
+class b extends s.C {
   internalJsonWrite(e, t) {
     return e.value
   }
@@ -335,7 +335,7 @@ class v extends s.C {
     }])
   }
 }
-let b = new v;
+let v = new b;
 class y extends s.C {
   internalJsonWrite(e, t) {
     return e.value

@@ -18,8 +18,8 @@ var r, i = n(348327),
   m = n(517100),
   g = n(283595),
   E = n(293273),
-  v = n(158776),
-  b = n(797258),
+  b = n(158776),
+  v = n(797258),
   y = n(981631);
 
 function O(e, t, n) {
@@ -81,10 +81,10 @@ function j() {
   let t = !1,
     n = R || S === y.Skl.INVISIBLE ? [] : E.Z.getActivities().filter(M);
   o()(A, n) || (A = n, t = !0);
-  let r = b.Z.getRemoteActivities();
+  let r = v.Z.getRemoteActivities();
   P !== r && (P = r, t = !0);
-  let i = b.Z.getHiddenActivities();
-  w !== i && (w = i), t && (D = s()([...A, ...P.filter(e => e.type !== y.IIU.CUSTOM_STATUS)].sort(v.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value())
+  let i = v.Z.getHiddenActivities();
+  w !== i && (w = i), t && (D = s()([...A, ...P.filter(e => e.type !== y.IIU.CUSTOM_STATUS)].sort(b.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value())
 }
 
 function U(e) {
@@ -96,15 +96,15 @@ function G() {
 }
 
 function B() {
-  R = !1, T = y.Skl.UNKNOWN, j(), v.Z.setCurrentUserOnConnectionOpen(S, D)
+  R = !1, T = y.Skl.UNKNOWN, j(), b.Z.setCurrentUserOnConnectionOpen(S, D)
 }
 
-function V() {
+function F() {
   B()
 }
-class F extends(r = l.ZP.Store) {
+class V extends(r = l.ZP.Store) {
   initialize() {
-    this.waitFor(m.Z, _.Z, E.Z, b.Z, g.Z, h.Z), this.syncWith([E.Z], j)
+    this.waitFor(m.Z, _.Z, E.Z, v.Z, g.Z, h.Z), this.syncWith([E.Z], j)
   }
   getLocalPresence() {
     return {
@@ -137,10 +137,10 @@ class F extends(r = l.ZP.Store) {
     return this.getActivities(t).find(e)
   }
 }
-O(F, "displayName", "SelfPresenceStore");
-let Z = new F(c.Z, {
+O(V, "displayName", "SelfPresenceStore");
+let Z = new V(c.Z, {
   START_SESSION: j,
-  CONNECTION_OPEN: V,
+  CONNECTION_OPEN: F,
   CONNECTION_OPEN_SUPPLEMENTAL: B,
   OVERLAY_INITIALIZE: B,
   CONNECTION_CLOSED: j,

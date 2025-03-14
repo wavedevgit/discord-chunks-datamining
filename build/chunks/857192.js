@@ -87,86 +87,86 @@ let m = (() => {
     isStreamInfoOverlayEnabled: !1,
     preventPopoutClose: !1
   },
-  v = h({}, E);
+  b = h({}, E);
 
-function b(e) {
-  v = h({}, E, v, e), m.set(v.sourceMapsEnabled), l.K.set(g, v)
+function v(e) {
+  b = h({}, E, b, e), m.set(b.sourceMapsEnabled), l.K.set(g, b)
 }
 
 function y(e) {
   let {
     settings: t
   } = e;
-  b(t)
+  v(t)
 }
 
 function O(e) {
-  b(E)
+  v(E)
 }
 
 function I(e) {
   var t;
   let n = ((null !== (t = e.user.flags) && void 0 !== t ? t : 0) & _.xW$.STAFF) === _.xW$.STAFF,
     r = n || null != e.user.personal_connection_id;
-  n && m.set(v.sourceMapsEnabled), f.Z.setTags({
+  n && m.set(b.sourceMapsEnabled), f.Z.setTags({
     isStaff: r.toString()
   })
 }
 class S extends(r = a.ZP.Store) {
   initialize() {
     let e = l.K.get(g);
-    null != e && (v = h({}, E, e))
+    null != e && (b = h({}, E, e))
   }
   get isTracingRequests() {
-    return v.trace
+    return b.trace
   }
   get isForcedCanary() {
-    return v.canary
+    return b.canary
   }
   get isLoggingGatewayEvents() {
-    return v.logGatewayEvents
+    return b.logGatewayEvents
   }
   get isLoggingOverlayEvents() {
-    return v.logOverlayEvents
+    return b.logOverlayEvents
   }
   get isLoggingAnalyticsEvents() {
-    return v.logAnalyticsEvents
+    return b.logAnalyticsEvents
   }
   get isAxeEnabled() {
-    return v.axeEnabled
+    return b.axeEnabled
   }
   get cssDebuggingEnabled() {
-    return v.cssDebuggingEnabled
+    return b.cssDebuggingEnabled
   }
   get layoutDebuggingEnabled() {
-    return v.layoutDebuggingEnabled
+    return b.layoutDebuggingEnabled
   }
   get sourceMapsEnabled() {
-    return v.sourceMapsEnabled
+    return b.sourceMapsEnabled
   }
   get isAnalyticsDebuggerEnabled() {
-    return v.analyticsDebuggerEnabled
+    return b.analyticsDebuggerEnabled
   }
   get isBugReporterEnabled() {
-    return v.bugReporterEnabled
+    return b.bugReporterEnabled
   }
   get isIdleStatusIndicatorEnabled() {
-    return v.idleStatusIndicatorEnabled
+    return b.idleStatusIndicatorEnabled
   }
   get onlyShowPreviewAppCollections() {
-    return v.onlyShowPreviewAppCollections
+    return b.onlyShowPreviewAppCollections
   }
   get disableAppCollectionsCache() {
-    return v.disableAppCollectionsCache
+    return b.disableAppCollectionsCache
   }
   get isStreamInfoOverlayEnabled() {
-    return v.isStreamInfoOverlayEnabled
+    return b.isStreamInfoOverlayEnabled
   }
   get preventPopoutClose() {
-    return v.preventPopoutClose
+    return b.preventPopoutClose
   }
   getDebugOptionsHeaderValue() {
-    return Object.keys(v).map(e => v[e]), Object.keys(v).filter(e => v[e]).join(",")
+    return Object.keys(b).map(e => b[e]), Object.keys(b).filter(e => b[e]).join(",")
   }
 }
 p(S, "displayName", "DeveloperOptionsStore");

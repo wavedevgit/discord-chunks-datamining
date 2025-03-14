@@ -121,7 +121,7 @@ function w(e) {
     taskDetails: K,
     location: P.dr.ACTIVITY_PANEL,
     questContent: f.jn.ACTIVITY_PANEL
-  }), Q = (0, m.j)({
+  }), X = (0, m.j)({
     location: P.dr.QUESTS_BAR_MOBILE
   });
   return Y || B || z ? null : (0, r.jsxs)("div", {
@@ -176,7 +176,7 @@ function w(e) {
           variant: "text-sm/normal",
           color: "text-normal",
           children: q
-        }), Q && (0, r.jsx)(N.Z, {
+        }), X && (0, r.jsx)(N.Z, {
           quest: E,
           textColor: "text-muted",
           withRewardName: !0

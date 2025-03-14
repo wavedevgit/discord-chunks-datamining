@@ -15,6 +15,6 @@ function s(e, t, n) {
   if (!(m >= 0 && m <= 6)) throw RangeError("weekStartsOn must be between 0 and 6 inclusively");
   var g = (0, r.default)(e),
     E = (0, o.Z)(t),
-    v = 7 * ((E % 7 + 7) % 7 < m) + E - g.getUTCDay();
-  return g.setUTCDate(g.getUTCDate() + v), g
+    b = 7 * ((E % 7 + 7) % 7 < m) + E - g.getUTCDay();
+  return g.setUTCDate(g.getUTCDate() + b), g
 }

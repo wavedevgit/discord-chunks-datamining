@@ -74,9 +74,9 @@ class g {
   }
 }
 let E = new g,
-  v = null;
+  b = null;
 
-function b(e, t) {
+function v(e, t) {
   return !e && null == t
 }
 
@@ -85,7 +85,7 @@ function y(e) {
     loaded: t,
     firstMessage: n
   } = (0, o.cj)([d.Z], () => d.Z.getMessage(e.id)), r = (0, o.e7)([l.Z], () => l.Z.getChannel(e.parent_id));
-  return null != r && b(t, n) && S(r, e.id), {
+  return null != r && v(t, n) && S(r, e.id), {
     loaded: t,
     firstMessage: n
   }
@@ -98,8 +98,8 @@ function O(e, t) {
       loaded: r,
       firstMessage: i
     } = d.Z.getMessage(t);
-    b(r, i) && (E.request(e.id, t), n = !0)
-  }), n && null == v && (v = setTimeout(T, 0))
+    v(r, i) && (E.request(e.id, t), n = !0)
+  }), n && null == b && (b = setTimeout(T, 0))
 }
 
 function I(e) {
@@ -117,7 +117,7 @@ async function T() {
   try {
     for (; E.hasNext();) await N(E.next())
   } finally {
-    v = null
+    b = null
   }
 }
 async function N(e) {

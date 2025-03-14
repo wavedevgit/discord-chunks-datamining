@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  SD: () => v,
+  SD: () => b,
   Z1: () => h,
   cN: () => E,
   fD: () => f,
@@ -134,7 +134,7 @@ function E(e) {
   }
 }
 
-function v(e) {
+function b(e) {
   let {
     userId: t,
     image: n,

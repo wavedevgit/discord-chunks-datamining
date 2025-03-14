@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   Qi: () => E,
-  R9: () => b,
+  R9: () => v,
   l_: () => g,
-  t: () => v
+  t: () => b
 });
 var r = n(200651);
 n(192379);
@@ -75,7 +75,7 @@ function m(e, t) {
 let g = "premium_new_tier_2_gradient",
   E = "premium_old_tier_2_gradient";
 
-function v(e) {
+function b(e) {
   let {
     tier: t = c.p9.TIER_2
   } = e, n = (0, s.ZP)(), i = (0, a.ap)(n);
@@ -86,22 +86,22 @@ function v(e) {
           [u.rimGlowVerticalTier0]: t === c.p9.TIER_0,
           [u.rimGlowVerticalTier2]: t === c.p9.TIER_2
         })
-      }), (0, r.jsx)(b, {
+      }), (0, r.jsx)(v, {
         foreground: u.buttonSparkleStar1
       })]
-    }), (0, r.jsx)(b, {
+    }), (0, r.jsx)(v, {
       foreground: u.buttonSparkleStar2
-    }), (0, r.jsx)(b, {
+    }), (0, r.jsx)(v, {
       foreground: u.buttonSparkleStar3
-    }), (0, r.jsx)(b, {
+    }), (0, r.jsx)(v, {
       foreground: u.buttonSparkleStar4
-    }), (0, r.jsx)(b, {
+    }), (0, r.jsx)(v, {
       foreground: u.buttonSparkleStar5
     })]
   })
 }
 
-function b(e) {
+function v(e) {
   var {
     width: t = 14,
     height: n = 13,

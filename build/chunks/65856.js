@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => b
 }), n(733860), n(26686), n(653041), n(411104), n(47120);
 var r = n(512722),
   i = n.n(r),
@@ -33,7 +33,7 @@ function g(e, t) {
 function E(e) {
   return !!m.includes(e) || (m.unshift(e), m.splice(50), !1)
 }
-class v {
+class b {
   registerTransport(e) {
     e.on("connect", e => this.handleConnect(e)), e.on("request", (e, t) => this.handleRequest(e, t)), e.on("disconnect", (e, t) => this.handleDisconnect(e, t))
   }

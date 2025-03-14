@@ -20,8 +20,8 @@ var r = n(200651),
   m = n(125900),
   g = n(546424),
   E = n(626135),
-  v = n(153066),
-  b = n(981631),
+  b = n(153066),
+  v = n(981631),
   y = n(921944),
   O = n(185923),
   I = n(388032),
@@ -110,7 +110,7 @@ let k = function(e) {
     "aria-controls": R,
     focusProps: P,
     shouldShowSoundmojiCoachmark: w = !1
-  } = e, [k, j] = i.useState(!1), [U, G] = i.useState(50), B = k || T, V = (0, v.l)(S, "emojiButton", B ? "Hovered" : "Normal"), F = M(U, (0, f.Q3)("EmojiButton")), Z = i.useCallback(() => {
+  } = e, [k, j] = i.useState(!1), [U, G] = i.useState(50), B = k || T, F = (0, b.l)(S, "emojiButton", B ? "Hovered" : "Normal"), V = M(U, (0, f.Q3)("EmojiButton")), Z = i.useCallback(() => {
     if (B) return;
     let e = Math.floor(Math.random() * D);
     j(!0), G(e), (0, p.x)(O.qR.EmojiButtonMouseEntered)
@@ -143,10 +143,10 @@ let k = function(e) {
         look: u.zxk.Looks.BLANK,
         size: u.zxk.Sizes.NONE,
         tabIndex: t,
-        className: a()(V, n),
+        className: a()(F, n),
         onMouseEnter: () => {
           var e;
-          Z(), null === (e = i.onMouseEnter) || void 0 === e || e.call(i), E.default.track(b.rMx.EMOJI_PICKER_BUTTON_HOVERED)
+          Z(), null === (e = i.onMouseEnter) || void 0 === e || e.call(i), E.default.track(v.rMx.EMOJI_PICKER_BUTTON_HOVERED)
         },
         onMouseOver: Z,
         onMouseLeave: () => {
@@ -175,7 +175,7 @@ let k = function(e) {
             } = e;
             return (0, r.jsxs)(s.animated.div, {
               className: S.spriteContainer,
-              style: C(N({}, F), {
+              style: C(N({}, V), {
                 transform: t.to([0, 1], [1, 1.14]).to(e => "scale(".concat(e, ")"))
               }),
               children: [(0, r.jsx)("div", {

@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Vq: () => b,
-  c8: () => v,
+  Vq: () => v,
+  c8: () => b,
   oQ: () => y
 }), n(266796);
 var r = n(200651);
@@ -51,13 +51,13 @@ function E(e) {
   })
 }
 
-function v() {
+function b() {
   return (0, r.jsx)(E, {
     className: h.settings
   })
 }
 
-function b(e) {
+function v(e) {
   let {
     onClose: t
   } = e;

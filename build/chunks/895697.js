@@ -20,8 +20,8 @@ var i = n(442837),
   m = n(530),
   g = n(871604),
   E = n(53558),
-  v = n(827313),
-  b = n(420654),
+  b = n(827313),
+  v = n(420654),
   y = n(166584),
   O = n(915014),
   I = n(228168),
@@ -60,7 +60,7 @@ function A(e) {
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(p.Z, {
           userId: t.id
-        }), !k && (0, r.jsx)(v.Z, {
+        }), !k && (0, r.jsx)(b.Z, {
           userId: t.id,
           isHovering: R,
           onOpenProfile: P
@@ -82,7 +82,7 @@ function A(e) {
         guildId: null == C ? void 0 : C.id,
         className: T.button
       })]
-    }), (0, r.jsx)(b.Z, {
+    }), (0, r.jsx)(v.Z, {
       user: t,
       bio: null == A ? void 0 : A.bio,
       hidePersonalInformation: k,

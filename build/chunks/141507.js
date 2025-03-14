@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(695346),
   g = n(430824),
   E = n(451478),
-  v = n(768581),
-  b = n(392552),
+  b = n(768581),
+  v = n(392552),
   y = n(543241),
   O = n(199257),
   I = n(880949),
@@ -52,7 +52,7 @@ let P = e => {
       } = e,
       {
         enabled: U
-      } = b.Z.useExperiment({
+      } = v.Z.useExperiment({
         location: "EmojiPicker"
       }, {
         autoTrackExposure: !1
@@ -88,8 +88,8 @@ let P = e => {
           allNamesString: null == B ? void 0 : B.name
         }
     }
-    let V = (0, o.e7)([g.Z], () => null !== t && t.type === u.B.GUILD ? g.Z.getGuild(t.guildId) : null, [t]),
-      F = (0, o.e7)([E.Z], () => E.Z.isFocused()),
+    let F = (0, o.e7)([g.Z], () => null !== t && t.type === u.B.GUILD ? g.Z.getGuild(t.guildId) : null, [t]),
+      V = (0, o.e7)([E.Z], () => E.Z.isFocused()),
       Z = (0, o.e7)([l.Z], () => l.Z.useReducedMotion, []),
       H = m.Yk.useSetting(),
       W = (0, y.C1)(M, R(t) ? t : null),
@@ -112,7 +112,7 @@ let P = e => {
     let q = h.Z.theme;
     if (R(t)) {
       var Q;
-      let e = null != t.id ? v.ZP.getEmojiURL({
+      let e = null != t.id ? b.ZP.getEmojiURL({
         id: t.id,
         animated: H && t.animated,
         size: 28
@@ -147,10 +147,10 @@ let P = e => {
         alt: ""
       })
     }
-    let X = null != V ? (0, r.jsx)(I.Z, {
+    let X = null != F ? (0, r.jsx)(I.Z, {
       className: A.__invalid_guildIcon,
-      guild: V,
-      shouldAnimate: !Z && F
+      guild: F,
+      shouldAnimate: !Z && V
     }) : null;
     D = U && "CREATE_EMOJI" === t.type ? N.NW.string(N.t.XCmLfH) : "EXPAND_OR_COLLAPSE_EMOJI" === t.type ? Y.has(t.guildId) ? N.NW.string(N.t["/K2RDA"]) : N.NW.string(N.t.NZI2Zm) : t.allNamesString;
     let J = U && "CREATE_EMOJI" === t.type ? N.NW.string(N.t["Z/r7IS"]) : P({
@@ -158,7 +158,7 @@ let P = e => {
       channel: j,
       guildId: M,
       intention: k,
-      guild: V
+      guild: F
     });
     return (0, r.jsx)(p.Z, {
       className: L,

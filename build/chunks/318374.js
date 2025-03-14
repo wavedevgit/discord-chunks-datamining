@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => b
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -55,15 +55,15 @@ function E(e, t) {
   }), e
 }
 
-function v(e) {
+function b(e) {
   let {
     users: t,
     maxUsers: o,
     guildId: s,
     channelId: h,
     className: g,
-    avatarClassName: v,
-    size: b = c.EFr.SIZE_24,
+    avatarClassName: b,
+    size: v = c.EFr.SIZE_24,
     overflowCountVariant: y = "text-xs/medium",
     overflowCountColor: O = "interactive-normal",
     overflowCountClassName: I,
@@ -112,19 +112,19 @@ function v(e) {
     let e = l()(t).take(o).map(e => {
         let t = _.ZP.getName(e);
         return T ? (0, r.jsx)("div", {
-          className: a()(p.avatar, v),
+          className: a()(p.avatar, b),
           children: (0, r.jsx)(c.qEK, {
             src: e.getAvatarURL(s, 24),
             "aria-label": t,
-            size: b
+            size: v
           })
         }, e.id) : (0, r.jsx)(c.DY3, {
           text: t,
-          className: a()(p.avatar, v),
+          className: a()(p.avatar, b),
           children: (0, r.jsx)(c.qEK, {
             src: e.getAvatarURL(s, 24),
             "aria-label": t,
-            size: b
+            size: v
           })
         }, e.id)
       }).value(),

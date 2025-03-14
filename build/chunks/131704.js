@@ -34,7 +34,7 @@ n.d(t, {
   sR: () => j,
   tx: () => P,
   uC: () => H,
-  vc: () => F,
+  vc: () => V,
   vd: () => B,
   vg: () => et,
   xL: () => $,
@@ -66,7 +66,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -79,7 +79,7 @@ function v(e) {
   return e
 }
 
-function b(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -91,7 +91,7 @@ function b(e, t) {
 }
 
 function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -139,10 +139,10 @@ let G = new Set([m.d4z.DM, m.d4z.GROUP_DM, m.d4z.GUILD_VOICE, m.d4z.GUILD_STAGE_
 function B(e) {
   return G.has(e)
 }
-let V = new Set([m.d4z.GUILD_TEXT, m.d4z.GUILD_ANNOUNCEMENT, m.d4z.ANNOUNCEMENT_THREAD, m.d4z.PUBLIC_THREAD, m.d4z.PRIVATE_THREAD, m.d4z.GUILD_DIRECTORY, m.d4z.GUILD_FORUM, m.d4z.GUILD_MEDIA, m.d4z.DM, m.d4z.GROUP_DM]);
+let F = new Set([m.d4z.GUILD_TEXT, m.d4z.GUILD_ANNOUNCEMENT, m.d4z.ANNOUNCEMENT_THREAD, m.d4z.PUBLIC_THREAD, m.d4z.PRIVATE_THREAD, m.d4z.GUILD_DIRECTORY, m.d4z.GUILD_FORUM, m.d4z.GUILD_MEDIA, m.d4z.DM, m.d4z.GROUP_DM]);
 
-function F(e) {
-  return V.has(e)
+function V(e) {
+  return F.has(e)
 }
 let Z = new Set([m.d4z.ANNOUNCEMENT_THREAD, m.d4z.PUBLIC_THREAD, m.d4z.PRIVATE_THREAD]),
   H = new Set([m.d4z.GUILD_TEXT, m.d4z.GUILD_ANNOUNCEMENT, m.d4z.GUILD_FORUM, m.d4z.GUILD_MEDIA]);
@@ -255,7 +255,7 @@ class em extends e_ {
     return null !== (e = this.flags_) && void 0 !== e ? e : 0
   }
   toJS() {
-    return v({}, this)
+    return b({}, this)
   }
   set(e, t) {
     return this.merge(ep({
@@ -506,7 +506,7 @@ class eE extends em {
     super(e), this.application_id = e.application_id, this.bitrate_ = e.bitrate_, this.flags_ = e.flags_, this.iconEmoji = e.iconEmoji, this.lastMessageId = e.lastMessageId, this.lastPinTimestamp = e.lastPinTimestamp, this.memberListId = e.memberListId, this.nsfw_ = e.nsfw_, this.originChannelId = e.originChannelId, this.parent_id = e.parent_id, this.permissionOverwrites_ = null !== (t = e.permissionOverwrites_) && void 0 !== t ? t : {}, this.position_ = e.position_, this.rateLimitPerUser_ = e.rateLimitPerUser_, this.rtcRegion = e.rtcRegion, this.themeColor = e.themeColor, this.topic_ = e.topic_, this.userLimit_ = e.userLimit_, this.version = e.version, this.videoQualityMode = e.videoQualityMode, this.hdStreamingUntil = e.hdStreamingUntil, this.hdStreamingBuyerId = e.hdStreamingBuyerId
   }
 }
-class ev extends em {
+class eb extends em {
   static fromServer(e, t) {
     var n, r, i, o;
     return eG({
@@ -540,12 +540,12 @@ class ev extends em {
     super(e), this.application_id = e.application_id, this.defaultAutoArchiveDuration = e.defaultAutoArchiveDuration, this.defaultThreadRateLimitPerUser = e.defaultThreadRateLimitPerUser, this.flags_ = e.flags_, this.iconEmoji = e.iconEmoji, this.lastMessageId = e.lastMessageId, this.lastPinTimestamp = e.lastPinTimestamp, this.memberListId = e.memberListId, this.nsfw_ = e.nsfw_, this.parent_id = e.parent_id, this.permissionOverwrites_ = null !== (t = e.permissionOverwrites_) && void 0 !== t ? t : {}, this.position_ = e.position_, this.rateLimitPerUser_ = e.rateLimitPerUser_, this.themeColor = e.themeColor, this.topic_ = e.topic_, this.version = e.version, this.linkedLobby = e.linkedLobby, this.hdStreamingBuyerId = e.hdStreamingBuyerId, this.hdStreamingUntil = e.hdStreamingUntil
   }
 }
-class eb extends ev {}
-class ey extends ev {}
-class eO extends ev {}
+class ev extends eb {}
+class ey extends eb {}
+class eO extends eb {}
 class eI extends eE {}
-class eS extends ev {}
-class eT extends ev {}
+class eS extends eb {}
+class eT extends eb {}
 class eN extends eE {}
 class eA extends em {
   static fromServer(e, t) {
@@ -645,7 +645,7 @@ class ew extends em {
     {
       var r;
       let n = this.set("recipients", i().uniq([...null !== (r = this.recipients) && void 0 !== r ? r : [], e]).sort(h.default.compare));
-      return null == t ? n : n.set("nicks", y(v({}, n.nicks), {
+      return null == t ? n : n.set("nicks", y(b({}, n.nicks), {
         [e]: t
       }))
     }
@@ -710,16 +710,16 @@ class ex extends em {
 let eM = {
   [m.d4z.DM]: ew.fromServer,
   [m.d4z.GROUP_DM]: ew.fromServer,
-  [m.d4z.GUILD_TEXT]: ev.fromServer,
+  [m.d4z.GUILD_TEXT]: eb.fromServer,
   [m.d4z.GUILD_VOICE]: eE.fromServer,
   [m.d4z.GUILD_STAGE_VOICE]: eE.fromServer,
-  [m.d4z.GUILD_CATEGORY]: ev.fromServer,
-  [m.d4z.GUILD_ANNOUNCEMENT]: ev.fromServer,
-  [m.d4z.GUILD_STORE]: ev.fromServer,
+  [m.d4z.GUILD_CATEGORY]: eb.fromServer,
+  [m.d4z.GUILD_ANNOUNCEMENT]: eb.fromServer,
+  [m.d4z.GUILD_STORE]: eb.fromServer,
   [m.d4z.ANNOUNCEMENT_THREAD]: ex.fromServer,
   [m.d4z.PUBLIC_THREAD]: ex.fromServer,
   [m.d4z.PRIVATE_THREAD]: ex.fromServer,
-  [m.d4z.GUILD_DIRECTORY]: ev.fromServer,
+  [m.d4z.GUILD_DIRECTORY]: eb.fromServer,
   [m.d4z.GUILD_FORUM]: eA.fromServer,
   [m.d4z.GUILD_MEDIA]: eA.fromServer
 };
@@ -739,7 +739,7 @@ let eU = {
   [m.d4z.GUILD_VOICE]: eN,
   [m.d4z.GUILD_STAGE_VOICE]: eI,
   [m.d4z.GUILD_CATEGORY]: ey,
-  [m.d4z.GUILD_ANNOUNCEMENT]: eb,
+  [m.d4z.GUILD_ANNOUNCEMENT]: ev,
   [m.d4z.GUILD_STORE]: eS,
   [m.d4z.ANNOUNCEMENT_THREAD]: ex,
   [m.d4z.PUBLIC_THREAD]: ex,

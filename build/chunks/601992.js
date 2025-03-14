@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   R: () => l,
-  Z: () => b
+  Z: () => v
 });
 var r = n(442837),
   i = n(570140),
@@ -52,7 +52,7 @@ function E(e) {
   } = e, o = Date.now();
   c = o, null != t && (_[t] = o), n && (u = o, null != t && (p[t] = o)), r && (d = o, null != t && (m[t] = o)), i && (f = o, null != t && (h[t] = o))
 }
-class v extends r.ZP.Store {
+class b extends r.ZP.Store {
   getGlobalStats() {
     let e = e => null == e ? null : Math.floor((Date.now() - e) / 1e3);
     return {
@@ -76,7 +76,7 @@ class v extends r.ZP.Store {
     }
   }
 }
-let b = new v(i.Z, {
+let v = new b(i.Z, {
   CONNECTION_OPEN: g,
   MESSAGE_NOTIFICATION_SHOWN: E
 })

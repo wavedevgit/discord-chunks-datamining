@@ -27,8 +27,8 @@ function E(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let v = null,
-  b = !1,
+let b = null,
+  v = !1,
   y = 12096e5,
   O = 864e5;
 
@@ -92,18 +92,18 @@ function A(e) {
 }
 
 function C() {
-  if (P(), h.Z.getFetchState() !== h.M.FETCHED || b) return;
+  if (P(), h.Z.getFetchState() !== h.M.FETCHED || v) return;
   let e = (0, m.GT)();
   if ((null == e ? void 0 : e.redeemable_at) == null) return;
   let t = (null == e ? void 0 : e.redeemable_at) != null ? new Date(e.redeemable_at).getTime() - Date.now() : null;
-  null != t && t > 0 && (v = setTimeout(S, t))
+  null != t && t > 0 && (b = setTimeout(S, t))
 }
 async function R() {
-  !b && (b = !0, await _.V(), b = !1, o.Z.wait(() => C()))
+  !v && (v = !0, await _.V(), v = !1, o.Z.wait(() => C()))
 }
 
 function P() {
-  clearTimeout(v), v = null
+  clearTimeout(b), b = null
 }
 
 function w() {

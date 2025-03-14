@@ -79,16 +79,16 @@ function E(e) {
     className: p,
     selectable: g = !1,
     isSquircle: E,
-    onFocus: v,
-    onBlur: b,
+    onFocus: b,
+    onBlur: v,
     onMouseOver: y,
     onMouseLeave: O
   } = e, I = m(e, ["section", "isSelected", "width", "height", "className", "selectable", "isSquircle", "onFocus", "onBlur", "onMouseOver", "onMouseLeave"]);
   let [S, T] = i.useState(!1), N = i.useCallback(() => {
-    T(!0), null == v || v()
-  }, [v]), A = i.useCallback(() => {
-    T(!1), null == b || b()
-  }, [b]), C = i.useCallback(() => {
+    T(!0), null == b || b()
+  }, [b]), A = i.useCallback(() => {
+    T(!1), null == v || v()
+  }, [v]), C = i.useCallback(() => {
     T(!0), null == y || y()
   }, [y]), R = i.useCallback(() => {
     T(!1), null == O || O()

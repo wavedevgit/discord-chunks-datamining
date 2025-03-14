@@ -16,8 +16,8 @@ var r = n(325008),
   m = n(859209),
   g = n(936940),
   E = n(740362),
-  v = n(644659).enforce,
-  b = n(930990),
+  b = n(644659).enforce,
+  v = n(930990),
   y = n(641236),
   O = n(973326),
   I = n(440196),
@@ -49,7 +49,7 @@ var r = n(325008),
     }
     return i
   },
-  V = function(e) {
+  F = function(e) {
     for (var t, n = e.length, r = 0, i = "", o = [], a = {}, s = !1, l = !1, c = 0, u = ""; r <= n; r++) {
       if ("\\" === (t = R(e, r))) t += R(e, ++r);
       else if ("]" === t) s = !1;
@@ -70,20 +70,20 @@ var r = n(325008),
     return [i, o]
   };
 if (a("RegExp", G)) {
-  for (var F = function(e, t) {
+  for (var V = function(e, t) {
       var n, r, i, o, a, c, p = u(N, this),
         h = d(e),
         m = void 0 === t,
         g = [],
         E = e;
-      if (!p && h && m && e.constructor === F) return e;
-      if ((h || u(N, e)) && (e = e.source, m && (t = _(E))), e = void 0 === e ? "" : f(e), t = void 0 === t ? "" : f(t), E = e, O && "dotAll" in x && (r = !!t && w(t, "s") > -1) && (t = P(t, /s/g, "")), n = t, j && "sticky" in x && (i = !!t && w(t, "y") > -1) && U && (t = P(t, /y/g, "")), I && (e = (o = V(e))[0], g = o[1]), a = s(T(e, t), p ? this : N, F), (r || i || g.length) && (c = v(a), r && (c.dotAll = !0, c.raw = F(B(e), n)), i && (c.sticky = !0), g.length && (c.groups = g)), e !== E) try {
+      if (!p && h && m && e.constructor === V) return e;
+      if ((h || u(N, e)) && (e = e.source, m && (t = _(E))), e = void 0 === e ? "" : f(e), t = void 0 === t ? "" : f(t), E = e, O && "dotAll" in x && (r = !!t && w(t, "s") > -1) && (t = P(t, /s/g, "")), n = t, j && "sticky" in x && (i = !!t && w(t, "y") > -1) && U && (t = P(t, /y/g, "")), I && (e = (o = F(e))[0], g = o[1]), a = s(T(e, t), p ? this : N, V), (r || i || g.length) && (c = b(a), r && (c.dotAll = !0, c.raw = V(B(e), n)), i && (c.sticky = !0), g.length && (c.groups = g)), e !== E) try {
         l(a, "source", "" === E ? "(?:)" : E)
       } catch (e) {}
       return a
-    }, Z = c(T), H = 0; Z.length > H;) h(F, T, Z[H++]);
-  N.constructor = F, F.prototype = N, m(i, "RegExp", F, {
+    }, Z = c(T), H = 0; Z.length > H;) h(V, T, Z[H++]);
+  N.constructor = V, V.prototype = N, m(i, "RegExp", V, {
     constructor: !0
   })
 }
-b("RegExp")
+v("RegExp")

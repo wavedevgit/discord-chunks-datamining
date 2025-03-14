@@ -64,7 +64,7 @@ function E(e) {
   }
 }
 
-function v(e) {
+function b(e) {
   var t;
   let {
     guild: n
@@ -72,7 +72,7 @@ function v(e) {
   null != r && ((0, d.i9)(r) || (0, d.ur)(r)) && (p[n.id] = r)
 }
 
-function b(e) {
+function v(e) {
   let {
     guild: t
   } = e, n = g(t.incidents_data);
@@ -106,8 +106,8 @@ class I extends(r = i.ZP.Store) {
 f(I, "displayName", "GuildIncidentsStore");
 let S = new I(o.Z, {
   CONNECTION_OPEN: E,
-  GUILD_CREATE: v,
-  GUILD_UPDATE: b,
+  GUILD_CREATE: b,
+  GUILD_UPDATE: v,
   GUILD_DELETE: y,
   LOGOUT: O
 })

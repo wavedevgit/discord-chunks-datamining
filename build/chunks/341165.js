@@ -26,13 +26,13 @@ function h(e, t, n) {
 let m = {},
   g = {},
   E = {},
-  v = {},
-  b = !1,
+  b = {},
+  v = !1,
   y = !1,
   O = !1;
 
 function I() {
-  m = {}, g = {}, E = {}, v = {}, r = null, y = !1, O = !1, b = !1
+  m = {}, g = {}, E = {}, b = {}, r = null, y = !1, O = !1, v = !1
 }
 
 function S(e) {
@@ -66,7 +66,7 @@ function A(e) {
 
 function C(e) {
   var t;
-  v[e.invite.code] = _.Z.createFromServer(e.invite), r = null !== (t = a()(l()(u()(Object.values(v), "createdAt")))) && void 0 !== t ? t : null, O = !1
+  b[e.invite.code] = _.Z.createFromServer(e.invite), r = null !== (t = a()(l()(u()(Object.values(b), "createdAt")))) && void 0 !== t ? t : null, O = !1
 }
 
 function R() {
@@ -76,8 +76,8 @@ function R() {
 function P(e) {
   var t;
   null != e.invites && e.invites.forEach(e => {
-    null != v[e.code] && delete v[e.code]
-  }), r = null !== (t = a()(l()(u()(Object.values(v), "createdAt")))) && void 0 !== t ? t : null, y = !1
+    null != b[e.code] && delete b[e.code]
+  }), r = null !== (t = a()(l()(u()(Object.values(b), "createdAt")))) && void 0 !== t ? t : null, y = !1
 }
 
 function w() {
@@ -89,14 +89,14 @@ function D() {
 }
 
 function L() {
-  b = !0
+  v = !0
 }
 
 function x(e) {
   var t;
-  v = {}, e.invites.forEach(e => {
-    v[e.code] = _.Z.createFromServer(e)
-  }), r = null !== (t = a()(l()(u()(Object.values(v), "createdAt")))) && void 0 !== t ? t : null, b = !1
+  b = {}, e.invites.forEach(e => {
+    b[e.code] = _.Z.createFromServer(e)
+  }), r = null !== (t = a()(l()(u()(Object.values(b), "createdAt")))) && void 0 !== t ? t : null, v = !1
 }
 
 function M(e) {
@@ -116,7 +116,7 @@ class k extends(i = d.ZP.Store) {
     return r
   }
   getFriendInvitesFetching() {
-    return b
+    return v
   }
   canRevokeFriendInvite() {
     return null != r && !y && !O

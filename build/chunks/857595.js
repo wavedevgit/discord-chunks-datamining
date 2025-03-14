@@ -8,13 +8,13 @@ n.d(t, {
   TX: () => I,
   Uv: () => A,
   ZZ: () => d,
-  Zt: () => b,
+  Zt: () => v,
   cq: () => f,
   eN: () => N,
   f1: () => h,
   gs: () => S,
   lq: () => m,
-  o2: () => v,
+  o2: () => b,
   oL: () => u,
   qz: () => y,
   r_: () => g,
@@ -92,14 +92,14 @@ function E(e) {
   })
 }
 
-function v(e) {
+function b(e) {
   r.Z.dispatch({
     type: "ACCESSIBILITY_SET_SATURATION",
     saturation: e
   })
 }
 
-function b(e) {
+function v(e) {
   let t = a.Z.useReducedMotion;
   r.Z.dispatch({
     type: "ACCESSIBILITY_SET_PREFERS_REDUCED_MOTION",

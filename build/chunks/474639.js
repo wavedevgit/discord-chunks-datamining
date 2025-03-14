@@ -19,8 +19,8 @@ var r = n(46973),
   m = n(358085),
   g = n(924557),
   E = n(435064),
-  v = n(894694),
-  b = n(779618),
+  b = n(894694),
+  v = n(779618),
   y = n(356659),
   O = n(981631),
   I = n(70722);
@@ -97,7 +97,7 @@ class T extends o.Z {
     null === (e = f.Z.getUserIds()) || void 0 === e || e.forEach(e => this.maybeShowClipsWarning(e))
   }
   handlePostConnectionOpen() {
-    if ((0, b.Z)(d.Z)) {
+    if ((0, v.Z)(d.Z)) {
       if (this.applyNativeClipsSettings(), !(0, g.ln)()) {
         E.Z.getSettings().clipsEnabled && this.disableClips();
         return
@@ -116,7 +116,7 @@ class T extends o.Z {
       channelId: i,
       guildId: o
     } = e;
-    if (n !== r.Yn.STREAM || !(0, b.Z)(d.Z)) return;
+    if (n !== r.Yn.STREAM || !(0, v.Z)(d.Z)) return;
     let a = _.Z.getRTCConnection(s.V9({
       streamType: null != o ? I.lo.GUILD : I.lo.CALL,
       ownerId: t,
@@ -159,19 +159,19 @@ class T extends o.Z {
         gpu_models: e
       }), t
     } catch (e) {
-      return v.x.UNKNOWN
+      return b.x.UNKNOWN
     }
   }
   classifyHardware(e) {
     if ((0, m.isWindows)()) {
       let t = e.some(e => y.mg.test(e)),
         n = e.some(e => y.nU.test(e));
-      return t ? v.x.MEETS_AUTO_ENABLE : n ? v.x.MEETS_MINIMUM : v.x.BELOW_MINIMUM
+      return t ? b.x.MEETS_AUTO_ENABLE : n ? b.x.MEETS_MINIMUM : b.x.BELOW_MINIMUM
     }
-    return (0, m.isMac)() ? "arm64" === a.Z.remoteApp.getAppArch() ? v.x.MEETS_AUTO_ENABLE : v.x.MEETS_MINIMUM : v.x.UNKNOWN
+    return (0, m.isMac)() ? "arm64" === a.Z.remoteApp.getAppArch() ? b.x.MEETS_AUTO_ENABLE : b.x.MEETS_MINIMUM : b.x.UNKNOWN
   }
   applyUserVoiceRecording(e) {
-    if (!(0, b.Z)(d.Z)) return;
+    if (!(0, v.Z)(d.Z)) return;
     let t = f.Z.getRTCConnection();
     if (null == t) return;
     if (e === u.default.getId()) {
@@ -182,7 +182,7 @@ class T extends o.Z {
     t.setClipRecordUser(e, "audio", n)
   }
   applyStreamRecording(e, t) {
-    if (!(0, b.Z)(d.Z)) return;
+    if (!(0, v.Z)(d.Z)) return;
     if (u.default.getId() === e) {
       let {
         clipsEnabled: n

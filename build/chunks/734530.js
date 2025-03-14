@@ -112,18 +112,18 @@
   function p(e) {
     return e && e.__esModule && Object.prototype.hasOwnProperty.call(e, "default") ? e.default : e
   }
-  var h, m, g, E, v = {
+  var h, m, g, E, b = {
     exports: {}
   };
 
-  function b() {
+  function v() {
     return m ? h : (m = 1, h = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED")
   }
 
   function y() {
     if (E) return g;
     E = 1;
-    var e = b();
+    var e = v();
 
     function t() {}
 
@@ -165,8 +165,8 @@
       return o.PropTypes = o, o
     }
   }
-  v.exports = y()();
-  var O = p(v.exports),
+  b.exports = y()();
+  var O = p(b.exports),
     I = function(e, n, r) {
       var i = !!r,
         o = t.useRef(r);
@@ -328,9 +328,9 @@
   B.propTypes = {
     children: O.func.isRequired
   };
-  var V = ["on", "session"],
-    F = t.createContext(null);
-  F.displayName = "CustomCheckoutSdkContext";
+  var F = ["on", "session"],
+    V = t.createContext(null);
+  V.displayName = "CustomCheckoutSdkContext";
   var Z = function(e, t) {
       if (!e) throw Error("Could not find CustomCheckoutProvider context; You need to wrap the part of your app that ".concat(t, " in an <CustomCheckoutProvider> provider."));
       return e
@@ -340,7 +340,7 @@
   var W = function(e, t) {
       if (!e) return null;
       e.on, e.session;
-      var n = s(e, V);
+      var n = s(e, F);
       return t ? r(r({}, n), t) : r(r({}, n), e.session())
     },
     Y = "Invalid prop `stripe` supplied to `CustomCheckoutProvider`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.",
@@ -402,7 +402,7 @@
       var g = t.useMemo(function() {
         return W(d.customCheckoutSdk, s)
       }, [d.customCheckoutSdk, s]);
-      return d.customCheckoutSdk ? t.createElement(F.Provider, {
+      return d.customCheckoutSdk ? t.createElement(V.Provider, {
         value: d
       }, t.createElement(H.Provider, {
         value: g
@@ -416,10 +416,10 @@
     }).isRequired
   };
   var z = function(e) {
-      return Z(t.useContext(F), e)
+      return Z(t.useContext(V), e)
     },
     q = function(e) {
-      var n = t.useContext(F),
+      var n = t.useContext(V),
         r = t.useContext(M);
       if (n && r) throw Error("You cannot wrap the part of your app that ".concat(e, " in both <CustomCheckoutProvider> and <Elements> providers."));
       return n ? Z(n, e) : k(r, e)
@@ -449,8 +449,8 @@
             m = n.onLoadError,
             g = n.onLoaderStart,
             E = n.onNetworksChange,
-            v = n.onConfirm,
-            b = n.onCancel,
+            b = n.onConfirm,
+            v = n.onCancel,
             y = n.onShippingAddressChange,
             O = n.onShippingRateChange,
             T = q("mounts <".concat(r, ">")),
@@ -461,7 +461,7 @@
             w = C[1],
             D = t.useRef(null),
             L = t.useRef(null);
-          I(R, "blur", u), I(R, "focus", d), I(R, "escape", p), I(R, "click", h), I(R, "loaderror", m), I(R, "loaderstart", g), I(R, "networkschange", E), I(R, "confirm", v), I(R, "cancel", b), I(R, "shippingaddresschange", y), I(R, "shippingratechange", O), I(R, "change", _), f && (i = "expressCheckout" === e ? f : function() {
+          I(R, "blur", u), I(R, "focus", d), I(R, "escape", p), I(R, "click", h), I(R, "loaderror", m), I(R, "loaderstart", g), I(R, "networkschange", E), I(R, "confirm", b), I(R, "cancel", v), I(R, "shippingaddresschange", y), I(R, "shippingratechange", O), I(R, "change", _), f && (i = "expressCheckout" === e ? f : function() {
             f(R)
           }), I(R, "ready", i), t.useLayoutEffect(function() {
             if (null === D.current && null !== L.current && (N || A)) {
@@ -620,13 +620,13 @@
     em = J("p24Bank", $),
     eg = J("epsBank", $),
     eE = J("payment", $),
-    ev = J("expressCheckout", $),
-    eb = J("paymentRequestButton", $),
+    eb = J("expressCheckout", $),
+    ev = J("paymentRequestButton", $),
     ey = J("linkAuthentication", $),
     eO = J("address", $),
     eI = J("shippingAddress", $),
     eS = J("paymentMethodMessaging", $),
     eT = J("affirmMessage", $),
     eN = J("afterpayClearpayMessage", $);
-  e.AddressElement = eO, e.AffirmMessageElement = eT, e.AfterpayClearpayMessageElement = eN, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CustomCheckoutProvider = K, e.Elements = j, e.ElementsConsumer = B, e.EmbeddedCheckout = ea, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = eg, e.ExpressCheckoutElement = ev, e.FpxBankElement = e_, e.IbanElement = ep, e.IdealBankElement = eh, e.LinkAuthenticationElement = ey, e.P24BankElement = em, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eS, e.PaymentRequestButtonElement = eb, e.ShippingAddressElement = eI, e.useCustomCheckout = Q, e.useElements = G, e.useStripe = es
+  e.AddressElement = eO, e.AffirmMessageElement = eT, e.AfterpayClearpayMessageElement = eN, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CustomCheckoutProvider = K, e.Elements = j, e.ElementsConsumer = B, e.EmbeddedCheckout = ea, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = eg, e.ExpressCheckoutElement = eb, e.FpxBankElement = e_, e.IbanElement = ep, e.IdealBankElement = eh, e.LinkAuthenticationElement = ey, e.P24BankElement = em, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eS, e.PaymentRequestButtonElement = ev, e.ShippingAddressElement = eI, e.useCustomCheckout = Q, e.useElements = G, e.useStripe = es
 })

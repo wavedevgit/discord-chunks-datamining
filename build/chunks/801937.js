@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(351402),
   g = n(358085),
   E = n(981631),
-  v = n(388032),
-  b = n(834890),
+  b = n(388032),
+  v = n(834890),
   y = n(612064);
 
 function O(e, t, n) {
@@ -171,11 +171,11 @@ class M extends i.PureComponent {
         children: (0, r.jsxs)("div", {
           className: a()(y.flex, y.alignCenter),
           children: [(0, r.jsx)(p.ZP, {
-            className: b.buttonIcon,
+            className: v.buttonIcon,
             type: n
           }), i, o && (0, r.jsx)(l.IGR, {
-            text: v.NW.string(v.t.y2b7CA),
-            className: b.newPaymentBadge,
+            text: b.NW.string(b.t.y2b7CA),
+            className: v.newPaymentBadge,
             disableColor: !0
           })]
         })
@@ -195,8 +195,8 @@ class M extends i.PureComponent {
       paymentRequestPaymentContext: d,
       isEligibleForTrial: _ = !1
     } = this.props, p = null !== (e = this.props.paymentRequestWallets) && void 0 !== e ? e : [], h = {
-      iconClassName: b.buttonIcon,
-      paymentLabel: v.NW.string(v.t.ZURqX1),
+      iconClassName: v.buttonIcon,
+      paymentLabel: b.NW.string(b.t.ZURqX1),
       onStripePaymentMethodReceived: o,
       onChooseType: n,
       paymentRequestPaymentContext: d
@@ -221,19 +221,19 @@ class M extends i.PureComponent {
     }
     let S = (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
-        className: a()(y.wrap, y.horizontal, b.container),
+        className: a()(y.wrap, y.horizontal, v.container),
         children: [g, m]
       }), (0, r.jsx)("div", {
-        className: E.length > 0 ? y.flex : b.hidden,
+        className: E.length > 0 ? y.flex : v.hidden,
         children: (0, r.jsxs)(l.P3F, {
           onClick: () => this.toggleAllPayments(),
-          className: a()(y.flex, b.allPaymentsToggleButton),
-          children: [v.NW.string(v.t["4uiQm5"]), (0, r.jsx)(u.Z, {
+          className: a()(y.flex, v.allPaymentsToggleButton),
+          children: [b.NW.string(b.t["4uiQm5"]), (0, r.jsx)(u.Z, {
             open: t
           })]
         })
       }), t && (0, r.jsx)("div", {
-        className: a()(y.wrap, y.horizontal, b.allPaymentsSection, b.container, {
+        className: a()(y.wrap, y.horizontal, v.allPaymentsSection, v.container, {
           [y.flex]: t
         }),
         children: E
@@ -241,20 +241,20 @@ class M extends i.PureComponent {
     });
     return O && !c && (S = (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
-        className: b.hidden,
+        className: v.hidden,
         children: m
       }), (0, r.jsx)(l.$jN, {
         type: l.$jN.Type.SPINNING_CIRCLE
       })]
     })), (0, r.jsxs)("div", {
       children: [_ && (0, r.jsx)("hr", {
-        className: b.SeparatorUpper
+        className: v.SeparatorUpper
       }), (0, r.jsx)(l.hjN, {
-        title: _ ? v.NW.string(v.t.tywMsb) : v.NW.string(v.t["8lqkf3"]),
+        title: _ ? b.NW.string(b.t.tywMsb) : b.NW.string(b.t["8lqkf3"]),
         className: i,
         children: S
       }), _ && (0, r.jsx)("hr", {
-        className: b.SeparatorLower
+        className: v.SeparatorLower
       })]
     })
   }

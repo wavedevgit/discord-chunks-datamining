@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => b
+  ZP: () => v
 }), n(266796), n(411104);
 var r = n(688619),
   i = n.n(r),
@@ -24,7 +24,7 @@ let {
   Spacing: g
 } = u.V, E = Symbol("semanticColor");
 
-function v(e) {
+function b(e) {
   if ("string" == typeof e) {
     let t = e.toUpperCase();
     if (!(t in _)) throw Error("Invalid theme: ".concat(e));
@@ -32,7 +32,7 @@ function v(e) {
   }
   return e
 }
-let b = {
+let v = {
   themes: _,
   colors: a()(p, (e, t) => ({
     [E]: t
@@ -59,7 +59,7 @@ let b = {
     getSemanticColorName: e => e[E],
     resolveSemanticColor(e, t, n) {
       var r, o;
-      e = v(e);
+      e = b(e);
       let a = p[t[E]],
         {
           category: s

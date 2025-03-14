@@ -56,15 +56,15 @@ let g = n(981631).en1 + 500;
 var E = function(e) {
   return e[e.ChannelMessage = 0] = "ChannelMessage", e[e.ThreadSettings = 1] = "ThreadSettings", e[e.FirstThreadMessage = 2] = "FirstThreadMessage", e[e.ApplicationLauncherCommand = 3] = "ApplicationLauncherCommand", e[e.Poll = 4] = "Poll", e[e.SlashCommand = 5] = "SlashCommand", e[e.ForwardContextMessage = 6] = "ForwardContextMessage", e
 }({});
-let v = {};
+let b = {};
 
-function b(e) {
+function v(e) {
   return e.length > g && (e = e.substr(0, g)), e
 }
 
 function y(e) {
-  let t = v[e];
-  return null == t && (t = v[e] = {}), t
+  let t = b[e];
+  return null == t && (t = b[e] = {}), t
 }
 
 function O(e) {
@@ -80,7 +80,7 @@ function O(e) {
     var s;
     let e = y(a),
       t = e[n];
-    if (null == t && (t = e[n] = {}), (r = b(r)) === (null === (s = t[i]) || void 0 === s ? void 0 : s.draft)) return !1;
+    if (null == t && (t = e[n] = {}), (r = v(r)) === (null === (s = t[i]) || void 0 === s ? void 0 : s.draft)) return !1;
     t[i] = {
       timestamp: Date.now(),
       draft: r
@@ -130,7 +130,7 @@ function N() {
 
 function A() {
   let e = u.default.getId();
-  return e in v || (v[e] = {}), N(), !1
+  return e in b || (b[e] = {}), N(), !1
 }
 
 function C() {
@@ -173,15 +173,15 @@ function P(e) {
 }
 
 function w(e) {
-  e.isSwitchingAccount || (v = {})
+  e.isSwitchingAccount || (b = {})
 }
 
 function D(e) {
-  e.userId in v && delete v[e.userId]
+  e.userId in b && delete b[e.userId]
 }
 
 function L() {
-  for (let [e, t] of c.default.entries(v))
+  for (let [e, t] of c.default.entries(b))
     for (let [n, r] of c.default.entries(t)) {
       let t = r[0];
       null != t && ("" === t.draft || "" === t.draft.trim()) && T(n, 0, e)
@@ -189,10 +189,10 @@ function L() {
 }
 class x extends(r = a.ZP.PersistedStore) {
   initialize(e) {
-    v = null != e ? e : {}, L(), this.waitFor(u.default, d.Z, f.Z)
+    b = null != e ? e : {}, L(), this.waitFor(u.default, d.Z, f.Z)
   }
   getState() {
-    return v
+    return b
   }
   getThreadDraftWithParentMessageId(e) {
     let t = u.default.getId();

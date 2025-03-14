@@ -64,14 +64,14 @@ function m(e, t) {
   let u = (0, i.e7)([a.Z], () => a.Z.hasLoadedExperiments),
     f = null == e ? void 0 : e.includeBundles,
     m = (0, c.hv)("useMaybeFetchCollectiblesCategoriesShared"),
-    [g, E, v, b, y, O] = (0, i.Wu)([l.Z], () => {
+    [g, E, b, v, y, O] = (0, i.Wu)([l.Z], () => {
       var e, t;
       return [l.Z.isFetchingCategories, l.Z.lastFetchOptions, l.Z.error, null !== (e = l.Z.lastErrorTimestamp) && void 0 !== e ? e : 0, null !== (t = l.Z.lastSuccessfulFetch) && void 0 !== t ? t : 0, l.Z.categories]
     });
   return (0, r.useEffect)(() => {
     if (!u || g) return;
-    let n = Date.now() - b < h;
-    if (v && n) return;
+    let n = Date.now() - v < h;
+    if (b && n) return;
     let r = _(d({}, e), {
         includeBundles: f,
         variantsReturnStyle: m
@@ -79,10 +79,10 @@ function m(e, t) {
       i = !(0, s.oc)(E, r),
       o = Date.now() - y < p;
     (i || !o) && (0, s.F$)(r, t)
-  }, [u, g, E, y, e, v, f, b, m, t]), {
+  }, [u, g, E, y, e, b, f, v, m, t]), {
     isFetching: g,
     categories: O,
-    fetchCategoriesError: v,
+    fetchCategoriesError: b,
     refreshCategories: (0, r.useCallback)(() => {
       let t = _(d({}, e), {
         includeBundles: f

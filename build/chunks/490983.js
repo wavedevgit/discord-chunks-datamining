@@ -18,8 +18,8 @@ var r, i = n(658722),
   m = n(757266),
   g = n(77498),
   E = n(283595),
-  v = n(246946),
-  b = n(230307),
+  b = n(246946),
+  v = n(230307),
   y = n(799777),
   O = n(417363),
   I = n(941128),
@@ -56,7 +56,7 @@ function G(e, t) {
 function B(e, t) {
   return null != e && c()(e.createdAt).isAfter(M) && 0 === t
 }
-let V = {
+let F = {
     [D.iEv.NAME]: G,
     [D.iEv.PLATFORM]: (e, t, n) => {
       let r = e.libraryApplication.getDistributor(),
@@ -66,11 +66,11 @@ let V = {
     [D.iEv.LAST_PLAYED]: (e, t) => e.isNew && !t.isNew ? -1 : !e.isNew && t.isNew ? 1 : e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? -1 : 1,
     [D.iEv.ACTIONS]: null
   },
-  F = (0, T.oH)(e => e.filter(e => null != e.libraryApplication && e.shouldShowInLibrary)),
+  V = (0, T.oH)(e => e.filter(e => null != e.libraryApplication && e.shouldShowInLibrary)),
   Z = (0, T.oH)(e => e.filter(e => null != e.libraryApplication && O.Z.isLaunchable(e.libraryApplication.id, e.libraryApplication.branchId))),
   H = (0, T.oH)((e, t) => e.filter(e => o()(t.toLowerCase(), e.application.name.toLowerCase()))),
   W = (0, T.oH)((e, t, n, r) => {
-    let i = V[t];
+    let i = F[t];
     if (null == i) return e;
     let o = [...e].sort(i);
     return n === D.sHY.DESCENDING ? o.reverse() : o
@@ -78,7 +78,7 @@ let V = {
   Y = (0, T.oH)(e => e.filter(e => null != e.libraryApplication && e.libraryApplication.isHidden()));
 
 function K(e, t) {
-  let n = b.Z.getCurrentUserStatisticsForApplication(e.id);
+  let n = v.Z.getCurrentUserStatisticsForApplication(e.id);
   if (null != n) return new Date(n.last_played_at).getTime();
   let r = t[e.id];
   return null != r ? r : 0
@@ -114,7 +114,7 @@ function q(e, t, n, r, i) {
       branchId: e.branchId
     }),
     isUpdatingFlags: E.Z.isUpdatingFlags(e.id, e.branchId),
-    shouldShowInLibrary: (0, A.d0)(o, e, v.Z),
+    shouldShowInLibrary: (0, A.d0)(o, e, b.Z),
     defaultAction: (0, w.i)(e, O.Z, I.Z)
   } : null
 }
@@ -160,7 +160,7 @@ function X() {
 }
 class J extends(r = u.ZP.Store) {
   initialize() {
-    this.syncWith([f.Z, g.Z, p.Z, _.ZP, O.Z, I.Z, E.Z, b.Z, v.Z, m.Z], X, 200), this.syncWith([y.Z, h.default], () => !0)
+    this.syncWith([f.Z, g.Z, p.Z, _.ZP, O.Z, I.Z, E.Z, v.Z, b.Z, m.Z], X, 200), this.syncWith([y.Z, h.default], () => !0)
   }
   get applicationFilterQuery() {
     return j
@@ -172,7 +172,7 @@ class J extends(r = u.ZP.Store) {
     return Z(k)
   }
   get libraryApplicationViewItems() {
-    return F(k)
+    return V(k)
   }
   get filteredLibraryApplicationViewItems() {
     return H(this.libraryApplicationViewItems, j)

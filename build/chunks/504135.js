@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  s: () => v
+  s: () => b
 });
 var r = n(200651),
   i = n(192379),
@@ -55,15 +55,15 @@ function E(e, t) {
   }), e
 }
 
-function v(e) {
+function b(e) {
   let {
     color: t = "default",
     label: n,
     icon: o,
     iconLeft: h,
     iconLeftSize: g = "md",
-    hint: v,
-    subtext: b,
+    hint: b,
+    subtext: v,
     subtextLineClamp: y,
     hasSubmenu: O,
     disabled: I,
@@ -113,17 +113,17 @@ function v(e) {
       }))
     }), (0, r.jsxs)("div", {
       className: p.label,
-      children: [(0, l.I)(n, e), null != b && (0, r.jsx)(f.Text, {
+      children: [(0, l.I)(n, e), null != v && (0, r.jsx)(f.Text, {
         variant: "text-xs/normal",
         className: a()(p.subtext, {
           [p.subtextLineClamp]: null != y
         }),
         lineClamp: y,
-        children: b
+        children: v
       })]
-    }), null != v && (0, r.jsx)("div", {
+    }), null != b && (0, r.jsx)("div", {
       className: p.hintContainer,
-      children: (0, l.I)(v, e)
+      children: (0, l.I)(b, e)
     }), (0, d.Y)(o) ? o : null != o && (0, r.jsx)("div", {
       className: p.iconContainer,
       children: (0, r.jsx)(o, E(m({

@@ -38,13 +38,13 @@ function E(e) {
   return t.reduce((e, t) => r !== t.sessionId ? e : (_ !== t.suppress && (p = !(_ = t.suppress)), i !== t.channelId && (i = t.channelId, p = !_), (h || null == t.channelId) && (p = !0), !0), !1)
 }
 
-function v(e) {
+function b(e) {
   let {
     forever: t
   } = e;
   p = !0, t && (h = !0, s.K.set(f, h))
 }
-class b extends(o = a.ZP.Store) {
+class v extends(o = a.ZP.Store) {
   initialize() {
     h = s.K.get(f) || h
   }
@@ -59,10 +59,10 @@ class b extends(o = a.ZP.Store) {
     return !(null === (e = c.Z.getChannel(i)) || void 0 === e ? void 0 : e.isGuildStageVoice()) && !p
   }
 }
-d(b, "displayName", "PermissionSpeakStore");
-let y = new b(l.Z, {
+d(v, "displayName", "PermissionSpeakStore");
+let y = new v(l.Z, {
   CONNECTION_OPEN: m,
   CONNECTION_CLOSED: g,
   VOICE_STATE_UPDATES: E,
-  PERMISSION_CLEAR_SUPPRESS_WARNING: v
+  PERMISSION_CLEAR_SUPPRESS_WARNING: b
 })

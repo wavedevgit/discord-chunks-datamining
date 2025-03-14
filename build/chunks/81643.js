@@ -4,8 +4,8 @@ n.d(t, {
   F5: () => y,
   Jm: () => g,
   L5: () => m,
-  WD: () => b,
-  l6: () => v,
+  WD: () => v,
+  l6: () => b,
   pY: () => E,
   sf: () => h
 }), n(301563), n(47120);
@@ -44,12 +44,12 @@ function E(e, t) {
   return null == r ? void 0 : r.rawValue.split(",").includes("retry")
 }
 
-function v() {
+function b() {
   let e = (0, i.e7)([u.default], () => u.default.getCurrentUser());
   return (null == e ? void 0 : e.ageVerificationStatus) !== a.F$.UNVERIFIED
 }
 
-function b(e) {
+function v(e) {
   let [t, n] = r.useState(!1), a = (0, i.e7)([u.default], () => u.default.getCurrentUser()), {
     current: s
   } = r.useRef(null == a ? void 0 : a.ageVerificationStatus), c = r.useCallback(() => {

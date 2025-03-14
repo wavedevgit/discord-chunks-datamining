@@ -26,8 +26,8 @@ function E(e) {
     activities: n,
     applicationStream: i,
     textClassName: E,
-    emojiClassName: v,
-    animate: b = !0,
+    emojiClassName: b,
+    animate: v = !0,
     hideTooltip: y = !1,
     hideEmoji: O = !1,
     user: I,
@@ -50,9 +50,9 @@ function E(e) {
     })) && void 0 !== t ? t : null,
     L = (null == D ? void 0 : D.emoji) == null || O ? null : (0, r.jsx)(_.Z, {
       emoji: D.emoji,
-      animate: b,
+      animate: v,
       hideTooltip: y,
-      className: o()(g.emoji, v)
+      className: o()(g.emoji, b)
     });
   return w || null != L ? (0, r.jsxs)("div", {
     className: g.container,

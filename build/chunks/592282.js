@@ -40,7 +40,7 @@ function E(e) {
   return e
 }
 
-function v(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,8 +51,8 @@ function v(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -63,7 +63,7 @@ function y(e) {
     label: n,
     checked: o,
     subtext: g,
-    disabled: v,
+    disabled: b,
     isFocused: y,
     menuItemProps: O,
     action: I,
@@ -80,17 +80,17 @@ function y(e) {
       type: c.U.CHECKBOX
     })
   }, [I, N]);
-  return (0, r.jsxs)(s.P, b(E({
+  return (0, r.jsxs)(s.P, v(E({
     innerRef: A,
     className: a()(m.item, m.checkboxContainer, m.labelContainer, h._[t], S, {
-      [m.disabled]: v,
+      [m.disabled]: b,
       [m.focused]: y,
       [null != T ? T : ""]: y
     }),
-    onClick: v ? void 0 : R
+    onClick: b ? void 0 : R
   }, O), {
     "aria-checked": o,
-    "aria-disabled": v,
+    "aria-disabled": b,
     children: [(0, r.jsxs)("div", {
       className: m.label,
       children: [(0, l.I)(n, e), null != g && (0, r.jsx)("div", {
@@ -103,7 +103,7 @@ function y(e) {
         shape: d.XZJ.Shapes.BOX,
         size: 20,
         value: o,
-        disabled: v
+        disabled: b
       }) : o ? (0, r.jsx)(p.Z, {
         className: m.icon,
         background: m.checkbox,

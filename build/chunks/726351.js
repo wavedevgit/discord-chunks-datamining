@@ -48,11 +48,11 @@ e.exports = function(e) {
   }
   var E = e.reporter;
   E || (E = l(!1 === E));
-  var v = g(e, "batchProcessor", u({
+  var b = g(e, "batchProcessor", u({
       reporter: E
     })),
-    b = {};
-  b.callOnAdd = !!g(e, "callOnAdd", !0), b.debug = !!g(e, "debug", !1);
+    v = {};
+  v.callOnAdd = !!g(e, "callOnAdd", !0), v.debug = !!g(e, "debug", !1);
   var y = o(t),
     O = i({
       stateHandler: d
@@ -61,7 +61,7 @@ e.exports = function(e) {
     S = g(e, "important", !1),
     T = {
       reporter: E,
-      batchProcessor: v,
+      batchProcessor: b,
       stateHandler: d,
       idHandler: t,
       important: S
@@ -105,9 +105,9 @@ e.exports = function(e) {
         i = h(i)
       }
       var l = 0,
-        c = g(e, "callOnAdd", b.callOnAdd),
+        c = g(e, "callOnAdd", v.callOnAdd),
         u = g(e, "onReady", function() {}),
-        f = g(e, "debug", b.debug);
+        f = g(e, "debug", v.debug);
       r(i, function(e) {
         d.getState(e) || (d.initState(e), t.set(e));
         var _ = t.get(e);

@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(290799),
   g = n(394769),
   E = n(555932),
-  v = n(808189),
-  b = n(362948),
+  b = n(808189),
+  v = n(362948),
   y = n(245004),
   O = n(383881),
   I = n(981631),
@@ -95,7 +95,7 @@ let N = function(e) {
             onCtaVisibilityChange: C
           }), (0, r.jsx)(E.Z, {
             guild: n
-          }), (0, r.jsx)(v.Z, {
+          }), (0, r.jsx)(b.Z, {
             guild: n
           })]
         }), (0, r.jsx)(O.O, {})]
@@ -110,7 +110,7 @@ let N = function(e) {
         className: T.lowerBody,
         children: [(0, r.jsxs)("div", {
           className: T.lowerBodyContentWrapper,
-          children: [(0, r.jsx)(b.Z, {
+          children: [(0, r.jsx)(v.Z, {
             className: T.tierComparisonTable,
             guild: n
           }), (0, r.jsx)(p.Z, {}), (0, r.jsx)(m.Z, {})]

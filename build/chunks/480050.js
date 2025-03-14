@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => b
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -81,13 +81,13 @@ function E(e) {
     onClick: o,
     className: f,
     width: E,
-    height: v,
-    maxWidth: b,
+    height: b,
+    maxWidth: v,
     maxHeight: y
-  } = e, O = i.useRef(null), I = (0, u.vV)(E, v, b, y), {
+  } = e, O = i.useRef(null), I = (0, u.vV)(E, b, v, y), {
     width: S,
     height: T
-  } = g(E, v, b, y, n), [N, A] = (0, l.q_F)(() => ({
+  } = g(E, b, v, y, n), [N, A] = (0, l.q_F)(() => ({
     scale: 1,
     config: h
   })), [C, R] = (0, l.q_F)(() => ({
@@ -157,4 +157,4 @@ function E(e) {
     children: t
   })
 }
-let v = i.memo(E)
+let b = i.memo(E)

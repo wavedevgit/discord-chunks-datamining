@@ -61,14 +61,14 @@ function t(e) {
       })
     });
   p.contains = [E];
-  let v = e.inherit(f, {
+  let b = e.inherit(f, {
       keywords: n,
       className: "name",
       starts: e.inherit(g, {
         end: /\}\}/
       })
     }),
-    b = e.inherit(f, {
+    v = e.inherit(f, {
       keywords: n,
       className: "name"
     }),
@@ -94,7 +94,7 @@ function t(e) {
       className: "template-tag",
       begin: /\{\{\{\{(?!\/)/,
       end: /\}\}\}\}/,
-      contains: [v],
+      contains: [b],
       starts: {
         end: /\{\{\{\{\//,
         returnEnd: !0,
@@ -104,12 +104,12 @@ function t(e) {
       className: "template-tag",
       begin: /\{\{\{\{\//,
       end: /\}\}\}\}/,
-      contains: [b]
+      contains: [v]
     }, {
       className: "template-tag",
       begin: /\{\{#/,
       end: /\}\}/,
-      contains: [v]
+      contains: [b]
     }, {
       className: "template-tag",
       begin: /\{\{(?=else\}\})/,
@@ -124,7 +124,7 @@ function t(e) {
       className: "template-tag",
       begin: /\{\{\//,
       end: /\}\}/,
-      contains: [b]
+      contains: [v]
     }, {
       className: "template-variable",
       begin: /\{\{\{/,

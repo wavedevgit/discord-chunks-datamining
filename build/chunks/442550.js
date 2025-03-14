@@ -62,23 +62,23 @@ function m(e) {
     fallbackSrc: m,
     "aria-hidden": g,
     showTooltip: E = !1
-  } = e, v = (0, c.ZP)(), b = "".concat(n, "px"), [y, O] = i.useState(!1), [I, S] = i.useState(!1), T = null == m || I;
+  } = e, b = (0, c.ZP)(), v = "".concat(n, "px"), [y, O] = i.useState(!1), [I, S] = i.useState(!1), T = null == m || I;
   if (null == t || y && T) return (0, r.jsx)(l.IMN, {
     size: "custom",
     width: "100%",
     height: "100%",
-    color: (0, s.wj)(v) ? l.TVs.colors.WHITE : l.TVs.colors.BLACK,
+    color: (0, s.wj)(b) ? l.TVs.colors.WHITE : l.TVs.colors.BLACK,
     style: {
-      maxWidth: b
+      maxWidth: v
     },
     className: a()(d.contentImage, f)
   });
   let N = "height" === o ? {
-    maxWidth: b,
-    height: b
+    maxWidth: v,
+    height: v
   } : {
-    maxWidth: b,
-    minHeight: b
+    maxWidth: v,
+    minHeight: v
   };
   return (0, r.jsx)(l.ua7, {
     "aria-label": p,

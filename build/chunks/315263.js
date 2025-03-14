@@ -19,8 +19,8 @@ var r = n(873546),
   m = n(506895),
   g = n(960904),
   E = n(830121),
-  v = n(15274),
-  b = n(924301),
+  b = n(15274),
+  v = n(924301),
   y = n(543842),
   O = n(754688),
   I = n(336197),
@@ -181,8 +181,8 @@ function B(e) {
     host: w,
     hostname: j,
     pathname: B,
-    search: V,
-    hash: F
+    search: F,
+    hash: V
   } = null !== (t = L.Z.toURLSafe(e)) && void 0 !== t ? t : {}, Z = L.Z.isDiscordHostname(null != j ? j : null) || L.Z.isDiscordLocalhost(null != w ? w : null, null != j ? j : null);
   if (Z && ((null == B ? void 0 : B.startsWith("/application-directory")) || (null == B ? void 0 : B.startsWith("/discovery/applications")))) {
     let e = B.split("/"),
@@ -194,7 +194,7 @@ function B(e) {
       let r, a, s;
       if (null == t || t.preventDefault(), i) {
         var l, c, u;
-        let e = new URLSearchParams(V);
+        let e = new URLSearchParams(F);
         r = null !== (l = e.get("q")) && void 0 !== l ? l : void 0, a = null !== (c = e.get("category_id")) && void 0 !== c ? c : void 0, s = null !== (u = e.get("page")) && void 0 !== u ? u : void 0
       } else o && (a = e[4]);
       return n.e("11866").then(n.bind(n, 749681)).then(e => {
@@ -217,7 +217,7 @@ function B(e) {
       navigationReplace: !1,
       openChannel: !0
     };
-    return null != V && (e.search = V), null != F && (e.hash = F), t => (null == t || t.preventDefault(), (0, I.Z)(B, e), !0)
+    return null != F && (e.search = F), null != V && (e.hash = V), t => (null == t || t.preventDefault(), (0, I.Z)(B, e), !0)
   }
   if (null != B && Z) {
     let {
@@ -233,8 +233,8 @@ function B(e) {
     null == e || e.preventDefault();
     let t = P.Z.getGuildId();
     null != H.guildId && "" !== H.guildId && H.guildId !== t && (0, I.Z)(M.Z5c.CHANNEL(H.guildId));
-    let n = b.ZP.getGuildScheduledEvent(H.guildEventId);
-    return null != n && (0, v.bO)({
+    let n = v.ZP.getGuildScheduledEvent(H.guildEventId);
+    return null != n && (0, b.bO)({
       eventId: n.id
     }), !0
   };

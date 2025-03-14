@@ -39,7 +39,7 @@ function E(e) {
   return e
 }
 
-function v(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,8 +50,8 @@ function v(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -126,7 +126,7 @@ function L(e) {
   } = e;
   for (let e in O = E({}, t)) {
     let n = t[e].mostRecentMessage;
-    null != n && (t[e].mostRecentMessage = new u.ZP(b(E({}, n), {
+    null != n && (t[e].mostRecentMessage = new u.ZP(v(E({}, n), {
       author: new d.Z(n.author)
     })))
   }
@@ -190,14 +190,14 @@ function B(e) {
   T(t.id)
 }
 
-function V(e) {
+function F(e) {
   let {
     channel: t
   } = e;
   delete O[t.id]
 }
 
-function F(e) {
+function V(e) {
   let {
     message: t,
     optimistic: n,
@@ -322,9 +322,9 @@ let Q = new q(s.Z, {
   RELATIONSHIP_REMOVE: z,
   SEARCH_FINISH: G,
   MOD_VIEW_SEARCH_FINISH: G,
-  THREAD_DELETE: V,
+  THREAD_DELETE: F,
   CHANNEL_DELETE: B,
-  MESSAGE_CREATE: F,
+  MESSAGE_CREATE: V,
   MESSAGE_UPDATE: H,
   MESSAGE_DELETE: W,
   MESSAGE_DELETE_BULK: Y,

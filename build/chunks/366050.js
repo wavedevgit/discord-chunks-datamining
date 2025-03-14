@@ -73,7 +73,7 @@ function E(e) {
   p.set(o, c), a === l.NYg.VIDEO ? null == r && (r = o) : a === l.NYg.EMBED_IFRAME && null == i && (i = o)
 }
 
-function v(e) {
+function b(e) {
   let {
     id: t
   } = e;
@@ -91,7 +91,7 @@ function v(e) {
   }
 }
 
-function b(e) {
+function v(e) {
   let {
     id: t,
     position: n
@@ -216,8 +216,8 @@ u(A, "displayName", "PictureInPictureStore"), u(A, "persistKey", "PictureInPictu
 }]);
 let C = new A(s.Z, {
   PICTURE_IN_PICTURE_OPEN: E,
-  PICTURE_IN_PICTURE_CLOSE: v,
-  PICTURE_IN_PICTURE_MOVE: b,
+  PICTURE_IN_PICTURE_CLOSE: b,
+  PICTURE_IN_PICTURE_MOVE: v,
   PICTURE_IN_PICTURE_RESIZE: y,
   PICTURE_IN_PICTURE_HIDE: I,
   PICTURE_IN_PICTURE_SHOW: S,

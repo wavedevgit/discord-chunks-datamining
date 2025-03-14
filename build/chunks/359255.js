@@ -26,7 +26,7 @@ let u = e => {
     e.stopPropagation(), !p && m(f - 1)
   }, E = e => {
     e.stopPropagation(), !h && m(f + 1)
-  }, v = e => {
+  }, b = e => {
     if (c(e)) return m(e);
     let t = parseInt(e);
     return isNaN(t) ? void 0 : null != d && t >= d ? m(d) : null != u && t <= u ? m(u) : m(t)
@@ -50,7 +50,7 @@ let u = e => {
         })
       }), (0, r.jsx)(s.oil, {
         value: "".concat(f),
-        onChange: v,
+        onChange: b,
         inputClassName: l.value
       }), (0, r.jsx)(s.P3F, {
         onClick: E,

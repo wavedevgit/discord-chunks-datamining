@@ -81,21 +81,21 @@ var r, i, o = "https://js.stripe.com/v3",
     if (1 === Object.keys(e).length && "boolean" == typeof e.advancedFraudSignals) return e;
     throw Error(t)
   },
-  v = !1,
-  b = function() {
+  b = !1,
+  v = function() {
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-    v = !0;
+    b = !0;
     var r = Date.now();
     return m(i).then(function(e) {
       return g(e, t, r)
     })
   };
-b.setLoadParameters = function(e) {
-  if (!(v && i && Object.keys(E(e)).reduce(function(t, n) {
+v.setLoadParameters = function(e) {
+  if (!(b && i && Object.keys(E(e)).reduce(function(t, n) {
       var r;
       return t && e[n] === (null === (r = i) || void 0 === r ? void 0 : r[n])
     }, !0))) {
-    if (v) throw Error("You cannot change load parameters after calling loadStripe");
+    if (b) throw Error("You cannot change load parameters after calling loadStripe");
     i = E(e)
   }
-}, t.loadStripe = b
+}, t.loadStripe = v

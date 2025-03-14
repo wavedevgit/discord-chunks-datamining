@@ -4,7 +4,7 @@ n.d(t, {
   B4: () => O,
   Nx: () => m,
   UV: () => y,
-  WR: () => b,
+  WR: () => v,
   lr: () => E,
   t7: () => g
 }), n(47120);
@@ -66,7 +66,7 @@ let g = () => {
         return
     }
   },
-  v = async () => {
+  b = async () => {
     let e = null;
     try {
       var t;
@@ -77,7 +77,7 @@ let g = () => {
       e = null !== (t = n.body.offer) && void 0 !== t ? t : null
     } catch (e) {}
     return e
-  }, b = e => {
+  }, v = e => {
     let [t, n] = r.useState(!1), [i, o] = r.useState(!1), [a, s] = r.useState(null);
     if (e) return {
       churnUserDiscountOffer: a,
@@ -86,7 +86,7 @@ let g = () => {
     let l = () => {
       n(!0), o(!1)
     };
-    return i || t || (o(!0), v().then(e => {
+    return i || t || (o(!0), b().then(e => {
       s(e), l()
     }).catch(e => {
       l()

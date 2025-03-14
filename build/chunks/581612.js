@@ -1,12 +1,12 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => i,
-  q: () => l
+  Z: () => l,
+  q: () => i
 });
 var r = n(570140),
   a = n(91311);
 
-function i(e, t) {
+function l(e, t) {
   let n = "boolean" == typeof t ? t : !a.Z.get(e);
   r.Z.dispatch({
     type: "DEV_TOOLS_DESIGN_TOGGLE_WEB_SET",
@@ -15,6 +15,6 @@ function i(e, t) {
   })
 }
 
-function l() {
-  for (let e in a.Z.all()) i(e, !1)
+function i() {
+  for (let e in a.Z.all()) l(e, !1)
 }

@@ -59,7 +59,7 @@ function g(e, t) {
 
 function E(e, t) {
   if (null == e) return {};
-  var n, r, i = v(e, t);
+  var n, r, i = b(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -67,16 +67,16 @@ function E(e, t) {
   return i
 }
 
-function v(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let b = "balance-widget-pill-overlay",
-  y = () => (0, a.nfh)(b),
-  O = () => (0, a.Mr3)(b),
+let v = "balance-widget-pill-overlay",
+  y = () => (0, a.nfh)(v),
+  O = () => (0, a.Mr3)(v),
   I = e => {
     let {
       hideImmediately: t
@@ -86,7 +86,7 @@ let b = "balance-widget-pill-overlay",
     (0, l.vp)(t), O()
   },
   S = {
-    modalKey: b,
+    modalKey: v,
     onCloseCallback: l.vp,
     onCloseRequest: async () => {
       await (0, l.vp)(), (0, a.pTH)()
@@ -142,15 +142,15 @@ function C(e) {
   } = (0, o.cj)([u.Z], () => ({
     hideImmediately: u.Z.hidePillOverlayImmediately
   })), {
-    hasLayers: v,
-    hasNonShopLayer: b
+    hasLayers: b,
+    hasNonShopLayer: v
   } = (0, o.cj)([s.Z], () => {
     let e = s.Z.getLayers().some(e => e !== _.S9g.COLLECTIBLES_SHOP);
     return {
       hasLayers: s.Z.hasLayers(),
       hasNonShopLayer: e
     }
-  }), y = m || v && b;
+  }), y = m || b && v;
   return (0, r.jsx)(f.E, g(h({
     backgroundElementRef: t,
     onGetBoundingRect: _.dG4

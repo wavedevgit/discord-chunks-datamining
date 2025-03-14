@@ -28,7 +28,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function v(e) {
   return e
 }
 
-function b(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,7 +53,7 @@ function b(e, t) {
 }
 
 function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -83,7 +83,7 @@ function O(e, t, n) {
           count: l
         }), f["data-trailing-placeholder"] = e
       }
-      return (0, r.jsx)("div", y(v({
+      return (0, r.jsx)("div", y(b({
         className: g.applicationCommand
       }, i, f), {
         children: o
@@ -106,7 +106,7 @@ let I = e => {
       attributes: _,
       children: E
     } = e,
-    b = (0, s.vt)(),
+    v = (0, s.vt)(),
     O = (0, s.UE)(),
     I = (0, s._7)(),
     {
@@ -123,8 +123,8 @@ let I = e => {
     A = o.children[o.children.length - 1],
     C = null != A && h.LC.isText(A) && A.text.endsWith("\n"),
     R = a()(g.inlineElement, g.optionPill, {
-      [g.selectedPill]: O && b,
-      [g.erroredPill]: (!O || !b) && T
+      [g.selectedPill]: O && v,
+      [g.erroredPill]: (!O || !v) && T
     }),
     P = i.useCallback(() => {
       h.bN.isVoid(I, o) || p.Q.selectCommandOption(I, o.optionName, !0)
@@ -143,7 +143,7 @@ let I = e => {
       className: g.newLine,
       contentEditable: !1
     }) : null]
-  }), (0, r.jsxs)("span", y(v({}, _), {
+  }), (0, r.jsxs)("span", y(b({}, _), {
     className: R,
     children: [(0, r.jsxs)("span", {
       className: g.optionPillKey,

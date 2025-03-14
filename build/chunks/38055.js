@@ -20,8 +20,8 @@ var r = n(392711),
   m = n(848479),
   g = n(785141),
   E = n(981631),
-  v = n(65154);
-let b = !1,
+  b = n(65154);
+let v = !1,
   y = [],
   O = [];
 
@@ -44,8 +44,8 @@ function N() {
   let e = {};
   for (let s of ["videohookFrames", "hybridDxgiFrames", "hybridGdiFrames", "hybridVideohookFrames", "hybridGraphicsCaptureFrames", "hybridGdiBitBltFrames", "hybridGdiPrintWindowFrames", "quartzFrames", "screenCaptureKitFrames"]) {
     var t, n, r, i, o, a;
-    let l = null !== (o = null === (n = O.find(e => e.connection.context === v.Yn.STREAM)) || void 0 === n ? void 0 : null === (t = n.stats.screenshare) || void 0 === t ? void 0 : t[s]) && void 0 !== o ? o : 0,
-      c = null !== (a = null === (i = y.find(e => e.connection.context === v.Yn.STREAM)) || void 0 === i ? void 0 : null === (r = i.stats.screenshare) || void 0 === r ? void 0 : r[s]) && void 0 !== a ? a : 0;
+    let l = null !== (o = null === (n = O.find(e => e.connection.context === b.Yn.STREAM)) || void 0 === n ? void 0 : null === (t = n.stats.screenshare) || void 0 === t ? void 0 : t[s]) && void 0 !== o ? o : 0,
+      c = null !== (a = null === (i = y.find(e => e.connection.context === b.Yn.STREAM)) || void 0 === i ? void 0 : null === (r = i.stats.screenshare) || void 0 === r ? void 0 : r[s]) && void 0 !== a ? a : 0;
     e[s] = c - l
   }
   let s = -1,
@@ -90,7 +90,7 @@ function w(e) {
 }
 
 function D(e, t) {
-  var n, r, o, a, b;
+  var n, r, o, a, v;
   let y;
   let O = (0, g.hp)(e),
     I = w(t),
@@ -106,15 +106,15 @@ function D(e, t) {
     {
       gameName: G,
       gameId: B,
-      exe: V,
-      distributor: F
+      exe: F,
+      distributor: V
     } = (0, s.G8)(k),
     Z = O.isErrorOutbound,
-    H = null !== (r = t.mediaContext) && void 0 !== r ? r : v.Yn.DEFAULT,
+    H = null !== (r = t.mediaContext) && void 0 !== r ? r : b.Yn.DEFAULT,
     W = null != L ? L.ownerId : t.userId,
     Y = null != L ? null == M ? void 0 : M.getVoiceParticipantType() : Z ? "sender" : "receiver";
-  y = null != t.streamKey && null != L ? Z ? null == M ? void 0 : null === (o = M.getOutboundStats()) || void 0 === o ? void 0 : o.find(e => e.quality === v.y7) : null == M ? void 0 : M.getInboundStats(L.ownerId) : Z ? null !== (b = i().maxBy(null !== (a = null == M ? void 0 : M.getOutboundStats()) && void 0 !== a ? a : [], e => e.num_frames)) && void 0 !== b ? b : null : null != t.userId ? null == M ? void 0 : M.getInboundStats(t.userId) : null, (0, p.q)().then(n => {
-    var r, i, o, a, s, l, c, u, p, g, v, b, P, w, k, K, z, q, Q, X, J, $, ee, et, en, er, ei, eo, ea, es, el, ec, eu, ed, ef, e_, ep, eh, em, eg, eE, ev, eb, ey, eO, eI, eS, eT, eN;
+  y = null != t.streamKey && null != L ? Z ? null == M ? void 0 : null === (o = M.getOutboundStats()) || void 0 === o ? void 0 : o.find(e => e.quality === b.y7) : null == M ? void 0 : M.getInboundStats(L.ownerId) : Z ? null !== (v = i().maxBy(null !== (a = null == M ? void 0 : M.getOutboundStats()) && void 0 !== a ? a : [], e => e.num_frames)) && void 0 !== v ? v : null : null != t.userId ? null == M ? void 0 : M.getInboundStats(t.userId) : null, (0, p.q)().then(n => {
+    var r, i, o, a, s, l, c, u, p, g, b, v, P, w, k, K, z, q, Q, X, J, $, ee, et, en, er, ei, eo, ea, es, el, ec, eu, ed, ef, e_, ep, eh, em, eg, eE, eb, ev, ey, eO, eI, eS, eT, eN;
     let eA = {
       error_name: e.valueOf(),
       error_code: O.errorCode,
@@ -124,8 +124,8 @@ function D(e, t) {
       error_message: null !== (p = t.errorMessage) && void 0 !== p ? p : null,
       guild_id: null !== (g = null == D ? void 0 : D.guild_id) && void 0 !== g ? g : null,
       channel_id: null != I ? I : null,
-      channel_type: null !== (v = null == D ? void 0 : D.type) && void 0 !== v ? v : null,
-      rtc_connection_id: null !== (b = t.rtcConnectionId) && void 0 !== b ? b : null,
+      channel_type: null !== (b = null == D ? void 0 : D.type) && void 0 !== b ? b : null,
+      rtc_connection_id: null !== (v = t.rtcConnectionId) && void 0 !== v ? v : null,
       media_session_id: null !== (w = null !== (P = t.mediaSessionId) && void 0 !== P ? P : f.Z.getMediaSessionId()) && void 0 !== w ? w : null,
       parent_media_session_id: null !== (k = t.parentMediaSessionId) && void 0 !== k ? k : null,
       context: null !== (K = t.mediaContext) && void 0 !== K ? K : null,
@@ -150,8 +150,8 @@ function D(e, t) {
       screenshare_capture_method: N(),
       share_application_name: null != G ? G : null,
       share_application_id: null != B ? B : null,
-      share_application_executable: null != V ? V : null,
-      share_application_distributor: null != F ? F : null,
+      share_application_executable: null != F ? F : null,
+      share_application_distributor: null != V ? V : null,
       cpu_brand: null !== (ed = null == n ? void 0 : n.cpu_brand) && void 0 !== ed ? ed : null,
       cpu_vendor: null !== (ef = null == n ? void 0 : n.cpu_vendor) && void 0 !== ef ? ef : null,
       cpu_memory: null !== (e_ = null == n ? void 0 : n.cpu_memory) && void 0 !== e_ ? e_ : null,
@@ -160,8 +160,8 @@ function D(e, t) {
       gpu_memory: null !== (em = null == n ? void 0 : n.gpu_memory) && void 0 !== em ? em : null,
       gpu_device_vendor_id: null !== (eg = null == n ? void 0 : n.gpu_device_vendor_id) && void 0 !== eg ? eg : null,
       gpu_device_device_id: null !== (eE = null == n ? void 0 : n.gpu_device_device_id) && void 0 !== eE ? eE : null,
-      gpu_device_sub_sys_id: null !== (ev = null == n ? void 0 : n.gpu_device_sub_sys_id) && void 0 !== ev ? ev : null,
-      gpu_device_revision: null !== (eb = null == n ? void 0 : n.gpu_device_revision) && void 0 !== eb ? eb : null,
+      gpu_device_sub_sys_id: null !== (eb = null == n ? void 0 : n.gpu_device_sub_sys_id) && void 0 !== eb ? eb : null,
+      gpu_device_revision: null !== (ev = null == n ? void 0 : n.gpu_device_revision) && void 0 !== ev ? ev : null,
       gpu_driver_version: null !== (ey = null == n ? void 0 : n.gpu_driver_version) && void 0 !== ey ? ey : null,
       cpu_usage: null !== (eO = m.Z.getCurrentCPUUsagePercent()) && void 0 !== eO ? eO : null,
       memory_usage: null !== (eI = m.Z.getCurrentMemoryUsageKB()) && void 0 !== eI ? eI : null,
@@ -190,7 +190,7 @@ function D(e, t) {
 }
 
 function L() {
-  if (b) return;
+  if (v) return;
   let e = d.Z.getMediaEngine();
-  e.on(o.aB.ConnectionStats, I), e.on(o.aB.Destroy, () => e.off(o.aB.ConnectionStats, I)), b = !0
+  e.on(o.aB.ConnectionStats, I), e.on(o.aB.Destroy, () => e.off(o.aB.ConnectionStats, I)), v = !0
 }

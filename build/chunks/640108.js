@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   ZP: () => X,
-  yv: () => F
+  yv: () => V
 }), n(653041), n(47120), n(411104);
 var r, i, o = n(200651),
   a = n(192379),
@@ -18,8 +18,8 @@ var r, i, o = n(200651),
   m = n(268353),
   g = n(866960),
   E = n(181058),
-  v = n(626135),
-  b = n(70956),
+  b = n(626135),
+  v = n(70956),
   y = n(36703),
   O = n(228488),
   I = n(540026),
@@ -81,13 +81,13 @@ let k = 3e3,
     VIDEO: "VIDEO",
     AUDIO: "AUDIO"
   },
-  V = {
+  F = {
     width: "100%",
     height: "100%",
     backgroundColor: "black"
   };
 
-function F(e) {
+function V(e) {
   let t = 0 | e,
     n = t % 60;
   return "".concat((t - n) / 60, ":").concat(String(n).padStart(2, "0"))
@@ -112,7 +112,7 @@ let H = e => {
   let {
     current: t,
     duration: n
-  } = e, r = null != t ? F(t) : U, i = null != n ? F(n) : U;
+  } = e, r = null != t ? V(t) : U, i = null != n ? V(n) : U;
   return r = r.padStart(i.length, "0"), (0, o.jsxs)("div", {
     className: P.durationTimeWrapper,
     children: [(0, o.jsx)("span", {
@@ -391,7 +391,7 @@ class q {
     throw Error("uhoh")
   }
   sendEvent() {
-    this.analyticsEnabled && v.default.track(A.rMx.MEDIA_PLAY_FINISHED, {
+    this.analyticsEnabled && b.default.track(A.rMx.MEDIA_PLAY_FINISHED, {
       play_time_sec: this.playTimeSec,
       play_wall_time_ms: this.playWallTimeMs,
       first_play_waiting_ms: this.firstPlayWaitingMs,
@@ -606,7 +606,7 @@ class Q extends(i = a.PureComponent) {
         let e = r();
         e !== this.state.muted && (i.muted = e, o.muted = e)
       }
-      this.setState(o), i.play(), null == t || t(e, i.currentTime * b.Z.Millis.SECOND, i.duration * b.Z.Millis.SECOND)
+      this.setState(o), i.play(), null == t || t(e, i.currentTime * v.Z.Millis.SECOND, i.duration * v.Z.Millis.SECOND)
     }
   }
   getWidth() {
@@ -742,9 +742,9 @@ class Q extends(i = a.PureComponent) {
         playing: h,
         fullscreen: g,
         volume: E,
-        dragging: v
+        dragging: b
       }
-    } = this, b = this.getWidth();
+    } = this, v = this.getWidth();
     return f || n || t === B.AUDIO ? (0, o.jsx)(W, {
       buffers: c,
       currentTime: u,
@@ -764,10 +764,10 @@ class Q extends(i = a.PureComponent) {
       onControlsShow: l,
       onControlsHide: s,
       playing: h,
-      dragging: v,
+      dragging: b,
       type: t,
       ref: this.controlsRef,
-      width: g ? window.screen.width : b,
+      width: g ? window.screen.width : v,
       disabled: !r,
       children: t === B.VIDEO ? (0, o.jsx)(m.Z, {
         "aria-label": R.NW.string(R.t["2nM3Pj"]),
@@ -813,7 +813,7 @@ class Q extends(i = a.PureComponent) {
     } = this.props, {
       fullscreen: r
     } = this.state, i = this.getWidth();
-    return r ? V : t === B.AUDIO ? {
+    return r ? F : t === B.AUDIO ? {
       width: void 0,
       height: "auto"
     } : e ? void 0 : {

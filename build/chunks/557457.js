@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Wc: () => E,
-  Ye: () => v,
+  Ye: () => b,
   bp: () => g,
   ml: () => m,
   nG: () => _,
@@ -58,7 +58,7 @@ function E(e) {
   }
 }
 
-function v(e, t, n) {
+function b(e, t, n) {
   let l = h(e, t, n),
     u = o.default.getCurrentUser(),
     d = i.Z.getGuildId(),

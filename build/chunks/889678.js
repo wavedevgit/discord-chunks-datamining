@@ -13,14 +13,14 @@ function c(e, t, n) {
     E = !0;
   if ("function" != typeof e) throw TypeError(a);
 
-  function v(t) {
+  function b(t) {
     var n = c,
       r = u;
     return c = u = void 0, h = t, f = e.apply(r, n)
   }
 
-  function b(e) {
-    return h = e, _ = setTimeout(I, t), m ? v(e) : f
+  function v(e) {
+    return h = e, _ = setTimeout(I, t), m ? b(e) : f
   }
 
   function y(e) {
@@ -43,7 +43,7 @@ function c(e, t, n) {
   }
 
   function S(e) {
-    return (_ = void 0, E && c) ? v(e) : (c = u = void 0, f)
+    return (_ = void 0, E && c) ? b(e) : (c = u = void 0, f)
   }
 
   function T() {
@@ -58,8 +58,8 @@ function c(e, t, n) {
     var e = i(),
       n = O(e);
     if (c = arguments, u = this, p = e, n) {
-      if (void 0 === _) return b(p);
-      if (g) return clearTimeout(_), _ = setTimeout(I, t), v(p)
+      if (void 0 === _) return v(p);
+      if (g) return clearTimeout(_), _ = setTimeout(I, t), b(p)
     }
     return void 0 === _ && (_ = setTimeout(I, t)), f
   }

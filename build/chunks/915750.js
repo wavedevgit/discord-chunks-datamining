@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   B5: () => y,
-  PI: () => v,
+  PI: () => b,
   WD: () => S,
   aM: () => T,
   ui: () => N
@@ -43,8 +43,8 @@ function m(e) {
 }
 let g = 60,
   E = 1,
-  v = .5;
-class b {
+  b = .5;
+class v {
   getId() {
     return this.id
   }
@@ -101,7 +101,7 @@ class b {
       let {
         triggeredByStatusChange: t
       } = e;
-      return this.stop(), new b({
+      return this.stop(), new v({
         questContent: this.questContent,
         questDecisionId: this.questDecisionId,
         questOrQuests: this.quests,
@@ -129,7 +129,7 @@ class b {
     }), h(this, "stop", function() {
       let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
       e && y.beat(!0), y.lastBeatTime = void 0, clearInterval(y.heartbeatTimeoutId), clearTimeout(y.minViewTimeReachedTimeoutId), y.isRunning = !1
-    }), this.id = (0, o.Z)(), this.questDecisionId = n, this.questContent = t, this.questContentPosition = s, this.minViewTimeSeconds = d, this.minViewportPercentage = v, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = i, this.triggeredByStatusChange = r, this.questContentRowIndex = u
+    }), this.id = (0, o.Z)(), this.questDecisionId = n, this.questContent = t, this.questContentPosition = s, this.minViewTimeSeconds = d, this.minViewportPercentage = b, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = i, this.triggeredByStatusChange = r, this.questContentRowIndex = u
   }
 }
 let y = (e, t) => {
@@ -168,7 +168,7 @@ function N(e) {
     let r = a && t,
       i = (n || s || c) && r,
       o = (n || s) && !r || c;
-    (i || o) && null != l.current && l.current.stop(), i && (l.current = new b({
+    (i || o) && null != l.current && l.current.stop(), i && (l.current = new v({
       questDecisionId: f,
       questOrQuests: e.questOrQuests,
       questContent: e.questContent,

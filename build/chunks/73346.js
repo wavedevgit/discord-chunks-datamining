@@ -24,9 +24,9 @@ var r = n(392711),
   m = n(78839),
   g = n(526167),
   E = n(630388),
-  v = n(823379);
+  b = n(823379);
 n(358085);
-var b = n(709054),
+var v = n(709054),
   y = n(981631);
 
 function O(e, t, n) {
@@ -138,13 +138,13 @@ function P(e, t, n) {
 function w(e, t, n) {
   var r;
   let i = null !== (r = n.getNowPlaying(e)) && void 0 !== r ? r : {},
-    o = b.default.keys(i).map(e => {
+    o = v.default.keys(i).map(e => {
       let n = t.getUser(e);
       return null == n ? null : {
         user: n,
         startTime: i[n.id].startedPlaying
       }
-    }).filter(v.lm).sort((e, t) => t.startTime - e.startTime);
+    }).filter(b.lm).sort((e, t) => t.startTime - e.startTime);
   return 0 === o.length ? null : {
     type: y.AzA.NOW_PLAYING,
     userInfo: o
@@ -160,7 +160,7 @@ function D(e, t, n) {
       user: n,
       endTime: Date.parse(e.last_played_at)
     }
-  }).filter(v.lm).sort((e, t) => t.endTime - e.endTime);
+  }).filter(b.lm).sort((e, t) => t.endTime - e.endTime);
   return 0 === i.length ? null : {
     type: y.AzA.EVER_PLAYED,
     userInfo: i

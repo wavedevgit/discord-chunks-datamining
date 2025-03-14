@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => b
 }), n(757143), n(301563), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -32,23 +32,23 @@ function E(e) {
     emojiName: n
   })
 }
-let v = function(e) {
+let b = function(e) {
   let {
     channel: t
   } = e, n = (0, c.z8)(t.id), s = (0, c.OG)(t.id), {
-    entitlement: v,
-    numPotions: b
+    entitlement: b,
+    numPotions: v
   } = (0, p.t6)(d.D1), y = i.useCallback(e => {
     (0, c.Hi)(e, t.id)
   }, [t.id]), O = i.useCallback(() => {
     (0, c.GA)(t.id)
   }, [t.id]), I = i.useMemo(() => null != n ? n.name.replace(/_/g, " ") : "", [n]), S = i.useCallback(() => {
     (0, c.Hb)(t.id)
-  }, [t.id]), T = i.useMemo(() => null != b && b > 0 ? (null == v ? void 0 : v.type) === h.qc2.DEVELOPER_GIFT ? m.NW.format(m.t["b+P6ra"], {
-    numPotions: b
+  }, [t.id]), T = i.useMemo(() => null != v && v > 0 ? (null == b ? void 0 : b.type) === h.qc2.DEVELOPER_GIFT ? m.NW.format(m.t["b+P6ra"], {
+    numPotions: v
   }) : m.NW.format(m.t.RiQ4cn, {
-    numPotions: b
-  }) : m.NW.string(m.t.hvVgAQ), [b, v]), [N, A] = i.useState(!1 === s);
+    numPotions: v
+  }) : m.NW.string(m.t.hvVgAQ), [v, b]), [N, A] = i.useState(!1 === s);
   i.useEffect(() => {
     !1 === s && O()
   }, [s, O]);

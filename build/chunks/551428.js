@@ -43,7 +43,7 @@ function E(e) {
   for (let e of t) m(e)
 }
 
-function v(e) {
+function b(e) {
   let {
     storeListing: t,
     channelId: n
@@ -54,7 +54,7 @@ function v(e) {
   } else m(t)
 }
 
-function b(e) {
+function v(e) {
   let {
     giftCode: t
   } = e;
@@ -129,8 +129,8 @@ let N = new T(a.Z, {
   STORE_LISTINGS_FETCH_START: y,
   STORE_LISTINGS_FETCH_FAIL: O,
   STORE_LISTINGS_FETCH_SUCCESS: E,
-  STORE_LISTING_FETCH_SUCCESS: v,
+  STORE_LISTING_FETCH_SUCCESS: b,
   USER_SETTINGS_PROTO_UPDATE: S,
   APPLICATION_STORE_CLEAR_DATA: I,
-  GIFT_CODE_RESOLVE_SUCCESS: b
+  GIFT_CODE_RESOLVE_SUCCESS: v
 })

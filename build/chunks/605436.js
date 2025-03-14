@@ -3,7 +3,7 @@
 n.d(t, {
   $7: () => X,
   $e: () => Y,
-  GJ: () => b,
+  GJ: () => v,
   Gy: () => A,
   RD: () => q,
   RZ: () => x,
@@ -15,7 +15,7 @@ n.d(t, {
   Yk: () => z,
   _A: () => W,
   aq: () => S,
-  cR: () => F,
+  cR: () => V,
   iI: () => B,
   ik: () => R,
   kA: () => L,
@@ -49,7 +49,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -62,7 +62,7 @@ function v(e) {
   return e
 }
 
-function b(e) {
+function v(e) {
   return r.e$(e.permissions, m.Plq.ADMINISTRATOR)
 }
 
@@ -79,15 +79,15 @@ function O(e) {
     colorString: null !== (t = e.colorString) && void 0 !== t ? t : (0, i.Rf)(m.p6O),
     name: e.name,
     id: e.id,
-    disabled: b(e) || n,
+    disabled: v(e) || n,
     key: "".concat(r, ":").concat(e.id),
     tags: e.tags
   }
 }
 
 function I(e, t) {
-  let n = +!b(e),
-    r = +!b(t);
+  let n = +!v(e),
+    r = +!v(t);
   return n !== r ? n - r : t.position - e.position
 }
 
@@ -124,22 +124,22 @@ function C(e, t) {
 
 function R(e, t, n, r) {
   let i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : () => !0;
-  return Object.values(t).filter(t => !b(t) && T(n, t.id, r) && C(e, t) && i(t.name)).sort(I).map(e => O(e))
+  return Object.values(t).filter(t => !v(t) && T(n, t.id, r) && C(e, t) && i(t.name)).sort(I).map(e => O(e))
 }
 
 function P(e, t, n, i) {
   let o = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : () => !0;
-  return Object.values(t).filter(t => !b(t) && T(n, t.id, i) && C(e, t) && o(t.name)).sort(I).map(e => O(e, r.e$(e.permissions, i)))
+  return Object.values(t).filter(t => !v(t) && T(n, t.id, i) && C(e, t) && o(t.name)).sort(I).map(e => O(e, r.e$(e.permissions, i)))
 }
 
 function w(e, t, n, r, i) {
-  return Object.values(t).filter(t => b(t) || !T(n, t.id, r, i) && C(e, t))
+  return Object.values(t).filter(t => v(t) || !T(n, t.id, r, i) && C(e, t))
 }
 
 function D(e, t, n, i, o) {
   return Object.values(t).filter(t => {
     var a;
-    return b(t) || !T(n, t.id, i, o) && C(e, t) || r.e$(r.$e(t.permissions, null === (a = n.permissionOverwrites[t.id]) || void 0 === a ? void 0 : a.allow), i)
+    return v(t) || !T(n, t.id, i, o) && C(e, t) || r.e$(r.$e(t.permissions, null === (a = n.permissionOverwrites[t.id]) || void 0 === a ? void 0 : a.allow), i)
   })
 }
 
@@ -192,12 +192,12 @@ function B(e, t, n, r) {
   return e.map(c.default.getUser).filter(d.lm).filter(e => !n.isOwner(e) && T(t, e.id, r) && (i(M(e, n)) || i(e.username) || i(e.discriminator))).map(e => U(e, n)).sort(G)
 }
 
-function V(e, t, n, r, i) {
+function F(e, t, n, r, i) {
   return e.map(c.default.getUser).filter(d.lm).filter(e => !T(t, e.id, r, i) || k(e, n))
 }
 
-function F(e, t, n, r, i) {
-  return V(e, t, n, r, i).map(e => U(e, n)).sort(G)
+function V(e, t, n, r, i) {
+  return F(e, t, n, r, i).map(e => U(e, n)).sort(G)
 }
 
 function Z(e, t) {
@@ -238,7 +238,7 @@ function H(e) {
 function W(e, t, n) {
   let i = e.permissionOverwrites[e.guild_id];
   null == i && (i = f.we(e.guild_id));
-  let o = v({}, i);
+  let o = b({}, i);
   return o.deny = r.Od(o.deny, t), o.allow = r.Od(o.allow, t), n || (o.deny = r.IH(o.deny, t)), o
 }
 

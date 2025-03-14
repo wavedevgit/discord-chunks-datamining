@@ -61,15 +61,15 @@ function m(e) {
     appContext: g
   } = e, {
     id: E,
-    username: v,
-    bot: b
+    username: b,
+    bot: v
   } = t, y = (0, o.e7)([u.default], () => {
     var e;
     return (null === (e = u.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === E
   }, [E]), O = (0, l.n)({
     userId: E
   }), [I, S] = (0, o.Wu)([c.Z], () => [c.Z.isFriend(E), c.Z.isBlocked(E)], [E]), [T, N] = i.useState(!1);
-  if (b || y) return null;
+  if (v || y) return null;
 
   function A() {
     (0, a.ZDy)(async () => {
@@ -78,7 +78,7 @@ function m(e) {
       } = await Promise.resolve().then(n.bind(n, 878678));
       return t => (0, r.jsx)(e, h(_({
         header: d.NW.formatToPlainString(d.t.fPLvZW, {
-          name: v
+          name: b
         }),
         confirmText: d.NW.string(d.t.cvSt1N),
         cancelText: d.NW.string(d.t["ETE/oK"]),
@@ -91,7 +91,7 @@ function m(e) {
         children: (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           children: d.NW.format(d.t.l5FFq6, {
-            name: v
+            name: b
           })
         })
       }))

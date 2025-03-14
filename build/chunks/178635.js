@@ -97,16 +97,16 @@ let m = 200,
     }
   };
 
-function v(e) {
+function b(e) {
   var t, n;
   if (__OVERLAY__) return !1;
   let r = null !== (t = u.Z.getFeedbackConfig(e)) && void 0 !== t ? t : E[e],
-    i = [O, y, b],
+    i = [O, y, v],
     o = null !== (n = r.eligibilityChecks) && void 0 !== n ? n : [];
   return i.every(e => e(r)) && o.every(e => e(r))
 }
 
-function b(e) {
+function v(e) {
   return l.Z.hasHotspot(e.hotspot)
 }
 
@@ -132,7 +132,7 @@ function S(e) {
 }
 class T extends a.Z {
   possiblyShowFeedbackModal(e, t) {
-    v(e) && (null == this.feedbackTypeToShow || !(d.b5[this.feedbackTypeToShow] < d.b5[e])) && (this.feedbackTypeToShow = e, this.showFeedbackModalDebounced(t))
+    b(e) && (null == this.feedbackTypeToShow || !(d.b5[this.feedbackTypeToShow] < d.b5[e])) && (this.feedbackTypeToShow = e, this.showFeedbackModalDebounced(t))
   }
   constructor(...e) {
     super(...e), f(this, "feedbackTypeToShow", null), f(this, "showFeedbackModalDebounced", i().debounce(e => {

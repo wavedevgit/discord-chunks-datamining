@@ -20,8 +20,8 @@ var r = n(200651),
   m = n(451478),
   g = n(768581),
   E = n(28660),
-  v = n(462997),
-  b = n(43498);
+  b = n(462997),
+  v = n(43498);
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -92,7 +92,7 @@ function C(e) {
   let {
     user: n,
     displayProfile: o,
-    guildId: v,
+    guildId: b,
     pendingBanner: y,
     children: O,
     className: I,
@@ -111,9 +111,9 @@ function C(e) {
     pendingBanner: y,
     size: C,
     canAnimate: w || !k ? L : M
-  }), G = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), B = n.getAvatarURL(v, (0, u.pxk)(S)), V = (0, s._i)((0, d.ZP)(B, G, !1)), F = (0, f.Z)(null !== (t = null == o ? void 0 : o.primaryColor) && void 0 !== t ? t : V).hex, Z = A(S), H = Z + T - P, W = R - N - P;
+  }), G = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), B = n.getAvatarURL(b, (0, u.pxk)(S)), F = (0, s._i)((0, d.ZP)(B, G, !1)), V = (0, f.Z)(null !== (t = null == o ? void 0 : o.primaryColor) && void 0 !== t ? t : F).hex, Z = A(S), H = Z + T - P, W = R - N - P;
   return (0, r.jsxs)("svg", {
-    className: b.mask,
+    className: v.mask,
     viewBox: "0 0 ".concat(C, " ").concat(R),
     style: {
       minWidth: C,
@@ -141,17 +141,17 @@ function C(e) {
       overflow: "visible",
       mask: "url(#".concat(D, ")"),
       children: [O, (0, r.jsxs)("div", {
-        className: a()(b.banner, I),
+        className: a()(v.banner, I),
         onMouseMove: () => x(!0),
         onMouseLeave: () => x(!1),
         style: {
           height: R,
           minHeight: R,
           backgroundImage: null != j ? "url(".concat(j, ")") : void 0,
-          backgroundColor: "COMPLETE" !== U ? c.Z.unsafe_rawColors.PRIMARY_800.css : F
+          backgroundColor: "COMPLETE" !== U ? c.Z.unsafe_rawColors.PRIMARY_800.css : V
         },
         children: [!k && (0, g.F8)(j) && (0, r.jsx)(p.Z, {
-          className: b.gifTag
+          className: v.gifTag
         }), O]
       })]
     })]
@@ -164,7 +164,7 @@ function R(e) {
     displayProfile: n,
     canUsePremiumProfileCustomization: i = !1
   } = e, o = T(e, ["profileType", "displayProfile", "canUsePremiumProfileCustomization"]);
-  let a = v.q[t],
+  let a = b.q[t],
     s = i || (null == n ? void 0 : n.canUsePremiumProfileCustomization) || !1;
   return (0, r.jsx)(C, S(O({}, o, a), {
     displayProfile: n,

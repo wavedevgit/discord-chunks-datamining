@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   CO: () => s,
-  NU: () => v,
-  X2: () => b,
+  NU: () => b,
+  X2: () => v,
   cb: () => E,
   d$: () => u,
   tw: () => l
@@ -32,5 +32,5 @@ let i = (e, t) => {
   m = /\.(mp4|webm|mov)$/i,
   g = (0, r.isIOS)() ? p : (0, r.isAndroid)() ? h : m,
   E = e => i(e, g),
-  v = e => null != e && g.test(e),
-  b = e => o(e, "video")
+  b = e => null != e && g.test(e),
+  v = e => o(e, "video")

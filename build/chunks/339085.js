@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   De: () => ef,
-  ZP: () => eV
+  ZP: () => eF
 }), n(47120), n(51350), n(474991), n(398202), n(301563), n(653041), n(230036), n(627494), n(757143);
 var r, i = n(392711),
   o = n.n(i),
@@ -19,8 +19,8 @@ var r, i = n(392711),
   m = n(353926),
   g = n(973542),
   E = n(889564),
-  v = n(687476),
-  b = n(978519),
+  b = n(687476),
+  v = n(978519),
   y = n(706454),
   O = n(581883),
   I = n(271383),
@@ -41,8 +41,8 @@ var r, i = n(392711),
   U = n(856985),
   G = n(185923),
   B = n(981631),
-  V = n(149203),
-  F = n(526761);
+  F = n(149203),
+  V = n(526761);
 
 function Z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -83,7 +83,7 @@ function Y(e, t) {
   }), e
 }
 let K = "original",
-  z = [V.UX.TOP_GUILD_EMOJI.toString(), V.UX.FAVORITES.toString(), V.UX.RECENT.toString(), V.UX.CUSTOM.toString()].concat(k.ZP.getCategories()),
+  z = [F.UX.TOP_GUILD_EMOJI.toString(), F.UX.FAVORITES.toString(), F.UX.RECENT.toString(), F.UX.CUSTOM.toString()].concat(k.ZP.getCategories()),
   q = {
     pendingUsages: [],
     emojiReactionPendingUsages: [],
@@ -183,7 +183,7 @@ function ed(e) {
       return null !== (t = k.ZP.getByName(e)) && void 0 !== t ? t : es(e)
     },
     afterCompute: () => {
-      e(), et = z.slice(0), o().some(en, e => e.usableEmojis.length > 0) || et.splice(z.indexOf(V.UX.CUSTOM), 1)
+      e(), et = z.slice(0), o().some(en, e => e.usableEmojis.length > 0) || et.splice(z.indexOf(F.UX.CUSTOM), 1)
     },
     numFrequentlyItems: X
   })
@@ -382,16 +382,16 @@ function eE(e, t) {
   if (em(e), ef.clear(e), null == t) return;
   let n = A.default.getCurrentUser();
   if (null == n) return;
-  let r = (0, b.r)(e);
+  let r = (0, v.r)(e);
   en[e] = new Q(e, n.id, t, r)
 }
 
-function ev(e) {
+function eb(e) {
   for (let t of (eh(), e.guilds)) eE(t.id, t.emojis);
   ee = +!!e.guilds.every(e => null != e.emojis), eg()
 }
 
-function eb(e) {
+function ev(e) {
   for (let t in eh(), e.emojis) eE(t, e.emojis[t]);
   ee = 1, eg()
 }
@@ -458,9 +458,9 @@ function eR(e, t) {
   });
   if (M.Xb.trackExposure({
       location: "populateInitialFrecencyData"
-    }), o().isEmpty(e) && o().isEmpty(q.pendingUsages) && O.Z.hasLoaded(F.yP.FRECENCY_AND_FAVORITES_SETTINGS))
+    }), o().isEmpty(e) && o().isEmpty(q.pendingUsages) && O.Z.hasLoaded(V.yP.FRECENCY_AND_FAVORITES_SETTINGS))
     for (let e of ["thumbsup", "thumbsup", "eyes", "eyes", "laughing", "laughing", "watermelon", "fork_and_knife", "yum", "weary", "tired_face", "poop", "100"]) e_.track(e);
-  if ((n || r) && o().isEmpty(t) && o().isEmpty(q.emojiReactionPendingUsages) && O.Z.hasLoaded(F.yP.FRECENCY_AND_FAVORITES_SETTINGS))
+  if ((n || r) && o().isEmpty(t) && o().isEmpty(q.emojiReactionPendingUsages) && O.Z.hasLoaded(V.yP.FRECENCY_AND_FAVORITES_SETTINGS))
     for (let e of ["100", "100", "thumbsup", "thumbsup", "thumbsdown", "thumbsdown", "heart", "point_up", "eyes", "weary", "laughing", "white_check_mark", "x"]) ep.track(e)
 }
 
@@ -485,7 +485,7 @@ function ew(e) {
     },
     wasSaved: n
   } = e;
-  if (h.Z.setEmojiLocale(y.default.locale), t !== F.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) return !1;
+  if (h.Z.setEmojiLocale(y.default.locale), t !== V.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) return !1;
   q.pendingUsages = [], q.emojiReactionPendingUsages = []
 }
 
@@ -576,7 +576,7 @@ function eG(e) {
 }
 class eB extends(r = c.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(f.Z, S.Z, I.ZP, T.Z, y.default, v.Z, j.Z, A.default, m.Z), null != e && (null != e.pendingUsages && (q.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (q.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (q.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([O.Z], eP), this.syncWith([m.Z], eD)
+    this.waitFor(f.Z, S.Z, I.ZP, T.Z, y.default, b.Z, j.Z, A.default, m.Z), null != e && (null != e.pendingUsages && (q.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (q.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (q.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([O.Z], eP), this.syncWith([m.Z], eD)
   }
   getState() {
     return q
@@ -727,11 +727,11 @@ class eB extends(r = c.ZP.PersistedStore) {
   }
 }
 Z(eB, "displayName", "EmojiStore"), Z(eB, "persistKey", "EmojiStoreV2"), Z(eB, "migrations", [e => H({}, e)]);
-let eV = new eB(u.Z, {
+let eF = new eB(u.Z, {
   LOGOUT: ey,
   BACKGROUND_SYNC: eO,
-  CONNECTION_OPEN: ev,
-  OVERLAY_INITIALIZE: eb,
+  CONNECTION_OPEN: eb,
+  OVERLAY_INITIALIZE: ev,
   CACHED_EMOJIS_LOADED: eu,
   GUILD_MEMBER_UPDATE: eA,
   GUILD_CREATE: eI,

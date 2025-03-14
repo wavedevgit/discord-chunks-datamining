@@ -30,8 +30,8 @@ var r = n(990547),
   m = n(667204),
   g = n(812236),
   E = n(812206),
-  v = n(413523),
-  b = n(358221),
+  b = n(413523),
+  v = n(358221),
   y = n(233764),
   O = n(375824),
   I = n(957730),
@@ -52,8 +52,8 @@ var r = n(990547),
   U = n(595519),
   G = n(774226),
   B = n(317381),
-  V = n(882347),
-  F = n(16609),
+  F = n(882347),
+  V = n(16609),
   Z = n(224189),
   H = n(374065),
   W = n(917107),
@@ -112,8 +112,8 @@ async function en(e) {
     partyId: m,
     onExecutedCallback: g,
     referrerId: E,
-    customId: v,
-    joinUserId: b,
+    customId: b,
+    joinUserId: v,
     joinSessionId: I,
     secret: T,
     inviterUserId: N,
@@ -134,7 +134,7 @@ async function en(e) {
       commandOrigin: _,
       inviterUserId: N,
       launchParams: {
-        customId: v,
+        customId: b,
         referrerId: E
       }
     });
@@ -172,7 +172,7 @@ async function en(e) {
         embeddedActivitiesManager: u,
         isStart: s,
         guildId: D,
-        joinUserId: b,
+        joinUserId: v,
         joinSessionId: I,
         secret: T,
         instanceId: A,
@@ -303,8 +303,8 @@ async function eo(e) {
     reason: 1
   };
   let g = (0, G.sq)(),
-    v = await (0, Z.Z)(m, i);
-  if (null == h || null == v) return {
+    b = await (0, Z.Z)(m, i);
+  if (null == h || null == b) return {
     result: "failure",
     reason: 2
   };
@@ -314,8 +314,8 @@ async function eo(e) {
     result: "failure",
     reason: 3
   };
-  let b = C.Z.getChannel(i);
-  if (!g && null == b) return {
+  let v = C.Z.getChannel(i);
+  if (!g && null == v) return {
     result: "failure",
     reason: 3
   };
@@ -338,10 +338,10 @@ async function eo(e) {
     }
   }
   let O = B.ZP.getCurrentEmbeddedActivity();
-  if ((null == O ? void 0 : O.applicationId) != null && (t = E.Z.getApplication(null == O ? void 0 : O.applicationId)), !(!a || await (0, V.p)({
+  if ((null == O ? void 0 : O.applicationId) != null && (t = E.Z.getApplication(null == O ? void 0 : O.applicationId)), !(!a || await (0, F.p)({
       applicationId: n,
-      application: v,
-      channel: b,
+      application: b,
+      channel: v,
       currentEmbeddedApplication: t,
       embeddedActivitiesManager: o,
       user: h,
@@ -350,18 +350,18 @@ async function eo(e) {
     result: "failure",
     reason: 7
   };
-  if (null != b) {
-    let e = (0, W.Z)(b.id),
-      n = z.wP.includes(b.type);
+  if (null != v) {
+    let e = (0, W.Z)(v.id),
+      n = z.wP.includes(v.type);
     if (e) {
       if (!await (0, Y.Z)({
-          channelId: b.id,
+          channelId: v.id,
           bypassChangeModal: null != t
         })) return {
         result: "failure",
         reason: 8
       }
-    } else if (!(0, U.WS)(b) || !n) return {
+    } else if (!(0, U.WS)(v) || !n) return {
       result: "failure",
       reason: 9
     }
@@ -434,14 +434,14 @@ function ea(e) {
     instanceId: null == i ? void 0 : i.launchId,
     showFeedback: r
   });
-  let o = (0, F.pY)(t);
+  let o = (0, V.pY)(t);
   if (null != o) {
     var s;
-    let e = b.Z.getSelectedParticipantId(o),
+    let e = v.Z.getSelectedParticipantId(o),
       t = null === (s = w.default.getCurrentUser()) || void 0 === s ? void 0 : s.id,
       r = B.ZP.getEmbeddedActivitiesForChannel(o).find(e => e.applicationId === n);
     if (null == r || null == t || "" === t) return;
-    e === (0, v.gN)({
+    e === (0, b.gN)({
       applicationId: n,
       instanceId: null == r ? void 0 : r.compositeInstanceId
     }) && c.Z.selectParticipant(o, null)

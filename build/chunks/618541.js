@@ -58,7 +58,7 @@ function E(e) {
   })
 }
 
-function v(e) {
+function b(e) {
   let {
     paymentSourceType: t,
     state: n
@@ -66,7 +66,7 @@ function v(e) {
   t === u.HeQ.PAYPAL && (r = n)
 }
 
-function b() {
+function v() {
   _ = null
 }
 
@@ -100,8 +100,8 @@ let I = new O(l.Z, {
     BRAINTREE_CREATE_CLIENT_SUCCESS: h,
     BRAINTREE_CREATE_PAYPAL_CLIENT_SUCCESS: m,
     BILLING_POPUP_BRIDGE_CALLBACK: E,
-    BILLING_POPUP_BRIDGE_STATE_UPDATE: v,
-    BRAINTREE_TEARDOWN_PAYPAL_CLIENT: b,
+    BILLING_POPUP_BRIDGE_STATE_UPDATE: b,
+    BRAINTREE_TEARDOWN_PAYPAL_CLIENT: v,
     BRAINTREE_CREATE_VENMO_CLIENT_SUCCESS: g,
     BRAINTREE_TEARDOWN_VENMO_CLIENT: y
   }),

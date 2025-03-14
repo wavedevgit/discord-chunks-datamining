@@ -20,8 +20,8 @@ var r = n(200651),
   m = n(979264),
   g = n(554300),
   E = n(558602),
-  v = n(736144),
-  b = n(113434),
+  b = n(736144),
+  v = n(113434),
   y = n(553393),
   O = n(518950),
   I = n(594174),
@@ -87,8 +87,8 @@ let k = (0, T.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       nick: U,
       user: G,
       currentUser: B,
-      activities: V,
-      applicationStream: F,
+      activities: F,
+      applicationStream: V,
       status: Z,
       shouldAnimateStatus: H = !1,
       isMobile: W,
@@ -112,8 +112,8 @@ let k = (0, T.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       id: ec,
       tabIndex: eu,
       itemProps: ed
-    } = e, ef = null == G ? void 0 : G.id, e_ = N.ZP.useName(G), ep = (null === (t = I.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === ef, eh = i.useRef(null), [em, eg] = i.useState(!1), [eE, ev] = i.useState(null), {
-      voiceChannel: eb
+    } = e, ef = null == G ? void 0 : G.id, e_ = N.ZP.useName(G), ep = (null === (t = I.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === ef, eh = i.useRef(null), [em, eg] = i.useState(!1), [eE, eb] = i.useState(null), {
+      voiceChannel: ev
     } = (0, f.Z)({
       userId: ef,
       guildId: z,
@@ -122,7 +122,7 @@ let k = (0, T.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       voiceActivityStatusEnabled: ey
     } = (0, u.U)({
       location: "MemberListItem"
-    }), eO = ey ? eb : void 0, {
+    }), eO = ey ? ev : void 0, {
       avatarDecorationSrc: eI,
       avatarSrc: eS,
       eventHandlers: eT
@@ -135,7 +135,7 @@ let k = (0, T.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
     i.useEffect(() => {
       n && eA(!1)
     }, [n]);
-    let eC = (0, b.Fr)(V),
+    let eC = (0, v.Fr)(F),
       eR = null != eC && !ep && n && !eN,
       eP = () => {
         eg(!0)
@@ -144,18 +144,18 @@ let k = (0, T.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
         eg(!1)
       },
       eD = e => {
-        ev(e)
+        eb(e)
       },
       eL = () => {
         if (J) return null;
         if ((0, d.Z)({
-            activities: V,
+            activities: F,
             status: Z,
-            applicationStream: F,
+            applicationStream: V,
             voiceChannel: eO
           })) {
           let e = !(0, E.Z)({
-            activity: null == V ? void 0 : V.find(e => {
+            activity: null == F ? void 0 : F.find(e => {
               let {
                 type: t
               } = e;
@@ -167,8 +167,8 @@ let k = (0, T.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
           return (0, r.jsx)(_.Z, {
             location: "MemberListItem",
             user: G,
-            activities: V,
-            applicationStream: F,
+            activities: F,
+            applicationStream: V,
             voiceChannel: eO,
             animate: em,
             hideEmoji: e,
@@ -212,7 +212,7 @@ let k = (0, T.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       }),
       eU = (e, t) => {
         let n = H ? l.Xo$ : l.qEK,
-          i = (0, c.Z)(V) ? A.Skl.STREAMING : Z;
+          i = (0, c.Z)(F) ? A.Skl.STREAMING : Z;
         return i = t ? void 0 : i, (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(n, M(L({}, eT), {
             size: l.EFr.SIZE_32,
@@ -224,17 +224,14 @@ let k = (0, T.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
             statusTooltip: !0,
             avatarDecoration: eI,
             typingIndicatorRef: eD
-          })), (0, r.jsx)(v.Z, {
+          })), (0, r.jsx)(b.Z, {
             confettiSpawnRef: eE,
             shouldFire: k && null != B && e.id !== B.id,
             confettiLocation: R.Hn.MEMBER_USER
           })]
         })
       },
-      eG = i.useMemo(() => ({
-        source: A.jXE.MEMBER_LIST
-      }), []),
-      eB = () => (0, r.jsxs)(r.Fragment, {
+      eG = () => (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l.PUh, {
           roleName: s,
           color: null != o ? o : void 0,
@@ -245,14 +242,13 @@ let k = (0, T.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
           userId: null == G ? void 0 : G.id,
           contextGuildId: z,
           disableGuildProfile: !0,
-          className: w.clanTag,
-          profileViewedAnalytics: eG
+          className: w.clanTag
         })]
       }),
-      eV = e => (0, r.jsx)(y.Z, M(L({
+      eB = e => (0, r.jsx)(y.Z, M(L({
         quest: eC,
         memberListItemRef: eh,
-        applicationStream: F
+        applicationStream: V
       }, e), {
         closePopout: () => eA(!0)
       })),
@@ -261,7 +257,7 @@ let k = (0, T.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       avatarSize: l.EFr.SIZE_32,
       className: w.placeholder
     }) : (0, r.jsx)(l.yRy, {
-      renderPopout: eV,
+      renderPopout: eB,
       position: "bottom",
       shouldShow: eR,
       nudgeAlignIntoViewport: !1,
@@ -284,12 +280,12 @@ let k = (0, T.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
         hovered: em,
         name: null == x ? (0, r.jsx)("span", {
           className: w.username,
-          children: eB()
+          children: eG()
         }) : (0, r.jsx)(l.ua7, {
           text: x,
           children: e => (0, r.jsx)("span", M(L({}, e), {
             className: a()(w.username, w.lostPermission),
-            children: eB()
+            children: eG()
           }))
         }),
         avatar: eU(G, eF),

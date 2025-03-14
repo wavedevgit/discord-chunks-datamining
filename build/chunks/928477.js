@@ -25,8 +25,8 @@ var r = n(192379),
   m = n(375954),
   g = n(300429),
   E = n(70956),
-  v = n(630388),
-  b = n(709054),
+  b = n(630388),
+  v = n(709054),
   y = n(968437),
   O = n(665906),
   I = n(456077),
@@ -96,19 +96,19 @@ function D(e) {
     var m;
     let g = null == n,
       E = R(o, a),
-      v = null !== (m = o.name) && void 0 !== m ? m : "";
-    if ("" === v && d) {
+      b = null !== (m = o.name) && void 0 !== m ? m : "";
+    if ("" === b && d) {
       let e = w(t, n);
-      v = "" !== e ? e : N.NW.string(N.t["7Xm5QE"])
+      b = "" !== e ? e : N.NW.string(N.t["7Xm5QE"])
     }
     let O = (0, y.WD)(t),
-      I = p.Z.getChannel(b.default.castMessageIdAsChannelId(n)),
+      I = p.Z.getChannel(v.default.castMessageIdAsChannelId(n)),
       S = await k(t, () => {
         let e = null != n ? T.ANM.CHANNEL_MESSAGE_THREADS(t.id, n) : T.ANM.CHANNEL_THREADS(t.id);
         return i.tn.post({
           url: e,
           body: {
-            name: v,
+            name: b,
             type: E ? T.d4z.PRIVATE_THREAD : t.type === T.d4z.GUILD_ANNOUNCEMENT ? T.d4z.ANNOUNCEMENT_THREAD : T.d4z.PUBLIC_THREAD,
             auto_archive_duration: O,
             location: l
@@ -144,10 +144,10 @@ function x(e) {
   return r.useCallback(async (e, r, u) => {
     let f = 0,
       [p, m] = (0, _.Z)(e);
-    p && (e = m, f = (0, v.pj)(f, T.iLy.SUPPRESS_NOTIFICATIONS));
+    p && (e = m, f = (0, b.pj)(f, T.iLy.SUPPRESS_NOTIFICATIONS));
     let g = (0, y.WD)(t, null),
       E = T.ANM.CHANNEL_THREADS(t.id) + "?use_nested_fields=true",
-      b = {
+      v = {
         name: n,
         auto_archive_duration: g,
         applied_tags: o,
@@ -157,9 +157,9 @@ function x(e) {
           flags: 0 !== f ? f : void 0
         }
       },
-      O = await k(t, () => null != u && u.length > 0 ? l(E, b, u) : i.tn.post({
+      O = await k(t, () => null != u && u.length > 0 ? l(E, v, u) : i.tn.post({
         url: E,
-        body: b,
+        body: v,
         rejectWithError: !1
       }));
     return s.Z.clearDraft(t.id, h.d.ThreadSettings), s.Z.clearDraft(t.id, h.d.FirstThreadMessage), c.Z.clearAll(t.id, h.d.FirstThreadMessage), (0, d.Je)({

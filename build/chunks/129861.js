@@ -57,7 +57,7 @@ function g(e, t) {
 
 function E(e, t) {
   if (null == e) return {};
-  var n, r, i = v(e, t);
+  var n, r, i = b(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -65,7 +65,7 @@ function E(e, t) {
   return i
 }
 
-function v(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -73,7 +73,7 @@ function v(e, t) {
   return i
 }
 
-function b(e) {
+function v(e) {
   return e.isSystemUser() ? c.J.SYSTEM_DM : e.isClyde() ? c.J.AI : e.bot ? c.J.BOT : null
 }
 let y = e => {
@@ -125,17 +125,17 @@ let y = e => {
     } = e, p = E(e, ["user", "nick", "forceUsername", "showAccountIdentifier", "overrideDiscriminator", "forcePomelo", "hideBotTag", "hideDiscriminator"]);
     let m = (0, a.e7)([u.Z], () => u.Z.hidePersonalInformation),
       g = m || _ || t.isNonUserBot(),
-      v = t.toString(),
-      O = f ? null : b(t),
+      b = t.toString(),
+      O = f ? null : v(t),
       I = t.isVerifiedBot(),
       S = d.ZP.getName(t),
-      T = i ? v : null != n ? n : S,
+      T = i ? b : null != n ? n : S,
       N = t.isPomelo() || l;
-    if (N || T !== v) {
-      let e = T === v && N && i ? d.ZP.getUserTag(t, {
+    if (N || T !== b) {
+      let e = T === b && N && i ? d.ZP.getUserTag(t, {
           forcePomelo: l
         }) : T,
-        n = o && e !== "@".concat(v) ? d.ZP.getUserTag(t) : void 0;
+        n = o && e !== "@".concat(b) ? d.ZP.getUserTag(t) : void 0;
       return (0, r.jsx)(y, h({
         primary: e,
         secondary: n,
@@ -148,6 +148,6 @@ let y = e => {
       name: T,
       botType: O,
       botVerified: I,
-      discriminator: g || T !== v ? null : null != s ? s : t.discriminator
+      discriminator: g || T !== b ? null : null != s ? s : t.discriminator
     }, p))
   }

@@ -99,8 +99,8 @@ m = Object.keys(m).reduce(function(e, t) {
     return e[g(n, t)] = e[t]
   }), e
 }, m);
-var v = /^(matrix|translate|scale|rotate|skew)/,
-  b = /^(translate)/,
+var b = /^(matrix|translate|scale|rotate|skew)/,
+  v = /^(translate)/,
   y = /^(rotate|skew)/,
   O = function(e, t) {
     return u.is.num(e) && 0 !== e ? e + t : e
@@ -126,9 +126,9 @@ var v = /^(matrix|translate|scale|rotate|skew)/,
         if ("transform" === t) s.push([e || ""]), l.push(function(e) {
           return [e, "" === e]
         });
-        else if (v.test(t)) {
+        else if (b.test(t)) {
           if (delete a[t], u.is.und(e)) return;
-          var n = b.test(t) ? "px" : y.test(t) ? "deg" : "";
+          var n = v.test(t) ? "px" : y.test(t) ? "deg" : "";
           s.push(u.toArray(e)), l.push("rotate3d" === t ? function(e) {
             var t = e[0],
               r = e[1],

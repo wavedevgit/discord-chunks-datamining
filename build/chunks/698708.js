@@ -25,11 +25,11 @@ function _(e) {
     purchaseError: m,
     purchasePreviewError: g,
     setSelectedPlanNotification: E
-  } = (0, c.JL)(), v = null;
-  null != g ? v = g : null != h && null == (0, u.ly)(h) ? v = h : null != m ? v = m : null != t && (v = t);
-  let b = p.length > 1,
-    y = null != v ? v.message : "";
-  if (null != v && v instanceof a.HF && (v.code === s.SM.CARD_DECLINED && b && (y += " ".concat(f.NW.string(f.t.iWvwQU))), v.code === s.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (y = f.NW.string(f.t.ypuSd3)), v.code === d.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (y = f.NW.string(f.t.mXMmWF)), v.code === s.SM.INVALID_CURRENCY_FOR_PAYMENT_SOURCE && (y = f.NW.string(f.t.mC1Fj4)), v.code === s.SM.INVALID_BILLING_ADDRESS)) {
+  } = (0, c.JL)(), b = null;
+  null != g ? b = g : null != h && null == (0, u.ly)(h) ? b = h : null != m ? b = m : null != t && (b = t);
+  let v = p.length > 1,
+    y = null != b ? b.message : "";
+  if (null != b && b instanceof a.HF && (b.code === s.SM.CARD_DECLINED && v && (y += " ".concat(f.NW.string(f.t.iWvwQU))), b.code === s.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (y = f.NW.string(f.t.ypuSd3)), b.code === d.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (y = f.NW.string(f.t.mXMmWF)), b.code === s.SM.INVALID_CURRENCY_FOR_PAYMENT_SOURCE && (y = f.NW.string(f.t.mC1Fj4)), b.code === s.SM.INVALID_BILLING_ADDRESS)) {
     let e = f.NW.format(f.t.BPDKoK, {
       helpdeskArticle: l.Z.getArticleURL(d.BhN.BILLING).concat(d.Bjg.INVALID_BILLING_ADDRESS)
     });
@@ -38,8 +38,8 @@ function _(e) {
     })
   }
   return (i.useEffect(() => {
-    null != v && E(null)
-  }, [v, E]), null == v) ? null : (0, r.jsx)("div", {
+    null != b && E(null)
+  }, [b, E]), null == b) ? null : (0, r.jsx)("div", {
     className: _,
     children: (0, r.jsx)(o.kzN, {
       ref: n,

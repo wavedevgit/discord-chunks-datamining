@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => v
 }), n(301563);
 var r = n(200651),
   i = n(192379),
@@ -54,27 +54,27 @@ function g(e, t) {
   }), e
 }
 let E = e => null != e && /^http/i.test(e),
-  v = e => null != e && /^blob:http:\/\/localhost:\d+\//i.test(e),
-  b = e => {
+  b = e => null != e && /^blob:http:\/\/localhost:\d+\//i.test(e),
+  v = e => {
     let {
       asset: t,
       size: n = f.yV,
       className: o,
       style: p,
       children: m,
-      categoryBannerOverride: b
+      categoryBannerOverride: v
     } = e, y = (0, s.e7)([c.Z], () => c.Z.saturation), O = i.useMemo(() => {
       if (null == t) return p;
-      let e = E(t) || v(t) ? t : (0, d.uV)(t, {
+      let e = E(t) || b(t) ? t : (0, d.uV)(t, {
           size: n,
           format: "jpg"
         }),
-        r = (null == b ? void 0 : b.blur) ? {
+        r = (null == v ? void 0 : v.blur) ? {
           filter: "blur(2px)",
           transform: "scale(1.02)"
         } : {};
       if (1 === y) return h(g(h({}, p), {
-        backgroundImage: (null == b ? void 0 : b.addGradient) ? "url(".concat(e, "), linear-gradient(180deg, rgba(0, 71, 94, 0.6) 5%, rgba(9, 33, 65, 0.6) 95%)") : "url(".concat(e, ")"),
+        backgroundImage: (null == v ? void 0 : v.addGradient) ? "url(".concat(e, "), linear-gradient(180deg, rgba(0, 71, 94, 0.6) 5%, rgba(9, 33, 65, 0.6) 95%)") : "url(".concat(e, ")"),
         backgroundBlendMode: "multiply",
         backgroundSize: "cover",
         backgroundPosition: "center"
@@ -86,7 +86,7 @@ let E = e => null != e && /^http/i.test(e),
         backgroundSize: "cover",
         backgroundPosition: "center"
       }), r)
-    }, [t, n, y, p, null == b ? void 0 : b.blur, null == b ? void 0 : b.addGradient]);
+    }, [t, n, y, p, null == v ? void 0 : v.blur, null == v ? void 0 : v.addGradient]);
     return (0, r.jsx)("div", {
       className: a()(_.banner, o),
       style: O,

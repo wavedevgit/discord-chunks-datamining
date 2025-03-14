@@ -16,8 +16,8 @@ var r = n(147018),
   m = p("replace"),
   g = TypeError,
   E = o("".indexOf),
-  v = o("".replace),
-  b = o("".slice),
+  b = o("".replace),
+  v = o("".slice),
   y = Math.max,
   O = function(e, t, n) {
     return n > e.length ? -1 : "" === t ? n : E(e, t, n)
@@ -34,9 +34,9 @@ r({
     if (!l(e)) {
       if ((n = c(e)) && !~E(u(a(f(e))), "g")) throw g("`.replaceAll` does not allow non-global regexes");
       if (r = d(e, m)) return i(r, e, A, t);
-      if (h && n) return v(u(A), e, t)
+      if (h && n) return b(u(A), e, t)
     }
-    for (o = u(A), p = u(e), (I = s(t)) || (t = u(t)), T = y(1, S = p.length), C = O(o, p, 0); - 1 !== C;) N = I ? u(t(p, C, o)) : _(p, o, C, [], void 0, t), P += b(o, R, C) + N, R = C + S, C = O(o, p, C + T);
-    return R < o.length && (P += b(o, R)), P
+    for (o = u(A), p = u(e), (I = s(t)) || (t = u(t)), T = y(1, S = p.length), C = O(o, p, 0); - 1 !== C;) N = I ? u(t(p, C, o)) : _(p, o, C, [], void 0, t), P += v(o, R, C) + N, R = C + S, C = O(o, p, C + T);
+    return R < o.length && (P += v(o, R)), P
   }
 })

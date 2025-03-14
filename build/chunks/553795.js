@@ -53,8 +53,8 @@ let p = new Set([n(981631).ABu.CONTACTS]),
   m = [],
   g = [],
   E = {},
-  v = new Set,
-  b = {},
+  b = new Set,
+  v = {},
   y = {},
   O = e => {
     m = e.filter(e => !p.has(e.type) && s.Z.isSupported(e.type)), g = e.filter(e => p.has(e.type)), h = !1
@@ -127,16 +127,16 @@ class R extends(r = i.ZP.Store) {
     return g.find(t => t.type === e)
   }
   isSuggestedAccountType(e) {
-    return b[e] || !1
+    return v[e] || !1
   }
   addPendingAuthorizedState(e) {
-    v.add(e)
+    b.add(e)
   }
   deletePendingAuthorizedState(e) {
-    v.delete(e)
+    b.delete(e)
   }
   hasPendingAuthorizedState(e) {
-    return v.has(e)
+    return b.has(e)
   }
 }
 u(R, "displayName", "ConnectedAccountsStore");

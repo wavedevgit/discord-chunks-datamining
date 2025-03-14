@@ -18,8 +18,8 @@ var r, i = n(392711),
   m = n(592125),
   g = n(375954),
   E = n(306680),
-  v = n(699516),
-  b = n(914010),
+  b = n(699516),
+  v = n(914010),
   y = n(9156),
   O = n(594174),
   I = n(981631);
@@ -106,18 +106,18 @@ function B(e) {
   }), P = !1, w = t, x = (0, l.zO)(), L = !0
 }
 
-function V() {
+function F() {
   P = !1
 }
 
-function F(e) {
+function V(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
   if ((0, f.Z)(e) && !I.V$x.SELF_MENTIONABLE_SYSTEM.has(e.type)) return null;
   null == t && (t = e.channel_id);
   let n = m.Z.getChannel(t);
-  if (null == n || n.type === I.d4z.DM || D.guildFilter === I.NgX.THIS_SERVER && n.getGuildId() !== b.Z.getGuildId()) return null;
+  if (null == n || n.type === I.d4z.DM || D.guildFilter === I.NgX.THIS_SERVER && n.getGuildId() !== v.Z.getGuildId()) return null;
   let r = h.default.getId();
-  if (v.Z.isBlockedOrIgnoredForMessage(e) || (0, _.Z)(e, r)) return null;
+  if (b.Z.isBlockedOrIgnoredForMessage(e) || (0, _.Z)(e, r)) return null;
   e = G(e);
   let i = !D.everyoneFilter,
     o = !D.roleFilter;
@@ -145,7 +145,7 @@ function Z(e) {
       suppressRoles: !1,
       suppressEveryone: !1
     })) return !1;
-  let i = F(n, t);
+  let i = V(n, t);
   if (null == i) return !1;
   (A = A.slice()).unshift(i), R[i.id] = !0, j({
     addedMessages: [i]
@@ -204,7 +204,7 @@ function z(e) {
   R = {};
   let i = [];
   r && A.forEach(e => {
-    let t = F(e);
+    let t = V(e);
     null != t && (i.push(t), R[t.id] = !0)
   }), k(A = i), 0 === A.length && (L = !1)
 }
@@ -232,8 +232,8 @@ function X(e) {
 
 function J() {
   j({
-    deletedMessages: o().filter(A, e => v.Z.isBlockedOrIgnoredForMessage(e))
-  }), A = A.filter(e => !v.Z.isBlockedOrIgnoredForMessage(e))
+    deletedMessages: o().filter(A, e => b.Z.isBlockedOrIgnoredForMessage(e))
+  }), A = A.filter(e => !b.Z.isBlockedOrIgnoredForMessage(e))
 }
 
 function $(e) {
@@ -309,7 +309,7 @@ S(er, "displayName", "RecentMentionsStore");
 let ei = new er(c.Z, {
   LOAD_RECENT_MENTIONS: U,
   LOAD_RECENT_MENTIONS_SUCCESS: B,
-  LOAD_RECENT_MENTIONS_FAILURE: V,
+  LOAD_RECENT_MENTIONS_FAILURE: F,
   SET_RECENT_MENTIONS_FILTER: z,
   CLEAR_MENTIONS: ee,
   TRUNCATE_MENTIONS: et,

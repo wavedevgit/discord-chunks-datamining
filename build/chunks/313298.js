@@ -35,10 +35,10 @@ function m(e) {
 }
 let g = {},
   E = {},
-  v = null;
+  b = null;
 
-function b() {
-  null == v && (v = setInterval(() => {
+function v() {
+  null == b && (b = setInterval(() => {
     a.default.forEachKey(g, e => {
       I(e) && O(e)
     })
@@ -76,7 +76,7 @@ function S(e) {
 }
 class T extends i.Z {
   handleInitialize() {
-    null == v && b()
+    null == b && v()
   }
   handleGuildMemberUpdate(e, t) {
     if (s.Z.isInitialized(e)) return y(e, t)

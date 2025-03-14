@@ -46,8 +46,8 @@ function p(e) {
       onConfirm: m,
       onCancel: g,
       onClose: E,
-      onCloseCallback: v,
-      bodyClassName: b,
+      onCloseCallback: b,
+      bodyClassName: v,
       transitionState: y,
       loading: O = !1,
       confirmButtonColor: I = s.zx.Colors.RED,
@@ -61,7 +61,7 @@ function p(e) {
       var e;
       return null === (e = N.current) || void 0 === e ? void 0 : e.focus()
     }, 0)
-  }, [S]), i.useLayoutEffect(() => () => null == v ? void 0 : v()), null != p && (t = (0, r.jsx)(s.zx, {
+  }, [S]), i.useLayoutEffect(() => () => null == b ? void 0 : b()), null != p && (t = (0, r.jsx)(s.zx, {
     type: "button",
     look: A ? s.zx.Looks.FILLED : s.zx.Looks.LINK,
     color: s.zx.Colors.PRIMARY,
@@ -99,7 +99,7 @@ function p(e) {
         children: o
       })
     }) : null, (0, r.jsx)(u.hz, {
-      className: a()(d.content, b),
+      className: a()(d.content, v),
       children: f
     }), (0, r.jsxs)(u.mz, {
       children: [n, t]

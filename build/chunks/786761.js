@@ -26,8 +26,8 @@ n(358085);
 var g = n(709054),
   E = n(572804);
 n(739566);
-var v = n(959517),
-  b = n(981631);
+var b = n(959517),
+  v = n(981631);
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -91,7 +91,7 @@ function C(e) {
     components: (0, a.uZ)(null !== (t = e.components) && void 0 !== t ? t : [], {
       includeEmojiSrc: !1
     }),
-    codedLinks: e.type === b.uaV.THREAD_CREATED ? [] : (0, o.ZP)(e.content)
+    codedLinks: e.type === v.uaV.THREAD_CREATED ? [] : (0, o.ZP)(e.content)
   }))
 }
 
@@ -101,15 +101,15 @@ function R(e) {
   let {
     reactions: p,
     interactionData: h
-  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, v = C(e), y = null !== (i = null === (t = e.mentions) || void 0 === t ? void 0 : t.map(e => e.id)) && void 0 !== i ? i : [], I = null !== (o = e.mention_roles) && void 0 !== o ? o : [], T = null !== (a = e.mention_channels) && void 0 !== a ? a : [], R = e.message_reference, P = N(e), w = null, D = null == e ? void 0 : e.gift_info, x = e.gifting_prompt, j = null != e.interaction ? c.Z.createFromServer(e.interaction) : null, U = e.type === b.uaV.THREAD_STARTER_MESSAGE ? null === (r = e.referenced_message) || void 0 === r ? void 0 : null === (n = r.author) || void 0 === n ? void 0 : n.id : void 0, G = e.content;
-  return new u.ZP((e.type === b.uaV.PREMIUM_REFERRAL && (d = g.default.isProbablyAValidSnowflake(e.content) ? e.content : void 0, G = ""), A(e)) ? S(O({}, w), {
+  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, b = C(e), y = null !== (i = null === (t = e.mentions) || void 0 === t ? void 0 : t.map(e => e.id)) && void 0 !== i ? i : [], I = null !== (o = e.mention_roles) && void 0 !== o ? o : [], T = null !== (a = e.mention_channels) && void 0 !== a ? a : [], R = e.message_reference, P = N(e), w = null, D = null == e ? void 0 : e.gift_info, x = e.gifting_prompt, j = null != e.interaction ? c.Z.createFromServer(e.interaction) : null, U = e.type === v.uaV.THREAD_STARTER_MESSAGE ? null === (r = e.referenced_message) || void 0 === r ? void 0 : null === (n = r.author) || void 0 === n ? void 0 : n.id : void 0, G = e.content;
+  return new u.ZP((e.type === v.uaV.PREMIUM_REFERRAL && (d = g.default.isProbablyAValidSnowflake(e.content) ? e.content : void 0, G = ""), A(e)) ? S(O({}, w), {
     id: e.id,
     channel_id: e.channel_id,
-    type: b.uaV.DEFAULT,
+    type: v.uaV.DEFAULT,
     author: P,
-    timestamp: v.timestamp,
+    timestamp: b.timestamp,
     isUnsupported: !0
-  }) : S(O({}, e, w, v.toJS()), {
+  }) : S(O({}, e, w, b.toJS()), {
     author: P,
     webhookId: e.webhook_id,
     blocked: _.Z.isBlockedForMessage(e) || null != U && _.Z.isBlocked(U),
@@ -129,7 +129,7 @@ function R(e) {
     giftCodes: (0, m.Fp)(e) ? (0, m.Q_)(null == e ? void 0 : e.embeds[0].url) : (0, m.Q_)(e.content),
     content: G,
     referralTrialOfferId: d,
-    call: L(e.call, v.timestamp),
+    call: L(e.call, b.timestamp),
     messageSnapshots: k(e),
     reactions: M(null != p ? p : e.reactions, e.poll),
     interaction: j,
@@ -172,7 +172,7 @@ function w(e, t) {
 
 function D(e) {
   return null == e.attachments ? [] : e.attachments.map(e => S(O({}, e), {
-    spoiler: e.filename.startsWith(v._j)
+    spoiler: e.filename.startsWith(b._j)
   }))
 }
 
@@ -236,5 +236,5 @@ function k(e) {
 let j = e => 0 === (0, l.cv)(e).length || "" !== e.content;
 
 function U(e) {
-  return e.hasFlag(b.iLy.EPHEMERAL) && e.type !== b.uaV.IN_GAME_MESSAGE_NUX
+  return e.hasFlag(v.iLy.EPHEMERAL) && e.type !== v.uaV.IN_GAME_MESSAGE_NUX
 }

@@ -21,9 +21,9 @@ var i = n(120356),
   m = n(507675),
   g = n(273716),
   E = n(388032),
-  v = n(54329);
+  b = n(54329);
 
-function b(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -39,7 +39,7 @@ function y(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -79,19 +79,19 @@ function S(e) {
     location: "PictureInPicturePlayer"
   });
   return (0, r.jsxs)(l, {
-    className: v.headerIdleContainer,
+    className: b.headerIdleContainer,
     children: [(0, r.jsxs)(c.P3F, {
-      className: v.headerTitle,
+      className: b.headerTitle,
       onClick: n,
       children: [(0, r.jsx)(c.whL, {
         size: "custom",
         color: "currentColor",
         "aria-label": E.NW.string(E.t.mSfLs7),
-        className: v.backButton,
+        className: b.backButton,
         width: 20,
         height: 20
       }), (0, r.jsx)(d.Z, {
-        className: v.headerText,
+        className: b.headerText,
         size: d.Z.Sizes.SIZE_16,
         color: s.Z.unsafe_rawColors.WHITE_500.css,
         children: t
@@ -117,40 +117,40 @@ function T(e) {
     screenMessage: h,
     hideControls: g = !1,
     className: E,
-    innerClassName: b
+    innerClassName: v
   } = e, I = O(e, ["children", "idle", "onJumpToChannel", "onHide", "backgroundKey", "onActive", "onForceIdle", "renderBottomLeftControls", "renderBottomRightControls", "screenMessage", "hideControls", "className", "innerClassName"]);
   return (0, r.jsxs)("div", {
     onMouseMove: c,
     onMouseDown: c,
     onMouseLeave: d,
-    className: o()(v.pictureInPictureVideo, {
-      [v.idle]: n
+    className: o()(b.pictureInPictureVideo, {
+      [b.idle]: n
     }, E),
     onDoubleClick: i,
     children: [(0, r.jsx)(l.W, {
       children: (0, r.jsx)(_.B, {
-        className: b,
+        className: v,
         children: t
       }, s)
     }), null != h ? (0, r.jsx)(m.Z, y({
       size: "small"
     }, h)) : null, !g && (0, r.jsxs)("div", {
-      className: o()(v.videoControls, "theme-dark"),
+      className: o()(b.videoControls, "theme-dark"),
       children: [(0, r.jsx)("div", {
-        className: v.topControls,
+        className: b.topControls,
         children: (0, r.jsx)(S, y({
           idle: n,
           onJumpToChannel: i,
           onHide: a
         }, I))
       }), (0, r.jsxs)("div", {
-        className: v.bottomControls,
+        className: b.bottomControls,
         children: [(0, r.jsx)(u.Z, {
           grow: 0,
           shrink: 1,
           basis: "50%",
           align: u.Z.Align.CENTER,
-          className: v.bottomLeftControls,
+          className: b.bottomLeftControls,
           children: null == f ? void 0 : f()
         }), (0, r.jsx)(u.Z, {
           grow: 0,

@@ -19,8 +19,8 @@ var r = n(512722),
   m = n(254238),
   g = n(607214),
   E = n(258609),
-  v = n(565473),
-  b = n(444092),
+  b = n(565473),
+  v = n(444092),
   y = n(927923),
   O = n(65154),
   I = n(388032);
@@ -51,7 +51,7 @@ function P(e) {
   return e.find(e => {
     let n = y.al.has(e.clientInfo.os),
       r = null != p.Z.getVoiceStateForSession(u.default.getId(), e.sessionId),
-      i = null == t || (0, v.y)(t.type) === e.clientInfo.os;
+      i = null == t || (0, b.y)(t.type) === e.clientInfo.os;
     return n && i && r
   })
 }
@@ -132,7 +132,7 @@ class w extends l.Z {
       let o = E.Z.getAwaitingRemoteSessionInfo();
       if ((null == o ? void 0 : o.commandId) !== n) return;
       let a = E.Z.getDevice(o.type, null !== (t = o.deviceId) && void 0 !== t ? t : ""),
-        s = (0, b.Z)(null != a ? a : {
+        s = (0, v.Z)(null != a ? a : {
           id: "id",
           platform: I.NW.string(I.t["UQMV/P"]),
           name: I.NW.string(I.t["UQMV/P"])

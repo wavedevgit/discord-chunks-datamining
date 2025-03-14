@@ -21,8 +21,8 @@ var r = n(200651),
   m = n(369566),
   g = n(510659),
   E = n(652853),
-  v = n(228168),
-  b = n(388032),
+  b = n(228168),
+  v = n(388032),
   y = n(831098);
 
 function O(e, t, n) {
@@ -69,24 +69,24 @@ let N = 2700,
     interactionType: e,
     sourceType: t
   }).with({
-    interactionType: v.P.REPLY,
-    sourceType: v.n_.AVATAR
-  }, () => b.NW.string(b.t.xvN0fX)).with({
-    interactionType: v.P.REACT,
-    sourceType: v.n_.AVATAR
-  }, () => b.NW.string(b.t["fEUP/v"])).with({
-    interactionType: v.P.REPLY,
-    sourceType: v.n_.STATUS
-  }, () => b.NW.string(b.t["C/vzS0"])).with({
-    interactionType: v.P.REACT,
-    sourceType: v.n_.STATUS
-  }, () => b.NW.string(b.t.TKdBCw)).with({
-    interactionType: v.P.REPLY,
-    sourceType: v.n_.ACTIVITY
-  }, () => b.NW.string(b.t.ObfsSk)).with({
-    interactionType: v.P.REACT,
-    sourceType: v.n_.ACTIVITY
-  }, () => b.NW.string(b.t.bSe71N)).exhaustive();
+    interactionType: b.P.REPLY,
+    sourceType: b.n_.AVATAR
+  }, () => v.NW.string(v.t.xvN0fX)).with({
+    interactionType: b.P.REACT,
+    sourceType: b.n_.AVATAR
+  }, () => v.NW.string(v.t["fEUP/v"])).with({
+    interactionType: b.P.REPLY,
+    sourceType: b.n_.STATUS
+  }, () => v.NW.string(v.t["C/vzS0"])).with({
+    interactionType: b.P.REACT,
+    sourceType: b.n_.STATUS
+  }, () => v.NW.string(v.t.TKdBCw)).with({
+    interactionType: b.P.REPLY,
+    sourceType: b.n_.ACTIVITY
+  }, () => v.NW.string(v.t.ObfsSk)).with({
+    interactionType: b.P.REACT,
+    sourceType: b.n_.ACTIVITY
+  }, () => v.NW.string(v.t.bSe71N)).exhaustive();
 
 function R(e) {
   let {
@@ -104,35 +104,35 @@ function R(e) {
   } = (0, g.Xo)(), {
     live: L,
     stream: x
-  } = (0, m.Z)(t.id), M = !o && w !== v.y0.FULL_SIZE && (0, l.EQ)(n).with(v.n_.STATUS, () => 0 === L.length && null == x).with(v.n_.ACTIVITY, () => !0).with(v.n_.AVATAR, () => !1).exhaustive(), [k, j] = i.useState(M);
+  } = (0, m.Z)(t.id), M = !o && w !== b.y0.FULL_SIZE && (0, l.EQ)(n).with(b.n_.STATUS, () => 0 === L.length && null == x).with(b.n_.ACTIVITY, () => !0).with(b.n_.AVATAR, () => !1).exhaustive(), [k, j] = i.useState(M);
   if (i.useEffect(() => {
       k && !M && j(!1)
     }, [k, M]), t.bot || R || !P) return null;
   let U = () => {
-      n === v.n_.AVATAR ? N({
+      n === b.n_.AVATAR ? N({
         action: "PRESS_REACT_AVATAR"
-      }) : n === v.n_.STATUS ? N({
+      }) : n === b.n_.STATUS ? N({
         action: "PRESS_REACT_CUSTOM_STATUS"
       }) : N({
         action: "PRESS_REACT_ACTIVITY"
       }), null == D || D({
-        interactionType: v.P.REACT,
+        interactionType: b.P.REACT,
         interactionSource: n,
         interactionSourceId: S
-      }), w === v.y0.BITE_SIZE && (0, _.EW)(u.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
+      }), w === b.y0.BITE_SIZE && (0, _.EW)(u.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
     },
     G = () => {
-      n === v.n_.AVATAR ? N({
+      n === b.n_.AVATAR ? N({
         action: "PRESS_REPLY_AVATAR"
-      }) : n === v.n_.STATUS ? N({
+      }) : n === b.n_.STATUS ? N({
         action: "PRESS_REPLY_CUSTOM_STATUS"
       }) : N({
         action: "PRESS_REPLY_ACTIVITY"
       }), null == D || D({
-        interactionType: v.P.REPLY,
+        interactionType: b.P.REPLY,
         interactionSource: n,
         interactionSourceId: S
-      }), w === v.y0.BITE_SIZE && (0, _.EW)(u.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
+      }), w === b.y0.BITE_SIZE && (0, _.EW)(u.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
     },
     B = e => {
       e.animationName === (0, s.get)(y, "fadeInAndOut") && j(!1)
@@ -142,13 +142,13 @@ function R(e) {
       [y.fadeInAndOut]: k,
       [y.visible]: o,
       [y.expandable]: O,
-      [y.statusPopover]: n === v.n_.STATUS,
-      [y.avatarPopover]: n === v.n_.AVATAR,
-      [y.activityPopover]: n === v.n_.ACTIVITY
+      [y.statusPopover]: n === b.n_.STATUS,
+      [y.avatarPopover]: n === b.n_.AVATAR,
+      [y.activityPopover]: n === b.n_.ACTIVITY
     }),
     onAnimationEnd: k ? B : void 0,
     children: [(0, r.jsx)(d.DY3, {
-      text: b.NW.string(b.t.nhaI4e),
+      text: v.NW.string(v.t.nhaI4e),
       shouldShow: o,
       className: y.tooltipContainer,
       delay: 0,
@@ -156,7 +156,7 @@ function R(e) {
       children: (0, r.jsx)(f.zx, {
         onClick: U,
         className: y.button,
-        "aria-label": C(v.P.REACT, n),
+        "aria-label": C(b.P.REACT, n),
         "aria-haspopup": "dialog",
         children: (0, r.jsx)(d.EO4, {
           size: "xs",
@@ -164,7 +164,7 @@ function R(e) {
         })
       })
     }), (0, r.jsx)(d.DY3, {
-      text: b.NW.string(b.t.RmDYKC),
+      text: v.NW.string(v.t.RmDYKC),
       shouldShow: o,
       className: y.tooltipContainer,
       delay: 0,
@@ -172,7 +172,7 @@ function R(e) {
       children: (0, r.jsx)(f.zx, {
         onClick: G,
         className: y.button,
-        "aria-label": C(v.P.REPLY, n),
+        "aria-label": C(b.P.REPLY, n),
         "aria-haspopup": "dialog",
         children: (0, r.jsx)(d.n$P, {
           size: "xs",
@@ -180,14 +180,14 @@ function R(e) {
         })
       })
     }), null == A ? void 0 : A(e => (0, r.jsx)(d.DY3, {
-      text: b.NW.string(b.t.UKOtz8),
+      text: v.NW.string(v.t.UKOtz8),
       shouldShow: o,
       className: y.tooltipContainer,
       delay: 0,
       "aria-label": !1,
       children: (0, r.jsx)(f.zx, T(I({}, e), {
         className: y.button,
-        "aria-label": b.NW.string(b.t.UKOtz8),
+        "aria-label": v.NW.string(v.t.UKOtz8),
         children: (0, r.jsx)(d.xhG, {
           size: "xs",
           className: y.icon

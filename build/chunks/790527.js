@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(357355),
   g = n(104494),
   E = n(639119),
-  v = n(165583),
-  b = n(197115),
+  b = n(165583),
+  v = n(197115),
   y = n(302945),
   O = n(631771),
   I = n(474936),
@@ -61,8 +61,8 @@ function P(e) {
       modalContentClassName: U,
       artContainerClassName: G,
       headerClassName: B,
-      bodyClassName: V,
-      transitionState: F,
+      bodyClassName: F,
+      transitionState: V,
       onClose: Z,
       onSubscribeClick: H,
       onSubscribeFinish: W,
@@ -127,8 +127,8 @@ function P(e) {
       sku_id: (0, h.Wz)(J)
     })
   }, [ef, J, $]);
-  let ev = (0, s.e7)([m.Z], () => m.Z.affinities),
-    eb = ev.length > 1 && (0, O.Y)(P),
+  let eb = (0, s.e7)([m.Z], () => m.Z.affinities),
+    ev = eb.length > 1 && (0, O.Y)(P),
     ey = (0, s.e7)([m.Z], () => m.Z.hasFetched);
   i.useEffect(() => {
     ey || c.MH()
@@ -151,7 +151,7 @@ function P(e) {
           percent: ep.discount.amount
         }))
       }
-      return (0, r.jsx)(b.Z, {
+      return (0, r.jsx)(v.Z, {
         className: ei,
         showGradient: en || er,
         premiumModalAnalyticsLocation: L,
@@ -174,7 +174,7 @@ function P(e) {
   }) : null != ed.artElement && (eS = ed.artElement), (0, r.jsxs)(l.Y0X, {
     className: a()(N.root, !eh && j),
     "aria-label": R,
-    transitionState: F,
+    transitionState: V,
     children: [null != eS && (0, r.jsxs)("div", {
       className: eI,
       children: [eS, q ? (0, r.jsx)("img", {
@@ -185,7 +185,7 @@ function P(e) {
     }), (0, r.jsx)(l.hzk, {
       scrollbarType: "none",
       className: a()(en ? N.enhancedContent : N.content, !eh && U),
-      children: $ ? (0, r.jsx)(l.$jN, {}) : eh ? (0, r.jsx)(v.ZP, {
+      children: $ ? (0, r.jsx)(l.$jN, {}) : eh ? (0, r.jsx)(b.ZP, {
         onClose: Z,
         type: P,
         subscriptionTier: null !== (o = null == e_ ? void 0 : null === (n = e_.subscription_trial) || void 0 === n ? void 0 : n.sku_id) && void 0 !== o ? o : I.Si.TIER_2,
@@ -207,11 +207,11 @@ function P(e) {
             children: [R, Q ? (0, r.jsx)(f.Z, {
               className: N.betaTag
             }) : null]
-          }), eb ? (0, r.jsx)(y.Z, {
-            affinities: ev
+          }), ev ? (0, r.jsx)(y.Z, {
+            affinities: eb
           }) : void 0, ea, (0, r.jsx)(l.Text, {
             variant: ec ? "text-sm/normal" : "text-md/normal",
-            className: a()(V, N.subHeader),
+            className: a()(F, N.subHeader),
             children: x
           })]
         })]

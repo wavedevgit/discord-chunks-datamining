@@ -60,7 +60,7 @@ function m(e) {
     textClassName: f,
     hideText: p = !1,
     hideTooltip: m = !1
-  } = e, g = (0, o.vjg)(o.Skl.ONLINE), E = (0, s.ZP)(t), v = t.isDM() || t.isGroupDM(), b = () => m || v ? (0, r.jsx)(l.Z, {
+  } = e, g = (0, o.vjg)(o.Skl.ONLINE), E = (0, s.ZP)(t), b = t.isDM() || t.isGroupDM(), v = () => m || b ? (0, r.jsx)(l.Z, {
     size: "custom",
     color: g,
     channel: t,
@@ -76,7 +76,7 @@ function m(e) {
       channel: t,
       className: d.icon
     }))
-  }), y = () => v ? (0, r.jsx)(c.Z, {
+  }), y = () => b ? (0, r.jsx)(c.Z, {
     variant: n,
     className: f,
     children: u.NW.string(u.t["9FaEzs"])
@@ -90,6 +90,6 @@ function m(e) {
     children: u.NW.string(u.t.msxteH)
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [b(), !p && y()]
+    children: [v(), !p && y()]
   })
 }

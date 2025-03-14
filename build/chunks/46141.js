@@ -12,11 +12,11 @@ n.d(t, {
   ZP: () => f,
   dm: () => _,
   fv: () => m,
-  jc: () => v,
+  jc: () => b,
   kX: () => O,
   o_: () => y,
   qo: () => p,
-  sn: () => b,
+  sn: () => v,
   u_: () => C,
   z: () => I
 }), n(789020), n(411104);
@@ -119,7 +119,7 @@ class f extends r.Z {
           bank: e.bank
         }));
       case s.HeQ.PAYSAFE_CARD:
-        return new b(c({}, r));
+        return new v(c({}, r));
       case s.HeQ.GCASH:
         return new y(c({}, r));
       case s.HeQ.GRABPAY_MY:
@@ -133,7 +133,7 @@ class f extends r.Z {
       case s.HeQ.BANCONTACT:
         return new A(c({}, r));
       case s.HeQ.IDEAL:
-        return new v(d(c({}, r), {
+        return new b(d(c({}, r), {
           bank: e.bank
         }));
       case s.HeQ.CASH_APP:
@@ -159,7 +159,7 @@ class f extends r.Z {
       case s.HeQ.PRZELEWY24:
         return new g(e);
       case s.HeQ.PAYSAFE_CARD:
-        return new b(e);
+        return new v(e);
       case s.HeQ.GCASH:
         return new y(e);
       case s.HeQ.GRABPAY_MY:
@@ -177,7 +177,7 @@ class f extends r.Z {
       case s.HeQ.EPS:
         return new E(e);
       case s.HeQ.IDEAL:
-        return new v(e);
+        return new b(e);
       case s.HeQ.CASH_APP:
         return new C(e);
       default:
@@ -240,13 +240,13 @@ class E extends f {
     this.bank = e.bank
   }
 }
-class v extends f {
+class b extends f {
   constructor(e) {
     if (super(e), e.type !== s.HeQ.IDEAL) throw Error("Cannot instantiate IdealSourceRecord with type: ".concat(e.type, ", must be ").concat(s.HeQ.IDEAL));
     this.bank = e.bank
   }
 }
-class b extends f {
+class v extends f {
   constructor(e) {
     if (super(e), e.type !== s.HeQ.PAYSAFE_CARD) throw Error("Cannot instantiate PaysafeSourceRecord with type: ".concat(e.type, ", must be ").concat(s.HeQ.PAYSAFE_CARD))
   }

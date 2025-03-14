@@ -119,9 +119,9 @@ function Z(e) {
   }
   let {
     Component: q,
-    play: Q,
+    play: X,
     events: {
-      onMouseEnter: X,
+      onMouseEnter: Q,
       onMouseLeave: J
     }
   } = (0, c.j)(), $ = e => (0, r.jsx)(u.yRy, {
@@ -156,11 +156,11 @@ function Z(e) {
         disabled: U,
         onClick: () => {
           var t;
-          null != H && H !== s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && F(S.L.UNKNOWN), null == e || null === (t = e.onClick) || void 0 === t || t.call(e), W(!G), Q(), (0, f.v)(Y, f.d.SOUNDBOARD)
+          null != H && H !== s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && F(S.L.UNKNOWN), null == e || null === (t = e.onClick) || void 0 === t || t.call(e), W(!G), X(), (0, f.v)(Y, f.d.SOUNDBOARD)
         },
         onMouseEnter: t => {
           var n, r;
-          null === (n = L.onMouseEnter) || void 0 === n || n.call(L, t), null == e || null === (r = e.onMouseEnter) || void 0 === r || r.call(e), X()
+          null === (n = L.onMouseEnter) || void 0 === n || n.call(L, t), null == e || null === (r = e.onMouseEnter) || void 0 === r || r.call(e), Q()
         },
         onMouseLeave: t => {
           var n, r;

@@ -6,7 +6,7 @@ n.d(t, {
   Ww: () => p,
   c$: () => m,
   g: () => f,
-  i2: () => v,
+  i2: () => b,
   tR: () => E,
   tV: () => g
 }), n(301563);
@@ -149,7 +149,7 @@ async function E(e, t) {
     rejectWithError: !1
   })
 }
-async function v(e, t, n) {
+async function b(e, t, n) {
   return await i.tn.post({
     url: l.ANM.OAUTH2_DEVICE_FINISH,
     body: {

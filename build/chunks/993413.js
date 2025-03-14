@@ -47,8 +47,8 @@ function _(e) {
     hideDivider: m = !1,
     showBorder: g = !1,
     borderType: E,
-    hasBackground: v = !1,
-    forcedDivider: b = !1,
+    hasBackground: b = !1,
+    forcedDivider: v = !1,
     showPremiumIcon: y = !1
   } = e;
   return (0, r.jsx)("div", {
@@ -56,14 +56,14 @@ function _(e) {
       [u.disabled]: h,
       [u.hideDivider]: m,
       [u.showBorder]: g,
-      [u.withDivider]: b
+      [u.withDivider]: v
     }),
     children: (0, r.jsxs)(c.Z, {
       className: u.customizationSectionBorder,
       backgroundClassName: u.customizationSectionBackground,
       isShown: g,
       type: E,
-      hasBackground: v,
+      hasBackground: b,
       children: [(0, r.jsxs)(a.vwX, {
         className: u.title,
         id: i,

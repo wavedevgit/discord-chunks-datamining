@@ -49,8 +49,8 @@ var r = n(200651),
   Y = n(160404),
   K = n(703656),
   q = n(917405),
-  Q = n(641015),
-  X = n(848543),
+  X = n(641015),
+  Q = n(848543),
   J = n(565799),
   $ = n(501655),
   ee = n(368442),
@@ -236,7 +236,7 @@ function eK(e) {
     simplifiedSettingsEnabled: d
   } = (0, eo.Z)({
     location: "ConnectedVideoButton"
-  }), p = (0, ea.Z)(), h = (0, ec.Z)(t), g = (0, u.e7)([I.ZP], () => null != I.ZP.getSelfEmbeddedActivityForLocation(I.ZP.getConnectedActivityLocation())), _ = (0, Q.Z)(t), {
+  }), p = (0, ea.Z)(), h = (0, ec.Z)(t), g = (0, u.e7)([I.ZP], () => null != I.ZP.getSelfEmbeddedActivityForLocation(I.ZP.getConnectedActivityLocation())), _ = (0, X.Z)(t), {
     reachedLimit: E,
     limit: O
   } = (0, es.Z)(t), N = i.useCallback(() => {
@@ -427,7 +427,7 @@ function eq(e) {
   }) : null
 }
 
-function eQ(e) {
+function eX(e) {
   let t, {
       channel: n,
       canGoLive: l,
@@ -448,7 +448,7 @@ function eQ(e) {
     b = (0, ec.Z)(n),
     _ = n.getGuildId(),
     E = (0, u.cj)([I.ZP], () => null != I.ZP.getSelfEmbeddedActivityForChannel(n.id)),
-    O = (0, Q.Z)(n),
+    O = (0, X.Z)(n),
     N = i.useCallback(() => {
       (0, eh.Z)(_, n.id, eR.jXE.ACTIVITY_PANEL)
     }, [_, n.id]),
@@ -529,7 +529,7 @@ function eQ(e) {
     }
   })
 }
-class eX extends i.PureComponent {
+class eQ extends i.PureComponent {
   renderConnectionStatus() {
     let e;
     let {
@@ -646,7 +646,7 @@ class eX extends i.PureComponent {
         channel: e,
         enableActivities: u,
         disabled: !p && d
-      }), (0, r.jsx)(eQ, {
+      }), (0, r.jsx)(eX, {
         channel: e,
         canGoLive: t,
         enableActivities: u,
@@ -654,7 +654,7 @@ class eX extends i.PureComponent {
       }), u ? (0, r.jsx)(eq, {
         channel: e,
         enableActivities: i
-      }) : null, (0, Q.Z)(e) ? (0, r.jsx)(X.Z, {
+      }) : null, (0, X.Z)(e) ? (0, r.jsx)(Q.Z, {
         className: o()(eU.button, eU.buttonColor),
         innerClassName: eU.buttonContents,
         iconClassName: eU.buttonIcon,
@@ -842,7 +842,7 @@ let e$ = (0, N.Z)(function(e) {
       children: [null != l || null != o ? (0, r.jsx)(V.Z, {
         voiceState: l,
         awaitingRemoteSessionInfo: o
-      }) : null, (0, r.jsx)(eX, eB(eV({}, e, g, d), {
+      }) : null, (0, r.jsx)(eQ, eB(eV({}, e, g, d), {
         enableActivities: R,
         remoteVoiceState: l,
         guild: f,

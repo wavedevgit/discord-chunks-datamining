@@ -19,9 +19,9 @@ function a(e, t, n, a, s, l) {
   l.set(e, t), l.set(t, e);
   for (var g = c; ++f < d;) {
     var E = e[_ = u[f]],
-      v = t[_];
-    if (a) var b = c ? a(v, E, _, t, e, l) : a(E, v, _, e, t, l);
-    if (!(void 0 === b ? E === v || s(E, v, n, a, l) : b)) {
+      b = t[_];
+    if (a) var v = c ? a(b, E, _, t, e, l) : a(E, b, _, e, t, l);
+    if (!(void 0 === v ? E === b || s(E, b, n, a, l) : v)) {
       m = !1;
       break
     }

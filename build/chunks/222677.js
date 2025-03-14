@@ -25,9 +25,9 @@ var r = n(544891),
   m = n(176354),
   g = n(563114),
   E = n(981631),
-  v = n(388032);
+  b = n(388032);
 
-function b(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -43,7 +43,7 @@ function y(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -82,9 +82,9 @@ function T(e, t, n) {
   if (403 === i) switch (o && o.code) {
     case E.evJ.TOO_MANY_REACTIONS:
       a.Z.show({
-        title: v.NW.string(v.t.lFddsb),
-        body: v.NW.string(v.t.h27eIi),
-        confirmText: v.NW.string(v.t.BddRzc)
+        title: b.NW.string(b.t.lFddsb),
+        body: b.NW.string(b.t.h27eIi),
+        confirmText: b.NW.string(b.t.BddRzc)
       });
       break;
     case E.evJ.REACTION_BLOCKED:
@@ -165,9 +165,9 @@ async function P(e, t, n) {
     p = null != u && !!u.isRetry;
   if (!p && k(e, t, n, f)) {
     a.Z.show({
-      title: v.NW.string(v.t["uaUU/v"]),
-      body: v.NW.string(v.t.psMorq),
-      confirmText: v.NW.string(v.t["NX+WJC"])
+      title: b.NW.string(b.t["uaUU/v"]),
+      body: b.NW.string(b.t.psMorq),
+      confirmText: b.NW.string(b.t["NX+WJC"])
     });
     return
   }
@@ -200,7 +200,7 @@ async function P(e, t, n) {
         action: "react"
       }, (0, s.hH)(null == i ? void 0 : i.guild_id), (0, s.v_)(i)))
     }
-    f ? (i.uv.announce(v.NW.formatToPlainString(v.t["RJlG+f"], {
+    f ? (i.uv.announce(b.NW.formatToPlainString(b.t["RJlG+f"], {
       name: n.name
     })), g.Z.triggerFullscreenAnimation({
       channelId: e,
@@ -208,7 +208,7 @@ async function P(e, t, n) {
       emoji: I(y({}, n), {
         animated: !1
       })
-    })) : i.uv.announce(v.NW.formatToPlainString(v.t.ol4acH, {
+    })) : i.uv.announce(b.NW.formatToPlainString(b.t.ol4acH, {
       name: n.name
     }))
   }).catch(r => {
@@ -219,9 +219,9 @@ async function P(e, t, n) {
       isRetry: p
     }) && (N("MESSAGE_REACTION_REMOVE", e, t, n, {
       burst: f
-    }), f ? i.uv.announce(v.NW.formatToPlainString(v.t["fJeu8/"], {
+    }), f ? i.uv.announce(b.NW.formatToPlainString(b.t["fJeu8/"], {
       name: n.name
-    })) : i.uv.announce(v.NW.formatToPlainString(v.t.UUn5V1, {
+    })) : i.uv.announce(b.NW.formatToPlainString(b.t.UUn5V1, {
       name: n.name
     })))
   })
@@ -300,9 +300,9 @@ async function x(e) {
     oldFormErrors: !0,
     rejectWithError: !1
   }).then(() => {
-    (null == u ? void 0 : u.burst) ? i.uv.announce(v.NW.formatToPlainString(v.t["3l9f6u"], {
+    (null == u ? void 0 : u.burst) ? i.uv.announce(b.NW.formatToPlainString(b.t["3l9f6u"], {
       name: o.name
-    })): i.uv.announce(v.NW.formatToPlainString(v.t["DQxi+/"], {
+    })): i.uv.announce(b.NW.formatToPlainString(b.t["DQxi+/"], {
       name: o.name
     }))
   }).catch(async e => {
@@ -324,9 +324,9 @@ async function x(e) {
         userId: s,
         burst: d,
         colors: e
-      }), (null == u ? void 0 : u.burst) ? i.uv.announce(v.NW.formatToPlainString(v.t.OamVbW, {
+      }), (null == u ? void 0 : u.burst) ? i.uv.announce(b.NW.formatToPlainString(b.t.OamVbW, {
         name: o.name
-      })) : i.uv.announce(v.NW.formatToPlainString(v.t["tD9+b2"], {
+      })) : i.uv.announce(b.NW.formatToPlainString(b.t["tD9+b2"], {
         name: o.name
       }))
     }

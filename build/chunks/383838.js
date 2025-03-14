@@ -68,8 +68,8 @@ function g(e) {
       className: h,
       iconClassName: g,
       title: E,
-      body: v,
-      style: b,
+      body: b,
+      style: v,
       align: y = s.Z.Align.START
     } = e,
     O = s.Z.Direction.HORIZONTAL;
@@ -90,7 +90,7 @@ function g(e) {
   return i === a.Z.Types.PRIMARY && (I = !1), (0, r.jsx)(a.Z, {
     className: o()(u.formNotice, h),
     type: i,
-    style: b,
+    style: v,
     children: (0, r.jsxs)(s.Z, {
       direction: O,
       align: y,
@@ -106,7 +106,7 @@ function g(e) {
           className: o()(u.formNoticeBody, {
             [u.whiteText]: I
           }),
-          children: v
+          children: b
         }), n]
       })]
     })

@@ -25,8 +25,8 @@ let _ = Object.assign(i.forwardRef(function(e, t) {
     forceShowPremium: g = !1
   } = e, {
     theme: E,
-    primaryColor: v,
-    secondaryColor: b
+    primaryColor: b,
+    secondaryColor: v
   } = (0, l.Z)({
     user: n,
     displayProfile: i,
@@ -37,8 +37,8 @@ let _ = Object.assign(i.forwardRef(function(e, t) {
     profileThemeClassName: O
   } = (0, c.Z)({
     theme: null != h ? h : E,
-    primaryColor: v,
-    secondaryColor: b
+    primaryColor: b,
+    secondaryColor: v
   }), I = {
     [f.biteSize]: o === d.y0.BITE_SIZE,
     [f.fullSize]: o === d.y0.FULL_SIZE,
@@ -55,8 +55,8 @@ let _ = Object.assign(i.forwardRef(function(e, t) {
         children: (0, r.jsx)(u.X, {
           profileType: o,
           theme: null != h ? h : E,
-          primaryColor: v,
-          secondaryColor: b,
+          primaryColor: b,
+          secondaryColor: v,
           children: m
         })
       })

@@ -53,11 +53,11 @@ function f(e) {
     getNewFocusPosition: m,
     dispatch: g,
     maintainFocusPosition: E,
-    enabled: v,
-    autoFocusElement: b,
+    enabled: b,
+    autoFocusElement: v,
     useVirtualFocus: y
   } = e, O = r.useRef();
-  O.current = v;
+  O.current = b;
   let I = u(c(t, f, _)),
     [S, T] = r.useState(!1),
     [N, A] = r.useState(!1),
@@ -74,9 +74,9 @@ function f(e) {
     }));
   r.useEffect(() => () => P.clean(), [P]);
   let w = r.useCallback(e => {
-      if (!O.current || !b) return !1;
+      if (!O.current || !v) return !1;
       e.focus()
-    }, [b]),
+    }, [v]),
     D = r.useCallback((e, n) => {
       let r = c(t, e, n);
       (null != h ? h(e, n, r) : Promise.resolve()).then(() => {
@@ -140,12 +140,12 @@ function f(e) {
           });
           return;
         case o.Us.SELECT_FOCUSED_ITEM:
-          if (b && !d(I) || e.repeat) return;
+          if (v && !d(I) || e.repeat) return;
           e.preventDefault(), e.stopPropagation(), g({
             type: t
           }), null != p ? p(f, _, e) : null != I && I.click()
       }
-    }, [L, g, b, I, p, f, _]),
+    }, [L, g, v, I, p, f, _]),
     U = r.useCallback(e => e.currentTarget !== e.target ? (S || (T(!0), R(!0)), !1) : S ? (L(!1), !1) : void(E && null != I ? D(f, _) : L(!0)), [S, E, I, L, D, f, _]),
     G = r.useCallback(e => {
       if (e.target !== e.currentTarget) {
@@ -154,7 +154,7 @@ function f(e) {
       }
     }, []),
     B = r.useMemo(() => Math.max(...n), [n]),
-    V = r.useCallback(() => ({
+    F = r.useCallback(() => ({
       role: "grid",
       "aria-rowcount": n.length,
       "aria-colcount": B,
@@ -164,7 +164,7 @@ function f(e) {
       onFocus: U,
       onBlur: G
     }), [n.length, B, S, E, t, j, U, G]),
-    F = r.useCallback((e, n) => {
+    V = r.useCallback((e, n) => {
       let r = {
         role: "gridcell",
         "aria-rowindex": n + 1,
@@ -181,10 +181,10 @@ function f(e) {
     }), []);
   return r.useMemo(() => ({
     dispatch: g,
-    getContainerProps: V,
-    getItemProps: F,
+    getContainerProps: F,
+    getItemProps: V,
     getRowProps: Z
-  }), [g, V, F, Z])
+  }), [g, F, V, Z])
 }
 
 function _(e) {
@@ -204,23 +204,23 @@ function _(e) {
   } = e, g = r.useCallback((e, t) => {
     let n = (0, i.Z)(e, t);
     return null != p && p(e, n, t), n
-  }, [p]), [E, v] = r.useReducer(g, {
+  }, [p]), [E, b] = r.useReducer(g, {
     focusedX: o,
     focusedY: s,
     columnCounts: n
   }), {
-    columnCounts: b,
+    columnCounts: v,
     focusedX: y,
     focusedY: O
-  } = E, [I] = r.useState(() => (0, a.P2)(v, 16));
+  } = E, [I] = r.useState(() => (0, a.P2)(b, 16));
   return r.useEffect(() => {
-    v({
+    b({
       type: i.s.UPDATE_COLUMN_COUNTS,
       columnCounts: n
     })
   }, [n]), f({
     navId: t,
-    columnCounts: b,
+    columnCounts: v,
     focusedX: y,
     focusedY: O,
     dispatch: I,

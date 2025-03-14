@@ -18,8 +18,8 @@ var i, o = n(392711),
   m = n(486472),
   g = n(271383),
   E = n(430824),
-  v = n(19780),
-  b = n(699516),
+  b = n(19780),
+  v = n(699516),
   y = n(944486),
   O = n(914010),
   I = n(981631);
@@ -44,7 +44,7 @@ function N(e, t) {
   let n = {};
   T.forEach(i => {
     var o;
-    i !== O.Z.getGuildId() && i !== v.Z.getGuildId() && i !== (null === (o = h.Z.getChannel(y.Z.getChannelId())) || void 0 === o ? void 0 : o.getGuildId()) && (null == r || r.guildId !== i) && (T.clearWithoutFlushing(i, e), t && (n[i] = T.get(i)))
+    i !== O.Z.getGuildId() && i !== b.Z.getGuildId() && i !== (null === (o = h.Z.getChannel(y.Z.getChannelId())) || void 0 === o ? void 0 : o.getGuildId()) && (null == r || r.guildId !== i) && (T.clearWithoutFlushing(i, e), t && (n[i] = T.get(i)))
   }), a().isEmpty(n) || l.Z.dispatch({
     type: "GUILD_SUBSCRIPTIONS_FLUSH",
     subscriptions: n
@@ -159,7 +159,7 @@ function B(e) {
   return C(t, n, r)
 }
 
-function V(e) {
+function F(e) {
   let {
     guildId: t,
     channelId: n
@@ -167,7 +167,7 @@ function V(e) {
   return A(t, n)
 }
 
-function F(e) {
+function V(e) {
   let {
     guildId: t,
     channelId: n
@@ -200,7 +200,7 @@ function Y() {
     let {
       userId: t
     } = e;
-    if (null != r && r.userId === t || b.Z.isFriend(t)) return !1;
+    if (null != r && r.userId === t || v.Z.isFriend(t)) return !1;
     let n = g.ZP.memberOf(t);
     if (0 === n.length) return !1;
     let [i] = n;
@@ -221,7 +221,7 @@ function K(e) {
 }
 class z extends(i = s.ZP.Store) {
   initialize() {
-    this.waitFor(h.Z, E.Z, O.Z, y.Z, v.Z, f.default, p.ZP, u.Z), this.syncWith([d.Z], Y), this.syncWith([p.ZP], Z)
+    this.waitFor(h.Z, E.Z, O.Z, y.Z, b.Z, f.default, p.ZP, u.Z), this.syncWith([d.Z], Y), this.syncWith([p.ZP], Z)
   }
   getSubscribedThreadIds() {
     return T.getSubscribedThreadIds()
@@ -247,8 +247,8 @@ let q = new z(l.Z, {
   CONNECTION_CLOSED: P,
   IDLE: w,
   LOGOUT: D,
-  VOICE_CHANNEL_SELECT: F,
-  CHANNEL_SELECT: F,
+  VOICE_CHANNEL_SELECT: V,
+  CHANNEL_SELECT: V,
   GUILD_CREATE: L,
   GUILD_DELETE: x,
   GUILD_SUBSCRIPTIONS_MEMBERS_ADD: M,
@@ -257,7 +257,7 @@ let q = new z(l.Z, {
   GUILD_SUBSCRIPTIONS_REMOVE_MEMBER_UPDATES: U,
   GUILD_SUBSCRIPTIONS_CHANNEL: B,
   GUILD_SUBSCRIPTIONS: G,
-  CHANNEL_PRELOAD: V,
+  CHANNEL_PRELOAD: F,
   INBOX_OPEN: K,
   THREAD_UPDATE: H,
   THREAD_DELETE: W,

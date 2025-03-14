@@ -27,8 +27,8 @@ let h = 750,
   m = 15,
   g = 500,
   E = 25,
-  v = 25,
-  b = 1,
+  b = 25,
+  v = 1,
   y = null,
   O = new l.b(h, g),
   I = new c.S(m),
@@ -46,7 +46,7 @@ class T extends a.Z {
   }
   saveLimit(e) {
     let t = r.Z.getBasicChannel(e);
-    return null != t && (0, d.p)(t) ? E : null != t && O.has(e) ? v : b
+    return null != t && (0, d.p)(t) ? E : null != t && O.has(e) ? b : v
   }
   getSaveableChannels() {
     let e = r.Z.getChannelIds(null).map(e => ({

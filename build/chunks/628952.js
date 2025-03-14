@@ -29,7 +29,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function v(e) {
   return e
 }
 
-function b(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,7 +54,7 @@ function b(e, t) {
 }
 
 function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -64,7 +64,7 @@ let O = e => {
     isSelected: n,
     price: i,
     onSelect: E,
-    shouldDisplayHeader: b = !1,
+    shouldDisplayHeader: v = !1,
     className: O
   } = e, {
     product: I
@@ -78,14 +78,14 @@ let O = e => {
   };
   return (0, r.jsxs)("div", {
     className: O,
-    children: [b && (0, r.jsxs)("div", {
+    children: [v && (0, r.jsxs)("div", {
       className: g.previewTitleContainer,
       children: [(0, r.jsx)(l.vwX, {
         className: g.previewTitle,
         children: m.NW.string(m.t.PpoJzs)
       }), P && (0, r.jsx)(l.yRy, {
         preload: () => (0, d.Z)(S.id, S.getAvatarURL(null, 80)),
-        renderPopout: e => (0, r.jsx)(u.Z, y(v({}, e), {
+        renderPopout: e => (0, r.jsx)(u.Z, y(b({}, e), {
           user: S,
           pendingAvatar: S.getAvatarURL(null, (0, l.pxk)(l.EFr.SIZE_80)),
           pendingAvatarDecoration: C.type === a.Z.AVATAR_DECORATION ? C : null,
@@ -95,7 +95,7 @@ let O = e => {
         })),
         align: "center",
         position: "right",
-        children: e => (0, r.jsx)(l.P3F, y(v({}, e), {
+        children: e => (0, r.jsx)(l.P3F, y(b({}, e), {
           className: g.previewLink,
           children: (0, r.jsx)(l.Text, {
             variant: "text-xs/medium",

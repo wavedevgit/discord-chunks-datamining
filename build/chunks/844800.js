@@ -3,14 +3,14 @@ n.d(t, {
   Z: () => h
 });
 var r, i, o, a = n(442837),
-  l = n(570140);
-let s = !1,
+  s = n(570140);
+let l = !1,
   c = null,
   u = null;
 class d extends(o = a.ZP.Store) {
   getState() {
     return {
-      verifySuccess: s,
+      verifySuccess: l,
       verifyErrors: c,
       redirectGuildId: u
     }
@@ -22,17 +22,17 @@ i = "HubEmailVerificationStore", (r = "displayName") in d ? Object.definePropert
   configurable: !0,
   writable: !0
 }) : d[r] = i;
-let h = new d(l.Z, {
+let h = new d(s.Z, {
   HUB_VERIFY_EMAIL_SUCCESS: function(e) {
     let {
       guildId: t
     } = e;
-    s = !0, c = null, u = t
+    l = !0, c = null, u = t
   },
   HUB_VERIFY_EMAIL_FAILURE: function(e) {
     let {
       errors: t
     } = e;
-    s = !1, c = t
+    l = !1, c = t
   }
 })

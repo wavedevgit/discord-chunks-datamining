@@ -166,11 +166,11 @@ function E(...e) {
   return "(" + (g(e).capture ? "" : "?:") + e.map(e => f(e)).join("|") + ")"
 }
 
-function v(e) {
+function b(e) {
   return RegExp(e.toString() + "|").exec("").length - 1
 }
 
-function b(e, t) {
+function v(e, t) {
   let n = e && e.exec(t);
   return n && 0 === n.index
 }
@@ -273,12 +273,12 @@ let I = /\b\B/,
     begin: S,
     relevance: 0
   },
-  V = {
+  F = {
     scope: "title",
     begin: T,
     relevance: 0
   };
-var F = Object.freeze({
+var V = Object.freeze({
   __proto__: null,
   APOS_STRING_MODE: D,
   BACKSLASH_ESCAPE: w,
@@ -327,7 +327,7 @@ var F = Object.freeze({
   SHEBANG: P,
   TITLE_MODE: B,
   UNDERSCORE_IDENT_RE: T,
-  UNDERSCORE_TITLE_MODE: V
+  UNDERSCORE_TITLE_MODE: F
 });
 
 function Z(e, t) {
@@ -412,7 +412,7 @@ function ea(e, t, {
     i = e[n],
     o = {},
     a = {};
-  for (let e = 1; e <= t.length; e++) a[e + r] = i[e], o[e + r] = !0, r += v(t[e - 1]);
+  for (let e = 1; e <= t.length; e++) a[e + r] = i[e], o[e + r] = !0, r += b(t[e - 1]);
   e[n] = a, e[n]._emit = o, e[n]._multi = !0
 }
 
@@ -461,7 +461,7 @@ function ed(e) {
       this.matchIndexes = {}, this.regexes = [], this.matchAt = 1, this.position = 0
     }
     addRule(e, t) {
-      t.position = this.position++, this.matchIndexes[this.matchAt] = t, this.regexes.push([t, e]), this.matchAt += v(e) + 1
+      t.position = this.position++, this.matchIndexes[this.matchAt] = t, this.regexes.push([t, e]), this.matchAt += b(e) + 1
     }
     compile() {
       0 === this.regexes.length && (this.exec = () => null);
@@ -561,8 +561,8 @@ class eh extends Error {
 let em = r,
   eg = i,
   eE = Symbol("nomatch"),
-  ev = 7,
-  eb = function(e) {
+  eb = 7,
+  ev = function(e) {
     let r = Object.create(null),
       i = Object.create(null),
       o = [],
@@ -608,11 +608,11 @@ let em = r,
         language: i
       };
       x("before:highlight", o);
-      let a = o.result ? o.result : v(o.language, o.code, n);
+      let a = o.result ? o.result : b(o.language, o.code, n);
       return a.code = o.code, x("after:highlight", a), a
     }
 
-    function v(e, t, i, o) {
+    function b(e, t, i, o) {
       let l = Object.create(null);
 
       function u(e, t) {
@@ -634,7 +634,7 @@ let em = r,
             i = u(w, r);
           if (i) {
             let [e, o] = i;
-            if (L.addText(n), n = "", l[r] = (l[r] || 0) + 1, l[r] <= ev && (M += o), e.startsWith("_")) n += t[0];
+            if (L.addText(n), n = "", l[r] = (l[r] || 0) + 1, l[r] <= eb && (M += o), e.startsWith("_")) n += t[0];
             else {
               let n = A.classNameAliases[e] || e;
               p(t[0], n)
@@ -653,7 +653,7 @@ let em = r,
             L.addText(x);
             return
           }
-          e = v(w.subLanguage, x, !0, D[w.subLanguage]), D[w.subLanguage] = e._top
+          e = b(w.subLanguage, x, !0, D[w.subLanguage]), D[w.subLanguage] = e._top
         } else e = O(x, w.subLanguage.length ? w.subLanguage : null);
         w.relevance > 0 && (M += e.relevance), L.__addSublanguage(e._emitter, e.language)
       }
@@ -689,7 +689,7 @@ let em = r,
       }
 
       function g(e, t, r) {
-        let i = b(e.endRe, r);
+        let i = v(e.endRe, r);
         if (i) {
           if (e["on:end"]) {
             let r = new n(e);
@@ -834,7 +834,7 @@ let em = r,
     function O(e, t) {
       t = t || c.languages || Object.keys(r);
       let n = y(e),
-        i = t.filter(P).filter(D).map(t => v(t, e, !1));
+        i = t.filter(P).filter(D).map(t => b(t, e, !1));
       i.unshift(n);
       let [o, a] = i.sort((e, t) => {
         if (e.relevance !== t.relevance) return t.relevance - e.relevance;
@@ -993,8 +993,8 @@ let em = r,
         either: E,
         optional: h,
         anyNumberOfTimes: p
-      }, F) "object" == typeof F[n] && t(F[n]);
-    return Object.assign(e, F), e
+      }, V) "object" == typeof V[n] && t(V[n]);
+    return Object.assign(e, V), e
   },
-  ey = eb({});
-ey.newInstance = () => eb({}), e.exports = ey, ey.HighlightJS = ey, ey.default = ey
+  ey = ev({});
+ey.newInstance = () => ev({}), e.exports = ey, ey.HighlightJS = ey, ey.default = ey

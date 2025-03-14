@@ -46,17 +46,17 @@ function m(e) {
     onClick: g
   } = e, {
     trackUserProfileAction: E
-  } = (0, c.KZ)(), v = i.useMemo(() => ({
+  } = (0, c.KZ)(), b = i.useMemo(() => ({
     channel: m,
     type: "channel"
   }), [m]), {
-    commands: b
-  } = a.Qm(v, t, n), y = i.useMemo(() => null == b ? void 0 : b.filter(e => {
+    commands: v
+  } = a.Qm(b, t, n), y = i.useMemo(() => null == v ? void 0 : v.filter(e => {
     let {
       nsfw: t
     } = e;
     return !0 !== t
-  }), [b]);
+  }), [v]);
   if (null == y || 0 === y.length) return null;
   let O = e => {
     null == g || g(), E({

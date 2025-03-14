@@ -50,13 +50,13 @@ function E(e, t) {
   return n
 }
 
-function v(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function b() {
+function v() {
   window.getSelection().removeAllRanges()
 }
 let y = e => {
@@ -71,20 +71,20 @@ let y = e => {
     impressionName: m,
     impressionProperties: g,
     disableClickTrap: E = !1
-  } = e, v = i.useRef(null), y = i.useMemo(() => ({
+  } = e, b = i.useRef(null), y = i.useMemo(() => ({
     current: l
   }), [l]), O = i.useRef(n);
   i.useEffect(() => {
     O.current = n
   }), i.useEffect(() => {
     var e, t, n;
-    let r = null === (e = v.current) || void 0 === e ? void 0 : e.elementRef.current;
+    let r = null === (e = b.current) || void 0 === e ? void 0 : e.elementRef.current;
     if (null == r) return;
     let i = e => {
       var t;
       let n = e.target,
-        r = null === (t = v.current) || void 0 === t ? void 0 : t.elementRef.current;
-      !(null != r && (0, s.ty$)(r, n)) && (b(), O.current())
+        r = null === (t = b.current) || void 0 === t ? void 0 : t.elementRef.current;
+      !(null != r && (0, s.ty$)(r, n)) && (v(), O.current())
     };
     return null === (t = r.ownerDocument) || void 0 === t || t.addEventListener("click", i, !0), null === (n = r.ownerDocument) || void 0 === n || n.addEventListener("contextmenu", i, !0), () => {
       var e, t;
@@ -99,7 +99,7 @@ let y = e => {
     return null === (e = I.current) || void 0 === e ? void 0 : e.call(I)
   }, []), i.useLayoutEffect(() => {
     var e;
-    null === (e = v.current) || void 0 === e || e.updatePosition()
+    null === (e = b.current) || void 0 === e || e.updatePosition()
   }), (0, u.Z)({
     type: o.ImpressionTypes.MENU,
     name: m,
@@ -120,7 +120,7 @@ let y = e => {
     position: null != _ ? _ : "right",
     align: null != p ? p : "top",
     autoInvert: !0,
-    ref: v,
+    ref: b,
     nudgeAlignIntoViewport: !0,
     clickTrap: !E,
     children: t
@@ -226,7 +226,7 @@ function I() {
     appContext: s,
     renderWindow: u
   } = i.useContext(c.ZP);
-  return (0, r.jsx)(O, v(g({
+  return (0, r.jsx)(O, b(g({
     appContext: s,
     renderWindow: u
   }, e), {

@@ -15,8 +15,8 @@ e = n.nmd(e),
       m = 128,
       g = "-",
       E = /^xn--/,
-      v = /[^\x20-\x7E]/,
-      b = /[\x2E\u3002\uFF0E\uFF61]/g,
+      b = /[^\x20-\x7E]/,
+      v = /[\x2E\u3002\uFF0E\uFF61]/g,
       y = {
         overflow: "Overflow: input needs wider integers to process",
         "not-basic": "Illegal input >= 0x80 (not a basic code point)",
@@ -38,7 +38,7 @@ e = n.nmd(e),
     function A(e, t) {
       var n = e.split("@"),
         r = "";
-      return n.length > 1 && (r = n[0] + "@", e = n[1]), r + N((e = e.replace(b, ".")).split("."), t).join(".")
+      return n.length > 1 && (r = n[0] + "@", e = n[1]), r + N((e = e.replace(v, ".")).split("."), t).join(".")
     }
 
     function C(e) {
@@ -69,27 +69,27 @@ e = n.nmd(e),
 
     function L(e) {
       var t, n, r, i, o, a, s, l, _, p, E = [],
-        v = e.length,
-        b = 0,
+        b = e.length,
+        v = 0,
         y = m,
         O = h;
       for ((n = e.lastIndexOf(g)) < 0 && (n = 0), r = 0; r < n; ++r) e.charCodeAt(r) >= 128 && T("not-basic"), E.push(e.charCodeAt(r));
-      for (i = n > 0 ? n + 1 : 0; i < v;) {
-        for (o = b, a = 1, s = u; i >= v && T("invalid-input"), ((l = P(e.charCodeAt(i++))) >= u || l > I((c - b) / a)) && T("overflow"), b += l * a, !(l < (_ = s <= O ? d : s >= O + f ? f : s - O)); s += u) a > I(c / (p = u - _)) && T("overflow"), a *= p;
-        O = D(b - o, t = E.length + 1, 0 == o), I(b / t) > c - y && T("overflow"), y += I(b / t), b %= t, E.splice(b++, 0, y)
+      for (i = n > 0 ? n + 1 : 0; i < b;) {
+        for (o = v, a = 1, s = u; i >= b && T("invalid-input"), ((l = P(e.charCodeAt(i++))) >= u || l > I((c - v) / a)) && T("overflow"), v += l * a, !(l < (_ = s <= O ? d : s >= O + f ? f : s - O)); s += u) a > I(c / (p = u - _)) && T("overflow"), a *= p;
+        O = D(v - o, t = E.length + 1, 0 == o), I(v / t) > c - y && T("overflow"), y += I(v / t), v %= t, E.splice(v++, 0, y)
       }
       return R(E)
     }
 
     function x(e) {
-      var t, n, r, i, o, a, s, l, _, p, E, v, b, y, O, N = [];
-      for (a = 0, v = (e = C(e)).length, t = m, n = 0, o = h; a < v; ++a)(E = e[a]) < 128 && N.push(S(E));
-      for (r = i = N.length, i && N.push(g); r < v;) {
-        for (s = c, a = 0; a < v; ++a)(E = e[a]) >= t && E < s && (s = E);
-        for (s - t > I((c - n) / (b = r + 1)) && T("overflow"), n += (s - t) * b, t = s, a = 0; a < v; ++a)
+      var t, n, r, i, o, a, s, l, _, p, E, b, v, y, O, N = [];
+      for (a = 0, b = (e = C(e)).length, t = m, n = 0, o = h; a < b; ++a)(E = e[a]) < 128 && N.push(S(E));
+      for (r = i = N.length, i && N.push(g); r < b;) {
+        for (s = c, a = 0; a < b; ++a)(E = e[a]) >= t && E < s && (s = E);
+        for (s - t > I((c - n) / (v = r + 1)) && T("overflow"), n += (s - t) * v, t = s, a = 0; a < b; ++a)
           if ((E = e[a]) < t && ++n > c && T("overflow"), E == t) {
             for (l = n, _ = u; !(l < (p = _ <= o ? d : _ >= o + f ? f : _ - o)); _ += u) O = l - p, y = u - p, N.push(S(w(p + O % y, 0))), l = I(O / y);
-            N.push(S(w(l, 0))), o = D(n, b, r == i), n = 0, ++r
+            N.push(S(w(l, 0))), o = D(n, v, r == i), n = 0, ++r
           }++ n, ++t
       }
       return N.join("")
@@ -103,7 +103,7 @@ e = n.nmd(e),
 
     function k(e) {
       return A(e, function(e) {
-        return v.test(e) ? "xn--" + x(e) : e
+        return b.test(e) ? "xn--" + x(e) : e
       })
     }
     if (s = {

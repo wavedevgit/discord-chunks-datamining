@@ -27,7 +27,7 @@ let f = /sketchfab/i,
   g = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
   E = RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/shop");
 
-function v(e) {
+function b(e) {
   let {
     width: t,
     height: n
@@ -35,7 +35,7 @@ function v(e) {
   return t > 0 && n > 0
 }
 
-function b(e, t, n) {
+function v(e, t, n) {
   if (null != t && f.test(t.name) || _.test(n.url)) return !1;
   let r = null != n.proxy_url || /^https:/i.test(n.url);
   return null != e && c.default.extractTimestamp(e) < h && (r = r && null != t && p.test(t.name)), r
@@ -86,7 +86,7 @@ function O(e, t, n) {
     }), null != n.provider && null != n.provider.name && (r.provider = {
       name: n.provider.name,
       url: n.provider.url
-    }), null != n.timestamp && (r.timestamp = a()(new Date(n.timestamp))), null != n.color && (r.color = (0, s.ho)(n.color, !0)), null != n.thumbnail && v(n.thumbnail)) switch (r.type) {
+    }), null != n.timestamp && (r.timestamp = a()(new Date(n.timestamp))), null != n.color && (r.color = (0, s.ho)(n.color, !0)), null != n.thumbnail && b(n.thumbnail)) switch (r.type) {
     case u.hBH.ARTICLE:
     case u.hBH.IMAGE:
       r.image = y(n.thumbnail);
@@ -94,13 +94,13 @@ function O(e, t, n) {
     default:
       r.thumbnail = y(n.thumbnail)
   }
-  if (null != n.image && v(n.image) && (r.image = y(n.image)), null != n.video && (null == r.thumbnail && null != n.video.proxy_url && v(n.video) && (r.thumbnail = {
+  if (null != n.image && b(n.image) && (r.image = y(n.image)), null != n.video && (null == r.thumbnail && null != n.video.proxy_url && b(n.video) && (r.thumbnail = {
       width: n.video.width,
       height: n.video.height,
       url: I(n.video.proxy_url, {
         format: "webp"
       })
-    }), null != r.thumbnail && v(n.video) && b(t, n.provider, n.video) && (r.video = y(n.video))), d.k.has(r.type)) {
+    }), null != r.thumbnail && b(n.video) && v(t, n.provider, n.video) && (r.video = y(n.video))), d.k.has(r.type)) {
     var o;
     let e = null !== (o = n.fields) && void 0 !== o ? o : [];
     r.fields = e.map(e => {

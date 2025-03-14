@@ -21,8 +21,8 @@ function f(e) {
   } = e, _ = (0, i.e7)([u.default], () => u.default.getCurrentUser()), p = (0, i.e7)([l.ZP], () => null != f && null != _ ? l.ZP.getMember(f, _.id) : null), h = null != p ? p.avatarDecoration : null == _ ? void 0 : _.avatarDecoration, m = (0, o.Z)(n), {
     pendingAvatar: g,
     pendingAvatarV2: E,
-    pendingAvatarDecoration: v,
-    pendingErrors: b
+    pendingAvatarDecoration: b,
+    pendingErrors: v
   } = (0, i.cj)([c.Z, a.Z], () => ({
     pendingAvatar: t ? c.Z.getTryItOutAvatar() : null != f ? a.Z.getPendingAvatar() : c.Z.getPendingAvatar(),
     pendingAvatarV2: t ? c.Z.getTryItOutAvatarV2() : null != f ? a.Z.getPendingAvatarV2() : c.Z.getPendingAvatarV2(),
@@ -34,11 +34,11 @@ function f(e) {
   return {
     pendingAvatar: g,
     pendingAvatarV2: E,
-    pendingAvatarDecoration: v,
+    pendingAvatarDecoration: b,
     setPendingAvatar: t ? d.c_ : y,
     setPendingAvatarV2: t ? d.US : O,
     setPendingAvatarDecoration: t ? d.Xz : I,
     savedAvatarDecoration: h,
-    pendingErrors: b
+    pendingErrors: v
   }
 }

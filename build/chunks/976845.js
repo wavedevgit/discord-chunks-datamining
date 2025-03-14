@@ -78,7 +78,7 @@ let m = {
     EARN: .25,
     SPEND: .3
   },
-  v = e => {
+  b = e => {
     let {
       currentAnimationType: t,
       animationTypeRef: n,
@@ -92,7 +92,7 @@ let m = {
       r(l)
     }, [r, l])
   },
-  b = e => {
+  v = e => {
     var {
       currentAnimationType: t
     } = e, n = p(e, ["currentAnimationType"]);
@@ -100,7 +100,7 @@ let m = {
       {
         Component: o
       } = i;
-    return v(d({
+    return b(d({
       currentAnimationType: t
     }, n, p(i, ["Component"]))), (0, r.jsx)(o, _(d({}, m), {
       size: "custom",
@@ -116,7 +116,7 @@ let m = {
       {
         Component: a
       } = i;
-    return v(d({
+    return b(d({
       currentAnimationType: t
     }, n, p(i, ["Component"]))), (0, r.jsx)(a, _(d({}, m), {
       size: "custom",
@@ -126,5 +126,5 @@ let m = {
   },
   O = e => {
     let t = (0, l.ZP)();
-    return (0, s.ap)(t) ? (0, r.jsx)(y, d({}, e)) : (0, r.jsx)(b, d({}, e))
+    return (0, s.ap)(t) ? (0, r.jsx)(y, d({}, e)) : (0, r.jsx)(v, d({}, e))
   }

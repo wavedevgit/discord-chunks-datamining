@@ -2,7 +2,7 @@
 "use strict";
 let r, i;
 n.d(t, {
-  X: () => v,
+  X: () => b,
   l: () => I
 }), n(177593), n(733860), n(47120), n(653041), n(17089);
 var o, a = n(756647),
@@ -53,13 +53,13 @@ let p = 1500,
   m = 1500,
   g = null !== (o = window.requestIdleCallback) && void 0 !== o ? o : e => setImmediate(() => e()),
   E = new c.R,
-  v = {
+  b = {
     handleConnectionOpen: () => {},
     handleConnectionClosed: () => {},
     handleFingerprint: () => {},
     handleTrack: () => {}
   },
-  b = [],
+  v = [],
   y = null,
   O = () => Promise.resolve({
     sessionId: void 0
@@ -83,7 +83,7 @@ let p = 1500,
     }
 
     function A() {
-      return 0 !== b.length && (null != i ? null != r : null != c())
+      return 0 !== v.length && (null != i ? null != r : null != c())
     }
 
     function C(e) {
@@ -97,14 +97,14 @@ let p = 1500,
 
     function R() {
       if (y = null, !A()) return;
-      let e = b.slice();
-      b = [], P(e).then(() => {
+      let e = v.slice();
+      v = [], P(e).then(() => {
         e.forEach(e => {
           var t;
           null === (t = e.resolve) || void 0 === t || t.call(e)
         })
       }, t => {
-        b.unshift(...e);
+        v.unshift(...e);
         let {
           message: n
         } = t.body || t;
@@ -129,7 +129,7 @@ let p = 1500,
         rejectWithError: !1
       })
     }
-    m = null != S ? S : p, v.handleConnectionOpen = function(e) {
+    m = null != S ? S : p, b.handleConnectionOpen = function(e) {
       let {
         analyticsToken: t,
         user: n
@@ -137,11 +137,11 @@ let p = 1500,
       return null != t && (r = t), null != n.id && (i = n.id), C({
         shouldFlushOnNextTick: !1
       }), !1
-    }, v.handleConnectionClosed = function() {
+    }, b.handleConnectionClosed = function() {
       return R(), r = null, i = null, !1
-    }, v.handleFingerprint = function() {
+    }, b.handleFingerprint = function() {
       return R(), !1
-    }, v.handleTrack = function(e) {
+    }, b.handleTrack = function(e) {
       let {
         event: t,
         properties: n,
@@ -161,7 +161,7 @@ let p = 1500,
           }, n),
           resolve: o
         }, l = N(s);
-        null != l && (s.properties.client_uuid = E.generate(l)), b.push(s), b.length > h && (b = b.slice(-h)), r ? C({
+        null != l && (s.properties.client_uuid = E.generate(l)), v.push(s), v.length > h && (v = v.slice(-h)), r ? C({
           shouldFlushOnNextTick: !0
         }) : C({
           shouldFlushOnNextTick: !1

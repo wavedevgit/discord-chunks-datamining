@@ -78,8 +78,8 @@ class g extends Error {
 
 function E(e, t, n, r, a) {
   var c, u, d, _, h;
-  let v = i()[e](t.url);
-  if (null != t.onRequestCreated && t.onRequestCreated(v), null != t.query) {
+  let b = i()[e](t.url);
+  if (null != t.onRequestCreated && t.onRequestCreated(b), null != t.query) {
     let e = t.query;
     if ("object" == typeof e) {
       let t = f({}, e);
@@ -87,26 +87,26 @@ function E(e, t, n, r, a) {
         null == t[e] && delete t[e]
       }), e = t
     }
-    v.query(e)
+    b.query(e)
   }
-  if (t.body && v.send(t.body), null != t.headers && v.set(t.headers), null != t.reason && v.set("X-Audit-Log-Reason", encodeURIComponent(t.reason)), null === (c = t.attachments) || void 0 === c || c.forEach(e => {
-      v.attach(e.name, e.file, e.filename)
+  if (t.body && b.send(t.body), null != t.headers && b.set(t.headers), null != t.reason && b.set("X-Audit-Log-Reason", encodeURIComponent(t.reason)), null === (c = t.attachments) || void 0 === c || c.forEach(e => {
+      b.attach(e.name, e.file, e.filename)
     }), null === (u = t.fields) || void 0 === u || u.forEach(e => {
-      v.field(e.name, e.value)
+      b.field(e.name, e.value)
     }), null != t.context) {
     let e = M(t.context);
-    null != e && v.set("X-Context-Properties", e)
+    null != e && b.set("X-Context-Properties", e)
   }
-  null != t.retried && 0 !== t.retried && v.set("X-Failed-Requests", "".concat(t.retried)), null != t.timeout && 0 !== t.timeout && v.timeout(t.timeout), t.binary && v.responseType("blob"), null != t.onRequestProgress && v.on("progress", e => {
+  null != t.retried && 0 !== t.retried && b.set("X-Failed-Requests", "".concat(t.retried)), null != t.timeout && 0 !== t.timeout && b.timeout(t.timeout), t.binary && b.responseType("blob"), null != t.onRequestProgress && b.on("progress", e => {
     var n;
     null === (n = t.onRequestProgress) || void 0 === n || n.call(t, e)
   });
-  let b = () => {
+  let v = () => {
     t.backoff = null != t.backoff ? t.backoff : new o.Z, t.retried = (null != t.retried ? t.retried : 0) + 1, t.backoff.fail(() => L(t.url).then(() => E(e, t, n, r, a)))
   };
-  null == w || null === (d = w.prepareRequest) || void 0 === d || d.call(w, v), v.ok(e => null != e.status), v.then(i => {
+  null == w || null === (d = w.prepareRequest) || void 0 === d || d.call(w, b), b.ok(e => null != e.status), b.then(i => {
     var o, c, u;
-    if (null != t.retries && t.retries-- > 0 && m.has(i.status)) return b();
+    if (null != t.retries && t.retries-- > 0 && m.has(i.status)) return v();
     let d = {
       ok: i.ok,
       headers: i.headers,
@@ -123,14 +123,14 @@ function E(e, t, n, r, a) {
         });
         _ = !0, E(e, s, n, r, a)
       },
-      v = e => {
+      b = e => {
         _ || (r(e), null == a || a({
           ok: !1,
           hasErr: !0,
           err: e
         }))
       };
-    if ((null == t ? void 0 : null === (o = t.interceptResponse) || void 0 === o ? void 0 : o.call(t, i, h, v)) !== !0 && (null == w ? void 0 : null === (c = w.interceptResponse) || void 0 === c ? void 0 : c.call(w, i, h, v)) !== !0) {
+    if ((null == t ? void 0 : null === (o = t.interceptResponse) || void 0 === o ? void 0 : o.call(t, i, h, b)) !== !0 && (null == w ? void 0 : null === (c = w.interceptResponse) || void 0 === c ? void 0 : c.call(w, i, h, b)) !== !0) {
       if (i.ok) n(d);
       else {
         if (t.oldFormErrors && (null == d ? void 0 : null === (u = d.body) || void 0 === u ? void 0 : u.code) === s.f$) {
@@ -154,33 +154,33 @@ function E(e, t, n, r, a) {
       }, d))
     }
   }, e => {
-    null != t.retries && t.retries-- > 0 && "ABORTED" !== e.code ? b() : (y(t), r(e), null != a && a({
+    null != t.retries && t.retries-- > 0 && "ABORTED" !== e.code ? v() : (y(t), r(e), null != a && a({
       ok: !1,
       hasErr: !0,
       err: e
     }))
-  }), (null === (_ = t.signal) || void 0 === _ ? void 0 : _.aborted) ? v.abort() : null === (h = t.signal) || void 0 === h || h.addEventListener("abort", () => v.abort(), {
+  }), (null === (_ = t.signal) || void 0 === _ ? void 0 : _.aborted) ? b.abort() : null === (h = t.signal) || void 0 === h || h.addEventListener("abort", () => b.abort(), {
     once: !0
   })
 }
-let v = new Map;
+let b = new Map;
 
-function b(e) {
-  let t = v.get(e);
+function v(e) {
+  let t = b.get(e);
   if (null == t) {
     h.verbose("rateLimitExpirationHandler: rate limit for", e, "expired, but record was already removed");
     return
   }
   let n = t.queue.shift();
   if (null == n) {
-    h.verbose("rateLimitExpirationHandler: removing key for", e), v.delete(e);
+    h.verbose("rateLimitExpirationHandler: removing key for", e), b.delete(e);
     return
   }
   h.verbose("rateLimitExpirationHandler: moving to next record for ", e), n()
 }
 
 function y(e, t) {
-  let n = v.get(e.url);
+  let n = b.get(e.url);
   if (null != t && 429 === t.status) {
     var r, i, o;
     let a = (null === (r = t.body) || void 0 === r ? void 0 : r.retry_after) || 5,
@@ -193,14 +193,14 @@ function y(e, t) {
       }
     }
     h.verbose("cleanupRequestEntry: rate limit for ".concat(e.url, " retry after ").concat(a, " seconds"));
-    let l = setTimeout(() => b(e.url), 1e3 * a);
-    v.set(e.url, {
+    let l = setTimeout(() => v(e.url), 1e3 * a);
+    b.set(e.url, {
       queue: null !== (o = null == n ? void 0 : n.queue) && void 0 !== o ? o : [],
       retryAfterTimestamp: s,
       latestErrorMessage: String(null === (i = t.body) || void 0 === i ? void 0 : i.message),
       timeoutId: l
     })
-  } else null != n && n.retryAfterTimestamp < Date.now() && (h.verbose("cleanupRequestEntry: rate limit for ", e.url, "expired"), b(e.url))
+  } else null != n && n.retryAfterTimestamp < Date.now() && (h.verbose("cleanupRequestEntry: rate limit for ", e.url, "expired"), v(e.url))
 }
 let O = (e, t) => {
   let n = Math.round((t.retryAfterTimestamp - Date.now()) / 1e3);
@@ -219,7 +219,7 @@ function I(e, t, n) {
       url: t,
       rejectWithError: !1
     });
-    let o = v.get(t.url);
+    let o = b.get(t.url);
     if (null != o && t.failImmediatelyWhenRateLimited) return O(i, o);
     null != o ? (h.verbose("makeRequest: queueing request for ", t.url), o.queue.push(E.bind(null, e, t, r, i, n))) : E(e, t, r, i, n)
   })

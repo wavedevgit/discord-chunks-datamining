@@ -48,13 +48,13 @@ function E(e, t) {
   return n
 }
 
-function v(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function b(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -118,8 +118,8 @@ let T = a.forwardRef(function(e, t) {
   var {
     children: n,
     id: r
-  } = e, i = b(e, ["children", "id"]);
-  return (0, o.jsx)("div", v(g({}, i), {
+  } = e, i = v(e, ["children", "id"]);
+  return (0, o.jsx)("div", b(g({}, i), {
     ref: t,
     role: "tabpanel",
     id: N(r),

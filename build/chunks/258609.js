@@ -59,7 +59,7 @@ function E(e) {
   p.add(t)
 }
 
-function v(e) {
+function b(e) {
   let {
     platform: t,
     devices: n
@@ -71,7 +71,7 @@ function v(e) {
   _ = i
 }
 
-function b(e) {
+function v(e) {
   let {
     platform: t
   } = e;
@@ -125,7 +125,7 @@ let S = new I(o.Z, {
   REMOTE_SESSION_DISCONNECT: m,
   WAIT_FOR_REMOTE_SESSION: g,
   GAME_CONSOLE_FETCH_DEVICES_START: E,
-  GAME_CONSOLE_FETCH_DEVICES_SUCCESS: v,
-  GAME_CONSOLE_FETCH_DEVICES_FAIL: b,
+  GAME_CONSOLE_FETCH_DEVICES_SUCCESS: b,
+  GAME_CONSOLE_FETCH_DEVICES_FAIL: v,
   GAME_CONSOLE_SELECT_DEVICE: y
 })

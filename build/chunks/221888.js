@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(199902),
   g = n(594174),
   E = n(823379),
-  v = n(5192),
-  b = n(354459),
+  b = n(5192),
+  v = n(354459),
   y = n(981631),
   O = n(388032),
   I = n(921590);
@@ -67,11 +67,11 @@ let C = 150;
 
 function R(e, t) {
   switch (e) {
-    case b.fO.ACTIVITY:
+    case v.fO.ACTIVITY:
       return O.NW.formatToPlainString(O.t.TCM94e, {
         numUsers: t
       });
-    case b.fO.STREAM:
+    case v.fO.STREAM:
       return O.NW.formatToPlainString(O.t.BR7Tnp, {
         numViewers: t
       });
@@ -103,7 +103,7 @@ function P(e) {
           user: e,
           guildId: null != i ? i : void 0,
           channelId: s,
-          nick: v.ZP.getNickname(i, s, e),
+          nick: b.ZP.getNickname(i, s, e),
           className: a()(I.memberListItem, {
             [I.popoutDisabled]: n
           }),
@@ -126,7 +126,7 @@ function w(e) {
     participantType: l
   } = e, c = R(l, t.length), u = t.length < o ? t.map(e => (0, r.jsx)("div", {
     className: I.viewersTooltipItem,
-    children: v.ZP.getName(n, i, e)
+    children: b.ZP.getName(n, i, e)
   }, e.id)) : c;
   return (0, r.jsx)(d.DY3, {
     text: u,
@@ -152,15 +152,15 @@ function L(e) {
     guildId: o,
     participant: s,
     className: h,
-    compact: v = !1,
+    compact: b = !1,
     disableInteraction: O = !1,
     maxVisibleUsers: S = 3
   } = e, N = (0, p.Z)(), [R, L] = i.useState(!1), x = i.useRef(new u.sW(C, () => L(!1))), M = (0, c.Wu)([m.Z, g.default], () => {
-    if (s.type === b.fO.STREAM) {
+    if (s.type === v.fO.STREAM) {
       let e = m.Z.getViewerIds(s.id);
       return e.length > 0 ? e.map(e => g.default.getUser(e)).filter(E.lm) : D
     }
-    return s.type === b.fO.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => g.default.getUser(e.userId)).filter(E.lm) : D
+    return s.type === v.fO.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => g.default.getUser(e.userId)).filter(E.lm) : D
   }, [s]);
   i.useEffect(() => {
     N && (x.current.cancel(), L(!1))
@@ -184,7 +184,7 @@ function L(e) {
       })
     }, [j, k]);
   if (0 === M.length) return null;
-  if (v) return (0, r.jsx)(w, {
+  if (b) return (0, r.jsx)(w, {
     maxVisibleUsers: S,
     users: M,
     guildId: o,

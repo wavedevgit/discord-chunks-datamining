@@ -7,7 +7,7 @@ n.d(t, {
   _I: () => p,
   _S: () => m,
   fD: () => h,
-  mG: () => b,
+  mG: () => v,
   pU: () => f,
   r4: () => T
 }), n(301563), n(866573), n(642549), n(787622), n(474991), n(398202), n(47120);
@@ -36,7 +36,7 @@ function _() {
 }
 
 function p(e) {
-  if (b(e)) return Promise.resolve(y(e));
+  if (v(e)) return Promise.resolve(y(e));
   let t = s.Z.safeParseWithQuery(e);
   return null == t ? Promise.resolve(null) : (t.search = null, t.query.meta = "true", d && (t.query.version = d), t.host = window.location.host, o.tn.get({
     url: i.format(t),
@@ -65,14 +65,14 @@ let g = RegExp("^https://(?:ptb\\.|canary\\.)?(discordapp|discord)\\.com/__devel
 function E(e) {
   return null != e && g.test(e)
 }
-let v = RegExp("^dev://branch/([\\w-./]+)$", "i");
+let b = RegExp("^dev://branch/([\\w-./]+)$", "i");
 
-function b(e) {
-  return null != e && v.test(e)
+function v(e) {
+  return null != e && b.test(e)
 }
 
 function y(e) {
-  let t = e.match(v);
+  let t = e.match(b);
   if (null == t || 2 !== t.length) return null;
   let n = (0, a.getNativePlatform)(),
     r = t[1];
@@ -92,7 +92,7 @@ let O = "s",
   S = new Set(["/__development/link", "/__development/link/"]);
 
 function T(e) {
-  if (b(e)) return {
+  if (v(e)) return {
     payload: null,
     url: e
   };

@@ -1,36 +1,36 @@
-/** Chunk was on 98806 **/
+/** Chunk was on 44584 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(200651);
 n(192379);
-var a = n(481060),
-  i = n(388032),
-  l = n(4630);
+var i = n(481060),
+  l = n(388032),
+  o = n(4630);
 
-function o(e) {
+function a(e) {
   let {
     sendStartNotification: t,
     setSendStartNotification: n
-  } = e, o = t ? i.NW.string(i.t.xAT8lJ) : i.NW.string(i.t["Y+18hY"]);
+  } = e, a = t ? l.NW.string(l.t.xAT8lJ) : l.NW.string(l.t["Y+18hY"]);
   return (0, r.jsx)("div", {
-    className: l.notificationToggle,
-    children: (0, r.jsx)(a.XZJ, {
-      type: a.XZJ.Types.INVERTED,
+    className: o.notificationToggle,
+    children: (0, r.jsx)(i.XZJ, {
+      type: i.XZJ.Types.INVERTED,
       size: 14,
-      className: l.__invalid_checkbox,
+      className: o.__invalid_checkbox,
       value: t,
       onChange: function() {
         n(!t)
       },
-      children: (0, r.jsx)(a.Text, {
+      children: (0, r.jsx)(i.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: (0, r.jsx)(a.ua7, {
+        children: (0, r.jsx)(i.ua7, {
           position: "bottom",
-          tooltipClassName: l.tooltip,
-          text: i.NW.string(i.t["4A/xnZ"]),
-          "aria-label": i.NW.string(i.t["4A/xnZ"]),
+          tooltipClassName: o.tooltip,
+          text: l.NW.string(l.t["4A/xnZ"]),
+          "aria-label": l.NW.string(l.t["4A/xnZ"]),
           children: e => {
             var t, n;
             return (0, r.jsx)("span", (t = function(e) {
@@ -51,7 +51,7 @@ function o(e) {
               }
               return e
             }({}, e), n = n = {
-              children: o
+              children: a
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

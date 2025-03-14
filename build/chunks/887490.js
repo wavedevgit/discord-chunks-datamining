@@ -3,9 +3,9 @@
 n.d(t, {
   C0: () => E,
   Ew: () => y,
-  Jz: () => v,
+  Jz: () => b,
   LC: () => g,
-  M8: () => b,
+  M8: () => v,
   aj: () => h,
   bN: () => p,
   lP: () => T,
@@ -92,7 +92,7 @@ let p = f(u({}, o.ML, a.F3), {
       return null == e.selection ? null : this.getParentVoid(e, e.selection)
     },
     getCurrentText(e) {
-      let t = null != e.selection ? b.toPoint(e.selection) : null;
+      let t = null != e.selection ? v.toPoint(e.selection) : null;
       return null == t ? null : p.node(e, t.path)
     },
     getParentBlock(e, t) {
@@ -130,13 +130,13 @@ let p = f(u({}, o.ML, a.F3), {
     getSelectedVoid(e) {
       let t;
       if (null == e.selection) return null;
-      if (b.isExpanded(e.selection)) {
-        let [n, r] = b.edges(e.selection), i = p.after(e, n, {
+      if (v.isExpanded(e.selection)) {
+        let [n, r] = v.edges(e.selection), i = p.after(e, n, {
           unit: "offset"
         }), o = p.before(e, r, {
           unit: "offset"
         });
-        if (null == i || null == o || !v.equals(i, o)) return null;
+        if (null == i || null == o || !b.equals(i, o)) return null;
         t = i
       } else t = e.selection.anchor;
       return null == t ? null : p.getParentVoid(e, t)
@@ -156,7 +156,7 @@ let p = f(u({}, o.ML, a.F3), {
       return null == n ? "" : this.getTextFromRange(e, n)
     },
     getTextFromRange(e, t) {
-      let [n, r] = b.edges(t), i = p.nodes(e, {
+      let [n, r] = v.edges(t), i = p.nodes(e, {
         at: t,
         mode: "lowest",
         match: e => g.isText(e)
@@ -208,8 +208,8 @@ let p = f(u({}, o.ML, a.F3), {
           }
         } else t = n
       }
-      let [n, r] = b.edges(t), i = null, o = null;
-      return v.equals(e.selection.anchor, n) ? i = "start" : v.equals(e.selection.anchor, r) ? i = "end" : b.includes(t, e.selection.anchor) && (i = "inside"), v.equals(e.selection.focus, n) ? o = "start" : v.equals(e.selection.focus, r) ? o = "end" : b.includes(t, e.selection.focus) && (o = "inside"), {
+      let [n, r] = v.edges(t), i = null, o = null;
+      return b.equals(e.selection.anchor, n) ? i = "start" : b.equals(e.selection.anchor, r) ? i = "end" : v.includes(t, e.selection.anchor) && (i = "inside"), b.equals(e.selection.focus, n) ? o = "start" : b.equals(e.selection.focus, r) ? o = "end" : v.includes(t, e.selection.focus) && (o = "inside"), {
         anchor: i,
         focus: o
       }
@@ -248,7 +248,7 @@ let p = f(u({}, o.ML, a.F3), {
     isFirstChild: (e, t) => E.equals(t, E.child(e, 0)),
     child: (e, t) => [...e, t]
   }),
-  v = f(u({}, o.E9), {
+  b = f(u({}, o.E9), {
     start(e) {
       let [, t] = e;
       return {
@@ -264,18 +264,18 @@ let p = f(u({}, o.ML, a.F3), {
       }
     },
     isAtStart(e, t) {
-      return v.equals(e, this.start(t))
+      return b.equals(e, this.start(t))
     },
     isAtEnd(e, t) {
-      return v.equals(e, this.end(t))
+      return b.equals(e, this.end(t))
     },
     clamp(e, t) {
-      let [n, r] = b.edges(t);
-      return v.isBefore(e, n) && (e = n), v.isAfter(e, r) && (e = r), e
+      let [n, r] = v.edges(t);
+      return b.isBefore(e, n) && (e = n), b.isAfter(e, r) && (e = r), e
     }
   }),
-  b = f(u({}, o.e6), {
-    toPoint: e => null == e || b.isExpanded(e) ? null : e.anchor,
+  v = f(u({}, o.e6), {
+    toPoint: e => null == e || v.isExpanded(e) ? null : e.anchor,
     children(e) {
       let [t, n] = e, r = t.children[t.children.length - 1];
       return {
@@ -290,8 +290,8 @@ let p = f(u({}, o.ML, a.F3), {
       }
     },
     clamp(e, t) {
-      let [n, r] = b.edges(e), [i, o] = b.edges(t);
-      return (v.isBefore(n, i) && (n = i), v.isAfter(r, o) && (r = o), b.isForward(e)) ? {
+      let [n, r] = v.edges(e), [i, o] = v.edges(t);
+      return (b.isBefore(n, i) && (n = i), b.isAfter(r, o) && (r = o), v.isForward(e)) ? {
         anchor: n,
         focus: r
       } : {
@@ -301,7 +301,7 @@ let p = f(u({}, o.ML, a.F3), {
     }
   }),
   y = {
-    equals: (e, t) => null == e && null == t || null != e && null != t && b.equals(e, t),
+    equals: (e, t) => null == e && null == t || null != e && null != t && v.equals(e, t),
     isValid(e, t) {
       if (null == t) return !1;
       let {
@@ -360,7 +360,7 @@ let p = f(u({}, o.ML, a.F3), {
           at: a
         })),
         l = S(e, t, s, !0);
-      if (n && v.equals(t, l) && !v.isAtEnd(t, i)) {
+      if (n && b.equals(t, l) && !b.isAtEnd(t, i)) {
         let n = p.after(e, t);
         if (null == n) return l;
         l = S(e, n, s, !0)
@@ -384,7 +384,7 @@ let p = f(u({}, o.ML, a.F3), {
           at: a
         })),
         l = S(e, t, s, !1);
-      if (n && v.equals(t, l) && !v.isAtEnd(t, i)) {
+      if (n && b.equals(t, l) && !b.isAtEnd(t, i)) {
         let n = p.after(e, t);
         if (null == n) return l;
         l = S(e, n, s, !1)
@@ -392,7 +392,7 @@ let p = f(u({}, o.ML, a.F3), {
       return l
     },
     getLineActionRange(e, t) {
-      let n = b.toPoint(e.selection);
+      let n = v.toPoint(e.selection);
       if (null == n) return null;
       if (t) {
         let t = T.getLineStart(e, n, !1);

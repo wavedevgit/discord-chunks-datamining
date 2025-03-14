@@ -27,11 +27,11 @@ let _ = new Set,
   g = new Map,
   E = null;
 
-function v(e) {
+function b(e) {
   return i.e$(e.permissions, d.Plq.ADMINISTRATOR)
 }
 
-function b(e) {
+function v(e) {
   let t = c.default.getCurrentUser(),
     n = l.Z.getGuild(e);
   if (null == n || null == t) return !1;
@@ -45,7 +45,7 @@ function b(e) {
       f = l.Z.getRoles(n.id);
     for (let t in f) {
       let n = f[t];
-      (0, u.Z)(n) && (r.add(t), (0, u.h)(n) && (i.add(t), d.has(t) && o.add(t))), d.has(t) && v(n) && g.set(e, !0)
+      (0, u.Z)(n) && (r.add(t), (0, u.h)(n) && (i.add(t), d.has(t) && o.add(t))), d.has(t) && b(n) && g.set(e, !0)
     }
   }
   return p.set(e, r), m.set(e, o), h.set(e, i), !0
@@ -98,7 +98,7 @@ function T(e) {
   let {
     guildId: t
   } = e;
-  return !!p.has(t) && b(t)
+  return !!p.has(t) && v(t)
 }
 
 function N(e) {
@@ -106,7 +106,7 @@ function N(e) {
     guildId: t,
     user: n
   } = e, r = c.default.getCurrentUser();
-  return !!(n.id === (null == r ? void 0 : r.id) && p.has(t)) && b(t)
+  return !!(n.id === (null == r ? void 0 : r.id) && p.has(t)) && v(t)
 }
 class A extends(r = o.ZP.Store) {
   initialize() {
@@ -116,7 +116,7 @@ class A extends(r = o.ZP.Store) {
     return null == E ? y() : E
   }
   buildRoles(e) {
-    p.has(e) || b(e)
+    p.has(e) || v(e)
   }
   getSubscriptionRoles(e) {
     var t;

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  p: () => b
+  p: () => v
 }), n(789020);
 var r = n(252258),
   i = n(570140),
@@ -83,7 +83,7 @@ async function E(e) {
   }
   return !0
 }
-async function v(e) {
+async function b(e) {
   var t;
   let {
     application: n,
@@ -104,8 +104,8 @@ async function v(e) {
     })
   }))
 }
-async function b(e) {
+async function v(e) {
   return !!(await g({
     currentEmbeddedApplication: e.currentEmbeddedApplication
-  }) && await E(e) && await v(e))
+  }) && await E(e) && await b(e))
 }

@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => h
 });
 var r, i, o, a = n(442837),
-  l = n(570140),
-  s = n(981631);
+  s = n(570140),
+  l = n(981631);
 let c = null,
   u = {};
 class d extends(o = a.ZP.Store) {
@@ -21,23 +21,23 @@ i = "CodedLinkNativeAppStateStore", (r = "displayName") in d ? Object.defineProp
   configurable: !0,
   writable: !0
 }) : d[r] = i;
-let h = new d(l.Z, {
+let h = new d(s.Z, {
   NATIVE_APP_MODAL_OPENING: function(e) {
     let {
       code: t
     } = e;
-    u[t] = s.kEZ.OPENING, null === c && (c = s.kEZ.OPENING)
+    u[t] = l.kEZ.OPENING, null === c && (c = l.kEZ.OPENING)
   },
   NATIVE_APP_MODAL_OPENED: function(e) {
     let {
       code: t
     } = e;
-    u[t] = s.kEZ.OPEN, c = s.kEZ.OPEN
+    u[t] = l.kEZ.OPEN, c = l.kEZ.OPEN
   },
   NATIVE_APP_MODAL_OPEN_FAILED: function(e) {
     let {
       code: t
     } = e;
-    u[t] = s.kEZ.OPEN_FAIL, (null === c || c === s.kEZ.OPENING) && (c = s.kEZ.OPEN_FAIL)
+    u[t] = l.kEZ.OPEN_FAIL, (null === c || c === l.kEZ.OPENING) && (c = l.kEZ.OPEN_FAIL)
   }
 })

@@ -21,7 +21,7 @@ var r = n(200651),
   g = n(474936),
   E = n(713523);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -67,7 +67,7 @@ let I = e => {
       enableClick: s = !0,
       channelId: u,
       messageId: d
-    } = e, f = null === (t = n.originalMatch) || void 0 === t ? void 0 : t[0], h = null != f ? f : n.name, [m, g] = i.useState(!1), v = e => (0, r.jsx)(c.Z, O(b({}, e), {
+    } = e, f = null === (t = n.originalMatch) || void 0 === t ? void 0 : t[0], h = null != f ? f : n.name, [m, g] = i.useState(!1), b = e => (0, r.jsx)(c.Z, O(v({}, e), {
       emojiName: n.name,
       size: n.jumboable ? "jumbo" : "default",
       src: n.src,
@@ -75,7 +75,7 @@ let I = e => {
       animated: !1,
       channelId: u,
       messageId: d
-    })), y = e => (0, r.jsx)(l.ua7, O(b({
+    })), y = e => (0, r.jsx)(l.ua7, O(v({
       text: (0, p.Y)(n.name, s),
       "aria-label": h
     }, p.b_), {
@@ -87,7 +87,7 @@ let I = e => {
           isCustomEmoji: !1
         })
       },
-      children: t => (0, r.jsx)(l.P3F, O(b({}, e), {
+      children: t => (0, r.jsx)(l.P3F, O(v({}, e), {
         tag: "span",
         onClick: t => {
           var n;
@@ -97,11 +97,11 @@ let I = e => {
           [E.emojiContainerClickable]: s,
           [E.emojiJumbo]: n.jumboable
         }),
-        children: v(t)
+        children: b(t)
       }))
     }));
     if (!s) return y();
-    let I = e => (0, r.jsx)(_.Az, O(b({}, e), {
+    let I = e => (0, r.jsx)(_.Az, O(v({}, e), {
       node: n
     }));
     return (0, r.jsx)(l.yRy, {
@@ -124,19 +124,19 @@ let I = e => {
       tooltipPosition: o = p.b_.position,
       enableClick: u = !0,
       channelId: g,
-      messageId: v
+      messageId: b
     } = e, [y, I] = i.useState(String(Date.now())), [S, N] = i.useState(!1), [A, C] = i.useState(!1), R = function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-      return (0, r.jsx)(c.Z, O(b({}, e), {
+      return (0, r.jsx)(c.Z, O(v({}, e), {
         emojiName: t.name,
         size: t.jumboable ? "jumbo" : "default",
         emojiId: t.emojiId,
         animated: t.animated,
         isInteracting: n,
         channelId: g,
-        messageId: v
+        messageId: b
       }))
-    }, P = (0, s.Z)(), w = e => (0, r.jsx)(l.ua7, O(b({
+    }, P = (0, s.Z)(), w = e => (0, r.jsx)(l.ua7, O(v({
       text: (0, p.Y)(t.name, u),
       "aria-label": t.name
     }, p.b_), {
@@ -149,7 +149,7 @@ let I = e => {
           nonce: P
         }), (0, d.x)(m.qR.CustomEmojiTooltipShown))
       },
-      children: n => (0, r.jsx)(l.P3F, O(b({}, e), {
+      children: n => (0, r.jsx)(l.P3F, O(v({}, e), {
         onMouseEnter: () => {
           var t;
           null == e || null === (t = e.onMouseEnter) || void 0 === t || t.call(e)
@@ -172,7 +172,7 @@ let I = e => {
       }))
     }));
     if (!u) return w();
-    let D = e => (0, r.jsx)(_.vk, O(b({}, e), {
+    let D = e => (0, r.jsx)(_.vk, O(v({}, e), {
       node: t,
       refreshPositionKey: () => I(String(Date.now())),
       nonce: P

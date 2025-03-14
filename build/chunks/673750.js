@@ -22,8 +22,8 @@ var r = n(512722),
   m = n(651655),
   g = n(861990),
   E = n(141795),
-  v = n(981631),
-  b = n(959517);
+  b = n(981631),
+  v = n(959517);
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -122,7 +122,7 @@ class D extends m.Z {
   }
   startQueueMetricTimers(e) {
     let t = w.map(e => setTimeout(() => {
-      (0, s.yw)(v.rMx.SEND_MESSAGE_QUEUED, {
+      (0, s.yw)(b.rMx.SEND_MESSAGE_QUEUED, {
         queued_duration_ms: e
       })
     }, e));
@@ -135,7 +135,7 @@ class D extends m.Z {
   createResponseHandler(e, t) {
     return n => {
       if (null != e && (this.requests.delete(e), this.cancelQueueMetricTimers(e)), n.hasErr) return t(null, n);
-      if (null != n.body && (n.body.code === v.evJ.SLOWMODE_RATE_LIMITED || n.body.code === v.evJ.CHANNEL_FOLLOWING_EDIT_RATE_LIMITED)) t(null, n);
+      if (null != n.body && (n.body.code === b.evJ.SLOWMODE_RATE_LIMITED || n.body.code === b.evJ.CHANNEL_FOLLOWING_EDIT_RATE_LIMITED)) t(null, n);
       else if (429 === n.status) {
         let e = parseInt(n.headers["retry-after"]);
         isNaN(e) ? t(null, n) : t({
@@ -171,11 +171,11 @@ class D extends m.Z {
     let f = this.createResponseHandler(e.nonce, t),
       p = new AbortController;
     this.startQueueMetricTimers(e.nonce), o.tn.post(S(O({
-      url: v.ANM.MESSAGES(r),
+      url: b.ANM.MESSAGES(r),
       body: s,
       context: n,
       oldFormErrors: !0
-    }, b.hs), {
+    }, v.hs), {
       signal: p.signal,
       rejectWithError: !0,
       onRequestCreated: () => {
@@ -190,7 +190,7 @@ class D extends m.Z {
     } = e, i = T(e, ["channelId", "messageId"]);
     let a = new AbortController;
     o.tn.patch({
-      url: v.ANM.MESSAGE(n, r),
+      url: b.ANM.MESSAGE(n, r),
       body: i,
       retries: 1,
       oldFormErrors: !0,
@@ -212,7 +212,7 @@ class D extends m.Z {
         maxSizeCallback: _,
         analytics_location: p,
         sectionName: m,
-        source: b
+        source: v
       } = e,
       y = {
         type: a.B8.APPLICATION_COMMAND,
@@ -224,7 +224,7 @@ class D extends m.Z {
         nonce: u,
         analytics_location: p,
         section_name: m,
-        source: b
+        source: v
       };
     if (null != d) {
       y.data.attachments = [], n = [];
@@ -233,7 +233,7 @@ class D extends m.Z {
     }
     let O = new AbortController;
     o.tn.post({
-      url: v.ANM.INTERACTIONS,
+      url: b.ANM.INTERACTIONS,
       fields: [{
         name: "payload_json",
         value: JSON.stringify(y)

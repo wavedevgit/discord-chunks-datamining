@@ -6,23 +6,23 @@ var r = n(200651),
   i = n(192379),
   o = n(120356),
   a = n.n(o),
-  l = n(442837),
-  s = n(481060),
+  s = n(442837),
+  l = n(481060),
   c = n(144114),
   u = n(742458),
   d = n(541692),
   h = n(952802),
   p = n(388905),
-  f = n(815660),
-  g = n(388032),
+  g = n(815660),
+  m = n(388032),
   _ = n(612064),
-  m = n(802138);
+  f = n(802138);
 let b = () => {
-  let [e, t] = i.useState(""), [o, b] = i.useState(""), [x, N] = i.useState(!1), [v, I] = i.useState(!1), [E, j] = i.useState(null), [C, O] = i.useState(null), S = (0, l.e7)([d.Z], () => d.Z.getCountryCode()), y = S.code.split(" ")[0], T = async () => {
+  let [e, t] = i.useState(""), [o, b] = i.useState(""), [x, N] = i.useState(!1), [v, E] = i.useState(!1), [I, j] = i.useState(null), [C, S] = i.useState(null), O = (0, s.e7)([d.Z], () => d.Z.getCountryCode()), y = O.code.split(" ")[0], T = async () => {
     try {
       await c.Z.resendCode(e)
     } catch (e) {
-      O(e.body.message)
+      S(e.body.message)
     }
   }, P = async () => {
     N(!0);
@@ -30,9 +30,9 @@ let b = () => {
       let {
         token: t
       } = await c.Z.verifyPhone(y + e, o);
-      j(null), O(null), I(!0), c.Z.validatePhoneForSupport(t)
+      j(null), S(null), E(!0), c.Z.validatePhoneForSupport(t)
     } catch (e) {
-      e.body.message ? (j(null), O(e.body.message)) : (j(e.body.phone), O(e.body.code))
+      e.body.message ? (j(null), S(e.body.message)) : (j(e.body.phone), S(e.body.code))
     } finally {
       N(!1)
     }
@@ -40,49 +40,49 @@ let b = () => {
     children: [(0, r.jsx)(p.Ee, {
       src: n(292824)
     }), (0, r.jsxs)(p.Dx, {
-      className: a()(m.marginTop20, _.flex, _.justifyCenter, _.alignCenter),
-      children: [g.NW.string(g.t.WWzQtb), (0, r.jsx)(s.owK, {
+      className: a()(f.marginTop20, _.flex, _.justifyCenter, _.alignCenter),
+      children: [m.NW.string(m.t.WWzQtb), (0, r.jsx)(l.owK, {
         size: "md",
         color: "currentColor",
-        className: m.marginLeft8
+        className: f.marginLeft8
       })]
     })]
   });
   return v ? A : (0, r.jsxs)(p.ZP, {
     children: [(0, r.jsx)(p.Dx, {
-      children: g.NW.string(g.t.o4JNrK)
+      children: m.NW.string(m.t.o4JNrK)
     }), (0, r.jsx)(p.DK, {
-      className: m.marginTop8,
-      children: g.NW.string(g.t.y0tVbm)
+      className: f.marginTop8,
+      children: m.NW.string(m.t.y0tVbm)
     }), (0, r.jsxs)(p.gO, {
-      className: m.marginTop20,
+      className: f.marginTop20,
       children: [(0, r.jsx)(h.Z, {
-        label: g.NW.string(g.t.eJnn09),
-        alpha2: S.alpha2,
+        label: m.NW.string(m.t.eJnn09),
+        alpha2: O.alpha2,
         countryCode: y,
         value: e,
         autoComplete: "off",
         spellCheck: "false",
         onChange: t,
         forceMode: u.Nz.PHONE,
-        error: E
+        error: I
       }), (0, r.jsx)(p.II, {
-        className: m.marginTop20,
-        label: g.NW.string(g.t.OdzNbm),
+        className: f.marginTop20,
+        label: m.NW.string(m.t.OdzNbm),
         value: o,
         onChange: b,
-        maxLength: f.z,
+        maxLength: g.z,
         error: C
       }), (0, r.jsx)(p.zx, {
         size: p.zx.Sizes.SMALL,
         look: p.zx.Looks.LINK,
         onClick: T,
-        children: g.NW.string(g.t["5b60go"])
+        children: m.NW.string(m.t["5b60go"])
       }), (0, r.jsx)(p.zx, {
-        className: m.marginTop20,
+        className: f.marginTop20,
         onClick: P,
         submitting: x,
-        children: g.NW.string(g.t.i4jeWV)
+        children: m.NW.string(m.t.i4jeWV)
       })]
     })]
   })

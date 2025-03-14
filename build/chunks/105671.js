@@ -1,18 +1,18 @@
 /** Chunk was on 82158 **/
-l.d(t, {
-  i: () => d
+r.d(t, {
+  i: () => u
 });
-var n = l(392711),
-  r = l.n(n),
-  i = l(442837),
-  a = l(77498),
-  s = l(823379),
-  o = l(353093),
-  c = l(308083);
+var n = r(392711),
+  l = r.n(n),
+  i = r(442837),
+  a = r(77498),
+  s = r(823379),
+  o = r(353093),
+  c = r(308083);
 
-function d(e) {
+function u(e) {
   return (0, i.e7)([a.Z], () => {
-    let t = r()(e).map(e => {
+    let t = l()(e).map(e => {
       var t;
       return null === (t = a.Z.getDetectableGame(e)) || void 0 === t ? void 0 : t.name
     }).filter(s.lm).value();

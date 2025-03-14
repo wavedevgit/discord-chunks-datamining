@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => v
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -39,7 +39,7 @@ function E(e) {
   }
   return e
 }
-class v extends i.Component {
+class b extends i.Component {
   componentDidMount() {
     this.props.onChange(this.hasAcceptedNeccessaryTerms(this.props, this.state))
   }
@@ -61,8 +61,8 @@ class v extends i.Component {
       className: c,
       checkboxClassname: d,
       checkboxLabelClassname: g,
-      finePrint: v,
-      showPricingLink: b,
+      finePrint: b,
+      showPricingLink: v,
       showWithdrawalWaiver: y,
       isTrial: O,
       inReverseTrial: I,
@@ -100,9 +100,9 @@ class v extends i.Component {
             }
           })
         })
-      }) : null, null == v ? null : (0, r.jsx)("div", {
+      }) : null, null == b ? null : (0, r.jsx)("div", {
         className: a()(m.finePrint, N),
-        children: v
+        children: b
       }), y ? (0, r.jsxs)("div", {
         className: c,
         children: [(0, r.jsx)(u.XZJ, {
@@ -119,7 +119,7 @@ class v extends i.Component {
           className: m.finePrint,
           children: h.NW.string(h.t.jhu6zs)
         })]
-      }) : null, b && (0, r.jsxs)("div", {
+      }) : null, v && (0, r.jsxs)("div", {
         className: m.finePrint,
         children: ["*", h.NW.format(h.t["5zmY3N"], {
           documentationLink: f.Z.getArticleURL(p.BhN.LOCALIZED_PRICING)
@@ -169,11 +169,11 @@ class v extends i.Component {
     })
   }
 }
-let b = c.ZP.connectStores([d.Z], e => {
+let v = c.ZP.connectStores([d.Z], e => {
   let {
     eulaId: t
   } = e;
   return {
     hasPreviouslyAcceptedEULA: null != t && d.Z.hasAcceptedEULA(t)
   }
-})(v)
+})(b)

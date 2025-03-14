@@ -2,7 +2,7 @@
 "use strict";
 let r, i, o, a, s, l, c;
 n.d(t, {
-  C: () => F,
+  C: () => V,
   Z: () => eo
 }), n(47120);
 var u, d = n(392711),
@@ -13,8 +13,8 @@ var u, d = n(392711),
   m = n(703656),
   g = n(131704),
   E = n(823379),
-  v = n(314897),
-  b = n(592125),
+  b = n(314897),
+  v = n(592125),
   y = n(984933),
   O = n(430824),
   I = n(131951),
@@ -81,7 +81,7 @@ function G() {
     selectedChannelIds: x,
     mostRecentSelectedTextChannelIds: k,
     knownThreadIds: f()(x).values().concat(f().values(k)).filter(E.lm).uniq().filter(e => {
-      let t = b.Z.getBasicChannel(e);
+      let t = v.Z.getBasicChannel(e);
       return j.has(e) || null != t && g.Ec.has(t.type)
     }).value()
   })
@@ -94,16 +94,16 @@ function B(e) {
   }
 }
 
-function V(e, t) {
+function F(e, t) {
   if (null == e || null == t || k[e] === t) return !1;
-  let n = b.Z.getChannel(t),
+  let n = v.Z.getChannel(t),
     r = null != n && (0, g.zi)(n.type),
     i = (null == n ? void 0 : n.getGuildId()) === e;
   return !!r && !!i && (k[e] = t, !0)
 }
 
-function F(e) {
-  let t = b.Z.getMutableBasicGuildChannelsForGuild(e),
+function V(e) {
+  let t = v.Z.getMutableBasicGuildChannelsForGuild(e),
     n = f().find(t, e => e.type === T.d4z.GUILD_VOICE);
   return null == n ? void 0 : n.id
 }
@@ -112,21 +112,21 @@ function Z() {
   let e = !1,
     t = O.Z.getGuilds();
   return f().each(x, (t, n) => {
-    null != t && (b.Z.hasChannel(t) || t === o || j.has(t) || (0, N.ME)(t)) || (delete x[n], delete M[n], e = !0)
+    null != t && (v.Z.hasChannel(t) || t === o || j.has(t) || (0, N.ME)(t)) || (delete x[n], delete M[n], e = !0)
   }), f().each(k, (t, n) => {
-    null != t && (b.Z.hasChannel(t) || j.has(t)) || (delete k[n], e = !0)
+    null != t && (v.Z.hasChannel(t) || j.has(t)) || (delete k[n], e = !0)
   }), f().each(t, e => {
     let t = x[e.id];
-    null == k[e.id] && V(e.id, t)
+    null == k[e.id] && F(e.id, t)
   }), null != l && Date.now() - l >= D && (s = null, e = !0), e
 }
 
 function H(e) {
-  r = e.sessionId, null != s && null == b.Z.getChannel(s) && (s = null), Z() && G()
+  r = e.sessionId, null != s && null == v.Z.getChannel(s) && (s = null), Z() && G()
 }
 
 function W(e) {
-  r = e.sessionId, s = e.selectedVoiceChannelId, x = {}, M = {}, o = e.selectedChannelId, x[e.selectedGuildId] = e.selectedChannelId, V(e.selectedGuildId, o), Z()
+  r = e.sessionId, s = e.selectedVoiceChannelId, x = {}, M = {}, o = e.selectedChannelId, x[e.selectedGuildId] = e.selectedChannelId, F(e.selectedGuildId, o), Z()
 }
 
 function Y() {
@@ -139,7 +139,7 @@ function K(e) {
     channelId: n
   } = e;
   if (void 0 === t) return !1;
-  null == n && (n = B(t)), null != o && n !== o && (i = o), o = n, V(t, n), x[U(t)] !== n && (M[U(t)] = x[U(t)], x[U(t)] = o), G()
+  null == n && (n = B(t)), null != o && n !== o && (i = o), o = n, F(t, n), x[U(t)] !== n && (M[U(t)] = x[U(t)], x[U(t)] = o), G()
 }
 
 function z(e) {
@@ -147,7 +147,7 @@ function z(e) {
     channelId: t
   } = e;
   if (null == t) {
-    let e = b.Z.getChannel(s),
+    let e = v.Z.getChannel(s),
       t = null == e ? void 0 : e.guild_id;
     null != t && t !== S.Z.getGuildId() && x[t] === s && (x[t] = B(t))
   }
@@ -187,7 +187,7 @@ function J(e) {
   } = e;
   if (null == x[t.id]) {
     let e = B(t.id);
-    x[t.id] = e, V(t.id, e), G()
+    x[t.id] = e, F(t.id, e), G()
   }
 }
 
@@ -210,15 +210,15 @@ function ee(e) {
     var n, i, o;
     if (t.sessionId === r) {
       clearInterval(c);
-      let e = null === (n = b.Z.getChannel(s)) || void 0 === n ? void 0 : n.getGuildId();
+      let e = null === (n = v.Z.getChannel(s)) || void 0 === n ? void 0 : n.getGuildId();
       t.guildId !== e && null == t.channelId || (s = t.channelId), l = Date.now(), null != s && (c = setInterval(() => {
         l = Date.now(), G()
       }, L)), G()
     } else {
-      if (t.userId !== v.default.getId()) return e;
+      if (t.userId !== b.default.getId()) return e;
       clearInterval(c), c = void 0, l = 0;
-      let n = null === (i = b.Z.getChannel(s)) || void 0 === i ? void 0 : i.getGuildId(),
-        r = null === (o = b.Z.getChannel(t.channelId)) || void 0 === o ? void 0 : o.getGuildId();
+      let n = null === (i = v.Z.getChannel(s)) || void 0 === i ? void 0 : i.getGuildId(),
+        r = null === (o = v.Z.getChannel(t.channelId)) || void 0 === o ? void 0 : o.getGuildId();
       (null != n && r === n || s === t.channelId) && (s = null), G()
     }
     return !0
@@ -268,7 +268,7 @@ class ei extends(u = _.ZP.Store) {
         null: null
       }))
     }
-    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type && "VOICE_STATE_UPDATES" !== e.type), this.waitFor(O.Z, b.Z, S.Z, y.ZP, I.Z)
+    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type && "VOICE_STATE_UPDATES" !== e.type), this.waitFor(O.Z, v.Z, S.Z, y.ZP, I.Z)
   }
   getChannelId(e) {
     var t, n;

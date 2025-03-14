@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(633302),
   g = n(314897),
   E = n(785717),
-  v = n(81570),
-  b = n(510659),
+  b = n(81570),
+  v = n(510659),
   y = n(287954),
   O = n(810097),
   I = n(64621),
@@ -144,7 +144,7 @@ function B(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   var t, n;
   let {
     emoji: o,
@@ -153,8 +153,8 @@ function V(e) {
     animate: h,
     className: m,
     renderToolbar: g,
-    onShowToolbar: v,
-    hasEntered: b = !0,
+    onShowToolbar: b,
+    hasEntered: v = !0,
     placeholderText: y
   } = e, {
     trackUserProfileAction: O
@@ -162,7 +162,7 @@ function V(e) {
     [A.biteSize]: p === T.y0.BITE_SIZE,
     [A.fullSize]: p === T.y0.FULL_SIZE,
     [A.panel]: p === T.y0.PANEL
-  }, S = null != o ? x : 0, C = M + S, R = k + S, P = i.useRef(null), w = i.useRef(null), D = i.useRef(null), L = i.useRef(C), B = i.useRef(R), V = null != o && null == _, [F, Z] = i.useState(!1), [H, W] = i.useState(!0), [Y, K] = i.useState(!V && b), z = !V && b && F;
+  }, S = null != o ? x : 0, C = M + S, R = k + S, P = i.useRef(null), w = i.useRef(null), D = i.useRef(null), L = i.useRef(C), B = i.useRef(R), F = null != o && null == _, [V, Z] = i.useState(!1), [H, W] = i.useState(!0), [Y, K] = i.useState(!F && v), z = !F && v && V;
   i.useLayoutEffect(() => {
     if (Z(!0), null == w.current || null == D.current || !z) return;
     let e = w.current.getBoundingClientRect().height,
@@ -235,7 +235,7 @@ function V(e) {
       })
     })
   });
-  return null == v ? (0, r.jsxs)(r.Fragment, {
+  return null == b ? (0, r.jsxs)(r.Fragment, {
     children: [ei, (0, r.jsx)(u.tEY, {
       ringClassName: A.ring,
       children: (0, r.jsxs)("div", {
@@ -273,19 +273,19 @@ function V(e) {
           status: _
         }),
         onFocus: () => {
-          v(!0), $(!0)
+          b(!0), $(!0)
         },
         onBlur: e => {
           var t;
-          (null === (t = P.current) || void 0 === t ? void 0 : t.contains(e.relatedTarget)) || (v(!1), $(!1))
+          (null === (t = P.current) || void 0 === t ? void 0 : t.contains(e.relatedTarget)) || (b(!1), $(!1))
         },
         onMouseEnter: () => {
           O({
             action: "HOVER_CUSTOM_STATUS"
-          }), v(!0), $(!0)
+          }), b(!0), $(!0)
         },
         onMouseLeave: () => {
-          v(!1), $(!1)
+          b(!1), $(!1)
         },
         children: [eo, null == g ? void 0 : g(Y)]
       })
@@ -293,14 +293,14 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   var {
     emoji: t,
     text: n,
     onCloseProfile: o
   } = e, a = D(e, ["emoji", "text", "onCloseProfile"]);
   let [s, l] = i.useState(!1);
-  return (0, r.jsx)(V, w(R({}, a), {
+  return (0, r.jsx)(F, w(R({}, a), {
     emoji: t,
     text: n,
     className: A.editable,
@@ -328,9 +328,9 @@ function Z(e) {
     interactionType: d,
     interactionSource: f,
     resetInteraction: _
-  } = (0, b.Xo)(), p = f === T.n_.STATUS && d === T.P.REACT, h = f === T.n_.STATUS && d === T.P.REPLY, g = p || h, v = i.useRef(t), S = i.useRef(n);
+  } = (0, v.Xo)(), p = f === T.n_.STATUS && d === T.P.REACT, h = f === T.n_.STATUS && d === T.P.REPLY, g = p || h, b = i.useRef(t), S = i.useRef(n);
   i.useEffect(() => {
-    f === T.n_.STATUS && ((v.current !== t || S.current !== n) && _(), v.current = t, S.current = n)
+    f === T.n_.STATUS && ((b.current !== t || S.current !== n) && _(), b.current = t, S.current = n)
   }, [f, _, t, n]);
   let [N, C] = i.useState(!1), P = i.useCallback(e => {
     (e || !g) && C(e)
@@ -351,7 +351,7 @@ function Z(e) {
     children: () => (0, r.jsx)(I.Z, {
       sourceType: T.n_.STATUS,
       user: o,
-      children: (0, r.jsx)(V, w(R({}, c), {
+      children: (0, r.jsx)(F, w(R({}, c), {
         emoji: t,
         text: n,
         profileType: l,
@@ -383,9 +383,9 @@ function H(e) {
   let m = (0, l.e7)([g.default], () => g.default.getId() === o.id),
     E = (0, h.Z)(o.id),
     {
-      analyticsLocations: b
+      analyticsLocations: v
     } = (0, p.ZP)(_.Z.PROFILE_CUSTOM_STATUS),
-    y = (0, v.T)({
+    y = (0, b.T)({
       location: i
     }),
     O = !m && !o.bot && y;
@@ -393,8 +393,8 @@ function H(e) {
     let e = null != c ? c : null,
       t = null != s && "" !== s ? s : null;
     return (0, r.jsx)(p.Gt, {
-      value: b,
-      children: (0, r.jsx)(V, R({
+      value: v,
+      children: (0, r.jsx)(F, R({
         emoji: e,
         text: t,
         placeholderText: u
@@ -405,28 +405,28 @@ function H(e) {
     S = null !== (n = null == E ? void 0 : E.state) && void 0 !== n ? n : null,
     T = null != S && "" !== S ? S : null;
   return null != I || null != T || m ? null == I && null == T ? (0, r.jsx)(p.Gt, {
-    value: b,
+    value: v,
     children: (0, r.jsx)(B, R({
       onCloseProfile: a,
       prompt: d
     }, f))
   }) : O ? (0, r.jsx)(p.Gt, {
-    value: b,
+    value: v,
     children: (0, r.jsx)(Z, R({
       user: o,
       emoji: I,
       text: T
     }, f))
   }) : m ? (0, r.jsx)(p.Gt, {
-    value: b,
-    children: (0, r.jsx)(F, R({
+    value: v,
+    children: (0, r.jsx)(V, R({
       emoji: I,
       text: T,
       onCloseProfile: a
     }, f))
   }) : (0, r.jsx)(p.Gt, {
-    value: b,
-    children: (0, r.jsx)(V, R({
+    value: v,
+    children: (0, r.jsx)(F, R({
       emoji: I,
       text: T
     }, f))

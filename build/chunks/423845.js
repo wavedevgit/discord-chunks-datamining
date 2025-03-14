@@ -15,8 +15,8 @@ var r = n(620014),
   m = n(354199),
   g = n(671660),
   E = n(402428),
-  v = n(207757),
-  b = n(397985),
+  b = n(207757),
+  v = n(397985),
   y = n(706627),
   O = n(822480),
   I = n(58834),
@@ -37,8 +37,8 @@ var r = n(620014),
   U = "[object RegExp]",
   G = "[object Set]",
   B = "[object String]",
-  V = "[object Symbol]",
-  F = "[object WeakMap]",
+  F = "[object Symbol]",
+  V = "[object WeakMap]",
   Z = "[object ArrayBuffer]",
   H = "[object DataView]",
   W = "[object Float32Array]",
@@ -63,21 +63,21 @@ function et(e, t, n, R, P, w) {
     if (D = h(e), !M) return c(e, D)
   } else {
     var B = p(e),
-      V = B == L || B == x;
-    if (v(e)) return l(e, M);
-    if (B == j || B == C || V && !P) {
-      if (D = k || V ? {} : g(e), !M) return k ? d(e, s(D, e)) : u(e, a(D, e))
+      F = B == L || B == x;
+    if (b(e)) return l(e, M);
+    if (B == j || B == C || F && !P) {
+      if (D = k || F ? {} : g(e), !M) return k ? d(e, s(D, e)) : u(e, a(D, e))
     } else {
       if (!ee[B]) return P ? e : {};
       D = m(e, B, M)
     }
   }
   w || (w = new r);
-  var F = w.get(e);
-  if (F) return F;
+  var V = w.get(e);
+  if (V) return V;
   w.set(e, D), O(e) ? e.forEach(function(r) {
     D.add(et(r, t, n, r, e, w))
-  }) : b(e) && e.forEach(function(r, i) {
+  }) : v(e) && e.forEach(function(r, i) {
     D.set(i, et(r, t, n, i, e, w))
   });
   var Z = U ? k ? _ : f : k ? S : I,
@@ -86,4 +86,4 @@ function et(e, t, n, R, P, w) {
     H && (r = e[i = r]), o(D, i, et(r, t, n, i, e, w))
   }), D
 }
-ee[C] = ee[R] = ee[Z] = ee[H] = ee[P] = ee[w] = ee[W] = ee[Y] = ee[K] = ee[z] = ee[q] = ee[M] = ee[k] = ee[j] = ee[U] = ee[G] = ee[B] = ee[V] = ee[Q] = ee[X] = ee[J] = ee[$] = !0, ee[D] = ee[L] = ee[F] = !1, e.exports = et
+ee[C] = ee[R] = ee[Z] = ee[H] = ee[P] = ee[w] = ee[W] = ee[Y] = ee[K] = ee[z] = ee[q] = ee[M] = ee[k] = ee[j] = ee[U] = ee[G] = ee[B] = ee[F] = ee[Q] = ee[X] = ee[J] = ee[$] = !0, ee[D] = ee[L] = ee[V] = !1, e.exports = et

@@ -19,9 +19,9 @@ var r = n(392711),
   m = n(71585),
   g = n(146282),
   E = n(206583),
-  v = n(981631);
+  b = n(981631);
 
-function b(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -160,16 +160,16 @@ function B(e) {
   (null == n ? void 0 : n.refresh_stale_inbox_after_ms) != null && (C = new Date(Date.now() + (null != t ? t : n.refresh_stale_inbox_after_ms)).toUTCString(), x())
 }
 
-function V(e) {
+function F(e) {
   var t;
   let {
     connectionId: n,
     track: r
   } = e;
-  null != n && (null === (t = u.Z.getAccount(n, v.ABu.SPOTIFY)) || void 0 === t ? void 0 : t.showActivity) && R(n, r)
+  null != n && (null === (t = u.Z.getAccount(n, b.ABu.SPOTIFY)) || void 0 === t ? void 0 : t.showActivity) && R(n, r)
 }
 
-function F() {
+function V() {
   let {
     enabled: e
   } = p.iC.getCurrentConfig({
@@ -198,7 +198,7 @@ function Z() {
 }
 class H extends a.Z {
   constructor(...e) {
-    super(...e), b(this, "actions", {
+    super(...e), v(this, "actions", {
       POST_CONNECTION_OPEN: j,
       CONNECTION_CLOSED: U,
       WINDOW_FOCUS: k,
@@ -206,8 +206,8 @@ class H extends a.Z {
       CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: k,
       CONTENT_INVENTORY_MANUAL_REFRESH: G,
       CONTENT_INVENTORY_INBOX_STALE: B,
-      SPOTIFY_NEW_TRACK: V,
-      GAME_PROFILE_OPEN: F,
+      SPOTIFY_NEW_TRACK: F,
+      GAME_PROFILE_OPEN: V,
       OVERLAY_READY: Z
     })
   }

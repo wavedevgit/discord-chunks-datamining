@@ -56,7 +56,7 @@ var m = function(e) {
 let g = [],
   E = !1;
 
-function v(e) {
+function b(e) {
   let {
     user: t
   } = e;
@@ -83,7 +83,7 @@ function v(e) {
   })
 }
 
-function b(e) {
+function v(e) {
   E = !!e.isSwitchingAccount, e.isSwitchingAccount || (g = g.filter(e => {
     let {
       id: t
@@ -220,8 +220,8 @@ f(C, "displayName", "MultiAccountStore"), f(C, "persistKey", "MultiAccountStore"
   }
 }]);
 let R = new C(l.Z, {
-  CONNECTION_OPEN: v,
-  LOGOUT: b,
+  CONNECTION_OPEN: b,
+  LOGOUT: v,
   MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST: e => I(e.userId, 1),
   MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS: e => I(e.userId, 2),
   MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE: e => I(e.userId, 0),

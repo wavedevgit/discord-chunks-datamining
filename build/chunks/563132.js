@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  JL: () => V,
+  JL: () => F,
   PaymentContextProvider: () => Z
 }), n(47120), n(789020);
 var r = n(200651),
@@ -20,8 +20,8 @@ var r = n(200651),
   m = n(855775),
   g = n(551428),
   E = n(975104),
-  v = n(630388),
-  b = n(74538),
+  b = n(630388),
+  v = n(74538),
   y = n(960048),
   O = n(735521),
   I = n(583046),
@@ -76,15 +76,15 @@ function G(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let [B, V, F] = (0, E.Z)();
+let [B, F, V] = (0, E.Z)();
 
 function Z(e) {
   var t, n, E;
   let {
     loadId: k,
     activeSubscription: U,
-    stepConfigs: V,
-    breadcrumbs: F = [],
+    stepConfigs: F,
+    breadcrumbs: V = [],
     skuIDs: Z,
     isGift: H = !1,
     children: W,
@@ -120,9 +120,9 @@ function Z(e) {
     breadcrumbsData: eg,
     previousStepRef: eE
   } = (0, w.Z)({
-    stepConfigs: V,
-    breadcrumbs: F
-  }), [ev, eb] = (0, C.Z)(ep), {
+    stepConfigs: F,
+    breadcrumbs: V
+  }), [eb, ev] = (0, C.Z)(ep), {
     paymentError: ey,
     paymentAuthenticationState: eO
   } = (0, N.Z)(), {
@@ -144,7 +144,7 @@ function Z(e) {
     setSelectedSkuId: eP,
     setSelectedPlanId: ew,
     setSelectedPlanNotification: eD
-  } = (0, O.Z)(), [eL, ex] = (0, s.Wu)([h.Z], () => [h.Z.purchaseTokenAuthState, h.Z.purchaseTokenHash]), [eM, ek, ej, eU] = (0, s.Wu)([L.Z], () => [L.Z.browserCheckoutState, L.Z.loadId, L.Z.skuId, L.Z.planId]), [eG, eB] = i.useState(null), [eV, eF] = i.useState(null), [eZ, eH] = i.useState(null), [eW, eY] = i.useState(null), [eK, ez] = i.useState(null), [eq, eQ] = i.useState(void 0), [eX, eJ] = i.useState([]), e$ = i.useMemo(() => null == eC || (0, b.PV)(eC.id), [eC]), e0 = i.useRef(null != U ? U.planId : null);
+  } = (0, O.Z)(), [eL, ex] = (0, s.Wu)([h.Z], () => [h.Z.purchaseTokenAuthState, h.Z.purchaseTokenHash]), [eM, ek, ej, eU] = (0, s.Wu)([L.Z], () => [L.Z.browserCheckoutState, L.Z.loadId, L.Z.skuId, L.Z.planId]), [eG, eB] = i.useState(null), [eF, eV] = i.useState(null), [eZ, eH] = i.useState(null), [eW, eY] = i.useState(null), [eK, ez] = i.useState(null), [eq, eQ] = i.useState(void 0), [eX, eJ] = i.useState([]), e$ = i.useMemo(() => null == eC || (0, v.PV)(eC.id), [eC]), e0 = i.useRef(null != U ? U.planId : null);
   i.useEffect(() => {
     null == e0.current && null != U && (e0.current = U.planId)
   }, [U]);
@@ -166,9 +166,9 @@ function Z(e) {
     data: e9
   } = (0, f.IX)(z), te = p.Sb.useSetting(), tt = (0, s.e7)([c.Z], () => c.Z.getFetchState());
   i.useEffect(() => {
-    null != e9 && (0, v.yE)(e9.flags, x.udG.EMBEDDED) && te && null == tt && (0, u.$h)()
+    null != e9 && (0, b.yE)(e9.flags, x.udG.EMBEDDED) && te && null == tt && (0, u.$h)()
   }, [e9, te, tt]);
-  let tn = (0, v.yE)(null !== (t = null == e9 ? void 0 : e9.flags) && void 0 !== t ? t : 0, x.udG.EMBEDDED) && (0, v.yE)(null !== (n = null == e9 ? void 0 : e9.flags) && void 0 !== n ? n : 0, x.udG.EMBEDDED_IAP),
+  let tn = (0, b.yE)(null !== (t = null == e9 ? void 0 : e9.flags) && void 0 !== t ? t : 0, x.udG.EMBEDDED) && (0, b.yE)(null !== (n = null == e9 ? void 0 : e9.flags) && void 0 !== n ? n : 0, x.udG.EMBEDDED_IAP),
     tr = (0, s.e7)([d.ZP], () => Array.from(d.ZP.getSelfEmbeddedActivities().values()).find(e => {
       let {
         applicationId: t
@@ -207,11 +207,11 @@ function Z(e) {
       step: ep,
       setStep: eh,
       steps: em,
-      stepConfigs: V,
+      stepConfigs: F,
       breadcrumbs: eg,
       previousStepRef: eE,
-      purchaseState: ev,
-      setPurchaseState: eb,
+      purchaseState: eb,
+      setPurchaseState: ev,
       paymentAuthenticationState: eO,
       paymentError: ey,
       purchaseError: eI,
@@ -227,8 +227,8 @@ function Z(e) {
       browserCheckoutStatePlanId: eU,
       bodyNode: eG,
       setBodyNode: eB,
-      footerNode: eV,
-      setFooterNode: eF,
+      footerNode: eF,
+      setFooterNode: eV,
       modalOverlayNode: eZ,
       setModalOverlayNode: eH,
       selectedSkuId: eA,

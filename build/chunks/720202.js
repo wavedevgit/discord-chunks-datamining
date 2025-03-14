@@ -67,14 +67,14 @@ function E(e) {
   return null != r && null != r.guild_id && g(r.guild_id, n)
 }
 
-function v(e) {
+function b(e) {
   let {
     guildId: t,
     messages: n
   } = e;
   return null != t && g(t, o().flatten(n))
 }
-class b extends(r = a.ZP.Store) {
+class v extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(c.Z, u.ZP)
   }
@@ -82,14 +82,14 @@ class b extends(r = a.ZP.Store) {
     m(e, t)
   }
 }
-d(b, "displayName", "GuildMemberRequesterStore");
-let y = new b(s.Z, {
+d(v, "displayName", "GuildMemberRequesterStore");
+let y = new v(s.Z, {
   CONNECTION_CLOSED: _,
   CONNECTION_OPEN: _,
   CONNECTION_RESUMED: h,
   GUILD_MEMBERS_CHUNK_BATCH: p,
-  SEARCH_FINISH: v,
-  MOD_VIEW_SEARCH_FINISH: v,
+  SEARCH_FINISH: b,
+  MOD_VIEW_SEARCH_FINISH: b,
   LOCAL_MESSAGES_LOADED: E,
   LOAD_MESSAGES_SUCCESS: E,
   LOAD_MESSAGES_AROUND_SUCCESS: E,

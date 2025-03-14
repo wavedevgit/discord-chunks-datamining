@@ -79,6 +79,6 @@ function m(e, t) {
     m = +!!_(),
     g = null != r ? encodeURIComponent(r) : null,
     E = null != i ? encodeURIComponent(i) : null,
-    v = "".concat(f, "/?link=").concat(p, "&utm_source=").concat(n, "&apn=").concat(c, "&isi=").concat(u, "&ibi=").concat(d, "&sd=").concat(h, "&efr=").concat(m);
-  return null != g && (v += "&afl=".concat(g)), null != E && (v += "&ifl=".concat(E)), v
+    b = "".concat(f, "/?link=").concat(p, "&utm_source=").concat(n, "&apn=").concat(c, "&isi=").concat(u, "&ibi=").concat(d, "&sd=").concat(h, "&efr=").concat(m);
+  return null != g && (b += "&afl=".concat(g)), null != E && (b += "&ifl=".concat(E)), b
 }

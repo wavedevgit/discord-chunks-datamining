@@ -19,9 +19,9 @@ var r = n(200651),
   m = n(439959),
   g = n(125988),
   E = n(388032),
-  v = n(684441);
+  b = n(684441);
 
-function b(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -37,7 +37,7 @@ function y(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -90,7 +90,7 @@ let N = 3,
       isSelected: o = !1
     } = e, s = S(e, ["children", "className", "onSelect", "isSelected"]);
     return (0, r.jsx)(u.P3F, I(y({
-      className: a()(v.decorationGridItem, o ? v.selected : void 0, n)
+      className: a()(b.decorationGridItem, o ? b.selected : void 0, n)
     }, s), {
       onClick: i,
       children: t
@@ -104,7 +104,7 @@ let N = 3,
       section: a,
       isSelected: s = !1
     } = e, h = S(e, ["user", "avatarDecoration", "innerRef", "section", "isSelected"]);
-    let b = (0, c.e7)([f.Z], () => {
+    let v = (0, c.e7)([f.Z], () => {
         let e = f.Z.getProduct(n.skuId);
         return (0, _.G1)(e)
       }),
@@ -122,16 +122,16 @@ let N = 3,
         onlyAnimateOnHover: !R
       }),
       D = () => a === m.$0.PURCHASE || a === m.$0.PREMIUM_PURCHASE && T ? null : O ? (0, r.jsx)(u.lBU, {
-        className: v.newBadge,
+        className: b.newBadge,
         text: (0, r.jsxs)("div", {
-          className: v.newBadgeText,
+          className: b.newBadgeText,
           children: [(0, r.jsx)(u.mBM, {
             size: "xxs",
             color: "currentColor"
           }), E.NW.string(E.t.y2b7CA)]
         })
       }) : (0, r.jsx)(u.G2e, {
-        icon: b ? () => (0, r.jsx)(u.SrA, {
+        icon: v ? () => (0, r.jsx)(u.SrA, {
           size: "custom",
           color: "currentColor",
           width: 14,
@@ -141,15 +141,15 @@ let N = 3,
           color: "currentColor"
         }),
         color: l.Z.BACKGROUND_ACCENT,
-        className: v.iconBadge
+        className: b.iconBadge
       });
     return (0, r.jsxs)(w, I(y({
-      className: N ? v.decorationGridItemChurned : void 0,
+      className: N ? b.decorationGridItemChurned : void 0,
       innerRef: null != o ? o : C,
       isSelected: s
     }, h), {
       children: [(0, r.jsx)("img", {
-        className: v.presetDecorationImg,
+        className: b.presetDecorationImg,
         src: P,
         alt: n.label
       }), D()]
@@ -177,7 +177,7 @@ let N = 3,
         children: [(0, r.jsx)(u.t6m, {
           size: "md",
           color: "currentColor",
-          className: v.notAllowedIcon
+          className: b.notAllowedIcon
         }), (0, r.jsx)(u.Text, {
           variant: "text-xs/normal",
           color: "header-primary",
@@ -191,7 +191,7 @@ let N = 3,
           width: 23,
           height: 23,
           color: "currentColor",
-          className: v.shopIcon
+          className: b.shopIcon
         }), (0, r.jsx)(u.Text, {
           variant: "text-xs/normal",
           color: "header-primary",
@@ -214,7 +214,7 @@ let N = 3,
         header: n
       } = d[e];
       return (0, r.jsx)("div", {
-        className: v.headings,
+        className: b.headings,
         style: I(y({}, t), {
           position: "absolute"
         }),
@@ -225,7 +225,7 @@ let N = 3,
     };
     return (0, r.jsx)(u.GMG, {
       fade: !0,
-      className: v.list,
+      className: b.list,
       columns: N,
       sections: d.map(e => {
         let {

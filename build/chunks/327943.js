@@ -33,7 +33,7 @@ let p = 2,
   E = () => {
     g = !l.ZP.canUsePremiumAppIcons(a.default.getCurrentUser())
   },
-  v = e => {
+  b = e => {
     if (h.client.desktop = e, !g) {
       var t;
       s.default.track(u.rMx.APP_ICON_UPDATED, {
@@ -44,11 +44,11 @@ let p = 2,
     }
   };
 
-function b(e) {
+function v(e) {
   let {
     id: t
   } = e;
-  null != t && v(t)
+  null != t && b(t)
 }
 
 function y() {
@@ -92,7 +92,7 @@ class T extends(r = i.ZP.PersistedStore) {
 }
 _(T, "displayName", "AppIconPersistedStoreState"), _(T, "persistKey", "AppIconPersistedStoreState");
 let N = new T(o.Z, {
-  APP_ICON_UPDATED: b,
+  APP_ICON_UPDATED: v,
   APP_ICON_EDITOR_OPEN: y,
   APP_ICON_EDITOR_CLOSE: O,
   APP_ICON_EDITOR_RESET: I,

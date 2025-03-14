@@ -191,9 +191,9 @@
                   if (t.canvas) {
                     for (var g of ((t.canvas.width != h || t.canvas.height != m) && (t.canvas.width = h, t.canvas.height = m), t.viewport(0, m - r, n, r), t.disable(t.SCISSOR_TEST), t.clearColor(0, 0, 0, 0), t.clear(t.COLOR_BUFFER_BIT), t.enable(t.SCISSOR_TEST), s.sort((e, t) => t.wb - e.wb), h = f.push(c), a != h && (t.bufferData(t.ARRAY_BUFFER, 8 * h, t.DYNAMIC_DRAW), a = h), h = 0, s)) t.bufferSubData(t.ARRAY_BUFFER, h, g.Ta), h += 4 * g.Ta.length;
                     for (var E of (console.assert(h == 4 * c), s)) t.bufferSubData(t.ARRAY_BUFFER, h, E.Db), h += 4 * E.Db.length;
-                    for (var v of (console.assert(h == 8 * c), h = _.push(p), l != h && (t.bufferData(t.ELEMENT_ARRAY_BUFFER, 2 * h, t.DYNAMIC_DRAW), l = h), g = 0, s)) t.bufferSubData(t.ELEMENT_ARRAY_BUFFER, g, v.indices), g += 2 * v.indices.length;
-                    for (let e of (console.assert(g == 2 * p), v = 0, E = !0, h = g = 0, s)) {
-                      e.image.Ka != v && (t.bindTexture(t.TEXTURE_2D, e.image.Ja || null), v = e.image.Ka), e.mc ? (t.scissor(e.Ya, m - e.Za - e.jb, e.Ac, e.jb), E = !0) : E && (t.scissor(0, m - r, n, r), E = !1), s = 2 / n;
+                    for (var b of (console.assert(h == 8 * c), h = _.push(p), l != h && (t.bufferData(t.ELEMENT_ARRAY_BUFFER, 2 * h, t.DYNAMIC_DRAW), l = h), g = 0, s)) t.bufferSubData(t.ELEMENT_ARRAY_BUFFER, g, b.indices), g += 2 * b.indices.length;
+                    for (let e of (console.assert(g == 2 * p), b = 0, E = !0, h = g = 0, s)) {
+                      e.image.Ka != b && (t.bindTexture(t.TEXTURE_2D, e.image.Ja || null), b = e.image.Ka), e.mc ? (t.scissor(e.Ya, m - e.Za - e.jb, e.Ac, e.jb), E = !0) : E && (t.scissor(0, m - r, n, r), E = !1), s = 2 / n;
                       let a = -2 / r;
                       t.uniform4f(i, e.ha[0] * s * e.Ba, e.ha[1] * a * e.Ca, e.ha[2] * s * e.Ba, e.ha[3] * a * e.Ca), t.uniform2f(o, e.ha[4] * s * e.Ba + s * (e.Ya - e.ic * e.Ba) - 1, e.ha[5] * a * e.Ca + a * (e.Za - e.jc * e.Ca) + 1), t.vertexAttribPointer(0, 2, t.FLOAT, !1, 0, h), t.vertexAttribPointer(1, 2, t.FLOAT, !1, 0, h + 4 * c), t.drawElements(t.TRIANGLES, e.indices.length, t.UNSIGNED_SHORT, g), h += 4 * e.Ta.length, g += 2 * e.indices.length
                     }
@@ -266,7 +266,7 @@
               m = r.stroke,
               g = o.FillRule.evenOdd,
               E = 1;
-            var v = o.RenderImage.extend("CanvasRenderImage", {
+            var b = o.RenderImage.extend("CanvasRenderImage", {
                 __construct: function({
                   la: e,
                   xa: t
@@ -287,7 +287,7 @@
                   }, n.src = t.Wa
                 }
               }),
-              b = i.extend("CanvasRenderPath", {
+              v = i.extend("CanvasRenderPath", {
                 __construct: function() {
                   this.__parent.__construct.call(this), this.T = new Path2D
                 },
@@ -457,12 +457,12 @@
                   g = _ - d;
                 c = Math.max(c, 0), d = Math.max(d, 0);
                 let E = (f = Math.min(f, p)) - c,
-                  v = (_ = Math.min(_, h)) - d;
-                if (console.assert(E <= Math.min(m, p)), console.assert(v <= Math.min(g, h)), !(0 >= E || 0 >= v)) {
-                  f = E < m || v < g, p = _ = 1;
-                  var b = Math.ceil(E * _),
-                    y = Math.ceil(v * p);
-                  h = u.hc(), b > h && (_ *= h / b, b = h), y > h && (p *= h / y, y = h), I || (I = new o.DynamicRectanizer(h)).reset(512, 512), 0 > (h = I.addRect(b, y)) && (n(), O.add(this), console.assert(0 <= (h = I.addRect(b, y))));
+                  b = (_ = Math.min(_, h)) - d;
+                if (console.assert(E <= Math.min(m, p)), console.assert(b <= Math.min(g, h)), !(0 >= E || 0 >= b)) {
+                  f = E < m || b < g, p = _ = 1;
+                  var v = Math.ceil(E * _),
+                    y = Math.ceil(b * p);
+                  h = u.hc(), v > h && (_ *= h / v, v = h), y > h && (p *= h / y, y = h), I || (I = new o.DynamicRectanizer(h)).reset(512, 512), 0 > (h = I.addRect(v, y)) && (n(), O.add(this), console.assert(0 <= (h = I.addRect(v, y))));
                   var A = 65535 & h,
                     C = h >> 16;
                   S.push({
@@ -472,7 +472,7 @@
                     Za: C,
                     ic: c,
                     jc: d,
-                    Ac: b,
+                    Ac: v,
                     jb: y,
                     Ba: _,
                     Ca: p,
@@ -487,7 +487,7 @@
                   this.H.push(function() {
                     R.save(), R.resetTransform(), R.globalCompositeOperation = P, R.globalAlpha = i;
                     let e = u.canvas();
-                    e && R.drawImage(e, A, C, b, y, c, d, E, v), R.restore()
+                    e && R.drawImage(e, A, C, v, y, c, d, E, b), R.restore()
                   })
                 }
               },
@@ -525,7 +525,7 @@
                 }
               })
             }, o.decodeImage = function(e, t) {
-              new v({
+              new b({
                 la: t
               }).decode(e)
             }, o.renderFactory = {
@@ -533,11 +533,11 @@
                 return new y
               },
               makeRenderPath: function() {
-                return new b
+                return new v
               },
               makeRenderImage: function() {
                 let e = R;
-                return new v({
+                return new b({
                   xa: () => {
                     e.total++
                   },
@@ -586,9 +586,9 @@
               200 == r.status || 0 == r.status && r.response ? t(r.response) : n()
             }, r.onerror = n, r.send(null)
           });
-          var v = o.print || console.log.bind(console),
-            b = o.printErr || console.error.bind(console);
-          Object.assign(o, p), p = null, o.thisProgram && (h = o.thisProgram), o.wasmBinary && (y = o.wasmBinary), o.noExitRuntime, "object" != typeof WebAssembly && F("no native wasm support detected");
+          var b = o.print || console.log.bind(console),
+            v = o.printErr || console.error.bind(console);
+          Object.assign(o, p), p = null, o.thisProgram && (h = o.thisProgram), o.wasmBinary && (y = o.wasmBinary), o.noExitRuntime, "object" != typeof WebAssembly && V("no native wasm support detected");
           var y, O, I, S, T, N, A, C, R, P, w, D = !1;
 
           function L() {
@@ -605,10 +605,10 @@
           }
           var G = 0,
             B = null,
-            V = null;
+            F = null;
 
-          function F(e) {
-            throw o.onAbort && o.onAbort(e), b(e = "Aborted(" + e + ")"), D = !0, e = new WebAssembly.RuntimeError(e + ". Build with -sASSERTIONS for more info."), i(e), e
+          function V(e) {
+            throw o.onAbort && o.onAbort(e), v(e = "Aborted(" + e + ")"), D = !0, e = new WebAssembly.RuntimeError(e + ". Build with -sASSERTIONS for more info."), i(e), e
           }
 
           function Z(e) {
@@ -642,7 +642,7 @@
 
           function K(e, t, n) {
             return Y(e).then(e => WebAssembly.instantiate(e, t)).then(e => e).then(n, e => {
-              b("failed to asynchronously prepare wasm: " + e), F(e)
+              v("failed to asynchronously prepare wasm: " + e), V(e)
             })
           }
 
@@ -651,7 +651,7 @@
             return y || "function" != typeof WebAssembly.instantiateStreaming || Z(n) || n.startsWith("file://") || "function" != typeof fetch ? K(n, e, t) : fetch(n, {
               credentials: "same-origin"
             }).then(r => WebAssembly.instantiateStreaming(r, e).then(t, function(r) {
-              return b("wasm streaming compile failed: " + r), b("falling back to ArrayBuffer instantiation"), K(n, e, t)
+              return v("wasm streaming compile failed: " + r), v("falling back to ArrayBuffer instantiation"), K(n, e, t)
             }))
           }
           var q, Q, X, J = {
@@ -772,7 +772,7 @@
             },
             ei = () => {
               if ("object" == typeof crypto && "function" == typeof crypto.getRandomValues) return e => crypto.getRandomValues(e);
-              F("initRandomDevice")
+              V("initRandomDevice")
             },
             eo = e => (eo = ei())(e);
 
@@ -904,10 +904,10 @@
                 return e
               },
               Oa: function(e, t) {
-                null === t || 10 === t ? (v(el(e.F, 0)), e.F = []) : 0 != t && e.F.push(t)
+                null === t || 10 === t ? (b(el(e.F, 0)), e.F = []) : 0 != t && e.F.push(t)
               },
               qa: function(e) {
-                e.F && 0 < e.F.length && (v(el(e.F, 0)), e.F = [])
+                e.F && 0 < e.F.length && (b(el(e.F, 0)), e.F = [])
               },
               bc: function() {
                 return {
@@ -927,10 +927,10 @@
             },
             eg = {
               Oa: function(e, t) {
-                null === t || 10 === t ? (b(el(e.F, 0)), e.F = []) : 0 != t && e.F.push(t)
+                null === t || 10 === t ? (v(el(e.F, 0)), e.F = []) : 0 != t && e.F.push(t)
               },
               qa: function(e) {
-                e.F && 0 < e.F.length && (b(el(e.F, 0)), e.F = [])
+                e.F && 0 < e.F.length && (v(el(e.F, 0)), e.F = [])
               }
             };
 
@@ -938,58 +938,58 @@
             var n = e.j ? e.j.length : 0;
             n >= t || (t = Math.max(t, n * (1048576 > n ? 2 : 1.125) >>> 0), 0 != n && (t = Math.max(t, 256)), n = e.j, e.j = new Uint8Array(t), 0 < e.v && e.j.set(n.subarray(0, e.v), 0))
           }
-          var ev = {
+          var eb = {
             O: null,
-            U: () => ev.createNode(null, "/", 16895, 0),
+            U: () => eb.createNode(null, "/", 16895, 0),
             createNode(e, t, n, r) {
               if (24576 == (61440 & n) || 4096 == (61440 & n)) throw new ew(63);
-              return ev.O || (ev.O = {
+              return eb.O || (eb.O = {
                 dir: {
                   node: {
-                    Y: ev.l.Y,
-                    P: ev.l.P,
-                    ka: ev.l.ka,
-                    va: ev.l.va,
-                    ub: ev.l.ub,
-                    Ab: ev.l.Ab,
-                    vb: ev.l.vb,
-                    sb: ev.l.sb,
-                    Ea: ev.l.Ea
+                    Y: eb.l.Y,
+                    P: eb.l.P,
+                    ka: eb.l.ka,
+                    va: eb.l.va,
+                    ub: eb.l.ub,
+                    Ab: eb.l.Ab,
+                    vb: eb.l.vb,
+                    sb: eb.l.sb,
+                    Ea: eb.l.Ea
                   },
                   stream: {
-                    ba: ev.m.ba
+                    ba: eb.m.ba
                   }
                 },
                 file: {
                   node: {
-                    Y: ev.l.Y,
-                    P: ev.l.P
+                    Y: eb.l.Y,
+                    P: eb.l.P
                   },
                   stream: {
-                    ba: ev.m.ba,
-                    read: ev.m.read,
-                    write: ev.m.write,
-                    pa: ev.m.pa,
-                    lb: ev.m.lb,
-                    nb: ev.m.nb
+                    ba: eb.m.ba,
+                    read: eb.m.read,
+                    write: eb.m.write,
+                    pa: eb.m.pa,
+                    lb: eb.m.lb,
+                    nb: eb.m.nb
                   }
                 },
                 link: {
                   node: {
-                    Y: ev.l.Y,
-                    P: ev.l.P,
-                    ma: ev.l.ma
+                    Y: eb.l.Y,
+                    P: eb.l.P,
+                    ma: eb.l.ma
                   },
                   stream: {}
                 },
                 $a: {
                   node: {
-                    Y: ev.l.Y,
-                    P: ev.l.P
+                    Y: eb.l.Y,
+                    P: eb.l.P
                   },
                   stream: eH
                 }
-              }), 16384 == (61440 & (n = ej(e, t, n, r)).mode) ? (n.l = ev.O.dir.node, n.m = ev.O.dir.stream, n.j = {}) : 32768 == (61440 & n.mode) ? (n.l = ev.O.file.node, n.m = ev.O.file.stream, n.v = 0, n.j = null) : 40960 == (61440 & n.mode) ? (n.l = ev.O.link.node, n.m = ev.O.link.stream) : 8192 == (61440 & n.mode) && (n.l = ev.O.$a.node, n.m = ev.O.$a.stream), n.timestamp = Date.now(), e && (e.j[t] = n, e.timestamp = n.timestamp), n
+              }), 16384 == (61440 & (n = ej(e, t, n, r)).mode) ? (n.l = eb.O.dir.node, n.m = eb.O.dir.stream, n.j = {}) : 32768 == (61440 & n.mode) ? (n.l = eb.O.file.node, n.m = eb.O.file.stream, n.v = 0, n.j = null) : 40960 == (61440 & n.mode) ? (n.l = eb.O.link.node, n.m = eb.O.link.stream) : 8192 == (61440 & n.mode) && (n.l = eb.O.$a.node, n.m = eb.O.$a.stream), n.timestamp = Date.now(), e && (e.j[t] = n, e.timestamp = n.timestamp), n
             },
             Kc: e => e.j ? e.j.subarray ? e.j.subarray(0, e.v) : new Uint8Array(e.j) : new Uint8Array(0),
             l: {
@@ -1009,7 +1009,7 @@
               ka() {
                 throw eD[44]
               },
-              va: (e, t, n, r) => ev.createNode(e, t, n, r),
+              va: (e, t, n, r) => eb.createNode(e, t, n, r),
               ub(e, t, n) {
                 if (16384 == (61440 & e.mode)) {
                   try {
@@ -1033,7 +1033,7 @@
                 for (t in e.j) e.j.hasOwnProperty(t) && n.push(t);
                 return n
               },
-              Ea: (e, t, n) => ((e = ev.createNode(e, t, 41471, 0)).link = n, e),
+              Ea: (e, t, n) => ((e = eb.createNode(e, t, 41471, 0)).link = n, e),
               ma(e) {
                 if (40960 != (61440 & e.mode)) throw new ew(28);
                 return e.link
@@ -1069,17 +1069,17 @@
               },
               lb(e, t, n, r, i) {
                 if (32768 != (61440 & e.node.mode)) throw new ew(43);
-                if (e = e.node.j, 2 & i || e.buffer !== S.buffer) throw (0 < n || n + t < e.length) && (e = e.subarray ? e.subarray(n, n + t) : Array.prototype.slice.call(e, n, n + t)), n = !0, F(), t = void 0, new ew(48);
+                if (e = e.node.j, 2 & i || e.buffer !== S.buffer) throw (0 < n || n + t < e.length) && (e = e.subarray ? e.subarray(n, n + t) : Array.prototype.slice.call(e, n, n + t)), n = !0, V(), t = void 0, new ew(48);
                 return n = !1, t = e.byteOffset, {
                   o: t,
                   M: n
                 }
               },
-              nb: (e, t, n, r) => (ev.m.write(e, t, 0, r, n, !1), 0)
+              nb: (e, t, n, r) => (eb.m.write(e, t, 0, r, n, !1), 0)
             }
           };
 
-          function eb(e, t) {
+          function ev(e, t) {
             var n = 0;
             return e && (n |= 365), t && (n |= 146), n
           }
@@ -1147,12 +1147,12 @@
               } catch (e) {}
               return eG(e, "wx")
             },
-            eV = () => {
+            eF = () => {
               for (var e = 0; 4096 >= e; e++)
                 if (!eA[e]) return e;
               throw new ew(33)
             },
-            eF = e => {
+            eV = e => {
               if (!(e = eA[e])) throw new ew(8);
               return e
             },
@@ -1183,7 +1183,7 @@
                   this.h.position = e
                 }
               }
-            })), e = Object.assign(new eI, e), -1 == t && (t = eV()), e.X = t, eA[t] = e),
+            })), e = Object.assign(new eI, e), -1 == t && (t = eF()), e.X = t, eA[t] = e),
             eH = {
               open: e => {
                 e.m = eN[e.node.za].m, e.m.open && e.m.open(e)
@@ -1315,7 +1315,7 @@
             },
             e0 = (e, t, n) => {
               e = et("/dev/" + e);
-              var r = eb(!!t, !!n);
+              var r = ev(!!t, !!n);
               eO || (eO = 64);
               var i = eO++ << 8 | 0;
               eW(i, {
@@ -1432,7 +1432,7 @@
 
           function tf(e) {
             var t = to(e = nT(e));
-            return nv(e), t
+            return nb(e), t
           }
 
           function t_(e, t) {
@@ -1452,13 +1452,13 @@
           }
           var tE = {};
 
-          function tv(e, t) {
+          function tb(e, t) {
             return tc[t = tu(e, t)]
           }
-          var tb = void 0;
+          var tv = void 0;
 
           function ty(e) {
-            throw new tb(e)
+            throw new tv(e)
           }
 
           function tO(e, t) {
@@ -1607,12 +1607,12 @@
             return n
           }
 
-          function tV(e, t) {
+          function tF(e, t) {
             return null === t ? (this.Na && e9(`null is not a valid ${this.name}`), 0) : (t.g || e9(`Cannot pass "${t1(t)}" as a ${this.name}`), t.g.o || e9(`Cannot pass deleted object as a pointer of type ${this.name}`), t.g.u.ta && e9(`Cannot convert argument of type ${t.g.u.name} to parameter type ${this.name}`), tU(t.g.o, t.g.u.i, this.i))
           }
 
-          function tF(e, t, n, r) {
-            this.name = e, this.i = t, this.Na = n, this.ta = r, this.ua = !1, this.W = this.oc = this.Pa = this.rb = this.tc = this.nc = void 0, void 0 !== t.A ? this.toWireType = tB : (this.toWireType = r ? tG : tV, this.K = null)
+          function tV(e, t, n, r) {
+            this.name = e, this.i = t, this.Na = n, this.ta = r, this.ua = !1, this.W = this.oc = this.Pa = this.rb = this.tc = this.nc = void 0, void 0 !== t.A ? this.toWireType = tB : (this.toWireType = r ? tG : tF, this.K = null)
           }
 
           function tZ(e, t, n) {
@@ -2006,7 +2006,7 @@
                 e ? this.mode |= 146 : this.mode &= -147
               }
             }
-          }), e$(), eR = Array(4096), eY(ev, "/"), eK("/tmp", 16895, 0), eK("/home", 16895, 0), eK("/home/web_user", 16895, 0), (() => {
+          }), e$(), eR = Array(4096), eY(eb, "/"), eK("/tmp", 16895, 0), eK("/home", 16895, 0), eK("/home/web_user", 16895, 0), (() => {
             eK("/dev", 16895, 0), eW(259, {
               read: () => 0,
               write: (e, t, n, r) => r
@@ -2023,7 +2023,7 @@
                 var t = ej(e, "fd", 16895, 73);
                 return t.l = {
                   ka: (e, t) => {
-                    var n = eF(+t);
+                    var n = eV(+t);
                     return (e = {
                       parent: null,
                       U: {
@@ -2076,7 +2076,7 @@
             return t
           }, o.flushPendingDeletes = ts, o.setDelayFunction = function(e) {
             tl = e, ta.length && tl && tl(ts)
-          }, tb = o.InternalError = class extends Error {
+          }, tv = o.InternalError = class extends Error {
             constructor(e) {
               super(e), this.name = "InternalError"
             }
@@ -2114,13 +2114,13 @@
             return !this.g.o
           }, tx.prototype.deleteLater = function() {
             return this.g.o || tL(this), this.g.fa && !this.g.ia && e9("Object already scheduled for deletion"), ta.push(this), 1 === ta.length && tl && tl(ts), this.g.fa = !0, this
-          }, tF.prototype.Vb = function(e) {
+          }, tV.prototype.Vb = function(e) {
             return this.rb && (e = this.rb(e)), e
-          }, tF.prototype.ab = function(e) {
+          }, tV.prototype.ab = function(e) {
             this.W && this.W(e)
-          }, tF.prototype.argPackAdvance = 8, tF.prototype.readValueFromPointer = tN, tF.prototype.deleteObject = function(e) {
+          }, tV.prototype.argPackAdvance = 8, tV.prototype.readValueFromPointer = tN, tV.prototype.deleteObject = function(e) {
             null !== e && e.delete()
-          }, tF.prototype.fromWireType = function(e) {
+          }, tV.prototype.fromWireType = function(e) {
             function t() {
               return this.ua ? tO(this.i.N, {
                 u: this.nc,
@@ -2134,7 +2134,7 @@
             }
             var n = this.Vb(e);
             if (!n) return this.ab(e), null;
-            var r = tv(this.i, n);
+            var r = tb(this.i, n);
             if (void 0 !== r) return 0 === r.g.count.value ? (r.g.o = n, r.g.G = e, r.clone()) : (r = r.clone(), this.ab(e), r);
             if (!(r = tE[r = this.i.Ub(n)])) return t.call(this);
             r = this.ta ? r.Kb : r.pointerType;
@@ -2153,7 +2153,7 @@
             __syscall_fcntl64: function(e, t, n) {
               e2 = n;
               try {
-                var r = eF(e);
+                var r = eV(e);
                 switch (t) {
                   case 0:
                     var i = e3();
@@ -2184,7 +2184,7 @@
             __syscall_ioctl: function(e, t, n) {
               e2 = n;
               try {
-                var r = eF(e);
+                var r = eV(e);
                 switch (t) {
                   case 21509:
                   case 21510:
@@ -2234,7 +2234,7 @@
                 var i = t = t ? el(T, t) : "";
                 if ("/" === i.charAt(0)) t = i;
                 else {
-                  var o = -100 === e ? "/" : eF(e).path;
+                  var o = -100 === e ? "/" : eV(e).path;
                   if (0 == i.length) throw new ew(44);
                   t = et(o + "/" + i)
                 }
@@ -2361,8 +2361,8 @@
                 });
                 t.prototype = a;
                 var l = new tj(u, t, a, f, n, o, s, c);
-                l.A && (void 0 === l.A.oa && (l.A.oa = []), l.A.oa.push(l)), n = new tF(u, l, !0, !1), i = new tF(u + "*", l, !1, !1);
-                var d = new tF(u + " const*", l, !1, !0);
+                l.A && (void 0 === l.A.oa && (l.A.oa = []), l.A.oa.push(l)), n = new tV(u, l, !0, !1), i = new tV(u + "*", l, !1, !1);
+                var d = new tV(u + " const*", l, !1, !0);
                 return tE[e] = {
                   pointerType: i,
                   Kb: d
@@ -2599,28 +2599,28 @@
                       for (o = 0, s = Array(t); o < t; ++o) s[o] = String.fromCharCode(T[r + o]);
                       s = s.join("")
                     }
-                  return nv(e), s
+                  return nb(e), s
                 },
                 toWireType: function(e, t) {
                   t instanceof ArrayBuffer && (t = new Uint8Array(t));
                   var r = "string" == typeof t;
                   r || t instanceof Uint8Array || t instanceof Uint8ClampedArray || t instanceof Int8Array || e9("Cannot pass non-string to std::string");
                   var i = n && r ? eu(t) : t.length,
-                    o = nb(4 + i + 1),
+                    o = nv(4 + i + 1),
                     a = o + 4;
                   if (R[o >> 2] = i, n && r) ed(t, T, a, i + 1);
                   else if (r)
                     for (r = 0; r < i; ++r) {
                       var s = t.charCodeAt(r);
-                      255 < s && (nv(a), e9("String has UTF-16 code units that do not fit in 8 bits")), T[a + r] = s
+                      255 < s && (nb(a), e9("String has UTF-16 code units that do not fit in 8 bits")), T[a + r] = s
                     } else
                       for (r = 0; r < i; ++r) T[a + r] = t[r];
-                  return null !== e && e.push(nv, o), o
+                  return null !== e && e.push(nb, o), o
                 },
                 argPackAdvance: 8,
                 readValueFromPointer: tN,
                 K: function(e) {
-                  nv(e)
+                  nb(e)
                 }
               })
             },
@@ -2638,18 +2638,18 @@
                     var u = e + 4 + c * t;
                     (c == i || 0 == o[u >> s]) && (l = r(l, u - l), void 0 === n ? n = l : (n += "\0", n += l), l = u + t)
                   }
-                  return nv(e), n
+                  return nb(e), n
                 },
                 toWireType: function(e, r) {
                   "string" != typeof r && e9(`Cannot pass non-string to C++ string type ${n}`);
                   var a = o(r),
-                    l = nb(4 + a + t);
-                  return R[l >> 2] = a >> s, i(r, l + 4, a + t), null !== e && e.push(nv, l), l
+                    l = nv(4 + a + t);
+                  return R[l >> 2] = a >> s, i(r, l + 4, a + t), null !== e && e.push(nb, l), l
                 },
                 argPackAdvance: 8,
                 readValueFromPointer: tN,
                 K: function(e) {
-                  nv(e)
+                  nb(e)
                 }
               })
             },
@@ -2736,7 +2736,7 @@
               return tt(e = (e = t_(e, "_emval_take_value")).readValueFromPointer(t))
             },
             abort: () => {
-              F("")
+              V("")
             },
             emscripten_asm_const_int: (e, t, n) => {
               var r;
@@ -2787,7 +2787,7 @@
             },
             fd_close: function(e) {
               try {
-                var t = eF(e);
+                var t = eV(e);
                 if (null === t.X) throw new ew(8);
                 t.Ma && (t.Ma = null);
                 try {
@@ -2806,7 +2806,7 @@
             fd_read: function(e, t, n, r) {
               try {
                 e: {
-                  var i = eF(e);e = t;
+                  var i = eV(e);e = t;
                   for (var o, a = t = 0; a < n; a++) {
                     var s = R[e >> 2],
                       l = R[e + 4 >> 2];
@@ -2848,7 +2848,7 @@
               t = n + 2097152 >>> 0 < 4194305 - !!t ? (t >>> 0) + 0x100000000 * n : NaN;
               try {
                 if (isNaN(t)) return 61;
-                var o = eF(e);
+                var o = eV(e);
                 return eJ(o, t, r), X = [o.position >>> 0, (Q = o.position, 1 <= +Math.abs(Q) ? 0 < Q ? +Math.floor(Q / 0x100000000) >>> 0 : ~~+Math.ceil((Q - +(~~Q >>> 0)) / 0x100000000) >>> 0 : 0)], C[i >> 2] = X[0], C[i + 4 >> 2] = X[1], o.Ma && 0 === t && 0 === r && (o.Ma = null), 0
               } catch (e) {
                 if (void 0 === e1 || "ErrnoError" !== e.name) throw e;
@@ -2858,7 +2858,7 @@
             fd_write: function(e, t, n, r) {
               try {
                 e: {
-                  var i = eF(e);e = t;
+                  var i = eV(e);e = t;
                   for (var o, a = t = 0; a < n; a++) {
                     var s = R[e >> 2],
                       l = R[e + 4 >> 2];
@@ -2900,9 +2900,9 @@
           };
           ! function() {
             function e(e) {
-              if (O = (I = e = e.exports).memory, L(), x = I.__indirect_function_table, k.unshift(I.__wasm_call_ctors), G--, o.monitorRunDependencies && o.monitorRunDependencies(G), 0 == G && (null !== B && (clearInterval(B), B = null), V)) {
-                var t = V;
-                V = null, t()
+              if (O = (I = e = e.exports).memory, L(), x = I.__indirect_function_table, k.unshift(I.__wasm_call_ctors), G--, o.monitorRunDependencies && o.monitorRunDependencies(G), 0 == G && (null !== B && (clearInterval(B), B = null), F)) {
+                var t = F;
+                F = null, t()
               }
               return e
             }
@@ -2913,14 +2913,14 @@
             if (G++, o.monitorRunDependencies && o.monitorRunDependencies(G), o.instantiateWasm) try {
               return o.instantiateWasm(t, e)
             } catch (e) {
-              b("Module.instantiateWasm callback failed with error: " + e), i(e)
+              v("Module.instantiateWasm callback failed with error: " + e), i(e)
             }
             z(t, function(t) {
               e(t.instance)
             }).catch(i)
           }();
-          var nv = e => (nv = I.free)(e),
-            nb = e => (nb = I.malloc)(e),
+          var nb = e => (nb = I.free)(e),
+            nv = e => (nv = I.malloc)(e),
             ny = o._ma_device__on_notification_unlocked = e => (ny = o._ma_device__on_notification_unlocked = I.ma_device__on_notification_unlocked)(e);
           o._ma_malloc_emscripten = (e, t) => (o._ma_malloc_emscripten = I.ma_malloc_emscripten)(e, t), o._ma_free_emscripten = (e, t) => (o._ma_free_emscripten = I.ma_free_emscripten)(e, t);
           var nO = o._ma_device_process_pcm_frames_capture__webaudio = (e, t, n) => (nO = o._ma_device_process_pcm_frames_capture__webaudio = I.ma_device_process_pcm_frames_capture__webaudio)(e, t, n),
@@ -2949,8 +2949,8 @@
               }, 1)) : e())
             }
           }
-          if (o.__embind_initialize_bindings = () => (o.__embind_initialize_bindings = I._embind_initialize_bindings)(), o.dynCall_iiji = (e, t, n, r, i) => (o.dynCall_iiji = I.dynCall_iiji)(e, t, n, r, i), o.dynCall_jiji = (e, t, n, r, i) => (o.dynCall_jiji = I.dynCall_jiji)(e, t, n, r, i), o.dynCall_iiiji = (e, t, n, r, i, a) => (o.dynCall_iiiji = I.dynCall_iiiji)(e, t, n, r, i, a), o.dynCall_iij = (e, t, n, r) => (o.dynCall_iij = I.dynCall_iij)(e, t, n, r), o.dynCall_jii = (e, t, n) => (o.dynCall_jii = I.dynCall_jii)(e, t, n), o.dynCall_viijii = (e, t, n, r, i, a, s) => (o.dynCall_viijii = I.dynCall_viijii)(e, t, n, r, i, a, s), o.dynCall_iiiiij = (e, t, n, r, i, a, s) => (o.dynCall_iiiiij = I.dynCall_iiiiij)(e, t, n, r, i, a, s), o.dynCall_iiiiijj = (e, t, n, r, i, a, s, l, c) => (o.dynCall_iiiiijj = I.dynCall_iiiiijj)(e, t, n, r, i, a, s, l, c), o.dynCall_iiiiiijj = (e, t, n, r, i, a, s, l, c, u) => (o.dynCall_iiiiiijj = I.dynCall_iiiiiijj)(e, t, n, r, i, a, s, l, c, u), V = function e() {
-              n || nN(), n || (V = e)
+          if (o.__embind_initialize_bindings = () => (o.__embind_initialize_bindings = I._embind_initialize_bindings)(), o.dynCall_iiji = (e, t, n, r, i) => (o.dynCall_iiji = I.dynCall_iiji)(e, t, n, r, i), o.dynCall_jiji = (e, t, n, r, i) => (o.dynCall_jiji = I.dynCall_jiji)(e, t, n, r, i), o.dynCall_iiiji = (e, t, n, r, i, a) => (o.dynCall_iiiji = I.dynCall_iiiji)(e, t, n, r, i, a), o.dynCall_iij = (e, t, n, r) => (o.dynCall_iij = I.dynCall_iij)(e, t, n, r), o.dynCall_jii = (e, t, n) => (o.dynCall_jii = I.dynCall_jii)(e, t, n), o.dynCall_viijii = (e, t, n, r, i, a, s) => (o.dynCall_viijii = I.dynCall_viijii)(e, t, n, r, i, a, s), o.dynCall_iiiiij = (e, t, n, r, i, a, s) => (o.dynCall_iiiiij = I.dynCall_iiiiij)(e, t, n, r, i, a, s), o.dynCall_iiiiijj = (e, t, n, r, i, a, s, l, c) => (o.dynCall_iiiiijj = I.dynCall_iiiiijj)(e, t, n, r, i, a, s, l, c), o.dynCall_iiiiiijj = (e, t, n, r, i, a, s, l, c, u) => (o.dynCall_iiiiiijj = I.dynCall_iiiiiijj)(e, t, n, r, i, a, s, l, c, u), F = function e() {
+              n || nN(), n || (F = e)
             }, o.preInit)
             for ("function" == typeof o.preInit && (o.preInit = [o.preInit]); 0 < o.preInit.length;) o.preInit.pop()();
           return nN(), t.ready
@@ -3069,11 +3069,11 @@
                   }, n.bounds, p),
                   E = new l.Mat2D;
                 g.invert(E);
-                var v = new l.Vec2D(d, _),
-                  b = l.mapXY(E, v),
-                  y = b.x(),
-                  O = b.y();
-                switch (b.delete(), E.delete(), v.delete(), g.delete(), e.type) {
+                var b = new l.Vec2D(d, _),
+                  v = l.mapXY(E, b),
+                  y = v.x(),
+                  O = v.y();
+                switch (v.delete(), E.delete(), b.delete(), g.delete(), e.type) {
                   case "mouseout":
                     for (var I = 0, S = a; I < S.length; I++) {
                       var T = S[I];
@@ -3185,8 +3185,8 @@
       Rive: () => P,
       RiveEventType: () => o,
       RiveFile: () => R,
-      RuntimeLoader: () => v,
-      StateMachineInput: () => b,
+      RuntimeLoader: () => b,
+      StateMachineInput: () => v,
       StateMachineInputType: () => i,
       Testing: () => L,
       decodeAudio: () => x,
@@ -3380,7 +3380,7 @@
           return this.cachedRuntimeAlignment ? this.cachedRuntimeAlignment : (n = this.alignment === t.TopLeft ? e.Alignment.topLeft : this.alignment === t.TopCenter ? e.Alignment.topCenter : this.alignment === t.TopRight ? e.Alignment.topRight : this.alignment === t.CenterLeft ? e.Alignment.centerLeft : this.alignment === t.CenterRight ? e.Alignment.centerRight : this.alignment === t.BottomLeft ? e.Alignment.bottomLeft : this.alignment === t.BottomCenter ? e.Alignment.bottomCenter : this.alignment === t.BottomRight ? e.Alignment.bottomRight : e.Alignment.center, this.cachedRuntimeAlignment = n, n)
         }, n
       }(),
-      v = function() {
+      b = function() {
         function e() {}
         return e.loadRuntime = function() {
           c.default({
@@ -3418,7 +3418,7 @@
     ! function(e) {
       e[e.Number = 56] = "Number", e[e.Trigger = 58] = "Trigger", e[e.Boolean = 59] = "Boolean"
     }(i || (i = {}));
-    var b = function() {
+    var v = function() {
       function e(e, t) {
         this.type = e, this.runtimeInput = t
       }
@@ -3477,7 +3477,7 @@
             this.inputs.push(this.mapRuntimeInput(n, e))
           }
         }, e.prototype.mapRuntimeInput = function(e, t) {
-          return e.type === t.SMIInput.bool ? new b(i.Boolean, e.asBool()) : e.type === t.SMIInput.number ? new b(i.Number, e.asNumber()) : e.type === t.SMIInput.trigger ? new b(i.Trigger, e.asTrigger()) : void 0
+          return e.type === t.SMIInput.bool ? new v(i.Boolean, e.asBool()) : e.type === t.SMIInput.number ? new v(i.Number, e.asNumber()) : e.type === t.SMIInput.trigger ? new v(i.Trigger, e.asTrigger()) : void 0
         }, e.prototype.cleanup = function() {
           this.inputs.forEach(function(e) {
             e.delete()
@@ -3912,7 +3912,7 @@
               switch (n.label) {
                 case 0:
                   if (!this.src && !this.buffer) throw Error(e.missingErrorMessage);
-                  return t = this, [4, v.awaitInstance()];
+                  return t = this, [4, b.awaitInstance()];
                 case 1:
                   if (t.runtime = n.sent(), this.destroyed) return [2];
                   return [4, this.initData()];
@@ -3977,7 +3977,7 @@
             if (this.src = r, this.buffer = i, this.riveFile = o, !this.src && !this.buffer && !this.riveFile) throw new m(t.missingErrorMessage);
             var _ = D(a),
               p = D(s);
-            this.loaded = !1, this.readyForPlaying = !1, v.awaitInstance().then(function(e) {
+            this.loaded = !1, this.readyForPlaying = !1, b.awaitInstance().then(function(e) {
               !n.destroyed && (n.runtime = e, n.removeRiveListeners(), n.deleteRiveRenderer(), n.renderer = n.runtime.makeRenderer(n.canvas, f), n.canvas.width || n.canvas.height || n.resizeDrawingSurfaceToCanvas(), n.initData(l, _, p, u).then(function() {
                 return n.setupRiveListeners()
               }).catch(function(e) {
@@ -4110,11 +4110,11 @@
                         data: g
                       }), this.automaticallyHandleEvents) {
                       var E = document.createElement("a"),
-                        v = g,
-                        b = v.url,
-                        y = v.target,
-                        O = (0, f.sanitizeUrl)(b);
-                      b && E.setAttribute("href", O), y && E.setAttribute("target", y), O && O !== f.BLANK_URL && E.click()
+                        b = g,
+                        v = b.url,
+                        y = b.target,
+                        O = (0, f.sanitizeUrl)(v);
+                      v && E.setAttribute("href", O), y && E.setAttribute("target", y), O && O !== f.BLANK_URL && E.click()
                     }
                   } else this.eventManager.fire({
                     type: a.RiveEvent,
@@ -4543,21 +4543,21 @@
       },
       x = function(e) {
         return new Promise(function(t) {
-          return v.getInstance(function(n) {
+          return b.getInstance(function(n) {
             n.decodeAudio(e, t)
           })
         })
       },
       M = function(e) {
         return new Promise(function(t) {
-          return v.getInstance(function(n) {
+          return b.getInstance(function(n) {
             n.decodeImage(e, t)
           })
         })
       },
       k = function(e) {
         return new Promise(function(t) {
-          return v.getInstance(function(n) {
+          return b.getInstance(function(n) {
             n.decodeFont(e, t)
           })
         })

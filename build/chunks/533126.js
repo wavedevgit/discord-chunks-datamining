@@ -15,16 +15,16 @@ function i(e) {
   return btoa(n).replace(/\+/g, "-").replace(/\//g, "_").replace(/=/g, "")
 }
 n.d(t, {
-  U2: () => m,
+  U2: () => f,
   wz: () => _
 });
 var o = "copy",
   a = "convert";
 
-function l(e, t, n) {
+function s(e, t, n) {
   if (t === o) return n;
   if (t === a) return e(n);
-  if (t instanceof Array) return n.map(n => l(e, t[0], n));
+  if (t instanceof Array) return n.map(n => s(e, t[0], n));
   if (t instanceof Object) {
     let r = {};
     for (let [i, o] of Object.entries(t)) {
@@ -40,13 +40,13 @@ function l(e, t, n) {
         r[i] = null;
         continue
       }
-      r[i] = l(e, o.schema, n[i])
+      r[i] = s(e, o.schema, n[i])
     }
     return r
   }
 }
 
-function s(e, t) {
+function l(e, t) {
   return {
     required: !0,
     schema: e,
@@ -99,12 +99,12 @@ c({
 }), u(o), c(o), c(o), c(a), u(o), c({
   clientDataJSON: c(a),
   attestationObject: c(a),
-  transports: s(o, e => {
+  transports: l(o, e => {
     var t;
     return (null == (t = e.getTransports) ? void 0 : t.call(e)) || []
   })
-}), s(p, e => e.getClientExtensionResults());
-var f = {
+}), l(p, e => e.getClientExtensionResults());
+var g = {
     mediation: u(o),
     publicKey: c({
       challenge: c(a),
@@ -116,7 +116,7 @@ var f = {
     }),
     signal: u(o)
   },
-  g = {
+  m = {
     type: c(o),
     id: c(o),
     rawId: c(a),
@@ -127,13 +127,13 @@ var f = {
       signature: c(a),
       userHandle: c(a)
     }),
-    clientExtensionResults: s(p, e => e.getClientExtensionResults())
+    clientExtensionResults: l(p, e => e.getClientExtensionResults())
   };
 
 function _(e) {
-  return l(r, f, e)
+  return s(r, g, e)
 }
-async function m(e) {
+async function f(e) {
   let t = await navigator.credentials.get(e);
-  return t.toJSON = () => l(i, g, t), t
+  return t.toJSON = () => s(i, m, t), t
 }

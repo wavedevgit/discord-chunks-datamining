@@ -51,13 +51,13 @@ function E(e, t) {
   return n
 }
 
-function v(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function b(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -96,7 +96,7 @@ function S(e, t) {
     size: N = 1
   } = e, A = (0, s.JA)(n), {
     onFocus: C
-  } = A, R = b(A, ["onFocus"]), {
+  } = A, R = v(A, ["onFocus"]), {
     handleFocus: P,
     handleBlur: w
   } = (0, f.b)(C), D = 0 === N, L = null != E, x = e => {
@@ -121,7 +121,7 @@ function S(e, t) {
     }
   };
   return (0, r.jsx)(l.tEY, {
-    children: (0, r.jsx)("li", v(g({}, R), {
+    children: (0, r.jsx)("li", b(g({}, R), {
       onFocus: P,
       onBlur: w,
       onKeyDown: x,

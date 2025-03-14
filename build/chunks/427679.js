@@ -91,10 +91,10 @@ function E(e) {
   m(t.guild_id, t.id)
 }
 
-function v() {
+function b() {
   u = {}, c = {}
 }
-class b extends(r = i.ZP.Store) {
+class v extends(r = i.ZP.Store) {
   getStageInstanceByChannel(e) {
     if (null != e) return u[e]
   }
@@ -113,8 +113,8 @@ class b extends(r = i.ZP.Store) {
     return Object.values(u)
   }
 }
-s(b, "displayName", "StageInstanceStore");
-let y = new b(o.Z, {
+s(v, "displayName", "StageInstanceStore");
+let y = new v(o.Z, {
   CONNECTION_OPEN: f,
   GUILD_CREATE: _,
   GUILD_DELETE: p,
@@ -122,5 +122,5 @@ let y = new b(o.Z, {
   STAGE_INSTANCE_UPDATE: h,
   STAGE_INSTANCE_DELETE: g,
   CHANNEL_DELETE: E,
-  LOGOUT: v
+  LOGOUT: b
 })

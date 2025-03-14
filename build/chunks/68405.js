@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  PF: () => F,
+  PF: () => V,
   R7: () => k,
   Tg: () => U,
   UU: () => G,
@@ -10,7 +10,7 @@ n.d(t, {
   iy: () => B,
   mO: () => x,
   t1: () => R,
-  uL: () => V,
+  uL: () => F,
   v2: () => M,
   yC: () => L
 }), n(757143), n(301563);
@@ -30,8 +30,8 @@ var r = n(392711),
   m = n(591759),
   g = n(668781),
   E = n(981631),
-  v = n(526761),
-  b = n(388032);
+  b = n(526761),
+  v = n(388032);
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -294,27 +294,27 @@ function B(e) {
   return null == t ? e : (0, u.MO)(t) ? (0, u.q5)(t).toString() : e
 }
 
-function V(e) {
+function F(e) {
   f.DZ.updateAsync("favoriteGifs", t => {
     var n;
     let r = null !== (n = i().max(Object.values(t.gifs).map(e => e.order))) && void 0 !== n ? n : 0;
     if (t.gifs[B(e.url)] = S(O({}, e), {
         order: r + 1
-      }), s.wK.toBinary(t).length > v.vY) return g.Z.show({
-      title: b.NW.string(b.t["+XYXtb"]),
-      body: b.NW.string(b.t.YSDH9v)
+      }), s.wK.toBinary(t).length > b.vY) return g.Z.show({
+      title: v.NW.string(v.t["+XYXtb"]),
+      body: v.NW.string(v.t.YSDH9v)
     }), !1;
     let o = i().size(t.gifs);
     o > 2 && (t.hideTooltip = !0), p.default.track(E.rMx.GIF_FAVORITED, {
       total_num_favorited: o
     })
-  }, v.fy.INFREQUENT_USER_ACTION)
+  }, b.fy.INFREQUENT_USER_ACTION)
 }
 
-function F(e) {
+function V(e) {
   f.DZ.updateAsync("favoriteGifs", t => {
     e in t.gifs ? delete t.gifs[e] : delete t.gifs[B(e)], p.default.track(E.rMx.GIF_UNFAVORITED, {
       total_num_favorited: i().size(t.gifs)
     })
-  }, v.fy.INFREQUENT_USER_ACTION)
+  }, b.fy.INFREQUENT_USER_ACTION)
 }

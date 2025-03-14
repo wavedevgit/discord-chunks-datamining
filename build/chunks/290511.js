@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  FN: () => v,
+  FN: () => b,
   M$: () => f,
   NE: () => c,
   NO: () => u,
   Oq: () => A,
   RF: () => y,
-  Un: () => b,
+  Un: () => v,
   X: () => m,
   YW: () => d,
   ae: () => O,
@@ -55,10 +55,10 @@ let l = 100,
 var E = function(e) {
     return e[e.CUSTOMIZE = 0] = "CUSTOMIZE", e[e.BROWSE = 1] = "BROWSE", e
   }({}),
-  v = function(e) {
+  b = function(e) {
     return e[e.MULTIPLE_CHOICE = 0] = "MULTIPLE_CHOICE", e[e.DROPDOWN = 1] = "DROPDOWN", e
   }({}),
-  b = function(e) {
+  v = function(e) {
     return e[e.ONBOARDING_DEFAULT = 0] = "ONBOARDING_DEFAULT", e[e.ONBOARDING_ADVANCED = 1] = "ONBOARDING_ADVANCED", e
   }({});
 

@@ -19,14 +19,14 @@ function f(e) {
     className: n,
     collapsibleContent: o,
     isExpanded: f
-  } = e, [_, p] = i.useState(!1), [h, m] = i.useState(!0), [g, E] = i.useState(!1), v = null != f ? f : _, {
-    ref: b,
+  } = e, [_, p] = i.useState(!1), [h, m] = i.useState(!0), [g, E] = i.useState(!1), b = null != f ? f : _, {
+    ref: v,
     height: y = 0
   } = (0, c.Z)(), {
     ref: O,
     height: I = 0
   } = (0, c.Z)(), S = (0, l.q_F)({
-    height: v ? y + I : I,
+    height: b ? y + I : I,
     config: s.config.stiff,
     onRest: () => E(!0)
   }, h ? "animate-never" : "respect-motion-settings"), T = i.useCallback(() => {
@@ -39,23 +39,23 @@ function f(e) {
     return () => clearTimeout(e)
   }, []), (0, r.jsx)("div", {
     className: a()(u.collapseable, {
-      [u.toggled]: v
+      [u.toggled]: b
     }, n),
     children: (0, r.jsxs)(s.animated.div, {
       className: a()(u.contentExpandContainer, {
-        [u.showOverflow]: v && g
+        [u.showOverflow]: b && g
       }),
       style: S,
       children: [(0, r.jsx)("div", {
         ref: O,
         className: a()(u.header, {
-          [u.toggled]: v
+          [u.toggled]: b
         }),
         children: t({
           onClick: T
         })
       }), (0, r.jsx)("div", {
-        ref: b,
+        ref: v,
         children: o
       })]
     })

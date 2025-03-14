@@ -16,10 +16,10 @@ var r = n(566885),
       f = 7 === e,
       _ = 5 === e || d;
     return function(p, h, m, g) {
-      for (var E, v, b = a(p), y = o(b), O = r(h, m), I = s(y), S = 0, T = g || l, N = t ? T(p, I) : n || f ? T(p, 0) : void 0; I > S; S++)
-        if ((_ || S in y) && (v = O(E = y[S], S, b), e)) {
-          if (t) N[S] = v;
-          else if (v) switch (e) {
+      for (var E, b, v = a(p), y = o(v), O = r(h, m), I = s(y), S = 0, T = g || l, N = t ? T(p, I) : n || f ? T(p, 0) : void 0; I > S; S++)
+        if ((_ || S in y) && (b = O(E = y[S], S, v), e)) {
+          if (t) N[S] = b;
+          else if (b) switch (e) {
             case 3:
               return !0;
             case 5:

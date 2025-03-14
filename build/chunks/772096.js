@@ -70,9 +70,9 @@ function E(e) {
     };
   return g.set(t, o), o
 }
-let v = ["http:", "https:", "discord:"],
-  b = [d.b.TEXT, d.b.UNDERLINE, d.b.STRONG, d.b.ITALICS, d.b.STRIKETHROUGH, d.b.INLINE_CODE, d.b.SPOILER, d.b.LINE_BREAK, d.b.TIMESTAMP],
-  y = [...b, d.b.EMOJI, d.b.CUSTOM_EMOJI],
+let b = ["http:", "https:", "discord:"],
+  v = [d.b.TEXT, d.b.UNDERLINE, d.b.STRONG, d.b.ITALICS, d.b.STRIKETHROUGH, d.b.INLINE_CODE, d.b.SPOILER, d.b.LINE_BREAK, d.b.TIMESTAMP],
+  y = [...v, d.b.EMOJI, d.b.CUSTOM_EMOJI],
   O = [d.b.LIST, d.b.HEADING, d.b.BLOCK_QUOTE, d.b.SUBTEXT],
   I = [d.b.TEXT],
   S = [d.b.UNDERLINE, d.b.STRONG, d.b.ITALICS, d.b.STRIKETHROUGH, d.b.INLINE_CODE, d.b.SPOILER, d.b.LINE_BREAK, d.b.TIMESTAMP, d.b.EMOJI, d.b.CUSTOM_EMOJI, d.b.LIST, d.b.HEADING, d.b.BLOCK_QUOTE, d.b.SUBTEXT];
@@ -133,7 +133,7 @@ function A(e) {
     var t;
     let n = new URL(e),
       r = null !== (t = n.protocol) && void 0 !== t ? t : "";
-    if (!v.includes(r.toLowerCase())) throw Error("Provided protocol is not allowed: " + r);
+    if (!b.includes(r.toLowerCase())) throw Error("Provided protocol is not allowed: " + r);
     if (("http:" === r || "https:" === r) && (null == n.hostname || 0 === n.hostname.length)) throw Error("no hostname");
     let i = (0, f.MO)(n);
     n.username = "", n.password = "";
@@ -152,7 +152,7 @@ let C = m(p({}, l().defaultRules.link), {
     let [r, o, a, s] = e, u = () => ({
       type: d.b.TEXT,
       content: r
-    }), f = E(a), _ = E(o), h = E(null != s ? s : ""), g = f.whitespaceSanitized, v = _.fullySanitized, C = h.fullySanitized, R = v.trim();
+    }), f = E(a), _ = E(o), h = E(null != s ? s : ""), g = f.whitespaceSanitized, b = _.fullySanitized, C = h.fullySanitized, R = b.trim();
     if (0 === g.trim().length || 0 === R.length) return u();
     let P = A(l().unescapeUrl(a)),
       w = null == P,
@@ -162,22 +162,22 @@ let C = m(p({}, l().defaultRules.link), {
         allowEscape: !1,
         parseInlineCodeChildContent: !0
       }),
-      x = n.allowEmojiLinks ? y : b,
+      x = n.allowEmojiLinks ? y : v,
       M = [...x, ...O],
       k = [...I, ...S],
-      j = T(t(v, L), M, [d.b.EMOJI]),
+      j = T(t(b, L), M, [d.b.EMOJI]),
       U = T(t(C, L), k);
     if (null == j || null == U || 0 === N(j).trim().length) return u();
     let G = i().pick(t.rules, x),
       B = l().parserFor(G)(_.whitespaceSanitized, L),
-      V = h.whitespaceSanitized,
+      F = h.whitespaceSanitized,
       {
-        target: F
+        target: V
       } = P;
     return {
       content: B,
-      target: F,
-      title: V
+      target: V,
+      title: F
     }
   }
 })

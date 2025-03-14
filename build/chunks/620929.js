@@ -1,39 +1,39 @@
 /** Chunk was on 82158 **/
-l.d(t, {
+r.d(t, {
   p: () => f
 });
-var n = l(200651),
-  r = l(192379),
-  i = l(120356),
-  a = l.n(i);
-l(913527), l(442837);
-var s = l(481060);
-l(430824), l(650461), l(353093);
-var o = l(105671);
-l(532490), l(979264), l(570938), l(550271), l(116175);
-var c = l(308083),
-  d = l(388032),
-  u = l(895636);
+var n = r(200651),
+  l = r(192379),
+  i = r(120356),
+  a = r.n(i);
+r(913527), r(442837);
+var s = r(481060);
+r(430824), r(650461), r(353093);
+var o = r(105671);
+r(532490), r(979264), r(570938), r(550271), r(116175);
+var c = r(308083),
+  u = r(388032),
+  d = r(895636);
 
 function f(e) {
   let {
     applicationIds: t,
-    playstyle: l,
+    playstyle: r,
     className: i
-  } = e, f = r.useMemo(() => Array.from(t), [t]), m = (0, o.i)(f), h = r.useMemo(() => {
+  } = e, f = l.useMemo(() => Array.from(t), [t]), m = (0, o.i)(f), p = l.useMemo(() => {
     if (null == m) return null;
-    let e = (0, c.mv)(l);
-    return null == e ? d.NW.format(d.t.dlplKi, {
+    let e = (0, c.mv)(r);
+    return null == e ? u.NW.format(u.t.dlplKi, {
       games: m
-    }) : d.NW.format(d.t["+qicDA"], {
+    }) : u.NW.format(u.t["+qicDA"], {
       playstyle: e,
       games: m
     })
-  }, [m, l]);
+  }, [m, r]);
   return (0, n.jsx)(s.Text, {
     variant: "text-sm/normal",
     color: "text-muted",
-    className: a()(u.overviewText, i),
-    children: null == h ? d.NW.string(d.t.AIp7Hx) : h
+    className: a()(d.overviewText, i),
+    children: null == p ? u.NW.string(u.t.AIp7Hx) : p
   })
 }

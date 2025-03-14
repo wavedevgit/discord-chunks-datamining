@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(590921),
   g = n(665692),
   E = n(981631),
-  v = n(388032),
-  b = n(509102);
+  b = n(388032),
+  v = n(509102);
 let y = {
   results: {
     command: null,
@@ -82,7 +82,7 @@ let S = {
     } = O(a, l, c);
     if (null == h || 0 === g.length) return null;
     if (n) return (0, r.jsx)(s.$jN, {
-      className: b.spinner,
+      className: v.spinner,
       type: s.$jN.Type.SPINNING_CIRCLE
     });
     if (null != t) {
@@ -92,7 +92,7 @@ let S = {
           if (t.type === E.q9n.GIF) {
             var i, a, s;
             return e = !0, (0, r.jsx)(_.ZP.GIFIntegration, {
-              className: b.horizontalAutocomplete,
+              className: v.horizontalAutocomplete,
               onClick: f,
               onHover: u,
               selected: o === n,
@@ -105,7 +105,7 @@ let S = {
           }
         }),
         s = c.commands === m.L8.OLD_BUILT_INS ? h : null !== (I = null === (y = d.Z.getActiveCommand(a.id)) || void 0 === y ? void 0 : y.integrationTitle) && void 0 !== I ? I : h,
-        l = g.length > 0 && null != s ? v.NW.format(v.t["3njXz8"], {
+        l = g.length > 0 && null != s ? b.NW.format(b.t["3njXz8"], {
           query: g,
           command: s
         }) : null != s ? s : h;
@@ -113,7 +113,7 @@ let S = {
         children: [(0, r.jsx)(_.ZP.Title, {
           title: l
         }), e ? (0, r.jsx)(p.Z, {
-          className: b.horizontalAutocompletes,
+          className: v.horizontalAutocompletes,
           children: n
         }) : n]
       }, "gifs")

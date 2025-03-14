@@ -85,12 +85,12 @@ let u = () => ({
     icon: o.Z,
     description: c.NW.string(c.t.a7LWeH)
   }),
-  v = () => ({
+  b = () => ({
     icon: a.Z,
     color: r.Z.unsafe_rawColors.PREMIUM_PERK_PINK.css,
     description: c.NW.string(c.t.QouJkp)
   }),
-  b = () => ({
+  v = () => ({
     icon: i.lZ8,
     color: r.Z.unsafe_rawColors.PREMIUM_PERK_YELLOW.css,
     description: c.NW.string(c.t["3MpIx8"])
@@ -147,5 +147,5 @@ function P() {
 }
 
 function w() {
-  return [v(), b(), E(), y()]
+  return [b(), v(), E(), y()]
 }

@@ -33,7 +33,7 @@ function l(e) {
   }), {
     avatarPlaceholderSrc: g,
     avatarDecorationSrc: E,
-    eventHandlers: v
+    eventHandlers: b
   } = (0, a.Z)({
     user: t,
     guildId: null != n ? n : void 0,
@@ -50,11 +50,11 @@ function l(e) {
     isAnimating: h,
     eventHandlers: {
       onMouseEnter: r.useCallback(() => {
-        m.onMouseEnter(), v.onMouseEnter()
-      }, [m, v]),
+        m.onMouseEnter(), b.onMouseEnter()
+      }, [m, b]),
       onMouseLeave: r.useCallback(() => {
-        m.onMouseLeave(), v.onMouseLeave()
-      }, [m, v])
+        m.onMouseLeave(), b.onMouseLeave()
+      }, [m, b])
     }
   }
 }

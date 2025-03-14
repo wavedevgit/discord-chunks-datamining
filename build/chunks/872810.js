@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  L6: () => V,
+  L6: () => F,
   Rc: () => G,
   WH: () => R,
   aP: () => k,
@@ -30,8 +30,8 @@ var r = n(512722),
   m = n(430824),
   g = n(944486),
   E = n(979651),
-  v = n(934415),
-  b = n(70956),
+  b = n(934415),
+  v = n(70956),
   y = n(557457),
   O = n(573261);
 n(26151), n(493683);
@@ -84,7 +84,7 @@ function P(e, t) {
 
 function w(e, t) {
   let n = h.Z.getChannel(t);
-  return i()(null != n, "Cannot join a null voice channel"), !E.Z.isInChannel(t) && (0, v.rY)(n, E.Z, m.Z)
+  return i()(null != n, "Cannot join a null voice channel"), !E.Z.isInChannel(t) && (0, b.rY)(n, E.Z, m.Z)
 }
 
 function D(e, t) {
@@ -173,7 +173,7 @@ async function j(e, t, n) {
     })
   } catch (t) {
     let e;
-    429 === t.status && (e = t.body.retry_after * b.Z.Millis.SECOND), s.Z.dispatch({
+    429 === t.status && (e = t.body.retry_after * v.Z.Millis.SECOND), s.Z.dispatch({
       type: "STREAM_PREVIEW_FETCH_FAIL",
       streamKey: r,
       retryAfter: e
@@ -210,7 +210,7 @@ function B(e, t) {
   })
 }
 
-function V() {
+function F() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
     t = _.Z.getCurrentUserActiveStream();
   null != t && M((0, c.V9)(t), e)

@@ -60,10 +60,10 @@ function E(e) {
   r = t
 }
 
-function v() {
+function b() {
   f = !f
 }
-class b extends(i = o.ZP.Store) {
+class v extends(i = o.ZP.Store) {
   getFeeds() {
     return c
   }
@@ -97,12 +97,12 @@ class b extends(i = o.ZP.Store) {
     return (0, s.vu)(o, t)
   }
 }
-l(b, "displayName", "ContentInventoryStore");
-let y = new b(a.Z, {
+l(v, "displayName", "ContentInventoryStore");
+let y = new v(a.Z, {
   CONNECTION_OPEN: m,
   CONTENT_INVENTORY_SET_FEED: p,
   CONTENT_INVENTORY_SET_FEED_STATE: h,
   CONTENT_INVENTORY_SET_FILTERS: E,
   CONTENT_INVENTORY_CLEAR_FEED: g,
-  CONTENT_INVENTORY_DEBUG_TOGGLE_IMPRESSION_CAPPING: v
+  CONTENT_INVENTORY_DEBUG_TOGGLE_IMPRESSION_CAPPING: b
 })

@@ -44,8 +44,8 @@ var r, i = n(863714),
       return t.apply(e, p.call(n, _.call(arguments)))
     }
   }),
-  v = f(null),
-  b = Math.random(),
+  b = f(null),
+  v = Math.random(),
   y = f(null, {
     narrow: {},
     short: {},
@@ -484,8 +484,8 @@ function k(e, t, n, r, i) {
   p["[[dataLocale]]"] = a;
   for (var h = "-u", m = 0, g = r.length; m < g;) {
     var E = r[m],
-      v = i[a][E],
-      b = v["0"],
+      b = i[a][E],
+      v = b["0"],
       y = "",
       O = d;
     if (void 0 !== f) {
@@ -493,19 +493,19 @@ function k(e, t, n, r, i) {
       if (-1 !== I) {
         if (I + 1 < _ && f[I + 1].length > 2) {
           var S = f[I + 1],
-            T = O.call(v, S);
-          if (-1 !== T) var b = S,
-            y = "-" + E + "-" + b
+            T = O.call(b, S);
+          if (-1 !== T) var v = S,
+            y = "-" + E + "-" + v
         } else {
-          var T = O(v, "true");
-          if (-1 !== T) var b = "true"
+          var T = O(b, "true");
+          if (-1 !== T) var v = "true"
         }
       }
     }
     if (c.call(n, "[[" + E + "]]")) {
-      var N = n["[[" + E + "]]"]; - 1 !== O.call(v, N) && N !== b && (b = N, y = "")
+      var N = n["[[" + E + "]]"]; - 1 !== O.call(b, N) && N !== v && (v = N, y = "")
     }
-    p["[[" + E + "]]"] = b, h += y, m++
+    p["[[" + E + "]]"] = v, h += y, m++
   }
   if (h.length > 2) var a = a.substring(0, l) + h + a.substring(l);
   return p["[[locale]]"] = a, p
@@ -550,7 +550,7 @@ function B(e, t, n, r, i) {
   return i
 }
 
-function V(e, t, n, r, i) {
+function F(e, t, n, r, i) {
   var o = e[t];
   if (void 0 !== o) {
     if (isNaN(o = Number(o)) || o < n || o > r) throw RangeError("Value is not a number or outside accepted range");
@@ -559,7 +559,7 @@ function V(e, t, n, r, i) {
   return i
 }
 
-function F() {
+function V() {
   var e = arguments[0],
     t = arguments[1];
   return this && this !== a ? Z(em(this), e, t) : new a.NumberFormat(e, t)
@@ -571,7 +571,7 @@ function Z(e, t, n) {
   if (!0 === r["[[initializedIntlObject]]"]) throw TypeError("`this` object has already been initialized as an Intl object");
   u(e, "__getInternalProperties", {
     value: function() {
-      if (arguments[0] === b) return r
+      if (arguments[0] === v) return r
     }
   }), r["[[initializedIntlObject]]"] = !0;
   var o = D(t);
@@ -579,8 +579,8 @@ function Z(e, t, n) {
   var a = new ef,
     s = B(n, "localeMatcher", "string", new e_("lookup", "best fit"), "best fit");
   a["[[localeMatcher]]"] = s;
-  var c = v.NumberFormat["[[localeData]]"],
-    d = k(v.NumberFormat["[[availableLocales]]"], o, a, v.NumberFormat["[[relevantExtensionKeys]]"], c);
+  var c = b.NumberFormat["[[localeData]]"],
+    d = k(b.NumberFormat["[[availableLocales]]"], o, a, b.NumberFormat["[[relevantExtensionKeys]]"], c);
   r["[[locale]]"] = d["[[locale]]"], r["[[numberingSystem]]"] = d["[[nu]]"], r["[[dataLocale]]"] = d["[[dataLocale]]"];
   var f = d["[[dataLocale]]"],
     _ = B(n, "style", "string", new e_("decimal", "percent", "currency"), "decimal");
@@ -594,16 +594,16 @@ function Z(e, t, n) {
   }
   var m = B(n, "currencyDisplay", "string", new e_("code", "symbol", "name"), "symbol");
   "currency" === _ && (r["[[currencyDisplay]]"] = m);
-  var g = V(n, "minimumIntegerDigits", 1, 21, 1);
+  var g = F(n, "minimumIntegerDigits", 1, 21, 1);
   r["[[minimumIntegerDigits]]"] = g;
-  var E = V(n, "minimumFractionDigits", 0, 20, "currency" === _ ? h : 0);
+  var E = F(n, "minimumFractionDigits", 0, 20, "currency" === _ ? h : 0);
   r["[[minimumFractionDigits]]"] = E;
   var y = "currency" === _ ? Math.max(E, h) : "percent" === _ ? Math.max(E, 0) : Math.max(E, 3),
-    O = V(n, "maximumFractionDigits", E, 20, y);
+    O = F(n, "maximumFractionDigits", E, 20, y);
   r["[[maximumFractionDigits]]"] = O;
   var I = n.minimumSignificantDigits,
     S = n.maximumSignificantDigits;
-  (void 0 !== I || void 0 !== S) && (I = V(n, "minimumSignificantDigits", 1, 21, 1), S = V(n, "maximumSignificantDigits", I, 21, 21), r["[[minimumSignificantDigits]]"] = I, r["[[maximumSignificantDigits]]"] = S);
+  (void 0 !== I || void 0 !== S) && (I = F(n, "minimumSignificantDigits", 1, 21, 1), S = F(n, "maximumSignificantDigits", I, 21, 21), r["[[minimumSignificantDigits]]"] = I, r["[[maximumSignificantDigits]]"] = S);
   var T = B(n, "useGrouping", "boolean", void 0, !0);
   r["[[useGrouping]]"] = T;
   var N = c[f].patterns[_];
@@ -632,7 +632,7 @@ function Y(e, t) {
     i = eg(e),
     o = i["[[dataLocale]]"],
     a = i["[[numberingSystem]]"],
-    s = v.NumberFormat["[[localeData]]"][o],
+    s = b.NumberFormat["[[localeData]]"][o],
     l = s.symbols[a] || s.symbols.latn,
     u = !1;
   if (!1 === isFinite(t)) isNaN(t) ? n = l.nan : (n = l.infinity, t < 0 && (u = !0));
@@ -650,11 +650,11 @@ function Y(e, t) {
         g = s.patterns.secondaryGroupSize || p;
       if (_.length > p) {
         var E = new e_,
-          b = _.length - p,
-          y = b % g,
+          v = _.length - p,
+          y = v % g,
           O = _.slice(0, y);
-        for (O.length && h.call(E, O); y < b;) h.call(E, _.slice(y, y + g)), y += g;
-        h.call(E, _.slice(b)), f[0] = m.call(E, l.group)
+        for (O.length && h.call(E, O); y < v;) h.call(E, _.slice(y, y + g)), y += g;
+        h.call(E, _.slice(v)), f[0] = m.call(E, l.group)
       }
       n = m.call(f, l.decimal)
     }
@@ -696,17 +696,17 @@ function z(e, t, n, r) {
 u(a, "NumberFormat", {
   configurable: !0,
   writable: !0,
-  value: F
+  value: V
 }), u(a.NumberFormat, "prototype", {
   writable: !1
-}), v.NumberFormat = {
+}), b.NumberFormat = {
   "[[availableLocales]]": [],
   "[[relevantExtensionKeys]]": ["nu"],
   "[[localeData]]": {}
 }, u(a.NumberFormat, "supportedLocalesOf", {
   configurable: !0,
   writable: !0,
-  value: E.call(eu, v.NumberFormat)
+  value: E.call(eu, b.NumberFormat)
 }), u(a.NumberFormat.prototype, "format", {
   configurable: !0,
   get: W
@@ -748,14 +748,14 @@ function X(e, t, n) {
   if (!0 === r["[[initializedIntlObject]]"]) throw TypeError("`this` object has already been initialized as an Intl object");
   u(e, "__getInternalProperties", {
     value: function() {
-      if (arguments[0] === b) return r
+      if (arguments[0] === v) return r
     }
   }), r["[[initializedIntlObject]]"] = !0;
   var o = D(t),
     n = ee(n, "any", "date"),
     a = new ef;
   O = B(n, "localeMatcher", "string", new e_("lookup", "best fit"), "best fit"), a["[[localeMatcher]]"] = O;
-  var s = v.DateTimeFormat,
+  var s = b.DateTimeFormat,
     d = s["[[localeData]]"],
     f = k(s["[[availableLocales]]"], o, a, s["[[relevantExtensionKeys]]"], d);
   r["[[locale]]"] = f["[[locale]]"], r["[[calendar]]"] = f["[[ca]]"], r["[[numberingSystem]]"] = f["[[nu]]"], r["[[dataLocale]]"] = f["[[dataLocale]]"];
@@ -842,15 +842,15 @@ function en(e, t, n) {
       g = 0;
     for (var E in J)
       if (c.call(J, E)) {
-        var v = e["[[" + E + "]]"],
-          b = c.call(m, E) ? m[E] : void 0;
-        if (void 0 === v && void 0 !== b) g -= a;
-        else if (void 0 !== v && void 0 === b) g -= o;
+        var b = e["[[" + E + "]]"],
+          v = c.call(m, E) ? m[E] : void 0;
+        if (void 0 === b && void 0 !== v) g -= a;
+        else if (void 0 !== b && void 0 === v) g -= o;
         else {
           var y = ["2-digit", "numeric", "narrow", "short", "long"],
-            O = d.call(y, v),
-            I = Math.max(Math.min(d.call(y, b) - O, 2), -2);
-          n && (("numeric" === v || "2-digit" === v) && "numeric" !== b && "2-digit" !== b || "numeric" !== v && "2-digit" !== v && ("2-digit" === b || "numeric" === b)) && (g -= i), 2 === I ? g -= l : 1 === I ? g -= f : -1 === I ? g -= u : -2 === I && (g -= s)
+            O = d.call(y, b),
+            I = Math.max(Math.min(d.call(y, v) - O, 2), -2);
+          n && (("numeric" === b || "2-digit" === b) && "numeric" !== v && "2-digit" !== v || "numeric" !== b && "2-digit" !== b && ("2-digit" === v || "numeric" === v)) && (g -= i), 2 === I ? g -= l : 1 === I ? g -= f : -1 === I ? g -= u : -2 === I && (g -= s)
         }
       } g > _ && (_ = g, r = m), p++
   }
@@ -877,7 +877,7 @@ function ei() {
 
 function eo(e, t) {
   if (!isFinite(t)) throw RangeError("Invalid valid date passed to format");
-  var n = e.__getInternalProperties(b),
+  var n = e.__getInternalProperties(v),
     r = ep(),
     i = n["[[locale]]"],
     o = new a.NumberFormat([i], {
@@ -890,7 +890,7 @@ function eo(e, t) {
     l = ea(t, n["[[calendar]]"], n["[[timeZone]]"]),
     u = n["[[pattern]]"],
     d = n["[[dataLocale]]"],
-    f = v.DateTimeFormat["[[localeData]]"][d].calendars,
+    f = b.DateTimeFormat["[[localeData]]"][d].calendars,
     _ = n["[[calendar]]"];
   for (var p in J)
     if (c.call(n, "[[" + p + "]]")) {
@@ -934,14 +934,14 @@ function ea(e, t, n) {
     "[[inDST]]": !1
   })
 }
-v.DateTimeFormat = {
+b.DateTimeFormat = {
   "[[availableLocales]]": [],
   "[[relevantExtensionKeys]]": ["ca", "nu"],
   "[[localeData]]": {}
 }, u(a.DateTimeFormat, "supportedLocalesOf", {
   configurable: !0,
   writable: !0,
-  value: E.call(eu, v.DateTimeFormat)
+  value: E.call(eu, b.DateTimeFormat)
 }), u(a.DateTimeFormat.prototype, "format", {
   configurable: !0,
   get: ei
@@ -971,7 +971,7 @@ function el(e, t) {
   if (!e.number) throw Error("Object passed doesn't contain locale data for Intl.NumberFormat");
   var n, i = [t],
     o = t.split("-");
-  for (o.length > 2 && 4 === o[1].length && h.call(i, o[0] + "-" + o[2]); n = g.call(i);) h.call(v.NumberFormat["[[availableLocales]]"], n), v.NumberFormat["[[localeData]]"][n] = e.number, e.date && (e.date.nu = e.number.nu, h.call(v.DateTimeFormat["[[availableLocales]]"], n), v.DateTimeFormat["[[localeData]]"][n] = e.date);
+  for (o.length > 2 && 4 === o[1].length && h.call(i, o[0] + "-" + o[2]); n = g.call(i);) h.call(b.NumberFormat["[[availableLocales]]"], n), b.NumberFormat["[[localeData]]"][n] = e.number, e.date && (e.date.nu = e.number.nu, h.call(b.DateTimeFormat["[[availableLocales]]"], n), b.DateTimeFormat["[[localeData]]"][n] = e.date);
   void 0 === r && (r = t), O || (Z(a.NumberFormat.prototype), O = !0), e.date && !I && (X(a.DateTimeFormat.prototype), I = !0)
 }
 
@@ -1043,11 +1043,11 @@ function em(e) {
 }
 
 function eg(e) {
-  return c.call(e, "__getInternalProperties") ? e.__getInternalProperties(b) : f(null)
+  return c.call(e, "__getInternalProperties") ? e.__getInternalProperties(v) : f(null)
 }
 es.Number.toLocaleString = function() {
   if ("[object Number]" !== Object.prototype.toString.call(this)) throw TypeError("`this` value must be a number for Number.prototype.toLocaleString()");
-  return Y(new F(arguments[0], arguments[1]), this)
+  return Y(new V(arguments[0], arguments[1]), this)
 }, es.Date.toLocaleString = function() {
   if ("[object Date]" !== Object.prototype.toString.call(this)) throw TypeError("`this` value must be a Date instance for Date.prototype.toLocaleString()");
   var e = +this;

@@ -86,8 +86,8 @@ function m(e, t) {
       onResize: m,
       contentClassName: g,
       onScroll: E,
-      dir: v = "ltr",
-      fade: b = !1,
+      dir: b = "ltr",
+      fade: v = !1,
       customTheme: y = !1,
       style: O
     } = t, I = p(t, ["children", "className", "onResize", "contentClassName", "onScroll", "dir", "fade", "customTheme", "style"]);
@@ -124,14 +124,14 @@ function m(e, t) {
     }), (0, r.jsx)("div", _(d({
       ref: C,
       className: a()(h, {
-        [c.fade]: b,
+        [c.fade]: v,
         [c.customTheme]: y,
         [e]: !0,
         [c.managedReactiveScroller]: !0,
-        [c.scrolling]: N && b
+        [c.scrolling]: N && v
       }),
       style: O,
-      dir: v,
+      dir: b,
       onScroll: w
     }, I), {
       children: (0, r.jsx)(s.J, {

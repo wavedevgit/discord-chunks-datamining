@@ -6,24 +6,24 @@ var r = n(200651),
   i = n(192379),
   o = n(120356),
   a = n.n(o),
-  l = n(442837),
-  s = n(481060),
+  s = n(442837),
+  l = n(481060),
   c = n(812206),
   u = n(388905),
   d = n(925329),
   h = n(479446),
   p = n(981632),
-  f = n(594174),
-  g = n(509545),
+  g = n(594174),
+  m = n(509545),
   _ = n(55563),
-  m = n(296848),
+  f = n(296848),
   b = n(981631),
   x = n(474936),
   N = n(388032),
   v = n(722515),
-  I = n(612064),
-  E = n(802138);
-let j = l.ZP.connectStores([_.Z, c.Z, g.Z, f.default], e => {
+  E = n(612064),
+  I = n(802138);
+let j = s.ZP.connectStores([_.Z, c.Z, m.Z, g.default], e => {
   let {
     giftCode: t
   } = e, n = _.Z.get(t.skuId), {
@@ -31,24 +31,24 @@ let j = l.ZP.connectStores([_.Z, c.Z, g.Z, f.default], e => {
   } = t;
   return {
     sku: n,
-    subscriptionPlan: null != r ? (0, m.oE)(r) : null,
+    subscriptionPlan: null != r ? (0, f.oE)(r) : null,
     application: c.Z.getApplication(n.applicationId),
-    gifter: f.default.getUser(t.userId)
+    gifter: g.default.getUser(t.userId)
   }
 })(e => {
   let {
     error: t,
     giftCode: n,
     gifter: o,
-    sku: l,
+    sku: s,
     application: c,
-    subscriptionPlan: f
-  } = e, g = null == o ? N.NW.string(N.t.lTGZAg) : N.NW.formatToPlainString(N.t.TjWdPT, {
+    subscriptionPlan: g
+  } = e, m = null == o ? N.NW.string(N.t.lTGZAg) : N.NW.formatToPlainString(N.t.TjWdPT, {
     username: o.username
-  }), _ = l.name;
-  return null != f && (_ = N.NW.formatToPlainString(f.interval === x.rV.MONTH ? N.t.CTpcCQ : N.t.rgPWGx, {
-    skuName: l.name,
-    intervalCount: f.intervalCount
+  }), _ = s.name;
+  return null != g && (_ = N.NW.formatToPlainString(g.interval === x.rV.MONTH ? N.t.CTpcCQ : N.t.rgPWGx, {
+    skuName: s.name,
+    intervalCount: g.intervalCount
   })), (0, r.jsxs)(i.Fragment, {
     children: [null != n.giftStyle ? (0, r.jsx)(p.Z, {
       defaultAnimationState: h.SR.LOOP,
@@ -56,8 +56,8 @@ let j = l.ZP.connectStores([_.Z, c.Z, g.Z, f.default], e => {
       className: v.seasonalIcon
     }) : (0, r.jsx)(u.qE, {
       src: null != o ? o.getAvatarURL(void 0, 100) : null,
-      size: s.EFr.DEPRECATED_SIZE_100,
-      className: E.marginBottom20
+      size: l.EFr.DEPRECATED_SIZE_100,
+      className: I.marginBottom20
     }), null != t ? (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(u.DK, {
         children: N.NW.string(N.t.mDFGFh)
@@ -66,14 +66,14 @@ let j = l.ZP.connectStores([_.Z, c.Z, g.Z, f.default], e => {
       })]
     }) : (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(u.DK, {
-        children: g
+        children: m
       }), (0, r.jsxs)(u.Dx, {
-        className: a()(E.marginTop8, I.flexCenter),
-        children: [l.productLine !== b.POd.COLLECTIBLES && (0, r.jsx)(d.Z, {
+        className: a()(I.marginTop8, E.flexCenter),
+        children: [s.productLine !== b.POd.COLLECTIBLES && (0, r.jsx)(d.Z, {
           size: d.Z.Sizes.MEDIUM,
           className: v.applicationIcon,
           game: c,
-          skuId: l.id
+          skuId: s.id
         }), _]
       })]
     })]

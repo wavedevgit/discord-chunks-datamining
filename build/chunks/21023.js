@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  n: () => b
+  n: () => x
 }), n(47120), n(653041);
 var r = n(200651);
 n(192379);
@@ -61,7 +61,7 @@ let p = e => {
       })]
     })
   },
-  b = (e, t, n, b, x) => {
+  x = (e, t, n, x, b) => {
     let N = (0, o.r)({
         location: "useGetPlanComparisonTableRows"
       }).enabled,
@@ -74,7 +74,7 @@ let p = e => {
             text: a.ZP.formatPriceString(e, d.rV.MONTH)
           }),
           column2: (0, r.jsx)(h, {
-            text: n ? b : a.ZP.formatPriceString(t, d.rV.MONTH)
+            text: n ? x : a.ZP.formatPriceString(t, d.rV.MONTH)
           }),
           withBottomBorder: !0
         },
@@ -338,7 +338,7 @@ let p = e => {
           withBottomBorder: !1
         }
       },
-      E = x === d.a$.FP_ONLY,
+      E = b === d.a$.FP_ONLY,
       j = [_[0], _[1], _[2], _[3], _[4], _[5], _[6], ...E ? [] : [_[7]], _[8], _[9], _[10], _[11], ...E ? [] : [_[12]], _[13], _[14], _[15], _[16], _[17]];
     return (0, c.V)() && j.push(_[22]), N && j.push(_[23]), j
   }

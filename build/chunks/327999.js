@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  MS: () => b,
+  MS: () => v,
   Ph: () => y,
   _2: () => I,
-  bE: () => v,
+  bE: () => b,
   gq: () => E,
   nf: () => g
 }), n(301563), n(653041);
@@ -49,7 +49,7 @@ function g(e, t) {
 var E = function(e) {
   return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.BOT = 1] = "BOT", e[e.INTEGRATION = 2] = "INTEGRATION", e[e.DISCOVERY = 3] = "DISCOVERY", e[e.HUB = 4] = "HUB", e[e.INVITE = 5] = "INVITE", e[e.VANITY_URL = 6] = "VANITY_URL", e[e.MANUAL_MEMBER_VERIFICATION = 7] = "MANUAL_MEMBER_VERIFICATION", e
 }({});
-let v = function(e) {
+let b = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : void 0,
       n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
     switch (e) {
@@ -74,7 +74,7 @@ let v = function(e) {
         return c.NW.string(c.t.DvMBkZ)
     }
   },
-  b = e => {
+  v = e => {
     switch (e) {
       case "twitch":
         return c.NW.string(c.t.AVGAk5);

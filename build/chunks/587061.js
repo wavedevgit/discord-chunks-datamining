@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => v
 });
 var r = n(192379),
   i = n(442837),
@@ -47,16 +47,16 @@ function E(e, t) {
   null == o || d.ZP.hasExactKeybind(o) || s.Z.hasBind(null !== (r = _.H9(o[0])) && void 0 !== r ? r : "") || ((0, l.Qj)(), i && !t && e.preventDefault())
 }
 
-function v() {
+function b() {
   (0, l.rf)()
 }
-let b = function(e, t) {
+let v = function(e, t) {
   let n = (0, i.e7)([c.Z], () => c.Z.keyboardModeEnabled);
   (0, a.JDz)(n);
   let o = (0, r.useCallback)(e => {
     E(e, t)
   }, [t]);
-  return (0, r.useLayoutEffect)(() => (n ? (e.addEventListener("mousedown", v), e.addEventListener("keydown", m)) : e.addEventListener("keydown", o), () => {
-    n ? (e.removeEventListener("mousedown", v), e.removeEventListener("keydown", m)) : e.removeEventListener("keydown", o)
+  return (0, r.useLayoutEffect)(() => (n ? (e.addEventListener("mousedown", b), e.addEventListener("keydown", m)) : e.addEventListener("keydown", o), () => {
+    n ? (e.removeEventListener("mousedown", b), e.removeEventListener("keydown", m)) : e.removeEventListener("keydown", o)
   }), [e, o, n]), n
 }

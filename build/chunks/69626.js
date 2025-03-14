@@ -20,8 +20,8 @@ var r = n(200651),
   m = n(944486),
   g = n(585483),
   E = n(981631),
-  v = n(689079),
-  b = n(665692),
+  b = n(689079),
+  v = n(665692),
   y = n(388032),
   O = n(302432);
 
@@ -145,7 +145,7 @@ function C(e) {
     if (null == S || null == g || S.untranslatedName !== n.commandName || T) return !1;
     let e = g.isPrivate();
     if ((0, d.xl)(g) || !e && !y) return !1;
-    let t = (null == S ? void 0 : S.applicationId) === v.bi.BUILT_IN;
+    let t = (null == S ? void 0 : S.applicationId) === b.bi.BUILT_IN;
     return !!e || !!t || !!O
   }, [g, S, y, O, n.commandName, T]), C = i.useCallback(e => {
     null == e || e.stopPropagation(), null != g && null != n.commandName && null != n.commandKey && A(g.id, n.commandName, n.commandKey, c.Vh.MENTION)
@@ -163,11 +163,11 @@ function C(e) {
         onClick: C,
         onMouseEnter: t,
         onMouseLeave: i,
-        children: [b.GI, s(n.content, p)]
+        children: [v.GI, s(n.content, p)]
       }, p.key)
     }
   }, p.key) : (0, r.jsxs)("span", {
-    children: [b.GI, s(n.content, p)]
+    children: [v.GI, s(n.content, p)]
   })
 }
 

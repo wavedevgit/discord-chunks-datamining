@@ -20,8 +20,8 @@ var r = n(200651),
   m = n(592125),
   g = n(956664),
   E = n(709054),
-  v = n(273031),
-  b = n(859235),
+  b = n(273031),
+  v = n(859235),
   y = n(388032),
   O = n(824401);
 
@@ -75,7 +75,7 @@ function C(e) {
   return (0, r.jsx)(p.aQ.Provider, {
     value: !n,
     children: (0, r.jsx)(p.ZP, {
-      containerStyles: a === b.q.CLIP ? {
+      containerStyles: a === v.q.CLIP ? {
         borderBottomLeftRadius: 0,
         borderBottomRightRadius: 0,
         boxShadow: "none"
@@ -105,12 +105,12 @@ function R(e) {
     file: t,
     alt: n,
     spoiler: o,
-    size: s = b.q.MEDIUM,
+    size: s = v.q.MEDIUM,
     onMouseEnter: c
   } = e, [u, d] = i.useState(), [f, _] = i.useState({
     width: 0,
     height: 0
-  }), p = s === b.q.SMALL;
+  }), p = s === v.q.SMALL;
   i.useEffect(() => {
     if (null == t || !1 === A.includes(t.type)) return;
     let e = URL.createObjectURL(t);
@@ -177,7 +177,7 @@ function P(e) {
     file: t,
     alt: n,
     spoiler: o,
-    size: s = b.q.MEDIUM,
+    size: s = v.q.MEDIUM,
     onMouseEnter: l,
     onVideoLoadError: c
   } = e, [u, d] = i.useState(), f = i.useRef(null);
@@ -199,7 +199,7 @@ function P(e) {
         src: u,
         className: a()(O.media, {
           [O.spoiler]: e,
-          [O.sizeClip]: s === b.q.CLIP
+          [O.sizeClip]: s === v.q.CLIP
         }),
         onError: c,
         preload: "none",
@@ -213,9 +213,9 @@ function w(e) {
   var t;
   let {
     upload: n,
-    size: o = b.q.MEDIUM,
+    size: o = v.q.MEDIUM,
     onMouseEnter: s
-  } = e, [l, c] = i.useState(!1), u = o === b.q.SMALL;
+  } = e, [l, c] = i.useState(!1), u = o === v.q.SMALL;
   return n.isImage && n.item.platform === d.ow.WEB ? (0, r.jsx)(R, {
     file: n.item.file,
     alt: n.description,
@@ -252,11 +252,11 @@ function D(e) {
     upload: o,
     keyboardModeEnabled: d,
     label: p,
-    size: h = b.q.MEDIUM,
+    size: h = v.q.MEDIUM,
     canEdit: g = !0,
     hideFileName: I = !1,
     clip: T
-  } = e, A = null != T, C = (h = A ? b.q.CLIP : h) === b.q.SMALL, R = (0, s.e7)([m.Z], () => {
+  } = e, A = null != T, C = (h = A ? v.q.CLIP : h) === v.q.SMALL, R = (0, s.e7)([m.Z], () => {
     var e;
     return null === (e = m.Z.getChannel(t)) || void 0 === e ? void 0 : e.guild_id
   }), P = e => {
@@ -278,9 +278,9 @@ function D(e) {
       }
     })))
   };
-  return (0, r.jsxs)(b.Z, {
+  return (0, r.jsxs)(v.Z, {
     actions: (0, r.jsxs)(i.Fragment, {
-      children: [g ? (0, r.jsx)(v.Z, {
+      children: [g ? (0, r.jsx)(b.Z, {
         className: a()({
           [O.action]: C
         }),
@@ -301,7 +301,7 @@ function D(e) {
             [O.actionBarIcon]: C
           })
         })
-      }) : null, g && !A ? (0, r.jsx)(v.Z, {
+      }) : null, g && !A ? (0, r.jsx)(b.Z, {
         className: a()({
           [O.action]: C
         }),
@@ -314,7 +314,7 @@ function D(e) {
             [O.actionBarIcon]: C
           })
         })
-      }) : null, (0, r.jsx)(v.Z, {
+      }) : null, (0, r.jsx)(b.Z, {
         className: a()({
           [O.action]: C
         }),

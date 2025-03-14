@@ -1,56 +1,56 @@
-/** Chunk was on 93757 **/
+/** Chunk was on 40551 **/
 n.d(t, {
-  default: () => q
+  default: () => k
 }), n(47120);
-var i = n(200651),
+var a = n(200651),
   o = n(192379),
-  a = n(642128),
+  i = n(642128),
   r = n(481060),
   c = n(442837),
-  s = n(607070),
-  d = n(313201),
-  l = n(863249),
-  u = n(944163),
-  m = n(246364),
-  p = n(983736),
-  _ = n(937111),
+  d = n(607070),
+  l = n(313201),
+  s = n(863249),
+  m = n(944163),
+  u = n(246364),
+  _ = n(983736),
+  p = n(937111),
   b = n(200305),
   f = n(271383),
-  x = n(594174),
-  C = n(970606),
-  h = n(900681),
-  y = n(44272),
-  g = n(308083),
-  v = n(388032),
-  j = n(141494);
-let B = {
+  C = n(594174),
+  x = n(970606),
+  g = n(900681),
+  h = n(44272),
+  I = n(308083),
+  y = n(388032),
+  T = n(141494);
+let v = {
     mass: 1,
     tension: 600,
     friction: 60
   },
-  T = {
+  B = {
     mass: 1,
     tension: 300,
     friction: 25
   };
 
-function I(e) {
+function j(e) {
   let {
     guildId: t,
     formState: n,
     updateFormState: o
   } = e;
-  return (0, i.jsxs)("div", {
-    className: j.verificationForm,
-    children: [(0, i.jsx)(r.X6q, {
+  return (0, a.jsxs)("div", {
+    className: T.verificationForm,
+    children: [(0, a.jsx)(r.X6q, {
       variant: "heading-xxl/normal",
       color: "header-primary",
-      children: v.NW.string(v.t.xsSj6e)
-    }), (0, i.jsx)(r.Text, {
+      children: y.NW.string(y.t.xsSj6e)
+    }), (0, a.jsx)(r.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: v.NW.string(v.t["1VDDMT"])
-    }), (0, i.jsx)(b.Y, {
+      children: y.NW.string(y.t["1VDDMT"])
+    }), (0, a.jsx)(b.Y, {
       guildId: t,
       formState: n,
       updateFormState: o,
@@ -58,81 +58,81 @@ function I(e) {
     })]
   })
 }
-let q = function(e) {
+let k = function(e) {
   var t, n, b;
   let {
-    clan: q,
-    prioritizedGameIds: k,
+    clan: k,
+    prioritizedGameIds: F,
     position: w,
-    transitionState: N,
-    onClose: F
-  } = e, S = (0, d.Dt)(), O = (0, c.e7)([u.Z], () => u.Z.get(q.id)), [R, P] = o.useState(null !== (n = null == O ? void 0 : O.formFields) && void 0 !== n ? n : []), [D, M] = o.useState(!1), [Z, W] = o.useState(!1), [z, E] = o.useState(!1), Y = (0, c.e7)([x.default], () => x.default.getCurrentUser()), V = (0, c.e7)([f.ZP], () => f.ZP.isMember(q.id, null == Y ? void 0 : Y.id), [q, Y]), A = (0, c.e7)([_.Z], () => {
+    transitionState: q,
+    onClose: N
+  } = e, S = (0, l.Dt)(), O = (0, c.e7)([m.Z], () => m.Z.get(k.id)), [R, D] = o.useState(null !== (n = null == O ? void 0 : O.formFields) && void 0 !== n ? n : []), [P, G] = o.useState(!1), [M, W] = o.useState(!1), [A, Z] = o.useState(!1), z = (0, c.e7)([C.default], () => C.default.getCurrentUser()), L = (0, c.e7)([f.ZP], () => f.ZP.isMember(k.id, null == z ? void 0 : z.id), [k, z]), E = (0, c.e7)([p.Z], () => {
     var e;
-    return (null === (e = _.Z.getRequest(q.id)) || void 0 === e ? void 0 : e.applicationStatus) === m.wB.SUBMITTED
-  }), [L, U] = o.useState(""), X = o.useRef(() => (0, C._v)({
-    guildId: q.id,
+    return (null === (e = p.Z.getRequest(k.id)) || void 0 === e ? void 0 : e.applicationStatus) === u.wB.SUBMITTED
+  }), [Y, V] = o.useState(""), H = o.useRef(() => (0, x._v)({
+    guildId: k.id,
     position: w
   }));
-  o.useEffect(() => (l.ZP.fetchVerificationForm(q.id), () => {
-    X.current()
-  }), [q.id, X]), o.useEffect(() => {
-    null != O && P(O.formFields)
+  o.useEffect(() => (s.ZP.fetchVerificationForm(k.id), () => {
+    H.current()
+  }), [k.id, H]), o.useEffect(() => {
+    null != O && D(O.formFields)
   }, [O]);
-  let Q = o.useCallback(e => {
-      D || (M(!0), X.current = () => !1, (0, C.r)({
-        guildId: q.id,
+  let U = o.useCallback(e => {
+      P || (G(!0), H.current = () => !1, (0, x.r)({
+        guildId: k.id,
         position: w
-      })), P(e)
-    }, [P, D, M, q.id, w]),
-    G = o.useCallback(async e => {
-      await l.ZP.submitVerificationForm(q.id, e, l.q0)
-    }, [q.id]),
-    H = o.useCallback(async () => {
+      })), D(e)
+    }, [D, P, G, k.id, w]),
+    X = o.useCallback(async e => {
+      await s.ZP.submitVerificationForm(k.id, e, s.q0)
+    }, [k.id]),
+    Q = o.useCallback(async () => {
       try {
         var e, t;
         W(!0);
         let n = Date.now();
-        await G((e = function(e) {
+        await X((e = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
-              i = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              a = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), i.forEach(function(t) {
-              var i;
-              i = n[t], t in e ? Object.defineProperty(e, t, {
-                value: i,
+            }))), a.forEach(function(t) {
+              var a;
+              a = n[t], t in e ? Object.defineProperty(e, t, {
+                value: a,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-              }) : e[t] = i
+              }) : e[t] = a
             })
           }
           return e
-        }({}, null != O ? O : u.t), t = {
+        }({}, null != O ? O : m.t), t = {
           formFields: R
         }, t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var i = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, i)
+            var a = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, a)
           }
           return n
         })(Object(t)).forEach(function(n) {
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }), e));
-        let i = () => {
-            E(!0), setTimeout(F, 1300), W(!1), setTimeout(l.xo, 2300)
+        let a = () => {
+            Z(!0), setTimeout(N, 1300), W(!1), setTimeout(s.xo, 2300)
           },
           o = Date.now();
-        o - n > 1e3 ? i() : setTimeout(i, 1e3 - (o - n))
+        o - n > 1e3 ? a() : setTimeout(a, 1e3 - (o - n))
       } catch (e) {
-        U(null == e ? void 0 : e.message), W(!1)
+        V(null == e ? void 0 : e.message), W(!1)
       }
-    }, [G, F, O, R]),
-    J = R.some(e => !(0, p.OA)(e)),
-    K = (null !== (b = null == O ? void 0 : null === (t = O.guild) || void 0 === t ? void 0 : t.approximate_member_count) && void 0 !== b ? b : 0) >= g.Du,
-    $ = (0, c.e7)([s.Z], () => s.Z.useReducedMotion),
+    }, [X, N, O, R]),
+    J = R.some(e => !(0, _.OA)(e)),
+    K = (null !== (b = null == O ? void 0 : null === (t = O.guild) || void 0 === t ? void 0 : t.approximate_member_count) && void 0 !== b ? b : 0) >= I.Du,
+    $ = (0, c.e7)([d.Z], () => d.Z.useReducedMotion),
     ee = (0, r.q_F)({
       from: {
         opacity: 0,
@@ -142,10 +142,10 @@ let q = function(e) {
         opacity: 1,
         transform: "translateY(0px)"
       },
-      config: B,
+      config: v,
       delay: 500
     }, "animate-always"),
-    et = (0, r.Yzy)(z, {
+    et = (0, r.Yzy)(A, {
       from: {
         opacity: 0,
         scale: 0
@@ -158,100 +158,100 @@ let q = function(e) {
         opacity: 0,
         scale: 0
       },
-      config: T
+      config: B
     }),
     en = o.useRef(null);
-  return (0, i.jsxs)(r.Y0X, {
-    transitionState: N,
+  return (0, a.jsxs)(r.Y0X, {
+    transitionState: q,
     "aria-labelledby": S,
     size: r.CgR.DYNAMIC,
-    className: j.container,
+    className: T.container,
     hideShadow: !0,
-    children: [(0, i.jsxs)(a.animated.div, {
-      className: j.body,
+    children: [(0, a.jsxs)(i.animated.div, {
+      className: T.body,
       style: ee,
-      children: [(0, i.jsx)("div", {
-        className: j.applicationContainer,
+      children: [(0, a.jsx)("div", {
+        className: T.applicationContainer,
         ref: en,
-        children: (0, i.jsx)(y.Z, {
-          className: j.scroller,
+        children: (0, a.jsx)(h.Z, {
+          className: T.scroller,
           containerRef: en,
           faderSize: 180,
           faderEdgeThreshold: 48,
-          children: (0, i.jsx)(I, {
-            guildId: q.id,
+          children: (0, a.jsx)(j, {
+            guildId: k.id,
             formState: R,
-            updateFormState: Q
+            updateFormState: U
           })
         })
-      }), (0, i.jsx)("div", {
-        className: j.verticalRule
-      }), (0, i.jsxs)("div", {
-        className: j.clanContainer,
-        children: [(0, i.jsx)(h.x, {
-          clan: q,
-          className: j.profileCard,
-          prioritizedGameIds: k,
+      }), (0, a.jsx)("div", {
+        className: T.verticalRule
+      }), (0, a.jsxs)("div", {
+        className: T.clanContainer,
+        children: [(0, a.jsx)(g.x, {
+          clan: k,
+          className: T.profileCard,
+          prioritizedGameIds: F,
           expanded: !0,
-          isMember: V,
-          hasPendingJoinRequest: A,
+          isMember: L,
+          hasPendingJoinRequest: E,
           atMaxMemberCapacity: K
-        }), (0, i.jsxs)("div", {
-          className: j.applyButtonContainer,
-          children: [(0, i.jsxs)(r.zxk, {
+        }), (0, a.jsxs)("div", {
+          className: T.applyButtonContainer,
+          children: [(0, a.jsxs)(r.zxk, {
             type: "submit",
-            onClick: z ? void 0 : H,
-            submitting: Z,
+            onClick: A ? void 0 : Q,
+            submitting: M,
             fullWidth: !0,
             disabled: J || null == O,
-            innerClassName: j.applyButtonInner,
-            children: [K && (0, i.jsx)(r.aNP, {
+            innerClassName: T.applyButtonInner,
+            children: [K && (0, a.jsx)(r.aNP, {
               size: "custom",
               color: "white",
               width: 20,
               height: 20
-            }), !z && v.NW.string(v.t["1Qm829"]), et((e, t) => t && (0, i.jsx)(a.animated.div, {
+            }), !A && y.NW.string(y.t["1Qm829"]), et((e, t) => t && (0, a.jsx)(i.animated.div, {
               style: e,
-              className: j.successCheckmark,
-              children: (0, i.jsx)(r.sV5, {
+              className: T.successCheckmark,
+              children: (0, a.jsx)(r.sV5, {
                 size: "sm",
                 color: "currentColor",
                 "aria-hidden": !0
               })
             }))]
-          }), "" !== L && (0, i.jsx)(r.Text, {
+          }), "" !== Y && (0, a.jsx)(r.Text, {
             variant: "text-sm/normal",
             color: "text-danger",
-            children: L
+            children: Y
           })]
-        }), K && (0, i.jsxs)(i.Fragment, {
-          children: [(0, i.jsx)(r.Text, {
+        }), K && (0, a.jsxs)(a.Fragment, {
+          children: [(0, a.jsx)(r.Text, {
             variant: "text-xs/medium",
             color: "text-warning",
-            className: j.maxCapacityText,
-            children: v.NW.string(v.t.GNPXdX)
-          }), (0, i.jsx)("hr", {
-            className: j.separator
+            className: T.maxCapacityText,
+            children: y.NW.string(y.t.GNPXdX)
+          }), (0, a.jsx)("hr", {
+            className: T.separator
           })]
-        }), (0, i.jsx)(r.Text, {
+        }), (0, a.jsx)(r.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          className: j.noticeText,
-          children: v.NW.string(v.t.VjgH0d)
-        }), (0, i.jsx)(r.Text, {
+          className: T.noticeText,
+          children: y.NW.string(y.t.VjgH0d)
+        }), (0, a.jsx)(r.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          className: j.noticeText,
-          children: v.NW.string(v.t["+fPCTU"])
+          className: T.noticeText,
+          children: y.NW.string(y.t["+fPCTU"])
         })]
       })]
-    }), (0, i.jsx)("div", {
-      className: j.closeButtonContainer,
-      children: (0, i.jsx)(r.zxk, {
-        onClick: F,
+    }), (0, a.jsx)("div", {
+      className: T.closeButtonContainer,
+      children: (0, a.jsx)(r.zxk, {
+        onClick: N,
         look: r.iLD.OUTLINED,
         color: r.Ttl.PRIMARY,
-        children: v.NW.string(v.t.cpT0Cg)
+        children: y.NW.string(y.t.cpT0Cg)
       })
     })]
   })

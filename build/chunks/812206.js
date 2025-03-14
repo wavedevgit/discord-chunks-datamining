@@ -56,7 +56,7 @@ let d = [],
   },
   E = 10;
 
-function v(e) {
+function b(e) {
   let t = f[e.id];
   h[e.id] = Date.now();
   let n = e;
@@ -64,7 +64,7 @@ function v(e) {
   delete m[e.id]
 }
 
-function b() {
+function v() {
   f = {}, _ = {}, p = {}, h = {}, m = {}
 }
 
@@ -72,7 +72,7 @@ function y(e) {
   let {
     applications: t
   } = e;
-  for (let e of t) v(new a.ZP(e))
+  for (let e of t) b(new a.ZP(e))
 }
 
 function O(e) {
@@ -97,7 +97,7 @@ function S(e) {
 }
 
 function T(e) {
-  v(a.ZP.createFromServer(e))
+  b(a.ZP.createFromServer(e))
 }
 
 function N(e) {
@@ -144,14 +144,14 @@ function R(e) {
   let {
     libraryApplications: t
   } = e;
-  for (let e of t) v(a.ZP.createFromServer(e.application))
+  for (let e of t) b(a.ZP.createFromServer(e.application))
 }
 
 function P(e) {
   let {
     applications: t
   } = e;
-  for (let e of t) v(a.ZP.createFromServer(e))
+  for (let e of t) b(a.ZP.createFromServer(e))
 }
 
 function w(e) {
@@ -160,7 +160,7 @@ function w(e) {
   } = e;
   t.forEach(e => {
     e.items.forEach(e => {
-      v(a.ZP.createFromServer(e.application))
+      b(a.ZP.createFromServer(e.application))
     })
   })
 }
@@ -203,7 +203,7 @@ function M(e) {
   for (let {
       sku: e
     }
-    of t)(null == e ? void 0 : e.application) != null && (v(a.ZP.createFromServer(e.application)), n = !0);
+    of t)(null == e ? void 0 : e.application) != null && (b(a.ZP.createFromServer(e.application)), n = !0);
   return n
 }
 
@@ -212,7 +212,7 @@ function k(e) {
     guildId: t,
     applications: n
   } = e, r = [];
-  for (let e of n) r.push(e.id), v(a.ZP.createFromServer(e));
+  for (let e of n) r.push(e.id), b(a.ZP.createFromServer(e));
   _[t] = r
 }
 
@@ -223,7 +223,7 @@ function j(e) {
   for (let e of t) {
     var r;
     let t = null === (r = e.sku) || void 0 === r ? void 0 : r.application;
-    null == t || n.has(t.id) || v(a.ZP.createFromServer(t))
+    null == t || n.has(t.id) || b(a.ZP.createFromServer(t))
   }
   return n.size > 0
 }
@@ -234,7 +234,7 @@ function U(e) {
     payment: n
   } = e;
   if ((null === (t = n.sku) || void 0 === t ? void 0 : t.application) == null) return !1;
-  v(a.ZP.createFromServer(n.sku.application))
+  b(a.ZP.createFromServer(n.sku.application))
 }
 
 function G(e) {
@@ -243,7 +243,7 @@ function G(e) {
     giftCode: n
   } = e;
   if ((null === (t = n.store_listing) || void 0 === t ? void 0 : t.sku.application) == null) return !1;
-  v(a.ZP.createFromServer(n.store_listing.sku.application))
+  b(a.ZP.createFromServer(n.store_listing.sku.application))
 }
 
 function B(e) {
@@ -251,18 +251,18 @@ function B(e) {
     invite: t
   } = e;
   if (null == t.target_application) return !1;
-  v(a.ZP.createFromServer(t.target_application))
+  b(a.ZP.createFromServer(t.target_application))
 }
 
-function V(e) {
+function F(e) {
   let {
     storeListing: t
   } = e;
   if (null == t.sku.application) return !1;
-  v(a.ZP.createFromServer(t.sku.application))
+  b(a.ZP.createFromServer(t.sku.application))
 }
 
-function F(e) {
+function V(e) {
   let {
     messages: t
   } = e;
@@ -272,13 +272,13 @@ function F(e) {
 function Z(e) {
   var t;
   null === (t = e.attachments) || void 0 === t || t.forEach(e => {
-    null != e.application && v(a.ZP.createFromServer(e.application))
+    null != e.application && b(a.ZP.createFromServer(e.application))
   })
 }
 
 function H(e) {
   e.apps.forEach(e => {
-    v(a.ZP.createFromServer(e.application));
+    b(a.ZP.createFromServer(e.application));
     let t = e.application.bot;
     null != t && N({
       userId: t.id,
@@ -289,7 +289,7 @@ function H(e) {
 
 function W(e) {
   e.items.forEach(e => {
-    null != e.application && v(a.ZP.createFromServer(e.application))
+    null != e.application && b(a.ZP.createFromServer(e.application))
   })
 }
 class Y extends(r = i.ZP.PersistedStore) {
@@ -351,7 +351,7 @@ class Y extends(r = i.ZP.PersistedStore) {
 }
 s(Y, "displayName", "ApplicationStore"), s(Y, "persistKey", "ApplicationStore");
 let K = new Y(o.Z, {
-  LOGOUT: b,
+  LOGOUT: v,
   OVERLAY_INITIALIZE: y,
   APPLICATION_FETCH: O,
   APPLICATION_FETCH_SUCCESS: S,
@@ -369,8 +369,8 @@ let K = new Y(o.Z, {
   INVITE_RESOLVE_SUCCESS: B,
   GIFT_CODE_RESOLVE_SUCCESS: G,
   LIBRARY_FETCH_SUCCESS: R,
-  STORE_LISTING_FETCH_SUCCESS: V,
-  LOAD_MESSAGES_SUCCESS: F,
+  STORE_LISTING_FETCH_SUCCESS: F,
+  LOAD_MESSAGES_SUCCESS: V,
   APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_SUCCESS: w,
   USER_PROFILE_FETCH_SUCCESS: D,
   APP_DM_OPEN: L,

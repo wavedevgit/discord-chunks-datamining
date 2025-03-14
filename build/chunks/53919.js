@@ -15,8 +15,8 @@ var r = n(762378),
   m = c(r),
   g = c(i),
   E = c(o),
-  v = c(a),
-  b = c(s),
+  b = c(a),
+  v = c(s),
   y = l;
 (r && y(new r(new ArrayBuffer(1))) != h || i && y(new i) != u || o && y(o.resolve()) != f || a && y(new a) != _ || s && y(new s) != p) && (y = function(e) {
   var t = l(e),
@@ -29,9 +29,9 @@ var r = n(762378),
       return u;
     case E:
       return f;
-    case v:
-      return _;
     case b:
+      return _;
+    case v:
       return p
   }
   return t

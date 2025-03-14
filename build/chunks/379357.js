@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   FO: () => E,
-  YC: () => v,
+  YC: () => b,
   rv: () => g
 }), n(47120), n(566702);
 var r = n(726542),
@@ -52,7 +52,7 @@ function g(e) {
   } = (0, d.Z)(n), {
     largeImage: s,
     smallImage: c
-  } = v(i, o), {
+  } = b(i, o), {
     largeImage: u
   } = E(i, null != a ? a : o), {
     coverImageUrl: f
@@ -78,7 +78,7 @@ function E(e, t) {
   let {
     largeImage: n,
     smallImage: i
-  } = v(e, t);
+  } = b(e, t);
   if (null != n) return {
     largeImage: n,
     smallImage: i
@@ -107,7 +107,7 @@ function E(e, t) {
   }
 }
 
-function v(e, t) {
+function b(e, t) {
   var n, r, o, a, l, u;
   let d = (0, s.q)(null == e ? void 0 : e.application_id);
   if (null == e) return {

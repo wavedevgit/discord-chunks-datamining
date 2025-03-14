@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A2: () => v,
-  BU: () => b,
+  A2: () => b,
+  BU: () => v,
   Pz: () => p,
   Qf: () => S,
   X_: () => h,
@@ -71,14 +71,14 @@ async function E() {
     rejectWithError: !1
   })).body.map(g)
 }
-async function v(e) {
+async function b(e) {
   return g((await r.tn.post({
     url: f.ANM.CLAIM_OUTBOUND_PROMOTION_CODE(e),
     rejectWithError: !1
   })).body)
 }
 
-function b(e, t) {
+function v(e, t) {
   return null != t.outboundRedemptionUrlFormat ? t.outboundRedemptionUrlFormat.replace(_, encodeURIComponent(e)) : t.outboundRedemptionPageLink
 }
 

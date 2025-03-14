@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   V: () => y,
-  e: () => v
+  e: () => b
 }), n(47120);
 var r, i = n(200651);
 n(192379);
@@ -39,7 +39,7 @@ class g extends(r = o.ZP.PersistedStore) {
 }
 h(g, "displayName", "PTOStore"), h(g, "persistKey", "PTOStore");
 let E = new g(s.Z, {}),
-  v = e => (0, o.e7)([u.ZP, f.default, E], () => {
+  b = e => (0, o.e7)([u.ZP, f.default, E], () => {
     let t = f.default.getCurrentUser();
     if (null == t || !t.isStaff() || !e.isDM()) return !1;
     let n = f.default.getUser(e.getRecipientId());
@@ -47,7 +47,7 @@ let E = new g(s.Z, {}),
     let r = u.ZP.getNicknames(n.id).some(e => e.endsWith("[PTO]") || e.endsWith("[OOO]"));
     return r ? !E.hasId(n.id) && r : (m.delete(n.id) && E.emitChange(), !1)
   }),
-  b = () => {
+  v = () => {
     let e = d.Z.getChannelId();
     if (null == e) return;
     let t = c.Z.getChannel(e);
@@ -59,6 +59,6 @@ let E = new g(s.Z, {}),
       variant: "text-sm/medium",
       children: _.NW.string(_.t["2UvR1N"])
     }), (0, i.jsx)(l.B, {
-      onClick: b
+      onClick: v
     })]
   })

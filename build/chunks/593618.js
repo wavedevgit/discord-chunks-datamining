@@ -20,8 +20,8 @@ var r = n(200651),
   m = n(666188),
   g = n(372769),
   E = n(523751),
-  v = n(246364),
-  b = n(746916),
+  b = n(246364),
+  v = n(746916),
   y = n(965638),
   O = n(160404),
   I = n(777861),
@@ -64,7 +64,7 @@ function G(e) {
 
 function B(e, t) {
   if (null == e) return {};
-  var n, r, i = V(e, t);
+  var n, r, i = F(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -72,7 +72,7 @@ function B(e, t) {
   return i
 }
 
-function V(e, t) {
+function F(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -80,7 +80,7 @@ function V(e, t) {
   return i
 }
 
-function F(e) {
+function V(e) {
   let t = e.id,
     n = (0, c.Wu)([R.ZP, A.Z], () => [...R.ZP.getChannels(t)[R.Zb].filter(e => {
       let {
@@ -134,21 +134,21 @@ function F(e) {
       let e = d.ZP.getEmbeddedActivitiesForGuild(t).flatMap(e => Array.from(e.userIds));
       return u ? (0, _._j)(e, s) : e
     }, [t, u, s]),
-    v = (0, c.Wu)([D.default], () => {
+    b = (0, c.Wu)([D.default], () => {
       let e = E.map(e => D.default.getUser(e));
       return u ? (0, _.dq)(e) : e
     }, [u, E]),
-    b = (0, c.Wu)([D.default], () => g.map(e => D.default.getUser(e)), [g]),
+    v = (0, c.Wu)([D.default], () => g.map(e => D.default.getUser(e)), [g]),
     y = f.filter(e => !g.includes(e.id) && !E.includes(e.id)),
     O = u ? (0, _.dq)(y) : y,
-    I = b.filter(e => null != e && !E.includes(e.id)),
-    w = h.length > 0 || y.length > 0 || I.length > 0 || v.length > 0;
+    I = v.filter(e => null != e && !E.includes(e.id)),
+    w = h.length > 0 || y.length > 0 || I.length > 0 || b.length > 0;
   return {
     voiceUsersToShow: O,
     stageSpeakers: h,
     numStageListeners: m,
     streamUsersToShow: I,
-    embeddedActivitiesUsers: v,
+    embeddedActivitiesUsers: b,
     hasActivity: w
   }
 }
@@ -218,7 +218,7 @@ function Y(e) {
     numStageListeners: s,
     streamUsersToShow: l,
     embeddedActivitiesUsers: d
-  } = F(t), f = Z(u.gj8, i, n), _ = H(n, o, s), p = Z(u.hGI, l, n), h = Z(u.nG3, d, n), {
+  } = V(t), f = Z(u.gj8, i, n), _ = H(n, o, s), p = Z(u.hGI, l, n), h = Z(u.nG3, d, n), {
     isMuted: m,
     muteConfig: g
   } = (0, c.cj)([w.ZP], () => ({
@@ -237,11 +237,11 @@ function Y(e) {
 
 function K(e) {
   switch (e) {
-    case v.wB.SUBMITTED:
+    case b.wB.SUBMITTED:
       return M.NW.string(M.t["9KFC9/"]);
-    case v.wB.REJECTED:
+    case b.wB.REJECTED:
       return M.NW.string(M.t["TQY/RU"]);
-    case v.wB.APPROVED:
+    case b.wB.APPROVED:
       return M.NW.string(M.t.WXHcq6);
     default:
       return M.NW.string(M.t.fjHFCw)
@@ -264,7 +264,7 @@ function q(e) {
   let {
     guild: t,
     includeActivity: n = !0
-  } = e, i = (0, m.Z)(t), o = (0, b.E)(t), s = null != o ? (0, r.jsx)(z, {
+  } = e, i = (0, m.Z)(t), o = (0, v.E)(t), s = null != o ? (0, r.jsx)(z, {
     guildJoinRequestStatus: o
   }) : null, l = n ? (0, r.jsx)(Y, {
     guild: t

@@ -17,8 +17,8 @@ var i = n(120356),
   p = n(993413),
   h = n(921944),
   f = n(486324),
-  b = n(388032),
-  x = n(50719);
+  x = n(388032),
+  b = n(50719);
 let N = [{
   name: "gif",
   extensions: ["gif"]
@@ -48,32 +48,32 @@ function _(e) {
     className: C,
     title: _,
     titleIcon: D ? (0, r.jsx)(m.Z, {
-      className: x.newBadge
+      className: b.newBadge
     }) : void 0,
-    description: y ? b.NW.format(b.t["+CyJu7"], {
+    description: y ? x.NW.format(x.t["+CyJu7"], {
       recentAvatarsLimit: w
     }) : void 0,
     errors: n,
     disabled: O,
     forcedDivider: S,
     children: (0, r.jsxs)("div", {
-      className: x.buttonsContainer,
+      className: b.buttonsContainer,
       children: [(0, r.jsx)(I, {
         className: s()({
-          [x.buttonHighlighted]: T
+          [b.buttonHighlighted]: T
         }),
         size: l.zxk.Sizes.SMALL,
         onClick: () => {
           R(h.L.TAKE_ACTION), (0, g.$r)(f.pC.AVATAR, j, v, v ? N : void 0)
         },
-        children: null != E ? E : b.NW.string(b.t["4OynCA"])
+        children: null != E ? E : x.NW.string(x.t["4OynCA"])
       }), t && (0, r.jsx)(l.zxk, {
-        className: x.removeButton,
+        className: b.removeButton,
         color: l.zxk.Colors.PRIMARY,
         look: l.zxk.Looks.LINK,
         size: l.zxk.Sizes.SMALL,
         onClick: () => i(null),
-        children: null != j ? b.NW.string(b.t.TDjKDg) : b.NW.string(b.t.twB3f3)
+        children: null != j ? x.NW.string(x.t.TDjKDg) : x.NW.string(x.t.twB3f3)
       })]
     })
   })

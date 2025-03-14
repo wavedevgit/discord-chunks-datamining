@@ -18,7 +18,7 @@ var r, i, o, a, s = n(512722),
   g = n(981631),
   E = n(413135).Buffer;
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,14 +27,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -146,7 +146,7 @@ let j = {
       let n = 0;
       this.getDiscordUtils().setObservedGamesCallback(e.map(e => {
         let t = ++n;
-        return null != e.id && (C[t] = e.id), O(b({}, e), {
+        return null != e.id && (C[t] = e.id), O(v({}, e), {
           cmdline: e.cmdLine,
           id: t
         })
@@ -160,7 +160,7 @@ let j = {
     this.getDiscordUtils().clearCandidateGamesCallback()
   },
   setGameCandidateOverrides(e) {
-    this.getDiscordUtils().setGameCandidateOverrides(e.map(e => O(b({}, e), {
+    this.getDiscordUtils().setGameCandidateOverrides(e.map(e => O(v({}, e), {
       gameId: e.id,
       gameName: e.name
     })))
@@ -476,7 +476,7 @@ let j = {
       token: a,
       chunkInterval: s,
       contentType: l
-    } = b({
+    } = v({
       maxBps: 8e3,
       chunkInterval: 50,
       contentType: "application/json"
@@ -503,7 +503,7 @@ let j = {
     let t = this.getCrashReporterMetadata(),
       n = I.app.getReleaseChannel(),
       r = null == t ? void 0 : t.sentry;
-    return this.getDiscordUtils().submitLiveCrashReport(n, b({}, r, e))
+    return this.getDiscordUtils().submitLiveCrashReport(n, v({}, r, e))
   },
   crash(e) {
     let t = this.getDiscordUtils().crash;

@@ -6,7 +6,7 @@ n.d(t, {
   H9: () => y,
   Kd: () => C,
   d2: () => A,
-  dU: () => b
+  dU: () => v
 }), n(47120), n(757143), n(301563), n(411104), n(653041), n(566702);
 var r = n(921738),
   i = n.n(r),
@@ -61,9 +61,9 @@ m["223"] = "`", Object.freeze(m);
 let g = Object.freeze(a().invert(u.REU)),
   E = a().invert(u.iC$);
 E["223"] = "`", Object.freeze(E);
-let v = a().invert(null != h ? h : {});
+let b = a().invert(null != h ? h : {});
 
-function b() {
+function v() {
   return (0, c.isLinux)() ? u.CgE.LINUX : (0, c.isMac)() ? u.CgE.MACOS : (0, c.isWindows)() ? u.CgE.WINDOWS : u.CgE.BROWSER
 }
 
@@ -79,12 +79,12 @@ function y(e) {
     case u.CgE.BROWSER:
       return i()(t);
     default:
-      return v["" + t]
+      return b["" + t]
   }
 }
 
 function O(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : b(),
+  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : v(),
     n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : u.MoX.KEYBOARD_KEY;
   switch (n) {
     case u.MoX.KEYBOARD_KEY:
@@ -108,7 +108,7 @@ function O(e) {
     default:
       throw Error("Unrecognized DeviceType ".concat(n, "."))
   }
-}(0, c.isMac)() || (v["223"] = "`"), Object.freeze(v);
+}(0, c.isMac)() || (b["223"] = "`"), Object.freeze(b);
 let I = [
     ["META", "⌘"],
     ["RIGHT META", "RIGHT ⌘"],
@@ -168,7 +168,7 @@ function A(e) {
 }
 
 function C(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : b(),
+  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : v(),
     n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : u.MoX.KEYBOARD_KEY;
   return e.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, s.Z.modKey).split("+").map(e => e.trim().replace("plus", "+")).reduce((e, r) => {
     let i = O(T(r), t, n);

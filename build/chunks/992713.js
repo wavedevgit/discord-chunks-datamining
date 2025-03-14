@@ -27,7 +27,7 @@ function m(e, t, n) {
 }
 let g = 2e3,
   E = new c.Z("EntityVersionsManager");
-class v extends s.Z {
+class b extends s.Z {
   _initialize() {
     a.Z.subscribe("CONNECTION_OPEN", y)
   }
@@ -37,12 +37,12 @@ class v extends s.Z {
   constructor(...e) {
     super(...e), m(this, "actions", {
       GUILD_CREATE: O,
-      DELETED_ENTITY_IDS: b
+      DELETED_ENTITY_IDS: v
     })
   }
 }
 
-function b(e) {
+function v(e) {
   var t;
   let n = null === (t = _.Z.getGuild(e.guild_id)) || void 0 === t ? void 0 : t.name;
   E.fileOnly("received deleted guild entities (id: ".concat(e.guild_id, ", name: ").concat(n, ")")), o.ZP.Emitter.batched(() => {
@@ -129,4 +129,4 @@ function R(e, t) {
     stickers: i
   })
 }
-let P = new v
+let P = new b

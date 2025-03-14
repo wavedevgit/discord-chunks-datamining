@@ -104,7 +104,7 @@ function E(e) {
   })
 }
 
-function v(e) {
+function b(e) {
   let {
     applicationId: t,
     guildId: n,
@@ -118,7 +118,7 @@ function v(e) {
     [i]: 3
   })
 }
-class b extends(r = a.ZP.Store) {
+class v extends(r = a.ZP.Store) {
   getSimilarApplications(e) {
     let {
       applicationId: t,
@@ -146,9 +146,9 @@ class b extends(r = a.ZP.Store) {
     })]
   }
 }
-l(b, "displayName", "ApplicationDirectorySimilarApplicationsStore");
-let y = new b(s.Z, {
+l(v, "displayName", "ApplicationDirectorySimilarApplicationsStore");
+let y = new v(s.Z, {
   APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS: g,
   APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_SUCCESS: E,
-  APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_FAILURE: v
+  APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_FAILURE: b
 })

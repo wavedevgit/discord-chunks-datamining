@@ -182,18 +182,18 @@ function* _(e) {
   }
   if (null == p) return;
   let E = o.bN.range(e, p),
-    [v, b] = o.M8.edges(E),
+    [b, v] = o.M8.edges(E),
     y = o.bN.richValue(e),
     O = m ? -1 : 1,
-    I = null !== (r = null === (t = v.path) || void 0 === t ? void 0 : t[0]) && void 0 !== r ? r : 0,
-    S = null !== (i = null === (n = b.path) || void 0 === n ? void 0 : n[0]) && void 0 !== i ? i : y.length - 1,
+    I = null !== (r = null === (t = b.path) || void 0 === t ? void 0 : t[0]) && void 0 !== r ? r : 0,
+    S = null !== (i = null === (n = v.path) || void 0 === n ? void 0 : n[0]) && void 0 !== i ? i : y.length - 1,
     T = m ? S : I,
     N = m ? I : S,
     A = T;
   for (;;) {
     let t = y[A],
-      n = null !== (u = A === I ? null === (a = v.path) || void 0 === a ? void 0 : a[1] : null) && void 0 !== u ? u : 0,
-      r = null !== (d = A === S ? null === (l = b.path) || void 0 === l ? void 0 : l[1] : null) && void 0 !== d ? d : t.children.length - 1,
+      n = null !== (u = A === I ? null === (a = b.path) || void 0 === a ? void 0 : a[1] : null) && void 0 !== u ? u : 0,
+      r = null !== (d = A === S ? null === (l = v.path) || void 0 === l ? void 0 : l[1] : null) && void 0 !== d ? d : t.children.length - 1,
       i = m ? r : n,
       p = m ? n : r,
       h = i;
@@ -201,7 +201,7 @@ function* _(e) {
       let n, r;
       let i = t.children[h],
         a = [A, h];
-      if (n = o.C0.equals(a, v.path) || o.C0.isAncestor(a, v.path) ? !m && o.bN.isEnd(e, v, a) ? null : v : o.bN.start(e, a), r = o.C0.equals(a, b.path) || o.C0.isAncestor(a, b.path) ? m && o.bN.isStart(e, b, a) ? null : b : o.bN.end(e, a), null != n && null != r) {
+      if (n = o.C0.equals(a, b.path) || o.C0.isAncestor(a, b.path) ? !m && o.bN.isEnd(e, b, a) ? null : b : o.bN.start(e, a), r = o.C0.equals(a, v.path) || o.C0.isAncestor(a, v.path) ? m && o.bN.isStart(e, v, a) ? null : v : o.bN.end(e, a), null != n && null != r) {
         if (o.LC.isText(i) && 0 === i.text.length) {
           let e = {
             path: a,

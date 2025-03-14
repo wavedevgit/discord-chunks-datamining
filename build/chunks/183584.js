@@ -1,17 +1,17 @@
-/** Chunk was on 7755 **/
+/** Chunk was on 58173 **/
 n.d(t, {
-  IN: () => a,
-  oZ: () => s
+  IN: () => s,
+  oZ: () => a
 }), n(200651), n(192379);
 var r = n(570140);
 n(238246), n(788983), n(592125), n(19780);
 var l = n(237997);
 n(998502), n(487029);
-var i = n(710111);
+var o = n(710111);
 n(981631), n(388032);
-let o = {
-  width: i.FW.width,
-  height: i.FW.height,
+let i = {
+  width: o.FW.width,
+  height: o.FW.height,
   resizable: !1,
   movable: !1,
   alwaysOnTop: !0,
@@ -24,7 +24,7 @@ let o = {
   titleBarStyle: null
 };
 
-function a(e, t) {
+function s(e, t) {
   r.Z.dispatch({
     type: "OVERLAY_SET_INPUT_LOCKED",
     locked: !1,
@@ -37,7 +37,7 @@ function a(e, t) {
   })
 }
 
-function s(e) {
+function a(e) {
   r.Z.dispatch({
     type: "SOUNDBOARD_SET_OVERLAY_ENABLED",
     pid: e,
@@ -48,4 +48,4 @@ function s(e) {
     pid: e
   })
 }
-i.FW.padding, o.width, o.height
+o.FW.padding, i.width, i.height

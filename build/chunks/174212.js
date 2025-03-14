@@ -92,7 +92,7 @@ function E(e) {
     }), h.set(n, new Date), a.optionNameToNonce.set(o, n), a.lastErrored) return a.lastErrored = !1, !0
 }
 
-function v(e) {
+function b(e) {
   var t, n;
   let {
     choices: r,
@@ -117,7 +117,7 @@ function v(e) {
   return null == p.optionNameToAutocompleteQueries.get(o.name) && p.optionNameToAutocompleteQueries.set(o.name, new Map), null === (t = p.optionNameToAutocompleteQueries.get(o.name)) || void 0 === t || t.set(o.query, s), p.optionNameToLastQuery.get(o.name) === o.query && (p.lastErrored = !1, p.optionNameToLastResults.set(o.name, s)), p.lastResponseNonce = i, !0
 }
 
-function b(e) {
+function v(e) {
   let {
     nonce: t
   } = e;
@@ -178,8 +178,8 @@ let T = new S(o.Z, {
   LOGOUT: g,
   CHANNEL_SELECT: g,
   APPLICATION_COMMAND_AUTOCOMPLETE_REQUEST: E,
-  APPLICATION_COMMAND_AUTOCOMPLETE_RESPONSE: v,
-  INTERACTION_FAILURE: b,
+  APPLICATION_COMMAND_AUTOCOMPLETE_RESPONSE: b,
+  INTERACTION_FAILURE: v,
   APPLICATION_COMMAND_SET_ACTIVE_COMMAND: y,
   APP_LAUNCHER_SET_ACTIVE_COMMAND: y,
   APPLICATION_COMMAND_UPDATE_CHANNEL_STATE: O

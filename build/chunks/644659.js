@@ -22,24 +22,24 @@ var r, i, o, a = n(197047),
     }
   };
 if (a || d.state) {
-  var v = d.state || (d.state = new m);
-  v.get = v.get, v.has = v.has, v.set = v.set, r = function(e, t) {
-    if (v.has(e)) throw h(p);
-    return t.facade = e, v.set(e, t), t
+  var b = d.state || (d.state = new m);
+  b.get = b.get, b.has = b.has, b.set = b.set, r = function(e, t) {
+    if (b.has(e)) throw h(p);
+    return t.facade = e, b.set(e, t), t
   }, i = function(e) {
-    return v.get(e) || {}
+    return b.get(e) || {}
   }, o = function(e) {
-    return v.has(e)
+    return b.has(e)
   }
 } else {
-  var b = f("state");
-  _[b] = !0, r = function(e, t) {
-    if (u(e, b)) throw h(p);
-    return t.facade = e, c(e, b, t), t
+  var v = f("state");
+  _[v] = !0, r = function(e, t) {
+    if (u(e, v)) throw h(p);
+    return t.facade = e, c(e, v, t), t
   }, i = function(e) {
-    return u(e, b) ? e[b] : {}
+    return u(e, v) ? e[v] : {}
   }, o = function(e) {
-    return u(e, b)
+    return u(e, v)
   }
 }
 e.exports = {

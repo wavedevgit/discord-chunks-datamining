@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(100527),
   g = n(367907),
   E = n(358221),
-  v = n(414910),
-  b = n(221888),
+  b = n(414910),
+  v = n(221888),
   y = n(522651),
   O = n(933557),
   I = n(569545),
@@ -41,8 +41,8 @@ var r = n(200651),
   U = n(314897),
   G = n(131951),
   B = n(699516),
-  V = n(594174),
-  F = n(248402),
+  F = n(594174),
+  V = n(248402),
   Z = n(33039),
   H = n(451478),
   W = n(626135),
@@ -211,7 +211,7 @@ class eu extends i.PureComponent {
       participantOnScreen: n,
       isVideoEnabled: i,
       width: o
-    } = this.props, a = (0, O.F6)(e, V.default, B.Z), s = (null == n ? void 0 : n.id) === U.default.getId() && i, l = this.renderStreamState(), c = null;
+    } = this.props, a = (0, O.F6)(e, F.default, B.Z), s = (null == n ? void 0 : n.id) === U.default.getId() && i, l = this.renderStreamState(), c = null;
     return (null == n ? void 0 : n.type) !== er.fO.ACTIVITY && (null != l ? c = l : ((null == n ? void 0 : n.type) === er.fO.USER || (null == n ? void 0 : n.type) === er.fO.STREAM) && (c = (0, r.jsx)(z.Z, {
       paused: this.streamerPaused,
       streamId: t,
@@ -319,7 +319,7 @@ class eu extends i.PureComponent {
         channel: t
       } = this.props;
       return a()((0, er._5)(e) || (null == e ? void 0 : e.type) === er.fO.ACTIVITY, "Cannot render participants for participant type ".concat(null == e ? void 0 : e.type)), (0, r.jsx)(w.Z, {
-        children: (0, r.jsx)(b.Z, {
+        children: (0, r.jsx)(v.Z, {
           channelId: t.id,
           guildId: t.getGuildId(),
           className: ei.rightTrayIcon,
@@ -348,10 +348,10 @@ class eu extends i.PureComponent {
     })
   }
 }
-let ed = c.ZP.connectStores([G.Z, F.Z, E.Z, U.default, j.Z, Z.Z, H.Z], e => {
+let ed = c.ZP.connectStores([G.Z, V.Z, E.Z, U.default, j.Z, Z.Z, H.Z], e => {
   let {
     channel: t
-  } = e, n = F.Z.getSpeaker(t.id), r = E.Z.getParticipant(t.id, n), i = l()(G.Z.getVideoDevices()).values().first(), o = null == i || i.disabled, a = null != r && r.type !== er.fO.ACTIVITY && r.type !== er.fO.HIDDEN_STREAM ? Z.Z.getStreamId(r.user.id, t.getGuildId(), (0, v.Z)(r.type)) : null, s = !1 === o, c = !o && G.Z.isVideoEnabled(), u = (0, S.Z)(G.Z), d = U.default.getId(), f = j.Z.getCurrentUserActiveStream(), _ = !1;
+  } = e, n = V.Z.getSpeaker(t.id), r = E.Z.getParticipant(t.id, n), i = l()(G.Z.getVideoDevices()).values().first(), o = null == i || i.disabled, a = null != r && r.type !== er.fO.ACTIVITY && r.type !== er.fO.HIDDEN_STREAM ? Z.Z.getStreamId(r.user.id, t.getGuildId(), (0, b.Z)(r.type)) : null, s = !1 === o, c = !o && G.Z.isVideoEnabled(), u = (0, S.Z)(G.Z), d = U.default.getId(), f = j.Z.getCurrentUserActiveStream(), _ = !1;
   return {
     channel: t,
     streamId: a,

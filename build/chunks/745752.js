@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   I1: () => O,
-  eM: () => b,
+  eM: () => v,
   rK: () => y,
-  rj: () => v
+  rj: () => b
 }), n(789020);
 var r = n(544891),
   i = n(570140),
@@ -58,14 +58,14 @@ function E(e, t) {
   }), e
 }
 
-function v(e) {
+function b(e) {
   c.default.track(_.rMx.GUILD_ONBOARDING_LOADED, E(m({}, (0, o.hH)(e)), {
     has_new_prompts: !1,
     number_of_prompts: 0
   }))
 }
 
-function b(e) {
+function v(e) {
   return i.Z.dispatch({
     type: "GUILD_ONBOARDING_PROMPTS_FETCH_START",
     guildId: e
@@ -94,7 +94,7 @@ async function y(e) {
   let c = d.Z.shouldFetchPrompts(e),
     f = d.Z.getOnboardingPrompts(e);
   if (!c && f.length > 0) return f.every(e => !e.inOnboarding) ? S(e) : i || O(e), Promise.resolve();
-  let h = await b(e);
+  let h = await v(e);
   return Array.isArray(h) && h.every(e => !e.inOnboarding) ? (S(e), Promise.resolve()) : (i || O(e), h)
 }
 

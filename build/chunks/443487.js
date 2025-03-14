@@ -1,8 +1,8 @@
-/** Chunk was on 69423 **/
+/** Chunk was on 98697 **/
 n.d(t, {
-  F9: () => O,
-  Zb: () => h,
-  cA: () => m,
+  F9: () => g,
+  Zb: () => m,
+  cA: () => h,
   e$: () => b,
   ll: () => N
 });
@@ -21,14 +21,14 @@ var i = n(120356),
   E = n(388032),
   f = n(563504);
 
-function m() {
+function h() {
   return (0, r.jsx)("div", {
     className: f.container,
     "aria-hidden": !0
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     children: t,
     selected: n
@@ -51,7 +51,7 @@ function b(e) {
   })
 }
 
-function g(e) {
+function O(e) {
   let {
     users: t,
     guildId: n,
@@ -80,33 +80,33 @@ function g(e) {
   })
 }
 
-function O(e) {
+function g(e) {
   let {
     guildId: t,
     channelId: n,
     entry: i,
     maxAvatars: o = 3
-  } = e, s = i.author_id, m = (0, l.e7)([d.default], () => d.default.getUser(s)), {
-    displayParticipants: h,
+  } = e, s = i.author_id, h = (0, l.e7)([d.default], () => d.default.getUser(s)), {
+    displayParticipants: m,
     participant1: b,
-    participant2: O,
+    participant2: g,
     numOtherParticipants: N
-  } = (0, p.Z)(i, o), I = (0, l.e7)([c.ZP], () => c.ZP.getMember(t, s)), C = (0, l.e7)([u.Z], () => {
+  } = (0, p.Z)(i, o), I = (0, l.e7)([c.ZP], () => c.ZP.getMember(t, s)), T = (0, l.e7)([u.Z], () => {
     var e;
     return (null == I ? void 0 : I.colorRoleId) != null ? null === (e = u.Z.getRole(t, I.colorRoleId)) || void 0 === e ? void 0 : e.name : void 0
   }, [t, I]);
-  if (null == m) return null;
-  let T = null == I ? void 0 : I.colorString,
-    S = _.ZP.getName(t, n, m);
+  if (null == h) return null;
+  let C = null == I ? void 0 : I.colorString,
+    S = _.ZP.getName(t, n, h);
   return (0, r.jsxs)("div", {
     className: f.userSection,
-    children: [(0, r.jsx)(g, {
-      users: h,
+    children: [(0, r.jsx)(O, {
+      users: m,
       guildId: t,
       "aria-hidden": !0
     }), (0, r.jsx)(a.PUh, {
-      color: null != T ? T : void 0,
-      roleName: C,
+      color: null != C ? C : void 0,
+      roleName: T,
       name: S,
       className: f.userName,
       "aria-hidden": !0
@@ -122,7 +122,7 @@ function O(e) {
     }) : null, (0, r.jsx)(a.nn4, {
       children: E.NW.format(E.t.rH95Gh, {
         user0: _.ZP.getName(t, n, b),
-        user1: _.ZP.getName(t, n, O),
+        user1: _.ZP.getName(t, n, g),
         countOthers: N,
         name0Hook: (e, t) => (0, r.jsx)("span", {
           children: e

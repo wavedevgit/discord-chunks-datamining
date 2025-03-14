@@ -76,10 +76,10 @@ function E(e) {
   d[t] = n
 }
 
-function v() {
+function b() {
   d = {}
 }
-class b extends(r = i.ZP.Store) {
+class v extends(r = i.ZP.Store) {
   shouldShowOnboarding(e) {
     return !!(e !== a.ME && e !== a.I_8 && c(u[e]))
   }
@@ -94,8 +94,8 @@ class b extends(r = i.ZP.Store) {
     return null !== (t = d[e]) && void 0 !== t ? t : "cover"
   }
 }
-s(b, "displayName", "GuildOnboardingStore");
-let y = new b(o.Z, {
+s(v, "displayName", "GuildOnboardingStore");
+let y = new v(o.Z, {
   LOGOUT: f,
   GUILD_DELETE: g,
   GUILD_ONBOARDING_START: _,
@@ -103,5 +103,5 @@ let y = new b(o.Z, {
   GUILD_ONBOARDING_PROMPTS_FETCH_FAILURE: h,
   GUILD_ONBOARDING_COMPLETE: m,
   GUILD_ONBOARDING_SET_STEP: E,
-  CONNECTION_OPEN: v
+  CONNECTION_OPEN: b
 })

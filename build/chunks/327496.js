@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  L: () => b
+  L: () => v
 }), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -75,14 +75,14 @@ function E(e) {
   return null !== (t = g[e.length - 1]) && void 0 !== t ? t : g[g.length - 1]
 }
 
-function v(e, t) {
+function b(e, t) {
   return a()({
     [u.childWrapper]: !0,
     [u.childWrapperNoHoverBg]: "always" === e,
     [u.childWrapperHoverScale]: "on-hover" === e && t
   })
 }
-let b = e => {
+let v = e => {
   let t, n;
   var {
     backgroundStyle: o = "always",
@@ -90,7 +90,7 @@ let b = e => {
     icon: _,
     name: m,
     ariaLabel: g,
-    className: b,
+    className: v,
     style: y,
     to: O,
     onClick: I,
@@ -113,7 +113,7 @@ let b = e => {
     C = (0, l.dQu)(l.TVs.modules.guildbar.AVATAR_SIZE);
   return (0, r.jsxs)(l.P3F, p(f({}, T), {
     onClick: A,
-    className: a()(b, u.wrapper, {
+    className: a()(v, u.wrapper, {
       [u.selected]: S
     }),
     "aria-label": null != g && "" !== g ? g : null != m ? m : "",
@@ -124,7 +124,7 @@ let b = e => {
       enabled: !1
     },
     children: [null != t ? (0, r.jsx)("div", {
-      className: a()(v(o, !1), u.acronym),
+      className: a()(b(o, !1), u.acronym),
       "aria-hidden": !0,
       children: t
     }) : null, null != _ ? (0, r.jsx)("img", {
@@ -135,7 +135,7 @@ let b = e => {
       height: C,
       "aria-hidden": !0
     }) : null, null != d ? (0, r.jsx)("div", {
-      className: v(o, !0),
+      className: b(o, !0),
       children: d
     }) : null]
   }))

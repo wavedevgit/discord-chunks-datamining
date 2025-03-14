@@ -61,8 +61,8 @@ function E(e) {
     color: p,
     guildId: m,
     channelId: E,
-    onBlock: v,
-    onIgnore: b,
+    onBlock: b,
+    onIgnore: v,
     onUnblock: y,
     location: O = "ContextMenu",
     appContext: I = f.IlC.APP
@@ -100,8 +100,8 @@ function E(e) {
           user: t,
           guildId: m,
           channelId: E,
-          onBlock: v,
-          onIgnore: b,
+          onBlock: b,
+          onIgnore: v,
           location: O
         }))
       }, {

@@ -49,7 +49,7 @@ var p = n(549639),
       }
     }
   },
-  v = function e(t, n) {
+  b = function e(t, n) {
     return g(t, n, e) || {
       start: function(e) {
         var r = t,
@@ -61,7 +61,7 @@ var p = n(549639),
       }
     }
   },
-  b = function e(t, n) {
+  v = function e(t, n) {
     return g(t, n, e) || {
       start: function(e) {
         var r = t,
@@ -126,7 +126,7 @@ var p = n(549639),
     return o
   },
   I = function(e) {
-    return v(new a(0), {
+    return b(new a(0), {
       toValue: 0,
       delay: e,
       duration: 0
@@ -155,8 +155,8 @@ var p = n(549639),
 e.exports = {
   Value: a,
   ValueXY: s,
-  decay: b,
-  timing: v,
+  decay: v,
+  timing: b,
   spring: E,
   add: function(e, t) {
     return new l(e, t)

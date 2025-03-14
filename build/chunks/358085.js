@@ -2,8 +2,8 @@
 "use strict";
 n.r(t), n.d(t, {
   PlatformTypes: () => r,
-  getNativePlatform: () => v,
-  getOS: () => b,
+  getNativePlatform: () => b,
+  getOS: () => v,
   getPlatform: () => g,
   getPlatformName: () => E,
   isAndroid: () => h,
@@ -75,7 +75,7 @@ function E() {
   return a
 }
 
-function v() {
+function b() {
   switch (a) {
     case "ios":
     case "android":
@@ -85,7 +85,7 @@ function v() {
   }
 }
 
-function b() {
+function v() {
   let {
     userAgent: e
   } = window.navigator;

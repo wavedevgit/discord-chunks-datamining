@@ -20,8 +20,8 @@ var r = n(200651),
   m = n(697426),
   g = n(409673),
   E = n(695346),
-  v = n(592125),
-  b = n(388032),
+  b = n(592125),
+  v = n(388032),
   y = n(95860);
 
 function O(e, t, n) {
@@ -105,7 +105,7 @@ function C(e) {
     sound: n,
     playSound: i,
     isPlaying: o
-  } = e, s = (null == n ? void 0 : n.emojiId) != null || (null == n ? void 0 : n.emojiName) != null, d = b.NW.formatToPlainString(b.t.tuMUJy, {
+  } = e, s = (null == n ? void 0 : n.emojiId) != null || (null == n ? void 0 : n.emojiName) != null, d = v.NW.formatToPlainString(v.t.tuMUJy, {
     emojiName: null == n ? void 0 : n.emojiName,
     soundName: null == n ? void 0 : n.name
   });
@@ -134,10 +134,10 @@ let R = function(e) {
     soundId: o,
     messageSounds: a,
     jumbo: c = !1
-  } = e, d = E.jU.useSetting(), b = (0, s.e7)([h.Z], () => h.Z.getSoundById(o), [o]), O = i.useMemo(() => {
+  } = e, d = E.jU.useSetting(), v = (0, s.e7)([h.Z], () => h.Z.getSoundById(o), [o]), O = i.useMemo(() => {
     var e;
-    return null !== (e = (0, f.Z)(t, n, o, a)) && void 0 !== e ? e : b
-  }, [t, n, o, a, b]), S = (0, s.e7)([v.Z], () => v.Z.getChannel(t)), A = (0, u.X0)({
+    return null !== (e = (0, f.Z)(t, n, o, a)) && void 0 !== e ? e : v
+  }, [t, n, o, a, v]), S = (0, s.e7)([b.Z], () => b.Z.getChannel(t)), A = (0, u.X0)({
     location: "SoundboardMention"
   }), R = i.useRef(null), {
     isPlaying: P,

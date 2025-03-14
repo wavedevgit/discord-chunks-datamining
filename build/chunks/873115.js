@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   Dz: () => h,
-  Nj: () => v,
-  RS: () => b,
+  Nj: () => b,
+  RS: () => v,
   by: () => g,
   eI: () => _,
   f6: () => m,
@@ -182,13 +182,13 @@ function E(e, t) {
   }
 }
 
-function v() {
+function b() {
   return E(o.Z.getPayPalClient(), {
     type: "BRAINTREE_TEARDOWN_PAYPAL_CLIENT"
   })
 }
 
-function b() {
+function v() {
   return E(o.Z.getVenmoClient(), {
     type: "BRAINTREE_TEARDOWN_VENMO_CLIENT"
   })

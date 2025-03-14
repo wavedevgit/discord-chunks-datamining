@@ -111,7 +111,7 @@ function E(e) {
   }))
 }
 
-function v(e) {
+function b(e) {
   let {
     guildId: t,
     profile: n
@@ -124,7 +124,7 @@ function v(e) {
   }))
 }
 
-function b(e) {
+function v(e) {
   let {
     guildId: t,
     error: n
@@ -248,8 +248,8 @@ let C = new A(o.Z, {
   GUILD_PROFILE_FETCH_SUCCESS: m,
   GUILD_PROFILE_FETCH_FAILURE: g,
   GUILD_PROFILE_UPDATE: E,
-  GUILD_PROFILE_UPDATE_SUCCESS: v,
-  GUILD_PROFILE_UPDATE_FAILURE: b,
+  GUILD_PROFILE_UPDATE_SUCCESS: b,
+  GUILD_PROFILE_UPDATE_FAILURE: v,
   MEMBER_VERIFICATION_FORM_UPDATE: O,
   INVITE_RESOLVE_SUCCESS: I,
   CREATE_CHANNEL_MODAL_SUBMIT: S,
@@ -257,5 +257,5 @@ let C = new A(o.Z, {
   GUILD_UPDATE: N,
   GUILD_PROFILE_UPDATE_VISIBILITY: E,
   GUILD_PROFILE_UPDATE_VISIBILITY_SUCCESS: y,
-  GUILD_PROFILE_UPDATE_VISIBILITY_FAILURE: b
+  GUILD_PROFILE_UPDATE_VISIBILITY_FAILURE: v
 })

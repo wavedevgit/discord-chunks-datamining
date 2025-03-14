@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(653235),
   g = n(215016),
   E = n(981631),
-  v = n(149203),
-  b = n(388032),
+  b = n(149203),
+  v = n(388032),
   y = n(144590);
 
 function O(e, t, n) {
@@ -90,13 +90,13 @@ class A extends i.PureComponent {
         return (0, r.jsx)(c.vwX, {
           tag: "h5",
           className: y.searchHeader,
-          children: b.NW.string(b.t.y3LQCA)
+          children: v.NW.string(v.t.y3LQCA)
         });
       case E.wI2.TRENDING_GIFS:
         return (0, r.jsx)(c.vwX, {
           tag: "h5",
           className: y.searchHeader,
-          children: b.NW.string(b.t.H6zNFx)
+          children: v.NW.string(v.t.H6zNFx)
         });
       default:
         return (0, r.jsx)(c.E1j, {
@@ -105,8 +105,8 @@ class A extends i.PureComponent {
           query: e,
           onChange: this.handleChangeQuery,
           onClear: this.handleClearQuery,
-          placeholder: b.NW.string(b.t.TnYqkZ),
-          "aria-label": b.NW.string(b.t.TnYqkZ),
+          placeholder: v.NW.string(v.t.TnYqkZ),
+          "aria-label": v.NW.string(v.t.TnYqkZ),
           ref: this.props.searchBarRef,
           autoFocus: !0
         })
@@ -119,7 +119,7 @@ class A extends i.PureComponent {
     return null != e && (t = (0, r.jsx)(c.P3F, {
       onClick: this.handleClearQuery,
       className: y.backButton,
-      "aria-label": b.NW.string(b.t["13/7kZ"]),
+      "aria-label": v.NW.string(v.t["13/7kZ"]),
       children: (0, r.jsx)(c.whL, {
         size: "md",
         color: "currentColor"
@@ -168,9 +168,9 @@ class A extends i.PureComponent {
       forwardedRef: t
     } = this.props;
     return (0, r.jsxs)("div", {
-      id: v.vO,
+      id: b.vO,
       role: "tabpanel",
-      "aria-labelledby": v._3,
+      "aria-labelledby": b._3,
       className: a()(y.container, e),
       onClick: N,
       ref: t,

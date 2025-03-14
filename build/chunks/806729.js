@@ -20,7 +20,7 @@ function _(e) {
     type: n
   } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
     fetch: !1
-  }, [_, p, h] = (0, o.Wu)([d.Z], () => [d.Z.getMutualFriends(e.id), d.Z.getMutualGuilds(e.id), d.Z.isFetchingProfile(e.id)]), m = (0, l.Z)(), [g, E] = (0, r.useState)(null), v = t && null == g && !h, b = !e.bot && null == _, y = null == p, O = v && (b || y);
+  }, [_, p, h] = (0, o.Wu)([d.Z], () => [d.Z.getMutualFriends(e.id), d.Z.getMutualGuilds(e.id), d.Z.isFetchingProfile(e.id)]), m = (0, l.Z)(), [g, E] = (0, r.useState)(null), b = t && null == g && !h, v = !e.bot && null == _, y = null == p, O = b && (v || y);
   (0, r.useEffect)(() => {
     O && (async () => {
       try {

@@ -18,9 +18,9 @@ var r, i = n(149765),
   m = n(271383),
   g = n(430824),
   E = n(594174),
-  v = n(981631);
+  b = n(981631);
 
-function b(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -49,7 +49,7 @@ function S(e) {
 }
 
 function T(e, t) {
-  if (!t.hasFeature(v.oNc.CREATOR_MONETIZABLE) && !t.hasFeature(v.oNc.CREATOR_MONETIZABLE_PROVISIONAL)) return !1;
+  if (!t.hasFeature(b.oNc.CREATOR_MONETIZABLE) && !t.hasFeature(b.oNc.CREATOR_MONETIZABLE_PROVISIONAL)) return !1;
   let n = _.Z.isViewingServerShop(t.id);
   for (let r of Object.keys(e.permissionOverwrites)) {
     let i = g.Z.getRole(t.id, r);
@@ -62,7 +62,7 @@ function T(e, t) {
     if ((0, f.TG)(e, o)) return !0
   }
   let r = g.Z.getRole(t.id, t.getEveryoneRoleId()),
-    o = null != r && !i.e$(r.permissions, v.Plq.VIEW_CHANNEL),
+    o = null != r && !i.e$(r.permissions, b.Plq.VIEW_CHANNEL),
     a = (0, f.wB)(e, e.permissionOverwrites[t.id]);
   if (o && !a) {
     for (let e of Object.values(g.Z.getRoles(t.id)))
@@ -79,7 +79,7 @@ function N(e) {
   let t = g.Z.getGuild(e);
   if (null == t) return;
   let n = y[e] = new Set;
-  if (!t.hasFeature(v.oNc.ROLE_SUBSCRIPTIONS_ENABLED) || !(0, u.kT)(e) && !(0, s.Rw)(t)) return;
+  if (!t.hasFeature(b.oNc.ROLE_SUBSCRIPTIONS_ENABLED) || !(0, u.kT)(e) && !(0, s.Rw)(t)) return;
   let r = h.Z.getMutableGuildChannelsForGuild(e);
   for (let e in r) {
     let i = r[e];
@@ -167,7 +167,7 @@ class M extends(r = o.ZP.Store) {
     return !!(null != n && null != n.parent_id && p.Ec.has(null == n ? void 0 : n.type)) && this.isChannelOrThreadParentGated(e, n.parent_id)
   }
 }
-b(M, "displayName", "GatedChannelStore");
+v(M, "displayName", "GatedChannelStore");
 let k = new M(a.Z, {
   CONNECTION_OPEN: C,
   OVERLAY_INITIALIZE: C,

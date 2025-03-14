@@ -76,17 +76,17 @@ function h(e) {
     rowHeight: p,
     onScroll: h,
     listClassName: m
-  } = e, g = i.useRef(null), E = i.useRef(null), v = i.useRef(null), b = i.useRef(null), {
+  } = e, g = i.useRef(null), E = i.useRef(null), b = i.useRef(null), v = i.useRef(null), {
     isUsingKeyboardNavigation: y,
     focusIndex: O
   } = c, I = _(c, ["isUsingKeyboardNavigation", "focusIndex"]);
   i.useLayoutEffect(() => {
     var e;
-    n && ((0, a.F)(g), null === (e = v.current) || void 0 === e || e.focus())
+    n && ((0, a.F)(g), null === (e = b.current) || void 0 === e || e.focus())
   }, [n]), i.useEffect(() => {
     if (n && O >= 0 && y) {
       var e;
-      null === (e = b.current) || void 0 === e || e.scrollRowIntoView(O)
+      null === (e = v.current) || void 0 === e || e.scrollRowIntoView(O)
     }
   }, [n, y, O]);
   let S = i.useCallback(e => d[e], [d]);
@@ -108,9 +108,9 @@ function h(e) {
         children: (0, r.jsx)("div", f(u({
           className: l.submenu
         }, I), {
-          ref: v,
+          ref: b,
           children: (0, r.jsx)(s.Z, {
-            ref: b,
+            ref: v,
             className: m,
             listPadding: [6, 0, 6, 8],
             onScroll: h,

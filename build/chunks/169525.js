@@ -2,11 +2,11 @@
 "use strict";
 n.d(t, {
   As: () => O,
-  BP: () => v,
+  BP: () => b,
   MC: () => S,
   dn: () => E,
   hL: () => I,
-  lK: () => b,
+  lK: () => v,
   wk: () => g
 }), n(789020), n(627341);
 var r = n(278074),
@@ -38,7 +38,7 @@ let E = (e, t) => {
     }
     return n || (0, _.yE)(r, h.J0y.IS_SPOILER) ? "spoiler" : null
   },
-  v = (e, t, n, r, i) => {
+  b = (e, t, n, r, i) => {
     let {
       flags: s = 0,
       contentScanVersion: l
@@ -50,7 +50,7 @@ let E = (e, t) => {
     }
     return r ? "spoiler" : null
   },
-  b = function(e, t) {
+  v = function(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
       r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
       {

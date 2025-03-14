@@ -118,7 +118,7 @@ function E(e) {
   return !!f(t) && delete d[t]
 }
 
-function v(e) {
+function b(e) {
   var t;
   let {
     channel: n
@@ -131,7 +131,7 @@ function v(e) {
   })
 }
 
-function b(e) {
+function v(e) {
   let {
     channel: t
   } = e;
@@ -163,8 +163,8 @@ class O extends(r = i.ZP.Store) {
 s(O, "displayName", "ForumSearchStore");
 let I = new O(o.Z, {
   CONNECTION_OPEN: y,
-  THREAD_DELETE: v,
-  CHANNEL_DELETE: b,
+  THREAD_DELETE: b,
+  CHANNEL_DELETE: v,
   FORUM_SEARCH_QUERY_UPDATED: p,
   FORUM_SEARCH_START: h,
   FORUM_SEARCH_SUCCESS: m,

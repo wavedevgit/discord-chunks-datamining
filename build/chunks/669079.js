@@ -3,12 +3,12 @@
 n.d(t, {
   Bg: () => U,
   E5: () => ee,
-  Fp: () => V,
+  Fp: () => F,
   JT: () => $,
   L2: () => z,
   MY: () => k,
   Nz: () => Z,
-  Q_: () => F,
+  Q_: () => V,
   TO: () => Y,
   Z0: () => G,
   bT: () => H,
@@ -45,7 +45,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,9 +57,9 @@ function v(e) {
   }
   return e
 }
-let b = ["discordapp.com/gifts", "discord.com/gifts"],
+let v = ["discordapp.com/gifts", "discord.com/gifts"],
   y = 3,
-  O = [_.Z.escape(window.GLOBAL_ENV.GIFT_CODE_HOST), ...b.map(e => _.Z.escape(e))].join("|"),
+  O = [_.Z.escape(window.GLOBAL_ENV.GIFT_CODE_HOST), ...v.map(e => _.Z.escape(e))].join("|"),
   I = RegExp("(?: |^|https?://)(?:".concat(O, ")/([a-z0-9-]+)"), "gi"),
   S = [...["discord.com/billing/promotions", "promos.discord.gg"].map(e => _.Z.escape(e))].join("|"),
   T = RegExp("(?: |^|https?://)(?:".concat(S, ")(/|(/)?\\?code=)([a-z0-9-]+)"), "gi"),
@@ -96,8 +96,8 @@ function G(e) {
 function B(e) {
   return e.replace(/[^A-Za-z0-9]/g, "")
 }
-let V = e => (null == e ? void 0 : e.type) === h.uaV.CUSTOM_GIFT && (null == e ? void 0 : e.embeds.length) === 1 && (null == e ? void 0 : e.embeds[0].type) === h.hBH.GIFT,
-  F = e => {
+let F = e => (null == e ? void 0 : e.type) === h.uaV.CUSTOM_GIFT && (null == e ? void 0 : e.embeds.length) === 1 && (null == e ? void 0 : e.embeds[0].type) === h.hBH.GIFT,
+  V = e => {
     let t;
     if (null == e) return [];
     let n = new Set;
@@ -144,7 +144,7 @@ async function H(e) {
 }
 
 function W(e, t) {
-  u.default.track(h.rMx.GIFT_CODE_COPIED, v({}, (0, s.Z)(t, !1, !1), e.analyticsData))
+  u.default.track(h.rMx.GIFT_CODE_COPIED, b({}, (0, s.Z)(t, !1, !1), e.analyticsData))
 }
 
 function Y(e, t, n, r, i, o, a) {

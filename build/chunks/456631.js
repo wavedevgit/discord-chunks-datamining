@@ -32,13 +32,13 @@ let _ = [],
   },
   g = [],
   E = 20,
-  v = 10 * c.Z.Millis.SECOND,
-  b = () => {
+  b = 10 * c.Z.Millis.SECOND,
+  v = () => {
     let e = new Date;
     if ((g = [e, ...g].slice(0, E)).length >= E) {
       let t = g[g.length - 1],
         n = e.getTime() - t.getTime();
-      n < v && (r = new Date(e.getTime() + v - n))
+      n < b && (r = new Date(e.getTime() + b - n))
     }
   },
   y = e => {
@@ -97,6 +97,6 @@ let A = new N(l.Z, {
   VOICE_CHANNEL_EFFECT_CLEAR: T,
   VOICE_CHANNEL_EFFECT_RECENT_EMOJI: S,
   VOICE_CHANNEL_EFFECT_SEND: I,
-  VOICE_CHANNEL_EFFECT_SENT_LOCAL: b,
+  VOICE_CHANNEL_EFFECT_SENT_LOCAL: v,
   VOICE_CHANNEL_EFFECT_UPDATE_TIME_STAMP: y
 })

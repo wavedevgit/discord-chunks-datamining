@@ -11,9 +11,9 @@ n.r(t), n.d(t, {
   getPID: () => p,
   getRPCAuthToken: () => m,
   log: () => g,
-  setOutOfProcessSupport: () => v,
+  setOutOfProcessSupport: () => b,
   setPID: () => h,
-  supportsOutOfProcess: () => b,
+  supportsOutOfProcess: () => v,
   validResolution: () => E
 }), n(610138), n(216116), n(78328), n(815648), n(47120), n(301563);
 var i = n(490029),
@@ -61,10 +61,10 @@ function E(e) {
   return !o.isPlatformEmbedded || e.width >= c.width && e.height >= c.height
 }
 
-function v(e) {
+function b(e) {
   _ = e
 }
 
-function b() {
+function v() {
   return _
 }

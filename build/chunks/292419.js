@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   SD: () => p,
-  np: () => v,
-  uZ: () => b
+  np: () => b,
+  uZ: () => v
 }), n(47120), n(266796);
 var r = n(866442),
   i = n(911969),
@@ -87,12 +87,12 @@ function E(e, t) {
   }
 }
 
-function v(e) {
+function b(e) {
   let t = Object.values(m(e)).filter(e => e.type === i.re.TEXT_DISPLAY).map(e => e.content).join("\n");
   return "" !== t ? t : null
 }
 
-function b(e) {
+function v(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
   return e.map((e, n) => y(e, t, [n])).filter(e => null != e)
 }
@@ -101,16 +101,16 @@ function y(e, t, n) {
   var o, s, u, _, p, m, g, E;
   if (!h(e.type)) return null;
 
-  function v(e, r) {
+  function b(e, r) {
     let i = y(e, t, [...n, r]);
     return null == i ? null : i
   }
   let {
-    includeEmojiSrc: b
+    includeEmojiSrc: v
   } = t;
   switch (e.type) {
     case i.re.ACTION_ROW: {
-      let t = e.components.map((e, t) => v(e, t)).filter(l.lm);
+      let t = e.components.map((e, t) => b(e, t)).filter(l.lm);
       return {
         type: i.re.ACTION_ROW,
         id: O(n),
@@ -118,7 +118,7 @@ function y(e, t, n) {
       }
     }
     case i.re.BUTTON: {
-      let t = null != e.emoji ? f(e.emoji, b) : void 0;
+      let t = null != e.emoji ? f(e.emoji, v) : void 0;
       return {
         type: i.re.BUTTON,
         id: O(n),
@@ -139,7 +139,7 @@ function y(e, t, n) {
           value: e.value,
           default: e.default,
           description: e.description,
-          emoji: null != e.emoji ? f(e.emoji, b) : void 0
+          emoji: null != e.emoji ? f(e.emoji, v) : void 0
         })), placeholder: null !== (o = e.placeholder) && void 0 !== o ? o : d.NW.string(d.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values
       };
     case i.re.TEXT_INPUT:
@@ -163,8 +163,8 @@ function y(e, t, n) {
         type: i.re.CHANNEL_SELECT, id: O(n), customId: e.custom_id, disabled: e.disabled, placeholder: null !== (m = e.placeholder) && void 0 !== m ? m : d.NW.string(d.t.Otr6W1), minValues: e.min_values, maxValues: e.max_values, channelTypes: e.channel_types, defaultValues: e.default_values
       };
     case i.re.SECTION: {
-      let t = e.components.map((e, t) => v(e, t)).filter(l.lm),
-        r = v(e.accessory, t.length);
+      let t = e.components.map((e, t) => b(e, t)).filter(l.lm),
+        r = b(e.accessory, t.length);
       if (0 === t.length || null == r) return null;
       return {
         type: i.re.SECTION,
@@ -203,7 +203,7 @@ function y(e, t, n) {
         type: i.re.CONTENT_INVENTORY_ENTRY, id: O(n), contentInventoryEntry: e.content_inventory_entry
       };
     case i.re.CONTAINER: {
-      let t = e.components.map((e, t) => v(e, t)).filter(l.lm);
+      let t = e.components.map((e, t) => b(e, t)).filter(l.lm);
       return {
         type: i.re.CONTAINER,
         id: O(n),

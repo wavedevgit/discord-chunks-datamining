@@ -3,7 +3,7 @@
 n.d(t, {
   BD: () => m,
   DF: () => p,
-  ZP: () => b,
+  ZP: () => v,
   _F: () => h
 });
 var r = n(200651);
@@ -70,12 +70,12 @@ let g = Object.freeze({
     brand: "always-white",
     primary: "header-primary"
   }),
-  v = Object.freeze({
+  b = Object.freeze({
     brand: "always-white",
     primary: "text-normal"
   });
 
-function b(e) {
+function v(e) {
   let {
     color: t = "brand",
     className: n,
@@ -85,7 +85,7 @@ function b(e) {
     contentClassName: p,
     buttonCTA: h,
     secondaryButtonCTA: m,
-    onClick: b,
+    onClick: v,
     onSecondaryClick: y,
     buttonProps: O = {
       color: a.zxk.Colors.BRAND,
@@ -105,7 +105,7 @@ function b(e) {
   });
   let R = null != m,
     P = e => {
-      b(e), null == N || N(l.L.PRIMARY)
+      v(e), null == N || N(l.L.PRIMARY)
     },
     w = () => {
       null == y || y(), null == N || N(l.L.SECONDARY)
@@ -118,7 +118,7 @@ function b(e) {
       variant: "heading-md/semibold",
       children: i
     }), (0, r.jsx)(a.Text, {
-      color: v[t],
+      color: b[t],
       className: o()(p, c.content),
       variant: "text-sm/normal",
       children: f
@@ -139,4 +139,4 @@ function b(e) {
     }) : null]
   })
 }
-b.CaretPosition = p, b.ButtonLayout = h
+v.CaretPosition = p, v.ButtonLayout = h

@@ -1,15 +1,15 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  X: () => f,
-  Z: () => g
+  X: () => g,
+  Z: () => m
 }), n(266796);
 var r = n(200651);
 n(192379);
 var i = n(481060),
   o = n(565138),
   a = n(372769),
-  l = n(742593),
-  s = n(390072),
+  s = n(742593),
+  l = n(390072),
   c = n(601964),
   u = n(230224),
   d = n(388032),
@@ -25,7 +25,7 @@ function p(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: h.guildEventCard,
-    children: [(0, r.jsx)(l.ZP, {
+    children: [(0, r.jsx)(s.ZP, {
       name: n.name,
       description: null !== (t = n.description) && void 0 !== t ? t : void 0,
       headerVariant: "heading-md/medium",
@@ -35,7 +35,7 @@ function p(e) {
       eventPreview: n
     }), null != o && (0, r.jsx)("div", {
       className: h.channelInfo,
-      children: (0, r.jsx)(s.Z, {
+      children: (0, r.jsx)(l.Z, {
         guildScheduledEvent: n,
         channel: o
       })
@@ -49,13 +49,13 @@ function p(e) {
   })
 }
 
-function f(e) {
+function g(e) {
   var t;
   let {
     invite: n
-  } = e, l = null != n.guild ? new c.ZP(n.guild) : null;
-  if (null == l) return null;
-  let s = null !== (t = l.description) && void 0 !== t ? t : "";
+  } = e, s = null != n.guild ? new c.ZP(n.guild) : null;
+  if (null == s) return null;
+  let l = null !== (t = s.description) && void 0 !== t ? t : "";
   return (0, r.jsxs)("div", {
     className: h.guildInfoCard,
     children: [(0, r.jsx)(i.X6q, {
@@ -65,7 +65,7 @@ function f(e) {
     }), (0, r.jsxs)("div", {
       className: h.guildContainer,
       children: [(0, r.jsx)(o.Z, {
-        guild: l,
+        guild: s,
         active: !0,
         size: o.Z.Sizes.MEDIUM
       }), (0, r.jsxs)("div", {
@@ -75,8 +75,8 @@ function f(e) {
           color: "header-primary",
           variant: "text-sm/medium",
           tag: "span",
-          children: [l.name, (0, r.jsx)(a.Z, {
-            guild: l,
+          children: [s.name, (0, r.jsx)(a.Z, {
+            guild: s,
             className: h.guildBadge,
             tooltipPosition: "left"
           })]
@@ -86,18 +86,18 @@ function f(e) {
           className: h.guildInfoMemberCount
         })]
       })]
-    }), s.length > 0 && (0, r.jsx)("details", {
+    }), l.length > 0 && (0, r.jsx)("details", {
       className: h.guildDescriptionContainer,
       children: (0, r.jsx)(i.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: s
+        children: l
       })
     })]
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     invite: t,
     channel: n,

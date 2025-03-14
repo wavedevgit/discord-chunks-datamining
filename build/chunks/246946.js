@@ -82,14 +82,14 @@ function E(e) {
   }), !0
 }
 
-function v(e) {
+function b(e) {
   if (!p.autoToggle) return !1;
   {
     let t = e.count > 0;
     return p.enabled = t, d(t, !0), !0
   }
 }
-class b extends(r = i.ZP.PersistedStore) {
+class v extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     Object.assign(_, e), this.syncWith([s.default], () => {
       let e = s.default.getId();
@@ -124,15 +124,15 @@ class b extends(r = i.ZP.PersistedStore) {
     return this.enabled && p.enableContentProtection
   }
 }
-c(b, "displayName", "StreamerModeStore"), c(b, "persistKey", "StreamerModeStore"), c(b, "migrations", [e => {
+c(v, "displayName", "StreamerModeStore"), c(v, "persistKey", "StreamerModeStore"), c(v, "migrations", [e => {
   let t = s.default.getId();
   return null == e || null == t ? {} : {
     [t]: u({}, e)
   }
 }]);
-let y = new b(o.Z, {
+let y = new v(o.Z, {
   LOGOUT: m,
   MULTI_ACCOUNT_REMOVE_ACCOUNT: g,
   STREAMER_MODE_UPDATE: E,
-  RUNNING_STREAMER_TOOLS_CHANGE: v
+  RUNNING_STREAMER_TOOLS_CHANGE: b
 })

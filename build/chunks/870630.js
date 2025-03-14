@@ -21,7 +21,7 @@ var r = n(200651),
 let E = function(e) {
   let t = (0, l.ZP)(),
     n = i.useRef(null),
-    [E, v] = i.useState({});
+    [E, b] = i.useState({});
   switch (i.useLayoutEffect(() => {
       let {
         current: e
@@ -32,7 +32,7 @@ let E = function(e) {
         i = t.getPropertyValue("font-family"),
         o = t.getPropertyValue("font-weight"),
         a = t.getPropertyValue("color");
-      v({
+      b({
         base: {
           fontFamily: i,
           fontWeight: o,

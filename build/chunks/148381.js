@@ -18,11 +18,11 @@ function f(e) {
     scrollerClassName: n,
     scrollerInnerClassName: i,
     children: f
-  } = e, m = l.useRef(null), [h, x] = l.useState(!1), [g, p] = l.useState(!1), _ = l.useCallback(() => {
+  } = e, m = l.useRef(null), [h, x] = l.useState(!1), [p, g] = l.useState(!1), _ = l.useCallback(() => {
     let {
       current: e
     } = m;
-    null != e && (x(!e.isScrolledToTop()), p(!e.isScrolledToBottom()))
+    null != e && (x(!e.isScrolledToTop()), g(!e.isScrolledToBottom()))
   }, []);
   return (0, a.Ng)(() => _()), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -38,7 +38,7 @@ function f(e) {
       children: (0, r.jsx)(o.Den, {
         ref: m,
         className: s()(u.scrollerInner, i, {
-          [u.bottomSeparator]: g
+          [u.bottomSeparator]: p
         }),
         onScroll: _,
         children: f

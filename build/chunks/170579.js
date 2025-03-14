@@ -20,8 +20,8 @@ var i = n(120356),
   m = n(104494),
   g = n(639119),
   E = n(108989),
-  v = n(474936),
-  b = n(388032),
+  b = n(474936),
+  v = n(388032),
   y = n(290798);
 
 function O(e, t) {
@@ -32,12 +32,12 @@ function O(e, t) {
     i = (0, h.T4)(n.amount, n.currency);
   if (t) return i;
   switch (r) {
-    case v.rV.MONTH:
-      return b.NW.formatToPlainString(b.t.AbOLNj, {
+    case b.rV.MONTH:
+      return v.NW.formatToPlainString(v.t.AbOLNj, {
         price: i
       });
-    case v.rV.YEAR:
-      return b.NW.formatToPlainString(b.t.rS8FAw, {
+    case b.rV.YEAR:
+      return v.NW.formatToPlainString(v.t.rS8FAw, {
         price: i
       })
   }
@@ -46,10 +46,10 @@ let I = e => {
     let {
       isTier0: t,
       discountAmount: n
-    } = e, i = (0, g.N)(), a = null != i && i.trial_id === v.a7, l = b.NW.string(b.t.IBYG5e);
-    return void 0 !== n ? l = b.NW.formatToPlainString(b.t.iiLbvr, {
+    } = e, i = (0, g.N)(), a = null != i && i.trial_id === b.a7, l = v.NW.string(v.t.IBYG5e);
+    return void 0 !== n ? l = v.NW.formatToPlainString(v.t.iiLbvr, {
       percent: n
-    }) : a && (l = b.NW.string(b.t.gtNqJS)), (0, r.jsx)("div", {
+    }) : a && (l = v.NW.string(v.t.gtNqJS)), (0, r.jsx)("div", {
       className: y.trialBadgeContainer,
       children: (0, r.jsx)(s.Text, {
         variant: "text-xs/bold",
@@ -68,16 +68,16 @@ let I = e => {
       hideCloseOnFullScreen: p,
       shouldShowPrice: h,
       plan: g,
-      renderAnimation: b,
+      renderAnimation: v,
       onClose: S,
       isGift: T,
       upgradeToPremiumType: N,
-      headerTheme: A = v.nL.DEFAULT,
+      headerTheme: A = b.nL.DEFAULT,
       className: C,
       showTrialBadge: R = !1,
       showDiscountBadge: P = !1
-    } = e, w = N === v.p9.TIER_2;
-    n = N === v.p9.TIER_0 ? d.Z : N === v.p9.TIER_1 ? f.Z : u.Z;
+    } = e, w = N === b.p9.TIER_2;
+    n = N === b.p9.TIER_0 ? d.Z : N === b.p9.TIER_1 ? f.Z : u.Z;
     let D = (0, a.e7)([l.Z], () => l.Z.useReducedMotion),
       L = (0, m.Ng)(),
       x = null == L ? void 0 : null === (t = L.discount) || void 0 === t ? void 0 : t.amount;
@@ -87,12 +87,12 @@ let I = e => {
         [y.headerBackground]: !w,
         [y.tier2HeaderBackground]: w
       }, C),
-      children: [D || A !== v.nL.WINTER ? null : (0, r.jsx)(E.Z, {
+      children: [D || A !== b.nL.WINTER ? null : (0, r.jsx)(E.Z, {
         className: y.snow,
         wind: 5
       }), (R || P) && (0, r.jsx)(_.Z, {
         className: y.trialBadgeSparkles
-      }), b(), (0, r.jsxs)(c.Z, {
+      }), v(), (0, r.jsxs)(c.Z, {
         align: c.Z.Align.START,
         justify: c.Z.Justify.BETWEEN,
         className: y.headerTop,
@@ -102,7 +102,7 @@ let I = e => {
               [y.nonTier2]: !w
             })
           }), (R || P) && (0, r.jsx)(I, {
-            isTier0: N === v.p9.TIER_0,
+            isTier0: N === b.p9.TIER_0,
             discountAmount: P ? x : void 0
           })]
         }), !i && (0, r.jsx)(s.olH, {

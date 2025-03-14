@@ -9,8 +9,8 @@ var _, p = n(392711),
   m = n(913527),
   g = n.n(m),
   E = n(442837),
-  v = n(544891),
-  b = n(433517),
+  b = n(544891),
+  v = n(433517),
   y = n(570140),
   O = n(749210),
   I = n(314852),
@@ -62,14 +62,14 @@ function B(e, t) {
   return n
 }
 
-function V(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : B(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let F = !0,
-  Z = ["name", "description", "icon", "splash", "banner", "homeHeader", "afkChannelId", "afkTimeout", "systemChannelId", "verificationLevel", "defaultMessageNotifications", "explicitContentFilter", "features", "systemChannelFlags", "preferredLocale", "rulesChannelId", "safetyAlertsChannelId", "discoverySplash", "publicUpdatesChannelId", "premiumProgressBarEnabled", "profile"],
-  H = ["brandColorPrimary", "description", "icon", "name", "traits", "visibility", "gameApplicationIds", "customBanner"],
+let V = !0,
+  Z = ["name", "description", "icon", "splash", "banner", "homeHeader", "afkChannelId", "afkTimeout", "systemChannelId", "verificationLevel", "defaultMessageNotifications", "explicitContentFilter", "features", "systemChannelFlags", "preferredLocale", "rulesChannelId", "safetyAlertsChannelId", "discoverySplash", "publicUpdatesChannelId", "premiumProgressBarEnabled"],
+  H = ["brandColorPrimary", "description", "icon", "name", "traits", "visibility", "gameApplicationIds", "customBanner", "tag", "badge", "badgeColorPrimary", "badgeColorSecondary"],
   W = new Set(["icon", "splash", "banner", "discoverySplash", "homeHeader"]),
   Y = !1,
   K = M.QZA.CLOSED,
@@ -88,7 +88,7 @@ let F = !0,
     primaryCategoryId: k.o3,
     secondaryCategoryIds: [],
     keywords: [],
-    emojiDiscoverabilityEnabled: F,
+    emojiDiscoverabilityEnabled: V,
     partnerActionedTimestamp: null,
     partnerApplicationTimestamp: null,
     isPublished: !1,
@@ -125,7 +125,7 @@ function em(e) {
   } = e, _ = C.Z.getGuild(n);
   if (null == _) return eg();
   let p = I.Z.getProfile(n);
-  a = s = _, l = c = p, J = X, ee = $, K = M.QZA.OPEN, z = {}, q = null, u = P.default.castGuildIdAsEveryoneGuildRoleId(n), er = s.mfaLevel, el = es, f = null, ei = d, ev({
+  a = s = _, l = c = p, J = X, ee = $, K = M.QZA.OPEN, z = {}, q = null, u = P.default.castGuildIdAsEveryoneGuildRoleId(n), er = s.mfaLevel, el = es, f = null, ei = d, eb({
     section: null !== (t = null != i ? i : r) && void 0 !== t ? t : (0, x.r)(n),
     subsection: null != o ? o : null
   })
@@ -142,7 +142,7 @@ function eE(e) {
   return d = t, !1
 }
 
-function ev(e) {
+function eb(e) {
   if (null == s) return !1;
   let t = r;
   if (r = e.section, i = e.subsection, r === M.pNK.BANS) {
@@ -153,7 +153,7 @@ function ev(e) {
       location: "7f0c91_1"
     });
     e || O.Z.fetchGuildBans(s.id)
-  } else if (r === M.pNK.INSTANT_INVITES || r === M.pNK.INVITES) v.tn.get({
+  } else if (r === M.pNK.INSTANT_INVITES || r === M.pNK.INVITES) b.tn.get({
     url: M.ANM.GUILD_INSTANT_INVITES(s.id),
     oldFormErrors: !0,
     rejectWithError: !0
@@ -172,7 +172,7 @@ function ev(e) {
   })
 }
 
-function eb(e) {
+function ev(e) {
   o = e.searchQuery
 }
 
@@ -220,7 +220,7 @@ function eA(e) {
   H.forEach(t => {
     if (null != c && e.hasOwnProperty(t)) {
       let n = e[t];
-      void 0 !== n && (c = V(G({}, c), {
+      void 0 !== n && (c = F(G({}, c), {
         [t]: n
       }))
     }
@@ -253,7 +253,7 @@ function eP(e) {
 }
 
 function ew(e) {
-  ef = V(G({}, ef), {
+  ef = F(G({}, ef), {
     [e.invite.code]: eC(e.invite)
   })
 }
@@ -337,7 +337,7 @@ function eB(e) {
   if (!ep(t)) return !1
 }
 
-function eV(e) {
+function eF(e) {
   let {
     guildId: t,
     roleId: n
@@ -346,7 +346,7 @@ function eV(e) {
   u === n && (u = null)
 }
 
-function eF(e) {
+function eV(e) {
   Q = !0, X = J = e.enabled, $ = ee = e.channelId
 }
 
@@ -391,7 +391,7 @@ function ez(e) {
     primaryCategoryId: null !== (t = _.primaryCategoryId) && void 0 !== t ? t : k.o3,
     secondaryCategoryIds: null !== (n = _.secondaryCategoryIds) && void 0 !== n ? n : [],
     keywords: null !== (r = _.keywords) && void 0 !== r ? r : [],
-    emojiDiscoverabilityEnabled: null !== (i = _.emojiDiscoverabilityEnabled) && void 0 !== i ? i : F,
+    emojiDiscoverabilityEnabled: null !== (i = _.emojiDiscoverabilityEnabled) && void 0 !== i ? i : V,
     partnerActionedTimestamp: null !== (o = _.partnerActionedTimestamp) && void 0 !== o ? o : null,
     partnerApplicationTimestamp: null !== (a = _.partnerApplicationTimestamp) && void 0 !== a ? a : null,
     isPublished: null !== (l = _.isPublished) && void 0 !== l && l,
@@ -422,9 +422,9 @@ function eJ(e) {
     guildId: t,
     categoryId: n
   } = e;
-  null != s && t === s.id && (el = V(G({}, el), {
+  null != s && t === s.id && (el = F(G({}, el), {
     secondaryCategoryIds: [...el.secondaryCategoryIds, n]
-  }), es = V(G({}, es), {
+  }), es = F(G({}, es), {
     secondaryCategoryIds: [...es.secondaryCategoryIds, n]
   }))
 }
@@ -435,9 +435,9 @@ function e$(e) {
     categoryId: r
   } = e;
   if (null == s || n !== s.id) return;
-  let i = el.secondaryCategoryIds.indexOf(r); - 1 !== i && ((t = [...el.secondaryCategoryIds]).splice(i, 1), el = V(G({}, el), {
+  let i = el.secondaryCategoryIds.indexOf(r); - 1 !== i && ((t = [...el.secondaryCategoryIds]).splice(i, 1), el = F(G({}, el), {
     secondaryCategoryIds: t
-  })), -1 !== (i = es.secondaryCategoryIds.indexOf(r)) && ((t = [...es.secondaryCategoryIds]).splice(i, 1), es = V(G({}, es), {
+  })), -1 !== (i = es.secondaryCategoryIds.indexOf(r)) && ((t = [...es.secondaryCategoryIds]).splice(i, 1), es = F(G({}, es), {
     secondaryCategoryIds: t
   }))
 }
@@ -461,7 +461,7 @@ function e1(e) {
     socialLinks: l,
     about: c
   } = e;
-  null != s && t === s.id && (el = V(G({}, el), {
+  null != s && t === s.id && (el = F(G({}, el), {
     primaryCategoryId: null != n ? n : el.primaryCategoryId,
     keywords: null != r ? r : el.keywords,
     emojiDiscoverabilityEnabled: null != i ? i : el.emojiDiscoverabilityEnabled,
@@ -548,7 +548,7 @@ class e8 extends(_ = E.ZP.Store) {
     return null != s ? s.id : null
   }
   showPublicSuccessModal() {
-    return !b.K.get(j.zs)
+    return !v.K.get(j.zs)
   }
   getGuild() {
     return s
@@ -628,12 +628,12 @@ let e9 = new e8(y.Z, __OVERLAY__ ? {} : {
   GUILD_SETTINGS_SUBMIT: eO,
   GUILD_SETTINGS_SUBMIT_SUCCESS: eI,
   GUILD_SETTINGS_SUBMIT_FAILURE: eS,
-  GUILD_SETTINGS_SET_SECTION: ev,
-  GUILD_SETTINGS_SET_SEARCH_QUERY: eb,
+  GUILD_SETTINGS_SET_SECTION: eb,
+  GUILD_SETTINGS_SET_SEARCH_QUERY: ev,
   GUILD_SETTINGS_LOADED_BANS: eD,
   GUILD_SETTINGS_LOADED_BANS_BATCH: eL,
   GUILD_SETTINGS_LOADED_INVITES: eR,
-  GUILD_SETTINGS_SET_WIDGET: eF,
+  GUILD_SETTINGS_SET_WIDGET: eV,
   GUILD_SETTINGS_SET_VANITY_URL: eH,
   GUILD_SETTINGS_SET_MFA_SUCCESS: eW,
   GUILD_SETTINGS_ROLE_SELECT: eU,
@@ -642,7 +642,7 @@ let e9 = new e8(y.Z, __OVERLAY__ ? {} : {
   GUILD_BAN_REMOVE: eM,
   GUILD_ROLE_CREATE: eG,
   GUILD_ROLE_UPDATE: eB,
-  GUILD_ROLE_DELETE: eV,
+  GUILD_ROLE_DELETE: eF,
   GUILD_UPDATE: ek,
   GUILD_DELETE: ej,
   GUILD_PROFILE_FETCH_SUCCESS: e3,

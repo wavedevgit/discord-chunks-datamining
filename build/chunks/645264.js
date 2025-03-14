@@ -1,68 +1,68 @@
-/** Chunk was on 98077 **/
-n.r(t), n.d(t, {
-  default: () => x
+/** Chunk was on 92531 **/
+t.r(i), t.d(i, {
+  default: () => g
 });
-var o = n(200651),
-  r = n(192379),
-  i = n(215569),
-  a = n(481060),
-  s = n(852860),
-  l = n(313201),
-  c = n(944163),
-  d = n(266395),
-  u = n(187565),
-  m = n(200305),
-  _ = n(592286),
-  h = n(388032),
-  b = n(983372);
-let p = () => (0, o.jsx)(s.Z, {
+var n = t(200651),
+  r = t(192379),
+  l = t(215569),
+  u = t(481060),
+  o = t(852860),
+  a = t(313201),
+  s = t(944163),
+  E = t(266395),
+  c = t(187565),
+  d = t(200305),
+  I = t(592286),
+  f = t(388032),
+  _ = t(983372);
+let S = () => (0, n.jsx)(o.Z, {
     submitting: !1,
-    message: h.NW.string(h.t["8g514e"]),
+    message: f.NW.string(f.t["8g514e"]),
     onReset: () => {
-      (0, d.PE)(!1)
+      (0, E.PE)(!1)
     },
-    onResetText: h.NW.string(h.t["ETE/oK"]),
+    onResetText: f.NW.string(f.t["ETE/oK"]),
     onSave: () => {
-      (0, d.PE)(!1), (0, a.Mr3)(_.Pn)
+      (0, E.PE)(!1), (0, u.Mr3)(I.Pn)
     },
-    onSaveText: h.NW.string(h.t["Xt+UaW"]),
-    onSaveButtonColor: a.Ttl.RED
+    onSaveText: f.NW.string(f.t["Xt+UaW"]),
+    onSaveButtonColor: u.Ttl.RED
   }),
-  x = e => {
+  g = e => {
     let {
-      guildId: t,
-      transitionState: n,
-      onClose: s,
-      onComplete: _,
-      inviteKey: h,
-      isPreview: x = !1
-    } = e, C = (0, d.rb)(e => e.shouldShowWarning), {
-      hasFetched: N,
-      verificationForm: g
-    } = (0, u.ng)(t, x, h), E = (0, l.Dt)();
+      guildId: i,
+      transitionState: t,
+      onClose: o,
+      onComplete: I,
+      inviteKey: f,
+      isPreview: g = !1
+    } = e, A = (0, E.rb)(e => e.shouldShowWarning), {
+      hasFetched: T,
+      verificationForm: D
+    } = (0, c.ng)(i, g, f), h = (0, a.Dt)();
     return (r.useEffect(() => {
-      N && g === c.t && s()
-    }, [N, s, g]), g === c.t) ? null : (0, o.jsxs)(o.Fragment, {
-      children: [(0, o.jsxs)(a.Y0X, {
-        size: a.CgR.MEDIUM,
-        className: b.container,
-        transitionState: n,
-        "aria-labelledby": E,
-        children: [(0, o.jsx)(a.olH, {
-          onClick: () => s(!1),
-          className: b.closeButton
-        }), (0, o.jsx)(m.Z, {
-          verificationForm: g,
-          headerId: E,
-          guildId: t,
-          onClose: s,
-          onComplete: _,
-          isPreview: x
+      T && D === s.t && o()
+    }, [T, o, D]), D === s.t) ? null : (0, n.jsxs)(n.Fragment, {
+      children: [(0, n.jsxs)(u.Y0X, {
+        size: u.CgR.MEDIUM,
+        className: _.container,
+        transitionState: t,
+        "aria-labelledby": h,
+        children: [(0, n.jsx)(u.olH, {
+          onClick: () => o(!1),
+          className: _.closeButton
+        }), (0, n.jsx)(d.Z, {
+          verificationForm: D,
+          headerId: h,
+          guildId: i,
+          onClose: o,
+          onComplete: I,
+          isPreview: g
         })]
-      }), (0, o.jsx)(i.W, {
-        children: !0 === C && (0, o.jsx)(a.oXn, {
-          className: b.notice,
-          children: (0, o.jsx)(p, {})
+      }), (0, n.jsx)(l.W, {
+        children: !0 === A && (0, n.jsx)(u.oXn, {
+          className: _.notice,
+          children: (0, n.jsx)(S, {})
         })
       })]
     })

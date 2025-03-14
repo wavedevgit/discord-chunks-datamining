@@ -1,4 +1,4 @@
-/** Chunk was on 98806 **/
+/** Chunk was on 44584 **/
 e.exports = {
   modalContent: "modalContent__327b5",
   blockedUsersContainer: "blockedUsersContainer__327b5",

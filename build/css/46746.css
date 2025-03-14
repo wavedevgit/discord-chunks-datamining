@@ -1,6 +1,6 @@
 /**
   Module ID: 46746
-  Original File Name: 000bcfc4c78e2c30
+  Original File Name: 917a0c8222f6e1db
 **/
 .card__4bb93 {
     display: flex;
@@ -1971,12 +1971,29 @@
     margin-bottom: var(--spacing-8)
 }
 
+.emptyState__32fe1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.emptyHeader__32fe1 {
+    margin-bottom: var(--spacing-8)
+}
+
+.emptyIcon__32fe1 {
+    margin-bottom: var(--spacing-16)
+}
+
 .root__0b85a {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: var(--spacing-40);
+    padding-top: var(--spacing-16);
     height: 100%;
     box-sizing: border-box
 }
@@ -2041,8 +2058,8 @@
 }
 
 .sourcePreviewImage_febe19 {
-    -o-object-fit: cover;
-    object-fit: cover;
+    -o-object-fit: contain;
+    object-fit: contain;
     -o-object-position: center;
     object-position: center;
     width: 100%;
@@ -2052,7 +2069,7 @@
 .sourcePreview_febe19 {
     position: relative;
     overflow: hidden;
-    background-color: var(--bg-surface-raised);
+    background-color: var(--black-500);
     border-radius: var(--radius-sm);
     width: 100%;
     height: 100%;
@@ -2100,6 +2117,26 @@
     text-overflow: ellipsis
 }
 
+.emptyState_febe19 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.emptyIcon_febe19 {
+    margin-bottom: var(--spacing-16)
+}
+
+.emptyHeader_febe19 {
+    margin-bottom: var(--spacing-8)
+}
+
+.emptyBody_febe19 {
+    margin-bottom: var(--spacing-16)
+}
+
 .premiumOptionContainer__87cb7 {
     display: flex;
     align-items: center;
@@ -2119,26 +2156,49 @@
 
 .root__175e2 {
     padding: 12px 16px;
-    background: var(--bg-surface-overlay);
+    background: var(--bg-surface-raised);
     border-radius: 16px 16px 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row
+    flex-direction: row;
+    box-shadow: var(--shadow-top-low);
+    border-bottom: 1px solid var(--border-subtle)
 }
 
 .infoText__175e2 {
-    gap: 8px
-}
-
-.ctaButton__175e2 {
-    gap: 4px
-}
-
-.ctaButton__175e2,.infoText__175e2 {
+    gap: 8px;
     display: flex;
     align-items: center;
     flex-direction: row
+}
+
+.ctaButton__175e2 {
+    padding-left: var(--spacing-12);
+    padding-right: var(--spacing-12)
+}
+
+.tier2Gradient__175e2 {
+    color: var(--white-500);
+    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+    background-clip: padding-box;
+    border-radius: var(--radius-sm)
+}
+
+.premiumIcon__175e2 {
+    margin-right: 4px;
+    height: 20px
+}
+
+.buttonText__175e2 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.premiumSubscribeButton__175e2 {
+    display: flex;
+    align-items: center
 }
 
 .root__0a8d6 {
@@ -2161,6 +2221,20 @@
     display: flex;
     align-items: center;
     gap: var(--spacing-8)
+}
+
+.summaryDetail__0a8d6 span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.summaryDetail__0a8d6 span:last-child {
+    flex: 1 1 auto
+}
+
+.icon__0a8d6 {
+    flex-shrink: 0
 }
 
 .mutedIcon__0a8d6 {
@@ -2187,7 +2261,9 @@
 .screenArrowIcon__0a8d6 {
     padding: var(--spacing-8);
     border-radius: var(--radius-sm);
-    border: 1px solid var(--border-strong)
+    color: var(--icon-muted);
+    background-color: var(--bg-mod-subtle);
+    flex-shrink: 0
 }
 
 .sourceIcon__0a8d6 {
@@ -2206,14 +2282,21 @@
     height: 570px
 }
 
+.root__7f727.channelSelector__7f727 {
+    height: 504px
+}
+
 .footer__7f727 {
     background-color: var(--bg-surface-raised);
-    border: 1px solid var(--border-subtle);
-    filter: var(--shadow-top-ledge-filter);
+    padding: var(--spacing-16);
     gap: var(--spacing-32)
 }
 
-.footer__7f727,.header__7f727 {
+.footerShadow__7f727 {
+    box-shadow: var(--shadow-top-low)
+}
+
+.header__7f727 {
     padding: var(--spacing-16)
 }
 
@@ -2226,9 +2309,7 @@
 }
 
 .content__7f727 {
-    padding-left: var(--spacing-16);
-    padding-right: var(--spacing-16);
-    padding-bottom: var(--spacing-8)
+    padding: var(--spacing-8) var(--spacing-16)
 }
 
 .rightButtonGroup__7f727 {
@@ -2239,7 +2320,8 @@
 
 .streamButton__7f727 {
     min-width: 0;
+    flex-shrink: 0;
     padding: var(--spacing-12) var(--spacing-24)
 }
 
-/*# sourceMappingURL=000bcfc4c78e2c30.css.map*/
+/*# sourceMappingURL=917a0c8222f6e1db.css.map*/

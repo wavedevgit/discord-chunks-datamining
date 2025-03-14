@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   K: () => y,
-  y: () => b
+  y: () => v
 }), n(411104), n(47120), n(26686);
 var r, i = n(200651),
   o = n(192379),
@@ -77,7 +77,7 @@ let E = Object.freeze({
   4: c.l.Types.FADE
 });
 
-function v(e) {
+function b(e) {
   switch (e) {
     case "top":
     case "bottom":
@@ -91,7 +91,7 @@ function v(e) {
   }
   throw Error("Unexpected position: ".concat(e))
 }
-class b extends(r = o.Component) {
+class v extends(r = o.Component) {
   render() {
     let {
       children: e,
@@ -111,7 +111,7 @@ class b extends(r = o.Component) {
       preload: m,
       disablePointerEvents: g,
       ignoreModalClicks: E,
-      closeOnScroll: b,
+      closeOnScroll: v,
       useMouseEnter: y,
       renderPopout: O,
       layerContext: I,
@@ -122,7 +122,7 @@ class b extends(r = o.Component) {
       overridePositionRef: h,
       preload: m,
       position: n,
-      align: null != a ? a : v(n),
+      align: null != a ? a : b(n),
       autoInvert: s,
       fixed: c,
       nudgeAlignIntoViewport: u,
@@ -136,7 +136,7 @@ class b extends(r = o.Component) {
       positionKey: p,
       disablePointerEvents: g,
       ignoreModalClicks: E,
-      closeOnScroll: b,
+      closeOnScroll: v,
       useMouseEnter: y,
       layerContext: I,
       clickTrap: S,
@@ -191,10 +191,10 @@ function y(e) {
     if (!_.current) {
       _.current = !0;
       let e = setTimeout(() => {
-          v(() => g), c(e => e + 1)
+          b(() => g), c(e => e + 1)
         }, 300),
         n = await t();
-      v(() => n), c(e => e + 1), clearTimeout(e)
+      b(() => n), c(e => e + 1), clearTimeout(e)
     }
   }
 
@@ -210,20 +210,20 @@ function y(e) {
       children: (0, i.jsx)(a.$, {})
     })
   }
-  let [E, v] = o.useState(() => d), y = o.useRef(d);
+  let [E, b] = o.useState(() => d), y = o.useRef(d);
   return o.useEffect(() => {
     y.current = d
   }), o.useEffect(() => {
     _.current ? t().then(e => {
-      v(() => e), c(e => e + 1)
-    }) : v(y.current)
-  }, [t]), (0, i.jsx)(b, p(f({
+      b(() => e), c(e => e + 1)
+    }) : b(y.current)
+  }, [t]), (0, i.jsx)(v, p(f({
     ref: r
   }, n), {
     renderPopout: E
   }))
 }
-d(b, "Animation", g), d(b, "defaultProps", {
+d(v, "Animation", g), d(v, "defaultProps", {
   position: "right",
   autoInvert: !0,
   nudgeAlignIntoViewport: !0,

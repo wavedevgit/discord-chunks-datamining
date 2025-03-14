@@ -55,8 +55,8 @@ var f = new WeakMap,
   m = new WeakMap,
   g = new WeakMap,
   E = new WeakMap,
-  v = new WeakMap,
   b = new WeakMap,
+  v = new WeakMap,
   y = new WeakMap,
   O = new WeakMap;
 class I {
@@ -101,22 +101,22 @@ class I {
           I.isSetUp = !0, s(this, E).call(this, window), s(this, p)[s(this, f)].instance.setup()
         }
       }), a(this, "teardown", () => {
-        "undefined" != typeof window && (I.isSetUp = !1, s(this, v).call(this, window), s(this, p)[s(this, f)].instance.teardown())
+        "undefined" != typeof window && (I.isSetUp = !1, s(this, b).call(this, window), s(this, p)[s(this, f)].instance.teardown())
       }), a(this, "connectDragSource", (e, t, n) => s(this, O).call(this, "connectDragSource", e, t, n)), a(this, "connectDragPreview", (e, t, n) => s(this, O).call(this, "connectDragPreview", e, t, n)), a(this, "connectDropTarget", (e, t, n) => s(this, O).call(this, "connectDropTarget", e, t, n)), a(this, "profile", () => s(this, p)[s(this, f)].instance.profile()), a(this, "previewEnabled", () => s(this, p)[s(this, f)].preview), a(this, "previewsList", () => s(this, _)), a(this, "backendsList", () => s(this, h)), i(this, E, {
         writable: !0,
         value: e => {
           s(this, h).forEach(t => {
-            t.transition && e.addEventListener(t.transition.event, s(this, b))
-          })
-        }
-      }), i(this, v, {
-        writable: !0,
-        value: e => {
-          s(this, h).forEach(t => {
-            t.transition && e.removeEventListener(t.transition.event, s(this, b))
+            t.transition && e.addEventListener(t.transition.event, s(this, v))
           })
         }
       }), i(this, b, {
+        writable: !0,
+        value: e => {
+          s(this, h).forEach(t => {
+            t.transition && e.removeEventListener(t.transition.event, s(this, v))
+          })
+        }
+      }), i(this, v, {
         writable: !0,
         value: e => {
           let t = s(this, f);

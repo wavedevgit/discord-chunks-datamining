@@ -79,11 +79,11 @@ function E(e) {
   }))
 }
 
-function v() {
+function b() {
   y()
 }
 
-function b(e) {
+function v(e) {
   let {
     explicitContentScanVersion: t
   } = e;
@@ -111,8 +111,8 @@ class O extends(i = o.ZP.Store) {
 }
 c(O, "displayName", "FalsePositiveStore");
 let I = new O(a.Z, {
-  LOGOUT: v,
-  CONNECTION_OPEN: b,
+  LOGOUT: b,
+  CONNECTION_OPEN: v,
   MESSAGE_EXPLICIT_CONTENT_FP_CREATE: g,
   MESSAGE_EXPLICIT_CONTENT_FP_SUBMIT: E
 })

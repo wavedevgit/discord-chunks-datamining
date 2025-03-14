@@ -49,12 +49,12 @@ function E(e, t) {
   return n
 }
 
-function v(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = "DELETED",
+let v = "DELETED",
   y = new Map,
   O = {};
 
@@ -140,21 +140,21 @@ function B(e) {
   return T(n, i.applicationStatus, a), G(i), !0
 }
 
-function V(e) {
+function F(e) {
   let {
     id: t,
     guildId: n
   } = e, r = j(t);
-  null != r && (T(n, b, r.applicationStatus), U(t))
+  null != r && (T(n, v, r.applicationStatus), U(t))
 }
 
-function F(e) {
+function V(e) {
   let {
     guildId: t,
     action: n
   } = e;
   x.values(D(t, _.wB.SUBMITTED)).forEach(e => {
-    G(v(g({}, e), {
+    G(b(g({}, e), {
       applicationStatus: n
     }))
   }), S(t, 0)
@@ -233,10 +233,10 @@ let J = new X(l.Z, {
   GUILD_JOIN_REQUESTS_FETCH_SUCCESS: R,
   GUILD_JOIN_REQUESTS_FETCH_START: C,
   GUILD_JOIN_REQUESTS_FETCH_FAILURE: P,
-  GUILD_JOIN_REQUESTS_BULK_ACTION: F,
+  GUILD_JOIN_REQUESTS_BULK_ACTION: V,
   GUILD_JOIN_REQUEST_CREATE: B,
   GUILD_JOIN_REQUEST_UPDATE: B,
-  GUILD_JOIN_REQUEST_DELETE: V,
+  GUILD_JOIN_REQUEST_DELETE: F,
   GUILD_JOIN_REQUESTS_SET_APPLICATION_TAB: H,
   GUILD_JOIN_REQUESTS_SET_SORT_ORDER: Y,
   GUILD_JOIN_REQUESTS_SET_SELECTED: z

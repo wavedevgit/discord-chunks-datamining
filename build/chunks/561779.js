@@ -27,7 +27,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function v(e) {
   return e
 }
 
-function b(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,7 +52,7 @@ function b(e, t) {
 }
 
 function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -108,7 +108,7 @@ function I(e) {
 }
 
 function S(e) {
-  return v({
+  return b({
     value: Math.min(Math.max(e.initialValue, e.minValue), e.maxValue),
     initialValueProp: e.initialValue,
     newClosestIndex: null
@@ -116,7 +116,7 @@ function S(e) {
 }
 class T extends(r = o.PureComponent) {
   static getDerivedStateFromProps(e, t) {
-    return e.initialValue !== t.initialValueProp ? y(v({}, S(e)), {
+    return e.initialValue !== t.initialValueProp ? y(b({}, S(e)), {
       active: t.active
     }) : null
   }
@@ -144,7 +144,7 @@ class T extends(r = o.PureComponent) {
     } = this.state, {
       disabled: m,
       stickToMarkers: E,
-      className: b,
+      className: v,
       children: O,
       barStyles: I,
       fillStyles: S,
@@ -163,9 +163,9 @@ class T extends(r = o.PureComponent) {
       "aria-label": U,
       "aria-labelledby": G,
       "aria-describedby": B
-    } = this.props, V = 0;
-    E ? null != a && (null != c ? V = a[c] : null != l && (V = a[l])) : V = this.scaleValue(t);
-    let F = "".concat(V, "%"),
+    } = this.props, F = 0;
+    E ? null != a && (null != c ? F = a[c] : null != l && (F = a[l])) : F = this.scaleValue(t);
+    let V = "".concat(F, "%"),
       Z = null != a && null != o ? a.map((e, t) => {
         let n = o[t],
           r = null != C && C === n,
@@ -189,7 +189,7 @@ class T extends(r = o.PureComponent) {
           })
         }, t)
       }) : null,
-      H = null != P ? P(t) : "".concat(V.toFixed(0), "%"),
+      H = null != P ? P(t) : "".concat(F.toFixed(0), "%"),
       W = null !== (e = null == D ? void 0 : D(t)) && void 0 !== e ? e : void 0;
     return (0, i.jsx)(N, {
       active: n,
@@ -200,7 +200,7 @@ class T extends(r = o.PureComponent) {
           focusTarget: this.containerRef,
           ringTarget: this.grabberRef,
           children: (0, i.jsxs)(u.animated.div, {
-            className: s()(g.slider, b, {
+            className: s()(g.slider, v, {
               [g.hasMarks]: (null !== (o = null == Z ? void 0 : Z.length) && void 0 !== o ? o : 0) > 0,
               [g.disabled]: m,
               [g.mini]: T
@@ -237,8 +237,8 @@ class T extends(r = o.PureComponent) {
               style: I,
               children: (0, i.jsx)("div", {
                 className: g.barFill,
-                style: y(v({}, S), {
-                  width: F
+                style: y(b({}, S), {
+                  width: V
                 })
               })
             }), O, (0, i.jsx)("div", {
@@ -248,10 +248,10 @@ class T extends(r = o.PureComponent) {
                 hideOnClick: !1,
                 text: A || E ? null : H,
                 forceOpen: n || r && h.Z.keyboardModeEnabled,
-                children: e => (0, i.jsx)("div", y(v({}, e), {
+                children: e => (0, i.jsx)("div", y(b({}, e), {
                   className: s()(g.grabber, x),
-                  style: y(v({}, M), {
-                    left: F
+                  style: y(b({}, M), {
+                    left: V
                   }),
                   onMouseDown: this.handleMouseDown,
                   ref: this.grabberRef
@@ -450,7 +450,7 @@ class T extends(r = o.PureComponent) {
       null == r || r(c), this.setState({
         value: c
       })
-    }), this.state = v({
+    }), this.state = b({
       active: !1,
       focused: !1,
       dragStartValue: void 0
@@ -466,7 +466,7 @@ function N(e) {
   } = e, i = (0, m.Q3)("Slider"), [a, s] = o.useState(!1), l = (0, f.q)({
     "--grabber-size": n || t || a ? "20px" : "16px",
     "--bar-size": n || t || a ? "6px" : "4px",
-    config: y(v({}, u.config.stiff), {
+    config: y(b({}, u.config.stiff), {
       duration: 100
     })
   });

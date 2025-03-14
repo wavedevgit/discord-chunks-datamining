@@ -3,11 +3,11 @@
 n.d(t, {
   Dv: () => p,
   G2: () => y,
-  IG: () => v,
+  IG: () => b,
   NG: () => g,
   OV: () => m,
   fW: () => O,
-  lB: () => b,
+  lB: () => v,
   mA: () => E
 });
 var r = n(200651);
@@ -118,7 +118,7 @@ let E = e => {
       children: g(t)
     }))
   },
-  v = e => {
+  b = e => {
     var {
       text: t,
       className: n,
@@ -136,12 +136,12 @@ let E = e => {
       children: t
     }))
   },
-  b = e => {
+  v = e => {
     var {
       text: t,
       className: n
     } = e, i = f(e, ["text", "className"]);
-    return (0, r.jsx)(v, c({
+    return (0, r.jsx)(b, c({
       className: o()(s.premiumBadge, n),
       text: t
     }, i))

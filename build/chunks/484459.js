@@ -19,8 +19,8 @@ async function _(e, t) {
     type: m,
     withMutualGuilds: g = !1,
     withMutualFriendsCount: E = !1,
-    withMutualFriends: v = !1,
-    friendToken: b,
+    withMutualFriends: b = !1,
+    friendToken: v,
     preloadUserBanner: y = !0,
     dispatchWait: O = !1,
     guildId: I,
@@ -37,7 +37,7 @@ async function _(e, t) {
     w = u.Z.getMutualFriends(e),
     D = u.Z.getMutualFriendsCount(e);
   g = g || null != I;
-  let L = null == w && v,
+  let L = null == w && b,
     x = null == D && E,
     M = null != I && null == R;
   if (!(null == P && g) && !L && !x && !M && !C) return;
@@ -45,9 +45,9 @@ async function _(e, t) {
   let k = {
       type: m,
       withMutualGuilds: g,
-      withMutualFriends: v,
+      withMutualFriends: b,
       withMutualFriendsCount: E,
-      friendToken: b,
+      friendToken: v,
       guildId: I,
       joinRequestId: T,
       abortSignal: N,

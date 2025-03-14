@@ -17,10 +17,10 @@ function a(e) {
     maxAnimationHeight: c
   } = e, u = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), [d, f] = r.useState(null), _ = r.useCallback(() => {}, []), p = u ? _ : f, h = r.useRef(), m = r.useRef(), g = r.useRef(t), E = r.useRef(a);
   E.current = a;
-  let v = r.useRef(s);
-  v.current = s;
-  let b = r.useRef(l);
-  b.current = l;
+  let b = r.useRef(s);
+  b.current = s;
+  let v = r.useRef(l);
+  v.current = l;
   let y = r.useRef(c);
   y.current = c;
   let [O, I] = r.useState(!1), S = r.useCallback(() => I(!1), []);
@@ -33,8 +33,8 @@ function a(e) {
       height: o
     } = d.getBoundingClientRect();
     !n && (null == h.current || o < h.current) && (h.current = o), n && (null == m.current || o > m.current) && (m.current = o);
-    let a = null !== (e = v.current) && void 0 !== e ? e : h.current,
-      s = null !== (r = b.current) && void 0 !== r ? r : m.current,
+    let a = null !== (e = b.current) && void 0 !== e ? e : h.current,
+      s = null !== (r = v.current) && void 0 !== r ? r : m.current,
       l = g.current !== t;
     if (g.current = t, null == a || null == s || l) return;
     let c = Math.min(null !== (i = y.current) && void 0 !== i ? i : s, s),

@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(254494),
   g = n(593618),
   E = n(451478),
-  v = n(626135),
-  b = n(624138),
+  b = n(626135),
+  v = n(624138),
   y = n(543241),
   O = n(883661),
   I = n(880949),
@@ -69,17 +69,17 @@ function L(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_SIZE),
-  M = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_MARGIN_VERICAL),
-  k = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_SIZE),
-  j = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_MARGIN_VERTICAL),
-  U = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_PADDING),
-  G = (0, b.Mg)(R.__invalid_unicodeCategoryShortcutHeight),
-  B = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
-  V = (0, b.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
-  F = k + M + 2 * U,
+let x = (0, v.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_SIZE),
+  M = (0, v.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_MARGIN_VERICAL),
+  k = (0, v.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_SIZE),
+  j = (0, v.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_MARGIN_VERTICAL),
+  U = (0, v.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_PADDING),
+  G = (0, v.Mg)(R.__invalid_unicodeCategoryShortcutHeight),
+  B = (0, v.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
+  F = (0, v.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
+  V = k + M + 2 * U,
   Z = x + M,
-  H = Z + (B + 2 * V),
+  H = Z + (B + 2 * F),
   W = k + j + 2 * U,
   Y = 7;
 
@@ -93,7 +93,7 @@ function K(e) {
     handleCategorySelect: u,
     isWindowFocused: d,
     useReducedMotion: _
-  } = e, p = (0, c.JA)("expression-guild-".concat(n)), h = l.type === T.En.GUILD ? null : l.id, m = t === n, E = l.type === T.En.GUILD ? l.guild : null, b = (0, r.jsxs)(f.P3F, L(w({}, p), {
+  } = e, p = (0, c.JA)("expression-guild-".concat(n)), h = l.type === T.En.GUILD ? null : l.id, m = t === n, E = l.type === T.En.GUILD ? l.guild : null, v = (0, r.jsxs)(f.P3F, L(w({}, p), {
     "aria-label": (0, y.Nf)(l, E),
     className: a()({
       [R.categoryItemGuildCategory]: null != E,
@@ -102,7 +102,7 @@ function K(e) {
       [R.categoryItemRecentEmoji]: l.type === T.En.RECENT
     }),
     onClick: () => {
-      null != E && v.default.track(N.rMx.EXPRESSION_PICKER_CATEGORY_SELECTED, {
+      null != E && b.default.track(N.rMx.EXPRESSION_PICKER_CATEGORY_SELECTED, {
         location: null == o ? void 0 : o.location,
         tab: A.X1.EMOJI,
         guild_id: E.id
@@ -126,12 +126,12 @@ function K(e) {
       guild: E,
       includeActivity: !1,
       children: (0, r.jsx)("div", {
-        children: b
+        children: v
       })
     }), C ? (0, r.jsx)("hr", {
       className: R.guildCategorySeparator
     }, "separator") : null]
-  }) : b
+  }) : v
 }
 let z = e => {
   let {
@@ -141,24 +141,24 @@ let z = e => {
     intention: s,
     channel: c,
     shouldShowSoundmojiInEmojiPicker: d = !1
-  } = e, g = h.kJ.useStore(e => e.activeCategoryIndex), v = (0, S.Ni)({
+  } = e, g = h.kJ.useStore(e => e.activeCategoryIndex), b = (0, S.Ni)({
     sectionDescriptors: o,
     emojiListRef: n
-  }), b = (0, _.O)(), O = (0, y.kI)(s, c, null == c ? void 0 : c.guild_id, d), I = i.useRef(null), N = (0, u.e7)([E.Z], () => E.Z.isFocused()), A = (0, u.e7)([p.Z], () => p.Z.useReducedMotion, []), P = i.useMemo(() => l().memoize((e, t) => {
+  }), v = (0, _.O)(), O = (0, y.kI)(s, c, null == c ? void 0 : c.guild_id, d), I = i.useRef(null), N = (0, u.e7)([E.Z], () => E.Z.isFocused()), A = (0, u.e7)([p.Z], () => p.Z.useReducedMotion, []), P = i.useMemo(() => l().memoize((e, t) => {
     let n = O[t];
     if (null != n) return (0, r.jsx)(K, {
       activeIndex: g,
-      analyticsContext: b,
+      analyticsContext: v,
       categories: O,
       category: n,
       categoryIndex: t,
-      handleCategorySelect: v,
+      handleCategorySelect: b,
       isWindowFocused: N,
       useReducedMotion: A
     }, t)
-  }), [g, b, O, v, N, A]), w = i.useMemo(() => [8, 8, 0, 8], []), D = i.useCallback((e, t) => {
+  }), [g, v, O, b, N, A]), w = i.useMemo(() => [8, 8, 0, 8], []), D = i.useCallback((e, t) => {
     let n = O[t];
-    if (n.type === T.En.RECENT) return F;
+    if (n.type === T.En.RECENT) return V;
     if (n.type === T.En.GUILD) {
       let e = O[t + 1];
       return null != e && e.type !== T.En.GUILD ? H : Z
@@ -177,7 +177,7 @@ let z = e => {
     O.forEach(i => {
       i.type === T.En.GUILD ? (t += 1, n += 1) : i.type === T.En.UNICODE ? r += 1 : (e += 1, t += 1)
     });
-    let i = F + t * Z + H;
+    let i = V + t * Z + H;
     return {
       nonUnicodeCategoryCount: t,
       firstUnicodeCategoryIndex: t,
@@ -204,7 +204,7 @@ let z = e => {
       if (n.type === T.En.RECENT) return t ? 0 : j;
       if (n.type === T.En.GUILD) {
         let n = O[e + 1];
-        return null != n && n.type !== T.En.GUILD ? t ? B + -2 * V + M + r : M : t ? r : M
+        return null != n && n.type !== T.En.GUILD ? t ? B + -2 * F + M + r : M : t ? r : M
       }
       return t ? M + r : 2 * M
     }, [O, q]),

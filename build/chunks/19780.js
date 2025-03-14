@@ -37,8 +37,8 @@ function g(e) {
   return e
 }
 let E = [],
-  v = null,
   b = null,
+  v = null,
   y = null,
   O = null,
   I = !1,
@@ -143,11 +143,11 @@ function N() {
 }
 
 function A(e) {
-  return i = e.sessionId, v = null, b = null, N(), !1
+  return i = e.sessionId, b = null, v = null, N(), !1
 }
 
 function C() {
-  i = null, v = null, b = null, N()
+  i = null, b = null, v = null, N()
 }
 
 function R(e) {
@@ -157,10 +157,10 @@ function R(e) {
   return t.reduce((e, t) => {
     var n, o, a;
     if (null == y || y.updateVoiceStates(t.userId, t.channelId), I = I || (null !== (n = null == y ? void 0 : y.getStats().max_voice_state_count) && void 0 !== n ? n : 0) > 1, f.default.getId() !== t.userId) return !1;
-    if (null != r) t.sessionId === i ? null != t.guildId && t.guildId === r.guildId || null == t.guildId && t.channelId === r.channelId ? null == t.channelId ? N() : r.channelId = t.channelId : (t.guildId !== r.guildId && null == t.channelId || N(), null != t.channelId && (v = null, b = null, r = T(t.guildId, t.channelId), I = (null !== (o = null == y ? void 0 : y.getStats().max_voice_state_count) && void 0 !== o ? o : 0) > 1)) : t.guildId === r.guildId && ((null == u.Z.getAwaitingRemoteSessionInfo() || null == u.Z.getRemoteSessionId()) && (v = r.channelId), N());
+    if (null != r) t.sessionId === i ? null != t.guildId && t.guildId === r.guildId || null == t.guildId && t.channelId === r.channelId ? null == t.channelId ? N() : r.channelId = t.channelId : (t.guildId !== r.guildId && null == t.channelId || N(), null != t.channelId && (b = null, v = null, r = T(t.guildId, t.channelId), I = (null !== (o = null == y ? void 0 : y.getStats().max_voice_state_count) && void 0 !== o ? o : 0) > 1)) : t.guildId === r.guildId && ((null == u.Z.getAwaitingRemoteSessionInfo() || null == u.Z.getRemoteSessionId()) && (b = r.channelId), N());
     else {
       if (t.sessionId !== i || null == t.channelId) return e;
-      v = null, b = null, r = T(t.guildId, t.channelId), I = (null !== (a = null == y ? void 0 : y.getStats().max_voice_state_count) && void 0 !== a ? a : 0) > 1
+      b = null, v = null, r = T(t.guildId, t.channelId), I = (null !== (a = null == y ? void 0 : y.getStats().max_voice_state_count) && void 0 !== a ? a : 0) > 1
     }
     return !0
   }, !1)
@@ -172,11 +172,11 @@ function P(e) {
 }
 
 function w() {
-  v = null
+  b = null
 }
 
 function D() {
-  b = null
+  v = null
 }
 
 function L(e) {
@@ -227,7 +227,7 @@ function B(e) {
   return e.connection === r
 }
 
-function V(e) {
+function F(e) {
   let {
     userId: t,
     context: n,
@@ -236,7 +236,7 @@ function V(e) {
   null == r || r.setSimulcastDebugOverride(t, n, i)
 }
 
-function F(e) {
+function V(e) {
   let {
     streamId: t,
     width: n,
@@ -261,13 +261,13 @@ class Z extends(o = a.ZP.Store) {
     return this.getState() === p.hes.DISCONNECTED
   }
   getRemoteDisconnectVoiceChannelId() {
-    return v
-  }
-  getLastSessionVoiceChannelId() {
     return b
   }
+  getLastSessionVoiceChannelId() {
+    return v
+  }
   setLastSessionVoiceChannelId(e) {
-    b = e
+    v = e
   }
   getGuildId() {
     return null == r ? void 0 : r.guildId
@@ -340,7 +340,7 @@ let H = new Z(s.Z, __OVERLAY__ ? {} : {
   RTC_CONNECTION_SECURE_FRAMES_UPDATE: G,
   RTC_CONNECTION_CLIENT_CONNECT: G,
   RTC_CONNECTION_CLIENT_DISCONNECT: G,
-  VIDEO_SIZE_UPDATE: F,
+  VIDEO_SIZE_UPDATE: V,
   VOICE_STATE_UPDATES: R,
   VOICE_CHANNEL_SELECT: k,
   VOICE_SERVER_UPDATE: P,
@@ -352,7 +352,7 @@ let H = new Z(s.Z, __OVERLAY__ ? {} : {
   THREAD_DELETE: M,
   CALL_DELETE: x,
   APP_STATE_UPDATE: j,
-  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: V
+  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: F
 });
 Promise.resolve().then(n.bind(n, 626135)).then(e => {
   let {

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => V
+  Z: () => F
 }), n(266796), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(341907),
   g = n(703656),
   E = n(317257),
-  v = n(594174),
-  b = n(626135),
+  b = n(594174),
+  v = n(626135),
   y = n(111361),
   O = n(291175),
   I = n(785717),
@@ -95,7 +95,7 @@ let U = e => {
   },
   B = e => e.id === E.l.ORB_PROFILE_BADGE ? M : (0, C.Ej)(e.icon);
 
-function V(e) {
+function F(e) {
   var t;
   let {
     badges: n,
@@ -103,13 +103,13 @@ function V(e) {
     badgeClassName: f,
     displayProfile: M,
     onClose: k,
-    shouldOpenBadgeTooltip: V
+    shouldOpenBadgeTooltip: F
   } = e, {
-    analyticsLocations: F
+    analyticsLocations: V
   } = (0, u.ZP)(c.Z.BADGE), {
     context: Z,
     trackUserProfileAction: H
-  } = (0, I.KZ)(), [W, Y] = i.useState(!1), K = v.default.getCurrentUser(), z = (0, y.yd)(null == K ? void 0 : K.premiumType, P.p9.TIER_2), {
+  } = (0, I.KZ)(), [W, Y] = i.useState(!1), K = b.default.getCurrentUser(), z = (0, y.yd)(null == K ? void 0 : K.premiumType, P.p9.TIER_2), {
     isBadgeVersion2: q
   } = (0, d.D)(), Q = (0, N.Of)(null !== (t = null == K ? void 0 : K.id) && void 0 !== t ? t : null), X = (0, T.Z)(Q).some(e => e.id === E.l.ORB_PROFILE_BADGE);
   return (0, r.jsx)("div", {
@@ -125,7 +125,7 @@ function V(e) {
               action: "PRESS_BADGE"
             }), (0, S.NE)(j({
               badge: e.id,
-              analyticsLocations: F
+              analyticsLocations: V
             }, Z)), t) {
             (0, m.navigateToQuestHome)(X ? void 0 : {
               questId: D.V
@@ -133,53 +133,53 @@ function V(e) {
             return
           }
           if (i) {
-            if (n.preventDefault(), b.default.track(R.rMx.TIERED_TENURE_BADGE_CLICKED, {
+            if (n.preventDefault(), v.default.track(R.rMx.TIERED_TENURE_BADGE_CLICKED, {
                 badge: e.id,
                 premium_type: z,
                 viewed_user_id: null == M ? void 0 : M.userId
               }), z) {
               (null == M ? void 0 : M.userId) === (null == K ? void 0 : K.id) ? (0, g.uL)(R.Z5c.NITRO_HOME) : (0, _.k)({
-                analyticsLocations: F,
+                analyticsLocations: V,
                 displayProfile: M
               }), null == k || k();
               return
             }
             if ((null == M ? void 0 : M.userId) === (null == K ? void 0 : K.id)) {
               let t = null != e.link ? (0, l.default)(e.link, {
-                analyticsLocations: F
+                analyticsLocations: V
               }) : null;
               if (null == t) return;
               return null == k || k(), t(n)
             }
             return (0, _.k)({
-              analyticsLocations: F,
+              analyticsLocations: V,
               displayProfile: M
             }), void(null == k || k())
           }
           let r = null != e.link ? (0, l.default)(e.link, {
-            analyticsLocations: F
+            analyticsLocations: V
           }) : null;
           if (null != r) return null == k || k(), r(n)
         },
         c = () => {
-          e.id === T.i && b.default.track(R.rMx.QUEST_CONTENT_VIEWED, j({}, (0, p.mH)(h.jn.QUEST_BADGE))), H({
+          e.id === T.i && v.default.track(R.rMx.QUEST_CONTENT_VIEWED, j({}, (0, p.mH)(h.jn.QUEST_BADGE))), H({
             action: "HOVER_BADGE"
           }), (0, S.Qf)(j({
             badge: e.id,
-            analyticsLocations: F
+            analyticsLocations: V
           }, Z))
         },
         u = U(null == n ? void 0 : n.id),
         d = null != n && W,
-        v = G({
+        b = G({
           badge: e,
           tieredTenureBadge: i && e.id !== w.a ? n : void 0,
           currentUserOwnsOrbBadge: X
         });
       return (0, r.jsx)(s.DY3, {
-        text: v,
+        text: b,
         "aria-label": e.description,
-        forceOpen: null != V && V(e.id),
+        forceOpen: null != F && F(e.id),
         delay: C.vB,
         tooltipClassName: u,
         onTooltipShow: () => Y(null != n && 1 === n.badgeVersion),

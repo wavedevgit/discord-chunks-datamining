@@ -8,7 +8,7 @@ n.d(t, {
   _N: () => w,
   cS: () => L,
   cZ: () => G,
-  e1: () => F,
+  e1: () => V,
   eQ: () => R,
   fw: () => C,
   uY: () => x,
@@ -30,8 +30,8 @@ var r = n(392711),
   m = n(699516),
   g = n(70956),
   E = n(5192),
-  v = n(489887),
-  b = n(981631),
+  b = n(489887),
+  v = n(981631),
   y = n(388032);
 
 function O(e, t, n) {
@@ -97,7 +97,7 @@ function R(e) {
 }
 
 function P(e) {
-  return (0, l.e7)([h.Z], () => !!(null != e && e.id !== c.V && b.TPd.POLLS.has(e.type)) && (!!e.isPrivate() || h.Z.can(b.Plq.SEND_MESSAGES, e) && h.Z.can(b.Plq.SEND_POLLS, e)))
+  return (0, l.e7)([h.Z], () => !!(null != e && e.id !== c.V && v.TPd.POLLS.has(e.type)) && (!!e.isPrivate() || h.Z.can(v.Plq.SEND_MESSAGES, e) && h.Z.can(v.Plq.SEND_POLLS, e)))
 }
 
 function w() {
@@ -159,7 +159,7 @@ function j(e, t) {
 
 function U(e) {
   let t = (0, d.ZH)(e),
-    n = j(e, v.Dv);
+    n = j(e, b.Dv);
   return y.NW.format(y.t.Vn97KS, {
     username: t.nick,
     title: n
@@ -180,13 +180,13 @@ function B(e, t) {
       animated: !1
     },
     r = e.getChannelId(),
-    o = _.Z.getReactions(r, e.id, n, v.$J, u.O.VOTE),
+    o = _.Z.getReactions(r, e.id, n, b.$J, u.O.VOTE),
     a = f.Z.getChannel(r),
     s = null == a || a.isPrivate() ? null : a.getGuildId();
-  return i()(o).reject(e => m.Z.isBlockedOrIgnored(e.id)).take(v.$J).map(e => E.ZP.getName(s, null == a ? void 0 : a.id, e)).value()
+  return i()(o).reject(e => m.Z.isBlockedOrIgnored(e.id)).take(b.$J).map(e => E.ZP.getName(s, null == a ? void 0 : a.id, e)).value()
 }
 
-function V(e, t) {
+function F(e, t) {
   let n = Math.max(0, t - e.length);
   return 1 === e.length ? n > 0 ? y.NW.formatToPlainString(y.t["SV/iZm"], {
     a: e[0],
@@ -212,7 +212,7 @@ function V(e, t) {
   })
 }
 
-function F(e, t, n) {
+function V(e, t, n) {
   var r, i;
   let o = p.Z.getMessage(t, e);
   if (null == o) return "";
@@ -223,5 +223,5 @@ function F(e, t, n) {
     }),
     s = null !== (i = null == a ? void 0 : null === (r = a.count_details) || void 0 === r ? void 0 : r.vote) && void 0 !== i ? i : 0,
     l = B(o, n);
-  return 0 === l.length ? "" : V(l, s)
+  return 0 === l.length ? "" : F(l, s)
 }

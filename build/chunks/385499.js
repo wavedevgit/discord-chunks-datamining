@@ -62,11 +62,11 @@ let h = e => {
       children: g = []
     } = e,
     E = null,
-    v = c.NW.string(c.t.g76OcH);
+    b = c.NW.string(c.t.g76OcH);
   switch (i) {
     case l.Hb.SYSTEM_DM:
     case l.Hb.OFFICIAL:
-      _ = !0, v = c.NW.string(c.t["7s687u"]), E = c.NW.string(c.t.lKQ7Wl);
+      _ = !0, b = c.NW.string(c.t["7s687u"]), E = c.NW.string(c.t.lKQ7Wl);
       break;
     case l.Hb.SERVER:
       E = c.NW.string(c.t.PuJGuL);
@@ -78,7 +78,7 @@ let h = e => {
       E = c.NW.string(c.t.oMx98P);
       break;
     case l.Hb.AI:
-      _ = !0, v = c.NW.string(c.t.d5YwQE), E = c.NW.string(c.t.pLTJZG);
+      _ = !0, b = c.NW.string(c.t.d5YwQE), E = c.NW.string(c.t.pLTJZG);
       break;
     case l.Hb.REMIX:
       _ = !1, E = c.NW.string(c.t.uXDG39);
@@ -87,11 +87,11 @@ let h = e => {
     default:
       E = c.NW.string(c.t["9RNkeH"])
   }
-  let b = i === l.Hb.ORIGINAL_POSTER,
+  let v = i === l.Hb.ORIGINAL_POSTER,
     y = i === l.Hb.REMIX,
     O = null;
   _ && (O = (0, r.jsx)(a.u, {
-    text: v,
+    text: b,
     align: "center",
     position: "top",
     children: e => (0, r.jsx)(s.kSu, p(f({}, e), {
@@ -101,7 +101,7 @@ let h = e => {
   })), t = i === l.Hb.AI ? u.botTagAI : n ? u.botTagInvert : u.botTagRegular;
   let I = e => (0, r.jsxs)("span", p(f({}, e), {
     className: o()(d, t, m ? u.rem : u.px, {
-      [u.botTagOP]: b,
+      [u.botTagOP]: v,
       [u.botTagRemix]: y
     }),
     children: [h ? null : O, g, (0, r.jsx)("span", {

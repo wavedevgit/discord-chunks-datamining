@@ -23,8 +23,8 @@ function g(e) {
     recentActivityTabEnabled: t
   } = (0, _.O)({
     location: "useUserProfileActivity"
-  }), n = (0, o.e7)([d.default], () => d.default.getId() === e), g = (0, a.Z)(e, "use-user-profile-activity"), E = (0, o.e7)([f.Z], () => f.Z.getActivities(e)), v = (0, o.e7)([s.Z], () => n || t ? s.Z.getUserOutbox(e) : void 0), {
-    live: b,
+  }), n = (0, o.e7)([d.default], () => d.default.getId() === e), g = (0, a.Z)(e, "use-user-profile-activity"), E = (0, o.e7)([f.Z], () => f.Z.getActivities(e)), b = (0, o.e7)([s.Z], () => n || t ? s.Z.getUserOutbox(e) : void 0), {
+    live: v,
     recent: y
   } = (0, r.useMemo)(() => {
     let e = (0, i.uniqWith)(E.filter(e => {
@@ -33,16 +33,16 @@ function g(e) {
         } = e;
         return t !== p.IIU.CUSTOM_STATUS && t !== p.IIU.HANG_STATUS
       }), (e, t) => null != e.application_id && null != t.application_id && e.application_id === t.application_id || null != e.name && null != t.name && e.name === t.name),
-      t = null == v ? void 0 : v.entries.filter(t => !(0, u.Jg)(t) && ((0, l.dU)(t) ? t.extra.entries.length > 0 && !e.some(e => null != e && (0, c.pB)(t, e)) : (0, l.y0)(t) ? !e.some(e => null != e && (0, c.RL)(t, e)) : (0, l.Rh)(t)));
+      t = null == b ? void 0 : b.entries.filter(t => !(0, u.Jg)(t) && ((0, l.dU)(t) ? t.extra.entries.length > 0 && !e.some(e => null != e && (0, c.pB)(t, e)) : (0, l.y0)(t) ? !e.some(e => null != e && (0, c.RL)(t, e)) : (0, l.Rh)(t)));
     return {
       live: 0 === e.length ? h : e,
       recent: null == t || 0 === t.length ? m : t
     }
-  }, [E, null == v ? void 0 : v.entries]);
+  }, [E, null == b ? void 0 : b.entries]);
   return {
-    live: b,
+    live: v,
     recent: y,
     stream: g,
-    outbox: v
+    outbox: b
   }
 }

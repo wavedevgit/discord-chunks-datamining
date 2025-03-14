@@ -54,8 +54,8 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = new o.Z("VoiceFilterManager");
-class b extends i.Z {
+let b = new o.Z("VoiceFilterManager");
+class v extends i.Z {
   loadNativeModule() {
     (0, f.r5)()
   }
@@ -65,7 +65,7 @@ class b extends i.Z {
       analyticsContext: n
     } = e, r = null != t ? d.Z.getVoiceFilter(t) : void 0;
     if (null == r && null != t) {
-      v.error("requested Voice Filter is missing in VoiceFilterStore");
+      b.error("requested Voice Filter is missing in VoiceFilterStore");
       return
     }
     if ((null == r ? void 0 : r.modelIds) != null) {
@@ -76,7 +76,7 @@ class b extends i.Z {
           url: e[t].url,
           fileName: "".concat(t, ".onnx")
         }));
-      for (let e of (v.info("Ensuring we have dependencies for voice filter", r.id, t), t))(0, f.fz)(e, n)
+      for (let e of (b.info("Ensuring we have dependencies for voice filter", r.id, t), t))(0, f.fz)(e, n)
     } else(0, f.rk)(t, n)
   }
   handleVoiceFilterFileReady(e) {
@@ -94,13 +94,13 @@ class b extends i.Z {
       }), c && null != o) {
       let e = d.Z.getVoiceFilter(o);
       if (null == e) {
-        v.error("the VF in mostRecentlyRequestedVoiceFilter is missing. Has the store been cleared?");
+        b.error("the VF in mostRecentlyRequestedVoiceFilter is missing. Has the store been cleared?");
         return
       }
       let n = e.modelIds,
         r = Object.values(null != n ? n : {}).filter(e => !d.Z.isModelDownloaded(e)).filter(e => e !== t);
       if (r.length > 0) {
-        v.info("waiting for more dependencies", {
+        b.info("waiting for more dependencies", {
           mostRecentlyRequestedVoiceFilter: o,
           missingDependencies: r
         });
@@ -169,4 +169,4 @@ class b extends i.Z {
     })
   }
 }
-let y = new b
+let y = new v

@@ -19,8 +19,8 @@ let h = new r.V7,
   m = new r.V7,
   g = 18e4,
   E = 5 * f.Z.Millis.SECOND,
-  v = 12 * f.Z.Millis.SECOND,
-  b = null;
+  b = 12 * f.Z.Millis.SECOND,
+  v = null;
 
 function y(e, t) {
   if (u.Z.getVoiceChannelId() !== e) return !1;
@@ -29,7 +29,7 @@ function y(e, t) {
   let r = a.Z.getStreamForUser(t, n.getGuildId());
   if (null == r) return !1;
   let i = (0, _.V9)(r);
-  return i !== b && (b = i, (0, o.rn)(r, {
+  return i !== v && (v = i, (0, o.rn)(r, {
     noFocus: !0
   }), !0)
 }
@@ -41,7 +41,7 @@ function O(e, t) {
 let I = {
   init() {
     let e = (e, t) => {
-      d.Z.getAllActiveStreamKeys().includes(e) || m.start(t ? v : E, () => {
+      d.Z.getAllActiveStreamKeys().includes(e) || m.start(t ? b : E, () => {
         i.Z.dispatch({
           type: "STREAM_TIMED_OUT",
           streamKey: e
@@ -80,7 +80,7 @@ let I = {
         channelId: t
       } = e;
       if (null == t) return;
-      b = null;
+      v = null;
       let n = a.Z.getAllApplicationStreamsForChannel(t).filter(e => {
         let {
           ownerId: t

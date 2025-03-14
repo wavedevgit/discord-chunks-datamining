@@ -6,17 +6,17 @@ var r = n(200651),
   i = n(192379),
   o = n(120356),
   a = n.n(o),
-  l = n(442837),
-  s = n(893776),
+  s = n(442837),
+  l = n(893776),
   c = n(493773),
   u = n(129293),
   d = n(388905),
   h = n(17894),
   p = n(108427),
-  f = n(626135),
-  g = n(981631),
+  g = n(626135),
+  m = n(981631),
   _ = n(388032),
-  m = n(507442),
+  f = n(507442),
   b = n(802138);
 
 function x(e) {
@@ -27,7 +27,7 @@ function N(e) {
   let {
     location: t,
     transitionTo: o = x
-  } = e, [l, N] = i.useState("submitting"), v = i.useRef(void 0);
+  } = e, [s, N] = i.useState("submitting"), v = i.useRef(void 0);
   (0, c.ZP)(() => {
     (0, p.e)("verify_email");
     let e = (0, u.Z)(t);
@@ -36,25 +36,25 @@ function N(e) {
       return
     }(async () => {
       try {
-        let t = await s.Z.verify(e);
+        let t = await l.Z.verify(e);
         N("succeeded"), v.current = t
       } catch (e) {
         N("failed")
       }
     })()
   });
-  let I = i.useCallback(() => {
-      o(g.Z5c.LOGIN)
+  let E = i.useCallback(() => {
+      o(m.Z5c.LOGIN)
     }, [o]),
-    E = i.useCallback(() => {
-      f.default.track(g.rMx.VERIFY_ACCOUNT_APP_OPENED, {
+    I = i.useCallback(() => {
+      g.default.track(m.rMx.VERIFY_ACCOUNT_APP_OPENED, {
         verifying_user_id: v.current
       }), (0, h.Z)("verify_email")
     }, []);
-  return "failed" === l ? (0, r.jsxs)(d.ZP, {
+  return "failed" === s ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
       src: n(375673),
-      className: a()(m.image, b.marginBottom20)
+      className: a()(f.image, b.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: b.marginBottom8,
       children: _.NW.string(_.t.PCgG39)
@@ -62,24 +62,24 @@ function N(e) {
       className: b.marginBottom40,
       children: _.NW.string(_.t.tQpeAw)
     }), (0, r.jsx)(d.zx, {
-      onClick: I,
+      onClick: E,
       children: _.NW.string(_.t.dKhVQE)
     })]
-  }) : "succeeded" === l ? (0, r.jsxs)(d.ZP, {
+  }) : "succeeded" === s ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
       src: n(73962),
-      className: a()(m.image, b.marginBottom20)
+      className: a()(f.image, b.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: b.marginBottom40,
       children: _.NW.string(_.t.dAfGb2)
     }), (0, r.jsx)(d.zx, {
-      onClick: E,
+      onClick: I,
       children: _.NW.string(_.t.uJWIj4)
     })]
   }) : (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
       src: n(892235),
-      className: a()(m.image, b.marginBottom20)
+      className: a()(f.image, b.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: b.marginBottom8,
       children: _.NW.string(_.t["0c8+5u"])
@@ -92,4 +92,4 @@ function N(e) {
     })]
   })
 }
-l.ZP.initialize()
+s.ZP.initialize()

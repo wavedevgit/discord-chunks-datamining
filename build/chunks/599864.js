@@ -27,9 +27,9 @@ function h(e) {
   } = (0, u.z)(), g = (0, i.e7)([c.Z], () => c.Z.isInChannel(t.id));
   if (!(0, i.e7)([l.Z], () => t.isPrivate() || l.Z.can(_.Plq.CONNECT, t))) return null;
   let E = () => m === f.y0.FULL_SIZE ? p.NW.string(p.t["3xjX0d"]) : t.isDM() || t.isGroupDM() ? p.NW.string(p.t["7hwn2N"]) : t.isGuildStageVoice() ? p.NW.string(p.t.Acqcoq) : p.NW.string(p.t.BXxdl5),
-    v = () => m === f.y0.FULL_SIZE ? p.NW.string(p.t.VJlc0d) : t.isDM() || t.isGroupDM() ? p.NW.string(p.t.ozoE2N) : t.isGuildStageVoice() ? p.NW.string(p.t["7vb2cX"]) : p.NW.string(p.t["96ANUF"]);
+    b = () => m === f.y0.FULL_SIZE ? p.NW.string(p.t.VJlc0d) : t.isDM() || t.isGroupDM() ? p.NW.string(p.t.ozoE2N) : t.isGuildStageVoice() ? p.NW.string(p.t["7vb2cX"]) : p.NW.string(p.t["96ANUF"]);
   return (0, r.jsx)(d.tG, {
-    text: g ? E() : v(),
+    text: g ? E() : b(),
     themeColor: g ? "secondary" : "primary",
     fullWidth: !0,
     onClick: e => {

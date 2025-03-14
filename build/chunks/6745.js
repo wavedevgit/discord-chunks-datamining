@@ -79,7 +79,7 @@ function m(e) {
     className: m,
     multiSelect: g
   } = e, E = p(e, ["children", "placeholder", "value", "onChange", "onClose", "showScrollbar", "className", "multiSelect"]);
-  let v = i.useCallback(e => {
+  let b = i.useCallback(e => {
     u(e), g || null == f || f()
   }, [u, f, g]);
   return (0, r.jsx)(s.V, {
@@ -90,7 +90,7 @@ function m(e) {
       showScrollbar: h,
       value: o,
       multiSelect: g,
-      onChange: v,
+      onChange: b,
       placeholder: n,
       children: t,
       listClassName: c.list

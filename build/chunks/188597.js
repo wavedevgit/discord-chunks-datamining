@@ -4,7 +4,7 @@ n.d(t, {
   $s: () => C,
   A0: () => R,
   Sg: () => T,
-  ow: () => b,
+  ow: () => v,
   rQ: () => N,
   t$: () => A,
   tM: () => O
@@ -34,7 +34,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function v(e) {
   return e
 }
 
-function b(e) {
+function v(e) {
   return null == e || "" === e || Number.isNaN(e) ? Date.now() : d.default.extractTimestamp(e) + 9e5
 }
 
@@ -77,7 +77,7 @@ let O = async e => {
     },
     onFailure: (e, t) => S(p, e, t)
   }), null != g && (0, f.B0)(n, E, g, s);
-  let b = {
+  let v = {
     type: a.B8.MESSAGE_COMPONENT,
     nonce: E,
     guild_id: h,
@@ -86,14 +86,14 @@ let O = async e => {
     message_id: n,
     application_id: l,
     session_id: u.default.getSessionId(),
-    data: v({
+    data: b({
       component_type: t,
       custom_id: o
     }, I(g))
   };
   await r.tn.post({
     url: m.ANM.INTERACTIONS,
-    body: b,
+    body: v,
     timeout: 3e3,
     rejectWithError: !1
   }, e => {
@@ -139,7 +139,7 @@ var N = function(e) {
 }({});
 let A = (e, t) => {
   let n = null == t ? void 0 : t.state,
-    r = e.state === m.yb.SENT && b(e.id) < Date.now(),
+    r = e.state === m.yb.SENT && v(e.id) < Date.now(),
     i = e.state === m.yb.SEND_FAILED && y(e.id) < Date.now(),
     o = (null == t ? void 0 : t.data.interactionType) === a.B8.APPLICATION_COMMAND,
     s = e.isCommandType();

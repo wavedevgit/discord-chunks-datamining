@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(887490),
   g = n(77224),
   E = n(135223),
-  v = n(704875),
-  b = n(653309),
+  b = n(704875),
+  v = n(653309),
   y = n(981631),
   O = n(725943),
   I = n(509045);
@@ -120,7 +120,7 @@ class P extends i.PureComponent {
     "rtl" === a.dir && (a.style = A(T({}, a.style), {
       textAlign: "right"
     }));
-    let l = null !== (t = null == o ? void 0 : o(e)) && void 0 !== t ? t : (0, v.Z)(e, n, i);
+    let l = null !== (t = null == o ? void 0 : o(e)) && void 0 !== t ? t : (0, b.Z)(e, n, i);
     return null != l ? l : (0, r.jsx)("div", A(T({}, a), {
       children: s
     }))
@@ -133,7 +133,7 @@ class P extends i.PureComponent {
     } = this.props, {
       attributes: o,
       children: a
-    } = e, s = null !== (t = null == i ? void 0 : i(e)) && void 0 !== t ? t : (0, b.Z)(n, e);
+    } = e, s = null !== (t = null == i ? void 0 : i(e)) && void 0 !== t ? t : (0, v.Z)(n, e);
     return null != s ? s : (0, r.jsx)("span", A(T({}, o), {
       children: a
     }))
@@ -352,9 +352,9 @@ class P extends i.PureComponent {
         onKeyUp: m,
         decorateExtra: g,
         renderExtraElement: E,
-        renderExtraLeaf: v
+        renderExtraLeaf: b
       } = e,
-      b = C(e, ["editor", "className", "containerClassName", "canFocus", "autoFocus", "placeholder", "channelId", "guildId", "onChange", "onFocus", "onBlur", "onKeyDown", "onKeyUp", "decorateExtra", "renderExtraElement", "renderExtraLeaf"]);
+      v = C(e, ["editor", "className", "containerClassName", "canFocus", "autoFocus", "placeholder", "channelId", "guildId", "onChange", "onFocus", "onBlur", "onKeyDown", "onKeyUp", "decorateExtra", "renderExtraElement", "renderExtraLeaf"]);
     return (0, r.jsxs)("div", {
       ref: this.containerRef,
       className: i,
@@ -365,7 +365,7 @@ class P extends i.PureComponent {
       }) : null, (0, r.jsx)(s.mH, {
         editor: t,
         value: [...this.state.initialValue],
-        children: (0, r.jsx)(s.CX, A(T({}, b), {
+        children: (0, r.jsx)(s.CX, A(T({}, v), {
           className: a()(I.markup, O.editor, n),
           decorate: this.decorate,
           renderElement: this.renderElement,

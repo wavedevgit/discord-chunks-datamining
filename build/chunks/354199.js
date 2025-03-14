@@ -15,8 +15,8 @@ var r = n(754675),
   m = "[object ArrayBuffer]",
   g = "[object DataView]",
   E = "[object Float32Array]",
-  v = "[object Float64Array]",
-  b = "[object Int8Array]",
+  b = "[object Float64Array]",
+  v = "[object Int8Array]",
   y = "[object Int16Array]",
   O = "[object Int32Array]",
   I = "[object Uint8Array]",
@@ -35,8 +35,8 @@ function A(e, t, n) {
     case g:
       return i(e, n);
     case E:
-    case v:
     case b:
+    case v:
     case y:
     case O:
     case I:

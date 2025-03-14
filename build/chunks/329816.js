@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(721037),
   g = n(490173),
   E = n(114250),
-  v = n(735246),
-  b = n(315263),
+  b = n(735246),
+  v = n(315263),
   y = n(40851),
   O = n(607070),
   I = n(899663),
@@ -41,8 +41,8 @@ var r = n(200651),
   U = n(947519),
   G = n(605236),
   B = n(243778),
-  V = n(314910),
-  F = n(84615),
+  F = n(314910),
+  V = n(84615),
   Z = n(429142),
   H = n(813744),
   W = n(311476),
@@ -107,7 +107,7 @@ function ep(e, t) {
 n(167666), Promise.resolve().then(n.bind(n, 62883)).then(e => {
   $.isPlatformEmbedded ? window.addEventListener("contextmenu", e.contextMenuCallbackNative, !1) : window.addEventListener("contextmenu", e.contextMenuCallbackWeb, !1)
 }), (0, _.E)({
-  getDefaultLinkInterceptor: b.default
+  getDefaultLinkInterceptor: v.default
 }), (0, et.Un)({
   createPromise: () => Promise.all([n.e("77298"), n.e("80451"), n.e("30634"), n.e("33551")]).then(n.bind(n, 849493)),
   webpackId: 849493
@@ -140,7 +140,7 @@ let eh = (0, et.Un)({
       skipsSettingDefaultPageTitle: n
     } = e, {
       pathname: o
-    } = (0, l.TH)(), _ = (0, $.getPlatform)(), b = c.tq || c.Em, q = (0, u.e7)([K.Z], () => K.Z.darkSidebar ? el.BRd.DARK : void 0), J = (0, j.Q3)("AppSkeleton");
+    } = (0, l.TH)(), _ = (0, $.getPlatform)(), v = c.tq || c.Em, q = (0, u.e7)([K.Z], () => K.Z.darkSidebar ? el.BRd.DARK : void 0), J = (0, j.Q3)("AppSkeleton");
     i.useEffect(() => {
       f.K.set(j.k9, String(J))
     }, [J]);
@@ -149,8 +149,8 @@ let eh = (0, et.Un)({
       [ef, e_] = (0, u.Wu)([C.Z], () => [C.Z.isEditorOpen, C.Z.isUpsellPreview]),
       ep = (0, u.e7)([Q.Z], () => Q.Z.getLayers().includes(el.S9g.USER_SETTINGS)),
       eE = (0, u.e7)([X.default], () => ee.ZP.canUseClientThemes(X.default.getCurrentUser())),
-      ev = ea && !ep,
-      eb = ef && !ep,
+      eb = ea && !ep,
+      ev = ef && !ep,
       ey = [];
     ep || !es || eE || ey.push(d.z.CLIENT_THEMES_COACHMARK);
     let [eO, eI] = (0, B.US)(ey, ec.R.SIDEBAR, !0);
@@ -168,8 +168,8 @@ let eh = (0, et.Un)({
       }))
     }, [eS, eT, eI, o]);
     let eN = i.useRef(document.body),
-      eA = ev || eT,
-      eC = eb && !eT,
+      eA = eb || eT,
+      eC = ev && !eT,
       eR = ed || e_,
       {
         enabled: eP
@@ -185,19 +185,19 @@ let eh = (0, et.Un)({
         children: (0, r.jsxs)(p.vWI, {
           children: [(0, r.jsx)(en.Z, {
             skipsSettingDefaultPageTitle: n
-          }), (0, r.jsx)(v.T, {
+          }), (0, r.jsx)(b.T, {
             children: (0, r.jsx)(er.Z, {
               children: (0, r.jsxs)(p.JcV, {
                 containerRef: eN,
                 children: [(0, r.jsx)(eo.Co, {}), (0, r.jsx)(ei.ZP, {}), (0, r.jsx)(s.OU, {}), (0, r.jsx)(y.Wu, {
                   appContext: el.IlC.APP,
                   renderWindow: window,
-                  children: (0, r.jsxs)(V.yP, {
+                  children: (0, r.jsxs)(F.yP, {
                     children: [null != _ ? (0, r.jsx)(eg, {
                       type: _,
                       themeOverride: q
                     }) : null, (0, r.jsxs)("div", {
-                      className: a()(eu.appAsidePanelWrapper, b && eu.mobileAppAsidePanelWrapper),
+                      className: a()(eu.appAsidePanelWrapper, v && eu.mobileAppAsidePanelWrapper),
                       children: [(0, r.jsx)(k.K, {}), (0, r.jsx)("div", {
                         className: eu.notAppAsidePanel,
                         "data-app-not-dev-tools": !0,
@@ -207,9 +207,9 @@ let eh = (0, et.Un)({
                               value: T.Z,
                               children: (0, r.jsxs)(x.p, {
                                 children: [(0, r.jsx)("div", {
-                                  className: a()(b ? eu.mobileApp : eu.app),
+                                  className: a()(v ? eu.mobileApp : eu.app),
                                   children: t
-                                }), (0, r.jsx)(P.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(p.nKe, {}), (0, r.jsx)(E.Z, {}), (0, r.jsx)(F.Ox, {}), (0, r.jsx)(V.Un, {}), (0, r.jsx)(Z.ot, {}), (0, r.jsx)(p.Ixi, {}), (0, r.jsx)(N.Z, {}), (0, r.jsx)(H.Z, {}), (0, r.jsx)(eh, {}), (0, r.jsx)(em, {})]
+                                }), (0, r.jsx)(P.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(p.nKe, {}), (0, r.jsx)(E.Z, {}), (0, r.jsx)(V.Ox, {}), (0, r.jsx)(F.Un, {}), (0, r.jsx)(Z.ot, {}), (0, r.jsx)(p.Ixi, {}), (0, r.jsx)(N.Z, {}), (0, r.jsx)(H.Z, {}), (0, r.jsx)(eh, {}), (0, r.jsx)(em, {})]
                               })
                             })
                           })
@@ -230,7 +230,7 @@ let eh = (0, et.Un)({
                         markAsDismissed: eI,
                         isCoachmark: eT
                       }), (0, r.jsx)(U.Z, {
-                        mobile: b
+                        mobile: v
                       })]
                     }), !1]
                   })

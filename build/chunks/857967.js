@@ -82,10 +82,10 @@ var i = n(698091),
       })), this._value = 0, e.prototype.reset.call(this)
     }, t
   }(g),
-  v = {
+  b = {
     current: null
   },
-  b = function(e) {
+  v = function(e) {
     function t(t) {
       var n;
       return void 0 === t && (t = null), (n = e.call(this) || this).source = void 0, n.setValue(t), n
@@ -115,7 +115,7 @@ var i = n(698091),
       }
     }, n._addToPayload = function(e) {
       var t = this;
-      i.getFluidConfig(e) && v.current && v.current.dependencies.add(e);
+      i.getFluidConfig(e) && b.current && b.current.dependencies.add(e);
       var n = h(e);
       n && i.each(n, function(e) {
         return t.add(e)
@@ -145,7 +145,7 @@ var i = n(698091),
         return (i.isAnimatedString(e) ? E : g).create(e, t[n])
       }) : []
     }, t
-  }(b),
+  }(v),
   O = function(e) {
     function t(t) {
       var n;
@@ -155,13 +155,13 @@ var i = n(698091),
     var n = t.prototype;
     return n.setValue = function(t, n) {
       if (t) {
-        if (n && (v.current = n, t.style)) {
+        if (n && (b.current = n, t.style)) {
           var r = n.host.createAnimatedStyle;
           t = s(s({}, t), {}, {
             style: r(t.style)
           })
         }
-        e.prototype.setValue.call(this, t), v.current = null
+        e.prototype.setValue.call(this, t), b.current = null
       }
     }, n.onParentChange = function(e) {
       var t = this,
@@ -170,7 +170,7 @@ var i = n(698091),
         t.dirty = !1, t.update()
       }))
     }, t
-  }(b),
+  }(v),
   I = function(e, t) {
     return c.forwardRef(function(n, r) {
       var o = c.useRef(null),
@@ -213,7 +213,7 @@ var T = Symbol.for("AnimatedComponent"),
       } : r,
       a = n.createAnimatedStyle,
       s = void 0 === a ? function(e) {
-        return new b(e)
+        return new v(e)
       } : a,
       l = n.getComponentProps,
       c = {
@@ -236,4 +236,4 @@ var T = Symbol.for("AnimatedComponent"),
   A = function(e) {
     return i.is.str(e) ? e : e && i.is.str(e.displayName) ? e.displayName : i.is.fun(e) && e.name || null
   };
-t.Animated = m, t.AnimatedArray = y, t.AnimatedObject = b, t.AnimatedProps = O, t.AnimatedString = E, t.AnimatedValue = g, t.createHost = N, t.getAnimated = _, t.getPayload = h, t.isAnimated = f, t.setAnimated = p
+t.Animated = m, t.AnimatedArray = y, t.AnimatedObject = v, t.AnimatedProps = O, t.AnimatedString = E, t.AnimatedValue = g, t.createHost = N, t.getAnimated = _, t.getPayload = h, t.isAnimated = f, t.setAnimated = p

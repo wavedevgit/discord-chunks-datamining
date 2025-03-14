@@ -20,8 +20,8 @@ var r = n(581031),
       value: 8
     }).length
   }),
-  v = String(String).split("String"),
-  b = e.exports = function(e, t, n) {
+  b = String(String).split("String"),
+  v = e.exports = function(e, t, n) {
     "Symbol(" === h(_(t), 0, 7) && (t = "[" + m(_(t), /^Symbol\(([^)]*)\)/, "$1") + "]"), n && n.getter && (t = "get " + t), n && n.setter && (t = "set " + t), (!a(e, "name") || l && e.name !== t) && (s ? p(e, "name", {
       value: t,
       configurable: !0
@@ -34,8 +34,8 @@ var r = n(581031),
       }) : e.prototype && (e.prototype = void 0)
     } catch (e) {}
     var r = d(e);
-    return a(r, "source") || (r.source = g(v, "string" == typeof t ? t : "")), e
+    return a(r, "source") || (r.source = g(b, "string" == typeof t ? t : "")), e
   };
-Function.prototype.toString = b(function() {
+Function.prototype.toString = v(function() {
   return o(this) && f(this).source || c(this)
 }, "toString")

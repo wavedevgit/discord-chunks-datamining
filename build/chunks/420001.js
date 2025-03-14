@@ -40,7 +40,7 @@ function E(e) {
   return e
 }
 
-function v(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,8 +51,8 @@ function v(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -70,7 +70,7 @@ function y(e) {
   }
   return null
 }
-let O = b(E({}, h.Z), {
+let O = v(E({}, h.Z), {
   sentinel: void 0,
   focusMode: p.QZ.MANUAL,
   matches(e, t, n, r, i) {
@@ -176,7 +176,7 @@ let O = b(E({}, h.Z), {
       guild: s,
       location: a.Vh.SUGGESTION
     });
-    return null == l ? null : b(E({}, l), {
+    return null == l ? null : v(E({}, l), {
       type: p.z2.COMMAND_SUGGESTION
     })
   }

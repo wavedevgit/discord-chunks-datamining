@@ -25,8 +25,8 @@ function E(e) {
     user: t,
     currentUser: n,
     activity: E,
-    className: v,
-    onClose: b,
+    className: b,
+    onClose: v,
     profileGuildId: y
   } = e, O = (0, f.T)({
     location: "UserProfileActivityCardWrapper"
@@ -50,14 +50,14 @@ function E(e) {
     currentUser: n,
     activity: E,
     profileGuildId: y,
-    className: v,
-    onClose: b
+    className: b,
+    onClose: v
   }) : (0, r.jsx)(h.Z, {
     user: t,
     currentUser: n,
     activity: E,
-    className: v,
-    onClose: b
+    className: b,
+    onClose: v
   }) : S ? (0, r.jsx)(p.Z, {
     user: t,
     currentUser: n,
@@ -66,8 +66,8 @@ function E(e) {
     voiceGuild: T,
     voiceChannel: N,
     profileGuildId: y,
-    className: v,
-    onClose: b
+    className: b,
+    onClose: v
   }) : (0, r.jsx)(_.Z, {
     user: t,
     currentUser: n,
@@ -75,7 +75,7 @@ function E(e) {
     application: A,
     voiceGuild: T,
     voiceChannel: N,
-    className: v,
-    onClose: b
+    className: b,
+    onClose: v
   })
 }

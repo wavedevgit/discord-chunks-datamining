@@ -136,11 +136,11 @@ function E(e, t) {
       _ = c(Array.isArray(e) ? e : [e], () => o(...u), u),
       h = p.getState(f),
       E = h.error,
-      v = !0 === h.isLoading,
-      b = (0, r.useRef)(u);
-    b.current = u;
+      b = !0 === h.isLoading,
+      v = (0, r.useRef)(u);
+    v.current = u;
     let y = (0, r.useCallback)(() => {
-      if (null == f || !0 === v) return;
+      if (null == f || !0 === b) return;
       let e = !1;
       c === i.Wu ? _.length > 0 && (e = !0) : null != _ && (e = !0);
       let t = p.doesDataNeedValidation(f),
@@ -148,20 +148,20 @@ function E(e, t) {
       if ((e || r) && !t) return;
       p.loadingStart(f);
       let o = new AbortController;
-      return a(o.signal, ...b.current).then(e => (p.loadingDone(f, !0), e)).catch(e => {
+      return a(o.signal, ...v.current).then(e => (p.loadingDone(f, !0), e)).catch(e => {
         if (p.loadingDone(f), o.signal.aborted) return;
         let t = g(e);
         (h.fetchFailCounter >= s || !(t instanceof m) || !(t.status >= 500) && 429 !== t.status) && p.setError(f, t)
       }), () => {
         n && o.abort()
       }
-    }, [_, h.fetchFailCounter, E, f, v]);
+    }, [_, h.fetchFailCounter, E, f, b]);
     return (0, r.useEffect)(() => (y(), p.subscribe(f, y), () => {
       p.subscribe(f, void 0)
     }), [f, y]), {
       data: _,
       error: E,
-      isLoading: v
+      isLoading: b
     }
   }
 }

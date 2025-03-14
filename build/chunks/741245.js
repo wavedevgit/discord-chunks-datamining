@@ -49,13 +49,13 @@ function E(e, t) {
   return n
 }
 
-function v(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function b(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -347,11 +347,11 @@ class S extends(r = o.PureComponent) {
 function T(e) {
   var {
     theme: t
-  } = e, n = b(e, ["theme"]);
+  } = e, n = v(e, ["theme"]);
   let r = (0, d.dQu)(c.Z.unsafe_rawColors.WHITE_500).hex(),
     o = (0, d.dQu)(c.Z.unsafe_rawColors.BRAND_500).hex(),
     a = (0, u.wj)(t) ? r : o;
-  return (0, i.jsx)(S, v(g({}, n), {
+  return (0, i.jsx)(S, b(g({}, n), {
     theme: t,
     flashColor: a
   }))

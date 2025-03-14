@@ -20,16 +20,16 @@ let p = e => {
     isLast: s,
     className: p
   } = e, [h, f] = i.useState(!1), {
-    analyticsLocations: b
-  } = (0, d.ZP)(), x = i.useCallback(() => {
+    analyticsLocations: x
+  } = (0, d.ZP)(), b = i.useCallback(() => {
     (0, u.openUserProfileModal)({
       userId: t,
-      sourceAnalyticsLocations: b,
+      sourceAnalyticsLocations: x,
       analyticsLocation: {
         section: m.jXE.FAMILY_CENTER
       }
     })
-  }, [t, b]), N = () => {
+  }, [t, x]), N = () => {
     f(!0)
   }, _ = () => {
     f(!1)
@@ -70,7 +70,7 @@ let p = e => {
           }),
           onMouseEnter: N,
           onMouseLeave: _,
-          onClick: x
+          onClick: b
         }, e), i = i = {
           children: n(h)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

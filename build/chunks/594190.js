@@ -5,7 +5,7 @@ n.d(t, {
   FZ: () => eI,
   ZP: () => eQ,
   b6: () => eE,
-  ik: () => eb,
+  ik: () => ev,
   rH: () => eg
 }), n(47120), n(653041), n(757143), n(301563), n(733860), n(230036);
 var i, o = n(392711),
@@ -22,8 +22,8 @@ var i, o = n(392711),
   m = n(710845),
   g = n(353926),
   E = n(855403),
-  v = n(444295),
-  b = n(454991),
+  b = n(444295),
+  v = n(454991),
   y = n(32300),
   O = n(948897),
   I = n(77498),
@@ -79,8 +79,8 @@ function G(e, t) {
   }), e
 }
 let B = new m.Z("RunningGameStore"),
-  V = "RunningGameStore",
-  F = !1,
+  F = "RunningGameStore",
+  V = !1,
   Z = [],
   H = [{
     executables: [{
@@ -259,7 +259,7 @@ function eE(e) {
       overlayMethod: f.gl.Disabled
     }
   }
-  let o = b.v.legacyEnabled,
+  let o = v.v.legacyEnabled,
     a = (0, y.NW)("getRawOverlayGameStatus") && (0, D.supportsOutOfProcess)() && !t,
     s = et.enableOverlay[eg(e)],
     l = et.enableOverlayV3[eg(e)];
@@ -289,13 +289,13 @@ function eE(e) {
   }
   return {
     source: L.d.DEFAULT,
-    enabledOOP: F || a,
-    enabledLegacy: F,
+    enabledOOP: V || a,
+    enabledLegacy: V,
     overlayMethod: a ? f.gl.OutOfProcess : f.gl.Disabled
   }
 }
 
-function ev(e) {
+function eb(e) {
   let t = et.enableOverlay[eg(e)],
     n = et.enableOverlayV3[eg(e)];
   if (null != t || null != n) return null != t ? t : n;
@@ -303,25 +303,25 @@ function ev(e) {
   return r.enabledLegacy || r.enabledOOP
 }
 
-function eb(e) {
+function ev(e) {
   let t = et.enableDetection[eg(e)];
   return null == t || t
 }
 
 function ey(e) {
-  return !e.hidden && eb(e)
+  return !e.hidden && ev(e)
 }
 
 function eO() {
-  u.K.set(V, et)
+  u.K.set(F, et)
 }
 
 function eI(e) {
   let [t, n, r] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [eq, I.Z, S.Z], i = G(j({}, e), {
     played: null != e.lastFocused && 0 !== e.lastFocused ? l()(new Date(e.lastFocused * A.Z.Millis.SECOND)).fromNow() : " ",
-    overlay: ev(e),
+    overlay: eb(e),
     verified: n.isGameInDatabase(e),
-    detectable: eb(e)
+    detectable: ev(e)
   });
   if (null != e.id && null != er[e.id]) {
     let t = er[e.id];
@@ -467,7 +467,7 @@ function eB() {
   eu = null, ed = null, el.clear()
 }
 
-function eV(e) {
+function eF(e) {
   let t = e.processes.map(e => {
     var t;
     return {
@@ -487,7 +487,7 @@ function eV(e) {
   })
 }
 
-function eF(e) {
+function eV(e) {
   let {
     game: t,
     newLegacyOverlayEnabledValue: n,
@@ -495,14 +495,14 @@ function eF(e) {
   } = e, i = n !== et.enableOverlay[eg(t)], o = r !== et.enableOverlayV3[eg(t)];
   if (i && (et.enableOverlay[eg(t)] = n), o && null != r && (et.enableOverlayV3[eg(t)] = r), eO(), !__OVERLAY__ && null != (null != t.id ? I.Z.getDetectableGame(t.id) : null)) {
     var a, s;
-    i && (0, v.ou)(n, v.AE.LEGACY_GAME, null !== (a = t.id) && void 0 !== a ? a : null), o && null != r && (0, v.ou)(r, v.AE.OOP_GAME, null !== (s = t.id) && void 0 !== s ? s : null)
+    i && (0, b.ou)(n, b.AE.LEGACY_GAME, null !== (a = t.id) && void 0 !== a ? a : null), o && null != r && (0, b.ou)(r, b.AE.OOP_GAME, null !== (s = t.id) && void 0 !== s ? s : null)
   }
 }
 
 function eZ(e) {
   let {
     game: t
-  } = e, n = eb(t);
+  } = e, n = ev(t);
   et.enableDetection[eg(t)] = !n, eO(), N.default.track(x.rMx.USER_SETTINGS_GAME_DETECTION_TOGGLE, {
     enabled: !n
   })
@@ -589,7 +589,7 @@ function eK() {
 class ez extends(i = c.ZP.Store) {
   initialize() {
     var e, t, n, r, i;
-    let o = null !== (e = u.K.get(V)) && void 0 !== e ? e : {
+    let o = null !== (e = u.K.get(F)) && void 0 !== e ? e : {
       gamesSeen: [],
       gameOverrides: {},
       enableOverlay: {},
@@ -688,7 +688,7 @@ class ez extends(i = c.ZP.Store) {
     return Y
   }
   isDetectionEnabled(e) {
-    return eb(e)
+    return ev(e)
   }
   addExecutableTrackedByAnalytics(e) {
     var t;
@@ -704,7 +704,7 @@ let eq = new ez(d.Z, {
     PERMISSION_CLEAR_ELEVATED_PROCESS: ek,
     PERMISSION_CONTINUE_NONELEVATED_PROCESS: eM,
     RUNNING_GAME_ADD_OVERRIDE: ej,
-    RUNNING_GAME_TOGGLE_OVERLAY: eF,
+    RUNNING_GAME_TOGGLE_OVERLAY: eV,
     RUNNING_GAME_TOGGLE_DETECTION: eZ,
     RUNNING_GAME_EDIT_NAME: eH,
     RUNNING_GAME_DELETE_ENTRY: eW,
@@ -713,6 +713,6 @@ let eq = new ez(d.Z, {
     GAME_DETECTION_WATCH_CANDIDATE_GAMES_START: eU,
     GAME_DETECTION_DEBUGGING_START: eG,
     GAME_DETECTION_DEBUGGING_STOP: eB,
-    GAME_DETECTION_DEBUGGING_TICK: eV
+    GAME_DETECTION_DEBUGGING_TICK: eF
   }),
   eQ = eq

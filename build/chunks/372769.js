@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => v
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -74,7 +74,7 @@ function E(e) {
       (0, u.vE)(e)
   }
 }
-class v extends i.PureComponent {
+class b extends i.PureComponent {
   renderBadge(e, t, n) {
     let {
       className: i,
@@ -85,17 +85,17 @@ class v extends i.PureComponent {
       size: f = 16,
       badgeColor: p,
       iconClassName: m,
-      flowerStarClassName: v
-    } = this.props, b = E(e);
+      flowerStarClassName: b
+    } = this.props, v = E(e);
     return (0, r.jsx)(s.ua7, {
       color: c,
       position: u,
       delay: d,
-      text: b,
+      text: v,
       children: s => {
         if (5 !== e && 4 !== e) return (0, r.jsx)(l.Z, g(h({}, s), {
           className: a()(n, i),
-          flowerStarClassName: v,
+          flowerStarClassName: b,
           color: p,
           stroke: o,
           size: f,
@@ -129,4 +129,4 @@ class v extends i.PureComponent {
     return t.has(d.oNc.INTERNAL_EMPLOYEE_ONLY) ? this.renderBadge(1, s.Ymb, _.staff) : t.has(d.oNc.VERIFIED) && t.has(d.oNc.HUB) ? this.renderBadge(4, s.aVH, _.verifiedHub) : t.has(d.oNc.HUB) ? this.renderBadge(5, s.aVH, _.hub) : t.has(d.oNc.VERIFIED) && t.has(d.oNc.PARTNERED) ? this.renderBadge(3, s.kmB, _.verified) : t.has(d.oNc.VERIFIED) ? this.renderBadge(2, s.kmB, _.verified) : t.has(d.oNc.PARTNERED) ? this.renderBadge(0, (0, s.GSL)(c.Z), _.partnered) : null
   }
 }
-let b = v
+let v = b

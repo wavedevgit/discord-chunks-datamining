@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(572004),
   g = n(591759),
   E = n(135431),
-  v = n(621853),
-  b = n(429974),
+  b = n(621853),
+  v = n(429974),
   y = n(475413),
   O = n(981631),
   I = n(388032);
@@ -70,9 +70,9 @@ function C(e) {
     user: t,
     closePopout: n
   } = e, S = N(e, ["user", "closePopout"]);
-  let A = (0, o.e7)([v.Z], () => {
+  let A = (0, o.e7)([b.Z], () => {
       var e;
-      return null === (e = v.Z.getUserProfile(t.id)) || void 0 === e ? void 0 : e.application
+      return null === (e = b.Z.getUserProfile(t.id)) || void 0 === e ? void 0 : e.application
     }),
     C = (0, o.e7)([p.Z], () => p.Z.getChannelId()),
     R = (0, o.e7)([_.Z], () => _.Z.getChannel(C)),
@@ -98,7 +98,7 @@ function C(e) {
             r = null != f.ZP.getSidebarState(e) || (null == t ? void 0 : t.isGuildVocal()) ? d.Ie.SIDEBAR : d.Ie.NORMAL;
           l.__(c._b.TEXT, r, {
             applicationId: A.id
-          }), (0, a.Mr3)((0, b.z)(L, P)), null == n || n(), h.default.track(O.rMx.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
+          }), (0, a.Mr3)((0, v.z)(L, P)), null == n || n(), h.default.track(O.rMx.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
             application_id: A.id
           })
         } else(0, E.LO)(T({

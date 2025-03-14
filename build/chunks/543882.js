@@ -40,7 +40,7 @@ function E(e) {
   }, h[t] = 0, m.delete(t)
 }
 
-function v(e) {
+function b(e) {
   let {
     streamKey: t,
     retryAfter: n
@@ -51,7 +51,7 @@ function v(e) {
   }, m.delete(t)
 }
 
-function b(e) {
+function v(e) {
   var t;
   let {
     streamKey: n
@@ -125,8 +125,8 @@ u(O, "displayName", "ApplicationStreamPreviewStore");
 let I = new O(s.Z, {
   CONNECTION_OPEN: g,
   LOGOUT: g,
-  STREAM_PREVIEW_FETCH_START: b,
+  STREAM_PREVIEW_FETCH_START: v,
   STREAM_PREVIEW_FETCH_SUCCESS: E,
-  STREAM_PREVIEW_FETCH_FAIL: v,
+  STREAM_PREVIEW_FETCH_FAIL: b,
   VOICE_STATE_UPDATES: y
 })

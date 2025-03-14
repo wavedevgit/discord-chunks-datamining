@@ -88,7 +88,7 @@ function E(e) {
   f = t.id, _ = n
 }
 
-function v(e) {
+function b(e) {
   let {
     userId: t,
     guildId: n,
@@ -98,7 +98,7 @@ function v(e) {
   null != r ? m(t, n, r, i) : h(t, n, i)
 }
 
-function b(e) {
+function v(e) {
   let {
     voiceStates: t
   } = e;
@@ -136,6 +136,6 @@ l(y, "displayName", "VideoStreamStore");
 let O = new y(o.Z, {
   CONNECTION_OPEN: g,
   OVERLAY_INITIALIZE: E,
-  RTC_CONNECTION_VIDEO: v,
-  VOICE_STATE_UPDATES: b
+  RTC_CONNECTION_VIDEO: b,
+  VOICE_STATE_UPDATES: v
 })

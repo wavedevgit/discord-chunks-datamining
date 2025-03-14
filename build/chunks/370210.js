@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   M: () => d,
-  Z: () => b
+  Z: () => v
 }), n(47120);
 var r, i = n(442837),
   o = n(570140),
@@ -87,7 +87,7 @@ function E(e) {
     [t]: 2
   }), n && (p.add(t), p = new Set(p))
 }
-class v extends(r = i.ZP.Store) {
+class b extends(r = i.ZP.Store) {
   getApplication(e) {
     if (null != e) return f[e]
   }
@@ -118,8 +118,8 @@ class v extends(r = i.ZP.Store) {
     if (null != e) return h[e]
   }
 }
-s(v, "displayName", "ApplicationDirectoryApplicationsStore");
-let b = new v(o.Z, {
+s(b, "displayName", "ApplicationDirectoryApplicationsStore");
+let v = new b(o.Z, {
   APPLICATION_DIRECTORY_FETCH_APPLICATION: m,
   APPLICATION_DIRECTORY_FETCH_APPLICATION_SUCCESS: g,
   APPLICATION_DIRECTORY_FETCH_APPLICATION_FAILURE: E

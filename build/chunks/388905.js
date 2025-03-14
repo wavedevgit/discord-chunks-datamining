@@ -55,9 +55,9 @@ function E(e) {
   return e
 }
 
-function v(e, t) {
+function b(e, t) {
   if (null == e) return {};
-  var n, r, i = b(e, t);
+  var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -65,7 +65,7 @@ function v(e, t) {
   return i
 }
 
-function b(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -114,7 +114,7 @@ let O = e => {
   T = e => {
     var {
       className: t
-    } = e, n = v(e, ["className"]);
+    } = e, n = b(e, ["className"]);
     let i = n.look === a.zxk.Looks.LINK;
     return (0, r.jsx)(a.zxk, E({
       size: i ? a.zxk.Sizes.MIN : a.zxk.Sizes.LARGE,
@@ -184,8 +184,8 @@ let R = e => {
       autoFocus: h,
       maxLength: g,
       spellCheck: E,
-      name: v,
-      description: b,
+      name: b,
+      description: v,
       required: y,
       onFocus: O,
       onBlur: I
@@ -198,7 +198,7 @@ let R = e => {
       tag: "label",
       htmlFor: S,
       children: [(0, r.jsx)(a.oil, {
-        name: v,
+        name: b,
         type: f,
         value: s,
         inputRef: d,
@@ -215,10 +215,10 @@ let R = e => {
         id: S,
         onFocus: O,
         onBlur: I
-      }), null != b ? (0, r.jsx)(a.R94, {
+      }), null != v ? (0, r.jsx)(a.R94, {
         type: a.R94.Types.DESCRIPTION,
         className: m.description,
-        children: b
+        children: v
       }) : null]
     })
   },

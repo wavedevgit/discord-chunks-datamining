@@ -41,21 +41,21 @@ function u(e) {
 
 function d(e, t) {
   var n, r, s, c, u, d, f, _, p, h, m, g, E;
-  let v = null != e.joined_at ? new Date(e.joined_at) : null == t ? void 0 : t.joinedAt,
-    b = null !== (n = e.premium_subscription_count) && void 0 !== n ? n : 0;
+  let b = null != e.joined_at ? new Date(e.joined_at) : null == t ? void 0 : t.joinedAt,
+    v = null !== (n = e.premium_subscription_count) && void 0 !== n ? n : 0;
   if (null == e.properties) {
     i()(null != t, "If guild.properties is null, existingGuild must be passed in");
     let e = t.joinedAt instanceof Date ? t.joinedAt.getTime() : t.joinedAt,
-      n = v instanceof Date ? v.getTime() : v;
-    return b === t.premiumSubscriberCount && e === n ? t : t.merge({
-      joinedAt: v,
-      premiumSubscriberCount: b
+      n = b instanceof Date ? b.getTime() : b;
+    return v === t.premiumSubscriberCount && e === n ? t : t.merge({
+      joinedAt: b,
+      premiumSubscriberCount: v
     })
   }
   let y = {
     id: e.id,
-    joinedAt: v,
-    premiumSubscriberCount: b,
+    joinedAt: b,
+    premiumSubscriberCount: v,
     name: null !== (r = e.properties.name) && void 0 !== r ? r : "",
     description: e.properties.description,
     icon: e.properties.icon,

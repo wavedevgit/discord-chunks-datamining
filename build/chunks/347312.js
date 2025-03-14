@@ -19,8 +19,8 @@ var r = n(200651),
 let m = 40,
   g = p.e3 / 1e3,
   E = 294,
-  v = 45,
-  b = 1,
+  b = 45,
+  v = 1,
   y = 4,
   O = 6,
   I = 24,
@@ -54,12 +54,12 @@ function R(e, t) {
 
 function P(e) {
   let t;
-  return Math.floor(((t = e <= g ? m : e >= v ? E : (Math.min(e, v) - g) / (v - g) * (E - m) + m) + y) / O) * O - y
+  return Math.floor(((t = e <= g ? m : e >= b ? E : (Math.min(e, b) - g) / (b - g) * (E - m) + m) + y) / O) * O - y
 }
 
 function w(e) {
   if (null == e) return;
-  let t = 2 * b + y;
+  let t = 2 * v + y;
   return Math.floor((e + y) / t)
 }
 
@@ -86,7 +86,7 @@ function x(e) {
     segmentIndex: o,
     constrainMin: a
   } = e, s = a ? (I - S) * i + S : I * i;
-  0 !== s && D(t, o * (2 * b + y) * n, (r / 2 - s / 2) * n, s * n, b * n)
+  0 !== s && D(t, o * (2 * v + y) * n, (r / 2 - s / 2) * n, s * n, v * n)
 }
 
 function M(e, t) {
@@ -147,34 +147,34 @@ function G(e) {
   } = e, {
     ref: g,
     width: E
-  } = (0, c.Z)(), v = i.useMemo(() => P(s), [s]), b = i.useRef(), y = M(n, E), O = i.useRef(l), S = i.useRef(d), N = i.useRef(null), C = window.devicePixelRatio, {
+  } = (0, c.Z)(), b = i.useMemo(() => P(s), [s]), v = i.useRef(), y = M(n, E), O = i.useRef(l), S = i.useRef(d), N = i.useRef(null), C = window.devicePixelRatio, {
     lastBackgroundFillColor: R,
     backgroundFillColor: w,
     lastActiveFillColor: D,
     activeFillColor: k,
     lastInactiveFillColor: G,
     inactiveFillColor: B
-  } = j(l, d), V = {
+  } = j(l, d), F = {
     currentTime: o,
     duration: s,
     played: l
-  }, F = i.useRef(V);
+  }, V = i.useRef(F);
   i.useEffect(() => {
-    F.current = V
+    V.current = F
   }), i.useEffect(() => {
     let {
       currentTime: e,
       duration: t,
       played: n
-    } = F.current, r = L({
+    } = V.current, r = L({
       showAll: !n,
       currentTime: e,
       duration: t,
       numSegments: y.length
     });
-    b.current = y.map((e, t) => new _.Z(t < r ? e : 0))
+    v.current = y.map((e, t) => new _.Z(t < r ? e : 0))
   }, [y]), i.useEffect(() => {
-    let e = b.current;
+    let e = v.current;
     if (null == e) return;
     let t = L({
       showAll: !l,
@@ -196,7 +196,7 @@ function G(e) {
     function t(n) {
       let r = g.current,
         i = null == r ? void 0 : r.getContext("2d"),
-        o = b.current;
+        o = v.current;
       if (null == r || null == i || null == o) return;
       let a = !1;
       (O.current !== l || S.current !== d) && (O.current = l, S.current = d, N.current = n), null != N.current && n > N.current + A && (N.current = null);
@@ -245,7 +245,7 @@ function G(e) {
     onMouseDown: Z,
     className: a()(h.canvas, t),
     style: {
-      width: v
+      width: b
     },
     ref: g,
     height: (I + 2 * T) * window.devicePixelRatio,

@@ -41,13 +41,13 @@ function m(e) {
     textMixAmount: m = p
   } = e, {
     base: E,
-    text: v
+    text: b
   } = h({
     primaryColor: n,
     secondaryColor: r,
     isDarkTheme: !0
   }), {
-    base: b,
+    base: v,
     text: y
   } = h({
     primaryColor: n,
@@ -55,12 +55,12 @@ function m(e) {
     isDarkTheme: !1
   });
   return {
-    [c]: g(b),
-    [s]: b.css(),
+    [c]: g(v),
+    [s]: v.css(),
     [l]: y.css(),
     [f]: g(E),
     [u]: E.css(),
-    [d]: v.css(),
+    [d]: b.css(),
     [o]: "".concat(t ? i : 0, "%"),
     [a]: "".concat(t ? m : 0, "%"),
     "--bg-overlay-selected": "unset",

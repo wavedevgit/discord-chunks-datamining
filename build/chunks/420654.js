@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => v
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -54,8 +54,8 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = 57.75,
-  b = i.memo(function(e) {
+let b = 57.75,
+  v = i.memo(function(e) {
     let {
       user: t,
       onClose: n,
@@ -63,13 +63,13 @@ let v = 57.75,
       hidePersonalInformation: h,
       viewFullBioDisabled: g = !1
     } = e, {
-      context: b
+      context: v
     } = (0, c.KZ)(), {
       analyticsLocations: y
     } = (0, l.ZP)(), [O, I] = i.useState(null), [S, T] = i.useState(!1), [N, A] = i.useState(!1), C = e => {
-      null != e && (I(e), T(!N && e.scrollHeight - e.clientHeight > 1), e.getBoundingClientRect().height > v && A(!0))
+      null != e && (I(e), T(!N && e.scrollHeight - e.clientHeight > 1), e.getBoundingClientRect().height > b && A(!0))
     }, R = () => {
-      null == n || n(), (0, d.openUserProfileModal)(E(m({}, b), {
+      null == n || n(), (0, d.openUserProfileModal)(E(m({}, v), {
         userId: t.id,
         sourceAnalyticsLocations: y,
         analyticsLocation: {

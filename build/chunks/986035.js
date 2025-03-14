@@ -1,69 +1,69 @@
-/** Chunk was on 57951 **/
+/** Chunk was on 78114 **/
 n.d(t, {
   Z: () => p
 }), n(266796);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  c = n.n(o),
+  l = n(120356),
+  o = n.n(l),
   a = n(481060),
   s = n(480916),
-  l = n(600164),
+  c = n(600164),
   u = n(258083),
-  g = n(802138);
+  d = n(802138);
 let p = function(e) {
   let {
     title: t,
     description: n,
-    agreement: o,
+    agreement: l,
     disagreement: p,
-    onAgree: f,
-    onDisagree: d,
-    imageClassName: b,
-    agreementButtonColor: m = a.zxk.Colors.RED,
-    modalType: O,
-    channelId: y,
-    guildId: j
+    onAgree: h,
+    onDisagree: f,
+    imageClassName: m,
+    agreementButtonColor: g = a.zxk.Colors.RED,
+    modalType: b,
+    channelId: _,
+    guildId: C
   } = e;
   i.useEffect(() => {
-    (0, s.YT)(O, y, j)
-  }, [O, y, j]);
-  let E = i.useCallback(() => {
-      (0, s.qd)(s.iP.NSFW_CHANNEL_DISAGREE_CTA, O, y, j), null == d || d()
-    }, [d, O, y, j]),
-    h = i.useCallback(() => {
-      (0, s.qd)(s.iP.NSFW_CHANNEL_AGREE_CTA, O, y, j), null == f || f()
-    }, [f, O, y, j]);
-  return (0, r.jsxs)(l.Z, {
+    (0, s.YT)(b, _, C)
+  }, [b, _, C]);
+  let v = i.useCallback(() => {
+      (0, s.qd)(s.iP.NSFW_CHANNEL_DISAGREE_CTA, b, _, C), null == f || f()
+    }, [f, b, _, C]),
+    y = i.useCallback(() => {
+      (0, s.qd)(s.iP.NSFW_CHANNEL_AGREE_CTA, b, _, C), null == h || h()
+    }, [h, b, _, C]);
+  return (0, r.jsxs)(c.Z, {
     className: u.gatedContent,
-    justify: l.Z.Justify.CENTER,
-    align: l.Z.Align.CENTER,
-    direction: l.Z.Direction.VERTICAL,
+    justify: c.Z.Justify.CENTER,
+    align: c.Z.Align.CENTER,
+    direction: c.Z.Direction.VERTICAL,
     children: [(0, r.jsx)("div", {
-      className: c()(u.image, b)
+      className: o()(u.image, m)
     }), (0, r.jsx)("div", {
-      className: c()(u.title, g.marginBottom8),
+      className: o()(u.title, d.marginBottom8),
       children: t
     }), (0, r.jsx)(a.Text, {
       variant: "text-md/medium",
-      className: c()(u.description, g.marginBottom20),
+      className: o()(u.description, d.marginBottom20),
       children: n
-    }), (0, r.jsxs)(l.Z, {
-      justify: l.Z.Justify.CENTER,
-      align: l.Z.Align.CENTER,
+    }), (0, r.jsxs)(c.Z, {
+      justify: c.Z.Justify.CENTER,
+      align: c.Z.Align.CENTER,
       grow: 0,
-      children: [null != p && null != d ? (0, r.jsx)(a.zxk, {
+      children: [null != p && null != f ? (0, r.jsx)(a.zxk, {
         className: u.action,
         size: a.PhG.LARGE,
         color: a.Ttl.PRIMARY,
-        onClick: E,
+        onClick: v,
         children: p
-      }) : null, null != o && null != f ? (0, r.jsx)(a.zxk, {
+      }) : null, null != l && null != h ? (0, r.jsx)(a.zxk, {
         className: u.action,
-        color: m,
+        color: g,
         size: a.PhG.LARGE,
-        onClick: h,
-        children: o
+        onClick: y,
+        children: l
       }) : null]
     })]
   })

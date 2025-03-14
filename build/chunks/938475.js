@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   PH: () => R,
-  ZP: () => F,
+  ZP: () => V,
   sQ: () => A
 }), n(47120);
 var r, i = n(392711),
@@ -29,7 +29,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function v(e) {
   return e
 }
 
-function b(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,7 +54,7 @@ function b(e, t) {
 }
 
 function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -119,7 +119,7 @@ class P {
         var i;
         let o = T(this.guildId, r),
           a = null !== (i = null == o ? void 0 : o.nick) && void 0 !== i ? i : m.ZP.getName(r);
-        return this._voiceStates.set(e, y(v({}, n), {
+        return this._voiceStates.set(e, y(b({}, n), {
           member: o,
           comparator: A(t, a),
           nick: a,
@@ -140,7 +140,7 @@ class P {
         let {
           comparator: r
         } = N(t.voiceState, o, n);
-        return this._voiceStates.set(e, y(v({}, t), {
+        return this._voiceStates.set(e, y(b({}, t), {
           member: o,
           comparator: r,
           nick: null == o ? void 0 : o.nick
@@ -269,7 +269,7 @@ function B() {
     })
   })
 }
-class V extends(r = a.ZP.Store) {
+class F extends(r = a.ZP.Store) {
   initialize() {
     B(), this.waitFor(u.default, _.default, f.ZP, p.Z), this.syncWith([_.default], k)
   }
@@ -297,8 +297,8 @@ class V extends(r = a.ZP.Store) {
     return S(null != e ? e : g.ME).getVersion()
   }
 }
-E(V, "displayName", "SortedVoiceStateStore");
-let F = new V(l.Z, {
+E(F, "displayName", "SortedVoiceStateStore");
+let V = new F(l.Z, {
   CONNECTION_OPEN: w,
   OVERLAY_INITIALIZE: D,
   VOICE_CHANNEL_SELECT: M,

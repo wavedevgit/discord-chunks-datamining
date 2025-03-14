@@ -1,57 +1,58 @@
-/** Chunk was on 98806 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(200651);
 n(192379);
-var a = n(481060),
-  i = n(114487),
-  l = n(686546),
-  o = n(686369),
-  c = n(388032),
-  s = n(22858);
+var i = n(481060),
+  o = n(114487),
+  a = n(686546),
+  s = n(686369),
+  l = n(388032),
+  c = n(22858);
 
-function d(e) {
+function u(e) {
   let {
     guildId: t,
     name: n
-  } = e, d = (0, a.dQu)(a.TVs.colors.BG_BASE_TERTIARY), u = (0, o.d)(d.hex());
+  } = e, u = (0, i.dQu)(i.TVs.colors.BG_BASE_TERTIARY), d = (0, s.d)(u.hex());
   return (0, r.jsxs)("div", {
-    className: s.container,
+    className: c.container,
     children: [(0, r.jsx)("div", {
-      className: s.banner,
+      className: c.banner,
       style: {
-        background: u
+        background: d
       }
     }), (0, r.jsx)("div", {
-      className: s.avatarContainer,
-      children: (0, r.jsx)(l.ZP, {
-        mask: l.QS.CLAN_ICON,
+      className: c.avatarContainer,
+      children: (0, r.jsx)(a.ZP, {
+        mask: a.QS.CLAN_ICON,
         width: 70,
         height: 70,
         children: (0, r.jsx)("div", {
-          className: s.avatarWrapper,
-          children: (0, r.jsx)(i.b, {
+          className: c.avatarWrapper,
+          children: (0, r.jsx)(o.b, {
             guildId: t,
-            guildName: null != n ? n : c.NW.string(c.t.DmIUGB),
+            guildName: null != n ? n : l.NW.string(l.t.DmIUGB),
             guildIcon: null,
             iconSize: 64
           })
         })
       })
     }), (0, r.jsx)("div", {
-      className: s.header,
-      children: (0, r.jsx)(a.X6q, {
+      className: c.header,
+      children: (0, r.jsx)(i.X6q, {
         variant: "heading-lg/medium",
         color: "header-primary",
-        children: null != n ? n : c.NW.string(c.t.DmIUGB)
+        children: null != n ? n : l.NW.string(l.t.DmIUGB)
       })
     }), (0, r.jsx)("div", {
-      className: s.body,
-      children: (0, r.jsx)(a.Text, {
+      className: c.body,
+      children: (0, r.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: c.NW.string(c.t["8mfCqa"])
+        children: l.NW.string(l.t["8mfCqa"])
       })
     })]
   })

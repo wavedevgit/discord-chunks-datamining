@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   $Q: () => y,
-  Ev: () => b,
+  Ev: () => v,
   Gy: () => A,
   R5: () => N,
   T: () => E,
@@ -65,14 +65,14 @@ function g(e) {
   let t = a.default.getId(),
     n = s.ZP.isModerator(t, e.id),
     r = l.Z.isLive(e.id);
-  n && !r ? E(e) : n && r && v(e)
+  n && !r ? E(e) : n && r && b(e)
 }
 
 function E(e, t) {
   (0, i.ZD)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("84335"), n.e("68241"), n.e("82758"), n.e("98806")]).then(n.bind(n, 581355));
+    } = await Promise.all([n.e("82758"), n.e("44584")]).then(n.bind(n, 581355));
     return n => (0, r.jsx)(t, m(p({}, n), {
       channel: e
     }))
@@ -81,7 +81,7 @@ function E(e, t) {
   })
 }
 
-function v(e) {
+function b(e) {
   (0, i.ZD)(async () => {
     let {
       default: t
@@ -92,7 +92,7 @@ function v(e) {
   })
 }
 
-function b(e, t) {
+function v(e, t) {
   (0, i.ZD)(async () => {
     let {
       default: t

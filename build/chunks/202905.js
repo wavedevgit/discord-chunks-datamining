@@ -1,4 +1,4 @@
-/** Chunk was on 3205 **/
+/** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
   r: () => v
@@ -32,7 +32,11 @@ let N = {
   gameApplicationIds: [],
   gameActivity: {},
   visibility: s.k.RESTRICTED,
-  brandColorPrimary: null
+  brandColorPrimary: null,
+  tag: null,
+  badge: null,
+  badgeColorPrimary: null,
+  badgeColorSecondary: null
 };
 
 function v(e) {

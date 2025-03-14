@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  x: () => F
+  x: () => V
 });
 var r = n(771356),
   i = n(640490),
@@ -19,8 +19,8 @@ var r = n(771356),
   m = n(815291),
   g = n(760427),
   E = n(761491),
-  v = n(480586),
-  b = n(957450),
+  b = n(480586),
+  v = n(957450),
   y = n(251315),
   O = n(830443),
   I = n(936643),
@@ -41,8 +41,8 @@ var r = n(771356),
   U = n(263984),
   G = n(591501),
   B = n(595867),
-  V = n(345272);
-let F = {
+  F = n(345272);
+let V = {
   skye: {
     name: N.Z.tzvUKy,
     iconURL: j.Z,
@@ -113,7 +113,7 @@ let F = {
     splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(100% 555.56% at 0% 100%, rgba(110, 60, 223, 0.40) 0%, rgba(110, 60, 223, 0.00) 100%)",
     baseColor: "#160935",
     styleKey: "spacebunny",
-    previewSoundURLs: [E.Z, v.Z, b.Z]
+    previewSoundURLs: [E.Z, b.Z, v.Z]
   },
   justus: {
     name: N.Z.ZVrsKC,
@@ -133,7 +133,7 @@ let F = {
   },
   villain: {
     name: N.Z.kHmvdn,
-    iconURL: V.Z,
+    iconURL: F.Z,
     splashGradient: "radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 25%), radial-gradient(89% 494.44% at 11% 100%, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.10) 15%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.03) 45%, rgba(255, 255, 255, 0.01) 60%, rgba(255, 255, 255, 0.00) 75%), radial-gradient(100% 555.56% at 0% 100%, rgba(219, 2, 34, 0.50) 0%, rgba(219, 2, 34, 0.00) 100%)",
     baseColor: "#3D0109",
     styleKey: "villain",
@@ -164,4 +164,4 @@ let F = {
     previewSoundURLs: [s.Z, l.Z, c.Z]
   }
 };
-F.rachel = F.skye, F.alex = F.quinn, F.elliot = F.axel, F.sebastian = F.sebastien, F.justin = F.justus, F.taylor = F.harper, F.monique = F.solara
+V.rachel = V.skye, V.alex = V.quinn, V.elliot = V.axel, V.sebastian = V.sebastien, V.justin = V.justus, V.taylor = V.harper, V.monique = V.solara

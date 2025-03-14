@@ -8,7 +8,7 @@ n.d(t, {
   W_: () => K,
   YR: () => eW,
   e6: () => eg,
-  o4: () => eb,
+  o4: () => ev,
   xv: () => eN,
   y$: () => el
 });
@@ -359,7 +359,7 @@ function E(e, t) {
   }
   return i
 }
-var v = function(e) {
+var b = function(e) {
     var t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
       n = !t,
       i = t ? N(e) : e,
@@ -372,17 +372,17 @@ var v = function(e) {
       var d = u.codePointAt(0);
       if (!d) break;
       var f = U(u, d);
-      if ([o, a] = n ? [a, f] : [f, o], G(o, r.ZWJ) && G(a, r.ExtPict) && !(l = n ? Z(e.substring(0, s)) : Z(e.substring(0, e.length - s))) || G(o, r.RI) && G(a, r.RI) && !(c = null !== c ? !c : !!n || W(e.substring(0, e.length - s))) || o !== r.None && a !== r.None && V(o, a)) break;
+      if ([o, a] = n ? [a, f] : [f, o], G(o, r.ZWJ) && G(a, r.ExtPict) && !(l = n ? Z(e.substring(0, s)) : Z(e.substring(0, e.length - s))) || G(o, r.RI) && G(a, r.RI) && !(c = null !== c ? !c : !!n || W(e.substring(0, e.length - s))) || o !== r.None && a !== r.None && F(o, a)) break;
       s += u.length
     }
     return s || 1
   },
-  b = /\s/,
+  v = /\s/,
   y = /[\u0021-\u0023\u0025-\u002A\u002C-\u002F\u003A\u003B\u003F\u0040\u005B-\u005D\u005F\u007B\u007D\u00A1\u00A7\u00AB\u00B6\u00B7\u00BB\u00BF\u037E\u0387\u055A-\u055F\u0589\u058A\u05BE\u05C0\u05C3\u05C6\u05F3\u05F4\u0609\u060A\u060C\u060D\u061B\u061E\u061F\u066A-\u066D\u06D4\u0700-\u070D\u07F7-\u07F9\u0830-\u083E\u085E\u0964\u0965\u0970\u0AF0\u0DF4\u0E4F\u0E5A\u0E5B\u0F04-\u0F12\u0F14\u0F3A-\u0F3D\u0F85\u0FD0-\u0FD4\u0FD9\u0FDA\u104A-\u104F\u10FB\u1360-\u1368\u1400\u166D\u166E\u169B\u169C\u16EB-\u16ED\u1735\u1736\u17D4-\u17D6\u17D8-\u17DA\u1800-\u180A\u1944\u1945\u1A1E\u1A1F\u1AA0-\u1AA6\u1AA8-\u1AAD\u1B5A-\u1B60\u1BFC-\u1BFF\u1C3B-\u1C3F\u1C7E\u1C7F\u1CC0-\u1CC7\u1CD3\u2010-\u2027\u2030-\u2043\u2045-\u2051\u2053-\u205E\u207D\u207E\u208D\u208E\u2329\u232A\u2768-\u2775\u27C5\u27C6\u27E6-\u27EF\u2983-\u2998\u29D8-\u29DB\u29FC\u29FD\u2CF9-\u2CFC\u2CFE\u2CFF\u2D70\u2E00-\u2E2E\u2E30-\u2E3B\u3001-\u3003\u3008-\u3011\u3014-\u301F\u3030\u303D\u30A0\u30FB\uA4FE\uA4FF\uA60D-\uA60F\uA673\uA67E\uA6F2-\uA6F7\uA874-\uA877\uA8CE\uA8CF\uA8F8-\uA8FA\uA92E\uA92F\uA95F\uA9C1-\uA9CD\uA9DE\uA9DF\uAA5C-\uAA5F\uAADE\uAADF\uAAF0\uAAF1\uABEB\uFD3E\uFD3F\uFE10-\uFE19\uFE30-\uFE52\uFE54-\uFE61\uFE63\uFE68\uFE6A\uFE6B\uFF01-\uFF03\uFF05-\uFF0A\uFF0C-\uFF0F\uFF1A\uFF1B\uFF1F\uFF20\uFF3B-\uFF3D\uFF3F\uFF5B\uFF5D\uFF5F-\uFF65]/,
   O = /['\u2018\u2019]/,
   I = function(e) {
     for (var t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1], n = 0, r = !1; e.length > 0;) {
-      var i = v(e, t),
+      var i = b(e, t),
         [o, a] = S(e, i, t);
       if (T(o, a, t)) r = !0, n += i;
       else if (r) break;
@@ -400,9 +400,9 @@ var v = function(e) {
   },
   T = function e(t, n) {
     var r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-    if (b.test(t)) return !1;
+    if (v.test(t)) return !1;
     if (O.test(t)) {
-      var i = v(n, r),
+      var i = b(n, r),
         [o, a] = S(n, i, r);
       if (e(o, a, r)) return !0
     }
@@ -454,11 +454,11 @@ var B = [
   [r.RI, r.RI]
 ];
 
-function V(e, t) {
+function F(e, t) {
   return -1 === B.findIndex(n => G(e, n[0]) && G(t, n[1]))
 }
-var F = /(?:[\xA9\xAE\u203C\u2049\u2122\u2139\u2194-\u2199\u21A9\u21AA\u231A\u231B\u2328\u2388\u23CF\u23E9-\u23F3\u23F8-\u23FA\u24C2\u25AA\u25AB\u25B6\u25C0\u25FB-\u25FE\u2600-\u2605\u2607-\u2612\u2614-\u2685\u2690-\u2705\u2708-\u2712\u2714\u2716\u271D\u2721\u2728\u2733\u2734\u2744\u2747\u274C\u274E\u2753-\u2755\u2757\u2763-\u2767\u2795-\u2797\u27A1\u27B0\u27BF\u2934\u2935\u2B05-\u2B07\u2B1B\u2B1C\u2B50\u2B55\u3030\u303D\u3297\u3299]|\uD83C[\uDC00-\uDCFF\uDD0D-\uDD0F\uDD2F\uDD6C-\uDD71\uDD7E\uDD7F\uDD8E\uDD91-\uDD9A\uDDAD-\uDDE5\uDE01-\uDE0F\uDE1A\uDE2F\uDE32-\uDE3A\uDE3C-\uDE3F\uDE49-\uDFFA]|\uD83D[\uDC00-\uDD3D\uDD46-\uDE4F\uDE80-\uDEFF\uDF74-\uDF7F\uDFD5-\uDFFF]|\uD83E[\uDC0C-\uDC0F\uDC48-\uDC4F\uDC5A-\uDC5F\uDC88-\uDC8F\uDCAE-\uDCFF\uDD0C-\uDD3A\uDD3C-\uDD45\uDD47-\uDEFF]|\uD83F[\uDC00-\uDFFD])(?:[\u0300-\u036F\u0483-\u0489\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u0711\u0730-\u074A\u07A6-\u07B0\u07EB-\u07F3\u07FD\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u08D3-\u08E1\u08E3-\u0902\u093A\u093C\u0941-\u0948\u094D\u0951-\u0957\u0962\u0963\u0981\u09BC\u09BE\u09C1-\u09C4\u09CD\u09D7\u09E2\u09E3\u09FE\u0A01\u0A02\u0A3C\u0A41\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A70\u0A71\u0A75\u0A81\u0A82\u0ABC\u0AC1-\u0AC5\u0AC7\u0AC8\u0ACD\u0AE2\u0AE3\u0AFA-\u0AFF\u0B01\u0B3C\u0B3E\u0B3F\u0B41-\u0B44\u0B4D\u0B55-\u0B57\u0B62\u0B63\u0B82\u0BBE\u0BC0\u0BCD\u0BD7\u0C00\u0C04\u0C3E-\u0C40\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C81\u0CBC\u0CBF\u0CC2\u0CC6\u0CCC\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0D00\u0D01\u0D3B\u0D3C\u0D3E\u0D41-\u0D44\u0D4D\u0D57\u0D62\u0D63\u0D81\u0DCA\u0DCF\u0DD2-\u0DD4\u0DD6\u0DDF\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0EB1\u0EB4-\u0EBC\u0EC8-\u0ECD\u0F18\u0F19\u0F35\u0F37\u0F39\u0F71-\u0F7E\u0F80-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102D-\u1030\u1032-\u1037\u1039\u103A\u103D\u103E\u1058\u1059\u105E-\u1060\u1071-\u1074\u1082\u1085\u1086\u108D\u109D\u135D-\u135F\u1712-\u1714\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4\u17B5\u17B7-\u17BD\u17C6\u17C9-\u17D3\u17DD\u180B-\u180D\u1885\u1886\u18A9\u1920-\u1922\u1927\u1928\u1932\u1939-\u193B\u1A17\u1A18\u1A1B\u1A56\u1A58-\u1A5E\u1A60\u1A62\u1A65-\u1A6C\u1A73-\u1A7C\u1A7F\u1AB0-\u1AC0\u1B00-\u1B03\u1B34-\u1B3A\u1B3C\u1B42\u1B6B-\u1B73\u1B80\u1B81\u1BA2-\u1BA5\u1BA8\u1BA9\u1BAB-\u1BAD\u1BE6\u1BE8\u1BE9\u1BED\u1BEF-\u1BF1\u1C2C-\u1C33\u1C36\u1C37\u1CD0-\u1CD2\u1CD4-\u1CE0\u1CE2-\u1CE8\u1CED\u1CF4\u1CF8\u1CF9\u1DC0-\u1DF9\u1DFB-\u1DFF\u200C\u20D0-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\uA66F-\uA672\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA825\uA826\uA82C\uA8C4\uA8C5\uA8E0-\uA8F1\uA8FF\uA926-\uA92D\uA947-\uA951\uA980-\uA982\uA9B3\uA9B6-\uA9B9\uA9BC\uA9BD\uA9E5\uAA29-\uAA2E\uAA31\uAA32\uAA35\uAA36\uAA43\uAA4C\uAA7C\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEC\uAAED\uAAF6\uABE5\uABE8\uABED\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F\uFF9E\uFF9F]|\uD800[\uDDFD\uDEE0\uDF76-\uDF7A]|\uD802[\uDE01-\uDE03\uDE05\uDE06\uDE0C-\uDE0F\uDE38-\uDE3A\uDE3F\uDEE5\uDEE6]|\uD803[\uDD24-\uDD27\uDEAB\uDEAC\uDF46-\uDF50]|\uD804[\uDC01\uDC38-\uDC46\uDC7F-\uDC81\uDCB3-\uDCB6\uDCB9\uDCBA\uDD00-\uDD02\uDD27-\uDD2B\uDD2D-\uDD34\uDD73\uDD80\uDD81\uDDB6-\uDDBE\uDDC9-\uDDCC\uDDCF\uDE2F-\uDE31\uDE34\uDE36\uDE37\uDE3E\uDEDF\uDEE3-\uDEEA\uDF00\uDF01\uDF3B\uDF3C\uDF3E\uDF40\uDF57\uDF66-\uDF6C\uDF70-\uDF74]|\uD805[\uDC38-\uDC3F\uDC42-\uDC44\uDC46\uDC5E\uDCB0\uDCB3-\uDCB8\uDCBA\uDCBD\uDCBF\uDCC0\uDCC2\uDCC3\uDDAF\uDDB2-\uDDB5\uDDBC\uDDBD\uDDBF\uDDC0\uDDDC\uDDDD\uDE33-\uDE3A\uDE3D\uDE3F\uDE40\uDEAB\uDEAD\uDEB0-\uDEB5\uDEB7\uDF1D-\uDF1F\uDF22-\uDF25\uDF27-\uDF2B]|\uD806[\uDC2F-\uDC37\uDC39\uDC3A\uDD30\uDD3B\uDD3C\uDD3E\uDD43\uDDD4-\uDDD7\uDDDA\uDDDB\uDDE0\uDE01-\uDE0A\uDE33-\uDE38\uDE3B-\uDE3E\uDE47\uDE51-\uDE56\uDE59-\uDE5B\uDE8A-\uDE96\uDE98\uDE99]|\uD807[\uDC30-\uDC36\uDC38-\uDC3D\uDC3F\uDC92-\uDCA7\uDCAA-\uDCB0\uDCB2\uDCB3\uDCB5\uDCB6\uDD31-\uDD36\uDD3A\uDD3C\uDD3D\uDD3F-\uDD45\uDD47\uDD90\uDD91\uDD95\uDD97\uDEF3\uDEF4]|\uD81A[\uDEF0-\uDEF4\uDF30-\uDF36]|\uD81B[\uDF4F\uDF8F-\uDF92\uDFE4]|\uD82F[\uDC9D\uDC9E]|\uD834[\uDD65\uDD67-\uDD69\uDD6E-\uDD72\uDD7B-\uDD82\uDD85-\uDD8B\uDDAA-\uDDAD\uDE42-\uDE44]|\uD836[\uDE00-\uDE36\uDE3B-\uDE6C\uDE75\uDE84\uDE9B-\uDE9F\uDEA1-\uDEAF]|\uD838[\uDC00-\uDC06\uDC08-\uDC18\uDC1B-\uDC21\uDC23\uDC24\uDC26-\uDC2A\uDD30-\uDD36\uDEEC-\uDEEF]|\uD83A[\uDCD0-\uDCD6\uDD44-\uDD4A]|\uD83C[\uDFFB-\uDFFF]|\uDB40[\uDC20-\uDC7F\uDD00-\uDDEF])*\u200D$/,
-  Z = e => -1 !== e.search(F),
+var V = /(?:[\xA9\xAE\u203C\u2049\u2122\u2139\u2194-\u2199\u21A9\u21AA\u231A\u231B\u2328\u2388\u23CF\u23E9-\u23F3\u23F8-\u23FA\u24C2\u25AA\u25AB\u25B6\u25C0\u25FB-\u25FE\u2600-\u2605\u2607-\u2612\u2614-\u2685\u2690-\u2705\u2708-\u2712\u2714\u2716\u271D\u2721\u2728\u2733\u2734\u2744\u2747\u274C\u274E\u2753-\u2755\u2757\u2763-\u2767\u2795-\u2797\u27A1\u27B0\u27BF\u2934\u2935\u2B05-\u2B07\u2B1B\u2B1C\u2B50\u2B55\u3030\u303D\u3297\u3299]|\uD83C[\uDC00-\uDCFF\uDD0D-\uDD0F\uDD2F\uDD6C-\uDD71\uDD7E\uDD7F\uDD8E\uDD91-\uDD9A\uDDAD-\uDDE5\uDE01-\uDE0F\uDE1A\uDE2F\uDE32-\uDE3A\uDE3C-\uDE3F\uDE49-\uDFFA]|\uD83D[\uDC00-\uDD3D\uDD46-\uDE4F\uDE80-\uDEFF\uDF74-\uDF7F\uDFD5-\uDFFF]|\uD83E[\uDC0C-\uDC0F\uDC48-\uDC4F\uDC5A-\uDC5F\uDC88-\uDC8F\uDCAE-\uDCFF\uDD0C-\uDD3A\uDD3C-\uDD45\uDD47-\uDEFF]|\uD83F[\uDC00-\uDFFD])(?:[\u0300-\u036F\u0483-\u0489\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u0711\u0730-\u074A\u07A6-\u07B0\u07EB-\u07F3\u07FD\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D\u0859-\u085B\u08D3-\u08E1\u08E3-\u0902\u093A\u093C\u0941-\u0948\u094D\u0951-\u0957\u0962\u0963\u0981\u09BC\u09BE\u09C1-\u09C4\u09CD\u09D7\u09E2\u09E3\u09FE\u0A01\u0A02\u0A3C\u0A41\u0A42\u0A47\u0A48\u0A4B-\u0A4D\u0A51\u0A70\u0A71\u0A75\u0A81\u0A82\u0ABC\u0AC1-\u0AC5\u0AC7\u0AC8\u0ACD\u0AE2\u0AE3\u0AFA-\u0AFF\u0B01\u0B3C\u0B3E\u0B3F\u0B41-\u0B44\u0B4D\u0B55-\u0B57\u0B62\u0B63\u0B82\u0BBE\u0BC0\u0BCD\u0BD7\u0C00\u0C04\u0C3E-\u0C40\u0C46-\u0C48\u0C4A-\u0C4D\u0C55\u0C56\u0C62\u0C63\u0C81\u0CBC\u0CBF\u0CC2\u0CC6\u0CCC\u0CCD\u0CD5\u0CD6\u0CE2\u0CE3\u0D00\u0D01\u0D3B\u0D3C\u0D3E\u0D41-\u0D44\u0D4D\u0D57\u0D62\u0D63\u0D81\u0DCA\u0DCF\u0DD2-\u0DD4\u0DD6\u0DDF\u0E31\u0E34-\u0E3A\u0E47-\u0E4E\u0EB1\u0EB4-\u0EBC\u0EC8-\u0ECD\u0F18\u0F19\u0F35\u0F37\u0F39\u0F71-\u0F7E\u0F80-\u0F84\u0F86\u0F87\u0F8D-\u0F97\u0F99-\u0FBC\u0FC6\u102D-\u1030\u1032-\u1037\u1039\u103A\u103D\u103E\u1058\u1059\u105E-\u1060\u1071-\u1074\u1082\u1085\u1086\u108D\u109D\u135D-\u135F\u1712-\u1714\u1732-\u1734\u1752\u1753\u1772\u1773\u17B4\u17B5\u17B7-\u17BD\u17C6\u17C9-\u17D3\u17DD\u180B-\u180D\u1885\u1886\u18A9\u1920-\u1922\u1927\u1928\u1932\u1939-\u193B\u1A17\u1A18\u1A1B\u1A56\u1A58-\u1A5E\u1A60\u1A62\u1A65-\u1A6C\u1A73-\u1A7C\u1A7F\u1AB0-\u1AC0\u1B00-\u1B03\u1B34-\u1B3A\u1B3C\u1B42\u1B6B-\u1B73\u1B80\u1B81\u1BA2-\u1BA5\u1BA8\u1BA9\u1BAB-\u1BAD\u1BE6\u1BE8\u1BE9\u1BED\u1BEF-\u1BF1\u1C2C-\u1C33\u1C36\u1C37\u1CD0-\u1CD2\u1CD4-\u1CE0\u1CE2-\u1CE8\u1CED\u1CF4\u1CF8\u1CF9\u1DC0-\u1DF9\u1DFB-\u1DFF\u200C\u20D0-\u20F0\u2CEF-\u2CF1\u2D7F\u2DE0-\u2DFF\u302A-\u302F\u3099\u309A\uA66F-\uA672\uA674-\uA67D\uA69E\uA69F\uA6F0\uA6F1\uA802\uA806\uA80B\uA825\uA826\uA82C\uA8C4\uA8C5\uA8E0-\uA8F1\uA8FF\uA926-\uA92D\uA947-\uA951\uA980-\uA982\uA9B3\uA9B6-\uA9B9\uA9BC\uA9BD\uA9E5\uAA29-\uAA2E\uAA31\uAA32\uAA35\uAA36\uAA43\uAA4C\uAA7C\uAAB0\uAAB2-\uAAB4\uAAB7\uAAB8\uAABE\uAABF\uAAC1\uAAEC\uAAED\uAAF6\uABE5\uABE8\uABED\uFB1E\uFE00-\uFE0F\uFE20-\uFE2F\uFF9E\uFF9F]|\uD800[\uDDFD\uDEE0\uDF76-\uDF7A]|\uD802[\uDE01-\uDE03\uDE05\uDE06\uDE0C-\uDE0F\uDE38-\uDE3A\uDE3F\uDEE5\uDEE6]|\uD803[\uDD24-\uDD27\uDEAB\uDEAC\uDF46-\uDF50]|\uD804[\uDC01\uDC38-\uDC46\uDC7F-\uDC81\uDCB3-\uDCB6\uDCB9\uDCBA\uDD00-\uDD02\uDD27-\uDD2B\uDD2D-\uDD34\uDD73\uDD80\uDD81\uDDB6-\uDDBE\uDDC9-\uDDCC\uDDCF\uDE2F-\uDE31\uDE34\uDE36\uDE37\uDE3E\uDEDF\uDEE3-\uDEEA\uDF00\uDF01\uDF3B\uDF3C\uDF3E\uDF40\uDF57\uDF66-\uDF6C\uDF70-\uDF74]|\uD805[\uDC38-\uDC3F\uDC42-\uDC44\uDC46\uDC5E\uDCB0\uDCB3-\uDCB8\uDCBA\uDCBD\uDCBF\uDCC0\uDCC2\uDCC3\uDDAF\uDDB2-\uDDB5\uDDBC\uDDBD\uDDBF\uDDC0\uDDDC\uDDDD\uDE33-\uDE3A\uDE3D\uDE3F\uDE40\uDEAB\uDEAD\uDEB0-\uDEB5\uDEB7\uDF1D-\uDF1F\uDF22-\uDF25\uDF27-\uDF2B]|\uD806[\uDC2F-\uDC37\uDC39\uDC3A\uDD30\uDD3B\uDD3C\uDD3E\uDD43\uDDD4-\uDDD7\uDDDA\uDDDB\uDDE0\uDE01-\uDE0A\uDE33-\uDE38\uDE3B-\uDE3E\uDE47\uDE51-\uDE56\uDE59-\uDE5B\uDE8A-\uDE96\uDE98\uDE99]|\uD807[\uDC30-\uDC36\uDC38-\uDC3D\uDC3F\uDC92-\uDCA7\uDCAA-\uDCB0\uDCB2\uDCB3\uDCB5\uDCB6\uDD31-\uDD36\uDD3A\uDD3C\uDD3D\uDD3F-\uDD45\uDD47\uDD90\uDD91\uDD95\uDD97\uDEF3\uDEF4]|\uD81A[\uDEF0-\uDEF4\uDF30-\uDF36]|\uD81B[\uDF4F\uDF8F-\uDF92\uDFE4]|\uD82F[\uDC9D\uDC9E]|\uD834[\uDD65\uDD67-\uDD69\uDD6E-\uDD72\uDD7B-\uDD82\uDD85-\uDD8B\uDDAA-\uDDAD\uDE42-\uDE44]|\uD836[\uDE00-\uDE36\uDE3B-\uDE6C\uDE75\uDE84\uDE9B-\uDE9F\uDEA1-\uDEAF]|\uD838[\uDC00-\uDC06\uDC08-\uDC18\uDC1B-\uDC21\uDC23\uDC24\uDC26-\uDC2A\uDD30-\uDD36\uDEEC-\uDEEF]|\uD83A[\uDCD0-\uDCD6\uDD44-\uDD4A]|\uD83C[\uDFFB-\uDFFF]|\uDB40[\uDC20-\uDC7F\uDD00-\uDDEF])*\u200D$/,
+  Z = e => -1 !== e.search(V),
   H = /(?:\uD83C[\uDDE6-\uDDFF])+$/g,
   W = e => {
     var t = e.match(H);
@@ -996,8 +996,8 @@ var J = new WeakMap,
             }
           }
           if (eN.isText(h)) {
-            var b = el.equals(m, c.path);
-            for (b ? (_ = i ? c.offset : h.text.length - c.offset, p = c.offset) : (_ = h.text.length, p = i ? _ : 0), (b || u || "offset" === r) && (yield {
+            var v = el.equals(m, c.path);
+            for (v ? (_ = i ? c.offset : h.text.length - c.offset, p = c.offset) : (_ = h.text.length, p = i ? _ : 0), (v || u || "offset" === r) && (yield {
                 path: m,
                 offset: p
               }, u = !1);;) {
@@ -1019,7 +1019,7 @@ var J = new WeakMap,
       }
 
       function y(e, t, n) {
-        return "character" === t ? v(e, n) : "word" === t ? I(e, n) : "line" === t || "block" === t ? e.length : 1
+        return "character" === t ? b(e, n) : "word" === t ? I(e, n) : "line" === t || "block" === t ? e.length : 1
       }
     },
     previous(e) {
@@ -1175,7 +1175,7 @@ var J = new WeakMap,
   ei = {
     ancestor(e, t) {
       var n = ei.get(e, t);
-      if (eN.isText(n)) throw Error("Cannot get the ancestor node at path [".concat(t, "] because it refers to a text node instead: ").concat(eb.stringify(n)));
+      if (eN.isText(n)) throw Error("Cannot get the ancestor node at path [".concat(t, "] because it refers to a text node instead: ").concat(ev.stringify(n)));
       return n
     },
     * ancestors(e, t) {
@@ -1186,9 +1186,9 @@ var J = new WeakMap,
       }
     },
     child(e, t) {
-      if (eN.isText(e)) throw Error("Cannot get the child of a text node: ".concat(eb.stringify(e)));
+      if (eN.isText(e)) throw Error("Cannot get the child of a text node: ".concat(ev.stringify(e)));
       var n = e.children[t];
-      if (null == n) throw Error("Cannot get child at index `".concat(t, "` in node: ").concat(eb.stringify(e)));
+      if (null == n) throw Error("Cannot get child at index `".concat(t, "` in node: ").concat(ev.stringify(e)));
       return n
     },
     * children(e, t) {
@@ -1208,7 +1208,7 @@ var J = new WeakMap,
     },
     descendant(e, t) {
       var n = ei.get(e, t);
-      if ($.isEditor(n)) throw Error("Cannot get the descendant node at path [".concat(t, "] because it refers to the root editor node instead: ").concat(eb.stringify(n)));
+      if ($.isEditor(n)) throw Error("Cannot get the descendant node at path [".concat(t, "] because it refers to the root editor node instead: ").concat(ev.stringify(n)));
       return n
     },
     * descendants(e) {
@@ -1232,7 +1232,7 @@ var J = new WeakMap,
       return [r, n]
     },
     fragment(e, t) {
-      if (eN.isText(e)) throw Error("Cannot get a fragment starting from a root text node: ".concat(eb.stringify(e)));
+      if (eN.isText(e)) throw Error("Cannot get a fragment starting from a root text node: ".concat(ev.stringify(e)));
       return (0, o.Uy)({
         children: e.children
       }, e => {
@@ -1264,7 +1264,7 @@ var J = new WeakMap,
     get(e, t) {
       for (var n = e, r = 0; r < t.length; r++) {
         var i = t[r];
-        if (eN.isText(n) || !n.children[i]) throw Error("Cannot find a descendant at path [".concat(t, "] in node: ").concat(eb.stringify(e)));
+        if (eN.isText(n) || !n.children[i]) throw Error("Cannot find a descendant at path [".concat(t, "] in node: ").concat(ev.stringify(e)));
         n = n.children[i]
       }
       return n
@@ -1294,7 +1294,7 @@ var J = new WeakMap,
     },
     leaf(e, t) {
       var n = ei.get(e, t);
-      if (!eN.isText(n)) throw Error("Cannot get the leaf node at path [".concat(t, "] because it refers to a non-leaf node: ").concat(eb.stringify(n)));
+      if (!eN.isText(n)) throw Error("Cannot get the leaf node at path [".concat(t, "] because it refers to a non-leaf node: ").concat(ev.stringify(n)));
       return n
     },
     * levels(e, t) {
@@ -1837,12 +1837,12 @@ var eg = {
       }
     }
   },
-  ev = void 0,
-  eb = {
+  eb = void 0,
+  ev = {
     setScrubber(e) {
-      ev = e
+      eb = e
     },
-    stringify: e => JSON.stringify(e, ev)
+    stringify: e => JSON.stringify(e, eb)
   },
   ey = (e, t) => {
     for (var n in e) {
@@ -1938,11 +1938,11 @@ var eN = {
           })
         }
         if (c > _) {
-          var v = c - _;
+          var b = c - _;
           h = eT(eT({}, p), {}, {
-            text: p.text.slice(0, v)
+            text: p.text.slice(0, b)
           }), p = eT(eT({}, p), {}, {
-            text: p.text.slice(v)
+            text: p.text.slice(b)
           })
         }
         Object.assign(p, i), h && s.push(h), s.push(p), m && s.push(m)
@@ -1999,10 +1999,10 @@ var eR = (e, t, n) => {
       case "merge_node":
         var {
           path: g
-        } = n, E = ei.get(e, g), v = el.previous(g), b = ei.get(e, v), y = ei.parent(e, g), O = g[g.length - 1];
-        if (eN.isText(E) && eN.isText(b)) b.text += E.text;
-        else if (eN.isText(E) || eN.isText(b)) throw Error('Cannot apply a "merge_node" operation at path ['.concat(g, "] to nodes of different interfaces: ").concat(eb.stringify(E), " ").concat(eb.stringify(b)));
-        else b.children.push(...E.children);
+        } = n, E = ei.get(e, g), b = el.previous(g), v = ei.get(e, b), y = ei.parent(e, g), O = g[g.length - 1];
+        if (eN.isText(E) && eN.isText(v)) v.text += E.text;
+        else if (eN.isText(E) || eN.isText(v)) throw Error('Cannot apply a "merge_node" operation at path ['.concat(g, "] to nodes of different interfaces: ").concat(ev.stringify(E), " ").concat(ev.stringify(v)));
+        else v.children.push(...E.children);
         if (y.children.splice(O, 1), t)
           for (var [I, S] of eg.points(t)) t[S] = ef.transform(I, n);
         break;
@@ -2031,14 +2031,14 @@ var eR = (e, t, n) => {
             if (null != t && null != G) t[U] = G;
             else {
               var B = void 0,
-                V = void 0;
-              for (var [F, Z] of ei.texts(e))
-                if (-1 === el.compare(Z, M)) B = [F, Z];
+                F = void 0;
+              for (var [V, Z] of ei.texts(e))
+                if (-1 === el.compare(Z, M)) B = [V, Z];
                 else {
-                  V = [F, Z];
+                  F = [V, Z];
                   break
                 } var H = !1;
-              B && V && (H = el.equals(V[1], M) ? !el.hasPrevious(V[1]) : el.common(B[1], M).length < el.common(V[1], M).length), B && !H ? (j.path = B[1], j.offset = B[0].text.length) : V ? (j.path = V[1], j.offset = 0) : t = null
+              B && F && (H = el.equals(F[1], M) ? !el.hasPrevious(F[1]) : el.common(B[1], M).length < el.common(F[1], M).length), B && !H ? (j.path = B[1], j.offset = B[0].text.length) : F ? (j.path = F[1], j.offset = 0) : t = null
             }
           }
         break;
@@ -2073,7 +2073,7 @@ var eR = (e, t, n) => {
         if (null == es) t = es;
         else {
           if (null == t) {
-            if (!eg.isRange(es)) throw Error('Cannot apply an incomplete "set_selection" operation properties '.concat(eb.stringify(es), " when there is no current selection."));
+            if (!eg.isRange(es)) throw Error('Cannot apply an incomplete "set_selection" operation properties '.concat(ev.stringify(es), " when there is no current selection."));
             t = eC({}, es)
           }
           for (var ec in es) {
@@ -2094,7 +2094,7 @@ var eR = (e, t, n) => {
         if (0 === e_.length) throw Error('Cannot apply a "split_node" operation at path ['.concat(e_, "] because the root node cannot be split."));
         var em = ei.get(e, e_),
           eE = ei.parent(e, e_),
-          ev = e_[e_.length - 1];
+          eb = e_[e_.length - 1];
         if (eN.isText(em)) {
           var ey = em.text.slice(0, ep),
             eO = em.text.slice(ep);
@@ -2108,7 +2108,7 @@ var eR = (e, t, n) => {
             children: eS
           })
         }
-        if (eE.children.splice(ev + 1, 0, ed), t)
+        if (eE.children.splice(eb + 1, 0, ed), t)
           for (var [eT, eA] of eg.points(t)) t[eA] = ef.transform(eT, n)
     }
     return t
@@ -2199,12 +2199,12 @@ var eM = {
           if (!(!i && $.void(e, {
               at: g
             }))) {
-            for (var v of t) {
-              var b = g.concat(E);
+            for (var b of t) {
+              var v = g.concat(E);
               E++, e.apply({
                 type: "insert_node",
-                path: b,
-                node: v
+                path: v,
+                node: b
               }), a = el.next(a)
             }
             if (a = el.previous(a), l) {
@@ -2321,15 +2321,15 @@ var eM = {
           if (f && _) {
             var [p, h] = f, [m, g] = _;
             if (0 !== h.length && 0 !== g.length) {
-              var v = el.next(g),
-                b = el.common(h, g),
+              var b = el.next(g),
+                v = el.common(h, g),
                 y = el.isSibling(h, g),
                 O = Array.from($.levels(e, {
                   at: h
                 }), e => {
                   var [t] = e;
                   return t
-                }).slice(b.length).slice(0, -1),
+                }).slice(v.length).slice(0, -1),
                 I = $.above(e, {
                   at: h,
                   mode: "highest",
@@ -2342,10 +2342,10 @@ var eM = {
               } else if (K.isElement(p) && K.isElement(m)) {
                 var T = E(p, eD);
                 r = m.children.length, n = T
-              } else throw Error("Cannot merge the node at path [".concat(h, "] with the previous sibling because it is not the same kind: ").concat(eb.stringify(p), " ").concat(eb.stringify(m)));
+              } else throw Error("Cannot merge the node at path [".concat(h, "] with the previous sibling because it is not the same kind: ").concat(ev.stringify(p), " ").concat(ev.stringify(m)));
               y || eW.moveNodes(e, {
                 at: h,
-                to: v,
+                to: b,
                 voids: s
               }), S && eW.removeNodes(e, {
                 at: S.current,
@@ -2355,7 +2355,7 @@ var eM = {
                 voids: s
               }) : e.apply({
                 type: "merge_node",
-                path: v,
+                path: b,
                 position: r,
                 properties: n
               }), S && S.unref()
@@ -2480,16 +2480,16 @@ var eM = {
               mode: l,
               voids: u
             }))) {
-            var v = {},
-              b = {};
+            var b = {},
+              v = {};
             if (0 !== E.length) {
               var y = !1;
-              for (var O in t) "children" !== O && "text" !== O && o(t[O], g[O]) && (y = !0, g.hasOwnProperty(O) && (v[O] = g[O]), a ? null != t[O] && (b[O] = a(g[O], t[O])) : null != t[O] && (b[O] = t[O]));
+              for (var O in t) "children" !== O && "text" !== O && o(t[O], g[O]) && (y = !0, g.hasOwnProperty(O) && (b[O] = g[O]), a ? null != t[O] && (v[O] = a(g[O], t[O])) : null != t[O] && (v[O] = t[O]));
               y && e.apply({
                 type: "set_node",
                 path: E,
-                properties: v,
-                newProperties: b
+                properties: b,
+                newProperties: v
               })
             }
           }
@@ -2535,18 +2535,18 @@ var eM = {
             if (!o && h) {
               var [g, E] = h;
               if (K.isElement(g) && e.isInline(g)) {
-                var v = $.after(e, E);
-                if (!v) {
-                  var b = {
+                var b = $.after(e, E);
+                if (!b) {
+                  var v = {
                       text: ""
                     },
                     y = el.next(E);
-                  eW.insertNodes(e, b, {
+                  eW.insertNodes(e, v, {
                     at: y,
                     voids: o
-                  }), v = $.point(e, y)
+                  }), b = $.point(e, y)
                 }
-                s = v, c = !0
+                s = b, c = !0
               }
               l = s.path.length - E.length + 1, c = !0
             }
@@ -2739,7 +2739,7 @@ function eB(e) {
   }
   return e
 }
-var eV = {
+var eF = {
     collapse(e) {
       var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
         {
@@ -2811,7 +2811,7 @@ var eV = {
         eW.setSelection(e, t);
         return
       }
-      if (!eg.isRange(t)) throw Error("When setting the selection and the current selection is `null` you must provide at least an `anchor` and `focus`, but you passed: ".concat(eb.stringify(t)));
+      if (!eg.isRange(t)) throw Error("When setting the selection and the current selection is `null` you must provide at least an `anchor` and `focus`, but you passed: ".concat(ev.stringify(t)));
       e.apply({
         type: "set_selection",
         properties: n,
@@ -2851,7 +2851,7 @@ var eV = {
       }
     }
   },
-  eF = {
+  eV = {
     delete(e) {
       var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
       $.withoutNormalizing(e, () => {
@@ -2905,11 +2905,11 @@ var eV = {
               match: t => K.isElement(t) && $.isBlock(e, t),
               at: m,
               voids: a
-            }), v = $.above(e, {
+            }), b = $.above(e, {
               match: t => K.isElement(t) && $.isBlock(e, t),
               at: g,
               voids: a
-            }), b = E && v && !el.equals(E[1], v[1]), y = el.equals(m.path, g.path), O = a ? null : $.void(e, {
+            }), v = E && b && !el.equals(E[1], b[1]), y = el.equals(m.path, g.path), O = a ? null : $.void(e, {
               at: m,
               mode: "highest"
             }), I = a ? null : $.void(e, {
@@ -2922,7 +2922,7 @@ var eV = {
             }
             if (I) {
               var T = $.after(e, g);
-              T && v && el.isAncestor(v[1], T.path) && (g = T)
+              T && b && el.isAncestor(b[1], T.path) && (g = T)
             }
             var N = [];
             for (var A of $.nodes(e, {
@@ -2963,17 +2963,17 @@ var eV = {
               var G = D.current,
                 [B] = $.leaf(e, G),
                 {
-                  path: V
+                  path: F
                 } = G,
-                F = y ? m.offset : 0,
-                Z = B.text.slice(F, g.offset);
+                V = y ? m.offset : 0,
+                Z = B.text.slice(V, g.offset);
               Z.length > 0 && (e.apply({
                 type: "remove_text",
-                path: V,
-                offset: F,
+                path: F,
+                offset: V,
                 text: Z
               }), L = Z)
-            }!y && b && D.current && w.current && eW.mergeNodes(e, {
+            }!y && v && D.current && w.current && eW.mergeNodes(e, {
               at: D.current,
               hanging: !0,
               voids: a
@@ -3033,21 +3033,21 @@ var eV = {
               children: t
             }, []), [, E] = ei.last({
               children: t
-            }, []), v = [], b = t => {
+            }, []), b = [], v = t => {
               var [n, r] = t;
               return 0 !== r.length && (!!p || !(h && el.isAncestor(r, g) && K.isElement(n) && !e.isVoid(n) && !e.isInline(n) || m && el.isAncestor(r, E) && K.isElement(n) && !e.isVoid(n) && !e.isInline(n)))
             };
             for (var y of ei.nodes({
                 children: t
               }, {
-                pass: b
-              })) b(y) && v.push(y);
+                pass: v
+              })) v(y) && b.push(y);
             var O = [],
               I = [],
               S = [],
               T = !0,
               N = !1;
-            for (var [A] of v) K.isElement(A) && !e.isInline(A) ? (T = !1, N = !0, I.push(A)) : T ? O.push(A) : S.push(A);
+            for (var [A] of b) K.isElement(A) && !e.isInline(A) ? (T = !1, N = !0, I.push(A)) : T ? O.push(A) : S.push(A);
             var [C] = $.nodes(e, {
               at: a,
               match: t => eN.isText(t) || $.isInline(e, t),
@@ -3161,4 +3161,4 @@ function eH(e) {
   }
   return e
 }
-var eW = eH(eH(eH(eH({}, eP), eM), eV), eF)
+var eW = eH(eH(eH(eH({}, eP), eM), eF), eV)

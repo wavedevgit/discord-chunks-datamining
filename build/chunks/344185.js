@@ -63,11 +63,11 @@ function E(e) {
   e in h && delete h[e]
 }
 
-function v(e) {
-  null != e.threads && e.threads.length > 0 && (h[e.id] = {}, e.threads.filter(e => l.AW.has(e.type)).forEach(t => b(e.id, t))), e.hasThreadsSubscription && m.add(e.id)
+function b(e) {
+  null != e.threads && e.threads.length > 0 && (h[e.id] = {}, e.threads.filter(e => l.AW.has(e.type)).forEach(t => v(e.id, t))), e.hasThreadsSubscription && m.add(e.id)
 }
 
-function b(e, t) {
+function v(e, t) {
   let n = h[e],
     r = t.parent_id;
   r in n || (n[r] = {}), h[e][r][t.id] = g(t)
@@ -75,7 +75,7 @@ function b(e, t) {
 
 function y(e) {
   h = {}, m.clear(), e.guilds.forEach(e => {
-    v(e)
+    b(e)
   })
 }
 
@@ -84,7 +84,7 @@ function O(e) {
     channels: t
   } = e;
   h = {}, o()(t).filter(e => l.Ec.has(e.type)).groupBy("guild_id").forEach((e, t) => {
-    h[t] = {}, e.forEach(e => b(t, e))
+    h[t] = {}, e.forEach(e => v(t, e))
   })
 }
 
@@ -92,7 +92,7 @@ function I(e) {
   let {
     guild: t
   } = e;
-  E(t.id), v(t)
+  E(t.id), b(t)
 }
 
 function S(e) {
@@ -126,7 +126,7 @@ function N(e) {
     channelIds: r
   } = e;
   for (let e in null == r && m.add(t), h[t] = f({}, h[t]), h[t]) h[t][e] = f({}, h[t][e]);
-  n.forEach(e => b(t, e))
+  n.forEach(e => v(t, e))
 }
 
 function A(e) {

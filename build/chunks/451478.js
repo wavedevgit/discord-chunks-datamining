@@ -97,14 +97,14 @@ function E(e) {
   })), !0)
 }
 
-function v(e) {
+function b(e) {
   let t = h(e.windowId);
   return t.visible !== e.visible && (p.set(e.windowId, f(u({}, t), {
     visible: e.visible
   })), !0)
 }
 
-function b(e) {
+function v(e) {
   let t = h(e.windowId);
   return (t.windowSize.width !== e.width || t.windowSize.height !== e.height) && (p.set(e.windowId, f(u({}, t), {
     windowSize: {
@@ -149,9 +149,9 @@ let I = new O(s.Z, {
   WINDOW_INIT: m,
   WINDOW_FULLSCREEN_CHANGE: g,
   WINDOW_FOCUS: E,
-  WINDOW_RESIZED: b,
+  WINDOW_RESIZED: v,
   WINDOW_UNLOAD: y,
-  WINDOW_VISIBILITY_CHANGE: v
+  WINDOW_VISIBILITY_CHANGE: b
 });
 Promise.resolve().then(n.bind(n, 626135)).then(e => {
   let {

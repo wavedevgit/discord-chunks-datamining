@@ -16,8 +16,8 @@ var f = 0,
   m = 258,
   g = 29,
   E = 256,
-  v = 286,
-  b = 30,
+  b = 286,
+  v = 30,
   y = 19,
   O = 573,
   I = 15,
@@ -34,7 +34,7 @@ var f = 0,
   x = 512,
   M = Array(576);
 d(M);
-var k = Array(2 * b);
+var k = Array(2 * v);
 d(k);
 var j = Array(x);
 d(j);
@@ -42,13 +42,13 @@ var U = Array(m - h + 1);
 d(U);
 var G = Array(g);
 d(G);
-var B = Array(b);
+var B = Array(v);
 
-function V(e, t, n, r, i) {
+function F(e, t, n, r, i) {
   this.static_tree = e, this.extra_bits = t, this.extra_base = n, this.elems = r, this.max_length = i, this.has_stree = e && e.length
 }
 
-function F(e, t) {
+function V(e, t) {
   this.dyn_tree = e, this.max_code = 0, this.stat_desc = t
 }
 
@@ -115,21 +115,21 @@ function X() {
     for (e = 0, G[a] = n; e < 1 << P[a]; e++) U[n++] = a;
   for (U[n - 1] = a, s = 0, a = 0; a < 16; a++)
     for (e = 0, B[a] = s; e < 1 << w[a]; e++) j[s++] = a;
-  for (s >>= 7; a < b; a++)
+  for (s >>= 7; a < v; a++)
     for (e = 0, B[a] = s << 7; e < 1 << w[a] - 7; e++) j[256 + s++] = a;
   for (t = 0; t <= I; t++) l[t] = 0;
   for (e = 0; e <= 143;) M[2 * e + 1] = 8, e++, l[8]++;
   for (; e <= 255;) M[2 * e + 1] = 9, e++, l[9]++;
   for (; e <= 279;) M[2 * e + 1] = 7, e++, l[7]++;
   for (; e <= 287;) M[2 * e + 1] = 8, e++, l[8]++;
-  for (Q(M, v + 1, l), e = 0; e < b; e++) k[2 * e + 1] = 5, k[2 * e] = K(e, 5);
-  r = new V(M, P, E + 1, v, I), i = new V(k, w, 0, b, I), o = new V([], D, 0, y, T)
+  for (Q(M, b + 1, l), e = 0; e < v; e++) k[2 * e + 1] = 5, k[2 * e] = K(e, 5);
+  r = new F(M, P, E + 1, b, I), i = new F(k, w, 0, v, I), o = new F([], D, 0, y, T)
 }
 
 function J(e) {
   var t;
-  for (t = 0; t < v; t++) e.dyn_ltree[2 * t] = 0;
-  for (t = 0; t < b; t++) e.dyn_dtree[2 * t] = 0;
+  for (t = 0; t < b; t++) e.dyn_ltree[2 * t] = 0;
+  for (t = 0; t < v; t++) e.dyn_dtree[2 * t] = 0;
   for (t = 0; t < y; t++) e.bl_tree[2 * t] = 0;
   e.dyn_ltree[2 * N] = 1, e.opt_len = e.static_len = 0, e.last_lit = e.matches = 0
 }
@@ -223,7 +223,7 @@ d(B);
 var eu = !1;
 
 function ed(e) {
-  eu || (X(), eu = !0), e.l_desc = new F(e.dyn_ltree, r), e.d_desc = new F(e.dyn_dtree, i), e.bl_desc = new F(e.bl_tree, o), e.bi_buf = 0, e.bi_valid = 0, J(e)
+  eu || (X(), eu = !0), e.l_desc = new V(e.dyn_ltree, r), e.d_desc = new V(e.dyn_dtree, i), e.bl_desc = new V(e.bl_tree, o), e.bi_buf = 0, e.bi_valid = 0, J(e)
 }
 
 function ef(e, t, n, r) {

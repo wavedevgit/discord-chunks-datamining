@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(823961),
   g = n(706454),
   E = n(451478),
-  v = n(597952),
-  b = n(252618),
+  b = n(597952),
+  v = n(252618),
   y = n(80006),
   O = n(587061),
   I = n(392358),
@@ -40,7 +40,7 @@ function N(e) {
     } = i.useContext(f.Sfi),
     {
       accessibilitySettings: _,
-      appWrapperClassName: b
+      appWrapperClassName: v
     } = (0, y.I)(),
     {
       fontScale: S,
@@ -62,7 +62,7 @@ function N(e) {
   return (0, r.jsx)("html", {
     lang: t,
     style: "font-size: ".concat(S, "%; --saturation-factor: ").concat(A, "; --devtools-sidebar-width: ").concat(M, "px;"),
-    className: a()(e, b, {
+    className: a()(e, v, {
       overlay: __OVERLAY__,
       "mouse-mode": x,
       "reduce-motion": d.enabled,
@@ -76,7 +76,7 @@ function N(e) {
       "visual-refresh": j,
       "visual-refresh-chat-input": U,
       "confetti-mode": w
-    }, (0, f.QeD)(o), "density-".concat(s), (0, v.Z)(), N)
+    }, (0, f.QeD)(o), "density-".concat(s), (0, b.Z)(), N)
   })
 }
 
@@ -105,7 +105,7 @@ function C(e) {
     children: t,
     skipsSettingDefaultPageTitle: n
   } = e;
-  (0, b.ZD)({
+  (0, v.ZD)({
     skipsSettingDefaultPageTitle: n
   });
   let {

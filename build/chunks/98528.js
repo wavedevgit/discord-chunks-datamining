@@ -3,11 +3,11 @@
 n.d(t, {
   Qs: () => E,
   Uf: () => g,
-  VO: () => v,
+  VO: () => b,
   Xs: () => m,
   ep: () => h,
   t$: () => y,
-  yi: () => b
+  yi: () => v
 }), n(47120), n(653041);
 var r = n(192379),
   i = n(392711),
@@ -138,7 +138,7 @@ let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
       i.current = !0, d(), _(e)
     }, [i, d, _])
   },
-  v = e => {
+  b = e => {
     let {
       columnCounts: t,
       gridNavigatorId: n,
@@ -192,8 +192,8 @@ let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
       autoFocusElement: !1,
       useVirtualFocus: !0
     }), {
-      gridContainerProps: v,
-      handleGridContainerKeyDown: b
+      gridContainerProps: b,
+      handleGridContainerKeyDown: v
     } = r.useMemo(() => {
       let e = E();
       return {
@@ -210,13 +210,13 @@ let _ = (0, c.Mg)(u.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
       gridDispatch: h,
       getItemProps: m,
       getRowProps: g,
-      gridContainerProps: v,
-      handleGridContainerKeyDown: b,
+      gridContainerProps: b,
+      handleGridContainerKeyDown: v,
       isUsingKeyboardNavigation: u
     }
   };
 
-function b(e) {
+function v(e) {
   let {
     categories: t,
     collapsedCategories: n,
@@ -285,7 +285,7 @@ function y(e) {
     gridContainerProps: _,
     handleGridContainerKeyDown: p,
     isUsingKeyboardNavigation: h
-  } = v({
+  } = b({
     columnCounts: t,
     gridNavigatorId: a,
     itemGrid: n,

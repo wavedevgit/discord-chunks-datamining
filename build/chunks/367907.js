@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $H: () => V,
+  $H: () => F,
   AB: () => U,
   JS: () => k,
   ZP: () => H,
   hH: () => x,
-  kO: () => F,
+  kO: () => V,
   oG: () => Z,
   v_: () => j,
   yw: () => B
@@ -27,8 +27,8 @@ var r = n(392711),
   m = n(496675),
   g = n(158776),
   E = n(19780),
-  v = n(306680),
-  b = n(944486),
+  b = n(306680),
+  v = n(944486),
   y = n(914010),
   O = n(9156),
   I = n(594174),
@@ -141,7 +141,7 @@ function U(e) {
     channel_type: t.type,
     guild_id: t.getGuildId(),
     media_session_id: r
-  }, F(t.getGuildId(), t.id, n), (0, C.V)())
+  }, V(t.getGuildId(), t.id, n), (0, C.V)())
 }
 
 function G(e, t) {
@@ -155,7 +155,7 @@ function B(e) {
   if (T.default.isThrottled(e)) return;
   let r = !("location" in t) || t.location !== R.Sbl.GUILD_CREATE_INVITE_SUGGESTION,
     i = "guild_id" in t ? t.guild_id : r ? y.Z.getGuildId() : null,
-    o = "channel_id" in t ? t.channel_id : r ? b.Z.getChannelId(i) : null,
+    o = "channel_id" in t ? t.channel_id : r ? v.Z.getChannelId(i) : null,
     a = u.Z.getChannel(o),
     s = D({}, t, x(G(a, i)), null != i && null != o && (0, P.AB)(o) ? M(i, o) : j(a));
   T.default.track(e, s, {
@@ -163,7 +163,7 @@ function B(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let t = u.Z.getChannel(e);
   if (null == t) return {
     channel_id: e
@@ -180,7 +180,7 @@ function V(e) {
       is_app_dm: n
     }
   }
-  let r = v.ZP.getSnapshot(e, 10 * N.Z.Millis.SECOND);
+  let r = b.ZP.getSnapshot(e, 10 * N.Z.Millis.SECOND);
   return {
     channel_id: e,
     channel_was_unread: r.unread,
@@ -203,7 +203,7 @@ function V(e) {
   }
 }
 
-function F(e, t, n) {
+function V(e, t, n) {
   let r = {
     voice_state_count: 0,
     video_stream_count: 0,
@@ -224,5 +224,5 @@ function Z(e, t) {
 }
 let H = {
   trackWithMetadata: B,
-  getVoiceStateMetadata: F
+  getVoiceStateMetadata: V
 }

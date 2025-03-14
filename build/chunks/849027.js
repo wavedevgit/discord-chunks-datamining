@@ -22,14 +22,14 @@ async function E(e) {
   let {
     guildId: t,
     channelId: n
-  } = e, E = _.Z.getGuild(t), v = _.Z.getRoles(t);
+  } = e, E = _.Z.getGuild(t), b = _.Z.getRoles(t);
   if (null == E && t !== m.ME) return !1;
   if (null == n) return !0;
   if ((0, g.AB)(n)) switch (n) {
     case g.oC.ROLE_SUBSCRIPTIONS:
-      return (0, c.on)(t, v);
+      return (0, c.on)(t, b);
     case g.oC.GUILD_SHOP:
-      return (0, i.r)(E, v);
+      return (0, i.r)(E, b);
     case g.oC.MEMBER_APPLICATIONS:
       return (0, o.v)(t);
     case g.oC.GUILD_HOME:
@@ -47,6 +47,6 @@ async function E(e) {
     default:
       (0, p.vE)(n)
   }
-  let b = f.Z.getChannel(n);
-  return (null != b || (await d.Z.loadThread(n), null != (b = f.Z.getChannel(n)))) && ((0, h.YO)(b) || r.Z.isChannelGatedAndVisible(t, n))
+  let v = f.Z.getChannel(n);
+  return (null != v || (await d.Z.loadThread(n), null != (v = f.Z.getChannel(n)))) && ((0, h.YO)(v) || r.Z.isChannelGatedAndVisible(t, n))
 }

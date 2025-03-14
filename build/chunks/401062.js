@@ -4,7 +4,7 @@ n.d(t, {
   Lx: () => S,
   kq: () => I,
   vy: () => O,
-  yX: () => b
+  yX: () => v
 });
 var r = n(392711),
   i = n(544891),
@@ -22,8 +22,8 @@ var r = n(392711),
   m = n(963838),
   g = n(353368),
   E = n(981631),
-  v = n(710111),
-  b = function(e) {
+  b = n(710111),
+  v = function(e) {
     return e.EMOJI_PICKER = "emoji_picker", e.EFFECT_BAR = "effect_bar", e
   }({});
 
@@ -70,7 +70,7 @@ function I(e, t, n, r) {
       emoji_id: t.emojiId,
       emoji_name: null !== (a = t.emojiName) && void 0 !== a ? a : null == s ? void 0 : s.name
     };
-  t.guildId !== v.X8 && (_.source_guild_id = t.guildId), i.tn.post({
+  t.guildId !== b.X8 && (_.source_guild_id = t.guildId), i.tn.post({
     url: E.ANM.SEND_SOUNDBOARD_SOUND(e),
     body: _,
     signal: d.signal,

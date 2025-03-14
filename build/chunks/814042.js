@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(27733),
   g = n(981631),
   E = n(474936),
-  v = n(388032),
-  b = n(583914),
+  b = n(388032),
+  v = n(583914),
   y = n(867250);
 let O = () => (0, h.f)(!1),
   I = e => {
@@ -42,8 +42,8 @@ let O = () => (0, h.f)(!1),
       N = (null == S ? void 0 : null === (t = S.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === E.Si.TIER_0,
       A = null != S || null != T;
     return (0, r.jsxs)("div", {
-      className: a()(b.upsellWrapper, {
-        [b.unifyTrialUpsell]: A
+      className: a()(v.upsellWrapper, {
+        [v.unifyTrialUpsell]: A
       }),
       children: [A ? (0, r.jsx)(f.ZP, {
         trialOffer: S,
@@ -51,34 +51,34 @@ let O = () => (0, h.f)(!1),
         onClose: O,
         type: E.cd.STICKER_PICKER_UPSELL,
         subscriptionTier: null !== (o = null == S ? void 0 : null === (n = S.subscription_trial) || void 0 === n ? void 0 : n.sku_id) && void 0 !== o ? o : E.Si.TIER_2,
-        children: N ? v.NW.format(v.t.MAGag4, {
+        children: N ? b.NW.format(b.t.MAGag4, {
           planName: (0, p.aq)(E.Xh.PREMIUM_MONTH_TIER_0),
           onClick: h
-        }) : v.NW.format(v.t.jt7JX1, {
+        }) : b.NW.format(b.t.jt7JX1, {
           onClick: h
         })
       }) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("img", {
-          className: b.upsellImage,
+          className: v.upsellImage,
           src: y,
-          alt: v.NW.string(v.t.do7AoK)
+          alt: b.NW.string(b.t.do7AoK)
         }), (0, r.jsx)(s.Text, {
-          className: b.upsellTitle,
+          className: v.upsellTitle,
           color: "header-primary",
           variant: "text-lg/semibold",
-          children: v.NW.string(v.t.jJG1pq)
+          children: b.NW.string(b.t.jJG1pq)
         }), (0, r.jsx)(s.Text, {
-          className: b.upsellDescription,
+          className: v.upsellDescription,
           variant: "text-md/normal",
-          children: v.NW.format(v.t.jt7JX1, {
+          children: b.NW.format(b.t.jt7JX1, {
             onClick: h
           })
         })]
       }), !A && (0, r.jsx)(m.Z, {
         analyticsSection: g.jXE.EXPRESSION_PICKER,
-        buttonText: A ? N ? v.NW.string(v.t.hz78hI) : v.NW.string(v.t["Gd/XHB"]) : void 0
+        buttonText: A ? N ? b.NW.string(b.t.hz78hI) : b.NW.string(b.t["Gd/XHB"]) : void 0
       }), (0, r.jsx)(s.P3F, {
-        className: b.upsellClose,
+        className: v.upsellClose,
         onClick: O,
         children: (0, r.jsx)(s.Dio, {
           size: "md",

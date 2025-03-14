@@ -46,15 +46,15 @@ function c(e) {
       built_in: l,
       "variable.language": s
     },
-    v = "[0-9](_?[0-9])*",
-    b = `\\.(${v})`,
+    b = "[0-9](_?[0-9])*",
+    v = `\\.(${b})`,
     y = "0|[1-9](_?[0-9])*|0[0-7]*[89][0-9]*",
     O = {
       className: "number",
       variants: [{
-        begin: `(\\b(${y})((${b})|\\.)?|(${b}))[eE][+-]?(${v})\\b`
+        begin: `(\\b(${y})((${v})|\\.)?|(${v}))[eE][+-]?(${b})\\b`
       }, {
-        begin: `\\b(${y})\\b((${b})\\b|\\.)?|(${b})\\b`
+        begin: `\\b(${y})\\b((${v})\\b|\\.)?|(${v})\\b`
       }, {
         begin: "\\b(0|[1-9](_?[0-9])*)n\\b"
       }, {
@@ -232,7 +232,7 @@ function c(e) {
       className: "property",
       relevance: 0
     },
-    V = {
+    F = {
       match: [/get|set/, /\s+/, d, /(?=\()/],
       className: {
         1: "keyword",
@@ -242,9 +242,9 @@ function c(e) {
         begin: /\(\)/
       }, D]
     },
-    F = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
+    V = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
     Z = {
-      match: [/const|var|let/, /\s+/, d, /\s*/, /=\s*/, /(async\s*)?/, c.lookahead(F)],
+      match: [/const|var|let/, /\s+/, d, /\s*/, /=\s*/, /(async\s*)?/, c.lookahead(V)],
       keywords: "async",
       className: {
         1: "keyword",
@@ -277,7 +277,7 @@ function c(e) {
       relevance: 0,
       contains: [C, e.REGEXP_MODE, {
         className: "function",
-        begin: F,
+        begin: V,
         returnBegin: !0,
         end: "\\s*=>",
         contains: [{
@@ -345,7 +345,7 @@ function c(e) {
         1: "title.function"
       },
       contains: [D]
-    }, G, j, L, V, {
+    }, G, j, L, F, {
       match: /\$[(.]/
     }]
   }

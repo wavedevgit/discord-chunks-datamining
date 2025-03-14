@@ -24,7 +24,7 @@ let p = function(e) {
       onBlur: m
     } = e,
     [g, E] = i.useState(u.Qy.UNKNOWN),
-    [v, b] = i.useState(!1),
+    [b, v] = i.useState(!1),
     [y, O] = i.useState(!1),
     [I, S] = i.useState(null),
     [T, N] = i.useState({}),
@@ -51,13 +51,13 @@ let p = function(e) {
       }
     }, [A, n]),
     R = i.useCallback(e => {
-      y || e.empty || O(!0), null != p && p(e.complete), null != e.error && b(!1)
+      y || e.empty || O(!0), null != p && p(e.complete), null != e.error && v(!1)
     }, [y, p]),
     P = i.useCallback(() => {
-      b(!0), null == h || h()
+      v(!0), null == h || h()
     }, [h]),
     w = i.useCallback(() => {
-      b(!1), null == m || m()
+      v(!1), null == m || m()
     }, [m]),
     D = i.useCallback(() => {
       if (null != A) switch (n) {
@@ -95,7 +95,7 @@ let p = function(e) {
   function M() {
     return s()(f.cardInput, {
       [f.cardInputError]: null !== I,
-      [f.cardInputFocused]: v,
+      [f.cardInputFocused]: b,
       [f.cardNumberInput]: "cardNumber" === n
     })
   }

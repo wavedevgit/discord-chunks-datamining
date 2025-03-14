@@ -25,13 +25,13 @@ function m(e, t) {
     {
       audioRef: g
     } = i.useContext(l.Z),
-    [E, v] = i.useState(!1),
-    b = (0, o.e7)([d.Z], () => d.Z.isPlayingSound(e.soundId), [e]);
+    [E, b] = i.useState(!1),
+    v = (0, o.e7)([d.Z], () => d.Z.isPlayingSound(e.soundId), [e]);
   return {
     playSoundboardSound: i.useCallback(n => {
       null != g.current && g.current.pause(), null != t && (0, f.GN)(e, t, n)
     }, [e, g, t]),
-    isPlayingSound: b,
+    isPlayingSound: v,
     previewSound: i.useCallback(async () => {
       let t = (0, _.Z)(e.soundId),
         r = new(await (0, s.Z)(t));
@@ -39,7 +39,7 @@ function m(e, t) {
         var i;
         null === (i = r.setSinkId) || void 0 === i || i.call(r, a.voiceSinkId)
       }
-      g.current = r, r.currentTime = 0, r.volume = (0, p.Z)(e.volume, n), r.play(), v(!0), r.addEventListener("pause", () => v(!1), {
+      g.current = r, r.currentTime = 0, r.volume = (0, p.Z)(e.volume, n), r.play(), b(!0), r.addEventListener("pause", () => b(!1), {
         once: !0
       })
     }, [e, n, g, m]),

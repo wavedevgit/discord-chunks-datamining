@@ -11,8 +11,8 @@ var d = n(616254),
   m = n(464253),
   g = n(485359),
   E = n(395727),
-  v = n(471638),
-  b = n(585275),
+  b = n(471638),
+  v = n(585275),
   y = n(960048),
   O = n(63063),
   I = n(240849),
@@ -35,10 +35,10 @@ var M = n(857192),
   G = n(710845),
   B = n(70956);
 M.default.cssDebuggingEnabled && n.e("73541").then(n.bind(n, 250830)), (0, k.Z)();
-let V = 5 * B.Z.Millis.MINUTE,
-  F = document.getElementById("app-mount");
-_()(null != F, "Could not find app-mount"), F.className = __OVERLAY__ ? "" : j.appMount;
-let Z = (0, d.createRoot)(F),
+let F = 5 * B.Z.Millis.MINUTE,
+  V = document.getElementById("app-mount");
+_()(null != V, "Could not find app-mount"), V.className = __OVERLAY__ ? "" : j.appMount;
+let Z = (0, d.createRoot)(V),
   H = {
     "/oauth2/authorize": N.Z
   };
@@ -78,7 +78,7 @@ else if (null != window.require && null == window.DiscordNative) Y(p.Z.OutdatedC
 else {
   if (document.addEventListener("scroll", e => e.preventDefault()), A.isPlatformEmbedded) {
     window.onbeforeunload = () => S.ZP.beforeUnload(), S.ZP.on("HELP_OPEN", () => window.open(O.Z.getCommunityURL()));
-    let e = new w.sW(V, () => S.ZP.purgeMemory());
+    let e = new w.sW(F, () => S.ZP.purgeMemory());
     S.ZP.on("MAIN_WINDOW_BLUR", () => {
       e.delay(), S.ZP.setFocused(!1), (0, R.T_)(window, !1)
     }), S.ZP.on("MAIN_WINDOW_FOCUS", () => {
@@ -87,5 +87,5 @@ else {
       (0, R.al)(window)
     })
   }
-  E.Z.initialize(), h.Z.initialize(), m.Z.init(), b.Z.init(), U.Z.init(), g.Z.initialize(), I.Z.initialize(), T.Z.initialize(), v.j(), Y(p.Z.App)
+  E.Z.initialize(), h.Z.initialize(), m.Z.init(), v.Z.init(), U.Z.init(), g.Z.initialize(), I.Z.initialize(), T.Z.initialize(), b.j(), Y(p.Z.App)
 }

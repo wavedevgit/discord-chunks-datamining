@@ -19,9 +19,9 @@ var r = n(200651),
   m = n(145022),
   g = n(981631),
   E = n(388032),
-  v = n(90677);
+  b = n(90677);
 
-function b(e, t) {
+function v(e, t) {
   return null != t && null != t.discord_web && e.id === t.discord_web.id && e.type === t.discord_web.type
 }
 
@@ -32,12 +32,12 @@ function y(e) {
     !n && ((0, _.JG)(t) && o(!0), s.current = setTimeout(() => o(!1), 2e3))
   }, [t, n]);
   return i.useEffect(() => () => clearTimeout(s.current), []), _.wS ? (0, r.jsxs)(c.P3F, {
-    className: a()(v.copyLink, n ? v.copied : null),
+    className: a()(b.copyLink, n ? b.copied : null),
     onClick: l,
     children: [(0, r.jsx)(c.xPt, {
       size: "md",
       color: "currentColor",
-      className: v.copyLinkIcon
+      className: b.copyLinkIcon
     }), n ? E.NW.string(E.t.GmrIJS) : E.NW.string(E.t.iVzBOj)]
   }) : null
 }
@@ -45,14 +45,14 @@ function y(e) {
 function O() {
   return (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: v.buildInfo,
+      className: b.buildInfo,
       children: [(0, r.jsx)("div", {
-        className: a()(v.barLoader, v.barTitle)
+        className: a()(b.barLoader, b.barTitle)
       }), (0, r.jsx)("div", {
-        className: v.barLoader
+        className: b.barLoader
       })]
     }), (0, r.jsx)("div", {
-      className: v.buttonLoader
+      className: b.buttonLoader
     })]
   })
 }
@@ -69,21 +69,21 @@ function I(e) {
   } = e;
   return (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: v.buildInfo,
+      className: b.buildInfo,
       children: [(0, r.jsx)(c.Text, {
         variant: "text-sm/medium",
-        className: v.subHead,
+        className: b.subHead,
         children: t
       }), (0, r.jsx)("div", {
-        className: v.buildDetails,
+        className: b.buildDetails,
         children: n
       })]
     }), (0, r.jsx)(c.zxk, {
       submitting: d,
       color: o,
       onClick: s,
-      className: a()(v.button, u ? v.disabledButtonOverride : null),
-      size: v.buttonSize,
+      className: a()(b.button, u ? b.disabledButtonOverride : null),
+      size: b.buttonSize,
       disabled: u,
       children: l
     })]
@@ -105,9 +105,9 @@ function S(e) {
   l()(null != o, "BuildOverrideEmbed.renderResolved: linkMeta should never be null if resolved");
   let {
     discord_web: g,
-    discord_developers: v
-  } = o.targetBuildOverride, y = null != g ? g : v;
-  l()(null != y, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web or linkMeta.targetBuildOverride.discord_developers should never be null if resolved"), b(y, i) ? (n = E.NW.string(E.t.tX4xrq), t = s, r = c.zxk.Colors.RED) : (n = E.NW.string(E.t.nOunHB), t = a, r = c.zxk.Colors.GREEN);
+    discord_developers: b
+  } = o.targetBuildOverride, y = null != g ? g : b;
+  l()(null != y, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web or linkMeta.targetBuildOverride.discord_developers should never be null if resolved"), v(y, i) ? (n = E.NW.string(E.t.tX4xrq), t = s, r = c.zxk.Colors.RED) : (n = E.NW.string(E.t.nOunHB), t = a, r = c.zxk.Colors.GREEN);
   let O = () => {
     d.Z.isConnected() ? u.Z.show({
       title: E.NW.string(E.t.tiu1l5),
@@ -140,20 +140,20 @@ function T(e) {
 function N(e, t, n) {
   return (0, r.jsxs)(c.Text, {
     variant: "text-xs/normal",
-    className: v.titleRegion,
+    className: b.titleRegion,
     children: [(0, r.jsx)("strong", {
-      className: v.title,
+      className: b.title,
       children: null != e && null != e.releaseChannel ? E.NW.formatToPlainString(E.t.bFj63d, {
         releaseChannel: e.releaseChannel
       }) : E.NW.string(E.t.Wj3LW1)
     }), (0, r.jsx)(c.eee, {
-      className: v.infoLink,
+      className: b.infoLink,
       href: p.Z.getArticleURL(g.BhN.BUILD_OVERRIDE_EMBED),
       target: "_blank",
       children: (0, r.jsx)(c.d3s, {
         size: "xs",
         color: "currentColor",
-        className: v.infoIcon
+        className: b.infoIcon
       })
     }), n ? null : (0, r.jsx)(y, {
       url: t
@@ -174,11 +174,11 @@ let A = e => {
     !c && (u(!0), l().catch(() => u(!1)))
   }, [l, c]);
   return (0, r.jsxs)("div", {
-    className: v.wrapper,
+    className: b.wrapper,
     children: [N(o, a, t), (0, r.jsxs)("div", {
-      className: v.content,
+      className: b.content,
       children: [(0, r.jsx)(f.Z, {
-        className: v.icon
+        className: b.icon
       }), t ? O() : S({
         currentOverrides: n,
         linkMeta: o,

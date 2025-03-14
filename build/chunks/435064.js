@@ -39,7 +39,7 @@ function E(e) {
   return e
 }
 
-function v(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,8 +50,8 @@ function v(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -123,7 +123,7 @@ function j(e) {
   let {
     settings: t
   } = e;
-  L = b(E({}, L), {
+  L = v(E({}, L), {
     clipsSettings: E({}, L.clipsSettings, t)
   })
 }
@@ -156,17 +156,17 @@ function B() {
   T = Math.max(T - 1, 0)
 }
 
-function V(e) {
+function F(e) {
   var t, n;
   let {
     clip: r
   } = e;
-  T = Math.max(T - 1, 0), A = b(E({
+  T = Math.max(T - 1, 0), A = v(E({
     applicationName: r.applicationName,
     ended: !1
   }, A), {
     newClipIds: [...null !== (t = null == A ? void 0 : A.newClipIds) && void 0 !== t ? t : [], r.id]
-  }), L = b(E({}, L), {
+  }), L = v(E({}, L), {
     newClipIds: [...null !== (n = L.newClipIds) && void 0 !== n ? n : [], r.id]
   }), S = S.filter(e => {
     let {
@@ -176,7 +176,7 @@ function V(e) {
   }), I = [r, ...I], L.hasClips = !0
 }
 
-function F(e) {
+function V(e) {
   let {
     clip: t
   } = e;
@@ -253,7 +253,7 @@ function q(e) {
     streamKey: t
   } = e;
   if (P = null, w[t] = [], null == A || (0, l.my)(t).ownerId !== c.default.getId()) return !1;
-  A = 0 === A.newClipIds.length ? null : b(E({}, A), {
+  A = 0 === A.newClipIds.length ? null : v(E({}, A), {
     ended: !0
   })
 }
@@ -386,61 +386,61 @@ g(er, "displayName", "ClipsStore"), g(er, "persistKey", "ClipsStore"), g(er, "mi
   newClipsCount: 0
 }), e => {
   let t = E({}, D, e.clipsSettings);
-  return b(E({}, e), {
+  return v(E({}, e), {
     clipsSettings: t
   })
 }, e => {
   var t;
-  return b(E({}, e), {
+  return v(E({}, e), {
     newClipIds: null !== (t = e.newClipIds) && void 0 !== t ? t : []
   })
 }, e => {
   var t, n;
-  return b(E({}, e), {
+  return v(E({}, e), {
     hardwareClassification: null !== (t = e.hardwareClassification) && void 0 !== t ? t : null,
     hardwareClassificationVersion: null !== (n = e.hardwareClassificationVersion) && void 0 !== n ? n : 0
   })
 }, e => {
   var t;
-  return b(E({}, e), {
+  return v(E({}, e), {
     hasClips: null !== (t = e.hasClips) && void 0 !== t && t
   })
-}, e => b(E({}, e), {
-  clipsSettings: b(E({}, e.clipsSettings), {
+}, e => v(E({}, e), {
+  clipsSettings: v(E({}, e.clipsSettings), {
     decoupledClipsEnabled: D.decoupledClipsEnabled
   })
 }), e => {
   var t;
-  return b(E({}, e), {
+  return v(E({}, e), {
     hardwareClassificationForDecoupled: null !== (t = e.hardwareClassificationForDecoupled) && void 0 !== t ? t : null
   })
 }, e => {
   var t;
   let r = null === (t = n(131951).Z) || void 0 === t ? void 0 : t.getHardwareEncoding();
-  return b(E({}, e), {
-    clipsSettings: b(E({}, e.clipsSettings), {
+  return v(E({}, e), {
+    clipsSettings: v(E({}, e.clipsSettings), {
       clipsEnabled: !!r && e.clipsSettings.clipsEnabled,
       decoupledClipsEnabled: !!r && e.clipsSettings.decoupledClipsEnabled
     })
   })
 }, e => {
   var t;
-  return b(E({}, e), {
+  return v(E({}, e), {
     newClipIds: null !== (t = e.newClipIds) && void 0 !== t ? t : [],
     newClipIDs: void 0
   })
-}, e => b(E({}, e), {
-  clipsSettings: b(E({}, e.clipsSettings), {
+}, e => v(E({}, e), {
+  clipsSettings: v(E({}, e.clipsSettings), {
     clipsQuality: "number" == typeof e.clipsSettings.clipsQuality || null == e.clipsSettings.clipsQuality ? D.clipsQuality : e.clipsSettings.clipsQuality
   })
 }), e => {
   var t;
-  return b(E({}, e), {
-    clipsSettings: b(E({}, e.clipsSettings), {
+  return v(E({}, e), {
+    clipsSettings: v(E({}, e.clipsSettings), {
       remindersEnabled: null !== (t = e.clipsSettings.remindersEnabled) && void 0 !== t ? t : D.remindersEnabled
     })
   })
-}, e => b(E({}, e), {
+}, e => v(E({}, e), {
   hasTakenDecoupledClip: !1,
   clipsEducationState: {
     dismissedAt: null,
@@ -450,8 +450,8 @@ g(er, "displayName", "ClipsStore"), g(er, "persistKey", "ClipsStore"), g(er, "mi
 })]);
 let ei = new er(o.Z, {
     CLIPS_SETTINGS_UPDATE: j,
-    CLIPS_SAVE_CLIP: V,
-    CLIPS_SAVE_CLIP_PLACEHOLDER: F,
+    CLIPS_SAVE_CLIP: F,
+    CLIPS_SAVE_CLIP_PLACEHOLDER: V,
     CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR: Z,
     CLIPS_SAVE_CLIP_START: U,
     CLIPS_SAVE_CLIP_ERROR: B,

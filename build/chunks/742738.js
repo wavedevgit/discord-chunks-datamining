@@ -18,9 +18,9 @@ var r, i = n(348327),
   m = n(427679),
   g = n(368442),
   E = n(157925),
-  v = n(981631);
+  b = n(981631);
 
-function b(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -36,21 +36,21 @@ function O() {
   if (null == s) return null;
   let u = m.Z.getStageInstanceByChannel(s);
   if (null == u) return null;
-  let b = l.Z.getChannel(s);
-  if (null == b || !f.oz(v.Plq.VIEW_CHANNEL, b)) return null;
-  let O = c.Z.getGuild(b.getGuildId());
-  if (null == O || !O.hasFeature(v.oNc.DISCOVERABLE)) return null;
-  let I = (0, h.Lw)(b, u),
+  let v = l.Z.getChannel(s);
+  if (null == v || !f.oz(b.Plq.VIEW_CHANNEL, v)) return null;
+  let O = c.Z.getGuild(v.getGuildId());
+  if (null == O || !O.hasFeature(b.oNc.DISCOVERABLE)) return null;
+  let I = (0, h.Lw)(v, u),
     S = (null == y ? void 0 : null === (e = y.party) || void 0 === e ? void 0 : e.id) === I ? y : null,
-    T = _.Z.getMutableParticipants(b.id, p.pV.SPEAKER),
+    T = _.Z.getMutableParticipants(v.id, p.pV.SPEAKER),
     N = T.filter(e => e.type === p.Ui.STREAM).length,
     A = T.length - N,
     C = _.Z.getParticipantCount(s) - N,
     R = (null == S ? void 0 : null === (t = S.party) || void 0 === t ? void 0 : t.size) != null ? S.party.size[1] : 0;
   return {
     application_id: E.gD,
-    name: null !== (i = null !== (r = u.topic) && void 0 !== r ? r : b.topic) && void 0 !== i ? i : b.name,
-    type: (0, g.xJ)(b.id) ? v.IIU.WATCHING : v.IIU.LISTENING,
+    name: null !== (i = null !== (r = u.topic) && void 0 !== r ? r : v.topic) && void 0 !== i ? i : v.name,
+    type: (0, g.xJ)(v.id) ? b.IIU.WATCHING : b.IIU.LISTENING,
     timestamps: {
       start: null !== (o = null == S ? void 0 : null === (n = S.timestamps) || void 0 === n ? void 0 : n.start) && void 0 !== o ? o : new Date().getTime()
     },
@@ -84,7 +84,7 @@ function T(e) {
   let {
     state: i
   } = e, o = null !== (r = null == y ? void 0 : null === (n = y.party) || void 0 === n ? void 0 : null === (t = n.size) || void 0 === t ? void 0 : t[1]) && void 0 !== r ? r : 0;
-  return i === v.hes.RTC_CONNECTED && !(o > 0) && I()
+  return i === b.hes.RTC_CONNECTED && !(o > 0) && I()
 }
 class N extends(r = a.ZP.Store) {
   initialize() {
@@ -94,7 +94,7 @@ class N extends(r = a.ZP.Store) {
     return y
   }
 }
-b(N, "displayName", "StageChannelSelfRichPresenceStore");
+v(N, "displayName", "StageChannelSelfRichPresenceStore");
 let A = new N(s.Z, {
   CONNECTION_OPEN: I,
   STAGE_INSTANCE_CREATE: I,

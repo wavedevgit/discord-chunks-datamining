@@ -35,13 +35,13 @@ function p(e) {
     children: o
   } = e, {
     reducedMotion: d
-  } = i.useContext(l.S), p = d.enabled ? 3 : n, [h, m] = i.useState(null != t), [g] = i.useState(() => new s.V7), [E, v] = i.useState(!0), b = i.useRef(null);
+  } = i.useContext(l.S), p = d.enabled ? 3 : n, [h, m] = i.useState(null != t), [g] = i.useState(() => new s.V7), [E, b] = i.useState(!0), v = i.useRef(null);
   return i.useLayoutEffect(() => {
     var e;
-    null === (e = b.current) || void 0 === e || e.addEventListener("transitionend", () => {
-      v(!1)
+    null === (e = v.current) || void 0 === e || e.addEventListener("transitionend", () => {
+      b(!1)
     }), setTimeout(() => {
-      v(!1)
+      b(!1)
     }, u)
   }, []), i.useEffect(() => () => g.stop(), [g]), i.useEffect(() => {
     null != t && g.start(10, () => m(!0))

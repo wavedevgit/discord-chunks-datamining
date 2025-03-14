@@ -26,11 +26,11 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 let E = "IncomingCallStore",
-  v = {
+  b = {
     width: 232,
     height: 315
   },
-  b = 10,
+  v = 10,
   y = new Set,
   O = [],
   I = new Map,
@@ -39,9 +39,9 @@ let E = "IncomingCallStore",
 
 function N() {
   let e = h.Z.windowSize();
-  return null != r && r.x + v.width < e.width && r.y + v.height < e.height ? r : {
-    x: e.width / 2 - v.width / 2,
-    y: e.height / 2 - v.height / 2
+  return null != r && r.x + b.width < e.width && r.y + b.height < e.height ? r : {
+    x: e.width / 2 - b.width / 2,
+    y: e.height / 2 - b.height / 2
   }
 }
 
@@ -63,7 +63,7 @@ function C(e) {
   if (!S.has(t) && r) {
     let e = _.Z.getChannel(t);
     if (null == e) return !1;
-    let n = b * S.size,
+    let n = v * S.size,
       {
         x: r,
         y: i

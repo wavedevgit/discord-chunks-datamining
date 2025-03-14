@@ -25,8 +25,8 @@ let l = e => {
     gridDispatch: m,
     getItemProps: g,
     getRowProps: E,
-    gridContainerProps: v,
-    handleGridContainerKeyDown: b,
+    gridContainerProps: b,
+    handleGridContainerKeyDown: v,
     isUsingKeyboardNavigation: y
   } = (0, s.VO)({
     columnCounts: t,
@@ -51,8 +51,8 @@ let l = e => {
   }), [m, c]), {
     getItemProps: g,
     getRowProps: E,
-    gridContainerProps: v,
-    handleGridContainerKeyDown: b,
+    gridContainerProps: b,
+    handleGridContainerKeyDown: v,
     isUsingKeyboardNavigation: y
   }
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 54082 **/
+/** Chunk was on 78114 **/
 n.d(t, {
   Z: () => to
 }), n(47120), n(653041);
@@ -200,7 +200,7 @@ class ti extends i.PureComponent {
     s()(null != i, "Missing user in Channel.openDMContextMenu"), (0, b.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("70205"), n.e("98783"), n.e("53912"), n.e("56826"), n.e("86024")]).then(n.bind(n, 131404));
+      } = await Promise.all([n.e("79695"), n.e("20875"), n.e("70205"), n.e("98783"), n.e("53912"), n.e("56826"), n.e("75046")]).then(n.bind(n, 131404));
       return n => (0, r.jsx)(e, tn(tt({}, n), {
         user: i,
         channelSelected: !0,

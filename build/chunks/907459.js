@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(587446),
   g = n(594174),
   E = n(626135),
-  v = n(74538),
-  b = n(94795),
+  b = n(74538),
+  v = n(94795),
   y = n(327943),
   O = n(539873),
   I = n(981631),
@@ -30,12 +30,12 @@ var r = n(200651),
   A = n(641126);
 let C = () => {
     var e, t, n;
-    let i = (0, s.e7)([g.default], () => v.ZP.isPremium(g.default.getCurrentUser())),
+    let i = (0, s.e7)([g.default], () => b.ZP.isPremium(g.default.getCurrentUser())),
       o = (0, p.N)(),
       a = (null == o ? void 0 : null === (e = o.subscription_trial) || void 0 === e ? void 0 : e.sku_id) === T.Si.TIER_2;
     return (0, r.jsx)(h.Z, {
       size: l.zxk.Sizes.MEDIUM,
-      buttonText: i ? N.NW.string(N.t.IJI7ys) : a ? (0, v.Rt)({
+      buttonText: i ? N.NW.string(N.t.IJI7ys) : a ? (0, b.Rt)({
         intervalType: null == o ? void 0 : null === (t = o.subscription_trial) || void 0 === t ? void 0 : t.interval,
         intervalCount: null == o ? void 0 : null === (n = o.subscription_trial) || void 0 === n ? void 0 : n.interval_count
       }) : N.NW.string(N.t.mr4K7O),
@@ -46,7 +46,7 @@ let C = () => {
     let {
       markAsDismissed: t
     } = e, n = () => {
-      null == t || t(S.L.DISMISS), (0, b.G8)()
+      null == t || t(S.L.DISMISS), (0, v.G8)()
     };
     return (0, r.jsxs)("div", {
       className: A.editorHeader,
@@ -74,7 +74,7 @@ let C = () => {
       isCoachmark: t,
       markAsDismissed: n
     } = e, i = (0, s.e7)([y.Z], () => y.Z.isUpsellPreview), o = () => {
-      null == n || n(S.L.DISMISS), (0, b.G8)(), t || c.Z.open()
+      null == n || n(S.L.DISMISS), (0, v.G8)(), t || c.Z.open()
     };
     return (0, r.jsxs)("div", {
       className: A.editorFooter,
@@ -109,13 +109,13 @@ function w(e) {
       location_stack: o
     })
   }, [p, o]);
-  let v = (0, u.Z)(null, p ? b.O7 : I.dG4);
+  let b = (0, u.Z)(null, p ? v.O7 : I.dG4);
   return (i.useEffect(() => {
-    if (p && !h) return b.O7
+    if (p && !h) return v.O7
   }, [p, h]), null == c) ? null : (0, r.jsx)(_.Gt, {
     value: o,
     children: (0, r.jsx)("div", {
-      ref: v,
+      ref: b,
       className: a()(A.editor, m ? A.editorAnimate : null),
       "data-app-right-panel": !0,
       children: (0, r.jsxs)(l.y5t, {

@@ -97,13 +97,13 @@ class E {
     })
   }
 }
-let v = o().debounce((e, t) => {
+let b = o().debounce((e, t) => {
   let n = y(t);
   null != n && e.detectLanguage(n)
 }, p);
 
-function b(e) {
-  null != document.body && document.body.addEventListener("beforeinput", t => v(e, t.target), !0)
+function v(e) {
+  null != document.body && document.body.addEventListener("beforeinput", t => b(e, t.target), !0)
 }
 
 function y(e) {
@@ -112,5 +112,5 @@ function y(e) {
 async function O() {
   var e;
   let t = new E((null !== (e = await m.getAvailableDictionaries()) && void 0 !== e ? e : []).map(g).filter(u.lm));
-  return b(t), t
+  return v(t), t
 }

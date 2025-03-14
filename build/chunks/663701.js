@@ -24,7 +24,7 @@ var r = n(200651),
   v = n(377171),
   y = n(540059),
   I = n(243778),
-  C = n(488634),
+  C = n(922409),
   S = n(899740),
   T = n(28476),
   P = n(880257),
@@ -49,8 +49,8 @@ var r = n(200651),
   Y = n(626135),
   K = n(814225),
   q = n(515753),
-  Q = n(831218),
-  X = n(339149),
+  X = n(831218),
+  Q = n(339149),
   J = n(981631),
   $ = n(675654),
   ee = n(474936),
@@ -188,7 +188,7 @@ let ea = e => {
       icon: f.vqy,
       text: et.NW.string(et.t.cw57am)
     }, i, l), {
-      children: (0, r.jsx)(X.Z, {
+      children: (0, r.jsx)(Q.Z, {
         className: o()(er.downloadProgressCircle, {
           [er.hideGameUpdateProgressIndicator]: n
         })
@@ -339,7 +339,7 @@ let eg = i.memo(function(e) {
           children: et.NW.string(et.t.LzcpeX)
         })
       })
-    }), (0, r.jsxs)(Q.Z, el(ei({}, e), {
+    }), (0, r.jsxs)(X.Z, el(ei({}, e), {
       version: m,
       selectedChannelId: g,
       showDMHeader: !0,

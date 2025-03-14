@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   ZP: () => y,
-  gN: () => v
+  gN: () => b
 }), n(47120), n(411104);
 var r, i = n(200651),
   o = n(192379),
@@ -59,10 +59,10 @@ let h = {
   g = "center",
   E = "right";
 
-function v(e, t) {
+function b(e, t) {
   return (e % t + t) % t
 }
-class b extends(r = o.Component) {
+class v extends(r = o.Component) {
   componentDidMount() {
     this.animatedIndex.setValue(this.props.currentIndex)
   }
@@ -73,7 +73,7 @@ class b extends(r = o.Component) {
       currentIndex: r,
       items: i,
       width: o
-    } = this.props, a = v(r, i.length), s = v(e.currentIndex, i.length);
+    } = this.props, a = b(r, i.length), s = b(e.currentIndex, i.length);
     (a !== s || i.length !== e.items.length) && this.updateAnimatedIndex(a, s), o !== e.width ? this.animatedAlignmentOffset.setValue(this.getAlignmentOffset(t)) : n && (t !== e.align || a !== s) && l.Z.spring(this.animatedAlignmentOffset, p(f({}, h), {
       toValue: this.getAlignmentOffset(t)
     })).start()
@@ -85,7 +85,7 @@ class b extends(r = o.Component) {
       currentIndex: r,
       gutter: i,
       items: o
-    } = this.props, a = i * v(r, o.length) * 2;
+    } = this.props, a = i * b(r, o.length) * 2;
     return e === g ? (t - n.width) / 2 + a : e === E ? t - n.width - i + a : i + a
   }
   getCarouselTranslate() {
@@ -213,11 +213,11 @@ class b extends(r = o.Component) {
     }))
   }
 }
-d(b, "defaultProps", {
+d(v, "defaultProps", {
   animate: !0,
   edgeItems: 2,
   align: g,
   gutter: 0,
   hideOverflow: !0
 });
-let y = (0, c.Z)(b)
+let y = (0, c.Z)(v)

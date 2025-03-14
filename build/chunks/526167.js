@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  G6: () => b,
+  G6: () => v,
   hY: () => m,
-  og: () => v,
+  og: () => b,
   rO: () => y,
   vu: () => f
 });
@@ -31,11 +31,11 @@ function E() {
   return g
 }
 
-function v() {
+function b() {
   return -1 !== f() || -1 !== p() || -1 !== m() || -1 !== E()
 }
 
-function b() {
+function v() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : navigator.userAgent,
     t = e.toLowerCase();
   return -1 !== t.indexOf("safari") && -1 === t.indexOf("chrome") && -1 !== t.indexOf("version/")
@@ -45,5 +45,5 @@ function y() {
   var e;
   let t = window.navigator,
     n = (null === (e = t.mediaCapabilities) || void 0 === e ? void 0 : e.decodingInfo) != null;
-  return b(t.userAgent) && n
+  return v(t.userAgent) && n
 }

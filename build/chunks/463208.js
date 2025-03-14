@@ -50,13 +50,13 @@ function E(e, t) {
   return n
 }
 
-function v(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function b(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -111,9 +111,9 @@ function I(e) {
         key: s
       } = a, {
         transform: c
-      } = e, u = b(e, ["transform"]);
+      } = e, u = v(e, ["transform"]);
       return null != r && "" !== r ? (0, i.jsx)(l.animated.div, {
-        style: v(g({}, u), {
+        style: b(g({}, u), {
           overflow: "hidden"
         }),
         children: (0, i.jsxs)(l.animated.div, {
@@ -159,15 +159,15 @@ class S extends(r = o.Component) {
         prefixElement: _,
         focusProps: p
       } = n,
-      m = b(n, ["className", "inputClassName", "inputPrefix", "disabled", "size", "editable", "inputRef", "prefixElement", "focusProps"]),
+      m = v(n, ["className", "inputClassName", "inputPrefix", "disabled", "size", "editable", "inputRef", "prefixElement", "focusProps"]),
       E = null !== (t = m["aria-labelledby"]) && void 0 !== t ? t : null === (e = this.context) || void 0 === e ? void 0 : e.titleId;
     return (0, i.jsxs)("div", {
       className: s()(h.inputWrapper, r),
       children: [null != _ && _, null != a ? (0, i.jsx)("span", {
         className: h.inputPrefix,
         children: a
-      }) : null, (0, i.jsx)(c.t, v(g({}, p), {
-        children: (0, i.jsx)("input", v(g({
+      }) : null, (0, i.jsx)(c.t, b(g({}, p), {
+        children: (0, i.jsx)("input", b(g({
           className: s()(u, o, {
             [h.error]: this.hasError(),
             [h.disabled]: l,

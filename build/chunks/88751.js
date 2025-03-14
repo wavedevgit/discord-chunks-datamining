@@ -30,12 +30,12 @@ let g = {},
     moderator: !1
   };
 
-function v(e, t) {
+function b(e, t) {
   let n = f.Z.getVoiceStateForChannel(t, e);
   return (0, h.gf)(n) === h.xO.ON_STAGE
 }
 
-function b(e, t, n) {
+function v(e, t, n) {
   return _.BT({
     permission: p.yP,
     user: e,
@@ -51,8 +51,8 @@ function y(e, t) {
     i = null == r ? void 0 : r.getGuildId(),
     o = u.Z.getGuild(i);
   return null != o && null != r && r.isGuildStageVoice() ? {
-    speaker: v(e, t),
-    moderator: n ? b(e, o, r) : null
+    speaker: b(e, t),
+    moderator: n ? v(e, o, r) : null
   } : E
 }
 

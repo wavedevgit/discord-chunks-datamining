@@ -20,8 +20,8 @@ var r = n(200651),
   m = n(754347),
   g = n(74538),
   E = n(884697),
-  v = n(624377),
-  b = n(141011),
+  b = n(624377),
+  v = n(141011),
   y = n(813083),
   O = n(372654),
   I = n(794324),
@@ -83,11 +83,11 @@ function L(e) {
     hideLimitedTimeBadge: f = !1
   } = e, {
     backgroundColors: _
-  } = (0, v.Z)(o.styles), p = (0, S.ZS)(o.skuId), g = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), T = (0, l.e7)([h.Z], () => h.Z.isFocused()), {
+  } = (0, b.Z)(o.styles), p = (0, S.ZS)(o.skuId), g = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), T = (0, l.e7)([h.Z], () => h.Z.isFocused()), {
     categoryBannerStatic: N,
     categoryBannerAnimated: L
   } = (0, I.tK)(o), x = !!(null == p ? void 0 : p.showDarkBannerText);
-  return (0, r.jsxs)(b.Z, {
+  return (0, r.jsxs)(v.Z, {
     asset: N,
     className: a()(A.shopBanner, d),
     style: null != _ ? {

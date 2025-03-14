@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(996073),
   g = n(327943),
   E = n(997945),
-  v = n(401460),
-  b = n(441319),
+  b = n(401460),
+  v = n(441319),
   y = n(981631),
   O = n(526761),
   I = n(388032),
@@ -153,12 +153,12 @@ function P(e) {
           className: a()(S.presets, {
             [S.presetsJustified]: D && N
           }),
-          children: (0, b.wu)().filter(e => {
+          children: (0, v.wu)().filter(e => {
             let {
               isHidden: t
             } = e;
             return !t
-          }).map((e, t) => (0, r.jsx)(v.Z, {
+          }).map((e, t) => (0, r.jsx)(b.Z, {
             icon: e,
             isSelected: P === e.id,
             onSelect: e => j(e),

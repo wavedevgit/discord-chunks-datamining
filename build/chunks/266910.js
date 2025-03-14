@@ -55,9 +55,9 @@ function E(e, t) {
   }), e
 }
 
-function v(e, t) {
+function b(e, t) {
   if (null == e) return {};
-  var n, r, i = b(e, t);
+  var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -65,7 +65,7 @@ function v(e, t) {
   return i
 }
 
-function b(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -78,9 +78,9 @@ let y = function(e) {
     src: n,
     backgroundSrc: h,
     userId: g,
-    pulseSpeakingIndicator: b = !1,
+    pulseSpeakingIndicator: v = !1,
     speaking: y = !1
-  } = e, O = v(e, ["style", "src", "backgroundSrc", "userId", "pulseSpeakingIndicator", "speaking"]);
+  } = e, O = b(e, ["style", "src", "backgroundSrc", "userId", "pulseSpeakingIndicator", "speaking"]);
   let I = null != h ? h : n,
     S = (0, s.ZP)(I, o.Z.unsafe_rawColors.PRIMARY_800.css),
     T = (0, l.c)(!0, "VideoBackground-web").enabled,
@@ -104,7 +104,7 @@ let y = function(e) {
   return null != A && y && T && (R.backgroundImage = "url(".concat(A, ")"), R.backgroundSize = "cover"), (0, r.jsx)("div", {
     style: R,
     className: p.background,
-    children: b ? (0, r.jsx)(c.Z, {
+    children: v ? (0, r.jsx)(c.Z, {
       shouldAnimate: y,
       children: C
     }) : C

@@ -25,8 +25,8 @@ function _(e) {
     style: m,
     note: g,
     children: E,
-    disabledText: v,
-    containerRef: b
+    disabledText: b,
+    containerRef: v
   } = e, y = i.useRef(null), O = i.useRef(null), I = i.useId(), S = (0, r.jsx)(l.r, {
     id: I,
     checked: t,
@@ -38,7 +38,7 @@ function _(e) {
     innerRef: y
   });
   return (0, r.jsxs)("div", {
-    ref: b,
+    ref: v,
     style: m,
     className: a()(f.container, h, {
       [f.disabled]: n
@@ -70,11 +70,11 @@ function _(e) {
         type: d.g.DESCRIPTION,
         children: g
       })
-    }), n && null != v && (0, r.jsx)("div", {
+    }), n && null != b && (0, r.jsx)("div", {
       className: f.disabledText,
       children: (0, r.jsx)(d.R, {
         type: d.g.ERROR,
-        children: v
+        children: b
       })
     }), !o && (0, r.jsx)(u.$, {
       className: f.dividerDefault

@@ -80,7 +80,7 @@ function g(e) {
     parentAnalyticsLocation: m
   } = (0, a.ZP)(), g = (0, l.Z)({
     location: "LeaveActivityButton"
-  }), E = d ? c.d : c.Z, v = () => {
+  }), E = d ? c.d : c.Z, b = () => {
     (0, s.v)(m, s.d.LEAVE_ACTIVITY), o.Z.leaveActivity({
       location: t,
       applicationId: n,
@@ -89,7 +89,7 @@ function g(e) {
   };
   return (0, r.jsx)(E, p(f({}, _), {
     fullRegionButton: g,
-    onClick: v,
+    onClick: b,
     iconComponent: i.PBZ,
     label: u.NW.string(u.t["R/FK4O"])
   }))

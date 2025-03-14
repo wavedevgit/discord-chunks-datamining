@@ -19,7 +19,7 @@ var r, i = n(392711),
   g = n(981631),
   E = n(186901);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,7 +27,7 @@ function v(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let b = [E.ff.AUTHENTICATION_FAILED, E.ff.NOT_ENTITLED],
+let v = [E.ff.AUTHENTICATION_FAILED, E.ff.NOT_ENTITLED],
   y = "DispatchManagerStore",
   O = [],
   I = [],
@@ -102,7 +102,7 @@ function j(e) {
 }
 
 function U(e) {
-  V(e), Z(e)
+  F(e), Z(e)
 }
 
 function G(e) {
@@ -122,7 +122,7 @@ function B(e) {
   M(t, n, r, "Patch")
 }
 
-function V(e) {
+function F(e) {
   let {
     applicationId: t,
     branchId: n
@@ -130,7 +130,7 @@ function V(e) {
   k(t, n)
 }
 
-function F(e) {
+function V(e) {
   let {
     applicationId: t,
     branchId: n
@@ -191,7 +191,7 @@ function Y(e) {
     code: n
   } = t;
   if (null != n) {
-    if (b.includes(n)) W();
+    if (v.includes(n)) W();
     else if (n === E.ff.APPLICATION_NOT_FOUND) {
       let {
         context: e
@@ -258,14 +258,14 @@ class X extends(r = a.ZP.Store) {
     return R
   }
 }
-v(X, "displayName", "DispatchManagerStore");
+b(X, "displayName", "DispatchManagerStore");
 let J = new X(l.Z, {
   DISPATCH_APPLICATION_INSTALL: j,
   DISPATCH_APPLICATION_UPDATE: B,
   DISPATCH_APPLICATION_UNINSTALL: U,
-  DISPATCH_APPLICATION_CANCEL: V,
+  DISPATCH_APPLICATION_CANCEL: F,
   DISPATCH_APPLICATION_REPAIR: G,
-  DISPATCH_APPLICATION_MOVE_UP: F,
+  DISPATCH_APPLICATION_MOVE_UP: V,
   DISPATCH_APPLICATION_REMOVE_FINISHED: Z,
   DISPATCH_APPLICATION_STATE_UPDATE: H,
   DISPATCH_APPLICATION_ERROR: Y,

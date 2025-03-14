@@ -2,7 +2,7 @@
 "use strict";
 let r, i;
 n.d(t, {
-  Z: () => F
+  Z: () => V
 }), n(47120);
 var o, a = n(392711),
   s = n.n(a),
@@ -25,8 +25,8 @@ let p = 0,
   m = {},
   g = new Set,
   E = new Map,
-  v = {},
   b = {},
+  v = {},
   y = {},
   O = {};
 
@@ -67,7 +67,7 @@ function R(e, t, n) {
   let r = S(m, null != e ? e : d.ME),
     i = r[t],
     o = n(i);
-  return i === o ? [!1, o, i] : (null != i && (delete r[t], null != i.channelId && (delete S(v, i.channelId)[t], delete S(b, i.channelId)[t]), null != i.sessionId && delete S(y, t)[i.sessionId], C(null != e ? e : d.ME, t)), null != o && (r[t] = o, null != o.channelId && (S(v, o.channelId)[t] = o, o.selfVideo && (S(b, o.channelId)[t] = o, A(null != e ? e : d.ME, t))), null != o.sessionId && (S(y, t)[o.sessionId] = o)), [!0, o, i])
+  return i === o ? [!1, o, i] : (null != i && (delete r[t], null != i.channelId && (delete S(b, i.channelId)[t], delete S(v, i.channelId)[t]), null != i.sessionId && delete S(y, t)[i.sessionId], C(null != e ? e : d.ME, t)), null != o && (r[t] = o, null != o.channelId && (S(b, o.channelId)[t] = o, o.selfVideo && (S(v, o.channelId)[t] = o, A(null != e ? e : d.ME, t))), null != o.sessionId && (S(y, t)[o.sessionId] = o)), [!0, o, i])
 }
 
 function P(e) {
@@ -135,11 +135,11 @@ function M(e) {
     user: t,
     sessionId: n
   } = e, o = null != r && r !== t.id;
-  return o && (m = {}, v = {}, y = {}, b = {}, E.clear()), r = t.id, i = n, o
+  return o && (m = {}, b = {}, y = {}, v = {}, E.clear()), r = t.id, i = n, o
 }
 
 function k() {
-  m = {}, v = {}, y = {}, b = {}, E.clear()
+  m = {}, b = {}, y = {}, v = {}, E.clear()
 }
 
 function j(e) {
@@ -148,7 +148,7 @@ function j(e) {
     user: n,
     sessionId: o
   } = e;
-  for (let [e, n] of(m = {}, v = {}, y = {}, b = {}, Object.entries(t)))
+  for (let [e, n] of(m = {}, b = {}, y = {}, v = {}, Object.entries(t)))
     for (let [t, r] of Object.entries(n)) R(e, t, () => new u.Z(r));
   r = n.id, i = o
 }
@@ -175,7 +175,7 @@ function B(e) {
   } = e;
   T(t)
 }
-class V extends(o = l.ZP.Store) {
+class F extends(o = l.ZP.Store) {
   getAllVoiceStates() {
     return m
   }
@@ -186,10 +186,10 @@ class V extends(o = l.ZP.Store) {
     return S(m, null != e ? e : d.ME)
   }
   getVoiceStatesForChannel(e) {
-    return S(v, e)
+    return S(b, e)
   }
   getVideoVoiceStatesForChannel(e) {
-    return S(b, e)
+    return S(v, e)
   }
   getVoiceState(e, t) {
     return this.getVoiceStates(e)[t]
@@ -201,7 +201,7 @@ class V extends(o = l.ZP.Store) {
   getVoiceStateForChannel(e) {
     var t;
     let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r;
-    return null === (t = S(v, e)) || void 0 === t ? void 0 : t[n]
+    return null === (t = S(b, e)) || void 0 === t ? void 0 : t[n]
   }
   getVoiceStateForUser(e) {
     return Object.values(S(y, e))[0]
@@ -236,7 +236,7 @@ class V extends(o = l.ZP.Store) {
     return null != n && (t !== r || null != i && n.sessionId === i)
   }
   hasVideo(e) {
-    return Object.values(S(b, e)).length > 0
+    return Object.values(S(v, e)).length > 0
   }
   getVoicePlatformForChannel(e, t) {
     var n, o;
@@ -247,8 +247,8 @@ class V extends(o = l.ZP.Store) {
     return p
   }
 }
-_(V, "displayName", "VoiceStateStore");
-let F = new V(c.Z, {
+_(F, "displayName", "VoiceStateStore");
+let V = new F(c.Z, {
   CONNECTION_OPEN: M,
   CONNECTION_OPEN_SUPPLEMENTAL: k,
   OVERLAY_INITIALIZE: j,

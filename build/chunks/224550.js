@@ -21,8 +21,8 @@ let m = function(e) {
   let t, n, m, g;
   let {
     subscriptionPlan: E,
-    isGift: v,
-    isTrial: b,
+    isGift: b,
+    isTrial: v,
     isEmbeddedIAP: y,
     renewalInvoice: O,
     paymentSourceType: I,
@@ -42,7 +42,7 @@ let m = function(e) {
       purchaseType: T || f.GZQ.SUBSCRIPTION,
       plan: E,
       premiumSubscription: null == C ? null : C,
-      isGift: !!v,
+      isGift: !!b,
       planGroup: P,
       isPrepaidPaymentSource: !1
     }),
@@ -77,7 +77,7 @@ let m = function(e) {
     }
   } else if (T === f.GZQ.ONE_TIME) switch (N) {
     case f.POd.COLLECTIBLES:
-      M = D, x = v ? p.NW.format(p.t.ofqyUl, {
+      M = D, x = b ? p.NW.format(p.t.ofqyUl, {
         paidURL: f.EYA.PAID_TERMS
       }) : p.NW.format(p.t.G3l0s7, {
         paidURL: f.EYA.PAID_TERMS
@@ -90,14 +90,14 @@ let m = function(e) {
       break;
     default:
       M = L, x = p.NW.string(p.t["9/siSU"])
-  } else if (null == E || v) switch (v && (M = D), t) {
+  } else if (null == E || b) switch (b && (M = D), t) {
     case _.rV.MONTH:
-      x = v ? p.NW.string(p.t.IjNapq) : p.NW.string(p.t["/sGXPj"]), x = v ? p.NW.string(p.t.IjNapq) : 1 === n ? p.NW.string(p.t["/sGXPj"]) : p.NW.formatToPlainString(p.t.Fqjiho, {
+      x = b ? p.NW.string(p.t.IjNapq) : p.NW.string(p.t["/sGXPj"]), x = b ? p.NW.string(p.t.IjNapq) : 1 === n ? p.NW.string(p.t["/sGXPj"]) : p.NW.formatToPlainString(p.t.Fqjiho, {
         intervalCount: n
       });
       break;
     case _.rV.YEAR:
-      x = v ? p.NW.string(p.t.vAfbGx) : p.NW.string(p.t.IGzFc3);
+      x = b ? p.NW.string(p.t.vAfbGx) : p.NW.string(p.t.IGzFc3);
       break;
     case void 0:
       x = "";
@@ -139,7 +139,7 @@ let m = function(e) {
       paidServiceTermsArticle: f.EYA.PAID_TERMS,
       contactUsArticle: f.EYA.CONTACT,
       subscriptionFAQArticle: l.Z.getArticleURL(f.BhN.BILLING)
-    }) : b ? p.NW.format(p.t["Hvo/Z2"], {
+    }) : v ? p.NW.format(p.t["Hvo/Z2"], {
       buttonText: r,
       interval: c.ZP.formatInterval(null == E ? void 0 : E.interval),
       cancelSubscriptionArticle: l.Z.getArticleURL(f.BhN.PREMIUM_DETAILS_CANCEL_SUB),

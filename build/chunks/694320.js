@@ -28,7 +28,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,12 +41,12 @@ function v(e) {
   return e
 }
 
-function b() {
+function v() {
   (0, l.ZDy)(async () => {
     let {
       default: e
     } = await n.e("3289").then(n.bind(n, 682609));
-    return t => (0, r.jsx)(e, v({
+    return t => (0, r.jsx)(e, b({
       channel: null
     }, t))
   })
@@ -82,17 +82,17 @@ function y(e) {
         className: g.text,
         variant: "text-sm/normal",
         children: m.NW.format(m.t.BNAIBQ, {
-          onLearnMore: b
+          onLearnMore: v
         })
       })]
     }),
     O = () => (0, r.jsx)(l.P3F, {
       className: g.iconOnly,
-      onClick: () => b(),
+      onClick: () => v(),
       children: (0, r.jsx)(l.ua7, {
         text: m.NW.string(m.t["+eFIjY"]),
         position: "top",
-        children: e => (0, r.jsx)(l.SrA, v({
+        children: e => (0, r.jsx)(l.SrA, b({
           size: "md",
           color: "currentColor",
           className: g.premium

@@ -13,8 +13,8 @@ var r, i, o, a = n(212036),
   m = n(4340),
   g = n(838957),
   E = n(144748),
-  v = n(276321),
-  b = n(641236),
+  b = n(276321),
+  v = n(641236),
   y = n(457507),
   O = n(644659),
   I = O.enforce,
@@ -27,10 +27,10 @@ var r, i, o, a = n(212036),
   P = N && E(N),
   w = Object.prototype,
   D = l.TypeError,
-  L = b("toStringTag"),
+  L = v("toStringTag"),
   x = y("TYPED_ARRAY_TAG"),
   M = "TypedArrayConstructor",
-  k = a && !!v && "Opera" !== f(l.opera),
+  k = a && !!b && "Opera" !== f(l.opera),
   j = !1,
   U = {
     Int8Array: 1,
@@ -52,24 +52,24 @@ var r, i, o, a = n(212036),
     var t = f(e);
     return "DataView" === t || d(U, t) || d(G, t)
   },
-  V = function(e) {
+  F = function(e) {
     var t = E(e);
     if (u(t)) {
       var n = S(t);
-      return n && d(n, M) ? n[M] : V(t)
+      return n && d(n, M) ? n[M] : F(t)
     }
   },
-  F = function(e) {
+  V = function(e) {
     if (!u(e)) return !1;
     var t = f(e);
     return d(U, t) || d(G, t)
   },
   Z = function(e) {
-    if (F(e)) return e;
+    if (V(e)) return e;
     throw D("Target is not a typed array")
   },
   H = function(e) {
-    if (c(e) && (!v || g(R, e))) return e;
+    if (c(e) && (!b || g(R, e))) return e;
     throw D(_(e) + " is not a typed array constructor")
   },
   W = function(e, t, n, r) {
@@ -90,7 +90,7 @@ var r, i, o, a = n(212036),
   Y = function(e, t, n) {
     var r, i;
     if (s) {
-      if (v) {
+      if (b) {
         if (n) {
           for (r in U)
             if ((i = l[r]) && d(i, e)) try {
@@ -110,10 +110,10 @@ for (r in G)(o = (i = l[r]) && i.prototype) && (I(o)[M] = i);
 if ((!k || !c(R) || R === Function.prototype) && (R = function() {
     throw D("Incorrect invocation")
   }, k))
-  for (r in U) l[r] && v(l[r], R);
+  for (r in U) l[r] && b(l[r], R);
 if ((!k || !P || P === w) && (P = R.prototype, k))
-  for (r in U) l[r] && v(l[r].prototype, P);
-if (k && E(C) !== P && v(C, P), s && !d(P, L))
+  for (r in U) l[r] && b(l[r].prototype, P);
+if (k && E(C) !== P && b(C, P), s && !d(P, L))
   for (r in j = !0, m(P, L, {
       configurable: !0,
       get: function() {
@@ -127,9 +127,9 @@ e.exports = {
   aTypedArrayConstructor: H,
   exportTypedArrayMethod: W,
   exportTypedArrayStaticMethod: Y,
-  getTypedArrayConstructor: V,
+  getTypedArrayConstructor: F,
   isView: B,
-  isTypedArray: F,
+  isTypedArray: V,
   TypedArray: R,
   TypedArrayPrototype: P
 }

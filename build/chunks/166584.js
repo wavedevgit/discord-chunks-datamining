@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(700785),
   g = n(785717),
   E = n(256226),
-  v = n(314172),
-  b = n(981631),
+  b = n(314172),
+  v = n(981631),
   y = n(388032),
   O = n(867935);
 
@@ -104,9 +104,9 @@ function L(e) {
     onRemoveRole: I
   } = e, T = i.useRef({}), C = (e, t) => {
     null != t ? T.current[e] = t : delete T.current[e]
-  }, [L, x] = i.useState(d), [M, k] = i.useState(P), [j, U] = i.useState(!1), G = i.useRef(null), B = i.useRef(null), V = i.useRef(0);
+  }, [L, x] = i.useState(d), [M, k] = i.useState(P), [j, U] = i.useState(!1), G = i.useRef(null), B = i.useRef(null), F = i.useRef(0);
   i.useLayoutEffect(() => {
-    V.current = 0
+    F.current = 0
   }, [d]), i.useLayoutEffect(() => {
     if (j) return;
     let e = D(G.current),
@@ -119,7 +119,7 @@ function L(e) {
         let i = d[r],
           o = T.current[i.id];
         if (null == o) {
-          0 === V.current && n.push(i);
+          0 === F.current && n.push(i);
           continue
         }
         let a = Math.min(o.getBoundingClientRect().width, t);
@@ -127,14 +127,14 @@ function L(e) {
         e += a + R, n.push(i)
       }
     }
-    x(n.length === L.length ? L : n), k(r), V.current++
+    x(n.length === L.length ? L : n), k(r), F.current++
   }, [d, L, j]);
-  let F = i.useMemo(() => "roles-".concat((0, o.Z)()), []),
+  let V = i.useMemo(() => "roles-".concat((0, o.Z)()), []),
     Z = (0, a.ZP)({
-      id: F,
+      id: V,
       isEnabled: !0,
-      scrollToStart: b.Cyb,
-      scrollToEnd: b.Cyb,
+      scrollToStart: v.Cyb,
+      scrollToEnd: v.Cyb,
       wrap: !0
     }),
     H = d.length,
@@ -202,7 +202,7 @@ function L(e) {
                 children: "+".concat(d.length - L.length)
               })
             })
-          }) : null, _ && null != u ? (0, r.jsx)(v.Z, {
+          }) : null, _ && null != u ? (0, r.jsx)(b.Z, {
             buttonRef: B,
             guild: l,
             guildMember: u,
@@ -228,7 +228,7 @@ function x(e) {
     let i = (null === (n = e.tags) || void 0 === n ? void 0 : n.guild_connections) !== null,
       o = (null === (r = t.tags) || void 0 === r ? void 0 : r.guild_connections) !== null;
     return i && !o ? 1 : !i && o ? -1 : 0
-  }), [c, h]), v = m.e9(o, n.id), [y] = (0, l.Wu)([p.Z], () => [p.Z.can(b.Plq.MANAGE_ROLES, o), null != o ? p.Z.getGuildVersion(o.id) : null]), O = i.useCallback(e => {
+  }), [c, h]), b = m.e9(o, n.id), [y] = (0, l.Wu)([p.Z], () => [p.Z.can(v.Plq.MANAGE_ROLES, o), null != o ? p.Z.getGuildVersion(o.id) : null]), O = i.useCallback(e => {
     var n, r;
     a({
       action: "REMOVE_ROLE"
@@ -247,7 +247,7 @@ function x(e) {
     guild: o,
     guildMember: s,
     roles: E,
-    highestRole: v,
+    highestRole: b,
     canManageRoles: y,
     onAddRole: I,
     onRemoveRole: O

@@ -50,12 +50,12 @@ function n(e) {
       relevance: 0,
       begin: /#[a-zA-Z$][a-zA-Z0-9$]*|#+[0-9]?/
     },
-    v = {
+    b = {
       className: "brace",
       relevance: 0,
       begin: /[[\](){}]/
     },
-    b = {
+    v = {
       className: "message-name",
       relevance: 0,
       begin: n.concat("::", f)
@@ -74,7 +74,7 @@ function n(e) {
     },
     contains: [e.COMMENT(/\(\*/, /\*\)/, {
       contains: ["self"]
-    }), g, E, b, p, h, e.QUOTE_STRING_MODE, d, m, v]
+    }), g, E, v, p, h, e.QUOTE_STRING_MODE, d, m, b]
   }
 }
 e.exports = n

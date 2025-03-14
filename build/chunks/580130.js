@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => F
+  Z: () => V
 }), n(47120), n(653041);
 var r, i = n(392711),
   o = n.n(i),
@@ -26,8 +26,8 @@ function h(e, t, n) {
 let m = {},
   g = {},
   E = {},
-  v = {},
-  b = !1,
+  b = {},
+  v = !1,
   y = !1,
   O = !1,
   I = new Set,
@@ -35,11 +35,11 @@ let m = {},
   T = {};
 
 function N() {
-  m = {}, E = {}, v = {}, b = !1, y = !1, O = !1, I = new Set, S = new Set
+  m = {}, E = {}, b = {}, v = !1, y = !1, O = !1, I = new Set, S = new Set
 }
 
 function A(e) {
-  m[e.id] = c.Z.createFromServer(e), null == E[e.sku_id] && (E[e.sku_id] = new Set), null == v[e.application_id] && (v[e.application_id] = new Set), null != e.subscription_id && (null == T[e.subscription_id] && (T[e.subscription_id] = new Set), T[e.subscription_id].add(e.id)), v[e.application_id].add(e.id), E[e.sku_id].add(e.id)
+  m[e.id] = c.Z.createFromServer(e), null == E[e.sku_id] && (E[e.sku_id] = new Set), null == b[e.application_id] && (b[e.application_id] = new Set), null != e.subscription_id && (null == T[e.subscription_id] && (T[e.subscription_id] = new Set), T[e.subscription_id].add(e.id)), b[e.application_id].add(e.id), E[e.sku_id].add(e.id)
 }
 
 function C(e) {
@@ -48,7 +48,7 @@ function C(e) {
 
 function R(e) {
   delete m[e.id];
-  let t = v[e.application_id];
+  let t = b[e.application_id];
   null != t && t.delete(e.id);
   let n = E[e.sku_id];
   if (null != n && n.delete(e.id), null != e.subscription_id) {
@@ -82,7 +82,7 @@ function D(e) {
 function L() {}
 
 function x() {
-  b = !0
+  v = !0
 }
 
 function M(e) {
@@ -90,11 +90,11 @@ function M(e) {
     entitlements: t,
     excludeEnded: n
   } = e;
-  for (let e of (y = !0, b = !1, O = !n, t)) A(e)
+  for (let e of (y = !0, v = !1, O = !n, t)) A(e)
 }
 
 function k() {
-  y = !1, b = !1, O = !1
+  y = !1, v = !1, O = !1
 }
 
 function j(e) {
@@ -120,7 +120,7 @@ function G(e) {
 function B(e) {
   return R(e.entitlement)
 }
-class V extends(r = s.yh) {
+class F extends(r = s.yh) {
   initialize() {
     this.syncWith([u.Z], () => !0)
   }
@@ -131,7 +131,7 @@ class V extends(r = s.yh) {
     return o().values(g)
   }
   getForApplication(e) {
-    let t = v[e];
+    let t = b[e];
     if (null == t) return null;
     let n = new Set;
     for (let e of t) n.add(m[e]);
@@ -145,7 +145,7 @@ class V extends(r = s.yh) {
     return n
   }
   get fetchingAllEntitlements() {
-    return b
+    return v
   }
   get fetchedAllEntitlements() {
     return y
@@ -215,8 +215,8 @@ class V extends(r = s.yh) {
     }), t
   }
 }
-h(V, "displayName", "EntitlementStore");
-let F = new V(l.Z, {
+h(F, "displayName", "EntitlementStore");
+let V = new F(l.Z, {
   ENTITLEMENT_FETCH_APPLICATION_START: P,
   ENTITLEMENT_FETCH_APPLICATION_SUCCESS: w,
   ENTITLEMENT_FETCH_APPLICATION_FAIL: L,

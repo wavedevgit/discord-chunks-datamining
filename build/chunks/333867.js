@@ -71,8 +71,8 @@ function E(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let v = "payment-modal",
-  b = "gift-payment-modal",
+let b = "payment-modal",
+  v = "gift-payment-modal",
   y = new Set([u.h8.REVIEW, u.h8.CONFIRM, u.h8.GIFT_CUSTOMIZATION]);
 
 function O(e) {
@@ -90,7 +90,7 @@ function O(e) {
     variantsReturnStyle: N
   } = e, A = !1, C = (0, i.Z)(), R = e => {
     t = e
-  }, P = u ? b : v;
+  }, P = u ? v : b;
   (0, o.ZDy)(async () => e => {
     var {
       onClose: t,

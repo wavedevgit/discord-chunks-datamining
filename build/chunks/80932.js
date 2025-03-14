@@ -7,7 +7,7 @@ n.d(t, {
   Xe: () => C,
   dv: () => S,
   rS: () => O,
-  t0: () => b
+  t0: () => v
 }), n(47120), n(653041);
 var r = n(392711),
   i = n.n(r),
@@ -25,9 +25,9 @@ var r = n(392711),
   m = n(668781),
   g = n(981631),
   E = n(526761),
-  v = n(388032);
+  b = n(388032);
 
-function b(e) {
+function v(e) {
   _.hW.updateAsync("textAndImages", t => {
     t.diversitySurrogate = a.Gm.create(), t.diversitySurrogate.value = e
   }, E.fy.FREQUENT_USER_ACTION)
@@ -129,8 +129,8 @@ function N(e) {
 function A(e) {
   let t = N(e);
   null != t && _.DZ.updateAsync("favoriteEmojis", e => (e.emojis = T(e.emojis), i().size(e.emojis) >= E.oX) ? (m.Z.show({
-    title: v.NW.string(v.t["+XYXtb"]),
-    body: v.NW.formatToPlainString(v.t.JaIyFh, {
+    title: b.NW.string(b.t["+XYXtb"]),
+    body: b.NW.formatToPlainString(b.t.JaIyFh, {
       count: E.oX
     })
   }), !1) : !e.emojis.includes(t) && void e.emojis.push(t), E.fy.INFREQUENT_USER_ACTION)

@@ -1,4 +1,4 @@
-/** Chunk was on 69423 **/
+/** Chunk was on 98697 **/
 n.d(t, {
   Z: () => b
 }), n(47120);
@@ -22,11 +22,11 @@ function f(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let m = {
+let h = {
   friction: 15,
   tension: 100
 };
-class h extends(r = o.PureComponent) {
+class m extends(r = o.PureComponent) {
   componentDidMount() {
     this.setState({
       shown: !0
@@ -58,7 +58,7 @@ class h extends(r = o.PureComponent) {
       return e
     }({
       toValue: Math.min(e, 250)
-    }, m)).start()
+    }, h)).start()
   }
   renderArrowGroup(e) {
     return (0, i.jsxs)("div", {
@@ -152,5 +152,5 @@ class h extends(r = o.PureComponent) {
     })
   }
 }
-f(h, "contextType", u.Sfi);
-let b = h
+f(m, "contextType", u.Sfi);
+let b = m

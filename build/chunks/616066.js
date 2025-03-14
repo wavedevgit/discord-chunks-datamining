@@ -63,8 +63,8 @@ let g = u.ZP.getEnableHardwareAcceleration() ? s.Xo$ : s.qEK,
       avatarSize: _ = s.EFr.SIZE_152,
       avatarPlaceholderSrc: h
     } = e, E = (0, l.y9)(_), {
-      avatarDecorationSrc: v,
-      eventHandlers: b,
+      avatarDecorationSrc: b,
+      eventHandlers: v,
       avatarPlaceholderSrc: y
     } = (0, c.Z)({
       user: n,
@@ -72,8 +72,8 @@ let g = u.ZP.getEnableHardwareAcceleration() ? s.Xo$ : s.qEK,
       size: E,
       onlyAnimateOnHover: !i
     });
-    return (0, r.jsx)(g, m(p({}, b), {
-      avatarDecoration: v,
+    return (0, r.jsx)(g, m(p({}, v), {
+      avatarDecoration: b,
       src: i ? null == n ? void 0 : n.getAvatarURL(void 0, 152, !0) : null != h ? h : y,
       imageClassName: i ? f.fadeInAvatarImg : void 0,
       className: o()(f.avatar, {

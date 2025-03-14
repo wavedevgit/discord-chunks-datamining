@@ -1,6 +1,6 @@
 /** Chunk was on 54030 **/
 n.d(t, {
-  Z: () => C
+  Z: () => I
 }), n(653041), n(47120);
 var r = n(200651),
   o = n(192379),
@@ -36,7 +36,7 @@ function g(e) {
   return e
 }
 
-function h(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,25 +49,25 @@ function h(e, t) {
   }), e
 }
 
-function y(e) {
+function h(e) {
   return e.widget.id
 }
 
 function v(e, t, n, o) {
-  return n === i.pJH.YEETED ? null : (0, r.jsx)(b.Z, h(g({}, t), {
+  return n === i.pJH.YEETED ? null : (0, r.jsx)(b.Z, y(g({}, t), {
     transitionState: n,
     cleanUp: o,
     dragContainerClassName: m.dragContainer,
     className: m.widget
   }), e)
 }
-let I = [],
-  C = o.memo(function(e) {
+let O = [],
+  I = o.memo(function(e) {
     let {
       className: t
-    } = e, n = (0, p.Z)(), b = (0, a.e7)([_.Z], () => _.Z.windowSize((0, s.ZY)(n))), m = (0, a.e7)([l.default], () => l.default.isPreviewingInGame()), C = (0, a.e7)([c.Z], () => {
+    } = e, n = (0, p.Z)(), b = (0, a.e7)([_.Z], () => _.Z.windowSize((0, s.ZY)(n))), m = (0, a.e7)([l.default], () => l.default.isPreviewingInGame()), I = (0, a.e7)([c.Z], () => {
       let e = c.Z.getLayout(u.OVERLAY_LAYOUT_ID);
-      if (null == e) return I;
+      if (null == e) return O;
       let t = [];
       for (let n of e.widgets) {
         let e = c.Z.getWidget(n);
@@ -75,7 +75,7 @@ let I = [],
         let r = d.p[e.type];
         null != r && t.push({
           widget: e,
-          renderWidget: t => r(h(g({}, t), {
+          renderWidget: t => r(y(g({}, t), {
             id: e.id,
             pinned: e.pinned,
             anchor: e.anchor,
@@ -84,15 +84,15 @@ let I = [],
         })
       }
       return t
-    }, [m], f.HP), O = o.useCallback(e => (0, r.jsx)("div", {
+    }, [m], f.HP), C = o.useCallback(e => (0, r.jsx)("div", {
       className: t,
       style: b,
       children: e
     }), [t, b]);
     return (0, r.jsx)(i.W3x, {
-      items: C,
+      items: I,
       renderItem: v,
-      getItemKey: y,
-      wrapChildren: O
+      getItemKey: h,
+      wrapChildren: C
     })
   })

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  LU: () => b,
+  LU: () => v,
   ZP: () => N
 }), n(47120), n(301563), n(653041);
 var r, i = n(392711),
@@ -57,7 +57,7 @@ let g = [l.yU.CHAT, l.yU.PRIMARY_ENTRY_POINT],
   E = {
     pendingUsages: []
   },
-  v = new c.ZP({
+  b = new c.ZP({
     computeBonus: () => 1,
     computeWeight: e => e <= 3 ? 100 : e <= 15 ? 70 : e <= 30 ? 50 : e <= 45 ? 30 : e <= 80 ? 10 : 1,
     lookupKey: e => e,
@@ -65,7 +65,7 @@ let g = [l.yU.CHAT, l.yU.PRIMARY_ENTRY_POINT],
     numFrequentlyItems: d.yP
   });
 
-function b(e, t) {
+function v(e, t) {
   return e.filter(e => !e.includes(":") || (null == t ? void 0 : t.guild) != null && t.guild.id === e.split(":")[1]).map(e => e.split(":")[0])
 }
 
@@ -94,13 +94,13 @@ function I(e) {
   E.pendingUsages.push({
     key: r,
     timestamp: Date.now()
-  }), v.track(r), v.compute()
+  }), b.track(r), b.compute()
 }
 
 function S() {
   var e, t;
   let n = null !== (t = null === (e = u.Z.frecencyWithoutFetchingLatest.applicationCommandFrecency) || void 0 === e ? void 0 : e.applicationCommands) && void 0 !== t ? t : {};
-  v.overwriteHistory(o().mapValues(n, e => m(p({}, e), {
+  b.overwriteHistory(o().mapValues(n, e => m(p({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), E.pendingUsages)
 }
@@ -115,14 +115,14 @@ class T extends(r = a.ZP.PersistedStore) {
     return E.pendingUsages.length > 0
   }
   getCommandFrecencyWithoutLoadingLatest() {
-    return v
+    return b
   }
   getScoreWithoutLoadingLatest(e, t) {
     var n;
-    return null !== (n = v.getScore(y(e, t))) && void 0 !== n ? n : 0
+    return null !== (n = b.getScore(y(e, t))) && void 0 !== n ? n : 0
   }
   getTopCommandsWithoutLoadingLatest() {
-    return v.frequently
+    return b.frequently
   }
 }
 _(T, "displayName", "ApplicationCommandFrecencyStore"), _(T, "persistKey", "ApplicationCommandFrecencyV2");

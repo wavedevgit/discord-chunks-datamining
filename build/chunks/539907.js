@@ -20,7 +20,7 @@ var r, i = n(200651),
   g = n(981631),
   E = n(761069);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,14 +29,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -134,8 +134,8 @@ function P(e, t, n) {
   if (null != e && e < 0 && ("top" === n.position || "bottom" === n.position) && null != t && Math.abs(e) < (null == t ? void 0 : t.offsetHeight) && null != n.style) {
     let t = "top" === n.position ? "bottom" : "top",
       r = n.style[t];
-    return O(b({}, n), {
-      style: O(b({}, n.style), {
+    return O(v({}, n), {
+      style: O(v({}, n.style), {
         [t]: (null == r ? 0 : r) + e
       })
     })
@@ -178,7 +178,7 @@ class L extends(r = o.Component) {
         let i = this.formatDimension(this.nudgeLeftAlignment(e.left, t, n)),
           o = this.formatDimension(e.left) - i;
         return {
-          style: O(b({}, r), {
+          style: O(v({}, r), {
             left: i
           }),
           nudge: o
@@ -187,7 +187,7 @@ class L extends(r = o.Component) {
       case "right": {
         let t = this.formatDimension(n.offsetWidth - e.right);
         return {
-          style: O(b({}, r), {
+          style: O(v({}, r), {
             right: t
           }),
           nudge: 0
@@ -198,7 +198,7 @@ class L extends(r = o.Component) {
           o = this.formatDimension(this.nudgeLeftAlignment(i, t, n)),
           a = this.formatDimension(i) - o;
         return {
-          style: O(b({}, r), {
+          style: O(v({}, r), {
             left: o
           }),
           nudge: a
@@ -235,7 +235,7 @@ class L extends(r = o.Component) {
         let i = this.formatDimension(this.nudgeTopAlignment(e.top, t, n)),
           o = this.formatDimension(e.top) - i;
         return {
-          style: O(b({}, r), {
+          style: O(v({}, r), {
             top: i
           }),
           nudge: o
@@ -245,7 +245,7 @@ class L extends(r = o.Component) {
         let i = this.formatDimension(this.nudgeBottomAlignment(e.bottom, t, n)),
           o = this.formatDimension(e.bottom) - i;
         return {
-          style: O(b({}, r), {
+          style: O(v({}, r), {
             bottom: i
           }),
           nudge: o
@@ -256,7 +256,7 @@ class L extends(r = o.Component) {
           o = this.formatDimension(this.nudgeTopAlignment(i, t, n)),
           a = this.formatDimension(i) - o;
         return {
-          style: O(b({}, r), {
+          style: O(v({}, r), {
             top: o
           }),
           nudge: a
@@ -336,7 +336,7 @@ class L extends(r = o.Component) {
       targetRef: n,
       onMount: r
     } = this.props;
-    this.setState(b({
+    this.setState(v({
       isPositioned: !0
     }, this.calculateState()));
     let i = this.elementRef.current;
@@ -386,7 +386,7 @@ class L extends(r = o.Component) {
               [E.disabledPointerEvents]: o,
               "disable-adaptive-theme": h
             }),
-            style: b({
+            style: v({
               position: r ? "fixed" : "absolute"
             }, this.state.style),
             ref: this.elementRef,
@@ -404,35 +404,35 @@ class L extends(r = o.Component) {
     })
   }
   constructor(...e) {
-    super(...e), v(this, "elementRef", o.createRef()), v(this, "unsubscribeDesktopVisualRefreshExperiment", null), v(this, "state", {
+    super(...e), b(this, "elementRef", o.createRef()), b(this, "unsubscribeDesktopVisualRefreshExperiment", null), b(this, "state", {
       style: Object.freeze({}),
       position: this.props.autoInvert ? null : this.props.position,
       nudge: 0,
       isPositioned: !1,
       isSettingsLayerTransitioning: !1,
       isRefreshEnabled: (0, _.i9)("ReferencePositionLayer")
-    }), v(this, "handleLayerPopStart", () => {
+    }), b(this, "handleLayerPopStart", () => {
       this.setState({
         isSettingsLayerTransitioning: !0
       })
-    }), v(this, "handleLayerPopComplete", () => {
+    }), b(this, "handleLayerPopComplete", () => {
       let e = this.calculateState();
-      this.setState(O(b({}, e), {
+      this.setState(O(v({}, e), {
         isSettingsLayerTransitioning: !1
       }))
-    }), v(this, "handleDesktopVisualRefreshExperimentChange", e => {
+    }), b(this, "handleDesktopVisualRefreshExperimentChange", e => {
       let {
         enabled: t
       } = e;
       this.setState({
         isRefreshEnabled: t
       })
-    }), v(this, "updatePosition", () => {
+    }), b(this, "updatePosition", () => {
       this.setState(this.calculateState())
     })
   }
 }
-v(L, "defaultProps", {
+b(L, "defaultProps", {
   nudgeAlignIntoViewport: !1,
   spacing: 0,
   autoInvert: !1,

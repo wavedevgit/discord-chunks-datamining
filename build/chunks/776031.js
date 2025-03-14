@@ -19,9 +19,9 @@ var r = n(200651),
   m = n(981631),
   g = n(37113),
   E = n(65154),
-  v = n(388032);
+  b = n(388032);
 
-function b(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -37,7 +37,7 @@ function y(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -76,7 +76,7 @@ function S(e, t) {
 function T(e, t) {
   let {
     preset: n,
-    resolution: b,
+    resolution: v,
     fps: O
   } = (0, o.cj)([u.Z], () => u.Z.getState()), T = (0, o.e7)([_.Z], () => _.Z.getGoLiveSource()), N = (0, o.e7)([h.default], () => h.default.getCurrentUser()), A = (0, o.e7)([f.Z], () => {
     var t;
@@ -113,13 +113,13 @@ function T(e, t) {
       let {
         value: t,
         label: n
-      } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, b, t, N, A, R);
+      } = e, i = (0, c.Z)(g.tI.PRESET_CUSTOM, v, t, N, A, R);
       return (0, r.jsx)(a.k5B, {
         group: "stream-settings-fps",
         id: "stream-settings-fps-".concat(t),
         label: n,
         checked: t === O,
-        action: () => P(i, b, t, m.Qqv.RESOLUTION)
+        action: () => P(i, v, t, m.Qqv.RESOLUTION)
       }, "stream-settings-fps-".concat(t))
     }),
     L = g.km.map(e => {
@@ -131,16 +131,16 @@ function T(e, t) {
         group: "stream-settings-resolution",
         id: "stream-settings-resolution-".concat(t),
         label: n,
-        checked: t === b,
+        checked: t === v,
         action: () => P(i, t, w, m.Qqv.RESOLUTION)
       }, "stream-settings-resolution-".concat(t))
     });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.kSQ, {
-      label: v.NW.string(v.t.SkkeIi),
+      label: b.NW.string(b.t.SkkeIi),
       children: D
     }), (0, r.jsx)(a.kSQ, {
-      label: v.NW.string(v.t.rHyPXl),
+      label: b.NW.string(b.t.rHyPXl),
       children: L
     })]
   })

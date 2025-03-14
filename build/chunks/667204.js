@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => F,
+  Z: () => V,
   d: () => H
 }), n(566702), n(653041), n(411104), n(47120), n(13667), n(390547), n(627494), n(757143), n(301563);
 var r = n(512722),
@@ -20,8 +20,8 @@ var r = n(512722),
   m = n(603721),
   g = n(188597),
   E = n(3148),
-  v = n(48854),
-  b = n(346479),
+  b = n(48854),
+  v = n(346479),
   y = n(706454),
   O = n(430824),
   I = n(117530),
@@ -73,13 +73,13 @@ function B(e, t) {
   return n
 }
 
-function V(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : B(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function F(e) {
-  var t, n, r, a, l, u, d, p, h, m, g, E, v, O, S, T, N;
+async function V(e) {
+  var t, n, r, a, l, u, d, p, h, m, g, E, b, O, S, T, N;
   let {
     command: A,
     optionValues: w,
@@ -88,19 +88,19 @@ async function F(e) {
     maxSizeCallback: U,
     commandOrigin: G = L.bB.CHAT,
     sectionName: B,
-    interactionLifecycleOptionsFactory: V = K,
-    source: F,
+    interactionLifecycleOptionsFactory: F = K,
+    source: V,
     clientSupportsContextlessActivityLaunch: H
   } = e;
   if (null == k.channel) return;
-  let Y = null !== (r = D.Z.getSource(k.channel.id)) && void 0 !== r ? r : F,
+  let Y = null !== (r = D.Z.getSource(k.channel.id)) && void 0 !== r ? r : V,
     q = null !== (a = D.Z.getCommandOrigin(k.channel.id)) && void 0 !== a ? a : G;
   null == k.autocomplete && o.Z.dispatch({
     type: "APPLICATION_COMMAND_USED",
     context: k,
     command: A,
     commandOrigin: q
-  }), await b.Z.unarchiveThreadIfNecessary(k.channel.id);
+  }), await v.Z.unarchiveThreadIfNecessary(k.channel.id);
   let Q = [],
     X = [],
     J = (0, x.D7)(q);
@@ -177,7 +177,7 @@ async function F(e) {
         case c.jw.MENTIONABLE:
           if ("userMention" === o.type) t = o.userId;
           else if ("roleMention" === o.type) t = o.roleId;
-          else if ("textMention" === o.type && "@everyone" === o.text) t = null === (v = k.guild) || void 0 === v ? void 0 : v.id;
+          else if ("textMention" === o.type && "@everyone" === o.text) t = null === (b = k.guild) || void 0 === b ? void 0 : b.id;
           else if ("text" === o.type) {
             if ((0, x.BH)(o.text)) t = o.text.trim();
             else {
@@ -252,7 +252,7 @@ async function F(e) {
     analytics_location: z(q),
     sectionName: B,
     source: Y,
-    interactionLifecycleOptions: await V(A, k, $)
+    interactionLifecycleOptions: await F(A, k, $)
   }))
 }
 let Z = e => {
@@ -302,7 +302,7 @@ let Z = e => {
       channelId: h,
       guildId: g,
       data: r,
-      nonce: null !== (t = f.nonce) && void 0 !== t ? t : (0, v.r)(),
+      nonce: null !== (t = f.nonce) && void 0 !== t ? t : (0, b.r)(),
       attachments: o,
       maxSizeCallback: a,
       analytics_location: l,
@@ -345,7 +345,7 @@ async function K(e, t, n) {
   if (null == s && null != i.botId) try {
     await l.PR(i.botId)
   } catch (e) {}
-  let u = V(G({}, (0, E.ZP)({
+  let u = F(G({}, (0, E.ZP)({
     channelId: t.channel.id,
     content: "",
     type: n.type === c.yU.CHAT ? M.uaV.CHAT_INPUT_COMMAND : M.uaV.CONTEXT_MENU_COMMAND,

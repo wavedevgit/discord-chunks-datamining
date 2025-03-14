@@ -125,10 +125,10 @@ class m extends i.PureComponent {
           title: m,
           name: g,
           id: E,
-          placeholder: v
+          placeholder: b
         } = e,
-        b = _(d({}, p(e, ["getClassNameForLayout", "renderInput", "title", "name", "id", "placeholder"])), {
-          placeholder: null == v ? void 0 : v(),
+        v = _(d({}, p(e, ["getClassNameForLayout", "renderInput", "title", "name", "id", "placeholder"])), {
+          placeholder: null == b ? void 0 : b(),
           layout: c,
           error: this.getError(g),
           value: n[g],
@@ -142,7 +142,7 @@ class m extends i.PureComponent {
         className: a()(null == f ? void 0 : f(c)),
         title: m(),
         titleId: E,
-        children: h(b, u)
+        children: h(v, u)
       }, g)
     }), u(this, "renderFormRow", e => {
       let t = e.fields.map(this.renderFormSection);

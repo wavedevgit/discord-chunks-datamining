@@ -20,9 +20,9 @@ var r = n(192379),
   m = n(697426),
   g = n(549771),
   E = n(710111),
-  v = n(474936);
+  b = n(474936);
 
-function b(e) {
+function v(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     n = e.map(e => ({
       type: m.vB.SOUND,
@@ -49,7 +49,7 @@ function y(e) {
     let t = s[e];
     null != t && c.push(t)
   }
-  let u = b(c, a);
+  let u = v(c, a);
   u.length > 0 && t.push({
     key: o,
     categoryInfo: {
@@ -63,7 +63,7 @@ function O(e, t, n, r, i) {
   for (let a of t) {
     var o;
     if (a.id === n) continue;
-    let t = b(null !== (o = r.get(a.id)) && void 0 !== o ? o : []);
+    let t = v(null !== (o = r.get(a.id)) && void 0 !== o ? o : []);
     t.length > 0 && e.push({
       categoryInfo: {
         type: m.bg.GUILD,
@@ -80,7 +80,7 @@ function I(e, t, n, r, i) {
   var o;
   if (null == t) return;
   let a = null !== (o = r.get(t.id)) && void 0 !== o ? o : [],
-    s = b(a),
+    s = v(a),
     l = a.length < (0, u.nL)(t) && n,
     c = 0 === s.length,
     d = i;
@@ -106,14 +106,14 @@ function S(e, t) {
     categoryInfo: {
       type: m.bg.DEFAULTS
     },
-    items: b(r)
+    items: v(r)
   })
 }
 
 function T(e) {
   let {
     filterOutEmptyCurrentGuild: t = !1
-  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2], a = (0, i.e7)([c.default], () => c.default.getCurrentUser()), u = d.ZP.isPremium(a, v.p9.TIER_2), [f, E, b] = (0, i.Wu)([h.Z], () => [h.Z.getSounds(), h.Z.getFavorites(), h.Z.isFetching()]), T = (0, g.h)(e, !1), N = (0, i.Wu)([s.Z], () => {
+  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2], a = (0, i.e7)([c.default], () => c.default.getCurrentUser()), u = d.ZP.isPremium(a, b.p9.TIER_2), [f, E, v] = (0, i.Wu)([h.Z], () => [h.Z.getSounds(), h.Z.getFavorites(), h.Z.isFetching()]), T = (0, g.h)(e, !1), N = (0, i.Wu)([s.Z], () => {
     let e = [];
     return T.forEach(t => {
       let n = s.Z.getGuild(t);
@@ -137,7 +137,7 @@ function T(e) {
       i = [];
     return n ? (S(i, f), {
       categories: i,
-      isFetching: b,
+      isFetching: v,
       soundCounts: {
         favoriteSoundCount: 0,
         unlockedCustomSoundCount: 0,
@@ -168,14 +168,14 @@ function T(e) {
       t.categoryInfo.type === m.bg.GUILD && (t.categoryInfo.isNitroLocked ? r += t.items.length : e += t.items.length)
     }), {
       categories: i,
-      isFetching: b,
+      isFetching: v,
       soundCounts: {
         favoriteSoundCount: E.size,
         unlockedCustomSoundCount: e,
         lockedCustomSoundCount: r
       }
     })
-  }, [T, f, E, x, L, D, w, R, P, t, C, N, n, b, u])
+  }, [T, f, E, x, L, D, w, R, P, t, C, N, n, v, u])
 }
 
 function N(e, t, n) {
@@ -184,7 +184,7 @@ function N(e, t, n) {
     categoryInfo: {
       type: m.bg.SEARCH
     },
-    items: b(t, !1)
+    items: v(t, !1)
   }] : e, [e, n.length, t])
 }
 

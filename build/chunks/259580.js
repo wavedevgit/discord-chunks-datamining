@@ -85,15 +85,15 @@ let h = {
       expanded: g
     } = e, E = _(e, ["direction", "width", "height", "color", "transition", "className", "foreground", "expanded"]);
     let {
-      enabled: v
-    } = (0, a.bWb)(), b = t;
-    if (!0 === g ? b = h.DOWN : !1 === g && (b = h.RIGHT), v) {
+      enabled: b
+    } = (0, a.bWb)(), v = t;
+    if (!0 === g ? v = h.DOWN : !1 === g && (v = h.RIGHT), b) {
       let e = {
         [h.UP]: a.u04,
         [h.DOWN]: a.CJ0,
         [h.LEFT]: a.V7D,
         [h.RIGHT]: a.Fbu
-      } [b];
+      } [v];
       return (0, r.jsx)(e, f(u({}, E), {
         className: p,
         size: "custom",
@@ -104,7 +104,7 @@ let h = {
       }))
     }
     return (0, r.jsx)("svg", f(u({
-      className: o()(p, d, b),
+      className: o()(p, d, v),
       width: n,
       height: i,
       viewBox: "0 0 24 24"

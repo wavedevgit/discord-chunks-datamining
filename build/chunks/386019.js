@@ -23,20 +23,20 @@ function d(e) {
     onClose: h,
     appContext: m
   } = e, [g, E] = i.useState(!1), {
-    analyticsLocations: v
-  } = (0, s.ZP)(a.Z.USER_PROFILE_ACTIVITY_CONTEXT_MENU), b = (0, l.Z)({
+    analyticsLocations: b
+  } = (0, s.ZP)(a.Z.USER_PROFILE_ACTIVITY_CONTEXT_MENU), v = (0, l.Z)({
     display: _,
     user: n,
     activity: d,
     entry: f,
-    analyticsLocations: v
+    analyticsLocations: b
   }), y = (0, c.Z)({
     entry: f,
     activity: d,
     user: n,
     display: _,
     onClose: h,
-    onAction: b,
+    onAction: v,
     isMenuOpen: g,
     appContext: m
   });
@@ -45,7 +45,7 @@ function d(e) {
     position: "right",
     disablePointerEvents: !1,
     onRequestOpen: () => {
-      b({
+      v({
         action: "OPEN_MENU"
       }), E(!0)
     },

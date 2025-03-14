@@ -84,7 +84,7 @@ function l(e, t, n) {
     })
   }
 
-  function v() {
+  function b() {
     var e, t = m;
     return (e = {
       subscribe: function(e) {
@@ -108,5 +108,5 @@ function l(e, t, n) {
     subscribe: m,
     getState: h,
     replaceReducer: E
-  })[i] = v, o
+  })[i] = b, o
 }

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => v
 }), n(47120);
 var r, i = n(442837),
   o = n(570140),
@@ -59,7 +59,7 @@ function g() {
 function E() {
   _ = c({}, f), u = new Map, d = !1
 }
-class v extends(r = i.ZP.PersistedStore) {
+class b extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(a.Z), null != e && (_.userAffinities = e.userAffinities, _.lastFetched = e.lastFetched, p()), this.syncWith([a.Z], p)
   }
@@ -86,8 +86,8 @@ class v extends(r = i.ZP.PersistedStore) {
     return _
   }
 }
-l(v, "displayName", "UserAffinitiesV2Store"), l(v, "persistKey", "UserAffinitiesStoreV2");
-let b = new v(o.Z, {
+l(b, "displayName", "UserAffinitiesV2Store"), l(b, "persistKey", "UserAffinitiesStoreV2");
+let v = new b(o.Z, {
   LOAD_USER_AFFINITIES_V2: h,
   LOAD_USER_AFFINITIES_V2_SUCCESS: m,
   LOAD_USER_AFFINITIES_V2_FAILURE: g,

@@ -4,14 +4,14 @@ n.d(t, {
   BP: () => X,
   DK: () => H,
   G3: () => p,
-  Ho: () => V,
+  Ho: () => F,
   Ib: () => h,
   P8: () => C,
-  PJ: () => F,
+  PJ: () => V,
   Rp: () => W,
   Uq: () => G,
   Y4: () => B,
-  hn: () => v,
+  hn: () => b,
   iA: () => M,
   ib: () => R,
   lh: () => J,
@@ -37,8 +37,8 @@ let p = 365,
   m = "ddd MMM Do \xb7 LT",
   g = "ddd MMM Do, YYYY \xb7 LT",
   E = "LT",
-  v = 4,
-  b = [a.Ci.MO.weekday, a.Ci.TU.weekday, a.Ci.WE.weekday, a.Ci.TH.weekday, a.Ci.FR.weekday],
+  b = 4,
+  v = [a.Ci.MO.weekday, a.Ci.TU.weekday, a.Ci.WE.weekday, a.Ci.TH.weekday, a.Ci.FR.weekday],
   y = [a.Ci.SU.weekday, a.Ci.MO.weekday, a.Ci.TU.weekday, a.Ci.WE.weekday, a.Ci.TH.weekday],
   O = [a.Ci.TU.weekday, a.Ci.WE.weekday, a.Ci.TH.weekday, a.Ci.FR.weekday, a.Ci.SA.weekday],
   I = [a.Ci.SA.weekday, a.Ci.SU.weekday],
@@ -162,7 +162,7 @@ function B(e, t) {
   return null == e || null == t ? null == e && null == t : G(e.startDate, t.startDate) && G(e.endDate, t.endDate)
 }
 
-function V(e) {
+function F(e) {
   var t;
   let n = null != e.byWeekday ? [...e.byWeekday] : null,
     r = null === (t = e.byNWeekday) || void 0 === t ? void 0 : t.map(e => new a.OG(e.day, e.n)),
@@ -180,11 +180,11 @@ function V(e) {
   })
 }
 
-function F(e, t, n) {
+function V(e, t, n) {
   let r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
     i = n > new Date ? n : new Date,
     o = new Date;
-  o.setFullYear(o.getFullYear() + v);
+  o.setFullYear(o.getFullYear() + b);
   let a = t.between(i, o, !0, (t, n) => n < e + 1);
   return r && a.length > 0 && n.getTime() === a[0].getTime() ? a.slice(1) : a.slice(0, e)
 }
@@ -217,7 +217,7 @@ function W(e, t) {
 function Y(e) {
   let t = L(e.toDate().getDay()),
     n = L(e.toDate().getUTCDay());
-  return n.weekday - t.weekday > 0 ? O : n.weekday - t.weekday < 0 ? y : b
+  return n.weekday - t.weekday > 0 ? O : n.weekday - t.weekday < 0 ? y : v
 }
 
 function K(e) {
@@ -306,7 +306,7 @@ function q(e, t) {
 
 function Q(e, t) {
   if (null == t) return d.z.NONE;
-  let n = V(t);
+  let n = F(t);
   switch (n.options.freq) {
     case a.Ci.WEEKLY:
       if (n.options.interval < 1 || n.options.interval > 2) return d.z.NONE;

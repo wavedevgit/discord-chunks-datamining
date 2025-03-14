@@ -56,7 +56,7 @@ let g = {
 };
 u.Z.Millis.DAY;
 let E = 20,
-  v = new l.ZP({
+  b = new l.ZP({
     computeBonus: () => 100,
     computeWeight: e => {
       let t = 1;
@@ -66,29 +66,29 @@ let E = 20,
     afterCompute: () => {},
     numFrequentlyItems: E
   }),
-  b = () => {
-    d.Z.isLoaded && v.compute()
+  v = () => {
+    d.Z.isLoaded && b.compute()
   },
   y = e => {
     let {
       stickerIds: t
     } = e;
     null == t || t.forEach(e => {
-      v.track(e), g.pendingUsages.push({
+      b.track(e), g.pendingUsages.push({
         key: e,
         timestamp: Date.now()
       })
-    }), b()
+    }), v()
   },
   O = () => {
-    b()
+    v()
   };
 
 function I() {
   var e;
   let t = null === (e = c.Z.frecencyWithoutFetchingLatest.stickerFrecency) || void 0 === e ? void 0 : e.stickers;
   if (null == t) return !1;
-  v.overwriteHistory(o().mapValues(t, e => m(p({}, e), {
+  b.overwriteHistory(o().mapValues(t, e => m(p({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), g.pendingUsages)
 }
@@ -114,7 +114,7 @@ class T extends(r = a.ZP.PersistedStore) {
     return g.pendingUsages.length > 0
   }
   get stickerFrecencyWithoutFetchingLatest() {
-    return v
+    return b
   }
 }
 _(T, "displayName", "StickersPersistedStore"), _(T, "persistKey", "StickersPersistedStoreV2");

@@ -25,8 +25,8 @@ let _ = e => {
     autoFocus: m,
     searchBarRef: g,
     hasTabWrapper: E,
-    diversitySurrogate: v,
-    isBurstReaction: b,
+    diversitySurrogate: b,
+    isBurstReaction: v,
     onBurstReactionToggle: y,
     renderHeader: O
   } = e, I = (0, r.jsxs)(r.Fragment, {
@@ -39,18 +39,18 @@ let _ = e => {
       isFullRow: !1,
       onFocus: h,
       autoFocus: m,
-      defaultSearchPlaceholder: (0, s.nV)(n, b)
+      defaultSearchPlaceholder: (0, s.nV)(n, v)
     }), n === d.Hz.REACTION ? (0, r.jsx)("div", {
       className: f.burstToggle,
       children: (0, r.jsx)(a.Z, {
-        checked: b,
+        checked: v,
         onClick: y
       })
     }) : null, null != t ? t : (0, r.jsx)(l.Z, {
       searchBarRef: g,
       className: f.diversitySelector,
       hasTabWrapper: E,
-      selectedSurrogate: v
+      selectedSurrogate: b
     })]
   });
   return (0, r.jsx)("div", {

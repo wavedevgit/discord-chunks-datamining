@@ -51,12 +51,12 @@ function E(e, t) {
   return n
 }
 
-function v(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = d.ZP.getEnableHardwareAcceleration() ? s.Xo$ : s.qEK;
+let v = d.ZP.getEnableHardwareAcceleration() ? s.Xo$ : s.qEK;
 
 function y(e) {
   let {
@@ -74,7 +74,7 @@ function y(e) {
     onUpsellClick: N
   } = e, {
     analyticsLocations: A
-  } = (0, l.ZP)(), C = (0, a.e7)([u.Z], () => u.Z.getStatus(t.id)), R = null == n || (null == i ? void 0 : i.canUsePremiumProfileCustomization) || d, P = (0, r.jsx)(b, {
+  } = (0, l.ZP)(), C = (0, a.e7)([u.Z], () => u.Z.getStatus(t.id)), R = null == n || (null == i ? void 0 : i.canUsePremiumProfileCustomization) || d, P = (0, r.jsx)(v, {
     src: m,
     avatarDecoration: E,
     imageClassName: o()(I, {
@@ -107,7 +107,7 @@ function y(e) {
         }
       })
     },
-    children: e => (0, r.jsxs)(s.P3F, v(g({}, e), {
+    children: e => (0, r.jsxs)(s.P3F, b(g({}, e), {
       className: o()(h.avatar, h.clickable),
       children: [P, (0, r.jsx)(s.vdY, {
         size: "custom",

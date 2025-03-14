@@ -1,13 +1,12 @@
-/** Chunk was on 52657 **/
-"use strict";
+/** Chunk was on 58173 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 }), n(47120);
 var r = n(451467),
-  i = n(37113);
+  l = n(37113);
 
-function l(e, t, n) {
-  for (let l of i.no[e])
-    if ((0, r.Z)(e, l.resolution, l.fps, t, n)) return [l.resolution, l.fps];
+function o(e, t, n) {
+  for (let o of l.no[e])
+    if ((0, r.Z)(e, o.resolution, o.fps, t, n)) return [o.resolution, o.fps];
   return null
 }

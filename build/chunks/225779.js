@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   DM: () => E,
-  Ey: () => v,
+  Ey: () => b,
   No: () => O,
   Ry: () => S,
   qX: () => T,
@@ -91,7 +91,7 @@ let E = Object.freeze({
   PREMIUM_TIER_2: d.colorPremiumTier2
 });
 
-function v(e) {
+function b(e) {
   var {
     children: t,
     className: n,
@@ -108,7 +108,7 @@ function v(e) {
   })
 }
 
-function b(e, t) {
+function v(e, t) {
   null != e && l.default.track(c.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, _({
     notice_type: e
   }, t))
@@ -126,9 +126,9 @@ function O(e) {
     noticeType: n,
     additionalTrackingProps: i
   } = e, o = m(e, ["children", "noticeType", "additionalTrackingProps"]);
-  return (0, r.jsx)(v, h(_({}, o), {
+  return (0, r.jsx)(b, h(_({}, o), {
     onClick: e => {
-      null != o.onClick && o.onClick(e), b(n, i)
+      null != o.onClick && o.onClick(e), v(n, i)
     },
     children: t
   }))

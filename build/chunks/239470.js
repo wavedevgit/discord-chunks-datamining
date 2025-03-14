@@ -18,8 +18,8 @@ function i(e, t, n, i) {
     m = null != _ && _ === (null == i ? void 0 : i.sync_id),
     g = (null == f ? void 0 : f.party) != null && (null == i ? void 0 : null === (o = i.party) || void 0 === o ? void 0 : o.id) === f.party.id,
     E = (null == d ? void 0 : d.userId) != null && (null == d ? void 0 : d.userId) === n.id,
-    v = p || h || m,
-    b = p || E || g;
+    b = p || h || m,
+    v = p || E || g;
   return {
     user: n,
     activity: i,
@@ -31,7 +31,7 @@ function i(e, t, n, i) {
     isCurrentUser: p,
     currentUserTrackId: _,
     playingSameTrack: m,
-    playDisabled: v,
-    syncDisabled: b
+    playDisabled: b,
+    syncDisabled: v
   }
 }

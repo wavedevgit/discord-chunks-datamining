@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => b
 }), n(47120);
 var r, i = n(392711),
   o = n.n(i),
@@ -63,7 +63,7 @@ class E extends(r = a.ZP.Store) {
   }
 }
 u(E, "displayName", "GuildAvailabilityStore");
-let v = new E(s.Z, {
+let b = new E(s.Z, {
   CONNECTION_OPEN: _,
   OVERLAY_INITIALIZE: _,
   GUILD_UNAVAILABLE: h,

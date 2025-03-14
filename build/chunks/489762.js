@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(28546),
   g = n(691251),
   E = n(98528),
-  v = n(551058),
-  b = n(695346),
+  b = n(551058),
+  v = n(695346),
   y = n(430824),
   O = n(594174),
   I = n(626135),
@@ -41,9 +41,9 @@ var r = n(200651),
   U = n(957825),
   G = n(388032),
   B = n(476771),
-  V = n(239840);
+  F = n(239840);
 
-function F(e, t, n) {
+function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -59,7 +59,7 @@ function Z(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      F(e, t, n[t])
+      V(e, t, n[t])
     })
   }
   return e
@@ -197,8 +197,8 @@ let Y = (0, S.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
       onSelectSticker: o,
       channel: T,
       currentUser: A
-    }), [k, V] = i.useState(!1), F = i.useCallback(e => {
-      b._O.updateSetting(Array.from(e))
+    }), [k, F] = i.useState(!1), V = i.useCallback(e => {
+      v._O.updateSetting(Array.from(e))
     }, []), Z = i.useCallback(e => {
       let t = m[e];
       return null != t ? (0, r.jsx)(M.Z, {
@@ -231,8 +231,8 @@ let Y = (0, S.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
         tab: U.X1.STICKER,
         collapsed: !i,
         sticker_pack_id: n ? e : null
-      }), F(r)
-    }, [N, t, F]), z = i.useCallback(e => {
+      }), V(r)
+    }, [N, t, V]), z = i.useCallback(e => {
       let n = g[e];
       if (null != E) {
         let {
@@ -245,7 +245,7 @@ let Y = (0, S.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
           children: [i ? (0, r.jsx)("div", {
             className: B.divider,
             children: (0, r.jsx)(l.$i$, {})
-          }) : null, (0, r.jsx)(v.Z, {
+          }) : null, (0, r.jsx)(b.Z, {
             className: B.packHeader,
             "aria-label": G.NW.string(G.t.wbfJFh),
             children: G.NW.string(G.t["05Z/0t"])
@@ -254,7 +254,7 @@ let Y = (0, S.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
       }
       switch (n.type) {
         case P.Ih.FAVORITE:
-          return (0, r.jsx)(v.Z, {
+          return (0, r.jsx)(b.Z, {
             className: B.packHeader,
             "aria-label": G.NW.formatToPlainString(G.t["7lLCjY"], {
               categoryName: n.name
@@ -270,7 +270,7 @@ let Y = (0, S.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
             children: n.name
           }, "header-".concat(n.id));
         case P.Ih.RECENT:
-          return (0, r.jsx)(v.Z, {
+          return (0, r.jsx)(b.Z, {
             className: B.packHeader,
             "aria-label": G.NW.formatToPlainString(G.t["7lLCjY"], {
               categoryName: n.name
@@ -289,7 +289,7 @@ let Y = (0, S.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
         case P.Ih.EMPTY_GUILD_UPSELL: {
           let e = y.Z.getGuild(n.id);
           if (null == e) return null;
-          return (0, r.jsx)(v.Z, {
+          return (0, r.jsx)(b.Z, {
             className: B.packHeader,
             "aria-label": G.NW.formatToPlainString(G.t["7lLCjY"], {
               categoryName: e.name
@@ -307,7 +307,7 @@ let Y = (0, S.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
         case P.Ih.PACK: {
           let e = R.Z.getStickerPack(n.id);
           if (null == e) return null;
-          return (0, r.jsx)(v.Z, {
+          return (0, r.jsx)(b.Z, {
             className: B.packHeader,
             "aria-label": G.NW.formatToPlainString(G.t["7lLCjY"], {
               categoryName: e.name
@@ -346,7 +346,7 @@ let Y = (0, S.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
           guildId: n.id,
           channel: T,
           shouldTrackUpsellViewed: !k,
-          setTrackedUpsellViewed: V
+          setTrackedUpsellViewed: F
         }, "sticker-picker-empty-guild-inline-upsell-".concat(n.id))
       }, [g, t, E, T, k]),
       sectionFooterHeight: i.useCallback(e => {
@@ -364,8 +364,8 @@ let Y = (0, S.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
       getStickerItemProps: u,
       getStickerRowProps: p,
       gutterWidth: g,
-      isUsingKeyboardNavigation: v,
-      onSelectSticker: b,
+      isUsingKeyboardNavigation: b,
+      onSelectSticker: v,
       rowCount: y,
       rowCountBySection: O,
       stickersCategories: I,
@@ -378,7 +378,7 @@ let Y = (0, S.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
       renderSection: k,
       renderSectionFooter: j,
       sectionFooterHeight: U,
-      renderSectionHeader: F,
+      renderSectionHeader: V,
       sectionHeaderHeight: Z
     } = eh({
       collapsedStickersCategories: n,
@@ -386,8 +386,8 @@ let Y = (0, S.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
       stickersCategories: I,
       stickersGrid: S,
       isScrolling: N,
-      isUsingKeyboardNavigation: v,
-      onSelectSticker: b,
+      isUsingKeyboardNavigation: b,
+      onSelectSticker: v,
       getStickerItemProps: u,
       getStickerRowProps: p,
       gutterWidth: g,
@@ -450,7 +450,7 @@ let Y = (0, S.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
         children: [null != l && 0 === l.sendable.length && 0 === l.sendableWithPremium.length ? (0, r.jsx)(c.Z, {
           message: G.NW.string(G.t["zc+LQU"]),
           className: B.__invalid_noSearchResultsContainer,
-          noResultsImageURL: V,
+          noResultsImageURL: F,
           suggestions: (0, r.jsx)(e_, {
             onSuggestionClick: e => (0, m.ql)(e, !0)
           })
@@ -460,7 +460,7 @@ let Y = (0, S.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
           onScroll: H,
           renderRow: M,
           renderSection: null == l ? k : void 0,
-          renderSectionHeader: F,
+          renderSectionHeader: V,
           renderSectionFooter: j,
           rowCount: y,
           rowCountBySection: O,

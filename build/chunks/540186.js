@@ -1,29 +1,29 @@
-/** Chunk was on 98806 **/
+/** Chunk was on 44584 **/
 n.d(t, {
   Z: () => v
 }), n(266796), n(653041);
 var r = n(200651);
 n(192379);
-var a = n(442837),
-  i = n(481060),
-  l = n(594174),
-  o = n(311888),
+var i = n(442837),
+  l = n(481060),
+  o = n(594174),
+  a = n(311888),
   c = n(63063),
   s = n(5192),
   d = n(431328),
   u = n(501655),
-  _ = n(659972),
-  m = n(981631),
-  b = n(765305),
-  h = n(388032),
-  g = n(813255);
+  h = n(659972),
+  g = n(981631),
+  _ = n(765305),
+  m = n(388032),
+  b = n(813255);
 
 function x(e) {
   let {
     icon: t
   } = e;
   return (0, r.jsx)("div", {
-    className: g.iconContainer,
+    className: b.iconContainer,
     children: (0, r.jsx)(t, {
       color: "currentColor",
       size: "md"
@@ -31,18 +31,18 @@ function x(e) {
   })
 }
 
-function p(e) {
+function f(e) {
   let {
     icon: t,
     text: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: g.listItemContainer,
+    className: b.listItemContainer,
     children: [(0, r.jsx)("div", {
-      className: g.listItemIconContainer,
+      className: b.listItemIconContainer,
       children: t
-    }), (0, r.jsx)(i.Text, {
-      className: g.listItemText,
+    }), (0, r.jsx)(l.Text, {
+      className: b.listItemText,
       variant: "text-md/normal",
       color: "header-secondary",
       children: n
@@ -50,40 +50,40 @@ function p(e) {
   })
 }
 
-function f(e) {
+function p(e) {
   var t;
   let {
     guild: n,
-    channel: i,
-    stageData: o
-  } = e, c = (0, a.e7)([l.default], () => l.default.getCurrentUser(), []), m = {
+    channel: l,
+    stageData: a
+  } = e, c = (0, i.e7)([o.default], () => o.default.getCurrentUser(), []), g = {
     id: "1337",
     guild_id: n.id,
-    channel_id: i.id,
-    topic: o.topic,
-    description: o.description,
-    privacy_level: null !== (t = o.privacyLevel) && void 0 !== t ? t : b.j8.PUBLIC
-  }, h = (0, d.w8)(i.id, u.pV.SPEAKER), x = (0, d.Rk)(i.id, u.pV.AUDIENCE), p = h.slice(0, 5);
-  return null == p.find(e => {
+    channel_id: l.id,
+    topic: a.topic,
+    description: a.description,
+    privacy_level: null !== (t = a.privacyLevel) && void 0 !== t ? t : _.j8.PUBLIC
+  }, m = (0, d.w8)(l.id, u.pV.SPEAKER), x = (0, d.Rk)(l.id, u.pV.AUDIENCE), f = m.slice(0, 5);
+  return null == f.find(e => {
     var t;
     return (null === (t = e.user) || void 0 === t ? void 0 : t.id) === (null == c ? void 0 : c.id)
-  }) && p.push({
+  }) && f.push({
     user: c,
-    userNick: s.ZP.getName(n.id, i.id, c)
+    userNick: s.ZP.getName(n.id, l.id, c)
   }), (0, r.jsx)("div", {
-    className: g.previewCardContainer,
+    className: b.previewCardContainer,
     children: (0, r.jsx)("div", {
-      className: g.previewCard,
-      children: (0, r.jsx)(_.Z, {
+      className: b.previewCard,
+      children: (0, r.jsx)(h.Z, {
         guild: n,
-        stageInstance: m,
+        stageInstance: g,
         showGuildPopout: !1,
         setShowGuildPopout: () => {},
-        source: _.k.UNSPECIFIED,
-        speakers: p,
-        speakerCount: h.length,
+        source: h.k.UNSPECIFIED,
+        speakers: f,
+        speakerCount: m.length,
         audienceCount: Math.max(1337, x),
-        channelName: i.name
+        channelName: l.name
       })
     })
   })
@@ -93,80 +93,80 @@ function v(e) {
   let {
     guild: t,
     channel: n,
-    stageData: a,
-    headerId: l,
+    stageData: i,
+    headerId: o,
     loading: s,
     onNext: d,
     onCancel: u,
-    onBack: _
+    onBack: h
   } = e;
-  return null == t || null == n || null == a ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(f, {
+  return null == t || null == n || null == i ? null : (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(p, {
       guild: t,
       channel: n,
-      stageData: a
-    }), (0, r.jsxs)(i.hzk, {
-      className: g.container,
+      stageData: i
+    }), (0, r.jsxs)(l.hzk, {
+      className: b.container,
       children: [(0, r.jsxs)("div", {
-        className: g.header,
-        children: [(0, r.jsx)(i.X6q, {
-          id: l,
-          className: g.__invalid_title,
+        className: b.header,
+        children: [(0, r.jsx)(l.X6q, {
+          id: o,
+          className: b.__invalid_title,
           variant: "heading-xl/semibold",
-          children: h.NW.string(h.t.GXpXTE)
-        }), (0, r.jsx)(i.Text, {
-          className: g.subtitle,
+          children: m.NW.string(m.t.GXpXTE)
+        }), (0, r.jsx)(l.Text, {
+          className: b.subtitle,
           color: "header-secondary",
           variant: "text-sm/normal",
-          children: h.NW.string(h.t.JaYMvL)
+          children: m.NW.string(m.t.JaYMvL)
         })]
       }), (0, r.jsxs)("div", {
-        className: g.__invalid_list,
-        children: [(0, r.jsx)(p, {
+        className: b.__invalid_list,
+        children: [(0, r.jsx)(f, {
           icon: (0, r.jsx)(x, {
-            icon: i.Jmo
+            icon: l.Jmo
           }),
-          text: h.NW.string(h.t.u6oOcn)
-        }), (0, r.jsx)(p, {
+          text: m.NW.string(m.t.u6oOcn)
+        }), (0, r.jsx)(f, {
           icon: (0, r.jsx)(x, {
-            icon: i.iFz
+            icon: l.iFz
           }),
-          text: h.NW.string(h.t.QC8ymZ)
-        }), (0, r.jsx)(p, {
+          text: m.NW.string(m.t.QC8ymZ)
+        }), (0, r.jsx)(f, {
           icon: (0, r.jsx)(x, {
-            icon: i.vdY
+            icon: l.vdY
           }),
-          text: h.NW.string(h.t.mgGOT0)
-        }), (0, r.jsx)(p, {
-          icon: (0, r.jsx)(o.Z, {
-            className: g.badgeIconBackground,
-            foreground: g.badgeIconForeground,
+          text: m.NW.string(m.t.mgGOT0)
+        }), (0, r.jsx)(f, {
+          icon: (0, r.jsx)(a.Z, {
+            className: b.badgeIconBackground,
+            foreground: b.badgeIconForeground,
             width: 40,
             height: 40
           }),
-          text: h.NW.format(h.t.qLmNLC, {
-            articleURL: c.Z.getArticleURL(m.BhN.STAGE_CHANNEL_GUIDELINES)
+          text: m.NW.format(m.t.qLmNLC, {
+            articleURL: c.Z.getArticleURL(g.BhN.STAGE_CHANNEL_GUIDELINES)
           })
         })]
       })]
-    }), (0, r.jsxs)(i.mzw, {
-      children: [(0, r.jsx)(i.zxk, {
-        color: i.zxk.Colors.GREEN,
+    }), (0, r.jsxs)(l.mzw, {
+      children: [(0, r.jsx)(l.zxk, {
+        color: l.zxk.Colors.GREEN,
         onClick: d,
         submitting: s,
-        children: h.NW.string(h.t.s8mM8P)
-      }), (0, r.jsx)(i.zxk, {
-        color: i.zxk.Colors.PRIMARY,
-        className: g.cancelButton,
+        children: m.NW.string(m.t.s8mM8P)
+      }), (0, r.jsx)(l.zxk, {
+        color: l.zxk.Colors.PRIMARY,
+        className: b.cancelButton,
         onClick: u,
-        children: h.NW.string(h.t["ETE/oK"])
-      }), (0, r.jsx)(i.zxk, {
-        look: i.zxk.Looks.LINK,
-        color: i.zxk.Colors.LINK,
-        className: g.backButton,
-        onClick: _,
-        size: i.zxk.Sizes.MIN,
-        children: h.NW.string(h.t["13/7kZ"])
+        children: m.NW.string(m.t["ETE/oK"])
+      }), (0, r.jsx)(l.zxk, {
+        look: l.zxk.Looks.LINK,
+        color: l.zxk.Colors.LINK,
+        className: b.backButton,
+        onClick: h,
+        size: l.zxk.Sizes.MIN,
+        children: m.NW.string(m.t["13/7kZ"])
       })]
     })]
   })

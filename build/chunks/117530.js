@@ -35,16 +35,16 @@ function E(e) {
   return null !== (t = h.get(e)) && void 0 !== t ? t : new Map
 }
 
-function v(e, t, n) {
+function b(e, t, n) {
   let r = E(e);
   r.set(t, n), h.set(e, r)
 }
 
-function b(e) {
+function v(e) {
   let {
     channelId: t
   } = e, n = [...g(t, d.d.ChannelMessage)];
-  n.shift(), v(t, d.d.ChannelMessage, n)
+  n.shift(), b(t, d.d.ChannelMessage, n)
 }
 let y = e => {
   let {
@@ -65,7 +65,7 @@ let y = e => {
   o().forEach(t, e => {
     let t = new c.n(e, n, r, a.length);
     t.upload(), a.push(t)
-  }), v(n, i, a)
+  }), b(n, i, a)
 };
 
 function O(e) {
@@ -77,7 +77,7 @@ function O(e) {
     uri: n,
     filename: n
   }, e));
-  o > -1 && (i.splice(o, 1)[0].cancel(), v(t, r, i))
+  o > -1 && (i.splice(o, 1)[0].cancel(), b(t, r, i))
 }
 
 function I(e) {
@@ -89,7 +89,7 @@ function I(e) {
   n.forEach(e => {
     let t = i.findIndex(t => e === t.id);
     t > -1 && i.splice(t, 1)[0].cancel()
-  }), v(t, r, i)
+  }), b(t, r, i)
 }
 
 function S(e) {
@@ -102,7 +102,7 @@ function S(e) {
     thumbnail: a,
     draftType: s
   } = e, l = [...g(t, s)].map(e => (e.id === n && (void 0 !== r && (e.filename = r), void 0 !== o && (e.spoiler = o), void 0 !== i && (e.description = i), void 0 !== a && (e.isThumbnail = a)), e));
-  v(t, s, l)
+  b(t, s, l)
 }
 
 function T(e) {
@@ -112,7 +112,7 @@ function T(e) {
     file: r,
     draftType: i
   } = e, o = [...g(t, i)].filter(e => e.id !== n), a = new c.n(r, t);
-  a.upload(), o.push(a), v(t, i, o)
+  a.upload(), o.push(a), b(t, i, o)
 }
 
 function N(e) {
@@ -121,7 +121,7 @@ function N(e) {
     uploads: n,
     draftType: r
   } = e;
-  v(t, r, n)
+  b(t, r, n)
 }
 
 function A(e) {
@@ -129,14 +129,14 @@ function A(e) {
     channelId: t,
     draftType: n
   } = e;
-  v(t, n, [])
+  b(t, n, [])
 }
 
 function C(e) {
   let {
     baseChannelId: t
   } = e;
-  v(t, d.d.FirstThreadMessage, [])
+  b(t, d.d.FirstThreadMessage, [])
 }
 class R extends(r = a.ZP.Store) {
   getFirstUpload(e, t) {
@@ -163,7 +163,7 @@ class R extends(r = a.ZP.Store) {
 }
 p(R, "displayName", "UploadAttachmentStore");
 let P = new R(s.Z, {
-  UPLOAD_ATTACHMENT_POP_FILE: b,
+  UPLOAD_ATTACHMENT_POP_FILE: v,
   UPLOAD_ATTACHMENT_ADD_FILES: y,
   UPLOAD_ATTACHMENT_UPDATE_FILE: S,
   UPLOAD_ATTACHMENT_REMOVE_FILE: O,

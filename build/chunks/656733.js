@@ -67,8 +67,8 @@ let _ = {
   m = null,
   g = "",
   E = "",
-  v = [],
   b = [],
+  v = [],
   y = h,
   O = [],
   I = [];
@@ -78,7 +78,7 @@ function S(e) {
 }
 
 function T(e) {
-  "" === (g = e.query) && (E = "", v = [], O = [])
+  "" === (g = e.query) && (E = "", b = [], O = [])
 }
 
 function N(e) {
@@ -107,7 +107,7 @@ function A(e) {
 
 function C(e) {
   if (null != e.query && g === E) return !1;
-  null != e.query && (E = e.query), v = e.items.map(e => {
+  null != e.query && (E = e.query), b = e.items.map(e => {
     let {
       width: t,
       height: n,
@@ -133,12 +133,12 @@ function R(e) {
     query: t
   } = e;
   if (null == t) return !1;
-  E = t, v = []
+  E = t, b = []
 }
 
 function P(e) {
   let t = e.trendingCategories;
-  b = [...null != e.trendingGIFPreview ? [{
+  v = [...null != e.trendingGIFPreview ? [{
     type: s.wI2.TRENDING_GIFS,
     name: l.NW.string(l.t.H6zNFx),
     src: A(e.trendingGIFPreview.src),
@@ -174,10 +174,10 @@ class L extends(r = i.ZP.Store) {
     return E
   }
   getResultItems() {
-    return v
+    return b
   }
   getTrendingCategories() {
-    return b
+    return v
   }
   getSelectedFormat() {
     return y

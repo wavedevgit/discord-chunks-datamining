@@ -29,7 +29,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function v(e) {
   return e
 }
 
-function b(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,7 +54,7 @@ function b(e, t) {
 }
 
 function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -90,17 +90,17 @@ function S(e) {
       join: g
     } = e,
     E = (0, u.bp)(),
-    v = o ? () => d() : () => a(!e.enabled, E),
+    b = o ? () => d() : () => a(!e.enabled, E),
     {
-      Component: b,
+      Component: v,
       play: y,
       events: O
     } = (0, c.o)(g || n ? "disable" : "enable");
   i.useEffect(() => () => y(), [n, y]);
-  let I = g ? s.O : E === m.IlC.POPOUT ? n ? s.O : l.A : b;
+  let I = g ? s.O : E === m.IlC.POPOUT ? n ? s.O : l.A : v;
   return (0, r.jsx)(r.Fragment, {
     children: _({
-      onClick: v,
+      onClick: b,
       isActive: n,
       disabled: !n && (!f || h),
       iconComponent: I,
@@ -126,7 +126,7 @@ function T(e) {
     channelLimitReached: p,
     channelLimit: m,
     centerButton: E = !1,
-    onPopoutClick: b
+    onPopoutClick: v
   } = e, I = O(e, ["enabled", "join", "channel", "onChange", "onCameraUnavailable", "cameraUnavailable", "hasPermission", "className", "channelLimitReached", "channelLimit", "centerButton", "onPopoutClick"]);
   let T = E ? h.d : h.Z,
     {
@@ -162,7 +162,7 @@ function T(e) {
         onMouseLeave: o,
         isActive: s
       } = e, l = O(e, ["unavailable", "onMouseEnter", "onMouseLeave", "isActive"]);
-      return (0, r.jsx)(T, y(v({}, l, I), {
+      return (0, r.jsx)(T, y(b({}, l, I), {
         color: w(s),
         caretColor: P(),
         isActive: s,
@@ -177,7 +177,7 @@ function T(e) {
         className: a()(u, {
           [g.fauxDisabled]: t
         }),
-        onPopoutClick: b,
+        onPopoutClick: v,
         fullRegionButton: n
       }))
     }

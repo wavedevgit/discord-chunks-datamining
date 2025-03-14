@@ -1,11 +1,11 @@
 /** Chunk was on 27978 **/
 n.d(t, {
   FW: () => p,
-  Pk: () => s,
-  Rq: () => g,
+  Pk: () => l,
+  Rq: () => m,
   W_: () => a,
-  dK: () => l,
-  qd: () => f
+  dK: () => s,
+  qd: () => g
 }), n(518263), n(970173), n(520712), n(268111), n(941497), n(32026), n(480839), n(744285), n(492257), n(873817), n(610885), n(126298), n(866573), n(642549), n(787622), n(47120), n(757143), n(301563), n(863942), n(411104);
 var r = n(512722),
   i = n.n(r),
@@ -19,10 +19,10 @@ function a() {
     hash: "SHA-256"
   }, !0, ["decrypt"])
 }
-async function l(e) {
+async function s(e) {
   return i()(null != e.publicKey, "public key cannot be null"), btoa(String.fromCharCode(...new Uint8Array(await window.crypto.subtle.exportKey("spki", e.publicKey))))
 }
-async function s(e) {
+async function l(e) {
   return i()(null != e.publicKey, "public key cannot be null"), d(await window.crypto.subtle.exportKey("spki", e.publicKey))
 }
 
@@ -50,17 +50,17 @@ async function p(e, t) {
     r = await h(e, u(t));
   return n.decode(r)
 }
-async function f(e, t) {
+async function g(e, t) {
   return c(await h(e, u(t)))
 }
-async function g(e, t) {
+async function m(e, t) {
   let n = (t = await p(e, t)).match(/^(\d+):(\d{1,4}):([a-zA-Z0-9_]+):(.*)$/);
   if (null == n) throw Error("Invalid encoded user record.");
-  let [, r, i, a, l] = n;
+  let [, r, i, a, s] = n;
   return new o.Z({
     id: r,
     discriminator: i,
     avatar: "0" === a ? null : a,
-    username: l
+    username: s
   })
 }

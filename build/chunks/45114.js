@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   CZ: () => m,
-  FT: () => v,
+  FT: () => b,
   In: () => d,
   Ju: () => E,
   U6: () => _,
@@ -106,7 +106,7 @@ function E(e, t, n) {
   })
 }
 
-function v(e, t) {
+function b(e, t) {
   var n;
   null != (null === (n = l.default.getCurrentUser()) || void 0 === n ? void 0 : n.id) && r.Z.dispatch({
     type: "USER_NON_CHANNEL_ACK",

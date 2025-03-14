@@ -21,7 +21,7 @@ var i = n(442837),
   g = n(475413),
   E = n(388032);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -47,7 +47,7 @@ function y(e) {
   let {
     user: t,
     guildId: n,
-    viewProfileItem: v,
+    viewProfileItem: b,
     onCloseProfile: y
   } = e, {
     trackUserProfileAction: O
@@ -110,7 +110,7 @@ function y(e) {
       analyticsLocations: I
     })
   }), L = [
-    [v], T ? [C] : [],
+    [b], T ? [C] : [],
     [P, R, w],
     [(0, c.Z)({
       application: A,
@@ -136,7 +136,7 @@ function y(e) {
         }, t))
       })
     },
-    children: e => (0, r.jsx)(g.oY, b({
+    children: e => (0, r.jsx)(g.oY, v({
       action: "PRESS_OPTIONS",
       icon: o.xhG,
       tooltipText: E.NW.string(E.t.UKOtz8)

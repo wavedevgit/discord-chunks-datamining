@@ -30,15 +30,15 @@ let c = null,
   g = /\ud83c[\udffb-\udfff](?=\ud83c[\udffb-\udfff])|(?:[^\ud800-\udfff][\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]?|[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff]|[\ud800-\udfff])[\ufe0e\ufe0f]?(?:[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|\ud83c[\udffb-\udfff])?(?:\u200d(?:[^\ud800-\udfff]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff])[\ufe0e\ufe0f]?(?:[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|\ud83c[\udffb-\udfff])?)*/g,
   {
     emojis: E,
-    emojisByCategory: v,
-    nameToEmoji: b,
+    emojisByCategory: b,
+    nameToEmoji: v,
     surrogateToEmoji: y,
     numDiversitySprites: O,
     numNonDiversitySprites: I
   } = n(382342);
 
 function S(e) {
-  let t = b[e];
+  let t = v[e];
   return null == t ? null : E[t]
 }
 
@@ -136,7 +136,7 @@ function P() {
 }
 
 function w() {
-  return Object.keys(v)
+  return Object.keys(b)
 }
 
 function D(e) {
@@ -148,7 +148,7 @@ let L = new Map;
 function x(e) {
   let t = L.get(e);
   if (null == t) {
-    let n = v[e];
+    let n = b[e];
     t = a.ZP.filterUnsupportedEmojis(E.slice(n[0], n[1])).map(A), L.set(e, t)
   }
   return t
@@ -178,7 +178,7 @@ let U = String.fromCodePoint(917631),
   G = String.fromCodePoint(127988),
   B = RegExp("^[\\u{E0061}-\\u{E007A}]$", "u");
 
-function V(e, t) {
+function F(e, t) {
   var n;
   if (!0 !== t && !M(e)) return [{
     type: "text",
@@ -212,13 +212,13 @@ function V(e, t) {
   return null != r && "" !== r && i.push(j(r)), i
 }
 
-function F(e) {
-  return V(e).map(e => "text" === e.type ? e.text : e.emojiName).join("")
+function V(e) {
+  return F(e).map(e => "text" === e.type ? e.text : e.emojiName).join("")
 }
 
 function Z(e) {
   if (!M(e)) return null;
-  let t = V(e, !0).map(e => "text" === e.type ? e.text : e.emojiName).join("");
+  let t = F(e, !0).map(e => "text" === e.type ? e.text : e.emojiName).join("");
   return t === e ? null : t
 }
 
@@ -248,8 +248,8 @@ let K = {
   contentHasUnicodeOrEmoji: M,
   translateInlineEmojiToSurrogates: k,
   maybeTranslateSurrogatesToInlineEmoji: Z,
-  findInlineEmojisFromSurrogates: V,
-  translateSurrogatesToInlineEmoji: F,
+  findInlineEmojisFromSurrogates: F,
+  translateSurrogatesToInlineEmoji: V,
   convertNameToSurrogate: H,
   convertSurrogateToName: W,
   convertShortcutToName: function e(e) {

@@ -19,8 +19,8 @@ var i = n(348327),
   m = n(271383),
   g = n(430824),
   E = n(412788),
-  v = n(9156),
-  b = n(594174);
+  b = n(9156),
+  v = n(594174);
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -171,7 +171,7 @@ function x(e) {
     guildId: t,
     joinedAt: n,
     user: r
-  } = e, i = b.default.getCurrentUser(), o = g.Z.getGuild(t);
+  } = e, i = v.default.getCurrentUser(), o = g.Z.getGuild(t);
   if ((null == i ? void 0 : i.id) !== r.id || null == o) return !1;
   let a = "string" == typeof n ? new Date(n) : n;
   return a !== o.joinedAt && null != a && C()
@@ -204,7 +204,7 @@ function U(e, t) {
 }
 let G = (0, f.oH)((e, t) => e.sortedGuildNodes().map(e => e.id)),
   B = (0, f.oH)((e, t) => e.getRoots().map(N)),
-  V = (0, f.oH)((e, t) => {
+  F = (0, f.oH)((e, t) => {
     let n = [];
 
     function r(e) {
@@ -217,10 +217,10 @@ let G = (0, f.oH)((e, t) => e.sortedGuildNodes().map(e => e.id)),
     }
     return r(e.root), n
   }),
-  F = (0, f.oH)((e, t) => e.root.children.map(N));
+  V = (0, f.oH)((e, t) => e.root.children.map(N));
 class Z extends E.Z {
   initialize() {
-    this.waitFor(g.Z, v.ZP, d.Z, h.Z, u.Z, p.Z, l.Z)
+    this.waitFor(g.Z, b.ZP, d.Z, h.Z, u.Z, p.Z, l.Z)
   }
   getGuildsTree() {
     return S
@@ -235,10 +235,10 @@ class Z extends E.Z {
     return G(S, S.version)
   }
   getFlattenedGuildFolderList() {
-    return V(S, S.version)
+    return F(S, S.version)
   }
   getCompatibleGuildFolders() {
-    return F(S, S.version)
+    return V(S, S.version)
   }
   getFastListGuildFolders() {
     return S.getRoots()

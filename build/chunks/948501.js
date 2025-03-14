@@ -42,10 +42,10 @@ let r = n(889658),
       return !0
     }
     let E = !!i && !n.includePrerelease && !!i.semver.prerelease.length && i.semver,
-      v = !!r && !n.includePrerelease && !!r.semver.prerelease.length && r.semver;
+      b = !!r && !n.includePrerelease && !!r.semver.prerelease.length && r.semver;
     for (let e of (E && 1 === E.prerelease.length && "<" === i.operator && 0 === E.prerelease[0] && (E = !1), t)) {
       if (m = m || ">" === e.operator || ">=" === e.operator, h = h || "<" === e.operator || "<=" === e.operator, r) {
-        if (v && e.semver.prerelease && e.semver.prerelease.length && e.semver.major === v.major && e.semver.minor === v.minor && e.semver.patch === v.patch && (v = !1), ">" === e.operator || ">=" === e.operator) {
+        if (b && e.semver.prerelease && e.semver.prerelease.length && e.semver.major === b.major && e.semver.minor === b.minor && e.semver.patch === b.patch && (b = !1), ">" === e.operator || ">=" === e.operator) {
           if ((d = f(r, e, n)) === e && d !== r) return !1
         } else if (">=" === r.operator && !a(r.semver, String(e), n)) return !1
       }
@@ -56,7 +56,7 @@ let r = n(889658),
       }
       if (!e.operator && (i || r) && 0 !== l) return !1
     }
-    return (!r || !h || !!i || 0 === l) && (!i || !m || !!r || 0 === l) && !v && !E && !0
+    return (!r || !h || !!i || 0 === l) && (!i || !m || !!r || 0 === l) && !b && !E && !0
   },
   f = (e, t, n) => {
     if (!e) return t;

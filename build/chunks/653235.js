@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(656733),
   g = n(251625),
   E = n(985375),
-  v = n(132748),
-  b = n(353903),
+  b = n(132748),
+  v = n(353903),
   y = n(215016),
   O = n(981631),
   I = n(388032),
@@ -64,7 +64,7 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = (e, t) => (0, r.jsx)(b.G0, {
+let R = (e, t) => (0, r.jsx)(v.G0, {
   columns: e
 }, t);
 
@@ -112,7 +112,7 @@ class w extends i.PureComponent {
       getCoordsMap: this.getCoordsMap,
       onFocus: this.handleFocus,
       onSelect: this.handleSelect,
-      children: (0, r.jsx)(v.Z, {
+      children: (0, r.jsx)(b.Z, {
         desiredItemWidth: 200,
         maxColumns: 6,
         children: this.renderContent
@@ -180,7 +180,7 @@ class w extends i.PureComponent {
         className: i,
         trendingCategories: o
       } = this.props;
-      return 0 === o.length ? (0, r.jsx)(b.u$, {
+      return 0 === o.length ? (0, r.jsx)(v.u$, {
         columns: e,
         width: t,
         renderColumn: R

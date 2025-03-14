@@ -10,11 +10,11 @@ n.d(t, {
   d$: () => g,
   eE: () => I,
   ic: () => m,
-  pX: () => b,
+  pX: () => v,
   sq: () => _,
   uu: () => N,
   wk: () => T,
-  zd: () => v
+  zd: () => b
 });
 var r = n(367907),
   i = n(427679),
@@ -125,7 +125,7 @@ function E(e, t) {
     isEligibleForFeedback: !1
   })
 }
-async function v(e, t) {
+async function b(e, t) {
   try {
     await (0, l.ox)({
       name: s.b.FIRST_DM,
@@ -136,7 +136,7 @@ async function v(e, t) {
   } catch (e) {}
 }
 
-function b(e, t, n, r) {
+function v(e, t, n, r) {
   A(s.b.USER, {
     reported_user_id: e.id
   }), (0, c.m)({

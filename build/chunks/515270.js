@@ -37,16 +37,16 @@ function E(e) {
   } = e, n = null;
   return e.onChange = () => {
     d.bN.richValue(e) !== n && (l.T.withMergedEntry(e, () => {
-      d.bN.withoutNormalizing(e, () => v(e))
+      d.bN.withoutNormalizing(e, () => b(e))
     }), n = d.bN.richValue(e)), t()
   }, e
 }
 
-function v(e) {
+function b(e) {
   let t = y(e);
   I(e, t)
 }
-let b = /(?:<span class="([^"]*)">)|(?:<\/span>)/g;
+let v = /(?:<span class="([^"]*)">)|(?:<\/span>)/g;
 
 function y(e) {
   let t = [],
@@ -126,7 +126,7 @@ function T(e) {
               a = [],
               s = 0,
               l = 0;
-            for (; null != (i = b.exec(o));) {
+            for (; null != (i = v.exec(o));) {
               let t = i.index + i[0].length,
                 n = i.index - l;
               i.index > l && (e.length > 0 && a.push({

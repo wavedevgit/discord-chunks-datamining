@@ -65,7 +65,11 @@ function f(e) {
     traits: u(e.id, null !== (r = e.traits) && void 0 !== r ? r : []),
     gameApplicationIds: null !== (i = e.game_application_ids) && void 0 !== i ? i : [],
     gameActivity: d(e.game_activity),
-    features: null !== (o = e.features) && void 0 !== o ? o : []
+    features: null !== (o = e.features) && void 0 !== o ? o : [],
+    tag: e.tag,
+    badge: e.badge,
+    badgeColorPrimary: e.badge_color_primary,
+    badgeColorSecondary: e.badge_color_secondary
   }
 }
 
@@ -80,7 +84,7 @@ function _(e) {
       emoji_name: null === (r = e.emoji) || void 0 === r ? void 0 : r.name,
       emoji_animated: null === (i = e.emoji) || void 0 === i ? void 0 : i.animated
     }
-  }).filter(a.lm)), null != e.gameApplicationIds && (t.game_application_ids = e.gameApplicationIds), t
+  }).filter(a.lm)), null != e.gameApplicationIds && (t.game_application_ids = e.gameApplicationIds), void 0 !== e.tag && (t.tag = e.tag), void 0 !== e.badge && (t.badge = e.badge), void 0 !== e.badgeColorPrimary && (t.badge_color_primary = e.badgeColorPrimary), void 0 !== e.badgeColorSecondary && (t.badge_color_secondary = e.badgeColorSecondary), t
 }
 
 function p(e) {
@@ -109,6 +113,10 @@ function h(e) {
     gameApplicationIds: [],
     gameActivity: {},
     features: null !== (a = l.features) && void 0 !== a ? a : [],
-    brandColorPrimary: null
+    brandColorPrimary: null,
+    tag: null,
+    badge: null,
+    badgeColorPrimary: null,
+    badgeColorSecondary: null
   }
 }

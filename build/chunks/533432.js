@@ -23,8 +23,8 @@ let m = i.forwardRef(function(e, t) {
       isFullRow: m,
       onKeyDown: g,
       onFocus: E,
-      autoFocus: v,
-      className: b,
+      autoFocus: b,
+      className: v,
       defaultSearchPlaceholder: y
     } = e, O = i.useRef(null), I = (0, d.Iu)(e => e.searchQuery), [S, T] = u.kJ.useStore(e => [e.inspectedExpressionPosition, e.searchPlaceholder], s.X), N = i.useCallback(e => {
       var t;
@@ -47,7 +47,7 @@ let m = i.forwardRef(function(e, t) {
         return null === (e = O.current) || void 0 === e ? void 0 : e.focus()
       }
     })), (0, r.jsx)(c.E1j, {
-      autoFocus: v,
+      autoFocus: b,
       query: I,
       ref: O,
       size: c.E1j.Sizes.MEDIUM,
@@ -56,7 +56,7 @@ let m = i.forwardRef(function(e, t) {
       onKeyDown: C,
       onFocus: E,
       onChange: N,
-      className: a()(b, {
+      className: a()(v, {
         [h.searchBarFullRow]: m
       }),
       inputProps: {

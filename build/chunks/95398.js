@@ -41,7 +41,7 @@ function E(e) {
   return e
 }
 
-function v(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,8 +52,8 @@ function v(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -401,7 +401,7 @@ class A extends i.PureComponent {
 let C = e => {
   let t = (0, f.m8)() && e.reason === _.wk.EXPLICIT_CONTENT,
     n = (0, d.Jm)();
-  return (0, r.jsx)(A, b(E({}, e), {
+  return (0, r.jsx)(A, v(E({}, e), {
     shouldAgeVerify: t,
     isVerifiedTeen: n
   }))

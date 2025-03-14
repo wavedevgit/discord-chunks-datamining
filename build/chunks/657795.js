@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(926491),
   g = n(419922),
   E = n(27733),
-  v = n(611480),
-  b = n(981631),
+  b = n(611480),
+  v = n(981631),
   y = n(474936),
   O = n(388032),
   I = n(335217);
@@ -35,12 +35,12 @@ function T(e) {
   (0, h.fP)();
   let {
     analyticsLocations: A
-  } = (0, u.ZP)(c.Z.EMPTY_STATE), C = (0, s.Wu)([m.Z], () => v.Wt.map(e => m.Z.getStickerById(e)));
+  } = (0, u.ZP)(c.Z.EMPTY_STATE), C = (0, s.Wu)([m.Z], () => b.Wt.map(e => m.Z.getStickerById(e)));
   i.useEffect(() => {
-    p.default.track(b.rMx.PREMIUM_UPSELL_VIEWED, {
+    p.default.track(v.rMx.PREMIUM_UPSELL_VIEWED, {
       type: y.cd.EMPTY_STICKER_PICKER_UPSELL,
       source: {
-        section: b.jXE.EMPTY_STICKER_PICKER_UPSELL
+        section: v.jXE.EMPTY_STICKER_PICKER_UPSELL
       },
       location_stack: A
     })
@@ -79,7 +79,7 @@ function T(e) {
         }, null == e ? void 0 : e.id))
       })]
     }), !w && (0, r.jsx)(E.Z, {
-      analyticsSection: b.jXE.EXPRESSION_PICKER,
+      analyticsSection: v.jXE.EXPRESSION_PICKER,
       buttonText: w ? D ? O.NW.string(O.t.hz78hI) : O.NW.string(O.t["Gd/XHB"]) : void 0
     })]
   })

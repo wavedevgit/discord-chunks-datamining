@@ -33,7 +33,7 @@ async function p(e, t) {
     case "application":
       n = l.ANM.APPLICATION_COMMAND_INDEX_APPLICATION(e.applicationId)
   }
-  let g = async t => p >= u ? (m.push(_), v({
+  let g = async t => p >= u ? (m.push(_), b({
     error: !0
   }), i.Z.dispatch({
     type: "APPLICATION_COMMAND_INDEX_FETCH_FAILURE",
@@ -44,7 +44,7 @@ async function p(e, t) {
     signal: t.signal,
     onRequestCreated: () => p++,
     rejectWithError: !1
-  }).then(t => 202 === t.status ? (m.push(202), g(c)) : (v({
+  }).then(t => 202 === t.status ? (m.push(202), g(c)) : (b({
     error: !1
   }), i.Z.dispatch({
     type: "APPLICATION_COMMAND_INDEX_FETCH_SUCCESS",
@@ -53,18 +53,18 @@ async function p(e, t) {
   })), n => {
     var r;
     if (t.signal.aborted) {
-      m.push(f), v({
+      m.push(f), b({
         error: !0
       });
       return
     }
-    return 429 === n.status ? (m.push(429), g(n.body.retry_after * a.Z.Millis.SECOND)) : (m.push(null !== (r = n.status) && void 0 !== r ? r : d), v({
+    return 429 === n.status ? (m.push(429), g(n.body.retry_after * a.Z.Millis.SECOND)) : (m.push(null !== (r = n.status) && void 0 !== r ? r : d), b({
       error: !0
     }), i.Z.dispatch({
       type: "APPLICATION_COMMAND_INDEX_FETCH_FAILURE",
       target: e
     }))
-  }), v = r => {
+  }), b = r => {
     let {
       error: i
     } = r, a = performance.now() - s;

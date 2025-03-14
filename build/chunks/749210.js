@@ -20,8 +20,8 @@ var r = n(990547),
   m = n(430824),
   g = n(944486),
   E = n(914010),
-  v = n(594174),
-  b = n(626135),
+  b = n(594174),
+  v = n(626135),
   y = n(700785),
   O = n(74538),
   I = n(573261),
@@ -127,13 +127,13 @@ let U = {
         loadId: p,
         lurkLocation: h
       } = c,
-      b = null !== (t = c.lurker) && void 0 !== t && t,
-      y = v.default.getCurrentUser();
+      v = null !== (t = c.lurker) && void 0 !== t && t,
+      y = b.default.getCurrentUser();
     if (null !== (r = null == y ? void 0 : y.hasFlag(T.xW$.QUARANTINED)) && void 0 !== r && r) return (0, u.default)(), new Promise((e, t) => t(Error()));
     a.Z.wait(() => a.Z.dispatch({
       type: "GUILD_JOIN",
       guildId: e,
-      lurker: b,
+      lurker: v,
       source: d,
       loadId: p
     }));
@@ -143,10 +143,10 @@ let U = {
         i = await o.tn.put({
           url: T.ANM.GUILD_JOIN(e),
           query: {
-            lurker: b,
-            session_id: b ? _.default.getSessionId() : null,
+            lurker: v,
+            session_id: v ? _.default.getSessionId() : null,
             recommendation_load_id: p,
-            location: b && null != h ? h : null
+            location: v && null != h ? h : null
           },
           context: {
             source: d
@@ -168,7 +168,7 @@ let U = {
           type: "ONLINE_GUILD_MEMBER_COUNT_UPDATE",
           guildId: i.body.id,
           count: i.body.approximate_presence_count
-        }), !b) {
+        }), !v) {
         let {
           default: t
         } = await Promise.resolve().then(n.bind(n, 17181));
@@ -180,10 +180,10 @@ let U = {
       return i
     } catch (t) {
       if ((null === (i = t.body) || void 0 === i ? void 0 : i.code) === T.evJ.TOO_MANY_USER_GUILDS) {
-        let e = v.default.getCurrentUser();
+        let e = b.default.getCurrentUser();
         O.ZP.canUseIncreasedGuildCap(e) || (null == e ? void 0 : e.isStaff()) ? L(T.tHP) : L(T.DZw)
       }
-      throw (null === (s = t.body) || void 0 === s ? void 0 : s.code) === T.evJ.GUILD_AT_CAPACITY && M(), b && (null === (l = t.body) || void 0 === l ? void 0 : l.code) === T.evJ.UNKNOWN_GUILD && x(e), t
+      throw (null === (s = t.body) || void 0 === s ? void 0 : s.code) === T.evJ.GUILD_AT_CAPACITY && M(), v && (null === (l = t.body) || void 0 === l ? void 0 : l.code) === T.evJ.UNKNOWN_GUILD && x(e), t
     }
   },
   waitForGuild: k,
@@ -428,7 +428,7 @@ let U = {
     })
   },
   createGuildFolderLocal(e, t) {
-    b.default.track(T.rMx.GUILD_FOLDER_CREATED), a.Z.dispatch({
+    v.default.track(T.rMx.GUILD_FOLDER_CREATED), a.Z.dispatch({
       type: "GUILD_FOLDER_CREATE_LOCAL",
       sourceIds: e,
       name: t
@@ -450,7 +450,7 @@ let U = {
   },
   toggleGuildFolderExpand(e) {
     let t = p.Z.isFolderExpanded(e);
-    b.default.track(T.rMx.GUILD_FOLDER_CLICKED, {
+    v.default.track(T.rMx.GUILD_FOLDER_CLICKED, {
       source: "sidebar",
       action: t ? "collapsed" : "expanded"
     }), a.Z.dispatch({

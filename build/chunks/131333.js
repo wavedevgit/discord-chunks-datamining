@@ -54,8 +54,8 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = [],
-  b = -5,
+let b = [],
+  v = -5,
   y = -40,
   O = -40,
   I = -100,
@@ -135,7 +135,7 @@ let k = i.forwardRef(function(e, t) {
         velocity: {
           type: "static-random",
           minValue: {
-            x: b,
+            x: v,
             y: O
           },
           maxValue: {
@@ -156,7 +156,7 @@ let k = i.forwardRef(function(e, t) {
     }
   }), [u]), (0, r.jsx)(o.Ji, {
     ref: s,
-    colors: v,
+    colors: b,
     sprites: n,
     spriteWidth: C,
     spriteHeight: C
@@ -166,15 +166,15 @@ let k = i.forwardRef(function(e, t) {
 function j(e) {
   let {
     children: t
-  } = e, n = i.useRef({}), [o, l] = i.useState(null), c = M(o), _ = i.useRef(null), [h, m] = i.useState(!1), g = i.useRef("jack_o_lantern"), E = (0, s.bp)(), v = i.useCallback(e => {
+  } = e, n = i.useRef({}), [o, l] = i.useState(null), c = M(o), _ = i.useRef(null), [h, m] = i.useState(!1), g = i.useRef("jack_o_lantern"), E = (0, s.bp)(), b = i.useCallback(e => {
     if (!h) {
       let t = D(e);
       null != t && (g.current = t, m(!0), l(null))
     }
-  }, [h]), b = i.useMemo(() => ({
-    triggerAnimation: v,
+  }, [h]), v = i.useMemo(() => ({
+    triggerAnimation: b,
     untriggerAnimation: () => {}
-  }), [v]), y = i.useCallback(e => {
+  }), [b]), y = i.useCallback(e => {
     l(e)
   }, []), O = i.useCallback(e => {
     "exit" === e && m(!1)
@@ -191,7 +191,7 @@ function j(e) {
       null == i || i.fireConfetti(t, r)
     }
   }, [o]), E !== f.IlC.APP) ? t : (0, r.jsxs)(d.Rm.Provider, {
-    value: b,
+    value: v,
     children: [t, Object.keys(w).map(e => {
       let t = w[e];
       return (0, r.jsx)(k, {

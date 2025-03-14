@@ -49,6 +49,6 @@ function _(e) {
     m = (null == _ ? void 0 : _.scheduled_start_time) != null ? (0, s.lh)(p, h, new Date(null == _ ? void 0 : _.scheduled_start_time)) : null,
     g = null != m && l.$I.has(m) ? null : null != n ? n : (0, s.DK)(_),
     E = u(_.id),
-    v = u(_.id, g);
-  null == g ? (c(t, null, r, null != E ? l.gv.UNINTERESTED : l.gv.INTERESTED), null == f || f()) : null != v ? (c(t, g, r, null != E ? l.gv.INTERESTED : l.gv.UNINTERESTED), null == f || f()) : d(_, g)
+    b = u(_.id, g);
+  null == g ? (c(t, null, r, null != E ? l.gv.UNINTERESTED : l.gv.INTERESTED), null == f || f()) : null != b ? (c(t, g, r, null != E ? l.gv.INTERESTED : l.gv.UNINTERESTED), null == f || f()) : d(_, g)
 }

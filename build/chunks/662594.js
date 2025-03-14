@@ -21,8 +21,8 @@ var r, i = n(392711),
   m = n(650774),
   g = n(271383),
   E = n(430824),
-  v = n(158776),
-  b = n(885110),
+  b = n(158776),
+  v = n(885110),
   y = n(594174),
   O = n(981631),
   I = n(388032);
@@ -99,9 +99,9 @@ function w(e, t, n, r) {
 
 function D(e, t, n) {
   let r = n === p.default.getId(),
-    i = v.Z.isMobileOnline(n),
-    o = r ? b.Z.getStatus() : v.Z.getStatus(n, e),
-    a = r ? b.Z.getActivities() : v.Z.getActivities(n, e),
+    i = b.Z.isMobileOnline(n),
+    o = r ? v.Z.getStatus() : b.Z.getStatus(n, e),
+    a = r ? v.Z.getActivities() : b.Z.getActivities(n, e),
     s = _.Z.getStreamForUser(n, e),
     l = y.default.getUser(n);
   return null == l ? null : A(T({
@@ -271,14 +271,14 @@ function B(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     guild: t
   } = e;
   j.delete(t.id)
 }
 
-function F(e) {
+function V(e) {
   let {
     guildId: t
   } = e;
@@ -312,7 +312,7 @@ function K() {
 }
 class z extends(r = c.ZP.Store) {
   initialize() {
-    this.waitFor(y.default, E.Z, h.Z, g.ZP, v.Z, b.Z, p.default, m.Z, _.Z, d.Z), this.syncWith([b.Z], Y), this.syncWith([_.Z], W)
+    this.waitFor(y.default, E.Z, h.Z, g.ZP, b.Z, v.Z, p.default, m.Z, _.Z, d.Z), this.syncWith([v.Z], Y), this.syncWith([_.Z], W)
   }
   getProps(e, t) {
     let n = j.get(e, L(t));
@@ -333,8 +333,8 @@ let q = new z(u.Z, {
   OVERLAY_INITIALIZE: G,
   GUILD_MEMBER_LIST_UPDATE: U,
   GUILD_UPDATE: B,
-  GUILD_DELETE: V,
-  GUILD_ROLE_UPDATE: F,
+  GUILD_DELETE: F,
+  GUILD_ROLE_UPDATE: V,
   GUILD_MEMBER_UPDATE: Z,
   CHANNEL_UPDATES: K
 })

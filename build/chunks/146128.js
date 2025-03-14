@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  BV: () => v,
+  BV: () => b,
   Rm: () => g,
   aO: () => y
 }), n(47120);
@@ -58,7 +58,7 @@ function E(e) {
   })
 }
 
-function v(e) {
+function b(e) {
   let {
     children: t
   } = e, n = d.Z.useIsEligible(), o = i.useCallback((e, t) => {
@@ -78,7 +78,7 @@ function v(e) {
   }), u.Z.emojiAnimationType) : t
 }
 
-function b(e) {
+function v(e) {
   let {
     emojiRef: t,
     channelId: n,
@@ -105,7 +105,7 @@ function y(e) {
     disable: l,
     emojiRef: c
   } = e, u = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), f = d.Z.useIsEligible(), _ = (0, a.bp)();
-  return l || _ === h.IlC.OVERLAY || !f || null == n || null == t || u || null == c || !m(i) ? null : (0, r.jsx)(b, {
+  return l || _ === h.IlC.OVERLAY || !f || null == n || null == t || u || null == c || !m(i) ? null : (0, r.jsx)(v, {
     emojiRef: c,
     channelId: t,
     messageId: n,

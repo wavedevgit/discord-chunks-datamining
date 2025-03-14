@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => V
+  Z: () => F
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(430824),
   g = n(785717),
   E = n(221292),
-  v = n(687158),
-  b = n(510659),
+  b = n(687158),
+  v = n(510659),
   y = n(113557),
   O = n(867176),
   I = n(451834),
@@ -77,14 +77,14 @@ function B(e, t) {
   }), e
 }
 
-function V(e) {
+function F(e) {
   let {
     user: t,
     currentUser: n,
     guildId: j,
     channelId: G,
-    messageId: V,
-    roleId: F,
+    messageId: F,
+    roleId: V,
     closePopout: Z,
     setPopoutRef: H,
     disableUserProfileLink: W = __OVERLAY__,
@@ -97,16 +97,16 @@ function V(e) {
     userId: t.id,
     guildId: j,
     channelId: G,
-    messageId: V,
-    roleId: F
+    messageId: F,
+    roleId: V
   }), Q = (0, a.e7)([m.Z], () => null != j ? m.Z.getGuild(j) : null), X = (0, a.e7)([h.ZP], () => null != j ? h.ZP.getMember(j, t.id) : null), J = i.useMemo(() => null != j ? {
     [j]: [t.id]
   } : {}, [j, t.id]);
   (0, c.$)(J);
   let $ = i.useRef(null),
-    ee = (0, v.ZP)(t.id, j),
+    ee = (0, b.ZP)(t.id, j),
     et = (0, l.Z)($),
-    en = (0, b.$m)(),
+    en = (0, v.$m)(),
     er = (0, s.q_F)({
       opacity: +(null != en.interactionType),
       config: {
@@ -143,7 +143,7 @@ function V(e) {
     children: (0, r.jsx)(g.Mt, {
       value: q,
       shouldTrackViewOnMount: null == X || null != X.fullProfileLoadedTimestamp,
-      children: (0, r.jsx)(b.NJ, {
+      children: (0, r.jsx)(v.NJ, {
         value: en,
         children: (0, r.jsxs)(s.VqE, {
           ref: $,

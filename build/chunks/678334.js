@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(669079),
   g = n(74538),
   E = n(987209),
-  v = n(563132),
-  b = n(632580),
+  b = n(563132),
+  v = n(632580),
   y = n(919778),
   O = n(612853),
   I = n(981631),
@@ -47,9 +47,9 @@ function T(e) {
     metadata: U,
     backButtonEligible: G,
     disablePurchase: B,
-    isTrial: V = !1
+    isTrial: F = !1
   } = e, {
-    selectedPlan: F,
+    selectedPlan: V,
     priceOptions: Z,
     setHasAcceptedTerms: H,
     setPurchaseError: W,
@@ -63,7 +63,7 @@ function T(e) {
     contextMetadata: $,
     invoicePreview: ee,
     inReverseTrial: et
-  } = (0, v.JL)(), {
+  } = (0, b.JL)(), {
     isGift: en,
     selectedGiftStyle: er,
     customGiftMessage: ei,
@@ -71,21 +71,21 @@ function T(e) {
     soundEffect: ea,
     giftRecipient: es,
     selectedGiftingPromotionReward: el
-  } = (0, E.wD)(), ec = (0, u.a5)(F), eu = (0, m.MY)(es), ed = {};
+  } = (0, E.wD)(), ec = (0, u.a5)(V), eu = (0, m.MY)(es), ed = {};
   ed.gift_style = er, ed.reward_sku_ids = ec && (null == el ? void 0 : el.skuId) != null ? [null == el ? void 0 : el.skuId] : [], eu === m.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && (a()(null != es, "Gift recipient must be set at purchase review step for these gift options."), ed.recipient_id = es.id, ed.custom_message = ei, ed.emoji_id = null == eo ? void 0 : eo.id, ed.emoji_name = (null == eo ? void 0 : eo.id) == null ? null == eo ? void 0 : eo.surrogates : void 0, ed.sound_id = null == ea ? void 0 : ea.soundId);
-  let ef = null == F ? void 0 : F.id,
+  let ef = null == V ? void 0 : V.id,
     e_ = (0, y.sE)(L, Z.paymentSourceId, ef),
     {
       analyticsLocations: ep
     } = (0, l.ZP)(),
     eh = null != K ? z[K] : null,
     [em, eg] = i.useState(e_),
-    [eE, ev] = i.useState(!1),
+    [eE, eb] = i.useState(!1),
     {
-      hasEntitlements: eb
+      hasEntitlements: ev
     } = (0, _.H)(ef, en),
     ey = (0, g.Ap)(Z.paymentSourceId),
-    eO = eb || e_,
+    eO = ev || e_,
     eI = (0, d.U)(),
     eS = null,
     eT = null;
@@ -97,19 +97,19 @@ function T(e) {
     eT = null != e ? e[t] : null
   }
   let eA = async () => {
-    await (0, b.H)({
+    await (0, v.H)({
       setPurchaseState: n,
       setHasAcceptedTerms: H,
       setIsSubmitting: eg,
       setPurchaseError: W,
       hasRedirectURL: eE,
-      setHasRedirectURL: ev,
+      setHasRedirectURL: eb,
       isGift: en,
       baseAnalyticsData: w,
       analyticsLocation: M,
       analyticsLocations: ep,
       flowStartTime: D,
-      subscriptionPlan: F,
+      subscriptionPlan: V,
       planGroup: x,
       trialId: L,
       priceOptions: Z,
@@ -160,7 +160,7 @@ function T(e) {
       isGift: en,
       planGroup: x,
       isPrepaid: ey,
-      isTrial: V,
+      isTrial: F,
       makePurchase: eA,
       needsPaymentSource: null == eh && !eO,
       onNext: T,

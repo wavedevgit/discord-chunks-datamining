@@ -15,8 +15,8 @@ var r = n(56135),
   m = "[object RegExp]",
   g = "[object Set]",
   E = "[object String]",
-  v = "[object Symbol]",
-  b = "[object ArrayBuffer]",
+  b = "[object Symbol]",
+  v = "[object ArrayBuffer]",
   y = "[object DataView]",
   O = r ? r.prototype : void 0,
   I = O ? O.valueOf : void 0;
@@ -26,7 +26,7 @@ function S(e, t, n, r, O, S, T) {
     case y:
       if (e.byteLength != t.byteLength || e.byteOffset != t.byteOffset) break;
       e = e.buffer, t = t.buffer;
-    case b:
+    case v:
       if (e.byteLength != t.byteLength || !S(new i(e), new i(t))) break;
       return !0;
     case d:
@@ -48,7 +48,7 @@ function S(e, t, n, r, O, S, T) {
       r |= u, T.set(e, t);
       var R = a(N(e), N(t), r, O, S, T);
       return T.delete(e), R;
-    case v:
+    case b:
       if (I) return I.call(e) == I.call(t)
   }
   return !1

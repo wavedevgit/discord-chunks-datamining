@@ -26,26 +26,26 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 let E = !1,
-  v = {};
+  b = {};
 
-function b(e) {
-  return null == v[e] && (v[e] = new f.P(e)), v[e]
+function v(e) {
+  return null == b[e] && (b[e] = new f.P(e)), b[e]
 }
 
 function y(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-  b(e).reset(t)
+  v(e).reset(t)
 }
 
 function O() {
   let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-  for (let t in v) y(t, e)
+  for (let t in b) y(t, e)
 }
 
 function I(e) {
   let {
     guild: t
-  } = e, n = b(t.id);
+  } = e, n = v(t.id);
   y(t.id, n.isInitialized)
 }
 
@@ -67,14 +67,14 @@ function N(e) {
     guildId: t,
     userIds: n
   } = e;
-  return b(t).updateMembersByMemberIds(n)
+  return v(t).updateMembersByMemberIds(n)
 }
 
 function A(e) {
   let {
     chunks: t
   } = e, n = !1;
-  for (let e of t) n = b(e.guildId).updateServerMembers(e.members) || n;
+  for (let e of t) n = v(e.guildId).updateServerMembers(e.members) || n;
   return n
 }
 
@@ -82,7 +82,7 @@ function C(e) {
   let {
     guildId: t
   } = e, n = a.default.getId();
-  return b(t).updateMembersByMemberIds([n])
+  return v(t).updateMembersByMemberIds([n])
 }
 
 function R(e) {
@@ -90,12 +90,12 @@ function R(e) {
     guildId: t,
     user: n
   } = e;
-  return b(t).removeMember(n.id)
+  return v(t).removeMember(n.id)
 }
 
 function P(e) {
   let t = !1,
-    n = b(e.guildId);
+    n = v(e.guildId);
   return "GUILD_ROLE_DELETE" === e.type && (t = n.removeRoleFromSearchState(e.roleId)), n.rebuildAllMembers() || t
 }
 
@@ -104,7 +104,7 @@ function w(e) {
     guildId: t,
     userId: n
   } = e;
-  return b(t).updateMembersByMemberIds([n])
+  return v(t).updateMembersByMemberIds([n])
 }
 
 function D(e) {
@@ -113,7 +113,7 @@ function D(e) {
     members: n
   } = e;
   if (null == n || 0 === n.length) return !1;
-  let r = b(t),
+  let r = v(t),
     i = n.reduce((e, t) => {
       if (null != t.member) {
         let n = t.member.user.id;
@@ -130,7 +130,7 @@ function L(e) {
     addedMembers: n
   } = e;
   if (null == n || 0 === n.length) return !1;
-  let r = b(t),
+  let r = v(t),
     i = n.reduce((e, t) => {
       let n = t.userId;
       return e.push(n), e
@@ -144,7 +144,7 @@ function x(e) {
     members: n
   } = e;
   if (null == n || 0 === n.length) return !1;
-  let r = b(t),
+  let r = v(t),
     i = n.reduce((e, t) => {
       let n = t.userId;
       return e.push(n), e
@@ -158,7 +158,7 @@ function M(e) {
     threads: n
   } = e, r = Object.values(n);
   if (0 === r.length) return !1;
-  let i = b(t),
+  let i = v(t),
     o = r.reduce((e, t) => {
       if (null != t.owner) {
         let n = t.owner.user.id;
@@ -174,7 +174,7 @@ function k(e) {
     guildId: t,
     guildMember: n
   } = e;
-  return b(t).updateMembersByMemberIds([n.user.id])
+  return v(t).updateMembersByMemberIds([n.user.id])
 }
 
 function j(e) {
@@ -184,7 +184,7 @@ function j(e) {
       id: n,
       members: r
     } = e;
-    t = b(n).updateServerMembers(r) || t
+    t = v(n).updateServerMembers(r) || t
   }), t
 }
 
@@ -194,7 +194,7 @@ function U(e) {
     let {
       id: n,
       activity_instances: r
-    } = e, i = b(n), o = [];
+    } = e, i = v(n), o = [];
     null == r || r.forEach(e => {
       var t;
       null === (t = e.participants) || void 0 === t || t.forEach(e => {
@@ -212,24 +212,24 @@ function B(e) {
   return U(e)
 }
 
-function V(e) {
+function F(e) {
   let {
     guildMembers: t
   } = e, n = !1;
   return E = !0, d.default.entries(t).forEach(e => {
     let [t, r] = e;
-    n = b(t).updateClientMembers(Object.values(r)) || n
+    n = v(t).updateClientMembers(Object.values(r)) || n
   }), n
 }
 
-function F(e) {
+function V(e) {
   let {
     guildId: t,
     members: n
   } = e;
   if (null == t || null == l.Z.getGuild(t)) return !1;
   E = !0;
-  let r = b(t),
+  let r = v(t),
     i = [];
   for (let e of n) null == r.getMember(e.userId) && i.push(e);
   return i.length > 0 && r.updateClientMembers(i)
@@ -240,28 +240,28 @@ function Z(e) {
     members: t,
     guildId: n
   } = e;
-  return t.length > 0 && b(n).updateServerMembers(t)
+  return t.length > 0 && v(n).updateServerMembers(t)
 }
 
 function H(e) {
   let {
     guildId: t
   } = e;
-  return b(t).initialize()
+  return v(t).initialize()
 }
 
 function W(e) {
   let {
     guildId: t
   } = e;
-  return b(t).refreshNewMembersAndSearchResults()
+  return v(t).refreshNewMembersAndSearchResults()
 }
 
 function Y(e) {
   let {
     guildId: t,
     pagination: n
-  } = e, [r] = b(t).updatePaginationState(n);
+  } = e, [r] = v(t).updatePaginationState(n);
   return r
 }
 
@@ -270,7 +270,7 @@ function K(e) {
     guildId: t,
     continuationToken: n
   } = e;
-  return b(t).updatePaginationToken(n)
+  return v(t).updatePaginationToken(n)
 }
 
 function z(e) {
@@ -278,7 +278,7 @@ function z(e) {
     guildId: t,
     searchState: n
   } = e;
-  return b(t).updateSearchState(n)
+  return v(t).updateSearchState(n)
 }
 
 function q(e) {
@@ -286,7 +286,7 @@ function q(e) {
     guildId: t,
     memberSupplementals: n
   } = e, r = (0, p.Qu)(t, n);
-  return r && b(t).updateMembersByMemberIds(n.map(e => e.userId)), r
+  return r && v(t).updateMembersByMemberIds(n.map(e => e.userId)), r
 }
 
 function Q(e) {
@@ -296,7 +296,7 @@ function Q(e) {
     guildId: c,
     members: u,
     total_result_count: d
-  } = e, f = b(c), {
+  } = e, f = v(c), {
     memberIds: g,
     memberSupplementals: E
   } = u.reduce((e, t) => {
@@ -315,7 +315,7 @@ function Q(e) {
   }, {
     memberIds: [],
     memberSupplementals: []
-  }), v = (0, p.Qu)(c, E);
+  }), b = (0, p.Qu)(c, E);
   (0, h.nf)(c, g);
   let y = f.updateSearchedMembersByMemberIds(g);
   u.length > 0 && (s = u[0], l = u[u.length - 1]);
@@ -332,70 +332,70 @@ function Q(e) {
       })
     }
   }, !1);
-  return v || y || O
+  return b || y || O
 }
 class X extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(a.default, s.ZP, c.default)
   }
   isInitialized(e) {
-    return b(e).isInitialized
+    return v(e).isInitialized
   }
   getMembersByGuildId(e, t) {
-    return b(e).getMembersByIndex(t)
+    return v(e).getMembersByIndex(t)
   }
   getMembersCountByGuildId(e, t) {
-    return b(e).countMembersByIndex(t)
+    return v(e).countMembersByIndex(t)
   }
   getEstimatedMemberSearchCountByGuildId(e) {
-    let t = b(e),
+    let t = v(e),
       n = t.searchChunkSize,
       r = t.countMembersByIndex(t.getSearchIndex()),
       i = t.getTotalResultsCount();
     return null == i || i < n ? r : i
   }
   getKnownMemberSearchCountByGuildId(e) {
-    let t = b(e);
+    let t = v(e);
     return t.countMembersByIndex(t.getSearchIndex())
   }
   getCurrentMemberSearchResultsByGuildId(e) {
-    let t = b(e);
+    let t = v(e);
     return t.getMembersByIndex(t.getSearchIndex())
   }
   getSearchStateByGuildId(e) {
-    return b(e).getSearchState()
+    return v(e).getSearchState()
   }
   hasDefaultSearchStateByGuildId(e) {
-    return b(e).hasDefaultSearchState()
+    return v(e).hasDefaultSearchState()
   }
   getPagedMembersByGuildId(e) {
-    return b(e).getPaginatedMembers()
+    return v(e).getPaginatedMembers()
   }
   getPaginationStateByGuildId(e) {
-    return b(e).getPaginationState()
+    return v(e).getPaginationState()
   }
   getElasticSearchPaginationByGuildId(e) {
-    return b(e).getElasticSearchPagination()
+    return v(e).getElasticSearchPagination()
   }
   getEnhancedMember(e, t) {
-    return b(e).getMember(t)
+    return v(e).getMember(t)
   }
   getNewMemberTimestamp(e) {
-    return b(e).getNewMemberTimestamp()
+    return v(e).getNewMemberTimestamp()
   }
   getLastRefreshTimestamp(e) {
-    return b(e).lastRefreshTimestamp
+    return v(e).lastRefreshTimestamp
   }
   getLastCursorTimestamp(e) {
-    return b(e).lastCursorTimestamp
+    return v(e).lastCursorTimestamp
   }
 }
 g(X, "displayName", "MemberSafetyStore");
 let J = new X(o.Z, {
   CONNECTION_OPEN: G,
   CONNECTION_OPEN_SUPPLEMENTAL: B,
-  LOCAL_MESSAGES_LOADED: F,
-  CACHE_LOADED: V,
+  LOCAL_MESSAGES_LOADED: V,
+  CACHE_LOADED: F,
   PASSIVE_UPDATE_V2: Z,
   GUILD_CREATE: I,
   GUILD_DELETE: S,

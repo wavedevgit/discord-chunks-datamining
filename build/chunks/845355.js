@@ -14,10 +14,10 @@ function s(e, t, n, s) {
       m = void 0 !== h,
       g = null === h,
       E = h == h,
-      v = r(h);
-    if (u) var b = s || E;
-    else b = _ ? E && (s || m) : d ? E && m && (s || !g) : f ? E && m && !g && (s || !v) : !g && !v && (s ? h <= t : h < t);
-    b ? l = p + 1 : c = p
+      b = r(h);
+    if (u) var v = s || E;
+    else v = _ ? E && (s || m) : d ? E && m && (s || !g) : f ? E && m && !g && (s || !b) : !g && !b && (s ? h <= t : h < t);
+    v ? l = p + 1 : c = p
   }
   return a(c, i)
 }

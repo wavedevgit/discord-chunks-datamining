@@ -26,7 +26,7 @@ function E(e) {
     width: n,
     noArt: i = !1,
     selected: E = !1
-  } = e, v = n < m, b = (0, a.e7)([c.Z, u.default], () => c.Z.getAllActiveStreams().some(e => {
+  } = e, b = n < m, v = (0, a.e7)([c.Z, u.default], () => c.Z.getAllActiveStreams().some(e => {
     let {
       ownerId: t
     } = e;
@@ -34,7 +34,7 @@ function E(e) {
   }));
   return (0, r.jsx)("div", {
     className: o()(p.content, p.streamHidden, {
-      [p.__invalid_small]: v
+      [p.__invalid_small]: b
     }),
     children: (0, r.jsx)(f.Z, {
       className: p.streamHiddenEmptyState,
@@ -42,19 +42,19 @@ function E(e) {
       noArt: i,
       selected: E,
       size: (0, f.L)(n),
-      header: v ? null : _.NW.string(_.t.epU4ER),
+      header: b ? null : _.NW.string(_.t.epU4ER),
       description: E ? null : (0, r.jsxs)("div", {
         className: o()(p.streamHiddenCTA, {
-          [p.largePaddingTop]: !v
+          [p.largePaddingTop]: !b
         }),
         children: [(0, r.jsx)(d.a, {
-          isSmall: v,
+          isSmall: b,
           children: (0, r.jsx)(s.Text, {
-            variant: v ? "text-sm/semibold" : "text-md/semibold",
+            variant: b ? "text-sm/semibold" : "text-md/semibold",
             color: "none",
             children: n < h ? _.NW.string(_.t["I6JG4+"]) : _.NW.string(_.t["7Xq/nZ"])
           })
-        }), b ? (0, r.jsx)(d.a, {
+        }), v ? (0, r.jsx)(d.a, {
           className: p.addCTA,
           tooltip: _.NW.string(_.t.wCrzur),
           onClick: e => {
@@ -62,7 +62,7 @@ function E(e) {
               forceMultiple: !0
             })
           },
-          isSmall: v,
+          isSmall: b,
           children: (0, r.jsx)(s.OgY, {
             size: "xs",
             color: "currentColor",

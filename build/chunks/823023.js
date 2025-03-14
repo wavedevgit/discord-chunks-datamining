@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  N: () => v
+  N: () => b
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -93,7 +93,7 @@ function E(e) {
   })
 }
 
-function v(e) {
+function b(e) {
   let {
     readyState: t,
     aspectRatio: n,
@@ -101,10 +101,10 @@ function v(e) {
     placeholderVersion: d,
     placeholderStyle: f,
     children: _
-  } = e, p = t === l.zo9.LOADING, [h] = i.useState(p), [m, v] = i.useState(!1), b = (0, s.L)(u, d, h);
+  } = e, p = t === l.zo9.LOADING, [h] = i.useState(p), [m, b] = i.useState(!1), v = (0, s.L)(u, d, h);
   i.useEffect(() => {
     let e = setTimeout(() => {
-      v(!0)
+      b(!0)
     }, 2e3);
     return () => {
       clearTimeout(e)
@@ -116,9 +116,9 @@ function v(e) {
     style: {
       aspectRatio: n
     },
-    children: [_, null != b && (0, r.jsx)(E, {
+    children: [_, null != v && (0, r.jsx)(E, {
       readyState: t,
-      placeholderImg: b,
+      placeholderImg: v,
       placeholderStyle: f
     }), y((e, t) => t && (0, r.jsx)(o.animated.div, {
       style: e,

@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(269982),
   g = n(197115),
   E = n(369111),
-  v = n(594174),
-  b = n(626135),
+  b = n(594174),
+  v = n(626135),
   y = n(74538),
   O = n(864106),
   I = n(240781),
@@ -38,8 +38,8 @@ function R(e) {
     analyticsLocations: a,
     onClose: c,
     initialSelectedDecoration: _,
-    initialSelectedDecorationId: v,
-    isTryItOutFlow: b,
+    initialSelectedDecorationId: b,
+    isTryItOutFlow: v,
     guild: T
   } = e, {
     pendingAvatarDecoration: R,
@@ -47,33 +47,33 @@ function R(e) {
     savedAvatarDecoration: w
   } = (0, E.Z)({
     analyticsLocations: a,
-    isTryItOut: b,
+    isTryItOut: v,
     guildId: null == T ? void 0 : T.id
   }), [D, L] = i.useState(() => {
     var e, t;
     if (null != _) return _;
     let r = (0, d.iC)(o, n);
-    return null != v ? null !== (e = r.find(e => e.id === v)) && void 0 !== e ? e : null : void 0 !== R ? R : null == w ? null : null !== (t = r.find(e => (0, O.sr)(e, w))) && void 0 !== t ? t : null
+    return null != b ? null !== (e = r.find(e => e.id === b)) && void 0 !== e ? e : null : void 0 !== R ? R : null == w ? null : null !== (t = r.find(e => (0, O.sr)(e, w))) && void 0 !== t ? t : null
   }), {
     product: x,
     purchase: M
   } = (0, f.Z)(null == D ? void 0 : D.skuId), k = y.ZP.canUseCollectibles(t), j = i.useRef(null), U = (0, p.Z)(a), G = (0, O.sr)(D, void 0 === R ? w : R), B = e => {
     L(e), null != e && U(e)
-  }, V = () => {
+  }, F = () => {
     P(D), c()
-  }, F = i.useCallback(e => {
+  }, V = i.useCallback(e => {
     c(), (0, u.mK)({
       analyticsLocations: a,
       analyticsSource: l.Z.EDIT_AVATAR_DECORATION_MODAL,
       initialProductSkuId: e
     })
   }, [a, c]), Z = (0, h.M)(), H = () => null != M && (!(0, d.qS)(M) || k) || null === D ? (0, r.jsx)(s.zxk, {
-    onClick: V,
+    onClick: F,
     disabled: G,
     children: A.NW.string(A.t.d6sv6u)
   }) : null == M && (k || !(0, d.G1)(x)) ? (0, r.jsx)(s.zxk, {
     className: C.modalFooterShopButton,
-    onClick: () => F(null == x ? void 0 : x.skuId),
+    onClick: () => V(null == x ? void 0 : x.skuId),
     children: A.NW.string(A.t.fYfGgI)
   }) : (0, r.jsx)(g.Z, {
     subscriptionTier: N.Si.TIER_2,
@@ -100,7 +100,7 @@ function R(e) {
         pendingAvatarDecoration: D,
         selectedAvatarDecorationRef: j,
         onSelect: B,
-        onOpenShop: F
+        onOpenShop: V
       }), (0, r.jsx)(I.Z, {
         className: C.modalPreview,
         user: t,
@@ -133,7 +133,7 @@ function P(e) {
     initialSelectedDecorationId: h,
     isTryItOutFlow: m,
     guild: g
-  } = e, E = (0, a.e7)([v.default], () => v.default.getCurrentUser()), {
+  } = e, E = (0, a.e7)([b.default], () => b.default.getCurrentUser()), {
     analyticsLocations: y
   } = (0, c.ZP)(n, l.Z.EDIT_AVATAR_DECORATION_MODAL), {
     categories: O,
@@ -146,7 +146,7 @@ function P(e) {
     f(), null == d || d()
   };
   return i.useEffect(() => {
-    b.default.track(T.rMx.OPEN_MODAL, {
+    v.default.track(T.rMx.OPEN_MODAL, {
       type: "Edit Avatar Decoration Modal",
       location_stack: y
     })

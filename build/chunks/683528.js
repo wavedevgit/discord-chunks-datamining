@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => v
 });
 var r = n(200651),
   i = n(192379),
@@ -47,9 +47,9 @@ function E(e) {
     mediaLayoutType: f.hV.MOSAIC
   })
 }
-let v = i.memo(E);
+let b = i.memo(E);
 
-function b(e) {
+function v(e) {
   let {
     items: t,
     currentIndex: n,
@@ -85,7 +85,7 @@ function b(e) {
             totalPages: t.length
           }),
           onClick: () => o(i),
-          children: (0, r.jsx)(v, {
+          children: (0, r.jsx)(b, {
             item: e
           })
         }, i)

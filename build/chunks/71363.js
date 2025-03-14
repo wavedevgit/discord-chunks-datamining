@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(626135),
   h = n(695349),
   f = n(103433),
-  b = n(166021),
-  x = n(32173),
+  x = n(166021),
+  b = n(32173),
   N = n(391110),
   _ = n(75077),
   E = n(981631),
@@ -32,7 +32,7 @@ let v = e => {
       isFullScreen: T
     } = e,
     I = i.useRef(null),
-    y = Object.entries((0, x.Z)()).reduce((e, t) => {
+    y = Object.entries((0, b.Z)()).reduce((e, t) => {
       let [n, r] = t;
       return !1 !== r.canReveal && "upcomingDropUntimed" !== r.name && (e[n] = r), e
     }, {}),
@@ -72,7 +72,7 @@ let v = e => {
             color: "header-primary",
             className: C.heading,
             children: t
-          }), (0, r.jsx)(b.Z, {
+          }), (0, r.jsx)(x.Z, {
             className: C.cardCarousel,
             cards: (0, _.sP)({
               perksCards: y,
@@ -88,7 +88,7 @@ let v = e => {
             color: "header-primary",
             className: C.heading,
             children: n
-          }), (0, r.jsx)(b.Z, {
+          }), (0, r.jsx)(x.Z, {
             className: C.cardCarousel,
             cards: (0, _.sP)({
               perksCards: y,
@@ -104,7 +104,7 @@ let v = e => {
             color: "header-primary",
             className: C.heading,
             children: j.NW.string(j.t.LTaxu7)
-          }), (0, r.jsx)(b.Z, {
+          }), (0, r.jsx)(x.Z, {
             className: C.cardCarousel,
             cards: (0, _.sP)({
               perksCards: y,

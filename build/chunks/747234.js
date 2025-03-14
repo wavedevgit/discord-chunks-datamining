@@ -2,7 +2,7 @@
 "use strict";
 n.r(t), n.d(t, {
   IGNORE_CLASS_NAME: () => E,
-  default: () => b
+  default: () => v
 });
 var r, i = n(192379),
   o = n(995295);
@@ -69,11 +69,11 @@ var _ = function() {
   g = ["touchstart", "touchmove"],
   E = "ignore-react-onclickoutside";
 
-function v(e, t) {
+function b(e, t) {
   var n = {};
   return -1 !== g.indexOf(t) && r && (n.passive = !e.props.preventDefault), n
 }
-let b = function(e, t) {
+let v = function(e, t) {
   var n, s, u = e.displayName || e.name || "Component";
   return s = n = function(n) {
     function s(e) {
@@ -106,7 +106,7 @@ let b = function(e, t) {
               if (d(t, i.componentNode, i.props.outsideClickIgnoreClass) === document) i.__outsideClickHandler(e)
             }
           }, e.forEach(function(e) {
-            document.addEventListener(e, h[i._uid], v(c(i), e))
+            document.addEventListener(e, h[i._uid], b(c(i), e))
           })
         }
       }, i.disableOnClickOutside = function() {
@@ -115,7 +115,7 @@ let b = function(e, t) {
         if (e && "undefined" != typeof document) {
           var t = i.props.eventTypes;
           t.forEach || (t = [t]), t.forEach(function(t) {
-            return document.removeEventListener(t, e, v(c(i), t))
+            return document.removeEventListener(t, e, b(c(i), t))
           }), delete h[i._uid]
         }
       }, i.getRef = function(e) {

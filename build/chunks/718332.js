@@ -17,10 +17,10 @@ function l(e, t, n, l, c, u) {
     g = n & s ? new r : void 0;
   for (u.set(e, t), u.set(t, e); ++h < f;) {
     var E = e[h],
-      v = t[h];
-    if (l) var b = d ? l(v, E, h, t, e, u) : l(E, v, h, e, t, u);
-    if (void 0 !== b) {
-      if (b) continue;
+      b = t[h];
+    if (l) var v = d ? l(b, E, h, t, e, u) : l(E, b, h, e, t, u);
+    if (void 0 !== v) {
+      if (v) continue;
       m = !1;
       break
     }
@@ -31,7 +31,7 @@ function l(e, t, n, l, c, u) {
         m = !1;
         break
       }
-    } else if (!(E === v || c(E, v, n, l, u))) {
+    } else if (!(E === b || c(E, b, n, l, u))) {
       m = !1;
       break
     }

@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(74538),
   g = n(618158),
   E = n(871499),
-  v = n(981631),
-  b = n(354459),
+  b = n(981631),
+  v = n(354459),
   y = n(474936),
   O = n(388032),
   I = n(747160);
@@ -117,7 +117,7 @@ function D(e) {
   let {
     parentAnalyticsLocation: I
   } = (0, s.ZP)(), S = (0, o.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), y.p9.TIER_1)), N = (0, o.e7)([_.Z], () => _.Z.getChannel(null == n ? void 0 : n.channelId)), R = i.useMemo(() => null != n ? [n] : [], [n]), D = i.useCallback(() => {
-    null != N && (0, f.Z)(N.getGuildId(), N.id, v.jXE.STREAM_SETTINGS)
+    null != N && (0, f.Z)(N.getGuildId(), N.id, b.jXE.STREAM_SETTINGS)
   }, [N]);
   if (null == n || null == N) return null;
   let L = P;
@@ -136,7 +136,7 @@ function D(e) {
           showReportOption: !0,
           handleGoLive: D,
           onInteraction: (0, c.u)("ManageStreamsButton", null != I ? I : u, {
-            entrypoint: b.A5.OTHER_BUTTON
+            entrypoint: v.A5.OTHER_BUTTON
           })
         })
       })

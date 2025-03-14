@@ -17,8 +17,8 @@ n.d(t, {
   f: () => Z,
   m7: () => x,
   n8: () => Y,
-  pQ: () => V,
-  v1: () => F,
+  pQ: () => F,
+  v1: () => V,
   wO: () => B
 });
 var r = n(200651),
@@ -37,8 +37,8 @@ var r = n(200651),
   m = n(26033),
   g = n(22211),
   E = n(561308),
-  v = n(797342),
-  b = n(371991),
+  b = n(797342),
+  v = n(371991),
   y = n(206583),
   O = n(388032),
   I = n(425507);
@@ -101,10 +101,10 @@ function R(e, t) {
 }
 let P = {
   [c.s.TOP_ARTIST]: [W],
-  [c.s.PLAYED_GAME]: [j, U, k, K, B, Z, Y, F, V],
+  [c.s.PLAYED_GAME]: [j, U, k, K, B, Z, Y, V, F],
   [c.s.TOP_GAME]: [H],
   [c.s.WATCHED_MEDIA]: [z, q],
-  [c.s.LAUNCHED_ACTIVITY]: [j, U, k, K, Y, V]
+  [c.s.LAUNCHED_ACTIVITY]: [j, U, k, K, Y, F]
 };
 var w = function(e) {
   return e[e.CARD = 0] = "CARD", e[e.POPOUT = 1] = "POPOUT", e[e.STREAMING_POPOUT = 2] = "STREAMING_POPOUT", e[e.GAME_PROFILE = 3] = "GAME_PROFILE", e[e.USER_PROFILE = 4] = "USER_PROFILE", e[e.EMBED = 5] = "EMBED", e[e.LEADERBOARD_POPOUT = 6] = "LEADERBOARD_POPOUT", e[e.OVERLAY = 7] = "OVERLAY", e
@@ -185,7 +185,7 @@ function j(e) {
     children: [(0, r.jsx)(d, {
       size: "xxs",
       color: l
-    }), (0, r.jsx)(b.ZP, {
+    }), (0, r.jsx)(v.ZP, {
       entry: t,
       textColor: c,
       hovered: n,
@@ -204,7 +204,7 @@ function U(e) {
   } = L(), {
     state: o,
     party: a
-  } = (0, v.n)(t), s = (0, E.bT)(o, a);
+  } = (0, b.n)(t), s = (0, E.bT)(o, a);
   return null == s ? null : (0, r.jsxs)(x, {
     children: [(0, r.jsx)(f.BFJ, {
       size: "xxs",
@@ -232,7 +232,7 @@ function G(e) {
     children: [(0, r.jsx)(f.RZG, {
       size: "xxs",
       color: l
-    }), (0, r.jsx)(b.ZP, {
+    }), (0, r.jsx)(v.ZP, {
       entry: t,
       textColor: c,
       hovered: n,
@@ -254,7 +254,7 @@ function B(e) {
   }) : null
 }
 
-function V(e) {
+function F(e) {
   let {
     entry: t
   } = e, {
@@ -275,7 +275,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     entry: t
   } = e, {
@@ -389,7 +389,7 @@ function z(e) {
     children: [(0, r.jsx)(f.ARS, {
       size: "xxs",
       color: l
-    }), (0, r.jsx)(b.ZP, {
+    }), (0, r.jsx)(v.ZP, {
       entry: t,
       textColor: c,
       hovered: n,

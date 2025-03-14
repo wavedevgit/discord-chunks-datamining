@@ -81,8 +81,8 @@ let u = new(n(499303)).I,
     return i.unshift(t.content), i.splice(5), e.recentlyShown = i, null != t.groupName && e.currentlyShownGroup.add(t.groupName), o.O.has(t.content) || (e.shownFatigableCandidate = t, (null === (r = e.prevFatigableCandidate) || void 0 === r ? void 0 : r.content) !== t.content && (e.prevFatigableCandidate = t, e.lastWinnerTime = new Date().getTime())), null === (n = t.onAdded) || void 0 === n || n.call(t), e
   },
   E = (e, t) => (e.candidates.set(t.content, t), e),
-  v = (e, t) => (e.candidates.delete(t.content), e),
-  b = (e, t) => g(m(e, e.shownFatigableCandidate), t),
+  b = (e, t) => (e.candidates.delete(t.content), e),
+  v = (e, t) => g(m(e, e.shownFatigableCandidate), t),
   y = e => null != e.prevFatigableCandidate ? e.candidates.get(e.prevFatigableCandidate.content) : void 0,
   O = e => {
     let t = [...e.candidates.keys()];
@@ -95,14 +95,14 @@ let u = new(n(499303)).I,
   S = e => {
     if (0 === e.candidates.size) return e;
     let t = new Date().getTime() - e.lastWinnerTime > d;
-    if (I(e) && !t) return u.unschedule(), b(e, y(e));
+    if (I(e) && !t) return u.unschedule(), v(e, y(e));
     if (null != e.shownFatigableCandidate && !t || u.scheduled()) return e;
     let n = new Date().getTime();
     return null == e.shownFatigableCandidate && n - e.lastWinnerTime < f || u.schedule(() => {
       (0, i.j)(() => {
         p.setState(e => {
           let t = h(e);
-          return b(t, O(t))
+          return v(t, O(t))
         })
       })
     }, 250), e
@@ -120,7 +120,7 @@ let u = new(n(499303)).I,
     (0, i.j)(() => {
       p.setState(n => {
         let r = h(n);
-        return t ? S(m(v(r, e), e)) : m(v(r, e), e)
+        return t ? S(m(b(r, e), e)) : m(b(r, e), e)
       })
     })
   },

@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(734893),
   g = n(655359),
   E = n(931261),
-  v = n(216701),
-  b = n(388032),
+  b = n(216701),
+  v = n(388032),
   y = n(378754);
 let O = 60;
 
@@ -31,13 +31,13 @@ function I(e) {
   return null == n ? (0, r.jsx)(c.Text, {
     variant: "text-xxs/normal",
     color: "header-secondary",
-    children: b.NW.format(b.t.MkzlDA, {
-      channelName: b.NW.string(b.t.J90oLS)
+    children: v.NW.format(v.t.MkzlDA, {
+      channelName: v.NW.string(v.t.J90oLS)
     })
   }) : (0, r.jsx)(c.Text, {
     variant: "text-xxs/normal",
     color: "header-secondary",
-    children: b.NW.format(b.t.MkzlDA, {
+    children: v.NW.format(v.t.MkzlDA, {
       channelName: i
     })
   })
@@ -52,10 +52,10 @@ function S(e) {
   } = e, a = (0, l.e7)([_.Z], () => _.Z.getChannel(n));
   if (null == a) return null;
   let s = null !== (t = (0, f.KS)(a)) && void 0 !== t ? t : c.VL1;
-  return (0, r.jsx)(v.Z, {
+  return (0, r.jsx)(b.Z, {
     emojiId: i,
     emojiName: o,
-    size: v.R.MEDIUM,
+    size: b.R.MEDIUM,
     defaultComponent: (0, r.jsx)(s, {
       className: y.channelIcon
     })
@@ -70,10 +70,10 @@ function T(e) {
     className: p
   } = e, {
     channelAction: E,
-    completed: v
+    completed: b
   } = (0, g.P3)(f, _), T = (0, g.K_)(f, null == E ? void 0 : E.channelId), N = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), A = (null == E ? void 0 : E.actionType) === m.oi.VIEW, C = (0, c.dQu)(c.TVs.colors.WHITE), [R, P] = i.useState(!1), [w] = i.useState(new s.Z.Value(0)), [D] = i.useState(new s.Z.Value(0));
   i.useEffect(() => {
-    v ? s.Z.timing(w, {
+    b ? s.Z.timing(w, {
       toValue: 0,
       duration: N ? 1 : 350,
       easing: s.Z.Easing.quad,
@@ -84,14 +84,14 @@ function T(e) {
       easing: s.Z.Easing.quad,
       delay: 400
     }).start()
-  }, [v, w, A, N]), i.useEffect(() => {
-    v && R && s.Z.timing(D, {
+  }, [b, w, A, N]), i.useEffect(() => {
+    b && R && s.Z.timing(D, {
       toValue: 1,
       duration: 350 * !N,
       easing: s.Z.Easing.quad,
       delay: 400
     }).start()
-  }, [v, D, R, N]);
+  }, [b, D, R, N]);
   let L = i.useCallback(() => {
     null != T && (0, h.gp)(f, T.channelId)
   }, [f, T]);
@@ -116,7 +116,7 @@ function T(e) {
           children: [(0, r.jsx)(c.Text, {
             variant: "text-md/semibold",
             color: "header-primary",
-            children: b.NW.format(b.t["/beONz"], {
+            children: v.NW.format(v.t["/beONz"], {
               step: T.title
             })
           }), (0, r.jsx)(I, {
@@ -152,9 +152,9 @@ function T(e) {
         }), (0, r.jsx)(c.Text, {
           variant: "text-xxs/normal",
           color: "text-muted",
-          children: b.NW.string(b.t["ElGg8/"])
+          children: v.NW.string(v.t["ElGg8/"])
         })]
-      }), v ? (0, r.jsx)(c.owK, {
+      }), b ? (0, r.jsx)(c.owK, {
         size: "custom",
         color: "currentColor",
         className: y.completed,

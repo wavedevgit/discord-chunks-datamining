@@ -63,7 +63,7 @@ function E(e) {
   })
 }
 
-function v(e) {
+function b(e) {
   let {
     guildId: t
   } = e;
@@ -71,7 +71,7 @@ function v(e) {
   delete g[t]
 }
 
-function b(e) {
+function v(e) {
   let {
     guildId: t,
     roleId: n
@@ -198,8 +198,8 @@ class S extends(r = i.ZP.Store) {
 _(S, "displayName", "ImpersonateStore");
 let T = new S(o.Z, {
   IMPERSONATE_UPDATE: E,
-  IMPERSONATE_STOP: v,
-  GUILD_ROLE_DELETE: b,
+  IMPERSONATE_STOP: b,
+  GUILD_ROLE_DELETE: v,
   USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: y,
   GUILD_ONBOARDING_SELECT_OPTION: O,
   GUILD_MEMBER_UPDATE_LOCAL: I

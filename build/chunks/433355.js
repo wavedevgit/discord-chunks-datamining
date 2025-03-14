@@ -3,7 +3,7 @@
 n.d(t, {
   D5: () => C,
   ZP: () => W,
-  uZ: () => b
+  uZ: () => v
 });
 var r, i = n(873546),
   o = n(442837),
@@ -21,7 +21,7 @@ var r, i = n(873546),
   g = n(176505),
   E = n(231338);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,7 +29,7 @@ function v(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let b = "message_requests",
+let v = "message_requests",
   y = !1,
   O = !1,
   I = !0,
@@ -171,14 +171,14 @@ function B() {
   return e
 }
 
-function V(e) {
+function F(e) {
   let {
     baseChannelId: t
   } = e, n = A(t);
   null != n && delete T[n]
 }
 
-function F() {
+function V() {
   if (S === f.Z.isActive()) return !1;
   S = f.Z.isActive()
 }
@@ -192,7 +192,7 @@ class H extends(r = o.ZP.PersistedStore) {
       var t, n, r, i, o;
       y = null !== (t = e.isMembersOpen) && void 0 !== t && t, O = null !== (n = e.isSummariesOpen) && void 0 !== n && n, I = null === (r = e.isProfileOpen) || void 0 === r || r, T = null !== (i = e.sidebars) && void 0 !== i ? i : {}, N = null !== (o = e.guildSidebars) && void 0 !== o ? o : {}
     }
-    this.syncWith([f.Z], F), this.syncWith([d.Z], B)
+    this.syncWith([f.Z], V), this.syncWith([d.Z], B)
   }
   getState() {
     return {
@@ -229,7 +229,7 @@ class H extends(r = o.ZP.PersistedStore) {
     return null == r ? null : r.type === s.tI.VIEW_THREAD || r.type === s.tI.VIEW_CHANNEL ? null === (t = r.details) || void 0 === t ? void 0 : t.initialMessageId : null
   }
 }
-v(H, "displayName", "ChannelSectionStore"), v(H, "persistKey", "ChannelSectionStore2");
+b(H, "displayName", "ChannelSectionStore"), b(H, "persistKey", "ChannelSectionStore2");
 let W = new H(a.Z, {
   CHANNEL_TOGGLE_MEMBERS_SECTION: P,
   PROFILE_PANEL_TOGGLE_SECTION: D,
@@ -237,7 +237,7 @@ let W = new H(a.Z, {
   SIDEBAR_VIEW_CHANNEL: M,
   SIDEBAR_VIEW_GUILD: L,
   SIDEBAR_CREATE_THREAD: k,
-  SIDEBAR_CLOSE: V,
+  SIDEBAR_CLOSE: F,
   SIDEBAR_CLOSE_GUILD: x,
   CHANNEL_DELETE: j,
   CHANNEL_SELECT: Z,

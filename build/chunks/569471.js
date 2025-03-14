@@ -57,12 +57,12 @@ function E(e) {
   h = o()(h).reject(t => t.guildId === e).keyBy("threadId").value()
 }
 
-function v(e) {
+function b(e) {
   var t;
-  null === (t = e.threads) || void 0 === t || t.forEach(b)
+  null === (t = e.threads) || void 0 === t || t.forEach(v)
 }
 
-function b(e) {
+function v(e) {
   c.AW.has(e.type) && null != e.member && (h[e.id] = {
     threadId: e.id,
     guildId: e.guild_id,
@@ -82,7 +82,7 @@ function y(e) {
 
 function O(e) {
   m.reset(), g = new Set, h = {}, e.guilds.forEach(e => {
-    v(e)
+    b(e)
   })
 }
 
@@ -99,7 +99,7 @@ function S(e) {
   let {
     guild: t
   } = e;
-  E(t.id), v(t)
+  E(t.id), b(t)
 }
 
 function T(e) {
@@ -113,7 +113,7 @@ function N(e) {
   let {
     channel: t
   } = e;
-  b(t)
+  v(t)
 }
 
 function A(e) {

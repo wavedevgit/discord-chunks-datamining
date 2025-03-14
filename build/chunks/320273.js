@@ -17,8 +17,8 @@ var r = n(147018),
   m = n(354848),
   g = n(740362),
   E = n(566885),
-  v = n(974971),
-  b = n(24033),
+  b = n(974971),
+  v = n(24033),
   y = n(622281),
   O = n(714050),
   I = n(803938),
@@ -43,8 +43,8 @@ var r = n(147018),
   U = j("fetch"),
   G = j("Request"),
   B = j("Headers"),
-  V = G && G.prototype,
-  F = B && B.prototype,
+  F = G && G.prototype,
+  V = B && B.prototype,
   Z = i.RegExp,
   H = i.TypeError,
   W = i.decodeURIComponent,
@@ -119,7 +119,7 @@ ed.prototype = {
     var t, n, r, i, a, s, l, c = N(e);
     if (c)
       for (n = (t = T(e, c)).next; !(r = o(n, t)).done;) {
-        if ((s = o(a = (i = T(b(r.value))).next, i)).done || (l = o(a, i)).done || !o(a, i).done) throw H("Expected sequence with length 2");
+        if ((s = o(a = (i = T(v(r.value))).next, i)).done || (l = o(a, i)).done || !o(a, i).done) throw H("Expected sequence with length 2");
         q(this.entries, {
           key: O(s.value),
           value: O(l.value)
@@ -240,12 +240,12 @@ if (d(e_, {
   }, {
     URLSearchParams: ef
   }), !l && m(B)) {
-  var ep = a(F.has),
-    eh = a(F.set),
+  var ep = a(V.has),
+    eh = a(V.set),
     em = function(e) {
       if (y(e)) {
         var t, n = e.body;
-        if (v(n) === w) return ep(t = e.headers ? new B(e.headers) : new B, "content-type") || eh(t, "content-type", "application/x-www-form-urlencoded;charset=UTF-8"), I(e, {
+        if (b(n) === w) return ep(t = e.headers ? new B(e.headers) : new B, "content-type") || eh(t, "content-type", "application/x-www-form-urlencoded;charset=UTF-8"), I(e, {
           body: S(0, O(n)),
           headers: S(0, t)
         })
@@ -263,9 +263,9 @@ if (d(e_, {
       }
     }), m(G)) {
     var eg = function(e) {
-      return h(this, V), new G(e, arguments.length > 1 ? em(arguments[1]) : {})
+      return h(this, F), new G(e, arguments.length > 1 ? em(arguments[1]) : {})
     };
-    V.constructor = eg, eg.prototype = V, r({
+    F.constructor = eg, eg.prototype = F, r({
       global: !0,
       constructor: !0,
       dontCallGetSet: !0,

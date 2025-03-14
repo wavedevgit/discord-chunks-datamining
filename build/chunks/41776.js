@@ -45,7 +45,7 @@ function E(e, t) {
   null != t && (f[e] = t)
 }
 
-function v(e) {
+function b(e) {
   let {
     guildId: t,
     lurker: n,
@@ -74,7 +74,7 @@ function v(e) {
   return !1
 }
 
-function b(e) {
+function v(e) {
   let {
     guild: t
   } = e;
@@ -148,10 +148,10 @@ class N extends(r = i.ZP.Store) {
 u(N, "displayName", "LurkingStore");
 let A = new N(o.Z, {
   CONNECTION_OPEN: T,
-  GUILD_JOIN: v,
+  GUILD_JOIN: b,
   GUILD_STOP_LURKING: I,
   GUILD_STOP_LURKING_FAILURE: S,
-  GUILD_CREATE: b,
+  GUILD_CREATE: v,
   GUILD_DELETE: O,
   GUILD_MEMBER_ADD: y
 })

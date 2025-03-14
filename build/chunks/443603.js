@@ -57,8 +57,8 @@ function g(e, t) {
 var E = function(e) {
   return e[e.UPDATE = 0] = "UPDATE", e[e.NEW = 1] = "NEW", e
 }({});
-let v = 24,
-  b = 20,
+let b = 24,
+  v = 20,
   y = {
     config: {
       friction: 26,
@@ -116,8 +116,8 @@ function O(e) {
       children: [(0, r.jsx)(c.ZP, {
         className: _.iconMask,
         mask: c.QS.CHAT_INPUT_BUTTON_NOTIFICATION,
-        width: M ? b : v,
-        height: M ? b : v,
+        width: M ? v : b,
+        height: M ? v : b,
         children: t
       }), (0, r.jsx)("span", {
         className: _.notificationDot

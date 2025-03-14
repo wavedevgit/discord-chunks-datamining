@@ -79,18 +79,18 @@ function g(e) {
   } = e, {
     focusIndex: m,
     isUsingKeyboardNavigation: g
-  } = d, E = h(d, ["focusIndex", "isUsingKeyboardNavigation"]), v = i.useRef(null), b = i.useRef(null), y = i.useRef(null), [O, I] = i.useState(!1);
+  } = d, E = h(d, ["focusIndex", "isUsingKeyboardNavigation"]), b = i.useRef(null), v = i.useRef(null), y = i.useRef(null), [O, I] = i.useState(!1);
   return i.useLayoutEffect(() => {
     I(!0)
   }, []), i.useLayoutEffect(() => {
     var e;
-    o && ((0, l.F)(v), null === (e = y.current) || void 0 === e || e.focus())
+    o && ((0, l.F)(b), null === (e = y.current) || void 0 === e || e.focus())
   }, [o]), (0, r.jsxs)("div", {
-    ref: v,
+    ref: b,
     children: [(0, r.jsx)("div", {
-      ref: b
+      ref: v
     }), n, o && O ? (0, r.jsx)(s.j, {
-      targetRef: b,
+      targetRef: v,
       autoInvert: !0,
       nudgeAlignIntoViewport: !0,
       fixed: !0,

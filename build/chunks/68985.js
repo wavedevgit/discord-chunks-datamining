@@ -80,7 +80,7 @@ function E(e) {
   h.newUserMinAgeRequiredOverridden = t
 }
 
-function v(e) {
+function b(e) {
   let {
     dismissibleContent: t
   } = e, n = new Date;
@@ -97,7 +97,7 @@ function v(e) {
   }
 }
 
-function b(e) {
+function v(e) {
   let {
     dismissibleContent: t
   } = e;
@@ -141,7 +141,7 @@ let I = new O(o.Z, {
   LOGOUT: m,
   DCF_DAILY_CAP_OVERRIDE: g,
   DCF_NEW_USER_MIN_AGE_REQUIRED_OVERRIDE: E,
-  DCF_HANDLE_DC_SHOWN: v,
-  DCF_HANDLE_DC_DISMISSED: b,
+  DCF_HANDLE_DC_SHOWN: b,
+  DCF_HANDLE_DC_DISMISSED: v,
   DCF_RESET: y
 })

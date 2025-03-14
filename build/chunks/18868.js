@@ -1,12 +1,12 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  L: () => p,
+  L: () => x,
   Y: () => m
 }), n(47120);
 var r = n(200651),
   a = n(192379),
-  i = n(120356),
-  l = n.n(i),
+  l = n(120356),
+  i = n.n(l),
   o = n(481060),
   s = n(310752),
   c = n(897842),
@@ -45,18 +45,18 @@ let m = () => {
   h = e => {
     e.stopPropagation(), e.preventDefault()
   },
-  p = e => {
+  x = e => {
     let {
       className: t,
       onDrop: n
-    } = e, [i, p] = a.useState(!1), x = a.useRef(null), f = a.useCallback(e => {
+    } = e, [l, x] = a.useState(!1), p = a.useRef(null), b = a.useCallback(e => {
       h(e), (0, o.Mr3)(c.A), null != e.dataTransfer && (e.dataTransfer.dropEffect = "copy")
-    }, []), b = a.useCallback(e => {
-      h(e), p(!0)
+    }, []), f = a.useCallback(e => {
+      h(e), x(!0)
     }, []), _ = a.useCallback(e => {
-      h(e), p(!1)
+      h(e), x(!1)
     }, []), g = a.useCallback(async e => {
-      h(e), p(!1);
+      h(e), x(!1);
       let t = e.dataTransfer;
       if (null == t) {
         m();
@@ -69,15 +69,15 @@ let m = () => {
       r.length > 0 ? n(r) : m()
     }, [n]);
     return (0, r.jsx)("div", {
-      ref: x,
-      className: l()(t, u.uploadArea),
-      onDragEnter: b,
-      onDragOver: f,
+      ref: p,
+      className: i()(t, u.uploadArea),
+      onDragEnter: f,
+      onDragOver: b,
       onDragLeave: _,
       onDrop: g,
       children: (0, r.jsx)("div", {
-        className: l()(u.uploadModal, {
-          [u.droppable]: i
+        className: i()(u.uploadModal, {
+          [u.droppable]: l
         }),
         children: (0, r.jsxs)("div", {
           className: u.inner,

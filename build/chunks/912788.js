@@ -66,10 +66,10 @@ function E(e) {
   l = e.error
 }
 
-function v(e) {
+function b(e) {
   e.isGift && (u = e.skuId)
 }
-class b extends(r = i.ZP.Store) {
+class v extends(r = i.ZP.Store) {
   get paymentError() {
     return l
   }
@@ -77,8 +77,8 @@ class b extends(r = i.ZP.Store) {
     return e === u ? c : null
   }
 }
-s(b, "displayName", "PremiumPaymentModalStore");
-let y = new b(o.Z, {
+s(v, "displayName", "PremiumPaymentModalStore");
+let y = new v(o.Z, {
   PREMIUM_PAYMENT_SUBSCRIBE_FAIL: d,
   PREMIUM_PAYMENT_UPDATE_FAIL: d,
   PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS: f,
@@ -88,6 +88,6 @@ let y = new b(o.Z, {
   BRAINTREE_TOKENIZE_VENMO_FAIL: p,
   SKU_PURCHASE_SUCCESS: m,
   SKU_PURCHASE_FAIL: E,
-  SKU_PURCHASE_AWAIT_CONFIRMATION: v,
+  SKU_PURCHASE_AWAIT_CONFIRMATION: b,
   GIFT_CODE_CREATE: g
 })

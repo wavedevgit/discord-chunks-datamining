@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(540059),
   g = n(661824),
   E = n(703558),
-  v = n(117530),
-  b = n(459273),
+  b = n(117530),
+  v = n(459273),
   y = n(444282),
   O = n(898463),
   I = n(981631),
@@ -89,7 +89,7 @@ function L(e) {
   let {
     channelId: t,
     type: n
-  } = e, o = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled), N = (0, p.Z)("attachments", l.hy.HORIZONTAL), C = (0, c.e7)([v.Z], () => v.Z.getUploads(t, n.drafts.type)), {
+  } = e, o = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled), N = (0, p.Z)("attachments", l.hy.HORIZONTAL), C = (0, c.e7)([b.Z], () => b.Z.getUploads(t, n.drafts.type)), {
     isApplicationCommand: w,
     commandOptions: L,
     commandOptionStates: x
@@ -122,7 +122,7 @@ function L(e) {
   let U = i.useCallback(() => {
     N.focusFirstVisibleItem()
   }, [N]);
-  (0, b.yp)({
+  (0, v.yp)({
     event: I.CkL.FOCUS_ATTACHMENT_AREA,
     handler: U
   });
@@ -149,7 +149,7 @@ function L(e) {
       }), j(i)
     }
   }, [t, M.length, n]);
-  let V = (0, m.Q3)("ChannelAttachmentArea");
+  let F = (0, m.Q3)("ChannelAttachmentArea");
   return !w && 0 === C.length || w && 0 === M.length ? null : (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)(s.bG, {
       navigator: N,
@@ -176,7 +176,7 @@ function L(e) {
           }))
         }
       })
-    }), n.drafts.type === E.d.FirstThreadMessage || V ? null : (0, r.jsx)(g.Z, {})]
+    }), n.drafts.type === E.d.FirstThreadMessage || F ? null : (0, r.jsx)(g.Z, {})]
   })
 }
 

@@ -54,11 +54,11 @@ function g(e, t) {
 }
 let E = "LibraryApplicationStore";
 
-function v() {
+function b() {
   var e;
   return null !== (e = s.K.get(E)) && void 0 !== e ? e : {}
 }
-let b = !1,
+let v = !1,
   y = {},
   O = {},
   I = new Set,
@@ -67,13 +67,13 @@ let b = !1,
   N = !1;
 
 function A() {
-  s.K.set(E, g(h({}, v()), {
+  s.K.set(E, g(h({}, b()), {
     activeLaunchOptionIds: T
   }))
 }
 
 function C() {
-  s.K.set(E, g(h({}, v()), {
+  s.K.set(E, g(h({}, b()), {
     activeLibraryApplicationBranchIds: S
   }))
 }
@@ -86,14 +86,14 @@ function R(e) {
 }
 
 function P() {
-  b = !1
+  v = !1
 }
 
 function w(e) {
   let {
     libraryApplications: t
   } = e;
-  y = {}, R(t), b = !0
+  y = {}, R(t), v = !0
 }
 
 function D(e) {
@@ -149,7 +149,7 @@ function U() {
 }
 
 function G(e) {
-  let t = V();
+  let t = F();
   return Object.keys(t).forEach(n => {
     e(t[n]) || delete t[n]
   }), t
@@ -161,10 +161,10 @@ function B(e, t) {
   return null !== (n = y[r]) && void 0 !== n ? n : O[r]
 }
 
-function V() {
+function F() {
   return h({}, O, y)
 }
-class F extends(r = a.ZP.Store) {
+class V extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(f.default);
     let e = s.K.get(E);
@@ -174,10 +174,10 @@ class F extends(r = a.ZP.Store) {
     return G(e => !e.isHidden())
   }
   getAllLibraryApplications() {
-    return V()
+    return F()
   }
   hasLibraryApplication() {
-    return Object.keys(V()).length > 0
+    return Object.keys(F()).length > 0
   }
   hasApplication(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
@@ -198,7 +198,7 @@ class F extends(r = a.ZP.Store) {
         o = null !== (r = y[i]) && void 0 !== r ? r : O[i];
       if (null != o && (0, d.Je)(o) && (t || !o.isHidden())) return o
     }
-    let i = V();
+    let i = F();
     for (let n in i)
       if (i[n].id === e) {
         let e = i[n];
@@ -212,22 +212,22 @@ class F extends(r = a.ZP.Store) {
     return T[(0, d.Tu)(e, t)]
   }
   get fetched() {
-    return b
+    return v
   }
   get entitledBranchIds() {
-    return o()(V()).values().filter(e => (0, d.Je)(e)).map(e => e.branchId).value()
+    return o()(F()).values().filter(e => (0, d.Je)(e)).map(e => e.branchId).value()
   }
   get hasRemovedLibraryApplicationThisSession() {
     return N
   }
   whenInitialized(e) {
     this.addConditionalChangeListener(() => {
-      if (b) return setImmediate(e), !1
+      if (v) return setImmediate(e), !1
     })
   }
 }
-p(F, "displayName", "LibraryApplicationStore");
-let Z = new F(l.Z, {
+p(V, "displayName", "LibraryApplicationStore");
+let Z = new V(l.Z, {
   LOGOUT: P,
   LIBRARY_FETCH_SUCCESS: w,
   SKU_PURCHASE_SUCCESS: D,

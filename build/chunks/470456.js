@@ -1,4 +1,4 @@
-/** Chunk was on 76030 **/
+/** Chunk was on 59160 **/
 e.exports = {
   userAvatar: "userAvatar__9ec1a",
   svg: "svg__9ec1a"

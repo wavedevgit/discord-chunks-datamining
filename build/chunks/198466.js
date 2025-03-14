@@ -23,8 +23,8 @@ function p(e) {
     setConfettiCount: c,
     setShouldFireConfetti: f,
     tooltipProps: p
-  } = e, [h, m] = i.useState(0), g = i.useRef(-1), E = i.useRef(!0), v = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), {
-    scaleFactor: b
+  } = e, [h, m] = i.useState(0), g = i.useRef(-1), E = i.useRef(!0), b = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), {
+    scaleFactor: v
   } = (0, s.q_F)({
     from: {
       scaleFactor: 1
@@ -39,10 +39,10 @@ function p(e) {
   });
   return (i.useEffect(() => () => {
     E.current = !1
-  }, []), v) ? t : (0, r.jsx)(o.animated.div, {
+  }, []), b) ? t : (0, r.jsx)(o.animated.div, {
     className: u.confettiTriggerWrapper,
     style: {
-      transform: b.to(e => "scale(".concat(e, ")"))
+      transform: v.to(e => "scale(".concat(e, ")"))
     },
     children: (0, r.jsx)(s.P3F, {
       className: u.confettiTrigger,

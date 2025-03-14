@@ -126,7 +126,7 @@ function E(e) {
       })
     })
   }));
-  let v = a()(c.item, u);
+  let b = a()(c.item, u);
   return (0, r.jsx)("span", _(d({
     className: a()(c.spinner, o, {
       [c.stopAnimation]: !n
@@ -137,11 +137,11 @@ function E(e) {
     children: (0, r.jsxs)("span", {
       className: a()(c.inner, c[E]),
       children: [(0, r.jsx)("span", {
-        className: v
+        className: b
       }), (0, r.jsx)("span", {
-        className: v
+        className: b
       }), "pulsingEllipsis" === E || "lowMotion" === E ? (0, r.jsx)("span", {
-        className: v
+        className: b
       }) : null]
     })
   }))

@@ -70,11 +70,11 @@ function h(e) {
     className: g
   } = e, E = Math.ceil(n / i);
 
-  function v(e) {
+  function b(e) {
     null != h && h(e)
   }
 
-  function b(e) {
+  function v(e) {
     let {
       key: t,
       disabled: n,
@@ -161,7 +161,7 @@ function h(e) {
         children: t.map(e => {
           switch (e.type) {
             case d.s.BACK:
-              return b(e);
+              return v(e);
             case d.s.PAGE:
               return O(e);
             case d.s.GAP:
@@ -180,7 +180,7 @@ function h(e) {
     selectedPage: t,
     maxVisiblePages: o,
     hideMaxPage: m,
-    onPageChange: v,
+    onPageChange: b,
     children: S
   })
 }

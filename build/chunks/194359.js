@@ -20,7 +20,7 @@ var r = n(544891),
   g = n(858380),
   E = n(388032);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,14 +29,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -100,7 +100,7 @@ let S = {
       } = e, [a, s] = t.split("#");
       return r.tn.post({
         url: m.ANM.USER_RELATIONSHIPS(),
-        body: b({
+        body: v({
           username: a,
           discriminator: parseInt(s)
         }, i),
@@ -123,7 +123,7 @@ let S = {
       } = e, u = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0, f = d.default.getUser(n);
       return r.tn.put({
         url: m.ANM.USER_RELATIONSHIP(n),
-        body: b({
+        body: v({
           type: o,
           friend_token: a,
           from_friend_suggestion: s,

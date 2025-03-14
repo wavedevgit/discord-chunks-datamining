@@ -58,7 +58,7 @@ function m(e) {
   let {
     threads: t
   } = e;
-  for (let e in t) v(e, t[e].first_message)
+  for (let e in t) b(e, t[e].first_message)
 }
 
 function g(e) {
@@ -71,15 +71,15 @@ function g(e) {
     loaded: !0,
     firstMessage: null
   };
-  for (let e of n) v(e.channel_id, e)
+  for (let e of n) b(e.channel_id, e)
 }
 
 function E(e) {
   if (e.isPushNotification || e.message.id !== c.default.castChannelIdAsMessageId(e.message.channel_id)) return !1;
-  v(e.message.channel_id, e.message)
+  b(e.message.channel_id, e.message)
 }
 
-function v(e, t) {
+function b(e, t) {
   let n = null == t ? null : (0, a.e5)(t);
   p[e] = {
     loaded: !0,
@@ -87,7 +87,7 @@ function v(e, t) {
   }
 }
 
-function b(e) {
+function v(e) {
   if (e.message.id !== e.message.channel_id) return !1;
   let t = p[c.default.castMessageIdAsChannelId(e.message.id)];
   if (null == t || null == t.firstMessage) return !1;
@@ -195,7 +195,7 @@ u(C, "displayName", "ForumPostMessagesStore");
 let R = new C(o.Z, {
   CONNECTION_OPEN: h,
   MESSAGE_CREATE: E,
-  MESSAGE_UPDATE: b,
+  MESSAGE_UPDATE: v,
   MESSAGE_DELETE: y,
   THREAD_CREATE: O,
   MESSAGE_REACTION_ADD: I,

@@ -41,8 +41,8 @@ let p = window.matchMedia("(prefers-reduced-motion: reduce)"),
   m = window.matchMedia("(prefers-contrast: less)"),
   g = window.matchMedia("(prefers-color-scheme: dark)"),
   E = window.matchMedia("(prefers-color-scheme: light)"),
-  v = window.matchMedia("(forced-colors: active)"),
-  b = 5;
+  b = window.matchMedia("(forced-colors: active)"),
+  v = 5;
 
 function y() {
   let e = a.default.getCurrentUser();
@@ -54,7 +54,7 @@ function O() {
 }
 let I = {
   initBasic() {
-    p.addListener(this.handleSystemPrefersReducedMotionChanged), this.handleSystemPrefersReducedMotionChanged(p), g.addListener(this.handleSystemColorPreferencesChanged), E.addListener(this.handleSystemColorPreferencesChanged), v.addListener(this.handleSystemColorPreferencesChanged), this.handleSystemColorPreferencesChanged(), h.addListener(this.handleSystemPrefersContrastChanged), m.addListener(this.handleSystemPrefersContrastChanged), this.handleSystemPrefersContrastChanged()
+    p.addListener(this.handleSystemPrefersReducedMotionChanged), this.handleSystemPrefersReducedMotionChanged(p), g.addListener(this.handleSystemColorPreferencesChanged), E.addListener(this.handleSystemColorPreferencesChanged), b.addListener(this.handleSystemColorPreferencesChanged), this.handleSystemColorPreferencesChanged(), h.addListener(this.handleSystemPrefersContrastChanged), m.addListener(this.handleSystemPrefersContrastChanged), this.handleSystemPrefersContrastChanged()
   },
   init() {
     this.initBasic(), o.Z.subscribe("ACCESSIBILITY_COLORBLIND_TOGGLE", () => {
@@ -68,7 +68,7 @@ let I = {
     })
   },
   maybeShowKeyboardNavigationExplainerModal() {
-    b = Math.max(b - 1, 0), y() || u.Z.keyboardNavigationExplainerModalSeen || 0 !== b || (0, i.ZDy)(async () => {
+    v = Math.max(v - 1, 0), y() || u.Z.keyboardNavigationExplainerModalSeen || 0 !== v || (0, i.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("6380"), n.e("36149")]).then(n.bind(n, 461964));
@@ -83,7 +83,7 @@ let I = {
   handleSystemColorPreferencesChanged() {
     let e;
     g.matches ? e = d.BRd.DARK : E.matches && (e = d.BRd.LIGHT);
-    let t = (!l.isPlatformEmbedded || O()) && v.matches ? "active" : "none";
+    let t = (!l.isPlatformEmbedded || O()) && b.matches ? "active" : "none";
     o.Z.wait(() => {
       c.Ej(e, t)
     })

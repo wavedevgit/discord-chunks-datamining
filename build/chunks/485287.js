@@ -3,7 +3,7 @@
 n.d(t, {
   U5: () => y,
   ZP: () => I,
-  pp: () => b
+  pp: () => v
 }), n(47120);
 var r = n(442837),
   i = n(147913),
@@ -30,7 +30,7 @@ let m = e => e / 400,
   g = !1,
   E = (0, o.tu)("stage_waiting", "stage_waiting", m(s.Z.getOutputVolume()));
 
-function v() {
+function b() {
   let e = l.Z.getVoiceChannelId();
   if (null == e) {
     E.stop(), g = !1;
@@ -57,7 +57,7 @@ function v() {
   n || g ? n && (E.pause(), g = !1) : (E.volume = m(s.Z.getOutputVolume()), E.loop(), g = !0)
 }
 
-function b(e) {
+function v(e) {
   let t = (0, r.e7)([l.Z], () => l.Z.getVoiceChannelId() === e),
     n = null != (0, d.w8)(e, f.pV.SPEAKER).find(e => !e.voiceState.isVoiceMuted()),
     i = (0, r.e7)([_.Z], () => _.Z.getStageInstanceByChannel(e));
@@ -77,7 +77,7 @@ class O extends i.Z {
     } = e;
     if (null != t) {
       let e = a.Z.getChannel(t);
-      (null == e ? void 0 : e.isGuildStageVoice()) ? v(): (E.stop(), g = !1)
+      (null == e ? void 0 : e.isGuildStageVoice()) ? b(): (E.stop(), g = !1)
     } else E.stop(), g = !1
   }
   handleLogout() {
@@ -87,16 +87,16 @@ class O extends i.Z {
     let {
       play: t
     } = e;
-    t ? v() : (E.pause(), g = !1)
+    t ? b() : (E.pause(), g = !1)
   }
   handleMute(e) {
     let {
       muted: t
     } = e;
-    t ? (E.pause(), g = !1) : v()
+    t ? (E.pause(), g = !1) : b()
   }
   handleVoiceStateUpdates() {
-    v()
+    b()
   }
   handleSetOutputVolume(e) {
     let {
@@ -105,7 +105,7 @@ class O extends i.Z {
     E.volume = m(t)
   }
   handleToggleSelfDeaf() {
-    v()
+    b()
   }
   constructor(...e) {
     super(...e), h(this, "actions", {

@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, o, a, s, l, c, u, d, f, _, p, h, m, g, E, v;
+let r, i, o, a, s, l, c, u, d, f, _, p, h, m, g, E, b;
 n.d(t, {
   Z: () => eI
 }), n(47120);
-var b, y = n(392711),
+var v, y = n(392711),
   O = n(754700),
   I = n(887003),
   S = n(442837),
@@ -56,7 +56,7 @@ function x(e, t) {
 let M = new Map;
 
 function k() {
-  r = !1, i = !1, o = new Map, a = new Map, s = new Map, l = 0, c = new Set, u = new Set, d = new Set, f = new Set, M = new Map, p = new Map, h = new Map, m = new Map, g = null, E = new Map, _ = new Set, v = new Map
+  r = !1, i = !1, o = new Map, a = new Map, s = new Map, l = 0, c = new Set, u = new Set, d = new Set, f = new Set, M = new Map, p = new Map, h = new Map, m = new Map, g = null, E = new Map, _ = new Set, b = new Map
 }
 
 function j(e, t) {
@@ -89,7 +89,7 @@ function B(e, t) {
   })
 }
 
-function V(e) {
+function F(e) {
   var t;
   let {
     entitlements: n
@@ -97,14 +97,14 @@ function V(e) {
   return (null == r ? void 0 : r.tag) !== I.w.REWARD_CODE ? null : r.rewardCode
 }
 
-function F(e, t) {
+function V(e, t) {
   let n = new Map(h);
   n.set(e, t.items), h = n;
   let r = o.get(e),
     i = null == r ? void 0 : r.userStatus;
   if (null != i && null == i.claimedAt) {
     var a;
-    let n = V({
+    let n = F({
       entitlements: t
     });
     null != n && G(e, n), U(e, {
@@ -250,7 +250,7 @@ function el(e) {
     questId: t,
     entitlements: n
   } = e, r = new Set(u);
-  r.delete(t), u = r, F(t, n)
+  r.delete(t), u = r, V(t, n)
 }
 
 function ec(e) {
@@ -332,7 +332,7 @@ function eE(e) {
   E = new Map(E), null == n ? E.delete(t) : E.set(t, n)
 }
 
-function ev(e) {
+function eb(e) {
   var t;
   let {
     questId: n,
@@ -342,13 +342,13 @@ function ev(e) {
   o.set(r, i), M.set(n, o)
 }
 
-function eb(e) {
+function ev(e) {
   let {
     decisionId: t,
     quest: n,
     placement: r
   } = e;
-  null == n ? v.delete(r) : v.set(r, {
+  null == n ? b.delete(r) : b.set(r, {
     decisionId: t,
     quest: n
   })
@@ -358,10 +358,10 @@ function ey(e) {
   let {
     placement: t
   } = e;
-  v.delete(t)
+  b.delete(t)
 }
 k();
-class eO extends(b = S.ZP.Store) {
+class eO extends(v = S.ZP.Store) {
   get quests() {
     return o
   }
@@ -384,7 +384,7 @@ class eO extends(b = S.ZP.Store) {
     return o.get(null != g ? g : "")
   }
   get questToDeliverForPlacement() {
-    return v
+    return b
   }
   isEnrolling(e) {
     return c.has(e)
@@ -431,7 +431,7 @@ let eI = new eO(T.Z, {
   QUESTS_FETCH_CLAIMED_QUESTS_BEGIN: z,
   QUESTS_FETCH_CLAIMED_QUESTS_SUCCESS: q,
   QUESTS_FETCH_CLAIMED_QUESTS_FAILURE: Q,
-  QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS: eb,
+  QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS: ev,
   QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE: ey,
   QUESTS_SEND_HEARTBEAT_SUCCESS: X,
   QUESTS_SEND_HEARTBEAT_FAILURE: J,
@@ -453,5 +453,5 @@ let eI = new eO(T.Z, {
   QUESTS_PREVIEW_UPDATE_SUCCESS: em,
   QUESTS_DELIVERY_OVERRIDE: eg,
   QUESTS_SELECT_TASK_PLATFORM: eE,
-  QUESTS_UPDATE_OPTIMISTIC_PROGRESS: ev
+  QUESTS_UPDATE_OPTIMISTIC_PROGRESS: eb
 })

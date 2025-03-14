@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(139793),
   g = n(994746),
   E = n(652853),
-  v = n(448980),
-  b = n(336383),
+  b = n(448980),
+  v = n(336383),
   y = n(194811),
   O = n(373826),
   I = n(262210),
@@ -118,7 +118,7 @@ function D(e) {
         }, n))
       })
     },
-    V = () => {
+    F = () => {
       let {
         timestamps: e
       } = o;
@@ -132,7 +132,7 @@ function D(e) {
         end: n
       })
     },
-    F = () => t.id === n.id ? null : (0, r.jsx)("div", {
+    V = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: a()(A.actions, L),
       children: (0, r.jsx)(S.Z, {
         user: t,
@@ -142,7 +142,7 @@ function D(e) {
     });
   return (0, r.jsx)(u.Gt, {
     value: j,
-    children: (0, r.jsxs)(b.Z, {
+    children: (0, r.jsxs)(v.Z, {
       ref: G,
       className: a()(A.card, C),
       onAction: U,
@@ -180,14 +180,14 @@ function D(e) {
                   }), (0, p.aG)(o)
                 }
               }), B()]
-            }), (0, r.jsx)(v.Z, {
+            }), (0, r.jsx)(b.Z, {
               user: t,
               activity: o,
               className: A.badges
-            }), V()]
-          }), D === N.y0.FULL_SIZE && F()]
+            }), F()]
+          }), D === N.y0.FULL_SIZE && V()]
         })
-      }), D !== N.y0.FULL_SIZE && F()]
+      }), D !== N.y0.FULL_SIZE && V()]
     })
   })
 }

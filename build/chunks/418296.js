@@ -24,8 +24,8 @@ function u(e, t, n) {
     var g = e[u],
       E = t ? t(g) : g;
     if (g = n || 0 !== g ? g : 0, _ && E == E) {
-      for (var v = h.length; v--;)
-        if (h[v] === E) continue n;
+      for (var b = h.length; b--;)
+        if (h[b] === E) continue n;
       t && h.push(E), p.push(g)
     } else d(h, E, n) || (h !== p && h.push(E), p.push(g))
   }

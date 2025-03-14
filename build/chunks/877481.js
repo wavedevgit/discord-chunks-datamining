@@ -50,12 +50,12 @@ function E(e, t) {
   return n
 }
 
-function v(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = new i.Z("Games"),
+let v = new i.Z("Games"),
   y = {},
   O = 0,
   I = null,
@@ -77,7 +77,7 @@ function C(e) {
       thirdPartySkus: e.thirdPartySkus,
       executables: e.executables.filter(e => e.os === (0, f.getPlatformName)()).map(e => e.name)
     },
-    n = e.aliases.map(e => v(g({}, t), {
+    n = e.aliases.map(e => b(g({}, t), {
       name: e
     }));
   return [t, ...n]
@@ -119,7 +119,7 @@ function w(e, t, n) {
 }
 
 function D(e) {
-  return b.info("launch", e), new Promise((t, n) => {
+  return v.info("launch", e), new Promise((t, n) => {
     null == _.Z.safeParseWithQuery(e.launchTarget) ? n(Error("Failed to parse launch target. ".concat(e.launchTarget))) : (window.open(e.launchTarget), t([]))
   })
 }

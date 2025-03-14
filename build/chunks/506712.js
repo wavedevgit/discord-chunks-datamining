@@ -27,11 +27,11 @@ function d(e, t, n, r, i) {
       var t;
       return Number(null !== (t = e.num_month_opens) && void 0 !== t ? t : 0)
     }),
-    v = f("three month", r, p, e => {
+    b = f("three month", r, p, e => {
       var t;
       return Number(null !== (t = e.num_three_month_opens) && void 0 !== t ? t : 0)
     }),
-    b = [E, v, f("six month", r, p, e => {
+    v = [E, b, f("six month", r, p, e => {
       var t;
       return Number(null !== (t = e.num_six_month_opens) && void 0 !== t ? t : 0)
     }), g],
@@ -41,8 +41,8 @@ function d(e, t, n, r, i) {
     var t;
     y++, O += null !== (t = Number(e.num_messages)) && void 0 !== t ? t : 0
   });
-  let I = "\n**Pain**:\n- Everyones: ".concat(u.XR[null !== (s = h.everyones) && void 0 !== s ? s : 0], "\n- Messages: ").concat(u.XR[null !== (c = h.messages) && void 0 !== c ? c : 0], "\n- Size: ").concat(m, "\n**Remote**:\n- Channels: ").concat(y, "\n- AllVisits: ").concat(b.map(e => e.totalOpensAcrossAllServers).join(" / "), "\n- GuildVisits: ").concat(b.map(e => e.guildOpens).join(" / "), "\n- Biggest Channel (abs): ").concat(b.map(e => e.biggestChannel).join(" / "), "\n- Biggest Channel (%): ").concat(b.map(e => e.biggestChannelFormatted).join(" / "), "\n- Sent Msgs: ").concat(O, "\n"),
-    S = v.guildOpens >= .02 * v.totalOpensAcrossAllServers,
+  let I = "\n**Pain**:\n- Everyones: ".concat(u.XR[null !== (s = h.everyones) && void 0 !== s ? s : 0], "\n- Messages: ").concat(u.XR[null !== (c = h.messages) && void 0 !== c ? c : 0], "\n- Size: ").concat(m, "\n**Remote**:\n- Channels: ").concat(y, "\n- AllVisits: ").concat(v.map(e => e.totalOpensAcrossAllServers).join(" / "), "\n- GuildVisits: ").concat(v.map(e => e.guildOpens).join(" / "), "\n- Biggest Channel (abs): ").concat(v.map(e => e.biggestChannel).join(" / "), "\n- Biggest Channel (%): ").concat(v.map(e => e.biggestChannelFormatted).join(" / "), "\n- Sent Msgs: ").concat(O, "\n"),
+    S = b.guildOpens >= .02 * b.totalOpensAcrossAllServers,
     T = (null !== (d = g.guildOpens) && void 0 !== d ? d : 0) > 0;
   return h.messages !== u.XR.High || i && (S || !T) ? [u.AR.KeepAsIs, S, "KeepAsIs" + I] : [u.AR.UseGreyDot, S, "UseGreyDot" + I]
 }

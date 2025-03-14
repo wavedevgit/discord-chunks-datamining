@@ -43,11 +43,11 @@ function E(e) {
     showReportOption: f = !1,
     handleGoLive: _,
     onClose: E,
-    onSelect: v,
-    appContext: b = h.IlC.APP,
+    onSelect: b,
+    appContext: v = h.IlC.APP,
     disableChangeWindows: y = !1,
     onInteraction: O
-  } = e, I = null !== (t = s.find(e => e.ownerId === (null == i ? void 0 : i.id))) && void 0 !== t ? t : null, S = g(n, i, s), T = (0, l.Z)(I, b), {
+  } = e, I = null !== (t = s.find(e => e.ownerId === (null == i ? void 0 : i.id))) && void 0 !== t ? t : null, S = g(n, i, s), T = (0, l.Z)(I, v), {
     simplifiedSettingsEnabled: N
   } = (0, p.Z)({
     location: "ManageStreamsMenu"
@@ -57,12 +57,12 @@ function E(e) {
     showReportOption: f,
     handleGoLive: _,
     simplified: N,
-    appContext: b
+    appContext: v
   });
   return (0, r.jsx)(a.Z, {
     section: h.jXE.CONTEXT_MENU,
     children: (0, r.jsxs)(o.v2r, {
-      onSelect: v,
+      onSelect: b,
       navId: "manage-streams",
       onClose: E,
       onInteraction: O,

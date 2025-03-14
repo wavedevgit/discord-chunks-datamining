@@ -26,7 +26,7 @@ function g(e, t, n, r) {
   } = null != r ? r : {};
   switch (e[0]) {
     case "@":
-      return v(e, t, n, i, o);
+      return b(e, t, n, i, o);
     case ":":
       return O(e, t);
     case "#":
@@ -40,7 +40,7 @@ function E(e, t, n, r) {
   return null == i ? null : (0, h.VI)(i)
 }
 
-function v(e, t, n, r, o) {
+function b(e, t, n, r, o) {
   let [a, s] = e.slice(1).split("#", 2), c = null != t ? d.Z.getGuild(t) : null, f = (0, i.M9)(c);
   if (o && null == s && null != c) {
     for (let e of Object.values(d.Z.getRoles(c.id)))
@@ -57,7 +57,7 @@ function v(e, t, n, r, o) {
     if (null != e) {
       if (e.isPrivate()) {
         for (let t of e.recipients)
-          if (b(a, s, t)) return {
+          if (v(a, s, t)) return {
             type: "userMention",
             userId: t,
             children: [{
@@ -69,14 +69,14 @@ function v(e, t, n, r, o) {
             userId: e
           }
           of u.ZP.getMembers(t))
-          if (b(a, s, e)) return {
+          if (v(a, s, e)) return {
             type: "userMention",
             userId: e,
             children: [{
               text: ""
             }]
           };
-        if (f && b(a, s, m.fL)) return {
+        if (f && v(a, s, m.fL)) return {
           type: "userMention",
           userId: m.fL,
           children: [{
@@ -89,7 +89,7 @@ function v(e, t, n, r, o) {
   return null
 }
 
-function b(e, t, n) {
+function v(e, t, n) {
   let r = f.default.getUser(n);
   return null != r && (n === m.fL && "clyde" === e.toLowerCase() || r.username === e && r.discriminator === (null != t ? t : "0"))
 }

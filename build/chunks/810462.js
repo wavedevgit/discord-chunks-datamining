@@ -20,7 +20,7 @@ let d = i.forwardRef(function(e, t) {
     expressionsListRef: p,
     defaultSearchPlaceholder: h,
     emptySearchPlaceholder: m
-  } = e, g = i.useRef(null), [E, v] = (0, c.Iu)(e => [e.searchQuery, e.isSearchSuggestion], o.X), b = n.useStore(e => e.searchPlaceholder), y = n.useStore(e => e.inspectedExpressionPosition, o.X), O = i.useCallback(e => {
+  } = e, g = i.useRef(null), [E, b] = (0, c.Iu)(e => [e.searchQuery, e.isSearchSuggestion], o.X), v = n.useStore(e => e.searchPlaceholder), y = n.useStore(e => e.inspectedExpressionPosition, o.X), O = i.useCallback(e => {
     var t;
     n.setActiveCategoryIndex("" === e ? 0 : l.c), n.setInspectedExpressionPosition(0, 0), n.setSearchPlaceholder(null), (0, c.ql)(e), null === (t = p.current) || void 0 === t || t.scrollTo(0)
   }, [p, n]), I = i.useCallback(() => {
@@ -32,12 +32,12 @@ let d = i.forwardRef(function(e, t) {
       return null === (e = g.current) || void 0 === e ? void 0 : e.focus()
     }
   })), i.useLayoutEffect(() => {
-    if (v) {
+    if (b) {
       var e;
       null === (e = g.current) || void 0 === e || e.focus()
     }
-  }, [v]);
-  let S = () => null != b ? b : d || null == m ? h : m;
+  }, [b]);
+  let S = () => null != v ? v : d || null == m ? h : m;
   return (0, r.jsx)("div", {
     className: u.wrapper,
     children: (0, r.jsx)(s.E1j, {

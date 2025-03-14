@@ -5,10 +5,10 @@ n.d(t, {
   PW: () => I,
   Tu: () => A,
   am: () => y,
-  hP: () => b,
+  hP: () => v,
   hY: () => S,
   k1: () => N,
-  rC: () => v,
+  rC: () => b,
   wO: () => T
 }), n(177593);
 var r = n(544891),
@@ -70,7 +70,7 @@ function E(e, t, n, r) {
     }
   })).then(e => 202 === e.status ? Promise.reject(e) : e).catch(n => {
     let a = !0 !== r.onlyRetryOnAuthorizationErrors && 202 === n.status;
-    return (401 === n.status || a) && o > 0 ? (202 === n.status ? (0, i.GR)(m) : Promise.resolve()).then(() => b(t)).then(n => {
+    return (401 === n.status || a) && o > 0 ? (202 === n.status ? (0, i.GR)(m) : Promise.resolve()).then(() => v(t)).then(n => {
       let {
         body: {
           access_token: i
@@ -80,12 +80,12 @@ function E(e, t, n, r) {
     }).then(e => new Promise(t => setImmediate(() => t(e)))) : Promise.reject(n)
   })
 }
-let v = {
+let b = {
   get: E.bind(null, r.tn.get),
   put: E.bind(null, r.tn.put)
 };
 
-function b(e) {
+function v(e) {
   return r.tn.get({
     url: d.ANM.CONNECTION_ACCESS_TOKEN(d.ABu.SPOTIFY, e),
     oldFormErrors: !0,
@@ -99,7 +99,7 @@ function b(e) {
     else if (429 === t.status) {
       let n = t.headers["retry-after"] * a.Z.Millis.SECOND,
         r = isNaN(n) || 0 === n ? g : n;
-      return (0, i.GR)(r).then(() => b(e))
+      return (0, i.GR)(r).then(() => v(e))
     }
     return Promise.reject(t)
   }).then(t => {
@@ -116,7 +116,7 @@ function b(e) {
 
 function y(e, t, n) {
   let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 2;
-  return v.put(e, t, {
+  return b.put(e, t, {
     url: u.C7.NOTIFICATIONS_PLAYER,
     query: {
       connection_id: n
@@ -125,7 +125,7 @@ function y(e, t, n) {
 }
 
 function O(e, t) {
-  return v.get(e, t, {
+  return b.get(e, t, {
     url: u.C7.PROFILE
   }).then(t => (o.Z.dispatch({
     type: "SPOTIFY_PROFILE_UPDATE",
@@ -135,7 +135,7 @@ function O(e, t) {
 }
 
 function I(e, t) {
-  return v.get(e, t, {
+  return b.get(e, t, {
     url: u.C7.PLAYER_DEVICES
   }).then(t => (t.body && o.Z.dispatch({
     type: "SPOTIFY_SET_DEVICES",
@@ -153,7 +153,7 @@ function S(e, t, n, r) {
       contextUri: c,
       repeat: d
     } = i;
-  return v.put(e, t, {
+  return b.put(e, t, {
     url: u.C7.PLAYER_PLAY,
     query: {
       device_id: s
@@ -166,7 +166,7 @@ function S(e, t, n, r) {
       } : void 0,
       position_ms: null != l ? l : 0
     }
-  }).then(n => null == d ? n : v.put(e, t, {
+  }).then(n => null == d ? n : b.put(e, t, {
     url: u.C7.PLAYER_REPEAT,
     query: {
       device_id: s,
@@ -180,7 +180,7 @@ function S(e, t, n, r) {
 }
 
 function T(e, t) {
-  return v.put(e, t, {
+  return b.put(e, t, {
     url: u.C7.PLAYER_PAUSE
   }).then(e => (o.Z.dispatch({
     type: "SPOTIFY_PLAYER_PAUSE"

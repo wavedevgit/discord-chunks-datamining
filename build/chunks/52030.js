@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => b
 }), n(47120);
 var r, i = n(442837),
   o = n(570140);
@@ -55,7 +55,7 @@ class E extends(r = i.ZP.Store) {
   }
 }
 a(E, "displayName", "CollectiblesShopHomesStore");
-let v = new E(o.Z, {
+let b = new E(o.Z, {
   COLLECTIBLES_SHOP_HOME_FETCH: p,
   COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: h,
   COLLECTIBLES_SHOP_HOME_FETCH_FAILURE: m,

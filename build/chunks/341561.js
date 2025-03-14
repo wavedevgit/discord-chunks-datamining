@@ -20,8 +20,8 @@ var i = n(952265),
   m = n(877565),
   g = n(590921),
   E = n(665692),
-  v = n(981631),
-  b = n(388032),
+  b = n(981631),
+  v = n(388032),
   y = n(171925);
 
 function O(e, t, n) {
@@ -77,7 +77,7 @@ let D = {
         location: "queryResults"
       }),
       s = r.allowStickers || o ? 0 : A,
-      u = v.rnv + s,
+      u = b.rnv + s,
       {
         emojis: {
           unlocked: d
@@ -149,8 +149,8 @@ let D = {
         autocompletes: t,
         onHover: d,
         onClick: f,
-        titleWithQuery: b.t.ksAVYm,
-        titleWithoutQuery: b.NW.string(b.t.sMOuub),
+        titleWithQuery: v.t.ksAVYm,
+        titleWithoutQuery: v.NW.string(v.t.sMOuub),
         Component: o.ZP.Emoji,
         getProps: e => ({
           emoji: e,
@@ -166,8 +166,8 @@ let D = {
         autocompletes: l,
         onHover: d,
         onClick: p,
-        titleWithQuery: 0 === t.length ? b.t.ksAVYm : null,
-        titleWithoutQuery: 0 === t.length ? b.NW.string(b.t.sMOuub) : null,
+        titleWithQuery: 0 === t.length ? v.t.ksAVYm : null,
+        titleWithoutQuery: 0 === t.length ? v.NW.string(v.t.sMOuub) : null,
         Component: o.ZP.EmojiUpsell,
         getProps: e => {
           let {
@@ -189,8 +189,8 @@ let D = {
         autocompletes: a,
         onHover: d,
         onClick: f,
-        titleWithQuery: b.t.uferGB,
-        titleWithoutQuery: b.NW.string(b.t["fT+Yjo"]),
+        titleWithQuery: v.t.uferGB,
+        titleWithoutQuery: v.NW.string(v.t["fT+Yjo"]),
         Component: o.ZP.Sticker,
         getProps: e => {
           let {
@@ -216,8 +216,8 @@ let D = {
         autocompletes: s,
         onHover: d,
         onClick: f,
-        titleWithQuery: b.t["0cKBGB"],
-        titleWithoutQuery: b.NW.string(b.t.EHlAMT),
+        titleWithQuery: v.t["0cKBGB"],
+        titleWithoutQuery: v.NW.string(v.t.EHlAMT),
         Component: o.ZP.Soundmoji,
         getProps: e => {
           let {
@@ -277,7 +277,7 @@ let D = {
     }
     if ((o -= i.length) < r.length) {
       let e = r[o];
-      return a.insertText((0, s.Z)(e.sound.guildId, e.sound.soundId)), p.default.track(v.rMx.SOUNDMOJI_SELECT, {
+      return a.insertText((0, s.Z)(e.sound.guildId, e.sound.soundId)), p.default.track(b.rMx.SOUNDMOJI_SELECT, {
         channel_id: l.id,
         guild_id: l.guild_id,
         sound_guild_id: e.sound.guildId,

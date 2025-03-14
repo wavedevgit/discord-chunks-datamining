@@ -56,9 +56,9 @@ function E(e, t) {
   }), e
 }
 
-function v(e, t) {
+function b(e, t) {
   if (null == e) return {};
-  var n, r, i = b(e, t);
+  var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -66,7 +66,7 @@ function v(e, t) {
   return i
 }
 
-function b(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -79,7 +79,7 @@ async function O(e) {
     analyticsLocations: t,
     analyticsLocation: h,
     analyticsSourceLocation: g,
-    numberOfBoostsToAdd: b,
+    numberOfBoostsToAdd: v,
     onClose: O,
     closeLayer: I,
     onSubscriptionConfirmation: S,
@@ -98,7 +98,7 @@ async function O(e) {
       return t => {
         var {
           onClose: n
-        } = t, i = v(t, ["onClose"]);
+        } = t, i = b(t, ["onClose"]);
         return (0, r.jsx)(e, E(m({}, i), {
           onClose: n
         }))
@@ -121,16 +121,16 @@ async function O(e) {
         location_section: h.section
       })
     };
-  if (x > 0 && (null == b || x >= b)) {
+  if (x > 0 && (null == v || x >= v)) {
     let e;
-    1 === x ? e = L.slice(0, 1) : null != b && (e = L.slice(0, b)), await (0, i.ZDy)(async () => {
+    1 === x ? e = L.slice(0, 1) : null != v && (e = L.slice(0, v)), await (0, i.ZDy)(async () => {
       let {
         default: t
       } = await Promise.all([n.e("22646"), n.e("30419"), n.e("60662")]).then(n.bind(n, 760558));
       return n => {
         var {
           onClose: i
-        } = n, o = v(n, ["onClose"]);
+        } = n, o = b(n, ["onClose"]);
         return (0, r.jsx)(t, E(m({}, o), {
           onClose: e => {
             i(), M(e)
@@ -153,7 +153,7 @@ async function O(e) {
     analyticsSourceLocation: g,
     guildId: T.id,
     closeLayer: k,
-    totalNumberOfSlotsToAssign: null != b ? b : 1,
+    totalNumberOfSlotsToAssign: null != v ? v : 1,
     onCloseModal: M,
     disablePremiumUpsell: A,
     onSubscriptionConfirmation: S,

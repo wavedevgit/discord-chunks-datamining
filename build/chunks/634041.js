@@ -53,13 +53,13 @@ function h(e, t) {
 let m = !1,
   g = null,
   E = !1,
-  v = {};
+  b = {};
 
-function b(e) {
+function v(e) {
   let {
     assets: t
   } = e;
-  v = t.reduce((e, t) => h(_({}, e), {
+  b = t.reduce((e, t) => h(_({}, e), {
     [t.id]: t
   }), {})
 }
@@ -68,7 +68,7 @@ function y(e) {
   let {
     videoFilterAsset: t
   } = e;
-  v = h(_({}, v), {
+  b = h(_({}, b), {
     [t.id]: t
   })
 }
@@ -77,7 +77,7 @@ function O(e) {
   let {
     videoFilterAsset: t
   } = e;
-  v = _({}, v), delete v[t.id]
+  b = _({}, b), delete b[t.id]
 }
 
 function I(e) {
@@ -110,7 +110,7 @@ class A extends(r = i.ZP.Store) {
     this.waitFor(s.Z, c.Z, l.Z), this.syncWith([c.Z, l.Z], N)
   }
   get videoFilterAssets() {
-    return v
+    return b
   }
   get hasBeenApplied() {
     return m
@@ -121,7 +121,7 @@ class A extends(r = i.ZP.Store) {
 }
 f(A, "displayName", "VideoBackgroundStore");
 let C = new A(a.Z, {
-  VIDEO_FILTER_ASSETS_FETCH_SUCCESS: b,
+  VIDEO_FILTER_ASSETS_FETCH_SUCCESS: v,
   VIDEO_FILTER_ASSET_UPLOAD_SUCCESS: y,
   VIDEO_FILTER_ASSET_DELETE_SUCCESS: O,
   VIDEO_SAVE_LAST_USED_BACKGROUND_OPTION: S,

@@ -1,4 +1,5 @@
-/** Chunk was on 5945 **/
+/** Chunk was on 10396 **/
+"use strict";
 e.exports = {
   container: "container__33d66",
   pill: "pill__33d66",

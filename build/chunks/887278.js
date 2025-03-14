@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $1: () => v,
+  $1: () => b,
   YT: () => O,
   pn: () => I
 }), n(411104);
@@ -62,13 +62,13 @@ let E = {
   stable: [1, 0, 9001, 2]
 };
 
-function v() {
+function b() {
   var e;
   return !(null === d.ZP || void 0 === d.ZP ? void 0 : null === (e = d.ZP.isModuleVersionAtLeast) || void 0 === e ? void 0 : e.call(d.ZP, "discord_hook", E))
 }
-async function b() {
+async function v() {
   if (!(0, u.isWindows)()) return Promise.reject(Error("Hook is only available on Windows"));
-  if (v()) return Promise.reject(Error("Hook module is too old"));
+  if (b()) return Promise.reject(Error("Hook module is too old"));
   await d.ZP.ensureModule("discord_hook");
   let e = await d.ZP.requireModule("discord_hook");
   return y(e), e
@@ -88,7 +88,7 @@ function y(e) {
 }
 
 function O(e, t) {
-  return b().then(n => {
+  return v().then(n => {
     var l;
     let u = null === (l = a.ZP.getGameForPID(e)) || void 0 === l ? void 0 : l.name,
       d = s.Z.getGameByName(u),
@@ -114,7 +114,7 @@ function O(e, t) {
 }
 
 function I(e) {
-  return b().then(t => {
+  return v().then(t => {
     t.cancelAttachToProcess(e)
   })
 }

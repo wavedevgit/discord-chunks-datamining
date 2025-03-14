@@ -23,9 +23,9 @@ let E = {
     mass: 2.5,
     friction: 70
   },
-  v = 20;
+  b = 20;
 
-function b(e) {
+function v(e) {
   let {
     tooltipText: t,
     headingText: n,
@@ -82,7 +82,7 @@ function O(e) {
     x = A ? m.NW.string(m.t.ORK94u) : void 0;
   return (0, r.jsxs)(u.DY3, {
     position: "top",
-    text: (0, r.jsx)(b, {
+    text: (0, r.jsx)(v, {
       textColor: "always-white",
       tooltipText: L,
       headingText: x
@@ -108,8 +108,8 @@ function O(e) {
       }) : null, (0, r.jsx)(w, {
         style: O ? void 0 : R,
         size: "custom",
-        width: v,
-        height: v,
+        width: b,
+        height: b,
         color: t ? "white" : "currentColor",
         className: g.icon
       }), (0, r.jsx)("span", {

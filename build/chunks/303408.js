@@ -90,14 +90,14 @@ function l(e) {
       end: /\}/,
       contains: f
     }),
-    v = {
+    b = {
       beginKeywords: "when",
       endsWithParent: !0,
       contains: [{
         beginKeywords: "and not"
       }].concat(_)
     },
-    b = {
+    v = {
       begin: d + "\\s*:",
       returnBegin: !0,
       end: /[;}]/,
@@ -153,7 +153,7 @@ function l(e) {
       returnEnd: !0,
       illegal: "[<='$\"]",
       relevance: 0,
-      contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, v, h("keyword", "all\\b"), h("variable", "@\\{" + u + "\\}"), {
+      contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, b, h("keyword", "all\\b"), h("variable", "@\\{" + u + "\\}"), {
         begin: "\\b(" + n.join("|") + ")\\b",
         className: "selector-tag"
       }, l.CSS_NUMBER_MODE, h("selector-tag", d, 0), h("selector-id", "#" + d), h("selector-class", "\\." + d, 0), h("selector-tag", "&", 0), l.ATTRIBUTE_SELECTOR_MODE, {
@@ -176,7 +176,7 @@ function l(e) {
       returnBegin: !0,
       contains: [I]
     };
-  return f.push(e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, y, O, S, b, I, v, l.FUNCTION_DISPATCH), {
+  return f.push(e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, y, O, S, v, I, b, l.FUNCTION_DISPATCH), {
     name: "Less",
     case_insensitive: !0,
     illegal: "[=>'/<($\"]",

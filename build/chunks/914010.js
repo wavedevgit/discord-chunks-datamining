@@ -27,12 +27,12 @@ let h = -1,
   g = null,
   E = {};
 
-function v() {
+function b() {
   null != m && null == f.Z.getGuild(m) && null == s.Z.getRequest(m) && (m = null), null != g && null == f.Z.getGuild(g) && null == s.Z.getRequest(g) && (g = null), y(m)
 }
 
-function b(e) {
-  m = e.selectedGuildId, g = void 0, v()
+function v(e) {
+  m = e.selectedGuildId, g = void 0, b()
 }
 
 function y(e) {
@@ -102,8 +102,8 @@ class A extends(r = o.ZP.PersistedStore) {
 }
 p(A, "displayName", "SelectedGuildStore"), p(A, "persistKey", "SelectedGuildStore");
 let C = new A(a.Z, {
-  CONNECTION_OPEN: v,
-  OVERLAY_INITIALIZE: b,
+  CONNECTION_OPEN: b,
+  OVERLAY_INITIALIZE: v,
   CHANNEL_SELECT: O,
   GUILD_MEMBER_REMOVE: T,
   GUILD_DELETE: S,

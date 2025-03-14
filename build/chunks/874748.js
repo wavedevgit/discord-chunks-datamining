@@ -25,12 +25,12 @@ function _(e) {
     postThread: m,
     user: g,
     selectedGuildId: E,
-    canAccess: v = !1
+    canAccess: b = !1
   } = e;
   if (null == c) return null;
-  let b = (0, l.EY)(c.thumbnail),
-    y = !v && c.has_media_attachment,
-    O = v ? d.NW.string(d.t.UsZEBA) : d.NW.string(d.t.ReFzYW),
+  let v = (0, l.EY)(c.thumbnail),
+    y = !b && c.has_media_attachment,
+    O = b ? d.NW.string(d.t.UsZEBA) : d.NW.string(d.t.ReFzYW),
     I = null != g ? s.ZP.getName(c.guild_id, c.channel_id, g) : void 0,
     S = null == g ? void 0 : g.getAvatarURL(null == _ ? void 0 : _.id, f);
   (null == S || E !== c.guild_id) && (S = a.ZP.getGuildIconURL({
@@ -45,13 +45,13 @@ function _(e) {
     title: null !== (i = c.title) && void 0 !== i ? i : "",
     subtitle: c.description,
     ctaText: O,
-    coverImage: b,
+    coverImage: v,
     coverImageOverlayText: y ? d.NW.string(d.t.YonliY) : void 0,
     parentChannelId: c.parent_channel_id,
     threadId: c.channel_id,
     postThread: m,
     messageId: c.message_id,
-    canAccess: v,
+    canAccess: b,
     guildId: c.guild_id,
     guildName: null !== (o = null == _ ? void 0 : _.name) && void 0 !== o ? o : c.guild_name,
     authorId: null == c ? void 0 : c.author_id,

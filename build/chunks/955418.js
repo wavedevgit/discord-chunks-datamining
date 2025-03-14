@@ -31,7 +31,7 @@ function g(e) {
     newestAnalyticsLocation: g
   } = (0, o.ZP)(), {
     trackUserProfileAction: E
-  } = (0, d.KZ)(), [v, b] = i.useState(""), [y, O] = i.useState((0, s.JM)(v)), I = i.useRef(!1);
+  } = (0, d.KZ)(), [b, v] = i.useState(""), [y, O] = i.useState((0, s.JM)(b)), I = i.useRef(!1);
   return (0, r.jsx)(l.Z, {
     className: h.container,
     innerClassName: h.inner,
@@ -41,10 +41,10 @@ function g(e) {
       name: u.ZP.getName(n, c, t)
     }),
     channel: m,
-    textValue: v,
+    textValue: b,
     richValue: y,
     onChange: (e, t, n) => {
-      t !== v && (b(t), O(n))
+      t !== b && (v(t), O(n))
     },
     focused: I.current,
     onFocus: () => {

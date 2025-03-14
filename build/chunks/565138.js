@@ -27,7 +27,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function v(e) {
   return e
 }
 
-function b(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,7 +52,7 @@ function b(e, t) {
 }
 
 function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -146,7 +146,7 @@ class A extends o.PureComponent {
         tooltipPosition: p,
         onClick: h,
         to: E,
-        badgeStrokeColor: b,
+        badgeStrokeColor: v,
         animate: I,
         tabIndex: S,
         iconSrc: T,
@@ -155,14 +155,14 @@ class A extends o.PureComponent {
       C = O(n, ["guild", "className", "showBadge", "active", "size", "style", "textScale", "showTooltip", "tooltipPosition", "onClick", "to", "badgeStrokeColor", "animate", "tabIndex", "iconSrc", "aria-hidden"]),
       R = N[c],
       P = null != h ? d.P3F : "div";
-    return (0, i.jsxs)(P, y(v({
+    return (0, i.jsxs)(P, y(b({
       className: s()(g.icon, o, (0, m.l)(g, "iconSize", c), {
         [null !== (e = (0, m.l)(g, "iconActive", c)) && void 0 !== e ? e : ""]: l,
         [g.iconInactive]: !l,
         [g.noIcon]: null == r.icon
       }),
       "aria-hidden": A,
-      style: null == r.icon ? v({
+      style: null == r.icon ? b({
         fontSize: (null !== (t = R[r.acronym.length]) && void 0 !== t ? t : R[R.length - 1]) * f
       }, u) : u,
       onClick: null != E || null == h ? void 0 : h,
@@ -181,7 +181,7 @@ class A extends o.PureComponent {
       text: e.name,
       position: n,
       "aria-label": !1,
-      children: e => o.cloneElement(o.Children.only(this.renderIcon()), v({}, e))
+      children: e => o.cloneElement(o.Children.only(this.renderIcon()), b({}, e))
     }) : this.renderIcon()
   }
   render() {
@@ -217,14 +217,14 @@ let C = c.ZP.connectStores([p.Z], e => {
     lossless: s
   } = e;
   return {
-    style: y(v({}, i), {
+    style: y(b({}, i), {
       backgroundImage: (0, h.rv)(null != r ? r : t.getIconURL(null != a ? a : T[o], n && p.Z.isFocused(), s))
     })
   }
-})((0, f.N)(e => (0, i.jsx)(A, v({}, e))));
+})((0, f.N)(e => (0, i.jsx)(A, b({}, e))));
 class R extends(r = o.PureComponent) {
   render() {
-    return (0, i.jsx)(C, v({}, this.props))
+    return (0, i.jsx)(C, b({}, this.props))
   }
 }
 E(R, "Sizes", S), E(R, "defaultProps", {

@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  W: () => v,
-  Z: () => b
+  W: () => b,
+  Z: () => v
 });
 var r = n(200651);
 n(192379);
@@ -21,26 +21,26 @@ var i = n(442837),
   m = n(228168),
   g = n(981631),
   E = n(203396);
-let v = 3;
+let b = 3;
 
-function b(e) {
+function v(e) {
   let {
     user: t,
     guild: n,
-    channel: b,
+    channel: v,
     onAction: y,
     onClose: O
   } = e, {
     profileType: I
-  } = (0, p.z)(), S = (0, _.Z)(b);
-  if (!(0, i.e7)([f.Z], () => f.Z.can(g.Plq.VIEW_CHANNEL, b))) return null;
+  } = (0, p.z)(), S = (0, _.Z)(v);
+  if (!(0, i.e7)([f.Z], () => f.Z.can(g.Plq.VIEW_CHANNEL, v))) return null;
   let T = e => {
       e.stopPropagation(), (0, d.X)(n.id), null == y || y({
         action: "OPEN_VOICE_GUILD"
       }), null == O || O()
     },
     N = e => {
-      e.stopPropagation(), a.default.selectVoiceChannel(b.id), (0, u.Kh)(b.id), null == y || y({
+      e.stopPropagation(), a.default.selectVoiceChannel(v.id), (0, u.Kh)(v.id), null == y || y({
         action: "OPEN_VOICE_CHANNEL"
       }), null == O || O()
     },
@@ -67,7 +67,7 @@ function b(e) {
       }), (0, r.jsxs)("div", {
         className: E.voiceChannelText,
         children: [(0, r.jsx)(h.Z, {
-          channel: b,
+          channel: v,
           size: "xxs",
           color: o.TVs.colors.INTERACTIVE_NORMAL,
           className: E.voiceIcon
@@ -79,15 +79,15 @@ function b(e) {
             color: "interactive-normal",
             lineClamp: 1,
             children: (0, r.jsx)(s.Z, {
-              children: b.name
+              children: v.name
             })
           })
         })]
       }), (0, r.jsx)(l.Z, {
         users: S,
         guildId: n.id,
-        channelId: b.id,
-        maxUsers: v,
+        channelId: v.id,
+        maxUsers: b,
         size: o.EFr.SIZE_16,
         onClick: e => {
           e.stopPropagation(), null == y || y({

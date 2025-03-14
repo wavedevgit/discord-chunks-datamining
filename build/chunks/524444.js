@@ -35,8 +35,8 @@ var r = n(200651),
   m = n(593472),
   g = n(110924),
   E = n(40330),
-  v = n(249458),
-  b = n(313201),
+  b = n(249458),
+  v = n(313201),
   y = n(540059),
   O = n(688465),
   I = n(425886),
@@ -57,8 +57,8 @@ var r = n(200651),
   U = n(217702),
   G = n(981631),
   B = n(420212),
-  V = n(814249),
-  F = n(388032),
+  F = n(814249),
+  V = n(388032),
   Z = n(729548);
 
 function H(e, t, n) {
@@ -210,7 +210,7 @@ function en(e) {
       altText: t
     } = e;
     return (0, r.jsxs)(d.VqE, {
-      "aria-label": F.NW.string(F.t.fSiQ3N),
+      "aria-label": V.NW.string(V.t.fSiQ3N),
       className: Z.mediaMosaicAltTextPopout,
       onKeyDown: e => {
         e.key === B.mR.Escape && setTimeout(() => {
@@ -220,7 +220,7 @@ function en(e) {
       },
       children: [(0, r.jsx)("span", {
         className: Z.mediaMosaicAltTextPopoutTitle,
-        children: F.NW.string(F.t.fSiQ3N)
+        children: V.NW.string(V.t.fSiQ3N)
       }), (0, r.jsx)("span", {
         className: Z.mediaMosaicAltTextPopoutDescription,
         children: t
@@ -245,11 +245,11 @@ function en(e) {
           children: (0, r.jsx)("button", K(W({}, e), {
             type: "button",
             ref: E,
-            "aria-label": F.NW.string(F.t.fSiQ3N),
+            "aria-label": V.NW.string(V.t.fSiQ3N),
             className: a()(Z.mediaMosaicAltText, {
               [Z.reducedSize]: u
             }),
-            children: F.NW.string(F.t.jCV1T0)
+            children: V.NW.string(V.t.jCV1T0)
           }))
         })
       })
@@ -283,9 +283,9 @@ var ea = function(e) {
 function es(e) {
   switch (e) {
     case 0:
-      return F.NW.string(F.t["4EvBb2"]);
+      return V.NW.string(V.t["4EvBb2"]);
     case 1:
-      return F.NW.string(F.t["1J6Xq6"]);
+      return V.NW.string(V.t["1J6Xq6"]);
     default:
       return (0, M.vE)(e)
   }
@@ -294,9 +294,9 @@ function es(e) {
 function el(e) {
   switch (e) {
     case 0:
-      return F.NW.string(F.t.gpoQsL);
+      return V.NW.string(V.t.gpoQsL);
     case 1:
-      return F.NW.string(F.t["k3RM8/"]);
+      return V.NW.string(V.t["k3RM8/"]);
     default:
       return (0, M.vE)(e)
   }
@@ -307,7 +307,7 @@ let ec = e => {
       onClick: n,
       className: i
     } = e, o = (0, y.Q3)("JumpToPresentBar");
-    return (0, r.jsx)(v.G.Consumer, {
+    return (0, r.jsx)(b.G.Consumer, {
       children: e => e.disableInteractions ? null : (0, r.jsxs)("div", {
         className: a()(Z.jumpToPresentBar, i),
         children: [(0, r.jsx)(d.tEY, {
@@ -346,7 +346,7 @@ let ec = e => {
       loading: n,
       className: i
     } = e;
-    return (0, r.jsx)(v.G.Consumer, {
+    return (0, r.jsx)(b.G.Consumer, {
       children: e => e.disableInteractions ? null : (0, r.jsxs)(d.P3F, {
         className: a()(Z.messagesErrorBar, i),
         onClick: t,
@@ -360,14 +360,14 @@ let ec = e => {
         },
         children: [(0, r.jsx)("div", {
           className: Z.barButtonMain,
-          children: F.NW.string(F.t["1zUvl5"])
+          children: V.NW.string(V.t["1zUvl5"])
         }), n ? (0, r.jsx)(d.$jN, {
           type: d.$jN.Type.PULSING_ELLIPSIS,
           className: Z.spinner,
           itemClassName: Z.spinnerItem
         }) : (0, r.jsx)("div", {
           className: Z.barButtonAlt,
-          children: F.NW.string(F.t.TdQXAw)
+          children: V.NW.string(V.t.TdQXAw)
         })]
       })
     })
@@ -377,7 +377,7 @@ function ed(e) {
   let {
     content: t,
     channelId: n
-  } = e, [o] = i.useState(() => (0, b.hQ)("NewMessagesBarJumpToNewMessages_")), s = i.useCallback(() => {
+  } = e, [o] = i.useState(() => (0, v.hQ)("NewMessagesBarJumpToNewMessages_")), s = i.useCallback(() => {
     let e = w.ZP.ackMessageId(n);
     null != e ? f.Z.jumpToMessage({
       channelId: n,
@@ -394,7 +394,7 @@ function ed(e) {
     (0, _.In)(n)
   }, [n]), {
     disableInteractions: c
-  } = i.useContext(v.G);
+  } = i.useContext(b.G);
   return c ? null : (0, r.jsxs)("div", {
     className: a()(Z.newMessagesBar, {
       [Z.disableInteractions]: c
@@ -405,7 +405,7 @@ function ed(e) {
         type: "button",
         className: Z.barButtonMain,
         onClick: s,
-        "aria-label": F.NW.string(F.t.z0Mkp6),
+        "aria-label": V.NW.string(V.t.z0Mkp6),
         "aria-describedby": o,
         children: (0, r.jsx)("span", {
           id: o,
@@ -419,7 +419,7 @@ function ed(e) {
         type: "button",
         onClick: l,
         className: Z.barButtonAlt,
-        children: [F.NW.string(F.t.e6RscX), (0, r.jsx)(d.eQA, {
+        children: [V.NW.string(V.t.e6RscX), (0, r.jsx)(d.eQA, {
           size: "md",
           color: "currentColor",
           className: Z.barButtonIcon
@@ -437,7 +437,7 @@ function ef(e) {
     scrollManager: h
   } = e, {
     disableInteractions: E
-  } = i.useContext(v.G), [b, y] = i.useState(null), I = i.useRef(null), [S, T] = i.useState(null), R = i.useRef(null), P = (0, u.Wu)([A.Z], () => {
+  } = i.useContext(b.G), [v, y] = i.useState(null), I = i.useRef(null), [S, T] = i.useState(null), R = i.useRef(null), P = (0, u.Wu)([A.Z], () => {
     var e;
     return null !== (e = A.Z.summaries(s.id)) && void 0 !== e ? e : []
   }, [s]), k = (0, g.Z)(P);
@@ -465,7 +465,7 @@ function ef(e) {
     }, [P], ep),
     B = null !== (n = (0, u.e7)([A.Z], () => A.Z.visibleSummaryIndex())) && void 0 !== n ? n : -1,
     H = null == P ? void 0 : null === (t = P[B]) || void 0 === t ? void 0 : t.topic;
-  null == H && null == b && (null == P ? void 0 : P.length) >= 1 && (H = null === (o = P[0]) || void 0 === o ? void 0 : o.topic);
+  null == H && null == v && (null == P ? void 0 : P.length) >= 1 && (H = null === (o = P[0]) || void 0 === o ? void 0 : o.topic);
   let W = i.useMemo(() => l().debounce(e => {
       var t;
       y(null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : null)
@@ -493,7 +493,7 @@ function ef(e) {
       }), q(!z)
     }, [z, P, q, s]),
     X = i.useCallback(function(e) {
-      let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : V.DZ.PILL_DROPDOWN,
+      let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : F.DZ.PILL_DROPDOWN,
         n = P[e];
       if (null == n) return;
       (0, N.wv)(s.id, n.id), (0, N.yK)(s.id, n.id);
@@ -576,15 +576,15 @@ function ef(e) {
     en = i.useCallback(() => {
       (0, _.In)(s.id)
     }, [s.id]),
-    er = F.NW.string(F.t["38qwgI"]);
-  return P.length > 0 && (er = "" === H || null == H ? F.NW.string(F.t.DwnFuL) : H), E ? null : (0, r.jsxs)("div", {
+    er = V.NW.string(V.t["38qwgI"]);
+  return P.length > 0 && (er = "" === H || null == H ? V.NW.string(V.t.DwnFuL) : H), E ? null : (0, r.jsxs)("div", {
     ref: I,
     className: a()(Z.newTopicsBarContainer, Z.containerMarginTop),
     children: [(0, r.jsx)("div", {
       className: Z.newTopicsBarTopicSection,
       children: (0, r.jsx)(d.P3F, {
         className: Z.newTopicsBarTextClickable,
-        "aria-label": F.NW.string(F.t.RT3MPz),
+        "aria-label": V.NW.string(V.t.RT3MPz),
         onClick: Q,
         children: (0, r.jsxs)("div", {
           className: a()({
@@ -616,7 +616,7 @@ function ef(e) {
       className: a()(Z.barButtonAlt, Z.flexEnd),
       children: [(0, r.jsx)("div", {
         className: Z.newTopicsBarCompact,
-        children: F.NW.string(F.t.e6RscX)
+        children: V.NW.string(V.t.e6RscX)
       }), (0, r.jsx)(d.eQA, {
         size: "md",
         color: "currentColor",
@@ -638,12 +638,12 @@ function ef(e) {
             variant: "heading-md/bold",
             color: "header-primary",
             lineClamp: 1,
-            children: F.NW.string(F.t.q21fUl)
+            children: V.NW.string(V.t.q21fUl)
           }), (0, r.jsx)(O.Z, {
             className: Z.summariesBetaTag
           })]
         }), (0, r.jsx)(d.P3F, {
-          "aria-label": F.NW.string(F.t.cpT0Cg),
+          "aria-label": V.NW.string(V.t.cpT0Cg),
           onClick: Q,
           className: Z.topicsDropdownClose,
           children: (0, r.jsx)(d.Dio, {
@@ -676,7 +676,7 @@ function eh(e) {
     scrollManager: _
   } = e, {
     disableInteractions: p
-  } = i.useContext(v.G), [h, E] = i.useState(null), b = i.useRef(null), [y, I] = i.useState(null), S = i.useRef(null), T = (0, u.Wu)([A.Z], () => {
+  } = i.useContext(b.G), [h, E] = i.useState(null), v = i.useRef(null), [y, I] = i.useState(null), S = i.useRef(null), T = (0, u.Wu)([A.Z], () => {
     var e;
     return null !== (e = A.Z.summaries(s.id)) && void 0 !== e ? e : []
   }, [s]), R = (0, g.Z)(T);
@@ -734,7 +734,7 @@ function eh(e) {
       }), K(!Y)
     }, [Y, T, K, s]),
     q = i.useCallback(function(e) {
-      let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : V.DZ.PILL_DROPDOWN,
+      let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : F.DZ.PILL_DROPDOWN,
         n = T[e];
       if (null == n) return;
       (0, N.wv)(s.id, n.id), (0, N.yK)(s.id, n.id);
@@ -759,10 +759,10 @@ function eh(e) {
       })
     }, [T, s, W, _]),
     Q = i.useCallback(() => {
-      q(w - 1, V.DZ.PILL_NEXT_ARROW)
+      q(w - 1, F.DZ.PILL_NEXT_ARROW)
     }, [q, w]),
     X = i.useCallback(() => {
-      q(w + 1, V.DZ.PILL_PREVIOUS_ARROW)
+      q(w + 1, F.DZ.PILL_PREVIOUS_ARROW)
     }, [w, q]),
     J = i.useCallback(e => {
       var t;
@@ -780,7 +780,7 @@ function eh(e) {
   }, [y, Y]);
   let $ = i.useCallback(e => {
     var t;
-    !((0, c.k)(e.target) && (null === (t = b.current) || void 0 === t ? void 0 : t.contains(e.target))) && (Y && x.default.track(G.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
+    !((0, c.k)(e.target) && (null === (t = v.current) || void 0 === t ? void 0 : t.contains(e.target))) && (Y && x.default.track(G.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
       topics_dropdown_open: !1,
       num_summaries: T.length,
       message_counts: T.map(e => e.count),
@@ -807,15 +807,15 @@ function eh(e) {
     setOpen: J
   }), [T, P, q, J, s]);
   if (!(0, u.e7)([A.Z], () => A.Z.shouldShowTopicsBar())) return null;
-  let et = F.NW.string(F.t["38qwgI"]);
-  return T.length > 0 && (et = "" === k || null == k ? F.NW.string(F.t.DwnFuL) : k), p ? null : (0, r.jsxs)("div", {
-    ref: b,
+  let et = V.NW.string(V.t["38qwgI"]);
+  return T.length > 0 && (et = "" === k || null == k ? V.NW.string(V.t.DwnFuL) : k), p ? null : (0, r.jsxs)("div", {
+    ref: v,
     className: a()(Z.topicsPillContainer, Z.containerMarginTop),
     children: [(0, r.jsxs)("div", {
       className: Z.topicsPill,
       children: [(0, r.jsx)(d.P3F, {
         className: Z.topicsPillText,
-        "aria-label": F.NW.string(F.t.RT3MPz),
+        "aria-label": V.NW.string(V.t.RT3MPz),
         onClick: z,
         children: (0, r.jsxs)("div", {
           className: a()({
@@ -840,7 +840,7 @@ function eh(e) {
       }), (0, r.jsxs)("div", {
         className: Z.topicsPillCarets,
         children: [(0, r.jsx)(d.P3F, {
-          "aria-label": F.NW.string(F.t["4huCnJ"]),
+          "aria-label": V.NW.string(V.t["4huCnJ"]),
           onClick: X,
           className: a()(Z.topicsPillCaret, Z.topicsCaretLeft, {
             [Z.topicsPillCaretDisabled]: null == U
@@ -851,7 +851,7 @@ function eh(e) {
             direction: L.Z.Directions.UP
           })
         }), (0, r.jsx)(d.P3F, {
-          "aria-label": F.NW.string(F.t["58KOoK"]),
+          "aria-label": V.NW.string(V.t["58KOoK"]),
           onClick: Q,
           className: a()(Z.topicsPillCaret, Z.topicsCaretRight, {
             [Z.topicsPillCaretDisabled]: null == j
@@ -879,12 +879,12 @@ function eh(e) {
             variant: "heading-md/bold",
             color: "header-primary",
             lineClamp: 1,
-            children: F.NW.string(F.t.q21fUl)
+            children: V.NW.string(V.t.q21fUl)
           }), (0, r.jsx)(O.Z, {
             className: Z.summariesBetaTag
           })]
         }), (0, r.jsx)(d.P3F, {
-          "aria-label": F.NW.string(F.t.cpT0Cg),
+          "aria-label": V.NW.string(V.t.cpT0Cg),
           onClick: z,
           className: Z.topicsDropdownClose,
           children: (0, r.jsx)(d.Dio, {
@@ -915,7 +915,7 @@ let em = function(e) {
         className: Z.clickCTA,
         color: "text-muted",
         variant: "text-sm/normal",
-        children: F.NW.string(F.t["515vjI"])
+        children: V.NW.string(V.t["515vjI"])
       })]
     })
   },

@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(987209),
   g = n(563132),
   E = n(179118),
-  v = n(614277),
-  b = n(698708);
+  b = n(614277),
+  v = n(698708);
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,8 +57,8 @@ function I(e) {
   } = (0, g.JL)(), m = (0, s.e7)([c.Z], () => c.Z.getProduct(_)), E = (0, d.o)(m, l);
   a()(null != _, "Expected selectedSkuId"), a()(null != h, "Expected application");
   let y = f[_];
-  return (a()(null != y, "Expected sku"), null == m) ? null : (0, r.jsxs)(v.C3, {
-    children: [(0, r.jsx)(b.Z, {}), (0, r.jsx)(p.e, {
+  return (a()(null != y, "Expected sku"), null == m) ? null : (0, r.jsxs)(b.C3, {
+    children: [(0, r.jsx)(v.Z, {}), (0, r.jsx)(p.e, {
       product: m,
       onClose: t,
       confettiCanvas: n,
@@ -78,13 +78,13 @@ function S(e) {
     giftRecipient: u,
     giftMessageError: d,
     isSendingMessage: p
-  } = (0, m.wD)(), v = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), b = i.useRef(null), {
+  } = (0, m.wD)(), b = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), v = i.useRef(null), {
     selectedSkuId: y
   } = (0, g.JL)(), S = (0, s.e7)([c.Z], () => c.Z.getProduct(y)), {
     confettiColors: T
   } = (0, f.Z)(null == S ? void 0 : S.styles);
   return t ? (0, r.jsxs)("div", {
-    ref: b,
+    ref: v,
     children: [(0, r.jsx)(E.Z, {
       giftCode: n,
       onClose: e.handleClose,
@@ -93,8 +93,8 @@ function S(e) {
       giftRecipient: u,
       giftMessageError: d,
       isSendingMessage: p
-    }), !e.hideConfetti && !v && (0, r.jsx)(_.Z, {
-      confettiTarget: b.current,
+    }), !e.hideConfetti && !b && (0, r.jsx)(_.Z, {
+      confettiTarget: v.current,
       confettiCanvas: e.confettiCanvas,
       sprites: (0, h.vK)(null == S ? void 0 : S.categorySkuId),
       colors: null == T ? void 0 : T.map(e => e.toHexString())

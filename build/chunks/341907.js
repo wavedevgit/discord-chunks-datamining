@@ -3,8 +3,8 @@
 n.r(t), n.d(t, {
   formatVideoProgressRatio: () => Z,
   loadVideoQuestModal: () => H,
-  maybeShowSurveyForQuest: () => F,
-  navigateToQuestHome: () => V,
+  maybeShowSurveyForQuest: () => V,
+  navigateToQuestHome: () => F,
   openAppWithQuest: () => K,
   openDisclosureModal: () => B,
   openQuestInGameRewardModal: () => U,
@@ -30,8 +30,8 @@ var i = n(772848),
   m = n(954824),
   g = n(617136),
   E = n(569984),
-  v = n(497505),
-  b = n(918701),
+  b = n(497505),
+  v = n(918701),
   y = n(184299),
   O = n(862847),
   I = n(5881),
@@ -164,7 +164,7 @@ function B(e, t) {
   })
 }
 
-function V() {
+function F() {
   let {
     fromContent: e,
     questId: t
@@ -173,7 +173,7 @@ function V() {
     utmSourceCurrent: M,
     utmMediumCurrent: x,
     utmCampaignCurrent: t,
-    utmContentCurrent: Object.keys(v.jn).find(t => v.jn[t] === e)
+    utmContentCurrent: Object.keys(b.jn).find(t => b.jn[t] === e)
   });
   let n = null != t ? "#".concat(t) : "";
   l.Z.setState({
@@ -181,7 +181,7 @@ function V() {
   }), (0, u.uL)(C.Z5c.QUEST_HOME + n)
 }
 
-function F(e) {
+function V(e) {
   let t = (0, I.T)({
       quest: e
     }),
@@ -220,14 +220,14 @@ function W(e) {
       videoSessionId: n
     }))
   }, {
-    modalKey: (0, b.u7)(e.id),
+    modalKey: (0, v.u7)(e.id),
     backdropStyle: s.fCB.IMMERSIVE,
     onCloseCallback: () => {
       var t, r;
       let i = y.ZP.getState().getVideoProgress(e.id);
       if (null == i) return;
       let o = E.Z.getQuest(e.id);
-      null != o && (null === (t = o.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null && (null === (r = o.userStatus) || void 0 === r ? void 0 : r.completedAt) == null && (0, b.FI)(o, i.maxTimestampSec);
+      null != o && (null === (t = o.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null && (null === (r = o.userStatus) || void 0 === r ? void 0 : r.completedAt) == null && (0, v.FI)(o, i.maxTimestampSec);
       let a = Z(i.maxTimestampSec, i.duration);
       (0, g.dA)({
         questId: e.id,

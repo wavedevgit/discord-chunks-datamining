@@ -50,19 +50,19 @@ function g(e) {
     onClick: g,
     color: E
   } = e, {
-    id: v,
-    bot: b
+    id: b,
+    bot: v
   } = n, y = (0, o.e7)([d.default], () => {
     var e;
-    return (null === (e = d.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === v
+    return (null === (e = d.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === b
   }), O = (0, c.wn)({
     location: "useAcceptGameFriendRequest"
-  }), I = y || b || !O, S = I ? p : _, [T, N] = i.useState(!1), A = i.useCallback(() => N(!0), []), C = i.useMemo(() => S.map(e => {
+  }), I = y || v || !O, S = I ? p : _, [T, N] = i.useState(!1), A = i.useCallback(() => N(!0), []), C = i.useMemo(() => S.map(e => {
     let {
       applicationId: t
     } = e;
     return t
-  }), [S]), R = (0, o.e7)([u.Z], () => u.Z.getRelationshipType(v), [v]), P = h(C, T || 1 === S.length);
+  }), [S]), R = (0, o.e7)([u.Z], () => u.Z.getRelationshipType(b), [b]), P = h(C, T || 1 === S.length);
   if (I || 0 === S.length || R === f.OGo.FRIEND) return null;
   if (1 === S.length) {
     let {

@@ -8,7 +8,7 @@ var h, m = n(442837),
   g = n(570140),
   E = n(981631);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -16,19 +16,19 @@ function v(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let b = E.QZA.CLOSED,
+let v = E.QZA.CLOSED,
   y = {};
 
 function O(e) {
-  f = e.guild, b = E.QZA.OPEN, y = {}, _ = e.source, p = e.analyticsLocations
+  f = e.guild, v = E.QZA.OPEN, y = {}, _ = e.source, p = e.analyticsLocations
 }
 
 function I() {
-  b = E.QZA.CLOSED, y = {}, _ = void 0, p = []
+  v = E.QZA.CLOSED, y = {}, _ = void 0, p = []
 }
 
 function S() {
-  b = E.QZA.SUBMITTING, y = {}
+  v = E.QZA.SUBMITTING, y = {}
 }
 
 function T(e) {
@@ -37,12 +37,12 @@ function T(e) {
 
 function N(e) {
   var t;
-  if (b !== E.QZA.SUBMITTING) return !1;
-  b = E.QZA.OPEN, y = null !== (t = e.errors) && void 0 !== t ? t : {}
+  if (v !== E.QZA.SUBMITTING) return !1;
+  v = E.QZA.OPEN, y = null !== (t = e.errors) && void 0 !== t ? t : {}
 }
 
 function A(e) {
-  b = E.QZA.OPEN, y = e.errors
+  v = E.QZA.OPEN, y = e.errors
 }
 
 function C(e) {
@@ -109,7 +109,7 @@ function k(e) {
 }
 
 function j() {
-  U(), G(), y = {}, b = E.QZA.OPEN
+  U(), G(), y = {}, v = E.QZA.OPEN
 }
 
 function U() {
@@ -124,12 +124,12 @@ function B() {
   y = {}
 }
 
-function V() {
+function F() {
   j(), I()
 }
-class F extends(h = m.ZP.Store) {
+class V extends(h = m.ZP.Store) {
   getFormState() {
-    return b
+    return v
   }
   getErrors() {
     return y
@@ -193,10 +193,10 @@ class F extends(h = m.ZP.Store) {
     return p
   }
 }
-v(F, "displayName", "GuildIdentitySettingsStore");
-let Z = new F(g.Z, {
+b(V, "displayName", "GuildIdentitySettingsStore");
+let Z = new V(g.Z, {
   GUILD_IDENTITY_SETTINGS_INIT: O,
-  GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: V,
+  GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: F,
   GUILD_IDENTITY_SETTINGS_SET_GUILD: T,
   GUILD_IDENTITY_SETTINGS_SUBMIT: S,
   GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE: N,

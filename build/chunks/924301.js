@@ -75,7 +75,7 @@ function E(e) {
   } = e, r = J(e) ? "\0" : "\x01";
   return "".concat(r, "-").concat(new Date(n).getTime(), "-").concat(t)
 }
-let v = e => {
+let b = e => {
     let {
       guild_id: t,
       entity_id: n,
@@ -83,7 +83,7 @@ let v = e => {
     } = e, i = [t];
     return null != n && i.push(n), i.push(g.GUILD_EVENT(t)), null != r && i.push(g.CHANNEL_EVENT(r)), J(e) && (i.push(g.EVENT_ACTIVE), i.push(g.GUILD_EVENT_ACTIVE(t)), null != r && i.push(g.CHANNEL_EVENT_ACTIVE(r))), $(e) && (i.push(g.EVENT_UPCOMING), i.push(g.GUILD_EVENT_UPCOMING(t)), null != r && i.push(g.CHANNEL_EVENT_UPCOMING(r))), i
   },
-  b = new s.h(v, E),
+  v = new s.h(b, E),
   y = 0,
   O = [],
   I = "SERIES",
@@ -91,12 +91,12 @@ let v = e => {
   T = {};
 
 function N(e) {
-  b.set(e.id, e), y += 1
+  v.set(e.id, e), y += 1
 }
 
 function A(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-  b.delete(e), delete S[e], t && delete T[e], y += 1
+  v.delete(e), delete S[e], t && delete T[e], y += 1
 }
 
 function C(e) {
@@ -144,7 +144,7 @@ function x(e) {
   let {
     guilds: t
   } = e;
-  return b.clear(), y = 0, S = {}, T = {}, O.forEach(N), t.forEach(e => e.guild_scheduled_events.forEach(e => N(e))), !0
+  return v.clear(), y = 0, S = {}, T = {}, O.forEach(N), t.forEach(e => e.guild_scheduled_events.forEach(e => N(e))), !0
 }
 
 function M(e) {
@@ -158,7 +158,7 @@ function k(e) {
   let {
     guildId: t,
     guildScheduledEvents: n
-  } = e, r = b.values(g.GUILD_EVENT(t), !0).map(e => e.id), i = n.map(e => e.id);
+  } = e, r = v.values(g.GUILD_EVENT(t), !0).map(e => e.id), i = n.map(e => e.id);
   for (let e of (o().difference(r, i).forEach(e => {
       A(e)
     }), n)) N(e);
@@ -180,7 +180,7 @@ function U(e) {
 }
 
 function G(e, t) {
-  b.values(g.GUILD_EVENT(e)).forEach(e => A(e.id, t))
+  v.values(g.GUILD_EVENT(e)).forEach(e => A(e.id, t))
 }
 
 function B(e) {
@@ -190,17 +190,17 @@ function B(e) {
   return N(t), !0
 }
 
-function V(e) {
+function F(e) {
   let {
     guildScheduledEvent: t
   } = e;
   return A(t.id), !0
 }
 
-function F(e) {
+function V(e) {
   let {
     eventException: t
-  } = e, n = b.get(t.event_id);
+  } = e, n = v.get(t.event_id);
   if (null == n) return !1;
   let r = n.guild_scheduled_event_exceptions.findIndex(e => e.event_exception_id === t.event_exception_id),
     i = [...n.guild_scheduled_event_exceptions];
@@ -212,7 +212,7 @@ function F(e) {
 function Z(e) {
   let {
     eventException: t
-  } = e, n = b.get(t.event_id);
+  } = e, n = v.get(t.event_id);
   if (null == n) return !1;
   let r = n.guild_scheduled_event_exceptions.filter(e => e.event_exception_id !== t.event_exception_id);
   return N(m(p({}, n), {
@@ -223,7 +223,7 @@ function Z(e) {
 function H(e) {
   let {
     eventId: t
-  } = e, n = b.get(t);
+  } = e, n = v.get(t);
   return null != n && (N(m(p({}, n), {
     guild_scheduled_event_exceptions: []
   })), !0)
@@ -289,7 +289,7 @@ function q(e) {
 }
 
 function Q() {
-  return b.clear(), !0
+  return v.clear(), !0
 }
 
 function X(e) {
@@ -313,16 +313,16 @@ function ee(e) {
 class et extends(r = a.ZP.Store) {
   getGuildScheduledEvent(e) {
     var t;
-    return null == e ? null : null !== (t = b.get(e)) && void 0 !== t ? t : null
+    return null == e ? null : null !== (t = v.get(e)) && void 0 !== t ? t : null
   }
   getGuildEventCountByIndex(e) {
-    return b.size(e)
+    return v.size(e)
   }
   getGuildScheduledEventsForGuild(e) {
-    return null == e ? [] : b.values(e)
+    return null == e ? [] : v.values(e)
   }
   getGuildScheduledEventsByIndex(e) {
-    return b.values(e)
+    return v.values(e)
   }
   getRsvpVersion() {
     return y
@@ -354,7 +354,7 @@ class et extends(r = a.ZP.Store) {
     return (null === (n = T[e]) || void 0 === n ? void 0 : n[r]) != null
   }
   isActive(e) {
-    return null != e && J(b.get(e))
+    return null != e && J(v.get(e))
   }
   getActiveEventByChannel(e) {
     if (null != e) return this.getGuildScheduledEventsByIndex(g.CHANNEL_EVENT_ACTIVE(e))[0]
@@ -375,15 +375,15 @@ let en = new et(l.Z, {
   FETCH_GUILD_EVENTS_FOR_GUILD: k,
   GUILD_SCHEDULED_EVENT_CREATE: B,
   GUILD_SCHEDULED_EVENT_UPDATE: B,
-  GUILD_SCHEDULED_EVENT_DELETE: V,
+  GUILD_SCHEDULED_EVENT_DELETE: F,
   GUILD_SCHEDULED_EVENT_USER_ADD: K,
   GUILD_SCHEDULED_EVENT_USER_REMOVE: z,
   GUILD_SCHEDULED_EVENT_RSVPS_FETCH_SUCESS: W,
   GUILD_SCHEDULED_EVENT_USERS_FETCH_SUCCESS: Y,
   GUILD_SCHEDULED_EVENT_USER_COUNTS_FETCH_SUCCESS: q,
   INVITE_RESOLVE_SUCCESS: X,
-  GUILD_SCHEDULED_EVENT_EXCEPTION_CREATE: F,
-  GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE: F,
+  GUILD_SCHEDULED_EVENT_EXCEPTION_CREATE: V,
+  GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE: V,
   GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE: Z,
   GUILD_SCHEDULED_EVENT_EXCEPTIONS_DELETE: H,
   LOGOUT: Q

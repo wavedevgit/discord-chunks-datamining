@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(352084),
   g = n(78826),
   E = n(341907),
-  v = n(388032),
-  b = n(624848);
+  b = n(388032),
+  v = n(624848);
 let y = function(e) {
   let t;
   let {
@@ -52,7 +52,7 @@ let y = function(e) {
     id: "QuestRewardTile_rewardTileNitro",
     children: e => (0, r.jsx)(m.Z, {
       ref: e,
-      className: b.questRewardTileAsset
+      className: v.questRewardTileAsset
     })
   }) : T.isAnimated ? (0, r.jsx)(g.Fl, {
     id: "QuestRewardTile_rewardTileAnimated",
@@ -66,7 +66,7 @@ let y = function(e) {
         loop: !0,
         muted: !0,
         playsInline: !0,
-        className: b.questRewardTileAsset,
+        className: v.questRewardTileAsset,
         controls: !1,
         children: (0, r.jsx)("source", {
           src: T.url,
@@ -79,25 +79,25 @@ let y = function(e) {
     children: e => (0, r.jsx)("img", {
       ref: e,
       alt: h.r.build(o.config).defaultReward.messages.name,
-      className: a()(b.questRewardTileAsset, b.questRewardTileAssetStatic),
+      className: a()(v.questRewardTileAsset, v.questRewardTileAssetStatic),
       src: T.url
     })
   }), null == O ? (0, r.jsx)("div", {
-    className: a()(b.questRewardTile, n),
+    className: a()(v.questRewardTile, n),
     children: t
   }) : (0, r.jsxs)(c.P3F, {
-    className: a()(b.questRewardTileInteractive, b.questRewardTile, b.rewardHighlight, n),
+    className: a()(v.questRewardTileInteractive, v.questRewardTile, v.rewardHighlight, n),
     onClick: N,
     children: [t, (0, r.jsx)(c.ZX5, {
-      className: b.shine,
+      className: v.shine,
       shineSize: c.rHe.SMALL
     }), "text" === O && (0, r.jsx)(c.Text, {
       color: "always-white",
       variant: "text-xs/normal",
-      className: b.questRewardTileDetailsLearnMore,
-      children: v.NW.format(v.t.DYAleX, {})
+      className: v.questRewardTileDetailsLearnMore,
+      children: b.NW.format(b.t.DYAleX, {})
     }), "icon" === O && (0, r.jsx)("div", {
-      className: b.questRewardTileDetailsLearnMore,
+      className: v.questRewardTileDetailsLearnMore,
       children: (0, r.jsx)(c.d3s, {
         size: "xxs",
         color: c.TVs.colors.WHITE.css

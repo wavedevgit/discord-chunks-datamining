@@ -22,9 +22,9 @@ let {
   SemanticColors: g,
   RawColors: E
 } = u.V, {
-  SemanticColorExperiments: v
+  SemanticColorExperiments: b
 } = c.V, {
-  Shadows: b
+  Shadows: v
 } = p.V, {
   Spacing: y
 } = h.V, {
@@ -43,10 +43,10 @@ let {
         let r = e[t.theme],
           i = r.raw,
           o = r.opacity;
-        if (n in v && null != t.enabledExperiments && t.enabledExperiments.length > 0)
+        if (n in b && null != t.enabledExperiments && t.enabledExperiments.length > 0)
           for (let e of t.enabledExperiments) {
             var a, s, l, c;
-            let r = null === (s = v[n]) || void 0 === s ? void 0 : null === (a = s[e]) || void 0 === a ? void 0 : a[t.theme];
+            let r = null === (s = b[n]) || void 0 === s ? void 0 : null === (a = s[e]) || void 0 === a ? void 0 : a[t.theme];
             null != r && (i = null !== (l = r.raw) && void 0 !== l ? l : i, o = null !== (c = r.opacity) && void 0 !== c ? c : o)
           }
         if (1 === o) return N.unsafe_rawColors[i].resolve(t);
@@ -68,7 +68,7 @@ let {
       }
     }
   }),
-  shadows: l()(b, (e, t) => ({
+  shadows: l()(v, (e, t) => ({
     css: P(t),
     resolve: t => ({
       boxShadow: e[t.theme].boxShadow,

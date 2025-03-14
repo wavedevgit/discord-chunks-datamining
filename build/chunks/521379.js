@@ -5,8 +5,8 @@ n.d(t, {
 var r, i = n(200651),
   o = n(192379),
   a = n(442837),
-  l = n(388905),
-  s = n(108427),
+  s = n(388905),
+  l = n(108427),
   c = n(559786);
 
 function u(e, t, n) {
@@ -20,13 +20,13 @@ function u(e, t, n) {
 a.ZP.initialize();
 class d extends(r = o.PureComponent) {
   componentDidMount() {
-    (0, s.e)("account_revert")
+    (0, l.e)("account_revert")
   }
   render() {
     let {
       token: e
     } = this.props.match.params;
-    return (0, i.jsx)(l.ZP, {
+    return (0, i.jsx)(s.ZP, {
       style: {
         padding: 0
       },

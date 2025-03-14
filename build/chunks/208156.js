@@ -28,7 +28,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function v(e) {
   return e
 }
 
-function b(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,7 +53,7 @@ function b(e, t) {
 }
 
 function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -66,12 +66,12 @@ function O(e) {
     onLoad: a,
     shouldRefocus: g,
     queryParams: E,
-    allowPopups: b = !1,
+    allowPopups: v = !1,
     referrerPolicy: O = "origin"
-  } = e, I = (0, f.sU)({}), S = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), T = i.useRef(null), N = (0, _.Z)(T, g, null == I ? window : I), A = y(v({}, E), {
+  } = e, I = (0, f.sU)({}), S = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), T = i.useRef(null), N = (0, _.Z)(T, g, null == I ? window : I), A = y(b({}, E), {
     frame_id: S,
     platform: h.S4.DESKTOP
-  }), [C, R] = i.useState(!1), P = u.Z.theme, w = v({}, o);
+  }), [C, R] = i.useState(!1), P = u.Z.theme, w = b({}, o);
 
   function D(e) {
     var n;
@@ -99,7 +99,7 @@ function O(e) {
     referrerPolicy: O,
     onLoad: D,
     sandbox: (0, p.Z)({
-      allowPopups: b
+      allowPopups: v
     }),
     className: n,
     src: "".concat(t, "?").concat(new URLSearchParams(A))
@@ -118,7 +118,7 @@ function I(e) {
       className: a()(g.fillParent, g.iframePlaceholder)
     }), (0, r.jsx)("div", {
       className: a()(g.fillParent, n ? void 0 : g.hiddenIframeContainer),
-      children: (0, r.jsx)(O, y(v({}, e), {
+      children: (0, r.jsx)(O, y(b({}, e), {
         onLoad: s
       }))
     })]

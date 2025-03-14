@@ -13,16 +13,16 @@ var r = n(566885),
   _ = Array;
 e.exports = function(e) {
   var t, n, p, h, m, g, E = o(e),
-    v = l(this),
-    b = arguments.length,
-    y = b > 1 ? arguments[1] : void 0,
+    b = l(this),
+    v = arguments.length,
+    y = v > 1 ? arguments[1] : void 0,
     O = void 0 !== y;
-  O && (y = r(y, b > 2 ? arguments[2] : void 0));
+  O && (y = r(y, v > 2 ? arguments[2] : void 0));
   var I = f(E),
     S = 0;
   if (I && !(this === _ && s(I)))
-    for (m = (h = d(E, I)).next, n = v ? new this : []; !(p = i(m, h)).done; S++) g = O ? a(h, y, [p.value, S], !0) : p.value, u(n, S, g);
+    for (m = (h = d(E, I)).next, n = b ? new this : []; !(p = i(m, h)).done; S++) g = O ? a(h, y, [p.value, S], !0) : p.value, u(n, S, g);
   else
-    for (t = c(E), n = v ? new this(t) : _(t); t > S; S++) g = O ? y(E[S], S) : E[S], u(n, S, g);
+    for (t = c(E), n = b ? new this(t) : _(t); t > S; S++) g = O ? y(E[S], S) : E[S], u(n, S, g);
   return n.length = S, n
 }

@@ -1,15 +1,15 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => s
+  Z: () => l
 });
 var r = n(200651);
 n(192379);
 var i = n(882037),
   o = n(853268),
   a = n(388032),
-  l = n(802138);
+  s = n(802138);
 
-function s() {
+function l() {
   let {
     required: e,
     checked: t
@@ -18,7 +18,7 @@ function s() {
     value: t,
     subText: a.NW.string(a.t["0p3R09"]),
     onChange: i.ZJ,
-    marginTopStyle: l.marginTop8,
+    marginTopStyle: s.marginTop8,
     muted: !0
   }) : null
 }

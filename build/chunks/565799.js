@@ -18,8 +18,8 @@ var r, i = n(348327),
   m = n(496675),
   g = n(699516),
   E = n(606304),
-  v = n(594174),
-  b = n(979651),
+  b = n(594174),
+  v = n(979651),
   y = n(938475),
   O = n(501655),
   I = n(88751),
@@ -101,11 +101,11 @@ function B(e) {
   return null != e && (delete R[e], A.delete(e), !0)
 }
 
-function V() {
+function F() {
   C.clear(), A.clear(), R = {}
 }
 
-function F(e, t, n) {
+function V(e, t, n) {
   if (null == n || e.has(n)) return;
   let r = p.Z.getChannel(n);
   (null == r ? void 0 : r.isGuildStageVoice()) && (t.add(n), e.add(n))
@@ -118,7 +118,7 @@ function Z(e) {
   return t.reduce((e, t) => {
     if (null == t.guildId || !C.has(t.guildId)) return e;
     let r = new Set;
-    return (F(n, r, t.oldChannelId), F(n, r, t.channelId), 0 === r.size) ? e : U(t.userId, Array.from(r)) || e
+    return (V(n, r, t.oldChannelId), V(n, r, t.channelId), 0 === r.size) ? e : U(t.userId, Array.from(r)) || e
   }, !1)
 }
 
@@ -207,7 +207,7 @@ function $(e) {
 let ee = [];
 class et extends(r = l.ZP.Store) {
   initialize() {
-    this.waitFor(_.default, v.default, p.Z, E.Z, b.Z, m.Z, y.ZP, h.Z, I.ZP, g.Z, S.Z, f.Z)
+    this.waitFor(_.default, b.default, p.Z, E.Z, v.Z, m.Z, y.ZP, h.Z, I.ZP, g.Z, S.Z, f.Z)
   }
   getParticipantsVersion(e) {
     var t, n;
@@ -242,8 +242,8 @@ class et extends(r = l.ZP.Store) {
 }
 T(et, "displayName", "StageChannelParticipantStore");
 let en = new et(u.Z, {
-  CONNECTION_OPEN: V,
-  OVERLAY_INITIALIZE: V,
+  CONNECTION_OPEN: F,
+  OVERLAY_INITIALIZE: F,
   VOICE_STATE_UPDATES: Z,
   CHANNEL_DELETE: X,
   GUILD_MEMBERS_CHUNK_BATCH: H,

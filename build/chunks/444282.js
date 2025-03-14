@@ -24,18 +24,18 @@ function E(e) {
     channelId: t,
     option: n,
     keyboardModeEnabled: o
-  } = e, E = i.useRef(null), [v, b] = i.useState(!1), y = f.Z.getUpload(t, n.name, d.d.SlashCommand), O = i.useRef(null), I = e => {
+  } = e, E = i.useRef(null), [b, v] = i.useState(!1), y = f.Z.getUpload(t, n.name, d.d.SlashCommand), O = i.useRef(null), I = e => {
     if (e.which === h.yXg.ENTER) {
       var t;
       e.preventDefault(), null === (t = E.current) || void 0 === t || t.activateUploadDialogue()
     }
   }, S = i.useCallback(() => {
-    b(!0)
+    v(!0)
   }, []), T = i.useCallback(() => {
-    b(!1)
+    v(!1)
   }, []), N = i.useCallback(e => {
     var r;
-    b(!1);
+    v(!1);
     let i = {
       id: n.name,
       file: null === (r = e.dataTransfer) || void 0 === r ? void 0 : r.files[0],
@@ -94,13 +94,13 @@ function E(e) {
     keyboardModeEnabled: o,
     onKeyDown: I,
     className: a()(m.emptyOption, {
-      [m.emptyOptionActive]: v
+      [m.emptyOptionActive]: b
     }),
     draftType: d.d.SlashCommand,
     ref: O,
     children: [(0, r.jsx)("span", {
       className: a()(m.optionName, {
-        [m.optionNameActive]: v
+        [m.optionNameActive]: b
       }),
       children: n.name
     }), (0, r.jsx)(s.P3F, {

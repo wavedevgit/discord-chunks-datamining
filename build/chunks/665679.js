@@ -123,7 +123,7 @@ var E = function e(t) {
     }
     return m[t] = n, n
   },
-  v = {
+  b = {
     "%ArrayBufferPrototype%": ["ArrayBuffer", "prototype"],
     "%ArrayPrototype%": ["Array", "prototype"],
     "%ArrayProto_entries%": ["Array", "prototype", "entries"],
@@ -176,13 +176,13 @@ var E = function e(t) {
     "%WeakMapPrototype%": ["WeakMap", "prototype"],
     "%WeakSetPrototype%": ["WeakSet", "prototype"]
   },
-  b = n(390976),
+  v = n(390976),
   y = n(643494),
-  O = b.call(Function.call, Array.prototype.concat),
-  I = b.call(Function.apply, Array.prototype.splice),
-  S = b.call(Function.call, String.prototype.replace),
-  T = b.call(Function.call, String.prototype.slice),
-  N = b.call(Function.call, RegExp.prototype.exec),
+  O = v.call(Function.call, Array.prototype.concat),
+  I = v.call(Function.apply, Array.prototype.splice),
+  S = v.call(Function.call, String.prototype.replace),
+  T = v.call(Function.call, String.prototype.slice),
+  N = v.call(Function.call, RegExp.prototype.exec),
   A = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
   C = /\\(\\)?/g,
   R = function(e) {
@@ -197,7 +197,7 @@ var E = function e(t) {
   },
   P = function(e, t) {
     var n, r = e;
-    if (y(v, r) && (r = "%" + (n = v[r])[0] + "%"), y(m, r)) {
+    if (y(b, r) && (r = "%" + (n = b[r])[0] + "%"), y(m, r)) {
       var o = m[r];
       if (o === p && (o = E(r)), void 0 === o && !t) throw new a("intrinsic " + e + " exists, but is not available. Please file an issue!");
       return {

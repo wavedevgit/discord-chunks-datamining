@@ -47,7 +47,7 @@ let h = !1,
   g = [],
   E = null;
 
-function v(e) {
+function b(e) {
   let {
     activeOutboundPromotions: t,
     consumedInboundPromotionId: n
@@ -55,7 +55,7 @@ function v(e) {
   g = t, m = Date.now(), h = !1, c.hasFetchedConsumedInboundPromotionId || (c.hasFetchedConsumedInboundPromotionId = !0, c.consumedInboundPromotionId = n)
 }
 
-function b() {
+function v() {
   h = !0
 }
 
@@ -129,8 +129,8 @@ class A extends(r = i.ZP.PersistedStore) {
 }
 s(A, "displayName", "PromotionsStore"), s(A, "persistKey", "PromotionsPersistedStore");
 let C = new A(o.Z, {
-  ACTIVE_OUTBOUND_PROMOTIONS_FETCH_SUCCESS: v,
-  ACTIVE_OUTBOUND_PROMOTIONS_FETCH: b,
+  ACTIVE_OUTBOUND_PROMOTIONS_FETCH_SUCCESS: b,
+  ACTIVE_OUTBOUND_PROMOTIONS_FETCH: v,
   ACTIVE_OUTBOUND_PROMOTIONS_FETCH_FAIL: y,
   ACTIVE_BOGO_PROMOTION_FETCH_SUCCESS: p,
   ACTIVE_BOGO_PROMOTION_FETCH: f,

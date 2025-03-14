@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(297700),
   g = n(210887),
   E = n(271383),
-  v = n(594174),
-  b = n(665786),
+  b = n(594174),
+  v = n(665786),
   y = n(697725),
   O = n(267642),
   I = n(284363),
@@ -109,7 +109,7 @@ let M = {
     backgroundLightColor: l.Z.unsafe_rawColors.GREEN_360.css
   },
   [I.Q.PARTNERED]: {
-    IconComponent: (0, u.GSL)(b.Z),
+    IconComponent: (0, u.GSL)(v.Z),
     foregroundDarkColor: l.Z.unsafe_rawColors.WHITE_400.css,
     foregroundLightColor: l.Z.unsafe_rawColors.WHITE_400.css,
     backgroundDarkColor: l.Z.unsafe_rawColors.BRAND_500.css,
@@ -204,7 +204,7 @@ function U(e) {
   let t, n;
   var o, l, {
       guild: _,
-      tooltipColor: b = u.ua7.Colors.BRAND,
+      tooltipColor: v = u.ua7.Colors.BRAND,
       tooltipPosition: y,
       className: O,
       flowerStarClassName: T,
@@ -217,14 +217,14 @@ function U(e) {
     U = L(e, ["guild", "tooltipColor", "tooltipPosition", "className", "flowerStarClassName", "iconClassName", "badgeStrokeColor", "badgeColor", "disableBoostClick", "aria-label"]);
   let G = (0, p.Q3)("GuildBadgeV2"),
     B = null !== (o = U.size) && void 0 !== o ? o : G ? 18 : 16,
-    V = (0, s.e7)([v.default, E.ZP], () => {
-      let e = v.default.getCurrentUser();
+    F = (0, s.e7)([b.default, E.ZP], () => {
+      let e = b.default.getCurrentUser();
       return E.ZP.isMember(null == _ ? void 0 : _.id, null == e ? void 0 : e.id)
     }),
-    F = (0, s.e7)([g.Z], () => g.Z.theme),
+    V = (0, s.e7)([g.Z], () => g.Z.theme),
     Z = (0, S.XX)(_),
     H = (0, I.i)(Z),
-    W = i.useMemo(() => Z.premium && V && !x, [x, Z.premium, V]),
+    W = i.useMemo(() => Z.premium && F && !x, [x, Z.premium, F]),
     Y = i.useCallback(e => {
       W && (e.stopPropagation(), e.preventDefault(), (0, h.f)({
         guildId: _.id,
@@ -238,7 +238,7 @@ function U(e) {
   if (H === I.Q.CLAN) {
     let e = (0, d.ky)(_.id, null === (l = _.profile) || void 0 === l ? void 0 : l.badge, B);
     return null == e ? null : (0, r.jsx)(u.ua7, {
-      color: b,
+      color: v,
       position: y,
       "aria-label": k,
       text: (0, r.jsx)(j, {
@@ -268,12 +268,12 @@ function U(e) {
   } = M[H];
   if (null == K) return null;
   Z.premium && (t = $, n = J);
-  let et = (0, c.wj)(F) ? Q : X,
-    en = (0, c.wj)(F) ? z : q;
+  let et = (0, c.wj)(V) ? Q : X,
+    en = (0, c.wj)(V) ? z : q;
   t = null != t ? t : et, n = null != n ? n : en;
   let er = Math.floor(.75 * B) - (null != ee ? ee : 0);
   return (0, r.jsx)(u.ua7, {
-    color: b,
+    color: v,
     position: y,
     "aria-label": k,
     text: (0, r.jsx)(j, {

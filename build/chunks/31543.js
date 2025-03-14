@@ -21,11 +21,11 @@ let p = i.forwardRef(function(e, t) {
     channel: h
   } = e, m = (0, u.fQ)(h), g = i.useRef(null), {
     searchQuery: E,
-    isSearchSuggestion: v
+    isSearchSuggestion: b
   } = (0, c.Iu)(e => ({
     searchQuery: e.searchQuery,
     isSearchSuggestion: e.isSearchSuggestion
-  }), o.X), b = l.ZN.useStore(e => e.searchPlaceholder), y = l.ZN.useStore(e => e.inspectedExpressionPosition, o.X), O = i.useCallback(e => {
+  }), o.X), v = l.ZN.useStore(e => e.searchPlaceholder), y = l.ZN.useStore(e => e.inspectedExpressionPosition, o.X), O = i.useCallback(e => {
     var t;
     l.ZN.setActiveCategoryIndex("" === e ? 0 : d.c), l.ZN.setInspectedExpressionPosition(0, 0), l.ZN.setSearchPlaceholder(null), (0, c.ql)(e), null === (t = p.current) || void 0 === t || t.scrollTo(0)
   }, [p]), I = i.useCallback(() => {
@@ -37,11 +37,11 @@ let p = i.forwardRef(function(e, t) {
       return null === (e = g.current) || void 0 === e ? void 0 : e.focus()
     }
   })), i.useLayoutEffect(() => {
-    if (v) {
+    if (b) {
       var e;
       null === (e = g.current) || void 0 === e || e.focus()
     }
-  }, [v]), (0, r.jsx)("div", {
+  }, [b]), (0, r.jsx)("div", {
     className: _.wrapper,
     children: (0, r.jsx)(s.E1j, {
       autoFocus: m,
@@ -49,7 +49,7 @@ let p = i.forwardRef(function(e, t) {
       query: E,
       ref: g,
       size: s.E1j.Sizes.MEDIUM,
-      placeholder: null != b ? b : m ? f.NW.string(f.t.dt5h1N) : f.NW.string(f.t["Pck/4e"]),
+      placeholder: null != v ? v : m ? f.NW.string(f.t.dt5h1N) : f.NW.string(f.t["Pck/4e"]),
       onClear: I,
       onKeyDown: n,
       onChange: O,

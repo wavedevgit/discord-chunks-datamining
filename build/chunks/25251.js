@@ -25,8 +25,8 @@ let u = [],
   m = 0,
   g = 3e5,
   E = 6e4,
-  v = 36e5,
-  b = e => {
+  b = 36e5,
+  v = e => {
     _ = (0, a.cloneDeep)(e);
     let t = {};
     _.forEach(e => {
@@ -43,13 +43,13 @@ let u = [],
     let {
       profileEffects: t
     } = e;
-    r = void 0, i = Date.now() + g, m = 0, b(0 === t.length ? u : t), f = !1
+    r = void 0, i = Date.now() + g, m = 0, v(0 === t.length ? u : t), f = !1
   },
   I = e => {
     let {
       error: t
     } = e;
-    r = t, i = Date.now() + Math.min(E * 2 ** m, v), ++m, b(u), f = !1
+    r = t, i = Date.now() + Math.min(E * 2 ** m, b), ++m, v(u), f = !1
   },
   S = e => {
     let {
@@ -58,7 +58,7 @@ let u = [],
     h = t
   },
   T = () => {
-    b(u), h = null, i = void 0, f = !1
+    v(u), h = null, i = void 0, f = !1
   },
   N = e => {
     T()

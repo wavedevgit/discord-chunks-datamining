@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => b
 });
 var r = n(200651);
 n(192379);
@@ -62,7 +62,7 @@ let g = e => {
       children: p.NW.string(p.t.tcARX1)
     })]
   }),
-  v = e => {
+  b = e => {
     let {
       userId: t,
       onClose: n,
@@ -70,9 +70,9 @@ let g = e => {
     } = e, {
       interactionTypeSent: c,
       showInteractionToast: d
-    } = (0, f.Xo)(), m = c === _.P.REPLY ? p.NW.string(p.t.BPaiaW) : p.NW.string(p.t.Ry2EtL), v = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), b = (0, l.Yzy)(d, {
+    } = (0, f.Xo)(), m = c === _.P.REPLY ? p.NW.string(p.t.BPaiaW) : p.NW.string(p.t.Ry2EtL), b = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), v = (0, l.Yzy)(d, {
       from: {
-        transform: v ? "translateY(0)" : "translateY(16px)",
+        transform: b ? "translateY(0)" : "translateY(16px)",
         opacity: 0
       },
       enter: {
@@ -80,7 +80,7 @@ let g = e => {
         opacity: 1
       },
       leave: {
-        transform: v ? "translateY(0)" : "translateY(16px)",
+        transform: b ? "translateY(0)" : "translateY(16px)",
         opacity: 0
       },
       config: {
@@ -92,7 +92,7 @@ let g = e => {
       delay: 200
     }, "animate-always");
     return (0, r.jsx)(r.Fragment, {
-      children: b((e, s) => s && (0, r.jsx)(a.animated.div, {
+      children: v((e, s) => s && (0, r.jsx)(a.animated.div, {
         className: o()(h.toastContainer, i),
         style: e,
         children: null != c ? (0, r.jsx)(l.FNi, {

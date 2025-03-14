@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(124072),
   g = n(692629),
   E = n(695503),
-  v = n(628692),
-  b = n(590956),
+  b = n(628692),
+  v = n(590956),
   y = n(703656),
   O = n(271383),
   I = n(430824),
@@ -77,7 +77,7 @@ function B(e, t) {
   }), e
 }
 
-function V(e) {
+function F(e) {
   let {
     emojiTooltipPosition: t = "top",
     enableEmojiClick: n = !0
@@ -89,7 +89,7 @@ function V(e) {
         channelId: s,
         messageId: l
       } = o;
-      return e.src ? (0, r.jsx)(b.c, {
+      return e.src ? (0, r.jsx)(v.c, {
         node: e,
         tooltipPosition: t,
         enableClick: n,
@@ -102,7 +102,7 @@ function V(e) {
   }
 }
 
-function F(e) {
+function V(e) {
   let {
     emojiTooltipPosition: t = "top",
     enableEmojiClick: n = !0
@@ -122,7 +122,7 @@ function F(e) {
           name: t ? ":".concat(d.name, ":") : d.name
         })
       }
-      return (0, r.jsx)(b.Y, {
+      return (0, r.jsx)(v.Y, {
         isInteracting: u,
         node: e,
         tooltipPosition: t,
@@ -279,7 +279,7 @@ let W = {
     }, n.key)
   },
   soundboard: {
-    react: (e, t, n) => (0, r.jsx)(v.ZP, {
+    react: (e, t, n) => (0, r.jsx)(b.ZP, {
       channelId: e.channelId,
       messageId: e.messageId,
       soundId: e.soundId,
@@ -380,8 +380,8 @@ function Y(e) {
   return B(U({}, W), {
     link: (0, w.Z)(e),
     devLink: (0, P.Z)(e),
-    emoji: V(e),
-    customEmoji: F(e),
+    emoji: F(e),
+    customEmoji: V(e),
     channelMention: (0, C.Z)(e),
     commandMention: (0, R.ZP)(e),
     attachmentLink: (0, A.Z)(e),

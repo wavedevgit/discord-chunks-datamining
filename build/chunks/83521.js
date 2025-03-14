@@ -1,105 +1,105 @@
 /** Chunk was on 95883 **/
-a.d(l, {
-  default: () => j
-}), a(47120);
-var i = a(200651),
-  n = a(192379),
-  r = a(481060),
-  t = a(442837),
-  o = a(410030),
-  s = a(430824),
-  d = a(594174),
-  c = a(931240),
-  u = a(645896),
-  m = a(603368),
-  x = a(353093),
-  v = a(114487),
-  g = a(380365),
-  h = a(981631),
-  N = a(921944),
-  C = a(388032),
-  _ = a(88776);
+l.d(n, {
+  default: () => b
+}), l(47120);
+var t = l(200651),
+  r = l(192379),
+  i = l(481060),
+  a = l(442837),
+  o = l(410030),
+  s = l(430824),
+  c = l(594174),
+  u = l(931240),
+  d = l(645896),
+  m = l(603368),
+  v = l(353093),
+  f = l(114487),
+  h = l(380365),
+  x = l(981631),
+  g = l(921944),
+  j = l(388032),
+  p = l(88776);
 
-function j(e) {
-  var l, a;
+function b(e) {
+  var n, l;
   let {
-    guildId: j,
-    transitionState: f,
-    onClose: k
-  } = e, p = (0, t.e7)([s.Z], () => s.Z.getGuild(j), [j]), S = (0, u.Cc)(null != j ? j : null), T = (0, t.e7)([d.default], () => d.default.getCurrentUser(), []), [b, P] = n.useState(!0), w = (0, o.ZP)(), Z = n.useCallback(async () => {
-    b && await (0, c.nE)(j, !0, h.Sbl.CLAN_ADOPT_IDENTITY_MODAL), k(N.L.PRIMARY)
-  }, [b, k, j]), I = n.useCallback(() => {
-    k(N.L.DISMISS)
-  }, [k]);
-  n.useEffect(() => ((null == p || null == T) && k(N.L.AUTO_DISMISS), () => {}), [T, p, j, k]);
-  let L = (0, m.nP)(null == S ? void 0 : null === (l = S.branding) || void 0 === l ? void 0 : l.primaryColor, [r.TVs.colors.BG_BRAND, .7]),
-    M = r.TVs.colors.BG_SURFACE_OVERLAY.resolve({
-      theme: w,
+    guildId: b,
+    transitionState: N,
+    onClose: P
+  } = e, y = (0, a.e7)([s.Z], () => s.Z.getGuild(b), [b]), C = (0, d.Cc)(null != b ? b : null), w = (0, a.e7)([c.default], () => c.default.getCurrentUser(), []), [_, k] = r.useState(!0), S = (0, o.ZP)(), O = r.useCallback(async () => {
+    _ && await (0, u.nE)(b, !0, x.Sbl.CLAN_ADOPT_IDENTITY_MODAL), P(g.L.PRIMARY)
+  }, [_, P, b]), T = r.useCallback(() => {
+    P(g.L.DISMISS)
+  }, [P]);
+  r.useEffect(() => ((null == y || null == w) && P(g.L.AUTO_DISMISS), () => {}), [w, y, b, P]);
+  let I = (0, m.nP)(null == C ? void 0 : null === (n = C.branding) || void 0 === n ? void 0 : n.primaryColor, [i.TVs.colors.BG_BRAND, .7]),
+    Z = i.TVs.colors.BG_SURFACE_OVERLAY.resolve({
+      theme: S,
       saturation: 1
     }).hex(),
-    y = (0, m.nj)(L, M, "top center"),
-    z = (0, m.nP)(null == S ? void 0 : null === (a = S.branding) || void 0 === a ? void 0 : a.primaryColor, [r.TVs.colors.BG_BRAND, 1]),
-    A = (0, m.$0)(L).hex(),
-    E = (0, x.Zp)(p, null == T ? void 0 : T.primaryGuild);
-  if (null == p || null == T) return null;
-  let R = E ? C.NW.format(C.t["hyP/19"], {
-      guildName: p.name
-    }) : C.NW.format(C.t.h1CclZ, {
-      guildName: p.name
+    D = (0, m.nj)(I, Z, "top center"),
+    L = (0, m.nP)(null == C ? void 0 : null === (l = C.branding) || void 0 === l ? void 0 : l.primaryColor, [i.TVs.colors.BG_BRAND, 1]),
+    M = (0, m.$0)(I).hex(),
+    z = (0, v.Zp)(y, null == w ? void 0 : w.primaryGuild);
+  if (null == y || null == w) return null;
+  let A = z ? j.NW.format(j.t["hyP/19"], {
+      guildName: y.name
+    }) : j.NW.format(j.t.h1CclZ, {
+      guildName: y.name
     }),
-    D = E ? C.NW.formatToPlainString(C.t["x+B7c3"], {
-      guildName: p.name
-    }) : C.NW.formatToPlainString(C.t.kPJowM, {
-      guildName: p.name
+    E = z ? j.NW.formatToPlainString(j.t["x+B7c3"], {
+      guildName: y.name
+    }) : j.NW.formatToPlainString(j.t.kPJowM, {
+      guildName: y.name
     }),
-    U = C.NW.string(C.t.re8ZPj);
-  return (0, i.jsxs)(r.Y0X, {
-    transitionState: f,
-    size: r.CgR.SMALL,
-    className: _.modal,
-    children: [(0, i.jsx)(r.hzk, {
-      style: y,
-      children: (0, i.jsxs)("div", {
-        className: _.mainContainer,
-        children: [(0, i.jsxs)("div", {
-          className: _.infoContainer,
-          children: [(0, i.jsx)(v.Z, {
-            guild: p,
+    R = j.NW.string(j.t.re8ZPj);
+  return (0, t.jsxs)(i.Y0X, {
+    transitionState: N,
+    size: i.CgR.SMALL,
+    className: p.modal,
+    children: [(0, t.jsx)(i.hzk, {
+      style: D,
+      children: (0, t.jsxs)("div", {
+        className: p.mainContainer,
+        children: [(0, t.jsxs)("div", {
+          className: p.infoContainer,
+          children: [(0, t.jsx)(f.Z, {
+            guild: y,
             iconSize: 64
-          }), (0, i.jsxs)("div", {
-            className: _.headerTextContainer,
-            children: [(0, i.jsx)(r.X6q, {
+          }), (0, t.jsxs)("div", {
+            className: p.headerTextContainer,
+            children: [(0, t.jsx)(i.X6q, {
               variant: "heading-xl/normal",
               color: "header-primary",
-              children: R
-            }), (0, i.jsx)(r.Text, {
+              children: A
+            }), (0, t.jsx)(i.Text, {
               variant: "text-sm/normal",
               color: "text-secondary",
-              children: D
+              children: E
             })]
           })]
-        }), (0, i.jsx)(g.Z, {
-          guildId: j,
-          isTagAdopted: b,
-          onChangeUseTag: P
+        }), (0, t.jsx)(h.Z, {
+          guildId: b,
+          isTagAdopted: _,
+          onChangeUseTag: k
         })]
       })
-    }), (0, i.jsxs)(r.mzw, {
-      className: _.modalFooter,
-      children: [(0, i.jsx)(r.zxk, {
-        onClick: Z,
-        color: r.zxk.Colors.CUSTOM,
-        look: r.zxk.Looks.FILLED,
+    }), (0, t.jsxs)(i.mzw, {
+      className: p.modalFooter,
+      children: [(0, t.jsx)(i.zxk, {
+        onClick: O,
+        color: i.zxk.Colors.CUSTOM,
+        look: i.zxk.Looks.FILLED,
         style: {
-          backgroundColor: z,
-          color: A
+          backgroundColor: L,
+          color: M
         },
-        children: U
-      }), (0, i.jsx)(r.zxk, {
-        onClick: I,
-        color: r.zxk.Colors.PRIMARY,
-        look: r.zxk.Looks.LINK,
-        children: C.NW.string(C.t.QMwUJy)
+        children: R
+      }), (0, t.jsx)(i.zxk, {
+        onClick: T,
+        color: i.zxk.Colors.PRIMARY,
+        look: i.zxk.Looks.LINK,
+        children: j.NW.string(j.t.QMwUJy)
       })]
     })]
   })

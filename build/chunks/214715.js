@@ -1,44 +1,43 @@
-/** Chunk was on web.js **/
-"use strict";
-n.d(t, {
+/** Chunk was on 44088 **/
+i.d(t, {
   Z: () => c
 });
-var r = n(200651),
-  i = n(192379),
-  o = n(120356),
-  a = n.n(o),
-  s = n(481060),
-  l = n(572192);
-let c = i.memo(function(e) {
+var n = i(200651),
+  r = i(192379),
+  l = i(120356),
+  a = i.n(l),
+  s = i(481060),
+  o = i(572192);
+let c = r.memo(function(e) {
   let {
     text: t,
-    variant: n = "text-xs/medium",
-    color: o = "text-normal",
+    variant: i = "text-xs/medium",
+    color: l = "text-normal",
     icon: c,
     className: u,
     selected: d,
-    onMouseEnter: f,
-    onMouseLeave: _,
-    onClick: p
-  } = e, h = i.useMemo(() => {
-    if (null != p) return () => p(t)
-  }, [p, t]);
-  return (0, r.jsxs)(s.P3F, {
-    tabIndex: null == p ? -1 : 0,
-    className: a()(l.trait, {
-      [l.selectable]: null != h && !d,
-      [l.selected]: d,
-      [l.clickable]: null != h
+    onMouseEnter: m,
+    onMouseLeave: f,
+    onClick: g
+  } = e, h = r.useMemo(() => {
+    if (null != g) return () => g(t)
+  }, [g, t]);
+  return (0, n.jsxs)(s.P3F, {
+    tabIndex: null == g ? -1 : 0,
+    className: a()(o.trait, {
+      [o.selectable]: null != h && !d,
+      [o.selected]: d,
+      [o.clickable]: null != h
     }, u),
-    onMouseEnter: f,
-    onMouseLeave: _,
+    onMouseEnter: m,
+    onMouseLeave: f,
     onClick: h,
-    children: [null != c && (0, r.jsx)(c, {
+    children: [null != c && (0, n.jsx)(c, {
       size: "xs",
       color: "currentColor"
-    }), (0, r.jsx)(s.Text, {
-      variant: n,
-      color: o,
+    }), (0, n.jsx)(s.Text, {
+      variant: i,
+      color: l,
       lineClamp: 1,
       children: t
     })]

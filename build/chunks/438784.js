@@ -61,8 +61,8 @@ function h() {
 let m = .25,
   g = 4,
   E = 1,
-  v = 2.8,
-  b = {
+  b = 2.8,
+  v = {
     config: {
       friction: 50,
       tension: 900,
@@ -106,22 +106,22 @@ let I = i.memo(function(e) {
     i.useEffect(() => () => void(u.current = !1), []);
     let [f] = (0, l.q_F)(() => _(d({}, y), {
       to: async e => {
-        let t = v;
+        let t = b;
         for (; u.current;) c.current = h(), c.current ? (t += E * g, await e({
           dotCycle: t,
           immediate: !1
-        })) : t !== v ? (t = v, await e({
+        })) : t !== b ? (t = b, await e({
           dotCycle: t,
           immediate: !0
         })) : await p()
       }
-    }), "animate-always"), b = (6 * t + t / 4 * 2) / 2;
+    }), "animate-always"), v = (6 * t + t / 4 * 2) / 2;
     return (0, r.jsx)(r.Fragment, {
       children: [0, 1, 2].map(e => {
         let i = m * e,
           l = t + t * a * e;
         return (0, r.jsx)(s.animated.circle, {
-          cx: n ? n.to([0, 1], [b, l]) : l,
+          cx: n ? n.to([0, 1], [v, l]) : l,
           cy: t,
           r: f.dotCycle.to(e => O(e - i)).to([0, .4, .8, 1], [.8 * t, .8 * t, t, t]).to(e => c.current ? e : t),
           fill: o,
@@ -141,7 +141,7 @@ let I = i.memo(function(e) {
       themed: f = !1,
       className: p
     } = e;
-    return (0, l.Yzy)(u, _(d({}, b), {
+    return (0, l.Yzy)(u, _(d({}, v), {
       key: e => e ? "true" : "false"
     }), h() ? "animate-always" : "animate-never")((e, l, u) => {
       let {

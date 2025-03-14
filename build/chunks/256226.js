@@ -19,9 +19,9 @@ var r = n(200651),
   m = n(91218),
   g = n(518738),
   E = n(388032),
-  v = n(986647);
+  b = n(986647);
 
-function b(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -37,7 +37,7 @@ function y(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -78,7 +78,7 @@ function T(e, t) {
   return i
 }
 let N = i.forwardRef(function(e, t) {
-  var o, b, O;
+  var o, v, O;
   let T;
   let {
     canRemove: N,
@@ -104,35 +104,35 @@ let N = i.forwardRef(function(e, t) {
         label: E.NW.string(E.t.sMsaLi)
       }))
     })
-  }, [C.id]), B = (0, d.dQu)(u.Z.unsafe_rawColors.PRIMARY_300).hsl(), V = null !== (b = C.colorString) && void 0 !== b ? b : B, F = null !== (O = (0, l.wK)(V, .6)) && void 0 !== O ? O : void 0, Z = u.Z.unsafe_rawColors.WHITE_500.css, H = (0, l._i)(V);
+  }, [C.id]), B = (0, d.dQu)(u.Z.unsafe_rawColors.PRIMARY_300).hsl(), F = null !== (v = C.colorString) && void 0 !== v ? v : B, V = null !== (O = (0, l.wK)(F, .6)) && void 0 !== O ? O : void 0, Z = u.Z.unsafe_rawColors.WHITE_500.css, H = (0, l._i)(F);
   null != H && .3 > (0, l.Bd)(H) && (Z = u.Z.unsafe_rawColors.PRIMARY_630.css), T = U ? (0, r.jsx)(p.Z, {
-    className: v.roleFlowerStar,
-    iconClassName: N ? v.roleVerifiedIcon : void 0,
-    color: V,
+    className: b.roleFlowerStar,
+    iconClassName: N ? b.roleVerifiedIcon : void 0,
+    color: F,
     size: 14
   }) : "dot" === j ? (0, r.jsx)(d.FhE, {
-    className: v.roleDot,
-    color: V,
+    className: b.roleDot,
+    color: F,
     background: !1,
     tooltip: !1
   }) : (0, r.jsx)(d.xko, {
-    color: V,
-    className: v.roleCircle
+    color: F,
+    className: b.roleCircle
   });
   let W = i.useMemo(() => {
       var t;
       return y({
-        borderColor: w ? void 0 : F
+        borderColor: w ? void 0 : V
       }, null !== (t = e.style) && void 0 !== t ? t : {})
-    }, [F, w, e.style]),
+    }, [V, w, e.style]),
     Y = () => N ? (0, r.jsx)(d.DY3, {
       text: E.NW.string(E.t.u3RVsL),
       children: (0, r.jsxs)(d.P3F, {
-        className: a()(v.roleRemoveButtonCanRemove, v.roleRemoveButton),
+        className: a()(b.roleRemoveButtonCanRemove, b.roleRemoveButton),
         onClick: R,
         tabIndex: x,
         focusProps: {
-          focusClassName: v.roleRemoveIconFocused
+          focusClassName: b.roleRemoveIconFocused
         },
         "aria-hidden": !1,
         "aria-label": E.NW.formatToPlainString(E.t.QrxwhY, {
@@ -141,15 +141,15 @@ let N = i.forwardRef(function(e, t) {
         children: [T, (0, r.jsx)(d.Dio, {
           size: "md",
           color: Z,
-          className: v.roleRemoveIcon,
+          className: b.roleRemoveIcon,
           "aria-hidden": !0
         })]
       })
     }) : (0, r.jsx)(d.P3F, {
-      className: v.roleRemoveButton,
+      className: b.roleRemoveButton,
       tabIndex: -1,
       focusProps: {
-        focusClassName: v.roleRemoveIconFocused
+        focusClassName: b.roleRemoveIconFocused
       },
       "aria-hidden": !0,
       "aria-label": E.NW.formatToPlainString(E.t.QrxwhY, {
@@ -160,7 +160,7 @@ let N = i.forwardRef(function(e, t) {
   return (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)("div", I(y({
       ref: t,
-      className: a()(v.role, A),
+      className: a()(b.role, A),
       style: W,
       onContextMenu: G,
       onMouseDown: D,
@@ -168,12 +168,12 @@ let N = i.forwardRef(function(e, t) {
       tabIndex: x
     }, M), {
       children: [Y(), null != k ? (0, r.jsx)(m.Z, I(y({
-        className: v.roleIcon
+        className: b.roleIcon
       }, k), {
         enableTooltip: !1
       })) : null, (0, r.jsx)("div", {
         "aria-hidden": !0,
-        className: v.roleName,
+        className: b.roleName,
         children: (0, r.jsx)(d.Text, {
           variant: "text-xs/medium",
           children: (0, r.jsx)(h.Z, {

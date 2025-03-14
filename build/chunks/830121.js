@@ -16,9 +16,9 @@ var r, i, o, a, s, l, c, u, d, f = n(512722),
   g = n(243814),
   E = n(421474);
 n(865427);
-var v = n(264229);
+var b = n(264229);
 n(413605);
-var b = n(807675),
+var v = n(807675),
   y = n(701190),
   O = n(226951),
   I = n(591759),
@@ -39,13 +39,13 @@ let N = 10,
   U = /^#itemSkuId=([0-9]+)$/,
   G = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i,
   B = q(window.GLOBAL_ENV.INVITE_HOST),
-  V = q(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
-  F = q(null !== (a = window.GLOBAL_ENV.WEBAPP_ENDPOINT) && void 0 !== a ? a : "//canary.".concat(T.$R1)),
+  F = q(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
+  V = q(null !== (a = window.GLOBAL_ENV.WEBAPP_ENDPOINT) && void 0 !== a ? a : "//canary.".concat(T.$R1)),
   Z = q("//canary.".concat(T.$R1)),
   H = q("//ptb.".concat(T.$R1)),
   W = q("discordapp.com"),
   Y = q("discord.com"),
-  K = [O.Z.escape(null !== (s = B.host) && void 0 !== s ? s : ""), O.Z.escape(null !== (l = V.host) && void 0 !== l ? l : ""), O.Z.escape(null !== (c = F.host) && void 0 !== c ? c : ""), O.Z.escape(null !== (u = W.host) && void 0 !== u ? u : ""), O.Z.escape(null !== (d = Y.host) && void 0 !== d ? d : "")].filter(Boolean),
+  K = [O.Z.escape(null !== (s = B.host) && void 0 !== s ? s : ""), O.Z.escape(null !== (l = F.host) && void 0 !== l ? l : ""), O.Z.escape(null !== (c = V.host) && void 0 !== c ? c : ""), O.Z.escape(null !== (u = W.host) && void 0 !== u ? u : ""), O.Z.escape(null !== (d = Y.host) && void 0 !== d ? d : "")].filter(Boolean),
   z = RegExp("((https?://[^ ]*)|^|[^/][^/.])(".concat(K.join("|"), ")"), "g");
 
 function q(e) {
@@ -82,7 +82,7 @@ function $(e, t) {
 
 function ee(e) {
   var t, n, r, i;
-  return null !== (i = null !== (r = null !== (n = null !== (t = $(F, e)) && void 0 !== t ? t : $(Z, e)) && void 0 !== n ? n : $(H, e)) && void 0 !== r ? r : $(W, e)) && void 0 !== i ? i : $(Y, e)
+  return null !== (i = null !== (r = null !== (n = null !== (t = $(V, e)) && void 0 !== t ? t : $(Z, e)) && void 0 !== n ? n : $(H, e)) && void 0 !== r ? r : $(W, e)) && void 0 !== i ? i : $(Y, e)
 }
 
 function et(e) {
@@ -105,8 +105,8 @@ function en(e) {
     primaryHostRemainingPath: null
   };
   let a = $(B, o),
-    s = $(V, o),
-    l = null !== (i = null !== (r = null !== (n = null !== (t = $(F, o)) && void 0 !== t ? t : $(Z, o)) && void 0 !== n ? n : $(H, o)) && void 0 !== r ? r : $(W, o)) && void 0 !== i ? i : $(Y, o);
+    s = $(F, o),
+    l = null !== (i = null !== (r = null !== (n = null !== (t = $(V, o)) && void 0 !== t ? t : $(Z, o)) && void 0 !== n ? n : $(H, o)) && void 0 !== r ? r : $(W, o)) && void 0 !== i ? i : $(Y, o);
   return {
     url: o,
     inviteHostRemainingPath: a,
@@ -140,20 +140,20 @@ function er(e) {
       }))
     };
     if ((null == i ? void 0 : i.match(A)) != null && ("https:" === r.protocol || "http:" === r.protocol)) {
-      let e = (0, v.mb)(i.substring(1), r.search);
+      let e = (0, b.mb)(i.substring(1), r.search);
       y.Z.getInvite(e), u(S.g.INVITE, e)
     }(null == l ? void 0 : l.match(A)) != null && u(S.g.TEMPLATE, l.substring(1));
     let d = null == c ? void 0 : c.match(R);
     if (null != d) {
       let e = d[1].toUpperCase();
       if (e === S.g.INVITE) {
-        let e = (0, v.mb)(d[2], r.search);
+        let e = (0, b.mb)(d[2], r.search);
         u(S.g.INVITE, e)
       } else u(e, d[2])
     }(null == c ? void 0 : c.match(C)) != null && u(S.g.CHANNEL_LINK, c.replace("/channels/", ""));
     let f = et(r.pathname);
     if (null != f && u(S.g.EVENT, "".concat(f.guildId, "-").concat(f.guildEventId) + (null != f.recurrenceId ? "-".concat(f.recurrenceId) : "")), null != (null == c ? void 0 : c.match(j)) && null != r.query) {
-      let e = (0, b.y)(r.query),
+      let e = (0, v.y)(r.query),
         t = e.clientId;
       null == t || "" === t || (null === (o = e.scopes) || void 0 === o ? void 0 : o.some(e => e !== g.x.APPLICATIONS_COMMANDS)) || u(S.g.APP_OAUTH2_LINK, t)
     }

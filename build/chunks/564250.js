@@ -44,11 +44,11 @@ var r = n(505388),
       for (m = 0; m < _.length; ++m) 0 === _[m].indexOf("utf8=") && (_[m] === u ? h = "utf-8" : _[m] === c && (h = "iso-8859-1"), p = m, m = _.length);
     for (m = 0; m < _.length; ++m)
       if (m !== p) {
-        var m, g, E, v = _[m],
-          b = v.indexOf("]="),
-          y = -1 === b ? v.indexOf("=") : b + 1; - 1 === y ? (g = t.decoder(v, a.decoder, h, "key"), E = t.strictNullHandling ? null : "") : (g = t.decoder(v.slice(0, y), a.decoder, h, "key"), E = r.maybeMap(l(v.slice(y + 1), t), function(e) {
+        var m, g, E, b = _[m],
+          v = b.indexOf("]="),
+          y = -1 === v ? b.indexOf("=") : v + 1; - 1 === y ? (g = t.decoder(b, a.decoder, h, "key"), E = t.strictNullHandling ? null : "") : (g = t.decoder(b.slice(0, y), a.decoder, h, "key"), E = r.maybeMap(l(b.slice(y + 1), t), function(e) {
           return t.decoder(e, a.decoder, h, "value")
-        })), E && t.interpretNumericEntities && "iso-8859-1" === h && (E = s(E)), v.indexOf("[]=") > -1 && (E = o(E) ? [E] : E), i.call(n, g) ? n[g] = r.combine(n[g], E) : n[g] = E
+        })), E && t.interpretNumericEntities && "iso-8859-1" === h && (E = s(E)), b.indexOf("[]=") > -1 && (E = o(E) ? [E] : E), i.call(n, g) ? n[g] = r.combine(n[g], E) : n[g] = E
       } return n
   },
   f = function(e, t, n, r) {

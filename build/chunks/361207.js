@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  DW: () => b,
+  DW: () => v,
   Gn: () => O,
   t3: () => y,
   w4: () => E
@@ -30,7 +30,7 @@ function E(e) {
   return "".concat(s.fzT.DESKTOP).concat(r, "?platform=").concat(e).concat(i)
 }
 
-function v() {
+function b() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (() => {
     var e;
     return null === (e = i().os) || void 0 === e ? void 0 : e.family
@@ -38,16 +38,16 @@ function v() {
   return null == e ? h : -1 !== e.indexOf(l) || -1 !== e.indexOf(c) || -1 !== e.indexOf(u) || -1 !== e.indexOf(d) || -1 !== e.indexOf(f) || -1 !== e.indexOf(_) ? g : -1 !== e.indexOf(p) ? m : h
 }
 
-function b(e) {
+function v(e) {
   return ({
     [h]: "Windows",
     [m]: "Mac",
     [g]: "Linux"
-  })[v(e)]
+  })[b(e)]
 }
 
 function y() {
-  let e = v(),
+  let e = b(),
     t = e === g ? "tar.gz" : null;
   return E(e, !1, t)
 }

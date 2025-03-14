@@ -25,12 +25,12 @@ function h(e) {
     display: m,
     onAction: g,
     onClose: E
-  } = e, v = (0, i.e7)([d.default], () => {
+  } = e, b = (0, i.e7)([d.default], () => {
     var e;
     return (null === (e = d.default.getCurrentUser()) || void 0 === e ? void 0 : e.id) === n.id
-  }), b = (0, i.e7)([u.Z], () => u.Z.hasConnectedAccount());
+  }), v = (0, i.e7)([u.Z], () => u.Z.hasConnectedAccount());
   if ("recent" !== m || !(0, c.AZ)(h)) return null;
-  if (!b) return (0, r.jsx)(o.sNh, {
+  if (!v) return (0, r.jsx)(o.sNh, {
     id: "connect-spotify",
     label: p.NW.formatToPlainString(p.t.XWSHTU, {
       platform: _.ai
@@ -41,7 +41,7 @@ function h(e) {
       }), a.Z.open(f.oAB.CONNECTIONS), null == E || E()
     }
   });
-  if (v) return null;
+  if (b) return null;
   let y = (0, s.dU)(h) ? null === (t = h.extra.entries[0]) || void 0 === t ? void 0 : t.media : h.extra.media;
   return null == y ? null : (0, r.jsx)(o.sNh, {
     id: "play-on-spotify",

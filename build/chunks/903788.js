@@ -77,12 +77,12 @@ let _ = e => {
     } = e,
     g = d(e, ["size", "width", "height", "secondaryColor", "secondaryColorClass", "color", "colorClass"]);
   let E = (0, a.m)(s),
-    v = null !== (t = null == E ? void 0 : E.width) && void 0 !== t ? t : c,
-    b = null !== (n = null == E ? void 0 : E.height) && void 0 !== n ? n : f;
+    b = null !== (t = null == E ? void 0 : E.width) && void 0 !== t ? t : c,
+    v = null !== (n = null == E ? void 0 : E.height) && void 0 !== n ? n : f;
   return (0, r.jsxs)("svg", u(l({}, (0, o.Z)(g)), {
     xmlns: "http://www.w3.org/2000/svg",
-    width: v,
-    height: b,
+    width: b,
+    height: v,
     fill: "none",
     viewBox: "0 0 24 24",
     children: [(0, r.jsx)("circle", {

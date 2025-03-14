@@ -17,9 +17,9 @@ var i = n(120356),
   p = n(388032),
   h = n(460518),
   f = n(146036),
-  b = n(510176);
+  x = n(510176);
 
-function x(e) {
+function b(e) {
   let {
     headerAssetSrc: t,
     headerText: n,
@@ -91,7 +91,7 @@ function N() {
     } = (0, u.hs)();
   return (0, r.jsxs)("div", {
     className: h.cardsContainer,
-    children: [(0, r.jsx)(x, {
+    children: [(0, r.jsx)(b, {
       headerAssetSrc: f,
       headerText: p.NW.string(p.t.CQkyMj),
       description: p.NW.string(g.Z.ctRS3d),
@@ -99,8 +99,8 @@ function N() {
       assetCount: n,
       onClick: () => o.Z.open(m.oAB.REGISTERED_GAMES),
       disabled: e
-    }), (0, r.jsx)(x, {
-      headerAssetSrc: b,
+    }), (0, r.jsx)(b, {
+      headerAssetSrc: x,
       headerText: p.NW.string(p.t["3fe7U1"]),
       description: p.NW.string(g.Z.DU5UXF),
       assets: i,

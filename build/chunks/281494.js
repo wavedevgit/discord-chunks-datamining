@@ -4,7 +4,7 @@ n.d(t, {
   C$: () => m,
   Fe: () => d,
   Fz: () => f,
-  IB: () => v,
+  IB: () => b,
   Ve: () => g,
   iF: () => h,
   jy: () => E
@@ -141,7 +141,7 @@ async function E(e) {
     userTrialOffers: t
   }), n
 }
-async function v(e) {
+async function b(e) {
   try {
     var t;
     let n = await r.tn.get({

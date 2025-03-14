@@ -25,7 +25,7 @@ let d = {
       n = e.options,
       o = e.name;
     if (!t.modifiersData[o]._skip) {
-      for (var d = n.mainAxis, f = void 0 === d || d, _ = n.altAxis, p = void 0 === _ || _, h = n.fallbackPlacements, m = n.padding, g = n.boundary, E = n.rootBoundary, v = n.altBoundary, b = n.flipVariations, y = void 0 === b || b, O = n.allowedAutoPlacements, I = t.options.placement, S = (0, i.Z)(I) === I, T = h || (S || !y ? [(0, r.Z)(I)] : u(I)), N = [I].concat(T).reduce(function(e, n) {
+      for (var d = n.mainAxis, f = void 0 === d || d, _ = n.altAxis, p = void 0 === _ || _, h = n.fallbackPlacements, m = n.padding, g = n.boundary, E = n.rootBoundary, b = n.altBoundary, v = n.flipVariations, y = void 0 === v || v, O = n.allowedAutoPlacements, I = t.options.placement, S = (0, i.Z)(I) === I, T = h || (S || !y ? [(0, r.Z)(I)] : u(I)), N = [I].concat(T).reduce(function(e, n) {
           return e.concat((0, i.Z)(n) === l.d7 ? (0, s.Z)(t, {
             placement: n,
             boundary: g,
@@ -44,23 +44,23 @@ let d = {
             placement: L,
             boundary: g,
             rootBoundary: E,
-            altBoundary: v,
+            altBoundary: b,
             padding: m
           }),
           G = k ? M ? l.F2 : l.t$ : M ? l.I : l.we;
         A[j] > C[j] && (G = (0, r.Z)(G));
         var B = (0, r.Z)(G),
-          V = [];
-        if (f && V.push(U[x] <= 0), p && V.push(U[G] <= 0, U[B] <= 0), V.every(function(e) {
+          F = [];
+        if (f && F.push(U[x] <= 0), p && F.push(U[G] <= 0, U[B] <= 0), F.every(function(e) {
             return e
           })) {
           w = L, P = !1;
           break
         }
-        R.set(L, V)
+        R.set(L, F)
       }
       if (P)
-        for (var F = y ? 3 : 1, Z = function(e) {
+        for (var V = y ? 3 : 1, Z = function(e) {
             var t = N.find(function(t) {
               var n = R.get(t);
               if (n) return n.slice(0, e).every(function(e) {
@@ -68,7 +68,7 @@ let d = {
               })
             });
             if (t) return w = t, "break"
-          }, H = F; H > 0 && "break" !== Z(H); H--);
+          }, H = V; H > 0 && "break" !== Z(H); H--);
       t.placement !== w && (t.modifiersData[o]._skip = !0, t.placement = w, t.reset = !0)
     }
   },

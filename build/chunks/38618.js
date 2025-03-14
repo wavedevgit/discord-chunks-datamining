@@ -18,8 +18,8 @@ var r, i = n(392711),
   m = n(19780),
   g = n(936349),
   E = n(944486),
-  v = n(885110),
-  b = n(959457),
+  b = n(885110),
+  v = n(959457),
   y = n(358085),
   O = n(138859),
   I = n(955132),
@@ -80,11 +80,11 @@ function B() {
   P.verbose("connection closed dispatched"), D = Date.now()
 }
 
-function V(e) {
+function F(e) {
   return e.resetSocket && (I.Wb.close(), I.Wb.dispatcher.clear(), I.Wb.connect()), !1
 }
 
-function F(e) {
+function V(e) {
   return I.GC.update({
     guildId: e.guildId,
     channelId: e.channelId
@@ -227,11 +227,11 @@ function eo(e) {
 
 function ea() {
   let e = es();
-  b.Z.getAllActiveStreamKeys().filter(t => t !== e).forEach(e => eo(e))
+  v.Z.getAllActiveStreamKeys().filter(t => t !== e).forEach(e => eo(e))
 }
 
 function es() {
-  return b.Z.getAllActiveStreamKeys().find(e => (0, u.my)(e).ownerId === f.default.getId())
+  return v.Z.getAllActiveStreamKeys().find(e => (0, u.my)(e).ownerId === f.default.getId())
 }
 
 function el(e) {
@@ -296,7 +296,7 @@ function eh(e) {
 }
 class em extends(r = a.ZP.Store) {
   initialize() {
-    this.waitFor(f.default, E.Z, p.Z, _.Z, d.Z), this.syncWith([h.Z], X), this.syncWith([v.Z], J)
+    this.waitFor(f.default, E.Z, p.Z, _.Z, d.Z), this.syncWith([h.Z], X), this.syncWith([b.Z], J)
   }
   getSocket() {
     return I.Wb
@@ -319,13 +319,13 @@ let eg = new em(s.Z, {
   START_SESSION: k,
   LOGIN_SUCCESS: U,
   LOGOUT: j,
-  CLEAR_CACHES: V,
+  CLEAR_CACHES: F,
   CONNECTION_OPEN: e => {
     G(e)
   },
   CONNECTION_CLOSED: B,
   RTC_CONNECTION_STATE: q,
-  VOICE_CHANNEL_SELECT: F,
+  VOICE_CHANNEL_SELECT: V,
   VOICE_STATE_UPDATES: W,
   GUILD_DELETE: Y,
   CHANNEL_DELETE: z,

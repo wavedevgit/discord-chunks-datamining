@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   D: () => y,
-  T: () => b
+  T: () => v
 });
 var r = n(200651),
   i = n(192379),
@@ -24,7 +24,7 @@ function E(e) {
   e.stopPropagation()
 }
 
-function v(e) {
+function b(e) {
   let {
     windowKey: t,
     showDivider: n
@@ -55,7 +55,7 @@ function v(e) {
   })
 }
 
-function b(e) {
+function v(e) {
   let {
     leading: t,
     title: n,
@@ -80,7 +80,7 @@ function b(e) {
     }), (0, r.jsxs)("div", {
       className: p.trailing,
       onDoubleClick: E,
-      children: [o, u === d.PlatformTypes.WINDOWS && (0, r.jsx)(v, {
+      children: [o, u === d.PlatformTypes.WINDOWS && (0, r.jsx)(b, {
         windowKey: s,
         showDivider: null != o
       })]
@@ -104,7 +104,7 @@ function y(e) {
     children: c && (0, r.jsx)("div", {
       className: p.trailing,
       onDoubleClick: E,
-      children: (0, r.jsx)(v, {
+      children: (0, r.jsx)(b, {
         windowKey: o
       })
     })

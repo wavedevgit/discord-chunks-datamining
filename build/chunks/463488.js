@@ -84,17 +84,17 @@ function t(e) {
         scope: "doctag"
       }, "self"]
     }),
-    v = {
+    b = {
       scope: "subst",
       begin: /%\(/,
       end: /\)/,
       contains: [m, h, l, p, d]
     },
-    b = {
+    v = {
       scope: "string",
       begin: /"/,
       end: /"/,
-      contains: [v, {
+      contains: [b, {
         scope: "char.escape",
         variants: [{
           match: /\\\\|\\["0%abefnrtv]/
@@ -107,7 +107,7 @@ function t(e) {
         }]
       }]
     };
-  v.contains.push(b);
+  b.contains.push(v);
   let y = [...r, ...o, ...i],
     O = {
       relevance: 0,
@@ -137,7 +137,7 @@ function t(e) {
       "variable.language": o,
       literal: i
     },
-    contains: [I, m, b, f, E, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, h, u, g, c, l, d, p, _, O]
+    contains: [I, m, v, f, E, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, h, u, g, c, l, d, p, _, O]
   }
 }
 e.exports = t

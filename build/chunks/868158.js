@@ -23,9 +23,9 @@ var r = n(512722),
   m = n(131704),
   g = n(430824),
   E = n(306680),
-  v = n(411198);
+  b = n(411198);
 
-function b(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -41,7 +41,7 @@ function y(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -164,7 +164,7 @@ function x(e, t) {
   var n, r, i;
   let o = g.Z.getGuild(e.id),
     a = G(e, null == o ? void 0 : {
-      properties: v.tK(o),
+      properties: b.tK(o),
       roles: g.Z.getRoles(o.id),
       emojis: null !== (r = null === (n = p.ZP.getGuilds()[o.id]) || void 0 === n ? void 0 : n.rawEmojis) && void 0 !== r ? r : null,
       stickers: null !== (i = h.Z.getRawStickersByGuild().get(o.id)) && void 0 !== i ? i : null,
@@ -199,7 +199,7 @@ function j(e) {
   for (let s of t) {
     var o, a, l;
     s.id in e.guildVersions && e.guildChannels.has(s.id) && (A[s.id] = {
-      properties: v.tK(s),
+      properties: b.tK(s),
       roles: g.Z.getRoles(s.id),
       emojis: null !== (a = null === (o = n[s.id]) || void 0 === o ? void 0 : o.rawEmojis) && void 0 !== a ? a : null,
       stickers: null !== (l = r.get(s.id)) && void 0 !== l ? l : null,
@@ -241,7 +241,7 @@ function U(e) {
       deletes: null !== (a = e.partial_updates.deleted_channel_ids) && void 0 !== a ? a : []
     },
     channelTimestampUpdates: e.channel_updates,
-    emojis: null == _.emojis ? null : V(_.emojis, e.partial_updates.emojis, e.partial_updates.deleted_emoji_ids),
+    emojis: null == _.emojis ? null : F(_.emojis, e.partial_updates.emojis, e.partial_updates.deleted_emoji_ids),
     emojiUpdates: {
       writes: null !== (s = e.partial_updates.emojis) && void 0 !== s ? s : [],
       deletes: null !== (l = e.partial_updates.deleted_emoji_ids) && void 0 !== l ? l : []
@@ -253,9 +253,9 @@ function U(e) {
     members: e.members,
     premium_subscription_count: e.premium_subscription_count,
     properties: null !== (c = e.properties) && void 0 !== c ? c : null,
-    roles: v.EO(e.id, _.roles, e.partial_updates.roles, e.partial_updates.deleted_role_ids),
+    roles: b.EO(e.id, _.roles, e.partial_updates.roles, e.partial_updates.deleted_role_ids),
     stage_instances: e.stage_instances,
-    stickers: null == _.stickers ? null : V(_.stickers, e.partial_updates.stickers, e.partial_updates.deleted_sticker_ids),
+    stickers: null == _.stickers ? null : F(_.stickers, e.partial_updates.stickers, e.partial_updates.deleted_sticker_ids),
     stickerUpdates: {
       writes: null !== (u = e.partial_updates.stickers) && void 0 !== u ? u : [],
       deletes: null !== (d = e.partial_updates.deleted_sticker_ids) && void 0 !== d ? d : []
@@ -302,7 +302,7 @@ function G(e, t) {
     },
     channelTimestampUpdates: e.channel_updates,
     activity_instances: e.activity_instances,
-    emojis: null == t.emojis ? null : V(t.emojis, e.partial_updates.emojis, e.partial_updates.deleted_emoji_ids),
+    emojis: null == t.emojis ? null : F(t.emojis, e.partial_updates.emojis, e.partial_updates.deleted_emoji_ids),
     emojiUpdates: {
       writes: null !== (l = e.partial_updates.emojis) && void 0 !== l ? l : [],
       deletes: null !== (c = e.partial_updates.deleted_emoji_ids) && void 0 !== c ? c : []
@@ -315,9 +315,9 @@ function G(e, t) {
     premium_subscription_count: e.premium_subscription_count,
     presences: e.presences,
     properties: null !== (u = e.properties) && void 0 !== u ? u : t.properties,
-    roles: v.EO(e.id, t.roles, e.partial_updates.roles, e.partial_updates.deleted_role_ids),
+    roles: b.EO(e.id, t.roles, e.partial_updates.roles, e.partial_updates.deleted_role_ids),
     stage_instances: e.stage_instances,
-    stickers: null == t.stickers ? null : V(t.stickers, e.partial_updates.stickers, e.partial_updates.deleted_sticker_ids),
+    stickers: null == t.stickers ? null : F(t.stickers, e.partial_updates.stickers, e.partial_updates.deleted_sticker_ids),
     stickerUpdates: {
       writes: null !== (d = e.partial_updates.stickers) && void 0 !== d ? d : [],
       deletes: null !== (f = e.partial_updates.deleted_sticker_ids) && void 0 !== f ? f : []
@@ -338,7 +338,7 @@ function B(e) {
   return t
 }
 
-function V(e, t, n) {
+function F(e, t, n) {
   t = null != t ? t : [];
   let r = new Set((null != n ? n : []).concat(t.map(e => e.id)));
   return e.filter(e => !r.has(e.id)).concat(t)

@@ -18,9 +18,9 @@ n.d(t, {
   oi: () => g,
   pw: () => I,
   rk: () => O,
-  tB: () => b,
+  tB: () => v,
   uo: () => T,
-  vD: () => v,
+  vD: () => b,
   x3: () => m
 }), n(266796);
 var r = n(592125),
@@ -57,7 +57,7 @@ function E(e) {
   }
 }
 
-function v(e) {
+function b(e) {
   var t, n;
   return {
     channelId: e.channel_id,
@@ -72,7 +72,7 @@ function v(e) {
   }
 }
 
-function b(e) {
+function v(e) {
   if (null == e) return null;
   let {
     welcome_message: t,
@@ -86,7 +86,7 @@ function b(e) {
   return {
     welcomeMessage: s,
     newMemberActions: n.filter(e => (0, i.lm)(r.Z.getChannel(e.channel_id))).map(E),
-    resourceChannels: o.filter(e => (0, i.lm)(r.Z.getChannel(e.channel_id))).map(v),
+    resourceChannels: o.filter(e => (0, i.lm)(r.Z.getChannel(e.channel_id))).map(b),
     enabled: a
   }
 }

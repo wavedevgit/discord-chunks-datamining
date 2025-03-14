@@ -410,7 +410,7 @@ let s = {
     },
     toolbarType: 2
   },
-  v = {
+  b = {
     analyticsName: "profile_bio_input",
     drafts: {
       type: i.d.ChannelMessage
@@ -428,7 +428,7 @@ let s = {
     disableAutoFocus: !0,
     showCharacterCount: !0
   },
-  b = {
+  v = {
     analyticsName: "custom_gift_type",
     drafts: {
       type: i.d.ChannelMessage
@@ -490,8 +490,8 @@ let s = {
     THREAD_CREATION: _,
     USER_PROFILE: m,
     USER_PROFILE_REPLY: E,
-    PROFILE_BIO_INPUT: v,
-    CUSTOM_GIFT: b,
+    PROFILE_BIO_INPUT: b,
+    CUSTOM_GIFT: v,
     RULES_INPUT: y,
     CREATE_FORUM_POST: p,
     CREATE_POLL: h,

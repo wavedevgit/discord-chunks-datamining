@@ -28,10 +28,10 @@ function E(e, t, n, r, i) {
   }];
   let o = [],
     a = Object.values(s.Z.getMutableGuildChannelsForGuild(e.id)).filter(e => u.Z.can(m.Plq.VIEW_CHANNEL, e));
-  return o.push(...v(e, a)), o.push(b(e)), o.push(y()), o.push(...I(a)), o.push(...S(a)), o.push(...A(a)), l.Z.hasConsented(m.pjP.PERSONALIZATION) ? o.push(...T(e, a, n, r, i)) : o.push(...N(e, a)), o.filter(p.lm)
+  return o.push(...b(e, a)), o.push(v(e)), o.push(y()), o.push(...I(a)), o.push(...S(a)), o.push(...A(a)), l.Z.hasConsented(m.pjP.PERSONALIZATION) ? o.push(...T(e, a, n, r, i)) : o.push(...N(e, a)), o.filter(p.lm)
 }
 
-function v(e, t) {
+function b(e, t) {
   if (!(d.ZP.isMuted(e.id) && !d.ZP.isTemporarilyMuted(e.id))) return [];
   let n = [{
       label: "Unmuting the guild and marking it as read",
@@ -52,7 +52,7 @@ function v(e, t) {
   }), n
 }
 
-function b(e) {
+function v(e) {
   if (d.ZP.getMessageNotifications(e.id) === m.bL.ALL_MESSAGES) return {
     label: "Setting the guild to only mentions since it is in care-a-little but was previously all-messages",
     apply: e => {

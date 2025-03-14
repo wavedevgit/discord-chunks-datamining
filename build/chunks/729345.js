@@ -19,8 +19,8 @@ var r = n(544891),
 let m = 9437184,
   g = 0xe00000,
   E = new u.Z("DebugUploadManager"),
-  v = null,
-  b = null;
+  b = null,
+  v = null;
 async function y(e, t) {
   try {
     await O(e), await (0, o.u)(g, t)
@@ -41,7 +41,7 @@ async function O(e) {
       t = "Logs failed: ".concat(e)
     }
     try {
-      n = (null == v ? void 0 : v.getSystemLog) != null ? await new Promise(e => v.getSystemLog(e)) : ""
+      n = (null == b ? void 0 : b.getSystemLog) != null ? await new Promise(e => b.getSystemLog(e)) : ""
     } catch (e) {
       n = "System Logs failed ".concat(e)
     }
@@ -55,7 +55,7 @@ async function O(e) {
       let e = 1 - m / o;
       t = t.slice(t.length - Math.floor(t.length * e)), n = n.slice(n.length - Math.floor(n.length * e)), i = i.slice(i.length - Math.floor(i.length * e))
     }
-    let a = (null == b ? void 0 : b.AppOpenedTimestamp) != null ? b.AppOpenedTimestamp : null,
+    let a = (null == v ? void 0 : v.AppOpenedTimestamp) != null ? v.AppOpenedTimestamp : null,
       u = "\n    ".concat((0, _.Z)(a), "\n\n    ").concat((0, s.EA)(), "\n\n    Metadata:\n    ").concat(JSON.stringify((0, d.Z)(), void 0, 2), "\n\n    ChannelStore:\n    ").concat(JSON.stringify(l.Z.getDebugInfo(), void 0, 2), "\n\n    Logs:\n    ").concat(t, "\n\n    System logs:\n    ").concat(n, "\n\n    Push Notifications:\n    ").concat(i, "\n    ");
     c.ZH();
     let g = h.ANM.DEBUG_LOG(e, "discord_app_logs");

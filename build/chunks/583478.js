@@ -55,8 +55,8 @@ function E(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let v = new u.Z("BalanceCounter"),
-  b = (0, d.dU)(void 0) === _.C.PRODUCTION,
+let b = new u.Z("BalanceCounter"),
+  v = (0, d.dU)(void 0) === _.C.PRODUCTION,
   y = e => null === e ? 0 : "".concat(e.toFixed(0)).length,
   O = (e, t) => {
     let n = e > 0,
@@ -113,9 +113,9 @@ let v = new u.Z("BalanceCounter"),
           a(y(g))
         },
         onRest: () => {
-          if (_(f + 1), u(), !b && null !== h.current && null !== p.current) {
+          if (_(f + 1), u(), !v && null !== h.current && null !== p.current) {
             let e = Date.now();
-            v.log("Balance Counter finished updating: ", {
+            b.log("Balance Counter finished updating: ", {
               time: e - h.current.lastChangedAt,
               delta: m - p.current
             })
@@ -142,12 +142,12 @@ let v = new u.Z("BalanceCounter"),
       _ = (0, i.useMemo)(() => y(n), [n]),
       h = null !== (t = (0, c.Z)(_)) && void 0 !== t ? t : 0,
       E = (0, i.useMemo)(() => I(h, _, d), [h, _, d]),
-      v = "".concat(u ? 0 : E, "ch");
+      b = "".concat(u ? 0 : E, "ch");
     return (0, r.jsx)(l.Text, {
       variant: "text-md/semibold",
       className: a()(p.balanceCounterText, u ? void 0 : p.balanceCounterMargin, o),
       style: {
-        width: v,
+        width: b,
         opacity: u ? "0" : 1
       },
       children: u ? null : (0, r.jsx)(S, m({

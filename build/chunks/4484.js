@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(288897),
   g = n(925994),
   E = n(436660),
-  v = n(887490),
-  b = n(194625),
+  b = n(887490),
+  v = n(194625),
   y = n(77188),
   O = n(230554),
   I = n(780748),
@@ -45,8 +45,8 @@ let D = i.forwardRef(function(e, t) {
     required: U,
     textAreaPaddingClassName: G,
     onChange: B,
-    onPaste: V,
-    onResize: F,
+    onPaste: F,
+    onResize: V,
     onFocus: Z,
     onBlur: H,
     onKeyDown: W,
@@ -72,12 +72,12 @@ let D = i.forwardRef(function(e, t) {
     "aria-describedby": ed,
     "aria-labelledby": ef,
     "aria-autocomplete": e_
-  } = e, ep = i.useRef(null), eh = i.useRef(null), em = i.useRef(!0), eg = i.useRef(!0), eE = M || k, ev = i.useCallback((e, t, n) => {
+  } = e, ep = i.useRef(null), eh = i.useRef(null), em = i.useRef(!0), eg = i.useRef(!0), eE = M || k, eb = i.useCallback((e, t, n) => {
     var r;
     let {
       value: i,
       selection: o
-    } = n, a = v.bN.richValue(e), s = e.selection, l = !1;
+    } = n, a = b.bN.richValue(e), s = e.selection, l = !1;
     if (void 0 !== i && i !== a) {
       if (e.children = i, "parent" === t && !e.previewMarkdown && e.chatInputType === _.Ie.EDIT) {
         try {
@@ -88,15 +88,15 @@ let D = i.forwardRef(function(e, t) {
       }
       "undo" !== t && void 0 !== i && i !== a && h.T.insertEntry(e, "other", !1, a, s), l = !0
     }
-    if (null == o || v.Ew.isValid(e, o) || (o = void 0), (l || !v.Ew.isValid(e, s)) && void 0 === o) {
-      let t = v.bN.end(e, []);
+    if (null == o || b.Ew.isValid(e, o) || (o = void 0), (l || !b.Ew.isValid(e, s)) && void 0 === o) {
+      let t = b.bN.end(e, []);
       o = {
         anchor: t,
         focus: t
       }
     }
-    let u = null != o && !v.Ew.equals(o, s);
-    if (l && !en && v.bN.focus(e), null != o && u) {
+    let u = null != o && !b.Ew.equals(o, s);
+    if (l && !en && b.bN.focus(e), null != o && u) {
       e.selection = o;
       let t = h.T.currentEntry(e);
       null != t && (t.selection = o), l = !0
@@ -111,7 +111,7 @@ let D = i.forwardRef(function(e, t) {
         eg.current = !0
       } else e.onChange()
     }
-  }, [D.id, D.guild_id, en]), eb = i.useCallback(() => {
+  }, [D.id, D.guild_id, en]), ev = i.useCallback(() => {
     em.current = !1
   }, []), ey = i.useCallback(() => {
     em.current = !0
@@ -120,9 +120,9 @@ let D = i.forwardRef(function(e, t) {
     chatInputType: o,
     canUseCommands: ee,
     canOnlyUseTextCommands: et,
-    onChangeStart: eb,
+    onChangeStart: ev,
     onChangeEnd: ey,
-    updateState: ev
+    updateState: eb
   }), eI = i.useCallback((e, t) => {
     let n = p.tM(eO, e, D.id),
       r = p.lk(e, D.guild_id, D.id, n, t);
@@ -156,12 +156,12 @@ let D = i.forwardRef(function(e, t) {
         return
       }
     }
-    null == q || q((0, g.sk)(v.bN.richValue(eO), {
+    null == q || q((0, g.sk)(b.bN.richValue(eO), {
       mode: "raw",
       ignoreTrailingEmptyNodes: !0
     }), t, e)
   }, [D.id, eO, q, eI, ee]);
-  (0, O.Z)(t, eO, D, eS), (0, T.Z)(eO, ep, F);
+  (0, O.Z)(t, eO, D, eS), (0, T.Z)(eO, ep, V);
   let {
     handleKeyDown: eT,
     handleKeyUp: eN
@@ -180,7 +180,7 @@ let D = i.forwardRef(function(e, t) {
   }), {
     handlePaste: eA,
     handleGlobalPaste: eC
-  } = (0, S.Z)(eO, eE, V), eR = i.useCallback(e => {
+  } = (0, S.Z)(eO, eE, F), eR = i.useCallback(e => {
     null == Q || Q()
   }, [Q]), eP = i.useCallback(e => {
     e !== eh.current ? eg.current && (null == B || B(null, (0, g.sk)(e, {
@@ -188,10 +188,10 @@ let D = i.forwardRef(function(e, t) {
     }), e)) : eg.current && Q()
   }, [Q, B]);
   i.useLayoutEffect(() => {
-    em.current && (eh.current = n, ev(eO, "parent", {
+    em.current && (eh.current = n, eb(eO, "parent", {
       value: n
     }))
-  }, [eO, n, ev]), i.useEffect(() => {
+  }, [eO, n, eb]), i.useEffect(() => {
     let e = () => {
       var e;
       let t = null !== (e = c.Z.getActiveCommand(D.id)) && void 0 !== e ? e : null;
@@ -199,7 +199,7 @@ let D = i.forwardRef(function(e, t) {
     };
     return u.Z.addChangeListener(e), () => u.Z.removeChangeListener(e)
   }, [D, eO, eI]);
-  let ew = i.useCallback((e, t) => (0, b.Z)(e, t), []),
+  let ew = i.useCallback((e, t) => (0, v.Z)(e, t), []),
     eD = i.useCallback(e => (0, C.Z)(eO, e, D.id), [D.id, eO]),
     eL = i.useCallback(e => (0, R.Z)(e), []);
   return (0, r.jsxs)(r.Fragment, {

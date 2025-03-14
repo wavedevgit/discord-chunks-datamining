@@ -52,7 +52,7 @@ function E(e) {
       for (let e of t.channel_overrides) e.collapsed ? f[e.channel_id] = !0 : delete f[e.channel_id]
 }
 
-function v(e) {
+function b(e) {
   let {
     userGuildSettings: t
   } = e, n = new Set(t.map(e => e.guild_id).filter(a.lm));
@@ -64,7 +64,7 @@ function v(e) {
     for (let t of e.channel_overrides) t.collapsed && (f[t.channel_id] = !0)
 }
 
-function b(e) {
+function v(e) {
   let {
     channel: {
       id: t
@@ -116,10 +116,10 @@ class I extends(r = i.ZP.PersistedStore) {
 d(I, "displayName", "CategoryCollapseStore"), d(I, "persistKey", "collapsedCategories");
 let S = new I(o.Z, {
   CONNECTION_OPEN: E,
-  USER_GUILD_SETTINGS_FULL_UPDATE: v,
+  USER_GUILD_SETTINGS_FULL_UPDATE: b,
   CATEGORY_COLLAPSE: m,
   CATEGORY_EXPAND: g,
   CATEGORY_COLLAPSE_ALL: y,
   CATEGORY_EXPAND_ALL: O,
-  CHANNEL_DELETE: b
+  CHANNEL_DELETE: v
 })

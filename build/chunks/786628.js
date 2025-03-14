@@ -1,6 +1,6 @@
-/** Chunk was on 95617 **/
+/** Chunk was on 98697 **/
 n.d(t, {
-  Z: () => s
+  Z: () => a
 });
 var r = n(200651);
 n(192379);
@@ -8,7 +8,7 @@ var i = n(481060),
   o = n(937615),
   l = n(527338);
 
-function s(e) {
+function a(e) {
   let {
     price: t,
     isPremiumUser: n

@@ -1,16 +1,16 @@
-/** Chunk was on 30806 **/
+/** Chunk was on 16120 **/
 n.d(t, {
   C: () => function e(t) {
-    return null == t ? t : Object.keys(t).reduce((n, r) => {
-      let l = (0, i.camelCase)(r);
-      return "object" != typeof t[r] || Array.isArray(t[r]) ? n[l] = t[r] : n[l] = e(t[r]), n
+    return null == t ? t : Object.keys(t).reduce((n, l) => {
+      let i = (0, r.camelCase)(l);
+      return "object" != typeof t[l] || Array.isArray(t[l]) ? n[i] = t[l] : n[i] = e(t[l]), n
     }, {})
   },
   X: () => function e(t) {
-    return null == t ? t : Object.keys(t).reduce((n, r) => {
-      let l = (0, i.snakeCase)(r);
-      return "object" != typeof t[r] || Array.isArray(t[r]) ? n[l] = t[r] : n[l] = e(t[r]), n[l] = t[r], n
+    return null == t ? t : Object.keys(t).reduce((n, l) => {
+      let i = (0, r.snakeCase)(l);
+      return "object" != typeof t[l] || Array.isArray(t[l]) ? n[i] = t[l] : n[i] = e(t[l]), n[i] = t[l], n
     }, {})
   }
 });
-var i = n(392711)
+var r = n(392711)

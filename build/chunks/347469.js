@@ -27,7 +27,7 @@ let l = e => {
     orientation: _,
     usePointerEvents: p = !1,
     getClampedValue: h = i.clamp
-  } = e, [m, g] = r.useState(!1), E = r.useRef(0), v = r.useRef(!1), b = r.useRef(null == t ? 0 : t);
+  } = e, [m, g] = r.useState(!1), E = r.useRef(0), b = r.useRef(!1), v = r.useRef(null == t ? 0 : t);
   return r.useLayoutEffect(() => {
     if (!m || null == n.current) return;
 
@@ -35,7 +35,7 @@ let l = e => {
       let t = 1 === s(_) ? e.screenX : e.screenY,
         n = 0 === _ || 2 === _,
         r = (t - E.current) * (n ? -1 : 1);
-      return b.current + r
+      return v.current + r
     }
 
     function t(e) {
@@ -47,13 +47,13 @@ let l = e => {
         let o = e(i),
           a = t(o),
           l = 1 === s(_) ? "width" : "height";
-        n.current.style[l] = "".concat(a, "px"), v.current || (v.current = !0, null == u || u(a)), r(a, o)
+        n.current.style[l] = "".concat(a, "px"), b.current || (b.current = !0, null == u || u(a)), r(a, o)
       },
       y = n => {
         g(!1);
         let r = e(n),
           i = t(r);
-        c(i, r), null == d || d(i), v.current = !1
+        c(i, r), null == d || d(i), b.current = !1
       },
       O = p ? "pointerup" : "mouseup",
       I = p ? "pointermove" : "mousemove",
@@ -63,6 +63,6 @@ let l = e => {
     }
   }, [m, c, l, a, _, n, f, d, p, h, u]), r.useCallback(e => {
     let t = 1 === s(_);
-    null != n.current && (b.current = t ? n.current.offsetWidth : n.current.offsetHeight), E.current = t ? e.screenX : e.screenY, g(!0)
+    null != n.current && (v.current = t ? n.current.offsetWidth : n.current.offsetHeight), E.current = t ? e.screenX : e.screenY, g(!0)
   }, [_, n])
 }

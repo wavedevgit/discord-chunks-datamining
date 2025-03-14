@@ -3,7 +3,7 @@
 n.d(t, {
   Bk: () => em,
   CB: () => eE,
-  ZP: () => ev,
+  ZP: () => eb,
   r$: () => eg
 }), n(789020), n(411104);
 var r = n(525654),
@@ -22,8 +22,8 @@ var r = n(525654),
   m = n(895924),
   g = n(625128),
   E = n(972830),
-  v = n(305325),
-  b = n(63568),
+  b = n(305325),
+  v = n(63568),
   y = n(281956),
   O = n(931261),
   I = n(15274),
@@ -44,8 +44,8 @@ var r = n(525654),
   U = n(430824),
   G = n(607744),
   B = n(341165),
-  V = n(496675),
-  F = n(914010),
+  F = n(496675),
+  V = n(914010),
   Z = n(594174),
   H = n(626135),
   W = n(70956),
@@ -128,7 +128,7 @@ function eu(e, t, n) {
   if ((null == n ? void 0 : n.targetType) === ee.Iq.ROLE_SUBSCRIPTIONS_PURCHASE) return J.oC.ROLE_SUBSCRIPTIONS;
   if ((null == n ? void 0 : n.targetType) == null && !L.tx.has(t.type) && (0, O.s)(e)) return J.oC.GUILD_HOME;
   let o = M.Z.getChannel(t.id);
-  return V.Z.can(X.Plq.VIEW_CHANNEL, o) ? t.id : null !== (i = null === (r = k.ZP.getDefaultChannel(e, !0, X.Plq.CREATE_INSTANT_INVITE)) || void 0 === r ? void 0 : r.id) && void 0 !== i ? i : t.id
+  return F.Z.can(X.Plq.VIEW_CHANNEL, o) ? t.id : null !== (i = null === (r = k.ZP.getDefaultChannel(e, !0, X.Plq.CREATE_INSTANT_INVITE)) || void 0 === r ? void 0 : r.id) && void 0 !== i ? i : t.id
 }
 
 function ed(e, t) {
@@ -151,14 +151,14 @@ function ef(e) {
     channel: r,
     options: i,
     analyticsLocations: o = []
-  } = e, a = U.Z.getGuild(t), s = (0, b.K2)(t, "invite") ? null == a ? void 0 : a.hasFeature(X.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) : (null == a ? void 0 : a.hasFeature(X.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && !(null == a ? void 0 : a.hasFeature(X.oNc.PREVIEW_ENABLED)), {
+  } = e, a = U.Z.getGuild(t), s = (0, v.K2)(t, "invite") ? null == a ? void 0 : a.hasFeature(X.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) : (null == a ? void 0 : a.hasFeature(X.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && !(null == a ? void 0 : a.hasFeature(X.oNc.PREVIEW_ENABLED)), {
     targetUserId: l,
     targetType: c,
     targetApplicationId: u,
     isGuestInvite: d,
     isApplicationBypassInvite: f
   } = null != i ? i : {};
-  if (!d && !f && !(null == i ? void 0 : i.forceTransition) && s && F.Z.getGuildId() !== t) return;
+  if (!d && !f && !(null == i ? void 0 : i.forceTransition) && s && V.Z.getGuildId() !== t) return;
   let {
     type: _
   } = r, g = M.Z.getChannel(r.id), O = eu(t, r, i), I = _ === X.d4z.GUILD_STAGE_VOICE, S = X.Z5c.CHANNEL(t, O);
@@ -185,7 +185,7 @@ function ef(e) {
           commandOrigin: m.bB.CHAT
         }))
       };
-      !d && (0, y.n)(t, [U.Z, G.Z, Z.default, j.ZP]) ? (0, v.hk)(t, a) : a()
+      !d && (0, y.n)(t, [U.Z, G.Z, Z.default, j.ZP]) ? (0, b.hk)(t, a) : a()
     })
   }) : (0, p.l5)(g) && c === ee.Iq.EMBEDDED_APPLICATION && null != u && ((0, w.uL)(X.Z5c.CHANNEL(null != t ? t : X.ME, O)), (0, h.Z)({
     channelId: O,
@@ -273,7 +273,7 @@ function eE(e, t, n) {
     location_stack: null != n ? n : null
   })
 }
-let ev = {
+let eb = {
   resolveInvite: ep,
   getInviteContext: (e, t) => ({
     location: e,

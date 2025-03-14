@@ -33,14 +33,14 @@ function m(e) {
       application: o,
       scopes: m,
       redirectUri: E,
-      approximateGuildCount: v,
-      isEmbeddedFlow: b,
+      approximateGuildCount: b,
+      isEmbeddedFlow: v,
       disclosures: y
     } = e,
     O = new Date(c.default.extractTimestamp(o.id)),
     I = (0, d.W3)(m),
     S = (0, l.yE)(null !== (t = o.flags) && void 0 !== t ? t : 0, f.udG.EMBEDDED);
-  if (null != E && !S && !b) try {
+  if (null != E && !S && !v) try {
     let e = new URL(E);
     n = null != e.host && e.host.length > 0 ? e.origin : e.href
   } catch (e) {
@@ -61,10 +61,10 @@ function m(e) {
       text: _.NW.formatToPlainString(_.t["+1bjc3"], {
         date: O
       })
-    }), m.includes(i.x.BOT) && null != v ? (0, r.jsx)(g, {
+    }), m.includes(i.x.BOT) && null != b ? (0, r.jsx)(g, {
       icon: a.wGt,
       text: _.NW.formatToPlainString(_.t.UHGHSE, {
-        guildCount: v
+        guildCount: b
       })
     }) : null, (0, r.jsx)(g, {
       icon: a.b7C,

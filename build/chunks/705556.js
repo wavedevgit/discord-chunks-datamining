@@ -45,12 +45,12 @@ function m(e) {
     fullWidth: p,
     appContext: m,
     onClose: g
-  } = e, E = (0, i.e7)([l.default], () => l.default.getId() === t.id), v = (0, i.e7)([c.Z], () => null != n ? c.Z.getGuild(n) : null), b = (0, s.Z)({
-    guild: v
+  } = e, E = (0, i.e7)([l.default], () => l.default.getId() === t.id), b = (0, i.e7)([c.Z], () => null != n ? c.Z.getGuild(n) : null), v = (0, s.Z)({
+    guild: b
   }), y = (0, s.Z)({}), {
     trackUserProfileAction: O
   } = (0, u.KZ)();
-  return E ? null == v ? (0, r.jsx)(d.tG, {
+  return E ? null == b ? (0, r.jsx)(d.tG, {
     action: "EDIT_PROFILE",
     text: f.NW.string(f.t.s5vZlZ),
     icon: o.vdY,
@@ -79,7 +79,7 @@ function m(e) {
           action: () => {
             O({
               action: "EDIT_GUILD_PROFILE"
-            }), b(), (0, a.i)(m)
+            }), v(), (0, a.i)(m)
           }
         }), (0, r.jsx)(o.sNh, {
           id: "edit-main-profile",

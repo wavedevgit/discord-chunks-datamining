@@ -42,7 +42,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,7 +55,7 @@ function v(e) {
   return e
 }
 
-function b(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -67,7 +67,7 @@ function b(e, t) {
 }
 
 function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -115,19 +115,19 @@ function O(e) {
 function I(e) {
   return null == e ? void 0 : e.map(e => {
     var t, n;
-    let r = y(v({}, e), {
+    let r = y(b({}, e), {
       choices: S(e.choices),
       options: I(e.options),
       serverLocalizedName: e.name_localized,
       displayName: null !== (t = e.name_localized) && void 0 !== t ? t : e.name,
       displayDescription: null !== (n = e.description_localized) && void 0 !== n ? n : e.description
     });
-    return e.type === u.jw.CHANNEL && "channel_types" in e ? y(v({}, r), {
+    return e.type === u.jw.CHANNEL && "channel_types" in e ? y(b({}, r), {
       channelTypes: e.channel_types
-    }) : (e.type === u.jw.NUMBER || e.type === u.jw.INTEGER) && ("min_value" in e || "max_value" in e) ? y(v({}, r), {
+    }) : (e.type === u.jw.NUMBER || e.type === u.jw.INTEGER) && ("min_value" in e || "max_value" in e) ? y(b({}, r), {
       minValue: e.min_value,
       maxValue: e.max_value
-    }) : e.type === u.jw.STRING && ("min_length" in e || "max_length" in e) ? y(v({}, r), {
+    }) : e.type === u.jw.STRING && ("min_length" in e || "max_length" in e) ? y(b({}, r), {
       minLength: e.min_length,
       maxLength: e.max_length
     }) : r
@@ -137,7 +137,7 @@ function I(e) {
 function S(e) {
   return null == e ? void 0 : e.map(e => {
     var t;
-    return y(v({}, e), {
+    return y(b({}, e), {
       displayName: null !== (t = e.name_localized) && void 0 !== t ? t : e.name
     })
   })

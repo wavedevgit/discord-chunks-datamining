@@ -20,19 +20,19 @@ var r = n(200651),
   m = n(620824),
   g = n(737143),
   E = n(926841),
-  v = n(362755),
-  b = n(981631),
+  b = n(362755),
+  v = n(981631),
   y = n(474936),
   O = n(388032),
   I = n(632724);
 let S = 1e3;
 
 function T(e, t, n, r, i) {
-  let s = b.ANM.BILLING_STANDALONE_CHECKOUT_PAGE(e, t, n, i),
-    l = new URL(f.Z.makeUrl(b.Z5c.BILLING_LOGIN_HANDOFF)),
+  let s = v.ANM.BILLING_STANDALONE_CHECKOUT_PAGE(e, t, n, i),
+    l = new URL(f.Z.makeUrl(v.Z5c.BILLING_LOGIN_HANDOFF)),
     c = (0, o.Z)();
   return l.searchParams.append("handoff_key", c), l.searchParams.append("redirect_to", s), a.tn.post({
-    url: b.ANM.HANDOFF,
+    url: v.ANM.HANDOFF,
     body: {
       key: c
     },
@@ -66,10 +66,10 @@ let N = e => {
       [L, x] = i.useState(!1);
     switch (o) {
       case h.h8.AWAITING_BROWSER_CHECKOUT_GOOGLE_PAY:
-        t = b.i$l.GOOGLE_PAY, n = (0, E.a)();
+        t = v.i$l.GOOGLE_PAY, n = (0, E.a)();
         break;
       case h.h8.AWAITING_BROWSER_CHECKOUT_APPLE_PAY:
-        t = b.i$l.APPLE_PAY, n = (0, m.b)();
+        t = v.i$l.APPLE_PAY, n = (0, m.b)();
         break;
       default:
         n = (0, g.q1)()
@@ -81,7 +81,7 @@ let N = e => {
       }, n.delay ? S : 0);
       return () => clearTimeout(e)
     }, [d, D, w, u, x, L, t, n.delay]), i.useEffect(() => {
-      null !== R && (y.YQ.includes(R) && ((0, c.GZ)(R), (0, l.jg)()), N(R)), null !== P && f(P), C === w.loadId && A === v.Y.DONE && a()
+      null !== R && (y.YQ.includes(R) && ((0, c.GZ)(R), (0, l.jg)()), N(R)), null !== P && f(P), C === w.loadId && A === b.Y.DONE && a()
     }, [N, f, A, C, R, P, w, a]), (0, r.jsxs)("div", {
       className: I.body,
       children: [(0, r.jsx)(s.X6q, {

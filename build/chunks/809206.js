@@ -7,7 +7,7 @@ n.d(t, {
   Mn: () => y,
   P6: () => D,
   Re: () => S,
-  S2: () => b,
+  S2: () => v,
   UZ: () => T,
   V3: () => O,
   W3: () => w,
@@ -15,7 +15,7 @@ n.d(t, {
   b9: () => R,
   cV: () => N,
   si: () => P,
-  ss: () => v,
+  ss: () => b,
   xn: () => C
 });
 var r = n(544891),
@@ -65,7 +65,7 @@ function E() {
   })
 }
 
-function v(e, t) {
+function b(e, t) {
   let n = t ? p.NW.string(p.t["8lQ2ra"]) : p.NW.string(p.t.jf5GGR),
     i = t ? f.ANM.DELETE_ACCOUNT : f.ANM.DISABLE_ACCOUNT,
     o = t => r.tn.post({
@@ -85,7 +85,7 @@ function v(e, t) {
     d.Z.logoutInternal(), (0, s.uL)(f.Z5c.DEFAULT_LOGGED_OUT)
   })
 }
-async function b(e) {
+async function v(e) {
   let t = await r.tn.patch({
       url: f.ANM.ME,
       oldFormErrors: !0,
@@ -121,7 +121,7 @@ function y(e) {
     avatarDescription: h,
     avatarId: g,
     avatarDecoration: E,
-    newPassword: v,
+    newPassword: b,
     globalName: y,
     nameplate: O
   } = e;
@@ -138,14 +138,14 @@ function y(e) {
       avatar_id: g,
       discriminator: n,
       global_name: y,
-      new_password: v
+      new_password: b
     }, e);
     null === E && (a.avatar_decoration_id = null), null != E && (a.avatar_decoration_id = E.id, a.avatar_decoration_sku_id = E.skuId), null === O && (a.nameplate_id = null), null != O && (a.nameplate_id = O.id, a.nameplate_sku_id = O.skuId);
     let l = i.K.get(f.JkL),
       c = (0, _.xJ)();
     null != c && null != l && (a.push_provider = c, a.push_token = l);
     let u = i.K.get(f.scU);
-    return null != _.mv && null != u && (a.push_voip_provider = _.mv, a.push_voip_token = u), b(a)
+    return null != _.mv && null != u && (a.push_voip_provider = _.mv, a.push_voip_token = u), v(a)
   }, {
     checkEnabled: !1,
     modalProps: {

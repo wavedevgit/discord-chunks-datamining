@@ -17,8 +17,8 @@ var i = n(512722),
   p = n(126631),
   h = n(433411),
   f = n(532432),
-  b = n(349177),
-  x = n(872736),
+  x = n(349177),
+  b = n(872736),
   N = n(818420),
   _ = n(134795),
   E = n(610966),
@@ -109,7 +109,7 @@ function Z() {
     es = (0, m.H)("DefaultCustomizationSections");
   return (0, r.jsxs)("div", {
     className: D.sectionsContainer,
-    children: [(0, r.jsx)(b.Z, {
+    children: [(0, r.jsx)(x.Z, {
       placeholder: L.username,
       errors: en,
       currentGlobalName: L.globalName,
@@ -161,7 +161,7 @@ function Z() {
       currentBio: null !== (W = null == B ? void 0 : B.bio) && void 0 !== W ? W : ""
     }, "bio"), ei.length > 0 && (0, r.jsx)(d.Z, {
       availableClans: ei
-    }), null != et && (0, r.jsx)(x.Z, {
+    }), null != et && (0, r.jsx)(b.Z, {
       legacyUsername: et
     }, "legacy_username")]
   })

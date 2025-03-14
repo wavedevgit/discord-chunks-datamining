@@ -19,8 +19,8 @@ var r = n(990547),
   m = n(430824),
   g = n(546796),
   E = n(573261),
-  v = n(600553),
-  b = n(999382),
+  b = n(600553),
+  v = n(999382),
   y = n(981631),
   O = n(308083),
   I = n(388032);
@@ -94,7 +94,7 @@ let P = new s.Z("GuildSettingsActionCreators"),
     },
     async open(e, t, r, i) {
       var o;
-      await Promise.all([n.e("48835"), n.e("25292"), n.e("90508"), n.e("95477"), n.e("11212"), n.e("50963"), n.e("84335"), n.e("9710"), n.e("7654"), n.e("80284"), n.e("30806"), n.e("49049"), n.e("44156"), n.e("26593"), n.e("50749"), n.e("6850"), n.e("16114"), n.e("58227"), n.e("54408"), n.e("3205"), n.e("95786"), n.e("64679"), n.e("94289"), n.e("21881"), n.e("67684")]).then(n.bind(n, 994763)), t === y.pNK.DISCOVERY && (0, l.K2)(e, "GuildSettignsActionCreators.open") && (t = y.pNK.ACCESS, i = y.KsC.ACCESS_DISCOVERABLE), t === y.pNK.OVERVIEW && i === y.KsC.INVITE && (0, v.i1)({
+      await Promise.all([n.e("48835"), n.e("25292"), n.e("90508"), n.e("95477"), n.e("11212"), n.e("50963"), n.e("9710"), n.e("7654"), n.e("80284"), n.e("3849"), n.e("49049"), n.e("44156"), n.e("61697"), n.e("50749"), n.e("6850"), n.e("16114"), n.e("58227"), n.e("44088"), n.e("10396"), n.e("95786"), n.e("64679"), n.e("15814"), n.e("21881"), n.e("79536")]).then(n.bind(n, 994763)), t === y.pNK.DISCOVERY && (0, l.K2)(e, "GuildSettignsActionCreators.open") && (t = y.pNK.ACCESS, i = y.KsC.ACCESS_DISCOVERABLE), t === y.pNK.OVERVIEW && i === y.KsC.INVITE && (0, b.i1)({
         guildId: e,
         location: "GuildSettingsActionCreators.open"
       }) && (t = y.pNK.BOOST_PERKS, i = void 0), (null === (o = m.Z.getGuild(e)) || void 0 === o ? void 0 : o.hasFeature(y.oNc.COMMUNITY)) && (t === y.pNK.GUILD_AUTOMOD && (t = y.pNK.SAFETY, i = y.KsC.SAFETY_AUTOMOD), t === y.pNK.MEMBER_VERIFICATION && (t = y.pNK.SAFETY, i = y.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), w.init(e, t, r, i), _.Z.closeGuildSidebar(e), (0, a.jN)(y.S9g.GUILD_SETTINGS)
@@ -112,7 +112,7 @@ let P = new s.Z("GuildSettingsActionCreators"),
     },
     setSection(e, t) {
       var n;
-      let r = b.Z.getGuildId();
+      let r = v.Z.getGuildId();
       null != r && (e === y.pNK.DISCOVERY && (0, l.K2)(r, "GuildSettignsActionCreators.setSection") && (e = y.pNK.ACCESS, t = y.KsC.ACCESS_DISCOVERABLE), (null === (n = m.Z.getGuild(r)) || void 0 === n ? void 0 : n.hasFeature(y.oNc.COMMUNITY)) && (e === y.pNK.GUILD_AUTOMOD && (e = y.pNK.SAFETY, t = y.KsC.SAFETY_AUTOMOD), e === y.pNK.MEMBER_VERIFICATION && (e = y.pNK.SAFETY, t = y.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), o.Z.dispatch({
         type: "GUILD_SETTINGS_SET_SECTION",
         section: e,
@@ -200,7 +200,7 @@ let P = new s.Z("GuildSettingsActionCreators"),
         profile: r
       } = e;
       let i = T({}, C(e, ["safetyAlertsChannelId", "profile"]));
-      null != r && (i.profile = T({}, null !== (t = i.profile) && void 0 !== t ? t : {}, r)), null != b.Z.getGuildId() && null != n && (i.safetyAlertsChannelId = n), o.Z.dispatch(T({
+      null != r && (i.profile = T({}, null !== (t = i.profile) && void 0 !== t ? t : {}, r)), null != v.Z.getGuildId() && null != n && (i.safetyAlertsChannelId = n), o.Z.dispatch(T({
         type: "GUILD_SETTINGS_UPDATE"
       }, i))
     },
@@ -226,8 +226,8 @@ let P = new s.Z("GuildSettingsActionCreators"),
         explicitContentFilter: m,
         features: g,
         systemChannelFlags: E,
-        preferredLocale: v,
-        rulesChannelId: b,
+        preferredLocale: b,
+        rulesChannelId: v,
         safetyAlertsChannelId: I,
         discoverySplash: S,
         publicUpdatesChannelId: N,
@@ -241,7 +241,7 @@ let P = new s.Z("GuildSettingsActionCreators"),
         banner: l,
         home_header: u,
         features: g,
-        preferred_locale: v,
+        preferred_locale: b,
         afk_channel_id: d,
         afk_timeout: f,
         system_channel_id: _,
@@ -249,7 +249,7 @@ let P = new s.Z("GuildSettingsActionCreators"),
         default_message_notifications: h,
         explicit_content_filter: m,
         system_channel_flags: E,
-        rules_channel_id: b,
+        rules_channel_id: v,
         discovery_splash: S,
         public_updates_channel_id: N,
         safety_alerts_channel_id: I

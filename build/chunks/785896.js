@@ -27,7 +27,7 @@ let u = (e, t, n) => {
     } = e, {
       joinedEmojiSourceGuildRecord: s,
       emoji: d
-    } = (0, i.cj)([a.ZP, o.Z], () => u(a.ZP, o.Z, t)), f = null != s, _ = null != s && s.hasFeature(c.oNc.DISCOVERABLE), p = (!f || _) && null != t, [h, m] = r.useState(p), [g, E] = r.useState(null), v = null != s ? l.JO.createFromGuildRecord(s) : null, [b, y] = r.useState(v), [O, I] = r.useState(null), S = r.useRef(n);
+    } = (0, i.cj)([a.ZP, o.Z], () => u(a.ZP, o.Z, t)), f = null != s, _ = null != s && s.hasFeature(c.oNc.DISCOVERABLE), p = (!f || _) && null != t, [h, m] = r.useState(p), [g, E] = r.useState(null), b = null != s ? l.JO.createFromGuildRecord(s) : null, [v, y] = r.useState(b), [O, I] = r.useState(null), S = r.useRef(n);
     return r.useEffect(() => {
       S.current = n
     }), r.useEffect(() => {
@@ -51,7 +51,7 @@ let u = (e, t, n) => {
       }
       null === (n = S.current) || void 0 === n || n.call(S)
     }, [t, p]), {
-      expressionSourceGuild: b,
+      expressionSourceGuild: v,
       expressionSourceApplication: O,
       sourceType: g,
       joinedEmojiSourceGuildRecord: s,

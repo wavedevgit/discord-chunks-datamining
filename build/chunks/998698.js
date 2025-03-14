@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => b
 }), n(47120);
 var r, i = n(442837),
   o = n(570140),
@@ -202,7 +202,7 @@ class E extends(r = i.ZP.Store) {
   }
 }
 c(E, "displayName", "ApplicationCommandStore");
-let v = new E(o.Z, {
+let b = new E(o.Z, {
   CONNECTION_OPEN: f,
   CHANNEL_SELECT: f,
   LOGOUT: f,

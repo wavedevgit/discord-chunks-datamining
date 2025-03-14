@@ -18,8 +18,8 @@ var h = n(12647),
   m = n(358085),
   g = n(238514),
   E = n(740492),
-  v = n(581883),
-  b = n(874893),
+  b = n(581883),
+  v = n(874893),
   y = n(981631),
   O = n(469115);
 
@@ -70,10 +70,10 @@ function w() {
   var e, t;
   if (__OVERLAY__) return y.BRd.DARK;
   if (d.Z.syncForcedColors && "active" === d.Z.systemForcedColors && null != r) return r;
-  if (E.ZP.useSystemTheme === b.K.ON && null != r) return (0, _.O_)("ThemeStore") ? (0, c.wj)(r) ? null != C ? C : y.BRd.DARK : y.BRd.LIGHT : r;
+  if (E.ZP.useSystemTheme === v.K.ON && null != r) return (0, _.O_)("ThemeStore") ? (0, c.wj)(r) ? null != C ? C : y.BRd.DARK : y.BRd.LIGHT : r;
   let n = null === (e = g.Z.getAppearanceSettings()) || void 0 === e ? void 0 : e.theme;
   if (null != n) return n;
-  let i = null === (t = v.Z.settings.appearance) || void 0 === t ? void 0 : t.theme;
+  let i = null === (t = b.Z.settings.appearance) || void 0 === t ? void 0 : t.theme;
   if (null == i) return A;
   if (!(0, _.O_)("ThemeStore")) return i === s.Q2.LIGHT ? y.BRd.LIGHT : y.BRd.DARK;
   switch (i) {
@@ -94,11 +94,11 @@ function D() {
 }
 
 function L() {
-  return F()
+  return V()
 }
 
 function x() {
-  return F()
+  return V()
 }
 
 function M() {
@@ -106,18 +106,18 @@ function M() {
 }
 
 function k(e) {
-  return !e.isSwitchingAccount && A !== y.BRd.DARK && (A = y.BRd.DARK, Z(), F())
+  return !e.isSwitchingAccount && A !== y.BRd.DARK && (A = y.BRd.DARK, Z(), V())
 }
 
 function j(e) {
   let {
     systemTheme: t
   } = e;
-  return R = t, F()
+  return R = t, V()
 }
 
 function U(e) {
-  return r = e.systemPrefersColorScheme, F()
+  return r = e.systemPrefersColorScheme, V()
 }
 
 function G(e) {
@@ -127,7 +127,7 @@ function G(e) {
   } = e;
   A = null != r && null !== (n = null === (t = O.qt[r]) || void 0 === t ? void 0 : t.theme) && void 0 !== n ? n : D();
   let i = null != r;
-  return P !== i ? (P = i, !0) : V()
+  return P !== i ? (P = i, !0) : F()
 }
 
 function B(e) {
@@ -137,12 +137,12 @@ function B(e) {
   C = t
 }
 
-function V() {
+function F() {
   let e = D();
   return !(0, f.qu)(A, e) && (A = e, !0)
 }
 
-function F() {
+function V() {
   let e = D();
   return e !== A && (Z(A = e), !0)
 }
@@ -168,7 +168,7 @@ class H extends(o = a.ZP.PersistedStore) {
       var t;
       Z(A = e.theme), C = null !== (t = e.selectedDarkTheme) && void 0 !== t ? t : null
     }
-    this.waitFor(E.ZP, g.Z, v.Z, d.Z)
+    this.waitFor(E.ZP, g.Z, b.Z, d.Z)
   }
   getState() {
     return {

@@ -54,7 +54,7 @@ function E(e) {
   })
 }
 
-function v(e) {
+function b(e) {
   let {
     url: t
   } = e;
@@ -64,7 +64,7 @@ function v(e) {
     trustedProtocols: p
   })
 }
-class b extends(i = o.ZP.Store) {
+class v extends(i = o.ZP.Store) {
   initialize() {
     var e;
     let t = null !== (e = a.K.get(f)) && void 0 !== e ? e : {};
@@ -84,8 +84,8 @@ class b extends(i = o.ZP.Store) {
     return g(e)
   }
 }
-d(b, "displayName", "MaskedLinkStore");
-let y = new b(s.Z, {
+d(v, "displayName", "MaskedLinkStore");
+let y = new v(s.Z, {
   MASKED_LINK_ADD_TRUSTED_DOMAIN: E,
-  MASKED_LINK_ADD_TRUSTED_PROTOCOL: v
+  MASKED_LINK_ADD_TRUSTED_PROTOCOL: b
 })

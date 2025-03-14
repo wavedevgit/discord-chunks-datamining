@@ -62,12 +62,12 @@ function E(e) {
   return e.isIncludedInSearchResults && t.push("INCLUDED_IN_SEARCH_RESULTS"), t
 }
 
-function v(e) {
+function b(e) {
   return e.sort
 }
 
-function b() {
-  return new o.h(E, v)
+function v() {
+  return new o.h(E, b)
 }
 
 function y(e) {
@@ -75,7 +75,7 @@ function y(e) {
 }
 class O {
   reset() {
-    this._membersMap.clear(), this._membersMap = b(), this.resetNewMemberTimestamp()
+    this._membersMap.clear(), this._membersMap = v(), this.resetNewMemberTimestamp()
   }
   resetNewMemberTimestamp() {
     this.newMemberTimestamp = Date.now()
@@ -166,6 +166,6 @@ class O {
     return this._membersMap.version
   }
   constructor(e) {
-    f(this, "guildId", void 0), f(this, "_membersMap", void 0), f(this, "newMemberTimestamp", Date.now()), this.guildId = e, this._membersMap = b()
+    f(this, "guildId", void 0), f(this, "_membersMap", void 0), f(this, "newMemberTimestamp", Date.now()), this.guildId = e, this._membersMap = v()
   }
 }

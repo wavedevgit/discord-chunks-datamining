@@ -24,15 +24,15 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 let E = "BrowserHandoffStore",
-  v = !1,
-  b = new u.V7;
+  b = !1,
+  v = new u.V7;
 
 function y() {
   null != r && null != i && (window.open("".concat(r, "&key=").concat(i)), p.Z.focus(null, !0))
 }
 
 function O() {
-  i = null, b.stop(), v = !1, c.K.set(E, v)
+  i = null, v.stop(), b = !1, c.K.set(E, b)
 }
 
 function I(e) {
@@ -41,7 +41,7 @@ function I(e) {
 
 function S(e) {
   if (null != i) return !1;
-  i = (0, s.Z)(), b.start(e.timeout, () => (0, f.lx)()), y()
+  i = (0, s.Z)(), v.start(e.timeout, () => (0, f.lx)()), y()
 }
 
 function T(e) {
@@ -51,7 +51,7 @@ function T(e) {
     timeout: r
   } = e;
   if (null == t || null == n) return !1;
-  v = !0, b.start(r, () => (0, f.lx)())
+  b = !0, v.start(r, () => (0, f.lx)())
 }
 
 function N(e) {
@@ -63,10 +63,10 @@ function A() {
 }
 class C extends(a = l.ZP.Store) {
   initialize() {
-    !1 !== c.K.get(E) && (v = h.isPlatformEmbedded && "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL)
+    !1 !== c.K.get(E) && (b = h.isPlatformEmbedded && "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL)
   }
   isHandoffAvailable() {
-    return !m.s.isDisallowPopupsSet() && v
+    return !m.s.isDisallowPopupsSet() && b
   }
   get user() {
     return o

@@ -18,8 +18,8 @@ var r, i = n(200651),
   m = n(217702),
   g = n(388032),
   E = n(213283),
-  v = n(167969),
-  b = n(557256);
+  b = n(167969),
+  v = n(557256);
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -90,9 +90,9 @@ class A extends(r = o.PureComponent) {
         placeholderVersion: u,
         alt: _,
         width: m,
-        height: v,
-        maxWidth: b = m,
-        maxHeight: y = v,
+        height: b,
+        maxWidth: v = m,
+        maxHeight: y = b,
         minWidth: I,
         minHeight: N,
         mediaLayoutType: A,
@@ -107,25 +107,25 @@ class A extends(r = o.PureComponent) {
         dataSafeSrc: G,
         useFullWidth: B = !1
       } = t,
-      V = T(t, ["className", "imageClassName", "readyState", "src", "placeholder", "placeholderVersion", "alt", "width", "height", "maxWidth", "maxHeight", "minWidth", "minHeight", "mediaLayoutType", "limitResponsiveWidth", "accessory", "zoomable", "original", "children", "renderAccessory", "onClick", "tabIndex", "dataSafeSrc", "useFullWidth"]);
-    if (1 === m && 1 === v) return null;
-    let F = (0, f.Tj)({
+      F = T(t, ["className", "imageClassName", "readyState", "src", "placeholder", "placeholderVersion", "alt", "width", "height", "maxWidth", "maxHeight", "minWidth", "minHeight", "mediaLayoutType", "limitResponsiveWidth", "accessory", "zoomable", "original", "children", "renderAccessory", "onClick", "tabIndex", "dataSafeSrc", "useFullWidth"]);
+    if (1 === m && 1 === b) return null;
+    let V = (0, f.Tj)({
         width: m,
-        height: v,
-        maxWidth: b,
+        height: b,
+        maxWidth: v,
         maxHeight: y,
         minWidth: I,
         minHeight: N
       }),
-      Z = 0 !== F.width ? F.width / F.height : 1;
+      Z = 0 !== V.width ? V.width / V.height : 1;
     "" !== a && o !== h.zo9.ERROR ? e = M({
       src: a,
-      size: F,
+      size: V,
       alt: _,
       className: r,
       mediaLayoutType: A
     }) : o !== h.zo9.LOADING && (e = (0, i.jsx)(C, {
-      size: F,
+      size: V,
       mediaLayoutType: A,
       alt: _
     })), e = (0, i.jsx)(p.N, {
@@ -133,7 +133,7 @@ class A extends(r = o.PureComponent) {
       aspectRatio: Z,
       placeholder: l,
       placeholderVersion: u,
-      placeholderStyle: P(F, A),
+      placeholderStyle: P(V, A),
       children: e
     });
     let H = null != k ? k() : null;
@@ -146,8 +146,8 @@ class A extends(r = o.PureComponent) {
           [E.imageWrapperBackground]: o !== h.zo9.READY,
           [E.clickable]: null != j
         }, n),
-        style: R(F, w, B, A)
-      }, V), {
+        style: R(V, w, B, A)
+      }, F), {
         children: [null != x && (0, i.jsx)("a", {
           tabIndex: -1,
           onClick: j,
@@ -190,7 +190,7 @@ function C(e) {
     className: E.imageErrorWrapper,
     style: w(t, n),
     children: (0, i.jsx)("img", {
-      src: (0, l.ap)(o) ? b : v,
+      src: (0, l.ap)(o) ? v : b,
       className: E.imageError,
       alt: null != r ? r : g.NW.string(g.t.X4IxWF)
     })

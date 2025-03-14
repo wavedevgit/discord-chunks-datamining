@@ -19,8 +19,8 @@ var r = n(570140),
   m = n(959457),
   g = n(979651),
   E = n(557457),
-  v = n(785141),
-  b = n(272395),
+  b = n(785141),
+  v = n(272395),
   y = n(674503),
   O = n(981631),
   I = n(65154);
@@ -54,7 +54,7 @@ function A(e, t) {
   return n
 }
 let C = new Map([
-  [v.u.NO_AUDIO_INPUT_DETECTED, {
+  [b.u.NO_AUDIO_INPUT_DETECTED, {
     getActiveErrors: e => {
       let {
         voiceChannelId: t,
@@ -63,7 +63,7 @@ let C = new Map([
       if (null != r && null != o && !1 === _.Z.getInputDetected() && !i) return [D()]
     }
   }],
-  [v.u.NO_INPUT_DEVICES, {
+  [b.u.NO_INPUT_DEVICES, {
     getActiveErrors: e => {
       let {
         voiceChannelId: t,
@@ -72,7 +72,7 @@ let C = new Map([
       if (o && null != r && null != a && !i) return [D()]
     }
   }],
-  [v.u.STREAM_VIEW_LOW_FPS, {
+  [b.u.STREAM_VIEW_LOW_FPS, {
     getActiveErrors: e => {
       let {
         streamErrors: t
@@ -81,11 +81,11 @@ let C = new Map([
         let {
           streamError: t
         } = e;
-        return (null == t ? void 0 : t.avError) === v.u.STREAM_VIEW_LOW_FPS
+        return (null == t ? void 0 : t.avError) === b.u.STREAM_VIEW_LOW_FPS
       })
     }
   }],
-  [v.u.STREAM_VIEW_HIGH_PACKET_LOSS, {
+  [b.u.STREAM_VIEW_HIGH_PACKET_LOSS, {
     getActiveErrors: e => {
       let {
         streamErrors: t
@@ -94,11 +94,11 @@ let C = new Map([
         let {
           streamError: t
         } = e;
-        return (null == t ? void 0 : t.avError) === v.u.STREAM_VIEW_HIGH_PACKET_LOSS
+        return (null == t ? void 0 : t.avError) === b.u.STREAM_VIEW_HIGH_PACKET_LOSS
       })
     }
   }],
-  [v.u.STREAM_SEND_HIGH_PACKET_LOSS, {
+  [b.u.STREAM_SEND_HIGH_PACKET_LOSS, {
     getActiveErrors: e => {
       let {
         streamErrors: t
@@ -107,11 +107,11 @@ let C = new Map([
         let {
           streamError: t
         } = e;
-        return (null == t ? void 0 : t.avError) === v.u.STREAM_SEND_HIGH_PACKET_LOSS
+        return (null == t ? void 0 : t.avError) === b.u.STREAM_SEND_HIGH_PACKET_LOSS
       })
     }
   }],
-  [v.u.STREAM_SEND_LOW_FPS, {
+  [b.u.STREAM_SEND_LOW_FPS, {
     getActiveErrors: e => {
       let {
         streamErrors: t
@@ -120,11 +120,11 @@ let C = new Map([
         let {
           streamError: t
         } = e;
-        return (null == t ? void 0 : t.avError) === v.u.STREAM_SEND_LOW_FPS
+        return (null == t ? void 0 : t.avError) === b.u.STREAM_SEND_LOW_FPS
       })
     }
   }],
-  [v.u.STREAM_BAD_NETWORK_QUALITY, {
+  [b.u.STREAM_BAD_NETWORK_QUALITY, {
     getActiveErrors: e => {
       let {
         streamErrors: t
@@ -133,11 +133,11 @@ let C = new Map([
         let {
           streamError: t
         } = e;
-        return (null == t ? void 0 : t.avError) === v.u.STREAM_BAD_NETWORK_QUALITY
+        return (null == t ? void 0 : t.avError) === b.u.STREAM_BAD_NETWORK_QUALITY
       })
     }
   }],
-  [v.u.STREAM_SOUNDSHARE_FAILED, {
+  [b.u.STREAM_SOUNDSHARE_FAILED, {
     getActiveErrors: e => {
       let {
         streamErrors: t
@@ -146,11 +146,11 @@ let C = new Map([
         let {
           streamError: t
         } = e;
-        return (null == t ? void 0 : t.avError) === v.u.STREAM_SOUNDSHARE_FAILED
+        return (null == t ? void 0 : t.avError) === b.u.STREAM_SOUNDSHARE_FAILED
       })
     }
   }],
-  [v.u.STREAM_FAILED_TO_START, {
+  [b.u.STREAM_FAILED_TO_START, {
     getActiveErrors: e => {
       let {
         activeStreams: t
@@ -158,7 +158,7 @@ let C = new Map([
       return t.filter(e => e.state === O.jm8.FAILED).map(e => L((0, s.V9)(e)))
     }
   }],
-  [v.u.STREAM_RECONNECTING, {
+  [b.u.STREAM_RECONNECTING, {
     getActiveErrors: e => {
       let {
         activeStreams: t
@@ -170,27 +170,27 @@ let C = new Map([
 
 function R(e, t) {
   switch (e) {
-    case v.u.STREAM_FAILED_TO_START:
+    case b.u.STREAM_FAILED_TO_START:
       return "".concat(t.streamKey, ":").concat(t.mediaSessionId);
-    case v.u.NO_INPUT_DEVICES:
-    case v.u.NO_AUDIO_INPUT_DETECTED:
+    case b.u.NO_INPUT_DEVICES:
+    case b.u.NO_AUDIO_INPUT_DETECTED:
       return "".concat(t.mediaSessionId);
-    case v.u.DEBUG_LOG_UPLOAD_FAILED:
+    case b.u.DEBUG_LOG_UPLOAD_FAILED:
       return "";
-    case v.u.STREAM_VIEW_LOW_FPS:
-    case v.u.STREAM_VIEW_HIGH_PACKET_LOSS:
-    case v.u.STREAM_SEND_LOW_FPS:
-    case v.u.STREAM_SEND_HIGH_PACKET_LOSS:
-    case v.u.STREAM_BAD_NETWORK_QUALITY:
-    case v.u.STREAM_SOUNDSHARE_FAILED:
+    case b.u.STREAM_VIEW_LOW_FPS:
+    case b.u.STREAM_VIEW_HIGH_PACKET_LOSS:
+    case b.u.STREAM_SEND_LOW_FPS:
+    case b.u.STREAM_SEND_HIGH_PACKET_LOSS:
+    case b.u.STREAM_BAD_NETWORK_QUALITY:
+    case b.u.STREAM_SOUNDSHARE_FAILED:
       return "".concat(t.streamKey, ":").concat(t.mediaSessionId);
-    case v.u.NOISE_CANCELLER_ERROR:
-    case v.u.SCREENSHARE_OS_NOT_SUPPORTED:
+    case b.u.NOISE_CANCELLER_ERROR:
+    case b.u.SCREENSHARE_OS_NOT_SUPPORTED:
       return "".concat(t.mediaSessionId);
-    case v.u.STREAM_RECONNECTING:
+    case b.u.STREAM_RECONNECTING:
       return "".concat(t.streamKey, ":").concat(t.mediaSessionId);
-    case v.u.VIDEO_ENCODE_ERROR:
-    case v.u.VIDEO_DECODE_ERROR:
+    case b.u.VIDEO_ENCODE_ERROR:
+    case b.u.VIDEO_DECODE_ERROR:
       return "";
     default:
       return e
@@ -254,7 +254,7 @@ function x() {
 }
 class M extends i.Z {
   _initialize() {
-    (0, b.H3)("AVErrorManager")
+    (0, v.H3)("AVErrorManager")
   }
   updateActiveErrors() {
     var e, t;
@@ -288,7 +288,7 @@ class M extends i.Z {
     if (u.size > d.size)
       for (let e of A(u, d)) {
         let t = s.get(e);
-        null != t && (0, v.kr)(t.error, t.context)
+        null != t && (0, b.kr)(t.error, t.context)
       }
     if (d.size > u.size)
       for (let e of A(d, u)) {

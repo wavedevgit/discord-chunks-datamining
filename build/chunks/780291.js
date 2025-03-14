@@ -46,12 +46,12 @@ function g(e) {
     channelId: d
   } = e, _ = i.useRef(c), p = (0, a.Z)({
     editorHeight: r
-  }), g = (0, u.Z)(), E = (0, o.e7)([l.ZP, s.default], () => l.ZP.isComboing(s.default.getId(), d)), v = null !== (t = null == p ? void 0 : p.left) && void 0 !== t ? t : 0, b = (null !== (n = null == p ? void 0 : p.top) && void 0 !== n ? n : 0) - h, y = 0 === c.length, O = i.useMemo(() => Math.random() < m, [y]);
+  }), g = (0, u.Z)(), E = (0, o.e7)([l.ZP, s.default], () => l.ZP.isComboing(s.default.getId(), d)), b = null !== (t = null == p ? void 0 : p.left) && void 0 !== t ? t : 0, v = (null !== (n = null == p ? void 0 : p.top) && void 0 !== n ? n : 0) - h, y = 0 === c.length, O = i.useMemo(() => Math.random() < m, [y]);
   return i.useEffect(() => {
-    0 !== c.length && c !== _.current && E && (g.fire(v, b, O ? {
+    0 !== c.length && c !== _.current && E && (g.fire(b, v, O ? {
       sprite: f.vv
     } : null), _.current = c)
-  }, [c, E, v, b, O, g]), null
+  }, [c, E, b, v, O, g]), null
 }
 
 function E(e) {

@@ -16,9 +16,9 @@ n.d(t, {
   jA: () => D,
   kI: () => R,
   nV: () => K,
-  q5: () => F,
+  q5: () => V,
   to: () => x,
-  wC: () => V,
+  wC: () => F,
   y$: () => L
 }), n(733860), n(653041), n(47120), n(627341), n(757143), n(301563);
 var r = n(192379),
@@ -37,8 +37,8 @@ var r = n(192379),
   m = n(594174),
   g = n(626135),
   E = n(70956),
-  v = n(176354),
-  b = n(111361),
+  b = n(176354),
+  v = n(111361),
   y = n(304852),
   O = n(199257),
   I = n(149203),
@@ -52,8 +52,8 @@ let R = function(e, t) {
       i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
     (0, d.O)(n);
     let o = (0, T.Gt)(e),
-      s = V(n),
-      _ = F(n),
+      s = F(n),
+      _ = V(n),
       {
         canSplitFrecencyList: g
       } = (0, c.S)({
@@ -86,7 +86,7 @@ let R = function(e, t) {
         return null === (e = p.Z.getGuild(n)) || void 0 === e ? void 0 : e.name
       }),
       D = (0, a.e7)([m.default], () => m.default.getCurrentUser()),
-      L = (0, b.I5)(D),
+      L = (0, v.I5)(D),
       x = (0, f.g2)({
         location: "useEmojiCategories"
       });
@@ -100,7 +100,7 @@ let R = function(e, t) {
           id: I.UX.SOUNDMOJI,
           isNitroLocked: !1
         },
-        d = r => v.ZP.getEmojiUnavailableReasons({
+        d = r => b.ZP.getEmojiUnavailableReasons({
           categoryEmojis: r,
           channel: t,
           guildId: n,
@@ -391,13 +391,13 @@ function B(e, t, n) {
   }, [t, n, e, i], a.pF)
 }
 
-function V(e) {
+function F(e) {
   return r.useEffect(() => {
     _.DZ.loadIfNecessary()
   }, []), (0, a.Wu)([l.ZP], () => l.ZP.getDisambiguatedEmojiContext(e).getFrequentlyUsedEmojisWithoutFetchingLatest())
 }
 
-function F(e) {
+function V(e) {
   return r.useEffect(() => {
     _.DZ.loadIfNecessary()
   }, []), (0, a.Wu)([l.ZP], () => l.ZP.getDisambiguatedEmojiContext(e).getFrequentlyUsedReactionEmojisWithoutFetchingLatest())

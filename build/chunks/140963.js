@@ -50,12 +50,12 @@ function E(e, t) {
   return n
 }
 
-function v(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = ":",
+let v = ":",
   y = /(\t|\s)/;
 class O extends i.PureComponent {
   componentDidMount() {
@@ -202,7 +202,7 @@ class O extends i.PureComponent {
     e.which === h.yXg.TAB && this.props.onTab() ? (e.preventDefault(), e.stopPropagation()) : e.which === h.yXg.ENTER && this.props.onEnter(e) ? (e.preventDefault(), e.stopPropagation()) : e.which === h.yXg.ESCAPE ? (e.preventDefault(), e.stopPropagation(), this.props.hideAutocomplete()) : e.which === h.yXg.TAB && this.hasOpenCodeBlock() && (e.preventDefault(), e.stopPropagation(), this.insertText("	", void 0, !1))
   }
   insertEmoji(e, t) {
-    this.insertText("".concat(b).concat(e.name).concat(b), void 0, t)
+    this.insertText("".concat(v).concat(e.name).concat(v), void 0, t)
   }
   getFirstText() {
     return this.props.value
@@ -268,7 +268,7 @@ class O extends i.PureComponent {
         let {
           default: e
         } = await n.e("99989").then(n.bind(n, 889662));
-        return t => (0, r.jsx)(e, v(g({}, t), {
+        return t => (0, r.jsx)(e, b(g({}, t), {
           isChannelTextArea: !0,
           text: (0, _.getSelectionText)()
         }))

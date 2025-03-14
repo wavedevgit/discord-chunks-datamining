@@ -72,10 +72,10 @@ let h = {
       react: s.Z.RULES.text.react
     }
   }]),
-  v = p(s.Z.VOICE_CHANNEL_STATUS_RULES, [(0, a.Z)(f(u({}, h), {
+  b = p(s.Z.VOICE_CHANNEL_STATUS_RULES, [(0, a.Z)(f(u({}, h), {
     enableEmojiClick: !1
   }))]),
-  b = p(s.Z.EMBED_TITLE_RULES, [(0, a.Z)(h)]),
+  v = p(s.Z.EMBED_TITLE_RULES, [(0, a.Z)(h)]),
   y = p(s.Z.INLINE_REPLY_RULES, [(0, a.Z)(h)]),
   O = p(s.Z.GUILD_VERIFICATION_FORM_RULES, [(0, a.Z)(h)]),
   I = p(s.Z.GUILD_EVENT_RULES, [(0, a.Z)(h)]),
@@ -98,8 +98,8 @@ let h = {
     parseTopic: (e, t, n, r) => o.w4(E)(e, t, u({
       allowLinks: !0
     }, n), r),
-    parseVoiceChannelStatus: o.w4(v),
-    parseEmbedTitle: o.w4(b),
+    parseVoiceChannelStatus: o.w4(b),
+    parseEmbedTitle: o.w4(v),
     parseInlineReply: o.w4(y),
     parseGuildVerificationFormRule: o.w4(O),
     parseGuildEventDescription: o.w4(I),
@@ -107,7 +107,7 @@ let h = {
     parseForumPostGuidelines: o.w4(g),
     parseToAST: o._p(m),
     parseTopicToAST: o._p(E),
-    parseEmbedTitleToAST: o._p(b),
+    parseEmbedTitleToAST: o._p(v),
     parseInlineReplyToAST: o._p(y),
     parseAutoModerationSystemMessageToAST: o._p(S)
   }

@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(228168),
   g = n(981631),
   E = n(921944),
-  v = n(474936),
-  b = n(388032),
+  b = n(474936),
+  v = n(388032),
   y = n(38932);
 
 function O(e) {
@@ -28,7 +28,7 @@ function O(e) {
     onClose: t
   } = e;
   return (0, r.jsx)(s.P3F, {
-    "aria-label": b.NW.string(b.t.WAI6xs),
+    "aria-label": v.NW.string(v.t.WAI6xs),
     onClick: t,
     className: y.upsellCloseIconWrapper,
     children: (0, r.jsx)(s.Dio, {
@@ -70,15 +70,15 @@ function I(e) {
         children: [(0, r.jsx)(s.SrA, {
           size: "xs",
           color: "currentColor"
-        }), b.NW.string(b.t["0Q61kJ"])]
+        }), v.NW.string(v.t["0Q61kJ"])]
       }) : (0, r.jsx)(d.Z, {
         onClick: () => {
           u({
             action: m.yM.GET_PREMIUM
           }), null == i || i()
         },
-        buttonText: b.NW.string(b.t.x6rkDg),
-        subscriptionTier: v.Si.TIER_2,
+        buttonText: v.NW.string(v.t.x6rkDg),
+        subscriptionTier: b.Si.TIER_2,
         premiumModalAnalyticsLocation: {
           section: g.jXE.USER_PROFILE
         },
@@ -93,7 +93,7 @@ function I(e) {
       children: (0, r.jsx)(h.tG, {
         icon: s.EOn,
         action: m.yM.VISIT_SHOP,
-        text: b.NW.string(b.t.b2d0Nz),
+        text: v.NW.string(v.t.b2d0Nz),
         look: s.zxk.Looks.FILLED,
         color: s.zxk.Colors.PRIMARY,
         size: t ? s.zxk.Sizes.TINY : s.zxk.Sizes.SMALL,
@@ -129,7 +129,7 @@ let S = function(e) {
         let e = (0, r.jsx)("div", {
             children: (0, r.jsx)(s.Text, {
               variant: "text-sm/normal",
-              children: b.NW.string(b.t.EIYbj4)
+              children: v.NW.string(v.t.EIYbj4)
             })
           }),
           a = (0, r.jsx)(O, {

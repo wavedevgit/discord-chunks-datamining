@@ -110,7 +110,7 @@ e.exports = function(e) {
         return t.position = e.position, t.width = s.offsetWidth, t.height = s.offsetHeight, t.top = e.top, t.right = e.right, t.bottom = e.bottom, t.left = e.left, t.widthCSS = e.width, t.heightCSS = e.height, t
       }
 
-      function v() {
+      function b() {
         var e = E();
         i(s).startSize = {
           width: e.width,
@@ -118,7 +118,7 @@ e.exports = function(e) {
         }, d("Element start size", i(s).startSize)
       }
 
-      function b() {
+      function v() {
         i(s).listeners = []
       }
 
@@ -218,8 +218,8 @@ e.exports = function(e) {
           m = u(["position: absolute", "flex: none", "overflow: scroll", "z-index: -1", "visibility: hidden", "width: 100%", "height: 100%"]),
           g = u(["position: absolute", "flex: none", "overflow: scroll", "z-index: -1", "visibility: hidden", "width: 100%", "height: 100%"]),
           E = u(["position: absolute", "left: 0", "top: 0"]),
-          v = u(["position: absolute", "width: 200%", "height: 200%"]),
-          b = document.createElement("div"),
+          b = u(["position: absolute", "width: 200%", "height: 200%"]),
+          v = document.createElement("div"),
           y = document.createElement("div"),
           O = document.createElement("div"),
           I = document.createElement("div"),
@@ -235,7 +235,7 @@ e.exports = function(e) {
           var e = i(s);
           e && e.onShrink ? e.onShrink() : d("Aborting shrink scroll handler: element has been uninstalled")
         }
-        b.dir = "ltr", b.style.cssText = _, b.className = l, y.className = l, y.style.cssText = h, O.style.cssText = m, I.style.cssText = E, S.style.cssText = g, T.style.cssText = v, O.appendChild(I), S.appendChild(T), y.appendChild(O), y.appendChild(S), b.appendChild(y), o.appendChild(b), p(O, "scroll", N), p(S, "scroll", A), i(s).onExpandScroll = N, i(s).onShrinkScroll = A
+        v.dir = "ltr", v.style.cssText = _, v.className = l, y.className = l, y.style.cssText = h, O.style.cssText = m, I.style.cssText = E, S.style.cssText = g, T.style.cssText = b, O.appendChild(I), S.appendChild(T), y.appendChild(O), y.appendChild(S), v.appendChild(y), o.appendChild(v), p(O, "scroll", N), p(S, "scroll", A), i(s).onExpandScroll = N, i(s).onShrinkScroll = A
       }
 
       function L() {
@@ -346,7 +346,7 @@ e.exports = function(e) {
       }
 
       function k() {
-        d("Installing..."), b(), v(), n.add(0, y), n.add(1, D), n.add(2, L), n.add(3, x), n.add(4, M)
+        d("Installing..."), v(), b(), n.add(0, y), n.add(1, D), n.add(2, L), n.add(3, x), n.add(4, M)
       }
       c || (c = s, s = e, e = null), e = e || {}, d("Making detectable..."), f(s) ? (d("Element is detached"), w(), d("Waiting until element is attached..."), i(s).onRendered = function() {
         d("Element is now attached"), k()

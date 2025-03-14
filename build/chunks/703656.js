@@ -6,13 +6,13 @@ n.d(t, {
   DB: () => C,
   DR: () => T,
   Wf: () => A,
-  XU: () => b,
+  XU: () => v,
   dL: () => O,
   eH: () => P,
   m1: () => N,
   op: () => R,
   s1: () => I,
-  uL: () => v,
+  uL: () => b,
   uv: () => y
 }), n(653041), n(26686), n(757143), n(301563);
 var a = n(539528),
@@ -58,7 +58,7 @@ function E(e, t) {
   return !!("string" == typeof e && p.some(t => e.startsWith(t))) && (_.log("".concat(t, " - route to external path ").concat(e)), window.dispatchEvent(new Event("beforeunload")), window.location[t](e), !0)
 }
 
-function v(e, t) {
+function b(e, t) {
   if (E(e, "assign")) return;
   _.log("transitionTo - Transitioning to ".concat(e));
   let n = null == t ? void 0 : t.source;
@@ -69,12 +69,12 @@ function v(e, t) {
   }, t)), i = n, o = a
 }
 
-function b(e, t, n, r) {
+function v(e, t, n, r) {
   _.log("transitionToGuild - Transitioning to ".concat(JSON.stringify({
     guildId: e,
     channelId: t,
     messageId: n
-  }))), v(u.Z5c.CHANNEL(e, t, n), r)
+  }))), b(u.Z5c.CHANNEL(e, t, n), r)
 }
 
 function y() {

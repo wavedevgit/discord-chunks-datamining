@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(785717),
   g = n(369566),
   E = n(518950),
-  v = n(652853),
-  b = n(228168),
+  b = n(652853),
+  v = n(228168),
   y = n(981631),
   O = n(474936),
   I = n(171872);
@@ -78,7 +78,7 @@ function R(e) {
     previewStatus: w
   } = e, {
     theme: D
-  } = (0, v.z)(), {
+  } = (0, b.z)(), {
     analyticsLocations: L
   } = (0, d.ZP)(u.Z.AVATAR), {
     trackUserProfileAction: x
@@ -90,10 +90,10 @@ function R(e) {
   } = (0, s.cj)([_.Z], () => ({
     status: (0, c.Z)(U) ? y.Skl.STREAMING : _.Z.getStatus(t.id),
     isMobileOnline: _.Z.isMobileOnline(t.id)
-  })), V = void 0 !== w ? w : G, F = S === b.y0.FULL_SIZE ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = a()(I.avatar, {
-    [I.biteSize]: S === b.y0.BITE_SIZE,
-    [I.fullSize]: S === b.y0.FULL_SIZE,
-    [I.panel]: S === b.y0.PANEL
+  })), F = void 0 !== w ? w : G, V = S === v.y0.FULL_SIZE ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = a()(I.avatar, {
+    [I.biteSize]: S === v.y0.BITE_SIZE,
+    [I.fullSize]: S === v.y0.FULL_SIZE,
+    [I.panel]: S === v.y0.PANEL
   }, P), {
     avatarDecorationSrc: H,
     avatarSrc: W,
@@ -101,19 +101,19 @@ function R(e) {
   } = (0, E.Z)({
     user: t,
     guildId: null != n ? n.guildId : o,
-    size: F,
+    size: V,
     animateOnHover: N
   }), K = (0, r.jsx)(C, {
     src: W,
     avatarDecoration: H,
-    size: F,
+    size: V,
     "aria-label": t.username,
     imageClassName: null != R ? I.overlay : void 0,
-    status: k ? y.Skl.UNKNOWN : V,
+    status: k ? y.Skl.UNKNOWN : F,
     statusBackdropColor: M && !k ? (0, l.QFD)(D) : void 0,
     isMobile: B,
     statusTooltip: !0,
-    statusTooltipDelay: b.vB
+    statusTooltipDelay: v.vB
   });
   return null == R ? (0, r.jsx)("div", A(T({}, Y), {
     className: Z,

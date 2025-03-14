@@ -80,7 +80,7 @@ function t(e) {
       returnBegin: !0,
       excludeEnd: !0
     },
-    v = {
+    b = {
       className: "function",
       begin: g,
       end: "\\)$",
@@ -94,7 +94,7 @@ function t(e) {
     case_insensitive: !0,
     keywords: _,
     illegal: "\\$|\\?|%|,|;$|~|#|@|</",
-    contains: [v, h, p, m, u, c, f]
+    contains: [b, h, p, m, u, c, f]
   }
 }
 e.exports = t

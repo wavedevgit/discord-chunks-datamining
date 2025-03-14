@@ -5,7 +5,7 @@ n.d(t, {
   OC: () => A,
   dg: () => I,
   dp: () => E,
-  f3: () => b,
+  f3: () => v,
   iL: () => C,
   nA: () => S,
   qF: () => g,
@@ -36,7 +36,7 @@ function E(e, t, n) {
     type: n
   })
 }
-let v = [{
+let b = [{
   reType: /^image\/vnd.adobe.photoshop/,
   klass: "photoshop"
 }, {
@@ -80,14 +80,14 @@ let v = [{
   klass: "audio"
 }];
 
-function b(e) {
+function v(e) {
   return y(e.name, e.type)
 }
 
 function y(e, t) {
   var n;
   e = null !== (n = null == e ? void 0 : e.toLowerCase()) && void 0 !== n ? n : "";
-  let r = s().find(v, n => null != n.reType && null != t ? n.reType.test(t) : null != n.reName && "" !== e && n.reName.test(e));
+  let r = s().find(b, n => null != n.reType && null != t ? n.reType.test(t) : null != n.reName && "" !== e && n.reName.test(e));
   return null != r ? r.klass : "unknown"
 }
 

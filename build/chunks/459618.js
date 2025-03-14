@@ -58,7 +58,7 @@ function E(e) {
   return null != e.apiResponseTimestamp && null != e.gatewaySeenTimestamp
 }
 
-function v(e) {
+function b(e) {
   let t = l.Z.getBasicChannel(e.channelId);
   if (null == t) {
     g.warn("Ignoring a messageData for channel ".concat(e.channelId, " because we can't find that channel."));
@@ -81,7 +81,7 @@ function v(e) {
   }))
 }
 
-function b(e) {
+function v(e) {
   let {
     optimistic: t,
     message: n
@@ -98,7 +98,7 @@ class y extends i.ZP.Store {
     };
     this.pendingMessages.set(t, n), setTimeout(() => {
       let e = this.pendingMessages.get(t);
-      null != e && (v(e), this.pendingMessages.delete(t))
+      null != e && (b(e), this.pendingMessages.delete(t))
     }, 3e4)
   }
   recordMessageSendApiResponse(e) {
@@ -107,7 +107,7 @@ class y extends i.ZP.Store {
       let n = m(p({}, t), {
         apiResponseTimestamp: Date.now()
       });
-      E(n) ? (v(n), this.pendingMessages.delete(e)) : this.pendingMessages.set(e, n)
+      E(n) ? (b(n), this.pendingMessages.delete(e)) : this.pendingMessages.set(e, n)
     }
   }
   recordGatewayResponse(e) {
@@ -116,7 +116,7 @@ class y extends i.ZP.Store {
       let n = m(p({}, t), {
         gatewaySeenTimestamp: Date.now()
       });
-      E(n) ? (v(n), this.pendingMessages.delete(e)) : this.pendingMessages.set(e, n)
+      E(n) ? (b(n), this.pendingMessages.delete(e)) : this.pendingMessages.set(e, n)
     }
   }
   constructor(...e) {
@@ -124,6 +124,6 @@ class y extends i.ZP.Store {
   }
 }
 let O = new y(o.Z, {
-    MESSAGE_CREATE: b
+    MESSAGE_CREATE: v
   }),
   I = O

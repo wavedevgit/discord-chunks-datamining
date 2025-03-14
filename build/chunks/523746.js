@@ -54,7 +54,7 @@ function m(e, t) {
 let g = {},
   E = {};
 
-function v() {
+function b() {
   let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
     t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : u.Z.getChannelId(),
     n = c.Z.getChannel(t);
@@ -71,8 +71,8 @@ function v() {
   return !1
 }
 
-function b() {
-  return v(!0)
+function v() {
+  return b(!0)
 }
 
 function y(e) {
@@ -87,14 +87,14 @@ function O() {
 }
 
 function I() {
-  return v(!0)
+  return b(!0)
 }
 
 function S(e) {
   let {
     channelId: t
   } = e;
-  return v(!1, t)
+  return b(!1, t)
 }
 
 function T(e) {
@@ -210,7 +210,7 @@ class w extends(r = a.ZP.Store) {
 }
 _(w, "displayName", "CallStore");
 let D = new w(l.Z, {
-  CONNECTION_OPEN: b,
+  CONNECTION_OPEN: v,
   CONNECTION_CLOSED: O,
   OVERLAY_INITIALIZE: y,
   CONNECTION_RESUMED: I,

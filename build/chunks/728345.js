@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  IX: () => v,
-  Rt: () => b,
+  IX: () => b,
+  Rt: () => v,
   UM: () => g,
   ZP: () => E
 }), n(789020), n(610138), n(216116), n(78328), n(815648), n(47120);
@@ -193,19 +193,19 @@ let E = {
     },
     fetchApplication: g
   },
-  v = (0, r.Kb)(c.Z, {
+  b = (0, r.Kb)(c.Z, {
     queryId: e => null != e ? ["applications", e] : null,
     get: e => null != e ? c.Z.getApplication(e) : null,
     load: (e, t) => null != t ? g(t, !1, e).then(u.dG4) : Promise.resolve(),
     useStateHook: r.e7
   });
 
-function b(e) {
+function v(e) {
   let {
     data: t,
     isLoading: n,
     error: i
-  } = v(e);
+  } = b(e);
   return {
     app: (0, r.e7)([a.Z], () => {
       if (null == t) {

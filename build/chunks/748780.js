@@ -79,15 +79,15 @@ function E(e) {
   return null != t && (e = "rgba(".concat(0 | t[1], ", ").concat(0 | t[2], ", ").concat(0 | t[3], ", ").concat(t[4], ")")), e
 }
 
-function v(e) {
+function b(e) {
   return e && (e.transform && (e.transform = e.WebkitTransform = e.MozTransform = e.transform.map(m).join(" ")), e.color && (e.color = E(e.color)), e.backgroundColor && (e.backgroundColor = E(e.backgroundColor))), e
 }
 
-function b(e, t, n) {
+function v(e, t, n) {
   if (e.setNativeProps) e.setNativeProps(t);
   else {
     if (!e.nodeType || void 0 === e.setAttribute) return !1;
-    c().setValueForStyles(e, v(t.style), n._reactInternalInstance)
+    c().setValueForStyles(e, b(t.style), n._reactInternalInstance)
   }
 }
 
@@ -116,7 +116,7 @@ function I(e, t) {
     shouldLoop: m,
     durationMin: g,
     durationMax: E
-  } = t, v = p(t, ["toValueMin", "toValueMax", "tension", "friction", "loop", "reverse", "invert", "callback", "type", "shouldLoop", "durationMin", "durationMax"]), b = e._value, y = O(t.duration, g, E), S = O(t.toValue, i, o), T = r[h](e, _(d({}, v), {
+  } = t, b = p(t, ["toValueMin", "toValueMax", "tension", "friction", "loop", "reverse", "invert", "callback", "type", "shouldLoop", "durationMin", "durationMax"]), v = e._value, y = O(t.duration, g, E), S = O(t.toValue, i, o), T = r[h](e, _(d({}, b), {
     toValue: S,
     tension: a,
     friction: s,
@@ -124,8 +124,8 @@ function I(e, t) {
   })), N = T;
   if (c || u) {
     let i = O(t.duration, g, E);
-    n = r[h](e, _(d({}, v), {
-      toValue: c ? b : -S,
+    n = r[h](e, _(d({}, b), {
+      toValue: c ? v : -S,
       tension: a,
       friction: s,
       duration: i
@@ -143,7 +143,7 @@ function S(e) {
     outputRange: n
   })
 }
-r.inject.ApplyAnimatedValues(b, e => e);
+r.inject.ApplyAnimatedValues(v, e => e);
 let T = {
     CLAMP: "clamp"
   },

@@ -65,7 +65,7 @@ function g(e, t) {
 }
 let E = 8;
 
-function v(e) {
+function b(e) {
   switch (e) {
     case d.Skl.ONLINE:
       return d.Ilk.GREEN_360;
@@ -83,7 +83,7 @@ function v(e) {
   }
 }
 
-function b(e) {
+function v(e) {
   switch (e) {
     case d.Skl.ONLINE:
       return d.Ilk.GREEN_NEW_38;
@@ -103,7 +103,7 @@ function b(e) {
 
 function y(e, t) {
   let n = (0, u.Q3)("useStatusFillColor"),
-    r = (0, l.Sl)(n ? b(e) : v(e)).hex,
+    r = (0, l.Sl)(n ? v(e) : b(e)).hex,
     i = null != t ? t : r,
     o = (0, l.K3)(i);
   return null != o ? o : void 0
@@ -215,7 +215,7 @@ function C(e, t, n) {
     polygonOrigin: m,
     dotY: g,
     dotX: E,
-    dotRadius: v
+    dotRadius: b
   } = e;
   return (0, r.jsxs)("mask", {
     id: n,
@@ -246,7 +246,7 @@ function C(e, t, n) {
       fill: "black",
       cx: E,
       cy: g,
-      r: v
+      r: b
     })]
   })
 }

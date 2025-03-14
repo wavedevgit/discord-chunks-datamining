@@ -35,7 +35,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function v(e) {
   return e
 }
 
-function b(e, t) {
+function v(e, t) {
   var n, r;
   d.default.track(m.rMx.REMOTE_COMMAND_SENT, {
     command_type: e,
@@ -93,7 +93,7 @@ function I(e, t) {
       self_mute: n,
       self_deaf: r
     }
-  }), b("VOICE_STATE_UPDATE", e)
+  }), v("VOICE_STATE_UPDATE", e)
 }
 
 function S(e) {
@@ -103,7 +103,7 @@ function S(e) {
     payload: {
       type: "DISCONNECT"
     }
-  }), b("DISCONNECT", e), y()
+  }), v("DISCONNECT", e), y()
 }
 
 function T(e, t, n, r) {
@@ -111,12 +111,12 @@ function T(e, t, n, r) {
   null != i && (a.Z.dispatch({
     type: "REMOTE_COMMAND",
     sessionId: e,
-    payload: v({
+    payload: b({
       type: "AUDIO_SETTINGS_UPDATE",
       context: i,
       id: t
     }, r)
-  }), b("AUDIO_SETTINGS_UPDATE", e))
+  }), v("AUDIO_SETTINGS_UPDATE", e))
 }
 async function N() {
   let e;

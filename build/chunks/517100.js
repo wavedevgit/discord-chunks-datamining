@@ -26,11 +26,11 @@ let h = Date.now(),
   m = !1,
   g = !1,
   E = !1,
-  v = !1,
-  b = !1;
+  b = !1,
+  v = !1;
 
 function y() {
-  return E || v || (0, u.isAndroid)() && b
+  return E || b || (0, u.isAndroid)() && v
 }
 
 function O() {
@@ -89,7 +89,7 @@ function R(e) {
   let {
     state: t
   } = e;
-  return b = t === f.$7l.BACKGROUND, h = Date.now(), S(), !1
+  return v = t === f.$7l.BACKGROUND, h = Date.now(), S(), !1
 }
 
 function P(e) {
@@ -107,9 +107,9 @@ __OVERLAY__ || (u.isPlatformEmbedded && (null === s.Z || void 0 === s.Z ? void 0
 }), s.Z.remotePowerMonitor.on("suspend", () => {
   E = !0, P({}), a.default.disconnect()
 }), s.Z.remotePowerMonitor.on("lock-screen", () => {
-  v = !0, P({})
+  b = !0, P({})
 }), s.Z.remotePowerMonitor.on("unlock-screen", () => {
-  v = !1, P({})
+  b = !1, P({})
 })) : setInterval(S, .25 * f.OSm));
 class w extends(r = i.ZP.Store) {
   isIdle() {

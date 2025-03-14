@@ -20,8 +20,8 @@ var o = n(442837),
   m = n(218543),
   g = n(48481),
   E = n(131704),
-  v = n(209747),
-  b = n(598077),
+  b = n(209747),
+  v = n(598077),
   y = n(592125),
   O = n(271383),
   I = n(819640),
@@ -121,11 +121,11 @@ let U = new d.Z("ConnectionStore"),
       guildId: t.guild_id
     }))
   }), e), e => "SOUNDBOARD_SOUNDS" !== e),
-  V = new P.Z(w.Wb, (e, t) => ((e = null != e ? e : {
+  F = new P.Z(w.Wb, (e, t) => ((e = null != e ? e : {
     type: "GUILD_MEMBERS_CHUNK_BATCH",
     chunks: []
   }).chunks.push(t), e), e => "GUILD_MEMBERS_CHUNK" !== e),
-  F = new P.Z(w.Wb, (e, t) => ((e = null == e ? {
+  V = new P.Z(w.Wb, (e, t) => ((e = null == e ? {
     type: "PRESENCE_UPDATES",
     updates: []
   } : e).updates.push(t), e), e => "PRESENCE_UPDATE" !== e && "GUILD_MEMBERS_CHUNK" !== e),
@@ -228,7 +228,7 @@ function X(e) {
     hiddenActivities: o,
     clientStatus: a
   } = e;
-  F.add({
+  V.add({
     guildId: t,
     user: n,
     status: r,
@@ -642,7 +642,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
   })
 }), H(["GUILD_MEMBERS_CHUNK"], e => {
   o.ZP.Emitter.batched(() => {
-    V.add({
+    F.add({
       guildId: e.guild_id,
       members: e.members,
       notFound: e.not_found
@@ -1029,12 +1029,12 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
 }), H(["USER_PREMIUM_GUILD_SUBSCRIPTION_SLOT_CREATE"], e => {
   K({
     type: "GUILD_BOOST_SLOT_CREATE",
-    guildBoostSlot: v.Z.createFromServer(e, A.ZP.getSubscriptionById(e.subscription_id))
+    guildBoostSlot: b.Z.createFromServer(e, A.ZP.getSubscriptionById(e.subscription_id))
   })
 }), H(["USER_PREMIUM_GUILD_SUBSCRIPTION_SLOT_UPDATE"], e => {
   K({
     type: "GUILD_BOOST_SLOT_UPDATE",
-    guildBoostSlot: v.Z.createFromServer(e, A.ZP.getSubscriptionById(e.subscription_id))
+    guildBoostSlot: b.Z.createFromServer(e, A.ZP.getSubscriptionById(e.subscription_id))
   })
 }), H(["BILLING_POPUP_BRIDGE_CALLBACK"], e => {
   K({
@@ -1389,7 +1389,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
       guildId: e.guild_id,
       name: e.name,
       soundId: e.sound_id,
-      user: new b.Z(e.user),
+      user: new v.Z(e.user),
       userId: e.user_id,
       volume: e.volume,
       emojiId: e.emoji_id,
@@ -1404,7 +1404,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : y.o.loadGuildIds([e.id
       guildId: e.guild_id,
       name: e.name,
       soundId: e.sound_id,
-      user: new b.Z(e.user),
+      user: new v.Z(e.user),
       userId: e.user_id,
       volume: e.volume,
       emojiId: e.emoji_id,

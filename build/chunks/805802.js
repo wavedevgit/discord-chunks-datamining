@@ -40,14 +40,14 @@ function u(e, t) {
         case "RDATE":
           var f = null !== (t = /RDATE(?:;TZID=([^:=]+))?/i.exec(e)) && void 0 !== t ? t : [],
             _ = f[1];
-          _ && !c && (c = _), r = r.concat(v(d, u));
+          _ && !c && (c = _), r = r.concat(b(d, u));
           break;
         case "EXRULE":
           if (u.length) throw Error("unsupported EXRULE parm: ".concat(u.join(",")));
           i.push((0, l.B)(d));
           break;
         case "EXDATE":
-          o = o.concat(v(d, u));
+          o = o.concat(b(d, u));
           break;
         case "DTSTART":
           break;
@@ -152,7 +152,7 @@ function E(e) {
   })
 }
 
-function v(e, t) {
+function b(e, t) {
   return E(t), e.split(",").map(function(e) {
     return (0, a.gE)(e)
   })

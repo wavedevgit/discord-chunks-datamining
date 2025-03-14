@@ -1,70 +1,75 @@
-/** Chunk was on 84335 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  CR: () => m,
-  MA: () => I,
-  pV: () => v,
-  vb: () => j,
-  xV: () => f
+  CR: () => p,
+  MA: () => g,
+  pV: () => h,
+  vb: () => E,
+  xV: () => m
 });
 var r = n(544891),
-  l = n(570140),
-  i = n(881052),
+  i = n(570140),
+  o = n(881052),
   a = n(937111),
-  o = n(271383),
-  c = n(626135),
-  s = n(406218),
+  s = n(271383),
+  l = n(626135),
+  c = n(406218),
   u = n(314852),
   d = n(981631);
+let f = 6e4;
 
-function m(e, t) {
-  var n;
+function _(e) {
+  return Date.now() - (null != e ? e : 0) > f
+}
+
+function p(e, t) {
   if (null == e) return Promise.resolve(null);
-  let a = u.Z.getFetchStatus(e) === u.a.FETCHING,
-    o = u.Z.getLastSyncTimestamp(e),
-    c = u.Z.getProfile(e),
-    m = (n = o, Date.now() - (null != n ? n : 0) > 6e4);
-  return a && !t ? Promise.resolve(null) : null == c || m || t ? (l.Z.dispatch({
+  let n = u.Z.getFetchStatus(e) === u.a.FETCHING,
+    a = u.Z.getLastSyncTimestamp(e),
+    s = u.Z.getProfile(e),
+    l = _(a);
+  return n && !t ? Promise.resolve(null) : null == s || l || t ? (i.Z.dispatch({
     type: "GUILD_PROFILE_FETCH",
     guildId: e
   }), r.tn.get({
     url: d.ANM.GUILD_PROFILE(e),
     rejectWithError: !1
   }).then(t => {
-    let n = (0, s.xo)(t.body);
-    return l.Z.dispatch({
+    let n = (0, c.xo)(t.body);
+    return i.Z.dispatch({
       type: "GUILD_PROFILE_FETCH_SUCCESS",
       guildId: e,
       profile: n
     }), n
   }).catch(t => {
-    let n = new i.Hx(t);
-    return l.Z.dispatch({
+    let n = new o.Hx(t);
+    return i.Z.dispatch({
       type: "GUILD_PROFILE_FETCH_FAILURE",
       guildId: e,
       error: n
     }), null
-  })) : Promise.resolve(c)
+  })) : Promise.resolve(s)
 }
 
-function v(e, t) {
-  return u.Z.getIsUpdating(e) ? Promise.resolve(null) : (l.Z.dispatch({
+function h(e, t) {
+  return u.Z.getIsUpdating(e) ? Promise.resolve(null) : (i.Z.dispatch({
     type: "GUILD_PROFILE_UPDATE",
     guildId: e,
     updates: t
   }), r.tn.patch({
     url: d.ANM.GUILD_PROFILE(e),
-    body: (0, s.sO)(t),
+    body: (0, c.sO)(t),
     rejectWithError: !1
   }).then(t => {
-    let n = (0, s.xo)(t.body);
-    return l.Z.dispatch({
+    let n = (0, c.xo)(t.body);
+    return i.Z.dispatch({
       type: "GUILD_PROFILE_UPDATE_SUCCESS",
       guildId: e,
       profile: n
     }), n
   }).catch(t => {
-    let n = new i.Hx(t);
-    return l.Z.dispatch({
+    let n = new o.Hx(t);
+    return i.Z.dispatch({
       type: "GUILD_PROFILE_UPDATE_FAILURE",
       guildId: e,
       error: n
@@ -72,8 +77,8 @@ function v(e, t) {
   }))
 }
 
-function f(e, t) {
-  return u.Z.getIsUpdating(e) ? Promise.resolve(null) : (l.Z.dispatch({
+function m(e, t) {
+  return u.Z.getIsUpdating(e) ? Promise.resolve(null) : (i.Z.dispatch({
     type: "GUILD_PROFILE_UPDATE_VISIBILITY",
     guildId: e,
     visibility: t
@@ -85,32 +90,32 @@ function f(e, t) {
     rejectWithError: !1
   }).then(t => {
     let n = t.body.visibility;
-    return l.Z.dispatch({
+    return i.Z.dispatch({
       type: "GUILD_PROFILE_UPDATE_VISIBILITY_SUCCESS",
       guildId: e,
       visibility: n
     }), n
   }).catch(t => {
-    let n = new i.Hx(t);
-    throw l.Z.dispatch({
+    let n = new o.Hx(t);
+    throw i.Z.dispatch({
       type: "GUILD_PROFILE_UPDATE_VISIBILITY_FAILURE",
       guildId: e,
       error: n
     }), n
   }))
 }
-async function I(e) {
+async function g(e) {
   let t = await r.tn.get({
     url: d.ANM.GUILD_TOP_GAMES(e),
     rejectWithError: !1
   });
-  return (0, s.o_)(t.body.top_games)
+  return (0, c.o_)(t.body.top_games)
 }
 
-function j(e, t) {
-  let n = null != o.ZP.getSelfMember(e),
+function E(e, t) {
+  let n = null != s.ZP.getSelfMember(e),
     r = null != a.Z.getRequest(e);
-  c.default.track(d.rMx.GUILD_PROFILE_VIEWED, {
+  l.default.track(d.rMx.GUILD_PROFILE_VIEWED, {
     guild_id: e,
     location_stack: t,
     is_member: n,

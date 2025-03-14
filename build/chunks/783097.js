@@ -6,7 +6,7 @@ n.d(t, {
   Cb: () => j,
   Hu: () => U,
   L1: () => Z,
-  Ow: () => F,
+  Ow: () => V,
   WA: () => L,
   Wx: () => N,
   X: () => H,
@@ -15,7 +15,7 @@ n.d(t, {
   Yn: () => G,
   jD: () => R,
   lf: () => D,
-  pF: () => V,
+  pF: () => F,
   sl: () => k,
   vJ: () => w,
   yJ: () => x,
@@ -37,9 +37,9 @@ var r = n(912370),
   m = n(827498),
   g = n(981631),
   E = n(689079),
-  v = n(388032);
+  b = n(388032);
 
-function b(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -55,7 +55,7 @@ function y(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -104,11 +104,11 @@ function A(e) {
 }
 
 function C(e) {
-  return A(e) ? e.name : v.NW.string(v.t.UB2gGx)
+  return A(e) ? e.name : b.NW.string(b.t.UB2gGx)
 }
 
 function R(e) {
-  return A(e) ? e.description : v.NW.string(v.t.X9fusr)
+  return A(e) ? e.description : b.NW.string(b.t.X9fusr)
 }
 
 function P(e) {
@@ -166,9 +166,9 @@ function M(e) {
       }
     } catch (e) {
       throw i.Z.show({
-        title: v.NW.string(v.t["aHO//v"]),
-        body: v.NW.string(v.t.kuzKHB),
-        confirmText: v.NW.string(v.t["5911LS"]),
+        title: b.NW.string(b.t["aHO//v"]),
+        body: b.NW.string(b.t.kuzKHB),
+        confirmText: b.NW.string(b.t["5911LS"]),
         onConfirm: () => p()
       }), e
     }
@@ -191,8 +191,8 @@ function k(e) {
     description: e.description
   } : {
     iconURL: null != n ? n : null,
-    name: v.NW.string(v.t.UB2gGx),
-    description: v.NW.string(v.t.X9fusr)
+    name: b.NW.string(b.t.UB2gGx),
+    description: b.NW.string(b.t.X9fusr)
   }
 }
 
@@ -213,7 +213,7 @@ function B(e) {
   return null == e ? "" : (e.charAt(0).toLocaleUpperCase() + e.slice(1)).replaceAll("_", " ")
 }
 
-function V(e) {
+function F(e) {
   let t = [];
   for (let n of e) {
     let e = n.application_directory_collection_items.filter(e => e.type === r.C.APPLICATION && P(e.application));
@@ -224,7 +224,7 @@ function V(e) {
   return t
 }
 
-function F(e) {
+function V(e) {
   return {
     applicationId: e.id,
     customInstallUrl: e.customInstallUrl,

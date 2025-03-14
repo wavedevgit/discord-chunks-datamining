@@ -26,8 +26,8 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 let E = 10,
-  v = 10,
-  b = null === (r = c().name) || void 0 === r ? void 0 : r.toLowerCase().includes("firefox");
+  b = 10,
+  v = null === (r = c().name) || void 0 === r ? void 0 : r.toLowerCase().includes("firefox");
 
 function y(e, t) {
   e.sender.replaceTrack(t), e.direction = null != t ? "sendrecv" : "recvonly"
@@ -63,7 +63,7 @@ class O extends f.Z {
         r = E + this.unassignedStreams.audio.length - n;
       this.addTransceivers("audio", "recvonly", r)
     }
-    if (this.videoSupported && void 0 !== n && (!b || void 0 === o.videoSSRC)) {
+    if (this.videoSupported && void 0 !== n && (!v || void 0 === o.videoSSRC)) {
       let t = null != n && n.length > 0 ? n[0] : 0;
       if (t > 0) {
         if (o.videoSSRC !== t) {
@@ -72,7 +72,7 @@ class O extends f.Z {
             ssrc: t
           });
           let n = this.inactiveTransceivers.video.length,
-            r = v + this.unassignedStreams.video.length - n;
+            r = b + this.unassignedStreams.video.length - n;
           this.addTransceivers("video", "recvonly", r)
         }
       } else null != o.videoSSRC && (o.videoSSRC = void 0, i = !0)
@@ -414,6 +414,6 @@ class O extends f.Z {
       sendEncodings: [{
         maxBitrate: this.voiceBitrate
       }]
-    }), this.audioTransceiver = i.getTransceivers()[0], this.videoSupported && (this.addTransceivers("video", "recvonly", 1, this.input.getVideoStream()), this.videoTransceiver = i.getTransceivers()[1]), this.addTransceivers("audio", "recvonly", E), this.videoSupported && this.addTransceivers("video", "recvonly", v), this.setStream(this.input.stream), this.logger.info("Renegotiating: Initial negotiation, user id: ".concat(t)), this.handleNegotiationNeeded(!0)
+    }), this.audioTransceiver = i.getTransceivers()[0], this.videoSupported && (this.addTransceivers("video", "recvonly", 1, this.input.getVideoStream()), this.videoTransceiver = i.getTransceivers()[1]), this.addTransceivers("audio", "recvonly", E), this.videoSupported && this.addTransceivers("video", "recvonly", b), this.setStream(this.input.stream), this.logger.info("Renegotiating: Initial negotiation, user id: ".concat(t)), this.handleNegotiationNeeded(!0)
   }
 }

@@ -31,7 +31,7 @@ function s(e, t) {
     if (g < 0 && (g += h + 1), g > 0 && g <= h) {
       var E = void 0;
       g > 1 ? (E = p + (g - 1) * 7, p !== n && (E -= 7 - n)) : E = p;
-      for (var v = 0; v < 7 && (_.wnomask[E] = 1, E++, _.wdaymask[E] !== t.wkst); v++);
+      for (var b = 0; b < 7 && (_.wnomask[E] = 1, E++, _.wdaymask[E] !== t.wkst); b++);
     }
   }
   if ((0, o.q9)(t.byweekno, 1)) {
@@ -40,16 +40,16 @@ function s(e, t) {
       for (var m = 0; m < 7 && (_.wnomask[E] = 1, E += 1, _.wdaymask[E] !== t.wkst); m++);
   }
   if (p) {
-    var b = void 0;
-    if ((0, o.q9)(t.byweekno, -1)) b = -1;
+    var v = void 0;
+    if ((0, o.q9)(t.byweekno, -1)) v = -1;
     else {
       var y = (0, i.FO)((0, i.t2)(e - 1, 1, 1)),
         O = (0, o.Vy)(7 - y.valueOf() + t.wkst, 7),
         I = (0, i.Eg)(e - 1) ? 366 : 365,
         S = void 0;
-      O >= 4 ? (O = 0, S = I + (0, o.Vy)(y - t.wkst, 7)) : S = c - p, b = Math.floor(52 + (0, o.Vy)(S, 7) / 4)
+      O >= 4 ? (O = 0, S = I + (0, o.Vy)(y - t.wkst, 7)) : S = c - p, v = Math.floor(52 + (0, o.Vy)(S, 7) / 4)
     }
-    if ((0, o.q9)(t.byweekno, b))
+    if ((0, o.q9)(t.byweekno, v))
       for (var E = 0; E < p; E++) _.wnomask[E] = 1
   }
   return _

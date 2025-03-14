@@ -40,7 +40,7 @@ function E(e) {
   return e
 }
 
-function v(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,8 +51,8 @@ function v(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -71,16 +71,16 @@ function I(e) {
     tabIndex: l,
     children: f,
     locked: h = !1
-  } = e, [g, v] = i.useState((0, _.aW)(t).name), y = t === d.Ru.PIRATE, I = (0, c.xUy)({
+  } = e, [g, b] = i.useState((0, _.aW)(t).name), y = t === d.Ru.PIRATE, I = (0, c.xUy)({
     label: g,
     isSelected: s
   });
   return (0, r.jsx)(c.ua7, {
     text: g,
-    onTooltipShow: () => y && v(O()),
+    onTooltipShow: () => y && b(O()),
     children: e => (0, r.jsxs)("div", {
       className: m.appIconSelectionContainer,
-      children: [(0, r.jsx)(c.P3F, b(E({}, e, I), {
+      children: [(0, r.jsx)(c.P3F, v(E({}, e, I), {
         tabIndex: null != l ? l : I.tabIndex,
         className: a()(m.appIconSelection, {
           [m.selected]: s

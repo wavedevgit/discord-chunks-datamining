@@ -25,8 +25,8 @@ function E(e) {
     channel: n,
     containerWidth: o,
     onClose: E,
-    onSelect: v,
-    analyticsSource: b,
+    onSelect: b,
+    analyticsSource: v,
     suppressPlaySound: y,
     shouldValidateSelectedSound: O,
     shouldShowUpsell: I = !0,
@@ -59,7 +59,7 @@ function E(e) {
         guildId: t,
         channel: n,
         onClose: E,
-        onSelect: v,
+        onSelect: b,
         shouldValidateSelectedSound: O,
         containerWidth: o,
         suppressPlaySound: y,
@@ -71,7 +71,7 @@ function E(e) {
         defaultSoundsOnly: R,
         inExpressionPicker: T,
         refreshEnabled: D,
-        analyticsSource: b
+        analyticsSource: v
       })
     })
   })

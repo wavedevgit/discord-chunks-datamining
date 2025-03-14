@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   Ph: () => y,
-  Tt: () => b,
-  iL: () => v,
+  Tt: () => v,
+  iL: () => b,
   nY: () => I,
   zx: () => S
 });
@@ -74,13 +74,13 @@ function E(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let v = {
+let b = {
     FILLED: f.lookFilled,
     OUTLINED: f.lookOutlined,
     LINK: f.lookLink,
     BLANK: f.lookBlank
   },
-  b = {
+  v = {
     BRAND: f.colorBrand,
     BRAND_INVERTED: f.colorBrandInverted,
     RED: f.colorRed,
@@ -105,7 +105,7 @@ let v = {
 function O(e, t) {
   var n, r, i, o;
   let a = null == e ? void 0 : e.offset;
-  return t === v.LINK || t === v.BLANK ? a : null == a ? -2 : "number" == typeof a ? a + 2 : {
+  return t === b.LINK || t === b.BLANK ? a : null == a ? -2 : "number" == typeof a ? a + 2 : {
     top: (null !== (n = a.top) && void 0 !== n ? n : 0) - 2,
     right: (null !== (r = a.right) && void 0 !== r ? r : 0) - 2,
     bottom: (null !== (i = a.bottom) && void 0 !== i ? i : 0) - 2,
@@ -115,8 +115,8 @@ function O(e, t) {
 
 function I() {
   let {
-    look: e = v.FILLED,
-    color: t = b.BRAND,
+    look: e = b.FILLED,
+    color: t = v.BRAND,
     size: n = y.MEDIUM,
     fullWidth: r = !1,
     grow: i = !0,
@@ -132,8 +132,8 @@ function I() {
 
 function S(e) {
   var {
-    look: t = v.FILLED,
-    color: n = b.BRAND,
+    look: t = b.FILLED,
+    color: n = v.BRAND,
     size: o = y.MEDIUM,
     fullWidth: s = !1,
     grow: _ = !0,
@@ -156,8 +156,8 @@ function S(e) {
     buttonRef: U,
     focusProps: G,
     "aria-label": B,
-    submittingStartedLabel: V,
-    submittingFinishedLabel: F
+    submittingStartedLabel: F,
+    submittingFinishedLabel: V
   } = e, Z = g(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
   let H = h || E,
     W = H && (null != L || null != x),
@@ -165,8 +165,8 @@ function S(e) {
     K = O(G, t),
     z = i.useRef(!1);
   i.useEffect(() => {
-    !0 === E && (z.current = !0, l.u.announce(null != V ? V : d.NW.string(d.t.pfChQk))), !1 === E && !0 === z.current && l.u.announce(null != F ? F : d.NW.string(d.t.SVPara))
-  }, [E, V, F]);
+    !0 === E && (z.current = !0, l.u.announce(null != F ? F : d.NW.string(d.t.pfChQk))), !1 === E && !0 === z.current && l.u.announce(null != V ? V : d.NW.string(d.t.SVPara))
+  }, [E, F, V]);
   let q = (0, r.jsx)(c.t, m(p({}, G), {
     offset: K,
     children: (0, r.jsxs)("button", m(p({}, H ? null : Z), {
@@ -218,8 +218,8 @@ function S(e) {
 
 function T(e) {
   var {
-    look: t = v.FILLED,
-    color: n = b.BRAND,
+    look: t = b.FILLED,
+    color: n = v.BRAND,
     size: i = y.MEDIUM,
     fullWidth: o = !1,
     grow: l = !0,
@@ -250,4 +250,4 @@ function T(e) {
     })
   }))
 }
-S.Looks = v, S.Colors = b, S.Sizes = y, S.Link = T
+S.Looks = b, S.Colors = v, S.Sizes = y, S.Link = T

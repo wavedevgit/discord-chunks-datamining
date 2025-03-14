@@ -20,12 +20,12 @@ var i = n(392711),
   m = n(388032),
   g = n(910767),
   E = n(239840);
-let v = {
+let b = {
     results: {
       choices: []
     }
   },
-  b = {
+  v = {
     results: {
       choices: [],
       isLoading: !0
@@ -62,7 +62,7 @@ let T = {
   queryResults(e, t, n, r, i) {
     var o;
     let a = c.Z.getActiveOption(e.id);
-    if (null == a) return v;
+    if (null == a) return b;
     if (a.autocomplete) {
       if (i && I({
           command: c.Z.getActiveCommand(e.id),
@@ -77,7 +77,7 @@ let T = {
           }
         }), l.Z.getLastErrored(e.id)) return O;
       let o = l.Z.getAutocompleteChoices(e.id, a.name, n);
-      return null == o ? b : {
+      return null == o ? v : {
         results: {
           choices: o
         }

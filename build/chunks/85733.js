@@ -48,7 +48,7 @@ var r = n(478497),
     return "string" == typeof e || "number" == typeof e || "boolean" == typeof e || "symbol" == typeof e || "bigint" == typeof e
   },
   h = {},
-  m = function e(t, n, o, a, s, c, d, f, m, g, E, v, b, y, O, I, S, T) {
+  m = function e(t, n, o, a, s, c, d, f, m, g, E, b, v, y, O, I, S, T) {
     for (var N, A = t, C = T, R = 0, P = !1; void 0 !== (C = C.get(h)) && !P;) {
       var w = C.get(t);
       if (R += 1, void 0 !== w) {
@@ -57,8 +57,8 @@ var r = n(478497),
       }
       void 0 === C.get(h) && (R = 0)
     }
-    if ("function" == typeof g ? A = g(n, A) : A instanceof Date ? A = b(A) : "comma" === o && l(A) && (A = i.maybeMap(A, function(e) {
-        return e instanceof Date ? b(e) : e
+    if ("function" == typeof g ? A = g(n, A) : A instanceof Date ? A = v(A) : "comma" === o && l(A) && (A = i.maybeMap(A, function(e) {
+        return e instanceof Date ? v(e) : e
       })), null === A) {
       if (c) return m && !I ? m(n, _.encoder, S, "key", y) : n;
       A = ""
@@ -81,11 +81,11 @@ var r = n(478497),
       var j = N[k],
         U = "object" == typeof j && void 0 !== j.value ? j.value : A[j];
       if (!d || null !== U) {
-        var G = v && f ? j.replace(/\./g, "%2E") : j,
-          B = l(A) ? "function" == typeof o ? o(M, G) : M : M + (v ? "." + G : "[" + G + "]");
+        var G = b && f ? j.replace(/\./g, "%2E") : j,
+          B = l(A) ? "function" == typeof o ? o(M, G) : M : M + (b ? "." + G : "[" + G + "]");
         T.set(t, R);
-        var V = r();
-        V.set(h, T), u(D, e(U, B, o, a, s, c, d, f, "comma" === o && I && l(A) ? null : m, g, E, v, b, y, O, I, S, V))
+        var F = r();
+        F.set(h, T), u(D, e(U, B, o, a, s, c, d, f, "comma" === o && I && l(A) ? null : m, g, E, b, v, y, O, I, S, F))
       }
     }
     return D
@@ -142,6 +142,6 @@ e.exports = function(e, t) {
     (!a.skipNulls || null !== o[h]) && u(c, m(o[h], h, d, f, a.allowEmptyArrays, a.strictNullHandling, a.skipNulls, a.encodeDotInKeys, a.encode ? a.encoder : null, a.filter, a.sort, a.allowDots, a.serializeDate, a.format, a.formatter, a.encodeValuesOnly, a.charset, _))
   }
   var E = c.join(a.delimiter),
-    v = !0 === a.addQueryPrefix ? "?" : "";
-  return a.charsetSentinel && ("iso-8859-1" === a.charset ? v += "utf8=%26%2310003%3B&" : v += "utf8=%E2%9C%93&"), E.length > 0 ? v + E : ""
+    b = !0 === a.addQueryPrefix ? "?" : "";
+  return a.charsetSentinel && ("iso-8859-1" === a.charset ? b += "utf8=%26%2310003%3B&" : b += "utf8=%E2%9C%93&"), E.length > 0 ? b + E : ""
 }

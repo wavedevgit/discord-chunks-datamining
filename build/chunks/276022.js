@@ -23,8 +23,8 @@ function m(e) {
     user: m,
     application: g,
     guildId: E,
-    context: v,
-    onItemClick: b
+    context: b,
+    onItemClick: v
   } = e, y = null !== (t = null == g ? void 0 : g.id) && void 0 !== t ? t : null == m ? void 0 : m.id, O = f.Z.getGuild(E), I = (0, o.e7)([_.Z], () => null != O ? _.Z.can(p.Plq.MANAGE_GUILD, O) : null), S = !0, T = !0, N = (0, c.LD)(E, T), A = (0, c.PL)(S, T), {
     isUserApp: C,
     isGuildApp: R
@@ -51,16 +51,16 @@ function m(e) {
     n(360606)
   }, []);
   let P = i.useCallback(() => {
-      (null == O ? void 0 : O.id) != null && (u.Z.open(O.id, p.pNK.INTEGRATIONS), s.Z.setSection(p.b4C.APPLICATION, y), null == b || b())
-    }, [y, null == O ? void 0 : O.id, b]),
+      (null == O ? void 0 : O.id) != null && (u.Z.open(O.id, p.pNK.INTEGRATIONS), s.Z.setSection(p.b4C.APPLICATION, y), null == v || v())
+    }, [y, null == O ? void 0 : O.id, v]),
     w = i.useCallback(() => {
       l.Z.open(p.oAB.AUTHORIZED_APPS);
       let e = "";
       null != g ? e = g.name : null != m && (e = m.username), "" !== e && d.J.setState({
         searchQuery: e
-      }), null == b || b()
-    }, [g, b, m]);
-  if (v === p.IlC.POPOUT) return null;
+      }), null == v || v()
+    }, [g, v, m]);
+  if (b === p.IlC.POPOUT) return null;
   let D = [];
   return R && I && D.push((0, r.jsx)(a.sNh, {
     id: "manage-server-integration",

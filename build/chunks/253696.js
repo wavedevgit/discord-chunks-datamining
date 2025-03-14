@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v,
+  Z: () => b,
   b: () => E
 });
 var r = n(192379),
@@ -43,19 +43,19 @@ function g(e) {
 function E(e) {
   let t = r.useRef(e);
   r.useEffect(() => {
-    t.current.intention === p.Hz.REACTION && v(t.current)
+    t.current.intention === p.Hz.REACTION && b(t.current)
   }, [])
 }
 
-function v(e) {
+function b(e) {
   var t;
   let {
     intention: n,
     containerWidth: r,
     rowSize: m,
     isBurstReaction: E,
-    analyticsObject: v
-  } = e, b = l.Z.getChannel(c.Z.getChannelId()), y = null == b ? void 0 : b.getGuildId(), {
+    analyticsObject: b
+  } = e, v = l.Z.getChannel(c.Z.getChannelId()), y = null == v ? void 0 : v.getGuildId(), {
     canSplitFrecencyList: O
   } = a.Z.getCurrentConfig({
     location: "trackOnEmojiPickerOpened"
@@ -69,16 +69,16 @@ function v(e) {
     location: "trackOnEmojiPickerOpened"
   });
   let S = (O || I) && n === p.Hz.REACTION ? o.ZP.emojiReactionFrecencyWithoutFetchingLatest.frequently.slice() : o.ZP.emojiFrecencyWithoutFetchingLatest.frequently.slice(),
-    T = null != b ? o.ZP.getDisambiguatedEmojiContext(b.getGuildId()).favoriteEmojisWithoutFetchingLatest : [],
+    T = null != v ? o.ZP.getDisambiguatedEmojiContext(v.getGuildId()).favoriteEmojisWithoutFetchingLatest : [],
     N = (O || I) && n === p.Hz.REACTION ? o.ZP.emojiReactionFrecencyWithoutFetchingLatest.numFrequentlyItems : o.ZP.emojiFrecencyWithoutFetchingLatest.numFrequentlyItems,
     A = S.slice(0, N),
     C = null != y ? o.ZP.getGuildEmoji(y) : [],
-    R = Object.values(null !== (t = o.ZP.getDisambiguatedEmojiContext(null == b ? void 0 : b.getGuildId()).groupedCustomEmojis) && void 0 !== t ? t : {}).reduce((e, t) => e += t.length, 0),
+    R = Object.values(null !== (t = o.ZP.getDisambiguatedEmojiContext(null == v ? void 0 : v.getGuildId()).groupedCustomEmojis) && void 0 !== t ? t : {}).reduce((e, t) => e += t.length, 0),
     {
       topEmojis: P,
       newlyAddedEmojis: w
     } = (0, f._)({
-      guildId: null == b ? void 0 : b.getGuildId(),
+      guildId: null == v ? void 0 : v.getGuildId(),
       pickerIntention: n
     }),
     {
@@ -109,7 +109,7 @@ function v(e) {
     num_animated_expressions_newly_added: L.filter(e => e.animated).length
   }, n === p.Hz.REACTION && {
     is_burst: E
-  }, null != v && {
-    location_object: v
+  }, null != b && {
+    location_object: b
   }))
 }

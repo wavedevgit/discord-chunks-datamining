@@ -9,10 +9,10 @@ n.d(t, {
   Pe: () => R,
   WU: () => N,
   cl: () => I,
-  g9: () => v,
+  g9: () => b,
   jW: () => g,
   kG: () => T,
-  qc: () => b,
+  qc: () => v,
   zV: () => y
 }), n(301563), n(47120), n(566702);
 var r = n(392711),
@@ -132,7 +132,7 @@ function E(e) {
   return t.content && (t.content = t.content.join(" ").trim(), t.content || delete t.content), t
 }
 
-function v(e, t, n) {
+function b(e, t, n) {
   let r, i;
   let o = e.find((o, a) => t >= o.start && t <= o.end && n >= o.start && n <= o.end ? (null != e[a + 1] && (i = e[a + 1]), !0) : (r = o, !1));
   return null == o ? null : {
@@ -144,7 +144,7 @@ function v(e, t, n) {
   }
 }
 
-function b(e, t) {
+function v(e, t) {
   let n;
   let {
     currentToken: r,

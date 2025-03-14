@@ -3,15 +3,15 @@
 let r, i;
 n.r(t), n.d(t, {
   AnalyticsActionHandlers: () => E.X,
-  Impression: () => v.Impression,
-  ImpressionGroups: () => v.A,
-  ImpressionNames: () => b.z,
-  ImpressionSchema: () => b.ImpressionSchema,
-  ImpressionTypes: () => v.n,
-  NetworkActionNames: () => b.a,
-  StandardAnalyticsLocation: () => v.StandardAnalyticsLocation,
-  StandardAnalyticsSchemaNameMap: () => b.StandardAnalyticsSchemaNameMap,
-  TypedEventProperties: () => v.TypedEventProperties,
+  Impression: () => b.Impression,
+  ImpressionGroups: () => b.A,
+  ImpressionNames: () => v.z,
+  ImpressionSchema: () => v.ImpressionSchema,
+  ImpressionTypes: () => b.n,
+  NetworkActionNames: () => v.a,
+  StandardAnalyticsLocation: () => b.StandardAnalyticsLocation,
+  StandardAnalyticsSchemaNameMap: () => v.StandardAnalyticsSchemaNameMap,
+  TypedEventProperties: () => b.TypedEventProperties,
   analyticsTrackingStoreMaker: () => E.l,
   encodeProperties: () => g.Z,
   extendSuperProperties: () => K,
@@ -37,8 +37,8 @@ var f = n(903772),
   m = n(979675),
   g = n(947486),
   E = n(699407),
-  v = n(20281),
-  b = n(525769);
+  b = n(20281),
+  v = n(525769);
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -223,12 +223,12 @@ function B() {
   })
 }
 
-function V() {
+function F() {
   let e = {};
   return e.referrer = document.referrer, e.referring_domain = U(), e = O({}, e, D(window.location.href), x())
 }
 
-function F(e, t) {
+function V(e, t) {
   let n = {};
   return Object.keys(e).map(r => n["".concat(r).concat(t)] = e[r]), n
 }
@@ -237,9 +237,9 @@ function Z() {
   let e = p.K.get(T);
   null == e && (e = G(), p.K.set(T, e));
   let t = p.K.get(N);
-  null == t && (t = V(), p.K.set(N, t));
+  null == t && (t = F(), p.K.set(N, t));
   let n = h.x.get(N);
-  return null == n && (n = F(V(), "_current"), h.x.set(N, n)), O({}, e, B(), t, n)
+  return null == n && (n = V(F(), "_current"), h.x.set(N, n)), O({}, e, B(), t, n)
 }
 
 function H() {
@@ -254,7 +254,7 @@ function W() {
   let r = {},
     i = window.GLOBAL_ENV.RELEASE_CHANNEL;
   i && (null == r.release_channel || "" === r.release_channel) && (r.release_channel = i.split("-")[0]);
-  let o = parseInt((n = "378415", "378415"), 10);
+  let o = parseInt((n = "378464", "378464"), 10);
   isNaN(o) || (r.client_build_number = o);
   let a = null == R ? void 0 : null === (e = (t = R.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
   return isNaN(a) || (r.native_build_number = a), r.client_event_source = H(), r.has_client_mods = (0, f.e)(), r

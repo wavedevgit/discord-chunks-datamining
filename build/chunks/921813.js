@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(4517),
   g = n(25990),
   E = n(594174),
-  v = n(150039),
-  b = n(450734),
+  b = n(150039),
+  v = n(450734),
   y = n(225089),
   O = n(853726),
   I = n(165747),
@@ -52,8 +52,8 @@ function C(e) {
     hideBioSection: U = !1,
     hideMessageInput: G = !0,
     hideExampleButton: B = !1,
-    pendingBadges: V,
-    shouldOpenBadgeTooltip: F,
+    pendingBadges: F,
+    shouldOpenBadgeTooltip: V,
     showNameplatePreview: Z = !1
   } = e, H = (0, f.ZP)(t.id, null == n ? void 0 : n.id), {
     avatarSrc: W,
@@ -65,7 +65,7 @@ function C(e) {
     avatarOverride: E,
     size: l.EFr.SIZE_80,
     showPending: !0
-  }), K = (0, v.ZT)({
+  }), K = (0, b.ZT)({
     pendingProfileEffectId: D,
     displayProfile: H
   }), {
@@ -99,7 +99,7 @@ function C(e) {
           onUpsellClick: () => null == o ? void 0 : o({
             object: S.qAy.EDIT_PROFILE_BANNER
           })
-        }), (0, r.jsx)(b.Z, {
+        }), (0, r.jsx)(v.Z, {
           user: t,
           guild: n,
           displayProfile: H,
@@ -130,8 +130,8 @@ function C(e) {
         pendingPronouns: g,
         isTryItOutFlow: M,
         hideBioSection: U,
-        pendingBadges: V,
-        shouldOpenBadgeTooltip: F
+        pendingBadges: F,
+        shouldOpenBadgeTooltip: V
       }), (0, r.jsx)(I.Z, {
         user: t,
         hideMessageInput: G,

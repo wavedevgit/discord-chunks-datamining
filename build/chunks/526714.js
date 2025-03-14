@@ -63,14 +63,14 @@ function h(e) {
     onClose: g
   } = e, {
     onInteraction: E
-  } = i.useContext(s.p), v = i.useRef(null), b = i.useRef(null);
+  } = i.useContext(s.p), b = i.useRef(null), v = i.useRef(null);
   i.useLayoutEffect(() => {
     var e, t, n;
-    _ ? ((0, l.F)(v), null === (e = b.current) || void 0 === e || e.focus()) : null === (n = b.current) || void 0 === n || null === (t = n.blur) || void 0 === t || t.call(n)
+    _ ? ((0, l.F)(b), null === (e = v.current) || void 0 === e || e.focus()) : null === (n = v.current) || void 0 === n || null === (t = n.blur) || void 0 === t || t.call(n)
   }, [_]);
   let y = i.useCallback(() => {
       var e, t;
-      (null === (t = b.current) || void 0 === t ? void 0 : null === (e = t.activate) || void 0 === e ? void 0 : e.call(t)) && g()
+      (null === (t = v.current) || void 0 === t ? void 0 : null === (e = t.activate) || void 0 === e ? void 0 : e.call(t)) && g()
     }, [g]),
     O = o({
       onClose: g,
@@ -81,7 +81,7 @@ function h(e) {
           type: null != e ? e : s.U.DEFAULT
         })
       }, [E])
-    }, b);
+    }, v);
   return (0, r.jsxs)("div", p(f({
     onClick: y,
     className: a()(u.item, c._[t], {

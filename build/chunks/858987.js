@@ -22,7 +22,7 @@ var i = n(512722),
   g = n(311670),
   E = n(74316);
 
-function v(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,14 +31,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -93,7 +93,7 @@ function T(e) {
     disablePurchase: d,
     flashLegalTerms: f,
     isSubmitting: h,
-    premiumSubscription: v,
+    premiumSubscription: b,
     isGift: y,
     planGroup: T,
     isPrepaid: N,
@@ -113,7 +113,7 @@ function T(e) {
   } = (0, c.JL)(), G = I({
     purchaseType: M,
     plan: L,
-    premiumSubscription: v,
+    premiumSubscription: b,
     isGift: y,
     planGroup: T,
     isPrepaidPaymentSource: N,
@@ -128,7 +128,7 @@ function T(e) {
   });
   if (R) return (0, r.jsx)(a.ua7, {
     text: m.NW.string(m.t.L7jbQU),
-    children: e => (0, r.jsx)(a.zxk, O(b({}, e), {
+    children: e => (0, r.jsx)(a.zxk, O(v({}, e), {
       color: a.zxk.Colors.GREEN,
       type: "submit",
       "data-testid": "submitButton",
@@ -138,7 +138,7 @@ function T(e) {
   });
   if ((0, u.yE)(null !== (t = null == D ? void 0 : D.flags) && void 0 !== t ? t : 0, p.udG.EMBEDDED) && U === s.O.LOADING) return (0, r.jsx)(a.ua7, {
     text: m.NW.string(m.t.cjA5tr),
-    children: e => (0, r.jsx)(a.zxk, O(b({}, e), {
+    children: e => (0, r.jsx)(a.zxk, O(v({}, e), {
       color: a.zxk.Colors.GREEN,
       type: "submit",
       "data-testid": "submitButton",
@@ -160,7 +160,7 @@ function T(e) {
   });
   if (!x) return (0, r.jsx)(a.ua7, {
     text: m.NW.string(m.t.XdvBLS),
-    children: e => (0, r.jsx)(a.zxk, O(b({}, e), {
+    children: e => (0, r.jsx)(a.zxk, O(v({}, e), {
       color: a.zxk.Colors.GREEN,
       type: "submit",
       onClick: () => S(n, f),

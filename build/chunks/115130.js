@@ -62,7 +62,7 @@ function E(e) {
   f.activityUrlOverride = t
 }
 
-function v(e) {
+function b(e) {
   let {
     applicationId: t,
     timestamp: n
@@ -71,7 +71,7 @@ function v(e) {
   f.lastUsedObject[t] = n
 }
 
-function b(e) {
+function v(e) {
   let {
     applications: t
   } = e;
@@ -128,11 +128,11 @@ let S = new I(o.Z, {
   LOGOUT: m,
   DEVELOPER_ACTIVITY_SHELF_TOGGLE_USE_ACTIVITY_URL_OVERRIDE: g,
   DEVELOPER_ACTIVITY_SHELF_SET_ACTIVITY_URL_OVERRIDE: E,
-  DEVELOPER_ACTIVITY_SHELF_MARK_ACTIVITY_USED: v,
+  DEVELOPER_ACTIVITY_SHELF_MARK_ACTIVITY_USED: b,
   DEVELOPER_ACTIVITY_SHELF_FETCH_START() {
     p = "LOADING"
   },
-  DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: b,
+  DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: v,
   DEVELOPER_ACTIVITY_SHELF_FETCH_FAIL: y,
   DEVELOPER_ACTIVITY_SHELF_UPDATE_FILTER: O,
   USER_SETTINGS_PROTO_UPDATE() {}

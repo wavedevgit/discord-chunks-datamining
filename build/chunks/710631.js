@@ -19,9 +19,9 @@ var r = n(200651),
   m = n(771845),
   g = n(594174),
   E = n(981631),
-  v = n(388032);
+  b = n(388032);
 
-function b(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -37,7 +37,7 @@ function y(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -81,12 +81,12 @@ function C(e) {
       let r = _.Z.getGuild(e);
       null != r && (0, u.b)(p.Z, r) && r.id !== n && t.push(r)
     }), t
-  }, [n]), [b, O] = i.useState({});
+  }, [n]), [v, O] = i.useState({});
 
   function N(e, t) {
     let n = f.ZP.getDefaultChannel(e.id, !0, E.Plq.CREATE_INSTANT_INVITE);
     if (null != n) {
-      if (O(I(y({}, b), {
+      if (O(I(y({}, v), {
           [e.id]: !0
         })), !p.Z.can(E.Plq.CREATE_INSTANT_INVITE, e) && null != e.vanityURLCode) {
         A(t, e.vanityURLCode);
@@ -100,11 +100,11 @@ function C(e) {
   }
   return (null == c ? void 0 : c.id) === t.id || t.bot || 0 === d.length || h.Z.isBlockedOrIgnored(t.id) ? null : (0, r.jsx)(a.sNh, {
     id: "invite-to-server",
-    label: v.NW.string(v.t.Sd8Ix8),
-    children: d.map(e => b[e.id] ? (0, r.jsx)(a.sNh, {
+    label: b.NW.string(b.t.Sd8Ix8),
+    children: d.map(e => v[e.id] ? (0, r.jsx)(a.sNh, {
       id: e.id,
       disabled: !0,
-      label: v.NW.string(v.t.PuLLzM)
+      label: b.NW.string(b.t.PuLLzM)
     }, e.id) : (0, r.jsx)(a.sNh, {
       id: e.id,
       label: e.name,

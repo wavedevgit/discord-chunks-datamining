@@ -19,15 +19,15 @@ var r = n(200651),
   m = n(22206);
 let g = "***@***.***",
   E = "****",
-  v = "***",
-  b = new d.dm({
+  b = "***",
+  v = new d.dm({
     id: "new_payment_source_id",
     brand: u.ZP.Types.UNKNOWN,
     type: _.HeQ.CARD
   });
 
 function y(e, t) {
-  if (e instanceof d.dm) return e.id === b.id ? {
+  if (e instanceof d.dm) return e.id === v.id ? {
     brand: null,
     label: h.NW.string(h.t.eQ2bLi)
   } : {
@@ -70,7 +70,7 @@ function y(e, t) {
   };
   else if (e instanceof d.Xc) return {
     brand: u.ZP.Types.VENMO,
-    label: t ? v : "@" + e.username
+    label: t ? b : "@" + e.username
   };
   else if (e instanceof d.Om) return {
     brand: u.ZP.Types.KAKAOPAY,
@@ -98,7 +98,7 @@ function y(e, t) {
   };
   else if (e instanceof d.u_) return {
     brand: u.ZP.Types.CASH_APP,
-    label: t ? v : e.username
+    label: t ? b : e.username
   };
   throw Error("Invalid Payment Source")
 }
@@ -121,15 +121,15 @@ function I(e) {
     isTrial: p = !1,
     disabled: g = !1,
     className: E,
-    optionClassName: v,
+    optionClassName: b,
     dropdownLoading: I
   } = e, S = 0 === n.length, T = e => {
-    if (e === b.id) null != _ && _();
+    if (e === v.id) null != _ && _();
     else {
       let t = n.find(t => t.id === e);
       null != f && f(t)
     }
-  }, N = [...null != o ? [o] : [], ...n, b].map((e, t) => {
+  }, N = [...null != o ? [o] : [], ...n, v].map((e, t) => {
     if (e instanceof d.ZP) {
       let {
         brand: t,
@@ -173,7 +173,7 @@ function I(e) {
       className: a()({
         [m.paymentSourceHasWarning]: null != A
       }, E),
-      optionClassName: v,
+      optionClassName: b,
       placeholder: h.NW.string(h.t["8lqkf3"]),
       renderOptionValue: e => {
         let [t] = e;

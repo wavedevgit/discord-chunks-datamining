@@ -88,8 +88,8 @@ function U(e) {
     null != K && (0, u.PR)(K)
   }, [K]);
   let {
-    noticeType: Q,
-    title: X,
+    noticeType: X,
+    title: Q,
     location: J,
     locationIcon: $,
     canListenIn: ee,
@@ -294,7 +294,7 @@ function U(e) {
     isStageNoticeHidden: W,
     isStudyRoomNotice: n
   }), [U, G, l, z, Y, q, H, F, V, W, n]);
-  return null == Q ? null : (0, r.jsxs)("div", {
+  return null == X ? null : (0, r.jsxs)("div", {
     className: D.container,
     children: [null != ei ? (0, r.jsx)(c.P3F, {
       onClick: ei,
@@ -339,7 +339,7 @@ function U(e) {
       variant: "text-md/medium",
       color: "header-primary",
       className: o()(D.title, D.live),
-      children: X
+      children: Q
     }), (0, r.jsxs)("div", {
       className: D.locationContainer,
       children: [$, (0, r.jsx)(c.Text, {
@@ -348,7 +348,7 @@ function U(e) {
         className: D.location,
         children: J
       })]
-    }), ee || 1 === Q ? (0, r.jsx)(c.zxk, {
+    }), ee || 1 === X ? (0, r.jsx)(c.zxk, {
       size: c.zxk.Sizes.SMALL,
       color: c.zxk.Colors.GREEN,
       onClick: () => {

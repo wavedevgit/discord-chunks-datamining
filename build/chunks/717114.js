@@ -40,7 +40,7 @@ function m(e) {
 let g = () => {
   let [e, t] = (0, o.Wu)([c.ZP], () => [c.ZP.canShowAdminWarning, c.ZP.getVisibleGame()], []), n = (0, o.e7)([d.Z], () => d.Z.isConnected(), []), h = (0, o.e7)([u.Z], () => u.Z.getMode() === _.pM4.PUSH_TO_TALK, []), g = null != t && t.elevated && n && h && e, E = i.useRef(null);
 
-  function v() {
+  function b() {
     null !== E.current && ((0, a.Mr3)(E.current), E.current = null)
   }
   return i.useEffect(() => (g ? E.current = (0, a.h7j)(e => (0, r.jsx)(l.default, m({
@@ -52,7 +52,7 @@ let g = () => {
     onConfirmSecondary: () => s.Z.clearPTTAdminWarning(),
     onConfirm: () => window.open(f.Z.getArticleURL(_.BhN.PUSH_TO_TALK_ADMINISTRATOR_MODE), "_blank"),
     confirmText: p.NW.string(p.t.psXQHB)
-  }, e))) : v(), () => {
-    v()
+  }, e))) : b(), () => {
+    b()
   }), [t, g]), null
 }

@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(906732),
   g = n(218867),
   E = n(806966),
-  v = n(28546),
-  b = n(691251),
+  b = n(28546),
+  v = n(691251),
   y = n(98528),
   O = n(551058),
   I = n(536442),
@@ -41,8 +41,8 @@ var r = n(200651),
   U = n(883661),
   G = n(880949),
   B = n(784222),
-  V = n(172800),
-  F = n(149203),
+  F = n(172800),
+  V = n(149203),
   Z = n(981631),
   H = n(957825),
   W = n(474936),
@@ -103,7 +103,7 @@ let z = 0,
         tab: H.X1.EMOJI,
         collapsed: !i,
         guild_id: n.id
-      }), e === F.UX.SOUNDMOJI && L.default.track(Z.rMx.SOUNDMOJI_EMOJI_PICKER_SECTION_TOGGLED, {
+      }), e === V.UX.SOUNDMOJI && L.default.track(Z.rMx.SOUNDMOJI_EMOJI_PICKER_SECTION_TOGGLED, {
         collapsed: !i
       }), g(r)
     }, [er, t, g]), ed = i.useCallback(e => {
@@ -112,7 +112,7 @@ let z = 0,
         visibleRowIndex: n
       } = e, r = e.type === B.ld.SOUNDMOJI ? null : e.type === B.ld.EMOJI ? e.emoji.allNamesString : e.name;
       ea.current !== Z.xAR && window.cancelAnimationFrame(ea.current), ea.current = window.requestAnimationFrame(() => {
-        E.kJ.setInspectedExpressionPosition(t, n, b.u.MOUSE_EVENT), E.kJ.setSearchPlaceholder(r), ea.current = Z.xAR
+        E.kJ.setInspectedExpressionPosition(t, n, v.u.MOUSE_EVENT), E.kJ.setSearchPlaceholder(r), ea.current = Z.xAR
       })
     }, []), ef = (0, u.e7)([I.qc], () => I.qc.hasHotspot(I.v6.FAVORITE_EMOJI_TOOLTIP), []), e_ = i.useMemo(() => l().memoize((e, t) => {
       let n = o[e],
@@ -123,7 +123,7 @@ let z = 0,
             animate: !0
           })
         };
-      return (0, r.jsx)(V.Z, {
+      return (0, r.jsx)(F.Z, {
         emojiDescriptors: n,
         emojiSize: s,
         surrogateCodePoint: es,
@@ -160,8 +160,8 @@ let z = 0,
           type: s,
           sectionId: l
         } = n;
-        if (s === F.En.SEARCH_RESULTS) return;
-        let c = s === F.En.GUILD ? null != i ? (0, r.jsx)(G.Z, {
+        if (s === V.En.SEARCH_RESULTS) return;
+        let c = s === V.En.GUILD ? null != i ? (0, r.jsx)(G.Z, {
             guild: i,
             height: en,
             width: en
@@ -177,10 +177,10 @@ let z = 0,
           f = n.isNitroLocked,
           p = f && !d,
           h = f && d,
-          g = s === F.En.SOUNDMOJI ? (0, r.jsx)(_.P3F, {
+          g = s === V.En.SOUNDMOJI ? (0, r.jsx)(_.P3F, {
             className: K.soundmojiViewMore,
             onClick: () => {
-              (0, v.hr)(H.X1.SOUNDBOARD), L.default.track(Z.rMx.SOUNDMOJI_EMOJI_PICKER_VIEW_ALL_CLICK)
+              (0, b.hr)(H.X1.SOUNDBOARD), L.default.track(Z.rMx.SOUNDMOJI_EMOJI_PICKER_VIEW_ALL_CLICK)
             },
             children: Y.NW.string(Y.t.rUEjBQ)
           }) : void 0;
@@ -219,7 +219,7 @@ let z = 0,
         className: K.nitroBottomDivider
       }) : null, [W, ec, el, eh]),
       eE = i.useCallback(e => ec(e) ? ei : el(e) ? eo : 0, [ec, el]),
-      ev = i.useCallback(e => {
+      eb = i.useCallback(e => {
         var n;
         return e === m.length - 1 || t.has(null === (n = m[e]) || void 0 === n ? void 0 : n.sectionId) || ec(e) || el(e) ? 0 : et
       }, [t, m, ec, el]);
@@ -229,8 +229,8 @@ let z = 0,
       renderSection: em,
       renderSectionHeader: ep,
       renderSectionFooter: eg,
-      sectionMarginBottom: ev,
-      sectionHeaderHeight: i.useCallback(e => m[e].type === F.En.SEARCH_RESULTS ? 0 : ee, [m]),
+      sectionMarginBottom: eb,
+      sectionHeaderHeight: i.useCallback(e => m[e].type === V.En.SEARCH_RESULTS ? 0 : ee, [m]),
       sectionFooterHeight: eE
     }
   },
@@ -245,7 +245,7 @@ let z = 0,
       setUpsellConfigs: d,
       sectionDescriptors: f,
       rowCountBySection: _,
-      collapsedSections: b,
+      collapsedSections: v,
       setCollapsedSections: O,
       getEmojiItemProps: I,
       getEmojiRowProps: S,
@@ -254,9 +254,9 @@ let z = 0,
       channelGuildId: j,
       channelId: U,
       messageId: G,
-      isBurstReaction: V,
-      listHeaderClassName: F
-    } = e, H = i.useRef(!1), q = E.kJ.useStore(e => e.activeCategoryIndex), Q = (0, v.Iu)(e => e.searchQuery), X = w.Yk.useSetting(), J = (0, u.e7)([D.default], () => D.default.getCurrentUser()), $ = (0, x.I5)(J), {
+      isBurstReaction: F,
+      listHeaderClassName: V
+    } = e, H = i.useRef(!1), q = E.kJ.useStore(e => e.activeCategoryIndex), Q = (0, b.Iu)(e => e.searchQuery), X = w.Yk.useSetting(), J = (0, u.e7)([D.default], () => D.default.getCurrentUser()), $ = (0, x.I5)(J), {
       location: ee
     } = (0, h.O)(), {
       analyticsLocations: et
@@ -271,13 +271,13 @@ let z = 0,
       listPadding: em,
       renderRow: eg,
       renderSection: eE,
-      renderSectionHeader: ev,
-      renderSectionFooter: eb,
+      renderSectionHeader: eb,
+      renderSectionFooter: ev,
       sectionMarginBottom: ey,
       sectionHeaderHeight: eO,
       sectionFooterHeight: eI
     } = es({
-      collapsedSections: b,
+      collapsedSections: v,
       diversitySurrogate: t,
       emojiGrid: n,
       emojiSize: a,
@@ -294,8 +294,8 @@ let z = 0,
       channelGuildId: j,
       channelId: U,
       messageId: G,
-      isBurstReaction: V,
-      listHeaderClassName: F,
+      isBurstReaction: F,
+      listHeaderClassName: V,
       activeSectionIndex: en,
       upsellGlowOpacity: el,
       emojiListRef: o
@@ -367,8 +367,8 @@ let z = 0,
         onScroll: eA,
         renderRow: eg,
         renderSection: eE,
-        renderSectionHeader: ev,
-        renderSectionFooter: eb,
+        renderSectionHeader: eb,
+        renderSectionFooter: ev,
         rowCount: R,
         rowCountBySection: _,
         rowHeight: ea(a),

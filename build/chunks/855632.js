@@ -71,18 +71,18 @@ function t(e) {
       end: "$",
       relevance: 5
     },
-    v = {
+    b = {
       className: "keyword",
       begin: "@[a-zA-Z_][a-zA-Z_\\d]*"
     },
-    b = e.COMMENT("\\/\\+", "\\+\\/", {
+    v = e.COMMENT("\\/\\+", "\\+\\/", {
       contains: ["self"],
       relevance: 10
     });
   return {
     name: "D",
     keywords: t,
-    contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, b, h, f, _, p, m, u, c, d, g, E, v]
+    contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, v, h, f, _, p, m, u, c, d, g, E, b]
   }
 }
 e.exports = t

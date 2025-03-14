@@ -19,11 +19,11 @@ let u = /(?:^|\.)(?:discordapp|discord|discordmerch)\.com$/i,
   m = "(?::\\d{2,5})?",
   g = '(?:[/?#][^\\s"]*)?',
   E = RegExp("(?:".concat(d, "|www\\.)").concat(f, "(?:localhost|").concat(_, "|").concat(p).concat(h, ")").concat(m).concat(g), "ig"),
-  v = new Set([window.GLOBAL_ENV.CDN_HOST, window.GLOBAL_ENV.INVITE_HOST, window.GLOBAL_ENV.GIFT_CODE_HOST, window.GLOBAL_ENV.GUILD_TEMPLATE_HOST]),
-  b = !1;
+  b = new Set([window.GLOBAL_ENV.CDN_HOST, window.GLOBAL_ENV.INVITE_HOST, window.GLOBAL_ENV.GIFT_CODE_HOST, window.GLOBAL_ENV.GUILD_TEMPLATE_HOST]),
+  v = !1;
 
 function y(e) {
-  return v.has(e.toLowerCase())
+  return b.has(e.toLowerCase())
 }
 
 function O(e) {
@@ -88,7 +88,7 @@ let N = {
     }
   },
   makeUrl: function(e) {
-    let t = b ? window.GLOBAL_ENV.INVITE_HOST : location.host;
+    let t = v ? window.GLOBAL_ENV.INVITE_HOST : location.host;
     return "".concat(location.protocol, "//").concat(t).concat(e)
   }
 }

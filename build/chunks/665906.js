@@ -9,10 +9,10 @@ n.d(t, {
   NE: () => E,
   RG: () => D,
   Xb: () => M,
-  Xu: () => b,
+  Xu: () => v,
   Y: () => j,
   cD: () => y,
-  ki: () => v,
+  ki: () => b,
   kn: () => P,
   tM: () => g,
   tc: () => R,
@@ -55,19 +55,19 @@ function E(e, t) {
   }, [e]), e, t)
 }
 
-function v(e, t) {
+function b(e, t) {
   let n = e.isForumLikeChannel() ? m.Plq.SEND_MESSAGES : o.$e(m.Plq.CREATE_PUBLIC_THREADS, m.Plq.READ_MESSAGE_HISTORY);
   return O(_.Z.can(n, e), e, t)
 }
 
-function b(e) {
+function v(e) {
   let t = (0, a.e7)([_.Z], () => _.Z.can(o.$e(m.Plq.CREATE_PRIVATE_THREADS), e), [e]);
   return e.type === m.d4z.GUILD_TEXT && O(t, e)
 }
 
 function y(e) {
   let t = E(e),
-    n = b(e);
+    n = v(e);
   return t || n
 }
 

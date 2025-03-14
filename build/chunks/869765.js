@@ -92,29 +92,29 @@ class E {
     _(this, "_channelCaches", new Map)
   }
 }
-let v = new E;
+let b = new E;
 
-function b(e) {
+function v(e) {
   let t = !1;
-  if (v.updateExistingMessageIfCached(e) && (t = !0), f.OBS.has(e.type)) {
+  if (b.updateExistingMessageIfCached(e) && (t = !0), f.OBS.has(e.type)) {
     let n = e.message_reference;
     if (null == n) return t;
     let r = n.message_id;
     if (null == r) return t;
     if ("referenced_message" in e) {
       let t = e.referenced_message;
-      null != t ? (v.set(t.channel_id, t.id, {
+      null != t ? (b.set(t.channel_id, t.id, {
         state: 0,
         message: (0, c.e5)(t)
-      }), e.type === f.uaV.THREAD_STARTER_MESSAGE && b(t)) : v.set(e.channel_id, r, {
+      }), e.type === f.uaV.THREAD_STARTER_MESSAGE && v(t)) : b.set(e.channel_id, r, {
         state: 2
       })
     } else {
       let e = d.Z.getMessage(n.channel_id, r);
-      null != e ? v.set(n.channel_id, r, {
+      null != e ? b.set(n.channel_id, r, {
         state: 0,
         message: e
-      }) : v.set(n.channel_id, r, h)
+      }) : b.set(n.channel_id, r, h)
     }
     t = !0
   }
@@ -131,28 +131,28 @@ function O(e) {
   let {
     messages: t
   } = e;
-  return y(t, e => b(e))
+  return y(t, e => v(e))
 }
 
 function I(e) {
   let {
     messages: t
   } = e;
-  return y(Object.values(t), e => y(Object.values(e), e => b(e)))
+  return y(Object.values(t), e => y(Object.values(e), e => v(e)))
 }
 
 function S(e) {
   let {
     messages: t
   } = e;
-  return y(t, e => y(e, e => b(e)))
+  return y(t, e => y(e, e => v(e)))
 }
 
 function T(e) {
   let {
     message: t
   } = e;
-  return !!d.Z.getMessages(t.channel_id).ready && b(t)
+  return !!d.Z.getMessages(t.channel_id).ready && v(t)
 }
 
 function N(e) {
@@ -160,10 +160,10 @@ function N(e) {
     messageId: t,
     channelId: n
   } = e;
-  if (!v.has(n, t)) return !1;
-  let r = v.get(n, t);
+  if (!b.has(n, t)) return !1;
+  let r = b.get(n, t);
   if (null == r || 0 !== r.state) return !1;
-  v.set(n, t, {
+  b.set(n, t, {
     state: 0,
     message: (0, l.Cm)(r.message)
   })
@@ -173,26 +173,26 @@ function A(e) {
   let {
     message: t
   } = e, n = t.id, r = t.channel_id;
-  if (!v.has(r, n)) return !1;
-  let i = v.get(r, n);
+  if (!b.has(r, n)) return !1;
+  let i = b.get(r, n);
   if (null == i || 0 !== i.state) return !1;
-  v.set(r, n, {
+  b.set(r, n, {
     state: 0,
     message: (0, c.wi)(i.message, t)
   })
 }
 
 function C(e) {
-  return v.deleteChannelCache(e.channel.id)
+  return b.deleteChannelCache(e.channel.id)
 }
 
 function R() {
-  if (0 === v.retainWhere(e => null != u.Z.getChannel(e))) return !1
+  if (0 === b.retainWhere(e => null != u.Z.getChannel(e))) return !1
 }
 
 function P(e, t) {
-  if (!v.has(e, t)) return !1;
-  v.set(e, t, {
+  if (!b.has(e, t)) return !1;
+  b.set(e, t, {
     state: 2
   })
 }
@@ -217,21 +217,21 @@ function L(e) {
   let {
     message: t
   } = e;
-  v.set(t.channel_id, t.id, {
+  b.set(t.channel_id, t.id, {
     state: 0,
     message: t
   })
 }
 
 function x() {
-  v.clear()
+  b.clear()
 }
 
 function M(e) {
   let {
     firstMessages: t
   } = e;
-  return null != t && y(t, e => b(e))
+  return null != t && y(t, e => v(e))
 }
 
 function k(e) {
@@ -242,7 +242,7 @@ function k(e) {
     let {
       first_message: t
     } = e;
-    return null != t && b(t)
+    return null != t && v(t)
   })
 }
 class j extends(r = a.ZP.Store) {
@@ -251,15 +251,15 @@ class j extends(r = a.ZP.Store) {
   }
   getMessageByReference(e) {
     let t;
-    return null != e && (t = v.get(e.channel_id, e.message_id)), null != t ? t : h
+    return null != e && (t = b.get(e.channel_id, e.message_id)), null != t ? t : h
   }
   getMessage(e, t) {
     var n;
-    return null !== (n = v.get(e, t)) && void 0 !== n ? n : h
+    return null !== (n = b.get(e, t)) && void 0 !== n ? n : h
   }
   getReplyIdsForChannel(e) {
     let t;
-    return null != e && (t = v.getCachedMessageIdsForChannel(e)), null != t ? t : m
+    return null != e && (t = b.getCachedMessageIdsForChannel(e)), null != t ? t : m
   }
 }
 _(j, "displayName", "ReferencedMessageStore");

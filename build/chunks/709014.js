@@ -45,8 +45,8 @@ function m(e, t) {
     size: m = "md",
     width: g,
     height: E,
-    className: v,
-    initialAnimation: b,
+    className: b,
+    initialAnimation: v,
     markers: y
   } = e, [O, I] = i.useState(null), S = i.useRef(null), T = i.useRef(null), N = i.useRef(null), A = "custom" === m ? {
     width: g,
@@ -55,7 +55,7 @@ function m(e, t) {
     enabled: P
   } = d.Z.useExperiment({
     location: "LottieIcon web entry point"
-  }), w = R || !P, D = i.useRef(b);
+  }), w = R || !P, D = i.useRef(v);
   return i.useImperativeHandle(t, () => ({
     play: e => {
       if (null != N.current) {
@@ -100,7 +100,7 @@ function m(e, t) {
       "--__lottieIconColor": null != o && "string" == typeof o ? o : null == o ? void 0 : o.css,
       display: "flex"
     }, A),
-    className: a()(_.lottieIcon, s ? void 0 : _.lottieIconColors, v),
+    className: a()(_.lottieIcon, s ? void 0 : _.lottieIconColors, b),
     ref: S
   })
 }

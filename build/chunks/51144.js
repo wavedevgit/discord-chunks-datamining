@@ -72,15 +72,15 @@ function E(e) {
   return n && o.toLocaleLowerCase() === (null === (t = e.username) || void 0 === t ? void 0 : t.toLocaleLowerCase()) && "0" === e.discriminator && (o = f(o)), o
 }
 
-function v(e) {
+function b(e) {
   if (null != e) return h(e.globalName) ? e.globalName : h(e.global_name) ? e.global_name : void 0
 }
 
-function b(e) {
+function v(e) {
   var t;
   let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
   if (null == e) return d;
-  let r = v(e),
+  let r = b(e),
     i = n ? N(e) : null !== (t = e.username) && void 0 !== t ? t : d;
   return r === i ? r : null != r ? "".concat(r, " (").concat(i, ")") : i
 }
@@ -160,8 +160,8 @@ let C = {
   useUserTag: function(e, t) {
     return T(e, c({}, p, t), (0, r.e7)([i.Z], () => i.Z.hidePersonalInformation))
   },
-  getFormattedName: b,
-  getGlobalName: v,
+  getFormattedName: v,
+  getGlobalName: b,
   humanizeStatus: y,
   useDirectMessageRecipient: A
 }

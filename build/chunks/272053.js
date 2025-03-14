@@ -26,8 +26,8 @@ function m(e, t, n) {
 }
 let g = "33kozedd0zs6fbauka98psnc7zwom2s",
   E = +f.Z.Millis.MINUTE,
-  v = e => "https://youtube.com/watch?v=".concat(e),
-  b = 5 * f.Z.Millis.MINUTE,
+  b = e => "https://youtube.com/watch?v=".concat(e),
+  v = 5 * f.Z.Millis.MINUTE,
   y = "https://api.twitch.tv/helix",
   O = /live_user_(.*)-\{width\}/,
   I = 128,
@@ -145,7 +145,7 @@ class D {
         large_image: null !== (n = (0, d.f)(h.ABu.YOUTUBE, a.high.url)) && void 0 !== n ? n : void 0
       }, c = null != o && "" !== o ? o.slice(0, I) : void 0;
       return N = {
-        url: v(i),
+        url: b(i),
         name: u.Z.get(h.ABu.YOUTUBE).name,
         details: c,
         assets: l
@@ -162,7 +162,7 @@ class D {
     null != this._nextCheck && clearTimeout(this._nextCheck);
     let t = [h.ABu.TWITCH],
       n = Date.now();
-    T <= n && (t.push(h.ABu.YOUTUBE), T = n + b), Promise.allSettled(e.filter(e => t.includes(e.type)).map(e => e.type === h.ABu.TWITCH ? this._checkTwitch(e) : this._checkYouTube(e))).then(e => {
+    T <= n && (t.push(h.ABu.YOUTUBE), T = n + v), Promise.allSettled(e.filter(e => t.includes(e.type)).map(e => e.type === h.ABu.TWITCH ? this._checkTwitch(e) : this._checkYouTube(e))).then(e => {
       if (this._started) {
         var t;
         let n = null === (t = e.find(e => "fulfilled" === e.status && null != e.value)) || void 0 === t ? void 0 : t.value;

@@ -29,7 +29,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function v(e) {
   }
   return e
 }
-let b = !1;
+let v = !1;
 class y extends f.Z {
   _initialize() {
     super._initialize(), l.Z.addChangeListener(this.handlePopoutWindowUpdate)
@@ -54,7 +54,7 @@ class y extends f.Z {
       code: t,
       message: n
     } = e;
-    (0, o.ZDy)(async () => e => (0, r.jsx)(s.default, v({
+    (0, o.ZDy)(async () => e => (0, r.jsx)(s.default, b({
       title: g.NW.formatToPlainString(g.t.hbiAOz, {
         code: t
       }),
@@ -62,7 +62,7 @@ class y extends f.Z {
     }, e)))
   }
   showLaunchErrorModal(e) {
-    (0, o.ZDy)(async () => t => (0, r.jsx)(s.default, v({
+    (0, o.ZDy)(async () => t => (0, r.jsx)(s.default, b({
       title: g.NW.string(g.t.PtobXV),
       body: e
     }, t)))
@@ -105,7 +105,7 @@ class y extends f.Z {
         application: n
       })
     }), E(this, "handlePopoutWindowUpdate", () => {
-      let e = b,
+      let e = v,
         t = l.Z.getWindowOpen(m.KJ3.ACTIVITY_POPOUT);
       if (e && !t) {
         let e = _.ZP.getCurrentEmbeddedActivity();
@@ -114,7 +114,7 @@ class y extends f.Z {
           applicationId: e.applicationId
         })
       }
-      b = t
+      v = t
     })
   }
 }

@@ -62,8 +62,8 @@ let h = 24,
       foreground: m,
       background: g,
       icon: E,
-      iconSize: v = h,
-      onClick: b,
+      iconSize: b = h,
+      onClick: v,
       onContextMenu: y,
       tooltip: O = null,
       tooltipColor: I,
@@ -79,8 +79,8 @@ let h = 24,
     } = e, L = (0, f.Q3)("BaseHeaderBar"), x = (0, r.jsx)(E, {
       x: 0,
       y: 0,
-      width: v,
-      height: v,
+      width: b,
+      height: b,
       size: "custom",
       className: a()(n, p.icon),
       colorClass: null != m ? m : void 0,
@@ -100,15 +100,15 @@ let h = 24,
           onFocus: O,
           onBlur: I
         } = e;
-        return null == b ? (0, r.jsx)("div", {
+        return null == v ? (0, r.jsx)("div", {
           className: a()(t, p.iconWrapper, {
             [p.iconDisabled]: s
           }),
           children: (0, r.jsx)(E, {
             x: 0,
             y: 0,
-            width: v,
-            height: v,
+            width: b,
+            height: b,
             size: "custom",
             className: a()(n, p.icon),
             colorClass: null != m ? m : void 0,
@@ -122,7 +122,7 @@ let h = 24,
           })
         }) : (0, r.jsxs)(c.P3F, {
           tag: "div",
-          onClick: s ? void 0 : b,
+          onClick: s ? void 0 : v,
           onContextMenu: s ? void 0 : y,
           onMouseEnter: f,
           onMouseLeave: h,
@@ -130,7 +130,7 @@ let h = 24,
           onBlur: I,
           className: a()(t, {
             [p.iconWrapper]: !0,
-            [p.clickable]: !s && null != b,
+            [p.clickable]: !s && null != v,
             [p.selected]: o,
             [p.iconDisabled]: s
           }),
@@ -140,11 +140,11 @@ let h = 24,
           "aria-checked": P,
           "aria-haspopup": D,
           "aria-expanded": w,
-          tabIndex: s || null == b ? -1 : 0,
+          tabIndex: s || null == v ? -1 : 0,
           children: [l ? (0, r.jsx)(d.ZP, {
             mask: "top" === u ? d.ZP.Masks.HEADER_BAR_BADGE_TOP : d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
-            height: L ? v : void 0,
-            width: L ? v : void 0,
+            height: L ? b : void 0,
+            width: L ? b : void 0,
             children: x
           }) : x, l ? (0, r.jsx)("span", {
             className: a()(p.iconBadge, "top" === u ? p.iconBadgeTop : p.iconBadgeBottom)
@@ -164,7 +164,7 @@ let h = 24,
     })
   };
 
-function v(e) {
+function b(e) {
   let {
     direction: t = "right"
   } = e;
@@ -178,7 +178,7 @@ function v(e) {
     className: p.caret
   })
 }
-let b = e => {
+let v = e => {
   let {
     className: t,
     innerClassName: n,
@@ -190,20 +190,20 @@ let b = e => {
     "aria-labelledby": m,
     role: g,
     scrollable: E,
-    transparent: v = !1
-  } = e, b = i.useRef(null), y = i.useContext(u.Z);
+    transparent: b = !1
+  } = e, v = i.useRef(null), y = i.useContext(u.Z);
   return (0, r.jsx)("section", {
     className: a()(t, p.container, {
-      [p.themed]: !v,
-      [p.transparent]: v,
+      [p.themed]: !b,
+      [p.transparent]: b,
       [p.themedMobile]: l.tq
     }),
     "aria-label": h,
     "aria-labelledby": m,
     role: g,
-    ref: b,
+    ref: v,
     children: (0, r.jsxs)(c.JcV, {
-      containerRef: b,
+      containerRef: v,
       children: [(0, r.jsxs)("div", {
         className: p.upperContainer,
         children: [(0, r.jsxs)("div", {
@@ -223,5 +223,5 @@ let b = e => {
     })
   })
 };
-b.Icon = g, b.Title = m, b.Divider = E, b.Caret = v;
-let y = b
+v.Icon = g, v.Title = m, v.Divider = E, v.Caret = b;
+let y = v

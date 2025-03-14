@@ -3,7 +3,7 @@
 n.d(t, {
   Ft: () => g,
   ML: () => y,
-  ZJ: () => b,
+  ZJ: () => v,
   mF: () => m
 }), n(47120);
 var r = n(512722),
@@ -60,22 +60,22 @@ function g(e, t, n) {
   if (!N && R && (null == e.integration_types || e.integration_types.includes(o.Y.GUILD_INSTALL))) return 5;
   if (l instanceof c.Sf) {
     i()(void 0 !== C, "missing applicationAllowedForChannel");
-    let t = b(e.permissions, l, L);
-    if (v(t) || !E(t) && v(C)) return 6
+    let t = v(e.permissions, l, L);
+    if (b(t) || !E(t) && b(C)) return 6
   }
   let x = y(e.permissions, L, I, S, T);
-  return E(x) ? 0 : v(x) ? 7 : v(A) || null != e.defaultMemberPermissions && !(!a.fS(e.defaultMemberPermissions, f.BO) && a.e$(O, e.defaultMemberPermissions)) ? 7 : 0
+  return E(x) ? 0 : b(x) ? 7 : b(A) || null != e.defaultMemberPermissions && !(!a.fS(e.defaultMemberPermissions, f.BO) && a.e$(O, e.defaultMemberPermissions)) ? 7 : 0
 }
 
 function E(e) {
   return !0 === e
 }
 
-function v(e) {
+function b(e) {
   return !1 === e
 }
 
-function b(e, t, n) {
+function v(e, t, n) {
   if (null == e) return null;
   let r = t.id;
   if (t.isThread()) {

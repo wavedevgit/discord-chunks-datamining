@@ -112,7 +112,7 @@ function E(e) {
   }
 }
 
-function v(e) {
+function b(e) {
   if (null == e) return !1;
   let t = f[e];
   if (null == t) return !1;
@@ -126,18 +126,18 @@ function v(e) {
   }, delete f[e]
 }
 
-function b(e) {
+function v(e) {
   let {
     channelId: t
   } = e;
-  v(t)
+  b(t)
 }
 
 function y(e) {
   let {
     channelId: t
   } = e;
-  v(t)
+  b(t)
 }
 
 function O() {
@@ -163,6 +163,6 @@ let S = new I(o.Z, {
   CONNECTION_OPEN: O,
   LOGOUT: O,
   MESSAGE_DELETE: E,
-  CHANNEL_SELECT: b,
+  CHANNEL_SELECT: v,
   LOAD_MESSAGES_SUCCESS: y
 })

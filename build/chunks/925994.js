@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   sg: () => y,
-  sk: () => v
+  sk: () => b
 }), n(47120), n(653041), n(757143), n(301563);
 var r = n(512722),
   i = n.n(r),
@@ -56,13 +56,13 @@ function E(e, t) {
   }), e
 }
 
-function v(e, t) {
+function b(e, t) {
   let {
     mode: n,
     ignoreTrailingEmptyNodes: r,
     preventEmojiSurrogates: i
   } = null != t ? t : {}, [o, a] = (null == t ? void 0 : t.range) != null ? p.M8.edges(t.range) : [void 0, void 0];
-  return b(e, {
+  return v(e, {
     mode: n,
     start: o,
     end: a,
@@ -71,7 +71,7 @@ function v(e, t) {
   })
 }
 
-function b(e, t) {
+function v(e, t) {
   var n, r;
   let {
     mode: i,
@@ -136,11 +136,11 @@ function y(e, t) {
   switch (e.type) {
     case "line":
     case "testInline":
-      return b(e.children, t);
+      return v(e.children, t);
     case "testInlineVoid":
       return "";
     case "blockQuote": {
-      let n = b(e.children, t),
+      let n = v(e.children, t),
         o = null != r && 1 === r.path.length && 0 === r.path[0] && 0 === r.offset;
       if (i && (null == r || o)) return "> ".concat(n);
       return n
@@ -199,12 +199,12 @@ function y(e, t) {
     case "timestamp":
       return (0, a.He)(e.parsed.timestamp, e.parsed.format);
     case "applicationCommand":
-      return b(e.children, E(m({}, t), {
+      return v(e.children, E(m({}, t), {
         separator: " ",
         ignoreEmptyNodes: !0
       }));
     case "applicationCommandOption": {
-      let n = b(e.children, t);
+      let n = v(e.children, t);
       if (null == r) return "".concat(e.optionDisplayName, ":").concat(n);
       return n
     }

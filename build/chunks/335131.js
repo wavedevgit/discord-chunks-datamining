@@ -32,9 +32,9 @@ var u = n(703656),
   m = n(251728),
   g = n(578976),
   E = n(439170),
-  v = n(981631);
+  b = n(981631);
 
-function b(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -50,7 +50,7 @@ function y(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -84,7 +84,7 @@ let S = e => {
       openInLayer: t = !0,
       tab: n
     } = e;
-    S(O(e, ["openInLayer", "tab"])), t ? (0, l.jN)(v.S9g.COLLECTIBLES_SHOP) : (0, u.uL)(n ? v.Z5c.COLLECTIBLES_SHOP_WITH_TAB(n) : v.Z5c.COLLECTIBLES_SHOP)
+    S(O(e, ["openInLayer", "tab"])), t ? (0, l.jN)(b.S9g.COLLECTIBLES_SHOP) : (0, u.uL)(n ? b.Z5c.COLLECTIBLES_SHOP_WITH_TAB(n) : b.Z5c.COLLECTIBLES_SHOP)
   },
   N = () => {
     s.Z.dispatch({
@@ -107,7 +107,7 @@ let S = e => {
     let n = (0, g.nW)(e);
     try {
       let e = await a.tn.get({
-        url: v.ANM.COLLECTIBLES_CATEGORIES,
+        url: b.ANM.COLLECTIBLES_CATEGORIES,
         query: n,
         rejectWithError: !0
       });
@@ -130,7 +130,7 @@ let S = e => {
       });
       try {
         let t = {
-          url: v.ANM.COLLECTIBLES_PURCHASES,
+          url: b.ANM.COLLECTIBLES_PURCHASES,
           rejectWithError: !0
         };
         (null == e ? void 0 : e.variantsReturnStyle) === o.v.VARIANTS_GROUP && (t.query = {
@@ -158,7 +158,7 @@ let S = e => {
       let n = {};
       (null == t ? void 0 : t.countryCode) !== null && (n.country_code = null == t ? void 0 : t.countryCode), (null == t ? void 0 : t.paymentGateway) !== null && (n.payment_gateway = null == t ? void 0 : t.paymentGateway);
       let r = await a.tn.get({
-        url: v.ANM.COLLECTIBLES_PRODUCTS(e),
+        url: b.ANM.COLLECTIBLES_PRODUCTS(e),
         query: n,
         rejectWithError: !0
       });
@@ -183,7 +183,7 @@ let S = e => {
     try {
       var t;
       let n = await a.tn.put({
-        url: v.ANM.COLLECTIBLES_CLAIM,
+        url: b.ANM.COLLECTIBLES_CLAIM,
         body: {
           sku_id: e
         },
@@ -205,7 +205,7 @@ let S = e => {
   }, x = async (e, t) => {
     try {
       return (await a.tn.get({
-        url: v.ANM.COLLECTIBLES_VALID_GIFT_RECIPIENT,
+        url: b.ANM.COLLECTIBLES_VALID_GIFT_RECIPIENT,
         query: {
           sku_id: t,
           recipient_id: e
@@ -232,7 +232,7 @@ let S = e => {
     t !== i.P.PROD && (n.release = t);
     try {
       let e = await a.tn.get({
-        url: v.ANM.COLLECTIBLES_MARKETING,
+        url: b.ANM.COLLECTIBLES_MARKETING,
         query: n,
         rejectWithError: !0
       });
@@ -254,7 +254,7 @@ let S = e => {
     let n = (0, g.nW)(t, e);
     try {
       let t = await a.tn.get({
-        url: v.ANM.COLLECTIBLES_SHOP,
+        url: b.ANM.COLLECTIBLES_SHOP,
         query: n,
         rejectWithError: !0
       });

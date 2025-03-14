@@ -29,8 +29,8 @@ function E(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let v = 100,
-  b = 0,
+let b = 100,
+  v = 0,
   y = {
     any: 100
   },
@@ -199,16 +199,16 @@ class C extends o.Z {
           f = o.getWantsLevel(d),
           _ = i[0].ssrc;
         if (o.shouldReceiveFromUser(t)) {
-          let e = t === o.selectedParticipantId && r !== v && !o.pipOpen;
+          let e = t === o.selectedParticipantId && r !== b && !o.pipOpen;
           if (i.length > 1) {
-            for (let t of i) t.quality === v ? e ? (a[t.ssrc] = v, _ = t.ssrc) : a[t.ssrc] = b : e ? a[t.ssrc] = b : (c && (a[t.ssrc] = f), _ = t.ssrc);
+            for (let t of i) t.quality === b ? e ? (a[t.ssrc] = b, _ = t.ssrc) : a[t.ssrc] = v : e ? a[t.ssrc] = v : (c && (a[t.ssrc] = f), _ = t.ssrc);
             if (o.supportsSeamless && !o.framesReceived[_])
-              for (let e of (u = !0, s = [_], i)) e.ssrc !== _ && o.framesReceived[e.ssrc] && (e.quality === v ? a[e.ssrc] = v : a[e.ssrc] = c ? f : r, s.push(e.ssrc))
-          } else e ? a[_] = v : c && (a[_] = f)
+              for (let e of (u = !0, s = [_], i)) e.ssrc !== _ && o.framesReceived[e.ssrc] && (e.quality === b ? a[e.ssrc] = b : a[e.ssrc] = c ? f : r, s.push(e.ssrc))
+          } else e ? a[_] = b : c && (a[_] = f)
         } else
-          for (let e of i) a[e.ssrc] = b;
+          for (let e of i) a[e.ssrc] = v;
         let p = o.getSimulcastOverrideQuality(t);
-        for (let e of (p === g.Z.HIGH ? a[_] = v : p === g.Z.LOW && (a[_] = 50), o.supportsSeamless && u || (s = [_]), i)) s.includes(e.ssrc) || delete o.framesReceived[e.ssrc];
+        for (let e of (p === g.Z.HIGH ? a[_] = b : p === g.Z.LOW && (a[_] = 50), o.supportsSeamless && u || (s = [_]), i)) s.includes(e.ssrc) || delete o.framesReceived[e.ssrc];
         (n.includes(t) || void 0 !== o.remoteVideoSsrcs[t] && !(0, l.Z)(o.remoteVideoSsrcs[t], s)) && (o.remoteVideoSsrcs[t] = [...s], o.emit("user-ssrc-update", t, o.audioSsrcs[t], s))
       }
       for (let [e, n] of Object.entries(o.audioSsrcs))(null === (t = o.connection) || void 0 === t ? void 0 : t.getLocalMute(e)) && (a[n] = 0);

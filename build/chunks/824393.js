@@ -21,8 +21,8 @@ var r = n(200651),
   m = n(688465),
   g = n(98278),
   E = n(741245),
-  v = n(931331),
-  b = n(55935),
+  b = n(931331),
+  v = n(55935),
   y = n(70956),
   O = n(63063),
   I = n(74538),
@@ -43,7 +43,7 @@ function L(e) {
     onClose: h,
     quest: m,
     location: g
-  } = e, E = i.useRef(null), [v, b] = i.useState(null), y = i.useRef(new s.qA), O = (0, l.e7)([f.Z], () => f.Z.useReducedMotion), I = (null === (t = m.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, [N, C] = i.useState({
+  } = e, E = i.useRef(null), [b, v] = i.useState(null), y = i.useRef(new s.qA), O = (0, l.e7)([f.Z], () => f.Z.useReducedMotion), I = (null === (t = m.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, [N, C] = i.useState({
     state: "loading"
   });
   i.useEffect(() => {
@@ -71,7 +71,7 @@ function L(e) {
     D = "claimed" === N.state && null != N.entitlements && N.entitlements.items.some(e => e.consumed);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.O_, {
-      ref: b,
+      ref: v,
       className: P.confettiCanvas,
       environment: y.current
     }), (0, r.jsx)("div", {
@@ -98,7 +98,7 @@ function L(e) {
       })
     }), w && (0, r.jsx)(p.Z, {
       confettiTarget: E.current,
-      confettiCanvas: v,
+      confettiCanvas: b,
       sprites: A.CA,
       colors: A.Br
     })]
@@ -146,8 +146,8 @@ function M(e) {
       hours: R.t["C3RO+v"],
       minutes: R.t.r77oHR
     },
-    r = (0, b.TD)(0, t * y.Z.Millis.HOUR);
-  return (0, b.QX)(r, n)
+    r = (0, v.TD)(0, t * y.Z.Millis.HOUR);
+  return (0, v.QX)(r, n)
 }
 
 function k(e) {
@@ -158,7 +158,7 @@ function k(e) {
     theme: o
   } = (0, c.TCT)(), a = (0, _.Z)({
     forceFetch: !0
-  }), s = (0, b.vc)(a.endsAt, "L"), l = i.useCallback(() => {
+  }), s = (0, v.vc)(a.endsAt, "L"), l = i.useCallback(() => {
     (0, g.$)(n)
   }, [n]);
   return a.fractionalState === C.a$.NONE ? (0, r.jsx)(c.$jN, {
@@ -168,7 +168,7 @@ function k(e) {
       className: P.nitroHeaderContainer,
       children: [(0, r.jsx)("div", {
         className: P.nitroHeaderClouds
-      }), (0, r.jsx)(v.Z, {
+      }), (0, r.jsx)(b.Z, {
         className: P.nitroHeaderWordmark
       }), (0, r.jsx)(c.Eep, {
         src: D,

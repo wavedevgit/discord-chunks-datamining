@@ -49,8 +49,8 @@ var r = n(200651),
   Y = n(179742),
   K = n(270759),
   q = n(918701),
-  Q = n(905423),
-  X = n(304445),
+  X = n(905423),
+  Q = n(304445),
   J = n(893607),
   $ = n(210887),
   ee = n(592125),
@@ -233,7 +233,7 @@ let ey = (0, u.Un)({
     let {
       guildId: e,
       channelId: t
-    } = (0, Q.Z)(), n = (0, p.e7)([er.Z], () => null != t ? t : er.Z.getChannelId(e));
+    } = (0, X.Z)(), n = (0, p.e7)([er.Z], () => null != t ? t : er.Z.getChannelId(e));
     return window.location.pathname.startsWith(em.Z5c.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(em.Z5c.GUILD_DISCOVERY) || (0, q.OG)() ? (0, r.jsx)(x.Z, {}) : null != e ? (0, r.jsx)(U.Z, {
       selectedChannelId: n,
       guildId: e
@@ -509,13 +509,13 @@ function eq() {
     n = (0, p.e7)([$.Z], () => $.Z.darkSidebar ? em.BRd.DARK : void 0),
     l = function() {
       let [e, t] = i.useState(() => window.location.pathname.startsWith(em.Z5c.GUILD_MEMBER_VERIFICATION("")));
-      return i.useEffect(() => X.Z.addRouteChangeListener(e => {
+      return i.useEffect(() => Q.Z.addRouteChangeListener(e => {
         t(e.pathname.startsWith(em.Z5c.GUILD_MEMBER_VERIFICATION("")))
       }), []), e
     }(),
     o = function() {
       let [e, t] = i.useState(() => window.location.pathname.startsWith(em.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")));
-      return i.useEffect(() => X.Z.addRouteChangeListener(e => {
+      return i.useEffect(() => Q.Z.addRouteChangeListener(e => {
         t(e.pathname.startsWith(em.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")))
       }), []), e
     }(),

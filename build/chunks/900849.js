@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Az: () => v,
+  Az: () => b,
   Eg: () => A,
-  IZ: () => b,
+  IZ: () => v,
   PP: () => E,
   Ub: () => g,
   c6: () => T,
@@ -113,7 +113,7 @@ function E(e) {
   }
 }
 
-function v(e, t) {
+function b(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null;
   d.default.track(f.rMx.GUILD_DISCOVERY_EXITED, {
     load_id: e,
@@ -122,7 +122,7 @@ function v(e, t) {
   })
 }
 
-function b(e) {
+function v(e) {
   d.default.track(f.rMx.SEARCH_CLOSED, {
     load_id: e
   })

@@ -238,8 +238,8 @@ class E extends(r = o.PureComponent) {
         snapOrientation: g
       } = this.props, {
         dragging: E,
-        dragging: v,
-        verticalOrientation: b,
+        dragging: b,
+        verticalOrientation: v,
         horizontalOrientation: y
       } = this.state, O = !1;
       if (null == r || !E && l(this._dragStart, {
@@ -256,14 +256,14 @@ class E extends(r = o.PureComponent) {
       }, i, o, I, S));
       if (g) {
         let e = _(T = p(T));
-        b = e[0], y = e[1]
+        v = e[0], y = e[1]
       } else T = {
         top: T.top,
         left: T.left
       };
-      2 === s && y !== this.state.horizontalOrientation && (this._offsetX = I - this._offsetX, O = !0), 2 === a && b !== this.state.verticalOrientation && (this._offsetY = S - this._offsetY, O = !0), this.setDOMPositions(T), v || null == u || u(T, r), null == f || f(T, r), O && (null == h || h([b, y])), this.setState({
+      2 === s && y !== this.state.horizontalOrientation && (this._offsetX = I - this._offsetX, O = !0), 2 === a && v !== this.state.verticalOrientation && (this._offsetY = S - this._offsetY, O = !0), this.setDOMPositions(T), b || null == u || u(T, r), null == f || f(T, r), O && (null == h || h([v, y])), this.setState({
         dragging: E,
-        verticalOrientation: b,
+        verticalOrientation: v,
         horizontalOrientation: y,
         atTopEdge: 0 === T.top
       })

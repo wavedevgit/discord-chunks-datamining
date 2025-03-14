@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  J: () => b
+  J: () => v
 });
 var r = n(512722),
   i = n.n(r),
@@ -50,20 +50,20 @@ function E(e, t) {
   return n
 }
 
-function v(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function b(e) {
+function v(e) {
   let {
     analyticsData: t,
     initialPlanId: n,
     breadcrumbSteps: r,
     handleStepChange: m,
     referralTrialOfferId: E,
-    onReturn: b,
+    onReturn: v,
     continueSessionToInitialStep: y
   } = e, {
     contextMetadata: O,
@@ -81,7 +81,7 @@ function b(e) {
     setPurchaseState: x
   } = (0, u.JL)(), {
     isGift: M
-  } = (0, c.wD)(), k = v(g({}, (0, s.fL)()), {
+  } = (0, c.wD)(), k = b(g({}, (0, s.fL)()), {
     paymentSources: S,
     paymentSourceId: T,
     setPaymentSourceId: N,
@@ -95,13 +95,13 @@ function b(e) {
     m(Object.values(S).length < 1 && null == n ? d.h8.PLAN_SELECT : d.h8.REVIEW, {
       trackedFromStep: d.h8.PAYMENT_TYPE
     })
-  }, B = null != b ? b : G;
+  }, B = null != v ? v : G;
   i()(I, "Step should be set here");
-  let V = (0, o.Z)(() => Date.now(), [I]),
-    F = null != y && null == L.current ? y : d.h8.PAYMENT_TYPE;
+  let F = (0, o.Z)(() => Date.now(), [I]),
+    V = null != y && null == L.current ? y : d.h8.PAYMENT_TYPE;
   return (0, s.vP)({
     paymentModalArgs: k,
-    initialStep: F,
+    initialStep: V,
     prependSteps: [d.h8.PROMOTION_INFO],
     appendSteps: [d.h8.REVIEW, d.h8.CONFIRM],
     breadcrumpSteps: r,
@@ -120,10 +120,10 @@ function b(e) {
         currentStep: n,
         toStep: r
       } = e, i = Date.now();
-      l.default.track(p.rMx.PAYMENT_FLOW_STEP, v(g({}, t), {
+      l.default.track(p.rMx.PAYMENT_FLOW_STEP, b(g({}, t), {
         from_step: n,
         to_step: r,
-        step_duration_ms: i - V,
+        step_duration_ms: i - F,
         flow_duration_ms: i - O.startTime
       }))
     },

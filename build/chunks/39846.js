@@ -37,10 +37,10 @@ function E(e, t) {
   return null === (n = c.Z.getChannel(t)) || void 0 === n || !n.isListenModeCapable() || o.ZP.isSpeaker(e, t)
 }
 
-function v(e) {
+function b(e) {
   return (0, a.gf)(e) === a.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK
 }
-class b extends r.Z {
+class v extends r.Z {
   handleVoiceChannelSelect(e) {
     let {
       channelId: t
@@ -61,7 +61,7 @@ class b extends r.Z {
           m = n, g();
           return
         }
-        v(new s.Z(e)) && (m = n, g())
+        b(new s.Z(e)) && (m = n, g())
       }
     })
   }
@@ -72,4 +72,4 @@ class b extends r.Z {
     })
   }
 }
-let y = new b
+let y = new v

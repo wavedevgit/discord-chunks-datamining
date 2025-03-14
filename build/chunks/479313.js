@@ -26,8 +26,8 @@ var r = n(192379),
 let m = 75,
   g = 50,
   E = 30 * _.Z.Millis.SECOND,
-  v = null;
-async function b(e, t) {
+  b = null;
+async function v(e, t) {
   let n, r;
   if (!p.Z.shouldFetch(e, t)) return;
   let i = Date.now();
@@ -99,7 +99,7 @@ function I() {
 }
 
 function S(e, t) {
-  null != e && null != t && b(e, t), l.Z.dispatch({
+  null != e && null != t && v(e, t), l.Z.dispatch({
     type: "SET_SELECTED_SUMMARY",
     channelId: e,
     summaryId: null != t ? t : null

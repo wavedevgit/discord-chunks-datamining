@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   rK: () => E,
-  tR: () => b,
+  tR: () => v,
   tj: () => p
 }), n(757143), n(301563), n(566702), n(653041), n(230036), n(47120), n(411104);
 var r = n(913527),
@@ -35,8 +35,8 @@ let s = /^[0]+/,
   m = 15,
   g = "LT",
   E = (e, t) => e.clone().hours(t.hour()).minutes(t.minutes()).seconds(0),
-  v = (e, t) => e.value.unix() - t.value.unix();
-class b {
+  b = (e, t) => e.value.unix() - t.value.unix();
+class v {
   lookupByValue(e) {
     if (null == e) return;
     let t = E(h, e);
@@ -68,7 +68,7 @@ class b {
     return this._index[t.unix()] = t, this.options.push({
       label: n,
       value: t
-    }), this.options.sort(v), e
+    }), this.options.sort(b), e
   }
   _guessOptions(e) {
     let t = [];
@@ -93,7 +93,7 @@ class b {
       let e = [...this.options];
       return t.forEach(t => {
         null == this.lookupByValue(t) && e.push(this._createNewOption(t))
-      }), e.sort(v), e
+      }), e.sort(b), e
     }
   }
   selectValue(e) {

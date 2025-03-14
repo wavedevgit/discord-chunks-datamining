@@ -2,7 +2,7 @@
 "use strict";
 let r, i;
 n.d(t, {
-  Z: () => V
+  Z: () => F
 }), n(47120);
 var o, a = n(442837),
   s = n(704215),
@@ -17,8 +17,8 @@ var o, a = n(442837),
   m = n(131704),
   g = n(592125),
   E = n(594174),
-  v = n(74538),
-  b = n(51144),
+  b = n(74538),
+  v = n(51144),
   y = n(47760),
   O = n(469115),
   I = n(874893);
@@ -68,7 +68,7 @@ let T = !1,
       channelId: t,
       guildId: n
     } = e, r = E.default.getCurrentUser();
-    if (null == t || null == n || (0, c.un)(s.z.CLIENT_THEMES_COACHMARK) || !(0, b.Fc)(r)) return;
+    if (null == t || null == n || (0, c.un)(s.z.CLIENT_THEMES_COACHMARK) || !(0, v.Fc)(r)) return;
     let i = g.Z.getChannel(t);
     null != i && (0, m.zi)(i.type) && (A = !0)
   };
@@ -85,7 +85,7 @@ function k() {
   N && (r = void 0), A = !1, T = !1
 }
 let j = () => {
-    let e = !v.ZP.canUseClientThemes(E.default.getCurrentUser());
+    let e = !b.ZP.canUseClientThemes(E.default.getCurrentUser());
     if (e === N) return !1;
     N = e
   },
@@ -149,7 +149,7 @@ class B extends(o = a.ZP.PersistedStore) {
   }
 }
 S(B, "displayName", "ClientThemesBackgroundStore"), S(B, "persistKey", "ClientThemesBackgroundStore");
-let V = new B(l.Z, {
+let F = new B(l.Z, {
   UPDATE_BACKGROUND_GRADIENT_PRESET: C,
   UPDATE_MOBILE_PENDING_THEME_INDEX: R,
   CLIENT_THEMES_EDITOR_OPEN: P,

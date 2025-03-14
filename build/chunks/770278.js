@@ -62,20 +62,20 @@ let m = i.forwardRef(function(e, t) {
     onClose: m
   } = e, g = h()[n], E = (0, l.dQu)(l.TVs.colors.BG_BACKDROP_NO_OPACITY).spring({
     opacity: 0
-  }), v = "BLUR" === n ? _ : 0, b = {
+  }), b = "BLUR" === n ? _ : 0, v = {
     background: E,
     backdropFilter: "blur(0px)"
   }, y = {
     background: g,
-    backdropFilter: "blur(".concat(v, "px)")
+    backdropFilter: "blur(".concat(b, "px)")
   }, O = (0, c.Z)(i), I = (0, l.Yzy)(p, {
     keys: e => e ? "backdrop" : "empty",
     config: {
       duration: i || O ? 0 : 200
     },
-    from: b,
+    from: v,
     enter: y,
-    leave: b
+    leave: v
   }, "animate-always");
   if (null == d) {
     let e = {

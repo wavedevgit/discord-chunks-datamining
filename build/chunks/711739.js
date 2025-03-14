@@ -32,13 +32,13 @@ function E(e, t) {
   return n
 }
 
-function v(e, t) {
+function b(e, t) {
   let n = e.split("@"),
     r = "";
   return n.length > 1 && (r = n[0] + "@", e = n[1]), r + E((e = e.replace(f, ".")).split("."), t).join(".")
 }
 
-function b(e) {
+function v(e) {
   let t = [],
     n = 0,
     r = e.length;
@@ -89,7 +89,7 @@ let y = function(e) {
   },
   T = function(e) {
     let o = [],
-      a = (e = b(e)).length,
+      a = (e = v(e)).length,
       u = l,
       d = 0,
       f = s;
@@ -116,19 +116,19 @@ let y = function(e) {
     return o.join("")
   },
   N = function(e) {
-    return v(e, function(e) {
+    return b(e, function(e) {
       return u.test(e) ? S(e.slice(4).toLowerCase()) : e
     })
   },
   A = function(e) {
-    return v(e, function(e) {
+    return b(e, function(e) {
       return d.test(e) ? "xn--" + T(e) : e
     })
   },
   C = {
     version: "2.1.0",
     ucs2: {
-      decode: b,
+      decode: v,
       encode: e => String.fromCodePoint(...e)
     },
     decode: S,

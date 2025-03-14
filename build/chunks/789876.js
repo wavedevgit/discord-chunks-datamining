@@ -23,11 +23,11 @@
         return e < 0 ? 0 : e
       }
     },
-    E = v(function() {
+    E = b(function() {
       d = 22, _ = 66, f = 0
     });
 
-  function v(e) {
+  function b(e) {
     var t, n, r = 99,
       i = function() {
         var o = Date.now() - n;
@@ -38,12 +38,12 @@
     }
   }
 
-  function b() {
+  function v() {
     u && (i && s(i), r && clearTimeout(r), u = !1)
   }
 
   function y() {
-    125 != _ && (d = 7, _ = 125, f = 35, u && (b(), S())), E()
+    125 != _ && (d = 7, _ = 125, f = 35, u && (v(), S())), E()
   }
 
   function O() {

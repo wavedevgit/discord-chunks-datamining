@@ -20,7 +20,7 @@ var r = n(200651),
   g = n(470794),
   E = n(886777);
 
-function v(e) {
+function b(e) {
   let {
     movDark: t = d,
     movLight: n = h,
@@ -29,8 +29,8 @@ function v(e) {
     pngDark: a = _,
     pngLight: s = g,
     webmDark: c = p,
-    webmLight: v = E
-  } = e, b = (0, l.vu)(), y = [(0, r.jsx)("source", {
+    webmLight: b = E
+  } = e, v = (0, l.vu)(), y = [(0, r.jsx)("source", {
     src: i,
     type: "video/mp4"
   }, "mp4"), (0, r.jsx)("img", {
@@ -43,11 +43,11 @@ function v(e) {
     alt: "",
     src: s
   }, "png")];
-  return (b > 52 || -1 === b) && (y.unshift((0, r.jsx)("source", {
+  return (v > 52 || -1 === v) && (y.unshift((0, r.jsx)("source", {
     src: c,
     type: "video/webm"
   }, "webm")), O.unshift((0, r.jsx)("source", {
-    src: v,
+    src: b,
     type: "video/webm"
   }, "webm"))), (0, l.rO)() && (y.unshift((0, r.jsx)("source", {
     src: t,
@@ -60,9 +60,9 @@ function v(e) {
     [u.BRd.LIGHT]: O
   }
 }
-let b = s.Z.getAppSpinnerSources(),
-  y = null != b ? v(b) : null,
-  O = v({}),
+let v = s.Z.getAppSpinnerSources(),
+  y = null != v ? b(v) : null,
+  O = b({}),
   I = e => {
     var t;
     let {

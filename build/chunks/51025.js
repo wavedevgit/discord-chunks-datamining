@@ -2,14 +2,14 @@
 "use strict";
 n.d(t, {
   A1: () => A,
-  LO: () => b,
+  LO: () => v,
   S1: () => E,
   Wx: () => P,
   XT: () => w,
   al: () => C,
   cG: () => y,
   li: () => I,
-  ob: () => v,
+  ob: () => b,
   pC: () => S,
   v4: () => T,
   wO: () => N,
@@ -52,11 +52,11 @@ function E(e, t) {
   })
 }
 
-function v() {
+function b() {
   _.Z.destroy()
 }
 
-function b(e) {
+function v(e) {
   let {
     application: t,
     branchId: n,

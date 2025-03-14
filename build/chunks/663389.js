@@ -38,8 +38,8 @@ let f = c.QZA.CLOSED,
   m = {},
   g = {},
   E = null,
-  v = null,
-  b = !1,
+  b = null,
+  v = !1,
   y = !1,
   O = null,
   I = null,
@@ -48,14 +48,14 @@ let f = c.QZA.CLOSED,
   N = null;
 
 function A(e) {
-  b = !0, C(e)
+  v = !0, C(e)
 }
 
 function C(e) {
   var t, n, r, i, o, a;
   let s = l.default.getCurrentUser();
   if (null == s) return R();
-  p = null !== (t = e.section) && void 0 !== t ? t : p, T = null !== (n = e.section) && void 0 !== n ? n : p, null != e.subsection && null != p && (h[p] = e.subsection), null != e.scrollPosition && null != p && (m[p] = e.scrollPosition), y = !!e.openWithoutBackstack, f = c.QZA.OPEN, g = {}, v = d({}, E = {
+  p = null !== (t = e.section) && void 0 !== t ? t : p, T = null !== (n = e.section) && void 0 !== n ? n : p, null != e.subsection && null != p && (h[p] = e.subsection), null != e.scrollPosition && null != p && (m[p] = e.scrollPosition), y = !!e.openWithoutBackstack, f = c.QZA.OPEN, g = {}, b = d({}, E = {
     [c.oAB.ACCOUNT]: {
       userId: s.id,
       username: s.username,
@@ -70,7 +70,7 @@ function C(e) {
 }
 
 function R() {
-  f = c.QZA.CLOSED, b = !1, E = null, T = null, v = null, _ = null, p = null, h = {}, m = {}, O = null, I = null, S = [], N = null
+  f = c.QZA.CLOSED, v = !1, E = null, T = null, b = null, _ = null, p = null, h = {}, m = {}, O = null, I = null, S = [], N = null
 }
 
 function P(e) {
@@ -96,9 +96,9 @@ function L(e) {
   let {
     settings: t
   } = e;
-  null == v && (v = {});
-  let n = v[c.oAB.ACCOUNT];
-  v[c.oAB.ACCOUNT] = d({}, n, t)
+  null == b && (b = {});
+  let n = b[c.oAB.ACCOUNT];
+  b[c.oAB.ACCOUNT] = d({}, n, t)
 }
 
 function x() {
@@ -107,7 +107,7 @@ function x() {
 
 function M() {
   let e = l.default.getCurrentUser();
-  k(), null != e && (v = d({}, E = {
+  k(), null != e && (b = d({}, E = {
     [c.oAB.ACCOUNT]: {
       userId: e.id,
       username: e.username,
@@ -135,10 +135,10 @@ class U extends(r = a.ZP.Store) {
     this.waitFor(l.default)
   }
   hasChanges() {
-    return null != v && null != E && !!this.isOpen() && !o().isEqual(v, E)
+    return null != b && null != E && !!this.isOpen() && !o().isEqual(b, E)
   }
   isOpen() {
-    return b
+    return v
   }
   getPreviousSection() {
     return _
@@ -161,7 +161,7 @@ class U extends(r = a.ZP.Store) {
       section: p,
       subsection: null != p ? h[p] : null,
       scrollPosition: null != p ? m[p] : null,
-      settings: v,
+      settings: b,
       errors: g,
       hasChanges: this.hasChanges(),
       openWithoutBackstack: y,

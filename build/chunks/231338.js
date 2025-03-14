@@ -4,13 +4,13 @@ n.d(t, {
   $R: () => u,
   $V: () => X,
   $w: () => es,
-  Ai: () => b,
+  Ai: () => v,
   Al: () => r.A,
   B1: () => $,
   BR: () => r.Z,
   BZ: () => K,
   Cw: () => P,
-  Cy: () => V,
+  Cy: () => F,
   EK: () => ep,
   ET: () => em,
   Et: () => z,
@@ -37,7 +37,7 @@ n.d(t, {
   Uk: () => N,
   V6: () => W,
   Vq: () => B,
-  Vz: () => v,
+  Vz: () => b,
   X5: () => m,
   X6: () => H,
   X7: () => R,
@@ -62,7 +62,7 @@ n.d(t, {
   xr: () => d,
   yA: () => en,
   yX: () => er,
-  yY: () => F,
+  yY: () => V,
   zM: () => q
 }), n(47120);
 var r = n(290926),
@@ -113,7 +113,7 @@ let g = "6Lef5iQTAAAAAKeIvIY-DeexoO3gj7ryl9rLMEnn";
 var E = function(e) {
   return e[e.STRIPE = 1] = "STRIPE", e[e.BRAINTREE = 2] = "BRAINTREE", e[e.APPLE = 3] = "APPLE", e[e.GOOGLE = 4] = "GOOGLE", e[e.ADYEN = 5] = "ADYEN", e[e.APPLE_PARTNER = 6] = "APPLE_PARTNER", e
 }({});
-let v = Object.freeze({
+let b = Object.freeze({
     1: "Stripe",
     2: "Braintree",
     3: "Apple",
@@ -121,7 +121,7 @@ let v = Object.freeze({
     5: "Adyen",
     6: "Apple Partner"
   }),
-  b = Object.freeze({
+  v = Object.freeze({
     BRAINTREE: {
       KEY: window.GLOBAL_ENV.BRAINTREE_KEY,
       PAYMENT_GATEWAY: "braintree"
@@ -246,9 +246,9 @@ let U = Object.freeze({
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n]
   },
   B = () => null,
-  V = () => Promise.resolve(),
-  F = [U.KICK_MEMBERS, U.BAN_MEMBERS, U.ADMINISTRATOR, U.MANAGE_CHANNELS, U.MANAGE_GUILD, U.MANAGE_ROLES, U.MANAGE_MESSAGES, U.MANAGE_THREADS, U.MODERATE_MEMBERS],
-  Z = i.$e(...F),
+  F = () => Promise.resolve(),
+  V = [U.KICK_MEMBERS, U.BAN_MEMBERS, U.ADMINISTRATOR, U.MANAGE_CHANNELS, U.MANAGE_GUILD, U.MANAGE_ROLES, U.MANAGE_MESSAGES, U.MANAGE_THREADS, U.MODERATE_MEMBERS],
+  Z = i.$e(...V),
   H = 1,
   W = 6463,
   Y = 10,

@@ -85,9 +85,9 @@ t.Request = N, E.getXHR = () => {
   if (r.XMLHttpRequest) return new r.XMLHttpRequest;
   throw Error("Browser-only version of superagent could not find XHR")
 };
-let v = "".trim ? e => e.trim() : e => e.replace(/(^\s*|\s*$)/g, "");
+let b = "".trim ? e => e.trim() : e => e.replace(/(^\s*|\s*$)/g, "");
 
-function b(e) {
+function v(e) {
   if (!f(e)) return e;
   let t = [];
   for (let n in e) p(e, n) && y(t, n, e[n]);
@@ -130,7 +130,7 @@ function I(e) {
   let t, n, r, i;
   let o = e.split(/\r?\n/),
     a = {};
-  for (let e = 0, s = o.length; e < s; ++e) - 1 !== (t = (n = o[e]).indexOf(":")) && (r = n.slice(0, t).toLowerCase(), i = v(n.slice(t + 1)), a[r] = i);
+  for (let e = 0, s = o.length; e < s; ++e) - 1 !== (t = (n = o[e]).indexOf(":")) && (r = n.slice(0, t).toLowerCase(), i = b(n.slice(t + 1)), a[r] = i);
   return a
 }
 
@@ -163,7 +163,7 @@ function N(e, t) {
     e ? (e.original = t, e.response = r, e.status = e.status || r.status, n.callback(e, r)) : n.callback(null, r)
   })
 }
-E.serializeObject = b, E.parseString = O, E.types = {
+E.serializeObject = v, E.parseString = O, E.types = {
   html: "text/html",
   json: "application/json",
   xml: "text/xml",
@@ -199,7 +199,7 @@ E.serializeObject = b, E.parseString = O, E.types = {
   };
   return this._auth(e, t, n, r)
 }, N.prototype.query = function(e) {
-  return "string" != typeof e && (e = b(e)), e && this._query.push(e), this
+  return "string" != typeof e && (e = v(e)), e && this._query.push(e), this
 }, N.prototype.attach = function(e, t, n) {
   if (t) {
     if (this._data) throw Error("superagent can't mix .send() and .attach()");

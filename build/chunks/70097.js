@@ -96,16 +96,16 @@ let m = e => {
       o && (null == m || null === (e = m.current) || void 0 === e || e.pause())
     }
 
-    function v() {
+    function b() {
       return d === l.hV.MOSAIC ? {
         width: "100%",
         height: "100%",
         maxHeight: "inherit",
         objectFit: "contain"
-      } : c ? b() : {}
+      } : c ? v() : {}
     }
 
-    function b() {
+    function v() {
       return {
         maxWidth: f.width,
         maxHeight: f.height,
@@ -127,7 +127,7 @@ let m = e => {
       onMouseLeave: E,
       onFocus: g,
       onBlur: E,
-      style: v()
+      style: b()
     }, f))
   },
   g = i.forwardRef((e, t) => (0, r.jsx)(m, f(u({}, e), {

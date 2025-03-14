@@ -23,11 +23,11 @@ function f(e, t, n, f) {
     m = o.Z.getMediaSessionId(),
     g = o.Z.getRTCConnectionId(),
     E = null === (_ = r.ZP.getCurrentGameForAnalytics()) || void 0 === _ ? void 0 : _.name,
-    v = h !== n.guildId && n.guildId !== l.X8,
-    b = d(n, v);
+    b = h !== n.guildId && n.guildId !== l.X8,
+    v = d(n, b);
   s.default.track(c.rMx.PREMIUM_FEATURE_USAGE, {
     feature_name: u.QP.SOUNDBOARD_PLAY,
-    feature_tier: v ? u.h1.PREMIUM_STANDARD : u.h1.FREE,
+    feature_tier: b ? u.h1.PREMIUM_STANDARD : u.h1.FREE,
     guild_id: h,
     location_stack: e,
     rtc_connection_id: g,
@@ -35,7 +35,7 @@ function f(e, t, n, f) {
     in_overlay: t,
     application_name: E,
     emoji_count: +(null != n.emojiId || null != n.emojiName),
-    feature_selection: b,
+    feature_selection: v,
     feature_selection_id: n.soundId,
     sound_type: f
   })

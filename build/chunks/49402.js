@@ -76,8 +76,8 @@ function m(e, t, n) {
       className: m,
       dir: g = "ltr",
       orientation: E = "vertical",
-      fade: v = !1,
-      customTheme: b = !1,
+      fade: b = !1,
+      customTheme: v = !1,
       paddingFix: y = !0,
       style: O,
       gap: I,
@@ -104,8 +104,8 @@ function m(e, t, n) {
       ref: N,
       className: a()(m, {
         [e]: !0,
-        [t]: v,
-        [n]: b
+        [t]: b,
+        [n]: v
       }),
       style: (0, c.uT)(O, E),
       dir: g
@@ -118,8 +118,8 @@ function m(e, t, n) {
       ref: N,
       className: a()(m, {
         [e]: !0,
-        [t]: v,
-        [n]: b
+        [t]: b,
+        [n]: v
       }),
       style: (0, c.uT)(O, E),
       dir: g

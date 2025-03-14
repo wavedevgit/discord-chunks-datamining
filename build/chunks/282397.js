@@ -52,16 +52,16 @@ function g(e, t) {
   }), e
 }
 let E = 5 * f.Z.Millis.MINUTE,
-  v = 10 * f.Z.Millis.SECOND,
-  b = {},
+  b = 10 * f.Z.Millis.SECOND,
+  v = {},
   y = {},
   O = {},
   I = {};
 
 function S() {
-  b = {}, y = {}, O = {}, I = {}, setInterval(() => {
+  v = {}, y = {}, O = {}, I = {}, setInterval(() => {
     let e = Date.now();
-    for (let [t, n] of Object.entries(I)) e - n.insertedAt > v && delete I[t]
+    for (let [t, n] of Object.entries(I)) e - n.insertedAt > b && delete I[t]
   }, E)
 }
 
@@ -75,7 +75,7 @@ function T(e) {
     onSuccess: a,
     onFailure: s
   } = e;
-  null != n && (y[n] = t, O[t] = n), b[t] = {
+  null != n && (y[n] = t, O[t] = n), v[t] = {
     state: _.F.QUEUED,
     data: r,
     onCreate: i,
@@ -92,7 +92,7 @@ function N(e) {
     interactionId: r
   } = e;
   if (null == n) return !1;
-  let i = b[n];
+  let i = v[n];
   if (null == i || i.state !== _.F.QUEUED) return !1;
   i.state = _.F.CREATED, null === (t = i.onCreate) || void 0 === t || t.call(i, r)
 }
@@ -111,7 +111,7 @@ function C(e) {
   if (null == t.nonce) return !1;
   {
     var n;
-    let e = b[t.nonce];
+    let e = v[t.nonce];
     if (null == e) return !1;
     null === (n = e.onSuccess) || void 0 === n || n.call(e), j(t.nonce)
   }
@@ -127,9 +127,9 @@ function R(e) {
     reasonCode: a
   } = e;
   if (null == n) return !1;
-  let s = b[n];
+  let s = v[n];
   if (null == s) return !1;
-  null === (t = s.onFailure) || void 0 === t || t.call(s, r, i, o, a), s.data.interactionType === c.B8.APPLICATION_COMMAND ? j(n) : b[n] = g(h({}, s), {
+  null === (t = s.onFailure) || void 0 === t || t.call(s, r, i, o, a), s.data.interactionType === c.B8.APPLICATION_COMMAND ? j(n) : v[n] = g(h({}, s), {
     state: _.F.FAILED,
     errorCode: r,
     errorMessage: i
@@ -141,7 +141,7 @@ function P(e) {
     channelId: t
   } = e;
   if (null == d.Z.getChannel(t)) return !1;
-  for (let [e, t] of Object.entries(b)) t.state === _.F.FAILED && j(e)
+  for (let [e, t] of Object.entries(v)) t.state === _.F.FAILED && j(e)
 }
 
 function w(e) {
@@ -179,13 +179,13 @@ function M(e) {
     a = r.find(e => e.user_id === o && e.session_id === i);
   if (null == a || null == a.nonce) return;
   let s = I[a.nonce];
-  null == s ? (t = O[a.nonce], n = b[a.nonce]) : (t = s.messageId, n = s.interaction), null != n && null != t && (j(a.nonce), null != t && "channelId" in n.data && l.Z.deleteMessage(n.data.channelId, t, !0))
+  null == s ? (t = O[a.nonce], n = v[a.nonce]) : (t = s.messageId, n = s.interaction), null != n && null != t && (j(a.nonce), null != t && "channelId" in n.data && l.Z.deleteMessage(n.data.channelId, t, !0))
 }
 
 function k(e) {
   var t;
   if (null == e) return !1;
-  let n = b[e];
+  let n = v[e];
   if (null == n) return !1;
   null === (t = n.onSuccess) || void 0 === t || t.call(n), j(e)
 }
@@ -195,8 +195,8 @@ function j(e) {
     delete I[e];
     return
   }
-  let t = b[e];
-  delete b[e];
+  let t = v[e];
+  delete v[e];
   let n = O[e];
   null != n && delete y[n], delete O[e], I[e] = {
     insertedAt: Date.now(),
@@ -208,11 +208,11 @@ function j(e) {
 class U extends(o = a.ZP.Store) {
   getInteraction(e) {
     let t = y[e.id];
-    return null != t ? b[t] : null
+    return null != t ? v[t] : null
   }
   getMessageInteractionStates() {
     let e = {};
-    for (let [t, n] of Object.entries(b)) {
+    for (let [t, n] of Object.entries(v)) {
       let r = O[t];
       null != r && (e[r] = n.state)
     }
@@ -220,7 +220,7 @@ class U extends(o = a.ZP.Store) {
   }
   canQueueInteraction(e, t) {
     let n = y[e];
-    return (null == n || null == b[n] || b[n].state === _.F.FAILED) && (null == b[t] || b[t].state === _.F.FAILED)
+    return (null == n || null == v[n] || v[n].state === _.F.FAILED) && (null == v[t] || v[t].state === _.F.FAILED)
   }
   getIFrameModalApplicationId() {
     return i

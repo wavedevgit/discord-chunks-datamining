@@ -1,36 +1,36 @@
 /** Chunk was on 93886 **/
 n.r(t), n.d(t, {
   transitionToGlobalDiscovery: () => function e(t) {
-    var n, x, f;
-    let b = t.tab;
+    var n, p, b;
+    let f = t.tab;
     switch (d.Z.setState({
-        selectedTab: b
-      }), b) {
+        selectedTab: f
+      }), f) {
       case u.GlobalDiscoveryTab.SERVERS:
         let _ = t.selectedServersTab;
-        return null != _ ? i.Z.setState({
+        return null != _ ? l.Z.setState({
           selectedTab: _,
-          entrypoint: null !== (n = t.entrypoint) && void 0 !== n ? n : p.Qq.UNKNOWN
-        }) : i.Z.setState({
-          entrypoint: null !== (x = t.entrypoint) && void 0 !== x ? x : p.Qq.UNKNOWN
+          entrypoint: null !== (n = t.entrypoint) && void 0 !== n ? n : x.Qq.UNKNOWN
+        }) : l.Z.setState({
+          entrypoint: null !== (p = t.entrypoint) && void 0 !== p ? p : x.Qq.UNKNOWN
         }), (0, o.uL)(m.Z5c.GLOBAL_DISCOVERY_SERVERS, t.extra);
       case u.GlobalDiscoveryTab.APPS:
         if (null != t.newSessionState) {
           let n = (0, a.PM)(),
             {
-              guildId: i,
-              entrypoint: l
+              guildId: l,
+              entrypoint: i
             } = t.newSessionState;
           if (r.z8.setState({
               sessionId: n,
-              guildId: null != i ? i : null,
-              entrypoint: l,
+              guildId: null != l ? l : null,
+              entrypoint: i,
               trackedOpenedFromExternalEntrypoint: !1
             }), c.default.track(m.rMx.APP_DIRECTORY_OPENED, {
-              source: null == l ? void 0 : l.name,
+              source: null == i ? void 0 : i.name,
               session_id: n,
-              guild_id: i,
-              user_id: null === (f = s.default.getCurrentUser()) || void 0 === f ? void 0 : f.id
+              guild_id: l,
+              user_id: null === (b = s.default.getCurrentUser()) || void 0 === b ? void 0 : b.id
             }), t.newSessionState.restorePreviousView) return e(function() {
             let {
               lastItem: e
@@ -71,19 +71,19 @@ n.r(t), n.d(t, {
         if (null != t.categoryId) return (0, o.uL)(m.Z5c.GLOBAL_DISCOVERY_APPS_CATEGORY(t.categoryId.toString()));
         else return (0, o.uL)(m.Z5c.GLOBAL_DISCOVERY_APPS);
       case u.GlobalDiscoveryTab.QUESTS:
-        return (0, l.navigateToQuestHome)({
+        return (0, i.navigateToQuestHome)({
           fromContent: t.questContent,
           questId: t.questId
         });
       default:
-        throw Error("[transitionToGlobalDiscovery] Unhandled tab type: ".concat(b))
+        throw Error("[transitionToGlobalDiscovery] Unhandled tab type: ".concat(f))
     }
   }
 }), n(610138), n(216116), n(78328), n(815648), n(47120), n(411104);
 var r = n(258971),
   a = n(726115),
-  i = n(859921),
-  l = n(341907),
+  l = n(859921),
+  i = n(341907),
   o = n(703656),
   s = n(594174),
   c = n(626135),
@@ -91,4 +91,4 @@ var r = n(258971),
   u = n(49898),
   m = n(981631),
   h = n(979007),
-  p = n(128449)
+  x = n(128449)

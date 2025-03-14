@@ -5,7 +5,7 @@ n.d(t, {
   MP: () => T,
   Mg: () => y,
   Nl: () => C,
-  Ns: () => v,
+  Ns: () => b,
   Rx: () => N,
   nX: () => w,
   sc: () => R
@@ -46,10 +46,10 @@ function m(e) {
 }
 let g = 4,
   E = new f.Yd("SDP");
-var v = function(e) {
+var b = function(e) {
   return e.SENDRECV = "sendrecv", e.SENDONLY = "sendonly", e.RECVONLY = "recvonly", e.INACTIVE = "inactive", e
 }({});
-let b = "UDP/TLS/RTP/SAVPF";
+let v = "UDP/TLS/RTP/SAVPF";
 
 function y(e) {
   switch (e) {
@@ -127,7 +127,7 @@ function S(e) {
     ssrcs: f,
     extensions: h,
     rtxPayload: E,
-    sendingVideo: v,
+    sendingVideo: b,
     enableAudioNack: y
   } = e;
   if ("inactive" === o && !p.WS) return {
@@ -139,7 +139,7 @@ function S(e) {
     fmtp: [],
     payloads: l,
     port: 0,
-    protocol: b,
+    protocol: v,
     rtp: [{
       codec: "NULL",
       payload: l,
@@ -151,7 +151,7 @@ function S(e) {
   let {
     media: [O]
   } = d.parse(a);
-  if (O.type = n, O.protocol = b, O.payloads = l, O.setup = r, O.mid = t, O.rtcpMux = "rtcp-mux", O.direction = o, O.ssrcs = f, f.length > 0 && (null != E && (O.ssrcGroups = i()(f, g).map(e => {
+  if (O.type = n, O.protocol = v, O.payloads = l, O.setup = r, O.mid = t, O.rtcpMux = "rtcp-mux", O.direction = o, O.ssrcs = f, f.length > 0 && (null != E && (O.ssrcGroups = i()(f, g).map(e => {
       let t = e[0].id;
       return {
         semantics: "FID",
@@ -184,7 +184,7 @@ function S(e) {
         payload: l,
         rate: 48e3
       }), s === _.ad.OPUS && O.fmtp.push({
-        config: "minptime=10;useinbandfec=1;usedtx=".concat(v ? "0" : "1"),
+        config: "minptime=10;useinbandfec=1;usedtx=".concat(b ? "0" : "1"),
         payload: l
       }), O.maxptime = 60;
       break;
@@ -249,7 +249,7 @@ function T(e) {
       if ("video" === f && (0 === l || 0 === d)) return;
       let g = "audio" === f ? i : s,
         E = "audio" === f ? o : l,
-        v = "audio" === f ? a : c;
+        b = "audio" === f ? a : c;
       p.push(S({
         mid: m,
         type: f,
@@ -258,7 +258,7 @@ function T(e) {
         baseSDP: n,
         codec: g,
         payload: E,
-        bitrate: v,
+        bitrate: b,
         ssrcs: O(u, r, "audio" === f ? "a" : "v"),
         extensions: _
       }))
@@ -334,20 +334,20 @@ function N(e) {
       cname: m,
       type: g,
       direction: E,
-      mid: v
+      mid: b
     } = e;
     "" !== m ? t = O(m, d, "audio" === g ? "a" : "v") : (t = [], "sendonly" === E ? E = "inactive" : "sendrecv" === E && (E = "recvonly"));
-    let b = "audio" === g ? r : a,
+    let v = "audio" === g ? r : a,
       y = "audio" === g ? i : s,
       I = "audio" === g ? null : u,
       T = "audio" === g ? o : l;
     p.push(S({
-      mid: v,
+      mid: b,
       type: g,
       setup: h,
       direction: E,
       baseSDP: n,
-      codec: b,
+      codec: v,
       payload: y,
       bitrate: T,
       ssrcs: t,

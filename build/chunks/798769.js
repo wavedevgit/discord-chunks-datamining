@@ -25,8 +25,8 @@ function p(e) {
     useWinterTheme: m = !1,
     onClose: g,
     hideCloseButton: E,
-    showTrialBadge: v,
-    showDiscountBadge: b,
+    showTrialBadge: b,
+    showDiscountBadge: v,
     isGift: y,
     giftRecipient: O
   } = e, I = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), S = m ? d.nL.WINTER : d.nL.DEFAULT, T = () => {
@@ -80,8 +80,8 @@ function p(e) {
       className: _.header,
       onClose: g,
       headerTheme: S,
-      showTrialBadge: v,
-      showDiscountBadge: b
+      showTrialBadge: b,
+      showDiscountBadge: v
     })
   })
 }

@@ -41,8 +41,8 @@ let h = 5,
   m = /\.webp($|\?|#)/i,
   g = /\.avif($|\?|#)/i,
   E = [16, 20, 22, 24, 28, 32, 40, 44, 48, 56, 60, 64, 80, 96, 100, 128, 160, 240, 256, 300, 320, 480, 512, 600, 640, 1024, 1280, 1536, 2048, 3072, 4096],
-  v = 4096,
-  b = new(a())({
+  b = 4096,
+  v = new(a())({
     max: 1e3
   });
 
@@ -73,7 +73,7 @@ function I(e, t, n) {
     callbacks: r,
     url: i
   } = t;
-  if (e) b.del(i);
+  if (e) v.del(i);
   else {
     let {
       width: e,
@@ -84,18 +84,18 @@ function I(e, t, n) {
       loaded: !0,
       width: e,
       height: r
-    }, b.set(i, t)
+    }, v.set(i, t)
   }
   null != r && r.forEach(n => n(e, t))
 }
 
 function S(e) {
-  let t = b.get(e);
+  let t = v.get(e);
   return null != t && t.loaded
 }
 
 function T(e, t) {
-  let n = b.get(e);
+  let n = v.get(e);
   if (null != n && n.loaded) return null != t && u.Z.awaitOnline().then(() => {
     null != n && null != n.callbacks && n.callbacks.forEach(t => {
       null != n ? t(!1, n) : t(!0, {
@@ -109,7 +109,7 @@ function T(e, t) {
     return null == n && (n = {
       url: e,
       loaded: !1
-    }, b.set(e, n), O(n)), null != t && (r = t.bind(null), null == n.callbacks && (n.callbacks = new Set), n.callbacks.add(r)), () => {
+    }, v.set(e, n), O(n)), null != t && (r = t.bind(null), null == n.callbacks && (n.callbacks = new Set), n.callbacks.add(r)), () => {
       null != r && null != n && (null != n.callbacks && n.callbacks.delete(r), null != n.backoff && n.backoff.cancel())
     }
   }
@@ -148,8 +148,8 @@ function C(e) {
   let h = (0, c.Tj)({
     width: o,
     height: a,
-    maxWidth: v,
-    maxHeight: v
+    maxWidth: b,
+    maxHeight: b
   });
   return o = h.width, a = h.height, (o !== n || a !== r) && (p.width = 0 | o, p.height = 0 | a), i().isEmpty(p) || (_ += "?" + s.stringify(p)), _
 }

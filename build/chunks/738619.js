@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(540059),
   g = n(243778),
   E = n(843693),
-  v = n(246642),
-  b = n(921227),
+  b = n(246642),
+  v = n(921227),
   y = n(314897),
   O = n(430824),
   I = n(699516),
@@ -92,7 +92,7 @@ function G(e, t) {
   return i
 }
 let B = [];
-class V extends i.PureComponent {
+class F extends i.PureComponent {
   componentDidMount() {
     this.timeout = setTimeout(() => {
       this.setState({
@@ -147,7 +147,7 @@ class V extends i.PureComponent {
   }
 }
 
-function F(e) {
+function V(e) {
   let {
     channel: t,
     guild: n
@@ -179,12 +179,12 @@ function Z(e) {
     isComboing: g
   } = e, {
     rateLimitPerUser: E
-  } = u, b = N.default.getCurrentUser(), y = O.Z.getGuild(t), S = E > 0, T = f ? [] : l()(s).keys().filter(e => e !== (null == b ? void 0 : b.id)).reject(e => I.Z.isBlockedOrIgnored(e)).map(e => N.default.getUser(e)).filter(R.lm).map(e => P.ZP.getName(t, u.id, e)).value(), A = (0, m.R6)("TypingUsers");
-  if (0 === T.length && !S && !g) return i && null != n ? (0, r.jsx)(V, {
+  } = u, v = N.default.getCurrentUser(), y = O.Z.getGuild(t), S = E > 0, T = f ? [] : l()(s).keys().filter(e => e !== (null == v ? void 0 : v.id)).reject(e => I.Z.isBlockedOrIgnored(e)).map(e => N.default.getUser(e)).filter(R.lm).map(e => P.ZP.getName(t, u.id, e)).value(), A = (0, m.R6)("TypingUsers");
+  if (0 === T.length && !S && !g) return i && null != n ? (0, r.jsx)(F, {
     activity: n,
     isFocused: o,
     isRefreshChatInputEnabled: A
-  }) : (0, r.jsx)(F, {
+  }) : (0, r.jsx)(V, {
     channel: u,
     guild: y
   });
@@ -218,7 +218,7 @@ function Z(e) {
     }), A ? null : (0, r.jsx)(h.Z, {
       channel: u,
       isThreadCreation: f
-    }), p && g && (0, r.jsx)(v.Z, {
+    }), p && g && (0, r.jsx)(b.Z, {
       channelId: u.id
     })]
   })
@@ -231,7 +231,7 @@ function H(e) {
   } = e, i = U(e, ["channel", "isThreadCreation"]);
   let o = (0, c.e7)([S.Z], () => S.Z.findActivity(e => null != e.application_id)),
     a = (0, c.e7)([E.ZP, y.default], () => E.ZP.getUserCombo(y.default.getId(), t.id)),
-    s = (0, c.e7)([b.Z, p.Z], () => (0, _.Z)(t, o, b.Z, p.Z)),
+    s = (0, c.e7)([v.Z, p.Z], () => (0, _.Z)(t, o, v.Z, p.Z)),
     l = j(M({}, i), {
       baseTextColor: (0, d.dQu)(u.Z.colors.INTERACTIVE_NORMAL).hex(),
       activeTextColor: (0, d.dQu)(u.Z.colors.INTERACTIVE_NORMAL).hex(),

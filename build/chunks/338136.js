@@ -1,6 +1,4 @@
-/** Chunk was on web.js **/
-"use strict";
-var r = {
+/** Chunk was on 78114 **/
+e.exports = {
   customButton: "customButton__70335"
-};
-e.exports = r
+}

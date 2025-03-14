@@ -49,8 +49,8 @@ class h extends(r = o.Component) {
       onKeyPress: m,
       autoComplete: g,
       forwardedRef: E,
-      closeIconClassName: v,
-      searchIconClassName: b,
+      closeIconClassName: b,
+      searchIconClassName: v,
       cta: y
     } = this.props, O = null != r && r.length > 0, I = null != E ? E : this._textInputRef;
     return (0, i.jsx)(l.tEY, {
@@ -89,12 +89,12 @@ class h extends(r = o.Component) {
           children: (0, i.jsx)(l.k$p, {
             size: "md",
             color: "currentColor",
-            className: s()(u.clearIcon, v)
+            className: s()(u.clearIcon, b)
           })
         }) : (0, i.jsx)(l._Ve, {
           size: "md",
           color: "currentColor",
-          className: s()(u.searchIcon, b),
+          className: s()(u.searchIcon, v),
           "aria-label": c.NW.string(c.t["5h0QOD"])
         })]
       })

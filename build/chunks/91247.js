@@ -75,7 +75,7 @@ function p(e, t, n, o, l) {
   var u, f, _;
   let p = h(t);
   null != o && r.Z.addDetail("payload_size(kb)", Math.round(o.uncompressed_byte_size / 1024)), r.Z.addDetail("server_time(ms)", null !== (u = p.identify_total_server_duration_ms) && void 0 !== u ? u : 0);
-  let m = d(c({}, o, p, b(t), l), {
+  let m = d(c({}, o, p, v(t), l), {
     duration_ms_since_identify_start: n - e.identifyStartTime,
     duration_ms_since_connection_start: n - e.connectionStartTime,
     duration_ms_since_emit_start: Date.now() - n,
@@ -98,7 +98,7 @@ function h(e) {
   } = e, n = {};
   try {
     let e = JSON.parse(t);
-    null != e[0] && "" !== e[0] && e[0].startsWith("gateway-") && (n.identify_total_server_duration_ms = Math.floor(e[1].micros / 1e3)), v(e, (e, t) => {
+    null != e[0] && "" !== e[0] && e[0].startsWith("gateway-") && (n.identify_total_server_duration_ms = Math.floor(e[1].micros / 1e3)), b(e, (e, t) => {
       "start_session" === e ? n.identify_api_duration_ms = Math.floor(t / 1e3) : "guilds_connect" === e && (n.identify_guilds_duration_ms = Math.floor(t / 1e3))
     })
   } catch (e) {}
@@ -125,16 +125,16 @@ function E(e, t) {
   return n
 }
 
-function v(e, t) {
+function b(e, t) {
   if (null != e && e.length > 0)
     for (let n = 0; n < e.length; n += 2) {
       let r = e[n],
         i = e[n + 1];
-      t(r, i.micros), v(i.calls, t)
+      t(r, i.micros), b(i.calls, t)
     }
 }
 
-function b(e) {
+function v(e) {
   let {
     guilds: t
   } = e, n = 0, r = 0;
@@ -170,8 +170,8 @@ function y(e) {
     } = e,
     g = f(e, ["guilds", "merged_presences", "merged_members", "read_state", "private_channels", "user_guild_settings", "user_settings", "user_settings_proto", "experiments", "guild_experiments", "relationships", "users"]),
     E = [],
-    v = [],
     b = [],
+    v = [],
     y = [],
     O = [],
     I = [],
@@ -190,7 +190,7 @@ function y(e) {
         guild_scheduled_events: a
       } = e,
       s = f(e, ["threads", "guild_scheduled_events"]);
-    E.push("partial" === e.data_mode ? e.partial_updates.channels : e.channels), v.push("partial" === e.data_mode ? e.partial_updates.roles : e.roles), b.push("partial" === e.data_mode ? e.partial_updates.emojis : e.emojis), y.push(o), O.push("partial" === e.data_mode ? e.partial_updates.stickers : e.stickers), I.push(r), S.push(a), T.push(s, i)
+    E.push("partial" === e.data_mode ? e.partial_updates.channels : e.channels), b.push("partial" === e.data_mode ? e.partial_updates.roles : e.roles), v.push("partial" === e.data_mode ? e.partial_updates.emojis : e.emojis), y.push(o), O.push("partial" === e.data_mode ? e.partial_updates.stickers : e.stickers), I.push(r), S.push(a), T.push(s, i)
   }), {
     presences_size: JSON.stringify(null !== (t = null == o ? void 0 : o.friends) && void 0 !== t ? t : []).length,
     users_size: JSON.stringify(m).length,
@@ -204,8 +204,8 @@ function y(e) {
     guild_channels_size: JSON.stringify(E).length,
     guild_members_size: JSON.stringify(null != a ? a : []).length,
     guild_presences_size: JSON.stringify(null !== (n = null == o ? void 0 : o.guilds) && void 0 !== n ? n : []).length,
-    guild_roles_size: JSON.stringify(v).length,
-    guild_emojis_size: JSON.stringify(b).length,
+    guild_roles_size: JSON.stringify(b).length,
+    guild_emojis_size: JSON.stringify(v).length,
     guild_threads_size: JSON.stringify(y).length,
     guild_stickers_size: JSON.stringify(O).length,
     guild_events_size: JSON.stringify(S).length,

@@ -1,6 +1,6 @@
-/** Chunk was on 69423 **/
+/** Chunk was on 98697 **/
 n.d(t, {
-  Z: () => h
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -23,7 +23,7 @@ function f(e) {
   null != n && (0, u.RK)(n, e)
 }
 
-function m(e) {
+function h(e) {
   var t, n;
   let {
     channelId: i
@@ -65,14 +65,14 @@ function m(e) {
   }) : null
 }
 
-function h() {
+function m() {
   let e = (0, d.Z)();
   return null == e ? null : (0, r.jsxs)(l.qXd, {
     className: E.container,
     color: l.DM8.DEFAULT,
     children: [(0, r.jsx)("div", {
       children: p.NW.string(p.t.Ul1RJS)
-    }), (0, r.jsx)(m, {
+    }), (0, r.jsx)(h, {
       channelId: e.id
     }), (0, r.jsx)(l.zxk, {
       className: E.acceptButton,

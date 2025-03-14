@@ -50,17 +50,17 @@ function E(e, t) {
   return n
 }
 
-function v(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function b(e, t) {
+function v(e, t) {
   let {
     disabled: n,
     type: o
-  } = e, [m, E] = (0, d.Iu)(e => [e.activeView, e.pickerId], s.X), b = i.useContext(c.ZP), y = !1, [O, I] = i.useState(!1), S = m === _.X1.STICKER, T = !1, N = i.useCallback(() => {
+  } = e, [m, E] = (0, d.Iu)(e => [e.activeView, e.pickerId], s.X), v = i.useContext(c.ZP), y = !1, [O, I] = i.useState(!1), S = m === _.X1.STICKER, T = !1, N = i.useCallback(() => {
     (0, d.RO)(_.X1.STICKER, o)
   }, [o]);
   i.useEffect(() => {
@@ -74,10 +74,10 @@ function b(e, t) {
           I(!1)
         })
       };
-    return b.addListener("sticker-suggestions-shown", e), b.addListener("sticker-suggestions-hidden", t), () => {
-      b.removeListener("sticker-suggestions-shown", e), b.removeListener("sticker-suggestions-hidden", t)
+    return v.addListener("sticker-suggestions-shown", e), v.addListener("sticker-suggestions-hidden", t), () => {
+      v.removeListener("sticker-suggestions-shown", e), v.removeListener("sticker-suggestions-hidden", t)
     }
-  }, [b]);
+  }, [v]);
   let {
     Component: A,
     events: C,
@@ -88,7 +88,7 @@ function b(e, t) {
   return (0, r.jsx)("div", {
     className: a()(_.CT, h.buttonContainer),
     ref: t,
-    children: (0, r.jsx)(f.Z, v(g({
+    children: (0, r.jsx)(f.Z, b(g({
       innerClassName: a()(h.button, h.stickerButton, {
         [h.stickerButtonTilted]: w && !S
       })
@@ -110,4 +110,4 @@ function b(e, t) {
     }))
   })
 }
-let y = i.memo(i.forwardRef(b))
+let y = i.memo(i.forwardRef(v))

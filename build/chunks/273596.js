@@ -148,7 +148,7 @@ function j(e) {
           throw Error("[getItemHeight] Failed for section: ".concat(e))
       }
     }, []),
-    Q = i.useCallback(async (e, t, n, r) => {
+    X = i.useCallback(async (e, t, n, r) => {
       var i, o;
       await l(e, t, n, r);
       let a = null === (o = W.current) || void 0 === o ? void 0 : null === (i = o.getScrollerState()) || void 0 === i ? void 0 : i.scrollTop;
@@ -156,20 +156,20 @@ function j(e) {
         scrollPosition: a
       })
     }, [l]),
-    X = i.useCallback((e, t, n, i) => {
+    Q = i.useCallback((e, t, n, i) => {
       if (0 === e) {
         let e = s[t];
         return (0, r.jsx)("div", {
           style: n,
           children: (0, r.jsx)(v.ZP, {
             guildId: e,
-            onClick: async e => await Q(e, t, A, T),
+            onClick: async e => await X(e, t, A, T),
             onView: e => H(e)
           })
         }, i)
       }
       return null
-    }, [s, Q, H, A]);
+    }, [s, X, H, A]);
   i.useEffect(() => {
     let e = W.current;
     return () => {
@@ -214,7 +214,7 @@ function j(e) {
       columns: M,
       itemGutter: 16,
       padding: $,
-      renderItem: X,
+      renderItem: Q,
       renderSection: z,
       getSectionHeight: Y,
       getItemKey: K,

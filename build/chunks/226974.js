@@ -59,8 +59,8 @@ var u = [],
   m = !1,
   g = !1,
   E = "function" == typeof setTimeout ? setTimeout : null,
-  v = "function" == typeof clearTimeout ? clearTimeout : null,
-  b = "undefined" != typeof setImmediate ? setImmediate : null;
+  b = "function" == typeof clearTimeout ? clearTimeout : null,
+  v = "undefined" != typeof setImmediate ? setImmediate : null;
 
 function y(e) {
   for (var t = r(d); null !== t;) {
@@ -82,7 +82,7 @@ function O(e) {
 }
 
 function I(e, n) {
-  m = !1, g && (g = !1, v(N), N = -1), h = !0;
+  m = !1, g && (g = !1, b(N), N = -1), h = !0;
   var o = p;
   try {
     for (y(n), _ = r(u); null !== _ && (!(_.expirationTime > n) || e && !R());) {
@@ -127,8 +127,8 @@ function P() {
     }
   } else S = !1
 }
-if ("function" == typeof b) a = function() {
-  b(P)
+if ("function" == typeof v) a = function() {
+  v(P)
 };
 else if ("undefined" != typeof MessageChannel) {
   var w = new MessageChannel,
@@ -219,7 +219,7 @@ t.unstable_IdlePriority = 5, t.unstable_ImmediatePriority = 1, t.unstable_LowPri
     startTime: o,
     expirationTime: s,
     sortIndex: -1
-  }, o > a ? (e.sortIndex = o, n(d, e), null === r(u) && e === r(d) && (g ? (v(N), N = -1) : g = !0, x(O, o - a))) : (e.sortIndex = s, n(u, e), m || h || (m = !0, L(I))), e
+  }, o > a ? (e.sortIndex = o, n(d, e), null === r(u) && e === r(d) && (g ? (b(N), N = -1) : g = !0, x(O, o - a))) : (e.sortIndex = s, n(u, e), m || h || (m = !0, L(I))), e
 }, t.unstable_shouldYield = R, t.unstable_wrapCallback = function(e) {
   var t = p;
   return function() {

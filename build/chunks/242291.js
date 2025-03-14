@@ -27,8 +27,8 @@ var r = n(399606),
   m = n(51144),
   g = n(208049),
   E = n(763296),
-  v = n(697426),
-  b = n(641015),
+  b = n(697426),
+  v = n(641015),
   y = n(893663),
   O = n(710111),
   I = n(981631);
@@ -59,11 +59,11 @@ function A(e) {
 }
 
 function C(e, t, n) {
-  (0, g.XE)(t, e, v.YQ.SOUNDBOARD), (0, u.kq)(t, e, __OVERLAY__, n)
+  (0, g.XE)(t, e, b.YQ.SOUNDBOARD), (0, u.kq)(t, e, __OVERLAY__, n)
 }
 
 function R(e, t) {
-  (0, g.XE)(t, e, v.YQ.JOINED_VOICE_CHANNEL), (0, u.vy)(t, e, __OVERLAY__)
+  (0, g.XE)(t, e, b.YQ.JOINED_VOICE_CHANNEL), (0, u.vy)(t, e, __OVERLAY__)
 }
 
 function P() {
@@ -74,7 +74,7 @@ async function w(e) {
   let t = _.default.getCurrentUser(),
     n = (0, o.Z)(),
     r = (0, y.k9)(e);
-  if (null == n || d.Lr.has(n.type) || null == r || !h.ZP.canUseCustomCallSounds(t) || !(0, b.D)()) return;
+  if (null == n || d.Lr.has(n.type) || null == r || !h.ZP.canUseCustomCallSounds(t) || !(0, v.D)()) return;
   await (0, g.w)();
   let i = r.guildId === O.hY ? O.X8 : r.guildId,
     a = E.Z.getSound(i, r.soundId);
@@ -100,8 +100,8 @@ function L(e, t) {
   (0, s.PS)(e, n => {
     n.joinSound = void 0, M({
       guildId: e,
-      changeType: v.MW.REMOVED,
-      soundType: v.jy.ENTRY,
+      changeType: b.MW.REMOVED,
+      soundType: b.jy.ENTRY,
       location: t
     })
   }, s.fy.INFREQUENT_USER_ACTION)
@@ -110,8 +110,8 @@ function L(e, t) {
 function x(e, t, n) {
   (0, s.PS)(e, r => {
     let i = t.guildId === O.X8,
-      o = i ? v.H$.DEFAULT : v.H$.CUSTOM,
-      a = null != r.joinSound ? v.MW.UPDATED : v.MW.ADDED;
+      o = i ? b.H$.DEFAULT : b.H$.CUSTOM,
+      a = null != r.joinSound ? b.MW.UPDATED : b.MW.ADDED;
     r.joinSound = {
       soundId: t.soundId,
       guildId: i ? O.hY : t.guildId
@@ -119,7 +119,7 @@ function x(e, t, n) {
       guildId: e,
       changeType: a,
       soundSource: o,
-      soundType: v.jy.ENTRY,
+      soundType: b.jy.ENTRY,
       location: n
     })
   }, s.fy.INFREQUENT_USER_ACTION)

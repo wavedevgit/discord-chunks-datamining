@@ -22,8 +22,8 @@ var r = n(392711),
   m = n(594174),
   g = n(33039),
   E = n(979651),
-  v = n(5192),
-  b = n(933546),
+  b = n(5192),
+  v = n(933546),
   y = n(354459),
   O = n(981631),
   I = n(65154);
@@ -84,11 +84,11 @@ function P(e) {
       return "\x01".concat(e.sortKey);
     case y.fO.HIDDEN_STREAM:
     case y.fO.STREAM:
-      return "".concat(e.userVideo ? "\x02" : "\x03").concat((0, b.Z)(e.userNick, e.user), "\x03");
+      return "".concat(e.userVideo ? "\x02" : "\x03").concat((0, v.Z)(e.userNick, e.user), "\x03");
     case y.fO.USER:
       var t, n;
       let r = "\x05";
-      return (null === (t = e.voiceState) || void 0 === t ? void 0 : t.selfVideo) ? r = "\x03" : (null === (n = e.voiceState) || void 0 === n ? void 0 : n.selfStream) && (r = "\x04"), "".concat(r).concat((0, b.Z)(e.userNick, e.user))
+      return (null === (t = e.voiceState) || void 0 === t ? void 0 : t.selfVideo) ? r = "\x03" : (null === (n = e.voiceState) || void 0 === n ? void 0 : n.selfStream) && (r = "\x04"), "".concat(r).concat((0, v.Z)(e.userNick, e.user))
   }
 }
 var w = function(e) {
@@ -195,9 +195,9 @@ class D {
   _getParticipantsForUser(e) {
     var t, n, r, i, o, s;
     let l, f;
-    let b = [],
+    let v = [],
       O = m.default.getUser(e);
-    if (null == O) return b;
+    if (null == O) return v;
     let S = E.Z.getVoiceStateForChannel(this.channelId, e),
       N = E.Z.getVoicePlatformForChannel(this.channelId, e),
       C = _.Z.getChannel(this.channelId),
@@ -216,9 +216,9 @@ class D {
       lastSpoke: null !== (i = this.lastSpoke[e]) && void 0 !== i ? i : 0,
       soundsharing: h.Z.isSoundSharing(e),
       ringing: R,
-      userNick: v.ZP.getName(null == C ? void 0 : C.getGuildId(), this.channelId, O),
+      userNick: b.ZP.getName(null == C ? void 0 : C.getGuildId(), this.channelId, O),
       localVideoDisabled: p.Z.isLocalVideoDisabled(O.id)
-    }), b.push(l));
+    }), v.push(l));
     let P = null !== (o = u.Z.getStreamForUser(e, null == C ? void 0 : C.getGuildId())) && void 0 !== o ? o : u.Z.getActiveStreamForUser(e, null == C ? void 0 : C.getGuildId());
     if (null != P && P.channelId === this.channelId) {
       let t = (0, c.V9)(P),
@@ -233,11 +233,11 @@ class D {
         id: t,
         userVideo: null !== (s = null == S ? void 0 : S.selfVideo) && void 0 !== s && s,
         user: O,
-        userNick: v.ZP.getName(null == C ? void 0 : C.getGuildId(), this.channelId, O),
+        userNick: b.ZP.getName(null == C ? void 0 : C.getGuildId(), this.channelId, O),
         stream: P
-      }), b.push(f)
+      }), v.push(f)
     }
-    return b
+    return v
   }
   constructor(e) {
     S(this, "channelId", void 0), S(this, "call", void 0), S(this, "participants", {}), S(this, "lastSpoke", {}), S(this, "guildRingingUsers", new Set), S(this, "participantByIndex", new o.h(e => {

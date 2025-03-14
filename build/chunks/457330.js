@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => v
 }), n(610138), n(216116), n(78328), n(815648), n(47120);
 var r = n(990547),
   i = n(544891),
@@ -55,7 +55,7 @@ function g(e, t) {
 }
 let E = new l.Z("ConnectedAccounts");
 
-function v(e, t) {
+function b(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
   return i.tn.post({
     url: _.ANM.CONNECTIONS_CALLBACK(e),
@@ -71,7 +71,7 @@ function v(e, t) {
     rejectWithError: !1
   })
 }
-let b = {
+let v = {
   fetch: () => i.tn.get({
     url: _.ANM.CONNECTIONS,
     oldFormErrors: !0,
@@ -120,13 +120,13 @@ let b = {
         rejectWithError: !1
       }),
       {
-        state: v
+        state: b
       } = (0, a.xp)(null !== (t = E.body.url) && void 0 !== t ? t : "");
-    return null == v || s.g.getCurrentConfig({
+    return null == b || s.g.getCurrentConfig({
       location: "ConnectedAccountsActionCreators.authorize"
-    }).enabled || u.Z.addPendingAuthorizedState(v), E
+    }).enabled || u.Z.addPendingAuthorizedState(b), E
   },
-  callback: v,
+  callback: b,
   connect(e, t, n, i, o) {
     var a;
     return f.Z.put({
@@ -259,7 +259,7 @@ let b = {
       });
       return
     }
-    return await v(e, {
+    return await b(e, {
       code: n,
       state: r,
       two_way_link_code: o,

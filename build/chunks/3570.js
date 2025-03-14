@@ -1,23 +1,23 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  T: () => s,
+  T: () => l,
   s: () => c
 });
 var r = n(536285),
   i = n(703656),
   o = n(314897),
   a = n(358085),
-  l = n(981631);
-let s = a.isPlatformEmbedded ? l.dG4 : (e, t) => {
-    if (!(0, i.DB)()) return r.default.request(l.Etm.DEEP_LINK, {
+  s = n(981631);
+let l = a.isPlatformEmbedded ? s.dG4 : (e, t) => {
+    if (!(0, i.DB)()) return r.default.request(s.Etm.DEEP_LINK, {
       type: e,
       params: t
     })
   },
-  c = a.isPlatformEmbedded ? l.dG4 : (e, t) => {
+  c = a.isPlatformEmbedded ? s.dG4 : (e, t) => {
     if (!o.default.isAuthenticated()) {
       var n, r;
-      return s(e, (n = function(e) {
+      return l(e, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);

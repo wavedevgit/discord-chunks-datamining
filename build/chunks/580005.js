@@ -50,12 +50,12 @@ function E(e, t) {
   return n
 }
 
-function v(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = 10,
+let v = 10,
   y = 100,
   O = 100,
   I = new l.ZP({
@@ -70,7 +70,7 @@ let b = 10,
     },
     afterCompute: () => {},
     numFrequentlyItems: O,
-    maxSamples: b
+    maxSamples: v
   }),
   S = null,
   T = null;
@@ -103,7 +103,7 @@ function C() {
   var e;
   let t = null === (e = c.Z.frecencyWithoutFetchingLatest.guildAndChannelFrecency) || void 0 === e ? void 0 : e.guildAndChannels;
   if (null == t) return !1;
-  I.overwriteHistory(o().mapValues(t, e => v(g({}, e), {
+  I.overwriteHistory(o().mapValues(t, e => b(g({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), R.pendingUsages)
 }
@@ -135,7 +135,7 @@ class P extends(r = a.ZP.PersistedStore) {
     return null != t ? this.getScoreWithoutFetchingLatest(t) : 0
   }
   getMaxScore() {
-    return O * b
+    return O * v
   }
   getBonusScore() {
     return y

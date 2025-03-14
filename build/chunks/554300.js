@@ -76,8 +76,8 @@ let g = i.forwardRef(function(e, t) {
       children: m,
       subText: g,
       decorators: E,
-      onClick: v,
-      hovered: b,
+      onClick: b,
+      hovered: v,
       selected: y,
       muted: O,
       to: I,
@@ -94,7 +94,7 @@ let g = i.forwardRef(function(e, t) {
     [u.highlighted]: C,
     [u.active]: y,
     [null != T ? T : ""]: y,
-    [u.clickable]: !y && (null != I || null != v),
+    [u.clickable]: !y && (null != I || null != b),
     [u.wrapperPlated]: null != _
   }), P["aria-selected"] = null !== (n = P["aria-selected"]) && void 0 !== n ? n : y;
   let w = i.useRef(null),
@@ -104,7 +104,7 @@ let g = i.forwardRef(function(e, t) {
       }),
       children: [(0, r.jsx)(c.Z, {
         nameplate: _,
-        hovered: b,
+        hovered: v,
         selected: y,
         content: w.current
       }), (0, r.jsxs)("div", {
@@ -139,14 +139,14 @@ let g = i.forwardRef(function(e, t) {
   return null != I ? (0, r.jsx)(l.tEY, p(f({}, R), {
     children: (0, r.jsx)(s.rU, p(f({
       to: I,
-      onClick: v
+      onClick: b
     }, P), {
       role: "listitem",
       ref: t,
       children: D
     }))
-  })) : null != v ? (0, r.jsx)(l.P3F, p(f({
-    onClick: v,
+  })) : null != b ? (0, r.jsx)(l.P3F, p(f({
+    onClick: b,
     focusProps: R
   }, P), {
     role: "listitem",

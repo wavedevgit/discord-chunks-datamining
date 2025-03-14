@@ -41,7 +41,7 @@ function E(e) {
   return e
 }
 
-function v(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,8 +52,8 @@ function v(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -150,7 +150,7 @@ let O = [...o()(h.nkL).values().map(e => ({
       name: c
     }), p = m.NW.format(m.t.IK1Qvr, {
       name: c
-    })), (0, a.h7j)(e => (0, r.jsx)(a.ConfirmModal, b(E({
+    })), (0, a.h7j)(e => (0, r.jsx)(a.ConfirmModal, v(E({
       header: _,
       confirmText: m.NW.string(m.t["26C4oq"]),
       cancelText: m.NW.string(m.t["ETE/oK"]),

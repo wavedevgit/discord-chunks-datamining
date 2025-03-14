@@ -20,8 +20,8 @@ var r = n(200651),
   m = n(539873),
   g = n(207164),
   E = n(238302),
-  v = n(514361),
-  b = n(572397),
+  b = n(514361),
+  v = n(572397),
   y = n(705262),
   O = n(436774),
   I = n(768762),
@@ -62,7 +62,7 @@ var x = function(e) {
 function M(e) {
   let {
     isCoachmark: t
-  } = e, n = (0, b.q)();
+  } = e, n = (0, v.q)();
   return i.useEffect(() => ((0, E.Kq)(), n(A.rMx.CLIENT_THEME_PREVIEW_VIEWED), () => n(A.rMx.CLIENT_THEME_PREVIEW_CLOSED)), [n]), (0, r.jsx)(y.ZP, {
     type: y.yH.EDITOR,
     children: (0, r.jsx)(y.ZP.BasicAndGradient, {
@@ -176,7 +176,7 @@ function U(e) {
   }, {
     name: P.NW.string(P.t.RPh2oq),
     value: 1
-  }], []), _ = (0, l.e7)([v.Z], () => v.Z.isPreview), m = (0, l.e7)([h.Z], () => h.Z.isUpsellPreview), g = _ || m, y = i.useMemo(() => T.Z.theme, []), O = (0, b.J)(), I = i.useCallback(() => {
+  }], []), _ = (0, l.e7)([b.Z], () => b.Z.isPreview), m = (0, l.e7)([h.Z], () => h.Z.isUpsellPreview), g = _ || m, y = i.useMemo(() => T.Z.theme, []), O = (0, v.J)(), I = i.useCallback(() => {
     _ && O(), m && (0, p.O7)()
   }, [_, m, O]), S = (0, f.Z)(null, g ? I : A.dG4), R = i.useCallback(() => {
     g && (0, u.ZI)({

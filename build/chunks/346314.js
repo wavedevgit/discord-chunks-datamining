@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  P: () => v,
+  P: () => b,
   r: () => E
 });
 var r = n(200651);
@@ -118,7 +118,7 @@ function E(e) {
   }))
 }
 
-function v(e) {
+function b(e) {
   let t = (0, a.e7)([l.Z], () => l.Z.roleStyle);
   return (0, r.jsx)(g, p(f({}, e), {
     roleStyle: t

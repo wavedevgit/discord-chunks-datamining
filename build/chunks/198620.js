@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   B_: () => R,
-  MO: () => v,
-  _M: () => b,
+  MO: () => b,
+  _M: () => v,
   k5: () => A,
   q5: () => y
 }), n(301563), n(47120);
@@ -24,14 +24,14 @@ let f = new Set(["/attachments/", "/ephemeral-attachments/"]),
   g = !1,
   E = !1;
 
-function v(e) {
+function b(e) {
   let t = h.has(e.hostname),
     n = g && d(e.hostname),
     r = Array.from(f).some(t => e.pathname.startsWith(t));
   return (t || n) && r
 }
 
-function b(e) {
+function v(e) {
   var t;
   let n = m.has(e.hostname),
     r = E && d(null !== (t = e.hostname) && void 0 !== t ? t : ""),
@@ -65,7 +65,7 @@ function S(e) {
 function T(e) {
   if (null == e) return !1;
   let t = l.Z.toURLSafe(e.url);
-  return !!(null != t && v(t)) && I(t)
+  return !!(null != t && b(t)) && I(t)
 }
 
 function N(e) {

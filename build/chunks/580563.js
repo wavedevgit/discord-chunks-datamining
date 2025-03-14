@@ -1,4 +1,4 @@
-/** Chunk was on 98806 **/
+/** Chunk was on 96173 **/
 e.exports = {
   title: "title__0396e"
 }

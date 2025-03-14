@@ -3,9 +3,9 @@
 n.d(t, {
   C3: () => E,
   Fg: () => g,
-  Oh: () => b,
+  Oh: () => v,
   cP: () => m,
-  gp: () => v
+  gp: () => b
 }), n(47120);
 var r = n(544891),
   i = n(570140),
@@ -90,7 +90,7 @@ let m = async e => {
     flash: !1,
     jumpType: a.SR.INSTANT
   })
-}, v = (e, t) => {
+}, b = (e, t) => {
   i.Z.dispatch({
     type: "SELECT_NEW_MEMBER_ACTION_CHANNEL",
     guildId: e,
@@ -104,7 +104,7 @@ let m = async e => {
     server_guide_channel_type: "member action",
     channel_action_type: r.actionType
   }), (0, l.Kh)(t)
-}, b = (e, t) => {
+}, v = (e, t) => {
   if (i.Z.dispatch({
       type: "COMPLETE_NEW_MEMBER_ACTION",
       guildId: e,

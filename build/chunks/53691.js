@@ -47,8 +47,8 @@ function p(e) {
     buttonStyles: m,
     onSubscribeModalClose: g,
     showShadow: E = !0,
-    position: v = "floating",
-    buttonSize: b = "md",
+    position: b = "floating",
+    buttonSize: v = "md",
     useLockIcon: y = !1
   } = e, O = (0, s.q_F)({
     transform: t ? "translateY(0%)" : "translateY(120%)",
@@ -62,8 +62,8 @@ function p(e) {
     style: _({}, O),
     className: o()(d.upsellContainer, {
       [d.upsellContainerShadow]: E,
-      [d.upsellContainerFloating]: "floating" === v,
-      [d.upsellContainerInline]: "inline" === v
+      [d.upsellContainerFloating]: "floating" === b,
+      [d.upsellContainerInline]: "inline" === b
     }, h),
     children: [y ? (0, r.jsx)(s.d$P, {
       size: "custom",
@@ -80,7 +80,7 @@ function p(e) {
       className: d.upsellText,
       children: n
     }), "string" == typeof f ? (0, r.jsx)(c.Z, {
-      size: b,
+      size: v,
       className: d.upsellButton,
       shinyButtonClassName: null != m ? m : d.upsellButton,
       subscriptionTier: u.Si.TIER_2,

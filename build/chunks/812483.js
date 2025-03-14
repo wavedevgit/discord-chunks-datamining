@@ -1,8 +1,8 @@
-/** Chunk was on 93886 **/
+/** Chunk was on 20875 **/
 n.d(t, {
-  Z: () => r
+  Z: () => o
 });
-let r = (0, n(818083).B)({
+let o = (0, n(818083).B)({
   kind: "user",
   id: "2024-02_cropped_avatar_desktop_notifications",
   label: "Cropped Avatar Desktop Notifications",

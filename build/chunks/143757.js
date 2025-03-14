@@ -169,11 +169,11 @@ function x(e) {
     frecentApps: n
   } = (0, N.ZC)(), [l, a] = i.useState(void 0), {
     analyticsLocations: s
-  } = (0, g.ZP)(f.Z.APP_DMS_QUICK_LAUNCHER), c = i.useRef(!1), d = (0, u.O)(), p = i.useMemo(() => n.filter(O.lm).slice(0, 8), [n]);
+  } = (0, g.ZP)(f.Z.APP_DMS_QUICK_LAUNCHER_FRECENCY), c = i.useRef(!1), d = (0, u.O)(), p = i.useMemo(() => n.filter(O.lm).slice(0, 8), [n]);
   return i.useLayoutEffect(() => {
     var e;
     !c.current && (c.current = !0, E.default.track(v.rMx.APP_DMS_QUICK_LAUNCHER_IMPRESSION, {
-      apps_dm_quick_launcher_application_ids: null !== (e = p.map(e => Number(e.id))) && void 0 !== e ? e : []
+      apps_dm_quick_launcher_application_ids_frecency_v2: null !== (e = p.map(e => e.id)) && void 0 !== e ? e : []
     }))
   }, [p]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {

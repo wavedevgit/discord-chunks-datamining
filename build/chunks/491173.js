@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(388032),
   g = n(295142);
 let E = (0, d.Mg)(o.Z.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_INSPECTOR_BAR_GRAPHIC_PRIMARY_DIMENSIONS),
-  v = (0, d.Mg)(o.Z.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_INSPECTOR_BAR_GRAPHIC_SECONDARY_DIMENSIONS),
-  b = e => {
+  b = (0, d.Mg)(o.Z.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_INSPECTOR_BAR_GRAPHIC_SECONDARY_DIMENSIONS),
+  v = e => {
     let t = null,
       n = null;
     if (!(0, p.jl)(e) && !(0, p.J8)(e) || (0, p.J8)(e)) {
@@ -35,7 +35,7 @@ let E = (0, d.Mg)(o.Z.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_INSPECTOR_BA
       null != i && (t = m.NW.format(m.t.cZOkbm, {
         source: i.name
       }), n = (0, r.jsx)(h.ZP, {
-        size: v,
+        size: b,
         sticker: (0, p.Zt)(i),
         disableAnimation: !0
       }))
@@ -63,7 +63,7 @@ let E = (0, d.Mg)(o.Z.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_INSPECTOR_BA
     let {
       graphic: s,
       title: u
-    } = b(o), d = (0, p.jl)(o) || (0, p.J8)(o) ? (0, r.jsx)(h.ZP, {
+    } = v(o), d = (0, p.jl)(o) || (0, p.J8)(o) ? (0, r.jsx)(h.ZP, {
       isInteracting: !0,
       size: E,
       sticker: o,

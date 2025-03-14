@@ -51,14 +51,14 @@ function _(e) {
         state: p,
         setOptions: function(n) {
           var r = "function" == typeof n ? n(p.options) : n;
-          b(), p.options = Object.assign({}, h, p.options, r), p.scrollParents = {
+          v(), p.options = Object.assign({}, h, p.options, r), p.scrollParents = {
             reference: (0, u.kK)(e) ? (0, o.Z)(e) : e.contextElement ? (0, o.Z)(e.contextElement) : [],
             popper: (0, o.Z)(t)
           };
           var i = (0, s.Z)((0, c.Z)([].concat(_, p.options.modifiers)));
           return p.orderedModifiers = i.filter(function(e) {
             return e.enabled
-          }), v(), E.update()
+          }), b(), E.update()
         },
         forceUpdate: function() {
           if (!g) {
@@ -98,12 +98,12 @@ function _(e) {
           })
         }),
         destroy: function() {
-          b(), g = !0
+          v(), g = !0
         }
       };
     if (!f(e, t)) return E;
 
-    function v() {
+    function b() {
       p.orderedModifiers.forEach(function(e) {
         var t = e.name,
           n = e.options,
@@ -122,7 +122,7 @@ function _(e) {
       })
     }
 
-    function b() {
+    function v() {
       m.forEach(function(e) {
         return e()
       }), m = []

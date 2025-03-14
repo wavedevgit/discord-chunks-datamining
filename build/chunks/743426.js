@@ -50,13 +50,13 @@ function E(e, t) {
   return n
 }
 
-function v(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function b(e) {
+function v(e) {
   return (null != e ? e : h.Qx) / h.Qx
 }
 
@@ -194,10 +194,10 @@ class O extends a.Z {
     return Promise.resolve()
   }
   setInputVolume(e) {
-    (0, d.zS)().setInputVolume(b(e))
+    (0, d.zS)().setInputVolume(v(e))
   }
   setOutputVolume(e) {
-    (0, d.zS)().setOutputVolume(b(e))
+    (0, d.zS)().setOutputVolume(v(e))
   }
   getAudioInputDevices() {
     return (0, u.Hg)()
@@ -287,9 +287,9 @@ class O extends a.Z {
       width: o,
       height: a
     });
-    let [E, v] = null != l ? l.split(":") : ["", ""];
+    let [E, b] = null != l ? l.split(":") : ["", ""];
     n.setClipsSource({
-      id: v,
+      id: b,
       soundshareId: null != c ? c : 0
     })
   }
@@ -308,7 +308,7 @@ class O extends a.Z {
   getScreenPreviews(e, t) {
     return new Promise(n => {
       null != (0, d.zS)().getScreenPreviews ? (0, d.zS)().getScreenPreviews(e, t, e => {
-        n(e.map((e, t) => v(g({}, e), {
+        n(e.map((e, t) => b(g({}, e), {
           name: "Screen " + (t + 1)
         })))
       }) : n([])

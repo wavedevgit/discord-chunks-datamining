@@ -32,14 +32,14 @@ function E() {
   return null == t && (t = new Map, p.set(e, t)), t
 }
 
-function v(e, t) {
+function b(e, t) {
   let n = p.get(e);
   if (null == n) return !1;
   let r = n.delete(t);
   return 0 === n.size && p.delete(e), r
 }
 
-function b(e, t, n) {
+function v(e, t, n) {
   var r, i, o;
   return ((null !== (o = null === (i = p.get(e)) || void 0 === i ? void 0 : null === (r = i.get(t)) || void 0 === r ? void 0 : r.flags) && void 0 !== o ? o : f.Dg.NONE) & n) === n
 }
@@ -109,7 +109,7 @@ function T(e) {
       channelId: r,
       sessionId: i
     } = t, o = !1, a = g;
-    return n === h && i === m && (g = null != r ? r : null), a !== g && (o = p.delete(f.Yn.DEFAULT) || o), null == r ? o = n === h && i === m ? p.delete(f.Yn.DEFAULT) || o : v(f.Yn.DEFAULT, n) || o : n === h && i !== m ? o = p.delete(f.Yn.DEFAULT) || o : n !== h && r !== c.Z.getChannelId() && (o = v(f.Yn.DEFAULT, n) || o), o || e
+    return n === h && i === m && (g = null != r ? r : null), a !== g && (o = p.delete(f.Yn.DEFAULT) || o), null == r ? o = n === h && i === m ? p.delete(f.Yn.DEFAULT) || o : b(f.Yn.DEFAULT, n) || o : n === h && i !== m ? o = p.delete(f.Yn.DEFAULT) || o : n !== h && r !== c.Z.getChannelId() && (o = b(f.Yn.DEFAULT, n) || o), o || e
   }, !1)
 }
 class N extends(r = i.ZP.Store) {
@@ -125,19 +125,19 @@ class N extends(r = i.ZP.Store) {
   getSpeakers() {
     var e, t;
     let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : f.Yn.DEFAULT;
-    return Array.from(null !== (t = null === (e = p.get(n)) || void 0 === e ? void 0 : e.keys()) && void 0 !== t ? t : []).filter(e => b(n, e, f.Dg.VOICE))
+    return Array.from(null !== (t = null === (e = p.get(n)) || void 0 === e ? void 0 : e.keys()) && void 0 !== t ? t : []).filter(e => v(n, e, f.Dg.VOICE))
   }
   isSpeaking(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : f.Yn.DEFAULT;
-    return b(t, e, f.Dg.VOICE)
+    return v(t, e, f.Dg.VOICE)
   }
   isPrioritySpeaker(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : f.Yn.DEFAULT;
-    return b(t, e, f.Dg.PRIORITY)
+    return v(t, e, f.Dg.PRIORITY)
   }
   isSoundSharing(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : f.Yn.DEFAULT;
-    return b(t, e, f.Dg.SOUNDSHARE)
+    return v(t, e, f.Dg.SOUNDSHARE)
   }
   isAnyoneElseSpeaking() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : f.Yn.DEFAULT;
