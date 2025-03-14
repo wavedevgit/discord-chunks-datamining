@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(695346),
   h = n(981631),
   f = n(930441),
-  b = n(635357),
-  x = n(388032),
+  x = n(635357),
+  b = n(388032),
   N = n(302859),
   _ = n(802138);
 let E = () => {
@@ -33,14 +33,14 @@ let E = () => {
     children: [(0, r.jsx)(d.Text, {
       variant: "eyebrow",
       color: "text-muted",
-      children: x.NW.string(b.Z.USIXU1)
+      children: b.NW.string(x.Z.USIXU1)
     }), (0, r.jsx)(d.j7V, {
       className: a()(_.marginTop8, _.marginBottom20),
       value: e,
-      note: x.NW.string(b.Z["5MdB3t"]),
+      note: b.NW.string(x.Z["5MdB3t"]),
       hideBorder: !0,
       onChange: p.Ex.updateSetting,
-      children: x.NW.string(b.Z.zkEceX)
+      children: b.NW.string(x.Z.zkEceX)
     }), e ? (0, r.jsx)(d.Zbd, {
       className: N.enableCard,
       type: d.Zbd.Types.CUSTOM,
@@ -51,7 +51,7 @@ let E = () => {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/semibold",
             color: "text-normal",
-            children: x.NW.string(b.Z.xAVm7O)
+            children: b.NW.string(x.Z.xAVm7O)
           })
         }), (0, r.jsx)(d.P3F, {
           children: (0, r.jsx)(l.rU, {
@@ -62,7 +62,7 @@ let E = () => {
                 scrollRestoration: !1
               }
             },
-            children: x.NW.string(b.Z.cUIXFR)
+            children: b.NW.string(x.Z.cUIXFR)
           })
         }), (0, r.jsx)(d.G2e, {
           icon: d.ZSh,
@@ -73,12 +73,12 @@ let E = () => {
     }) : null, (0, r.jsx)(d.j7V, {
       className: a()(_.marginTop20, _.marginBottom20),
       value: !!t[f.$Z.FAMILY_CENTER_DIGEST],
-      note: x.NW.string(b.Z["y34S4+"]),
+      note: b.NW.string(x.Z["y34S4+"]),
       hideBorder: !0,
       onChange: function(e) {
         (0, m.pR)(f.$Z.FAMILY_CENTER_DIGEST, e)
       },
-      children: x.NW.string(b.Z.irvJKS)
+      children: b.NW.string(x.Z.irvJKS)
     })]
   })
 }

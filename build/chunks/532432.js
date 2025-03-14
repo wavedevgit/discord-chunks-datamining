@@ -17,8 +17,8 @@ var i = n(120356),
   p = n(654904),
   h = n(993413),
   f = n(921944),
-  b = n(486324),
-  x = n(388032),
+  x = n(486324),
+  b = n(388032),
   N = n(50719);
 let _ = [{
   name: "gif",
@@ -49,10 +49,10 @@ function E(e) {
     className: O,
     title: E,
     titleIcon: w ? (0, r.jsx)(o.IGR, {
-      text: x.NW.string(x.t.y2b7CA),
+      text: b.NW.string(b.t.y2b7CA),
       className: N.newBadge
     }) : void 0,
-    description: P ? x.NW.format(x.t["+CyJu7"], {
+    description: P ? b.NW.format(b.t["+CyJu7"], {
       recentAvatarsLimit: W
     }) : void 0,
     errors: n,
@@ -66,16 +66,16 @@ function E(e) {
         }),
         size: o.zxk.Sizes.SMALL,
         onClick: () => {
-          Z(f.L.TAKE_ACTION), (0, p.$r)(b.pC.AVATAR, C, S, S ? _ : void 0)
+          Z(f.L.TAKE_ACTION), (0, p.$r)(x.pC.AVATAR, C, S, S ? _ : void 0)
         },
-        children: null != j ? j : x.NW.string(x.t["4OynCA"])
+        children: null != j ? j : b.NW.string(b.t["4OynCA"])
       }), t && (0, r.jsx)(o.zxk, {
         className: N.removeButton,
         color: o.zxk.Colors.PRIMARY,
         look: o.zxk.Looks.LINK,
         size: o.zxk.Sizes.SMALL,
         onClick: () => i(null),
-        children: null != C ? x.NW.string(x.t.TDjKDg) : x.NW.string(x.t.twB3f3)
+        children: null != C ? b.NW.string(b.t.TDjKDg) : b.NW.string(b.t.twB3f3)
       })]
     })
   })

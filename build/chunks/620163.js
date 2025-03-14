@@ -17,8 +17,8 @@ var i = n(990547),
   p = n(579806),
   h = n(782568),
   f = n(758182),
-  b = n(163379),
-  x = n(703288),
+  x = n(163379),
+  b = n(703288),
   N = n(574755),
   _ = n(377171),
   E = n(540059),
@@ -71,8 +71,8 @@ var i = n(990547),
   ep = n(88624),
   eh = n(387747),
   ef = n(389650),
-  eb = n(649157),
-  ex = n(593648),
+  ex = n(649157),
+  eb = n(593648),
   eN = n(327885),
   e_ = n(595242),
   eE = n(463153),
@@ -530,7 +530,7 @@ let eG = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eM.NW.string(eM.t.z2jK6e)],
         label: eM.NW.string(eM.t.z2jK6e),
         ariaLabel: eM.NW.string(eM.t.z2jK6e),
-        icon: eq ? (0, r.jsx)(x.Z, {}) : void 0,
+        icon: eq ? (0, r.jsx)(b.Z, {}) : void 0,
         element: N.Z,
         predicate: () => !eX,
         url: eW.Z5c.SETTINGS("clips")
@@ -1216,7 +1216,7 @@ let eG = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eM.NW.string(eM.t.HcoRu7)],
         label: eM.NW.string(eM.t.HcoRu7),
         ariaLabel: eM.NW.string(eM.t.HcoRu7),
-        element: ex.Z,
+        element: eb.Z,
         url: eW.Z5c.SETTINGS("notifications")
       },
       [ek.s6.NOTIFICATIONS_ENABLE_DESKTOP]: {
@@ -1350,7 +1350,7 @@ let eG = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eW.oAB.LOCALE,
         searchableTitles: [eM.NW.string(eM.t.IHMsPj)],
         label: eM.NW.string(eM.t.IHMsPj),
-        element: eb.Z,
+        element: ex.Z,
         url: eW.Z5c.SETTINGS("language")
       },
       [ek.s6.WINDOW_SETTINGS]: {
@@ -1495,7 +1495,7 @@ let eG = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       },
       [ek.s6.CHANGELOG]: {
         section: "changelog",
-        onClick: () => (0, b.Z)(!0),
+        onClick: () => (0, x.Z)(!0),
         searchableTitles: [eM.NW.string(eM.t.LRmNAg)],
         label: eM.NW.string(eM.t.LRmNAg)
       },

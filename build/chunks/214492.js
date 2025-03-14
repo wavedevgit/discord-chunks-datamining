@@ -1,7 +1,7 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  hs: () => x,
-  oF: () => b
+  hs: () => b,
+  oF: () => x
 }), n(47120);
 var r = n(913527),
   i = n.n(r),
@@ -18,7 +18,7 @@ var r = n(913527),
   h = n(981631),
   f = n(701488);
 
-function b() {
+function x() {
   let e = (0, s.Wu)([d.ZP, m.Z, g.Z], () => d.ZP.getGamesSeen(!1).filter(e => !!(0, d.FZ)(e, [d.ZP, m.Z, g.Z]).detectable && null != e.lastLaunched && 30 >= i()().diff(e.lastLaunched, "days")).map(e => e.id)),
     t = e.length,
     n = e.filter(p.lm).slice(0, t > 4 ? 3 : 4);
@@ -34,7 +34,7 @@ function b() {
   }
 }
 
-function x() {
+function b() {
   let e = (0, s.e7)([u.Z], () => u.Z.getAccounts()),
     t = (0, l.ZP)(),
     n = e.length;

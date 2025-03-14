@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(100527),
   h = n(906732),
   f = n(70097),
-  b = n(464824),
-  x = n(214852),
+  x = n(464824),
+  b = n(214852),
   N = n(594174),
   _ = n(78839),
   E = n(626135),
@@ -128,15 +128,15 @@ let eg = e => {
       isFullscreen: W,
       entrypoint: U
     } = e;
-    (0, x.z)(b.X);
+    (0, b.z)(x.X);
     let G = U === et.EZ.ApplicationStoreHome,
       F = i.useRef(null),
       H = i.useRef(null),
       ee = (0, l.e7)([g.Z], () => g.Z.useReducedMotion),
       ef = (0, m.ZP)(),
-      eb = (0, c.wj)(ef),
-      ex = N.default.getCurrentUser(),
-      eN = (0, C.I5)(ex),
+      ex = (0, c.wj)(ef),
+      eb = N.default.getCurrentUser(),
+      eN = (0, C.I5)(eb),
       e_ = (0, v.xP)("PremiumMarketingHome") && !eN && G,
       [eE, ej] = i.useState(!1),
       [eC, eO] = i.useState(!1),
@@ -186,7 +186,7 @@ let eg = e => {
             variant: e_ ? k.NN.MARKETING_PAGE_V2 : k.NN.DEFAULT,
             showWumpus: !e_,
             tier0CTAButton: e_ ? (0, r.jsx)(J.Z, {
-              forceInverted: eb && !e_,
+              forceInverted: ex && !e_,
               showIcon: !1,
               subscriptionTier: et.Si.TIER_0,
               className: es.marginTopForButtons,
@@ -226,7 +226,7 @@ let eg = e => {
       eX = (0, r.jsxs)("div", {
         className: a()(es.container, {
           [es.settingsContainer]: !W,
-          [es.containerBackground]: e_ && eb
+          [es.containerBackground]: e_ && ex
         }),
         "data-cy": "tier-0-marketing-page",
         children: [e_ && (0, r.jsx)("div", {
@@ -259,7 +259,7 @@ let eg = e => {
               subscriptionTier: ew,
               isFullscreen: W || eV,
               entrypoint: U,
-              isDarkMode: eb
+              isDarkMode: ex
             }) : (0, r.jsx)(V.ZP, {
               subscriptionTier: ew,
               isFullscreen: W || eV,
@@ -273,7 +273,7 @@ let eg = e => {
                 [es.noTopPaddingOverride]: null != eR
               }),
               entrypoint: U,
-              isDarkMode: eb
+              isDarkMode: ex
             })
           }), !e_ && !0 === eF && (0, r.jsx)(A.W, {
             isFullScreen: W,
@@ -363,7 +363,7 @@ let eg = e => {
           },
           children: (0, r.jsx)(q.Z, {
             isFooterVisible: eC,
-            isDarkMode: eb,
+            isDarkMode: ex,
             isReducedMotion: ee
           })
         })]

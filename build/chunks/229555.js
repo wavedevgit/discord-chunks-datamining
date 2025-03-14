@@ -68,11 +68,11 @@ let g = (e, t) => {
         id: d,
         badgeVersion: h,
         nameUnformatted: f,
-        tenureReqNumMonths: b,
-        hasWideArt: x
+        tenureReqNumMonths: x,
+        hasWideArt: b
       } = t,
       N = u.NW.string(f),
-      _ = (0, l.q)(d, b);
+      _ = (0, l.q)(d, x);
     return 1 === h ? (0, r.jsxs)("div", {
       className: s()(m.container, p(d)),
       children: [(0, r.jsx)("div", {}), " ", (0, r.jsx)("img", {
@@ -97,7 +97,7 @@ let g = (e, t) => {
         alt: N,
         className: s()(m.badgeImage, m.badgeImageV2, {
           [m.upcomingBadge]: t.status === o.Vq.UPCOMING,
-          [m.wide]: x
+          [m.wide]: b
         })
       }), (0, r.jsxs)("div", {
         className: m.textColumn,

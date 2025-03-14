@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => x
+  Z: () => b
 });
 var r = n(200651);
 n(192379);
@@ -17,14 +17,14 @@ var i = n(120356),
   p = n(981631),
   h = n(388032),
   f = n(919),
-  b = n(802138);
+  x = n(802138);
 
-function x() {
+function b() {
   let {
     enabled: e,
     autoToggle: t,
     hideInstantInvites: i,
-    hidePersonalInformation: x,
+    hidePersonalInformation: b,
     disableSounds: N,
     disableNotifications: _,
     enableContentProtection: E
@@ -57,7 +57,7 @@ function x() {
     children: [(0, r.jsx)(d.F, {
       setting: g.s6.STREAMER_MODE_INTEGRATIONS,
       children: (0, r.jsx)(l.ToO, {
-        className: b.marginBottom40,
+        className: x.marginBottom40,
         iconClassName: f.noticeIcon,
         type: l.Dd5.PRIMARY,
         imageData: {
@@ -92,12 +92,12 @@ function x() {
       })()]
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsx)(l.vwX, {
-        className: s()(b.marginTop40, b.marginBottom8, f.sectionLabel),
+        className: s()(x.marginTop40, x.marginBottom8, f.sectionLabel),
         children: h.NW.string(h.t["+1H47u"])
       }), (0, r.jsx)(d.F, {
         setting: g.s6.STREAMER_MODE_HIDE_PERSONAL_INFORMATION,
         children: (0, r.jsx)(l.j7V, {
-          value: x,
+          value: b,
           onChange: e => j("hidePersonalInformation", e),
           note: h.NW.string(h.t["+9Lra2"]),
           children: h.NW.string(h.t.UpQziI)
