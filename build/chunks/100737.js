@@ -12,7 +12,7 @@ e.exports = {
   guildIcon: "guildIcon__1ef0e",
   guildText: "guildText__1ef0e",
   guildSubtitle: "guildSubtitle__1ef0e",
-  checkboxInner: "checkboxInner__1ef0e",
+  serverOptionSwitchContainer: "serverOptionSwitchContainer__1ef0e",
   ignoredWarning: "ignoredWarning__1ef0e",
   toggleAll: "toggleAll__1ef0e"
 }

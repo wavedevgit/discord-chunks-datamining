@@ -51,7 +51,9 @@ function p(e) {
         [_.selected]: o,
         [_.account]: p === f.i.ACCOUNT
       }),
-      style: m,
+      style: {
+        maskImage: m.maskImage
+      },
       animate: E,
       loop: !!(n || u),
       onLoad: () => S(!0)

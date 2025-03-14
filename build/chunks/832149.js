@@ -10,8 +10,8 @@ let o = e => {
     product: t,
     analyticsLocations: o,
     overrideTitle: l,
-    overrideDescription: s,
-    shouldShowPromotionalExperience: a,
+    overrideDescription: a,
+    shouldShowPromotionalExperience: s,
     onCloseCallback: c,
     itemConsumed: u
   } = e;
@@ -40,8 +40,8 @@ let o = e => {
       product: t,
       analyticsLocations: o,
       overrideTitle: l,
-      overrideDescription: s,
-      shouldShowPromotionalExperience: a,
+      overrideDescription: a,
+      shouldShowPromotionalExperience: s,
       itemConsumed: u
     }, n))
   }, {

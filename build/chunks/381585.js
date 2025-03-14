@@ -1,6 +1,6 @@
 /** Chunk was on 95617 **/
 n.d(t, {
-  k0: () => s,
+  k0: () => a,
   sp: () => l
 });
 var r = n(200651),
@@ -11,11 +11,11 @@ function l() {
   return i.useContext(o)
 }
 
-function s(e) {
+function a(e) {
   let {
     newValue: t,
     children: n
-  } = e, s = l(), a = i.useMemo(() => (function(e) {
+  } = e, a = l(), s = i.useMemo(() => (function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -32,9 +32,9 @@ function s(e) {
       })
     }
     return e
-  })({}, s, t), [s, t]);
+  })({}, a, t), [a, t]);
   return (0, r.jsx)(o.Provider, {
-    value: a,
+    value: s,
     children: n
   })
 }

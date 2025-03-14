@@ -65,7 +65,9 @@ let v = e => {
             size: l.EFr.SIZE_32,
             "aria-label": m.NW.string(m.t.cqpybG)
           }),
-          name: m.NW.string(m.t.cqpybG),
+          name: (0, r.jsx)("div", {
+            className: g.placeholderUsername
+          }),
           innerClassName: g.avatarWithTextInnerClassName,
           selected: !1
         })

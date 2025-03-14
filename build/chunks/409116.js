@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   o = n.n(i),
   l = n(481060),
-  s = n(937615),
-  a = n(884697),
+  a = n(937615),
+  s = n(884697),
   c = n(182528);
 let u = e => e.length > 5 ? e.replace(/\.00$/, "") : e,
   d = e => {
@@ -21,9 +21,9 @@ let u = e => e.length > 5 ? e.replace(/\.00$/, "") : e,
       renderPrice: d,
       icon: h,
       className: b,
-      discount: p = a.f_,
+      discount: p = s.f_,
       variant: f = "heading-md/semibold"
-    } = e, g = u((0, s.T4)(n, i)), O = p !== a.f_ && p.discountPercentage >= 5 ? (0, r.jsxs)(r.Fragment, {
+    } = e, g = u((0, a.T4)(n, i)), O = p !== s.f_ && p.discountPercentage >= 5 ? (0, r.jsxs)(r.Fragment, {
       children: [g, (0, r.jsx)(l.X6q, {
         variant: f,
         color: "text-positive",

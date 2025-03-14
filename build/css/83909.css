@@ -1,27 +1,9 @@
 /**
   Module ID: 83909
-  Original File Name: ef8bce25c12dfac6
+  Original File Name: 12decbc69e5e7b70
 **/
-.content_b97ca2 {
-    padding: 24px
-}
-
-.header_b97ca2 {
-    text-align: center
-}
-
-.notes_b97ca2 {
-    margin: 32px 0
-}
-
-.note_b97ca2 {
-    display: flex;
-    align-items: center;
-    gap: 16px
-}
-
-.noteDivider_b97ca2 {
-    margin: 16px 0
+.otherOptions_b97ca2 {
+    margin-top: 16px
 }
 
 .linksContainer_b97ca2 {
@@ -48,11 +30,9 @@
     margin: 0 16px
 }
 
-.buttonsContainer_b97ca2 {
-    display: flex;
+.footer_b97ca2 {
     gap: 16px;
-    justify-content: flex-end;
-    margin-top: 24px
+    justify-content: flex-start
 }
 
-/*# sourceMappingURL=ef8bce25c12dfac6.css.map*/
+/*# sourceMappingURL=12decbc69e5e7b70.css.map*/

@@ -6,8 +6,8 @@ var r = n(570140),
   i = n(317770),
   o = n(460181),
   l = n(474873),
-  s = n(314897),
-  a = n(19780),
+  a = n(314897),
+  s = n(19780),
   c = n(944486),
   u = n(111583),
   d = n(351780),
@@ -33,14 +33,14 @@ let p = (0, o.uk)("poggermode_applause", l.Z.getSoundpack()),
     if (0 === O.length || !y() || g) return;
     g = !0;
     let [e, t] = O[O.length - 1];
-    (0, o.GN)(e, t), v = setTimeout(C, 1e3)
+    (0, o.GN)(e, t), v = setTimeout(P, 1e3)
   },
-  C = () => {
+  P = () => {
     O.pop(), g = !1, _()
   },
-  P = function(e) {
+  C = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
-      n = a.Z.isConnected();
+      n = s.Z.isConnected();
     O.push([e, t * (n ? .1 : 1)]), _()
   };
 class j extends i.Z {
@@ -60,7 +60,7 @@ class j extends i.Z {
     let {
       userId: t
     } = e;
-    s.default.getId() === t && E()
+    a.default.getId() === t && E()
   }
   stopAudio() {
     E()
@@ -70,14 +70,14 @@ class j extends i.Z {
     if (!y()) return;
     let t = c.Z.getChannelId();
     if (null == t) return;
-    let n = s.default.getId(),
+    let n = a.default.getId(),
       r = u.Z.isTyping(t, n),
       i = h.ZP.getUserCombo(n, t),
       o = null !== (e = null == i ? void 0 : i.multiplier) && void 0 !== e ? e : 1;
     r && o >= 7 ? m() : E()
   }
   playAchievementUnlockSound() {
-    y() && P("poggermode_achievement_unlock")
+    y() && C("poggermode_achievement_unlock")
   }
 }
 let x = new j

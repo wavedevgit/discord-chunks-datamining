@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   o = n(481060),
   l = n(727637),
-  s = n(906732),
-  a = n(333867),
+  a = n(906732),
+  s = n(333867),
   c = n(677232),
   u = n(884697),
   d = n(228624),
@@ -72,8 +72,8 @@ let O = {
       isGiftEasterEggEnabled: y,
       disableCustomColor: _ = !1
     } = e, {
-      analyticsLocations: C
-    } = (0, s.ZP)(), P = i.useRef(null), j = (0, l.Z)(P), x = _ ? p.BR.DARK : p.BR.LIGHT, N = (0, d.hv)("CollectiblesShopGiftButton");
+      analyticsLocations: P
+    } = (0, a.ZP)(), C = i.useRef(null), j = (0, l.Z)(C), x = _ ? p.BR.DARK : p.BR.LIGHT, N = (0, d.hv)("CollectiblesShopGiftButton");
     return (0, u.x6)(t) ? null : (0, r.jsx)(o.ua7, {
       text: f.NW.string(f.t["JCFN//"]),
       delay: E,
@@ -97,7 +97,7 @@ let O = {
           }
           return e
         }({}, e), l = l = {
-          buttonRef: P,
+          buttonRef: C,
           className: g.giftButton,
           color: _ ? o.Ttl.BRAND : o.Ttl.CUSTOM,
           look: o.zxk.Looks.FILLED,
@@ -105,14 +105,14 @@ let O = {
           innerClassName: g.giftButtonInner,
           "aria-label": f.NW.string(f.t.PEjaCw),
           onClick: e => {
-            e.stopPropagation(), (0, a.Z)({
+            e.stopPropagation(), (0, s.Z)({
               skuId: (0, h.S)({
                 product: t,
                 selectedVariantIndex: n
               }),
               isGift: !0,
               giftingOrigin: b.Wt.SHOP_PAGE,
-              analyticsLocations: C,
+              analyticsLocations: P,
               returnRef: v,
               variantsReturnStyle: N,
               onClose: null != m ? e => {

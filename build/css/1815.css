@@ -1,6 +1,6 @@
 /**
   Module ID: 1815
-  Original File Name: d8a4f5a6ecde73ff
+  Original File Name: 8d0db07947d8d43e
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -11362,16 +11362,12 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
 }
 
 .scroller__1ef0e {
-    max-height: 400px;
-    padding-top: 4px;
-    padding-bottom: 4px
+    max-height: 400px
 }
 
 .guildRow__1ef0e {
-    cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 12px 16px;
     background-color: var(--background-primary)
 }
@@ -11414,8 +11410,9 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
     color: var(--text-muted)
 }
 
-.checkboxInner__1ef0e {
-    margin-left: 16px
+.serverOptionSwitchContainer__1ef0e {
+    margin: 0;
+    flex: 1
 }
 
 .ignoredWarning__1ef0e {
@@ -17163,4 +17160,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=d8a4f5a6ecde73ff.css.map*/
+/*# sourceMappingURL=8d0db07947d8d43e.css.map*/

@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   o = n(120356),
   l = n.n(o),
-  s = n(481060),
-  a = n(955204),
+  a = n(481060),
+  s = n(955204),
   c = n(818765),
   u = n(674680),
   d = n(309008);
@@ -75,7 +75,7 @@ function b(e) {
     onAction: g
   } = t, {
     color: O
-  } = (0, a.F7)(p);
+  } = (0, s.F7)(p);
   i.useEffect(() => {
     let e = setTimeout(() => {
       c.Z.playAchievementUnlockSound()
@@ -85,7 +85,7 @@ function b(e) {
     }
   }, []);
   let v = null != g && n,
-    m = v ? s.P3F : "div";
+    m = v ? a.P3F : "div";
   return (0, r.jsxs)(m, {
     className: l()(d.container, v && d.actionable),
     onClick: () => {
@@ -100,11 +100,11 @@ function b(e) {
       })
     }), (0, r.jsxs)("div", {
       className: d.__invalid_nameContainer,
-      children: [(0, r.jsx)(s.Text, {
+      children: [(0, r.jsx)(a.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: o()
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-xs/medium",
         color: "header-secondary",
         children: f && !n ? "?????" : b()

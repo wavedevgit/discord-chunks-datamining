@@ -75,14 +75,8 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
     }, []), $ = i.useCallback(e => {
       ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && L()
     }, [L, s]), ee = null != W && "" !== W ? W : null != w && "" !== w ? w : C.NW.string(C.t.xV9hVl), et = (0, c.Ie)("".concat(U)), en = "folder-items-".concat(U), er = function(e) {
-      let t = (0, d.dQu)(d.TVs.modules.guildbar.AVATAR_SIZE),
-        n = (0, h.Q3)("FolderItem.useHeight"),
-        {
-          density: r
-        } = (0, d.TCT)();
-      if (!n) return e * (t + 8);
-      let i = e * (t + ("cozy" === r ? 8 : 4));
-      return "cozy" === r ? i - 4 : i
+      let t = (0, d.dQu)(d.TVs.modules.guildbar.AVATAR_SIZE);
+      return e * (t + ((0, h.Q3)("FolderItem.useHeight") ? 4 : 8))
     }(V.length), ei = (0, d.Yzy)(!K && s, {
       from: {
         height: 0
