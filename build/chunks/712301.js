@@ -13,8 +13,8 @@ var r = n(442837),
   c = n(592125),
   d = n(984933),
   g = n(271383),
-  f = n(430824),
-  Z = n(496675),
+  Z = n(430824),
+  f = n(496675),
   b = n(699516),
   p = n(594174),
   O = n(979651),
@@ -31,16 +31,16 @@ function P(e, t) {
     }, [t, e.id]);
   if ((0, r.e7)([g.ZP], () => g.ZP.isGuestOrLurker(t, e.id), [t, e.id]) || null == P) return null;
   let v = e.id === s.default.getId();
-  if (!v && !Z.Z.can(N.Plq.MOVE_MEMBERS, P)) return null;
+  if (!v && !f.Z.can(N.Plq.MOVE_MEMBERS, P)) return null;
   let x = n.filter(t => {
     let {
       channel: n
     } = t;
-    return n.id !== P.id && (v ? Z.Z.can(N.Plq.CONNECT, n) && !(0, m.rY)(n, O.Z, f.Z) : Z.Z.can(N.Plq.MOVE_MEMBERS, n) && (Z.Z.can(N.Plq.CONNECT, n) || h.BT({
+    return n.id !== P.id && (v ? f.Z.can(N.Plq.CONNECT, n) && !(0, m.rY)(n, O.Z, Z.Z) : f.Z.can(N.Plq.MOVE_MEMBERS, n) && (f.Z.can(N.Plq.CONNECT, n) || h.BT({
       permission: N.Plq.CONNECT,
       user: e,
       context: n
-    })) && !(0, m.rY)(n, O.Z, f.Z))
+    })) && !(0, m.rY)(n, O.Z, Z.Z))
   });
   return 0 === x.length ? null : (0, l.jsx)(i.sNh, {
     id: "voice-move",

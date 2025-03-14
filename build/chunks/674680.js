@@ -7,8 +7,8 @@ n(192379);
 var i = n(780384),
   o = n(481060),
   l = n(410030),
-  a = n(44315),
-  s = n(889901),
+  s = n(44315),
+  a = n(889901),
   c = n(955204),
   u = n(231338),
   d = n(319239);
@@ -84,7 +84,7 @@ function f(e) {
       className: d.trophyIconContainer,
       children: (0, r.jsx)(o.rm8, {
         size: "custom",
-        color: u ? y : (0, a.Lq)(_.trophy),
+        color: u ? y : (0, s.Lq)(_.trophy),
         width: P,
         height: P
       })
@@ -93,12 +93,12 @@ function f(e) {
       style: x,
       children: (0, r.jsx)(o.mBM, h({
         size: "custom",
-        color: (0, a.Lq)(_.locked)
+        color: (0, s.Lq)(_.locked)
       }, j))
     }), u && E === c.EP.LEGENDARY && (0, r.jsx)("div", {
       className: d.lockContainer,
       style: x,
-      children: (0, r.jsx)(s.Z, h({
+      children: (0, r.jsx)(a.Z, h({
         className: d.confettiIcon
       }, j))
     })]

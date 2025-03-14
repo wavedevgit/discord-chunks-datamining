@@ -52,10 +52,11 @@ let b = e => {
       description: _
     }), j && (0, r.jsx)(g.Z, {
       className: x,
+      look: a.zxk.Looks.BLANK,
+      color: a.zxk.Colors.CUSTOM,
       subscriptionTier: p.Si.TIER_2,
       buttonText: y,
-      color: a.zxk.Colors.GREEN,
-      look: a.zxk.Looks.FILLED
+      showGradient: !0
     }), 0 !== E.length && (null == (n = null == A ? void 0 : A.descriptionCta) ? void 0 : n.hideOnHoverComponent) !== !0 && null != C && (0, r.jsx)(a.zxk, {
       className: x,
       onClick: C,

@@ -27,19 +27,20 @@ let f = [{
   N = function(e) {
     let {
       onClose: t,
-      transitionState: n
-    } = e, N = (0, r.e7)([x.Z], () => x.Z.getAgeVerificationWebviewUrl()), b = (0, r.e7)([x.Z], () => x.Z.getIsLoadingAgeVerification()), _ = i.useCallback(() => {
+      transitionState: n,
+      classificationId: N
+    } = e, b = (0, r.e7)([x.Z], () => x.Z.getAgeVerificationWebviewUrl()), _ = (0, r.e7)([x.Z], () => x.Z.getIsLoadingAgeVerification()), j = i.useCallback(() => {
       t(), c.Z.close()
-    }, [t]), j = i.useCallback(() => {
-      c.Z.success(), _(), c.Z.start_verification_check()
-    }, [_]);
+    }, [t]), p = i.useCallback(() => {
+      c.Z.success(), j(), c.Z.start_verification_check()
+    }, [j]);
     return i.useEffect(() => {
-      "" !== N && l.Z.showAgeVerification({
-        webviewUrl: N,
-        onComplete: j,
+      "" !== b && l.Z.showAgeVerification({
+        webviewUrl: b,
+        onComplete: p,
         useV1: !0
       })
-    }, [N, j]), (0, o.jsxs)(s.Y0X, {
+    }, [b, p]), (0, o.jsxs)(s.Y0X, {
       transitionState: n,
       className: h.root,
       children: [(0, o.jsxs)(s.hzk, {
@@ -103,13 +104,13 @@ let f = [{
       }), (0, o.jsxs)(s.mzw, {
         className: h.footer,
         children: [(0, o.jsx)(s.zxk, {
-          onClick: d.FN,
-          submitting: b,
+          onClick: () => (0, d.FN)(N),
+          submitting: _,
           children: m.NW.string(m.t["54b8V1"])
         }), (0, o.jsx)(s.zxk, {
           color: s.zxk.Colors.TRANSPARENT,
           look: s.zxk.Looks.BLANK,
-          onClick: _,
+          onClick: j,
           className: h.cancelButton,
           children: m.NW.string(m.t.dKacJy)
         })]

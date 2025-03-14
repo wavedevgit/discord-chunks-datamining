@@ -12,8 +12,8 @@ var l = n(200651),
   c = n(346479),
   d = n(665906),
   g = n(592125),
-  f = n(430824),
-  Z = n(496675),
+  Z = n(430824),
+  f = n(496675),
   b = n(594174),
   p = n(981631),
   O = n(388032);
@@ -54,9 +54,9 @@ function N(e, t, N) {
   let j = r.useMemo(() => ({
     [t]: [e.id]
   }), [t, e.id]);
-  (0, o.$)(j), (0, i.e7)([Z.Z], () => Z.Z.getGuildVersion(t), [t]);
+  (0, o.$)(j), (0, i.e7)([f.Z], () => f.Z.getGuildVersion(t), [t]);
   let P = (0, i.e7)([g.Z], () => g.Z.getChannel(N)),
-    v = (0, i.e7)([f.Z], () => f.Z.getGuild(t), [t]),
+    v = (0, i.e7)([Z.Z], () => Z.Z.getGuild(t), [t]),
     x = (0, i.e7)([b.default], () => b.default.getCurrentUser()),
     y = (0, u.Z)(P, "Context Menu"),
     E = (0, d.Xb)(P);

@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   o = n(120356),
   l = n.n(o),
-  a = n(404759),
-  s = n.n(a),
+  s = n(404759),
+  a = n.n(s),
   c = n(91192),
   u = n(536895),
   d = n(866442),
@@ -65,7 +65,7 @@ function E(e, t) {
   }
   return i
 }
-let y = s()(e => {
+let y = a()(e => {
     let t = !1;
     if (null != e && (0, d.FX)(e)) {
       let n = (0, d._i)(e);
@@ -78,8 +78,8 @@ let y = s()(e => {
       variantGroupProduct: t,
       variant: n,
       variantIndex: o,
-      totalVariants: a,
-      selectedVariantIndex: s,
+      totalVariants: s,
+      selectedVariantIndex: a,
       onEnter: d,
       onLeave: b,
       minimal: _
@@ -120,11 +120,11 @@ let y = s()(e => {
         children: (0, r.jsx)("div", {
           className: l()(O.colorSwatch, {
             [O.open]: !_,
-            [O.selected]: o === s
+            [O.selected]: o === a
           }),
           style: {
             backgroundColor: n.variantValue,
-            zIndex: a - o
+            zIndex: s - o
           },
           children: P ? (0, r.jsx)(h.kSu, {
             className: O.purchasedIndicator,
@@ -139,12 +139,12 @@ let y = s()(e => {
     let {
       variantGroupProduct: i,
       className: o,
-      previewingVariantIndexProps: a,
-      setIsHoveringOnSwitch: s,
+      previewingVariantIndexProps: s,
+      setIsHoveringOnSwitch: a,
       minimal: d,
       purchases: f,
       alternativeBackgroundColor: y
-    } = e, P = (0, p.o)(i, f), C = a.previewingVariantIndex, j = null === (t = i.variants) || void 0 === t ? void 0 : t[P], x = null !== C ? null === (n = i.variants) || void 0 === n ? void 0 : n[C] : void 0, N = (0, b.Z)("shop-variants-group-".concat(i.storeListingId), u.hy.HORIZONTAL);
+    } = e, P = (0, p.o)(i, f), C = s.previewingVariantIndex, j = null === (t = i.variants) || void 0 === t ? void 0 : t[P], x = null !== C ? null === (n = i.variants) || void 0 === n ? void 0 : n[C] : void 0, N = (0, b.Z)("shop-variants-group-".concat(i.storeListingId), u.hy.HORIZONTAL);
     if (null == j) return null;
     let L = null != x ? x.variantLabel : null == j ? void 0 : j.variantLabel;
     return (0, r.jsx)(c.bG, {
@@ -162,8 +162,8 @@ let y = s()(e => {
               [O.minimalState]: d,
               [O.alternativeColor]: y
             }),
-            onMouseEnter: () => null == s ? void 0 : s(!0),
-            onMouseLeave: () => null == s ? void 0 : s(!1),
+            onMouseEnter: () => null == a ? void 0 : a(!0),
+            onMouseLeave: () => null == a ? void 0 : a(!1),
             children: [(0, r.jsx)("ol", {
               className: O.variantsList,
               children: null === (t = i.variants) || void 0 === t ? void 0 : t.map((e, t) => {
@@ -174,8 +174,8 @@ let y = s()(e => {
                   variantIndex: t,
                   selectedVariantIndex: P,
                   totalVariants: null !== (o = null === (n = i.variants) || void 0 === n ? void 0 : n.length) && void 0 !== o ? o : 0,
-                  onEnter: () => a.handleEntering(t),
-                  onLeave: a.handleLeaving,
+                  onEnter: () => s.handleEntering(t),
+                  onLeave: s.handleLeaving,
                   minimal: d
                 }, t)
               })

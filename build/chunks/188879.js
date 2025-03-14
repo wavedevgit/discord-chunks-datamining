@@ -278,7 +278,7 @@ let P = e => {
               is_violative_content_shown: U,
               is_dsa_eligible: T,
               violation_type: C
-            }), Z ? m.Z.open(d) : A && (c.Z.increment({
+            }), Z ? m.Z.open(n, d) : A && (c.Z.increment({
               name: l.V.APPEAL_INGESTION_VIEW
             }), x.Z.open(n))
           },

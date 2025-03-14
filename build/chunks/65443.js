@@ -21,17 +21,17 @@ function g(e) {
     headingColor: n = "text-normal",
     textColor: i = "text-normal",
     withRewardName: g = !1,
-    withPremiumHighlight: f = !0,
-    quest: h
+    withPremiumHighlight: h = !0,
+    quest: f
   } = e, j = (0, c.j)({
     location: m.dr.QUESTS_BAR_MOBILE
-  }), v = s.useMemo(() => d.r.build(h.config), [h.config]), b = v.defaultReward.messages.name, C = v.defaultReward.messages.nameWithArticle, N = (0, a.Kr)(h.config), E = (0, u.mK)(h.config);
+  }), v = s.useMemo(() => d.r.build(f.config), [f.config]), C = v.defaultReward.messages.name, b = v.defaultReward.messages.nameWithArticle, N = (0, a.Kr)(f.config), E = (0, u.mK)(f.config);
   return (0, r.jsxs)("div", {
     children: [g && (0, r.jsx)(l.Text, {
       color: n,
       variant: "text-sm/normal",
       children: p.NW.formatToPlainString(p.t["W8/b3d"], {
-        rewardName: j ? b : C
+        rewardName: j ? C : b
       })
     }), null != N && (0, r.jsxs)("ul", {
       className: o()(x.rewardsDisclosures, {
@@ -50,10 +50,10 @@ function g(e) {
         })
       }), null != E && (0, r.jsx)(l.Text, {
         className: o()({
-          [x.rewardsDisclosuresItemPremiumHighlight]: f
+          [x.rewardsDisclosuresItemPremiumHighlight]: h
         }),
         tag: "li",
-        color: f ? void 0 : i,
+        color: h ? void 0 : i,
         variant: "text-xs/medium",
         children: E
       })]

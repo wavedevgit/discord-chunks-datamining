@@ -1,8 +1,8 @@
 /** Chunk was on 99393 **/
 n.d(t, {
-  US: () => h,
+  US: () => f,
   ZP: () => j,
-  fF: () => f
+  fF: () => h
 });
 var r, s, i = n(200651);
 n(192379);
@@ -16,8 +16,8 @@ var o = n(120356),
   p = n(78826),
   x = n(981631),
   g = n(237774),
-  f = ((r = {})[r.SMALL = 24] = "SMALL", r[r.MEDIUM = 32] = "MEDIUM", r),
-  h = ((s = {})[s.SMALL = 2] = "SMALL", s[s.MEDIUM = 8] = "MEDIUM", s);
+  h = ((r = {})[r.SMALL = 24] = "SMALL", r[r.MEDIUM = 32] = "MEDIUM", r),
+  f = ((s = {})[s.SMALL = 2] = "SMALL", s[s.MEDIUM = 8] = "MEDIUM", s);
 let j = function(e) {
   let {
     className: t,
@@ -25,10 +25,10 @@ let j = function(e) {
     gameTileSize: r = 24,
     quest: s,
     separatorSpacing: o = 2,
-    theme: f = x.BRd.DARK,
-    withCosponsor: h = !0,
+    theme: h = x.BRd.DARK,
+    withCosponsor: f = !0,
     withGameTile: j = !0
-  } = e, v = (0, u.wj)(f) ? x.BRd.DARK : x.BRd.LIGHT, b = (0, d.Gd)(s.id, v), C = h && null != s.config.cosponsorMetadata && null != b;
+  } = e, v = (0, u.wj)(h) ? x.BRd.DARK : x.BRd.LIGHT, C = (0, d.Gd)(s.id, v), b = f && null != s.config.cosponsorMetadata && null != C;
   return (0, i.jsxs)("div", {
     className: l()(g.partnerBranding, t),
     children: [j && (0, i.jsx)(p.Fl, {
@@ -56,12 +56,12 @@ let j = function(e) {
       children: e => (0, i.jsx)("img", {
         ref: e,
         className: l()(g.partnerBrandingLogotype, n, {
-          [g.partnerBrandingLogotypeWithCosponsor]: C
+          [g.partnerBrandingLogotypeWithCosponsor]: b
         }),
         alt: s.config.messages.gameTitle,
         src: (0, m.fh)(s, m.eC.LOGO_TYPE, v).url
       })
-    }), C && (0, i.jsxs)(i.Fragment, {
+    }), b && (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)("div", {
         className: g.cosponsorBrandSeparatorWrapper,
         style: {
@@ -79,7 +79,7 @@ let j = function(e) {
             ref: e,
             className: l()(g.partnerBrandingLogotype, g.partnerBrandingLogotypeWithCosponsor, n),
             alt: null !== (r = null === (t = s.config.cosponsorMetadata) || void 0 === t ? void 0 : t.name) && void 0 !== r ? r : "",
-            src: b.url
+            src: C.url
           })
         }
       })]

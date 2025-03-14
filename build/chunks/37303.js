@@ -1,6 +1,6 @@
 /** Chunk was on 99393 **/
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(47120);
 var r = n(200651),
   s = n(192379),
@@ -18,13 +18,13 @@ var a = n(497505),
   x = n(46140),
   g = n(406672);
 
-function f(e) {
+function h(e) {
   let {
     quest: t,
     location: n,
-    initiallyExpanded: f,
-    contentPosition: h
-  } = e, [j, v] = s.useState(!1), b = s.useCallback(() => v(!0), []), C = s.useCallback(() => v(!1), []), N = (0, l.tP)(t), {
+    initiallyExpanded: h,
+    contentPosition: f
+  } = e, [j, v] = s.useState(!1), C = s.useCallback(() => v(!0), []), b = s.useCallback(() => v(!1), []), N = (0, l.tP)(t), {
     containerRef: E,
     size: T,
     height: y
@@ -36,7 +36,7 @@ function f(e) {
     isExpanded: P,
     toggleExpanded: w
   } = (0, p.O)({
-    initiallyExpanded: !S || f || (0, u.iM)({
+    initiallyExpanded: !S || h || (0, u.iM)({
       location: n,
       quest: t
     })
@@ -44,7 +44,7 @@ function f(e) {
   return (0, r.jsx)(c.A, {
     questOrQuests: t,
     questContent: n,
-    questContentPosition: h,
+    questContentPosition: f,
     trackGuildAndChannelMetadata: n === a.jn.QUESTS_EMBED,
     children: e => (0, r.jsx)(i.animated.div, {
       style: {
@@ -54,10 +54,10 @@ function f(e) {
         })
       },
       className: g.questsCard,
-      onFocus: b,
-      onMouseEnter: b,
-      onBlur: C,
-      onMouseLeave: C,
+      onFocus: C,
+      onMouseEnter: C,
+      onBlur: b,
+      onMouseLeave: b,
       children: (0, r.jsxs)("div", {
         ref: t => {
           e.current = t, E.current = t
@@ -72,7 +72,7 @@ function f(e) {
           isAnimating: q,
           isExpanded: P,
           isInConcurrentQuestExperiment: S,
-          contentPosition: h,
+          contentPosition: f,
           toggleExpanded: w
         }), (0, r.jsx)(d.Z, {
           quest: t,
@@ -82,7 +82,7 @@ function f(e) {
           isFocused: j,
           isExpanded: P,
           isAnimating: q,
-          contentPosition: h
+          contentPosition: f
         })]
       })
     })

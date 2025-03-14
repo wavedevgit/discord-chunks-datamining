@@ -4,16 +4,16 @@ t.d(e, {
 });
 var i = t(200651);
 t(192379);
-var r = t(481060),
-  l = t(493683),
-  s = t(592125),
-  d = t(388032);
+var l = t(481060),
+  r = t(493683),
+  d = t(592125),
+  s = t(388032);
 
 function a(n, e) {
-  let t = s.Z.getChannel(n);
-  return null == t || t.isMultiUserDM() ? null : (0, i.jsx)(r.sNh, {
+  let t = d.Z.getChannel(n);
+  return null == t || t.isMultiUserDM() ? null : (0, i.jsx)(l.sNh, {
     id: "close-dm",
-    label: d.NW.string(d.t.jsvgc3),
-    action: () => l.Z.closePrivateChannel(n, e)
+    label: s.NW.string(s.t.jsvgc3),
+    action: () => r.Z.closePrivateChannel(n, e)
   })
 }

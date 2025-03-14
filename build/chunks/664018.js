@@ -1,7 +1,7 @@
 /** Chunk was on 95617 **/
 n.d(t, {
   D: () => o,
-  E: () => a
+  E: () => s
 });
 var r, i = n(818083),
   o = 12633 == n.j ? ((r = {})[r.CONTROL = 0] = "CONTROL", r[r.TRANSFORMATION = 1] = "TRANSFORMATION", r[r.NO_MOVEMENT = 2] = "NO_MOVEMENT", r) : null;
@@ -26,6 +26,6 @@ let l = (0, i.B)({
       }
     }]
   }),
-  a = e => l.useExperiment({
+  s = e => l.useExperiment({
     location: e
   })

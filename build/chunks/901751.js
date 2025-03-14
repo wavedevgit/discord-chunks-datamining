@@ -47,7 +47,9 @@ function N() {
   let t = u.Z.getDetectableGame(e.id);
   if ((null == t ? void 0 : t.id) == null) return null;
   let n = (0, h.lQ)(p.Z.quests, t.id);
-  return null != n && C(n) ? n : null
+  return null != n && C(n) && (0, h.Dr)({
+    quest: n
+  }) ? n : null
 }
 
 function A(e) {

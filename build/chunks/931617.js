@@ -13,8 +13,8 @@ var r = n(866442),
   c = n(434404),
   d = n(271383),
   g = n(430824),
-  f = n(496675),
-  Z = n(823379),
+  Z = n(496675),
+  f = n(823379),
   b = n(981631),
   p = n(388032),
   O = n(929956);
@@ -52,19 +52,19 @@ function h(e, t) {
       userRoles: v,
       isGuildMember: x,
       canManageRoles: y
-    } = (0, i.cj)([d.ZP, f.Z], () => {
+    } = (0, i.cj)([d.ZP, Z.Z], () => {
       let n = d.ZP.getMember(t, e);
       return {
         userRoles: null != n ? n.roles : [],
         isGuildMember: null != n,
-        canManageRoles: null != h && f.Z.can(b.Plq.MANAGE_ROLES, h)
+        canManageRoles: null != h && Z.Z.can(b.Plq.MANAGE_ROLES, h)
       }
     }, [e, t, h]);
   if (__OVERLAY__ || null == v || null == h || !x) return null;
-  let E = f.Z.getHighestRole(h),
+  let E = Z.Z.getHighestRole(h),
     C = Object.values(N).filter(e => !(0, u.pM)(h.id, e.id)),
     _ = y && !O ? C.map(n => {
-      let r = n.managed || !f.Z.isRoleHigher(h, E, n),
+      let r = n.managed || !Z.Z.isRoleHigher(h, E, n),
         i = -1 !== v.indexOf(n.id);
       return r && !i ? null : (0, l.jsx)(a.S89, {
         id: n.id,
@@ -79,7 +79,7 @@ function h(e, t) {
       id: e.id,
       label: () => m(e, j)
     }, e.id));
-  return 0 === _.filter(Z.lm).length ? null : n ? _ : (0, l.jsx)(a.sNh, {
+  return 0 === _.filter(f.lm).length ? null : n ? _ : (0, l.jsx)(a.sNh, {
     id: "roles",
     label: p.NW.formatToPlainString(p.t.PCs0oq, {
       numRoles: _.length

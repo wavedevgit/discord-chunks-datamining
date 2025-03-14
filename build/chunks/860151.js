@@ -21,11 +21,11 @@ let x = function(e) {
     quest: s,
     questContent: x,
     taskDetails: g,
-    location: f
-  } = e, h = (0, a.DD)({
+    location: h
+  } = e, f = (0, a.DD)({
     quest: s,
     taskDetails: g,
-    location: f,
+    location: h,
     questContent: x
   }), j = (0, l.j)({
     location: m.dr.QUESTS_BAR_MOBILE
@@ -42,14 +42,14 @@ let x = function(e) {
         className: p.rewardTile,
         quest: s,
         questContent: x,
-        location: f
+        location: h
       })
     }), (0, r.jsxs)("div", {
       className: p.copy,
       children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "text-normal",
-        children: h
+        children: f
       }), j && (0, r.jsx)(c.Z, {
         textColor: "text-muted",
         withRewardName: !0,

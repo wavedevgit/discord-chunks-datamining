@@ -1,6 +1,6 @@
 /** Chunk was on 99393 **/
 n.d(t, {
-  o: () => f
+  o: () => h
 });
 var r = n(200651);
 n(192379);
@@ -32,7 +32,7 @@ function g() {
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     questId: t
   } = e, {

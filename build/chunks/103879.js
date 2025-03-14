@@ -153,20 +153,21 @@ async function T(t, e, n) {
     }), t
   })
 }
-async function c() {
+async function c(t) {
   E.Z.dispatch({
     type: "SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_START"
   });
-  let t = _.default.getSuspendedUserToken(),
-    e = u.ANM.SAFETY_HUB_REQUEST_SUSPENDED_AGE_VERIFICATION,
-    n = i.tn.post({
-      url: e,
+  let e = _.default.getSuspendedUserToken(),
+    n = u.ANM.SAFETY_HUB_REQUEST_SUSPENDED_AGE_VERIFICATION,
+    l = i.tn.post({
+      url: n,
       body: {
-        token: t
+        token: e,
+        fromClassificationId: t
       },
       rejectWithError: !1
     });
-  await n.then(t => {
+  await l.then(t => {
     let {
       body: e
     } = t, {

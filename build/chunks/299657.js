@@ -62,6 +62,8 @@ let V = function(e) {
     Q = (0, y.M5)(F, L.p9.TIER_2);
   !0 !== (0, _.wE)(o.z.Q1_2025_MARKETING_MOMENT_OFFER_BADGE) && (0, _.EW)(o.z.Q1_2025_MARKETING_MOMENT_OFFER_BADGE, {
     dismissAction: M.L.TAKE_ACTION
+  }), !0 !== (0, _.wE)(o.z.PERMADECOS_NITRO_TAB_NEW_BADGE) && (0, _.EW)(o.z.PERMADECOS_NITRO_TAB_NEW_BADGE, {
+    dismissAction: M.L.TAKE_ACTION
   });
   let $ = (0, R.n)(),
     ee = null == $ ? void 0 : $.countryCode,

@@ -12,8 +12,8 @@ var l = n(200651),
   c = n(484459),
   d = n(314897),
   g = n(271383),
-  f = n(430824),
-  Z = n(496675),
+  Z = n(430824),
+  f = n(496675),
   b = n(594174),
   p = n(981631),
   O = n(388032),
@@ -27,8 +27,8 @@ function h(e) {
     analyticsLocations: j,
     context: P,
     icon: v
-  } = e, x = f.Z.getGuild(t), y = d.default.getId(), E = (0, i.e7)([b.default], () => b.default.getUser(h)), C = (0, i.e7)([g.ZP], () => g.ZP.isGuestOrLurker(t, h), [t, h]);
-  (0, i.e7)([Z.Z], () => Z.Z.getGuildVersion(t), [t]);
+  } = e, x = Z.Z.getGuild(t), y = d.default.getId(), E = (0, i.e7)([b.default], () => b.default.getUser(h)), C = (0, i.e7)([g.ZP], () => g.ZP.isGuestOrLurker(t, h), [t, h]);
+  (0, i.e7)([f.Z], () => f.Z.getGuildVersion(t), [t]);
   let _ = r.useMemo(() => ({
     [t]: [h]
   }), [t, h]);
@@ -40,9 +40,9 @@ function h(e) {
     }),
     T = (0, u.Aq)();
   if (null == x || S) return null;
-  let W = y === h && (Z.Z.can(p.Plq.CHANGE_NICKNAME, x) || Z.Z.can(p.Plq.MANAGE_NICKNAMES, x)),
+  let W = y === h && (f.Z.can(p.Plq.CHANGE_NICKNAME, x) || f.Z.can(p.Plq.MANAGE_NICKNAMES, x)),
     w = y === h,
-    U = Z.Z.canManageUser(p.Plq.MANAGE_NICKNAMES, h, x);
+    U = f.Z.canManageUser(p.Plq.MANAGE_NICKNAMES, h, x);
   if (!(W || U || w) || null == E || C) return null;
   let k = x.hasFeature(p.oNc.HUB) ? O.NW.string(O.t["+MWrWl"]) : O.NW.string(O.t["PKQB/P"]),
     A = w ? k : O.NW.string(O.t.dilOFx);

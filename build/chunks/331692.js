@@ -9,15 +9,15 @@ var a = n(481060),
   r = n(103879),
   o = n(800530);
 let s = {
-  open(e) {
+  open(e, t) {
     (0, a.ZDy)(async () => {
       l.Z.dispatch({
         type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN"
       });
       let {
-        default: e
+        default: t
       } = await n.e("82961").then(n.bind(n, 751744));
-      return t => (0, i.jsx)(e, function(e) {
+      return n => (0, i.jsx)(t, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             i = Object.keys(n);
@@ -34,9 +34,11 @@ let s = {
           })
         }
         return e
-      }({}, t))
+      }({
+        classificationId: e
+      }, n))
     }, {
-      onCloseCallback: e
+      onCloseCallback: t
     })
   },
   close() {
