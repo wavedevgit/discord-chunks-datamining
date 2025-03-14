@@ -1,83 +1,64 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => j
+  Z: () => m
 }), t(47120), t(266796);
 var r = t(200651),
   i = t(192379),
   o = t(120356),
   s = t.n(o),
   a = t(793030),
-  l = t(481060),
-  c = t(413335),
-  d = t(157353),
-  u = t(838968),
-  p = t(969867),
-  v = t(279604),
+  l = t(157353),
+  c = t(838968),
+  d = t(969867),
+  u = t(279604),
   x = t(730621),
-  m = t(388032),
-  b = t(709435);
+  p = t(388032),
+  v = t(709435);
 
-function j(e) {
+function m(e) {
   let {
     guildId: n,
     powerup: t
   } = e, {
     onShowMore: o
-  } = (0, v.ZP)(n, t), j = (0, d.Z)(n, t), [_, f] = i.useState(void 0);
-  return (0, v.KT)(_), (0, r.jsxs)(u.Z, {
+  } = (0, u.ZP)(n, t), m = (0, l.Z)(n, t), [b, _] = i.useState(void 0);
+  return (0, u.KT)(b), (0, r.jsxs)(c.Z, {
     label: t.title,
     onClick: o,
-    active: j,
+    active: m,
     children: [(0, r.jsx)("div", {
-      className: b.imageContainer,
+      className: v.imageContainer,
       children: (0, r.jsx)("img", {
         alt: ""
       })
     }), (0, r.jsxs)("div", {
-      className: b.contentContainer,
+      className: v.contentContainer,
       children: [(0, r.jsxs)("div", {
-        className: b.headerContainer,
+        className: v.headerContainer,
         children: [(0, r.jsx)(a.X6, {
           variant: "heading-md/bold",
           children: t.title
         }), t.bundle && (0, r.jsx)(a.xv, {
-          className: s()(b.bundle, {
-            [b.active]: j
+          className: s()(v.bundle, {
+            [v.active]: m
           }),
           variant: "text-xs/semibold",
-          children: m.NW.string(x.Z.j2jUjY)
+          children: p.NW.string(x.Z.j2jUjY)
         })]
       }), (0, r.jsx)(a.xv, {
-        className: b.description,
+        className: v.description,
         variant: "text-sm/medium",
         children: t.description
-      }), (0, r.jsxs)("div", {
-        className: b.labelContainer,
-        children: [(0, r.jsxs)("div", {
-          className: b.inline,
-          children: [(0, r.jsx)(c.Z, {}), (0, r.jsx)(a.xv, {
-            tag: "div",
-            variant: "heading-md/bold",
-            children: t.cost
-          })]
-        }), j && (0, r.jsxs)("div", {
-          className: b.inline,
-          children: [(0, r.jsx)(l.owK, {
-            size: "xs",
-            color: l.TVs.colors.TEXT_POSITIVE
-          }), (0, r.jsx)(a.xv, {
-            color: "text-positive",
-            variant: "text-sm/bold",
-            children: m.NW.string(x.Z.FFLkm5)
-          })]
-        })]
+      }), (0, r.jsx)(c.Y, {
+        guildId: n,
+        powerup: t
       })]
     }), (0, r.jsx)("div", {
-      className: b.buttonContainer,
-      children: (0, r.jsx)(p.Z, {
-        powerup: t,
+      className: v.buttonContainer,
+      children: (0, r.jsx)(d.Z, {
         guildId: n,
-        onError: f
+        powerup: t,
+        onError: _
       })
     })]
   })

@@ -22,8 +22,8 @@ var r = n(200651),
   j = n(938475),
   b = n(823379),
   C = n(102172),
-  S = n(981631),
-  N = n(889150),
+  N = n(981631),
+  S = n(889150),
   y = n(388032),
   Z = n(358476);
 
@@ -88,9 +88,9 @@ function O(e) {
       t = new Set;
     for (let n of d.Z.getChannelHistory()) {
       let r = m.Z.getChannel(n);
-      (null == r ? void 0 : r.type) === S.d4z.GUILD_VOICE && (0, C.JL)(r, g.Z, p.Z) && (t.add(r.id), e.push(r))
+      (null == r ? void 0 : r.type) === N.d4z.GUILD_VOICE && (0, C.JL)(r, g.Z, p.Z) && (t.add(r.id), e.push(r))
     }
-    for (let n of h.Z.getFrequentlyWithoutFetchingLatest()) n instanceof f.Sf && n.type === S.d4z.GUILD_VOICE && !t.has(n.id) && (0, C.JL)(n, g.Z, p.Z) && (t.add(n.id), e.push(n));
+    for (let n of h.Z.getFrequentlyWithoutFetchingLatest()) n instanceof f.Sf && n.type === N.d4z.GUILD_VOICE && !t.has(n.id) && (0, C.JL)(n, g.Z, p.Z) && (t.add(n.id), e.push(n));
     return e
   }), I = l.useMemo(() => {
     let e = new Set(O.map(e => e.id)),
@@ -118,7 +118,7 @@ function O(e) {
         return (0, r.jsx)(s.Text, {
           variant: "text-xs/semibold",
           color: "text-muted",
-          children: y.NW.string(N.Z.FZ9Fl5)
+          children: y.NW.string(S.Z.FZ9Fl5)
         })
       },
       sections: [P.length],

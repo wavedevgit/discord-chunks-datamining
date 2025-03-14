@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 1515b1580dc53a4c
+  Original File Name: 4591134639d677db
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -1801,9 +1801,31 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     background-color: ButtonFace
 }
 
-.blur__67645:hover {
+.plated__67645 {
+    background-color: transparent;
+    background-color: initial
+}
+
+.plated__67645:hover {
+    background-color: var(--custom-nameplate)!important
+}
+
+.plated__67645:hover {
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px)
+}
+
+.plateMuted__67645 {
+    background-color: var(--custom-nameplate-neutral)!important
+}
+
+.plateMuted__67645 {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px)
+}
+
+.plateMuted__67645:hover {
+    background-color: var(--custom-nameplate-neutral-hovered)!important
 }
 
 .subtext__339d0 {
@@ -1935,12 +1957,12 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .closeButtonBackgroundPlated__972a0 {
-    background-color: var(--background-modifier-selected);
     border-radius: 50%;
+    background-color: var(--custom-nameplate);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     height: 18px;
     width: 18px;
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
     display: flex;
     align-items: center;
     justify-content: center
@@ -2575,6 +2597,14 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     background-color: var(--background-secondary)
 }
 
+.theme-dark .newBadge_f14037 {
+    color: var(--primary-330)
+}
+
+.theme-light .newBadge_f14037 {
+    color: var(--white)
+}
+
 .badgeContainer_f14037 {
     position: relative;
     flex-direction: row;
@@ -2592,8 +2622,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-left: auto;
     padding: 0 6px;
     pointer-events: all;
-    text-transform: uppercase;
-    color: var(--primary-330)
+    text-transform: uppercase
 }
 
 .timer_f14037 {
@@ -2607,9 +2636,17 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     transition: stroke-dashoffset .5s ease-out
 }
 
+.theme-light .greyedOut__83ef9 {
+    background-color: var(--background-accent)
+}
+
 .theme-dark .customCircleAnimation__83ef9 {
     animation: extra-glow__83ef9 5s ease-in-out infinite,pulse__83ef9 5s ease-in-out infinite;
     transition: stroke-dashoffset .5s ease-out
+}
+
+.theme-dark .greyedOut__83ef9 {
+    background-color: var(--primary-700)
 }
 
 @keyframes glow__83ef9 {
@@ -2729,7 +2766,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .greyedOut__83ef9 {
-    background-color: var(--primary-700);
     border-radius: 19px;
     padding: 4px
 }
@@ -5869,4 +5905,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100px
 }
 
-/*# sourceMappingURL=1515b1580dc53a4c.css.map*/
+/*# sourceMappingURL=4591134639d677db.css.map*/

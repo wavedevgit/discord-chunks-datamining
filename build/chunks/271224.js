@@ -5,8 +5,8 @@ t.d(o, {
 var n = t(200651),
   r = t(192379),
   a = t(481060),
-  c = t(27237),
-  s = t(17622),
+  c = t(17622),
+  s = t(969867),
   i = t(790053),
   l = t(942570);
 
@@ -64,13 +64,13 @@ function u(e) {
         children: [(0, n.jsx)(a.X6q, {
           variant: "heading-xl/extrabold",
           children: d.title
-        }), (0, n.jsx)(s.Z, {
+        }), (0, n.jsx)(c.Z, {
           powerup: d
         }), null != m && (0, n.jsx)(a.Text, {
           color: "status-danger",
           variant: "text-sm/semibold",
           children: m
-        }), (0, n.jsx)(c._R, {
+        }), (0, n.jsx)(s.Z, {
           className: i.footer,
           guildId: u,
           powerup: d,

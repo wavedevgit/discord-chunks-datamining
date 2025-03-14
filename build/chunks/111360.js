@@ -12,5 +12,5 @@ function a(e) {
     var t;
     return null === (t = o.Z.getStateForGuild(e)) || void 0 === t ? void 0 : t.powerups
   });
-  return r.useMemo(() => (null != t ? t : new Map).values().reduce((e, t) => (e.has(t.type) || e.set(t.type, []), e.get(t.type).push(t), e), new Map), [t])
+  return r.useMemo(() => Array.from((null != t ? t : new Map).values()).reduce((e, t) => (e.has(t.type) || e.set(t.type, []), e.get(t.type).push(t), e), new Map), [t])
 }

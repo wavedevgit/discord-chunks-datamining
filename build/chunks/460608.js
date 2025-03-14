@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => p
+  Z: () => x
 });
 var r = t(200651),
   i = t(192379),
@@ -12,7 +12,7 @@ var r = t(200651),
   d = t(388032),
   u = t(549564);
 
-function p(e) {
+function x(e) {
   let {
     guildId: n
   } = e, t = (0, s.e7)([l.Z], () => l.Z.getAppliedGuildBoostsForGuild(n), [n]);

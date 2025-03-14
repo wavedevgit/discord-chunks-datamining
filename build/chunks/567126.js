@@ -1,7 +1,7 @@
 /** Chunk was on 46746 **/
 n.d(t, {
   Hu: () => J,
-  oA: () => z,
+  oA: () => F,
   se: () => V
 }), n(47120), n(230036), n(653041);
 var r = n(200651),
@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(977156),
   b = n(28798),
   C = n(131951),
-  S = n(449224),
-  N = n(358085),
+  N = n(449224),
+  S = n(358085),
   y = n(463727),
   Z = n(855403),
   w = n(299570),
@@ -63,12 +63,12 @@ function B(e) {
 }
 
 function U(e) {
-  let t = (0, N.isWindows)() ? (0, P.Z)(g.ZP, S.Z) : null,
+  let t = (0, S.isWindows)() ? (0, P.Z)(g.ZP, N.Z) : null,
     n = g.ZP.getRunningGames();
   return null != t && (0, Z.Z)(e.id, t.windowHandle) ? 2 : +(null != n.find(t => (0, Z.Z)(e.id, t.windowHandle)))
 }
 
-function z(e) {
+function F(e) {
   let {
     selectedSource: t,
     onChangeSelectedSource: n
@@ -76,7 +76,7 @@ function z(e) {
     enableGoLiveCaptureCard: i
   } = y.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), o = C.Z.supports(L.AN.GO_LIVE_HARDWARE), [a, m] = l.useState(null), [S, N] = l.useState(null), [w, O] = l.useState(null), P = null != w && w.length > 0, [T, R] = l.useState(c.vA.WINDOW), [k, B] = l.useState(!1), z = l.useRef(null), F = l.useRef(new u.Xp), H = (0, d.e7)([g.ZP], () => g.ZP.getRunningGames()), V = function(e, t, n) {
+  }), o = C.Z.supports(L.AN.GO_LIVE_HARDWARE), [a, m] = l.useState(null), [N, S] = l.useState(null), [w, O] = l.useState(null), P = null != w && w.length > 0, [T, R] = l.useState(c.vA.WINDOW), [k, B] = l.useState(!1), F = l.useRef(null), z = l.useRef(new u.Xp), H = (0, d.e7)([g.ZP], () => g.ZP.getRunningGames()), V = function(e, t, n) {
     let r = (0, j.Zy)({
       location: M.dr.STREAM_SOURCE_SELECT
     });
@@ -94,9 +94,9 @@ function z(e) {
       }
       return null
     }, [r, e, t, n])
-  }((0, d.e7)([_.Z], () => _.Z.quests), H, S), J = l.useMemo(() => null == S ? null : [...S].sort((e, t) => (null == V ? void 0 : V.source.id) === e.id ? -1 : (null == V ? void 0 : V.source.id) === t.id ? 1 : U(t) - U(e)), [V, S]);
+  }((0, d.e7)([_.Z], () => _.Z.quests), H, N), J = l.useMemo(() => null == N ? null : [...N].sort((e, t) => (null == V ? void 0 : V.source.id) === e.id ? -1 : (null == V ? void 0 : V.source.id) === t.id ? 1 : U(t) - U(e)), [V, N]);
   l.useEffect(() => {
-    let e = F.current;
+    let e = z.current;
     return (0, I.t)({
       width: 176,
       height: 99
@@ -106,7 +106,7 @@ function z(e) {
         windowSources: n,
         cameraSources: r
       } = e;
-      m(t), N(n), O(r)
+      m(t), S(n), O(r)
     }), e.start(1e3, async () => {
       let {
         screenSources: e,
@@ -116,13 +116,13 @@ function z(e) {
         width: 176,
         height: 99
       });
-      m(e), N(t), O(n)
+      m(e), S(t), O(n)
     }), () => {
       e.stop()
     }
   }, []);
   let X = l.useCallback(e => {
-      null !== e && (z.current = e, B(!e.isScrolledToTop()))
+      null !== e && (F.current = e, B(!e.isScrolledToTop()))
     }, []),
     [Y, K] = l.useState(void 0);
   l.useEffect(() => {
@@ -199,7 +199,7 @@ function z(e) {
       ref: X,
       className: G.sourceScroller,
       onScroll: function() {
-        let e = z.current;
+        let e = F.current;
         null != e && B(!e.isScrolledToTop())
       },
       children: [T === c.vA.WINDOW && null != V && (0, r.jsx)(b.Z, {
@@ -214,7 +214,7 @@ function z(e) {
   })
 }
 
-function F(e) {
+function z(e) {
   let {
     onSelect: t
   } = e, n = l.useCallback(() => {
@@ -319,13 +319,13 @@ function V(e) {
         url: ""
       })
     }, [t, o]),
-    x = (0, N.isMac)() && a().satisfies(null === m.Z || void 0 === m.Z ? void 0 : m.Z.os.release, k.jR),
-    g = (0, N.isMac)(),
+    x = (0, S.isMac)() && a().satisfies(null === m.Z || void 0 === m.Z ? void 0 : m.Z.os.release, k.jR),
+    g = (0, S.isMac)(),
     [p, _] = l.useState(!1),
     v = l.useCallback(() => {
       _(!p)
     }, [p]),
-    j = x ? (0, r.jsx)(F, {
+    j = x ? (0, r.jsx)(z, {
       onSelect: t
     }) : (0, r.jsxs)("div", {
       className: G.nativePickerTypes,
@@ -399,7 +399,7 @@ function J(e) {
     lastPickerError: o
   } = (0, T.Z)(t, n);
   return l.useEffect(() => {
-    (0, N.isLinux)() || (0, N.isMac)() && a().satisfies(null === m.Z || void 0 === m.Z ? void 0 : m.Z.os.release, k.jR) ? (0, w.T)(i) : (0, w.t)()
+    (0, S.isLinux)() || (0, S.isMac)() && a().satisfies(null === m.Z || void 0 === m.Z ? void 0 : m.Z.os.release, k.jR) ? (0, w.T)(i) : (0, w.t)()
   }, [i]), s === O.Uc.Error ? (0, r.jsx)(f.Text, {
     className: G.errorMessage,
     variant: "text-md/normal",

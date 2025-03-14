@@ -9,11 +9,12 @@ function l(e) {
   let {
     problem: t,
     channel: n,
-    feedback: l,
+    embeddedActivityLocation: l,
+    feedback: o,
     activityApplication: r,
-    analyticsData: o,
-    location: c,
-    rating: s = null
+    analyticsData: c,
+    location: s,
+    rating: d = null
   } = e;
   a.default.track(i.rMx.ACTIVITY_REPORT_PROBLEM, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -34,12 +35,13 @@ function l(e) {
     return e
   }({
     reason: t,
-    guild_id: n.getGuildId(),
-    channel_id: n.id,
+    guild_id: null == n ? void 0 : n.getGuildId(),
+    channel_id: null == n ? void 0 : n.id,
     application_id: null == r ? void 0 : r.id,
     application_name: null == r ? void 0 : r.name,
-    location: c,
-    rating: s,
-    feedback: l
-  }, o))
+    location: s,
+    rating: d,
+    feedback: o,
+    embedded_activity_location_kind: l.kind
+  }, c))
 }

@@ -1,6 +1,6 @@
 /**
   Module ID: 53494
-  Original File Name: d4e144e61171a76e
+  Original File Name: bfb003d7a3e5ac3f
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -865,9 +865,31 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     background-color: ButtonFace
 }
 
-.blur__67645:hover {
+.plated__67645 {
+    background-color: transparent;
+    background-color: initial
+}
+
+.plated__67645:hover {
+    background-color: var(--custom-nameplate)!important
+}
+
+.plated__67645:hover {
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px)
+}
+
+.plateMuted__67645 {
+    background-color: var(--custom-nameplate-neutral)!important
+}
+
+.plateMuted__67645 {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px)
+}
+
+.plateMuted__67645:hover {
+    background-color: var(--custom-nameplate-neutral-hovered)!important
 }
 
 .subtext__339d0 {
@@ -4647,12 +4669,12 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .closeButtonBackgroundPlated__972a0 {
-    background-color: var(--background-modifier-selected);
     border-radius: 50%;
+    background-color: var(--custom-nameplate);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     height: 18px;
     width: 18px;
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
     display: flex;
     align-items: center;
     justify-content: center
@@ -5263,4 +5285,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=d4e144e61171a76e.css.map*/
+/*# sourceMappingURL=bfb003d7a3e5ac3f.css.map*/

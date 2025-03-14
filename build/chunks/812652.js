@@ -22,9 +22,9 @@ var r = n(200651),
   j = n(423719);
 let b = [p.tI.PRESET_VIDEO, p.tI.PRESET_DOCUMENTS, p.tI.PRESET_CUSTOM],
   C = [p.LY.RESOLUTION_720, p.LY.RESOLUTION_1080, p.LY.RESOLUTION_1440, p.LY.RESOLUTION_SOURCE],
-  S = [p.ws.FPS_15, p.ws.FPS_30, p.ws.FPS_60];
+  N = [p.ws.FPS_15, p.ws.FPS_30, p.ws.FPS_60];
 
-function N(e) {
+function S(e) {
   let {
     label: t
   } = e;
@@ -96,7 +96,7 @@ function y(e) {
           group: "resolution",
           id: "stream-option-resolution-".concat(e),
           checked: P === e,
-          label: e !== p.LY.RESOLUTION_720 ? (0, r.jsx)(N, {
+          label: e !== p.LY.RESOLUTION_720 ? (0, r.jsx)(S, {
             label: (0, m.M)(e)
           }) : (0, m.M)(e),
           action: () => (function(e) {
@@ -112,11 +112,11 @@ function y(e) {
       }), (0, r.jsx)(i.sNh, {
         id: "frame-rate",
         label: v.NW.string(v.t.SkkeIi),
-        children: S.map(e => (0, r.jsx)(i.k5B, {
+        children: N.map(e => (0, r.jsx)(i.k5B, {
           group: "frame-rate",
           id: "stream-option-frame-rate-".concat(e),
           checked: T === e,
-          label: e === p.ws.FPS_60 ? (0, r.jsx)(N, {
+          label: e === p.ws.FPS_60 ? (0, r.jsx)(S, {
             label: "".concat(e, "fps")
           }) : "".concat(e, "fps"),
           action: () => (function(e) {

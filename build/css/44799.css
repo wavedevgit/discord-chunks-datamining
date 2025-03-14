@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: d1c68bbc6ba56de4
+  Original File Name: 200db14cda344c59
 **/
 .container__98cbd {
     width: 220px;
@@ -88,6 +88,45 @@
 
 .full-motion .buttonContainer__98cbd {
     transition: bottom .2s ease, opacity .2s ease
+}
+
+.container__2b26c {
+    display: flex;
+    gap: var(--spacing-8)
+}
+
+.tooltipContainer__2b26c {
+    display: flex;
+    flex-direction: column;
+    text-align: center
+}
+
+.primaryButton__2b26c {
+    flex-grow: 1
+}
+
+.secondaryButton__2b26c {
+    min-width: 0;
+    width: auto
+}
+
+.buttonInner__2b26c {
+    align-items: center;
+    justify-content: center;
+    display: flex
+}
+
+.buttonWrapper__2b26c {
+    flex-grow: 1
+}
+
+.dot__2b26c {
+    margin: 0 4px 0 6px
+}
+
+.boost__2b26c {
+    align-self: center;
+    justify-self: center
 }
 
 .card__823e1 {
@@ -183,38 +222,8 @@
     margin-left: var(--spacing-8)
 }
 
-.button__823e1 {
+.button__823e1,.footer__823e1 {
     margin-top: var(--spacing-24)
-}
-
-.buttonInner__823e1 {
-    align-items: center;
-    justify-content: center;
-    display: flex
-}
-
-.dot__823e1 {
-    margin: 0 6px
-}
-
-.container__2b26c {
-    display: flex;
-    gap: var(--spacing-8)
-}
-
-.tooltipContainer__2b26c {
-    display: flex;
-    flex-direction: column;
-    text-align: center
-}
-
-.primaryButton__2b26c {
-    flex-grow: 1
-}
-
-.secondaryButton__2b26c {
-    min-width: 0;
-    width: auto
 }
 
 .container__879ae {
@@ -428,4 +437,4 @@
     z-index: 100
 }
 
-/*# sourceMappingURL=d1c68bbc6ba56de4.css.map*/
+/*# sourceMappingURL=200db14cda344c59.css.map*/

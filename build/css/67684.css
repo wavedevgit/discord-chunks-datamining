@@ -1,6 +1,6 @@
 /**
   Module ID: 67684
-  Original File Name: d5db9adcb3af9377
+  Original File Name: 73d8622de25ebc6f
 **/
 .badgeContainer__98c7b {
     position: relative;
@@ -380,6 +380,14 @@
     height: 100%
 }
 
+.theme-dark .newBadge_f14037 {
+    color: var(--primary-330)
+}
+
+.theme-light .newBadge_f14037 {
+    color: var(--white)
+}
+
 .badgeContainer_f14037 {
     position: relative;
     flex-direction: row;
@@ -397,8 +405,7 @@
     margin-left: auto;
     padding: 0 6px;
     pointer-events: all;
-    text-transform: uppercase;
-    color: var(--primary-330)
+    text-transform: uppercase
 }
 
 .timer_f14037 {
@@ -412,9 +419,17 @@
     transition: stroke-dashoffset .5s ease-out
 }
 
+.theme-light .greyedOut__83ef9 {
+    background-color: var(--background-accent)
+}
+
 .theme-dark .customCircleAnimation__83ef9 {
     animation: extra-glow__83ef9 5s ease-in-out infinite,pulse__83ef9 5s ease-in-out infinite;
     transition: stroke-dashoffset .5s ease-out
+}
+
+.theme-dark .greyedOut__83ef9 {
+    background-color: var(--primary-700)
 }
 
 @keyframes glow__83ef9 {
@@ -534,7 +549,6 @@
 }
 
 .greyedOut__83ef9 {
-    background-color: var(--primary-700);
     border-radius: 19px;
     padding: 4px
 }
@@ -1555,4 +1569,4 @@
     color: var(--status-danger)
 }
 
-/*# sourceMappingURL=d5db9adcb3af9377.css.map*/
+/*# sourceMappingURL=73d8622de25ebc6f.css.map*/

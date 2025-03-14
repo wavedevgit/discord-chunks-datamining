@@ -27,8 +27,8 @@ var r = n(200651),
   S = n(570908),
   N = n(702321),
   b = n(201895),
-  v = n(43267),
-  A = n(933557),
+  A = n(43267),
+  v = n(933557),
   m = n(979264),
   P = n(163889),
   y = n(111028),
@@ -245,7 +245,7 @@ function es(e) {
   } = (0, E.cj)([F.Z], () => ({
     ignored: F.Z.isIgnored(i.getRecipientId()),
     blocked: F.Z.isBlocked(i.getRecipientId())
-  })), eh = (0, E.e7)([V.ZP], () => V.ZP.getMentionCount(i.id) > 0), eC = (0, A.ZP)(i), e_ = (0, E.e7)([R.Z], () => R.Z.isFavorite(i.id)), eO = () => {
+  })), eh = (0, E.e7)([V.ZP], () => V.ZP.getMentionCount(i.id) > 0), eC = (0, v.ZP)(i), e_ = (0, E.e7)([R.Z], () => R.Z.isFavorite(i.id)), eO = () => {
     Y(!0)
   }, eg = () => {
     Y(!1)
@@ -282,7 +282,7 @@ function es(e) {
         channelSelected: d
       }))
     })
-  }, ev = e => {
+  }, eA = e => {
     e.preventDefault(), e.stopPropagation();
     let t = q.NW.formatToPlainString(q.t.hJ5Ap6, {
         name: eC
@@ -304,7 +304,7 @@ function es(e) {
         onSubmit: eT
       }, n))
     })
-  }, eA = () => i.isSystemDM() ? (0, r.jsx)("div", {
+  }, ev = () => i.isSystemDM() ? (0, r.jsx)("div", {
     className: X.subtext,
     children: (0, N.Z)(i.id) ? q.NW.string(q.t.FL5T09) : q.NW.string(q.t.NnY5lZ)
   }) : i.isMultiUserDM() ? (0, r.jsx)("div", {
@@ -334,7 +334,7 @@ function es(e) {
       isTyping: Z,
       status: U
     }) : (0, r.jsx)(et, $(J({}, ed), {
-      src: (0, v.x)(i),
+      src: (0, A.x)(i),
       "aria-hidden": !0,
       size: e,
       status: Z ? Q.Skl.ONLINE : U,
@@ -415,7 +415,7 @@ function es(e) {
               selected: d,
               highlighted: eh,
               muted: ex,
-              subText: eA(),
+              subText: ev(),
               name: (0, r.jsx)(y.Z, {
                 tooltipClassName: X.overflowTooltip,
                 children: eU
@@ -428,7 +428,7 @@ function es(e) {
             })
           })), e_ ? (0, r.jsx)(el, {}) : null, eD ? (0, r.jsx)(ei, {}) : null, eZ ? (0, r.jsx)(eo, {}) : null, (0, r.jsx)(er, {
             "aria-label": eP ? q.NW.string(q.t["26C4oq"]) : q.NW.string(q.t.jsvgc3),
-            onClick: eP ? ev : eT,
+            onClick: eP ? eA : eT,
             onMouseDown: eS,
             nameplate: H
           })]

@@ -57,7 +57,7 @@ function _() {
   } = (0, s.a)({
     location: "go_live_modal_refresh",
     autoTrackExposure: !1
-  }), [b, C] = null !== (e = (0, f.Z)(n)) && void 0 !== e ? e : [i, c], S = (0, o.L)(n), N = (0, a.M)(b), y = null != v || j;
+  }), [b, C] = null !== (e = (0, f.Z)(n)) && void 0 !== e ? e : [i, c], N = (0, o.L)(n), S = (0, a.M)(b), y = null != v || j;
   return (0, r.jsxs)("div", {
     className: x.root,
     children: [y ? (0, r.jsx)(p, {
@@ -68,7 +68,7 @@ function _() {
         className: x.sourceOrPresetName,
         variant: "text-md/semibold",
         color: "header-primary",
-        children: y ? null !== (t = null == v ? void 0 : v.name) && void 0 !== t ? t : h.NW.string(m.Z["hJMA+/"]) : S
+        children: y ? null !== (t = null == v ? void 0 : v.name) && void 0 !== t ? t : h.NW.string(m.Z["hJMA+/"]) : N
       }), (0, r.jsxs)(l.Text, {
         className: x.summaryDetail,
         variant: "text-xs/medium",
@@ -79,10 +79,10 @@ function _() {
             children: [(0, r.jsx)(l.ewm, {
               size: "xxs",
               color: "currentColor"
-            }), S]
+            }), N]
           }), (0, r.jsx)(g, {})]
         }), h.NW.format(m.Z["7A4ZyM"], {
-          resolution: N
+          resolution: S
         }), (0, r.jsx)(g, {}), h.NW.format(m.Z.CmJX8P, {
           frameRate: C
         }), _ && (0, r.jsxs)(r.Fragment, {

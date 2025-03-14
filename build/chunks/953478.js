@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => _
+  Z: () => j
 });
 var r = t(200651);
 t(192379);
@@ -12,60 +12,60 @@ var i = t(793030),
   c = t(430824),
   d = t(63063),
   u = t(317169),
-  p = t(639660),
-  v = t(767218),
-  x = t(981631),
+  x = t(639660),
+  p = t(767218),
+  v = t(981631),
   m = t(730621),
   b = t(388032),
-  j = t(785947);
+  _ = t(785947);
 
-function _(e) {
+function j(e) {
   let {
     guildId: n
   } = e, t = (0, o.e7)([c.Z], () => c.Z.getGuild(n)), {
-    available: _,
-    spent: f,
-    total: h
+    available: j,
+    spent: h,
+    total: f
   } = (0, u.Z)(n);
   if (null != t) return (0, r.jsxs)("div", {
-    className: j.container,
+    className: _.container,
     children: [(0, r.jsxs)("div", {
-      className: j.headerContainer,
+      className: _.headerContainer,
       children: [(0, r.jsx)(i.xv, {
         variant: "eyebrow",
         children: b.NW.string(m.Z.hjvcLC)
       }), (0, r.jsx)(i.xv, {
-        className: j.learnMore,
+        className: _.learnMore,
         variant: "text-xs/semibold",
         children: b.NW.format(m.Z.fXE30d, {
-          helpDeskArticle: d.Z.getArticleURL(x.BhN.GUILD_BOOSTING_FAQ)
+          helpDeskArticle: d.Z.getArticleURL(v.BhN.GUILD_BOOSTING_FAQ)
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: j.contentContainer,
-      children: [(0, r.jsx)(v.Z, {
-        count: _,
-        type: v.b.AVAILABLE
-      }), (0, r.jsx)(v.Z, {
-        count: f,
-        type: v.b.SPENT
-      }), (0, r.jsx)(v.Z, {
+      className: _.contentContainer,
+      children: [(0, r.jsx)(p.Z, {
+        count: j,
+        type: p.b.AVAILABLE
+      }), (0, r.jsx)(p.Z, {
         count: h,
-        type: v.b.TOTAL
+        type: p.b.SPENT
+      }), (0, r.jsx)(p.Z, {
+        count: f,
+        type: p.b.TOTAL
       })]
-    }), (0, r.jsx)(p.Z, {
+    }), (0, r.jsx)(x.Z, {
       guildId: n
     }), (0, r.jsx)(a.Z, {
-      className: j.boostButton,
+      className: _.boostButton,
       guild: t,
       analyticsLocation: {
-        page: x.ZY5.GUILD_POWERUPS_OVERVIEW,
-        section: x.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
+        page: v.ZY5.GUILD_POWERUPS_OVERVIEW,
+        section: v.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
       },
       color: s.Ttl.CUSTOM,
       size: s.PhG.LARGE,
       icon: (0, r.jsx)(l.Z, {
-        className: j.boostButtonIcon
+        className: _.boostButtonIcon
       })
     })]
   })

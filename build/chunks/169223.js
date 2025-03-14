@@ -135,7 +135,7 @@ class I extends m.Z {
         rtc_connection_id: p.Z.getRTCConnectionId(),
         media_session_id: p.Z.getMediaSessionId()
       }, m = u.Z.getWindowOpen(E.KJ3.CHANNEL_CALL_POPOUT) ? i.u1M : i.z1l;
-      null != c && null != _ && l && this.possiblyShowFeedbackModal(g.nw.ACTIVITY, () => {
+      null != c && l && this.possiblyShowFeedbackModal(g.nw.ACTIVITY, () => {
         (0, i.ZDy)(async () => {
           let {
             default: e
@@ -143,6 +143,7 @@ class I extends m.Z {
           return t => (0, r.jsx)(e, O(b({}, t), {
             activityApplication: c,
             channel: _,
+            embeddedActivityLocation: s,
             analyticsData: h
           }))
         }, {

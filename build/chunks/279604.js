@@ -60,15 +60,15 @@ function d(e, n) {
 }
 
 function u(e, n) {
-  let [a, c] = i.useState(!1), [u, p] = i.useState(void 0), v = i.useCallback(t => {
+  let [a, c] = i.useState(!1), [u, x] = i.useState(void 0), p = i.useCallback(t => {
     let r = t ? s.H6 : s.Th;
-    return c(!0), p(void 0), r(e, n.skuId).catch(e => {
+    return c(!0), x(void 0), r(e, n.skuId).catch(e => {
       var n;
-      throw p(null !== (n = e.body.message) && void 0 !== n ? n : void 0), e
+      throw x(null !== (n = e.body.message) && void 0 !== n ? n : void 0), e
     }).finally(() => {
       c(!1)
     })
-  }, [e, n.skuId]), x = i.useCallback(e => (e.stopPropagation(), v(!0).then(() => {
+  }, [e, n.skuId]), v = i.useCallback(e => (e.stopPropagation(), p(!0).then(() => {
     (0, o.ZDy)(async () => {
       let {
         default: e
@@ -77,11 +77,11 @@ function u(e, n) {
         powerup: n
       }, t))
     })
-  })), [v, n]), m = i.useCallback(e => (e.stopPropagation(), v(!1)), [v]);
+  })), [p, n]), m = i.useCallback(e => (e.stopPropagation(), p(!1)), [p]);
   return {
     isLoading: a,
     error: u,
-    onActivate: x,
+    onActivate: v,
     onDeactivate: m,
     onShowDeactivate: i.useCallback(i => {
       i.stopPropagation(), (0, o.ZDy)(async () => {

@@ -22,8 +22,8 @@ var r = n(200651),
   j = n(594174),
   b = n(74538),
   C = n(451467),
-  S = n(122186),
-  N = n(37113),
+  N = n(122186),
+  S = n(37113),
   y = n(981631),
   Z = n(388032),
   w = n(711597),
@@ -164,40 +164,40 @@ function k(e) {
     autoTrackExposure: !1
   }), U = (0, g.B4)({
     location: "StreamSettings"
-  }), z = j.default.getUser(null == L ? void 0 : L.hdStreamingBuyerId), F = null != L && null != L.hdStreamingUntil && new Date(L.hdStreamingUntil) > new Date && null != z, H = !D && !B, [V, J] = l.useState(!1), X = A ? N.z8 : N.WC, Y = T(P({}, G), {
+  }), F = j.default.getUser(null == L ? void 0 : L.hdStreamingBuyerId), z = null != L && null != L.hdStreamingUntil && new Date(L.hdStreamingUntil) > new Date && null != F, H = !D && !B, [V, J] = l.useState(!1), X = A ? S.z8 : S.WC, Y = T(P({}, G), {
     section: y.jXE.STREAM_SETTINGS
   }), K = (0, r.jsx)(d.hE2, {
     buttons: X.map(e => W({
       type: e,
       selected: e.value === i,
       needsPremium: !(0, C.Z)(n, e.value, s, M, k, L),
-      needsDemo: U && e.value !== N.LY.RESOLUTION_720,
+      needsDemo: U && e.value !== S.LY.RESOLUTION_720,
       analyticsLocation: Y,
       onClick: () => o(e.value),
       onClose: t,
       setIsHovering: J
     }))
   }), q = (0, r.jsx)(d.hE2, {
-    buttons: N.k0.map(e => W({
+    buttons: S.k0.map(e => W({
       type: e,
       selected: e.value === s,
       needsPremium: !(0, C.Z)(n, i, e.value, M, k, L),
-      needsDemo: U && e.value === N.ws.FPS_60,
+      needsDemo: U && e.value === S.ws.FPS_60,
       analyticsLocation: Y,
       onClick: () => x(e.value),
       onClose: t,
       setIsHovering: J
     }))
   }), Q = [{
-    value: N.tI.PRESET_VIDEO,
+    value: S.tI.PRESET_VIDEO,
     label: Z.NW.string(Z.t.HcwHc3)
   }, ...A ? [] : [{
-    value: N.tI.PRESET_DOCUMENTS,
+    value: S.tI.PRESET_DOCUMENTS,
     label: Z.NW.string(Z.t["/RfohI"])
   }], {
-    value: N.tI.PRESET_CUSTOM,
+    value: S.tI.PRESET_CUSTOM,
     label: Z.NW.string(Z.t["+eOtrK"])
-  }], $ = n === N.tI.PRESET_DOCUMENTS ? (0, r.jsxs)(r.Fragment, {
+  }], $ = n === S.tI.PRESET_DOCUMENTS ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(h.Z, {
       children: (0, r.jsx)(d.xJW, {
         title: Z.NW.string(Z.t.rHyPXl),
@@ -210,13 +210,13 @@ function k(e) {
           })
         })
       })
-    }), H ? (0, r.jsx)(S.Z, {
+    }), H ? (0, r.jsx)(N.Z, {
       message: Z.NW.string(Z.t.deDogI),
       onClose: t,
       openStreamUpsellModal: E
-    }) : null, U && (0, r.jsx)(S.c, {}), F && null != L.hdStreamingUntil && (0, r.jsx)(p.Z, {
+    }) : null, U && (0, r.jsx)(N.c, {}), z && null != L.hdStreamingUntil && (0, r.jsx)(p.Z, {
       streamingUntil: L.hdStreamingUntil,
-      user: z,
+      user: F,
       channel: L
     })]
   }) : (0, r.jsxs)(r.Fragment, {
@@ -232,13 +232,13 @@ function k(e) {
         titleClassName: w.formItemTitleSlim,
         children: q
       })]
-    }), H ? (0, r.jsx)(S.Z, {
+    }), H ? (0, r.jsx)(N.Z, {
       onClose: t,
       openStreamUpsellModal: E,
       glow: V
-    }) : null, U && (0, r.jsx)(S.c, {}), F && null != L.hdStreamingUntil && (0, r.jsx)(p.Z, {
+    }) : null, U && (0, r.jsx)(N.c, {}), z && null != L.hdStreamingUntil && (0, r.jsx)(p.Z, {
       streamingUntil: null == L ? void 0 : L.hdStreamingUntil,
-      user: z,
+      user: F,
       channel: L
     })]
   });

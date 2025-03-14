@@ -1,6 +1,6 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => z
+  Z: () => F
 }), n(47120);
 var r = n(200651),
   l = n(192379),
@@ -22,8 +22,8 @@ var r = n(200651),
   j = n(695346),
   b = n(131951),
   C = n(19780),
-  S = n(594174),
-  N = n(449224),
+  N = n(594174),
+  S = n(449224),
   y = n(358085),
   Z = n(74538),
   w = n(668519),
@@ -43,21 +43,21 @@ var r = n(200651),
   B = n(388032),
   U = n(312253);
 
-function z(e) {
+function F(e) {
   var t;
   let {
     onClose: n,
     transitionState: i,
     sourceApplication: o
   } = e, {
-    twoClickVariant: z
+    twoClickVariant: F
   } = (0, w.a)({
     location: "golivemodalv2",
     autoTrackExposure: !1
-  }), F = l.useRef(performance.now()), {
+  }), z = l.useRef(performance.now()), {
     state: H,
     dispatch: V
-  } = (0, E.Ti)(o), J = (0, f.e7)([b.Z], () => b.Z.getUseSystemScreensharePicker() && (0, y.isMac)() && a().satisfies(null === x.Z || void 0 === x.Z ? void 0 : x.Z.os.release, D.jR)), X = (0, f.e7)([S.default], () => S.default.getCurrentUser()), Y = !Z.ZP.canStreamQuality(Z.ZP.StreamQuality.HIGH, X), {
+  } = (0, E.Ti)(o), J = (0, f.e7)([b.Z], () => b.Z.getUseSystemScreensharePicker() && (0, y.isMac)() && a().satisfies(null === x.Z || void 0 === x.Z ? void 0 : x.Z.os.release, D.jR)), X = (0, f.e7)([N.default], () => N.default.getCurrentUser()), Y = !Z.ZP.canStreamQuality(Z.ZP.StreamQuality.HIGH, X), {
     analyticsLocations: K
   } = (0, _.ZP)(p.Z.GO_LIVE_MODAL_V2);
   (0, L.Z)(J, V);
@@ -88,7 +88,7 @@ function z(e) {
         resolution: H.resolution,
         soundshareEnabled: !H.muteStreamAudio,
         previewDisabled: H.hidePreview,
-        goLiveModalDurationMs: performance.now() - F.current
+        goLiveModalDurationMs: performance.now() - z.current
       });
       if (t) return n();
       "no permission" === r && h.Z.show({
@@ -116,7 +116,7 @@ function z(e) {
         impressionName: c.ImpressionNames.GO_LIVE_MODAL,
         impressionProperties: {
           location_stack: K,
-          application_id: (0, y.isWindows)() ? null === (t = (0, I.Z)(v.ZP, N.Z)) || void 0 === t ? void 0 : t.id : void 0,
+          application_id: (0, y.isWindows)() ? null === (t = (0, I.Z)(v.ZP, S.Z)) || void 0 === t ? void 0 : t.id : void 0,
           parent_media_session_id: C.Z.getMediaSessionId()
         }
       },
@@ -151,7 +151,7 @@ function z(e) {
             onSourceSelect: et
           }) : (0, r.jsx)(W.Z, {
             onClick: function(e) {
-              if (!z) return $(e);
+              if (!F) return $(e);
               V({
                 type: "set_selected_source",
                 source: e
@@ -175,13 +175,13 @@ function z(e) {
               (0, O.t)(), (0, O.T)("")
             },
             children: B.NW.string(B.t.FiBjwc)
-          }), z && (0, r.jsx)(m.zxk, {
+          }), F && (0, r.jsx)(m.zxk, {
             size: m.zxk.Sizes.LARGE,
             className: U.streamButton,
             disabled: null == H.selectedSource,
             onClick: () => null != H.selectedSource && $(H.selectedSource),
             children: B.NW.string(G.Z["5AyH/v"])
-          }), (null != o || z) && (0, r.jsx)(k.Z, {
+          }), (null != o || F) && (0, r.jsx)(k.Z, {
             align: "right"
           })]
         })]

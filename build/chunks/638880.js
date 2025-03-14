@@ -66,7 +66,8 @@ async function I(e) {
       channel: j,
       currentEmbeddedApplication: t,
       embeddedActivitiesManager: k,
-      user: B
+      user: B,
+      isContextless: L
     })) return !1;
   if (null != j) {
     let e = (0, E.Z)(j.id),

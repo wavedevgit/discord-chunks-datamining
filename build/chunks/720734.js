@@ -191,7 +191,9 @@ function eQ(e) {
         style: x
       }, e), {
         "aria-label": eG.NW.string(eG.t["3Uj+2t"]),
-        className: a()(eF.avatarWrapper, !m && g && eF.experiment),
+        className: a()(eF.avatarWrapper, !m && g && eF.experiment, {
+          [eF.plated]: null != c
+        }),
         children: [(0, r.jsx)(Q.Z, {
           nameplate: c,
           hovered: d,
@@ -562,21 +564,24 @@ function e0(e) {
       onMouseLeave: m,
       onClick: p,
       onContextMenu: h,
-      iconForeground: null != E ? eF.iconForeground : void 0
+      iconForeground: null != E ? eF.iconForeground : void 0,
+      nameplate: E
     }), (0, r.jsx)(e3, {
       selfDeaf: t,
       serverDeaf: a,
       onClick: g,
       onContextMenu: b,
       awaitingRemote: i,
-      iconForeground: null != E ? eF.iconForeground : void 0
+      iconForeground: null != E ? eF.iconForeground : void 0,
+      nameplate: E
     }), (0, r.jsx)(e2, {
       isEligibleForPomelo: c,
       webBuildOverride: d,
       onClick: x,
       onContextMenu: N,
       dismissibleContents: _.settings,
-      iconForeground: null != E ? eF.iconForeground : void 0
+      iconForeground: null != E ? eF.iconForeground : void 0,
+      nameplate: E
     })]
   })
 }
@@ -737,34 +742,35 @@ function e2(e) {
     onClick: i,
     onContextMenu: s,
     dismissibleContents: a,
-    iconForeground: l
-  } = e, o = f.ewm, d = (0, p.i)();
-  o = null != t ? f.bgT : n ? f.Ncx : d.Component;
-  let [u, m] = (0, H.US)(a);
+    iconForeground: l,
+    nameplate: o
+  } = e, d = f.ewm, u = (0, p.i)();
+  d = null != t ? f.bgT : n ? f.Ncx : u.Component;
+  let [m, g] = (0, H.US)(a);
   return (0, r.jsx)(f.yRy, {
     position: "top",
     align: "center",
-    shouldShow: null != u,
-    renderPopout: u === c.z.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2 ? () => (0, r.jsx)(en.Z, {}) : u === c.z.USER_SAFETY_CONSUMER_EDUCATION_BLOCK ? () => (0, r.jsx)(ei.Z, {
-      markAsDismissed: m
-    }) : u === c.z.USER_SAFETY_CONSUMER_EDUCATION_MUTE ? () => (0, r.jsx)(es.Z, {
-      markAsDismissed: m
-    }) : u === c.z.SOUNDBOARD_VOLUME_EDUCATION ? () => (0, r.jsx)(el.Z, {
-      markAsDismissed: m
-    }) : u === c.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK ? () => (0, r.jsx)(ec.Z, {}) : () => (0, r.jsx)(r.Fragment, {}),
+    shouldShow: null != m,
+    renderPopout: m === c.z.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2 ? () => (0, r.jsx)(en.Z, {}) : m === c.z.USER_SAFETY_CONSUMER_EDUCATION_BLOCK ? () => (0, r.jsx)(ei.Z, {
+      markAsDismissed: g
+    }) : m === c.z.USER_SAFETY_CONSUMER_EDUCATION_MUTE ? () => (0, r.jsx)(es.Z, {
+      markAsDismissed: g
+    }) : m === c.z.SOUNDBOARD_VOLUME_EDUCATION ? () => (0, r.jsx)(el.Z, {
+      markAsDismissed: g
+    }) : m === c.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK ? () => (0, r.jsx)(ec.Z, {}) : () => (0, r.jsx)(r.Fragment, {}),
     children: () => (0, r.jsx)(eL.Z, eY(ez({
       tooltipText: null != t ? eG.NW.formatToPlainString(eG.t.Gzh6ZG, {
         webBuildOverride: t.id
       }) : eG.NW.string(eG.t.cduTBA),
       onClick: i,
       onContextMenu: s,
-      icon: (0, r.jsx)(o, {
+      icon: (0, r.jsx)(d, {
         size: "refresh_sm",
         color: "currentColor",
         className: l
       })
-    }, d.events), {
-      blurOnHover: !0
+    }, u.events), {
+      plated: null != o
     }))
   })
 }
@@ -782,86 +788,88 @@ function e6(e) {
     onMouseEnter: x,
     onMouseLeave: N,
     onClick: _,
-    onContextMenu: E
-  } = e, j = t || s || n, C = i.useRef(null), O = (0, m.O)(j ? "unmute" : "mute"), v = (0, g.P)(j ? "unmute" : "mute"), {
-    activeVoice: S
-  } = (0, ef.o)(), T = null != S, I = (0, eh.z)(S), P = (0, o.e7)([ev.Z], () => ev.Z.isConnected()), {
-    Component: R,
-    events: D,
-    play: Z
-  } = T ? v : O, w = n || s ? f.v0G : R, {
-    mode: W
+    onContextMenu: E,
+    nameplate: j
+  } = e, C = t || s || n, O = i.useRef(null), v = (0, m.O)(C ? "unmute" : "mute"), S = (0, g.P)(C ? "unmute" : "mute"), {
+    activeVoice: T
+  } = (0, ef.o)(), I = null != T, P = (0, eh.z)(T), R = (0, o.e7)([ev.Z], () => ev.Z.isConnected()), {
+    Component: D,
+    events: Z,
+    play: w
+  } = I ? S : v, W = n || s ? f.v0G : D, {
+    mode: L
   } = (0, ed.ZP)({
     location: "RTC Microphone Button"
   }), {
-    coloredIconsEnabled: L
+    coloredIconsEnabled: B
   } = (0, eu.Z)({
     location: "RTC Microphone Button"
-  }), B = null != d ? d : (0, k.Z)(t, n, s, c, W === ed.BK.GroupedButtonsRedMic), {
-    analyticsLocations: M
-  } = (0, A.ZP)(y.Z.AUDIO_INPUT_BUTTON), U = (0, ep.Hu)({
+  }), M = null != d ? d : (0, k.Z)(t, n, s, c, L === ed.BK.GroupedButtonsRedMic), {
+    analyticsLocations: U
+  } = (0, A.ZP)(y.Z.AUDIO_INPUT_BUTTON), V = (0, ep.Hu)({
     location: y.Z.AUDIO_INPUT_BUTTON,
     autoTrackExposure: !0
   });
-  i.useEffect(() => () => Z(), [j, Z]);
-  let V = i.useCallback(e => {
-      E(e, M)
-    }, [E, M]),
-    [G, F] = i.useState(!1),
-    H = i.useCallback(e => {
+  i.useEffect(() => () => w(), [C, w]);
+  let G = i.useCallback(e => {
+      E(e, U)
+    }, [E, U]),
+    [F, H] = i.useState(!1),
+    z = i.useCallback(e => {
       var t;
-      if ((0, l.k)(null == e ? void 0 : e.target, Node) && (null === (t = C.current) || void 0 === t ? void 0 : t.contains(e.target))) return h.F;
-      F(!1)
+      if ((0, l.k)(null == e ? void 0 : e.target, Node) && (null === (t = O.current) || void 0 === t ? void 0 : t.contains(e.target))) return h.F;
+      H(!1)
     }, []),
-    [z, Y] = i.useState(!1);
+    [Y, K] = i.useState(!1);
   return i.useEffect(() => {
     let e;
-    return P && T && (e = setTimeout(() => {
-      Y(!0), e = setTimeout(() => Y(!1), eX)
+    return R && I && (e = setTimeout(() => {
+      K(!0), e = setTimeout(() => K(!1), eX)
     }, 300)), () => {
-      Y(!1), clearTimeout(e)
+      K(!1), clearTimeout(e)
     }
-  }, [P]), (0, r.jsx)(A.Gt, {
-    value: M,
+  }, [R]), (0, r.jsx)(A.Gt, {
+    value: U,
     children: (0, r.jsxs)("div", {
-      ref: C,
+      ref: O,
       className: eF.micButtonParent,
       children: [(0, r.jsx)(eL.Z, {
-        tooltipText: B,
+        tooltipText: M,
         tooltipColor: u,
         tooltipForceOpen: p,
+        plated: null != j,
         onMouseEnter: () => {
-          x(), D.onMouseEnter()
+          x(), Z.onMouseEnter()
         },
         onMouseLeave: () => {
-          N(), D.onMouseLeave()
+          N(), Z.onMouseLeave()
         },
-        icon: (0, r.jsx)(w, {
+        icon: (0, r.jsx)(W, {
           size: "custom",
           width: 20,
           height: 20,
-          color: j ? f.TVs.colors.STATUS_DANGER : "currentColor",
+          color: C ? f.TVs.colors.STATUS_DANGER : "currentColor",
           className: b
         }),
         onClick: _,
-        onContextMenu: V,
+        onContextMenu: G,
         role: "switch",
         className: a()({
-          [eF.micButtonWithMenu]: U
+          [eF.micButtonWithMenu]: V
         }),
-        redGlow: j && L,
+        redGlow: C && B,
         "aria-label": eG.NW.string(eG.t["w4m94+"]),
-        "aria-checked": j,
+        "aria-checked": C,
         disabled: c
-      }), U && (0, r.jsx)(f.yRy, {
+      }), V && (0, r.jsx)(f.yRy, {
         position: "top",
         align: "center",
         animation: f.yRy.Animation.FADE,
         useMouseEnter: !0,
         ignoreModalClicks: !0,
         onRequestOpen: eb.r5,
-        onRequestClose: H,
-        shouldShow: G,
+        onRequestClose: z,
+        shouldShow: F,
         renderPopout: e => {
           let {
             closePopout: t
@@ -893,16 +901,17 @@ function e6(e) {
           let a = s ? f.u04 : f.CJ0;
           return (0, r.jsx)("div", {
             children: (0, r.jsx)(ex.B, {
-              onCTA: () => F(!0),
+              onCTA: () => H(!0),
               canBeShown: !s,
-              children: (e, t) => (0, r.jsx)(eL.Z, eY(ez({
-                tooltipForceOpen: z,
-                tooltipColor: z ? f.FGA.GREEN : void 0,
-                tooltipContentClassName: z ? eF.voiceFilterWarning : void 0,
-                tooltipText: z ? (0, r.jsxs)(r.Fragment, {
+              children: (e, t) => (0, r.jsx)(eL.Z, ez({
+                plated: null != j,
+                tooltipForceOpen: Y,
+                tooltipColor: Y ? f.FGA.GREEN : void 0,
+                tooltipContentClassName: Y ? eF.voiceFilterWarning : void 0,
+                tooltipText: Y ? (0, r.jsxs)(r.Fragment, {
                   children: [(0, r.jsx)("img", {
-                    alt: null != I ? eG.NW.string(I.name) : "",
-                    src: null == I ? void 0 : I.iconURL,
+                    alt: null != P ? eG.NW.string(P.name) : "",
+                    src: null == P ? void 0 : P.iconURL,
                     draggable: !1
                   }), (0, r.jsx)(f.Text, {
                     variant: "text-sm/medium",
@@ -915,19 +924,17 @@ function e6(e) {
                   size: "custom",
                   width: 12,
                   height: 12,
-                  color: L && j ? f.TVs.colors.STATUS_DANGER : f.TVs.colors.TEXT_NORMAL
+                  color: B && C ? f.TVs.colors.STATUS_DANGER : f.TVs.colors.TEXT_NORMAL
                 }),
                 role: "button",
                 className: eF.buttonChevron,
-                redGlow: j && L,
+                redGlow: C && B,
                 "aria-label": eG.NW.string(eG.t.Hapb4O),
                 disabled: c,
                 onClick: e => {
-                  null == t || t(), n(e), F(!G)
+                  null == t || t(), n(e), H(!F)
                 }
-              }, i), {
-                blurOnHover: !0
-              }))
+              }, i))
             })
           })
         }
@@ -943,50 +950,51 @@ function e3(e) {
     awaitingRemote: s,
     onClick: l,
     onContextMenu: o,
-    iconForeground: c
-  } = e, d = t || n, {
-    Component: m,
-    play: g,
+    iconForeground: c,
+    nameplate: d
+  } = e, m = t || n, {
+    Component: g,
+    play: p,
     events: {
-      onMouseEnter: p,
-      onMouseLeave: h
+      onMouseEnter: h,
+      onMouseLeave: b
     }
-  } = (0, u.l)(d ? "undeafen" : "deafen"), b = n ? f.Vm4 : m, {
-    coloredIconsEnabled: x
+  } = (0, u.l)(m ? "undeafen" : "deafen"), x = n ? f.Vm4 : g, {
+    coloredIconsEnabled: N
   } = (0, eu.Z)({
     location: "RTC Microphone Button"
   }), {
-    analyticsLocations: N
+    analyticsLocations: _
   } = (0, A.ZP)(y.Z.AUDIO_OUTPUT_BUTTON);
-  i.useEffect(() => () => g(), [d, g]);
-  let _ = i.useCallback(e => {
-    o(e, N)
-  }, [o, N]);
+  i.useEffect(() => () => p(), [m, p]);
+  let E = i.useCallback(e => {
+    o(e, _)
+  }, [o, _]);
   return (0, r.jsx)(A.Gt, {
-    value: N,
+    value: _,
     children: (0, r.jsx)(eL.Z, {
+      plated: null != d,
       tooltipText: (0, w.Z)(t, n, s),
-      onMouseEnter: p,
-      onMouseLeave: h,
-      icon: (0, r.jsx)(b, {
+      onMouseEnter: h,
+      onMouseLeave: b,
+      icon: (0, r.jsx)(x, {
         size: "custom",
         width: 20,
         height: 20,
-        color: d ? f.TVs.colors.STATUS_DANGER : "currentColor",
+        color: m ? f.TVs.colors.STATUS_DANGER : "currentColor",
         className: c
       }),
       onClick: l,
-      onContextMenu: _,
+      onContextMenu: E,
       innerClassName: a()({
         [eF.redIcon]: n
       }),
-      iconForeground: d ? eF.strikethrough : void 0,
+      iconForeground: m ? eF.strikethrough : void 0,
       role: "switch",
-      redGlow: x && d,
+      redGlow: N && m,
       "aria-label": eG.NW.string(eG.t.wjcRFR),
-      "aria-checked": d,
-      disabled: s,
-      blurOnHover: !0
+      "aria-checked": m,
+      disabled: s
     })
   })
 }
