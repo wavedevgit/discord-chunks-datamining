@@ -1,6 +1,6 @@
 /** Chunk was on 50751 **/
 n.d(t, {
-  Z: () => S
+  Z: () => I
 });
 var i = n(200651),
   r = n(192379),
@@ -53,15 +53,15 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = r.memo(function(e) {
+let I = r.memo(function(e) {
   let {
     widget: t,
     renderWidget: n,
     renderTitle: l,
-    renderButtons: S,
-    resizeValidation: I,
-    className: C,
-    dragContainerClassName: N
+    renderButtons: I,
+    resizeValidation: S,
+    className: N,
+    dragContainerClassName: C
   } = e, Z = c.Z.getWidgetConfig(t.type), w = (0, a.e7)([d.default], () => d.default.isLocked((0, f.getPID)())), P = (0, y.Z)(), _ = (0, a.e7)([p.Z], () => p.Z.windowSize((0, m.ZY)(P))), T = r.useCallback((e, t, n, i, r) => {
     let l = p.Z.windowSize((0, m.ZY)((0, y.i)())),
       o = (0, h.jL)(n, l),
@@ -91,8 +91,8 @@ let S = r.memo(function(e) {
     pinned: A,
     zIndex: L,
     size: R,
-    anchor: M
-  } = t, W = (0, h.w_)(R, _), V = (0, h.KR)(M, _), {
+    anchor: W
+  } = t, M = (0, h.w_)(R, _), V = (0, h.KR)(W, _), {
     minSize: z,
     resizeX: U,
     resizeY: G,
@@ -105,23 +105,23 @@ let S = r.memo(function(e) {
   }), [_]), B = r.useCallback(e => n(x(j({}, e), {
     widget: t,
     dragging: null != e.dragOperation,
-    className: C
-  })), [t, n, C]), Q = r.useCallback(e => null != l || null != S ? (0, i.jsxs)("div", {
+    className: N
+  })), [t, n, N]), Q = r.useCallback(e => null != l || null != I ? (0, i.jsxs)("div", {
     className: b.extrasContainer,
-    children: [null == l ? void 0 : l(t), null == S ? void 0 : S(t, e)]
-  }) : null, [t, l, S]), K = (0, a.e7)([v.ZP], () => v.ZP.hasRenderDebugMode(O.G.WidgetAreas)), X = r.useMemo(() => {
-    if (null != I) return e => I(x(j({}, e), {
+    children: [null == l ? void 0 : l(t), null == I ? void 0 : I(t, e)]
+  }) : null, [t, l, I]), K = (0, a.e7)([v.ZP], () => v.ZP.hasRenderDebugMode(O.G.WidgetAreas)), X = r.useMemo(() => {
+    if (null != S) return e => S(x(j({}, e), {
       widget: t
     }))
-  }, [I, t]);
+  }, [S, t]);
   return (0, i.jsx)(g.Z, {
     className: o()({
       [b.debug]: K,
       [b.debugUnpinned]: K && !A,
       [b.debugPinned]: K && A
-    }, N),
+    }, C),
     id: k,
-    size: W,
+    size: M,
     anchor: V,
     container: H,
     minSize: null != z ? z : {

@@ -1,6 +1,6 @@
 /** Chunk was on 54030 **/
 n.d(t, {
-  Z: () => I
+  Z: () => O
 }), n(653041), n(47120);
 var r = n(200651),
   o = n(192379),
@@ -61,13 +61,13 @@ function v(e, t, n, o) {
     className: m.widget
   }), e)
 }
-let O = [],
-  I = o.memo(function(e) {
+let I = [],
+  O = o.memo(function(e) {
     let {
       className: t
-    } = e, n = (0, p.Z)(), b = (0, a.e7)([_.Z], () => _.Z.windowSize((0, s.ZY)(n))), m = (0, a.e7)([l.default], () => l.default.isPreviewingInGame()), I = (0, a.e7)([c.Z], () => {
+    } = e, n = (0, p.Z)(), b = (0, a.e7)([_.Z], () => _.Z.windowSize((0, s.ZY)(n))), m = (0, a.e7)([l.default], () => l.default.isPreviewingInGame()), O = (0, a.e7)([c.Z], () => {
       let e = c.Z.getLayout(u.OVERLAY_LAYOUT_ID);
-      if (null == e) return O;
+      if (null == e) return I;
       let t = [];
       for (let n of e.widgets) {
         let e = c.Z.getWidget(n);
@@ -90,7 +90,7 @@ let O = [],
       children: e
     }), [t, b]);
     return (0, r.jsx)(i.W3x, {
-      items: I,
+      items: O,
       renderItem: v,
       getItemKey: h,
       wrapChildren: C

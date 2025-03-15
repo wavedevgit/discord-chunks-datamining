@@ -19,11 +19,10 @@ function l(e) {
       }
       let r = (0, o.fO)(e);
       n(r);
-      let c = (null == e ? void 0 : e.skuId) === "1251324401459265537" || (null == e ? void 0 : e.skuId) === "1252353273256480818" ? 9504e5 : a.Cm,
-        u = 1e3 * e.expiresAt + c - Date.now();
-      if (!r && u > 0) {
+      let c = 1e3 * e.expiresAt + a.Cm - Date.now();
+      if (!r && c > 0) {
         let e = new i.V7;
-        e.start(Math.min(s, u), () => t()), l.current = e
+        e.start(Math.min(s, c), () => t()), l.current = e
       }
     };
     return t(), () => {

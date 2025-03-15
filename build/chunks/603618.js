@@ -24,10 +24,10 @@ var i = n(200651),
   b = n(194082),
   j = n(297781),
   x = n(656709),
-  S = n(567409),
-  I = n(225559),
-  C = n(703656),
-  N = n(93127),
+  I = n(567409),
+  S = n(225559),
+  N = n(703656),
+  C = n(93127),
   Z = n(814443),
   w = n(752048),
   P = n(409057),
@@ -38,8 +38,8 @@ var i = n(200651),
   A = n(699516),
   L = n(594174),
   R = n(801077),
-  M = n(237997),
-  W = n(630388),
+  W = n(237997),
+  M = n(630388),
   V = n(5192),
   z = n(709054),
   U = n(444295),
@@ -107,7 +107,7 @@ function K(e) {
             var i;
             let e = await f.Z.getOrEnsurePrivateChannel(a.id),
               n = null !== (i = T.Z.getChannel(e)) && void 0 !== i ? i : null;
-            o()(null != n, "Send channel must be defined"), (0, C.uL)(F.Z5c.CHANNEL(n.guild_id, n.id)), (0, v.i)(F.IlC.OVERLAY, !0), !0 === t.extra.fake_inventory_item ? await (0, x.k)({
+            o()(null != n, "Send channel must be defined"), (0, N.uL)(F.Z5c.CHANNEL(n.guild_id, n.id)), (0, v.i)(F.IlC.OVERLAY, !0), !0 === t.extra.fake_inventory_item ? await (0, x.k)({
               channel: n,
               content: Y.NW.formatToPlainString(Y.t.UVBA9v, {
                 gameName: t.extra.game_name
@@ -138,12 +138,12 @@ function K(e) {
       if (null == a) return;
       let t = await f.Z.getOrEnsurePrivateChannel(a.id),
         n = null !== (e = T.Z.getChannel(t)) && void 0 !== e ? e : null;
-      o()(null != n, "Send channel must be defined"), (0, C.uL)(F.Z5c.CHANNEL(n.guild_id, n.id)), (0, v.i)(F.IlC.OVERLAY, !0), (0, U.Ws)(F.Odu.ACTIVITY, {
+      o()(null != n, "Send channel must be defined"), (0, N.uL)(F.Z5c.CHANNEL(n.guild_id, n.id)), (0, v.i)(F.IlC.OVERLAY, !0), (0, U.Ws)(F.Odu.ACTIVITY, {
         type: U.Qu.REDIRECT,
         value: U.bk.CHAT,
         userId: a.id
       })
-    }, j = O ? Y.NW.string(Y.t["3fRyS0"]) : Y.NW.string(Y.t.y9eo7e), S = O ? (0, i.jsx)(d.ejJ, {
+    }, j = O ? Y.NW.string(Y.t["3fRyS0"]) : Y.NW.string(Y.t.XHxDIS), I = O ? (0, i.jsx)(d.ejJ, {
       color: "currentColor",
       size: "sm"
     }) : (0, i.jsx)(d.Uuj, {
@@ -169,7 +169,7 @@ function K(e) {
       }) : (0, i.jsx)(d.kSu, {
         color: "currentColor",
         size: "sm"
-      }) : S
+      }) : I
     }))
   })
 }
@@ -285,8 +285,9 @@ function $(e) {
   let {
     entries: t,
     currentUserActivity: n,
-    className: l
-  } = e, o = (0, U.ee)(() => q(t), [t]), a = (0, U.ee)(() => new Set(Array.from(q(t)).filter(e => {
+    className: l,
+    hideHeader: o = !1
+  } = e, a = (0, U.ee)(() => q(t), [t]), s = (0, U.ee)(() => new Set(Array.from(q(t)).filter(e => {
     let n = t.find(t => {
       let {
         author_id: n
@@ -299,21 +300,29 @@ function $(e) {
       } = e;
       return t === u.N.IS_LIVE
     })
-  })), [t]), s = (0, U.ee)(() => new Set(t.map(e => e.id)), [t]);
+  })), [t]), c = (0, U.ee)(() => new Set(t.map(e => e.id)), [t]);
   return (r.useEffect(() => {
     (0, U.zi)(F.Odu.ACTIVITY, {
-      locked: M.default.isInstanceLocked(),
-      shownUserIds: Array.from(o),
-      liveUserIds: Array.from(a),
-      contentInventoryIds: Array.from(s)
+      locked: W.default.isInstanceLocked(),
+      shownUserIds: Array.from(a),
+      liveUserIds: Array.from(s),
+      contentInventoryIds: Array.from(c)
     })
-  }, [o, a, s]), 0 === t.length) ? null : (0, i.jsx)("div", {
+  }, [a, s, c]), 0 === t.length) ? null : (0, i.jsxs)("div", {
     className: l,
-    children: t.map((e, t) => (0, i.jsx)(J, {
+    children: [!o && (0, i.jsx)("div", {
+      className: H.contentInventoryHeader,
+      children: (0, i.jsx)(d.Text, {
+        variant: "text-xs/medium",
+        color: "header-secondary",
+        tag: "div",
+        children: Y.NW.string(Y.t.y9eo7e)
+      })
+    }), t.map((e, t) => (0, i.jsx)(J, {
       idx: t,
       entry: e,
       currentUserActivity: n
-    }, t))
+    }, t))]
   })
 }
 
@@ -323,9 +332,9 @@ function ee(e) {
     maxUserShowCount: n,
     userAffinityThresholdV1: i = 35,
     userAffinityThresholdV2: l = .0029
-  } = e, o = (0, S.Ns)(t);
+  } = e, o = (0, I.Ns)(t);
   (0, O.ZP)(() => {
-    (0, N.W)(), (0, N._)()
+    (0, C.W)(), (0, C._)()
   });
   let d = (0, c.e7)([D.Z], () => null == t ? null : D.Z.getApplicationActivity(t), [t]),
     p = (0, c.Wu)([R.Z, A.Z, Z.Z, w.Z], () => {
@@ -373,7 +382,7 @@ function ee(e) {
         }(w.Z.getUserAffinity(i), r, n)
       })
     }, [t, i, l]);
-  return (0, O.ZP)(() => (I.L(), () => I.v())), {
+  return (0, O.ZP)(() => (S.L(), () => S.v())), {
     entries: r.useMemo(() => {
       let e = o.filter(e => !p.some(t => t.activityUser.id === e.author_id)),
         t = [...p.map(e => (function(e) {
@@ -413,11 +422,11 @@ function et(e) {
 function en(e) {
   let {
     locked: t
-  } = e, n = (0, G.II)(), r = null == n ? void 0 : n.id, l = null == n ? void 0 : n.altId, o = (0, S.Ns)(r), a = (0, c.e7)([L.default], () => L.default.getCurrentUser()), s = null != l ? l : r, u = (0, c.e7)([D.Z], () => null == s ? null : D.Z.getApplicationActivity(s), [s]);
-  (0, O.ZP)(() => (I.L(), () => I.v()));
+  } = e, n = (0, G.II)(), r = null == n ? void 0 : n.id, l = null == n ? void 0 : n.altId, o = (0, I.Ns)(r), a = (0, c.e7)([L.default], () => L.default.getCurrentUser()), s = null != l ? l : r, u = (0, c.e7)([D.Z], () => null == s ? null : D.Z.getApplicationActivity(s), [s]);
+  (0, O.ZP)(() => (S.L(), () => S.v()));
   let p = null != u && (0, y.Z)(u, F.xjy.JOIN),
     f = (0, E.q)(null == u ? void 0 : u.application_id),
-    m = null != f && (0, W.yE)(f.flags, F.udG.EMBEDDED),
+    m = null != f && (0, M.yE)(f.flags, F.udG.EMBEDDED),
     g = ee({
       gamingId: s,
       userAffinityThresholdV1: 17.5,
@@ -443,6 +452,9 @@ function en(e) {
       size: d.PhG.SMALL,
       color: d.Ttl.PRIMARY,
       children: Y.NW.string(Y.t["6Qgren"])
-    }) : null, (0, i.jsx)($, B({}, g))]
+    }) : null, (0, i.jsx)($, Q(B({}, g), {
+      className: H.contentInventoryContainer,
+      hideHeader: !0
+    }))]
   })
 }

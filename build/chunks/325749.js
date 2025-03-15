@@ -8,9 +8,9 @@ var o = t(200651),
   i = t.n(a),
   c = t(442837),
   l = t(481060),
-  s = t(13245),
-  u = t(753972),
-  _ = t(812206),
+  _ = t(13245),
+  s = t(753972),
+  u = t(812206),
   d = t(111028),
   p = t(726721),
   f = t(610394),
@@ -45,7 +45,7 @@ function R(e) {
   let {
     applicationId: n,
     channelId: t
-  } = e, a = (0, c.e7)([_.Z], () => _.Z.getApplication(n)), R = (0, c.e7)([S.ZP], () => S.ZP.getSelfEmbeddedActivities().get(n)), M = (0, c.e7)([P.Z], () => P.Z.getChannel(t)), Y = h.Sb.useSetting(), G = (0, c.Wu)([N.ZP], () => {
+  } = e, a = (0, c.e7)([u.Z], () => u.Z.getApplication(n)), R = (0, c.e7)([S.ZP], () => S.ZP.getSelfEmbeddedActivities().get(n)), M = (0, c.e7)([P.Z], () => P.Z.getChannel(t)), Y = h.Sb.useSetting(), G = (0, c.Wu)([N.ZP], () => {
     var e;
     return null == M || null == R ? [] : Array.from(null !== (e = R.userIds) && void 0 !== e ? e : []).map(e => N.ZP.getMember(M.guild_id, e))
   }, [R, M]), H = r.useMemo(() => {
@@ -73,7 +73,7 @@ function R(e) {
     autoTrackExposure: !0
   }).enabled, X = r.useCallback(() => {
     let e = (0, B.getPID)();
-    s.Z.setInputLocked(!f.ZP.isInputLocked(e), e)
+    _.Z.setInputLocked(!f.ZP.isInputLocked(e), e)
   }, []), q = (0, Z.PR)(), {
     canStayOnTop: $,
     popoutWindowAlwaysOnTop: Q,
@@ -113,7 +113,7 @@ function R(e) {
     }
   }();
   if (null == a || null == R) return null;
-  let er = (0, o.jsx)(u.Z, {
+  let er = (0, o.jsx)(s.Z, {
     application: a,
     size: 24,
     className: L.appIcon

@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 38ccba52ca2c6b1e
+  Original File Name: 345ef285329a6c60
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -784,6 +784,20 @@
 .activityCard__2af41 {
     padding: 0;
     background-color: transparent
+}
+
+.contentInventoryContainer__2af41 {
+    border-top: 1px solid var(--bg-mod-strong);
+    padding-top: var(--spacing-12);
+    margin-top: var(--spacing-12)
+}
+
+.contentInventoryHeader__2af41 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-4);
+    padding-bottom: var(--spacing-8)
 }
 
 .activityCard__2af41+.row__2af41,.inviteFriendsButton__2af41+.row__2af41 {
@@ -5514,4 +5528,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     pointer-events: auto
 }
 
-/*# sourceMappingURL=38ccba52ca2c6b1e.css.map*/
+/*# sourceMappingURL=345ef285329a6c60.css.map*/

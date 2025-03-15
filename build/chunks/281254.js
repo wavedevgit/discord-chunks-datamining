@@ -2,6 +2,8 @@
 e.exports = {
   container: "container__2af41",
   activityCard: "activityCard__2af41",
+  contentInventoryContainer: "contentInventoryContainer__2af41",
+  contentInventoryHeader: "contentInventoryHeader__2af41",
   row: "row__2af41",
   inviteFriendsButton: "inviteFriendsButton__2af41",
   avatar: "avatar__2af41",

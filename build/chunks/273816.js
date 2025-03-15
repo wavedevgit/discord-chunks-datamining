@@ -59,10 +59,10 @@ function y(e) {
   let b = (0, a.e7)([p.Z], () => p.Z.getWindow(m.$J)),
     [j, x] = (0, c.m8)(y),
     {
-      currentFPS: S,
-      averageFrameTime: I,
-      timeSinceLastDrop: C,
-      onResetFrameData: N,
+      currentFPS: I,
+      averageFrameTime: S,
+      timeSinceLastDrop: N,
+      onResetFrameData: C,
       droppedFramesRef: Z,
       renderedFrameCount: w,
       bufferFramecountRef: P,
@@ -71,13 +71,13 @@ function y(e) {
     [T, D, k] = (0, c.ZF)(y),
     [A, L] = (0, c.Y5)(T, _, b),
     R = performance.now() - x.current < c.MC,
-    M = D(I, P.current);
+    W = D(S, P.current);
   (0, u.ZP)(() => (A(), () => {
     L()
   }));
-  let W = r.useCallback(() => {
-      N(), k(), A()
-    }, [N, k, A]),
+  let M = r.useCallback(() => {
+      C(), k(), A()
+    }, [C, k, A]),
     [V, z] = r.useState(!0),
     [U, G] = r.useState(!0),
     [F, Y] = r.useState(!0),
@@ -101,8 +101,8 @@ function y(e) {
         children: ["FPS:", " ", (0, i.jsx)(s.Text, {
           tag: "span",
           variant: "code",
-          color: S < 30 ? "text-danger" : S < 45 ? "text-warning" : "text-primary",
-          children: S.toFixed(2)
+          color: I < 30 ? "text-danger" : I < 45 ? "text-warning" : "text-primary",
+          children: I.toFixed(2)
         })]
       })]
     }), (U || !t) && (0, i.jsxs)("div", {
@@ -121,8 +121,8 @@ function y(e) {
         children: ["Frame Times:", " ", (0, i.jsxs)(s.Text, {
           tag: "span",
           variant: "code",
-          color: I > 1.1 * c.tO ? "text-warning" : "text-primary",
-          children: [I.toFixed(2), "ms"]
+          color: S > 1.1 * c.tO ? "text-warning" : "text-primary",
+          children: [S.toFixed(2), "ms"]
         })]
       })]
     }), (F || !t) && (0, i.jsxs)("div", {
@@ -141,7 +141,7 @@ function y(e) {
         children: ["Dropped Frames:", " ", (0, i.jsx)(s.Text, {
           tag: "span",
           variant: "code",
-          color: C < 2 ? "text-danger" : C < 5 ? "text-warning" : "text-primary",
+          color: N < 2 ? "text-danger" : N < 5 ? "text-warning" : "text-primary",
           children: Z.current
         }), (0, i.jsxs)(s.Text, {
           tag: "span",
@@ -191,8 +191,8 @@ function y(e) {
             children: ["Idle Frame Delta:", " ", (0, i.jsxs)(s.Text, {
               tag: "span",
               variant: "code",
-              color: M > 1 ? "text-danger" : "text-primary",
-              children: [M.toFixed(2), "ms"]
+              color: W > 1 ? "text-danger" : "text-primary",
+              children: [W.toFixed(2), "ms"]
             })]
           })
         }))
@@ -217,7 +217,7 @@ function y(e) {
       className: g.bottomPanelButton,
       children: (0, i.jsx)(h.Z, {
         children: (0, i.jsx)(s.zxk, {
-          onClick: W,
+          onClick: M,
           children: "Reset Frame Data"
         })
       })

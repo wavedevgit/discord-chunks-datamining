@@ -1,6 +1,6 @@
 /** Chunk was on 50751 **/
 n.d(t, {
-  Z: () => C
+  Z: () => N
 }), n(47120), n(230036);
 var i = n(200651),
   r = n(192379),
@@ -23,19 +23,19 @@ var i = n(200651),
   b = n(340101),
   j = n(388032),
   x = n(336412);
-let S = [];
+let I = [];
 
-function I(e, t, n, i) {
+function S(e, t, n, i) {
   let r = (i - 1) * y.z;
   return e === b.C5.HORIZONTAL ? Math.min(Math.max((t - r) / i, 256), Math.max(16 * n / 9, 256)) : Math.min(Math.max(t, 256), Math.max((n - r) / i * 16 / 9, 256))
 }
 
-function C(e) {
+function N(e) {
   let {
     id: t,
     size: n,
-    locked: C,
-    padding: N,
+    locked: N,
+    padding: C,
     borderWidth: Z,
     opacity: w,
     horizontal: P,
@@ -43,33 +43,33 @@ function C(e) {
     anchorTop: T,
     anchorLeft: D,
     showEmpty: k = !0
-  } = e, A = 2 * N + 2 * Z, {
+  } = e, A = 2 * C + 2 * Z, {
     width: L,
     height: R
   } = {
     width: "number" == typeof n.width ? n.width : 256,
     height: "number" == typeof n.height ? n.height : 144
-  }, M = (0, l.e7)([O.Z], () => O.Z.getVoiceChannelId()), {
-    width: W,
+  }, W = (0, l.e7)([O.Z], () => O.Z.getVoiceChannelId()), {
+    width: M,
     height: V,
     ref: z
   } = (0, u.Z)(), U = (0, l.e7)([g.Z], () => {
     var e;
     let n = g.Z.getWidget(t);
     return !!(0, b.ZL)(n) && (null === (e = n.meta.showAllStreams) || void 0 === e || e)
-  }, [t]), G = !P, F = (0, l.e7)([m.Z], () => m.Z.getChannel(M)), Y = (0, l.e7)([f.default], () => f.default.getId()), H = T && G || D && P, B = !T && G || !D && P, {
+  }, [t]), G = !P, F = (0, l.e7)([m.Z], () => m.Z.getChannel(W)), Y = (0, l.e7)([f.default], () => f.default.getId()), H = T && G || D && P, B = !T && G || !D && P, {
     participantsVersion: Q,
     activeStreams: K,
     streamParticipants: X
   } = (0, l.cj)([h.Z, d.Z], () => {
-    if (null == M) return {
-      streamParticipants: S,
+    if (null == W) return {
+      streamParticipants: I,
       participantsVersion: -1,
       activeStreams: new Set
     };
-    let e = new Set(h.Z.getAllActiveStreamsForChannel(M).map(e => (0, p.V9)(e))),
+    let e = new Set(h.Z.getAllActiveStreamsForChannel(W).map(e => (0, p.V9)(e))),
       t = t => e.has((0, p.V9)(t.stream)),
-      n = d.Z.getStreamParticipants(M).filter(e => e.user.id !== Y && (!!U || t(e)));
+      n = d.Z.getStreamParticipants(W).filter(e => e.user.id !== Y && (!!U || t(e)));
     return n.sort((e, n) => {
       if (H) {
         if (t(e) && !t(n)) return -1;
@@ -82,15 +82,15 @@ function C(e) {
     }), {
       streamParticipants: n,
       activeStreams: e,
-      participantsVersion: d.Z.getParticipantsVersion(M)
+      participantsVersion: d.Z.getParticipantsVersion(W)
     }
-  }, [M, Y, U, H, B]), J = X.length, q = null == F || 0 === K.size && C || 0 === J && !C, $ = P ? b.C5.HORIZONTAL : b.C5.VERTICAL, {
+  }, [W, Y, U, H, B]), J = X.length, q = null == F || 0 === K.size && N || 0 === J && !N, $ = P ? b.C5.HORIZONTAL : b.C5.VERTICAL, {
     tileWidth: ee,
     layout: et
   } = function(e, t, n, i, l) {
     let o = function(e, t, n, i) {
-        let r = I(b.C5.HORIZONTAL, e, t, n),
-          l = I(b.C5.VERTICAL, e, t, n);
+        let r = S(b.C5.HORIZONTAL, e, t, n),
+          l = S(b.C5.VERTICAL, e, t, n);
         switch (i) {
           case b.C5.VERTICAL:
             return l;
@@ -100,7 +100,7 @@ function C(e) {
         let o = (9 * l / 16 + y.z) * n - y.z;
         return e > 16 * t / 9 ? r : o <= t ? l : 9 * r / 16 <= t ? r : l
       }(n, i, t, l),
-      a = I(b.C5.VERTICAL, n, i, t),
+      a = S(b.C5.VERTICAL, n, i, t),
       s = null != l ? l : o === a ? b.C5.VERTICAL : b.C5.HORIZONTAL,
       [u, c] = r.useState(o);
     return r.useEffect(() => {
@@ -109,13 +109,13 @@ function C(e) {
       layout: s,
       tileWidth: u
     }
-  }(!1, X.length, null != W ? W : L - A, null != V ? V : R - A, $), en = {
+  }(!1, X.length, null != M ? M : L - A, null != V ? V : R - A, $), en = {
     id: t,
     width: L,
     height: R,
     sizeOffset: A,
     layout: et,
-    padding: N,
+    padding: C,
     participants: X.length
   };
   return (! function(e) {
@@ -220,7 +220,7 @@ function C(e) {
     s.Z.setGpuBoostRequested(E.zS.OVERLAY_VIDEO_STREAM_RENDERING, !q)
   }, [q]), (0, c.ZP)(() => () => {
     s.Z.setGpuBoostRequested(E.zS.OVERLAY_VIDEO_STREAM_RENDERING, !1)
-  }), (q || !_) && C) ? null : q && !C ? k ? C ? null : (0, i.jsx)(v.E, {
+  }), (q || !_) && N) ? null : q && !N ? k ? N ? null : (0, i.jsx)(v.E, {
     emptyText: j.NW.string(j.t["T6+rX1"]),
     icon: o.hGI,
     absolute: !0
@@ -233,7 +233,7 @@ function C(e) {
     children: (0, i.jsx)(y.Z, {
       widgetId: t,
       tileWidth: ee,
-      locked: C,
+      locked: N,
       layout: et,
       activeStreams: K,
       streamParticipants: X,
