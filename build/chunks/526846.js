@@ -1,4 +1,4 @@
-/** Chunk was on 78114 **/
+/** Chunk was on 46022 **/
 n.d(t, {
   m: () => D
 }), n(789020), n(266796);
@@ -33,7 +33,7 @@ var r = n(200651),
   T = n(403404),
   A = n(981631),
   w = n(388032),
-  R = n(908848);
+  R = n(198081);
 let M = c.Y.APP_LAUNCHER_IN_VOICE_BANNER,
   k = "vc-activities-".concat((0, a.Z)());
 

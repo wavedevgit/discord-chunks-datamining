@@ -17,6 +17,5 @@ t.r(e.exports = {
   perkRow: "perkRow__823e1",
   perkText: "perkText__823e1",
   button: "button__823e1",
-  buttonInner: "buttonInner__823e1",
-  dot: "dot__823e1"
+  footer: "footer__823e1"
 })

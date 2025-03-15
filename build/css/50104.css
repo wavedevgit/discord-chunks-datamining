@@ -1,6 +1,6 @@
 /**
   Module ID: 50104
-  Original File Name: d4e144e61171a76e
+  Original File Name: 268b712a0a56d7f6
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -865,9 +865,31 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     background-color: ButtonFace
 }
 
-.blur__67645:hover {
+.plated__67645 {
+    background-color: transparent;
+    background-color: initial
+}
+
+.plated__67645:hover {
+    background-color: var(--custom-nameplate)!important
+}
+
+.plated__67645:hover {
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px)
+}
+
+.plateMuted__67645 {
+    background-color: var(--custom-nameplate-neutral)!important
+}
+
+.plateMuted__67645 {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px)
+}
+
+.plateMuted__67645:hover {
+    background-color: var(--custom-nameplate-neutral-hovered)!important
 }
 
 .subtext__339d0 {
@@ -894,32 +916,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     color: var(--text-primary)
 }
 
-.voiceUser_adebba {
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    opacity: .4
-}
-
-.voiceUser_adebba+.voiceUser_adebba {
-    margin-top: var(--spacing-8)
-}
-
-.voiceUser_adebba.flipped_adebba {
-    flex-direction: row-reverse
-}
-
-.voiceUser_adebba.flipped_adebba .avatar_adebba {
-    margin-left: -3px;
-    margin-right: 0
-}
-
-.voiceUser_adebba.flipped_adebba .username_adebba {
-    margin-left: 0;
-    margin-right: var(--spacing-4)
-}
-
 .effect_adebba {
     position: absolute
 }
@@ -931,6 +927,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding: var(--spacing-4) var(--spacing-8);
     justify-content: center;
     align-items: center;
+    margin-left: var(--spacing-4);
     border-radius: var(--radius-lg);
     opacity: .8;
     flex-shrink: 1;
@@ -944,7 +941,43 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     white-space: nowrap
 }
 
-.clanTag_adebba,.username_adebba {
+.username_adebba.streaming_adebba {
+    padding-right: var(--spacing-4)
+}
+
+.voiceUser_adebba {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    opacity: .4
+}
+
+.voiceUser_adebba+.voiceUser_adebba {
+    margin-top: var(--spacing-8)
+}
+
+.voiceUser_adebba.flipped_adebba {
+    flex-direction: row;
+    justify-content: flex-end
+}
+
+.voiceUser_adebba.flipped_adebba .avatar_adebba {
+    margin-left: 0;
+    margin-right: 0
+}
+
+.voiceUser_adebba.flipped_adebba .username_adebba {
+    margin-left: 0;
+    padding-left: var(--spacing-4);
+    margin-right: var(--spacing-4)
+}
+
+.voiceUser_adebba.flipped_adebba .voiceIcons_adebba {
+    margin-right: var(--spacing-4)!important
+}
+
+.clanTag_adebba {
     margin-left: var(--spacing-4)
 }
 
@@ -4647,12 +4680,12 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .closeButtonBackgroundPlated__972a0 {
-    background-color: var(--background-modifier-selected);
     border-radius: 50%;
+    background-color: var(--custom-nameplate);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     height: 18px;
     width: 18px;
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
     display: flex;
     align-items: center;
     justify-content: center
@@ -5263,4 +5296,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=d4e144e61171a76e.css.map*/
+/*# sourceMappingURL=268b712a0a56d7f6.css.map*/

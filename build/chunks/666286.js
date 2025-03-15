@@ -12,7 +12,7 @@ var r = n(200651),
   u = n(437314),
   d = n(981631),
   p = n(388032),
-  h = n(637875);
+  h = n(530997);
 
 function f() {
   let e = (0, a.Q3)("AddFriendHeader");

@@ -9,8 +9,8 @@ var a = n(442837),
   i = n(570140),
   o = n(441623),
   s = n(246992),
-  c = n(800373),
-  d = n(710662);
+  c = n(20633),
+  d = n(744850);
 
 function u() {
   let e = (0, a.e7)([o.Z], () => o.Z.getDevToolTotalFriendAnniversaries()),

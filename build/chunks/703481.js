@@ -1,4 +1,4 @@
-/** Chunk was on 55321 **/
+/** Chunk was on 59288 **/
 e.exports = {
   guildShopEmbed: "guildShopEmbed__86fa6",
   spinnerContainer: "spinnerContainer__86fa6",

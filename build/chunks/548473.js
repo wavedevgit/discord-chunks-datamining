@@ -30,7 +30,7 @@ var k = x(200651),
   b = x(535170),
   F = x(981631),
   g = x(388032),
-  S = x(658020);
+  S = x(300130);
 
 function v(a) {
   for (var i = 1; i < arguments.length; i++) {

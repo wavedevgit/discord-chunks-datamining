@@ -1,24 +1,24 @@
-/** Chunk was on 97589 **/
-n.d(t, {
-  Z: () => c
+/** Chunk was on 99476 **/
+n.d(r, {
+  Z: () => u
 });
-var l = n(200651);
+var t = n(200651);
 n(192379);
 var i = n(442837),
-  r = n(481060),
-  a = n(493683),
-  o = n(40851),
-  u = n(314897),
-  s = n(981631),
-  d = n(388032);
+  o = n(481060),
+  s = n(493683),
+  a = n(40851),
+  d = n(314897),
+  l = n(981631),
+  c = n(388032);
 
-function c(e, t, n) {
-  let c = (0, o.Aq)();
-  return (0, i.e7)([u.default], () => u.default.getId() === e) || t === s.IlC.POPOUT ? null : (0, l.jsx)(r.sNh, {
+function u(e, r, n) {
+  let u = (0, a.Aq)();
+  return (0, i.e7)([d.default], () => d.default.getId() === e) || r === l.IlC.POPOUT ? null : (0, t.jsx)(o.sNh, {
     id: "message-user",
-    label: d.NW.string(d.t.OAJQlJ),
+    label: c.NW.string(c.t.OAJQlJ),
     action: () => {
-      a.Z.openPrivateChannel(e), c.dispatch(s.CkL.POPOUT_CLOSE), (0, r.pTH)()
+      s.Z.openPrivateChannel(e), u.dispatch(l.CkL.POPOUT_CLOSE), (0, o.pTH)()
     },
     icon: n
   })

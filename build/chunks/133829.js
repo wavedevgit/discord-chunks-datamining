@@ -19,7 +19,6 @@ let {
   hi: () => n.e("88604").then(n.t.bind(n, 771681, 19)),
   hr: () => n.e("51093").then(n.t.bind(n, 789473, 19)),
   hu: () => n.e("47601").then(n.t.bind(n, 340754, 19)),
-  id: () => n.e("21117").then(n.t.bind(n, 294492, 19)),
   it: () => n.e("69854").then(n.t.bind(n, 185274, 19)),
   ja: () => n.e("62084").then(n.t.bind(n, 94154, 19)),
   ko: () => n.e("25976").then(n.t.bind(n, 642646, 19)),

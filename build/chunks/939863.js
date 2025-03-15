@@ -1,31 +1,31 @@
-/** Chunk was on 96173 **/
-t.d(n, {
-  Z: () => c
+/** Chunk was on 85885 **/
+n.d(t, {
+  Z: () => d
 });
-var i = t(200651);
-t(192379);
-var a = t(120356),
-  r = t.n(a),
-  o = t(388032),
-  d = t(798426),
-  _ = t(296507),
-  l = t(866402);
+var r = n(200651);
+n(192379);
+var i = n(120356),
+  l = n.n(i),
+  c = n(388032),
+  a = n(926466),
+  o = n(296507),
+  s = n(866402);
 
-function c(e) {
+function d(e) {
   let {
-    className: n,
-    children: t
+    className: t,
+    children: n
   } = e;
-  return (0, i.jsxs)("div", {
-    className: r()(d.container, n),
-    children: [(0, i.jsx)("img", {
-      alt: o.NW.string(o.t.VoB8OT),
-      src: l,
-      className: r()(d.sparkleIcon, d.sparkleBottom)
-    }), t, (0, i.jsx)("img", {
-      alt: o.NW.string(o.t.VoB8OT),
-      src: _,
-      className: r()(d.sparkleIcon, d.sparkleTop)
+  return (0, r.jsxs)("div", {
+    className: l()(a.container, t),
+    children: [(0, r.jsx)("img", {
+      alt: c.NW.string(c.t.VoB8OT),
+      src: s,
+      className: l()(a.sparkleIcon, a.sparkleBottom)
+    }), n, (0, r.jsx)("img", {
+      alt: c.NW.string(c.t.VoB8OT),
+      src: o,
+      className: l()(a.sparkleIcon, a.sparkleTop)
     })]
   })
 }

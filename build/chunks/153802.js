@@ -1,4 +1,4 @@
-/** Chunk was on 69472 **/
+/** Chunk was on 59288 **/
 e.exports = {
   settingsWrapper: "settingsWrapper_c9e42f",
   osx: "osx_c9e42f",

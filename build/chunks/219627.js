@@ -1,5 +1,5 @@
-/** Chunk was on 61210 **/
-e.exports = {
+/** Chunk was on 72375 **/
+t.exports = {
   modal: "modal__0870d",
   content: "content__0870d",
   infoSide: "infoSide__0870d",

@@ -61,7 +61,7 @@ var r = n(200651),
   ei = n(921944),
   es = n(761274),
   eo = n(388032),
-  ea = n(711597);
+  ea = n(432150);
 
 function ec(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -169,8 +169,8 @@ function ef(e) {
     [eQ, e$] = l.useState(eg),
     [e1, e0] = l.useState(e_),
     [e2, e5] = l.useState(ev),
-    [e3, e7] = l.useState(null !== (o = R.I0.getSetting()) && void 0 !== o && o),
-    [e4, e8] = l.useState(null != ef ? ef : null),
+    [e3, e4] = l.useState(null !== (o = R.I0.getSetting()) && void 0 !== o && o),
+    [e7, e8] = l.useState(null != ef ? ef : null),
     e9 = null !== (d = null == eb ? void 0 : eb.id) && void 0 !== d ? d : eF,
     [e6, te] = l.useState(eA ? "" : void 0),
     tt = (0, w.Q3)("GoLiveModal");
@@ -380,9 +380,9 @@ function ef(e) {
             onChangeAudioDevice: e => eX(e),
             onChangeGuild: () => eU(0),
             onChangeSound: e => e5(e),
-            onChangePreviewDisabled: e => e7(e),
+            onChangePreviewDisabled: e => e4(e),
             onClose: eh,
-            selectedGuildId: e4,
+            selectedGuildId: e7,
             targetGuildPremiumTier: eT,
             selectGuild: H
           })

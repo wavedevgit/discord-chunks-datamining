@@ -1,3 +1,6 @@
-/** Chunk was on 23357 **/
+/** Chunk was on web.js **/
 "use strict";
-n(411885)
+var r = {
+  banner: "banner__9ed41"
+};
+e.exports = r

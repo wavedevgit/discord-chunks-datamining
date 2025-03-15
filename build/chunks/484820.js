@@ -1,5 +1,6 @@
-/** Chunk was on 97365 **/
-e.exports = {
+/** Chunk was on web.js **/
+"use strict";
+var r = {
   container: "container__86ab2",
   banner: "banner__86ab2",
   avatarContainer: "avatarContainer__86ab2",
@@ -11,4 +12,5 @@ e.exports = {
   error: "error__86ab2",
   header: "header__86ab2",
   buttonContainer: "buttonContainer__86ab2"
-}
+};
+e.exports = r

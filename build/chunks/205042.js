@@ -1,6 +1,6 @@
-/** Chunk was on web.js **/
+/** Chunk was on 51231 **/
 "use strict";
-var r = {
+e.exports = {
   card: "card__5bdf8",
   cardStaticHeight: "cardStaticHeight__5bdf8",
   clanIconMask: "clanIconMask__5bdf8",
@@ -29,5 +29,4 @@ var r = {
   selectedTrait: "selectedTrait__5bdf8",
   pulseIn: "pulseIn__5bdf8",
   pulseOut: "pulseOut__5bdf8"
-};
-e.exports = r
+}

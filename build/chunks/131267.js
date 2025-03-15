@@ -1,6 +1,6 @@
-/** Chunk was on web.js **/
+/** Chunk was on 51231 **/
 "use strict";
-var r = {
+e.exports = {
   gameImageContainer: "gameImageContainer_ed15e7",
   highlighted: "highlighted_ed15e7",
   extraGameCount: "extraGameCount_ed15e7",
@@ -13,5 +13,4 @@ var r = {
   tooltipGameName: "tooltipGameName_ed15e7",
   tooltipGames: "tooltipGames_ed15e7",
   tooltipGame: "tooltipGame_ed15e7"
-};
-e.exports = r
+}

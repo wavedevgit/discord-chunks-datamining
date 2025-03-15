@@ -1,4 +1,4 @@
-/** Chunk was on 53494 **/
+/** Chunk was on 50104 **/
 n.d(t, {
   Z: () => P
 }), n(47120);
@@ -19,7 +19,7 @@ var r = n(200651),
   b = n(674552),
   v = n(981631),
   y = n(388032),
-  _ = n(457528);
+  _ = n(212700);
 let O = (0, m.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
   j = (0, m.Mg)(u.Z.FOLDER_ITEM_GUILD_ICON_SIZE),
   C = ["13px 4px 4px 4px", "4px 13px 4px 4px", "4px 4px 4px 13px", "4px 4px 13px 4px"];

@@ -1,6 +1,6 @@
-/** Chunk was on 76977 **/
-var i = n(263604),
-  r = n(278759);
+/** Chunk was on 51231 **/
+var r = n(263604),
+  i = n(278759);
 e.exports = function(e) {
-  return r(i(e).toLowerCase())
+  return i(r(e).toLowerCase())
 }

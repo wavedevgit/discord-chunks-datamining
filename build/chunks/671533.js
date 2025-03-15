@@ -1,40 +1,40 @@
-/** Chunk was on 98697 **/
+/** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 }), n(411104);
-var r, i = n(200651);
+var r, a = n(200651);
 n(192379);
-var o = n(120356),
-  l = n.n(o),
-  a = n(325767),
-  s = n(347304),
+var l = n(120356),
+  i = n.n(l),
+  o = n(325767),
+  s = n(401353),
   c = ((r = {}).LEFT = "LEFT", r.RIGHT = "RIGHT", r.UP = "UP", r.DOWN = "DOWN", r.UP_LEFT = "UP_LEFT", r.DOWN_RIGHT = "DOWN_RIGHT", r);
-let u = e => {
+let d = e => {
   var t, n, {
       width: r = 24,
-      height: o = 24,
+      height: l = 24,
       color: c = "currentColor",
-      direction: u,
-      foreground: d,
-      className: _,
-      title: p
+      direction: d,
+      foreground: u,
+      className: m,
+      title: h
     } = e,
-    E = function(e, t) {
+    x = function(e, t) {
       if (null == e) return {};
-      var n, r, i = function(e, t) {
+      var n, r, a = function(e, t) {
         if (null == e) return {};
-        var n, r, i = {},
-          o = Object.keys(e);
-        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-        return i
+        var n, r, a = {},
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
+        return a
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
       }
-      return i
+      return a
     }(e, ["width", "height", "color", "direction", "foreground", "className", "title"]);
-  return (0, i.jsxs)("svg", (t = function(e) {
+  return (0, a.jsxs)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -51,10 +51,10 @@ let u = e => {
       })
     }
     return e
-  }({}, (0, a.Z)(E)), n = n = {
+  }({}, (0, o.Z)(x)), n = n = {
     width: r,
-    height: o,
-    className: l()(_, function(e) {
+    height: l,
+    className: i()(m, function(e) {
       switch (e) {
         case "LEFT":
           return s.left;
@@ -71,12 +71,12 @@ let u = e => {
         default:
           throw Error("Invalid Direction ".concat(e))
       }
-    }(u)),
+    }(d)),
     viewBox: "0 0 24 24",
-    children: [null != p ? (0, i.jsx)("title", {
-      children: p
-    }) : null, (0, i.jsx)("polygon", {
-      className: d,
+    children: [null != h ? (0, a.jsx)("title", {
+      children: h
+    }) : null, (0, a.jsx)("polygon", {
+      className: u,
       fill: c,
       fillRule: "nonzero",
       points: "13 20 11 20 11 8 5.5 13.5 4.08 12.08 12 4.16 19.92 12.08 18.5 13.5 13 8"
@@ -92,5 +92,5 @@ let u = e => {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t))
 };
-u.Directions = c;
-let d = u
+d.Directions = c;
+let u = d

@@ -1,4 +1,4 @@
-/** Chunk was on 98697 **/
+/** Chunk was on 95617 **/
 n.d(t, {
   U: () => c
 });
@@ -7,18 +7,18 @@ n(192379);
 var i = n(120356),
   o = n.n(i),
   l = n(481060),
-  a = n(388032),
-  s = n(295102);
+  s = n(388032),
+  a = n(796763);
 let c = e => {
   let {
     className: t,
     isPartiallyPurchased: n
   } = e;
   return n ? (0, r.jsx)(l.ua7, {
-    tooltipClassName: s.partiallyOwnedDisclaimer,
+    tooltipClassName: a.partiallyOwnedDisclaimer,
     position: "top",
     align: "left",
-    text: a.NW.string(a.t["2MCxfX"]),
+    text: s.NW.string(s.t["2MCxfX"]),
     children: e => {
       var n, i;
       return (0, r.jsxs)("div", (n = function(e) {
@@ -39,18 +39,18 @@ let c = e => {
         }
         return e
       }({
-        className: o()(s.partialOwnStateContainer, t)
+        className: o()(a.partialOwnStateContainer, t)
       }, e), i = i = {
         children: [(0, r.jsx)("span", {
-          className: s.iconWrapper,
+          className: a.iconWrapper,
           children: (0, r.jsx)(l.d3s, {
             size: "md",
             color: "currentColor",
-            className: s.infoIcon
+            className: a.infoIcon
           })
         }), (0, r.jsx)(l.Text, {
           variant: "text-md/semibold",
-          children: a.NW.string(a.t["5b+JhY"])
+          children: s.NW.string(s.t["5b+JhY"])
         })]
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
@@ -66,6 +66,6 @@ let c = e => {
   }) : (0, r.jsx)(l.Text, {
     variant: "text-md/semibold",
     className: t,
-    children: a.NW.string(a.t["/bUsx8"])
+    children: s.NW.string(s.t["/bUsx8"])
   })
 }

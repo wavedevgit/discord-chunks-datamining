@@ -1,4 +1,4 @@
-/** Chunk was on 55321 **/
+/** Chunk was on 59288 **/
 e.exports = {
   channelHeader: "channelHeader__06fb5",
   icon: "icon__06fb5",

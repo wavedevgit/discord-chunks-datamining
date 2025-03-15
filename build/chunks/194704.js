@@ -1,5 +1,6 @@
-/** Chunk was on 62918 **/
-e.exports = {
+/** Chunk was on web.js **/
+"use strict";
+var r = {
   guildPopout: "guildPopout__51eb2",
   iconMask: "iconMask__51eb2",
   unavailableIcon: "unavailableIcon__51eb2",
@@ -32,4 +33,5 @@ e.exports = {
   memberInfoPlaceholder: "memberInfoPlaceholder__51eb2 placeholderSkeleton__51eb2",
   viewButtonPlaceholder: "viewButtonPlaceholder__51eb2",
   unavailableHeader: "unavailableHeader__51eb2"
-}
+};
+e.exports = r

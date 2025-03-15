@@ -1,5 +1,4 @@
-/** Chunk was on 88042 **/
-"use strict";
+/** Chunk was on 88844 **/
 e.exports = {
   loadingWrapper: "loadingWrapper__5a143"
 }
