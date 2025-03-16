@@ -35,7 +35,7 @@ let i = {
   },
   CommonTriggerPointManager: {
     actions: ["VOICE_CHANNEL_SELECT", "CALL_CREATE", "USER_SETTINGS_MODAL_OPEN"],
-    inlineRequire: () => n(957899).Z
+    inlineRequire: () => n(269835).Z
   },
   CommunicationDisabledManager: {
     inlineRequire: () => n(202107).Z,

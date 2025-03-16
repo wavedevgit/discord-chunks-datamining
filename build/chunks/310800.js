@@ -1,4 +1,4 @@
-/** Chunk was on 51231 **/
+/** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
   Z: () => x
@@ -16,7 +16,7 @@ var i = n(852229),
   m = n(613810),
   g = n(391181),
   p = n(388032),
-  h = n(752991);
+  h = n(770);
 let f = "guild-product-listings-header";
 
 function b(e) {

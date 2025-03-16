@@ -148,7 +148,7 @@ let e7 = !1;
     }
   })
 }));
-let e6 = (0, m.l)(e => {
+let e9 = (0, m.l)(e => {
     let {
       location: t
     } = e, n = (0, ew.default)(t.pathname);
@@ -171,7 +171,7 @@ let e6 = (0, m.l)(e => {
       }), ";"]
     })
   }),
-  e9 = a.ZP.connectStores([F.Z, eG.Z, ek.default], () => ({
+  e6 = a.ZP.connectStores([F.Z, eG.Z, ek.default], () => ({
     isConnected: F.Z.isConnected(),
     defaultRoute: eG.Z.defaultRoute,
     defaultRouteFallback: eG.Z.fallbackRoute,
@@ -234,14 +234,14 @@ let tr = [{
     let {
       match: t
     } = e;
-    return (0, r.jsx)(e9, {
+    return (0, r.jsx)(e6, {
       match: t
     })
   },
   isSessionRequired: !0
 }, {
   path: [e0.Z5c.APP],
-  render: () => (0, r.jsx)(e9, {}),
+  render: () => (0, r.jsx)(e6, {}),
   isSessionRequired: !0
 }, {
   path: [e0.Z5c.USERS(":id")],
@@ -333,7 +333,7 @@ let tr = [{
   isSessionRequired: !0
 }, {
   path: [e0.Z5c.SETTINGS(":section", ":subsection?")],
-  render: e6,
+  render: e9,
   isSessionRequired: !0
 }, {
   path: [e0.Z5c.USER_GUILD_NOTIFICATION_SETTINGS(e_.Hw.guildId())],
@@ -347,7 +347,7 @@ let tr = [{
       (0, s.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("5863"), n.e("2141")]).then(n.bind(n, 751212));
+        } = await Promise.all([n.e("5863"), n.e("94323")]).then(n.bind(n, 751212));
         return t => {
           var n, l;
           return (0, r.jsx)(e, (n = e5({}, t), l = l = {

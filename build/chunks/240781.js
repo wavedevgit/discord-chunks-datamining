@@ -21,7 +21,7 @@ var r = n(200651),
   E = n(74538),
   b = n(204418),
   v = n(388032),
-  y = n(726497);
+  y = n(970033);
 let O = [{
     avatarSize: c.EFr.SIZE_40,
     showStatus: !1

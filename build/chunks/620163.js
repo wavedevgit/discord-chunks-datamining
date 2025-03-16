@@ -1,4 +1,4 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 1815 **/
 n.d(t, {
   i: () => eY
 }), n(653041);
@@ -96,8 +96,8 @@ var i = n(990547),
   eB = n(46140),
   eM = n(65154),
   eU = n(388032),
-  eV = n(155517),
-  eG = n(4740);
+  eV = n(635357),
+  eG = n(156564);
 let eF = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BADGE],
   eH = () => {
     let e = [];
@@ -122,10 +122,10 @@ let eF = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       paymentsBlocked: e2,
       isEligibleForQuests: e6,
       showGiftNitro: e3,
-      isStricterMessageRequestsEnabled: e4,
-      hasLibraryApplication: e8,
-      hasTOTPEnabled: e7,
-      developerMode: e9,
+      isStricterMessageRequestsEnabled: e8,
+      hasLibraryApplication: e4,
+      hasTOTPEnabled: e9,
+      developerMode: e7,
       isAdultUser: e5,
       hasSecureFramesVerifiedUserIds: te,
       hypeSquadRemoved: tt,
@@ -202,13 +202,13 @@ let eF = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eU.NW.string(eU.t.cDgKtb)],
         section: eL.oAB.ACCOUNT,
         parent: eW.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-        predicate: () => !e7
+        predicate: () => !e9
       },
       [eW.s6.ACCOUNT_REMOVE_2FA]: {
         searchableTitles: [eU.NW.string(eU.t["D+aE7u"])],
         section: eL.oAB.ACCOUNT,
         parent: eW.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-        predicate: () => e7
+        predicate: () => e9
       },
       [eW.s6.ACCOUNT_VIEW_BACKUP_CODES]: {
         searchableTitles: [eU.NW.string(eU.t.fZSi1N)],
@@ -405,7 +405,7 @@ let eF = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eL.oAB.CONTENT_AND_SOCIAL,
         searchableTitles: [eU.NW.string(eU.t["3o2ojo"])],
         parent: eW.s6.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
-        predicate: () => !e4
+        predicate: () => !e8
       },
       [eW.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_ACTIVITY_STATUS_V2]: {
         section: eL.oAB.CONTENT_AND_SOCIAL,
@@ -1436,13 +1436,13 @@ let eF = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eL.oAB.ADVANCED,
         searchableTitles: [eU.NW.string(eU.t.fi3UQE)],
         parent: eW.s6.SETTINGS_ADVANCED,
-        predicate: () => e8
+        predicate: () => e4
       },
       [eW.s6.SETTINGS_ADVANCED_APPLICATION_TEST_MODE]: {
         section: eL.oAB.ADVANCED,
         searchableTitles: [eU.NW.string(eU.t.erOqlp)],
         parent: eW.s6.SETTINGS_ADVANCED,
-        predicate: () => e9
+        predicate: () => e7
       },
       [eW.s6.SETTINGS_ADVANCED_SHOW_PLAY_AGAIN]: {
         section: eL.oAB.ADVANCED,

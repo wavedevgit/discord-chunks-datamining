@@ -1,25 +1,25 @@
-/** Chunk was on 33213 **/
+/** Chunk was on 96123 **/
 n.d(t, {
-  V: () => u
+  V: () => l
 }), n(399606);
 var i = n(87051),
-  r = n(9156),
-  s = n(621600),
-  l = n(113449),
-  a = n(686660),
-  o = n(981631),
-  c = n(526761);
+  a = n(9156),
+  r = n(621600),
+  o = n(113449),
+  c = n(686660),
+  s = n(981631),
+  d = n(526761);
 
-function u(e, t) {
-  let n = r.ZP.getGuildFlags(e);
-  t === a.s8.ALL_MESSAGES ? i.Z.updateGuildNotificationSettings(e, {
-    message_notifications: o.bL.ALL_MESSAGES,
-    flags: (0, l.Q4)(n, c.vc.UNREADS_ALL_MESSAGES)
-  }, s.ZB.PresetAll) : t === a.s8.MENTIONS ? i.Z.updateGuildNotificationSettings(e, {
-    message_notifications: o.bL.ONLY_MENTIONS,
-    flags: (0, l.Q4)(n, c.vc.UNREADS_ONLY_MENTIONS)
-  }, s.ZB.PresetMentions) : t === a.s8.NOTHING && i.Z.updateGuildNotificationSettings(e, {
-    message_notifications: o.bL.NO_MESSAGES,
-    flags: (0, l.Q4)(n, c.vc.UNREADS_ONLY_MENTIONS)
-  }, s.ZB.PresetNothing)
+function l(e, t) {
+  let n = a.ZP.getGuildFlags(e);
+  t === c.s8.ALL_MESSAGES ? i.Z.updateGuildNotificationSettings(e, {
+    message_notifications: s.bL.ALL_MESSAGES,
+    flags: (0, o.Q4)(n, d.vc.UNREADS_ALL_MESSAGES)
+  }, r.ZB.PresetAll) : t === c.s8.MENTIONS ? i.Z.updateGuildNotificationSettings(e, {
+    message_notifications: s.bL.ONLY_MENTIONS,
+    flags: (0, o.Q4)(n, d.vc.UNREADS_ONLY_MENTIONS)
+  }, r.ZB.PresetMentions) : t === c.s8.NOTHING && i.Z.updateGuildNotificationSettings(e, {
+    message_notifications: s.bL.NO_MESSAGES,
+    flags: (0, o.Q4)(n, d.vc.UNREADS_ONLY_MENTIONS)
+  }, r.ZB.PresetNothing)
 }

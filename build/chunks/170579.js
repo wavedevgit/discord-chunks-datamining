@@ -22,7 +22,7 @@ var i = n(120356),
   E = n(108989),
   b = n(474936),
   v = n(388032),
-  y = n(812691);
+  y = n(290798);
 
 function O(e, t) {
   let n = p.ZP.getDefaultPrice(e),

@@ -1,4 +1,4 @@
-/** Chunk was on 95617 **/
+/** Chunk was on 98697 **/
 n.d(t, {
   Z: () => d
 });
@@ -7,16 +7,16 @@ n(192379);
 var i = n(120356),
   o = n.n(i),
   l = n(481060),
-  s = n(932563),
-  a = n(960919),
+  a = n(932563),
+  s = n(960919),
   c = n(388032),
-  u = n(146683);
+  u = n(116264);
 
 function d(e) {
   let {
     orbAmount: t,
     showInsufficientOrbBalanceTooltip: n
-  } = e, i = (0, s.c)(), d = null != i && i >= t;
+  } = e, i = (0, a.c)(), d = null != i && i >= t;
   return (0, r.jsx)(l.ua7, {
     position: "top",
     text: c.NW.string(c.t.zqh7ZG),
@@ -46,7 +46,7 @@ function d(e) {
           [u.insufficientBalance]: !d
         })
       }, e), i = i = {
-        children: [(0, r.jsx)(a.Z, {
+        children: [(0, r.jsx)(s.Z, {
           shouldUseThemeColor: !0
         }), t]
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

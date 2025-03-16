@@ -1,48 +1,48 @@
-/** Chunk was on 92457 **/
+/** Chunk was on 98697 **/
 n.d(t, {
-  Z: () => m
+  Z: () => _
 });
 var r = n(200651),
-  l = n(481060),
-  i = n(99690),
-  a = n(473188),
-  o = n(20875),
+  i = n(481060),
+  o = n(99690),
+  l = n(473188),
+  a = n(854848),
   s = n(191420),
   c = n(774621),
-  d = n(49274),
-  u = n(904141);
+  u = n(49274),
+  d = n(904141);
 
-function m(e) {
+function _(e) {
   let {
     user: t,
     rank: n,
-    rankBadgeVisibility: m = "visible",
-    avatarClassName: x,
-    avatarSize: p = l.EFr.SIZE_40
-  } = e, f = (0, l.pxk)(p);
+    rankBadgeVisibility: _ = "visible",
+    avatarClassName: p,
+    avatarSize: E = i.EFr.SIZE_40
+  } = e, f = (0, i.pxk)(E);
   return (0, r.jsxs)("div", {
-    className: o.container,
+    className: a.container,
     style: {
       width: "".concat(f, "px"),
       height: "".concat(f, "px")
     },
     children: [(0, r.jsx)("img", {
-      className: o.frame,
-      src: 1 === n ? s : 2 === n ? c : 3 === n ? d : u,
+      className: a.frame,
+      src: 1 === n ? s : 2 === n ? c : 3 === n ? u : d,
       style: {
         width: f + 8,
         height: f + 8
       },
       alt: ""
-    }), (0, r.jsx)(i.Z, {
-      className: x,
+    }), (0, r.jsx)(o.Z, {
+      className: p,
       user: t,
-      size: p
-    }), "hidden" !== m && (0, r.jsx)("div", {
-      className: o.rankBadge,
-      children: (0, r.jsx)(a._, {
+      size: E
+    }), "hidden" !== _ && (0, r.jsx)("div", {
+      className: a.rankBadge,
+      children: (0, r.jsx)(l._, {
         rank: n,
-        hideInnerBorder: "visibleWithoutBorder" === m
+        hideInnerBorder: "visibleWithoutBorder" === _
       })
     })]
   })

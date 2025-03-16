@@ -1,4 +1,4 @@
-/** Chunk was on 51231 **/
+/** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
   Z: () => p
@@ -12,8 +12,8 @@ var i = n(120356),
   o = n(169903),
   c = n(67152),
   d = n(388032),
-  u = n(434715),
-  m = n(840486);
+  u = n(24651),
+  m = n(379866);
 let g = [{
     key: "tier_name",
     cellClassName: u.tierNameColumn,

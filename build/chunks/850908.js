@@ -1,9 +1,9 @@
-/** Chunk was on 88844 **/
+/** Chunk was on 83346 **/
 n.d(t, {
-  Z: () => r
+  Z: () => i
 });
 
-function r(e) {
+function i(e) {
   if (null != e.title && null != e.filename) {
     let t = e.filename.lastIndexOf("."),
       n = t > 0 ? e.filename.substr(t) : "";

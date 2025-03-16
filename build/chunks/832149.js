@@ -1,4 +1,4 @@
-/** Chunk was on 95617 **/
+/** Chunk was on 98697 **/
 n.d(t, {
   Z: () => o
 });
@@ -10,8 +10,8 @@ let o = e => {
     product: t,
     analyticsLocations: o,
     overrideTitle: l,
-    overrideDescription: s,
-    shouldShowPromotionalExperience: a,
+    overrideDescription: a,
+    shouldShowPromotionalExperience: s,
     onCloseCallback: c,
     itemConsumed: u
   } = e;
@@ -40,8 +40,8 @@ let o = e => {
       product: t,
       analyticsLocations: o,
       overrideTitle: l,
-      overrideDescription: s,
-      shouldShowPromotionalExperience: a,
+      overrideDescription: a,
+      shouldShowPromotionalExperience: s,
       itemConsumed: u
     }, n))
   }, {

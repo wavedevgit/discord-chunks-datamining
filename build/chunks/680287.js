@@ -1,29 +1,29 @@
-/** Chunk was on 73628 **/
-r.d(t, {
+/** Chunk was on 98697 **/
+n.d(t, {
   Z: () => d
-}), r(653041), r(789020);
-var A = r(544891),
-  n = r(881052),
-  o = r(687294),
-  a = r(476326),
-  l = r(45251),
-  i = r(861990),
-  s = r(388032);
+}), n(653041), n(789020);
+var r = n(544891),
+  i = n(881052),
+  o = n(687294),
+  l = n(476326),
+  a = n(45251),
+  s = n(861990),
+  c = n(388032);
 
-function c(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      A = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (A = A.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), A.forEach(function(t) {
-      var A;
-      A = r[t], t in e ? Object.defineProperty(e, t, {
-        value: A,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = A
+      }) : e[t] = r
     })
   }
   return e
@@ -31,62 +31,62 @@ function c(e) {
 class d extends o.Z {
   async uploadFiles(e, t) {
     let {
-      addFilesTo: r
+      addFilesTo: n
     } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
     super.upload({
-      name: s.NW.string(s.t.jfKTen)
+      name: c.NW.string(c.t.jfKTen)
     }, t, e);
-    let A = new AbortController;
+    let r = new AbortController;
     try {
-      if (this.files = e, this._aborted || (this._handleStart(() => A.abort()), !await this.compressAndCheckFileSize())) return;
+      if (this.files = e, this._aborted || (this._handleStart(() => r.abort()), !await this.compressAndCheckFileSize())) return;
       this.setUploadingTextForUI(), await (0, o.$)(this.files, !0, this._recomputeProgress.bind(this))
     } catch (e) {
       this._handleException(e)
     }
     try {
-      return await this._createMessage(A.signal, t, r)
+      return await this._createMessage(r.signal, t, n)
     } catch (e) {
       if (this._raiseEndpointErrors) throw e;
       this._handleException(e)
     }
   }
-  async _createMessage(e, t, r) {
-    var o, s, d, u;
-    let f;
-    let g = [];
+  async _createMessage(e, t, n) {
+    var o, c, d, _;
+    let p;
+    let E = [];
     if ((this.files.forEach((e, t) => {
-        let r = (0, i.B)(e, t);
-        e.item.platform === a.ow.WEB && g.push(c({}, r))
-      }), null != r && null != t) ? f = this._addAttachmentsToPayload(t, r, g) : (d = c({}, t), u = u = {
-        attachments: g
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(d, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
-        var r = Object.keys(e);
+        let n = (0, s.B)(e, t);
+        e.item.platform === l.ow.WEB && E.push(u({}, n))
+      }), null != n && null != t) ? p = this._addAttachmentsToPayload(t, n, E) : (d = u({}, t), _ = _ = {
+        attachments: E
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(d, Object.getOwnPropertyDescriptors(_)) : (function(e, t) {
+        var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var A = Object.getOwnPropertySymbols(e);
-          r.push.apply(r, A)
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
         }
-        return r
-      })(Object(u)).forEach(function(e) {
-        Object.defineProperty(d, e, Object.getOwnPropertyDescriptor(u, e))
-      }), f = d), null != f.scheduled_timestamp) {
+        return n
+      })(Object(_)).forEach(function(e) {
+        Object.defineProperty(d, e, Object.getOwnPropertyDescriptor(_, e))
+      }), p = d), null != p.scheduled_timestamp) {
       try {
-        let e = await (0, l.PV)({
-          channelId: f.channel_id,
-          scheduledTimestamp: f.scheduled_timestamp,
+        let e = await (0, a.PV)({
+          channelId: p.channel_id,
+          scheduledTimestamp: p.scheduled_timestamp,
           messageSendData: {
-            channelId: f.channel_id,
-            content: f.content,
-            flags: f.flags,
-            nonce: f.nonce,
-            message_reference: f.message_reference,
-            allowed_mentions: f.allowed_mentions,
+            channelId: p.channel_id,
+            content: p.content,
+            flags: p.flags,
+            nonce: p.nonce,
+            message_reference: p.message_reference,
+            allowed_mentions: p.allowed_mentions,
             tts: !1
           },
-          attachments: g
+          attachments: E
         });
         return this._handleComplete(e.body), e.body
       } catch (e) {
-        if (this._raiseEndpointErrors) throw new n.Hx(e);
+        if (this._raiseEndpointErrors) throw new i.Hx(e);
         this._handleError({
           code: null == e ? void 0 : null === (o = e.body) || void 0 === o ? void 0 : o.code,
           body: null == e ? void 0 : e.body
@@ -94,25 +94,25 @@ class d extends o.Z {
       }
       return
     }
-    let p = {
+    let f = {
         url: this._url,
-        body: f,
+        body: p,
         signal: e,
         rejectWithError: !1
       },
-      m = "POST" === this._method ? A.tn.post : A.tn.patch;
+      h = "POST" === this._method ? r.tn.post : r.tn.patch;
     try {
-      let e = await m(p);
+      let e = await h(f);
       return this._handleComplete(e.body), e.body
     } catch (e) {
-      if (this._raiseEndpointErrors) throw new n.Hx(e);
+      if (this._raiseEndpointErrors) throw new i.Hx(e);
       this._handleError({
-        code: null == e ? void 0 : null === (s = e.body) || void 0 === s ? void 0 : s.code,
+        code: null == e ? void 0 : null === (c = e.body) || void 0 === c ? void 0 : c.code,
         body: null == e ? void 0 : e.body
       })
     }
   }
-  constructor(e, t = "POST", r) {
-    super(e, t, r)
+  constructor(e, t = "POST", n) {
+    super(e, t, n)
   }
 }

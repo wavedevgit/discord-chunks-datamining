@@ -29,7 +29,7 @@ var i = n(200651),
   I = n(314734),
   _ = n(981631),
   O = n(388032),
-  S = n(947621);
+  S = n(577379);
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {

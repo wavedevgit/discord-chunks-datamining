@@ -1,4 +1,4 @@
-/** Chunk was on 59288 **/
+/** Chunk was on 59160 **/
 n.d(t, {
   Z: () => y
 }), n(653041);
@@ -78,7 +78,7 @@ class y {
         oldFormErrors: !0,
         rejectWithError: !0
       }).then(e => {
-        if (null == e.body || "9f49878af25fe7fdded42f837fc8330a6f5fa544" === e.body.hash) return this._handleUpdateNotAvailable();
+        if (null == e.body || "11e028a7ad91108e4a6e95f6e1ad0829abc24af7" === e.body.hash) return this._handleUpdateNotAvailable();
         if (e.body.required || (0, o.fD)()) return this._handleUpdateDownloaded(!1);
         let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? h : g;
         if (Date.now() - _ > t) return i.K.set("lastNonRequiredUpdateShown", Date.now()), this._handleUpdateDownloaded(!1)

@@ -1,18 +1,17 @@
-/** Chunk was on 91671 **/
-"use strict";
+/** Chunk was on 75762 **/
 n.d(t, {
   L: () => u,
-  Z: () => h
+  Z: () => m
 });
-var r, o = n(990547),
+var o, r = n(990547),
   i = n(544891),
   a = n(570140),
   s = n(314897),
   l = n(573261),
   c = n(815660),
   d = n(981631),
-  u = ((r = {}).USER_ACTION_REQUIRED = "user_action_required", r.USER_SETTINGS_UPDATE = "user_settings_update", r.GUILD_PHONE_REQUIRED = "guild_phone_required", r.MFA_PHONE_UPDATE = "mfa_phone_update", r.CONTACT_SYNC = "contact_sync", r);
-let h = {
+  u = ((o = {}).USER_ACTION_REQUIRED = "user_action_required", o.USER_SETTINGS_UPDATE = "user_settings_update", o.GUILD_PHONE_REQUIRED = "guild_phone_required", o.MFA_PHONE_UPDATE = "mfa_phone_update", o.CONTACT_SYNC = "contact_sync", o);
+let m = {
   setCountryCode(e) {
     a.Z.dispatch({
       type: "PHONE_SET_COUNTRY_CODE",
@@ -93,11 +92,11 @@ let h = {
   }),
   async verifyPhone(e, t) {
     let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
-      r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
+      o = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
       i = {},
       u = s.default.getFingerprint();
-    null != u && "" !== u && (i["X-Fingerprint"] = u), r && (i.authorization = "");
-    let h = await l.Z.post({
+    null != u && "" !== u && (i["X-Fingerprint"] = u), o && (i.authorization = "");
+    let m = await l.Z.post({
       url: d.ANM.VERIFY_PHONE,
       headers: i,
       body: {
@@ -106,13 +105,13 @@ let h = {
       },
       oldFormErrors: !0,
       trackedActionData: {
-        event: o.NetworkActionNames.USER_VERIFY_PHONE
+        event: r.NetworkActionNames.USER_VERIFY_PHONE
       },
       rejectWithError: !1
     });
     return n && a.Z.dispatch({
       type: "MODAL_POP",
       key: c.M
-    }), h.body
+    }), m.body
   }
 }

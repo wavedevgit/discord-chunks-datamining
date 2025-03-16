@@ -1,4 +1,4 @@
-/** Chunk was on 51231 **/
+/** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
   Z: () => y
@@ -16,7 +16,7 @@ var r, i, s = n(200651),
   h = n(267642),
   f = n(981631),
   b = n(388032),
-  x = n(6371);
+  x = n(288661);
 let j = {
     tension: 200,
     friction: 20

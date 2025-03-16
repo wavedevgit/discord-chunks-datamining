@@ -487,7 +487,7 @@ var r, o, a = n(976913),
       return n.e("84778").then(n.bind(n, 331280))
     },
     "pt-BR": function() {
-      return n.e("37473").then(n.bind(n, 335398))
+      return n.e("37473").then(n.bind(n, 680092))
     },
     "pt-PT": function() {
       return n.e("47354").then(n.bind(n, 350844))

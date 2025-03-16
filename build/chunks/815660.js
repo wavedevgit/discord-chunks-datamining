@@ -1,8 +1,7 @@
-/** Chunk was on 91671 **/
-"use strict";
+/** Chunk was on 75762 **/
 n.d(t, {
-  M: () => r,
-  z: () => o
+  M: () => o,
+  z: () => r
 });
-let r = "PHONE_VERIFICATION_MODAL_KEY",
-  o = 6
+let o = "PHONE_VERIFICATION_MODAL_KEY",
+  r = 6

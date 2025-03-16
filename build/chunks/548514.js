@@ -1,4 +1,4 @@
-/** Chunk was on 56033 **/
+/** Chunk was on 37697 **/
 n.d(t, {
   Z: () => D
 }), n(47120), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(301563);
@@ -30,7 +30,7 @@ var r = n(200651),
   S = n(98449),
   E = n(981631),
   A = n(388032),
-  L = n(242813);
+  L = n(906996);
 let T = "start_application_install",
   R = "launch_activity";
 

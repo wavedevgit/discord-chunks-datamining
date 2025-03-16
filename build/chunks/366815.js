@@ -9,7 +9,7 @@ var l = n(442837),
   a = n(536442),
   s = n(142497),
   o = n(388032),
-  c = n(56303),
+  c = n(548207),
   u = n(137707);
 let d = () => (0, r.jsxs)(r.Fragment, {
   children: [(0, r.jsx)(i.Text, {

@@ -1,104 +1,104 @@
-/** Chunk was on 88844 **/
-n.d(t, {
+/** Chunk was on 60691 **/
+n.d(e, {
   B2: () => o,
   DS: () => l,
-  hj: () => c,
-  nh: () => u
+  hj: () => s,
+  nh: () => i
 });
 var r = n(63063),
-  i = n(981631),
-  a = n(388032);
+  a = n(981631),
+  u = n(388032);
 
-function l(e) {
+function l(t) {
   let {
-    application: t,
+    application: e,
     username: n,
-    usernameHook: l = i.dG4,
-    applicationNameHook: u = i.dG4
-  } = e;
-  return null != t ? a.NW.format(a.t.J8SaGx, {
+    usernameHook: l = a.dG4,
+    applicationNameHook: i = a.dG4
+  } = t;
+  return null != e ? u.NW.format(u.t.J8SaGx, {
     username: n,
-    otherUsername: t.name,
+    otherUsername: e.name,
     usernameHook: l,
-    otherUsernameHook: u,
-    helpCenterLink: r.Z.getArticleURL(i.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
-  }) : a.NW.format(a.t["+6V2sb"], {
+    otherUsernameHook: i,
+    helpCenterLink: r.Z.getArticleURL(a.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
+  }) : u.NW.format(u.t["+6V2sb"], {
     username: n,
     usernameHook: l,
-    helpCenterLink: r.Z.getArticleURL(i.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
+    helpCenterLink: r.Z.getArticleURL(a.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
   })
 }
 
-function u(e) {
+function i(t) {
   let {
-    application: t,
+    application: e,
     username: n,
-    usernameHook: l = i.dG4,
-    applicationNameHook: u = i.dG4
-  } = e;
-  return null != t ? a.NW.format(a.t.eGCDam, {
+    usernameHook: l = a.dG4,
+    applicationNameHook: i = a.dG4
+  } = t;
+  return null != e ? u.NW.format(u.t.eGCDam, {
     username: n,
-    otherUsername: t.name,
+    otherUsername: e.name,
     usernameHook: l,
-    otherUsernameHook: u,
-    helpCenterLink: r.Z.getArticleURL(i.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
-  }) : a.NW.format(a.t.sAX6rq, {
+    otherUsernameHook: i,
+    helpCenterLink: r.Z.getArticleURL(a.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
+  }) : u.NW.format(u.t.sAX6rq, {
     username: n,
     usernameHook: l,
-    helpCenterLink: r.Z.getArticleURL(i.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
+    helpCenterLink: r.Z.getArticleURL(a.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
   })
 }
 
-function o(e) {
+function o(t) {
   let {
-    application: t,
+    application: e,
     username: n,
     usernameOnClick: l,
-    applicationNameOnClick: u,
+    applicationNameOnClick: i,
     medium: o
-  } = e;
-  return null != t ? a.NW.formatToParts(a.t["8r+Z+P"], {
+  } = t;
+  return null != e ? u.NW.formatToParts(u.t["8r+Z+P"], {
     username: n,
-    otherUsername: t.name,
+    otherUsername: e.name,
     usernameOnClick: l,
-    otherUsernameOnClick: u,
+    otherUsernameOnClick: i,
     medium: o,
     helpCenterLink: {
-      url: r.Z.getArticleURL(i.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
+      url: r.Z.getArticleURL(a.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
     }
-  }) : a.NW.formatToParts(a.t.ojysqa, {
+  }) : u.NW.formatToParts(u.t.ojysqa, {
     username: n,
     usernameOnClick: l,
     medium: o,
     helpCenterLink: {
-      url: r.Z.getArticleURL(i.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
+      url: r.Z.getArticleURL(a.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
     }
   })
 }
 
-function c(e) {
+function s(t) {
   let {
-    application: t,
+    application: e,
     username: n,
     usernameOnClick: l,
-    applicationNameOnClick: u,
+    applicationNameOnClick: i,
     medium: o
-  } = e;
-  return null != t ? a.NW.formatToParts(a.t.zmc0mp, {
+  } = t;
+  return null != e ? u.NW.formatToParts(u.t.zmc0mp, {
     username: n,
-    otherUsername: t.name,
+    otherUsername: e.name,
     usernameOnClick: l,
-    otherUsernameOnClick: u,
+    otherUsernameOnClick: i,
     medium: o,
     helpCenterLink: {
-      url: r.Z.getArticleURL(i.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
+      url: r.Z.getArticleURL(a.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
     }
-  }) : a.NW.formatToParts(a.t["x2CN/f"], {
+  }) : u.NW.formatToParts(u.t["x2CN/f"], {
     username: n,
     usernameOnClick: l,
     medium: o,
     helpCenterLink: {
-      url: r.Z.getArticleURL(i.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
+      url: r.Z.getArticleURL(a.BhN.PRIVATE_CHANNEL_INTEGRATIONS)
     }
   })
 }

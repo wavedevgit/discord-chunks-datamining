@@ -1,4 +1,4 @@
-/** Chunk was on 53063 **/
+/** Chunk was on 98697 **/
 n.d(t, {
   Qt: () => j,
   ZP: () => Z
@@ -30,7 +30,7 @@ var r = n(200651),
   v = n(139712),
   P = n(765305),
   R = n(388032),
-  A = n(107980);
+  A = n(506361);
 let x = (e, t) => n => {
     n.stopPropagation(), u.default.selectVoiceChannel(e.channel_id, !1), null == t || t(n)
   },

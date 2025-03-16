@@ -87,7 +87,7 @@ function u(e, n) {
       i.stopPropagation(), (0, o.ZDy)(async () => {
         let {
           default: i
-        } = await t.e("31924").then(t.bind(t, 625651));
+        } = await t.e("71415").then(t.bind(t, 625651));
         return t => (0, r.jsx)(i, l({
           guildId: e,
           powerup: n

@@ -1,4 +1,4 @@
-/** Chunk was on 95617 **/
+/** Chunk was on 98697 **/
 n.d(t, {
   F: () => u
 });
@@ -6,9 +6,9 @@ var r = n(200651),
   i = n(192379),
   o = n(481060),
   l = n(906732),
-  s = n(963249),
-  a = n(474936),
-  c = n(213565);
+  a = n(963249),
+  s = n(474936),
+  c = n(504589);
 let u = e => {
   let {
     text: t
@@ -19,8 +19,8 @@ let u = e => {
     className: c.subscribeNow,
     innerRef: u,
     onClick: () => {
-      (0, s.Z)({
-        subscriptionTier: a.Si.TIER_2,
+      (0, a.Z)({
+        subscriptionTier: s.Si.TIER_2,
         analyticsLocations: n,
         returnRef: u
       })

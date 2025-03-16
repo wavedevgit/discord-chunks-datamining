@@ -8,7 +8,7 @@ n(192379);
 var i = n(481060),
   l = n(968437),
   s = n(388032),
-  a = n(635966);
+  a = n(362466);
 let o = e => {
   let {
     autoArchiveDuration: t,
