@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 n.d(t, {
   P: () => d,
-  R: () => c
+  R: () => u
 }), n(301563);
 var i = n(13245),
   r = n(556296),
@@ -9,17 +9,17 @@ var i = n(13245),
   o = n(13140),
   a = n(145597),
   s = n(987650),
-  u = n(981631);
+  c = n(981631);
 
-function c(e, t) {
+function u(e, t) {
   return {
     trackView() {
-      i.Z.track(u.rMx.NOTIFICATION_VIEWED, t), i.Z.notificationEvent(e, s.bv.Viewed)
+      i.Z.track(c.rMx.NOTIFICATION_VIEWED, t), i.Z.notificationEvent(e, s.bv.Viewed)
     },
     trackClick(n) {
       var r, o;
-      let c = l.default.isLocked((0, a.getPID)()) ? u.Sbl.LOCKED_OVERLAY : u.Sbl.UNLOCKED_OVERLAY;
-      i.Z.track(u.rMx.NOTIFICATION_CLICKED, (r = function(e) {
+      let u = l.default.isLocked((0, a.getPID)()) ? c.Sbl.LOCKED_OVERLAY : c.Sbl.UNLOCKED_OVERLAY;
+      i.Z.track(c.rMx.NOTIFICATION_CLICKED, (r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             i = Object.keys(n);
@@ -37,7 +37,7 @@ function c(e, t) {
         }
         return e
       }({}, t), o = o = {
-        location: c,
+        location: u,
         action_type: n
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
         var n = Object.keys(e);

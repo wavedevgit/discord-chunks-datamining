@@ -1,6 +1,6 @@
 /**
   Module ID: 50104
-  Original File Name: 268b712a0a56d7f6
+  Original File Name: 9632dee9ed5ea96c
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -1112,9 +1112,12 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .chatWheelDeadZoneIcon_adfa30 {
+    position: relative;
+    z-index: 9999;
     width: 48px;
     height: 48px;
-    color: var(--white-500)
+    color: var(--white-500);
+    cursor: pointer
 }
 
 .paginationHint_adfa30 {
@@ -5296,4 +5299,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=268b712a0a56d7f6.css.map*/
+/*# sourceMappingURL=9632dee9ed5ea96c.css.map*/

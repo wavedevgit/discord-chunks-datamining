@@ -3,7 +3,7 @@
 let r;
 n.d(t, {
   Ek: () => P,
-  ZP: () => ei
+  ZP: () => eo
 }), n(653041), n(47120), n(757143), n(301563);
 var i, o = n(348327),
   a = n.n(o),
@@ -233,7 +233,7 @@ function $(e) {
   let {
     keybinds: t
   } = e;
-  k = t, D = {}, x = 0, Object.values(L).filter(e => U.includes(e.action) && e.managed).length !== U.length && en(), l().forEach(L, e => {
+  k = t, D = {}, x = 0, Object.values(L).filter(e => U.includes(e.action) && e.managed).length !== U.length && er(), l().forEach(L, e => {
     x = Math.max(parseInt(e.id, 10), x) + 1;
     try {
       Y(e)
@@ -255,7 +255,14 @@ function ee(e, t) {
     params: {}
   })), !0)
 }
-let et = [function() {
+
+function et(e) {
+  let t = !1;
+  return l().each(L, n => {
+    n.action === e && !0 === n.managed && (z(n), t = !0)
+  }), t
+}
+let en = [function() {
   let e = h.Z.getShortcuts();
   return l().each(L, t => {
     t.action === y.kg4.PUSH_TO_TALK && !0 === t.managed && (null == t.context || null == e[t.context]) && z(t)
@@ -285,13 +292,14 @@ let et = [function() {
 }, function() {
   return !!v.default.getAnyGlobalEnabledOverlay() && ee(y.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, "]`")
 }, function() {
-  return ee(y.kg4.SOUNDBOARD_HOLD, I.D_, !1)
+  let e = et(y.kg4.SOUNDBOARD_HOLD);
+  return ee(y.kg4.SOUNDBOARD_HOLD, I.D_, !1) || e
 }, function() {
   return ee(y.kg4.SAVE_CLIP, O.D_)
 }];
 
-function en() {
-  return F(), et.reduce((e, t) => t() || e, !1)
+function er() {
+  return F(), en.reduce((e, t) => t() || e, !1)
 }
 d.Z.setGetKeybindList(() => {
   let e = [];
@@ -303,7 +311,7 @@ d.Z.setGetKeybindList(() => {
   });
   return t && e.push((0, b.BB)(P.shortcut)), e
 });
-class er extends(i = c.ZP.DeviceSettingsStore) {
+class ei extends(i = c.ZP.DeviceSettingsStore) {
   initialize(e) {
     __OVERLAY__ || this.waitFor(h.Z, v.default), L = null != e ? e : {}
   }
@@ -342,7 +350,7 @@ class er extends(i = c.ZP.DeviceSettingsStore) {
     return this.getKeybindForAction(y.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, !0)
   }
 }
-T(er, "displayName", "KeybindsStore"), T(er, "persistKey", "keybinds"), T(er, "migrations", [function() {
+T(ei, "displayName", "KeybindsStore"), T(ei, "persistKey", "keybinds"), T(ei, "migrations", [function() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
     {
       v: t,
@@ -382,12 +390,12 @@ T(er, "displayName", "KeybindsStore"), T(er, "persistKey", "keybinds"), T(er, "m
 }, e => l().reduce(e, (e, t, n) => t.action === y.kg4.TOGGLE_GO_LIVE_STREAMING && t.managed ? e : C(N({}, e), {
   [n]: t
 }), {})]);
-let ei = new er(u.Z, {
-  CONNECTION_OPEN: en,
-  AUDIO_SET_MODE: en,
-  OVERLAY_SET_ENABLED: en,
-  RPC_APP_CONNECTED: en,
-  RPC_APP_DISCONNECTED: en,
+let eo = new ei(u.Z, {
+  CONNECTION_OPEN: er,
+  AUDIO_SET_MODE: er,
+  OVERLAY_SET_ENABLED: er,
+  RPC_APP_CONNECTED: er,
+  RPC_APP_DISCONNECTED: er,
   KEYBINDS_ADD_KEYBIND: q,
   KEYBINDS_DELETE_KEYBIND: Q,
   KEYBINDS_SET_KEYBIND: X,

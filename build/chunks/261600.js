@@ -1,4 +1,4 @@
-/** Chunk was on 58173 **/
+/** Chunk was on 38542 **/
 n.d(t, {
   U: () => f
 });
@@ -6,8 +6,8 @@ var r = n(200651),
   l = n(192379),
   o = n(399606),
   i = n(481060),
-  s = n(592125),
-  a = n(922482),
+  a = n(592125),
+  s = n(922482),
   c = n(750154),
   u = n(427679),
   d = n(388032);
@@ -19,8 +19,8 @@ function h(e) {
   } = e, {
     channelId: f
   } = null !== (t = (0, c.rq)(h)) && void 0 !== t ? t : {}, p = (0, o.e7)([u.Z], () => u.Z.getStageInstanceByChannel(f), [f]), g = l.useRef(null), y = l.useCallback(() => {
-    let e = s.Z.getChannel(f);
-    null != e && a.Cq(e)
+    let e = a.Z.getChannel(f);
+    null != e && s.Cq(e)
   }, [f]), v = null !== (n = null == p ? void 0 : p.topic) && void 0 !== n ? n : h.name, O = d.NW.formatToPlainString(d.t["T+DNAA"], {
     channel: v
   });

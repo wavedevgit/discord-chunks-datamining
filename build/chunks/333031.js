@@ -109,27 +109,29 @@ function j(e) {
   let {
     observe: t = !0,
     className: n,
-    children: l
-  } = e, a = i.useContext(x), s = (0, u.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(v.G.ClickZones)), c = (0, u.e7)([p.default], () => p.default.disableClickableRegions), [{
-    refHandler: d,
-    setObserve: f
+    style: l,
+    children: a
+  } = e, s = i.useContext(x), c = (0, u.e7)([b.ZP], () => b.ZP.hasRenderDebugMode(v.G.ClickZones)), d = (0, u.e7)([p.default], () => p.default.disableClickableRegions), [{
+    refHandler: f,
+    setObserve: m
   }] = i.useState(() => {
     let e = null;
     return {
       setObserve(t) {
-        null != e && (t ? a.observe(e) : a.unobserve(e))
+        null != e && (t ? s.observe(e) : s.unobserve(e))
       },
       refHandler(t) {
-        null != e && a.unobserve(e), e = t
+        null != e && s.unobserve(e), e = t
       }
     }
   });
   return i.useLayoutEffect(() => {
-    c ? f(!1) : f(t)
-  }, [t, f, c]), (0, r.jsx)("div", {
-    ref: d,
-    className: o()(n, E.clickable, s && E.debugMode),
+    d ? m(!1) : m(t)
+  }, [t, m, d]), (0, r.jsx)("div", {
+    ref: f,
+    style: l,
+    className: o()(n, E.clickable, c && E.debugMode),
     "data-click-zone": !0,
-    children: l
+    children: a
   })
 }

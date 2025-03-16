@@ -8,8 +8,8 @@ var i = n(200651),
   o = n.n(l),
   a = n(348327),
   s = n.n(a),
-  u = n(642128),
-  c = n(481060),
+  c = n(642128),
+  u = n(481060),
   d = n(667142),
   p = n(333031),
   h = n(519473);
@@ -48,11 +48,11 @@ function m(e) {
   }, 100), () => {
     clearInterval(y.current)
   }), []);
-  let N = () => {
+  let C = () => {
       a(Date.now()), b(e => e + 1)
     },
-    C = l > 0 && m - l < 1e3,
-    Z = (0, c.Yzy)(O > 0 && O < m && m - O < j, {
+    N = l > 0 && m - l < 1e3,
+    Z = (0, u.Yzy)(O > 0 && O < m && m - O < j, {
       from: {
         opacity: 0
       },
@@ -69,15 +69,15 @@ function m(e) {
       E > 10 && P(!0)
     }, [E]), w) throw Error("ClickZoneDebugWidget crashed, too many clicks");
   return t && !n ? null : (0, i.jsx)(i.Fragment, {
-    children: Z((e, t) => t && (0, i.jsx)(u.animated.div, {
+    children: Z((e, t) => t && (0, i.jsx)(c.animated.div, {
       style: e,
       className: h.clickZoneDebugContainer,
       children: (0, i.jsx)(p.Z, {
-        className: o()(h.clickZone, C && h.clickBackground),
-        children: (0, i.jsx)(c.P3F, {
-          onClick: N,
+        className: o()(h.clickZone, N && h.clickBackground),
+        children: (0, i.jsx)(u.P3F, {
+          onClick: C,
           className: h.clickable,
-          children: (0, i.jsxs)(c.Text, {
+          children: (0, i.jsxs)(u.Text, {
             variant: "text-md/semibold",
             color: "always-white",
             children: ["Click Me (", E, ")"]

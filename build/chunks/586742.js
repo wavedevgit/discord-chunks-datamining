@@ -8,8 +8,8 @@ var i = n(200651),
   o = n.n(l),
   a = n(442837),
   s = n(481060),
-  u = n(239091),
-  c = n(765250),
+  c = n(239091),
+  u = n(765250),
   d = n(393238),
   p = n(358221),
   h = n(933557),
@@ -25,8 +25,8 @@ var i = n(200651),
   x = n(804570),
   I = n(501787),
   S = n(981631),
-  N = n(65154),
-  C = n(388032),
+  C = n(65154),
+  N = n(388032),
   Z = n(640959);
 
 function w(e) {
@@ -73,12 +73,12 @@ function _(e) {
 
 function T(e) {
   let {
-    context: t = N.Yn.DEFAULT,
+    context: t = C.Yn.DEFAULT,
     participants: l,
     locked: o,
     channel: a,
     width: s,
-    height: c,
+    height: u,
     shouldDisplay: d
   } = e, p = (e, r) => {
     let l = e.user;
@@ -86,7 +86,7 @@ function T(e) {
       type: b.Qu.CAMERA,
       value: b.bk.SETTINGS_OPENED,
       userId: null == l ? void 0 : l.id
-    }), (0, u.jW)(r, async () => {
+    }), (0, c.jW)(r, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("6524")]).then(n.bind(n, 27900));
@@ -120,7 +120,7 @@ function T(e) {
       className: Z.tile,
       containerStyle: {
         width: s,
-        height: c
+        height: u
       },
       fit: f.L.COVER,
       channel: a,
@@ -138,25 +138,25 @@ function T(e) {
 
 function D(e) {
   let {
-    context: t = N.Yn.DEFAULT,
+    context: t = C.Yn.DEFAULT,
     participants: n,
     participantsVersion: l,
     locked: a,
-    widget: u,
-    channel: c,
+    widget: c,
+    channel: u,
     width: d,
     height: p,
     showEmpty: h = !0,
     containerRef: f
-  } = e, m = "boolean" != typeof u.meta.horizontal || u.meta.horizontal, g = n.length > 0 && null != t && null != c && (!a || u.pinned);
+  } = e, m = "boolean" != typeof c.meta.horizontal || c.meta.horizontal, g = n.length > 0 && null != t && null != u && (!a || c.pinned);
   return (r.useEffect(() => {
     (0, j.m3)({
       locked: a,
-      pinned: u.pinned,
-      widget: u.type,
+      pinned: c.pinned,
+      widget: c.type,
       isPreviewingInGame: !1
     }, g)
-  }, [a, u, g]), 0 !== n.length || a) ? null == c ? null : (0, i.jsx)("div", {
+  }, [a, c, g]), 0 !== n.length || a) ? null == u ? null : (0, i.jsx)("div", {
     ref: f,
     className: o()({
       [Z.videoList]: !0,
@@ -164,13 +164,13 @@ function D(e) {
       [Z.hidden]: !g && a
     }),
     style: {
-      opacity: u.opacity
+      opacity: c.opacity
     },
     children: (0, i.jsx)(T, {
       context: t,
       participants: n,
       locked: a,
-      channel: c,
+      channel: u,
       width: d,
       height: p,
       shouldDisplay: g,
@@ -179,7 +179,7 @@ function D(e) {
   }) : h ? a ? null : (0, i.jsx)("div", {
     ref: f,
     children: (0, i.jsx)(x.E, {
-      emptyText: C.NW.string(C.t["aTiM4+"]),
+      emptyText: N.NW.string(N.t["aTiM4+"]),
       icon: s.Odl,
       absolute: !0
     })
@@ -192,7 +192,7 @@ function k(e) {
     l = null == t ? void 0 : t.id,
     o = (0, a.Wu)([p.Z], () => null != l ? p.Z.getVideoParticipants(l) : []),
     s = (0, a.e7)([p.Z], () => null != l ? p.Z.getParticipantsVersion(l) : 0),
-    u = "boolean" != typeof e.widget.meta.horizontal || e.widget.meta.horizontal,
+    c = "boolean" != typeof e.widget.meta.horizontal || e.widget.meta.horizontal,
     {
       width: f,
       height: m,
@@ -201,7 +201,7 @@ function k(e) {
     {
       participantTileWidth: E,
       visibleParticipants: b
-    } = (0, g.ZB)(u ? null != f ? f : e.width : null != m ? m : e.height, o, {
+    } = (0, g.ZB)(c ? null != f ? f : e.width : null != m ? m : e.height, o, {
       tileWidth: I.vZ,
       tileMinWidth: I.mo,
       tileMargin: I.F$,
@@ -223,7 +223,7 @@ function k(e) {
       containerWidth: n,
       containerHeight: i
     } = x.current;
-    (u && e.height > e.width || !u && e.width > e.height) && (0, c.nv)({
+    (c && e.height > e.width || !c && e.width > e.height) && (0, u.nv)({
       widgetId: t,
       size: {
         fixed: !0,
@@ -231,13 +231,13 @@ function k(e) {
         height: n
       }
     })
-  }, [u]), (0, i.jsx)(D, P(w({}, e), {
+  }, [c]), (0, i.jsx)(D, P(w({}, e), {
     channel: t,
     title: null != n ? n : "",
     participants: b,
     participantsVersion: s,
-    width: u ? E : null != f ? f : e.width,
-    height: u ? null != m ? m : e.height : E,
+    width: c ? E : null != f ? f : e.width,
+    height: c ? null != m ? m : e.height : E,
     containerRef: v
   }))
 }

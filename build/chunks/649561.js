@@ -7,8 +7,8 @@ var i = n(200651),
   r = n(192379),
   o = n(120356),
   l = n.n(o),
-  a = n(392711),
-  s = n.n(a),
+  s = n(392711),
+  a = n.n(s),
   c = n(818405),
   d = n(587158),
   u = n(286379),
@@ -27,9 +27,9 @@ var i = n(200651),
   P = n(987650),
   x = n(981631),
   C = n(388032),
-  N = n(666301);
+  I = n(666301);
 
-function I(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -79,14 +79,14 @@ class w extends r.PureComponent {
       children: (0, i.jsx)(h.f6W, {
         theme: x.BRd.DARK,
         children: r => (0, i.jsxs)(h.P3F, {
-          className: l()(r, N.container),
+          className: l()(r, I.container),
           onClick: e => e.stopPropagation(),
           children: [(0, i.jsx)(m.ZP, {
             expand: !0,
             icon: (0, i.jsx)(O.Z, {
               width: 40,
               height: 40,
-              className: N.notificationIcon
+              className: I.notificationIcon
             }),
             title: C.NW.string(C.t.U38qZm),
             confirmText: C.NW.string(C.t.TzAl1d),
@@ -95,13 +95,13 @@ class w extends r.PureComponent {
             onDismissClick: this.hideNotification,
             locked: !1
           }), n && null != e ? (0, i.jsxs)(b.ZP, {
-            className: N.stackTrace,
+            className: I.stackTrace,
             children: [(0, i.jsx)(b.ZP.Bar, {
               children: "Error Details"
             }), (0, i.jsx)(b.ZP.Content, {
-              className: N.stackTraceCode,
+              className: I.stackTraceCode,
               children: (0, i.jsx)("code", {
-                className: N.code,
+                className: I.code,
                 children: (0, i.jsx)("pre", {
                   children: t.stack
                 })
@@ -113,23 +113,23 @@ class w extends r.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), I(this, "state", {
+    super(...e), N(this, "state", {
       showTrace: !1,
       busy: !1
-    }), I(this, "notificationTimer", void 0), I(this, "hideNotification", () => {
+    }), N(this, "notificationTimer", void 0), N(this, "hideNotification", () => {
       j();
       let {
         notificationTimer: e
       } = this;
       null != e && clearTimeout(e), this.notificationTimer = null
-    }), I(this, "handleReload", e => {
+    }), N(this, "handleReload", e => {
       this.setState({
         busy: !0
       }), j(), p.Z.track(x.rMx.NOTIFICATION_CLICKED, {
         notif_type: P.n0.OverlayCrashed,
         action_type: "reload"
       }, !0), e.stopPropagation(), setTimeout(() => location.reload(!0), 200)
-    }), I(this, "handleNotificationClick", e => {
+    }), N(this, "handleNotificationClick", e => {
       e.stopPropagation();
       let {
         notificationTimer: t
@@ -140,7 +140,7 @@ class w extends r.PureComponent {
     })
   }
 }
-let L = s().throttle(() => {
+let L = a().throttle(() => {
   f.Z.increment({
     name: u.V.APP_CRASHED,
     tags: ["reason:".concat(c.v.UNHANDLED_JS_ERROR), "level:".concat(d.c.FATAL)]
@@ -200,7 +200,7 @@ class A extends r.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), I(this, "state", {
+    super(...e), N(this, "state", {
       error: null,
       info: null
     })

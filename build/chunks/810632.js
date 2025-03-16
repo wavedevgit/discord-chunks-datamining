@@ -8,8 +8,8 @@ var i = n(200651),
   o = n(481060),
   a = n(74299),
   s = n(562224),
-  u = n(592125),
-  c = n(131951),
+  c = n(592125),
+  u = n(131951),
   d = n(944486),
   p = n(594174),
   h = n(145597),
@@ -18,10 +18,10 @@ var i = n(200651),
 
 function g(e, t) {
   let g = (0, l.e7)([d.Z], () => d.Z.getVoiceChannelId()),
-    O = (0, l.e7)([u.Z], () => u.Z.getChannel(g), [g]),
+    O = (0, l.e7)([c.Z], () => c.Z.getChannel(g), [g]),
     v = (0, l.e7)([p.default], () => p.default.getCurrentUser()),
     y = null == O ? void 0 : O.getGuildId(),
-    E = (0, l.e7)([c.Z], () => (0, a.Z)(c.Z));
+    E = (0, l.e7)([u.Z], () => (0, a.Z)(u.Z));
   return r.useCallback(async () => {
     if (!E || null == g) return;
     let [r] = await (0, s.Z)(e);

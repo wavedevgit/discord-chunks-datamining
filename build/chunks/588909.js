@@ -9,8 +9,8 @@ var r = n(704215),
   o = n(24124),
   a = n(13245),
   s = n(620662),
-  u = n(835473),
-  c = n(442550),
+  c = n(835473),
+  u = n(442550),
   d = n(605236),
   p = n(293273),
   h = n(145597),
@@ -45,7 +45,7 @@ function S(e) {
   return e
 }
 
-function N(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,11 +58,11 @@ function N(e, t) {
   }), e
 }
 
-function C(e) {
+function N(e) {
   let {
     game: t
-  } = e, n = (0, u.q)(t.id);
-  return null == n ? null : (0, i.jsx)(c.f, {
+  } = e, n = (0, c.q)(t.id);
+  return null == n ? null : (0, i.jsx)(u.f, {
     src: n.getIconURL(b.Si.LARGE),
     size: 40
   })
@@ -70,8 +70,8 @@ function C(e) {
 
 function Z(e, t) {
   let {
-    trackView: u,
-    trackClick: c
+    trackView: c,
+    trackClick: u
   } = (0, O.R)(v.n0.WelcomeNudge, {
     notif_type: v.n0.WelcomeNudge,
     secondary_notif_types: t.map(e => v.nc[e.type])
@@ -80,18 +80,18 @@ function Z(e, t) {
     case v.nc.WELCOME: {
       let t = (null == e ? void 0 : e.altId) != null ? p.Z.getApplicationActivity(e.altId) : (null == e ? void 0 : e.id) != null ? p.Z.getApplicationActivity(e.id) : null;
       null != t && (0, s.Z)(t, y.xjy.JOIN) && (b.cancelText = j.NW.string(j.t["6F9ivr"]), b.onCancelClick = (e, n) => {
-        c("unlock"), a.Z.updateNotificationStatus(n), a.Z.setInputLocked(!1, (0, h.getPID)()), (0, o.h7)(t, !1, y.IlC.POPOUT)
+        u("unlock"), a.Z.updateNotificationStatus(n), a.Z.setInputLocked(!1, (0, h.getPID)()), (0, o.h7)(t, !1, y.IlC.POPOUT)
       });
       break
     }
     case v.nc.GO_LIVE_VOICE:
     case v.nc.GO_LIVE_NON_VOICE:
       b.confirmText = j.NW.string(j.t.U76Ft7), b.onConfirmClick = (e, t) => {
-        c("unlock"), a.Z.updateNotificationStatus(t), a.Z.setInputLocked(!1, (0, h.getPID)()), (0, l.ZD)(async () => {
+        u("unlock"), a.Z.updateNotificationStatus(t), a.Z.setInputLocked(!1, (0, h.getPID)()), (0, l.ZD)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("46746"), n.e("28965")]).then(n.bind(n, 60594));
-          return t => (0, i.jsx)(e, N(S({}, t), {
+          return t => (0, i.jsx)(e, C(S({}, t), {
             selectSource: !1,
             sourcePID: (0, h.getPID)(),
             guildId: r.type === v.nc.GO_LIVE_VOICE ? r.voiceGuild.id : void 0,
@@ -123,34 +123,34 @@ function Z(e, t) {
     _ = Z ? w : j.NW.string(j.t["prl+ra"]),
     T = null != e && Z ? e.name : _,
     D = Z ? P : j.NW.string(j.t.R3CpPT),
-    k = null != e ? (0, i.jsx)(C, {
+    k = null != e ? (0, i.jsx)(N, {
       game: e
     }) : (0, i.jsx)("img", {
       src: n(328756),
       className: x.icon,
       alt: ""
     });
-  return N(S({
+  return C(S({
     icon: k,
     title: T,
     body: D,
     hint: () => (0, g.Q)((0, O.P)(), j.t.e6giBQ, j.NW.string(j.t.jZkzVF)),
     confirmText: Z ? void 0 : j.NW.string(j.t.TxyTbm),
     onConfirmClick: Z ? void 0 : () => {
-      c("unlock"), a.Z.setInputLocked(!1, (0, h.getPID)()), Z || (0, d.EW)(r.z.OVERLAY_OOP_WELCOME_NUX)
+      u("unlock"), a.Z.setInputLocked(!1, (0, h.getPID)()), Z || (0, d.EW)(r.z.OVERLAY_OOP_WELCOME_NUX)
     }
   }, b), {
     onNotificationShow: e => {
       var t;
-      u(), Z || (0, d.EW)(r.z.OVERLAY_OOP_WELCOME_NUX), null === (t = b.onNotificationShow) || void 0 === t || t.call(b, e)
+      c(), Z || (0, d.EW)(r.z.OVERLAY_OOP_WELCOME_NUX), null === (t = b.onNotificationShow) || void 0 === t || t.call(b, e)
     },
     onNotificationClick: (e, t) => {
       var n;
-      c("unlock"), a.Z.setInputLocked(!1, (0, h.getPID)()), Z || (0, d.EW)(r.z.OVERLAY_OOP_WELCOME_NUX), null === (n = b.onNotificationClick) || void 0 === n || n.call(b, e, t)
+      u("unlock"), a.Z.setInputLocked(!1, (0, h.getPID)()), Z || (0, d.EW)(r.z.OVERLAY_OOP_WELCOME_NUX), null === (n = b.onNotificationClick) || void 0 === n || n.call(b, e, t)
     },
     onDismissClick: (e, t) => {
       var n;
-      c("dismiss"), Z || (0, d.EW)(r.z.OVERLAY_OOP_WELCOME_NUX), null === (n = b.onDismissClick) || void 0 === n || n.call(b, e, t)
+      u("dismiss"), Z || (0, d.EW)(r.z.OVERLAY_OOP_WELCOME_NUX), null === (n = b.onDismissClick) || void 0 === n || n.call(b, e, t)
     }
   })
 }

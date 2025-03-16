@@ -9,8 +9,8 @@ var i = n(200651),
   o = n.n(l),
   a = n(642128),
   s = n(481060),
-  u = n(110924),
-  c = n(569545),
+  c = n(110924),
+  u = n(569545),
   d = n(237997),
   p = n(444295),
   h = n(752802),
@@ -85,18 +85,18 @@ let y = 8,
       streamParticipants: x,
       participantsVersion: I,
       pinned: S
-    } = e, N = 9 / 16 * n, C = x.map(e => ({
+    } = e, C = 9 / 16 * n, N = x.map(e => ({
       participant: e,
       key: e.user.id,
       width: n,
       locked: h,
       widgetId: t,
-      height: N,
+      height: C,
       pinned: S
-    })), Z = (0, u.Z)(n), w = l === f.C5.VERTICAL, P = 0, _ = 0, T = (0, s.Yzy)(w ? C.map((e, t) => v(O({}, e), {
+    })), Z = (0, c.Z)(n), w = l === f.C5.VERTICAL, P = 0, _ = 0, T = (0, s.Yzy)(w ? N.map((e, t) => v(O({}, e), {
       y: (P += e.height + (t > 0 ? y : 0)) - e.height,
       x: 0
-    })) : C.map((e, t) => v(O({}, e), {
+    })) : N.map((e, t) => v(O({}, e), {
       x: (_ += e.width + (t > 0 ? y : 0)) - e.width,
       y: 0
     })), {
@@ -140,7 +140,7 @@ let y = 8,
       },
       config: b,
       trail: 100 * (n === Z)
-    }, n !== Z ? "animate-never" : "respect-motion-settings"), D = (0, p.ee)(() => new Set(x.map(e => e.user.id)), [x, I]), k = (0, p.ee)(() => new Set(x.filter(e => j.has((0, c.V9)(e.stream))).map(e => e.user.id)), [x, j, I]);
+    }, n !== Z ? "animate-never" : "respect-motion-settings"), D = (0, p.ee)(() => new Set(x.map(e => e.user.id)), [x, I]), k = (0, p.ee)(() => new Set(x.filter(e => j.has((0, u.V9)(e.stream))).map(e => e.user.id)), [x, j, I]);
     return r.useEffect(() => {
       0 !== D.size && (0, p.zi)(m.Odu.GO_LIVE, {
         locked: d.default.isInstanceLocked(),
@@ -163,8 +163,8 @@ let y = 8,
         className: g.gridItem,
         style: Object.assign({}, e, {
           width: n,
-          height: N,
-          zIndex: C.length - l
+          height: C,
+          zIndex: N.length - l
         }),
         children: E(t)
       }))

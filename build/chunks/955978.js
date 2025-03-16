@@ -8,8 +8,8 @@ var i = n(200651),
   o = n(812206),
   a = n(594190),
   s = n(925329),
-  u = n(592125),
-  c = n(944486),
+  c = n(592125),
+  u = n(944486),
   d = n(594174),
   p = n(5192),
   h = n(620954),
@@ -21,8 +21,8 @@ function O(e, t, n) {
   var O;
   let v = d.default.getUser(e);
   if (null == v) return null;
-  let y = c.Z.getCurrentlySelectedChannelId(),
-    E = u.Z.getChannel(y),
+  let y = u.Z.getCurrentlySelectedChannelId(),
+    E = c.Z.getChannel(y),
     b = o.Z.getApplication(t),
     j = a.ZP.getRunningGames().find(e => e.id === t),
     x = null !== (O = null == j ? void 0 : j.name) && void 0 !== O ? O : null == b ? void 0 : b.name,
@@ -56,8 +56,8 @@ function O(e, t, n) {
       })]
     }),
     {
-      trackView: N,
-      trackClick: C
+      trackView: C,
+      trackClick: N
     } = (0, h.R)(f.n0.NowPlayingNotification, {
       notif_type: f.n0.NowPlayingNotification,
       notif_user_id: v.id,
@@ -72,10 +72,10 @@ function O(e, t, n) {
     maxBodyLines: 1,
     disableClickableRegions: !0,
     onNotificationShow: () => {
-      N()
+      C()
     },
     onDismissClick: () => {
-      C("dismiss")
+      N("dismiss")
     }
   }
 }

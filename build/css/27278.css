@@ -1,6 +1,6 @@
 /**
   Module ID: 27278
-  Original File Name: 12007e34fcc117e2
+  Original File Name: bd56bb59def65eac
 **/
 .buttonContainer__7e329 {
     display: flex;
@@ -1346,10 +1346,14 @@
 
 .container_c39fe3 {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0
+    bottom: 0;
+    z-index: 9999
 }
 
 .videoDev_eb35c5 {
@@ -1576,4 +1580,4 @@
     height: 100%
 }
 
-/*# sourceMappingURL=12007e34fcc117e2.css.map*/
+/*# sourceMappingURL=bd56bb59def65eac.css.map*/

@@ -8,8 +8,8 @@ var i = n(200651),
   o = n.n(l),
   a = n(442837),
   s = n(952265),
-  u = n(481060),
-  c = n(239091),
+  c = n(481060),
+  u = n(239091),
   d = n(13245),
   p = n(100527),
   h = n(906732),
@@ -25,8 +25,8 @@ var i = n(200651),
   x = n(237997),
   I = n(451478),
   S = n(585483),
-  N = n(358085),
-  C = n(13140),
+  C = n(358085),
+  N = n(13140),
   Z = n(145597),
   w = n(830917),
   P = n(32300),
@@ -44,7 +44,7 @@ var i = n(200651),
   U = n(757744),
   G = n(981631),
   F = n(913422);
-let Y = !N.isPlatformEmbedded && !1,
+let Y = !C.isPlatformEmbedded && !1,
   H = Y ? (0, i.jsx)(f.Z, {
     src: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzdpcnRrYXdrNzVuNjZ3NXpmeTJvNGl4Z2N4OXBsamx5aXphdHhxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/OPg2B0FPBL94H12uM0/giphy480p.mp4",
     className: F.videoDev,
@@ -59,7 +59,7 @@ function Q(e) {
 }
 
 function K(e) {
-  (0, c.jW)(e, async () => {
+  (0, u.jW)(e, async () => {
     let {
       default: e
     } = await n.e("17610").then(n.bind(n, 385620));
@@ -104,7 +104,7 @@ let X = r.memo(function(e) {
       onClick: n,
       locked: r
     } = e;
-    return (0, i.jsx)(u.P3F, {
+    return (0, i.jsx)(c.P3F, {
       className: o()(F.overlayBackground, {
         [F.overlayActive]: !r,
         [F.overlayLocked]: r
@@ -123,7 +123,7 @@ let X = r.memo(function(e) {
         children: (0, i.jsx)(T.Z, {
           keybind: t,
           onClick: n,
-          IconComponent: u.Uz9
+          IconComponent: c.Uz9
         })
       })
     })
@@ -137,7 +137,7 @@ let X = r.memo(function(e) {
       className: F.closeContainer,
       children: (0, i.jsx)(T.Z, {
         onClick: () => d.Z.setInputLocked(!1, (0, Z.getPID)()),
-        IconComponent: u.d$P
+        IconComponent: c.d$P
       })
     }) : null
   });
@@ -168,9 +168,9 @@ function en(e) {
     isEmbeddedActivity: t
   } = e, n = (0, V.Z)(), {
     locked: l,
-    focused: c,
+    focused: u,
     incompatibleApp: f,
-    hasZeroSizeDimension: N,
+    hasZeroSizeDimension: C,
     keybind: T
   } = (0, a.cj)([R.ZP, x.default, I.Z, b.ZP], () => {
     let e = I.Z.windowSize((0, w.ZY)(n)),
@@ -181,7 +181,7 @@ function en(e) {
       focused: i === Z.DEV_PID ? x.default.isFocused(i) : R.ZP.isFocused((0, Z.getPID)()),
       incompatibleApp: x.default.incompatibleApp,
       hasZeroSizeDimension: 0 === e.height || 0 === e.width,
-      keybind: null != t ? (0, C.BB)(t.shortcut, !0) : "???"
+      keybind: null != t ? (0, N.BB)(t.shortcut, !0) : "???"
     }
   }, [n]), {
     analyticsLocations: A
@@ -212,9 +212,9 @@ function en(e) {
       o = null != g.Z.getCurrentUserActiveStream(),
       a = null != n,
       s = (0, m.Z)(y.Z) && !o && null != t,
-      u = a && null != l && null != n,
+      c = a && null != l && null != n,
       {
-        allowActivityWidget: c
+        allowActivityWidget: u
       } = (0, P.o4)("overlay");
     r.useEffect(() => {
       var i;
@@ -225,7 +225,7 @@ function en(e) {
       let o = [{
         type: z.nc.WELCOME
       }];
-      s && u ? o.push({
+      s && c ? o.push({
         type: z.nc.GO_LIVE_VOICE,
         game: t,
         voiceChannelId: n,
@@ -233,16 +233,16 @@ function en(e) {
       }) : s && o.push({
         type: z.nc.GO_LIVE_NON_VOICE,
         game: t
-      }), c && o.push({
+      }), u && o.push({
         type: z.nc.CONTENT_INVENTORY,
         entries: []
       }), d.Z.overlayMounted(...o)
-    }, [a, s, u, t, n, l, c])
+    }, [a, s, c, t, n, l, u])
   }(), r.useEffect(() => {
     if (S.S.dispatch(G.CkL.OVERLAY_V3_SHOW_WIDGETS, {
         show: !0
       }), l) {
-      if ((0, s.Ay)(u.u1M), n.addEventListener("contextmenu", Q, !1), null != B) {
+      if ((0, s.Ay)(c.u1M), n.addEventListener("contextmenu", Q, !1), null != B) {
         let e = Date.now() - B;
         d.Z.track(G.rMx.OVERLAY_LOCKED, {
           unlocked_duration: e
@@ -255,10 +255,11 @@ function en(e) {
     n.removeEventListener("contextmenu", Q, !1), null == B && (B = Date.now(), d.Z.track(G.rMx.OVERLAY_UNLOCKED))
   }, [l, n]), (0, i.jsx)(h.Gt, {
     value: A,
-    children: (0, i.jsx)(u.vWI, {
-      children: N || f ? null : (0, i.jsx)(u.f6W, {
+    children: (0, i.jsx)(c.vWI, {
+      children: C || f ? null : (0, i.jsx)(c.f6W, {
         theme: G.BRd.MIDNIGHT,
         children: e => (0, i.jsxs)("div", {
+          id: "overlay-container",
           className: o()(F.overlay, e),
           children: [!t && H, (0, i.jsx)(X, {
             locked: l,
@@ -271,10 +272,10 @@ function en(e) {
             })
           }), (0, i.jsx)(M.Z, {}), !t && Y && (0, i.jsx)(J, {
             locked: l,
-            focused: c
+            focused: u
           }), (0, i.jsx)(_.Z, {}), (0, i.jsx)(D.Z, {
             locked: l
-          }), (0, i.jsx)(u.Ixi, {})]
+          }), (0, i.jsx)(c.Ixi, {})]
         })
       })
     })

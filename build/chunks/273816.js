@@ -8,8 +8,8 @@ var i = n(200651),
   o = n.n(l),
   a = n(442837),
   s = n(481060),
-  u = n(493773),
-  c = n(178821),
+  c = n(493773),
+  u = n(178821),
   d = n(38618),
   p = n(522474),
   h = n(333031),
@@ -55,29 +55,29 @@ function y(e) {
     pinned: n,
     anchorLeft: l
   } = e, y = (0, a.e7)([d.Z], () => d.Z.getSocket()), E = (0, a.e7)([f.ZP], () => f.ZP.isGPUBoosted());
-  (0, c.nU)();
+  (0, u.nU)();
   let b = (0, a.e7)([p.Z], () => p.Z.getWindow(m.$J)),
-    [j, x] = (0, c.m8)(y),
+    [j, x] = (0, u.m8)(y),
     {
       currentFPS: I,
       averageFrameTime: S,
-      timeSinceLastDrop: N,
-      onResetFrameData: C,
+      timeSinceLastDrop: C,
+      onResetFrameData: N,
       droppedFramesRef: Z,
       renderedFrameCount: w,
       bufferFramecountRef: P,
       frameCheckerEffect: _
-    } = (0, c.d6)(!0, j, !0),
-    [T, D, k] = (0, c.ZF)(y),
-    [A, L] = (0, c.Y5)(T, _, b),
-    R = performance.now() - x.current < c.MC,
+    } = (0, u.d6)(!0, j, !0),
+    [T, D, k] = (0, u.ZF)(y),
+    [A, L] = (0, u.Y5)(T, _, b),
+    R = performance.now() - x.current < u.MC,
     W = D(S, P.current);
-  (0, u.ZP)(() => (A(), () => {
+  (0, c.ZP)(() => (A(), () => {
     L()
   }));
   let M = r.useCallback(() => {
-      C(), k(), A()
-    }, [C, k, A]),
+      N(), k(), A()
+    }, [N, k, A]),
     [V, z] = r.useState(!0),
     [U, G] = r.useState(!0),
     [F, Y] = r.useState(!0),
@@ -121,7 +121,7 @@ function y(e) {
         children: ["Frame Times:", " ", (0, i.jsxs)(s.Text, {
           tag: "span",
           variant: "code",
-          color: S > 1.1 * c.tO ? "text-warning" : "text-primary",
+          color: S > 1.1 * u.tO ? "text-warning" : "text-primary",
           children: [S.toFixed(2), "ms"]
         })]
       })]
@@ -141,7 +141,7 @@ function y(e) {
         children: ["Dropped Frames:", " ", (0, i.jsx)(s.Text, {
           tag: "span",
           variant: "code",
-          color: N < 2 ? "text-danger" : N < 5 ? "text-warning" : "text-primary",
+          color: C < 2 ? "text-danger" : C < 5 ? "text-warning" : "text-primary",
           children: Z.current
         }), (0, i.jsxs)(s.Text, {
           tag: "span",

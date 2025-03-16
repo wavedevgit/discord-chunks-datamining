@@ -1,6 +1,6 @@
 /** Chunk was on 50751 **/
 n.d(t, {
-  Z: () => h
+  Z: () => f
 }), n(47120);
 var i = n(200651);
 n(192379);
@@ -9,23 +9,24 @@ var r = n(442837),
   o = n(183584),
   a = n(487029),
   s = n(592125),
-  u = n(944486),
-  c = n(554174),
-  d = n(710111),
-  p = n(852680);
+  c = n(944486),
+  u = n(554174),
+  d = n(333031),
+  p = n(710111),
+  h = n(852680);
 
-function h() {
-  let [e, t] = (0, r.Wu)([l.Z], () => [l.Z.enabled, l.Z.keepOpen]), n = (0, r.e7)([u.Z], () => u.Z.getVoiceChannelId()), h = (0, r.e7)([s.Z], () => s.Z.getChannel(n), [n]), f = null == h ? void 0 : h.getGuildId();
-  return e && null != h ? (0, i.jsx)("div", {
-    className: p.container,
+function f() {
+  let [e, t] = (0, r.Wu)([l.Z], () => [l.Z.enabled, l.Z.keepOpen]), n = (0, r.e7)([c.Z], () => c.Z.getVoiceChannelId()), f = (0, r.e7)([s.Z], () => s.Z.getChannel(n), [n]), m = null == f ? void 0 : f.getGuildId();
+  return e && null != f ? (0, i.jsx)(d.Z, {
+    className: h.container,
     children: (0, i.jsx)(a.Z, {
-      width: d.FW.width,
-      height: d.FW.height,
-      guildId: f,
-      channel: h,
+      width: p.FW.width,
+      height: p.FW.height,
+      guildId: m,
+      channel: f,
       keepOpen: t,
       onClose: function() {
-        let e = (0, c.Z)();
+        let e = (0, u.Z)();
         null != e && (0, o.oZ)(e)
       },
       analyticsSource: "overlay"

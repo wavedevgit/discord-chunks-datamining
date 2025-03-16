@@ -1,6 +1,6 @@
 /** Chunk was on 50751 **/
 n.d(t, {
-  Z: () => N
+  Z: () => C
 }), n(47120), n(230036);
 var i = n(200651),
   r = n(192379),
@@ -8,8 +8,8 @@ var i = n(200651),
   o = n(481060),
   a = n(765250),
   s = n(13245),
-  u = n(393238),
-  c = n(493773),
+  c = n(393238),
+  u = n(493773),
   d = n(358221),
   p = n(569545),
   h = n(199902),
@@ -30,12 +30,12 @@ function S(e, t, n, i) {
   return e === b.C5.HORIZONTAL ? Math.min(Math.max((t - r) / i, 256), Math.max(16 * n / 9, 256)) : Math.min(Math.max(t, 256), Math.max((n - r) / i * 16 / 9, 256))
 }
 
-function N(e) {
+function C(e) {
   let {
     id: t,
     size: n,
-    locked: N,
-    padding: C,
+    locked: C,
+    padding: N,
     borderWidth: Z,
     opacity: w,
     horizontal: P,
@@ -43,7 +43,7 @@ function N(e) {
     anchorTop: T,
     anchorLeft: D,
     showEmpty: k = !0
-  } = e, A = 2 * C + 2 * Z, {
+  } = e, A = 2 * N + 2 * Z, {
     width: L,
     height: R
   } = {
@@ -53,7 +53,7 @@ function N(e) {
     width: M,
     height: V,
     ref: z
-  } = (0, u.Z)(), U = (0, l.e7)([g.Z], () => {
+  } = (0, c.Z)(), U = (0, l.e7)([g.Z], () => {
     var e;
     let n = g.Z.getWidget(t);
     return !!(0, b.ZL)(n) && (null === (e = n.meta.showAllStreams) || void 0 === e || e)
@@ -84,7 +84,7 @@ function N(e) {
       activeStreams: e,
       participantsVersion: d.Z.getParticipantsVersion(W)
     }
-  }, [W, Y, U, H, B]), J = X.length, q = null == F || 0 === K.size && N || 0 === J && !N, $ = P ? b.C5.HORIZONTAL : b.C5.VERTICAL, {
+  }, [W, Y, U, H, B]), J = X.length, q = null == F || 0 === K.size && C || 0 === J && !C, $ = P ? b.C5.HORIZONTAL : b.C5.VERTICAL, {
     tileWidth: ee,
     layout: et
   } = function(e, t, n, i, l) {
@@ -102,12 +102,12 @@ function N(e) {
       }(n, i, t, l),
       a = S(b.C5.VERTICAL, n, i, t),
       s = null != l ? l : o === a ? b.C5.VERTICAL : b.C5.HORIZONTAL,
-      [u, c] = r.useState(o);
+      [c, u] = r.useState(o);
     return r.useEffect(() => {
-      e || c(o)
+      e || u(o)
     }, [e, o]), {
       layout: s,
-      tileWidth: u
+      tileWidth: c
     }
   }(!1, X.length, null != M ? M : L - A, null != V ? V : R - A, $), en = {
     id: t,
@@ -115,7 +115,7 @@ function N(e) {
     height: R,
     sizeOffset: A,
     layout: et,
-    padding: C,
+    padding: N,
     participants: X.length
   };
   return (! function(e) {
@@ -218,9 +218,9 @@ function N(e) {
     widgetLayoutSpecs: en
   }), r.useEffect(() => {
     s.Z.setGpuBoostRequested(E.zS.OVERLAY_VIDEO_STREAM_RENDERING, !q)
-  }, [q]), (0, c.ZP)(() => () => {
+  }, [q]), (0, u.ZP)(() => () => {
     s.Z.setGpuBoostRequested(E.zS.OVERLAY_VIDEO_STREAM_RENDERING, !1)
-  }), (q || !_) && N) ? null : q && !N ? k ? N ? null : (0, i.jsx)(v.E, {
+  }), (q || !_) && C) ? null : q && !C ? k ? C ? null : (0, i.jsx)(v.E, {
     emptyText: j.NW.string(j.t["T6+rX1"]),
     icon: o.hGI,
     absolute: !0
@@ -233,7 +233,7 @@ function N(e) {
     children: (0, i.jsx)(y.Z, {
       widgetId: t,
       tileWidth: ee,
-      locked: N,
+      locked: C,
       layout: et,
       activeStreams: K,
       streamParticipants: X,

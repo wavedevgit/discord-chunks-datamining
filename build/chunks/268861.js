@@ -8,8 +8,8 @@ var i = n(200651),
   o = n(481060),
   a = n(243778),
   s = n(921944),
-  u = n(388032),
-  c = n(41619);
+  c = n(388032),
+  u = n(41619);
 
 function d(e) {
   let {
@@ -20,49 +20,49 @@ function d(e) {
       n === l.z.OVERLAY_OOP_WELCOME_BACKGROUND_NUX && d(s.L.AUTO_DISMISS)
     }
   }, [t, d, n]), t || n !== l.z.OVERLAY_OOP_WELCOME_BACKGROUND_NUX) ? null : (0, i.jsx)("div", {
-    className: c.overlayBackgroundNux,
+    className: u.overlayBackgroundNux,
     children: (0, i.jsxs)("div", {
-      className: c.mainContainer,
+      className: u.mainContainer,
       children: [(0, i.jsxs)("div", {
-        className: c.mainTitleContainer,
+        className: u.mainTitleContainer,
         children: [(0, i.jsx)(o.X6q, {
           variant: "heading-xl/medium",
           color: "header-primary",
-          children: u.NW.string(u.t.jzjJQk)
+          children: c.NW.string(c.t.jzjJQk)
         }), (0, i.jsx)(o.Text, {
           variant: "text-md/normal",
           color: "text-muted",
-          children: u.NW.string(u.t["5dOfxc"])
+          children: c.NW.string(c.t["5dOfxc"])
         })]
       }), (0, i.jsxs)("div", {
-        className: c.widgetCalloutContainer,
+        className: u.widgetCalloutContainer,
         children: [(0, i.jsxs)("div", {
-          className: c.widgetCallout,
+          className: u.widgetCallout,
           children: [(0, i.jsx)(o.qjv, {}), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
-            children: u.NW.string(u.t.S6VRyM)
+            children: c.NW.string(c.t.S6VRyM)
           })]
         }), (0, i.jsxs)("div", {
-          className: c.widgetCallout,
+          className: u.widgetCallout,
           children: [(0, i.jsx)(o.Dkj, {}), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
-            children: u.NW.string(u.t.xq8CKS)
+            children: c.NW.string(c.t.xq8CKS)
           })]
         }), (0, i.jsxs)("div", {
-          className: c.widgetCallout,
+          className: u.widgetCallout,
           children: [(0, i.jsx)(o.Odl, {}), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
-            children: u.NW.string(u.t.GwpRe3)
+            children: c.NW.string(c.t.GwpRe3)
           })]
         }), (0, i.jsxs)("div", {
-          className: c.widgetCallout,
+          className: u.widgetCallout,
           children: [(0, i.jsx)(o.KY1, {}), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
-            children: u.NW.string(u.t.VUoC5O)
+            children: c.NW.string(c.t.VUoC5O)
           })]
         })]
       })]

@@ -8,8 +8,8 @@ var i = n(200651),
   o = n.n(l),
   a = n(442837),
   s = n(765250),
-  u = n(13245),
-  c = n(355863),
+  c = n(13245),
+  u = n(355863),
   d = n(237997),
   p = n(451478),
   h = n(434529),
@@ -60,9 +60,9 @@ let I = r.memo(function(e) {
     renderTitle: l,
     renderButtons: I,
     resizeValidation: S,
-    className: N,
-    dragContainerClassName: C
-  } = e, Z = c.Z.getWidgetConfig(t.type), w = (0, a.e7)([d.default], () => d.default.isLocked((0, f.getPID)())), P = (0, y.Z)(), _ = (0, a.e7)([p.Z], () => p.Z.windowSize((0, m.ZY)(P))), T = r.useCallback((e, t, n, i, r) => {
+    className: C,
+    dragContainerClassName: N
+  } = e, Z = u.Z.getWidgetConfig(t.type), w = (0, a.e7)([d.default], () => d.default.isLocked((0, f.getPID)())), P = (0, y.Z)(), _ = (0, a.e7)([p.Z], () => p.Z.windowSize((0, m.ZY)(P))), T = r.useCallback((e, t, n, i, r) => {
     let l = p.Z.windowSize((0, m.ZY)((0, y.i)())),
       o = (0, h.jL)(n, l),
       a = (0, h.Ox)(i, l);
@@ -73,10 +73,10 @@ let I = r.memo(function(e) {
     });
     let d = e === g.B.MOVE,
       f = (0, h.PY)(n, l.width, l.height, r.width, r.height);
-    u.Z.track(E.rMx.OVERLAY_LAYOUT_UPDATED, {
+    c.Z.track(E.rMx.OVERLAY_LAYOUT_UPDATED, {
       was_resized: !d,
       was_dragged: d,
-      widget_type: c.Z.getWidgetType(t),
+      widget_type: u.Z.getWidgetType(t),
       window_width: l.width,
       window_height: l.height,
       widget_width: r.width,
@@ -105,8 +105,8 @@ let I = r.memo(function(e) {
   }), [_]), B = r.useCallback(e => n(x(j({}, e), {
     widget: t,
     dragging: null != e.dragOperation,
-    className: N
-  })), [t, n, N]), Q = r.useCallback(e => null != l || null != I ? (0, i.jsxs)("div", {
+    className: C
+  })), [t, n, C]), Q = r.useCallback(e => null != l || null != I ? (0, i.jsxs)("div", {
     className: b.extrasContainer,
     children: [null == l ? void 0 : l(t), null == I ? void 0 : I(t, e)]
   }) : null, [t, l, I]), K = (0, a.e7)([v.ZP], () => v.ZP.hasRenderDebugMode(O.G.WidgetAreas)), X = r.useMemo(() => {
@@ -119,7 +119,7 @@ let I = r.memo(function(e) {
       [b.debug]: K,
       [b.debugUnpinned]: K && !A,
       [b.debugPinned]: K && A
-    }, C),
+    }, N),
     id: k,
     size: M,
     anchor: V,

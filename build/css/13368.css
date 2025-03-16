@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 345ef285329a6c60
+  Original File Name: 7383a9dbaf5ac51a
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -5395,9 +5395,12 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .chatWheelDeadZoneIcon_adfa30 {
+    position: relative;
+    z-index: 9999;
     width: 48px;
     height: 48px;
-    color: var(--white-500)
+    color: var(--white-500);
+    cursor: pointer
 }
 
 .paginationHint_adfa30 {
@@ -5431,10 +5434,14 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .container_c39fe3 {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0
+    bottom: 0;
+    z-index: 9999
 }
 
 .videoDev_eb35c5 {
@@ -5528,4 +5535,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     pointer-events: auto
 }
 
-/*# sourceMappingURL=345ef285329a6c60.css.map*/
+/*# sourceMappingURL=7383a9dbaf5ac51a.css.map*/

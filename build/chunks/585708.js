@@ -9,8 +9,8 @@ var r = n(13245),
   o = n(937889),
   a = n(703656),
   s = n(460181),
-  u = n(974180),
-  c = n(150097),
+  c = n(974180),
+  u = n(150097),
   d = n(358085),
   p = n(998502),
   h = n(145597),
@@ -28,9 +28,9 @@ function b(e, t, n, b) {
     icon: x,
     title: I,
     body: S
-  } = (0, c.Xi)(e, t, n), {
-    trackView: N,
-    trackClick: C
+  } = (0, u.Xi)(e, t, n), {
+    trackView: C,
+    trackClick: N
   } = (0, O.R)(v.n0.TextChat, {
     notif_type: v.n0.TextChat,
     notif_user_id: null === (j = t.author) || void 0 === j ? void 0 : j.id,
@@ -54,19 +54,19 @@ function b(e, t, n, b) {
       id: r,
       replyToMessageId: t.id,
       channel: e,
-      onSend: () => C("send")
+      onSend: () => N("send")
     }) : null,
     onNotificationShow: () => {
-      b && (0, s.GN)(u.Ay, u.yk), N()
+      b && (0, s.GN)(c.Ay, c.yk), C()
     },
     onNotificationClick: () => {
       let n = (0, h.getPID)();
       (0, l.In)(e.id, !0, !0, t.id, {
         section: y.jXE.OVERLAY
-      }), f.ZP.isInputLocked(n) ? (C("unlock"), r.Z.setInputLocked(!1, n)) : (C("jump"), (0, a.uL)(y.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
+      }), f.ZP.isInputLocked(n) ? (N("unlock"), r.Z.setInputLocked(!1, n)) : (N("jump"), (0, a.uL)(y.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
     },
     onDismissClick: () => {
-      C("dismiss")
+      N("dismiss")
     }
   }
 }

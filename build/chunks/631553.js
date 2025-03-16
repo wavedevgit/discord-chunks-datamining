@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(200651),
   o = n(192379),
   l = n(120356),
-  a = n.n(l),
-  s = n(921738),
-  c = n.n(s),
+  s = n.n(l),
+  a = n(921738),
+  c = n.n(a),
   d = n(954955),
   u = n.n(d),
   h = n(498607),
@@ -27,8 +27,8 @@ var r = n(200651),
   P = n(185666),
   x = n(100527),
   C = n(906732),
-  N = n(146282),
-  I = n(600164);
+  I = n(146282),
+  N = n(600164);
 n(70097);
 var k = n(605236),
   j = n(594190),
@@ -62,8 +62,8 @@ var k = n(605236),
   er = n(681603),
   eo = n(358446),
   el = n(348733),
-  ea = n(312178),
-  es = n(708383),
+  es = n(312178),
+  ea = n(708383),
   ec = n(923532),
   ed = n(107200),
   eu = n(983660),
@@ -116,7 +116,7 @@ let e_ = e => {
       locked: o
     } = e, l = o ? m.P3F : "div";
     return (0, r.jsx)(l, {
-      className: a()(em.overlayBackground, {
+      className: s()(em.overlayBackground, {
         [em.overlayActive]: !o,
         [em.overlayLocked]: o,
         [em.previewMode]: !o && i
@@ -196,8 +196,8 @@ class eb extends o.Component {
       voiceGuild: r,
       voiceChannelId: o,
       game: l,
-      showKeybindNotification: a,
-      dismissKeybindNotification: s
+      showKeybindNotification: s,
+      dismissKeybindNotification: a
     } = this.props;
     E.Z.track(ep.rMx.OVERLAY_INITIALIZED, {
       voice_widget_connected: e,
@@ -218,9 +218,9 @@ class eb extends o.Component {
         type: eh.nc.OOP_WELCOME,
         game: null != l ? l : void 0,
         isFirstTimeNux: !u
-      } : a ? p = {
+      } : s ? p = {
         type: eh.nc.KEYBIND_INDICATORS,
-        markAsDismissed: s
+        markAsDismissed: a
       } : c && d ? p = {
         type: eh.nc.GO_LIVE_VOICE,
         game: l,
@@ -261,9 +261,9 @@ class eb extends o.Component {
     window.removeEventListener("resize", this.handleWindowResize), window.removeEventListener("keydown", this.onKeyDownGlobal, !0), window.removeEventListener("keyup", this.onKeyUpGlobal, !0), this.props.locked && window.removeEventListener("contextmenu", eE, !1), T.Z.terminate(), P.Z.terminate(), R.Z.terminate()
   }
   renderInvalidSizeMessage() {
-    return (0, r.jsx)(I.Z, {
-      justify: I.Z.Justify.CENTER,
-      align: I.Z.Align.CENTER,
+    return (0, r.jsx)(N.Z, {
+      justify: N.Z.Justify.CENTER,
+      align: N.Z.Align.CENTER,
       className: em.invalidContainer,
       children: (0, r.jsx)("div", {
         className: em.inactiveContainer,
@@ -278,7 +278,7 @@ class eb extends o.Component {
       incompatibleApp: n,
       initialized: o,
       isPreviewingInGame: l,
-      activeRegions: s,
+      activeRegions: a,
       windowSize: c,
       voiceGuild: d,
       voiceChannelId: u,
@@ -292,16 +292,16 @@ class eb extends o.Component {
       m = D.default.getId();
     return (0, r.jsxs)("div", {
       className: em.overlay,
-      children: [(0, r.jsx)(es.Z, {}), l && (0, r.jsx)("header", {
+      children: [(0, r.jsx)(ea.Z, {}), l && (0, r.jsx)("header", {
         className: em.previewingInGameHeader,
         children: ef.NW.string(ef.t.iOq96u)
-      }), i, (!e || s.has(ep.O0n.TEXT_WIDGET)) && (0, r.jsx)(e_, {
+      }), i, (!e || a.has(ep.O0n.TEXT_WIDGET)) && (0, r.jsx)(e_, {
         locked: e,
         keybind: t,
         onClick: e ? this.handleDeactivate : this.handleLock,
         isPreviewingInGame: l
-      }), (0, et.validResolution)(c) ? (0, r.jsx)(ea.Z, {
-        className: a()({
+      }), (0, et.validResolution)(c) ? (0, r.jsx)(es.Z, {
+        className: s()({
           [em.layoutLocked]: e,
           [em.layoutUnlocked]: !e
         })
@@ -355,7 +355,7 @@ function eP() {
     incompatibleApp: X.default.incompatibleApp,
     activeRegions: X.default.getActiveRegions(),
     isPreviewingInGame: X.default.isPreviewingInGame()
-  })), l = (0, v.e7)([q.Z], () => q.Z.windowSize()), a = (0, v.e7)([H.ZP], () => H.ZP.getOverlayKeybind()), s = (0, v.e7)([G.Z], () => G.Z.getVoiceChannelId()), c = (0, v.e7)([W.Z], () => W.Z.getChannel(s)), d = (0, v.e7)([M.Z], () => null != c ? M.Z.getGuild(c.guild_id) : null), u = (0, v.e7)([j.ZP, Y.Z], () => (0, A.Z)(j.ZP, Y.Z)), h = (0, w.Ns)(null == u ? void 0 : u.id), p = (0, v.e7)([N.Z], () => null != N.Z.getLastFeedFetchDate(ev.YN.GAME_PROFILE_FEED)), f = (0, v.e7)([K.Z], () => (0, L.Z)(K.Z)), y = (0, v.e7)([S.Z], () => null != S.Z.getCurrentUserActiveStream()), {
+  })), l = (0, v.e7)([q.Z], () => q.Z.windowSize()), s = (0, v.e7)([H.ZP], () => H.ZP.getOverlayKeybind()), a = (0, v.e7)([G.Z], () => G.Z.getVoiceChannelId()), c = (0, v.e7)([W.Z], () => W.Z.getChannel(a)), d = (0, v.e7)([M.Z], () => null != c ? M.Z.getGuild(c.guild_id) : null), u = (0, v.e7)([j.ZP, Y.Z], () => (0, A.Z)(j.ZP, Y.Z)), h = (0, w.Ns)(null == u ? void 0 : u.id), p = (0, v.e7)([I.Z], () => null != I.Z.getLastFeedFetchDate(ev.YN.GAME_PROFILE_FEED)), f = (0, v.e7)([K.Z], () => (0, L.Z)(K.Z)), y = (0, v.e7)([S.Z], () => null != S.Z.getCurrentUserActiveStream()), {
     analyticsLocations: O
   } = (0, C.ZP)(x.Z.OVERLAY), {
     showKeybindIndicators: E,
@@ -371,9 +371,9 @@ function eP() {
         activeRegions: i,
         isPreviewingInGame: o,
         windowSize: l,
-        keybind: null != a ? (0, ee.BB)(a.shortcut, !0) : "???",
-        keybindKeyCodes: null != a ? a.shortcut : [],
-        connectedToVoice: null != s,
+        keybind: null != s ? (0, ee.BB)(s.shortcut, !0) : "???",
+        keybindKeyCodes: null != s ? s.shortcut : [],
+        connectedToVoice: null != a,
         voiceChannelId: null != c ? c.id : null,
         voiceGuild: d,
         game: u,

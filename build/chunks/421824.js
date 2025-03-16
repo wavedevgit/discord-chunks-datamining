@@ -10,8 +10,8 @@ var r = n(481060),
   o = n(556296),
   a = n(13140),
   s = n(44359),
-  u = n(620954),
-  c = n(987650),
+  c = n(620954),
+  u = n(987650),
   d = n(981631),
   p = n(388032);
 
@@ -20,8 +20,8 @@ function h() {
   let {
     trackView: e,
     trackClick: t
-  } = (0, u.R)(c.n0.ClipsReminderNotification, {
-    notif_type: c.n0.ClipsReminderNotification
+  } = (0, c.R)(u.n0.ClipsReminderNotification, {
+    notif_type: u.n0.ClipsReminderNotification
   }), n = o.ZP.getKeybindForAction(d.kg4.SAVE_CLIP);
   if (null == n) return null;
   let h = a.BB(n.shortcut, !0);
@@ -49,8 +49,8 @@ function f(e) {
   let {
     trackView: t,
     trackClick: n
-  } = (0, u.R)(c.n0.ClipsNotification, {
-    notif_type: c.n0.ClipsNotification
+  } = (0, c.R)(u.n0.ClipsNotification, {
+    notif_type: u.n0.ClipsNotification
   });
   return {
     title: e,

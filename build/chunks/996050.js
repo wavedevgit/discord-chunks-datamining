@@ -1,6 +1,6 @@
 /** Chunk was on 50751 **/
 n.d(t, {
-  Z: () => u
+  Z: () => c
 });
 var i = n(224706),
   r = n(13245),
@@ -9,10 +9,10 @@ var i = n(224706),
   a = n(987650),
   s = n(388032);
 
-function u(e, t, n, u, c) {
-  if (null == t.activity || null == u.id) return null;
+function c(e, t, n, c, u) {
+  if (null == t.activity || null == c.id) return null;
   let d = t.activity.type,
-    p = c.session_id;
+    p = u.session_id;
   if (null == p) return null;
   let {
     icon: h,
@@ -30,7 +30,7 @@ function u(e, t, n, u, c) {
     channel_id: e.id,
     channel_type: e.type,
     activity_type: d,
-    activity_name: c.name
+    activity_name: u.name
   });
   return {
     icon: h,
@@ -45,10 +45,10 @@ function u(e, t, n, u, c) {
       i.Z.join({
         userId: n.id,
         sessionId: p,
-        applicationId: null !== (a = u.altId) && void 0 !== a ? a : u.id,
+        applicationId: null !== (a = c.altId) && void 0 !== a ? a : c.id,
         channelId: e.id,
         messageId: t.id,
-        activity: c
+        activity: u
       }), r.Z.updateNotificationStatus(o), O("join")
     },
     onDismissClick: () => {

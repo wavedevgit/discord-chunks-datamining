@@ -13,8 +13,8 @@ function s(e, t) {
     s = a.NW.format(a.t["Yk+uYG"], {
       username: ""
     }),
-    u = (0, i.ov)(e),
-    c = a.NW.string(a.t.WRj1Wl),
+    c = (0, i.ov)(e),
+    u = a.NW.string(a.t.WRj1Wl),
     {
       trackView: d,
       trackClick: p
@@ -25,10 +25,10 @@ function s(e, t) {
       activity_name: t.name
     });
   return {
-    icon: u,
+    icon: c,
     title: n,
     body: s,
-    hint: c,
+    hint: u,
     onNotificationShow: () => {
       d()
     },

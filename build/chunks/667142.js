@@ -1,12 +1,12 @@
 /** Chunk was on 50751 **/
 n.d(t, {
   Df: () => d,
-  S_: () => c,
+  S_: () => u,
   V5: () => a,
   VX: () => o,
   ZP: () => p,
   ih: () => s,
-  xc: () => u
+  xc: () => c
 });
 var i = n(972959);
 let r = {
@@ -17,9 +17,9 @@ let r = {
   o = 1e4,
   a = 2e4,
   s = 500,
-  u = 1e3;
+  c = 1e3;
 
-function c(e) {
+function u(e) {
   l.setState({
     timeToLiveMs: e
   })

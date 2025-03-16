@@ -1,6 +1,6 @@
 /** Chunk was on 50751 **/
 n.d(t, {
-  BO: () => c,
+  BO: () => u,
   cq: () => p,
   gI: () => h,
   xN: () => f,
@@ -42,23 +42,23 @@ function s(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let u = (0, l.H)(() => ({
+let c = (0, l.H)(() => ({
   streams: {}
 }));
 
-function c(e) {
+function u(e) {
   var t, n;
   let i = (0, o.V9)(e);
-  return null !== (n = null === (t = u.useState(e => e.streams, r())[i]) || void 0 === t ? void 0 : t.zoom) && void 0 !== n ? n : 100
+  return null !== (n = null === (t = c.useState(e => e.streams, r())[i]) || void 0 === t ? void 0 : t.zoom) && void 0 !== n ? n : 100
 }
 
 function d(e) {
-  return c(e) / 100
+  return u(e) / 100
 }
 
 function p(e, t) {
   let n = (0, o.V9)(e);
-  u.setState(e => {
+  c.setState(e => {
     var i;
     return s(a({}, e), {
       streams: s(a({}, e.streams), {
@@ -73,7 +73,7 @@ function p(e, t) {
 
 function h(e, t) {
   let n = (0, o.V9)(e);
-  u.setState(e => {
+  c.setState(e => {
     var i;
     return s(a({}, e), {
       streams: s(a({}, e.streams), {
@@ -89,5 +89,5 @@ function h(e, t) {
 function f(e) {
   var t;
   let n = (0, o.V9)(e);
-  return null === (t = u.useState(e => e.streams, r())[n]) || void 0 === t ? void 0 : t.fitOverride
+  return null === (t = c.useState(e => e.streams, r())[n]) || void 0 === t ? void 0 : t.fitOverride
 }

@@ -7,8 +7,8 @@ var i, r = n(512722),
   o = n(772848),
   a = n(442837),
   s = n(570140),
-  u = n(13245),
-  c = n(435064),
+  c = n(13245),
+  u = n(435064),
   d = n(786761),
   p = n(695346),
   h = n(163612),
@@ -24,8 +24,8 @@ var i, r = n(512722),
   x = n(246946),
   I = n(594174),
   S = n(979651),
-  N = n(974180),
-  C = n(237997),
+  C = n(974180),
+  N = n(237997),
   Z = n(70956),
   w = n(150097),
   P = n(129724),
@@ -107,14 +107,14 @@ function es() {
     for (let e of (en = !1, et = [...et, ...ei], ei = [], et.length > 40 && (et.length = 40), et)) e.timer.start()
 }
 
-function eu() {
+function ec() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 3;
   et.filter(e => e.type === A.kL.TEXT && e.status === Y._1z.TIMED_OUT).sort((e, t) => t.timestamp - e.timestamp).forEach((t, n) => {
-    (n >= e || t.timestamp < Date.now() - q) && ec(t.id, Y._1z.DISMISSED)
+    (n >= e || t.timestamp < Date.now() - q) && eu(t.id, Y._1z.DISMISSED)
   })
 }
 
-function ec(e) {
+function eu(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Y._1z.DISMISSED;
   if (null == e) return !1;
   let n = et.findIndex(t => t.id === e);
@@ -153,7 +153,7 @@ function ep(e, t) {
         return {
           start() {
             let r = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : t,
-              l = r ? Y._1z.TIMED_OUT : Y._1z.DISMISSED; - 1 === i && (i = setTimeout(() => u.Z.updateNotificationStatus(e, l), null != n ? n : X))
+              l = r ? Y._1z.TIMED_OUT : Y._1z.DISMISSED; - 1 === i && (i = setTimeout(() => c.Z.updateNotificationStatus(e, l), null != n ? n : X))
           },
           stop() {
             clearTimeout(i), i = -1
@@ -243,7 +243,7 @@ function ef(e) {
     channelId: t,
     ringing: n
   } = e, i = ed(t);
-  if (!n.includes(f.default.getId())) return ec(i);
+  if (!n.includes(f.default.getId())) return eu(i);
   if (null != i) return !1;
   let r = m.Z.getChannel(t);
   if (null == r || !r.isRingable() || "GUILD_RING_START" === e.type && !h.Z.getCurrentConfig({
@@ -251,7 +251,7 @@ function ef(e) {
       location: "OverlayV3StartRinging"
     }).enabled || j.Z.getStatus() === Y.Skl.DND || p.QZ.getSetting()) return !1;
   let l = et.find(e => e.type === A.kL.TEXT && e.channelId === t && e.messageType === Y.uaV.CALL);
-  null != l && ec(l.id), ep((0, V.Z)(r), {
+  null != l && eu(l.id), ep((0, V.Z)(r), {
     priority: A.Tu.HIGH,
     expirationExternallyManaged: !0,
     type: A.kL.INCOMING_CALL,
@@ -273,14 +273,14 @@ let eg = new em(s.Z, {
       notificationId: t,
       status: n
     } = e;
-    ec(t, n)
+    eu(t, n)
   },
   OVERLAY_MOUNTED: function(e) {
     var t;
     let {
       nudges: n
     } = e;
-    eu(0);
+    ec(0);
     let i = null !== (t = k.ZP.getFocusedPID()) && void 0 !== t ? t : _.UNSET_PID;
     if (D.default.hasChangedRenderMode(i)) return;
     let r = (0, F.Z)((0, L.pL)(), n);
@@ -295,13 +295,13 @@ let eg = new em(s.Z, {
       locked: t
     } = e;
     if (t) {
-      for (let e of et) e.status === Y._1z.FOCUSED && ec(e.id, Y._1z.ACTIVE);
+      for (let e of et) e.status === Y._1z.FOCUSED && eu(e.id, Y._1z.ACTIVE);
       return !0
     }
-    for (let e of (eu(), et)) e.type === A.kL.NUDGE ? ec(e.id, Y._1z.DISMISSED) : e.status !== Y._1z.ACTIVE || e.expirationExternallyManaged || (e.timer.stop(), e.timer.start(e.expirationExternallyManaged));
+    for (let e of (ec(), et)) e.type === A.kL.NUDGE ? eu(e.id, Y._1z.DISMISSED) : e.status !== Y._1z.ACTIVE || e.expirationExternallyManaged || (e.timer.stop(), e.timer.start(e.expirationExternallyManaged));
     if (et.length > 0) {
       var n;
-      return ec(null === (n = et.filter(e => e.type === A.kL.TEXT).sort((e, t) => t.timestamp - e.timestamp)[0]) || void 0 === n ? void 0 : n.id, Y._1z.FOCUSED)
+      return eu(null === (n = et.filter(e => e.type === A.kL.TEXT).sort((e, t) => t.timestamp - e.timestamp)[0]) || void 0 === n ? void 0 : n.id, Y._1z.FOCUSED)
     }
   },
   MESSAGE_CREATE: function(e) {
@@ -309,8 +309,8 @@ let eg = new em(s.Z, {
     let {
       channelId: o,
       message: a
-    } = e, s = m.Z.getChannel(o), u = I.default.getUser(null === (t = a.author) || void 0 === t ? void 0 : t.id);
-    if (null == s || null == u) return !1;
+    } = e, s = m.Z.getChannel(o), c = I.default.getUser(null === (t = a.author) || void 0 === t ? void 0 : t.id);
+    if (null == s || null == c) return !1;
     if ((null === (n = a.activity) || void 0 === n ? void 0 : n.type) === Y.mFx.JOIN || (null === (i = a.activity) || void 0 === i ? void 0 : i.type) === Y.mFx.JOIN_REQUEST) {
       if (!(0, w.eF)(a, o, !0, !0)) return !1;
       let e = function(e, t, n) {
@@ -335,18 +335,18 @@ let eg = new em(s.Z, {
           channelId: e.id,
           duration: $
         }), !0)
-      }(s, a, u);
+      }(s, a, c);
       if (!1 !== e) return e
     }
-    if (C.default.getTextChatNotificationMode() === Y.Ypu.DISABLED || x.Z.disableNotifications || !(0, w.eF)(a, o)) return !1;
-    let c = !O.Z.isSoundDisabled(N.Ay),
+    if (N.default.getTextChatNotificationMode() === Y.Ypu.DISABLED || x.Z.disableNotifications || !(0, w.eF)(a, o)) return !1;
+    let u = !O.Z.isSoundDisabled(C.Ay),
       p = null !== (r = g.Z.getMessage(o, a.id)) && void 0 !== r ? r : (0, d.e5)(a);
-    ep((0, G.Z)(s, p, u, c), {
+    ep((0, G.Z)(s, p, c, u), {
       type: A.kL.TEXT,
       channelId: s.id,
       expirationExternallyManaged: !0,
       messageType: a.type
-    }), eu()
+    }), ec()
   },
   CHANNEL_SELECT: function(e) {
     let {
@@ -365,7 +365,7 @@ let eg = new em(s.Z, {
     let {
       channelId: t
     } = e;
-    ec(ed(t))
+    eu(ed(t))
   },
   GUILD_RING_START: ef,
   GUILD_RING_STOP: function(e) {
@@ -378,7 +378,7 @@ let eg = new em(s.Z, {
         guildId: n,
         location: "OverlayV3StopRinging"
       }).enabled) return !1;
-    i.includes(f.default.getId()) && ec(ed(t))
+    i.includes(f.default.getId()) && eu(ed(t))
   },
   ACTIVITY_USER_ACTION: function(e) {
     let t, {
@@ -397,7 +397,7 @@ let eg = new em(s.Z, {
   },
   CLIPS_SAVE_CLIP: function() {
     ep((0, M.f)(H.NW.format(H.t.KLhk6u, {
-      duration: (0, P.A)(c.Z.getSettings().clipsLength / 1e3, !0)
+      duration: (0, P.A)(u.Z.getSettings().clipsLength / 1e3, !0)
     })))
   },
   CLIPS_SAVE_CLIP_ERROR: function() {

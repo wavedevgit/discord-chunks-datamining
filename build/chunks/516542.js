@@ -8,8 +8,8 @@ var i = n(200651),
   o = n(13245),
   a = n(45114),
   s = n(493773),
-  u = n(655687),
-  c = n(541716),
+  c = n(655687),
+  u = n(541716),
   d = n(752305),
   p = n(893718),
   h = n(957730),
@@ -27,12 +27,12 @@ function v(e) {
   } = e, E = (0, f.Z)(), {
     placeholder: b,
     accessibilityLabel: j
-  } = (0, u.Z)({
+  } = (0, c.Z)({
     channel: v
   }), [x, I] = r.useState(() => (0, d.H2)()), {
     textValue: S,
-    richValue: N
-  } = x, [C, Z] = r.useState(!1), w = r.useCallback(() => Z(!0), []), P = r.useCallback(() => Z(!1), []);
+    richValue: C
+  } = x, [N, Z] = r.useState(!1), w = r.useCallback(() => Z(!0), []), P = r.useCallback(() => Z(!1), []);
   (0, s.ZP)(() => {
     (0, a.In)(v.id, !0, !0, n, {
       section: g.jXE.OVERLAY
@@ -60,12 +60,12 @@ function v(e) {
       accessibilityLabel: j,
       channel: v,
       textValue: S,
-      richValue: N,
-      type: c.Ie.OVERLAY_INLINE_REPLY,
+      richValue: C,
+      type: u.Ie.OVERLAY_INLINE_REPLY,
       allowNewLines: !1,
       onBlur: P,
       onFocus: w,
-      focused: C,
+      focused: N,
       onSubmit: D,
       onKeyDown: T,
       autoCompletePosition: "bottom",
