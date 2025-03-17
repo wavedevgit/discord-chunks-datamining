@@ -1,43 +1,58 @@
 /** Chunk was on 63757 **/
-e.d(t, {
-  default: () => a
+r.d(t, {
+  default: () => c
 });
-var i = e(200651);
-e(192379);
-var n = e(481060),
-  d = e(600164),
-  l = e(388032),
-  r = e(382196);
+var s = r(200651);
+r(192379);
+var i = r(481060),
+  a = r(600164),
+  d = r(785141),
+  n = r(272395),
+  o = r(388032),
+  l = r(382196);
 
-function a(s) {
+function c(e) {
+  var t;
   let {
-    onClose: t,
-    transitionState: e
-  } = s;
-  return (0, i.jsxs)(n.Y0X, {
-    size: n.CgR.SMALL,
-    transitionState: e,
-    children: [(0, i.jsxs)(n.xBx, {
-      justify: d.Z.Justify.BETWEEN,
-      children: [(0, i.jsx)(n.vwX, {
+    onClose: r,
+    transitionState: c
+  } = e, {
+    avErrorUIEnabled: u
+  } = (0, n.JN)({
+    location: "StreamWarning"
+  }), x = null === (t = (0, d.hp)(d.u.STREAM_FULL)) || void 0 === t ? void 0 : t.errorCode, h = o.NW.formatToPlainString(o.t["ejOT9/"], {
+    errorCode: x
+  });
+  return (0, s.jsxs)(i.Y0X, {
+    size: i.CgR.SMALL,
+    transitionState: c,
+    children: [(0, s.jsxs)(i.xBx, {
+      justify: a.Z.Justify.BETWEEN,
+      children: [(0, s.jsx)(i.vwX, {
         tag: "h2",
-        className: r.header,
-        children: l.NW.string(l.t.GzjdOz)
-      }), (0, i.jsx)(n.olH, {
-        onClick: t,
-        className: r.modalCloseButton
+        className: l.header,
+        children: o.NW.string(o.t.GzjdOz)
+      }), (0, s.jsx)(i.olH, {
+        onClick: r,
+        className: l.modalCloseButton
       })]
-    }), (0, i.jsxs)(n.hzk, {
-      children: [(0, i.jsx)(n.Text, {
+    }), (0, s.jsxs)(i.hzk, {
+      children: [(0, s.jsx)(i.Text, {
         variant: "text-md/medium",
-        children: l.NW.string(l.t.VVZDBA)
-      }), (0, i.jsx)("div", {
-        className: r.fullArt
+        children: o.NW.string(o.t.VVZDBA)
+      }), u && (0, s.jsx)(i.Text, {
+        variant: "text-md/medium",
+        selectable: !0,
+        color: "text-muted",
+        className: l.errorCode,
+        children: h
+      }), (0, s.jsx)("div", {
+        className: l.fullArt
       })]
-    }), (0, i.jsx)(n.mzw, {
-      children: (0, i.jsx)(n.zxk, {
-        onClick: t,
-        children: l.NW.string(l.t.BddRzc)
+    }), (0, s.jsx)(i.mzw, {
+      children: (0, s.jsx)(i.zxk, {
+        onClick: r,
+        children: o.NW.string(o.t.BddRzc)
       })
     })]
   })

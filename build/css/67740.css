@@ -1,6 +1,6 @@
 /**
   Module ID: 67740
-  Original File Name: e96d855df0372439
+  Original File Name: 286db0fff9d7cb95
 **/
 .label__33095 {
     gap: var(--spacing-8)
@@ -91,7 +91,7 @@
     color: var(--white)
 }
 
-.subtext__3751b {
+.label__3751b,.subtext__3751b {
     display: flex;
     align-items: center;
     gap: 4px
@@ -120,4 +120,4 @@
     margin-right: 4px
 }
 
-/*# sourceMappingURL=e96d855df0372439.css.map*/
+/*# sourceMappingURL=286db0fff9d7cb95.css.map*/

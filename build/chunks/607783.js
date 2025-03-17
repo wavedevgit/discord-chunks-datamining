@@ -2,8 +2,8 @@
 n.d(t, {
   B: () => f
 });
-var i = n(200651),
-  l = n(192379),
+var l = n(200651),
+  i = n(192379),
   r = n(442837),
   a = n(481060),
   o = n(40851),
@@ -20,17 +20,17 @@ function f(e) {
     guildId: f,
     location: b,
     simplified: Z = !1
-  } = e, m = (0, c.J)({
+  } = e, N = (0, c.J)({
     channelId: n,
     location: b
-  }), v = (0, r.e7)([d.default], () => d.default.getId() === t), N = (0, o.bp)(), p = l.useCallback(() => {
+  }), m = (0, r.e7)([d.default], () => d.default.getId() === t), v = (0, o.bp)(), p = i.useCallback(() => {
     s.Z.openSecureFramesUserVerificationModal(t, n, () => (0, u.fz)({
       userId: t,
       channelId: n,
       guildId: f
-    }), N)
-  }, [N, n, f, t]);
-  return !m || v ? null : (0, i.jsx)(a.sNh, {
+    }), v)
+  }, [v, n, f, t]);
+  return !N || m ? null : (0, l.jsx)(a.sNh, {
     id: "secure-frames-user-verification",
     label: g.NW.string(g.t["8ErYvb"]),
     action: p,

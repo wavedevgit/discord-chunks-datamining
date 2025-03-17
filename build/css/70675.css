@@ -1,6 +1,6 @@
 /**
   Module ID: 70675
-  Original File Name: 2c95deee253c433f
+  Original File Name: 80bbae4e993c991e
 **/
 .labelWrapper_abe771 {
     display: flex;
@@ -52,7 +52,7 @@
     color: var(--white)
 }
 
-.subtext__3751b {
+.label__3751b,.subtext__3751b {
     display: flex;
     align-items: center;
     gap: 4px
@@ -81,4 +81,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=2c95deee253c433f.css.map*/
+/*# sourceMappingURL=80bbae4e993c991e.css.map*/

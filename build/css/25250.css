@@ -1,6 +1,6 @@
 /**
   Module ID: 25250
-  Original File Name: e84e684846209b37
+  Original File Name: 60e2de9504135a83
 **/
 .labelWrapper_abe771 {
     display: flex;
@@ -67,7 +67,7 @@
     color: var(--white)
 }
 
-.subtext__3751b {
+.label__3751b,.subtext__3751b {
     display: flex;
     align-items: center;
     gap: 4px
@@ -106,4 +106,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=e84e684846209b37.css.map*/
+/*# sourceMappingURL=60e2de9504135a83.css.map*/

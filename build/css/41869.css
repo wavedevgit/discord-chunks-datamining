@@ -1,6 +1,6 @@
 /**
   Module ID: 41869
-  Original File Name: 21e9eb1a2f31fafb
+  Original File Name: cc7c1a0b21035fc3
 **/
 .label__33095 {
     gap: var(--spacing-8)
@@ -102,7 +102,7 @@
     color: var(--white)
 }
 
-.subtext__3751b {
+.label__3751b,.subtext__3751b {
     display: flex;
     align-items: center;
     gap: 4px
@@ -131,4 +131,4 @@
     margin-right: 4px
 }
 
-/*# sourceMappingURL=21e9eb1a2f31fafb.css.map*/
+/*# sourceMappingURL=cc7c1a0b21035fc3.css.map*/

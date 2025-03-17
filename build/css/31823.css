@@ -1,6 +1,6 @@
 /**
   Module ID: 31823
-  Original File Name: a68c379e6c052959
+  Original File Name: 858bb42fa4408d24
 **/
 .confirmModal__1b38b {
     display: flex;
@@ -66,7 +66,7 @@
     color: var(--white)
 }
 
-.subtext__3751b {
+.label__3751b,.subtext__3751b {
     display: flex;
     align-items: center;
     gap: 4px
@@ -95,4 +95,4 @@
     margin-right: 4px
 }
 
-/*# sourceMappingURL=a68c379e6c052959.css.map*/
+/*# sourceMappingURL=858bb42fa4408d24.css.map*/

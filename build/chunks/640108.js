@@ -489,6 +489,8 @@ class q {
         default:
           this.assertUnreachable(this.currentState)
       }
+    }), D(this, "onError", e => {
+      this.moveToState("paused"), this.sendEvent()
     }), D(this, "onPlaying", e => {
       switch (this.currentState) {
         case "playing":
@@ -1039,7 +1041,7 @@ class Q extends(i = a.PureComponent) {
         s = null;
       this._analytics.errorCode = null !== (i = null === (t = a.error) || void 0 === t ? void 0 : t.code) && void 0 !== i ? i : null, this._analytics.errorMessage = null !== (o = null === (n = a.error) || void 0 === n ? void 0 : n.message) && void 0 !== o ? o : null, s = (null === (r = a.error) || void 0 === r ? void 0 : r.code) === 4 ? R.NW.string(R.t.l2TVDA) : R.NW.string(R.t.VO4o6O), this.setState({
         error: s
-      })
+      }), this._analytics.onError(e)
     }), this._analytics = new q({
       src: e.src,
       mimeType: null === (n = e.mimeType) || void 0 === n ? void 0 : n.join("/"),

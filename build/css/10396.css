@@ -1,6 +1,6 @@
 /**
   Module ID: 10396
-  Original File Name: 2beff9d7e92cc38b
+  Original File Name: 605c2db02db0b4e3
 **/
 .gameImageContainer_ed15e7 {
     position: relative;
@@ -14191,6 +14191,14 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     margin-top: 8px
 }
 
+.spinnerContainer__69ef9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%
+}
+
 .leftContent__69ef9 {
     max-width: 352px
 }
@@ -14330,4 +14338,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=2beff9d7e92cc38b.css.map*/
+/*# sourceMappingURL=605c2db02db0b4e3.css.map*/

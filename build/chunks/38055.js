@@ -127,7 +127,7 @@ function D(e, t) {
       channel_type: null !== (b = null == D ? void 0 : D.type) && void 0 !== b ? b : null,
       rtc_connection_id: null !== (v = t.rtcConnectionId) && void 0 !== v ? v : null,
       media_session_id: null !== (w = null !== (P = t.mediaSessionId) && void 0 !== P ? P : f.Z.getMediaSessionId()) && void 0 !== w ? w : null,
-      parent_media_session_id: null !== (k = t.parentMediaSessionId) && void 0 !== k ? k : null,
+      parent_media_session_id: null !== (k = null == x ? void 0 : x.parentMediaSessionId) && void 0 !== k ? k : null,
       context: null !== (K = t.mediaContext) && void 0 !== K ? K : null,
       voice_backend_version: null !== (z = null === (r = f.Z.getRTCConnection()) || void 0 === r ? void 0 : r.getVoiceVersion()) && void 0 !== z ? z : null,
       rtc_worker_backend_version: null !== (q = null === (i = f.Z.getRTCConnection()) || void 0 === i ? void 0 : i.getRtcWorkerVersion()) && void 0 !== q ? q : null,

@@ -1,6 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
+  J: () => D,
   Z: () => M
 }), n(47120), n(653041), n(26686);
 var r = n(570140),
@@ -219,7 +220,6 @@ function D(e) {
   return T({
     channelId: t,
     mediaSessionId: null == n ? void 0 : n.getMediaSessionId(),
-    parentMediaSessionId: null == n ? void 0 : n.parentMediaSessionId,
     rtcConnectionId: null == n ? void 0 : n.getRTCConnectionId(),
     mediaContext: I.Yn.STREAM,
     streamKey: e

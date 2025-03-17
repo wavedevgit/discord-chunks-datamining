@@ -1,6 +1,6 @@
 /**
   Module ID: 26129
-  Original File Name: dc951019c9f4dc60
+  Original File Name: bfff32a90c53d92e
 **/
 .loadingWrapper__5a143 {
     display: flex;
@@ -81,7 +81,7 @@
     color: var(--white)
 }
 
-.subtext__3751b {
+.label__3751b,.subtext__3751b {
     display: flex;
     align-items: center;
     gap: 4px
@@ -110,4 +110,4 @@
     margin-right: 4px
 }
 
-/*# sourceMappingURL=dc951019c9f4dc60.css.map*/
+/*# sourceMappingURL=bfff32a90c53d92e.css.map*/

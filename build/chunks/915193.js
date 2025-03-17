@@ -8,8 +8,8 @@ var i = n(442837),
   o = n(692547),
   s = n(481060),
   a = n(493683),
-  d = n(129861),
-  l = n(700582),
+  l = n(129861),
+  d = n(700582),
   c = n(594174),
   u = n(388032),
   m = n(693994);
@@ -90,13 +90,13 @@ function b(e, r) {
             className: m.fromToWrapper,
             children: [(0, t.jsx)("div", {
               className: m.from,
-              children: (0, t.jsx)(l.Z, {
+              children: (0, t.jsx)(d.Z, {
                 user: n,
                 size: s.EFr.SIZE_80
               })
             }), (0, t.jsx)("div", {
               className: m.to,
-              children: (0, t.jsx)(l.Z, {
+              children: (0, t.jsx)(d.Z, {
                 user: e,
                 size: s.EFr.SIZE_80
               })
@@ -104,7 +104,7 @@ function b(e, r) {
           }), (0, t.jsx)(s.Text, {
             variant: "text-md/normal",
             children: u.NW.format(u.t.gsBb3N, {
-              usernameHook: (r, n) => (0, t.jsx)(d.Z, {
+              usernameHook: (r, n) => (0, t.jsx)(l.Z, {
                 usernameIcon: (0, t.jsx)(s.qEK, {
                   className: m.avatarIcon,
                   src: e.getAvatarURL(void 0, 16),

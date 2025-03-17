@@ -1,6 +1,6 @@
 /** Chunk was on 70675 **/
 n.d(t, {
-  Z: () => h
+  Z: () => N
 });
 var l = n(200651),
   r = n(192379),
@@ -13,53 +13,53 @@ var l = n(200651),
   d = n(314897),
   g = n(271383),
   Z = n(430824),
-  f = n(496675),
-  b = n(594174),
+  b = n(496675),
+  f = n(594174),
   p = n(981631),
   O = n(388032),
   m = n(992718);
 
-function h(e) {
+function N(e) {
   let {
     guildId: t,
-    userId: h,
-    analyticsLocation: N,
+    userId: N,
+    analyticsLocation: h,
     analyticsLocations: j,
     context: P,
-    icon: v
-  } = e, x = Z.Z.getGuild(t), y = d.default.getId(), E = (0, i.e7)([b.default], () => b.default.getUser(h)), C = (0, i.e7)([g.ZP], () => g.ZP.isGuestOrLurker(t, h), [t, h]);
-  (0, i.e7)([f.Z], () => f.Z.getGuildVersion(t), [t]);
-  let _ = r.useMemo(() => ({
-    [t]: [h]
-  }), [t, h]);
-  (0, o.$)(_);
-  let S = P === p.IlC.POPOUT,
-    I = (0, s.Z)({
-      guild: x,
-      analyticsLocation: N
+    icon: x
+  } = e, v = Z.Z.getGuild(t), y = d.default.getId(), E = (0, i.e7)([f.default], () => f.default.getUser(N)), _ = (0, i.e7)([g.ZP], () => g.ZP.isGuestOrLurker(t, N), [t, N]);
+  (0, i.e7)([b.Z], () => b.Z.getGuildVersion(t), [t]);
+  let C = r.useMemo(() => ({
+    [t]: [N]
+  }), [t, N]);
+  (0, o.$)(C);
+  let I = P === p.IlC.POPOUT,
+    S = (0, s.Z)({
+      guild: v,
+      analyticsLocation: h
     }),
     T = (0, u.Aq)();
-  if (null == x || S) return null;
-  let W = y === h && (f.Z.can(p.Plq.CHANGE_NICKNAME, x) || f.Z.can(p.Plq.MANAGE_NICKNAMES, x)),
-    w = y === h,
-    U = f.Z.canManageUser(p.Plq.MANAGE_NICKNAMES, h, x);
-  if (!(W || U || w) || null == E || C) return null;
-  let k = x.hasFeature(p.oNc.HUB) ? O.NW.string(O.t["+MWrWl"]) : O.NW.string(O.t["PKQB/P"]),
-    A = w ? k : O.NW.string(O.t.dilOFx);
+  if (null == v || I) return null;
+  let W = y === N && (b.Z.can(p.Plq.CHANGE_NICKNAME, v) || b.Z.can(p.Plq.MANAGE_NICKNAMES, v)),
+    A = y === N,
+    U = b.Z.canManageUser(p.Plq.MANAGE_NICKNAMES, N, v);
+  if (!(W || U || A) || null == E || _) return null;
+  let w = v.hasFeature(p.oNc.HUB) ? O.NW.string(O.t["+MWrWl"]) : O.NW.string(O.t["PKQB/P"]),
+    R = A ? w : O.NW.string(O.t.dilOFx);
   return (0, l.jsx)(a.sNh, {
     id: "change-nickname",
     label: (0, l.jsx)("div", {
       className: m.labelWrapper,
       children: (0, l.jsx)("span", {
         className: m.label,
-        children: A
+        children: R
       })
     }),
-    icon: v,
+    icon: x,
     action: () => {
-      w ? ((0, c.Z)(E.id, E.getAvatarURL(t, 80), {
+      A ? ((0, c.Z)(E.id, E.getAvatarURL(t, 80), {
         guildId: t
-      }), I(), T.dispatch(p.CkL.POPOUT_CLOSE), (0, a.pTH)()) : (0, a.ZDy)(async () => {
+      }), S(), T.dispatch(p.CkL.POPOUT_CLOSE), (0, a.pTH)()) : (0, a.ZDy)(async () => {
         let {
           default: e
         } = await n.e("17712").then(n.bind(n, 620021));
@@ -85,7 +85,7 @@ function h(e) {
           }({}, n), i = i = {
             guildId: t,
             user: E,
-            analyticsSource: N,
+            analyticsSource: h,
             analyticsLocations: j
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
