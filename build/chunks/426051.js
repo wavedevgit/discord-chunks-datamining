@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(286379),
-  o = n(481060),
-  a = n(797614),
+  a = n(481060),
+  o = n(797614),
   s = n(359110),
   c = n(6025),
   u = n(433355),
@@ -23,7 +23,7 @@ function b(e) {
     user: n,
     channel: b
   } = e, _ = (0, d.V)(), E = i.useCallback(() => {
-    (0, o.showToast)((0, o.createToast)(g.NW.string(g.t.pIQ3h4), o.ToastType.FAILURE)), a.Z.increment({
+    (0, a.showToast)((0, a.createToast)(g.NW.string(g.t.pIQ3h4), a.ToastType.FAILURE)), o.Z.increment({
       name: l.V.SPAM_MESSAGE_REQUEST_ERROR_VIEW
     })
   }, []), O = i.useCallback(() => {
@@ -49,10 +49,10 @@ function b(e) {
       active: t
     }), (0, r.jsxs)("div", {
       className: m.actions,
-      children: [(0, r.jsx)(o.zxk, {
+      children: [(0, r.jsx)(a.zxk, {
         className: m.button,
-        color: o.Ttl.PRIMARY,
-        size: o.zxk.Sizes.SMALL,
+        color: a.Ttl.PRIMARY,
+        size: a.zxk.Sizes.SMALL,
         onClick: e => {
           v(b.id), e.stopPropagation()
         },
@@ -62,7 +62,7 @@ function b(e) {
       }), (0, r.jsx)(f.Z, {
         className: m.button,
         channel: b,
-        buttonSize: o.zxk.Sizes.SMALL
+        buttonSize: a.zxk.Sizes.SMALL
       })]
     })]
   })

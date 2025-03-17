@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(481060),
+  a = n.n(l),
+  o = n(481060),
   s = n(951394),
   c = n(858523),
   u = n(388032),
@@ -33,7 +33,7 @@ let h = function(e) {
     className: n
   } = e, [l, h] = i.useState(!1), f = i.useCallback(() => h(!0), [h]), g = i.useCallback(() => h(!0), [h]);
   return (0, r.jsx)("div", {
-    className: o()(d.actionButtonsContainer, n, {
+    className: a()(d.actionButtonsContainer, n, {
       [d.forceButtonsShow]: l
     }),
     children: (0, r.jsx)(s.ZP, {
@@ -45,12 +45,12 @@ let h = function(e) {
           var {
             onClick: t
           } = e, n = p(e, ["onClick"]);
-          return (0, r.jsx)(a.ua7, {
+          return (0, r.jsx)(o.ua7, {
             text: u.NW.string(u.t.UKOtz8),
             hideOnClick: !0,
             children: e => {
               var i, l, {
-                  onClick: o
+                  onClick: a
                 } = e,
                 c = p(e, ["onClick"]);
               return (0, r.jsx)(s.zx, (i = function(e) {
@@ -72,10 +72,10 @@ let h = function(e) {
                 return e
               }({}, n, c), l = l = {
                 onClick: e => {
-                  e.stopPropagation(), null == o || o(), t(e)
+                  e.stopPropagation(), null == a || a(), t(e)
                 },
                 "aria-label": u.NW.string(u.t.UKOtz8),
-                children: (0, r.jsx)(a.xhG, {
+                children: (0, r.jsx)(o.xhG, {
                   size: "md",
                   color: "currentColor",
                   className: d.overflowIcon

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(392711),
   i = n.n(r),
   l = n(243814),
-  o = n(902704),
-  a = n(812206),
+  a = n(902704),
+  o = n(812206),
   s = n(594190),
   c = n(199902),
   u = n(592125),
@@ -78,17 +78,17 @@ let A = {
         let {
           prevState: r,
           dispatch: l
-        } = e, o = p.Z.getGuild(t);
-        if (null == o) return;
-        let a = {
+        } = e, a = p.Z.getGuild(t);
+        if (null == a) return;
+        let o = {
           guild: {
-            id: o.id,
-            name: o.name,
-            icon_url: null !== (n = o.getIconURL(128)) && void 0 !== n ? n : null
+            id: a.id,
+            name: a.name,
+            icon_url: null !== (n = a.getIconURL(128)) && void 0 !== n ? n : null
           },
           online: 0
         };
-        return i().isEqual(r, a) || l(a), a
+        return i().isEqual(r, o) || l(o), o
       }
     }
   },
@@ -114,14 +114,14 @@ let A = {
           dispatch: r
         } = e, l = u.Z.getChannel(t);
         if (null == l) return;
-        let o = l.getGuildId(),
-          a = Object.values(m.Z.getVoiceStatesForChannel(l.id));
-        return n && i().differenceBy(a, n, e => {
+        let a = l.getGuildId(),
+          o = Object.values(m.Z.getVoiceStatesForChannel(l.id));
+        return n && i().differenceBy(o, n, e => {
           let {
             userId: t
           } = e;
           return t
-        }).forEach(e => r((0, _.aE)(o, l.id, e))), a
+        }).forEach(e => r((0, _.aE)(a, l.id, e))), o
       }
     }
   },
@@ -147,14 +147,14 @@ let A = {
           dispatch: r
         } = e, l = u.Z.getChannel(t);
         if (null == l) return;
-        let o = l.getGuildId(),
-          a = Object.values(m.Z.getVoiceStatesForChannel(l.id));
-        return i().differenceBy(n, a, e => {
+        let a = l.getGuildId(),
+          o = Object.values(m.Z.getVoiceStatesForChannel(l.id));
+        return i().differenceBy(n, o, e => {
           let {
             userId: t
           } = e;
           return t
-        }).forEach(e => r((0, _.aE)(o, l.id, e))), a
+        }).forEach(e => r((0, _.aE)(a, l.id, e))), o
       }
     }
   },
@@ -180,9 +180,9 @@ let A = {
           dispatch: r
         } = e, l = u.Z.getChannel(t);
         if (null == l) return;
-        let o = l.getGuildId(),
-          a = Object.values(m.Z.getVoiceStatesForChannel(l.id)).map(e => (0, _.aE)(o, l.id, e));
-        return i().differenceWith(a, n, i().isEqual).forEach(e => r(e)), a
+        let a = l.getGuildId(),
+          o = Object.values(m.Z.getVoiceStatesForChannel(l.id)).map(e => (0, _.aE)(a, l.id, e));
+        return i().differenceWith(o, n, i().isEqual).forEach(e => r(e)), o
       }
     }
   },
@@ -327,7 +327,7 @@ let A = {
       } = e, r = {
         currentUser: g.default.getCurrentUser()
       };
-      return null == r.currentUser || null != t && (0, o.Z)(r, t) || n((0, y.Z)(r.currentUser)), r
+      return null == r.currentUser || null != t && (0, a.Z)(r, t) || n((0, y.Z)(r.currentUser)), r
     }
   },
   [C.zMe.CURRENT_GUILD_MEMBER_UPDATE]: {
@@ -347,7 +347,7 @@ let A = {
         } = e, i = {
           currentGuildMember: d.ZP.getSelfMember(t)
         };
-        return null == i.currentGuildMember || null != n && (0, o.Z)(i, n) || r((0, v.Z)(i.currentGuildMember)), i
+        return null == i.currentGuildMember || null != n && (0, a.Z)(i, n) || r((0, v.Z)(i.currentGuildMember)), i
       }
     }
   },
@@ -372,9 +372,9 @@ let A = {
       let {
         prevState: r,
         dispatch: l
-      } = e, o = c.Z.getStreamerActiveStreamMetadata(), u = (null == o ? void 0 : o.pid) != null ? s.ZP.getGameForPID(o.pid) : null, d = (null == u ? void 0 : u.id) != null ? a.Z.getApplication(u.id) : null, p = null != d ? (0, N.Z)(d) : null, h = null == o ? void 0 : o.sourceName, f = {
-        active: null != o,
-        pid: null !== (t = null == o ? void 0 : o.pid) && void 0 !== t ? t : null,
+      } = e, a = c.Z.getStreamerActiveStreamMetadata(), u = (null == a ? void 0 : a.pid) != null ? s.ZP.getGameForPID(a.pid) : null, d = (null == u ? void 0 : u.id) != null ? o.Z.getApplication(u.id) : null, p = null != d ? (0, N.Z)(d) : null, h = null == a ? void 0 : a.sourceName, f = {
+        active: null != a,
+        pid: null !== (t = null == a ? void 0 : a.pid) && void 0 !== t ? t : null,
         application: (n = null != p) ? {
           name: h
         } : null

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(392711),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   s = n(239091),
   c = n(476669),
   u = n(524331),
@@ -94,15 +94,15 @@ class E extends i.PureComponent {
     })
   }
 }
-let O = a.ZP.connectStores([d.Z, f.default, h.Z, p.Z], () => {
+let O = o.ZP.connectStores([d.Z, f.default, h.Z, p.Z], () => {
   let e, t;
   let n = d.Z.getSyncingWith(),
     r = d.Z.getActivity(),
     i = f.default.getCurrentUser(),
     l = [];
   if (null != n ? (e = f.default.getUser(n.userId), t = n.partyId) : null != r && null != r.party && null != r.party.id && (e = i, t = r.party.id), null != t) {
-    var a;
-    l = o()(Array.from(null !== (a = p.Z.getParty(t)) && void 0 !== a ? a : [])).map(e => f.default.getUser(e)).filter(g.lm).orderBy([t => null == e || e.id === t.id, e => h.Z.isFriend(e.id)], ["desc", "desc"]).value()
+    var o;
+    l = a()(Array.from(null !== (o = p.Z.getParty(t)) && void 0 !== o ? o : [])).map(e => f.default.getUser(e)).filter(g.lm).orderBy([t => null == e || e.id === t.id, e => h.Z.isFriend(e.id)], ["desc", "desc"]).value()
   }
   return {
     currentUser: i,

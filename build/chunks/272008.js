@@ -402,7 +402,7 @@ async function k(e) {
     placement: e
   });
   try {
-    let t = await (0, s.Gg)(),
+    let t = await (0, s.G)(),
       n = await i.tn.get({
         url: g.ANM.QUEST_FETCH_QUEST_TO_DELIVER(e, null == t ? void 0 : t.uuid),
         rejectWithError: !1

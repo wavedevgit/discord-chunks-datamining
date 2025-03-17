@@ -6,20 +6,20 @@ var r = n(200651);
 n(192379);
 var i = n(780384),
   l = n(481060),
-  o = n(410030),
-  a = n(451297);
+  a = n(410030),
+  o = n(451297);
 
 function s(e) {
   let {
     text: t,
     onClick: n
-  } = e, s = (0, o.ZP)(), c = (0, i.wj)(s);
+  } = e, s = (0, a.ZP)(), c = (0, i.wj)(s);
   return (0, r.jsxs)(l.zxk, {
     size: "medium",
     color: c ? l.Ttl.TRANSPARENT : l.Ttl.WHITE,
-    className: a.button,
+    className: o.button,
     onClick: n,
-    innerClassName: a.innerButton,
+    innerClassName: o.innerButton,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/semibold",
       color: "header-primary",

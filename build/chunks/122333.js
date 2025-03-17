@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(200651);
 n(192379);
 var l = n(481060),
-  o = n(570140),
-  a = n(317770),
+  a = n(570140),
+  o = n(317770),
   s = n(622822),
   c = n(391650),
   u = n(305325),
@@ -65,19 +65,19 @@ function A(e, t) {
 function Z() {
   null != r && (0, l.Mr3)(r)
 }
-class x extends a.Z {
+class x extends o.Z {
   _initialize() {
-    o.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), o.Z.subscribe("LOGOUT", Z)
+    a.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), a.Z.subscribe("LOGOUT", Z)
   }
   _terminate() {
-    o.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), o.Z.unsubscribe("LOGOUT", Z)
+    a.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), a.Z.unsubscribe("LOGOUT", Z)
   }
   handleConnectionOpen() {
     var e;
     let t;
-    let o = y.Z.getType();
-    if (null == o) return;
-    switch (o) {
+    let a = y.Z.getType();
+    if (null == a) return;
+    switch (a) {
       case I.M5.INVITE_UNCLAIMED:
         h.Z.flowStart(P.MK.INVITE, P.EW.NUF_STARTED);
         break;
@@ -87,11 +87,11 @@ class x extends a.Z {
       case I.M5.MARKETING_UNCLAIMED:
         h.Z.flowStart(P.MK.ORGANIC_MARKETING, P.EW.NUF_STARTED)
     }
-    let a = !1,
+    let o = !1,
       Z = _.Z.getGuildId();
-    if (o === I.M5.INVITE_UNCLAIMED) {
+    if (a === I.M5.INVITE_UNCLAIMED) {
       let e = b.Z.getGuild(Z);
-      null != e && (0, d.Dc)(e) && (a = !0, (0, f.RM)(e.id))
+      null != e && (0, d.Dc)(e) && (o = !0, (0, f.RM)(e.id))
     }
     let x = () => 0 === m.Z.totalGuilds && !N.isPlatformEmbedded,
       L = s.bN();
@@ -150,14 +150,14 @@ class x extends a.Z {
       open: e => c.j(N.isPlatformEmbedded, e),
       predicate: () => {
         var e;
-        return !a && null != E.default.getCurrentUser() && !(null === (e = E.default.getCurrentUser()) || void 0 === e ? void 0 : e.isClaimed()) && !T.a && !(0, p.g)("new_user_manager")
+        return !o && null != E.default.getCurrentUser() && !(null === (e = E.default.getCurrentUser()) || void 0 === e ? void 0 : e.isClaimed()) && !T.a && !(0, p.g)("new_user_manager")
       }
     }, {
       key: "Verification Gate with Claim Account",
       open: e => (0, u.hk)(Z, null != e ? e : void 0),
       predicate: () => {
         var e;
-        return a && !(null === (e = E.default.getCurrentUser()) || void 0 === e ? void 0 : e.isClaimed()) && !T.a
+        return o && !(null === (e = E.default.getCurrentUser()) || void 0 === e ? void 0 : e.isClaimed()) && !T.a
       }
     }, {
       key: "Guild Welcome Modal",

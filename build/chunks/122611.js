@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(442837),
-  o = n(704215),
-  a = n(433517),
+  a = n(704215),
+  o = n(433517),
   s = n(705348),
   c = n(243778),
   u = n(360453),
@@ -36,8 +36,8 @@ function j(e) {
   var t;
   let {
     guild: n
-  } = e, [u, h] = i.useState(null !== (t = a.K.get(S.Iv)) && void 0 !== t ? t : 0), g = e => {
-    a.K.set(S.Iv, e), h(e)
+  } = e, [u, h] = i.useState(null !== (t = o.K.get(S.Iv)) && void 0 !== t ? t : 0), g = e => {
+    o.K.set(S.Iv, e), h(e)
   }, m = (0, l.Wu)(S.HG, () => S.XN.filter(e => {
     let {
       store: t
@@ -53,34 +53,34 @@ function j(e) {
         markAsDismissed: i
       } = e, l = () => {
         g(Date.now()), i(T.L.UNKNOWN)
-      }, a = (() => {
+      }, o = (() => {
         switch (t) {
-          case o.z.CHANNEL_NOTICE_HUBLINK:
+          case a.z.CHANNEL_NOTICE_HUBLINK:
             return (0, r.jsx)(f.Z, {
               guild: n,
               markAsDismissed: l
             });
-          case o.z.CHANNEL_NOTICE_INVITE:
+          case a.z.CHANNEL_NOTICE_INVITE:
             return (0, r.jsx)(v.Z, {
               guild: n,
               markAsDismissed: l
             });
-          case o.z.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION:
+          case a.z.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION:
             return (0, r.jsx)(p.Z, {
               guild: n,
               markAsDismissed: l
             });
-          case o.z.CHANNEL_NOTICE_QUICKSWITCHER:
+          case a.z.CHANNEL_NOTICE_QUICKSWITCHER:
             return (0, r.jsx)(I.Z, {
               guild: n,
               markAsDismissed: l
             });
-          case o.z.CHANNEL_NOTICE_GUILD_BANNER:
+          case a.z.CHANNEL_NOTICE_GUILD_BANNER:
             return (0, r.jsx)(d.Z, {
               guild: n,
               markAsDismissed: l
             });
-          case o.z.LINKED_ROLE_ADMIN_GUILD:
+          case a.z.LINKED_ROLE_ADMIN_GUILD:
             return (0, r.jsx)(s.Z, {
               guild: n,
               markAsDismissed: () => i(T.L.UNKNOWN)
@@ -89,9 +89,9 @@ function j(e) {
             return null
         }
       })();
-      return null == a ? null : (0, r.jsx)("div", {
+      return null == o ? null : (0, r.jsx)("div", {
         onContextMenu: P,
-        children: a
+        children: o
       })
     }
   })

@@ -6,12 +6,12 @@ var r = n(200651);
 n(192379);
 var i = n(692547),
   l = n(780384),
-  o = n(481060),
-  a = n(410030);
+  a = n(481060),
+  o = n(410030);
 let s = e => {
   let {
     className: t
-  } = e, n = (0, a.ZP)(), s = (0, o.dQu)(i.Z.colors.BACKGROUND_ACCENT).hex();
+  } = e, n = (0, o.ZP)(), s = (0, a.dQu)(i.Z.colors.BACKGROUND_ACCENT).hex();
   return (0, r.jsx)("svg", {
     width: "700",
     height: "120",

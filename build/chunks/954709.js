@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(664081),
   i = n(570140),
   l = n(317770),
-  o = n(863750),
-  a = n(335131);
+  a = n(863750),
+  o = n(335131);
 class s extends l.Z {
   _initialize() {
     i.Z.subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
@@ -15,8 +15,8 @@ class s extends l.Z {
     i.Z.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
   }
   handlePostConnectionOpen() {
-    let e = o.Z.get("shop_include_unpublished");
-    (0, a.R2)({
+    let e = a.Z.get("shop_include_unpublished");
+    (0, o.R2)({
       release: e ? r.P.BETA : r.P.PROD
     })
   }

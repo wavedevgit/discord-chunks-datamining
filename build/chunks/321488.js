@@ -5,8 +5,8 @@ n.d(t, {
 var r, i = n(200651);
 n(192379);
 var l = n(120356),
-  o = n.n(l),
-  a = n(873546),
+  a = n.n(l),
+  o = n(873546),
   s = n(481060),
   c = n(423622),
   u = ((r = u || {})[r.ACCEPT = 0] = "ACCEPT", r[r.DENY = 1] = "DENY", r[r.DEFAULT = 2] = "DEFAULT", r);
@@ -43,11 +43,11 @@ function d(e) {
       }({}, e), p = p = {
         "aria-label": n,
         onClick: r,
-        className: o()(c.actionButton, {
+        className: a()(c.actionButton, {
           [c.actionAccept]: 0 === l,
           [c.actionDeny]: 1 === l,
           [c.highlight]: u,
-          [c.actionButtonMobile]: a.tq
+          [c.actionButtonMobile]: o.tq
         }),
         children: (0, i.jsx)(t, {
           className: c.icon,

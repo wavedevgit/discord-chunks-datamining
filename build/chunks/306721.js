@@ -1,11 +1,11 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(401430),
   i = n(283595),
   l = n(695103);
-let o = {
+let a = {
   init() {
     i.Z.whenInitialized(() => {
       null != l.Z.testModeApplicationId && (0, r.Wt)(l.Z.testModeApplicationId, l.Z.testModeOriginURL)

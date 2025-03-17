@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(6025),
   l = n(433355),
-  o = n(626135),
-  a = n(585483),
+  a = n(626135),
+  o = n(585483),
   s = n(922409),
   c = n(545724),
   u = n(749405),
@@ -34,12 +34,12 @@ function p(e) {
         channelId: p.id,
         baseChannelId: l.uZ,
         hasSingleMessageRequest: f
-      }), o.default.track(d.rMx.MESSAGE_REQUEST_PREVIEW_VIEWED, {
+      }), a.default.track(d.rMx.MESSAGE_REQUEST_PREVIEW_VIEWED, {
         is_spam: !1,
         channel_id: p.id,
         other_user_id: h.id
       }), setTimeout(() => {
-        a.S.dispatch(d.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+        o.S.dispatch(d.CkL.FOCUS_CHANNEL_TEXT_AREA, {
           channelId: p.id
         })
       }, 0)

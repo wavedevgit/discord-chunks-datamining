@@ -5,8 +5,8 @@ n.d(t, {
 }), n(411104), n(47120);
 var r, i = n(200651),
   l = n(192379),
-  o = n(748780),
-  a = n(442837),
+  a = n(748780),
+  o = n(442837),
   s = n(481060),
   c = n(540059),
   u = n(210887),
@@ -140,13 +140,13 @@ class _ extends l.PureComponent {
           throw Error("FriendsEmptyState: Invalid empty state")
       }
     }(e);
-    return e === d.pJs.ADD_FRIEND ? (0, i.jsx)(o.Z.div, {
+    return e === d.pJs.ADD_FRIEND ? (0, i.jsx)(a.Z.div, {
       className: h.friendsEmpty,
       style: r,
       children: (0, i.jsx)(b, {
         theme: n
       })
-    }) : (0, i.jsx)(o.Z.div, {
+    }) : (0, i.jsx)(a.Z.div, {
       className: h.friendsEmpty,
       style: r,
       children: (0, i.jsxs)(s.ubH, {
@@ -162,21 +162,21 @@ class _ extends l.PureComponent {
   }
   constructor(...e) {
     super(...e), f(this, "isDesktopVisualRefreshEnabled", (0, c.i9)("FriendsEmptyState")), f(this, "state", {
-      opacity: new o.Z.Value(1)
+      opacity: new a.Z.Value(1)
     }), f(this, "componentWillEnter", e => {
-      this.state.opacity.setValue(0), o.Z.timing(this.state.opacity, {
+      this.state.opacity.setValue(0), a.Z.timing(this.state.opacity, {
         toValue: 1,
         duration: 250
       }).start(e)
     }), f(this, "componentWillLeave", e => {
-      o.Z.timing(this.state.opacity, {
+      a.Z.timing(this.state.opacity, {
         toValue: 0,
         duration: 250
       }).start(e)
     })
   }
 }
-let E = a.ZP.connectStores([u.Z], () => ({
+let E = o.ZP.connectStores([u.Z], () => ({
   theme: u.Z.theme
 }), {
   forwardRef: !0

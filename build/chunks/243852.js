@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n(47120);
-var r, i, l, o, a = n(442837),
+var r, i, l, a, o = n(442837),
   s = n(433517),
   c = n(846519),
   u = n(570140),
@@ -37,8 +37,8 @@ function A(e) {
   r > I + C && (r = 0);
   let i = (0, m.OT)(e.applicationId, E.Z),
     l = N.Z.getVoiceChannelId(),
-    o = b.default.getSessionId(),
-    a = O.Z.getMediaSessionId();
+    a = b.default.getSessionId(),
+    o = O.Z.getMediaSessionId();
   d.Z.updateActivity({
     applicationId: e.applicationId,
     distributor: e.isDiscordApplication ? v.GQo.DISCORD : e.distributor,
@@ -48,8 +48,8 @@ function A(e) {
     closed: t,
     exePath: e.exePath,
     voiceChannelId: l,
-    sessionId: o,
-    mediaSessionId: a
+    sessionId: a,
+    mediaSessionId: o
   }), e.updatedAt = n;
   let u = T[e.applicationId];
   null == u && (u = T[e.applicationId] = new c.Xp).start(I, () => A(e)), t || (S[e.applicationId] = e, s.K.set(y, S))
@@ -80,7 +80,7 @@ function x() {
   for (let e of Object.keys(S)) j(S[e]);
   P = !1
 }
-class L extends(i = a.ZP.Store) {
+class L extends(i = o.ZP.Store) {
   initialize() {
     this.waitFor(h.ZP, f.Z, E.Z), this.syncWith([f.Z], Z)
   }
@@ -88,12 +88,12 @@ class L extends(i = a.ZP.Store) {
     return S
   }
 }
-o = "ActivityTrackingStore", (l = "displayName") in L ? Object.defineProperty(L, l, {
-  value: o,
+a = "ActivityTrackingStore", (l = "displayName") in L ? Object.defineProperty(L, l, {
+  value: a,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : L[l] = o, new L(u.Z, {
+}) : L[l] = a, new L(u.Z, {
   RUNNING_GAMES_CHANGE: () => Z(),
   CONNECTION_OPEN: function() {
     if (P) return !1;

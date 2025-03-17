@@ -31,8 +31,8 @@ var r = n(200651),
   P = n(87894),
   w = n(2660),
   A = n(46140),
-  _ = n(981631),
-  R = n(388032),
+  R = n(981631),
+  _ = n(388032),
   Z = n(419892);
 
 function I(e) {
@@ -66,9 +66,9 @@ function M(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = (e, t, n) => (0, P.uq)(e) && !n && "lg" === t ? "text-lg/medium" : "lg" === t ? "text-md/medium" : "sm" === t ? "text-sm/medium" : "text-xs/medium";
+let L = (e, t, n) => (0, P.uq)(e) && !n && "lg" === t ? "text-lg/medium" : "lg" === t ? "text-md/medium" : "sm" === t ? "text-sm/medium" : "text-xs/medium";
 
-function L(e) {
+function D(e) {
   let {
     containerSize: t,
     onClick: n,
@@ -140,7 +140,7 @@ let W = e => {
     isExpanded: S,
     isAnimating: W,
     contentPosition: U
-  } = e, Q = (0, x._Q)(t), B = Q >= x.OH.ACCEPTED, z = Q >= x.OH.COMPLETED, F = Q >= x.OH.CLAIMED, G = (0, f.Xv)(t.config), H = (0, P.uq)(n), V = n === h.jn.QUESTS_EMBED, X = S || W, K = B && !F && H, Y = (0, x.t5)(t, A.dr.QUESTS_CARD, n), {
+  } = e, Q = (0, x._Q)(t), B = Q >= x.OH.ACCEPTED, z = Q >= x.OH.COMPLETED, F = Q >= x.OH.CLAIMED, G = (0, f.Xv)(t.config), H = (0, P.uq)(n), V = n === h.jn.QUESTS_EMBED, X = S || W, Y = B && !F && H, K = (0, x.t5)(t, A.dr.QUESTS_CARD, n), {
     xboxAndPlaystationAccounts: J
   } = (0, x.z6)(), $ = (0, p.O5)(), ee = (0, j.j)({
     location: A.dr.QUESTS_BAR_MOBILE
@@ -172,14 +172,14 @@ let W = e => {
       className: o()(Z.outerContainer, {
         [Z.outerContainerSm]: "sm" === i,
         [Z.outerContainerXs]: "xs" === i,
-        [Z.outerContainerNoProgress]: !K
+        [Z.outerContainerNoProgress]: !Y
       }),
       style: {
         visibility: X ? "inherit" : "hidden"
       },
       "aria-hidden": !X,
       children: [(0, r.jsx)(a.ua7, {
-        text: el ? R.NW.string(R.t["04MTGR"]) : null,
+        text: el ? _.NW.string(_.t["04MTGR"]) : null,
         tooltipContentClassName: Z.rewardTileExpirationTooltip,
         shouldShow: el,
         children: e => (0, r.jsxs)("div", M(I({
@@ -199,11 +199,11 @@ let W = e => {
       }), (0, r.jsxs)("div", {
         className: o()(Z.gridText, Z.taskDetails),
         children: [(0, r.jsx)(a.Text, {
-          variant: D(n, i, B),
+          variant: L(n, i, B),
           className: Z.taskInstructions,
-          children: g ? R.NW.formatToPlainString(R.t["ge+AJi"], {
+          children: g ? _.NW.formatToPlainString(_.t["ge+AJi"], {
             questName: t.config.messages.questName
-          }) : Y
+          }) : K
         }), ee ? (0, r.jsx)(N.Z, {
           textColor: "text-muted",
           quest: t,
@@ -233,17 +233,17 @@ let W = e => {
                   idx: null === (s = l.userStatus) || void 0 === s ? void 0 : s.claimedTier
                 }) : null,
                 t = null !== (i = null == e ? void 0 : e.messages.nameWithArticle) && void 0 !== i ? i : null;
-              return null != t ? R.NW.formatToPlainString(R.t.RrxtPT, {
+              return null != t ? _.NW.formatToPlainString(_.t.RrxtPT, {
                 reward: t,
                 date: C
-              }) : R.NW.formatToPlainString(R.t.zNoqRU, {
+              }) : _.NW.formatToPlainString(_.t.zNoqRU, {
                 reward: T,
                 date: C
               })
             }
-            if (h) return b ? R.NW.formatToPlainString(R.t.l1jCMz, {
+            if (h) return b ? _.NW.formatToPlainString(_.t.l1jCMz, {
               date: C
-            }) : R.NW.formatToPlainString(R.t.zNoqRU, {
+            }) : _.NW.formatToPlainString(_.t.zNoqRU, {
               reward: T,
               date: C
             });
@@ -251,16 +251,16 @@ let W = e => {
               quest: l,
               idx: 0
             }) : null;
-            return c ? R.NW.formatToPlainString(R.t.DT3aub, {
+            return c ? _.NW.formatToPlainString(_.t.DT3aub, {
               reward: null !== (o = null == q ? void 0 : q.messages.nameWithArticle) && void 0 !== o ? o : T
-            }) : null != q && null != q.approximateCount ? R.NW.format(R.t["4bMK19"], {
+            }) : null != q && null != q.approximateCount ? _.NW.format(_.t["4bMK19"], {
               maxReward: q.messages.nameWithArticle,
               maxRewardCount: (0, m.Bs)(q.approximateCount, a),
-              helpCenterLink: d.Z.getArticleURL(_.BhN.QUESTS_LEARN_MORE)
-            }) : O ? g : null != y ? R.NW.formatToPlainString(R.t.Pu5eyM, {
+              helpCenterLink: d.Z.getArticleURL(R.BhN.QUESTS_LEARN_MORE)
+            }) : O ? g : null != y ? _.NW.formatToPlainString(_.t.Pu5eyM, {
               reward: T,
               duration: y
-            }) : null != S ? S.description : R.NW.formatToPlainString(R.t.ttFsLi, {
+            }) : null != S ? S.description : _.NW.formatToPlainString(_.t.ttFsLi, {
               reward: T
             })
           }({
@@ -274,7 +274,7 @@ let W = e => {
         })]
       }), (0, r.jsxs)("div", {
         className: o()(Z.ctaButtonContainer, Z.gridCtaButtons),
-        children: [!H && (0, r.jsx)(L, {
+        children: [!H && (0, r.jsx)(D, {
           containerSize: i,
           onClick: () => {
             (0, O.navigateToQuestHome)({
@@ -287,7 +287,7 @@ let W = e => {
               questContentCTA: p.jZ.LEARN_MORE
             })
           },
-          children: R.NW.string(R.t.LLLLPD)
+          children: _.NW.string(_.t.LLLLPD)
         }), g && !z ? null : (0, r.jsx)(k, {
           quest: t,
           progressState: Q,
@@ -295,7 +295,7 @@ let W = e => {
           location: n,
           inGiftInventory: H
         })]
-      }), K && (0, r.jsx)(T.Z, {
+      }), Y && (0, r.jsx)(T.Z, {
         className: Z.gridProgressBar,
         color: z ? a.TVs.colors.TEXT_POSITIVE : a.TVs.colors.BG_BRAND,
         quest: t,

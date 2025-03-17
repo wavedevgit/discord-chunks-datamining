@@ -5,34 +5,34 @@ n.d(t, {
 var r = n(200651),
   i = n(570140),
   l = n(765250),
-  o = n(317770),
-  a = n(663993),
+  a = n(317770),
+  o = n(663993),
   s = n(355863),
   c = n(788983),
   u = n(981631),
   d = n(757744);
 n(570416);
-let p = (0, a.Un)({
+let p = (0, o.Un)({
     createPromise: () => n.e("80960").then(n.bind(n, 223455)),
     webpackId: 223455,
     name: "PopoutWindowChannelCall"
   }),
-  h = (0, a.Un)({
+  h = (0, o.Un)({
     createPromise: () => n.e("20176").then(n.bind(n, 432472)),
     webpackId: 432472,
     name: "PopoutWindowStageChannelCall"
   }),
-  f = (0, a.Un)({
+  f = (0, o.Un)({
     createPromise: () => n.e("80960").then(n.bind(n, 945778)),
     webpackId: 945778,
     name: "PopoutWindowRTCDebug"
   }),
-  g = (0, a.Un)({
+  g = (0, o.Un)({
     createPromise: () => Promise.all([n.e("28543"), n.e("50751"), n.e("27278")]).then(n.bind(n, 748623)),
     webpackId: 748623,
     name: "PopoutWindowActivity"
   });
-class m extends o.Z {
+class m extends a.Z {
   _initialize() {
     i.Z.subscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), i.Z.subscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), i.Z.subscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), this.initializeStyleSheetObserver()
   }

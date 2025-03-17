@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(252258),
   i = n(570140),
   l = n(728345),
-  o = n(812206),
-  a = n(914946),
+  a = n(812206),
+  o = n(914946),
   s = n(973616),
   c = n(314897),
   u = n(19780),
@@ -24,7 +24,7 @@ async function g(e) {
   } = e, g = h.ZP.getCurrentEmbeddedActivity();
   if ((null == g ? void 0 : g.applicationId) !== r) return;
   let _ = g.compositeInstanceId,
-    E = null !== (t = o.Z.getApplication(r)) && void 0 !== t ? t : s.ZP.createFromServer(await l.ZP.fetchApplication(r));
+    E = null !== (t = a.Z.getApplication(r)) && void 0 !== t ? t : s.ZP.createFromServer(await l.ZP.fetchApplication(r));
   if (!(0, p.Kb)(E) || null == _ || null == E || !(0, d.yE)(E.flags, f.udG.EMBEDDED)) return;
   let O = {
       type: 0,
@@ -43,7 +43,7 @@ async function g(e) {
         embedded_activity_instance_id: _
       }
     },
-    N = (0, a.S5)(O, !0);
+    N = (0, o.S5)(O, !0);
   N > 0 && (O.flags = m({
     flags: N,
     embeddedActivity: g

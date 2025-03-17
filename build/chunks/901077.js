@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(981631);
 
@@ -35,34 +35,34 @@ function l(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let o = "<removed>";
+let a = "<removed>";
 
-function a(e) {
+function o(e) {
   var t, n;
-  let a = i({}, e);
-  return "object" == typeof(t = a).args && "string" == typeof t.cmd && (a = function(e) {
+  let o = i({}, e);
+  return "object" == typeof(t = o).args && "string" == typeof t.cmd && (o = function(e) {
     switch (e.cmd) {
       case r.Etm.AUTHENTICATE:
       case r.Etm.GET_PROVIDER_ACCESS_TOKEN:
         return l(i({}, e), {
           args: l(i({}, e.args), {
-            access_token: o
+            access_token: a
           })
         });
       default:
         return i({}, e)
     }
-  }(a)), "object" == typeof(n = a).data && "string" == typeof n.cmd && (a = function(e) {
+  }(o)), "object" == typeof(n = o).data && "string" == typeof n.cmd && (o = function(e) {
     switch (e.cmd) {
       case r.Etm.AUTHENTICATE:
       case r.Etm.GET_PROVIDER_ACCESS_TOKEN:
         return l(i({}, e), {
           data: l(i({}, e.data), {
-            access_token: o
+            access_token: a
           })
         });
       default:
         return i({}, e)
     }
-  }(a)), a
+  }(o)), o
 }

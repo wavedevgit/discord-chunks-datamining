@@ -9,9 +9,9 @@ var i = r(990547);
 r(804098);
 var n = r(544891),
   l = r(729345),
-  a = r(210887);
+  o = r(210887);
 r(358085);
-var o = r(573261),
+var a = r(573261),
   s = r(981631),
   c = r(388032);
 async function u() {
@@ -62,7 +62,7 @@ async function h(e, t, r) {
     value: "".concat(t.overridePlatformInformation)
   }, {
     name: "theme",
-    value: a.Z.theme
+    value: o.Z.theme
   }];
   "" !== e.description && u.push({
     name: "description",
@@ -106,7 +106,7 @@ async function h(e, t, r) {
     value: t.locale
   })), (0, l.E)(s.GU0.WEB_APP);
   try {
-    return await o.Z.post({
+    return await a.Z.post({
       url: s.ANM.BUG_REPORTS,
       attachments: r,
       fields: u,

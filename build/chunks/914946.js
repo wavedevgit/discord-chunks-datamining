@@ -8,20 +8,20 @@ n.d(t, {
   YK: () => er,
   YS: () => et,
   _J: () => Y,
-  _f: () => ea,
+  _f: () => eo,
   aE: () => z,
-  bu: () => eo,
+  bu: () => ea,
   kb: () => K,
   s9: () => q,
   t9: () => $,
   tr: () => ei,
   vv: () => en,
-  zM: () => X,
-  zy: () => Q
+  zM: () => Q,
+  zy: () => X
 }), n(301563), n(474991), n(398202), n(47120), n(653041), n(411104), n(757143), n(789020), n(230036), n(392711);
 var r, i, l = n(729594),
-  o = n(243814),
-  a = n(544891),
+  a = n(243814),
+  o = n(544891),
   s = n(63023),
   c = n(433517),
   u = n(904245),
@@ -166,8 +166,8 @@ function z(e, t, n) {
     mute: r,
     deaf: i,
     selfMute: l,
-    selfDeaf: o,
-    suppress: a,
+    selfDeaf: a,
+    suppress: o,
     userId: s
   } = n, c = I.default.getUser(s);
   if (null == c) throw Error("Invalid user id: ".concat(s));
@@ -180,8 +180,8 @@ function z(e, t, n) {
       mute: r,
       deaf: i,
       self_mute: l,
-      self_deaf: o,
-      suppress: a
+      self_deaf: a,
+      suppress: o
     },
     user: (0, Z.Z)(c)
   }
@@ -220,12 +220,12 @@ function q(e) {
   return window.location.hostname === t && "localhost" === t || null == e.match("staging") && !!(M.test(e) && M.test(n))
 }
 
-function X(e, t, n) {
+function Q(e, t, n) {
   let r = O.Z.getGuild(e.getGuildId());
-  return (null != r ? r.getApplicationId() : e.getApplicationId()) === t || n.indexOf(o.x.MESSAGES_READ) > -1
+  return (null != r ? r.getApplicationId() : e.getApplicationId()) === t || n.indexOf(a.x.MESSAGES_READ) > -1
 }
 
-function Q(e) {
+function X(e) {
   switch (e) {
     case L.hes.RTC_CONNECTED:
     case L.hes.RTC_CONNECTING:
@@ -245,9 +245,9 @@ function J(e) {
     } = e,
     l = 0;
   n && (l |= L.xjy.INSTANCE), (null == r ? void 0 : r.join) != null && (l |= L.xjy.JOIN);
-  let o = g.cP.getSetting(),
-    a = g.Ou.getSetting();
-  return t ? (l |= L.xjy.EMBEDDED, o && (l |= L.xjy.PARTY_PRIVACY_FRIENDS), a && (l |= L.xjy.PARTY_PRIVACY_VOICE_CHANNEL)) : ((null == i ? void 0 : i.privacy) === L.RYY.PUBLIC || c.K.get("ACTIVITIES_FORCE_PUBLIC")) && (o && (l |= L.xjy.PARTY_PRIVACY_FRIENDS), a && (l |= L.xjy.PARTY_PRIVACY_VOICE_CHANNEL)), l
+  let a = g.cP.getSetting(),
+    o = g.Ou.getSetting();
+  return t ? (l |= L.xjy.EMBEDDED, a && (l |= L.xjy.PARTY_PRIVACY_FRIENDS), o && (l |= L.xjy.PARTY_PRIVACY_VOICE_CHANNEL)) : ((null == i ? void 0 : i.privacy) === L.RYY.PUBLIC || c.K.get("ACTIVITIES_FORCE_PUBLIC")) && (a && (l |= L.xjy.PARTY_PRIVACY_FRIENDS), o && (l |= L.xjy.PARTY_PRIVACY_VOICE_CHANNEL)), l
 }
 
 function $(e, t, n) {
@@ -255,7 +255,7 @@ function $(e, t, n) {
 }
 
 function ee(e) {
-  return a.tn.get({
+  return o.tn.get({
     url: L.ANM.APPLICATION_RPC(e),
     oldFormErrors: !0,
     retries: 3,
@@ -290,15 +290,15 @@ async function et(e, t, n) {
   let {
     id: i,
     name: l,
-    icon: o,
-    coverImage: a,
+    icon: a,
+    coverImage: o,
     flags: s
   } = r;
   e.application = {
     id: i,
     name: l,
-    icon: o,
-    coverImage: a,
+    icon: a,
+    coverImage: o,
     flags: s
   }
 }
@@ -361,13 +361,13 @@ function el(e, t) {
   }
 }
 
-function eo(e) {
+function ea(e) {
   if (e !== x.He.POST_MESSAGE) throw new A.Z({
     errorCode: L.lTL.INVALID_COMMAND
   }, 'command not available from "'.concat(e, " transport"))
 }
 
-function ea(e) {
+function eo(e) {
   if (null == e.id) throw new A.Z({
     errorCode: L.lTL.INVALID_COMMAND
   }, "Invalid application");

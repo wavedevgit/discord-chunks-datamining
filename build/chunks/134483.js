@@ -31,13 +31,13 @@ var r = n(200651),
   P = n(644646),
   w = n(880199),
   A = n(670638),
-  _ = n(667105),
-  R = n(860151),
+  R = n(667105),
+  _ = n(860151),
   Z = n(341907),
   I = n(46140),
   M = n(981631),
-  D = n(354459),
-  L = n(388032),
+  L = n(354459),
+  D = n(388032),
   k = n(883848);
 
 function W(e) {
@@ -79,14 +79,14 @@ function Q(e) {
     quest: Q,
     previewQuest: B,
     isParticipatingOverride: z
-  } = e, F = (0, f.O5)(), [G, H] = s.useState(!1), V = s.useCallback(() => H(!0), []), X = s.useCallback(() => H(!1), []), K = (0, l.e7)([h.default], () => h.default.getCurrentUser()), Y = (0, l.e7)([p.Z], () => p.Z.getState().theme), J = (0, a.wj)(Y) ? M.BRd.DARK : M.BRd.LIGHT, {
+  } = e, F = (0, f.O5)(), [G, H] = s.useState(!1), V = s.useCallback(() => H(!0), []), X = s.useCallback(() => H(!1), []), Y = (0, l.e7)([h.default], () => h.default.getCurrentUser()), K = (0, l.e7)([p.Z], () => p.Z.getState().theme), J = (0, a.wj)(K) ? M.BRd.DARK : M.BRd.LIGHT, {
     isCurrentUserStreamingQuestApplication: $,
     isQuestInQuestBar: ee
   } = (0, l.cj)([g.Z, u.Z, C.Z], () => {
     var e;
     let t = u.Z.getParticipants(S),
-      n = null != Q && null != K && (e = g.Z, t.some(t => {
-        if (t.type !== D.fO.STREAM || t.user.id !== K.id) return !1;
+      n = null != Q && null != Y && (e = g.Z, t.some(t => {
+        if (t.type !== L.fO.STREAM || t.user.id !== Y.id) return !1;
         let n = (0, m.Um)(t.stream, e);
         return null != n && (0, N._D)(n, Q)
       })),
@@ -95,12 +95,12 @@ function Q(e) {
       isCurrentUserStreamingQuestApplication: n,
       isQuestInQuestBar: (null == r ? void 0 : r.id) === (null == Q ? void 0 : Q.id)
     }
-  }, [S, K, Q]), et = null != Q ? y.r.build(Q.config) : null, en = null == et ? void 0 : et.application.id, er = (0, l.e7)([d.ZP, g.Z], () => {
+  }, [S, Y, Q]), et = null != Q ? y.r.build(Q.config) : null, en = null == et ? void 0 : et.application.id, er = (0, l.e7)([d.ZP, g.Z], () => {
     let e = d.ZP.getRunningGames().map(e => e.id);
     if ((0, N.$H)(Q) && e.includes(en)) return !0;
-    let t = null != K ? g.Z.findActivity(K.id, e => e.type !== M.IIU.CUSTOM_STATUS) : null;
+    let t = null != Y ? g.Z.findActivity(Y.id, e => e.type !== M.IIU.CUSTOM_STATUS) : null;
     return !!(null != t && (0, N.$J)(Q) && (0, N._D)(t, Q))
-  }, [Q, en, K]), es = !0 === z || $ || er, ei = (0, l.e7)([C.Z], () => null != Q && C.Z.isEnrolling(Q.id), [Q]), eo = (0, l.e7)([u.Z], () => ((null == K ? void 0 : K.id) == null ? null : u.Z.getParticipant(S, K.id)) != null, [S, K]), el = (0, v.B6)(null == Q ? void 0 : Q.config.expiresAt), ea = (0, v.B6)(null == et ? void 0 : et.rewardsExpireAt), ec = s.useCallback(() => {
+  }, [Q, en, Y]), es = !0 === z || $ || er, ei = (0, l.e7)([C.Z], () => null != Q && C.Z.isEnrolling(Q.id), [Q]), eo = (0, l.e7)([u.Z], () => ((null == Y ? void 0 : Y.id) == null ? null : u.Z.getParticipant(S, Y.id)) != null, [S, Y]), el = (0, v.B6)(null == Q ? void 0 : Q.config.expiresAt), ea = (0, v.B6)(null == et ? void 0 : et.rewardsExpireAt), ec = s.useCallback(() => {
     (0, j.AH)(Q.id, {
       questContent: b.jn.QUEST_LIVE_STREAM,
       questContentCTA: f.jZ.ACCEPT_QUEST
@@ -123,7 +123,7 @@ function Q(e) {
       fromContent: b.jn.QUEST_LIVE_STREAM,
       questId: Q.id
     })
-  }, [Q, F]), em = (0, _.hf)({
+  }, [Q, F]), em = (0, R.hf)({
     quest: Q,
     location: b.jn.QUEST_LIVE_STREAM
   }), ep = s.useMemo(() => (0, E.T)({
@@ -178,7 +178,7 @@ function Q(e) {
               children: es ? (0, N.AV)({
                 quest: Q,
                 taskDetails: eb
-              }) : L.NW.formatToPlainString(L.t.EQa7oq, {
+              }) : D.NW.formatToPlainString(D.t.EQa7oq, {
                 questName: Q.config.messages.questName
               })
             }), (0, r.jsx)(A.r, {
@@ -188,7 +188,7 @@ function Q(e) {
               shouldShowDisclosure: (null === (x = Q.userStatus) || void 0 === x ? void 0 : x.enrolledAt) == null,
               children: e => (0, r.jsx)(c.P3F, U(W({}, e), {
                 className: k.submenuWrapper,
-                "aria-label": L.NW.string(L.t.DEoVWV),
+                "aria-label": D.NW.string(D.t.DEoVWV),
                 children: (0, r.jsx)(c.xhG, {
                   size: "md",
                   color: "currentColor",
@@ -199,14 +199,14 @@ function Q(e) {
           }), (0, r.jsx)(c.Text, {
             color: "header-secondary",
             variant: "text-xs/medium",
-            children: eh ? L.NW.formatToPlainString(L.t.APddvL, {
+            children: eh ? D.NW.formatToPlainString(D.t.APddvL, {
               expirationDate: ea
-            }) : L.NW.formatToPlainString(L.t["pX+fmp"], {
+            }) : D.NW.formatToPlainString(D.t["pX+fmp"], {
               expirationDate: el
             })
           })]
         })]
-      }), eg && !eh && !es && (0, r.jsx)(R.Z, {
+      }), eg && !eh && !es && (0, r.jsx)(_.Z, {
         autoplay: G,
         quest: Q,
         questContent: b.jn.QUEST_LIVE_STREAM,
@@ -221,7 +221,7 @@ function Q(e) {
             fullWidth: !0,
             size: c.zxk.Sizes.SMALL,
             onClick: ed,
-            children: L.NW.string(L.t.LLLLPD)
+            children: D.NW.string(D.t.LLLLPD)
           }), (0, r.jsx)(c.zxk, {
             className: k.cta,
             color: c.zxk.Colors.BRAND,
@@ -229,7 +229,7 @@ function Q(e) {
             onClick: ec,
             size: c.zxk.Sizes.SMALL,
             submitting: ei,
-            children: L.NW.string(L.t.l7E81t)
+            children: D.NW.string(D.t.l7E81t)
           })]
         }), eg && !eh && es && (0, r.jsx)(O.Z, {
           color: c.TVs.colors.BG_BRAND,
@@ -240,7 +240,7 @@ function Q(e) {
           fullWidth: !0,
           onClick: eu,
           size: c.zxk.Sizes.SMALL,
-          children: L.NW.string(L.t.VN1Ajo)
+          children: D.NW.string(D.t.VN1Ajo)
         }), eh && (0, r.jsx)(c.zxk, {
           className: k.cta,
           color: c.zxk.Colors.BRAND,
@@ -249,7 +249,7 @@ function Q(e) {
           size: c.zxk.Sizes.SMALL,
           children: (0, N.xN)(Q.config) ? (0, r.jsx)(w.Z, {
             orbQuantity: (0, N.LM)(Q.config)
-          }) : L.NW.string(L.t.cfY4PD)
+          }) : D.NW.string(D.t.cfY4PD)
         })]
       })]
     })]
@@ -262,13 +262,13 @@ let B = function(e) {
       return null != e.previewQuest ? e.previewQuest : function(e, t, n) {
         for (let o of e) {
           var r, s, i;
-          if (o.type === D.fO.STREAM) {
+          if (o.type === L.fO.STREAM) {
             let e = null !== (s = (0, m.Um)(o.stream, n)) && void 0 !== s ? s : null,
               i = (0, N.ZZ)(t, e);
             if (null != i && (null === (r = i.userStatus) || void 0 === r ? void 0 : r.claimedAt) == null) return i
           }
           for (let r of e)
-            if (!(0, D.I)(r))
+            if (!(0, L.I)(r))
               for (let e of n.getActivities(r.user.id)) {
                 let n = (0, N.ZZ)(t, e);
                 if (null != n && (null === (i = n.userStatus) || void 0 === i ? void 0 : i.claimedAt) == null && ((0, N.Nj)({

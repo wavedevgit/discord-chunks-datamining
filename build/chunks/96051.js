@@ -6,7 +6,7 @@ var r = n(570140),
   i = n(317770),
   l = n(117984);
 
-function o(e) {
+function a(e) {
   let {
     channel: {
       id: t
@@ -14,12 +14,12 @@ function o(e) {
   } = e;
   (0, l.oC)(t)
 }
-class a extends i.Z {
+class o extends i.Z {
   _initialize() {
-    r.Z.subscribe("CHANNEL_DELETE", o)
+    r.Z.subscribe("CHANNEL_DELETE", a)
   }
   _terminate() {
-    r.Z.unsubscribe("CHANNEL_DELETE", o)
+    r.Z.unsubscribe("CHANNEL_DELETE", a)
   }
 }
-let s = new a
+let s = new o

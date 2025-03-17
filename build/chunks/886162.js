@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(990547),
-  o = n(399606),
-  a = n(481060),
+  a = n(399606),
+  o = n(481060),
   s = n(232567),
   c = n(213609),
   u = n(313201),
@@ -18,7 +18,7 @@ var r = n(200651),
 function g(e) {
   let {
     transitionState: t
-  } = e, g = (0, o.e7)([d.Z], () => d.Z.getAction()), [m, b] = i.useState(!1), _ = (0, u.Dt)();
+  } = e, g = (0, a.e7)([d.Z], () => d.Z.getAction()), [m, b] = i.useState(!1), _ = (0, u.Dt)();
   async function E() {
     return b(!0), g === p.c2C.AGREEMENTS && b(await (0, s.Lr)()), null
   }
@@ -28,19 +28,19 @@ function g(e) {
     properties: {
       required_action: g
     }
-  }, {}, []), (0, r.jsxs)(a.Y0X, {
+  }, {}, []), (0, r.jsxs)(o.Y0X, {
     "aria-labelledby": _,
     transitionState: t,
     children: [(0, r.jsx)("div", {
       id: _
-    }), (0, r.jsx)(a.xBx, {
+    }), (0, r.jsx)(o.xBx, {
       separator: !1,
-      children: (0, r.jsx)(a.X6q, {
+      children: (0, r.jsx)(o.X6q, {
         variant: "heading-lg/semibold",
         children: h.NW.string(h.t["7glvXl"])
       })
-    }), (0, r.jsxs)(a.hzk, {
-      children: [(0, r.jsx)(a.Text, {
+    }), (0, r.jsxs)(o.hzk, {
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         children: g === p.c2C.AGREEMENTS ? h.NW.format(h.t.zHolhY, {}) : null
       }), (0, r.jsxs)("div", {
@@ -69,16 +69,16 @@ function g(e) {
           alt: "",
           src: n(146714)
         })]
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         className: f.agreementDescription,
         children: h.NW.string(h.t["+USXQE"])
       })]
-    }), (0, r.jsx)(a.mzw, {
-      children: (0, r.jsx)(a.zxk, {
+    }), (0, r.jsx)(o.mzw, {
+      children: (0, r.jsx)(o.zxk, {
         submitting: m,
         onClick: E,
-        color: a.zxk.Colors.GREEN,
+        color: o.zxk.Colors.GREEN,
         children: h.NW.string(h.t["+TBKLy"])
       })
     })]

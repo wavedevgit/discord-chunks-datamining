@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(442837),
-  o = n(481060),
-  a = n(239091),
+  a = n(481060),
+  o = n(239091),
   s = n(585237),
   c = n(551428),
   u = n(388032);
@@ -33,8 +33,8 @@ class h extends i.PureComponent {
       {
         storeListings: i,
         primaryStoreListing: l,
-        skuId: o,
-        onStoreListingSelect: a,
+        skuId: a,
+        onStoreListingSelect: o,
         currentStoreListingId: c
       } = n,
       p = function(e, t) {
@@ -88,22 +88,22 @@ class h extends i.PureComponent {
         onStoreListingSelect: t,
         currentStoreListingId: n,
         onMenuSelect: i
-      } = this.props, l = e.map(e => e.id !== n ? (0, r.jsx)(o.sNh, {
+      } = this.props, l = e.map(e => e.id !== n ? (0, r.jsx)(a.sNh, {
         id: "".concat(e.id),
         label: e.id,
         action: () => {
-          a.Zy(), null == t || t(e)
+          o.Zy(), null == t || t(e)
         }
       }) : null);
-      return (0, r.jsx)(o.v2r, {
+      return (0, r.jsx)(a.v2r, {
         onSelect: i,
         navId: "test-store-listing",
         "aria-label": u.NW.string(u.t.ogxXGh),
-        onClose: a.Zy,
+        onClose: o.Zy,
         children: l
       })
     }), d(this, "handleContextMenu", e => {
-      e.stopPropagation(), a.vq(e, this.renderContextMenu)
+      e.stopPropagation(), o.vq(e, this.renderContextMenu)
     })
   }
 }

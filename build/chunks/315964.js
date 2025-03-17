@@ -1,11 +1,11 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(570140),
   i = n(142497),
   l = n(190378);
-let o = {
+let a = {
   init() {
     r.Z.subscribe("VOICE_CHANNEL_SELECT", e => {
       let {

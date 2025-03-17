@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120);
 var r, i = n(200651),
   l = n(192379),
-  o = n(392711),
-  a = n.n(o),
+  a = n(392711),
+  o = n.n(a),
   s = n(302221),
   c = n(157120);
 
@@ -23,7 +23,7 @@ class d extends(r = l.PureComponent) {
       maxValue: n,
       data: r,
       animate: i
-    } = this.props, l = null == e || e.data !== t.data && !a().isEqual(e.data, t.data);
+    } = this.props, l = null == e || e.data !== t.data && !o().isEqual(e.data, t.data);
     if (l && (this.dataChangedAt = performance.now(), this.maxValue = null != n ? n : Math.max(...r)), l || null == e || !e.animate && i || e.color !== this.props.color) {
       let e = s.oo(this.props.color);
       this.fillColor = "rgba(".concat(e.r, ", ").concat(e.g, ", ").concat(e.b, ", 0.5)"), window.cancelAnimationFrame(this.animationFrameRequestId), this.animationFrameRequestId = window.requestAnimationFrame(this.updateAnimation)
@@ -62,8 +62,8 @@ class d extends(r = l.PureComponent) {
       let {
         data: i,
         updateInterval: l,
-        color: o,
-        numUpdatesToShow: a,
+        color: a,
+        numUpdatesToShow: o,
         lineWidth: c,
         animate: u,
         gradientStopColor: d
@@ -72,7 +72,7 @@ class d extends(r = l.PureComponent) {
       let p = Math.max(Math.min((e - this.dataChangedAt) / l, 1), 0),
         h = r.getContext("2d"),
         f = this.maxValue;
-      h.strokeStyle = o, h.lineWidth = c;
+      h.strokeStyle = a, h.lineWidth = c;
       let g = r.height - h.lineWidth,
         m = h.createLinearGradient(0, 0, 0, g);
       if (null != d) m.addColorStop(0, d);
@@ -81,11 +81,11 @@ class d extends(r = l.PureComponent) {
           r: e,
           g: t,
           b: n
-        } = s.oo(o);
+        } = s.oo(a);
         m.addColorStop(0, "rgba(".concat(e, ", ").concat(t, ", ").concat(n, ", 0)"))
       }
       m.addColorStop(1, this.fillColor), h.fillStyle = m;
-      let b = i.length >= a ? a : i.length;
+      let b = i.length >= o ? o : i.length;
       h.setTransform(1, 0, 0, -1, 0, r.height), h.clearRect(0, 0, r.width, r.height), h.translate(0, .5 * h.lineWidth);
       let _ = Math.floor(r.width / (b - 3)),
         E = .5 * _;

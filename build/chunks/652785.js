@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(704215),
   i = n(823385),
   l = n(327689),
-  o = n(421176),
-  a = n(456065),
+  a = n(421176),
+  o = n(456065),
   s = n(683743),
   c = n(823379),
   u = n(981631);
@@ -18,7 +18,7 @@ let d = "lastHiddenChannelNotice",
     dismissibleContentType: r.z.CHANNEL_LIST_CLAN_ADMIN_UPSELL
   }, {
     type: u.vID.GUILD_BOOSTING,
-    store: o.Z,
+    store: a.Z,
     dismissibleContentType: r.z.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION
   }, {
     type: u.vID.GUILD_BANNER,
@@ -30,7 +30,7 @@ let d = "lastHiddenChannelNotice",
     dismissibleContentType: r.z.CHANNEL_NOTICE_INVITE
   }, {
     type: u.vID.HUB_LINK,
-    store: a.Z,
+    store: o.Z,
     dismissibleContentType: r.z.CHANNEL_NOTICE_HUBLINK
   }, {
     type: u.vID.QUICKSWITCHER,

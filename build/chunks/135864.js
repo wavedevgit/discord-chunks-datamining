@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(636977),
+  a = n.n(l),
+  o = n(636977),
   s = n(481060),
   c = n(31569),
   u = n(258971),
@@ -45,7 +45,7 @@ function N(e) {
         return N && h.Z.resetState(), (0, m.transitionToGlobalDiscovery)({
           tab: b.GlobalDiscoveryTab.QUESTS,
           location: _.dr.DISCOVERY_SIDEBAR,
-          questContent: a.j.DISCOVERY_SIDEBAR
+          questContent: o.j.DISCOVERY_SIDEBAR
         });
       case b.GlobalDiscoveryTab.APPS:
         if (!N) return (0, m.transitionToGlobalDiscovery)({
@@ -75,7 +75,7 @@ function N(e) {
   }, [t, N]);
   return (0, r.jsxs)(s.P3F, {
     onClick: v,
-    className: o()(O.navItem, {
+    className: a()(O.navItem, {
       [O.selected]: N
     }),
     children: [(0, r.jsx)("div", {
