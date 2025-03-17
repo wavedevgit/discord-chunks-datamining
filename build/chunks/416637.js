@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  l = n.n(i),
-  o = n(489194);
+  o = n.n(i),
+  l = n(489194);
 
 function a(e) {
   let {
@@ -14,10 +14,10 @@ function a(e) {
     children: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: o.footer,
+    className: l.footer,
     children: [(0, r.jsx)("div", {
-      className: l()(o.gradient, {
-        [o.gradientHidden]: t
+      className: o()(l.gradient, {
+        [l.gradientHidden]: t
       })
     }), n]
   })

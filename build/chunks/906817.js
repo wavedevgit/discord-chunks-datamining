@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  l = n(481060),
-  o = n(997638),
+  o = n(481060),
+  l = n(997638),
   a = n(540059),
   s = n(362658),
   c = n(216306),
@@ -24,15 +24,15 @@ function b(e) {
 }
 
 function v(e, t, n, r, i) {
-  let l = r && "compact" === i ? 8 : h.$k;
-  if (e === d.wZ) return l;
-  if (e === d.wd) return t.hasFeature(f.oNc.HUB) ? 0 : l;
+  let o = r && "compact" === i ? 8 : h.$k;
+  if (e === d.wZ) return o;
+  if (e === d.wd) return t.hasFeature(f.oNc.HUB) ? 0 : o;
   if (e === n.voiceChannelsSectionNumber) {
-    var o;
+    var l;
     let t = n.getCategoryFromSection(e);
     if (null == t || t.isEmpty()) return 0;
     if (t.isCollapsed) return h.Pw + b(r);
-    let i = null === (o = n.getChannelFromSectionRow(e, 0)) || void 0 === o ? void 0 : o.channel;
+    let i = null === (l = n.getChannelFromSectionRow(e, 0)) || void 0 === l ? void 0 : l.channel;
     return null == i || i.record.type === f.d4z.GUILD_CATEGORY ? b(r) : 16 + b(r)
   }
   return r && "compact" === i ? 32 : h.Pw
@@ -75,7 +75,7 @@ let _ = i.memo(function(e) {
     null != y && r.includes(y) && (t = (0, c.KY)(b)), (0, c.Uo)(n.id, r, t)
   }, [n.id, y, b, v]), C = (0, a.Q3)("ChannelListSection"), {
     density: x
-  } = (0, l.TCT)(), S = C && "compact" === x ? 8 : h.$k;
+  } = (0, o.TCT)(), S = C && "compact" === x ? 8 : h.$k;
   switch (t) {
     case d.wZ:
       return (0, r.jsx)("div", {
@@ -122,7 +122,7 @@ let _ = i.memo(function(e) {
         disableManageChannels: _,
         children: (0, r.jsx)(u.Z, {
           inlineSpecs: h.MF,
-          arrowAlignment: o.cy.TOP,
+          arrowAlignment: l.cy.TOP,
           tutorialId: "organize-by-topic",
           position: "right"
         })

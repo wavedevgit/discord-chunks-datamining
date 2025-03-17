@@ -61,7 +61,7 @@ let Z = (0, s.Z)(function(e) {
           return null
       }
     },
-    R = (0, g.VO)().filter(e => {
+    M = (0, g.VO)().filter(e => {
       let {
         section: t
       } = e;
@@ -75,7 +75,7 @@ let Z = (0, s.Z)(function(e) {
       "aria-label": x.NW.string(x.t.opYYHh),
       onSelect: r,
       onInteraction: s,
-      children: [R.map(e => {
+      children: [M.map(e => {
         var t, r;
         let {
           section: i,

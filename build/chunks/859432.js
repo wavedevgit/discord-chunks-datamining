@@ -20,22 +20,22 @@ var i = n(200651),
   j = n(294978),
   h = n(513102),
   N = n(976192),
-  _ = n(887904),
-  I = n(429824),
+  I = n(887904),
+  _ = n(429824),
   D = n(466330),
   P = n(191471),
   v = n(162157),
-  S = n(623624),
-  E = n(894059),
-  x = n(434404),
-  w = n(978946),
-  m = n(41776),
+  E = n(623624),
+  x = n(894059),
+  S = n(434404),
+  m = n(978946),
+  w = n(41776),
   Z = n(837949),
   A = n(11352),
   G = n(703656),
   T = n(271383),
-  C = n(496675),
-  k = n(9156),
+  k = n(496675),
+  C = n(9156),
   U = n(594174),
   L = n(709586),
   R = n(626135),
@@ -92,21 +92,21 @@ let V = r.memo(function(e) {
       guild_id: t.id
     })
   });
-  let q = (0, o.e7)([k.ZP], () => k.ZP.isGuildCollapsed(t.id), [t.id]),
+  let q = (0, o.e7)([C.ZP], () => C.ZP.isGuildCollapsed(t.id), [t.id]),
     {
       canAccessSettings: J,
       canManageChannels: z,
       showGuildAnalytics: K
-    } = (0, o.cj)([C.Z], () => ({
-      canAccessSettings: C.Z.canAccessGuildSettings(t),
-      canManageChannels: C.Z.can(W.Plq.MANAGE_CHANNELS, t),
-      showGuildAnalytics: C.Z.can(W.Plq.VIEW_GUILD_ANALYTICS, t) && t.hasFeature(W.oNc.COMMUNITY)
+    } = (0, o.cj)([k.Z], () => ({
+      canAccessSettings: k.Z.canAccessGuildSettings(t),
+      canManageChannels: k.Z.can(W.Plq.MANAGE_CHANNELS, t),
+      showGuildAnalytics: k.Z.can(W.Plq.VIEW_GUILD_ANALYTICS, t) && t.hasFeature(W.oNc.COMMUNITY)
     }), [t]),
     X = (0, v.N8)(t),
     $ = t.isOwner(V),
-    ee = (0, o.e7)([m.Z], () => m.Z.isLurking(t.id), [t.id]),
+    ee = (0, o.e7)([w.Z], () => w.Z.isLurking(t.id), [t.id]),
     et = (0, o.e7)([T.ZP], () => T.ZP.isCurrentUserGuest(t.id)),
-    en = (0, E.Z)(t.id, !0),
+    en = (0, x.Z)(t.id, !0),
     ei = (0, f.ZP)(t),
     er = (0, D.Z)({
       source: W.t4x.GUILD_HEADER,
@@ -126,8 +126,8 @@ let V = r.memo(function(e) {
     ec = (0, Z.Z)(t.id),
     es = (0, j.Z)(t),
     ed = (0, h.Z)(t),
-    eu = (0, I.Z)(t, !0),
-    eb = (0, _.Z)(t),
+    eu = (0, _.Z)(t, !0),
+    eb = (0, I.Z)(t),
     {
       isFavoritesPerk: eg
     } = (0, y.z)("GuildHeaderPopout"),
@@ -165,7 +165,7 @@ let V = r.memo(function(e) {
       label: B.NW.string(B.t.J2TBi4),
       icon: s.PBZ,
       action: () => {
-        x.Z.leaveGuild(t.id), et || (0, G.uL)(W.Z5c.GUILD_DISCOVERY)
+        S.Z.leaveGuild(t.id), et || (0, G.uL)(W.Z5c.GUILD_DISCOVERY)
       }
     })
   }) : eo ? (0, i.jsxs)(s.v2r, {
@@ -217,7 +217,7 @@ let V = r.memo(function(e) {
         label: B.NW.string(B.t["154/bG"]),
         icon: s.ewm,
         action: () => {
-          x.Z.open(t.id, (0, w.r)(t.id))
+          S.Z.open(t.id, (0, m.r)(t.id))
         }
       }) : null, er, (0, i.jsx)(s.sNh, {
         id: "privacy",
@@ -253,7 +253,7 @@ let V = r.memo(function(e) {
         label: B.NW.string(B.t.VJEVbm),
         icon: (0, s.GSL)(L.Z),
         action: () => {
-          (0, S.f)({
+          (0, E.f)({
             guildId: t.id,
             location: {
               section: W.jXE.GUILD_HEADER_POPOUT
@@ -281,13 +281,13 @@ let V = r.memo(function(e) {
         label: B.NW.string(B.t["154/bG"]),
         icon: s.ewm,
         action: () => {
-          x.Z.open(t.id, (0, w.r)(t.id))
+          S.Z.open(t.id, (0, m.r)(t.id))
         }
       }) : null, K ? (0, i.jsx)(s.sNh, {
         id: "insights",
         label: B.NW.string(B.t["0wWfUF"]),
         icon: s.IeX,
-        action: () => x.Z.open(t.id, W.pNK.ANALYTICS)
+        action: () => S.Z.open(t.id, W.pNK.ANALYTICS)
       }) : null, z ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(s.sNh, {
           id: "create-channel",

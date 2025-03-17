@@ -134,7 +134,7 @@ function S(e) {
     theme: h.BRd.DARKER
   }, () => g.darkerIcon).with({
     theme: h.BRd.MIDNIGHT
-  }, () => g.midnightIcon).otherwise(() => g.darkIcon), y = (0, a.EQ)(t).with(h.BRd.LIGHT, () => m.NW.string(m.t.K2sFfn)).with(h.BRd.DARK, () => b ? m.NW.string(m.t.GEaO9P) : m.NW.string(m.t.b8Cei4)).with(h.BRd.DARKER, () => m.NW.string(m.t.b8Cei4)).with(h.BRd.MIDNIGHT, () => m.NW.string(m.t.pQwSpa)).with("system", () => m.NW.string(m.t["7rOU6u"])).exhaustive(), O = (0, u.bWb)().enabled;
+  }, () => g.midnightIcon).otherwise(() => g.darkIcon), y = (0, a.EQ)(t).with(h.BRd.LIGHT, () => m.NW.string(m.t.K2sFfn)).with(h.BRd.DARK, () => b ? m.NW.string(m.t.SMPT1t) : m.NW.string(m.t.b8Cei4)).with(h.BRd.DARKER, () => m.NW.string(m.t.b8Cei4)).with(h.BRd.MIDNIGHT, () => m.NW.string(m.t.Do4ZJy)).with("system", () => m.NW.string(m.t["7rOU6u"])).exhaustive(), O = (0, u.bWb)().enabled;
   return (0, r.jsx)(I, {
     onSelect: i,
     isSelected: n,

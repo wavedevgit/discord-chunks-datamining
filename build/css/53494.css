@@ -1,6 +1,6 @@
 /**
   Module ID: 53494
-  Original File Name: 98f56def0ef00bdd
+  Original File Name: c17c6ff39dc8cc06
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -5148,17 +5148,17 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     background: var(--green-330)
 }
 
-.theme-dark .experimentButton_e131a9.buttonColor_e131a9.buttonActive_e131a9,.theme-dark .experimentButton_e131a9 .buttonColor_e131a9.buttonActive_e131a9 {
+.theme-dark .experimentButton_e131a9.buttonColor_e131a9.buttonActive_e131a9,.theme-dark .experimentButton_e131a9 .buttonColor_e131a9.buttonActive_e131a9,.theme-dark.custom-theme-background .experimentButton_e131a9.buttonColor_e131a9.buttonActive_e131a9,.theme-dark.custom-theme-background .experimentButton_e131a9 .buttonColor_e131a9.buttonActive_e131a9 {
     background-color: hsl(var(--green-400-hsl)/.1);
     color: var(--green-300);
     border: 1px solid hsl(var(--green-400-hsl)/.1)
 }
 
-.theme-dark .experimentButton_e131a9.buttonColor_e131a9.buttonActive_e131a9:hover,.theme-dark .experimentButton_e131a9 .buttonColor_e131a9.buttonActive_e131a9:hover {
+.theme-dark .experimentButton_e131a9.buttonColor_e131a9.buttonActive_e131a9:hover,.theme-dark .experimentButton_e131a9 .buttonColor_e131a9.buttonActive_e131a9:hover,.theme-dark.custom-theme-background .experimentButton_e131a9.buttonColor_e131a9.buttonActive_e131a9:hover,.theme-dark.custom-theme-background .experimentButton_e131a9 .buttonColor_e131a9.buttonActive_e131a9:hover {
     background-color: hsl(var(--green-400-hsl)/.2)
 }
 
-.theme-dark .experimentButton_e131a9.buttonColor_e131a9.buttonActive_e131a9:active,.theme-dark .experimentButton_e131a9 .buttonColor_e131a9.buttonActive_e131a9:active {
+.theme-dark .experimentButton_e131a9.buttonColor_e131a9.buttonActive_e131a9:active,.theme-dark .experimentButton_e131a9 .buttonColor_e131a9.buttonActive_e131a9:active,.theme-dark.custom-theme-background .experimentButton_e131a9.buttonColor_e131a9.buttonActive_e131a9:active,.theme-dark.custom-theme-background .experimentButton_e131a9 .buttonColor_e131a9.buttonActive_e131a9:active {
     background-color: hsl(var(--green-400-hsl)/.3)
 }
 
@@ -5183,17 +5183,17 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     background: var(--green-330)
 }
 
-.theme-light .experimentButton_e131a9.buttonColor_e131a9.buttonActive_e131a9,.theme-light .experimentButton_e131a9 .buttonColor_e131a9.buttonActive_e131a9 {
+.theme-light .experimentButton_e131a9.buttonColor_e131a9.buttonActive_e131a9,.theme-light .experimentButton_e131a9 .buttonColor_e131a9.buttonActive_e131a9,.theme-light.custom-theme-background .experimentButton_e131a9.buttonColor_e131a9.buttonActive_e131a9,.theme-light.custom-theme-background .experimentButton_e131a9 .buttonColor_e131a9.buttonActive_e131a9 {
     background-color: hsl(var(--green-300-hsl)/.1);
     color: var(--green-400);
     border: 1px solid hsl(var(--green-300-hsl)/.1)
 }
 
-.theme-light .experimentButton_e131a9.buttonColor_e131a9.buttonActive_e131a9:hover,.theme-light .experimentButton_e131a9 .buttonColor_e131a9.buttonActive_e131a9:hover {
+.theme-light .experimentButton_e131a9.buttonColor_e131a9.buttonActive_e131a9:hover,.theme-light .experimentButton_e131a9 .buttonColor_e131a9.buttonActive_e131a9:hover,.theme-light.custom-theme-background .experimentButton_e131a9.buttonColor_e131a9.buttonActive_e131a9:hover,.theme-light.custom-theme-background .experimentButton_e131a9 .buttonColor_e131a9.buttonActive_e131a9:hover {
     background-color: hsl(var(--green-300-hsl)/.2)
 }
 
-.theme-light .experimentButton_e131a9.buttonColor_e131a9.buttonActive_e131a9:active,.theme-light .experimentButton_e131a9 .buttonColor_e131a9.buttonActive_e131a9:active {
+.theme-light .experimentButton_e131a9.buttonColor_e131a9.buttonActive_e131a9:active,.theme-light .experimentButton_e131a9 .buttonColor_e131a9.buttonActive_e131a9:active,.theme-light.custom-theme-background .experimentButton_e131a9.buttonColor_e131a9.buttonActive_e131a9:active,.theme-light.custom-theme-background .experimentButton_e131a9 .buttonColor_e131a9.buttonActive_e131a9:active {
     background-color: hsl(var(--green-300-hsl)/.3)
 }
 
@@ -5311,4 +5311,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=98f56def0ef00bdd.css.map*/
+/*# sourceMappingURL=c17c6ff39dc8cc06.css.map*/

@@ -1,6 +1,6 @@
 /** Chunk was on 37709 **/
 n.d(t, {
-  Z: () => P
+  Z: () => y
 });
 var r = n(200651),
   l = n(192379),
@@ -13,18 +13,17 @@ var r = n(200651),
   u = n(768762),
   m = n(626135),
   h = n(823379),
-  p = n(806223),
   x = n(45966),
-  f = n(637853),
-  g = n(968644),
-  j = n(104265),
-  v = n(588632),
-  N = n(290511),
-  b = n(981631),
+  p = n(637853),
+  f = n(968644),
+  g = n(104265),
+  j = n(588632),
+  v = n(290511),
+  N = n(981631),
   _ = n(388032),
-  C = n(607639);
+  b = n(607639);
 
-function O(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +42,7 @@ function O(e) {
   return e
 }
 
-function E(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,22 +55,18 @@ function E(e, t) {
   }), e
 }
 
-function I(e, t) {
+function E(e, t) {
   return (0, r.jsx)("span", {
-    className: C.helpTextItem,
+    className: b.helpTextItem,
     children: e
   }, t)
 }
 
-function k(e, t) {
-  return !(e.hasFeature(b.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && e.hasFeature(b.oNc.MEMBER_VERIFICATION_GATE_ENABLED)) && null != t && p.Z.getCurrentConfig({
-    location: "ba216b_1"
-  }, {
-    autoTrackExposure: !0
-  }).includeRules
+function I(e, t) {
+  return !(e.hasFeature(N.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && e.hasFeature(N.oNc.MEMBER_VERIFICATION_GATE_ENABLED)) && null != t
 }
 
-function Z(e) {
+function k(e) {
   let {
     headerId: t,
     guild: n,
@@ -81,28 +76,28 @@ function Z(e) {
     currentPrompt: c,
     selectOption: m,
     gotoPrevPrompt: h,
-    gotoNextPrompt: p,
-    completeOnboarding: j
-  } = e, N = (0, o.Wu)([x.Z], () => x.Z.getOnboardingResponsesForPrompt(n.id, c.id)), b = 0 === N.length && (null == c ? void 0 : c.required), E = null == c ? void 0 : c.options.filter(e => N.includes(e.id)), k = (0, f.L6)(E), Z = (0, f.dX)(E), y = 0 === N.length, {
+    gotoNextPrompt: g,
+    completeOnboarding: v
+  } = e, N = (0, o.Wu)([x.Z], () => x.Z.getOnboardingResponsesForPrompt(n.id, c.id)), O = 0 === N.length && (null == c ? void 0 : c.required), I = null == c ? void 0 : c.options.filter(e => N.includes(e.id)), k = (0, p.L6)(I), Z = (0, p.dX)(I), y = 0 === N.length, {
     helpText: P,
     helpTextAdditional: w
-  } = (0, g.Z)({
+  } = (0, f.Z)({
     guild: n,
     prompt: c,
     selectedRoleIds: k,
     selectedChannelIds: Z,
-    itemHook: I
-  }), D = (0, d.Z)(n.id, 1e3), T = c.options.map(e => O({
+    itemHook: E
+  }), D = (0, d.Z)(n.id, 1e3), T = c.options.map(e => C({
     value: e.id
   }, e)), R = c.options.filter(e => N.includes(e.id)).map(e => e.id);
   return (0, r.jsx)("div", {
-    className: C.prompt,
+    className: b.prompt,
     children: (0, r.jsxs)("div", {
-      className: C.promptContent,
+      className: b.promptContent,
       children: [(0, r.jsxs)(i.zJl, {
-        className: C.scrollerContent,
+        className: b.scrollerContent,
         children: [(0, r.jsxs)("div", {
-          className: C.questionHeader,
+          className: b.questionHeader,
           children: [(0, r.jsx)(i.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
@@ -113,7 +108,7 @@ function Z(e) {
           }), c.required ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(i.Text, {
               variant: "text-xs/normal",
-              className: C.headerSeparator,
+              className: b.headerSeparator,
               children: "\xb7"
             }), (0, r.jsx)(i.Text, {
               variant: "text-sm/medium",
@@ -122,12 +117,12 @@ function Z(e) {
             })]
           }) : null]
         }), (0, r.jsx)(i.X6q, {
-          className: C.title,
+          className: b.title,
           variant: "heading-xl/semibold",
           color: "header-primary",
           id: t,
           children: c.title
-        }), (0, r.jsx)(v.Z, {
+        }), (0, r.jsx)(j.Z, {
           options: T,
           value: R,
           onChange: e => {
@@ -144,57 +139,184 @@ function Z(e) {
           memberCounts: D
         })]
       }), (0, r.jsxs)("div", {
-        className: C.navButtons,
+        className: b.navButtons,
         children: [(0, r.jsx)("div", {
-          className: C.leftButtons,
+          className: b.leftButtons,
           children: l > 0 && (0, r.jsxs)(i.zxk, {
-            className: C.button,
-            innerClassName: C.buttonInner,
+            className: b.button,
+            innerClassName: b.buttonInner,
             onClick: () => h(N.length),
             size: i.zxk.Sizes.MEDIUM,
             look: i.zxk.Looks.OUTLINED,
             grow: !1,
             color: i.zxk.Colors.PRIMARY,
             children: [(0, r.jsx)(u.Z, {
-              className: C.arrow,
+              className: b.arrow,
               direction: u.Z.Directions.LEFT
             }), _.NW.string(_.t["13/7kZ"])]
           })
         }), (0, r.jsxs)("div", {
-          className: C.rightButtons,
+          className: b.rightButtons,
           children: [(0, r.jsxs)(i.Text, {
-            className: C.helpText,
+            className: b.helpText,
             variant: "text-xs/normal",
             color: "text-muted",
             children: [P, " ", w]
           }), (0, r.jsx)(i.ua7, {
-            text: b ? _.NW.string(_.t.dA1dSU) : null,
+            text: O ? _.NW.string(_.t.dA1dSU) : null,
             children: e => {
               let {
                 onMouseEnter: t,
                 onMouseLeave: n
               } = e;
               return (0, r.jsx)(i.zxk, {
-                className: C.button,
-                innerClassName: C.buttonInner,
+                className: b.button,
+                innerClassName: b.buttonInner,
                 onMouseEnter: t,
                 onMouseLeave: n,
-                onClick: () => s ? j() : p(N.length),
-                disabled: b,
+                onClick: () => s ? v() : g(N.length),
+                disabled: O,
                 size: i.zxk.Sizes.MEDIUM,
                 look: i.zxk.Looks.FILLED,
                 grow: !1,
                 color: y ? i.zxk.Colors.PRIMARY : i.zxk.Colors.BRAND,
                 children: s ? (0, r.jsxs)(r.Fragment, {
                   children: [_.NW.string(_.t["8SuVoK"]), (0, r.jsx)("span", {
-                    className: C.finishEmoji,
+                    className: b.finishEmoji,
                     role: "img",
                     "aria-hidden": !0,
                     children: "\uD83C\uDF89"
                   })]
                 }) : (0, r.jsxs)(r.Fragment, {
                   children: [y ? _.NW.string(_.t["5WxrcX"]) : _.NW.string(_.t.PDTjLC), (0, r.jsx)(u.Z, {
-                    className: C.arrow,
+                    className: b.arrow,
+                    direction: u.Z.Directions.RIGHT
+                  })]
+                })
+              })
+            }
+          })]
+        })]
+      })]
+    })
+  })
+}
+
+function Z(e) {
+  let {
+    headerId: t,
+    guild: n,
+    step: l,
+    lastPrompt: s,
+    questionCount: a,
+    currentPrompt: c,
+    selectOption: d,
+    gotoPrevPrompt: m,
+    gotoNextPrompt: h,
+    completeOnboarding: j
+  } = e, v = (0, o.Wu)([x.Z], () => x.Z.getOnboardingResponsesForPrompt(n.id, c.id)), N = 0 === v.length && (null == c ? void 0 : c.required), C = null == c ? void 0 : c.options.filter(e => v.includes(e.id)), O = (0, p.L6)(C), I = (0, p.dX)(C), k = 0 === v.length, {
+    helpText: Z,
+    helpTextAdditional: y
+  } = (0, f.Z)({
+    guild: n,
+    prompt: c,
+    selectedRoleIds: O,
+    selectedChannelIds: I,
+    itemHook: E
+  });
+  return (0, r.jsx)("div", {
+    className: b.prompt,
+    children: (0, r.jsxs)("div", {
+      className: b.promptContent,
+      children: [(0, r.jsxs)(i.zJl, {
+        className: b.scrollerContent,
+        children: [(0, r.jsxs)("div", {
+          className: b.questionHeader,
+          children: [(0, r.jsx)(i.Text, {
+            variant: "text-sm/medium",
+            color: "text-muted",
+            children: _.NW.format(_.t.isV0NT, {
+              currentQuestion: l + 1,
+              questionCount: a
+            })
+          }), c.required ? (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)(i.Text, {
+              variant: "text-xs/normal",
+              className: b.headerSeparator,
+              children: "\xb7"
+            }), (0, r.jsx)(i.Text, {
+              variant: "text-sm/medium",
+              color: "text-brand",
+              children: _.NW.string(_.t.Ur8Vrq)
+            })]
+          }) : null]
+        }), (0, r.jsx)(i.X6q, {
+          className: b.title,
+          variant: "heading-xl/semibold",
+          color: "header-primary",
+          id: t,
+          children: c.title
+        }), (0, r.jsx)("div", {
+          className: b.promptOptions,
+          children: c.options.map(e => (0, r.jsx)(g.Z, {
+            guildId: n.id,
+            option: e,
+            onSelect: t => d(c.id, e.id, null != t && t),
+            selected: v.includes(e.id)
+          }, e.id))
+        })]
+      }), (0, r.jsxs)("div", {
+        className: b.navButtons,
+        children: [(0, r.jsx)("div", {
+          className: b.leftButtons,
+          children: l > 0 && (0, r.jsxs)(i.zxk, {
+            className: b.button,
+            innerClassName: b.buttonInner,
+            onClick: () => m(v.length),
+            size: i.zxk.Sizes.MEDIUM,
+            look: i.zxk.Looks.OUTLINED,
+            grow: !1,
+            color: i.zxk.Colors.PRIMARY,
+            children: [(0, r.jsx)(u.Z, {
+              className: b.arrow,
+              direction: u.Z.Directions.LEFT
+            }), _.NW.string(_.t["13/7kZ"])]
+          })
+        }), (0, r.jsxs)("div", {
+          className: b.rightButtons,
+          children: [(0, r.jsxs)(i.Text, {
+            className: b.helpText,
+            variant: "text-xs/normal",
+            color: "text-muted",
+            children: [Z, " ", y]
+          }), (0, r.jsx)(i.ua7, {
+            text: N ? _.NW.string(_.t.dA1dSU) : null,
+            children: e => {
+              let {
+                onMouseEnter: t,
+                onMouseLeave: n
+              } = e;
+              return (0, r.jsx)(i.zxk, {
+                className: b.button,
+                innerClassName: b.buttonInner,
+                onMouseEnter: t,
+                onMouseLeave: n,
+                onClick: () => s ? j() : h(v.length),
+                disabled: N,
+                size: i.zxk.Sizes.MEDIUM,
+                look: i.zxk.Looks.FILLED,
+                grow: !1,
+                color: k ? i.zxk.Colors.PRIMARY : i.zxk.Colors.BRAND,
+                children: s ? (0, r.jsxs)(r.Fragment, {
+                  children: [_.NW.string(_.t["8SuVoK"]), (0, r.jsx)("span", {
+                    className: b.finishEmoji,
+                    role: "img",
+                    "aria-hidden": !0,
+                    children: "\uD83C\uDF89"
+                  })]
+                }) : (0, r.jsxs)(r.Fragment, {
+                  children: [k ? _.NW.string(_.t["5WxrcX"]) : _.NW.string(_.t.PDTjLC), (0, r.jsx)(u.Z, {
+                    className: b.arrow,
                     direction: u.Z.Directions.RIGHT
                   })]
                 })
@@ -209,206 +331,79 @@ function Z(e) {
 
 function y(e) {
   let {
-    headerId: t,
-    guild: n,
-    step: l,
-    lastPrompt: s,
-    questionCount: a,
-    currentPrompt: c,
-    selectOption: d,
-    gotoPrevPrompt: m,
-    gotoNextPrompt: h,
-    completeOnboarding: p
-  } = e, v = (0, o.Wu)([x.Z], () => x.Z.getOnboardingResponsesForPrompt(n.id, c.id)), N = 0 === v.length && (null == c ? void 0 : c.required), b = null == c ? void 0 : c.options.filter(e => v.includes(e.id)), O = (0, f.L6)(b), E = (0, f.dX)(b), k = 0 === v.length, {
-    helpText: Z,
-    helpTextAdditional: y
-  } = (0, g.Z)({
-    guild: n,
-    prompt: c,
-    selectedRoleIds: O,
-    selectedChannelIds: E,
-    itemHook: I
-  });
-  return (0, r.jsx)("div", {
-    className: C.prompt,
-    children: (0, r.jsxs)("div", {
-      className: C.promptContent,
-      children: [(0, r.jsxs)(i.zJl, {
-        className: C.scrollerContent,
-        children: [(0, r.jsxs)("div", {
-          className: C.questionHeader,
-          children: [(0, r.jsx)(i.Text, {
-            variant: "text-sm/medium",
-            color: "text-muted",
-            children: _.NW.format(_.t.isV0NT, {
-              currentQuestion: l + 1,
-              questionCount: a
-            })
-          }), c.required ? (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(i.Text, {
-              variant: "text-xs/normal",
-              className: C.headerSeparator,
-              children: "\xb7"
-            }), (0, r.jsx)(i.Text, {
-              variant: "text-sm/medium",
-              color: "text-brand",
-              children: _.NW.string(_.t.Ur8Vrq)
-            })]
-          }) : null]
-        }), (0, r.jsx)(i.X6q, {
-          className: C.title,
-          variant: "heading-xl/semibold",
-          color: "header-primary",
-          id: t,
-          children: c.title
-        }), (0, r.jsx)("div", {
-          className: C.promptOptions,
-          children: c.options.map(e => (0, r.jsx)(j.Z, {
-            guildId: n.id,
-            option: e,
-            onSelect: t => d(c.id, e.id, null != t && t),
-            selected: v.includes(e.id)
-          }, e.id))
-        })]
-      }), (0, r.jsxs)("div", {
-        className: C.navButtons,
-        children: [(0, r.jsx)("div", {
-          className: C.leftButtons,
-          children: l > 0 && (0, r.jsxs)(i.zxk, {
-            className: C.button,
-            innerClassName: C.buttonInner,
-            onClick: () => m(v.length),
-            size: i.zxk.Sizes.MEDIUM,
-            look: i.zxk.Looks.OUTLINED,
-            grow: !1,
-            color: i.zxk.Colors.PRIMARY,
-            children: [(0, r.jsx)(u.Z, {
-              className: C.arrow,
-              direction: u.Z.Directions.LEFT
-            }), _.NW.string(_.t["13/7kZ"])]
-          })
-        }), (0, r.jsxs)("div", {
-          className: C.rightButtons,
-          children: [(0, r.jsxs)(i.Text, {
-            className: C.helpText,
-            variant: "text-xs/normal",
-            color: "text-muted",
-            children: [Z, " ", y]
-          }), (0, r.jsx)(i.ua7, {
-            text: N ? _.NW.string(_.t.dA1dSU) : null,
-            children: e => {
-              let {
-                onMouseEnter: t,
-                onMouseLeave: n
-              } = e;
-              return (0, r.jsx)(i.zxk, {
-                className: C.button,
-                innerClassName: C.buttonInner,
-                onMouseEnter: t,
-                onMouseLeave: n,
-                onClick: () => s ? p() : h(v.length),
-                disabled: N,
-                size: i.zxk.Sizes.MEDIUM,
-                look: i.zxk.Looks.FILLED,
-                grow: !1,
-                color: k ? i.zxk.Colors.PRIMARY : i.zxk.Colors.BRAND,
-                children: s ? (0, r.jsxs)(r.Fragment, {
-                  children: [_.NW.string(_.t["8SuVoK"]), (0, r.jsx)("span", {
-                    className: C.finishEmoji,
-                    role: "img",
-                    "aria-hidden": !0,
-                    children: "\uD83C\uDF89"
-                  })]
-                }) : (0, r.jsxs)(r.Fragment, {
-                  children: [k ? _.NW.string(_.t["5WxrcX"]) : _.NW.string(_.t.PDTjLC), (0, r.jsx)(u.Z, {
-                    className: C.arrow,
-                    direction: u.Z.Directions.RIGHT
-                  })]
-                })
-              })
-            }
-          })]
-        })]
-      })]
-    })
-  })
-}
-
-function P(e) {
-  let {
     guild: t,
     prompts: n,
     step: i,
     selectOption: d,
     completeOnboarding: u,
-    setCurrentStep: p,
-    headerId: x,
+    setCurrentStep: x,
+    headerId: p,
     disableTracking: f
   } = e, g = (0, o.e7)([c.Z], () => c.Z.getRulesPrompt(t.id));
   l.useEffect(() => {
-    t.hasFeature(b.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && !t.hasFeature(b.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && a.ZP.fetchVerificationForm(t.id)
+    t.hasFeature(N.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && !t.hasFeature(N.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && a.ZP.fetchVerificationForm(t.id)
   }, [t]);
   let j = n[i],
-    v = i + 1 >= n.length && !k(t, g),
-    _ = n[0].required;
+    _ = i + 1 >= n.length && !I(t, g),
+    b = n[0].required;
   l.useEffect(() => {
-    !f && m.default.track(b.rMx.GUILD_ONBOARDING_STEP_VIEWED, E(O({}, (0, s.hH)(t.id)), {
+    !f && m.default.track(N.rMx.GUILD_ONBOARDING_STEP_VIEWED, O(C({}, (0, s.hH)(t.id)), {
       step: 0,
-      required: _
+      required: b
     }))
-  }, [t.id, _, f]);
-  let C = e => {
-      !f && (m.default.track(b.rMx.GUILD_ONBOARDING_STEP_COMPLETED, E(O({}, (0, s.hH)(t.id)), {
+  }, [t.id, b, f]);
+  let E = e => {
+      !f && (m.default.track(N.rMx.GUILD_ONBOARDING_STEP_COMPLETED, O(C({}, (0, s.hH)(t.id)), {
         step: i,
         options_selected: e,
         skipped: 0 === e,
         back: !1,
         in_onboarding: !0,
         is_final_step: !1
-      })), i < n.length - 1 && m.default.track(b.rMx.GUILD_ONBOARDING_STEP_VIEWED, E(O({}, (0, s.hH)(t.id)), {
+      })), i < n.length - 1 && m.default.track(N.rMx.GUILD_ONBOARDING_STEP_VIEWED, O(C({}, (0, s.hH)(t.id)), {
         step: i,
         required: n[i + 1].required
-      }))), i + 1 < n.length ? p(i + 1) : k(t, g) && p("rules")
+      }))), i + 1 < n.length ? x(i + 1) : I(t, g) && x("rules")
     },
-    I = e => {
-      !f && (m.default.track(b.rMx.GUILD_ONBOARDING_STEP_COMPLETED, E(O({}, (0, s.hH)(t.id)), {
+    y = e => {
+      !f && (m.default.track(N.rMx.GUILD_ONBOARDING_STEP_COMPLETED, O(C({}, (0, s.hH)(t.id)), {
         step: i,
         skipped: !1,
         back: !0,
         options_selected: e,
         in_onboarding: !0,
         is_final_step: !1
-      })), i > 0 && m.default.track(b.rMx.GUILD_ONBOARDING_STEP_VIEWED, E(O({}, (0, s.hH)(t.id)), {
+      })), i > 0 && m.default.track(N.rMx.GUILD_ONBOARDING_STEP_VIEWED, O(C({}, (0, s.hH)(t.id)), {
         step: i - 1,
         required: n[i - 1].required
-      }))), p(Math.max(0, i - 1))
+      }))), x(Math.max(0, i - 1))
     };
   if (null == j) return null;
   switch (j.type) {
-    case N.FN.MULTIPLE_CHOICE:
-      return (0, r.jsx)(y, {
-        guild: t,
-        headerId: x,
-        step: i,
-        questionCount: n.length,
-        currentPrompt: j,
-        lastPrompt: v,
-        selectOption: d,
-        gotoPrevPrompt: I,
-        gotoNextPrompt: C,
-        completeOnboarding: u
-      });
-    case N.FN.DROPDOWN:
+    case v.FN.MULTIPLE_CHOICE:
       return (0, r.jsx)(Z, {
         guild: t,
-        headerId: x,
+        headerId: p,
         step: i,
         questionCount: n.length,
         currentPrompt: j,
-        lastPrompt: v,
+        lastPrompt: _,
         selectOption: d,
-        gotoPrevPrompt: I,
-        gotoNextPrompt: C,
+        gotoPrevPrompt: y,
+        gotoNextPrompt: E,
+        completeOnboarding: u
+      });
+    case v.FN.DROPDOWN:
+      return (0, r.jsx)(k, {
+        guild: t,
+        headerId: p,
+        step: i,
+        questionCount: n.length,
+        currentPrompt: j,
+        lastPrompt: _,
+        selectOption: d,
+        gotoPrevPrompt: y,
+        gotoNextPrompt: E,
         completeOnboarding: u
       });
     default:

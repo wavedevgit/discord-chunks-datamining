@@ -1,10 +1,10 @@
-/** Chunk was on 98254 **/
-n.d(t, {
-  r: () => l
+/** Chunk was on 95257 **/
+l.d(n, {
+  r: () => a
 });
-var r = n(15729),
-  i = n(731965);
-let l = (0, r.U)(e => ({
+var t = l(15729),
+  i = l(731965);
+let a = (0, t.U)(e => ({
   favoriteAdded: !1,
   notifyFavoriteAdded: () => (0, i.j)(() => e({
     favoriteAdded: !0

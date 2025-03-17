@@ -60,11 +60,11 @@ function m() {
         })
       }
     }),
-    E = k(y.BRd.DARK, P ? h.NW.string(h.t.GEaO9P) : h.NW.string(h.t.b8Cei4)),
+    E = k(y.BRd.DARK, P ? h.NW.string(h.t.SMPT1t) : h.NW.string(h.t.b8Cei4)),
     N = k(y.BRd.LIGHT, h.NW.string(h.t.K2sFfn)),
     D = [(0, n.jsxs)(c.kSQ, {
       children: [P ? (0, n.jsxs)(n.Fragment, {
-        children: [N, E, k(y.BRd.DARKER, h.NW.string(h.t.b8Cei4)), k(y.BRd.MIDNIGHT, h.NW.string(h.t.pQwSpa))]
+        children: [N, E, k(y.BRd.DARKER, h.NW.string(h.t.b8Cei4)), k(y.BRd.MIDNIGHT, h.NW.string(h.t.Do4ZJy))]
       }) : (0, n.jsxs)(n.Fragment, {
         children: [E, N]
       }), k("system", h.NW.string(h.t["7rOU6u"]))]

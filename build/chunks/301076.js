@@ -4,21 +4,21 @@ n.d(t, {
 });
 var r = n(200651);
 n(192379);
-var i = n(592471),
-  l = n(749280),
-  o = n(424602),
+var i = n(749280),
+  l = n(481060),
+  o = n(456100),
   a = n(861254),
   s = n(221241),
   c = n(871499);
 
 function u(e) {
-  let t, n, u;
+  let t;
   var {
-    isActivityActive: d,
-    onMouseEnter: p,
-    onMouseLeave: h,
-    onClick: f
-  } = e, m = function(e, t) {
+    isActivityActive: n,
+    onMouseEnter: u,
+    onMouseLeave: d,
+    onClick: p
+  } = e, h = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -34,29 +34,25 @@ function u(e) {
     return i
   }(e, ["isActivityActive", "onMouseEnter", "onMouseLeave", "onClick"]);
   let {
-    mode: g
+    mode: f
   } = (0, a.ZP)({
     location: "VideoButton"
   }), {
-    squareButtonsEnabled: b
+    squareButtonsEnabled: m
   } = (0, s.Z)({
     location: "VideoButton"
   }), {
-    enabled: _
-  } = o.nS.useExperiment({
+    enabled: g
+  } = o.c.useExperiment({
     location: "ActivityButton"
   }, {
     autoTrackExposure: !0
   }), {
-    Component: C,
-    events: v,
-    play: y
-  } = (0, i.s)(), {
-    Component: x,
-    events: j,
-    play: O
-  } = (0, l.w)();
-  return _ ? (t = x, n = j, u = O) : (t = C, n = v, u = y), (0, r.jsx)(c.d, function(e) {
+    Component: b,
+    events: _,
+    play: C
+  } = (0, i.w)();
+  return t = g ? l.iWm : b, (0, r.jsx)(c.d, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -74,17 +70,17 @@ function u(e) {
     }
     return e
   }({
-    isActive: d,
-    color: (b || g === a.BK.GroupedButtonsRedMic) && d ? "green" : void 0,
+    isActive: n,
+    color: (m || f === a.BK.GroupedButtonsRedMic) && n ? "green" : void 0,
     iconComponent: t,
     onMouseEnter: e => {
-      null == p || p(e), n.onMouseEnter()
+      null == u || u(e), _.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == h || h(e), n.onMouseLeave()
+      null == d || d(e), _.onMouseLeave()
     },
     onClick: e => {
-      null == f || f(e), u()
+      null == p || p(e), C()
     }
-  }, m))
+  }, h))
 }

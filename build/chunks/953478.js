@@ -5,16 +5,16 @@ t.d(n, {
 var r = t(200651);
 t(192379);
 var i = t(793030),
-  o = t(442837),
-  s = t(481060),
+  s = t(442837),
+  o = t(481060),
   a = t(678558),
   l = t(413335),
   c = t(430824),
   d = t(63063),
   u = t(317169),
   x = t(639660),
-  p = t(767218),
-  m = t(981631),
+  m = t(767218),
+  p = t(981631),
   v = t(730621),
   b = t(388032),
   _ = t(785947);
@@ -22,7 +22,7 @@ var i = t(793030),
 function j(e) {
   let {
     guildId: n
-  } = e, t = (0, o.e7)([c.Z], () => c.Z.getGuild(n)), {
+  } = e, t = (0, s.e7)([c.Z], () => c.Z.getGuild(n)), {
     available: j,
     spent: h,
     total: f
@@ -38,20 +38,20 @@ function j(e) {
         className: _.learnMore,
         variant: "text-xs/semibold",
         children: b.NW.format(v.Z.fXE30d, {
-          helpDeskArticle: d.Z.getArticleURL(m.BhN.GUILD_BOOSTING_FAQ)
+          helpDeskArticle: d.Z.getArticleURL(p.BhN.GUILD_BOOSTING_FAQ)
         })
       })]
     }), (0, r.jsxs)("div", {
       className: _.contentContainer,
-      children: [(0, r.jsx)(p.Z, {
+      children: [(0, r.jsx)(m.Z, {
         count: j,
-        type: p.b.AVAILABLE
-      }), (0, r.jsx)(p.Z, {
+        type: m.b.AVAILABLE
+      }), (0, r.jsx)(m.Z, {
         count: h,
-        type: p.b.SPENT
-      }), (0, r.jsx)(p.Z, {
+        type: m.b.SPENT
+      }), (0, r.jsx)(m.Z, {
         count: f,
-        type: p.b.TOTAL
+        type: m.b.TOTAL
       })]
     }), (0, r.jsx)(x.Z, {
       guildId: n
@@ -59,11 +59,11 @@ function j(e) {
       className: _.boostButton,
       guild: t,
       analyticsLocation: {
-        page: m.ZY5.GUILD_POWERUPS_OVERVIEW,
-        section: m.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
+        page: p.ZY5.GUILD_POWERUPS_OVERVIEW,
+        section: p.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
       },
-      color: s.Ttl.CUSTOM,
-      size: s.PhG.LARGE,
+      color: o.Ttl.CUSTOM,
+      size: o.PhG.LARGE,
       icon: (0, r.jsx)(l.Z, {
         className: _.boostButtonIcon
       })

@@ -15,8 +15,8 @@ var r, l, i = n(200651),
   m = n(410030),
   g = n(726542),
   y = n(600164),
-  O = n(686546),
-  b = n(111028),
+  b = n(686546),
+  O = n(111028),
   h = n(925329),
   v = n(810568),
   j = n(168524),
@@ -163,7 +163,7 @@ class H extends(r = o.PureComponent) {
       children: [(0, i.jsx)(f.X6q, {
         className: s()((0, Z.l)(R, "headerText", e ? "EmptyBody" : "Normal")),
         variant: l ? "text-xs/semibold" : "eyebrow",
-        children: (0, i.jsx)(b.Z, {
+        children: (0, i.jsx)(O.Z, {
           children: t
         })
       }), null == o ? void 0 : o()]
@@ -206,8 +206,8 @@ class H extends(r = o.PureComponent) {
     else if ((0, E.dS)(e)) {
       let t = (0, E.rq)(e);
       if (null == t) return null;
-      m = (0, i.jsx)(O.ZP, {
-        mask: O.ZP.Masks.SQUIRCLE,
+      m = (0, i.jsx)(b.ZP, {
+        mask: b.ZP.Masks.SQUIRCLE,
         width: W.Si.SMALL,
         height: W.Si.SMALL,
         children: (0, i.jsx)("img", {
@@ -468,12 +468,12 @@ class H extends(r = o.PureComponent) {
     (0, D.Z)(c) ? (e = this.renderXboxImage(), p = !0) : null == (e = this.renderImage(c)) && (p = null != (e = this.renderGameImage(c)));
     let m = this.renderName(c),
       g = this.renderDetails(c),
-      O = this.renderState(c, l),
-      b = this.renderTimePlayed(c),
+      b = this.renderState(c, l),
+      O = this.renderTimePlayed(c),
       h = this.renderChannelDetails(c),
       v = null != n ? n() : null,
       j = this.renderTimeBar(c),
-      S = ![e, m, g, O, b, j, v].some(e => null != e);
+      S = ![e, m, g, b, O, j, v].some(e => null != e);
     return (0, i.jsxs)("div", {
       className: s()(this.getTypeClass("activity"), r),
       children: [this.renderHeader(S), (0, i.jsx)("div", {
@@ -487,7 +487,7 @@ class H extends(r = o.PureComponent) {
               onClick: null != a ? e => {
                 a(e), null == o || o()
               } : void 0,
-              children: [m, g, O, b]
+              children: [m, g, b, O]
             }), h, d ? null : j, u ? v : null]
           })]
         })

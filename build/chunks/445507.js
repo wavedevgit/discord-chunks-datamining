@@ -2,21 +2,21 @@
 n.d(t, {
   Q3: () => d,
   Zl: () => u,
-  mC: () => o,
+  mC: () => l,
   mU: () => a,
   qJ: () => s,
-  u9: () => l,
+  u9: () => o,
   xQ: () => c,
   z5: () => p
 }), n(26686);
 var r = n(704215),
   i = n(388032);
 
-function l(e) {
+function o(e) {
   return "user" === e.type
 }
 
-function o(e) {
+function l(e) {
   return "guild" === e.type
 }
 

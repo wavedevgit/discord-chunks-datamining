@@ -1,9 +1,10 @@
-/** Chunk was on 53912 **/
+/** Chunk was on 72149 **/
 n.d(t, {
   FN: () => a,
   ld: () => o,
-  rr: () => s,
-  sX: () => c
+  rr: () => d,
+  sQ: () => s,
+  sX: () => u
 });
 var r, i = n(818083),
   l = n(987338),
@@ -33,7 +34,7 @@ let o = (0, i.B)({
   }]
 });
 
-function c(e) {
+function u(e) {
   let {
     location: t
   } = e;
@@ -41,7 +42,7 @@ function c(e) {
     location: t
   })
 }
-let s = (0, i.B)({
+let d = (0, i.B)({
   id: "2025-03_dm_chat_wallpapers_viewer",
   kind: "user",
   label: "DM Chat Wallpapers Viewer",
@@ -56,4 +57,13 @@ let s = (0, i.B)({
       enabled: !0
     }
   }]
-})
+});
+
+function s(e) {
+  let {
+    location: t
+  } = e;
+  return d.useExperiment({
+    location: t
+  }).enabled
+}

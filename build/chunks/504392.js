@@ -4,16 +4,16 @@ t.d(n, {
 }), t(266796);
 var r = t(200651),
   i = t(192379),
-  o = t(442837),
-  s = t(481060),
+  s = t(442837),
+  o = t(481060),
   a = t(413335),
   l = t(984370),
   c = t(713081),
   d = t(905128),
   u = t(111360),
   x = t(27237),
-  p = t(51859),
-  m = t(953478),
+  m = t(51859),
+  p = t(953478),
   v = t(460608),
   b = t(279604),
   _ = t(535396),
@@ -31,7 +31,7 @@ function Z(e) {
     (0, c.Sn)(n), (0, c.Fm)(n)
   }, [n]);
   let Z = (0, u.Z)(n),
-    C = (0, o.e7)([d.Z], () => {
+    C = (0, s.e7)([d.Z], () => {
       var e;
       return null === (e = d.Z.getStateForGuild(n)) || void 0 === e ? void 0 : e.powerups
     }),
@@ -61,7 +61,7 @@ function Z(e) {
           let t = Z.get(e);
           if (null == t) return;
           let {
-            title: o,
+            title: s,
             description: a
           } = function(e) {
             switch (e) {
@@ -78,10 +78,10 @@ function Z(e) {
           return (0, r.jsxs)(i.Fragment, {
             children: [(0, r.jsxs)("div", {
               className: f.powerupTextContainer,
-              children: [(0, r.jsx)(s.X6q, {
+              children: [(0, r.jsx)(o.X6q, {
                 variant: "heading-lg/semibold",
-                children: o
-              }), (0, r.jsx)(s.Text, {
+                children: s
+              }), (0, r.jsx)(o.Text, {
                 variant: "text-sm/medium",
                 children: a
               })]
@@ -97,7 +97,7 @@ function Z(e) {
                       nextPowerup: t[i + 1]
                     }, "powerup-".concat(e.skuId));
                   case _.Us.PERK:
-                    return (0, r.jsx)(p.Z, {
+                    return (0, r.jsx)(m.Z, {
                       guildId: n,
                       powerup: e
                     }, "powerup-".concat(e.skuId))
@@ -108,7 +108,7 @@ function Z(e) {
         })
       }), (0, r.jsxs)("div", {
         className: f.sidebarContainer,
-        children: [(0, r.jsx)(m.Z, {
+        children: [(0, r.jsx)(p.Z, {
           guildId: n
         }), (0, r.jsx)(v.Z, {
           guildId: n

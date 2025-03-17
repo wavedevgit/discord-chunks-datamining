@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(481060),
-  l = n(695346),
-  o = n(316496),
+  o = n(695346),
+  l = n(316496),
   a = n(388032),
   s = n(930565);
 let c = e => {
@@ -13,7 +13,7 @@ let c = e => {
     onClick: t
   } = e, {
     rtcPopoutEnabled: n
-  } = (0, o.SN)("not sharing link"), c = l.G6.useSetting();
+  } = (0, l.SN)("not sharing link"), c = o.G6.useSetting();
   return !n || c ? null : (0, r.jsx)(i.P3F, {
     onClick: t,
     className: s.container,

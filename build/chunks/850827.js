@@ -17,8 +17,8 @@ var l = n(120356),
   m = n(594174),
   g = n(374129),
   y = n(639351),
-  O = n(503438),
-  b = n(802856),
+  b = n(503438),
+  O = n(802856),
   h = n(387903),
   v = n(606925),
   j = n(719216),
@@ -48,7 +48,7 @@ let w = (0, u.Z)(e => {
   } = e, M = (0, s.e7)([m.default], () => {
     let e = m.default.getCurrentUser();
     return a()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-  }), U = k === h.Y.STREAM_PREVIEW || null != o, R = (0, O.Z)(t), F = R || U ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL, G = F === f.Z.Direction.VERTICAL;
+  }), U = k === h.Y.STREAM_PREVIEW || null != o, R = (0, b.Z)(t), F = R || U ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL, G = F === f.Z.Direction.VERTICAL;
   return (0, r.jsx)(f.Z, {
     grow: 0,
     align: f.Z.Align.STRETCH,
@@ -56,7 +56,7 @@ let w = (0, u.Z)(e => {
     wrap: G ? f.Z.Wrap.WRAP : f.Z.Wrap.NO_WRAP,
     className: i()(u, T.buttonsWrapper, G ? T.vertical : T.horizontal),
     children: (() => {
-      if ((0, b.Z)(t)) return (0, r.jsx)(v.Z, {
+      if ((0, O.Z)(t)) return (0, r.jsx)(v.Z, {
         platform: d.Z.get(Z.ABu.XBOX),
         look: L,
         color: D,

@@ -49,12 +49,12 @@ let f = (0, l.hQ)(),
       })
     }, [b]), _ = i.useCallback(e => (0, d.nE)(e, !0, g.Sbl.USER_SETTINGS), []), E = i.useCallback(e => e === l, [l]), j = i.useCallback(e => e, []), C = i.useCallback(() => (0, d.nE)(null, !1), []);
     return (0, r.jsxs)(o.Z, {
-      title: p.NW.string(p.t.umdfaG),
+      title: p.NW.string(p.t.Pdd1nZ),
       titleId: f,
       children: [(0, r.jsx)(a.Text, {
         className: h.subtitle,
         variant: "text-sm/normal",
-        children: p.NW.string(p.t.Mrf7fX)
+        children: p.NW.string(p.t.mlZ6Jy)
       }), (0, r.jsx)(a.PhF, {
         className: h.select,
         optionClassName: h.selectPopout,

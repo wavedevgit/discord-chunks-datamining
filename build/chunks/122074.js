@@ -1,7 +1,7 @@
 /** Chunk was on 53912 **/
 n.d(t, {
   U: () => I,
-  Uf: () => P,
+  Uf: () => S,
   ng: () => C
 }), n(47120);
 var r = n(200651),
@@ -18,13 +18,13 @@ var r = n(200651),
   b = n(11352),
   p = n(213931),
   h = n(767157),
-  g = n(112440),
-  N = n(671105),
-  y = n(552958),
-  m = n(981631),
-  _ = n(921944),
-  j = n(871465),
-  v = n(388032),
+  y = n(112440),
+  g = n(671105),
+  j = n(552958),
+  N = n(981631),
+  v = n(921944),
+  m = n(871465),
+  _ = n(388032),
   x = n(771527);
 
 function C(e, t) {
@@ -33,12 +33,12 @@ function C(e, t) {
     }, {
       autoTrackExposure: !0
     }),
-    r = E(e, void 0, a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE, n.nestedEntry ? "trailing" : "top");
+    r = P(e, void 0, a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE, n.nestedEntry ? "trailing" : "top");
   return (n.nestedEntry && t || !n.nestedEntry && !t) && r
 }
 
-function P(e, t, n) {
-  return E(e, t, a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE, n)
+function S(e, t, n) {
+  return P(e, t, a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE, n)
 }
 
 function I() {
@@ -50,45 +50,45 @@ function I() {
     [t] = (0, s.cv)([a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE]);
   return e.enabled && e.nestedEntry && t === a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE && (0, r.jsx)(o.IGR, {
     className: x.newBadge,
-    text: v.NW.string(v.t.y2b7CA)
+    text: _.NW.string(_.t.y2b7CA)
   })
 }
 
-function E(e, t, a, C) {
-  var P, I;
-  let E = (0, N.OR)(e),
-    S = (0, N._c)(e, t),
-    T = (0, l.e7)([d.default], () => d.default.getCurrentUser()),
+function P(e, t, a, C) {
+  var S, I;
+  let P = (0, g.OR)(e),
+    T = (0, g._c)(e, t),
+    E = (0, l.e7)([d.default], () => d.default.getCurrentUser()),
     w = (0, l.e7)([u.ZP], () => u.ZP.isMuted(e), [e]),
-    D = f.ZP.canUseCustomNotificationSounds(T),
-    A = D ? null != S ? S : E : j.YC.CLASSIC,
+    A = f.ZP.canUseCustomNotificationSounds(E),
+    D = A ? null != T ? T : P : m.YC.CLASSIC,
     U = b.Y.useExperiment({
       location: "guild_context_menu"
     }, {
       autoTrackExposure: !0
     }).enabled,
-    [M, Z] = i.useState(!1),
+    [Z, M] = i.useState(!1),
     {
       playSound: k
-    } = (0, y.Z)(),
+    } = (0, j.Z)(),
     [G, R] = (0, s.cv)([a]),
-    W = G === a;
+    L = G === a;
   if (i.useEffect(() => () => {
-      M && R(_.L.TAKE_ACTION)
-    }, [M, R]), !U) return null;
-  let L = n => {
-      if (k(n), R(_.L.TAKE_ACTION), !D && n !== j.YC.CLASSIC) {
-        (0, h.Z)(n, "contextMenu"), (0, g.Z)();
+      Z && R(v.L.TAKE_ACTION)
+    }, [Z, R]), !U) return null;
+  let W = n => {
+      if (k(n), R(v.L.TAKE_ACTION), !A && n !== m.YC.CLASSIC) {
+        (0, h.Z)(n, "contextMenu"), (0, y.Z)();
         return
       }
-      null != t ? (0, p.M)(e, t, A, n, "contextMenu") : (0, p.t)(e, A, n, "contextMenu")
+      null != t ? (0, p.M)(e, t, D, n, "contextMenu") : (0, p.t)(e, D, n, "contextMenu")
     },
-    F = D ? o.Text : O.Z,
-    B = (0, j.LB)(),
-    Y = null !== (I = null === (P = B.find(e => e.value === A)) || void 0 === P ? void 0 : P.label) && void 0 !== I ? I : v.NW.string(v.t.p3Hg5e),
-    z = (0, r.jsx)(o.IGR, {
+    F = A ? o.Text : O.Z,
+    Y = (0, m.LB)(),
+    z = null !== (I = null === (S = Y.find(e => e.value === D)) || void 0 === S ? void 0 : S.label) && void 0 !== I ? I : _.NW.string(_.t.p3Hg5e),
+    B = (0, r.jsx)(o.IGR, {
       className: x.newBadge,
-      text: v.NW.string(v.t.y2b7CA)
+      text: _.NW.string(_.t.y2b7CA)
     });
   return (0, r.jsx)(o.sNh, {
     id: "notification-sounds",
@@ -96,31 +96,31 @@ function E(e, t, a, C) {
       let {
         isFocused: t
       } = e;
-      return t && Z(t), (0, r.jsxs)("div", {
+      return t && M(t), (0, r.jsxs)("div", {
         className: x.rootContainer,
         children: [(0, r.jsxs)("div", {
-          children: [W && "top" === C && z, (0, r.jsxs)("div", {
+          children: [L && "top" === C && B, (0, r.jsxs)("div", {
             className: x.headerContainer,
             children: [(0, r.jsx)(F, {
               className: x.text,
               color: t ? "always-white" : void 0,
               variant: "text-sm/medium",
-              children: v.NW.string(v.t.mrqSOj)
+              children: _.NW.string(_.t.mrqSOj)
             }), (0, r.jsx)(o.SrA, {
               size: "xs",
               className: x.nitroWheel,
-              color: t ? "white" : D ? void 0 : c.JX.PREMIUM_TIER_2
+              color: t ? "white" : A ? void 0 : c.JX.PREMIUM_TIER_2
             })]
-          }), null != Y && (0, r.jsx)(F, {
+          }), null != z && (0, r.jsx)(F, {
             className: x.text,
             color: t ? "always-white" : void 0,
             variant: "text-xs/normal",
-            children: Y
+            children: z
           })]
-        }), W && "trailing" === C && z]
+        }), L && "trailing" === C && B]
       })
     },
-    action: e !== m.aIL ? () => (0, o.ZDy)(async () => {
+    action: e !== N.aIL ? () => (0, o.ZDy)(async () => {
       let {
         default: t
       } = await Promise.all([n.e("5863"), n.e("96123")]).then(n.bind(n, 751212));
@@ -159,13 +159,13 @@ function E(e, t, a, C) {
     }) : void 0,
     hasSubmenu: !0,
     children: (0, r.jsxs)(o.kSQ, {
-      children: [B.map((e, t) => (0, r.jsxs)(i.Fragment, {
-        children: [D || e.value === j.YC.CLASSIC ? (0, r.jsx)(o.k5B, {
+      children: [Y.map((e, t) => (0, r.jsxs)(i.Fragment, {
+        children: [A || e.value === m.YC.CLASSIC ? (0, r.jsx)(o.k5B, {
           id: e.label,
           group: "notification-preset",
-          checked: (null != A ? A : j.YC.CLASSIC) === e.value,
+          checked: (null != D ? D : m.YC.CLASSIC) === e.value,
           label: e.label,
-          action: () => L(e.value)
+          action: () => W(e.value)
         }) : (0, r.jsx)(o.sNh, {
           id: e.label,
           label: t => {
@@ -184,15 +184,15 @@ function E(e, t, a, C) {
               })]
             })
           },
-          action: () => L(e.value)
-        }), e.value === j.YC.CLASSIC ? (0, r.jsx)(o.Clw, {}) : null]
+          action: () => W(e.value)
+        }), e.value === m.YC.CLASSIC ? (0, r.jsx)(o.Clw, {}) : null]
       }, t)), w && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(o.Clw, {}), (0, r.jsx)(o.sNh, {
           id: "label",
           label: (0, r.jsx)(o.Text, {
             className: x.mutedLabel,
             variant: "text-sm/medium",
-            children: v.NW.string(v.t["a9G/ER"])
+            children: _.NW.string(_.t["a9G/ER"])
           })
         })]
       })]

@@ -1,27 +1,27 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => m
+  Z: () => p
 });
 var r = t(200651);
 t(192379);
 var i = t(793030),
-  o = t(442837),
-  s = t(481060),
+  s = t(442837),
+  o = t(481060),
   a = t(834129),
   l = t(271383),
   c = t(709586),
   d = t(709054),
   u = t(730621),
   x = t(388032),
-  p = t(652754);
+  m = t(652754);
 
-function m(e) {
+function p(e) {
   let {
     boost: n
   } = e, t = new Date(d.default.extractTimestamp(n.id)), {
-    username: m,
+    username: p,
     roleColor: v
-  } = (0, o.cj)([l.ZP], () => {
+  } = (0, s.cj)([l.ZP], () => {
     var e, t, r;
     return {
       username: null !== (r = l.ZP.getNick(n.guildId, n.userId)) && void 0 !== r ? r : null === (e = n.user) || void 0 === e ? void 0 : e.username,
@@ -29,23 +29,23 @@ function m(e) {
     }
   }, [n]);
   return (0, r.jsx)(a.Z, {
-    className: p.systemMessageContainer,
-    contentClassName: p.systemMessageContent,
+    className: m.systemMessageContainer,
+    contentClassName: m.systemMessageContent,
     iconNode: (0, r.jsx)(c.Z, {
-      className: p.icon,
+      className: m.icon,
       width: 16,
       height: 16
     }),
-    iconContainerClassName: p.iconContainer,
-    timestampClassName: p.timestamp,
+    iconContainerClassName: m.iconContainer,
+    timestampClassName: m.timestamp,
     timestamp: t,
     compact: !0,
     children: (0, r.jsxs)("span", {
-      className: p.boostMessage,
+      className: m.boostMessage,
       children: [(0, r.jsx)(i.xv, {
         variant: "text-md/semibold",
-        children: (0, r.jsx)(s.PUh, {
-          name: m,
+        children: (0, r.jsx)(o.PUh, {
+          name: p,
           color: null != v ? v : void 0
         })
       }), (0, r.jsx)(i.xv, {

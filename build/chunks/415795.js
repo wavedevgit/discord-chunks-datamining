@@ -1,35 +1,36 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  $W: () => S,
-  Mx: () => y,
-  PZ: () => T,
-  h4: () => A,
-  ic: () => v,
-  n5: () => I,
-  rU: () => P,
-  s8: () => R
+  $W: () => T,
+  Mx: () => A,
+  PZ: () => I,
+  h4: () => P,
+  ic: () => S,
+  n5: () => y,
+  rU: () => R,
+  s8: () => D
 }), n(47120), n(301563);
 var r, i = n(200651),
   s = n(192379),
   a = n(481060),
-  l = n(815372),
-  o = n(43267),
-  c = n(933557),
-  d = n(471445),
-  u = n(16206),
-  m = n(790145),
-  g = n(925329),
-  p = n(565138),
-  h = n(754688),
-  f = n(237583),
-  x = n(430824),
-  b = n(699516),
-  N = n(594174),
-  _ = n(51144),
-  E = n(388032),
-  j = n(619619);
+  l = n(456100),
+  o = n(815372),
+  c = n(43267),
+  d = n(933557),
+  u = n(471445),
+  m = n(16206),
+  g = n(790145),
+  p = n(925329),
+  h = n(565138),
+  f = n(754688),
+  x = n(237583),
+  b = n(430824),
+  N = n(699516),
+  _ = n(594174),
+  E = n(51144),
+  j = n(388032),
+  C = n(619619);
 
-function C(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -37,7 +38,7 @@ function C(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class O extends s.PureComponent {
+class v extends s.PureComponent {
   componentDidMount() {
     let {
       focused: e,
@@ -75,18 +76,18 @@ class O extends s.PureComponent {
       },
       tabIndex: -1,
       innerRef: this.setRef,
-      className: j.result,
+      className: C.result,
       onClick: this.handleClick,
       onMouseEnter: this.handleMouseEnter,
       onContextMenu: r,
       children: [t, null != n ? (0, i.jsx)("div", {
-        className: j.score,
+        className: C.score,
         children: n >> 0
       }) : null]
     })
   }
   constructor(...e) {
-    super(...e), C(this, "node", void 0), C(this, "handleClick", e => {
+    super(...e), O(this, "node", void 0), O(this, "handleClick", e => {
       e.preventDefault();
       let {
         onClick: t
@@ -94,30 +95,30 @@ class O extends s.PureComponent {
         node: n
       } = this;
       null != n && t(e, n)
-    }), C(this, "handleMouseEnter", e => {
+    }), O(this, "handleMouseEnter", e => {
       let {
         onMouseEnter: t
       } = this.props, {
         node: n
       } = this;
       null != n && t(e, n)
-    }), C(this, "setRef", e => {
+    }), O(this, "setRef", e => {
       this.node = e
     })
   }
 }
-class v extends s.Component {
+class S extends s.Component {
   renderIcon() {
     let {
       guild: e
     } = this.props;
     return (0, i.jsx)("div", {
-      className: j.guildIconContainer,
-      children: (0, i.jsx)(p.Z, {
+      className: C.guildIconContainer,
+      children: (0, i.jsx)(h.Z, {
         tabIndex: -1,
         guild: e,
-        size: p.Z.Sizes.MINI,
-        className: j.guildIcon
+        size: h.Z.Sizes.MINI,
+        className: C.guildIcon
       })
     })
   }
@@ -126,9 +127,9 @@ class v extends s.Component {
       guild: e
     } = this.props;
     return (0, i.jsx)("div", {
-      className: j.name,
+      className: C.name,
       children: (0, i.jsx)("span", {
-        className: j.match,
+        className: C.match,
         children: e.name
       })
     })
@@ -139,9 +140,9 @@ class v extends s.Component {
       children: t
     } = this.props;
     return (0, i.jsxs)("div", {
-      className: e ? j.contentUnread : j.contentDefault,
+      className: e ? C.contentUnread : C.contentDefault,
       children: [this.renderIcon(), this.renderName(), (0, i.jsx)("div", {
-        className: j.misc,
+        className: C.misc,
         children: t
       })]
     })
@@ -150,7 +151,7 @@ class v extends s.Component {
     let {
       guild: e
     } = this.props;
-    return E.NW.formatToPlainString(E.t.WVq3Li, {
+    return j.NW.formatToPlainString(j.t.WVq3Li, {
       name: e.name
     })
   }
@@ -164,7 +165,7 @@ class v extends s.Component {
       score: a,
       id: l
     } = this.props;
-    return (0, i.jsx)(O, {
+    return (0, i.jsx)(v, {
       id: l,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: e,
@@ -177,20 +178,20 @@ class v extends s.Component {
     })
   }
 }
-class S extends(r = s.Component) {
+class T extends(r = s.Component) {
   renderIcon() {
     var e;
     let {
       channel: t
-    } = this.props, n = (0, d.KS)(t);
+    } = this.props, n = (0, u.KS)(t);
     if (null == n) return null;
-    let r = null !== (e = (0, u.Z)(t)) && void 0 !== e ? e : "";
+    let r = null !== (e = (0, m.Z)(t)) && void 0 !== e ? e : "";
     return (0, i.jsx)("div", {
-      className: j.iconContainer,
+      className: C.iconContainer,
       role: "img",
       "aria-label": r,
       children: (0, i.jsx)(n, {
-        className: j.icon,
+        className: C.icon,
         size: "xs",
         color: "currentColor"
       })
@@ -204,18 +205,18 @@ class S extends(r = s.Component) {
       channel: s,
       isMentionLowImportance: a
     } = this.props;
-    return null != n && n > 0 && (e = (0, i.jsx)(m.Z, {
-      className: j.badge,
+    return null != n && n > 0 && (e = (0, i.jsx)(g.Z, {
+      className: C.badge,
       value: n,
       lowImportance: a
     })), null != r && (t = (0, i.jsx)("span", {
-      className: j.note,
-      children: (0, c.F6)(r, N.default, b.Z)
+      className: C.note,
+      children: (0, d.F6)(r, _.default, N.Z)
     })), (0, i.jsxs)("div", {
-      className: j.name,
+      className: C.name,
       children: [(0, i.jsx)("span", {
-        className: j.match,
-        children: (0, c.F6)(s, N.default, b.Z)
+        className: C.match,
+        children: (0, d.F6)(s, _.default, N.Z)
       }), e, this.renderVoiceStates(), t]
     })
   }
@@ -224,8 +225,8 @@ class S extends(r = s.Component) {
       voiceStates: e,
       channel: t
     } = this.props;
-    return null == e ? null : (0, i.jsx)(f.Z, {
-      className: j.voiceSummaryContainer,
+    return null == e ? null : (0, i.jsx)(x.Z, {
+      className: C.voiceSummaryContainer,
       guildId: t.guild_id,
       users: e.map(e => {
         let {
@@ -246,9 +247,9 @@ class S extends(r = s.Component) {
     } = this.props;
     return (0, i.jsxs)("div", {
       "aria-hidden": !0,
-      className: e || null != t && t > 0 ? j.contentUnread : j.contentDefault,
+      className: e || null != t && t > 0 ? C.contentUnread : C.contentDefault,
       children: [this.renderIcon(), this.renderName(), (0, i.jsx)("div", {
-        className: j.misc,
+        className: C.misc,
         children: n
       })]
     })
@@ -257,8 +258,8 @@ class S extends(r = s.Component) {
     var e;
     let {
       channel: t
-    } = this.props, n = null === (e = x.Z.getGuild(this.props.channel.guild_id)) || void 0 === e ? void 0 : e.name, r = (0, c.F6)(t, N.default, b.Z), i = (0, u.Z)(t);
-    return E.NW.formatToPlainString(E.t["Vw/da2"], {
+    } = this.props, n = null === (e = b.Z.getGuild(this.props.channel.guild_id)) || void 0 === e ? void 0 : e.name, r = (0, d.F6)(t, _.default, N.Z), i = (0, m.Z)(t);
+    return j.NW.formatToPlainString(j.t["Vw/da2"], {
       name: r,
       type: i,
       guild: n
@@ -274,7 +275,7 @@ class S extends(r = s.Component) {
       score: a,
       id: l
     } = this.props;
-    return (0, i.jsx)(O, {
+    return (0, i.jsx)(v, {
       id: l,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: e,
@@ -287,18 +288,18 @@ class S extends(r = s.Component) {
     })
   }
 }
-C(S, "defaultProps", {
+O(T, "defaultProps", {
   unread: !1
 });
-class T extends s.Component {
+class I extends s.Component {
   renderIcon() {
     let {
       channel: e
     } = this.props;
     return (0, i.jsx)("div", {
-      className: j.dmIconContainer,
+      className: C.dmIconContainer,
       children: (0, i.jsx)(a.qEK, {
-        src: (0, o.x)(e),
+        src: (0, c.x)(e),
         size: a.EFr.SIZE_20,
         "aria-hidden": !0
       })
@@ -310,14 +311,14 @@ class T extends s.Component {
       mentions: t,
       channel: n
     } = this.props;
-    return null != t && t > 0 && (e = (0, i.jsx)(m.Z, {
-      className: j.badge,
+    return null != t && t > 0 && (e = (0, i.jsx)(g.Z, {
+      className: C.badge,
       value: t
     })), (0, i.jsxs)("div", {
-      className: j.name,
+      className: C.name,
       children: [(0, i.jsx)("span", {
-        className: j.match,
-        children: (0, c.F6)(n, N.default, b.Z)
+        className: C.match,
+        children: (0, d.F6)(n, _.default, N.Z)
       }), e]
     })
   }
@@ -327,9 +328,9 @@ class T extends s.Component {
       children: t
     } = this.props;
     return (0, i.jsxs)("div", {
-      className: null != e && e > 0 ? j.contentUnread : j.contentDefault,
+      className: null != e && e > 0 ? C.contentUnread : C.contentDefault,
       children: [this.renderIcon(), this.renderName(), (0, i.jsx)("div", {
-        className: j.misc,
+        className: C.misc,
         children: t
       })]
     })
@@ -338,11 +339,11 @@ class T extends s.Component {
     let {
       channel: e,
       mentions: t
-    } = this.props, n = (0, c.F6)(e, N.default, b.Z);
-    return null != t && t > 0 ? E.NW.formatToPlainString(E.t.LYdVfH, {
+    } = this.props, n = (0, d.F6)(e, _.default, N.Z);
+    return null != t && t > 0 ? j.NW.formatToPlainString(j.t.LYdVfH, {
       name: n,
       mentions: t
-    }) : E.NW.formatToPlainString(E.t.lLSbnp, {
+    }) : j.NW.formatToPlainString(j.t.lLSbnp, {
       name: n
     })
   }
@@ -356,7 +357,7 @@ class T extends s.Component {
       score: a,
       id: l
     } = this.props;
-    return (0, i.jsx)(O, {
+    return (0, i.jsx)(v, {
       id: l,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: e,
@@ -369,13 +370,13 @@ class T extends s.Component {
     })
   }
 }
-class I extends s.Component {
+class y extends s.Component {
   renderIcon() {
     let {
       user: e
     } = this.props;
     return (0, i.jsx)("div", {
-      className: j.iconContainer,
+      className: C.iconContainer,
       children: (0, i.jsx)(a.qEK, {
         src: e.getAvatarURL(void 0, 20),
         "aria-hidden": !0,
@@ -388,8 +389,8 @@ class I extends s.Component {
     let {
       user: t,
       comparator: n
-    } = this.props, r = b.Z.getNickname(t.id);
-    return ((e = n === t.tag || null == n || "" === n ? t.username : n) === t.username || e === t.id) && (e = null != r ? r : _.ZP.getName(t)), e
+    } = this.props, r = N.Z.getNickname(t.id);
+    return ((e = n === t.tag || null == n || "" === n ? t.username : n) === t.username || e === t.id) && (e = null != r ? r : E.ZP.getName(t)), e
   }
   renderName() {
     let e;
@@ -397,17 +398,17 @@ class I extends s.Component {
       user: t,
       mentions: n
     } = this.props, r = this.getDisplayNickname();
-    return null != n && n > 0 && (e = (0, i.jsx)(m.Z, {
-      className: j.badge,
+    return null != n && n > 0 && (e = (0, i.jsx)(g.Z, {
+      className: C.badge,
       value: n
     })), (0, i.jsxs)("div", {
-      className: j.name,
+      className: C.name,
       children: [(0, i.jsx)("span", {
-        className: j.match,
+        className: C.match,
         children: r
       }), e, (0, i.jsx)("span", {
-        className: j.username,
-        children: _.ZP.getUserTag(t)
+        className: C.username,
+        children: E.ZP.getUserTag(t)
       })]
     })
   }
@@ -417,9 +418,9 @@ class I extends s.Component {
       mentions: t
     } = this.props;
     return (0, i.jsxs)("div", {
-      className: null != t && t > 0 ? j.contentUnread : j.contentDefault,
+      className: null != t && t > 0 ? C.contentUnread : C.contentDefault,
       children: [this.renderIcon(), this.renderName(), (0, i.jsx)("div", {
-        className: j.misc,
+        className: C.misc,
         children: e
       })]
     })
@@ -428,12 +429,12 @@ class I extends s.Component {
     let {
       mentions: e,
       user: t
-    } = this.props, n = this.getDisplayNickname(), r = _.ZP.getUserTag(t);
-    return null != e && e > 0 ? E.NW.formatToPlainString(E.t["6b9Ura"], {
+    } = this.props, n = this.getDisplayNickname(), r = E.ZP.getUserTag(t);
+    return null != e && e > 0 ? j.NW.formatToPlainString(j.t["6b9Ura"], {
       name: n,
       id: r,
       mentions: e
-    }) : E.NW.formatToPlainString(E.t.GWYOAQ, {
+    }) : j.NW.formatToPlainString(j.t.GWYOAQ, {
       name: n,
       id: r
     })
@@ -448,7 +449,7 @@ class I extends s.Component {
       score: a,
       id: l
     } = this.props;
-    return (0, i.jsx)(O, {
+    return (0, i.jsx)(v, {
       id: l,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: e,
@@ -461,24 +462,24 @@ class I extends s.Component {
     })
   }
 }
-class y extends s.Component {
+class A extends s.Component {
   renderContent() {
     let {
       children: e,
       application: t
     } = this.props;
     return (0, i.jsxs)("div", {
-      className: j.contentDefault,
+      className: C.contentDefault,
       children: [(0, i.jsx)("div", {
-        className: j.iconContainer,
-        children: (0, i.jsx)(g.Z, {
+        className: C.iconContainer,
+        children: (0, i.jsx)(p.Z, {
           tabIndex: -1,
-          className: j.gameIcon,
+          className: C.gameIcon,
           game: t,
-          size: j.gameIconSize
+          size: C.gameIconSize
         })
       }), t.name, (0, i.jsx)("div", {
-        className: j.misc,
+        className: C.misc,
         children: e
       })]
     })
@@ -491,7 +492,7 @@ class y extends s.Component {
       focused: r,
       id: s
     } = this.props;
-    return (0, i.jsx)(O, {
+    return (0, i.jsx)(v, {
       id: s,
       onMouseEnter: e,
       onClick: t,
@@ -501,43 +502,43 @@ class y extends s.Component {
     })
   }
 }
-class A extends s.Component {
+class P extends s.Component {
   render() {
     return (0, i.jsx)("div", {
-      className: j.__invalid_resultDefault,
+      className: C.__invalid_resultDefault,
       children: (0, i.jsx)("div", {
-        className: j.contentDefault,
+        className: C.contentDefault,
         children: (0, i.jsx)("div", {
-          className: j.header,
+          className: C.header,
           children: this.props.children
         })
       })
     })
   }
 }
-class P extends s.Component {
+class R extends s.Component {
   renderContent() {
     let e, t;
     let {
       link: n,
       children: r
-    } = this.props, s = (0, h.Qj)(n.path);
-    return null == s || void 0 === s.messageId ? (e = E.NW.string(E.t.qbSCqq), t = (0, i.jsx)(a.xPt, {
+    } = this.props, s = (0, f.Qj)(n.path);
+    return null == s || void 0 === s.messageId ? (e = j.NW.string(j.t.qbSCqq), t = (0, i.jsx)(a.xPt, {
       size: "xs",
       color: "currentColor"
-    })) : (0, h.VO)(s) ? (e = E.NW.string(E.t["6Fd/j4"]), t = (0, i.jsx)(a.acy, {
+    })) : (0, f.VO)(s) ? (e = j.NW.string(j.t["6Fd/j4"]), t = (0, i.jsx)(a.acy, {
       size: "xs",
       color: "currentColor"
-    })) : (e = E.NW.string(E.t.jQRwp6), t = (0, i.jsx)(a.mBM, {
+    })) : (e = j.NW.string(j.t.jQRwp6), t = (0, i.jsx)(a.mBM, {
       size: "xs",
       color: "currentColor"
     })), (0, i.jsxs)("div", {
-      className: j.contentDefault,
+      className: C.contentDefault,
       children: [(0, i.jsx)("div", {
-        className: j.iconContainer,
+        className: C.iconContainer,
         children: t
       }), e, (0, i.jsx)("div", {
-        className: j.misc,
+        className: C.misc,
         children: r
       })]
     })
@@ -552,7 +553,7 @@ class P extends s.Component {
       score: a,
       id: l
     } = this.props;
-    return (0, i.jsx)(O, {
+    return (0, i.jsx)(v, {
       id: l,
       onMouseEnter: e,
       onClick: t,
@@ -564,41 +565,47 @@ class P extends s.Component {
     })
   }
 }
-class R extends s.Component {
+class D extends s.Component {
   renderContent() {
     let e, t;
     let {
       navigationRecord: n,
       children: r
-    } = this.props;
+    } = this.props, {
+      enabled: s
+    } = l.c.getCurrentConfig({
+      location: "QuickSwitcherResults"
+    }, {
+      autoTrackExposure: !0
+    }), c = s ? a.iWm : a.jje;
     switch (n.type) {
-      case l.Ky.SHOP:
-        e = E.NW.string(E.t.pWG4zc), t = (0, i.jsx)(a.EOn, {
+      case o.Ky.SHOP:
+        e = j.NW.string(j.t.pWG4zc), t = (0, i.jsx)(a.EOn, {
           size: "xs",
           color: "currentColor"
         });
         break;
-      case l.Ky.NITRO_HOME:
-        e = E.NW.string(E.t.Ipxkoq), t = (0, i.jsx)(a.SrA, {
+      case o.Ky.NITRO_HOME:
+        e = j.NW.string(j.t.Ipxkoq), t = (0, i.jsx)(a.SrA, {
           size: "xs",
           color: "currentColor"
         });
         break;
-      case l.Ky.QUEST_HOME:
-        e = E.NW.string(E.t.JALI2N), t = (0, i.jsx)(a.qDn, {
+      case o.Ky.QUEST_HOME:
+        e = j.NW.string(j.t.JALI2N), t = (0, i.jsx)(a.qDn, {
           size: "xs",
           color: "currentColor"
         });
         break;
-      case l.Ky.APPS_HOME:
-        e = E.NW.string(E.t.PHjkRE), t = (0, i.jsx)(a.jje, {
+      case o.Ky.APPS_HOME:
+        e = j.NW.string(j.t.PHjkRE), t = (0, i.jsx)(c, {
           size: "xs",
           color: "currentColor"
         });
         break;
-      case l.Ky.SETTINGS:
-        var s;
-        e = null !== (s = n.label) && void 0 !== s ? s : E.NW.string(E.t["3D5yo6"]), t = (0, i.jsx)(a.ewm, {
+      case o.Ky.SETTINGS:
+        var d;
+        e = null !== (d = n.label) && void 0 !== d ? d : j.NW.string(j.t["3D5yo6"]), t = (0, i.jsx)(a.ewm, {
           size: "xs",
           color: "currentColor"
         });
@@ -610,15 +617,15 @@ class R extends s.Component {
         })
     }
     return (0, i.jsxs)("div", {
-      className: j.contentDefault,
+      className: C.contentDefault,
       children: [(0, i.jsx)("div", {
-        className: j.iconContainer,
+        className: C.iconContainer,
         children: t
       }), (0, i.jsx)("div", {
-        className: j.name,
+        className: C.name,
         children: e
       }), (0, i.jsx)("div", {
-        className: j.misc,
+        className: C.misc,
         children: r
       })]
     })
@@ -633,7 +640,7 @@ class R extends s.Component {
       score: a,
       id: l
     } = this.props;
-    return (0, i.jsx)(O, {
+    return (0, i.jsx)(v, {
       id: l,
       onMouseEnter: e,
       onClick: t,

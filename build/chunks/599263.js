@@ -13,15 +13,15 @@ var r = n(200651),
   u = n(830064),
   m = n(393238),
   h = n(877604),
-  p = n(998730),
-  x = n(540059),
+  x = n(998730),
+  p = n(540059),
   f = n(480608),
   g = n(160404),
   j = n(703656),
   v = n(546247),
   N = n(430824),
-  b = n(594174),
-  _ = n(768581),
+  _ = n(594174),
+  b = n(768581),
   C = n(302221),
   O = n(549817),
   E = n(45966),
@@ -41,16 +41,16 @@ function T(e) {
     ref: T,
     width: R,
     height: M
-  } = (0, m.Z)(), A = (0, x.Q3)("GuildOnboardingPage"), B = null !== (n = null === (t = b.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff()) && void 0 !== n && n, S = (0, a.Wu)([E.Z], () => E.Z.getOnboardingPromptsForOnboarding(o)), W = (0, a.e7)([E.Z], () => E.Z.getEnabled(o)), L = l.useCallback((e, t, n) => {
+  } = (0, m.Z)(), A = (0, p.Q3)("GuildOnboardingPage"), S = null !== (n = null === (t = _.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff()) && void 0 !== n && n, B = (0, a.Wu)([E.Z], () => E.Z.getOnboardingPromptsForOnboarding(o)), W = (0, a.e7)([E.Z], () => E.Z.getEnabled(o)), L = l.useCallback((e, t, n) => {
     O.Z.selectOption(o, e, t, n)
   }, [o]), z = l.useCallback(() => {
-    O.Z.completeOnboarding(o, S)
-  }, [o, S]), F = (0, a.e7)([N.Z], () => N.Z.getGuild(o)), G = l.useMemo(() => null == F ? null : _.ZP.getGuildSplashURL({
+    O.Z.completeOnboarding(o, B)
+  }, [o, B]), F = (0, a.e7)([N.Z], () => N.Z.getGuild(o)), U = l.useMemo(() => null == F ? null : b.ZP.getGuildSplashURL({
     id: F.id,
     splash: F.splash
-  }), [F]), U = (0, p.N)(G), q = (0, a.e7)([I.ZP], () => I.ZP.getCurrentOnboardingStep(o)), [V, H] = l.useState(null != G ? null : "cover"), X = l.useCallback(e => {
+  }), [F]), G = (0, x.N)(U), q = (0, a.e7)([I.ZP], () => I.ZP.getCurrentOnboardingStep(o)), [V, H] = l.useState(null != U ? null : "cover"), X = l.useCallback(e => {
     H(q), O.Z.setUserOnboardingStep(o, e)
-  }, [o, q]), Y = (0, a.e7)([g.Z], () => g.Z.isFullServerPreview(o)), K = (0, a.e7)([I.ZP], () => I.ZP.getOnboardingStatus(o)), J = null != S && S.length > 0, Q = l.useCallback(() => {
+  }, [o, q]), Y = (0, a.e7)([g.Z], () => g.Z.isFullServerPreview(o)), K = (0, a.e7)([I.ZP], () => I.ZP.getOnboardingStatus(o)), J = null != B && B.length > 0, Q = l.useCallback(() => {
     (0, I.kp)(K) && W && J ? X(0) : z()
   }, [K, W, J, X, z]);
   l.useEffect(() => {
@@ -90,9 +90,9 @@ function T(e) {
       case "rules":
         return (0, r.jsx)(y.Z, {
           setCurrentStep: X,
-          previousPromptIndex: S.length - 1,
+          previousPromptIndex: B.length - 1,
           guild: F,
-          prompts: S,
+          prompts: B,
           completeOnboarding: z,
           disableTracking: Y
         });
@@ -101,7 +101,7 @@ function T(e) {
       default:
         return (0, r.jsx)(Z.Z, {
           guild: F,
-          prompts: S,
+          prompts: B,
           step: q,
           selectOption: L,
           completeOnboarding: z,
@@ -112,24 +112,24 @@ function T(e) {
   };
   return (0, r.jsxs)("div", {
     className: i()(D.main, {
-      [D.fullBorderWithGradient]: null == G && A && B
+      [D.fullBorderWithGradient]: null == U && A && S
     }),
     ref: T,
-    children: [null != G ? (0, r.jsx)(h.Z, {
+    children: [null != U ? (0, r.jsx)(h.Z, {
       className: D.artwork,
-      src: G,
+      src: U,
       width: R,
       height: M,
       imageClassName: D.cover
-    }) : A && B ? (0, r.jsx)(v.Z, {}) : (0, r.jsx)(u.Z, {
+    }) : A && S ? (0, r.jsx)(v.Z, {}) : (0, r.jsx)(u.Z, {
       className: D.artwork,
       preserveAspectRatio: "xMinYMin slice"
-    }), null != U && (0, r.jsx)("div", {
+    }), null != G && (0, r.jsx)("div", {
       className: D.gradient,
       style: {
-        background: "linear-gradient(180deg, ".concat((0, C.aD)(U, .16), " 0%, ").concat((0, C.aD)(U, 1), " 100%)")
+        background: "linear-gradient(180deg, ".concat((0, C.aD)(G, .16), " 0%, ").concat((0, C.aD)(G, 1), " 100%)")
       }
-    }), A && null == G && B ? null : (0, r.jsx)("div", {
+    }), A && null == U && S ? null : (0, r.jsx)("div", {
       className: D.gradient
     }), $((e, t, n) => {
       let {

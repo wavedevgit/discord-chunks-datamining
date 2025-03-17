@@ -1,6 +1,6 @@
 /**
   Module ID: 78114
-  Original File Name: 09f4c42cdc6acd9c
+  Original File Name: cddc87e465761b30
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -5121,6 +5121,17 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .buttonAnimationTrinkets__0923f {
     left: -10px
+}
+
+.wallpaperContainer__5fa7b {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-position: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat
 }
 
 .wrapper_ec15c1 {
@@ -15422,4 +15433,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=09f4c42cdc6acd9c.css.map*/
+/*# sourceMappingURL=cddc87e465761b30.css.map*/

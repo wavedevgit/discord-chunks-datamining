@@ -135,6 +135,9 @@ let u = {
         animationSource: "https://cdn.discordapp.com/assets/collectibles/drops/lofi_girl/hero_banner.webm"
       },
       animatedBanner: "https://cdn.discordapp.com/assets/collectibles/drops/lofi_girl/banner_animated.webm"
+    },
+    [c.T.NAMEPLATE]: {
+      animatedBanner: "https://cdn.discordapp.com/assets/content/6f72be1e45f627e6b43894ca7dcda02c2851a3120a643a85c5132e87af6b50c4.webm"
     }
   },
   d = e => u[e],

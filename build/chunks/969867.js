@@ -4,16 +4,16 @@ t.d(n, {
 });
 var r = t(200651),
   i = t(192379),
-  o = t(120356),
-  s = t.n(o),
+  s = t(120356),
+  o = t.n(s),
   a = t(481060),
   l = t(413335),
   c = t(762762),
   d = t(157353),
   u = t(279604),
   x = t(730621),
-  p = t(388032),
-  m = t(423839);
+  m = t(388032),
+  p = t(423839);
 
 function v(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -51,66 +51,74 @@ function _(e) {
   let {
     className: n,
     guildId: t,
-    powerup: o,
+    powerup: s,
     onError: _
   } = e, {
     onActivate: j,
     isLoading: h,
     error: f,
     onShowDeactivate: g
-  } = (0, u.ZP)(t, o), Z = (0, d.Z)(t, o);
+  } = (0, u.ZP)(t, s), Z = (0, d.Z)(t, s);
   i.useEffect(() => {
     null == _ || _(f)
   }, [f, _]);
   let {
     disabled: C,
     reason: N
-  } = (0, c.Z)(t, o, Z);
+  } = (0, c.Z)(t, s, Z);
   return (0, r.jsxs)("div", {
-    className: s()(m.container, n),
+    className: o()(p.container, n),
     children: [Z && (0, r.jsx)(a.ua7, {
-      "aria-label": p.NW.string(x.Z.TZsu1d),
+      delay: 100,
+      "aria-label": m.NW.string(x.Z.TZsu1d),
       text: (0, r.jsxs)("div", {
-        className: m.tooltipContainer,
+        className: p.tooltipContainer,
         children: [(0, r.jsx)(a.Text, {
           variant: "text-xs/semibold",
-          children: p.NW.string(x.Z.TZsu1d)
+          children: m.NW.string(x.Z.TZsu1d)
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/medium",
-          children: p.NW.formatToPlainString(x.Z["5HQUzM"], {
-            boostCount: o.cost
+          children: m.NW.formatToPlainString(x.Z["5HQUzM"], {
+            boostCount: s.cost
           })
         })]
       }),
-      children: e => (0, r.jsx)(a.zxk, b(v({}, e), {
-        className: m.secondaryButton,
+      children: e => (0, r.jsxs)(a.zxk, b(v({}, e), {
+        className: p.secondaryButton,
+        innerClassName: o()(p.buttonInner, p.secondaryButtonInner),
         color: a.Ttl.PRIMARY,
-        "aria-label": p.NW.string(x.Z.TZsu1d),
+        "aria-label": m.NW.string(x.Z.TZsu1d),
         grow: !1,
         onClick: g,
-        children: (0, r.jsx)(l.Z, {})
+        children: [(0, r.jsx)(a.mTd, {
+          size: "sm"
+        }), (0, r.jsx)(a.Text, {
+          variant: "text-sm/semibold",
+          children: s.cost
+        })]
       }))
     }), (0, r.jsx)(a.ua7, {
+      delay: 100,
       text: N,
       shouldShow: null != N,
       children: e => (0, r.jsxs)(a.zxk, b(v({}, e), {
         disabled: C,
-        className: m.primaryButton,
-        innerClassName: m.buttonInner,
-        wrapperClassName: m.buttonWrapper,
+        className: p.primaryButton,
+        innerClassName: p.buttonInner,
+        wrapperClassName: p.buttonWrapper,
         grow: !0,
         onClick: Z ? () => {} : j,
         submitting: !Z && h,
-        children: [Z ? p.NW.string(x.Z["g5Ds6+"]) : p.NW.string(x.Z.gSxlHR), !Z && (0, r.jsxs)(r.Fragment, {
+        children: [Z ? m.NW.string(x.Z["g5Ds6+"]) : m.NW.string(x.Z.gSxlHR), !Z && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("span", {
-            className: m.dot,
+            className: p.dot,
             children: "•"
           }), (0, r.jsx)(l.Z, {
             size: "sm",
-            className: m.boost,
+            className: p.boost,
             fill: "white"
           }), (0, r.jsx)("span", {
-            children: o.cost
+            children: s.cost
           })]
         })]
       }))

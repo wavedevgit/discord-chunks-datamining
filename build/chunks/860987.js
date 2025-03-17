@@ -7,6 +7,16 @@ function r(e) {
     setterId: e.setter_id
   } : void 0
 }
+
+function i(e) {
+  return {
+    id: e.id,
+    label: e.label,
+    default: e.default,
+    isBlurred: e.is_blurred
+  }
+}
 n.d(t, {
-  L: () => r
+  L: () => r,
+  w: () => i
 })

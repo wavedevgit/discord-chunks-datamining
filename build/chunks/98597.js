@@ -2,14 +2,14 @@
 n.d(t, {
   CN: () => N,
   ZP: () => D,
-  eP: () => E,
-  hR: () => w,
+  eP: () => w,
+  hR: () => E,
   jo: () => Z
 });
 var r, i = n(200651),
-  l = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  o = n(192379),
+  l = n(120356),
+  a = n.n(l),
   s = n(442837),
   c = n(481060),
   u = n(787014),
@@ -71,13 +71,13 @@ function Z(e, t) {
   return null == t ? x.containerDefault : e > t ? x.containerDragAfter : x.containerDragBefore
 }
 
-function w(e) {
+function E(e) {
   let {
     channel: t,
     disableManageChannels: n,
     tabIndex: r,
-    forceShowButtons: l,
-    hasChannelInfo: o = !1
+    forceShowButtons: o,
+    hasChannelInfo: l = !1
   } = e;
   if ((0, s.e7)([y.Z, _.Z], () => n || _.Z.getGuildId() === j.I_8 || !y.Z.can(j.Plq.MANAGE_CHANNELS, t) && !y.Z.can(j.Plq.MANAGE_ROLES, t) && !y.Z.can(j.Plq.MANAGE_WEBHOOKS, t) || (0, m.r8)(t.type) && !y.Z.can(j.Plq.VIEW_CHANNEL, t) || t.isGuildVocal() && !y.Z.can(j.Plq.CONNECT, t) || !m.dF.has(t.type))) return null;
 
@@ -94,7 +94,7 @@ function w(e) {
         onBlur: u
       } = e;
       return (0, i.jsx)(c.P3F, {
-        className: a()(x.iconItem, l ? x.alwaysShown : void 0, o ? x.iconWithChannelInfo : x.iconNoChannelInfo),
+        className: a()(x.iconItem, o ? x.alwaysShown : void 0, l ? x.iconWithChannelInfo : x.iconNoChannelInfo),
         onClick: d,
         tabIndex: r,
         "aria-label": C.NW.string(C.t["3gUsJS"]),
@@ -112,16 +112,16 @@ function w(e) {
   })
 }
 
-function E(e) {
+function w(e) {
   let {
     channel: t,
     isDefaultChannel: r = !1,
-    locked: l,
-    tabIndex: o,
+    locked: o,
+    tabIndex: l,
     forceShowButtons: u,
     hasChannelInfo: h = !1
   } = e, m = (0, s.e7)([v.Z], () => v.Z.getGuild(t.getGuildId())), _ = (0, s.e7)([f.Z], () => f.Z.getStageInstanceByChannel(t.id), [t.id]), O = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), S = (0, s.e7)([y.Z], () => (0, p.b)(y.Z, m, t, _)), N = (0, s.e7)([y.Z], () => y.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? C.NW.string(C.t.zJrgTE) : C.NW.string(C.t.Sd8Ix8));
-  if (l || !S) return null;
+  if (o || !S) return null;
 
   function Z() {
     if (null != m) {
@@ -140,17 +140,17 @@ function E(e) {
       })
     }
   }
-  let w = (0, i.jsx)(c.ejJ, {
+  let E = (0, i.jsx)(c.ejJ, {
     size: "xs",
     className: x.actionIcon,
     "aria-hidden": !0,
     color: "currentColor"
   });
-  return r && (w = (0, i.jsx)(g.Z, {
+  return r && (E = (0, i.jsx)(g.Z, {
     tutorialId: "instant-invite",
     position: "left",
     children: (0, i.jsx)("div", {
-      children: w
+      children: E
     })
   })), (0, i.jsx)(c.ua7, {
     text: N,
@@ -158,9 +158,9 @@ function E(e) {
       className: a()(x.iconItem, u ? x.alwaysShown : void 0, h ? x.iconWithChannelInfo : x.iconNoChannelInfo)
     }, e), {
       onClick: Z,
-      tabIndex: o,
+      tabIndex: l,
       "aria-label": N,
-      children: w
+      children: E
     }))
   })
 }
@@ -210,12 +210,12 @@ function A(e) {
     }))
   })
 }
-class D extends(r = l.PureComponent) {
+class D extends(r = o.PureComponent) {
   renderEditButton() {
-    return (0, i.jsx)(w, P({}, this.props))
+    return (0, i.jsx)(E, P({}, this.props))
   }
   renderInviteButton() {
-    return (0, i.jsx)(E, P({}, this.props))
+    return (0, i.jsx)(w, P({}, this.props))
   }
   renderRemoveSuggestionButton() {
     return (0, i.jsx)(T, P({}, this.props))

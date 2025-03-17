@@ -1,11 +1,11 @@
 /** Chunk was on 44799 **/
 t.r(n), t.d(n, {
-  default: () => p
+  default: () => m
 });
 var r = t(200651),
   i = t(512969),
-  o = t(442837),
-  s = t(353926),
+  s = t(442837),
+  o = t(353926),
   a = t(443002),
   l = t(430824),
   c = t(50101),
@@ -13,12 +13,12 @@ var r = t(200651),
   u = t(504392),
   x = t(981631);
 
-function p(e) {
+function m(e) {
   let {
     guildId: n,
     powerupSkuId: t
-  } = e, p = (0, o.e7)([l.Z], () => l.Z.getGuild(n)), m = (0, o.e7)([s.Z], () => s.Z.hasLoadedExperiments), v = (0, d.Z)(p), b = (0, c.Ek)(p, "GuildPowerupsPage");
-  return m && null != v && null != p ? b ? v ? (0, r.jsx)(u.Z, {
+  } = e, m = (0, s.e7)([l.Z], () => l.Z.getGuild(n)), p = (0, s.e7)([o.Z], () => o.Z.hasLoadedExperiments), v = (0, d.Z)(m), b = (0, c.Ek)(m, "GuildPowerupsPage");
+  return p && null != v && null != m ? b ? v ? (0, r.jsx)(u.Z, {
     guildId: n,
     powerupSkuId: t
   }) : (0, r.jsx)(a.Z, {
@@ -26,7 +26,7 @@ function p(e) {
       section: x.jXE.CHANNEL_LIST,
       object: x.qAy.GUILD_POWERUPS_CHANNEL_LIST_ITEM
     },
-    guild: p
+    guild: m
   }) : (0, r.jsx)(i.l_, {
     to: x.Z5c.CHANNEL(n)
   }) : null

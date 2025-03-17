@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  l = n(636977),
-  o = n(481060),
+  o = n(636977),
+  l = n(481060),
   a = n(571457),
   s = n(836768),
   c = n(749681),
@@ -31,7 +31,7 @@ let m = i.forwardRef(function(e, t) {
         return (0, c.transitionToGlobalDiscovery)({
           tab: p.GlobalDiscoveryTab.QUESTS,
           location: f.dr.DISCOVERY_COMPASS,
-          questContent: l.j.DISCOVERY_COMPASS,
+          questContent: o.j.DISCOVERY_COMPASS,
           questId: b
         });
       case p.GlobalDiscoveryTab.SERVERS:
@@ -64,6 +64,6 @@ let m = i.forwardRef(function(e, t) {
     },
     selected: n,
     tooltip: g.NW.string(g.t["4nEZLi"]),
-    icon: o.Jmo
+    icon: l.Jmo
   })
 })

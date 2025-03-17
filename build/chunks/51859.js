@@ -4,49 +4,49 @@ t.d(n, {
 }), t(47120), t(266796);
 var r = t(200651),
   i = t(192379),
-  o = t(120356),
-  s = t.n(o),
+  s = t(120356),
+  o = t.n(s),
   a = t(793030),
   l = t(157353),
   c = t(838968),
   d = t(969867),
   u = t(279604),
   x = t(730621),
-  p = t(388032),
-  m = t(709435);
+  m = t(388032),
+  p = t(709435);
 
 function v(e) {
   let {
     guildId: n,
     powerup: t
   } = e, {
-    onShowMore: o
+    onShowMore: s
   } = (0, u.ZP)(n, t), v = (0, l.Z)(n, t), [b, _] = i.useState(void 0);
   return (0, u.KT)(b), (0, r.jsxs)(c.Z, {
     label: t.title,
-    onClick: o,
+    onClick: s,
     active: v,
     children: [(0, r.jsx)("div", {
-      className: m.imageContainer,
+      className: p.imageContainer,
       children: (0, r.jsx)("img", {
         alt: ""
       })
     }), (0, r.jsxs)("div", {
-      className: m.contentContainer,
+      className: p.contentContainer,
       children: [(0, r.jsxs)("div", {
-        className: m.headerContainer,
+        className: p.headerContainer,
         children: [(0, r.jsx)(a.X6, {
           variant: "heading-md/bold",
           children: t.title
         }), t.bundle && (0, r.jsx)(a.xv, {
-          className: s()(m.bundle, {
-            [m.active]: v
+          className: o()(p.bundle, {
+            [p.active]: v
           }),
           variant: "text-xs/semibold",
-          children: p.NW.string(x.Z.j2jUjY)
+          children: m.NW.string(x.Z.j2jUjY)
         })]
       }), (0, r.jsx)(a.xv, {
-        className: m.description,
+        className: p.description,
         variant: "text-sm/medium",
         children: t.description
       }), (0, r.jsx)(c.Y, {
@@ -54,7 +54,7 @@ function v(e) {
         powerup: t
       })]
     }), (0, r.jsx)("div", {
-      className: m.buttonContainer,
+      className: p.buttonContainer,
       children: (0, r.jsx)(d.Z, {
         guildId: n,
         powerup: t,

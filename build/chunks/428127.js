@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  o = n(120356),
+  l = n.n(o),
   a = n(642128),
   s = n(442837),
   c = n(481060),
@@ -25,17 +25,17 @@ function v(e) {
   var t;
   let {
     guildChannels: n,
-    jumpToVoiceChannels: l
+    jumpToVoiceChannels: o
   } = e, a = n.getCategoryFromSection(n.voiceChannelsSectionNumber), s = (0, u.Z)(n.id), p = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), l()
-  }, [l]), f = null !== (t = null == a ? void 0 : a.getChannelRecords()) && void 0 !== t ? t : [], b = (0, h.c4)({
+    e.preventDefault(), e.stopPropagation(), o()
+  }, [o]), f = null !== (t = null == a ? void 0 : a.getChannelRecords()) && void 0 !== t ? t : [], b = (0, h.c4)({
     channels: f,
     selectedChannelId: null,
     selectedVoiceChannelId: null,
     voiceStates: s
   });
   return (0, r.jsxs)(c.P3F, {
-    className: o()(m.bar, m.voiceBar),
+    className: l()(m.bar, m.voiceBar),
     onClick: p,
     children: [(0, r.jsx)(c.gj8, {
       size: "custom",
@@ -64,7 +64,7 @@ function y(e) {
   let {
     position: t,
     guildChannels: n,
-    guildChannelsVersion: l,
+    guildChannelsVersion: o,
     jumpToVoiceChannels: u,
     jumpToChannel: d
   } = e, {
@@ -83,7 +83,7 @@ function y(e) {
     e.preventDefault(), e.stopPropagation(), null != C && d(C)
   }, [d, C]);
   return (0, r.jsx)("div", {
-    className: o()(m.container, {
+    className: l()(m.container, {
       [m.top]: "top" === t,
       [m.bottom]: "bottom" === t
     }),
@@ -92,7 +92,7 @@ function y(e) {
       style: S,
       "aria-hidden": x,
       children: O === f.x.HIDDEN ? (0, r.jsx)("div", {
-        className: o()(m.bar, m.emptyBar)
+        className: l()(m.bar, m.emptyBar)
       }) : O === f.x.UNREAD ? (0, r.jsxs)(c.P3F, {
         className: m.bar,
         onClick: P,
@@ -115,7 +115,7 @@ function y(e) {
           children: g.NW.string(g.t.FCRiT0)
         })]
       }) : O === f.x.MENTIONS ? (0, r.jsx)(c.P3F, {
-        className: o()(m.bar, m.mentionsBar),
+        className: l()(m.bar, m.mentionsBar),
         onClick: P,
         children: (0, r.jsx)(c.Text, {
           variant: "text-xs/semibold",
@@ -128,7 +128,7 @@ function y(e) {
       }) : O === f.x.VOICE_CHANNELS ? (0, r.jsx)(v, {
         jumpToVoiceChannels: u,
         guildChannels: n,
-        guildChannelsVersion: l
+        guildChannelsVersion: o
       }) : void 0
     })
   })

@@ -105,7 +105,7 @@ function Z() {
     et = null == ee ? void 0 : ee.getLegacyUsername(),
     en = (null !== (n = null === (e = Y.global_name) || void 0 === e ? void 0 : e.length) && void 0 !== n ? n : 0) > 0 ? Y.global_name : null !== (i = null == q ? void 0 : q.nick) && void 0 !== i ? i : [],
     er = (null !== (Z = null === (t = Y.bio) || void 0 === t ? void 0 : t.length) && void 0 !== Z ? Z : 0) > 0 ? Y.bio : null !== (w = null == q ? void 0 : q.bio) && void 0 !== w ? w : [],
-    ei = (0, c.V)(),
+    ei = (0, c.wu)(),
     es = (0, m.H)("DefaultCustomizationSections");
   return (0, r.jsxs)("div", {
     className: D.sectionsContainer,

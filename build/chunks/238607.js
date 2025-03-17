@@ -1,27 +1,28 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => S
 });
 var r = n(200651);
 n(192379);
 var i = n(442837),
   o = n(481060),
   a = n(40851),
-  s = n(841784),
-  l = n(906732),
-  c = n(499254),
-  u = n(827498),
-  d = n(397698),
-  f = n(541716),
-  _ = n(103450),
-  p = n(592125),
-  h = n(944486),
-  m = n(475413),
-  g = n(981631),
-  E = n(388032);
+  s = n(456100),
+  l = n(841784),
+  c = n(906732),
+  u = n(499254),
+  d = n(827498),
+  f = n(397698),
+  _ = n(541716),
+  p = n(103450),
+  h = n(592125),
+  m = n(944486),
+  g = n(475413),
+  E = n(981631),
+  b = n(388032);
 
-function b(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,20 +31,20 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function y(e, t) {
+function O(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,82 +55,88 @@ function y(e, t) {
   return n
 }
 
-function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function I(e) {
+function S(e) {
   let {
     user: t,
     activity: n,
-    onAction: b,
-    onClose: y
+    onAction: v,
+    onClose: O
   } = e, {
-    newestAnalyticsLocation: I
-  } = (0, l.ZP)(), S = (0, a.bp)() === g.IlC.POPOUT, T = (0, i.e7)([p.Z, h.Z], () => p.Z.getChannel(h.Z.getChannelId())), N = (0, _.e)({
+    newestAnalyticsLocation: S
+  } = (0, c.ZP)(), T = (0, a.bp)() === E.IlC.POPOUT, N = (0, i.e7)([h.Z, m.Z], () => h.Z.getChannel(m.Z.getChannelId())), A = (0, p.e)({
     activity: null != n ? n : void 0,
     embeddedActivity: void 0,
     user: t,
-    onClose: y
-  });
-  if (null == N && null != n && (0, s.Z)(n)) return (0, r.jsx)(m.tG, {
-    icon: o.jje,
-    text: E.NW.string(E.t.RscU7O),
+    onClose: O
+  }), {
+    enabled: C
+  } = s.c.useExperiment({
+    location: "ActivityButton"
+  }, {
+    autoTrackExposure: !0
+  }), R = C ? o.iWm : o.jje;
+  if (null == A && null != n && (0, l.Z)(n)) return (0, r.jsx)(g.tG, {
+    icon: R,
+    text: b.NW.string(b.t.RscU7O),
     color: o.Ttl.BRAND,
     themeColor: "none",
     fullWidth: !0,
     onClick: e => {
-      e.stopPropagation(), null == y || y(), null == b || b({
+      e.stopPropagation(), null == O || O(), null == v || v({
         action: "PRESS_PLAY_BUTTON"
-      }), (null == T ? void 0 : T.isVocal()) ? (0, d.Z)({
+      }), (null == N ? void 0 : N.isVocal()) ? (0, f.Z)({
         context: {
           type: "channel",
-          channel: T
+          channel: N
         },
-        analyticsLocation: I,
-        openInPopout: S
-      }) : (0, c.__)(u._b.TEXT, f.Ie.NORMAL, {
+        analyticsLocation: S,
+        openInPopout: T
+      }) : (0, u.__)(d._b.TEXT, _.Ie.NORMAL, {
         applicationId: n.application_id
       })
     }
   });
-  if (null == N) return null;
+  if (null == A) return null;
   let {
-    isJoining: A,
-    handleJoinRequest: C,
-    buttonCTA: R,
-    tooltip: P,
-    isEnabled: w,
-    isEmbedded: D
-  } = N;
-  return D ? (0, r.jsx)(o.ua7, {
-    text: P,
-    children: e => (0, r.jsx)(m.tG, O(v({}, e), {
+    isJoining: P,
+    handleJoinRequest: w,
+    buttonCTA: D,
+    tooltip: L,
+    isEnabled: x,
+    isEmbedded: M
+  } = A;
+  return M ? (0, r.jsx)(o.ua7, {
+    text: L,
+    children: e => (0, r.jsx)(g.tG, I(y({}, e), {
       icon: o.YVR,
-      text: R,
-      disabled: !w,
-      submitting: A,
+      text: D,
+      disabled: !x,
+      submitting: P,
       fullWidth: !0,
       onClick: e => {
-        e.stopPropagation(), null == b || b({
+        e.stopPropagation(), null == v || v({
           action: "PRESS_JOIN_BUTTON"
-        }), C()
+        }), w()
       }
     }))
   }) : (0, r.jsx)(o.ua7, {
-    text: P,
-    children: e => (0, r.jsx)(m.tG, O(v({}, e), {
+    text: L,
+    children: e => (0, r.jsx)(g.tG, I(y({}, e), {
       icon: o.iWm,
-      text: R,
-      disabled: !w,
-      submitting: A,
+      text: D,
+      disabled: !x,
+      submitting: P,
       fullWidth: !0,
       onClick: e => {
-        e.stopPropagation(), null == b || b({
+        e.stopPropagation(), null == v || v({
           action: "PRESS_ASK_TO_JOIN_BUTTON"
-        }), C()
+        }), w()
       }
     }))
   })
