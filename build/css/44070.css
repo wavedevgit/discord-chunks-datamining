@@ -1,6 +1,6 @@
 /**
   Module ID: 44070
-  Original File Name: e147a38f6ce53923
+  Original File Name: bb1150daf414806e
 **/
 @value minColumnWidth: 460px;
 
@@ -2482,23 +2482,23 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .nameplatePreviewRootContainer_c3d04b {
-    width: 100%;
     height: 252px;
+    align-items: center
+}
+
+.nameplatePreviewList_c3d04b,.nameplatePreviewRootContainer_c3d04b {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center
+    justify-content: center
 }
 
 .nameplatePreviewList_c3d04b {
     max-width: 252px;
-    width: 100%;
     padding: 0 8px;
     box-sizing: border-box;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly
+    gap: 4px
 }
 
 .nameplatePreviewSampleItem_c3d04b {
@@ -2528,6 +2528,22 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .placeholderItemChildrenLight_c3d04b {
     background-color: var(--primary-230)
+}
+
+.fadeIn_c3d04b {
+    -webkit-mask-image: linear-gradient(180deg,transparent 0,#000 40%);
+    mask-image: linear-gradient(180deg,transparent 0,#000 40%)
+}
+
+.fadeIn_c3d04b,.fadeOut_c3d04b {
+    width: 100%;
+    height: auto;
+    position: relative
+}
+
+.fadeOut_c3d04b {
+    -webkit-mask-image: linear-gradient(0deg,transparent 0,#000 40%);
+    mask-image: linear-gradient(0deg,transparent 0,#000 40%)
 }
 
 .left_caab99 {
@@ -3914,4 +3930,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-right: auto
 }
 
-/*# sourceMappingURL=e147a38f6ce53923.css.map*/
+/*# sourceMappingURL=bb1150daf414806e.css.map*/

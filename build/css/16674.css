@@ -1,6 +1,6 @@
 /**
   Module ID: 16674
-  Original File Name: 7dd231f96f5b0822
+  Original File Name: a618b7135efbe75f
 **/
 .hoverRoll__0263c {
     display: inline-block;
@@ -981,23 +981,23 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .nameplatePreviewRootContainer_c3d04b {
-    width: 100%;
     height: 252px;
+    align-items: center
+}
+
+.nameplatePreviewList_c3d04b,.nameplatePreviewRootContainer_c3d04b {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center
+    justify-content: center
 }
 
 .nameplatePreviewList_c3d04b {
     max-width: 252px;
-    width: 100%;
     padding: 0 8px;
     box-sizing: border-box;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly
+    gap: 4px
 }
 
 .nameplatePreviewSampleItem_c3d04b {
@@ -1027,6 +1027,22 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .placeholderItemChildrenLight_c3d04b {
     background-color: var(--primary-230)
+}
+
+.fadeIn_c3d04b {
+    -webkit-mask-image: linear-gradient(180deg,transparent 0,#000 40%);
+    mask-image: linear-gradient(180deg,transparent 0,#000 40%)
+}
+
+.fadeIn_c3d04b,.fadeOut_c3d04b {
+    width: 100%;
+    height: auto;
+    position: relative
+}
+
+.fadeOut_c3d04b {
+    -webkit-mask-image: linear-gradient(0deg,transparent 0,#000 40%);
+    mask-image: linear-gradient(0deg,transparent 0,#000 40%)
 }
 
 .lineClamp__0b48b {
@@ -1772,4 +1788,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=7dd231f96f5b0822.css.map*/
+/*# sourceMappingURL=a618b7135efbe75f.css.map*/

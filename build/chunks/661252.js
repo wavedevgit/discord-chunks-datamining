@@ -1,4 +1,4 @@
-/** Chunk was on 98697 **/
+/** Chunk was on 93886 **/
 e.exports = {
   shopCard: "shopCard_c3d04b",
   cardButtonInner: "cardButtonInner_c3d04b",
@@ -9,6 +9,7 @@ e.exports = {
   shopCardAnimation: "shopCardAnimation_c3d04b",
   avatarContainer: "avatarContainer_c3d04b",
   mysteryAvatarContainer: "mysteryAvatarContainer_c3d04b",
+  fadeIn: "fadeIn_c3d04b",
   cardText: "cardText_c3d04b",
   darkCardBackground: "darkCardBackground_c3d04b",
   lightCardBackground: "lightCardBackground_c3d04b",
@@ -36,5 +37,6 @@ e.exports = {
   nameplatePreviewList: "nameplatePreviewList_c3d04b",
   nameplatePreviewSampleItem: "nameplatePreviewSampleItem_c3d04b",
   placeholderItem: "placeholderItem_c3d04b",
-  placeholderBar: "placeholderBar_c3d04b"
+  placeholderBar: "placeholderBar_c3d04b",
+  fadeOut: "fadeOut_c3d04b"
 }

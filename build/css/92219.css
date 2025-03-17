@@ -1,6 +1,6 @@
 /**
   Module ID: 92219
-  Original File Name: 4f4951fe511a58b5
+  Original File Name: bf1f7711a6c71a57
 **/
 @value minColumnWidth: 460px;
 
@@ -1461,23 +1461,23 @@
 }
 
 .nameplatePreviewRootContainer_c3d04b {
-    width: 100%;
     height: 252px;
+    align-items: center
+}
+
+.nameplatePreviewList_c3d04b,.nameplatePreviewRootContainer_c3d04b {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center
+    justify-content: center
 }
 
 .nameplatePreviewList_c3d04b {
     max-width: 252px;
-    width: 100%;
     padding: 0 8px;
     box-sizing: border-box;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly
+    gap: 4px
 }
 
 .nameplatePreviewSampleItem_c3d04b {
@@ -1507,6 +1507,22 @@
 
 .placeholderItemChildrenLight_c3d04b {
     background-color: var(--primary-230)
+}
+
+.fadeIn_c3d04b {
+    -webkit-mask-image: linear-gradient(180deg,transparent 0,#000 40%);
+    mask-image: linear-gradient(180deg,transparent 0,#000 40%)
+}
+
+.fadeIn_c3d04b,.fadeOut_c3d04b {
+    width: 100%;
+    height: auto;
+    position: relative
+}
+
+.fadeOut_c3d04b {
+    -webkit-mask-image: linear-gradient(0deg,transparent 0,#000 40%);
+    mask-image: linear-gradient(0deg,transparent 0,#000 40%)
 }
 
 .messageBlock__2d815 {
@@ -1691,4 +1707,4 @@
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=4f4951fe511a58b5.css.map*/
+/*# sourceMappingURL=bf1f7711a6c71a57.css.map*/

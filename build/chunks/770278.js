@@ -36,7 +36,7 @@ function f(e) {
 }
 let _ = 8;
 var p = function(e) {
-  return e.SUBTLE = "SUBTLE", e.DARK = "DARK", e.BLUR = "BLUR", e.IMMERSIVE = "IMMERSIVE", e.LIGHTBOX = "LIGHTBOX", e
+  return e.SUBTLE = "SUBTLE", e.DARK = "DARK", e.BLUR = "BLUR", e.IMMERSIVE = "IMMERSIVE", e.LIGHTBOX = "LIGHTBOX", e.TOP_RADIAL = "TOP_RADIAL", e
 }({});
 
 function h() {
@@ -49,7 +49,8 @@ function h() {
     DARK: t,
     BLUR: t,
     IMMERSIVE: (0, l.dQu)(l.TVs.colors.BG_BACKDROP_IMMERSIVE).spring(),
-    LIGHTBOX: (0, l.dQu)(l.TVs.colors.OVERLAY_BACKDROP_LIGHTBOX).spring()
+    LIGHTBOX: (0, l.dQu)(l.TVs.colors.OVERLAY_BACKDROP_LIGHTBOX).spring(),
+    TOP_RADIAL: t
   }
 }
 let m = i.forwardRef(function(e, t) {
@@ -90,7 +91,9 @@ let m = i.forwardRef(function(e, t) {
   return (0, r.jsx)(d, {
     children: I((e, t) => t ? (0, r.jsx)(s.animated.div, {
       className: a()(u.backdrop, u.withLayer),
-      style: e,
+      style: "TOP_RADIAL" === n ? {
+        background: "radial-gradient(96.68% 96.68% at 50.04% 3.32%, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0.00) 100%)"
+      } : e,
       onClick: m
     }) : null)
   })
