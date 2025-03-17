@@ -4,6 +4,7 @@ n.d(t, {
   $0: () => P,
   AN: () => j,
   Ct: () => A,
+  DU: () => V,
   EQ: () => F,
   Ej: () => S,
   ME: () => m,
@@ -21,7 +22,7 @@ n.d(t, {
   g_: () => p,
   hs: () => b,
   j4: () => R,
-  ks: () => Z,
+  ks: () => H,
   lX: () => v,
   m_: () => h,
   qH: () => L,
@@ -50,7 +51,7 @@ function f(e, t) {
   try {
     let n = d[t.premiumType];
     if (null == n) return u.warn("Cannot find the corresponding SKU to the user's premium type ".concat(t.premiumType)), !1;
-    let r = V[n];
+    let r = Z[n];
     if (null == r) return u.warn("Cannot find the corresponding product catalog entry to the user's SKU ".concat(n, " and premium type ").concat(t.premiumType)), !1;
     return r.skuFeatures.includes(e)
   } catch (e) {
@@ -93,12 +94,13 @@ let U = new _(r.q.INCREASED_GUILD_LIMIT),
   G = new _(r.q.INCREASED_MESSAGE_LENGTH),
   B = new _("increasedVideoUploadQuality"),
   F = new _("uploadLargeFiles"),
-  V = Object.freeze({
+  V = new _(r.q.CHAT_WALLPAPERS),
+  Z = Object.freeze({
     [c.Si.TIER_0]: new l.Z(c.Si.TIER_0, [p, h, m, I, j, B, F, A]),
     [c.Si.TIER_1]: new l.Z(c.Si.TIER_1, [p, h, v, y, I, R, w, x, B, F, A]),
-    [c.Si.TIER_2]: new l.Z(c.Si.TIER_2, [p, h, m, g, E, v, y, O, I, S, C, R, P, w, D, x, M, k, j, U, G, B, F, A, T, L, b, N])
+    [c.Si.TIER_2]: new l.Z(c.Si.TIER_2, [p, h, m, g, E, v, y, O, I, S, C, R, P, w, D, x, M, k, j, U, G, B, F, A, T, L, b, N, V])
   });
 
-function Z(e, t) {
+function H(e, t) {
   return !(0, s.U)("canUserUse", t) && e.getFeatureValue(t)
 }

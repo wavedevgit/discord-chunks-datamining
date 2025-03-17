@@ -24,12 +24,12 @@ n.d(t, {
   Ue: () => eY,
   V7: () => ea,
   W_: () => ej,
-  Wz: () => tO,
+  Wz: () => tI,
   XK: () => ez,
   Z8: () => ep,
-  ZP: () => tR,
+  ZP: () => tP,
   Zx: () => eq,
-  _O: () => tI,
+  _O: () => tS,
   a5: () => eG,
   aS: () => F,
   al: () => eK,
@@ -51,7 +51,7 @@ n.d(t, {
   uZ: () => e_,
   v6: () => eN,
   v9: () => eX,
-  xG: () => tC,
+  xG: () => tR,
   yd: () => O.yd,
   zL: () => ei,
   zV: () => eL
@@ -495,7 +495,7 @@ function en(e) {
     activeDiscountInfo: v,
     renewalInvoicePreview: y,
     hasFractionalPremiumWithSub: O
-  } = e, I = N.GP[h], T = ty(B(I.id), I.interval), A = eD(p) || null == p.paymentSourceId && !p.isPurchasedExternally && !(null === (t = d.default.getCurrentUser()) || void 0 === t ? void 0 : t.hasFreePremium()), R = null != m && null == p.paymentGateway, P = p.status === S.O0b.UNPAID && null !== p.latestInvoice && (null === (n = p.latestInvoice) || void 0 === n ? void 0 : n.status) === S.hUK.OPEN, w = A ? S.O0b.CANCELED : P ? S.O0b.UNPAID : p.status, D = null === (o = null !== (i = null == y ? void 0 : y.taxInclusive) && void 0 !== i ? i : null === (r = p.latestInvoice) || void 0 === r ? void 0 : r.taxInclusive) || void 0 === o || o, L = N.cb + (E ? ed(p.additionalPlans) : 0), x = R ? D ? C.NW.format(C.t["cd+hqK"], {
+  } = e, I = N.GP[h], T = tO(B(I.id), I.interval), A = eD(p) || null == p.paymentSourceId && !p.isPurchasedExternally && !(null === (t = d.default.getCurrentUser()) || void 0 === t ? void 0 : t.hasFreePremium()), R = null != m && null == p.paymentGateway, P = p.status === S.O0b.UNPAID && null !== p.latestInvoice && (null === (n = p.latestInvoice) || void 0 === n ? void 0 : n.status) === S.hUK.OPEN, w = A ? S.O0b.CANCELED : P ? S.O0b.UNPAID : p.status, D = null === (o = null !== (i = null == y ? void 0 : y.taxInclusive) && void 0 !== i ? i : null === (r = p.latestInvoice) || void 0 === r ? void 0 : r.taxInclusive) || void 0 === o || o, L = N.cb + (E ? ed(p.additionalPlans) : 0), x = R ? D ? C.NW.format(C.t["cd+hqK"], {
     price: m
   }) : C.NW.format(C.t.NUkcpK, {
     price: m
@@ -799,7 +799,7 @@ function eu(e) {
 }
 
 function ed(e) {
-  let t = p.Z.getPlanIdsForSkus([tO(N.Si.GUILD)]);
+  let t = p.Z.getPlanIdsForSkus([tI(N.Si.GUILD)]);
   i()(null != t, "Missing guildSubscriptionPlanIds");
   let n = e.find(e => {
     let {
@@ -947,14 +947,14 @@ function eE(e, t) {
 function eb(e, t) {
   let n = a()(e);
   if (t.length > 0) {
-    let e = tA(t);
+    let e = tC(t);
     n = n.add(e, "hours")
   }
   return n.toDate()
 }
 
 function ev(e) {
-  let t = tA(e.unactivatedUnits);
+  let t = tC(e.unactivatedUnits);
   if (!(t > 0 && e.fractionalState === N.a$.NONE)) return "";
   let n = {
       days: C.t.fYmir6,
@@ -1141,7 +1141,7 @@ function eM(e, t, n, r) {
       }
     }), t
   }
-  let a = p.Z.getForSkuAndInterval(tO(N.Si.GUILD), o.interval, o.intervalCount);
+  let a = p.Z.getForSkuAndInterval(tI(N.Si.GUILD), o.interval, o.intervalCount);
   if (null == a) {
     let t = Error("Unsupported plan");
     throw (0, m.q2)(t, {
@@ -1564,39 +1564,43 @@ function tv(e) {
   return (0, c.ks)(c.Ry, e)
 }
 
-function ty(e, t) {
+function ty(e) {
+  return (0, c.ks)(c.DU, e)
+}
+
+function tO(e, t) {
   let n = (0, I.T4)(e.amount, e.currency),
     r = z(t);
   return "".concat(n, "/").concat(r)
 }
 
-function tO(e) {
+function tI(e) {
   return e
 }
 
-function tI(e) {
+function tS(e) {
   return "isNitroLocked" in e
 }
 
-function tS(e) {
+function tT(e) {
   return null != e && N.OT.includes(e) ? 1 : 2
 }
 
-function tT(e) {
+function tN(e) {
   if (e === N.rV.YEAR) return C.NW.string(C.t.tfqrho);
   if (e === N.rV.MONTH) return C.NW.string(C.t.FPybU1);
   throw Error("Invalid interval type: ".concat(e))
 }
 
-function tN(e) {
+function tA(e) {
   return null != e && !e.isProvisional && !e.bot
 }
 
-function tA(e) {
-  return tC(e.map(e => e.skuId))
+function tC(e) {
+  return tR(e.map(e => e.skuId))
 }
 
-function tC(e) {
+function tR(e) {
   return e.reduce((e, t) => {
     let [n, r] = N.Cx[t], i = 1;
     switch (n) {
@@ -1609,12 +1613,12 @@ function tC(e) {
     return e + i * r
   }, 0)
 }
-let tR = Object.freeze({
+let tP = Object.freeze({
   isNewUser: e => null != e && Date.now() - e.createdAt.getTime() < j,
   isPremiumAtLeast: O.yd,
   isPremium: O.I5,
   isPremiumExactly: O.M5,
-  isPremiumEligible: tN,
+  isPremiumEligible: tA,
   getPrice: F,
   getDefaultPrice: B,
   getInterval: W,
@@ -1625,8 +1629,8 @@ let tR = Object.freeze({
   getDisplayPremiumType: ee,
   getPremiumPlanOptions: ea,
   getUpgradeEligibilities: ec,
-  getReverseTrialWeeks: tS,
-  formatInterval: tT,
+  getReverseTrialWeeks: tT,
+  formatInterval: tN,
   getPlanDescription: en,
   isPremiumSku: eo,
   getClosestUpgrade: eu,
@@ -1655,8 +1659,8 @@ let tR = Object.freeze({
   getPremiumTypeFromSubscription: e1,
   getPremiumTypeFromSubscriptionRenewalMutations: e2,
   getPremiumGradientColor: e3,
-  getUnactivatedFractionalPremiumHours: tA,
-  castPremiumSubscriptionAsSkuId: tO,
+  getUnactivatedFractionalPremiumHours: tC,
+  castPremiumSubscriptionAsSkuId: tI,
   canUseAnimatedEmojis: e4,
   canUseEmojisEverywhere: e6,
   canUseSoundboardEverywhere: e5,
@@ -1684,6 +1688,7 @@ let tR = Object.freeze({
   canUseCustomNotificationSounds: tE,
   canUsePremiumVoiceFilters: tb,
   canUseIncreasedRecentAvatarsLimit: tv,
-  formatPriceString: ty,
+  canUseChatWallpapers: ty,
+  formatPriceString: tO,
   StreamQuality: U
 })

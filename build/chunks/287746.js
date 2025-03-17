@@ -843,8 +843,7 @@ let e7 = i.memo(function(e) {
     return null != f && null !== (r = null === (e = eO.ZP.getMember(null !== (t = null == n ? void 0 : n.id) && void 0 !== t ? t : ez.lds, null == f ? void 0 : f.id)) || void 0 === e ? void 0 : e.isPending) && void 0 !== r && r
   }), g = (0, d.e7)([es.Z], () => es.Z.isEnabled()), b = (0, ed.Z)(t.id), _ = (0, ee.Z)(t.id), C = (0, Z.R)({
     channel: t,
-    chatInputType: l,
-    location: "ChannelChatMemo"
+    chatInputType: l
   }), v = (0, D.h9)(t.id), y = (0, eg.k)(t.id), {
     isInitialLoading: j,
     primaryEntryPointCommand: N,
