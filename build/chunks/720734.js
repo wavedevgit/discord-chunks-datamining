@@ -148,16 +148,15 @@ function eQ(e) {
     handleMouseLeave: l,
     renderNameTag: o,
     nameplate: c,
-    hovered: d,
-    isSpeaking: u
-  } = e, m = (0, G.Q3)("RTC Avatar"), {
-    coloredIconsEnabled: g
+    hovered: d
+  } = e, u = (0, G.Q3)("RTC Avatar"), {
+    coloredIconsEnabled: m
   } = (0, eu.Z)({
     location: "RTC Avatar"
-  }), p = (0, P.Z)(null == i ? void 0 : i.avatarDecoration), h = (0, eP.NZ)({
-    avatarDecoration: p,
+  }), g = (0, P.Z)(null == i ? void 0 : i.avatarDecoration), p = (0, eP.NZ)({
+    avatarDecoration: g,
     size: (0, R.y9)(f.EFr.SIZE_32)
-  }), x = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE), b = (0, X.A)(c);
+  }), h = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE), x = (0, X.A)(c);
   return null == i ? null : (0, r.jsx)(_.Z, {
     object: eU.qAy.AVATAR,
     children: (0, r.jsx)(f.yRy, {
@@ -188,21 +187,20 @@ function eQ(e) {
         withMutualFriends: !1
       }),
       children: e => (0, r.jsxs)(f.P3F, eY(ez({
-        style: b
+        style: x
       }, e), {
         "aria-label": eG.NW.string(eG.t["3Uj+2t"]),
-        className: a()(eF.avatarWrapper, !m && g && eF.experiment, {
+        className: a()(eF.avatarWrapper, !u && m && eF.experiment, {
           [eF.plated]: null != c
         }),
         children: [(0, r.jsx)(Q.Z, {
           nameplate: c,
           hovered: d,
-          isSpeaking: u,
           placement: J.i.ACCOUNT
         }), (0, r.jsx)(eK, {
-          size: m ? f.EFr["SIZE_".concat(x)] : f.EFr.SIZE_32,
-          src: i.getAvatarURL(void 0, m ? x - 4 : 32, !1),
-          avatarDecoration: h,
+          size: u ? f.EFr["SIZE_".concat(h)] : f.EFr.SIZE_32,
+          src: i.getAvatarURL(void 0, u ? h - 4 : 32, !1),
+          avatarDecoration: p,
           "aria-label": i.username,
           status: n ? eU.Skl.STREAMING : s,
           isSpeaking: t,
@@ -300,14 +298,11 @@ class e$ extends i.PureComponent {
   renderAvatarWithPopout() {
     let {
       hovered: e
-    } = this.state, {
-      speaking: t
-    } = this.props;
+    } = this.state;
     return (0, r.jsx)(eQ, eY(ez({}, this.props), {
       hovered: e,
       handleMouseLeave: this.handleMouseLeave,
-      renderNameTag: this.renderNameTag,
-      isSpeaking: t
+      renderNameTag: this.renderNameTag
     }))
   }
   renderNameZone() {

@@ -11,8 +11,8 @@ var r = n(200651),
   c = n(232567),
   u = n(388905),
   d = n(353926),
-  h = n(82554),
-  p = n(726521),
+  p = n(82554),
+  h = n(726521),
   g = n(185625),
   m = n(314897),
   _ = n(63063),
@@ -75,7 +75,7 @@ let I = e => {
         await (0, g.yL)(i, e)
       }, a = async t => await (0, g.RV)(i, e, t), l = e => {
         let t = null == e ? void 0 : e.token;
-        i === h.BM.MESSAGE ? (0, p.eE)(t) : i === h.BM.USER && (0, p.JM)(t)
+        i === p.BM.MESSAGE ? (0, h.eE)(t) : i === p.BM.USER && (0, h.JM)(t)
       };
       t(), (0, s.ZDy)(async () => {
         let {
@@ -104,7 +104,7 @@ let I = e => {
     })
   },
   j = () => {
-    let [e, t] = i.useState(!0), [n, o] = i.useState(!1), p = (0, a.e7)([m.default], () => m.default.isAuthenticated()), v = (0, a.e7)([d.Z], () => d.Z.hasLoadedExperiments), E = () => {
+    let [e, t] = i.useState(!0), [n, o] = i.useState(!1), h = (0, a.e7)([m.default], () => m.default.isAuthenticated()), v = (0, a.e7)([d.Z], () => d.Z.hasLoadedExperiments), E = () => {
       (0, g.qJ)().then(() => {
         t(!1), o(!0)
       }).catch(() => {
@@ -112,10 +112,10 @@ let I = e => {
       })
     };
     return i.useEffect(() => {
-      p ? (t(!0), c.k({
+      h ? (t(!0), c.k({
         withAnalyticsToken: !0
       }).then(() => E()).catch(() => t(!1))) : E()
-    }, [p]), i.useEffect(() => {
+    }, [h]), i.useEffect(() => {
       (async () => {
         v || (await l.Z.getLocationMetadata(), l.Z.getExperiments())
       })()
@@ -134,10 +134,10 @@ let I = e => {
         className: x.container,
         children: [(0, r.jsx)(I, {
           title: b.NW.string(b.t.fuqnBA),
-          menuType: h.BM.MESSAGE
+          menuType: p.BM.MESSAGE
         }), (0, r.jsx)(I, {
           title: b.NW.string(b.t.F4jrRU),
-          menuType: h.BM.USER
+          menuType: p.BM.USER
         })]
       })]
     })

@@ -12,8 +12,8 @@ var r = n(913527),
   c = n(314897),
   u = n(626135),
   d = n(573261),
-  h = n(959776),
-  p = n(981631),
+  p = n(959776),
+  h = n(981631),
   g = n(723359);
 
 function m(e) {
@@ -84,17 +84,17 @@ function _(e) {
   } = e;
   return a.Z.dispatch({
     type: "REGISTER"
-  }), null != x && ((0, h.Z)(x, p.jXE.REGISTER), u.default.track(p.rMx.AGE_GATE_ACTION, {
+  }), null != x && ((0, p.Z)(x, h.jXE.REGISTER), u.default.track(h.rMx.AGE_GATE_ACTION, {
     source: g.L0.REGISTER,
     action: g.Al.AGE_GATE_SUBMITTED
   }), function(e) {
     let t;
     let n = i()().diff(e, "years");
-    n < 13 || (t = n >= 13 && n <= 17 ? "13-17" : n >= 18 && n <= 22 ? "18-22" : "23+", u.default.track(p.rMx.USER_AGE_SUBMITTED, {
+    n < 13 || (t = n >= 13 && n <= 17 ? "13-17" : n >= 18 && n <= 22 ? "18-22" : "23+", u.default.track(h.rMx.USER_AGE_SUBMITTED, {
       age_bucket: t
     }))
   }(x)), d.Z.post({
-    url: p.ANM.REGISTER,
+    url: h.ANM.REGISTER,
     body: {
       fingerprint: c.default.getFingerprint(),
       email: t,
@@ -124,13 +124,13 @@ function _(e) {
     a.Z.dispatch({
       type: "REGISTER_SUCCESS",
       token: e.body.token
-    }), u.default.track(p.rMx.AGE_GATE_ACTION, {
+    }), u.default.track(h.rMx.AGE_GATE_ACTION, {
       source: g.L0.REGISTER,
       action: g.Al.AGE_GATE_SUCCESS
     })
   }, e => {
     let t = new s.Z(e);
-    throw null != t.getFieldErrors("date_of_birth") && l.wE(g.L0.REGISTER), u.default.track(p.rMx.REGISTER_SUBMIT_ERRORED, {
+    throw null != t.getFieldErrors("date_of_birth") && l.wE(g.L0.REGISTER), u.default.track(h.rMx.REGISTER_SUBMIT_ERRORED, {
       is_unique_username_registration: !0,
       email_error_reason: t.getFirstFieldErrorMessage("email"),
       phone_error_reason: t.getFirstFieldErrorMessage("phone"),

@@ -18,8 +18,8 @@ var o = n(200651),
   g = n(672339),
   m = n(898531),
   h = n(131951),
-  C = n(594174),
-  v = n(626135),
+  v = n(594174),
+  C = n(626135),
   S = n(747545),
   T = n(981631),
   I = n(388032),
@@ -31,11 +31,11 @@ function O(e) {
     videoEnabled: n,
     onEnable: O,
     onClose: x
-  } = e, B = h.Z.getCameraComponent(), y = (0, u.Dt)(), P = (0, m.Z)(), w = b.qF.useSetting(), [A, L] = a.useState((0, p.P)(C.default.getCurrentUser())), E = (0, l.O)(), {
+  } = e, B = h.Z.getCameraComponent(), y = (0, u.Dt)(), P = (0, m.Z)(), w = b.qF.useSetting(), [A, L] = a.useState((0, p.P)(v.default.getCurrentUser())), E = (0, l.O)(), {
     analyticsLocations: D
   } = (0, _.ZP)(d.Z.CAMERA_PREVIEW), N = a.useRef(null);
   a.useEffect(() => {
-    v.default.track(T.rMx.OPEN_MODAL, {
+    C.default.track(T.rMx.OPEN_MODAL, {
       type: "Camera Preview Modal"
     })
   }, []), a.useEffect(() => {
@@ -125,7 +125,7 @@ function O(e) {
             type: r.XZJ.Types.INVERTED,
             value: w,
             onChange: () => {
-              b.qF.updateSetting(!w), v.default.track(T.rMx.UPDATE_USER_SETTINGS_LOCAL, {
+              b.qF.updateSetting(!w), C.default.track(T.rMx.UPDATE_USER_SETTINGS_LOCAL, {
                 always_preview_video: !w
               })
             },

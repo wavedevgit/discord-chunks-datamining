@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  FW: () => p,
+  FW: () => h,
   Pk: () => l,
   Rq: () => m,
   W_: () => a,
@@ -39,22 +39,22 @@ async function d(e) {
   }, e))
 }
 
-function h(e, t) {
+function p(e, t) {
   return i()(null != e.privateKey, "private key cannot be null"), window.crypto.subtle.decrypt({
     name: "RSA-OAEP",
     hash: "SHA-256"
   }, e.privateKey, t)
 }
-async function p(e, t) {
+async function h(e, t) {
   let n = new TextDecoder,
-    r = await h(e, u(t));
+    r = await p(e, u(t));
   return n.decode(r)
 }
 async function g(e, t) {
-  return c(await h(e, u(t)))
+  return c(await p(e, u(t)))
 }
 async function m(e, t) {
-  let n = (t = await p(e, t)).match(/^(\d+):(\d{1,4}):([a-zA-Z0-9_]+):(.*)$/);
+  let n = (t = await h(e, t)).match(/^(\d+):(\d{1,4}):([a-zA-Z0-9_]+):(.*)$/);
   if (null == n) throw Error("Invalid encoded user record.");
   let [, r, i, a, s] = n;
   return new o.Z({

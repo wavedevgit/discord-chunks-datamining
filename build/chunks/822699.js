@@ -11,8 +11,8 @@ var r = n(200651),
   c = n(570140),
   u = n(893776),
   d = n(533307),
-  h = n(447543),
-  p = n(126399),
+  p = n(447543),
+  h = n(126399),
   g = n(521379),
   m = n(765717),
   _ = n(267394),
@@ -98,8 +98,8 @@ let eo = (0, L.Z)(V.Z),
   ec = (0, L.Z)(G.Z),
   eu = (0, L.Z)(j.Z),
   ed = (0, L.Z)(q.Z),
-  eh = (0, L.Z)(k.Z),
-  ep = (0, L.Z)(W.Z),
+  ep = (0, L.Z)(k.Z),
+  eh = (0, L.Z)(W.Z),
   eg = (0, L.Z)(Q.Z),
   em = (0, L.Z)(b.Z),
   e_ = (0, L.Z)(J.Z),
@@ -149,14 +149,14 @@ class eC extends i.PureComponent {
       load_time: R.Z.getTimeSinceNavigationStart()
     }, {
       flush: !0
-    })), (t || ee.a) && this.resolveInvite(), this.resolveGiftCode(), this.resolveGuildTemplate(), p.Z.initialize()
+    })), (t || ee.a) && this.resolveInvite(), this.resolveGiftCode(), this.resolveGuildTemplate(), h.Z.initialize()
   }
   componentDidUpdate(e) {
     var t, n;
     e.hasLoadedExperiments || !this.props.hasLoadedExperiments || ee.a || this.resolveInvite(), (null === (t = e.invite) || void 0 === t ? void 0 : t.state) !== (null === (n = this.props.invite) || void 0 === n ? void 0 : n.state) && this.maybeFetchApplicationSplash()
   }
   componentWillUnmount() {
-    p.Z.terminate()
+    h.Z.terminate()
   }
   maybeFetchApplicationSplash() {
     let {
@@ -181,8 +181,8 @@ class eC extends i.PureComponent {
     if (null == e) return;
     let {
       invite: t
-    } = await h.ZP.resolveInvite(e, $.Usc.INVITE);
-    null != t && ((0, _.A)(t), null != t.type && et.xf.has(t.type) && h.ZP.openNativeAppModal(e))
+    } = await p.ZP.resolveInvite(e, $.Usc.INVITE);
+    null != t && ((0, _.A)(t), null != t.type && et.xf.has(t.type) && p.ZP.openNativeAppModal(e))
   }
   resolveGuildTemplate() {
     let {
@@ -302,7 +302,7 @@ class eC extends i.PureComponent {
         render: e => (0, r.jsx)(eb, er({}, e))
       }), (0, r.jsx)(m.Z, {
         path: $.Z5c.AUTHORIZE_IP,
-        render: e => (0, r.jsx)(eh, er({}, e))
+        render: e => (0, r.jsx)(ep, er({}, e))
       }), (0, r.jsx)(m.Z, {
         path: $.Z5c.REJECT_IP,
         render: e => (0, r.jsx)(e_, er({
@@ -315,7 +315,7 @@ class eC extends i.PureComponent {
         }, e))
       }), (0, r.jsx)(m.Z, {
         path: $.Z5c.AUTHORIZE_PAYMENT,
-        render: e => (0, r.jsx)(ep, er({}, e))
+        render: e => (0, r.jsx)(eh, er({}, e))
       }), (0, r.jsx)(m.Z, {
         path: $.Z5c.RESET,
         render: e => (0, r.jsx)(e_, er({

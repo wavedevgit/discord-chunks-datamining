@@ -11,8 +11,8 @@ var r = n(200651),
   c = n(703656),
   u = n(108427),
   d = n(844800),
-  h = n(580497),
-  p = n(981631),
+  p = n(580497),
+  h = n(981631),
   g = n(388032),
   m = n(887605);
 
@@ -29,7 +29,7 @@ function _(e) {
     a.Z.verify(e), (0, u.e)("verify_hub_email")
   }, [t]);
   let v = () => {
-    (0, h.Z)(N), f(!0)
+    (0, p.Z)(N), f(!0)
   };
   return _ ? (0, r.jsxs)(l.ZP, {
     children: [(0, r.jsx)(l.Dx, {
@@ -40,7 +40,7 @@ function _(e) {
       children: g.NW.string(g.t["m1+IBg"])
     }), (0, r.jsx)(l.zx, {
       className: m.spacedButton,
-      onClick: () => (0, c.uL)(p.Z5c.CHANNEL(N)),
+      onClick: () => (0, c.uL)(h.Z5c.CHANNEL(N)),
       children: g.NW.string(g.t.fIv16O)
     })]
   }) : b ? (0, r.jsxs)(l.ZP, {

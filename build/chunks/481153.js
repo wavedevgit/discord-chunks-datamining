@@ -11,8 +11,8 @@ var r = n(200651),
   c = n(812206),
   u = n(388905),
   d = n(925329),
-  h = n(479446),
-  p = n(981632),
+  p = n(479446),
+  h = n(981632),
   g = n(594174),
   m = n(509545),
   _ = n(55563),
@@ -50,8 +50,8 @@ let j = s.ZP.connectStores([_.Z, c.Z, m.Z, g.default], e => {
     skuName: s.name,
     intervalCount: g.intervalCount
   })), (0, r.jsxs)(i.Fragment, {
-    children: [null != n.giftStyle ? (0, r.jsx)(p.Z, {
-      defaultAnimationState: h.SR.LOOP,
+    children: [null != n.giftStyle ? (0, r.jsx)(h.Z, {
+      defaultAnimationState: p.SR.LOOP,
       giftStyle: n.giftStyle,
       className: v.seasonalIcon
     }) : (0, r.jsx)(u.qE, {

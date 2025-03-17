@@ -12,15 +12,15 @@ var i = n(120356),
   c = n(720196),
   u = n(981631),
   d = n(388032),
-  h = n(762056),
-  p = n(802138);
+  p = n(762056),
+  h = n(802138);
 
 function g(e) {
   let {
     children: t
   } = e;
   return (0, r.jsx)("li", {
-    className: h.listItem,
+    className: p.listItem,
     children: (0, r.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: "text-normal",
@@ -37,19 +37,19 @@ function m(e) {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(s.Ee, {
       src: n(26230),
-      className: o()(p.marginBottom20, p.marginTop8)
+      className: o()(h.marginBottom20, h.marginTop8)
     }), (0, r.jsx)(s.Dx, {
-      className: p.marginBottom8,
+      className: h.marginBottom8,
       children: d.NW.string(d.t["8UcxIy"])
     }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       children: d.NW.string(d.t.O37hMj)
     }), (0, r.jsxs)(s.gO, {
-      className: o()(p.marginBottom20, p.marginTop20),
+      className: o()(h.marginBottom20, h.marginTop20),
       children: [(0, r.jsx)(a.Text, {
         variant: "text-sm/normal"
       }), (0, r.jsxs)("ul", {
-        className: h.listContainer,
+        className: p.listContainer,
         children: [(0, r.jsx)(g, {
           children: d.NW.string(d.t.Gj1Zr6)
         }), (0, r.jsx)(l.Z, {}), (0, r.jsx)(g, {
@@ -63,7 +63,7 @@ function m(e) {
         })]
       })]
     }), (0, r.jsxs)("div", {
-      className: h.buttonContainer,
+      className: p.buttonContainer,
       children: [(0, r.jsx)(s.zx, {
         onClick: () => t(c.n.PASSWORD),
         children: d.NW.string(d.t.GgCRqa)

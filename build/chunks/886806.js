@@ -11,8 +11,8 @@ var r = n(200651),
   c = n(493773),
   u = n(129293),
   d = n(388905),
-  h = n(17894),
-  p = n(108427),
+  p = n(17894),
+  h = n(108427),
   g = n(626135),
   m = n(981631),
   _ = n(388032),
@@ -29,7 +29,7 @@ function N(e) {
     transitionTo: o = x
   } = e, [s, N] = i.useState("submitting"), v = i.useRef(void 0);
   (0, c.ZP)(() => {
-    (0, p.e)("verify_email");
+    (0, h.e)("verify_email");
     let e = (0, u.Z)(t);
     if (null == e) {
       N("failed");
@@ -49,7 +49,7 @@ function N(e) {
     I = i.useCallback(() => {
       g.default.track(m.rMx.VERIFY_ACCOUNT_APP_OPENED, {
         verifying_user_id: v.current
-      }), (0, h.Z)("verify_email")
+      }), (0, p.Z)("verify_email")
     }, []);
   return "failed" === s ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {

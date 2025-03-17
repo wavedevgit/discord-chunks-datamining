@@ -13,7 +13,7 @@ let c = e => {
     onClick: t
   } = e, {
     rtcPopoutEnabled: n
-  } = (0, o.S)("not sharing link"), c = l.G6.useSetting();
+  } = (0, o.SN)("not sharing link"), c = l.G6.useSetting();
   return !n || c ? null : (0, r.jsx)(i.P3F, {
     onClick: t,
     className: s.container,

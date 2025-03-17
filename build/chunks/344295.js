@@ -11,8 +11,8 @@ var r = n(200651),
   c = n(442837),
   u = n(298444),
   d = n(447543),
-  h = n(881052),
-  p = n(899370),
+  p = n(881052),
+  h = n(899370),
   g = n(267394),
   m = n(388905),
   _ = n(639946),
@@ -319,7 +319,7 @@ class V extends i.PureComponent {
           (0, g.A)(t), null != t.channel && d.ZP.openApp(e, t.channel.id)
         }
       }).catch(e => {
-        if (e instanceof h.yZ || e instanceof h.Hx) {
+        if (e instanceof p.yZ || e instanceof p.Hx) {
           let t = (0, P.O)(e.code);
           this.setState({
             error: {
@@ -357,7 +357,7 @@ class V extends i.PureComponent {
     })
   }
 }
-let H = c.ZP.connectStores([S.Z, C.Z, j.default, b.Z, p.Z], e => {
+let H = c.ZP.connectStores([S.Z, C.Z, j.default, b.Z, h.Z], e => {
   var t;
   let {
     inviteKey: n
@@ -367,6 +367,6 @@ let H = c.ZP.connectStores([S.Z, C.Z, j.default, b.Z, p.Z], e => {
     nativeAppState: b.Z.getState(n),
     authenticated: j.default.isAuthenticated(),
     defaultRoute: C.Z.defaultRoute,
-    isUnderage: p.Z.isUnderageAnonymous()
+    isUnderage: h.Z.isUnderageAnonymous()
   }
 })(V)

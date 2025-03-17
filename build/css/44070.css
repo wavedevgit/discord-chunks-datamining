@@ -1,6 +1,6 @@
 /**
   Module ID: 44070
-  Original File Name: 3ec9a69f92c2dce5
+  Original File Name: 3ff189e99c863ef2
 **/
 @value minColumnWidth: 460px;
 
@@ -807,6 +807,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-right: 36px
 }
 
+.platedHover__972a0 {
+    padding-right: 12px
+}
+
 .linkButton__972a0 {
     padding-right: 8px
 }
@@ -920,6 +924,14 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 :where(.visual-refresh) .link__972a0 {
     padding: 0 var(--space-16) 0 var(--space-xs)
+}
+
+:where(.visual-refresh) .plated__972a0 {
+    padding-right: 36px
+}
+
+:where(.visual-refresh) .plated__972a0:focus-within,:where(.visual-refresh) .platedHover__972a0 {
+    padding-right: 10px
 }
 
 :where(.visual-refresh) .channel__972a0:not(.dm__972a0) {
@@ -3891,4 +3903,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-right: auto
 }
 
-/*# sourceMappingURL=3ec9a69f92c2dce5.css.map*/
+/*# sourceMappingURL=3ff189e99c863ef2.css.map*/

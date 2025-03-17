@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => h
+  Z: () => p
 });
 var r = n(200651);
 n(192379);
@@ -12,7 +12,7 @@ var i = n(481060),
   c = n(388032),
   u = n(239928);
 let d = () => (0, a.uL)(l.Z5c.LOGIN),
-  h = e => {
+  p = e => {
     let {
       authBoxClassName: t,
       underageMessage: a

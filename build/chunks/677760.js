@@ -11,8 +11,8 @@ var r = n(200651),
   c = n(587444),
   u = n(393238),
   d = n(388905),
-  h = n(108427),
-  p = n(314897),
+  p = n(108427),
+  h = n(314897),
   g = n(701190),
   m = n(626135),
   _ = n(768581),
@@ -125,8 +125,8 @@ function P(e) {
       for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e, ["children", "cardChildren", "startAnimHeightPx", "innerStyle"]), [d, h] = i.useState(y(c)), {
-    ref: p,
+  }(e, ["children", "cardChildren", "startAnimHeightPx", "innerStyle"]), [d, p] = i.useState(y(c)), {
+    ref: h,
     height: g
   } = (0, u.Z)(), m = (0, s.q_F)({
     height: null != g && 0 !== g ? "".concat(g, "px") : "".concat(a, "px"),
@@ -134,7 +134,7 @@ function P(e) {
   });
   return i.useEffect(() => {
     let e = y(c);
-    e !== d && h(e)
+    e !== d && p(e)
   }, [c, d]), (0, r.jsxs)(o.animated.div, {
     className: j.inviteCard,
     style: m,
@@ -142,7 +142,7 @@ function P(e) {
       className: j.inviteChildContainer,
       style: m,
       children: (0, r.jsx)("section", {
-        ref: p,
+        ref: h,
         className: null == l ? void 0 : l(d),
         children: t(d)
       })
@@ -227,7 +227,7 @@ function w(e) {
     transitionTo: n
   } = e, o = (0, a.e7)([g.Z], () => g.Z.getInvite(t));
   return i.useEffect(() => {
-    (0, h.e)("invite_mobile")
+    (0, p.e)("invite_mobile")
   }, []), i.useEffect(() => {
     null != o && o.state === E.r2o.RESOLVED && m.default.track(E.rMx.INVITE_VIEWED, {
       invite_code: t,
@@ -247,8 +247,8 @@ function w(e) {
           inviter_id: null == n ? void 0 : null === (o = n.inviter) || void 0 === o ? void 0 : o.id
         });
         let a = null != n && n.state !== E.r2o.EXPIRED && n.state !== E.r2o.BANNED ? t : void 0,
-          s = p.default.getFingerprint(),
-          c = null != s ? s : p.default.getId(),
+          s = h.default.getFingerprint(),
+          c = null != s ? s : h.default.getId(),
           u = null != n && (null == n ? void 0 : n.type) != null ? Number(null == n ? void 0 : n.type) : void 0;
         l.ZP.openApp(a, void 0, c, void 0, u)
       }(e, t, o)

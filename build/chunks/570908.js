@@ -19,8 +19,7 @@ let l = i.forwardRef((e, t) => {
     name: d,
     subText: f,
     avatarClassName: _,
-    innerClassName: p,
-    nameplated: h = !1
+    innerClassName: p
   } = e;
   return (0, r.jsxs)("div", {
     ref: t,
@@ -42,15 +41,10 @@ let l = i.forwardRef((e, t) => {
           }),
           children: d
         }), u]
-      }), (0, r.jsx)("div", {
-        className: a()({
-          [s.plated]: h
-        }),
-        children: null != f ? (0, r.jsx)("div", {
-          className: s.subText,
-          children: f
-        }) : null
-      })]
+      }), null != f ? (0, r.jsx)("div", {
+        className: s.subText,
+        children: f
+      }) : null]
     })]
   })
 });

@@ -1,6 +1,6 @@
 /**
   Module ID: 53494
-  Original File Name: 9632dee9ed5ea96c
+  Original File Name: 98f56def0ef00bdd
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -4657,6 +4657,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-right: 36px
 }
 
+.platedHover__972a0 {
+    padding-right: 12px
+}
+
 .linkButton__972a0 {
     padding-right: 8px
 }
@@ -4770,6 +4774,14 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 :where(.visual-refresh) .link__972a0 {
     padding: 0 var(--space-16) 0 var(--space-xs)
+}
+
+:where(.visual-refresh) .plated__972a0 {
+    padding-right: 36px
+}
+
+:where(.visual-refresh) .plated__972a0:focus-within,:where(.visual-refresh) .platedHover__972a0 {
+    padding-right: 10px
 }
 
 :where(.visual-refresh) .channel__972a0:not(.dm__972a0) {
@@ -5299,4 +5311,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=9632dee9ed5ea96c.css.map*/
+/*# sourceMappingURL=98f56def0ef00bdd.css.map*/

@@ -25,7 +25,7 @@ let y = e => {
     setIsForceShowSharingPopout: y
   } = e, {
     rtcPopoutEnabled: _
-  } = (0, f.S)("SharingPrivacyPopout"), O = (0, u.Ws)({
+  } = (0, f.SN)("SharingPrivacyPopout"), O = (0, u.Ws)({
     location: v.dr.CONFLICT_CHECKS
   }), j = d.G6.useSetting(), [C, x] = (0, i.useState)(!1), S = (0, l.e7)([p.Z], () => p.Z.getLayers().includes(m.S9g.USER_SETTINGS));
   return ((0, i.useEffect)(() => {

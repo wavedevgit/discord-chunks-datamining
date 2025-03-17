@@ -80,11 +80,11 @@ let O = e => (0, r.jsx)(E.tE, _({
       null !== c.current && c.current.updateElementOffsetsWithPolling()
     }, [N]);
     let b = (0, i.TH)(),
-      A = l.useCallback(() => ({
+      v = l.useCallback(() => ({
         left: 0,
         verticalOffset: T.COACHMARK_VERTICAL_OFFSET
       }), []),
-      v = l.useCallback(e => {
+      A = l.useCallback(e => {
         p !== e.width / 2 && h(Math.floor(e.width / 2) - 1)
       }, [p]);
     return (0, r.jsx)(E.U_, {
@@ -92,8 +92,8 @@ let O = e => (0, r.jsx)(E.tE, _({
       backgroundElementRef: n,
       coachmarkRef: C,
       calculateVisibility: S,
-      calculateBaseOffsets: A,
-      onGetBackgroundElementDimensions: v,
+      calculateBaseOffsets: v,
+      onGetBackgroundElementDimensions: A,
       children: (0, r.jsx)(O, _({
         onClose: () => {
           g.includes(b.pathname) || (0, u.uL)(f.Z5c.ME), t()

@@ -53,10 +53,11 @@ function m(e, t, n, s, l) {
     }
     let i = new ResizeObserver(e => {
       let t = e[0].contentRect.width,
-        n = Math.max(t - 50, 0);
+        n = .8 * t,
+        i = 1.1 * t;
       d({
         background: r,
-        maskImage: "linear-gradient(to right, rgba(0, 0, 0, .2) ".concat(n, "px, rgba(0, 0, 0, 1) ").concat(t, "px)")
+        maskImage: "linear-gradient(to right, rgba(0, 0, 0, .2) ".concat(n, "px, rgba(0, 0, 0, 1) ").concat(i, "px)")
       })
     });
     return i.observe(s), () => i.disconnect()

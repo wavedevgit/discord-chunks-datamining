@@ -12,8 +12,8 @@ var i = n(481060),
   c = n(230224),
   u = n(258356),
   d = n(981631),
-  h = n(388032),
-  p = n(291102);
+  p = n(388032),
+  h = n(291102);
 
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -85,7 +85,7 @@ function f(e) {
     isSubmitting: I,
     onAcceptInvite: n
   }) : (0, r.jsxs)("div", {
-    className: p.container,
+    className: h.container,
     children: [(0, r.jsx)(c.GB, {
       application: N,
       guild: b,
@@ -97,8 +97,8 @@ function f(e) {
     })), (0, r.jsx)(c.V6, g({}, j)), (0, r.jsx)(i.zxk, {
       onClick: n,
       submitting: I,
-      className: p.acceptButton,
-      children: h.NW.string(h.t.ohMvm5)
+      className: h.acceptButton,
+      children: p.NW.string(p.t.ohMvm5)
     })]
   })
 }

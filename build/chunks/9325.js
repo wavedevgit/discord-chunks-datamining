@@ -11,8 +11,8 @@ var r = n(200651),
   c = n(962220),
   u = n(306453),
   d = n(108427),
-  h = n(314897),
-  p = n(626135),
+  p = n(314897),
+  h = n(626135),
   g = n(587444),
   m = n(981631),
   _ = n(58346),
@@ -20,14 +20,14 @@ var r = n(200651),
   b = n(802138);
 
 function x(e, t, n) {
-  e.preventDefault(), p.default.track(m.rMx.GUILD_TEMPLATE_APP_OPENED, {
+  e.preventDefault(), h.default.track(m.rMx.GUILD_TEMPLATE_APP_OPENED, {
     guild_template_code: t,
     guild_template_name: n.name,
     guild_template_description: n.description,
     guild_template_guild_id: n.sourceGuildId
   });
-  let r = h.default.getFingerprint(),
-    i = null != r ? r : h.default.getId();
+  let r = p.default.getFingerprint(),
+    i = null != r ? r : p.default.getId();
   c.Z.openMobileApp(n.state === _.Rj.RESOLVED ? t : void 0, i)
 }
 

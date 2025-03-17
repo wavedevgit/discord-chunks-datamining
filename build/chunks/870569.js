@@ -31,8 +31,8 @@ function c(e) {
     tooltipColor: S,
     tooltipForceOpen: N,
     tooltipContentClassName: b,
-    plated: A
-  } = e, v = "function" == typeof d ? (0, r.jsx)(d, {
+    plated: v
+  } = e, A = "function" == typeof d ? (0, r.jsx)(d, {
     width: 20,
     height: 20,
     size: "custom",
@@ -94,8 +94,8 @@ function c(e) {
           [s.redGlow]: h,
           [s.disabled]: u,
           [s.enabled]: !u,
-          [s.plated]: A,
-          [s.plateMuted]: h && A
+          [s.plated]: v,
+          [s.plateMuted]: h && v
         }),
         onClick: e => {
           null != E && E(), null != c && c(e)
@@ -113,8 +113,8 @@ function c(e) {
           width: 20,
           height: 20,
           mask: a.ZP.Masks.PANEL_BUTTON,
-          children: v
-        }) : v, n]
+          children: A
+        }) : A, n]
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(d)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

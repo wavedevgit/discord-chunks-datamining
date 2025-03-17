@@ -1,6 +1,6 @@
 /**
   Module ID: 37697
-  Original File Name: 6cec2de26e610f88
+  Original File Name: b750c1d2dc5382f2
 **/
 @value headerBarHeight 60px;
 
@@ -135,6 +135,10 @@
     align-items: center;
     box-sizing: border-box;
     padding-top: 16px
+}
+
+.visual-refresh .tab__65d41:hover,.visual-refresh .tab__65d41[aria-selected=true] {
+    --selected-tab-item-color: var(--text-default)
 }
 
 .more__65d41 {
@@ -2477,4 +2481,4 @@
     height: 22px
 }
 
-/*# sourceMappingURL=6cec2de26e610f88.css.map*/
+/*# sourceMappingURL=b750c1d2dc5382f2.css.map*/

@@ -16,7 +16,7 @@ function d(e) {
     guildScheduledEvent: t,
     channel: n,
     onClose: d
-  } = e, h = t.entity_type === c.WX.EXTERNAL, p = i.useCallback(e => (0, s.Qt)(t, d)(e), [t, d]), g = (0, l.u)(t, n);
+  } = e, p = t.entity_type === c.WX.EXTERNAL, h = i.useCallback(e => (0, s.Qt)(t, d)(e), [t, d]), g = (0, l.u)(t, n);
   if (null == g) return null;
   let {
     IconComponent: m,
@@ -37,9 +37,9 @@ function d(e) {
   });
   return (0, r.jsx)("div", {
     className: u.row,
-    children: null != p ? (0, r.jsx)(o.P3F, {
-      className: h ? u.externalLocation : u.channelLocation,
-      onClick: p,
+    children: null != h ? (0, r.jsx)(o.P3F, {
+      className: p ? u.externalLocation : u.channelLocation,
+      onClick: h,
       children: f
     }) : f
   })

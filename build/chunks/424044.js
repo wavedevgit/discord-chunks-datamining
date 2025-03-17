@@ -11,8 +11,8 @@ var r = n(200651),
   c = n(129293),
   u = n(388905),
   d = n(353926),
-  h = n(185625),
-  p = n(551549),
+  p = n(185625),
+  h = n(551549),
   g = n(108427),
   m = n(314897),
   _ = n(981631),
@@ -22,7 +22,7 @@ o.ZP.initialize();
 let x = e => {
   let {
     location: t
-  } = e, n = (0, o.e7)([m.default], () => m.default.isAuthenticated()), x = (0, o.e7)([d.Z], () => d.Z.hasLoadedExperiments), N = (0, p.oK)("RSL - Landing Page"), [v, E] = i.useState(!1), [I, j] = i.useState(f.NW.string(f.t["9exy+f"])), [C, S] = i.useState(!0), O = e => {
+  } = e, n = (0, o.e7)([m.default], () => m.default.isAuthenticated()), x = (0, o.e7)([d.Z], () => d.Z.hasLoadedExperiments), N = (0, h.oK)("RSL - Landing Page"), [v, E] = i.useState(!1), [I, j] = i.useState(f.NW.string(f.t["9exy+f"])), [C, S] = i.useState(!0), O = e => {
     switch (e) {
       case _.evJ.INVALID_FORM_BODY:
       case _.evJ.DSA_RSL_REPORT_NOT_FOUND:
@@ -51,7 +51,7 @@ let x = e => {
     let e = async e => {
       var t, n;
       try {
-        let n = null != e ? await (0, h.hs)(e) : void 0;
+        let n = null != e ? await (0, p.hs)(e) : void 0;
         null != n ? j(f.NW.string(f.t.e6mZMj)) : O(null === (t = n.body) || void 0 === t ? void 0 : t.code)
       } catch (e) {
         O(null === (n = e.body) || void 0 === n ? void 0 : n.code)

@@ -14,18 +14,18 @@ var r = n(200651),
 function d(e) {
   let {
     location: t
-  } = e, [d, h] = i.useState("submitting");
+  } = e, [d, p] = i.useState("submitting");
   return (i.useEffect(() => {
     (0, l.e)("authorize_payment");
     let e = (0, a.Z)(t);
     if (null == e) {
-      h("failed");
+      p("failed");
       return
     }(async () => {
       try {
-        await o.Z.authorizePayment(e), h("succeeded")
+        await o.Z.authorizePayment(e), p("succeeded")
       } catch (e) {
-        h("failed")
+        p("failed")
       }
     })()
   }, [t]), "failed" === d) ? (0, r.jsxs)(s.ZP, {

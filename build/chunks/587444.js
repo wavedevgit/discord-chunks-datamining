@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(600164),
   u = n(981631),
   d = n(388032),
-  h = n(12542),
-  p = n(612064),
+  p = n(12542),
+  h = n(612064),
   g = n(802138);
 
 function m(e) {
@@ -27,37 +27,37 @@ function m(e) {
     children: [(0, r.jsx)(l.Ee, {
       src: n(689411)
     }), (0, r.jsx)(l.Dx, {
-      className: o()(g.marginTop20, g.marginBottom8, p.flexCenter),
+      className: o()(g.marginTop20, g.marginBottom8, h.flexCenter),
       children: d.NW.string(d.t.eL5z0t)
     }), (0, r.jsx)(l.DK, {
       className: g.marginBottom40,
       children: d.NW.string(d.t["poAv6+"])
     }), (0, r.jsxs)(s.Zbd, {
-      className: h.card,
+      className: p.card,
       type: s.Zbd.Types.CUSTOM,
       children: [(0, r.jsx)("img", {
         alt: "",
-        className: h.cardAccentLeft,
+        className: p.cardAccentLeft,
         src: n(70519)
       }), (0, r.jsx)("img", {
         alt: "",
-        className: h.cardAccentRight,
+        className: p.cardAccentRight,
         src: n(806848)
       }), (0, r.jsxs)(c.Z, {
-        className: h.cardContents,
+        className: p.cardContents,
         direction: c.Z.Direction.VERTICAL,
         align: c.Z.Align.STRETCH,
         grow: 0,
         children: [(0, r.jsx)(s.Text, {
           tag: "strong",
-          className: h.buttonTitle,
+          className: p.buttonTitle,
           variant: "text-md/normal",
           style: {
             color: a.Z.unsafe_rawColors.PRIMARY_300.css
           },
           children: t
         }), (0, r.jsx)(l.zx, {
-          className: h.button,
+          className: p.button,
           onClick: u,
           children: i
         })]

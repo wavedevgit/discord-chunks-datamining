@@ -1,93 +1,94 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => _
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
   a = n.n(o),
   s = n(70097),
-  l = n(904588),
-  c = n(881474),
-  u = n(168352),
-  d = n(379839),
-  f = n(359135),
-  _ = n(873841);
+  l = n(881474),
+  c = n(168352),
+  u = n(379839),
+  d = n(359135),
+  f = n(873841);
 
-function p(e) {
+function _(e) {
   let {
     nameplate: t,
     hovered: n,
     selected: o,
     content: s,
-    isSpeaking: u,
-    placement: p
-  } = e, m = (0, d.p)(t, n, o, s, p), g = (0, l.i)(u, 2e3), E = (0, c.C)(n, o, g, p === f.i.ACCOUNT), [b, v] = (0, i.useState)(t), [y, O] = (0, i.useState)(!1), [I, S] = (0, i.useState)(!1);
+    placement: c
+  } = e, _ = (0, u.p)(t, n, o, s, c), h = (0, l.C)(n, o), [m, g] = (0, i.useState)(t), [E, b] = (0, i.useState)(!1), [v, y] = (0, i.useState)(!1);
   if ((0, i.useEffect)(() => {
-      if (null == b || null != t || y) null != t && (v(t), O(!1));
+      if (null == m || null != t || E) null != t && (g(t), b(!1));
       else {
-        O(!0);
+        b(!0);
         let e = setTimeout(() => {
-          O(!1), v(null)
+          b(!1), g(null)
         }, 400);
         return () => clearTimeout(e)
       }
-    }, [t, b, y]), null == t) return null;
-  let T = null != t ? t : b;
-  return null == T ? null : (0, r.jsx)("div", {
-    className: a()(_.container, {
-      [_.containerExit]: y,
-      [_.accountContainer]: p === f.i.ACCOUNT,
-      [_.fadeIn]: I && !y
+    }, [t, m, E]), null == t) return null;
+  let O = null != t ? t : m;
+  return null == O ? null : (0, r.jsx)("div", {
+    className: a()(f.container, {
+      [f.containerExit]: E,
+      [f.accountContainer]: c === d.i.ACCOUNT,
+      [f.fadeIn]: v && !E
     }),
-    style: I ? {
-      background: m.background
+    style: v ? {
+      background: _.background
     } : void 0,
-    children: (0, r.jsx)(h, {
-      nameplate: T,
-      className: a()(_.img, {
-        [_.hover]: n,
-        [_.selected]: o,
-        [_.account]: p === f.i.ACCOUNT
+    children: (0, r.jsx)(p, {
+      nameplate: O,
+      className: a()(f.img, {
+        [f.hover]: n,
+        [f.selected]: o,
+        [f.account]: c === d.i.ACCOUNT
       }),
       style: {
-        maskImage: m.maskImage
+        maskImage: _.maskImage
       },
-      animate: E,
-      loop: !0 === E && !!(n || g),
-      onLoad: () => S(!0)
+      animate: h,
+      loop: !0 === h && !0 === n,
+      onLoad: () => y(!0)
     })
   })
 }
 
-function h(e) {
+function p(e) {
   let {
     nameplate: t,
     className: n,
     style: o,
     animate: a,
     loop: l,
-    onLoad: c
+    onLoad: u
   } = e, d = (0, i.useRef)(null);
   i.useEffect(() => {
     null != d.current && (a || l ? d.current.play() : d.current.pause())
   }, [a, l]);
-  let f = (0, u._)(t, a);
-  return (null == f ? void 0 : f.endsWith(".png")) || t.preview ? (0, r.jsx)("img", {
-    src: f,
+  let _ = (0, c._)(t, a);
+  return (null == _ ? void 0 : _.endsWith(".png")) || t.preview ? (0, r.jsx)("img", {
+    src: _,
     className: n,
     style: o,
     alt: t.imgAlt,
-    onLoad: c
-  }) : (0, r.jsx)(s.Z, {
-    onLoadedData: c,
-    src: f,
-    ref: d,
-    playsInline: !0,
-    loop: l,
-    controls: !1,
-    className: n,
-    style: o
+    onLoad: u
+  }) : (0, r.jsx)("div", {
+    className: f.videoContainer,
+    style: o,
+    children: (0, r.jsx)(s.Z, {
+      onLoadedData: u,
+      src: _,
+      ref: d,
+      playsInline: !0,
+      loop: l,
+      controls: !1,
+      className: n
+    })
   })
 }

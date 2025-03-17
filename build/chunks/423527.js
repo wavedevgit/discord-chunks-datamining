@@ -10,8 +10,8 @@ var r, i = n(200651),
   c = n(278074),
   u = n(990547),
   d = n(442837),
-  h = n(846519),
-  p = n(481060),
+  p = n(846519),
+  h = n(481060),
   g = n(893776),
   m = n(881052),
   _ = n(899370),
@@ -191,7 +191,7 @@ class eu extends(r = o.PureComponent) {
       onRegister: c,
       usernameSuggestion: u,
       isMobileWebInviteRegistration: d
-    } = this.props, h = null != a ? a.code : null, p = null != l ? l.skuId : null, g = N.MD.getState(), _ = (0, K.Ew)(u) ? null : t === u, f = $.a ? await (0, y.K)(t) : t, b = $.a ? await (0, y.K)(n) : n;
+    } = this.props, p = null != a ? a.code : null, h = null != l ? l.skuId : null, g = N.MD.getState(), _ = (0, K.Ew)(u) ? null : t === u, f = $.a ? await (0, y.K)(t) : t, b = $.a ? await (0, y.K)(n) : n;
     V.S.dispatch(X.CkL.WAVE_EMPHASIZE), this.setState({
       registering: !0,
       apiErrors: {}
@@ -203,16 +203,16 @@ class eu extends(r = o.PureComponent) {
         globalName: b,
         consent: i,
         password: r,
-        invite: h,
+        invite: p,
         usedUsernameSuggestion: _,
         guildTemplateCode: null == s ? void 0 : s.code,
-        giftCodeSKUId: p,
+        giftCodeSKUId: h,
         birthday: o,
         promoEmailConsent: g.required ? g : null
       }) : await (0, E.ZP)({
         consent: i,
-        invite: h,
-        giftCodeSKUId: p,
+        invite: p,
+        giftCodeSKUId: h,
         usedUsernameSuggestion: _,
         globalName: b
       }), null == c || c()
@@ -267,12 +267,12 @@ class eu extends(r = o.PureComponent) {
       className: e,
       children: [(0, i.jsx)(Y.R, {}), (0, i.jsxs)(I.gO, {
         className: ei.marginTop40,
-        children: [(0, i.jsx)(p.vwX, {
+        children: [(0, i.jsx)(h.vwX, {
           children: en.NW.string(en.t.TWzdWl)
-        }), (0, i.jsx)(p.ua7, {
+        }), (0, i.jsx)(h.ua7, {
           text: en.NW.string(en.t["hBB85+"]),
           position: "right",
-          color: p.ua7.Colors.BRAND,
+          color: h.ua7.Colors.BRAND,
           children: e => {
             let {
               onMouseEnter: r,
@@ -332,7 +332,7 @@ class eu extends(r = o.PureComponent) {
       consent: n,
       registering: r
     } = this.state, o = I.zx.Colors.BRAND, a = en.NW.string(en.t["3PatS0"]);
-    return (null == e ? void 0 : e.stage_instance) != null && (o = I.zx.Colors.GREEN, a = en.NW.string(en.t["5UKyUl"])), (0, i.jsx)(p.ua7, {
+    return (null == e ? void 0 : e.stage_instance) != null && (o = I.zx.Colors.GREEN, a = en.NW.string(en.t["5UKyUl"])), (0, i.jsx)(h.ua7, {
       text: !n && t ? en.NW.string(en.t.AY4IVF) : null,
       children: e => (0, i.jsx)("div", es(ea({
         className: ei.marginTop20
@@ -374,13 +374,13 @@ class eu extends(r = o.PureComponent) {
           className: er.divider
         }) : null, (0, i.jsxs)(I.gO, {
           className: l ? void 0 : ei.marginTop40,
-          children: [(0, i.jsx)(p.vwX, {
+          children: [(0, i.jsx)(h.vwX, {
             error: ec(null != r ? r : n),
             children: en.NW.string(en.t["9AjdkJ"])
-          }), (0, i.jsx)(p.ua7, {
+          }), (0, i.jsx)(h.ua7, {
             text: en.NW.string(en.t["hBB85+"]),
             position: "right",
-            color: p.ua7.Colors.BRAND,
+            color: h.ua7.Colors.BRAND,
             children: e => {
               let {
                 onMouseEnter: t,
@@ -398,7 +398,7 @@ class eu extends(r = o.PureComponent) {
                 onMouseLeave: a
               })
             }
-          }), (0, i.jsx)(p.Text, {
+          }), (0, i.jsx)(h.Text, {
             variant: "text-sm/normal",
             color: "header-secondary",
             children: en.NW.string(en.t["330TCQ"])
@@ -439,7 +439,7 @@ class eu extends(r = o.PureComponent) {
       consent: c,
       parsedDateOfBirth: u,
       globalNameFocused: d,
-      emailClientError: h,
+      emailClientError: p,
       usernameClientError: g,
       passwordClientError: m,
       dateOfBirthClientError: _,
@@ -462,7 +462,7 @@ class eu extends(r = o.PureComponent) {
     } = this.props, {
       subText: A,
       consentText: Z
-    } = this.renderConsentComponents(), R = this.renderErrorMessage(), D = (0, i.jsx)(p.ua7, {
+    } = this.renderConsentComponents(), R = this.renderErrorMessage(), D = (0, i.jsx)(h.ua7, {
       text: !c && C ? en.NW.string(en.t.AY4IVF) : null,
       children: e => (0, i.jsx)("div", es(ea({
         className: ei.marginTop20
@@ -494,7 +494,7 @@ class eu extends(r = o.PureComponent) {
           email: e,
           emailClientError: 0 === e.length ? en.NW.string(en.t.EkokLy) : null
         }),
-        error: null != h ? h : ec(x),
+        error: null != p ? p : ec(x),
         type: "email",
         autoComplete: "username",
         setRef: e => {
@@ -525,7 +525,7 @@ class eu extends(r = o.PureComponent) {
         show: d,
         top: -12,
         bottom: 20,
-        children: (0, i.jsx)(p.Text, {
+        children: (0, i.jsx)(h.Text, {
           variant: "text-sm/normal",
           color: "text-normal",
           children: en.NW.string(en.t["330TCQ"])
@@ -608,11 +608,11 @@ class eu extends(r = o.PureComponent) {
         className: er.goBackButton,
         children: (0, i.jsxs)("div", {
           className: er.content,
-          children: [(0, i.jsx)(p.V7D, {
+          children: [(0, i.jsx)(h.V7D, {
             size: "xs",
             color: "currentColor",
             className: er.caret
-          }), (0, i.jsx)(p.Text, {
+          }), (0, i.jsx)(h.Text, {
             variant: "text-md/normal",
             children: en.NW.string(en.t["1MrpWF"])
           })]
@@ -642,7 +642,7 @@ class eu extends(r = o.PureComponent) {
   }
   constructor(e) {
     var t;
-    super(e), eo(this, "emailRef", void 0), eo(this, "usernameRef", void 0), eo(this, "globalNameRef", void 0), eo(this, "passwordRef", void 0), eo(this, "dateOfBirthRef", o.createRef()), eo(this, "_retryTimer", new h.V7), eo(this, "handleGotoLogin", e => {
+    super(e), eo(this, "emailRef", void 0), eo(this, "usernameRef", void 0), eo(this, "globalNameRef", void 0), eo(this, "passwordRef", void 0), eo(this, "dateOfBirthRef", o.createRef()), eo(this, "_retryTimer", new p.V7), eo(this, "handleGotoLogin", e => {
       let t;
       let {
         email: n
@@ -660,11 +660,11 @@ class eu extends(r = o.PureComponent) {
         null == s || s(e);
         return
       }
-      let h = null != a ? (0, l.parse)(a.search) : {};
-      null != o ? t = X.Z5c.INVITE_LOGIN(o.code) : null != r ? t = X.Z5c.GIFT_CODE_LOGIN(r.code) : null != i ? t = X.Z5c.GUILD_TEMPLATE_LOGIN(i.code) : null != c ? (t = X.Z5c.LOGIN, h.redirect_to = c) : (t = X.Z5c.LOGIN, "" !== n && (h = {
+      let p = null != a ? (0, l.parse)(a.search) : {};
+      null != o ? t = X.Z5c.INVITE_LOGIN(o.code) : null != r ? t = X.Z5c.GIFT_CODE_LOGIN(r.code) : null != i ? t = X.Z5c.GUILD_TEMPLATE_LOGIN(i.code) : null != c ? (t = X.Z5c.LOGIN, p.redirect_to = c) : (t = X.Z5c.LOGIN, "" !== n && (p = {
         email: n
       })), g.Z.loginReset(), u(t, {
-        search: (0, l.stringify)(h)
+        search: (0, l.stringify)(p)
       }), null == s || s(e), V.S.dispatch(X.CkL.WAVE_EMPHASIZE)
     }), eo(this, "handleSubmit", e => {
       null == e || e.preventDefault();
@@ -709,7 +709,7 @@ class eu extends(r = o.PureComponent) {
           livecheckEnabled: o
         }
       } = this.props;
-      return (0, i.jsx)(eh, {
+      return (0, i.jsx)(ep, {
         username: e,
         suggestion: r,
         livecheckEnabled: o,
@@ -769,7 +769,7 @@ function ed(e) {
   }, e, t))
 }
 
-function eh(e) {
+function ep(e) {
   let t, {
       username: n,
       suggestion: r,
@@ -783,29 +783,29 @@ function eh(e) {
   return t = d ? (0, c.EQ)(u).with({
     type: D.K.ERROR,
     message: c.P.select()
-  }, e => (0, i.jsx)(p.Text, {
+  }, e => (0, i.jsx)(h.Text, {
     className: er.messageNegative,
     variant: "text-sm/normal",
     children: e
   })).with({
     type: D.K.AVAILABLE,
     message: c.P.select()
-  }, e => (0, i.jsx)(p.Text, {
+  }, e => (0, i.jsx)(h.Text, {
     className: er.messagePositive,
     variant: "text-sm/normal",
     children: e
-  })).otherwise(() => (0, i.jsx)(p.Text, {
+  })).otherwise(() => (0, i.jsx)(h.Text, {
     variant: "text-sm/normal",
     color: "text-normal",
     children: en.NW.string(en.t.z7c4bG)
-  })) : null != r && r.length > 0 && o.length > 0 ? (0, i.jsx)(p.Text, {
+  })) : null != r && r.length > 0 && o.length > 0 ? (0, i.jsx)(h.Text, {
     variant: "text-sm/normal",
     color: "text-normal",
     children: en.NW.format(en.t.nDGqqq, {
       suggestion: r,
       nameOnClick: l
     })
-  }) : (0, i.jsx)(p.Text, {
+  }) : (0, i.jsx)(h.Text, {
     variant: "text-sm/normal",
     color: "text-normal",
     children: en.NW.string(en.t.z7c4bG)

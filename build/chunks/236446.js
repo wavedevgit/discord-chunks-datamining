@@ -11,8 +11,8 @@ var r = n(200651),
   c = n(442837),
   u = n(388905),
   d = n(362762),
-  h = n(409059),
-  p = n(659900),
+  p = n(409059),
+  h = n(659900),
   g = n(962220),
   m = n(473855),
   _ = n(306453),
@@ -157,7 +157,7 @@ class L extends i.PureComponent {
 
 function D(e) {
   let t = {
-    guildTemplate: (0, c.e7)([h.Z], () => h.Z.getGuildTemplate(e.code)),
+    guildTemplate: (0, c.e7)([p.Z], () => p.Z.getGuildTemplate(e.code)),
     nativeAppState: (0, c.e7)([d.Z], () => d.Z.getState(e.code)),
     authenticated: (0, c.e7)([N.default], () => N.default.isAuthenticated()),
     defaultRoute: (0, c.e7)([v.Z], () => v.Z.defaultRoute)
@@ -182,7 +182,7 @@ function k(e) {
   } = e, {
     form: n,
     handleSubmit: i
-  } = (0, p.Z)(t, !1);
+  } = (0, h.Z)(t, !1);
   x.Z.flowStep(T.MK.ORGANIC_GUILD_TEMPLATES, T.X2.GUILD_CREATE);
   let o = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Dx, {

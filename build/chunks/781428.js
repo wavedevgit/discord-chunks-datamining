@@ -11,8 +11,8 @@ var r, i = n(200651),
   c = n(593473),
   u = n(873546),
   d = n(442837),
-  h = n(481060),
-  p = n(570140),
+  p = n(481060),
+  h = n(570140),
   g = n(893776),
   m = n(899742),
   _ = n(579806),
@@ -85,7 +85,7 @@ function J(e, t) {
 
 function X() {
   return (0, i.jsx)(x.ZP, {
-    children: (0, i.jsx)(h.$jN, {})
+    children: (0, i.jsx)(p.$jN, {})
   })
 }
 class Q extends(r = o.PureComponent) {
@@ -120,7 +120,7 @@ class Q extends(r = o.PureComponent) {
         } = e, r = (0, a.wz)(JSON.parse(t));
         return r.signal = this.state.conditionalMediationAbortController.signal, (0, a.U2)(r).then(e => (this.setState({
           errors: {}
-        }), p.Z.dispatch({
+        }), h.Z.dispatch({
           type: "PASSWORDLESS_START"
         }), g.Z.loginWebAuthn({
           ticket: n,
@@ -225,7 +225,7 @@ class Q extends(r = o.PureComponent) {
       className: n,
       children: [(0, i.jsx)(x.qE, {
         src: e.getAvatarURL(void 0, 100),
-        size: h.EFr.DEPRECATED_SIZE_100,
+        size: p.EFr.DEPRECATED_SIZE_100,
         className: K.marginBottom20
       }), (0, i.jsx)(x.Dx, {
         className: K.marginBottom8,
@@ -259,7 +259,7 @@ class Q extends(r = o.PureComponent) {
       tag: "form",
       onSubmit: this.handleReset,
       className: e,
-      children: (0, i.jsxs)(h.y5t, {
+      children: (0, i.jsxs)(p.y5t, {
         component: (0, i.jsx)(x.Dx, {
           className: K.marginBottom8,
           children: n
@@ -350,8 +350,8 @@ class Q extends(r = o.PureComponent) {
       country: s,
       showMobileWebHandoff: c,
       disableAutofocusOnDefaultForm: u
-    } = this.props, d = !this.hasError("email") && this.hasError("password"), p = (null == r ? void 0 : r.stage_instance) != null;
-    return n = null == r || p ? null != o ? (0, i.jsx)(B.Z, {
+    } = this.props, d = !this.hasError("email") && this.hasError("password"), h = (null == r ? void 0 : r.stage_instance) != null;
+    return n = null == r || h ? null != o ? (0, i.jsx)(B.Z, {
       giftCode: o
     }) : (0, i.jsxs)("div", {
       className: H.header,
@@ -379,16 +379,16 @@ class Q extends(r = o.PureComponent) {
           className: H.goBackButton,
           children: (0, i.jsxs)("div", {
             className: H.content,
-            children: [(0, i.jsx)(h.V7D, {
+            children: [(0, i.jsx)(p.V7D, {
               size: "xs",
               color: "currentColor",
               className: H.caret
-            }), (0, i.jsx)(h.Text, {
+            }), (0, i.jsx)(p.Text, {
               variant: "text-md/normal",
               children: V.NW.string(V.t["1MrpWF"])
             })]
           })
-        }), n, (0, i.jsx)(h.y5t, {
+        }), n, (0, i.jsx)(p.y5t, {
           children: (0, i.jsxs)(x.gO, {
             className: K.marginTop20,
             children: [(0, i.jsx)(P.Z, {
@@ -432,9 +432,9 @@ class Q extends(r = o.PureComponent) {
             }), (0, i.jsx)(x.zx, {
               type: "submit",
               submitting: a === F.u34.LOGGING_IN,
-              color: p ? x.zx.Colors.GREEN : x.zx.Colors.BRAND,
+              color: h ? x.zx.Colors.GREEN : x.zx.Colors.BRAND,
               className: K.marginBottom8,
-              children: p ? V.NW.string(V.t.wvVThI) : V.NW.string(V.t.dKhVQE)
+              children: h ? V.NW.string(V.t.wvVThI) : V.NW.string(V.t.dKhVQE)
             }), (0, i.jsxs)("div", {
               className: K.marginTop4,
               children: [(0, i.jsx)("span", {
@@ -450,7 +450,7 @@ class Q extends(r = o.PureComponent) {
             })]
           })
         })]
-      }), (0, i.jsx)(h.y5t, {
+      }), (0, i.jsx)(p.y5t, {
         children: e ? (0, i.jsx)(G.Z, {
           authTokenCallback: this.handleAuthToken,
           conditionalMediationAbortController: this.state.conditionalMediationAbortController
@@ -497,7 +497,7 @@ class Q extends(r = o.PureComponent) {
         mfaFinish: this.handleTokenSubmitMFA,
         mfaChallenge: e,
         onEarlyClose: () => {
-          p.Z.dispatch({
+          h.Z.dispatch({
             type: "LOGIN_RESET"
           })
         },
@@ -710,13 +710,13 @@ class Q extends(r = o.PureComponent) {
       });
       try {
         if (k.S.dispatch(F.CkL.WAVE_EMPHASIZE), !await g.Z.forgotPassword(t)) return;
-        (0, h.h7j)(e => (0, i.jsx)(h.ConfirmModal, J(Y({
+        (0, p.h7j)(e => (0, i.jsx)(p.ConfirmModal, J(Y({
           header: V.NW.string(V.t.f5Pi7O),
           confirmText: V.NW.string(V.t.BddRzc),
           confirmButtonColor: x.zx.Colors.BRAND,
           className: u.tq ? H.mobile : ""
         }, e), {
-          children: (0, i.jsx)(h.Text, {
+          children: (0, i.jsx)(p.Text, {
             variant: "text-md/normal",
             children: V.NW.format(V.t["6u5hQ0"], {
               email: t

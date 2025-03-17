@@ -18,10 +18,10 @@ function d(e) {
     onChange: n,
     subText: i,
     muted: d,
-    marginTopStyle: h
+    marginTopStyle: p
   } = e;
   return (0, r.jsx)(s.Z, {
-    className: null != h ? h : u.marginTop20,
+    className: null != p ? p : u.marginTop20,
     align: s.Z.Align.CENTER,
     children: (0, r.jsx)(a.XZJ, {
       value: t,

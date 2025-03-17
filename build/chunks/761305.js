@@ -10,8 +10,8 @@ var r, i = n(200651),
   c = n(108427),
   u = n(601964),
   d = n(896797),
-  h = n(129293),
-  p = n(388905),
+  p = n(129293),
+  h = n(388905),
   g = n(981631),
   m = n(388032),
   _ = n(802138);
@@ -27,7 +27,7 @@ function f(e, t, n) {
 s.ZP.initialize();
 class b extends(r = o.PureComponent) {
   componentDidMount() {
-    let e = (0, h.Z)(this.props.location),
+    let e = (0, p.Z)(this.props.location),
       t = (0, a.parse)(this.props.location.search);
     l.tn.post({
       url: g.ANM.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
@@ -55,8 +55,8 @@ class b extends(r = o.PureComponent) {
     })), (0, c.e)("disable_server_highlight_notifications")
   }
   renderBusy() {
-    return (0, i.jsx)(p.ZP, {
-      children: (0, i.jsx)(p.Hh, {})
+    return (0, i.jsx)(h.ZP, {
+      children: (0, i.jsx)(h.Hh, {})
     })
   }
   renderSuccess() {
@@ -66,22 +66,22 @@ class b extends(r = o.PureComponent) {
     } = this.props, {
       guild: n
     } = this.state;
-    return (0, i.jsxs)(p.ZP, {
-      children: [(0, i.jsx)(p.Dx, {
+    return (0, i.jsxs)(h.ZP, {
+      children: [(0, i.jsx)(h.Dx, {
         className: _.marginBottom8,
         children: m.NW.string(m.t.Z33eiI)
-      }), (0, i.jsx)(p.DK, {
+      }), (0, i.jsx)(h.DK, {
         children: m.NW.format(m.t.NRWtfH, {
           guildName: n.name
         })
-      }), (0, i.jsx)(p.zx, {
+      }), (0, i.jsx)(h.zx, {
         className: _.marginTop40,
         onClick: () => t(e),
         children: m.NW.string(m.t.fIv16O)
-      }), (0, i.jsx)(p.zx, {
+      }), (0, i.jsx)(h.zx, {
         className: _.marginTop8,
-        color: p.zx.Colors.LINK,
-        look: p.zx.Looks.LINK,
+        color: h.zx.Colors.LINK,
+        look: h.zx.Looks.LINK,
         onClick: () => {
           t(g.Z5c.USER_GUILD_NOTIFICATION_SETTINGS(n.id))
         },
@@ -94,16 +94,16 @@ class b extends(r = o.PureComponent) {
       defaultRoute: e,
       transitionTo: t
     } = this.props;
-    return (0, i.jsxs)(p.ZP, {
-      children: [(0, i.jsx)(p.Ee, {
+    return (0, i.jsxs)(h.ZP, {
+      children: [(0, i.jsx)(h.Ee, {
         src: n(105020),
         className: _.marginBottom20
-      }), (0, i.jsx)(p.Dx, {
+      }), (0, i.jsx)(h.Dx, {
         className: _.marginBottom8,
         children: m.NW.string(m.t.ox9hIS)
-      }), (0, i.jsx)(p.DK, {
+      }), (0, i.jsx)(h.DK, {
         children: m.NW.string(m.t["/dcuR0"])
-      }), (0, i.jsx)(p.zx, {
+      }), (0, i.jsx)(h.zx, {
         className: _.marginTop40,
         onClick: () => t(e),
         children: m.NW.string(m.t.fIv16O)

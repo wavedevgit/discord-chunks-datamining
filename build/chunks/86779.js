@@ -11,8 +11,8 @@ var r = n(200651),
   c = n(433517),
   u = n(481060),
   d = n(570140),
-  h = n(893776),
-  p = n(314897),
+  p = n(893776),
+  h = n(314897),
   g = n(626135),
   m = n(70956),
   _ = n(970648),
@@ -28,7 +28,7 @@ let N = "mweb_handoff_nonce",
     c.K.remove(N), c.K.remove(v)
   },
   S = () => {
-    let e = (0, s.e7)([p.default], () => p.default.getFingerprint()),
+    let e = (0, s.e7)([h.default], () => h.default.getFingerprint()),
       {
         fingerprint: t,
         handoff_token: n
@@ -62,7 +62,7 @@ let N = "mweb_handoff_nonce",
             handoff_token: n
           },
           rejectWithError: !0
-        }).then(e => h.Z.loginToken(e.body.token, !1)).then(() => {
+        }).then(e => p.Z.loginToken(e.body.token, !1)).then(() => {
           g.default.track(f.rMx.LOGIN_SUCCESSFUL, {
             source: f.uRl.MOBILE_WEB_HANDOFF,
             is_new_user: !1,

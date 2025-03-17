@@ -487,6 +487,7 @@ function F(e) {
     case R.cd.APP_ICON_UPSELL:
     case R.cd.CLIENT_THEMES_UPSELL:
     case R.cd.TRY_IT_OUT_MODAL_UPSELL:
+    case R.cd.VOICE_FILTERS_UPSELL:
       return (0, r.jsx)(B, {
         trialOffer: v,
         discountOffer: T,

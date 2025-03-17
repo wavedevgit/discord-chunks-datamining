@@ -11,8 +11,8 @@ var r = n(200651),
   c = n(481060),
   u = n(893776),
   d = n(99690),
-  h = n(937154),
-  p = n(448986),
+  p = n(937154),
+  h = n(448986),
   g = n(388905),
   m = n(198993),
   _ = n(710845),
@@ -166,7 +166,7 @@ function R(e) {
   } = function(e) {
     let [t, n] = i.useState(0), [r, o] = i.useState(!1), [s, l] = i.useState({
       step: 0
-    }), [c, u] = i.useState(null), d = (0, h.Z)(), g = i.useMemo(() => new a.Z(1500, 3e4), []), m = (0, p.Z)(() => {
+    }), [c, u] = i.useState(null), d = (0, p.Z)(), g = i.useMemo(() => new a.Z(1500, 3e4), []), m = (0, h.Z)(() => {
       l({
         step: 0
       }), d ? n(e => e + 1) : (T.info("document is not visible, will defer reconnection when document becomes visible."), o(!0))
@@ -188,14 +188,14 @@ function R(e) {
         s = null,
         c = null,
         d = null,
-        h = !0;
+        p = !0;
 
-      function p() {
+      function h() {
         if (null != a) return a;
         throw Error("No key pair set")
       }
       let f = () => {
-        h ? (h = !1, i.send(JSON.stringify({
+        p ? (p = !1, i.send(JSON.stringify({
           op: "heartbeat"
         }))) : (o("heartbeat timeout, reconnecting."), i.close(), _())
       };
@@ -206,7 +206,7 @@ function R(e) {
         switch (r.op) {
           case "nonce_proof": {
             let e = r.encrypted_nonce,
-              t = await (0, N.qd)(p(), e);
+              t = await (0, N.qd)(h(), e);
             o("computed nonce proof"), i.send(JSON.stringify({
               op: "nonce_proof",
               nonce: t
@@ -215,7 +215,7 @@ function R(e) {
           }
           case "pending_remote_init": {
             g.succeed(), b.S.dispatch(I.CkL.WAVE_EMPHASIZE);
-            let e = await (0, N.Pk)(p());
+            let e = await (0, N.Pk)(h());
             if (e !== r.fingerprint) throw Error("bad fingerprint ".concat(e, " !== ").concat(r.fingerprint));
             o("handshake complete awaiting remote auth."), l({
               step: 1,
@@ -236,7 +236,7 @@ function R(e) {
             let e = r.encrypted_user_payload;
             l({
               step: 3,
-              user: await (0, N.Rq)(p(), e)
+              user: await (0, N.Rq)(h(), e)
             });
             return
           }
@@ -245,7 +245,7 @@ function R(e) {
             let e = r.encrypted_user_payload;
             l({
               step: 2,
-              user: await (0, N.Rq)(p(), e)
+              user: await (0, N.Rq)(h(), e)
             });
             return
           }
@@ -254,7 +254,7 @@ function R(e) {
             let t = r.encrypted_token;
             l({
               step: 5
-            }), e(await (0, N.FW)(p(), t));
+            }), e(await (0, N.FW)(h(), t));
             return
           }
           case "cancel":
@@ -269,7 +269,7 @@ function R(e) {
             return
           }
           case "heartbeat_ack":
-            h = !0
+            p = !0
         }
       }, i.onopen = async () => {
         a = await (0, N.W_)(), s = await (0, N.dK)(a);
