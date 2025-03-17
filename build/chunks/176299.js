@@ -286,12 +286,12 @@ let ey = (0, u.Un)({
           isFullScreen: e,
           tab: n
         }, t))
-      }) : (0, r.jsxs)(g.Z, {
+      }) : (0, r.jsx)(g.Z, {
         deepLinkType: eO.jE.SHOP,
         path: t.location.pathname,
-        children: [(0, r.jsx)(S.Z, ev({
+        children: (0, r.jsx)(S.Z, ev({
           isFullScreen: e
-        }, t)), ";"]
+        }, t))
       })
     }
   },

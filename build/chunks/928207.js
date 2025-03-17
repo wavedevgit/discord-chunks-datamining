@@ -55,7 +55,7 @@ let T = s.ZP.connectStores([N.default], () => ({
             color: h ? o.Z.PREMIUM_TIER_2_PINK : void 0
           }), (0, r.jsx)(_.Z.Title, {
             children: C.NW.string(C.t.Ipxkoq)
-          }), (0, r.jsx)(_.Z.Divider, {})]
+          })]
         })
       })
     }), (0, r.jsx)(m.Gt, {

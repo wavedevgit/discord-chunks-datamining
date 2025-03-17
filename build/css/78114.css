@@ -1,6 +1,6 @@
 /**
   Module ID: 78114
-  Original File Name: 4738a1ef7787aaae
+  Original File Name: 09f4c42cdc6acd9c
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -2621,6 +2621,10 @@ strong {
     background: var(--primary-630)
 }
 
+.root__5621e {
+    padding-top: var(--space-8)
+}
+
 .regionSelectPopout__5621e {
     direction: rtl;
     box-shadow: 0 0 1px rgba(0,0,0,.82),0 1px 4px rgba(0,0,0,.1)
@@ -4598,6 +4602,10 @@ input[type=checked]:focus-visible+.label_df4aaf {
     color: var(--white-500)
 }
 
+.visual-refresh .root_bfe55a {
+    background: var(--black)
+}
+
 html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within),html:not(.keyboard-mode) .root_bfe55a.idle_bfe55a {
     cursor: none
 }
@@ -5329,6 +5337,10 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     background: var(--bg-overlay-chat,var(--background-primary))
 }
 
+.visual-refresh .wrapper_fc8177 {
+    background: var(--bg-overlay-chat,var(--background-base-lower))
+}
+
 .compact_fc8177.wrapper_fc8177 {
     padding-top: .125rem;
     padding-bottom: .125rem
@@ -5469,6 +5481,10 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     contain: strict;
     overflow: hidden;
     background: var(--bg-overlay-chat,var(--background-primary))
+}
+
+.visual-refresh .wrapper_d852db {
+    background: var(--bg-overlay-chat,var(--background-base-lower))
 }
 
 .emojiWrapper__21d2d {
@@ -9704,7 +9720,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     border-top: 1px solid var(--app-border-frame)
 }
 
-.visual-refresh.theme-midnight .content_f75fb0 {
+.visual-refresh.theme-midnight .content_f75fb0,.visual-refresh.theme-midnight .subtitleContainer_f75fb0 {
     border-left: 1px solid var(--border-subtle)
 }
 
@@ -15406,4 +15422,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=4738a1ef7787aaae.css.map*/
+/*# sourceMappingURL=09f4c42cdc6acd9c.css.map*/

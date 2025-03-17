@@ -385,7 +385,8 @@ let ec = e => {
                 })
               }).otherwise(() => null)
             }).with(m.Z.EXTERNAL_SKU, () => (0, r.jsx)(F.b, {
-              product: t
+              product: t,
+              animationState: ex ? "on" : "off"
             })).otherwise(() => null)
           }), eB ? (0, r.jsx)("div", {
             className: es.checkmarkWrapper,

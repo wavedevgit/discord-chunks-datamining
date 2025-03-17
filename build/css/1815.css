@@ -1,6 +1,6 @@
 /**
   Module ID: 1815
-  Original File Name: a197fbbf3c6f0726
+  Original File Name: 578eacc7130cce54
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -1269,7 +1269,8 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .visual-refresh .box_f8c98c {
-    border: 1px solid var(--border-faint);
+    border: 1px solid var(--border-subtle);
+    background-color: var(--background-surface-high);
     box-shadow: none
 }
 
@@ -2077,8 +2078,9 @@ h1.title_feb59c,h2.title_feb59c {
     box-shadow: var(--elevation-low)
 }
 
-.visual-refresh .containerSidenav_dc2e0e,.visual-refresh .sidebarTabBar_dc2e0e {
-    border-top: 1px solid var(--app-border-frame)
+.visual-refresh .containerSidenav_dc2e0e {
+    border-top: 1px solid var(--app-border-frame);
+    background: var(--bg-overlay-chat,var(--background-base-lower))
 }
 
 .visual-refresh .sidebarTabBar_dc2e0e {
@@ -17176,4 +17178,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=a197fbbf3c6f0726.css.map*/
+/*# sourceMappingURL=578eacc7130cce54.css.map*/

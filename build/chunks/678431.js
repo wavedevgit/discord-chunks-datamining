@@ -2,6 +2,7 @@
 e.exports = {
   chat: "chat_f75fb0",
   content: "content_f75fb0",
+  subtitleContainer: "subtitleContainer_f75fb0",
   threadSidebarOpen: "threadSidebarOpen_f75fb0",
   uploadArea: "uploadArea_f75fb0",
   threadSidebarFloating: "threadSidebarFloating_f75fb0",
@@ -22,7 +23,6 @@ e.exports = {
   guildBreadcrumbIcon: "guildBreadcrumbIcon_f75fb0",
   loader: "loader_f75fb0",
   forumPostTitle: "forumPostTitle_f75fb0",
-  subtitleContainer: "subtitleContainer_f75fb0",
   secureFramesIcon: "secureFramesIcon_f75fb0",
   shaker: "shaker_f75fb0",
   linkedLobbyTooltip: "linkedLobbyTooltip_f75fb0",

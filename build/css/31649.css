@@ -1,6 +1,6 @@
 /**
   Module ID: 31649
-  Original File Name: e2435596b853b4a2
+  Original File Name: 3659ee0cc8bdfed2
 **/
 .formGroup__9b8f6 {
     margin-bottom: 20px
@@ -137,6 +137,21 @@
     margin-bottom: 20px
 }
 
+.customStatusInputTitle_dbc4b7 {
+    width: 100%
+}
+
+.customStatusInputTitleContainer_dbc4b7 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px
+}
+
+.visual-refresh .customStatusInputTitleContainer_dbc4b7 {
+    margin-bottom: 0
+}
+
 .inputContainer_dbc4b7 {
     position: relative
 }
@@ -236,7 +251,6 @@
     display: flex;
     align-items: center;
     gap: 4px;
-    margin-top: 10px;
     color: var(--interactive-normal);
     cursor: pointer
 }
@@ -245,4 +259,4 @@
     color: var(--interactive-hover)
 }
 
-/*# sourceMappingURL=e2435596b853b4a2.css.map*/
+/*# sourceMappingURL=3659ee0cc8bdfed2.css.map*/

@@ -76,6 +76,7 @@ class _ extends i.PureComponent {
         key: e.id
       }));
     return (0, r.jsx)(s.nsm, {
+      className: h.root,
       label: p.NW.string(p.t.w8gMqq),
       options: i,
       value: n,

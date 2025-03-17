@@ -216,7 +216,7 @@ let eS = {
       product: t,
       user: n
     }) : (0, ec.o0)(t.skuId) ? (0, r.jsx)(es.b, {
-      animationState: "hover",
+      animationState: "on_hover",
       product: t
     }) : t.items.length > 0 ? (0, r.jsx)(eE, {
       item: t.items[0],

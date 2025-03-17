@@ -18,7 +18,7 @@ let c = {
     [a.xJ]: {
       renderAsset: e => {
         let {
-          animationState: t = "always"
+          animationState: t = "on"
         } = e;
         return (0, r.jsx)(o.Z, {
           animationState: t,

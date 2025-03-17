@@ -1,6 +1,6 @@
 /**
   Module ID: 37697
-  Original File Name: 2b90aa739e013aae
+  Original File Name: 6cec2de26e610f88
 **/
 @value headerBarHeight 60px;
 
@@ -27,6 +27,10 @@
     height: 1px;
     left: 0;
     bottom: 0
+}
+
+.visual-refresh .headerBar__8a7fc {
+    height: var(--custom-channel-header-height)
 }
 
 .relative__8a7fc {
@@ -117,12 +121,16 @@
 }
 
 :where(.visual-refresh) .tabs__65d41 {
-    gap: 0
+    gap: 0;
+    border-bottom: none
+}
+
+:where(.visual-refresh) .container__65d41,:where(.visual-refresh) .tab__65d41,:where(.visual-refresh) .tabs__65d41 {
+    height: var(--custom-channel-header-height)
 }
 
 :where(.visual-refresh) .tab__65d41 {
     margin-top: 0;
-    height: 60px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -2469,4 +2477,4 @@
     height: 22px
 }
 
-/*# sourceMappingURL=2b90aa739e013aae.css.map*/
+/*# sourceMappingURL=6cec2de26e610f88.css.map*/

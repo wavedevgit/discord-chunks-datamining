@@ -1,29 +1,40 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  W: () => g
+  W: () => f
 });
 var r = n(192379),
   i = n(115434),
   s = n(264181),
   a = n(442837),
-  l = n(874703),
-  o = n(619899),
-  c = n(281598),
-  d = n(388032),
-  u = n(786792),
-  m = n(161594);
-let g = () => {
-  let e = (0, o.z)(c.Fr.UPSELL_BANNER),
-    t = (0, o.z)(c.Fr.UPSELL_BANNER_POPOUT),
-    n = (0, a.e7)([l.Z], () => l.Z.getMarketingBySurface(i.K.EDIT_PROFILE_SETTINGS)),
-    g = r.useMemo(() => null != n ? n : {
-      asset: u,
+  l = n(309351),
+  o = n(874703),
+  c = n(619899),
+  d = n(281598),
+  u = n(388032),
+  m = n(513767),
+  g = n(78230),
+  p = n(786792),
+  h = n(161594);
+let f = () => {
+  let e = (0, c.z)(d.Fr.UPSELL_BANNER),
+    t = (0, c.z)(d.Fr.UPSELL_BANNER_POPOUT),
+    n = (0, l.H)("upsell_banner"),
+    f = (0, a.e7)([o.Z], () => o.Z.getMarketingBySurface(i.K.EDIT_PROFILE_SETTINGS)),
+    x = r.useMemo(() => n ? {
+      asset: g,
       popoutAsset: m,
-      title: d.NW.string(d.t["4Emkur"]),
-      body: d.NW.string(d.t.gn7SZW),
+      title: u.NW.string(u.t.QZVVBg),
+      body: u.NW.string(u.t.sajmAg),
       version: 0,
       revertTextColor: !1
-    }, [n]);
+    } : null != f ? f : {
+      asset: p,
+      popoutAsset: h,
+      title: u.NW.string(u.t["4Emkur"]),
+      body: u.NW.string(u.t.gn7SZW),
+      version: 0,
+      revertTextColor: !1
+    }, [f, n]);
   return r.useMemo(() => {
     var n, r;
     return n = function(e) {
@@ -43,10 +54,10 @@ let g = () => {
         })
       }
       return e
-    }({}, g), r = r = {
+    }({}, x), r = r = {
       type: s.Z.BANNER,
-      asset: null != e ? e : g.asset,
-      popoutAsset: null != t ? t : g.popoutAsset
+      asset: null != e ? e : x.asset,
+      popoutAsset: null != t ? t : x.popoutAsset
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -57,5 +68,5 @@ let g = () => {
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
     }), n
-  }, [e, t, g])
+  }, [e, t, x])
 }

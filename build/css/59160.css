@@ -1,6 +1,6 @@
 /**
   Module ID: 59160
-  Original File Name: 1bfdcba20101440c
+  Original File Name: 5806850d82da58e0
 **/
 .image__04666 {
     width: 100%;
@@ -311,7 +311,7 @@
 .visual-refresh .wrapper_d5f3cd {
     background-color: var(--background-surface-high);
     border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-xs)
+    border-radius: var(--radius-sm)
 }
 
 .visual-refresh .guildIcon_d5f3cd,.visual-refresh .guildIconImage_d5f3cd {
@@ -9921,11 +9921,7 @@ html .progress__61462 {
 }
 
 .header__4d3fa {
-    text-transform: uppercase;
-    font-size: 12px;
-    line-height: 12px;
-    font-weight: 700;
-    color: var(--primary-400)
+    text-transform: uppercase
 }
 
 .partyStatus__4d3fa {
@@ -9998,7 +9994,8 @@ html .progress__61462 {
     width: 14px;
     height: 14px;
     z-index: 1;
-    transition: opacity .2s ease
+    transition: opacity .2s ease;
+    color: var(--icon-primary)
 }
 
 .helpIcon__4d3fa:hover {
@@ -10072,6 +10069,25 @@ html .progress__61462 {
 
 .images-dark .artworkSpotifySessionEnded__4d3fa {
     background-image: url(/assets/e0a972c9c0c4593e.svg)
+}
+
+.visual-refresh .header__4d3fa {
+    text-transform: none
+}
+
+.visual-refresh .invite__4d3fa {
+    background-color: var(--background-surface-high);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm)
+}
+
+.visual-refresh .moreUsers__4d3fa,.visual-refresh .partyMemberEmpty__4d3fa {
+    background-color: var(--background-mod-subtle)
+}
+
+.visual-refresh .helpIcon__4d3fa {
+    background-color: transparent;
+    background-color: initial
 }
 
 .name__4d3fa,.partyStatus__4d3fa,.textLink__4d3fa,.message-group .textLink__4d3fa {
@@ -12755,12 +12771,22 @@ html .progress__61462 {
 }
 
 .visual-refresh .jumpButton_ed0c8c {
-    background-color: var(--button-secondary-background);
-    color: var(--button-secondary-text)
+    background-color: var(--background-surface-high);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--border-subtle);
+    color: var(--button-secondary-text);
+    box-shadow: var(--shadow-medium);
+    font-weight: 600;
+    top: var(--space-8);
+    right: var(--space-8);
+    border-radius: var(--radius-xs);
+    padding: var(--space-4) var(--space-8);
+    height: auto
 }
 
 .visual-refresh .jumpButton_ed0c8c:hover {
-    background-color: var(--button-secondary-background-hover)
+    background-color: var(--background-surface-higher)
 }
 
 .recentMentionsPopout__95796 {
@@ -14711,4 +14737,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=1bfdcba20101440c.css.map*/
+/*# sourceMappingURL=5806850d82da58e0.css.map*/

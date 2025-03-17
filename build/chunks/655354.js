@@ -23,7 +23,7 @@ function d(e) {
     children: a ? (0, r.jsx)(l.$jN, {
       type: l.$jN.Type.PULSING_ELLIPSIS
     }) : (0, r.jsx)(l.Text, {
-      variant: "text-xs/normal",
+      variant: "text-xs/medium",
       className: c.text,
       children: s.NW.string(s.t.k5WiPT)
     })

@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: aed2c75944732728
+  Original File Name: 9d8086a7f9ea33f1
 **/
 .countDownWrapper_a1b7b8 {
     display: flex;
@@ -72,7 +72,7 @@
 }
 
 .visual-refresh .headerBar__80679 {
-    height: 56px;
+    height: var(--custom-channel-header-height);
     border-bottom: 1px solid var(--border-subtle);
     background-color: var(--background-base-lower)
 }
@@ -256,6 +256,12 @@
     .shop__6db1d {
         min-width: 0
     }
+}
+
+.visual-refresh .shop__6db1d {
+    background-color: var(--background-base-lower);
+    border-top: 1px solid var(--border-subtle);
+    height: auto
 }
 
 .shopScroll__6db1d {
@@ -501,6 +507,10 @@
     background-color: color-mix(in srgb,var(--background-secondary-alt) 50%,transparent)
 }
 
+.visual-refresh .backgroundSecondary__08415 {
+    background-color: color-mix(in srgb,var(--background-surface-high) 50%,transparent)
+}
+
 .loadingContainer__08415 {
     display: flex;
     flex-direction: column;
@@ -584,6 +594,12 @@
     background: var(--background-primary);
     padding-bottom: calc(24px + 162px);
     padding-bottom: calc(var(--custom-gap) + 162px)
+}
+
+.visual-refresh .shop__08415 {
+    --custom-gap: var(--space-xl);
+    --custom-spacing: var(--space-md);
+    background-color: var(--background-base-lower)
 }
 
 .banner__08415 {
@@ -826,6 +842,10 @@
     grid-template-columns: repeat(auto-fill,minmax(246px,1fr))
 }
 
+.visual-refresh .feed__08415 {
+    grid-gap: var(--space-xl)
+}
+
 .feedSingleRow__08415 {
     grid-template-rows: 1fr;
     overflow-x: visible;
@@ -961,4 +981,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=aed2c75944732728.css.map*/
+/*# sourceMappingURL=9d8086a7f9ea33f1.css.map*/

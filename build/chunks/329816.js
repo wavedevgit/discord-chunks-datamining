@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => eE
+  Z: () => eb
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -56,17 +56,18 @@ var r = n(200651),
   $ = n(358085),
   ee = n(74538),
   et = n(663993),
-  en = n(823453),
-  er = n(628123),
-  ei = n(436774),
-  eo = n(686546),
-  ea = n(950796),
-  es = n(151851),
-  el = n(981631),
-  ec = n(921944),
-  eu = n(541222);
+  en = n(766127),
+  er = n(823453),
+  ei = n(628123),
+  eo = n(436774),
+  ea = n(686546),
+  es = n(950796),
+  el = n(151851),
+  ec = n(981631),
+  eu = n(921944),
+  ed = n(541222);
 
-function ed(e, t, n) {
+function ef(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -75,20 +76,20 @@ function ed(e, t, n) {
   }) : e[t] = n, e
 }
 
-function ef(e) {
+function e_(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      ed(e, t, n[t])
+      ef(e, t, n[t])
     })
   }
   return e
 }
 
-function e_(e, t) {
+function ep(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -99,8 +100,8 @@ function e_(e, t) {
   return n
 }
 
-function ep(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : e_(Object(t)).forEach(function(n) {
+function eh(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ep(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -115,91 +116,91 @@ n(167666), Promise.resolve().then(n.bind(n, 62883)).then(e => {
   createPromise: () => Promise.all([n.e("77298"), n.e("80451"), n.e("30634"), n.e("58493")]).then(n.bind(n, 80753)),
   webpackId: 80753
 });
-let eh = (0, et.Un)({
+let em = (0, et.Un)({
     createPromise: () => n.e("67110").then(n.bind(n, 177741)),
     webpackId: 177741
   }),
-  em = (0, et.Un)({
+  eg = (0, et.Un)({
     createPromise: () => Promise.all([n.e("78447"), n.e("13474")]).then(n.bind(n, 420541)),
     webpackId: 420541
   }),
-  eg = i.memo(function(e) {
+  eE = i.memo(function(e) {
     let t = (0, u.e7)([J.Z], () => J.Z.isFocused()),
       n = (0, u.e7)([Q.Z], () => Q.Z.hasLayers()),
       i = (0, p.s9z)(p.$sL);
-    return (0, j.Q3)("ConnectedTitleBar") ? (0, r.jsx)(ea.D, {
+    return (0, j.Q3)("ConnectedTitleBar") ? (0, r.jsx)(es.D, {
       fixed: !0,
       show: n || i || !q.default.isAuthenticated()
-    }) : (0, r.jsx)(es.Z, ep(ef({}, e), {
+    }) : (0, r.jsx)(el.Z, eh(e_({}, e), {
       focused: t
     }))
   }),
-  eE = function(e) {
+  eb = function(e) {
     let {
       children: t,
       skipsSettingDefaultPageTitle: n
     } = e, {
       pathname: o
-    } = (0, l.TH)(), _ = (0, $.getPlatform)(), v = c.tq || c.Em, q = (0, u.e7)([K.Z], () => K.Z.darkSidebar ? el.BRd.DARK : void 0), J = (0, j.Q3)("AppSkeleton");
+    } = (0, l.TH)(), _ = (0, $.getPlatform)(), v = c.tq || c.Em, q = (0, u.e7)([K.Z], () => K.Z.darkSidebar ? ec.BRd.DARK : void 0), J = (0, j.Q3)("AppSkeleton");
     i.useEffect(() => {
       f.K.set(j.k9, String(J))
     }, [J]);
     let et = (0, u.e7)([O.Z], () => O.Z.useForcedColors ? "yes" : "no"),
-      [ea, es, ed] = (0, u.Wu)([D.Z], () => [D.Z.isEditorOpen, D.Z.isCoachmark, D.Z.isPreview]),
-      [ef, e_] = (0, u.Wu)([C.Z], () => [C.Z.isEditorOpen, C.Z.isUpsellPreview]),
-      ep = (0, u.e7)([Q.Z], () => Q.Z.getLayers().includes(el.S9g.USER_SETTINGS)),
-      eE = (0, u.e7)([X.default], () => ee.ZP.canUseClientThemes(X.default.getCurrentUser())),
-      eb = ea && !ep,
-      ev = ef && !ep,
-      ey = [];
-    ep || !es || eE || ey.push(d.z.CLIENT_THEMES_COACHMARK);
-    let [eO, eI] = (0, B.US)(ey, ec.R.SIDEBAR, !0);
-    ey.push(d.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK);
-    let eS = eO === d.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK,
-      eT = eO === d.z.CLIENT_THEMES_COACHMARK;
+      [es, el, ef] = (0, u.Wu)([D.Z], () => [D.Z.isEditorOpen, D.Z.isCoachmark, D.Z.isPreview]),
+      [e_, ep] = (0, u.Wu)([C.Z], () => [C.Z.isEditorOpen, C.Z.isUpsellPreview]),
+      eh = (0, u.e7)([Q.Z], () => Q.Z.getLayers().includes(ec.S9g.USER_SETTINGS)),
+      eb = (0, u.e7)([X.default], () => ee.ZP.canUseClientThemes(X.default.getCurrentUser())),
+      ev = es && !eh,
+      ey = e_ && !eh,
+      eO = [];
+    eh || !el || eb || eO.push(d.z.CLIENT_THEMES_COACHMARK);
+    let [eI, eS] = (0, B.US)(eO, eu.R.SIDEBAR, !0);
+    eO.push(d.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK);
+    let eT = eI === d.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK,
+      eN = eI === d.z.CLIENT_THEMES_COACHMARK;
     i.useEffect(() => {
       null == (0, l.LX)(o, {
         path: "invite",
         exact: !1,
         strict: !1
-      }) && eS && !eT && ((0, A.nJ)(), h.Z.dispatch({
+      }) && eT && !eN && ((0, A.nJ)(), h.Z.dispatch({
         type: "APP_ICON_TRACK_IMPRESSION",
-        markAsDismissed: eI
+        markAsDismissed: eS
       }))
-    }, [eS, eT, eI, o]);
-    let eN = i.useRef(document.body),
-      eA = eb || eT,
-      eC = ev && !eT,
-      eR = ed || e_,
+    }, [eT, eN, eS, o]);
+    let eA = i.useRef(document.body),
+      eC = ev || eN,
+      eR = ey && !eN,
+      eP = ef || ep,
       {
-        enabled: eP
+        enabled: ew
       } = W.Z.useExperiment({
         location: "AppSkeleton"
       }, {
-        autoTrackExposure: eR && (eA || eC),
-        disable: !eR
+        autoTrackExposure: eP && (eC || eR),
+        disable: !eP
       }),
-      ew = "".concat(J ? "enabled" : "disabled").concat(et);
+      eD = "".concat(J ? "enabled" : "disabled").concat(et);
     return (0, r.jsx)(Y.w, {
       children: (0, r.jsx)(I.Z, {
         children: (0, r.jsxs)(p.vWI, {
-          children: [(0, r.jsx)(en.Z, {
+          children: [(0, r.jsx)(er.Z, {
             skipsSettingDefaultPageTitle: n
           }), (0, r.jsx)(b.T, {
-            children: (0, r.jsx)(er.Z, {
+            children: (0, r.jsx)(ei.Z, {
               children: (0, r.jsxs)(p.JcV, {
-                containerRef: eN,
-                children: [(0, r.jsx)(eo.Co, {}), (0, r.jsx)(ei.ZP, {}), (0, r.jsx)(s.OU, {}), (0, r.jsx)(y.Wu, {
-                  appContext: el.IlC.APP,
+                containerRef: eA,
+                children: [(0, r.jsx)(ea.Co, {}), (0, r.jsx)(eo.ZP, {}), (0, r.jsx)(s.OU, {}), (0, r.jsx)(y.Wu, {
+                  appContext: ec.IlC.APP,
                   renderWindow: window,
                   children: (0, r.jsxs)(F.yP, {
-                    children: [null != _ ? (0, r.jsx)(eg, {
+                    children: [null != _ ? (0, r.jsx)(eE, {
                       type: _,
                       themeOverride: q
                     }) : null, (0, r.jsxs)("div", {
-                      className: a()(eu.appAsidePanelWrapper, v && eu.mobileAppAsidePanelWrapper),
+                      className: a()(ed.appAsidePanelWrapper, v && ed.mobileAppAsidePanelWrapper),
                       children: [(0, r.jsx)(k.K, {}), (0, r.jsx)("div", {
-                        className: eu.notAppAsidePanel,
+                        className: ed.notAppAsidePanel,
                         "data-app-not-dev-tools": !0,
                         children: (0, r.jsx)(M.m, {
                           children: (0, r.jsx)(Z.OR, {
@@ -207,29 +208,29 @@ let eh = (0, et.Un)({
                               value: T.Z,
                               children: (0, r.jsxs)(x.p, {
                                 children: [(0, r.jsx)("div", {
-                                  className: a()(v ? eu.mobileApp : eu.app),
+                                  className: a()(v ? ed.mobileApp : ed.app),
                                   children: t
-                                }), (0, r.jsx)(P.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(p.nKe, {}), (0, r.jsx)(E.Z, {}), (0, r.jsx)(V.Ox, {}), (0, r.jsx)(F.Un, {}), (0, r.jsx)(Z.ot, {}), (0, r.jsx)(p.Ixi, {}), (0, r.jsx)(N.Z, {}), (0, r.jsx)(H.Z, {}), (0, r.jsx)(eh, {}), (0, r.jsx)(em, {})]
+                                }), (0, r.jsx)(P.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(p.nKe, {}), (0, r.jsx)(E.Z, {}), (0, r.jsx)(V.Ox, {}), (0, r.jsx)(F.Un, {}), (0, r.jsx)(Z.ot, {}), (0, r.jsx)(p.Ixi, {}), (0, r.jsx)(N.Z, {}), (0, r.jsx)(H.Z, {}), (0, r.jsx)(em, {}), (0, r.jsx)(eg, {})]
                               })
                             })
                           })
                         })
-                      }), (0, r.jsx)(w.Z, {}), (0, r.jsx)(m.Z, {}), eA && !eP && (0, r.jsx)(L.Z, {
-                        markAsDismissed: eT ? eI : () => {
+                      }), (0, r.jsx)(w.Z, {}), (0, r.jsx)(m.Z, {}), eC && !ew && (0, r.jsx)(L.Z, {
+                        markAsDismissed: eN ? eS : () => {
                           (0, G.EW)(d.z.CLIENT_THEMES_COACHMARK, {
-                            dismissAction: ec.L.INDIRECT_ACTION,
+                            dismissAction: eu.L.INDIRECT_ACTION,
                             forceTrack: !0
                           })
                         },
-                        showClientThemesCoachmark: eT
-                      }), eC && !eP && (0, r.jsx)(R.Z, {
-                        isCoachmark: eS,
-                        markAsDismissed: eI
-                      }), (eA || eC) && eP && (0, r.jsx)(z.Z, {
-                        initialTab: eC ? z._.APP_ICONS : z._.CLIENT_THEMES,
-                        markAsDismissed: eI,
-                        isCoachmark: eT
-                      }), (0, r.jsx)(U.Z, {
+                        showClientThemesCoachmark: eN
+                      }), eR && !ew && (0, r.jsx)(R.Z, {
+                        isCoachmark: eT,
+                        markAsDismissed: eS
+                      }), (eC || eR) && ew && (0, r.jsx)(z.Z, {
+                        initialTab: eR ? z._.APP_ICONS : z._.CLIENT_THEMES,
+                        markAsDismissed: eS,
+                        isCoachmark: eN
+                      }), (0, r.jsx)(en.Z, {}), (0, r.jsx)(U.Z, {
                         mobile: v
                       })]
                     }), !1]
@@ -240,5 +241,5 @@ let eh = (0, et.Un)({
           })]
         })
       })
-    }, ew)
+    }, eD)
   }

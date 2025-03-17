@@ -1,6 +1,6 @@
 /**
   Module ID: 25496
-  Original File Name: 8d6c86a88943f283
+  Original File Name: 8901676d3cc468f4
 **/
 .container__270b2 {
     flex-direction: row;
@@ -391,7 +391,7 @@
 .visual-refresh .wrapper_d5f3cd {
     background-color: var(--background-surface-high);
     border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-xs)
+    border-radius: var(--radius-sm)
 }
 
 .visual-refresh .guildIcon_d5f3cd,.visual-refresh .guildIconImage_d5f3cd {
@@ -1198,4 +1198,4 @@
     background-color: initial
 }
 
-/*# sourceMappingURL=8d6c86a88943f283.css.map*/
+/*# sourceMappingURL=8901676d3cc468f4.css.map*/
