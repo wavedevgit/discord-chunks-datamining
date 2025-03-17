@@ -7,7 +7,7 @@ var r = {
   avatarVisible: "avatarVisible_fdeafc",
   avatarWithTextInnerClassName: "avatarWithTextInnerClassName_fdeafc",
   nameplatePurchased: "nameplatePurchased_fdeafc",
-  placeholderPulse: "placeholderPulse_fdeafc",
-  placeholderUsername: "placeholderUsername_fdeafc"
+  placeholderUsername: "placeholderUsername_fdeafc",
+  placeholderUsernameColor: "placeholderUsernameColor_fdeafc"
 };
 e.exports = r

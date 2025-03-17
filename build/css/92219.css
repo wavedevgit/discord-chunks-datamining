@@ -1,6 +1,6 @@
 /**
   Module ID: 92219
-  Original File Name: 06f29ec3bf95c56c
+  Original File Name: 4f4951fe511a58b5
 **/
 @value minColumnWidth: 460px;
 
@@ -1476,7 +1476,8 @@
     box-sizing: border-box;
     height: 100%;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    justify-content: space-evenly
 }
 
 .nameplatePreviewSampleItem_c3d04b {
@@ -1487,7 +1488,17 @@
 }
 
 .placeholderItem_c3d04b {
-    padding: 0 8px
+    padding: 0 8px;
+    display: flex;
+    align-items: center
+}
+
+.placeholderBar_c3d04b {
+    flex-grow: 1;
+    height: 14px;
+    border-radius: 8px;
+    margin-left: 12px;
+    background-color: var(--background-modifier-accent)
 }
 
 .placeholderItemChildrenDark_c3d04b {
@@ -1680,4 +1691,4 @@
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=06f29ec3bf95c56c.css.map*/
+/*# sourceMappingURL=4f4951fe511a58b5.css.map*/

@@ -1,6 +1,6 @@
 /** Chunk was on 98697 **/
 n.d(t, {
-  Z: () => j
+  Z: () => D
 }), n(266796), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -147,22 +147,22 @@ class x extends i.PureComponent {
         children: T.NW.string(T.t["2t19lZ"])
       }), (0, r.jsxs)("div", {
         className: C.ddrArrows,
-        children: [(0, r.jsx)(D, {
+        children: [(0, r.jsx)(j, {
           arrow: "LEFT",
           isActive: n,
           className: C.left,
           children: "left"
-        }), (0, r.jsx)(D, {
+        }), (0, r.jsx)(j, {
           arrow: "DOWN",
           isActive: t,
           className: C.down,
           children: "down"
-        }), (0, r.jsx)(D, {
+        }), (0, r.jsx)(j, {
           arrow: "UP",
           isActive: e,
           className: C.up,
           children: "up"
-        }), (0, r.jsx)(D, {
+        }), (0, r.jsx)(j, {
           arrow: "RIGHT",
           isActive: i,
           className: C.right,
@@ -257,7 +257,7 @@ class x extends i.PureComponent {
   }
 }
 
-function D(e) {
+function j(e) {
   let {
     isActive: t,
     arrow: n,
@@ -280,7 +280,7 @@ function D(e) {
   })
 }
 
-function j(e) {
+function D(e) {
   let {
     transitionState: t,
     onClose: n

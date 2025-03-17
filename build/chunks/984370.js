@@ -1,6 +1,6 @@
 /** Chunk was on 98697 **/
 n.d(t, {
-  O: () => j,
+  O: () => D,
   Z: () => Z
 }), n(301563);
 var r = n(200651);
@@ -52,7 +52,7 @@ function x(e) {
   return e
 }
 
-function D(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,7 +64,7 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function j() {
+async function D() {
   if ((0, I.isMac)() && I.isPlatformEmbedded) {
     var e, t, n;
     let r = null !== (n = await (null === (e = (t = window.DiscordNative.remoteApp).getDefaultDoubleClickAction) || void 0 === e ? void 0 : e.call(t))) && void 0 !== n ? n : "Maximize";
@@ -83,7 +83,7 @@ function L(e) {
     transparent: I = !1,
     toolbar: T,
     mobileToolbar: x,
-    "aria-label": D,
+    "aria-label": j,
     "aria-labelledby": L,
     scrollable: k,
     role: M,
@@ -125,8 +125,8 @@ function L(e) {
       })
     }(),
     transparent: I,
-    onDoubleClick: j,
-    "aria-label": D,
+    onDoubleClick: D,
+    "aria-label": j,
     "aria-labelledby": L,
     role: M,
     scrollable: k,
@@ -144,7 +144,7 @@ function k(e) {
   } = e;
   return (0, r.jsx)(C.ZP, {
     className: n,
-    onDoubleClick: j,
+    onDoubleClick: D,
     "aria-label": i,
     "aria-labelledby": o,
     role: l,
@@ -177,9 +177,9 @@ function M(e) {
   });
   return (0, r.jsx)(u.Gt, {
     value: i,
-    children: t ? (0, r.jsx)(L, D(x({}, n), {
+    children: t ? (0, r.jsx)(L, j(x({}, n), {
       className: l
-    })) : (0, r.jsx)(k, D(x({}, n), {
+    })) : (0, r.jsx)(k, j(x({}, n), {
       className: l
     }))
   })

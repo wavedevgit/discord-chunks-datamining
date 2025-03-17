@@ -101,7 +101,7 @@ let N = function(e) {
         }), (0, r.jsx)(O.O, {})]
       }), (0, r.jsxs)("div", {
         className: T.middleBodyContentWrapper,
-        children: [(0, r.jsx)(y.Z, {
+        children: [(0, r.jsx)(y.ZP, {
           guild: e.guild
         }), D && (0, r.jsx)(f.Z, {
           guild: e.guild

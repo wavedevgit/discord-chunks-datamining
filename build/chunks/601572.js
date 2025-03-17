@@ -8,8 +8,8 @@ var o = n(200651),
   i = n(846027),
   c = n(410575),
   l = n(2052),
-  d = n(100527),
-  _ = n(906732),
+  _ = n(100527),
+  d = n(906732),
   s = n(600164),
   u = n(313201),
   b = n(695346),
@@ -30,19 +30,19 @@ function O(e) {
     transitionState: t,
     videoEnabled: n,
     onEnable: O,
-    onClose: x
-  } = e, B = h.Z.getCameraComponent(), y = (0, u.Dt)(), P = (0, m.Z)(), w = b.qF.useSetting(), [A, L] = a.useState((0, p.P)(v.default.getCurrentUser())), E = (0, l.O)(), {
-    analyticsLocations: D
-  } = (0, _.ZP)(d.Z.CAMERA_PREVIEW), N = a.useRef(null);
+    onClose: B
+  } = e, x = h.Z.getCameraComponent(), y = (0, u.Dt)(), P = (0, m.Z)(), w = b.qF.useSetting(), [A, L] = a.useState((0, p.P)(v.default.getCurrentUser())), E = (0, l.O)(), {
+    analyticsLocations: N
+  } = (0, d.ZP)(_.Z.CAMERA_PREVIEW), R = a.useRef(null);
   a.useEffect(() => {
     C.default.track(T.rMx.OPEN_MODAL, {
       type: "Camera Preview Modal"
     })
   }, []), a.useEffect(() => {
     var e;
-    null === (e = N.current) || void 0 === e || e.scrollToTop()
+    null === (e = R.current) || void 0 === e || e.scrollToTop()
   }, []);
-  let R = async () => {
+  let D = async () => {
     await W(), i.Z.setVideoEnabled(!0), null == O || O()
   }, W = async () => {
     try {
@@ -69,10 +69,10 @@ function O(e) {
         }, E.location)
       })
     } catch (e) {}
-    await x(), (0, f.Up)(A)
+    await B(), (0, f.Up)(A)
   };
-  return (0, o.jsx)(_.Gt, {
-    value: D,
+  return (0, o.jsx)(d.Gt, {
+    value: N,
     children: (0, o.jsx)(c.Z, {
       page: T.ZY5.PREVIEW_CAMERA_MODAL,
       children: (0, o.jsxs)(r.Y0X, {
@@ -82,7 +82,7 @@ function O(e) {
         transitionState: t,
         children: [(0, o.jsxs)(r.hzk, {
           className: P ? k.contentWithVideoBackgrounds : k.content,
-          scrollerRef: N,
+          scrollerRef: R,
           children: [(0, o.jsx)(r.X6q, {
             id: y,
             className: k.header,
@@ -100,7 +100,7 @@ function O(e) {
               className: k.cameraPreview,
               children: [(0, o.jsx)("div", {
                 className: k.camera,
-                children: (0, o.jsx)(B, {
+                children: (0, o.jsx)(x, {
                   disabled: !1,
                   deviceId: e,
                   width: 368,
@@ -108,14 +108,14 @@ function O(e) {
                 })
               }), (0, o.jsx)(S.S, {})]
             }),
-            onLearnMore: x
+            onLearnMore: B
           })]
         }), (0, o.jsxs)(r.mzw, {
           justify: s.Z.Justify.BETWEEN,
           children: [(() => {
             let e = n ? I.NW.string(I.t.KQENho) : I.NW.string(I.t.kgIe9f);
             return (0, o.jsx)(r.zxk, {
-              onClick: n ? W : R,
+              onClick: n ? W : D,
               size: r.zxk.Sizes.SMALL,
               autoFocus: !n,
               children: e
@@ -135,7 +135,7 @@ function O(e) {
             })
           })]
         }), (0, o.jsx)(r.olH, {
-          onClick: x,
+          onClick: B,
           className: k.modalClose
         })]
       })

@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => E
-}), n(47120), n(266796);
+  Z: () => T
+}), n(47120), n(978209), n(266796);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -13,19 +13,72 @@ var r = n(200651),
   u = n(37234),
   d = n(703656),
   f = n(50101),
-  _ = n(981631),
-  p = n(176505),
-  h = n(730621),
-  m = n(388032),
-  g = n(752593);
+  _ = n(111360),
+  p = n(535396),
+  h = n(981631),
+  m = n(176505),
+  g = n(730621),
+  E = n(388032),
+  b = n(752593);
 
-function E(e) {
+function v(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: !0,
+    configurable: !0,
+    writable: !0
+  }) : e[t] = n, e
+}
+
+function y(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      v(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function O(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function S(e) {
   let {
-    guild: t,
-    themeResponsive: n = !0
-  } = e, o = (0, f.Ek)(t, "GuildBoostingMarketing"), [E, b] = (0, c.q_F)(() => ({
+    powerup: t
+  } = e;
+  return (0, r.jsx)(l.xv, {
+    tag: "span",
+    variant: "text-md/semibold",
+    className: b.highlight,
+    children: t.title
+  })
+}
+
+function T(e) {
+  var t;
+  let {
+    guild: n,
+    themeResponsive: o = !0
+  } = e, v = (0, f.Ek)(n, "GuildBoostingMarketing"), O = null === (t = (0, _.Z)(n.id)) || void 0 === t ? void 0 : t.get(p.Us.PERK), [T, N] = i.useState(!1), [A, C] = (0, c.q_F)(() => ({
     scale: .8,
-    opacity: 0,
     config: {
       tension: 500,
       friction: 10
@@ -33,50 +86,63 @@ function E(e) {
   }));
   i.useEffect(() => {
     let e = setTimeout(() => {
-      b({
-        scale: 1,
-        opacity: 1
-      })
+      C({
+        scale: 1
+      }), N(!0)
     }, 300);
     return () => clearTimeout(e)
-  }, [b]);
-  let v = i.useCallback(() => {
-    (0, u.xf)(), (0, d.uL)(_.Z5c.CHANNEL(t.id, p.oC.GUILD_BOOSTS))
-  }, [t.id]);
-  return o ? (0, r.jsxs)(s.animated.div, {
-    className: a()(g.container, {
-      [g.themeResponsiveContainer]: n
+  }, [C]);
+  let R = i.useCallback(() => {
+      (0, u.xf)(), (0, d.uL)(h.Z5c.CHANNEL(n.id, m.oC.GUILD_BOOSTS))
+    }, [n.id]),
+    P = i.useMemo(() => {
+      let e;
+      if (null == O || 0 === O.length) return "";
+      if (1 === O.length) e = (0, r.jsx)(S, {
+        powerup: O[0]
+      });
+      else if (2 === O.length) e = E.NW.format(g.Z.MNO3sL, {
+        perk1: (0, r.jsx)(S, {
+          powerup: O[0]
+        }),
+        perk2: (0, r.jsx)(S, {
+          powerup: O[1]
+        })
+      });
+      else {
+        let t = O.reverse();
+        e = E.NW.format(g.Z.GmN3VV, {
+          perk1: (0, r.jsx)(S, {
+            powerup: t[0]
+          }),
+          perk2: (0, r.jsx)(S, {
+            powerup: t[1]
+          })
+        })
+      }
+      return E.NW.format(g.Z["/6GgQk"], {
+        perks: e
+      })
+    }, [O]);
+  return v && null != O && 0 !== O.length ? (0, r.jsxs)(s.animated.div, {
+    className: a()(b.container, {
+      [b.themeResponsiveContainer]: o
     }),
-    style: E,
-    children: [(0, r.jsxs)("div", {
-      className: g.description,
-      children: [(0, r.jsx)(l.xv, {
-        variant: "text-md/semibold",
-        className: a()({
-          [g.text]: !n,
-          [g.responsiveText]: n
-        }),
-        children: m.NW.string(h.Z.XBP9VV)
-      }), (0, r.jsx)(l.xv, {
-        variant: "text-md/semibold",
-        className: g.highlight,
-        children: m.NW.string(h.Z["l/4T7u"])
-      }), (0, r.jsx)(l.xv, {
-        variant: "text-md/semibold",
-        className: a()({
-          [g.text]: !n,
-          [g.responsiveText]: n
-        }),
-        children: m.NW.string(h.Z.wS3GDA)
-      }), (0, r.jsx)(l.xv, {
-        variant: "text-md/semibold",
-        className: g.highlight,
-        children: m.NW.string(h.Z["uFH+vL"])
-      })]
+    style: I(y({}, A), {
+      opacity: +!!T
+    }),
+    children: [(0, r.jsx)(l.xv, {
+      tag: "span",
+      variant: "text-md/semibold",
+      className: a()(b.description, {
+        [b.text]: !o,
+        [b.responsiveText]: o
+      }),
+      children: P
     }), (0, r.jsx)(c.zxk, {
-      className: g.button,
-      onClick: v,
-      children: m.NW.string(h.Z.E5V5KC)
+      className: b.button,
+      onClick: R,
+      children: E.NW.string(g.Z.E5V5KC)
     })]
   }) : null
 }

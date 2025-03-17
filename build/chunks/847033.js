@@ -37,8 +37,8 @@ function y(e) {
     children: n,
     initialTab: o,
     guildId: l
-  } = e, S = (0, a.e7)([h.Z], () => h.Z.getGuild(l)), y = (0, a.e7)([p.Z], () => p.Z.isViewingServerShop(l)), v = (0, O.g)(S, "guild_shop_page"), P = (0, b.RF)(l, "guild_shop_page"), R = (null == S ? void 0 : S.hasFeature(T.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === !0, A = (0, _.mY)(null == S ? void 0 : S.id), x = null === (t = (0, d.YB)(l)) || void 0 === t ? void 0 : t.server_shop_tab_order, D = [], j = g.y.GUILD_SHOP_FULL_PREVIEW;
-  y || R && A ? (D.push(x === N.a3.PRODUCTS_FIRST ? g.y.GUILD_PRODUCTS : g.y.GUILD_ROLE_SUBSCRIPTIONS), D.push(x === N.a3.PRODUCTS_FIRST ? g.y.GUILD_ROLE_SUBSCRIPTIONS : g.y.GUILD_PRODUCTS), j = D[0]) : R && !A ? (D.push(g.y.GUILD_PRODUCTS), j = g.y.GUILD_PRODUCTS) : !R && A && (D.push(g.y.GUILD_ROLE_SUBSCRIPTIONS), j = g.y.GUILD_ROLE_SUBSCRIPTIONS, v && D.push(g.y.GUILD_PRODUCTS_PREVIEW)), o = null != o ? o : j;
+  } = e, S = (0, a.e7)([h.Z], () => h.Z.getGuild(l)), y = (0, a.e7)([p.Z], () => p.Z.isViewingServerShop(l)), v = (0, O.g)(S, "guild_shop_page"), P = (0, b.RF)(l, "guild_shop_page"), R = (null == S ? void 0 : S.hasFeature(T.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === !0, A = (0, _.mY)(null == S ? void 0 : S.id), x = null === (t = (0, d.YB)(l)) || void 0 === t ? void 0 : t.server_shop_tab_order, j = [], D = g.y.GUILD_SHOP_FULL_PREVIEW;
+  y || R && A ? (j.push(x === N.a3.PRODUCTS_FIRST ? g.y.GUILD_PRODUCTS : g.y.GUILD_ROLE_SUBSCRIPTIONS), j.push(x === N.a3.PRODUCTS_FIRST ? g.y.GUILD_ROLE_SUBSCRIPTIONS : g.y.GUILD_PRODUCTS), D = j[0]) : R && !A ? (j.push(g.y.GUILD_PRODUCTS), D = g.y.GUILD_PRODUCTS) : !R && A && (j.push(g.y.GUILD_ROLE_SUBSCRIPTIONS), D = g.y.GUILD_ROLE_SUBSCRIPTIONS, v && j.push(g.y.GUILD_PRODUCTS_PREVIEW)), o = null != o ? o : D;
   let [L, k] = i.useState(o), M = v && !(A && P) || L === g.y.GUILD_PRODUCTS_PREVIEW;
   return i.useEffect(() => {
     k(o)
@@ -46,7 +46,7 @@ function y(e) {
     value: {
       selectedTab: L,
       setSelectedTab: k,
-      categoryTabs: D,
+      categoryTabs: j,
       isPhantomPreview: M,
       handlePreviewDismiss: e => {
         (0, u.EW)(s.z.SERVER_SHOP_PHANTOM_PREVIEW);

@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => v
+  Z: () => m
 });
 var r = t(200651);
 t(192379);
@@ -15,12 +15,12 @@ var i = t(793030),
   x = t(388032),
   p = t(652754);
 
-function v(e) {
+function m(e) {
   let {
     boost: n
   } = e, t = new Date(d.default.extractTimestamp(n.id)), {
-    username: v,
-    roleColor: m
+    username: m,
+    roleColor: v
   } = (0, o.cj)([l.ZP], () => {
     var e, t, r;
     return {
@@ -45,8 +45,8 @@ function v(e) {
       children: [(0, r.jsx)(i.xv, {
         variant: "text-md/semibold",
         children: (0, r.jsx)(s.PUh, {
-          name: v,
-          color: null != m ? m : void 0
+          name: m,
+          color: null != v ? v : void 0
         })
       }), (0, r.jsx)(i.xv, {
         variant: "text-md/medium",

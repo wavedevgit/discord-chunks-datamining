@@ -491,7 +491,7 @@ let eS = {
     let {
       user: t,
       nameplate: n
-    } = e, a = i.useRef(null), l = (0, h.Z)(a);
+    } = e;
     return (0, r.jsxs)("div", {
       className: eN.nameplateRightPanePreviewContainer,
       children: [(0, r.jsx)(eZ, {
@@ -503,14 +503,13 @@ let eS = {
       }), (0, r.jsx)(eZ, {
         user: eS.phibi
       }), (0, r.jsx)("div", {
-        ref: a,
         className: eN.nameplateRightPanePreviewAvatarContainer,
         children: (0, r.jsx)(ef.Z, {
           className: eN.nameplatePreview,
           user: t,
           nameplate: n,
           showStatus: !0,
-          isHighlighted: l
+          isHighlighted: !0
         })
       }), (0, r.jsx)(eZ, {
         user: eS.locke

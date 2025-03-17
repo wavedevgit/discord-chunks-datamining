@@ -1,6 +1,6 @@
 /**
   Module ID: 16674
-  Original File Name: 67c208fc8055c7e2
+  Original File Name: 7dd231f96f5b0822
 **/
 .hoverRoll__0263c {
     display: inline-block;
@@ -996,7 +996,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     box-sizing: border-box;
     height: 100%;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    justify-content: space-evenly
 }
 
 .nameplatePreviewSampleItem_c3d04b {
@@ -1007,7 +1008,17 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .placeholderItem_c3d04b {
-    padding: 0 8px
+    padding: 0 8px;
+    display: flex;
+    align-items: center
+}
+
+.placeholderBar_c3d04b {
+    flex-grow: 1;
+    height: 14px;
+    border-radius: 8px;
+    margin-left: 12px;
+    background-color: var(--background-modifier-accent)
 }
 
 .placeholderItemChildrenDark_c3d04b {
@@ -1761,4 +1772,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=67c208fc8055c7e2.css.map*/
+/*# sourceMappingURL=7dd231f96f5b0822.css.map*/

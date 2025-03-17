@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 279b2ee7673d14ff
+  Original File Name: 35ec10c9873e6bd4
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -3621,7 +3621,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     box-sizing: border-box;
     height: 100%;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    justify-content: space-evenly
 }
 
 .nameplatePreviewSampleItem_c3d04b {
@@ -3632,7 +3633,17 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .placeholderItem_c3d04b {
-    padding: 0 8px
+    padding: 0 8px;
+    display: flex;
+    align-items: center
+}
+
+.placeholderBar_c3d04b {
+    flex-grow: 1;
+    height: 14px;
+    border-radius: 8px;
+    margin-left: 12px;
+    background-color: var(--background-modifier-accent)
 }
 
 .placeholderItemChildrenDark_c3d04b {
@@ -5650,4 +5661,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100px
 }
 
-/*# sourceMappingURL=279b2ee7673d14ff.css.map*/
+/*# sourceMappingURL=35ec10c9873e6bd4.css.map*/

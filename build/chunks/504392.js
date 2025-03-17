@@ -13,8 +13,8 @@ var r = t(200651),
   u = t(111360),
   x = t(27237),
   p = t(51859),
-  v = t(953478),
-  m = t(460608),
+  m = t(953478),
+  v = t(460608),
   b = t(279604),
   _ = t(535396),
   j = t(730621),
@@ -108,9 +108,9 @@ function Z(e) {
         })
       }), (0, r.jsxs)("div", {
         className: f.sidebarContainer,
-        children: [(0, r.jsx)(v.Z, {
+        children: [(0, r.jsx)(m.Z, {
           guildId: n
-        }), (0, r.jsx)(m.Z, {
+        }), (0, r.jsx)(v.Z, {
           guildId: n
         })]
       })]
