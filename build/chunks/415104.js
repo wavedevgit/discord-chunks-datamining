@@ -46,6 +46,8 @@ function h(e) {
     className: a()(x.container, n),
     onMouseEnter: w,
     onMouseLeave: S,
+    onFocus: w,
+    onBlur: S,
     children: [(0, r.jsx)(m.Z, {
       quest: t,
       isHovering: b,

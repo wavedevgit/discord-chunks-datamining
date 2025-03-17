@@ -144,31 +144,30 @@ function D(e) {
 }
 class k extends i.PureComponent {
   render() {
+    var e;
     let {
-      user: e,
-      hideDiscriminator: t,
+      user: t,
       guild: n
-    } = this.props, i = y.ZP.getGlobalName(e);
+    } = this.props;
     return (0, r.jsxs)(o.P3F, {
       className: P.bannedUser,
       onClick: this.handleShowModal,
       onContextMenu: this.handleContextMenu,
       children: [(0, r.jsx)(o.qEK, {
-        src: e.getAvatarURL(null == n ? void 0 : n.id, 40),
-        "aria-label": e.username,
+        src: t.getAvatarURL(null == n ? void 0 : n.id, 40),
+        "aria-label": t.username,
         size: o.EFr.SIZE_40,
         className: P.bannedUserAvatar
       }), (0, r.jsxs)("div", {
         className: P.username,
-        children: [y.ZP.getUserTag(e, {
-          mode: "username",
-          identifiable: t ? "never" : "always"
-        }), !t && !e.isPomelo() && (0, r.jsxs)("span", {
-          className: P.discrim,
-          children: ["#", e.discriminator]
-        }), e.isPomelo() && (0, r.jsxs)("span", {
-          className: P.discrim,
-          children: ["(", i, ")"]
+        children: [(0, r.jsx)(o.Text, {
+          variant: "text-md/semibold",
+          color: "header-primary",
+          children: null !== (e = t.globalName) && void 0 !== e ? e : t.username
+        }), (0, r.jsx)(o.Text, {
+          variant: "text-sm/medium",
+          color: "header-secondary",
+          children: null != t.globalName ? t.username : null
         })]
       })]
     })

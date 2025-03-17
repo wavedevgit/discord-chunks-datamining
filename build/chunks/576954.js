@@ -98,13 +98,11 @@ function N(e) {
   }), [d]), g = i.useCallback(() => {
     (0, _.T)(t, [s])
   }, [t, s]), b = (0, x.C2)(), N = i.useCallback(e => () => {
-    c.Z.addRelationship({
-      userId: d,
-      context: {
-        location: x.zr
-      },
-      type: j.OGo.BLOCKED
-    }), g(), (0, v.qc)({
+    c.Z.blockUser(d, {
+      location: x.zr
+    }).then(() => {
+      g()
+    }), (0, v.qc)({
       channelId: t,
       warningId: s,
       senderId: d,

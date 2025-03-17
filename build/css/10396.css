@@ -1,6 +1,6 @@
 /**
   Module ID: 10396
-  Original File Name: 605c2db02db0b4e3
+  Original File Name: 25bde31f06443338
 **/
 .gameImageContainer_ed15e7 {
     position: relative;
@@ -8617,8 +8617,8 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     position: relative;
     display: flex;
     align-items: center;
-    padding: 8px;
-    margin-bottom: 4px;
+    padding: var(--spacing-8);
+    margin-bottom: var(--spacing-4);
     cursor: pointer;
     border-radius: var(--radius-sm);
     background-color: var(--background-modifier-accent);
@@ -8637,13 +8637,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 
 .bannedUser_cdb2b0 .username_cdb2b0 {
     flex: 1 1 100px;
-    padding-left: 10px;
-    color: var(--text-normal)
-}
-
-.bannedUser_cdb2b0 .username_cdb2b0 .discrim_cdb2b0 {
-    padding-left: 2px;
-    color: var(--header-muted)
+    padding-left: var(--spacing-8)
 }
 
 .description_cdb2b0 {
@@ -8714,14 +8708,15 @@ html:not(.visual-refresh) .bannedUserModal_cdb2b0 .reasonHeader_cdb2b0 {
 .container_cdb2b0 {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    padding: 56px 24px 24px;
+    gap: var(--spacing-12);
+    padding: var(--spacing-24);
+    padding-top: 56px;
     width: 660px
 }
 
 .scrollerContainer_cdb2b0 {
     height: 760px;
-    padding: 8px;
+    padding: var(--spacing-8);
     border-radius: var(--radius-md);
     background-color: var(--background-primary);
     box-shadow: var(--elevation-medium),var(--elevation-stroke)
@@ -8748,7 +8743,7 @@ html:not(.visual-refresh) .bannedUserModal_cdb2b0 .reasonHeader_cdb2b0 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 8px
+    gap: var(--spacing-8)
 }
 
 .searchButton_cdb2b0,.searchIcon_cdb2b0 {
@@ -14338,4 +14333,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=605c2db02db0b4e3.css.map*/
+/*# sourceMappingURL=25bde31f06443338.css.map*/

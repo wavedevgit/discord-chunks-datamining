@@ -156,6 +156,16 @@ let S = {
       }
       S.removeRelationship(e, t, n)
     },
+    blockUser(e, t) {
+      function n() {
+        i.uv.announce(E.NW.string(E.t.mU0Vrq))
+      }
+      return S.addRelationship({
+        userId: e,
+        context: t,
+        type: m.OGo.BLOCKED
+      }, n)
+    },
     unblockUser(e, t) {
       function n() {
         i.uv.announce(E.NW.string(E.t["9t1au7"]))

@@ -1,6 +1,6 @@
 /** Chunk was on 59650 **/
 n.d(e, {
-  Z: () => m
+  Z: () => g
 }), n(47120);
 var r = n(200651),
   s = n(192379),
@@ -16,53 +16,50 @@ var r = n(200651),
   h = n(991981),
   _ = n(850165),
   x = n(134612),
-  b = n(981631),
-  p = n(388032),
+  b = n(388032),
   f = n(169401),
-  g = n(149355);
+  p = n(149355);
 
-function m(t) {
+function g(t) {
   let {
     senderId: e,
     channelId: n,
-    hasReported: m,
-    onReport: C,
-    trackAnalyticsEvent: I
-  } = t, A = (0, i.e7)([N.Z], () => N.Z.isBlocked(e)), [T, S] = s.useState(A), O = (0, u.o)(), j = (0, u.Q)(), [R, k] = s.useState(!1), M = (0, h.q)(n), v = s.useMemo(() => O ? 0 : j ? 2 : 1, [O, j]), y = () => {
-    S(!0), c.Z.addRelationship({
-      userId: e,
-      context: {
-        location: x.DL
-      },
-      type: b.OGo.BLOCKED
-    }), I(E.NM.USER_TAKEOVER_MODAL_BLOCK), d.Z.showBlockSuccessToast(e, n)
-  }, z = () => {
-    S(!1), c.Z.unblockUser(e, {
+    hasReported: g,
+    onReport: m,
+    trackAnalyticsEvent: C
+  } = t, I = (0, i.e7)([N.Z], () => N.Z.isBlocked(e)), [A, T] = s.useState(I), S = (0, u.o)(), O = (0, u.Q)(), [j, R] = s.useState(!1), k = (0, h.q)(n), M = s.useMemo(() => S ? 0 : O ? 2 : 1, [S, O]), v = () => {
+    T(!0), C(E.NM.USER_TAKEOVER_MODAL_BLOCK), c.Z.blockUser(e, {
       location: x.DL
-    }), I(E.NM.USER_TAKEOVER_MODAL_UNBLOCK), d.Z.showUnblockSuccessToast(e, n)
-  }, L = async () => {
-    null != M && (k(!0), await (0, l.J7)(M, () => {
-      d.Z.showReportSuccessToast(e, n), C()
+    }).then(() => {
+      d.Z.showBlockSuccessToast(e, n)
+    })
+  }, y = () => {
+    T(!1), c.Z.unblockUser(e, {
+      location: x.DL
+    }), C(E.NM.USER_TAKEOVER_MODAL_UNBLOCK), d.Z.showUnblockSuccessToast(e, n)
+  }, z = async () => {
+    null != k && (R(!0), await (0, l.J7)(k, () => {
+      d.Z.showReportSuccessToast(e, n), m()
     }, () => {
       d.Z.showFailedToast()
-    }), k(!1), I(E.NM.USER_TAKEOVER_MODAL_REPORT))
-  }, w = t => {
-    0 === t ? ((0, a.Z)(x.EI), I(E.NM.USER_TAKEOVER_MODAL_CTL)) : 2 === t ? ((0, a.Z)(x.$l), I(E.NM.USER_TAKEOVER_MODAL_THROUGHLINE)) : ((0, a.Z)(x.n4), I(E.NM.USER_TAKEOVER_MODAL_NO_FILTR))
-  }, P = s.useMemo(() => {
-    switch (v) {
+    }), R(!1), C(E.NM.USER_TAKEOVER_MODAL_REPORT))
+  }, L = t => {
+    0 === t ? ((0, a.Z)(x.EI), C(E.NM.USER_TAKEOVER_MODAL_CTL)) : 2 === t ? ((0, a.Z)(x.$l), C(E.NM.USER_TAKEOVER_MODAL_THROUGHLINE)) : ((0, a.Z)(x.n4), C(E.NM.USER_TAKEOVER_MODAL_NO_FILTR))
+  }, w = s.useMemo(() => {
+    switch (M) {
       case 0:
-        return p.NW.string(p.t.sZf6c3);
+        return b.NW.string(b.t.sZf6c3);
       case 2:
-        return p.NW.string(p.t.HQ2nKi);
+        return b.NW.string(b.t.HQ2nKi);
       default:
-        return p.NW.string(p.t["65XQam"])
+        return b.NW.string(b.t["65XQam"])
     }
-  }, [v]);
+  }, [M]);
   return (0, r.jsx)(_.Z, {
-    heroImageSrc: g,
-    heroImageAlt: p.NW.string(p.t.RVyYCA),
-    header: p.NW.string(p.t["mWO+ys"]),
-    description: p.NW.string(p.t.S0XtKC),
+    heroImageSrc: p,
+    heroImageAlt: b.NW.string(b.t.RVyYCA),
+    header: b.NW.string(b.t["mWO+ys"]),
+    description: b.NW.string(b.t.S0XtKC),
     children: (0, r.jsxs)("div", {
       className: f.buttonContainer,
       children: [(0, r.jsxs)(o.zxk, {
@@ -71,7 +68,7 @@ function m(t) {
         className: f.button,
         innerClassName: f.buttonInner,
         onClick: () => {
-          T ? z() : y()
+          A ? y() : v()
         },
         children: [(0, r.jsx)(o.k$p, {
           size: "custom",
@@ -79,35 +76,35 @@ function m(t) {
           width: 20,
           className: f.buttonIcon,
           color: "currentColor"
-        }), T ? p.NW.string(p.t.XyHpKC) : p.NW.string(p.t.l4EmaW)]
+        }), A ? b.NW.string(b.t.XyHpKC) : b.NW.string(b.t.l4EmaW)]
       }), (0, r.jsxs)(o.zxk, {
         color: o.zxk.Colors.PRIMARY,
         size: o.zxk.Sizes.LARGE,
         className: f.button,
         innerClassName: f.buttonInner,
-        onClick: L,
-        submitting: R,
-        disabled: m,
+        onClick: z,
+        submitting: j,
+        disabled: g,
         children: [(0, r.jsx)(o.U65, {
           size: "custom",
           height: 20,
           width: 20,
           className: f.buttonIcon,
           color: "currentColor"
-        }), m ? p.NW.string(p.t.QvwOJy) : p.NW.string(p.t["7fHyEx"])]
+        }), g ? b.NW.string(b.t.QvwOJy) : b.NW.string(b.t["7fHyEx"])]
       }), (0, r.jsxs)(o.zxk, {
         color: o.zxk.Colors.PRIMARY,
         size: o.zxk.Sizes.LARGE,
         className: f.button,
         innerClassName: f.buttonInner,
-        onClick: () => w(v),
+        onClick: () => L(M),
         children: [(0, r.jsx)(o.kBi, {
           size: "custom",
           height: 20,
           width: 20,
           className: f.buttonIcon,
           color: "currentColor"
-        }), P]
+        }), w]
       })]
     })
   })

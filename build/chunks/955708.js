@@ -53,7 +53,7 @@ let b = t => {
     senderId: r,
     modalProps: x,
     channelId: b
-  } = t, [p, f] = o.useState(0), g = o.useMemo(() => ({
+  } = t, [f, p] = o.useState(0), g = o.useMemo(() => ({
     channelId: b,
     senderId: r,
     warningId: e,
@@ -73,7 +73,7 @@ let b = t => {
     [C, I] = o.useState(!1);
 
   function A(t) {
-    f(t)
+    p(t)
   }
   return (0, s.jsxs)(i.Y0X, {
     transitionState: x.transitionState,
@@ -81,7 +81,7 @@ let b = t => {
       className: E.container,
       children: (0, s.jsxs)(i.MyZ, {
         width: 440,
-        activeSlide: p,
+        activeSlide: f,
         centered: !1,
         overflow: "visible",
         contentDisplay: "flex",
@@ -125,7 +125,7 @@ let b = t => {
           x.onClose(), (0, c.T)(b, [e]), m(a.NM.USER_TAKEOVER_MODAL_DISMISS)
         },
         children: N.NW.string(N.t.cpT0Cg)
-      }), 0 !== p && (0, s.jsx)(i.zxk, {
+      }), 0 !== f && (0, s.jsx)(i.zxk, {
         className: E.footerButton,
         look: i.zxk.Looks.LINK,
         color: i.zxk.Colors.CUSTOM,

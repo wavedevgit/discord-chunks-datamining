@@ -25,13 +25,11 @@ let b = e => {
     s.ZP.trackWithMetadata(p.rMx.IAR_BLOCK_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
       report_id: b
-    }), o.Z.addRelationship({
-      userId: t.id,
-      context: {
-        location: "ReportMenuBlockUser-iOS"
-      },
-      type: p.OGo.BLOCKED
-    }), c.Z.showBlockSuccessToast(t.id, n)
+    }), o.Z.blockUser(t.id, {
+      location: "ReportMenuBlockUser-iOS"
+    }).then(() => {
+      c.Z.showBlockSuccessToast(t.id, n)
+    })
   }, [t, b, n]);
   return (0, r.jsx)(d.ZP, {
     title: f.NW.formatToPlainString(f.t["Q1o/f3"], {
