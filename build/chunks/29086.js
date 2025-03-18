@@ -1,15 +1,15 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Y: () => o
+  Y: () => a
 });
 var r = n(192379),
   i = n(726115),
   l = n(859921),
-  a = n(128449);
+  o = n(128449);
 
-function o() {
+function a() {
   let e = l.Z.useField("selectedTab"),
-    t = r.useMemo(() => [a.vf.FEATURED, a.vf.GAMING, a.vf.MUSIC, a.vf.ENTERTAINMENT, a.vf.TECH, a.vf.EDUCATION, a.vf.HUBS].map(e => ({
+    t = r.useMemo(() => [o.vf.FEATURED, o.vf.GAMING, o.vf.MUSIC, o.vf.ENTERTAINMENT, o.vf.TECH, o.vf.EDUCATION, o.vf.HUBS].map(e => ({
       id: e,
       label: (0, i.vb)(e)
     })), []),

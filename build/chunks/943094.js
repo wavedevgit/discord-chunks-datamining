@@ -1,16 +1,16 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  W: () => o
+  W: () => a
 });
 var r = n(481060),
   i = n(812206),
   l = n(710845),
-  a = n(51025);
+  o = n(51025);
 
-function o(e, t, o) {
+function a(e, t, a) {
   ! function(e, t) {
-    let a = i.Z.getApplication(e);
-    if (null == a) {
+    let o = i.Z.getApplication(e);
+    if (null == o) {
       new l.Z("DispatchUninstallActionCreators").log("Application not found for game ".concat(e));
       return
     }(0, r.ZDy)(async () => {
@@ -35,9 +35,9 @@ function o(e, t, o) {
         }
         return e
       }({
-        game: a,
+        game: o,
         onConfirmUninstall: t
       }, n))
     })
-  }(e, () => (0, a.pC)(e, t, o))
+  }(e, () => (0, o.pC)(e, t, a))
 }

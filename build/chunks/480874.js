@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  a = n.n(l),
-  o = n(91192),
+  o = n.n(l),
+  a = n(91192),
   s = n(286379),
   c = n(481060),
   u = n(183126),
@@ -58,11 +58,11 @@ function T() {
   let L = i.useCallback(e => {
       var n, i;
       let {
-        row: o
-      } = e, s = t[o], c = null === (i = t[o + 1]) || void 0 === i ? void 0 : null === (n = i.channel) || void 0 === n ? void 0 : n.id, u = s.channel.id;
+        row: a
+      } = e, s = t[a], c = null === (i = t[a + 1]) || void 0 === i ? void 0 : null === (n = i.channel) || void 0 === n ? void 0 : n.id, u = s.channel.id;
       return (0, r.jsx)(v.Z, {
-        index: o,
-        className: a()({
+        index: a,
+        className: o()({
           [S.selected]: null != j && j === u,
           [S.siblingSelected]: null != j && j === c
         }),
@@ -95,14 +95,14 @@ function T() {
     }, "message-requests-spam-title"), [n, x, T]);
   return 0 === t.length ? (0, r.jsx)(N.Z, {
     section: y.pS.SPAM
-  }) : (0, r.jsx)(o.bG, {
+  }) : (0, r.jsx)(a.bG, {
     navigator: P,
-    children: (0, r.jsx)(o.SJ, {
+    children: (0, r.jsx)(a.SJ, {
       children: n => {
         var {
           ref: i,
           role: l
-        } = n, a = function(e, t) {
+        } = n, o = function(e, t) {
           if (null == e) return {};
           var n, r, i = function(e, t) {
             if (null == e) return {};
@@ -151,7 +151,7 @@ function T() {
           sections: [t.length],
           chunkSize: 30,
           fade: !0
-        }, a), "message-requests-spam-list")
+        }, o), "message-requests-spam-list")
       }
     })
   })

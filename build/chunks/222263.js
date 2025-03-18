@@ -10,8 +10,8 @@ function i(e) {
     nick: n,
     guildId: i,
     avatar: l,
-    avatarDecoration: a,
-    banner: o,
+    avatarDecoration: o,
+    banner: a,
     bio: s,
     pronouns: c,
     colorString: u
@@ -21,8 +21,8 @@ function i(e) {
     nick: n,
     guild_id: i,
     avatar: l,
-    avatar_decoration_data: (0, r.FG)(a),
-    banner: o,
+    avatar_decoration_data: (0, r.FG)(o),
+    banner: a,
     bio: s,
     pronouns: c,
     color_string: u

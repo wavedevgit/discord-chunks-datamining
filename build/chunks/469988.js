@@ -1,20 +1,20 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(388032),
-  a = n(899494);
-let o = e => {
+  o = n(899494);
+let a = e => {
   let {
     hasHub: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: a.container,
+    className: o.container,
     children: [(0, r.jsx)("div", {
-      className: a.iconContainer,
+      className: o.iconContainer,
       children: (0, r.jsx)(i.aVH, {
         size: "md",
         color: i.TVs.colors.WHITE.css
@@ -22,15 +22,15 @@ let o = e => {
     }), (0, r.jsx)(i.Text, {
       color: "header-primary",
       variant: "text-lg/semibold",
-      className: a.header,
+      className: o.header,
       children: t ? l.NW.string(l.t.hsSHh4) : l.NW.string(l.t.Wf6iio)
     }), (0, r.jsx)(i.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
-      className: a.__invalid_description,
+      className: o.__invalid_description,
       children: t ? l.NW.string(l.t.FZ2J3d) : l.NW.string(l.t.TvHcv7)
     }), (0, r.jsx)("div", {
-      className: a.gap
+      className: o.gap
     }), (0, r.jsx)(i.zxk, {
       size: i.zxk.Sizes.LARGE,
       color: t ? i.zxk.Colors.PRIMARY : i.zxk.Colors.GREEN,
@@ -59,7 +59,7 @@ let o = e => {
       }),
       children: (0, r.jsx)(i.Text, {
         variant: "text-sm/semibold",
-        className: a.addButton,
+        className: o.addButton,
         color: "none",
         children: t ? l.NW.string(l.t.IyjHDw) : l.NW.string(l.t["KU/aNz"])
       })

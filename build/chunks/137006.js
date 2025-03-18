@@ -45,7 +45,7 @@ let l = {
     [i.Q5.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: {
       request: void 0,
       response: e => e.object({
-        participants: e.array().items(o(e).keys({
+        participants: e.array().items(a(e).keys({
           nickname: e.string().description("Server nickname. Not unique.")
         }).required()).required()
       }).required()
@@ -83,10 +83,10 @@ let l = {
       response: e => e.object({
         relationships: e.array().required().items(e.object({
           type: e.number().required(),
-          user: o(e).required(),
+          user: a(e).required(),
           presence: e.object({
             status: e.string().required(),
-            activity: a(e).allow(null)
+            activity: o(e).allow(null)
           })
         }))
       })
@@ -102,10 +102,10 @@ let l = {
       request: e => (0, i.C5)(e.object({
         id: e.string().max(64).required()
       })),
-      response: e => o(e).allow(null)
+      response: e => a(e).allow(null)
     }
   },
-  a = e => e.object({
+  o = e => e.object({
     session_id: e.string().optional(),
     type: e.number().optional(),
     name: e.string().required(),
@@ -147,7 +147,7 @@ let l = {
     buttons: e.array().items(e.string()).optional(),
     hangStatus: e.string().optional()
   }),
-  o = e => e.object({
+  a = e => e.object({
     id: e.string().required().description("User ID"),
     username: e.string().required(),
     global_name: e.string().allow(null).description("Global Discord name. Not unique."),

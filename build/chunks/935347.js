@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  a = n.n(l),
-  o = n(392711),
-  s = n.n(o),
+  o = n.n(l),
+  a = n(392711),
+  s = n.n(a),
   c = n(442837),
   u = n(433517),
   d = n(481060),
@@ -52,9 +52,9 @@ class P extends i.PureComponent {
       problems: i
     } = this.state, {
       connected: l,
-      soundpack: a
-    } = this.props, o = l && n && !r && !i;
-    e.soundpack !== a && (this._connectedSound = this.createSound()), e.connected !== l || o ? (l && null != this.videoRef && u.K.get(I.wli) && this._connectedSound.play(), this.setState({
+      soundpack: o
+    } = this.props, a = l && n && !r && !i;
+    e.soundpack !== o && (this._connectedSound = this.createSound()), e.connected !== l || a ? (l && null != this.videoRef && u.K.get(I.wli) && this._connectedSound.play(), this.setState({
       problems: !1,
       hide: l
     })) : t.hide !== r ? (r ? this.clearProblemsTimeout() : this.setProblemsTimeout(), this.setState({
@@ -91,7 +91,7 @@ class P extends i.PureComponent {
             loop: !e,
             setRef: this.setVideoRef,
             onReady: this.handleReady,
-            className: a()(S.spinner, this.state.ready ? S.ready : "")
+            className: o()(S.spinner, this.state.ready ? S.ready : "")
           }), (0, r.jsxs)("div", {
             className: S.text,
             children: [null != t ? null : (0, r.jsx)("div", {
@@ -106,7 +106,7 @@ class P extends i.PureComponent {
             })]
           })]
         }), (0, r.jsxs)("div", {
-          className: a()(S.problems, {
+          className: o()(S.problems, {
             [S.slideIn]: this.state.problems
           }),
           children: [(0, r.jsx)("div", {
@@ -238,10 +238,10 @@ let j = c.ZP.connectStores([f.Z, E.Z, b.Z, h.Z], () => ({
     connected: n,
     incident: i,
     soundpack: l,
-    reducedMotion: a
+    reducedMotion: o
   } = e;
   return t ? (0, r.jsx)(P, {
-    reducedMotion: a,
+    reducedMotion: o,
     soundpack: l,
     connected: n,
     incident: i

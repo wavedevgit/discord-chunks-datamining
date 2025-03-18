@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(570140),
   i = n(846027),
   l = n(872810),
-  a = n(317770),
-  o = n(569545),
+  o = n(317770),
+  a = n(569545),
   s = n(199902),
   c = n(314897),
   u = n(592125),
@@ -21,7 +21,7 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class f extends a.Z {
+class f extends o.Z {
   _initialize() {
     r.Z.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
   }
@@ -39,7 +39,7 @@ class f extends a.Z {
       })
     }), h(this, "handleStopStream", e => {
       let t = s.Z.getActiveStreamForUser(e.userId, e.guildId);
-      null != t && (0, l.g)((0, o.V9)(t), !1)
+      null != t && (0, l.g)((0, a.V9)(t), !1)
     }), h(this, "handleStopUserVideo", () => {
       d.Z.isVideoEnabled() && i.Z.setVideoEnabled(!1)
     })

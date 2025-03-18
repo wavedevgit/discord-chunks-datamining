@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(120356),
   l = n.n(i),
-  a = n(704215),
-  o = n(927359),
+  o = n(704215),
+  a = n(927359),
   s = n(706140),
   c = n(325767),
   u = n(823188),
@@ -38,8 +38,8 @@ function g(e) {
   var t, n, {
       width: i = 14,
       height: l = 15,
-      color: a = "white",
-      foreground: o
+      color: o = "white",
+      foreground: a
     } = e,
     s = function(e, t) {
       if (null == e) return {};
@@ -61,7 +61,7 @@ function g(e) {
     width: i,
     height: l,
     viewBox: "0 0 14 15",
-    className: o,
+    className: a,
     xmlns: "http://www.w3.org/2000/svg",
     children: [(0, r.jsx)("defs", {
       children: (0, r.jsxs)("linearGradient", {
@@ -99,7 +99,7 @@ function g(e) {
       })]
     }), (0, r.jsx)("path", {
       d: "M8.59403 1.52779C8.04647 0.0480288 5.95353 0.0480288 5.40597 1.52779L4.56476 3.8011C4.36219 4.34854 3.93057 4.78016 3.38313 4.98273L1.10982 5.82394C-0.36994 6.3715 -0.36994 8.46444 1.10982 9.012L3.38313 9.8532C3.93057 10.0558 4.36219 10.4874 4.56476 11.0348L5.40597 13.3081C5.95353 14.7879 8.04647 14.7879 8.59403 13.3081L9.43524 11.0348C9.63781 10.4874 10.0694 10.0558 10.6169 9.8532L12.8902 9.012C14.3699 8.46444 14.3699 6.3715 12.8902 5.82394L10.6169 4.98273C10.0694 4.78016 9.63781 4.34854 9.43524 3.8011L8.59403 1.52779Z",
-      fill: a
+      fill: o
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
@@ -121,10 +121,10 @@ function m(e) {
     messageStyle: c,
     upperCase: p,
     showSparkles: m
-  } = e, [b] = (0, s.Tt)(a.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL, {
+  } = e, [b] = (0, s.Tt)(o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL, {
     showAfterTimestamp: n.valueOf(),
     cooldownDurationMs: 0
-  }), _ = (0, o.Z)(i, c);
+  }), _ = (0, a.Z)(i, c);
   return "" === _ ? null : (p && (_ = _.toUpperCase()), (0, r.jsxs)("div", {
     className: l()(t, d.countDown),
     children: [m ? (0, r.jsxs)(r.Fragment, {
@@ -137,7 +137,7 @@ function m(e) {
       })]
     }) : null, (0, r.jsx)(u.mn, {
       text: _,
-      colorOptions: b === a.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL ? u.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : u.VE.PREMIUM_TIER_2_GREY_FILL
+      colorOptions: b === o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL ? u.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : u.VE.PREMIUM_TIER_2_GREY_FILL
     })]
   }))
 }

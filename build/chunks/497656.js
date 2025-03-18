@@ -1,15 +1,15 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  y: () => a
+  y: () => o
 });
 var r = n(517334),
   i = n(592125),
   l = n(554747);
 
-function a(e) {
+function o(e) {
   var t;
   let n = (0, l.eF)(e),
-    a = (0, r.ZP)(e),
-    o = i.Z.getChannel(null === (t = a[0]) || void 0 === t ? void 0 : t.id);
-  return null != n ? n : o
+    o = (0, r.ZP)(e),
+    a = i.Z.getChannel(null === (t = o[0]) || void 0 === t ? void 0 : t.id);
+  return null != n ? n : a
 }

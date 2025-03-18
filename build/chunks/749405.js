@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(481060),
-  a = n(359110),
-  o = n(6025),
+  o = n(359110),
+  a = n(6025),
   s = n(433355),
   c = n(26373),
   u = n(486622),
@@ -22,9 +22,9 @@ function f(e) {
   } = e, g = (0, c.K)(), m = i.useCallback(() => {
     (0, l.showToast)((0, l.createToast)(p.NW.string(p.t.EDYbS0), l.ToastType.FAILURE))
   }, []), b = i.useCallback(() => {
-    o.Z.closeChannelSidebar(s.uZ)
+    a.Z.closeChannelSidebar(s.uZ)
   }, []), _ = i.useCallback(() => {
-    o.Z.closeChannelSidebar(s.uZ), g && (0, a.Kh)(f.id)
+    a.Z.closeChannelSidebar(s.uZ), g && (0, o.Kh)(f.id)
   }, [f.id, g]), {
     acceptMessageRequest: E,
     rejectMessageRequest: O,

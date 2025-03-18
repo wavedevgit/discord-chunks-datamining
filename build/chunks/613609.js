@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(442837),
-  a = n(447543),
-  o = n(568154),
+  o = n(447543),
+  a = n(568154),
   s = n(703656),
   c = n(430824),
   u = n(701190),
@@ -21,7 +21,7 @@ let m = e => {
     inviteCode: n
   } = e, [m, b] = i.useState(f.hO.INITIAL), [_, E] = i.useState(null != n);
   i.useEffect(() => {
-    null != n && a.ZP.resolveInvite(n, "Hub").finally(() => E(!1))
+    null != n && o.ZP.resolveInvite(n, "Hub").finally(() => E(!1))
   }, [n]);
   let O = (0, l.e7)([u.Z], () => null != n ? u.Z.getInvite(n) : null),
     N = (0, l.e7)([c.Z], () => c.Z.getGuild(t));
@@ -34,7 +34,7 @@ let m = e => {
     y = (0, d.gK)();
   return (0, r.jsx)("div", {
     className: g.page,
-    children: (0, r.jsxs)(o.Z, {
+    children: (0, r.jsxs)(a.Z, {
       embedded: !0,
       splash: y,
       waveState: m,

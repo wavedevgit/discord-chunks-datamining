@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(192379),
   i = n(442837),
   l = n(592125),
-  a = n(594174),
-  o = n(900255),
+  o = n(594174),
+  a = n(900255),
   s = n(333984);
 
 function c() {
@@ -14,12 +14,12 @@ function c() {
     t = (0, i.Wu)([l.Z, s.Z], () => {
       let e = l.Z.getMutablePrivateChannels(),
         t = Array.from(s.Z.getSpamChannelIds()).map(t => e[t]).filter(e => null != e);
-      return (0, o.x)(t)
+      return (0, a.x)(t)
     }, [e]),
-    n = (0, i.cj)([a.default], () => {
+    n = (0, i.cj)([o.default], () => {
       let e = {};
       return t.forEach(t => {
-        let n = a.default.getUser(t.recipients[0]);
+        let n = o.default.getUser(t.recipients[0]);
         null != n && (e[t.id] = n)
       }), e
     }, [t]);

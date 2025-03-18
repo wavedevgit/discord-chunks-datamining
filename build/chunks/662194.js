@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(243814),
   i = n(846027),
   l = n(131951),
-  a = n(594174),
-  o = n(996106),
+  o = n(594174),
+  a = n(996106),
   s = n(452426),
   c = n(852926),
   u = n(186901),
@@ -33,8 +33,8 @@ let p = {
           volume: r,
           mute: s
         }
-      } = e, c = a.default.getCurrentUser();
-      if (null == a.default.getUser(t) || (null == c ? void 0 : c.id) === t) throw new o.Z({
+      } = e, c = o.default.getCurrentUser();
+      if (null == o.default.getUser(t) || (null == c ? void 0 : c.id) === t) throw new a.Z({
         errorCode: d.lTL.INVALID_USER
       }, "Invalid user id: ".concat(t));
       if (null != n && i.Z.setLocalPan(t, n.left, n.right), null != r && i.Z.setLocalVolume(t, r), null != s) {
@@ -93,8 +93,8 @@ let p = {
           input: t,
           output: n,
           mode: r,
-          automatic_gain_control: a,
-          echo_cancellation: o,
+          automatic_gain_control: o,
+          echo_cancellation: a,
           noise_suppression: s,
           qos: u,
           silence_warning: d,
@@ -107,7 +107,7 @@ let p = {
           t = l.Z.getModeOptions();
         null != r.type && (e = r.type), null != r.auto_threshold && (t.autoThreshold = r.auto_threshold), null != r.threshold && (t.threshold = r.threshold), null != r.shortcut && (t.shortcut = r.shortcut.map(e => [e.type, e.code])), null != r.delay && (t.delay = r.delay), i.Z.setMode(e, t)
       }
-      if (null != a && i.Z.setAutomaticGainControl(a), null != o && i.Z.setEchoCancellation(o), null != s && i.Z.setNoiseSuppression(s), null != u && i.Z.setQoS(u), null != d && i.Z.setSilenceWarning(d), null != p) {
+      if (null != o && i.Z.setAutomaticGainControl(o), null != a && i.Z.setEchoCancellation(a), null != s && i.Z.setNoiseSuppression(s), null != u && i.Z.setQoS(u), null != d && i.Z.setSilenceWarning(d), null != p) {
         let e = l.Z.isSelfDeaf();
         (e && !p || !e && p) && i.Z.toggleSelfDeaf()
       }

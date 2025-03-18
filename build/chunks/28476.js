@@ -1,12 +1,12 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  a: () => o
+  a: () => a
 });
 var r = n(442837),
   i = n(355298),
   l = n(869404),
-  a = n(333984);
+  o = n(333984);
 
-function o() {
-  return (0, r.e7)([i.Z, a.Z], () => (0, l.IO)([i.Z, a.Z]))
+function a() {
+  return (0, r.e7)([i.Z, o.Z], () => (0, l.IO)([i.Z, o.Z]))
 }

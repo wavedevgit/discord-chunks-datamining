@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(481060),
-  a = n(749210),
-  o = n(322665),
+  o = n(749210),
+  a = n(322665),
   s = n(17845),
   c = n(374939),
   u = n(283293),
@@ -59,7 +59,7 @@ let b = function(e) {
     children: [(0, r.jsx)(s.Z, {
       title: f.NW.string(f.t.X5xPlZ),
       description: f.NW.string(f.t["F/IQCA"]),
-      children: (0, r.jsx)(o.Z, {})
+      children: (0, r.jsx)(a.Z, {})
     }), (0, r.jsxs)(c.Z, {
       children: [n.length > 0 ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l.X6q, {
@@ -71,7 +71,7 @@ let b = function(e) {
           className: g.content,
           children: [b.map(e => (0, r.jsx)(h.VD, {
             guild: e,
-            onClick: () => a.Z.transitionToGuildSync(e.id)
+            onClick: () => o.Z.transitionToGuildSync(e.id)
           }, e.id)), (0, r.jsx)(d.Z, {
             hasHub: !0
           })]

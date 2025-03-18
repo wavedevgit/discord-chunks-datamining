@@ -7,8 +7,8 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(113434),
-  a = n(786089),
-  o = n(383747),
+  o = n(786089),
+  a = n(383747),
   s = n(710914),
   c = n(601925);
 
@@ -21,11 +21,11 @@ function u(e) {
   } = (0, l.eN)();
   return s && 0 === n.length ? (0, r.jsx)(i.$jN, {
     className: c.spinner
-  }) : 0 === n.length ? (0, r.jsx)(o.Z, {
+  }) : 0 === n.length ? (0, r.jsx)(a.Z, {
     onClick: () => t(l.e5.ALL)
   }) : (0, r.jsx)("div", {
     className: c.gridContainer,
-    children: n.map(e => (0, r.jsx)(a.Z, {
+    children: n.map(e => (0, r.jsx)(o.Z, {
       quest: e
     }, e.id))
   })
@@ -36,14 +36,14 @@ function d(e) {
     onSelectTab: t
   } = e, {
     quests: n,
-    isFetchingCurrentQuests: a
+    isFetchingCurrentQuests: o
   } = (0, l.bA)(l.e5.CLAIMED);
-  return a && 0 === n.length ? (0, r.jsx)(i.$jN, {
+  return o && 0 === n.length ? (0, r.jsx)(i.$jN, {
     className: c.spinner
-  }) : 0 === n.length ? (0, r.jsx)(o.Z, {
+  }) : 0 === n.length ? (0, r.jsx)(a.Z, {
     onClick: () => t(l.e5.ALL)
   }) : (0, r.jsx)(s.Z, {
     quests: n,
-    isFetching: a
+    isFetching: o
   })
 }

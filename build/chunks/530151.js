@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  a = n.n(l),
-  o = n(392711),
-  s = n.n(o),
+  o = n.n(l),
+  a = n(392711),
+  s = n.n(a),
   c = n(442837),
   u = n(692547),
   d = n(780384),
@@ -70,7 +70,7 @@ let M = e => {
       children: e => {
         let {
           onMouseEnter: l,
-          onMouseLeave: a
+          onMouseLeave: o
         } = e;
         return (0, r.jsx)(p.zxk, {
           "aria-label": t,
@@ -80,7 +80,7 @@ let M = e => {
           size: p.zxk.Sizes.ICON,
           onClick: n,
           onMouseEnter: l,
-          onMouseLeave: a,
+          onMouseLeave: o,
           children: (0, r.jsx)(i, {
             className: D.actionIcon
           })
@@ -182,13 +182,13 @@ let V = {
 
 function B(e, t, n, r, i) {
   let l = V[t],
-    a = null != l ? Object.keys(l) : [],
+    o = null != l ? Object.keys(l) : [],
     {
-      unit: o,
+      unit: a,
       time: s
-    } = (0, I.CI)(null != e ? e / 60 : null, a);
-  if (null != l && null != o) {
-    let e = l[o];
+    } = (0, I.CI)(null != e ? e / 60 : null, o);
+  if (null != l && null != a) {
+    let e = l[a];
     return null != e ? e(n, r, i, s) : null
   }
   return null
@@ -201,15 +201,15 @@ function H(e) {
     percent: r,
     progress: i,
     total: l,
-    secondsRemaining: a
-  } = e, o = W(l, n), s = W(i, n);
+    secondsRemaining: o
+  } = e, a = W(l, n), s = W(i, n);
   switch (n) {
     case w.f07.QUEUED:
       if (0 === i) return R.NW.string(R.t.RpfBqa);
       return R.NW.formatToPlainString(R.t.uNjCXV, {
         percent: r,
         progress: s,
-        total: o
+        total: a
       });
     case w.f07.PLANNING:
       return R.NW.formatToPlainString(R.t.sfuCUV, {
@@ -220,7 +220,7 @@ function H(e) {
         percent: r
       });
     case w.f07.PATCHING:
-      return B(a, t, r, s, o);
+      return B(o, t, r, s, a);
     case w.f07.FINALIZING:
       return R.NW.formatToPlainString(R.t["6PHDUF"], {
         percent: r
@@ -229,26 +229,26 @@ function H(e) {
       return R.NW.formatToPlainString(R.t.vjxhWl, {
         percent: r,
         progress: s,
-        total: o
+        total: a
       });
     case w.f07.VERIFYING:
       return R.NW.formatToPlainString(R.t.bbilvr, {
         percent: r,
         progress: s,
-        total: o
+        total: a
       });
     case w.f07.POST_INSTALL_SCRIPTS:
       return R.NW.formatToPlainString(R.t.c5vRUl, {
         percent: r,
         progress: s,
-        total: o
+        total: a
       });
     case w.f07.REPAIRING:
-      if (t === w.vxO.REPAIRING) return B(a, t, r, s, o);
+      if (t === w.vxO.REPAIRING) return B(o, t, r, s, a);
       return R.NW.formatToPlainString(R.t.OCzETU, {
         percent: r,
         progress: s,
-        total: o
+        total: a
       })
   }
   throw Error("Invalid Dispatch stage")
@@ -327,15 +327,15 @@ class F extends i.PureComponent {
       } = n;
       if (null != r && null != i) {
         let n = W(i, l),
-          a = W(r, l),
-          o = Math.floor(t = Z.xI(r, i));
+          o = W(r, l),
+          a = Math.floor(t = Z.xI(r, i));
         e = l === w.f07.PAUSING ? R.NW.formatToPlainString(R.t.vjxhWl, {
-          percent: o,
-          progress: a,
+          percent: a,
+          progress: o,
           total: n
         }) : R.NW.formatToPlainString(R.t.voT3Bg, {
-          percent: o,
-          progress: a,
+          percent: a,
+          progress: o,
           total: n
         })
       }
@@ -361,13 +361,13 @@ class F extends i.PureComponent {
     if (null == n || null == r) return null;
     let i = Z.xI(n, r),
       l = Math.floor(i),
-      a = 0 === n && 1 === r ? R.NW.string(R.t["+pfsFR"]) : R.NW.formatToPlainString(R.t["+feX8f"], {
+      o = 0 === n && 1 === r ? R.NW.string(R.t["+pfsFR"]) : R.NW.formatToPlainString(R.t["+feX8f"], {
         percent: l,
         progress: (0, A.BU)(n),
         total: (0, A.BU)(r)
       });
     return this.renderBody({
-      message: a,
+      message: o,
       foregroundColor: (0, d.ap)(t) ? w.Ilk.PRIMARY_300 : w.Ilk.PRIMARY_500,
       percent: i
     })
@@ -392,13 +392,13 @@ class F extends i.PureComponent {
     } = e;
     if (null == t || null == n || null == r) return null;
     let l = Z.xI(n, t),
-      a = Math.floor(l);
+      o = Math.floor(l);
     return this.renderBody({
       percent: l,
       message: H({
         type: i,
         stage: r,
-        percent: a,
+        percent: o,
         progress: n,
         total: t
       }),
@@ -436,16 +436,16 @@ class F extends i.PureComponent {
         stage: r,
         progress: i,
         total: l,
-        type: a,
-        readerProgress: o
+        type: o,
+        readerProgress: a
       } = n;
       if (null == i || null == l || null == r) return null;
       let s = Z.xI(i, l),
-        c = Z.xI(null != o ? o : 0, l),
+        c = Z.xI(null != a ? a : 0, l),
         u = e[e.length - 1] / t * 1e3,
         d = l - i,
         p = H({
-          type: a,
+          type: o,
           stage: r,
           percent: Math.floor(s),
           progress: i,
@@ -559,20 +559,20 @@ class X extends i.PureComponent {
       paused: t,
       isFocused: i,
       theme: l,
-      analyticsContext: o
+      analyticsContext: a
     } = this.props;
     return 0 === e.length ? null : (0, r.jsxs)("div", {
       className: D.gameUpdates,
       children: [(0, r.jsxs)("div", {
         className: D.headerRow,
         children: [(0, r.jsx)(L.Z, {
-          className: a()(D.headerCell, D.networkProgress),
+          className: o()(D.headerCell, D.networkProgress),
           title: R.NW.string(R.t.ytoXKi),
           getHistoricalTotalBytes: T.Z.getHistoricalTotalBytesDownloaded,
           color: w.Ilk.GREEN_360,
           animate: i
         }), (0, r.jsx)(L.Z, {
-          className: a()(D.headerCell, D.diskProgress),
+          className: o()(D.headerCell, D.diskProgress),
           title: R.NW.string(R.t.SjohhI),
           getHistoricalTotalBytes: T.Z.getHistoricalTotalBytesWritten,
           color: w.Ilk.BLUE_345,
@@ -612,7 +612,7 @@ class X extends i.PureComponent {
                 }({}, n), l = l = {
                   applicationId: t.applicationId,
                   branchId: t.branchId,
-                  analyticsContext: o
+                  analyticsContext: a
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
                   var n = Object.keys(e);
                   if (Object.getOwnPropertySymbols) {
@@ -646,16 +646,16 @@ class X extends i.PureComponent {
 function J(e, t, n, r) {
   return e.reduce((e, i, l) => {
     let {
-      applicationId: a,
-      branchId: o
-    } = i, s = n.getApplication(a), c = r.getState(a, o);
+      applicationId: o,
+      branchId: a
+    } = i, s = n.getApplication(o), c = r.getState(o, a);
     return null != s && e.push({
-      key: "".concat(a, ":").concat(o),
-      applicationId: a,
-      branchId: o,
+      key: "".concat(o, ":").concat(a),
+      applicationId: o,
+      branchId: a,
       state: c,
       application: s,
-      libraryApplication: S.Z.getLibraryApplication(a, o),
+      libraryApplication: S.Z.getLibraryApplication(o, a),
       finished: t,
       index: l
     }), e

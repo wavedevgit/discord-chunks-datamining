@@ -5,24 +5,24 @@ n.d(t, {
 var r = n(243814),
   i = n(120960),
   l = n(996106),
-  a = n(452426),
-  o = n(186901),
+  o = n(452426),
+  a = n(186901),
   s = n(981631),
   c = n(65154);
 let u = {
   [s.Etm.SET_CERTIFIED_DEVICES]: {
     scope: {
-      [o.Gp.ANY]: [r.x.RPC, o.lH]
+      [a.Gp.ANY]: [r.x.RPC, a.lH]
     },
-    validation: e => (0, a.Z)(e).required().keys({
-      devices: e.array().items((0, a.Z)(e).keys({
+    validation: e => (0, o.Z)(e).required().keys({
+      devices: e.array().items((0, o.Z)(e).keys({
         type: e.string().required().valid([c.h7.AUDIO_INPUT, c.h7.AUDIO_OUTPUT, c.h7.VIDEO_INPUT]),
         id: e.string().required().min(1),
-        vendor: (0, a.Z)(e).required().keys({
+        vendor: (0, o.Z)(e).required().keys({
           name: e.string().min(1),
           url: e.string().min(1)
         }),
-        model: (0, a.Z)(e).required().keys({
+        model: (0, o.Z)(e).required().keys({
           name: e.string().min(1),
           url: e.string().min(1)
         }),

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(846519),
   i = n(570140),
   l = n(287734),
-  a = n(317770),
-  o = n(199902),
+  o = n(317770),
+  a = n(199902),
   s = n(592125),
   c = n(430824),
   u = n(517100),
@@ -16,7 +16,7 @@ var r = n(846519),
   f = n(981631);
 let g = new r.V7,
   m = new r.V7;
-class b extends a.Z {
+class b extends o.Z {
   _initialize() {
     i.Z.subscribe("IDLE", this.handleIdleUpdate)
   }
@@ -26,7 +26,7 @@ class b extends a.Z {
   handleIdleUpdate() {
     let e = u.Z.getIdleSince();
     if (!h.isPlatformEmbedded) return;
-    for (let e of (g.stop(), m.stop(), o.Z.getAllActiveStreams()))
+    for (let e of (g.stop(), m.stop(), a.Z.getAllActiveStreams()))
       if (e.state !== f.jm8.ENDED) return;
     if (null == e) return;
     let t = d.Z.getChannelId();

@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(392711),
-  a = n.n(l),
-  o = n(954955),
-  s = n.n(o),
+  o = n.n(l),
+  a = n(954955),
+  s = n.n(a),
   c = n(442837),
   u = n(481060),
   d = n(570140),
@@ -35,14 +35,14 @@ let A = 15 * E.Z.Millis.MINUTE,
       party: t,
       onUserContextMenu: n,
       onChannelContextMenu: l,
-      quest: a
-    } = e, o = (0, r.jsx)(v.Z, {
+      quest: o
+    } = e, a = (0, r.jsx)(v.Z, {
       party: t,
       onUserContextMenu: n
     }), c = (0, r.jsx)(N.Z, {
       party: t,
       onChannelContextMenu: l,
-      quest: a
+      quest: o
     }), {
       partiedMembers: d,
       applicationStreams: p,
@@ -61,7 +61,7 @@ let A = 15 * E.Z.Millis.MINUTE,
         games_detected: e
       })
     }, [g, m, b, E, h]), C = s()(O, A);
-    return null != o || null != c ? (0, r.jsx)(u.yRy, {
+    return null != a || null != c ? (0, r.jsx)(u.yRy, {
       position: "left",
       renderPopout: e => {
         let {
@@ -101,7 +101,7 @@ let A = 15 * E.Z.Millis.MINUTE,
           className: j.itemCard,
           active: l,
           children: (0, r.jsxs)("div", {
-            children: [o, c]
+            children: [a, c]
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
@@ -116,7 +116,7 @@ let A = 15 * E.Z.Millis.MINUTE,
       }
     }) : null
   }),
-  x = a().throttle(() => f.W(!1), 3e5);
+  x = o().throttle(() => f.W(!1), 3e5);
 
 function L() {
   let {
@@ -124,15 +124,15 @@ function L() {
     loaded: t,
     needsRefresh: n,
     fetching: l,
-    currentUser: a
+    currentUser: o
   } = (0, c.cj)([b.Z, g.Z, m.default], () => ({
     nowPlayingCards: b.Z.nowPlayingCards,
     loaded: b.Z.loaded,
     needsRefresh: g.Z.needsRefresh(),
     fetching: g.Z.getFetching(),
     currentUser: m.default.getCurrentUser()
-  })), o = (0, c.e7)([p.Z], () => p.Z.quests);
-  i.useEffect(() => (d.Z.wait(() => O.L()), () => d.Z.wait(() => O.v())), [null == a ? void 0 : a.id]), i.useEffect(() => {
+  })), a = (0, c.e7)([p.Z], () => p.Z.quests);
+  i.useEffect(() => (d.Z.wait(() => O.L()), () => d.Z.wait(() => O.v())), [null == o ? void 0 : o.id]), i.useEffect(() => {
     n && !l && x()
   }, [n, l]);
   let s = i.useMemo(() => {
@@ -143,12 +143,12 @@ function L() {
           activity: i
         } = e;
         if (null != i) {
-          let e = (0, h.ZZ)(o, i);
+          let e = (0, h.ZZ)(a, i);
           null == e || n.has(e.id) || (t.set(r.party.id, e), n.add(e.id))
         }
       });
       return t
-    }, [e, o]),
+    }, [e, a]),
     f = null;
   return t ? f = e.length > 0 ? e.map(e => {
     let {

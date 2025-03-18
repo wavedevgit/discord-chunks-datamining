@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(692547),
   c = n(481060),
   u = n(232567),
@@ -73,17 +73,17 @@ function U(e) {
   let {
     guild: t,
     isStudyRoomNotice: n = !1
-  } = e, l = (0, _.y)(t.id), U = (0, E.k5)(t.id), G = (0, o.e7)([S.Z], () => S.Z.getStageInstanceByChannel(null == l ? void 0 : l.id), [l]), {
+  } = e, l = (0, _.y)(t.id), U = (0, E.k5)(t.id), G = (0, a.e7)([S.Z], () => S.Z.getStageInstanceByChannel(null == l ? void 0 : l.id), [l]), {
     isStageNoticeHidden: W,
     isEventNoticeHidden: V
-  } = (0, o.cj)([m.Z], () => ({
+  } = (0, a.cj)([m.Z], () => ({
     isStageNoticeHidden: m.Z.isLiveChannelNoticeHidden({
       stageId: null == G ? void 0 : G.id
     }),
     isEventNoticeHidden: m.Z.isLiveChannelNoticeHidden({
       eventId: null == U ? void 0 : U.id
     })
-  }), [G, U]), B = null == l ? void 0 : l.id, H = (0, o.Wu)([I.Z], () => [...new Set(I.Z.getMutableParticipants(B, C.pV.SPEAKER).map(e => e.user))], [B]), F = (0, o.e7)([I.Z], () => null != B ? I.Z.getParticipantCount(B, C.pV.AUDIENCE) : 0, [B]), z = (0, o.e7)([A.Z], () => A.Z.can(L.Plq.CONNECT, l)), Y = (0, T.Z)(null == l ? void 0 : l.id), K = null == U ? void 0 : U.creator_id, q = (0, o.e7)([Z.default], () => Z.default.getUser(K), [K]);
+  }), [G, U]), B = null == l ? void 0 : l.id, H = (0, a.Wu)([I.Z], () => [...new Set(I.Z.getMutableParticipants(B, C.pV.SPEAKER).map(e => e.user))], [B]), F = (0, a.e7)([I.Z], () => null != B ? I.Z.getParticipantCount(B, C.pV.AUDIENCE) : 0, [B]), z = (0, a.e7)([A.Z], () => A.Z.can(L.Plq.CONNECT, l)), Y = (0, T.Z)(null == l ? void 0 : l.id), K = null == U ? void 0 : U.creator_id, q = (0, a.e7)([Z.default], () => Z.default.getUser(K), [K]);
   i.useEffect(() => {
     null != K && (0, u.PR)(K)
   }, [K]);
@@ -103,8 +103,8 @@ function U(e) {
       stageInstance: n,
       activeChannel: i,
       canConnect: l,
-      myRole: a,
-      eventCreator: o,
+      myRole: o,
+      eventCreator: a,
       speakers: s,
       listenerCount: u,
       isEventNoticeHidden: d,
@@ -131,7 +131,7 @@ function U(e) {
     if (null == t || d) {
       if (_) {
         let e = R.NW.string(R.t.ZYO5OD);
-        return (null == a ? void 0 : a.speaker) ? e = R.NW.string(R.t["/cnSFR"]) : null != a && (e = R.NW.string(R.t.btSGOj)), {
+        return (null == o ? void 0 : o.speaker) ? e = R.NW.string(R.t["/cnSFR"]) : null != o && (e = R.NW.string(R.t.btSGOj)), {
           noticeType: 0,
           title: n.topic,
           location: i.name,
@@ -168,7 +168,7 @@ function U(e) {
     } else {
       if (t.entity_type === w.WX.STAGE_INSTANCE && _) {
         let e = R.NW.string(R.t.ZYO5OD);
-        return (null == a ? void 0 : a.speaker) ? e = R.NW.string(R.t["/cnSFR"]) : null != a && (e = R.NW.string(R.t.btSGOj)), {
+        return (null == o ? void 0 : o.speaker) ? e = R.NW.string(R.t["/cnSFR"]) : null != o && (e = R.NW.string(R.t.btSGOj)), {
           noticeType: 0,
           title: n.topic,
           location: i.name,
@@ -224,7 +224,7 @@ function U(e) {
           onClose: () => (0, g.ji)({
             eventId: null == t ? void 0 : t.id
           }),
-          users: null == o ? [] : [o],
+          users: null == a ? [] : [a],
           overflowUsers: n < 1 ? null : (0, r.jsxs)("div", {
             className: D.pill,
             children: [(0, r.jsx)(c.r7p, {
@@ -259,7 +259,7 @@ function U(e) {
           onClose: () => (0, g.ji)({
             eventId: null == t ? void 0 : t.id
           }),
-          users: null == o ? [] : [o],
+          users: null == a ? [] : [a],
           overflowUsers: n < 1 ? null : (0, r.jsxs)("div", {
             className: D.pill,
             children: [(0, r.jsx)(c.r7p, {
@@ -338,7 +338,7 @@ function U(e) {
     }), (0, r.jsx)(c.Text, {
       variant: "text-md/medium",
       color: "header-primary",
-      className: a()(D.title, D.live),
+      className: o()(D.title, D.live),
       children: X
     }), (0, r.jsxs)("div", {
       className: D.locationContainer,

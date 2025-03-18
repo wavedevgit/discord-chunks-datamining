@@ -1,15 +1,15 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(442837),
   i = n(314897),
   l = n(944486),
-  a = n(88751);
+  o = n(88751);
 
-function o(e) {
-  return (0, r.e7)([i.default, l.Z, a.ZP], () => {
+function a(e) {
+  return (0, r.e7)([i.default, l.Z, o.ZP], () => {
     let t = i.default.getId();
-    return l.Z.getVoiceChannelId() === e ? a.ZP.getPermissionsForUser(t, e) : null
+    return l.Z.getVoiceChannelId() === e ? o.ZP.getPermissionsForUser(t, e) : null
   }, [e])
 }

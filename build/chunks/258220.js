@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(481060),
-  a = n(153867),
-  o = n(835473),
+  o = n(153867),
+  a = n(835473),
   s = n(600164),
   c = n(626135),
   u = n(998502),
@@ -35,7 +35,7 @@ function g(e) {
       }
       return i
     }(e, ["applicationId"]);
-  let [_, E] = i.useState(!1), [O] = (0, o.Z)([m]), N = null !== (g = null == O ? void 0 : O.name) && void 0 !== g ? g : "This Activity";
+  let [_, E] = i.useState(!1), [O] = (0, a.Z)([m]), N = null !== (g = null == O ? void 0 : O.name) && void 0 !== g ? g : "This Activity";
   i.useEffect(() => {
     c.default.track(d.rMx.OPEN_MODAL, {
       type: f
@@ -43,7 +43,7 @@ function g(e) {
   }, []);
   let v = () => {
     let e = "temporary";
-    _ && (e = "permanent", a.ZP.updatedUnsyncedSettings({
+    _ && (e = "permanent", o.ZP.updatedUnsyncedSettings({
       disableActivityHardwareAccelerationPrompt: !0
     })), c.default.track(d.rMx.MODAL_DISMISSED, {
       type: f,

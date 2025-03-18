@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(481060),
-  a = n(194359),
-  o = n(906732),
+  o = n(194359),
+  a = n(906732),
   s = n(388380),
   c = n(171368),
   u = n(626135),
@@ -25,8 +25,8 @@ function b(e) {
     isFocused: _
   } = e, E = i.useContext(u.AnalyticsContext), {
     analyticsLocations: O
-  } = (0, o.ZP)(), N = e => {
-    null == e || e.stopPropagation(), a.Z.addRelationship({
+  } = (0, a.ZP)(), N = e => {
+    null == e || e.stopPropagation(), o.Z.addRelationship({
       userId: t.id,
       context: {
         location: "Friends"

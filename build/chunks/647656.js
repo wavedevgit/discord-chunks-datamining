@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(392711),
   i = n.n(r),
   l = n(243814),
-  a = n(570140),
-  o = n(774226),
+  o = n(570140),
+  a = n(774226),
   s = n(317381),
   c = n(898036),
   u = n(812206),
@@ -93,7 +93,7 @@ let O = ["349134787773988865"],
         if (null == C && b.He.IPC === I.transport) throw new f.Z({
           errorCode: _.lTL.INVALID_COMMAND
         }, "nonzero pid required");
-        if (null == S) return a.Z.dispatch({
+        if (null == S) return o.Z.dispatch({
           type: "LOCAL_ACTIVITY_UPDATE",
           socketId: I.id,
           pid: C,
@@ -106,18 +106,18 @@ let O = ["349134787773988865"],
         let A = I.transport === b.He.POST_MESSAGE,
           Z = u.Z.getApplication(null != j ? j : void 0),
           x = 0;
-        if (null != Z && (0, o.Kb)(Z) && A) {
+        if (null != Z && (0, a.Kb)(Z) && A) {
           let e = s.ZP.getCurrentEmbeddedActivity();
           if ((null == e ? void 0 : e.applicationId) === Z.id) {
             let t = e.compositeInstanceId;
             null != t && (S.secrets = E({
               join: null !== (l = null === (r = S.secrets) || void 0 === r ? void 0 : r.join) && void 0 !== l ? l : crypto.randomUUID()
-            }, null !== (m = S.secrets) && void 0 !== m ? m : {}), P.embedded_activity_instance_id = t, x |= (0, c.ZW)({
+            }, null !== (m = S.secrets) && void 0 !== m ? m : {}), P.embedded_activity_instance_id = t, x |= (0, c.Z)({
               flags: x,
               embeddedActivity: e
             })), S.party = E({
               id: crypto.randomUUID(),
-              size: null !== (N = null === (n = S.party) || void 0 === n ? void 0 : n.size) && void 0 !== N ? N : c.M$
+              size: null !== (N = null === (n = S.party) || void 0 === n ? void 0 : n.size) && void 0 !== N ? N : c.M
             }, null !== (v = S.party) && void 0 !== v ? v : {})
           }
         }
@@ -154,7 +154,7 @@ let O = ["349134787773988865"],
           var t, n;
           let [r, i] = e;
           if (null != w && (null != r ? w.large_image = r : delete w.large_image, null != i ? w.small_image = i : delete w.small_image), !T()) return;
-          a.Z.dispatch({
+          o.Z.dispatch({
             type: "LOCAL_ACTIVITY_UPDATE",
             socketId: I.id,
             pid: C,
@@ -162,7 +162,7 @@ let O = ["349134787773988865"],
           });
           let {
             secrets: l,
-            party: o
+            party: a
           } = S, s = {
             application_id: I.application.id,
             type: S.type,
@@ -170,7 +170,7 @@ let O = ["349134787773988865"],
             details: null !== (t = S.details) && void 0 !== t ? t : "",
             state: null !== (n = S.state) && void 0 !== n ? n : ""
           };
-          return null != l && (s.has_match_secret = !!l.match, s.has_join_secret = !!l.join), null != w && (s.has_images = !!(w.large_image || w.small_image)), null != o && (s.party_max = null != o.size && o.size[1] > 0 ? o.size[1] : void 0, s.party_id = o.id), d.default.track(_.rMx.ACTIVITY_UPDATED, s), S
+          return null != l && (s.has_match_secret = !!l.match, s.has_join_secret = !!l.join), null != w && (s.has_images = !!(w.large_image || w.small_image)), null != a && (s.party_max = null != a.size && a.size[1] > 0 ? a.size[1] : void 0, s.party_id = a.id), d.default.track(_.rMx.ACTIVITY_UPDATED, s), S
         })
       }
     }

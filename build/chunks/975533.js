@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(570140),
   i = n(846027),
   l = n(13245),
-  a = n(287734),
-  o = n(872810),
+  o = n(287734),
+  a = n(872810),
   s = n(223245),
   c = n(479837),
   u = n(317770),
@@ -134,7 +134,7 @@ let P = {
   [S.kg4.TOGGLE_GO_LIVE_STREAMING]: {
     onTrigger() {
       let e = E.Z.getCurrentUserActiveStream();
-      if (null != e) return (0, o.g)((0, h.V9)(e));
+      if (null != e) return (0, a.g)((0, h.V9)(e));
       (0, f.Z)()
     },
     keyEvents: {
@@ -217,7 +217,7 @@ let P = {
           channelId: n
         }
       } = t;
-      null != n && a.default.selectVoiceChannel(n)
+      null != n && o.default.selectVoiceChannel(n)
     },
     keyEvents: {
       keyup: !0,
@@ -228,7 +228,7 @@ let P = {
   },
   [S.kg4.DISCONNECT_FROM_VOICE_CHANNEL]: {
     onTrigger() {
-      a.default.selectVoiceChannel(null)
+      o.default.selectVoiceChannel(null)
     },
     keyEvents: {
       keyup: !0,

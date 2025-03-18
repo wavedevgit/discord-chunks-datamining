@@ -1,21 +1,21 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(812206),
-  a = n(531826);
+  o = n(531826);
 
-function o(e) {
+function a(e) {
   let {
     applicationId: t,
-    channelId: o,
+    channelId: a,
     mediaUrl: s
-  } = e, c = l.Z.getApplication(t), u = null != (0, a.ZP)({
+  } = e, c = l.Z.getApplication(t), u = null != (0, o.ZP)({
     application: c,
-    channelId: o
+    channelId: a
   }) ? i.u1M : i.z1l;
   (0, i.ZDy)(async () => {
     let {
@@ -40,7 +40,7 @@ function o(e) {
       return e
     }({
       applicationId: t,
-      channelId: o,
+      channelId: a,
       mediaUrl: s
     }, n))
   }, {

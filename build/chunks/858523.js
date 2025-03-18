@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(481060),
-  a = n(239091),
-  o = n(299206),
+  o = n(239091),
+  a = n(299206),
   s = n(388032);
 
 function c(e) {
@@ -17,7 +17,7 @@ function c(e) {
     onSelect: c,
     closePopout: u,
     "aria-label": d
-  } = e, p = (0, o.Z)({
+  } = e, p = (0, a.Z)({
     id: t.id,
     label: s.NW.string(s.t["94lLDw"]),
     shiftId: n,
@@ -31,7 +31,7 @@ function c(e) {
       onSelect: c,
       navId: "guild-discovery-context-menu",
       "aria-label": null != d ? d : s.NW.string(s.t.ogxXGh),
-      onClose: a.Zy,
+      onClose: o.Zy,
       children: (0, r.jsx)(l.kSQ, {
         children: p
       })
@@ -43,11 +43,11 @@ let u = e => {
     guild: t,
     children: n,
     onRequestOpen: i,
-    onRequestClose: a
+    onRequestClose: o
   } = e;
   return (0, r.jsx)(l.yRy, {
     onRequestOpen: i,
-    onRequestClose: a,
+    onRequestClose: o,
     animation: l.yRy.Animation.NONE,
     position: "bottom",
     spacing: 4,

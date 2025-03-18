@@ -1,11 +1,11 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  P: () => o
+  P: () => a
 });
 var r = n(200651),
   i = n(192379),
   l = n(709014);
-let a = {
+let o = {
     disable: {
       name: "disable",
       start: 0,
@@ -27,10 +27,10 @@ let a = {
       duration: 70
     }
   },
-  o = e => {
+  a = e => {
     let t = i.useRef(null),
-      o = i.useRef(e);
-    o.current = e;
+      a = i.useRef(e);
+    a.current = e;
     let s = i.useMemo(() => () => {
         null != t.current && t.current.play(e)
       }, [e]),
@@ -72,8 +72,8 @@ let a = {
         }({}, e), s = s = {
           src: () => n.e("7584").then(n.t.bind(n, 883488, 19)),
           ref: t,
-          initialAnimation: o.current,
-          markers: a
+          initialAnimation: a.current,
+          markers: o
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

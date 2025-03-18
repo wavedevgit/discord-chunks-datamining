@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(846519),
   i = n(570140),
   l = n(317770),
-  a = n(70956),
-  o = n(960048),
+  o = n(70956),
+  a = n(960048),
   s = n(930446),
   c = n(981631);
 
@@ -27,22 +27,22 @@ class d extends l.Z {
   }
   constructor(...e) {
     super(...e), u(this, "focusedOrForegrounded", !0), u(this, "heartbeatInterval", new r.Xp), u(this, "schedulerStarted", !1), u(this, "maybeStartHeartbeat", () => {
-      this.heartbeatInterval.isStarted() || this.heartbeatInterval.start(5 * a.Z.Millis.MINUTE, this.trackHeartbeat)
+      this.heartbeatInterval.isStarted() || this.heartbeatInterval.start(5 * o.Z.Millis.MINUTE, this.trackHeartbeat)
     }), u(this, "startAnalyticHeartbeat", () => {
-      !this.schedulerStarted && (this.schedulerStarted = !0, o.Z.addBreadcrumb({
+      !this.schedulerStarted && (this.schedulerStarted = !0, a.Z.addBreadcrumb({
         category: "ad",
         message: "Starting ad session heartbeat"
       }), this.maybeStartHeartbeat())
     }), u(this, "trackHeartbeat", () => {
       if (!this.schedulerStarted) {
-        o.Z.addBreadcrumb({
+        a.Z.addBreadcrumb({
           category: "ad",
           message: "Ad heartbeat called but scheduler not started"
         }), this.heartbeatInterval.stop();
         return
       }(0, s.G)()
     }), u(this, "stopAnalyticHeartbeat", () => {
-      this.schedulerStarted && (this.schedulerStarted = !1, o.Z.addBreadcrumb({
+      this.schedulerStarted && (this.schedulerStarted = !1, a.Z.addBreadcrumb({
         category: "ad",
         message: "Stopping ad session heartbeat"
       }), this.heartbeatInterval.stop())
@@ -50,7 +50,7 @@ class d extends l.Z {
       if (this.focusedOrForegrounded) try {
         this.startAnalyticHeartbeat()
       } catch (e) {
-        o.Z.captureException(e)
+        a.Z.captureException(e)
       } else this.stopAnalyticHeartbeat()
     }), u(this, "handleEnrollmentSuccess", () => {}), u(this, "handleWindowFocus", e => {
       let {

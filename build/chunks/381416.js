@@ -1,23 +1,23 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  s: () => o
+  s: () => a
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(388032),
-  a = n(983372);
+  o = n(983372);
 
-function o(e) {
+function a(e) {
   let {
     onDiscardApplication: t,
     onContinueApplication: n,
-    guild: o
+    guild: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: a.confirmation,
+    className: o.confirmation,
     children: [(0, r.jsx)("div", {
-      className: a.iconWrapper,
+      className: o.iconWrapper,
       children: (0, r.jsx)(i.Gzi, {
         size: "md",
         color: i.TVs.colors.INTERACTIVE_ACTIVE
@@ -25,11 +25,11 @@ function o(e) {
     }), (0, r.jsx)(i.X6q, {
       variant: "heading-lg/semibold",
       color: "header-primary",
-      children: null != o ? l.NW.formatToPlainString(l.t.f5Jaw8, {
-        guildName: o.name
+      children: null != a ? l.NW.formatToPlainString(l.t.f5Jaw8, {
+        guildName: a.name
       }) : l.NW.string(l.t["0sTyER"])
     }), (0, r.jsxs)("div", {
-      className: a.incompleteButtonsContainer,
+      className: o.incompleteButtonsContainer,
       children: [(0, r.jsx)(i.zxk, {
         fullWidth: !0,
         onClick: n,

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  a = n.n(l),
-  o = n(748780),
+  o = n.n(l),
+  a = n(748780),
   s = n(91192),
   c = n(481060),
   u = n(239091),
@@ -80,8 +80,8 @@ let g = function(e) {
         left: -8,
         right: -8
       },
-      children: (0, r.jsx)(o.Z.div, f(h({
-        className: a()(p.messageRequestItem, N, {
+      children: (0, r.jsx)(a.Z.div, f(h({
+        className: o()(p.messageRequestItem, N, {
           [p.active]: E || I,
           [p.firstItem]: 0 === t
         }),

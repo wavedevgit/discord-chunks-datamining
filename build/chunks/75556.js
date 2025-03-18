@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  S: () => a,
+  S: () => o,
   V: () => l
 });
 var r = n(818083),
@@ -22,7 +22,7 @@ let l = (0, r.B)({
   commonTriggerPoint: i.$P.CONNECTION_OPEN
 });
 
-function a() {
+function o() {
   return l.getCurrentConfig({
     location: "isOptimizedRPCAuthorizeEnabled"
   }).enabled

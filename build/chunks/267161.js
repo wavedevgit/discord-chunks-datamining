@@ -6,8 +6,8 @@ n.r(t), n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(512969),
-  a = n(15729),
-  o = n(442837),
+  o = n(15729),
+  a = n(442837),
   s = n(481060),
   c = n(230711),
   u = n(174556),
@@ -34,16 +34,16 @@ var r = n(200651),
   Z = n(388032),
   x = n(635357),
   L = n(963981);
-let w = (0, a.U)(() => ({
+let w = (0, o.U)(() => ({
   isOpen: !0
 }));
 
 function R() {
   let e;
   let t = (0, l.TH)(),
-    n = (0, o.e7)([y.Z], () => y.Z.getChannelId()),
-    i = (0, o.e7)([I.Z], () => I.Z.getGuildId()),
-    a = (0, o.e7)([N.Z], () => N.Z.getChannel(n), [n]),
+    n = (0, a.e7)([y.Z], () => y.Z.getChannelId()),
+    i = (0, a.e7)([I.Z], () => I.Z.getGuildId()),
+    o = (0, a.e7)([N.Z], () => N.Z.getChannel(n), [n]),
     c = v.Z.getGuild(i),
     u = (0, h.Z)(),
     d = null;
@@ -54,7 +54,7 @@ function R() {
     size: f.Z.Sizes.MINI,
     active: !0,
     className: L.guildIcon
-  }), e = c.name) : null != a && (a.isDM() || a.isGroupDM()) ? (e = Z.NW.string(Z.t.YUU0RE), d = (0, r.jsx)(s.gw7, {
+  }), e = c.name) : null != o && (o.isDM() || o.isGroupDM()) ? (e = Z.NW.string(Z.t.YUU0RE), d = (0, r.jsx)(s.gw7, {
     size: "xs"
   })) : t.pathname.startsWith(j.Z5c.GLOBAL_DISCOVERY) ? (e = Z.NW.string(Z.t["4nEZLi"]), d = (0, r.jsx)(s.Jmo, {
     size: "xs"
@@ -91,8 +91,8 @@ let D = i.memo(function() {
   i.useLayoutEffect(() => {
     S.ZP.setMinimumSize(A.J, A.N)
   }, []);
-  let l = (0, o.e7)([O.Z], () => O.Z.darkSidebar ? j.BRd.DARK : void 0);
-  return (0, o.e7)([C.Z, _.Z], () => (0, T.rB)()) ? null : (0, r.jsx)(s.f6W, {
+  let l = (0, a.e7)([O.Z], () => O.Z.darkSidebar ? j.BRd.DARK : void 0);
+  return (0, a.e7)([C.Z, _.Z], () => (0, T.rB)()) ? null : (0, r.jsx)(s.f6W, {
     theme: l,
     children: e => (0, r.jsx)(P.T, {
       className: e,

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(481060),
   c = n(239091),
   u = n(586902),
@@ -98,7 +98,7 @@ function P(e) {
     deaf: Z,
     serverMute: x,
     serverDeaf: L
-  } = e, w = (0, o.e7)([E.Z], () => E.Z.isLocalMute(P.id)), R = (0, u.Z)({
+  } = e, w = (0, a.e7)([E.Z], () => E.Z.isLocalMute(P.id)), R = (0, u.Z)({
     userId: P.id,
     checkSoundSharing: !0
   }), D = null !== (t = _.getGuildId()) && void 0 !== t ? t : void 0, k = P.getAvatarURL(_.guild_id, 24), M = null != j ? j : O.ZP.getName(P), {
@@ -180,14 +180,14 @@ function P(e) {
           shakeLocation: N.oZ.VOICE_USER,
           isShaking: R,
           children: (0, r.jsx)("div", {
-            className: a()(y.avatar, {
+            className: o()(y.avatar, {
               [y.speaking]: R
             }),
             style: {
               backgroundImage: "url(".concat(k, ")")
             },
             children: null != U ? (0, r.jsx)(U, {
-              className: a()(y.avatarIconOverlay, {
+              className: o()(y.avatarIconOverlay, {
                 [y.avatarIconRed]: G
               }),
               color: "currentColor",
@@ -216,7 +216,7 @@ function j(e) {
       color: "currentColor"
     }),
     focusProps: S
-  }), h = (0, o.e7)([_.default], () => _.default.getId(), []), [f, g] = function(e, t) {
+  }), h = (0, a.e7)([_.default], () => _.default.getId(), []), [f, g] = function(e, t) {
     let n = [];
     for (let r of e)
       if (!(r.user.id === t || n.some(e => e.user.id === r.user.id))) {
@@ -225,7 +225,7 @@ function j(e) {
       } return [n, !1]
   }(t, h), m = g && c ? t : f;
   return m.length <= 0 ? null : (0, r.jsx)(s.zJl, {
-    className: a()(y.scroller, l),
+    className: o()(y.scroller, l),
     fade: !0,
     children: (0, r.jsxs)("div", {
       className: y.voiceUsers,

@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(13245),
   i = n(371651),
   l = n(808506),
-  a = n(998502),
-  o = n(13140),
+  o = n(998502),
+  a = n(13140),
   s = n(996106),
   c = n(914946),
   u = n(186901),
@@ -27,9 +27,9 @@ function h(e) {
       r.Z.setInputLocked(!0, e)
     },
     context: t ? d.IlC.POPOUT : d.IlC.OVERLAY
-  }) : (a.ZP.focus(null, !0), {
+  }) : (o.ZP.focus(null, !0), {
     lock() {
-      a.ZP.setForegroundProcess(e)
+      o.ZP.setForegroundProcess(e)
     },
     context: d.IlC.APP
   })
@@ -39,7 +39,7 @@ let f = async (e, t, n) => {
   if (null == n || "" === n) return Promise.reject(new s.Z({
     closeCode: d.$VG.INVALID_CLIENTID
   }, "No Client ID Specified"));
-  let r = a.ZP.releaseChannel !== d.R5N.CANARY && !p.includes(n) && e.transport !== u.He.POST_MESSAGE;
+  let r = o.ZP.releaseChannel !== d.R5N.CANARY && !p.includes(n) && e.transport !== u.He.POST_MESSAGE;
   return await (0, c.vv)(n, r), (0, c.YS)(e, n, t)
 }, g = () => (0, c.tr)(e => {
   let t = [];
@@ -48,10 +48,10 @@ let f = async (e, t, n) => {
     return {
       type: e[0],
       code: e[1],
-      name: null !== (t = (0, o.H9)(e)) && void 0 !== t ? t : "unknown"
+      name: null !== (t = (0, a.H9)(e)) && void 0 !== t ? t : "unknown"
     }
   })), t
 }), m = e => (0, c.FJ)(e, e => {
   let t = "";
-  return null != e.modeOptions.shortcut && Array.isArray(e.modeOptions.shortcut) && (t = (0, o.BB)(e.modeOptions.shortcut)), t
+  return null != e.modeOptions.shortcut && Array.isArray(e.modeOptions.shortcut) && (t = (0, a.BB)(e.modeOptions.shortcut)), t
 })
