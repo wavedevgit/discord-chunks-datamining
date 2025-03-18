@@ -38,8 +38,8 @@ var i = n(200651),
   A = n(699516),
   L = n(594174),
   R = n(801077),
-  W = n(237997),
-  M = n(630388),
+  M = n(237997),
+  W = n(630388),
   V = n(5192),
   z = n(709054),
   U = n(444295),
@@ -303,7 +303,7 @@ function $(e) {
   })), [t]), u = (0, U.ee)(() => new Set(t.map(e => e.id)), [t]);
   return (r.useEffect(() => {
     (0, U.zi)(F.Odu.ACTIVITY, {
-      locked: W.default.isInstanceLocked(),
+      locked: M.default.isInstanceLocked(),
       shownUserIds: Array.from(a),
       liveUserIds: Array.from(s),
       contentInventoryIds: Array.from(u)
@@ -426,7 +426,7 @@ function en(e) {
   (0, O.ZP)(() => (S.L(), () => S.v()));
   let p = null != c && (0, y.Z)(c, F.xjy.JOIN),
     f = (0, E.q)(null == c ? void 0 : c.application_id),
-    m = null != f && (0, M.yE)(f.flags, F.udG.EMBEDDED),
+    m = null != f && (0, W.yE)(f.flags, F.udG.EMBEDDED),
     g = ee({
       gamingId: s,
       userAffinityThresholdV1: 17.5,

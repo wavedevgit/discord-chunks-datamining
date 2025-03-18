@@ -14,9 +14,9 @@ var i = n(200651),
   g = n(9156),
   b = n(621600),
   p = n(981631),
-  S = n(490897),
-  N = n(526761),
-  f = n(388032);
+  f = n(490897),
+  S = n(526761),
+  N = n(388032);
 
 function O(e) {
   let t = (0, d.ng)(e, !0),
@@ -24,7 +24,7 @@ function O(e) {
   return (0, i.jsxs)(l.sNh, {
     id: "notification",
     label: (0, i.jsxs)(i.Fragment, {
-      children: [O, f.NW.string(f.t.HcoRu7)]
+      children: [O, N.NW.string(N.t.HcoRu7)]
     }),
     action: () => {
       (0, l.ZDy)(async () => {
@@ -71,12 +71,12 @@ function O(e) {
         let n = {
           message_notifications: t
         };
-        t === p.bL.ALL_MESSAGES && E !== S.i.ALL_MESSAGES && (n.flags = (0, o.Q4)(g.ZP.getGuildFlags(e), N.vc.UNREADS_ALL_MESSAGES)), a.Z.updateGuildNotificationSettings(e, n, b.UE.notifications(t))
+        t === p.bL.ALL_MESSAGES && E !== f.i.ALL_MESSAGES && (n.flags = (0, o.Q4)(g.ZP.getGuildFlags(e), S.vc.UNREADS_ALL_MESSAGES)), a.Z.updateGuildNotificationSettings(e, n, b.UE.notifications(t))
       }, _ = t => {
         O(!1);
         let n = g.ZP.getGuildFlags(e);
         a.Z.updateGuildNotificationSettings(e, {
-          flags: (0, o.Q4)(n, t === S.i.ALL_MESSAGES ? N.vc.UNREADS_ALL_MESSAGES : N.vc.UNREADS_ONLY_MENTIONS)
+          flags: (0, o.Q4)(n, t === f.i.ALL_MESSAGES ? S.vc.UNREADS_ALL_MESSAGES : S.vc.UNREADS_ONLY_MENTIONS)
         }, b.UE.unreads(t))
       };
       return (0, i.jsxs)(i.Fragment, {
@@ -85,26 +85,26 @@ function O(e) {
             id: "everything",
             group: "notification-preset",
             checked: y === u.s8.ALL_MESSAGES,
-            label: f.NW.string(f.t.hZrr6u),
+            label: N.NW.string(N.t.hZrr6u),
             action: () => ((0, c.V)(e, u.s8.ALL_MESSAGES), O(!1))
           }), (0, i.jsx)(l.k5B, {
             id: "essentials",
             group: "notification-preset",
             checked: y === u.s8.MENTIONS,
-            label: f.NW.string(f.t.y59NJi),
+            label: N.NW.string(N.t.y59NJi),
             action: () => ((0, c.V)(e, u.s8.MENTIONS), O(!1))
           }), (0, i.jsx)(l.k5B, {
             id: "nothing",
             group: "notification-preset",
             checked: y === u.s8.NOTHING,
-            label: f.NW.string(f.t["pGn/bG"]),
+            label: N.NW.string(N.t["pGn/bG"]),
             action: () => ((0, c.V)(e, u.s8.NOTHING), O(!1))
           }), (0, i.jsx)(l.k5B, {
             id: "custom",
             group: "notification-preset",
             checked: y === u.s8.CUSTOM,
             action: () => (n(!0), O(!0)),
-            label: f.NW.string(f.t["32yow8"])
+            label: N.NW.string(N.t["32yow8"])
           })]
         }), (y === u.s8.CUSTOM || t) && (0, i.jsxs)(l.kSQ, {
           children: [(0, i.jsxs)(l.sNh, {
@@ -113,38 +113,38 @@ function O(e) {
             children: [(0, i.jsx)(l.k5B, {
               id: "unread_setting_all_messages",
               group: "unread_setting",
-              checked: E === S.i.ALL_MESSAGES,
-              label: f.NW.string(f.t["HVah//"]),
-              action: () => _(S.i.ALL_MESSAGES)
+              checked: E === f.i.ALL_MESSAGES,
+              label: N.NW.string(N.t["HVah//"]),
+              action: () => _(f.i.ALL_MESSAGES)
             }), (0, i.jsx)(l.k5B, {
               id: "unread_setting_mention_only",
               group: "unread_setting",
-              checked: E === S.i.ONLY_MENTIONS,
-              label: f.NW.string(f.t["tu+ZWF"]),
-              action: () => _(S.i.ONLY_MENTIONS),
-              disabled: E !== S.i.ONLY_MENTIONS && h === p.bL.ALL_MESSAGES,
-              subtext: E !== S.i.ONLY_MENTIONS && h === p.bL.ALL_MESSAGES ? f.NW.string(f.t.eP8yWV) : void 0
+              checked: E === f.i.ONLY_MENTIONS,
+              label: N.NW.string(N.t["tu+ZWF"]),
+              action: () => _(f.i.ONLY_MENTIONS),
+              disabled: E !== f.i.ONLY_MENTIONS && h === p.bL.ALL_MESSAGES,
+              subtext: E !== f.i.ONLY_MENTIONS && h === p.bL.ALL_MESSAGES ? N.NW.string(N.t.eP8yWV) : void 0
             })]
           }, "unread_setting"), (0, i.jsxs)(l.sNh, {
             id: "push_settings",
-            label: f.NW.string(f.t.HcoRu7),
+            label: N.NW.string(N.t.HcoRu7),
             children: [(0, i.jsx)(l.k5B, {
               group: "notification-preset",
               id: "push_settings_everything",
-              label: f.NW.string(f.t["HVah//"]),
+              label: N.NW.string(N.t["HVah//"]),
               checked: h === p.bL.ALL_MESSAGES,
               action: () => j(p.bL.ALL_MESSAGES),
-              subtext: E !== S.i.ALL_MESSAGES && h !== p.bL.ALL_MESSAGES ? f.NW.string(f.t.idXSbG) : void 0
+              subtext: E !== f.i.ALL_MESSAGES && h !== p.bL.ALL_MESSAGES ? N.NW.string(N.t.idXSbG) : void 0
             }), (0, i.jsx)(l.k5B, {
               group: "notification-preset",
               id: "push_settings_everything_mention",
               checked: h === p.bL.ONLY_MENTIONS,
-              label: f.NW.string(f.t["tu+ZWF"]),
+              label: N.NW.string(N.t["tu+ZWF"]),
               action: () => j(p.bL.ONLY_MENTIONS)
             }), (0, i.jsx)(l.k5B, {
               group: "notification-preset",
               id: "push_settings_everything_nothing",
-              label: f.NW.string(f.t.X4wWUl),
+              label: N.NW.string(N.t.X4wWUl),
               checked: h === p.bL.NO_MESSAGES,
               action: () => j(p.bL.NO_MESSAGES)
             })]
@@ -167,20 +167,20 @@ function O(e) {
           children: [(0, i.jsx)(l.S89, {
             id: "mention",
             checked: t.suppressEveryone,
-            label: f.NW.format(f.t.OWiWAg, {}),
+            label: N.NW.format(N.t.OWiWAg, {}),
             action: () => n(e, {
               suppress_everyone: !t.suppressEveryone
             }, b.UE.suppressEveryone(!t.suppressEveryone))
           }), (0, i.jsx)(l.S89, {
             id: "roles",
             checked: t.suppressRoles,
-            label: f.NW.string(f.t["O/QdoK"]),
+            label: N.NW.string(N.t["O/QdoK"]),
             action: () => n(e, {
               suppress_roles: !t.suppressRoles
             }, b.UE.suppressRoles(!t.suppressRoles))
           }), (0, i.jsx)(l.S89, {
             id: "hightlight",
-            label: f.NW.string(f.t.gPuteH),
+            label: N.NW.string(N.t.gPuteH),
             checked: t.highligths === p.gLR.ENABLED,
             action: () => n(e, {
               notify_highlights: t.highligths === p.gLR.ENABLED ? p.gLR.DISABLED : p.gLR.ENABLED
@@ -190,14 +190,14 @@ function O(e) {
           children: [(0, i.jsx)(l.S89, {
             id: "event",
             checked: t.muteScheduledEvents,
-            label: f.NW.string(f.t.ONG3Y2),
+            label: N.NW.string(N.t.ONG3Y2),
             action: () => n(e, {
               mute_scheduled_events: !t.muteScheduledEvents
             }, b.UE.mutedEvents(!t.muteScheduledEvents))
           }), (0, i.jsx)(l.S89, {
             id: "mobile_push",
             checked: t.mobilePush,
-            label: f.NW.string(f.t["h1DL6+"]),
+            label: N.NW.string(N.t["h1DL6+"]),
             action: () => n(e, {
               mobile_push: !t.mobilePush
             }, b.UE.mobilePush(!t.mobilePush))

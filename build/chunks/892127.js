@@ -91,8 +91,8 @@ let I = r.memo(function(e) {
     pinned: A,
     zIndex: L,
     size: R,
-    anchor: W
-  } = t, M = (0, h.w_)(R, _), V = (0, h.KR)(W, _), {
+    anchor: M
+  } = t, W = (0, h.w_)(R, _), V = (0, h.KR)(M, _), {
     minSize: z,
     resizeX: U,
     resizeY: G,
@@ -121,7 +121,7 @@ let I = r.memo(function(e) {
       [b.debugPinned]: K && A
     }, N),
     id: k,
-    size: M,
+    size: W,
     anchor: V,
     container: H,
     minSize: null != z ? z : {

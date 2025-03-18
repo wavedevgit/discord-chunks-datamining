@@ -36,8 +36,8 @@ var i, r = n(512722),
   A = n(340101),
   L = n(388627),
   R = n(996050),
-  W = n(609626),
-  M = n(421824),
+  M = n(609626),
+  W = n(421824),
   V = n(777036),
   z = n(955978),
   U = n(333727),
@@ -387,24 +387,24 @@ let eg = new em(s.Z, {
         applicationId: r
       } = e,
       l = (0, L.pL)();
-    return null != l && (null == l ? void 0 : l.id) != null && (l.id === r || l.altId === r) && (n === Y.mFx.JOIN && (t = (0, W.Z)(i, l)), null != t && void ep(t, {
+    return null != l && (null == l ? void 0 : l.id) != null && (l.id === r || l.altId === r) && (n === Y.mFx.JOIN && (t = (0, M.Z)(i, l)), null != t && void ep(t, {
       priority: A.Tu.URGENT,
       type: A.kL.GENERIC
     }))
   },
   CLIPS_SAVE_CLIP_START: function() {
-    ep((0, M.f)(H.NW.string(H.t.NBMK9v)))
+    ep((0, W.f)(H.NW.string(H.t.NBMK9v)))
   },
   CLIPS_SAVE_CLIP: function() {
-    ep((0, M.f)(H.NW.format(H.t.KLhk6u, {
+    ep((0, W.f)(H.NW.format(H.t.KLhk6u, {
       duration: (0, P.A)(u.Z.getSettings().clipsLength / 1e3, !0)
     })))
   },
   CLIPS_SAVE_CLIP_ERROR: function() {
-    ep((0, M.f)(H.NW.string(H.t["1ZbZur"])))
+    ep((0, W.f)(H.NW.string(H.t["1ZbZur"])))
   },
   STREAM_START: function(e) {
-    let t = (0, M.y)();
+    let t = (0, W.y)();
     null != t && ep(t)
   }
 })

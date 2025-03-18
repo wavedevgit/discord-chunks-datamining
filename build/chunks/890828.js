@@ -1,6 +1,6 @@
 /** Chunk was on 50751 **/
 n.d(t, {
-  Z: () => U
+  Z: () => G
 }), n(13667), n(390547), n(47120), n(230036), n(566702), n(653041), n(86693), n(536091);
 var i = n(200651),
   r = n(192379),
@@ -116,7 +116,7 @@ let D = e => [e.userId, ... function(e) {
       })
     })
   }),
-  W = r.memo(function(e) {
+  M = r.memo(function(e) {
     var t;
     let {
       channelId: n,
@@ -167,7 +167,7 @@ let D = e => [e.userId, ... function(e) {
       })]
     })
   }),
-  M = r.memo(function(e) {
+  W = r.memo(function(e) {
     let {
       emptyText: t
     } = e;
@@ -206,9 +206,9 @@ let D = e => [e.userId, ... function(e) {
         })
       }), (0, i.jsxs)(g, {
         className: T.channelList,
-        children: [a && 0 === n.length && (0, i.jsx)(M, {
+        children: [a && 0 === n.length && (0, i.jsx)(W, {
           emptyText: _.NW.string(_.t.nxSS09)
-        }), n.map(e => (0, i.jsx)(W, {
+        }), n.map(e => (0, i.jsx)(M, {
           channelId: e,
           isHighlighted: e === d,
           currentVoiceChannel: l,
@@ -277,17 +277,22 @@ function z(e) {
       onSelect: r,
       scrollable: !1
     })]
-  }) : (0, i.jsx)(M, {
+  }) : (0, i.jsx)(W, {
     emptyText: _.NW.string(_.t["3ET7Aw"])
   })
 }
 
 function U(e) {
+  e.stopPropagation()
+}
+
+function G(e) {
+  var t, n;
   let {
-    currentVoiceChannel: t,
-    onClose: n,
-    onSelect: l
-  } = e, o = (0, a.Wu)([x.Z, j.ZP, N.Z, S.Z, I.Z], () => Object.values(x.Z.getGuilds()).reduce((e, t) => [...e, ...j.ZP.getChannels(t.id)[j.Zb].filter(e => I.Z.can(P.Plq.VIEW_CHANNEL, e.channel) && I.Z.can(P.Plq.CONNECT, e.channel)).map(e => {
+    currentVoiceChannel: l,
+    onClose: o,
+    onSelect: c
+  } = e, u = (0, a.Wu)([x.Z, j.ZP, N.Z, S.Z, I.Z], () => Object.values(x.Z.getGuilds()).reduce((e, t) => [...e, ...j.ZP.getChannels(t.id)[j.Zb].filter(e => I.Z.can(P.Plq.VIEW_CHANNEL, e.channel) && I.Z.can(P.Plq.CONNECT, e.channel)).map(e => {
     let {
       channel: t
     } = e;
@@ -295,59 +300,93 @@ function U(e) {
   })], []).map(e => ({
     channel: e,
     voiceStates: Object.values(N.Z.getVoiceStatesForChannel(e.id)).filter(e => S.Z.isFriend(e.userId))
-  })), []), [c, u] = r.useState(""), [d, p] = r.useState([]);
-  (0, v.BO)(c, o, p, k);
-  let h = r.useCallback(e => {
-      "Escape" === e.key && n()
-    }, [n]),
-    f = r.useCallback(e => {
-      l(e), n()
-    }, [l, n]);
-  r.useEffect(() => (document.addEventListener("keydown", h, !0), () => {
-    document.removeEventListener("keydown", h, !0)
-  }), [n, h]);
-  let m = "" !== c.trim(),
-    g = d.length > 20,
-    O = {
-      count: g ? 20 : d.length
-    };
-  return (0, i.jsxs)("div", {
-    className: T.recentChannelsMenu,
+  })), []), [d, p] = r.useState(""), [h, f] = r.useState([]);
+  (0, v.BO)(d, u, f, k);
+  let m = r.useCallback(e => {
+      "Escape" === e.key && o()
+    }, [o]),
+    g = r.useCallback(e => {
+      c(e), o()
+    }, [c, o]);
+  r.useEffect(() => (document.addEventListener("keydown", m, !0), () => {
+    document.removeEventListener("keydown", m, !0)
+  }), [o, m]);
+  let O = "" !== d.trim(),
+    y = h.length > 20,
+    E = {
+      count: y ? 20 : h.length
+    },
+    b = r.useMemo(() => ({
+      onMouseDown: U,
+      onMouseMove: U,
+      onMouseUp: U,
+      onMouseEnter: U,
+      onMouseLeave: U
+    }), []);
+  return (0, i.jsxs)("div", (t = function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = null != arguments[t] ? arguments[t] : {},
+        i = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), i.forEach(function(t) {
+        var i;
+        i = n[t], t in e ? Object.defineProperty(e, t, {
+          value: i,
+          enumerable: !0,
+          configurable: !0,
+          writable: !0
+        }) : e[t] = i
+      })
+    }
+    return e
+  }({
+    className: T.recentChannelsMenu
+  }, b), n = n = {
     children: [(0, i.jsx)("div", {
       className: T.searchBarContainer,
       children: (0, i.jsx)(s.E1j, {
         autoFocus: !0,
-        query: c,
+        query: d,
         size: s.E1j.Sizes.MEDIUM,
         placeholder: _.NW.string(_.t.UyA6SU),
         onClear: () => {
-          u("")
+          p("")
         },
-        onKeyDown: h,
+        onKeyDown: m,
         onChange: e => {
-          u(e)
+          p(e)
         },
         className: T.searchBar,
         inputProps: {
           "aria-label": _.NW.string(_.t.UyA6SU)
         }
       })
-    }), m ? (0, i.jsx)(V, {
-      sectionHeader: g ? _.NW.format(_.t.qdXiQ0, O) : _.NW.format(_.t["Aq+8wM"], O),
-      channelIds: d.map(e => {
+    }), O ? (0, i.jsx)(V, {
+      sectionHeader: y ? _.NW.format(_.t.qdXiQ0, E) : _.NW.format(_.t["Aq+8wM"], E),
+      channelIds: h.map(e => {
         let {
           channel: t
         } = e;
         return t.id
       }).slice(0, 20),
-      hasQuery: m,
-      query: c,
-      currentVoiceChannel: t,
-      onSelect: f
+      hasQuery: O,
+      query: d,
+      currentVoiceChannel: l,
+      onSelect: g
     }) : (0, i.jsx)(z, {
-      searchQuery: c,
-      currentVoiceChannel: t,
-      onSelect: f
+      searchQuery: d,
+      currentVoiceChannel: l,
+      onSelect: g
     })]
-  })
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
+    }
+    return n
+  })(Object(n)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+  }), t))
 }

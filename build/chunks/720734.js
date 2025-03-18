@@ -171,7 +171,7 @@ function eQ(e) {
           children: (0, r.jsx)(K.Z, {
             currentUser: i,
             onClose: () => {
-              l(), null == t || t()
+              null == t || t()
             },
             setPopoutRef: n
           })
@@ -182,6 +182,9 @@ function eQ(e) {
       animation: f.yRy.Animation.FADE,
       spacing: 14,
       fixed: !0,
+      onRequestClose: () => {
+        l()
+      },
       preload: () => (0, eo.Z)(i, void 0, {
         withMutualGuilds: !1,
         withMutualFriends: !1

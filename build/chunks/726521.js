@@ -1,20 +1,21 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  I6: () => y,
-  J7: () => S,
-  JM: () => O,
+  DG: () => m,
+  I6: () => O,
+  J7: () => T,
+  JM: () => I,
   Jw: () => h,
-  WL: () => E,
+  WL: () => b,
   ak: () => p,
-  d$: () => g,
-  eE: () => I,
-  ic: () => m,
-  pX: () => v,
+  d$: () => E,
+  eE: () => S,
+  ic: () => g,
+  pX: () => y,
   sq: () => _,
-  uu: () => N,
-  wk: () => T,
-  zd: () => b
+  uu: () => A,
+  wk: () => N,
+  zd: () => v
 });
 var r = n(367907),
   i = n(427679),
@@ -48,7 +49,7 @@ function f(e) {
 }
 
 function _(e, t) {
-  A(s.b.GUILD_DIRECTORY_ENTRY, {
+  C(s.b.GUILD_DIRECTORY_ENTRY, {
     channel_id: e.channelId,
     guild_id: e.guildId
   }), (0, c.m)({
@@ -60,7 +61,7 @@ function _(e, t) {
 }
 
 function p(e, t, n) {
-  A(s.b.MESSAGE, {
+  C(s.b.MESSAGE, {
     message_id: e.id,
     channel_id: e.channel_id
   }), (0, c.m)({
@@ -72,7 +73,7 @@ function p(e, t, n) {
 }
 
 function h(e, t, n) {
-  A(s.b.MESSAGE, {
+  C(s.b.MESSAGE, {
     message_id: e.id,
     channel_id: e.channel_id
   }), (0, c.m)({
@@ -85,9 +86,22 @@ function h(e, t, n) {
   })
 }
 
-function m(e, t) {
+function m(e, t, n) {
+  C(s.b.GUILD, {
+    guild_id: e.id
+  }), (0, c.m)({
+    name: s.b.GUILD,
+    record: e
+  }, {
+    variant: "staff"
+  }, {
+    onSubmit: n
+  })
+}
+
+function g(e, t) {
   let n = i.Z.getStageInstanceByChannel(e.id);
-  null != n && (A(s.b.STAGE_CHANNEL, {
+  null != n && (C(s.b.STAGE_CHANNEL, {
     stage_instance_id: n.id,
     channel_id: n.channel_id,
     guild_id: n.guild_id
@@ -99,9 +113,9 @@ function m(e, t) {
   }))
 }
 
-function g(e, t) {
+function E(e, t) {
   var n;
-  A(s.b.GUILD_SCHEDULED_EVENT, {
+  C(s.b.GUILD_SCHEDULED_EVENT, {
     guild_scheduled_event_id: e.id,
     guild_id: e.guild_id,
     channel_id: null !== (n = e.channel_id) && void 0 !== n ? n : void 0
@@ -113,8 +127,8 @@ function g(e, t) {
   })
 }
 
-function E(e, t) {
-  A(s.b.FIRST_DM, {
+function b(e, t) {
+  C(s.b.FIRST_DM, {
     message_id: e.id,
     channel_id: e.channel_id
   }), (0, c.m)({
@@ -125,7 +139,7 @@ function E(e, t) {
     isEligibleForFeedback: !1
   })
 }
-async function b(e, t) {
+async function v(e, t) {
   try {
     await (0, l.ox)({
       name: s.b.FIRST_DM,
@@ -136,8 +150,8 @@ async function b(e, t) {
   } catch (e) {}
 }
 
-function v(e, t, n, r) {
-  A(s.b.USER, {
+function y(e, t, n, r) {
+  C(s.b.USER, {
     reported_user_id: e.id
   }), (0, c.m)({
     name: s.b.USER,
@@ -149,8 +163,8 @@ function v(e, t, n, r) {
   })
 }
 
-function y(e, t, n, r) {
-  A(s.b.USER, {
+function O(e, t, n, r) {
+  C(s.b.USER, {
     reported_user_id: e.id
   }), (0, c.m)({
     name: s.b.USER,
@@ -165,9 +179,9 @@ function y(e, t, n, r) {
   })
 }
 
-function O(e, t) {
+function I(e, t) {
   let n = new a.Z({});
-  A(s.BM.USER, {
+  C(s.BM.USER, {
     reported_user_id: n.id
   }), (0, c.m)({
     name: s.BM.USER,
@@ -180,9 +194,9 @@ function O(e, t) {
   })
 }
 
-function I(e, t) {
+function S(e, t) {
   let n = new o.ZP({});
-  A(s.BM.MESSAGE, {
+  C(s.BM.MESSAGE, {
     message_id: void 0,
     channel_id: void 0
   }), (0, c.m)({
@@ -195,7 +209,7 @@ function I(e, t) {
     emailToken: e
   })
 }
-async function S(e, t, n) {
+async function T(e, t, n) {
   try {
     await (0, l.ox)({
       name: s.b.MESSAGE,
@@ -208,8 +222,8 @@ async function S(e, t, n) {
   }
 }
 
-function T(e, t) {
-  A(s.b.MESSAGE, {
+function N(e, t) {
+  C(s.b.MESSAGE, {
     message_id: e.id,
     channel_id: e.channel_id
   }), (0, c.m)({
@@ -222,7 +236,7 @@ function T(e, t) {
   })
 }
 
-function N(e) {
+function A(e) {
   let {
     application: t,
     entrypoint: n,
@@ -234,7 +248,7 @@ function N(e) {
   r.ZP.trackWithMetadata(u.rMx.REPORT_APPLICATION_CLICKED, {
     application_id: t.id,
     location: n
-  }), A(s.b.APPLICATION, {
+  }), C(s.b.APPLICATION, {
     application_id: t.id,
     guild_id: i,
     channel_id: o
@@ -250,7 +264,7 @@ function N(e) {
   })
 }
 
-function A(e, t) {
+function C(e, t) {
   r.ZP.trackWithMetadata(u.rMx.IAR_MODAL_OPEN, f({
     report_type: e
   }, t))

@@ -1,6 +1,6 @@
 /** Chunk was on 33213 **/
 n.d(t, {
-  Z: () => f
+  Z: () => N
 });
 var i = n(200651);
 n(192379);
@@ -15,20 +15,20 @@ var r = n(481060),
   g = n(84615),
   b = n(981631),
   p = n(308083),
-  S = n(49898),
-  N = n(388032);
+  f = n(49898),
+  S = n(388032);
 
-function f(e) {
+function N(e) {
   let t = (0, s.Aq)(),
     n = (0, u.Z)(e);
   if (__OVERLAY__ || !n) return null;
-  let f = n => {
+  let N = n => {
     c.Z.open(e.id, n), t.dispatch(b.CkL.POPOUT_CLOSE), (0, r.pTH)()
   };
   return (0, i.jsx)(r.sNh, {
     id: "guild-settings",
-    label: N.NW.string(N.t["154/bG"]),
-    action: () => f(),
+    label: S.NW.string(S.t["154/bG"]),
+    action: () => N(),
     children: (0, d.t)(e).map(t => {
       let {
         section: n,
@@ -41,15 +41,15 @@ function f(e) {
         case b.pNK.COMMUNITY:
           return (0, i.jsx)(r.sNh, {
             id: n,
-            action: () => f(n),
-            label: N.NW.string(N.t.nRtNqq)
+            action: () => N(n),
+            label: S.NW.string(S.t.nRtNqq)
           }, n);
         case b.pNK.APP_DIRECTORY:
           return (0, i.jsx)(r.sNh, {
             id: n,
             action: () => {
               (0, a.transitionToGlobalDiscovery)({
-                tab: S.GlobalDiscoveryTab.APPS,
+                tab: f.GlobalDiscoveryTab.APPS,
                 newSessionState: {
                   guildId: e.id,
                   entrypoint: {
@@ -63,7 +63,7 @@ function f(e) {
         case b.pNK.CLAN:
           return (0, i.jsx)(r.sNh, {
             id: "guild-settings",
-            label: N.NW.string(N.t["6g8uHB"]),
+            label: S.NW.string(S.t["6g8uHB"]),
             action: () => (0, g.q4)(t => {
               let {
                 closeLayer: n
@@ -79,7 +79,7 @@ function f(e) {
         default:
           return (0, i.jsx)(r.sNh, {
             id: n,
-            action: () => f(n),
+            action: () => N(n),
             label: s
           }, n)
       }

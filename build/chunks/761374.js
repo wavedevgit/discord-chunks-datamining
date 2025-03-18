@@ -49,27 +49,27 @@ function C(e) {
   } = {
     width: "number" == typeof n.width ? n.width : 256,
     height: "number" == typeof n.height ? n.height : 144
-  }, W = (0, l.e7)([O.Z], () => O.Z.getVoiceChannelId()), {
-    width: M,
+  }, M = (0, l.e7)([O.Z], () => O.Z.getVoiceChannelId()), {
+    width: W,
     height: V,
     ref: z
   } = (0, c.Z)(), U = (0, l.e7)([g.Z], () => {
     var e;
     let n = g.Z.getWidget(t);
     return !!(0, b.ZL)(n) && (null === (e = n.meta.showAllStreams) || void 0 === e || e)
-  }, [t]), G = !P, F = (0, l.e7)([m.Z], () => m.Z.getChannel(W)), Y = (0, l.e7)([f.default], () => f.default.getId()), H = T && G || D && P, B = !T && G || !D && P, {
+  }, [t]), G = !P, F = (0, l.e7)([m.Z], () => m.Z.getChannel(M)), Y = (0, l.e7)([f.default], () => f.default.getId()), H = T && G || D && P, B = !T && G || !D && P, {
     participantsVersion: Q,
     activeStreams: K,
     streamParticipants: X
   } = (0, l.cj)([h.Z, d.Z], () => {
-    if (null == W) return {
+    if (null == M) return {
       streamParticipants: I,
       participantsVersion: -1,
       activeStreams: new Set
     };
-    let e = new Set(h.Z.getAllActiveStreamsForChannel(W).map(e => (0, p.V9)(e))),
+    let e = new Set(h.Z.getAllActiveStreamsForChannel(M).map(e => (0, p.V9)(e))),
       t = t => e.has((0, p.V9)(t.stream)),
-      n = d.Z.getStreamParticipants(W).filter(e => e.user.id !== Y && (!!U || t(e)));
+      n = d.Z.getStreamParticipants(M).filter(e => e.user.id !== Y && (!!U || t(e)));
     return n.sort((e, n) => {
       if (H) {
         if (t(e) && !t(n)) return -1;
@@ -82,9 +82,9 @@ function C(e) {
     }), {
       streamParticipants: n,
       activeStreams: e,
-      participantsVersion: d.Z.getParticipantsVersion(W)
+      participantsVersion: d.Z.getParticipantsVersion(M)
     }
-  }, [W, Y, U, H, B]), J = X.length, q = null == F || 0 === K.size && C || 0 === J && !C, $ = P ? b.C5.HORIZONTAL : b.C5.VERTICAL, {
+  }, [M, Y, U, H, B]), J = X.length, q = null == F || 0 === K.size && C || 0 === J && !C, $ = P ? b.C5.HORIZONTAL : b.C5.VERTICAL, {
     tileWidth: ee,
     layout: et
   } = function(e, t, n, i, l) {
@@ -109,7 +109,7 @@ function C(e) {
       layout: s,
       tileWidth: c
     }
-  }(!1, X.length, null != M ? M : L - A, null != V ? V : R - A, $), en = {
+  }(!1, X.length, null != W ? W : L - A, null != V ? V : R - A, $), en = {
     id: t,
     width: L,
     height: R,

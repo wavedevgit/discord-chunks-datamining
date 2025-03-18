@@ -29,20 +29,20 @@ function b() {
 
 function p(e) {
   var t, p;
-  let S = function(e) {
+  let f = function(e) {
       let {
         suppressEveryone: t,
         suppressRoles: n,
         mobilePush: p,
-        messageNotifications: S,
-        notifyHighlights: N
+        messageNotifications: f,
+        notifyHighlights: S
       } = (0, r.cj)([c.ZP], () => ({
         suppressEveryone: c.ZP.isSuppressEveryoneEnabled(e.id),
         suppressRoles: c.ZP.isSuppressRolesEnabled(e.id),
         mobilePush: c.ZP.isMobilePushEnabled(e.id),
         messageNotifications: c.ZP.getMessageNotifications(e.id),
         notifyHighlights: c.ZP.getNotifyHighlights(e.id)
-      }), [e.id]), f = N === d.gLR.DISABLED, O = (0, a.Z)(e.id);
+      }), [e.id]), N = S === d.gLR.DISABLED, O = (0, a.Z)(e.id);
 
       function E(t, n) {
         l.Z.updateGuildNotificationSettings(e.id, t, n)
@@ -62,7 +62,7 @@ function p(e) {
               action: () => E({
                 message_notifications: t
               }, u.UE.notifications(t)),
-              checked: t === S
+              checked: t === f
             }, t)
           })
         }), null != h && (0, i.jsx)(s.kSQ, {
@@ -87,10 +87,10 @@ function p(e) {
             label: g.NW.string(g.t.gPuteH),
             action: () => {
               E({
-                notify_highlights: f ? d.gLR.ENABLED : d.gLR.DISABLED
-              }, u.UE.highlights(f))
+                notify_highlights: N ? d.gLR.ENABLED : d.gLR.DISABLED
+              }, u.UE.highlights(N))
             },
-            checked: f
+            checked: N
           }), O]
         }), (0, i.jsx)(s.kSQ, {
           children: (0, i.jsx)(s.S89, {
@@ -104,20 +104,20 @@ function p(e) {
         })]
       })
     }(e),
-    N = (0, r.e7)([c.ZP], () => c.ZP.getMessageNotifications(e.id), [e.id]),
-    f = null === (p = b()) || void 0 === p ? void 0 : null === (t = p.find(e => {
+    S = (0, r.e7)([c.ZP], () => c.ZP.getMessageNotifications(e.id), [e.id]),
+    N = null === (p = b()) || void 0 === p ? void 0 : null === (t = p.find(e => {
       let {
         setting: t
       } = e;
-      return t === N
+      return t === S
     })) || void 0 === t ? void 0 : t.label,
     O = (0, o.U)();
-  return null != S ? (0, i.jsx)(s.sNh, {
+  return null != f ? (0, i.jsx)(s.sNh, {
     id: "guild-notifications",
     label: (0, i.jsxs)(i.Fragment, {
       children: [O, g.NW.string(g.t.h850Sk)]
     }),
-    subtext: f,
+    subtext: N,
     action: () => (0, s.ZDy)(async () => {
       let {
         default: t
@@ -155,6 +155,6 @@ function p(e) {
         }), r))
       }
     }),
-    children: S
+    children: f
   }) : null
 }

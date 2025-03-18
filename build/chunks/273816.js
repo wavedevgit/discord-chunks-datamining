@@ -71,11 +71,11 @@ function y(e) {
     [T, D, k] = (0, u.ZF)(y),
     [A, L] = (0, u.Y5)(T, _, b),
     R = performance.now() - x.current < u.MC,
-    W = D(S, P.current);
+    M = D(S, P.current);
   (0, c.ZP)(() => (A(), () => {
     L()
   }));
-  let M = r.useCallback(() => {
+  let W = r.useCallback(() => {
       N(), k(), A()
     }, [N, k, A]),
     [V, z] = r.useState(!0),
@@ -191,8 +191,8 @@ function y(e) {
             children: ["Idle Frame Delta:", " ", (0, i.jsxs)(s.Text, {
               tag: "span",
               variant: "code",
-              color: W > 1 ? "text-danger" : "text-primary",
-              children: [W.toFixed(2), "ms"]
+              color: M > 1 ? "text-danger" : "text-primary",
+              children: [M.toFixed(2), "ms"]
             })]
           })
         }))
@@ -217,7 +217,7 @@ function y(e) {
       className: g.bottomPanelButton,
       children: (0, i.jsx)(h.Z, {
         children: (0, i.jsx)(s.zxk, {
-          onClick: M,
+          onClick: W,
           children: "Reset Frame Data"
         })
       })

@@ -1,6 +1,6 @@
 /** Chunk was on 50751 **/
 n.d(t, {
-  Z: () => M
+  Z: () => W
 }), n(47120);
 var i = n(200651),
   r = n(192379),
@@ -232,15 +232,15 @@ function R(e) {
     })]
   })
 }
-let W = new Set([w.jm8.ENDED, w.jm8.FAILED, w.jm8.PAUSED]),
-  M = r.memo(function(e) {
+let M = new Set([w.jm8.ENDED, w.jm8.FAILED, w.jm8.PAUSED]),
+  W = r.memo(function(e) {
     let {
       participant: t,
       width: n,
       locked: r,
       widgetId: l,
       pinned: o
-    } = e, s = (0, a.e7)([j.Z], () => j.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), u = (0, f.bp)(), d = null != s && W.has(s.state), h = null != s, m = (0, Z.yA)(t.stream), O = (0, Z.xN)(t.stream);
+    } = e, s = (0, a.e7)([j.Z], () => j.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), u = (0, f.bp)(), d = null != s && M.has(s.state), h = null != s, m = (0, Z.yA)(t.stream), O = (0, Z.xN)(t.stream);
     return !h && r || d ? null : (0, i.jsxs)("div", {
       className: _.tile,
       children: [h && !r && (0, i.jsx)(g.ZP, {
