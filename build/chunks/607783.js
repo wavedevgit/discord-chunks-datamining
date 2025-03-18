@@ -18,22 +18,20 @@ function f(e) {
     userId: t,
     channelId: n,
     guildId: f,
-    location: b,
-    simplified: Z = !1
-  } = e, N = (0, c.J)({
-    channelId: n,
-    location: b
-  }), m = (0, r.e7)([d.default], () => d.default.getId() === t), v = (0, o.bp)(), p = i.useCallback(() => {
+    simplified: b = !1
+  } = e, Z = (0, c.J)({
+    channelId: n
+  }), N = (0, r.e7)([d.default], () => d.default.getId() === t), m = (0, o.bp)(), v = i.useCallback(() => {
     s.Z.openSecureFramesUserVerificationModal(t, n, () => (0, u.fz)({
       userId: t,
       channelId: n,
       guildId: f
-    }), v)
-  }, [v, n, f, t]);
-  return !N || m ? null : (0, l.jsx)(a.sNh, {
+    }), m)
+  }, [m, n, f, t]);
+  return !Z || N ? null : (0, l.jsx)(a.sNh, {
     id: "secure-frames-user-verification",
     label: g.NW.string(g.t["8ErYvb"]),
-    action: p,
-    icon: Z ? a._uN : null
+    action: v,
+    icon: b ? a._uN : null
   })
 }

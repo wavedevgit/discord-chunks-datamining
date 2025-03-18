@@ -113,19 +113,19 @@ let g = (e, t) => {
       interactive: x = !0,
       onClose: C,
       children: E
-    } = e, j = l.useRef(null), P = l.useRef([]), I = l.useRef(!1), S = l.useRef(null), [w, T] = l.useState(0), [Z, _] = l.useState({
+    } = e, j = l.useRef(null), I = l.useRef([]), P = l.useRef(!1), S = l.useRef(null), [w, T] = l.useState(0), [Z, _] = l.useState({
       x: 0,
       y: 0
     }), R = Math.abs(Z.x) + Math.abs(Z.y) > 0, A = l.useMemo(() => i().chunk(E, f), [E]), D = l.useCallback((e, t) => {
-      null == P.current[w] ? P.current[w] = [] : P.current[w][t] = e
+      null == I.current[w] ? I.current[w] = [] : I.current[w][t] = e
     }, [w]), W = l.useCallback((e, t) => {
       S.current = t, N(f * e + t)
     }, [N]), k = l.useCallback(() => {
       S.current = null, N(null)
     }, [N]), M = l.useCallback(e => {
-      k(), I.current = e
+      k(), P.current = e
     }, [k]), B = l.useCallback((e, t, n) => {
-      if (I.current) {
+      if (P.current) {
         _({
           x: 0,
           y: 0
@@ -156,13 +156,13 @@ let g = (e, t) => {
           x: e.clientX,
           y: e.clientY
         };
-      if (B(o, l, Math.max(t, n)), I.current) {
+      if (B(o, l, Math.max(t, n)), P.current) {
         null != b && k();
         return
       }
       let i = (0, s.ld)(l, o, Math.max(t, n));
-      for (let e = 0; e < P.current[w].length; e++) {
-        let t = P.current[w][e];
+      for (let e = 0; e < I.current[w].length; e++) {
+        let t = I.current[w][e];
         if (null == t) continue;
         let n = t.getBoundingClientRect();
         if ((0, s.Vr)(l, i, n)) {

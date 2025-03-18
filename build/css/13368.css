@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: da6d0581492d1898
+  Original File Name: b039a88fd8e2551a
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -2792,15 +2792,6 @@
     right: 0
 }
 
-.status_cdcd10 {
-    cursor: pointer
-}
-
-.status_cdcd10:hover {
-    -webkit-text-decoration: underline;
-    text-decoration: underline
-}
-
 .hoverableStatus_cdcd10 {
     cursor: pointer
 }
@@ -5534,4 +5525,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     pointer-events: auto
 }
 
-/*# sourceMappingURL=da6d0581492d1898.css.map*/
+/*# sourceMappingURL=b039a88fd8e2551a.css.map*/

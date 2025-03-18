@@ -16,8 +16,7 @@ let p = e => {
   let {
     channel: t
   } = e, n = (0, a.ZP)(t), p = (0, s.m$)({
-    channelId: t.id,
-    location: "ChannelName"
+    channelId: t.id
   });
   return (0, r.jsxs)("div", {
     className: d.container,

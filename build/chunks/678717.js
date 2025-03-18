@@ -25,8 +25,8 @@ var g = n(392750),
   y = n(806240),
   C = n(789654),
   T = n(719672),
-  S = n(691867),
-  O = n(916790),
+  O = n(691867),
+  S = n(916790),
   N = n(645973),
   k = n(903502),
   E = n(912072),
@@ -90,7 +90,7 @@ function ee() {
       }, {
         id: "dispatcher",
         name: "Dispatcher",
-        render: () => (0, r.jsx)(O.Z, {})
+        render: () => (0, r.jsx)(S.Z, {})
       }];
       return x.Z.isDeveloper && (e.push({
         id: "shop",
@@ -135,7 +135,7 @@ function ee() {
       }), e.push({
         id: "design_toggles",
         name: "Design Toggles",
-        render: () => (0, r.jsx)(S.Z, {})
+        render: () => (0, r.jsx)(O.Z, {})
       }), e.push({
         id: "overlays",
         name: "Dev Overlays",

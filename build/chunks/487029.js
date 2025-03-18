@@ -30,8 +30,8 @@ function x(e) {
     height: C,
     keepOpen: E,
     interactive: j = !0,
-    analyticsSource: P,
-    onClose: I
+    analyticsSource: I,
+    onClose: P
   } = e, S = function(e) {
     let [t, n] = (0, i.Wu)([p.Z], () => [p.Z.getSounds(), p.Z.getFavorites()]);
     return l.useMemo(() => {
@@ -49,20 +49,20 @@ function x(e) {
   }((0, v.h)(n, !0)), w = (0, y.j)(), T = l.useRef(null), [Z, _] = l.useState(void 0), R = (0, i.e7)([d.Z], () => d.Z.getMediaSessionId()), {
     analyticsLocations: A
   } = (0, s.ZP)(a.Z.SOUNDBOARD_WHEEL), D = l.useCallback(e => {
-    (0, g.GN)(e, n.id, A), I()
-  }, [A, n.id, I]);
+    (0, g.GN)(e, n.id, A), P()
+  }, [A, n.id, P]);
   l.useEffect(() => {
     f.w(), u.DZ.loadIfNecessary()
   }, []), l.useEffect(() => {
-    0 === S.length && 0 === w.length && I()
-  }, [S.length, w, I]), l.useEffect(() => () => {
+    0 === S.length && 0 === w.length && P()
+  }, [S.length, w, P]), l.useEffect(() => () => {
     let e = T.current;
     E || null == e || D(e)
   }, [E, D]), (0, c.Z)({
     type: o.ImpressionTypes.POPOUT,
     name: o.ImpressionNames.SOUNDBOARD_POPOUT,
     properties: {
-      source: P,
+      source: I,
       guild_id: t,
       media_session_id: R
     }
@@ -103,7 +103,7 @@ function x(e) {
       activeItem: Z,
       onItemSelect: k,
       onItemAction: M,
-      onClose: I,
+      onClose: P,
       interactive: j,
       children: B
     })

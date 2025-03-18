@@ -1,10 +1,10 @@
-/** Chunk was on 41869 **/
-n.d(t, {
+/** Chunk was on 81281 **/
+n.d(e, {
   PA: () => s,
   Tn: () => d,
   _i: () => m,
-  eI: () => N,
-  vp: () => E,
+  eI: () => E,
+  vp: () => N,
   y8: () => p
 });
 var r = n(367907),
@@ -15,22 +15,22 @@ n(709054), n(523361);
 var u = n(981631),
   o = n(388032);
 
-function c(e) {
-  return e
+function c(t) {
+  return t
 }
 
-function d(e) {
+function d(t) {
   let {
-    username: t,
+    username: e,
     usernameOnClickHandler: n,
     roleSubscriptionOnClickHandler: r,
     guildId: i,
     roleSubscriptionData: a
-  } = e, {
+  } = t, {
     content: l,
     formatParams: u
   } = _({
-    username: t,
+    username: e,
     usernameOnClickHandler: n,
     roleSubscriptionOnClickHandler: r,
     guildId: i,
@@ -39,18 +39,18 @@ function d(e) {
   return o.NW.format(l, u)
 }
 
-function s(e) {
+function s(t) {
   let {
-    username: t,
+    username: e,
     usernameOnClickHandler: n,
     roleSubscriptionOnClickHandler: r,
     guildId: i,
     roleSubscriptionData: a
-  } = e, {
+  } = t, {
     content: l,
     formatParams: u
   } = _({
-    username: t,
+    username: e,
     usernameOnClickHandler: n,
     roleSubscriptionOnClickHandler: r,
     guildId: i,
@@ -59,26 +59,26 @@ function s(e) {
   return o.NW.formatToParts(l, u)
 }
 
-function f(e, t) {
+function f(t, e) {
   var n, r;
-  let i = a.Z.getGuild(e),
-    l = null !== (n = null == t ? void 0 : t.total_months_subscribed) && void 0 !== n ? n : 0;
+  let i = a.Z.getGuild(t),
+    l = null !== (n = null == e ? void 0 : e.total_months_subscribed) && void 0 !== n ? n : 0;
   return {
     guild: i,
     totalMonthsSubscribed: l,
     showWithDuration: l > 0,
-    isRenewal: null !== (r = null == t ? void 0 : t.is_renewal) && void 0 !== r && r
+    isRenewal: null !== (r = null == e ? void 0 : e.is_renewal) && void 0 !== r && r
   }
 }
 
-function _(e) {
+function _(t) {
   let {
-    username: t,
+    username: e,
     usernameOnClickHandler: n = c,
     roleSubscriptionOnClickHandler: r = u.dG4,
     guildId: i,
     roleSubscriptionData: a
-  } = e, {
+  } = t, {
     guild: l,
     totalMonthsSubscribed: d,
     showWithDuration: s,
@@ -87,7 +87,7 @@ function _(e) {
   return {
     content: s ? _ ? o.t.Iy66Mz : o.t.eCgb2d : _ ? o.t.mPTTdn : o.t.mYjFFx,
     formatParams: {
-      username: t,
+      username: e,
       usernameHook: n,
       guildName: null == l ? void 0 : l.name,
       handleGuildNameClick: r,
@@ -97,21 +97,21 @@ function _(e) {
   }
 }
 
-function E(e) {
-  let t, {
+function N(t) {
+  let e, {
       username: n,
       usernameOnClickHandler: r = c,
       roleSubscriptionOnClickHandler: i = u.dG4,
       guildId: a,
       roleSubscriptionData: l
-    } = e,
+    } = t,
     {
       guild: d,
       totalMonthsSubscribed: s,
       showWithDuration: _,
-      isRenewal: E
+      isRenewal: N
     } = f(a, l);
-  return t = _ ? E ? o.t.OQ0OU1 : o.t["+N9bxs"] : E ? o.t.OxP1ND : o.t["6Z1E+/"], o.NW.formatToParts(t, {
+  return e = _ ? N ? o.t.OQ0OU1 : o.t["+N9bxs"] : N ? o.t.OxP1ND : o.t["6Z1E+/"], o.NW.formatToParts(e, {
     guildName: null == d ? void 0 : d.name,
     tierName: null == l ? void 0 : l.tier_name,
     username: n,
@@ -121,28 +121,28 @@ function E(e) {
   })
 }
 
-function N(e) {
-  return (0, i.l)(e)
+function E(t) {
+  return (0, i.l)(t)
 }
 
-function p(e, t, n, i) {
+function p(t, e, n, i) {
   var a;
   r.ZP.trackWithMetadata(u.rMx.ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE_CLICKED, {
-    guild_id: e,
+    guild_id: t,
     user_id: null === (a = l.default.getCurrentUser()) || void 0 === a ? void 0 : a.id,
-    channel_id: t,
+    channel_id: e,
     message_id: n,
     role_subscription_listing_id: i
   })
 }
 
-function m(e, t) {
+function m(t, e) {
   var n;
   return {
-    guild_id: e.guild_id,
+    guild_id: t.guild_id,
     sender: null === (n = l.default.getCurrentUser()) || void 0 === n ? void 0 : n.id,
-    target_user: t.author.id,
-    channel_id: e.id,
-    message_id: t.id
+    target_user: e.author.id,
+    channel_id: t.id,
+    message_id: e.id
   }
 }

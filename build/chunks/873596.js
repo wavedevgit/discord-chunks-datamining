@@ -95,8 +95,7 @@ function C(e) {
     lobbyId: l,
     closePopout: o
   } = e, i = (0, f.J)({
-    channelId: t,
-    location: "RTCConnectionDebugPanelContainer"
+    channelId: t
   }) ? v.NW.string(v.t["3BogKS"]) : v.NW.string(v.t.ETIVvr);
   return n ? (0, r.jsx)(m, {
     lobbyId: l,
@@ -163,8 +162,7 @@ function E(e) {
 
 function j(e) {
   return (0, f.J)({
-    channelId: e.channelId,
-    location: "RTCConnectionPopout"
+    channelId: e.channelId
   }) ? (0, r.jsx)(E, b({}, e)) : (0, r.jsx)("div", {
     className: O.debugPanelStandalone,
     children: (0, r.jsx)("section", {

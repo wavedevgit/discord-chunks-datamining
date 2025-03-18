@@ -27,7 +27,7 @@ var r = n(200651),
 function T(e) {
   return parseFloat(e.toFixed(3))
 }
-let S = [{
+let O = [{
   key: "store",
   cellClassName: y.actionColumn,
   render(e) {
@@ -47,7 +47,7 @@ let S = [{
   }
 }];
 
-function O(e) {
+function S(e) {
   let {
     actionLog: t
   } = e, n = a.useMemo(() => t.traces.map(e => ({
@@ -56,7 +56,7 @@ function O(e) {
   })), [t]);
   return (0, r.jsx)(d.zJl, {
     children: (0, r.jsx)(v.Z, {
-      columns: S,
+      columns: O,
       data: n
     })
   })
@@ -98,7 +98,7 @@ let N = [{
     let {
       actionLog: t
     } = e;
-    return (0, r.jsx)(O, {
+    return (0, r.jsx)(S, {
       actionLog: t
     })
   }
@@ -224,8 +224,8 @@ function P() {
   let T = a.useCallback(e => {
       m(s), f(e)
     }, [s]),
-    S = t.trim().length > 0,
-    O = a.useMemo(() => S ? h : b ? c : s, [s, h, S, b, c]);
+    O = t.trim().length > 0,
+    S = a.useMemo(() => O ? h : b ? c : s, [s, h, O, b, c]);
   return (0, r.jsxs)("div", {
     ref: e,
     className: i()(C.panel, y.panel),
@@ -247,7 +247,7 @@ function P() {
       })]
     }), (0, r.jsx)(v.Z, {
       columns: E,
-      data: O,
+      data: S,
       selectedRowKey: null == _ ? void 0 : _.id.toString(),
       onClickRow: e => g(e.actionLog)
     }), null != _ && (0, r.jsx)(k, {

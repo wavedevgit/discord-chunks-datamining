@@ -75,13 +75,13 @@ let v = async () => {
   }
 };
 
-function S(e) {
+function O(e) {
   var t, n, l, s;
   let {
     offer: u,
     offerOptions: m,
     forceRefetch: p
-  } = e, [_, v] = a.useState(!1), [j, C] = a.useState(!1), [T, S] = a.useState(!1), [O, N] = a.useState(!1);
+  } = e, [_, v] = a.useState(!1), [j, C] = a.useState(!1), [T, O] = a.useState(!1), [S, N] = a.useState(!1);
   a.useEffect(() => {
     T && N(!0);
     let e = setTimeout(() => {
@@ -109,14 +109,14 @@ function S(e) {
     D = null != E && new Date(E).getTime() < Date.now(),
     A = (null == I ? void 0 : I.sku_id) === f.Si.TIER_0,
     B = async () => {
-      S(!0), L ? await z({
+      O(!0), L ? await z({
         expiresAt: null
-      }) : await (0, d.a)(u), p(), S(!1)
+      }) : await (0, d.a)(u), p(), O(!1)
     }, z = async e => {
       let {
         expiresAt: t
       } = e;
-      S(!0);
+      O(!0);
       try {
         await o.tn.patch({
           url: b.ANM.UPDATE_USER_OFFER(k, "trial"),
@@ -126,7 +126,7 @@ function S(e) {
           rejectWithError: !0
         })
       } finally {
-        p(), S(!1)
+        p(), O(!1)
       }
     };
   a.useEffect(() => {
@@ -158,7 +158,7 @@ function S(e) {
         children: R
       }), (0, r.jsx)(c.P3F, {
         onClick: async () => {
-          S(!0), await y(k, "trial"), p(), S(!1)
+          O(!0), await y(k, "trial"), p(), O(!1)
         },
         children: (0, r.jsx)(c.XHJ, {
           size: "md",
@@ -249,14 +249,14 @@ function S(e) {
       })]
     }), (0, r.jsx)("div", {
       className: i()(g.loadingContainer, {
-        [g.isLoading]: T || O
+        [g.isLoading]: T || S
       }),
       children: (0, r.jsx)(c.$jN, {})
     })]
   })
 }
 
-function O(e) {
+function S(e) {
   var t, n;
   let {
     offer: l,
@@ -274,8 +274,8 @@ function O(e) {
   }, [_]);
   let {
     id: T,
-    expires_at: S,
-    applied_at: O,
+    expires_at: O,
+    applied_at: S,
     discount_id: N,
     discount: k
   } = l, E = null !== (n = null === (t = s.find(e => {
@@ -283,7 +283,7 @@ function O(e) {
       value: t
     } = e;
     return t === N
-  })) || void 0 === t ? void 0 : t.label) && void 0 !== n ? n : "Unknown", w = null != S, P = null != S && new Date(S).getTime() < Date.now(), I = async () => {
+  })) || void 0 === t ? void 0 : t.label) && void 0 !== n ? n : "Unknown", w = null != O, P = null != O && new Date(O).getTime() < Date.now(), I = async () => {
     v(!0), w ? await Z({
       expiresAt: null
     }) : await (0, d.a)(void 0, l), u(), v(!1)
@@ -391,7 +391,7 @@ function O(e) {
         children: "Expires:"
       }), (0, r.jsx)("input", {
         type: "date",
-        value: null != S ? S.substring(0, 10) : "",
+        value: null != O ? O.substring(0, 10) : "",
         onChange: e => Z({
           expiresAt: e.target.value
         })
@@ -409,7 +409,7 @@ function O(e) {
           color: "Acknowledged" === R ? void 0 : "always-white",
           children: R
         })
-      }), null != O && (0, r.jsx)("div", {
+      }), null != S && (0, r.jsx)("div", {
         className: i()(g.badge, g.__invalid_badgeBottom, g.redeemed),
         children: (0, r.jsx)(c.Text, {
           variant: "eyebrow",
@@ -522,7 +522,7 @@ function N() {
         children: [(0, r.jsx)(c.X6q, {
           variant: "heading-md/semibold",
           children: "Existing Trial Offers"
-        }), b.map(t => (0, r.jsx)(S, {
+        }), b.map(t => (0, r.jsx)(O, {
           offer: t,
           offerOptions: e,
           forceRefetch: () => E(!0)
@@ -532,7 +532,7 @@ function N() {
         children: [(0, r.jsx)(c.X6q, {
           variant: "heading-md/semibold",
           children: "Existing Discount Offers"
-        }), y.map(e => (0, r.jsx)(O, {
+        }), y.map(e => (0, r.jsx)(S, {
           offer: e,
           offerOptions: n,
           forceRefetch: () => E(!0)

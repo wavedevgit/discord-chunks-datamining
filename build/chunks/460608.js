@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 t.d(n, {
   Z: () => x
-});
+}), t(978209);
 var r = t(200651),
   i = t(192379),
   o = t(793030),
@@ -15,7 +15,10 @@ var r = t(200651),
 function x(e) {
   let {
     guildId: n
-  } = e, t = (0, s.e7)([l.Z], () => l.Z.getAppliedGuildBoostsForGuild(n), [n]);
+  } = e, t = (0, s.e7)([l.Z], () => {
+    var e;
+    return null === (e = l.Z.getAppliedGuildBoostsForGuild(n)) || void 0 === e ? void 0 : e.reverse()
+  }, [n]);
   return (i.useEffect(() => {
     (0, a.C0)(n)
   }, [n]), null == t) ? null : (0, r.jsxs)("div", {

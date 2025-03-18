@@ -61,7 +61,7 @@ function g(e) {
   let {
     subscription: g,
     onUpdated: v
-  } = e, [j, y] = a.useState(!1), [C, T] = a.useState(!1), [S, O] = a.useState(null), N = e => (null == e && (e = g.status), e in f) ? f[e] : "Unknown status ".concat(e), k = e => {
+  } = e, [j, y] = a.useState(!1), [C, T] = a.useState(!1), [O, S] = a.useState(null), N = e => (null == e && (e = g.status), e in f) ? f[e] : "Unknown status ".concat(e), k = e => {
     let t = new Date(e);
     return u.default.fromTimestamp(t.getTime())
   }, E = async e => {
@@ -111,7 +111,7 @@ function g(e) {
         rejectWithError: !1
       })
     } catch (e) {
-      O(e.body.message)
+      S(e.body.message)
     }
     v()
   }, P = (null === (t = x.GP[g.planIdFromItems]) || void 0 === t ? void 0 : t.premiumType) === x.p9.TIER_0, I = null === (n = g.metadata) || void 0 === n ? void 0 : n.ended_at, Z = null != I ? new Date(I).toISOString().substring(0, 10) : "";
@@ -207,10 +207,10 @@ function g(e) {
             size: s.zxk.Sizes.SMALL,
             onClick: e => w(),
             children: "Renew Subscription"
-          }), null !== S && (0, r.jsx)(s.kzN, {
+          }), null !== O && (0, r.jsx)(s.kzN, {
             className: p.error,
-            onDismiss: () => O(null),
-            children: S
+            onDismiss: () => S(null),
+            children: O
           })]
         }), (0, r.jsx)(s.hjN, {
           title: "Override Premium Streak Start Date",

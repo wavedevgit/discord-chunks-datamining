@@ -1,6 +1,6 @@
 /**
   Module ID: 53494
-  Original File Name: 66a73358789fb203
+  Original File Name: 1787cd77669ecb6e
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -722,15 +722,6 @@
     left: 0;
     bottom: 0;
     right: 0
-}
-
-.status_cdcd10 {
-    cursor: pointer
-}
-
-.status_cdcd10:hover {
-    -webkit-text-decoration: underline;
-    text-decoration: underline
 }
 
 .hoverableStatus_cdcd10 {
@@ -5341,4 +5332,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=66a73358789fb203.css.map*/
+/*# sourceMappingURL=1787cd77669ecb6e.css.map*/

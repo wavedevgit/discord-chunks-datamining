@@ -16,8 +16,8 @@ var n = r(200651),
   g = r(802063),
   _ = r(210975),
   y = r(301107),
-  S = r(65692),
-  m = r(540247),
+  m = r(65692),
+  S = r(540247),
   h = r(785792),
   N = r(190054),
   v = r(245581),
@@ -49,7 +49,7 @@ function C(e) {
   }), A = c.ZP.useName(j, null, O), {
     fingerprint: x,
     userKey: w
-  } = (0, S.q)({
+  } = (0, m.q)({
     userId: r
   }), M = (0, y.W)({
     fingerprintBase64: x,
@@ -62,8 +62,7 @@ function C(e) {
     })
   }, [C, r]), k = (0, _.wV)({
     userId: r,
-    channelId: C,
-    location: "WebSecureFramesUserVerificationModal"
+    channelId: C
   });
   (0, g.i)({
     channelId: C,
@@ -85,7 +84,7 @@ function C(e) {
     isCurrentUserKeyPersistent: P,
     isOtherUserKeyPersistent: D,
     otherUserNickname: A
-  }), [P, D, A]), z = (0, m.P)({
+  }), [P, D, A]), z = (0, S.P)({
     userId: r,
     keyToOmit: w
   });

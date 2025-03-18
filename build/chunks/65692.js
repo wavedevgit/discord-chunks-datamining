@@ -19,7 +19,7 @@ function g(e) {
     userId: t
   } = e, r = (0, s.e7)([o.default], () => o.default.getId());
   u()(r !== t, "[useSecureFramesPairwiseFingerprint] Should not pass current user id.");
-  let [i, g] = n.useState(null), [_, y] = n.useState(!1), S = (0, s.e7)([d.Z], () => d.Z.getSecureFramesRosterMapEntry(t)), m = (0, s.e7)([d.Z], () => d.Z.getSecureFramesRosterMapEntry(r)), h = n.useCallback(e => {
+  let [i, g] = n.useState(null), [_, y] = n.useState(!1), m = (0, s.e7)([d.Z], () => d.Z.getSecureFramesRosterMapEntry(t)), S = (0, s.e7)([d.Z], () => d.Z.getSecureFramesRosterMapEntry(r)), h = n.useCallback(e => {
     g(l.fromByteArray(e)), y(!1)
   }, []), N = n.useCallback(async (e, t, r, n) => {
     if (c.Z.supports(E.AN.MLS_PAIRWISE_FINGERPRINTS)) {
@@ -30,14 +30,14 @@ function g(e) {
     } else h(await (0, a.Il)(f.Xj, new Uint8Array(t), e, new Uint8Array(n), r))
   }, [h]), v = n.useRef(null);
   return n.useEffect(() => {
-    null != S && null != m && null == v.current && (y(!0), v.current = setTimeout(() => N(r, m, t, S), 0));
+    null != m && null != S && null == v.current && (y(!0), v.current = setTimeout(() => N(r, S, t, m), 0));
     let e = v.current;
     return () => {
       null != e && clearTimeout(e)
     }
-  }, [r, m, N, t, S]), n.useMemo(() => ({
+  }, [r, S, N, t, m]), n.useMemo(() => ({
     fingerprint: i,
-    userKey: S,
+    userKey: m,
     loading: _
-  }), [i, _, S])
+  }), [i, _, m])
 }

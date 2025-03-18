@@ -80,8 +80,7 @@ let W = (0, s.Z)((0, a.Z)(function(e) {
   }), ed = (0, q.Z)(l.id), ea = (0, T.Z)(l.id), es = (0, f.B)({
     userId: l.id,
     channelId: J,
-    guildId: a.getGuildId(),
-    location: "GuildChannelUserContextMenu"
+    guildId: a.getGuildId()
   }), eo = (0, N.Z)({
     guildId: n,
     userId: l.id,

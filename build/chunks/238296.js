@@ -1,7 +1,7 @@
 /** Chunk was on 80125 **/
 n.d(t, {
   E: () => x,
-  Y: () => h,
+  Y: () => S,
   default: () => E
 });
 var r = n(200651);
@@ -24,9 +24,9 @@ var i = n(481060),
   v = n(37258),
   m = n(700994),
   Z = n(981631),
-  S = n(388032);
+  h = n(388032);
 
-function h(e) {
+function S(e) {
   let {
     isOwnSettings: t,
     userId: n,
@@ -41,7 +41,7 @@ function h(e) {
     icon: (0, r.jsx)(i.tBG, {
       size: "sm"
     }),
-    label: S.NW.string(S.t.iXAna2)
+    label: h.NW.string(h.t.iXAna2)
   }), d = (0, j.Z)(n, c, i.kBi), b = (0, m.Z)(n), g = (0, y.Z)(n), O = (0, u.Z)(n), p = (0, s.Z)(n), Z = (0, f.Z)();
   return [(0, r.jsxs)(i.kSQ, {
     children: [a, d]
@@ -55,12 +55,11 @@ function x(e, t, n) {
       userId: e.id,
       channelId: t,
       guildId: n,
-      location: "GuildVoiceUserContextMenu",
       simplified: !0
     }),
     l = (0, b.Z)({
       id: e.id,
-      label: S.NW.string(S.t["/AXYnJ"])
+      label: h.NW.string(h.t["/AXYnJ"])
     }),
     c = (0, p.Z)({
       user: e,
@@ -88,19 +87,19 @@ let E = (0, c.Z)((0, l.Z)(function(e) {
     onSelect: l,
     onInteraction: c,
     context: a
-  } = e, u = n.id, s = t.isNonUserBot(), d = t.id === g.default.getId(), f = h({
+  } = e, u = n.id, s = t.isNonUserBot(), d = t.id === g.default.getId(), f = S({
     isOwnSettings: d,
     userId: t.id,
     channelId: u,
     context: a
   }), O = x(t, u), p = (0, b.Z)({
     id: t.id,
-    label: S.NW.string(S.t["/AXYnJ"])
+    label: h.NW.string(h.t["/AXYnJ"])
   });
   return (0, r.jsx)(i.v2r, {
     navId: "user-context",
     onClose: o.Zy,
-    "aria-label": S.NW.string(S.t.liqwPD),
+    "aria-label": h.NW.string(h.t.liqwPD),
     onSelect: l,
     onInteraction: c,
     variant: "fixed",
@@ -108,7 +107,7 @@ let E = (0, c.Z)((0, l.Z)(function(e) {
       children: [f, !d && (0, r.jsx)(i.kSQ, {
         children: (0, r.jsx)(i.sNh, {
           id: "more-options",
-          label: S.NW.string(S.t.PdRCRk),
+          label: h.NW.string(h.t.PdRCRk),
           children: O
         })
       }), d && (0, r.jsx)(i.kSQ, {

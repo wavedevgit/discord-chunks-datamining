@@ -42,7 +42,7 @@ let g = e => {
     {
       commands: T,
       sectionDescriptors: P,
-      loading: S
+      loading: _
     } = d.wi({
       context: R,
       filters: {
@@ -54,7 +54,7 @@ let g = e => {
       allowFetch: !0
     }),
     {
-      sections: _
+      sections: S
     } = i.useMemo(() => {
       let e = {};
       return P.forEach(t => {
@@ -63,13 +63,13 @@ let g = e => {
         sections: e
       }
     }, [P]),
-    j = i.useRef(S);
+    j = i.useRef(_);
   i.useEffect(() => {
-    S !== j.current && (j.current = S, null == b || b())
-  }, [S, b]);
+    _ !== j.current && (j.current = _, null == b || b())
+  }, [_, b]);
   let U = i.useCallback(e => {
     a()(null != g, "menu item should not show if channel is null");
-    let t = _[e.applicationId],
+    let t = S[e.applicationId],
       n = null != t ? (0, c.ky)(t) : void 0;
     return (0, r.jsx)(u.sNh, {
       id: e.id,
@@ -93,8 +93,8 @@ let g = e => {
         })
       }
     }, e.id)
-  }, [g, Z, l, _]);
-  if (S ? t = (0, r.jsx)(u.sNh, {
+  }, [g, Z, l, S]);
+  if (_ ? t = (0, r.jsx)(u.sNh, {
       id: "menu-commands-placeholder",
       render: () => (0, r.jsx)(p.Z, {}),
       disabled: !0

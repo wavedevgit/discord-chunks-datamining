@@ -222,8 +222,7 @@ function G(e) {
     })
   }
   let V = (0, O.m$)({
-    channelId: t.id,
-    location: "ChannelCallHeader"
+    channelId: t.id
   });
   return (0, r.jsxs)("div", {
     className: L.subtitleContainer,

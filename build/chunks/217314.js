@@ -24,8 +24,7 @@ function f(e) {
     b = (0, i.e7)([s.Z], () => s.Z.getNickname(t)),
     _ = u.ZP.useUserTag(f),
     C = (0, o.m$)({
-      channelId: e.channel.id,
-      location: "HeaderBarDirectMessageV2"
+      channelId: e.channel.id
     });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.nn4, {

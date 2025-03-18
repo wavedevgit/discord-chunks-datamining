@@ -24,8 +24,8 @@ var r, l = n(392711),
   C = n(789407),
   E = n(630186),
   j = n(250889),
-  P = n(199902),
-  I = n(592125),
+  I = n(199902),
+  P = n(592125),
   S = n(480294),
   w = n(831506),
   T = n(731290),
@@ -141,8 +141,8 @@ function eo(e, t, n) {
     k = !1,
     B = [];
   for (let e of t) {
-    let n = P.Z.getAnyStreamForUser(e.id),
-      r = I.Z.getChannel(null == n ? void 0 : n.channelId);
+    let n = I.Z.getAnyStreamForUser(e.id),
+      r = P.Z.getChannel(null == n ? void 0 : n.channelId);
     if ((null == r ? void 0 : r.isNSFW()) && (!g || !T.Z.didAgree(null == r ? void 0 : r.getGuildId()))) continue;
     let h = q(e.id);
     if (null != n && B.push({
@@ -170,7 +170,7 @@ function eo(e, t, n) {
           channelId: null === (i = W.Z.getVoiceStateForUser(e.id)) || void 0 === i ? void 0 : i.channelId,
           currentUser: p,
           isActivitiesEnabledForCurrentPlatform: t,
-          ChannelStore: I.Z,
+          ChannelStore: P.Z,
           VoiceStateStore: W.Z,
           PermissionStore: _.Z,
           GuildStore: Z.Z
@@ -201,7 +201,7 @@ function eo(e, t, n) {
     G = new Set;
   for (let e of t) {
     let n = er(e.id),
-      r = I.Z.getChannel(n),
+      r = P.Z.getChannel(n),
       l = null != r ? r.getGuildId() : null,
       i = Z.Z.getGuild(l);
     if (G.has(l) && V.has(n) || null == r || null == i || r.id === i.afkChannelId) null == r && (f = null, U = !0);
@@ -341,7 +341,7 @@ function ed() {
 }
 class eh extends(r = a.ZP.Store) {
   initialize() {
-    this.syncWith([D.default, y.Z, R.Z, w.Z, W.Z, P.Z, A.Z, S.Z, x.Z], ed), this.waitFor(b.Z, Z.Z, y.Z, D.default, x.Z)
+    this.syncWith([D.default, y.Z, R.Z, w.Z, W.Z, I.Z, A.Z, S.Z, x.Z], ed), this.waitFor(b.Z, Z.Z, y.Z, D.default, x.Z)
   }
   get currentActivityParties() {
     return H

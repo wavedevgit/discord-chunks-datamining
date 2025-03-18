@@ -24,8 +24,8 @@ var r = n(200651),
   y = n(572004),
   C = n(70956),
   T = n(145597),
-  S = n(246992),
-  O = n(981631),
+  O = n(246992),
+  S = n(981631),
   N = n(757744),
   k = n(388032),
   E = n(637460),
@@ -63,8 +63,8 @@ function I(e, t) {
   }), e
 }
 let Z = {
-    [O.Odu.CLICK_ZONE_DEBUG]: e => I(P({
-      type: O.Odu.CLICK_ZONE_DEBUG,
+    [S.Odu.CLICK_ZONE_DEBUG]: e => I(P({
+      type: S.Odu.CLICK_ZONE_DEBUG,
       id: (0, o.Z)(),
       layoutId: e,
       anchor: {
@@ -75,11 +75,11 @@ let Z = {
         width: 100,
         height: 100
       }
-    }, g.Z.getWidgetDefaultSettings(O.Odu.CLICK_ZONE_DEBUG)), {
+    }, g.Z.getWidgetDefaultSettings(S.Odu.CLICK_ZONE_DEBUG)), {
       pinned: !0
     }),
-    [O.Odu.PERFORMANCE_DEBUG]: e => I(P({
-      type: O.Odu.PERFORMANCE_DEBUG,
+    [S.Odu.PERFORMANCE_DEBUG]: e => I(P({
+      type: S.Odu.PERFORMANCE_DEBUG,
       id: (0, o.Z)(),
       layoutId: e,
       anchor: {
@@ -91,7 +91,7 @@ let Z = {
         width: "auto",
         height: "auto"
       }
-    }, g.Z.getWidgetDefaultSettings(O.Odu.PERFORMANCE_DEBUG)), {
+    }, g.Z.getWidgetDefaultSettings(S.Odu.PERFORMANCE_DEBUG)), {
       pinned: !0
     })
   },
@@ -274,7 +274,7 @@ function B(e) {
 
 function z() {
   var e, t;
-  let [n, l] = B(O.Odu.CLICK_ZONE_DEBUG), [o, d] = B(O.Odu.PERFORMANCE_DEBUG), g = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(x.G.ClickZones)), v = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(x.G.WidgetAreas)), y = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(x.G.DisabledGPUBoost)), N = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(x.G.ForceGPUBoost)), k = (0, s.e7)([p.default], () => p.default.getForcedRenderMode()), [Z, R] = a.useState({}), [L, z] = a.useState(k), M = e => {
+  let [n, l] = B(S.Odu.CLICK_ZONE_DEBUG), [o, d] = B(S.Odu.PERFORMANCE_DEBUG), g = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(x.G.ClickZones)), v = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(x.G.WidgetAreas)), y = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(x.G.DisabledGPUBoost)), N = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(x.G.ForceGPUBoost)), k = (0, s.e7)([p.default], () => p.default.getForcedRenderMode()), [Z, R] = a.useState({}), [L, z] = a.useState(k), M = e => {
     z(e), u.Z.forceRenderMode(e)
   }, G = [{
     label: m.R5.UNSET,
@@ -468,7 +468,7 @@ function z() {
             isSelected: e => e === L,
             options: G,
             select: M,
-            popoutLayerContext: S.O$
+            popoutLayerContext: O.O$
           })
         }))
       }), ei.length > 0 && (0, r.jsx)(c.ua7, {
