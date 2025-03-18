@@ -1,6 +1,6 @@
 /**
   Module ID: 53494
-  Original File Name: 4b2fe96218974128
+  Original File Name: e2a5a61860eb6cd0
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -4686,6 +4686,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     color: hsla(0,0%,100%,.9)
 }
 
+.theme-light .closeIconPlated__972a0 {
+    color: rgba(0,0,0,.9)
+}
+
 .closeButtonBackgroundPlated__972a0 {
     border-radius: 50%;
     background-color: var(--custom-nameplate-neutral-hovered);
@@ -4697,6 +4701,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     display: flex;
     align-items: center;
     justify-content: center
+}
+
+.closeButtonBackgroundPlated__972a0:focus,.closeButtonBackgroundPlated__972a0:hover {
+    opacity: 1
 }
 
 .favoriteIcon__972a0 {
@@ -5312,4 +5320,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=4b2fe96218974128.css.map*/
+/*# sourceMappingURL=e2a5a61860eb6cd0.css.map*/

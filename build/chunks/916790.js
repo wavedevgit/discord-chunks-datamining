@@ -192,7 +192,8 @@ let E = [{
         actionLog: t
       } = e;
       return t.name
-    }
+    },
+    throttleMs: 100
   };
 
 function P() {

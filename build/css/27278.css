@@ -1,6 +1,6 @@
 /**
   Module ID: 27278
-  Original File Name: bd56bb59def65eac
+  Original File Name: 30a358ca2f8f6784
 **/
 .buttonContainer__7e329 {
     display: flex;
@@ -990,17 +990,12 @@
     padding: 6px 6px 6px 0;
     margin-bottom: 2px;
     cursor: pointer;
-    border: 2px solid transparent;
     background-color: transparent;
     transition: border-color .1s ease-in-out
 }
 
 .channelItemContainer__711d3.channelItemHighlighted__711d3,.channelItemContainer__711d3:hover {
     background-color: var(--bg-mod-strong)
-}
-
-.channelItemContainer__711d3.channelItemConnected__711d3 {
-    border: 2px solid var(--status-positive)
 }
 
 .searchBarContainer__711d3 {
@@ -1580,4 +1575,4 @@
     height: 100%
 }
 
-/*# sourceMappingURL=bd56bb59def65eac.css.map*/
+/*# sourceMappingURL=30a358ca2f8f6784.css.map*/

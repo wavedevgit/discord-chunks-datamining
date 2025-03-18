@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 26c0f1c7f2ce337b
+  Original File Name: e9c9af5da81d365c
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -1960,6 +1960,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     color: hsla(0,0%,100%,.9)
 }
 
+.theme-light .closeIconPlated__972a0 {
+    color: rgba(0,0,0,.9)
+}
+
 .closeButtonBackgroundPlated__972a0 {
     border-radius: 50%;
     background-color: var(--custom-nameplate-neutral-hovered);
@@ -1971,6 +1975,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     display: flex;
     align-items: center;
     justify-content: center
+}
+
+.closeButtonBackgroundPlated__972a0:focus,.closeButtonBackgroundPlated__972a0:hover {
+    opacity: 1
 }
 
 .favoriteIcon__972a0 {
@@ -3681,11 +3689,15 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .visual-refresh .darkCardBackground_c3d04b,.visual-refresh .lightCardBackground_c3d04b {
     border-top: 1px solid var(--border-faint);
-    background-color: var(--background-mod-subtle)
+    background-color: var(--background-surface-higher)
 }
 
 .visual-refresh .shopCardDarkHighlighted_c3d04b,.visual-refresh .shopCardHighlighted_c3d04b {
     box-shadow: var(--shadow-high)
+}
+
+.visual-refresh .productName_c3d04b {
+    color: var(--header-primary)
 }
 
 .left_caab99 {
@@ -5626,8 +5638,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 .role__5c799 {
     display: flex;
     align-items: center;
-    font-size: 12px;
-    font-weight: 500;
     border: 1px solid;
     border-radius: 11px;
     box-sizing: border-box;
@@ -5695,4 +5705,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100px
 }
 
-/*# sourceMappingURL=26c0f1c7f2ce337b.css.map*/
+/*# sourceMappingURL=e9c9af5da81d365c.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 53469
-  Original File Name: 0a2ea1352d328ad5
+  Original File Name: f03a797db9022887
 **/
 .ragingDemon_ac6454 {
     position: relative;
@@ -2822,11 +2822,15 @@ img.thumbnail__0f2e8 {
 
 .visual-refresh .darkCardBackground_c3d04b,.visual-refresh .lightCardBackground_c3d04b {
     border-top: 1px solid var(--border-faint);
-    background-color: var(--background-mod-subtle)
+    background-color: var(--background-surface-higher)
 }
 
 .visual-refresh .shopCardDarkHighlighted_c3d04b,.visual-refresh .shopCardHighlighted_c3d04b {
     box-shadow: var(--shadow-high)
+}
+
+.visual-refresh .productName_c3d04b {
+    color: var(--header-primary)
 }
 
 .messageBlock__2d815 {
@@ -3287,4 +3291,4 @@ img.thumbnail__0f2e8 {
     background-image: url(/assets/05207174d5432737.svg)
 }
 
-/*# sourceMappingURL=0a2ea1352d328ad5.css.map*/
+/*# sourceMappingURL=f03a797db9022887.css.map*/

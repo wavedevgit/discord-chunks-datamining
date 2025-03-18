@@ -1,6 +1,6 @@
 /**
   Module ID: 42225
-  Original File Name: 84fd931a65970b18
+  Original File Name: 69dad1b1bee04266
 **/
 @value minColumnWidth: 460px;
 
@@ -836,6 +836,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     color: hsla(0,0%,100%,.9)
 }
 
+.theme-light .closeIconPlated__972a0 {
+    color: rgba(0,0,0,.9)
+}
+
 .closeButtonBackgroundPlated__972a0 {
     border-radius: 50%;
     background-color: var(--custom-nameplate-neutral-hovered);
@@ -847,6 +851,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     display: flex;
     align-items: center;
     justify-content: center
+}
+
+.closeButtonBackgroundPlated__972a0:focus,.closeButtonBackgroundPlated__972a0:hover {
+    opacity: 1
 }
 
 .favoriteIcon__972a0 {
@@ -2557,11 +2565,15 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .visual-refresh .darkCardBackground_c3d04b,.visual-refresh .lightCardBackground_c3d04b {
     border-top: 1px solid var(--border-faint);
-    background-color: var(--background-mod-subtle)
+    background-color: var(--background-surface-higher)
 }
 
 .visual-refresh .shopCardDarkHighlighted_c3d04b,.visual-refresh .shopCardHighlighted_c3d04b {
     box-shadow: var(--shadow-high)
+}
+
+.visual-refresh .productName_c3d04b {
+    color: var(--header-primary)
 }
 
 .left_caab99 {
@@ -3899,4 +3911,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=84fd931a65970b18.css.map*/
+/*# sourceMappingURL=69dad1b1bee04266.css.map*/

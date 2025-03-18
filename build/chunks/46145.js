@@ -42,6 +42,6 @@ let g = new f(l.Z, {
     let {
       channelId: r
     } = e;
-    return !(null == r || !(null !== (n = null === (t = u.Z.getChannel(r)) || void 0 === t ? void 0 : t.isVocal()) && void 0 !== n && n) || d.has(r)) && (s.unshift(r), d.add(r), s.length > 10 && (s.length = 10, d = new Set([...s])), !0)
+    return null != r && null !== (n = null === (t = u.Z.getChannel(r)) || void 0 === t ? void 0 : t.isVocal()) && void 0 !== n && !!n && (d.has(r) ? ((s = s.filter(e => e !== r)).unshift(r), d = new Set([...s])) : (s.unshift(r), d.add(r)), s.length > 10 && (s.length = 10, d = new Set([...s])), !0)
   }
 })

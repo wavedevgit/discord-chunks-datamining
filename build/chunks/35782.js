@@ -1662,19 +1662,19 @@ let {
     INTERACTIVE_HOVER: {
       "visual-refresh": {
         [r.DARK]: {
-          raw: "NEUTRAL_15",
+          raw: "NEUTRAL_1",
           opacity: 1
         },
         [r.LIGHT]: {
-          raw: "NEUTRAL_44",
+          raw: "NEUTRAL_71",
           opacity: 1
         },
         [r.MIDNIGHT]: {
-          raw: "NEUTRAL_27",
+          raw: "NEUTRAL_7",
           opacity: 1
         },
         [r.DARKER]: {
-          raw: "NEUTRAL_22",
+          raw: "NEUTRAL_2",
           opacity: 1
         }
       }
@@ -1956,6 +1956,26 @@ let {
         [r.DARKER]: {
           raw: "OPACITY_44",
           opacity: .4392156862745098
+        }
+      }
+    },
+    SPOILER_HIDDEN_BACKGROUND: {
+      "visual-refresh": {
+        [r.DARK]: {
+          raw: "NEUTRAL_37",
+          opacity: 1
+        },
+        [r.LIGHT]: {
+          raw: "NEUTRAL_30",
+          opacity: 1
+        },
+        [r.MIDNIGHT]: {
+          raw: "NEUTRAL_45",
+          opacity: 1
+        },
+        [r.DARKER]: {
+          raw: "NEUTRAL_42",
+          opacity: 1
         }
       }
     },

@@ -232,7 +232,8 @@ let w = [{
         properties: n
       } = e;
       return null != n.location ? [t, n.location] : t
-    }
+    },
+    throttleMs: 100
   };
 
 function Z() {

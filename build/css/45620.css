@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 69324d5b1984f9f1
+  Original File Name: f4e321db8b5c0f77
 **/
 .countDownWrapper_a1b7b8 {
     display: flex;
@@ -508,7 +508,7 @@
 }
 
 .visual-refresh .backgroundSecondary__08415 {
-    background-color: color-mix(in srgb,var(--background-surface-high) 50%,transparent)
+    background-color: var(--background-mod-faint)
 }
 
 .loadingContainer__08415 {
@@ -981,4 +981,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=69324d5b1984f9f1.css.map*/
+/*# sourceMappingURL=f4e321db8b5c0f77.css.map*/

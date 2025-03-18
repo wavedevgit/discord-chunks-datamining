@@ -1,6 +1,6 @@
 /**
   Module ID: 92219
-  Original File Name: f4e9b355d1b1ee5c
+  Original File Name: 9120e62b870b59b5
 **/
 @value minColumnWidth: 460px;
 
@@ -1535,11 +1535,15 @@
 
 .visual-refresh .darkCardBackground_c3d04b,.visual-refresh .lightCardBackground_c3d04b {
     border-top: 1px solid var(--border-faint);
-    background-color: var(--background-mod-subtle)
+    background-color: var(--background-surface-higher)
 }
 
 .visual-refresh .shopCardDarkHighlighted_c3d04b,.visual-refresh .shopCardHighlighted_c3d04b {
     box-shadow: var(--shadow-high)
+}
+
+.visual-refresh .productName_c3d04b {
+    color: var(--header-primary)
 }
 
 .messageBlock__2d815 {
@@ -1724,4 +1728,4 @@
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=f4e9b355d1b1ee5c.css.map*/
+/*# sourceMappingURL=9120e62b870b59b5.css.map*/

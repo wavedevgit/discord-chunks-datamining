@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 7383a9dbaf5ac51a
+  Original File Name: 02d0c3325c9d64ac
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -3504,17 +3504,12 @@
     padding: 6px 6px 6px 0;
     margin-bottom: 2px;
     cursor: pointer;
-    border: 2px solid transparent;
     background-color: transparent;
     transition: border-color .1s ease-in-out
 }
 
 .channelItemContainer__711d3.channelItemHighlighted__711d3,.channelItemContainer__711d3:hover {
     background-color: var(--bg-mod-strong)
-}
-
-.channelItemContainer__711d3.channelItemConnected__711d3 {
-    border: 2px solid var(--status-positive)
 }
 
 .searchBarContainer__711d3 {
@@ -5535,4 +5530,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     pointer-events: auto
 }
 
-/*# sourceMappingURL=7383a9dbaf5ac51a.css.map*/
+/*# sourceMappingURL=02d0c3325c9d64ac.css.map*/

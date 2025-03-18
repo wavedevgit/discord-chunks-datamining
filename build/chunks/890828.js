@@ -49,13 +49,14 @@ let D = e => [e.userId, ... function(e) {
         voiceStates: r
       } = e;
       return [i.name, i.id, i.guild_id, null !== (n = null === (t = x.Z.getGuild(i.guild_id)) || void 0 === t ? void 0 : t.name) && void 0 !== n ? n : "", ...r.flatMap(e => D(e))].filter(Z.lm)
-    }
+    },
+    throttleMs: 100
   },
   A = {
     searchType: O.S.FUZZY,
     sortType: O.E.JARO_WINKLER,
-    jaroWinklerSearchThreshold: .7,
-    searchStringGenerator: D
+    searchStringGenerator: D,
+    throttleMs: 100
   },
   L = r.memo(function(e) {
     let {
@@ -71,11 +72,12 @@ let D = e => [e.userId, ... function(e) {
         }
         return S.Z.isFriend(e.id) && !S.Z.isFriend(t.id) ? -1 : !S.Z.isFriend(e.id) && S.Z.isFriend(t.id) ? 1 : (null !== (l = null === (i = E.Z.getUserAffinity(t.id)) || void 0 === i ? void 0 : i.vcProbability) && void 0 !== l ? l : 0) - (null !== (a = null === (r = E.Z.getUserAffinity(e.id)) || void 0 === r ? void 0 : r.vcProbability) && void 0 !== a ? a : 0)
       }), [t.id, o, n]),
-      d = t.getGuildId();
+      d = t.getGuildId(),
+      p = Math.max(o.length, 2);
     return null == d ? null : (0, i.jsx)(h.Z, {
       users: u,
       guildId: d,
-      maxUsers: Math.max(o.length, 3),
+      maxUsers: Math.min(p, 4),
       size: s.EFr.SIZE_24,
       overflowCountClassName: T.overflowCount,
       overflowCountVariant: "text-xs/semibold",
@@ -126,9 +128,9 @@ let D = e => [e.userId, ... function(e) {
       onMouseOver: p,
       onMouseLeave: h,
       query: f
-    } = e, m = (0, a.e7)([b.Z], () => b.Z.getChannel(n), [n]), g = null == m ? void 0 : m.getGuildId(), O = (0, a.e7)([x.Z], () => x.Z.getGuild(g), [g]), v = (0, u.KS)(m, O), y = r ? "interactive-active" : "text-muted", E = r ? s.TVs.colors.INTERACTIVE_ACTIVE : s.TVs.colors.ICON_MUTED, j = (null == l ? void 0 : l.id) === n;
+    } = e, m = (0, a.e7)([b.Z], () => b.Z.getChannel(n), [n]), g = null == m ? void 0 : m.getGuildId(), O = (0, a.e7)([x.Z], () => x.Z.getGuild(g), [g]), v = (0, u.KS)(m, O), y = (null == l ? void 0 : l.id) === n, E = y ? "text-positive" : r ? "interactive-active" : "text-muted", j = y ? s.TVs.colors.TEXT_POSITIVE : r ? s.TVs.colors.INTERACTIVE_ACTIVE : s.TVs.colors.ICON_MUTED;
     return null == m ? null : (0, i.jsxs)(s.kL8, {
-      className: o()(T.channelItemContainer, r && T.channelItemHighlighted, j && T.channelItemConnected),
+      className: o()(T.channelItemContainer, r && T.channelItemHighlighted),
       "aria-label": m.name,
       onClick: () => d(n),
       onMouseOver: () => p(n),
@@ -143,18 +145,18 @@ let D = e => [e.userId, ... function(e) {
         children: [(0, i.jsxs)("div", {
           className: T.channelItemName,
           children: [null != v ? (0, i.jsx)(v, {
-            color: E,
+            color: j,
             size: "xs",
             className: T.channelIcon
           }) : void 0, (0, i.jsx)(s.Text, {
-            variant: "text-sm/medium",
-            color: y,
+            variant: y ? "text-sm/semibold" : "text-sm/medium",
+            color: E,
             className: T.channelItemNameText,
             children: (0, c.F6)(m, C.default, S.Z)
           })]
         }), (0, i.jsx)(s.Text, {
-          variant: "text-xs/medium",
-          color: y,
+          variant: y ? "text-xs/semibold" : "text-xs/medium",
+          color: E,
           children: null !== (t = null == O ? void 0 : O.name) && void 0 !== t ? t : m.name
         })]
       }), (0, i.jsx)("div", {

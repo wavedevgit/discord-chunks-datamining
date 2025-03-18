@@ -1,6 +1,6 @@
 /** Chunk was on 24491 **/
 n.d(t, {
-  Z: () => S
+  Z: () => v
 });
 var r, i = n(442837),
   l = n(570140),
@@ -48,14 +48,14 @@ let O = !1,
   y = {},
   p = {};
 
-function E(e) {
+function h(e) {
   let t = !1;
   return e.forEach(e => {
     t = !1 !== P(e) || t
   }), t
 }
 
-function h(e) {
+function E(e) {
   let t = p[e];
   if (null == t) return !1;
   let n = t.gameId;
@@ -69,15 +69,15 @@ function P(e) {
   } = e;
   if (null == t) return !1;
   let r = n.filter(e => e.type !== s.IIU.CUSTOM_STATUS);
-  if (0 === r.length) return h(t.id);
+  if (0 === r.length) return E(t.id);
   let i = !1;
   return r.forEach(e => {
     (function(e, t) {
       var n, r;
       let i = (0, u.Z)(e);
-      if (null == i) return h(t.id);
+      if (null == i) return E(t.id);
       let l = p[t.id];
-      null != l && l.gameId !== i && h(t.id);
+      null != l && l.gameId !== i && E(t.id);
       let o = null !== (r = null === (n = e.timestamps) || void 0 === n ? void 0 : n.start) && void 0 !== r ? r : Date.now(),
         c = {
           userId: t.id,
@@ -112,7 +112,7 @@ function I() {
   }
   return O = !o.Z.needsRefresh(), e
 }
-class v extends(r = i.ZP.Store) {
+class S extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(o.Z), this.syncWith([o.Z], I)
   }
@@ -132,8 +132,8 @@ class v extends(r = i.ZP.Store) {
     return p[e]
   }
 }
-d(v, "displayName", "NowPlayingStore");
-let S = new v(l.Z, {
+d(S, "displayName", "NowPlayingStore");
+let v = new S(l.Z, {
   CONNECTION_OPEN: function() {
     y = {}, p = {}
   },
@@ -143,8 +143,8 @@ let S = new v(l.Z, {
       presences: n
     } = e, r = !1;
     return t.forEach(e => {
-      E(e.presences) && (r = !0)
-    }), E(n) && (r = !0), r
+      h(e.presences) && (r = !0)
+    }), h(n) && (r = !0), r
   },
   LOGOUT: function() {
     y = {}, p = {}
@@ -159,6 +159,6 @@ let S = new v(l.Z, {
     let {
       presences: t
     } = e;
-    return E(t)
+    return h(t)
   }
 })

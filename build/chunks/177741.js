@@ -171,6 +171,6 @@ let R = function() {
     enabled: e
   } = I.Z.useExperiment({
     location: "PremiumSubscriptionWowMoment"
-  });
-  return e ? (0, o.jsx)(H, {}) : null
+  }), t = (0, l.e7)([T.Z], () => T.Z.canPlayWowMoment);
+  return e && t ? (0, o.jsx)(H, {}) : null
 }

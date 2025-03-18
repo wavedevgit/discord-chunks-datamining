@@ -49,12 +49,12 @@ function o(e, t, r, a) {
   }, [r]);
   let g = n.useMemo(() => {
     let {
-      throttleMs: e = 300,
+      throttleMs: e = 200,
       throttleLeading: t = !0,
       throttleTrailing: r = !0
     } = a;
     return m.current = (0, l.throttle)(async (e, t, r) => {
-      if ("" === e) {
+      if ("" === e.trim()) {
         x.current(t);
         return
       }
@@ -114,7 +114,7 @@ function o(e, t, r, a) {
     }), m.current
   }, [a]);
   return n.useEffect(() => {
-    "" !== e.trim() && g(e, p, f)
+    g(e, p, f)
   }, [g, e, p, f, ...o]), n.useEffect(() => () => {
     null != m.current && m.current.cancel(), m.current = null, d.current = null
   }, [f, r, a]), g

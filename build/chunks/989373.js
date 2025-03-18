@@ -1,6 +1,6 @@
 /** Chunk was on 24491 **/
 n.r(t), n.d(t, {
-  default: () => v,
+  default: () => S,
   useOverlayInitialFocus: () => I
 }), n(47120);
 var r = n(200651),
@@ -19,21 +19,21 @@ var g = n(998502),
 n(371467);
 var y = n(554370),
   p = n(371651),
-  E = n(610394),
-  h = n(757744),
+  h = n(610394),
+  E = n(757744),
   P = n(981631);
 
 function I(e, t) {
-  let n = (0, l.e7)([E.ZP], () => {
-      let e = E.ZP.getFocusedPID();
+  let n = (0, l.e7)([h.ZP], () => {
+      let e = h.ZP.getFocusedPID();
       return !f.isPlatformEmbedded || null != e && e !== O.UNSET_PID
     }),
     [r, a] = i.useState(n);
   (0, c.Ng)(() => {
     let e = e => {
-      e.data === E.Il && requestAnimationFrame(() => {
+      e.data === h.Il && requestAnimationFrame(() => {
         requestAnimationFrame(() => {
-          window.parent.postMessage(E.A8, "*")
+          window.parent.postMessage(h.A8, "*")
         })
       })
     };
@@ -57,23 +57,23 @@ function I(e, t) {
   }, [y, r, n, e]), (0, c.Ng)(() => {
     var e;
     r && y();
-    let n = null !== (e = E.ZP.getFocusedPID()) && void 0 !== e ? e : (0, O.getPID)(),
+    let n = null !== (e = h.ZP.getFocusedPID()) && void 0 !== e ? e : (0, O.getPID)(),
       i = null != d.Z.getVoiceChannelId();
     u.Z.track(P.rMx.OVERLAY_INITIALIZED, {
       voice_widget_connected: i,
-      text_widget_connected: E.ZP.isPinned(P.Odu.TEXT),
+      text_widget_connected: h.ZP.isPinned(P.Odu.TEXT),
       overlay_render_method: o.gl[p.default.getOverlayMethod(n)],
       unpinned_widget_types: s.Z.getAllUnpinnedPinnedWidgets(t)
     })
   }), r
 }
 
-function v(e) {
+function S(e) {
   let {
     withTitleBar: t,
     windowKey: n
   } = e;
-  return I(n, h.$) ? (0, r.jsx)(a.Z, {
+  return I(n, E.$) ? (0, r.jsx)(a.Z, {
     withTitleBar: t,
     windowKey: n,
     title: "Discord Overlay",
