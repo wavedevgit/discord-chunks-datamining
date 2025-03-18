@@ -1,6 +1,6 @@
 /**
   Module ID: 56315
-  Original File Name: 5b3d4fdabc2e9d6e
+  Original File Name: a9278db0fc0f259c
 **/
 .modalContent__11787 {
     display: flex;
@@ -235,7 +235,8 @@
 }
 
 .zoomIcon__57752 {
-    width: 24px
+    width: 24px;
+    color: var(--interactive-normal)
 }
 
 .slider__57752 {
@@ -249,7 +250,12 @@
     height: 24px;
     cursor: pointer;
     padding: 6px;
-    color: var(--interactive-normal)
+    color: var(--interactive-normal);
+    transition: color var(--custom-button-transition-duration) ease
+}
+
+.rotateButton__57752:hover {
+    color: var(--interactive-active)
 }
 
 .premiumUpsell__57752 {
@@ -278,4 +284,4 @@
     text-transform: none
 }
 
-/*# sourceMappingURL=5b3d4fdabc2e9d6e.css.map*/
+/*# sourceMappingURL=a9278db0fc0f259c.css.map*/

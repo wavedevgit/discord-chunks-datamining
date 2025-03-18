@@ -12,8 +12,8 @@ var r = t(200651),
   d = t(413335),
   u = t(690786),
   x = t(838968),
-  m = t(969867),
-  p = t(279604),
+  p = t(969867),
+  m = t(279604),
   v = t(610881),
   b = t(709435);
 
@@ -72,7 +72,7 @@ function h(e) {
     c = null != (0, u.Z)(t, s),
     d = null != (0, u.Z)(t, l),
     [h, g] = i.useState(void 0);
-  return (0, p.KT)(h), n = 0 === o ? "start" : null == l ? "end" : "middle", (0, r.jsxs)(x.Z, {
+  return (0, m.KT)(h), n = 0 === o ? "start" : null == l ? "end" : "middle", (0, r.jsxs)(x.Z, {
     guildId: t,
     powerup: s,
     className: v.card,
@@ -94,7 +94,7 @@ function h(e) {
       })]
     }), (0, r.jsx)("div", {
       className: b.buttonContainer,
-      children: (0, r.jsx)(m.Z, {
+      children: (0, r.jsx)(p.Z, {
         guildId: t,
         powerup: s,
         onError: g

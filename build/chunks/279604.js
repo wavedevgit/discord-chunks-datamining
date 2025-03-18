@@ -60,7 +60,7 @@ function d(e, n) {
 }
 
 function u(e, n) {
-  let [a, c] = i.useState(!1), [u, x] = i.useState(void 0), m = i.useCallback(t => {
+  let [a, c] = i.useState(!1), [u, x] = i.useState(void 0), p = i.useCallback(t => {
     let r = t ? s.H6 : s.Th;
     return c(!0), x(void 0), r(e, n.skuId).catch(e => {
       var n;
@@ -68,7 +68,7 @@ function u(e, n) {
     }).finally(() => {
       c(!1)
     })
-  }, [e, n.skuId]), p = i.useCallback(e => (e.stopPropagation(), m(!0).then(() => {
+  }, [e, n.skuId]), m = i.useCallback(e => (e.stopPropagation(), p(!0).then(() => {
     (0, o.ZDy)(async () => {
       let {
         default: e
@@ -77,11 +77,11 @@ function u(e, n) {
         powerup: n
       }, t))
     })
-  })), [m, n]), v = i.useCallback(e => (e.stopPropagation(), m(!1)), [m]);
+  })), [p, n]), v = i.useCallback(e => (e.stopPropagation(), p(!1)), [p]);
   return {
     isLoading: a,
     error: u,
-    onActivate: p,
+    onActivate: m,
     onDeactivate: v,
     onShowDeactivate: i.useCallback(i => {
       i.stopPropagation(), (0, o.ZDy)(async () => {

@@ -12,8 +12,8 @@ var r = t(200651),
   d = t(969867),
   u = t(279604),
   x = t(730621),
-  m = t(388032),
-  p = t(709435);
+  p = t(388032),
+  m = t(709435);
 
 function v(e) {
   let {
@@ -24,26 +24,26 @@ function v(e) {
     guildId: n,
     powerup: t,
     children: [(0, r.jsx)("div", {
-      className: p.imageContainer,
+      className: m.imageContainer,
       children: (0, r.jsx)("img", {
         alt: ""
       })
     }), (0, r.jsxs)("div", {
-      className: p.contentContainer,
+      className: m.contentContainer,
       children: [(0, r.jsxs)("div", {
-        className: p.headerContainer,
+        className: m.headerContainer,
         children: [(0, r.jsx)(a.X6, {
           variant: "heading-md/bold",
           children: t.title
         }), t.bundle && (0, r.jsx)(a.xv, {
-          className: s()(p.bundle, {
-            [p.active]: o
+          className: s()(m.bundle, {
+            [m.active]: o
           }),
           variant: "text-xs/semibold",
-          children: m.NW.string(x.Z.j2jUjY)
+          children: p.NW.string(x.Z.j2jUjY)
         })]
       }), (0, r.jsx)(a.xv, {
-        className: p.description,
+        className: m.description,
         variant: "text-sm/medium",
         children: t.description
       }), (0, r.jsx)(c.Y, {
@@ -51,7 +51,7 @@ function v(e) {
         powerup: t
       })]
     }), (0, r.jsx)("div", {
-      className: p.buttonContainer,
+      className: m.buttonContainer,
       children: (0, r.jsx)(d.Z, {
         guildId: n,
         powerup: t,

@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => p
+  Z: () => m
 });
 var r = t(200651);
 t(192379);
@@ -13,13 +13,13 @@ var i = t(793030),
   d = t(709054),
   u = t(730621),
   x = t(388032),
-  m = t(652754);
+  p = t(652754);
 
-function p(e) {
+function m(e) {
   let {
     boost: n
   } = e, t = new Date(d.default.extractTimestamp(n.id)), {
-    username: p,
+    username: m,
     roleColor: v
   } = (0, o.cj)([l.ZP], () => {
     var e, t, r;
@@ -29,23 +29,23 @@ function p(e) {
     }
   }, [n]);
   return (0, r.jsx)(a.Z, {
-    className: m.systemMessageContainer,
-    contentClassName: m.systemMessageContent,
+    className: p.systemMessageContainer,
+    contentClassName: p.systemMessageContent,
     iconNode: (0, r.jsx)(c.Z, {
-      className: m.icon,
+      className: p.icon,
       width: 16,
       height: 16
     }),
-    iconContainerClassName: m.iconContainer,
-    timestampClassName: m.timestamp,
+    iconContainerClassName: p.iconContainer,
+    timestampClassName: p.timestamp,
     timestamp: t,
     compact: !0,
     children: (0, r.jsxs)("span", {
-      className: m.boostMessage,
+      className: p.boostMessage,
       children: [(0, r.jsx)(i.xv, {
         variant: "text-md/semibold",
         children: (0, r.jsx)(s.PUh, {
-          name: p,
+          name: m,
           color: null != v ? v : void 0
         })
       }), (0, r.jsx)(i.xv, {

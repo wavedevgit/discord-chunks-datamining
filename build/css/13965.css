@@ -1,6 +1,6 @@
 /**
   Module ID: 13965
-  Original File Name: aaaf29a465116b82
+  Original File Name: 029bc89fc367774d
 **/
 .confettiCanvas__8fcbd {
     position: absolute;
@@ -15,16 +15,20 @@
 }
 
 .modal__8fcbd {
+    overflow: hidden;
     margin: 0;
     width: 440px
 }
 
-.modal__8fcbd,.modalContentContainer__8fcbd {
+.modalContentContainer__8fcbd {
+    padding: 0!important
+}
+
+.modalContentContainer__8fcbd {
     overflow: hidden
 }
 
 .visual-refresh .modalContentContainer__8fcbd {
-    padding: 0;
     margin: 0
 }
 
@@ -52,4 +56,4 @@
     background: linear-gradient(180deg,rgba(15,16,17,0),rgba(15,16,17,.4))
 }
 
-/*# sourceMappingURL=aaaf29a465116b82.css.map*/
+/*# sourceMappingURL=029bc89fc367774d.css.map*/

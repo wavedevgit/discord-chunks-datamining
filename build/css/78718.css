@@ -1,6 +1,6 @@
 /**
   Module ID: 78718
-  Original File Name: c475b24fac665571
+  Original File Name: 7da59ad805ffa907
 **/
 .close__8118d {
     position: absolute;
@@ -14,13 +14,16 @@
 }
 
 .modalContentContainer__8118d {
+    padding: 0!important
+}
+
+.modalContentContainer__8118d {
     display: flex;
     overflow: hidden;
     height: 600px
 }
 
 .visual-refresh .modalContentContainer__8118d {
-    padding: 0;
     margin: 0
 }
 
@@ -59,4 +62,4 @@
     margin-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=c475b24fac665571.css.map*/
+/*# sourceMappingURL=7da59ad805ffa907.css.map*/

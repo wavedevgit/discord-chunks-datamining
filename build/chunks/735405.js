@@ -17,6 +17,7 @@ var r = {
   statusText: "statusText_ab8609",
   statusEmoji: "statusEmoji_ab8609",
   addStatusPrompt: "addStatusPrompt_ab8609",
+  italicPrompt: "italicPrompt_ab8609",
   addStatusIcon: "addStatusIcon_ab8609",
   addStatusIconColor: "addStatusIconColor_ab8609"
 };

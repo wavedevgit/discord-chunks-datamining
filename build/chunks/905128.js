@@ -57,6 +57,7 @@ function d(e) {
   return c.has(e) || c.set(e, {
     powerups: new Map,
     unlocked: new Map,
+    catalog: new Map,
     appliedBoosts: 0
   }), c.get(e)
 }
@@ -64,11 +65,13 @@ function d(e) {
 function f(e) {
   let {
     guildId: t,
-    powerups: n
-  } = e, r = d(t), i = new Map(c);
-  i.set(t, l(a({}, r), {
-    powerups: n
-  })), c = i
+    powerups: n,
+    catalog: r
+  } = e, i = d(t), o = new Map(c);
+  o.set(t, l(a({}, i), {
+    powerups: n,
+    catalog: r
+  })), c = o
 }
 
 function _(e) {

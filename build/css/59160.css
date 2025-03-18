@@ -1,6 +1,6 @@
 /**
   Module ID: 59160
-  Original File Name: 5806850d82da58e0
+  Original File Name: f3e096dead4a3578
 **/
 .image__04666 {
     width: 100%;
@@ -1878,6 +1878,10 @@ div.clanTagBadgeContainer__07f91 {
 
 .voiceUser__07f91:not(:hover):not(:focus-within) .optionsButton__07f91:not(.optionsActive__07f91) {
     width: 0
+}
+
+.visual-refresh .voiceUser__07f91:not(:hover):not(:focus-within) .optionsButtonContainer__07f91:not(.optionsContainerActive__07f91) {
+    display: none
 }
 
 span.clanTag__07f91 {
@@ -14737,4 +14741,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=5806850d82da58e0.css.map*/
+/*# sourceMappingURL=f3e096dead4a3578.css.map*/

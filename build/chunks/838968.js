@@ -14,14 +14,14 @@ var i = t(120356),
   d = t(279604),
   u = t(730621),
   x = t(388032),
-  m = t(709435);
+  p = t(709435);
 
-function p(e) {
+function m(e) {
   let {
     dateString: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: m.inline,
+    className: p.inline,
     children: [(0, r.jsx)(s.owK, {
       size: "xs",
       color: s.TVs.colors.STATUS_WARNING
@@ -42,18 +42,18 @@ function v(e) {
     className: i
   } = e, c = (0, l.Z)(n, t);
   return (0, r.jsxs)("div", {
-    className: o()(m.labelContainer, i),
+    className: o()(p.labelContainer, i),
     children: [(0, r.jsxs)("div", {
-      className: o()(m.inline, m.inlineBoost),
+      className: o()(p.inline, p.inlineBoost),
       children: [(0, r.jsx)(a.Z, {}), (0, r.jsx)(s.Text, {
         tag: "div",
         variant: "heading-md/bold",
         children: t.cost
       })]
-    }), null != c && ((null == c ? void 0 : c.ends_at) != null ? (0, r.jsx)(p, {
+    }), null != c && ((null == c ? void 0 : c.ends_at) != null ? (0, r.jsx)(m, {
       dateString: c.ends_at
     }) : (0, r.jsxs)("div", {
-      className: m.inline,
+      className: p.inline,
       children: [(0, r.jsx)(s.owK, {
         size: "xs",
         color: s.TVs.colors.STATUS_POSITIVE
@@ -73,14 +73,14 @@ function b(e) {
     className: i,
     children: a
   } = e, c = (0, l.Z)(n, t), u = null != c, x = (null == c ? void 0 : c.ends_at) != null, {
-    onShowMore: p
+    onShowMore: m
   } = (0, d.ZP)(n, t);
   return (0, r.jsx)(s.kL8, {
     "aria-label": t.title,
-    onClick: p,
-    className: o()(m.container, {
-      [m.active]: u,
-      [m.warning]: x
+    onClick: m,
+    className: o()(p.container, {
+      [p.active]: u,
+      [p.warning]: x
     }, i),
     children: a
   })

@@ -1,6 +1,6 @@
 /**
   Module ID: 46028
-  Original File Name: 2b04bebff38ec55f
+  Original File Name: 5a4c86269634772b
 **/
 .modal__038c3 {
     width: 650px
@@ -79,15 +79,6 @@
     position: relative
 }
 
-.recentAvatarButtonContainer__1df30:hover .deleteButton__1df30 {
-    opacity: 1
-}
-
-.recentAvatarButtonContainer__1df30:focus-within .deleteButton__1df30 {
-    opacity: 1;
-    transition: none
-}
-
 .recentAvatarButton__1df30 {
     position: relative;
     overflow: hidden;
@@ -109,6 +100,15 @@
     background-color: var(--opacity-black-20)
 }
 
+.recentAvatarButton__1df30:hover+.deleteButton__1df30 {
+    opacity: 1
+}
+
+.recentAvatarButton__1df30:focus-visible+.deleteButton__1df30 {
+    opacity: 1;
+    transition: none
+}
+
 .recentAvatar__1df30 {
     -o-object-fit: cover;
     object-fit: cover
@@ -119,9 +119,6 @@
     height: 28px;
     top: -6px;
     right: -6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: var(--text-danger);
     background-color: var(--bg-base-tertiary);
     opacity: 0;
@@ -152,6 +149,16 @@
 
 .deleteButton__1df30:focus-visible,.deleteButton__1df30:hover {
     opacity: 1
+}
+
+.deleteButton__1df30:focus {
+    transition: none
+}
+
+.deleteButtonInner__1df30 {
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 .full-motion .deleteIcon__1df30 {
@@ -530,4 +537,4 @@
     margin-top: var(--spacing-8)
 }
 
-/*# sourceMappingURL=2b04bebff38ec55f.css.map*/
+/*# sourceMappingURL=5a4c86269634772b.css.map*/

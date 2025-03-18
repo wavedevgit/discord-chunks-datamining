@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 02d0c3325c9d64ac
+  Original File Name: da6d0581492d1898
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -5094,6 +5094,10 @@ div.clanTagBadgeContainer__07f91 {
     width: 0
 }
 
+.visual-refresh .voiceUser__07f91:not(:hover):not(:focus-within) .optionsButtonContainer__07f91:not(.optionsContainerActive__07f91) {
+    display: none
+}
+
 span.clanTag__07f91 {
     flex: 0;
     white-space: nowrap;
@@ -5530,4 +5534,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     pointer-events: auto
 }
 
-/*# sourceMappingURL=02d0c3325c9d64ac.css.map*/
+/*# sourceMappingURL=da6d0581492d1898.css.map*/

@@ -18,11 +18,11 @@ var r = n(200651),
   j = n(451478),
   b = n(626135),
   x = n(74538),
-  y = n(621961),
-  h = n(884858),
+  h = n(621961),
+  y = n(884858),
   O = n(981631),
-  v = n(486324),
-  N = n(869783),
+  N = n(486324),
+  v = n(869783),
   C = n(388032),
   A = n(768076);
 
@@ -58,7 +58,7 @@ let P = [{
   png: n(690695)
 }];
 
-function w(e) {
+function S(e) {
   let {
     shouldAnimate: t = !0
   } = e, [n, a] = l.useState(!1);
@@ -75,7 +75,7 @@ function w(e) {
   })
 }
 
-function S(e) {
+function w(e) {
   let {
     guildFeature: t,
     guild: n
@@ -97,14 +97,14 @@ function T(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: A.optionBoxText,
-    children: [(0, r.jsx)(S, {
+    children: [(0, r.jsx)(w, {
       guild: n,
-      guildFeature: (0, y.C6)(t, {
+      guildFeature: (0, h.C6)(t, {
         isGIF: !0
       })
     }), (0, r.jsxs)("div", {
       className: A.optionBoxDescription,
-      children: [(0, y.Kq)(t) && (0, r.jsx)(i.DY3, {
+      children: [(0, h.Kq)(t) && (0, r.jsx)(i.DY3, {
         className: A.nitroWheelFlairContainer,
         text: C.NW.string(C.t["5AFxuL"]),
         children: (0, r.jsx)(i.SrA, {
@@ -125,14 +125,14 @@ function R(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: A.optionBoxText,
-    children: [(0, r.jsx)(S, {
-      guildFeature: (0, y.C6)(n, {
+    children: [(0, r.jsx)(w, {
+      guildFeature: (0, h.C6)(n, {
         isGIF: !1
       }),
       guild: l
     }), (0, r.jsxs)("div", {
       className: A.optionBoxDescription,
-      children: [n === v.pC.BANNER && (0, r.jsx)(i.DY3, {
+      children: [n === N.pC.BANNER && (0, r.jsx)(i.DY3, {
         className: A.nitroWheelFlairContainer,
         text: C.NW.string(C.t["5AFxuL"]),
         children: (0, r.jsx)(i.SrA, {
@@ -149,22 +149,22 @@ function _(e) {
   let {
     transitionState: t,
     onClose: c,
-    onComplete: y,
+    onComplete: h,
     uploadType: P,
-    maxFileSizeBytes: S,
+    maxFileSizeBytes: w,
     showUpsellHeader: _,
-    filters: F,
+    filters: k,
     analyticsLocation: L,
-    analyticsLocations: Z = [],
-    modalSubTitle: D,
-    imageSpecifications: k,
-    modalTitle: W = C.NW.string(C.t.DToW4e),
-    uploadOptionTitle: I = C.NW.string(C.t["MsUY/f"])
-  } = e, U = (0, a.e7)([j.Z], () => j.Z.isFocused()), M = (0, a.e7)([g.default], () => g.default.getCurrentUser()), B = (0, a.e7)([m.Z], () => m.Z.getGuildId()), H = (0, a.e7)([f.Z], () => f.Z.getGuild(B)), {
-    reducedMotion: z
-  } = l.useContext(i.Sfi), G = (0, i.vRw)(), V = !x.ZP.canUseAnimatedAvatar(M) && P === v.pC.AVATAR, {
+    analyticsLocations: F = [],
+    modalSubTitle: Z,
+    imageSpecifications: D,
+    modalTitle: I = C.NW.string(C.t.DToW4e),
+    uploadOptionTitle: W = C.NW.string(C.t["MsUY/f"])
+  } = e, U = (0, a.e7)([j.Z], () => j.Z.isFocused()), M = (0, a.e7)([g.default], () => g.default.getCurrentUser()), B = (0, a.e7)([m.Z], () => m.Z.getGuildId()), z = (0, a.e7)([f.Z], () => f.Z.getGuild(B)), {
+    reducedMotion: H
+  } = l.useContext(i.Sfi), G = (0, i.vRw)(), V = !x.ZP.canUseAnimatedAvatar(M) && P === N.pC.AVATAR, {
     analyticsLocations: X
-  } = (0, s.ZP)(Z, o.Z.SELECT_IMAGE_MODAL);
+  } = (0, s.ZP)(F, o.Z.SELECT_IMAGE_MODAL);
 
   function q(e) {
     let {
@@ -172,7 +172,7 @@ function _(e) {
       file: n,
       isFromTenor: r = !1
     } = e;
-    c(), y({
+    c(), h({
       imageUri: t,
       file: n,
       isFromTenor: r
@@ -187,8 +187,8 @@ function _(e) {
       location: L
     })
   }, [V, L, X]);
-  let Y = P === v.pC.AVATAR || P === v.pC.BANNER,
-    J = (0, d.M)(!Y);
+  let Y = P === N.pC.AVATAR || P === N.pC.BANNER,
+    K = (0, d.M)(!Y);
   return (0, r.jsxs)(i.Y0X, {
     transitionState: t,
     size: i.CgR.SMALL,
@@ -199,10 +199,10 @@ function _(e) {
         children: [(0, r.jsx)(i.vwX, {
           tag: i.RB0.H1,
           className: A.modalTitle,
-          children: W
-        }), null != D ? (0, r.jsx)(i.Text, {
+          children: I
+        }), null != Z ? (0, r.jsx)(i.Text, {
           variant: "text-md/normal",
-          children: D
+          children: Z
         }) : null]
       }), (0, r.jsx)(i.olH, {
         onClick: c,
@@ -225,13 +225,13 @@ function _(e) {
             variant: "text-sm/semibold",
             color: "interactive-normal",
             children: (0, r.jsx)(R, {
-              title: I,
+              title: W,
               uploadType: P,
-              guild: H
+              guild: z
             })
           }), (0, r.jsx)(u.ZP, {
             onChange: function(e, t) {
-              if (t.type === N.m.MP4) return q({
+              if (t.type === v.m.MP4) return q({
                 imageUri: e,
                 file: t
               });
@@ -252,11 +252,11 @@ function _(e) {
                 contextKey: G
               })
             },
-            maxFileSizeBytes: S,
+            maxFileSizeBytes: w,
             onFileSizeError: function() {
-              c(), (0, h.Z)(S)
+              c(), (0, y.Z)(w)
             },
-            filters: F
+            filters: k
           })]
         }), (0, r.jsxs)(i.P3F, {
           className: A.optionBox,
@@ -287,8 +287,8 @@ function _(e) {
           },
           children: [(0, r.jsxs)("div", {
             className: A.contentCircle,
-            children: [(0, r.jsx)(w, {
-              shouldAnimate: U && !z.enabled
+            children: [(0, r.jsx)(S, {
+              shouldAnimate: U && !H.enabled
             }), (0, r.jsx)("div", {
               className: A.gifIconContainer,
               children: (0, r.jsx)(i.OUq, {
@@ -304,15 +304,15 @@ function _(e) {
             color: "interactive-normal",
             children: (0, r.jsx)(T, {
               uploadType: P,
-              guild: H
+              guild: z
             })
           })]
         })]
-      }), null != k ? (0, r.jsx)(i.Text, {
+      }), null != D ? (0, r.jsx)(i.Text, {
         className: A.imageSpecifications,
         variant: "text-sm/normal",
-        children: k
-      }) : null, _ && J && (0, r.jsx)(p.Z, {
+        children: D
+      }) : null, _ && K && (0, r.jsx)(p.Z, {
         uploadType: P,
         showUpsell: !0,
         position: "inline",

@@ -1,6 +1,6 @@
 /**
   Module ID: 81288
-  Original File Name: ce2c0f120b10ff4a
+  Original File Name: 414ba692586a25f7
 **/
 .boostedGuildIconGem__97677 {
     transition: color .1s linear;
@@ -425,7 +425,8 @@
 }
 
 .zoomIcon__57752 {
-    width: 24px
+    width: 24px;
+    color: var(--interactive-normal)
 }
 
 .slider__57752 {
@@ -439,7 +440,12 @@
     height: 24px;
     cursor: pointer;
     padding: 6px;
-    color: var(--interactive-normal)
+    color: var(--interactive-normal);
+    transition: color var(--custom-button-transition-duration) ease
+}
+
+.rotateButton__57752:hover {
+    color: var(--interactive-active)
 }
 
 .premiumUpsell__57752 {
@@ -468,4 +474,4 @@
     text-transform: none
 }
 
-/*# sourceMappingURL=ce2c0f120b10ff4a.css.map*/
+/*# sourceMappingURL=414ba692586a25f7.css.map*/

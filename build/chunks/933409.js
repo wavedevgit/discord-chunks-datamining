@@ -159,7 +159,7 @@ function T(e, t, T, U, A) {
       }
     }, "verify")
   }
-  return [...z, ...w || null == x ? [] : [K, J, Y && !B ? k ? (0, l.jsx)(a.sNh, {
+  return [K, ...z, ...w || null == x ? [] : [J, Y && !B ? k ? (0, l.jsx)(a.sNh, {
     id: "removetimeout",
     label: j.NW.formatToPlainString(j.t.csKetb, {
       user: e.username

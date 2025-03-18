@@ -1,7 +1,7 @@
 /** Chunk was on 99245 **/
 t.d(n, {
   default: () => v
-});
+}), t(47120);
 var i = t(200651);
 t(192379);
 var l = t(481060),
@@ -31,7 +31,7 @@ let v = (0, a.Z)((0, u.Z)(function(e) {
     channelId: v,
     guildId: u,
     context: g
-  }), y = (0, E.E)(n, v, u), I = (0, f.Z)(n, u, v), N = (0, d.Z)({
+  }), [y, I] = (0, E.E)(n, v, u), N = (0, f.Z)(n, u, v), p = (0, d.Z)({
     id: n.id,
     label: A.NW.string(A.t["/AXYnJ"])
   });
@@ -50,11 +50,11 @@ let v = (0, a.Z)((0, u.Z)(function(e) {
           id: "more-options",
           label: A.NW.string(A.t.PdRCRk),
           children: [y, (0, i.jsx)(l.kSQ, {
-            children: I
-          })]
+            children: N
+          }), I]
         })
       }), T && (0, i.jsx)(l.kSQ, {
-        children: N
+        children: p
       })]
     })
   })
