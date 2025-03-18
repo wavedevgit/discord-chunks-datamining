@@ -1,21 +1,21 @@
 /** Chunk was on 57951 **/
 n.d(t, {
-  ActivityAgeGateModal: () => l
+  ActivityAgeGateModal: () => s
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(480916),
-  c = n(986035),
+  c = n(480916),
+  o = n(986035),
   a = n(388032),
-  s = n(831022);
+  l = n(831022);
 
-function l(e) {
+function s(e) {
   var t, n, {
-      application: l,
+      application: s,
       onAgree: u,
-      onClose: g,
-      onDisagree: p,
+      onClose: p,
+      onDisagree: g,
       channelId: f
     } = e,
     d = function(e, t) {
@@ -23,13 +23,13 @@ function l(e) {
       var n, r, i = function(e, t) {
         if (null == e) return {};
         var n, r, i = {},
-          o = Object.keys(e);
-        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          c = Object.keys(e);
+        for (r = 0; r < c.length; r++) n = c[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var c = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < c.length; r++) n = c[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["application", "onAgree", "onClose", "onDisagree", "channelId"]);
@@ -52,22 +52,22 @@ function l(e) {
     return e
   }({}, d), n = n = {
     children: (0, r.jsx)("div", {
-      children: (0, r.jsx)(c.Z, {
-        modalType: o.it.NSFW_EMBEDDED_ACTIVITY,
+      children: (0, r.jsx)(o.Z, {
+        modalType: c.it.NSFW_EMBEDDED_ACTIVITY,
         channelId: f,
         onAgree: () => {
-          u(), g()
+          u(), p()
         },
         onDisagree: () => {
-          p(), g()
+          g(), p()
         },
         title: a.NW.string(a.t.SSDPOD),
         description: a.NW.formatToPlainString(a.t.OgmIq6, {
-          applicationName: l.name
+          applicationName: s.name
         }),
         agreement: a.NW.string(a.t.wVq7ur),
         disagreement: a.NW.string(a.t.hg1uxs),
-        imageClassName: s.image
+        imageClassName: l.image
       })
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

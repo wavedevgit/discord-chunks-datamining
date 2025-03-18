@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => c
 });
 var r, i = n(442837),
-  o = n(570140);
+  l = n(570140);
 
-function l(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,8 +25,8 @@ class s extends(r = i.ZP.PersistedStore) {
     return a[e]
   }
 }
-l(s, "displayName", "GuildBoostingProgressBarPersistedStore"), l(s, "persistKey", "PremiumGuildProgressBarPersistedStore");
-let c = new s(o.Z, {
+o(s, "displayName", "GuildBoostingProgressBarPersistedStore"), o(s, "persistKey", "PremiumGuildProgressBarPersistedStore");
+let c = new s(l.Z, {
   APPLIED_GUILD_BOOST_COUNT_UPDATE: e => {
     var t, n;
     let {
@@ -40,7 +40,7 @@ let c = new s(o.Z, {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          l(e, t, n[t])
+          o(e, t, n[t])
         })
       }
       return e

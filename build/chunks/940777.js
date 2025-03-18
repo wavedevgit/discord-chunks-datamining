@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  l = n.n(o),
+  l = n(120356),
+  o = n.n(l),
   a = n(91192),
   s = n(442837),
   c = n(481060),
@@ -61,7 +61,7 @@ let D = {
 
 function R() {
   var e, t;
-  let o = (0, a.Ie)("favorites"),
+  let l = (0, a.Ie)("favorites"),
     {
       favoriteAdded: R,
       clearFavoriteAdded: L
@@ -90,20 +90,20 @@ function R() {
           return null != t && null != e[t.channelId]
         }),
         i = (0, s.e7)([_.Z], () => _.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
-        o = (0, s.e7)([C.Z], () => n && null != t && C.Z.hasVideo(t), [n, t]),
-        l = (0, s.Wu)([p.ZP], () => x.default.keys(e).reduce((e, t) => (e.push(...p.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
+        l = (0, s.e7)([C.Z], () => n && null != t && C.Z.hasVideo(t), [n, t]),
+        o = (0, s.Wu)([p.ZP], () => x.default.keys(e).reduce((e, t) => (e.push(...p.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
         a = (0, s.e7)([p.ZP], () => Array.from(p.ZP.getSelfEmbeddedActivities().values()).some(t => {
           let {
             location: n
           } = t, r = (0, h.pY)(n);
           return null != r && null != e[r]
         })),
-        c = l.length > 0,
+        c = o.length > 0,
         u = !1,
         d = !1,
         f = !1,
         g = !1;
-      return n ? (u = !o, d = o, f = r, g = a) : (f = i, g = c), (0, b.Or)({
+      return n ? (u = !l, d = l, f = r, g = a) : (f = i, g = c), (0, b.Or)({
         audio: u,
         video: d,
         screenshare: f,
@@ -130,7 +130,7 @@ function R() {
           selected: q || V || k,
           upperBadge: z,
           lowerBadge: Y,
-          children: (0, r.jsx)(c.LYs, (e = A({}, o), t = t = {
+          children: (0, r.jsx)(c.LYs, (e = A({}, l), t = t = {
             ariaLabel: w.NW.formatToPlainString(w.t["/uzRsr"], {
               guildName: w.NW.string(w.t.wMWycn),
               mentions: F
@@ -154,7 +154,7 @@ function R() {
               })
             },
             children: (0, r.jsx)("div", {
-              className: l()(T.ring, {
+              className: o()(T.ring, {
                 [T.ringActive]: R
               }),
               children: (0, r.jsx)(c.r7p, {

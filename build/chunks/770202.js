@@ -4,8 +4,8 @@ n.d(t, {
 }), n(411104), n(47120);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  l = n.n(o),
+  l = n(120356),
+  o = n.n(l),
   a = n(442837),
   s = n(493683),
   c = n(239091),
@@ -55,10 +55,10 @@ class x extends m.ZP {
       selected: t,
       connectChannelDropTarget: n,
       connectChannelDragSource: i,
-      connectDragPreview: o,
+      connectDragPreview: l,
       canReorderChannel: a
     } = this.props, s = (0, r.jsx)("li", {
-      className: l()(this.getClassName(), {
+      className: o()(this.getClassName(), {
         [_.disabled]: this.isDisabled()
       }),
       "data-dnd-name": e.name,
@@ -69,7 +69,7 @@ class x extends m.ZP {
         onClick: this.handleClick,
         onMouseDown: C,
         onContextMenu: this.handleContextMenu,
-        connectDragPreview: a ? o : null,
+        connectDragPreview: a ? l : null,
         "aria-label": (0, d.ZP)({
           channel: e
         }),
@@ -89,20 +89,20 @@ class x extends m.ZP {
           default: e
         } = await n.e("99905").then(n.bind(n, 649400));
         return n => {
-          var o, l;
-          return (0, r.jsx)(e, (o = j({}, n), l = l = {
+          var l, o;
+          return (0, r.jsx)(e, (l = j({}, n), o = o = {
             channel: t,
             guild: i
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(l)).forEach(function(e) {
-            Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(l, e))
-          }), o))
+          })(Object(o)).forEach(function(e) {
+            Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
+          }), l))
         }
       })
     }), O(this, "handleClick", e => {
@@ -128,12 +128,12 @@ let S = (0, u.B)(x),
       channel: t,
       guild: n,
       disableSorting: i
-    } = e, o = (0, a.cj)([h.Z, g.Z], () => {
+    } = e, l = (0, a.cj)([h.Z, g.Z], () => {
       let e = h.Z.getChannel(t.parent_id);
       return {
         canManageChannel: g.Z.can(v.Plq.MANAGE_CHANNELS, t),
         canReorderChannel: !0 !== i && null != e ? g.Z.can(v.Plq.MANAGE_CHANNELS, e) : g.Z.can(v.Plq.MANAGE_CHANNELS, n)
       }
     });
-    return (0, r.jsx)(S, j({}, o, e))
+    return (0, r.jsx)(S, j({}, l, e))
   })

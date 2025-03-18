@@ -1,6 +1,6 @@
 /**
   Module ID: 42225
-  Original File Name: 69dad1b1bee04266
+  Original File Name: ce9000c35ca6a143
 **/
 @value minColumnWidth: 460px;
 
@@ -2925,6 +2925,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 10px
 }
 
+.visual-refresh .boostedGuildIconGem__97677 {
+    height: 12px;
+    width: 12px
+}
+
 .theme-light .iconBackgroundTierNone__97677,.theme-light .iconBackgroundTierOne__97677,.theme-light .iconBackgroundTierThree__97677,.theme-light .iconBackgroundTierTwo__97677 {
     color: var(--background-accent)
 }
@@ -3911,4 +3916,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=69dad1b1bee04266.css.map*/
+/*# sourceMappingURL=ce9000c35ca6a143.css.map*/

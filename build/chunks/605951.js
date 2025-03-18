@@ -1,11 +1,11 @@
 /** Chunk was on 53494 **/
 n.d(t, {
-  Z: () => o
+  Z: () => l
 });
 var r = n(192379),
   i = n(914010);
 
-function o(e) {
+function l(e) {
   r.useEffect(() => {
     let t = null;
 

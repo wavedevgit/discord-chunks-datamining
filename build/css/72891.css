@@ -1,10 +1,15 @@
 /**
   Module ID: 72891
-  Original File Name: 517892ea3d4aba8d
+  Original File Name: 62e357a0a4f13fd3
 **/
 .boostedGuildIconGem__97677 {
     transition: color .1s linear;
     height: 10px
+}
+
+.visual-refresh .boostedGuildIconGem__97677 {
+    height: 12px;
+    width: 12px
 }
 
 .theme-light .iconBackgroundTierNone__97677,.theme-light .iconBackgroundTierOne__97677,.theme-light .iconBackgroundTierThree__97677,.theme-light .iconBackgroundTierTwo__97677 {
@@ -223,4 +228,4 @@
     left: var(--spacing-12)
 }
 
-/*# sourceMappingURL=517892ea3d4aba8d.css.map*/
+/*# sourceMappingURL=62e357a0a4f13fd3.css.map*/

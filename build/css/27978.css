@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: e9c9af5da81d365c
+  Original File Name: 5336ac6397052dc9
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -4049,6 +4049,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 10px
 }
 
+.visual-refresh .boostedGuildIconGem__97677 {
+    height: 12px;
+    width: 12px
+}
+
 .theme-light .iconBackgroundTierNone__97677,.theme-light .iconBackgroundTierOne__97677,.theme-light .iconBackgroundTierThree__97677,.theme-light .iconBackgroundTierTwo__97677 {
     color: var(--background-accent)
 }
@@ -5705,4 +5710,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100px
 }
 
-/*# sourceMappingURL=e9c9af5da81d365c.css.map*/
+/*# sourceMappingURL=5336ac6397052dc9.css.map*/

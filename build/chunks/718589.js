@@ -1,11 +1,11 @@
 /** Chunk was on 53494 **/
 n.d(t, {
-  Z: () => o
+  Z: () => l
 });
 var r = n(981631),
   i = n(388032);
 
-function o(e) {
+function l(e) {
   let {
     channel: t,
     embeddedApps: n

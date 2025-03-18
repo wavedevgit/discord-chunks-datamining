@@ -1,6 +1,6 @@
 /** Chunk was on 53494 **/
 n.d(t, {
-  SN: () => o
+  SN: () => l
 });
 var r = n(818083);
 let i = (0, r.B)({
@@ -19,7 +19,7 @@ let i = (0, r.B)({
   }]
 });
 
-function o(e) {
+function l(e) {
   return i.useExperiment({
     location: e
   }, {

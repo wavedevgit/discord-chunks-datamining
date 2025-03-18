@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  l = n.n(o),
+  l = n(120356),
+  o = n.n(l),
   a = n(91192),
   s = n(442837),
   c = n(481060),
@@ -67,8 +67,8 @@ function T(e) {
     style: t,
     withGuildIcon: n,
     inverted: i
-  } = e, o = {
-    className: l()(Z.spine, {
+  } = e, l = {
+    className: o()(Z.spine, {
       [Z.spineWithGuildIcon]: n
     }, {
       [Z.invertedSpine]: i
@@ -79,7 +79,7 @@ function T(e) {
   } = (0, c.TCT)();
   switch (a) {
     case "cozy":
-      return (0, r.jsxs)("svg", w(E({}, o), {
+      return (0, r.jsxs)("svg", w(E({}, l), {
         width: "10",
         height: "20",
         viewBox: "0 0 10 20",
@@ -94,7 +94,7 @@ function T(e) {
         })]
       }));
     case "compact":
-      return (0, r.jsxs)("svg", w(E({}, o), {
+      return (0, r.jsxs)("svg", w(E({}, l), {
         width: "10",
         height: "19",
         viewBox: "0 0 10 19",
@@ -109,7 +109,7 @@ function T(e) {
         })]
       }));
     default:
-      return (0, r.jsxs)("svg", w(E({}, o), {
+      return (0, r.jsxs)("svg", w(E({}, l), {
         width: "10",
         height: "19",
         viewBox: "0 0 10 19",
@@ -132,7 +132,7 @@ function A(e) {
     withGuildIcon: n
   } = e;
   return (0, r.jsx)("svg", {
-    className: l()(Z.spine, {
+    className: o()(Z.spine, {
       [Z.spineWithGuildIcon]: n
     }),
     width: "12",
@@ -150,7 +150,7 @@ function A(e) {
 let D = i.memo(function(e) {
   let {
     thread: t,
-    isSelectedChannel: o,
+    isSelectedChannel: l,
     isSelectedVoice: Z,
     isLast: D,
     withGuildIcon: R
@@ -183,13 +183,13 @@ let D = i.memo(function(e) {
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        o = Object.keys(e);
-      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(z, ["role"]), Q = i.useRef(null), K = G > 0 ? P.NW.formatToPlainString(P.t["ZL7+Iy"], {
@@ -202,8 +202,8 @@ let D = i.memo(function(e) {
   }), J = (0, h.Q3)("GuildSidebarThreadListEntry") ? T : A;
   return (0, r.jsxs)("li", {
     role: Y,
-    className: l()(I.containerDefault, {
-      [I.selected]: o
+    className: o()(I.containerDefault, {
+      [I.selected]: l
     }),
     children: [(0, r.jsx)(J, {
       withGuildIcon: R
@@ -222,16 +222,16 @@ let D = i.memo(function(e) {
         right: 4
       },
       children: (0, r.jsxs)("div", {
-        className: l()(I.iconVisibility, N.wrapper, N.typeThread, {
-          [N.modeSelected]: o,
-          [N.modeMuted]: !o && U,
-          [N.modeUnreadImportant]: !U && !o && M,
+        className: o()(I.iconVisibility, N.wrapper, N.typeThread, {
+          [N.modeSelected]: l,
+          [N.modeMuted]: !l && U,
+          [N.modeUnreadImportant]: !U && !l && M,
           [N.withGuildIcon]: R
         }),
         onMouseDown: V,
         onContextMenu: F,
-        children: [!M || U || o ? null : (0, r.jsx)("div", {
-          className: l()(N.unread, N.unreadImportant)
+        children: [!M || U || l ? null : (0, r.jsx)("div", {
+          className: o()(N.unread, N.unreadImportant)
         }), (0, r.jsx)(c.P3F, w(E({}, q), {
           innerRef: Q,
           className: N.link,
@@ -241,7 +241,7 @@ let D = i.memo(function(e) {
             enabled: !1
           },
           children: (0, r.jsxs)("div", {
-            className: l()(N.linkTop, N.__invalid_threadMainContent),
+            className: o()(N.linkTop, N.__invalid_threadMainContent),
             children: [(0, r.jsx)(p.Z, {
               className: N.name,
               "aria-hidden": !0,

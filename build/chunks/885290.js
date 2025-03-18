@@ -97,7 +97,7 @@ function Z(e) {
   })
 }
 
-function D(e) {
+function I(e) {
   let {
     guildFeature: t,
     guild: n
@@ -112,7 +112,7 @@ function D(e) {
   })
 }
 
-function I(e) {
+function D(e) {
   let {
     icon: t,
     label: n,
@@ -141,7 +141,7 @@ function I(e) {
           })
         }), n]
       })]
-    }), c && (0, r.jsx)(D, {
+    }), c && (0, r.jsx)(I, {
       guild: a,
       guildFeature: l
     })]
@@ -168,7 +168,7 @@ function W(e) {
       within: !0,
       children: (0, r.jsxs)("div", {
         className: i()(_.option, _.imageUploadOption),
-        children: [(0, r.jsx)(I, {
+        children: [(0, r.jsx)(D, {
           icon: (0, r.jsx)(s.FmF, {
             size: "md",
             color: "currentColor"
@@ -217,7 +217,7 @@ function U(e) {
       onMouseLeave: o,
       children: [(0, r.jsx)(F, {
         shouldAnimate: a
-      }), (0, r.jsx)(I, {
+      }), (0, r.jsx)(D, {
         icon: (0, r.jsx)(s.OUq, {
           size: "md",
           color: "currentColor"
@@ -246,8 +246,8 @@ function M(e) {
     analyticsLocations: L = [],
     imageSpecifications: F,
     modalTitle: Z = R.NW.string(R.t.DToW4e),
-    uploadOptionTitle: D = R.NW.string(R.t["MsUY/f"])
-  } = e, I = (0, o.e7)([N.default], () => N.default.getCurrentUser()), M = (0, o.e7)([O.Z], () => O.Z.getGuildId()), B = (0, o.e7)([y.Z], () => y.Z.getGuild(M)), z = (0, s.vRw)(), H = d === w.pC.AVATAR || d === w.pC.BANNER, G = !A.ZP.canUseAnimatedAvatar(I) && d === w.pC.AVATAR, V = (0, f.M)(!H), X = (0, g.Tq)({
+    uploadOptionTitle: I = R.NW.string(R.t["MsUY/f"])
+  } = e, D = (0, o.e7)([N.default], () => N.default.getCurrentUser()), M = (0, o.e7)([O.Z], () => O.Z.getGuildId()), B = (0, o.e7)([y.Z], () => y.Z.getGuild(M)), z = (0, s.vRw)(), H = d === w.pC.AVATAR || d === w.pC.BANNER, G = !A.ZP.canUseAnimatedAvatar(D) && d === w.pC.AVATAR, V = (0, f.M)(!H), X = (0, g.Tq)({
     location: "NewSelectImageModal"
   }), {
     analyticsLocations: q
@@ -349,7 +349,7 @@ function M(e) {
           "aria-label": R.NW.string(R.t.iBnqtb),
           children: [(0, r.jsx)("li", {
             children: (0, r.jsx)(W, {
-              label: D,
+              label: I,
               uploadType: d,
               guild: B,
               handleOpenImageEditingModal: K,

@@ -6,8 +6,8 @@ n.d(t, {
 }), n(653041), n(47120);
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  l = n(884338),
+  l = n(442837),
+  o = n(884338),
   a = n(398758),
   s = n(9156),
   c = n(934415),
@@ -20,9 +20,9 @@ let g = i.memo(function(e) {
   let {
     guildChannels: t,
     guildChannelsVersion: n
-  } = e, o = i.useMemo(() => t.getCategoryFromSection(t.voiceChannelsSectionNumber), [t, n]);
-  return null == o ? null : (0, r.jsx)(p.Qo, {
-    category: o
+  } = e, l = i.useMemo(() => t.getCategoryFromSection(t.voiceChannelsSectionNumber), [t, n]);
+  return null == l ? null : (0, r.jsx)(p.Qo, {
+    category: l
   })
 });
 
@@ -32,8 +32,8 @@ function m(e) {
     guildChannels: n,
     voiceStates: r,
     selectedChannelId: i,
-    selectedVoiceChannelId: o,
-    optInEnabled: l,
+    selectedVoiceChannelId: l,
+    optInEnabled: o,
     visualRefreshEnabled: a,
     density: s
   } = e;
@@ -41,13 +41,13 @@ function m(e) {
   let {
     hasDivider: c,
     canHaveVoiceSummary: p
-  } = (0, d.ie)(n, l, t), f = c ? a ? 9 : h.QP : 0;
+  } = (0, d.ie)(n, o, t), f = c ? a ? 9 : h.QP : 0;
   if (!p || t === u.wZ) return f;
   let g = n.getNamedCategoryFromSection(t);
   return null == g ? f : (0, d.V5)({
     category: g,
     selectedChannelId: i,
-    selectedVoiceChannelId: o,
+    selectedVoiceChannelId: l,
     voiceStates: r
   }) ? (a ? "cozy" === s ? 42 : 34 : h.Vf) + f : f
 }
@@ -73,7 +73,7 @@ let v = i.memo(function(e) {
   } = e, {
     hasDivider: _,
     canHaveVoiceSummary: O
-  } = i.useMemo(() => (0, d.ie)(n, y, t), [n, y, t, p]), j = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, p]), C = (0, a.DM)(m), x = (0, o.Wu)([s.ZP], () => {
+  } = i.useMemo(() => (0, d.ie)(n, y, t), [n, y, t, p]), j = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, p]), C = (0, a.DM)(m), x = (0, l.Wu)([s.ZP], () => {
     if (null == j || !j.isCollapsed || !O) return [];
     let e = j.getChannelRecords(),
       t = [];
@@ -99,7 +99,7 @@ let v = i.memo(function(e) {
   return O && 0 !== S.length ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: f.voiceUserSummary,
-      children: (0, r.jsx)(l.Z, {
+      children: (0, r.jsx)(o.Z, {
         renderIcon: !0,
         users: S,
         max: 8,

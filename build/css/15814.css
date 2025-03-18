@@ -1,6 +1,6 @@
 /**
   Module ID: 15814
-  Original File Name: 10cfdefb92435c95
+  Original File Name: 125f4e3a80ca990c
 **/
 .icon__2894c {
     display: block;
@@ -649,6 +649,11 @@
 .boostedGuildIconGem__97677 {
     transition: color .1s linear;
     height: 10px
+}
+
+.visual-refresh .boostedGuildIconGem__97677 {
+    height: 12px;
+    width: 12px
 }
 
 .theme-light .iconBackgroundTierNone__97677,.theme-light .iconBackgroundTierOne__97677,.theme-light .iconBackgroundTierThree__97677,.theme-light .iconBackgroundTierTwo__97677 {
@@ -2181,4 +2186,4 @@
     background-image: url(/assets/436b5a86429f186a.svg)
 }
 
-/*# sourceMappingURL=10cfdefb92435c95.css.map*/
+/*# sourceMappingURL=125f4e3a80ca990c.css.map*/

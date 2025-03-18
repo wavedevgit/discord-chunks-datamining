@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 846e443c43f25639
+  Original File Name: 11efed0ad66e5019
 **/
 .container__74da2 {
     position: relative;
@@ -2024,8 +2024,8 @@
     margin-left: -1px
 }
 
-.visual-refresh .dropdownButton__2637a {
-    color: var(--icon-tertiary)
+.visual-refresh .dropdownButtonBannerVisible__2637a {
+    color: var(--white)
 }
 
 .enable-forced-colors .container__2637a {
@@ -4813,7 +4813,9 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
 }
 
 .visual-refresh .sidebarListRounded_c48ade {
-    border-top-left-radius: var(--radius-md)
+    border-top-left-radius: var(--radius-md);
+    -webkit-backdrop-filter: blur(0);
+    backdrop-filter: blur(0)
 }
 
 .visual-refresh .sidebarResizeHandle_c48ade {
@@ -8596,4 +8598,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=846e443c43f25639.css.map*/
+/*# sourceMappingURL=11efed0ad66e5019.css.map*/

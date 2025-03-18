@@ -1,6 +1,6 @@
 /**
   Module ID: 57951
-  Original File Name: 26040e13612fdd79
+  Original File Name: 311f540504e8fe35
 **/
 .gatedContent__7184c {
     width: 100%;
@@ -49,11 +49,6 @@
     background-color: var(--primary-500)
 }
 
-.action__7184c {
-    margin-left: 8px;
-    margin-right: 8px
-}
-
 .theme-dark .background-opacity-low .description__7184c,.theme-dark .background-opacity-low .title__7184c {
     color: var(--white-500);
     text-shadow: 0 0 1px var(--primary-600),1px 1px 0 var(--primary-600)
@@ -97,4 +92,4 @@
     background-image: url(/assets/e3c1e91ba36094bc.svg)
 }
 
-/*# sourceMappingURL=26040e13612fdd79.css.map*/
+/*# sourceMappingURL=311f540504e8fe35.css.map*/

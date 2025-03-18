@@ -1,11 +1,11 @@
 /** Chunk was on 53494 **/
 let r;
 n.d(t, {
-  Z: () => o
+  Z: () => l
 });
 var i = n(145597);
 
-function o(e, t) {
+function l(e, t) {
   if (__OVERLAY__) {
     let e = t.getGame(),
       n = (0, i.getPID)();

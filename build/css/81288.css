@@ -1,10 +1,15 @@
 /**
   Module ID: 81288
-  Original File Name: 414ba692586a25f7
+  Original File Name: 0cceaad97fe4c46d
 **/
 .boostedGuildIconGem__97677 {
     transition: color .1s linear;
     height: 10px
+}
+
+.visual-refresh .boostedGuildIconGem__97677 {
+    height: 12px;
+    width: 12px
 }
 
 .theme-light .iconBackgroundTierNone__97677,.theme-light .iconBackgroundTierOne__97677,.theme-light .iconBackgroundTierThree__97677,.theme-light .iconBackgroundTierTwo__97677 {
@@ -474,4 +479,4 @@
     text-transform: none
 }
 
-/*# sourceMappingURL=414ba692586a25f7.css.map*/
+/*# sourceMappingURL=0cceaad97fe4c46d.css.map*/
