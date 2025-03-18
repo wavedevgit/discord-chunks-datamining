@@ -54,10 +54,10 @@ let L = Array(6).fill(0).map((e, t) => t),
   R = [, , , , ].fill(0).map((e, t) => t);
 
 function w(e) {
-  return (0, i.jsx)(M, T({}, e))
+  return (0, i.jsx)(k, T({}, e))
 }
 
-function M(e) {
+function k(e) {
   let {
     context: t,
     query: n,
@@ -113,7 +113,7 @@ function M(e) {
     searchQuery: n,
     textContent: r === y._b.TEXT ? _.NW.string(_.t.LSNOYW) : _.NW.string(_.t.Clu7Qk)
   }) : (0, i.jsxs)("div", {
-    children: [h && (0, i.jsx)(k, {
+    children: [h && (0, i.jsx)(M, {
       context: t,
       commandResults: f,
       query: n
@@ -127,7 +127,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   var t, n;
   let {
     context: r,
@@ -153,18 +153,18 @@ function k(e) {
     })
   }, [o.length, j, N]);
   let w = T || Z,
-    M = T ? P.Z.buttonTypes.VIEW_LESS : P.Z.buttonTypes.VIEW_MORE,
-    k = w ? o : b;
+    k = T ? P.Z.buttonTypes.VIEW_LESS : P.Z.buttonTypes.VIEW_MORE,
+    M = w ? o : b;
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)(P.Z, {
       title: _.NW.string(_.t["0hKkS0"]),
-      buttonType: M,
+      buttonType: k,
       onClickViewButton: m ? E : void 0
     }), (0, i.jsx)("div", {
       className: S.sectionContentContainer,
       ref: L,
       onTransitionEnd: R,
-      children: k.map((e, t) => {
+      children: M.map((e, t) => {
         let {
           command: n,
           application: l,

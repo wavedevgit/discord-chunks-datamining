@@ -78,7 +78,7 @@ let d = function(e) {
     isEdited: g = !1,
     application: j,
     tooltipPosition: h
-  } = e, x = new Date(d), v = (0, o.Hg)(x), P = i ? (0, o.vc)(x, "LT") : (0, o.Y4)(x), S = i ? (0, s.Z)(P) : null, w = g ? u.NW.formatToPlainString(u.t.CDzOFR, {
+  } = e, x = new Date(d), v = (0, o.Hg)(x), P = i ? (0, o.vc)(x, "LT") : (0, o.Y4)(x, !0), S = i ? (0, s.Z)(P) : null, w = g ? u.NW.formatToPlainString(u.t.CDzOFR, {
     timeFormatted: v
   }) : v;
   return (0, n.jsx)("span", {

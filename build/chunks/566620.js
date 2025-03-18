@@ -118,14 +118,15 @@ async function en(e) {
     secret: T,
     inviterUserId: N,
     instanceId: A,
-    isContextlessActivity: R
-  } = e, P = C.Z.getChannel(r), D = null !== (t = null == P ? void 0 : P.getGuildId()) && void 0 !== t ? t : void 0, L = (0, G.sq)();
-  if (!L && null == D && !(null !== (n = null == P ? void 0 : P.isPrivate()) && void 0 !== n && n)) return !1;
-  let x = (0, S.r)();
+    isContextlessActivity: R,
+    onConfirmActivityLaunchChecksAlertOpen: P
+  } = e, D = C.Z.getChannel(r), L = null !== (t = null == D ? void 0 : D.getGuildId()) && void 0 !== t ? t : void 0, x = (0, G.sq)();
+  if (!x && null == L && !(null !== (n = null == D ? void 0 : D.isPrivate()) && void 0 !== n && n)) return !1;
+  let M = (0, S.r)();
   try {
     a.Z.dispatch({
       type: "EMBEDDED_ACTIVITY_LAUNCH_START",
-      nonce: x,
+      nonce: M,
       applicationId: o,
       channelId: null != r ? r : null,
       componentId: d,
@@ -142,9 +143,9 @@ async function en(e) {
     if (null != e && (0, K.Z)({
         type: s ? q.q5t.LAUNCH : q.q5t.JOIN,
         userId: null == e ? void 0 : e.id,
-        guildId: D,
+        guildId: L,
         channelId: r,
-        channelType: null == P ? void 0 : P.type,
+        channelType: null == D ? void 0 : D.type,
         applicationId: o,
         locationObject: c,
         analyticsLocations: null != l ? l : [],
@@ -153,25 +154,29 @@ async function en(e) {
         referrerId: E,
         inviterUserId: N
       }), s && null != r) {
-      if (!er(o, P)) throw new y.Z(y.Z.Reasons.INVALID_CHANNEL);
-      if (!await ei({
-          applicationId: o,
-          nonce: x,
-          channelId: r,
-          guildId: D,
-          commandOrigin: _,
-          sectionName: p,
-          source: h,
-          onExecutedCallback: g,
-          clientSupportsContextlessActivityLaunch: L
-        })) throw new y.Z(y.Z.Reasons.PRIMARY_APP_COMMAND_NOT_FOUND)
+      if (!er(o, D)) throw new y.Z(y.Z.Reasons.INVALID_CHANNEL);
+      let e = await ei({
+        applicationId: o,
+        nonce: M,
+        channelId: r,
+        guildId: L,
+        commandOrigin: _,
+        sectionName: p,
+        source: h,
+        onExecutedCallback: g,
+        clientSupportsContextlessActivityLaunch: x,
+        onConfirmActivityLaunchChecksAlertOpen: P,
+        embeddedActivitiesManager: u,
+        isContextlessActivity: R
+      });
+      if ("failure" === e.result && 4 !== e.reason) throw new y.Z(y.Z.Reasons.PRIMARY_APP_COMMAND_NOT_FOUND)
     } else {
       let e = await eo({
         applicationId: o,
         channelId: r,
         embeddedActivitiesManager: u,
         isStart: s,
-        guildId: D,
+        guildId: L,
         joinUserId: v,
         joinSessionId: I,
         secret: T,
@@ -182,15 +187,15 @@ async function en(e) {
     }
     a.Z.dispatch({
       type: "EMBEDDED_ACTIVITY_LAUNCH_SUCCESS",
-      nonce: x,
+      nonce: M,
       applicationId: o,
       channelId: null != r ? r : null
     })
   } catch (t) {
-    let e = R ? i.E.CONTEXTLESS : null != D ? i.E.GUILD_CHANNEL : i.E.PRIVATE_CHANNEL;
+    let e = R ? i.E.CONTEXTLESS : null != L ? i.E.GUILD_CHANNEL : i.E.PRIVATE_CHANNEL;
     return a.Z.dispatch({
       type: "EMBEDDED_ACTIVITY_LAUNCH_FAIL",
-      nonce: x,
+      nonce: M,
       applicationId: o,
       channelId: null != r ? r : null,
       isStart: s,
@@ -218,15 +223,22 @@ async function ei(e) {
     sectionName: a,
     source: s,
     onExecutedCallback: l,
-    clientSupportsContextlessActivityLaunch: c
-  } = e, u = null;
+    clientSupportsContextlessActivityLaunch: c,
+    onConfirmActivityLaunchChecksAlertOpen: u,
+    embeddedActivitiesManager: d,
+    isContextlessActivity: b
+  } = e, v = null;
   try {
-    u = await (0, g.ZP)(r, t)
+    v = await (0, g.ZP)(r, t)
   } catch (e) {
-    if (e.message === g.sV) return !1;
+    if (e.message === g.sV) return {
+      result: "failure",
+      reason: 1
+    };
     throw e
   }
-  if (!(u.handler !== _.VC.APP_HANDLER || Q.Yq.includes(t))) {
+  let y = v.handler !== _.VC.APP_HANDLER;
+  if (!(y || Q.Yq.includes(t))) {
     null != r && await (0, h.FN)({
       type: "channel",
       channelId: r
@@ -237,18 +249,46 @@ async function ei(e) {
     if (!await (0, p.L)({
         applicationId: t,
         channel: e,
-        commandIntegrationTypes: u.integration_types
-      })) return !1
+        commandIntegrationTypes: v.integration_types
+      })) return {
+      result: "failure",
+      reason: 2
+    }
   }
-  let d = C.Z.getChannel(r),
-    E = null != i ? R.Z.getGuild(i) : null;
-  return null != d && (await new Promise((e, _) => {
+  let I = C.Z.getChannel(r),
+    S = null != i ? R.Z.getGuild(i) : null;
+  if (null == I) return {
+    result: "failure",
+    reason: 3
+  };
+  if (y) {
+    let e;
+    let n = E.Z.getApplication(t),
+      r = B.ZP.getCurrentEmbeddedActivity();
+    (null == r ? void 0 : r.applicationId) != null && (e = E.Z.getApplication(null == r ? void 0 : r.applicationId));
+    let i = w.default.getCurrentUser();
+    if (null != i && !await (0, F.p)({
+        applicationId: t,
+        application: n,
+        channel: I,
+        isContextless: null != b && b,
+        currentEmbeddedApplication: e,
+        embeddedActivitiesManager: d,
+        user: i,
+        onConfirmActivityLaunchChecksAlertOpen: u,
+        shouldClosePopoutOnLeaveCurrentEmbeddedApplication: !1
+      })) return {
+      result: "failure",
+      reason: 4
+    }
+  }
+  return await new Promise((e, u) => {
     (0, m.Z)({
-      command: u,
+      command: v,
       optionValues: {},
       context: {
-        channel: d,
-        guild: E
+        channel: I,
+        guild: S
       },
       commandOrigin: o,
       sectionName: a,
@@ -264,23 +304,25 @@ async function ei(e) {
             channel_id: r,
             guild_id: i,
             application_id: t,
-            channel_type: null == d ? void 0 : d.type,
+            channel_type: null == I ? void 0 : I.type,
             error_code: e,
             error_message: n,
             error_status: o,
             error_reason_code: a,
             source: s
-          }), null != e && null != n && null != o ? _(new f.Z({
+          }), null != e && null != n && null != o ? u(new f.Z({
             status: o,
             body: {
               message: n,
               code: e
             }
-          })) : null != a && a in O.Z.ReasonCodes ? _(new O.Z(a)) : _(new O.Z(O.Z.ReasonCodes.UNKNOWN))
+          })) : null != a && a in O.Z.ReasonCodes ? u(new O.Z(a)) : u(new O.Z(O.Z.ReasonCodes.UNKNOWN))
         }
       })
     })
-  }), !0)
+  }), {
+    result: "success"
+  }
 }
 async function eo(e) {
   let t, {

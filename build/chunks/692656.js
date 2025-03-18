@@ -35,8 +35,8 @@ var i = n(200651),
   Z = n(424602),
   R = n(541099),
   w = n(827498),
-  M = n(87005),
-  k = n(219066),
+  k = n(87005),
+  M = n(219066),
   D = n(106066),
   W = n(783097),
   U = n(695676),
@@ -197,7 +197,7 @@ function eo(e) {
   } = e, o = n === w._b.VOICE, {
     frecentApps: a,
     loading: s
-  } = (0, M.f)({
+  } = (0, k.f)({
     context: t,
     onlyActivityApps: o,
     allowCommandFetch: !0,
@@ -339,7 +339,7 @@ function es(e) {
   } = e, r = w.L3.APPS_IN_THIS_SERVER, {
     appsInThisServer: o,
     isLoading: a
-  } = (0, k.Z)({
+  } = (0, M.Z)({
     context: t
   }), {
     items: s,

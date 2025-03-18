@@ -114,15 +114,16 @@ function O(e) {
     source: h,
     fetchesApplication: v = !0,
     customId: b,
-    referrerId: N
-  } = e, g = C({
+    referrerId: N,
+    onConfirmActivityLaunchChecksAlertOpen: g
+  } = e, x = C({
     context: i,
     applicationId: t,
     fetchesApplication: v
   }), {
-    analyticsLocations: x
-  } = (0, o.ZP)(), j = (0, y.Z)();
-  switch (g) {
+    analyticsLocations: j
+  } = (0, o.ZP)(), E = (0, y.Z)();
+  switch (x) {
     case 0:
       return async () => {
         let e = "channel" === i.type ? i.channel.id : void 0;
@@ -135,13 +136,14 @@ function O(e) {
           targetApplicationId: t,
           locationObject: r,
           channelId: e,
-          analyticsLocations: x,
+          analyticsLocations: j,
           componentId: c,
           commandOrigin: m,
           sectionName: f,
           source: h,
           customId: b,
-          referrerId: N
+          referrerId: N,
+          onConfirmActivityLaunchChecksAlertOpen: g
         }).then(e => e && (null == s ? void 0 : s({
           applicationId: t
         })))
@@ -152,7 +154,7 @@ function O(e) {
           applicationId: t,
           activityChannelId: "channel" === i.type ? i.channel.id : void 0,
           locationObject: r,
-          analyticsLocations: x,
+          analyticsLocations: j,
           componentId: c,
           sectionName: f,
           source: h,
@@ -166,8 +168,8 @@ function O(e) {
       };
     case 2:
       return () => {
-        u.ZP.isLaunchingActivity() || (null != j && a.leaveActivity({
-          location: j.location,
+        u.ZP.isLaunchingActivity() || (null != E && a.leaveActivity({
+          location: E.location,
           applicationId: t
         }), null == s || s({
           applicationId: t

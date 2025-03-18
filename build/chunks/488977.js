@@ -55,7 +55,7 @@ function S(e) {
     context: S,
     className: T,
     sectionName: L
-  } = e, Z = (0, o.e7)([j.Z], () => j.Z.entrypoint()), R = (0, E.L1)(l), w = (0, x.Eb)(R), M = (0, u.R)(l.id), k = (0, o.e7)([v.Z], () => {
+  } = e, Z = (0, o.e7)([j.Z], () => j.Z.entrypoint()), R = (0, E.L1)(l), w = (0, x.Eb)(R), k = (0, u.R)(l.id), M = (0, o.e7)([v.Z], () => {
     var e;
     return null !== (e = v.Z.getGuildId()) && void 0 !== e ? e : void 0
   }, []), D = {
@@ -106,7 +106,7 @@ function S(e) {
           "aria-label": A.NW.string(A.t.AXIHpa),
           onSelect: void 0,
           children: [(0, i.jsxs)(a.kSQ, {
-            children: [M && (0, i.jsx)(a.sNh, {
+            children: [k && (0, i.jsx)(a.sNh, {
               id: "open-storefront",
               label: A.NW.string(A.t.kRvlKC),
               action: () => {
@@ -118,7 +118,7 @@ function S(e) {
                     transitionState: t.transitionState,
                     onClose: t.onClose,
                     appId: l.id,
-                    guildId: k
+                    guildId: M
                   })
                 })
               }

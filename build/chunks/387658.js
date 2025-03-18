@@ -36,7 +36,7 @@ var i = n(200651),
 let R = "placeholder",
   w = [, , , , , ].fill(R);
 
-function M(e) {
+function k(e) {
   var t, n;
   let {
     context: r,
@@ -87,7 +87,7 @@ function M(e) {
   })
 }
 
-function k() {
+function M() {
   let e = (0, c.e7)([p.Z], () => p.Z.useReducedMotion),
     {
       styleLarge: t,
@@ -207,7 +207,7 @@ function W(e) {
     }), (0, i.jsx)("ul", {
       className: Z.commandContainer,
       "aria-label": r,
-      children: n.map((e, n) => e === R ? (0, i.jsx)(k, {}, e + n) : (0, i.jsx)(M, {
+      children: n.map((e, n) => e === R ? (0, i.jsx)(M, {}, e + n) : (0, i.jsx)(k, {
         context: t,
         command: e,
         section: l,

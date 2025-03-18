@@ -74,20 +74,21 @@ function _(e) {
     autoDismissOnClick: a = !0,
     launchingComponentId: c,
     submitting: y = !1,
-    fetchesApplication: b = !0
-  } = e, N = (0, d.O)(), O = (0, p.Qv)({
+    fetchesApplication: b = !0,
+    onConfirmActivityLaunchChecksAlertOpen: N
+  } = e, O = (0, d.O)(), A = (0, p.Qv)({
     context: t,
     applicationId: n.id,
     fetchesApplication: b
-  }), A = (0, E.Q)(O), I = (0, s.e7)([x.Z], () => x.Z.entrypoint()), _ = r.useMemo(() => {
+  }), I = (0, E.Q)(A), _ = (0, s.e7)([x.Z], () => x.Z.entrypoint()), S = r.useMemo(() => {
     var e, i, l;
     if ("channel" !== t.type) return null !== (l = null === (e = n.bot) || void 0 === e ? void 0 : e.id) && void 0 !== l ? l : null === (i = (0, h.If)(t, n.id).descriptor) || void 0 === i ? void 0 : i.botId
-  }, [t, n.id, n.bot]), S = (0, p.w1)({
+  }, [t, n.id, n.bot]), T = (0, p.w1)({
     applicationId: n.id,
-    botUserIdForAppDM: _,
+    botUserIdForAppDM: S,
     embeddedActivitiesManager: m.Z,
     context: t,
-    locationObject: N.location,
+    locationObject: O.location,
     onActivityItemSelectedProp: e => {
       let {
         applicationId: t
@@ -96,21 +97,22 @@ function _(e) {
         location: i,
         application_id: t,
         section_name: l,
-        action: A,
-        source: I
+        action: I,
+        source: _
       })
     },
     launchingComponentId: c,
     commandOrigin: v.bB.APPLICATION_LAUNCHER,
     sectionName: l,
-    source: I,
-    fetchesApplication: b
-  }), T = u.Ttl.BRAND, L = null != o ? o : C.NW.string(C.t.zKX8Nj);
-  return A === p.JS.JOIN ? (T = u.Ttl.GREEN, L = C.NW.string(C.t.d9PsMj)) : A !== p.JS.LEAVE || y || (T = u.Ttl.RED, L = C.NW.string(C.t["Hi1/aW"])), {
-    onActivityItemSelected: S,
-    activityAction: A,
-    buttonColor: T,
-    buttonText: L
+    source: _,
+    fetchesApplication: b,
+    onConfirmActivityLaunchChecksAlertOpen: N
+  }), L = u.Ttl.BRAND, Z = null != o ? o : C.NW.string(C.t.zKX8Nj);
+  return I === p.JS.JOIN ? (L = u.Ttl.GREEN, Z = C.NW.string(C.t.d9PsMj)) : I !== p.JS.LEAVE || y || (L = u.Ttl.RED, Z = C.NW.string(C.t["Hi1/aW"])), {
+    onActivityItemSelected: T,
+    activityAction: I,
+    buttonColor: L,
+    buttonText: Z
   }
 }
 

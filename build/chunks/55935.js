@@ -55,11 +55,17 @@ function E(e, t) {
 }
 
 function b(e) {
-  let t;
-  let n = i().localeData(),
-    r = i()(),
-    o = h(O(e), r.toDate());
-  return o < -1 ? E(e, "L LT") : (t = o < 0 ? "lastDay" : o < 1 ? "sameDay" : o < 2 ? "nextDay" : "sameElse", E(e, n.calendar(t, y(e), r)))
+  let t, n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+    r = i().localeData(),
+    o = i()(),
+    a = h(O(e), o.toDate());
+  if (a < -1) return E(e, "L LT");
+  if (a < 0) t = "lastDay";
+  else if (a < 1) {
+    if (n) return E(e, "LT");
+    t = "sameDay"
+  } else t = a < 2 ? "nextDay" : "sameElse";
+  return E(e, r.calendar(t, y(e), o))
 }
 
 function v(e) {

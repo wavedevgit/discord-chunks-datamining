@@ -37,8 +37,8 @@ var i, l = n(200651),
   Z = n(226026),
   R = n(570949),
   w = n(753972),
-  M = n(981631),
-  k = n(217702),
+  k = n(981631),
+  M = n(217702),
   D = n(388032),
   W = n(219954),
   U = n(413097),
@@ -412,7 +412,7 @@ function $(e) {
         onAnimationEnd: () => n ? null : u(!1),
         children: (0, l.jsx)(E.Z, {
           src: s,
-          mediaLayoutType: k.hV.MOSAIC,
+          mediaLayoutType: M.hV.MOSAIC,
           loop: !0,
           autoPlay: !0,
           muted: !0
@@ -477,7 +477,7 @@ function en(e) {
     pushHistory: s
   } = (0, T.hH)();
   return r.useCallback(e => {
-    e.stopPropagation(), (0, x.yw)(M.rMx.APPLICATION_COMMAND_SECTION_SELECTED, {
+    e.stopPropagation(), (0, x.yw)(k.rMx.APPLICATION_COMMAND_SECTION_SELECTED, {
       application_id: t.id,
       section_name: n,
       search_results_position: i,

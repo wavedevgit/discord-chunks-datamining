@@ -74,7 +74,8 @@ class y extends f.Z {
     let {
       location: t,
       applicationId: n,
-      showFeedback: r
+      showFeedback: r,
+      shouldClosePopout: o = !0
     } = e;
     a.Z.wait(() => {
       (0, d.mW)({
@@ -84,7 +85,7 @@ class y extends f.Z {
       })
     }), (0, u.R)({
       isContextless: t.kind === i.E.CONTEXTLESS
-    }) && (0, c.xv)(m.KJ3.ACTIVITY_POPOUT)
+    }) && o && (0, c.xv)(m.KJ3.ACTIVITY_POPOUT)
   }
   hidePIPEmbed(e) {
     let {

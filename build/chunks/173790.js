@@ -35,10 +35,10 @@ function E(e) {
   } = l.useMemo(() => (0, f.sl)(O, {
     fakeAppIconURL: j,
     size: 84
-  }), [O]), Z = (0, u.PL)(!0, !0), R = (0, u.LD)(null == E ? void 0 : E.guild_id, !0), w = l.useMemo(() => (0, u.If)(n, O.id), [Z, R, n, O.id]), M = !w.isGuildInstalled && !w.isUserInstalled;
+  }), [O]), Z = (0, u.PL)(!0, !0), R = (0, u.LD)(null == E ? void 0 : E.guild_id, !0), w = l.useMemo(() => (0, u.If)(n, O.id), [Z, R, n, O.id]), k = !w.isGuildInstalled && !w.isUserInstalled;
   return l.useEffect(() => {
-    M && u.ZP.queryInstallOnDemandApp(O.id, null == E ? void 0 : E.id)
-  }, [O.id, null == E ? void 0 : E.id, M]), (0, i.jsxs)(a.u2D, {
+    k && u.ZP.queryInstallOnDemandApp(O.id, null == E ? void 0 : E.id)
+  }, [O.id, null == E ? void 0 : E.id, k]), (0, i.jsxs)(a.u2D, {
     className: x.container,
     fade: !0,
     ref: I,
@@ -67,7 +67,7 @@ function E(e) {
       context: n,
       application: O,
       sectionName: c,
-      installOnDemand: M,
+      installOnDemand: k,
       setHasCommands: S
     }) : null]
   })
