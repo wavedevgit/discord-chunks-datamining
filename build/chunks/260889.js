@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(442837),
-  o = n(481060),
-  a = n(287734),
+  a = n(481060),
+  o = n(287734),
   s = n(367907),
   c = n(359110),
   u = n(769654),
@@ -52,10 +52,10 @@ function _(e) {
   let t = i.useContext(h.AnalyticsContext),
     n = e.voiceChannels[0],
     _ = (0, l.e7)([d.Z], () => null != n && d.Z.can(f.Plq.CONNECT, n.channel));
-  return null == n ? null : [(0, r.jsx)(o.sNh, {
+  return null == n ? null : [(0, r.jsx)(a.sNh, {
     id: "join-voice",
     action: function() {
-      (0, c.Kh)(n.channel.id), a.default.selectVoiceChannel(n.channel.id), s.ZP.trackWithMetadata(f.rMx.ACTIVITY_FEED_VOICE_CHANNEL_VISITED, m({
+      (0, c.Kh)(n.channel.id), o.default.selectVoiceChannel(n.channel.id), s.ZP.trackWithMetadata(f.rMx.ACTIVITY_FEED_VOICE_CHANNEL_VISITED, m({
         source: b(m({}, t.location), {
           object: f.qAy.LIST_ITEM
         }),
@@ -65,7 +65,7 @@ function _(e) {
     },
     label: g.NW.string(g.t["8yOlh4"]),
     disabled: !_
-  }, "join-voice"), (0, r.jsx)(o.sNh, {
+  }, "join-voice"), (0, r.jsx)(a.sNh, {
     id: "goto-server",
     action: function() {
       (0, u.X)(n.guild.id), s.ZP.trackWithMetadata(f.rMx.ACTIVITY_FEED_GUILD_VISITED, m({

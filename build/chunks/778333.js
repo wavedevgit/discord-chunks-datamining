@@ -25,26 +25,26 @@ function v(e) {
     invite: n,
     getAcceptInviteContext: v
   } = e, y = (0, a.e7)([p.default], () => p.default.getId()), x = (null === (t = n.inviter) || void 0 === t ? void 0 : t.id) === y, E = n.state === g.r2o.ACCEPTING, {
-    analyticsLocations: O
-  } = (0, c.ZP)(s.Z.INVITE_EMBED), j = (0, a.e7)([f.Z], () => {
+    analyticsLocations: j
+  } = (0, c.ZP)(s.Z.INVITE_EMBED), O = (0, a.e7)([f.Z], () => {
     var e;
     return null != n.inviter && f.Z.isFriend(null === (e = n.inviter) || void 0 === e ? void 0 : e.id)
   }), N = i.useCallback(() => {
     let e = "noop";
-    null != n.inviter && null != m.Z.getDMFromUserId(n.inviter.id) && (e = "transition", o.Z.openPrivateChannel([n.inviter.id])), (0, l.r$)(n, e, O)
-  }, [n, O]), C = i.useCallback(() => {
-    (0, l.r$)(n, "accept", O);
+    null != n.inviter && null != m.Z.getDMFromUserId(n.inviter.id) && (e = "transition", o.Z.openPrivateChannel([n.inviter.id])), (0, l.r$)(n, e, j)
+  }, [n, j]), C = i.useCallback(() => {
+    (0, l.r$)(n, "accept", j);
     let e = v("Invite Button Embed");
     l.ZP.acceptInviteAndTransitionToInviteChannel({
       inviteKey: n.code,
       context: e
     })
-  }, [n, O, v]);
+  }, [n, j, v]);
   if (null == n.inviter) return null;
-  let I = j ? N : C,
+  let I = O ? N : C,
     S = _.NW.string(_.t.ib7Ng4),
     T = d.Z.Button.Colors.GREEN;
-  j ? (S = _.NW.string(_.t.xhxnPj), T = d.Z.Button.Colors.PRIMARY) : x && (S = _.NW.string(_.t.ib7Ng4), T = d.Z.Button.Colors.PRIMARY);
+  O ? (S = _.NW.string(_.t.xhxnPj), T = d.Z.Button.Colors.PRIMARY) : x && (S = _.NW.string(_.t.ib7Ng4), T = d.Z.Button.Colors.PRIMARY);
   let P = x ? _.NW.string(_.t.eQyu1N) : _.NW.string(_.t.PYJHW1),
     A = null != n.inviter ? "".concat(n.inviter.username) : "",
     w = null != n.inviter ? h.ZP.getUserTag(n.inviter) : "";
@@ -56,10 +56,10 @@ function v(e) {
         className: b.headerLine,
         children: [(0, r.jsx)(d.Z.Icon, {
           user: new u.Z(n.inviter),
-          onClick: j ? I : void 0
+          onClick: O ? I : void 0
         }), (0, r.jsx)(d.Z.Info, {
           title: A,
-          onClick: j ? I : void 0,
+          onClick: O ? I : void 0,
           children: w
         })]
       }), (0, r.jsx)(d.Z.Button, {

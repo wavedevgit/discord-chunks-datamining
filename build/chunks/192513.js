@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => f
 });
-var r, i, l, o = n(442837),
-  a = n(570140),
+var r, i, l, a = n(442837),
+  o = n(570140),
   s = n(984933),
   c = n(594174),
   u = n(981631);
@@ -14,7 +14,7 @@ function p() {
   if (null == e || e.mfaEnabled === d) return !1;
   d = e.mfaEnabled
 }
-class h extends(l = o.ZP.Store) {
+class h extends(l = a.ZP.Store) {
   initialize() {
     this.waitFor(c.default, s.ZP), this.syncWith([c.default, s.ZP], p)
   }
@@ -28,7 +28,7 @@ i = "GuildMFAWarningStore", (r = "displayName") in h ? Object.defineProperty(h, 
   configurable: !0,
   writable: !0
 }) : h[r] = i;
-let f = new h(a.Z, {
+let f = new h(o.Z, {
   CONNECTION_OPEN: p,
   GUILD_UPDATE: function() {
     return !0

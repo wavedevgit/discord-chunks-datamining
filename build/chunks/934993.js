@@ -5,11 +5,11 @@ n.d(t, {
 var r = n(570140),
   i = n(996106),
   l = n(452426),
-  o = n(186901),
-  a = n(981631);
+  a = n(186901),
+  o = n(981631);
 let s = {
-  [a.Etm.SET_CONFIG]: {
-    scope: o.wE,
+  [o.Etm.SET_CONFIG]: {
+    scope: a.wE,
     validation: e => (0, l.Z)(e).required().keys({
       use_interactive_pip: e.boolean()
     }),
@@ -20,11 +20,11 @@ let s = {
           use_interactive_pip: n
         }
       } = e;
-      if (t.transport !== o.He.POST_MESSAGE) throw new i.Z({
-        errorCode: a.lTL.INVALID_COMMAND
+      if (t.transport !== a.He.POST_MESSAGE) throw new i.Z({
+        errorCode: o.lTL.INVALID_COMMAND
       }, 'command not available from "'.concat(t.transport, " transport"));
       if (null == t.application.id) throw new i.Z({
-        errorCode: a.lTL.INVALID_COMMAND
+        errorCode: o.lTL.INVALID_COMMAND
       }, "invalid application");
       return r.Z.dispatch({
         type: "EMBEDDED_ACTIVITY_SET_CONFIG",

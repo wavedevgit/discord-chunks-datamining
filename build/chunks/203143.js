@@ -23,8 +23,8 @@ var r = n(512722),
   y = n(314897),
   x = n(592125),
   E = n(703558),
-  O = n(607744),
-  j = n(375954),
+  j = n(607744),
+  O = n(375954),
   N = n(117530),
   C = n(553803),
   I = n(316758),
@@ -116,7 +116,7 @@ function L(e) {
     });
     return
   }
-  let a = j.Z.getMessage(t, n);
+  let a = O.Z.getMessage(t, n);
   if (null == a || null == a.poll || 0 === a.poll.answers.length) return;
   let o = null != r ? r : String(a.poll.answers[0].answer_id);
   C.A({
@@ -147,7 +147,7 @@ function W(e) {
   let {
     channelId: t,
     messageId: n
-  } = e, r = j.Z.getMessage(t, n);
+  } = e, r = O.Z.getMessage(t, n);
   return null == r ? [] : r.reactions.flatMap(e => !0 === e.me_vote ? e.emoji.name : [])
 }
 async function F(e) {
@@ -200,7 +200,7 @@ async function U(e) {
     });
     return
   }
-  if (!O.Z.canChatInGuild(r.guild_id)) {
+  if (!j.Z.canChatInGuild(r.guild_id)) {
     u.Z.show({
       title: w.NW.string(w.t.p245ws),
       body: w.NW.string(w.t["U/uodn"])
@@ -308,7 +308,7 @@ async function G(e) {
         (0, T.eu)(t, n, e => {
           var r, i;
           let a = null == e || !e.showResults,
-            o = j.Z.getMessage(t, n),
+            o = O.Z.getMessage(t, n),
             l = null != o ? o.reactions.reduce((e, t) => {
               var n, r;
               return e + (null !== (r = null === (n = t.count_details) || void 0 === n ? void 0 : n.vote) && void 0 !== r ? r : 0)
@@ -354,7 +354,7 @@ let H = {
       let {
         channelId: t,
         messageId: n
-      } = e, r = j.Z.getMessage(t, n);
+      } = e, r = O.Z.getMessage(t, n);
       if (null != r) return {
         message: r,
         channelId: t,

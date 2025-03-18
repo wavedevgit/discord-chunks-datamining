@@ -22,8 +22,8 @@ var r = n(200651),
   y = n(406432),
   x = n(348238),
   E = n(38267),
-  O = n(184301),
-  j = n(347475),
+  j = n(184301),
+  O = n(347475),
   N = n(695346),
   C = n(271383),
   I = n(594174),
@@ -99,12 +99,12 @@ function F(e) {
     }), B.canAccess ? (0, v.Z)(Z.Z5c.CHANNEL(B.guildId, B.threadId, B.messageId)) : J ? (0, v.Z)(Z.Z5c.CHANNEL(B.guildId, B.parentChannelId)) : await T.Ub(B.guildId, {}, {
       channelId: B.parentChannelId
     }))
-  }, [B, U, J]), ec = i.useCallback(() => (s()((null == B ? void 0 : B.authorId) != null, "Author Id cannot be null when loading user profile"), (0, O.Z)(B.authorId, B.avatarUrl, {
+  }, [B, U, J]), ec = i.useCallback(() => (s()((null == B ? void 0 : B.authorId) != null, "Author Id cannot be null when loading user profile"), (0, j.Z)(B.authorId, B.avatarUrl, {
     guildId: B.guildId,
     channelId: U.id
   })), [B, U]);
   if (null == B) return null;
-  let ed = (e, t) => (s()(null != B.authorId, "Author Id cannot be null when rendering user popout"), (0, r.jsx)(j.Z, W(M({}, e), {
+  let ed = (e, t) => (s()(null != B.authorId, "Author Id cannot be null when rendering user popout"), (0, r.jsx)(O.Z, W(M({}, e), {
       userId: B.authorId,
       guildId: B.guildId,
       channelId: U.id,

@@ -22,8 +22,8 @@ var r = n(200651),
   y = n(866104),
   x = n(886176),
   E = n(981631),
-  O = n(388032),
-  j = n(952626);
+  j = n(388032),
+  O = n(952626);
 
 function N(e) {
   var t;
@@ -64,16 +64,16 @@ function N(e) {
   });
   let P = S.length > 0 ? new Date(Math.min(...S.map(e => Date.parse(e.published_at)))) : void 0;
   return N || !I ? (0, r.jsx)("div", {
-    className: o()(j.guildShopEmbed, j.spinnerContainer),
+    className: o()(O.guildShopEmbed, O.spinnerContainer),
     children: (0, r.jsx)(d.$jN, {})
   }) : null == a || null == C ? null : (0, r.jsxs)("div", {
-    className: j.guildShopEmbed,
+    className: O.guildShopEmbed,
     children: [(0, r.jsx)(y.Z, {
       coverImageAsset: null !== (t = C.cover_image_asset) && void 0 !== t ? t : null
     }), (0, r.jsx)(d.LZC, {
       size: 16
     }), (0, r.jsxs)("div", {
-      className: j.serverShopLabel,
+      className: O.serverShopLabel,
       children: [(0, r.jsx)(x.Z, {
         height: "16px",
         width: "16px",
@@ -81,15 +81,15 @@ function N(e) {
       }), (0, r.jsx)(d.X6q, {
         variant: "heading-sm/semibold",
         color: "interactive-normal",
-        className: j.serverShopLabelText,
-        children: O.NW.string(O.t.al5EXF)
+        className: O.serverShopLabelText,
+        children: j.NW.string(j.t.al5EXF)
       })]
     }), (0, r.jsx)(d.LZC, {
       size: 16
     }), (0, r.jsx)(d.X6q, {
       variant: "heading-md/semibold",
       color: "text-normal",
-      children: O.NW.format(O.t.NZeik5, {
+      children: j.NW.format(j.t.NZeik5, {
         guildName: a.name
       })
     }), (0, r.jsx)(d.LZC, {
@@ -104,16 +104,16 @@ function N(e) {
     }), (0, r.jsx)(g.Z, {}), (0, r.jsx)(d.LZC, {
       size: 16
     }), (0, r.jsxs)("div", {
-      className: j.guildShopEmbedFooter,
+      className: O.guildShopEmbedFooter,
       children: [(0, r.jsx)(m.Z, {
         guild: a
       }), (0, r.jsxs)("ul", {
-        className: j.guildShopSummary,
+        className: O.guildShopSummary,
         children: [(0, r.jsx)("li", {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: O.NW.format(O.t.tKZNlZ, {
+            children: j.NW.format(j.t.tKZNlZ, {
               listingCount: S.length
             })
           })
@@ -121,23 +121,23 @@ function N(e) {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: O.NW.format(O.t["kXr8+f"], {
+            children: j.NW.format(j.t["kXr8+f"], {
               createdYear: P.getFullYear()
             })
           })
         })]
       }), (0, r.jsx)(d.zxk, {
-        className: j.guildShopEmbedCta,
+        className: O.guildShopEmbedCta,
         onClick: T,
         children: (0, r.jsxs)("div", {
-          className: j.guildShopEmbedCtaContent,
+          className: O.guildShopEmbedCtaContent,
           children: [(0, r.jsx)(x.Z, {
             height: "18px",
             width: "18px"
           }), (0, r.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: "always-white",
-            children: O.NW.string(O.t.jXx1CA)
+            children: j.NW.string(j.t.jXx1CA)
           })]
         })
       })]

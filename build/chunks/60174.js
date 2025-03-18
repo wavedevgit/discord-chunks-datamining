@@ -22,8 +22,8 @@ var r = n(200651),
   y = n(833803),
   x = n(566006),
   E = n(981631),
-  O = n(185923),
-  j = n(474936),
+  j = n(185923),
+  O = n(474936),
   N = n(388032),
   C = n(672164),
   I = n(482532);
@@ -68,7 +68,7 @@ class P extends i.Component {
     !h && m && (g = (0, r.jsx)(p.X, {
       tooltipText: N.NW.string(N.t.Kfcszs)
     }));
-    let j = a ? I : C,
+    let O = a ? I : C,
       {
         canShowImprovedReactionButton: S
       } = y.Z.getCurrentConfig({
@@ -79,8 +79,8 @@ class P extends i.Component {
       P = {
         size: "sm",
         color: "currentColor",
-        className: o()(j.icon, {
-          [j.largeIcon]: S
+        className: o()(O.icon, {
+          [O.largeIcon]: S
         })
       };
     return (0, r.jsx)(d.yRy, {
@@ -97,17 +97,17 @@ class P extends i.Component {
           text: g,
           color: d.FGA.PRIMARY,
           "aria-label": m ? N.NW.string(N.t.Kfcszs) : N.NW.string(N.t.lfIHs7),
-          tooltipClassName: j.__invalid_addReactionTooltip,
+          tooltipClassName: O.__invalid_addReactionTooltip,
           children: (0, r.jsxs)(d.P3F, (a = T({}, e), s = s = {
             tabIndex: l,
             onClick: e => {
               this.handleAddReactionClick(e)
             },
-            onMouseEnter: () => (0, u.x)(O.qR.AddReactionPopoutMouseEntered),
-            onFocus: () => (0, u.x)(O.qR.AddReactionPopoutFocused),
-            className: o()(j.reactionBtn, {
-              [j.active]: c,
-              [j.largeReactionBtn]: S
+            onMouseEnter: () => (0, u.x)(j.qR.AddReactionPopoutMouseEntered),
+            onFocus: () => (0, u.x)(j.qR.AddReactionPopoutFocused),
+            className: o()(O.reactionBtn, {
+              [O.active]: c,
+              [O.largeReactionBtn]: S
             }, n),
             children: [m ? (0, r.jsx)(d.Pt5, T({}, P)) : (0, r.jsx)(d.EO4, T({}, P)), i]
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
@@ -150,7 +150,7 @@ class P extends i.Component {
       let r = _.default.getCurrentUser();
       t !== x.O.BURST || (0, v.I5)(r) || (0, m.m)({
         analytics: {
-          type: j.cd.BURST_REACTION_UPSELL,
+          type: O.cd.BURST_REACTION_UPSELL,
           page: null != n.getGuildId() ? E.ZY5.GUILD_CHANNEL : E.ZY5.DM_CHANNEL,
           section: (0, h.s4)(n),
           object: E.qAy.INLINE_REACTION_PICKER_UPSELL

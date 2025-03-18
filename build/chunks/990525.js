@@ -45,7 +45,7 @@ let y = e => {
   } = e, {
     activeVoice: y,
     mostRecentlyRequestedVoiceId: x
-  } = (0, h.o)(), E = (0, f.z)(t.id), O = t.id === y, j = !t.available && !t.temporarilyAvailable, N = t.temporarilyAvailable && !n && !O, C = !O && t.id === x, [I, S] = i.useState(!1);
+  } = (0, h.o)(), E = (0, f.z)(t.id), j = t.id === y, O = !t.available && !t.temporarilyAvailable, N = t.temporarilyAvailable && !n && !j, C = !j && t.id === x, [I, S] = i.useState(!1);
   i.useEffect(() => {
     let e = C ? setTimeout(() => S(C), 200) : void 0;
     return () => {
@@ -64,10 +64,10 @@ let y = e => {
     }),
     D = b[t.styleKey],
     L = i.useCallback(() => {
-      n || !j ? ((0, p.v6)(y === t.id ? null : t.id, a), N && u.default.track(g.rMx.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, v({
+      n || !O ? ((0, p.v6)(y === t.id ? null : t.id, a), N && u.default.track(g.rMx.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, v({
         voice_filter_id: t.id
       }, (0, m.w)(a)))) : (0, c.i)()
-    }, [n, j, y, t.id, a, N]),
+    }, [n, O, y, t.id, a, N]),
     M = i.useCallback(() => {
       u.default.track(g.rMx.VOICE_FILTER_PREVIEW_PLAYED, v({
         voice_filter_id: t.id
@@ -78,8 +78,8 @@ let y = e => {
     W = null != E ? _.NW.string(E.name) : "";
   return (0, r.jsxs)("div", {
     className: o()(b.filter, D, {
-      [b.selected]: O,
-      [b.locked]: j && !O
+      [b.selected]: j,
+      [b.locked]: O && !j
     }),
     children: [(0, r.jsxs)(s.P3F, {
       className: b.selector,
@@ -99,7 +99,7 @@ let y = e => {
           }), (0, r.jsx)("div", {
             className: b.insetBorder
           })]
-        }), O && (0, r.jsx)("div", {
+        }), j && (0, r.jsx)("div", {
           className: b.iconCircle,
           children: (0, r.jsx)(s.owK, {
             size: "md",
@@ -107,7 +107,7 @@ let y = e => {
             colorClass: b.checkmark,
             secondaryColor: l.Z.unsafe_rawColors.WHITE_500.css
           })
-        }), j && !O && (0, r.jsx)("div", {
+        }), O && !j && (0, r.jsx)("div", {
           className: o()([b.iconCircle, b.lockedCircle]),
           children: (0, r.jsx)(s.mBM, {
             size: "custom",

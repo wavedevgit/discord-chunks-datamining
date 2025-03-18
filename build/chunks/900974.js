@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(570140);
-let o = !1,
-  a = null,
+let a = !1,
+  o = null,
   s = {
     init() {
       l.Z.subscribe("CONNECTION_OPEN", e => {
@@ -16,8 +16,8 @@ let o = !1,
         } = e;
         if (null != t && t.length > 0) {
           var l;
-          if (a === t[0] || null == (a = t[0])) return;
-          l = a, o || (o = !0, (0, i.ZDy)(async () => {
+          if (o === t[0] || null == (o = t[0])) return;
+          l = o, a || (a = !0, (0, i.ZDy)(async () => {
             let {
               default: e
             } = await n.e("7232").then(n.bind(n, 645586));
@@ -29,7 +29,7 @@ let o = !1,
               return (0, r.jsx)(e, {
                 pendingPayment: l,
                 transitionState: n,
-                onClose: () => (o = !1, i())
+                onClose: () => (a = !1, i())
               })
             }
           }))

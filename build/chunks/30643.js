@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(237997),
   i = n(998502),
   l = n(576027),
-  o = n(13838),
-  a = n(812967),
+  a = n(13838),
+  o = n(812967),
   s = n(350085),
   c = n(910484),
   u = n(443952),
@@ -43,16 +43,16 @@ function I(e) {
   return e
 }
 let C = I({}, l.A, u.Z, d.Z, h.Z, f.Z, g.Z, m.Z, b.Z, _.Z, O.Z, v.Z, N.Z, p.Z, E.Z),
-  S = I({}, o.Z, s.M, c.n),
+  S = I({}, a.Z, s.M, c.n),
   T = {
-    server: a.Z,
+    server: o.Z,
     commands: C,
     events: S,
     stores: [r.default],
     transports: [y.Z],
     registerTransportsForEmbeddedPlatform: function() {
       i.ZP.ensureModule("discord_rpc").then(() => {
-        for (let e of [n(178318).Z, n(967351).Z]) a.Z.registerTransport(e)
+        for (let e of [n(178318).Z, n(967351).Z]) o.Z.registerTransport(e)
       })
     }
   }

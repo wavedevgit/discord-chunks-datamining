@@ -2,14 +2,14 @@
 i.a(t, async function(t, e) {
   try {
     i.d(n, {
-      YC: () => s.YC,
-      oT: () => s.oT,
-      xQ: () => s.xQ
+      YC: () => a.YC,
+      oT: () => a.oT,
+      xQ: () => a.xQ
     });
     var _ = i(842321),
-      s = i(970711),
-      a = t([_]);
-    _ = (a.then ? (await a)() : a)[0], (0, s.oT)(_), _.__wbindgen_start(), e()
+      a = i(970711),
+      c = t([_]);
+    _ = (c.then ? (await c)() : c)[0], (0, a.oT)(_), _.__wbindgen_start(), e()
   } catch (t) {
     e(t)
   }

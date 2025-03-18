@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   s = n(481060),
   c = n(210887),
   u = n(617136),
@@ -55,7 +55,7 @@ function L(e) {
   var t;
   let {
     quest: n
-  } = e, i = (0, p.B6)(n.config.expiresAt), l = (0, p.B6)(E.r.build(n.config).rewardsExpireAt), o = (0, a.e7)([c.Z], () => c.Z.getState().theme), u = (0, s.wjy)(o) ? j.BRd.DARK : j.BRd.LIGHT, d = (null === (t = n.userStatus) || void 0 === t ? void 0 : t.completedAt) != null;
+  } = e, i = (0, p.B6)(n.config.expiresAt), l = (0, p.B6)(E.r.build(n.config).rewardsExpireAt), a = (0, o.e7)([c.Z], () => c.Z.getState().theme), u = (0, s.wjy)(a) ? j.BRd.DARK : j.BRd.LIGHT, d = (null === (t = n.userStatus) || void 0 === t ? void 0 : t.completedAt) != null;
   return (0, r.jsxs)("div", {
     className: Z.heading,
     children: [(0, r.jsx)("img", {
@@ -88,7 +88,7 @@ function w(e) {
   let {
     nodeRef: _,
     quest: E
-  } = e, O = (0, u.O5)(), j = (0, a.e7)([h.Z], () => h.Z.isEnrolling(E.id), [E]), [w, R] = i.useState(!1), D = i.useCallback(() => R(!0), []), k = i.useCallback(() => R(!1), []), M = i.useCallback(e => {
+  } = e, O = (0, u.O5)(), j = (0, o.e7)([h.Z], () => h.Z.isEnrolling(E.id), [E]), [w, R] = i.useState(!1), D = i.useCallback(() => R(!0), []), k = i.useCallback(() => R(!1), []), M = i.useCallback(e => {
     e.stopPropagation()
   }, []), U = i.useCallback(() => {
     (0, d.AH)(E.id, {
@@ -128,7 +128,7 @@ function w(e) {
     ref: e => {
       _.current = e
     },
-    className: o()(Z.wrapper, {
+    className: a()(Z.wrapper, {
       [Z.wrapperQuestAccepted]: H
     }),
     onClick: M,

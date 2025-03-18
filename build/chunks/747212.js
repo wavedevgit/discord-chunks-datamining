@@ -3,9 +3,9 @@
 n.d(t, {
   Z: () => o
 });
-var r = n(200651);
+var i = n(200651);
 n(192379);
-var i = n(481060),
+var r = n(481060),
   l = n(968437),
   s = n(388032),
   a = n(362466);
@@ -15,10 +15,10 @@ let o = e => {
     onChange: n,
     isDisabled: o
   } = e, c = (0, l.nt)();
-  return (0, r.jsx)(i.hjN, {
+  return (0, i.jsx)(r.hjN, {
     title: s.NW.string(s.t.FGjMZW),
     className: a.formSection,
-    children: (0, r.jsx)(i.VcW, {
+    children: (0, i.jsx)(r.VcW, {
       isDisabled: o,
       options: c,
       value: t,

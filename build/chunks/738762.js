@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(481060),
-  o = n(493683),
-  a = n(367907),
+  a = n(493683),
+  o = n(367907),
   s = n(205129),
   c = n(626135),
   u = n(981631),
@@ -49,9 +49,9 @@ function h(e) {
   return (m || t) && !b && 0 !== g.length ? (0, r.jsx)(l.sNh, {
     id: "message",
     action: function() {
-      o.Z.openPrivateChannel(g).then(t => {
+      a.Z.openPrivateChannel(g).then(t => {
         var n, r;
-        return a.ZP.trackWithMetadata(u.rMx.ACTIVITY_FEED_DM_VISITED, p({
+        return o.ZP.trackWithMetadata(u.rMx.ACTIVITY_FEED_DM_VISITED, p({
           source: (n = p({}, f.location), r = r = {
             object: u.qAy.LIST_ITEM
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

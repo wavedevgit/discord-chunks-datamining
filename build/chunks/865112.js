@@ -1,8 +1,8 @@
 /** Chunk was on 59160 **/
 n.d(t, {
-  RB: () => O,
+  RB: () => j,
   VH: () => y,
-  Vi: () => j,
+  Vi: () => O,
   Vu: () => N,
   q7: () => E
 });
@@ -70,8 +70,8 @@ let v = {
         return "NOTIFICATION_CENTER"
     }
   },
-  O = e => "icHighlight" === e ? "TOP_MESSAGES" : "NOTIFICATION_CENTER",
-  j = e => {
+  j = e => "icHighlight" === e ? "TOP_MESSAGES" : "NOTIFICATION_CENTER",
+  O = e => {
     switch (e) {
       case i.DY.GO_LIVE_PUSH:
         return {

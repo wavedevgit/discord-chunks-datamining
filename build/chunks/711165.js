@@ -22,8 +22,8 @@ var r = n(200651),
   y = n(695346),
   x = n(23750),
   E = n(592125),
-  O = n(594174),
-  j = n(823379),
+  j = n(594174),
+  O = n(823379),
   N = n(324081),
   C = n(240126),
   I = n(791914),
@@ -172,7 +172,7 @@ let R = i.memo(function(e) {
   } = e, l = new x.ZP({
     id: t.scheduledMessageId,
     content: t.scheduledMessage.content,
-    author: O.default.getUser(t.userId),
+    author: j.default.getUser(t.userId),
     timestamp: s()(t.sendAtTimestamp).toDate(),
     channel_id: t.scheduledMessage.channelId
   }), {
@@ -205,7 +205,7 @@ let R = i.memo(function(e) {
           isError: !0, stateMessage: T.NW.string(T.t.j8uIfH)
         };
       default:
-        (0, j.vE)(e)
+        (0, O.vE)(e)
     }
   }(t.state), u = i.useCallback(() => {
     (0, g.gD)(t.scheduledMessageId).then(() => {

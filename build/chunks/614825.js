@@ -22,8 +22,8 @@ var r = n(200651),
   y = n(74538),
   x = n(276444),
   E = n(786397),
-  O = n(474936),
-  j = n(981631),
+  j = n(474936),
+  O = n(981631),
   N = n(388032),
   C = n(370321);
 
@@ -67,7 +67,7 @@ class T extends i.Component {
       trialOffer: r
     } = this.props;
     return e && !n && void 0 === r.redeemed_at ? N.NW.format(N.t.LwCwT0, {
-      helpdeskArticle: v.Z.getArticleURL(j.BhN.REFERRAL_PROGRAM)
+      helpdeskArticle: v.Z.getArticleURL(O.BhN.REFERRAL_PROGRAM)
     }) : t ? null : N.NW.string(N.t.lQLlOT)
   }
   renderActions(e, t, n) {
@@ -90,7 +90,7 @@ class T extends i.Component {
           onClick: () => {
             (0, h.Z)({
               initialPlanId: null,
-              subscriptionTier: O.Si.TIER_2,
+              subscriptionTier: j.Si.TIER_2,
               analyticsLocations: s,
               trialId: o.trial_id,
               referralTrialOfferId: o.id
@@ -176,7 +176,7 @@ class T extends i.Component {
     super(...e), I(this, "handleStartTrial", (e, t) => {
       (0, h.Z)({
         initialPlanId: null,
-        subscriptionTier: O.Si.TIER_2,
+        subscriptionTier: j.Si.TIER_2,
         analyticsLocations: t,
         trialId: e.trial_id
       })

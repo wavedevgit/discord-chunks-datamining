@@ -22,8 +22,8 @@ var r = n(200651),
   y = n(430824),
   x = n(594174),
   E = n(626135),
-  O = n(74538),
-  j = n(453070),
+  j = n(74538),
+  O = n(453070),
   N = n(926491),
   C = n(378233),
   I = n(419922),
@@ -122,8 +122,8 @@ let F = e => {
       sticker: n,
       stickerPack: c
     });
-    (0, j.Pq)(n.pack_id);
-    let f = (0, j.Sd)(a),
+    (0, O.Pq)(n.pack_id);
+    let f = (0, O.Sd)(a),
       h = {
         refreshPositionKey: o,
         channel: a
@@ -185,10 +185,10 @@ let F = e => {
         closePopout: m,
         refreshPositionKey: b
       } = e,
-      [j, N] = i.useState(null),
+      [O, N] = i.useState(null),
       [C, S] = i.useState(!1),
       D = x.default.getCurrentUser(),
-      L = O.ZP.canUseCustomStickersEverywhere(D),
+      L = j.ZP.canUseCustomStickersEverywhere(D),
       F = (0, l.e7)([y.Z], () => y.Z.getGuild(n.guild_id)),
       U = null != F,
       [B, G] = i.useState(!1),
@@ -218,7 +218,7 @@ let F = e => {
       })()
     }, [n.id, U]);
     let q = n.guild_id === a.getGuildId(),
-      Q = null != j,
+      Q = null != O,
       J = !1,
       $ = "Custom Sticker Popout";
     L ? t = U ? q ? A.NW.string(A.t.fZ0DiI) : A.NW.string(A.t["1f6D9v"]) : Q ? A.NW.string(A.t.yHmoR0) : A.NW.string(A.t.vZaScH) : U ? (t = q ? A.NW.string(A.t.jNphpq) : A.NW.string(A.t.lyD5ZW), J = !0, $ = "Custom Sticker Popout (Upsell)") : Q ? (t = A.NW.string(A.t.IuXYcn), J = !0, $ = "Custom Sticker Popout (Upsell)") : (t = A.NW.format(A.t.hGWuxc, {
@@ -232,7 +232,7 @@ let F = e => {
         refreshPositionKey: e
       } = X.current;
       e()
-    }, [C, j]), (0, d.ZP)(() => {
+    }, [C, O]), (0, d.ZP)(() => {
       E.default.track(T.rMx.OPEN_POPOUT, k({
         type: $
       }, K))
@@ -240,9 +240,9 @@ let F = e => {
       className: Z.popoutContent,
       children: [(() => {
         let e = async () => {
-          if (null == j || U) return;
+          if (null == O || U) return;
           m();
-          let e = j.id;
+          let e = O.id;
           try {
             await c.Z.joinGuild(e), c.Z.transitionToGuildSync(e)
           } catch (e) {}
@@ -259,7 +259,7 @@ let F = e => {
             fullWidth: !0,
             buttonText: A.NW.string(A.t["gl/XHB"]),
             onSubscribeModalClose: t => t ? e() : m(),
-            postSuccessGuild: U || null == j ? void 0 : j,
+            postSuccessGuild: U || null == O ? void 0 : O,
             premiumModalAnalyticsLocation: z
           }), ee && (0, r.jsx)(s.zxk, {
             size: s.zxk.Sizes.SMALL,
@@ -269,11 +269,11 @@ let F = e => {
             children: A.NW.string(A.t.riu2R0)
           })]
         })
-      })(), (null != F || null != j) && (() => {
+      })(), (null != F || null != O) && (() => {
         var e;
         if (!Q && !U) return;
-        let t = (null !== (e = null == j ? void 0 : j.stickers) && void 0 !== e ? e : []).slice(0, 13).filter(e => e.id !== n.id).slice(0, 12),
-          i = null != j ? f.JO.createFromDiscoverableGuild(j) : f.JO.createFromGuildRecord(F);
+        let t = (null !== (e = null == O ? void 0 : O.stickers) && void 0 !== e ? e : []).slice(0, 13).filter(e => e.id !== n.id).slice(0, 12),
+          i = null != O ? f.JO.createFromDiscoverableGuild(O) : f.JO.createFromGuildRecord(F);
         return (0, r.jsxs)("div", {
           className: Z.guildSection,
           children: [(0, r.jsx)(s.vwX, {
@@ -385,7 +385,7 @@ let G = e => {
     channel: n,
     closePopout: i,
     refreshPositionKey: a
-  } = e, [o, l] = (0, j.XW)(t, !0);
+  } = e, [o, l] = (0, O.XW)(t, !0);
   return null != o && (0, C.jl)(o) ? (0, r.jsx)(F, {
     sticker: o,
     closePopout: i,

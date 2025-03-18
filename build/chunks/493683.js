@@ -210,6 +210,14 @@ let O = {
       o = null == n ? void 0 : n.getGuildId();
     return null == o || (null == n ? void 0 : n.isThread()) || l.Z.checkGuildTemplateDirty(o), i
   },
+  setWallpaper: async (e, t) => await r.tn.patch({
+    url: v.ANM.CHANNEL(e),
+    body: {
+      wallpaper_id: t
+    },
+    oldFormErrors: !0,
+    rejectWithError: !0
+  }),
   convertToGuild: e => r.tn.post({
     url: v.ANM.CHANNEL_CONVERT(e),
     oldFormErrors: !0,

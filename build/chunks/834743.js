@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(442837),
-  o = n(324262),
-  a = n(623624),
+  a = n(324262),
+  o = n(623624),
   s = n(650774),
   c = n(981631),
   u = n(921944),
@@ -19,7 +19,7 @@ class h extends i.PureComponent {
       memberCount: t,
       markAsDismissed: n
     } = this.props;
-    return (0, r.jsx)(o.Z, {
+    return (0, r.jsx)(a.Z, {
       guild: e,
       onDismissed: () => n(u.L.UNKNOWN),
       onClick: this.handleButtonClick,
@@ -37,7 +37,7 @@ class h extends i.PureComponent {
       let {
         guild: e
       } = this.props;
-      (0, a.f)({
+      (0, o.f)({
         guildId: e.id,
         location: {
           section: c.jXE.CHANNEL_NOTICE,

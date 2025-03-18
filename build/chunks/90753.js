@@ -22,8 +22,8 @@ function b(e, t, n, b) {
     y = (0, o.dQu)(l.Z.unsafe_rawColors.BLACK_500).hex(),
     E = (0, o.dQu)(l.Z.unsafe_rawColors.WHITE_500).hex(),
     O = r.useRef({}),
-    S = r.useRef(new i.Xp),
-    x = r.useCallback(t => {
+    x = r.useRef(new i.Xp),
+    S = r.useCallback(t => {
       let n = u.Z.getDrawables(t);
       (0, f.UN)(e),
       function(e) {
@@ -121,18 +121,18 @@ function b(e, t, n, b) {
         width: r,
         height: i
       } = t.getBoundingClientRect();
-      t.width = r * window.devicePixelRatio, t.height = i * window.devicePixelRatio, x(n)
+      t.width = r * window.devicePixelRatio, t.height = i * window.devicePixelRatio, S(n)
     });
     return null != e.current && t.observe(e.current), () => t.disconnect()
-  }, [e, x, n]);
+  }, [e, S, n]);
   let j = r.useCallback(() => {
     let t = u.Z.getDrawables(n),
       r = m.U.getState().particles,
       i = t.length > 0 || Object.keys(r).length > 0;
-    i && null == S.current._ref && (null == S.current._ref ? (x(n), S.current.start(v, () => x(n))) : i || null == S.current._ref || (S.current.stop(), (0, f.UN)(e)))
-  }, [e, x, n]);
+    i && null == x.current._ref && (null == x.current._ref ? (S(n), x.current.start(v, () => S(n))) : i || null == x.current._ref || (x.current.stop(), (0, f.UN)(e)))
+  }, [e, S, n]);
   r.useEffect(() => {
-    let e = S.current;
+    let e = x.current;
     return u.Z.addChangeListener(j), j(), (0, a.vM)(t.getAvatarURL(null, h.Ks)), () => {
       u.Z.removeChangeListener(j), e.stop()
     }

@@ -1,23 +1,23 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  _: () => a
+  _: () => o
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(812206),
-  o = n(531826);
+  a = n(531826);
 
-function a(e) {
+function o(e) {
   let {
     applicationId: t,
-    channelId: a,
+    channelId: o,
     launchParams: s,
     message: c,
     onShare: u
-  } = e, d = l.Z.getApplication(t), p = null != (0, o.ZP)({
+  } = e, d = l.Z.getApplication(t), p = null != (0, a.ZP)({
     application: d,
-    channelId: a
+    channelId: o
   }) ? i.u1M : i.z1l, h = !1;
 
   function f(e) {
@@ -49,7 +49,7 @@ function a(e) {
       return e
     }({
       applicationId: t,
-      channelId: a,
+      channelId: o,
       launchParams: s,
       message: c,
       onCopyLink: g,

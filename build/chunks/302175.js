@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => C
 }), n(47120), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -145,17 +145,17 @@ function N(e) {
     })]
   })
 }
-
-function A(e) {
-  var t, n, o;
+let A = i.forwardRef((e, t) => {
+  var n, o, a;
   let {
-    guild: a
-  } = e, s = (0, _.Ek)(a, "GuildPowerupsMarketingPowerupCards");
+    guild: s
+  } = e, c = (0, _.Ek)(s, "GuildPowerupsMarketingPowerupCards");
   i.useEffect(() => {
-    s && ((0, f.Sn)(a.id), (0, f.Fm)(a.id))
-  }, [s, a.id]);
-  let c = (0, h.Z)(a.id);
-  return s && null != c && (null !== (o = null === (t = c.get(m.Us.PERK)) || void 0 === t ? void 0 : t.length) && void 0 !== o ? o : 0) !== 0 ? (0, r.jsxs)("div", {
+    c && ((0, f.Sn)(s.id), (0, f.Fm)(s.id))
+  }, [c, s.id]);
+  let u = (0, h.Z)(s.id);
+  return c && null != u && (null !== (a = null === (n = u.get(m.Us.PERK)) || void 0 === n ? void 0 : n.length) && void 0 !== a ? a : 0) !== 0 ? (0, r.jsxs)("div", {
+    ref: t,
     className: b.container,
     children: [(0, r.jsx)(l.X6, {
       variant: "heading-xxl/extrabold",
@@ -165,10 +165,12 @@ function A(e) {
       children: E.NW.string(g.Z.MYYPa2)
     }), (0, r.jsx)("div", {
       className: b.powerupsContainer,
-      children: null === (n = c.get(m.Us.PERK)) || void 0 === n ? void 0 : n.map(e => (0, r.jsx)(N, {
-        guildId: a.id,
+      children: null === (o = u.get(m.Us.PERK)) || void 0 === o ? void 0 : o.map(e => (0, r.jsx)(N, {
+        guildId: s.id,
         powerup: e
       }, "guild-powerup-marketing-".concat(e.skuId)))
     })]
   }) : null
-}
+});
+A.displayName = "GuildPowerupsMarketingPowerupCards";
+let C = A

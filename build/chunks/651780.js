@@ -1,7 +1,7 @@
 /** Chunk was on 10396 **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => w
 });
 var r = n(200651),
   i = n(192379),
@@ -9,24 +9,27 @@ var r = n(200651),
   a = n(481060),
   l = n(570140),
   o = n(355467),
-  c = n(821849),
-  d = n(774078),
-  u = n(15640),
-  m = n(774380),
-  g = n(404270),
-  p = n(174604),
-  h = n(386937),
-  f = n(316350),
-  b = n(899667),
-  x = n(626135),
-  j = n(267642),
-  N = n(63063),
-  v = n(999382),
-  _ = n(981631),
-  y = n(388032),
-  O = n(324358);
+  c = n(37234),
+  d = n(821849),
+  u = n(774078),
+  m = n(15640),
+  g = n(774380),
+  p = n(404270),
+  h = n(174604),
+  f = n(703656),
+  b = n(386937),
+  x = n(316350),
+  j = n(899667),
+  N = n(626135),
+  v = n(267642),
+  _ = n(63063),
+  y = n(999382),
+  O = n(981631),
+  C = n(176505),
+  I = n(388032),
+  E = n(324358);
 
-function C(e) {
+function S(e) {
   let {
     endsAt: t,
     appliedGuildBoostsToMaintain: n,
@@ -34,11 +37,11 @@ function C(e) {
   } = e, {
     days: i,
     hours: s
-  } = (0, d.Z)(t);
-  return n <= 0 ? null : 0 === i && 0 === s ? y.NW.format(y.t.kF0HER, {
+  } = (0, u.Z)(t);
+  return n <= 0 ? null : 0 === i && 0 === s ? I.NW.format(I.t.kF0HER, {
     tierName: r,
     numPremiumSubscriptions: n
-  }) : y.NW.format(y.t.neDJho, {
+  }) : I.NW.format(I.t.neDJho, {
     days: i,
     hours: s,
     tierName: r,
@@ -46,26 +49,26 @@ function C(e) {
   })
 }
 
-function I(e) {
+function T(e) {
   let {
     appliedGuildBoosts: t,
     guildId: n
-  } = e, i = (0, j.gZ)(t, n), s = (0, j.nW)((0, j.rF)(t.length, n));
+  } = e, i = (0, v.gZ)(t, n), s = (0, v.nW)((0, v.rF)(t.length, n));
   if (null == i || null == s) return null;
-  let l = (0, j._k)(t, n);
+  let l = (0, v._k)(t, n);
   return (0, r.jsxs)(a.Wn, {
     messageType: a.QYI.WARNING,
     children: [(0, r.jsx)("div", {
-      className: O.guildBoostingGracePeriodTitle,
-      children: y.NW.format(y.t.LG7vvr, {})
-    }), (0, r.jsx)(C, {
+      className: E.guildBoostingGracePeriodTitle,
+      children: I.NW.format(I.t.LG7vvr, {})
+    }), (0, r.jsx)(S, {
       endsAt: i,
       appliedGuildBoostsToMaintain: l,
       tierName: s
     })]
   })
 }
-let E = e => {
+let P = e => {
   let {
     isAnimatedTo: t,
     onSetRef: n,
@@ -75,7 +78,7 @@ let E = e => {
     tierIndex: l,
     guildId: o
   } = e;
-  return (0, r.jsx)(f.Z, {
+  return (0, r.jsx)(x.Z, {
     subscriptionCount: i,
     tier: s,
     onSetRef: n,
@@ -85,43 +88,46 @@ let E = e => {
   }, s.tier)
 };
 
-function S() {
+function w() {
   i.useEffect(() => {
     l.Z.wait(() => {
-      (0, o.tZ)(), (0, c.Y2)()
+      (0, o.tZ)(), (0, d.Y2)()
     })
   }, []);
-  let e = (0, s.e7)([v.Z], () => v.Z.getGuild()),
-    t = (0, s.e7)([b.Z], () => null != e ? b.Z.getAppliedGuildBoostsForGuild(e.id) : null),
-    n = (0, u.V)();
+  let e = (0, s.e7)([y.Z], () => y.Z.getGuild()),
+    t = (0, s.e7)([j.Z], () => null != e ? j.Z.getAppliedGuildBoostsForGuild(e.id) : null),
+    n = (0, m.V)();
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(a.vwX, {
         tag: a.RB0.H1,
-        children: y.NW.string(y.t.nLovSU)
-      }), null != t && null != e ? (0, r.jsx)(I, {
+        children: I.NW.string(I.t.nLovSU)
+      }), null != t && null != e ? (0, r.jsx)(T, {
         appliedGuildBoosts: t,
         guildId: e.id
       }) : null, (0, r.jsx)(a.R94, {
         type: a.R94.Types.DESCRIPTION,
-        className: O.titleBlurb,
-        children: y.NW.format(y.t.hLOkp6, {
-          helpdeskArticle: N.Z.getArticleURL(_.BhN.GUILD_SUBSCRIPTIONS)
+        className: E.titleBlurb,
+        children: I.NW.format(I.t.hLOkp6, {
+          helpdeskArticle: _.Z.getArticleURL(O.BhN.GUILD_SUBSCRIPTIONS)
         })
       })]
-    }), null != e && (0, r.jsx)(p.Z, {
-      guild: e
-    }), (0, r.jsx)(h.Z, {
-      tiers: (0, j.cP)(null != e && e.hasFeature(_.oNc.COMMUNITY) && e.maxStageVideoChannelUsers >= _.B9o),
-      renderTier: E
+    }), null != e && (0, r.jsx)(h.Z, {
+      guild: e,
+      onButtonClick: function() {
+        null != e && ((0, c.xf)(), (0, f.uL)(O.Z5c.CHANNEL(e.id, C.oC.GUILD_BOOSTS)))
+      }
+    }), (0, r.jsx)(b.Z, {
+      tiers: (0, v.cP)(null != e && e.hasFeature(O.oNc.COMMUNITY) && e.maxStageVideoChannelUsers >= O.B9o),
+      renderTier: P
     }), (0, r.jsx)("div", {
-      className: O.divider
-    }), n ? (0, r.jsx)(g.Z, {}) : null, n ? (0, r.jsx)(m.Z, {
-      onOpenPremiumClick: () => void x.default.track(_.rMx.PREMIUM_PROMOTION_OPENED, {
+      className: E.divider
+    }), n ? (0, r.jsx)(p.Z, {}) : null, n ? (0, r.jsx)(g.Z, {
+      onOpenPremiumClick: () => void N.default.track(O.rMx.PREMIUM_PROMOTION_OPENED, {
         location: {
-          page: _.ZY5.GUILD_SETTINGS,
-          section: _.jXE.NITRO_CROSS_PROMO_FROM_BOOSTING,
-          object: _.qAy.BUTTON_CTA
+          page: O.ZY5.GUILD_SETTINGS,
+          section: O.jXE.NITRO_CROSS_PROMO_FROM_BOOSTING,
+          object: O.qAy.BUTTON_CTA
         }
       })
     }) : null]

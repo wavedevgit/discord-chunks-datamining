@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(570140),
   i = n(317770),
   l = n(314897),
-  o = n(57562),
-  a = n(882029),
+  a = n(57562),
+  o = n(882029),
   s = n(955204),
   c = n(351780),
   u = n(843693);
@@ -32,7 +32,7 @@ class h extends i.Z {
       let {
         settings: t
       } = e;
-      t.enabled ? (0, o.T)(s.hn.ENABLE_POGGERMODE) : !1 === t.enabled && (0, o.T)(s.hn.DISABLE_POGGERMODE), Object.keys(t).some(e => e.startsWith("confetti")) && (0, o.T)(s.hn.CUSTOMIZE_CONFETTI)
+      t.enabled ? (0, a.T)(s.hn.ENABLE_POGGERMODE) : !1 === t.enabled && (0, a.T)(s.hn.DISABLE_POGGERMODE), Object.keys(t).some(e => e.startsWith("confetti")) && (0, a.T)(s.hn.CUSTOMIZE_CONFETTI)
     }), d(this, "handleMessageCreate", e => {
       var t;
       let {
@@ -45,17 +45,17 @@ class h extends i.Z {
       } = e;
       if (!c.Z.isEnabled()) return !1;
       let h = l.default.getId();
-      if ((null == d ? void 0 : d.find(e => e.id === h)) != null ? (0, o.T)(s.hn.PING_ME) : (null !== (t = null == d ? void 0 : d.length) && void 0 !== t ? t : 0) > 0 && (null == r ? void 0 : r.id) === h && (0, o.T)(s.hn.PING_SOMEONE), !(0, u.wU)(null == r ? void 0 : r.id, h, i, p)) return !1;
+      if ((null == d ? void 0 : d.find(e => e.id === h)) != null ? (0, a.T)(s.hn.PING_ME) : (null !== (t = null == d ? void 0 : d.length) && void 0 !== t ? t : 0) > 0 && (null == r ? void 0 : r.id) === h && (0, a.T)(s.hn.PING_SOMEONE), !(0, u.wU)(null == r ? void 0 : r.id, h, i, p)) return !1;
       let f = u.ZP.getMostRecentMessageCombo(n),
         {
           combo: g
         } = null != f ? f : {};
       if (null == g) return !1;
       Object.values(s.hn).forEach(e => {
-        if (null != a.Z.getUnlocked(e)) return;
+        if (null != o.Z.getUnlocked(e)) return;
         let t = (0, s.oX)(e),
           n = null == t ? void 0 : t.checkUnlock;
-        null != n && !1 !== n(g) && (0, o.T)(e)
+        null != n && !1 !== n(g) && (0, a.T)(e)
       })
     })
   }

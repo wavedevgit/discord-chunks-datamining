@@ -22,8 +22,8 @@ var r = n(200651),
   y = n(370210),
   x = n(258971),
   E = n(981631),
-  O = n(49898),
-  j = n(388032),
+  j = n(49898),
+  O = n(388032),
   N = n(997408);
 
 function C(e) {
@@ -70,7 +70,7 @@ function C(e) {
       guild_id: R,
       channel_id: S.channel_id
     }), (0, p.transitionToGlobalDiscovery)({
-      tab: O.GlobalDiscoveryTab.APPS,
+      tab: j.GlobalDiscoveryTab.APPS,
       applicationId: I,
       newSessionState: {
         guildId: R,
@@ -89,7 +89,7 @@ function C(e) {
   if (w) return (0, r.jsxs)(m.Z, {
     containerRef: W,
     children: [(0, r.jsx)(m.Z.Header, {
-      text: j.NW.string(j.t.j4KtLS)
+      text: O.NW.string(O.t.j4KtLS)
     }), (0, r.jsx)(m.Z.Body, {
       children: (0, r.jsxs)("div", {
         className: N.invalidBody,
@@ -97,8 +97,8 @@ function C(e) {
           expired: !0
         }), (0, r.jsx)(m.Z.Info, {
           expired: !0,
-          title: j.NW.string(j.t.NaQLEx),
-          children: j.NW.string(j.t["0H5OT0"])
+          title: O.NW.string(O.t.NaQLEx),
+          children: O.NW.string(O.t["0H5OT0"])
         })]
       })
     })]
@@ -106,7 +106,7 @@ function C(e) {
   if (null == A || Z === y.M.FETCHING) return (0, r.jsxs)(m.Z, {
     containerRef: W,
     children: [(0, r.jsx)(m.Z.Header, {
-      text: j.NW.string(j.t.m9hXGR)
+      text: O.NW.string(O.t.m9hXGR)
     }), (0, r.jsx)(m.Z.Body, {
       resolving: !0
     })]
@@ -125,7 +125,7 @@ function C(e) {
   return (0, r.jsxs)(m.Z, {
     containerRef: W,
     children: [(0, r.jsx)(m.Z.Header, {
-      text: j.NW.string(j.t.KC1oZ2)
+      text: O.NW.string(O.t.KC1oZ2)
     }), (0, r.jsxs)(m.Z.Body, {
       children: [(0, r.jsxs)("div", {
         className: N.applicationInfoContainer,
@@ -147,7 +147,7 @@ function C(e) {
               width: 16,
               height: 16,
               className: N.guildCountIcon
-            }), j.NW.format(j.t["6IW6Wl"], {
+            }), O.NW.format(O.t["6IW6Wl"], {
               guildCount: B.format(G)
             })]
           })
@@ -164,7 +164,7 @@ function C(e) {
           })
         },
         color: m.Z.Button.Colors.GREEN,
-        children: j.NW.string(j.t.NgXl3N)
+        children: O.NW.string(O.t.NgXl3N)
       })]
     })]
   })

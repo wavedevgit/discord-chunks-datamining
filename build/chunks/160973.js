@@ -17,29 +17,29 @@ function m(e) {
   let t, {
       context: n,
       application: m,
-      activityAction: h
+      activityAction: f
     } = e,
-    f = "channel" === n.type ? n.channel : void 0,
-    v = (0, i.e7)([c.Z], () => c.Z.can(d.Pl.USE_EMBEDDED_ACTIVITIES, f)),
-    N = (0, r.KF)(null == f ? void 0 : f.id),
-    x = !1;
-  switch (h) {
+    h = "channel" === n.type ? n.channel : void 0,
+    v = (0, i.e7)([c.Z], () => c.Z.can(d.Pl.USE_EMBEDDED_ACTIVITIES, h)),
+    y = (0, r.KF)(null == h ? void 0 : h.id),
+    b = !1;
+  switch (f) {
     case a.JS.LEAVE:
-      x = !1;
+      b = !1;
       break;
     case a.JS.START:
-      null == f ? x = !1 : (null == f ? void 0 : f.isGuildVoice()) ? N !== r.jy.CAN_LAUNCH && (x = !0) : (0, l.WS)(f) || (x = !0);
+      null == h ? b = !1 : (null == h ? void 0 : h.isGuildVoice()) ? y !== r.jy.CAN_LAUNCH && (b = !0) : (0, l.WS)(h) || (b = !0);
       break;
     case a.JS.JOIN:
-      (null == f ? void 0 : f.isGuildVoice()) ? x = !v: (0, l.WS)(f) || (x = !0)
+      (null == h ? void 0 : h.isGuildVoice()) ? b = !v: (0, l.WS)(h) || (b = !0)
   }
-  if (h !== a.JS.LEAVE) {
+  if (f !== a.JS.LEAVE) {
     let e = m instanceof s.ZP ? m.embeddedActivityConfig : m.embedded_activity_config,
       n = (0, o.Z)((0, u.getOS)());
-    null == e || e.supported_platforms.includes(n) ? (null == f ? void 0 : f.isThread()) && (x = !0, t = p.NW.string(p.t.ddSR3t)) : (x = !1, t = p.NW.string(p.t.z2YTgI))
+    null == e || e.supported_platforms.includes(n) ? (null == h ? void 0 : h.isThread()) && (b = !0, t = p.NW.string(p.t.ddSR3t)) : (b = !1, t = p.NW.string(p.t.z2YTgI))
   }
-  return x && null == t && (t = p.NW.string(p.t.f41E1t)), {
-    disabled: x,
+  return b && null == t && (t = p.NW.string(p.t.f41E1t)), {
+    disabled: b,
     reason: t
   }
 }

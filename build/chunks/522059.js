@@ -1,6 +1,6 @@
 /** Chunk was on 86915 **/
 "use strict";
-var r = {
+var i = {
   settingCard: "settingCard__1a4ef",
   active: "active__1a4ef",
   shield: "shield__1a4ef " + n(14484).desaturateUserColors,
@@ -21,4 +21,4 @@ var r = {
   removeIcon: "removeIcon__1a4ef",
   disabledRemoveIcon: "disabledRemoveIcon__1a4ef"
 };
-e.exports = r
+e.exports = i

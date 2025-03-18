@@ -18,7 +18,7 @@ function p(e) {
     context: n
   } = e, l = "channel" === n.type ? n.channel : void 0, p = (0, s.LD)(null == l ? void 0 : l.guild_id, !0), {
     commandsByActiveSection: m,
-    loading: h
+    loading: f
   } = c.wi({
     context: n,
     filters: {
@@ -30,7 +30,7 @@ function p(e) {
       includeFrecency: !0
     },
     allowFetch: !0
-  }), f = i.useMemo(() => m.reduce((e, t) => {
+  }), h = i.useMemo(() => m.reduce((e, t) => {
     let {
       section: n,
       data: i
@@ -43,17 +43,17 @@ function p(e) {
         descriptor: t
       } = e;
       return t
-    }).filter(e => !(e.id in a.Tm) && f.has(e.id))
-  }, [null === (t = p.result) || void 0 === t ? void 0 : t.sections, f]), N = (0, u.h)(v);
+    }).filter(e => !(e.id in a.Tm) && h.has(e.id))
+  }, [null === (t = p.result) || void 0 === t ? void 0 : t.sections, h]), y = (0, u.h)(v);
   return {
-    appsInThisServer: i.useMemo(() => r().compact(N.map(e => {
+    appsInThisServer: i.useMemo(() => r().compact(y.map(e => {
       let {
         application: t
       } = e;
       return t
     })).map(e => ({
       application: e
-    })), [N]),
-    isLoading: p.fetchState.fetching || h
+    })), [y]),
+    isLoading: p.fetchState.fetching || f
   }
 }

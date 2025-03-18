@@ -28,8 +28,8 @@ function v(e) {
     shouldShowFullDescriptionButton: y = !0,
     hideRoleTag: x = !1,
     lineClamp: E = 1,
-    cardWidth: O,
-    cardHeight: j,
+    cardWidth: j,
+    cardHeight: O,
     thumbnailHeight: N,
     descriptionTextVariant: C = "text-sm/normal",
     showOpaqueBackground: I = !1
@@ -88,8 +88,8 @@ function v(e) {
     showOpaqueBackground: I,
     hideRoleTag: x,
     lineClamp: E,
-    cardWidth: O,
-    cardHeight: j,
+    cardWidth: j,
+    cardHeight: O,
     thumbnailHeight: N,
     descriptionTextVariant: C,
     isDraft: !t.published

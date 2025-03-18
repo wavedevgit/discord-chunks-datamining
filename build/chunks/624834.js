@@ -21,8 +21,8 @@ var r = n(200651),
   y = n(594174),
   E = n(849171),
   O = n(981631),
-  S = n(388032),
-  x = n(984270);
+  x = n(388032),
+  S = n(984270);
 
 function j(e) {
   let {
@@ -46,12 +46,12 @@ function j(e) {
   return (0, r.jsx)(h.Gt, {
     value: o,
     children: (0, r.jsxs)("div", {
-      className: x.container,
+      className: S.container,
       children: [null != c && null != s && null != u && "" !== u ? (0, r.jsx)("img", {
-        className: x.splashImage,
+        className: S.splashImage,
         alt: c.name,
         src: u
-      }) : null, null != c && null != s ? (0, r.jsx)(C, {
+      }) : null, null != c && null != s ? (0, r.jsx)(Z, {
         width: n,
         channelId: l,
         participant: d,
@@ -61,15 +61,15 @@ function j(e) {
   })
 }
 
-function C(e) {
+function Z(e) {
   let {
     width: t,
     channelId: n,
     participant: l,
     applicationId: m
-  } = e, p = (0, E.V_)(t), [j] = (0, E.Ym)(t), C = (0, a.e7)([g.Z], () => g.Z.getChannel(n)), Z = (0, a.e7)([y.default, b.default], () => (0, d.J)(l, b.default) ? null : y.default.getUser(l.userId)), w = i.useMemo(() => null != Z ? [Z] : [], [Z]), P = (0, v.q)(m), {
+  } = e, p = (0, E.V_)(t), [j] = (0, E.Ym)(t), Z = (0, a.e7)([g.Z], () => g.Z.getChannel(n)), w = (0, a.e7)([y.default, b.default], () => (0, d.J)(l, b.default) ? null : y.default.getUser(l.userId)), C = i.useMemo(() => null != w ? [w] : [], [w]), P = (0, v.q)(m), {
     analyticsLocations: N
-  } = (0, h.ZP)(), I = (0, c.O)(), _ = l.activity.session_id, R = (0, f.Z)(l.activity, O.xjy.EMBEDDED) && (0, f.Z)(l.activity, O.xjy.CONTEXTLESS), [T, A] = i.useState(!1), D = null == Z ? void 0 : Z.id, k = i.useCallback(async e => {
+  } = (0, h.ZP)(), I = (0, c.O)(), _ = l.activity.session_id, R = (0, f.Z)(l.activity, O.xjy.EMBEDDED) && (0, f.Z)(l.activity, O.xjy.CONTEXTLESS), [T, A] = i.useState(!1), D = null == w ? void 0 : w.id, k = i.useCallback(async e => {
     e.stopPropagation(), null != m && null != D && (A(!0), await (0, u.Z)({
       applicationId: m,
       activityChannelId: n,
@@ -81,38 +81,38 @@ function C(e) {
       isContextlessActivity: R
     }), A(!1))
   }, [m, D, I.location, N, _, n, R]);
-  return null == C || null == Z || null == P ? null : (0, r.jsxs)("div", {
-    className: x.splash,
+  return null == Z || null == w || null == P ? null : (0, r.jsxs)("div", {
+    className: S.splash,
     children: [(0, r.jsx)(E.OV, {
       avatarSize: j,
-      guildId: C.guild_id,
-      channelId: C.id,
-      users: w
+      guildId: Z.guild_id,
+      channelId: Z.id,
+      users: C
     }), (0, r.jsx)(s.Text, {
-      className: o()(x.subheader, {
-        [x.small]: p === E.nR.SMALL,
-        [x.medium]: p === E.nR.MEDIUM
+      className: o()(S.subheader, {
+        [S.small]: p === E.nR.SMALL,
+        [S.medium]: p === E.nR.MEDIUM
       }),
       variant: "text-sm/normal",
-      children: S.NW.formatToPlainString(S.t["7Uuia2"], {
-        username: Z.username
+      children: x.NW.formatToPlainString(x.t["7Uuia2"], {
+        username: w.username
       })
     }), (0, r.jsx)(s.Text, {
-      className: o()(x.header, {
-        [x.small]: p === E.nR.SMALL,
-        [x.medium]: p === E.nR.MEDIUM
+      className: o()(S.header, {
+        [S.small]: p === E.nR.SMALL,
+        [S.medium]: p === E.nR.MEDIUM
       }),
       variant: "text-sm/normal",
       children: P.name
     }), (0, r.jsx)("div", {
-      className: x.buttons,
+      className: S.buttons,
       children: (0, r.jsx)(s.zxk, {
         onClick: k,
         submitting: T,
         size: (0, E.ac)(p),
-        className: x.button,
+        className: S.button,
         color: s.zxk.Colors.PRIMARY,
-        children: S.NW.string(S.t["4i2vj4"])
+        children: x.NW.string(x.t["4i2vj4"])
       })
     })]
   })

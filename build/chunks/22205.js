@@ -21,12 +21,12 @@ var r = n(200651),
   y = n(594174),
   E = n(254761),
   O = n(70956),
-  S = n(960048),
-  x = n(145597),
+  x = n(960048),
+  S = n(145597),
   j = n(333031),
-  C = n(610394),
-  Z = n(380736),
-  w = n(987650),
+  Z = n(610394),
+  w = n(380736),
+  C = n(987650),
   P = n(981631),
   N = n(388032),
   I = n(226643);
@@ -57,9 +57,9 @@ function A(e) {
     onReload: s,
     onDisable: c,
     onCrashDisabled: u
-  } = e, m = i.useMemo(() => new a.SpringValue(1), []), h = i.useRef(null), [b, g] = i.useState(!1), [O, S] = i.useState(!1), x = (0, d.e7)([y.default], () => y.default.getCurrentUser());
+  } = e, m = i.useMemo(() => new a.SpringValue(1), []), h = i.useRef(null), [b, g] = i.useState(!1), [O, x] = i.useState(!1), S = (0, d.e7)([y.default], () => y.default.getCurrentUser());
   (0, v.ZP)(() => (h.current = setTimeout(j, T), p.Z.track(P.rMx.NOTIFICATION_VIEWED, {
-    notif_type: w.n0.OverlayCrashed
+    notif_type: C.n0.OverlayCrashed
   }), () => {
     null != h.current && clearTimeout(h.current)
   }));
@@ -67,8 +67,8 @@ function A(e) {
       m.set(0), null != h.current && clearTimeout(h.current), h.current = null, null == o || o(), null == u || u()
     }, [m, o, u]),
     _ = i.useCallback(e => {
-      !O && (S(!0), null == o || o(), p.Z.track(P.rMx.NOTIFICATION_CLICKED, {
-        notif_type: w.n0.OverlayCrashed,
+      !O && (x(!0), null == o || o(), p.Z.track(P.rMx.NOTIFICATION_CLICKED, {
+        notif_type: C.n0.OverlayCrashed,
         action_type: "reload"
       }, !0), e.stopPropagation(), setTimeout(() => null == s ? void 0 : s(), 200))
     }, [o, s, O]),
@@ -78,7 +78,7 @@ function A(e) {
     A = i.useCallback(e => {
       e.stopPropagation(), null == o || o(), null == c || c()
     }, [c, o]),
-    D = (0, d.e7)([C.ZP], () => C.ZP.getFocusedRunningGame()),
+    D = (0, d.e7)([Z.ZP], () => Z.ZP.getFocusedRunningGame()),
     k = b ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/semibold",
@@ -103,8 +103,8 @@ function A(e) {
       })]
     }) : null,
     M = b ? null : N.NW.string(N.t.oEJEFh),
-    L = null !== (t = null == x ? void 0 : x.isStaff()) && void 0 !== t && t || null !== (n = null == x ? void 0 : x.isStaffPersonal()) && void 0 !== n && n;
-  return (0, r.jsx)(Z.Y, {
+    L = null !== (t = null == S ? void 0 : S.isStaff()) && void 0 !== t && t || null !== (n = null == S ? void 0 : S.isStaffPersonal()) && void 0 !== n && n;
+  return (0, r.jsx)(w.Y, {
     title: N.NW.string(N.t.U38qZm),
     body: k,
     hint: L ? M : void 0,
@@ -137,9 +137,9 @@ class D extends i.PureComponent {
       error: e,
       info: t
     });
-    let r = (0, x.getPID)();
+    let r = (0, S.getPID)();
     p.Z.setOverlayCrashed(r, e), p.Z.setInputLocked(!0, r);
-    let i = S.Z.captureCrash(e, {
+    let i = x.Z.captureCrash(e, {
       extra: t
     });
     p.Z.track(P.rMx.APP_CRASHED, {
@@ -165,24 +165,24 @@ class D extends i.PureComponent {
         error: n,
         onLock: () => {
           var e;
-          let t = null !== (e = this.pid) && void 0 !== e ? e : (0, x.getPID)();
+          let t = null !== (e = this.pid) && void 0 !== e ? e : (0, S.getPID)();
           p.Z.setInputLocked(!0, t), this.setState({
             showError: !1
           })
         },
         onDisable: () => {
-          let e = C.ZP.getFocusedRunningGame();
+          let e = Z.ZP.getFocusedRunningGame();
           null != e && m.Z.toggleOverlay(e, !1, !1)
         },
         onCrashDisabled: () => {
           var e;
-          let t = null !== (e = this.pid) && void 0 !== e ? e : (0, x.getPID)();
+          let t = null !== (e = this.pid) && void 0 !== e ? e : (0, S.getPID)();
           p.Z.updateOverlayState(t, h.mM.OVERLAY_CRASHED_DISABLED), this.setState({
             showError: !1
           })
         },
         onReload: () => {
-          p.Z.setReloadOverlay((0, x.getPID)()), this.setState({
+          p.Z.setReloadOverlay((0, S.getPID)()), this.setState({
             showError: !1
           })
         }

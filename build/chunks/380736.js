@@ -1,7 +1,7 @@
 /** Chunk was on 12416 **/
 n.d(t, {
   Y: () => E,
-  Z: () => x
+  Z: () => S
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -33,12 +33,12 @@ let E = i.memo(function(e) {
     onCancelClick: h,
     onNotificationClick: E,
     hint: O,
-    cancelText: S,
-    confirmText: x,
+    cancelText: x,
+    confirmText: S,
     icon: j,
-    body: C,
-    title: Z,
-    renderFooter: w,
+    body: Z,
+    title: w,
+    renderFooter: C,
     contentOpacity: P,
     status: N,
     containerRef: I,
@@ -57,10 +57,10 @@ let E = i.memo(function(e) {
     W = i.useCallback(e => {
       e.stopPropagation(), null == h || h(e)
     }, [h]),
-    F = i.useCallback(() => {
+    U = i.useCallback(() => {
       A(!0)
     }, []),
-    U = i.useCallback(() => {
+    z = i.useCallback(() => {
       A(!1)
     }, []);
   return (0, r.jsxs)(r.Fragment, {
@@ -70,14 +70,14 @@ let E = i.memo(function(e) {
       children: (0, r.jsx)(c.P3F, {
         innerRef: I,
         ignoreKeyPress: !0,
-        onMouseOver: F,
-        onMouseLeave: U,
+        onMouseOver: U,
+        onMouseLeave: z,
         onClick: E,
         className: o()(g.container, {
           [g.clickable]: null != E
         }, _),
         children: function() {
-          let e = null == w ? void 0 : w(D, k);
+          let e = null == C ? void 0 : C(D, k);
           return (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsxs)(a.animated.div, {
               className: g.iconAndDetails,
@@ -98,12 +98,12 @@ let E = i.memo(function(e) {
                   color: "interactive-normal",
                   variant: "text-sm/semibold",
                   lineClamp: 2,
-                  children: Z
-                }), null != C ? (0, r.jsx)(c.Text, {
+                  children: w
+                }), null != Z ? (0, r.jsx)(c.Text, {
                   color: "interactive-normal",
                   variant: "text-sm/normal",
                   lineClamp: null != t ? t * (D ? 2 : 1) : void 0,
-                  children: C
+                  children: Z
                 }) : null, function() {
                   let e = "function" == typeof O ? O(D, k) : O;
                   return null != O ? (0, r.jsx)(c.Text, {
@@ -119,14 +119,14 @@ let E = i.memo(function(e) {
                     size: c.zxk.Sizes.SMALL,
                     color: c.zxk.Colors.GREEN,
                     onClick: L,
-                    children: null != x ? x : b.NW.string(b.t.BddRzc)
+                    children: null != S ? S : b.NW.string(b.t.BddRzc)
                   }) : null, null != h ? (0, r.jsx)(c.zxk, {
                     className: g.button,
                     size: c.zxk.Sizes.SMALL,
                     look: c.zxk.Looks.OUTLINED,
                     color: c.zxk.Colors.PRIMARY,
                     onClick: W,
-                    children: null != S ? S : b.NW.string(b.t["ETE/oK"])
+                    children: null != x ? x : b.NW.string(b.t["ETE/oK"])
                   }) : null]
                 })]
               })]
@@ -175,7 +175,7 @@ function O(e) {
   })
 }
 
-function S(e) {
+function x(e) {
   let {
     observe: t,
     children: n
@@ -186,7 +186,7 @@ function S(e) {
   }) : n
 }
 
-function x(e) {
+function S(e) {
   var t, n;
   let {
     notification: l,
@@ -205,15 +205,15 @@ function x(e) {
       renderFooter: g,
       animationWrapperClassName: y
     }
-  } = l, x = i.useCallback(() => {
+  } = l, S = i.useCallback(() => {
     f(d)
   }, [f, d]), j = i.useCallback(e => {
     u.Z.updateNotificationStatus(d), null == m || m(e, d)
-  }, [d, m]), C = i.useCallback(e => {
+  }, [d, m]), Z = i.useCallback(e => {
     null == p || p(e, d)
-  }, [p, d]), Z = i.useCallback(e => {
+  }, [p, d]), w = i.useCallback(e => {
     null == v || v(e, d)
-  }, [v, d]), w = i.useCallback(e => {
+  }, [v, d]), C = i.useCallback(e => {
     null == b || b(e, d)
   }, [b, d]), P = i.useCallback((e, t) => null == g ? void 0 : g(e, d, t), [g, d]), {
     props: {
@@ -250,7 +250,7 @@ function x(e) {
     index: o,
     locked: a,
     animationWrapperClassName: y,
-    children: (0, r.jsx)(S, {
+    children: (0, r.jsx)(x, {
       observe: 0 === o && !D,
       children: (0, r.jsx)(E, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -273,11 +273,11 @@ function x(e) {
         title: "function" == typeof M.title ? M.title(j) : M.title,
         containerRef: L,
         notificationId: l.id,
-        onNotificationShow: 0 === o ? x : void 0,
+        onNotificationShow: 0 === o ? S : void 0,
         onDismissClick: j,
-        onNotificationClick: null != p ? C : void 0,
-        onConfirmClick: null != v ? Z : void 0,
-        onCancelClick: null != b ? w : void 0,
+        onNotificationClick: null != p ? Z : void 0,
+        onConfirmClick: null != v ? w : void 0,
+        onCancelClick: null != b ? C : void 0,
         renderFooter: P,
         expand: !1,
         index: o,

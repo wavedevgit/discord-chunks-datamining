@@ -30,7 +30,7 @@ function E(e) {
   } = e, l = x[t];
   return null == l && (l = {
     results: [],
-    context: c.Z.getSearchContext(O.bind(null, t))
+    context: c.Z.getSearchContext(j.bind(null, t))
   }, x[t] = l), {
     query: null != n ? n : "",
     mode: null != r ? r : {
@@ -44,7 +44,7 @@ function E(e) {
   }
 }
 
-function O(e, t) {
+function j(e, t) {
   let {
     results: n
   } = t, r = x[e], i = y[e];
@@ -84,7 +84,7 @@ function O(e, t) {
   }), A.emitChange()
 }
 
-function j(e, t, n) {
+function O(e, t, n) {
   var r, i, a;
   let o, l = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 10;
   if (null == e || "" === e) return null;
@@ -146,7 +146,7 @@ function N(e) {
 
 function C(e, t) {
   let n = [];
-  return t.type === b.Sap.FILTER ? n.push(j(t.filter, t.token, e, 10)) : t.type === b.Sap.FILTER_ALL ? n = function(e, t) {
+  return t.type === b.Sap.FILTER ? n.push(O(t.filter, t.token, e, 10)) : t.type === b.Sap.FILTER_ALL ? n = function(e, t) {
     let n = (null != e ? e.getFullMatch() : "").trim(),
       r = [];
     return null != n && "" !== n && ((function(e) {
@@ -155,7 +155,7 @@ function C(e, t) {
       return g.Z.hidePersonalInformation || (n.push(b.dCx.FILTER_FROM), n.push(b.dCx.FILTER_MENTIONS)), t === b.aib.GUILD && n.push(b.dCx.FILTER_IN), n
     })(t).forEach(n => {
       if (null == n) return;
-      let i = j(n, e, t, 3);
+      let i = O(n, e, t, 3);
       null != i && r.push(i)
     }), r.push(function(e, t) {
       let n = (null != e ? e.getFullMatch() : "").trim();

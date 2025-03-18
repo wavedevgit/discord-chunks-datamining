@@ -22,8 +22,8 @@ var r = n(200651),
   y = n(924301),
   x = n(225890),
   E = n(434404),
-  O = n(507435),
-  j = n(504733),
+  j = n(507435),
+  O = n(504733),
   N = n(563959),
   C = n(703656),
   I = n(471253),
@@ -76,8 +76,8 @@ var r = n(200651),
   ey = n(587737),
   ex = n(482239),
   eE = n(328749),
-  eO = n(4305),
-  ej = n(910548),
+  ej = n(4305),
+  eO = n(910548),
   eN = n(981631),
   eC = n(70722),
   eI = n(388032),
@@ -126,7 +126,7 @@ function eP(e) {
     messageId: t.id,
     stopPropagation: !0
   });
-  return (0, r.jsx)(ej.ZP, {
+  return (0, r.jsx)(eO.ZP, {
     message: t,
     compact: o,
     guild: d,
@@ -330,7 +330,7 @@ let ew = Object.freeze({
         messageId: t.id
       });
       return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(eO.Z, {
+        children: [(0, r.jsx)(ej.Z, {
           message: t,
           guildId: i.guild_id,
           compact: n,
@@ -661,7 +661,7 @@ let ew = Object.freeze({
         usernameHook: a
       })
     },
-    [eN.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION]: j.Z,
+    [eN.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION]: O.Z,
     [eN.uaV.PRIVATE_CHANNEL_INTEGRATION_ADDED]: N.P,
     [eN.uaV.PRIVATE_CHANNEL_INTEGRATION_REMOVED]: N.e,
     [eN.uaV.PREMIUM_REFERRAL]: void 0,
@@ -691,7 +691,7 @@ let ew = Object.freeze({
       })
     },
     [eN.uaV.VOICE_HANGOUT_INVITE]: void 0,
-    [eN.uaV.POLL_RESULT]: O.Z,
+    [eN.uaV.POLL_RESULT]: j.Z,
     [eN.uaV.CHANGELOG]: void 0,
     [eN.uaV.NITRO_NOTIFICATION]: function(e) {
       let {

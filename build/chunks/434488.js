@@ -1,6 +1,6 @@
 /** Chunk was on 78114 **/
 n.d(t, {
-  h: () => T
+  h: () => Z
 });
 var r = n(200651),
   i = n(192379),
@@ -9,27 +9,26 @@ var r = n(200651),
   a = n(704215),
   s = n(692547),
   c = n(481060),
-  u = n(2052),
-  d = n(493773),
-  p = n(456100),
-  h = n(127255),
-  f = n(5200),
-  m = n(403404),
-  g = n(100527),
-  b = n(906732),
-  _ = n(895924),
-  C = n(540059),
-  v = n(605236),
-  y = n(448239),
-  x = n(626135),
-  j = n(607187),
-  O = n(981631),
-  E = n(388032),
-  N = n(889742),
-  I = n(359165),
-  P = n(334732);
+  u = n(493773),
+  d = n(456100),
+  p = n(127255),
+  h = n(5200),
+  f = n(403404),
+  m = n(100527),
+  g = n(906732),
+  b = n(895924),
+  _ = n(540059),
+  C = n(605236),
+  v = n(448239),
+  y = n(626135),
+  x = n(607187),
+  j = n(981631),
+  O = n(388032),
+  E = n(889742),
+  N = n(359165),
+  I = n(334732);
 
-function S(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +47,7 @@ function S(e) {
   return e
 }
 
-function Z(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -61,7 +60,7 @@ function Z(e, t) {
   }), e
 }
 
-function T(e) {
+function Z(e) {
   let {
     channel: t,
     guild: n,
@@ -70,21 +69,21 @@ function T(e) {
     handleClose: o,
     userParticipantCount: a
   } = e;
-  return i < 250 ? (0, r.jsx)(A, {
+  return i < 250 ? (0, r.jsx)(T, {
     channel: t,
     guild: n,
     width: i,
     inPopout: l,
     handleClose: o,
     userParticipantCount: a
-  }) : a > 1 ? (0, r.jsx)(R, {
+  }) : a > 1 ? (0, r.jsx)(w, {
     channel: t,
     guild: n,
     width: i,
     inPopout: l,
     handleClose: o,
     userParticipantCount: a
-  }) : (0, r.jsx)(w, {
+  }) : (0, r.jsx)(A, {
     channel: t,
     guild: n,
     width: i,
@@ -92,35 +91,32 @@ function T(e) {
   })
 }
 
-function A(e) {
+function T(e) {
   let {
     channel: t,
     inPopout: n,
     handleClose: i
   } = e, {
     analyticsLocations: l
-  } = (0, b.ZP)(g.Z.VC_TILE_ACTIVITY_SHELF_BUTTON), a = (0, u.O)(), {
-    enabled: d
-  } = p.c.useExperiment({
+  } = (0, g.ZP)(m.Z.VC_TILE_ACTIVITY_SHELF_BUTTON), {
+    enabled: a
+  } = d.c.useExperiment({
     location: "ActivityShelfButtonTile"
   }, {
     autoTrackExposure: !0
-  }), h = d ? c.iWm : c.gQj, f = () => {
-    (0, m.Z)({
+  }), u = a ? c.iWm : c.gQj, p = () => {
+    (0, f.Z)({
       channel: t,
-      guildId: t.guild_id,
-      locationObject: a.location,
       openInPopout: n,
-      analyticsLocations: l,
-      opensAppLauncherModal: !0
+      analyticsLocations: l
     })
   };
-  return (0, r.jsx)(b.Gt, {
+  return (0, r.jsx)(g.Gt, {
     value: l,
-    children: (0, r.jsxs)(j.Z, {
-      className: N.root,
+    children: (0, r.jsxs)(x.Z, {
+      className: E.root,
       children: [(0, r.jsx)(c.ua7, {
-        text: E.NW.string(E.t.qJvTKS),
+        text: O.NW.string(O.t.qJvTKS),
         children: e => {
           var {
             onClick: t
@@ -139,14 +135,14 @@ function A(e) {
             }
             return i
           }(e, ["onClick"]);
-          return (0, r.jsx)(c.P3F, Z(S({}, n), {
-            className: N.clickableTile,
+          return (0, r.jsx)(c.P3F, S(P({}, n), {
+            className: E.clickableTile,
             onClick: () => {
-              null == t || t(), f()
+              null == t || t(), p()
             },
             children: (0, r.jsx)("div", {
-              className: N.iconContainer,
-              children: (0, r.jsx)(h, {
+              className: E.iconContainer,
+              children: (0, r.jsx)(u, {
                 size: "custom",
                 color: "currentColor",
                 width: 40,
@@ -156,14 +152,14 @@ function A(e) {
           }))
         }
       }), (0, r.jsx)(c.f6W, {
-        theme: O.BRd.DARK,
+        theme: j.BRd.DARK,
         children: e => (0, r.jsx)(c.P3F, {
           onClick: i,
-          className: o()(e, N.shelfButtonCloseButton),
+          className: o()(e, E.shelfButtonCloseButton),
           children: (0, r.jsx)(c.k$p, {
             size: "md",
             color: "currentColor",
-            className: N.closeButtonIcon,
+            className: E.closeButtonIcon,
             secondaryColor: s.Z.colors.INTERACTIVE_NORMAL.css
           })
         })
@@ -172,7 +168,7 @@ function A(e) {
   })
 }
 
-function w(e) {
+function A(e) {
   let {
     channel: t,
     guild: l,
@@ -180,96 +176,90 @@ function w(e) {
     width: s
   } = e;
   i.useEffect(() => {
-    x.default.track(O.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+    y.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
       tile_type: "activity invite",
       n_participants: 1
     })
   }, []);
-  let d = (0, u.O)(),
-    {
-      analyticsLocations: h
-    } = (0, b.ZP)(g.Z.VC_TILE_ACTIVITY_INVITE),
-    f = (0, C.Q3)("SingleUserTile"),
-    {
-      enabled: _
-    } = p.c.useExperiment({
-      location: "SingleUserTile"
-    }, {
-      autoTrackExposure: !0
-    });
+  let {
+    analyticsLocations: u
+  } = (0, g.ZP)(m.Z.VC_TILE_ACTIVITY_INVITE), p = (0, _.Q3)("SingleUserTile"), {
+    enabled: h
+  } = d.c.useExperiment({
+    location: "SingleUserTile"
+  }, {
+    autoTrackExposure: !0
+  });
 
-  function v() {
+  function b() {
     (0, c.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("7654"), n.e("6680")]).then(n.bind(n, 560114));
-      return n => (0, r.jsx)(e, Z(S({}, n), {
+      return n => (0, r.jsx)(e, S(P({}, n), {
         guild: l,
         channel: t,
-        source: O.t4x.ACTIVITY_ENTRY_POINT_TILE
+        source: j.t4x.ACTIVITY_ENTRY_POINT_TILE
       }))
     }, {
       contextKey: a ? c.u1M : c.z1l
     })
   }
 
-  function y() {
-    (0, m.Z)({
+  function C() {
+    (0, f.Z)({
       channel: t,
-      guildId: t.guild_id,
-      locationObject: d.location,
       openInPopout: a,
-      analyticsLocations: h,
-      opensAppLauncherModal: !0
+      analyticsLocations: u
     })
   }
-  let T = _ ? c.iWm : c.nG3;
-  return (0, r.jsx)(b.Gt, {
-    value: h,
+  let v = h ? c.iWm : c.nG3;
+  return (0, r.jsx)(g.Gt, {
+    value: u,
     children: (0, r.jsx)(c.f6W, {
       disableAdaptiveTheme: !0,
-      theme: O.BRd.MIDNIGHT,
-      children: e => (0, r.jsxs)(j.Z, {
-        className: o()(N.root, N.singleUserRoot, e),
-        children: [s > 400 && !f ? (0, r.jsx)("img", {
-          src: P,
-          className: N.art,
-          alt: E.NW.string(E.t["3Y9xdH"])
-        }) : (0, r.jsx)("img", {
+      theme: j.BRd.MIDNIGHT,
+      children: e => (0, r.jsxs)(x.Z, {
+        className: o()(E.root, E.singleUserRoot, e),
+        children: [s > 400 && !p ? (0, r.jsx)("img", {
           src: I,
-          className: N.art,
+          className: E.art,
+          alt: O.NW.string(O.t["3Y9xdH"])
+        }) : (0, r.jsx)("img", {
+          src: N,
+          className: E.art,
           alt: ""
-        }), f ? null : (0, r.jsx)(c.Text, {
-          className: N.heading,
+        }), p ? null : (0, r.jsx)(c.Text, {
+          className: E.heading,
           variant: "text-md/semibold",
           color: "always-white",
-          children: E.NW.string(E.t["6pKGKS"])
+          children: O.NW.string(O.t["6pKGKS"])
         }), (0, r.jsxs)("div", {
-          className: N.buttonContainer,
+          className: E.buttonContainer,
           children: [(0, r.jsxs)(c.zxk, {
             size: c.zxk.Sizes.LARGE,
             color: c.zxk.Colors.PRIMARY,
             className: o()({
-              [N.button]: !f
+              [E.button]: !p
             }),
-            innerClassName: N.buttonContents,
-            onClick: v,
+            innerClassName: E.buttonContents,
+            onClick: b,
             children: [(0, r.jsx)(c.iFz, {
               size: "xs",
               color: "currentColor"
-            }), E.NW.string(E.t["6Qgren"])]
+            }), O.NW.string(O.t["6Qgren"])]
           }), (0, r.jsxs)(c.zxk, {
             size: c.zxk.Sizes.LARGE,
             color: c.zxk.Colors.PRIMARY,
             className: o()({
-              [N.button]: !f
+              [E.button]: !p
             }),
-            innerClassName: N.buttonContents,
-            onClick: y,
-            children: [(0, r.jsx)(T, {
+            innerClassName: E.buttonContents,
+            onClick: C,
+            children: [(0, r.jsx)(v, {
               size: "xs",
               color: "currentColor"
-            }), E.NW.string(E.t.qnFavb)]
+            }), O.NW.string(O.t.qnFavb)]
           })]
         })]
       })
@@ -277,21 +267,21 @@ function w(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     channel: t,
     guild: n,
     handleClose: l,
     width: s,
-    userParticipantCount: u
-  } = e, p = (0, C.Q3)("MultiUserTile");
-  (0, d.ZP)(() => {
-    x.default.track(O.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+    userParticipantCount: d
+  } = e, f = (0, _.Q3)("MultiUserTile");
+  (0, u.ZP)(() => {
+    y.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
       tile_type: "activity suggestion",
-      n_participants: u
+      n_participants: d
     })
   });
-  let m = (0, h.Z)({
+  let N = (0, p.Z)({
       guildId: n.id,
       context: {
         channel: t,
@@ -299,61 +289,61 @@ function R(e) {
       }
     }).slice(0, 3),
     {
-      analyticsLocations: I
-    } = (0, b.ZP)(g.Z.VC_TILE_ACTIVITY_SUGGESTION),
+      analyticsLocations: P
+    } = (0, g.ZP)(m.Z.VC_TILE_ACTIVITY_SUGGESTION),
     S = i.useMemo(() => ({
       channel: t,
       type: "channel"
     }), [t]);
-  return (0, r.jsx)(b.Gt, {
-    value: I,
-    children: (0, r.jsxs)(j.Z, {
-      className: N.root,
-      children: [s > 480 && !p ? (0, r.jsx)("img", {
-        className: N.art,
-        src: P,
-        alt: E.NW.string(E.t["3Y9xdH"])
+  return (0, r.jsx)(g.Gt, {
+    value: P,
+    children: (0, r.jsxs)(x.Z, {
+      className: E.root,
+      children: [s > 480 && !f ? (0, r.jsx)("img", {
+        className: E.art,
+        src: I,
+        alt: O.NW.string(O.t["3Y9xdH"])
       }) : null, s > 300 ? (0, r.jsx)(c.Text, {
-        className: N.heading,
+        className: E.heading,
         variant: s > 550 ? "text-md/semibold" : "text-sm/semibold",
-        children: E.NW.string(E.t["7BKMcH"])
+        children: O.NW.string(O.t["7BKMcH"])
       }) : null, (0, r.jsx)("div", {
-        className: o()(N.activitiesContainer, {
-          [N.activitiesContainerSmol]: s <= 300
+        className: o()(E.activitiesContainer, {
+          [E.activitiesContainerSmol]: s <= 300
         }),
-        children: m.map(e => (0, r.jsx)(f.Y, {
+        children: N.map(e => (0, r.jsx)(h.Y, {
           context: S,
           activityItem: e,
-          aspectRatio: f.Y.AspectRatio.SIXTEEN_BY_NINE,
-          animatedDivClass: N.activitySuggestion,
-          commandOrigin: _.bB.VOICE_TILE_ACTIVITY_SUGGESTIONS
+          aspectRatio: h.Y.AspectRatio.SIXTEEN_BY_NINE,
+          animatedDivClass: E.activitySuggestion,
+          commandOrigin: b.bB.VOICE_TILE_ACTIVITY_SUGGESTIONS
         }, e.application.id))
       }), (0, r.jsxs)(c.P3F, {
-        className: N.checkboxContainer,
+        className: E.checkboxContainer,
         onClick: function() {
-          x.default.track(O.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+          y.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
             close_type: "permanent",
-            n_participants: u
-          }), (0, v.EW)(a.z.VC_TILE_ACTIVITIES_ENTRY_POINT)
+            n_participants: d
+          }), (0, C.EW)(a.z.VC_TILE_ACTIVITIES_ENTRY_POINT)
         },
-        children: [(0, r.jsx)(y.Z, {}), (0, r.jsx)(c.Text, {
+        children: [(0, r.jsx)(v.Z, {}), (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",
-          children: E.NW.string(E.t["5E9SBw"])
+          children: O.NW.string(O.t["5E9SBw"])
         })]
       }), (0, r.jsx)(c.P3F, {
-        className: N.closeButtonContainer,
+        className: E.closeButtonContainer,
         onClick: function() {
-          x.default.track(O.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+          y.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
             close_type: "temporary",
-            n_participants: u
+            n_participants: d
           }), l()
         },
         children: (0, r.jsx)(c.Dio, {
           size: "md",
           color: "currentColor",
-          className: N.closeButton
+          className: E.closeButton
         })
       })]
     })

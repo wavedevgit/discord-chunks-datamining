@@ -59,8 +59,8 @@ let b = {
   y = {},
   x = null,
   E = 864e5;
-var O = ((i = O || {}).IS_OWNER = "is_owner", i.IS_ADMIN = "is_admin", i.IS_COMMUNITY = "is_community", i.GUILD_SIZE = "guild_size", i.IS_HUB = "is_hub", i.IS_VIEWING = "is_viewing", i.GUILD_PERMISSIONS = "guild_permissions", i.GUILD_SIZE_ALL = "guild_size_all", i);
-let j = new Set(Object.values(O));
+var j = ((i = j || {}).IS_OWNER = "is_owner", i.IS_ADMIN = "is_admin", i.IS_COMMUNITY = "is_community", i.GUILD_SIZE = "guild_size", i.IS_HUB = "is_hub", i.IS_VIEWING = "is_viewing", i.GUILD_PERMISSIONS = "guild_permissions", i.GUILD_SIZE_ALL = "guild_size_all", i);
+let O = new Set(Object.values(j));
 
 function N(e) {
   var t;
@@ -73,7 +73,7 @@ function N(e) {
       } = e;
       if (0 === t.length) return !0;
       for (let e of t)
-        if (!j.has(e)) return !1;
+        if (!O.has(e)) return !1;
       let i = t.includes("guild_size_all"),
         o = !0;
       for (let l of Object.values(d.Z.getGuilds())) {

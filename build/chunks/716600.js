@@ -1,10 +1,10 @@
-/** Chunk was on 75101 **/
+/** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => l
+  Z: () => r
 });
 var i = n(442837),
-  r = n(317381);
+  l = n(317381);
 
-function l() {
-  return (0, i.e7)([r.ZP], () => r.ZP.getCurrentEmbeddedActivity())
+function r() {
+  return (0, i.e7)([l.ZP], () => l.ZP.getCurrentEmbeddedActivity())
 }

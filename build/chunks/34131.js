@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(70097),
   l = n(434404),
-  o = n(970731),
-  a = n(981631),
+  a = n(970731),
+  o = n(981631),
   s = n(388032),
   c = n(210101);
 
@@ -18,7 +18,7 @@ function u(e) {
   } = e;
   return (0, r.jsx)("div", {
     className: c.container,
-    children: (0, r.jsx)(o.ZP, {
+    children: (0, r.jsx)(a.ZP, {
       header: s.NW.string(s.t.gCgirq),
       content: s.NW.string(s.t.fLMZFx),
       asset: (0, r.jsx)(i.Z, {
@@ -29,7 +29,7 @@ function u(e) {
       }),
       buttonCTA: s.NW.string(s.t.BQq86u),
       onClick: () => {
-        l.Z.open(t, a.pNK.ROLE_SUBSCRIPTIONS, void 0, a.KsC.ROLE_SUBSCRIPTION_TIER_TEMPLATE)
+        l.Z.open(t, o.pNK.ROLE_SUBSCRIPTIONS, void 0, o.KsC.ROLE_SUBSCRIPTION_TIER_TEMPLATE)
       },
       secondaryButtonCTA: s.NW.string(s.t.WAI6xs),
       markAsDismissed: n

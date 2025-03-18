@@ -1,106 +1,106 @@
-/** Chunk was on 60133 **/
-let n, a, r, o, l, s, c;
-i.d(t, {
-  Z: () => T
-}), i(47120);
-var d, u, m, p = i(442837),
-  f = i(570140),
-  _ = i(823385),
-  I = i(814443),
-  y = i(823379),
-  g = i(971130),
-  h = i(592125),
-  v = i(496675),
-  x = i(699516),
-  N = i(981631),
-  b = i(245335);
-let w = new Set,
-  O = [],
-  S = new Map;
+/** Chunk was on 7654 **/
+let l, i, s, r, a, o, d;
+n.d(t, {
+  Z: () => P
+}), n(47120);
+var u, c, h, g = n(442837),
+  v = n(570140),
+  m = n(823385),
+  x = n(814443),
+  p = n(823379),
+  I = n(971130),
+  N = n(592125),
+  S = n(496675),
+  E = n(699516),
+  f = n(981631),
+  j = n(245335);
+let T = new Set,
+  C = [],
+  _ = new Map;
 
-function j(e) {
+function y(e) {
   let t = new Set,
-    i = null == o || c === b.Iq.EMBEDDED_APPLICATION ? void 0 : o.id,
-    n = (0, g.rh)(w, i);
-  for (let e of (null == n || x.Z.isBlocked(n.id) || t.add(n.id), I.Z.getUserAffinitiesUserIds())) t.add(e);
-  let a = new Set;
-  return c === b.Iq.EMBEDDED_APPLICATION && _.Z.getChannelHistory().map(e => h.Z.getChannel(e)).filter(y.lm).filter(e => e.type === N.d4z.GUILD_TEXT).filter(e => v.Z.can(N.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => a.add(e.id)), (0, g.an)({
+    n = null == r || d === j.Iq.EMBEDDED_APPLICATION ? void 0 : r.id,
+    l = (0, I.rh)(T, n);
+  for (let e of (null == l || E.Z.isBlocked(l.id) || t.add(l.id), x.Z.getUserAffinitiesUserIds())) t.add(e);
+  let i = new Set;
+  return d === j.Iq.EMBEDDED_APPLICATION && m.Z.getChannelHistory().map(e => N.Z.getChannel(e)).filter(p.lm).filter(e => e.type === f.d4z.GUILD_TEXT).filter(e => S.Z.can(f.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => i.add(e.id)), (0, I.an)({
     query: e,
-    omitUserIds: w,
+    omitUserIds: T,
     suggestedUserIds: t,
     maxRowsWithoutQuery: 100,
-    omitGuildId: i,
-    suggestedChannelIds: a,
-    inviteTargetType: c
+    omitGuildId: n,
+    suggestedChannelIds: i,
+    inviteTargetType: d
   })
 }
 
-function C(e) {
-  O = e, S = new Map, e.forEach((e, t) => {
-    S.set(e, {
+function Z(e) {
+  C = e, _ = new Map, e.forEach((e, t) => {
+    _.set(e, {
       index: t
     })
   })
 }
-class E extends(d = p.ZP.Store) {
+class b extends(u = g.ZP.Store) {
   initialize() {
-    this.waitFor(x.Z, I.Z)
+    this.waitFor(E.Z, x.Z)
   }
   getInviteSuggestionRows() {
-    return O
+    return C
   }
   getTotalSuggestionsCount() {
-    return a
+    return i
   }
   getInitialCounts() {
-    return n
+    return l
   }
   getSelectedInviteMetadata(e) {
-    let t = S.get(e),
-      i = I.Z.getUserAffinitiesUserIds();
+    let t = _.get(e),
+      n = x.Z.getUserAffinitiesUserIds();
     return null != t ? {
       rowNum: t.index,
       isAffinitySuggestion: e.isSuggested,
-      numTotal: O.length,
-      numAffinityConnections: i.size,
-      isFiltered: r
+      numTotal: C.length,
+      numAffinityConnections: n.size,
+      isFiltered: s
     } : null
   }
 }
-m = "InviteSuggestionsStore", (u = "displayName") in E ? Object.defineProperty(E, u, {
-  value: m,
+h = "InviteSuggestionsStore", (c = "displayName") in b ? Object.defineProperty(b, c, {
+  value: h,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : E[u] = m;
-let T = new E(f.Z, {
+}) : b[c] = h;
+let P = new b(v.Z, {
   LOAD_INVITE_SUGGESTIONS: function(e) {
     let {
       omitUserIds: t,
-      guild: i,
-      channel: d,
-      applicationId: u,
-      inviteTargetType: m
+      guild: n,
+      channel: u,
+      applicationId: c,
+      inviteTargetType: h
     } = e;
-    o = null != d ? i : null, l = d, s = u, c = m, w = new Set([...t, ...x.Z.getBlockedOrIgnoredIDs(), ...(0, g.Sz)({
-      channel: l,
-      applicationId: s,
-      inviteTargetType: m
-    })]), r = !1;
+    r = null != u ? n : null, a = u, o = c, d = h, T = new Set([...t, ...E.Z.getBlockedOrIgnoredIDs(), ...(0, I.Sz)({
+      channel: a,
+      applicationId: o,
+      inviteTargetType: h
+    })]), s = !1;
     let {
-      rows: p,
-      counts: f
-    } = j("");
-    C(p), n = f, a = O.length
+      rows: g,
+      counts: v
+    } = y("");
+    Z(g), l = v, i = C.length
   },
   INVITE_SUGGESTIONS_SEARCH: function(e) {
     let {
       query: t
     } = e;
-    r = "" !== t;
+    s = "" !== t;
     let {
-      rows: i
-    } = j(t);
-    C(i)
+      rows: n
+    } = y(t);
+    Z(n)
   }
 })

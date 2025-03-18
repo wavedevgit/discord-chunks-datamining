@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(979554),
+  a = n.n(l),
+  o = n(979554),
   s = n(887003),
   c = n(442837),
   u = n(780384),
@@ -36,7 +36,7 @@ let T = (0, i.memo)(function(e) {
   } = (0, p.Z)(), B = (0, h.ZP)(), H = (0, E.B6)(null === (t = A.userStatus) || void 0 === t ? void 0 : t.claimedAt, {
     month: "numeric",
     day: "numeric"
-  }), F = null !== (P = null === (n = A.userStatus) || void 0 === n ? void 0 : n.claimedTier) && void 0 !== P ? P : 0, z = A.config.rewards[F], Y = (null == z ? void 0 : z.type) === s.w.FRACTIONAL_PREMIUM, K = (null == z ? void 0 : z.type) === s.w.COLLECTIBLE, q = null == z ? void 0 : null === (T = z.collectibleProduct) || void 0 === T ? void 0 : null === (l = T.items) || void 0 === l ? void 0 : l[0], Q = (null == q ? void 0 : q.type) === a.Z.AVATAR_DECORATION ? q : null;
+  }), F = null !== (P = null === (n = A.userStatus) || void 0 === n ? void 0 : n.claimedTier) && void 0 !== P ? P : 0, z = A.config.rewards[F], Y = (null == z ? void 0 : z.type) === s.w.FRACTIONAL_PREMIUM, K = (null == z ? void 0 : z.type) === s.w.COLLECTIBLE, q = null == z ? void 0 : null === (T = z.collectibleProduct) || void 0 === T ? void 0 : null === (l = T.items) || void 0 === l ? void 0 : l[0], Q = (null == q ? void 0 : q.type) === o.Z.AVATAR_DECORATION ? q : null;
   (0, p.P)(k, e => {
     let {
       height: t
@@ -89,7 +89,7 @@ let T = (0, i.memo)(function(e) {
       onBlur: en,
       onMouseEnter: et,
       onMouseLeave: en,
-      className: o()(S.container, {
+      className: a()(S.container, {
         [S.hovered]: Z
       }),
       children: [null != G && K && null != Q && (0, r.jsx)("div", {
@@ -119,7 +119,7 @@ let T = (0, i.memo)(function(e) {
         alt: A.config.messages.questName,
         onError: () => er($.url)
       }), (0, r.jsx)("div", {
-        className: o()(S.overlay, {
+        className: a()(S.overlay, {
           [S.darkThemeGradient]: X,
           [S.lightThemeGradient]: !X
         })
@@ -130,7 +130,7 @@ let T = (0, i.memo)(function(e) {
           transform: "translateY(-".concat(ee, "px)")
         },
         children: (0, r.jsx)(y.ZP, {
-          logotypeClassName: o()(S.logo, {
+          logotypeClassName: a()(S.logo, {
             [S.logoWithCosponsor]: J
           }),
           quest: A,

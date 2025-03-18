@@ -1,11 +1,11 @@
 /** Chunk was on 12416 **/
 n.d(t, {
   Ix: () => L,
-  OV: () => U,
+  OV: () => z,
   V_: () => W,
-  Ym: () => F,
+  Ym: () => U,
   ZP: () => Y,
-  ac: () => z,
+  ac: () => F,
   bn: () => M,
   nR: () => k
 }), n(47120);
@@ -27,12 +27,12 @@ var r, i = n(200651),
   y = n(563218),
   E = n(318891),
   O = n(884338),
-  S = n(719296),
-  x = n(958185),
+  x = n(719296),
+  S = n(958185),
   j = n(100527),
-  C = n(906732),
-  Z = n(890280),
-  w = n(835473),
+  Z = n(906732),
+  w = n(890280),
+  C = n(835473),
   P = n(522474),
   N = n(314897),
   I = n(819640),
@@ -49,11 +49,11 @@ function W(e) {
   return e > 400 ? 2 : +(e > 300)
 }
 
-function F(e) {
+function U(e) {
   return e > 400 ? [u.EFr.SIZE_56, 56] : e > 300 ? [u.EFr.SIZE_32, 32] : [u.EFr.SIZE_24, 24]
 }
 
-function U(e) {
+function z(e) {
   let {
     avatarSize: t,
     guildId: n,
@@ -81,7 +81,7 @@ function U(e) {
   })
 }
 
-function z(e) {
+function F(e) {
   switch (e) {
     case 2:
       return u.zxk.Sizes.LARGE;
@@ -99,12 +99,12 @@ function V(e) {
     application: o,
     channel: h,
     width: b
-  } = e, g = W(b), [y] = F(b), E = (0, c.Wu)([_.default, N.default], () => Array.from(r).map(e => (0, p.J)(e, N.default) ? null : _.default.getUser(e.userId)).filter(R.lm)), O = (0, c.e7)([f.ZP], () => {
+  } = e, g = W(b), [y] = U(b), E = (0, c.Wu)([_.default, N.default], () => Array.from(r).map(e => (0, p.J)(e, N.default) ? null : _.default.getUser(e.userId)).filter(R.lm)), O = (0, c.e7)([f.ZP], () => {
     var e;
     return null !== (e = f.ZP.getEmbeddedActivitiesForChannel(h.id).find(e => e.applicationId === o.id)) && void 0 !== e ? e : f.ZP.getEmbeddedActivitiesForStartingChannel(h.id).find(e => e.applicationId === o.id)
   }), {
-    analyticsLocations: S
-  } = (0, C.ZP)(), x = (0, d.O)(), j = T.ZP.getName(h.getGuildId(), h.id, null == E ? void 0 : E[0]), w = (0, v.s5)({
+    analyticsLocations: x
+  } = (0, Z.ZP)(), S = (0, d.O)(), j = T.ZP.getName(h.getGuildId(), h.id, null == E ? void 0 : E[0]), C = (0, v.s5)({
     userId: null === (t = _.default.getCurrentUser()) || void 0 === t ? void 0 : t.id,
     channelId: h.id,
     application: o
@@ -113,14 +113,14 @@ function V(e) {
     type: "channel"
   }), [h]), {
     submitting: L
-  } = (0, Z.Z)({
+  } = (0, w.Z)({
     applicationId: k,
     context: M,
     launchingComponentId: I
   });
   return (0, i.jsxs)("div", {
     className: D.splash,
-    children: [(0, i.jsx)(U, {
+    children: [(0, i.jsx)(z, {
       avatarSize: y,
       guildId: P,
       channelId: h.id,
@@ -146,20 +146,20 @@ function V(e) {
       children: o.name
     }), (0, i.jsx)("div", {
       className: D.buttons,
-      children: w ? (0, i.jsx)(u.zxk, {
+      children: C ? (0, i.jsx)(u.zxk, {
         onClick: function(e) {
           e.stopPropagation(), null != O && (0, m.Z)({
             applicationId: O.applicationId,
             activityChannelId: h.id,
-            locationObject: x.location,
-            analyticsLocations: S,
+            locationObject: S.location,
+            analyticsLocations: x,
             componentId: I,
             instanceId: O.compositeInstanceId,
             isContextlessActivity: O.location.kind === s.E.CONTEXTLESS
           })
         },
         submitting: L,
-        size: z(g),
+        size: F(g),
         className: D.button,
         look: u.iLD.FILLED,
         color: u.zxk.Colors.WHITE,
@@ -178,35 +178,35 @@ function Y(e) {
     channel: a
   } = e, {
     analyticsLocations: s
-  } = (0, C.ZP)(j.Z.ACTIVITY_TILE), {
+  } = (0, Z.ZP)(j.Z.ACTIVITY_TILE), {
     applicationId: u
-  } = t, d = (0, b.Z)(), f = null != d && (0, h.pY)(d.location) === a.id && d.applicationId === u, [m] = (0, w.Z)([u]), {
+  } = t, d = (0, b.Z)(), f = null != d && (0, h.pY)(d.location) === a.id && d.applicationId === u, [m] = (0, C.Z)([u]), {
     url: p
   } = (0, g.Z)({
     applicationId: u,
     names: L,
     size: M
-  }), v = !r && f, O = !f, Z = !f && !r, N = (0, c.e7)([I.Z, P.Z], () => (0, x.Z)({
+  }), v = !r && f, O = !f, w = !f && !r, N = (0, c.e7)([I.Z, P.Z], () => (0, S.Z)({
     LayerStore: I.Z,
     PopoutWindowStore: P.Z
   }));
   return l.useEffect(() => {
     if (v && null != d && !N) {
-      let e = (0, S.Z)(d.location.id, d.applicationId);
+      let e = (0, x.Z)(d.location.id, d.applicationId);
       (0, E.jy)(e)
     }
-  }, [v, d, N]), (0, i.jsx)(C.Gt, {
+  }, [v, d, N]), (0, i.jsx)(Z.Gt, {
     value: s,
     children: (0, i.jsxs)("div", {
       className: D.container,
       children: [v && null != d && (0, i.jsx)(y.Z, {
         className: D.iframe,
-        embedId: (0, S.Z)(d.location.id, u)
+        embedId: (0, x.Z)(d.location.id, u)
       }), O && null != m && null != p && "" !== p ? (0, i.jsx)("img", {
         className: D.splashImage,
         alt: m.name,
         src: p
-      }) : null, Z && null != m && (0, i.jsx)(V, {
+      }) : null, w && null != m && (0, i.jsx)(V, {
         width: n,
         channel: a,
         participants: t.participants,

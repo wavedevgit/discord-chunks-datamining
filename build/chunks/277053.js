@@ -3,8 +3,8 @@ let r, i;
 n.d(t, {
   Z: () => x
 }), n(47120);
-var l, o = n(392711),
-  a = n.n(o),
+var l, a = n(392711),
+  o = n.n(a),
   s = n(442837),
   c = n(433517),
   u = n(570140),
@@ -133,7 +133,7 @@ let x = new Z(u.Z, {
       deny: i
     }), v = _(b({}, v), {
       [t]: l
-    }), E.add(t), O = f.QZA.OPEN, N = !a().isEqual(v, y), r = d.o4(I, C)
+    }), E.add(t), O = f.QZA.OPEN, N = !o().isEqual(v, y), r = d.o4(I, C)
   },
   CHANNEL_SETTINGS_PERMISSIONS_SELECT_PERMISSION: function(e) {
     let {

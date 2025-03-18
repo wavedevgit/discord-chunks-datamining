@@ -1,6 +1,6 @@
 /**
   Module ID: 16674
-  Original File Name: c17d143fb0904107
+  Original File Name: 026e4c756b0e618b
 **/
 .hoverRoll__0263c {
     display: inline-block;
@@ -269,9 +269,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .closeButtonBackgroundPlated__972a0 {
     border-radius: 50%;
-    background-color: var(--custom-nameplate);
+    background-color: var(--custom-nameplate-neutral-hovered);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+    opacity: .9;
     height: 18px;
     width: 18px;
     display: flex;
@@ -1805,4 +1806,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=c17d143fb0904107.css.map*/
+/*# sourceMappingURL=026e4c756b0e618b.css.map*/

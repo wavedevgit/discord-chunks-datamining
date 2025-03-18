@@ -23,8 +23,8 @@ var r = n(200651),
   y = n(696014),
   x = n(847033),
   E = n(544978),
-  O = n(893182),
-  j = n(388032),
+  j = n(893182),
+  O = n(388032),
   N = n(220123);
 
 function C(e) {
@@ -37,7 +37,7 @@ function C(e) {
     children: [(0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "header-primary",
-      children: j.NW.string(j.t.J4cw1t)
+      children: O.NW.string(O.t.J4cw1t)
     }), (0, r.jsx)(s.LZC, {
       size: 4,
       horizontal: !0
@@ -98,7 +98,7 @@ function S(e) {
   } = (0, y.s)(), T = (null !== (n = null == u ? void 0 : null === (t = u.description) || void 0 === t ? void 0 : t.trim().length) && void 0 !== n ? n : 0) > 0, [P, A] = i.useState(1), w = (0, c.Z)("(max-width: 1439px)"), {
     selectedTab: Z,
     isPhantomPreview: k
-  } = (0, x.m)(), R = Z === E.y.GUILD_PRODUCTS_PREVIEW ? j.NW.string(j.t["LvXy/P"]) : j.NW.string(j.t.XyqKh4), D = T ? (0, r.jsxs)(r.Fragment, {
+  } = (0, x.m)(), R = Z === E.y.GUILD_PRODUCTS_PREVIEW ? O.NW.string(O.t["LvXy/P"]) : O.NW.string(O.t.XyqKh4), D = T ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(S, {
       lineClamp: w || 2 === P ? 2 : 3,
       children: (0, r.jsx)(s.Text, {
@@ -110,7 +110,7 @@ function S(e) {
       children: [(0, r.jsx)(s.LZC, {
         size: 4
       }), (0, r.jsx)(C, {
-        onClick: () => (0, O.Z)({
+        onClick: () => (0, j.Z)({
           guildId: m
         })
       })]
@@ -118,7 +118,7 @@ function S(e) {
   }) : (0, r.jsx)(s.Text, {
     variant: "text-sm/normal",
     color: "text-normal",
-    children: k ? R : j.NW.string(j.t["NY/FIS"])
+    children: k ? R : O.NW.string(O.t["NY/FIS"])
   });
   return (0, r.jsxs)("div", {
     className: N.container,
@@ -142,7 +142,7 @@ function S(e) {
             variant: "heading-xl/semibold",
             color: "header-primary",
             lineClamp: 2,
-            children: k ? j.NW.string(j.t.rtgp7u) : j.NW.formatToPlainString(j.t.NZeik5, {
+            children: k ? O.NW.string(O.t.rtgp7u) : O.NW.formatToPlainString(O.t.NZeik5, {
               guildName: a.name
             })
           })
@@ -151,7 +151,7 @@ function S(e) {
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           color: "text-normal",
-          children: j.NW.format(j.t["7JwrlJ"], {
+          children: O.NW.format(O.t["7JwrlJ"], {
             username: f,
             usernameHook: function(e, t) {
               return (0, r.jsx)("span", {

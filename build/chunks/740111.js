@@ -5,10 +5,10 @@ n.d(t, {
 }), n(611060), n(47120), n(411104), n(653041);
 var r, i = n(230367),
   l = n(320215),
-  o = n(240773),
-  a = n(495852),
+  a = n(240773),
+  o = n(495852),
   s = ((r = {})[r.UNSPECIFIED = 0] = "UNSPECIFIED", r[r.OPEN_MARKETING_PAGE = 1] = "OPEN_MARKETING_PAGE", r[r.OPEN_TIER_2_PAYMENT_MODAL = 2] = "OPEN_TIER_2_PAYMENT_MODAL", r[r.OPEN_TIER_1_PAYMENT_MODAL = 3] = "OPEN_TIER_1_PAYMENT_MODAL", r[r.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER = 4] = "OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER", r);
-class c extends a.C {
+class c extends o.C {
   create(e) {
     let t = {
       header: "",
@@ -17,15 +17,15 @@ class c extends a.C {
       imageLink: "",
       imageLinkLightTheme: ""
     };
-    return globalThis.Object.defineProperty(t, o.C, {
+    return globalThis.Object.defineProperty(t, a.C, {
       enumerable: !1,
       value: this
     }), void 0 !== e && (0, l.l)(this, t, e), t
   }
   internalBinaryRead(e, t, n, r) {
     let l = null != r ? r : this.create(),
-      o = e.pos + t;
-    for (; e.pos < o;) {
+      a = e.pos + t;
+    for (; e.pos < a;) {
       let [t, r] = e.tag();
       switch (t) {
         case 1:
@@ -44,10 +44,10 @@ class c extends a.C {
           l.imageLinkLightTheme = e.string();
           break;
         default:
-          let o = n.readUnknownField;
-          if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
-          let a = e.skip(r);
-          !1 !== o && (!0 === o ? i.z.onRead : o)(this.typeName, l, t, r, a)
+          let a = n.readUnknownField;
+          if ("throw" === a) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
+          let o = e.skip(r);
+          !1 !== a && (!0 === a ? i.z.onRead : a)(this.typeName, l, t, r, o)
       }
     }
     return l
@@ -87,21 +87,21 @@ class c extends a.C {
   }
 }
 let u = new c;
-class d extends a.C {
+class d extends o.C {
   create(e) {
     let t = {
       copy: "",
       buttonAction: 0
     };
-    return globalThis.Object.defineProperty(t, o.C, {
+    return globalThis.Object.defineProperty(t, a.C, {
       enumerable: !1,
       value: this
     }), void 0 !== e && (0, l.l)(this, t, e), t
   }
   internalBinaryRead(e, t, n, r) {
     let l = null != r ? r : this.create(),
-      o = e.pos + t;
-    for (; e.pos < o;) {
+      a = e.pos + t;
+    for (; e.pos < a;) {
       let [t, r] = e.tag();
       switch (t) {
         case 1:
@@ -111,10 +111,10 @@ class d extends a.C {
           l.buttonAction = e.int32();
           break;
         default:
-          let o = n.readUnknownField;
-          if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
-          let a = e.skip(r);
-          !1 !== o && (!0 === o ? i.z.onRead : o)(this.typeName, l, t, r, a)
+          let a = n.readUnknownField;
+          if ("throw" === a) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
+          let o = e.skip(r);
+          !1 !== a && (!0 === a ? i.z.onRead : a)(this.typeName, l, t, r, o)
       }
     }
     return l
@@ -139,22 +139,22 @@ class d extends a.C {
   }
 }
 let p = new d;
-class h extends a.C {
+class h extends o.C {
   create(e) {
     let t = {
       heroArtLocalizedVideoLinksDarkTheme: {},
       heroArtLocalizedVideoLinksLightTheme: {},
       heroArtVideoSubtitleLinks: {}
     };
-    return globalThis.Object.defineProperty(t, o.C, {
+    return globalThis.Object.defineProperty(t, a.C, {
       enumerable: !1,
       value: this
     }), void 0 !== e && (0, l.l)(this, t, e), t
   }
   internalBinaryRead(e, t, n, r) {
     let l = null != r ? r : this.create(),
-      o = e.pos + t;
-    for (; e.pos < o;) {
+      a = e.pos + t;
+    for (; e.pos < a;) {
       let [t, r] = e.tag();
       switch (t) {
         case 1:
@@ -167,10 +167,10 @@ class h extends a.C {
           this.binaryReadMap3(l.heroArtVideoSubtitleLinks, e, n);
           break;
         default:
-          let o = n.readUnknownField;
-          if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
-          let a = e.skip(r);
-          !1 !== o && (!0 === o ? i.z.onRead : o)(this.typeName, l, t, r, a)
+          let a = n.readUnknownField;
+          if ("throw" === a) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
+          let o = e.skip(r);
+          !1 !== a && (!0 === a ? i.z.onRead : a)(this.typeName, l, t, r, o)
       }
     }
     return l
@@ -178,7 +178,7 @@ class h extends a.C {
   binaryReadMap1(e, t, n) {
     let r = t.uint32(),
       i = t.pos + r,
-      l, o;
+      l, a;
     for (; t.pos < i;) {
       let [e, n] = t.tag();
       switch (e) {
@@ -186,18 +186,18 @@ class h extends a.C {
           l = t.string();
           break;
         case 2:
-          o = t.string();
+          a = t.string();
           break;
         default:
           throw new globalThis.Error("unknown map entry field for field discord_protos.premium_marketing.v1.Variant1Storage.hero_art_localized_video_links_dark_theme")
       }
     }
-    e[null != l ? l : ""] = null != o ? o : ""
+    e[null != l ? l : ""] = null != a ? a : ""
   }
   binaryReadMap2(e, t, n) {
     let r = t.uint32(),
       i = t.pos + r,
-      l, o;
+      l, a;
     for (; t.pos < i;) {
       let [e, n] = t.tag();
       switch (e) {
@@ -205,18 +205,18 @@ class h extends a.C {
           l = t.string();
           break;
         case 2:
-          o = t.string();
+          a = t.string();
           break;
         default:
           throw new globalThis.Error("unknown map entry field for field discord_protos.premium_marketing.v1.Variant1Storage.hero_art_localized_video_links_light_theme")
       }
     }
-    e[null != l ? l : ""] = null != o ? o : ""
+    e[null != l ? l : ""] = null != a ? a : ""
   }
   binaryReadMap3(e, t, n) {
     let r = t.uint32(),
       i = t.pos + r,
-      l, o;
+      l, a;
     for (; t.pos < i;) {
       let [e, n] = t.tag();
       switch (e) {
@@ -224,13 +224,13 @@ class h extends a.C {
           l = t.string();
           break;
         case 2:
-          o = t.string();
+          a = t.string();
           break;
         default:
           throw new globalThis.Error("unknown map entry field for field discord_protos.premium_marketing.v1.Variant1Storage.hero_art_video_subtitle_links")
       }
     }
-    e[null != l ? l : ""] = null != o ? o : ""
+    e[null != l ? l : ""] = null != a ? a : ""
   }
   internalBinaryWrite(e, t, n) {
     for (let n of Object.keys(e.heroArtLocalizedVideoLinksDarkTheme)) t.tag(1, i.TD.LengthDelimited).fork().tag(1, i.TD.LengthDelimited).string(n).tag(2, i.TD.LengthDelimited).string(e.heroArtLocalizedVideoLinksDarkTheme[n]).join();
@@ -271,22 +271,22 @@ class h extends a.C {
   }
 }
 let f = new h;
-class g extends a.C {
+class g extends o.C {
   create(e) {
     let t = {
       link: "",
       locale: "",
       isDefault: !1
     };
-    return globalThis.Object.defineProperty(t, o.C, {
+    return globalThis.Object.defineProperty(t, a.C, {
       enumerable: !1,
       value: this
     }), void 0 !== e && (0, l.l)(this, t, e), t
   }
   internalBinaryRead(e, t, n, r) {
     let l = null != r ? r : this.create(),
-      o = e.pos + t;
-    for (; e.pos < o;) {
+      a = e.pos + t;
+    for (; e.pos < a;) {
       let [t, r] = e.tag();
       switch (t) {
         case 1:
@@ -299,10 +299,10 @@ class g extends a.C {
           l.isDefault = e.bool();
           break;
         default:
-          let o = n.readUnknownField;
-          if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
-          let a = e.skip(r);
-          !1 !== o && (!0 === o ? i.z.onRead : o)(this.typeName, l, t, r, a)
+          let a = n.readUnknownField;
+          if ("throw" === a) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
+          let o = e.skip(r);
+          !1 !== a && (!0 === a ? i.z.onRead : a)(this.typeName, l, t, r, o)
       }
     }
     return l
@@ -332,7 +332,7 @@ class g extends a.C {
   }
 }
 let m = new g;
-class b extends a.C {
+class b extends o.C {
   create(e) {
     let t = {
       header: "",
@@ -348,15 +348,15 @@ class b extends a.C {
       body: "",
       heroArtVideoSubtitles: []
     };
-    return globalThis.Object.defineProperty(t, o.C, {
+    return globalThis.Object.defineProperty(t, a.C, {
       enumerable: !1,
       value: this
     }), void 0 !== e && (0, l.l)(this, t, e), t
   }
   internalBinaryRead(e, t, n, r) {
     let l = null != r ? r : this.create(),
-      o = e.pos + t;
-    for (; e.pos < o;) {
+      a = e.pos + t;
+    for (; e.pos < a;) {
       let [t, r] = e.tag();
       switch (t) {
         case 1:
@@ -402,10 +402,10 @@ class b extends a.C {
           l.storage = f.internalBinaryRead(e, e.uint32(), n, l.storage);
           break;
         default:
-          let o = n.readUnknownField;
-          if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
-          let a = e.skip(r);
-          !1 !== o && (!0 === o ? i.z.onRead : o)(this.typeName, l, t, r, a)
+          let a = n.readUnknownField;
+          if ("throw" === a) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(r, ") for ").concat(this.typeName));
+          let o = e.skip(r);
+          !1 !== a && (!0 === a ? i.z.onRead : a)(this.typeName, l, t, r, o)
       }
     }
     return l

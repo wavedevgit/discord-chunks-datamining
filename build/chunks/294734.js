@@ -22,8 +22,8 @@ var r = n(200651),
   y = n(699516),
   x = n(594174),
   E = n(100604),
-  O = n(694784),
-  j = n(39154),
+  j = n(694784),
+  O = n(39154),
   N = n(245216),
   C = n(388032),
   I = n(354437);
@@ -50,7 +50,7 @@ function T(e) {
     snapshot: n,
     index: u
   } = e, p = i.useMemo(() => new E.r(t, n, u), [t, n, u]), m = (0, o.e7)([g.Z, x.default, y.Z, v.Z, b.Z, d.Z], () => p.getForwardInfo(g.Z, x.default, y.Z, v.Z, b.Z, d.Z).footerInfo, [p], l.Z), f = i.useCallback(() => {
-    (0, O.Z)(t)
+    (0, j.Z)(t)
   }, [t]);
   return null == m ? null : (0, r.jsxs)(c.P3F, {
     className: I.footerContainer,
@@ -77,7 +77,7 @@ function P(e) {
     message: n,
     snapshot: a,
     index: l
-  } = e, s = i.useMemo(() => (0, j.Z)(n, a), [n, a]), c = h.RS.useSetting(), d = h.NA.useSetting(), b = (0, o.e7)([_.Z], () => _.Z.isDeveloper), v = (0, u.A)((null !== (t = s.editedTimestamp) && void 0 !== t ? t : s.timestamp).valueOf()), {
+  } = e, s = i.useMemo(() => (0, O.Z)(n, a), [n, a]), c = h.RS.useSetting(), d = h.NA.useSetting(), b = (0, o.e7)([_.Z], () => _.Z.isDeveloper), v = (0, u.A)((null !== (t = s.editedTimestamp) && void 0 !== t ? t : s.timestamp).valueOf()), {
     content: y,
     hasSpoilerEmbeds: x
   } = (0, m.Z)(s, {
@@ -89,7 +89,7 @@ function P(e) {
     allowLinks: !0,
     allowDevLinks: b,
     previewLinkTarget: !0
-  }), E = (0, o.e7)([g.Z], () => g.Z.getChannel(n.channel_id)), O = h.jU.useSetting();
+  }), E = (0, o.e7)([g.Z], () => g.Z.getChannel(n.channel_id)), j = h.jU.useSetting();
   return null == E ? null : (0, r.jsxs)("div", {
     className: I.container,
     children: [(0, r.jsx)("div", {
@@ -103,7 +103,7 @@ function P(e) {
         channelMessageProps: {
           message: s,
           channel: E,
-          compact: O
+          compact: j
         },
         hasSpoilerEmbeds: x,
         isInteracting: !1,

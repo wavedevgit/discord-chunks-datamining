@@ -1,31 +1,31 @@
-/** Chunk was on 75101 **/
+/** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => u
+  Z: () => c
 }), n(47120), n(653041);
 var i = n(192379),
-  r = n(442837),
-  l = n(115130),
+  l = n(442837),
+  r = n(115130),
   o = n(694312),
   a = n(405625),
-  c = n(664097);
+  s = n(664097);
 
-function u(e) {
+function c(e) {
   let {
     guildId: t,
     enableFilter: n = !1,
-    context: u
+    context: c
   } = e, {
-    filter: d
-  } = (0, r.cj)([l.Z], () => ({
-    filter: l.Z.getFilter()
-  })), s = (0, o.E)(t, u), p = (0, a.Z)(s), f = (0, c.o)();
+    filter: u
+  } = (0, l.cj)([r.Z], () => ({
+    filter: r.Z.getFilter()
+  })), d = (0, o.E)(t, c), p = (0, a.Z)(d), m = (0, s.o)();
   return i.useMemo(() => {
     function e(e) {
-      return !!(!n || "" === d || e.application.name.toLowerCase().includes(d.toLowerCase()))
+      return !!(!n || "" === u || e.application.name.toLowerCase().includes(u.toLowerCase()))
     }
-    let t = [...f].filter(e),
+    let t = [...m].filter(e),
       i = new Set(t.map(e => e.application.id));
     for (let n of p) !i.has(n.application.id) && e(n) && t.push(n);
     return t
-  }, [f, n, d, p])
+  }, [m, n, u, p])
 }

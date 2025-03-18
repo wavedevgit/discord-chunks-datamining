@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(685072),
   l = n(287734),
-  o = n(906732),
-  a = n(522651),
+  a = n(906732),
+  o = n(522651),
   s = n(15274),
   c = n(389303),
   u = n(881824),
@@ -22,7 +22,7 @@ function f(e) {
     onClick: s
   } = e, {
     parentAnalyticsLocation: c
-  } = (0, o.ZP)(), {
+  } = (0, a.ZP)(), {
     events: u,
     Component: d
   } = (0, i.K)();
@@ -46,7 +46,7 @@ function f(e) {
   }({
     tooltipText: l,
     onClick: () => {
-      (0, a.v)(c, a.d.DISCONNECT), s()
+      (0, o.v)(c, o.d.DISCONNECT), s()
     }
   }, u), n = n = {
     icon: (0, r.jsx)(d, {

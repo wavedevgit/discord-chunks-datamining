@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(846519),
   i = n(570140),
   l = n(317770),
-  o = n(220082),
-  a = n(594174),
+  a = n(220082),
+  o = n(594174),
   s = n(125268),
   c = n(813900);
 
@@ -34,10 +34,10 @@ class d extends l.Z {
       streamerId: l,
       emojiHose: u
     } = e;
-    if (null != l && i !== (null === (t = a.default.getCurrentUser()) || void 0 === t ? void 0 : t.id)) {
+    if (null != l && i !== (null === (t = o.default.getCurrentUser()) || void 0 === t ? void 0 : t.id)) {
       if (null != r && null != n) {
-        let e = a.default.getUser(i);
-        null != e && (0, o.vM)(e.getAvatarURL(null, c.Ks)), (0, s.cV)(n, i, l, r)
+        let e = o.default.getUser(i);
+        null != e && (0, a.vM)(e.getAvatarURL(null, c.Ks)), (0, s.cV)(n, i, l, r)
       } else null != u && (u.lastUpdatedAt = Date.now(), (0, s.gr)(u, i, l))
     }
   }

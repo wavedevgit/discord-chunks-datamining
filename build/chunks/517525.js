@@ -21,12 +21,12 @@ var r = n(200651),
   y = n(74538),
   E = n(557457),
   O = n(475674),
-  S = n(981631),
-  x = n(474936),
+  x = n(981631),
+  S = n(474936),
   j = n(388032),
-  C = n(41997);
+  Z = n(41997);
 
-function Z(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function Z(e) {
   return e
 }
 
-function w(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -115,40 +115,40 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         location: k
       } = (0, m.O)(),
       M = (0, c.e7)([b.default], () => b.default.getCurrentUser()),
-      L = s && !y.ZP.isPremium(M, x.p9.TIER_1) && !y.ZP.canStreamQuality(y.ZP.StreamQuality.MID, M),
+      L = s && !y.ZP.isPremium(M, S.p9.TIER_1) && !y.ZP.canStreamQuality(y.ZP.StreamQuality.MID, M),
       W = i.useCallback(() => {
         L && D && (0, f.ZDy)(async () => {
           let {
             default: e
           } = await n.e("28479").then(n.bind(n, 78865));
-          return t => (0, r.jsx)(e, w(Z({}, t), {
+          return t => (0, r.jsx)(e, C(w({}, t), {
             analyticsSource: k
           }))
         })
       }, [L, D, k]);
     if (i.useEffect(() => {
-        !P && D && (g.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
-          type: x.cd.STREAM_QUALITY_INDICATOR,
+        !P && D && (g.default.track(x.rMx.PREMIUM_UPSELL_VIEWED, {
+          type: S.cd.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
           has_premium_stream_resolution: l,
           location_stack: T
         }), N(!0))
       }, [t, l, D, P, N, T]), null == R) return null;
-    let F = (0, r.jsx)(f.ua7, {
+    let U = (0, r.jsx)(f.ua7, {
       text: A ? j.NW.string(j.t.q8TiVl) : D ? j.NW.string(j.t.IHgpEh) : j.NW.string(j.t.vLb0VV),
       position: "bottom",
       color: f.ua7.Colors.GREY,
-      children: e => (0, r.jsxs)(f.P3F, w(Z({}, e), {
+      children: e => (0, r.jsxs)(f.P3F, C(w({}, e), {
         onClick: W,
-        className: o()(C.qualityIndicator, v, h.eE[d], A ? C.qualityIndicatorLowQuality : C.qualityIndicatorFullQuality, {
-          [C.clickable]: L && D
+        className: o()(Z.qualityIndicator, v, h.eE[d], A ? Z.qualityIndicatorLowQuality : Z.qualityIndicatorFullQuality, {
+          [Z.clickable]: L && D
         }),
         children: [D ? (0, r.jsx)(f.SrA, {
           size: "md",
           color: "currentColor",
-          className: C.premiumStreamIcon
+          className: Z.premiumStreamIcon
         }) : null, (0, r.jsx)("span", {
-          className: C.qualityResolution,
+          className: Z.qualityResolution,
           children: (0, E.ml)(R.maxResolution)
         }), (0, r.jsx)("span", {
           children: (0, E.bp)(R.maxFrameRate)
@@ -156,9 +156,9 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
       }))
     });
     return (0, r.jsx)(f.IGR, {
-      text: F,
-      className: o()(I, C.qualityIndicatorBadge, {
-        [C.qualityIndicatorBadgePremium]: D && _
+      text: U,
+      className: o()(I, Z.qualityIndicatorBadge, {
+        [Z.qualityIndicatorBadgePremium]: D && _
       }),
       color: u.Z.unsafe_rawColors.PRIMARY_500.css,
       shape: d
@@ -197,13 +197,13 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         className: n,
         popoutProps: i
       } = e;
-      return (0, r.jsxs)("div", w(Z({
-        className: o()(C.streamQualityIndicator, n)
+      return (0, r.jsxs)("div", C(w({
+        className: o()(Z.streamQualityIndicator, n)
       }, i), {
         children: [y((e, n) => n ? (0, r.jsx)(a.animated.div, {
           style: e,
           children: (0, r.jsx)(k, {
-            className: C.liveQualityIndicator,
+            className: Z.liveQualityIndicator,
             participant: t,
             size: s,
             shape: f.Dv2.ROUND_LEFT,
@@ -214,7 +214,7 @@ let P = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
           })
         }) : null), (0, r.jsx)(a.animated.div, {
           style: O,
-          className: C.liveIndicator,
+          className: Z.liveIndicator,
           children: (0, r.jsx)(h.ZP, {
             look: h.jZ.RED,
             size: s,

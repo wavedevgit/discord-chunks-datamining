@@ -40,14 +40,14 @@ function g(e) {
   } = e, g = (0, a.e7)([d.Z], () => d.Z.isDeveloper), [_, b] = i.useState(!1), [v, y] = i.useState(0), x = (0, a.e7)([u.default], () => {
     var e, t, n;
     return null !== (n = null === (t = u.default.getCurrentUser()) || void 0 === t ? void 0 : null === (e = t.isStaff) || void 0 === e ? void 0 : e.call(t)) && void 0 !== n && n
-  }), E = (0, s.Q3)("StaffHelpButton"), O = e => {
+  }), E = (0, s.Q3)("StaffHelpButton"), j = e => {
     clearTimeout(v), y(setTimeout(() => {
       b(e)
     }, 100))
   };
   return (0, r.jsx)("div", {
-    onMouseEnter: () => O(!0),
-    onMouseLeave: () => O(!1),
+    onMouseEnter: () => j(!0),
+    onMouseLeave: () => j(!1),
     children: (0, r.jsx)(o.yRy, {
       shouldShow: _,
       animation: o.yRy.Animation.NONE,

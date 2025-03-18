@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => y
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -9,81 +9,38 @@ var r = n(200651),
   a = n.n(o),
   s = n(765053),
   l = n(512969),
-  c = n(873546),
-  u = n(442837),
-  d = n(316792),
-  f = n(481060),
-  _ = n(168551),
-  p = n(540059),
-  h = n(19759),
-  m = n(823961),
-  g = n(706454),
-  E = n(451478),
-  b = n(597952),
-  v = n(252618),
-  y = n(80006),
-  O = n(587061),
-  I = n(392358),
-  S = n(981631);
+  c = n(442837),
+  u = n(316792),
+  d = n(168551),
+  f = n(19759),
+  _ = n(892071),
+  p = n(252618),
+  h = n(587061),
+  m = n(981631);
 n(3692);
-let T = new Set([S.Z5c.LOGIN, S.Z5c.REGISTER]);
+let g = new Set([m.Z5c.LOGIN, m.Z5c.REGISTER]);
 
-function N(e) {
-  let t = (0, u.e7)([g.default], () => g.default.locale),
-    n = (0, u.e7)([E.Z], () => E.Z.isFocused(), []),
-    {
-      theme: o,
-      density: s
-    } = (0, f.TCT)(),
-    {
-      reducedMotion: d
-    } = i.useContext(f.Sfi),
-    {
-      accessibilitySettings: _,
-      appWrapperClassName: v
-    } = (0, y.I)(),
-    {
-      fontScale: S,
-      fontScaleClass: N,
-      saturation: A,
-      desaturateUserColors: C,
-      useForcedColors: R,
-      systemForcedColors: P
-    } = _,
-    w = (0, u.e7)([m.Z], () => m.Z.confettiMode),
-    D = (0, l.TH)(),
-    L = i.useMemo(() => T.has(D.pathname), [D.pathname]);
-  (0, O.Z)(window, L);
-  let x = (0, I.Z)(window, __OVERLAY__ || n),
-    M = (0, u.e7)([h.Z], () => h.Z.sidebarWidth),
-    k = (0, f.bWb)().enabled,
-    j = (0, p.Q3)("AppHelmet"),
-    U = (0, p.R6)("AppHelmet");
+function E(e) {
+  let {
+    lang: t,
+    style: n,
+    className: o
+  } = (0, _.vP)(), s = (0, l.TH)(), u = i.useMemo(() => g.has(s.pathname), [s.pathname]);
+  (0, h.Z)(window, u);
+  let d = (0, c.e7)([f.Z], () => f.Z.sidebarWidth);
   return (0, r.jsx)("html", {
     lang: t,
-    style: "font-size: ".concat(S, "%; --saturation-factor: ").concat(A, "; --devtools-sidebar-width: ").concat(M, "px;"),
-    className: a()(e, v, {
-      overlay: __OVERLAY__,
-      "mouse-mode": x,
-      "reduce-motion": d.enabled,
-      "full-motion": !d.enabled,
-      "is-mobile": c.tq,
-      "app-focused": n,
-      "desaturate-user-colors": C,
-      "disable-forced-colors": !R && "active" === P,
-      "enable-forced-colors": R,
-      "show-redesigned-icons": k,
-      "visual-refresh": j,
-      "visual-refresh-chat-input": U,
-      "confetti-mode": w
-    }, (0, f.QeD)(o), "density-".concat(s), (0, b.Z)(), N)
+    style: "".concat(n, " --devtools-sidebar-width: ").concat(d, "px;"),
+    className: a()(o, e, {
+      overlay: __OVERLAY__
+    })
   })
 }
 
-function A() {
+function b() {
   let [e, t] = i.useState([]);
   return i.useEffect(() => {
-    Promise.all(d.L.map(e => n(959598)("./".concat(e, ".woff2")).then(e => {
+    Promise.all(u.L.map(e => n(959598)("./".concat(e, ".woff2")).then(e => {
       let {
         default: t
       } = e;
@@ -100,22 +57,22 @@ function A() {
   })
 }
 
-function C(e) {
+function v(e) {
   let {
     children: t,
     skipsSettingDefaultPageTitle: n
   } = e;
-  (0, v.ZD)({
+  (0, p.ZD)({
     skipsSettingDefaultPageTitle: n
   });
   let {
     clientThemesClassName: o,
     clientThemesCSS: a
-  } = (0, _.ZP)(), l = i.createElement("style", {
-    [_.PQ]: !0
+  } = (0, d.ZP)(), l = i.createElement("style", {
+    [d.PQ]: !0
   }, a);
   return (0, r.jsxs)(s.ql, {
-    children: [N(o), A(), l, t]
+    children: [E(o), b(), l, t]
   })
 }
-let R = i.memo(C)
+let y = i.memo(v)

@@ -22,8 +22,8 @@ var r = n(200651),
   y = n(321231),
   x = n(758199),
   E = n(943762),
-  O = n(914498),
-  j = n(880251),
+  j = n(914498),
+  O = n(880251),
   N = n(208444),
   C = n(835473),
   I = n(471445),
@@ -175,8 +175,8 @@ function Q(e) {
       getAcceptInviteContext: E
     } = e,
     {
-      approximate_member_count: O,
-      approximate_presence_count: j,
+      approximate_member_count: j,
+      approximate_presence_count: O,
       target_type: N,
       target_application: I
     } = x;
@@ -264,8 +264,8 @@ function Q(e) {
     isMember: eg,
     channel: es,
     guild: ei,
-    members: O,
-    membersOnline: j,
+    members: j,
+    membersOnline: O,
     isActivityActive: el,
     submitting: eh,
     isDisabled: e_,
@@ -328,8 +328,8 @@ function Q(e) {
             children: B.NW.string(B.t.lEvDDQ)
           })]
         }) : null, eg ? null : (0, r.jsx)(X, {
-          members: O,
-          membersOnline: j,
+          members: j,
+          membersOnline: O,
           isLarge: L,
           isStacked: Q
         }), (0, r.jsxs)("div", {
@@ -404,10 +404,10 @@ function J(e) {
     id: t.id,
     icon: v,
     bot: b
-  }), C = (0, N.z)(t), I = (0, j.E)(t), S = a.length, T = i.useMemo(() => {
+  }), C = (0, N.z)(t), I = (0, O.E)(t), S = a.length, T = i.useMemo(() => {
     let e = [{
       label: o ? u ? B.NW.string(B.t.VJlc0d) : B.NW.string(B.t.RscU7O) : B.NW.string(B.t["2BP08P"]),
-      trackingArea: o ? O.j_.PLAY : O.j_.JOIN_SERVER,
+      trackingArea: o ? j.j_.PLAY : j.j_.JOIN_SERVER,
       submitting: p,
       disabledReason: m && null != f ? f : void 0,
       onClick: h
@@ -443,7 +443,7 @@ function J(e) {
     actions: T,
     trackingConfig: {
       id: t.id,
-      linkType: O.Un.ACTIVITY_INVITE,
+      linkType: j.Un.ACTIVITY_INVITE,
       onView: g
     }
   }))

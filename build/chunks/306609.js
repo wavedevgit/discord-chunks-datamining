@@ -22,8 +22,8 @@ var r = n(200651),
   y = n(626135),
   x = n(111361),
   E = n(74538),
-  O = n(709706),
-  j = n(378441),
+  j = n(709706),
+  O = n(378441),
   N = n(799143),
   C = n(358820),
   I = n(448697),
@@ -87,12 +87,12 @@ function W(e) {
   });
   (0, R.j1)(k.M);
   let V = (0, s.e7)([v.default], () => (0, x.I5)(v.default.getCurrentUser())),
-    z = (0, s.e7)([O.Z], () => O.Z.getCatalogUpdateTime()),
+    z = (0, s.e7)([j.Z], () => j.Z.getCatalogUpdateTime()),
     [K, Y] = i.useState(!1),
     [X, q] = i.useState(!1),
     {
       activeVoice: Q
-    } = (0, j.o)(),
+    } = (0, O.o)(),
     J = (0, c.q_F)({
       transform: K ? "translateY(-$8px) scale(".concat(.96, ")") : "translateY(0px) scale(1)",
       config: {

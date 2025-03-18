@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(192379),
   i = n(115434),
   l = n(264181),
-  o = n(442837),
-  a = n(704215),
+  a = n(442837),
+  o = n(704215),
   s = n(243778),
   c = n(594174),
   u = n(51144),
@@ -16,9 +16,9 @@ var r = n(192379),
   f = n(921944);
 let g = [],
   m = (e, t) => {
-    var n, r, i, o;
+    var n, r, i, a;
     if ((null == t ? void 0 : t.type) !== l.Z.COACHTIP && !e.hasPreviewAssets) return null;
-    let a = null != t ? {
+    let o = null != t ? {
       title: () => t.title,
       body: () => t.body,
       assetIds: t.decorations,
@@ -46,7 +46,7 @@ let g = [],
       return e
     }({
       type: h.k2.COACHTIP
-    }, a), o = o = {
+    }, o), a = a = {
       imageSrc: null !== (r = e.coachtipAvatar) && void 0 !== r ? r : "",
       entryPointBackgroundAssets: {
         srcDark: e.buttonBGRestingDark,
@@ -54,24 +54,24 @@ let g = [],
         srcDarkHovered: e.buttonBGHoverDark,
         srcLightHovered: e.buttonBGHoverLight
       }
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(o)).forEach(function(e) {
-      Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
+    })(Object(a)).forEach(function(e) {
+      Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
     }), i
   },
   b = () => {
     var e;
-    let t = (0, o.e7)([c.default], () => c.default.getCurrentUser()),
-      n = (0, o.e7)([d.Z], () => d.Z.getMarketingBySurface(i.K.DESKTOP_SHOP_BUTTON)),
-      h = (null == n ? void 0 : n.dismissibleContent) === a.z.COLLECTIBLES_SHOP_ENTRY_MARKETING,
+    let t = (0, a.e7)([c.default], () => c.default.getCurrentUser()),
+      n = (0, a.e7)([d.Z], () => d.Z.getMarketingBySurface(i.K.DESKTOP_SHOP_BUTTON)),
+      h = (null == n ? void 0 : n.dismissibleContent) === o.z.COLLECTIBLES_SHOP_ENTRY_MARKETING,
       b = r.useMemo(() => (0, u.Fc)(t) && null != n && !h ? [n.dismissibleContent] : g, [t, n, h]),
-      _ = h && (null == n ? void 0 : n.type) === l.Z.COACHTIP ? a.z.COLLECTIBLES_SHOP_ENTRY_MARKETING : null,
+      _ = h && (null == n ? void 0 : n.type) === l.Z.COACHTIP ? o.z.COLLECTIBLES_SHOP_ENTRY_MARKETING : null,
       [E, O] = (0, s.US)(b, void 0, !0),
       [N, v] = (0, s.XR)(_, null !== (e = null == n ? void 0 : n.version) && void 0 !== e ? e : 0, void 0, !0),
       y = (0, p.mB)(n),

@@ -35,9 +35,9 @@ function d(e) {
     m && null != v && (e.stopPropagation(), h.current = !0, y("handleMouseDown", v, e))
   }, [y, v, m]), O = r.useCallback(e => {
     m && null != v && (e.stopPropagation(), h.current && y("handleMouseMove", v, e))
-  }, [y, v, m]), S = r.useCallback(e => {
-    m && null != v && (e.stopPropagation(), h.current = !1, y("handleMouseUp", v, e))
   }, [y, v, m]), x = r.useCallback(e => {
+    m && null != v && (e.stopPropagation(), h.current = !1, y("handleMouseUp", v, e))
+  }, [y, v, m]), S = r.useCallback(e => {
     h.current && null != v && y("handleMouseEnter", v, e)
   }, [y, v]);
   return r.useEffect(() => {
@@ -50,8 +50,8 @@ function d(e) {
       m && null != v && e.stopPropagation()
     }, [v, m]),
     handleMouseDown: E,
-    handleMouseEnter: x,
+    handleMouseEnter: S,
     handleMouseMove: O,
-    handleMouseUp: S
+    handleMouseUp: x
   }
 }

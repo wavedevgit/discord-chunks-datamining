@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => y
+  Z: () => N
 }), n(47120), n(852437);
 var i = n(200651),
   l = n(192379),
@@ -13,17 +13,17 @@ var i = n(200651),
   d = n(173790),
   p = n(692656),
   m = n(684256),
-  h = n(314734),
-  f = n(981631),
+  f = n(314734),
+  h = n(981631),
   v = n(855158);
-let N = {
-    width: h.Gy,
-    height: h.lv
+let y = {
+    width: f.Gy,
+    height: f.lv
   },
-  x = {
-    height: h.lv
+  b = {
+    height: f.lv
   },
-  y = l.memo(l.forwardRef(function(e, t) {
+  N = l.memo(l.forwardRef(function(e, t) {
     let {
       context: n,
       entrypoint: r,
@@ -32,14 +32,14 @@ let N = {
       analyticsLocations: d
     } = (0, s.ZP)(o.Z.APP_LAUNCHER);
     return l.useEffect(() => {
-      (0, a.yw)(f.rMx.APPLICATION_COMMAND_TOP_OF_FUNNEL, {
+      (0, a.yw)(h.rMx.APPLICATION_COMMAND_TOP_OF_FUNNEL, {
         source: r,
         location: "app_launcher"
       })
     }, [r]), l.useEffect(() => {
       let e = Date.now();
       return () => {
-        (0, a.yw)(f.rMx.APP_LAUNCHER_CLOSED, {
+        (0, a.yw)(h.rMx.APP_LAUNCHER_CLOSED, {
           reason: c.Z.closeReason(),
           time_spent: Date.now() - e,
           source: r
@@ -48,14 +48,14 @@ let N = {
     }, [r]), (0, i.jsx)("div", {
       className: v.drawerSizingWrapper,
       ref: t,
-      style: N,
+      style: y,
       children: (0, i.jsx)("div", {
         className: v.contentWrapper,
         children: (0, i.jsx)(s.Gt, {
           value: d,
-          children: (0, i.jsx)(b, {
+          children: (0, i.jsx)(g, {
             initHistory: u,
-            children: (0, i.jsx)(E, {
+            children: (0, i.jsx)(x, {
               context: n,
               entrypoint: r
             })
@@ -65,7 +65,7 @@ let N = {
     })
   }));
 
-function b(e) {
+function g(e) {
   let {
     initHistory: t,
     children: n
@@ -73,7 +73,7 @@ function b(e) {
     type: u.gc.HOME
   }]), [a, s] = l.useState({}), c = r[r.length - 1], [d, p] = l.useState(!1), m = l.useCallback(e => {
     o(t => [...t, e])
-  }, []), h = l.useCallback(() => {
+  }, []), f = l.useCallback(() => {
     let e = null;
     o(t => t.length <= 1 ? t : (e = t[t.length - 1], t.slice(0, -1))), s(t => {
       var n, i;
@@ -107,7 +107,7 @@ function b(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
       }), n)
     })
-  }, []), f = l.useCallback(e => {
+  }, []), h = l.useCallback(e => {
     var t;
     return null !== (t = r.findLast(t => t.type === e)) && void 0 !== t ? t : a[e]
   }, [r, a]);
@@ -117,8 +117,8 @@ function b(e) {
       discard: a,
       currentView: c,
       pushHistory: m,
-      goBack: h,
-      getMostRecentHistoryItemByType: f,
+      goBack: f,
+      getMostRecentHistoryItemByType: h,
       isSlideReady: d,
       setSlideReady: p
     },
@@ -126,7 +126,7 @@ function b(e) {
   })
 }
 
-function E(e) {
+function x(e) {
   let {
     context: t,
     entrypoint: n
@@ -143,35 +143,35 @@ function E(e) {
       };
 
       function e() {
-        null != t && (o.current = t.scrollTop, r(t.scrollHeight - (t.scrollTop + t.clientHeight) < .5 * h.K7))
+        null != t && (o.current = t.scrollTop, r(t.scrollHeight - (t.scrollTop + t.clientHeight) < .5 * f.K7))
       }
     }, [t]), {
       setScroller: n,
       isCloseToBottom: i
     }
   }(o), {
-    currentView: f,
-    getMostRecentHistoryItemByType: N,
-    setSlideReady: y
+    currentView: h,
+    getMostRecentHistoryItemByType: y,
+    setSlideReady: N
   } = (0, u.hH)();
   l.useEffect(() => {
-    y(!1)
-  }, [null == f ? void 0 : f.type, y]);
-  let b = l.useCallback(() => {
-    y(!0)
-  }, [y]);
-  if (null == f) return null;
-  let E = N(u.gc.LIST),
-    j = N(u.gc.APPLICATION);
+    N(!1)
+  }, [null == h ? void 0 : h.type, N]);
+  let g = l.useCallback(() => {
+    N(!0)
+  }, [N]);
+  if (null == h) return null;
+  let x = y(u.gc.LIST),
+    j = y(u.gc.APPLICATION);
   return (0, i.jsxs)(r.MyZ, {
-    activeSlide: f.type,
-    width: h.Gy,
-    onSlideReady: b,
+    activeSlide: h.type,
+    width: f.Gy,
+    onSlideReady: g,
     children: [(0, i.jsx)(r.Mi4, {
       id: u.gc.HOME,
       children: (0, i.jsx)("div", {
         className: v.slideContent,
-        style: x,
+        style: b,
         children: (0, i.jsx)(p.Z, {
           isScrollCloseToBottom: c,
           setScroller: s,
@@ -185,22 +185,22 @@ function E(e) {
       id: u.gc.LIST,
       children: (0, i.jsx)("div", {
         className: v.slideContent,
-        style: x,
-        children: null != E && (0, i.jsx)(m.Z, {
+        style: b,
+        children: null != x && (0, i.jsx)(m.Z, {
           context: t,
           entrypoint: n,
-          title: E.title,
-          look: E.look,
-          items: E.items,
-          sectionName: E.sectionName,
-          sectionOverallPosition: E.sectionOverallPosition
+          title: x.title,
+          look: x.look,
+          items: x.items,
+          sectionName: x.sectionName,
+          sectionOverallPosition: x.sectionOverallPosition
         })
       })
     }), (0, i.jsx)(r.Mi4, {
       id: u.gc.APPLICATION,
       children: (0, i.jsx)("div", {
         className: v.slideContent,
-        style: x,
+        style: b,
         children: null != j && (0, i.jsx)(d.Z, {
           context: t,
           application: j.application,

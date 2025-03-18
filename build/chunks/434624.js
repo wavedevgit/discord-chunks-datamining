@@ -27,8 +27,8 @@ let g = i.memo(function(e) {
         burst_count: y,
         burst_colors: x,
         readOnly: E,
-        isLurking: O,
-        isGuest: j,
+        isLurking: j,
+        isGuest: O,
         isPendingMember: N,
         type: C,
         emojiSize: I
@@ -57,7 +57,7 @@ let g = i.memo(function(e) {
     return (0, r.jsxs)("div", {
       className: o()(A.reaction, A.reactionInner, g, {
         [A.reactionMe]: T,
-        [A.reactionReadOnly]: E && !O && !N && !j
+        [A.reactionReadOnly]: E && !j && !N && !O
       }),
       style: k,
       children: [(0, r.jsx)(s.Z, {

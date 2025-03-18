@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(512969),
-  o = n(442837),
-  a = n(493683),
+  a = n(442837),
+  o = n(493683),
   s = n(112724),
   c = n(108427),
   u = n(184107),
@@ -47,7 +47,7 @@ class b extends i.Component {
         channel: t,
         inputSkuId: n
       } = this.props;
-      return null != e ? a.Z.fetchChannelStoreListing(t.id, e) : null != n ? a.Z.fetchChannelStoreListing(t.id, n) : a.Z.fetchChannelStoreListing(t.id)
+      return null != e ? o.Z.fetchChannelStoreListing(t.id, e) : null != n ? o.Z.fetchChannelStoreListing(t.id, n) : o.Z.fetchChannelStoreListing(t.id)
     }), m(this, "renderApplicationListing", e => {
       let {
         location: t
@@ -66,7 +66,7 @@ class b extends i.Component {
     })
   }
 }
-let _ = (0, s.Z)(o.ZP.connectStores([u.Z], e => {
+let _ = (0, s.Z)(a.ZP.connectStores([u.Z], e => {
   let {
     channel: t,
     inputSkuId: n

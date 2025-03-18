@@ -867,6 +867,7 @@ function eg(e) {
 function eE(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {
+      fetched: !0,
       fractionalState: N.a$.NONE,
       startsAt: a()(0),
       endsAt: a()(0),

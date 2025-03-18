@@ -29,8 +29,8 @@ function b(e, t) {
     x = t.hasFlag(_.iLy.IS_CROSSPOST),
     {
       rawMediaPostEmbedData: E,
-      guild: O,
-      parentChannel: j,
+      guild: j,
+      parentChannel: O,
       user: N,
       selectedGuildId: C,
       canAccess: I
@@ -55,8 +55,8 @@ function b(e, t) {
       var e, t;
       let n = (0, g.ku)({
         mediaPostEmbedData: E,
-        guild: O,
-        parentChannel: j,
+        guild: j,
+        parentChannel: O,
         user: N,
         selectedGuildId: C,
         canAccess: I
@@ -90,7 +90,7 @@ function b(e, t) {
       })(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e)
-    }, [E, O, j, N, C, I]);
+    }, [E, j, O, N, C, I]);
   return r.useEffect(() => {
     if ((null == b ? void 0 : b.threadId) != null) {
       let e = h.Z.getEmbedFetchState(b.threadId);

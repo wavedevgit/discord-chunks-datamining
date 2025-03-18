@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(512722),
-  s = n.n(a),
+  a = n.n(l),
+  o = n(512722),
+  s = n.n(o),
   c = n(481060),
   u = n(100527),
   d = n(600164),
@@ -122,7 +122,7 @@ class S extends i.PureComponent {
       if (null == e) return null;
       let {
         host: l,
-        onUserContextMenu: a
+        onUserContextMenu: o
       } = this.props;
       return n = (null == l ? void 0 : l.id) === e.id ? O.NW.string(O.t.N9bqDw) : O.NW.string(O.t.Z2Y4c3), (0, r.jsx)(c.yRy, {
         preload: () => (0, p.Z)(e.id, e.getAvatarURL(void 0, 80)),
@@ -143,11 +143,11 @@ class S extends i.PureComponent {
               key: e.id,
               src: e.getAvatarURL(void 0, 24),
               size: c.EFr.SIZE_24,
-              className: o()(N.avatar, t),
+              className: a()(N.avatar, t),
               "aria-label": e.username,
               onMouseEnter: r,
               onMouseLeave: s,
-              onContextMenu: t => void(null != e && (null == a || a(t, e)))
+              onContextMenu: t => void(null != e && (null == o || o(t, e)))
             }))
           }
         })
@@ -161,7 +161,7 @@ class S extends i.PureComponent {
         children: n => (0, r.jsx)(c.ua7, {
           text: O.NW.string(O.t.Zf4NPT),
           children: i => (0, r.jsx)("div", I(y({
-            className: o()(N.overflow, t)
+            className: a()(N.overflow, t)
           }, i, n), {
             children: e
           }))

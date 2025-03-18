@@ -7,8 +7,8 @@ i.a(t, async function(t, e) {
       rust_multiply: () => _.YC
     });
     var _ = i(981),
-      s = t([_]);
-    _ = (s.then ? (await s)() : s)[0], e()
+      a = t([_]);
+    _ = (a.then ? (await a)() : a)[0], e()
   } catch (t) {
     e(t)
   }

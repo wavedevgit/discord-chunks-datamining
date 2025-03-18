@@ -1,6 +1,6 @@
 /**
   Module ID: 44070
-  Original File Name: 9d9f4fc5fe03ae6f
+  Original File Name: ccb3778d011e0443
 **/
 @value minColumnWidth: 460px;
 
@@ -838,9 +838,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .closeButtonBackgroundPlated__972a0 {
     border-radius: 50%;
-    background-color: var(--custom-nameplate);
+    background-color: var(--custom-nameplate-neutral-hovered);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+    opacity: .9;
     height: 18px;
     width: 18px;
     display: flex;
@@ -3947,4 +3948,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-right: auto
 }
 
-/*# sourceMappingURL=9d9f4fc5fe03ae6f.css.map*/
+/*# sourceMappingURL=ccb3778d011e0443.css.map*/

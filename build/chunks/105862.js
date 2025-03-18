@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => N
+  Z: () => y
 });
 var i = n(200651),
   l = n(192379),
@@ -13,35 +13,35 @@ var i = n(200651),
   d = n(888617),
   p = n(981631),
   m = n(388032),
-  h = n(286623),
-  f = n(983008),
+  f = n(286623),
+  h = n(983008),
   v = n(478408);
 
-function N(e) {
+function y(e) {
   let {
     showImage: t = !0,
     padding: n = !1
-  } = e, N = (0, a.ZP)(), x = (0, r.ap)(N) ? v : f, y = l.useCallback(() => {
+  } = e, y = (0, a.ZP)(), b = (0, r.ap)(y) ? v : h, N = l.useCallback(() => {
     (0, s.Z)(c.Z.getAppsSupportURL(p.BhN.APPS_LEARN_MORE))
   }, []), {
-    trackSectionImpressionRef: b
+    trackSectionImpressionRef: g
   } = (0, d.Z)({
     sectionName: u.L3.NEW_TO_APPS,
     numItems: 1,
     numVisibleItems: 1
   });
   return (0, i.jsx)("div", {
-    className: n ? h.containerPadding : void 0,
+    className: n ? f.containerPadding : void 0,
     children: (0, i.jsxs)("div", {
-      ref: e => b.current = e,
-      className: h.container,
+      ref: e => g.current = e,
+      className: f.container,
       children: [t && (0, i.jsx)("img", {
-        className: h.image,
-        src: x,
+        className: f.image,
+        src: b,
         alt: "",
         "aria-hidden": !0
       }), (0, i.jsxs)("div", {
-        className: h.body,
+        className: f.body,
         children: [(0, i.jsx)(o.X6q, {
           variant: "heading-lg/bold",
           color: "header-primary",
@@ -57,7 +57,7 @@ function N(e) {
           sectionTitle: m.NW.string(m.t["kw8/ER"]),
           sectionBody: m.NW.string(m.t.GZoV1N)
         }),
-        onClick: y,
+        onClick: N,
         children: m.NW.string(m.t.Ye51oa)
       })]
     })

@@ -19,9 +19,9 @@ let h = {},
   y = new Set,
   x = {},
   E = {},
-  O = new Set;
+  j = new Set;
 
-function j(e) {
+function O(e) {
   let t = p.Z.createFromServer(e),
     n = t.code;
   if (g.has(n)) g.set(n, g.get(n).merge(t));
@@ -44,7 +44,7 @@ function j(e) {
 
 function N(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-  if (t && !O.has(e.channel_id)) return !1;
+  if (t && !j.has(e.channel_id)) return !1;
   let n = (0, m.Fp)(e) ? (0, m.Q_)((null == e ? void 0 : e.embeds) != null ? null == e ? void 0 : e.embeds[0].url : void 0) : (0, m.Q_)(e.content);
   return 0 !== n.length && (n.forEach(e => {
     _.includes(e) || v.includes(e) || (C({
@@ -72,7 +72,7 @@ function S(e) {
     channelId: t,
     messages: n
   } = e;
-  O.add(t), n.forEach(e => N(e, !0))
+  j.add(t), n.forEach(e => N(e, !0))
 }
 
 function T(e) {
@@ -126,20 +126,20 @@ a = "GiftCodeStore", (i = "displayName") in P ? Object.defineProperty(P, i, {
 }) : P[i] = a;
 let A = new P(d.Z, {
     CONNECTION_OPEN: function() {
-      return O.clear(), !1
+      return j.clear(), !1
     },
     CHANNEL_SELECT: function(e) {
       let {
         channelId: t
       } = e;
-      return null != t && O.add(t), !1
+      return null != t && j.add(t), !1
     },
     GIFT_CODE_RESOLVE: C,
     GIFT_CODE_RESOLVE_SUCCESS: function(e) {
       let {
         giftCode: t
       } = e;
-      return _ = _.filter(e => e !== t.code), v.includes(t.code) || (v = [...v, t.code]), j(t)
+      return _ = _.filter(e => e !== t.code), v.includes(t.code) || (v = [...v, t.code]), O(t)
     },
     GIFT_CODE_RESOLVE_FAILURE: function(e) {
       let {
@@ -191,7 +191,7 @@ let A = new P(d.Z, {
       let {
         giftCode: t
       } = e;
-      j(t)
+      O(t)
     },
     GIFT_CODES_FETCH: function(e) {
       let {
@@ -206,7 +206,7 @@ let A = new P(d.Z, {
         skuId: n,
         subscriptionPlanId: r
       } = e;
-      t.forEach(j);
+      t.forEach(O);
       let i = (0, m.Bg)(n, r);
       x[i] = Date.now(), y.delete(i)
     },

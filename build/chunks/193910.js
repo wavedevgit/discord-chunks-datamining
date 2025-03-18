@@ -134,15 +134,7 @@ function A(e) {
       guild_id: t.guild_id
     }), (0, d.Z)({
       channel: t,
-      guildId: t.guild_id,
-      locationObject: {
-        page: t.isPrivate() ? E.ZY5.DM_CHANNEL : E.ZY5.GUILD_CHANNEL,
-        section: E.jXE.CHANNEL_TEXT_AREA,
-        object: E.qAy.CONTEXT_MENU_ITEM,
-        objectType: E.Qqv.ACTIVITY
-      },
       openInPopout: !1,
-      enableSelectedTextChannelInvite: !0,
       analyticsLocations: k
     }), (0, u.w1)({
       guildId: t.guild_id

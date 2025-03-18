@@ -33,7 +33,12 @@ let N = function(e) {
     onClose: N
   } = e, [A, C] = i.useState(!0), R = i.useRef(!1), P = (0, l.Z)(() => Date.now()), {
     analyticsLocations: w
-  } = (0, c.ZP)(), D = (0, u.Ek)(n, "GuildBoostingMarketing"), L = i.useCallback(() => {
+  } = (0, c.ZP)(), D = i.useRef(null), L = i.useRef(null), x = i.useCallback(() => {
+    null != L.current && null != D.current && D.current.scrollTo({
+      to: L.current.offsetTop,
+      animate: !0
+    })
+  }, []), M = (0, u.Ek)(n, "GuildBoostingMarketing"), k = i.useCallback(() => {
     null == N || N(), _.default.track(I.rMx.MODAL_DISMISSED, {
       type: I.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: w,
@@ -42,7 +47,7 @@ let N = function(e) {
       guild_id: n.id,
       duration_open_ms: Date.now() - P
     })
-  }, [N, t, w, P, n.id]), x = i.useCallback(e => {
+  }, [N, t, w, P, n.id]), j = i.useCallback(e => {
     e && !R.current && (_.default.track(I.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
       type: I.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: w,
@@ -61,29 +66,31 @@ let N = function(e) {
     })
   }, [n.id, t, w]), i.useEffect(() => {
     function e(e) {
-      "Escape" === e.key && L()
+      "Escape" === e.key && k()
     }
     return window.addEventListener("keydown", e), () => {
       window.removeEventListener("keydown", e)
     }
-  }, [L]), (0, r.jsxs)(r.Fragment, {
+  }, [k]), (0, r.jsxs)(r.Fragment, {
     children: [null != N && (0, r.jsx)("div", {
       className: T.closeIconWrapper,
       children: (0, r.jsx)(s.Z, {
         className: T.closeIcon,
-        closeAction: L,
+        closeAction: k,
         keybind: "ESC",
         variant: s.Z.Variants.SOLID
       })
     }), (0, r.jsxs)(a.yWw, {
+      ref: D,
       className: T.scroller,
       children: [(0, r.jsxs)("div", {
         className: T.header,
         children: [(0, r.jsxs)("div", {
           className: T.headerContentWrapper,
-          children: [D && (0, r.jsx)(d.Z, {
+          children: [M && (0, r.jsx)(d.Z, {
             guild: e.guild,
-            themeResponsive: !1
+            themeResponsive: !1,
+            onButtonClick: x
           }), (0, r.jsx)(a.X6q, {
             className: T.heading,
             color: "always-white",
@@ -91,7 +98,7 @@ let N = function(e) {
             children: S.NW.string(S.t.N4sqzM)
           }), (0, r.jsx)(h.Z, {
             guild: n,
-            closeLayer: L,
+            closeLayer: k,
             onCtaVisibilityChange: C
           }), (0, r.jsx)(E.Z, {
             guild: n
@@ -103,7 +110,8 @@ let N = function(e) {
         className: T.middleBodyContentWrapper,
         children: [(0, r.jsx)(y.ZP, {
           guild: e.guild
-        }), D && (0, r.jsx)(f.Z, {
+        }), M && (0, r.jsx)(f.Z, {
+          ref: L,
           guild: e.guild
         })]
       }), (0, r.jsxs)("div", {
@@ -118,7 +126,7 @@ let N = function(e) {
           className: T.lowerBodyBackgroundImage
         })]
       }), (0, r.jsx)(o.$, {
-        onChange: x,
+        onChange: j,
         children: (0, r.jsx)("div", {
           className: T.persistentCtaSpacer
         })
@@ -126,7 +134,7 @@ let N = function(e) {
     }), (0, r.jsx)(g.Z, {
       guild: n,
       isVisible: !A,
-      closeLayer: L
+      closeLayer: k
     })]
   })
 }

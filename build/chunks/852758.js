@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(990547),
-  o = n(442837),
-  a = n(544891),
+  a = n(442837),
+  o = n(544891),
   s = n(481060),
   c = n(893776),
   u = n(37234),
@@ -61,7 +61,7 @@ function T() {
   let {
     action: e,
     theme: t
-  } = (0, o.cj)([_.Z, b.Z], () => ({
+  } = (0, a.cj)([_.Z, b.Z], () => ({
     action: _.Z.getAction(),
     theme: b.Z.theme
   })), T = E.Z.getVerificationTypes(e), [P, j] = i.useState(0), A = (0, p.Z)(T);
@@ -118,7 +118,7 @@ function T() {
     types: T,
     captchaKey: P,
     onCaptchaVerify: e => {
-      a.tn.post({
+      o.tn.post({
         url: v.ANM.CAPTCHA,
         body: {
           captcha_key: e

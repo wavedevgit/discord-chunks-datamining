@@ -17,11 +17,11 @@ function d(e) {
     applicationId: n,
     buttonSize: d,
     analyticsLocations: p
-  } = e, [m, h] = l.useState(!1), f = l.useRef(null), v = l.useCallback(async () => {
+  } = e, [m, f] = l.useState(!1), h = l.useRef(null), v = l.useCallback(async () => {
     o.default.track(c.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
       application_id: n,
       button_action: a._y.OPEN_APP_DM
-    }), h(!0);
+    }), f(!0);
     try {
       await (0, s.W)({
         appId: n,
@@ -29,7 +29,7 @@ function d(e) {
         analyticsLocations: p
       })
     } catch (e) {}
-    clearTimeout(f.current), h(!1)
+    clearTimeout(h.current), f(!1)
   }, [t, n, p]);
   return (0, i.jsx)(r.zxk, {
     type: "submit",

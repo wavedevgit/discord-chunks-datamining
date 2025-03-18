@@ -22,9 +22,9 @@ var r = n(200651),
   y = n(520116),
   x = n(981631),
   E = n(388032),
-  O = n(764972);
+  j = n(764972);
 
-function j(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -80,7 +80,7 @@ let N = i.memo(function(e) {
     return (0, r.jsx)(l.animated.div, {
       ref: a,
       style: f,
-      children: (0, r.jsx)(C, j({}, e))
+      children: (0, r.jsx)(C, O({}, e))
     })
   }),
   C = i.memo(function(e) {
@@ -104,7 +104,7 @@ let N = i.memo(function(e) {
       (0, f.uL)(x.Z5c.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : i)), n(e)
     };
     return (0, r.jsx)("div", {
-      className: O.channel,
+      className: j.channel,
       children: (0, r.jsx)(c.y5t, {
         component: (0, r.jsxs)(b.Z, {
           channel: l,
@@ -114,7 +114,7 @@ let N = i.memo(function(e) {
           channelState: t,
           children: [(0, r.jsx)(_.Z, {
             channel: l
-          }), (0, r.jsx)(I, j({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(S, j({}, e))]
+          }), (0, r.jsx)(I, O({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(S, O({}, e))]
         }),
         children: t.collapsed ? null : "messages" === t.type ? (0, r.jsx)(y.Z, {
           channel: t,
@@ -137,7 +137,7 @@ function I(e) {
     getNumUnreadChannels: a
   } = e, o = (0, m.Z)() && null != t.guildId;
   return (0, r.jsx)(c.M0o, {
-    className: O.markReadButton,
+    className: j.markReadButton,
     tooltip: o ? E.NW.string(E.t["5lLMhI"]) : E.NW.string(E.t.e6RscX),
     color: c.YX$.TERTIARY,
     icon: o ? (0, r.jsx)(c.W6s, {
@@ -177,9 +177,9 @@ function S(e) {
     text: E.NW.string(E.t.iTcumZ),
     children: e => {
       var n, i;
-      return (0, r.jsx)(c.P3F, (n = j({}, e), i = i = {
-        className: o()(O.collapseButton, {
-          [O.collapsed]: t.collapsed
+      return (0, r.jsx)(c.P3F, (n = O({}, e), i = i = {
+        className: o()(j.collapseButton, {
+          [j.collapsed]: t.collapsed
         }),
         onClick: a,
         children: (0, r.jsx)(g.Z, {

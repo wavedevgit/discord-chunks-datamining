@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => x
+  Z: () => b
 }), n(47120);
 var i = n(200651),
   l = n(192379),
@@ -13,56 +13,56 @@ var i = n(200651),
   d = n(160973),
   p = n(783097),
   m = n(890280),
-  h = n(176412),
-  f = n(981631),
+  f = n(176412),
+  h = n(981631),
   v = n(388032),
-  N = n(486320);
+  y = n(486320);
 
-function x(e) {
+function b(e) {
   let {
     context: t,
     application: n,
-    sectionName: x,
-    primaryEntryPointCommand: y,
-    buttonSize: b = r.PhG.MEDIUM
-  } = e, E = l.useId(), j = l.useCallback(() => {
+    sectionName: b,
+    primaryEntryPointCommand: N,
+    buttonSize: g = r.PhG.MEDIUM
+  } = e, x = l.useId(), j = l.useCallback(() => {
     c.yT(u.ti.ACTIVITY)
   }, []), {
-    submitting: C,
-    wasSubmitting: g
+    submitting: E,
+    wasSubmitting: P
   } = (0, m.Z)({
     applicationId: n.id,
     context: t,
-    launchingComponentId: E,
+    launchingComponentId: x,
     onSubmissionComplete: j
-  }), [P, A] = l.useState(!1), I = (0, o.Qv)({
+  }), [C, O] = l.useState(!1), A = (0, o.Qv)({
     applicationId: n.id,
     context: t
-  }), _ = l.useMemo(() => (0, p.XZ)(y.displayName), [y.displayName]), {
-    onActivityItemSelected: O,
+  }), I = l.useMemo(() => (0, p.XZ)(N.displayName), [N.displayName]), {
+    onActivityItemSelected: _,
     buttonColor: S,
     buttonText: T
-  } = (0, h.P7)({
+  } = (0, f.P7)({
     context: t,
     application: n,
     location: a.Vh.APP_LAUNCHER_APPLICATION_VIEW,
-    sectionName: x,
-    commandName: _,
-    autoDismissOnClick: I === o.JS.LEAVE,
-    launchingComponentId: E,
-    submitting: null != g ? g : C
+    sectionName: b,
+    commandName: I,
+    autoDismissOnClick: A === o.JS.LEAVE,
+    launchingComponentId: x,
+    submitting: null != P ? P : E
   }), {
     disabled: L,
-    reason: R
+    reason: Z
   } = (0, d.Z)({
     context: t,
     application: n,
-    activityAction: I
+    activityAction: A
   });
   return (0, i.jsx)(r.ua7, {
-    shouldShow: null != R,
-    tooltipContentClassName: N.tooltipContent,
-    text: R,
+    shouldShow: null != Z,
+    tooltipContentClassName: y.tooltipContent,
+    text: Z,
     children: e => {
       var t, l, {
           onClick: o
@@ -101,12 +101,12 @@ function x(e) {
         return e
       }({}, a), l = l = {
         type: "submit",
-        size: b,
+        size: g,
         color: S,
         disabled: L,
-        submitting: P,
+        submitting: C,
         onClick: () => {
-          A(!0), O(), null == o || o(), s.default.track(f.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
+          O(!0), _(), null == o || o(), s.default.track(h.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
             application_id: n.id,
             button_action: u._y.USE_APP_COMMAND
           })

@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(512722),
-  s = n.n(a),
+  a = n.n(l),
+  o = n(512722),
+  s = n.n(o),
   c = n(481060),
   u = n(194359),
   d = n(313201),
@@ -87,7 +87,7 @@ function T() {
     t = i.createRef(),
     [n, l] = i.useReducer(S, v),
     {
-      canSend: a,
+      canSend: o,
       hint: d,
       success: E,
       error: O
@@ -147,7 +147,7 @@ function T() {
       ringClassName: b.ring,
       children: (0, r.jsxs)("div", {
         ref: t,
-        className: o()(b.addFriendInputWrapper, {
+        className: a()(b.addFriendInputWrapper, {
           [b.success]: E,
           [b.error]: O
         }),
@@ -163,8 +163,8 @@ function T() {
               let r = n.indexOf("#"),
                 i = e.current.selectionStart,
                 l = t.key === g.mR.Backspace || t.key === g.mR.ArrowRight || t.key === g.mR.ArrowLeft,
-                o = t.which >= 48 && t.which <= 57;
-              null != i && i > r && /^(.+?#\d{4})$/.test(n) && !l ? t.preventDefault() : null == i || !(i > r) || o || l || t.preventDefault()
+                a = t.which >= 48 && t.which <= 57;
+              null != i && i > r && /^(.+?#\d{4})$/.test(n) && !l ? t.preventDefault() : null == i || !(i > r) || a || l || t.preventDefault()
             }
           },
           onChange: e => {
@@ -198,7 +198,7 @@ function T() {
           children: d
         }), (0, r.jsx)(c.zxk, {
           size: c.zxk.Sizes.SMALL,
-          disabled: !a,
+          disabled: !o,
           type: "submit",
           children: m.NW.string(m.t["PMsq/f"])
         })]

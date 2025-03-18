@@ -28,8 +28,8 @@ function y(e) {
       onTransitionToInviteChannel: x,
       onAcceptInstantInvite: E
     } = e,
-    O = y === a.id,
-    j = n.state === _.r2o.ACCEPTING,
+    j = y === a.id,
+    O = n.state === _.r2o.ACCEPTING,
     N = (0, l.e7)([m.Z], () => null != n.channel ? m.Z.getChannel(n.channel.id) : null, [n]);
   o()(null == N || N.isPrivate(), "must be a private channel");
   let {
@@ -55,7 +55,7 @@ function y(e) {
     A = u.Z.Button.Colors.GREEN;
   I && (P = b.NW.string(b.t.cEnaW1), A = u.Z.Button.Colors.PRIMARY);
   let w = b.NW.string(b.t["3p3/BA"]);
-  return O && (w = b.NW.string(b.t.qmtuXF)), (0, r.jsxs)(u.Z, {
+  return j && (w = b.NW.string(b.t.qmtuXF)), (0, r.jsxs)(u.Z, {
     children: [(0, r.jsx)(u.Z.Header, {
       text: w
     }), (0, r.jsxs)(u.Z.Body, {
@@ -73,7 +73,7 @@ function y(e) {
         })]
       }), (0, r.jsx)(u.Z.Button, {
         onClick: S,
-        submitting: j,
+        submitting: O,
         isDisabled: I,
         color: A,
         children: P

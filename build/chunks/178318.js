@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => x
 }), n(26686), n(47120), n(301563), n(610138), n(216116), n(78328), n(815648), n(653041), n(411104);
 var l = n(836560),
-  o = n(392711),
-  a = n.n(o),
+  a = n(392711),
+  o = n.n(a),
   s = n(570140),
   c = n(710845),
   u = n(857192),
@@ -132,7 +132,7 @@ class Z extends l.EventEmitter {
     if ("/rpc" === n && ("GET" === i || l)) {
       let n = new URLSearchParams(r),
         i = l ? C(e.headers)["content-type"].split("/")[1] : "json",
-        a = function() {
+        o = function() {
           var e, r;
           let {
             protocol: i,
@@ -140,7 +140,7 @@ class Z extends l.EventEmitter {
           } = null !== (r = d.Z.toURLSafe(null !== (e = n.get("callback")) && void 0 !== e ? e : "")) && void 0 !== r ? r : {};
           i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", v), t.writeHead(301), t.end()
         },
-        s = new A(l ? T.bind(null, e, t) : a, l ? P.bind(null, e, t, 400) : a, Number(n.get("v")), i);
+        s = new A(l ? T.bind(null, e, t) : o, l ? P.bind(null, e, t, 400) : o, Number(n.get("v")), i);
       if (l)(0, m.em)(s, C(e.headers).origin, n.get("client_id")).then(() => {
         let n = "";
         e.on("data", e => n += e), e.on("error", () => P(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
@@ -152,8 +152,8 @@ class Z extends l.EventEmitter {
         return s.close(t, n)
       });
       else {
-        var o;
-        s.authorization.scopes = [b.CN], this.handleMessage(s, decodeURIComponent(null !== (o = n.get("payload")) && void 0 !== o ? o : ""))
+        var a;
+        s.authorization.scopes = [b.CN], this.handleMessage(s, decodeURIComponent(null !== (a = n.get("payload")) && void 0 !== a ? a : ""))
       }
       return
     }
@@ -171,7 +171,7 @@ class Z extends l.EventEmitter {
       return
     }
     y.info("Socket Opened: ".concat(r.id)), e.on("error", e => y.error("WS Error: ".concat(e.message))), e.on("close", (e, t) => {
-      y.info("Socket Closed: ".concat(r.id, ", code ").concat(e, ", message ").concat(t)), a().remove(I, e => e === r), this.emit("disconnect", r)
+      y.info("Socket Closed: ".concat(r.id, ", code ").concat(e, ", message ").concat(t)), o().remove(I, e => e === r), this.emit("disconnect", r)
     }), (0, m.em)(r, l, i.get("client_id")).then(() => {
       I.push(r), e.on("message", e => this.handleMessage(r, e)), this.emit("connect", r)
     }).catch(e => {

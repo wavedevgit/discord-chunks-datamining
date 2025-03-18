@@ -58,7 +58,7 @@ function m(e) {
     source: y,
     hover: x,
     innerClassName: E
-  } = e, O = {
+  } = e, j = {
     fullWidth: n,
     size: m,
     color: f,
@@ -68,13 +68,13 @@ function m(e) {
     className: v,
     hover: x,
     innerClassName: E
-  }, j = (0, i.e7)([o.Z], () => o.Z.getActiveLibraryApplication(t.id)), N = null != j ? j.sku.id : null, C = null != N ? N : t.primarySkuId, I = (0, i.e7)([l.Z], () => null != C && !l.Z.didFetchingSkuFail(C));
-  return null != j && (0, s.Je)(j) ? (0, r.jsx)(d.Z, p(u({}, O), {
-    libraryApplication: j,
+  }, O = (0, i.e7)([o.Z], () => o.Z.getActiveLibraryApplication(t.id)), N = null != O ? O.sku.id : null, C = null != N ? N : t.primarySkuId, I = (0, i.e7)([l.Z], () => null != C && !l.Z.didFetchingSkuFail(C));
+  return null != O && (0, s.Je)(O) ? (0, r.jsx)(d.Z, p(u({}, j), {
+    libraryApplication: O,
     source: y
   })) : I ? (0, r.jsx)("div", {
     children: "deprecated!"
-  }) : (0, r.jsx)(c.Z, p(u({}, O), {
+  }) : (0, r.jsx)(c.Z, p(u({}, j), {
     hideNotLaunchable: g,
     applicationId: t.id
   }))

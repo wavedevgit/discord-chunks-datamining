@@ -1,48 +1,48 @@
-/** Chunk was on 75101 **/
+/** Chunk was on 35755 **/
 n.d(t, {
-  E: () => f
+  E: () => m
 }), n(47120);
 var i = n(192379),
-  r = n(442837),
-  l = n(424602),
+  l = n(442837),
+  r = n(424602),
   o = n(835473),
   a = n(594174),
-  c = n(695103),
-  u = n(823379),
-  d = n(358085),
-  s = n(317381),
+  s = n(695103),
+  c = n(823379),
+  u = n(358085),
+  d = n(317381),
   p = n(761122);
 
-function f(e, t) {
-  let n = (0, r.e7)([a.default], a.default.getCurrentUser),
-    f = (0, r.Wu)([s.ZP], () => s.ZP.getShelfActivities(e)),
-    v = (0, r.e7)([c.Z], () => c.Z.testModeEmbeddedApplicationId),
-    y = f.map(e => e.application_id),
-    b = null != v ? [v, ...y] : y,
-    g = (0, o.Z)(b),
-    h = "channel" in t && (0, l.aZ)(t.channel, "useActivityShelfData()"),
-    O = i.useMemo(() => g.filter(u.lm), [g]),
-    m = i.useMemo(() => null != v && O.length > 0 && O[0].id === v && null != O[0].embeddedActivityConfig ? [{
-      activity: O[0].embeddedActivityConfig,
-      application: O[0]
-    }] : [], [O, v]),
-    w = i.useMemo(() => f.map(e => {
-      let t = O.find(t => t.id === e.application_id);
+function m(e, t) {
+  let n = (0, l.e7)([a.default], a.default.getCurrentUser),
+    m = (0, l.Wu)([d.ZP], () => d.ZP.getShelfActivities(e)),
+    f = (0, l.e7)([s.Z], () => s.Z.testModeEmbeddedApplicationId),
+    h = m.map(e => e.application_id),
+    v = null != f ? [f, ...h] : h,
+    y = (0, o.Z)(v),
+    b = "channel" in t && (0, r.aZ)(t.channel, "useActivityShelfData()"),
+    N = i.useMemo(() => y.filter(c.lm), [y]),
+    g = i.useMemo(() => null != f && N.length > 0 && N[0].id === f && null != N[0].embeddedActivityConfig ? [{
+      activity: N[0].embeddedActivityConfig,
+      application: N[0]
+    }] : [], [N, f]),
+    x = i.useMemo(() => m.map(e => {
+      let t = N.find(t => t.id === e.application_id);
       return null == t ? null : {
         activity: e,
         application: t
       }
-    }).filter(u.lm), [f, O]);
-  return i.useMemo(() => [...m, ...w].filter(e => {
+    }).filter(c.lm), [m, N]);
+  return i.useMemo(() => [...g, ...x].filter(e => {
     var t;
     let {
       activity: n
     } = e;
-    return (null !== (t = n.supported_platforms) && void 0 !== t ? t : []).includes((0, p.Z)((0, d.getOS)()))
+    return (null !== (t = n.supported_platforms) && void 0 !== t ? t : []).includes((0, p.Z)((0, u.getOS)()))
   }).filter(e => {
     let {
       activity: t
     } = e;
     return !t.requires_age_gate || (null == n ? void 0 : n.nsfwAllowed) === !0 || (null == n ? void 0 : n.nsfwAllowed) == null
-  }).filter(e => !h || e.application.id !== l.gu), [null == n ? void 0 : n.nsfwAllowed, w, h, m])
+  }).filter(e => !b || e.application.id !== r.gu), [null == n ? void 0 : n.nsfwAllowed, x, b, g])
 }
