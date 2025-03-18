@@ -1,6 +1,6 @@
 /**
   Module ID: 46746
-  Original File Name: 917a0c8222f6e1db
+  Original File Name: a409ea171a7a00c2
 **/
 .card__4bb93 {
     display: flex;
@@ -146,15 +146,18 @@
     justify-content: center;
     align-items: center;
     margin-left: var(--space-16);
-    padding-top: var(--space-24)
+    padding-top: var(--space-24);
+    flex-shrink: 1;
+    min-height: 0;
+    overflow: hidden
 }
 
 .visual-refresh .refreshedArt_a55fdc {
-    background-image: url(/assets/1487fe11eda6b44d.svg);
-    width: 215px;
-    height: 130px;
+    max-width: 215px;
+    width: 100%;
+    height: auto;
     margin: auto;
-    background-repeat: no-repeat
+    flex-shrink: 1
 }
 
 .visual-refresh .container_a55fdc {
@@ -162,7 +165,12 @@
     background: radial-gradient(90.42% 100% at 50% 100%,var(--modal-background) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--bg-modal-gradient-lavender-start),var(--bg-modal-gradient-lavender-end));
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    box-shadow: inset 0 1px 0 1px var(--border-subtle)
+    box-shadow: inset 0 1px 0 1px var(--border-subtle);
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    flex-shrink: 1;
+    overflow: hidden
 }
 
 .visual-refresh .border_a55fdc {
@@ -2324,4 +2332,4 @@
     padding: var(--spacing-12) var(--spacing-24)
 }
 
-/*# sourceMappingURL=917a0c8222f6e1db.css.map*/
+/*# sourceMappingURL=a409ea171a7a00c2.css.map*/
