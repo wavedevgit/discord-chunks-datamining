@@ -6,15 +6,15 @@ var a = n(200651),
   i = n(192379),
   l = n(120356),
   s = n.n(l),
-  r = n(442837),
-  c = n(481060),
+  c = n(442837),
+  r = n(481060),
   o = n(239091),
   d = n(434650),
   u = n(895924),
   p = n(70097),
   f = n(695346),
-  m = n(594174),
-  g = n(695103),
+  g = n(594174),
+  m = n(695103),
   v = n(880448),
   h = n(823379),
   b = n(5192),
@@ -56,7 +56,7 @@ function P(e) {
     value: t,
     icon: n
   } = e;
-  return (0, a.jsxs)(c.Text, {
+  return (0, a.jsxs)(r.Text, {
     className: E.activityTag,
     color: "interactive-normal",
     variant: "text-xs/semibold",
@@ -73,17 +73,17 @@ function w(e) {
     context: i,
     guildId: l,
     large: s = !1
-  } = e, o = "channel" === i.type ? i.channel : void 0, d = (0, r.Wu)([m.default], () => {
+  } = e, o = "channel" === i.type ? i.channel : void 0, d = (0, c.Wu)([g.default], () => {
     var e;
     return Array.from(null !== (e = null == t ? void 0 : t.userIds) && void 0 !== e ? e : []).map(e => {
       let [t] = e;
-      return m.default.getUser(t)
+      return g.default.getUser(t)
     }).filter(h.lm)
   }), u = b.ZP.getName(l, null == o ? void 0 : o.id, null == d ? void 0 : d[0]);
   if (u = (0, x.aF)(u, 15), null == t || 0 === d.length) {
     var p, f;
     let e = "".concat((0, C.ZP)(null !== (p = n.maxParticipants) && void 0 !== p ? p : 0));
-    return s && (e = null !== (f = n.description) && void 0 !== f ? f : ""), (0, a.jsx)(c.Text, {
+    return s && (e = null !== (f = n.description) && void 0 !== f ? f : ""), (0, a.jsx)(r.Text, {
       className: E.activitySubtitleText,
       variant: "text-xs/normal",
       color: "interactive-normal",
@@ -92,7 +92,7 @@ function w(e) {
   }
   return (0, a.jsxs)("div", {
     className: E.activitySubtitleText,
-    children: [(0, a.jsx)(c.Text, {
+    children: [(0, a.jsx)(r.Text, {
       className: E.usersArePlayingText,
       variant: "text-xs/normal",
       children: d.length > 1 ? O.NW.formatToPlainString(O.t.cpe6CA, {
@@ -115,7 +115,7 @@ function L(e) {
   let {
     activityItem: n,
     context: l,
-    guildId: m,
+    guildId: g,
     locationObject: h,
     onActivityItemVisible: b,
     onActivityItemSelected: x,
@@ -131,13 +131,13 @@ function L(e) {
   } = (0, I.ZP)({
     activityItem: n,
     context: l,
-    guildId: m,
+    guildId: g,
     locationObject: h,
     onActivityItemVisible: b,
     onActivityItemSelected: x,
     embeddedActivitiesManager: Z.Z,
     commandOrigin: u.bB.APPLICATION_LAUNCHER
-  }), V = (0, r.e7)([_.Z, g.Z], () => _.Z.inDevModeForApplication(n.application.id) || g.Z.inTestModeForApplication(n.application.id), [n.application.id]), {
+  }), V = (0, c.e7)([_.Z, m.Z], () => _.Z.inDevModeForApplication(n.application.id) || m.Z.inTestModeForApplication(n.application.id), [n.application.id]), {
     application: H
   } = n, U = i.useCallback(e => e && (null == b ? void 0 : b({
     applicationId: n.application.id
@@ -151,7 +151,7 @@ function L(e) {
     K = i.useCallback(() => {
       null == F || F()
     }, [F]);
-  return (0, a.jsxs)(c.P3F, {
+  return (0, a.jsxs)(r.P3F, {
     onClick: D === I.JS.START ? K : void 0,
     onContextMenu: Q ? e => {
       (0, o.vq)(e, e => (0, a.jsx)(N.Z, M({
@@ -201,7 +201,7 @@ function L(e) {
             labelType: W
           })
         })
-      }), V ? (0, a.jsx)(c.ua7, {
+      }), V ? (0, a.jsx)(r.ua7, {
         text: O.NW.string(O.t.CfTySU),
         children: e => {
           var t, n;
@@ -227,19 +227,19 @@ function L(e) {
       className: s()(E.activityTextContainer, {
         [E.large]: S
       }),
-      children: [S ? (0, a.jsx)(c.Text, {
+      children: [S ? (0, a.jsx)(r.Text, {
         className: E.activityMaxParticipantsLarge,
         variant: "text-xs/normal",
         color: "interactive-normal",
         children: (0, C.ZP)(null !== (t = H.maxParticipants) && void 0 !== t ? t : 0)
       }) : null, (0, a.jsxs)("div", {
         className: E.activityName,
-        children: [(0, a.jsx)(c.X6q, {
+        children: [(0, a.jsx)(r.X6q, {
           className: E.activityTitleText,
           variant: "heading-md/semibold",
           color: "interactive-active",
           children: H.name
-        }), null != B ? (0, a.jsx)(c.ua7, {
+        }), null != B ? (0, a.jsx)(r.ua7, {
           text: B,
           children: e => (0, a.jsx)("img", M({
             className: E.staffBadge,
@@ -251,7 +251,7 @@ function L(e) {
         activity: null == R ? void 0 : R.embeddedActivity,
         application: H,
         context: l,
-        guildId: m,
+        guildId: g,
         large: S
       }), (0, a.jsx)("div", {
         className: E.activityTagsContainer,

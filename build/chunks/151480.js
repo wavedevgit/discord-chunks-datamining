@@ -1,29 +1,30 @@
-/** Chunk was on 78114 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
   k: () => c
 });
 var r = n(544891),
   i = n(570140),
-  l = n(881052),
-  o = n(439170),
-  a = n(860987),
-  s = n(981631);
+  o = n(881052),
+  a = n(439170),
+  s = n(860987),
+  l = n(981631);
 let c = async () => {
   i.Z.dispatch({
     type: "FETCH_CHAT_WALLPAPERS_START"
   });
   try {
     let e = await r.tn.get({
-      url: s.ANM.CHAT_WALLPAPERS,
+      url: l.ANM.CHAT_WALLPAPERS,
       rejectWithError: !0
     });
     i.Z.dispatch({
       type: "FETCH_CHAT_WALLPAPERS_SUCCESS",
-      wallpapers: e.body.chat_wallpapers.map(a.w)
+      wallpapers: e.body.chat_wallpapers.map(s.w)
     })
   } catch (t) {
-    let e = new l.Hx(t);
-    (0, o.G)(e), i.Z.dispatch({
+    let e = new o.Hx(t);
+    (0, a.G)(e), i.Z.dispatch({
       type: "FETCH_CHAT_WALLPAPERS_FAILURE",
       error: e
     })

@@ -4,8 +4,8 @@ t.d(n, {
 });
 var r = t(200651),
   i = t(793030),
-  s = t(481060),
-  o = t(921944),
+  o = t(481060),
+  s = t(921944),
   a = t(730621),
   l = t(388032),
   c = t(951652),
@@ -29,11 +29,11 @@ function u(e) {
       color: "always-white",
       variant: "text-sm/medium",
       children: l.NW.string(a.Z.pycxTk)
-    }), (0, r.jsx)(s.olH, {
+    }), (0, r.jsx)(o.olH, {
       className: c.close,
       innerClassName: c.innerClose,
       onClick: () => {
-        n(o.L.USER_DISMISS)
+        n(s.L.USER_DISMISS)
       }
     })]
   })

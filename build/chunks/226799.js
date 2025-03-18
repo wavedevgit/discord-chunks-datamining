@@ -6,15 +6,15 @@ var a = n(701488),
   i = n(799911),
   l = n(222013),
   s = n(38161),
-  r = n(15259),
-  c = n(517288),
+  c = n(15259),
+  r = n(517288),
   o = n(724491),
   d = n(271359),
   u = n(241976),
   p = n(783466),
   f = n(128584),
-  m = n(469999),
-  g = n(607865),
+  g = n(469999),
+  m = n(607865),
   v = n(265661),
   h = n(121517),
   b = n(295597),
@@ -47,7 +47,7 @@ let D = {
     playersSuggestionMin: 4,
     playersSuggestionMax: 12,
     timeSuggestionMinutes: 10,
-    gameplayImageUrls: [m.Z, g.Z]
+    gameplayImageUrls: [g.Z, m.Z]
   },
   [a.mI]: {
     playersSuggestionMin: 1,
@@ -83,13 +83,13 @@ let D = {
     playersSuggestionMin: 2,
     playersSuggestionMax: 8,
     timeSuggestionMinutes: 15,
-    gameplayImageUrls: [s.Z, r.Z]
+    gameplayImageUrls: [s.Z, c.Z]
   },
   [a.l4]: {
     playersSuggestionMin: 2,
     playersSuggestionMax: 16,
     timeSuggestionMinutes: 10,
-    gameplayImageUrls: [c.Z, o.Z]
+    gameplayImageUrls: [r.Z, o.Z]
   },
   [a.fE]: {
     playersSuggestionMin: 2,

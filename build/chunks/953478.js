@@ -5,8 +5,8 @@ t.d(n, {
 var r = t(200651);
 t(192379);
 var i = t(793030),
-  s = t(442837),
-  o = t(481060),
+  o = t(442837),
+  s = t(481060),
   a = t(678558),
   l = t(413335),
   c = t(430824),
@@ -22,10 +22,10 @@ var i = t(793030),
 function j(e) {
   let {
     guildId: n
-  } = e, t = (0, s.e7)([c.Z], () => c.Z.getGuild(n)), {
+  } = e, t = (0, o.e7)([c.Z], () => c.Z.getGuild(n)), {
     available: j,
     spent: h,
-    total: f
+    total: g
   } = (0, u.Z)(n);
   if (null != t) return (0, r.jsxs)("div", {
     className: _.container,
@@ -50,7 +50,7 @@ function j(e) {
         count: h,
         type: m.b.SPENT
       }), (0, r.jsx)(m.Z, {
-        count: f,
+        count: g,
         type: m.b.TOTAL
       })]
     }), (0, r.jsx)(x.Z, {
@@ -62,8 +62,8 @@ function j(e) {
         page: p.ZY5.GUILD_POWERUPS_OVERVIEW,
         section: p.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
       },
-      color: o.Ttl.CUSTOM,
-      size: o.PhG.LARGE,
+      color: s.Ttl.CUSTOM,
+      size: s.PhG.LARGE,
       icon: (0, r.jsx)(l.Z, {
         className: _.boostButtonIcon
       })

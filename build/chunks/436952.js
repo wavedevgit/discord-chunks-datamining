@@ -1,22 +1,25 @@
-/** Chunk was on 72149 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  FN: () => a,
-  ld: () => o,
-  rr: () => d,
-  sQ: () => s,
-  sX: () => u
+  FN: () => o,
+  ld: () => a,
+  rr: () => l,
+  sQ: () => c,
+  sX: () => s
 });
-var r, i = n(818083),
-  l = n(987338),
-  a = ((r = {}).CONTEXT_MENU = "context_menu", r.TOOLBAR = "toolbar", r);
-let o = (0, i.B)({
+var r = n(818083),
+  i = n(987338),
+  o = function(e) {
+    return e.CONTEXT_MENU = "context_menu", e.TOOLBAR = "toolbar", e
+  }({});
+let a = (0, r.B)({
   id: "2025-03_dm_chat_wallpapers_setter",
   kind: "user",
   label: "DM Chat Wallpapers",
   defaultConfig: {
     enabled: !1
   },
-  commonTriggerPoint: l.$P.CONNECTION_OPEN,
+  commonTriggerPoint: i.$P.CONNECTION_OPEN,
   treatments: [{
     id: 1,
     label: "Enables setting dm chat wallpapers in the context menu",
@@ -34,22 +37,22 @@ let o = (0, i.B)({
   }]
 });
 
-function u(e) {
+function s(e) {
   let {
     location: t
   } = e;
-  return o.useExperiment({
+  return a.useExperiment({
     location: t
   })
 }
-let d = (0, i.B)({
+let l = (0, r.B)({
   id: "2025-03_dm_chat_wallpapers_viewer",
   kind: "user",
   label: "DM Chat Wallpapers Viewer",
   defaultConfig: {
     enabled: !1
   },
-  commonTriggerPoint: l.$P.CONNECTION_OPEN,
+  commonTriggerPoint: i.$P.CONNECTION_OPEN,
   treatments: [{
     id: 1,
     label: "Enables viewing dm chat wallpapers",
@@ -59,11 +62,11 @@ let d = (0, i.B)({
   }]
 });
 
-function s(e) {
+function c(e) {
   let {
     location: t
   } = e;
-  return d.useExperiment({
+  return l.useExperiment({
     location: t
   }).enabled
 }

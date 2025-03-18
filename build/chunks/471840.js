@@ -6,15 +6,15 @@ var a = n(200651),
   i = n(192379),
   l = n(120356),
   s = n.n(l),
-  r = n(990547),
-  c = n(442837),
+  c = n(990547),
+  r = n(442837),
   o = n(477690),
   d = n(481060),
   u = n(493773),
   p = n(110924),
   f = n(40851),
-  m = n(367907),
-  g = n(565384),
+  g = n(367907),
+  m = n(565384),
   v = n(906732),
   h = n(835473),
   b = n(600164),
@@ -84,7 +84,7 @@ function W(e) {
       }
       return i
     }(e, ["channel", "guildId", "locationObject", "onClose", "initialSelectedApplicationId", "initialSlide", "enableSelectedTextChannelInvite", "analyticsLocations"]);
-  let V = (0, c.e7)([T.Z], () => T.Z.getIsEnabled(), []),
+  let V = (0, r.e7)([T.Z], () => T.Z.getIsEnabled(), []),
     {
       analyticsLocations: H
     } = (0, v.ZP)(F),
@@ -98,7 +98,7 @@ function W(e) {
     et = i.useMemo(() => ({
       application_id: J,
       source_section: o.section,
-      impression_group: r.ImpressionGroups.ACTIVITY_SHELF_FLOW
+      impression_group: c.ImpressionGroups.ACTIVITY_SHELF_FLOW
     }), [o.section, J]);
   i.useEffect(() => {
     if (U === E.ag.DIRECTORY && null != G && G !== E.ag.DIRECTORY && null != z) {
@@ -139,9 +139,9 @@ function W(e) {
     },
     el = i.useRef(Date.now()),
     es = i.useRef(!1),
-    er = i.useRef([]),
-    ec = i.useCallback(e => {
-      null == er.current.find(t => t === e.applicationId) && er.current.push(e.applicationId)
+    ec = i.useRef([]),
+    er = i.useCallback(e => {
+      null == ec.current.find(t => t === e.applicationId) && ec.current.push(e.applicationId)
     }, []);
   return i.useEffect(() => {
     let e = ee.current;
@@ -153,15 +153,15 @@ function W(e) {
     }
   }, []), (0, u.ZP)(() => () => {
     let e = {
-        activity_tiles_viewed: er.current,
+        activity_tiles_viewed: ec.current,
         duration_ms: Date.now() - el.current,
         scrolled: es.current
       },
       t = k({
         channel_id: null == l ? void 0 : l.id,
         guild_id: s,
-        location: (0, g.k$)()
-      }, (0, m.hH)(s), (0, m.v_)(x.Z.getChannel(null == l ? void 0 : l.id)), et, e);
+        location: (0, m.k$)()
+      }, (0, g.hH)(s), (0, g.v_)(x.Z.getChannel(null == l ? void 0 : l.id)), et, e);
     C.default.track(A.rMx.ACTIVITY_SHELF_CLOSE, t)
   }), (0, a.jsx)(v.Gt, {
     value: H,
@@ -221,10 +221,10 @@ function W(e) {
         width: R,
         children: [(0, a.jsx)(d.Mi4, {
           id: E.ag.DIRECTORY,
-          impressionName: r.ImpressionNames.ACTIVITY_SHELF,
+          impressionName: c.ImpressionNames.ACTIVITY_SHELF,
           impressionProperties: {
             source_section: o.section,
-            impression_group: r.ImpressionGroups.ACTIVITY_SHELF_FLOW
+            impression_group: c.ImpressionGroups.ACTIVITY_SHELF_FLOW
           },
           children: (0, a.jsx)(B, {
             slide: U,
@@ -233,16 +233,16 @@ function W(e) {
               channel: l,
               guildId: s,
               locationObject: o,
-              onActivityItemVisible: ec,
+              onActivityItemVisible: er,
               onClose: f
             })
           })
         }), (0, a.jsx)(d.Mi4, {
           id: E.ag.SELECT_CHANNEL,
-          impressionName: r.ImpressionNames.ACTIVITY_SHELF_SELECT_CHANNEL,
+          impressionName: c.ImpressionNames.ACTIVITY_SHELF_SELECT_CHANNEL,
           impressionProperties: {
             source_section: o.section,
-            impression_group: r.ImpressionGroups.ACTIVITY_SHELF_FLOW,
+            impression_group: c.ImpressionGroups.ACTIVITY_SHELF_FLOW,
             application_id: J
           },
           children: (0, a.jsx)(B, {
@@ -257,7 +257,7 @@ function W(e) {
           })
         }), (0, a.jsx)(d.Mi4, {
           id: E.ag.DETAIL_PAGE,
-          impressionName: r.ImpressionNames.ACTIVITY_DETAILS,
+          impressionName: c.ImpressionNames.ACTIVITY_DETAILS,
           impressionProperties: et,
           children: (0, a.jsx)(B, {
             slide: U,
@@ -311,7 +311,7 @@ let B = e => {
   let {
     children: t,
     slide: n
-  } = e, l = (0, c.e7)([T.Z], () => T.Z.getIsEnabled(), []), r = i.useContext(f.ZP), o = (0, c.e7)([_.Z], () => _.Z.windowSize(r.windowId).height, [r.windowId]);
+  } = e, l = (0, r.e7)([T.Z], () => T.Z.getIsEnabled(), []), c = i.useContext(f.ZP), o = (0, r.e7)([_.Z], () => _.Z.windowSize(c.windowId).height, [c.windowId]);
   return (0, a.jsx)("div", {
     className: s()(P.slideContentOuterContainerSquished, {
       [P.slideContentOuterContainerSquishedWithDev]: n === E.ag.DIRECTORY && l,

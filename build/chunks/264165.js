@@ -1,18 +1,18 @@
 /** Chunk was on 82520 **/
 n.d(t, {
-  Z: () => r
+  Z: () => c
 });
 var a = n(200651);
 n(192379);
 var i = n(120356),
   l = n.n(i),
   s = n(199916);
-let r = e => {
+let c = e => {
   let {
     aspectRatio: t,
     style: n,
     className: i,
-    children: r
+    children: c
   } = e;
   return (0, a.jsx)("div", {
     className: l()(s.outer, i),
@@ -38,7 +38,7 @@ let r = e => {
     }, n),
     children: (0, a.jsx)("div", {
       className: s.inner,
-      children: r
+      children: c
     })
   })
 }

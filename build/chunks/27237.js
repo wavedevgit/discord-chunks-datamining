@@ -4,13 +4,13 @@ t.d(n, {
 }), t(47120);
 var r = t(200651),
   i = t(192379),
-  s = t(120356),
-  o = t.n(s),
+  o = t(120356),
+  s = t.n(o),
   a = t(793030),
   l = t(481060),
   c = t(808189),
   d = t(413335),
-  u = t(157353),
+  u = t(690786),
   x = t(838968),
   m = t(969867),
   p = t(279604),
@@ -21,14 +21,14 @@ function _(e) {
   let n, {
     active: t,
     nextActive: i,
-    position: s
+    position: o
   } = e;
   return n = t && !1 !== i ? "full" : t && !1 === i ? "half" : "none", (0, r.jsxs)("div", {
     className: v.progressContainer,
     children: [(0, r.jsx)("div", {
-      className: o()(v.progress, v[s], v[n])
+      className: s()(v.progress, v[o], v[n])
     }), (0, r.jsx)("div", {
-      className: o()(v.boostContainer, {
+      className: s()(v.boostContainer, {
         [v.boostContainerActive]: t
       }),
       children: (0, r.jsx)(d.Z, {
@@ -65,42 +65,38 @@ function j(e) {
 function h(e) {
   let n, {
       guildId: t,
-      index: s,
-      powerup: o,
+      index: o,
+      powerup: s,
       nextPowerup: l
     } = e,
-    {
-      onShowMore: c
-    } = (0, p.ZP)(t, o),
-    d = (0, u.Z)(t, o),
-    h = (0, u.Z)(t, l),
-    [f, g] = i.useState(void 0);
-  return (0, p.KT)(f), n = 0 === s ? "start" : null == l ? "end" : "middle", (0, r.jsxs)(x.Z, {
-    label: o.title,
-    onClick: c,
-    active: d,
+    c = null != (0, u.Z)(t, s),
+    d = null != (0, u.Z)(t, l),
+    [h, g] = i.useState(void 0);
+  return (0, p.KT)(h), n = 0 === o ? "start" : null == l ? "end" : "middle", (0, r.jsxs)(x.Z, {
+    guildId: t,
+    powerup: s,
     className: v.card,
     children: [(0, r.jsx)(_, {
       position: n,
-      active: d,
-      nextActive: h
+      active: c,
+      nextActive: d
     }), (0, r.jsxs)("div", {
       className: b.contentContainer,
       children: [(0, r.jsx)(a.X6, {
         variant: "heading-md/bold",
-        children: o.title
+        children: s.title
       }), (0, r.jsx)(j, {
-        index: s
+        index: o
       }), (0, r.jsx)(x.Y, {
         className: v.footer,
         guildId: t,
-        powerup: o
+        powerup: s
       })]
     }), (0, r.jsx)("div", {
       className: b.buttonContainer,
       children: (0, r.jsx)(m.Z, {
         guildId: t,
-        powerup: o,
+        powerup: s,
         onError: g
       })
     })]

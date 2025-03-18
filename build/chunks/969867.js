@@ -4,12 +4,12 @@ t.d(n, {
 });
 var r = t(200651),
   i = t(192379),
-  s = t(120356),
-  o = t.n(s),
+  o = t(120356),
+  s = t.n(o),
   a = t(481060),
   l = t(413335),
   c = t(762762),
-  d = t(157353),
+  d = t(690786),
   u = t(279604),
   x = t(730621),
   m = t(388032),
@@ -51,23 +51,23 @@ function _(e) {
   let {
     className: n,
     guildId: t,
-    powerup: s,
+    powerup: o,
     onError: _
   } = e, {
     onActivate: j,
     isLoading: h,
-    error: f,
-    onShowDeactivate: g
-  } = (0, u.ZP)(t, s), Z = (0, d.Z)(t, s);
+    error: g,
+    onShowDeactivate: f
+  } = (0, u.ZP)(t, o), Z = null != (0, d.Z)(t, o);
   i.useEffect(() => {
-    null == _ || _(f)
-  }, [f, _]);
+    null == _ || _(g)
+  }, [g, _]);
   let {
     disabled: C,
     reason: N
-  } = (0, c.Z)(t, s, Z);
+  } = (0, c.Z)(t, o, Z);
   return (0, r.jsxs)("div", {
-    className: o()(p.container, n),
+    className: s()(p.container, n),
     children: [Z && (0, r.jsx)(a.ua7, {
       delay: 100,
       "aria-label": m.NW.string(x.Z.TZsu1d),
@@ -79,22 +79,22 @@ function _(e) {
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/medium",
           children: m.NW.formatToPlainString(x.Z["5HQUzM"], {
-            boostCount: s.cost
+            boostCount: o.cost
           })
         })]
       }),
       children: e => (0, r.jsxs)(a.zxk, b(v({}, e), {
         className: p.secondaryButton,
-        innerClassName: o()(p.buttonInner, p.secondaryButtonInner),
+        innerClassName: s()(p.buttonInner, p.secondaryButtonInner),
         color: a.Ttl.PRIMARY,
         "aria-label": m.NW.string(x.Z.TZsu1d),
         grow: !1,
-        onClick: g,
+        onClick: f,
         children: [(0, r.jsx)(a.mTd, {
           size: "sm"
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
-          children: s.cost
+          children: o.cost
         })]
       }))
     }), (0, r.jsx)(a.ua7, {
@@ -118,7 +118,7 @@ function _(e) {
             className: p.boost,
             fill: "white"
           }), (0, r.jsx)("span", {
-            children: s.cost
+            children: o.cost
           })]
         })]
       }))

@@ -7,18 +7,18 @@ n(192379);
 var i = n(468194),
   l = n(399606),
   s = n(481060),
-  r = n(430824),
-  c = n(768581),
+  c = n(430824),
+  r = n(768581),
   o = n(420483);
 
 function d(e) {
   let {
     guildId: t
-  } = e, n = (0, l.e7)([r.Z], () => r.Z.getGuild(t));
+  } = e, n = (0, l.e7)([c.Z], () => c.Z.getGuild(t));
   if (null == n) return null;
   let d = null;
   if (null != n.icon) {
-    let e = c.ZP.getGuildIconURL({
+    let e = r.ZP.getGuildIconURL({
       id: n.id,
       icon: n.icon,
       size: 40

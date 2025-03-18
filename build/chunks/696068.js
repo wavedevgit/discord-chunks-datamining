@@ -1,21 +1,21 @@
 /** Chunk was on 82520 **/
 n.d(t, {
   F: () => h,
-  d: () => g
+  d: () => m
 }), n(653041), n(47120), n(230036);
 var a = n(442837),
   i = n(592125),
   l = n(324067),
   s = n(430824),
-  r = n(496675),
-  c = n(944486),
+  c = n(496675),
+  r = n(944486),
   o = n(979651),
   d = n(938475),
   u = n(823379),
   p = n(374065),
   f = n(981631);
 
-function m(e, t, n, a, i) {
+function g(e, t, n, a, i) {
   let l = (0, p.e4)({
     channelId: e.id,
     ChannelStore: t,
@@ -26,19 +26,19 @@ function m(e, t, n, a, i) {
   return e.type === f.d4z.GUILD_VOICE && l === p.jy.CAN_LAUNCH
 }
 
-function g(e) {
+function m(e) {
   var t, n, a;
   let {
     guildId: p,
     allowGdmActivityChannelSuggestion: f = !1
   } = e;
   if (null == p && !f) return null;
-  let g = c.Z.getVoiceChannelId(),
-    v = i.Z.getChannel(g);
+  let m = r.Z.getVoiceChannelId(),
+    v = i.Z.getChannel(m);
   if (null != v && (null != v.guild_id || f)) return v.id;
   let h = [];
   for (let e of Object.values(l.Z.getCategories(p)))
-    for (let t of e) m(t.channel, i.Z, s.Z, r.Z, o.Z) && h.push({
+    for (let t of e) g(t.channel, i.Z, s.Z, c.Z, o.Z) && h.push({
       channel: t.channel,
       users: d.ZP.getVoiceStatesForChannel(t.channel).filter(u.lm)
     });
@@ -53,7 +53,7 @@ function v(e, t) {
 }
 
 function h(e) {
-  return (0, a.e7)([l.Z, i.Z, s.Z, r.Z, o.Z, d.ZP], () => {
+  return (0, a.e7)([l.Z, i.Z, s.Z, c.Z, o.Z, d.ZP], () => {
     if (null == e) return [];
     let t = [];
     return Object.values(l.Z.getCategories(e)).forEach(e => {
@@ -61,7 +61,7 @@ function h(e) {
         let {
           channel: n
         } = e;
-        m(n, i.Z, s.Z, r.Z, o.Z) && t.push(n)
+        g(n, i.Z, s.Z, c.Z, o.Z) && t.push(n)
       })
     }), t.map(e => {
       let t = d.ZP.getVoiceStatesForChannel(e).filter(u.lm);

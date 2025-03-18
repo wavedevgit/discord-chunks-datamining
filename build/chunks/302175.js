@@ -14,8 +14,8 @@ var r = n(200651),
   d = n(245004),
   f = n(713081),
   _ = n(50101),
-  p = n(111360),
-  h = n(157353),
+  p = n(690786),
+  h = n(111360),
   m = n(535396),
   g = n(730621),
   E = n(388032),
@@ -66,7 +66,7 @@ function N(e) {
   let {
     guildId: t,
     powerup: n
-  } = e, o = (0, h.Z)(t, n), [l, f] = i.useState(!1), [_, p] = i.useState(!1), m = _, O = i.useCallback(() => {}, []), S = i.useCallback(() => {}, []), N = {
+  } = e, o = null != (0, p.Z)(t, n), [l, f] = i.useState(!1), [_, h] = i.useState(!1), m = _, O = i.useCallback(() => {}, []), S = i.useCallback(() => {}, []), N = {
     tension: 400,
     friction: 30
   }, A = (0, c.q_F)({
@@ -92,8 +92,8 @@ function N(e) {
     className: a()(v.topPerksCard, v.animatedTopPerksCard, b.powerupCard, {
       [v.animate]: l
     }),
-    onMouseEnter: () => p(!0),
-    onMouseLeave: () => p(!1),
+    onMouseEnter: () => h(!0),
+    onMouseLeave: () => h(!1),
     children: [(0, r.jsx)("div", {
       className: v.intObserver,
       ref: D
@@ -154,7 +154,7 @@ function A(e) {
   i.useEffect(() => {
     s && ((0, f.Sn)(a.id), (0, f.Fm)(a.id))
   }, [s, a.id]);
-  let c = (0, p.Z)(a.id);
+  let c = (0, h.Z)(a.id);
   return s && null != c && (null !== (o = null === (t = c.get(m.Us.PERK)) || void 0 === t ? void 0 : t.length) && void 0 !== o ? o : 0) !== 0 ? (0, r.jsxs)("div", {
     className: b.container,
     children: [(0, r.jsx)(l.X6, {

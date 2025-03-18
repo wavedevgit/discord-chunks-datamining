@@ -192,7 +192,7 @@ function I(e) {
       e.commands = [...m, ...O]
     }
     return e
-  }, [m, p, v, E, b, O])
+  }, [b, m, p, E, v, O])
 }
 
 function S(e, t, n) {

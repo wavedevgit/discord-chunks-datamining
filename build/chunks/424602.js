@@ -2,7 +2,9 @@
 "use strict";
 n.d(t, {
   _f: () => l,
+  aZ: () => f,
   aq: () => s,
+  gu: () => u,
   m1: () => o,
   nS: () => a,
   xN: () => c
@@ -110,4 +112,28 @@ let o = (0, r.B)({
         enabled: !0
       }
     }]
-  })
+  }),
+  u = "1211781489931452447",
+  d = (0, r.B)({
+    kind: "guild",
+    id: "2025-02_filter_wordle_from_voice_channel_launcher",
+    label: "Filter Wordle From Voice Channel Launcher",
+    defaultConfig: {
+      enabled: !1
+    },
+    treatments: [{
+      id: 1,
+      label: "Filter Wordle From Voice Channels",
+      config: {
+        enabled: !0
+      }
+    }]
+  });
+
+function f(e, t) {
+  return void 0 !== e && (null == e ? void 0 : e.isGuildVoice()) && d.getCurrentConfig({
+    location: t
+  }, {
+    autoTrackExposure: !0
+  }).enabled
+}

@@ -7,8 +7,8 @@ n(192379);
 var i = n(481060),
   l = n(447003),
   s = n(687352),
-  r = n(237583),
-  c = n(823379),
+  c = n(237583),
+  r = n(823379),
   o = n(619915),
   d = n(575853);
 
@@ -41,11 +41,11 @@ function u(e) {
         children: u.map(e => {
           var t;
           return null === (t = e.application) || void 0 === t ? void 0 : t.name
-        }).filter(c.lm).join(", ")
+        }).filter(r.lm).join(", ")
       })]
     }) : null, (0, a.jsx)("div", {
       className: d.voiceUserContainer,
-      children: (0, a.jsx)(r.Z, {
+      children: (0, a.jsx)(c.Z, {
         users: n,
         max: 4
       })

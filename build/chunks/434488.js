@@ -292,7 +292,11 @@ function R(e) {
     })
   });
   let m = (0, h.Z)({
-      guildId: n.id
+      guildId: n.id,
+      context: {
+        channel: t,
+        type: "channel"
+      }
     }).slice(0, 3),
     {
       analyticsLocations: I

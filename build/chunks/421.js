@@ -6,15 +6,15 @@ var a = n(200651),
   i = n(192379),
   l = n(399606),
   s = n(481060),
-  r = n(100527),
-  c = n(906732),
+  c = n(100527),
+  r = n(906732),
   o = n(895924),
   d = n(70097),
   u = n(592125),
   p = n(566620),
   f = n(122613),
-  m = n(678173),
-  g = n(636508),
+  g = n(678173),
+  m = n(636508),
   v = n(696068),
   h = n(361213),
   b = n(778569),
@@ -29,28 +29,32 @@ function j(e) {
   var t;
   let {
     applicationId: n,
-    guildId: l,
-    channelId: o,
-    onActivityLaunch: u
+    guildId: o,
+    channelId: f,
+    onActivityLaunch: m
   } = e, {
-    analyticsLocations: f
-  } = (0, c.ZP)(r.Z.ACTIVITY_SHELF_ACTIVITY_DETAILS);
+    analyticsLocations: v
+  } = (0, r.ZP)(c.Z.ACTIVITY_SHELF_ACTIVITY_DETAILS);
   i.useEffect(() => {
     (0, p.w1)({
-      guildId: l
+      guildId: o
     })
-  }, [l]);
-  let g = (0, b.Z)({
+  }, [o]);
+  let x = (0, b.Z)({
       applicationId: null != n ? n : "",
       size: 2048
     }),
-    v = (0, m.T)(null != l ? l : null, n);
-  if (null == v) return null;
-  let x = null != v.activity.activity_preview_video_asset_id ? (0, h.Z)(n, v.activity.activity_preview_video_asset_id) : null,
-    _ = I.o[n],
-    C = (null == _ ? void 0 : _.playersSuggestionMin) != null && (null == _ ? void 0 : _.playersSuggestionMax) != null ? "".concat(_.playersSuggestionMin, " - ").concat(_.playersSuggestionMax) : void 0;
-  return (0, a.jsx)(c.Gt, {
-    value: f,
+    _ = (0, l.e7)([u.Z], () => u.Z.getChannel(f)),
+    C = (0, g.T)({
+      channel: _,
+      type: "channel"
+    }, null != o ? o : null, n);
+  if (null == C) return null;
+  let j = null != C.activity.activity_preview_video_asset_id ? (0, h.Z)(n, C.activity.activity_preview_video_asset_id) : null,
+    S = I.o[n],
+    N = (null == S ? void 0 : S.playersSuggestionMin) != null && (null == S ? void 0 : S.playersSuggestionMax) != null ? "".concat(S.playersSuggestionMin, " - ").concat(S.playersSuggestionMax) : void 0;
+  return (0, a.jsx)(r.Gt, {
+    value: v,
     children: (0, a.jsx)("div", {
       className: T.scrollContainer,
       children: (0, a.jsxs)(s.Ttm, {
@@ -58,32 +62,32 @@ function j(e) {
         children: [(0, a.jsx)("div", {
           className: T.launcherOuterContainer,
           children: (0, a.jsx)(Z, {
-            activityItem: v,
-            onLaunch: u,
-            channelId: o
+            activityItem: C,
+            onLaunch: m,
+            channelId: f
           })
         }), (0, a.jsxs)("div", {
           className: T.activityDetailsContainer,
           children: [(0, a.jsxs)("div", {
-            children: [null != x ? (0, a.jsx)("div", {
+            children: [null != j ? (0, a.jsx)("div", {
               className: T.heroVideoContainer,
               children: (0, a.jsx)(d.Z, {
                 loop: !0,
                 autoPlay: !0,
                 muted: !0,
                 className: T.heroVideo,
-                src: x,
-                poster: g.url
+                src: j,
+                poster: x.url
               })
             }) : null, (0, a.jsx)("div", {
               className: T.detailsTitle,
               children: (0, a.jsx)(s.X6q, {
                 variant: "heading-xxl/bold",
-                children: v.application.name
+                children: C.application.name
               })
             }), (0, a.jsxs)("div", {
               className: T.detailsDetails,
-              children: [null != C ? (0, a.jsxs)("div", {
+              children: [null != N ? (0, a.jsxs)("div", {
                 className: T.detailItem,
                 children: [(0, a.jsx)(s.BFJ, {
                   size: "xs",
@@ -92,10 +96,10 @@ function j(e) {
                   variant: "text-xs/semibold",
                   className: T.detailItemText,
                   children: y.NW.format(y.t.T3isFB, {
-                    nPlayers: C
+                    nPlayers: N
                   })
                 })]
-              }) : null, (null == _ ? void 0 : _.timeSuggestionMinutes) != null ? (0, a.jsxs)("div", {
+              }) : null, (null == S ? void 0 : S.timeSuggestionMinutes) != null ? (0, a.jsxs)("div", {
                 className: T.detailItem,
                 children: [(0, a.jsx)(s.wGF, {
                   size: "xs",
@@ -104,7 +108,7 @@ function j(e) {
                   variant: "text-xs/semibold",
                   className: T.detailItemText,
                   children: y.NW.format(y.t.dehcUV, {
-                    nMinutes: _.timeSuggestionMinutes
+                    nMinutes: S.timeSuggestionMinutes
                   })
                 })]
               }) : null, (0, a.jsxs)("div", {
@@ -115,22 +119,22 @@ function j(e) {
                 }), (0, a.jsx)(s.Text, {
                   variant: "text-xs/semibold",
                   className: T.detailItemText,
-                  children: v.application.tags.slice(0, 3).join(", ")
+                  children: C.application.tags.slice(0, 3).join(", ")
                 })]
               })]
             })]
           }), (0, a.jsx)(s.X6q, {
             variant: "heading-lg/medium",
             className: T.detailsDescription,
-            children: v.application.description
+            children: C.application.description
           }), (0, a.jsx)("div", {
             className: T.divider
           }), (0, a.jsx)("div", {
             className: T.imagesContainer,
-            children: (null !== (t = null == _ ? void 0 : _.gameplayImageUrls) && void 0 !== t ? t : []).map(e => (0, a.jsx)("img", {
+            children: (null !== (t = null == S ? void 0 : S.gameplayImageUrls) && void 0 !== t ? t : []).map(e => (0, a.jsx)("img", {
               src: e,
               alt: y.NW.formatToPlainString(y.t.YOslsL, {
-                activityName: v.application.name
+                activityName: C.application.name
               }),
               className: T.activityImage
             }, e))
@@ -142,22 +146,22 @@ function j(e) {
 }
 
 function Z(e) {
-  var t, r;
+  var t, c;
   let {
     activityItem: d,
     onLaunch: p,
-    channelId: m
+    channelId: g
   } = e, h = (0, b.Z)({
     applicationId: d.application.id,
     size: 2048
   }), {
     analyticsLocations: I
-  } = (0, c.ZP)(), [j, Z] = i.useState(null !== (t = (0, g.$)({
+  } = (0, r.ZP)(), [j, Z] = i.useState(null !== (t = (0, m.$)({
     allowGdmActivityChannelSuggestion: !0
-  })) && void 0 !== t ? t : void 0), [S, N] = i.useState(null !== (r = (0, v.d)({
+  })) && void 0 !== t ? t : void 0), [S, N] = i.useState(null !== (c = (0, v.d)({
     guildId: j,
     allowGdmActivityChannelSuggestion: !0
-  })) && void 0 !== r ? r : void 0), O = (0, l.e7)([u.Z], () => u.Z.getChannel(S), [S]), E = (0, g.W)(), A = (0, v.F)(j), M = i.useCallback(async () => {
+  })) && void 0 !== c ? c : void 0), O = (0, l.e7)([u.Z], () => u.Z.getChannel(S), [S]), E = (0, m.W)(), A = (0, v.F)(j), M = i.useCallback(async () => {
     var e;
     null != S && await (0, f.Z)({
       targetApplicationId: null == d ? void 0 : null === (e = d.application) || void 0 === e ? void 0 : e.id,
@@ -216,7 +220,7 @@ function Z(e) {
     }), (0, a.jsx)(s.Text, {
       variant: "text-md/medium",
       children: y.NW.string(y.t.lfSF4O)
-    }), null == m ? (0, a.jsxs)(a.Fragment, {
+    }), null == g ? (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(s.PhF, {
         placeholder: y.NW.string(y.t.etZ9tb),
         optionClassName: T.__invalid_option,

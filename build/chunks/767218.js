@@ -5,8 +5,8 @@ t.d(n, {
 });
 var r, i = t(200651);
 t(192379);
-var s = t(793030),
-  o = t(692547),
+var o = t(793030),
+  s = t(692547),
   a = t(413335),
   l = t(730621),
   c = t(388032),
@@ -23,13 +23,13 @@ function x(e) {
     children: [(0, i.jsxs)("div", {
       className: d.headerContainer,
       children: [(0, i.jsx)(a.Z, {
-        fill: 0 !== t ? o.Z.colors.HEADER_MUTED.css : void 0
-      }), (0, i.jsx)(s.X6, {
+        fill: 0 !== t ? s.Z.colors.HEADER_MUTED.css : void 0
+      }), (0, i.jsx)(o.X6, {
         color: 0 !== t ? "header-muted" : "header-primary",
         variant: "heading-lg/semibold",
         children: n
       })]
-    }), (0, i.jsx)(s.xv, {
+    }), (0, i.jsx)(o.xv, {
       color: "header-muted",
       variant: "text-sm/medium",
       children: (() => {

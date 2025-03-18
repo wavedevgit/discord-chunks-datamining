@@ -12,19 +12,20 @@ var i = n(192379),
 function u(e) {
   let {
     guildId: t,
-    enableFilter: n = !1
+    enableFilter: n = !1,
+    context: u
   } = e, {
-    filter: u
+    filter: d
   } = (0, r.cj)([l.Z], () => ({
     filter: l.Z.getFilter()
-  })), d = (0, o.E)(t), s = (0, a.Z)(d), p = (0, c.o)();
+  })), s = (0, o.E)(t, u), p = (0, a.Z)(s), f = (0, c.o)();
   return i.useMemo(() => {
     function e(e) {
-      return !!(!n || "" === u || e.application.name.toLowerCase().includes(u.toLowerCase()))
+      return !!(!n || "" === d || e.application.name.toLowerCase().includes(d.toLowerCase()))
     }
-    let t = [...p].filter(e),
+    let t = [...f].filter(e),
       i = new Set(t.map(e => e.application.id));
-    for (let n of s) !i.has(n.application.id) && e(n) && t.push(n);
+    for (let n of p) !i.has(n.application.id) && e(n) && t.push(n);
     return t
-  }, [p, n, u, s])
+  }, [f, n, d, p])
 }

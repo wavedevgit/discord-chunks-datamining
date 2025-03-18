@@ -5,8 +5,8 @@ t.d(n, {
 var r = t(200651);
 t(192379);
 var i = t(793030),
-  s = t(442837),
-  o = t(481060),
+  o = t(442837),
+  s = t(481060),
   a = t(834129),
   l = t(271383),
   c = t(709586),
@@ -21,7 +21,7 @@ function p(e) {
   } = e, t = new Date(d.default.extractTimestamp(n.id)), {
     username: p,
     roleColor: v
-  } = (0, s.cj)([l.ZP], () => {
+  } = (0, o.cj)([l.ZP], () => {
     var e, t, r;
     return {
       username: null !== (r = l.ZP.getNick(n.guildId, n.userId)) && void 0 !== r ? r : null === (e = n.user) || void 0 === e ? void 0 : e.username,
@@ -44,7 +44,7 @@ function p(e) {
       className: m.boostMessage,
       children: [(0, r.jsx)(i.xv, {
         variant: "text-md/semibold",
-        children: (0, r.jsx)(o.PUh, {
+        children: (0, r.jsx)(s.PUh, {
           name: p,
           color: null != v ? v : void 0
         })
