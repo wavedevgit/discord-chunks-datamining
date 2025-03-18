@@ -1,6 +1,6 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => N
+  Z: () => _
 });
 var r = n(200651);
 n(192379);
@@ -12,89 +12,90 @@ var i = n(120356),
   c = n(565138),
   d = n(623624),
   u = n(678558),
-  m = n(430824),
-  g = n(709586),
-  p = n(267642),
-  h = n(981631),
-  f = n(474936),
-  x = n(388032),
-  b = n(935908);
-let N = function(e) {
+  m = n(124570),
+  g = n(430824),
+  p = n(594174),
+  h = n(709586),
+  f = n(267642),
+  x = n(981631),
+  b = n(388032),
+  N = n(935908);
+let _ = function(e) {
   let {
     className: t,
     guildId: n,
     boostingVariant: i
-  } = e, N = (0, a.e7)([m.Z], () => m.Z.getGuild(n), [n]), {
-    fractionalState: _
-  } = (0, o.Z)(), E = _ === f.a$.FP_ONLY;
-  return null == N ? (0, r.jsx)("div", {
-    className: s()(t, b.guildContainer),
+  } = e, _ = (0, a.e7)([g.Z], () => g.Z.getGuild(n), [n]), E = (0, a.e7)([p.default], () => p.default.getCurrentUser()), {
+    fractionalState: j
+  } = (0, o.Z)(), C = (0, m.y)("guild_boosting_setting_guild_info_card", E, j);
+  return null == _ ? (0, r.jsx)("div", {
+    className: s()(t, N.guildContainer),
     children: (0, r.jsx)("div", {
-      className: b.guildInfoContainer,
+      className: N.guildInfoContainer,
       children: (0, r.jsx)(l.Text, {
         variant: "text-lg/bold",
-        children: x.NW.string(x.t["6Kwwur"])
+        children: b.NW.string(b.t["6Kwwur"])
       })
     })
   }) : (0, r.jsxs)("div", {
-    className: s()(t, b.guildContainer),
+    className: s()(t, N.guildContainer),
     children: [(0, r.jsx)(c.Z, {
-      className: b.__invalid_guildIcon,
-      guild: N,
+      className: N.__invalid_guildIcon,
+      guild: _,
       size: c.Z.Sizes.LARGER
     }), (0, r.jsxs)("div", {
-      className: b.guildInfoContainer,
+      className: N.guildInfoContainer,
       children: [(0, r.jsx)(l.Text, {
         variant: "text-lg/bold",
-        children: N.name
+        children: _.name
       }), (0, r.jsxs)("div", {
-        className: b.guildBoostStatsContainer,
-        children: [(0, r.jsx)(g.Z, {
-          className: b.guildBoostBadge,
+        className: N.guildBoostStatsContainer,
+        children: [(0, r.jsx)(h.Z, {
+          className: N.guildBoostBadge,
           width: 16,
           height: 16
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/bold",
           color: "text-muted",
-          children: x.NW.format(x.t["pob/cH"], {
-            subscriptions: N.premiumSubscriberCount
+          children: b.NW.format(b.t["pob/cH"], {
+            subscriptions: _.premiumSubscriberCount
           })
         }), (0, r.jsx)("div", {
-          className: b.separator
+          className: N.separator
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/bold",
           color: "text-muted",
-          children: (0, p.nW)(N.premiumTier, {
+          children: (0, f.nW)(_.premiumTier, {
             useLevels: !1
           })
         })]
       })]
     }), i ? (0, r.jsx)(u.Z, {
-      guild: N,
+      guild: _,
       analyticsLocation: {
-        page: h.ZY5.GUILD_BOOSTING_USER_SETTINGS,
-        section: h.jXE.GUILD_BOOSTING_RECOMMENDED_SERVER_BOOST_THIS_SERVER_CTA,
-        object: h.qAy.BUTTON_CTA,
-        objectType: h.Qqv.BUY
+        page: x.ZY5.GUILD_BOOSTING_USER_SETTINGS,
+        section: x.jXE.GUILD_BOOSTING_RECOMMENDED_SERVER_BOOST_THIS_SERVER_CTA,
+        object: x.qAy.BUTTON_CTA,
+        objectType: x.Qqv.BUY
       },
       pauseAnimation: !0,
       size: l.zxk.Sizes.MEDIUM,
       color: l.zxk.Colors.PRIMARY,
-      buttonText: x.NW.string(x.t.aBHecH),
-      disabled: E
+      buttonText: b.NW.string(b.t.aBHecH),
+      disabled: C
     }) : (0, r.jsx)(l.zxk, {
       color: l.zxk.Colors.PRIMARY,
       onClick: () => {
         (0, d.f)({
-          guildId: N.id,
+          guildId: _.id,
           location: {
-            section: h.jXE.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA
+            section: x.jXE.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA
           }
         })
       },
       size: l.zxk.Sizes.MEDIUM,
-      disabled: E,
-      children: x.NW.string(x.t.KLOhbG)
+      disabled: C,
+      children: b.NW.string(b.t.KLOhbG)
     })]
   })
 }

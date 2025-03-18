@@ -340,7 +340,7 @@ let en = 880,
     }), [l, n.skuId, g, p, f, h, m]), C = i.useMemo(() => null != d ? d : K.xJ === n.skuId ? Q.NW.string(q.Z.UnPGio) : g ? Q.NW.format(new Date < K.a$ ? Q.t["1jBC0t"] : Q.t.qSrp39, {
       purchased_item: h,
       suggested_item: m
-    }) : (0, c.EQ)(null == n ? void 0 : n.type).with(u.Z.BUNDLE, () => Q.NW.string(Q.t.zJPoLy)).with(u.Z.PROFILE_EFFECT, () => Q.NW.string(Q.t.f9M1YG)).otherwise(() => f && null != b ? b : Q.NW.string(Q.t["44b50t"])), [d, n.skuId, null == n ? void 0 : n.type, g, h, m, f, b]), R = i.useMemo(() => K.xJ === n.skuId ? (0, r.jsxs)("div", {
+    }) : (0, c.EQ)(null == n ? void 0 : n.type).with(u.Z.BUNDLE, () => Q.NW.string(Q.t.zJPoLy)).with(u.Z.PROFILE_EFFECT, () => Q.NW.string(Q.t.f9M1YG)).with(u.Z.NAMEPLATE, () => Q.NW.string(Q.t.lvwvIi)).otherwise(() => f && null != b ? b : Q.NW.string(Q.t["44b50t"])), [d, n.skuId, null == n ? void 0 : n.type, g, h, m, f, b]), R = i.useMemo(() => K.xJ === n.skuId ? (0, r.jsxs)("div", {
       className: X.buttonRows,
       children: [(0, r.jsx)(ec, {
         text: Q.NW.string(q.Z.yfwZu7),

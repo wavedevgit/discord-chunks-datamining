@@ -288,7 +288,7 @@ function x(e) {
 
 function M(e) {
   let {
-    fractionalState: t
+    isBoostManagementDisabledForFractionalPremium: t
   } = e, n = u.ZP.getPremiumTypeSubscription();
   c.Z.hasFetched || (0, s.X8)();
   let r = x(c.Z.boostSlots),
@@ -299,18 +299,18 @@ function M(e) {
     }),
     d = (0, o.EQ)({
       isPausedOrPausePending: i,
-      fractionalState: t,
+      isBoostManagementDisabledForFractionalPremium: t,
       canApplyBoosts: a
     }).with({
       isPausedOrPausePending: !0,
-      fractionalState: g.a$.FP_SUB_PAUSED,
+      isBoostManagementDisabledForFractionalPremium: !0,
       canApplyBoosts: !1
     }, () => l).with({
       isPausedOrPausePending: void 0,
-      fractionalState: g.a$.FP_ONLY
+      isBoostManagementDisabledForFractionalPremium: !0
     }, () => l).with({
       isPausedOrPausePending: !1,
-      fractionalState: g.a$.FP_ONLY
+      isBoostManagementDisabledForFractionalPremium: !0
     }, () => l).with({
       isPausedOrPausePending: !0,
       fractionalState: g.a$.NONE

@@ -23,7 +23,7 @@ function c(e, t, n) {
 function u() {
   return [{
     name: l.NW.string(l.t.Sp2NFx),
-    extensions: ["jpg", "jpeg", "png", "gif"]
+    extensions: ["jpg", "jpeg", "png", "gif", "webp"]
   }]
 }
 

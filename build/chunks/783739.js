@@ -10,7 +10,7 @@ var r = n(200651),
   o = n(724884),
   c = n(290799),
   d = n(362948),
-  u = n(695349),
+  u = n(124570),
   m = n(899667),
   g = n(165630),
   p = n(771845),
@@ -34,26 +34,25 @@ function T(e) {
     fractionalState: L
   } = (0, a.Z)({
     forceFetch: !0
-  }), B = (0, u.W)(), M = (null == t ? void 0 : t.isPausedOrPausePending) === !0 && L === v.a$.NONE, U = (null == t ? void 0 : t.isPausedOrPausePending) !== !0 && L === v.a$.NONE, V = y && L === v.a$.FP_SUB_PAUSED;
+  }), B = (null == t ? void 0 : t.isPausedOrPausePending) === !0 && L === v.a$.NONE, M = (null == t ? void 0 : t.isPausedOrPausePending) !== !0 && L === v.a$.NONE, U = y && L === v.a$.FP_SUB_PAUSED;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.oQ, {
       className: S.blockedPaymentsWarning
     }), (0, r.jsx)(_.Z, {
       hasGuildBoostSlots: D,
       hasAppliedGuildBoosts: w,
-      hasBoostPerk: V,
-      canAddBoosts: U
-    }), L === v.a$.NONE && (0, r.jsx)(C.Z, {
+      hasBoostPerk: U,
+      canAddBoosts: M
+    }), !(0, u.y)("guild_boosting_settings", I, L) && (0, r.jsx)(C.Z, {
       hasAppliedGuildBoosts: w,
-      hasBoostPerk: V,
+      hasBoostPerk: U,
       hasGuildAffinitiesOrInGuild: R,
-      subscriptionIsPausedOrPausePending: M
+      subscriptionIsPausedOrPausePending: B
     }), (0, r.jsx)(b.Z, {
       hide: k,
       containerClassName: S.FPContainer,
-      pillClassName: S.FPPill,
-      isInReverseTrial: B
-    }), !R && (0, r.jsx)(E.Z, {}), (null == t ? void 0 : t.isPaused) && L === v.a$.NONE ? (0, r.jsx)(N.r, {
+      pillClassName: S.FPPill
+    }), !R && (0, r.jsx)(E.Z, {}), (null == t ? void 0 : t.isPaused) && L !== v.a$.FP_SUB_PAUSED ? (0, r.jsx)(N.r, {
       appliedGuildBoosts: W,
       premiumSubscription: t
     }) : (0, r.jsx)(N.Z, {
@@ -63,7 +62,7 @@ function T(e) {
       guildBoostSlots: T,
       fractionalPremiumState: L
     }), (0, r.jsx)(j.Z, {
-      canAddBoosts: w && U,
+      canAddBoosts: w && M,
       canApplyBoosts: k
     }), (0, r.jsx)(d.Z, {
       className: S.tierComparisonTable,

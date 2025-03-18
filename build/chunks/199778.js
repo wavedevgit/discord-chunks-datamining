@@ -1,24 +1,26 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => O
 });
 var r = n(200651);
 n(192379);
 var i = n(120356),
   o = n.n(i),
-  a = n(481060),
-  s = n(927359),
-  l = n(975298),
-  c = n(125529),
-  u = n(501862),
-  d = n(63063),
-  f = n(981631),
-  _ = n(474936),
-  p = n(388032),
-  h = n(532594);
+  a = n(442837),
+  s = n(481060),
+  l = n(927359),
+  c = n(975298),
+  u = n(125529),
+  d = n(124570),
+  f = n(501862),
+  _ = n(594174),
+  p = n(63063),
+  h = n(981631),
+  m = n(388032),
+  g = n(532594);
 
-function m(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,20 +29,20 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      E(e, t, n[t])
     })
   }
   return e
 }
 
-function E(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,40 +53,39 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
+function y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function v(e) {
+function O(e) {
   let {
     hide: t,
     pillClassName: n,
-    containerClassName: i,
-    isInReverseTrial: m
+    containerClassName: i
   } = e, {
     fractionalState: E,
     endsAt: v
-  } = (0, l.Z)(), y = (0, s.Z)(v, s.a.LONG_TIME_LEFT);
-  if (!0 === t || E === _.a$.NONE) return null;
-  let O = m ? void 0 : p.NW.format(p.t["4RgA6O"], {
-    helpCenterLink: d.Z.getArticleURL(f.BhN.FRACTIONAL_PREMIUM_ABOUT)
+  } = (0, c.Z)(), O = (0, a.e7)([_.default], () => _.default.getCurrentUser()), I = (0, l.Z)(v, l.a.LONG_TIME_LEFT);
+  if (!0 === t || !(0, d.y)("guild_boosting_fractional_premium_pill", O, E)) return null;
+  let S = m.NW.format(m.t["4RgA6O"], {
+    helpCenterLink: p.Z.getArticleURL(h.BhN.FRACTIONAL_PREMIUM_ABOUT)
   });
-  return (0, r.jsx)(c.Z, {
-    text: O,
-    "aria-label": null == O ? void 0 : O.toString(),
-    tooltipClassName: h.tooltip,
-    className: o()(h.unavailableCounterContainer, i),
-    children: e => (0, r.jsxs)("div", b(g({}, e), {
-      className: o()(h.unavailableCounterPill, n),
-      children: [(0, r.jsx)(a.Text, {
+  return (0, r.jsx)(u.Z, {
+    text: S,
+    "aria-label": null == S ? void 0 : S.toString(),
+    tooltipClassName: g.tooltip,
+    className: o()(g.unavailableCounterContainer, i),
+    children: e => (0, r.jsxs)("div", y(b({}, e), {
+      className: o()(g.unavailableCounterPill, n),
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-sm/bold",
-        className: h.unavailableCounterPillText,
-        children: p.NW.string(p.t["5nrJDA"]).toUpperCase()
-      }), !m && (0, r.jsx)(u.Z, {
-        countdownText: y,
-        className: h.countDownText
+        className: g.unavailableCounterPillText,
+        children: m.NW.string(m.t["5nrJDA"]).toUpperCase()
+      }), (0, r.jsx)(f.Z, {
+        countdownText: I,
+        className: g.countDownText
       })]
     }))
   })

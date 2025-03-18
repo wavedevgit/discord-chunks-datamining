@@ -11,9 +11,9 @@ var r = n(200651),
   l = n(622535),
   c = n(481060),
   u = n(906732),
-  d = n(565138),
-  f = n(963249),
-  _ = n(695349),
+  d = n(975298),
+  f = n(565138),
+  _ = n(963249),
   p = n(199778),
   h = n(594174),
   m = n(314884),
@@ -32,13 +32,17 @@ let T = function(e) {
     onCtaVisibilityChange: o
   } = e, T = (0, s.e7)([h.default], () => h.default.getCurrentUser()), N = (0, s.e7)([m.Z], () => m.Z.boostSlots), {
     analyticsLocations: A
-  } = (0, u.ZP)(), C = (0, _.W)(), R = i.useMemo(() => Object.keys(N).filter(e => {
+  } = (0, u.ZP)(), {
+    fractionalState: C
+  } = (0, d.Z)({
+    forceFetch: !1
+  }), R = i.useMemo(() => Object.keys(N).filter(e => {
     let t = N[e];
     return null != t.premiumGuildSubscription && t.premiumGuildSubscription.guildId === n.id
   }), [N, n.id]), P = i.useMemo(() => (0, E.vx)(N).length > 0, [N]);
 
   function w() {
-    (0, f.Z)({
+    (0, _.Z)({
       initialPlanId: null,
       subscriptionTier: O.Si.TIER_2,
       analyticsLocations: A,
@@ -53,7 +57,7 @@ let T = function(e) {
   }
 
   function D() {
-    (0, f.Z)({
+    (0, _.Z)({
       initialPlanId: null,
       subscriptionTier: O.Si.TIER_2,
       isGift: !0,
@@ -69,10 +73,10 @@ let T = function(e) {
   }
   return (0, r.jsxs)("div", {
     className: S.guildStatus,
-    children: [(0, r.jsx)(d.Z, {
+    children: [(0, r.jsx)(f.Z, {
       className: S.guildIcon,
       guild: n,
-      size: d.Z.Sizes.LARGER
+      size: f.Z.Sizes.LARGER
     }), (0, r.jsx)(c.X6q, {
       className: S.guildName,
       color: "always-white",
@@ -102,8 +106,7 @@ let T = function(e) {
       }) : null]
     }), (0, r.jsx)(p.Z, {
       hide: P,
-      containerClassName: S.FPContainer,
-      isInReverseTrial: C
+      containerClassName: S.FPContainer
     }), (0, r.jsxs)("div", {
       className: S.guildBoostCtas,
       children: [(0, r.jsx)(l.$, {
@@ -128,7 +131,7 @@ let T = function(e) {
             fullWidth: !0
           })
         })
-      }), b.ZP.hasFreeBoosts(T) || b.ZP.isPremium(T, O.p9.TIER_2) ? (0, r.jsxs)(c.zxk, {
+      }), b.ZP.hasFreeBoosts(T, C) || b.ZP.isPremium(T, O.p9.TIER_2) ? (0, r.jsxs)(c.zxk, {
         className: a()(S.guildBoostCta, S.guildBoostCtaSecondary),
         innerClassName: a()(S.__invalid_guildBoostCtaContent, S.guildBoostCtaGiftContent),
         look: c.zxk.Looks.OUTLINED,

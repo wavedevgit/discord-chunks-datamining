@@ -1,6 +1,6 @@
 /**
   Module ID: 44070
-  Original File Name: bb1150daf414806e
+  Original File Name: 9d9f4fc5fe03ae6f
 **/
 @value minColumnWidth: 460px;
 
@@ -2546,6 +2546,23 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     mask-image: linear-gradient(0deg,transparent 0,#000 40%)
 }
 
+.visual-refresh .shopCard_c3d04b {
+    border: 1px solid var(--border-subtle)
+}
+
+.visual-refresh .shopCardDark_c3d04b,.visual-refresh .shopCardLight_c3d04b {
+    background-color: var(--background-surface-high)
+}
+
+.visual-refresh .darkCardBackground_c3d04b,.visual-refresh .lightCardBackground_c3d04b {
+    border-top: 1px solid var(--border-faint);
+    background-color: var(--background-mod-subtle)
+}
+
+.visual-refresh .shopCardDarkHighlighted_c3d04b,.visual-refresh .shopCardHighlighted_c3d04b {
+    box-shadow: var(--shadow-high)
+}
+
 .left_caab99 {
     transform: rotate(270deg)
 }
@@ -3930,4 +3947,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-right: auto
 }
 
-/*# sourceMappingURL=bb1150daf414806e.css.map*/
+/*# sourceMappingURL=9d9f4fc5fe03ae6f.css.map*/

@@ -1,21 +1,24 @@
 /** Chunk was on 1815 **/
 n.d(t, {
-  Z: () => x
+  Z: () => _
 });
 var r = n(200651),
   i = n(192379),
-  s = n(481060),
-  a = n(906732),
-  l = n(975298),
-  o = n(125529),
-  c = n(879892),
-  d = n(709586),
-  u = n(267642),
-  m = n(981631),
-  g = n(388032),
-  p = n(194072);
+  s = n(399606),
+  a = n(481060),
+  l = n(906732),
+  o = n(975298),
+  c = n(125529),
+  d = n(879892),
+  u = n(124570),
+  m = n(594174),
+  g = n(709586),
+  p = n(267642),
+  h = n(981631),
+  f = n(388032),
+  x = n(194072);
 
-function h(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +37,7 @@ function h(e) {
   return e
 }
 
-function f(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,69 +49,71 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = function() {
+let _ = function() {
   let e = i.useRef(null),
     {
       analyticsLocations: t
-    } = (0, a.ZP)(),
+    } = (0, l.ZP)(),
+    _ = (0, s.e7)([m.default], () => m.default.getCurrentUser()),
     {
-      fractionalState: x
-    } = (0, l.Z)();
+      fractionalState: E
+    } = (0, o.Z)(),
+    j = (0, u.y)("guild_boosting_boost_cta", _, E);
 
-  function b(n) {
-    null != e.current && (0, s.Mr3)(e.current), (0, c.u)({
+  function C(n) {
+    null != e.current && (0, a.Mr3)(e.current), (0, d.u)({
       analyticsLocation: {
-        page: m.ZY5.GUILD_BOOSTING_USER_SETTINGS,
-        section: m.jXE.GUILD_BOOSTING_BOOST_ANY_GUILD_CTA,
-        object: m.qAy.BUTTON_CTA,
-        objectType: m.Qqv.BUY
+        page: h.ZY5.GUILD_BOOSTING_USER_SETTINGS,
+        section: h.jXE.GUILD_BOOSTING_BOOST_ANY_GUILD_CTA,
+        object: h.qAy.BUTTON_CTA,
+        objectType: h.Qqv.BUY
       },
       analyticsLocations: t,
       guild: n
     })
   }
-  async function N() {
-    e.current = await (0, s.ZDy)(async () => {
+  async function O() {
+    e.current = await (0, a.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 719228));
-      return t => (0, r.jsx)(e, f(h({}, t), {
-        onSelectGuild: b
+      return t => (0, r.jsx)(e, N(b({}, t), {
+        onSelectGuild: C
       }))
     }, {
       onCloseRequest: () => {
-        null != e.current && (0, s.Mr3)(e.current)
+        null != e.current && (0, a.Mr3)(e.current)
       }
     })
   }
-  let _ = (0, u.aq)({
-    fractionalState: x
+  let v = (0, p.aq)({
+    isBoostManagementDisabledForFractionalPremium: j
   });
   return (0, r.jsxs)("div", {
-    className: p.wrapper,
-    children: [(0, r.jsx)(d.Z, {
-      className: p.boostIcon,
+    className: x.wrapper,
+    children: [(0, r.jsx)(g.Z, {
+      className: x.boostIcon,
       width: 16,
       height: 16
-    }), (0, r.jsx)(s.Text, {
-      className: p.copy,
+    }), (0, r.jsx)(a.Text, {
+      className: x.copy,
       color: "header-secondary",
       variant: "text-sm/medium",
-      children: g.NW.format(g.t.kqC5vr, {
+      children: f.NW.format(f.t.kqC5vr, {
         boostAnyGuildHook: (e, t) => {
-          let n = null != _,
-            i = (0, r.jsx)(s.zxk, {
-              className: p.cta,
+          let n = null != v,
+            i = (0, r.jsx)(a.zxk, {
+              className: x.cta,
               disabled: n,
-              color: s.zxk.Colors.LINK,
-              look: s.zxk.Looks.LINK,
-              onClick: n ? void 0 : N,
+              color: a.zxk.Colors.LINK,
+              look: a.zxk.Looks.LINK,
+              onClick: n ? void 0 : O,
               children: e
             }, t);
-          return n ? (0, r.jsx)(o.Z, {
-            text: _,
-            "aria-label": _.toString(),
-            children: e => (0, r.jsx)("span", f(h({}, e), {
+          return n ? (0, r.jsx)(c.Z, {
+            text: v,
+            "aria-label": v.toString(),
+            children: e => (0, r.jsx)("span", N(b({}, e), {
               children: i
             }))
           }, t) : i
