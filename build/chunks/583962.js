@@ -1,4 +1,4 @@
-/** Chunk was on 53494 **/
+/** Chunk was on 92196 **/
 n.d(t, {
   PD: () => A,
   ZP: () => L,
@@ -6,8 +6,8 @@ n.d(t, {
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  o = n(120356),
+  l = n.n(o),
   a = n(642128),
   s = n(91192),
   c = n(442837),
@@ -50,7 +50,7 @@ function Z(e) {
   return e
 }
 
-function E(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,15 +62,15 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = (0, O.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
+let E = (0, O.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
   T = e => {
     let {
       guild: t,
       onSelect: n
-    } = e, [l, o] = i.useState(t.premiumProgressBarEnabled), [a, s] = i.useState(!1), u = (0, c.e7)([v.Z], () => v.Z.can(P.Plq.MANAGE_GUILD, t)), h = async () => {
+    } = e, [o, l] = i.useState(t.premiumProgressBarEnabled), [a, s] = i.useState(!1), u = (0, c.e7)([v.Z], () => v.Z.can(P.Plq.MANAGE_GUILD, t)), h = async () => {
       u && (s(!0), await b.Z.saveGuild(t.id, {
-        premiumProgressBarEnabled: !l
-      }), o(!l), s(!1))
+        premiumProgressBarEnabled: !o
+      }), l(!o), s(!1))
     };
     return (0, r.jsx)(d.v2r, {
       navId: "progress-bar-context",
@@ -80,14 +80,14 @@ let w = (0, O.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
       children: (0, r.jsx)(d.S89, {
         id: "progress-bar-enabled",
         label: I.NW.string(I.t["0CJWPz"]),
-        checked: l,
+        checked: o,
         disabled: a,
         action: h
       })
     })
   },
   A = 57,
-  D = 57 + w,
+  D = 57 + E,
   R = {
     tension: 180,
     friction: 80
@@ -96,12 +96,12 @@ let w = (0, O.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
     let {
       guild: t,
       withMargin: n
-    } = e, l = (0, m.Q3)("GuildBoostingSidebarDisplay"), {
+    } = e, o = (0, m.Q3)("GuildBoostingSidebarDisplay"), {
       analyticsLocations: u
     } = (0, g.ZP)(h.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY), {
       premiumSubscriberCount: b,
       id: O
-    } = t, w = (0, _.rF)(b, O), A = (0, _.FZ)(w, t.id), D = null == A, L = null != A ? A : w, k = (0, c.e7)([C.Z], () => {
+    } = t, E = (0, _.rF)(b, O), A = (0, _.FZ)(E, t.id), D = null == A, L = null != A ? A : E, k = (0, c.e7)([C.Z], () => {
       var e;
       return null !== (e = C.Z.getCountForGuild(O)) && void 0 !== e ? e : 0
     }), M = (0, c.e7)([v.Z], () => v.Z.can(P.Plq.MANAGE_GUILD, t));
@@ -150,7 +150,7 @@ let w = (0, O.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
       });
     D && (H = (0, _.e9)(L), z = I.NW.format(I.t.B2byER, {
       numBoosts: b
-    })), l && (H = H.toLocaleLowerCase());
+    })), o && (H = H.toLocaleLowerCase());
     let Y = (0, s.JA)("boosts-".concat(t.id));
     return (0, r.jsx)("li", {
       children: (0, r.jsx)(d.ua7, {
@@ -161,7 +161,7 @@ let w = (0, O.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
         position: "top",
         delay: 200,
         hideOnClick: !0,
-        children: e => (0, r.jsxs)(d.P3F, E(Z({}, Y, e), {
+        children: e => (0, r.jsxs)(d.P3F, w(Z({}, Y, e), {
           "aria-label": void 0,
           role: "button",
           focusProps: {
@@ -175,11 +175,11 @@ let w = (0, O.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
             var t;
             null === (t = e.onMouseEnter) || void 0 === t || t.call(e), V(U)
           },
-          className: o()(N.container, {
+          className: l()(N.container, {
             [N.containerWithMargin]: n
           }),
           onContextMenu: e => {
-            M && (0, p.vq)(e, e => (0, r.jsx)(T, E(Z({}, e), {
+            M && (0, p.vq)(e, e => (0, r.jsx)(T, w(Z({}, e), {
               guild: t
             })))
           },
@@ -191,16 +191,16 @@ let w = (0, O.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
               className: N.goalTextContainer,
               children: (0, r.jsx)(d.Text, {
                 className: N.goalText,
-                color: l ? "none" : "interactive-active",
-                variant: l ? "text-sm/medium" : "text-xs/bold",
+                color: o ? "none" : "interactive-active",
+                variant: o ? "text-sm/medium" : "text-xs/bold",
                 lineClamp: 1,
                 children: H
               })
             }), (0, r.jsxs)("div", {
               className: N.progressFraction,
               children: [(0, r.jsx)(d.Text, {
-                color: l ? "none" : "interactive-normal",
-                variant: l ? "text-sm/medium" : "text-xs/normal",
+                color: o ? "none" : "interactive-normal",
+                variant: o ? "text-sm/medium" : "text-xs/normal",
                 className: N.progressText,
                 lineClamp: 1,
                 children: z
@@ -212,7 +212,7 @@ let w = (0, O.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
               })]
             })]
           }), (0, r.jsxs)("div", {
-            className: o()(N.progressBarContainer, {
+            className: l()(N.progressBarContainer, {
               [N.progressBarContainerComplete]: D
             }),
             children: [(0, r.jsx)(a.animated.div, {

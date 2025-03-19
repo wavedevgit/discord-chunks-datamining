@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => j,
   _: () => g._
@@ -18,8 +18,8 @@ var r = n(200651),
   h = n(19780),
   f = n(626135),
   x = n(981631),
-  b = n(388032),
-  N = n(753825);
+  N = n(388032),
+  b = n(753825);
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -88,7 +88,7 @@ class E extends i.PureComponent {
       isDetectingInput: i
     } = this.state;
     return (0, r.jsx)(d.R94, {
-      className: N.micTestCaption,
+      className: b.micTestCaption,
       type: d.R94.Types.DESCRIPTION,
       children: n ? i ? e : t : null
     })
@@ -109,23 +109,23 @@ class E extends i.PureComponent {
     } = this.props, {
       isMicTesting: p,
       volume: h
-    } = this.state, f = e && !p ? b.NW.string(b.t["9viE2N"]) : null;
+    } = this.state, f = e && !p ? N.NW.string(N.t["9viE2N"]) : null;
     p && e && !c && this._micTestStop();
     let x = a.length >= s.length ? a : s;
     return (0, r.jsxs)("div", {
-      className: N.container,
+      className: b.container,
       children: [(0, r.jsx)(d.vwX, {
         tag: d.RB0.H5,
-        className: N.title,
+        className: b.title,
         children: t
       }), null != n && (0, r.jsx)(d.R94, {
         type: d.R94.Types.DESCRIPTION,
-        className: N.description,
+        className: b.description,
         children: n
       }), (0, r.jsxs)("div", {
-        className: N.micTest,
+        className: b.micTest,
         children: [(0, r.jsxs)("div", {
-          className: N.buttonSizer,
+          className: b.buttonSizer,
           "aria-hidden": !0,
           children: [(0, r.jsx)(d.zxk, {
             buttonRef: m,
@@ -135,7 +135,7 @@ class E extends i.PureComponent {
             color: o,
             children: x
           }), (0, r.jsx)("div", {
-            className: N.buttonSizerSpacer
+            className: b.buttonSizerSpacer
           })]
         }), (0, r.jsx)(d.ua7, {
           text: f,
@@ -241,7 +241,7 @@ function j(e) {
     }
   }), f = (0, l.e7)([h.Z], () => h.Z.isConnected()), {
     ref: x,
-    width: b
+    width: N
   } = (0, m.Z)();
   return (0, r.jsx)(E, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -265,6 +265,6 @@ function j(e) {
     inputDeviceName: null !== (t = null == i ? void 0 : i.name) && void 0 !== t ? t : "",
     outputDeviceName: null !== (n = null == s ? void 0 : s.name) && void 0 !== n ? n : "",
     measureButtonRef: x,
-    buttonMinWidth: b
+    buttonMinWidth: N
   }, e))
 }

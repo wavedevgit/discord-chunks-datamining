@@ -1,4 +1,4 @@
-/** Chunk was on 95682 **/
+/** Chunk was on 23354 **/
 n.d(t, {
   F: () => d
 }), n(757143), n(301563);
@@ -19,21 +19,21 @@ let u = e => e.length > 5 ? e.replace(/\.00$/, "") : e,
         currency: i
       },
       renderPrice: d,
-      icon: h,
-      className: b,
-      discount: p = s.f_,
+      icon: _,
+      className: p,
+      discount: E = s.f_,
       variant: f = "heading-md/semibold"
-    } = e, g = u((0, a.T4)(n, i)), v = p !== s.f_ && p.discountPercentage >= 5 ? (0, r.jsxs)(r.Fragment, {
-      children: [g, (0, r.jsx)(l.X6q, {
+    } = e, h = u((0, a.T4)(n, i)), m = E !== s.f_ && E.discountPercentage >= 5 ? (0, r.jsxs)(r.Fragment, {
+      children: [h, (0, r.jsx)(l.X6q, {
         variant: f,
         color: "text-positive",
         className: c.discount,
-        children: " (-".concat(p.discountPercentage, "%)")
+        children: " (-".concat(E.discountPercentage, "%)")
       })]
-    }) : g;
+    }) : h;
     return (0, r.jsxs)(l.X6q, {
       variant: f,
-      className: o()(c.container, b),
-      children: [h, null !== (t = null == d ? void 0 : d(v)) && void 0 !== t ? t : v]
+      className: o()(c.container, p),
+      children: [_, null !== (t = null == d ? void 0 : d(m)) && void 0 !== t ? t : m]
     })
   }

@@ -14,8 +14,8 @@ var r = n(200651),
   p = n(573261),
   h = n(720196),
   g = n(981631),
-  m = n(388032),
-  _ = n(762056),
+  _ = n(388032),
+  m = n(762056),
   f = n(802138);
 
 function b(e) {
@@ -24,7 +24,7 @@ function b(e) {
     setSlide: o,
     ready: b,
     token: x
-  } = e, [N, v] = i.useState(!1), [E, I] = i.useState(null), [j, C] = i.useState(null), [S, O] = i.useState(""), y = i.useRef(null);
+  } = e, [N, v] = i.useState(!1), [E, I] = i.useState(null), [j, S] = i.useState(null), [C, O] = i.useState(""), y = i.useRef(null);
   return i.useEffect(() => {
     if (b) {
       var e;
@@ -35,7 +35,7 @@ function b(e) {
       src: null == j ? n(26230) : n(935227),
       className: a()(f.marginBottom20, f.marginTop8)
     }), (0, r.jsx)(u.Dx, {
-      children: m.NW.string(m.t["IfBQ5+"])
+      children: _.NW.string(_.t["IfBQ5+"])
     }), null != j && "" !== j ? (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       color: "text-danger",
@@ -45,28 +45,28 @@ function b(e) {
       children: [(0, r.jsx)(u.II, {
         name: "password",
         type: "password",
-        label: m.NW.string(m.t["8dM4FB"]),
+        label: _.NW.string(_.t["8dM4FB"]),
         setRef: y,
         className: f.marginBottom20,
-        value: S,
+        value: C,
         onChange: O,
         error: E,
         autoComplete: "new-password",
         maxLength: 72,
-        placeholder: m.NW.string(m.t["yY/PXV"])
+        placeholder: _.NW.string(_.t["yY/PXV"])
       }), (0, r.jsx)(u.zx, {
         className: f.marginTop8,
         onClick: () => {
           if (!N) {
-            if (0 === S.length) {
-              I(m.NW.string(m.t.R98xDw)), d.S.dispatch(g.CkL.WAVE_EMPHASIZE);
+            if (0 === C.length) {
+              I(_.NW.string(_.t.R98xDw)), d.S.dispatch(g.CkL.WAVE_EMPHASIZE);
               return
             }
-            return null != j && C(null), null != E && I(null), t(""), v(!0), p.Z.post({
+            return null != j && S(null), null != E && I(null), t(""), v(!0), p.Z.post({
               url: g.ANM.ACCOUNT_REVERT,
               body: {
                 token: x,
-                password: S
+                password: C
               },
               trackedActionData: {
                 event: s.NetworkActionNames.ACCOUNT_REVERT
@@ -80,21 +80,21 @@ function b(e) {
               } = e;
               O(""), t(n), o(h.n.SUCCESS)
             }).catch(e => {
-              if (e instanceof Error) C(m.NW.formatToPlainString(m.t.aTVNen, {
+              if (e instanceof Error) S(_.NW.formatToPlainString(_.t.aTVNen, {
                 statusPageURL: g.yXt.STATUS
               }));
               else {
                 let t = new c.Z(e);
-                t.hasFieldErrors() ? I(t.getAnyErrorMessage()) : C((function(e) {
+                t.hasFieldErrors() ? I(t.getAnyErrorMessage()) : S((function(e) {
                   switch (e) {
                     case g.evJ.ACCOUNT_REVERT_INVALID_TOKEN:
-                      return m.NW.string(m.t["11zzGR"]);
+                      return _.NW.string(_.t["11zzGR"]);
                     case g.evJ.ACCOUNT_REVERT_EMAIL_ALREADY_TAKEN:
-                      return m.NW.string(m.t["6qmgaG"]);
+                      return _.NW.string(_.t["6qmgaG"]);
                     case g.evJ.ACCOUNT_REVERT_ACCOUNT_NOT_FOUND:
-                      return m.NW.string(m.t.bChnKi);
+                      return _.NW.string(_.t.bChnKi);
                     default:
-                      return m.NW.format(m.t.aTVNen, {
+                      return _.NW.format(_.t.aTVNen, {
                         statusPageURL: g.yXt.STATUS
                       })
                   }
@@ -108,16 +108,16 @@ function b(e) {
         },
         submitting: N,
         disabled: N,
-        children: m.NW.string(m.t.ezv91d)
+        children: _.NW.string(_.t.ezv91d)
       })]
     }), (0, r.jsx)("div", {
-      className: _.buttonContainer,
+      className: m.buttonContainer,
       children: (0, r.jsx)(u.zx, {
         color: u.zx.Colors.PRIMARY,
         onClick: () => {
           O(""), o(h.n.START)
         },
-        children: m.NW.string(m.t.rzxnQ0)
+        children: _.NW.string(_.t.rzxnQ0)
       })
     })]
   })

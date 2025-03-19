@@ -1,61 +1,61 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => m
+  Z: () => _
 }), t(47120), t(266796);
-var r = t(200651),
-  i = t(192379),
-  o = t(120356),
-  s = t.n(o),
+var i = t(200651),
+  r = t(192379),
+  s = t(120356),
+  o = t.n(s),
   a = t(793030),
   l = t(690786),
   c = t(838968),
   d = t(969867),
   u = t(279604),
-  p = t(367123),
-  _ = t(388032),
-  x = t(709435);
+  x = t(367123),
+  m = t(388032),
+  v = t(709435);
 
-function m(e) {
+function _(e) {
   let {
     guildId: n,
     powerup: t
-  } = e, o = null != (0, l.Z)(n, t), [m, b] = i.useState(void 0);
-  return (0, u.KT)(m), (0, r.jsxs)(c.Z, {
+  } = e, s = null != (0, l.Z)(n, t), [_, p] = r.useState(void 0);
+  return (0, u.KT)(_), (0, i.jsxs)(c.Z, {
     guildId: n,
     powerup: t,
-    children: [(0, r.jsx)("div", {
-      className: x.imageContainer,
-      children: (0, r.jsx)("img", {
+    children: [(0, i.jsx)("div", {
+      className: v.imageContainer,
+      children: (0, i.jsx)("img", {
         alt: ""
       })
-    }), (0, r.jsxs)("div", {
-      className: x.contentContainer,
-      children: [(0, r.jsxs)("div", {
-        className: x.headerContainer,
-        children: [(0, r.jsx)(a.X6, {
+    }), (0, i.jsxs)("div", {
+      className: v.contentContainer,
+      children: [(0, i.jsxs)("div", {
+        className: v.headerContainer,
+        children: [(0, i.jsx)(a.X6, {
           variant: "heading-md/bold",
           children: t.title
-        }), t.bundle && (0, r.jsx)(a.xv, {
-          className: s()(x.bundle, {
-            [x.active]: o
+        }), t.bundle && (0, i.jsx)(a.xv, {
+          className: o()(v.bundle, {
+            [v.active]: s
           }),
           variant: "text-xs/semibold",
-          children: _.NW.string(p.Z.j2jUjY)
+          children: m.NW.string(x.Z.j2jUjY)
         })]
-      }), (0, r.jsx)(a.xv, {
-        className: x.description,
+      }), (0, i.jsx)(a.xv, {
+        className: v.description,
         variant: "text-sm/medium",
         children: t.description
-      }), (0, r.jsx)(c.Y, {
+      }), (0, i.jsx)(c.Y, {
         guildId: n,
         powerup: t
       })]
-    }), (0, r.jsx)("div", {
-      className: x.buttonContainer,
-      children: (0, r.jsx)(d.Z, {
+    }), (0, i.jsx)("div", {
+      className: v.buttonContainer,
+      children: (0, i.jsx)(d.Z, {
         guildId: n,
         powerup: t,
-        onError: b
+        onError: p
       })
     })]
   })

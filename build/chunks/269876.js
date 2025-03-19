@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => j
 }), n(47120);
@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(65154),
   f = n(388032),
   x = n(896753),
-  b = n(473845),
-  N = n(612064),
+  N = n(473845),
+  b = n(612064),
   _ = n(802138);
 let E = (0, g.hQ)();
 
@@ -68,7 +68,7 @@ function j() {
       },
       "aria-labelledby": E,
       children: (0, r.jsxs)("div", {
-        className: a()(x.sliderBar, x.microphone, x.inputSensitivityBar, b.bar),
+        className: a()(x.sliderBar, x.microphone, x.inputSensitivityBar, N.bar),
         children: [(0, r.jsx)("div", {
           className: a()(x.fill, x.inputSensitivityBarFill),
           style: {
@@ -100,7 +100,7 @@ function j() {
     className: x.sensitivity,
     children: [v && (0, r.jsx)(g.FG, {
       children: e => (0, r.jsxs)("div", {
-        className: a()(N.horizontal, _.marginBottom4),
+        className: a()(b.horizontal, _.marginBottom4),
         children: [(0, r.jsx)(u.vwX, {
           tag: u.RB0.H3,
           className: _.marginReset,

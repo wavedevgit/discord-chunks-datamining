@@ -13,25 +13,25 @@ var r = n(200651),
   s = n(13245),
   d = n(110924),
   f = n(100527),
-  b = n(906732),
-  p = n(146282),
+  p = n(906732),
+  b = n(146282),
   m = n(70097),
   g = n(594190),
   y = n(567409),
   h = n(74299),
   v = n(989941),
-  O = n(199902),
-  I = n(314897),
+  I = n(199902),
+  O = n(314897),
   C = n(592125),
-  P = n(430824),
-  x = n(131951),
+  x = n(430824),
+  P = n(131951),
   w = n(944486),
   E = n(449224),
-  L = n(574254),
-  k = n(556296),
+  k = n(574254),
+  L = n(556296),
   N = n(237997),
-  j = n(451478),
-  T = n(585483),
+  T = n(451478),
+  j = n(585483),
   Z = n(358085),
   S = n(13140),
   D = n(145597),
@@ -42,9 +42,9 @@ var r = n(200651),
   U = n(708383),
   R = n(923532),
   z = n(915614),
-  M = n(777382),
-  V = n(333031),
-  F = n(610394),
+  F = n(777382),
+  M = n(333031),
+  V = n(610394),
   H = n(388627),
   Y = n(561064),
   K = n(987650),
@@ -111,7 +111,7 @@ let eo = o.memo(function(e) {
         o === X.AeJ.PRIMARY && t === r && n()
       },
       onContextMenu: er,
-      children: o ? null : (0, r.jsx)(V.Z, {
+      children: o ? null : (0, r.jsx)(M.Z, {
         className: Q.closeContainer,
         children: (0, r.jsx)(z.Z, {
           keybind: t,
@@ -126,7 +126,7 @@ let eo = o.memo(function(e) {
       locked: t,
       focused: n
     } = e;
-    return t && n ? (0, r.jsx)(V.Z, {
+    return t && n ? (0, r.jsx)(M.Z, {
       className: Q.closeContainer,
       children: (0, r.jsx)(z.Z, {
         onClick: () => s.Z.setInputLocked(!1, (0, D.getPID)()),
@@ -136,7 +136,7 @@ let eo = o.memo(function(e) {
   });
 
 function ei() {
-  if (null != L.Z.getContextMenu()) {
+  if (null != k.Z.getContextMenu()) {
     (0, u.Zy)();
     return
   }
@@ -152,10 +152,10 @@ function el() {
 }
 
 function e_(e) {
-  let t = F.ZP.isInputLocked((0, D.getPID)());
-  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? T.S.dispatch(X.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  let t = V.ZP.isInputLocked((0, D.getPID)());
+  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? j.S.dispatch(X.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: !1
-  }) : "keydown" === e.type.toLowerCase() && T.S.dispatch(X.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  }) : "keydown" === e.type.toLowerCase() && j.S.dispatch(X.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: !0
   }))
 }
@@ -168,15 +168,15 @@ function eu() {
       incompatibleApp: a,
       hasValidResolution: u,
       hasZeroSizeDimension: m,
-      keybind: L,
-      isPreviewingInGame: T
-    } = (0, c.cj)([F.ZP, N.default, j.Z, k.ZP], () => {
-      let t = j.Z.windowSize((0, A.ZY)(e)),
-        n = k.ZP.getOverlayKeybind(),
+      keybind: k,
+      isPreviewingInGame: j
+    } = (0, c.cj)([V.ZP, N.default, T.Z, L.ZP], () => {
+      let t = T.Z.windowSize((0, A.ZY)(e)),
+        n = L.ZP.getOverlayKeybind(),
         r = (0, D.getPID)();
       return {
-        locked: F.ZP.isInputLocked(r),
-        focused: r === D.DEV_PID ? N.default.isFocused(r) : F.ZP.isFocused(r),
+        locked: V.ZP.isInputLocked(r),
+        focused: r === D.DEV_PID ? N.default.isFocused(r) : V.ZP.isFocused(r),
         incompatibleApp: N.default.incompatibleApp,
         hasValidResolution: (0, D.validResolution)(t),
         isPreviewingInGame: N.default.isPreviewingInGame(),
@@ -187,8 +187,8 @@ function eu() {
     Z = (0, c.e7)([N.default], () => N.default.getActiveRegions()),
     {
       analyticsLocations: z
-    } = (0, b.ZP)(f.Z.OVERLAY),
-    V = t || T;
+    } = (0, p.ZP)(f.Z.OVERLAY),
+    M = t || j;
   ! function(e, t) {
     let n = o.useRef({
       mount: e,
@@ -212,10 +212,10 @@ function eu() {
       t = (0, H.pL)(),
       n = w.Z.getVoiceChannelId(),
       r = C.Z.getChannel(n),
-      a = null != r ? P.Z.getGuild(r.guild_id) : null,
-      i = null != O.Z.getCurrentUserActiveStream(),
+      a = null != r ? x.Z.getGuild(r.guild_id) : null,
+      i = null != I.Z.getCurrentUserActiveStream(),
       c = null != n,
-      l = (0, h.Z)(x.Z) && !i && null != t,
+      l = (0, h.Z)(P.Z) && !i && null != t,
       _ = c && null != a && null != n,
       {
         showKeybindIndicators: u,
@@ -256,27 +256,27 @@ function eu() {
   }, [t, e]);
   let er = (0, c.e7)([w.Z], () => w.Z.getVoiceChannelId()),
     eu = (0, c.e7)([C.Z], () => C.Z.getChannel(er)),
-    es = (0, c.e7)([P.Z], () => null != eu ? P.Z.getGuild(eu.guild_id) : null),
-    ed = (0, c.e7)([I.default], () => I.default.getId()),
+    es = (0, c.e7)([x.Z], () => null != eu ? x.Z.getGuild(eu.guild_id) : null),
+    ed = (0, c.e7)([O.default], () => O.default.getId()),
     ef = (0, c.e7)([g.ZP, E.Z], () => (0, v.Z)(g.ZP, E.Z)),
-    eb = (0, y.Ns)(null == ef ? void 0 : ef.id),
-    ep = (0, c.e7)([p.Z], () => null != p.Z.getLastFeedFetchDate(J.YN.GAME_PROFILE_FEED)),
-    em = (0, d.Z)(ep);
+    ep = (0, y.Ns)(null == ef ? void 0 : ef.id),
+    eb = (0, c.e7)([b.Z], () => null != b.Z.getLastFeedFetchDate(J.YN.GAME_PROFILE_FEED)),
+    em = (0, d.Z)(eb);
   return (o.useEffect(() => {
-    !em && ep && s.Z.notifyContentInventoryReady(eb)
-  }, [eb, ep, em]), m || a) ? null : (0, r.jsx)(b.Gt, {
+    !em && eb && s.Z.notifyContentInventoryReady(ep)
+  }, [ep, eb, em]), m || a) ? null : (0, r.jsx)(p.Gt, {
     value: z,
     children: (0, r.jsx)(_.vWI, {
       children: (0, r.jsxs)("div", {
         className: Q.overlay,
-        children: [(0, r.jsx)(U.Z, {}), T && (0, r.jsx)("header", {
+        children: [(0, r.jsx)(U.Z, {}), j && (0, r.jsx)("header", {
           className: Q.previewingInGameHeader,
           children: q.NW.string(q.t.iOq96u)
         }), ee, (!t || Z.has(X.O0n.TEXT_WIDGET)) && (0, r.jsx)(eo, {
           locked: t,
-          keybind: L,
+          keybind: k,
           onClick: ei
-        }), u ? (0, r.jsx)(M.Z, {
+        }), u ? (0, r.jsx)(F.Z, {
           className: i()({
             [Q.layoutLocked]: t,
             [Q.layoutUnlocked]: !t
@@ -295,8 +295,8 @@ function eu() {
           guildId: es.id,
           channelId: er
         }), (0, r.jsx)(G.Z, {
-          locked: V,
-          keybind: L
+          locked: M,
+          keybind: k
         }), (0, r.jsx)(B.Z, {})]
       })
     })

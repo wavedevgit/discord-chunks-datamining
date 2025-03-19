@@ -17,16 +17,16 @@ let d = "/users/@me/debug/consumables/",
 
 function m() {
   let e;
-  let [t, n] = (0, a.useState)([]), [m, h] = (0, a.useState)(null), [x, p] = (0, a.useState)(!1);
+  let [t, n] = (0, a.useState)([]), [m, x] = (0, a.useState)(null), [h, p] = (0, a.useState)(!1);
   return (0, a.useEffect)(() => ((async () => {
     try {
       let e = (await l.tn.get(d)).body.entitlements.map(e => s.Z.createFromServer(e));
       n(e)
     } catch (e) {
-      h("Failed to fetch entitlements")
+      x("Failed to fetch entitlements")
     }
   })(), () => {
-    n([]), h(null)
+    n([]), x(null)
   }), []), (0, r.jsx)("div", {
     className: c.panel,
     children: null != m ? (0, r.jsx)(i.Text, {
@@ -50,7 +50,7 @@ function m() {
               a = new s.Z(r.body.entitlement);
             n([...t, a])
           } catch (e) {
-            h("Failed to create entitlement")
+            x("Failed to create entitlement")
           } finally {
             p(!1)
           }
@@ -59,7 +59,7 @@ function m() {
         look: i.iLD.OUTLINED,
         color: i.Ttl.PRIMARY,
         children: "Create Confetti Entitlement"
-      }), x && (0, r.jsx)(i.$jN, {})]
+      }), h && (0, r.jsx)(i.$jN, {})]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: c.title,

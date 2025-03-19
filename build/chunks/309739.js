@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => B
 }), n(47120), n(566702);
@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(726542),
   f = n(116841),
   x = n(295377),
-  b = n(921801),
-  N = n(553795),
+  N = n(921801),
+  b = n(553795),
   _ = n(430824),
   E = n(63063),
   j = n(358085),
@@ -100,7 +100,7 @@ function D() {
       value: d.E5.OFF,
       label: y.NW.string(y.t.MIgNPD)
     }];
-  return (0, r.jsx)(b.F, {
+  return (0, r.jsx)(N.F, {
     setting: T.s6.ACTIVITY_PRIVACY_STATUS,
     children: (0, r.jsxs)(m.hjN, {
       children: [(0, r.jsx)(m.vwX, {
@@ -144,7 +144,7 @@ function D() {
 function Z() {
   let e = S.cP.useSetting(),
     t = S.Ou.useSetting();
-  return (0, r.jsx)(b.F, {
+  return (0, r.jsx)(N.F, {
     setting: T.s6.ACTIVITY_PRIVACY_RICH_PRESENCE,
     children: (0, r.jsxs)(m.hjN, {
       className: P.marginBottom40,
@@ -168,7 +168,7 @@ function Z() {
 }
 
 function w() {
-  return (0, r.jsx)(b.F, {
+  return (0, r.jsx)(N.F, {
     setting: T.s6.ACTIVITY_PRIVACY_TOS,
     children: (0, r.jsx)(m.hjN, {
       className: P.marginBottom40,
@@ -239,14 +239,14 @@ function W(e) {
 }
 
 function L() {
-  let e = (0, c.e7)([N.Z], () => N.Z.getAccounts()),
+  let e = (0, c.e7)([b.Z], () => b.Z.getAccounts()),
     t = i.useMemo(() => e.filter(e => h.Z.isSupported(e.type) && I.vbS.has(e.type)), [e]),
     [n, s] = i.useState(""),
     a = i.useMemo(() => {
       let e = n.trim().toLowerCase();
       return "" === e ? t : t.filter(t => o()(e, h.Z.get(t.type).name.toLowerCase()))
     }, [t, n]);
-  return 0 === t.length ? null : (0, r.jsx)(b.F, {
+  return 0 === t.length ? null : (0, r.jsx)(N.F, {
     setting: T.s6.ACTIVITY_PRIVACY_STATUS_DISPLAY,
     children: (0, r.jsxs)(m.hjN, {
       className: P.marginBottom40,

@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => x
 }), n(266796);
@@ -24,8 +24,8 @@ function x(e) {
     className: s
   } = e, {
     applicationId: x,
-    benefits: b,
-    description: N
+    benefits: N,
+    description: b
   } = n, _ = i.useMemo(() => null == n.thumbnail ? null : (0, p.q)(x, n.thumbnail, 256), [x, n.thumbnail]), {
     data: E
   } = (0, d.X)(n.skuId), j = i.useMemo(() => {
@@ -54,15 +54,15 @@ function x(e) {
         })]
       }), t]
     }),
-    children: [!(0, g.Ew)(N) && (0, r.jsx)("div", {
+    children: [!(0, g.Ew)(b) && (0, r.jsx)("div", {
       className: f.description,
       children: (0, r.jsx)(h.Z, {
         variant: "text-sm/medium",
-        children: N
+        children: b
       })
-    }), null != b && b.length > 0 && (0, r.jsx)("div", {
+    }), null != N && N.length > 0 && (0, r.jsx)("div", {
       className: f.benefits,
-      children: b.map(e => {
+      children: N.map(e => {
         let {
           id: t,
           name: n,

@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => C
 }), n(47120), n(653041);
@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(546957),
   f = n(838436),
   x = n(51331),
-  b = n(726985),
-  N = n(981631),
+  N = n(726985),
+  b = n(981631),
   _ = n(388032),
   E = n(167198);
 
@@ -30,7 +30,7 @@ function j() {
         let {
           type: t
         } = e;
-        return t === N.OGo.FRIEND
+        return t === b.OGo.FRIEND
       }).map(e => {
         let {
           applicationId: t
@@ -77,7 +77,7 @@ function j() {
       return e
     }, [p]),
     x = i.useCallback(() => {
-      o.Z.open(N.oAB.AUTHORIZED_APPS)
+      o.Z.open(b.oAB.AUTHORIZED_APPS)
     }, []);
   return (0, r.jsxs)("div", {
     className: E.header,
@@ -122,7 +122,7 @@ function C() {
   let e = p._j.useSetting();
   return (0, r.jsxs)(h.Z, {
     children: [(0, r.jsx)(j, {}), (0, r.jsx)(f.U, {
-      setting: b.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
+      setting: N.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
       children: (0, r.jsx)(x.Z, {
         title: _.NW.string(_.t["/U8Iwc"]),
         note: _.NW.string(_.t.WO2Hlp),

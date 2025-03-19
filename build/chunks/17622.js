@@ -1,33 +1,33 @@
 /** Chunk was on 99014 **/
-t.d(o, {
+n.d(t, {
   Z: () => u
-}), t(266796);
-var n = t(200651);
-t(192379);
-var r = t(120356),
-  a = t.n(r),
-  c = t(793030),
-  s = t(119331),
-  i = t(336227),
-  l = t(30748);
+}), n(266796);
+var o = n(200651);
+n(192379);
+var r = n(120356),
+  s = n.n(r),
+  a = n(793030),
+  c = n(119331),
+  i = n(336227),
+  l = n(30748);
 
 function u(e) {
   let {
-    powerup: o
-  } = e, t = (0, i.Z)(o);
-  return (0, n.jsx)("div", {
+    powerup: t
+  } = e, n = (0, i.Z)(t);
+  return (0, o.jsx)("div", {
     className: l.levelContainer,
-    children: t.map(e => {
+    children: n.map(e => {
       let {
-        Icon: o,
-        className: t
-      } = (0, s.t)(e.perkIcon, !1);
-      return (0, n.jsxs)("div", {
+        Icon: t,
+        className: n
+      } = (0, c.t)(e.perkIcon, !1);
+      return (0, o.jsxs)("div", {
         className: l.perkContainer,
-        children: [(0, n.jsx)(o, {
+        children: [(0, o.jsx)(t, {
           color: "currentColor",
-          className: a()(l.perkIcon, t)
-        }), (0, n.jsx)(c.xv, {
+          className: s()(l.perkIcon, n)
+        }), (0, o.jsx)(a.xv, {
           className: l.perkText,
           color: "text-muted",
           variant: "text-sm/medium",

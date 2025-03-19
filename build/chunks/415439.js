@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   BV: () => j,
   FW: () => C,
@@ -20,16 +20,16 @@ var r = n(442837),
   h = n(592125),
   f = n(626135),
   x = n(823379),
-  b = n(728345),
-  N = n(812206),
+  N = n(728345),
+  b = n(812206),
   _ = n(981631);
 async function E(e, t, n) {
   t(e.id);
   let r = e.bot;
   if (null == r) try {
     var s;
-    if (r = null === (s = N.Z.getApplication(e.id)) || void 0 === s ? void 0 : s.bot, null == r) {
-      let t = await (0, b.UM)(e.id);
+    if (r = null === (s = b.Z.getApplication(e.id)) || void 0 === s ? void 0 : s.bot, null == r) {
+      let t = await (0, N.UM)(e.id);
       e = t, r = p.ZP.createFromServer(t).bot
     }
   } catch (e) {

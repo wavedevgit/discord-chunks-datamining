@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   ZP: () => k,
   __: () => w,
@@ -18,8 +18,8 @@ var r, i = n(230711),
   h = n(985443),
   f = n(612253),
   x = n(832287),
-  b = n(872532),
-  N = n(91342),
+  N = n(872532),
+  b = n(91342),
   _ = n(181708),
   E = n(821721),
   j = n(158897),
@@ -43,7 +43,7 @@ let w = () => {
         title: m.NW.string(m.t.zY5PPT),
         description: m.NW.string(m.t.R5Xag4),
         previewImage: g,
-        videoUrl: e ? N.ZP : _.ZP,
+        videoUrl: e ? b.ZP : _.ZP,
         isCompact: !0
       },
       noLimits: {
@@ -67,14 +67,14 @@ let w = () => {
         openWithoutBackstack: !0,
         analyticsLocations: t
       })
-    }, g = (0, o.rO)(), p = c.Z.getArticleURL(d.BhN.REFERRAL_PROGRAM), N = {
+    }, g = (0, o.rO)(), p = c.Z.getArticleURL(d.BhN.REFERRAL_PROGRAM), b = {
       serverProfiles: {
         name: "serverProfiles",
         title: m.NW.string(m.t.I9TYMj),
         description: m.NW.string(m.t.HMSHeH),
         descriptionCta: m.NW.string(m.t.jVcuVV),
         onClick: n,
-        previewImage: b,
+        previewImage: N,
         videoUrl: g ? I.ZP : y.ZP
       },
       referralProgram: {
@@ -115,5 +115,5 @@ let w = () => {
         videoUrl: g ? R.Z : D.Z
       }
     };
-    return e ? _ : N
+    return e ? _ : b
   }

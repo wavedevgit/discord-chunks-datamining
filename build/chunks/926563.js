@@ -4,10 +4,10 @@ n.d(t, {
 });
 var r = n(200651);
 n(192379);
-var a = n(481060),
-  l = n(680295),
-  i = n(687158),
-  o = n(899007),
+var i = n(481060),
+  a = n(680295),
+  o = n(687158),
+  l = n(899007),
   s = n(648052),
   u = n(867176),
   c = n(502762),
@@ -22,10 +22,10 @@ function b(e) {
     user: t,
     previewText: n,
     previewEmoji: b,
-    previewStatus: S,
-    placeHolderText: j,
-    transitionState: g
-  } = e, v = (0, i.ZP)(t.id);
+    previewStatus: j,
+    placeHolderText: S,
+    transitionState: x
+  } = e, v = (0, o.ZP)(t.id);
   return (0, r.jsxs)(c.Z, {
     user: t,
     displayProfile: v,
@@ -38,11 +38,11 @@ function b(e) {
         profileType: h.y0.BITE_SIZE
       }), (0, r.jsx)("div", {
         inert: "",
-        children: (0, r.jsx)(o.Z, {
+        children: (0, r.jsx)(l.Z, {
           user: t,
           displayProfile: v,
           profileType: h.y0.BITE_SIZE,
-          previewStatus: S,
+          previewStatus: j,
           className: f.avatar
         })
       }), (0, r.jsx)(m.Z, {
@@ -51,10 +51,10 @@ function b(e) {
         profileType: h.y0.BITE_SIZE,
         previewText: n,
         previewEmoji: b,
-        placeholderText: j,
-        hasEntered: g === a.Dvm.ENTERED
+        placeholderText: S,
+        hasEntered: x === i.Dvm.ENTERED
       })]
-    }), (null == v ? void 0 : v.profileEffectId) != null && (0, r.jsx)(l.Z, {
+    }), (null == v ? void 0 : v.profileEffectId) != null && (0, r.jsx)(a.Z, {
       profileEffectId: v.profileEffectId
     }), (0, r.jsx)("div", {
       className: f.usernameContainer,

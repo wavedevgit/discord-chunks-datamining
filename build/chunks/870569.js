@@ -1,11 +1,11 @@
-/** Chunk was on 45847 **/
+/** Chunk was on 79512 **/
 n.d(t, {
   Z: () => c
 });
-var r = n(200651);
+var l = n(200651);
 n(192379);
-var l = n(120356),
-  i = n.n(l),
+var r = n(120356),
+  i = n.n(r),
   o = n(481060),
   a = n(686546),
   s = n(796171);
@@ -14,7 +14,7 @@ function c(e) {
   let {
     tooltipText: t,
     children: n,
-    onContextMenu: l,
+    onContextMenu: r,
     onClick: c,
     disabled: u,
     icon: d,
@@ -26,24 +26,24 @@ function c(e) {
     onMouseEnter: _,
     onMouseLeave: O,
     "aria-label": g,
-    "aria-checked": T,
-    role: I,
-    tooltipColor: S,
+    "aria-checked": S,
+    role: T,
+    tooltipColor: I,
     tooltipForceOpen: N,
     tooltipContentClassName: b,
     plated: v
-  } = e, A = "function" == typeof d ? (0, r.jsx)(d, {
+  } = e, m = "function" == typeof d ? (0, l.jsx)(d, {
     width: 20,
     height: 20,
     size: "custom",
     colorClass: null != E ? E : "",
     color: "currentColor"
   }) : d;
-  return (0, r.jsx)(o.ua7, {
+  return (0, l.jsx)(o.ua7, {
     tooltipClassName: C,
     text: t,
     "aria-label": g,
-    color: S,
+    color: I,
     tooltipContentClassName: b,
     forceOpen: N,
     children: e => {
@@ -52,39 +52,39 @@ function c(e) {
           onMouseEnter: C,
           onMouseLeave: g
         } = e,
-        S = function(e, t) {
+        I = function(e, t) {
           if (null == e) return {};
-          var n, r, l = function(e, t) {
+          var n, l, r = function(e, t) {
             if (null == e) return {};
-            var n, r, l = {},
+            var n, l, r = {},
               i = Object.keys(e);
-            for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-            return l
+            for (l = 0; l < i.length; l++) n = i[l], t.indexOf(n) >= 0 || (r[n] = e[n]);
+            return r
           }(e, t);
           if (Object.getOwnPropertySymbols) {
             var i = Object.getOwnPropertySymbols(e);
-            for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+            for (l = 0; l < i.length; l++) n = i[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
           }
-          return l
+          return r
         }(e, ["onClick", "onMouseEnter", "onMouseLeave"]);
-      return (0, r.jsxs)(o.zxk, (t = function(e) {
+      return (0, l.jsxs)(o.zxk, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            l = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+          }))), l.forEach(function(t) {
+            var l;
+            l = n[t], t in e ? Object.defineProperty(e, t, {
+              value: l,
               enumerable: !0,
               configurable: !0,
               writable: !0
-            }) : e[t] = r
+            }) : e[t] = l
           })
         }
         return e
-      }({}, S), d = d = {
+      }({}, I), d = d = {
         look: o.zxk.Looks.BLANK,
         size: o.zxk.Sizes.NONE,
         disabled: u,
@@ -106,9 +106,9 @@ function c(e) {
         onMouseLeave: () => {
           null == g || g(), null == O || O()
         },
-        onContextMenu: l,
-        role: I,
-        "aria-checked": T,
+        onContextMenu: r,
+        role: T,
+        "aria-checked": S,
         focusProps: {
           offset: {
             left: -1,
@@ -117,17 +117,17 @@ function c(e) {
             bottom: 1
           }
         },
-        children: [null != n ? (0, r.jsx)(a.ZP, {
+        children: [null != n ? (0, l.jsx)(a.ZP, {
           width: 20,
           height: 20,
           mask: a.ZP.Masks.PANEL_BUTTON,
-          children: A
-        }) : A, n]
+          children: m
+        }) : m, n]
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(d)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
+          var l = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, l)
         }
         return n
       })(Object(d)).forEach(function(e) {

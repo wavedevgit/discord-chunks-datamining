@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => _
+  Z: () => m
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -14,12 +14,12 @@ var r = n(200651),
   p = n(580497),
   h = n(981631),
   g = n(388032),
-  m = n(887605);
+  _ = n(887605);
 
-function _(e) {
+function m(e) {
   let {
     location: t
-  } = e, [_, f] = i.useState(!1), {
+  } = e, [m, f] = i.useState(!1), {
     verifySuccess: b,
     verifyErrors: x,
     redirectGuildId: N
@@ -31,24 +31,24 @@ function _(e) {
   let v = () => {
     (0, p.Z)(N), f(!0)
   };
-  return _ ? (0, r.jsxs)(l.ZP, {
+  return m ? (0, r.jsxs)(l.ZP, {
     children: [(0, r.jsx)(l.Dx, {
-      className: m.title,
+      className: _.title,
       children: g.NW.string(g.t.csrAMD)
     }), (0, r.jsx)(l.DK, {
-      className: m.subtitle,
+      className: _.subtitle,
       children: g.NW.string(g.t["m1+IBg"])
     }), (0, r.jsx)(l.zx, {
-      className: m.spacedButton,
+      className: _.spacedButton,
       onClick: () => (0, c.uL)(h.Z5c.CHANNEL(N)),
       children: g.NW.string(g.t.fIv16O)
     })]
   }) : b ? (0, r.jsxs)(l.ZP, {
     children: [(0, r.jsx)(l.Ee, {
-      className: m.image,
+      className: _.image,
       src: n(73962)
     }), (0, r.jsx)(l.Dx, {
-      className: m.title,
+      className: _.title,
       children: g.NW.string(g.t.dAfGb2)
     }), (0, r.jsx)(l.zx, {
       onClick: v,
@@ -56,13 +56,13 @@ function _(e) {
     })]
   }) : null != x ? (0, r.jsxs)(l.ZP, {
     children: [(0, r.jsx)(l.Ee, {
-      className: m.image,
+      className: _.image,
       src: n(375673)
     }), (0, r.jsx)(l.Dx, {
-      className: m.title,
+      className: _.title,
       children: g.NW.string(g.t.PCgG39)
     }), (0, r.jsx)(l.DK, {
-      className: m.subtitle,
+      className: _.subtitle,
       children: g.NW.string(g.t.tQpeAw)
     }), (0, r.jsx)(l.zx, {
       onClick: v,
@@ -70,13 +70,13 @@ function _(e) {
     })]
   }) : (0, r.jsxs)(l.ZP, {
     children: [(0, r.jsx)(l.Ee, {
-      className: m.image,
+      className: _.image,
       src: n(892235)
     }), (0, r.jsx)(l.Dx, {
-      className: m.title,
+      className: _.title,
       children: g.NW.string(g.t["0c8+5u"])
     }), (0, r.jsx)(l.DK, {
-      className: m.subtitle,
+      className: _.subtitle,
       children: g.NW.string(g.t.ULTCBA)
     }), (0, r.jsx)(l.zx, {
       submitting: !0,

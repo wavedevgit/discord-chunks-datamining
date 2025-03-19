@@ -14,8 +14,8 @@ var r = n(200651),
   p = n(232567),
   h = n(388905),
   g = n(362762),
-  m = n(108427),
-  _ = n(314897),
+  _ = n(108427),
+  m = n(314897),
   f = n(896797),
   b = n(82142),
   x = n(283595),
@@ -24,8 +24,8 @@ var r = n(200651),
   E = n(63063),
   I = n(51144),
   j = n(481153),
-  C = n(781428),
-  S = n(423527),
+  S = n(781428),
+  C = n(423527),
   O = n(981631),
   y = n(388032),
   T = n(802138);
@@ -45,7 +45,7 @@ class A extends i.PureComponent {
       authenticated: e,
       isResolved: t
     } = this.props;
-    e && this.handleAuthenticated(), t || this.resolveGiftCode(), (0, m.e)("gift_code")
+    e && this.handleAuthenticated(), t || this.resolveGiftCode(), (0, _.e)("gift_code")
   }
   componentDidUpdate(e) {
     let {
@@ -212,12 +212,12 @@ class A extends i.PureComponent {
         let e = this.state.currentUser;
         return c || null == e ? this.renderSpinner(y.NW.string(y.t.bYb2nZ)) : this.requiresVerification && null != e ? this.renderVerification(e) : this.renderAuthenticated(i, e)
       }
-      return "login" === this.getMode() ? (0, r.jsx)(C.Z, {
+      return "login" === this.getMode() ? (0, r.jsx)(S.Z, {
         giftCodeSKU: t,
         giftCode: i,
         transitionTo: s,
         location: l
-      }) : (0, r.jsx)(S.Z, {
+      }) : (0, r.jsx)(C.Z, {
         giftCodeSKU: t,
         giftCode: i,
         transitionTo: s,
@@ -279,7 +279,7 @@ class A extends i.PureComponent {
     })
   }
 }
-let Z = s.ZP.connectStores([b.Z, x.Z, _.default, N.Z, f.Z, g.Z], e => {
+let Z = s.ZP.connectStores([b.Z, x.Z, m.default, N.Z, f.Z, g.Z], e => {
   let t = e.match.params.giftCode,
     n = b.Z.get(t),
     r = null != n ? N.Z.get(n.skuId) : null;
@@ -287,7 +287,7 @@ let Z = s.ZP.connectStores([b.Z, x.Z, _.default, N.Z, f.Z, g.Z], e => {
     giftCode: n,
     sku: r,
     libraryApplication: null != r && (null == n ? void 0 : n.entitlementBranches) != null ? v.z2(n.entitlementBranches, r, x.Z) : null,
-    authenticated: _.default.isAuthenticated(),
+    authenticated: m.default.isAuthenticated(),
     defaultRoute: f.Z.defaultRoute,
     isResolved: b.Z.getIsResolved(t),
     isAccepting: b.Z.getIsAccepting(t),

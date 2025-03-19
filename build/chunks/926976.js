@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(442837),
   u = n(481060),
   m = n(129861),
-  h = n(665149),
-  x = n(886118),
+  x = n(665149),
+  h = n(886118),
   p = n(301801),
   b = n(594174),
   f = n(55935),
@@ -24,11 +24,11 @@ var r = n(200651),
   y = n(681619),
   C = n(621060),
   T = n(388032),
-  O = n(871133),
-  S = n(710662);
+  S = n(871133),
+  O = n(710662);
 let N = [{
   key: "event",
-  cellClassName: O.eventColumn,
+  cellClassName: S.eventColumn,
   render(e) {
     let {
       event: t
@@ -37,7 +37,7 @@ let N = [{
   }
 }, {
   key: "location",
-  cellClassName: O.locationColumn,
+  cellClassName: S.locationColumn,
   render(e) {
     let {
       properties: t
@@ -51,7 +51,7 @@ function k(e) {
     children: t
   } = e;
   return (0, r.jsx)(u.zJl, {
-    className: O.customPropertiesContainer,
+    className: S.customPropertiesContainer,
     children: (0, r.jsx)("dl", {
       children: t
     })
@@ -70,15 +70,15 @@ function E(e) {
       return () => clearTimeout(e)
     }
   }, [i]), (0, r.jsxs)("div", {
-    className: O.customProperty,
+    className: S.customProperty,
     children: [(0, r.jsx)("dt", {
-      className: O.customPropertiesName,
+      className: S.customPropertiesName,
       children: t
     }), (0, r.jsx)("dd", {
       children: n
     }), (0, r.jsx)(u.P3F, {
       tag: "span",
-      className: O.copyPropertyButton,
+      className: S.copyPropertyButton,
       onClick: () => {
         (0, c.J)(JSON.stringify(l)), o(!0)
       },
@@ -104,25 +104,25 @@ let w = [{
           fingerprint: l
         },
         onClose: o
-      } = e, d = b.default.getUser(l), x = s()(a);
+      } = e, d = b.default.getUser(l), h = s()(a);
       return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsxs)(h.ZP, {
-          className: i()(S.headerBar, O.subPanelHeaderBar),
-          children: [(0, r.jsx)(h.ZP.Icon, {
+        children: [(0, r.jsxs)(x.ZP, {
+          className: i()(O.headerBar, S.subPanelHeaderBar),
+          children: [(0, r.jsx)(x.ZP.Icon, {
             icon: u.IeX,
             tooltip: t
-          }), (0, r.jsxs)(h.ZP.Title, {
-            wrapperClassName: O.headerTitle,
+          }), (0, r.jsxs)(x.ZP.Title, {
+            wrapperClassName: S.headerTitle,
             children: [t, (0, r.jsx)(u.P3F, {
               tag: "span",
-              className: O.copyEventButton,
+              className: S.copyEventButton,
               onClick: () => (0, c.J)(t),
               children: (0, r.jsx)(u.TIy, {
                 color: "currentColor",
                 size: "sm"
               })
             })]
-          }), (0, r.jsx)(h.ZP.Icon, {
+          }), (0, r.jsx)(x.ZP.Icon, {
             icon: u.TIy,
             tooltip: "Copy all properties",
             onClick: () => {
@@ -150,20 +150,20 @@ let w = [{
                 user: null == d ? void 0 : d.id
               }, n), (e, t) => void 0 === t ? null : t, 2))
             }
-          }), (0, r.jsx)(h.ZP.Icon, {
+          }), (0, r.jsx)(x.ZP.Icon, {
             icon: u.k$p,
             tooltip: "Close",
             onClick: o
           })]
         }), (0, r.jsxs)(v.E, {
-          className: O.commonProperties,
+          className: S.commonProperties,
           children: [(0, r.jsx)(v.Z9, {
             name: "Timestamp (local)",
             copyValue: a.toISOString(),
             children: (0, r.jsxs)("time", {
               dateTime: a.toISOString(),
-              title: (0, f.vc)(x, "LLLL"),
-              children: ["(", s().locale(), ") ", (0, f.Y4)(x)]
+              title: (0, f.vc)(h, "LLLL"),
+              children: ["(", s().locale(), ") ", (0, f.Y4)(h)]
             })
           }), null != d && (0, r.jsx)(v.Z9, {
             name: "User",
@@ -189,7 +189,7 @@ let w = [{
               children: null != n ? (0, r.jsx)("code", {
                 children: JSON.stringify(n)
               }) : (0, r.jsx)("code", {
-                className: O.emptyProperty,
+                className: S.emptyProperty,
                 children: "null"
               })
             }, t)
@@ -225,7 +225,7 @@ let w = [{
     }
   },
   I = {
-    searchType: x.S.REGEX,
+    searchType: h.S.REGEX,
     searchStringGenerator: e => {
       let {
         event: t,
@@ -242,17 +242,17 @@ function Z() {
     l = (0, d.e7)([_.Z], () => _.Z.loggedEventsVersion),
     [o, s] = a.useState(() => Object.keys(P)),
     [c, m] = a.useState(_.Z.loggedEvents),
-    h = a.useCallback(e => {
+    x = a.useCallback(e => {
       m(e)
     }, []);
-  (0, p.BO)(t, _.Z.loggedEvents, h, I, [l]);
-  let x = c.filter(e => {
+  (0, p.BO)(t, _.Z.loggedEvents, x, I, [l]);
+  let h = c.filter(e => {
       for (let t of o)
         if (P[t].filter(e)) return !0;
       return !1
     }),
     [b, f] = a.useState(void 0),
-    v = x.find(e => e.key === b),
+    v = h.find(e => e.key === b),
     {
       TabBar: k,
       renderSelectedTab: E
@@ -261,11 +261,11 @@ function Z() {
     }, []);
   return (0, r.jsxs)("div", {
     ref: e,
-    className: i()(S.panel, O.panel),
+    className: i()(O.panel, S.panel),
     children: [(0, r.jsxs)("div", {
-      className: O.toolbar,
+      className: S.toolbar,
       children: [(0, r.jsx)(u.zxk, {
-        className: O.toolbarButton,
+        className: S.toolbarButton,
         look: u.zxk.Looks.BLANK,
         size: u.zxk.Sizes.ICON,
         onClick: g.Zw,
@@ -278,13 +278,13 @@ function Z() {
           })
         })
       }), (0, r.jsx)("div", {
-        className: O.toolbarDivider
+        className: S.toolbarDivider
       }), (0, r.jsx)("div", {
-        className: O.filters,
+        className: S.filters,
         children: Object.entries(P).map(e => {
           let [t, n] = e;
           return (0, r.jsx)(u.P3F, {
-            className: i()(O.filter, o.includes(t) && O.activeFilter),
+            className: i()(S.filter, o.includes(t) && S.activeFilter),
             onClick: () => {
               s(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
             },
@@ -293,9 +293,9 @@ function Z() {
         })
       })]
     }), (0, r.jsx)("div", {
-      className: O.toolbar,
+      className: S.toolbar,
       children: (0, r.jsx)(u.E1j, {
-        className: O.searchBar,
+        className: S.searchBar,
         query: t,
         onChange: n,
         onClear: () => n(""),
@@ -303,11 +303,11 @@ function Z() {
       })
     }), (0, r.jsx)(y.Z, {
       columns: N,
-      data: x,
+      data: h,
       selectedRowKey: b,
       onClickRow: e => f(e.key)
     }), null != v && (0, r.jsxs)(j.Z, {
-      className: O.subPanel,
+      className: S.subPanel,
       minHeight: 100,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300,
       children: [(0, r.jsx)(k, {}), E({

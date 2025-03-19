@@ -16,8 +16,8 @@ var o = t(442837),
   p = t(748545),
   b = t(250822),
   m = t(771362),
-  g = t(280885),
-  v = t(819602),
+  v = t(280885),
+  g = t(819602),
   y = t(78806),
   I = t(900927),
   j = t(678738),
@@ -41,13 +41,13 @@ function N(e) {
   } = (0, f.KZ)(), C = null == N ? void 0 : N.guildId, A = (0, o.e7)([d.Z], () => null != C ? d.Z.getGuild(C) : null), w = (0, o.e7)([u.Z], () => u.Z.getGuildId()), L = (0, s.Y)({
     userId: n.id,
     location: "UserProfileModalInfo"
-  }), M = (0, o.e7)([a.default], () => a.default.locale), R = (0, m.Z)(n.id), U = (0, b.Z)(n.id), B = (0, p.k)({
+  }), R = (0, o.e7)([a.default], () => a.default.locale), M = (0, m.Z)(n.id), B = (0, b.Z)(n.id), U = (0, p.k)({
     location: "UserProfileModalInfo"
   }) ? O.NW.string(O.t["mQKv+v"]) : O.NW.string(O.t.PbMNh4);
   return (0, r.jsxs)(i.zJl, {
     fade: !0,
     className: Z.scroller,
-    children: [(null == N ? void 0 : N.bio) != null && (null == N ? void 0 : N.bio) !== "" && (0, r.jsx)(g.Z, {
+    children: [(null == N ? void 0 : N.bio) != null && (null == N ? void 0 : N.bio) !== "" && (0, r.jsx)(v.Z, {
       userBio: N.bio,
       setLineClamp: !1
     }), null != A && (0, r.jsx)(x.Z, {
@@ -70,22 +70,22 @@ function N(e) {
         guildId: null == N ? void 0 : N.guildId,
         tooltipDelay: _.vB
       })
-    }), R.length > 0 && (0, r.jsx)(j.Z, {
+    }), M.length > 0 && (0, r.jsx)(j.Z, {
       heading: O.NW.string(O.t["3fe7U1"]),
       scrollIntoView: P === _.Tb.CONNECTIONS,
-      children: (0, r.jsx)(v.OA, {
-        connectedAccounts: R,
+      children: (0, r.jsx)(g.OA, {
+        connectedAccounts: M,
         className: Z.connections,
         userId: n.id,
         theme: S,
-        locale: M
+        locale: R
       })
-    }), U.length > 0 && (0, r.jsx)(j.Z, {
+    }), B.length > 0 && (0, r.jsx)(j.Z, {
       heading: O.NW.string(O.t.PHjkRE),
-      children: U.map(e => (0, r.jsx)(v.tH, {
+      children: B.map(e => (0, r.jsx)(g.tH, {
         className: Z.appsConnections,
         applicationRoleConnection: e,
-        locale: M,
+        locale: R,
         onApplicationClicked: () => {
           T({
             action: "PRESS_APP_CONNECTION"
@@ -94,7 +94,7 @@ function N(e) {
         selectedGuildId: null != w ? w : void 0
       }, e.application.id))
     }), (0, r.jsx)(j.Z, {
-      heading: B,
+      heading: U,
       scrollIntoView: P === _.Tb.NOTE,
       children: (0, r.jsx)(l.Z, {
         userId: n.id,

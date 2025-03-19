@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: c805f8827a558fd7
+  Original File Name: 52085010f92301ad
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -4943,6 +4943,197 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-left: 48px
 }
 
+.bodyText__945b8 {
+    color: var(--text-normal);
+    font-size: 16px;
+    line-height: 20px
+}
+
+.planSelectText__945b8 {
+    margin-bottom: 16px
+}
+
+.planSelectRow__945b8 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 8px auto
+}
+
+.planSelectRowALaCarte__945b8 {
+    justify-content: flex-start
+}
+
+.planSelectorWrapper__945b8 {
+    align-items: center;
+    display: flex
+}
+
+.planSelectorHeader__945b8 {
+    font-weight: 600;
+    margin-bottom: 8px
+}
+
+.planSelectorRadioBarALaCarte__945b8 {
+    align-items: flex-start
+}
+
+.planSelectorRadioIconALaCarte__945b8 {
+    margin-top: 4px
+}
+
+.planSelectorPlanName__945b8 {
+    margin-right: 4px
+}
+
+.planSelectorLabel__945b8 {
+    color: var(--text-normal);
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 16px
+}
+
+.planSelectorPreviewPrice__945b8 {
+    color: var(--interactive-normal);
+    font-size: 16px;
+    line-height: 20px
+}
+
+.planSelectDivider__945b8 {
+    background-color: var(--background-modifier-accent);
+    height: 1px;
+    margin: 16px 0
+}
+
+.planSelectorSubtotal__945b8 {
+    color: var(--interactive-active);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px
+}
+
+.invoiceTableBottom__945b8,.paymentSourceWrapper__945b8 {
+    margin: 16px 0
+}
+
+.taxInclusiveNote__945b8 {
+    margin-top: 12px
+}
+
+.confirmationContainer__945b8 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 56px 32px 64px
+}
+
+.confirmationAnimation__945b8 {
+    width: 400px;
+    height: 140px;
+    margin-bottom: 32px
+}
+
+.confirmationText__945b8,.confirmationUpgradedBanner__945b8 {
+    margin-bottom: 16px
+}
+
+.confirmationText__945b8 {
+    color: var(--interactive-normal);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center
+}
+
+.confirmationText__945b8 p {
+    margin: 0
+}
+
+.confirmationText__945b8 p+p {
+    margin-top: 8px
+}
+
+.existingSlotNotice__945b8 {
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    color: var(--text-normal);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 16px;
+    padding: 8px;
+    margin-bottom: 16px
+}
+
+.existingSlotIcon__945b8 {
+    flex-shrink: 0;
+    margin-right: 8px;
+    height: 24px;
+    width: 24px
+}
+
+.existingSlotTooltipWarningIcon__945b8 {
+    height: 16px;
+    width: 14px;
+    vertical-align: text-bottom;
+    margin-left: 6px;
+    cursor: pointer
+}
+
+.loadingSpinner__945b8 {
+    flex: 1;
+    max-width: 100px
+}
+
+.reverseTrialContextInfoDivider__945b8 {
+    background-color: var(--background-modifier-accent);
+    height: 1px
+}
+
+.reverseTrialContextText__945b8 {
+    margin: 12px 0
+}
+
+.reverseTrialContextMarginBottom__945b8 {
+    margin-bottom: 8px
+}
+
+.header__7e090 {
+    background-image: url(/assets/cb4131669938b6ad.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 132px
+}
+
+.animation__7e090 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+
+.headerTitle__7e090 {
+    background-image: url(/assets/9f911879992ce2d1.svg);
+    height: 28px;
+    width: 60px
+}
+
+.header__7e090 .closeButton__7e090 {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: var(--white-500);
+    opacity: .8
+}
+
+.header__7e090 .closeButton__7e090:hover,.enable-forced-colors .header__7e090 .closeButton__7e090 {
+    opacity: 1
+}
+
 .container__6e9b4 {
     position: relative;
     pointer-events: all;
@@ -5748,4 +5939,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100px
 }
 
-/*# sourceMappingURL=c805f8827a558fd7.css.map*/
+/*# sourceMappingURL=52085010f92301ad.css.map*/

@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Sz: () => j,
   of: () => E
@@ -18,8 +18,8 @@ var r = n(200651),
   h = n(296848),
   f = n(798769),
   x = n(981631),
-  b = n(388032),
-  N = n(171277);
+  N = n(388032),
+  b = n(171277);
 async function _(e) {
   let {
     premiumSubscription: t,
@@ -52,8 +52,8 @@ function E(e) {
       value: t
     } = e;
     a(t)
-  }, [a]), g = d.status === x.O0b.PAUSED ? b.NW.string(b.t.Lp9WoK) : b.NW.string(b.t.eSR83d), _ = function(e) {
-    let t = e.status === x.O0b.PAUSED ? b.t.o3upfX : b.t.dBXZEh,
+  }, [a]), g = d.status === x.O0b.PAUSED ? N.NW.string(N.t.Lp9WoK) : N.NW.string(N.t.eSR83d), _ = function(e) {
+    let t = e.status === x.O0b.PAUSED ? N.t.o3upfX : N.t.dBXZEh,
       {
         durations: n,
         currentDaysPaused: r
@@ -62,18 +62,18 @@ function E(e) {
     for (let e of n) {
       let n = l.T[e];
       i.push({
-        name: b.NW.formatToPlainString(t, {
+        name: N.NW.formatToPlainString(t, {
           days: n - r
         }),
         value: n,
-        radioItemIconClassName: N.radioOption
+        radioItemIconClassName: b.radioOption
       })
     }
     return i.sort((e, t) => e.value - t.value), i.push({
-      name: b.NW.string(b.t.OCPUMz),
+      name: N.NW.string(N.t.OCPUMz),
       value: 0,
-      radioBarClassName: N.cancelText,
-      radioItemIconClassName: N.cancelText
+      radioBarClassName: b.cancelText,
+      radioItemIconClassName: b.cancelText
     }), i
   }(d);
   return (0, u.ZP)(() => {
@@ -85,19 +85,19 @@ function E(e) {
     }), (0, r.jsx)(c.xBx, {
       separator: !1,
       children: (0, r.jsxs)("div", {
-        className: N.__invalid_header,
+        className: b.__invalid_header,
         children: [(0, r.jsx)(c.X6q, {
           variant: "heading-xl/bold",
-          className: N.__invalid_modalHeader,
-          children: b.NW.string(b.t.f3nnBw)
+          className: b.__invalid_modalHeader,
+          children: N.NW.string(N.t.f3nnBw)
         }), (0, r.jsx)(c.X6q, {
           variant: "heading-sm/medium",
-          className: N.subtitle,
+          className: b.subtitle,
           children: g
         })]
       })
     }), (0, r.jsx)(c.hzk, {
-      className: N.body,
+      className: b.body,
       children: (0, r.jsx)(c.FXm, {
         options: _,
         onChange: m,
@@ -122,25 +122,25 @@ function j(e) {
   } = (0, g.ZP)(), [j, C] = i.useState(!1), O = (0, m.ZP)(), v = null, S = null, T = [x.O0b.PAST_DUE, x.O0b.PAUSED].includes(t.status) ? t.currentPeriodStart : t.currentPeriodEnd, I = a()(T).add(l, "days").toDate();
   switch (t.status) {
     case x.O0b.PAST_DUE:
-      S = b.NW.format(b.t["xaS18/"], {
+      S = N.NW.format(N.t["xaS18/"], {
         pauseDuration: l,
         resumeDate: I
       });
       break;
     case x.O0b.PAUSED:
-      S = b.NW.format(b.t.Vur3FR, {
+      S = N.NW.format(N.t.Vur3FR, {
         resumeDate: I
       });
       break;
     default:
-      S = b.NW.format(b.t.W85vFB, {
+      S = N.NW.format(N.t.W85vFB, {
         pauseDate: T,
         resumeDate: I,
         pauseDuration: l
       })
   }
   return v = (0, r.jsx)("div", {
-    className: N.body,
+    className: b.body,
     children: S
   }), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(f.Z, {
@@ -149,23 +149,23 @@ function j(e) {
     }), (0, r.jsx)(c.xBx, {
       separator: !1,
       children: (0, r.jsx)("div", {
-        className: N.__invalid_header,
+        className: b.__invalid_header,
         children: (0, r.jsx)(c.X6q, {
           variant: "heading-xl/bold",
-          className: N.__invalid_modalHeader,
-          children: b.NW.string(b.t["AnMG5+"])
+          className: b.__invalid_modalHeader,
+          children: N.NW.string(N.t["AnMG5+"])
         })
       })
     }), (0, r.jsxs)(c.hzk, {
-      className: N.body,
+      className: b.body,
       children: [u ? (0, r.jsx)(c.kzN, {
-        className: N.errorBlock,
-        children: b.NW.string(b.t["5mlOCQ"])
+        className: b.errorBlock,
+        children: N.NW.string(N.t["5mlOCQ"])
       }) : null, v]
     }), (0, r.jsx)(c.mzw, {
       justify: p.Z.Justify.START,
       children: (0, r.jsxs)("div", {
-        className: N.whatYouLoseButtonContainer,
+        className: b.whatYouLoseButtonContainer,
         children: [(0, r.jsx)(c.zxk, {
           color: c.zxk.Colors.RED,
           disabled: j || null == l,
@@ -180,12 +180,12 @@ function j(e) {
               analyticsLocation: d
             })
           },
-          children: b.NW.string(b.t["cY+Ooa"])
+          children: N.NW.string(N.t["cY+Ooa"])
         }), (0, r.jsx)(c.zxk, {
           look: c.zxk.Looks.LINK,
           color: (0, o.wj)(O) ? c.zxk.Colors.WHITE : c.zxk.Colors.PRIMARY,
           onClick: s,
-          children: b.NW.string(b.t.h9tkAA)
+          children: N.NW.string(N.t.h9tkAA)
         })]
       })
     })]

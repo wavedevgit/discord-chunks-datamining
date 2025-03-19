@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => j
 }), n(47120);
@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(798769),
   f = n(474936),
   x = n(981631),
-  b = n(388032),
-  N = n(413803),
+  N = n(388032),
+  b = n(413803),
   _ = n(982404),
   E = n(299156);
 let j = function(e) {
@@ -50,34 +50,34 @@ let j = function(e) {
       premiumType: n,
       onClose: s
     }), (0, r.jsx)(c.hzk, {
-      className: N.body,
+      className: b.body,
       children: (0, r.jsxs)("div", {
-        className: N.confirmDiscountContent,
+        className: b.confirmDiscountContent,
         children: [(0, r.jsx)(c.X6q, {
           variant: "heading-xl/bold",
-          children: b.NW.format(b.t.q9Vxu7, {
+          children: N.NW.format(N.t.q9Vxu7, {
             percent: C.discount.amount
           })
         }), (0, r.jsxs)("div", {
-          className: N.confirmDiscountDescription,
+          className: b.confirmDiscountDescription,
           children: [(0, r.jsx)("img", {
             alt: "",
             src: A,
-            className: N.confirmDiscountIcon
+            className: b.confirmDiscountIcon
           }), (0, r.jsx)(c.Text, {
             variant: "text-sm/medium",
-            children: b.NW.format(b.t.Eq1RHB, {
+            children: N.NW.format(N.t.Eq1RHB, {
               percent: C.discount.amount,
               numMonths: C.discount.user_usage_limit,
               price: D
             })
           })]
         }), (0, r.jsx)("div", {
-          className: N.confirmDiscountLegalese,
+          className: b.confirmDiscountLegalese,
           children: (0, r.jsx)(c.Text, {
             variant: "text-xs/semibold",
-            className: N.confirmDiscountLegaleseText,
-            children: b.NW.format(b.t.hrGTjI, {
+            className: b.confirmDiscountLegaleseText,
+            children: N.NW.format(N.t.hrGTjI, {
               discountedPrice: P,
               billingPeriod: (0, m.JP)(C.discount.user_usage_limit_interval),
               numMonths: C.discount.user_usage_limit,
@@ -86,26 +86,26 @@ let j = function(e) {
             })
           })
         }), O && (0, r.jsx)("div", {
-          className: N.redemptionFailedMessage,
+          className: b.redemptionFailedMessage,
           children: (0, r.jsx)(c.Text, {
             variant: "text-xs/semibold",
-            className: N.redemptionFailedMessageCopy,
-            children: b.NW.string(b.t.AD6odn)
+            className: b.redemptionFailedMessageCopy,
+            children: N.NW.string(N.t.AD6odn)
           })
         }), (0, r.jsxs)("div", {
-          className: a()(N.confirmDiscountButtons, {
-            [N.confrimDiscountsButtonsError]: O,
-            [N.confrimDiscountsButtonsNoError]: !O
+          className: a()(b.confirmDiscountButtons, {
+            [b.confrimDiscountsButtonsError]: O,
+            [b.confrimDiscountsButtonsNoError]: !O
           }),
           children: [(0, r.jsx)(c.zxk, {
             look: c.iLD.LINK,
             onClick: () => s(),
-            children: b.NW.string(b.t.zl7LZm)
+            children: N.NW.string(N.t.zl7LZm)
           }), (0, r.jsx)(c.zxk, {
             size: c.PhG.SMALL,
             submitting: S,
             onClick: () => I(C.id),
-            children: b.NW.string(b.t.CKSuZG)
+            children: N.NW.string(N.t.CKSuZG)
           })]
         })]
       })

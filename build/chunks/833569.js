@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   R: () => H,
   default: () => Q
@@ -17,8 +17,8 @@ var r, i = n(200651),
   h = n(410030),
   f = n(100527),
   x = n(906732),
-  b = n(211242),
-  N = n(600164),
+  N = n(211242),
+  b = n(600164),
   _ = n(509545),
   E = n(626135),
   j = n(122289),
@@ -96,7 +96,7 @@ function Y(e) {
     onClose: l,
     whatYouLoseExperienceEnabled: o,
     analyticsLocation: c
-  } = e, d = (0, b.Q)(), [u, p] = s.useState(!1), [f, _] = s.useState(!1), E = (0, h.ZP)(), {
+  } = e, d = (0, N.Q)(), [u, p] = s.useState(!1), [f, _] = s.useState(!1), E = (0, h.ZP)(), {
     analyticsLocations: j
   } = (0, x.ZP)(), v = null;
   switch (n.status) {
@@ -194,7 +194,7 @@ function Y(e) {
         children: v
       })]
     }), (0, i.jsxs)(g.mzw, {
-      justify: N.Z.Justify.START,
+      justify: b.Z.Justify.START,
       children: [S, T]
     })]
   })
@@ -271,8 +271,8 @@ function q(e) {
         premiumSubscription: t
       })]
     }), (0, i.jsxs)(g.mzw, {
-      align: N.Z.Align.CENTER,
-      justify: N.Z.Justify.BETWEEN,
+      align: b.Z.Align.CENTER,
+      justify: b.Z.Justify.BETWEEN,
       children: [(0, i.jsx)(g.zxk, {
         color: g.zxk.Colors.RED,
         disabled: c,
@@ -326,8 +326,8 @@ function Q(e) {
       analyticsLocation: u,
       initialStep: p
     } = e,
-    b = s.useRef(new o.qA),
-    [N, _] = s.useState(null),
+    N = s.useRef(new o.qA),
+    [b, _] = s.useState(null),
     C = (0, I.Er)(),
     v = (null == C ? void 0 : C.showCard) === !0,
     S = (null == C ? void 0 : C.tenureRewardType) === M.nW.AVATAR_DECO,
@@ -488,7 +488,7 @@ function Q(e) {
         premiumSubscription: r,
         premiumType: Z,
         onClose: () => en(z),
-        confettiCanvas: N,
+        confettiCanvas: b,
         userDiscountOffer: ei
       });
       break;
@@ -500,7 +500,7 @@ function Q(e) {
     children: [(0, i.jsx)(o.O_, {
       ref: _,
       className: G.confettiCanvas,
-      environment: b.current
+      environment: N.current
     }), (0, i.jsx)(g.Y0X, {
       transitionState: a,
       children: n

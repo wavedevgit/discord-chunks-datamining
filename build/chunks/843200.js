@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => f
 });
@@ -43,7 +43,7 @@ function f(e) {
   } = e, {
     isClaimed: f,
     isVerified: x,
-    hasEmail: b
+    hasEmail: N
   } = (0, o.cj)([u.default], () => {
     let e = u.default.getCurrentUser();
     return l()(null != e, "EmailNotice: currentUser cannot be undefined"), {
@@ -53,7 +53,7 @@ function f(e) {
     }
   });
 
-  function N() {
+  function b() {
     (0, c.ZDy)(async () => {
       let {
         default: e
@@ -76,14 +76,14 @@ function f(e) {
         }), (0, r.jsxs)(d.Z, {
           justify: d.Z.Justify.CENTER,
           className: p.content,
-          children: [f ? b ? (0, r.jsx)(d.Z.Child, {
+          children: [f ? N ? (0, r.jsx)(d.Z.Child, {
             grow: 0,
             shrink: 0,
             children: (0, r.jsx)(m.Z, {})
           }) : (0, r.jsx)(c.zxk, {
             size: c.zxk.Sizes.MEDIUM,
             color: c.zxk.Colors.BRAND,
-            onClick: N,
+            onClick: b,
             children: g.NW.string(g.t.ydw5nZ)
           }) : (0, r.jsx)(d.Z.Child, {
             grow: 0,
@@ -101,13 +101,13 @@ function f(e) {
               },
               children: g.NW.string(g.t.fiNVio)
             })
-          }), f && b ? (0, r.jsx)(d.Z.Child, {
+          }), f && N ? (0, r.jsx)(d.Z.Child, {
             grow: 0,
             shrink: 0,
             children: (0, r.jsx)(c.zxk, {
               color: c.zxk.Colors.PRIMARY,
               look: c.zxk.Looks.LINK,
-              onClick: N,
+              onClick: b,
               children: g.NW.string(g.t.Vm8akJ)
             })
           }) : null]

@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   f: () => T
 });
@@ -17,8 +17,8 @@ var r = n(374470),
   h = n(433355),
   f = n(592125),
   x = n(703558),
-  b = n(323873),
-  N = n(375954),
+  N = n(323873),
+  b = n(375954),
   _ = n(306680),
   E = n(944486),
   j = n(914010),
@@ -56,7 +56,7 @@ let T = {
 
 function I(e) {
   if (null != e) {
-    if (b.Z.isEditingAny(e)) return s.Z.endEditMessage(e), !1;
+    if (N.Z.isEditingAny(e)) return s.Z.endEditMessage(e), !1;
     if (null != d.Z.getPendingReply(e)) return (0, c.A6)(e), !1;
     if (null != g.Z.getStickerPreview(e, x.d.ChannelMessage)) return (0, p.qB)(e, x.d.ChannelMessage), !1
   }
@@ -65,5 +65,5 @@ function I(e) {
 function y(e) {
   if (null == e) return !1;
   let t = !1;
-  return N.Z.getMessages(e).hasMoreAfter && (s.Z.jumpToPresent(e, S.AQB), t = !0), _.ZP.hasUnread(e) && ((0, a.In)(e), t = !0), (0, a.iV)(e), t
+  return b.Z.getMessages(e).hasMoreAfter && (s.Z.jumpToPresent(e, S.AQB), t = !0), _.ZP.hasUnread(e) && ((0, a.In)(e), t = !0), (0, a.iV)(e), t
 }

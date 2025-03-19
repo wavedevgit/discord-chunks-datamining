@@ -13,8 +13,8 @@ var a = n(120356),
   d = n(110478),
   u = n(423932),
   m = n(695346),
-  h = n(601948),
-  x = n(594174),
+  x = n(601948),
+  h = n(594174),
   p = n(267412),
   b = n(802138);
 let f = () => {
@@ -40,13 +40,13 @@ let f = () => {
 };
 
 function _() {
-  let e = x.default.getCurrentUser(),
+  let e = h.default.getCurrentUser(),
     t = null == e ? void 0 : e.isStaff(),
     n = m.Rt.useSetting();
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: l()(p.buttonsContainer, b.marginBottom20),
-      children: (0, r.jsx)(h.S, {
+      children: (0, r.jsx)(x.S, {
         isDevTools: !0
       })
     }), (0, r.jsx)("div", {

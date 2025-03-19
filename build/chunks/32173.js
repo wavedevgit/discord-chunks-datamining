@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => eC,
   u: () => ej
@@ -18,8 +18,8 @@ var s = n(399606),
   h = n(832149),
   f = n(605236),
   x = n(300284),
-  b = n(703656),
-  N = n(547972),
+  N = n(703656),
+  b = n(547972),
   _ = n(131951),
   E = n(594174),
   j = n(78839),
@@ -72,8 +72,8 @@ var s = n(399606),
   eh = n(209672),
   ef = n(698173),
   ex = n(926262),
-  eb = n(482668),
-  eN = n(21504),
+  eN = n(482668),
+  eb = n(21504),
   e_ = n(371435),
   eE = n(83663),
   ej = ((r = {}).CLIENT_THEMES = "clientThemes", r.CLIPS = "clips", r.COLLECTIBLE_DECO = "collectibleDeco", r.EARLY_ACCESS = "earlyAccess", r.ENTRANCE_SOUNDS = "entranceSounds", r.PROFILES = "profiles", r.REMIXING = "remixing", r.SERVER_BOOSTS = "serverBoosts", r.GREY_SERVER_BOOSTS = "greyServerBoosts", r.SPECIAL_MEMBER_PRICING = "specialMemberPricing", r.SPECIAL_MEMBER_PRICING_SEE_ALL_VARIANT = "specialMemberPricingSeeAllVariant", r.SPECIAL_SHOP_PERKS = "specialShopPerks", r.UNLIMITED_SUPER_REACTIONS = "unlimitedSuperReactions", r.SUPER_REACTIONS = "superReactions", r.UPCOMING_DROP_UNTIMED = "upcomingDropUntimed", r.CUSTOM_APP_ICONS = "customAppIcons", r.MORE_EMOJI_POWER = "moreEmojiPower", r.CUSTOM_SOUNDS_EVERYWHERE = "customSoundsEverywhere", r.SPECIAL_STICKER_ACCESS = "specialStickerAccess", r.LARGE_UPLOADS = "largeUploads", r.HD_VIDEO = "hdVideo", r.BADGE = "badge", r.GREY_BADGE = "greyBadge", r.ENTRANCE_SOUNDS_SEE_ALL_VARIATION = "entranceSoundsSeeAllVariation", r.EARLY_ACCESS_SEE_ALL_VARIATION = "earlyAccessSeeAllVariant", r.TENURE_REWARD_COLLECTIBLE = "tenureRewardCollectible", r.REFERRAL_PROGRAM = "referralProgram", r.NEW_APP_STYLES_UPDATE_JUNE_2024 = "newAppStylesUpdateJune2024", r.SERVER_PROFILES = "serverProfiles", r.TENURE_BADGE = "tenureBadge", r.PERMADECOS = "permadecos", r);
@@ -105,7 +105,7 @@ let eC = () => {
       analyticsLocations: e
     })
   }, eV = () => {
-    (0, b.uL)(M.Z5c.COLLECTIBLES_SHOP)
+    (0, N.uL)(M.Z5c.COLLECTIBLES_SHOP)
   }, eG = () => {
     o.Z.open(M.oAB.APPEARANCE, null, {
       scrollPosition: V.h1.CUSTOM_APP_ICONS
@@ -133,7 +133,7 @@ let eC = () => {
       descriptionCta: eD ? F.NW.string(F.t.jVcuVV) : F.NW.string(F.t.hvVgAQ),
       pillText: F.NW.string(F.t.EYxi0t),
       onCtaClick: eD ? () => {
-        (0, N.Z)(G.Z.CLIPS, {
+        (0, b.Z)(G.Z.CLIPS, {
           openWithoutBackstack: !0,
           analyticsLocations: e
         })
@@ -507,7 +507,7 @@ let eC = () => {
       termsLink: T.Ps
     }),
     perkComponent: (0, i.jsx)(w.Z, {
-      image: r ? eN.Z : eb.Z,
+      image: r ? eb.Z : eN.Z,
       cta: F.NW.string(F.t.s0w7a2),
       onClick: () => {
         (0, l.ZDy)(async () => {

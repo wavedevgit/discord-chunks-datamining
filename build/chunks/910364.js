@@ -15,8 +15,8 @@ var r = t(200651),
   p = t(429467),
   b = t(680295),
   m = t(699516),
-  g = t(5192),
-  v = t(785717),
+  v = t(5192),
+  g = t(785717),
   y = t(221292),
   I = t(687158),
   j = t(510659),
@@ -34,10 +34,10 @@ var r = t(200651),
   A = t(62154),
   w = t(412317),
   L = t(228168),
-  M = t(388032),
-  R = t(835145);
+  R = t(388032),
+  M = t(835145);
 
-function U(e) {
+function B(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       r = Object.keys(t);
@@ -56,7 +56,7 @@ function U(e) {
   return e
 }
 
-function B(e, n) {
+function U(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -88,7 +88,7 @@ function D(e) {
     sourceAnalyticsLocations: H = []
   } = e, {
     analyticsLocations: Q
-  } = (0, u.ZP)([...H, d.Z.SIMPLIFIED_PROFILE_MODAL]), $ = (0, v.ZB)({
+  } = (0, u.ZP)([...H, d.Z.SIMPLIFIED_PROFILE_MODAL]), $ = (0, g.ZB)({
     layout: "SIMPLIFIED_MODAL",
     userId: n.id,
     sourceSessionId: G,
@@ -112,15 +112,15 @@ function D(e) {
     ed = (0, c.Z)(ea);
   return (0, r.jsx)(u.Gt, {
     value: Q,
-    children: (0, r.jsx)(v.Mt, {
+    children: (0, r.jsx)(g.Mt, {
       value: $,
       children: (0, r.jsx)(j.NJ, {
         value: ee,
         children: (0, r.jsxs)(s.Y0X, {
           transitionState: X,
-          className: R.root,
+          className: M.root,
           hideShadow: !0,
-          "aria-label": M.NW.string(M.t["3N/J2t"]),
+          "aria-label": R.NW.string(R.t["3N/J2t"]),
           children: [(0, r.jsxs)(O.Z, {
             user: n,
             displayProfile: et,
@@ -144,32 +144,32 @@ function D(e) {
                 guildId: D,
                 viewProfileItem: (null == er ? void 0 : er.guildId) == null ? null : (null == et ? void 0 : et.guildId) != null ? (0, r.jsx)(s.sNh, {
                   id: "view-main-profile",
-                  label: M.NW.string(M.t.GISTtb),
-                  subtext: M.NW.formatToPlainString(M.t["mn/nW1"], {
-                    displayName: g.ZP.getName(void 0, void 0, n)
+                  label: R.NW.string(R.t.GISTtb),
+                  subtext: R.NW.formatToPlainString(R.t["mn/nW1"], {
+                    displayName: v.ZP.getName(void 0, void 0, n)
                   }),
                   action: () => {
-                    J(), (0, C.openUserProfileModal)(B(U({}, $), {
+                    J(), (0, C.openUserProfileModal)(U(B({}, $), {
                       showGuildProfile: !1,
                       friendToken: V,
                       sourceAnalyticsLocations: H
-                    })), (0, y.pQ)(U({
+                    })), (0, y.pQ)(B({
                       action: "PRESS_VIEW_MAIN_PROFILE",
                       analyticsLocations: Q
                     }, $))
                   }
                 }) : (0, r.jsx)(s.sNh, {
                   id: "view-server-profile",
-                  label: M.NW.string(M.t.DisZzM),
-                  subtext: M.NW.formatToPlainString(M.t["mn/nW1"], {
-                    displayName: g.ZP.getName(D, W, n)
+                  label: R.NW.string(R.t.DisZzM),
+                  subtext: R.NW.formatToPlainString(R.t["mn/nW1"], {
+                    displayName: v.ZP.getName(D, W, n)
                   }),
                   action: () => {
-                    J(), (0, C.openUserProfileModal)(B(U({}, $), {
+                    J(), (0, C.openUserProfileModal)(U(B({}, $), {
                       showGuildProfile: !0,
                       friendToken: V,
                       sourceAnalyticsLocations: H
-                    })), (0, y.pQ)(U({
+                    })), (0, y.pQ)(B({
                       action: "PRESS_VIEW_SERVER_PROFILE",
                       analyticsLocations: Q
                     }, $))
@@ -184,12 +184,12 @@ function D(e) {
               }), (0, r.jsx)(_.Z, {
                 userId: n.id,
                 onClose: J,
-                className: R.toast
+                className: M.toast
               }), null != ee.interactionType && (0, r.jsx)(i.animated.div, {
                 style: en,
-                className: R.backdrop
+                className: M.backdrop
               }), (0, r.jsxs)("div", {
-                className: R.headerInner,
+                className: M.headerInner,
                 children: [(0, r.jsx)(h.Z, {
                   location: "UserProfileModal",
                   user: n,
@@ -207,7 +207,7 @@ function D(e) {
                   onCloseProfile: J,
                   prompt: el && ei ? es : null
                 }), (0, r.jsxs)("div", {
-                  className: R.headerButtons,
+                  className: M.headerButtons,
                   children: [(0, r.jsx)(w.Z, {
                     isCurrentUser: ei,
                     user: n,

@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => ef
 }), n(47120);
@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(906732),
   f = n(70097),
   x = n(464824),
-  b = n(214852),
-  N = n(594174),
+  N = n(214852),
+  b = n(594174),
   _ = n(78839),
   E = n(626135),
   j = n(526167),
@@ -128,16 +128,16 @@ let eg = e => {
       isFullscreen: W,
       entrypoint: U
     } = e;
-    (0, b.z)(x.X);
+    (0, N.z)(x.X);
     let G = U === et.EZ.ApplicationStoreHome,
       F = i.useRef(null),
       H = i.useRef(null),
       ee = (0, l.e7)([g.Z], () => g.Z.useReducedMotion),
       ef = (0, m.ZP)(),
       ex = (0, c.wj)(ef),
-      eb = N.default.getCurrentUser(),
-      eN = (0, C.I5)(eb),
-      e_ = (0, v.xP)("PremiumMarketingHome") && !eN && G,
+      eN = b.default.getCurrentUser(),
+      eb = (0, C.I5)(eN),
+      e_ = (0, v.xP)("PremiumMarketingHome") && !eb && G,
       [eE, ej] = i.useState(!1),
       [eC, eO] = i.useState(!1),
       [ev, eS] = i.useState(!1),

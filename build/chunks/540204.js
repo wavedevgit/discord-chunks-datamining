@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => f
 }), n(733860);
@@ -26,11 +26,11 @@ function f() {
   } = (0, u.xu)(), n = (0, s.e7)([c.ZP], () => c.ZP.getFlattenedGuildIds()), g = (0, s.e7)([o.Z], () => o.Z.getGuilds()), {
     hideGuildOptions: f,
     hideGlobalOption: x
-  } = (0, m.b)(), b = n[0];
+  } = (0, m.b)(), N = n[0];
   i.useEffect(() => {
-    (!x || !f) && (e === u.Th && e !== b && x && t(b), e !== u.Th && f && t(u.Th))
-  }, [e, t, x, f, b]);
-  let N = i.useMemo(() => {
+    (!x || !f) && (e === u.Th && e !== N && x && t(N), e !== u.Th && f && t(u.Th))
+  }, [e, t, x, f, N]);
+  let b = i.useMemo(() => {
       let e = f ? [] : n.map(e => {
         let t = g[e];
         return null == t ? null : {
@@ -95,7 +95,7 @@ function f() {
       t(e)
     },
     value: e,
-    options: N,
+    options: b,
     renderOptionPrefix: _
   })
 }

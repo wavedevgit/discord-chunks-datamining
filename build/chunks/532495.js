@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => Z
 });
@@ -18,8 +18,8 @@ var i = n(512722),
   h = n(433411),
   f = n(532432),
   x = n(349177),
-  b = n(872736),
-  N = n(818420),
+  N = n(872736),
+  b = n(818420),
   _ = n(134795),
   E = n(610966),
   j = n(513901),
@@ -130,7 +130,7 @@ function Z() {
     }, "avatar"), (0, r.jsx)(h.Z, {
       user: L,
       sectionTitle: R.NW.string(R.t["7v0T9P"])
-    }, "decoration"), es && (0, r.jsx)(N.Z, {
+    }, "decoration"), es && (0, r.jsx)(b.Z, {
       user: L
     }), (0, r.jsx)(j.Z, {
       user: L,
@@ -161,7 +161,7 @@ function Z() {
       currentBio: null !== (W = null == B ? void 0 : B.bio) && void 0 !== W ? W : ""
     }, "bio"), ei.length > 0 && (0, r.jsx)(d.Z, {
       availableClans: ei
-    }), null != et && (0, r.jsx)(b.Z, {
+    }), null != et && (0, r.jsx)(N.Z, {
       legacyUsername: et
     }, "legacy_username")]
   })

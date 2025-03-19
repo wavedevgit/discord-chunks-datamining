@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   h: () => _
 }), n(47120), n(266796);
@@ -17,7 +17,7 @@ var r = n(200651),
   h = n(293810),
   f = n(388032),
   x = n(314516);
-let b = e => {
+let N = e => {
     let [t, n] = i.useState(!1), [r, s] = i.useState(null);
     return {
       cancelSubscription: async t => {
@@ -33,14 +33,14 @@ let b = e => {
       submitting: t
     }
   },
-  N = e => {
+  b = e => {
     var t;
     let {
       transitionState: n,
       groupListing: i,
       guildId: s,
       listing: o,
-      subscription: N,
+      subscription: b,
       onClose: _
     } = e, E = (0, u.Dt)(), j = (0, g.YB)(s), C = (null == j ? void 0 : null === (t = j.cover_image_asset) || void 0 === t ? void 0 : t.application_id) != null ? (0, m._W)(j.cover_image_asset.application_id, j.cover_image_asset, 440) : void 0, {
       analyticsLocations: O
@@ -48,9 +48,9 @@ let b = e => {
       cancelSubscription: v,
       error: S,
       submitting: T
-    } = b(O), I = async () => {
-      await v(N.id) && _()
-    }, y = o.role_benefits.benefits.filter(e => e.ref_type === h.Qs.CHANNEL), A = o.role_benefits.benefits.filter(e => e.ref_type === h.Qs.INTANGIBLE), P = a()(N.currentPeriodEnd).format("MMMM Do, YYYY"), R = f.NW.formatToPlainString(f.t.KsMRPz, {
+    } = N(O), I = async () => {
+      await v(b.id) && _()
+    }, y = o.role_benefits.benefits.filter(e => e.ref_type === h.Qs.CHANNEL), A = o.role_benefits.benefits.filter(e => e.ref_type === h.Qs.INTANGIBLE), P = a()(b.currentPeriodEnd).format("MMMM Do, YYYY"), R = f.NW.formatToPlainString(f.t.KsMRPz, {
       numChannels: y.length,
       numAdditionalBenefits: A.length,
       subscriptionEndDate: P
@@ -105,7 +105,7 @@ let b = e => {
     })
   },
   _ = e => {
-    (0, l.h7j)(t => (0, r.jsx)(N, function(e) {
+    (0, l.h7j)(t => (0, r.jsx)(b, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

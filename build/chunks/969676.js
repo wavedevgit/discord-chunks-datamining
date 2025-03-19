@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.r(e.exports = {
   perksContainer: "perksContainer_b62c4e",
   perksTitle: "perksTitle_b62c4e",

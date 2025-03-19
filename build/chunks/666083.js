@@ -5,12 +5,12 @@ n.d(t, {
 var r = n(200651),
   o = n(192379),
   c = n(119617),
-  s = n(442837),
-  a = n(481060),
+  a = n(442837),
+  s = n(481060),
   i = n(607070),
   l = n(530618),
-  f = n(372654),
-  u = n(535396),
+  u = n(372654),
+  f = n(535396),
   p = n(367123),
   b = n(388032),
   d = n(841174),
@@ -21,12 +21,12 @@ function j(e) {
     powerup: t
   } = e;
   switch (t.type) {
-    case u.Us.LEVEL:
+    case f.Us.LEVEL:
       return (0, r.jsx)("img", {
         alt: "",
         src: m
       });
-    case u.Us.PERK:
+    case f.Us.PERK:
       return (0, r.jsx)("img", {
         alt: "",
         src: "",
@@ -37,7 +37,7 @@ function j(e) {
 
 function O(e) {
   var t, n, {
-      powerup: u
+      powerup: f
     } = e,
     m = function(e, t) {
       if (null == e) return {};
@@ -54,16 +54,16 @@ function O(e) {
       }
       return o
     }(e, ["powerup"]);
-  let O = (0, s.e7)([i.Z], () => i.Z.useReducedMotion),
-    g = o.useRef(null),
-    y = o.useRef(new c.qA),
+  let O = (0, a.e7)([i.Z], () => i.Z.useReducedMotion),
+    y = o.useRef(null),
+    g = o.useRef(new c.qA),
     [x, h] = o.useState(null);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.O_, {
       ref: h,
       className: d.confettiCanvas,
-      environment: y.current
-    }), (0, r.jsxs)(a.Y0X, (t = function(e) {
+      environment: g.current
+    }), (0, r.jsxs)(s.Y0X, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -82,43 +82,43 @@ function O(e) {
       return e
     }({
       className: d.modal,
-      size: a.CgR.DYNAMIC
+      size: s.CgR.DYNAMIC
     }, m), n = n = {
-      children: [(0, r.jsx)(a.hzk, {
+      children: [(0, r.jsx)(s.hzk, {
         className: d.modalContentContainer,
         scrollbarType: "none",
         children: (0, r.jsxs)("div", {
           className: d.container,
-          ref: g,
+          ref: y,
           children: [(0, r.jsx)(j, {
-            powerup: u
+            powerup: f
           }), (0, r.jsxs)("div", {
             className: d.contentContainer,
-            children: [(0, r.jsx)(a.X6q, {
+            children: [(0, r.jsx)(s.X6q, {
               variant: "heading-xl/extrabold",
               children: b.NW.formatToPlainString(p.Z.lFuOFB, {
-                perkName: u.title
+                perkName: f.title
               })
-            }), (0, r.jsx)(a.Text, {
+            }), (0, r.jsx)(s.Text, {
               className: d.description,
               variant: "text-sm/normal",
               children: b.NW.formatToPlainString(p.Z.y3wHoq, {
-                perkName: u.title
+                perkName: f.title
               })
-            }), (0, r.jsx)(a.zxk, {
+            }), (0, r.jsx)(s.zxk, {
               className: d.button,
               onClick: m.onClose,
               children: b.NW.string(p.Z["g5Ds6+"])
             })]
           })]
         })
-      }), (0, r.jsx)(a.olH, {
+      }), (0, r.jsx)(s.olH, {
         className: d.close,
         onClick: m.onClose
       }), !O && (0, r.jsx)(l.Z, {
-        confettiTarget: g.current,
+        confettiTarget: y.current,
         confettiCanvas: x,
-        sprites: (0, f.vK)()
+        sprites: (0, u.vK)()
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

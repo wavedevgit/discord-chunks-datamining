@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => p
 }), n(47120);
@@ -44,8 +44,8 @@ function p(e) {
   } = g(l), x = (0, d._k)(t, {
     includeSoftDeleted: !0
   }), {
-    currentListing: b,
-    nextListing: N
+    currentListing: N,
+    nextListing: b
   } = i.useMemo(() => {
     if ((null == n ? void 0 : n.renewalMutations) == null) return {
       currentListing: void 0,
@@ -58,12 +58,12 @@ function p(e) {
       nextListing: x.find(e => e.subscription_plans[0].id === t)
     }
   }, [n, x]);
-  if (null == n || null == b || null == N) return null;
+  if (null == n || null == N || null == b) return null;
   let _ = a()(n.currentPeriodEnd).format("MMM DD, YYYY");
   return (0, r.jsx)(u.Z, {
     message: m.NW.format(m.t.chw89f, {
-      currentListing: b.name,
-      nextListing: N.name,
+      currentListing: N.name,
+      nextListing: b.name,
       changeDate: _
     }),
     error: null == f ? void 0 : f.message,

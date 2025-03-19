@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => d
 }), n(47120);
@@ -26,8 +26,8 @@ let o = {
       offsetYPercentageMax: h,
       offsetYPercentageMin: f,
       customConfettiCanvas: x,
-      speedValues: b = o,
-      dragCoefficientValue: N = 1.66,
+      speedValues: N = o,
+      dragCoefficientValue: b = 1.66,
       onAnimationEnd: _
     } = e, [E, j] = i.useState(null), {
       confettiCanvas: C
@@ -56,8 +56,8 @@ let o = {
             {
               xMin: f,
               xMax: x,
-              yMin: b,
-              yMax: N
+              yMin: N,
+              yMax: b
             } = d;
           return s = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -92,11 +92,11 @@ let o = {
               type: "static-random",
               minValue: {
                 x: f,
-                y: b
+                y: N
               },
               maxValue: {
                 x: x,
-                y: N
+                y: b
               }
             },
             size: {
@@ -118,11 +118,11 @@ let o = {
           })(Object(a)).forEach(function(e) {
             Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(a, e))
           }), s
-        }(t.getBoundingClientRect(), g, p, h, f, b, N), null != m ? m : 50), r === e.length - 1 && null != _ && S(!0)
+        }(t.getBoundingClientRect(), g, p, h, f, N, b), null != m ? m : 50), r === e.length - 1 && null != _ && S(!0)
       }, 60 * r)), () => {
         for (let t of e) clearTimeout(t)
       }
-    }, [O, t, u, m, g, p, h, f, b, N, _]), (0, r.jsx)(s.Ji, {
+    }, [O, t, u, m, g, p, h, f, N, b, _]), (0, r.jsx)(s.Ji, {
       ref: j,
       sprites: null != T ? T : l.CA,
       colors: null != n ? n : l.Br,

@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => h
 });
@@ -21,8 +21,8 @@ let h = e => {
       title: h,
       titleClassName: f,
       buttonClassName: x,
-      perkImage: b,
-      isCarousel: N,
+      perkImage: N,
+      isCarousel: b,
       onCtaClick: _,
       perkComponent: E,
       subtitle: j = "",
@@ -58,14 +58,14 @@ let h = e => {
       titleClassName: f,
       subtitle: j,
       subtitleClassName: v
-    }), null != b && (0, r.jsxs)("div", {
+    }), null != N && (0, r.jsxs)("div", {
       className: s()(u.relative, {
-        [u.cardImage]: !N
+        [u.cardImage]: !b
       }),
       children: [(0, r.jsx)("img", {
-        src: b,
+        src: N,
         alt: "",
-        className: N ? A ? u.carouselCardImageGrayscale : u.carouselCardImage : ""
+        className: b ? A ? u.carouselCardImageGrayscale : u.carouselCardImage : ""
       }), A ? (0, r.jsx)("div", {
         className: u.imageOverlayTextContainer,
         children: (0, r.jsx)(a.Text, {

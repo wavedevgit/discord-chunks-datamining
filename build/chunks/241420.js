@@ -1,12 +1,12 @@
-/** Chunk was on 87395 **/
+/** Chunk was on 98933 **/
 n.d(t, {
-  default: () => p
+  default: () => b
 });
-var o = n(200651);
+var a = n(200651);
 n(192379);
-var a = n(481060),
-  r = n(546957),
-  i = n(190014),
+var i = n(481060),
+  o = n(546957),
+  r = n(190014),
   c = n(301812),
   l = n(988043),
   _ = n(919539),
@@ -14,24 +14,24 @@ var a = n(481060),
   s = n(388032),
   u = n(310037);
 
-function b(e) {
+function p(e) {
   let {
     guildId: t
   } = e;
-  return (0, o.jsxs)(r.Z, {
-    children: [(0, o.jsx)(l.Z, {
+  return (0, a.jsxs)(o.Z, {
+    children: [(0, a.jsx)(l.Z, {
       ingress: d.f4.SERVER_PRIVACY_MODAL,
       guildId: t
-    }), (0, o.jsx)(_.Z, {
+    }), (0, a.jsx)(_.Z, {
       ingress: d.f4.SERVER_PRIVACY_MODAL,
       guildId: t
-    }), (0, o.jsx)(c.Z, {
+    }), (0, a.jsx)(c.Z, {
       ingress: d.f4.SERVER_PRIVACY_MODAL,
       guildId: t
-    }), (0, o.jsx)(i.Z, {
+    }), (0, a.jsx)(r.Z, {
       ingress: d.f4.SERVER_PRIVACY_MODAL,
       guildId: t
-    }), (0, o.jsx)(a.Text, {
+    }), (0, a.jsx)(i.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
       children: s.NW.format(s.t.LNsV09, {
@@ -41,29 +41,29 @@ function b(e) {
   })
 }
 
-function p(e) {
+function b(e) {
   let {
     guild: t,
     transitionState: n,
-    onClose: r
-  } = e, i = "".concat(s.NW.string(s.t.BayiAg), "—").concat(null != t ? t.toString() : "??");
-  return (0, o.jsxs)(a.Y0X, {
+    onClose: o
+  } = e, r = "".concat(s.NW.string(s.t.BayiAg), "—").concat(null != t ? t.toString() : "??");
+  return (0, a.jsxs)(i.Y0X, {
     transitionState: n,
-    size: a.CgR.SMALL,
-    "aria-label": i,
-    children: [(0, o.jsx)(a.xBx, {
-      children: (0, o.jsx)(a.X6q, {
+    size: i.CgR.SMALL,
+    "aria-label": r,
+    children: [(0, a.jsx)(i.xBx, {
+      children: (0, a.jsx)(i.X6q, {
         variant: "heading-lg/semibold",
-        children: i
+        children: r
       })
-    }), (0, o.jsx)(a.hzk, {
+    }), (0, a.jsx)(i.hzk, {
       className: u.content,
-      children: (0, o.jsx)(b, {
+      children: (0, a.jsx)(p, {
         guildId: t.id
       })
-    }), (0, o.jsx)(a.mzw, {
-      children: (0, o.jsx)(a.zxk, {
-        onClick: () => r(),
+    }), (0, a.jsx)(i.mzw, {
+      children: (0, a.jsx)(i.zxk, {
+        onClick: () => o(),
         children: s.NW.string(s.t.i4jeWV)
       })
     })]

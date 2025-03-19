@@ -1,24 +1,21 @@
 /** Chunk was on 81818 **/
 t.d(n, {
-  default: () => h
+  default: () => y
 }), t(47120);
 var r = t(200651),
   o = t(192379),
-  i = t(512722),
-  l = t.n(i),
-  s = t(442837),
-  c = t(100527),
-  a = t(922611),
-  d = t(695346),
-  u = t(699516),
-  f = t(594174),
-  p = t(971393),
-  b = t(787018),
-  m = t(752342),
-  g = t(886794),
-  v = t(910364);
+  i = t(442837),
+  l = t(100527),
+  s = t(922611),
+  c = t(695346),
+  a = t(699516),
+  d = t(971393),
+  u = t(787018),
+  f = t(752342),
+  p = t(886794),
+  b = t(910364);
 
-function y(e) {
+function m(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       r = Object.keys(t);
@@ -37,7 +34,7 @@ function y(e) {
   return e
 }
 
-function I(e, n) {
+function v(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,9 +46,9 @@ function I(e, n) {
     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
   }), e
 }
-let j = [c.Z.BITE_SIZE_PROFILE_POPOUT, c.Z.PROFILE_PANEL];
+let g = [l.Z.BITE_SIZE_PROFILE_POPOUT, l.Z.PROFILE_PANEL];
 
-function h(e) {
+function y(e) {
   var {
     user: n
   } = e, t = function(e, n) {
@@ -69,43 +66,36 @@ function h(e) {
     }
     return o
   }(e, ["user"]);
-  let i = (0, s.e7)([f.default], () => f.default.getCurrentUser());
-  l()(null != i, "UserProfileModalWrapper: currentUser cannot be undefined");
   let {
-    isBlocked: c,
-    isIgnored: h
-  } = (0, s.cj)([u.Z], () => ({
-    isBlocked: u.Z.isBlocked(n.id),
-    isIgnored: u.Z.isIgnored(n.id)
-  })), x = (0, a.D)({
+    isBlocked: l,
+    isIgnored: y
+  } = (0, i.cj)([a.Z], () => ({
+    isBlocked: a.Z.isBlocked(n.id),
+    isIgnored: a.Z.isIgnored(n.id)
+  })), I = (0, s.D)({
     location: "UserProfileModalWrapper"
-  }), [_, O] = o.useState(c || x && (h || c)), Z = (0, p.sS)({
+  }), [j, h] = o.useState(l || I && (y || l)), x = (0, d.sS)({
     location: "UserProfileModalWrapper"
   });
   o.useEffect(() => {
-    O(h || c)
-  }, [h, c]);
-  let N = !j.some(e => {
+    h(y || l)
+  }, [y, l]);
+  let _ = !g.some(e => {
       var n;
       return (null !== (n = t.sourceAnalyticsLocations) && void 0 !== n ? n : []).includes(e)
     }),
-    P = d.Rt.useSetting();
-  return _ && Z && N && !x ? (0, r.jsx)(b.Z, y({
+    O = c.Rt.useSetting();
+  return j && x && _ && !I ? (0, r.jsx)(u.Z, m({
     user: n,
-    currentUser: i,
-    onViewBlockedProfileClick: () => O(!1)
-  }, t)) : _ && N && x && !(h && P) ? (0, r.jsx)(b.W, y({
+    onViewBlockedProfileClick: () => h(!1)
+  }, t)) : j && _ && I && !(y && O) ? (0, r.jsx)(u.W, m({
     user: n,
-    currentUser: i,
-    onViewBlockedProfileClick: () => O(!1)
-  }, t)) : n.isNonUserBot() ? (0, r.jsx)(g.Z, I(y({}, t), {
-    user: n,
-    currentUser: i
-  })) : n.bot ? (0, r.jsx)(m.Z, I(y({}, t), {
-    user: n,
-    currentUser: i
-  })) : (0, r.jsx)(v.Z, I(y({}, t), {
-    user: n,
-    currentUser: i
+    onViewBlockedProfileClick: () => h(!1)
+  }, t)) : n.isNonUserBot() ? (0, r.jsx)(p.Z, v(m({}, t), {
+    user: n
+  })) : n.bot ? (0, r.jsx)(f.Z, v(m({}, t), {
+    user: n
+  })) : (0, r.jsx)(b.Z, v(m({}, t), {
+    user: n
   }))
 }

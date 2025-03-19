@@ -1,104 +1,104 @@
 /** Chunk was on 78718 **/
-t.d(r, {
-  default: () => i
-}), t(47120), t(266796);
-var n = t(200651),
-  o = t(192379),
-  a = t(481060),
-  s = t(969867),
-  c = t(656659);
+n.d(t, {
+  default: () => l
+}), n(47120), n(266796);
+var r = n(200651),
+  o = n(192379),
+  s = n(481060),
+  i = n(969867),
+  a = n(656659);
 
-function i(e) {
-  var r, t, {
-      guildId: i,
-      powerup: l
+function l(e) {
+  var t, n, {
+      guildId: l,
+      powerup: c
     } = e,
-    d = function(e, r) {
+    d = function(e, t) {
       if (null == e) return {};
-      var t, n, o = function(e, r) {
+      var n, r, o = function(e, t) {
         if (null == e) return {};
-        var t, n, o = {},
-          a = Object.keys(e);
-        for (n = 0; n < a.length; n++) t = a[n], r.indexOf(t) >= 0 || (o[t] = e[t]);
+        var n, r, o = {},
+          s = Object.keys(e);
+        for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
         return o
-      }(e, r);
+      }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var a = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < a.length; n++) t = a[n], !(r.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (o[t] = e[t])
+        var s = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
       }
       return o
     }(e, ["guildId", "powerup"]);
-  let [p, u] = o.useState(void 0);
-  return (0, n.jsxs)(a.Y0X, (r = function(e) {
-    for (var r = 1; r < arguments.length; r++) {
-      var t = null != arguments[r] ? arguments[r] : {},
-        n = Object.keys(t);
-      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(t, e).enumerable
-      }))), n.forEach(function(r) {
-        var n;
-        n = t[r], r in e ? Object.defineProperty(e, r, {
-          value: n,
+  let [u, p] = o.useState(void 0);
+  return (0, r.jsxs)(s.Y0X, (t = function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : e[r] = n
+        }) : e[t] = r
       })
     }
     return e
   }({
-    className: c.modal,
-    size: a.CgR.DYNAMIC
-  }, d), t = t = {
-    children: [(0, n.jsxs)(a.hzk, {
-      className: c.modalContentContainer,
+    className: a.modal,
+    size: s.CgR.DYNAMIC
+  }, d), n = n = {
+    children: [(0, r.jsxs)(s.hzk, {
+      className: a.modalContentContainer,
       scrollbarType: "none",
-      children: [(0, n.jsxs)("div", {
-        className: c.sidebar,
-        children: [(0, n.jsx)("img", {
+      children: [(0, r.jsxs)("div", {
+        className: a.sidebar,
+        children: [(0, r.jsx)("img", {
           alt: "",
           src: "",
-          className: c.powerupImage
-        }), (0, n.jsxs)("div", {
-          className: c.contentContainer,
-          children: [(0, n.jsx)(a.X6q, {
+          className: a.powerupImage
+        }), (0, r.jsxs)("div", {
+          className: a.contentContainer,
+          children: [(0, r.jsx)(s.X6q, {
             variant: "heading-xl/extrabold",
-            children: l.title
-          }), (0, n.jsx)(a.Text, {
-            className: c.description,
+            children: c.title
+          }), (0, r.jsx)(s.Text, {
+            className: a.description,
             variant: "text-sm/normal",
-            children: l.description
-          }), null != p && (0, n.jsx)(a.Text, {
-            className: c.error,
+            children: c.description
+          }), null != u && (0, r.jsx)(s.Text, {
+            className: a.error,
             color: "status-danger",
             variant: "text-sm/semibold",
-            children: p
-          }), (0, n.jsx)(s.Z, {
-            className: c.footer,
-            guildId: i,
-            powerup: l,
-            onError: u
+            children: u
+          }), (0, r.jsx)(i.Z, {
+            className: a.footer,
+            guildId: l,
+            powerup: c,
+            onError: p
           })]
         })]
-      }), (0, n.jsx)("div", {
-        className: c.exampleImage,
-        children: (0, n.jsx)("img", {
+      }), (0, r.jsx)("div", {
+        className: a.exampleImage,
+        children: (0, r.jsx)("img", {
           alt: "",
           src: ""
         })
       })]
-    }), (0, n.jsx)(a.olH, {
-      className: c.close,
+    }), (0, r.jsx)(s.olH, {
+      className: a.close,
       onClick: d.onClose
     })]
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(t)) : (function(e, r) {
-    var t = Object.keys(e);
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      t.push.apply(t, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return t
-  })(Object(t)).forEach(function(e) {
-    Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(t, e))
-  }), r))
+    return n
+  })(Object(n)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+  }), t))
 }

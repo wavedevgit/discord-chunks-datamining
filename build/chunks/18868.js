@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  L: () => x,
+  L: () => h,
   Y: () => m
 }), n(47120);
 var r = n(200651),
@@ -42,21 +42,21 @@ let m = () => {
       modalKey: c.A
     })
   },
-  h = e => {
+  x = e => {
     e.stopPropagation(), e.preventDefault()
   },
-  x = e => {
+  h = e => {
     let {
       className: t,
       onDrop: n
-    } = e, [l, x] = a.useState(!1), p = a.useRef(null), b = a.useCallback(e => {
-      h(e), (0, o.Mr3)(c.A), null != e.dataTransfer && (e.dataTransfer.dropEffect = "copy")
+    } = e, [l, h] = a.useState(!1), p = a.useRef(null), b = a.useCallback(e => {
+      x(e), (0, o.Mr3)(c.A), null != e.dataTransfer && (e.dataTransfer.dropEffect = "copy")
     }, []), f = a.useCallback(e => {
-      h(e), x(!0)
+      x(e), h(!0)
     }, []), _ = a.useCallback(e => {
-      h(e), x(!1)
+      x(e), h(!1)
     }, []), g = a.useCallback(async e => {
-      h(e), x(!1);
+      x(e), h(!1);
       let t = e.dataTransfer;
       if (null == t) {
         m();

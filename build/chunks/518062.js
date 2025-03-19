@@ -1,45 +1,45 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 79512 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 }), n(47120);
-var r = n(200651);
+var l = n(200651);
 n(192379);
-var i = n(442837),
-  s = n(481060),
-  a = n(607070),
-  l = n(600164),
-  o = n(122890),
+var r = n(442837),
+  i = n(481060),
+  o = n(607070),
+  a = n(600164),
+  s = n(122890),
   c = n(110818),
-  d = n(313952);
+  u = n(313952);
 
-function u(e) {
+function d(e) {
   let {
     purchaseState: t,
     currentStep: n,
-    onClose: u
-  } = e, [m, g] = (0, o.z)({
+    onClose: d
+  } = e, [E, f] = (0, s.z)({
     purchaseState: t,
     currentStep: n,
     initialScene: c.fe.Scenes.ENTRY,
     purchaseScene: c.fe.Scenes.STARS,
     errorScene: c.fe.Scenes.ERROR,
     successScene: c.fe.Scenes.SUCCESS
-  }), p = (0, i.e7)([a.Z], () => a.Z.useReducedMotion);
-  return (0, r.jsxs)(s.xBx, {
-    align: l.Z.Align.START,
-    className: d.header,
+  }), p = (0, r.e7)([o.Z], () => o.Z.useReducedMotion);
+  return (0, l.jsxs)(i.xBx, {
+    align: a.Z.Align.START,
+    className: u.header,
     separator: !1,
-    children: [(0, r.jsx)(c.fe, {
-      className: d.animation,
-      nextScene: m,
-      onScenePlay: e => g(c.fe.getNextScene(e)),
+    children: [(0, l.jsx)(c.fe, {
+      className: u.animation,
+      nextScene: E,
+      onScenePlay: e => f(c.fe.getNextScene(e)),
       pauseWhileUnfocused: !1,
       pause: p
-    }), (0, r.jsx)("div", {
-      className: d.headerTitle
-    }), (0, r.jsx)(s.olH, {
-      onClick: u,
-      className: d.closeButton
+    }), (0, l.jsx)("div", {
+      className: u.headerTitle
+    }), (0, l.jsx)(i.olH, {
+      onClick: d,
+      className: u.closeButton
     })]
   })
 }

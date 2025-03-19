@@ -16,8 +16,8 @@ var o = t(442837),
   p = t(91433),
   b = t(944043),
   m = t(502762),
-  g = t(530),
-  v = t(740628),
+  v = t(530),
+  g = t(740628),
   y = t(643518),
   I = t(228168),
   j = t(981631),
@@ -43,7 +43,7 @@ function x(e) {
     originApplicationId: s.Z.getOriginApplicationId(t.id)
   })), A = (0, l.vh)(t.id), w = (0, i.wn)({
     location: "UserProfileModalBody"
-  }), L = t.id === x.id, M = (0, a.I5)(x), R = c.ZP.useName(null == Z ? void 0 : Z.guildId, O, t), U = (0, y.Z)({
+  }), L = t.id === x.id, R = (0, a.I5)(x), M = c.ZP.useName(null == Z ? void 0 : Z.guildId, O, t), B = (0, y.Z)({
     user: t,
     currentUser: x,
     guildId: _,
@@ -51,10 +51,10 @@ function x(e) {
   });
   return (0, r.jsxs)("div", {
     className: h.body,
-    children: [(0, r.jsx)(g.Z, {
+    children: [(0, r.jsx)(v.Z, {
       user: t,
       profileType: I.y0.FULL_SIZE,
-      nickname: R,
+      nickname: M,
       pronouns: null == Z ? void 0 : Z.pronouns,
       nicknameVariant: "heading-xl/bold",
       nicknameIcons: (0, r.jsx)(f.Z, {
@@ -88,16 +88,16 @@ function x(e) {
       user: t,
       source: b.t.MODAL
     }), L && (0, r.jsx)(u.Z, {
-      isPremiumUser: M,
+      isPremiumUser: R,
       onInteraction: S
     }), (0, r.jsx)(m.Z.Overlay, {
       className: h.overlay,
-      children: (0, r.jsx)(v.Z, {
+      children: (0, r.jsx)(g.Z, {
         user: t,
         currentUser: x,
         displayProfile: Z,
         guildId: _,
-        items: U,
+        items: B,
         initialSection: N,
         initialSubsection: P,
         onClose: S

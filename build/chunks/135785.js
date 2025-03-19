@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => h
 });
@@ -22,16 +22,16 @@ let h = e => {
       isFullscreen: f = !1,
       textColor: x
     } = e,
-    b = (0, d.Nx)();
+    N = (0, d.Nx)();
   if (null == i) return null;
-  let N = null != i ? c.ZP.getPremiumPlanItem(i) : null;
-  if (c.ZP.isBoostOnlySubscription(i) ? t = g.NW.string(g.t.Uj0md3) : null != N && (t = c.ZP.getDisplayPremiumType(N.planId)), null == t) return null;
+  let b = null != i ? c.ZP.getPremiumPlanItem(i) : null;
+  if (c.ZP.isBoostOnlySubscription(i) ? t = g.NW.string(g.t.Uj0md3) : null != b && (t = c.ZP.getDisplayPremiumType(b.planId)), null == t) return null;
   let _ = () => l.Z.open(m.oAB.SUBSCRIPTIONS),
-    E = (null != N ? c.ZP.getSkuIdForPlan(N.planId) : null) === u.Si.TIER_1;
-  return n = null != x ? x : b || f ? "always-white" : "text-normal", (0, r.jsxs)(a.Zbd, {
+    E = (null != b ? c.ZP.getSkuIdForPlan(b.planId) : null) === u.Si.TIER_1;
+  return n = null != x ? x : N || f ? "always-white" : "text-normal", (0, r.jsxs)(a.Zbd, {
     className: s()(p.container, h, {
       [p.lightTextLink]: f,
-      [p.centerText]: b
+      [p.centerText]: N
     }),
     type: a.Zbd.Types.CUSTOM,
     children: [(0, r.jsx)(a.P4T, {
@@ -40,7 +40,7 @@ let h = e => {
       height: 20,
       color: "currentColor",
       className: s()(p.icon, {
-        [p.lightThemeColorOnly]: b || f
+        [p.lightThemeColorOnly]: N || f
       })
     }), (0, r.jsx)(a.Text, {
       variant: "text-sm/medium",

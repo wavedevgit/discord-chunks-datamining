@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => q
 });
@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(734934),
   f = n(300284),
   x = n(680295),
-  b = n(785717),
-  N = n(687158),
+  N = n(785717),
+  b = n(687158),
   _ = n(899007),
   E = n(648052),
   j = n(867176),
@@ -72,9 +72,9 @@ function q(e) {
     currentUser: t,
     onClose: n,
     setPopoutRef: q
-  } = e, X = __OVERLAY__, J = (0, N.ZP)(t.id), {
+  } = e, X = __OVERLAY__, J = (0, b.ZP)(t.id), {
     analyticsLocations: Q
-  } = (0, m.ZP)(u.Z.ACCOUNT_PROFILE_POPOUT), $ = (0, b.ZB)({
+  } = (0, m.ZP)(u.Z.ACCOUNT_PROFILE_POPOUT), $ = (0, N.ZB)({
     layout: "SIMPLIFIED_ACCOUNT_POPOUT",
     userId: t.id
   }), {
@@ -105,7 +105,7 @@ function q(e) {
     };
   return (0, r.jsx)(m.Gt, {
     value: Q,
-    children: (0, r.jsx)(b.Mt, {
+    children: (0, r.jsx)(N.Mt, {
       value: $,
       children: (0, r.jsx)(o.VqE, {
         ref: ee,

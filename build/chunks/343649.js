@@ -85,7 +85,7 @@ function et(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var en = 12633 == n.j ? ((l = {})[l.NONE = 0] = "NONE", l[l.LEVEL = 1] = "LEVEL", l[l.PERK = 2] = "PERK", l) : null;
+var en = ((l = {})[l.NONE = 0] = "NONE", l[l.LEVEL = 1] = "LEVEL", l[l.PERK = 2] = "PERK", l);
 let el = q.Xh.NONE_MONTH,
   er = [M.h8.PLAN_SELECT, M.h8.REVIEW, M.h8.CONFIRM],
   ei = [M.h8.PLAN_SELECT, M.h8.ADD_PAYMENT_STEPS, M.h8.REVIEW, M.h8.CONFIRM];
@@ -231,11 +231,11 @@ function eo(e) {
   });
   let [eQ, e0] = i.useState(er), [e8, e3] = i.useState(L.A.WAITING), [e1, e2] = i.useState(!0), e7 = () => {
     l(e8 === L.A.COMPLETED)
-  }, e6 = null != eP && eP.isPurchasedExternally;
+  }, e4 = null != eP && eP.isPurchasedExternally;
   i.useEffect(() => {
-    ek === j.wr.PENDING || eV === M.h8.CONFIRM || null == e_ || (eQ !== er && e0(er), er.includes(eV) || eV === M.h8.PREMIUM_UPSELL || eq(M.h8.REVIEW)), eV === M.h8.ADD_PAYMENT_STEPS && eQ !== ei && e0(ei), e6 && eV !== M.h8.PLAN_SELECT && eX(M.h8.PLAN_SELECT)
-  }, [eV, eq, e6, ek, eP, e_, eQ]), (0, j.bp)(eV, ek, eq, e3), (0, M.dZ)(eV, e8, e3);
-  let e4 = i.useRef(null),
+    ek === j.wr.PENDING || eV === M.h8.CONFIRM || null == e_ || (eQ !== er && e0(er), er.includes(eV) || eV === M.h8.PREMIUM_UPSELL || eq(M.h8.REVIEW)), eV === M.h8.ADD_PAYMENT_STEPS && eQ !== ei && e0(ei), e4 && eV !== M.h8.PLAN_SELECT && eX(M.h8.PLAN_SELECT)
+  }, [eV, eq, e4, ek, eP, e_, eQ]), (0, j.bp)(eV, ek, eq, e3), (0, M.dZ)(eV, e8, e3);
+  let e6 = i.useRef(null),
     [e9, e5] = (0, S.Z)(!1, 500),
     [te, tt] = i.useState(null),
     [tn, tl] = i.useState([]),
@@ -333,7 +333,7 @@ function eo(e) {
             },
             guildId: eo,
             priceOptions: o
-          }), e6 && null != eP && null != eP.paymentGateway && (e = (0, r.jsxs)(r.Fragment, {
+          }), e4 && null != eP && null != eP.paymentGateway && (e = (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(E.kzN, {
               className: Q.externalErrorBlock,
               children: $.NW.format($.t["/m3Y3t"], {
@@ -347,7 +347,7 @@ function eo(e) {
             children: $.NW.string($.t.oEAioK)
           }), i = (0, r.jsx)(E.zxk, {
             type: "submit",
-            disabled: e1 || 0 === ev || e6,
+            disabled: e1 || 0 === ev || e4,
             onClick: () => {
               if (!eu && (null == eN || eN.premiumSubscriptionType !== q.p9.TIER_2)) {
                 eq(M.h8.PREMIUM_UPSELL);
@@ -378,7 +378,7 @@ function eo(e) {
               eq(M.h8.ADD_PAYMENT_STEPS), eT(null)
             },
             onPurchaseTermsChange: eU,
-            legalTermsNodeRef: e4,
+            legalTermsNodeRef: e6,
             hasLegalTermsFlash: e9
           }), n = M.h8.PLAN_SELECT, i = ew ? (0, r.jsx)(E.zxk, {
             color: E.zxk.Colors.GREEN,
@@ -434,7 +434,7 @@ function eo(e) {
             children: e => (0, r.jsx)(E.zxk, et(ee({}, e), {
               color: E.zxk.Colors.GREEN,
               onClick: () => {
-                null != e4.current && (e4.current.scrollIntoView({
+                null != e6.current && (e6.current.scrollIntoView({
                   behavior: "smooth"
                 }), e5(!0))
               },

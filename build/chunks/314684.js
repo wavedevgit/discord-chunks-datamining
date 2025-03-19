@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   $_: () => Z,
   Er: () => A,
@@ -24,8 +24,8 @@ var r = n(192379),
   h = n(243778),
   f = n(594174),
   x = n(580130),
-  b = n(626135),
-  N = n(823379),
+  N = n(626135),
+  b = n(823379),
   _ = n(111361),
   E = n(595878),
   j = n(944880),
@@ -77,7 +77,7 @@ function A() {
       let t = (0, a.e7)([x.Z], () => {
           var e;
           return null !== (e = x.Z.getForApplication(v.CL)) && void 0 !== e ? e : R
-        }, [], N.OL),
+        }, [], b.OL),
         n = (0, a.e7)([f.default], () => {
           let e = f.default.getCurrentUser();
           return null != e && (0, _.M5)(e, v.p9.TIER_2)
@@ -90,7 +90,7 @@ function A() {
       let e = (0, a.e7)([x.Z], () => {
         var e;
         return null !== (e = x.Z.getForApplication(T.XAJ)) && void 0 !== e ? e : R
-      }, [], N.OL);
+      }, [], b.OL);
       return (0, O.Cl)(S.qY, e)
     }(),
     c = l && null != o && (0, O.C3)(o.skuId, i),
@@ -188,7 +188,7 @@ let R = new Set,
       [n] = (0, p.cv)(t),
       i = r.useRef(!1);
     return r.useCallback(() => {
-      null != e && !0 === e.showNotification && (n === l.z.TENURE_REWARD_REDEEMABLE || n === l.z.TENURE_REWARD_PENDING) && ((0, g.EW)(n), n === l.z.TENURE_REWARD_PENDING && !1 === i.current && (b.default.track(T.rMx.USER_NITRO_TENURE_REWARD_ACKNOWLEDGED, {
+      null != e && !0 === e.showNotification && (n === l.z.TENURE_REWARD_REDEEMABLE || n === l.z.TENURE_REWARD_PENDING) && ((0, g.EW)(n), n === l.z.TENURE_REWARD_PENDING && !1 === i.current && (N.default.track(T.rMx.USER_NITRO_TENURE_REWARD_ACKNOWLEDGED, {
         user_tenure_reward_id: null == e ? void 0 : e.tenureRewardStatusId,
         tenure_reward_id: e.tenureRewardSkuId,
         reward_type: null == e ? void 0 : e.tenureRewardType,

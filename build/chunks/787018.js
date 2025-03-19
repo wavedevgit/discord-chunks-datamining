@@ -16,8 +16,8 @@ var r = t(200651),
   p = t(5192),
   b = t(785717),
   m = t(221292),
-  g = t(687158),
-  v = t(471879),
+  v = t(687158),
+  g = t(471879),
   y = t(502762),
   I = t(848780),
   j = t(907179),
@@ -74,7 +74,7 @@ function E(e) {
   }, {
     icon: c.t6m,
     description: O.NW.string(O.t.QxrDY2)
-  }], A = (0, g.ZP)(n.id, I ? E : void 0), w = o.createRef();
+  }], A = (0, v.ZP)(n.id, I ? E : void 0), w = o.createRef();
   return (0, r.jsx)(d.Gt, {
     value: S,
     children: (0, r.jsx)(b.Mt, {
@@ -98,7 +98,7 @@ function E(e) {
               "aria-hidden": !0
             }), (0, r.jsxs)("div", {
               className: Z.body,
-              children: [(0, r.jsx)(v.Z, {
+              children: [(0, r.jsx)(g.Z, {
                 user: n,
                 guildId: E
               }), (0, r.jsx)(c.X6q, {
@@ -159,8 +159,8 @@ function S(e) {
     showGuildProfile: C = !0,
     sourceAnalyticsLocations: A = []
   } = e, w = t === _.ME ? void 0 : t, L = (0, s.e7)([f.Z], () => f.Z.isBlocked(n.id)), {
-    analyticsLocations: M
-  } = (0, d.ZP)([...A, L ? a.Z.BLOCKED_PROFILE_MODAL : a.Z.IGNORED_PROFILE_MODAL]), R = (0, b.ZB)({
+    analyticsLocations: R
+  } = (0, d.ZP)([...A, L ? a.Z.BLOCKED_PROFILE_MODAL : a.Z.IGNORED_PROFILE_MODAL]), M = (0, b.ZB)({
     layout: L ? "BLOCKED_PROFILE_MODAL" : "IGNORED_PROFILE_MODAL",
     userId: n.id,
     guildId: w,
@@ -168,17 +168,17 @@ function S(e) {
     messageId: h,
     roleId: E,
     showGuildProfile: C
-  }), U = [{
+  }), B = [{
     icon: c.owK,
     description: O.NW.string(O.t.kcuWvb)
   }, {
     icon: c.owK,
     description: O.NW.string(L ? O.t.QxrDY2 : O.t.W6fjkZ)
-  }], B = (0, g.ZP)(n.id, C ? w : void 0), D = o.createRef();
+  }], U = (0, v.ZP)(n.id, C ? w : void 0), D = o.createRef();
   return (0, r.jsx)(d.Gt, {
-    value: M,
+    value: R,
     children: (0, r.jsx)(b.Mt, {
-      value: R,
+      value: M,
       children: (0, r.jsx)(c.Y0X, {
         transitionState: S,
         className: Z.root,
@@ -186,7 +186,7 @@ function S(e) {
         "aria-label": O.NW.string(O.t["3N/J2t"]),
         children: (0, r.jsx)(y.Z, {
           user: n,
-          displayProfile: B,
+          displayProfile: U,
           profileType: x.y0.FULL_SIZE,
           ref: D,
           children: (0, r.jsxs)("div", {
@@ -198,7 +198,7 @@ function S(e) {
               "aria-hidden": !0
             }), (0, r.jsxs)("div", {
               className: l()(Z.body, Z.bodySpacing),
-              children: [(0, r.jsx)(v.i, {
+              children: [(0, r.jsx)(g.i, {
                 user: n,
                 guildId: w
               }), (0, r.jsxs)("div", {
@@ -216,7 +216,7 @@ function S(e) {
                 })]
               }), (0, r.jsx)("div", {
                 className: Z.restrictedSafetyTable,
-                children: U.map((e, n) => {
+                children: B.map((e, n) => {
                   let {
                     icon: t,
                     description: o
@@ -235,16 +235,16 @@ function S(e) {
                   onClick: () => {
                     null == T || T(), (0, m.pQ)(P({
                       action: L ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-                      analyticsLocations: M
-                    }, R))
+                      analyticsLocations: R
+                    }, M))
                   }
                 }), (0, r.jsx)(I.Z, {
                   userId: n.id,
                   onClick: () => {
                     null == T || T(), (0, m.pQ)(P({
                       action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
-                      analyticsLocations: M
-                    }, R))
+                      analyticsLocations: R
+                    }, M))
                   }
                 })]
               })]

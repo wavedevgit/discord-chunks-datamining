@@ -15,8 +15,8 @@ var r = t(200651),
   p = t(899007),
   b = t(648052),
   m = t(867176),
-  g = t(280885),
-  v = t(900927),
+  v = t(280885),
+  g = t(900927),
   y = t(678738),
   I = t(502762),
   j = t(530),
@@ -39,20 +39,20 @@ function S(e) {
     sessionId: A,
     transitionState: w,
     onClose: L,
-    sourceAnalyticsLocations: M = []
-  } = e, R = t === O.ME ? void 0 : t, U = (0, f.ZP)(n.id, R), {
-    analyticsLocations: B
-  } = (0, c.ZP)([...M, s.Z.SIMPLIFIED_PROFILE_MODAL]), D = (0, u.ZB)({
+    sourceAnalyticsLocations: R = []
+  } = e, M = t === O.ME ? void 0 : t, B = (0, f.ZP)(n.id, M), {
+    analyticsLocations: U
+  } = (0, c.ZP)([...R, s.Z.SIMPLIFIED_PROFILE_MODAL]), D = (0, u.ZB)({
     layout: "SIMPLIFIED_MODAL",
     userId: n.id,
     sourceSessionId: A,
-    guildId: R,
+    guildId: M,
     channelId: S,
     messageId: T,
     roleId: C
   }), W = o.createRef(), F = (0, l.Z)(W);
   return (0, r.jsx)(c.Gt, {
-    value: B,
+    value: U,
     children: (0, r.jsx)(u.Mt, {
       value: D,
       children: (0, r.jsxs)(i.Y0X, {
@@ -62,7 +62,7 @@ function S(e) {
         "aria-label": Z.NW.string(Z.t["3N/J2t"]),
         children: [(0, r.jsxs)(I.Z, {
           user: n,
-          displayProfile: U,
+          displayProfile: B,
           profileType: _.y0.FULL_SIZE,
           ref: W,
           children: [(0, r.jsx)(x.Z, {
@@ -73,14 +73,14 @@ function S(e) {
           }), (0, r.jsxs)("header", {
             children: [(0, r.jsx)(m.Z, {
               user: n,
-              displayProfile: U,
+              displayProfile: B,
               profileType: _.y0.FULL_SIZE
             }), (0, r.jsx)("div", {
               className: N.headerInner,
               children: (0, r.jsx)(p.Z, {
                 user: n,
-                displayProfile: U,
-                guildId: R,
+                displayProfile: B,
+                guildId: M,
                 channelId: S,
                 profileType: _.y0.FULL_SIZE
               })
@@ -90,11 +90,11 @@ function S(e) {
             children: [(0, r.jsx)(j.Z, {
               user: n,
               profileType: _.y0.FULL_SIZE,
-              nickname: d.ZP.getName(R, S, n),
-              pronouns: null == U ? void 0 : U.pronouns,
+              nickname: d.ZP.getName(M, S, n),
+              pronouns: null == B ? void 0 : B.pronouns,
               nicknameVariant: "heading-xl/bold",
               tags: (0, r.jsx)(b.Z, {
-                displayProfile: U,
+                displayProfile: B,
                 profileType: _.y0.FULL_SIZE,
                 onClose: L
               })
@@ -119,15 +119,15 @@ function S(e) {
                 }), (0, r.jsxs)(i.zJl, {
                   fade: !0,
                   className: P.scroller,
-                  children: [(0, r.jsx)(g.Z, {
+                  children: [(0, r.jsx)(v.Z, {
                     userId: n.id,
-                    userBio: null == U ? void 0 : U.bio,
+                    userBio: null == B ? void 0 : B.bio,
                     setLineClamp: !1
                   }), (0, r.jsx)(y.Z, {
                     heading: Z.NW.string(Z.t["A//N4u"]),
-                    children: (0, r.jsx)(v.Z, {
+                    children: (0, r.jsx)(g.Z, {
                       userId: n.id,
-                      guildId: R,
+                      guildId: M,
                       tooltipDelay: _.vB
                     })
                   })]
@@ -135,8 +135,8 @@ function S(e) {
               })
             })]
           })]
-        }), (null == U ? void 0 : U.profileEffectId) != null && (0, r.jsx)(a.Z, {
-          profileEffectId: null == U ? void 0 : U.profileEffectId,
+        }), (null == B ? void 0 : B.profileEffectId) != null && (0, r.jsx)(a.Z, {
+          profileEffectId: null == B ? void 0 : B.profileEffectId,
           isHovering: F
         })]
       })

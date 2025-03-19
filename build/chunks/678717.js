@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(347469),
   u = n(213609),
   m = n(213713),
-  h = n(665149),
-  x = n(906467),
+  x = n(665149),
+  h = n(906467),
   p = n(259580),
   b = n(31336),
   f = n(19759),
@@ -25,8 +25,8 @@ var g = n(392750),
   y = n(806240),
   C = n(789654),
   T = n(719672),
-  O = n(691867),
-  S = n(916790),
+  S = n(691867),
+  O = n(916790),
   N = n(645973),
   k = n(903502),
   E = n(912072),
@@ -41,8 +41,8 @@ var g = n(392750),
   B = n(178821),
   z = n(958328),
   M = n(315384),
-  G = n(514866),
-  F = n(384207),
+  F = n(514866),
+  G = n(384207),
   W = n(264603),
   U = n(678639),
   H = n(351930),
@@ -90,16 +90,16 @@ function ee() {
       }, {
         id: "dispatcher",
         name: "Dispatcher",
-        render: () => (0, r.jsx)(S.Z, {})
+        render: () => (0, r.jsx)(O.Z, {})
       }];
-      return x.Z.isDeveloper && (e.push({
+      return h.Z.isDeveloper && (e.push({
         id: "shop",
         name: "Shop",
-        render: () => (0, r.jsx)(F.C, {})
+        render: () => (0, r.jsx)(G.C, {})
       }), e.push({
         id: "quick_actions",
         name: "Quick Actions",
-        render: () => (0, r.jsx)(G.Z, {})
+        render: () => (0, r.jsx)(F.Z, {})
       }), e.push({
         id: "end_to_end_encryption",
         name: "E2EE",
@@ -135,7 +135,7 @@ function ee() {
       }), e.push({
         id: "design_toggles",
         name: "Design Toggles",
-        render: () => (0, r.jsx)(O.Z, {})
+        render: () => (0, r.jsx)(S.Z, {})
       }), e.push({
         id: "overlays",
         name: "Dev Overlays",
@@ -164,7 +164,7 @@ function ee() {
         id: "affinity",
         name: "Affinity",
         render: () => (0, r.jsx)(g.Z, {})
-      }), x.Z.isDeveloper && e.push({
+      }), h.Z.isDeveloper && e.push({
         id: "content_inventory",
         name: "Content Inventory",
         render: () => (0, r.jsx)(m.Z, {})
@@ -226,17 +226,17 @@ function ee() {
       panel: i
     }
   }), (0, r.jsxs)(Z.Gk, {
-    children: [(0, r.jsxs)(h.ZP, {
+    children: [(0, r.jsxs)(x.ZP, {
       className: $.headerBar,
-      toolbar: (0, r.jsx)(h.ZP.Icon, {
+      toolbar: (0, r.jsx)(x.ZP.Icon, {
         icon: c.Dio,
         tooltip: K.NW.string(K.t.cpT0Cg),
         onClick: b.SO
       }),
-      children: [(0, r.jsx)(h.ZP.Icon, {
+      children: [(0, r.jsx)(x.ZP.Icon, {
         icon: c.Ymb,
         tooltip: "DevTools"
-      }), (0, r.jsx)(h.ZP.Title, {
+      }), (0, r.jsx)(x.ZP.Title, {
         children: "DevTools"
       })]
     }), (0, r.jsx)(n, {}), l(), (0, r.jsx)(Z.Br, {
@@ -284,15 +284,15 @@ function en() {
     className: q.container,
     children: (0, r.jsx)(c.P3F, {
       onClick: b.SO,
-      children: (0, r.jsxs)(h.ZP, {
+      children: (0, r.jsxs)(x.ZP, {
         className: i()($.headerBar, q.mobileHeaderCollapsed),
         toolbar: (0, r.jsx)(p.Z, {
           direction: p.Z.Directions.UP
         }),
-        children: [(0, r.jsx)(h.ZP.Icon, {
+        children: [(0, r.jsx)(x.ZP.Icon, {
           icon: c.Ymb,
           tooltip: "DevTools"
-        }), (0, r.jsx)(h.ZP.Title, {
+        }), (0, r.jsx)(x.ZP.Title, {
           children: "DevTools"
         })]
       })

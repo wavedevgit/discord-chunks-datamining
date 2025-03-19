@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => x
 }), n(47120), n(266796), n(26686), n(653041), n(230036);
@@ -37,7 +37,7 @@ function x() {
       onChange: s,
       onClear: () => s("")
     }), a.length > 0 ? a.map(t => {
-      let n = t.experiment.type === p.xY.GUILD ? N : b;
+      let n = t.experiment.type === p.xY.GUILD ? b : N;
       return (0, r.jsx)(n, {
         experiment: t.experiment,
         experimentId: t.id,
@@ -53,13 +53,13 @@ function x() {
   })
 }
 
-function b(e) {
+function N(e) {
   var t;
   let {
     experiment: n,
     experimentId: s,
     overrideDescriptor: u
-  } = e, [m, g] = i.useState(null != u), [x, b] = i.useState(!1), N = i.useCallback(() => {
+  } = e, [m, g] = i.useState(null != u), [x, N] = i.useState(!1), b = i.useCallback(() => {
     g(e => !e)
   }, []), _ = (0, l.e7)([d.Z], () => d.Z.getUserExperimentDescriptor(s)), E = (0, l.e7)([d.Z], () => d.Z.getLoadedUserExperiment(s)), j = (0, l.Wu)([d.Z], () => a().sortBy(d.Z.getRecentExposures(p.xY.USER, s), e => {
     let [t, n] = e;
@@ -68,7 +68,7 @@ function b(e) {
     let [t, n] = e;
     return "".concat(new Date(n).toLocaleString(), " (").concat(t, ")")
   })), C = (0, r.jsx)(o.P3F, {
-    onClick: N,
+    onClick: b,
     children: (0, r.jsxs)(o.vwX, {
       tag: o.RB0.H3,
       className: h.title,
@@ -146,7 +146,7 @@ function b(e) {
         className: h.debugButton,
         size: o.zxk.Sizes.SMALL,
         look: o.zxk.Looks.BLANK,
-        onClick: () => b(!0),
+        onClick: () => N(!0),
         children: "More Details \xbb"
       })]
     }), (0, r.jsx)(o.$i$, {
@@ -160,12 +160,12 @@ function b(e) {
   })
 }
 
-function N(e) {
+function b(e) {
   let {
     experiment: t,
     experimentId: n,
     overrideDescriptor: s
-  } = e, [m, g] = i.useState(null != s), [x, b] = i.useState(!1), N = i.useCallback(() => {
+  } = e, [m, g] = i.useState(null != s), [x, N] = i.useState(!1), b = i.useCallback(() => {
     g(e => !e)
   }, []), _ = (0, l.e7)([d.Z], () => d.Z.getLoadedGuildExperiment(n)), E = (0, l.Wu)([d.Z], () => a().sortBy(d.Z.getRecentExposures(p.xY.GUILD, n), e => {
     let [t, n] = e;
@@ -186,7 +186,7 @@ function N(e) {
     let s = a()(t).keys().map(Number).sort().map(e => "".concat(t[e], " guilds in bucket ").concat(e)).join(", ");
     return [r.join("\n"), s]
   }), O = (0, r.jsx)(o.P3F, {
-    onClick: N,
+    onClick: b,
     children: (0, r.jsxs)(o.vwX, {
       tag: o.RB0.H3,
       className: h.title,
@@ -272,7 +272,7 @@ function N(e) {
         className: h.debugButton,
         size: o.zxk.Sizes.SMALL,
         look: o.zxk.Looks.BLANK,
-        onClick: () => b(!0),
+        onClick: () => N(!0),
         children: "More Details \xbb"
       })]
     }), (0, r.jsx)(o.$i$, {

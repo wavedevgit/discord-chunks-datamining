@@ -18,7 +18,7 @@ function c(e) {
     onClickRow: d,
     selectedRowKey: u,
     rowHeight: m = 40
-  } = e, h = a.useMemo(() => t.map(e => (function(e) {
+  } = e, x = a.useMemo(() => t.map(e => (function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -40,13 +40,13 @@ function c(e) {
       variant: "text-sm/semibold",
       children: e.key
     })
-  }, e)), [t]), x = [n.length];
+  }, e)), [t]), h = [n.length];
   return (0, r.jsx)("div", {
     className: s.tableContainer,
     children: (0, r.jsx)(o.Tvr, {
       className: l,
       innerClassName: s.table,
-      sections: x,
+      sections: h,
       sectionHeight: 40,
       renderSection: e => {
         let {
@@ -54,7 +54,7 @@ function c(e) {
         } = e, a = s.tableHeader;
         return (0, r.jsx)("div", {
           className: a,
-          children: h.map(e => {
+          children: x.map(e => {
             var a, l;
             let i = e.cellClassName,
               o = {
@@ -72,14 +72,14 @@ function c(e) {
       renderRow: e => {
         let {
           rowIndex: t
-        } = e, a = n[t], l = a.key, x = i()(s.tableRow, {
+        } = e, a = n[t], l = a.key, h = i()(s.tableRow, {
           [s.selectedTableRow]: l === u,
           rowClassName: c
         });
         return (0, r.jsx)(o.P3F, {
-          className: x,
+          className: h,
           onClick: () => null == d ? void 0 : d(a),
-          children: h.map(e => {
+          children: x.map(e => {
             var n, l;
             let i = e.cellClassName,
               o = {

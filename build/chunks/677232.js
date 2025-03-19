@@ -1,6 +1,6 @@
-/** Chunk was on 95682 **/
+/** Chunk was on 23354 **/
 n.d(t, {
-  Z: () => v
+  Z: () => m
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -32,7 +32,7 @@ let d = [{
     box: "#DB6D6D",
     ribbon: "#67DA9C"
   }],
-  h = [{
+  _ = [{
     box: "#EABB75",
     ribbon: "#E4595C"
   }, {
@@ -54,33 +54,33 @@ let d = [{
     box: "#DB6F6F",
     ribbon: "#81C29F"
   }],
-  b = 1 / 300,
-  p = (0, o.animated)(c.Z),
+  p = 1 / 300,
+  E = (0, o.animated)(c.Z),
   f = (0, o.animated)(u.Z),
-  g = (0, o.animated)(a.OgN),
-  v = i.memo(function(e) {
+  h = (0, o.animated)(a.OgN),
+  m = i.memo(function(e) {
     let {
       themeOverride: t,
       hovered: n,
       isContentDismissed: o,
       boxColors: c = {
         dark: d,
-        light: h
+        light: _
       }
-    } = e, u = (0, s.ZP)(), [v, O] = function(e) {
+    } = e, u = (0, s.ZP)(), [m, b] = function(e) {
       let [t, n] = i.useState(!1), [r, o] = i.useState(Math.floor(7 * Math.random())), l = i.useRef(r);
       return i.useEffect(() => {
         l.current = r
       }), i.useEffect(() => {
         if (e) return;
-        let t = Math.random() <= b;
+        let t = Math.random() <= p;
         if (n(t), !t) {
           let e;
           do e = Math.floor(7 * Math.random()); while (e === l.current);
           o(e)
         }
       }, [e]), [t, r]
-    }(n), m = (0, a.q_F)({
+    }(n), O = (0, a.q_F)({
       reverse: !n,
       reset: !0,
       from: {
@@ -93,13 +93,13 @@ let d = [{
         tension: 800,
         friction: 24
       }
-    }), E = o ? O : 0, y = (0, l.wj)(null != t ? t : u) ? c.dark[E] : c.light[E];
-    return !n && o ? (0, r.jsx)(g, {}) : o && v ? (0, r.jsx)(f, {
+    }), g = o ? b : 0, N = (0, l.wj)(null != t ? t : u) ? c.dark[g] : c.light[g];
+    return !n && o ? (0, r.jsx)(h, {}) : o && m ? (0, r.jsx)(f, {
       isDark: (0, l.wj)(u),
-      style: m
-    }) : (0, r.jsx)(p, {
-      boxColor: y.box,
-      ribbonColor: y.ribbon,
-      style: m
+      style: O
+    }) : (0, r.jsx)(E, {
+      boxColor: N.box,
+      ribbonColor: N.ribbon,
+      style: O
     })
   })

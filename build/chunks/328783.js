@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => x
 }), n(47120), n(653041);
@@ -28,7 +28,7 @@ let f = (0, l.hQ)(),
         label: t.name,
         value: t.id
       }), e
-    }, []), [t]), b = i.useCallback(e => {
+    }, []), [t]), N = i.useCallback(e => {
       var t, i;
       if (null == e) return null;
       let s = n.get(e.value);
@@ -42,12 +42,12 @@ let f = (0, l.hQ)(),
         guildIcon: s.icon,
         guildIconSize: 32
       })
-    }, [n]), N = i.useCallback(e => {
+    }, [n]), b = i.useCallback(e => {
       let t = e[0];
       return null == t ? null : (0, r.jsx)(r.Fragment, {
-        children: b(t)
+        children: N(t)
       })
-    }, [b]), _ = i.useCallback(e => (0, d.nE)(e, !0, g.Sbl.USER_SETTINGS), []), E = i.useCallback(e => e === l, [l]), j = i.useCallback(e => e, []), C = i.useCallback(() => (0, d.nE)(null, !1), []);
+    }, [N]), _ = i.useCallback(e => (0, d.nE)(e, !0, g.Sbl.USER_SETTINGS), []), E = i.useCallback(e => e === l, [l]), j = i.useCallback(e => e, []), C = i.useCallback(() => (0, d.nE)(null, !1), []);
     return (0, r.jsxs)(o.Z, {
       title: p.NW.string(p.t.Pdd1nZ),
       titleId: f,
@@ -61,8 +61,8 @@ let f = (0, l.hQ)(),
         isSelected: E,
         options: x,
         select: _,
-        renderOptionValue: N,
-        renderOptionLabel: b,
+        renderOptionValue: b,
+        renderOptionLabel: N,
         serialize: j,
         clear: C,
         clearable: null != l

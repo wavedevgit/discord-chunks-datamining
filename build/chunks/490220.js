@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => m
 });
@@ -23,8 +23,8 @@ function m(e) {
   } = i.useContext(a.Sfi), {
     pendingAvatar: f,
     pendingBanner: x,
-    pendingThemeColors: b,
-    pendingPronouns: N,
+    pendingThemeColors: N,
+    pendingPronouns: b,
     pendingBio: _,
     tryItOutThemeColors: E,
     tryItOutAvatar: j,
@@ -55,11 +55,11 @@ function m(e) {
   return (0, r.jsx)(d.Z, {
     containerClassName: p,
     user: m,
-    pendingPronouns: N,
+    pendingPronouns: b,
     pendingBio: _,
     pendingBanner: null !== (t = null != C ? C : x) && void 0 !== t ? t : n(466045),
     pendingAvatar: S,
-    pendingThemeColors: null != E ? E : b,
+    pendingThemeColors: null != E ? E : N,
     pendingAvatarDecoration: T,
     pendingProfileEffectId: v,
     avatarClassName: null != j || null != f || h.enabled ? void 0 : u.spinningAvatar,

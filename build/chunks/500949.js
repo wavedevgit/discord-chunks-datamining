@@ -5,18 +5,18 @@ n.d(t, {
   GU: () => J,
   H8: () => q,
   HI: () => K,
-  HW: () => G,
+  HW: () => F,
   Ib: () => es,
   KB: () => eu,
   S2: () => H,
   W6: () => er,
   XM: () => ea,
-  YC: () => eh,
+  YC: () => ex,
   YE: () => ei,
   h9: () => eo,
   iw: () => en,
   jC: () => U,
-  jQ: () => F,
+  jQ: () => G,
   lT: () => Y,
   rd: () => ed,
   t4: () => ec,
@@ -31,8 +31,8 @@ var r, a, l = n(192379),
   d = n(694626),
   u = n(855930),
   m = n(385787),
-  h = n(566162),
-  x = n(567027),
+  x = n(566162),
+  h = n(567027),
   p = n(461195),
   b = n(857702),
   f = n(20450),
@@ -43,8 +43,8 @@ var r, a, l = n(192379),
   y = n(81011),
   C = n(981613),
   T = n(762399),
-  O = n(232112),
-  S = n(53796),
+  S = n(232112),
+  O = n(53796),
   N = n(723757),
   k = n(375924),
   E = n(596136),
@@ -89,7 +89,7 @@ function M(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let G = {
+let F = {
     sRGB: i.Z,
     A98RGB: o.Z,
     ACEScc: s.Z,
@@ -97,8 +97,8 @@ let G = {
     HPLuv: d.Z,
     HSL: u.Z,
     HSLuv: m.Z,
-    HSV: h.Z,
-    HWB: x.Z,
+    HSV: x.Z,
+    HWB: h.Z,
     ICTCP: p.Z,
     JzCzHz: b.Z,
     Jzazbz: f.Z,
@@ -109,16 +109,16 @@ let G = {
     Luv: y.Z,
     OKLCH: C.Z,
     OKLab: T.Z,
-    P3: O.Z,
-    ProPhoto: S.Z,
+    P3: S.Z,
+    ProPhoto: O.Z,
     REC_2020: N.Z,
     REC_2100_HLG: k.Z,
     REC_2100_PQ: E.Z,
     XYZ_D50: w.Z,
     XYZ_D65: P.Z
   },
-  F = Object.fromEntries(Object.keys(G).map(e => [e, e]));
-Object.values(G).forEach(e => I.Z.register(e));
+  G = Object.fromEntries(Object.keys(F).map(e => [e, e]));
+Object.values(F).forEach(e => I.Z.register(e));
 let {
   SemanticColors: W
 } = A.V, U = W, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
@@ -216,30 +216,30 @@ function ea(e) {
     darkness: a,
     lightness: l,
     easingStrength: o = 1
-  } = e, s = G[e.colorSpace], c = (0, R.Z)(n, s), d = (0, L.CD)(c, "white", 1 - a, {
+  } = e, s = F[e.colorSpace], c = (0, R.Z)(n, s), d = (0, L.CD)(c, "white", 1 - a, {
     space: s,
     outputSpace: i.Z
   }), u = (0, L.CD)(c, "black", 1 - l, {
     space: s,
     outputSpace: i.Z
-  }), m = Math.floor(r / 2), h = r - m, x = (0, L.w6)(d, c, {
+  }), m = Math.floor(r / 2), x = r - m, h = (0, L.w6)(d, c, {
     steps: m,
     outputSpace: s,
     space: s,
     progression: e => e ** o
   }), p = (0, L.w6)(u, c, {
-    steps: h,
+    steps: x,
     outputSpace: s,
     space: s,
     progression: e => e ** o
   }), b = [];
   for (let e = 0; e < m; e++) {
-    let t = x(e / m);
+    let t = h(e / m);
     b.push(t)
   }
   b.push(c);
-  for (let e = 1; e < h; e++) {
-    let t = p(1 - e / h);
+  for (let e = 1; e < x; e++) {
+    let t = p(1 - e / x);
     b.push(t)
   }
   return Object.fromEntries(b.map((e, n) => ["".concat(t, "-").concat(n), e]))
@@ -293,7 +293,7 @@ function em(e, t, n) {
   }), n)
 }
 
-function eh(e, t, n) {
+function ex(e, t, n) {
   el(e, e => M(z({}, e), {
     steps: t
   }), n)

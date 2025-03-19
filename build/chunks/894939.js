@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => P
 }), n(47120);
@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(763296),
   f = n(242291),
   x = n(893663),
-  b = n(331642),
-  N = n(63063),
+  N = n(331642),
+  b = n(63063),
   _ = n(581883),
   E = n(738486),
   j = n(918257),
@@ -96,7 +96,7 @@ function R(e) {
         title: T.NW.string(T.t.nzUc3N),
         children: (0, r.jsx)(o.R94, {
           children: T.NW.format(T.t.u9RWmp, {
-            helpdeskArticle: N.Z.getArticleURL(v.BhN.SOUNDBOARD)
+            helpdeskArticle: b.Z.getArticleURL(v.BhN.SOUNDBOARD)
           })
         })
       }), (0, r.jsx)(u.Z, {
@@ -125,7 +125,7 @@ function R(e) {
           })
         }),
         forcedDivider: !t,
-        children: [(0, r.jsx)(b.Z, {
+        children: [(0, r.jsx)(N.Z, {
           sound: _,
           isGlobal: j,
           onSelect: e => {

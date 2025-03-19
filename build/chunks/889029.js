@@ -1,6 +1,6 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
-  Z: () => b
+  Z: () => N
 });
 var r = n(200651);
 n(192379);
@@ -19,13 +19,13 @@ var i = n(120356),
   f = n(919),
   x = n(802138);
 
-function b() {
+function N() {
   let {
     enabled: e,
     autoToggle: t,
     hideInstantInvites: i,
-    hidePersonalInformation: b,
-    disableSounds: N,
+    hidePersonalInformation: N,
+    disableSounds: b,
     disableNotifications: _,
     enableContentProtection: E
   } = (0, a.cj)([u.Z], () => (function(e) {
@@ -97,7 +97,7 @@ function b() {
       }), (0, r.jsx)(d.F, {
         setting: g.s6.STREAMER_MODE_HIDE_PERSONAL_INFORMATION,
         children: (0, r.jsx)(l.j7V, {
-          value: b,
+          value: N,
           onChange: e => j("hidePersonalInformation", e),
           note: h.NW.string(h.t["+9Lra2"]),
           children: h.NW.string(h.t.UpQziI)
@@ -113,7 +113,7 @@ function b() {
       }), (0, r.jsx)(d.F, {
         setting: g.s6.STREAMER_MODE_DISABLE_SOUNDS,
         children: (0, r.jsx)(l.j7V, {
-          value: N,
+          value: b,
           onChange: e => j("disableSounds", e),
           note: h.NW.string(h.t.eAkaio),
           children: h.NW.string(h.t.o56OZm)

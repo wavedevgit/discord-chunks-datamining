@@ -1,6 +1,6 @@
-/** Chunk was on 95682 **/
+/** Chunk was on 23354 **/
 n.d(t, {
-  Z: () => O
+  Z: () => b
 });
 var r = n(200651),
   i = n(192379),
@@ -11,12 +11,12 @@ var r = n(200651),
   c = n(677232),
   u = n(884697),
   d = n(228624),
-  h = n(67409),
-  b = n(474936),
-  p = n(231338),
+  _ = n(67409),
+  p = n(474936),
+  E = n(231338),
   f = n(388032),
-  g = n(535156);
-let v = {
+  h = n(535156);
+let m = {
     dark: [{
       box: "#FFF19E",
       ribbon: "#FF484B"
@@ -62,21 +62,21 @@ let v = {
       ribbon: "#026530"
     }]
   },
-  O = e => {
+  b = e => {
     let {
       product: t,
       selectedVariantIndex: n,
-      returnRef: O,
-      onSuccess: m,
-      tooltipDelay: E,
-      isGiftEasterEggEnabled: y,
-      disableCustomColor: _ = !1
+      returnRef: b,
+      onSuccess: O,
+      tooltipDelay: g,
+      isGiftEasterEggEnabled: N,
+      disableCustomColor: I = !1
     } = e, {
-      analyticsLocations: C
-    } = (0, a.ZP)(), P = i.useRef(null), j = (0, l.Z)(P), x = _ ? p.BR.DARK : p.BR.LIGHT, N = (0, d.hv)("CollectiblesShopGiftButton");
+      analyticsLocations: T
+    } = (0, a.ZP)(), C = i.useRef(null), S = (0, l.Z)(C), y = I ? E.BR.DARK : E.BR.LIGHT, v = (0, d.hv)("CollectiblesShopGiftButton");
     return (0, u.x6)(t) ? null : (0, r.jsx)(o.ua7, {
       text: f.NW.string(f.t["JCFN//"]),
-      delay: E,
+      delay: g,
       children: e => {
         var i, l;
         return (0, r.jsx)(o.zxk, (i = function(e) {
@@ -97,34 +97,34 @@ let v = {
           }
           return e
         }({}, e), l = l = {
-          buttonRef: P,
-          className: g.giftButton,
-          color: _ ? o.Ttl.BRAND : o.Ttl.CUSTOM,
+          buttonRef: C,
+          className: h.giftButton,
+          color: I ? o.Ttl.BRAND : o.Ttl.CUSTOM,
           look: o.zxk.Looks.FILLED,
           size: o.PhG.ICON,
-          innerClassName: g.giftButtonInner,
+          innerClassName: h.giftButtonInner,
           "aria-label": f.NW.string(f.t.PEjaCw),
           onClick: e => {
             e.stopPropagation(), (0, s.Z)({
-              skuId: (0, h.S)({
+              skuId: (0, _.S)({
                 product: t,
                 selectedVariantIndex: n
               }),
               isGift: !0,
-              giftingOrigin: b.Wt.SHOP_PAGE,
-              analyticsLocations: C,
-              returnRef: O,
-              variantsReturnStyle: N,
-              onClose: null != m ? e => {
-                e && m()
+              giftingOrigin: p.Wt.SHOP_PAGE,
+              analyticsLocations: T,
+              returnRef: b,
+              variantsReturnStyle: v,
+              onClose: null != O ? e => {
+                e && O()
               } : void 0
             })
           },
-          children: y ? (0, r.jsx)(c.Z, {
-            hovered: j,
+          children: N ? (0, r.jsx)(c.Z, {
+            hovered: S,
             isContentDismissed: !0,
-            themeOverride: x,
-            boxColors: v
+            themeOverride: y,
+            boxColors: m
           }) : (0, r.jsx)(o.OgN, {
             size: "md",
             color: "currentColor"

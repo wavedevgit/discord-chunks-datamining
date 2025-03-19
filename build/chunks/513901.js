@@ -1,6 +1,6 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
-  Z: () => N
+  Z: () => b
 });
 var r = n(200651),
   i = n(192379),
@@ -17,14 +17,14 @@ var r = n(200651),
   h = n(981631),
   f = n(474936),
   x = n(388032),
-  b = n(669228);
+  N = n(669228);
 
-function N(e) {
+function b(e) {
   let {
     user: t,
     guild: n,
     className: s,
-    sectionTitle: N,
+    sectionTitle: b,
     forcedDivider: _ = !1,
     withTutorial: E = !1,
     showBorder: j = !1,
@@ -52,21 +52,21 @@ function N(e) {
     forcedDivider: _,
     borderType: p.Y.PREMIUM,
     hasBackground: !0,
-    title: N,
+    title: b,
     showBorder: j,
     errors: y,
     className: s,
     children: (0, r.jsxs)("div", {
-      className: b.buttonsContainer,
+      className: N.buttonsContainer,
       children: [(0, r.jsx)(R, {
         size: l.zxk.Sizes.SMALL,
         onClick: A,
         className: a()({
-          [b.buttonHighlighted]: E
+          [N.buttonHighlighted]: E
         }),
         children: x.NW.string(x.t["0nEVoK"])
       }), (C || void 0 !== I ? null != I : null != v) && (0, r.jsx)(l.zxk, {
-        className: b.removeButton,
+        className: N.removeButton,
         color: l.zxk.Colors.PRIMARY,
         look: l.zxk.Looks.LINK,
         size: l.zxk.Sizes.SMALL,

@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => C
 }), n(47120), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648);
@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(4242),
   f = n(996746),
   x = n(711325),
-  b = n(852630),
-  N = n(731994),
+  N = n(852630),
+  b = n(731994),
   _ = n(276107);
 
 function E(e) {
@@ -57,7 +57,7 @@ function C() {
   var e;
   let [t, n] = (0, i.useState)(!1), [s, a] = (0, i.useState)(!1), [l, c] = (0, i.useState)(null), m = (0, g.ZP)(e => e.toolsCache), {
     setToolsCache: f,
-    removeToolsCache: b
+    removeToolsCache: N
   } = (0, g.L3)(), {
     setImgCache: C
   } = (0, g.W_)(), A = (0, i.useCallback)(e => {
@@ -80,8 +80,8 @@ function C() {
       preview: !0
     }))
   }, []), R = (0, i.useCallback)(e => {
-    b(e)
-  }, [b]);
+    N(e)
+  }, [N]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: _.controls,
@@ -141,7 +141,7 @@ function C() {
         }), (0, r.jsx)(d.Z, {
           title: "upload image",
           description: "upload the background",
-          icons: N.pA,
+          icons: b.pA,
           onDrop: async e => {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
@@ -297,17 +297,17 @@ function I(e) {
         className: _.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
-      }), (0, r.jsx)(b.Z, {
+      }), (0, r.jsx)(N.Z, {
         nameplate: t
       }), (0, r.jsx)(o.Text, {
         className: _.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"
       }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(b.Z, {
+        children: [(0, r.jsx)(N.Z, {
           selected: !0,
           nameplate: t
-        }), (0, r.jsx)(b.Z, {
+        }), (0, r.jsx)(N.Z, {
           selected: !0
         })]
       })]

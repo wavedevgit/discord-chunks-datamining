@@ -13,8 +13,8 @@ var a = n(913527),
   d = n(883904),
   u = n(211644),
   m = n(675478),
-  h = n(681619),
-  x = n(793272);
+  x = n(681619),
+  h = n(793272);
 let p = e => {
     switch (e) {
       case c.D.DC_DISMISSED:
@@ -68,33 +68,33 @@ function _() {
       dismissibleContent: e
     }));
   return (0, r.jsxs)("div", {
-    className: x.panelContainer,
+    className: h.panelContainer,
     children: [(0, r.jsxs)("div", {
-      className: x.buttonContainer,
+      className: h.buttonContainer,
       children: [(0, r.jsx)(s.zxk, {
-        className: x.button,
+        className: h.button,
         onClick: () => (0, d.EG)(),
         children: "Reset Daily Cap"
       }), (0, r.jsx)(s.zxk, {
-        className: x.button,
+        className: h.button,
         onClick: m.sr,
         children: "Clear All Dismissed Contents"
       }), (0, r.jsx)(s.zxk, {
-        className: x.button,
+        className: h.button,
         onClick: m.bE,
         children: "Check All Dismissed Contents"
       })]
     }), (0, r.jsx)("br", {}), (0, r.jsxs)("div", {
-      className: x.info,
+      className: h.info,
       children: ["Last winner time: ", a]
     }), (0, r.jsx)("br", {}), (0, r.jsx)("div", {
-      className: x.candidatesTableContainer,
-      children: (0, r.jsx)(h.Z, {
-        className: x.candidatesTable,
+      className: h.candidatesTableContainer,
+      children: (0, r.jsx)(x.Z, {
+        className: h.candidatesTable,
         columns: f,
         data: _
       })
-    }), (0, r.jsx)("br", {}), (0, r.jsx)(h.Z, {
+    }), (0, r.jsx)("br", {}), (0, r.jsx)(x.Z, {
       columns: b,
       data: o
     })]

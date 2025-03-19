@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   V9: () => O,
   ek: () => C
@@ -18,8 +18,8 @@ var r = n(200651),
   h = n(317257),
   f = n(120786),
   x = n(970815),
-  b = n(82856),
-  N = n(981631),
+  N = n(82856),
+  b = n(981631),
   _ = n(215023),
   E = n(388032),
   j = n(577956);
@@ -42,20 +42,20 @@ let C = {
       analyticsLocations: k
     } = (0, d.ZP)(c.Z.VIRTUAL_CURRENCY_BALANCE_WIDGET), W = i.useRef(null), {
       shouldOpen: L
-    } = (0, b.lJ)({
+    } = (0, N.lJ)({
       backgroundElementRef: W
     }), {
       shouldOpen: B
     } = (0, g.Mm)({
       backgroundElementRef: W,
       isCoachmarkEnabled: O,
-      onCloseCallback: N.dG4,
-      onClickPill: N.dG4,
+      onCloseCallback: b.dG4,
+      onClickPill: b.dG4,
       linkOnClick: () => {
         (0, m.navigateToQuestHome)()
       },
       ctaOnClick: () => {
-        w.pathname !== N.Z5c.COLLECTIBLES_SHOP && (0, u.mK)({
+        w.pathname !== b.Z5c.COLLECTIBLES_SHOP && (0, u.mK)({
           openInLayer: !1,
           tab: _.AW.ORBS,
           analyticsLocations: k,
@@ -66,7 +66,7 @@ let C = {
     i.useEffect(() => {
       if (!O) return;
       let e = (0, g.wH)();
-      (0, b.Pe)() || e || M ? (Z(!0), R(!1)) : Z(!1)
+      (0, N.Pe)() || e || M ? (Z(!0), R(!1)) : Z(!1)
     }, [O, M]);
     let U = i.useCallback(() => {
         let e = !P;

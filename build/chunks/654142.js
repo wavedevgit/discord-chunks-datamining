@@ -1,11 +1,11 @@
-/** Chunk was on 53494 **/
+/** Chunk was on 92196 **/
 n.d(t, {
   Z: () => v
 }), n(653041), n(47120);
 var r = n(200651),
   i = n(192379),
-  l = n(442837),
-  o = n(239091),
+  o = n(442837),
+  l = n(239091),
   a = n(749210),
   s = n(905423),
   c = n(664915),
@@ -55,13 +55,13 @@ let v = i.memo(function(e) {
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        o = Object.keys(e);
+      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var o = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["folderNode"]);
@@ -70,7 +70,7 @@ let v = i.memo(function(e) {
     name: _,
     color: O,
     children: j
-  } = t, C = j.map(e => e.id), x = (0, s.Z)(e => e.guildId), S = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(y)), P = function(e) {
+  } = t, C = j.map(e => e.id), x = (0, s.Z)(e => e.guildId), S = (0, o.e7)([c.Z], () => c.Z.isFolderExpanded(y)), P = function(e) {
     let t = e.children.map(e => {
         let t = e.id,
           n = d.Z.getGuild(t);
@@ -83,15 +83,15 @@ let v = i.memo(function(e) {
   }(t), I = (0, f.Z)(t), {
     mentionCount: N,
     isMentionLowImportance: Z,
-    unread: E
-  } = (0, l.cj)([u.default], () => ({
+    unread: w
+  } = (0, o.cj)([u.default], () => ({
     mentionCount: C.map(e => u.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
     isMentionLowImportance: C.every(e => u.default.getIsMentionLowImportance(e)),
     unread: C.some(e => u.default.hasUnread(e))
-  })), w = i.useCallback(() => {
+  })), E = i.useCallback(() => {
     a.Z.toggleGuildFolderExpand(y)
   }, [y]), T = i.useCallback(e => {
-    (0, o.jW)(e, async () => {
+    (0, l.jW)(e, async () => {
       let {
         default: e
       } = await n.e("52590").then(n.bind(n, 205784));
@@ -99,20 +99,20 @@ let v = i.memo(function(e) {
         folderId: y,
         folderName: _,
         folderColor: O,
-        unread: E || N > 0
+        unread: w || N > 0
       }))
     })
-  }, [y, _, O, E, N]);
+  }, [y, _, O, w, N]);
   return (0, r.jsx)(h.Z, b(m({}, v), {
     folderNode: t,
     expanded: S,
     selected: null != x && C.includes(x),
     mentionCount: N,
     isMentionLowImportance: Z,
-    unread: E,
+    unread: w,
     mediaState: I,
     defaultFolderName: P,
-    onExpandCollapse: w,
+    onExpandCollapse: E,
     onContextMenu: T
   }))
 })

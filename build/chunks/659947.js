@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => T
 }), n(653041), n(47120);
@@ -18,7 +18,7 @@ var r = n(200651),
   f = n(388032),
   x = n(855688);
 
-function b(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function b(e) {
   return e
 }
 
-function N(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -103,9 +103,9 @@ function T(e) {
     o.current = s
   });
   let [d, u] = i.useState(null !== (n = null === (t = s.params) || void 0 === t ? void 0 : t.channelId) && void 0 !== n ? n : void 0), m = i.useCallback(() => {
-    (0, a.ZDy)(async () => e => (0, r.jsx)(I, N(b({}, e), {
+    (0, a.ZDy)(async () => e => (0, r.jsx)(I, b(N({}, e), {
       onSelect: e => {
-        u(e), l.Z.setKeybind(N(b({}, o.current), {
+        u(e), l.Z.setKeybind(b(N({}, o.current), {
           params: {
             channelId: e
           }
@@ -140,8 +140,8 @@ function I(e) {
     transitionState: t,
     onClose: n,
     onSelect: l
-  } = e, c = i.useId(), b = i.useRef(null), {
-    mouseFocusEnabled: N,
+  } = e, c = i.useId(), N = i.useRef(null), {
+    mouseFocusEnabled: b,
     enableMouseFocus: _,
     disableMouseFocus: C
   } = function() {
@@ -193,7 +193,7 @@ function I(e) {
   i.useEffect(() => {
     let {
       current: e
-    } = b;
+    } = N;
     null == e || e.isItemVisible(0, P, !0) || e.scrollToIndex({
       section: 0,
       row: P
@@ -255,7 +255,7 @@ function I(e) {
         innerId: c,
         innerRole: "listbox",
         "aria-label": f.NW.string(f.t["+N3fW1"]),
-        ref: b,
+        ref: N,
         sections: [D],
         renderRow: function(e) {
           let {
@@ -273,7 +273,7 @@ function I(e) {
             channel: i,
             category: s,
             focused: P === t,
-            onMouseEnter: () => N.current && R(t),
+            onMouseEnter: () => b.current && R(t),
             onClick: () => {
               l(i.id), n()
             },

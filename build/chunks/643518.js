@@ -1,6 +1,6 @@
 /** Chunk was on 81818 **/
 t.d(n, {
-  Z: () => v
+  Z: () => g
 }), t(653041);
 var r = t(442837),
   o = t(468363),
@@ -15,13 +15,13 @@ var r = t(442837),
   p = t(146078),
   b = t(228168),
   m = t(981631),
-  g = t(388032);
+  v = t(388032);
 
-function v(e) {
+function g(e) {
   let {
     user: n,
     currentUser: t,
-    guildId: v,
+    guildId: g,
     initialSubsection: y
   } = e, {
     voiceActivityStatusEnabled: I
@@ -41,7 +41,7 @@ function v(e) {
     voiceActivity: N
   } = (0, d.Z)({
     userId: n.id,
-    guildId: v,
+    guildId: g,
     surface: "use-user-profile-modal-tab-bar-items"
   }), P = n.id === (null == t ? void 0 : t.id), E = (0, r.e7)([l.Z, i.Z], () => {
     let e = P ? l.Z.getStatus() : i.Z.getStatus(n.id);
@@ -52,21 +52,21 @@ function v(e) {
   } = (0, a.Z)(n), w = null == A ? void 0 : A.length, L = (0, u.Z)({
     user: n,
     location: m.Sbl.PROFILE_MODAL_TABS
-  }), M = [{
+  }), R = [{
     section: b.oh.USER_INFO,
-    text: g.NW.string(g.t.jGoPJS)
+    text: v.NW.string(v.t.jGoPJS)
   }];
-  return !E && (S || (I || j) && null == _ && null == N && null != Z) ? M.push({
+  return !E && (S || (I || j) && null == _ && null == N && null != Z) ? R.push({
     section: b.oh.ACTIVITY,
-    text: g.NW.string(g.t.chq59f)
-  }) : (T || null == O && y === b.Tb.RECENT_ACTIVITY) && M.push({
+    text: v.NW.string(v.t.chq59f)
+  }) : (T || null == O && y === b.Tb.RECENT_ACTIVITY) && R.push({
     section: b.oh.ACTIVITY,
-    text: g.NW.string(g.t.chq59f)
-  }), !P && L && (M.push({
+    text: v.NW.string(v.t.chq59f)
+  }), !P && L && (R.push({
     section: b.oh.MUTUAL_FRIENDS,
     text: (0, f.Z)(C)
-  }), M.push({
+  }), R.push({
     section: b.oh.MUTUAL_GUILDS,
     text: (0, p.Z)(w)
-  })), M
+  })), R
 }

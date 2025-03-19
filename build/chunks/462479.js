@@ -1,4 +1,4 @@
-/** Chunk was on 53494 **/
+/** Chunk was on 92196 **/
 e.exports = {
   newChannel: "newChannel__599fa"
 }

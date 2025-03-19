@@ -16,8 +16,8 @@ var o = t(442837),
   p = t(29899),
   b = t(678738),
   m = t(151545),
-  g = t(744802),
-  v = t(493043),
+  v = t(744802),
+  g = t(493043),
   y = t(864141),
   I = t(228168),
   j = t(981631),
@@ -52,19 +52,19 @@ function O(e) {
     userId: n.id,
     guildId: Z,
     surface: "user-profile-modal-activity"
-  }), M = (0, o.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), R = n.id === t.id, U = (0, o.e7)([a.Z, c.Z], () => {
-    let e = R ? a.Z.getStatus() : c.Z.getStatus(n.id);
+  }), R = (0, o.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), M = n.id === t.id, B = (0, o.e7)([a.Z, c.Z], () => {
+    let e = M ? a.Z.getStatus() : c.Z.getStatus(n.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), B = T.length > 0 || null != A, D = (E || S) && null == A && null == L && null != w, W = C.length > 0;
-  return !U && (B || D) || W || !M ? (0, r.jsxs)(i.zJl, {
+  }), U = T.length > 0 || null != A, D = (E || S) && null == A && null == L && null != w, W = C.length > 0;
+  return !B && (U || D) || W || !R ? (0, r.jsxs)(i.zJl, {
     className: x.scroller,
     fade: !0,
-    children: [!U && (B || D) ? (0, r.jsxs)(b.Z, {
+    children: [!B && (U || D) ? (0, r.jsxs)(b.Z, {
       children: [D && (0, r.jsx)(y.Z, {
         user: n,
         voiceChannel: w,
         onClose: P
-      }), null != A && (0, r.jsx)(v.Z, {
+      }), null != A && (0, r.jsx)(g.Z, {
         location: "UserProfileModalActivity",
         user: n,
         currentUser: t,
@@ -80,14 +80,14 @@ function O(e) {
       }, "live-".concat(o)))]
     }) : null, W ? (0, r.jsx)(b.Z, {
       heading: h.NW.string(h.t.M0zgnZ),
-      subheading: R ? h.NW.format(h.t["4bk9Ag"], {
+      subheading: M ? h.NW.format(h.t["4bk9Ag"], {
         learnMoreHook: (e, n) => (0, r.jsx)(i.eee, {
           href: d.Z.getArticleURL(j.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, n)
       }) : void 0,
       scrollIntoView: N === I.Tb.RECENT_ACTIVITY,
-      children: C.map(e => (0, r.jsx)(g.Z, {
+      children: C.map(e => (0, r.jsx)(v.Z, {
         location: "UserProfileModalActivity",
         user: n,
         currentUser: t,

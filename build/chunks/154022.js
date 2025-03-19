@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => Y
 }), n(47120);
@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(627845),
   f = n(600164),
   x = n(313201),
-  b = n(786761),
-  N = n(3148),
+  N = n(786761),
+  b = n(3148),
   _ = n(739566),
   E = n(753206),
   j = n(440849),
@@ -135,7 +135,7 @@ function Y(e) {
 function K() {
   let e = I.jU.useSetting(),
     [t] = i.useState(() => {
-      let e = (0, b.e5)(U(M({}, (0, N.ZP)({
+      let e = (0, N.e5)(U(M({}, (0, b.ZP)({
         channelId: "1337",
         content: k.NW.formatToPlainString(k.t.bB80LC, {
           previewLink: "https://discord.com/accessibility"

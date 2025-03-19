@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   O: () => I
 }), n(47120);
@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(822857),
   f = n(317257),
   x = n(120786),
-  b = n(775451),
-  N = n(970815),
+  N = n(775451),
+  b = n(970815),
   _ = n(275388),
   E = n(720463),
   j = n(931928),
@@ -64,7 +64,7 @@ function y() {
       children: "Balance Widget Components"
     }), (0, r.jsx)(C.E_, {
       label: "Balance Widget Menu",
-      children: (0, r.jsx)(b.V9, {
+      children: (0, r.jsx)(N.V9, {
         ctaText: v.NW.string(v.t["J+vlIS"]),
         ctaOnClick: O.dG4,
         isCoachmarkEnabled: !1
@@ -125,20 +125,20 @@ function y() {
       })]
     }), (0, r.jsxs)(C.E_, {
       label: "Balance Widget Pill",
-      children: [(0, r.jsx)(N.A4, {
+      children: [(0, r.jsx)(b.A4, {
         balance: 150,
         balanceWidgetMode: f.b.DEFAULT
-      }), (0, r.jsx)(N.A4, {
+      }), (0, r.jsx)(b.A4, {
         balance: 150,
         balanceWidgetMode: f.b.HIGHLIGHTED
-      }), (0, r.jsx)(N.A4, {
+      }), (0, r.jsx)(b.A4, {
         balance: 150,
         balanceWidgetMode: f.b.SELECTED
-      }), (0, r.jsx)(N.A4, {
+      }), (0, r.jsx)(b.A4, {
         balance: 0,
         balanceWidgetMode: f.b.DEFAULT,
         showNotificationBadge: !0
-      }), (0, r.jsx)(N.A4, {
+      }), (0, r.jsx)(b.A4, {
         balance: null,
         balanceWidgetMode: f.b.DEFAULT
       })]
@@ -160,7 +160,7 @@ function y() {
         children: "Set Balance"
       }), (0, r.jsx)("div", {
         className: S.interactivePillContainer,
-        children: (0, r.jsx)(N.A4, {
+        children: (0, r.jsx)(b.A4, {
           balance: p,
           balanceWidgetMode: j,
           onClick: () => I()
@@ -184,7 +184,7 @@ function y() {
         children: "Simulate Loading State"
       }), (0, r.jsx)("div", {
         className: S.interactivePillContainer,
-        children: (0, r.jsx)(N.A4, {
+        children: (0, r.jsx)(b.A4, {
           balance: p,
           balanceWidgetMode: j,
           onClick: () => I()

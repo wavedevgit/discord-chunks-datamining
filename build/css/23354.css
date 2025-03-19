@@ -1,6 +1,6 @@
 /**
   Module ID: 23354
-  Original File Name: 4e617a7d0684fb3e
+  Original File Name: 29c04e553490c325
 **/
 .ragingDemon_ac6454 {
     position: relative;
@@ -2319,6 +2319,44 @@ img.thumbnail__0f2e8 {
     margin: 2px
 }
 
+.upsellFooter__5e07c {
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    color: var(--text-normal);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 16px;
+    padding: 8px
+}
+
+.upsellFooterIcon__5e07c {
+    flex-shrink: 0;
+    margin-right: 8px;
+    height: 24px;
+    width: 24px
+}
+
+.reverseTrialUpsellContainer__5e07c {
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0 0 40px 0 rgba(229,85,211,.5)
+}
+
+.unlockIcon__5e07c {
+    height: 46px;
+    width: 46px;
+    pointer-events: none;
+    position: absolute;
+    left: 7px;
+    top: -14px
+}
+
+.upsellText__5e07c {
+    padding-left: 48px
+}
+
 .premiumLabel_e681d1 {
     display: flex;
     justify-content: space-between;
@@ -3164,44 +3202,6 @@ img.thumbnail__0f2e8 {
     opacity: 1
 }
 
-.upsellFooter__5e07c {
-    background-color: var(--background-secondary);
-    border-radius: 8px;
-    color: var(--text-normal);
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    line-height: 18px;
-    margin-top: 16px;
-    padding: 8px
-}
-
-.upsellFooterIcon__5e07c {
-    flex-shrink: 0;
-    margin-right: 8px;
-    height: 24px;
-    width: 24px
-}
-
-.reverseTrialUpsellContainer__5e07c {
-    position: relative;
-    border-radius: 4px;
-    box-shadow: 0 0 40px 0 rgba(229,85,211,.5)
-}
-
-.unlockIcon__5e07c {
-    height: 46px;
-    width: 46px;
-    pointer-events: none;
-    position: absolute;
-    left: 7px;
-    top: -14px
-}
-
-.upsellText__5e07c {
-    padding-left: 48px
-}
-
 .tutorial__73f2a {
     position: absolute;
     top: -70px;
@@ -3483,4 +3483,4 @@ img.thumbnail__0f2e8 {
     background-image: url(/assets/05207174d5432737.svg)
 }
 
-/*# sourceMappingURL=4e617a7d0684fb3e.css.map*/
+/*# sourceMappingURL=29c04e553490c325.css.map*/

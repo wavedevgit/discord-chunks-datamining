@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => p
 });
@@ -24,12 +24,12 @@ let p = e => {
   } = e, {
     analyticsLocations: f
   } = (0, l.ZP)(p), x = (0, o.rK)(), {
-    enabled: b
+    enabled: N
   } = o.RO.useExperiment({
     location: "GiftNitro"
   }, {
     autoTrackExposure: x
-  }), N = b && x;
+  }), b = N && x;
   return (0, r.jsx)(l.Gt, {
     value: f,
     children: (0, r.jsxs)("div", {
@@ -40,10 +40,10 @@ let p = e => {
         children: [(0, r.jsx)(a.X6q, {
           variant: "heading-lg/extrabold",
           className: u.heading,
-          children: N ? d.NW.string(d.t.LB3bJC) : d.NW.string(d.t.Ve9Ge3)
+          children: b ? d.NW.string(d.t.LB3bJC) : d.NW.string(d.t.Ve9Ge3)
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
-          children: N ? d.NW.string(d.t.u49cn5) : d.NW.string(d.t.yQ06u7)
+          children: b ? d.NW.string(d.t.u49cn5) : d.NW.string(d.t.yQ06u7)
         }), (0, r.jsx)(c.Z, {
           isGift: !0,
           className: u.giftCardButton,
@@ -54,7 +54,7 @@ let p = e => {
           premiumModalAnalyticsLocation: h
         })]
       }), (0, r.jsx)("img", {
-        src: N ? g : m,
+        src: b ? g : m,
         className: s()(u.bannerImage, n),
         alt: "gift nitro banner"
       })]

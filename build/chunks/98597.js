@@ -1,15 +1,15 @@
-/** Chunk was on 53494 **/
+/** Chunk was on 92196 **/
 n.d(t, {
   CN: () => N,
   ZP: () => D,
-  eP: () => w,
-  hR: () => E,
+  eP: () => E,
+  hR: () => w,
   jo: () => Z
 });
 var r, i = n(200651),
-  l = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  o = n(192379),
+  l = n(120356),
+  a = n.n(l),
   s = n(442837),
   c = n(481060),
   u = n(787014),
@@ -71,13 +71,13 @@ function Z(e, t) {
   return null == t ? x.containerDefault : e > t ? x.containerDragAfter : x.containerDragBefore
 }
 
-function E(e) {
+function w(e) {
   let {
     channel: t,
     disableManageChannels: n,
     tabIndex: r,
-    forceShowButtons: l,
-    hasChannelInfo: o = !1
+    forceShowButtons: o,
+    hasChannelInfo: l = !1
   } = e;
   if ((0, s.e7)([y.Z, _.Z], () => n || _.Z.getGuildId() === j.I_8 || !y.Z.can(j.Plq.MANAGE_CHANNELS, t) && !y.Z.can(j.Plq.MANAGE_ROLES, t) && !y.Z.can(j.Plq.MANAGE_WEBHOOKS, t) || (0, m.r8)(t.type) && !y.Z.can(j.Plq.VIEW_CHANNEL, t) || t.isGuildVocal() && !y.Z.can(j.Plq.CONNECT, t) || !m.dF.has(t.type))) return null;
 
@@ -94,7 +94,7 @@ function E(e) {
         onBlur: u
       } = e;
       return (0, i.jsx)(c.P3F, {
-        className: a()(x.iconItem, l ? x.alwaysShown : void 0, o ? x.iconWithChannelInfo : x.iconNoChannelInfo),
+        className: a()(x.iconItem, o ? x.alwaysShown : void 0, l ? x.iconWithChannelInfo : x.iconNoChannelInfo),
         onClick: d,
         tabIndex: r,
         "aria-label": C.NW.string(C.t["3gUsJS"]),
@@ -112,18 +112,18 @@ function E(e) {
   })
 }
 
-function w(e) {
+function E(e) {
   let {
     channel: t,
     isDefaultChannel: r = !1,
-    locked: o,
+    locked: l,
     tabIndex: u,
     forceShowButtons: h,
     hasChannelInfo: m = !1
-  } = e, _ = (0, s.e7)([v.Z], () => v.Z.getGuild(t.getGuildId())), O = (0, s.e7)([f.Z], () => f.Z.getStageInstanceByChannel(t.id), [t.id]), S = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), N = (0, s.e7)([y.Z], () => (0, p.b)(y.Z, _, t, O)), Z = (0, s.e7)([y.Z], () => y.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? C.NW.string(C.t.zJrgTE) : C.NW.string(C.t.Sd8Ix8)), E = l.useRef(null);
-  if (o || !N) return null;
+  } = e, _ = (0, s.e7)([v.Z], () => v.Z.getGuild(t.getGuildId())), O = (0, s.e7)([f.Z], () => f.Z.getStageInstanceByChannel(t.id), [t.id]), S = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), N = (0, s.e7)([y.Z], () => (0, p.b)(y.Z, _, t, O)), Z = (0, s.e7)([y.Z], () => y.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? C.NW.string(C.t.zJrgTE) : C.NW.string(C.t.Sd8Ix8)), w = o.useRef(null);
+  if (l || !N) return null;
 
-  function w() {
+  function E() {
     if (null != _) {
       let e = b.Z.getAllActiveStreams().filter(e => e.state !== j.jm8.ENDED && e.channelId === t.id);
       (0, c.ZDy)(async () => {
@@ -147,11 +147,11 @@ function w(e) {
     color: "currentColor"
   });
   return r && (T = (0, i.jsx)(g.Z, {
-    childRef: E,
+    childRef: w,
     tutorialId: "instant-invite",
     position: "left",
     children: (0, i.jsx)("div", {
-      ref: E,
+      ref: w,
       children: T
     })
   })), (0, i.jsx)(c.ua7, {
@@ -159,7 +159,7 @@ function w(e) {
     children: e => (0, i.jsx)(c.P3F, I(P({
       className: a()(x.iconItem, h ? x.alwaysShown : void 0, m ? x.iconWithChannelInfo : x.iconNoChannelInfo)
     }, e), {
-      onClick: w,
+      onClick: E,
       tabIndex: u,
       "aria-label": Z,
       children: T
@@ -212,12 +212,12 @@ function A(e) {
     }))
   })
 }
-class D extends(r = l.PureComponent) {
+class D extends(r = o.PureComponent) {
   renderEditButton() {
-    return (0, i.jsx)(E, P({}, this.props))
+    return (0, i.jsx)(w, P({}, this.props))
   }
   renderInviteButton() {
-    return (0, i.jsx)(w, P({}, this.props))
+    return (0, i.jsx)(E, P({}, this.props))
   }
   renderRemoveSuggestionButton() {
     return (0, i.jsx)(T, P({}, this.props))

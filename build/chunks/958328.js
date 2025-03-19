@@ -13,8 +13,8 @@ var a = n(120356),
   d = n(592125),
   u = n(430824),
   m = n(496675),
-  h = n(944486),
-  x = n(914010),
+  x = n(944486),
+  h = n(914010),
   p = n(233608),
   b = n(71080),
   f = n(747996),
@@ -43,8 +43,8 @@ function g(e) {
 }
 
 function v() {
-  let e = (0, o.e7)([h.Z], () => h.Z.getChannelId()),
-    t = (0, o.e7)([x.Z], () => x.Z.getGuildId()),
+  let e = (0, o.e7)([x.Z], () => x.Z.getChannelId()),
+    t = (0, o.e7)([h.Z], () => h.Z.getGuildId()),
     n = (0, o.e7)([d.Z], () => d.Z.getChannel(e)),
     a = (0, o.e7)([u.Z], () => u.Z.getGuild(t)),
     v = (0, o.e7)([m.Z], () => m.Z.computePermissions(n)),
@@ -52,7 +52,7 @@ function v() {
     y = (0, c.ZP)(n, !0),
     C = null != n ? (0, b.IG)(n, !1, !0) : null,
     T = null != a ? p.Z.getGuildPermissionSpecMap(a) : null,
-    O = Object.values(null != C ? C : {}).map(e => {
+    S = Object.values(null != C ? C : {}).map(e => {
       let {
         title: t,
         flag: n
@@ -62,7 +62,7 @@ function v() {
         can: a
       }, t)
     }),
-    S = Object.values(null != T ? T : {}).map(e => {
+    O = Object.values(null != T ? T : {}).map(e => {
       let {
         title: t,
         flag: n
@@ -81,13 +81,13 @@ function v() {
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-md/semibold",
           children: null != y ? "Permissions in ".concat(y) : "No channel selected"
-        }), O]
+        }), S]
       }), (0, r.jsxs)("section", {
         className: f.section,
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-md/semibold",
           children: null != a ? "Permissions in ".concat(a.name) : "No guild selected"
-        }), S]
+        }), O]
       })]
     })
   })

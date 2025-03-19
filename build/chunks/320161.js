@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => x
 }), n(47120);
@@ -24,31 +24,31 @@ function x(e) {
     children: d,
     onCopy: m,
     "aria-label": x,
-    delay: b = h
-  } = e, [N, _] = i.useState(0), [E, j] = i.useState(!1), [C, O] = i.useState(!1), [v] = i.useState(() => new a.V7), [S] = i.useState(() => new a.V7);
+    delay: N = h
+  } = e, [b, _] = i.useState(0), [E, j] = i.useState(!1), [C, O] = i.useState(!1), [v] = i.useState(() => new a.V7), [S] = i.useState(() => new a.V7);
   if (i.useEffect(() => () => {
       v.stop(), S.stop()
     }, [v, S]), !c.wS) return (0, r.jsx)(r.Fragment, {
     children: d({})
   });
-  let T = N >= f.length - 1,
+  let T = b >= f.length - 1,
     I = T ? l.FGA.RED : l.FGA.GREEN,
     y = E ? I : l.FGA.PRIMARY,
     A = () => {
-      null == m || m(), (0, c.JG)(n), o.default.track(u.rMx.TEXT_COPIED), C || _(N + 1), O(!0), j(!0), v.start(g, () => O(!1)), S.start(p, () => _(0))
+      null == m || m(), (0, c.JG)(n), o.default.track(u.rMx.TEXT_COPIED), C || _(b + 1), O(!0), j(!0), v.start(g, () => O(!1)), S.start(p, () => _(0))
     };
   return (0, r.jsx)(l.ua7, {
     text: (() => {
       var e;
       if (!E) return t;
-      let n = (0, s.clamp)(N - 1, 0, f.length - 1),
+      let n = (0, s.clamp)(b - 1, 0, f.length - 1),
         i = null !== (e = f[n]) && void 0 !== e ? e : f[0];
       return (0, r.jsx)(l.UkV, {
         isShaking: T,
         children: i()
       })
     })(),
-    delay: b,
+    delay: N,
     "aria-label": x,
     color: y,
     forceOpen: C,

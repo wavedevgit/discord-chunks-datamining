@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 e.exports = {
   upsellOverlayContainer: "upsellOverlayContainer__0f7dc",
   upsellOverlay: "upsellOverlay__0f7dc",

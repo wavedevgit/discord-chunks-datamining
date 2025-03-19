@@ -14,16 +14,16 @@ var r = n(200651),
   p = n(108427),
   h = n(981631),
   g = n(388032),
-  m = n(802138);
+  _ = n(802138);
 
-function _(e) {
+function m(e) {
   return n.g.location.assign(e)
 }
 
 function f(e) {
   let {
     location: t,
-    transitionTo: o = _
+    transitionTo: o = m
   } = e, [s, f] = i.useState("submitting");
 
   function b() {
@@ -49,24 +49,24 @@ function f(e) {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: n(262467),
-      className: m.marginBottom20
+      className: _.marginBottom20
     }), (0, r.jsx)(d.Dx, {
-      className: m.marginBottom8,
+      className: _.marginBottom8,
       children: g.NW.string(g.t["f/54a2"])
     }), (0, r.jsx)(d.DK, {
-      className: m.marginBottom40,
+      className: _.marginBottom40,
       children: g.NW.string(g.t.i3ehMj)
     }), b()]
   }) : "succeeded" === s ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: n(640356),
-      className: m.marginBottom20
+      className: _.marginBottom20
     }), (0, r.jsx)(d.Dx, {
-      className: m.marginBottom8,
+      className: _.marginBottom8,
       children: g.NW.string(g.t.iG0SlJ)
     }), (0, r.jsx)(d.DK, {
-      className: m.marginBottom40,
+      className: _.marginBottom40,
       children: g.NW.string(g.t["Elv+qq"])
     }), b()]
   }) : (0, r.jsxs)(d.ZP, {

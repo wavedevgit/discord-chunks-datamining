@@ -14,27 +14,27 @@ var r = n(200651),
   p = n(185625),
   h = n(551549),
   g = n(108427),
-  m = n(314897),
-  _ = n(981631),
+  _ = n(314897),
+  m = n(981631),
   f = n(388032),
   b = n(802138);
 o.ZP.initialize();
 let x = e => {
   let {
     location: t
-  } = e, n = (0, o.e7)([m.default], () => m.default.isAuthenticated()), x = (0, o.e7)([d.Z], () => d.Z.hasLoadedExperiments), N = (0, h.oK)("RSL - Landing Page"), [v, E] = i.useState(!1), [I, j] = i.useState(f.NW.string(f.t["9exy+f"])), [C, S] = i.useState(!0), O = e => {
+  } = e, n = (0, o.e7)([_.default], () => _.default.isAuthenticated()), x = (0, o.e7)([d.Z], () => d.Z.hasLoadedExperiments), N = (0, h.oK)("RSL - Landing Page"), [v, E] = i.useState(!1), [I, j] = i.useState(f.NW.string(f.t["9exy+f"])), [S, C] = i.useState(!0), O = e => {
     switch (e) {
-      case _.evJ.INVALID_FORM_BODY:
-      case _.evJ.DSA_RSL_REPORT_NOT_FOUND:
+      case m.evJ.INVALID_FORM_BODY:
+      case m.evJ.DSA_RSL_REPORT_NOT_FOUND:
         j(f.NW.string(f.t.bzXDfX));
         break;
-      case _.evJ.DSA_RSL_ALREADY_REQUESTED:
+      case m.evJ.DSA_RSL_ALREADY_REQUESTED:
         j(f.NW.string(f.t.rV00ws));
         break;
-      case _.evJ.DSA_RSL_LIMITED_TIME:
+      case m.evJ.DSA_RSL_LIMITED_TIME:
         j(f.NW.string(f.t["0dI29v"]));
         break;
-      case _.evJ.DSA_RSL_REPORT_INELIGIBLE:
+      case m.evJ.DSA_RSL_REPORT_INELIGIBLE:
         j(f.NW.string(f.t["RGa/GR"]));
         break;
       default:
@@ -42,9 +42,9 @@ let x = e => {
     }
   };
   return i.useEffect(() => {
-    n ? (S(!0), l.k({
+    n ? (C(!0), l.k({
       withAnalyticsToken: !0
-    }).then(() => S(!1)).catch(() => S(!1))) : S(!1)
+    }).then(() => C(!1)).catch(() => C(!1))) : C(!1)
   }, [n]), i.useEffect(() => {
     x || N || s.Z.getExperiments()
   }, [x, N]), i.useEffect(() => {
@@ -60,7 +60,7 @@ let x = e => {
       }
     };
     E(!0), e((0, c.Z)(t)), (0, g.e)("report_second_look")
-  }, [t]), N && !C && (0, r.jsxs)(u.ZP, {
+  }, [t]), N && !S && (0, r.jsxs)(u.ZP, {
     children: [(0, r.jsx)(u.Dx, {
       className: b.marginBottom8,
       children: I

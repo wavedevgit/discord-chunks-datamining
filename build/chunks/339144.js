@@ -1,12 +1,12 @@
-/** Chunk was on 53494 **/
+/** Chunk was on 92196 **/
 n.d(t, {
   J: () => I,
   y: () => P
 });
 var r = n(200651),
   i = n(192379),
-  l = n(512722),
-  o = n.n(l),
+  o = n(512722),
+  l = n.n(o),
   a = n(252258),
   s = n(481060),
   c = n(24124),
@@ -31,11 +31,11 @@ function P(e, t, n) {
   return null != e && (null != n ? n.applicationId === e.id : null != t && t.application_id === e.id && t.type === C.IIU.PLAYING && (0, d.Z)(t, C.xjy.JOIN))
 }
 let I = i.memo(function(e) {
-  let t, l, d, I, {
+  let t, o, d, I, {
       stream: N,
       canGoLive: Z,
-      guildId: E,
-      isStreaming: w,
+      guildId: w,
+      isStreaming: E,
       channel: T,
       canStream: A,
       runningGame: D,
@@ -55,7 +55,7 @@ let I = i.memo(function(e) {
     } = (0, h.ZP)(),
     U = P(k, L, R),
     W = i.useCallback(() => {
-      o()(null != L, "Received null activity"), (0, f.v)(B, f.d.INVITE), O.default.track(C.rMx.OPEN_MODAL, {
+      l()(null != L, "Received null activity"), (0, f.v)(B, f.d.INVITE), O.default.track(C.rMx.OPEN_MODAL, {
         type: "Send Join Invite",
         application_id: L.application_id,
         location: M.location
@@ -73,7 +73,7 @@ let I = i.memo(function(e) {
     }, [N]),
     H = i.useCallback(() => {
       let e = null != T && (0, y.vd)(T.type) ? T : null,
-        t = null != e ? e.getGuildId() : E;
+        t = null != e ? e.getGuildId() : w;
       if (G && null != D && null != _.Z.getVoiceChannelId()) {
         (0, m.s)("Activity Panel"), (0, b.Z)(D.pid);
         return
@@ -82,7 +82,7 @@ let I = i.memo(function(e) {
           default: e
         } = await Promise.all([n.e("46746"), n.e("50844")]).then(n.bind(n, 60594));
         return n => {
-          var i, l;
+          var i, o;
           return (0, r.jsx)(e, (i = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -100,38 +100,38 @@ let I = i.memo(function(e) {
               })
             }
             return e
-          }({}, n), l = l = {
+          }({}, n), o = o = {
             sourcePID: null == D ? void 0 : D.pid,
             selectSource: !1,
             guildId: t,
             analyticsLocation: C.Sbl.ACTIVITY_PANEL
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(l)).forEach(function(e) {
-            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+          })(Object(o)).forEach(function(e) {
+            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
           }), i))
         }
       })
-    }, [T, E, D, G]),
+    }, [T, w, D, G]),
     z = (null != D || null == R || (0, u.R)({
       isContextless: R.location.kind === a.E.CONTEXTLESS
-    })) && (w || Z) ? (w ? (t = !1, l = () => {
+    })) && (E || Z) ? (E ? (t = !1, o = () => {
       F(), (0, f.v)(B, f.d.STREAM, !1)
-    }, d = s.g5r, I = x.NW.string(x.t.S5anIS)) : A ? (t = !1, l = () => {
+    }, d = s.g5r, I = x.NW.string(x.t.S5anIS)) : A ? (t = !1, o = () => {
       H(), (0, f.v)(B, f.d.STREAM, !0)
     }, d = s.hGI, I = null != D ? x.NW.formatToPlainString(x.t.AB5gT0, {
       game: D.name
-    }) : x.NW.string(x.t.FeUKeH)) : (t = !0, l = null, d = s.hGI, I = null != T && (0, y.vd)(T.type) ? x.NW.string(x.t.uQn9Bw) : null != E ? x.NW.string(x.t.fBXEoK) : x.NW.string(x.t.n3feND)), (0, r.jsx)("div", {
+    }) : x.NW.string(x.t.FeUKeH)) : (t = !0, o = null, d = s.hGI, I = null != T && (0, y.vd)(T.type) ? x.NW.string(x.t.uQn9Bw) : null != w ? x.NW.string(x.t.fBXEoK) : x.NW.string(x.t.n3feND)), (0, r.jsx)("div", {
       className: S.panelButtonContainer,
       children: (0, r.jsx)(j.Z, {
         tooltipText: I,
         disabled: t,
-        onClick: l,
+        onClick: o,
         icon: d
       })
     })) : null,

@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => p
 }), n(47120);
@@ -26,7 +26,7 @@ function p(e) {
   r.useEffect(() => {
     h && null != p && null == d.Z.getSubscriptionSettings(p.id) && x(p.id)
   }, [h, p, x]);
-  let b = null == n ? void 0 : function(e) {
+  let N = null == n ? void 0 : function(e) {
     let {
       subscription: t
     } = e, n = s()(t.currentPeriodEnd).format("M/D/YY"), r = null != t.price ? (0, o.T4)(t.price, t.currency) : "", i = s()(t.createdAt).format("M/D/YY"), a = t.status === m.O0b.CANCELED, l = t.status === m.O0b.PAST_DUE, c = null != t.trialId;
@@ -48,6 +48,6 @@ function p(e) {
     handleToggleExpanded: () => f(e => !e),
     listing: n,
     groupListing: i,
-    subscriptionInfo: b
+    subscriptionInfo: N
   }
 }

@@ -79,24 +79,27 @@ async function O(e) {
     w = E(e, ["userId", "section", "subsection", "guildId", "channelId", "friendToken", "analyticsLocation", "showGuildProfile", "appContext", "customStatusPrompt"]);
   let D = d.default.getUser(b);
   if (null == D) return;
-  let L = _.Z.getUserProfile(b),
-    x = c.Z.getPrimaryActivity(b),
-    M = c.Z.getStatus(b),
-    k = c.Z.isMobileOnline(b),
+  let L = d.default.getCurrentUser();
+  if (null == L) return;
+  let x = _.Z.getUserProfile(b),
+    M = c.Z.getPrimaryActivity(b),
+    k = c.Z.getStatus(b),
+    j = c.Z.isMobileOnline(b),
     {
-      party: j,
-      assets: U,
-      application_id: G
-    } = null != x ? x : {},
-    B = null != G ? l.Z.getApplication(G) : null,
-    F = k ? p.j28.ONLINE_MOBILE : p.j28.ONLINE_DESKTOP,
-    V = M === p.Skl.ONLINE ? F : M;
+      party: U,
+      assets: G,
+      application_id: B
+    } = null != M ? M : {},
+    F = null != B ? l.Z.getApplication(B) : null,
+    V = j ? p.j28.ONLINE_MOBILE : p.j28.ONLINE_DESKTOP,
+    Z = k === p.Skl.ONLINE ? V : k;
   v = await (0, i.ZDy)(async () => {
     let {
       default: e
     } = await Promise.all([n.e("94989"), n.e("82412"), n.e("62880"), n.e("81818")]).then(n.bind(n, 533835));
     return t => (0, r.jsx)(e, g({
       user: D,
+      currentUser: L,
       guildId: S,
       friendToken: N,
       initialSection: O,
@@ -113,18 +116,18 @@ async function O(e) {
     guild_id: S,
     channel_id: T,
     other_user_id: b,
-    application_id: null !== (o = null == x ? void 0 : x.application_id) && void 0 !== o ? o : null,
-    application_name: null == x ? void 0 : x.name,
-    sku_id: null !== (a = null == B ? void 0 : B.primarySkuId) && void 0 !== a ? a : null,
+    application_id: null !== (o = null == M ? void 0 : M.application_id) && void 0 !== o ? o : null,
+    application_name: null == M ? void 0 : M.name,
+    sku_id: null !== (a = null == F ? void 0 : F.primarySkuId) && void 0 !== a ? a : null,
     is_friend: u.Z.isFriend(b),
-    has_images: !!(null !== (m = null == U ? void 0 : U.large_image) && void 0 !== m ? m : null == U ? void 0 : U.small_image),
-    party_max: null == j ? void 0 : null === (t = j.size) || void 0 === t ? void 0 : t[1],
-    party_id: null == j ? void 0 : j.id,
-    party_platform: (0, h.Ps)(null == j ? void 0 : j.id) ? p.ABu.SPOTIFY : null,
-    game_platform: (0, s.Z)(x),
-    profile_user_status: V,
-    profile_has_nitro_customization: (null == L ? void 0 : L.banner) != null,
-    profile_has_profile_effect: (null == L ? void 0 : L.profileEffectId) != null
+    has_images: !!(null !== (m = null == G ? void 0 : G.large_image) && void 0 !== m ? m : null == G ? void 0 : G.small_image),
+    party_max: null == U ? void 0 : null === (t = U.size) || void 0 === t ? void 0 : t[1],
+    party_id: null == U ? void 0 : U.id,
+    party_platform: (0, h.Ps)(null == U ? void 0 : U.id) ? p.ABu.SPOTIFY : null,
+    game_platform: (0, s.Z)(M),
+    profile_user_status: Z,
+    profile_has_nitro_customization: (null == x ? void 0 : x.banner) != null,
+    profile_has_profile_effect: (null == x ? void 0 : x.profileEffectId) != null
   }, null == A ? null : (0, f.expandLocation)(A)))
 }
 

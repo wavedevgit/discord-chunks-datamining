@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => g
 }), n(47120);
@@ -23,10 +23,10 @@ function g(e) {
     guildName: h,
     guildIcon: f,
     guildIconSize: x,
-    memberCount: b
-  } = e, N = i.useRef(null), [_, E] = i.useState(!1);
+    memberCount: N
+  } = e, b = i.useRef(null), [_, E] = i.useState(!1);
   return i.useEffect(() => {
-    let e = N.current;
+    let e = b.current;
     null != e && null != e.offsetWidth && null != e.scrollWidth && E(e.offsetWidth < e.scrollWidth)
   }, []), (0, r.jsxs)("div", {
     className: a()(m.container, t),
@@ -65,7 +65,7 @@ function g(e) {
               }
               return e
             }({
-              ref: N
+              ref: b
             }, e), n = n = {
               className: m.guildName,
               children: h
@@ -80,8 +80,8 @@ function g(e) {
               Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
             }), t))
           }
-        }), null != b && (0, r.jsx)(c.Z, {
-          count: b
+        }), null != N && (0, r.jsx)(c.Z, {
+          count: N
         })]
       })]
     }), (0, r.jsx)("div", {

@@ -1,6 +1,6 @@
 /**
   Module ID: 54030
-  Original File Name: a095ffe75f72757f
+  Original File Name: 0b98e371de392483
 **/
 .key__98feb {
     display: inline-block;
@@ -1465,6 +1465,44 @@
     pointer-events: auto
 }
 
+.upsellFooter__5e07c {
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    color: var(--text-normal);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 16px;
+    padding: 8px
+}
+
+.upsellFooterIcon__5e07c {
+    flex-shrink: 0;
+    margin-right: 8px;
+    height: 24px;
+    width: 24px
+}
+
+.reverseTrialUpsellContainer__5e07c {
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0 0 40px 0 rgba(229,85,211,.5)
+}
+
+.unlockIcon__5e07c {
+    height: 46px;
+    width: 46px;
+    pointer-events: none;
+    position: absolute;
+    left: 7px;
+    top: -14px
+}
+
+.upsellText__5e07c {
+    padding-left: 48px
+}
+
 .content_b00844 {
     box-sizing: border-box;
     display: flex;
@@ -2495,4 +2533,4 @@ img.thumbnail__0f2e8 {
     transform: translateX(-50%)
 }
 
-/*# sourceMappingURL=a095ffe75f72757f.css.map*/
+/*# sourceMappingURL=0b98e371de392483.css.map*/

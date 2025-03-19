@@ -16,8 +16,8 @@ var o = t(481060),
   p = t(681837),
   b = t(502762),
   m = t(530),
-  g = t(871604),
-  v = t(952124),
+  v = t(871604),
+  g = t(952124),
   y = t(53558),
   I = t(544989),
   j = t(934861),
@@ -40,16 +40,16 @@ function E(e) {
     sessionId: A,
     initialSection: w,
     initialSubsection: L,
-    transitionState: M,
-    onClose: R,
-    sourceAnalyticsLocations: U = []
-  } = e, B = E === Z.ME ? void 0 : E, D = (0, a.ZP)(n.id, B), {
+    transitionState: R,
+    onClose: M,
+    sourceAnalyticsLocations: B = []
+  } = e, U = E === Z.ME ? void 0 : E, D = (0, a.ZP)(n.id, U), {
     analyticsLocations: W
-  } = (0, l.ZP)([...U, i.Z.SIMPLIFIED_PROFILE_MODAL]), F = (0, c.ZB)({
+  } = (0, l.ZP)([...B, i.Z.SIMPLIFIED_PROFILE_MODAL]), F = (0, c.ZB)({
     layout: "SIMPLIFIED_MODAL",
     userId: n.id,
     sourceSessionId: A,
-    guildId: B,
+    guildId: U,
     channelId: S,
     messageId: T,
     roleId: C
@@ -59,7 +59,7 @@ function E(e) {
     children: (0, r.jsx)(c.Mt, {
       value: F,
       children: (0, r.jsx)(o.Y0X, {
-        transitionState: M,
+        transitionState: R,
         className: P.root,
         hideShadow: !0,
         "aria-label": N.NW.string(N.t["3N/J2t"]),
@@ -69,10 +69,10 @@ function E(e) {
           profileType: O.y0.FULL_SIZE,
           children: [(0, r.jsx)(I.Z, {
             profileType: O.y0.FULL_SIZE,
-            children: (0, r.jsx)(v.Z, {
+            children: (0, r.jsx)(g.Z, {
               user: n,
-              guildId: B,
-              onCloseProfile: R
+              guildId: U,
+              onCloseProfile: M
             })
           }), (0, r.jsxs)("header", {
             children: [(0, r.jsx)(f.Z, {
@@ -84,29 +84,29 @@ function E(e) {
               children: [(0, r.jsx)(d.Z, {
                 user: n,
                 displayProfile: D,
-                guildId: B,
+                guildId: U,
                 channelId: S,
                 profileType: O.y0.FULL_SIZE
               }), (0, r.jsx)(h.Z, {
                 location: "BotUserProfileModal",
                 user: n,
                 profileType: O.y0.FULL_SIZE,
-                hasEntered: M === o.Dvm.ENTERED,
-                onCloseProfile: R
+                hasEntered: R === o.Dvm.ENTERED,
+                onCloseProfile: M
               }), (0, r.jsxs)("div", {
                 className: P.headerButtons,
                 children: [(0, r.jsx)(j.c, {
                   userId: n.id,
-                  onClose: R,
+                  onClose: M,
                   className: P.messageTextButton
                 }), (0, r.jsx)(j.v, {
                   userId: n.id,
-                  onClose: R,
+                  onClose: M,
                   tooltipContainerClassName: P.messageIconButton
                 }), (0, r.jsx)(y.Z, {
                   user: n,
-                  guildId: B
-                }), (0, r.jsx)(g.Z, {
+                  guildId: U
+                }), (0, r.jsx)(v.Z, {
                   user: n
                 })]
               })]
@@ -116,7 +116,7 @@ function E(e) {
             children: [(0, r.jsx)(m.Z, {
               user: n,
               profileType: O.y0.FULL_SIZE,
-              nickname: s.ZP.getName(B, S, n),
+              nickname: s.ZP.getName(U, S, n),
               pronouns: null == D ? void 0 : D.pronouns,
               nicknameVariant: "heading-xl/bold",
               nicknameIcons: (0, r.jsx)(p.Z, {
@@ -125,7 +125,7 @@ function E(e) {
               tags: (0, r.jsx)(u.Z, {
                 displayProfile: D,
                 profileType: O.y0.FULL_SIZE,
-                onClose: R
+                onClose: M
               })
             }), (0, r.jsx)(b.Z.Overlay, {
               className: P.overlay,
@@ -133,11 +133,11 @@ function E(e) {
                 user: n,
                 currentUser: t,
                 displayProfile: D,
-                guildId: B,
+                guildId: U,
                 items: k,
                 initialSection: null != w ? w : O.oh.BOT_INFO,
                 initialSubsection: L,
-                onClose: R
+                onClose: M
               })
             })]
           })]

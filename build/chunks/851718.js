@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => p
 }), n(47120);
@@ -56,11 +56,11 @@ function p(e) {
     h({
       route: c.j.HOME
     })
-  }, b = e => {
+  }, N = e => {
     h(m({
       route: c.j.SWITCH_APP_PLANS
     }, e)), n(u.NW.string(u.t.VFqtkJ), x)
-  }, [N, _] = i.useState({});
+  }, [b, _] = i.useState({});
   i.useEffect(() => {
     for (let n of t) {
       var e;
@@ -88,8 +88,8 @@ function p(e) {
           var t;
           return (0, r.jsx)(o.Z, {
             subscription: e,
-            navigateToSwitchPlan: b,
-            loadingState: j ? o.G.LOADING : null !== (t = N[e.id]) && void 0 !== t ? t : o.G.LOADING
+            navigateToSwitchPlan: N,
+            loadingState: j ? o.G.LOADING : null !== (t = b[e.id]) && void 0 !== t ? t : o.G.LOADING
           }, e.id)
         })
       });

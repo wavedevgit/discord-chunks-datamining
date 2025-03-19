@@ -12,8 +12,8 @@ var r = n(200651),
   d = n.n(c),
   u = n(442837),
   m = n(481060),
-  h = n(570140),
-  x = n(665149),
+  x = n(570140),
+  h = n(665149),
   p = n(55935),
   b = n(120816),
   f = n(31336),
@@ -24,7 +24,7 @@ var r = n(200651),
   y = n(388032),
   C = n(871133),
   T = n(710662);
-let O = [{
+let S = [{
     key: "id",
     cellClassName: C.eventColumn,
     render(e) {
@@ -52,7 +52,7 @@ let O = [{
       return t.toLocaleString()
     }
   }],
-  S = [{
+  O = [{
     id: "details",
     name: "Details",
     render: e => {
@@ -68,12 +68,12 @@ let O = [{
         }
       } = e, u = d()(o);
       return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsxs)(x.ZP, {
+        children: [(0, r.jsxs)(h.ZP, {
           className: i()(T.headerBar, C.subPanelHeaderBar),
-          children: [(0, r.jsx)(x.ZP.Icon, {
+          children: [(0, r.jsx)(h.ZP.Icon, {
             icon: m.IeX,
             tooltip: t
-          }), (0, r.jsx)(x.ZP.Title, {
+          }), (0, r.jsx)(h.ZP.Title, {
             children: t
           })]
         }), (0, r.jsxs)(_.E, {
@@ -132,13 +132,13 @@ let O = [{
   }];
 
 function N() {
-  let [e, t] = a.useState(""), n = a.useRef(null), l = (0, u.Wu)([b.Z], () => b.Z.loggedTriggers), o = a.useMemo(() => l.filter(t => 0 === e.length || s()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [l, e]), [c, d] = a.useState(void 0), x = o.find(e => e.key === c), {
+  let [e, t] = a.useState(""), n = a.useRef(null), l = (0, u.Wu)([b.Z], () => b.Z.loggedTriggers), o = a.useMemo(() => l.filter(t => 0 === e.length || s()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [l, e]), [c, d] = a.useState(void 0), h = o.find(e => e.key === c), {
     TabBar: p,
     renderSelectedTab: _
   } = (0, j.Z)({
-    tabs: S
+    tabs: O
   }, []), N = (0, u.e7)([b.Z], () => b.Z.trackTriggers), k = a.useCallback(e => {
-    h.Z.dispatch({
+    x.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
       enabled: e
     })
@@ -177,16 +177,16 @@ function N() {
         placeholder: "Search by experiment id"
       })]
     }), (0, r.jsx)(v.Z, {
-      columns: O,
+      columns: S,
       data: o,
       selectedRowKey: c,
       onClickRow: e => d(e.key)
-    }), null != x && (0, r.jsxs)(g.Z, {
+    }), null != h && (0, r.jsxs)(g.Z, {
       className: C.subPanel,
       minHeight: 100,
       initialHeight: null != n.current ? n.current.clientHeight / 2 : 300,
       children: [(0, r.jsx)(p, {}), _({
-        loggedTrigger: x
+        loggedTrigger: h
       })]
     })]
   })

@@ -1,6 +1,6 @@
 /**
   Module ID: 99014
-  Original File Name: be691f3d893297e4
+  Original File Name: 427fad4a9eb96682
 **/
 .icon_f4b9b5 {
     filter: saturate(1);
@@ -86,6 +86,49 @@
     margin-left: var(--spacing-4)
 }
 
+.container__2b26c {
+    display: flex;
+    gap: var(--spacing-8)
+}
+
+.tooltipContainer__2b26c {
+    display: flex;
+    flex-direction: column;
+    text-align: center
+}
+
+.primaryButton__2b26c {
+    flex-grow: 1
+}
+
+.secondaryButton__2b26c {
+    min-width: 0;
+    width: auto
+}
+
+.buttonInner__2b26c {
+    align-items: center;
+    justify-content: center;
+    display: flex
+}
+
+.secondaryButtonInner__2b26c {
+    gap: 2px
+}
+
+.buttonWrapper__2b26c {
+    flex-grow: 1
+}
+
+.dot__2b26c {
+    margin: 0 4px 0 6px
+}
+
+.boost__2b26c {
+    align-self: center;
+    justify-self: center
+}
+
 .close_b30d08 {
     position: absolute;
     top: var(--spacing-16);
@@ -127,4 +170,4 @@
     margin-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=be691f3d893297e4.css.map*/
+/*# sourceMappingURL=427fad4a9eb96682.css.map*/

@@ -2,10 +2,10 @@
 t.d(n, {
   Z: () => u
 });
-var r = t(200651),
-  i = t(793030),
-  o = t(481060),
-  s = t(921944),
+var i = t(200651),
+  r = t(793030),
+  s = t(481060),
+  o = t(921944),
   a = t(367123),
   l = t(388032),
   c = t(951652),
@@ -15,25 +15,25 @@ function u(e) {
   let {
     markAsDismissed: n
   } = e;
-  return (0, r.jsxs)("div", {
+  return (0, i.jsxs)("div", {
     className: c.container,
-    children: [(0, r.jsx)("img", {
+    children: [(0, i.jsx)("img", {
       alt: "",
       className: c.image,
       src: d
-    }), (0, r.jsx)(i.xv, {
+    }), (0, i.jsx)(r.xv, {
       color: "always-white",
       variant: "text-md/semibold",
       children: l.NW.string(a.Z.diMhWV)
-    }), (0, r.jsx)(i.xv, {
+    }), (0, i.jsx)(r.xv, {
       color: "always-white",
       variant: "text-sm/medium",
       children: l.NW.string(a.Z.pycxTk)
-    }), (0, r.jsx)(o.olH, {
+    }), (0, i.jsx)(s.olH, {
       className: c.close,
       innerClassName: c.innerClose,
       onClick: () => {
-        n(s.L.USER_DISMISS)
+        n(o.L.USER_DISMISS)
       }
     })]
   })

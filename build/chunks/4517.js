@@ -119,7 +119,7 @@ function F(e) {
         prompt: o
       }))
     })
-  }, f = null != o ? o : A.NW.string(A.t.evw0o6);
+  }, f = null != o ? o.label() : A.NW.string(A.t.evw0o6);
   return (0, r.jsx)(u.P3F, {
     className: a()(C.container, C.editable, c),
     "aria-label": A.NW.string(A.t["zrpF/f"]),

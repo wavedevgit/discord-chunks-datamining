@@ -14,13 +14,13 @@ var r = n(200651),
   p = n(314897),
   h = n(626135),
   g = n(587444),
-  m = n(981631),
-  _ = n(58346),
+  _ = n(981631),
+  m = n(58346),
   f = n(388032),
   b = n(802138);
 
 function x(e, t, n) {
-  e.preventDefault(), h.default.track(m.rMx.GUILD_TEMPLATE_APP_OPENED, {
+  e.preventDefault(), h.default.track(_.rMx.GUILD_TEMPLATE_APP_OPENED, {
     guild_template_code: t,
     guild_template_name: n.name,
     guild_template_description: n.description,
@@ -28,7 +28,7 @@ function x(e, t, n) {
   });
   let r = p.default.getFingerprint(),
     i = null != r ? r : p.default.getId();
-  c.Z.openMobileApp(n.state === _.Rj.RESOLVED ? t : void 0, i)
+  c.Z.openMobileApp(n.state === m.Rj.RESOLVED ? t : void 0, i)
 }
 
 function N(e) {
@@ -37,9 +37,9 @@ function N(e) {
   } = e, n = (0, o.e7)([l.Z], () => l.Z.getGuildTemplate(t));
   return (i.useEffect(() => {
     (0, d.e)("guild_template_mobile")
-  }, []), null == n || n.state === _.Rj.RESOLVING) ? (0, r.jsx)(s.ZP, {
+  }, []), null == n || n.state === m.Rj.RESOLVING) ? (0, r.jsx)(s.ZP, {
     children: (0, r.jsx)(a.$jN, {})
-  }) : n.state === _.Rj.RESOLVED ? (0, r.jsxs)(s.ZP, {
+  }) : n.state === m.Rj.RESOLVED ? (0, r.jsxs)(s.ZP, {
     children: [(0, r.jsx)(u.Z, {
       guildTemplate: n,
       tall: !0

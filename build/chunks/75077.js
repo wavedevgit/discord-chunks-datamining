@@ -1,9 +1,9 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Dp: () => p,
   Gw: () => f,
   Op: () => E,
-  gx: () => b,
+  gx: () => N,
   iG: () => x,
   mN: () => j,
   oo: () => h,
@@ -68,8 +68,8 @@ function x(e, t) {
       return ""
   }
 }
-let b = (e, t, n) => (0, s.wj)(e) ? t : n,
-  N = e => {
+let N = (e, t, n) => (0, s.wj)(e) ? t : n,
+  b = e => {
     let {
       cards: t,
       perksCards: n,
@@ -137,7 +137,7 @@ let b = (e, t, n) => (0, s.wj)(e) ? t : n,
         }, () => [t.profiles, t.clientThemes, t.hdVideo]).otherwise(() => [t.profiles, t.clientThemes, t.serverBoosts]);
         break;
       case d.R0.WHATS_NEW:
-        c = N({
+        c = b({
           cards: c,
           perksCards: t,
           isFullScreen: i,

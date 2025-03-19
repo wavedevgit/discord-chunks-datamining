@@ -1,11 +1,11 @@
-/** Chunk was on 53494 **/
+/** Chunk was on 92196 **/
 n.d(t, {
   Z: () => D
 });
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  o = n(120356),
+  l = n.n(o),
   a = n(91192),
   s = n(442837),
   c = n(481060),
@@ -30,7 +30,7 @@ var r = n(200651),
   N = n(853904),
   Z = n(403236);
 
-function E(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function E(e) {
   return e
 }
 
-function w(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -67,8 +67,8 @@ function T(e) {
     style: t,
     withGuildIcon: n,
     inverted: i
-  } = e, l = {
-    className: o()(Z.spine, {
+  } = e, o = {
+    className: l()(Z.spine, {
       [Z.spineWithGuildIcon]: n
     }, {
       [Z.invertedSpine]: i
@@ -79,7 +79,7 @@ function T(e) {
   } = (0, c.TCT)();
   switch (a) {
     case "cozy":
-      return (0, r.jsxs)("svg", w(E({}, l), {
+      return (0, r.jsxs)("svg", E(w({}, o), {
         width: "10",
         height: "20",
         viewBox: "0 0 10 20",
@@ -94,7 +94,7 @@ function T(e) {
         })]
       }));
     case "compact":
-      return (0, r.jsxs)("svg", w(E({}, l), {
+      return (0, r.jsxs)("svg", E(w({}, o), {
         width: "10",
         height: "19",
         viewBox: "0 0 10 19",
@@ -109,7 +109,7 @@ function T(e) {
         })]
       }));
     default:
-      return (0, r.jsxs)("svg", w(E({}, l), {
+      return (0, r.jsxs)("svg", E(w({}, o), {
         width: "10",
         height: "19",
         viewBox: "0 0 10 19",
@@ -132,7 +132,7 @@ function A(e) {
     withGuildIcon: n
   } = e;
   return (0, r.jsx)("svg", {
-    className: o()(Z.spine, {
+    className: l()(Z.spine, {
       [Z.spineWithGuildIcon]: n
     }),
     width: "12",
@@ -150,7 +150,7 @@ function A(e) {
 let D = i.memo(function(e) {
   let {
     thread: t,
-    isSelectedChannel: l,
+    isSelectedChannel: o,
     isSelectedVoice: Z,
     isLast: D,
     withGuildIcon: R
@@ -172,7 +172,7 @@ let D = i.memo(function(e) {
       let {
         default: e
       } = await n.e("40157").then(n.bind(n, 422200));
-      return t => (0, r.jsx)(e, w(E({}, t), {
+      return t => (0, r.jsx)(e, E(w({}, t), {
         channel: i
       }))
     })
@@ -183,13 +183,13 @@ let D = i.memo(function(e) {
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        o = Object.keys(e);
+      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var o = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(z, ["role"]), Q = i.useRef(null), K = G > 0 ? P.NW.formatToPlainString(P.t["ZL7+Iy"], {
@@ -202,8 +202,8 @@ let D = i.memo(function(e) {
   }), J = (0, h.Q3)("GuildSidebarThreadListEntry") ? T : A;
   return (0, r.jsxs)("li", {
     role: Y,
-    className: o()(I.containerDefault, {
-      [I.selected]: l
+    className: l()(I.containerDefault, {
+      [I.selected]: o
     }),
     children: [(0, r.jsx)(J, {
       withGuildIcon: R
@@ -222,17 +222,17 @@ let D = i.memo(function(e) {
         right: 4
       },
       children: (0, r.jsxs)("div", {
-        className: o()(I.iconVisibility, N.wrapper, N.typeThread, {
-          [N.modeSelected]: l,
-          [N.modeMuted]: !l && U,
-          [N.modeUnreadImportant]: !U && !l && M,
+        className: l()(I.iconVisibility, N.wrapper, N.typeThread, {
+          [N.modeSelected]: o,
+          [N.modeMuted]: !o && U,
+          [N.modeUnreadImportant]: !U && !o && M,
           [N.withGuildIcon]: R
         }),
         onMouseDown: V,
         onContextMenu: F,
-        children: [!M || U || l ? null : (0, r.jsx)("div", {
-          className: o()(N.unread, N.unreadImportant)
-        }), (0, r.jsx)(c.P3F, w(E({}, q), {
+        children: [!M || U || o ? null : (0, r.jsx)("div", {
+          className: l()(N.unread, N.unreadImportant)
+        }), (0, r.jsx)(c.P3F, E(w({}, q), {
           innerRef: Q,
           className: N.link,
           onClick: W,
@@ -241,7 +241,7 @@ let D = i.memo(function(e) {
             enabled: !1
           },
           children: (0, r.jsxs)("div", {
-            className: o()(N.linkTop, N.__invalid_threadMainContent),
+            className: l()(N.linkTop, N.__invalid_threadMainContent),
             children: [(0, r.jsx)(p.Z, {
               className: N.name,
               "aria-hidden": !0,

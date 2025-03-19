@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 n.d(t, {
   Z: () => v
 });
@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(358085),
   f = n(962100),
   x = n(981631),
-  b = n(388032),
-  N = n(103986),
+  N = n(388032),
+  b = n(103986),
   _ = n(802138);
 let E = !h.isPlatformEmbedded,
   j = (0, g.hQ)();
@@ -37,24 +37,24 @@ function O(e) {
     } = (0, l.cj)([p.Z], () => p.Z.getModeOptions());
   return t = h.isPlatformEmbedded || n !== x.pM4.PUSH_TO_TALK ? (0, r.jsx)(o.R94, {
     type: o.R94.Types.DESCRIPTION,
-    className: a()(N.pttToolsMessage, _.marginBottom8),
-    children: b.NW.format(b.t.HVvn5e, {
+    className: a()(b.pttToolsMessage, _.marginBottom8),
+    children: N.NW.format(N.t.HVvn5e, {
       onClick: () => d.Z.setSection(x.oAB.KEYBINDS)
     })
   }) : (0, r.jsx)(o.R94, {
     type: o.R94.Types.DESCRIPTION,
-    className: a()(N.pttToolsMessage, N.pttToolsWarning, _.marginBottom8),
-    children: b.NW.format(b.t.zvMPOT, {
+    className: a()(b.pttToolsMessage, b.pttToolsWarning, _.marginBottom8),
+    children: N.NW.format(N.t.zvMPOT, {
       onDownloadClick: () => (0, f.y)("Help Text PTT")
     })
   }), (0, r.jsxs)("div", {
-    className: N.pttTools,
+    className: b.pttTools,
     children: [(0, r.jsxs)("div", {
-      className: N.pttToolsFlex,
+      className: b.pttToolsFlex,
       children: [(0, r.jsx)("div", {
-        className: N.column,
+        className: b.column,
         children: (0, r.jsx)(o.xJW, {
-          title: b.NW.string(b.t.YkDjVF),
+          title: N.NW.string(N.t.YkDjVF),
           children: (0, r.jsx)(u.Z, {
             defaultValue: i,
             onChange: e => c.Z.setMode(n, {
@@ -63,13 +63,13 @@ function O(e) {
           })
         })
       }), (0, r.jsx)("div", {
-        className: N.column,
+        className: b.column,
         children: (0, r.jsxs)(o.xJW, {
           children: [(0, r.jsx)(o.vwX, {
             id: j,
             tag: o.RB0.H5,
             className: _.marginBottom8,
-            children: b.NW.string(b.t.y0ShVl)
+            children: N.NW.string(N.t.y0ShVl)
           }), (0, r.jsx)(o.iRW, {
             initialValue: s,
             onValueChange: e => c.Z.setMode(n, {
@@ -90,10 +90,10 @@ function v() {
     analyticsLocations: e
   } = (0, m.ZP)(), t = (0, l.e7)([p.Z], () => p.Z.getMode()), s = [{
     value: x.pM4.VOICE_ACTIVITY,
-    name: b.NW.string(b.t.cHCEOD)
+    name: N.NW.string(N.t.cHCEOD)
   }, {
     value: x.pM4.PUSH_TO_TALK,
-    name: E ? b.NW.string(b.t["1AINrK"]) : b.NW.string(b.t.Q8gkVF)
+    name: E ? N.NW.string(N.t["1AINrK"]) : N.NW.string(N.t.Q8gkVF)
   }], a = i.useCallback(t => {
     let {
       value: i
@@ -120,11 +120,11 @@ function v() {
         }
         return e
       }({
-        title: b.NW.string(b.t.Kdt0GR),
-        confirmText: b.NW.string(b.t["1WjMbG"]),
-        cancelText: b.NW.string(b.t.BddRzc),
+        title: N.NW.string(N.t.Kdt0GR),
+        confirmText: N.NW.string(N.t["1WjMbG"]),
+        cancelText: N.NW.string(N.t.BddRzc),
         onConfirm: () => (0, f.y)("PTT Limited Modal"),
-        body: b.NW.string(b.t.NIozvr)
+        body: N.NW.string(N.t.NIozvr)
       }, t))
     }), c.Z.setMode(i, void 0, void 0, {
       analyticsLocations: e
@@ -132,7 +132,7 @@ function v() {
   }, [e]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.xJW, {
-      title: b.NW.string(b.t["pS+K2N"]),
+      title: N.NW.string(N.t["pS+K2N"]),
       className: _.marginBottom20,
       children: (0, r.jsx)(o.FXm, {
         onChange: a,

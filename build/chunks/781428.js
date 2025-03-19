@@ -14,8 +14,8 @@ var r, i = n(200651),
   p = n(481060),
   h = n(570140),
   g = n(893776),
-  m = n(899742),
-  _ = n(579806),
+  _ = n(899742),
+  m = n(579806),
   f = n(743142),
   b = n(254942),
   x = n(388905),
@@ -24,8 +24,8 @@ var r, i = n(200651),
   E = n(100159),
   I = n(473855),
   j = n(124860),
-  C = n(86779),
-  S = n(726745),
+  S = n(86779),
+  C = n(726745),
   O = n(913583),
   y = n(144114),
   T = n(541692),
@@ -106,13 +106,13 @@ class Q extends(r = o.PureComponent) {
       invite: r,
       location: i
     } = this.props;
-    e && !t ? (0, m.is)() : t && this.loginOrSSO(t, i, !0), D.default.track(F.rMx.LOGIN_VIEWED, Y({
+    e && !t ? (0, _.is)() : t && this.loginOrSSO(t, i, !0), D.default.track(F.rMx.LOGIN_VIEWED, Y({
       location: null != r ? "Invite Login Page" : "Non-Invite Login Page",
       login_source: this.loginSource,
       authenticated: t
     }, null != n ? (0, E.Z)(n, !1, !1) : {}), {
       flush: !0
-    }), null == _.Z && null != window.PublicKeyCredential && null != PublicKeyCredential.isConditionalMediationAvailable && PublicKeyCredential.isConditionalMediationAvailable().then(e => {
+    }), null == m.Z && null != window.PublicKeyCredential && null != PublicKeyCredential.isConditionalMediationAvailable && PublicKeyCredential.isConditionalMediationAvailable().then(e => {
       e && (0, Z.us)().then(e => {
         let {
           challenge: t,
@@ -471,7 +471,7 @@ class Q extends(r = o.PureComponent) {
         className: e,
         expanded: !0,
         children: this.renderDefaultForm(!0)
-      }), t && (0, i.jsx)(C.Z, {})]
+      }), t && (0, i.jsx)(S.Z, {})]
     })
   }
   renderGuildTemplate(e) {
@@ -784,7 +784,7 @@ q(Q, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
 let $ = function(e) {
-  let t = (0, d.cj)([w.Z, L.Z, R.default, S.Z, T.Z], () => ({
+  let t = (0, d.cj)([w.Z, L.Z, R.default, C.Z, T.Z], () => ({
     authenticated: R.default.isAuthenticated(),
     handoffAvailable: w.Z.isHandoffAvailable(),
     user: w.Z.user,
@@ -793,7 +793,7 @@ let $ = function(e) {
     mfaMethods: R.default.getMFAMethods(),
     defaultRoute: L.Z.defaultRoute,
     country: T.Z.getCountryCode(),
-    hasLoggedInAccounts: S.Z.getHasLoggedInAccounts()
+    hasLoggedInAccounts: C.Z.getHasLoggedInAccounts()
   }));
   return (0, i.jsx)(Q, Y({}, e, t))
 }

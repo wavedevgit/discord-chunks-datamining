@@ -1,4 +1,4 @@
-/** Chunk was on 54835 **/
+/** Chunk was on 6382 **/
 e.exports = {
   buttonWhite: "buttonWhite_b322b1",
   buttonBrand: "buttonBrand_b322b1",

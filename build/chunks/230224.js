@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 n.d(t, {
   GB: () => y,
-  JI: () => S,
+  JI: () => C,
   UM: () => A,
   V6: () => T,
   WT: () => E,
@@ -21,8 +21,8 @@ var r = n(200651),
   p = n(768581),
   h = n(51144),
   g = n(245335),
-  m = n(981631),
-  _ = n(888592),
+  _ = n(981631),
+  m = n(888592),
   f = n(388032),
   b = n(165160);
 let x = 100,
@@ -37,7 +37,7 @@ let x = 100,
   v = e => e.target_type === g.Iq.STREAM && null != e.target_user,
   E = e => {
     var t;
-    return (null === (t = e.channel) || void 0 === t ? void 0 : t.type) === m.d4z.GROUP_DM
+    return (null === (t = e.channel) || void 0 === t ? void 0 : t.type) === _.d4z.GROUP_DM
   },
   I = e => null == e.channel && null == e.guild && null != e.inviter,
   j = e => {
@@ -45,14 +45,14 @@ let x = 100,
     let n = N(e);
     return (null !== (t = null == n ? void 0 : n.memberCount) && void 0 !== t ? t : 0) > x
   },
-  C = e => e.state === m.r2o.ACCEPTED,
-  S = e => {
+  S = e => e.state === _.r2o.ACCEPTED,
+  C = e => {
     let {
       guild_scheduled_event: t
     } = e;
     return null != t
   },
-  O = e => !S(e) && (!!I(e) || null != e.inviter && !C(e) && !j(e)),
+  O = e => !C(e) && (!!I(e) || null != e.inviter && !S(e) && !j(e)),
   y = e => {
     let {
       guild: t,
@@ -82,7 +82,7 @@ function T(e) {
     textClassName: i,
     className: o
   } = e, s = N(n);
-  return null == s || O(n) || (null == n ? void 0 : null === (t = n.guild) || void 0 === t ? void 0 : t.id) === _.fQ ? null : (0, r.jsx)(l.EJ, {
+  return null == s || O(n) || (null == n ? void 0 : null === (t = n.guild) || void 0 === t ? void 0 : t.id) === m.fQ ? null : (0, r.jsx)(l.EJ, {
     className: a()(b.activityCount, o),
     online: s.onlineCount,
     total: s.memberCount,
@@ -103,7 +103,7 @@ function P(e) {
     }) : f.NW.string(f.t.OsdY8P)
   } else v(t) && null != t.target_user ? a = f.NW.formatToPlainString(f.t.x2L32d, {
     username: t.target_user.username
-  }) : C(t) ? a = f.NW.string(f.t["FDsl+P"]) : O(t) && null != t.inviter && (a = f.NW.format(f.t.spU2mJ, {
+  }) : S(t) ? a = f.NW.string(f.t["FDsl+P"]) : O(t) && null != t.inviter && (a = f.NW.format(f.t.spU2mJ, {
     username: h.ZP.getFormattedName(t.inviter)
   }));
   return (0, r.jsxs)("div", {
