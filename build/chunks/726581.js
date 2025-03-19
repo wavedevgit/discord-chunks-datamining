@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(304106),
   c = n(649974),
   u = n(246946),
@@ -58,20 +58,20 @@ class O extends i.Component {
       className: l
     } = this.props;
     if (0 === e.length && 0 === t.length && null == n.staffNotes) return null;
-    let o = this.getReviewToRender();
+    let a = this.getReviewToRender();
     return (0, r.jsxs)("div", {
-      className: a()(E.root, l),
+      className: o()(E.root, l),
       children: [(0, r.jsx)("div", {
         className: E.header,
         children: _.NW.string(_.t.qABFpa)
-      }), this.renderReasons(e, t, i), null != o ? (0, r.jsx)(b.Z, {
-        data: o,
+      }), this.renderReasons(e, t, i), null != a ? (0, r.jsx)(b.Z, {
+        data: a,
         className: E.review
       }) : null]
     })
   }
 }
-let N = o.ZP.connectStores([h.Z, d.default, f.Z, c.Z, p.Z, u.Z], e => {
+let N = a.ZP.connectStores([h.Z, d.default, f.Z, c.Z, p.Z, u.Z], e => {
   let {
     sku: t
   } = e;

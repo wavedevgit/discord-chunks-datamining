@@ -113,7 +113,7 @@ let y = r.memo(function(e) {
               onClick: () => (0, c.ZDy)(async () => {
                 let {
                   default: e
-                } = await Promise.all([l.e("7654"), l.e("52686")]).then(l.bind(l, 560114));
+                } = await Promise.all([l.e("7654"), l.e("26530")]).then(l.bind(l, 560114));
                 return l => {
                   var r, a;
                   return (0, t.jsx)(e, (r = function(e) {

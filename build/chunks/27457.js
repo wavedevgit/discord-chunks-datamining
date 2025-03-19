@@ -202,9 +202,9 @@ let ed = [en.fO.ACTIVITY, en.fO.PRESENCE_EMBEDDED_ACTIVITY],
       }, {
         autoTrackExposure: !1
       }),
-      e7 = (0, a.e7)([U.Z], () => e9 && null != eW ? U.Z.findActivity(eW, e => null != e.application_id && e.type === et.IIU.PLAYING) : null, [e9, eW]),
-      e8 = (0, a.e7)([M.Z], () => (null == e7 ? void 0 : e7.application_id) != null ? M.Z.getDetectableGame(e7.application_id) : null),
-      e5 = (0, a.e7)([p.Z], () => null != e8 && (null == e7 ? void 0 : e7.application_id) != null ? p.Z.getApplication(null == e7 ? void 0 : e7.application_id) : void 0),
+      e8 = (0, a.e7)([U.Z], () => e9 && null != eW ? U.Z.findActivity(eW, e => null != e.application_id && e.type === et.IIU.PLAYING) : null, [e9, eW]),
+      e7 = (0, a.e7)([M.Z], () => (null == e8 ? void 0 : e8.application_id) != null ? M.Z.getDetectableGame(e8.application_id) : null),
+      e5 = (0, a.e7)([p.Z], () => null != e7 && (null == e8 ? void 0 : e8.application_id) != null ? p.Z.getApplication(null == e8 ? void 0 : e8.application_id) : void 0),
       te = (0, R.wV)({
         userId: eW,
         channelId: eb.id

@@ -9,11 +9,11 @@ function i(e, t) {
   let {
     scope: i,
     handler: l
-  } = t, a = {
+  } = t, o = {
     scope: i,
     handler: l
-  }, o = null === (n = r.m[e]) || void 0 === n ? void 0 : n.request, s = null;
-  return null != o && (a.validation = function(e) {
-    return null == s && (s = o(e)), s
-  }), a
+  }, a = null === (n = r.m[e]) || void 0 === n ? void 0 : n.request, s = null;
+  return null != a && (o.validation = function(e) {
+    return null == s && (s = a(e)), s
+  }), o
 }

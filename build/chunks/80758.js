@@ -1,4 +1,4 @@
-/** Chunk was on 50749 **/
+/** Chunk was on 23682 **/
 e.exports = {
   divider: "divider__98b95",
   sectionHeader: "sectionHeader__98b95",

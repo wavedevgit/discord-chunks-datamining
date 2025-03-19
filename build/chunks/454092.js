@@ -1,11 +1,11 @@
-/** Chunk was on 50749 **/
+/** Chunk was on 23682 **/
 n.d(t, {
   _: () => c,
   s: () => s
 });
 var r, i = n(668781),
-  l = n(63063),
-  o = n(981631),
+  o = n(63063),
+  l = n(981631),
   a = n(388032),
   s = ((r = {})[r.REMOVE_SELF = 0] = "REMOVE_SELF", r[r.REMOVE_ROLE = 1] = "REMOVE_ROLE", r[r.DENY_ROLE = 2] = "DENY_ROLE", r);
 
@@ -20,7 +20,7 @@ function c(e, t) {
     body: n,
     cancelText: a.NW.string(a.t.psXQHB),
     onCancel() {
-      window.open(l.Z.getArticleURL(o.BhN.APPLICATION_COMMAND_PERMISSIONS_LOCKOUT))
+      window.open(o.Z.getArticleURL(l.BhN.APPLICATION_COMMAND_PERMISSIONS_LOCKOUT))
     }
   })
 }

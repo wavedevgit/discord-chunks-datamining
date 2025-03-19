@@ -9,8 +9,8 @@ var i = n(325767);
 function l(e) {
   var t, n, {
       width: l = 24,
-      height: a = 24,
-      color: o = "currentColor",
+      height: o = 24,
+      color: a = "currentColor",
       foreground: s
     } = e,
     c = function(e, t) {
@@ -47,14 +47,14 @@ function l(e) {
     return e
   }({}, (0, i.Z)(c)), n = n = {
     width: l,
-    height: a,
+    height: o,
     viewBox: "0 0 24 24",
     children: (0, r.jsxs)("g", {
       fill: "none",
       fillRule: "evenodd",
       children: [(0, r.jsx)("path", {
         className: s,
-        fill: o,
+        fill: a,
         d: "M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
       }), (0, r.jsx)("rect", {
         width: "24",

@@ -15,7 +15,7 @@ let u = function(e) {
   } = e, {
     activePickerChannelId: n,
     openPickerForChannel: u,
-    closePickerForChannel: d
+    closePicker: d
   } = (0, a.B)(), p = i.useCallback(() => {
     n === t.id ? d() : u(t.id)
   }, [t.id, n, d, u]), h = (0, o.sX)({

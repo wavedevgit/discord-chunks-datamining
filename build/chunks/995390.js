@@ -1,12 +1,12 @@
-/** Chunk was on 50749 **/
+/** Chunk was on 23682 **/
 n.d(t, {
   Z: () => N
 }), n(653041), n(47120), n(977457);
 var r = n(192379),
   i = n(512722),
-  l = n.n(i),
-  o = n(392711),
-  a = n.n(o),
+  o = n.n(i),
+  l = n(392711),
+  a = n.n(l),
   s = n(442837),
   c = n(139387),
   d = n(895924),
@@ -41,12 +41,12 @@ function v(e) {
 
 function N(e, t, n) {
   let i = (0, s.e7)([h.Z], () => h.Z.getApplicationPermissions()),
-    o = r.useMemo(() => (function(e, t) {
+    l = r.useMemo(() => (function(e, t) {
       let n = v({}, t),
         r = (0, u.bD)(e),
         i = (0, x.rE)(r, d.Kw.CHANNEL),
-        l = (0, x.rE)(e, d.Kw.ROLE);
-      return l in n || (n[l] = {
+        o = (0, x.rE)(e, d.Kw.ROLE);
+      return o in n || (n[o] = {
         id: e,
         permission: !0,
         type: d.Kw.ROLE
@@ -67,25 +67,25 @@ function N(e, t, n) {
       return null == n ? h.Z.getEditedApplication() : null === (e = h.Z.getEditedCommand()) || void 0 === e ? void 0 : e.permissions
     }, [n]),
     y = null != n ? n : t,
-    _ = null != n ? N : o,
+    _ = null != n ? N : l,
     C = r.useMemo(() => null != O ? O : v({}, null != _ ? _ : {}), [O, _]),
     I = r.useMemo(() => Object.keys(C).length, [C]),
     S = r.useMemo(() => null == _ || null == C ? null : !a().isEqual(_, C), [_, C]);
   return r.useEffect(() => {
     y === t && (S ? c.Z.startEditingCommandPermissions(y) : c.Z.stopEditingCommandPermissions(y))
   }, [t, S, y]), {
-    originalApplicationPermissions: o,
+    originalApplicationPermissions: l,
     originalCommandPermissions: N,
     editedTargetPermissions: function(e, t) {
       let n = (0, s.e7)([m.Z], () => m.Z.getGuild(e), [e]);
-      l()(null != n, "guild must be present to be editing its integration settings");
+      o()(null != n, "guild must be present to be editing its integration settings");
       let i = (0, s.e7)([b.Z], () => b.Z.getHighestRole(n), [n]),
-        o = (0, s.e7)([g.default], () => {
+        l = (0, s.e7)([g.default], () => {
           var e;
           return null === (e = g.default.getCurrentUser()) || void 0 === e ? void 0 : e.id
         });
-      l()(null != o, "useComputePermissions: currentUserId must not be null");
-      let a = o === n.ownerId,
+      o()(null != l, "useComputePermissions: currentUserId must not be null");
+      let a = l === n.ownerId,
         {
           channelIds: c,
           roleIds: h,
@@ -107,8 +107,8 @@ function N(e, t, n) {
       return r.useMemo(() => {
         let e = n.id,
           r = (0, u.bD)(n.id),
-          l = {};
-        for (let [o, s] of Object.entries(t)) {
+          o = {};
+        for (let [l, s] of Object.entries(t)) {
           let t = !1,
             c = !1;
           if (s.type === d.Kw.CHANNEL) {
@@ -117,13 +117,13 @@ function N(e, t, n) {
             t = e || b.Z.can(j.Plq.VIEW_CHANNEL, n), c = !0
           } else if (s.type === d.Kw.ROLE) {
             let r = s.id === e,
-              l = O[s.id];
-            t = r || null != l, c = a || r || b.Z.isRoleHigher(n, i, l)
+              o = O[s.id];
+            t = r || null != o, c = a || r || b.Z.isRoleHigher(n, i, o)
           } else if (s.type === d.Kw.USER) {
             let e = y[s.id];
             t = null != e, c = null != e && (a || b.Z.canManageUser(j.Plq.USE_APPLICATION_COMMANDS, e, n))
           }
-          l[o] = function(e, t) {
+          o[l] = function(e, t) {
             return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
@@ -139,7 +139,7 @@ function N(e, t, n) {
             canWrite: c
           })
         }
-        return l
+        return o
       }, [N, n, i, a, t, O, y])
     }(e, C),
     hasChanges: S,

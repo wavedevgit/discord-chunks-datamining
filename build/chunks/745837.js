@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(120356),
   l = n.n(i),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(547972),
   c = n(556296),
   u = n(63063),
@@ -25,7 +25,7 @@ function E(e) {
 }
 
 function O() {
-  let e = (0, a.e7)([c.ZP], () => c.ZP.getKeybindForAction(g.kg4.SAVE_CLIP));
+  let e = (0, o.e7)([c.ZP], () => c.ZP.getKeybindForAction(g.kg4.SAVE_CLIP));
   if (null == e) return (0, r.jsx)(r.Fragment, {
     children: b.NW.string(b.t.miecxM)
   });
@@ -35,7 +35,7 @@ function O() {
       keybind: t,
       keybindHook: () => (0, r.jsx)("span", {
         className: _.keyCombo,
-        children: (0, r.jsx)(o.M2$, {
+        children: (0, r.jsx)(a.M2$, {
           shortcut: t
         })
       })
@@ -45,10 +45,10 @@ function O() {
 let N = {
   [f.D5.Error]: {
     textColor: "text-primary",
-    buttonLook: o.zxk.Looks.FILLED,
-    buttonColor: o.zxk.Colors.PRIMARY,
+    buttonLook: a.zxk.Looks.FILLED,
+    buttonColor: a.zxk.Colors.PRIMARY,
     bodyCopy: () => (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.aNP, {
+      children: [(0, r.jsx)(a.aNP, {
         size: "xs",
         color: "currentColor",
         className: _.errorWarningIcon
@@ -62,8 +62,8 @@ let N = {
   },
   [f.D5.Disabled]: {
     textColor: "text-primary",
-    buttonLook: o.zxk.Looks.FILLED,
-    buttonColor: o.zxk.Colors.BRAND,
+    buttonLook: a.zxk.Looks.FILLED,
+    buttonColor: a.zxk.Colors.BRAND,
     bodyCopy: () => b.NW.string(b.t.MhrVg4),
     buttonCopy: () => b.NW.string(b.t.GMLBKS),
     ctaOnClick: () => E(f.D5.Disabled),
@@ -71,8 +71,8 @@ let N = {
   },
   [f.D5.Enabled]: {
     textColor: "always-white",
-    buttonLook: o.zxk.Looks.FILLED,
-    buttonColor: o.zxk.Colors.BRAND_INVERTED,
+    buttonLook: a.zxk.Looks.FILLED,
+    buttonColor: a.zxk.Colors.BRAND_INVERTED,
     bodyCopy: () => (0, r.jsx)(O, {}),
     buttonCopy: () => b.NW.string(b.t.GMLBKS),
     ctaOnClick: () => E(f.D5.Enabled),
@@ -84,7 +84,7 @@ function v() {
   let {
     decoupledClipsEnabled: e,
     clipsError: t
-  } = (0, a.cj)([p.Z], () => ({
+  } = (0, o.cj)([p.Z], () => ({
     decoupledClipsEnabled: p.Z.getSettings().decoupledClipsEnabled,
     clipsError: p.Z.getLastClipsError()
   })), n = null != t ? f.D5.Error : e ? f.D5.Enabled : f.D5.Disabled, {
@@ -98,27 +98,27 @@ function v() {
   } = N[n];
   return (0, r.jsxs)("div", {
     className: g,
-    children: [(0, r.jsx)(o.Text, {
+    children: [(0, r.jsx)(a.Text, {
       color: c,
       variant: "text-sm/medium",
       children: i()
-    }), (0, r.jsx)(o.zxk, {
+    }), (0, r.jsx)(a.zxk, {
       onClick: () => (0, h.UW)(n),
-      size: o.zxk.Sizes.NONE,
-      look: o.zxk.Looks.BLANK,
+      size: a.zxk.Sizes.NONE,
+      look: a.zxk.Looks.BLANK,
       className: _.buttonClose,
-      children: (0, r.jsx)(o.Dio, {
+      children: (0, r.jsx)(a.Dio, {
         size: "xs",
         color: "currentColor",
         className: _.dismissIcon
       })
-    }), (0, r.jsx)(o.zxk, {
+    }), (0, r.jsx)(a.zxk, {
       onClick: s,
       className: _.buttonCTA,
       color: u,
       look: d,
       fullWidth: !0,
-      size: o.zxk.Sizes.SMALL,
+      size: a.zxk.Sizes.SMALL,
       children: l()
     })]
   })

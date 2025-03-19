@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(450468),
   f = n(98278),
   x = n(124570),
-  b = n(594174),
-  N = n(78839),
+  N = n(594174),
+  b = n(78839),
   _ = n(267642),
   E = n(63063),
   j = n(74538),
@@ -145,9 +145,9 @@ let w = function(e) {
   let t, n;
   let {
     guildBoostSlots: s
-  } = e, p = (0, o.e7)([N.ZP], () => N.ZP.getPremiumTypeSubscription()), h = (null == p ? void 0 : p.isPausedOrPausePending) === !0, {
+  } = e, p = (0, o.e7)([b.ZP], () => b.ZP.getPremiumTypeSubscription()), h = (null == p ? void 0 : p.isPausedOrPausePending) === !0, {
     fractionalState: O
-  } = (0, u.Z)(), v = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), w = (0, o.e7)([b.default], () => b.default.getCurrentUser()), k = O === T.a$.FP_SUB_PAUSED, W = (0, x.y)("guild_boost_settings_unapplied", w, O), L = h && !k, {
+  } = (0, u.Z)(), v = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), w = (0, o.e7)([N.default], () => N.default.getCurrentUser()), k = O === T.a$.FP_SUB_PAUSED, W = (0, x.y)("guild_boost_settings_unapplied", w, O), L = h && !k, {
     appliedGuildBoostSlots: B,
     unappliedGuildBoostSlots: M,
     numActiveGuildBoostSlots: U,

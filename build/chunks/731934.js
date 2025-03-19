@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(631885),
   f = n(895328),
   x = n(568671),
-  b = n(419821),
-  N = n(367515),
+  N = n(419821),
+  b = n(367515),
   _ = n(250285),
   E = n(292352),
   j = n(134612),
@@ -143,9 +143,9 @@ function R(e) {
     return null == a ? null : (0, r.jsx)(_.Z, {
       userId: a.id,
       isLast: l,
-      children: () => t === E.ne.ACTIVE ? (0, r.jsx)(b.u, {
+      children: () => t === E.ne.ACTIVE ? (0, r.jsx)(N.u, {
         user: a
-      }) : (0, r.jsx)(N.B, {
+      }) : (0, r.jsx)(b.B, {
         user: a
       })
     }, a.id)

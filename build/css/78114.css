@@ -1,6 +1,6 @@
 /**
   Module ID: 78114
-  Original File Name: 2f72df41253e45bb
+  Original File Name: 1b44e139785acf4a
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -5030,7 +5030,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 .visual-refresh-chat-input .attachButton__0923f {
     height: auto;
     padding: var(--space-4) var(--space-12) var(--space-4) var(--space-md);
-    padding-left: calc(var(--custom-message-margin-horizontal) - var(--space-xs) + var(--custom-chat-aligned-icon-offset));
+    padding-left: calc(var(--custom-message-margin-horizontal) - var(--space-xs) + var(--custom-chat-aligned-icon-offset) - 1px);
     margin-left: calc(var(--space-16)*-1);
     border-radius: 0
 }
@@ -9710,8 +9710,8 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .visual-refresh .form_f75fb0 {
-    padding-left: var(--space-8);
-    padding-right: var(--space-8)
+    padding-left: var(--space-xs);
+    padding-right: var(--space-xs)
 }
 
 .visual-refresh .content_f75fb0:before {
@@ -15284,4 +15284,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=2f72df41253e45bb.css.map*/
+/*# sourceMappingURL=1b44e139785acf4a.css.map*/

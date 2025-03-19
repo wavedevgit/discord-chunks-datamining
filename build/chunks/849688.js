@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  a = n.n(l),
-  o = n(481060),
+  o = n.n(l),
+  a = n(481060),
   s = n(442837),
   c = n(547280),
   u = n(678513),
@@ -17,12 +17,12 @@ let f = function(e) {
   let {
     guild: t
   } = e, l = (0, s.e7)([u.Z], () => u.Z.getActiveGuildSignUp(t.id)), f = i.useCallback(() => {
-    null != l && (0, o.ZDy)(async () => {
+    null != l && (0, a.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("22862"), n.e("4427")]).then(n.bind(n, 646202));
       return n => {
-        var i, a;
+        var i, o;
         return (0, r.jsx)(e, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -40,18 +40,18 @@ let f = function(e) {
             })
           }
           return e
-        }({}, n), a = a = {
+        }({}, n), o = o = {
           target: l,
           guildId: t.id
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(a)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+        })(Object(o)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
         }), i))
       }
     })
@@ -60,10 +60,10 @@ let f = function(e) {
   }, [l]);
   if (null == l) return null;
   let m = "url(".concat(l.backgroundAssetUrl, ") black top / cover no-repeat");
-  return (0, r.jsx)(o.f6W, {
+  return (0, r.jsx)(a.f6W, {
     theme: d.BRd.DARK,
     children: e => (0, r.jsx)("div", {
-      className: a()(h.container, e),
+      className: o()(h.container, e),
       children: (0, r.jsxs)("div", {
         className: h.card,
         style: {
@@ -71,32 +71,32 @@ let f = function(e) {
         },
         children: [(0, r.jsxs)("div", {
           className: h.eyebrow,
-          children: [(0, r.jsx)(o._XJ, {
+          children: [(0, r.jsx)(a._XJ, {
             size: "xxs",
             color: "currentColor"
-          }), (0, r.jsx)(o.Text, {
+          }), (0, r.jsx)(a.Text, {
             variant: "text-xs/semibold",
             color: "none",
             children: p.NW.string(p.t.hhKpxs)
           })]
-        }), (0, r.jsx)(o.X6q, {
+        }), (0, r.jsx)(a.X6q, {
           variant: "heading-sm/medium",
           children: l.noticeHeader
-        }), (0, r.jsx)(o.zxk, {
+        }), (0, r.jsx)(a.zxk, {
           className: h.button,
           color: "none",
           onClick: f,
-          children: (0, r.jsx)(o.Text, {
+          children: (0, r.jsx)(a.Text, {
             variant: "text-sm/medium",
             color: "none",
             children: p.NW.string(p.t.vv0Nsb)
           })
         }), (0, r.jsx)("div", {
           className: h.dismiss,
-          children: (0, r.jsx)(o.P3F, {
+          children: (0, r.jsx)(a.P3F, {
             onClick: g,
             "aria-label": p.NW.string(p.t.cpT0Cg),
-            children: (0, r.jsx)(o.Dio, {
+            children: (0, r.jsx)(a.Dio, {
               size: "xs",
               color: "currentColor"
             })

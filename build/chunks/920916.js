@@ -201,7 +201,7 @@ function Q(e) {
     location: "ClaimedModalContent"
   }).enabled, {
     fractionalState: _
-  } = (0, m.Z)(), p = _ === U.a$.FP_ONLY, g = (0, R.Qy)(t.config, p), E = f && d && !p;
+  } = (0, m.Z)(), p = _ === U.a$.FP_ONLY, g = (0, R.Qy)(t.config), E = f && d && !p;
   return (0, r.jsxs)("div", {
     className: B.claimedRootContainer,
     children: [(0, r.jsxs)("div", {

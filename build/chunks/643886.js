@@ -1,11 +1,11 @@
-/** Chunk was on 50749 **/
+/** Chunk was on 23682 **/
 n.d(t, {
   U: () => g
 }), n(653041), n(47120), n(733860);
 var r = n(192379),
   i = n(512722),
-  l = n.n(i),
-  o = n(149765),
+  o = n.n(i),
+  l = n(149765),
   a = n(442837),
   s = n(271383),
   c = n(430824),
@@ -17,7 +17,7 @@ var r = n(192379),
 
 function g(e) {
   let t = (0, a.e7)([c.Z], () => c.Z.getGuild(e));
-  l()(null != t, "guild must be present to be editing its integration settings");
+  o()(null != t, "guild must be present to be editing its integration settings");
   let n = (0, a.e7)([d.Z], () => d.Z.getHighestRole(t)),
     i = (0, a.Wu)([s.ZP], () => s.ZP.getMembers(e), [e]),
     g = (0, a.cj)([u.default], () => u.default.getUsers()),
@@ -49,11 +49,11 @@ function g(e) {
       let r = [];
       for (let i of x) {
         if (v(i)) continue;
-        let l = !o.e$(i.permissions, b.Plq.ADMINISTRATOR) && d.Z.isRoleHigher(t, n, i),
+        let o = !l.e$(i.permissions, b.Plq.ADMINISTRATOR) && d.Z.isRoleHigher(t, n, i),
           a = {
             id: i.id,
             name: i.name,
-            canManage: l
+            canManage: o
           };
         i.id === e ? r.unshift(a) : r.push(a)
       }

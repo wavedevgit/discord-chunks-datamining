@@ -1,7 +1,7 @@
 /** Chunk was on 7654 **/
 n.d(t, {
   d: () => f,
-  k: () => E
+  k: () => j
 }), n(47120);
 var l = n(200651),
   i = n(192379),
@@ -18,8 +18,8 @@ var l = n(200651),
   m = n(768581),
   x = n(624138),
   p = n(51144),
-  I = n(388032),
-  N = n(724897);
+  N = n(388032),
+  I = n(724897);
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -29,7 +29,7 @@ function S(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let E = 44;
+let j = 44;
 class f extends i.Component {
   shouldComponentUpdate(e, t) {
     return this.state.sending !== t.sending || this.state.invited !== t.invited || this.state.hovered !== t.hovered || this.props.user !== e.user || this.props.channel !== e.channel
@@ -51,14 +51,14 @@ class f extends i.Component {
     }
     return null == t || null == n ? null != e ? (0, l.jsx)(r.Text, {
       variant: "text-md/medium",
-      className: N.acronym,
+      className: I.acronym,
       "aria-hidden": !0,
       children: e
     }) : null : (0, l.jsx)(r.qEK, {
       src: t,
       "aria-label": n,
       size: r.EFr.SIZE_32,
-      className: N.inviteRowAvatar
+      className: I.inviteRowAvatar
     })
   }
   render() {
@@ -76,23 +76,23 @@ class f extends i.Component {
       size: r.zxk.Sizes.SMALL,
       disabled: !0,
       color: (0, s.wj)(u.Z.theme) ? r.zxk.Colors.WHITE : r.zxk.Colors.BRAND,
-      children: I.NW.string(I.t["dVT14+"])
+      children: N.NW.string(N.t["dVT14+"])
     }) : (0, l.jsx)(r.zxk, {
       color: r.zxk.Colors.GREEN,
       look: o ? r.zxk.Looks.FILLED : r.zxk.Looks.OUTLINED,
-      className: N.inviteRowButton,
+      className: I.inviteRowButton,
       size: r.zxk.Sizes.SMALL,
       submitting: i,
       onClick: this.handleClickInvite,
-      children: I.NW.string(I.t.jYnGPD)
+      children: N.NW.string(N.t.jYnGPD)
     }), (0, l.jsxs)("div", {
-      className: N.inviteRow,
+      className: I.inviteRow,
       onMouseEnter: this.handleMouseEnter,
       onMouseLeave: this.handleMouseLeave,
       children: [(0, l.jsxs)("div", {
-        className: N.inviteRowInfo,
+        className: I.inviteRowInfo,
         children: [this.renderUserOrChannel(), (0, l.jsxs)("div", {
-          className: N.inviteRowName,
+          className: I.inviteRowName,
           children: [p.ZP.getName(t), null != n ? (0, d.F6)(n, v.default, g.Z, !0) : null]
         })]
       }), e]

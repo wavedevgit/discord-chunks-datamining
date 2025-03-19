@@ -2,7 +2,7 @@
 n.d(t, {
   Z: () => O
 }), n(26686), n(411104);
-var r, i, l, a, o = n(200651),
+var r, i, l, o, a = n(200651),
   s = n(192379);
 
 function c(e, t, n) {
@@ -64,7 +64,7 @@ function m(e) {
   return d("Offer", e)
 }
 m.ItemConditions = f, m.ItemAvailability = g;
-var b = ((a = b || {}).YEARLY = "ANN", a.MONTHLY = "MON", a);
+var b = ((o = b || {}).YEARLY = "ANN", o.MONTHLY = "MON", o);
 
 function _(e) {
   return d("QuantitativeValue", e)
@@ -78,7 +78,7 @@ class E extends(r = s.Component) {
     } = this.props, n = JSON.stringify(u({
       "@context": "http://schema.org"
     }, t));
-    return (0, o.jsx)("script", {
+    return (0, a.jsx)("script", {
       type: "application/ld+json",
       children: n
     })

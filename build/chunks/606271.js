@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(392711),
   i = n.n(r),
   l = n(442837),
-  a = n(570140),
-  o = n(176787),
+  o = n(570140),
+  a = n(176787),
   s = n(592125),
   c = n(271383),
   u = n(430824),
@@ -43,7 +43,7 @@ class P {
   }
   init() {
     this.rpcServer.getCurrentUser = () => m.default.getCurrentUser(), this.rpcServer.onConnect = e => {
-      a.Z.dispatch({
+      o.Z.dispatch({
         type: "RPC_APP_CONNECTED",
         socketId: e.id,
         application: e.application
@@ -52,7 +52,7 @@ class P {
         transport: e.transport
       })
     }, this.rpcServer.onDisconnect = (e, t) => {
-      a.Z.dispatch({
+      o.Z.dispatch({
         type: "RPC_APP_DISCONNECTED",
         socketId: e.id,
         application: e.application,
@@ -60,10 +60,10 @@ class P {
       })
     };
     let e = [s.Z, c.ZP, p.Z, b.Z, d.Z, h.Z];
-    new l.Fh(e.concat(this.stores), () => this.rpcServer.updateSubscriptions()).attach("RPCServerManager"), a.Z.subscribe("MESSAGE_CREATE", this.handleMessage), a.Z.subscribe("MESSAGE_UPDATE", this.handleMessage), a.Z.subscribe("MESSAGE_DELETE", this.handleMessage), a.Z.subscribe("SPEAKING", this.handleSpeaking), a.Z.subscribe("OAUTH2_TOKEN_REVOKE", this.handleOAuth2TokenRevoke), a.Z.subscribe("GUILD_CREATE", this.handleGuildCreate), a.Z.subscribe("CHANNEL_CREATE", this.handleChannelCreate), a.Z.subscribe("LOGOUT", this.handleLogout), a.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), a.Z.subscribe("RPC_NOTIFICATION_CREATE", this.handleNotificationCreate), a.Z.subscribe("ACTIVITY_JOIN", this.handleActivityJoin), a.Z.subscribe("ACTIVITY_LAYOUT_MODE_UPDATE", this.handleActivityLayoutModeUpdate), a.Z.subscribe("THERMAL_STATE_CHANGE", this.handleThermalStateChange), a.Z.subscribe("ACTIVITY_SCREEN_ORIENTATION_UPDATE", this.handleScreenOrientationUpdate), a.Z.subscribe("EMBEDDED_ACTIVITY_UPDATE", this.handleEmbeddedActivityUpdate), a.Z.subscribe("RELATIONSHIP_ADD", this.handleRelationshipAdd), a.Z.subscribe("RELATIONSHIP_UPDATE", this.handleRelationshipUpdate), a.Z.subscribe("RELATIONSHIP_REMOVE", this.handleRelationshipRemove), a.Z.subscribe("PRESENCE_UPDATES", this.handlePresenceUpdates), a.Z.subscribe("PRESENCES_REPLACE", this.handlePresencesReplace), a.Z.subscribe("USER_UPDATE", this.handleUserUpdate), a.Z.subscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate), a.Z.subscribe("ENTITLEMENT_DELETE", this.handleEntitlementDelete)
+    new l.Fh(e.concat(this.stores), () => this.rpcServer.updateSubscriptions()).attach("RPCServerManager"), o.Z.subscribe("MESSAGE_CREATE", this.handleMessage), o.Z.subscribe("MESSAGE_UPDATE", this.handleMessage), o.Z.subscribe("MESSAGE_DELETE", this.handleMessage), o.Z.subscribe("SPEAKING", this.handleSpeaking), o.Z.subscribe("OAUTH2_TOKEN_REVOKE", this.handleOAuth2TokenRevoke), o.Z.subscribe("GUILD_CREATE", this.handleGuildCreate), o.Z.subscribe("CHANNEL_CREATE", this.handleChannelCreate), o.Z.subscribe("LOGOUT", this.handleLogout), o.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), o.Z.subscribe("RPC_NOTIFICATION_CREATE", this.handleNotificationCreate), o.Z.subscribe("ACTIVITY_JOIN", this.handleActivityJoin), o.Z.subscribe("ACTIVITY_LAYOUT_MODE_UPDATE", this.handleActivityLayoutModeUpdate), o.Z.subscribe("THERMAL_STATE_CHANGE", this.handleThermalStateChange), o.Z.subscribe("ACTIVITY_SCREEN_ORIENTATION_UPDATE", this.handleScreenOrientationUpdate), o.Z.subscribe("EMBEDDED_ACTIVITY_UPDATE", this.handleEmbeddedActivityUpdate), o.Z.subscribe("RELATIONSHIP_ADD", this.handleRelationshipAdd), o.Z.subscribe("RELATIONSHIP_UPDATE", this.handleRelationshipUpdate), o.Z.subscribe("RELATIONSHIP_REMOVE", this.handleRelationshipRemove), o.Z.subscribe("PRESENCE_UPDATES", this.handlePresenceUpdates), o.Z.subscribe("PRESENCES_REPLACE", this.handlePresencesReplace), o.Z.subscribe("USER_UPDATE", this.handleUserUpdate), o.Z.subscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate), o.Z.subscribe("ENTITLEMENT_DELETE", this.handleEntitlementDelete)
   }
   terminate() {
-    a.Z.unsubscribe("MESSAGE_CREATE", this.handleMessage), a.Z.unsubscribe("MESSAGE_UPDATE", this.handleMessage), a.Z.unsubscribe("MESSAGE_DELETE", this.handleMessage), a.Z.unsubscribe("SPEAKING", this.handleSpeaking), a.Z.unsubscribe("OAUTH2_TOKEN_REVOKE", this.handleOAuth2TokenRevoke), a.Z.unsubscribe("GUILD_CREATE", this.handleGuildCreate), a.Z.unsubscribe("CHANNEL_CREATE", this.handleChannelCreate), a.Z.unsubscribe("LOGOUT", this.handleLogout), a.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), a.Z.unsubscribe("RPC_NOTIFICATION_CREATE", this.handleNotificationCreate), a.Z.unsubscribe("ACTIVITY_JOIN", this.handleActivityJoin), a.Z.unsubscribe("ACTIVITY_LAYOUT_MODE_UPDATE", this.handleActivityLayoutModeUpdate), a.Z.unsubscribe("THERMAL_STATE_CHANGE", this.handleThermalStateChange), a.Z.unsubscribe("ACTIVITY_SCREEN_ORIENTATION_UPDATE", this.handleScreenOrientationUpdate), a.Z.unsubscribe("EMBEDDED_ACTIVITY_UPDATE", this.handleEmbeddedActivityUpdate), a.Z.unsubscribe("RELATIONSHIP_ADD", this.handleRelationshipAdd), a.Z.unsubscribe("RELATIONSHIP_UPDATE", this.handleRelationshipUpdate), a.Z.unsubscribe("RELATIONSHIP_REMOVE", this.handleRelationshipRemove), a.Z.unsubscribe("PRESENCE_UPDATES", this.handlePresenceUpdates), a.Z.unsubscribe("PRESENCES_REPLACE", this.handlePresencesReplace), a.Z.unsubscribe("USER_UPDATE", this.handleUserUpdate), a.Z.unsubscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate), a.Z.unsubscribe("ENTITLEMENT_DELETE", this.handleEntitlementDelete)
+    o.Z.unsubscribe("MESSAGE_CREATE", this.handleMessage), o.Z.unsubscribe("MESSAGE_UPDATE", this.handleMessage), o.Z.unsubscribe("MESSAGE_DELETE", this.handleMessage), o.Z.unsubscribe("SPEAKING", this.handleSpeaking), o.Z.unsubscribe("OAUTH2_TOKEN_REVOKE", this.handleOAuth2TokenRevoke), o.Z.unsubscribe("GUILD_CREATE", this.handleGuildCreate), o.Z.unsubscribe("CHANNEL_CREATE", this.handleChannelCreate), o.Z.unsubscribe("LOGOUT", this.handleLogout), o.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), o.Z.unsubscribe("RPC_NOTIFICATION_CREATE", this.handleNotificationCreate), o.Z.unsubscribe("ACTIVITY_JOIN", this.handleActivityJoin), o.Z.unsubscribe("ACTIVITY_LAYOUT_MODE_UPDATE", this.handleActivityLayoutModeUpdate), o.Z.unsubscribe("THERMAL_STATE_CHANGE", this.handleThermalStateChange), o.Z.unsubscribe("ACTIVITY_SCREEN_ORIENTATION_UPDATE", this.handleScreenOrientationUpdate), o.Z.unsubscribe("EMBEDDED_ACTIVITY_UPDATE", this.handleEmbeddedActivityUpdate), o.Z.unsubscribe("RELATIONSHIP_ADD", this.handleRelationshipAdd), o.Z.unsubscribe("RELATIONSHIP_UPDATE", this.handleRelationshipUpdate), o.Z.unsubscribe("RELATIONSHIP_REMOVE", this.handleRelationshipRemove), o.Z.unsubscribe("PRESENCE_UPDATES", this.handlePresenceUpdates), o.Z.unsubscribe("PRESENCES_REPLACE", this.handlePresencesReplace), o.Z.unsubscribe("USER_UPDATE", this.handleUserUpdate), o.Z.unsubscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate), o.Z.unsubscribe("ENTITLEMENT_DELETE", this.handleEntitlementDelete)
   }
   constructor(e) {
     T(this, "rpcServer", void 0), T(this, "transports", void 0), T(this, "rpcCommandHandlers", void 0), T(this, "rpcEventHandlers", void 0), T(this, "stores", void 0), T(this, "registerTransportsForEmbeddedPlatform", void 0), T(this, "handleMessage", e => {
@@ -165,7 +165,7 @@ class P {
       } = e;
       if (0 === this.rpcServer.subscriptions.length || null == t) return;
       let n = {
-        thermal_state: (0, o.bY)()
+        thermal_state: (0, a.bY)()
       };
       this.rpcServer.dispatchToSubscriptions(I.zMe.THERMAL_STATE_UPDATE, e => e.socket.application.id === t, n)
     }), T(this, "handleScreenOrientationUpdate", e => {
@@ -191,17 +191,17 @@ class P {
         activity: l
       } = r;
       if (null == i || null == l || null == l.party_id) return;
-      let a = m.default.getUser(null === (t = r.author) || void 0 === t ? void 0 : t.id);
-      if (null == a) return;
-      let o = m.default.getCurrentUser();
-      if (null == o || a.id === o.id) return;
-      let s = l.type === I.mFx.JOIN_REQUEST ? p.Z.getApplicationActivity(o.id, i.id) : p.Z.getApplicationActivity(a.id, i.id);
+      let o = m.default.getUser(null === (t = r.author) || void 0 === t ? void 0 : t.id);
+      if (null == o) return;
+      let a = m.default.getCurrentUser();
+      if (null == a || o.id === a.id) return;
+      let s = l.type === I.mFx.JOIN_REQUEST ? p.Z.getApplicationActivity(a.id, i.id) : p.Z.getApplicationActivity(o.id, i.id);
       if (null == s || null == s.party || s.party.id !== l.party_id) return;
       let c = s.application_id;
       switch (l.type) {
         case I.mFx.JOIN:
           this.rpcServer.dispatchToSubscriptions(I.zMe.ACTIVITY_INVITE, e => e.socket.application.id === c, {
-            user: (0, y.Z)(a),
+            user: (0, y.Z)(o),
             activity: s,
             type: l.type,
             channel_id: n,
@@ -210,7 +210,7 @@ class P {
           break;
         case I.mFx.JOIN_REQUEST:
           this.rpcServer.dispatchToSubscriptions(I.zMe.ACTIVITY_JOIN_REQUEST, e => e.socket.application.id === c, {
-            user: (0, y.Z)(a)
+            user: (0, y.Z)(o)
           })
       }
     }), T(this, "handleOAuth2TokenRevoke", e => {

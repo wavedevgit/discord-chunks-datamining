@@ -21,15 +21,15 @@ function f() {
     t = i.useRef(!1),
     n = (0, s.e7)([m.Z], () => m.Z.getVideoDeviceId()),
     [f, x] = i.useState((0, o.P)(g.default.getCurrentUser())),
-    b = i.useRef(f);
+    N = i.useRef(f);
   return i.useEffect(() => () => {
-    t.current && (0, c.Up)(b.current)
+    t.current && (0, c.Up)(N.current)
   }, []), (0, r.jsx)(l.F, {
     setting: p.s6.VOICE_AND_VIDEO_VIDEO_BACKGROUND,
     children: (0, r.jsx)(u.Z, {
       selectedBackgroundOption: f,
       onSelectBackgroundOption: n => {
-        t.current = !0, b.current = n, x(n), (0, d.wG)(n, {
+        t.current = !0, N.current = n, x(n), (0, d.wG)(n, {
           location: e.location
         }).catch(h.dG4)
       },

@@ -18,8 +18,8 @@ var r = n(200651),
   h = n(920321),
   f = n(921801),
   x = n(695346),
-  b = n(938117),
-  N = n(131951),
+  N = n(938117),
+  b = n(131951),
   _ = n(626135),
   E = n(358085),
   j = n(981631),
@@ -29,7 +29,7 @@ var r = n(200651),
 let S = /\{65E8773D-8F56-11D0-A3B9-00A0C9223196\}/i;
 
 function T() {
-  let [e, t] = i.useState(!1), n = (0, c.e7)([N.Z], () => N.Z.isMediaFilterSettingLoading());
+  let [e, t] = i.useState(!1), n = (0, c.e7)([b.Z], () => b.Z.isMediaFilterSettingLoading());
   return (i.useEffect(() => {
     let e = new d.V7;
     return n ? e.start(150, () => {
@@ -58,9 +58,9 @@ function I(e) {
   } = (0, p.ZP)(), {
     currentDeviceId: R,
     isVideoAvailable: D
-  } = (0, c.cj)([N.Z], () => ({
-    currentDeviceId: N.Z.getVideoDeviceId(),
-    isVideoAvailable: N.Z.isVideoAvailable()
+  } = (0, c.cj)([b.Z], () => ({
+    currentDeviceId: b.Z.getVideoDeviceId(),
+    isVideoAvailable: b.Z.isVideoAvailable()
   })), Z = (0, h.Z)(), w = x.qF.useSetting(), k = Object.values(Z).map(e => {
     let {
       id: t,
@@ -72,7 +72,7 @@ function I(e) {
     }
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [T(R), N.Z.isEnabled() ? null : (0, r.jsx)(u.Text, {
+    children: [T(R), b.Z.isEnabled() ? null : (0, r.jsx)(u.Text, {
       className: v.permissionWarning,
       color: "interactive-normal",
       variant: "text-sm/normal",
@@ -121,7 +121,7 @@ function I(e) {
       })
     }), (0, r.jsx)(f.F, {
       setting: C.s6.VOICE_AND_VIDEO_VIDEO_BACKGROUND,
-      children: (0, r.jsx)(b.Z, {
+      children: (0, r.jsx)(N.Z, {
         className: v.spacingTop24,
         onLearnMore: s,
         selectedBackgroundOption: l,

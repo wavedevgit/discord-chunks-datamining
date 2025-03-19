@@ -1,4 +1,4 @@
-/** Chunk was on 50749 **/
+/** Chunk was on 23682 **/
 e.exports = {
   sidebarScrollable: "sidebarScrollable__53543",
   content: "content__53543",

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(512969),
-  a = n(442837),
-  o = n(252618),
+  o = n(442837),
+  a = n(252618),
   s = n(353926),
   c = n(319443),
   u = n(106075),
@@ -18,7 +18,7 @@ var r = n(200651),
   m = n(49898),
   b = n(471312);
 let _ = function() {
-  let e = (0, a.e7)([s.Z], () => s.Z.hasLoadedExperiments),
+  let e = (0, o.e7)([s.Z], () => s.Z.hasLoadedExperiments),
     t = f.Z.useField("selectedTab"),
     n = function(e) {
       switch (e) {
@@ -45,7 +45,7 @@ let _ = function() {
     })
   }, [t, e]), (0, r.jsxs)("section", {
     className: b.container,
-    children: [(0, r.jsx)(o.yY, {
+    children: [(0, r.jsx)(a.yY, {
       location: (0, g.s)(t)
     }), (0, r.jsx)("div", {
       className: b.dragRegion

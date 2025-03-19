@@ -6,9 +6,9 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(570140),
-  a = n(317770),
-  o = n(388032);
-class s extends a.Z {
+  o = n(317770),
+  a = n(388032);
+class s extends o.Z {
   _initialize() {
     l.Z.subscribe("POGGERMODE_TEMPORARILY_DISABLED", this.handlePoggermodeTemporarilyDisabled)
   }
@@ -36,12 +36,12 @@ class s extends a.Z {
         }
         return e
       }({}, e), n = n = {
-        header: o.NW.string(o.t.wDQgnZ),
-        confirmText: o.NW.string(o.t["cY+Ooa"]),
+        header: a.NW.string(a.t.wDQgnZ),
+        confirmText: a.NW.string(a.t["cY+Ooa"]),
         confirmButtonColor: i.zxk.Colors.GREEN,
         children: (0, r.jsx)(i.Text, {
           variant: "text-md/normal",
-          children: o.NW.string(o.t.OJklbW)
+          children: a.NW.string(a.t.OJklbW)
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);

@@ -11,7 +11,7 @@ function l(e) {
     loadId: n
   } = e, l = r.useCallback((e, r) => {
     t.markAsSeen(r, e, n)
-  }, [t, n]), a = r.useCallback((e, t, r, l) => (0, i.vL)({
+  }, [t, n]), o = r.useCallback((e, t, r, l) => (0, i.vL)({
     loadId: n,
     guildId: e,
     index: t,
@@ -20,6 +20,6 @@ function l(e) {
   }), [n]);
   return r.useMemo(() => ({
     onGuildCardSeen: l,
-    onGuildCardClick: a
-  }), [a, l])
+    onGuildCardClick: o
+  }), [o, l])
 }

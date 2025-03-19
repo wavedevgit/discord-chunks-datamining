@@ -2,15 +2,15 @@
 n.d(t, {
   Z: () => p
 });
-var r, i, l, a = n(442837),
-  o = n(570140),
+var r, i, l, o = n(442837),
+  a = n(570140),
   s = n(496675),
   c = n(981631);
 
 function u() {
   return !0
 }
-class d extends(l = a.ZP.Store) {
+class d extends(l = o.ZP.Store) {
   initialize() {
     this.waitFor(s.Z), this.syncWith([s.Z], u)
   }
@@ -24,4 +24,4 @@ i = "InviteNoticeStore", (r = "displayName") in d ? Object.defineProperty(d, r, 
   configurable: !0,
   writable: !0
 }) : d[r] = i;
-let p = new d(o.Z)
+let p = new d(a.Z)

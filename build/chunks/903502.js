@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => x
+  Z: () => h
 }), n(47120);
 var r = n(200651),
   a = n(192379),
@@ -12,7 +12,7 @@ var r = n(200651),
   d = n(511010),
   u = n(246992),
   m = n(671106);
-let h = [{
+let x = [{
   label: "second(s)",
   value: 1e3
 }, {
@@ -26,8 +26,8 @@ let h = [{
   value: 864e5
 }];
 
-function x() {
-  let [e, t] = a.useState(null), [n, x] = a.useState(0), [p, b] = a.useState(1e3), [f, _] = a.useState(0), g = (0, l.e7)([c.Z], () => {
+function h() {
+  let [e, t] = a.useState(null), [n, h] = a.useState(0), [p, b] = a.useState(1e3), [f, _] = a.useState(0), g = (0, l.e7)([c.Z], () => {
     var t;
     return null === e ? null : null !== (t = c.Z.getFeedbackConfig(e)) && void 0 !== t ? t : s.R[e]
   }), v = Object.keys(s.R).map(e => ({
@@ -86,9 +86,9 @@ function x() {
           value: n.toString(),
           type: "number",
           placeholder: "Duration length",
-          onChange: e => x(parseFloat(e))
+          onChange: e => h(parseFloat(e))
         }), (0, r.jsx)(i.q4e, {
-          options: h,
+          options: x,
           value: p,
           onChange: e => {
             b(e)

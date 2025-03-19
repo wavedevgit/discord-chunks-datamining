@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(442837),
   l = n(481060),
-  a = n(129861),
-  o = n(607070),
+  o = n(129861),
+  a = n(607070),
   s = n(570928),
   c = n(388905),
   u = n(1585),
@@ -56,7 +56,7 @@ function I(e) {
     channel: n,
     otherUser: c,
     active: h
-  } = e, m = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), _ = (0, i.e7)([f.Z], () => null == c ? null : f.Z.getNickname(c.id)), I = !m && h, C = (0, b.c)(n), {
+  } = e, m = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), _ = (0, i.e7)([f.Z], () => null == c ? null : f.Z.getNickname(c.id)), I = !m && h, C = (0, b.c)(n), {
     avatarDecorationSrc: S
   } = (0, d.Z)({
     user: c,
@@ -74,7 +74,7 @@ function I(e) {
       className: N.userPreview,
       children: [(0, r.jsxs)("div", {
         className: N.userContainerWithPreview,
-        children: [(0, r.jsx)(a.Z, {
+        children: [(0, r.jsx)(o.Z, {
           nick: _,
           user: c,
           showAccountIdentifier: !0,

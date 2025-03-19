@@ -39,7 +39,7 @@ let Z = (0, s.Z)(function(e) {
       Z(!1)
     }
   }
-  let _ = e => {
+  let M = e => {
       switch (e) {
         case P.oAB.GAMES:
           return w;
@@ -61,7 +61,7 @@ let Z = (0, s.Z)(function(e) {
           return null
       }
     },
-    M = (0, g.VO)().filter(e => {
+    R = (0, g.VO)().filter(e => {
       let {
         section: t
       } = e;
@@ -75,7 +75,7 @@ let Z = (0, s.Z)(function(e) {
       "aria-label": x.NW.string(x.t.opYYHh),
       onSelect: r,
       onInteraction: s,
-      children: [M.map(e => {
+      children: [R.map(e => {
         var t, r;
         let {
           section: i,
@@ -110,7 +110,7 @@ let Z = (0, s.Z)(function(e) {
             })
           }(i, B)
         }), r = r = {
-          children: _(i)
+          children: M(i)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

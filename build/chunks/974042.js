@@ -4,8 +4,8 @@ n.d(t, {
 }), n(653041), n(47120);
 var r, i = n(392711),
   l = n.n(i),
-  a = n(442837),
-  o = n(570140),
+  o = n(442837),
+  a = n(570140),
   s = n(194359),
   c = n(81825),
   u = n(353926),
@@ -120,11 +120,11 @@ class A {
         let {
           id: i,
           applicationId: l,
-          type: a
+          type: o
         } = t;
-        !(a === N.OGo.FRIEND && e.has(i)) && (a === N.OGo.FRIEND && n.has(i) || (a === N.OGo.FRIEND && n.add(i), r.push(new j(C(I({
+        !(o === N.OGo.FRIEND && e.has(i)) && (o === N.OGo.FRIEND && n.has(i) || (o === N.OGo.FRIEND && n.add(i), r.push(new j(C(I({
           key: "".concat(i, "-").concat(l),
-          type: a,
+          type: o,
           userId: i,
           applicationId: l,
           nickname: E.Z.getNickname(i)
@@ -224,7 +224,7 @@ function G(e) {
     return !R && !!w.update(e) && (w = w.clone(), !0)
   }
 }
-class W extends(r = a.ZP.Store) {
+class W extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(E.Z, _.Z, O.default, b.Z, m.ZP, g.Z, d.Z, u.Z), this.syncWith([E.Z], U), this.syncWith([h.Z], U), this.syncWith([d.Z], U), this.syncWith([f.Z], U), this.syncWith([O.default], G(S)), this.syncWith([_.Z, g.Z], G(T)), M()
   }
@@ -237,7 +237,7 @@ class W extends(r = a.ZP.Store) {
   }
 }
 y(W, "displayName", "FriendsStore");
-let V = new W(o.Z, {
+let V = new W(a.Z, {
   CONNECTION_OPEN: function() {
     M()
   },

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(481060),
   c = n(607070),
   u = n(446411),
@@ -61,7 +61,7 @@ let C = [],
       className: n
     } = e;
     return (0, r.jsx)(s.IGR, {
-      className: a()(v.tag, n),
+      className: o()(v.tag, n),
       text: t
     })
   },
@@ -71,19 +71,19 @@ let C = [],
       subHeader: n,
       imageSrc: i,
       tagText: l,
-      wideStyle: o
+      wideStyle: a
     } = e;
     return (0, r.jsxs)("div", {
-      className: a()(v.featureCard, {
-        [v.wideStyle]: o
+      className: o()(v.featureCard, {
+        [v.wideStyle]: a
       }),
       children: [null != l ? (0, r.jsx)(S, {
         tagText: l,
         className: v.featureCardTag
       }) : null, (0, r.jsx)("img", {
         alt: "",
-        className: a()(v.featureCardImg, {
-          [v.wideStyle]: o
+        className: o()(v.featureCardImg, {
+          [v.wideStyle]: a
         }),
         src: i
       }), (0, r.jsxs)("div", {
@@ -119,9 +119,9 @@ function P(e) {
   } = e, {
     onClose: M,
     transitionState: U
-  } = n, G = (0, p.Dt)(), W = w.length % 2 == 0, V = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), [B, H] = i.useState(Date.now()), [F, z] = i.useState(0), [Y, K] = i.useState(0), [q, Q] = i.useState(!1), [X, J] = i.useState(!0), $ = i.useRef(B), ee = i.useRef(F), et = i.useRef(Y), en = i.useRef(q), er = i.useRef(X), [ei, el] = i.useState(C), ea = i.useRef(!1);
+  } = n, G = (0, p.Dt)(), W = w.length % 2 == 0, V = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), [B, H] = i.useState(Date.now()), [F, z] = i.useState(0), [Y, K] = i.useState(0), [q, Q] = i.useState(!1), [X, J] = i.useState(!0), $ = i.useRef(B), ee = i.useRef(F), et = i.useRef(Y), en = i.useRef(q), er = i.useRef(X), [ei, el] = i.useState(C), eo = i.useRef(!1);
 
-  function eo() {
+  function ea() {
     let e = Date.now(),
       t = e - $.current,
       n = ee.current,
@@ -150,7 +150,7 @@ function P(e) {
         b.Z.captureException(e), el(C)
       }
     };
-    !0 !== ea.current && e(), ea.current = !0
+    !0 !== eo.current && e(), eo.current = !0
   }, [l, ei]), i.useEffect(() => () => {
     null != ei && ei.forEach(e => {
       URL.revokeObjectURL(e.src)
@@ -159,7 +159,7 @@ function P(e) {
     $.current = B, ee.current = F, et.current = Y, en.current = q, er.current = X
   }, [B, F, Y, q, X]), i.useEffect(() => () => {
     if ("video" === l.type || "embed" === l.type) {
-      let [e, t] = eo();
+      let [e, t] = ea();
       m.default.track(E.rMx.CHANGE_LOG_VIDEO_PLAYED, {
         change_log_id: R,
         seconds_played: Math.round(e / 1e3)
@@ -182,7 +182,7 @@ function P(e) {
       })
     }
   }, [P, R]), (0, r.jsxs)(s.Y0X, {
-    className: a()(v.root, t),
+    className: o()(v.root, t),
     transitionState: U,
     "aria-labelledby": G,
     children: [(0, r.jsx)(s.olH, {
@@ -194,10 +194,10 @@ function P(e) {
       className: v.content,
       children: [(0, r.jsx)(s.X6q, {
         variant: "display-md",
-        className: a()(v.headerText, Z),
+        className: o()(v.headerText, Z),
         children: A
       }), "video" === l.type ? (0, r.jsx)(h.Z, {
-        className: a()(v.video, S),
+        className: o()(v.video, S),
         autoPlay: !V,
         loop: !0,
         muted: !0,
@@ -211,13 +211,13 @@ function P(e) {
           }), H(Date.now()), Q(!0), J(e.currentTarget.muted)
         },
         onEnded: e => {
-          eo(), J(e.currentTarget.muted), Q(!1)
+          ea(), J(e.currentTarget.muted), Q(!1)
         },
         onVolumeChange: e => {
-          eo(), J(e.currentTarget.muted)
+          ea(), J(e.currentTarget.muted)
         },
         onPause: e => {
-          eo(), J(e.currentTarget.muted), Q(!1)
+          ea(), J(e.currentTarget.muted), Q(!1)
         },
         disablePictureInPicture: !0,
         children: null == ei ? void 0 : ei.map(e => {
@@ -231,7 +231,7 @@ function P(e) {
           }, e.locale)
         })
       }) : "embed" === l.type ? (0, r.jsx)(u.BC, {
-        className: a()(v.video, S),
+        className: o()(v.video, S),
         allowFullScreen: !1,
         href: l.href,
         thumbnail: l.thumbnail,
@@ -249,7 +249,7 @@ function P(e) {
         }
       }) : "image" === l.type ? (0, r.jsx)("img", {
         alt: "",
-        className: a()(v.video, S),
+        className: o()(v.video, S),
         src: l.src
       }) : null, (0, r.jsxs)(s.X6q, {
         variant: "heading-lg/semibold",
@@ -260,7 +260,7 @@ function P(e) {
         className: v.bodyText,
         children: k
       }), w.length > 0 && (0, r.jsx)("div", {
-        className: a()(v.featureCardGroup, {
+        className: o()(v.featureCardGroup, {
           [v.wideStyle]: W
         }),
         children: w.map((e, t) => (0, r.jsx)(T, I(y({}, e), {

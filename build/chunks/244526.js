@@ -1,6 +1,6 @@
 /** Chunk was on 54835 **/
 n.d(t, {
-  Z: () => N
+  Z: () => b
 }), n(266796);
 var r, i, s, a = n(200651),
   l = n(192379),
@@ -14,8 +14,8 @@ var r, i, s, a = n(200651),
   h = n(122289),
   f = n(624138),
   x = n(388032),
-  b = n(579933);
-class N extends(r = l.PureComponent) {
+  N = n(579933);
+class b extends(r = l.PureComponent) {
   get typeString() {
     let {
       paymentSource: e
@@ -43,7 +43,7 @@ class N extends(r = l.PureComponent) {
     return e instanceof p.dm ? x.NW.format(x.t["o/dsrK"], {
       brand: (0, f.De)(e.brand),
       last_4: e.last4
-    }) : e instanceof p.qo ? x.NW.string(x.t["2dgEq6"]) : e instanceof p.Sf ? x.NW.string(x.t["edKX//"]) : e instanceof p.fv ? x.NW.string(x.t["y+0MQU"]) : e instanceof p.Vg ? x.NW.string(x.t.u25uLy) : e instanceof p.sn ? x.NW.string(x.t.boznHB) : e instanceof p.o_ ? x.NW.string(x.t.PjehcH) : e instanceof p.kX ? x.NW.string(x.t.T5davL) : e instanceof p.z ? x.NW.string(x.t.J0A1Vl) : e instanceof p.Xc ? x.NW.string(x.t.jYOezc) : e instanceof p.Om ? x.NW.string(x.t.CSVexs) : e instanceof p.JC ? x.NW.string(x.t["43J8JC"]) : e instanceof p.U4 ? x.NW.string(x.t["1ITkfn"]) : e instanceof p.jc ? x.NW.format(x.t["9kUlRU"], {
+    }) : e instanceof p.qo ? x.NW.string(x.t["2dgEq6"]) : e instanceof p.Sf ? x.NW.string(x.t["edKX//"]) : e instanceof p.fv ? x.NW.string(x.t["y+0MQU"]) : e instanceof p.Vg ? x.NW.string(x.t.u25uLy) : e instanceof p.sn ? x.NW.string(x.t.boznHB) : e instanceof p.o_ ? x.NW.string(x.t.PjehcH) : e instanceof p.kX ? x.NW.string(x.t.T5davL) : e instanceof p.z ? x.NW.string(x.t.J0A1Vl) : e instanceof p.Xc ? x.NW.string(x.t.jYOezc) : e instanceof p.Om ? x.NW.string(x.t.CSVexs) : e instanceof p.JC ? x.NW.string(x.t["43J8JC"]) : e instanceof p.U4 ? x.NW.string(x.t["1ITkfn"]) : e instanceof p.jc ? null == e.bank ? x.NW.string(x.t.nSbwqK) : x.NW.format(x.t["9kUlRU"], {
       bank: (0, u.YE)(e.bank)
     }) : e instanceof p.D0 ? x.NW.format(x.t.hSPoZ2, {
       bank: (0, u.Ul)(e.bank)
@@ -55,7 +55,7 @@ class N extends(r = l.PureComponent) {
       descriptionClassName: t
     } = this.props;
     return (0, a.jsx)(d.Text, {
-      className: c()(b.description, t),
+      className: c()(N.description, t),
       variant: "text-md/semibold",
       children: this.getLabel(e)
     })
@@ -84,21 +84,21 @@ class N extends(r = l.PureComponent) {
         type: this.typeString
       }), (0, a.jsxs)(m.Z, {
         direction: m.Z.Direction.VERTICAL,
-        className: b.descriptionWrapper,
+        className: N.descriptionWrapper,
         children: [(0, a.jsxs)(m.Z, {
           align: m.Z.Align.CENTER,
           children: [this.renderDescription(), s && e ? (0, a.jsx)("div", {
-            className: b.defaultIndicator,
+            className: N.defaultIndicator,
             children: x.NW.string(x.t.bBvAEB)
           }) : null, r ? (0, a.jsx)("div", {
-            className: b.premiumIndicator,
+            className: N.premiumIndicator,
             children: x.NW.string(x.t.YCrcPD)
           }) : null, s && t.invalid ? (0, a.jsx)("div", {
-            className: b.invalidIndicator,
+            className: N.invalidIndicator,
             children: x.NW.string(x.t["851k9/"])
           }) : null]
         }), n && null != l ? (0, a.jsx)("div", {
-          className: b.subText,
+          className: N.subText,
           children: l
         }) : null]
       })]
@@ -111,9 +111,9 @@ s = {
   showSubtext: !1,
   showPaymentSourceIcon: !1,
   showLabels: !1
-}, (i = "defaultProps") in N ? Object.defineProperty(N, i, {
+}, (i = "defaultProps") in b ? Object.defineProperty(b, i, {
   value: s,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : N[i] = s
+}) : b[i] = s

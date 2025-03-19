@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(367907),
-  a = n(70097),
-  o = n(970731),
+  o = n(70097),
+  a = n(970731),
   s = n(626135),
   c = n(63063),
   u = n(981631),
@@ -51,10 +51,10 @@ function f(e) {
       })
     })]
   });
-  return (0, r.jsx)(o.ZP, {
+  return (0, r.jsx)(a.ZP, {
     header: d.NW.string(d.t.fW7UqK),
     content: g,
-    asset: (0, r.jsx)(a.Z, {
+    asset: (0, r.jsx)(o.Z, {
       className: p.video,
       src: "https://cdn.discordapp.com/assets/media_channel/media_channel_upsell_demo.mp4",
       autoPlay: !0,

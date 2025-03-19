@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(200651);
 n(192379);
 var o = n(481060),
-  a = n(239091),
-  r = n(883385),
+  r = n(239091),
+  a = n(883385),
   c = n(108843),
   l = n(947440),
   d = n(100527),
@@ -27,8 +27,8 @@ var o = n(481060),
   P = n(776568),
   S = n(218035),
   Z = n(775666),
-  I = n(593589),
-  j = n(442754),
+  j = n(593589),
+  I = n(442754),
   k = n(981631),
   w = n(388032);
 
@@ -55,23 +55,23 @@ function T(e) {
   let {
     channel: t,
     onSelect: n
-  } = e, r = (0, O.Z)(t), c = (0, x.Z)(t), d = (0, s.l)(t), _ = (0, s.P)(t), h = (0, p.Z)(t), g = (0, b.Z)(t), v = (0, f.Z)(t), C = (0, P.ZP)(t), I = (0, S.Z)(t), j = (0, y.Z)(t), k = (0, u.Z)({
+  } = e, a = (0, O.Z)(t), c = (0, x.Z)(t), d = (0, s.l)(t), _ = (0, s.P)(t), h = (0, p.Z)(t), g = (0, b.Z)(t), v = (0, f.Z)(t), C = (0, P.ZP)(t), j = (0, S.Z)(t), I = (0, y.Z)(t), k = (0, u.Z)({
     id: t.id,
     label: w.NW.string(w.t.gFHI3t)
   }), E = (0, l.Z)(t), T = (0, Z.ZP)(t), L = (0, m.Mn)("ChannelContextFavoritesMenu");
   return (0, i.jsxs)(o.v2r, {
     navId: "channel-context",
-    onClose: a.Zy,
+    onClose: r.Zy,
     "aria-label": w.NW.string(w.t.Xm41aW),
     onSelect: n,
     children: [(0, i.jsx)(o.kSQ, {
-      children: r
+      children: a
     }), (0, i.jsxs)(o.kSQ, {
       children: [g, v, h, d]
     }), (0, i.jsxs)(o.kSQ, {
-      children: [C, L ? T : I]
+      children: [C, L ? T : j]
     }), (0, i.jsx)(o.kSQ, {
-      children: j
+      children: I
     }), (0, i.jsx)(o.kSQ, {
       children: E
     }), (0, i.jsx)(o.kSQ, {
@@ -88,16 +88,16 @@ function L(e) {
   let {
     channel: t,
     guild: n,
-    onSelect: r
-  } = e, c = (0, O.Z)(t), d = (0, x.Z)(t), _ = (0, s.l)(t), p = (0, s.P)(t), b = (0, j.Z)(t), f = (0, P.ZP)(t), k = (0, y.Z)(t), E = (0, C.Z)(t, n), T = (0, h.Z)(t, n), L = (0, g.Z)(t, n), N = (0, v.Z)(t), A = (0, u.Z)({
+    onSelect: a
+  } = e, c = (0, O.Z)(t), d = (0, x.Z)(t), _ = (0, s.l)(t), p = (0, s.P)(t), b = (0, I.Z)(t), f = (0, P.ZP)(t), k = (0, y.Z)(t), E = (0, C.Z)(t, n), T = (0, h.Z)(t, n), L = (0, g.Z)(t, n), N = (0, v.Z)(t), A = (0, u.Z)({
     id: t.id,
     label: w.NW.string(w.t.gFHI3t)
-  }), B = (0, l.Z)(t), U = (0, I.Z)(t, "list_text_channel_context_menu"), M = (0, S.Z)(t), D = (0, Z.ZP)(t), G = (0, m.Mn)("ChannelContextMenuNormal");
+  }), B = (0, l.Z)(t), U = (0, j.Z)(t, "list_text_channel_context_menu"), M = (0, S.Z)(t), D = (0, Z.ZP)(t), G = (0, m.Mn)("ChannelContextMenuNormal");
   return (0, i.jsxs)(o.v2r, {
     navId: "channel-context",
-    onClose: a.Zy,
+    onClose: r.Zy,
     "aria-label": w.NW.string(w.t.Xm41aW),
-    onSelect: r,
+    onSelect: a,
     children: [(0, i.jsxs)(o.kSQ, {
       children: [c, _]
     }, "mark-as-read-or-favorite"), (0, i.jsxs)(o.kSQ, {
@@ -115,7 +115,7 @@ function L(e) {
     }, "developer-actions")]
   })
 }
-let N = (0, c.Z)((0, r.Z)(function(e) {
+let N = (0, c.Z)((0, a.Z)(function(e) {
   return (0, _.Z)() ? (0, i.jsx)(T, E({}, e)) : (0, i.jsx)(L, E({}, e))
 }, {
   object: k.qAy.CONTEXT_MENU

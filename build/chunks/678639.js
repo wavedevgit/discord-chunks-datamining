@@ -12,8 +12,8 @@ var r = n(200651),
   d = n(428530),
   u = n(484036),
   m = n(681619),
-  h = n(621060),
-  x = n(710662),
+  x = n(621060),
+  h = n(710662),
   p = n(579581);
 
 function b(e, t) {
@@ -85,7 +85,7 @@ function v(e) {
   } = e, {
     TabBar: a,
     renderSelectedTab: l
-  } = (0, h.Z)({
+  } = (0, x.Z)({
     tabs: g
   }, []);
   return (0, r.jsxs)(u.Z, {
@@ -93,7 +93,7 @@ function v(e) {
     minHeight: 100,
     initialHeight: n,
     children: [(0, r.jsx)(a, {}), (0, r.jsxs)(c.ZP, {
-      className: i()(x.headerBar, p.subPanelHeaderBar),
+      className: i()(h.headerBar, p.subPanelHeaderBar),
       children: [(0, r.jsx)(c.ZP.Icon, {
         icon: s.lO_,
         tooltip: t.getName()
@@ -120,10 +120,10 @@ function j() {
       return n.getName().toLowerCase().includes(t.toLowerCase())
     })(e, t)),
     [d, u] = a.useState(),
-    h = l.find(e => e._dispatchToken === d);
+    x = l.find(e => e._dispatchToken === d);
   return (0, r.jsxs)("div", {
     ref: e,
-    className: i()(x.panel, p.panel),
+    className: i()(h.panel, p.panel),
     children: [(0, r.jsx)("div", {
       className: p.toolbar,
       children: (0, r.jsx)(s.E1j, {
@@ -140,8 +140,8 @@ function j() {
       data: c,
       selectedRowKey: d,
       onClickRow: e => u(e.key)
-    }), null != h && (0, r.jsx)(v, {
-      store: h,
+    }), null != x && (0, r.jsx)(v, {
+      store: x,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300
     })]
   })

@@ -23,8 +23,8 @@ function x(e) {
     transitionState: n
   } = e, {
     authorizedApplicationId: x,
-    authorizationError: b,
-    authorizing: N
+    authorizationError: N,
+    authorizing: b
   } = (0, s.cj)([m.Z], () => ({
     authorizedApplicationId: m.Z.testModeApplicationId,
     authorizationError: m.Z.error,
@@ -68,9 +68,9 @@ function x(e) {
         className: h.marginBottom20,
         type: a.R94.Types.DESCRIPTION,
         children: g.NW.string(g.t.a6Vilp)
-      }), null == b ? null : (0, r.jsx)(a.kzN, {
+      }), null == N ? null : (0, r.jsx)(a.kzN, {
         className: h.marginBottom20,
-        children: b
+        children: N
       }), (0, r.jsx)("form", {
         onSubmit: e => {
           e.preventDefault(), A()
@@ -89,7 +89,7 @@ function x(e) {
               onChange: function(e) {
                 E(e)
               },
-              disabled: N
+              disabled: b
             })
           }), (0, r.jsx)(a.xJW, {
             className: p.inputWrapper,
@@ -119,10 +119,10 @@ function x(e) {
               value: j,
               maxLength: 5,
               onChange: e => C(e),
-              disabled: N
+              disabled: b
             })
           }), (0, r.jsx)(a.zxk, {
-            submitting: N,
+            submitting: b,
             type: "submit",
             disabled: !T || 0 === _.length || "localhost" === O && 0 === j.length,
             color: y ? a.zxk.Colors.RED : a.zxk.Colors.GREEN,

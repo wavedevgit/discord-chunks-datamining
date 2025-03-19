@@ -385,51 +385,47 @@ async function B(e, t, n, r) {
     bank: t
   })
 }
-async function F(e, t, n, r) {
+async function F(e, t, n) {
   if (null == e) throw U("Stripe not loaded");
-  if (null == t) throw U("Bank required for iDEAL");
   let {
-    email: i,
-    name: o,
-    line1: a,
-    line2: l,
-    city: c,
-    state: u,
-    postalCode: d,
-    country: f
-  } = n;
-  if (null == o) throw U("Name required for iDEAL");
+    email: r,
+    name: i,
+    line1: o,
+    line2: a,
+    city: l,
+    state: c,
+    postalCode: u,
+    country: d
+  } = t;
+  if (null == i) throw U("Name required for iDEAL");
   s.Z.dispatch({
     type: "BILLING_PAYMENT_SOURCE_CREATE_START"
   });
-  let _ = await L(n),
+  let f = await L(t),
     {
-      paymentMethod: p,
-      error: h
+      paymentMethod: _,
+      error: p
     } = await e.createPaymentMethod({
       type: "ideal",
-      ideal: {
-        bank: t
-      },
+      ideal: {},
       billing_details: {
         address: {
-          line1: a,
-          line2: l,
-          city: c,
-          state: u,
-          postal_code: d,
-          country: f
+          line1: o,
+          line2: a,
+          city: l,
+          state: c,
+          postal_code: u,
+          country: d
         },
-        name: o,
-        email: i
+        name: i,
+        email: r
       }
     });
-  if (null != h) throw U(h);
-  if (null == p) throw U("paymentMethod not available with successful stripe call");
-  return M(E.gg$.STRIPE, p.id, n, {
-    billingAddressToken: _,
-    analyticsLocation: r,
-    bank: t
+  if (null != p) throw U(p);
+  if (null == _) throw U("paymentMethod not available with successful stripe call");
+  return M(E.gg$.STRIPE, _.id, t, {
+    billingAddressToken: f,
+    analyticsLocation: n
   })
 }
 async function V(e, t, n, r) {
@@ -659,7 +655,6 @@ async function q(e) {
       f.type = "bancontact";
       break;
     case v.He.IDEAL:
-      if (null == e.bank) throw new l.HF("iDEAL missing bank information", l.HF.ErrorCodes.UNKNOWN_PAYMENT_SOURCE);
       f.type = "ideal", f.ideal = {
         bank: e.bank
       };
@@ -1108,15 +1103,14 @@ async function ep(e) {
       }, r = i.confirmEpsPayment;
       break;
     case v.He.IDEAL:
-      if (null == o.bank) throw U("PaymentSource (".concat(o.id, ") missing bank info for iDEAL."));
       c = {
-        ideal: {
-          bank: o.bank
-        },
+        ideal: {},
         billing_details: {
           name: o.billingAddress.name
         }
-      }, r = i.confirmIdealPayment;
+      }, null != o.bank && (c.ideal = {
+        bank: o.bank
+      }), r = i.confirmIdealPayment;
       break;
     default:
       throw U("Unsupported redirected payment source type.")

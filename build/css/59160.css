@@ -1,6 +1,6 @@
 /**
   Module ID: 59160
-  Original File Name: f3e096dead4a3578
+  Original File Name: c230adf56d55436d
 **/
 .image__04666 {
     width: 100%;
@@ -13375,7 +13375,8 @@ html .progress__61462 {
 .message_f6bd5f {
     flex: 1 0 0;
     overflow: hidden;
-    padding-right: 0
+    padding-right: 0;
+    max-width: calc(100% - var(--space-80) - var(--space-24))
 }
 
 .messageContainer_f6bd5f .message_f6bd5f:first-of-type {
@@ -14741,4 +14742,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=f3e096dead4a3578.css.map*/
+/*# sourceMappingURL=c230adf56d55436d.css.map*/

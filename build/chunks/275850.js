@@ -92,7 +92,7 @@ function y(e, t) {
   };
   else if (e instanceof d.jc) return {
     brand: u.ZP.Types.IDEAL,
-    label: h.NW.format(h.t["9kUlRU"], {
+    label: null == e.bank ? h.NW.string(h.t.nSbwqK) : h.NW.format(h.t["9kUlRU"], {
       bank: (0, c.YE)(e.bank)
     })
   };

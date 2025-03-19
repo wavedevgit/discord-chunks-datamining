@@ -1,6 +1,6 @@
 /**
   Module ID: 15814
-  Original File Name: 125f4e3a80ca990c
+  Original File Name: 9811a67005a4b13c
 **/
 .icon__2894c {
     display: block;
@@ -447,7 +447,7 @@
 }
 
 :where(.visual-refresh) .typeThread__2ea32.wrapper__2ea32 {
-    margin-left: 32px
+    margin-left: calc(16px + var(--space-md))
 }
 
 :where(.visual-refresh) .typeThread__2ea32 .unread__2ea32 {
@@ -2186,4 +2186,4 @@
     background-image: url(/assets/436b5a86429f186a.svg)
 }
 
-/*# sourceMappingURL=125f4e3a80ca990c.css.map*/
+/*# sourceMappingURL=9811a67005a4b13c.css.map*/

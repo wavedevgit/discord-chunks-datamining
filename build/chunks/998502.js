@@ -88,7 +88,7 @@ var x = function(e) {
   }({});
 
 function k(e) {
-  var t, n, r, i, o, a, s, l;
+  var t, n, r, i, o, a, s, l, c;
   return {
     id: C[null !== (t = e.id) && void 0 !== t ? t : ""],
     nativeProcessObserverId: parseInt(null !== (n = e.id) && void 0 !== n ? n : "", 10),
@@ -106,7 +106,8 @@ function k(e) {
     pid: e.pid,
     pidPath: null !== (a = e.pidPath) && void 0 !== a ? a : [],
     windowHandle: null !== (s = e.windowHandle) && void 0 !== s ? s : null,
-    fullscreenType: null !== (l = e.fullscreenType) && void 0 !== l ? l : _.Jx.UNKNOWN
+    fullscreenType: null !== (l = e.fullscreenType) && void 0 !== l ? l : _.Jx.UNKNOWN,
+    isLauncher: null !== (c = e.isLauncher) && void 0 !== c && c
   }
 }
 let j = {

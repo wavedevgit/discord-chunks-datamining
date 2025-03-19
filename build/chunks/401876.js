@@ -15,7 +15,7 @@ function d(e) {
     startDate: t,
     recurrenceRule: r,
     onRecurrenceChange: d
-  } = e, u = s.useMemo(() => (0, c.zi)(t, r), [r, t]), x = (0, c.P8)(t), j = e => e.toString(), m = (0, n.jsxs)("div", {
+  } = e, u = s.useMemo(() => (0, c.zi)(t, r), [r, t]), x = (0, c.P8)(t), j = e => e.toString(), h = (0, n.jsxs)("div", {
     className: a.title,
     children: [o.NW.string(o.t["59TVxM"]), (0, n.jsx)(l.IGR, {
       text: o.NW.string(o.t.y2b7CA),
@@ -23,7 +23,7 @@ function d(e) {
     })]
   });
   return (0, n.jsx)(l.xJW, {
-    title: m,
+    title: h,
     required: !0,
     children: (0, n.jsx)(l.PhF, {
       placeholder: "gaming",

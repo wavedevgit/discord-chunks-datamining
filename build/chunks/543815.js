@@ -5,12 +5,12 @@ n.d(t, {
 var r = n(45792),
   i = n(594174),
   l = n(863141),
-  a = n(186901),
-  o = n(981631);
+  o = n(186901),
+  a = n(981631);
 let s = {
-  [o.Etm.GET_USER]: (0, r.S)(o.Etm.GET_USER, {
+  [a.Etm.GET_USER]: (0, r.S)(a.Etm.GET_USER, {
     scope: {
-      [a.Gp.ANY]: [a.b_, a.lH]
+      [o.Gp.ANY]: [o.b_, o.lH]
     },
     handler(e) {
       let {

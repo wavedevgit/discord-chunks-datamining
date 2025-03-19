@@ -8,9 +8,8 @@ var n = r(200651),
   i = r.n(a),
   l = r(481060),
   o = r(511010),
-  c = r(922611),
-  u = r(304583),
-  d = r(444812);
+  c = r(304583),
+  u = r(444812);
 
 function f(e) {
   let {
@@ -18,29 +17,27 @@ function f(e) {
     secondaryHeaderText: r,
     descriptionText: a,
     infoRows: f,
-    onDismissAndStay: A,
-    onDismissAndLeave: _,
+    onDismissAndStay: d,
+    onDismissAndLeave: A,
     leaveButtonText: p,
     stayButtonText: E,
     transitionState: I,
     impression: O
-  } = e, b = (0, c.D)({
-    location: "blocked_user_warning_modal"
-  });
+  } = e;
   return (0, n.jsxs)(l.Y0X, {
     transitionState: I,
     impression: O,
     children: [(0, n.jsx)("img", {
       alt: "",
-      className: u.headerImage,
-      src: d
+      className: c.headerImage,
+      src: u
     }), (0, n.jsxs)(l.xBx, {
       separator: !1,
-      className: u.header,
+      className: c.header,
       children: [(0, n.jsxs)(l.X6q, {
-        variant: b ? "heading-xl/bold" : "heading-lg/bold",
-        color: b ? "header-primary" : void 0,
-        className: u.title,
+        variant: "heading-xl/bold",
+        color: "header-primary",
+        className: c.title,
         children: [t, null != r && (0, n.jsxs)(n.Fragment, {
           children: [(0, n.jsx)("br", {}), r]
         })]
@@ -50,12 +47,12 @@ function f(e) {
         children: a
       })]
     }), (0, n.jsxs)(l.hzk, {
-      className: u.content,
+      className: c.content,
       children: [(0, n.jsx)("div", {
-        className: u.infoGroup,
+        className: c.infoGroup,
         children: f.map((e, t) => (0, n.jsxs)(s.Fragment, {
           children: [(0, n.jsxs)("div", {
-            className: i()(u.infoRow, e.className),
+            className: i()(c.infoRow, e.className),
             children: [e.icon, (0, n.jsx)(l.Text, {
               variant: "text-md/medium",
               children: e.text
@@ -63,16 +60,16 @@ function f(e) {
           }), t < f.length - 1 && (0, n.jsx)(o.Z, {})]
         }, t))
       }), (0, n.jsxs)("div", {
-        className: u.buttonGroup,
+        className: c.buttonGroup,
         children: [(0, n.jsx)(l.zxk, {
           color: l.zxk.Colors.PRIMARY,
-          onClick: A,
+          onClick: d,
           children: E
         }), (0, n.jsx)(l.zxk, {
           color: l.zxk.Colors.BRAND,
           size: l.zxk.Sizes.MEDIUM,
-          onClick: _,
-          className: u.leave,
+          onClick: A,
+          className: c.leave,
           children: p
         })]
       })]

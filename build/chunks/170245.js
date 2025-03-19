@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(120356),
   l = n.n(i),
-  a = n(442837),
-  o = n(129861),
+  o = n(442837),
+  a = n(129861),
   s = n(700582),
   c = n(699516);
 n(51144);
@@ -21,7 +21,7 @@ let d = function(e) {
     status: p,
     isMobile: h,
     className: f
-  } = e, g = (0, a.e7)([c.Z], () => c.Z.getNickname(t.id));
+  } = e, g = (0, o.e7)([c.Z], () => c.Z.getNickname(t.id));
   return (0, r.jsxs)("div", {
     className: l()(u.userInfo, f, {
       [u.hovered]: n
@@ -34,7 +34,7 @@ let d = function(e) {
       isMobile: h
     }), (0, r.jsxs)("div", {
       className: u.text,
-      children: [(0, r.jsx)(o.Z, {
+      children: [(0, r.jsx)(a.Z, {
         user: t,
         nick: g,
         botClass: u.botTag,

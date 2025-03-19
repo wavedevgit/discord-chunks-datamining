@@ -18,7 +18,10 @@ var i = n(120356),
   h = n(330966),
   g = n(87181);
 
-function _() {
+function _(e) {
+  let {
+    questId: t
+  } = e;
   return (0, r.jsx)("div", {
     className: h.buttonContainer,
     children: (0, r.jsx)(o.zxk, {
@@ -45,6 +48,7 @@ function _() {
           }
           return e
         }({
+          quest_id: t,
           cta_name: s.jZ.VIEW_QUESTS
         }, (0, s.mH)(c.jn.EXCLUDED_QUEST_EMBED)))
       },
@@ -77,7 +81,9 @@ function b(e) {
         color: "text-normal",
         className: h.__invalid_mobileWebCopy,
         children: f.NW.string(f.t.nuWSYW)
-      }), (0, r.jsx)(_, {})]
+      }), (0, r.jsx)(_, {
+        questId: t
+      })]
     }), (0, r.jsx)("div", {
       className: h.imgContainer,
       children: (0, r.jsx)("img", {

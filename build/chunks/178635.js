@@ -94,7 +94,12 @@ let m = 200,
       chance: 1,
       hotspot: s.v6.BLOCK_USER_FEEDBACK,
       storageKey: "blockUser"
-    }
+    },
+    [d.nw.VOICE_FILTER]: h(_({}, g), {
+      hotspot: s.v6.VOICE_FILTER_FEEDBACK,
+      storageKey: "lastVoiceFilterFeedback",
+      eligibilityChecks: [I]
+    })
   };
 
 function b(e) {

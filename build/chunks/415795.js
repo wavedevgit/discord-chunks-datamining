@@ -23,8 +23,8 @@ var r, i = n(200651),
   h = n(565138),
   f = n(754688),
   x = n(237583),
-  b = n(430824),
-  N = n(699516),
+  N = n(430824),
+  b = n(699516),
   _ = n(594174),
   E = n(51144),
   j = n(388032),
@@ -211,12 +211,12 @@ class T extends(r = s.Component) {
       lowImportance: a
     })), null != r && (t = (0, i.jsx)("span", {
       className: C.note,
-      children: (0, d.F6)(r, _.default, N.Z)
+      children: (0, d.F6)(r, _.default, b.Z)
     })), (0, i.jsxs)("div", {
       className: C.name,
       children: [(0, i.jsx)("span", {
         className: C.match,
-        children: (0, d.F6)(s, _.default, N.Z)
+        children: (0, d.F6)(s, _.default, b.Z)
       }), e, this.renderVoiceStates(), t]
     })
   }
@@ -258,7 +258,7 @@ class T extends(r = s.Component) {
     var e;
     let {
       channel: t
-    } = this.props, n = null === (e = b.Z.getGuild(this.props.channel.guild_id)) || void 0 === e ? void 0 : e.name, r = (0, d.F6)(t, _.default, N.Z), i = (0, m.Z)(t);
+    } = this.props, n = null === (e = N.Z.getGuild(this.props.channel.guild_id)) || void 0 === e ? void 0 : e.name, r = (0, d.F6)(t, _.default, b.Z), i = (0, m.Z)(t);
     return j.NW.formatToPlainString(j.t["Vw/da2"], {
       name: r,
       type: i,
@@ -318,7 +318,7 @@ class I extends s.Component {
       className: C.name,
       children: [(0, i.jsx)("span", {
         className: C.match,
-        children: (0, d.F6)(n, _.default, N.Z)
+        children: (0, d.F6)(n, _.default, b.Z)
       }), e]
     })
   }
@@ -339,7 +339,7 @@ class I extends s.Component {
     let {
       channel: e,
       mentions: t
-    } = this.props, n = (0, d.F6)(e, _.default, N.Z);
+    } = this.props, n = (0, d.F6)(e, _.default, b.Z);
     return null != t && t > 0 ? j.NW.formatToPlainString(j.t.LYdVfH, {
       name: n,
       mentions: t
@@ -389,7 +389,7 @@ class y extends s.Component {
     let {
       user: t,
       comparator: n
-    } = this.props, r = N.Z.getNickname(t.id);
+    } = this.props, r = b.Z.getNickname(t.id);
     return ((e = n === t.tag || null == n || "" === n ? t.username : n) === t.username || e === t.id) && (e = null != r ? r : E.ZP.getName(t)), e
   }
   renderName() {

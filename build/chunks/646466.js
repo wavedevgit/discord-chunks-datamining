@@ -37,7 +37,7 @@ let m = () => (0, l.ZDy)(async () => {
     modalKey: o.c,
     onCloseRequest: () => (0, l.Mr3)(o.c)
   }),
-  h = e => {
+  x = e => {
     let {
       handleClearIgnoredFiles: t
     } = e, {
@@ -83,7 +83,7 @@ let m = () => (0, l.ZDy)(async () => {
       })]
     })
   },
-  x = e => {
+  h = e => {
     let {
       ignoredFiles: t,
       handleClearIgnoredFiles: n
@@ -159,9 +159,9 @@ let m = () => (0, l.ZDy)(async () => {
           variant: "text-md/normal",
           children: "Enable Preview"
         })]
-      }), (0, r.jsx)(h, {
-        handleClearIgnoredFiles: _
       }), (0, r.jsx)(x, {
+        handleClearIgnoredFiles: _
+      }), (0, r.jsx)(h, {
         ignoredFiles: e,
         handleClearIgnoredFiles: _
       }), (0, r.jsx)(l.LZC, {

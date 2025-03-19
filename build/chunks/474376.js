@@ -18,8 +18,8 @@ var i = n(442837),
   h = n(480387),
   f = n(726745),
   x = n(251423),
-  b = n(383832),
-  N = n(981631),
+  N = n(383832),
+  b = n(981631),
   _ = n(388032),
   E = n(853759);
 
@@ -32,9 +32,9 @@ function j(e) {
       multiAccountUsers: O
     } = (0, x.L)(),
     v = e => {
-      e !== (null == t ? void 0 : t.id) && (g.default.track(N.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
+      e !== (null == t ? void 0 : t.id) && (g.default.track(b.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
         location: {
-          section: N.jXE.USER_PROFILE
+          section: b.jXE.USER_PROFILE
         }
       }), h.yD(e))
     },
@@ -72,19 +72,19 @@ function j(e) {
               })]
             }), o && (0, r.jsx)(a.owK, {
               size: "sm",
-              color: (0, l.Lq)(t ? N.Ilk.WHITE_500 : N.Ilk.BRAND_500),
-              secondaryColor: (0, l.Lq)(t && j || t && !C && !j ? N.Ilk.BRAND_500 : N.Ilk.WHITE_500),
+              color: (0, l.Lq)(t ? b.Ilk.WHITE_500 : b.Ilk.BRAND_500),
+              secondaryColor: (0, l.Lq)(t && j || t && !C && !j ? b.Ilk.BRAND_500 : b.Ilk.WHITE_500),
               className: E.activeIcon
             }), c && (0, r.jsx)(a.P4T, {
-              color: (0, l.Lq)(N.Ilk.RED_400),
-              secondaryColor: (0, l.Lq)(t && j || t && !C && !j ? N.Ilk.BRAND_500 : N.Ilk.WHITE_500),
+              color: (0, l.Lq)(b.Ilk.RED_400),
+              secondaryColor: (0, l.Lq)(t && j || t && !C && !j ? b.Ilk.BRAND_500 : b.Ilk.WHITE_500),
               size: "xs",
               className: E.activeIcon
             })]
           })
         },
         action: () => {
-          null == e || e(), c ? (0, b.Z)() : v(s.id)
+          null == e || e(), c ? (0, N.Z)() : v(s.id)
         }
       }, s.id)
     });
@@ -93,7 +93,7 @@ function j(e) {
       id: "manage-accounts",
       label: _.NW.string(_.t.WbFpq6),
       action: () => {
-        null == e || e(), (0, b.Z)()
+        null == e || e(), (0, N.Z)()
       }
     })]
   })), S

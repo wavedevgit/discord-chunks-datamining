@@ -50,42 +50,42 @@ function j(e) {
     onScheduleChange: r,
     onRecurrenceChange: s,
     onTimeChange: j,
-    timeSelected: m = !0,
-    schedule: h,
+    timeSelected: h = !0,
+    schedule: m,
     recurrenceRule: b,
     showEndDate: g = !1,
     requireEndDate: p = !1,
-    disableStartDateTime: f = !1
+    disableStartDateTime: v = !1
   } = e;
-  if (null == h) return null;
-  let v = null,
-    N = h.startDate,
-    y = l()(),
-    O = l()().add(c.G3, "days"),
+  if (null == m) return null;
+  let f = null,
+    N = m.startDate,
+    O = l()(),
+    y = l()().add(c.G3, "days"),
     k = l()().add(c.Ib, "days");
-  null != b && (O.add(c.hn, "years"), k.add(c.hn, "years"));
+  null != b && (y.add(c.hn, "years"), k.add(c.hn, "years"));
   let P = e => {
-    r(x(u({}, h), {
+    r(x(u({}, m), {
       endDate: e
     }))
   };
-  return g && (v = null != h.endDate || p ? (0, n.jsxs)(n.Fragment, {
+  return g && (f = null != m.endDate || p ? (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)("div", {
       className: d.doubleInput,
       children: [(0, n.jsx)(i.xJW, {
         title: a.NW.string(a.t.CTLgZG),
         required: p,
         children: (0, n.jsx)(i.Wrb, {
-          value: h.endDate,
+          value: m.endDate,
           onSelect: P,
-          minDate: h.startDate,
+          minDate: m.startDate,
           maxDate: k
         })
       }), (0, n.jsx)(i.xJW, {
         title: a.NW.string(a.t.j2RuXF),
         required: p,
         children: (0, n.jsx)(i.MGJ, {
-          value: h.endDate,
+          value: m.endDate,
           onChange: P
         })
       })]
@@ -113,7 +113,7 @@ function j(e) {
     look: i.zxk.Looks.BLANK,
     size: i.zxk.Sizes.MIN,
     onClick: () => {
-      P(l()(h.startDate).add(1, "hour"))
+      P(l()(m.startDate).add(1, "hour"))
     },
     children: (0, n.jsxs)("div", {
       className: d.link,
@@ -136,31 +136,31 @@ function j(e) {
         title: a.NW.string(a.t.kKOIwM),
         required: !0,
         children: (0, n.jsx)(i.Wrb, {
-          value: h.startDate,
+          value: m.startDate,
           onSelect: e => {
-            r(x(u({}, h), {
+            r(x(u({}, m), {
               startDate: e
             }))
           },
-          minDate: y,
-          maxDate: O,
-          disabled: f
+          minDate: O,
+          maxDate: y,
+          disabled: v
         })
       }), (0, n.jsx)(i.xJW, {
         title: a.NW.string(a.t["6dGmCA"]),
         required: !0,
         children: (0, n.jsx)(i.MGJ, {
-          value: h.startDate,
+          value: m.startDate,
           onChange: e => {
-            e.isValid() && (null == j || j(!0), r(x(u({}, h), {
+            e.isValid() && (null == j || j(!0), r(x(u({}, m), {
               startDate: e
             })))
           },
-          hideValue: !m,
-          disabled: f
+          hideValue: !h,
+          disabled: v
         })
       })]
-    }), v, null != N && null != s && (0, n.jsx)(o.Z, {
+    }), f, null != N && null != s && (0, n.jsx)(o.Z, {
       onRecurrenceChange: s,
       startDate: N,
       recurrenceRule: b

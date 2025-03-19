@@ -1,13 +1,13 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(200651);
 n(192379);
 var i = n(113434),
   l = n(710914);
 
-function a() {
+function o() {
   let {
     quests: e,
     isFetchingCurrentQuests: t

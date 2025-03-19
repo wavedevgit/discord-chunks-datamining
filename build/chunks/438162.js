@@ -20,15 +20,15 @@ var r = n(200651),
   y = n(567409),
   h = n(74299),
   v = n(989941),
-  I = n(199902),
-  O = n(314897),
+  O = n(199902),
+  I = n(314897),
   C = n(592125),
   P = n(430824),
   x = n(131951),
   w = n(944486),
   E = n(449224),
-  k = n(574254),
-  L = n(556296),
+  L = n(574254),
+  k = n(556296),
   N = n(237997),
   j = n(451478),
   T = n(585483),
@@ -136,7 +136,7 @@ let eo = o.memo(function(e) {
   });
 
 function ei() {
-  if (null != k.Z.getContextMenu()) {
+  if (null != L.Z.getContextMenu()) {
     (0, u.Zy)();
     return
   }
@@ -168,11 +168,11 @@ function eu() {
       incompatibleApp: a,
       hasValidResolution: u,
       hasZeroSizeDimension: m,
-      keybind: k,
+      keybind: L,
       isPreviewingInGame: T
-    } = (0, c.cj)([F.ZP, N.default, j.Z, L.ZP], () => {
+    } = (0, c.cj)([F.ZP, N.default, j.Z, k.ZP], () => {
       let t = j.Z.windowSize((0, A.ZY)(e)),
-        n = L.ZP.getOverlayKeybind(),
+        n = k.ZP.getOverlayKeybind(),
         r = (0, D.getPID)();
       return {
         locked: F.ZP.isInputLocked(r),
@@ -213,7 +213,7 @@ function eu() {
       n = w.Z.getVoiceChannelId(),
       r = C.Z.getChannel(n),
       a = null != r ? P.Z.getGuild(r.guild_id) : null,
-      i = null != I.Z.getCurrentUserActiveStream(),
+      i = null != O.Z.getCurrentUserActiveStream(),
       c = null != n,
       l = (0, h.Z)(x.Z) && !i && null != t,
       _ = c && null != a && null != n,
@@ -257,7 +257,7 @@ function eu() {
   let er = (0, c.e7)([w.Z], () => w.Z.getVoiceChannelId()),
     eu = (0, c.e7)([C.Z], () => C.Z.getChannel(er)),
     es = (0, c.e7)([P.Z], () => null != eu ? P.Z.getGuild(eu.guild_id) : null),
-    ed = (0, c.e7)([O.default], () => O.default.getId()),
+    ed = (0, c.e7)([I.default], () => I.default.getId()),
     ef = (0, c.e7)([g.ZP, E.Z], () => (0, v.Z)(g.ZP, E.Z)),
     eb = (0, y.Ns)(null == ef ? void 0 : ef.id),
     ep = (0, c.e7)([p.Z], () => null != p.Z.getLastFeedFetchDate(J.YN.GAME_PROFILE_FEED)),
@@ -274,7 +274,7 @@ function eu() {
           children: q.NW.string(q.t.iOq96u)
         }), ee, (!t || Z.has(X.O0n.TEXT_WIDGET)) && (0, r.jsx)(eo, {
           locked: t,
-          keybind: k,
+          keybind: L,
           onClick: ei
         }), u ? (0, r.jsx)(M.Z, {
           className: i()({
@@ -296,7 +296,7 @@ function eu() {
           channelId: er
         }), (0, r.jsx)(G.Z, {
           locked: V,
-          keybind: k
+          keybind: L
         }), (0, r.jsx)(B.Z, {})]
       })
     })

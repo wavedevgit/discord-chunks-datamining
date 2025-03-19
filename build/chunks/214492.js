@@ -1,6 +1,6 @@
 /** Chunk was on 54835 **/
 n.d(t, {
-  hs: () => b,
+  hs: () => N,
   oF: () => x
 }), n(47120);
 var r = n(913527),
@@ -37,7 +37,7 @@ function x() {
   }
 }
 
-function b() {
+function N() {
   let e = (0, s.e7)([u.Z], () => u.Z.getAccounts()),
     t = (0, l.ZP)(),
     n = e.length;

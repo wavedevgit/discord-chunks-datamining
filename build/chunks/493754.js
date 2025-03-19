@@ -65,7 +65,7 @@ function C(e) {
   null == s || s(), (0, c.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("7654"), n.e("6680")]).then(n.bind(n, 560114));
+    } = await Promise.all([n.e("7654"), n.e("41348")]).then(n.bind(n, 560114));
     return n => (0, r.jsx)(e, _(b({}, n), {
       guild: t,
       channel: i,

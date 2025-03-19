@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(481060),
-  a = n(770146),
-  o = n(863969),
+  o = n(770146),
+  a = n(863969),
   s = n(38761),
   c = n(6074),
   u = n(39377),
@@ -72,7 +72,7 @@ let f = [{
     feature: d.Qa3.CLOUD_SAVES,
     getText: () => p.NW.string(p.t.rOcNrK),
     getTooltip: () => p.NW.string(p.t.kvw18P),
-    IconComponent: o.Z
+    IconComponent: a.Z
   }, {
     feature: d.Qa3.SECURE_NETWORKING,
     getText: () => p.NW.string(p.t.GKFWLy),
@@ -143,7 +143,7 @@ class m extends i.PureComponent {
     });
     return 0 === t.length ? null : (0, r.jsxs)("div", {
       className: h.features,
-      children: [(0, r.jsx)(a.Z, {
+      children: [(0, r.jsx)(o.Z, {
         children: p.NW.string(p.t.XXENra)
       }), t]
     })

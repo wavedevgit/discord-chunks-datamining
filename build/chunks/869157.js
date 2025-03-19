@@ -1,11 +1,11 @@
-/** Chunk was on 50749 **/
+/** Chunk was on 23682 **/
 n.d(t, {
   Z: () => k
 }), n(47120), n(230036);
 var r = n(200651),
   i = n(192379),
-  l = n(512722),
-  o = n.n(l),
+  o = n(512722),
+  l = n.n(o),
   a = n(392711),
   s = n.n(a),
   c = n(442837),
@@ -68,16 +68,16 @@ function k(e) {
   let {
     commandId: t,
     editPermissions: n,
-    guildId: l,
+    guildId: o,
     noneSelectedText: a,
     overwrites: p,
     hasAccessToMutatePermissions: g
-  } = e, h = (0, c.e7)([j.Z], () => j.Z.getGuild(l));
-  o()(null != h, "");
-  let x = (0, c.e7)([j.Z], () => j.Z.getRoles(l)),
+  } = e, h = (0, c.e7)([j.Z], () => j.Z.getGuild(o));
+  l()(null != h, "");
+  let x = (0, c.e7)([j.Z], () => j.Z.getRoles(o)),
     [N, S] = i.useState(new Set),
     E = i.useMemo(() => {
-      let e = (0, b.bD)(l),
+      let e = (0, b.bD)(o),
         t = s()(x).sortBy(e => e.position).reduce((e, t, n) => (e[t.id] = n, e), {});
       return Object.values(p).filter(e => e.canRead).sort((n, r) => {
         let i = n.type - r.type;
@@ -88,17 +88,17 @@ function k(e) {
               let r = Number(e.canWrite) - Number(t.canWrite);
               if (0 !== r) return r;
               let i = v.default.getUser(e.id),
-                l = v.default.getUser(t.id);
-              if (null != i && null != l) {
+                o = v.default.getUser(t.id);
+              if (null != i && null != o) {
                 let e = O.ZP.getName(n, void 0, i),
-                  t = O.ZP.getName(n, void 0, l);
+                  t = O.ZP.getName(n, void 0, o);
                 return null == e ? void 0 : e.localeCompare(t)
               }
               return y.default.compare(e.id, t.id)
-            }(n, r, l);
+            }(n, r, o);
           case m.Kw.ROLE:
-            var o, a, s, c;
-            return o = n, a = r, s = l, c = t, o.id === s ? -1 : a.id === s ? 1 : c[o.id] > c[a.id] ? -1 : 1;
+            var l, a, s, c;
+            return l = n, a = r, s = o, c = t, l.id === s ? -1 : a.id === s ? 1 : c[l.id] > c[a.id] ? -1 : 1;
           case m.Kw.CHANNEL:
             return function(e, t, n) {
               if (e.id === n) return -1;
@@ -108,7 +108,7 @@ function k(e) {
             }(n, r, e)
         }
       })
-    }, [l, p, x]),
+    }, [o, p, x]),
     P = i.useCallback((e, t) => {
       n({}, [(0, I.rE)(e, t)])
     }, [n]),
@@ -124,8 +124,8 @@ function k(e) {
     }, [n, p]);
   i.useEffect(() => {
     let e = Object.values(p).filter(e => e.type === m.Kw.USER && !e.canRead && !N.has(e.id)).map(e => e.id);
-    0 !== e.length && (u.Z.requestMembersById(l, e, !1), S(t => new Set([...t, ...e])))
-  }, [l, p, N, S]);
+    0 !== e.length && (u.Z.requestMembersById(o, e, !1), S(t => new Set([...t, ...e])))
+  }, [o, p, N, S]);
   let Z = (0, c.e7)([C.Z], () => C.Z.getApplicationId()),
     W = (0, c.e7)([_.default], () => null == Z ? void 0 : _.default.integrations.find(e => {
       var t;
@@ -152,8 +152,8 @@ function k(e) {
 }
 
 function A(e) {
-  var t, n, l;
-  let o, {
+  var t, n, o;
+  let l, {
       guild: a,
       commandId: s,
       onChange: c,
@@ -167,7 +167,7 @@ function A(e) {
     _ = null == j ? void 0 : null === (n = j.application) || void 0 === n ? void 0 : null === (t = n.bot) || void 0 === t ? void 0 : t.username,
     C = !f.canWrite || !O,
     I = x.default.getId();
-  O ? f.canWrite || (f.type === m.Kw.USER ? o = f.id === I ? w.NW.string(w.t["1VF/09"]) : w.NW.string(w.t.P1GnER) : f.type === m.Kw.ROLE && (o = w.NW.string(w.t.mcAijY))) : o = null != s ? w.NW.string(w.t.tybdam) : w.NW.string(w.t.z2hjk5);
+  O ? f.canWrite || (f.type === m.Kw.USER ? l = f.id === I ? w.NW.string(w.t["1VF/09"]) : w.NW.string(w.t.P1GnER) : f.type === m.Kw.ROLE && (l = w.NW.string(w.t.mcAijY))) : l = null != s ? w.NW.string(w.t.tybdam) : w.NW.string(w.t.z2hjk5);
   let k = v && null != j && f.id === a.id && void 0 !== _ && !f.permission;
   i.useEffect(() => {
     if (k) {
@@ -177,10 +177,10 @@ function A(e) {
         location: "toggle"
       }))
     }
-  }, [a.id, null == j ? void 0 : null === (l = j.application) || void 0 === l ? void 0 : l.id, k]);
+  }, [a.id, null == j ? void 0 : null === (o = j.application) || void 0 === o ? void 0 : o.id, k]);
   let A = (0, r.jsx)(d.ua7, {
       tooltipClassName: T.tooltip,
-      text: o,
+      text: l,
       shouldShow: C,
       position: "left",
       hideOnClick: !1,
@@ -225,7 +225,7 @@ function A(e) {
         id: f.id,
         type: f.type,
         isLocked: C,
-        lockTooltipText: o
+        lockTooltipText: l
       })
     }), (0, r.jsxs)("div", {
       className: T.entryActions,
@@ -244,14 +244,14 @@ function D(e) {
     commandId: t,
     isSentinel: n,
     isDisabled: i,
-    onRemove: l
+    onRemove: o
   } = e;
   return i ? null : null == t && n ? null : (0, r.jsx)("div", {
     className: T.removeActions,
     children: (0, r.jsx)(d.P3F, {
       className: T.removeContainer,
       "aria-label": w.NW.string(w.t.mT0CQE),
-      onClick: l,
+      onClick: o,
       children: (0, r.jsx)(d.XHJ, {
         size: "md",
         color: "currentColor",

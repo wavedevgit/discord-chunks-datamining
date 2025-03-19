@@ -10,8 +10,8 @@ var i = n(481060),
   c = n(930180),
   l = n(320596),
   a = n(939863),
-  d = n(388032),
-  u = n(31730);
+  u = n(388032),
+  d = n(31730);
 
 function _(e) {
   var t, n, {
@@ -19,7 +19,7 @@ function _(e) {
       transitionState: h,
       onClose: b
     } = e,
-    m = function(e, t) {
+    p = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -34,12 +34,12 @@ function _(e) {
       }
       return i
     }(e, ["channel", "transitionState", "onClose"]);
-  let p = (0, o.Dt)(),
-    g = (0, c._d)(_.id),
-    f = (0, c.K3)(_.id),
+  let g = (0, o.Dt)(),
+    f = (0, c._d)(_.id),
+    m = (0, c.K3)(_.id),
     j = async () => {
       await (0, s.yi)(_), b()
-    }, N = async () => {
+    }, O = async () => {
       await (0, s.RK)(_, !1), b()
     };
   return (0, r.jsx)(i.Y0X, (t = function(e) {
@@ -61,65 +61,65 @@ function _(e) {
     return e
   }({
     transitionState: h,
-    "aria-labelledby": p
-  }, m), n = n = {
+    "aria-labelledby": g
+  }, p), n = n = {
     size: i.CgR.SMALL,
     children: (0, r.jsxs)(i.hzk, {
-      className: u.content,
+      className: d.content,
       children: [(0, r.jsx)(a.Z, {
         children: (0, r.jsx)("div", {
-          className: u.stageIconBackground,
+          className: d.stageIconBackground,
           children: (0, r.jsx)(i.ewx, {
             size: "custom",
             color: "currentColor",
             width: 40,
             height: 40,
-            className: u.stageIcon
+            className: d.stageIcon
           })
         })
       }), (0, r.jsx)(i.X6q, {
-        id: p,
+        id: g,
         variant: "heading-xl/semibold",
         color: "header-primary",
-        className: u.headerTitle,
-        children: d.NW.string(d.t.njetU1)
+        className: d.headerTitle,
+        children: u.NW.string(u.t.njetU1)
       }), (0, r.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        className: u.headerSubtitle,
-        children: d.NW.string(d.t.LQY4JS)
-      }), (g > 0 || f > 0) && (0, r.jsx)(l.mv, {
+        className: d.headerSubtitle,
+        children: u.NW.string(u.t.LQY4JS)
+      }), (f > 0 || m > 0) && (0, r.jsx)(l.mv, {
         channelId: _.id
       }), (0, r.jsxs)("div", {
-        className: u.buttonsContainer,
+        className: d.buttonsContainer,
         children: [(0, r.jsxs)(i.zxk, {
           color: i.zxk.Colors.PRIMARY,
-          className: u.button,
-          innerClassName: u.innerButton,
-          onClick: N,
+          className: d.button,
+          innerClassName: d.innerButton,
+          onClick: O,
           children: [(0, r.jsx)("div", {
-            className: u.icon,
+            className: d.icon,
             children: (0, r.jsx)(i.S6n, {
               size: "custom",
               color: "currentColor",
               width: 20,
               height: 20
             })
-          }), d.NW.string(d.t["Q8o/tb"])]
+          }), u.NW.string(u.t["Q8o/tb"])]
         }), (0, r.jsxs)(i.zxk, {
           color: i.zxk.Colors.PRIMARY,
-          className: u.button,
-          innerClassName: u.innerButton,
+          className: d.button,
+          innerClassName: d.innerButton,
           onClick: j,
           children: [(0, r.jsx)("div", {
-            className: u.icon,
+            className: d.icon,
             children: (0, r.jsx)(i.BFJ, {
               size: "custom",
               color: "currentColor",
               width: 20,
               height: 20
             })
-          }), d.NW.string(d.t["N3/Oyc"])]
+          }), u.NW.string(u.t["N3/Oyc"])]
         })]
       })]
     })

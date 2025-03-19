@@ -303,6 +303,9 @@ class Z extends(o = a.ZP.Store) {
     var e;
     return null !== (e = null == r ? void 0 : r.getDuration()) && void 0 !== e ? e : O
   }
+  getVoiceFilterSpeakingDurationMs() {
+    return null == r ? void 0 : r.getVoiceFilterSpeakingDurationMs()
+  }
   getPacketStats() {
     return null == r ? void 0 : r.getPacketStats()
   }

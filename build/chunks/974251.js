@@ -190,10 +190,10 @@ let V = i.memo(function(e) {
     colorClass: H.attachButtonPlus
   });
   let ew = eP ? eS ? {
-      left: 8,
-      right: 4,
-      top: 4,
-      bottom: 4
+      left: 12,
+      right: 6,
+      top: 0,
+      bottom: 0
     } : 8 : void 0,
     eR = (0, r.jsx)(c.yRy, {
       shouldShow: null != eu,

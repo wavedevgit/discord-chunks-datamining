@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(570140),
-  a = n(531826),
-  o = n(812206),
+  o = n(531826),
+  a = n(812206),
   s = n(69580),
   c = n(371651),
   u = n(808506),
@@ -37,20 +37,20 @@ let _ = (0, g.Z)(e => {
     disclosures: S,
     integrationType: T,
     pid: P
-  } = e, j = "OAuth2Authorize_".concat(n, "_").concat(v, "_").concat(y), A = null != T ? null == u ? void 0 : u.get(T) : void 0, Z = null !== (t = null == A ? void 0 : A.application) && void 0 !== t ? t : o.Z.getApplication(n);
+  } = e, j = "OAuth2Authorize_".concat(n, "_").concat(v, "_").concat(y), A = null != T ? null == u ? void 0 : u.get(T) : void 0, Z = null !== (t = null == A ? void 0 : A.application) && void 0 !== t ? t : a.Z.getApplication(n);
   return new Promise((e, t) => {
-    let o = (0, m.jU)(P),
+    let a = (0, m.jU)(P),
       A = r => {
         let {
           clientId: i,
-          location: a
+          location: o
         } = r;
-        (null == i || i === n) && (null != location ? e(a) : t(new f.Z({
+        (null == i || i === n) && (null != location ? e(o) : t(new f.Z({
           errorCode: b.lTL.OAUTH2_ERROR
-        }, "User cancelled authorization")), l.Z.unsubscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_CLOSE", A), o.lock())
+        }, "User cancelled authorization")), l.Z.unsubscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_CLOSE", A), a.lock())
       },
       x = c.default.isOverlayOOPEnabledForPid(null != P ? P : (0, h.getPID)());
-    if (o.context === b.IlC.OVERLAY && !x) {
+    if (a.context === b.IlC.OVERLAY && !x) {
       l.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_CLOSE", A), l.Z.dispatch({
         type: "OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN",
         clientId: n,
@@ -75,7 +75,7 @@ let _ = (0, g.Z)(e => {
       return
     }
     let L = i.z1l;
-    null != Z && null != (0, a.ZP)({
+    null != Z && null != (0, o.ZP)({
       application: Z,
       channelId: y
     }) ? L = i.u1M : x && (L = i.u1M), (0, i.h7j)(e => {
@@ -135,7 +135,7 @@ let _ = (0, g.Z)(e => {
   })
 }, function(e, t, n) {
   if (u.default.isReady(null != n ? n : 0) || !d.isPlatformEmbedded) return;
-  let r = (0, a.ZP)({
+  let r = (0, o.ZP)({
     application: e,
     channelId: t
   });

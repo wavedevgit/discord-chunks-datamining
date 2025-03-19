@@ -24,8 +24,8 @@ function m(e) {
     showPremiumIcon: h = !0,
     isTryItOutFlow: f = !1,
     forcedDivider: x,
-    withHighlight: b = !1
-  } = e, N = b ? a.gtL : a.zxk;
+    withHighlight: N = !1
+  } = e, b = N ? a.gtL : a.zxk;
   return (0, r.jsx)(o.Z, {
     className: g,
     title: d.NW.string(d.t.Vgdusr),
@@ -35,9 +35,9 @@ function m(e) {
     forcedDivider: x,
     children: (0, r.jsxs)("div", {
       className: u.buttonsContainer,
-      children: [(0, r.jsx)(N, {
+      children: [(0, r.jsx)(b, {
         className: s()({
-          [u.buttonHighlighted]: b
+          [u.buttonHighlighted]: N
         }),
         size: a.zxk.Sizes.SMALL,
         onClick: () => (0, l.$r)(c.pC.BANNER, m, f, void 0),

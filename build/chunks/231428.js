@@ -16,8 +16,8 @@ var r, i = n(200651),
   h = n(827837),
   f = n(821849),
   x = n(724757),
-  b = n(600164),
-  N = n(239827),
+  N = n(600164),
+  b = n(239827),
   _ = n(818035),
   E = n(509545),
   j = n(78839),
@@ -78,7 +78,7 @@ function Z(e) {
       to: 0
     })
   }, [c]);
-  let b = s.useCallback(e => {
+  let N = s.useCallback(e => {
       u(e);
       let n = t[t.length - 1].id;
       e >= a - 2 && g !== n && ((0, p.cQ)(10, n), h(n))
@@ -105,10 +105,10 @@ function Z(e) {
           }
           return i
         }(e, ["ref"]);
-        return (0, i.jsx)(N.Z, D(R({
+        return (0, i.jsx)(b.Z, D(R({
           className: l()(y.verticalFit, y.paginator),
           currentPageIndex: c,
-          onChangePage: b,
+          onChangePage: N,
           numPages: a,
           showPageCount: !1,
           ref: t
@@ -167,7 +167,7 @@ class w extends(r = s.PureComponent) {
         className: l()(y.paymentPane, y.verticalFit),
         children: [e ? null : (0, i.jsx)("div", {
           className: l()(y.paymentRow, y.bottomDivider),
-          children: (0, i.jsxs)(b.Z, {
+          children: (0, i.jsxs)(N.Z, {
             className: y.paymentRowHeader,
             children: [(0, i.jsx)("div", {
               className: A.date,

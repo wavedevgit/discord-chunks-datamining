@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(570140),
-  a = n(317770),
-  o = n(314897),
+  o = n(317770),
+  a = n(314897),
   s = n(592125),
   c = n(797258),
   u = n(590415),
@@ -22,7 +22,7 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let h = "STAGE_INVITED_TO_SPEAK_MODAL";
-class f extends a.Z {
+class f extends o.Z {
   _initialize() {
     l.Z.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
   }
@@ -34,7 +34,7 @@ class f extends a.Z {
       var t;
       let {
         voiceStates: l
-      } = e, a = o.default.getId(), f = null === (t = c.Z.getSession()) || void 0 === t ? void 0 : t.sessionId, g = l.find(e => e.userId === a && e.sessionId === f);
+      } = e, o = a.default.getId(), f = null === (t = c.Z.getSession()) || void 0 === t ? void 0 : t.sessionId, g = l.find(e => e.userId === o && e.sessionId === f);
       if (null == g) return;
       let m = g.channelId;
       if (null == m) {

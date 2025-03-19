@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => E
+  Z: () => m
 }), n(47120), n(411104);
 var r = n(200651),
   i = n(192379),
@@ -14,14 +14,12 @@ var r = n(200651),
   d = n(787113),
   f = n(744481),
   _ = n(724641),
-  p = n(811974),
-  h = n(212545),
-  m = n(184229),
-  g = n(504309);
-let E = function(e) {
+  p = n(184229),
+  h = n(504309);
+let m = function(e) {
   let t = (0, l.ZP)(),
     n = i.useRef(null),
-    [E, b] = i.useState({});
+    [m, g] = i.useState({});
   switch (i.useLayoutEffect(() => {
       let {
         current: e
@@ -32,7 +30,7 @@ let E = function(e) {
         i = t.getPropertyValue("font-family"),
         o = t.getPropertyValue("font-weight"),
         a = t.getPropertyValue("color");
-      b({
+      g({
         base: {
           fontFamily: i,
           fontWeight: o,
@@ -47,13 +45,13 @@ let E = function(e) {
       })
     }, [n]), e.type) {
     case c.He.PRZELEWY24: {
-      let i = (0, a.wj)(t) ? m : g,
+      let i = (0, a.wj)(t) ? p : h,
         {
           onNameChange: l,
           onEmailChange: c,
           onP24BankChange: f,
           p24BankValue: _,
-          billingAddressInfo: p
+          billingAddressInfo: g
         } = e;
       return (0, r.jsxs)("div", {
         className: d.body,
@@ -64,7 +62,7 @@ let E = function(e) {
             name: u.NW.string(u.t["w/qqKC"]),
             placeholder: u.NW.string(u.t["w/qqKC"]),
             onChange: e => c(e),
-            value: p.email
+            value: g.email
           })
         }), (0, r.jsx)(s.hjN, {
           className: d.nonTopInputWrapper,
@@ -73,7 +71,7 @@ let E = function(e) {
             name: u.NW.string(u.t.yf7ms7),
             placeholder: u.NW.string(u.t.yf7ms7),
             onChange: e => l(e),
-            value: p.name
+            value: g.name
           })
         }), (0, r.jsxs)(s.hjN, {
           className: d.nonTopInputWrapper,
@@ -81,7 +79,7 @@ let E = function(e) {
           children: [(0, r.jsx)(o.P24BankElement, {
             options: {
               value: _,
-              style: E
+              style: m
             },
             onChange: e => f(e.value)
           }), (0, r.jsx)("div", {
@@ -118,7 +116,7 @@ let E = function(e) {
           children: [(0, r.jsx)(o.EpsBankElement, {
             options: {
               value: c,
-              style: E
+              style: m
             },
             onChange: e => l(e.value)
           }), (0, r.jsx)("div", {
@@ -133,39 +131,21 @@ let E = function(e) {
     }
     case c.He.IDEAL: {
       let {
-        onAccountHolderNameChange: i,
-        onIdealBankChange: l,
-        idealBankValue: c,
-        billingAddressInfo: f
-      } = e, _ = (0, a.wj)(t) ? p : h;
-      return (0, r.jsxs)("div", {
+        onAccountHolderNameChange: t,
+        billingAddressInfo: i
+      } = e;
+      return (0, r.jsx)("div", {
         className: d.body,
-        children: [(0, r.jsx)(s.hjN, {
+        children: (0, r.jsx)(s.hjN, {
           title: u.NW.string(u.t.sN3wra),
           children: (0, r.jsx)(s.oil, {
             inputRef: n,
             name: u.NW.string(u.t.sN3wra),
             placeholder: u.NW.string(u.t.sN3wra),
-            onChange: e => i(e),
-            value: f.name
+            onChange: e => t(e),
+            value: i.name
           })
-        }), (0, r.jsxs)(s.hjN, {
-          className: d.nonTopInputWrapper,
-          title: u.NW.string(u.t.Ugq3yM),
-          children: [(0, r.jsx)(o.IdealBankElement, {
-            options: {
-              value: c,
-              style: E
-            },
-            onChange: e => l(e.value)
-          }), (0, r.jsx)("div", {
-            className: d.bankSelectionStub,
-            children: (0, r.jsx)("img", {
-              src: _,
-              alt: "iDeal"
-            })
-          })]
-        })]
+        })
       })
     }
     default:

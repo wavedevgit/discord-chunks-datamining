@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(839469),
   f = n(25990),
   x = n(594174),
-  b = n(585483),
-  N = n(16703),
+  N = n(585483),
+  b = n(16703),
   _ = n(785145),
   E = n(981631),
   j = n(526761),
@@ -31,7 +31,7 @@ function S() {
     location: "profile_customization_auto"
   });
   let e = (0, s.e7)([u.Z], () => u.Z.getGuild()),
-    t = (0, N.Z)(),
+    t = (0, b.Z)(),
     n = (0, s.e7)([u.Z, f.Z], () => u.Z.showNotice() || f.Z.showNotice()),
     S = null != e ? e : t,
     T = (0, s.e7)([x.default], () => x.default.getCurrentUser()),
@@ -50,10 +50,10 @@ function S() {
   function D(t) {
     if (I !== t) {
       if (n) {
-        b.S.dispatch(E.CkL.SHAKE_APP, {
+        N.S.dispatch(E.CkL.SHAKE_APP, {
           duration: 300,
           intensity: l.$x
-        }), b.S.dispatch(E.CkL.EMPHASIZE_NOTICE);
+        }), N.S.dispatch(E.CkL.EMPHASIZE_NOTICE);
         return
       }
       t === j.NB.GUILD && null == e && null != S && (0, d.Fq)(S, A), y(t)

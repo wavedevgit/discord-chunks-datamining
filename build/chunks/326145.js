@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(481060),
   c = n(393238),
   u = n(877604),
@@ -37,12 +37,12 @@ function y(e) {
       guildId: l,
       returnChannelId: y
     }))
-  }, [l, y]), A = (0, o.e7)([f.Z], () => f.Z.getGuild(l)), Z = i.useMemo(() => null == A ? null : m.ZP.getGuildSplashURL({
+  }, [l, y]), A = (0, a.e7)([f.Z], () => f.Z.getGuild(l)), Z = i.useMemo(() => null == A ? null : m.ZP.getGuildSplashURL({
     id: A.id,
     splash: A.splash
   }), [A]), x = (0, d.N)(Z);
   return T && P ? (0, r.jsxs)("div", {
-    className: a()(N.outerWrapping, v.main, {
+    className: o()(N.outerWrapping, v.main, {
       [v.fullBorderWithGradient]: null == Z
     }),
     ref: I,
@@ -60,7 +60,7 @@ function y(e) {
     }), null != Z && (0, r.jsx)("div", {
       className: v.gradient
     }), (0, r.jsxs)("div", {
-      className: a()(N.explainerContainer, N.transparentBackground),
+      className: o()(N.explainerContainer, N.transparentBackground),
       children: [(0, r.jsxs)("div", {
         className: N.header,
         children: [(0, r.jsx)(s.X6q, {

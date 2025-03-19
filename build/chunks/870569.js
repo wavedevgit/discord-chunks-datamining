@@ -109,6 +109,14 @@ function c(e) {
         onContextMenu: l,
         role: I,
         "aria-checked": T,
+        focusProps: {
+          offset: {
+            left: -1,
+            top: -1,
+            right: 1,
+            bottom: 1
+          }
+        },
         children: [null != n ? (0, r.jsx)(a.ZP, {
           width: 20,
           height: 20,

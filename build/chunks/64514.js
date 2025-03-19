@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(846519),
   i = n(570140),
   l = n(317770),
-  a = n(626135),
-  o = n(70956),
+  o = n(626135),
+  a = n(70956),
   s = n(960048),
   c = n(930446),
   u = n(981631);
@@ -28,7 +28,7 @@ class p extends l.Z {
   }
   constructor(...e) {
     super(...e), d(this, "focusedOrForegrounded", !0), d(this, "heartbeatInterval", new r.Xp), d(this, "schedulerStarted", !1), d(this, "maybeStartHeartbeat", () => {
-      this.heartbeatInterval.isStarted() || this.heartbeatInterval.start(5 * o.Z.Millis.MINUTE, this.trackHeartbeat)
+      this.heartbeatInterval.isStarted() || this.heartbeatInterval.start(5 * a.Z.Millis.MINUTE, this.trackHeartbeat)
     }), d(this, "startAnalyticHeartbeat", () => {
       !this.schedulerStarted && (this.schedulerStarted = !0, s.Z.addBreadcrumb({
         category: "ad",
@@ -43,7 +43,7 @@ class p extends l.Z {
         return
       }
       let e = (0, c.G)();
-      a.default.track(u.rMx.CLIENT_AD_HEARTBEAT, {
+      o.default.track(u.rMx.CLIENT_AD_HEARTBEAT, {
         client_ad_session_id: e.uuid,
         client_heartbeat_initialization_timestamp: e.initialized,
         client_heartbeat_version: 1

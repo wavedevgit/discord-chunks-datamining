@@ -201,9 +201,13 @@ function P() {
 
 function w(e, t) {
   r.useEffect(() => {
-    i.ZP.trackWithMetadata(p.rMx.QUEST_EMBED_FALLBACK_VIEWED, {
-      quest_id: t,
-      reason: e
-    })
+    D(t, e)
   }, [e, t])
+}
+
+function D(e, t) {
+  i.ZP.trackWithMetadata(p.rMx.QUEST_EMBED_FALLBACK_VIEWED, {
+    quest_id: e,
+    reason: t
+  })
 }

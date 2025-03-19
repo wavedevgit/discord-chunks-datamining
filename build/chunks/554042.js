@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(865427),
   f = n(358085),
   x = n(210887),
-  b = n(981631),
-  N = n(388032),
+  N = n(981631),
+  b = n(388032),
   _ = n(658570);
 let E = [{
   label: "Latin alphabet",
@@ -128,11 +128,11 @@ function j() {
             className: _.theme,
             orientation: "horizontal",
             options: [{
-              name: N.NW.string(N.t.b8Cei4),
-              value: b.BRd.DARK
+              name: b.NW.string(b.t.b8Cei4),
+              value: N.BRd.DARK
             }, {
-              name: N.NW.string(N.t.K2sFfn),
-              value: b.BRd.LIGHT
+              name: b.NW.string(b.t.K2sFfn),
+              value: N.BRd.LIGHT
             }],
             onChange: e => {
               (0, d.ZI)({

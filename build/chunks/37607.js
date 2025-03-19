@@ -1,11 +1,11 @@
-/** Chunk was on 50749 **/
+/** Chunk was on 23682 **/
 n.d(t, {
   Z: () => j
 });
 var r = n(200651),
   i = n(192379),
-  l = n(392711),
-  o = n.n(l),
+  o = n(392711),
+  l = n.n(o),
   a = n(481060),
   s = n(139387),
   c = n(835473),
@@ -54,10 +54,10 @@ function x(e) {
 function j(e) {
   let {
     guild: t
-  } = e, n = (0, p.F)(t.id), l = o().groupBy(n, e => {
+  } = e, n = (0, p.F)(t.id), o = l().groupBy(n, e => {
     var t;
     return null === (t = e.linkedLobby) || void 0 === t ? void 0 : t.application_id
-  }), c = Object.keys(l);
+  }), c = Object.keys(o);
   return i.useEffect(() => {
     0 === n.length && s.Z.setSection(g.b4C.OVERVIEW)
   }, [n]), (0, r.jsxs)(a.hjN, {
@@ -70,7 +70,7 @@ function j(e) {
       className: h.headerDivider
     }), c.map(e => (0, r.jsx)(x, {
       applicationId: e,
-      channels: l[e]
+      channels: o[e]
     }, e))]
   })
 }

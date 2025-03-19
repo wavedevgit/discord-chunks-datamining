@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(570140),
-  a = n(317770),
-  o = n(592125),
+  o = n(317770),
+  a = n(592125),
   s = n(944486),
   c = n(914010),
   u = n(594174),
@@ -40,9 +40,9 @@ function b(e, t) {
   var n;
   if (null == e) return;
   let r = u.default.getCurrentUser();
-  (null === (n = o.Z.getChannel(t)) || void 0 === n ? void 0 : n.isNSFW()) && null != r && null == r.nsfwAllowed && (0, d.mN)(f.L0.NSFW_CHANNEL)
+  (null === (n = a.Z.getChannel(t)) || void 0 === n ? void 0 : n.isNSFW()) && null != r && null == r.nsfwAllowed && (0, d.mN)(f.L0.NSFW_CHANNEL)
 }
-class _ extends a.Z {
+class _ extends o.Z {
   _initialize() {
     l.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), l.Z.subscribe("CHANNEL_SELECT", this.handleChannelSelect), l.Z.subscribe("AGE_GATE_MODAL_OPEN", this.handleAgeGateModalOpen), l.Z.subscribe("AGE_GATE_MODAL_CLOSE", this.handleAgeGateModalClose), l.Z.subscribe("AGE_GATE_SUCCESS_MODAL_OPEN", this.handleAgeGateSuccess), l.Z.subscribe("AGE_GATE_FAILURE_MODAL_OPEN", this.handleAgeGateFailure)
   }

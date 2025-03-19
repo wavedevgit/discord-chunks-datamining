@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(100527),
   l = n(906732),
-  a = n(324262),
-  o = n(26323),
+  o = n(324262),
+  a = n(26323),
   s = n(267642),
   c = n(981631),
   u = n(921944),
@@ -22,7 +22,7 @@ function f(e) {
   } = e, f = (0, s.KK)(t, c.Eu4.TIER_2), {
     analyticsLocations: g
   } = (0, l.ZP)(i.Z.GUILD_BANNER_NOTICE);
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(o.Z, {
     guild: t,
     onDismissed: () => n(u.L.UNKNOWN),
     cta: p.NW.string(p.t["oPAx7+"]),
@@ -31,7 +31,7 @@ function f(e) {
     }),
     type: c.vID.GUILD_BANNER,
     image: h,
-    onClick: () => (0, o.Z)({
+    onClick: () => (0, a.Z)({
       analyticsLocations: g,
       analyticsSourceLocation: {
         section: c.jXE.CHANNEL_NOTICE,

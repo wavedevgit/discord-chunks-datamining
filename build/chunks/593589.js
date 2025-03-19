@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(200651),
   o = n(192379),
-  a = n(481060),
-  r = n(372900),
+  r = n(481060),
+  a = n(372900),
   c = n(238246),
   l = n(788983),
   d = n(207035),
@@ -24,7 +24,7 @@ function p(e) {
     title: n.name,
     channelId: n.id,
     contentClassName: s.popoutContent,
-    children: (0, i.jsx)(r.Z.Provider, {
+    children: (0, i.jsx)(a.Z.Provider, {
       value: n.guild_id,
       children: (0, i.jsx)(u.Z, {
         providedChannel: n
@@ -35,7 +35,7 @@ function p(e) {
 
 function b(e, t) {
   let n = (0, d.P)(t),
-    r = o.useCallback(() => {
+    a = o.useCallback(() => {
       l.bA("".concat(_.KJ3.CHANNEL_POPOUT, "-").concat(e.id), t => (0, i.jsx)(p, {
         windowKey: t,
         channel: e
@@ -44,9 +44,9 @@ function b(e, t) {
         defaultHeight: 480
       })
     }, [e]);
-  return n ? (0, i.jsx)(a.sNh, {
+  return n ? (0, i.jsx)(r.sNh, {
     id: "channel-pop-out",
     label: "Open in Popout",
-    action: () => r()
+    action: () => a()
   }) : null
 }

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(24917),
   i = n(106351),
   l = n(252258),
-  a = n(243814),
-  o = n(45792),
+  o = n(243814),
+  a = n(45792),
   s = n(566620),
   c = n(317381),
   u = n(592125),
@@ -14,16 +14,16 @@ var r = n(24917),
   p = n(186901),
   h = n(231338);
 let f = {
-  [h.Et.INVITE_USER_EMBEDDED]: (0, o.S)(h.Et.INVITE_USER_EMBEDDED, {
+  [h.Et.INVITE_USER_EMBEDDED]: (0, a.S)(h.Et.INVITE_USER_EMBEDDED, {
     scope: {
-      [p.Gp.ANY]: [a.x.RELATIONSHIPS_READ]
+      [p.Gp.ANY]: [o.x.RELATIONSHIPS_READ]
     },
     async handler(e) {
       let t, {
           socket: n,
           args: {
-            user_id: a,
-            content: o
+            user_id: o,
+            content: a
           }
         } = e,
         p = n.application.id;
@@ -59,8 +59,8 @@ let f = {
         await (0, s.pu)({
           channelId: t.id,
           applicationId: p,
-          userId: a,
-          prefixedContent: o,
+          userId: o,
+          prefixedContent: a,
           location: "RPC_ACTIVITY_INVITE_USER"
         })
       } catch (e) {

@@ -9,7 +9,7 @@ var i = n(512722),
   a = n(442837),
   l = n(809206),
   o = n(634894),
-  c = n(891728),
+  c = n(97992),
   d = n(328783),
   u = n(295474),
   m = n(309351),
@@ -18,8 +18,8 @@ var i = n(512722),
   h = n(433411),
   f = n(532432),
   x = n(349177),
-  b = n(872736),
-  N = n(818420),
+  N = n(872736),
+  b = n(818420),
   _ = n(134795),
   E = n(610966),
   j = n(513901),
@@ -105,7 +105,7 @@ function Z() {
     et = null == ee ? void 0 : ee.getLegacyUsername(),
     en = (null !== (n = null === (e = Y.global_name) || void 0 === e ? void 0 : e.length) && void 0 !== n ? n : 0) > 0 ? Y.global_name : null !== (i = null == q ? void 0 : q.nick) && void 0 !== i ? i : [],
     er = (null !== (Z = null === (t = Y.bio) || void 0 === t ? void 0 : t.length) && void 0 !== Z ? Z : 0) > 0 ? Y.bio : null !== (w = null == q ? void 0 : q.bio) && void 0 !== w ? w : [],
-    ei = (0, c.wu)(),
+    ei = (0, c.w)(),
     es = (0, m.H)("DefaultCustomizationSections");
   return (0, r.jsxs)("div", {
     className: D.sectionsContainer,
@@ -130,7 +130,7 @@ function Z() {
     }, "avatar"), (0, r.jsx)(h.Z, {
       user: L,
       sectionTitle: R.NW.string(R.t["7v0T9P"])
-    }, "decoration"), es && (0, r.jsx)(N.Z, {
+    }, "decoration"), es && (0, r.jsx)(b.Z, {
       user: L
     }), (0, r.jsx)(j.Z, {
       user: L,
@@ -161,7 +161,7 @@ function Z() {
       currentBio: null !== (W = null == B ? void 0 : B.bio) && void 0 !== W ? W : ""
     }, "bio"), ei.length > 0 && (0, r.jsx)(d.Z, {
       availableClans: ei
-    }), null != et && (0, r.jsx)(b.Z, {
+    }), null != et && (0, r.jsx)(N.Z, {
       legacyUsername: et
     }, "legacy_username")]
   })

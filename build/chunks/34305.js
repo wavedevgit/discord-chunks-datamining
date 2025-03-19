@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(442837),
-  a = n(481060),
-  o = n(325432),
+  o = n(481060),
+  a = n(325432),
   s = n(570928),
   c = n(600164),
   u = n(579022),
@@ -42,7 +42,7 @@ class E extends i.PureComponent {
       path: n,
       label: i,
       editingPath: l,
-      isDefault: o,
+      isDefault: a,
       metadata: u
     } = this.props;
     return null != u && (e = null != u.availableKB ? (0, p.BU)(u.availableKB, {
@@ -57,11 +57,11 @@ class E extends i.PureComponent {
         className: m.__invalid_descriptionWrapper,
         children: [(0, r.jsxs)(c.Z, {
           align: c.Z.Align.CENTER,
-          children: [(0, r.jsx)(a.X6q, {
+          children: [(0, r.jsx)(o.X6q, {
             className: m.rowTitle,
             variant: "heading-md/semibold",
             children: null != i ? i : d.Z.getLabelFromPath(n)
-          }), o ? (0, r.jsx)("span", {
+          }), a ? (0, r.jsx)("span", {
             className: m.defaultIndicator,
             children: g.NW.string(g.t.bBvAEB)
           }) : null]
@@ -72,15 +72,15 @@ class E extends i.PureComponent {
             total: t
           }),
           children: n
-        }) : (0, r.jsx)(a.Text, {
+        }) : (0, r.jsx)(o.Text, {
           className: m.rowBody,
           variant: "text-xs/normal",
           children: n
         })]
-      }), (0, r.jsx)(a.zxk, {
-        size: a.zxk.Sizes.SMALL,
+      }), (0, r.jsx)(o.zxk, {
+        size: o.zxk.Sizes.SMALL,
         disabled: null != l,
-        color: a.zxk.Colors.PRIMARY,
+        color: o.zxk.Colors.PRIMARY,
         onClick: this.handleStartEditing,
         children: g.NW.string(g.t.bt75u7)
       })]
@@ -94,54 +94,54 @@ class E extends i.PureComponent {
       label: n,
       isDefault: i
     } = this.state;
-    return (0, r.jsx)(a.Zbd, {
+    return (0, r.jsx)(o.Zbd, {
       editable: !0,
       className: m.installationPathEditing,
       children: (0, r.jsxs)(c.Z, {
         children: [this.renderDiskUsageCircle(), (0, r.jsxs)(c.Z.Child, {
-          children: [(0, r.jsx)(a.xJW, {
+          children: [(0, r.jsx)(o.xJW, {
             title: g.NW.string(g.t.AJkKCA),
-            children: (0, r.jsx)(a.oil, {
+            children: (0, r.jsx)(o.oil, {
               value: n,
               placeholder: d.Z.getLabelFromPath(e),
               onChange: this.handleLabelChange
             })
-          }), (0, r.jsx)(a.xJW, {
+          }), (0, r.jsx)(o.xJW, {
             title: g.NW.string(g.t.lnUCwc),
             className: b.marginTop20,
-            children: (0, r.jsx)(a.oil, {
+            children: (0, r.jsx)(o.oil, {
               disabled: !0,
               value: e
             })
-          }), (0, r.jsx)(a.XZJ, {
-            type: a.XZJ.Types.INVERTED,
+          }), (0, r.jsx)(o.XZJ, {
+            type: o.XZJ.Types.INVERTED,
             value: null != i ? i : this.props.isDefault,
             disabled: this.props.isDefault,
             className: m.defaultLocationCheckbox,
             onChange: this.handleToggleDefault,
             children: g.NW.string(g.t.Z2MWuL)
-          }), (0, r.jsx)(a.$i$, {
+          }), (0, r.jsx)(o.$i$, {
             className: m.separator
           }), (0, r.jsxs)(c.Z, {
-            children: [(0, r.jsx)(a.zxk, {
+            children: [(0, r.jsx)(o.zxk, {
               disabled: t || this.props.isDefault,
-              size: a.zxk.Sizes.SMALL,
-              color: a.zxk.Colors.RED,
-              look: a.zxk.Looks.OUTLINED,
+              size: o.zxk.Sizes.SMALL,
+              color: o.zxk.Colors.RED,
+              look: o.zxk.Looks.OUTLINED,
               onClick: this.handleRemoveLocation,
               children: g.NW.string(g.t.iBUzS0)
             }), (0, r.jsxs)(c.Z, {
               justify: c.Z.Justify.END,
-              children: [(0, r.jsx)(a.zxk, {
-                size: a.zxk.Sizes.SMALL,
-                color: a.zxk.Colors.PRIMARY,
-                look: a.zxk.Looks.LINK,
+              children: [(0, r.jsx)(o.zxk, {
+                size: o.zxk.Sizes.SMALL,
+                color: o.zxk.Colors.PRIMARY,
+                look: o.zxk.Looks.LINK,
                 onClick: this.handleStopEditing,
                 children: g.NW.string(g.t["ETE/oK"])
-              }), (0, r.jsx)(a.zxk, {
+              }), (0, r.jsx)(o.zxk, {
                 disabled: e === this.props.path && n === this.props.label && i === this.props.isDefault,
-                size: a.zxk.Sizes.SMALL,
-                color: a.zxk.Colors.GREEN,
+                size: o.zxk.Sizes.SMALL,
+                color: o.zxk.Colors.GREEN,
                 onClick: this.handleSaveChanges,
                 children: g.NW.string(g.t.R3BPHx)
               })]
@@ -178,9 +178,9 @@ class E extends i.PureComponent {
         isDefault: null
       })
     }), _(this, "handleRemoveLocation", () => {
-      (0, a.h7j)(e => {
+      (0, o.h7j)(e => {
         var t, n;
-        return (0, r.jsx)(a.ConfirmModal, (t = function(e) {
+        return (0, r.jsx)(o.ConfirmModal, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -196,9 +196,9 @@ class E extends i.PureComponent {
           confirmText: g.NW.string(g.t.iBUzS0),
           cancelText: g.NW.string(g.t["ETE/oK"]),
           onConfirm: () => {
-            this.handleStopEditing(), (0, o.iD)(this.props.path)
+            this.handleStopEditing(), (0, a.iD)(this.props.path)
           },
-          children: (0, r.jsx)(a.Text, {
+          children: (0, r.jsx)(o.Text, {
             variant: "text-md/normal",
             children: g.NW.string(g.t["1XqeW1"])
           })
@@ -214,7 +214,7 @@ class E extends i.PureComponent {
         }), t))
       })
     }), _(this, "handleSaveChanges", () => {
-      (0, o.Tb)(this.props.path, {
+      (0, a.Tb)(this.props.path, {
         label: null != this.state.label ? this.state.label : this.props.label,
         isDefault: null != this.state.isDefault ? this.state.isDefault : this.props.isDefault
       }), this.handleStopEditing()
@@ -231,7 +231,7 @@ class E extends i.PureComponent {
 }
 class O extends i.PureComponent {
   componentDidMount() {
-    (0, o.ec)(this.props.installationPaths.map(e => {
+    (0, a.ec)(this.props.installationPaths.map(e => {
       let {
         path: t
       } = e;
@@ -246,17 +246,17 @@ class O extends i.PureComponent {
     } = this.props, {
       editingPath: i
     } = this.state;
-    return (0, r.jsxs)(a.hjN, {
+    return (0, r.jsxs)(o.hjN, {
       className: m.wrapper,
       title: g.NW.string(g.t.aLszkJ),
       children: [e.map(e => {
         let {
           path: l,
-          label: a
+          label: o
         } = e;
         return (0, r.jsx)(E, {
           path: l,
-          label: a,
+          label: o,
           metadata: t[l],
           isDefault: n === l,
           editingPath: i,
@@ -265,10 +265,10 @@ class O extends i.PureComponent {
         }, l)
       }), (0, r.jsx)("div", {
         className: m.buttonRowWrapper,
-        children: (0, r.jsx)(a.zxk, {
+        children: (0, r.jsx)(o.zxk, {
           disabled: !h.isPlatformEmbedded,
           onClick: this.handleAddInstallationLocation,
-          size: a.zxk.Sizes.SMALL,
+          size: o.zxk.Sizes.SMALL,
           children: g.NW.string(g.t.pnZ2ur)
         })
       })]
@@ -279,7 +279,7 @@ class O extends i.PureComponent {
       editingPath: null
     }), _(this, "handleAddInstallationLocation", () => {
       f.ZP.showOpenDialog(["openDirectory"]).then(e => {
-        null != e && 0 !== e.length && null != e[0] && "undefined" !== e[0] && (0, o.RY)(e[0])
+        null != e && 0 !== e.length && null != e[0] && "undefined" !== e[0] && (0, a.RY)(e[0])
       })
     }), _(this, "handleToggleEditing", e => {
       this.setState({

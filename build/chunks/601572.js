@@ -1,6 +1,6 @@
 /** Chunk was on 68121 **/
 n.d(t, {
-  default: () => O
+  default: () => k
 }), n(47120);
 var o = n(200651),
   a = n(192379),
@@ -23,13 +23,13 @@ var o = n(200651),
   S = n(747545),
   T = n(981631),
   I = n(388032),
-  k = n(262474);
+  O = n(262474);
 
-function O(e) {
+function k(e) {
   let {
     transitionState: t,
     videoEnabled: n,
-    onEnable: O,
+    onEnable: k,
     onClose: x
   } = e, B = h.Z.getCameraComponent(), y = (0, u.Dt)(), P = (0, m.Z)(), w = b.qF.useSetting(), [A, L] = a.useState((0, p.P)(v.default.getCurrentUser())), E = (0, l.O)(), {
     analyticsLocations: N
@@ -43,7 +43,7 @@ function O(e) {
     null === (e = R.current) || void 0 === e || e.scrollToTop()
   }, []);
   let D = async () => {
-    await W(), i.Z.setVideoEnabled(!0), null == O || O()
+    await W(), i.Z.setVideoEnabled(!0), null == k || k()
   }, W = async () => {
     try {
       await (0, g.wG)(A, {
@@ -76,16 +76,16 @@ function O(e) {
     children: (0, o.jsx)(c.Z, {
       page: T.ZY5.PREVIEW_CAMERA_MODAL,
       children: (0, o.jsxs)(r.Y0X, {
-        className: k.modalRoot,
+        className: O.modalRoot,
         size: r.CgR.DYNAMIC,
         "aria-labelledby": y,
         transitionState: t,
         children: [(0, o.jsxs)(r.hzk, {
-          className: P ? k.contentWithVideoBackgrounds : k.content,
+          className: P ? O.contentWithVideoBackgrounds : O.content,
           scrollerRef: R,
           children: [(0, o.jsx)(r.X6q, {
             id: y,
-            className: k.header,
+            className: O.header,
             variant: "heading-xl/semibold",
             children: n ? I.NW.string(I.t.LAwwbW) : I.NW.string(I.t["/HITVF"])
           }), (0, o.jsx)(S.Z, {
@@ -97,9 +97,9 @@ function O(e) {
             onSelectBackgroundOption: L,
             hideDeviceSelector: n,
             renderCamera: e => (0, o.jsxs)("div", {
-              className: k.cameraPreview,
+              className: O.cameraPreview,
               children: [(0, o.jsx)("div", {
-                className: k.camera,
+                className: O.camera,
                 children: (0, o.jsx)(B, {
                   disabled: !1,
                   deviceId: e,
@@ -136,7 +136,7 @@ function O(e) {
           })]
         }), (0, o.jsx)(r.olH, {
           onClick: x,
-          className: k.modalClose
+          className: O.modalClose
         })]
       })
     })

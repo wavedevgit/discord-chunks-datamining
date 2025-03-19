@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(144114),
   f = n(921801),
   x = n(607018),
-  b = n(778764),
-  N = n(314897),
+  N = n(778764),
+  b = n(314897),
   _ = n(325067),
   E = n(594174),
   j = n(572004),
@@ -257,7 +257,7 @@ class k extends i.PureComponent {
         })]
       }), e, this.renderMFASMS(), (0, r.jsx)(f.F, {
         setting: S.s6.ACCOUNT_SECURITY_KEYS,
-        children: (0, r.jsx)(b.Z, {})
+        children: (0, r.jsx)(N.Z, {})
       })]
     })
   }
@@ -274,7 +274,7 @@ class k extends i.PureComponent {
           size: o.PhG.SMALL,
           children: y.NW.string(y.t.cDgKtb)
         })
-      }), (0, r.jsx)(b.Z, {})]
+      }), (0, r.jsx)(N.Z, {})]
     })
   }
   render() {
@@ -381,9 +381,9 @@ class k extends i.PureComponent {
 function W(e) {
   let t = (0, l.e7)([E.default], () => E.default.getCurrentUser());
   a()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
-  let n = (0, l.cj)([_.Z, N.default], () => ({
+  let n = (0, l.cj)([_.Z, b.default], () => ({
     togglingSMS: _.Z.togglingSMS,
-    hasTOTPEnabled: N.default.hasTOTPEnabled()
+    hasTOTPEnabled: b.default.hasTOTPEnabled()
   }));
   return (0, r.jsx)(k, D({
     currentUser: t

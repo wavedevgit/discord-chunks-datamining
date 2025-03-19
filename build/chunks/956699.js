@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(179658),
   f = n(491428),
   x = n(225433),
-  b = n(484614),
-  N = n(615287),
+  N = n(484614),
+  b = n(615287),
   _ = n(386506),
   E = n(865427),
   j = n(802098),
@@ -606,7 +606,7 @@ class $ extends i.Component {
           children: [(0, r.jsx)(O.Z.Child, {
             wrap: !0,
             basis: "75%",
-            children: (0, r.jsx)(b.Z, {
+            children: (0, r.jsx)(N.Z, {
               value: n
             })
           }), (0, r.jsx)(m.zxk, {
@@ -867,7 +867,7 @@ function en() {
     t = (0, d.e7)([y.default], () => y.default.getForcedRenderMode()),
     [n, s] = i.useState(!1),
     [a, l] = i.useState(""),
-    o = e || t === N.R5.OUT_OF_PROCESS_V2 || t === N.R5.OUT_OF_PROCESS_V3 || t === N.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION;
+    o = e || t === b.R5.OUT_OF_PROCESS_V2 || t === b.R5.OUT_OF_PROCESS_V3 || t === b.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION;
   return (i.useEffect(() => {
     (async () => {
       l(await (0, Z.getOverlayURL)())

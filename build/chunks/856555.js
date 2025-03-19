@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(704215),
-  a = n(540059),
-  o = n(605236),
+  o = n(540059),
+  a = n(605236),
   s = n(930153),
   c = n(432792),
   u = n(981631),
@@ -59,7 +59,7 @@ let f = e => {
     }, n))
   },
   g = () => {
-    let e = (0, a.Q3)("VirtualCurrency: ShopOnboardingCoachmark");
+    let e = (0, o.Q3)("VirtualCurrency: ShopOnboardingCoachmark");
     return {
       getRequiredSpacingFromTop: i.useCallback(() => {
         let t = (0, s.Lk)(document.body.style.getPropertyValue("--custom-channel-header-height"), 48),
@@ -73,9 +73,9 @@ let f = e => {
   m = e => {
     var t, n, {
         offsetControlRef: l,
-        backgroundElementRef: a
+        backgroundElementRef: o
       } = e,
-      o = h(e, ["offsetControlRef", "backgroundElementRef"]);
+      a = h(e, ["offsetControlRef", "backgroundElementRef"]);
     let {
       getRequiredSpacingFromTop: s,
       tailLeftOffset: u
@@ -86,7 +86,7 @@ let f = e => {
     return (0, r.jsx)(c.U_, {
       offsetControlRef: l,
       coachmarkRef: d,
-      backgroundElementRef: a,
+      backgroundElementRef: o,
       calculateVisibility: b,
       calculateBaseOffsets: () => ({
         left: 0,
@@ -95,7 +95,7 @@ let f = e => {
       children: (0, r.jsx)(f, (t = p({
         coachmarkRef: d,
         tailLeftOffset: u
-      }, o), n = n = {
+      }, a), n = n = {
         renderTail: !0
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -114,13 +114,13 @@ let b = e => {
     let {
       isVirtualCurrencyEnabled: t,
       listScrollerRef: n
-    } = e, r = i.useRef(null), a = i.useCallback(() => {
+    } = e, r = i.useRef(null), o = i.useCallback(() => {
       null !== r.current && r.current.updateElementOffsets()
     }, []), s = i.useCallback(() => {
       null !== n.current && n.current.scrollToTop({
         animate: !0
       })
-    }, [n]), d = (0, o.wE)(l.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK), {
+    }, [n]), d = (0, a.wE)(l.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK), {
       shouldShow: p,
       closeCoachmarkIfOpen: h
     } = (0, c.M)({
@@ -131,7 +131,7 @@ let b = e => {
     return t ? {
       shouldShow: p,
       closeCoachmarkIfOpen: h,
-      onHandleScroll: a,
+      onHandleScroll: o,
       offsetControlRef: r,
       onClose: h,
       onCtaClick: h

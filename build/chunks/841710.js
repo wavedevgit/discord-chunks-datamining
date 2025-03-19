@@ -7,8 +7,8 @@ var r = n(200651);
 n(192379);
 var i = n(120356),
   l = n.n(i),
-  a = n(481060),
-  o = n(129861),
+  o = n(481060),
+  a = n(129861),
   s = n(712736);
 
 function c(e) {
@@ -20,14 +20,14 @@ function c(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: s.memberItem,
-    children: [(0, r.jsx)(a.qEK, {
+    children: [(0, r.jsx)(o.qEK, {
       src: t.getAvatarURL(l, 24),
       className: s.avatar,
       "aria-label": t.username,
-      size: a.EFr.SIZE_24,
+      size: o.EFr.SIZE_24,
       status: n,
       statusColor: i ? "currentColor" : void 0
-    }), (0, r.jsx)(o.Z, {
+    }), (0, r.jsx)(a.Z, {
       user: t,
       hideDiscriminator: !0
     })]

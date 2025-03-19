@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(317257),
   f = n(120786),
   x = n(775451),
-  b = n(970815),
-  N = n(720463),
+  N = n(970815),
+  b = n(720463),
   _ = n(931928),
   E = n(450272),
   j = n(981631),
@@ -37,7 +37,7 @@ function T() {
     openIntroToOrbsClaimedCoachmark: e
   } = (0, g.l)({
     location: "VirtualCurrencyComponents"
-  }), [t, n] = i.useState(150), [p, N] = i.useState(150), [_, v] = i.useState(500), [S, T] = i.useState(h.b.DEFAULT), I = () => {
+  }), [t, n] = i.useState(150), [p, b] = i.useState(150), [_, v] = i.useState(500), [S, T] = i.useState(h.b.DEFAULT), I = () => {
     switch (S) {
       case h.b.DEFAULT:
         T(h.b.HIGHLIGHTED);
@@ -118,20 +118,20 @@ function T() {
       })]
     }), (0, r.jsxs)(E.E_, {
       label: "Balance Widget Pill",
-      children: [(0, r.jsx)(b.A4, {
+      children: [(0, r.jsx)(N.A4, {
         balance: 150,
         balanceWidgetMode: h.b.DEFAULT
-      }), (0, r.jsx)(b.A4, {
+      }), (0, r.jsx)(N.A4, {
         balance: 150,
         balanceWidgetMode: h.b.HIGHLIGHTED
-      }), (0, r.jsx)(b.A4, {
+      }), (0, r.jsx)(N.A4, {
         balance: 150,
         balanceWidgetMode: h.b.SELECTED
-      }), (0, r.jsx)(b.A4, {
+      }), (0, r.jsx)(N.A4, {
         balance: 0,
         balanceWidgetMode: h.b.DEFAULT,
         showNotificationBadge: !0
-      }), (0, r.jsx)(b.A4, {
+      }), (0, r.jsx)(N.A4, {
         balance: null,
         balanceWidgetMode: h.b.DEFAULT
       })]
@@ -149,11 +149,11 @@ function T() {
         value: t,
         onChange: e => n(e)
       }), (0, r.jsx)(s.zx, {
-        onClick: () => N(t),
+        onClick: () => b(t),
         children: "Set Balance"
       }), (0, r.jsx)("div", {
         className: O.interactivePillContainer,
-        children: (0, r.jsx)(b.A4, {
+        children: (0, r.jsx)(N.A4, {
           balance: p,
           balanceWidgetMode: S,
           onClick: () => I()
@@ -170,14 +170,14 @@ function T() {
         onChange: e => v(e)
       }), (0, r.jsx)(s.zx, {
         onClick: () => {
-          N(null), setTimeout(() => {
-            N(t)
+          b(null), setTimeout(() => {
+            b(t)
           }, _)
         },
         children: "Simulate Loading State"
       }), (0, r.jsx)("div", {
         className: O.interactivePillContainer,
-        children: (0, r.jsx)(b.A4, {
+        children: (0, r.jsx)(N.A4, {
           balance: p,
           balanceWidgetMode: S,
           onClick: () => I()
@@ -297,7 +297,7 @@ function I() {
       })]
     }), (0, r.jsx)(E.E_, {
       label: "Balance Widget Coachmark",
-      children: (0, r.jsx)(N.E, {
+      children: (0, r.jsx)(b.E, {
         earnedOrbsQuantity: 200,
         ctaOnClick: j.dG4,
         linkOnClick: j.dG4

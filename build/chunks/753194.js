@@ -17,8 +17,8 @@ function u(e) {
       color: n,
       size: u,
       forcedIconColor: m,
-      className: h,
-      iconClassName: x,
+      className: x,
+      iconClassName: h,
       tooltipText: p
     } = e,
     [b, f] = (0, l.Wu)([s.Z], () => [s.Z.desaturateUserColors, s.Z.saturation]),
@@ -47,7 +47,7 @@ function u(e) {
         }
         return e
       }({}, e), a = a = {
-        className: h,
+        className: x,
         color: v,
         size: u,
         children: (0, r.jsx)(o.kmB, {
@@ -55,7 +55,7 @@ function u(e) {
           color: t,
           height: u,
           width: u,
-          className: x
+          className: h
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
         var n = Object.keys(e);

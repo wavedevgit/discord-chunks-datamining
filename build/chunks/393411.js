@@ -19,8 +19,8 @@ var i = n(120356),
   h = n(963249),
   f = n(301766),
   x = n(594174),
-  b = n(509545),
-  N = n(931331),
+  N = n(509545),
+  b = n(931331),
   _ = n(754347),
   E = n(122289),
   j = n(74538),
@@ -242,7 +242,7 @@ let z = function(e) {
     },
     el = () => {
       if (null != i && null != i.premiumPlanIdFromItems) {
-        let e = b.Z.get(i.premiumPlanIdFromItems);
+        let e = N.Z.get(i.premiumPlanIdFromItems);
         if (null == e) {
           B.info("Plan not fetched for plan id: ".concat(i.premiumPlanIdFromItems));
           return
@@ -315,7 +315,7 @@ let z = function(e) {
       eh = (0, r.jsx)(F, {});
       break;
     case D.p9.TIER_2:
-      eh = (0, r.jsx)(N.Z, {
+      eh = (0, r.jsx)(b.Z, {
         className: k.planName,
         "aria-label": w.NW.string(w.t.lpNrPj)
       })

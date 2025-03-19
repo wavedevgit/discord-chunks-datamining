@@ -4,8 +4,8 @@ n.d(t, {
 }), n(653041);
 var r, i = n(200651),
   l = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(748780),
   c = n(442837),
   u = n(215569),
@@ -61,7 +61,7 @@ let C = (0, g.Un)({
     name: "UserSettings"
   }),
   S = (0, g.Un)({
-    createPromise: () => Promise.all([n.e("7654"), n.e("50749"), n.e("86915")]).then(n.bind(n, 869779)),
+    createPromise: () => Promise.all([n.e("7654"), n.e("23682"), n.e("86915")]).then(n.bind(n, 869779)),
     webpackId: 869779,
     name: "ChannelSettings"
   }),
@@ -71,7 +71,7 @@ let C = (0, g.Un)({
     name: "CollectiblesShop"
   }),
   P = (0, g.Un)({
-    createPromise: () => Promise.all([n.e("7654"), n.e("44156"), n.e("50749"), n.e("6850"), n.e("16114"), n.e("58227"), n.e("44088"), n.e("10396"), n.e("95140")]).then(n.bind(n, 994763)),
+    createPromise: () => Promise.all([n.e("7654"), n.e("44156"), n.e("23682"), n.e("6850"), n.e("16114"), n.e("58227"), n.e("44088"), n.e("10396"), n.e("95140")]).then(n.bind(n, 994763)),
     webpackId: 994763,
     name: "GuildSettings"
   }),
@@ -170,7 +170,7 @@ class w extends(r = l.PureComponent) {
       mode: n,
       children: r,
       baseLayer: l
-    } = t, a = function(e, t) {
+    } = t, o = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -187,13 +187,13 @@ class w extends(r = l.PureComponent) {
     }(t, ["mode", "children", "baseLayer"]), c = e || n === Z ? this.getAnimatedStyle() : null, u = (0, i.jsx)(s.Z.div, I(y({
       ref: e => this.containerRef.current = null != e ? e.refs.node : void 0,
       "aria-hidden": n === Z,
-      className: o()(N.layer, {
+      className: a()(N.layer, {
         [N.baseLayer]: l,
         [N.animating]: e,
         "stop-animations": n === Z
       }),
       style: c
-    }, a), {
+    }, o), {
       children: r
     }));
     return l ? u : (0, i.jsx)(d.EqS, {
@@ -264,7 +264,7 @@ class R extends l.PureComponent {
     return (0, i.jsx)(d.f6W, {
       theme: this.props.sidebarTheme,
       children: e => (0, i.jsx)("div", {
-        className: o()(N.bg, e)
+        className: a()(N.bg, e)
       })
     })
   }
@@ -272,7 +272,7 @@ class R extends l.PureComponent {
     return (0, i.jsxs)(i.Fragment, {
       children: [this.renderArtisanalHack(), (0, i.jsx)(u.W, {
         component: "div",
-        className: o()(N.layers, this.props.className),
+        className: a()(N.layers, this.props.className),
         children: this.renderLayers()
       })]
     })

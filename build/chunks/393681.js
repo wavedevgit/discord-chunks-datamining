@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(279837),
   f = n(952306),
   x = n(600164),
-  b = n(690221),
-  N = n(346585),
+  N = n(690221),
+  b = n(346585),
   _ = n(347649),
   E = n(332473),
   j = n(303172),
@@ -147,8 +147,8 @@ class X extends i.PureComponent {
       className: z.accountWarningBodyText,
       messageType: u.QYI.WARNING,
       children: [this.props.forceMigrationExperiment ? H.NW.format(H.t.zT1hgo, {
-        date: (0, N.IE)(this.props.locale)
-      }) : H.NW.format(H.t.pdYZys, {}), " ", "", (0, r.jsx)(b.Z, {
+        date: (0, b.IE)(this.props.locale)
+      }) : H.NW.format(H.t.pdYZys, {}), " ", "", (0, r.jsx)(N.Z, {
         className: z.noticeTextButton,
         onClick: () => (0, j.Z)(F.Kq.USER_SETTINGS),
         children: H.NW.string(H.t.LhlgY2)

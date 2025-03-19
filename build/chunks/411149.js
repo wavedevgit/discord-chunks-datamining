@@ -51,7 +51,7 @@ class _ extends(r = i.ZP.Store) {
     return Object.values(s)
   }
   getWallpaperById(e) {
-    return s[e]
+    if (null != e) return s[e]
   }
 }
 a(_, "displayName", "ChatWallpaperStore");

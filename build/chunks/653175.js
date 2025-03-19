@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => g
-});
+  Z: () => b
+}), n(47120);
 var r = n(570140),
   i = n(367907),
   o = n(932724),
@@ -35,15 +35,38 @@ function p(e) {
   }
   return e
 }
-let h = (e, t) => p({
-    channel_id: e.id,
-    channel_type: e.type,
-    guild_id: e.getGuildId(),
-    rtc_connection_id: u.Z.getRTCConnectionId(),
-    duration: u.Z.getDuration(),
-    media_session_id: u.Z.getMediaSessionId()
-  }, (0, i.kO)(u.Z.getGuildId(), u.Z.getChannelId(), t)),
-  m = () => {
+
+function h(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let g = (e, t) => {
+    let n = u.Z.getVoiceFilterSpeakingDurationMs();
+    return m(p({
+      channel_id: e.id,
+      channel_type: e.type,
+      guild_id: e.getGuildId(),
+      rtc_connection_id: u.Z.getRTCConnectionId(),
+      duration: u.Z.getDuration(),
+      media_session_id: u.Z.getMediaSessionId()
+    }, (0, i.kO)(u.Z.getGuildId(), u.Z.getChannelId(), t)), {
+      duration_speaking_voice_filter_ids: null != n ? [...n.keys()] : null,
+      duration_speaking_voice_filter_ms: null != n ? [...n.values()] : null
+    })
+  },
+  E = () => {
     var e;
     let t = (0, o.P)(f.default.getCurrentUser());
     return {
@@ -54,13 +77,13 @@ let h = (e, t) => p({
     }
   };
 
-function g(e, t, n, i) {
+function b(e, t, n, i) {
   let o = d.Z.getVoiceChannelId(),
     s = l.Z.getChannel(o);
   if (null == t && null != o && null != s) {
-    let t = h(s, i);
+    let t = g(s, i);
     if (e(), a.Z.hasUsedBackgroundInCall) {
-      let e = p({}, t, m());
+      let e = p({}, t, E());
       r.Z.dispatch({
         type: "VIDEO_BACKGROUND_SHOW_FEEDBACK",
         analyticsData: e

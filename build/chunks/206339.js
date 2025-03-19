@@ -17,8 +17,8 @@ var r = n(200651),
   h = n(410030),
   f = n(454585),
   x = n(163684),
-  b = n(178100),
-  N = n(518638),
+  N = n(178100),
+  b = n(518638),
   _ = n(725727),
   E = n(454982),
   j = n(197115),
@@ -45,9 +45,9 @@ function Z(e) {
     [m, g] = i.useState(!1),
     p = () => u(e => !e),
     x = (0, h.ZP)(),
-    _ = (0, N.Pz)(n.id, x),
+    _ = (0, b.Pz)(n.id, x),
     j = null != s,
-    C = (0, b.Z)(n, j);
+    C = (0, N.Z)(n, j);
   j && c ? t = R.NW.format(R.t.pkxVx8, {
     endDate: C,
     onClickDetails: p
@@ -165,18 +165,18 @@ let w = function() {
     })
   }, []);
   let {
-    promotionsLoaded: b,
-    activeOutboundPromotions: N,
+    promotionsLoaded: N,
+    activeOutboundPromotions: b,
     claimedEndedOutboundPromotions: E,
     claimedOutboundPromotionCodeMap: w,
     addClaimedOutboundPromotionCode: k
-  } = (0, _.lG)(), W = N.length + E.length > 0, L = x.g.useExperiment({
+  } = (0, _.lG)(), W = b.length + E.length > 0, L = x.g.useExperiment({
     location: "EntitlementGifts"
   }, {
     autoTrackExposure: !1,
     disable: s
   }).enabled && W;
-  return h && b ? (0, r.jsxs)(r.Fragment, {
+  return h && N ? (0, r.jsxs)(r.Fragment, {
     children: [function() {
       var e;
       let t = n.find(e => e.giftCodeBatchId === P.m8 && !e.consumed),
@@ -234,7 +234,7 @@ let w = function() {
               addClaimedOutboundPromotionCode: k,
               disabled: !s
             }, n.id)
-          }), N.map(e => (0, r.jsx)(Z, {
+          }), b.map(e => (0, r.jsx)(Z, {
             outboundPromotion: e,
             code: w[e.id],
             addClaimedOutboundPromotionCode: k,

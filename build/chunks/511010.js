@@ -29,7 +29,7 @@ let c = s.forwardRef(function(e, t) {
         return s
       }(e, ["className", "isBeforeGroup"]);
     let {
-      children: d
+      children: f
     } = u;
     return (0, n.jsx)(l.Z, (r = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -51,10 +51,10 @@ let c = s.forwardRef(function(e, t) {
     }({}, u), s = s = {
       ref: t,
       role: "separator",
-      "aria-label": "string" == typeof d ? d : void 0,
+      "aria-label": "string" == typeof f ? f : void 0,
       className: i()(a, {
         [o.divider]: !0,
-        [o.hasContent]: null != d,
+        [o.hasContent]: null != f,
         [o.beforeGroup]: c
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {

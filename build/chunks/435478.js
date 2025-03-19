@@ -70,11 +70,11 @@ function h(e) {
     hint: h,
     renderSubmenu: f
   } = e, x = p(e, ["id", "label", "icon", "hint", "renderSubmenu"]);
-  let b = (0, a.JA)(t),
+  let N = (0, a.JA)(t),
     {
-      onFocus: N
-    } = b,
-    _ = p(b, ["onFocus"]),
+      onFocus: b
+    } = N,
+    _ = p(N, ["onFocus"]),
     {
       id: E
     } = (0, a.f$)(),
@@ -94,7 +94,7 @@ function h(e) {
     fullWidth: !0,
     onMouseEnter: () => {
       var t;
-      null == e || null === (t = e.onMouseEnter) || void 0 === t || t.call(e), N()
+      null == e || null === (t = e.onMouseEnter) || void 0 === t || t.call(e), b()
     },
     children: [(0, r.jsx)(c, {
       size: "xs",

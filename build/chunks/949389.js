@@ -2,7 +2,7 @@
 n.d(t, {
   GO: () => i,
   K7: () => l,
-  xm: () => a
+  xm: () => o
 });
 var r = n(570140);
 
@@ -20,7 +20,7 @@ function l(e) {
   })
 }
 
-function a(e) {
+function o(e) {
   r.Z.dispatch({
     type: "MAX_MEMBER_COUNT_NOTICE_DISMISS",
     guildId: e

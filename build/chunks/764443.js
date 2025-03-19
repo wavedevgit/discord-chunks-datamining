@@ -1,6 +1,6 @@
 /** Chunk was on 54835 **/
 n.d(t, {
-  I: () => N
+  I: () => b
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -87,7 +87,7 @@ function x(e) {
   })
 }
 
-function b(e, t, n) {
+function N(e, t, n) {
   return (0, r.jsx)(s.sNh, {
     id: e,
     keepItemStyles: !0,
@@ -116,7 +116,7 @@ function b(e, t, n) {
   })
 }
 
-function N(e) {
+function b(e) {
   let {
     expiringStatus: t,
     defaultClickExpire: n
@@ -124,7 +124,7 @@ function N(e) {
     location: "AccountProfilePopout"
   }), d = c.Cr.useSetting(), u = (0, l.p)(), m = o.e.useExperiment({
     location: "AccountProfilePopout"
-  }).allowQuietMode || u, N = c.fv.useSetting(), _ = e === g.Skl.DND, E = t => {
+  }).allowQuietMode || u, b = c.fv.useSetting(), _ = e === g.Skl.DND, E = t => {
     let n = null != d && "0" !== d ? p.NW.formatToPlainString(p.t.BWD8fn, {
       endTime: new Date(Number(d)).toLocaleString(p.NW.currentLocale, {
         month: "numeric",
@@ -159,22 +159,22 @@ function N(e) {
     })
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [b(g.Skl.ONLINE, e), (0, r.jsx)(s.Clw, {}, "menu-separator-statuses"), t ? x({
+    children: [N(g.Skl.ONLINE, e), (0, r.jsx)(s.Clw, {}, "menu-separator-statuses"), t ? x({
       status: g.Skl.IDLE,
       currentStatus: e,
       description: E(g.Skl.IDLE),
       defaultClickExpire: n
-    }) : b(g.Skl.IDLE, e, E(g.Skl.IDLE)), t ? x({
+    }) : N(g.Skl.IDLE, e, E(g.Skl.IDLE)), t ? x({
       status: g.Skl.DND,
       currentStatus: e,
       description: E(g.Skl.DND),
       defaultClickExpire: n
-    }) : b(g.Skl.DND, e, E(g.Skl.DND)), t ? x({
+    }) : N(g.Skl.DND, e, E(g.Skl.DND)), t ? x({
       status: g.Skl.INVISIBLE,
       currentStatus: e,
       description: E(g.Skl.INVISIBLE),
       defaultClickExpire: n
-    }) : b(g.Skl.INVISIBLE, e, E(g.Skl.INVISIBLE)), m || u ? (0, r.jsxs)(r.Fragment, {
+    }) : N(g.Skl.INVISIBLE, e, E(g.Skl.INVISIBLE)), m || u ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.Clw, {}, "menu-separator-statuses"), (0, r.jsx)(s.sNh, {
         id: "quiet-mode",
         "aria-label": "focus mode",
@@ -194,8 +194,8 @@ function N(e) {
             })]
           }), (0, r.jsx)("div", {
             className: h.description,
-            children: u && null != N && "0" !== N ? p.NW.formatToPlainString(p.t.BWD8fn, {
-              endTime: new Date(Number(N)).toLocaleString(p.NW.currentLocale, {
+            children: u && null != b && "0" !== b ? p.NW.formatToPlainString(p.t.BWD8fn, {
+              endTime: new Date(Number(b)).toLocaleString(p.NW.currentLocale, {
                 month: "numeric",
                 day: "numeric",
                 hour: "numeric",

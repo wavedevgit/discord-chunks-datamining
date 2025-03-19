@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(72924),
   i = n(100527),
   l = n(367207),
-  a = n(996106),
-  o = n(452426),
+  o = n(996106),
+  a = n(452426),
   s = n(561205),
   c = n(334288),
   u = n(852926),
@@ -33,7 +33,7 @@ function g(e, t) {
 let m = {
   [p.Etm.START_PURCHASE]: {
     [d.Gp.ANY]: [d.wE, d.lH],
-    validation: e => (0, o.Z)(e).required().keys({
+    validation: e => (0, a.Z)(e).required().keys({
       sku_id: e.string().required(),
       pid: e.number().min(0)
     }),
@@ -47,14 +47,14 @@ let m = {
       } = e;
       (0, c.f)(t.transport);
       let l = t.application.id;
-      if (null == l) throw new a.Z({
+      if (null == l) throw new o.Z({
         errorCode: p.lTL.INVALID_COMMAND
       }, "No application.");
       let {
-        lock: o,
+        lock: a,
         context: h
       } = (0, u.jU)(t.transport !== d.He.POST_MESSAGE ? i : null);
-      if (null == (0, s.Z)()) throw new a.Z({
+      if (null == (0, s.Z)()) throw new o.Z({
         errorCode: p.lTL.INVALID_CHANNEL
       }, "Invalid channel");
       let m = {
@@ -70,15 +70,15 @@ let m = {
             analyticsLocationObject: m,
             context: h
           });
-          return o(), e
+          return a(), e
         } catch (e) {
-          if (o(), null != e) {
+          if (a(), null != e) {
             let t = "";
-            throw t = "object" == typeof e && "message" in e && "string" == typeof e.message ? e.message : "string" == typeof e ? e : JSON.stringify(e), new a.Z({
+            throw t = "object" == typeof e && "message" in e && "string" == typeof e.message ? e.message : "string" == typeof e ? e : JSON.stringify(e), new o.Z({
               errorCode: p.lTL.PURCHASE_ERROR
             }, t)
           }
-          throw new a.Z({
+          throw new o.Z({
             errorCode: p.lTL.PURCHASE_CANCELED
           }, "Purchase was canceled by the user.")
         }
@@ -87,7 +87,7 @@ let m = {
   },
   [p.Etm.START_PREMIUM_PURCHASE]: {
     [d.Gp.ANY]: [d.wE, d.lH],
-    validation: e => (0, o.Z)(e).keys({
+    validation: e => (0, a.Z)(e).keys({
       pid: e.number().min(0)
     }),
     handler(e) {
@@ -97,7 +97,7 @@ let m = {
           pid: n
         }
       } = e;
-      if ((0, c.f)(t.transport), null == t.application.id) throw new a.Z({
+      if ((0, c.f)(t.transport), null == t.application.id) throw new o.Z({
         errorCode: p.lTL.INVALID_COMMAND
       }, "No application.");
       let {
@@ -109,10 +109,10 @@ let m = {
       }).then(() => {
         r()
       }, e => {
-        if (r(), null != e) throw new a.Z({
+        if (r(), null != e) throw new o.Z({
           errorCode: p.lTL.PURCHASE_ERROR
         }, e);
-        throw new a.Z({
+        throw new o.Z({
           errorCode: p.lTL.PURCHASE_CANCELED
         }, "Purchase was canceled by the user.")
       })

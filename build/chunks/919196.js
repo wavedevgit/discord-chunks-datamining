@@ -1,11 +1,11 @@
-/** Chunk was on 50749 **/
+/** Chunk was on 23682 **/
 n.d(t, {
   Z: () => C
 }), n(47120), n(653041), n(266796);
 var r = n(200651),
   i = n(192379),
-  l = n(442837),
-  o = n(481060),
+  o = n(442837),
+  l = n(481060),
   a = n(668781),
   s = n(600164),
   c = n(434404),
@@ -45,7 +45,7 @@ function y(e) {
 function _(e) {
   var t, n, {
       application: i,
-      guild: l,
+      guild: o,
       integration: s
     } = e,
     d = function(e, t) {
@@ -53,31 +53,31 @@ function _(e) {
       var n, r, i = function(e, t) {
         if (null == e) return {};
         var n, r, i = {},
-          l = Object.keys(e);
-        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          o = Object.keys(e);
+        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var l = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var o = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["application", "guild", "integration"]);
-  return (0, r.jsx)(o.ConfirmModal, (t = y({}, d), n = n = {
+  return (0, r.jsx)(l.ConfirmModal, (t = y({}, d), n = n = {
     header: N.NW.formatToPlainString(N.t["rL9d//"], {
       applicationName: i.name
     }),
     confirmText: N.NW.string(N.t.ebGf4u),
     cancelText: N.NW.string(N.t["ETE/oK"]),
     onConfirm: () => {
-      c.Z.disableIntegration(l.id, s.id).catch(() => {
+      c.Z.disableIntegration(o.id, s.id).catch(() => {
         a.Z.show({
           title: N.NW.string(N.t.wYqMmJ),
           body: N.NW.string(N.t.A4Mnsr)
         })
       })
     },
-    children: (0, r.jsx)(o.Text, {
+    children: (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       children: N.NW.format(N.t.FGE8yc, {
         applicationName: i.name
@@ -108,21 +108,21 @@ function C(e) {
     application: E,
     integration: P,
     webhooks: w
-  } = a, [T, Z] = (0, l.Wu)([p.Z], () => [p.Z.can(v.Plq.MANAGE_ROLES, n), null == E.bot || p.Z.canManageUser(v.Plq.MANAGE_GUILD, E.bot.id, n)], [E.bot, n]), W = (0, l.e7)([p.Z], () => p.Z.can(v.Plq.MANAGE_WEBHOOKS, n), [n]), k = i.useCallback(() => {
-    S() && (0, o.h7j)(e => (0, r.jsx)(_, y({
+  } = a, [T, Z] = (0, o.Wu)([p.Z], () => [p.Z.can(v.Plq.MANAGE_ROLES, n), null == E.bot || p.Z.canManageUser(v.Plq.MANAGE_GUILD, E.bot.id, n)], [E.bot, n]), W = (0, o.e7)([p.Z], () => p.Z.can(v.Plq.MANAGE_WEBHOOKS, n), [n]), k = i.useCallback(() => {
+    S() && (0, l.h7j)(e => (0, r.jsx)(_, y({
       guild: n,
       application: E,
       integration: P
     }, e)))
   }, [E, S, n, P]), A = i.useMemo(() => {
     let e = [{
-      icon: o.T39,
+      icon: l.T39,
       text: N.NW.formatToPlainString(N.t.gcdJ8P, {
         timestamp: b.default.extractTimestamp(P.id)
       })
     }];
     return null != P.user && e.push({
-      icon: o.tBG,
+      icon: l.tBG,
       text: N.NW.formatToPlainString(N.t.qE7oqq, {
         user: g.ZP.getUserTag(P.user)
       })
@@ -130,10 +130,10 @@ function C(e) {
   }, [P.id, P.user]), D = i.useMemo(() => null != E.bot ? (0, r.jsx)(x.Z, {
     guild: n,
     applicationIntegration: a
-  }) : (0, r.jsx)(o.Zbd, {
+  }) : (0, r.jsx)(l.Zbd, {
     className: O.emptyCard,
     editable: !0,
-    children: (0, r.jsx)(o.Text, {
+    children: (0, r.jsx)(l.Text, {
       color: "text-muted",
       variant: "text-sm/normal",
       children: N.NW.string(N.t.pfLnzc)
@@ -152,12 +152,12 @@ function C(e) {
       application: E,
       canNavigate: S,
       guildId: n.id
-    }) : null, (0, r.jsx)(o.$i$, {
+    }) : null, (0, r.jsx)(l.$i$, {
       className: O.headerDivider
     }), null != E.bot ? (0, r.jsxs)("div", {
       className: O.section,
       children: [(0, r.jsx)(h.Z, {
-        icon: (0, r.jsx)(o.wGt, {
+        icon: (0, r.jsx)(l.wGt, {
           size: "xs",
           color: "currentColor"
         }),
@@ -166,7 +166,7 @@ function C(e) {
     }) : null, (0, r.jsxs)("div", {
       className: O.section,
       children: [(0, r.jsx)(h.Z, {
-        icon: (0, r.jsx)(o.tYf, {
+        icon: (0, r.jsx)(l.tYf, {
           size: "md",
           color: "currentColor"
         }),
@@ -177,32 +177,32 @@ function C(e) {
         selectableWebhookChannels: c,
         errors: I,
         canNavigate: S
-      }) : (0, r.jsx)(o.Zbd, {
+      }) : (0, r.jsx)(l.Zbd, {
         className: O.emptyCard,
         editable: !0,
-        children: (0, r.jsx)(o.Text, {
+        children: (0, r.jsx)(l.Text, {
           color: "text-muted",
           variant: "text-sm/normal",
           children: W ? N.NW.string(N.t.ahPd2d) : N.NW.string(N.t.axqYMj)
         })
       })]
-    }), (0, r.jsx)(o.$i$, {
+    }), (0, r.jsx)(l.$i$, {
       className: O.headerDivider
     }), (0, r.jsxs)(s.Z, {
       className: O.section,
       justify: s.Z.Justify.BETWEEN,
       align: s.Z.Align.CENTER,
-      children: [(0, r.jsx)(o.Text, {
+      children: [(0, r.jsx)(l.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
         children: Z ? N.NW.string(N.t.hdneLy) : N.NW.string(N.t.xRCMq6)
       }), (0, r.jsx)(s.Z.Child, {
         grow: 0,
         shrink: 0,
-        children: (0, r.jsx)(o.zxk, {
-          size: o.zxk.Sizes.SMALL,
-          color: o.zxk.Colors.RED,
-          look: o.zxk.Looks.FILLED,
+        children: (0, r.jsx)(l.zxk, {
+          size: l.zxk.Sizes.SMALL,
+          color: l.zxk.Colors.RED,
+          look: l.zxk.Looks.FILLED,
           disabled: !Z,
           onClick: k,
           children: N.NW.string(N.t.ebGf4u)

@@ -573,7 +573,7 @@ function eK() {
   }), e = e.filter(e => null != e.executables && e.executables.length > 0), w.ZP.setObservedGamesCallback(e, e => {
     let n = [],
       i = {};
-    e = e.filter(e => (e.distributor = eA(e), e.isLauncher = t.has(e.exeName), e.isLauncher && null != e.id && (i[e.id] = e), e.windowHandle = eP(e.pid, e.windowHandle), null == H.find(t => {
+    e = e.filter(e => (e.distributor = eA(e), e.isLauncher = e.isLauncher || t.has(e.exeName), e.isLauncher && null != e.id && (i[e.id] = e), e.windowHandle = eP(e.pid, e.windowHandle), null == H.find(t => {
       let {
         name: n
       } = t;

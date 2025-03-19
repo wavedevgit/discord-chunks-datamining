@@ -1,11 +1,11 @@
-/** Chunk was on 50749 **/
+/** Chunk was on 23682 **/
 n.d(t, {
   Z: () => O
 }), n(653041), n(47120);
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  o = n(120356),
+  l = n.n(o),
   a = n(243814),
   s = n(442837),
   c = n(481060),
@@ -23,7 +23,7 @@ var r = n(200651),
   N = n(591059);
 
 function O(e) {
-  var t, n, l;
+  var t, n, o;
   let {
     name: O,
     icon: y,
@@ -117,7 +117,7 @@ function O(e) {
       return null != P && null != k && null !== (e = m.Z.getApplicationEntitlementsForGuild(P.application.id, k)) && void 0 !== e ? e : []
     }),
     V = (0, u.LD)(k, !0),
-    K = (null == P ? void 0 : P.application) != null && Object.keys(null !== (l = null === (n = V.result) || void 0 === n ? void 0 : null === (t = n.sections[P.application.id]) || void 0 === t ? void 0 : t.commands) && void 0 !== l ? l : {}).length > 0,
+    K = (null == P ? void 0 : P.application) != null && Object.keys(null !== (o = null === (n = V.result) || void 0 === n ? void 0 : null === (t = n.sections[P.application.id]) || void 0 === t ? void 0 : t.commands) && void 0 !== o ? o : {}).length > 0,
     q = (0, r.jsxs)(p.Z, {
       children: [(0, r.jsx)(h.Z, {
         name: O,
@@ -137,22 +137,22 @@ function O(e) {
           children: [function(e, t, n) {
             var i;
             if (null == e) return null;
-            let l = [],
+            let o = [],
               {
-                application: o,
+                application: l,
                 integration: s,
                 webhooks: d
               } = e;
-            return null != o.bot && l.push((0, r.jsx)(c.DY3, {
+            return null != l.bot && o.push((0, r.jsx)(c.DY3, {
               forceOpen: t,
-              text: new g.Z(o.bot).isVerifiedBot() ? v.NW.string(v.t.xxcTGx) : v.NW.string(v.t.AOdOYm),
+              text: new g.Z(l.bot).isVerifiedBot() ? v.NW.string(v.t.xxcTGx) : v.NW.string(v.t.AOdOYm),
               className: N.feature,
               children: (0, r.jsx)(c.wGt, {
                 size: "md",
                 color: "currentColor",
                 className: N.featureIcon
               })
-            }, "bot")), d.length > 0 && l.push((0, r.jsx)(c.DY3, {
+            }, "bot")), d.length > 0 && o.push((0, r.jsx)(c.DY3, {
               forceOpen: t,
               text: v.NW.formatToPlainString(v.t["6HqDfX"], {
                 count: d.length
@@ -163,14 +163,14 @@ function O(e) {
                 color: "currentColor",
                 className: N.featureIcon
               })
-            }, "webhooks")), (null == s ? void 0 : null === (i = s.scopes) || void 0 === i ? void 0 : i.includes(a.x.APPLICATIONS_COMMANDS)) === !0 && n && l.push((0, r.jsx)("div", {
+            }, "webhooks")), (null == s ? void 0 : null === (i = s.scopes) || void 0 === i ? void 0 : i.includes(a.x.APPLICATIONS_COMMANDS)) === !0 && n && o.push((0, r.jsx)("div", {
               className: N.feature,
               children: (0, r.jsx)(c.SsZ, {
                 size: "md",
                 color: "currentColor",
                 className: N.featureIcon
               })
-            }, "commands")), l
+            }, "commands")), o
           }(P, L, K), G, R]
         })
       })]
@@ -183,7 +183,7 @@ function O(e) {
     onBlur: () => M(!1),
     children: (0, r.jsx)(c.Zbd, {
       editable: !0,
-      className: o()(N.card, N.clickable),
+      className: l()(N.card, N.clickable),
       children: q
     })
   }) : (0, r.jsx)(c.Zbd, {

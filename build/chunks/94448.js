@@ -1,4 +1,4 @@
-/** Chunk was on 50749 **/
+/** Chunk was on 23682 **/
 e.exports = {
   entryActions: "entryActions__3f339",
   entryItem: "entryItem__3f339",
